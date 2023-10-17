@@ -579,6 +579,7 @@ root(ROOTS.Unsorted, {
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			filter(COSMETIC, {
 				i(210663),	-- Circlet of the Mother Tree
+				i(210666),	-- Crest of the Seething Flamekeeper
 				i(210664),	-- Frost Sapling's Adornment
 				i(210662),	-- Ochre Ornament of the Grove
 				i(210433),	-- Visage of Aurostor
@@ -726,7 +727,6 @@ root(ROOTS.Unsorted, {
 				i(211085),	-- Jeweled Sapphire Scarab (MOUNT!)
 				i(210774),	-- Ochre Dreamtalon (MOUNT!)
 				i(211087),	-- Shadowflame Hellbike (MOUNT!)
-				i(210059),	-- Winter Night Dreamsaber (MOUNT!)
 			}),
 			filter(MISC, {
 				i(210754),	-- Feather of the Blazing Somnowl (CI!)
@@ -932,19 +932,15 @@ root(ROOTS.Unsorted, {
 				i(208331),	-- Cowl of the Flame
 				i(208332),	-- Horns of the Envoy
 				i(208334),	-- Legplates of the Krakken
-				i(208335),	-- Vibrant Fall Leggings
 				i(208336),	-- Legguards of the Dreamsaber
 				i(208337),	-- Leaf Steward's Leggings
-				i(208339),	-- Saber's Stone Pauldrons
 				i(208340),	-- Stag's Flourishing Mantle
 				i(208341),	-- Fire-Runed Spaulders
 				i(208342),	-- Girdle of Nature's Fury
 				i(208343),	-- Matriarch's Flowery Band
 				i(208344),	-- Sash of the Fruit Thief
-				i(208347),	-- Stone Wolf's Cuffs
 				i(208348),	-- Binds of the Shatterer
 				i(208355),	-- String of Delicacies
-				i(208359),	-- Nightclaw's Bauble
 				i(208361),	-- Splinterlimb's Branch
 				i(208363),	-- Twinfang of the Cian
 				i(208365),	-- Winter's Stand

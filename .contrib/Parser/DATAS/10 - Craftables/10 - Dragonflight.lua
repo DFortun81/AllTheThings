@@ -2989,6 +2989,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstSkin(74190, 195509),	-- Skinning Elusive Proto Skyterror
 			FirstSkin(74188, 195465),	-- Skinning Elusive Tempest Lizard
 			FirstSkin(74235, 204831, ADDED_10_1_0),	-- Skinning Elusive Magma Cobra
+			FirstSkin(78397, 212133, ADDED_10_2_0),	-- Skinning Elusive Verdant Gladewarden
 			FirstSkin(75873, 203664, ADDED_10_1_0),	-- Skinning Emberdusk
 			FirstSkin(74224, 193134),	-- Skinning Enkine the Voracious
 			FirstSkin(74146, 194409),	-- Skinning Ergburk

@@ -25,6 +25,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					q(76558, {	-- Base Control
 						["coord"] = { 46.2, 28.1, EMERALD_DREAM },
 					}),
+					q(77158, {	-- Botanical Redistribution
+						["coord"] = { 25.0, 22.2, EMERALD_DREAM },
+					}),
 					q(77755, {	-- Breaking Down the Camp
 						["coord"] = { 28.9, 26.1, EMERALD_DREAM },
 					}),

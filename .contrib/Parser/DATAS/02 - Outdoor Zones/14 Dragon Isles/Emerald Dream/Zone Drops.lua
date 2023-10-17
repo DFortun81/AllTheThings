@@ -12,6 +12,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(201469),	-- Emerald Green Apple
 					i(207779),	-- Grotto Netherwing Drake: Barbed Tail (DM!)
 					i(207771),	-- Grotto Netherwing Drake: Short Horns (DM!)
+					i(207766),	-- Grotto Netherwing Drake: Triple Spiked Crest (DM!)
 				},
 			}),
 			n(BACK, {
@@ -69,7 +70,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				i(209954),	-- Moragh's Favorite Rock
 				i(209956),	-- Ori's Verdant Feather
 				i(209959),	-- Pinch of Dream Magic
-				i(209958),	-- Rune of the Umbramane
 			}),
 			n(WEAPONS, {
 				i(210128),	-- Autumn Defender's Claymore

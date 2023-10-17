@@ -20,6 +20,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["g"] = {
 					i(208349),	-- Burning Leather Cuffs
 					i(208323),	-- Nature's Firebathed Robes
+					i(208347),	-- Stone Wolf's Cuffs
 					i(208326),	-- Vest of the Flametide
 				},
 			}),
@@ -48,10 +49,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(209913, {	-- Fruitface
+				["description"] = "Help Mylune by picking up Missing Fruit from floor until npc yell 'I see the podling who took the fruit!', attack enemy once and follow him.",
 				["questID"] = 77846,
 				["coords"] = {
 					{ 63.5, 71.7, EMERALD_DREAM },	-- Entrance
-					{ 62.8, 72.9, EMERALD_DREAM },	-- Rare
+					{ 60.3, 68.7, 2254 },	-- Mylune (n: 209950)
+					{ 54.3, 35.7, 2254 },	-- Rare
 				},
 				["g"] = {
 					i(208388),	-- Leafster's Magic Wand
@@ -100,6 +103,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 41.1, 73.3, EMERALD_DREAM },
 				["g"] = {
 					i(210683),	-- Mark of the Dreamtalon Matriarch (CI!)
+					i(208339),	-- Saber's Stone Pauldrons
 				},
 			}),
 			n(210064, {	-- Molten Leadspike
@@ -114,6 +118,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 45.8, 18.8, EMERALD_DREAM },
 				["g"] = {
 					i(208353),	-- Djaradin's Molten Band
+					i(205463),	-- Molten Lava Ball (TOY!)
 				},
 			}),
 			n(210045, {	-- Moragh the Slothful
@@ -134,6 +139,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210647),	-- Mark of the Umbramane (CI!)
 					i(210492),	-- Technique: Grotto Netherwing Drake: Chin Tendrils (RECIPE!)
 					i(208375),	-- Owlbear's Decisive Strike
+					i(209958),	-- Rune of the Umbramane (TODO: unless it is really zone drop)
 				},
 			}),
 			n(209113, {	-- Nouberon
@@ -154,6 +160,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 44.5, 39.3, EMERALD_DREAM },
 				["g"] = {
 					i(210674),	-- Mark of the Sable Dreamtalon (CI!)
+					i(208359),	-- Nightclaw's Bauble
 					i(209957),	-- Fang of the Frenzied Nightclaw
 					i(208322),	-- Treads of the Nightclaw
 				},
@@ -165,7 +172,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)
 				},
 			}),
-			n(209365, {	-- Splinterlimb
+			n(209365, {	-- Splinterlimb (crs: 209358)
+				["description"] = "Gain one stack of 'Corrupting Sparks' per cycle of his route, at 8th stack become enemy (rare)",
 				["questID"] = 77863,
 				["coord"] = { 61.9, 52.2, EMERALD_DREAM },
 				["g"] = {
@@ -181,10 +189,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ 59.0, 71.9, EMERALD_DREAM },
 					{ 57.1, 52.5, EMERALD_DREAM },
 				},
+				["g"] = {
+					i(208335),	-- Vibrant Fall Leggings
+				},
 			}),
 			n(209902, {	-- Talthonel Ashwhisper
 				["questID"] = 77994,
-				["coord"] = { 59.2, 43.7, EMERALD_DREAM },
+				["coord"] = { 61.5, 67.5, EMERALD_DREAM },	-- 59.2, 43.7, 
 				["g"] = {
 					i(210736),	-- Mark of the Smoldering Dreamstag (CI!)
 				},

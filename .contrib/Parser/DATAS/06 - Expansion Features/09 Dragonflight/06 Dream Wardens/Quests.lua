@@ -54,6 +54,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 				}),
 			}, {	-- RENOWN 9 --
+				q(78387, {	-- Plump Dreamseeds
+					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
+					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
+				}),
 			}, {	-- RENOWN 10 --
 			}, {	-- RENOWN 11 --
 			}, {	-- RENOWN 12 --

@@ -116,9 +116,10 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 		q(72006),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70661)
 		q(72007),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70656)
 		q(66478),	-- Rescuing the Marmot (188912) during Brightblade's Bones (66070) (requires Lost Banana 191951) (spellID 371687)
-		q(75208),	-- looted lost supply while on climbing WQ 75060 (A Veritable Dumping Ground)
-		q(75207),	-- looted lost supply while on climbing WQ 75061 (No Mushroom For Ever)
-		q(75210),	-- looted lost supply while on climbing WQ 75062 (Crystalline Conundrum)
-		q(75206),	-- looted lost supply while on climbing WQ 75058 (Spearheading Acquisitio)
+		q(75208),	-- looted lost supplies while on climbing WQ 75060 (A Veritable Dumping Ground)
+		q(75207),	-- looted lost supplies while on climbing WQ 75061 (No Mushroom For Ever)
+		q(75210),	-- looted lost supplies while on climbing WQ 75062 (Crystalline Conundrum)
+		q(75206),	-- looted lost supplies while on climbing WQ 75058 (Spearheading Acquisitio)
+		q(77962),	-- looted lost supplies while on climbing WQ 77158 (Botanical Redistribution)
 	}),
 })));
