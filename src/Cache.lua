@@ -16,7 +16,7 @@ local containerMeta = {
 	__index = function(t, id)
 		if id then
 			local container = {};
-			rawset(t, id, container);
+			t[id] = container;
 			return container;
 		else
 			error("Attempting to get a nil cache container!");
@@ -27,7 +27,7 @@ local fieldMeta = {
 	__index = function(t, field)
 		if field then
 			local container = setmetatable({}, containerMeta);
-			rawset(t, field, container);
+			t[field] = container;
 			return container;
 		else
 			error("Attempting to get a nil field on cache " .. t.name);
