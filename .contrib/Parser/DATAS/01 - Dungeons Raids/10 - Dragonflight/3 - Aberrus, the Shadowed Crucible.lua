@@ -616,7 +616,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				e(2522, {	-- Kazzara, the Hellforged
 					["crs"] = { 201261 },	-- Kazzara, the Hellforged
 					["g"] = {
-						ach(18229),	-- Cosplate
+						ach(18229, {	-- Cosplate
+							["crs"] = { 205674 },	-- Molten Vortex
+						}),
 					},
 				}),
 				e(2529, {	-- The Amalgamation Chamber
@@ -626,7 +628,12 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						201934,	-- Shadowflame Amalgamation
 					},
 					["g"] = {
-						ach(18168),	-- I'll Make My Own Shadowflame
+						ach(18168, {	-- I'll Make My Own Shadowflame
+							["crs"] = {
+								205377,	-- Forgotten Specimen Tank
+								205378,	-- Shadowflame Remnant
+							},
+						}),
 					},
 				}),
 				e(2530, {	-- The Forgotten Experiments
@@ -636,7 +643,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						200913,	-- Thadrion <Experiment 147>
 					},
 					["g"] = {
-						ach(18173),	-- Tabula Rasa
+						ach(18173, {	-- Tabula Rasa
+							["crs"] = { 205352 },	-- Nutraal
+						}),
 					},
 				}),
 				e(2524, {	-- Assault of the Zaqali
@@ -645,31 +654,54 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						199659,	-- Warlord Kagni
 					},
 					["g"] = {
-						ach(18228),	-- Are You Even Trying?
+						ach(18228, {	-- Are You Even Trying?
+							["crs"] = {
+								201340,	-- Cave Rubble
+								205664,	-- Magma Slug
+								205663,	-- Rock Snail
+								205666,	-- Cave Beetle
+								205665,	-- Siege Mammoth
+								205667,	-- Ember Mouse
+								205627,	-- Zaqali Boltthrower
+							},
+						}),
 					},
 				}),
 				e(2525, {	-- Rashok, the Elder
 					["crs"] = { 201320 },	-- Rashok, the Elder
 					["g"] = {
-						ach(18230),	-- Whac-A-Swog
+						ach(18230, {	-- Whac-A-Swog
+							["crs"] = { 205630 },	-- Lost Lunker
+						}),
 					},
 				}),
 				e(2532, {	-- The Vigilant Steward, Zskarn
 					["crs"] = { 202637 },	-- Zskarn <the Vigilant Steward>
 					["g"] = {
-						ach(18193),	-- Eggscellent Eggsecution
+						ach(18193, {	-- Eggscellent Eggsecution
+							["provider"] = { "o", 402841 },	-- Delicate Experimental Egg
+						}),
 					},
 				}),
 				e(2527, {	-- Magmorax
 					["crs"] = { 201579 },	-- Magmorax
 					["g"] = {
-						ach(18172),	-- Escar-Go-Go-Go
+						ach(18172, {	-- Escar-Go-Go-Go
+							["crs"] = { 205437 },	-- Spicy Lava Snail
+						}),
 					},
 				}),
 				e(2523, {	-- Echo of Neltharion
 					["crs"] = { 203133 },	-- Echo of Neltharion
 					["g"] = {
-						ach(18149),	-- Objects in Transit May Shatter
+						ach(18149, {	-- Objects in Transit May Shatter
+							["crs"] = {
+								205340,	-- Expired Experiment
+								205341,	-- Stack of Scrolls
+								205342,	-- Neverburning Ebon Candle
+								205343,	-- "Portable" Ebon Anvil
+							},
+						}),
 					},
 				}),
 				e(2520, {	-- Scalecommander Sarkareth

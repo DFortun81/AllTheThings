@@ -31,7 +31,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(93081),	-- Hozen-Stitched Hood 				(NYI)
 		--	ig(147516),	-- Legion Stalker's Hood 			(NYI)						Listed under CoEN (Legion Dungeon)
 			ig(121509),	-- Runesworn Crown		 			(NYI)
-			
+
 			ig(134621),	-- Incendiary Helm 					(Removed)
 			ig(134794),	-- Ruinous Helm 					(Removed)
 			ig(89480),	-- Hozen-Crafted Hood				(Unsorted)
@@ -68,7 +68,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(PLATE, {
 			ig(103785),	-- Tusks of Mannoroth Heroic		(Removed)
-			
+
 			ig(93099),	-- Yaungolian Pauldrons				(NYI)
 		}),
 	}),
@@ -88,7 +88,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(10781),	-- Hakkari Breastplate 				(Removed)
 			ig(134759),	-- Masked Tunic						(Removed)
 			ig(134791),	-- Ruinous Tunic					(Removed)
-			
+
 			ig(89481),	-- Hozen-Crafted Jerkin				(Unsorted)
 		--	ig(2069),	-- Black Bear Hide Vest 			(Removed)			Added in 10.1.7 to original Source
 		--	ig(2108),	-- Frostmane Leather Vest			(Removed)(unique)	Added in 10.1.7 to original Source
@@ -132,7 +132,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(3982),	-- Strapped Pants 				(NYI)
 
 			ig(134760),	-- Masked Leggings 				(Removed)
-			
+
 			ig(89478),	-- Hozen-Crafted Britches 		(Unsorted)
 		--	ig(3022),	-- Bluegill Breeches 			(Removed)(unique)	Added in 10.1.7 to original Source
 		--	ig(18611),	-- Gnarlpine Leggings 			(Removed)			Added in 10.1.7 to original Source
@@ -170,7 +170,7 @@ local QUANTUM_GROUP = sharedData({
 
 		ig(5194),	-- Taskmaster Axe					(Removed)(Unique)(Dungeon)
 		ig(23171),	-- The Axe of Severing				(Removed)
-		
+
 		ig(9425),	-- Pendumlum of Doom				(Very Rare BoE)
 	--	ig(2015),	-- Black Metal War Axe				(Removed)			Added in 10.1.7 to original Source
 	--	ig(2227),	-- Heavy Ogre War Axe 				(Removed)			Added in 10.1.7 to original Source
@@ -357,7 +357,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					},
 				}),
 				e(2528, {	-- Manifested Timeways
-					["crs"] = { 298996 },	-- Manifested Timeways
+					["crs"] = { 198996 },	-- Manifested Timeways
 					["g"] = {
 						i(207566),	-- Accelerating Sandglass
 						i(207999),	-- Conflux Caller's Baton
@@ -553,7 +553,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					},
 				}),
 				e(2528, {	-- Manifested Timeways
-					["crs"] = { 298996 },	-- Manifested Timeways
+					["crs"] = { 198996 },	-- Manifested Timeways
 					["g"] = {
 						ach(18556),	-- Chaotic Time
 					},
@@ -685,7 +685,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					},
 				}),
 				e(2528, {	-- Manifested Timeways
-					["crs"] = { 298996 },	-- Manifested Timeways
+					["crs"] = { 198996 },	-- Manifested Timeways
 					["g"] = {
 						ach(18556),	-- Chaotic Time
 						i(207566),	-- Accelerating Sandglass
