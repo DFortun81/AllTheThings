@@ -15,6 +15,18 @@ struct = function(field, id, t)
 	t[field] = id;
 	return t;
 end
+-- Clone a piece of data as a separate table
+clone = function(t, c)
+	c = c or {};
+	if type(c) ~= "table" then error("clone is only necessary for 'table' types!") end
+
+	for key,value in pairs(t) do
+		if not c[key] then
+			c[key] = type(value) == "table" and clone(value) or value;
+		end
+	end
+	return c;
+end
 
 -- Helper Functions
 isarray = function(t)
