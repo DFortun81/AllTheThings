@@ -57,12 +57,12 @@ appendGroups = function(...)
 		return groups;
 	end
 end
--- Appends together multiple sets of groups. This way multiple portions of a single group can be created separately and joined together for one final 'groups' container
-appendAllGroups = function(...)
+-- Appends together multiple arrays of groups. This way multiple portions of a single group can be created separately and joined together for one final 'groups' container
+appendAllGroups = function(g, ...)
 	local arrs = select("#", ...);
 	if arrs > 0 then
-		local g = {};
-		local i, select, a = #g + 1, select;
+		g = g or {};
+		local i, a = #g + 1;
 		for n=1,arrs do
 			a = select(n, ...);
 			if a then
@@ -72,8 +72,8 @@ appendAllGroups = function(...)
 				end
 			end
 		end
-		return g;
 	end
+	return g;
 end
 -- Simply applies keys from 'data' into 't' where each key does not already exist
 applyData = function(data, t)
