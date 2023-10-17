@@ -129,7 +129,7 @@ function(item)
 end);
 
 -- MinReputation
-DefineToggleFilter("MinReputation", AccountFilters,
+DefineToggleFilter("MinReputation", CharacterFilters,
 function(item)
 	local minReputation = item.minReputation;
 	if minReputation and app.IsFactionExclusive(minReputation[1]) then
