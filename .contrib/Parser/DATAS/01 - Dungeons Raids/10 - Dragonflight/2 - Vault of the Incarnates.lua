@@ -126,6 +126,19 @@ local EncounterToLoot = {
 	},
 };
 
+------ Zone Drops ----------
+local ZoneDropLoot = {
+	i(202004),	-- Brawler's Earthen Cuirass [BoE]
+	i(201992),	-- Emissary's Flamewrought Seal [BoE]
+	i(202005),	-- Frozen Claw Mantle [BoE]
+	i(202008),	-- Galvanic Gaiters [BoE]
+	i(202006),	-- Greathelm of Horned Fury [BoE]
+	i(202009),	-- Lavamancer's Ceremonial Waistguard [BoE]
+	i(202003),	-- Primal Seeker's Leggings [BoE]
+	i(202010),	-- Primalist Warden's Bracers [BoE]
+	i(202007),	-- Woven Stone Bracelets [BoE]
+}
+
 ------ Difficulty To BonusID for those Tiers... ------
 -- Blizzard used some really wacky BonusIDs this time around to give proper Tier SourceIDs...
 -- Blizzard seems to have actually fixed needing these...
@@ -276,9 +289,9 @@ local extraLoots = {
 	}
 }
 
-local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, extraLoots)
-local Boss, BossOnly, RaidDifficulty, ALL_BOSSES =
-InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.ALL_BOSSES
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, extraLoots, ZoneDropLoot)
+local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
+InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	inst(1200, {	-- Vault of the Incarnates
@@ -413,26 +426,23 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				ach(16356),		-- Vault of the Incarnates Guild Run
 				ach(16357),		-- Heroic: Vault of the Incarnates Guild Run
 			}),
-			n(COMMON_BOSS_DROPS, {
-				["crs"] = ALL_BOSSES,
-				["g"] = sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
-					i(205962, {	-- Echoing Storm Flightstone
-						["timeline"] = { ADDED_10_1_0 },
-					}),
-					i(194642),	-- Design: Choker of Shielding (RECIPE!)
-					i(194259),	-- Pattern: Allied Cinch of Time Dilation (RECIPE!)
-					i(194266),	-- Pattern: Bronzed Grip Wrappings (RECIPE!)
-					i(194260),	-- Pattern: Blue Dragon Soles (RECIPE!)
-					i(193873),	-- Pattern: Old Spirit's Wristwraps (RECIPE!)
-					i(193881),	-- Pattern: Scale Rein Grips (RECIPE!)
-					i(193872),	-- Pattern: String of Spiritual Knick-Knacks (RECIPE!)
-					i(193880),	-- Pattern: Wind Spirit's Lasso (RECIPE!)
-					i(194489),	-- Plans: Allied Chestplate of Generosity (RECIPE!)
-					i(194490),	-- Plans: Allied Wristguard of Companionship (RECIPE!)
-					i(191597),	-- Recipe: Potion Absorption Inhibitor (RECIPE!)
-					i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
+			CommonBossDrops(sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
+				i(205962, {	-- Echoing Storm Flightstone
+					["timeline"] = { ADDED_10_1_0 },
 				}),
-			}),
+				i(194642),	-- Design: Choker of Shielding (RECIPE!)
+				i(194259),	-- Pattern: Allied Cinch of Time Dilation (RECIPE!)
+				i(194266),	-- Pattern: Bronzed Grip Wrappings (RECIPE!)
+				i(194260),	-- Pattern: Blue Dragon Soles (RECIPE!)
+				i(193873),	-- Pattern: Old Spirit's Wristwraps (RECIPE!)
+				i(193881),	-- Pattern: Scale Rein Grips (RECIPE!)
+				i(193872),	-- Pattern: String of Spiritual Knick-Knacks (RECIPE!)
+				i(193880),	-- Pattern: Wind Spirit's Lasso (RECIPE!)
+				i(194489),	-- Plans: Allied Chestplate of Generosity (RECIPE!)
+				i(194490),	-- Plans: Allied Wristguard of Companionship (RECIPE!)
+				i(191597),	-- Recipe: Potion Absorption Inhibitor (RECIPE!)
+				i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
+			})),
 			n(QUESTS, {
 				q(72261, {	-- More Than a Prison?
 					["provider"] = { "i", 201412 },	-- Ancient Vault Artifact
@@ -454,7 +464,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				i(201412),	-- Ancient Vault Artifact (Quest)
 				i(201411),	-- Ancient Vault Artifact (Repeatable)
 			}),
-			RaidDifficulty(AllDifficulties).AddGroups({
+			Difficulty(AllDifficulties).AddGroups({
 				BossOnly(ERANOG),
 				BossOnly(TERROS),
 				BossOnly(THE_PRIMAL_COUNCIL),
@@ -468,18 +478,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 				}),
 			}),
-			RaidDifficulty(LFR_RAID).AddGroups({
-				n(ZONE_DROPS, {
-					i(202004),	-- Brawler's Earthen Cuirass [BoE]
-					i(201992),	-- Emissary's Flamewrought Seal [BoE]
-					i(202005),	-- Frozen Claw Mantle [BoE]
-					i(202008),	-- Galvanic Gaiters [BoE]
-					i(202006),	-- Greathelm of Horned Fury [BoE]
-					i(202009),	-- Lavamancer's Ceremonial Waistguard [BoE]
-					i(202003),	-- Primal Seeker's Leggings [BoE]
-					i(202010),	-- Primalist Warden's Bracers [BoE]
-					i(202007),	-- Woven Stone Bracelets [BoE]
-				}),
+			Difficulty(LFR_RAID).AddGroups({
+				ZoneDrops(),
 				header(HEADERS.Achievement, 17110, {	-- The Primal Bulwark
 					Boss(ERANOG),
 					Boss(THE_PRIMAL_COUNCIL),
@@ -495,7 +495,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					Boss(RASZAGETH_THE_STORM_EATER),
 				}),
 			}),
-			RaidDifficulty(NormalPlus).AddGroups({
+			Difficulty(NormalPlus).AddGroups({
 				BossOnly(ERANOG, {
 					ach(16335),	-- What Frozen Things Do
 				}),
@@ -521,7 +521,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					ach(16451),	-- The Ol Raszle Daszle
 				}),
 			}),
-			RaidDifficulty(NORMAL_RAID).AddGroups({
+			Difficulty(NORMAL_RAID).AddGroups({
 				n(QUESTS, {
 					q(71018, {	-- Vault of the Incarnates: Break a Few Eggs (N)
 						["provider"] = { "n", 193460 },	-- Kalecgos
@@ -530,17 +530,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 						},
 					}),
 				}),
-				n(ZONE_DROPS, {
-					i(202004),	-- Brawler's Earthen Cuirass [BoE]
-					i(201992),	-- Emissary's Flamewrought Seal [BoE]
-					i(202005),	-- Frozen Claw Mantle [BoE]
-					i(202008),	-- Galvanic Gaiters [BoE]
-					i(202006),	-- Greathelm of Horned Fury [BoE]
-					i(202009),	-- Lavamancer's Ceremonial Waistguard [BoE]
-					i(202003),	-- Primal Seeker's Leggings [BoE]
-					i(202010),	-- Primalist Warden's Bracers [BoE]
-					i(202007),	-- Woven Stone Bracelets [BoE]
-				}),
+				ZoneDrops(),
 				Boss(ERANOG),
 				Boss(TERROS),
 				Boss(THE_PRIMAL_COUNCIL),
@@ -550,18 +540,15 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				Boss(BROODKEEPER_DIURNA),
 				Boss(RASZAGETH_THE_STORM_EATER),
 			}),
-			RaidDifficulty(HeroicPlus).AddGroups({
-				n(COMMON_BOSS_DROPS, {
-					["crs"] = ALL_BOSSES,
-					["g"] = {
-						i(201740, {	-- Elemental Codex of Ultimate Power
-							["collectible"] = false,
-							["g"] = {
-								r(370543),	-- Elemental Potion of Ultimate Power (RECIPE!)
-								r(370672),	-- Potion Cauldron of Ultimate Power (RECIPE!)
-							},
-						}),
-					},
+			Difficulty(HeroicPlus).AddGroups({
+				CommonBossDrops({
+					i(201740, {	-- Elemental Codex of Ultimate Power
+						["collectible"] = false,
+						["g"] = {
+							r(370543),	-- Elemental Potion of Ultimate Power (RECIPE!)
+							r(370672),	-- Potion Cauldron of Ultimate Power (RECIPE!)
+						},
+					}),
 				}),
 				BossOnly(ERANOG),
 				BossOnly(TERROS),
@@ -574,12 +561,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					ach(17107, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Ahead of the Curve: Raszageth the Storm-Eater
 				}),
 			}),
-			RaidDifficulty(HEROIC_RAID).AddGroups({
-				n(COMMON_BOSS_DROPS, {
-					["crs"] = ALL_BOSSES,
-					["g"] = {
-						i(200686),	-- Primal Focus
-					},
+			Difficulty(HEROIC_RAID).AddGroups({
+				CommonBossDrops({
+					i(200686),	-- Primal Focus
 				}),
 				n(QUESTS, {
 					q(71019, {	-- Vault of the Incarnates: Break a Few Eggs (H)
@@ -589,17 +573,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 						},
 					}),
 				}),
-				n(ZONE_DROPS, {
-					i(202004),	-- Brawler's Earthen Cuirass [BoE]
-					i(201992),	-- Emissary's Flamewrought Seal [BoE]
-					i(202005),	-- Frozen Claw Mantle [BoE]
-					i(202008),	-- Galvanic Gaiters [BoE]
-					i(202006),	-- Greathelm of Horned Fury [BoE]
-					i(202009),	-- Lavamancer's Ceremonial Waistguard [BoE]
-					i(202003),	-- Primal Seeker's Leggings [BoE]
-					i(202010),	-- Primalist Warden's Bracers [BoE]
-					i(202007),	-- Woven Stone Bracelets [BoE]
-				}),
+				ZoneDrops(),
 				Boss(ERANOG),
 				Boss(TERROS),
 				Boss(THE_PRIMAL_COUNCIL),
@@ -609,12 +583,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				Boss(BROODKEEPER_DIURNA),
 				Boss(RASZAGETH_THE_STORM_EATER),
 			}),
-			RaidDifficulty(MYTHIC_RAID).AddGroups({
-				n(COMMON_BOSS_DROPS, {
-					["crs"] = ALL_BOSSES,
-					["g"] = {
-						i(190455),	-- Concentrated Primal Focus
-					},
+			Difficulty(MYTHIC_RAID).AddGroups({
+				CommonBossDrops({
+					i(190455),	-- Concentrated Primal Focus
 				}),
 				n(QUESTS, {
 					q(71020, {	-- Vault of the Incarnates: Break a Few Eggs (M)
@@ -624,24 +595,17 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 						},
 					}),
 				}),
+				ZoneDrops(),
+				-- Mythic Only Temp BoP Items
 				n(ZONE_DROPS, {
-					i(202004, {["timeline"] = { ADDED_10_0_5 }}),		-- Brawler's Earthen Cuirass [BoE]
 					i(202146, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Brawler's Earthen Cuirass [BoP]
-					i(201992, {["timeline"] = { ADDED_10_0_5 }}),		-- Emissary's Flamewrought Seal [BoE]
 					i(202148, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Emissary's Flamewrought Seal [BoP]
-					i(202005, {["timeline"] = { ADDED_10_0_5 }}),		-- Frozen Claw Mantle [BoE]
 					i(202145, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Frozen Claw Mantle [BoP]
-					i(202008, {["timeline"] = { ADDED_10_0_5 }}),		-- Galvanic Gaiters [BoE]
 					i(202150, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Galvanic Gaiters [BoP]
-					i(202006, {["timeline"] = { ADDED_10_0_5 }}),		-- Greathelm of Horned Fury [BoE]
 					i(202144, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Greathelm of Horned Fury [BoP]
-					i(202009, {["timeline"] = { ADDED_10_0_5 }}),		-- Lavamancer's Ceremonial Waistguard [BoE]
 					i(202151, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Lavamancer's Ceremonial Waistguard [BoP]
-					i(202003, {["timeline"] = { ADDED_10_0_5 }}),		-- Primal Seeker's Leggings [BoE]
 					i(202147, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Primal Seeker's Leggings [BoP]
-					i(202010, {["timeline"] = { ADDED_10_0_5 }}),		-- Primalist Warden's Bracers [BoE]
 					i(202149, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Primalist Warden's Bracers [BoP]
-					i(202007, {["timeline"] = { ADDED_10_0_5 }}),		-- Woven Stone Bracelets [BoE]
 					i(202143, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5}}),	-- Woven Stone Bracelets [BoP]
 				}),
 				Boss(ERANOG, {

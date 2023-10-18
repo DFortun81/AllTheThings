@@ -8,8 +8,12 @@
 -- loots 	  = { [bossID] = {i(###),i(###)}, ... }
 -- extraLoots = { extraLootData, extraLootData, ... }
 -- | extraLootData = { Add = func(encounter, bossID, difficultyID, [data]), Data = { [bossID] = {i(###),i(###)}, ... } }
-CreateInstanceHelper = function(crs, loots, extraLoots)
+CreateInstanceHelper = function(crs, loots, extraLoots, zonedrops)
 	local CurrentDifficultyID
+	local ALL_BOSSES = {}
+	for _,v in pairs(crs) do
+		ALL_BOSSES = appendGroups(v, ALL_BOSSES)
+	end
 	local function BossOnly(id, t)
 		local encounter = e(id, t)
 		encounter.crs = crs[id]
@@ -30,9 +34,15 @@ CreateInstanceHelper = function(crs, loots, extraLoots)
 		encounter.groups = appendAllGroups(encounter.groups, loots[id])
 		return encounter
 	end
-	-- TODO:
-	-- add Common Boss Drops
-	-- add Zone Drops
+	local function CommonBossDrops(t)
+		return	n(COMMON_BOSS_DROPS, {
+					["crs"] = ALL_BOSSES,
+					["groups"] = t,
+				})
+	end
+	local function ZoneDrops()
+		return	n(ZONE_DROPS, zonedrops)
+	end
 	local autoDifficultyMeta = {
 		__index = function(t, key)
 			if key == "AddGroups" then
@@ -48,14 +58,12 @@ CreateInstanceHelper = function(crs, loots, extraLoots)
 		CurrentDifficultyID = diff.difficultyID
 		return setmetatable(diff, autoDifficultyMeta)
 	end
-	local ALL_BOSSES = {}
-	for _,v in pairs(crs) do
-		ALL_BOSSES = appendGroups(v, ALL_BOSSES)
-	end
 	return {
 		BossOnly = BossOnly,
 		Boss = Boss,
 		Difficulty = Difficulty,
+		CommonBossDrops = CommonBossDrops,
+		ZoneDrops = ZoneDrops,
 		ALL_BOSSES = ALL_BOSSES
 	}
 end
