@@ -25,27 +25,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210049),	-- The Legend of Elun'Ahir
 				},
 			}),
-			--
-			o(407739, {	-- Triflesnatcher's Roving Trove
-				["description"] = "You need to interact with owl 3 times in order to spawn chest.",
-				["questID"] = 77872,
-				["coord"] = { 34.1, 56.4, EMERALD_DREAM },
+			o(413787, {	-- The Tragedy of Erinethria
+				["questID"] = 78835,
+				["coord"] = { 53.7, 23.9, EMERALD_DREAM },
 				["g"] = {
-					n(210060, {	-- Triflesnatcher
-						["description"] = "1st owl",
-						["questID"] = 77855,	-- (Not in ATT?)
-						["coord"] = { 39.7, 52.1, EMERALD_DREAM },
-					}),
-					n(210081, {	-- Triflesnatcher
-						["description"] = "2nd owl",
-						["questID"] = 77857,
-						["coord"] = { 42.2, 56.2, EMERALD_DREAM },
-					}),
-					n(210060, {	-- Triflesnatcher
-						["description"] = "3rd owl",
-						["questID"] = 77860,
-						["coord"] = { 41.7, 62.5, EMERALD_DREAM },
-					}),
+					i(208619),	-- The Tragedy of Erinethria
+				},
+			}),
+			--
+			o(408107, {	-- Crystalline Glowblossom
+				["questID"] = 77950,
+				["coord"] = { 39.1, 65.5, EMERALD_DREAM },
+				["g"] = {
+					i(210725),	-- Owl Post (TOY!)
 				},
 			}),
 			o(407862, {	-- Hidden Moonkin Stash
@@ -53,6 +45,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 47.5, 34.9, EMERALD_DREAM },
 				["g"] = {
 					i(210725),	-- Owl Post (TOY!)
+				},
+			}),
+			n(210544, {	-- Laughing Sprigling
+				["questID"] = 78033,	-- trigger 'accepted' part and completed when he drop chest (pseudo-quest?), have (w) in-game
+				["description"] = "Interact with this npc 3 times to spawn chest, after each interaction - he will run away. Just follow him.",
+				["coords"] = {
+					{ 64.3, 61.3, EMERALD_DREAM },
+					{ 62.9, 60.4, EMERALD_DREAM },
+					{ 61.6, 59.5, EMERALD_DREAM },
+				},
+				["g"] = {
+					o(408706, {	-- Magical Bloom
+						["coord"] = { 61.6, 59.5, EMERALD_DREAM },
+						["questID"] = 78005,
+					}),
 				},
 			}),
 			o(408707, {	-- Odd Burl
@@ -71,21 +78,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 63.7, 39.2, EMERALD_DREAM },
 				["g"] = {
 					i(210727),	-- Pollenfused Bristlebruin Fur Sample (CI!)
-				},
-			}),
-			n(210544, {	-- Laughing Sprigling
-				["questID"] = 78033,	-- trigger 'accepted' part and completed when he drop chest (pseudo-quest?), have (w) in-game
-				["description"] = "Interact with this npc 3 times to spawn chest, after each interaction - he will run away. Just follow him.",
-				["coords"] = {
-					{ 64.3, 61.3, EMERALD_DREAM },
-					{ 62.9, 60.4, EMERALD_DREAM },
-					{ 61.6, 59.5, EMERALD_DREAM },
-				},
-				["g"] = {
-					o(408706, {	-- Magical Bloom
-						["coord"] = { 61.6, 59.5, EMERALD_DREAM },
-						["questID"] = 78005,
-					}),
 				},
 			}),
 			n(212009, {	-- Statue of the Ashen Panther
@@ -138,6 +130,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						["g"] = {
 							i(210659),	-- Branch of Aviana (COSMETIC!)
 						},
+					}),
+				},
+			}),
+			o(407739, {	-- Triflesnatcher's Roving Trove
+				["description"] = "You need to interact with owl 3 times in order to spawn chest.",
+				["questID"] = 77872,
+				["coord"] = { 34.1, 56.4, EMERALD_DREAM },
+				["g"] = {
+					n(210060, {	-- Triflesnatcher
+						["description"] = "1st owl",
+						["questID"] = 77855,	-- (Not in ATT?)
+						["coord"] = { 39.7, 52.1, EMERALD_DREAM },
+					}),
+					n(210081, {	-- Triflesnatcher
+						["description"] = "2nd owl",
+						["questID"] = 77857,
+						["coord"] = { 42.2, 56.2, EMERALD_DREAM },
+					}),
+					n(210060, {	-- Triflesnatcher
+						["description"] = "3rd owl",
+						["questID"] = 77860,
+						["coord"] = { 41.7, 62.5, EMERALD_DREAM },
 					}),
 				},
 			}),

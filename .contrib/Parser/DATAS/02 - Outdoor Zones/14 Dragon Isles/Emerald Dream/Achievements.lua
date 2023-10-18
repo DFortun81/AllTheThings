@@ -251,10 +251,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			ach(19317, {	-- Treasures of the Emerald Dream
 				i(210414),	-- Forest Lord's Antlers (COSMETIC!)
 				crit(62954, {	-- Crystalline Glowblossom
-					--["_quests"] = { xx },
+					["_quests"] = { 77950 },
 				}),
-				crit(62953, {	-- Hidden Podling Stash
-					--["_quests"] = { xx },
+				crit(62953, {	-- Hidden Moonkin Stash
+					["_quests"] = { 77858 },
 				}),
 				crit(62960, {	-- Magical Bloom
 					["_quests"] = { 78005 },

@@ -135,8 +135,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(RARE, {
 				n(209915, {	-- Amalgamation of Dreams
-					["questID"] = 77856, -- or 77539 (pop on summon)
-					--["coords"] = {}, -- any seed spot
+					["questID"] = 77856,
+					--["coords"] = {}, -- any plant spot
 					--also unclear is it daily or weekly
 				}),
 			}),
@@ -270,8 +270,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(EMERALD_DREAM, {
-		-- I hate it >_<
-		-- ...78975 is currently pop when looting cache in addition to loot hqt, unknown why.
+		--I hate it >_<
+		--...78975 is currently pop when looting cache in addition to loot hqt, only if 'bloom effect' (80+) happen.
+		--as of 18.10 contrib into other player plant fire as regular self planting.
+		q(78975),	-- any plant cache that was looted after blooming (purple seed), daily/weekly?
 		--1 - Ageless Blossom
 		--q(),	-- plant green seed
 		--q(),	-- plant blue seed
@@ -388,7 +390,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
 		q(77504),	-- bloom spot / 'Chest' (spellID 421192)
-		q(77509),	-- loot cache / & 78975 (pop only if trigger blooming (80+)?)
+		q(77509),	-- loot cache
 		--10 - Lavatouched Lilies
 		q(77496),	-- plant green seed
 		q(77493),	-- plant blue seed
@@ -405,28 +407,28 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--11 - Lofty Lupin
 		q(77384),	-- plant green seed
 		q(77383),	-- plant blue seed
-		--q(),	-- plant purple seed
+		q(77272),	-- plant purple seed
 		q(77382),	-- contrib with dewdrop
 		q(78788),	-- contrib with dewdrop for green seed
 		q(78786),	-- contrib with dewdrop for blue seed
-		--q(),	-- contrib with dewdrop for purple seed
+		q(78787),	-- contrib with dewdrop for purple seed
 		--q(),	-- contrib with green seed (to other player plant)
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
-		--q(),	-- bloom spot
+		q(77368),	-- bloom spot / 'Chest' (spellID 418387)
 		q(77385),	-- loot cache
 		--12 - Lullaby Lavender
 		q(77503),	-- plant green seed
 		q(77500),	-- plant blue seed
-		--q(),	-- plant purple seed
+		q(77502),	-- plant purple seed
 		q(77499),	-- contrib with dewdrop
 		q(78804),	-- contrib with dewdrop for green seed
 		q(78802),	-- contrib with dewdrop for blue seed
-		--q(),	-- contrib with dewdrop for purple seed
+		q(78803),	-- contrib with dewdrop for purple seed
 		--q(),	-- contrib with green seed (to other player plant)
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
-		--q(),	-- bloom spot / 77497?
+		q(77498),	-- bloom spot / 'Chest' (spellID 420760)
 		q(77501),	-- loot cache
 		--13 - Moon Tulip
 		q(77531),	-- plant green seed
@@ -453,7 +455,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
 		q(77355),	-- bloom spot
-		q(77389),	-- loot cache / & 78975 on looting cache
+		q(77389),	-- loot cache
 		--15 - Singing Weedling
 		q(77375),	-- plant green seed
 		q(77374),	-- plant blue seed
@@ -466,7 +468,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
 		q(77350),	-- bloom spot
-		q(77373),	-- loot cache / & 78975 on looting cache
+		q(77373),	-- loot cache
 		--16 - Viridescent Sprout
 		q(77395),	-- plant green seed
 		q(77394),	-- plant blue seed
@@ -479,7 +481,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
 		q(77357),	-- bloom spot / 'Chest' (spellID 418327)
-		q(77396),	-- loot cache / & 78975 on looting cache
+		q(77396),	-- loot cache
 		--17 - Whisperbloom Sapling (bugged on ptr)
 		--q(),	-- plant green seed
 		--q(),	-- plant blue seed

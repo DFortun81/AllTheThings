@@ -5619,6 +5619,7 @@ _.ObjectNames = {
 	[408081] = "A Partial Fourth Clue",
 	[408082] = "A Partial Fourth Clue",
 	[408083] = "A Partial Fourth Clue",
+	[408107] = "Crystalline Glowblossom",
 	[408226] = "Ancient Key Mold",
 	[408706] = "Magical Bloom",
 	[408707] = "Odd Burl",
@@ -5648,6 +5649,7 @@ _.ObjectNames = {
 	[409333] = "Buried Object",
 	[409440] = "Pineshrew Cache",
 	[409835] = "Loose Dirt Mound",
+	[409849] = "Ashwood Research Binder",
 	[409914] = "Mimiron's Booster Part",
 	[410179] = "Loose Dirt Mound",
 	[410181] = "Loose Dirt Mound",
@@ -5682,6 +5684,7 @@ _.ObjectNames = {
 	[411466] = "Unwaking Echo",
 	[411778] = "Pollenfused Bristlebruin Fur Sample",
 	[411936] = "Orb Location",
+	[413774] = "The Legend of Elun'Ahir",
 	[9000000] = "Wind Sculpted Stone",
 	[9000001] = "Ancient Incense Brazier",
 	[9000002] = "Ancient Incense Brazier",
@@ -10053,6 +10056,7 @@ _.ObjectModels = {
 	[411181] = 4576987,
 	[411466] = 1349621,
 	[411936] = 4485606,
+	[413774] = 1124086,
 }
 
 -- Supported Locales

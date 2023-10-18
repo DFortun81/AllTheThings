@@ -978,7 +978,6 @@ root(ROOTS.Unsorted, {
 			i(208571),	-- Artisan's Consortium Leaflet
 			i(208599),	-- Verdant Dream Seed
 			i(208606),	-- Somnagora's Heart
-			i(208619),	-- The Tragedy of Erinethria
 			i(208690),	-- Roottwined Key
 			i(208692),	-- Ancient Roottwined Tome
 			i(208702),	-- Memory Essence
@@ -1054,7 +1053,6 @@ root(ROOTS.Unsorted, {
 			i(210475),	-- Smolderon's Delusions of Grandeur
 			i(210494),	-- Incandescent Essence
 			i(210498),	-- Fused Essence
-			i(210501),	-- Dream Wardens Tabard
 			i(210554),	-- Blazing Feather
 			i(210595),	-- Dreaming Equipment Chest
 			i(210687),	-- Ironfur Sample

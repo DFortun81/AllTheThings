@@ -817,6 +817,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208396),	-- Splintered Spark of Dreams
 				},
 			}),
+			--Sprout daily?
+			q(77677, {	-- Some Water...
+				--["sourceQuests"] = {
+				--	77283,	-- A Multi-Front Battle
+				--	77887,	-- 'World Quest Unlock' (spellID 421687)
+				--},
+				--["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 209292 },	-- Sprout
+				["coord"] = { 48.6, 67.8, EMERALD_DREAM },
+				["g"] = {
+					i(208780),	-- Filled Bucket (QI!)
+					i(208779),	-- Unfilled Bucket (QI!)
+				},
+			}),			
 			--[[
 			q(, {	--
 				["sourceQuests"] = {  },	--
@@ -879,13 +893,15 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78857),	-- unlock ability to buy Somnolet (i: 210652) (require: Seedle (any other pet with same model?)) (spellID 429070)
 		--
 		q(78977),	-- pop after finishing qID 78890 (Emerald Frenzy) first time (daily), seems like it is fired when give you reward
+		-- Sprout
+		q(77712),	-- talk with Smoldering Sprout (n: 209253) first time which transform itself into Blackened Sprout
+		q(77713),	-- talk with Blackened Sprout (n: 209468) transform itself into Sprout (n: 209292) and unlock quests
+		q(77717),	-- after questID 77677 (Some Water...) done, but may be just hqt for daily lockout
 		-- ???
 		--q(77526),	-- 'Chest' (spellID 423213)
 		--q(77490),	-- 'Chest' (spellID 420626)
 		--q(77370),	-- 'Chest' (spellID 418389)
-		--q(77368),	-- 'Chest' (spellID 418387)
 		--q(77497),	-- 'Chest' (spellID 420761)
-		--q(77498),	-- 'Chest' (spellID 420760)
 		--q(77366),	-- 'Chest' (spellID 418385)
 		--q(77505), -- 'Chest' (spellID 421191)
 	}),

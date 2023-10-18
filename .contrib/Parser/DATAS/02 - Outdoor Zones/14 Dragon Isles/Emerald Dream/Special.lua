@@ -34,9 +34,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "i", 210764 },	-- Silent Mark of the Dreamtalon
 			}),
 			header(HEADERS.Item, 210728, {	-- Moon-Blessed Claw
-				--o(xxxxx, {	-- Small Box of Vials
-					--["coord"] = { 54.9, 25.4, EMERALD_DREAM },
-					--["g"] = {
+				o(412995, {	-- Small Box of Vials
+					["coord"] = { 54.9, 25.4, EMERALD_DREAM },
+					["g"] = {
 						i(210991, { -- Small Box of Vials
 							i(210840),	-- Empty Vial "B"
 							i(210839),	-- Empty Vial "D"
@@ -45,8 +45,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 							i(210838),	-- Empty Vial "N"
 							i(210837),	-- Empty Vial "O"
 						}),
-					--},
-				--}),
+					},
+				}),
 				i(210880, {	-- Filled Vial "B"
 					["description"] = "Go to following coordinate to fill the vial.",
 					["provider"] = { "i", 210840 },	-- Empty Vial "B"
@@ -87,9 +87,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						{ "i", 210876 },	-- Filled Vial "O"
 					},
 				}),
-				i(210728, {	-- Moon-Blessed Claw (CI!)
+				o(412950, {	-- Moon-Blessed Claw
 					["provider"] = { "i", 210977 },	-- Coalesced Moonlight
 					["coord"] = { 41.74, 67.0, EMERALD_DREAM },
+					["questID"] = 78526,
+					["g"] = {
+						i(210728),	-- Moon-Blessed Claw (CI!)
+					},
 				}),
 			}),
 		}),

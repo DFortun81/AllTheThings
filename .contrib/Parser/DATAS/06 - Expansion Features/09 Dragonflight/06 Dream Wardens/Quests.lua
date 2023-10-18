@@ -59,6 +59,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
 				}),
 			}, {	-- RENOWN 10 --
+				q(78363, {	-- The Tabard of Your Dreams
+					["provider"] = { "n", 211962 },	-- Melsysra
+					["maps"] = { EMERALD_DREAM },	-- follow you around
+					["g"] = {
+						i(210501),	-- Dream Wardens Tabard
+					},
+				}),
 			}, {	-- RENOWN 11 --
 			}, {	-- RENOWN 12 --
 			}, {	-- RENOWN 13 --
