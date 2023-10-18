@@ -371,12 +371,54 @@ settings.ApplyProfile = function()
 		return true
 	end
 end
+settings.GetWindowColors = function()
+	local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd
+
+	-- User-saved colors
+	local colorg = settings:Get("Window:BackgroundColor")
+	rBg = tonumber(colorg.r) or 0
+	gBg = tonumber(colorg.g) or 0
+	bBg = tonumber(colorg.b) or 0
+	aBg = tonumber(colorg.a) or 0
+
+	-- Border colors
+	if settings:GetTooltipSetting("Window:UseClassForBorder") then
+		-- Set all the borders to the current class color
+		local _, class = UnitClass("player")
+		rBd, gBd, bBd = GetClassColor(class)
+		aBd = 1
+	else
+		-- User-saved colors
+		local colord = settings:Get("Window:BorderColor")
+		rBd = tonumber(colord.r) or 0
+		gBd = tonumber(colord.g) or 0
+		bBd = tonumber(colord.b) or 0
+		aBd = tonumber(colord.a) or 0
+	end
+	return rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd
+end
+settings.ApplyWindowColors = function(window)
+	-- Apply the user-set colours
+	local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = settings.GetWindowColors()
+
+	window:SetBackdropColor(rBg, gBg, bBg, aBg)
+	window:SetBackdropBorderColor(rBd, gBd, bBd, aBd)
+end
+settings.ApplyAllWindowColors = function()
+	-- Apply the user-set colours
+	local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = settings.GetWindowColors()
+
+	for suffix, window in pairs(app.Windows) do
+		window:SetBackdropColor(rBg, gBg, bBg, aBg)
+		window:SetBackdropBorderColor(rBd, gBd, bBd, aBd)
+	end
+end
 -- Allows moving an ATT window based on the position stored in the current Profile
 -- This would be used when creating a Window initially during a game session
 settings.SetWindowFromProfile = function(suffix)
 	local points = RawSettings and RawSettings.Windows and RawSettings.Windows[suffix]
 	local window = app.Windows[suffix]
-	-- print("SetWindowFromProfile",suffix,points,window)
+	-- app.PrintDebug("SetWindowFromProfile",suffix,points,window)
 	if window then
 		if RawSettings then
 			if suffix == "Prime" then
@@ -410,33 +452,7 @@ settings.SetWindowFromProfile = function(suffix)
 				RawSettings.Windows[suffix] = nil
 			end
 		end
-		-- Apply the user-set colours
-		local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd
-
-		-- User-saved colors
-		rBg = tonumber(settings:Get("Window:BackgroundColor").r) or 0
-		gBg = tonumber(settings:Get("Window:BackgroundColor").g) or 0
-		bBg = tonumber(settings:Get("Window:BackgroundColor").b) or 0
-		aBg = tonumber(settings:Get("Window:BackgroundColor").a) or 0
-
-		-- Border colors
-		if settings:GetTooltipSetting("Window:UseClassForBorder") then
-			-- Set all the borders to the current class color
-			local _, class = UnitClass("player")
-			rBd, gBd, bBd = GetClassColor(class)
-			aBd = 1
-		else
-			-- User-saved colors
-			rBd = tonumber(settings:Get("Window:BorderColor").r) or 0
-			gBd = tonumber(settings:Get("Window:BorderColor").g) or 0
-			bBd = tonumber(settings:Get("Window:BorderColor").b) or 0
-			aBd = tonumber(settings:Get("Window:BorderColor").a) or 0
-		end
-
-		for suffix, window in pairs(AllTheThings.Windows) do
-			window:SetBackdropColor(rBg, gBg, bBg, aBg)
-			window:SetBackdropBorderColor(rBd, gBd, bBd, aBd)
-		end
+		settings.ApplyWindowColors(window)
 	end
 end
 settings.CheckSeasonalDate = function(self, eventID, startMonth, startDay, endMonth, endDay)
@@ -3522,13 +3538,10 @@ local function changeBackgroundColor(restore)
 	end
 
 	-- Update our internal storage
- 	local r, g, b, a = newR, newG, newB, newA
 	settings:Set("Window:BackgroundColor", {r = newR, g = newG, b = newB, a = newA})
 
  	-- And update the actual windows
-	for suffix, window in pairs(AllTheThings.Windows) do
-		window:SetBackdropColor(r, g, b, a)
-	end
+	settings.ApplyAllWindowColors()
 end
 
 local function changeBorderColor(restore)
@@ -3542,13 +3555,10 @@ local function changeBorderColor(restore)
 	end
 
 	-- Update our internal storage
- 	local r, g, b, a = newR, newG, newB, newA
 	settings:Set("Window:BorderColor", {r = newR, g = newG, b = newB, a = newA})
 
  	-- And update the actual windows
-	for suffix, window in pairs(AllTheThings.Windows) do
-		window:SetBackdropBorderColor(r, g, b, a)
-	end
+	settings.ApplyAllWindowColors()
 end
 
 function ShowColorPicker(r, g, b, a, changedCallback)
@@ -3615,11 +3625,7 @@ local buttonResetColor = child:CreateButton(
 	OnClick = function(self)
 		settings:Set("Window:BackgroundColor", {r = 0, g = 0, b = 0, a = 1})
 		settings:Set("Window:BorderColor", {r = 1, g = 1, b = 1, a = 1})
-
-		for suffix, window in pairs(AllTheThings.Windows) do
-			window:SetBackdropColor(0, 0, 0, 1)
-			window:SetBackdropBorderColor(1, 1, 1, 1)
-		end
+		settings.ApplyAllWindowColors()
 	end,
 })
 buttonResetColor:SetPoint("BOTTOMLEFT", buttonBorderColor, "BOTTOMRIGHT", 5, 0)
@@ -3630,7 +3636,7 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("Window:UseClassForBorder", self:GetChecked())
-	app:UpdateWindows()
+	settings.ApplyAllWindowColors()
 end)
 checkboxUseClassColorForBorder:SetATTTooltip(L["CLASS_BORDER_TOOLTIP"])
 checkboxUseClassColorForBorder:SetPoint("TOPLEFT", buttonBackgroundColor, "BOTTOMLEFT", -2, 0)
@@ -3711,7 +3717,6 @@ for idNo,id in ipairs(idsArray) do
 	end
 	last = filter
 end
-
 end)();
 
 ---------------------
