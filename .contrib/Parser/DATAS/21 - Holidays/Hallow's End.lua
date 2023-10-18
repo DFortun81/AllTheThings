@@ -458,9 +458,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		-- #endif
-		ach(18962, {	-- A Cleansing Fire
-			["timeline"] = { "added 10.1.7" },
-		}),
 		ach(10365, {	-- A Frightening Friend
 			["description"] = "You need Tier 3 garrison for this.",
 			["coords"] = {
@@ -1878,8 +1875,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		["lvl"] = 25,	-- Zone in level requirement for SM.
 		-- #endif
 		["groups"] = {
+			ach(18962, {	-- A Cleansing Fire
+				["timeline"] = { "added 10.1.7" },
+			}),
 			ach(255, {	-- Bring Me The Head of... Oh Wait
-				["timeline"] = { "added 3.0.1" },
+				["timeline"] = { "added 3.0.1", "removed 10.1.7" },
+			}),
+			ach(18960, {	-- Kickin' With the Wick
+				["timeline"] = { "added 10.1.7" },
 			}),
 			i(117392, {	-- Loot-Filled Pumpkin (Epic)
 				["timeline"] = { "added 6.0.1" },
