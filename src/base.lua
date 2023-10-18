@@ -424,11 +424,9 @@ function app:ShowPopupDialogToReport(reportReason, text)
 end
 
 -- Define Modules
+app.Modules = {};
 if app.__perf then
-	local perf = app.__perf
-	app.Modules = setmetatable({}, perf.MetaCapture)
-else
-	app.Modules = {};
+	app.__perf.AutoCaptureTable(app.Modules, "Modules")
 end
 
 -- Global Variables

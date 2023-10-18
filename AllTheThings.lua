@@ -5,6 +5,12 @@
 --------------------------------------------------------------------------------
 -- App locals
 local appName, app = ...;
+
+-- Performance Tracking for AllTheThings Functions
+if app.__perf then
+	app.__perf.AutoCaptureTable(app, appName);
+end
+
 local L = app.L;
 local GetRelativeValue = app.GetRelativeValue;
 
