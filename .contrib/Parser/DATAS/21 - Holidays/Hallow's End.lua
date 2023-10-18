@@ -1824,8 +1824,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 	n(23682, {	-- Headless Horseman
 		-- #if AFTER WRATH
 		["description"] = "You can loot the Loot-Stuffed Filled Pumpkin once a day per character by queueing for the encounter in the Dungeon Finder.",
-		-- #endif
-		-- #if BEFORE CATA
+		-- #else
 		["questID"] = 11392,	-- Call the Headless Horseman
 		-- #endif
 		["timeline"] = { "added 2.0.1" },
@@ -1953,7 +1952,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 			i(54516, {	-- Loot-Stuffed Pumpkin
 				-- This bag was removed at the end of MoP and in WoD epic bag introduced
-				["timeline"] = { "added 4.0.1", "removed 6.0.1" },
+				["timeline"] = { "added 3.3.0", "removed 6.0.1" },
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
 					{ "pop" },	-- Get the Rewards.
@@ -1962,9 +1961,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					{ "contains", "itemID", 33226, unpack(MASK_IDS) },	-- Tricky Treat & All the Masks
 					{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
 				},
-				-- #if BEFORE 6.0.1
-				["lvl"] = 90,	-- Minimum level this bag drops, prior to the squish.
-				-- #endif
 				["groups"] = {
 					-- #if AFTER 3.3.0
 					-- #if BEFORE 4.0.1
@@ -1998,6 +1994,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					i(71325, {	-- The Horseman's Sinister Saber
 						["timeline"] = { "added 4.0.1", "removed 5.0.1" },
 					}),
+					-- Wrath of the Lich King Classic
+					-- #if ANYCLASSIC
+					i(211851, {	-- The Horseman's Baleful Blade
+						["timeline"] = { "added 3.3.0", "removed 4.0.1" },
+					}),
+					i(211850, {	-- The Horseman's Horrific Helm
+						["timeline"] = { "added 3.3.0", "removed 4.0.1" },
+					}),
+					i(211817, {	-- Ring of Ghoulish Glee
+						["timeline"] = { "added 3.3.0", "removed 4.0.1" },
+					}),
+					i(211844, {	-- The Horseman's Seal
+						["timeline"] = { "added 3.3.0", "removed 4.0.1" },
+					}),
+					i(211847, {	-- Wicked Witch's Band
+						["timeline"] = { "added 3.3.0", "removed 4.0.1" },
+					}),
+					-- #endif
 					i(33154, {	-- Sinister Squashling (PET!)
 						["timeline"] = { "added 2.2.2.7318" },
 					}),
@@ -2014,7 +2028,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				},
 			}),
 
-			-- #if BEFORE CATA
+			-- #if BEFORE WRATH
 			ach(980, {	-- The Horseman's Reins
 				["provider"] = { "i", 37012 },	-- The Horseman's Reins
 				-- #if BEFORE WRATH
@@ -2081,19 +2095,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 			-- Wrath of the Lich King
 			i(49128, {	-- The Horseman's Baleful Blade
-				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+				["timeline"] = { "added 3.0.1", "removed 3.3.0" },
 			}),
 			i(49126, {	-- The Horseman's Horrific Helm
-				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+				["timeline"] = { "added 3.0.1", "removed 3.3.0" },
 			}),
 			i(49121, {	-- Ring of Ghoulish Glee
-				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+				["timeline"] = { "added 3.0.1", "removed 3.3.0" },
 			}),
 			i(49123, {	-- The Horseman's Signet
-				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+				["timeline"] = { "added 3.0.1", "removed 3.3.0" },
 			}),
 			i(49124, {	-- Wicked Witch's Band
-				["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+				["timeline"] = { "added 3.0.1", "removed 3.3.0" },
 			}),
 			-- Burning Crusade
 			i(38175, {	-- The Horseman's Blade
@@ -2111,7 +2125,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			i(34074, {	-- Witches Band
 				["timeline"] = { "added 2.0.1", "removed 3.0.1" },
 			}),
-			-- #if BEFORE CATA
+			-- #if BEFORE WRATH
 			i(33154, {	-- Sinister Squashling (PET!)
 				["timeline"] = { "added 2.2.2.7318" },
 			}),
@@ -2391,7 +2405,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				SCARLET_MONASTERY,
 				436,	-- Scarlet Monastery, Crusader's Chapel
 			},
-			["timeline"] = { "added 2.0.1", "removed 4.0.1" },
+			["timeline"] = { "added 2.0.1", "removed 3.3.0" },
 			["isDaily"] = true,
 			-- #if AFTER WRATH
 			["lvl"] = 75,
