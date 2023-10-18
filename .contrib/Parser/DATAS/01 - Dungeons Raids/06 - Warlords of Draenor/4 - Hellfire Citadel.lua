@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local AllDifficulties = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
 root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 } }, {
 	inst(669, {	-- Hellfire Citadel
 		["mapID"] = 661,
@@ -101,11 +100,11 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 				},
 				["groups"] = {
 					un(REMOVED_FROM_GAME, i(127115, {	-- Tome of Chaos
-					
+
 					})),
 				},
 			}),
-			d(AllDifficulties, {
+			d(ALL_DIFFICULTIES_RAID, {
 				cr(90284, e(1425, {	-- Iron Reaver
 					i(128256, {	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
 						["questID"] = 39364,	-- Equipment Blueprint: Gyroscopic Internal Stabilizer
@@ -339,7 +338,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 					})),
 				}),
 			}),
-			d({NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID}, {
+			d(NORMAL_PLUS_RAID, {
 				cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
 					ach(10026, {	-- Nearly Indestructible
 						["crs"] = { 90018 },	-- Hellfire Cannon

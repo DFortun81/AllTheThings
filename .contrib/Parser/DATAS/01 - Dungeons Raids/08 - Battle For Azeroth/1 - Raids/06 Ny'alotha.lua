@@ -1,9 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local AllDifficulties = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
-
-
 root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0" } }, {
 	inst(1180, {	-- Ny'alotha
 		["coords"] = {
@@ -111,7 +108,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 				i(171201),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 2] (RECIPE!)
 				i(171200),	-- Vantus Rune Technique: Ny'alotha, the Waking City [Rank 3] (RECIPE!)
 			}),
-			d(AllDifficulties, {
+			d(ALL_DIFFICULTIES_RAID, {
 				e(2375, {	-- N'Zoth, the Corruptor
 					["crs"] = { 158041 },
 					["g"] = {

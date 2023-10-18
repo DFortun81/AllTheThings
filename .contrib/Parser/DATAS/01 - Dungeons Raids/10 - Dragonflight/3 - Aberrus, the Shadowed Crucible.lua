@@ -1,13 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local AllDifficulties = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
-local AnyDifficultyID = MultiDifficultyID(AllDifficulties);
-local LNHDifficulty = {LFR_RAID,NORMAL_RAID,HEROIC_RAID};
-local NormalPlus = {NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
-local HeroicPlus = {HEROIC_RAID,MYTHIC_RAID};
-local HeroicPlusID = MultiDifficultyID(HeroicPlus);
-
 root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	inst(1208, {	-- Aberrus, the Shadowed Crucible
 		["isRaid"] = true,
@@ -91,95 +84,95 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 			n(ACHIEVEMENTS, {
 				ach(18163, {	-- Discarded Works
 					crit(58866, { -- Kazzara, the Hellforged
-						["_encounter"] = { 2522, AnyDifficultyID },
+						["_encounter"] = { 2522, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(58867, { -- The Amalgamation Chamber
-						["_encounter"] = { 2529, AnyDifficultyID },
+						["_encounter"] = { 2529, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(58868, { -- The Forgotten Experiments
-						["_encounter"] = { 2530, AnyDifficultyID },
+						["_encounter"] = { 2530, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(18164, {	-- Fury of Giants
 					crit(58869, { -- Assault of the Zaqali
-						["_encounter"] = { 2524, AnyDifficultyID },
+						["_encounter"] = { 2524, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(58870, { -- Rashok, the Elder
-						["_encounter"] = { 2525, AnyDifficultyID },
+						["_encounter"] = { 2525, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(58871, { -- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, AnyDifficultyID },
+						["_encounter"] = { 2532, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(18165, {	-- Neltharion's Shadow
 					crit(58881, { -- Magmorax
-						["_encounter"] = { 2527, AnyDifficultyID },
+						["_encounter"] = { 2527, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(58882, { -- Echo of Neltharion
-						["_encounter"] = { 2523, AnyDifficultyID },
+						["_encounter"] = { 2523, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(18167, {	-- Edge of the Void
 					crit(58883, { -- Scalecommander Sarkareth
-						["_encounter"] = { 2520, AnyDifficultyID },
+						["_encounter"] = { 2520, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(18160, {	-- Aberrus, the Shadowed Crucible
 					crit(58866, { -- Kazzara, the Hellforged
-						["_encounter"] = { 2522, AnyDifficultyID },
+						["_encounter"] = { 2522, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(58867, { -- The Amalgamation Chamber
-						["_encounter"] = { 2529, AnyDifficultyID },
+						["_encounter"] = { 2529, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(58868, { -- The Forgotten Experiments
-						["_encounter"] = { 2530, AnyDifficultyID },
+						["_encounter"] = { 2530, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(58869, { -- Assault of the Zaqali
-						["_encounter"] = { 2524, AnyDifficultyID },
+						["_encounter"] = { 2524, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(58870, { -- Rashok, the Elder
-						["_encounter"] = { 2525, AnyDifficultyID },
+						["_encounter"] = { 2525, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(58871, { -- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, AnyDifficultyID },
+						["_encounter"] = { 2532, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(58881, { -- Magmorax
-						["_encounter"] = { 2527, AnyDifficultyID },
+						["_encounter"] = { 2527, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(58882, { -- Echo of Neltharion
-						["_encounter"] = { 2523, AnyDifficultyID },
+						["_encounter"] = { 2523, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(58883, { -- Scalecommander Sarkareth
-						["_encounter"] = { 2520, AnyDifficultyID },
+						["_encounter"] = { 2520, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(18161, {	-- Heroic: Aberrus, the Shadowed Crucible
 					crit(59573, { -- Kazzara, the Hellforged
-						["_encounter"] = { 2522, HeroicPlusID },
+						["_encounter"] = { 2522, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(59574, { -- The Amalgamation Chamber
-						["_encounter"] = { 2529, HeroicPlusID },
+						["_encounter"] = { 2529, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(59575, { -- The Forgotten Experiments
-						["_encounter"] = { 2530, HeroicPlusID },
+						["_encounter"] = { 2530, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(59576, { -- Assault of the Zaqali
-						["_encounter"] = { 2524, HeroicPlusID },
+						["_encounter"] = { 2524, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(59577, { -- Rashok, the Elder
-						["_encounter"] = { 2525, HeroicPlusID },
+						["_encounter"] = { 2525, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(59578, { -- The Vigilant Steward, Zskarn
-						["_encounter"] = { 2532, HeroicPlusID },
+						["_encounter"] = { 2532, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(59579, { -- Magmorax
-						["_encounter"] = { 2527, HeroicPlusID },
+						["_encounter"] = { 2527, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(59580, { -- Echo of Neltharion
-						["_encounter"] = { 2523, HeroicPlusID },
+						["_encounter"] = { 2523, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(59581, { -- Scalecommander Sarkareth
-						["_encounter"] = { 2520, HeroicPlusID },
+						["_encounter"] = { 2520, HEROIC_PLUS_ID_RAID },
 					}),
 				}),
 				ach(18162, {	-- Mythic: Aberrus, the Shadowed Crucible
@@ -243,7 +236,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					i(204464),	-- Shadowflame Essence
 				},
 			}),
-			d(AllDifficulties, {
+			d(ALL_DIFFICULTIES_RAID, {
 				e(2522, {	-- Kazzara, the Hellforged
 					["crs"] = { 201261 },	-- Kazzara, the Hellforged
 					["g"] = {
@@ -324,7 +317,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					},
 				}),
 			}),
-			d(LNHDifficulty, {
+			d({LFR_RAID,NORMAL_RAID,HEROIC_RAID}, {
 				e(2520, {	-- Scalecommander Sarkareth
 					["crs"] = { 203284 },	-- Scalecommander Sarkareth
 					["g"] = {
@@ -612,7 +605,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					}),
 				}),
 			}),
-			d(NormalPlus, {
+			d(NORMAL_PLUS_RAID, {
 				e(2522, {	-- Kazzara, the Hellforged
 					["crs"] = { 201261 },	-- Kazzara, the Hellforged
 					["g"] = {
@@ -985,7 +978,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					},
 				}),
 			}),
-			d(HeroicPlus, {
+			d(HEROIC_PLUS_RAID, {
 				e(2522, {	-- Kazzara, the Hellforged
 					["crs"] = { 201261 },	-- Kazzara, the Hellforged
 				}),

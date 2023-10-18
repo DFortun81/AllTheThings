@@ -2,8 +2,6 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 -----------------------------------------------------
-local AllDifficulties = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
-
 root(ROOTS.Instances, tier(LEGION_TIER, {
 	inst(786, {	-- The Nighthold
 		["isRaid"] = true,
@@ -105,7 +103,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 				}),
 			}),
-			d(AllDifficulties, {
+			d(ALL_DIFFICULTIES_RAID, {
 				e(1737, {	-- Gul'dan
 					["crs"] = {
 						104154,	-- Gul'dan

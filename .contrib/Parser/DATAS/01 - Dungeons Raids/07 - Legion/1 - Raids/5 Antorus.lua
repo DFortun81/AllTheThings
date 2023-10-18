@@ -1,8 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local AllDifficulties = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
-
 root(ROOTS.Instances, tier(LEGION_TIER, {
 	inst(946, {	-- Antorus, the Burning Throne
 		["isRaid"] = true,
@@ -136,7 +134,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(151656),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 3] (RECIPE!)
 				},
 			}),
-			d(AllDifficulties, {
+			d(ALL_DIFFICULTIES_RAID, {
 				e(1987, {	-- Felhounds of Sargeras
 					["crs"] = {
 						122477,	-- F'harg

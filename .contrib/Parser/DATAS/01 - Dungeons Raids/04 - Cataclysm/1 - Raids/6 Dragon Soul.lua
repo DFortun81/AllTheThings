@@ -1,11 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local AllDifficulties = {RAID_FINDER,NORMAL_DUNGEON,HEROIC_DUNGEON};
-local AnyDifficultyID = MultiDifficultyID(AllDifficulties);
-local NormalPlus = {NORMAL_DUNGEON,HEROIC_DUNGEON};
-local NormalPlusDifficultyID = MultiDifficultyID(NormalPlus);
-
 root(ROOTS.Instances, tier(CATA_TIER, {
 	inst(187, {	-- Dragon Soul
 		["mapID"] = 409,	--  Wyrmrest Temple [Starting Area]
@@ -28,30 +23,30 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 			n(ACHIEVEMENTS, {
 				ach(6106, {	-- Siege of Wyrmrest Temple
 					crit(18445, {	-- Morchok
-						["_encounter"] = { 311, AnyDifficultyID },
+						["_encounter"] = { 311, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(18446, {	-- Warlord Zon'ozz
-						["_encounter"] = { 324, AnyDifficultyID },
+						["_encounter"] = { 324, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(18447, {	-- Yor'sahj the Unsleeping
-						["_encounter"] = { 325, AnyDifficultyID },
+						["_encounter"] = { 325, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(18448, {	-- Hagara the Stormbinder
-						["_encounter"] = { 317, AnyDifficultyID },
+						["_encounter"] = { 317, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(6107, {	-- Fall of Deathwing
 					crit(18449, {	-- Ultraxion
-						["_encounter"] = { 331, AnyDifficultyID },
+						["_encounter"] = { 331, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(18450, {	-- Warmaster Blackthorn
-						["_encounter"] = { 332, AnyDifficultyID },
+						["_encounter"] = { 332, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(18451, {	-- Spine of Deathwing
-						["_encounter"] = { 318, AnyDifficultyID },
+						["_encounter"] = { 318, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(18452, {	-- Madness of Deathwing
-						["_encounter"] = { 333, AnyDifficultyID },
+						["_encounter"] = { 333, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(6123),	-- Dragon Soul Guild Run
@@ -216,7 +211,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					}),
 				}),
 			}),
-			d(AllDifficulties, {
+			d(ALL_DIFFICULTIES_RAID, {
 				cr(55265, e(311, {	-- Morchok
 					-- Placeholder for criteria
 				})),
@@ -393,7 +388,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 					}),
 				},
 			}),
-			d(NormalPlus, {
+			d(NORMAL_PLUS_RAID, {
 				["difficulties"] = { 3, 4, 5, 6 },
 				["ignoreBonus"] = true,
 				["groups"] = {

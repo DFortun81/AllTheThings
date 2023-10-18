@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local AllDifficulties = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
 root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	inst(457, {	-- Blackrock Foundry
 		["mapID"] = 598,
@@ -72,7 +71,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					})),
 				},
 			}),
-			d(AllDifficulties, {
+			d(ALL_DIFFICULTIES_RAID, {
 				cr(76806, e(1154, {	-- The Blast Furnace
 					un(REMOVED_FROM_GAME, i(115479)),	-- Heart of the Fury
 				})),
@@ -272,7 +271,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					})),
 				}),
 			}),
-			d({NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID}, {
+			d(NORMAL_PLUS_RAID, {
 				cr(77182, e(1202, {	-- Oregorger
 					ach(8979),	-- He Shoots, He Ores
 				})),

@@ -1,12 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
------- Difficulty Constants ------
-local AllDifficulties = {LFR_RAID,NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
-local AnyDifficultyID = MultiDifficultyID(AllDifficulties);
-local NormalPlus = {NORMAL_RAID,HEROIC_RAID,MYTHIC_RAID};
-local HeroicPlus = {HEROIC_RAID,MYTHIC_RAID};
-local HeroicPlusID = MultiDifficultyID(HeroicPlus);
 
 ------ Encounter Constants ------
 local ERANOG = 2480;
@@ -312,84 +306,84 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 			n(ACHIEVEMENTS, {
 				ach(17110, {	-- The Primal Bulwark
 					crit(55109, { -- Eranog
-						["_encounter"] = { ERANOG, AnyDifficultyID },
+						["_encounter"] = { ERANOG, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55110, { -- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, AnyDifficultyID },
+						["_encounter"] = { THE_PRIMAL_COUNCIL, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55111, { -- Dathea, Ascended
-						["_encounter"] = { DATHEA_ASCENDED, AnyDifficultyID },
+						["_encounter"] = { DATHEA_ASCENDED, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(17111, {	-- Caverns of Infusion
 					crit(55113, { -- Terros
-						["_encounter"] = { TERROS, AnyDifficultyID },
+						["_encounter"] = { TERROS, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55114, { -- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH_THE_COLD_BREATH, AnyDifficultyID },
+						["_encounter"] = { SENNARTH_THE_COLD_BREATH, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55115, { -- Kurog Grimtotem
-						["_encounter"] = { KUROG_GRIMTOTEM, AnyDifficultyID },
+						["_encounter"] = { KUROG_GRIMTOTEM, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(17112, {	-- Fury of the Storm
 					crit(55116, { -- Broodkeeper Diurna
-						["_encounter"] = { BROODKEEPER_DIURNA, AnyDifficultyID },
+						["_encounter"] = { BROODKEEPER_DIURNA, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55117, { --Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH_THE_STORM_EATER, AnyDifficultyID },
+						["_encounter"] = { RASZAGETH_THE_STORM_EATER, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(16343, {	-- Vault of the Incarnates
 					crit(55109, { -- Eranog
-						["_encounter"] = { ERANOG, AnyDifficultyID },
+						["_encounter"] = { ERANOG, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55110, { -- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, AnyDifficultyID },
+						["_encounter"] = { THE_PRIMAL_COUNCIL, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55111, { -- Dathea, Ascended
-						["_encounter"] = { DATHEA_ASCENDED, AnyDifficultyID },
+						["_encounter"] = { DATHEA_ASCENDED, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55113, { -- Terros
-						["_encounter"] = { TERROS, AnyDifficultyID },
+						["_encounter"] = { TERROS, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55114, { -- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH_THE_COLD_BREATH, AnyDifficultyID },
+						["_encounter"] = { SENNARTH_THE_COLD_BREATH, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55115, { -- Kurog Grimtotem
-						["_encounter"] = { KUROG_GRIMTOTEM, AnyDifficultyID },
+						["_encounter"] = { KUROG_GRIMTOTEM, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55116, { -- Broodkeeper Diurna
-						["_encounter"] = { BROODKEEPER_DIURNA, AnyDifficultyID },
+						["_encounter"] = { BROODKEEPER_DIURNA, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55117, { --Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH_THE_STORM_EATER, AnyDifficultyID },
+						["_encounter"] = { RASZAGETH_THE_STORM_EATER, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(16345, {	-- Heroic: Vault of the Incarnates
 					crit(55121, { -- Eranog
-						["_encounter"] = { ERANOG, HeroicPlusID },
+						["_encounter"] = { ERANOG, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(55122, { -- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, HeroicPlusID },
+						["_encounter"] = { THE_PRIMAL_COUNCIL, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(55123, { -- Dathea, Ascended
-						["_encounter"] = { DATHEA_ASCENDED, HeroicPlusID },
+						["_encounter"] = { DATHEA_ASCENDED, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(55124, { -- Terros
-						["_encounter"] = { TERROS, HeroicPlusID },
+						["_encounter"] = { TERROS, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(55125, { -- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH_THE_COLD_BREATH, HeroicPlusID },
+						["_encounter"] = { SENNARTH_THE_COLD_BREATH, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(55127, { -- Kurog Grimtotem
-						["_encounter"] = { KUROG_GRIMTOTEM, HeroicPlusID },
+						["_encounter"] = { KUROG_GRIMTOTEM, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(55126, { -- Broodkeeper Diurna
-						["_encounter"] = { BROODKEEPER_DIURNA, HeroicPlusID },
+						["_encounter"] = { BROODKEEPER_DIURNA, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(55128, { --Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH_THE_STORM_EATER, HeroicPlusID },
+						["_encounter"] = { RASZAGETH_THE_STORM_EATER, HEROIC_PLUS_ID_RAID },
 					}),
 				}),
 				ach(16354, {	-- Mythic: Vault of the Incarnates
@@ -464,7 +458,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				i(201412),	-- Ancient Vault Artifact (Quest)
 				i(201411),	-- Ancient Vault Artifact (Repeatable)
 			}),
-			Difficulty(AllDifficulties).AddGroups({
+			Difficulty(ALL_DIFFICULTIES_RAID).AddGroups({
 				BossOnly(ERANOG),
 				BossOnly(TERROS),
 				BossOnly(THE_PRIMAL_COUNCIL),
@@ -495,7 +489,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					Boss(RASZAGETH_THE_STORM_EATER),
 				}),
 			}),
-			Difficulty(NormalPlus).AddGroups({
+			Difficulty(NORMAL_PLUS_RAID).AddGroups({
 				BossOnly(ERANOG, {
 					ach(16335),	-- What Frozen Things Do
 				}),
@@ -540,7 +534,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				Boss(BROODKEEPER_DIURNA),
 				Boss(RASZAGETH_THE_STORM_EATER),
 			}),
-			Difficulty(HeroicPlus).AddGroups({
+			Difficulty(HEROIC_PLUS_RAID).AddGroups({
 				CommonBossDrops({
 					i(201740, {	-- Elemental Codex of Ultimate Power
 						["collectible"] = false,
