@@ -1135,6 +1135,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Puzzle order is Arcane, Frost, Fire, Shadow.",
 					["coord"] = { 25.0, 38.6, AZSHARA },
 					["timeline"] = { "added 7.2.0.23478" },
+					["_drop"] = { "c", "classes" },	-- bad API data
 					["classes"] = {
 						DEATHKNIGHT,	-- Frost
 						DEMONHUNTER,	-- Havoc
@@ -2262,7 +2263,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 34.4, 40.6, AZSHARA },
 						{ 15.0, 52.0, AZSHARA },
 						{ 53.0, 76.8, AZSHARA },
-						
+
 						{ 14.2, 50.4, AZSHARA },
 						{ 29.2, 42.6, AZSHARA },
 						{ 45.4, 25.2, AZSHARA },
