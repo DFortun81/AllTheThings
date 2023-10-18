@@ -612,6 +612,7 @@ ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."В
 		L.COMPLETE = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Выполнено|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Выполнено*|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffНе Выполнено|r";	-- Acquired the colors and icon from CanIMogIt.
+		L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Сохранено|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.KNOWN_ON_CHARACTER = "|T" .. app.asset("known") .. ":0|t |cff15abffИзвестно на текущем персонаже|r";
 		L.UNKNOWN_ON_CHARACTER = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Неизвестно на текущем персонаже|r";
 		L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ffВалюта|r";
