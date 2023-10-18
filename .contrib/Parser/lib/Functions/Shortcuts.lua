@@ -47,7 +47,7 @@ addObject = function(o, t)
 	table.insert(t, o);
 	return t;
 end
--- Appends a common groups set into the groups for this object
+-- Appends a common groups set into the groups for this object. The last element is the one to append into.
 appendGroups = function(...)
 	local data = { ... };
 	local count = #data;

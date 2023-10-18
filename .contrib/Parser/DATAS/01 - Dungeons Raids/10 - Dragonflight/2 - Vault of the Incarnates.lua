@@ -35,12 +35,6 @@ local EncounterToCRS = {
 	[RASZAGETH_THE_STORM_EATER] = { 193909 },	-- Raszageth the Storm-Eater
 };
 
------- All Bosses crs ------
-local ALL_BOSSES = {};
-for k,v in pairs(EncounterToCRS) do
-	ALL_BOSSES = appendGroups(v, ALL_BOSSES);
-end
-
 ------ EnconterToLoot ------
 local EncounterToLoot = {
 	[ERANOG] = {
@@ -132,125 +126,6 @@ local EncounterToLoot = {
 	},
 };
 
------- EncounterToTier ------
-local EncounterToTier = {
-	[SENNARTH_THE_COLD_BREATH] = {
-		i(196588, {	-- Dreadful Jade Forgestone
-			i(200409),	-- Greaves of the Haunted Frostbrood
-			i(200346),	-- Skybound Avenger's Legguards
-			i(200337),	-- Scalesworn Cultist's Culottes
-		}),
-		i(196598, {	-- Mystic Jade Forgestone
-			i(200355),	-- Lost Landcaller's Leggings
-			i(200391),	-- Stormwing Harrier's Greaves
-			i(200319),	-- Crystal Scholar's Britches
-		}),
-		i(196603, {	-- Venerated Jade Forgestone
-			i(200418),	-- Virtuous Silver Cuisses
-			i(200328),	-- Draconic Hierophant's Britches
-			i(200400),	-- Leggings of Infused Earth
-		}),
-		i(196593, {	-- Zenith Jade Forgestone
-			i(200382),	-- Legguards of the Awakened
-			i(200364),	-- Legguards of the Waking Fist
-			i(200373),	-- Vault Delver's Pantaloons
-			i(200427),	-- Poleyns of the Walking Mountain
-		}),
-	},
-	[DATHEA_ASCENDED] = {
-		i(196587, {	-- Dreadful Garnet Forgestone
-			i(200407),	-- Grasps of the Haunted Frostbrood
-			i(200344),	-- Skybound Avenger's Grips
-			i(200335),	-- Scalesworn Cultist's Gloves
-		}),
-		i(196597, {	-- Mystic Garnet Forgestone
-			i(200353),	-- Lost Landcaller's Claws
-			i(200389),	-- Stormwing Harrier's Handguards
-			i(200317),	-- Crystal Scholar's Pageturners
-		}),
-		i(196602, {	-- Venerated Garnet Forgestone
-			i(200416),	-- Virtuous Silver Gauntlets
-			i(200326),	-- Draconic Hierophant's Grips
-			i(200398),	-- Gauntlets of Infused Earth
-		}),
-		i(196592, {	-- Zenith Garnet Forgestone
-			i(200380),	-- Gauntlets of the Awakened
-			i(200362),	-- Palms of the Waking Fist
-			i(200371),	-- Vault Delver's Lockbreakers
-			i(200425),	-- Gauntlets of the Walking Mountain
-		}),
-	},
-	[KUROG_GRIMTOTEM] = {
-		i(196586, {	-- Dreadful Amethyst Forgestone
-			i(200405),	-- Breastplate of the Haunted Frostbrood
-			i(200342),	-- Skybound Avenger's Harness
-			i(200333),	-- Scalesworn Cultist's Frosk
-		}),
-		i(196596, {	-- Mystic Amethyst Forgestone
-			i(200351),	-- Lost Landcaller's Robes
-			i(200387),	-- Stormwing Harrier's Cuirass
-			i(200315),	-- Crystal Scholar's Tunic
-		}),
-		i(196601, {	-- Venerated Amethyst Forgestone
-			i(200414),	-- Virtuous Silver Breastplate
-			i(200324),	-- Draconic Hierophant's Vestment
-			i(200396),	-- Robe of Infused Earth
-		}),
-		i(196591, {	-- Zenith Amethyst Forgestone
-			i(200378),	-- Hauberk of the Awakened
-			i(200360),	-- Chestwrap of the Waking Fist
-			i(200369),	-- Vault Delver's Brigandine
-			i(200423),	-- Husk of the Walking Mountain
-		}),
-	},
-	[BROODKEEPER_DIURNA] = {
-		i(196589, {	-- Dreadful Lapis Forgestone
-			i(200410),	-- Jaws of the Haunted Frostbrood
-			i(200347),	-- Skybound Avenger's Ailerons
-			i(200338),	-- Scalesworn Cultist's Effigy
-		}),
-		i(196599, {	-- Mystic Lapis Forgestone
-			i(200356),	-- Lost Landcaller's Mantle
-			i(200392),	-- Stormwing Harrier's Pinions
-			i(200320),	-- Crystal Scholar's Beacons
-		}),
-		i(196604, {	-- Venerated Lapis Forgestone
-			i(200419),	-- Virtuous Silver Pauldrons
-			i(200329),	-- Draconic Hierophant's Wisdom
-			i(200401),	-- Calderas of Infused Earth
-		}),
-		i(196594, {	-- Zenith Lapis Forgestone
-			i(200383),	-- Talons of the Awakened
-			i(200365),	-- Mantle of the Waking Fist
-			i(200374),	-- Vault Delver's Epaulets
-			i(200428),	-- Peaks of the Walking Mountain
-		}),
-	},
-	[RASZAGETH_THE_STORM_EATER] = {
-		i(196590, {	-- Dreadful Topaz Forgestone
-			i(200408),	-- Maw of the Haunted Frostbrood
-			i(200345),	-- Skybound Avenger's Visor
-			i(200336),	-- Scalesworn Cultist's Scorn
-		}),
-		i(196600, {	-- Mystic Topaz Forgestone
-			i(200354),	-- Lost Landcaller's Antlers
-			i(200390),	-- Stormwing Harrier's Skullmask
-			i(200318),	-- Crystal Scholar's Cowl
-		}),
-		i(196605, {	-- Venerated Topaz Forgestone
-			i(200417),	-- Virtuous Silver Heaume
-			i(200327),	-- Draconic Hierophant's Archcowl
-			i(200399),	-- Faceguard of Infused Earth
-		}),
-		i(196595, {	-- Zenith Topaz Forgestone
-			i(200381),	-- Crown of the Awakened
-			i(200363),	-- Gaze of the Waking Fist
-			i(200372),	-- Vault Delver's Vizard
-			i(200426),	-- Casque of the Walking Mountain
-		}),
-	},
-};
-
 ------ Difficulty To BonusID for those Tiers... ------
 -- Blizzard used some really wacky BonusIDs this time around to give proper Tier SourceIDs...
 -- Blizzard seems to have actually fixed needing these...
@@ -261,51 +136,149 @@ local EncounterToTier = {
 -- 	[MYTHIC_RAID] = 7981,
 -- };
 
------- Boss Functions ------
-local CurrentDifficultyID
-local function addTierLoot(encounter, id, difficulty)
-	local tokens = {}
-	for _,token in ipairs(EncounterToTier[id]) do
-		tokens[#tokens + 1] = clone(token)
-	end
-	-- seems to no longer be necessary... will keep it around for a while just in case
-	-- local difficultyBonusID = DifficultyToBonusID[difficulty]
-	-- for _,token in ipairs(tokens) do
-	-- 	for _,item in ipairs(token.groups) do
-	-- 		item.bonusID = difficultyBonusID;
-	-- 	end
-	-- end
-	encounter.groups = appendAllGroups(encounter.groups, tokens);
-	return encounter
-end
-local function BossOnly(id, t)
-	local encounter = e(id, t);
-	encounter.crs = EncounterToCRS[id];
-	return encounter
-end
-local function Boss(id, t)
-	local encounter = BossOnly(id, t)
-	if EncounterToTier[id] then
-		addTierLoot(encounter, id, CurrentDifficultyID)
-	end
-	encounter.groups = appendAllGroups(encounter.groups, EncounterToLoot[id]);
-	return encounter
-end
-local autoDifficultyMeta = {
-	__index = function(t, key)
-		if key == "AddGroups" then
-			return function(groups)
-				t.groups = appendAllGroups(t.groups, groups)
-				return t
+local extraLoots = {
+	------ Tier Items ------
+	{
+		Add = function(encounter, id, difficulty, data)
+			if data[id] then
+				local tokens = {}
+				for _,token in ipairs(data[id]) do
+					tokens[#tokens + 1] = clone(token)
+				end
+				-- seems to no longer be necessary... will keep it around for a while just in case
+				-- local difficultyBonusID = DifficultyToBonusID[difficulty]
+				-- for _,token in ipairs(tokens) do
+				-- 	for _,item in ipairs(token.groups) do
+				-- 		item.bonusID = difficultyBonusID;
+				-- 	end
+				-- end
+				encounter.groups = appendAllGroups(encounter.groups, tokens);
+				return encounter
 			end
-		end
-	end
+		end,
+		Data = {
+			[SENNARTH_THE_COLD_BREATH] = {
+				i(196588, {	-- Dreadful Jade Forgestone
+					i(200409),	-- Greaves of the Haunted Frostbrood
+					i(200346),	-- Skybound Avenger's Legguards
+					i(200337),	-- Scalesworn Cultist's Culottes
+				}),
+				i(196598, {	-- Mystic Jade Forgestone
+					i(200355),	-- Lost Landcaller's Leggings
+					i(200391),	-- Stormwing Harrier's Greaves
+					i(200319),	-- Crystal Scholar's Britches
+				}),
+				i(196603, {	-- Venerated Jade Forgestone
+					i(200418),	-- Virtuous Silver Cuisses
+					i(200328),	-- Draconic Hierophant's Britches
+					i(200400),	-- Leggings of Infused Earth
+				}),
+				i(196593, {	-- Zenith Jade Forgestone
+					i(200382),	-- Legguards of the Awakened
+					i(200364),	-- Legguards of the Waking Fist
+					i(200373),	-- Vault Delver's Pantaloons
+					i(200427),	-- Poleyns of the Walking Mountain
+				}),
+			},
+			[DATHEA_ASCENDED] = {
+				i(196587, {	-- Dreadful Garnet Forgestone
+					i(200407),	-- Grasps of the Haunted Frostbrood
+					i(200344),	-- Skybound Avenger's Grips
+					i(200335),	-- Scalesworn Cultist's Gloves
+				}),
+				i(196597, {	-- Mystic Garnet Forgestone
+					i(200353),	-- Lost Landcaller's Claws
+					i(200389),	-- Stormwing Harrier's Handguards
+					i(200317),	-- Crystal Scholar's Pageturners
+				}),
+				i(196602, {	-- Venerated Garnet Forgestone
+					i(200416),	-- Virtuous Silver Gauntlets
+					i(200326),	-- Draconic Hierophant's Grips
+					i(200398),	-- Gauntlets of Infused Earth
+				}),
+				i(196592, {	-- Zenith Garnet Forgestone
+					i(200380),	-- Gauntlets of the Awakened
+					i(200362),	-- Palms of the Waking Fist
+					i(200371),	-- Vault Delver's Lockbreakers
+					i(200425),	-- Gauntlets of the Walking Mountain
+				}),
+			},
+			[KUROG_GRIMTOTEM] = {
+				i(196586, {	-- Dreadful Amethyst Forgestone
+					i(200405),	-- Breastplate of the Haunted Frostbrood
+					i(200342),	-- Skybound Avenger's Harness
+					i(200333),	-- Scalesworn Cultist's Frosk
+				}),
+				i(196596, {	-- Mystic Amethyst Forgestone
+					i(200351),	-- Lost Landcaller's Robes
+					i(200387),	-- Stormwing Harrier's Cuirass
+					i(200315),	-- Crystal Scholar's Tunic
+				}),
+				i(196601, {	-- Venerated Amethyst Forgestone
+					i(200414),	-- Virtuous Silver Breastplate
+					i(200324),	-- Draconic Hierophant's Vestment
+					i(200396),	-- Robe of Infused Earth
+				}),
+				i(196591, {	-- Zenith Amethyst Forgestone
+					i(200378),	-- Hauberk of the Awakened
+					i(200360),	-- Chestwrap of the Waking Fist
+					i(200369),	-- Vault Delver's Brigandine
+					i(200423),	-- Husk of the Walking Mountain
+				}),
+			},
+			[BROODKEEPER_DIURNA] = {
+				i(196589, {	-- Dreadful Lapis Forgestone
+					i(200410),	-- Jaws of the Haunted Frostbrood
+					i(200347),	-- Skybound Avenger's Ailerons
+					i(200338),	-- Scalesworn Cultist's Effigy
+				}),
+				i(196599, {	-- Mystic Lapis Forgestone
+					i(200356),	-- Lost Landcaller's Mantle
+					i(200392),	-- Stormwing Harrier's Pinions
+					i(200320),	-- Crystal Scholar's Beacons
+				}),
+				i(196604, {	-- Venerated Lapis Forgestone
+					i(200419),	-- Virtuous Silver Pauldrons
+					i(200329),	-- Draconic Hierophant's Wisdom
+					i(200401),	-- Calderas of Infused Earth
+				}),
+				i(196594, {	-- Zenith Lapis Forgestone
+					i(200383),	-- Talons of the Awakened
+					i(200365),	-- Mantle of the Waking Fist
+					i(200374),	-- Vault Delver's Epaulets
+					i(200428),	-- Peaks of the Walking Mountain
+				}),
+			},
+			[RASZAGETH_THE_STORM_EATER] = {
+				i(196590, {	-- Dreadful Topaz Forgestone
+					i(200408),	-- Maw of the Haunted Frostbrood
+					i(200345),	-- Skybound Avenger's Visor
+					i(200336),	-- Scalesworn Cultist's Scorn
+				}),
+				i(196600, {	-- Mystic Topaz Forgestone
+					i(200354),	-- Lost Landcaller's Antlers
+					i(200390),	-- Stormwing Harrier's Skullmask
+					i(200318),	-- Crystal Scholar's Cowl
+				}),
+				i(196605, {	-- Venerated Topaz Forgestone
+					i(200417),	-- Virtuous Silver Heaume
+					i(200327),	-- Draconic Hierophant's Archcowl
+					i(200399),	-- Faceguard of Infused Earth
+				}),
+				i(196595, {	-- Zenith Topaz Forgestone
+					i(200381),	-- Crown of the Awakened
+					i(200363),	-- Gaze of the Waking Fist
+					i(200372),	-- Vault Delver's Vizard
+					i(200426),	-- Casque of the Walking Mountain
+				}),
+			},
+		}
+	}
 }
-local function RaidDifficulty(difficultyID, t)
-	local diff = d(difficultyID, t)
-	CurrentDifficultyID = diff.difficultyID
-	return setmetatable(diff, autoDifficultyMeta)
-end
+
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, extraLoots)
+local Boss, BossOnly, RaidDifficulty, ALL_BOSSES =
+InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.ALL_BOSSES
 
 root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	inst(1200, {	-- Vault of the Incarnates
@@ -495,7 +468,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 				}),
 			}),
-			RaidDifficulty(LFR_RAID, {
+			RaidDifficulty(LFR_RAID).AddGroups({
 				n(ZONE_DROPS, {
 					i(202004),	-- Brawler's Earthen Cuirass [BoE]
 					i(201992),	-- Emissary's Flamewrought Seal [BoE]
@@ -507,7 +480,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					i(202010),	-- Primalist Warden's Bracers [BoE]
 					i(202007),	-- Woven Stone Bracelets [BoE]
 				}),
-			}).AddGroups({
 				header(HEADERS.Achievement, 17110, {	-- The Primal Bulwark
 					Boss(ERANOG),
 					Boss(THE_PRIMAL_COUNCIL),
@@ -549,7 +521,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					ach(16451),	-- The Ol Raszle Daszle
 				}),
 			}),
-			RaidDifficulty(NORMAL_RAID, {
+			RaidDifficulty(NORMAL_RAID).AddGroups({
 				n(QUESTS, {
 					q(71018, {	-- Vault of the Incarnates: Break a Few Eggs (N)
 						["provider"] = { "n", 193460 },	-- Kalecgos
@@ -569,7 +541,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					i(202010),	-- Primalist Warden's Bracers [BoE]
 					i(202007),	-- Woven Stone Bracelets [BoE]
 				}),
-			}).AddGroups({
 				Boss(ERANOG),
 				Boss(TERROS),
 				Boss(THE_PRIMAL_COUNCIL),
@@ -579,7 +550,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				Boss(BROODKEEPER_DIURNA),
 				Boss(RASZAGETH_THE_STORM_EATER),
 			}),
-			RaidDifficulty(HeroicPlus, {
+			RaidDifficulty(HeroicPlus).AddGroups({
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = ALL_BOSSES,
 					["g"] = {
@@ -592,7 +563,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 						}),
 					},
 				}),
-			}).AddGroups({
 				BossOnly(ERANOG),
 				BossOnly(TERROS),
 				BossOnly(THE_PRIMAL_COUNCIL),
@@ -604,7 +574,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					ach(17107, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Ahead of the Curve: Raszageth the Storm-Eater
 				}),
 			}),
-			RaidDifficulty(HEROIC_RAID, {
+			RaidDifficulty(HEROIC_RAID).AddGroups({
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = ALL_BOSSES,
 					["g"] = {
@@ -630,7 +600,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					i(202010),	-- Primalist Warden's Bracers [BoE]
 					i(202007),	-- Woven Stone Bracelets [BoE]
 				}),
-			}).AddGroups({
 				Boss(ERANOG),
 				Boss(TERROS),
 				Boss(THE_PRIMAL_COUNCIL),
@@ -640,7 +609,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				Boss(BROODKEEPER_DIURNA),
 				Boss(RASZAGETH_THE_STORM_EATER),
 			}),
-			RaidDifficulty(MYTHIC_RAID, {
+			RaidDifficulty(MYTHIC_RAID).AddGroups({
 				n(COMMON_BOSS_DROPS, {
 					["crs"] = ALL_BOSSES,
 					["g"] = {
@@ -675,7 +644,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					i(202007, {["timeline"] = { ADDED_10_0_5 }}),		-- Woven Stone Bracelets [BoE]
 					i(202143, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5}}),	-- Woven Stone Bracelets [BoP]
 				}),
-			}).AddGroups({
 				Boss(ERANOG, {
 					ach(16346),	-- Mythic: Eranog
 				}),
