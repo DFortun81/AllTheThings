@@ -4076,9 +4076,11 @@ i(206174, 3582);	-- Blub
 -- PATCH 10.1.7 --
 ------------------
 i(208543, 4265);	-- Lil' Frostwing
+i(211271, 3491);	-- Arfus
 --- SPECIAL ---
 i(0, 4267);			-- Lil' Maggz
 i(0, 3579);			-- Ysergle The Dreamurk
+
 --- NYI ---
 i(208850, 0);		-- Lil' Maggz
 

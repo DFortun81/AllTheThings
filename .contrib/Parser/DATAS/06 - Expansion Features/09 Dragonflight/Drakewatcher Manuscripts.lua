@@ -1057,12 +1057,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
 			applyevent(EVENTS.BREWFEST, i(208742)),	-- Renewed Proto-Drake: Brewfest Armor (DM!)
 		}),
-		header(HEADERS.Item, 194549, sharedData({	-- Windborne Velocidrake
-			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["timeline"] = { CREATED_10_1_7 },
-		}, {
-			i(208680),	-- Windborne Velocidrake: Hallow's End Armor
-		})),
+		header(HEADERS.Item, 194549, {	-- Windborne Velocidrake
+			applyevent(EVENTS.HALLOWS_END, i(208680)),	-- Windborne Velocidrake: Hallow's End Armor
+		}),
 		header(HEADERS.Item, 204361, {	-- Winding Slitherdrake
 			i(203306),	-- Winding Slitherdrake: Horned Brow (DM!)
 			i(203336),	-- Winding Slitherdrake: Paired Horns (DM!)

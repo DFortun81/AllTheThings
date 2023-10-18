@@ -96,6 +96,10 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 		["cost"] = { { "i", 33226, 150 }, },	-- 150x Tricky Treat
 	}),
 	-- #else
+	i(208735, {	-- Bucket of Morbid Treats
+		["timeline"] = { "added 10.1.7" },
+		["cost"] = { { "i", 33226, 150 }, },	-- 2x Tricky Treat
+	}),
 	i(37585, {	-- Chewy Fel Taffy
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
 	}),
@@ -149,7 +153,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	}),
 	i(37604, {	-- Tooth Pick
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
-	}),
+	}),	
 	-- #endif
 };
 local PET_VENDOR_GROUPS = {
@@ -454,6 +458,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			},
 		}),
 		-- #endif
+		ach(18962, {	-- A Cleansing Fire
+			["timeline"] = { "added 10.1.7" },
+		}),
 		ach(10365, {	-- A Frightening Friend
 			["description"] = "You need Tier 3 garrison for this.",
 			["coords"] = {
@@ -1874,7 +1881,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			ach(255, {	-- Bring Me The Head of... Oh Wait
 				["timeline"] = { "added 3.0.1" },
 			}),
-			i(117392, {	-- Loot-Stuffed Pumpkin (Epic)
+			i(117392, {	-- Loot-Filled Pumpkin (Epic)
 				["timeline"] = { "added 6.0.1" },
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
@@ -1901,8 +1908,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						["timeline"] = { "added 2.0.1" },
 						["filterID"] = MOUNTS,
 					}),
+					ach(17547, {	-- The Lick King
+						["timeline"] = { "added 10.1.7" },
+						["provider"] = { "i", 211271 },	-- Arfus (PET)
+					}),
+					i(211271, {	-- Arfus (PET)
+						["timeline"] = { "added 10.1.7" },
+					}),
+					i(33292, {	-- Hallowed Helm
+						["timeline"] = { "added 2.2.2.7318" },
+					}),
 					i(37012, {	-- Headless Horseman's Mount (MOUNT!)
 						["timeline"] = { "added 2.0.1" },
+					}),
+					i(37011, {	-- Magic Broom (MOUNT!)
+						["timeline"] = { "added 2.4.3.8600" },
+						["collectible"] = false,
+					}),
+					i(33154, {	-- Sinister Squashling (PET!)
+						["timeline"] = { "added 2.2.2.7318" },
 					}),
 					i(117356, {	-- The Horseman's Sinister Slicer
 						["timeline"] = { "added 6.0.1.18594" },
@@ -1910,15 +1934,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					i(117355, {	-- The Horseman's Horrific Hood
 						["timeline"] = { "added 6.0.1.18594" },
 					}),
-					i(33154, {	-- Sinister Squashling (PET!)
-						["timeline"] = { "added 2.2.2.7318" },
-					}),
-					i(33292, {	-- Hallowed Helm
-						["timeline"] = { "added 2.2.2.7318" },
-					}),
-					i(37011, {	-- Magic Broom (MOUNT!)
-						["timeline"] = { "added 2.4.3.8600" },
-						["collectible"] = false,
+					i(208680, {	-- Windborne Velocidrake: Hallow's End Armor
+						["timeline"] = { "added 10.1.7" },
 					}),
 				},
 			}),
