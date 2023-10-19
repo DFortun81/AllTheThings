@@ -3302,8 +3302,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["groups"] = {
 						objective(1, {	-- 0/1 Restored Quel'Delar
 							["providers"] = {
-								{ "i", 49871 },	-- Restored Quel'Delar
-								{ "i", 49879 },	-- Tainted Quel'Delar
+								{ "i",  49871 },	-- Restored Quel'Delar
+								{ "i",  49879 },	-- Tainted Quel'Delar
+								{ "o", 201794 },	-- Quel'Delar
 							},
 						}),
 					},
@@ -3318,8 +3319,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["groups"] = {
 						objective(1, {	-- 0/1 Restored Quel'Delar
 							["providers"] = {
-								{ "i", 49871 },	-- Restored Quel'Delar
-								{ "i", 49879 },	-- Tainted Quel'Delar
+								{ "i",  49871 },	-- Restored Quel'Delar
+								{ "i",  49879 },	-- Tainted Quel'Delar
+								{ "o", 201794 },	-- Quel'Delar
 							},
 						}),
 					},
@@ -3333,8 +3335,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["groups"] = {
 						objective(1, {	-- 0/1 Restored Quel'Delar
 							["providers"] = {
-								{ "i", 49871 },	-- Restored Quel'Delar
-								{ "i", 49879 },	-- Tainted Quel'Delar
+								{ "i",  49871 },	-- Restored Quel'Delar
+								{ "i",  49879 },	-- Tainted Quel'Delar
+								{ "o", 201794 },	-- Quel'Delar
 							},
 						}),
 					},
@@ -3348,8 +3351,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["groups"] = {
 						objective(1, {	-- 0/1 Restored Quel'Delar
 							["providers"] = {
-								{ "i", 49871 },	-- Restored Quel'Delar
-								{ "i", 49879 },	-- Tainted Quel'Delar
+								{ "i",  49871 },	-- Restored Quel'Delar
+								{ "i",  49879 },	-- Tainted Quel'Delar
+								{ "o", 201794 },	-- Quel'Delar
 							},
 						}),
 					},
@@ -3363,8 +3367,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["groups"] = {
 						objective(1, {	-- 0/1 Restored Quel'Delar
 							["providers"] = {
-								{ "i", 49871 },	-- Restored Quel'Delar
-								{ "i", 49879 },	-- Tainted Quel'Delar
+								{ "i",  49871 },	-- Restored Quel'Delar
+								{ "i",  49879 },	-- Tainted Quel'Delar
+								{ "o", 201794 },	-- Quel'Delar
 							},
 						}),
 					},
@@ -3378,8 +3383,9 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["groups"] = {
 						objective(1, {	-- 0/1 Restored Quel'Delar
 							["providers"] = {
-								{ "i", 49871 },	-- Restored Quel'Delar
-								{ "i", 49879 },	-- Tainted Quel'Delar
+								{ "i",  49871 },	-- Restored Quel'Delar
+								{ "i",  49879 },	-- Tainted Quel'Delar
+								{ "o", 201794 },	-- Quel'Delar
 							},
 						}),
 					},
