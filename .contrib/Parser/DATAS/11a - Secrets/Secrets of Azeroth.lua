@@ -803,6 +803,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 				["qg"] = 185562,	-- Tithris
 				["coord"] = { 47.5, 46.2, VALDRAKKEN },
 				["sourceQuest"] = 77934,	-- A Complete Inventory
+				["repeatable"] = true,
 				["groups"] = {
 					i(208942),	-- Preservationist's Dispatch Three (QI!)
 					o(409320, {	-- Buried Object
@@ -857,6 +858,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 				["qg"] = 206864,	-- Preservationist Kathos
 				["coord"] = { 47.4, 48.1, VALDRAKKEN },
 				["sourceQuest"] = 77954,	-- A Curious Orb
+				["repeatable"] = true,
 				["groups"] = {
 					i(208958),	-- Ancient Tyrhold Artifact Notes (QI!)
 					q(77974, {

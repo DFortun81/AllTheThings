@@ -26,7 +26,7 @@ CreateInstanceHelper = function(crs, loots, extraLoots, zonedrops)
 			for _,extraLootData in ipairs(extraLoots) do
 				add, data = extraLootData.Add, extraLootData.Data
 				if (not add or type(add) ~= "function") or (not data or type(data) ~= "table") then
-					error("'extraLoots' expects an array of tables with { Add = func(bossID, [data]), data = { [bossID] = {i(###),i(###)}, ... } }")
+					error("'extraLoots' expects an array of tables with { Add = func(encounter, bossID, difficultyID, [data]), Data = { [bossID] = {i(###),i(###)}, ... } }")
 				end
 				add(encounter, id, CurrentDifficultyID, data)
 			end
