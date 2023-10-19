@@ -1885,7 +1885,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["timeline"] = { "added 10.1.7" },
 			}),
 			i(117392, {	-- Loot-Filled Pumpkin (Epic)
-				["timeline"] = { "added 6.0.1" },
+				["timeline"] = { "added 6.0.1", "removed 10.1.7" },
+				--[[
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
 					{ "pop" },	-- Get the Rewards.
@@ -1893,7 +1894,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					{ "pop" },	-- Get the Rewards.
 					{ "contains", "itemID", 33226, unpack(MASK_IDS) },	-- Tricky Treat & All the Masks
 					{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
-				},
+				},--]]
 				-- Minimum level this bag drops (not 100% sure)
 				-- #if AFTER 9.0.1
 				["lvl"] = 50,
@@ -1902,6 +1903,46 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- #elseif AFTER 7.2.5
 				["lvl"] = 98,
 				-- #endif
+				["groups"] = {
+					ach(980, {	-- The Horseman's Reins
+						["provider"] = { "i", 37012 },	-- The Horseman's Reins
+						-- #if BEFORE WRATH
+						["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
+						-- #endif
+						["timeline"] = { "added 2.0.1" },
+						["filterID"] = MOUNTS,
+					}),
+					i(33292, {	-- Hallowed Helm
+						["timeline"] = { "added 2.2.2.7318" },
+					}),
+					i(37012, {	-- Headless Horseman's Mount (MOUNT!)
+						["timeline"] = { "added 2.0.1" },
+					}),
+					i(37011, {	-- Magic Broom (MOUNT!)
+						["timeline"] = { "added 2.4.3.8600" },
+						["collectible"] = false,
+					}),
+					i(33154, {	-- Sinister Squashling (PET!)
+						["timeline"] = { "added 2.2.2.7318" },
+					}),
+					i(117356, {	-- The Horseman's Sinister Slicer
+						["timeline"] = { "added 6.0.1.18594" },
+					}),
+					i(117355, {	-- The Horseman's Horrific Hood
+						["timeline"] = { "added 6.0.1.18594" },
+					}),
+				},
+			}),
+			i(209024, {	-- Loot-Filled Pumpkin (Bag after Rework)
+				["timeline"] = { "added 10.1.7" },
+				["sym"] = {
+					{ "selectparent", 2 },	-- Select the holiday root.
+					{ "pop" },	-- Get the Rewards.
+					{ "where", "headerID", REWARDS },	-- Select the "Rewards" header.
+					{ "pop" },	-- Get the Rewards.
+					{ "contains", "itemID", 33226, unpack(MASK_IDS) },	-- Tricky Treat & All the Masks
+					{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
+				},
 				["groups"] = {
 					ach(980, {	-- The Horseman's Reins
 						["provider"] = { "i", 37012 },	-- The Horseman's Reins
@@ -1941,8 +1982,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						["timeline"] = { "added 10.1.7" },
 					}),
 				},
-			}),
-			i(149574, {	-- Loot-Stuffed Pumpkin
+			}),			
+			i(149574, {	-- Loot-Stuffed Pumpkin (Blue)
 				-- Bag introduced in 7.2.5 [Legion]
 				-- Only i600 has ever dropped from this bag, not the other iLvLs
 				["timeline"] = { "added 7.0.1" },
@@ -1970,6 +2011,32 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					}),
 				},
 			}),
+			i(209026, {	-- Loot-Stuffed Pumpkin (Bag after Rework)
+				["timeline"] = { "added 10.1.7" },
+				["sym"] = {
+					{ "selectparent", 2 },	-- Select the holiday root.
+					{ "pop" },	-- Get the Rewards.
+					{ "where", "headerID", REWARDS },	-- Select the "Rewards" header.
+					{ "pop" },	-- Get the Rewards.
+					{ "contains", "itemID", 33226, unpack(MASK_IDS) },	-- Tricky Treat & All the Masks
+					{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
+				},
+				["groups"] = {
+					i(117356, {	-- The Horseman's Sinister Slicer
+						["timeline"] = { "added 6.0.1.18594" },
+					}),
+					i(117355, {	-- The Horseman's Horrific Hood
+						["timeline"] = { "added 6.0.1.18594" },
+					}),
+					i(33292, {	-- Hallowed Helm
+						["timeline"] = { "added 2.2.2.7318" },
+					}),
+					i(37011, {	-- Magic Broom (MOUNT!)
+						["timeline"] = { "added 2.4.3.8600" },
+						["collectible"] = false,
+					}),
+				},
+			}),		
 			i(54516, {	-- Loot-Stuffed Pumpkin
 				-- This bag was removed at the end of MoP and in WoD epic bag introduced
 				["timeline"] = { "added 3.3.0", "removed 6.0.1" },
