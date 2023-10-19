@@ -3754,15 +3754,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75700, {	-- Candy Bucket - Thaldraszus, Valdrakken (The Parting Glass)
-					["coord"] = { 72.4, 46.7, THALDRASZUS },
+					["coord"] = { 72.4, 46.7, VALDRAKKEN },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75699, {	-- Candy Bucket - Thaldraszus, Valdrakken (The Roasted Ram)
-					["coord"] = { 47.2, 45.5, THALDRASZUS },
+					["coord"] = { 47.2, 45.5, VALDRAKKEN },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75701, {	-- Candy Bucket - Thaldraszus, Valdrakken (Weyrnrest)
-					["coord"] = { 22.4, 30.9, THALDRASZUS },
+					["coord"] = { 22.4, 30.9, VALDRAKKEN },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75667, {	-- Candy Bucket - The Azure Span, Camp Antonidas
