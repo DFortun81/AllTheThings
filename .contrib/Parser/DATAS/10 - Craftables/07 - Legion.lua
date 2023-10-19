@@ -369,6 +369,9 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(139312, {	-- Grimoire of the Observer (CI!)
 				["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 },
 			}),
+			i(147119, {	-- Grimoire of the Shadow Succubus (CI!)
+				["timeline"] = { ADDED_10_1_5 },
+			}),
 			i(139310),	-- Grimoire of the Shivarra (CI!)
 			i(139311),	-- Grimoire of the Voidlord (CI!)
 			i(139315, {	-- Grimoire of the Wrathguard (CI!)
