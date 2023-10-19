@@ -1886,7 +1886,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 			i(117392, {	-- Loot-Filled Pumpkin (Epic)
 				["timeline"] = { "added 6.0.1", "removed 10.1.7" },
-				--[[
+				-- #if BEFORE 10.1.7
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
 					{ "pop" },	-- Get the Rewards.
@@ -1894,7 +1894,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					{ "pop" },	-- Get the Rewards.
 					{ "contains", "itemID", 33226, unpack(MASK_IDS) },	-- Tricky Treat & All the Masks
 					{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
-				},--]]
+				},
+				-- #endif
 				-- Minimum level this bag drops (not 100% sure)
 				-- #if AFTER 9.0.1
 				["lvl"] = 50,
@@ -1904,6 +1905,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["lvl"] = 98,
 				-- #endif
 				["groups"] = {
+					-- #if BEFORE 10.1.7
 					ach(980, {	-- The Horseman's Reins
 						["provider"] = { "i", 37012 },	-- The Horseman's Reins
 						-- #if BEFORE WRATH
@@ -1931,6 +1933,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					i(117355, {	-- The Horseman's Horrific Hood
 						["timeline"] = { "added 6.0.1.18594" },
 					}),
+					-- #endif
 				},
 			}),
 			i(209024, {	-- Loot-Filled Pumpkin (Bag after Rework)
@@ -1987,6 +1990,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- Bag introduced in 7.2.5 [Legion]
 				-- Only i600 has ever dropped from this bag, not the other iLvLs
 				["timeline"] = { "added 7.0.1" },
+				-- #if BEFORE 10.1.7
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
 					{ "pop" },	-- Get the Rewards.
@@ -1995,7 +1999,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					{ "contains", "itemID", 33226, unpack(MASK_IDS) },	-- Tricky Treat & All the Masks
 					{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
 				},
+				-- #endif
 				["groups"] = {
+					-- #if BEFORE 10.1.7
 					i(117356, {	-- The Horseman's Sinister Slicer
 						["timeline"] = { "added 6.0.1.18594" },
 					}),
@@ -2009,6 +2015,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						["timeline"] = { "added 2.4.3.8600" },
 						["collectible"] = false,
 					}),
+					-- #endif
 				},
 			}),
 			i(209026, {	-- Loot-Stuffed Pumpkin (Bag after Rework)
