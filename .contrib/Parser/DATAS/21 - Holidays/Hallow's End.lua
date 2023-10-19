@@ -3805,7 +3805,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["coord"] = { 25.8, 55.2, THE_WAKING_SHORES },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
-				q(75698, {	-- Candy Bucket - The Waking Shores, Obsidian Bulwark
+				q(77698, {	-- Candy Bucket - The Waking Shores, Obsidian Bulwark
 					["coord"] = { 43.1, 66.7, THE_WAKING_SHORES },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
