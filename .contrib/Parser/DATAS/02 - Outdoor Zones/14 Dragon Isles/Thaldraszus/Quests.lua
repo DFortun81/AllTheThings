@@ -1082,8 +1082,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["icon"] = 5205847,
 				["g"] = {
 					q(76423, {	-- No Limits
-						["provider"] = { "n", 208035 },	-- Chromie
-						["coord"] = { 60.9, 40.0, VALDRAKKEN },
+						["providers"] = {
+							{ "n", 208035 },	-- Chromie
+							{ "n", 208086 },	-- Chromie
+						},
+						["coords"] = {
+							{ 60.9, 40.0, VALDRAKKEN },
+							{ 59.3, 81.5, THALDRASZUS },
+						},
 					}),
 					q(77417, {	-- What Makes an Infinite
 						["sourceQuests"] = { 76423 },	-- No Limits

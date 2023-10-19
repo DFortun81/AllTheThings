@@ -213,6 +213,7 @@ local RARE_GROUP_TIME = {
 	193241,	-- Lord Epochbrgl <Time-Lost>
 	193210,	-- Phleep <Time-Lost, Mind-Lost>
 	193176,	-- Sandana the Tempest <Timesand Thief>
+	201664,	-- Temporal Investi-gator
 };
 local RARE_GROUP_BEOGOKA = {
 	193116,	-- Beogoka

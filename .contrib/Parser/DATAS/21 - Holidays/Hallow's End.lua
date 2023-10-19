@@ -153,7 +153,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	}),
 	i(37604, {	-- Tooth Pick
 		["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
-	}),	
+	}),
 	-- #endif
 };
 local PET_VENDOR_GROUPS = {
@@ -1938,7 +1938,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 			i(209024, {	-- Loot-Filled Pumpkin (Epic Bag after 10.1.7 Rework)
 				["timeline"] = { "added 10.1.7" },
-				["description"] = "This bag, rewarded on the first kill of the day, receives a bonus chance for the headless horseman mount that scales with the number of curses you apply (confirmed by a bluepost on 18th October 2023).\nOther items also might get a buffed droprate with curses, but we dont know."
+				["description"] = "This bag, rewarded on the first kill of the day, receives a bonus chance for the headless horseman mount that scales with the number of curses you apply (confirmed by a bluepost on 18th October 2023).\nOther items also might get a buffed droprate with curses, but we dont know.",
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
 					{ "pop" },	-- Get the Rewards.
@@ -1986,7 +1986,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						["timeline"] = { "added 10.1.7" },
 					}),
 				},
-			}),			
+			}),
 			i(149574, {	-- Loot-Stuffed Pumpkin (Blue Bag after 7.2.5 Rework)
 				-- Bag introduced in 7.2.5 [Legion]
 				-- Only i600 has ever dropped from this bag, not the other iLvLs
@@ -2044,7 +2044,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						["collectible"] = false,
 					}),
 				},
-			}),		
+			}),
 			i(54516, {	-- Loot-Stuffed Pumpkin
 				-- This bag was removed at the end of MoP and in WoD epic bag introduced
 				["timeline"] = { "added 3.3.0", "removed 6.0.1" },

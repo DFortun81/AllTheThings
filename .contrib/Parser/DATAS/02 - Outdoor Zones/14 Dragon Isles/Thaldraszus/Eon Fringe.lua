@@ -256,6 +256,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(201664, {	-- Temporal Investi-gator
 					["sourceQuests"] = { 75986 },	-- Feats Per Minute
 					["description"] = "Go in Everywhere Inn at 2nd floor, borrow Melly's Metronographer, use it near Bartender Bob, buy Infinitea from Bartender Blob and fly at coords, use it and interact with object to summon rare",
+					["cost"] = {{"i",208448,1}},	-- Infinitea
 					["coords"] = {
 						{ 52.3, 81.4, THALDRASZUS },	-- Everywhere Inn
 						{ 54.6, 85.9, THALDRASZUS },	-- Rare summon spot
@@ -263,7 +264,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["questID"] = 75479,
 					["isDaily"] = true,
 					["g"] = {
-						i(208449),	-- Melly's Metronographer+++
 						i(206993),	-- Investi-gator's Pocketwatch (TOY!) / confirmed in discord #errors report
 					},
 				}),
@@ -272,6 +272,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(207463, { -- Bartender Blob
 					["sourceQuests"] = { 75986 },	-- Feats Per Minute
 					["coord"] = { 52.1, 81.4, THALDRASZUS },
+					["provider"] = {"i",208449},	-- Melly's Metronographer
 					["g"] = {
 						i(208448, {	-- Infinitea
 							["description"] = "Timer start right after you buy it"
@@ -314,6 +315,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						}),
 						i(206926, {	-- Off-Sync Off-Hammer (COSMETIC!)
 							["cost"] = {{ "c", DRAGON_SUPPLIES, 600 }},
+						}),
+					},
+				}),
+				n(204990, {	-- Melly Teletone
+					["coord"] = { 52.2, 81.4, THALDRASZUS },
+					["g"] = {
+						i(208449, {	-- Melly's Metronographer
+							["description"] = "Use next to 'Bartender Bob'.",
 						}),
 					},
 				}),
