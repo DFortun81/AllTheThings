@@ -1936,7 +1936,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					-- #endif
 				},
 			}),
-			i(209024, {	-- Loot-Filled Pumpkin (Bag after Rework)
+			i(209024, {	-- Loot-Filled Pumpkin (Epic Bag after 10.1.7 Rework)
 				["timeline"] = { "added 10.1.7" },
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
@@ -1986,7 +1986,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					}),
 				},
 			}),			
-			i(149574, {	-- Loot-Stuffed Pumpkin (Blue)
+			i(149574, {	-- Loot-Stuffed Pumpkin (Blue Bag after 7.2.5 Rework)
 				-- Bag introduced in 7.2.5 [Legion]
 				-- Only i600 has ever dropped from this bag, not the other iLvLs
 				["timeline"] = { "added 7.0.1" },
@@ -2018,7 +2018,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					-- #endif
 				},
 			}),
-			i(209026, {	-- Loot-Stuffed Pumpkin (Bag after Rework)
+			i(209026, {	-- Loot-Stuffed Pumpkin (Blue Bag after 10.1.7 Rework)
 				["timeline"] = { "added 10.1.7" },
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
