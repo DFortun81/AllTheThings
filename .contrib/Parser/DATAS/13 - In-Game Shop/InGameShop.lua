@@ -176,14 +176,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(166775, {	-- Vulpine Familiar (MOUNT!)
 			["timeline"] = { "added 8.1.0.28724" },
 		}),
-		i(112326, {	-- Warforged Nightmare (MOUNT!)
-			["timeline"] = { "added 6.0.1.18297", "removed 10.1.7.99999" },	-- removed on Oct 31, 2023
-			["groups"] = {
-				i(112324, {	-- Nightmarish Hitching Post (TOY!)
-					["timeline"] = { "added 6.0.1.18297" },
-				}),
-			},
-		}),
+		i(112326,	-- Warforged Nightmare (MOUNT!)
+			-- removed on Oct 31, 2023
+			bubbleDownSelf({ ["timeline"] = { "added 6.0.1.18297", "removed 10.1.7.99999" } }, {
+				i(112324),	-- Nightmarish Hitching Post (TOY!)
+		})),
 		i(69846, {	-- Winged Guardian (MOUNT!)
 			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
 			["timeline"] = { "added 4.1.0.13793", "removed 10.0.2.47213" },
