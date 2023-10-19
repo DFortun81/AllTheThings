@@ -20696,13 +20696,14 @@ end)();
 -- ATT Debugger Logic
 app.LoadDebugger = function()
 	-- CLEU binding only happens when debugger is enabled because of how expensive it can get in large mob farms
-	app:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
-	app.events.COMBAT_LOG_EVENT_UNFILTERED = function()
-		local _,event = CombatLogGetCurrentEventInfo();
-		if event == "UNIT_DIED" or event == "UNIT_DESTROYED" then
-			app.RefreshQuestInfo();
-		end
-	end
+	-- Really don't think this is necessary for the debugger at this point in time, quest updates are pretty solid without tracking every combat log event
+	-- app:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
+	-- app.events.COMBAT_LOG_EVENT_UNFILTERED = function()
+	-- 	local _,event = CombatLogGetCurrentEventInfo();
+	-- 	if event == "UNIT_DIED" or event == "UNIT_DESTROYED" then
+	-- 		app.RefreshQuestInfo();
+	-- 	end
+	-- end
 	-- This event is helpful for world objects used as treasures. Won't help with objects without rewards (e.g. cat statues in Nazjatar)
 	app:RegisterEvent("LOOT_OPENED")
 	app.events.LOOT_OPENED = function()
@@ -20901,7 +20902,7 @@ app.LoadDebugger = function()
 						if IgnoredNPCs[npc_id] then return true; end
 
 						local numItems = GetMerchantNumItems();
-						if app.Debugging then print("MERCHANT DETAILS", ty, npc_id, numItems); end
+						app.PrintDebug("MERCHANT DETAILS", ty, npc_id, numItems);
 
 						local rawGroups = {};
 						for i=1,numItems,1 do
@@ -20950,7 +20951,7 @@ app.LoadDebugger = function()
 
 			-- Setup Event Handlers and register for events
 			self:SetScript("OnEvent", function(self, e, ...)
-				if app.Debugging then print(e, ...); end
+				app.PrintDebug(e, ...);
 				if e == "ZONE_CHANGED_NEW_AREA" or e == "NEW_WMO_CHUNK" then
 					AddObject();
 				elseif e == "MERCHANT_SHOW" or e == "MERCHANT_UPDATE" then
@@ -21040,7 +21041,7 @@ app.LoadDebugger = function()
 					-- trigger the delayed backup
 					DelayedCallback(self.BackupData, 15, self);
 				-- Capture quest NPC dialogs
-				elseif e == "QUEST_DETAIL" or e == "QUEST_PROGRESS" then
+				elseif e == "QUEST_DETAIL" or e == "QUEST_PROGRESS" or e == "QUEST_COMPLETE" then
 					local questStartItemID = ...;
 					local questID = GetQuestID();
 					if questID == 0 then return false; end
@@ -21052,7 +21053,7 @@ app.LoadDebugger = function()
 					end
 					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid;
 					if guid then type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
-					if app.Debugging then print("QUEST_DETAIL", questStartItemID, " => Quest #", questID, type, npc_id, app.NPCNameFromID[npc_id]); end
+					app.PrintDebug(e, questStartItemID, " => Quest #", questID, type, npc_id, app.NPCNameFromID[npc_id]);
 
 					local rawGroups = {};
 					for i=1,GetNumQuestRewards(),1 do
@@ -21078,18 +21079,18 @@ app.LoadDebugger = function()
 					-- end
 
 					local info = { ["questID"] = questID, ["g"] = rawGroups };
-					if questStartItemID and questStartItemID > 0 then info.provider = { "i", questStartItemID }; end
+					local providers = {}
+					if questStartItemID and questStartItemID > 0 then tinsert(providers, { "i", questStartItemID }); end
 					if npc_id then
 						npc_id = tonumber(npc_id);
-						if type == "GameObject" then
-							info = { ["objectID"] = npc_id, ["text"] = UnitName(npc), ["g"] = { info } };
-						else
-							info.qgs = { npc_id };
-						end
+						tinsert(providers, { type == "GameObject" and "o" or "n", npc_id })
 						local faction = UnitFactionGroup(npc);
 						if faction then
 							info.r = faction == "Horde" and Enum.FlightPathFaction.Horde or Enum.FlightPathFaction.Alliance;
 						end
+					end
+					if #providers > 0 then
+						info.providers = providers
 					end
 					AddObject(info);
 				-- Capture various personal/party loot received
@@ -21128,14 +21129,14 @@ app.LoadDebugger = function()
 								for s=1,#source,2 do
 									type, zero, server_id, instance_id, zone_uid, id, spawn_uid = strsplit("-",source[s]);
 									-- TODO: test this with Item containers
-									if app.Debugging then print("Add Loot",itemID,"from",type,id) end
+									app.PrintDebug("Add Loot",itemID,"from",type,id)
 									info = { [(type == "GameObject") and "objectID" or "npcID"] = tonumber(id), ["g"] = { { ["itemID"] = itemID, ["rawlink"] = loot } } };
 									-- print("Add Loot")
 									-- app.PrintTable(info);
 									AddObject(info);
 								end
-							elseif app.Debugging then
-								print("No ItemID!",loot)
+							else
+								app.PrintDebug("No ItemID!",loot)
 							end
 						end
 					end
@@ -21144,6 +21145,7 @@ app.LoadDebugger = function()
 			self:RegisterEvent("QUEST_DETAIL");
 			self:RegisterEvent("QUEST_PROGRESS");
 			self:RegisterEvent("QUEST_LOOT_RECEIVED");
+			self:RegisterEvent("QUEST_COMPLETE");
 			self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 			self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 			self:RegisterEvent("NEW_WMO_CHUNK");
