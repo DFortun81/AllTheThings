@@ -1821,7 +1821,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		ach(18360, {	-- Tricks and Treats of the Dragon Isles
 			["timeline"] = { "added 10.1.5.50379" },
-			--TODO: ["sym"] = {{ "achievement_criteria" }},
+			["sym"] = {{ "achievement_criteria" }},
 		}),
 	}),
 	-- #endif
@@ -3698,139 +3698,143 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 
 				-- Dragonflight
 				q(75684, {	-- Candy Bucket - Ohn'ahran Plains, Broadhoof Outpost
-					--["coord"] = { , OHNAHRAN_PLAINS },
+					["coord"] = { 46.2, 40.6, OHNAHRAN_PLAINS },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75693, {	-- Candy Bucket - Ohn'ahran Plains, Emberwatch
-					--["coord"] = { , OHNAHRAN_PLAINS },
+					["coord"] = { 66.3, 24.5, OHNAHRAN_PLAINS },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75692, {	-- Candy Bucket - Ohn'ahran Plains, Forkriver Crossing
-					--["coord"] = { , OHNAHRAN_PLAINS },
+					["coord"] = { 72.1, 80.4, OHNAHRAN_PLAINS },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75685, {	-- Candy Bucket - Ohn'ahran Plains, Maruukai
-					--["coord"] = { , OHNAHRAN_PLAINS },
+					["coord"] = { 62.9, 40.6, OHNAHRAN_PLAINS },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75687, {	-- Candy Bucket - Ohn'ahran Plains, Ohn'iri Springs
-					--["coord"] = { , OHNAHRAN_PLAINS },
+					["coord"] = { 57.1, 76.7, OHNAHRAN_PLAINS },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75688, {	-- Candy Bucket - Ohn'ahran Plains, Pinewood Post
-					--["coord"] = { , OHNAHRAN_PLAINS },
+					["coord"] = { 81.3, 59.2, OHNAHRAN_PLAINS },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75689, {	-- Candy Bucket - Ohn'ahran Plains, Rusza'thar Reach
-					--["coord"] = { , OHNAHRAN_PLAINS },
+					["coord"] = { 85.9, 35.4, OHNAHRAN_PLAINS },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75686, {	-- Candy Bucket - Ohn'ahran Plains, Shady Sanctuary
-					--["coord"] = { , OHNAHRAN_PLAINS },
+					["coord"] = { 28.6, 60.6, OHNAHRAN_PLAINS },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75691, {	-- Candy Bucket - Ohn'ahran Plains, Teerakai
-					--["coord"] = { , OHNAHRAN_PLAINS },
+					["coord"] = { 41.9, 60.4, OHNAHRAN_PLAINS },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75690, {	-- Candy Bucket - Ohn'ahran Plains, Timberstep Outpost
-					--["coord"] = { , OHNAHRAN_PLAINS },
+					["coord"] = { 85.0, 26.0, OHNAHRAN_PLAINS },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75698, {	-- Candy Bucket - Thaldraszus, Algeth'era Court
-					--["coord"] = { , THALDRASZUS },
+					["coord"] = { 50.1, 42.7, THALDRASZUS },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75696, {	-- Candy Bucket - Thaldraszus, Garden Shrine
-					--["coord"] = { , THALDRASZUS },
+					["coord"] = { 35.1, 79.2, THALDRASZUS },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75697, {	-- Candy Bucket - Thaldraszus, Gelikyr Post
-					--["coord"] = { , THALDRASZUS },
+					["coord"] = { 52.4, 69.8, THALDRASZUS },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75695, {	-- Candy Bucket - Thaldraszus, Temporal Conflux
-					--["coord"] = { , THALDRASZUS },
+					["coord"] = { 59.9, 82.7, THALDRASZUS },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75700, {	-- Candy Bucket - Thaldraszus, Valdrakken (The Parting Glass)
-					--["coord"] = { , THALDRASZUS },
+					["coord"] = { 72.4, 46.7, THALDRASZUS },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75699, {	-- Candy Bucket - Thaldraszus, Valdrakken (The Roasted Ram)
-					--["coord"] = { , THALDRASZUS },
+					["coord"] = { 47.2, 45.5, THALDRASZUS },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75701, {	-- Candy Bucket - Thaldraszus, Valdrakken (Weyrnrest)
-					--["coord"] = { , THALDRASZUS },
+					["coord"] = { 22.4, 30.9, THALDRASZUS },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75667, {	-- Candy Bucket - The Azure Span, Camp Antonidas
-					--["coord"] = { , THE_AZURE_SPAN },
+					["coord"] = { 47.0, 40.3, THE_AZURE_SPAN },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75668, {	-- Candy Bucket - The Azure Span, Camp Nowhere
-					--["coord"] = { , THE_AZURE_SPAN },
+					["coord"] = { 62.8, 57.7, THE_AZURE_SPAN },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75669, {	-- Candy Bucket - The Azure Span, Iskaara
-					--["coord"] = { , THE_AZURE_SPAN },
+					["coord"] = { 12.4, 49.4, THE_AZURE_SPAN },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75670, {	-- Candy Bucket - The Azure Span, Theron's Watch
-					--["coord"] = { , THE_AZURE_SPAN },
+					["coord"] = { 65.5, 16.3, THE_AZURE_SPAN },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75671, {	-- Candy Bucket - The Azure Span, Three-Falls Lookout
-					--["coord"] = { , THE_AZURE_SPAN },
+					["coord"] = { 18.8, 24.6, THE_AZURE_SPAN },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75702, {	-- Candy Bucket - The Forbidden Reach, Morqut Village
-					--["coord"] = { , THE_FORBIDDEN_REACH },
+					["coord"] = { 33.9, 58.8, THE_FORBIDDEN_REACH },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75672, {	-- Candy Bucket - The Waking Shores, Apex Observatory
-					--["coord"] = { , THE_WAKING_SHORES },
+					["coord"] = { 24.5, 82.1, THE_WAKING_SHORES },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75673, {	-- Candy Bucket - The Waking Shores, Dragonscale Basecamp
-					--["coord"] = { , THE_WAKING_SHORES },
+					["coord"] = { 47.7, 83.3, THE_WAKING_SHORES },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75675, {	-- Candy Bucket - The Waking Shores, Life Vault Ruins
-					--["coord"] = { , THE_WAKING_SHORES },
+					["coord"] = { 65.2, 57.9, THE_WAKING_SHORES },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75676, {	-- Candy Bucket - The Waking Shores, Obsidian Throne
-					--["coord"] = { , THE_WAKING_SHORES },
+					["coord"] = { 25.8, 55.2, THE_WAKING_SHORES },
+					["timeline"] = { "added 10.1.5.50379" },
+				}),
+				q(75698, {	-- Candy Bucket - The Waking Shores, Obsidian Bulwark
+					["coord"] = { 43.1, 66.7, THE_WAKING_SHORES },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75674, {	-- Candy Bucket - The Waking Shores, Ruby Lifeshrine
-					--["coord"] = { , THE_WAKING_SHORES },
+					["coord"] = { 58.0, 67.3, THE_WAKING_SHORES },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75677, {	-- Candy Bucket - The Waking Shores, Skytop Observatory
-					--["coord"] = { , THE_WAKING_SHORES },
+					["coord"] = { 76.1, 57.7, THE_WAKING_SHORES },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75678, {	-- Candy Bucket - The Waking Shores, Uktulut Backwater
-					--["coord"] = { , THE_WAKING_SHORES },
+					["coord"] = { 53.9, 39.0, THE_WAKING_SHORES },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75679, {	-- Candy Bucket - The Waking Shores, Uktulut Pier
-					--["coord"] = { , THE_WAKING_SHORES },
+					["coord"] = { 46.4, 27.4, THE_WAKING_SHORES },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75683, {	-- Candy Bucket - The Waking Shores, Wingrest Embassy
-					--["coord"] = { , THE_WAKING_SHORES },
+					["coord"] = { 76.2, 35.4, THE_WAKING_SHORES },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75704, {	-- Candy Bucket - Zaralek Cavern, Loamm
-					--["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 56.4, 56.4, ZARALEK_CAVERN },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75703, {	-- Candy Bucket - Zaralek Cavern, Obsidian Rest
-					--["coord"] = { , ZARALEK_CAVERN },
+					["coord"] = { 52.1, 26.5, ZARALEK_CAVERN },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 			}),
@@ -4177,7 +4181,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["timeline"] = { "added 2.0.1" },
 				}),
 				q(75681, {	-- Candy Bucket — The Waking Shores, Wild Coast
-					--["coord"] = { , THE_WAKING_SHORES },
+					["coord"] = { 81.3, 32.0, THE_WAKING_SHORES },
 					["timeline"] = { "added 10.1.5.50379" },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -4522,7 +4526,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					},
 				}),
 				q(75682, {	-- The Waking Shores, Wild Coast
-					--["coord"] = { , THE_WAKING_SHORES },
+					["coord"] = { 80.4, 27.9, THE_WAKING_SHORES },
 					["timeline"] = { "added 10.1.5.50379" },
 					["races"] = HORDE_ONLY,
 				}),
