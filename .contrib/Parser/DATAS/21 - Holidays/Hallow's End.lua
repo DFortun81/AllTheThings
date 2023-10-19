@@ -1938,6 +1938,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 			i(209024, {	-- Loot-Filled Pumpkin (Epic Bag after 10.1.7 Rework)
 				["timeline"] = { "added 10.1.7" },
+				["description"] = "This bag, rewarded on the first kill of the day, receives a bonus chance for the headless horseman mount that scales with the number of curses you apply (confirmed by a bluepost on 18th October 2023).\nOther items also might get a buffed droprate with curses, but we dont know."
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
 					{ "pop" },	-- Get the Rewards.

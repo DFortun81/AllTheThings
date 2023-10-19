@@ -122,11 +122,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						}, {	-- Medium --
-							i(197148, {	-- Highland Drake: Vertical Finned Tail (DM!)
-								["cost"] = {
-									{ "c", DRAGON_SUPPLIES, 200 },
-								},
-							}),
 							i(197620, {	-- Windborne Velocidrake: Beaked Snout (DM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 200 },
@@ -184,6 +179,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 100 },
 									{ "i", AWAKENED_FROST, 1 },
+								},
+							}),
+							i(197148, {	-- Highland Drake: Vertical Finned Tail (DM!)
+								["cost"] = {
+									{ "c", DRAGON_SUPPLIES, 400 },
 								},
 							}),
 						}, {	-- Maximum --
