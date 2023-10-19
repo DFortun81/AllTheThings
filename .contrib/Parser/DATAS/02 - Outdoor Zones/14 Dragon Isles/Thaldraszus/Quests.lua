@@ -1188,6 +1188,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(69976, {	-- Phenran
 					["provider"] = { "n", 193688 },	-- Phenran
 					["coord"] = { 59.8, 61.0, THALDRASZUS },
+					["isDaily"] = true,
 				}),
 				q(70986, {	-- Private Shikzar
 					["provider"] = { "n", 193127 },	-- Private Shikzar
