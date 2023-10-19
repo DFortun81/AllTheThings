@@ -24,7 +24,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		ach(10320, {	-- Collector's Edition: Illidari Felstalker
 			["provider"] = { "i", 128425 },	-- Illidari Felstalker
-			["timeline"] = { "added 6.2.2.20395" },
+			["timeline"] = { "added 6.2.2.20395", "removed 10.1.7.99999" },	-- removed on Oct 31, 2023
 		}),
 		ach(6849, {	-- Collector's Edition: Imperial Quilen
 			["provider"] = { "i", 85870 },	-- Imperial Quilen
@@ -36,7 +36,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		ach(10321, {	-- Collector's Edition: Nibbles
 			["provider"] = { "i", 128426 },	-- Nibbles
-			["timeline"] = { "added 6.2.2.20395" },
+			["timeline"] = { "added 6.2.2.20395", "removed 10.1.7.99999" },	-- removed on Oct 31, 2023
 		}),
 		ach(12229, {	-- Collector's Edition: Seabraid Stallion
 			["provider"] = { "i", 153539 },	-- Seabraid Stallion
@@ -108,13 +108,13 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 8.1.0.29139" },
 		}),
 		i(128425, {	-- Illidari Felstalker (MOUNT!)
-			["timeline"] = { "added 6.2.2.20395" },
+			["timeline"] = { "added 6.2.2.20395", "removed 10.1.7.99999" },	-- removed on Oct 31, 2023
 		}),
 		i(85870, {	-- Imperial Quilen (MOUNT!)
 			["timeline"] = { "added 9.0.2" },
 		}),
 		i(107951, {	-- Iron Skyreaver (MOUNT!)
-			["timeline"] = { "added 5.4.2.17585" },
+			["timeline"] = { "added 5.4.2.17585", "removed 10.1.7.99999" },	-- removed on Oct 31, 2023
 		}),
 		mount(369451, {	-- Jade, Bright Foreseer (MOUNT!)
 			["timeline"] = { "added 10.0.2.47631" },
@@ -177,7 +177,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 8.1.0.28724" },
 		}),
 		i(112326, {	-- Warforged Nightmare (MOUNT!)
-			["timeline"] = { "added 6.0.1.18297" },
+			["timeline"] = { "added 6.0.1.18297", "removed 10.1.7.99999" },	-- removed on Oct 31, 2023
 			["groups"] = {
 				i(112324, {	-- Nightmarish Hitching Post (TOY!)
 					["timeline"] = { "added 6.0.1.18297" },
@@ -268,7 +268,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { ADDED_5_0_4 },
 		}),
 		i(141893, {	-- Mischief (PET!)
-			["timeline"] = { "added 7.1.0.22996" },
+			["timeline"] = { "added 7.1.0.22996", "removed 10.1.7.99999" },	-- removed on Oct 31, 2023
 		}),
 		i(68384, {	-- Moonkin Egg (You had to open the Egg on both faction sides before 6.0.1 to receive your Moonkin Pet). You get both now automaticly
 			["timeline"] = { "added 4.0.3.13286", "removed 8.3.0" },
@@ -282,7 +282,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["races"] = HORDE_ONLY,
 		}),
 		i(128426, {	-- Nibbles (PET!)
-			["timeline"] = { "added 6.2.2.20395" },
+			["timeline"] = { "added 6.2.2.20395", "removed 10.1.7.99999" },	-- removed on Oct 31, 2023
 		}),
 		i(49665, {	-- Pandaren Monk
 			-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
