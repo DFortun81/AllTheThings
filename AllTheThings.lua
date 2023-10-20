@@ -20722,21 +20722,32 @@ app.LoadDebugger = function()
 			self.initialized = true;
 			force = true;
 			local CleanFields = {
-				["parent"] = 1,
-				["sourceParent"] = 1,
-				["total"] = 1,
-				["text"] = 1,
-				["forceShow"] = 1,
-				["progress"] = 1,
-				["OnUpdate"] = 1,
-				["expanded"] = 1,
-				["hash"] = 1,
-				["rawlink"] = 1,
-				["modItemID"] = 1,
-				["f"] = 1,
-				["key"] = 1,
-				["visible"] = 1,
-				["displayInfo"] = 1,
+				parent = 1,
+				sourceParent = 1,
+				total = 1,
+				text = 1,
+				forceShow = 1,
+				progress = 1,
+				OnUpdate = 1,
+				expanded = 1,
+				hash = 1,
+				rawlink = 1,
+				modItemID = 1,
+				f = 1,
+				key = 1,
+				visible = 1,
+				displayInfo = 1,
+				fetchedDisplayID = 1,
+				nmr = 1,
+				nmc = 1,
+				TLUG = 1,
+				locked = 1,
+				collectibleAsCost = 1,
+				icon = 1,
+				_OnUpdate = 1,
+				_SettingsRefresh = 1,
+				_CheckCollectible = 1,
+				_coord = 1,
 			};
 			local function CleanObject(obj)
 				local clean = {};
@@ -20851,6 +20862,25 @@ app.LoadDebugger = function()
 				['g'] = {},
 			});
 
+			local function CategorizeObject(info)
+				if info.isVendor then
+					return app.CreateNPC(app.HeaderConstants.VENDORS, { g = { info }})
+				elseif info.questID then
+					if info.isWorldQuest then
+						return app.CreateNPC(app.HeaderConstants.WORLD_QUESTS, { g = { info }})
+					else
+						return app.CreateNPC(app.HeaderConstants.QUESTS, { g = { info }})
+					end
+				elseif info.npcID then
+					return app.CreateNPC(app.HeaderConstants.ZONE_DROPS, { g = { info }})
+				elseif info.objectID then
+					return app.CreateNPC(app.HeaderConstants.TREASURES, { g = { info }})
+				elseif info.unit then
+					return app.CreateNPC(app.HeaderConstants.DROPS, { g = { info }})
+				end
+				return info
+			end
+
 			local AddObject = function(info)
 				-- print("Debugger.AddObject")
 				-- app.PrintTable(info)
@@ -20865,6 +20895,7 @@ app.LoadDebugger = function()
 							local px, py = pos:GetXY();
 							info.coord = { math.ceil(px * 10000) / 100, math.ceil(py * 10000) / 100, mapID };
 						end
+						info = CategorizeObject(info)
 					end
 					repeat
 						mapInfo = C_Map_GetMapInfo(mapID);
@@ -22865,8 +22896,3 @@ end	-- Vignette Functionality Scope
 app.DoModuleEvent("OnLoad")
 
 -- app.PrintMemoryUsage("AllTheThings.EOF");
-
--- Performance Tracking for AllTheThings Functions
-if app.__perf then
-	app.__perf.CaptureTable(app, appName);
-end
