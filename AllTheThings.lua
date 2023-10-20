@@ -21093,6 +21093,13 @@ app.LoadDebugger = function()
 						info.providers = providers
 					end
 					AddObject(info);
+				-- Capture accepted quests which skip NPC dialog windows (addons, auto-accepted)
+				elseif e == "QUEST_ACCEPTED" then
+					local questID = ...
+					if questID then
+						local info = { ["questID"] = questID };
+						AddObject(info);
+					end
 				-- Capture various personal/party loot received
 				elseif e == "CHAT_MSG_LOOT" then
 					local msg, player, a, b, c, d, e, f, g, h, i, j, k, l = ...;
@@ -21148,6 +21155,7 @@ app.LoadDebugger = function()
 					AddObject(info)
 				end
 			end);
+			self:RegisterEvent("QUEST_ACCEPTED");
 			self:RegisterEvent("QUEST_DETAIL");
 			self:RegisterEvent("QUEST_PROGRESS");
 			self:RegisterEvent("QUEST_LOOT_RECEIVED");
