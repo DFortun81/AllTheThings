@@ -21140,6 +21140,12 @@ app.LoadDebugger = function()
 							end
 						end
 					end
+				elseif e == "QUEST_LOOT_RECEIVED" then
+					local questID, itemLink = ...
+					local itemID = GetItemInfoInstant(itemLink)
+					local info = { ["questID"] = questID, ["g"] = { { ["itemID"] = itemID, ["rawlink"] = itemLink } } }
+					app.PrintDebug("Add Quest Loot from",questID,itemLink,itemID)
+					AddObject(info)
 				end
 			end);
 			self:RegisterEvent("QUEST_DETAIL");
