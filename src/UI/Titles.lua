@@ -48,7 +48,7 @@ app:GetWindow("Titles", {
 					if honorTitlesHeaderID and not headers[honorTitlesHeaderID] then
 						local searchResults = app.SearchForField("headerID", honorTitlesHeaderID);
 						if searchResults and #searchResults > 0 then
-							header = app.CreateNPC(honorTitlesHeaderID);
+							local header = app.CreateNPC(honorTitlesHeaderID);
 							headers[honorTitlesHeaderID] = header;
 							tinsert(g, header);
 							header.parent = self;
