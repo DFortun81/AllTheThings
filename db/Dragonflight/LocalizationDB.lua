@@ -573,7 +573,6 @@ localize(L.HEADER_NAMES, {
 	[-1000326] = select(2,GetAchievementInfo(14271)),
 	[-1000327] = select(2,GetAchievementInfo(14942)),
 	[-1000328] = select(2,GetAchievementInfo(15218)),
-	[-1000329] = select(2,GetAchievementInfo(18702)),
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000017] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -961,7 +960,6 @@ localize(L.HEADER_ICONS, {
 	[-1000326] = "Interface/Icons/inv_misc_celebrationcake_01",
 	[-1000327] = "Interface/Icons/inv_misc_celebrationcake_01",
 	[-1000328] = "Interface/Icons/inv_misc_celebrationcake_01",
-	[-1000329] = "Interface/Icons/inv_misc_celebrationcake_01",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000240] = 1396,

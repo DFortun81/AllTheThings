@@ -2001,7 +2001,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 	})),
 	n(WOW_ANNIVERSARY_EIGHTEEN, bubbleDownSelf({ ["timeline"] = { "added 10.0.0.46455" } },{
 	})),
-	n(WOW_ANNIVERSARY_NINETEEN, bubbleDownSelf({ ["timeline"] = { "added 10.1.7" } },{
+	n(WOW_ANNIVERSARY_NINETEEN, bubbleDownSelf({ ["timeline"] = { "added 10.2.0" } },{
 		ach(18702),	-- WoW's 19th Anniversary
 		ach(19028),	-- Lil' Frostwing
 		i(208210),	-- Celebration Package
