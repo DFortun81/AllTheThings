@@ -599,7 +599,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 208669 },	-- Lady Moonberry
 				["coord"] = { 49.8, 62.5, EMERALD_DREAM },
 				["g"] = {
-					i(210996),	-- Moonberry's Many Mischief Makers
+					i(210996, {	-- Moonberry's Many Mischief Makers
+						i(210994),	-- Enchanting Dreamblade
+						i(210995),	-- Enchanting Dreambow
+						i(210993),	-- Enchanting Dreamstaff
+					}),
 					i(210997),	-- Spare Party Hat
 				},
 			}),
@@ -817,7 +821,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208396),	-- Splintered Spark of Dreams
 				},
 			}),
-			--Sprout daily?
+			--Sprout weekly?
 			q(77677, {	-- Some Water...
 				--["sourceQuests"] = {
 				--	77283,	-- A Multi-Front Battle
@@ -897,12 +901,12 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77712),	-- talk with Smoldering Sprout (n: 209253) first time which transform itself into Blackened Sprout
 		q(77713),	-- talk with Blackened Sprout (n: 209468) transform itself into Sprout (n: 209292) and unlock quests
 		q(77717),	-- after questID 77677 (Some Water...) done, but may be just hqt for daily lockout
+		--
+		q(78707),	-- Moonberry's Many Mischief Makers (itemID 210996)
 		-- ???
-		--q(77526),	-- 'Chest' (spellID 423213)
 		--q(77490),	-- 'Chest' (spellID 420626)
 		--q(77370),	-- 'Chest' (spellID 418389)
 		--q(77497),	-- 'Chest' (spellID 420761)
-		--q(77366),	-- 'Chest' (spellID 418385)
 		--q(77505), -- 'Chest' (spellID 421191)
 	}),
 }));

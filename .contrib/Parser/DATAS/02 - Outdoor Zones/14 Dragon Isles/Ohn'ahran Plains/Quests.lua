@@ -847,6 +847,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["g"] = {
 						mount(395644),	-- Divine Kiss of Ohn'ahra (MOUNT!)
+						-- #if AFTER 10.2.0
+						ach(19461),	-- Kissed by the Wind
+						-- #endif
 					},
 				}),
 			})),

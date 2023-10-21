@@ -48,7 +48,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208328),	-- Fystia's Deft Hands
 				},
 			}),
-			n(209913, {	-- Fruitface
+			n(209913, {	-- Fruitface (crs n: 209980 - Thieving Podling)
 				["description"] = "Help Mylune by picking up Missing Fruit from floor until npc yell 'I see the podling who took the fruit!', attack enemy once and follow him.",
 				["questID"] = 77846,
 				["coords"] = {
@@ -81,6 +81,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208338),	-- Furious Flame's Shoulders
 					i(208325),	-- Ignit's Fiery Heart
 					i(210237),	-- Nipping Night's Necklace
+					i(208383),	-- Pommel of Fire
 				},
 			}),
 			n(209919, {	-- Isaqa
@@ -166,6 +167,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(210047, {	-- Somnambulant Ori
+				["description"] = "Fly around assigned coords",
 				["questID"] = 78212,
 				["coord"] = { 43.5, 47.0, EMERALD_DREAM },
 				["g"] = {
@@ -205,6 +207,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 26.0, 26.6, EMERALD_DREAM },
 				["g"] = {
 					i(208389),	-- Spear of the Wilds
+					i(208370),	-- The Apostle's Steps
 				},
 			}),
 			n(210508, {	-- Voracious Mikanji

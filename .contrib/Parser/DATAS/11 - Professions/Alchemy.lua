@@ -508,9 +508,9 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			o(410442,	-- Root of the Problem
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 				["coord"] = { 36.2, 46.6, EMERALD_DREAM },
-				["questID"] = 78269,
+				["questID"] = 78275,
 				["g"] = {
-					i(210185),	-- Splash Potion of Narcolepsy
+					i(210190),	-- Blazeroot
 				},
 			})),
 			o(380616, {	-- Small Basket of Firewater Powder

@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			currency(2650),	-- Emerald Dewdrop
 			i(208066),	-- Small Dreamseed
 			i(208067, {	-- Plump Dreamseed
-				i(210059),	-- Reins of the Winter Night Dreamsaber (MOUNT!) / it is not part of plump bag, also can be looted from Gigantic Dreamseed
+				i(210059),	-- Reins of the Winter Night Dreamsaber (MOUNT!) / should be from any dreamseed (according to blue post)
 			}),
 			i(208047),	-- Gigantic Dreamseed
 			n(ACHIEVEMENTS, {
@@ -170,7 +170,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 					["g"] = {
 						i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!)
-						i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back (DM!)
+						i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back (DM!) / also was looted from purple
 						i(207772),	-- Grotto Netherwing Drake: Long Horns (DM!)
 						i(210241),	-- Recipe: Dreamwalker's Healing Potion (RECIPE!)
 						i(211065),	-- Technique: Mark of the Auric Dreamstag (RECIPE!)
@@ -433,15 +433,15 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--13 - Moon Tulip
 		q(77531),	-- plant green seed
 		q(77528),	-- plant blue seed
-		--q(),	-- plant purple seed
+		q(77530),	-- plant purple seed
 		q(77527),	-- contrib with dewdrop
 		q(78816),	-- contrib with dewdrop for green seed
 		q(78814),	-- contrib with dewdrop for blue seed
-		--q(),	-- contrib with dewdrop for purple seed
+		q(78815),	-- contrib with dewdrop for purple seed
 		--q(),	-- contrib with green seed (to other player plant)
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
-		--q(),	-- bloom spot / 77525?
+		q(77526),	-- bloom spot / 'Chest' (spellID 423213)
 		q(77529),	-- loot cache
 		--14 - Ringing Rose
 		q(77387),	-- plant green seed
@@ -459,24 +459,24 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--15 - Singing Weedling
 		q(77375),	-- plant green seed
 		q(77374),	-- plant blue seed
-		--q(),	-- plant purple seed
+		q(77270),	-- plant purple seed
 		q(77376),	-- contrib with dewdrop
 		q(78782),	-- contrib with dewdrop for green seed
 		q(78780),	-- contrib with dewdrop for blue seed
-		--q(),	-- contrib with dewdrop for purple seed
+		q(78781),	-- contrib with dewdrop for purple seed
 		--q(),	-- contrib with green seed (to other player plant)
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
-		q(77350),	-- bloom spot
+		q(77366),	-- bloom spot / 'Chest' (spellID 418385) -- 77350 (old build? different bloom?)
 		q(77373),	-- loot cache
 		--16 - Viridescent Sprout
 		q(77395),	-- plant green seed
 		q(77394),	-- plant blue seed
-		--q(),	-- plant purple seed / 77372?
+		q(77275),	-- plant purple seed
 		q(77371),	-- contrib with dewdrop
 		q(78798),	-- contrib with dewdrop for green seed
 		q(78796),	-- contrib with dewdrop for blue seed
-		--q(),	-- contrib with dewdrop for purple seed
+		q(78797),	-- contrib with dewdrop for purple seed
 		--q(),	-- contrib with green seed (to other player plant)
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
@@ -498,11 +498,11 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--18 - Ysera's Clover
 		q(77216),	-- plant green seed
 		q(77215),	-- plant blue seed
-		--q(77214),	-- plant purple seed
+		q(77214),	-- plant purple seed
 		q(77233),	-- contrib with dewdrop
 		q(78768),	-- contrib with dewdrop for green seed
 		q(78769),	-- contrib with dewdrop for blue seed
-		--q(),	-- contrib with dewdrop for purple seed
+		q(78770),	-- contrib with dewdrop for purple seed
 		--q(77218),	-- contrib with green seed (to other player plant)
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)

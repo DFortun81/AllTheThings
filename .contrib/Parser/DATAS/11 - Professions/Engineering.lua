@@ -1098,6 +1098,14 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					i(204853),	-- Discarded Dracothyst Drill
 				},
 			})),
+			o(410456,	-- Experimental Dreamcatcher
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+				["coord"] = { 39.5, 52.2, EMERALD_DREAM },
+				["questID"] = 78278,
+				["g"] = {
+					i(210193),	-- Experimental Dreamcatcher
+				},
+			})),
 			o(392581,	-- Haphazardly Discarded Bomb
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 				["coord"] = { 48.2, 27.9, ZARALEK_CAVERN },
@@ -1116,7 +1124,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			})),
 			o(410458,		-- Insomniotron
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-				["coord"] = { 40.4, 89.3, EMERALD_DREAM },
+				["description"] = "In cavern.",
+				["coord"] = { 49.4, 69.2, 2254 },
 				["questID"] = 78279,
 				["g"] = {
 					i(210194),	-- Insomniotron

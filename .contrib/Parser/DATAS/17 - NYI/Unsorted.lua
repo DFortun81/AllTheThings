@@ -753,9 +753,8 @@ root(ROOTS.Unsorted, {
 			n(PROFESSIONS, {
 				i(207461),	-- Schematic: Portable Party Platter (RECIPE!)
 
-				i(210190),	-- Blazeroot
-				i(210193),	-- Experimental Dreamcatcher
 				i(210198),	-- Depleted Battery
+				i(210185),	-- Splash Potion of Narcolepsy
 
 				-- Accidental Duplicate??
 				i(210495),	-- Slumbering Peacebloom Tea
@@ -946,7 +945,6 @@ root(ROOTS.Unsorted, {
 				i(208365),	-- Winter's Stand
 				i(208367),	-- Lasher's Red Thorn
 				i(208369),	-- Druid's Vengeful Gaze
-				i(208370),	-- The Apostle's Steps
 				i(208371),	-- Fire Assassin's Boots
 				i(208373),	-- Band of Bated Breath
 				i(208374),	-- Talthornei's Wrath
@@ -954,7 +952,6 @@ root(ROOTS.Unsorted, {
 				i(208379),	-- Keevah's Extended Claw
 				i(208380),	-- Moragh's Kneading Claw
 				i(208381),	-- Scepter of Still Waters
-				i(208383),	-- Pommel of Fire
 				i(208385),	-- Flame Endowed Blade
 				i(209880),	-- Curve of Starry Dusks
 				i(209881),	-- Fystia's Fiery Kris
@@ -993,8 +990,6 @@ root(ROOTS.Unsorted, {
 			i(208981),	-- 10.2 Monster - Merithra - Wrist
 			i(208982),	-- 10.2 Monster - Merithra - Waist
 			i(209019),	-- Conjured Sugarfree Firewater Sorbet
-			i(209036),	-- Cache of Amirdrassil Treasures
-			i(209037),	-- Cache of Amirdrassil Treasures
 			i(209316),	-- Goat's Milk in a Skull Mug
 			i(209317),	-- Karazhan Twist
 			i(209318),	-- Dalaran Dazzler
@@ -1070,9 +1065,6 @@ root(ROOTS.Unsorted, {
 			------
 			i(190494),	-- Treads of Unrelenting Justice
 			i(208217),	-- Illusory Scroll of Youth - NOT USED
-			i(210993),	-- Enchanting Dreamstaff
-			i(210994),	-- Enchanting Dreamblade
-			i(210995),	-- Enchanting Dreambow
 			i(211131),	-- Delicately Curated Blossoms
 			i(211132),	-- Omni Storm
 			i(211270),	-- Pristine Core Leather
