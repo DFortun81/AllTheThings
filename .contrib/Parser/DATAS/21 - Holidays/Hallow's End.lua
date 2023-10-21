@@ -3814,7 +3814,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75677, {	-- Candy Bucket - The Waking Shores, Skytop Observatory
-					["coord"] = { 76.1, 57.7, THE_WAKING_SHORES },
+					["coord"] = { 76.1, 54.8, THE_WAKING_SHORES },
 					["timeline"] = { "added 10.1.5.50379" },
 				}),
 				q(75678, {	-- Candy Bucket - The Waking Shores, Uktulut Backwater
