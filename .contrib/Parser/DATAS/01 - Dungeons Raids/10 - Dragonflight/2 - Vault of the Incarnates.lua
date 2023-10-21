@@ -133,6 +133,10 @@ local ZoneDropLoot = {
 	i(202007),	-- Woven Stone Bracelets [BoE]
 }
 
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, ZoneDropLoot)
+local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
+InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
+
 ------ Difficulty To BonusID for those Tiers... ------
 -- Blizzard used some really wacky BonusIDs this time around to give proper Tier SourceIDs...
 -- Blizzard seems to have actually fixed needing these...
@@ -143,7 +147,7 @@ local ZoneDropLoot = {
 -- 	[MYTHIC_RAID] = 7981,
 -- };
 
-local extraLoots = {
+InstanceHelper.ExtraLoots = {
 	------ Tier Items ------
 	{
 		Add = function(encounter, id, difficulty, data)
@@ -282,10 +286,6 @@ local extraLoots = {
 		}
 	}
 }
-
-local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, extraLoots, ZoneDropLoot)
-local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
-InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	inst(1200, {	-- Vault of the Incarnates
