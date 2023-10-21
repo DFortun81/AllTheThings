@@ -20743,6 +20743,7 @@ app.LoadDebugger = function()
 				TLUG = 1,
 				locked = 1,
 				collectibleAsCost = 1,
+				costNested = 1,
 				icon = 1,
 				_OnUpdate = 1,
 				_SettingsRefresh = 1,
