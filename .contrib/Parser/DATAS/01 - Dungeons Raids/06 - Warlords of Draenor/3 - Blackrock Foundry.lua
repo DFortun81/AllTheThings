@@ -11,11 +11,11 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(8989, {	-- Slagworks
-					crit(25019, {	-- Oregorger
-						["_encounter"] = { 1202, LFR_RAID },
-					}),
-					crit(25020, {	-- Gruul
+					crit(25019, {	-- Gruul
 						["_encounter"] = { 1161, LFR_RAID },
+					}),
+					crit(25020, {	-- Oregorger
+						["_encounter"] = { 1202, LFR_RAID },
 					}),
 					crit(25021, {	-- The Blast Furnace
 						["_encounter"] = { 1154, LFR_RAID },
