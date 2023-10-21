@@ -522,6 +522,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
+						n(BACK, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
+							i(211243, {	-- Hellbloom Cape
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(211245, {	-- Hellbloom Cloak
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(211246, {	-- Hellbloom Drape
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(211244, {	-- Hellbloom Shawl
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+						})),
 						filter(CLOTH, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 							i(198566, {	-- Drakebreaker's Boots
 								["cost"] = {
@@ -561,6 +583,53 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(198565, {	-- Drakebreaker's Vestment
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 500 },
+								},
+							}),
+						})),
+						filter(CLOTH, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
+							i(211217, {	-- Hellbloom Bindings
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(211216, {	-- Hellbloom Cord
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(211214, {	-- Hellbloom Crown
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(211214, {	-- Hellbloom Crown
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(211211, {	-- Hellbloom Garb
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(211213, {	-- Hellbloom Gloves
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(211218, {	-- Hellbloom Mantle
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(211215, {	-- Hellbloom Pants
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(211212, {	-- Hellbloom Slippers
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
 								},
 							}),
 						})),
@@ -606,6 +675,48 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
+						filter(LEATHER, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
+							i(211223, {	-- Hellbloom Belt
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(211219, {	-- Hellbloom Boots
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(211222, {	-- Hellbloom Breeches
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(211220, {	-- Hellbloom Handwraps
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(211221, {	-- Hellbloom Hood
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(211225, {	-- Hellbloom Jerkin
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(211226, {	-- Hellbloom Shoulderguard
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(211224, {	-- Hellbloom Wraps
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+						})),
 						filter(MAIL, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 							i(198596, {	-- Drakebreaker's Bracers
 								["cost"] = {
@@ -648,6 +759,48 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
+						filter(MAIL, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
+							i(211242, {	-- Hellbloom Armguards
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(211235, {	-- Hellbloom Chainmail
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(211241, {	-- Hellbloom Cinch
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(211240, {	-- Hellbloom Epaulets
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(211236, {	-- Hellbloom Greaves
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(211237, {	-- Hellbloom Grips
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(211238, {	-- Hellbloom Helm
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(211239, {	-- Hellbloom Leggings
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+						})),
 						filter(PLATE, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 							i(198588, {	-- Drakebreaker's Armplates
 								["cost"] = {
@@ -687,6 +840,48 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(198583, {	-- Drakebreaker's Sabatons
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 350 },
+								},
+							}),
+						})),
+						filter(PLATE, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
+							i(211234, {	-- Hellbloom Bracers
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(211233, {	-- Hellbloom Clasp
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 120 },
+								},
+							}),
+							i(211228, {	-- Hellbloom Cuirass
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(211227, {	-- Hellbloom Faceplate
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(211230, {	-- Hellbloom Gauntlets
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(211231, {	-- Hellbloom Legguards
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(211229, {	-- Hellbloom Sabatons
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
+								},
+							}),
+							i(211232, {	-- Hellbloom Spaulders
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 200 },
 								},
 							}),
 						})),
@@ -799,6 +994,133 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(199081, {	-- Drakebreaker's Staff
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 800 },
+								},
+							}),
+						})),
+						n(WEAPONS, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
+							i(211194, {	-- Hellbloom Aegis
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 150 },
+								},
+							}),
+							i(211179, {	-- Hellbloom Battleaxe
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(211188, {	-- Hellbloom Battlestaff
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 450 },
+								},
+							}),
+							i(211186, {	-- Hellbloom Branch
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 150 },
+								},
+							}),
+							i(211190, {	-- Hellbloom Broadsword
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 450 },
+								},
+							}),
+							i(211181, {	-- Hellbloom Carver
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(211191, {	-- Hellbloom Club
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(211199, {	-- Hellbloom Crusher
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(211193, {	-- Hellbloom Cudgel
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(211202, {	-- Hellbloom Dagger
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(211203, {	-- Hellbloom Dirk
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(211182, {	-- Hellbloom Flameshot
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 450 },
+								},
+							}),
+							i(211189, {	-- Hellbloom Greatsword
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 450 },
+								},
+							}),
+							i(211192, {	-- Hellbloom Hammer
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(211180, {	-- Hellbloom Hatchet
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(211195, {	-- Hellbloom Impaler
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 450 },
+								},
+							}),
+							i(211198, {	-- Hellbloom Mace
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(211201, {	-- Hellbloom Sabre
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(211200, {	-- Hellbloom Scepter
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(211185, {	-- Hellbloom Shortsword
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(211196, {	-- Hellbloom Spear
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 450 },
+								},
+							}),
+							i(211184, {	-- Hellbloom Spellblade
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
+								},
+							}),
+							i(211187, {	-- Hellbloom Spire
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 450 },
+								},
+							}),
+							i(211183, {	-- Hellbloom Twinblade
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 250 },
+								},
+							}),
+							i(211197, {	-- Hellbloom Wand
+								["cost"] = {
+									{ "c", BLOODY_TOKENS, 300 },
 								},
 							}),
 						})),
