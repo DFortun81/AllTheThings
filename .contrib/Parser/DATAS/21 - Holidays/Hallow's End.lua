@@ -2094,6 +2094,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					i(117355, {	-- The Horseman's Horrific Hood
 						["timeline"] = { "added 6.0.1.18594" },
 					}),
+					i(208485, {	-- The Scarlet Key
+						["timeline"] = { "added 10.1.7" },
+					}),
 					i(208680, {	-- Windborne Velocidrake: Hallow's End Armor
 						["timeline"] = { "added 10.1.7" },
 					}),
