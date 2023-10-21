@@ -369,7 +369,13 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18902, {	-- Uncertified Nurse
-				["cost"] = {{ "i", 194048, 500 }},	-- Wildercloth Bandage
+				crit(61745, {
+					["providers"] = {
+						{ "i", 194048 },	-- Wildercloth Bandage Bronze
+						{ "i", 194049 },	-- Wildercloth Bandage Silver
+						{ "i", 194050 },	-- Wildercloth Bandage Gold
+					},
+				}),
 			}),
 		})),
 		n(QUESTS, {
