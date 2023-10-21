@@ -4889,6 +4889,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 -- Remove the holiday flag.
 SPECTRAL_GROG.u = nil;
 
+-- #if AFTER 10.1.5
+root(ROOTS.HiddenQuestTriggers, {
+	n(HALLOWS_END_HEADER, {
+		q(77221),	-- Obtain The Scarlet Key (ID 208485)
+		q(78474),	-- Killing Headless Horseman (needs more details)
+		q(78478),	-- Killing Headless Horseman (needs more details)
+		q(78826),	-- Killing Headless Horseman (needs more details)
+	}),
+});
+-- #endif
+
 -- #if AFTER 2.0.1
 root(ROOTS.NeverImplemented, n(HALLOWS_END_HEADER, {
 	-- #if ANYCLASSIC
