@@ -123,6 +123,7 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208065, {	-- Quantum Legs
 		filter(CLOTH, {
+				ig(3957),	-- Mesh Pants (NYI)
 		}),
 		filter(LEATHER, {
 			ig(114268),	-- Bloodthorn Legguards 		(NYI)
