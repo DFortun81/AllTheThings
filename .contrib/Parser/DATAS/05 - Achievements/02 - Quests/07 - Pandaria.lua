@@ -181,7 +181,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(20534),		-- Survival Ring: Blades
 		}),
 		ach(7322),		-- Roll Club
-		ach(7502),		-- Savior of Stoneplow
 		ach(7289),		-- Shadow Hopper (Jade Forest)
 		ach(7307),		-- Silent Assassin (Townlong Steppes)
 		ach(7321),		-- Spreading the Warmth
