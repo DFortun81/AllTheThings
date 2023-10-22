@@ -26,9 +26,6 @@ root(ROOTS.Zones, {
 					ach(6301, {	-- Rally the Valley
 						["sym"] = {{ "achievement_criteria" }},
 					}),
-					ach(7502, {	-- Savior of Stoneplow
-						["sourceQuests"] = { 30627 },	-- The Savior of Stoneplow
-					}),
 					ach(7293),	-- Till the Break of Dawn (Halfhill)
 				}),
 				battlepets({
@@ -1921,6 +1918,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 30626 },	-- Retreat!
 						["coord"] = { 17.9, 55.7, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 59856 },	-- Master Bruised Paw
+						["groups"] = {
+							ach(7502),	-- Savior of Stoneplow
+						},
 					}),
 					q(30086, {	-- The Search for the Hidden Master
 						["isBreadcrumb"] = true,
