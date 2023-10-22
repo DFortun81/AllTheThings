@@ -969,8 +969,6 @@ namespace ATT
             Validate_providers(data);
             Validate_LocationData(data);
 
-            Objects.AssignFactionID(data);
-
             // TODO: this is temporary until all Item-Recipes are mapped in ItemRecipes.lua, it should only be necessary in DataConsolidation after that point
             if (data.TryGetValue("requireSkill", out long requiredSkill))
             {
@@ -1760,6 +1758,7 @@ namespace ATT
             CheckTrackableFields(data);
             CheckRequiredDataRelationships(data);
             Items.DetermineSourceID(data);
+            Objects.AssignFactionID(data);
             CheckObjectConversion(data);
 
             //VerifyListContentOrdering(data);
@@ -2641,7 +2640,6 @@ namespace ATT
             foreach (var data in Items.AllItems)
             {
                 Objects.AssignFilterID(data);
-                Objects.AssignFactionID(data);
 
                 // verify that no source is included for items which should explicitly ignoreSource
                 if (data.TryGetValue("ignoreSource", out bool ig) && ig)
@@ -3003,7 +3001,6 @@ namespace ATT
             foreach (var data in ConditionalItemData)
             {
                 Objects.AssignFilterID(data);
-                Objects.AssignFactionID(data);
                 Items.Merge(data, true);
             }
 
