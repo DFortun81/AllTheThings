@@ -3550,7 +3550,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(76072, {	-- Shades of Scarlet
 			["provider"] = { "n", 211008 },	-- Sir Thomas
-			["sourcequest"] = 76075,	-- A Ghostly Message
+			["sourceQuest"] = 76075,	-- A Ghostly Message
 			["timeline"] = { "added 10.1.7" },
 			["coord"] = { 81.2, 44.6, TIRISFAL_GLADES },
 			["groups"] = {
@@ -3559,7 +3559,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(76073, {	-- No Laughing Matter
 			["provider"] = { "n", 211008 },	-- Sir Thomas
-			["sourcequest"] = 76072,	-- Shades of Scarlet
+			["sourceQuest"] = 76072,	-- Shades of Scarlet
 			["timeline"] = { "added 10.1.7" },
 			["coord"] = { 82.4, 32.7, TIRISFAL_GLADES },
 			["groups"] = {
@@ -3568,7 +3568,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(76074, {	-- The Headless Horseman, Returned
 			["provider"] = { "n", 205448 },	-- Suzannah
-			["sourcequest"] = 76073,	-- No Laughing Matter
+			["sourceQuest"] = 76073,	-- No Laughing Matter
 			["timeline"] = { "added 10.1.7" },
 			["coord"] = { 83.5, 30.8, TIRISFAL_GLADES },
 			["groups"] = {
@@ -3577,7 +3577,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(77779, {	-- The Tale of Sir Thomas
 			["provider"] = { "n", 209609 },	-- Sir Thomas
-			["sourcequest"] = 76074,	-- The Headless Horseman, Returned
+			["sourceQuest"] = 76074,	-- The Headless Horseman, Returned
 			["timeline"] = { "added 10.1.7" },
 			["coord"] = { 43, 53, SCARLET_MONASTERY },
 			["groups"] = {
