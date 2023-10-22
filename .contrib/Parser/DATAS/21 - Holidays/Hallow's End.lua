@@ -2163,6 +2163,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			i(54516, {	-- Loot-Stuffed Pumpkin
 				-- This bag was removed at the end of MoP and in WoD epic bag introduced
 				["timeline"] = { "added 3.3.0", "removed 6.0.1" },
+				-- #if AFTER 4.2.0
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
 					{ "pop" },	-- Get the Rewards.
@@ -2171,6 +2172,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					{ "contains", "itemID", 33226, unpack(MASK_IDS) },	-- Tricky Treat & All the Masks
 					{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
 				},
+				-- #endif
 				["groups"] = {
 					-- #if AFTER 3.3.0
 					-- #if BEFORE 4.0.1
