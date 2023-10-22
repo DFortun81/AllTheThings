@@ -13219,7 +13219,7 @@ local function UpdateGroup(parent, group)
 				UpdateGroups(group, g);
 			end
 
-			-- if app.Debugging then print("UpdateGroup.g.Updated",group.progress,group.total,group.__type) end
+			-- app.PrintDebug("UpdateGroup.g.Updated",group.progress,group.total,group.__type)
 			SetGroupVisibility(parent, group);
 		else
 			SetThingVisibility(parent, group);
@@ -16007,7 +16007,7 @@ local function UpdateWindow(self, force, got)
 			data.expanded = true;
 			if not self.doesOwnUpdate and
 				(force or (self.shouldFullRefresh and visible)) then
-				-- app.PrintDebug("TopLevelUpdateGroup",self.Suffix)
+				-- app.PrintDebug("TLUG",self.Suffix)
 				app.TopLevelUpdateGroup(data);
 				self.HasPendingUpdate = nil;
 				-- app.PrintDebugPrior("Done")
@@ -17755,30 +17755,44 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				end
 			end
 		end
+		local Wrap = app.WrapObject;
+		local BaseVisualHeaderClone = app.BaseObjectFields({
+			-- ["back"] = function(t)
+			-- 	return 0.3;	-- visibility of which rows are cloned
+			-- end,
+		}, "FilterHeaderClone");
+		-- Fields in the wrapped object which should not persist when represented as a Header
+		for _,field in ipairs({
+			"sort",
+			"collectible",
+			"sourceParent",
+			"customCollect",
+			"requireSkill",
+			"minReputation",
+			"maxReputation",
+			"u",
+			"e",
+			"races",
+			"r",
+			"c",
+			"nmc",
+			"nmr",
+			"pvp",
+			"pb",
+			"hash",
+		}) do
+			BaseVisualHeaderClone.__class[field] = app.EmptyFunction
+		end
+		-- Wraps a given object such that it can act as a filtered Header of the base group
+		local CreateWrapVisualHeader = function(base, groups)
+			return Wrap(setmetatable(constructor(nil, {g=groups or {}}, "WrapVisualHeader"), BaseVisualHeaderClone), base);
+		end
 		-- Returns the consolidated data format for the next header level
 		-- Headers are forced not collectible, and will have their content sorted, and can be copied from the existing Source header
 		local function CreateHeaderData(group, header)
 			-- copy an uncollectible version of the existing header
 			if header then
-				header = CreateObject(header, true);
-				header.g = { group };
-				header.sort = true;
-				header.collectible = false;
-				-- header groups in minilist shouldn't be attached to some random other source location/data/info
-				-- since they will be comprised of groups from many different source locations
-				header.sourceParent = nil;
-				header.customCollect = nil;
-				header.requireSkill = nil;
-				header.minReputation = nil;
-				header.maxReputation = nil;
-				header.u = nil;
-				header.e = nil;
-				header.races = nil;
-				header.r = nil;
-				header.c = nil;
-				header.nmc = nil;
-				header.nmr = nil;
-				return header;
+				return CreateWrapVisualHeader(header, {group})
 			else
 				return { g = { group }, ["sort"] = true, ["collectible"] = false, };
 			end
@@ -17837,6 +17851,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 
 			-- Get all results for this map, without any results that have been cloned into Source Ignored groups
 			results = app.CleanInheritingGroups(SearchForField("mapID", self.mapID), "sourceIgnored");
+			-- app.PrintDebug("Rebuild#",#results);
 			if results and #results > 0 then
 				-- app.PrintDebug(#results,"Minilist Results for mapID",self.mapID)
 				-- Simplify the returned groups
@@ -18136,6 +18151,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				}));
 				self:BuildData();
 			end
+			-- app.PrintDebugPrior("RB-Done")
 			return true;
 		end
 		end)();
@@ -18214,7 +18230,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		self.data.back = 1;
 		self.data.indent = 0;
 		self.data.visible = true;
-		self:BaseUpdate(force or got, got);
+		Callback(self.BaseUpdate, self, force or got, got)
+		-- self:BaseUpdate(force or got, got);
 	end
 end;
 customWindowUpdates["ItemFilter"] = function(self, force)

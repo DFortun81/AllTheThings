@@ -308,25 +308,28 @@ app.WrapObject = function(object, baseObject)
 	end
 	-- save the set of originally-defined meta-fields of this object's class
 	object.__class = objectMeta.__class
-	objectMeta = objectMeta.__index
-	if not objectMeta then
+	local objectMetaIndex = objectMeta.__index
+	if not objectMetaIndex then
 		error("Tried to WrapObject which has no index!")
 	end
-	if type(objectMeta) == "function" then
+	if type(objectMetaIndex) == "function" then
 		return setmetatable(object, {
 			__index = function(t, key)
-				-- app.PrintDebug("__wrapf",key,t.__class,object.__class[key],objectMeta(t, key),baseObject[key])
+				-- app.PrintDebug("__wrapf",key
+				-- 	,"Wrapped?",t.__class[key]~=nil
+				-- 	,"WrapVal:",objectMetaIndex(t, key)
+				-- 	,"BaseVal:",baseObject[key])
 				-- the original class of the object defines a function for 'key' then use that only (allows false/nil overrides properly)
 				if t.__class[key] then
-					return objectMeta(t, key)
+					return objectMetaIndex(t, key)
 				end
-				return objectMeta(t, key) or baseObject[key];
+				return baseObject[key];
 			end
 		});
 	end
 	return setmetatable(object, {
 		__index = function(t, key)
-			return objectMeta[key] or baseObject[key];
+			return objectMetaIndex[key] or baseObject[key];
 		end
 	});
 end
