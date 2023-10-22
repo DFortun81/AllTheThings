@@ -3534,7 +3534,50 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
-
+		q(76075, {	-- A Ghostly Message
+			["providers"] = {
+				{ "n", 53869 },	-- Orphan Matron Seacole (A)
+			},
+			["timeline"] = { "added 10.1.7" },
+			["coords"] = {
+				{ 31.9, 50, ELWYNN_FOREST },	-- Alliance
+			},
+			["groups"] = {
+				i(206596),	-- Tome of Thomas Thomson (QI!)
+			},
+		}),
+		q(76072, {	-- Shades of Scarlet
+			["provider"] = { "n", 211008 },	-- Sir Thomas
+			["timeline"] = { "added 10.1.7" },
+			["coord"] = { 81.2, 44.6, TIRISFAL_GLADES },
+			["groups"] = {
+				i(33226),	-- Tricky Treat
+			},
+		}),
+		q(76073, {	-- No Laughing Matter
+			["provider"] = { "n", 211008 },	-- Sir Thomas
+			["timeline"] = { "added 10.1.7" },
+			["coord"] = { 82.4, 32.7, TIRISFAL_GLADES },
+			["groups"] = {
+				i(33226),	-- Tricky Treat
+			},
+		}),
+		q(76074, {	-- The Headless Horseman, Returned
+			["provider"] = { "n", 205448 },	-- Suzannah
+			["timeline"] = { "added 10.1.7" },
+			["coord"] = { 83.5, 30.8, TIRISFAL_GLADES },
+			["groups"] = {
+				i(33226),	-- Tricky Treat
+			},
+		}),
+		q(77779, {	-- The Tale of Sir Thomas
+			["provider"] = { "n", 209609 },	-- Sir Thomas
+			["timeline"] = { "added 10.1.7" },
+			["coord"] = { 43, 53, SCARLET_MONASTERY },
+			["groups"] = {
+				i(208769),	-- Tome of Thomas Thomson
+			},
+		}),
 		-- Candy Bucket Quests
 		n(FACTION_HEADER_NEUTRAL, {
 			["timeline"] = { "added 2.0.1" },

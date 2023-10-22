@@ -1172,15 +1172,12 @@ root(ROOTS.Unsorted, {
 			i(208867),	-- The Third Clue
 			i(208925),	-- Dreambound Trinket
 			--
-			i(206596),	-- Tome of Thomas Thomson
-			i(208769),	-- Tome of Thomas Thomson
 			i(209832),	-- Crate of Dreambound Leather
 			i(209834),	-- Crate of Dreambound Mail
 			i(209835),	-- Crate of Dreambound Plate
 			i(209870),	-- Surge Catcher
 			i(209997),	-- Distilled Knowledge of Timeways
 			--
-			i(208485),	-- The Scarlet Key
 			i(210062),	-- Ironbound Satchel of Helpful Goods
 			--
 			i(206600),	-- A Clue
