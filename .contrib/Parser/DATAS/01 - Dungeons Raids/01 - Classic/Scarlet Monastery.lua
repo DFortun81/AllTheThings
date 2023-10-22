@@ -272,7 +272,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				n(SCARLET_MONASTERY_GRAVEYARD, {
 					["timeline"] = { "removed 5.0.4", "added 10.1.7" },
 					-- #if AFTER 10.1.7
-					["description"] = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End or bought from the Auction House.\n\n\nObtain the Key & head to the Scarlet Monastery. After entering the building, you will find on the left side a keychain with quest mark above it. Complete this quest.\nAfterwards, when you interact with the keychain, you will get The Scarlet Key buff after which you can interact with previously locked door to 2 old dungeons and enter them.\nCurrent portals to Scarlet Monastery also function as portals to the old dungeons they used to lead to.\nInteracting with they keychain repeatedly removes/reapplies the buff.\n\nUnlock is account-wide.",
+					["description"] = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End or bought from the Auction House.\n\n\nObtain the Key & head to the Scarlet Monastery. After entering the building, you will find on the left side a keychain with quest mark above it. Complete this quest.\nAfterwards, when you interact with the keychain, you will get The Scarlet Key buff after which you can interact with previously locked door to 2 old dungeons and enter them.\nCurrent portals to Scarlet Monastery also function as portals to the old dungeons they used to lead to.\nInteracting with the keychain repeatedly removes/reapplies the buff.\n\nUnlock is account-wide.",
 					-- #endif
 					["groups"] = {
 						n(QUESTS, {
@@ -447,7 +447,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				n(SCARLET_MONASTERY_LIBRARY, {
 					["timeline"] = { "removed 5.0.4", "added 10.1.7" },
 					-- #if AFTER 10.1.7
-					["description"] = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End or bought from the Auction House.\n\n\nObtain the Key & head to the Scarlet Monastery. After entering the building, you will find on the left side a keychain with quest mark above it. Complete this quest.\nAfterwards, when you interact with the keychain, you will get The Scarlet Key buff after which you can interact with previously locked door to 2 old dungeons and enter them.\nCurrent portals to Scarlet Monastery also function as portals to the old dungeons they used to lead to.\nInteracting with they keychain repeatedly removes/reapplies the buff.\n\nUnlock is account-wide.",
+					["description"] = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End or bought from the Auction House.\n\n\nObtain the Key & head to the Scarlet Monastery. After entering the building, you will find on the left side a keychain with quest mark above it. Complete this quest.\nAfterwards, when you interact with the keychain, you will get The Scarlet Key buff after which you can interact with previously locked door to 2 old dungeons and enter them.\nCurrent portals to Scarlet Monastery also function as portals to the old dungeons they used to lead to.\nInteracting with the keychain repeatedly removes/reapplies the buff.\n\nUnlock is account-wide.",
 					-- #endif
 					["lvl"] = 28,
 					["groups"] = {
@@ -646,7 +646,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["cost"] = { { "i", 7146, 1 } },	-- The Scarlet Key
 					-- #endif
 					-- #if AFTER 10.1.7
-					["description"] = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End or bought from the Auction House.\n\n\nObtain the Key & head to the Scarlet Monastery. After entering the building, you will find on the left side a keychain with quest mark above it. Complete this quest.\nAfterwards, when you interact with the keychain, you will get The Scarlet Key buff after which you can interact with previously locked door to 2 old dungeons and enter them.\nCurrent portals to Scarlet Monastery also function as portals to the old dungeons they used to lead to.\nInteracting with they keychain repeatedly removes/reapplies the buff.\n\nUnlock is account-wide.",
+					["description"] = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End or bought from the Auction House.\n\n\nObtain the Key & head to the Scarlet Monastery. After entering the building, you will find on the left side a keychain with quest mark above it. Complete this quest.\nAfterwards, when you interact with the keychain, you will get The Scarlet Key buff after which you can interact with previously locked door to 2 old dungeons and enter them.\nCurrent portals to Scarlet Monastery also function as portals to the old dungeons they used to lead to.\nInteracting with the keychain repeatedly removes/reapplies the buff.\n\nUnlock is account-wide.",
 					-- #endif
 					["lvl"] = 35,
 					["groups"] = {
@@ -776,7 +776,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["cost"] = { { "i", 7146, 1 } },	-- The Scarlet Key
 					-- #endif
 					-- #if AFTER 10.1.7
-					["description"] = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End or bought from the Auction House.\n\n\nObtain the Key & head to the Scarlet Monastery. After entering the building, you will find on the left side a keychain with quest mark above it. Complete this quest.\nAfterwards, when you interact with the keychain, you will get The Scarlet Key buff after which you can interact with previously locked door to 2 old dungeons and enter them.\nCurrent portals to Scarlet Monastery also function as portals to the old dungeons they used to lead to.\nInteracting with they keychain repeatedly removes/reapplies the buff.\n\nUnlock is account-wide.",
+					["description"] = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End or bought from the Auction House.\n\n\nObtain the Key & head to the Scarlet Monastery. After entering the building, you will find on the left side a keychain with quest mark above it. Complete this quest.\nAfterwards, when you interact with the keychain, you will get The Scarlet Key buff after which you can interact with previously locked door to 2 old dungeons and enter them.\nCurrent portals to Scarlet Monastery also function as portals to the old dungeons they used to lead to.\nInteracting with the keychain repeatedly removes/reapplies the buff.\n\nUnlock is account-wide.",
 					-- #endif
 					["lvl"] = 37,
 					["groups"] = {
