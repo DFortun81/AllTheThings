@@ -72,6 +72,17 @@ root(ROOTS.Zones, {
 			crit(43),	-- Orgrimmar for Horde | Stormwind for Alliance
 		}),
 		ach(1833),	-- It's Happy Hour Somewhere
+		ach(4875, {	-- Loremaster of Cataclysm
+			["sym"] = {{"meta_achievement",
+				4870,	-- Coming Down the Mountain
+				4871,	-- Deep into Deepholm
+				4873,	-- Fading into Twilight [A]
+				5501,	-- Fading into Twilight [H]
+				4869,	-- Sinking into Vashj'ir [A]
+				4982,	-- Sinking into Vashj'ir [H]
+				4872,	-- Unearthing Uldum
+			}},
+		}),
 		ach(2556, {	-- Pest Control
 			crit(1),	-- Larva (Naxxramas, Ghostlands)
 			crit(2),	-- Water Snake (Orgrimmar, Northern Stranglethorn, Durotar, Twilight Highlands)

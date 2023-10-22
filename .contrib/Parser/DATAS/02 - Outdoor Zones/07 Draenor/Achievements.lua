@@ -34,6 +34,24 @@ root(ROOTS.Zones, m(DRAENOR, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } 
 			ach(9727),		-- Expert Treasure Hunter
 			ach(9726),		-- Treasure Hunter
 		}),
+		a(ach(9833, {	-- Loremaster of Draenor [A]
+			["sym"] = {{"meta_achievement",
+				8845,	-- As I Walk Through the Valley of the Shadow of Moon
+				8925,	-- Between Arak and a Hard Place [A]
+				8920,	-- Don't Let the Tala-door Hit You on the Way Out [A]
+				8927,	-- Nagrandeur [A]
+				8923,	-- Putting the Gore in Gorgrond [A]
+			}},
+		})),
+		h(ach(9923, {	-- Loremaster of Draenor [H]
+			["sym"] = {{"meta_achievement",
+				8926,	-- Between Arak and a Hard Place [H]
+				8919,	-- Don't Let the Tala-door Hit You on the Way Out [H]
+				8928,	-- Nagrandeur [H]
+				8924,	-- Putting the Gore in Gorgrond [H]
+				8671,	-- You'll Get Caught Up In The... Frostfire!
+			}},
+		})),
 		ach(14728, {		-- To All The Squirrels Through Time and Space
 			crit(49746, {	-- Royal Moth
 				["crs"] = { 88975 },	-- Royal Moth
