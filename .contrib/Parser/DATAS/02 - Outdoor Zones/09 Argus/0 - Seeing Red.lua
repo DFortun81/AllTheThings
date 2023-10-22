@@ -6,8 +6,14 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 		n(QUESTS, {
 			q(77408, {	-- Prophecy Stirs
 				-- TODO: Needs Horde provider and coords
-				["provider"] = { "n", 209790 },	-- Virtos
-				["coord"] = { 77.8, 37.5, STORMWIND_CITY },
+				["provider"] = {
+					{"n", 209790 },	-- Virtos
+					{"n", 209803 },	-- Knight-Lord Dranarus
+				},
+				["coords"] = { 
+					{ 77.8, 37.5, STORMWIND_CITY },
+					{ 71.8, 44.6, ORGRIMMAR },
+				},
 				["g"] = {
 					i(208206),	-- Teleportation Crystal
 				},

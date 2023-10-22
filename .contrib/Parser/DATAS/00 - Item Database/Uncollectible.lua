@@ -574,6 +574,7 @@ i(153119);	-- Wyrmtongue Cache of Finery
 -- PATCH 10.0.0 --
 ------------------
 i(201361);	-- Primal Inspiration
+i(198455);	-- Tangled Roots
 
 ------------------
 -- PATCH 10.0.2 --
