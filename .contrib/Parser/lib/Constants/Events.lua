@@ -19,19 +19,22 @@ EVENTS = {
 	STRANGLETHORN_FISHING_EXTRAVAGANZA = 301,	-- Obtained from Wrath Classic
 
 	-- Micro-Holidays
-	BROKEN_ISLES_CUP = 0, -- TODO
 	CALL_OF_THE_SCARAB = 638,
-	EASTERN_KINGDOMS_CUP = 1400,
 	FREE_T_SHIRT_DAY = 1053,
-	KALIMDOR_CUP = 1395,
 	MARCH_OF_THE_TADPOLES = 647,
-	NORTHREND_CUP = 0, -- TODO
-	OUTLAND_CUP = 0, -- TODO
-	PANDARIA_CUP = 0, -- TODO
 	SECRETS_OF_AZEROTH = 1396,
 	THE_GREAT_GNOMEREGAN_RUN = 696,
 	THOUSAND_BOAT_BASH = 642,
 	TRIAL_OF_STYLE = 691,
+	
+	-- Dragonriding Cups
+	DRAGONRIDING_CUP = 133701,	-- Generic Header [Crieve made this up, it's just supposed to be Unique!] (NOTE: It's referenced in Events.lua.
+	KALIMDOR_CUP = 1395,
+	EASTERN_KINGDOMS_CUP = 1400,
+	OUTLAND_CUP = 0, -- TODO: CRIEVE NOTE: Add it to the events list in Events.lua.
+	NORTHREND_CUP = 0, -- TODO: CRIEVE NOTE: Add it to the events list in Events.lua.
+	PANDARIA_CUP = 0, -- TODO: CRIEVE NOTE: Add it to the events list in Events.lua.
+	BROKEN_ISLES_CUP = 0, -- TODO: CRIEVE NOTE: Add it to the events list in Events.lua.
 
 	-- No event file exists for these yet. (and maybe they don't need to?)
 	AUCTION_HOUSE_DANCE_PARTY = 692,

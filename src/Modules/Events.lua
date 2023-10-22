@@ -139,30 +139,37 @@ local function GetEventCache()
 end
 
 -- Event Helpers
+local CustomEventHelpers = {
+	[1271] = { 559,562,587,643,1056,1263 },	-- EVENTS.TIMEWALKING
+	[133701] = { 1395, 1400 },	-- EVENTS.DRAGONRIDING_CUP
+};
 setmetatable(EventInformation, { __index = function(t, id)
 	-- app.PrintDebug("EventInformation.__index",id)
 	local info = (SessionEventCache or GetEventCache())[id];
 	if info and info.times then
 		t[id] = info;
 		return info;
-	elseif id == 1271 then	-- EVENTS.TIMEWALKING
-		local times = {};
-		for i,eventID in ipairs({ 559,562,587,643,1056,1263 }) do
-			local subinfo = EventInformation[eventID];
-			if subinfo and subinfo.times then
-				for j,schedule in ipairs(subinfo.times) do
-					schedule.subEventID = eventID;
-					tinsert(times, schedule);
+	else
+		local customEvent = CustomEventHelpers[id];
+		if customEvent then
+			local times = {};
+			for i,eventID in ipairs(customEvent) do
+				local subinfo = EventInformation[eventID];
+				if subinfo and subinfo.times then
+					for j,schedule in ipairs(subinfo.times) do
+						schedule.subEventID = eventID;
+						tinsert(times, schedule);
+					end
 				end
 			end
-		end
-		if #times > 0 then
-			app.Sort(times, function(a, b)
-				return a.start < b.start;
-			end);
-			info = { name = times[1].name, icon = times[1].icon, times = times };
-			t[id] = info;
-			return info;
+			if #times > 0 then
+				app.Sort(times, function(a, b)
+					return a.start < b.start;
+				end);
+				info = { name = times[1].name, icon = times[1].icon, times = times };
+				t[id] = info;
+				return info;
+			end
 		end
 	end
 	return app.EmptyTable;

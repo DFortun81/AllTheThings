@@ -5,7 +5,7 @@ DRAGONRIDING_CUP_ROOT = createHeader({
 	readable = "Dragonriding Cup",
 	constant = "DRAGONRIDING_CUP_HEADER",
 	icon = [[~_.asset("Holiday_EastCup")]],
-	--eventID = ,	--
+	eventID = EVENTS.DRAGONRIDING_CUP,
 	text = {
 		en = "Dragonriding Cup",
 		ru = "Кубок полётов на драконе",
@@ -118,7 +118,7 @@ local dragonridingrace = function(id, data)
 end
 local RIDERS_OF_AZEROTH_BADGE = 2588;
 
-root(ROOTS.Holidays, n(DRAGONRIDING_CUP_ROOT, {
+root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT, {
 	["timeline"] = { ADDED_10_1_5 },
 	["groups"] = {
 		applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Eastern Kingdom Cup
@@ -2352,4 +2352,4 @@ root(ROOTS.Holidays, n(DRAGONRIDING_CUP_ROOT, {
 			}),
 		}),
 	},
-}));
+})));
