@@ -62,7 +62,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			SCARLET_MONASTERY,	-- Scarlet Monastery: Forlorn Cloister (First Boss)
 			436,	-- Scarlet Monasatery: Crusader's Chapel (Last two bosses)
 			--804,	-- Scarlet Monastery: Death Knight Campaign	[Crieve NOTE: This might not be necessary?]
-			-- #if AFTER 10.1.5
+			-- #if AFTER 10.1.7
 			302,	-- Scarlet Monastery: Graveyard
 			303,	-- Scarlet Monastery: Library
 			304,	-- Scarlet Monastery: Armory
