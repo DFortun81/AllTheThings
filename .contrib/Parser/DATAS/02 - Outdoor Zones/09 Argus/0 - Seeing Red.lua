@@ -5,8 +5,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 	header(HEADERS.Achievement, 18854, {	-- Seeing Red
 		n(QUESTS, {
 			q(77408, {	-- Prophecy Stirs
-				-- TODO: Needs Horde provider and coords
-				["provider"] = {
+				["providers"] = {
 					{"n", 209790 },	-- Virtos
 					{"n", 209803 },	-- Knight-Lord Dranarus
 				},
