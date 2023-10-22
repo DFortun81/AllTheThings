@@ -600,7 +600,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
 								}),
 								i(3456, {	-- Dog Whistle
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4" },
 								}),
 							},
 						}),
@@ -629,7 +629,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
 								}),
 								i(34227, {	-- Deadman's Hand
-									["timeline"] = { "added 2.3.0", "removed 5.0.4" },
+									["timeline"] = { "added 2.3.0", "removed 5.0.4", "added 10.1.7" },
 								}),
 								i(7146, {	-- The Scarlet Key
 									["provider"] = { "o", 103821 },	-- Doan's Strongbox
