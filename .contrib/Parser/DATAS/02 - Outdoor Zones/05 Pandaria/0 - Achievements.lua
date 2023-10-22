@@ -4,6 +4,19 @@
 root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	-- TODO: lots of these are lacking lots of information! (crs/coords/etc.)
 	n(ACHIEVEMENTS, {
+		ach(6541, {		-- Loremaster of Pandaria
+			["sym"] = {{ "meta_achievement",
+				6301,	-- Rally the Valley
+				6539,	-- One Steppe Forward, Two Steppes Back
+				6540,	-- Dread Haste Makes Dread Waste
+				6300,	-- Upjade Complete (A)
+				6534,	-- Upjade Complete (H)
+				6535,	-- Mighty Roamin' Krasaranger (A)
+				6536,	-- Mighty Roamin' Krasaranger (H)
+				6537,	-- Slum It in the Summit (A)
+				6538,	-- Slum It in the Summit (H)
+			}},
+		}),
 		ach(7284, {	-- Is Another Man's Treasure
 			title(200),	-- the Relic Hunter
 			ach(7283),	-- One Man's Trash...

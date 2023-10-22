@@ -1921,9 +1921,6 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 30626 },	-- Retreat!
 						["coord"] = { 17.9, 55.7, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 59856 },	-- Master Bruised Paw
-						["g"] = {
-							ach(7502),	-- Savior of Stoneplow
-						},
 					}),
 					q(30086, {	-- The Search for the Hidden Master
 						["isBreadcrumb"] = true,

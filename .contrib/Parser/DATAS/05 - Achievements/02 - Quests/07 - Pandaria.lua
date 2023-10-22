@@ -96,101 +96,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(21199),	-- Wu Kao Assassins
 			crit(21201),	-- Blackguard Defenders
 		}),
-		ach(6541, {		-- Loremaster of Pandaria
-			ach(6301, {		-- Rally the Valley
-				crit(18820),		-- Thunderfoot Fields
-				crit(18821),		-- Mudmug's Place
-				crit(18822),		-- Chen's Masterpiece
-				crit(18823),		-- The Stormstout Brewery
-				crit(18827),		-- The Hidden Master
-				crit(18826),		-- Nesingwary's Safari
-			}),
-			ach(6539, {		-- One Steppe Forward, Two Steppes Back
-				crit(19372),		-- Fire Camp Osul
-				crit(19375),		-- Mistlurkers in the Sumprushes
-				crit(19373),		-- On Hatred's Path
-				crit(19374),		-- The Sha of Hatred
-				crit(19376),		-- Tai Ho's Investigation
-			}),
-			ach(6540, {		-- Dread Haste Makes Dread Waste
-				crit(20437),		-- The First Paragons
-				crit(4),		-- The Might of the Klaxxi
-				-- crit(20438,	{	-- The Might of the Klaxxi
-				-- 	["sourceQuests"] = { 31026 },    -- The Root of the Problem
-				-- }),
-				-- crit(20439,	{	-- The Might of the Klaxxi
-				-- 	["sourceQuests"] = { 31398 },    -- Falling to Pieces
-				-- }),
-				crit(20436),		-- Taste of Amber
-				crit(20435),		-- Like a Deck Boss
-			}),
-			a(ach(6300, {	-- Upjade Complete (Alliance)
-				crit(19352),		-- Paw'don Village
-				crit(19353),		-- The Waterspeaking Ceremony
-				crit(19354),		-- The White Pawn
-				crit(4),		-- Pearlfin Village
-				crit(5),		-- Dawn's Blossom
-				crit(19348),		-- Greenstone Quarry
-				crit(7),		-- Tian Monastery
-				crit(19206),		-- Terrace of Ten Thunders
-				crit(19349),		-- The Temple of the Jade Serpent
-				crit(19331),			-- Nectarbreeze Orchard
-				crit(22195),		-- The Battle for the Forest
-				crit(22194),		-- Overcoming Doubt
-			})),
-			h(ach(6534, {	-- Upjade Complete (Horde)
-				crit(19332),		-- The Remains of Hellscream's Fist
-				crit(19333),		-- First Contact
-				crit(19338),		-- Strange Bedfellows
-				crit(19339),		-- Grookin Hill
-				crit(5),		-- Dawn's Blossom
-				crit(19348),		-- Greenstone Quarry
-				crit(19349),		-- The Temple of the Jade Serpent
-				crit(8),		-- Tian Monastery
-				crit(19206),		-- Terrace of Ten Thunders
-				crit(19331),		-- Nectarbreeze Orchard
-				crit(19350),		-- The Battle for the Forest
-				crit(19351),		-- Overcoming Doubt
-			})),
-			a(ach(6535, {	-- Mighty Roamin' Krasaranger (Alliance)
-				crit(18824),		-- Zhu's Watch
-				crit(19357),		-- The Incursion
-				crit(3),		-- Nayeli Lagoon
-				crit(18829),		-- Temple of the Red Crane
-				crit(19358),		-- The Waters of Youth
-			})),
-			h(ach(6536, {	-- Mighty Roamin' Krasaranger (Horde)
-				crit(18824),		-- Zhu's Watch
-				crit(18825),		-- Thunder Cleft
-				crit(3),		-- Nayeli Lagoon
-				crit(18829),		-- Temple of the Red Crane
-				crit(18830),		-- Dawnchaser Retreat
-			})),
-			a(ach(6537, {	-- Slum It in the Summit (Alliance)
-				crit(19359),		-- Westwind Rest
-				crit(19360),		-- The Yaungol Invasion
-				crit(22136),		-- Inkgill Mere
-				crit(19366),		-- The Yak Wash
-				crit(19364),		-- The Burlap Trail
-				crit(19365),		-- Kota Peak
-				crit(19367),		-- The Thunder King
-				crit(21869),		-- Temple of the White Tiger
-				crit(19369),		-- Zouchin Village
-				crit(19363),		-- The Shado-Pan
-			})),
-			h(ach(6538, {	-- Slum It in the Summit (Horde)
-				crit(19370),		-- Eastwind Rest
-				crit(19371),		-- The Yaungol Invasion
-				crit(19361),		-- Inkgill Mere
-				crit(19366),		-- The Yak Wash
-				crit(19364),		-- The Burlap Trail
-				crit(19365),		-- Kota Peak
-				crit(19367),		-- The Thunder King
-				crit(21868),		-- Temple of the White Tiger
-				crit(19369),		-- Zouchin Village
-				crit(19363),		-- The Shado-Pan
-			})),
-		}),
 		ach(7317, {		-- One Many Army (Vale of Eternal Blossoms)
 			crit(20517),		-- Cracklefang
 			crit(20518),		-- Vicejaw
@@ -213,20 +118,6 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			crit(20975),		-- Complete The Crumbling Hall without taking any damage.
 			crit(20979),		-- Complete The Thunder Below without taking any damage.
 		}),
-		a(ach(7928, {	-- Operation: Shieldwall Campaign [Not entered to Pandaria Outdoor Zones files, these criteria are spread over not only the Pandaria zones but also Classic]
-			crit(22424),		-- Lion's Landing
-			crit(22425),		-- The Man With a Thousand Faces
-			crit(22426),		-- The Voice of the Gods
-			crit(22427),		-- Jaina's Hope
-			crit(5),		-- The Korune
-			crit(22431),		-- Heart of the Alliance
-			crit(22432),		-- Secrets of the Past
-			crit(22434),		-- The Divine Bell
-			crit(22538),		-- The Purge of Dalaran
-			crit(22433),		-- An Ancient Ally
-			crit(11),		-- In Search of Harmony
-			crit(22437),		-- Breath of Darkest Shadow
-		})),
 		ach(7316, {		-- Over Their Heads (Dread Wastes)
 			crit(20511, {		-- Garalon
 				["crs"] = { 63667 },

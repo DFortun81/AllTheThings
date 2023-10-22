@@ -754,9 +754,19 @@ root(ROOTS.Zones, {
 										["cr"] = 68322,	-- Muerta
 									}),
 								}),
-								ach(7928, {	-- Operation: Shieldwall Campaign
-									["races"] = ALLIANCE_ONLY,
-									["sym"] = {{ "achievement_criteria" }},
+								ach(7928, {	-- Operation: Shieldwall Campaign [Not entered to Pandaria Outdoor Zones files, these criteria are spread over not only the Pandaria zones but also Classic]
+									crit(22424),		-- Lion's Landing
+									crit(22425),		-- The Man With a Thousand Faces
+									crit(22426),		-- The Voice of the Gods
+									crit(22427),		-- Jaina's Hope
+									crit(5),		-- The Korune
+									crit(22431),		-- Heart of the Alliance
+									crit(22432),		-- Secrets of the Past
+									crit(22434),		-- The Divine Bell
+									crit(22538),		-- The Purge of Dalaran
+									crit(22433),		-- An Ancient Ally
+									crit(11),		-- In Search of Harmony
+									crit(22437),		-- Breath of Darkest Shadow
 								}),
 							}),
 							n(QUESTS, {

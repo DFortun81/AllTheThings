@@ -15,83 +15,88 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		ach(12927),		-- Polished Pet Charmer*
 		ach(9712),		-- Shiny Pet Charmer*
 		petbattle(ach(6607,  {	-- Taming Azeroth*
-			title(207),	-- Tamer
-			crit(1),	-- Taming Outland
-			crit(2),	-- Taming Northrend
-			crit(3),	-- Taming Cataclysm
-			crit(4),	-- Taming Pandaria
-			crit(5),	-- Taming Eastern Kingdoms / Taming Kalimdor
+			["sym"] = {{"meta_achievement",
+				6604,	-- Taming Outland
+				6605,	-- Taming Northrend
+				7525,	-- Taming Cataclysm
+				6606,	-- Taming Pandaria
+				6603,	-- Taming Eastern Kingdoms (A)
+				6602,	-- Taming Kalimdor (H)
+			}},
+			["groups"] = {
+				title(207),	-- Tamer
+			},
 		})),
 		petbattle(ach(7525,  {	-- Taming Cataclysm*
-			crit(1),	-- Brok [Mount Hyjal)
-			crit(2),	-- Bordin Steadyfist [Deepholm)
-			crit(3),	-- Goz Banefury [Twilight Highlands)
-			crit(4),	-- Obalis [Uldum)
+			crit(21858),	-- Brok [Mount Hyjal)
+			crit(21859),	-- Bordin Steadyfist [Deepholm)
+			crit(21860),	-- Goz Banefury [Twilight Highlands)
+			crit(21861),	-- Obalis [Uldum)
 		})),
 		petbattle(ach(9724,  {	-- Taming Draenor*
-			crit(1),	-- Ashlei [Shadowmoon Valley)
-			crit(2),	-- Cymre Brightblade [Gorgrond)
-			crit(3),	-- Gargra [Frostfire Ridge)
-			crit(4),	-- Taralune [Talador)
-			crit(5),	-- Tarr the Terrible [Nagrand)
-			crit(6),	-- Vesharr [Spires of Arak)
+			crit(27012),	-- Ashlei [Shadowmoon Valley)
+			crit(27011),	-- Cymre Brightblade [Gorgrond)
+			crit(27013),	-- Gargra [Frostfire Ridge)
+			crit(27016),	-- Taralune [Talador)
+			crit(27015),	-- Tarr the Terrible [Nagrand)
+			crit(27014),	-- Vesharr [Spires of Arak)
 		})),
 		petbattle(ach(6603,  {	-- Taming Eastern Kingdoms
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				crit(1),	-- Julia Stevens
-				crit(2),	-- Old MacDonald
-				crit(3),	-- Lindsay
-				crit(4),	-- Eric Davidson
-				crit(5),	-- Steven Lisbane
-				crit(6),	-- Bill Buckler
-				crit(7),	-- David Kosse
-				crit(8),	-- Deiza Plaguehorn
-				crit(9),	-- Kortas Darkhammer
-				crit(10),	-- Durin Darkhammer
-				crit(11),	-- Everessa
-				crit(12),	-- Lydia Accoste
+				crit(21396),	-- Julia Stevens
+				crit(21397),	-- Old MacDonald
+				crit(21398),	-- Lindsay
+				crit(21399),	-- Eric Davidson
+				crit(21400),	-- Steven Lisbane
+				crit(21401),	-- Bill Buckler
+				crit(21598),	-- David Kosse
+				crit(21599),	-- Deiza Plaguehorn
+				crit(21600),	-- Kortas Darkhammer
+				crit(21603),	-- Durin Darkhammer
+				crit(21601),	-- Everessa
+				crit(21602),	-- Lydia Accoste
 			},
 		})),
 		petbattle(ach(6602,  {	-- Taming Kalimdor
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				crit(1),	-- Zunta
-				crit(2),	-- Dagra the Fierce
-				crit(3),	-- Analynn
-				crit(4),	-- Zonya the Sadist
-				crit(5),	-- Merda Stronghoof
-				crit(6),	-- Traitor Gluk
-				crit(7),	-- Elena Flutterfly
-				crit(8),	-- Cassandra Kaboom
-				crit(9),	-- Grazzle the Great
-				crit(10),	-- Zoltan
-				crit(11),	-- Kela Grimtotem
-				crit(12),	-- Stone Cold Trixxy
+				crit(21402),	-- Zunta
+				crit(21403),	-- Dagra the Fierce
+				crit(21404),	-- Analynn
+				crit(21405),	-- Zonya the Sadist
+				crit(21406),	-- Merda Stronghoof
+				crit(21407),	-- Traitor Gluk
+				crit(21408),	-- Elena Flutterfly
+				crit(21409),	-- Cassandra Kaboom
+				crit(21410),	-- Grazzle the Great
+				crit(21411),	-- Zoltan
+				crit(21416),	-- Kela Grimtotem
+				crit(21415),	-- Stone Cold Trixxy
 			},
 		})),
 		petbattle(ach(6605,  {	-- Taming Northrend*
-			crit(1),	-- Beegle Blastfuse [Howling Fjord)
-			crit(2),	-- Nearly Headless Jacob [Crystalsong Forest)
-			crit(3),	-- Okrut Dragonwaste [Dragonblight)
-			crit(4),	-- Gutretch [Zul'Drak)
-			crit(5),	-- Major Payne [Icecrown)
+			crit(21848),	-- Beegle Blastfuse [Howling Fjord)
+			crit(21849),	-- Nearly Headless Jacob [Crystalsong Forest)
+			crit(21850),	-- Okrut Dragonwaste [Dragonblight)
+			crit(21851),	-- Gutretch [Zul'Drak)
+			crit(21852),	-- Major Payne [Icecrown)
 		})),
 		petbattle(ach(6604,  {	-- Taming Outland*
-			crit(1),	-- Nicki Tinytech [Hellfire Peninsula)
-			crit(2),	-- Ras'an [Zangarmarsh)
-			crit(3),	-- Narrok [Nagrand)
-			crit(4),	-- Morulu The Elder [Shattrath City)
-			crit(5),	-- Bloodknight Antari [Shadowmoon Valley)
+			crit(21604),	-- Nicki Tinytech [Hellfire Peninsula)
+			crit(21605),	-- Ras'an [Zangarmarsh)
+			crit(21606),	-- Narrok [Nagrand)
+			crit(21607),	-- Morulu The Elder [Shattrath City)
+			crit(21847),	-- Bloodknight Antari [Shadowmoon Valley)
 		})),
 		petbattle(ach(6606,  {	-- Taming Pandaria*
-			crit(1),	-- Hyuna of the Shrines [The Jade Forest)
-			crit(2),	-- Farmer Nishi [Valley of the Four Winds)
-			crit(3),	-- Mo'ruk [Krasarang Wilds)
-			crit(4),	-- Courageous Yon [Kun-Lai Summit)
-			crit(5),	-- Seeker Zusshi [Townlong Steppes)
-			crit(6),	-- Wastewalker Shu [Dread Wastes)
-			crit(7),	-- Aki the Chosen [Vale of Eternal Blossoms)
+			crit(21853),	-- Hyuna of the Shrines [The Jade Forest)
+			crit(21854),	-- Farmer Nishi [Valley of the Four Winds)
+			crit(21871),	-- Mo'ruk [Krasarang Wilds)
+			crit(21855),	-- Courageous Yon [Kun-Lai Summit)
+			crit(21870),	-- Seeker Zusshi [Townlong Steppes)
+			crit(21856),	-- Wastewalker Shu [Dread Wastes)
+			crit(21857),	-- Aki the Chosen [Vale of Eternal Blossoms)
 		})),
 		petbattle(ach(7499,  {	-- Taming the World (40)*
 			i(92738),	-- Safari Hat (TOY!)
@@ -103,55 +108,19 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		}))),
 		petbattle(ach(8348,  {	-- The Longest Day*
 		--	i(98715),	-- Marked Flawless Battle-Stone
-			crit(1),	-- Nicki Tinytech [Hellfire Peninsula)
-			crit(2),	-- Ras'an [Zangarmarsh)
-			crit(3),	-- Narrok [Nagrand)
-			crit(4),	-- Morulu The Elder [Shattrath City)
-			crit(5),	-- Grand Master Antari [Shadowmoon Valley)
-			crit(6),	-- Grand Master Lydia Accoste [Deadwind Pass)
-			crit(7),	-- Grand Master Trixxy [Winterspring)
-			crit(8),	-- Beegle Blastfuse [Howling Fjord)
-			crit(9),	-- Nearly Headless Jacob [Crystalsong Forest)
-			crit(10),	-- Okrut Dragonwaste [Dragonblight)
-			crit(11),	-- Gutretch [Zul'Drak)
-			crit(12),	-- Grand Master Payne [Icecrown)
-			crit(13),	-- Brok [Mount Hyjal)
-			crit(14),	-- Bordin Steadyfist [Deepholm)
-			crit(15),	-- Goz Banefury [Twilight Highlands)
-			crit(16),	-- Grand Master Obalis [Uldum)
-			crit(17),	-- Grand Master Hyuna [The Jade Forest)
-			crit(18),	-- Grand Master Nishi [Valley of the Four Winds)
-			crit(19),	-- Grand Master Mo'ruk [Krasarang Wilds)
-			crit(20),	-- Grand Master Yon [Kun-Lai Summit)
-			crit(21),	-- Grand Master Zusshi [Townlong Steppes)
-			crit(22),	-- Grand Master Shu [Dread Wastes)
-			crit(23),	-- Grand Master Aki [Vale of Eternal Blossoms)
-			crit(24),	-- Flowing Pandaren Spirit [Dread Wastes)
-			crit(25),	-- Burning Pandaren Spirit [Townlong Steppes)
-			crit(26),	-- Thundering Pandaren Spirit [Kun-Lai Summit)
-			crit(27),	-- Whispering Pandaren Spirit [The Jade Forest)
-			crit(28),	-- Beasts of Fable Book I [Vale of Eternal Blossoms, Kun-Lai Summit, The Jade Forest)
-			crit(29),	-- Beasts of Fable Book II [Vale of Eternal Blossoms, Valley of the Four Winds, Krasarang Wilds)
-			crit(30),	-- Beasts of Fable Book III [Vale of Eternal Blossoms, Townlong Steppes, Dread Wastes)
-			crit(31),	-- Julia Stevens [Elwynn Forest] / Zunta [Durotar)
-			crit(32),	-- Old MacDonald [Westfall] / Dagra the Fierce [Northern Barrens)
-			crit(33),	-- Lindsay [Redridge Mountains] / Zonya the Sadist [Stonetalon Mountains)
-			crit(34),	-- Eric Davidson [Duskwood] / Merda Stronghoof [Desolace)
-			crit(35),	-- Bill Buckler [The Cape of Stranglethorn] / Cassandra Kaboom [Southern Barrens
-			crit(36),	-- Steven Lisbane [Northern Stranglethorn] / Grazzle the Great [Dustwallow Marsh)
-			crit(37),	-- David Kosse [The Hinterlands] / Kela Grimtotem [Thousand Needles)
-			crit(38),	-- Deiza Plaguehorn [Eastern Plaguelands] / Zoltan [Felwood)
-			crit(39),	-- Kortas Darkhammer [Searing Gorge] /Traitor Gluk [Feralas)
-			crit(40),	-- Everessa [Swamp of Sorrows] / Elena Flutterfly [Moonglade)
-			crit(41),	-- Durin Darkhammer [Burning Steppes] / Analynn [Ashenvale)
+			["sym"] = {{ "achievement_criteria" }},
 		})),
 		petbattle(ach(14021, {	-- The Shadows Revealed
-			i(174871),	-- Mayhem Mind Melder (TOY!)
-			crit(1),	-- Pet Battle Challenge: Wailing Caverns
-			crit(2),	-- Pet Battle Challenge: Deadmines
-			crit(3),	-- Pet Battle Challenge: Gnomeregan
-			crit(4),	-- Pet Battle Challenge: Stratholme
-			crit(5),	-- Pet Battle Challenge: Blackrock Depths
+			["sym"] = {{ "meta_achievement",
+				11765,	-- Pet Battle Challenge: Wailing Caverns
+				11856,	-- Pet Battle Challenge: Deadmines
+				13269,	-- Pet Battle Challenge: Gnomeregan
+				13627,	-- Pet Battle Challenge: Stratholme
+				14020,	-- Pet Battle Challenge: Blackrock Depths
+			}},
+			["groups"] = {
+				i(174871),	-- Mayhem Mind Melder (TOY!)
+			},
 		})),
 		petbattle(ach(7521,  {	-- Time to Open a Pet Store [400)*
 			i(89686),	-- Jade Tentacle (PET!)
