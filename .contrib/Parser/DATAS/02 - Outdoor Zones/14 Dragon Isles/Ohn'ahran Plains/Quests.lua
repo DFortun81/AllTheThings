@@ -1198,6 +1198,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 34.1, 59.4, OHNAHRAN_PLAINS },
 				["classes"] = { EVOKER },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+				["groups"] = {
+					i(198455),	-- Tangled Roots (First item dropped while fishing/doesn't stay in bags)
+				},
 			}),
 			q(70319, {	-- Nergazurai
 				["sourceQuests"] = { 65783 },	-- Welcome at Our Fire
