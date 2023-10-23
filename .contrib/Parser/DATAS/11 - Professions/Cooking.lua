@@ -290,7 +290,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				["provider"] = { "i", 86425 },	-- Cooking School Bell
 			}),
 			crit(20538, {	-- Train your student to become an Expert in Cooking (Exalted)
-				["minReputation"] = { 1357, EXALTED },	-- Nomi, Exalted
+				["_factions"] = { 1357 },	-- Nomi
 			}),
 		}),
 		-- TODO: add providers for 'eating'/'cooking' the necessary foods
@@ -385,6 +385,23 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			crit(20581, { ["provider"] = { "i", 74650 } } ),	-- Mogu Fish Stew
 			crit(20582, { ["provider"] = { "i", 74653 } } ),	-- Steamed Crab Surprise
 			crit(20583, { ["provider"] = { "i", 74656 } } ),	-- Chun Tian Spring Rolls
+		}),
+		faction(1357, {		-- Nomi (Faction)
+			["description"] = "Summon Nomi once per day, complete the daily he gives and you'll soon (42+ days later), earn your Apron.\n\nThen this little bastard will learn nothing and burn all of your food in Dalaran.",
+			["cr"] = 64337,	-- Nomi (Child)
+			["groups"] = {
+				q(31820, {	-- A Present for Teacher
+					["providers"] = {
+						{ "n", 64337 },	-- Nomi
+						{ "i", 86425 },	-- Cooking School Bell
+					},
+					["description"] = "To get this quest you must Master all six of the Ways, complete the quest 'To Be a Master,' buy the Cooking School Bell for 50 Ironpaw Tokens, then max out your rep with Nomi.",
+					["minReputation"] = { 1357, 6 },	-- Level 6, Best Friend
+					["groups"] = {
+						i(86468),	-- Apron
+					},
+				}),
+			},
 		}),
 	})),
 	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
@@ -2961,25 +2978,6 @@ profession(COOKING, {
 		}
 	})),
 
-	-- #if AFTER MOP
-	i(86425, {	-- Cooking School Bell
-		faction(1357, {		-- Nomi (Faction)
-			["description"] = "Summon Nomi once per day, complete the daily he gives and you'll soon (42+ days later), earn your Apron.\n\nThen this little bastard will learn nothing and burn all of your food in Dalaran.",
-			["cr"] = 64337,	-- Nomi (Child)
-			["groups"] = {
-				ach(7325),	-- Now I Am the Master
-				q(31820, {	-- A Present for Teacher
-					["qg"] = 64337,	-- Nomi
-					["description"] = "To get this quest you must Master all six of the Ways, complete the quest 'To Be a Master,' buy the Cooking School Bell for 50 Ironpaw Tokens, then max out your rep with Nomi.",
-					["cost"] = { { "i", 86425, 1 } },	-- Cooking School Bell
-					["groups"] = {
-						i(86468),	-- Apron
-					},
-				}),
-			},
-		}),
-	}),
-	-- #endif
 	-- #if NOT ANYCLASSIC
 	-- TODO: Add these recipes to the place where you used to be able to buy them.
 	filter(RECIPES, {

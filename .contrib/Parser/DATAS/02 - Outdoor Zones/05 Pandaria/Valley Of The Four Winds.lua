@@ -950,8 +950,10 @@ root(ROOTS.Zones, {
 						["g"] = {
 							q(31337, {	-- A Token of Appreciation
 								["isDaily"] = true,
-								["provider"] = { "n", 64337 },	-- Nomi
-								["description"] = "Summon Nomi using the |cFFFFD700Cooking School Bell|r.",
+								["providers"] = {
+									{ "n", 64337 },	-- Nomi
+									{ "i", 86425 },	-- Cooking School Bell
+								},
 							}),
 							q(31471, {	-- Agile as a Tiger
 								["sourceQuests"] = { 31470 },	-- Way of the Wok
@@ -1020,28 +1022,38 @@ root(ROOTS.Zones, {
 							}),
 							q(31332, {	-- Lesson 1: Sliced Peaches
 								["isDaily"] = true,
-								["provider"] = { "n", 64337 },	-- Nomi
-								["description"] = "Summon Nomi using the |cFFFFD700Cooking School Bell|r.",
+								["providers"] = {
+									{ "n", 64337 },	-- Nomi
+									{ "i", 86425 },	-- Cooking School Bell
+								},
 							}),
 							q(31333, {	-- Lesson 2: Instant Noodles
 								["isDaily"] = true,
-								["provider"] = { "n", 64337 },	-- Nomi
-								["description"] = "Summon Nomi using the |cFFFFD700Cooking School Bell|r.",
+								["providers"] = {
+									{ "n", 64337 },	-- Nomi
+									{ "i", 86425 },	-- Cooking School Bell
+								},
 							}),
 							q(31334, {	-- Lesson 3: Toasted Fish Jerky
 								["isDaily"] = true,
-								["provider"] = { "n", 64337 },	-- Nomi
-								["description"] = "Summon Nomi using the |cFFFFD700Cooking School Bell|r.",
+								["providers"] = {
+									{ "n", 64337 },	-- Nomi
+									{ "i", 86425 },	-- Cooking School Bell
+								},
 							}),
 							q(31335, {	-- Lesson 4: Dried Needle Mushrooms
 								["isDaily"] = true,
-								["provider"] = { "n", 64337 },	-- Nomi
-								["description"] = "Summon Nomi using the |cFFFFD700Cooking School Bell|r.",
+								["providers"] = {
+									{ "n", 64337 },	-- Nomi
+									{ "i", 86425 },	-- Cooking School Bell
+								},
 							}),
 							q(31336, {	-- Lesson 5: Pounded Rice Cake
 								["isDaily"] = true,
-								["provider"] = { "n", 64337 },	-- Nomi
-								["description"] = "Summon Nomi using the |cFFFFD700Cooking School Bell|r.",
+								["providers"] = {
+									{ "n", 64337 },	-- Nomi
+									{ "i", 86425 },	-- Cooking School Bell
+								},
 							}),
 							q(33146, {	-- Noodle Time
 								["isDaily"] = true,
