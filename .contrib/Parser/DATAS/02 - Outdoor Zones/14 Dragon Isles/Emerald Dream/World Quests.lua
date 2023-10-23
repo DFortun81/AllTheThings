@@ -22,6 +22,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 							i(208983),	-- Yvelyn''s Assistance (QI!)
 						},
 					}),
+					q(76519, {	-- All The Children
+						["coord"] = { 58.2, 51.3, EMERALD_DREAM },
+						["g"] = {
+							i(208738),	-- Ephemeral Pear (QI!)
+						},
+					}),
 					q(76558, {	-- Base Control
 						["coord"] = { 46.2, 28.1, EMERALD_DREAM },
 					}),
@@ -85,9 +91,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					q(76522, {	-- Reverie Of Battle
 						["coord"] = { 64.1, 65.8, EMERALD_DREAM },
 					}),
+					q(76518, {	-- Root Security
+						["coord"] = { 58.9, 49.5, EMERALD_DREAM },
+						["g"] = {
+							i(208447),	-- Purifying Tangle (QI!)
+						},
+					}),	
 					pvp(q(78215, {	-- Rooted in Danger
 						["coord"] = { 44.8, 41.9, EMERALD_DREAM },
-					})),
+					})),				
 					q(76988, {	-- Sylvan Slalom
 						["coord"] = { 34.1, 57.6, EMERALD_DREAM },
 					}),

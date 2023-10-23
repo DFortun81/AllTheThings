@@ -19,6 +19,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 51.1, 31.7, EMERALD_DREAM },
 				["g"] = {
 					i(208349),	-- Burning Leather Cuffs
+					i(208376),	-- Great Ray's Longbow
 					i(208323),	-- Nature's Firebathed Robes
 					i(208347),	-- Stone Wolf's Cuffs
 					i(208326),	-- Vest of the Flametide
@@ -48,17 +49,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208328),	-- Fystia's Deft Hands
 				},
 			}),
-			n(209913, {	-- Fruitface (crs n: 209980 - Thieving Podling)
+			n(209913, {	-- Fruitface
 				["description"] = "Help Mylune by picking up Missing Fruit from floor until npc yell 'I see the podling who took the fruit!', attack enemy once and follow him.",
+				["crs"] = {
+					209950,	-- Mylune
+					209980,	-- Thieving Podling
+				},
 				["questID"] = 77846,
 				["coords"] = {
 					{ 63.5, 71.7, EMERALD_DREAM },	-- Entrance
-					{ 60.3, 68.7, 2254 },	-- Mylune (n: 209950)
+					{ 60.3, 68.7, 2254 },	-- Mylune
 					{ 54.3, 35.7, 2254 },	-- Rare
 				},
 				["g"] = {
 					i(208388),	-- Leafster's Magic Wand
-					i(208837),	-- Missing Fruit
+					i(208837),	-- Missing Fruit (QI!)
+					i(208344),	-- Sash of the Fruit Thief
 					i(208372),	-- Trickster's Tip Toers
 				},
 			}),
@@ -80,7 +86,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["g"] = {
 					i(208338),	-- Furious Flame's Shoulders
 					i(208325),	-- Ignit's Fiery Heart
-					i(210237),	-- Nipping Night's Necklace
 					i(208383),	-- Pommel of Fire
 				},
 			}),
@@ -88,6 +93,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 77989,
 				["coord"] = { 37.4, 31.7, EMERALD_DREAM },
 				["g"] = {
+					i(208348),	-- Binds of the Shatterer
 					i(208345),	-- Forgebreaker's Belt
 				},
 			}),
@@ -174,8 +180,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)
 				},
 			}),
-			n(209365, {	-- Splinterlimb (crs: 209358)
+			n(209365, {	-- Splinterlimb
 				["description"] = "Gain one stack of 'Corrupting Sparks' per cycle of his route, at 8th stack become enemy (rare)",
+				["crs"] = {
+					209358,	-- Splinterlimb
+				},
 				["questID"] = 77863,
 				["coord"] = { 61.9, 52.2, EMERALD_DREAM },
 				["g"] = {
@@ -192,12 +201,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ 57.1, 52.5, EMERALD_DREAM },
 				},
 				["g"] = {
+					i(208330),	-- Piercing Touch of the Vine
 					i(208335),	-- Vibrant Fall Leggings
 				},
 			}),
 			n(209902, {	-- Talthonel Ashwhisper
+				--["description"] = "Unsure what trigger this rare to spawn, killing druids of flames (rootsear defiler?) may be?",
 				["questID"] = 77994,
-				["coord"] = { 61.5, 67.5, EMERALD_DREAM },	-- 59.2, 43.7, 
+				["coords"] = {
+					{ 61.5, 67.5, EMERALD_DREAM },
+					{ 59.2, 43.7, EMERALD_DREAM },
+					{ 62.8, 52.1, EMERALD_DREAM },
+				},
 				["g"] = {
 					i(210736),	-- Mark of the Smoldering Dreamstag (CI!)
 				},

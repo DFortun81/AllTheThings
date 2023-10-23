@@ -834,7 +834,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208780),	-- Filled Bucket (QI!)
 					i(208779),	-- Unfilled Bucket (QI!)
 				},
-			}),			
+			}),
+			q(78398, {	-- A Dash of Minerals...
+				["sourceQuests"] = { 77677 },	-- Some Water...
+				["provider"] = { "n", 209571 },	-- Professor Ash
+				["coord"] = { 48.7, 68.0, EMERALD_DREAM },
+				["g"] = {
+					i(210457),	-- Fish Bones (QI!)
+				},
+			}),
 			--[[
 			q(, {	--
 				["sourceQuests"] = {  },	--
@@ -900,7 +908,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		-- Sprout
 		q(77712),	-- talk with Smoldering Sprout (n: 209253) first time which transform itself into Blackened Sprout
 		q(77713),	-- talk with Blackened Sprout (n: 209468) transform itself into Sprout (n: 209292) and unlock quests
-		q(77717),	-- after questID 77677 (Some Water...) done, but may be just hqt for daily lockout
+		q(77717),	-- lockout after turn in quest and flower show timer (progress bar)
 		--
 		q(78707),	-- Moonberry's Many Mischief Makers (itemID 210996)
 		-- ???

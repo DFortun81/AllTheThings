@@ -60,7 +60,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				n(REWARDS, {
 					i(210549,	-- Dream Racer's Purse
 					bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-						-- ph
+						i(203337),	-- Winding Slitherdrake: Thorn Horns (DM!)
 					})),
 				}),
 			}),

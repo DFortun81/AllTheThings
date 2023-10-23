@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				i(210096),	-- Wind Wolf Legguards
 			}),
 			filter(NECK_F, {
-				--i(),	--
+				i(210237),	-- Nipping Night's Necklace
 			}),
 			filter(PLATE, {
 				i(210084),	-- Harvest Guardian Chestplate

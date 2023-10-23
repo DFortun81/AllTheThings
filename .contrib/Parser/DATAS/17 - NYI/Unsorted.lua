@@ -927,7 +927,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(RARES, {
 				i(208324),	-- Scorching Dryad's Chestpiece
-				i(208330),	-- Piercing Touch of the Vine
 				i(208331),	-- Cowl of the Flame
 				i(208332),	-- Horns of the Envoy
 				i(208334),	-- Legplates of the Krakken
@@ -937,8 +936,6 @@ root(ROOTS.Unsorted, {
 				i(208341),	-- Fire-Runed Spaulders
 				i(208342),	-- Girdle of Nature's Fury
 				i(208343),	-- Matriarch's Flowery Band
-				i(208344),	-- Sash of the Fruit Thief
-				i(208348),	-- Binds of the Shatterer
 				i(208355),	-- String of Delicacies
 				i(208361),	-- Splinterlimb's Branch
 				i(208363),	-- Twinfang of the Cian
@@ -948,7 +945,6 @@ root(ROOTS.Unsorted, {
 				i(208371),	-- Fire Assassin's Boots
 				i(208373),	-- Band of Bated Breath
 				i(208374),	-- Talthornei's Wrath
-				i(208376),	-- Great Ray's Longbow
 				i(208379),	-- Keevah's Extended Claw
 				i(208380),	-- Moragh's Kneading Claw
 				i(208381),	-- Scepter of Still Waters
@@ -970,7 +966,6 @@ root(ROOTS.Unsorted, {
 			i(208231),	-- Talisman of Hope
 			i(208232),	-- Singed Darnassian Tabard
 			------
-			i(208447),	-- Purifying Tangle
 			i(208545),	-- Kindled Bonfire
 			i(208571),	-- Artisan's Consortium Leaflet
 			i(208599),	-- Verdant Dream Seed
@@ -981,7 +976,6 @@ root(ROOTS.Unsorted, {
 			i(208703),	-- Blacksmith Bammer
 			i(208705),	-- Druidic Totem
 			i(208731),	-- Blacksmith Bammer Key
-			i(208738),	-- Ephemeral Pear
 			i(208745),	-- Your Reward [DNT]
 			i(208757),	-- Ash's Recipes to Delight and Nourish Your Plant Pals
 			i(208856),	-- Pocket Lint
@@ -1040,7 +1034,6 @@ root(ROOTS.Unsorted, {
 			i(210451),	-- Imp Tail
 			i(210452),	-- Small Demon Horn
 			i(210456),	-- Dreaming Antler Fragment
-			i(210457),	-- Fish Bones
 			i(210470),	-- Echoed Ephemera
 			i(210472),	-- Igira's Cruel Nightmare
 			i(210473),	-- Larodar's Fiery Reverie
