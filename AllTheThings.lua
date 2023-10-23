@@ -17760,11 +17760,12 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			-- ["back"] = function(t)
 			-- 	return 0.3;	-- visibility of which rows are cloned
 			-- end,
-		}, "FilterHeaderClone");
+		}, "VisualHeaderClone");
 		-- Fields in the wrapped object which should not persist when represented as a Header
 		for _,field in ipairs({
 			"sort",
 			"collectible",
+			"visible",
 			"sourceParent",
 			"customCollect",
 			"requireSkill",
