@@ -1375,7 +1375,7 @@ local function CreateObject(t, rootOnly)
 	elseif t[1] then
 		local s = {};
 		-- array
-		-- if app.Debugging then print("CreateObject on array",#t); end
+		-- app.PrintDebug("CreateObject on array",#t);
 		for i,o in ipairs(t) do
 			s[i] = CreateObject(o, rootOnly);
 		end
@@ -1484,7 +1484,7 @@ local function CreateObject(t, rootOnly)
 	if rootOnly then
 		t.g = nil;
 	else
-		-- if app.Debugging then print("CreateObject key/value",t.key,t[t.key]); end
+		-- app.PrintDebug("CreateObject key/value",t.key,t[t.key]);
 		-- if g, then replace each object in all sub groups with an object version of the table
 		local g = t.g;
 		if g then
@@ -1618,7 +1618,8 @@ app.DetermineItemLink = function(sourceID)
 	link = itemFormat;
 	-- if quality is Artifact / Unmodified Item / Category 'Paired' just return the basic Item string
 	if sourceInfo.quality == 6 or sourceInfo.itemModID == 0 or sourceInfo.categoryID == 29 then
-		-- app.PrintDebug("DetermineItemLink:Good",sourceID,"(Basic Item Data)");
+		-- app.PrintDebug("DetermineItemLink:Good",link,sourceID,"(Basic Item Data)");
+		-- app.PrintTable(sourceInfo)
 		return link;
 	end
 	local checkID, found = GetSourceID(link);
@@ -3677,7 +3678,7 @@ ResolveSymbolicLink = function(o)
 	if #finalized > 0 then
 		local cloned = {};
 		MergeObjects(cloned, finalized, true);
-		-- if app.Debugging then print("Symbolic Link for", oKey,oKey and o[oKey], "contains", #cloned, "values after filtering.") end
+		-- app.PrintDebug("Symbolic Link for", oKey,oKey and o[oKey], "contains", #cloned, "values after filtering.")
 		-- if any symlinks are left at the lowest level, go ahead and fill them
 		-- Apply any modID if necessary
 		local sHash;
@@ -3731,7 +3732,7 @@ ResolveSymbolicLink = function(o)
 		end
 		return cloned;
 	else
-		-- if app.Debugging then print("Symbolic Link for ", oKey, " ",oKey and o[oKey], " contained no values after filtering.") end
+		-- app.PrintDebug("Symbolic Link for ", oKey, " ",oKey and o[oKey], " contained no values after filtering.")
 	end
 end
 
@@ -3803,7 +3804,7 @@ local function BuildContainsInfo(item, entries, indent, layer)
 					BuildContainsInfo(group, entries, indent .. "  ", layer + 1);
 				end
 				-- else
-				-- 	if app.Debugging then print("EXCLUDE",app.Debugging,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key]) end
+				-- 	app.PrintDebug("EXCLUDE",app.Debugging,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
 			end
 		end
 	end
@@ -6577,13 +6578,13 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 		if not canMog then return; end
 		local factionRaces = app.Modules.FactionData.FACTION_RACES;
 		for _,sourceID in ipairs(visualIDs) do
-			-- if app.Debugging then print("visualID",knownSource.visualID,"s",sourceID,"known:",acctSources[sourceID)] end
+			-- app.PrintDebug("visualID",knownSource.visualID,"s",sourceID,"known:",acctSources[sourceID)]
 			-- If it is not currently marked collected on the account
 			if not acctSources[sourceID] then
 				-- for current character only, all we care is that the knownItem is not exclusive to another
 				-- race/class to consider all shared appearances as 'collected' for the current character
 				if currentCharacterUsable then
-					-- if app.Debugging then print("current character usable") end
+					-- app.PrintDebug("current character usable")
 					acctSources[sourceID] = 2;
 				else
 					-- Find the check Source in ATT
@@ -6633,7 +6634,7 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 										or checkSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
 										or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[checkSource.invType])
 								then
-									-- if app.Debugging then print("Unique Collected s:",sourceID); end
+									-- app.PrintDebug("Unique Collected s:",sourceID);
 									acctSources[sourceID] = 2;
 								-- else print("sources share visual and filters but different equips",item.s,sourceID)
 								end
@@ -7543,7 +7544,7 @@ local function TryPopulateQuestRewards(questObject)
 	for j=1,numCurrencies,1 do
 		currencyID = select(4, GetQuestLogRewardCurrencyInfo(j, questID));
 		if currencyID then
-			-- if app.Debugging then print("TryPopulateQuestRewards_currencies:found",questID,currencyID,questObject.missingCurr) end
+			-- app.PrintDebug("TryPopulateQuestRewards_currencies:found",questID,currencyID,questObject.missingCurr)
 
 			currencyID = tonumber(currencyID);
 			local item = { ["currencyID"] = currencyID };
@@ -7598,16 +7599,16 @@ local function TryPopulateQuestRewards(questObject)
 					for _,o in ipairs(data.g) do
 						-- nest cached non-items
 						if not o.itemID then
-							-- if app.Debugging then print("nested-nonItem",o.hash) end
+							-- app.PrintDebug("nested-nonItem",o.hash)
 							tinsert(nonItemNested, o);
 						-- cached items need to merge with corresponding API item based on simple itemID
 						elseif apiItems[o.itemID] then
-							-- if app.Debugging then print("nested-merged",o.hash) end
+							-- app.PrintDebug("nested-merged",o.hash)
 							MergeProperties(apiItems[o.itemID], o, true);
 						--  if it is not a WQ or is a 'raid' (world boss)
 						elseif questObject.isRaid or not questObject.isWorldQuest then
 							-- otherwise just get nested
-							-- if app.Debugging then print("nested-item",o.hash) end
+							-- app.PrintDebug("nested-item",o.hash)
 							tinsert(nonItemNested, o);
 						end
 					end
@@ -10424,14 +10425,14 @@ local function default_costCollectibles(t)
 	if modItemID and modItemID ~= t.itemID then
 		id = modItemID;
 		results = SearchForField("itemIDAsCost", id);
-		-- if app.Debugging then print("itemIDAsCost.modItemID",id,results and #results) end
+		-- app.PrintDebug("itemIDAsCost.modItemID",id,results and #results)
 	end
 	-- If no results, search by itemID + modID only if different
 	if not results or #results < 1 then
 		id = GetGroupItemIDWithModID(nil, t.itemID, t.modID);
 		if id ~= modItemID then
 			results = SearchForField("itemIDAsCost", id);
-			-- if app.Debugging then print("itemIDAsCost.modID",id,results and #results) end
+			-- app.PrintDebug("itemIDAsCost.modID",id,results and #results)
 		end
 	end
 	-- If no results, search by plain itemID only
@@ -10683,7 +10684,6 @@ local fields = RawCloneData(itemFields, {
 	end,
 });
 local BaseItemSource = app.BaseObjectFields(fields, "BaseItemSource");
-
 app.CreateItemSource = function(sourceID, itemID, t)
 	t = setmetatable(constructor(sourceID, t, "s"), BaseItemSource);
 	t.itemID = itemID;
@@ -22418,6 +22418,7 @@ app.events.ARTIFACT_UPDATE = function(...)
 	end
 end
 app.events.PLAYER_ENTERING_WORLD = function(...)
+	-- app.PrintDebug("PLAYER_ENTERING_WORLD",...)
 	app.InWorld = true;
 	-- refresh any custom collects for this character
 	app.RefreshCustomCollectibility();
