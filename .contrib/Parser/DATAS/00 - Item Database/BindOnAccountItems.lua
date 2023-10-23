@@ -217,6 +217,10 @@ i(102264);	-- Timeless Plate Boot
 i(104345);	-- Timeless Lavalliere
 i(102291);	-- Timeless Signet
 i(104347);	-- Timeless Curio
+i(104009);	-- Timeless Plate Armor Cache
+i(104010);	-- Timeless Mail Armor Cache
+i(104012);	-- Timeless Leather Armor Cache
+i(104013);	-- Timeless Cloth Armor Cache
 
 -- Archaeology Solves
 i(64489);	-- Staff of Sorcerer-Thane Thaurissan
