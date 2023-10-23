@@ -10,7 +10,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 	},{
 		n(ACHIEVEMENTS, {
 			ach(11298, {	-- A Classy Outfit
-				crit(1, {	-- Class Hall Helm Earned
+				crit(5212, {	-- Class Hall Helm Earned
 					["description"] = "Rewarded by a quest in your class's Order Hall campaign.",
 					["sourceQuests"] = {
 						44217,	-- Armor Fit For A Deathlord (Death Knight)
@@ -44,7 +44,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						43090,	-- Ulduar's Oath (Warrior)
 					},
 				}),
-				crit(3, {	-- Class Hall Gloves Earned
+				crit(30499, {	-- Class Hall Gloves Earned
 					["description"] = "Reach Honored reputation with the Nightfallen.",
 					["minReputation"] = { 1859, HONORED },
 				}),
@@ -71,7 +71,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 				crit(6, {	-- Class Hall Boots Earned
 					["description"] = "Reach Revered reputation with any 2 Broken Isles factions.",
 				}),
-				crit(7, {	-- Class Hall Belt Earned
+				crit(44848, {	-- Class Hall Belt Earned
 					["description"] = "Complete the Arsenal of Power achievement.",
 				}),
 				crit(8, {	-- Class Hall Shoulders Earned
@@ -99,7 +99,14 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 				}),
 			}),
 			achraw(10461, {	-- Fighting with Style: Classic
-				crit(1),	-- Recover one of the Pillars of Creation
+				crit(31588, {	-- Recover one of the Pillars of Creation
+					["_quests"] = {
+						43349,
+						42213,
+						40890,
+						42454,
+					},
+				}),
 				crit(33167, {	-- Complete the quest, "Light's Charge"
 					["_quests"] = { 44153 },
 				}),

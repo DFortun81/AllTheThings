@@ -10,16 +10,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				ach(14636),		-- Adventurer in Chief
 				ach(14843),		-- Adventures: Harmony of Purpose
 				ach(14844, {	-- Adventures: Into the Breach
-					crit(1),	-- Breach the Planes
-					crit(2),	-- Ghelak's Revenge
-					crit(3),	-- Coalescing Stygia
-					crit(4),	-- Topple the Giants
-					crit(5),	-- Dark Skies, Darker Prospects
-					crit(6),	-- Dravok's Plot
-					crit(7),	-- Grandiose Designs
-					crit(8),	-- Cutting the Threads
-					crit(9),	-- Shades of Despair
-					crit(10),	-- Krala, Wings of Woe
+					["sym"] = {{ "achievement_criteria" }},
 				}),
 				ach(14845),	-- Adventures: A Step in the Right Direction
 				ach(14846),	-- Adventures: Leaves in the Forest

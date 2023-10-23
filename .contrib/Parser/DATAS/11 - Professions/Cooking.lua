@@ -295,48 +295,10 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 		}),
 		-- TODO: add providers for 'eating'/'cooking' the necessary foods
 		ach(7329, {	-- Pandaren Cuisine
-			crit(1),	-- Sliced Peaches
-			crit(2),	-- Perfectly Cooked Instant Noodles
-			crit(3),	-- Toasted Fish Jerky
-			crit(4),	-- Dried Needle Mushrooms
-			crit(5),	-- Pounded Rice Cake
-			crit(6),	-- Yak Cheese Curds
-			crit(7),	-- Dried Peaches
-			crit(8),	-- Boiled Silkworm Pupa
-			crit(9),	-- Roasted Barley Tea
-			crit(10),	-- Blanched Needle Mushrooms
-			crit(11),	-- Red Bean Bun
-			crit(12),	-- Tangy Yogurt
-			crit(13),	-- Peach Pie
-			crit(14),	-- Skewered Peanut Chicken
-			crit(15),	-- Pearl Milk Tea
-			crit(16),	-- Green Curry Fish
+			["sym"] = {{ "achievement_criteria" }},
 		}),
 		ach(7330, {	-- Pandaren Delicacies
-			crit(1),	-- Rice Pudding
-			crit(2),	-- Sauteed Carrots
-			crit(3),	-- Ginseng Tea
-			crit(4),	-- Swirling Mist Soup
-			crit(5),	-- Shrimp Dumplings
-			crit(6),	-- Wildfowl Roast
-			crit(7),	-- Charbroiled Tiger Steak
-			crit(8),	-- Golden Carp Consomme
-			crit(9),	-- Fish Cake
-			crit(10),	-- Valley Stir Fry
-			crit(11),	-- Jade Witch Brew
-			crit(12),	-- Wildfowl Ginseng Soup
-			crit(13),	-- Braised Turtle
-			crit(14),	-- Fire Spirit Salmon
-			crit(15),	-- Twin Fish Platter
-			crit(16),	-- Eternal Blossom Fish
-			crit(17),	-- Sea Mist Rice Noodles
-			crit(18),	-- Spicy Vegetable Chips
-			crit(19),	-- Mad Brewer's Breakfast
-			crit(20),	-- Spicy Salmon
-			crit(21),	-- Mogu Fish Stew
-			crit(22),	-- Steamed Crab Surprise
-			crit(23),	-- Chun Tian Spring Rolls
-			crit(24),	-- Black Pepper Ribs and Shrimp
+			["sym"] = {{ "achievement_criteria" }},
 		}),
 		ach(7326, {	-- The Pandaren Gourmet (15)
 			-- Identical Criteria as Main Achievement
