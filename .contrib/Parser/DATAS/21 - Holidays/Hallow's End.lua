@@ -3698,7 +3698,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["timeline"] = { "added 5.0.1" },
 				}),
 				q(32036, {	-- Candy Bucket — Krasarang Wilds, Zhu's Watch, Neutral
-					["coord"] = { 79.48, 0.72, KRASARANG_WILDS },
+					["coord"] = { 75.94, 6.91, KRASARANG_WILDS },
 					["timeline"] = { "added 5.0.1" },
 				}),
 				q(32039, {	-- Candy Bucket — Kun-Lai Summit, Binan Village, Neutral
