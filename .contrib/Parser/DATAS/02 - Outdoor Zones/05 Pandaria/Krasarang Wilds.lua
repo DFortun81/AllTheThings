@@ -1103,7 +1103,7 @@ root(ROOTS.Zones, {
 									["minReputation"] = { 1376, FRIENDLY+950 },
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
 									["provider"] = { "n", 67940 },	-- Admiral Taylor
-									["coords"] = { 89.5, 32.5, KRASARANG_WILDS },
+									["coord"] = { 89.5, 32.5, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32394, {	-- The Divine Bell
