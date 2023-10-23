@@ -2232,7 +2232,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 43.2, 75.9, THE_JADE_FOREST },
 					}),
 					q(29745, {	-- The Sprites' Plight
-						["sourceQuests"] = { 29744 },	-- Pupil of Nature - legacy quest
+						["sourceQuests"] = { 29930 },	-- What's Mined is Yours
 						["provider"] = { "n", 55438 },	-- Outcast Sprite
 						["coord"] = { 48.6, 24.9, THE_JADE_FOREST },
 					}),

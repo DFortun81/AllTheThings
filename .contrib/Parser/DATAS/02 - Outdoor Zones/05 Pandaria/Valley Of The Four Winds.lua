@@ -1867,6 +1867,10 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29990 },	-- Training and Discipline
 						["coord"] = { 18.0, 56.5, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 59855 },	-- Mei Barrelbottom
+						["sourceQuests"] = {
+							30360,	-- Warn Stoneplow (A)
+							30241,	-- Warn Stoneplow (H)
+						},
 					}),
 					q(29913, {	-- The Meat They'll Eat
 						["sourceQuests"] = { 29912 },	-- The Fabular Miss Fanny
