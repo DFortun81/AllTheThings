@@ -17762,24 +17762,27 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			-- end,
 		}, "VisualHeaderClone");
 		-- Fields in the wrapped object which should not persist when represented as a Header
+		for field,_ in pairs(app.MergeSkipFields) do
+			BaseVisualHeaderClone.__class[field] = app.EmptyFunction
+		end
 		for _,field in ipairs({
 			"sort",
 			"collectible",
-			"visible",
 			"sourceParent",
 			"customCollect",
-			"requireSkill",
 			"minReputation",
 			"maxReputation",
-			"u",
-			"e",
+			"OnUpdate",
+			"OnTooltip",
+			"_CheckCollectible",
+			"_SettingsRefresh",
+			"_up",
+			"up",
 			"races",
 			"r",
 			"c",
 			"nmc",
 			"nmr",
-			"pvp",
-			"pb",
 			"hash",
 		}) do
 			BaseVisualHeaderClone.__class[field] = app.EmptyFunction
