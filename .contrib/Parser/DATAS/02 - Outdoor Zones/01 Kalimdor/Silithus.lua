@@ -1614,7 +1614,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28859, {	-- The Dunes of Silithus
 					["qg"] = 38269,	-- Zen'Aliri
-					["sourceQuest"] = 24695,	-- Ever Watching From Above
+					-- ["sourceQuest"] = 24695,	-- Ever Watching From Above [nothing under this entire quest chain is required... maybe something completely different?]
 					["coord"] = { 55.7, 60.6, UNGORO_CRATER },
 					["timeline"] = { "added 4.0.3.13277" },
 					["isBreadcrumb"] = true,
