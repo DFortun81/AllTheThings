@@ -14950,6 +14950,9 @@ RowOnEnter = function (self)
 			GameTooltip:ClearLines();
 		end
 
+		local toggleAttachTooltips = not app.Settings:GetTooltipSetting("Enabled")
+		-- all tooltips from ATT windows should always show expected data
+		if toggleAttachTooltips then app.Settings:SetTooltipSetting("Enabled", true) end
 		local link = reference.link or reference.silentLink;
 		local _, linkAdded;
 		if link then
@@ -14999,6 +15002,8 @@ RowOnEnter = function (self)
 				-- app.PrintDebug("No Search Data",reference.hash)
 			end
 		end
+
+		if toggleAttachTooltips then app.Settings:SetTooltipSetting("Enabled", false) end
 
 		-- Miscellaneous fields
 		local missingMiscData;
