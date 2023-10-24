@@ -476,11 +476,11 @@ root(ROOTS.ExpansionFeatures,
 						})),
 						ach(10164, {	-- Master of the Seas
 							title(317),	-- Captain
-							crit(1),	-- Naval Combat Expert
-							crit(2),	-- Naval Treasure Expert
-							crit(3),	-- Naval Training Expert
-							crit(4),	-- Naval Bonus Expert
-							crit(5),	-- Naval Siege Expert
+							crit(28515),	-- Naval Combat Expert
+							crit(28517),	-- Naval Treasure Expert
+							crit(28516),	-- Naval Training Expert
+							crit(28518),	-- Naval Bonus Expert
+							crit(28519),	-- Naval Siege Expert
 						}),
 						ach(10036, {	-- Naval Bonus Expert
 							ach(10017),	-- Naval Bonus Specialist

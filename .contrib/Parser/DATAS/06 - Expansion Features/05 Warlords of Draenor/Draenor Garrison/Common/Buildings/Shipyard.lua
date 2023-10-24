@@ -11,11 +11,11 @@ root(ROOTS.ExpansionFeatures,
 					["g"] = {
 						n(ACHIEVEMENTS, {
 							ach(10165, {	-- Ironsides
-								crit(1),	-- Destroyer
-								crit(2),	-- Submarine
-								crit(3),	-- Carrier
-								crit(4),	-- Transport
-								crit(5),	-- Battleship
+								crit(28520),	-- Destroyer
+								crit(28521),	-- Submarine
+								crit(28522),	-- Carrier
+								crit(28523),	-- Transport
+								crit(28524),	-- Battleship
 							}),
 							ach(10168, {	-- Naval Armada
 								ach(10169),	-- Naval Fleet

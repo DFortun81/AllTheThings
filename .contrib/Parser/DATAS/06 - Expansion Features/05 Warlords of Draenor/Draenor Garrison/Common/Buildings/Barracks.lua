@@ -9,13 +9,13 @@ root(ROOTS.ExpansionFeatures,
 				garrisonBuilding(28,  {	-- Barracks (rank 1: 26, rank 2: 27, rank 3: 28)
 					n(ACHIEVEMENTS, {
 						ach(9499, {		-- Wingmen
-							crit(1),		-- Leorajh
-							crit(2),		-- Talonpriest Ishaal
-							crit(3),		-- Tormmok
-							crit(4, {["races"] = HORDE_ONLY}),		-- Aeda Brightdawn
-							crit(5, {["races"] = ALLIANCE_ONLY}),		-- Defender Illona
-							crit(6, {["races"] = ALLIANCE_ONLY}),		-- Delvar Ironfirst
-							crit(7, {["races"] = HORDE_ONLY}),		-- Vivianne
+							crit(25890),		-- Leorajh
+							crit(25894),		-- Talonpriest Ishaal
+							crit(25895),		-- Tormmok
+							crit(25891, {["races"] = HORDE_ONLY}),		-- Aeda Brightdawn
+							crit(25893, {["races"] = ALLIANCE_ONLY}),		-- Defender Illona
+							crit(25889, {["races"] = ALLIANCE_ONLY}),		-- Delvar Ironfirst
+							crit(25892, {["races"] = HORDE_ONLY}),		-- Vivianne
 							ach(9498),		-- Wingman
 						}),
 					}),

@@ -95,9 +95,9 @@ root(ROOTS.ExpansionFeatures,
 							ach(7271),	-- Arena of Annihilation
 							ach(7273),	-- Beat the Heat
 							ach(7272, {	-- In the Eye of the Tiger
-								crit(1),	-- Kill Cloudbender Kobo
-								crit(2),	-- Kill Maki Waterblade
-								crit(3),	-- Kill Satay Byu
+								crit(19342),	-- Kill Cloudbender Kobo
+								crit(20432),	-- Kill Maki Waterblade
+								crit(20433),	-- Kill Satay Byu
 							}),
 						}),
 					},
@@ -130,27 +130,27 @@ root(ROOTS.ExpansionFeatures,
 					["g"] = {
 						n(ACHIEVEMENTS, {
 							ach(6931, {	-- Binan Village All-Star
-								crit(1),	-- Briaw Shan
-								crit(2),	-- Barrel of Fireworks
-								crit(3),	-- Vale Marksman
-								crit(4),	-- Karasang Wild Brew
-								crit(5),	-- Tian Disciple
-								crit(6),	-- Derpa Derpa
+								crit(21330),	-- Briaw Shan
+								crit(21331),	-- Barrel of Fireworks
+								crit(21335),	-- Vale Marksman
+								crit(21332),	-- Karasang Wild Brew
+								crit(21334),	-- Tian Disciple
+								crit(21333),	-- Derpa Derpa
 							}),
 							ach(6923),	-- Brewmoon Festival
 							ach(7385, {	-- Pub Crawl
 								i(87528),	-- Honorary Brewmaster Keg (TOY!)
-								crit(1),	-- Spill No Evil
-								crit(2),	-- Yaungolian Barbecue
-								crit(3),	-- Binan Village All-Star
-								crit(4),	-- The Keg Runner
-								crit(5),	-- Monkey in the Middle
-								crit(6),	-- Monkey See, Monkey Kill
-								crit(7),	-- Don't Shake the Keg
-								crit(8),	-- Party of Six
-								crit(9),	-- The Perfect Pour
-								crit(10),	-- Save it for Later
-								crit(11),	-- Perfect Delivery
+								crit(20680),	-- Spill No Evil
+								crit(20681),	-- Yaungolian Barbecue
+								crit(20682),	-- Binan Village All-Star
+								crit(20683),	-- The Keg Runner
+								crit(20684),	-- Monkey in the Middle
+								crit(20685),	-- Monkey See, Monkey Kill
+								crit(20686),	-- Don't Shake the Keg
+								crit(20687),	-- Party of Six
+								crit(20688),	-- The Perfect Pour
+								crit(20689),	-- Save it for Later
+								crit(20690),	-- Perfect Delivery
 							}),
 							ach(6930),	-- Yaungolian Barbecue
 						}),
@@ -209,22 +209,22 @@ root(ROOTS.ExpansionFeatures,
 							a(ach(8011)),	-- Number Five is Alive (A)
 							h(ach(8014)),	-- Number Five is Alive (H)
 							a(ach(8012, {	-- Waste Not, Want Not (A)
-								crit(1),	-- Lever-Acton Boomstick
-								crit(2),	-- Reaver Bomb
-								crit(3),	-- Rocket Launcher
-								crit(4),	-- Armor Power-Up
-								crit(5),	-- Berserk Power-Up
-								crit(6),	-- Restoration Power-Up
-								crit(7),	-- Speed Power-Up
+								crit(22520),	-- Lever-Acton Boomstick
+								crit(22521),	-- Reaver Bomb
+								crit(22522),	-- Rocket Launcher
+								crit(22523),	-- Armor Power-Up
+								crit(22524),	-- Berserk Power-Up
+								crit(22526),	-- Restoration Power-Up
+								crit(22527),	-- Speed Power-Up
 							})),
 							h(ach(8015, {	-- Waste Not, Want Not (H)
-								crit(1),	-- Lever-Acton Boomstick
-								crit(2),	-- Reaver Bomb
-								crit(3),	-- Rocket Launcher
-								crit(4),	-- Armor Power-Up
-								crit(5),	-- Berserk Power-Up
-								crit(6),	-- Restoration Power-Up
-								crit(7),	-- Speed Power-Up
+								crit(22520),	-- Lever-Acton Boomstick
+								crit(22521),	-- Reaver Bomb
+								crit(22522),	-- Rocket Launcher
+								crit(22523),	-- Armor Power-Up
+								crit(22524),	-- Berserk Power-Up
+								crit(22526),	-- Restoration Power-Up
+								crit(22527),	-- Speed Power-Up
 							})),
 						}),
 					},
@@ -286,13 +286,13 @@ root(ROOTS.ExpansionFeatures,
 						n(ACHIEVEMENTS, {
 							ach(7239),	-- Monkey in the Middle
 							ach(7248, {	-- Monkey See, Monkey Kill
-								crit(1),	-- Captain Ook
-								crit(2),	-- Ba-Bam
-								crit(3),	-- Ookie
-								crit(4),	-- Chihozen Binono
-								crit(5),	-- Grooka Grooka
-								crit(6),	-- Rik Rik
-								crit(7),	-- Protected King Unga Keg
+								crit(20696),	-- Captain Ook
+								crit(19858),	-- Ba-Bam
+								crit(19823),	-- Ookie
+								crit(19857),	-- Chihozen Binono
+								crit(19822),	-- Grooka Grooka
+								crit(19821),	-- Rik Rik
+								crit(20585),	-- Protected King Unga Keg
 							}),
 							ach(7231),	-- Spill No Evil
 							ach(7232),	-- The Keg Runner
@@ -302,7 +302,7 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				n(REWARDS, {
 					["description"] = "Mini Guide to farm both boxes:\nStep 1: Create a class-trial character.\nStep 2: Enter the portal room to travel to Jade Forest & fly to the Vale of Eternal Blossoms capital.\nStep 3: Pick up the Quest 'Heroic Deeds' in the middle of the capital.\nStep 4: Fly to the Seat of Knowledge and pick up the quest 'The King and the Council'.\nStep 5: Complete the 'Blood in the Snow' scenario on heroic.\nStep 6: Turn in the quest 'The King and the Council' and pick up the follow-up quest 'The Warchief and the Darkness'.\nStep 7: Complete the \"Dark heart of Pandaria\" scenario on either normal or heroic.\nStep 8: Turn in all quests, open all the boxes, logout & delete the trial character. Repeat Step 1-8.\nYou can create 4 trial characters per hour and 12 per week (based on realtime).\nBonus: The Trial Char can also be used to kill the World Boss on the Timless Isle. Talk to Chromie at the Seat Entrance for a free teleport.",
-					["g"] = {	
+					["g"] = {
 						i(98133, {	-- Greater Cache of Treasures
 							["description"] = "Rewarded for completing |cFFFFD700The King and the Council|r and |cFFFFD700The Warchief and the Darkness|r quests.\nSee Rewards Tab description for a detailed farming guide.",
 							["g"] = {

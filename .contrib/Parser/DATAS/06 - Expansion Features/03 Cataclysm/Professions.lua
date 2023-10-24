@@ -30,15 +30,15 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "add
 				ach(5315),		-- Digger (10)
 			}),
 			ach(5511, {	-- It's Always in the Last Place You Look
-				crit(1),		-- Draenei
-				crit(2),		-- Dwarf
-				crit(3),		-- Fossil
-				crit(4),		-- Nerubian
-				crit(5),		-- Night Elf
-				crit(6),		-- Orc
-				crit(7),		-- Tol'vir
-				crit(8),		-- Troll
-				crit(9),		-- Vrykul
+				crit(16197),		-- Draenei
+				crit(16198),		-- Dwarf
+				crit(16199),		-- Fossil
+				crit(16200),		-- Nerubian
+				crit(16201),		-- Night Elf
+				crit(16202),		-- Orc
+				crit(16203),		-- Tol'vir
+				crit(16204),		-- Troll
+				crit(16205),		-- Vrykul
 			}),
 			ach(4859, {	-- Kings Under the Mountain
 				crit(15062, {	-- Mithril Chain of Angerforge
