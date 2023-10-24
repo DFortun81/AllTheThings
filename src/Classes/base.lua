@@ -165,6 +165,12 @@ local DefaultFields = {
 	["sourceID"] = function(t)
 		return t.s
 	end,
+	["filterID"] = function(t)
+		return t.f
+	end,
+	["iconPath"] = function(t)
+		return t.icon
+	end,
 };
 
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
