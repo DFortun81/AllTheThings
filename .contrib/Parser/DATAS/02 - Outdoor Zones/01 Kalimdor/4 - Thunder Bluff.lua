@@ -718,7 +718,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #endif
 			n(VENDORS, {
-				n(8359, {	-- Ahanu
+				n(8359, {	-- Ahanu <Leather Armor Merchant>
 					["coord"] = { 45.6, 55.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -777,6 +777,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						853,	-- Hatchet
 						12249,	-- Merciless Axe
 						1196,	-- Tabar
+						37,     -- Worn Axe
 					}},
 					["groups"] = {
 						i(12249, {	-- Merciless Axe
@@ -784,7 +785,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				n(8360, {	-- Elki
+				n(8360, {	-- Elki <Mail Armor Merchant>
 					["coord"] = { 45.2, 56.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -806,7 +807,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1202,	-- Wall Shield
 					}},
 				}),
-				n(3020, {	-- Etu Ragetotem
+				n(3020, {	-- Etu Ragetotem <Mace & Staff Merchant>
 					["coord"] = { 58.2, 52.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -817,6 +818,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						928,	-- Long Staff
 						852,	-- Mace
 						924,	-- Maul
+						20981,  -- Neophyte's Mace
 						854,	-- Quarter Staff
 						2026,	-- Rock Hammer
 					}},
@@ -862,7 +864,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}},
 				}),
 				-- #endif
-				n(3093, {	-- Grod
+				n(3093, {	-- Grod <Leather Armor Merchant>
 					["coord"] = { 42.4, 43.2, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -1170,7 +1172,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
-				n(3022, {	-- Sunn Ragetotem
+				n(3022, {	-- Sunn Ragetotem <Staff Merchant>
 					["coord"] = { 49.6, 49.8, THUNDER_BLUFF },
 					["sym"] = {{"select","itemID",
 						2527,	-- Battle Staff
@@ -1187,7 +1189,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						6524,	-- Studded Leather Harness
 					}},
 				}),
-				n(3092, {	-- Tagain
+				n(3092, {	-- Tagain <Cloth Armor Merchant>
 					["coord"] = { 43.4, 43.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -1254,7 +1256,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = { {"sub", "common_recipes_vendor", 3356} },	-- Sumi <Blacksmithing Supplies>
 					["races"] = HORDE_ONLY,
 				}),
-				n(5189, {	-- Thrumn
+				n(5189, {	-- Thrumn <Tabard Vendor>
 					["coord"] = { 38.0, 63.0, THUNDER_BLUFF },
 					["sym"] = { {"sub", "common_vendor", 5188} },	-- Garyl <Tabard Vendor>
 					["races"] = HORDE_ONLY,
