@@ -316,12 +316,11 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			})),
 			h(ach(13466, {	-- Tides of Vengeance (H)
 				crit(44256),		-- The Day is Won
-				-- crit(44259) q54022 OR crit(44997) q54635
 				crit(44259, {		-- Mekkatorque's Battle Plans
 					["sourceQuest"] = 54022,
 				}),
 				crit(44997, {		-- Mekkatorque's Battle Plans
-					["sourceQuest"] =q54635,
+					["sourceQuest"] = 54635,
 				}),
 				crit(44257),		-- Through the Front Door
 				crit(44258),		-- Fly Out to Meet Them
