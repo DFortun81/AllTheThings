@@ -4026,11 +4026,12 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 						end
 						if app.Settings:GetTooltipSetting("SharedAppearances") then
 							local text;
+							local useItemIDs, origSource = app.Settings:GetTooltipSetting("itemID"), app.Settings:GetTooltipSetting("IncludeOriginalSource")
 							if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
 								-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
 								for i,otherSourceID in ipairs(allVisualSources) do
 									if otherSourceID == sourceID and not sourceGroup.missing then
-										if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
+										if origSource then
 											local link = sourceGroup.link or sourceGroup.silentLink;
 											if not link then
 												link = RETRIEVING_DATA;
@@ -4046,7 +4047,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 											else
 												text = "   ";
 											end
-											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
+											tinsert(info, { left = text .. link .. (useItemIDs and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
 										end
 									else
 										local otherATTSource = app.SearchForObject("s", otherSourceID, "field");
@@ -4069,7 +4070,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 												else
 													text = "   ";
 												end
-												tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherItemID or "???") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
+												tinsert(info, { left = text .. link .. (useItemIDs and (" (" .. (otherItemID or "???") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
 											end
 										else
 											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
@@ -4079,7 +4080,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 													link = RETRIEVING_DATA;
 													working = true;
 												end
-												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
+												text = " |CFFFF0000!|r " .. link .. (useItemIDs and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 												if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
 												tinsert(info, { left = text	.. " |CFFFF0000(" .. (IsRetrieving(link) and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
 											end
@@ -4090,7 +4091,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 								-- This is where we need to calculate the requirements differently because Unique Mode users are extremely frustrating.
 								for i,otherSourceID in ipairs(allVisualSources) do
 									if otherSourceID == sourceID and not sourceGroup.missing then
-										if app.Settings:GetTooltipSetting("IncludeOriginalSource") then
+										if origSource then
 											local link = sourceGroup.link or sourceGroup.silentLink;
 											if not link then
 												link = RETRIEVING_DATA;
@@ -4106,7 +4107,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 											else
 												text = "   ";
 											end
-											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
+											tinsert(info, { left = text .. link .. (useItemIDs and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
 										end
 									else
 										local otherATTSource = app.SearchForObject("s", otherSourceID, "field");
@@ -4129,7 +4130,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 												text = "   ";
 											end
 											local otherItemID = otherATTSource.modItemID or otherATTSource.itemID or otherATTSource.silentItemID;
-											text = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherItemID or "???") .. ")") or "");
+											text = text .. link .. (useItemIDs and (" (" .. (otherItemID or "???") .. ")") or "");
 
 											-- Show all of the reasons why an appearance does not meet given criteria.
 											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
@@ -4163,7 +4164,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 													link = RETRIEVING_DATA;
 													working = true;
 												end
-												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
+												text = " |CFFFF0000!|r " .. link .. (useItemIDs and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
 												if otherSource.isCollected then ATTAccountWideData.Sources[otherSourceID] = 1; end
 												tinsert(info, { left = text	.. " |CFFFF0000(" .. (IsRetrieving(link) and "INVALID BLIZZARD DATA " or "MISSING IN ATT ") .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});	-- This is debug info for contribs, do not localize it
 											end
