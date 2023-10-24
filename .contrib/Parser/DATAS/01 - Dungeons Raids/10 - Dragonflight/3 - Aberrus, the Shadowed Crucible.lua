@@ -728,14 +728,30 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 					}),
 				}),
-				Boss(KAZZARA),
-				Boss(AMALGAMATION),
-				Boss(EXPERIMENTS),
-				Boss(ASSAULT),
-				Boss(RASHOK),
-				Boss(ZSKARN),
-				Boss(MAGMORAX),
-				Boss(NELTHARION),
+				Boss(KAZZARA, {
+					ach(18151),	-- Mythic: Kazzara, the Hellforged
+				}),
+				Boss(AMALGAMATION, {
+					ach(18152),	-- Mythic: The Amalgamation Chamber
+				}),
+				Boss(EXPERIMENTS, {
+					ach(18153),	-- Mythic: The Forgotten Experiments
+				}),
+				Boss(ASSAULT, {
+					ach(18154),	-- Mythic: Assault of the Zaqali
+				}),
+				Boss(RASHOK, {
+					ach(18155),	-- Mythic: Rashok, the Elder
+				}),
+				Boss(ZSKARN, {
+					ach(18156),	-- Mythic: The Vigilant Steward, Zskarn
+				}),
+				Boss(MAGMORAX, {
+					ach(18157),	-- Mythic: Magmorax
+				}),
+				Boss(NELTHARION, {
+					ach(18158),	-- Mythic: Echo of Neltharion
+				}),
 				Boss(SARKARETH, {
 					ach(18159, {	-- Mythic: Scalecommander Sarkareth
 						title(505),	-- <Name>, Heir to the Void
