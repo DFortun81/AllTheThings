@@ -73,11 +73,11 @@ root(ROOTS.Achievements, pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			ach(582, {	-- Alterac Valley All-Star
-				crit(1),	-- Assault a graveyard
-				crit(2),	-- Defend a graveyard
-				crit(3),	-- Assault a tower
-				crit(4),	-- Defend a tower
-				crit(5),	-- Kill someone in the Field of Strife
+				crit(46724),	-- Assault a graveyard
+				crit(46726),	-- Defend a graveyard
+				crit(46727),	-- Assault a tower
+				crit(46728),	-- Defend a tower
+				crit(46729),	-- Kill someone in the Field of Strife
 			}),
 			ach(706, {	-- Frostwolf Howler
 				["races"] = HORDE_ONLY,

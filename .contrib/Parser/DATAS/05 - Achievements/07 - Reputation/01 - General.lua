@@ -35,42 +35,42 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
 				title(98),		-- Ambassador
-				crit(1),		-- Exalted Darnassus
-				crit(2),		-- Exalted Exodar
-				crit(3),		-- Exalted Gilneas
-				crit(4),		-- Exalted Gnomeregan Exiles
-				crit(5),		-- Exalted Ironforge
-				crit(6),		-- Exalted Stormwind
+				crit(5328),		-- Exalted Darnassus
+				crit(5332),		-- Exalted Exodar
+				crit(16826),	-- Exalted Gilneas
+				crit(5329),		-- Exalted Gnomeregan Exiles
+				crit(5330),		-- Exalted Ironforge
+				crit(5331),		-- Exalted Stormwind
 			},
 		}),
 		ach(762,   {	-- Ambassador of the Horde
 			["races"] = HORDE_ONLY,
 			["g"] = {
 				title(98),		-- Ambassador
-				crit(1),		-- Exalted Bilgewater Cartel
-				crit(2),		-- Exalted Darkspear Trolls
-				crit(3),		-- Exalted Orgrimmar
-				crit(4),		-- Exalted Silvermoon City
-				crit(5),		-- Exalted Thunder Bluff
-				crit(6),		-- Exalted Undercity
+				crit(16825),	-- Exalted Bilgewater Cartel
+				crit(5313),		-- Exalted Darkspear Trolls
+				crit(5314),		-- Exalted Orgrimmar
+				crit(5317),		-- Exalted Silvermoon City
+				crit(5315),		-- Exalted Thunder Bluff
+				crit(5316),		-- Exalted Undercity
 			},
 		}),
 		ach(942,   {	-- The Diplomat (A)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
 				title(48),		-- the Diplomat
-				crit(1),		-- Exalted with Timbermaw Hold
-				crit(2),		-- Exalted with the Kurenai
-				crit(3),		-- Exalted with the Sporeggar
+				crit(2011),		-- Exalted with Timbermaw Hold
+				crit(5337),		-- Exalted with the Kurenai
+				crit(4757),		-- Exalted with the Sporeggar
 			},
 		}),
 		ach(943,   {	-- The Diplomat (H)
 			["races"] = HORDE_ONLY,
 			["g"] = {
 				title(48),		-- the Diplomat
-				crit(1),		-- Exalted with Timbermaw Hold
-				crit(2),		-- Exalted with the Mag'har
-				crit(3),		-- Exalted with the Sporeggar
+				crit(2011),		-- Exalted with Timbermaw Hold
+				crit(5321),		-- Exalted with the Mag'har
+				crit(4757),		-- Exalted with the Sporeggar
 			},
 		}),
 		ach(5794),		-- Time Flies When You're Having Fun

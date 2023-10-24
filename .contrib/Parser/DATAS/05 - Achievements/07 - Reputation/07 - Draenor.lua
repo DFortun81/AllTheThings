@@ -59,17 +59,17 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 		ach(10350, {	-- Tanaan Diplomat (Alliance)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				crit(1),	-- Hand of the Prophet
-				crit(2),	-- Order of the Awakened
-				crit(3),	-- The Saberstalkers
+				crit(28981),	-- Hand of the Prophet
+				crit(28980),	-- Order of the Awakened
+				crit(28979),	-- The Saberstalkers
 			},
 		}),
 		ach(10349, {	-- Tanaan Diplomat (Horde)
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				crit(1),	-- Order of the Awakened
-				crit(2),	-- The Saberstalkers
-				crit(3),	-- Vol'jin's Headhunters
+				crit(28980),	-- Order of the Awakened
+				crit(28979),	-- The Saberstalkers
+				crit(28978),	-- Vol'jin's Headhunters
 			},
 		}),
 	}),

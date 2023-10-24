@@ -202,13 +202,40 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			a(ach(12891, {	-- A Nation United
 				a(ach(12593, {	-- Loremaster of Kul Tiras [A]
 					a(ach(12473, {	-- A Sound Plan
-						crit(1),		-- The Ashvane Trading Company
-						crit(2),		-- Freehold
-						crit(3),		-- Defenders of Daelin's Gate
-						crit(4),		-- Enemies Within
-						crit(5),		-- The Shadow Over Anglepoint
-						crit(6),		-- The Norwington Estate
-						crit(7),		-- Castaways and Cutouts
+						crit(39984),		-- The Ashvane Trading Company
+						crit(39987),		-- Freehold
+						crit(39988, {		-- Defenders of Daelin's Gate
+							["sourceQuest"] = 49736,
+						}),
+						crit(39989, {		-- Defenders of Daelin's Gate
+							["sourceQuest"] = 49737,
+						}),
+						crit(39990, {		-- Defenders of Daelin's Gate
+							["sourceQuest"] = 49740,
+						}),
+						crit(39991),		-- Enemies Within
+						crit(39993),		-- The Shadow Over Anglepoint
+						crit(39992, {		-- The Norwington Estate
+							["sourceQuest"] = 48088,
+						}),
+						crit(40155, {		-- The Norwington Estate
+							["sourceQuest"] = 48089,
+						}),
+						crit(39985, {		-- Castaways and Cutouts
+							["sourceQuest"] = 48505,
+						}),
+						crit(40551, {		-- Castaways and Cutouts
+							["sourceQuest"] = 49178,
+						}),
+						crit(40552, {		-- Castaways and Cutouts
+							["sourceQuest"] = 49226,
+						}),
+						crit(40553, {		-- Castaways and Cutouts
+							["sourceQuest"] = 49230,
+						}),
+						crit(40554, {		-- Castaways and Cutouts
+							["sourceQuest"] = 48421,
+						}),
 					})),
 					a(ach(12497, {	-- Drust Do It.
 						title(378),		-- Inquisitor %s
@@ -250,8 +277,12 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 						crit(38187),		-- Warport Rastari
 						crit(38189),		-- Web of Lies
 						crit(37082),		-- Among the People
-						-- crit(37953) q47440 OR crit(37954) q47439
-						crit(6),		-- The Zanchuli Council
+						crit(37953, {		-- The Zanchuli Council
+							["sourceQuest"] = 47440,
+						}),
+						crit(37954, {		-- The Zanchuli Council
+							["sourceQuest"] = 47439,
+						}),
 						crit(38514),		-- March of the Loa
 					})),
 					h(ach(11868, {	-- The Dark Heart of Nazmir
@@ -265,14 +296,19 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 						crit(36978),		-- Bleeding the Blood Trolls
 					})),
 					h(ach(12478, {	-- Secrets in the Sands
-					-- crit(40016) q48550 & crit(40017) q48549
-						crit(1),		-- Dangers in the Desert
+						crit(40280),		-- Unlikely Allies
+						crit(40016, {		-- Dangers in the Desert
+							["sourceQuest"] = 48550,
+						}),
+						crit(40017, {		-- Dangers in the Desert
+							["sourceQuest"] = 48549,
+						}),
 						crit(40020),		-- The Warguard's Fate
 						crit(40021),		-- A City of Secrets
 						crit(40022),		-- The Three Keepers
 						crit(40023),		-- Storming the Spire
 						crit(40024),		-- Atul'Aman
-						crit(40280),		-- Unlikely Allies
+
 					})),
 				})),
 				h(ach(12480)),	-- A Bargain of Blood
@@ -281,7 +317,12 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 			h(ach(13466, {	-- Tides of Vengeance (H)
 				crit(44256),		-- The Day is Won
 				-- crit(44259) q54022 OR crit(44997) q54635
-				crit(2),		-- Mekkatorque's Battle Plans
+				crit(44259, {		-- Mekkatorque's Battle Plans
+					["sourceQuest"] = 54022,
+				}),
+				crit(44997, {		-- Mekkatorque's Battle Plans
+					["sourceQuest"] =q54635,
+				}),
 				crit(44257),		-- Through the Front Door
 				crit(44258),		-- Fly Out to Meet Them
 			})),

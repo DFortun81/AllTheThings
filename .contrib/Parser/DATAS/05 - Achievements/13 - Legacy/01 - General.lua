@@ -48,34 +48,34 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 		}))),
 		un(REMOVED_FROM_GAME, a(ach(9176, {			-- Deck Your Collection (Season 2) (Alliance) **Comments on wowhead indicate this is still available in Legion you just have to get lucky and get the random bosses you need for it. Can add this back in if brawler's guild becomes available again in the future. **
 			i(98543),				-- Wraps of the Blood-Soaked Brawler
-			crit(1),				-- Grandpa Grumplefloot
-			crit(2),				-- Ty'thar
-			crit(3),				-- Master Boom Boom
-			crit(4),				-- Razorgrin
-			crit(5),				-- Splat
-			crit(6),				-- Mecha-Bruce
-			crit(7),				-- Dippy & Doopy
-			crit(8),				-- Blingtron 3000
-			crit(9),				-- The Bear and the Lady Fair
-			crit(10),				-- Ro-Shambo
-			crit(11),				-- Mingus Diggs
-			crit(12),				-- The Blind Hero
+			crit(23383),				-- Grandpa Grumplefloot
+			crit(23394),				-- Ty'thar
+			crit(23385),				-- Master Boom Boom
+			crit(23386),				-- Razorgrin
+			crit(23387),				-- Splat
+			crit(23388),				-- Mecha-Bruce
+			crit(23389),				-- Dippy & Doopy
+			crit(23390),				-- Blingtron 3000
+			crit(23384),				-- The Bear and the Lady Fair
+			crit(23393),				-- Ro-Shambo
+			crit(23391),				-- Mingus Diggs
+			crit(23392),				-- The Blind Hero
 			un(REMOVED_FROM_GAME, a(ach(8339))),	-- Collect Your Deck (Season 2)
 		}))),
 		un(REMOVED_FROM_GAME, h(ach(9177, {			-- Deck Your Collection (Season 2) (Horde) **Comments on wowhead indicate this is still available in Legion you just have to get lucky and get the random bosses you need for it. Can add this back in if brawler's guild becomes available again in the future. **
 			i(98543),				-- Wraps of the Blood-Soaked Brawler
-			crit(1),				-- Grandpa Grumplefloot
-			crit(2),				-- Ty'thar
-			crit(3),				-- Master Boom Boom
-			crit(4),				-- Razorgrin
-			crit(5),				-- Splat
-			crit(6),				-- Mecha-Bruce
-			crit(7),				-- Dippy & Doopy
-			crit(8),				-- Blingtron 3000
-			crit(9),				-- The Bear and the Lady Fair
-			crit(10),				-- Ro-Shambo
-			crit(11),				-- Mingus Diggs
-			crit(12),				-- The Blind Hero
+			crit(23383),				-- Grandpa Grumplefloot
+			crit(23394),				-- Ty'thar
+			crit(23385),				-- Master Boom Boom
+			crit(23386),				-- Razorgrin
+			crit(23387),				-- Splat
+			crit(23388),				-- Mecha-Bruce
+			crit(23389),				-- Dippy & Doopy
+			crit(23390),				-- Blingtron 3000
+			crit(23384),				-- The Bear and the Lady Fair
+			crit(23393),				-- Ro-Shambo
+			crit(23391),				-- Mingus Diggs
+			crit(23392),				-- The Blind Hero
 			un(REMOVED_FROM_GAME, h(ach(8342))),	-- Collect Your Deck (Season 2)
 		}))),
 		un(REMOVED_FROM_GAME, ach(2357, {		-- Dreadsteed of Xoroth
