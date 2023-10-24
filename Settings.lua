@@ -3657,6 +3657,7 @@ local ids = {
 	["azeriteEssenceID"] = L["AZERITE_ESSENCE_ID"],
 	["b"] = "Binding",
 	["bonusID"] = "Bonus ID",
+	["conduitID"] = "Conduit ID",
 	["creatureID"] = L["CREATURE_ID"],
 	["creatures"] = "Creatures List",
 	["currencyID"] = "Currency ID",
@@ -3678,13 +3679,14 @@ local ids = {
 	["objectID"] = L["OBJECT_ID"],
 	["questID"] = "Quest ID",
 	["QuestGivers"] = "Quest Givers",
+	["runeforgePowerID"] = "Runeforge Power ID",
 	["setID"] = L["SET_ID"],
 	["sourceID"] = L["SOURCE_ID"],
 	["speciesID"] = L["SPECIES_ID"],
 	["spellID"] = L["SPELL_ID"],
 	["tierID"] = L["EXPANSION_ID"],
-	["titleID"] = "Title ID",
-	["visualID"] = "Visual ID",
+	["titleID"] = L["TITLE_ID"],
+	["visualID"] = L["VISUAL_ID"],
 }
 local idsArray = {}
 for id,_ in pairs(ids) do
