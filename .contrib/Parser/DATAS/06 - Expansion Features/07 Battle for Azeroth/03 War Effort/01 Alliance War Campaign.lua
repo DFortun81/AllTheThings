@@ -748,6 +748,7 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 							["sourceQuests"] = { 52219 },	-- Target: Blood Prince Dreven
+							["DisablePartySync"] = true,
 						}),
 						q(52154, {	-- Our Next Target
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane

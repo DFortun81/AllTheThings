@@ -335,7 +335,7 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 						}),
 					}),
 				}),
-					n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
+				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 					["coord"] = { 36.0, 58.6, ORIBOS },
 					["g"] = {
 						filter(CLOAKS, {

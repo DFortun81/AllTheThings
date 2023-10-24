@@ -146,6 +146,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 			ach(19080, {	-- Arcane Influence - Only available for two days (10/11 September 2023)
 				["questID"] = 78101,
 				["coord"] = { 36.6, 61.8, VALDRAKKEN },
+				["u"] = REMOVED_FROM_GAME,	-- no reason to timeline, it was available so short
 			}),
 		}),
 		n(TREASURES, sharedData({

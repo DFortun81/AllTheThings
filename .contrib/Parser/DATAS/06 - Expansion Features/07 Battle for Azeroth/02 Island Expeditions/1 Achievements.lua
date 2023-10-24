@@ -180,6 +180,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				crit(41957, { ["provider"] = { "i", 163824 } }),	-- Voru'kar Leecher
 			}),
 			ach(13132, {	-- Helping Hand
+				-- TODO: this many quest sources is a bit much... 25 collectibles becomes nearly 200... maybe we can revise this somehow
 				crit(42041, {	-- Valero
 					["_quests"] = {
 						52720,
@@ -492,7 +493,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 			ach(13133, {	-- Team Deathmatch (A)
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					-- TODO: Source these NPCs and use achievement_criteria symlink?
 					crit(42069, {	-- Gazlowe
 						["crs"] = { 134997 },
 					}),
@@ -542,7 +542,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["crs"] = { 134269 },
 					}),
 					crit(42085, {	-- Spiritwalker Quura
-						["crs"] = { },
+						["crs"] = { 134270 },
 					}),
 					crit(42086, {	-- Sunwalker Ordel
 						["crs"] = { 134270 },
@@ -570,7 +570,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 			ach(13135, {	-- Team Deathmatch (H)
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					-- TODO: Source these NPCs and use achievement_criteria symlink?
 					crit(42087, {	-- Briona the Bloodthirsty
 						["crs"] = { 135248 },
 					}),

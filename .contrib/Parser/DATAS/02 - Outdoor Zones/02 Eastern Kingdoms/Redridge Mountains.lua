@@ -903,7 +903,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26569, {	-- Surveying Equipment
 					["qg"] = 43194,	-- Foreman Oslow
-					["sourceQuest"] = 26568,	-- This Ain't My War
+					["sourceQuests"] = {
+						26568,	-- This Ain't My War
+						26520,	-- Saving Foreman Oslow
+					},
 					["coord"] = { 29.6, 44.5, REDRIDGE_MOUNTAINS },
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
@@ -1819,7 +1822,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 62.0, 51.0, REDRIDGE_MOUNTAINS },
 						{ 60.0, 48.4, REDRIDGE_MOUNTAINS },
 						{ 59.6, 41.2, REDRIDGE_MOUNTAINS },
-						
+
 						{ 70.8, 60.2, REDRIDGE_MOUNTAINS },
 						{ 64.4, 68.2, REDRIDGE_MOUNTAINS },
 						{ 69.0, 75.6, REDRIDGE_MOUNTAINS },

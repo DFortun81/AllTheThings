@@ -1797,7 +1797,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(27175, {	-- The Menders' Stead [A]
 					["qg"] = 10840,	-- Argent Officer Pureheart
-					["sourceQuest"] = 27174,	-- Combat Training
+					["sourceQuest"] = 27171,	-- Ambushed!
 					["coord"] = { 42.9, 83.5, WESTERN_PLAGUELANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
