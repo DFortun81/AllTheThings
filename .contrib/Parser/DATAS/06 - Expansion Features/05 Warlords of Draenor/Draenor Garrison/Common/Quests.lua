@@ -3293,6 +3293,14 @@ root(ROOTS.HiddenQuestTriggers, tier(WOD_TIER, {
 		q(37311),	-- Drafting Table Interact
 		q(46952),	-- Flag Garrison Dog Quest
 		q(36640),	-- Followers Obtained
+		q(36530),	-- Garrison Max-level Choice Tracker: Frostfire Iron Siegeworks
+		q(36550),	-- Garrison Max-level Choice Tracker: Frostfire Iron Siegeworks
+		q(36529),	-- Garrison Max-level Choice Tracker: Frostfire Magnarok
+		q(36551),	-- Garrison Max-level Choice Tracker: Frostfire Magnarok
+		q(36538),	-- Garrison Max-level Choice Tracker: Spires Upper Skettis
+		q(36559),	-- Garrison Max-level Choice Tracker: Spires Upper Skettis
+		q(36560),	-- Garrison Max-level Choice Tracker: Talador Shattrath City, East
+		q(36561),	-- Garrison Max-level Choice Tracker: Talador Shattrath City, East
 		q(37198),	-- Garrison Visitor: Sappy - triggered during Goren invasion in Garrison
 		q(37199),	-- Garrison Visitor: Sappy - triggered during Goren invasion in Garrison
 		q(36799),	-- Garrison Nodes - Tracking Quest - triggers after unlocking the mine, picking herbs

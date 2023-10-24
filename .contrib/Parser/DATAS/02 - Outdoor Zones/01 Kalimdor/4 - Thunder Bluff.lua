@@ -916,7 +916,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16060),	-- Common White Shirt
 					},
 				}),
-				n(3018, {	-- Hogor Thunderhoof
+				n(3018, {	-- Hogor Thunderhoof <Guns Merchant>
 					["coord"] = { 55.6, 56.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -929,7 +929,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2510),	-- Solid Blunderbuss
 					},
 				}),
-				n(2997, {	-- Jyn Stonehoof
+				n(2997, {	-- Jyn Stonehoof <Weapons Merchant>
 					["coord"] = { 41.6, 62.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -946,6 +946,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2488,	-- Gladius
 						2030,	-- Gnarled Staff
 						1197,	-- Giant Mace
+						2028,	-- Hammer
 						2134,	-- Hand Axe
 						853,	-- Hatchet
 						2511,	-- Hunter's Boomstick
@@ -961,9 +962,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2132,	-- Short Staff
 						2131,	-- Shortsword
 						2494,	-- Stiletto
+						1196,	-- Tabar
+						2490,	-- Tomahawk
+						2489,	-- Two-Handed Sword
+						2495,	-- Walking Stick
+						2493,	-- Wooden Mallet
 					}},
 				}),
-				n(3021, {	-- Kard Ragetotem
+				n(3021, {	-- Kard Ragetotem <Sword & Dagger Merchant>
 					["coord"] = { 53.6, 56.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -978,8 +984,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						923,	-- Longsword
 						2526,	-- Main Gauche
 						2208,	-- Poniad
+						20977,	-- Recruit's Shortsword
 						2534,	-- Rondel
 						2027,	-- Scimitar
+						20982,	-- Sharp Dagger
 					}},
 				}),
 				n(3015, {	-- Kuna Thunderhorn <Bowyer & Fletching Goods>
@@ -1081,15 +1089,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
-				n(8398, {	-- Ohanko <Blade Vendor>
+				n(8398, {	-- Ohanko <Two Handed Weapon Merchant>
 					["coord"] = { 53.6, 56.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
+						23346,	-- Battleworn Claymore
+						52557,	-- Battleworn Hammer
 						2523,	-- Bullova
 						2531,	-- Great Axe
 						2521,	-- Flamberge
+						73210,	-- Trainee's Sword
 						2525,	-- War Hammer
 						2533,	-- War Maul
+						57244,	-- Warder's Spear
+						12282,	-- Worn Battleaxe
+						49778,	-- Worn Greatsword
+						57243,	-- Worn Spear
+						52532,	-- Worn Wood Chopper
 						2529,	-- Zweihander
 					}},
 				}),

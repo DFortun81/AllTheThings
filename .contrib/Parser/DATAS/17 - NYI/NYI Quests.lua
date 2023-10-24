@@ -1085,14 +1085,6 @@ root(ROOTS.NeverImplemented, {
 				q(36544, { ["name"] = "Garrison Max-level Choice Reward Summary: Solo", }),	-- Garrison Max-level Choice Reward Summary: Solo
 				q(36665, { ["name"] = "Garrison Max-level Choice Tracker: ALL CHOICES DEBUG", }),	-- Garrison Max-level Choice Tracker: ALL CHOICES DEBUG
 				q(36666, { ["name"] = "Garrison Max-level Choice Tracker: ALL CHOICES DEBUG", }),	-- Garrison Max-level Choice Tracker: ALL CHOICES DEBUG
-				q(36530, { ["name"] = "Garrison Max-level Choice Tracker: Frostfire Iron Siegeworks", }),	-- Garrison Max-level Choice Tracker: Frostfire Iron Siegeworks
-				q(36550, { ["name"] = "Garrison Max-level Choice Tracker: Frostfire Iron Siegeworks", }),	-- Garrison Max-level Choice Tracker: Frostfire Iron Siegeworks
-				q(36529, { ["name"] = "Garrison Max-level Choice Tracker: Frostfire Magnarok", }),	-- Garrison Max-level Choice Tracker: Frostfire Magnarok
-				q(36551, { ["name"] = "Garrison Max-level Choice Tracker: Frostfire Magnarok", }),	-- Garrison Max-level Choice Tracker: Frostfire Magnarok
-				q(36538, { ["name"] = "Garrison Max-level Choice Tracker: Spires Upper Skettis", }),	-- Garrison Max-level Choice Tracker: Spires Upper Skettis
-				q(36559, { ["name"] = "Garrison Max-level Choice Tracker: Spires Upper Skettis", }),	-- Garrison Max-level Choice Tracker: Spires Upper Skettis
-				q(36560, { ["name"] = "Garrison Max-level Choice Tracker: Talador Shattrath City, East", }),	-- Garrison Max-level Choice Tracker: Talador Shattrath City, East
-				q(36561, { ["name"] = "Garrison Max-level Choice Tracker: Talador Shattrath City, East", }),	-- Garrison Max-level Choice Tracker: Talador Shattrath City, East
 				q(36535, { ["name"] = "Garrison Max-level Choice Tracker: (GROUP) Nagrand Ring of Blood", }),	-- Garrison Max-level Choice Tracker: (GROUP) Nagrand Ring of Blood
 				q(36546, { ["name"] = "Garrison Max-level Choice Tracker: (GROUP) Nagrand Ring of Blood", }),	-- Garrison Max-level Choice Tracker: (GROUP) Nagrand Ring of Blood
 				q(36536, { ["name"] = "Garrison Max-level Choice Tracker: (PVP) Ashran", }),	-- Garrison Max-level Choice Tracker: (PVP) Ashran
