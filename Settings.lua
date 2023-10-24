@@ -266,6 +266,9 @@ settings.Initialize = function(self)
 		app:Synchronize(true)
 	end
 
+	settings.__RefreshActiveAdditionalIDs()
+	settings.__RefreshActiveAdditionalIDs = nil
+
 	app._SettingsRefresh = GetTimePreciseSec()
 	settings._Initialize = true
 	-- app.PrintDebug("settings.Initialize:Done")
@@ -3648,36 +3651,38 @@ headerAdditionalInformation:SetPoint("TOP", checkboxUseClassColorForBorder, "BOT
 
 -- TODO: localize
 local ids = {
-	["achievementID"] = "Achievement ID",
-	["achievementCategoryID"] = "Achievement Category ID",
-	["artifactID"] = "Artifact ID",
-	["azeriteEssenceID"] = "Azerite Essence ID",
+	["achievementID"] = L["ACHIEVEMENT_ID"],
+	["achievementCategoryID"] = L["ACHIEVEMENT_CATEGORY_ID"],
+	["artifactID"] = L["ARTIFACT_ID"],
+	["azeriteEssenceID"] = L["AZERITE_ESSENCE_ID"],
+	["b"] = "Binding",
 	["bonusID"] = "Bonus ID",
-	["creatureID"] = "Creature ID",
+	["creatureID"] = L["CREATURE_ID"],
 	["creatures"] = "Creatures List",
 	["currencyID"] = "Currency ID",
-	["difficultyID"] = "Difficulty ID",
+	["difficultyID"] = L["DIFFICULTY_ID"],
 	["displayID"] = "Display ID",
-	["encounterID"] = "Encounter ID",
-	["factionID"] = "Faction ID",
-	["filterID"] = "Filter ID",
-	["flightPathID"] = "Flight Path ID",
-	["followerID"] = "Follower ID",
-	["headerID"] = "Header ID",
+	["encounterID"] = L["ENCOUNTER_ID"],
+	["factionID"] = L["FACTION_ID"],
+	["filterID"] = L["FILTER_ID"],
+	["flightPathID"] = L["FLIGHT_PATH_ID"],
+	["followerID"] = L["FOLLOWER_ID"],
+	["headerID"] = L["HEADER_ID"],
 	["iconPath"] = "Icon Path",
-	["illusionID"] = "Illusion ID",
-	["instanceID"] = "Instance ID",
-	["itemID"] = "Item ID",
+	["illusionID"] = L["ILLUSION_ID"],
+	["instanceID"] = L["INSTANCE_ID"],
+	["itemID"] = L["ITEM_ID"],
 	["itemString"] = "Item String",
-	["mapID"] = "Map ID",
+	["mapID"] = L["MAP_ID"],
 	["modID"] = "Mod ID",
-	["objectID"] = "Object ID",
+	["objectID"] = L["OBJECT_ID"],
 	["questID"] = "Quest ID",
 	["QuestGivers"] = "Quest Givers",
-	["sourceID"] = "Source ID",
-	["speciesID"] = "Species ID",
-	["spellID"] = "Spell ID",
-	["tierID"] = "Tier ID",
+	["setID"] = L["SET_ID"],
+	["sourceID"] = L["SOURCE_ID"],
+	["speciesID"] = L["SPECIES_ID"],
+	["spellID"] = L["SPELL_ID"],
+	["tierID"] = L["EXPANSION_ID"],
 	["titleID"] = "Title ID",
 	["visualID"] = "Visual ID",
 }
@@ -3686,9 +3691,28 @@ for id,_ in pairs(ids) do
 	idsArray[#idsArray + 1] = id
 end
 table.sort(idsArray, function(a,b) return string.lower(a) < string.lower(b) end)
--- TODO track enabled additional ids only, update in settings refresh
--- read-only public table which metatables the local table
-settings.KnownAdditonalIDs = ids
+local activeIds = {}
+-- Table of AdditionalID/Localize Name Mappings
+settings.AdditionalIDs = ids
+-- Array of currently-active AdditionalIDs. Refreshed when AdditionalIDs change
+settings.ActiveAdditionalIDs = activeIds
+local function RefreshActiveAdditionalIDs()
+	wipe(activeIds)
+	for _,id in ipairs(idsArray) do
+		if settings:GetTooltipSetting(id) then
+			activeIds[#activeIds + 1] = id
+		end
+	end
+end
+settings.__RefreshActiveAdditionalIDs = RefreshActiveAdditionalIDs
+settings.AdditionalIDValueConversions = {
+	filterID = function(val)
+		return L["FILTER_ID_TYPES"][val]
+	end,
+	b = function(val)
+		return (val == 1 and "BoP") or (val == 2 and "BoA") or nil
+	end
+}
 local last = nil
 local split1 = math.ceil(#idsArray / 3)
 local split2 = 2 * split1
@@ -3699,6 +3723,7 @@ for idNo,id in ipairs(idsArray) do
 	end,
 	function(self)
 		settings:SetTooltipSetting(id, self:GetChecked())
+		RefreshActiveAdditionalIDs()
 		settings:Refresh()
 	end)
 	-- Column 1

@@ -218,7 +218,6 @@ local function AttachTooltip(self, ttdata)
 
 		local encounterID = owner.encounterID;
 		if encounterID and not owner.itemID then
-			if app.Settings:GetTooltipSetting("encounterID") then self:AddDoubleLine(L["ENCOUNTER_ID"], tostring(encounterID)); end
 			AttachTooltipSearchResults(self, 1, "encounterID:" .. encounterID, SearchForField, "encounterID", tonumber(encounterID));
 			return true;
 		end
@@ -361,7 +360,6 @@ local function AttachTooltip(self, ttdata)
 				end
 			end
 		elseif type == "Creature" or type == "Vehicle" then
-			if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npc_id)); end
 			AttachTooltipSearchResults(self, 1, "creatureID:" .. npc_id, SearchForField, "creatureID", tonumber(npc_id));
 		end
 		return true;
