@@ -46,7 +46,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(95341, {	-- Armored Bloodwing
 				["description"] = "Amazon Prime Gaming reward from October 24th 2023 till November 28th 2023.",
-				["timeline"] = { "added 10.1.7.51754", "removed 10.1.7.99999" },
+				["timeline"] = { "added 10.1.7.51754", "removed 10.2.0.99999" },
 			}),
 		},
 	}),
