@@ -33,22 +33,22 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 				ach(5868, {	-- And the Meek Shall Inherit Kalimdor
 					["maps"] = { MOUNT_HYJAL },
 					["groups"] = {
-						crit(1),	-- Angry Little Squirrel
-						crit(2),	-- Hyjal Bear Cub
-						crit(3),	-- Alpine Songbird
-						crit(4),	-- Child of Tortolla
+						crit(17824),	-- Angry Little Squirrel
+						crit(17825),	-- Hyjal Bear Cub
+						crit(17826),	-- Alpine Songbird
+						crit(17827),	-- Child of Tortolla
 					},
 				}),
 				achWithRep(5827, 1204, {	-- Avengers of Hyjal
 					title(188),	-- <Name>, Avenger of Hyjal
 				}),
 				ach(5874, {	-- Death From Above  (Mount Hyjal - The Molten Front)
-					crit(2),	-- Blazefury
-					crit(3),	-- Flashfire
-					crit(4),	-- Hatespark
-					crit(5),	-- Heatflayer
-					crit(1),	-- Ragepyre
-					crit(6),	-- Singeslayer
+					crit(17857),	-- Ragepyre
+					crit(17858),	-- Blazefury
+					crit(17859),	-- Flashfire
+					crit(17860),	-- Hatespark
+					crit(17861),	-- Heatflayer
+					crit(17862),	-- Singeslayer
 				}),
 				ach(5870, {	-- Fireside Chat (Mount Hyjal)
 					crit(17878, {	-- Malfurion Stormrage
@@ -91,22 +91,22 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 				ach(5865, {	-- Have... Have We Met?
 					["maps"] = { MOUNT_HYJAL },
 					["groups"] = {
-						crit(4),	-- Chromie
-						crit(2),	-- Hemet Nesingwary
-						crit(1),	-- Linken
-						crit(5),	-- Mankrik
-						crit(3),	-- Nat Pagle
-						crit(6),	-- Thassarian
+						crit(17806),	-- Linken
+						crit(17807),	-- Hemet Nesingwary
+						crit(17808),	-- Nat Pagle
+						crit(17809),	-- Chromie
+						crit(17810),	-- Mankrik
+						crit(17811),	-- Thassarian
 					},
 				}),
 				ach(5869, {	-- Infernal Ambassadors
 					["maps"] = { MOUNT_HYJAL },
 					["groups"] = {
-						crit(4),	-- Slay Galenges before he is weakened a second time
-						crit(3),	-- Slay Lylagar without taking damage from Lylagar Breath.
-						crit(2),	-- Slay Millagazor without taking damage from Gout of Flame.
-						crit(5),	-- Slay Nemesis at Ashen Lake without taking damage from Molten Fury.
-						crit(1),	-- Slay Pyrachnis without using the Emerald of Aessina.
+						crit(17829),	-- Slay Pyrachnis without using the Emerald of Aessina.
+						crit(17831),	-- Slay Millagazor without taking damage from Gout of Flame.
+						crit(17832),	-- Slay Lylagar without taking damage from Lylagar Breath.
+						crit(17833),	-- Slay Galenges before he is weakened a second time
+						crit(17834),	-- Slay Nemesis at Ashen Lake without taking damage from Molten Fury.
 					},
 				}),
 				ach(5872),	-- King of the Spider-Hill  (Mount Hyjal - The Molten Front)
@@ -126,16 +126,16 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["maps"] = { MOUNT_HYJAL },
 				}),
 				ach(5871, {	-- Master of the Molten Flow (Mount Hyjal - The Molten Front)
-					crit(2),	-- Kill a Flamewaker Sentinel while it is carrying someone
-					crit(1),	-- Kill a Flamewaker Shaman with his own Flamewave
-					crit(3),	-- Survive a Flamewaker Hunter's Wild Barrage without getting hit
+					crit(17835),	-- Kill a Flamewaker Shaman with his own Flamewave
+					crit(17836),	-- Kill a Flamewaker Sentinel while it is carrying someone
+					crit(17837),	-- Survive a Flamewaker Hunter's Wild Barrage without getting hit
 				}),
 				ach(5873, {	-- Ready for Raiding II
-					crit(1),	-- Ancient Charscale slain
-					crit(5),	-- Ancient Firelord slain
-					crit(3),	-- Ancient Smoldering Behemoth slain
-					crit(2),	-- Cinderweb Queen slain
-					crit(4),	-- Devout Harbinger slain
+					crit(17840),	-- Ancient Charscale slain
+					crit(17841),	-- Cinderweb Queen slain
+					crit(17842),	-- Ancient Smoldering Behemoth slain
+					crit(17843),	-- Devout Harbinger slain
+					crit(17844),	-- Ancient Firelord slain
 				}),
 				ach(5861, {	-- The Fiery Lords of Sethria's Roost
 					["maps"] = { MOUNT_HYJAL },

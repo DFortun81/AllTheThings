@@ -20,15 +20,15 @@ root(ROOTS.ExpansionFeatures,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(11544, {	-- Defender of the Broken Isles
-						crit(1),	-- Battle for Azsuna
-						crit(2),	-- Battle for Highmountain
-						crit(3),	-- Battle for Stormheim
-						crit(4),	-- Battle for Val'sharah
+						crit(36546),	-- Battle for Azsuna
+						crit(36547),	-- Battle for Highmountain
+						crit(36548),	-- Battle for Stormheim
+						crit(36549),	-- Battle for Val'sharah
 					}),
 					ach(11240, {	-- Harbinger
-						crit(1),		-- Waterlogged Tome (Deadwind Pass - near Karazhan - Master's Cellar)
-						crit(2),		-- Fel-Ravaged Tome (Vault of the Wardens)
-						crit(3),		-- Cursed Tome (Shadowmoon Valley - D)
+						crit(33145),		-- Waterlogged Tome (Deadwind Pass - near Karazhan - Master's Cellar)
+						crit(33146),		-- Fel-Ravaged Tome (Vault of the Wardens)
+						crit(33147),		-- Cursed Tome (Shadowmoon Valley - D)
 					}),
 				}),
 				n(REWARDS, {

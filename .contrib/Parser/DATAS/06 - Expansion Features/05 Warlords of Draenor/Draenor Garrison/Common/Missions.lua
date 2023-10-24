@@ -476,11 +476,11 @@ root(ROOTS.ExpansionFeatures,
 						})),
 						ach(10164, {	-- Master of the Seas
 							title(317),	-- Captain
-							crit(1),	-- Naval Combat Expert
-							crit(2),	-- Naval Treasure Expert
-							crit(3),	-- Naval Training Expert
-							crit(4),	-- Naval Bonus Expert
-							crit(5),	-- Naval Siege Expert
+							crit(28515),	-- Naval Combat Expert
+							crit(28517),	-- Naval Treasure Expert
+							crit(28516),	-- Naval Training Expert
+							crit(28518),	-- Naval Bonus Expert
+							crit(28519),	-- Naval Siege Expert
 						}),
 						ach(10036, {	-- Naval Bonus Expert
 							ach(10017),	-- Naval Bonus Specialist
@@ -505,10 +505,10 @@ root(ROOTS.ExpansionFeatures,
 							-- ["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
 							["g"] = {
 								i(127989),	-- Waterlogged Manifest
-								a(crit(3, {	-- Black Market Journal
+								a(crit(28543, {	-- Black Market Journal
 									["achievementID"] = 10167,	-- Exploring the High Seas [A]
 								})),
-								h(crit(3, {	-- Black Market Journal
+								h(crit(28543, {	-- Black Market Journal
 									["achievementID"] = 10307,	-- Exploring the High Seas [H]
 								})),
 							},
@@ -517,10 +517,10 @@ root(ROOTS.ExpansionFeatures,
 							["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
 							["g"] = {
 								i(128172),	-- Captain Sander's Returned Band
-								a(crit(2, {	-- For Hate's Sake
+								a(crit(29703, {	-- For Hate's Sake
 									["achievementID"] = 10167,	-- Exploring the High Seas [A]
 								})),
-								h(crit(2, {	-- For Hate's Sake
+								h(crit(29703, {	-- For Hate's Sake
 									["achievementID"] = 10307,	-- Exploring the High Seas [H]
 								})),
 							},
@@ -530,10 +530,10 @@ root(ROOTS.ExpansionFeatures,
 							-- ["description"] = "This rare mission has a chance to spawn after you build a level 2 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
 							["g"] = {
 								i(116769),	-- Mudback Riverbeast (MOUNT!)
-								a(crit(6, {	-- It's a Boat, It's a Plane, It's... Just a Riverbeast.
+								a(crit(29704, {	-- It's a Boat, It's a Plane, It's... Just a Riverbeast.
 									["achievementID"] = 10167,	-- Exploring the High Seas [A]
 								})),
-								h(crit(6, {	-- It's a Boat, It's a Plane, It's... Just a Riverbeast.
+								h(crit(29704, {	-- It's a Boat, It's a Plane, It's... Just a Riverbeast.
 									["achievementID"] = 10307,	-- Exploring the High Seas [H]
 								})),
 							},
@@ -543,10 +543,10 @@ root(ROOTS.ExpansionFeatures,
 							-- ["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
 							["g"] = {
 								i(127856),	-- Left Shark (PET!)
-								a(crit(4, {	-- Orphaned Aquatic Animal Rescue
+								a(crit(28544, {	-- Orphaned Aquatic Animal Rescue
 									["achievementID"] = 10167,	-- Exploring the High Seas [A]
 								})),
-								h(crit(4, {	-- Orphaned Aquatic Animal Rescue
+								h(crit(28544, {	-- Orphaned Aquatic Animal Rescue
 									["achievementID"] = 10307,	-- Exploring the High Seas [H]
 								})),
 							},
@@ -555,10 +555,10 @@ root(ROOTS.ExpansionFeatures,
 							["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
 							["g"] = {
 								i(128173),	-- Admiral Taylor's Loyalty Ring
-								a(crit(1, {	-- The House Always Wins
+								a(crit(29701, {	-- The House Always Wins
 									["achievementID"] = 10167,	-- Exploring the High Seas [A]
 								})),
-								h(crit(1, {	-- The House Always Wins
+								h(crit(29701, {	-- The House Always Wins
 									["achievementID"] = 10307,	-- Exploring the High Seas [H]
 								})),
 							},
@@ -567,10 +567,10 @@ root(ROOTS.ExpansionFeatures,
 							["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle.",
 							["g"] = {
 								i(128169),	-- Signet of the Third Fleet
-								a(crit(5, {	-- The Wave Mistress
+								a(crit(29702, {	-- The Wave Mistress
 									["achievementID"] = 10167,	-- Exploring the High Seas [A]
 								})),
-								h(crit(5, {	-- The Wave Mistress
+								h(crit(29702, {	-- The Wave Mistress
 									["achievementID"] = 10307,	-- Exploring the High Seas [H]
 								})),
 							},

@@ -5,12 +5,16 @@
 root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 	achcat(ACHIEVEMENT_CATEGORY_BATTLE_FOR_AZEROTH_REP, {
 		ach(12947, {	-- Azerothian Diplomat
-			crit(1),		-- Proudmoore (A) / Zandalari Empire (H)
-			crit(2),		-- Order of Embers (A) / Talanji's Expedition (H)
-			crit(3),		-- Storm's Wake (A) / Voldunai (H)
-			crit(4),		-- 7th Legion (A) / The Honorbound (H)
-			crit(5),		-- Champions of Azeroth
-			crit(6),		-- Tortollan Seekers
+			crit(42226, {["races"] = HORDE_ONLY }),		-- Zandalari Empire (H)
+			crit(42229, {["races"] = ALLIANCE_ONLY }),		-- Proudmoore (A) / Zandalari Empire (H)
+			crit(42228, {["races"] = HORDE_ONLY }),		-- Talanji's Expedition (H)
+			crit(42231, {["races"] = ALLIANCE_ONLY }),		-- Order of Embers (A)
+			crit(42227, {["races"] = HORDE_ONLY }),		-- Voldunai (H)
+			crit(42230, {["races"] = ALLIANCE_ONLY }),		-- Storm's Wake (A)
+			crit(41655, {["races"] = HORDE_ONLY }),		-- The Honorbound (H)
+			crit(41654, {["races"] = ALLIANCE_ONLY }),		-- 7th Legion (A)
+			crit(43121),		-- Champions of Azeroth
+			crit(43122),		-- Tortollan Seekers
 		}),
 		ach(12954, {	-- Champion of the 7th Legion
 			["races"] = ALLIANCE_ONLY,

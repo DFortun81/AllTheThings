@@ -12,11 +12,11 @@ root(ROOTS.Achievements, pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 				}),
 				ach(7039),	-- The Long Riders
 				ach(7049, {	-- Mine Cart Courier
-					crit(1),	-- East to South Track
-					crit(2),	-- East to North Track
-					crit(3),	-- North to West Track
-					crit(4),	-- North to East Track
-					crit(5),	-- South Track
+					crit(21009),	-- East to South Track
+					crit(21010),	-- East to North Track
+					crit(21011),	-- North to West Track
+					crit(21012),	-- North to East Track
+					crit(21013),	-- South Track
 				}),
 				ach(7057),	-- End of the Line
 				ach(7062),	-- Mine Mine Mine!

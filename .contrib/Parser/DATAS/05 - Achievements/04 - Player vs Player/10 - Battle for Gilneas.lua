@@ -20,13 +20,13 @@ root(ROOTS.Achievements, pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 				ach(5254),	-- Newbs to Plowshares
 				ach(5255),	-- Jugger Not
 				ach(5256, {	-- Battle for Gilneas All-Star
-					crit(1),	-- Assault a base
-					crit(2),	-- Defend a base
+					crit(14946),	-- Assault a base
+					crit(14947),	-- Defend a base
 				}),
 				ach(5257, {	-- Battle for Gilneas Assassin
-					crit(1),	-- Kill 10 enemies at the Lighthouse
-					crit(2),	-- Kill 10 enemies at the Mines
-					crit(3),	-- Kill 10 enemies at the Waterworks
+					crit(14948),	-- Kill 10 enemies at the Lighthouse
+					crit(14949),	-- Kill 10 enemies at the Mines
+					crit(14950),	-- Kill 10 enemies at the Waterworks
 				}),
 				ach(5262),	-- Double Rainbow
 			}),

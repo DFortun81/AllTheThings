@@ -23,9 +23,14 @@ root(ROOTS.ExpansionFeatures,
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["g"] = {
 								i(109255),		-- Lumber Mill, Level 3 [Blueprints]
-								crit(1),		-- Place 75 Work Order at the Lumber Mill
-								crit(2),		-- Legacy of the Ancients
-								--crit(3),		-- Reduction in Force
+								crit(25174),		-- Place 75 Work Order at the Lumber Mill
+								crit(25733),		-- Legacy of the Ancients
+								crit(25731, {		-- Reduction in Force
+									["sourceQuests"] = {
+										36448,
+										36449,
+									}
+								}),
 							},
 						}),
 					}),

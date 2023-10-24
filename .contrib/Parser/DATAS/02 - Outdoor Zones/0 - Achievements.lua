@@ -27,49 +27,50 @@ root(ROOTS.Zones, {
 		})),
 		ach(9924, {	-- Field Photographer
 			title(307),	-- Field Photographer
-			crit(1),	-- Onyxia's Lair
-			crit(2),	-- The Frozen Throne
-			crit(3),	-- The Dark Portal
-			crit(4),	-- Dalaran
-			crit(5),	-- Janeiro's Point
-			crit(6),	-- Vale of Eternal Blossoms
-			crit(7),	-- Temple of Karabor
-			crit(8),	-- Deeprun Tram
-			crit(9),	-- Hearthglen
-			crit(10),	-- Thandol Span
-			crit(11),	-- Karazhan
-			crit(12),	-- Battle, Ring, Gurubashi Arena
-			crit(13),	-- The Deadmines
-			crit(14),	-- Naxxramas
-			crit(15),	-- Wyrmrest Temple
-			crit(16),	-- Shattrath City (Outland)
-			crit(17),	-- Nordrassil
-			crit(18),	-- Light's Hope Chapel
-			crit(19),	-- Deathwing's Fall
-			crit(20),	-- Darkshire
-			crit(21),	-- The Shaper's Terrace
-			crit(22),	-- Wintergrasp Fortress
-			crit(23),	-- Vashj'ir
-			crit(24),	-- Valley of Kings
-			crit(25),	-- Westfall Lighthouse
-			crit(26),	-- Throne of the Elements
-			crit(27),	-- The Twin Colossals
-			crit(28),	-- Mount Neverest
-			crit(29),	-- Moonglade
-			crit(30),	-- The Stormspire
-			crit(31),	-- Caverns of Time
-			crit(32),	-- Blackrock Mountain
-			crit(33),	-- The Scarab Dais
-			crit(34),	-- Ravenholdt Manor
-			crit(35),	-- Echo Isles
-			crit(36),	-- Uther's Tomb
-			crit(37),	-- Daggercap Bay
-			crit(38),	-- Throne of Kil'jaeden
-			crit(39),	-- Sunsong Ranch
-			crit(40),	-- Turtle Beach
-			crit(41),	-- Auchindoun (Draenor)
-			crit(42),	-- Halls of Origination
-			crit(43),	-- Orgrimmar for Horde | Stormwind for Alliance
+			crit(27865),	-- Onyxia's Lair
+			crit(27863),	-- The Frozen Throne
+			crit(27866),	-- The Dark Portal
+			crit(27867),	-- Dalaran
+			crit(27868),	-- Janeiro's Point
+			crit(27870),	-- Vale of Eternal Blossoms
+			crit(27871),	-- Temple of Karabor
+			crit(27873),	-- Deeprun Tram
+			crit(27875),	-- Hearthglen
+			crit(27874),	-- Thandol Span
+			crit(27876),	-- Karazhan
+			crit(27877),	-- Battle, Ring, Gurubashi Arena
+			crit(27878),	-- The Deadmines
+			crit(27879),	-- Naxxramas
+			crit(27880),	-- Wyrmrest Temple
+			crit(27952),	-- Shattrath City (Outland)
+			crit(27953),	-- Nordrassil
+			crit(27954),	-- Light's Hope Chapel
+			crit(27955),	-- Deathwing's Fall
+			crit(27956),	-- Darkshire
+			crit(27957),	-- The Shaper's Terrace
+			crit(27958),	-- Wintergrasp Fortress
+			crit(27959),	-- Vashj'ir
+			crit(27960),	-- Valley of Kings
+			crit(27961),	-- Westfall Lighthouse
+			crit(27962),	-- Throne of the Elements
+			crit(27963),	-- The Twin Colossals
+			crit(27964),	-- Mount Neverest
+			crit(27965),	-- Moonglade
+			crit(27966),	-- The Stormspire
+			crit(27967),	-- Caverns of Time
+			crit(27968),	-- Blackrock Mountain
+			crit(27969),	-- The Scarab Dais
+			crit(27970),	-- Ravenholdt Manor
+			crit(27971),	-- Echo Isles
+			crit(27972),	-- Uther's Tomb
+			crit(27973),	-- Daggercap Bay
+			crit(27974),	-- Throne of Kil'jaeden
+			crit(27975),	-- Sunsong Ranch
+			crit(27976),	-- Turtle Beach
+			crit(27977),	-- Auchindoun (Draenor)
+			crit(27978),	-- Halls of Origination
+			crit(27869, { ["races"] = HORDE_ONLY }),	-- Orgrimmar
+			crit(27864, { ["races"] = ALLIANCE_ONLY }),	-- Stormwind City
 		}),
 		ach(1833),	-- It's Happy Hour Somewhere
 		ach(4875, {	-- Loremaster of Cataclysm
@@ -84,24 +85,24 @@ root(ROOTS.Zones, {
 			}},
 		}),
 		ach(2556, {	-- Pest Control
-			crit(1),	-- Larva (Naxxramas, Ghostlands)
-			crit(2),	-- Water Snake (Orgrimmar, Northern Stranglethorn, Durotar, Twilight Highlands)
-			crit(3),	-- Spider (Eastern Plaguelands, Gilneas, Winterspring, The Hinterlands, Zul'Aman, Drak'Tharon Keep, Ahn'kahet: The Old Kingdom, Icecrown Citadel, Teldrassil, Utgarde Pinnacle, Dustwallow Marsh, Sethekk Halls, The Culling of Stratholme, Pit of Saron, Elwynn Forest and Sunken Temple)
-			crit(4),	-- Squirrel (Tol Barad, Dalaran, Darkshore, Darnassus)
-			crit(5),	-- Underbelly Rat (Dalaran - NR?)
-			crit(6),	-- Devouring Maggot (Howling Fjord)
-			crit(7),	-- Mouse (Dustwallow Marsh, Wetlands)
-			crit(8),	-- Zul'Drak Rat (Zul'Dra)
-			crit(9),	-- Roach (Ashenvale, Gilneas City, The Cape of Stranglethorn, Desolace, Dire Maul, Ahn'kahet: The Old Kingdom, Icecrown Citadel, Thousand Needles, Kezan, Northern Stranglethorn, Stonetalon Mountains, Undercity, Azjol-Nerub, Duskwood, Howling Fjord, Mana-Tombs, Maraudon and Redridge Mountains)
-			crit(10),	-- Snake (Wailing Caverns, Tol Barad, Sunken Temple, Maraudon, Feralas, Northern Stranglethorn, Howling Fjord, Dustwallow Marsh, Gilneas, Gundrak, Zangarmarsh, Nagrand, Sethekk Halls and The Steamvault)
-			crit(11),	-- Crystal Spider (Winterspring, The Nexus)
-			crit(12),	-- Adder (Durotar, Southern Barrens, Northern Stranglethorn, Sethekk Halls, Hellfire Peninsula, The Slave Pens, The Underbog, Blasted Lands, Mana-Tombs, Northern Barrens)
-			crit(13),	-- Maggot (The Hinterlands, Undercity, Ashenvale, Naxxramas, Hillsbrad Foothills, Howling Fjord, Ghostlands)
-			crit(14),	-- Scorpion (Eastern Plaguelands, Twilight Highlands, Thousand Needles)
-			crit(15),	-- Fjord Rat (Howling Fjord)
-			crit(16),	-- Fire Beetle (Mount Hyjal, Searing Gorge, Blackrock Mountain, Blasted Lands, Un'Goro Crater)
-			crit(17),	-- Gold Beetle (Halls of Stone, Badlands, Tanaris, Halls of Lightning)
-			crit(18),	-- Rat (Ashenvale, Dire Maul, The Lost Isles, Gilneas, Loch Modan, The Deadmines, Stormwind City, Arathi Highlands, Darkshore, Nagrand, Terokkar Forest, Scholomance, Tirisfal Glades, Howling Fjord, The Cape of Stranglethorn, The Culling of Stratholme, Azshara, Desolace, Gilneas City, Maraudon, Sunken Temple and The Hinterlands)
+			crit(9364),	-- Larva (Naxxramas, Ghostlands)
+			crit(9366),	-- Water Snake (Orgrimmar, Northern Stranglethorn, Durotar, Twilight Highlands)
+			crit(9372),	-- Spider (Eastern Plaguelands, Gilneas, Winterspring, The Hinterlands, Zul'Aman, Drak'Tharon Keep, Ahn'kahet: The Old Kingdom, Icecrown Citadel, Teldrassil, Utgarde Pinnacle, Dustwallow Marsh, Sethekk Halls, The Culling of Stratholme, Pit of Saron, Elwynn Forest and Sunken Temple)
+			crit(9818),	-- Squirrel (Tol Barad, Dalaran, Darkshore, Darnassus)
+			crit(9373),	-- Underbelly Rat (Dalaran - NR?)
+			crit(9360),	-- Devouring Maggot (Howling Fjord)
+			crit(9367),	-- Mouse (Dustwallow Marsh, Wetlands)
+			crit(9374),	-- Zul'Drak Rat (Zul'Dra)
+			crit(9369),	-- Roach (Ashenvale, Gilneas City, The Cape of Stranglethorn, Desolace, Dire Maul, Ahn'kahet: The Old Kingdom, Icecrown Citadel, Thousand Needles, Kezan, Northern Stranglethorn, Stonetalon Mountains, Undercity, Azjol-Nerub, Duskwood, Howling Fjord, Mana-Tombs, Maraudon and Redridge Mountains)
+			crit(9371),	-- Snake (Wailing Caverns, Tol Barad, Sunken Temple, Maraudon, Feralas, Northern Stranglethorn, Howling Fjord, Dustwallow Marsh, Gilneas, Gundrak, Zangarmarsh, Nagrand, Sethekk Halls and The Steamvault)
+			crit(9359),	-- Crystal Spider (Winterspring, The Nexus)
+			crit(9358),	-- Adder (Durotar, Southern Barrens, Northern Stranglethorn, Sethekk Halls, Hellfire Peninsula, The Slave Pens, The Underbog, Blasted Lands, Mana-Tombs, Northern Barrens)
+			crit(9365),	-- Maggot (The Hinterlands, Undercity, Ashenvale, Naxxramas, Hillsbrad Foothills, Howling Fjord, Ghostlands)
+			crit(9370),	-- Scorpion (Eastern Plaguelands, Twilight Highlands, Thousand Needles)
+			crit(9362),	-- Fjord Rat (Howling Fjord)
+			crit(9361),	-- Fire Beetle (Mount Hyjal, Searing Gorge, Blackrock Mountain, Blasted Lands, Un'Goro Crater)
+			crit(9363),	-- Gold Beetle (Halls of Stone, Badlands, Tanaris, Halls of Lightning)
+			crit(9368),	-- Rat (Ashenvale, Dire Maul, The Lost Isles, Gilneas, Loch Modan, The Deadmines, Stormwind City, Arathi Highlands, Darkshore, Nagrand, Terokkar Forest, Scholomance, Tirisfal Glades, Howling Fjord, The Cape of Stranglethorn, The Culling of Stratholme, Azshara, Desolace, Gilneas City, Maraudon, Sunken Temple and The Hinterlands)
 		}),
 		ach(1832),	-- Tastes Like Chicken
 		applyclassicphase(WRATH_PHASE_ONE, ach(46, {	-- Universal Explorer [7.0.3] / World Explorer

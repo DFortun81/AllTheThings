@@ -5,22 +5,22 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED
 	n(ACHIEVEMENTS, {
 		ach(6926, {	-- Tranquil Master
 			title(203),	-- the Tranquil Master
-			crit(1, {	-- Sha of Doubt
+			crit(19668, {	-- Sha of Doubt
 				["_encounter"] = { 335, HEROIC_DUNGEON },
 			}),
-			crit(2, {	-- Sha of Despair
+			crit(18829, {	-- Sha of Despair
 				["sourceQuests"] = { 30273 },	-- In the House of the Red Crane
 			}),
-			crit(3, {	-- Sha of Violence
+			crit(22274, {	-- Sha of Violence
 				["_encounter"] = { 685, HEROIC_DUNGEON },
 			}),
-			crit(4, {	-- Sha of Hatred
+			crit(19374, {	-- Sha of Hatred
 				["sourceQuests"] = { 30968 },	-- The Sha of Hatred
 			}),
-			crit(5, {	-- Sha of Anger
+			crit(19136, {	-- Sha of Anger
 				["_encounter"] = { 691 },
 			}),
-			crit(6, {	-- Sha of Fear
+			crit(19913, {	-- Sha of Fear
 				["_encounter"] = { 709, NORMAL_DUNGEON },
 			}),
 		}),

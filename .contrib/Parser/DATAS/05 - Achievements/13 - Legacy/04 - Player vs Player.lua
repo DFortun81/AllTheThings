@@ -97,10 +97,10 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_LEGACY, {
 			un(REMOVED_FROM_GAME, ach(8355)),	-- Weighed Down
 			un(REMOVED_FROM_GAME, ach(8359)),	-- Capping Spree
 			un(REMOVED_FROM_GAME, ach(8358, {	-- Deepwind Gorge All-Star
-				crit(1),	-- Assault 1 mine
-				crit(2),	-- Defend 1 mine
-				crit(3),	-- Capture 1 mine cart
-				crit(4),	-- Return 1 mine cart
+				crit(23425),	-- Assault 1 mine
+				crit(23426),	-- Defend 1 mine
+				crit(23427),	-- Capture 1 mine cart
+				crit(23428),	-- Return 1 mine cart
 			})),
 			title(229),	-- Gorgeous
 		})),

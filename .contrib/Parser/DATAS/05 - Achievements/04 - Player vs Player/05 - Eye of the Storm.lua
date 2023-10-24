@@ -38,10 +38,10 @@ root(ROOTS.Achievements, pvp(achcat(ACHIEVEMENT_CATEGORY_PVP, {
 			ach(211),	-- Storm Glory
 			ach(213),	-- Stormtrooper
 			ach(587, {	-- Stormy Assassin
-				crit(1),	-- Kill 5 people at the Blood Elf Tower
-				crit(2),	-- Kill 5 people at the Draenei Ruins
-				crit(3),	-- Kill 5 people at the Fel Reaver ruins
-				crit(4),	-- Kill 5 people at the Mage Tower
+				crit(441),	-- Kill 5 people at the Blood Elf Tower
+				crit(442),	-- Kill 5 people at the Draenei Ruins
+				crit(443),	-- Kill 5 people at the Fel Reaver ruins
+				crit(444),	-- Kill 5 people at the Mage Tower
 			}),
 			ach(1258),	-- Take a Chill Pill
 			ach(783),	-- The Perfect Storm
