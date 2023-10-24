@@ -916,7 +916,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16060),	-- Common White Shirt
 					},
 				}),
-				n(3018, {	-- Hogor Thunderhoof
+				n(3018, {	-- Hogor Thunderhoof <Guns Merchant>
 					["coord"] = { 55.6, 56.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
@@ -929,58 +929,82 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2510),	-- Solid Blunderbuss
 					},
 				}),
-				n(2997, {	-- Jyn Stonehoof
+				n(2997, {	-- Jyn Stonehoof <Weapons Merchant>
 					["coord"] = { 41.6, 62.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select","itemID",
-						2025,	-- Bearded Axe
-						1194,	-- Bastard Sword
-						2479,	-- Broad Axe
-						1198,	-- Claymore
-						2130,	-- Club
-						2029,	-- Cleaver
-						2492,	-- Cudgel
-						851,	-- Cutlass
-						2139,	-- Dirk
-						2024,	-- Espadon
-						2488,	-- Gladius
-						2030,	-- Gnarled Staff
-						1197,	-- Giant Mace
-						2134,	-- Hand Axe
-						853,	-- Hatchet
-						2511,	-- Hunter's Boomstick
-						2207,	-- Jambiya
-						2491,	-- Large Axe
-						2480,	-- Large Club
-						852,	-- Mace
-						2509,	-- Ornate Blunderbuss
-						2208,	-- Poniard
-						854,	-- Quarter Staff
-						2026,	-- Rock Hammer
-						2027,	-- Scimitar
-						2132,	-- Short Staff
-						2131,	-- Shortsword
-						2494,	-- Stiletto
-					}},
+					["groups"] {
+						i(2025),   -- Bearded Axe
+						i(1194),   -- Bastard Sword
+						i(2479),   -- Broad Axe
+						i(1198),   -- Claymore
+						i(2130),   -- Club
+						i(2029),   -- Cleaver
+						i(2492),   -- Cudgel
+						i(851),	   -- Cutlass
+						i(2139),   -- Dirk
+						i(2024),   -- Espadon
+						i(2488),   -- Gladius
+						i(2030),   -- Gnarled Staff
+						i(1197),   -- Giant Mace
+						i(2028, {  -- Hammer
+							["timeline"] = { ADDED_10_1_7 }
+						}),
+						i(2134),   -- Hand Axe
+						i(853),	   -- Hatchet
+						i(2511),   -- Hunter's Boomstick
+						i(2207),   -- Jambiya
+						i(2491),   -- Large Axe
+						i(2480),   -- Large Club
+						i(852),	   -- Mace
+						i(2509),   -- Ornate Blunderbuss
+						i(2208),   -- Poniard
+						i(854),	   -- Quarter Staff
+						i(2026),   -- Rock Hammer
+						i(2027),   -- Scimitar
+						i(2132),   -- Short Staff
+						i(2131),   -- Shortsword
+						i(2494),   -- Stiletto
+						i(1196, {  -- Tabar
+							["timeline"] = { ADDED_10_1_7 }
+						}),
+						i(2490, {  -- Tomahawk
+							["timeline"] = { ADDED_10_1_7 }
+						}),
+						i(2489, {  -- Two-Handed Sword
+							["timeline"] = { ADDED_10_1_7 }
+						}),
+						i(2495, {  -- Walking Stick
+							["timeline"] = { ADDED_10_1_7 }
+						}),
+						i(2493, {  -- Wooden Mallet
+							["timeline"] = { ADDED_10_1_7 }
+						}),
+					},
 				}),
-				n(3021, {	-- Kard Ragetotem
+				n(3021, {	-- Kard Ragetotem <Sword & Dagger Merchant>
 					["coord"] = { 53.6, 56.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select","itemID",
-						2520,	-- Broadsword
-						1198,	-- Claymore
-						851,	-- Cutlass
-						922,	-- Dacian Falx
-						2024,	-- Espadon
-						2528,	-- Falchion
-						2207,	-- Jambiya
-						2209,	-- Kris
-						923,	-- Longsword
-						2526,	-- Main Gauche
-						2208,	-- Poniad
-						2534,	-- Rondel
-						2027,	-- Scimitar
-					}},
+					["groups"] = {
+						i(2520),   -- Broadsword
+						i(1198),   -- Claymore
+						i(851),	   -- Cutlass
+						i(922),	   -- Dacian Falx
+						i(2024),   -- Espadon
+						i(2528),   -- Falchion
+						i(2207),   -- Jambiya
+						i(2209),   -- Kris
+						i(923),	   -- Longsword
+						i(2526),   -- Main Gauche
+						i(2208),   -- Poniad
+						i(20977, { -- Recruit's Shortsword
+							["timeline"] = { ADDED_10_1_7 }
+						}),
+						i(2534),   -- Rondel
+						i(2027),   -- Scimitar
+						i(20982, { -- Sharp Dagger
+							["timeline"] = { ADDED_10_1_7 }
+						}),
+					}
 				}),
 				n(3015, {	-- Kuna Thunderhorn <Bowyer & Fletching Goods>
 					["coord"] = { 46.8, 45.8, THUNDER_BLUFF },
@@ -1081,17 +1105,41 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
-				n(8398, {	-- Ohanko <Blade Vendor>
+				n(8398, {	-- Ohanko <Two Handed Weapon Merchant>
 					["coord"] = { 53.6, 56.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["sym"] = {{"select","itemID",
-						2523,	-- Bullova
-						2531,	-- Great Axe
-						2521,	-- Flamberge
-						2525,	-- War Hammer
-						2533,	-- War Maul
-						2529,	-- Zweihander
-					}},
+					["groups"] = {
+						i(23346, {	-- Battleworn Claymore
+							["timeline"] = { ADDED_10_1_7 },
+						}),
+						i(52557, {	-- Battleworn Hammer
+							["timeline"] = { ADDED_10_1_7 }
+						}),
+						i(2523),	-- Bullova
+						i(2521),	-- Flamberge
+						i(2531),	-- Great Axe
+						i(73210, {	-- Trainee's Sword
+							["timeline"] = { ADDED_10_0_7 },
+						}),
+						i(2525),	-- War Hammer
+						i(2533),	-- War Maul
+						i(57244, {	-- Warder's Spear
+							["timeline"] = { ADDED_10_1_7 },
+						}),
+						i(12282, {	-- Worn Battleaxe
+							["timeline"] = { ADDED_10_1_7 },
+						}),
+						i(49778, {	-- Worn Greatsword
+							["timeline"] = { ADDED_10_1_7 },
+						}),
+						i(57243, {	-- Worn Spear
+							["timeline"] = { ADDED_10_1_7 }
+						}),
+						i(52532, {	-- Worn Wood Chopper
+							["timeline"] = { ADDED_10_1_7 },
+						}),
+						i(2529),	-- Zweihander
+					},
 				}),
 				n(8364, {	-- Pakwa <Bag Vendor>
 					["coord"] = { 39.31, 64.28, THUNDER_BLUFF },
