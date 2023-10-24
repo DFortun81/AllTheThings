@@ -38,6 +38,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 77878, -- bonus objective qID
 				["coord"] = { 34.5, 63.2, EMERALD_DREAM },
 				["g"] = {
+					i(208332),	-- Horns of the Envoy
 					i(208881),	-- Shiversnap Blossom (QI!)
 				},
 			}),
@@ -110,6 +111,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 41.1, 73.3, EMERALD_DREAM },
 				["g"] = {
 					i(210683),	-- Mark of the Dreamtalon Matriarch (CI!)
+					i(208343),	-- Matriarch's Flowery Band
 					i(208339),	-- Saber's Stone Pauldrons
 				},
 			}),
@@ -212,9 +214,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ 61.5, 67.5, EMERALD_DREAM },
 					{ 59.2, 43.7, EMERALD_DREAM },
 					{ 62.8, 52.1, EMERALD_DREAM },
+					{ 63.8, 69.9, EMERALD_DREAM },
 				},
 				["g"] = {
+					i(208369),	-- Druid's Vengeful Gaze
 					i(210736),	-- Mark of the Smoldering Dreamstag (CI!)
+					i(208374),	-- Talthornei's Wrath
 				},
 			}),
 			n(209911, {	-- The Apostle

@@ -528,6 +528,15 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 					i(205213),	-- Suspicious Mold
 				},
 			})),
+			o(410434,	-- Splash Potion of Narcolepsy
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+				["description"] = "In cavern.",
+				["coord"] = { 50.9, 49.7, 2254 },
+				["questID"] = 78269,
+				["g"] = {
+					i(210185),	-- Splash Potion of Narcolepsy
+				},
+			})),
 			o(380590, {	-- Well-Insulated Mug
 				["coord"] = { 25.1, 73.3, THE_WAKING_SHORES },
 				["questID"] = 70289,

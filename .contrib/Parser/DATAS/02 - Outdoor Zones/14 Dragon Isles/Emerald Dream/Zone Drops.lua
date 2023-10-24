@@ -5,7 +5,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 	m(EMERALD_DREAM, {
 		n(ZONE_DROPS, {
 			i(201437),	-- Slumbering Dream Fragment
-			--i(209861),	-- Thorn-Laden Heart @ 37.8, 46.7, EMERALD_DREAM [hunter only, seems like?]
 			i(201439, {	-- Renewed Dream
 				["cost"] = {{"i",201437,5}},	-- 5x Slumbering Dream Fragment
 				["g"] = {

@@ -754,8 +754,6 @@ root(ROOTS.Unsorted, {
 				i(207461),	-- Schematic: Portable Party Platter (RECIPE!)
 
 				i(210198),	-- Depleted Battery
-				i(210185),	-- Splash Potion of Narcolepsy
-
 				-- Accidental Duplicate??
 				i(210495),	-- Slumbering Peacebloom Tea
 				i(210496),	-- Recipe: Slumbering Peacebloom Tea
@@ -928,23 +926,19 @@ root(ROOTS.Unsorted, {
 			n(RARES, {
 				i(208324),	-- Scorching Dryad's Chestpiece
 				i(208331),	-- Cowl of the Flame
-				i(208332),	-- Horns of the Envoy
 				i(208334),	-- Legplates of the Krakken
 				i(208336),	-- Legguards of the Dreamsaber
 				i(208337),	-- Leaf Steward's Leggings
 				i(208340),	-- Stag's Flourishing Mantle
 				i(208341),	-- Fire-Runed Spaulders
 				i(208342),	-- Girdle of Nature's Fury
-				i(208343),	-- Matriarch's Flowery Band
 				i(208355),	-- String of Delicacies
 				i(208361),	-- Splinterlimb's Branch
 				i(208363),	-- Twinfang of the Cian
 				i(208365),	-- Winter's Stand
 				i(208367),	-- Lasher's Red Thorn
-				i(208369),	-- Druid's Vengeful Gaze
 				i(208371),	-- Fire Assassin's Boots
 				i(208373),	-- Band of Bated Breath
-				i(208374),	-- Talthornei's Wrath
 				i(208379),	-- Keevah's Extended Claw
 				i(208380),	-- Moragh's Kneading Claw
 				i(208381),	-- Scepter of Still Waters

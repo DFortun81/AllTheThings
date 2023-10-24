@@ -7,8 +7,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, {
 		["lore"] = "",
 		["timeline"] = { ADDED_10_2_0 },
 		["maps"] = {
-			2253,	-- DreamTree_Barrow_A
-			2254,	-- DreamTree_Barrow_B
+			2253,	-- Sor'theril Barrow Den
+			2254,	-- Barrows of Reverie
 		},
 	}),
 }));
