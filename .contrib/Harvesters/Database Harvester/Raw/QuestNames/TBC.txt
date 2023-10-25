@@ -344,8 +344,10 @@
 12420@@@Brew of the Month Club
 12421@@@Brew of the Month Club
 9357@@@Report to Aeldon Sunbrand
+10831@@@Becoming a Mooncloth Tailor
+10832@@@Becoming a Spellfire Tailor
+10833@@@Becoming a Shadoweave Tailor
 2018@@@--
-2019@@@--
 2358@@@--
 6843@@@--
 7521@@@--
@@ -374,6 +376,15 @@
 66295@@@--
 66317@@@--
 66318@@@--
+73193@@@--
+74584@@@--
+75300@@@--
+78647@@@--
+78650@@@--
+78651@@@--
+78652@@@--
+78653@@@--
+78654@@@--
 9546@@@--
 9713@@@--
 10217@@@--
@@ -389,15 +400,3 @@
 10549@@@--
 66990@@@--
 66991@@@--
-73193@@@--
-74584@@@--
-75300@@@--
-10831@@@Becoming a Mooncloth Tailor
-10832@@@Becoming a Spellfire Tailor
-10833@@@Becoming a Shadoweave Tailor
-78647@@@--
-78650@@@--
-78651@@@--
-78652@@@--
-78653@@@--
-78654@@@--
