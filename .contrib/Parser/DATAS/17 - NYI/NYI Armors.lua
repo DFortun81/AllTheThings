@@ -2445,6 +2445,16 @@ root(ROOTS.NeverImplemented, {
 				i(207953),	-- Mega Dungeon Infinite Plate Pauldrons
 				i(207891),	-- Mega Dungeon Infinite Plate Vambraces
 			})),
+
+			-- 10.1.5
+			tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+				i(208988),	-- Band of the Petrified Pumpkin [Hallow's End]
+				i(208991),	-- Seal of Ghoulish Glee [Hallow's End]
+				i(208986),	-- The Horseman's Horrific Hood [Hallow's End]
+				i(209023),	-- The Horseman's Horrific Hood [Hallow's End]
+				i(208990),	-- The Horseman's Ring [Hallow's End]
+				i(208989),	-- Wicked Witch's Signet [Hallow's End]
+			})),
 		}),
 	}),
 });

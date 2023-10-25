@@ -819,5 +819,12 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			-- Without MountID Attached
 			i(190636),	-- Armored Siege Kodo (MOUNT!)
 		})),
+
+		-- 10.1.7
+		tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+			mount(419567, {	-- Ginormous Grrloc (MOUNT!)
+				["modelID"] = 113796,
+			}),
+		})),
 	}),
 }));

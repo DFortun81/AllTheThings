@@ -569,18 +569,31 @@ i(153119);	-- Wyrmtongue Cache of Finery
 
 -- ^^ Not cleaned
 
+-- 10.0.2 Uncollect
+
+-- 10.0.0 Uncollect
+
+
+
+
 
 ------------------
 -- PATCH 10.0.0 --
 ------------------
+i(201926);	-- Crushing
+i(194537);	-- Fiddle with Draconium Fabric Cutters
+i(194538);	-- Fiddle with Khaz'gorite Fabric Cutters
+i(198390);	-- Milling
 i(201361);	-- Primal Inspiration
-
+i(194709);	-- Prospecting
+i(194973);	-- Reclaim Concoctions
 
 ------------------
 -- PATCH 10.0.2 --
 ------------------
 i(200100);	-- Batubar the Relentless
 i(194433);	-- Bloodhorn's Horn
+i(202108);	-- Bouncing Bass
 i(200188);	-- Broken Fishing Pole
 i(198982);	-- Broken Part: Head
 i(198983);	-- Broken Part: Arm
@@ -590,6 +603,7 @@ i(200854);	-- Cooked Caviar
 i(192776);	-- Dormant Embercone
 i(195359);	-- Dry Snapper Meat
 i(191042);	-- Flask of Dwarven Antifreeze
+i(202063);	-- Flopping Tilapia
 i(198848);	-- Flyspawn Thorax
 i(194439);	-- Frostfist's Eye
 i(192474);	-- Frozen Core
@@ -609,6 +623,7 @@ i(195360);	-- Scorched Snapper Meat
 i(201091);	-- Sharp Tooth
 i(193357);	-- Shattered Ornament
 i(191136);	-- Sin'tia's Runestone
+i(202033);	-- Slippery Salmon
 i(193617);	-- Snowhide Totem
 i(200190);	-- Stuffed Duckling Toy
 i(191858);	-- Succulent Snapper Meat

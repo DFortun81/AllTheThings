@@ -246,6 +246,8 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 	}),
 	prof(INSCRIPTION, {
 		filter(GLYPHS, {
+			i(190378, {["timeline"] = {ADDED_9_2_0}}),	-- Glyph of the Spectral Lupine
+			i(190380, {["timeline"] = {ADDED_9_2_0}}),	-- Glyph of the Spectral Vulpine
 			i(187887, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Gloomstalker Dredbat (CI!)
 			i(187934, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Midnight Runestag (CI!)
 			i(187931, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Regal Dredbat (CI!)

@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 					{"n", 209790 },	-- Virtos
 					{"n", 209803 },	-- Knight-Lord Dranarus
 				},
-				["coords"] = { 
+				["coords"] = {
 					{ 77.8, 37.5, STORMWIND_CITY },
 					{ 71.8, 44.6, ORGRIMMAR },
 				},
@@ -56,6 +56,14 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 				["provider"] = { "n", 125246 },	-- Gaal
 				["coord"] = { 56.7, 68.6, KROKUUN },
 				["sourceQuests"] = { 77412 },	-- Proof and Promise
+			}),
+		}),
+		n(SPECIAL, {
+			i(208691, {	-- Argunite Cluster
+				["description"] = "Rewarded from any Allies of Azraal after the questline",
+				["sourceQuests"] = { 77795 },	-- Scavenged Artifacts
+				["crs"] = { 209855 },	-- Heraat <Ally of Arzaal>
+				["coord"] = { 56.4 ,52.2, KROKUUN },
 			}),
 		}),
 		n(VENDORS, {

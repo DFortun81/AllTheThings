@@ -113,7 +113,7 @@ local EncounterToLoot = {
 	[LARODAR_KEEPER_OF_THE_FLAME] = {
 		i(207474, {	-- Dreadful Ashen Dreamheart
 			i(207199),	-- Greaves of the Risen Nightmare
-			i(207262),	-- Screaming Torchfiends Blazewraps
+			i(207262),	-- Screaming Torchfiend's Blazewraps
 			i(207271),	-- Devout Ashdevil's Tights
 		}),
 		i(207475, {	-- Mystic Ashen Dreamheart

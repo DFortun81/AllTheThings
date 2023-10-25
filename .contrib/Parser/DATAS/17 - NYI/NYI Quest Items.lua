@@ -150,6 +150,7 @@ root(ROOTS.NeverImplemented, {
 				i(191889),	-- Ancient Sword Design
 				i(192128),	-- Reinforced Scale Sample
 				i(192129),	-- Azure Basilisk Belly
+				i(191089),	-- Scrimshaw Key
 			})),
 
 			-- 10.0.2
@@ -208,6 +209,17 @@ root(ROOTS.NeverImplemented, {
 				i(204895),	-- Storm-touched Missive Stone [DNT]
 				i(202363),	-- Survey Arc Device
 				i(206447),	-- Task List for Adventurers
+			})),
+
+			-- 10.1.7
+			tier(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
+				i(205223),	-- Ancient Centaur Axe
+				i(205221),	-- Ancient Pottery Fragment
+				i(205222),	-- Ancient Wooden Spoke
+				i(208736),	-- Apprentice Astrologist Homework
+				i(208733),	-- Dragonhorn Flute
+				i(208737),	-- Hole-Punched Bakar Tooth
+				i(208734),	-- Waterlogged Ledger
 			})),
 		}),
 	}),

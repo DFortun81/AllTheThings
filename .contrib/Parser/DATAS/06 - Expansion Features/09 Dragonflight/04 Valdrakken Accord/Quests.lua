@@ -322,6 +322,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							["coord"] = { 17.5, 31.5, THE_AZURE_SPAN },
 							["g"] = {
 								i(208198),	-- Tyr's Guard Bulwark
+								i(206476),	-- Tyr's Guard Equipment (QI!)
 							},
 						}),
 						q(75950, {	-- An Exemplar of Order: Hadwin

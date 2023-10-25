@@ -895,6 +895,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186353),	-- Greaves of Haunting Ruination
 						i(186377),	-- Tarnished Insignia of Quel'Thalas
 						i(186438),	-- Old Warrior's Soul
+						i(199181, {	-- Tips of Penitent Steel (Upgrade Legendary)(Fated)
+							["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+						}),
 					},
 				}),
 			}),
@@ -1106,6 +1109,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186438),	-- Old Warrior's Soul
 						i(187592),	-- Wraithwisp Sinew (Upgrade Legendary)
 						i(182177),	-- Owlcat Soul (SS!)
+						i(199182, {	-- Fractured Soulsight (Upgrade Legendary) (Fated)
+							["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+						}),
 					},
 				}),
 			}),
@@ -1345,6 +1351,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(186438),	-- Old Warrior's Soul
 						i(187593),	-- Ethereal Fletching (Upgrade Legendary)
 						i(182177),	-- Owlcat Soul (SS!)
+						i(199183, {	-- Condemned Queen's Grip (Upgrade Legendary)(fated)
+							["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+						}),
 					},
 				}),
 			}),

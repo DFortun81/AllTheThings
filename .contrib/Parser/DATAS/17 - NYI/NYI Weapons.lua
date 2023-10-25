@@ -738,5 +738,11 @@ root(ROOTS.NeverImplemented, {
 			i(208001),	-- Timewalker's Cudgel
 			i(206931),	-- Truesilver Champion
 		})),
+
+		-- 10.1.7
+		tier(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
+			i(208987),	-- The Horseman's Sinister Slicer [Hallow's End]
+			i(209022),	-- The Horseman's Sinister Slicer [Hallow's End]
+		})),
 	}),
 });

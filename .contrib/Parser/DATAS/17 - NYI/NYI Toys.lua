@@ -131,15 +131,19 @@ root(ROOTS.NeverImplemented, {
 				i(200142),	-- Generous Goblin Grenade (TOY!)
 				i(199111),	-- Maestro Duck's Orchestrion (TOY!)
 				i(199926),	-- Portable J.A.M. (TOY!)
-				-- #if BEFORE 10.1.5
-				i(197961),	-- Whelps on Strings (TOY!)
-				-- #endif
 			})),
 
 			-- 10.1.0
 			tier(DF_TIER, 1.0, sharedDataSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 				i(205034),	-- Enormous Ball of Yarn (TOY!)
 				i(205027),	-- Explorer's Banner (TOY!)
+			})),
+
+			-- 10.1.7
+			tier(DF_TIER, 1.7, sharedDataSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+				i(208880),	-- Brewhahat (TOY!)
+				i(208229),	-- Honor of the Forsaken (TOY!)
+				i(206347),	-- Mannequin Charm (TOY!)
 			})),
 		}),
 	}),

@@ -1,8 +1,6 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
--- Everything in this file hasn't been implemented yet.
-
 root(ROOTS.NeverImplemented, {
 	filter(MISC, {
 		tier(CLASSIC_TIER, {
@@ -589,11 +587,23 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.2.5
-			tier(SL_TIER, 0.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
-				i(193263),	-- Add Keystone Affix: Shrouded
+			tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
 				i(191217),	-- [Daon Test]Beast Battle-Training Stone
 				i(191219),	-- [Daon Test]Immaculate Elemental Battle-Stone
 				i(191200),	-- [Daon Test]Ultimate Battle-Training Stone
+				i(193263),	-- Add Keystone Affix: Shrouded
+				i(193265),	-- Set Keystone Map: Grimrail Depot
+				i(193264),	-- Set Keystone Map: Iron Docks
+				i(197802),	-- zzDog Bone (DNT - Reward PH)
+			})),
+
+			-- 9.2.7
+			tier(SL_TIER, 2.7, bubbleDown({ ["timeline"] = { CREATED_9_2_7 } }, {
+				i(200655),	-- Set Keystone Level: 36
+				i(200656),	-- Set Keystone Level: 37
+				i(200657),	-- Set Keystone Level: 38
+				i(200658),	-- Set Keystone Level: 39
+				i(200659),	-- Set Keystone Level: 40
 			})),
 
 			-- 9.x.x
@@ -627,11 +637,20 @@ root(ROOTS.NeverImplemented, {
 				i(191880),	-- DNT - Stonename Whetstone
 				i(191881),	-- DNT - Stonename Whetstone
 				i(191203),	-- Dragonscale Expedition Supplies
+				i(200969),	-- Elemental Shatter: Air
+				i(200989),	-- Elemental Shatter: Fire
+				i(200991),	-- Elemental Shatter: Frost
+				i(200984),	-- Elemental Shatter: Earth
+				i(200994),	-- Elemental Shatter: Order
 				i(194021),	-- Emblazoned Parchment: Bottom Half
 				i(194022),	-- Emblazoned Parchment: Top Half
 				i(191296),	-- Enchanted Lockbox
 				i(198723),	-- Expedition Binoculars (NYI)
 				i(198724),	-- Expedition Telescope (NYI)
+				i(199904),	-- Extraction: Awakened Air
+				i(199901),	-- Extraction: Awakened Fire
+				i(199903),	-- Extraction: Awakened Frost
+				i(199905),	-- Extraction: Awakened Earth
 				i(193659),	-- Ever-Decaying Spore
 				i(193774),	-- Furyforged Plating
 				i(190233),	-- Maruuk Centaur Supplies
@@ -662,6 +681,7 @@ root(ROOTS.NeverImplemented, {
 				i(194025),	-- Runebound Parchment: Bottom Half
 				i(194024),	-- Runebound Parchment: Top Half
 				i(194075),	-- Sacrilegious Spear
+				i(199685),	-- Scribbled Drawings of Explosions
 				i(201328),	-- Set Keystone Map: Upper Blackrock Spire
 				i(201329),	-- Set Keystone Map: The Everbloom
 				i(201330),	-- Set Keystone Map: Shadowmoon Burial Grounds
@@ -685,6 +705,8 @@ root(ROOTS.NeverImplemented, {
 				i(201349),	-- Set Keystone Map: Neltharus
 				i(201350),	-- Set Keystone Map: Ruby Life Pools
 				i(201351),	-- Set Keystone Map: Uldaman: Legacy of Tyr
+				i(199927),	-- Sheet Music: The Lazy Turnip
+				i(191175),	-- Snail Food
 				i(190332),	-- Sparking Catalyst
 				i(194828),	-- Stacked Deck of Darkmoon Mysteries
 				i(187617),	-- Tempered Djaradin Steel
@@ -763,6 +785,10 @@ root(ROOTS.NeverImplemented, {
 				i(202687),	-- [DNT] Valdrakken Accord Item 03
 				i(202688),	-- [DNT] Valdrakken Accord Item 04
 				i(202689),	-- [DNT] Valdrakken Accord Item 05
+				i(203693),	-- Ensemble: Cloudburst Regalia
+				i(203694),	-- Ensemble: Cyclonic Battlegear
+				i(203696),	-- Ensemble: Dust Devil Armor
+				i(203695),	-- Ensemble: Firestorm Armor
 				i(203211),	-- Ensemble: Lion's Heritage Blue Armor Set
 				i(203212),	-- Ensemble: Lion's Heritage Scarlet Armor Set
 				i(203213),	-- Ensemble: Lion's Heritage White Armor Set
@@ -832,6 +858,91 @@ root(ROOTS.NeverImplemented, {
 				i(206474),	-- Smelly Cheese
 				i(207102),	-- TESTING ITEM DELETE ME
 				i(205146),	-- Weyrnstone
+			})),
+
+			-- 10.1.7
+			tier(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
+				i(208549),	-- Canned Meat Product
+				i(208783),	-- Corrupted Blood
+				i(209832),	-- Crate of Dreambound Leather
+				i(209834),	-- Crate of Dreambound Mail
+				i(209835),	-- Crate of Dreambound Plate
+				i(209997),	-- Distilled Knowledge of Timeways
+				i(208925),	-- Dreambound Trinket
+				i(210062),	-- Ironbound Satchel of Helpful Goods
+				i(204720),	-- Join the New Scarlet Crusade!
+				i(205224),	-- Just a Rock
+				i(208545),	-- Kindled Bonfire
+				i(209020),	-- Loot-Filled Pumpkin
+				i(209025),	-- Loot-Filled Pumpkin
+				i(115460),	-- Northrend Alchemy Research
+				i(208784),	-- Primeval Fin
+				i(209870),	-- Surge Catcher
+					------ Secrets of Azeroth ------
+				i(206600),	-- A Clue
+				i(206760),	-- A Clue
+				i(206762),	-- A Clue
+				i(206950),	-- A Clue
+				i(206996),	-- A Clue
+				i(208932),	-- A Partial Fourth Clue
+				i(208933),	-- A Partial Fourth Clue
+				i(208934),	-- A Partial Fourth Clue
+				i(208935),	-- A Partial Fourth Clue
+				i(208993),	-- Clue Scrap
+				i(208994),	-- Clue Scrap
+				i(208995),	-- Clue Scrap
+				i(208996),	-- Clue Scrap
+				i(208997),	-- Clue Scrap
+				i(208998),	-- Clue Scrap
+				i(208999),	-- Clue Scrap
+				i(209000),	-- Clue Scrap
+				i(209001),	-- Clue Scrap
+				i(209002),	-- Clue Scrap
+				i(209003),	-- Clue Scrap
+				i(209004),	-- Clue Scrap
+				i(209005),	-- Clue Scrap
+				i(209006),	-- Clue Scrap
+				i(209007),	-- Clue Scrap
+				i(209008),	-- Clue Scrap
+				i(209009),	-- Clue Scrap
+				i(209010),	-- Clue Scrap
+				i(209011),	-- Clue Scrap
+				i(209012),	-- Clue Scrap
+				i(209013),	-- Clue Scrap
+				i(209014),	-- Clue Scrap
+				i(209015),	-- Clue Scrap
+				i(209016),	-- Clue Scrap
+				i(208873),	-- The FINAL Clue
+				i(208861),	-- The First Clue
+				i(208865),	-- The First Clue
+				i(208869),	-- The First Clue
+				i(208863),	-- The Fourth Clue
+				i(208872),	-- The Fourth Clue
+				i(208866),	-- The Second Clue
+				i(208862),	-- The Second Clue
+				i(208870),	-- The Second Clue
+				i(208867),	-- The Third Clue
+				i(208864),	-- The Third Clue
+				i(208871),	-- The Third Clue
+					------ Warcraft Rumble ------
+				i(204346),	-- Arclight Rumble Foil Box
+				i(204348),	-- Balled-up Rumble Foil
+				i(204373),	-- Banged-up Rumble Foil
+				i(202398),	-- Gold Rumble Foil
+				i(202259),	-- Warcraft Rumble Toy: Maiev
+				i(202260),	-- Warcraft Rumble Toy: Maiev
+				i(202863),	-- Warcraft Rumble Toy: Murloc
+				i(202864),	-- Warcraft Rumble Toy: Murloc
+				i(202852),	-- Warcraft Rumble Toy: Night Elf Huntress
+				i(202853),	-- Warcraft Rumble Toy: Night Elf Huntress
+				i(202262),	-- Warcraft Rumble Toy: Sneed
+				i(202263),	-- Warcraft Rumble Toy: Sneed
+				i(202857),	-- Warcraft Rumble Toy: Stonehoof Tauren
+				i(202858),	-- Warcraft Rumble Toy: Stonehoof Tauren
+				i(202860),	-- Warcraft Rumble Toy: Undead Ghoul
+				i(202861),	-- Warcraft Rumble Toy: Undead Ghoul
+				i(202866),	-- Warcraft Rumble Toy: Whelp Egg
+				i(202867),	-- Warcraft Rumble Toy: Whelp Egg
 			})),
 
 			-- 10.2.0

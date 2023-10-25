@@ -1280,6 +1280,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 		i(184522),	-- Veiled Satchel of Cooperation
 	})),
 	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		i(201325),	-- Draconic Augment Rune
 		i(201326),	-- Draconic Satchel of Cooperation
 	})),
 }));

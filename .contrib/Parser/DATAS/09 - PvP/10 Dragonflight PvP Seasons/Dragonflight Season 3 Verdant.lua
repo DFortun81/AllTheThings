@@ -626,16 +626,16 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 								i(209212, {	-- Verdant Gladiator's Chain Monnion
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
+								i(209202, {	-- Verdant Gladiator's Chain Robe
+									["cost"] = { { "c", CONQUEST, 875 } },
+								}),
 								i(209204, {	-- Verdant Gladiator's Chain Sabatons
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
 								i(209213, {	-- Verdant Gladiator's Chain Shoulderguard
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209203, {	-- Verdant Gladiator's Chain Tunic
-									["cost"] = { { "c", CONQUEST, 875 } },
-								}),
-								i(209202, {	-- Verdant Gladiator's Chain Vest
+								i(209203, {	-- Verdant Gladiator's Chain Vestments
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
 								i(209216, {	-- Verdant Gladiator's Chain Wristguards
@@ -1369,10 +1369,10 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						i(209208),	-- Verdant Gladiator's Chain Helm
 						i(209210),	-- Verdant Gladiator's Chain Leggings
 						i(209212),	-- Verdant Gladiator's Chain Monnion
+						i(209202),	-- Verdant Gladiator's Chain Robe
 						i(209204),	-- Verdant Gladiator's Chain Sabatons
 						i(209213),	-- Verdant Gladiator's Chain Shoulderguard
-						i(209203),	-- Verdant Gladiator's Chain Tunic
-						i(209202),	-- Verdant Gladiator's Chain Vest
+						i(209203),	-- Verdant Gladiator's Chain Vestments
 						i(209216),	-- Verdant Gladiator's Chain Wristguards
 					}),
 					cl(HUNTER, {

@@ -1231,9 +1231,10 @@ i(202856);  -- Warcraft Rumble Toy: Stonehoof Tauren
 i(202859);  -- Warcraft Rumble Toy: Undead Ghoul
 i(202862);  -- Warcraft Rumble Toy: Murloc
 i(202865);  -- Warcraft Rumble Toy: Whelp Egg
---- Unsorted ---
-i(208229);	-- Honor of the Forsaken
+--- NYI ---
 i(208880);	-- Brewhahat
+i(208229);	-- Honor of the Forsaken
+i(206347);	-- Mannequin Charm
 
 ------------------
 -- PATCH 10.2.0 --
@@ -1251,4 +1252,3 @@ i(208825);	-- Junior Timekeeper's Racing Belt
 i(208798);	-- Recorded Memories of Tyr's Guard
 i(210656);	-- Winter Veil Socks
 i(208087);	--
-i(206347);	-- Mannequin Charm
