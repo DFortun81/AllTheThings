@@ -125,31 +125,31 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(63339, { -- Slad'ran
 						["_encounter"] = { 592, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63342, { -- Drakkari Colossus
 						["_encounter"] = { 593, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63340, { -- Moorabi
 						["_encounter"] = { 594, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63341, { -- Eck the Ferocious
 						["_encounter"] = { 595, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63343, { -- Gal'darah
 						["_encounter"] = { 596, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 				})),
@@ -483,10 +483,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					e(596, {	-- Gal'darah
 						["creatureID"] = 29306,	-- Gal'darah
 						["groups"] = {
-							{	-- Champion of the Frozen Wastes
-								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-								["criteriaID"] = 5614,		-- Gal'darah slain
-							},
 							ach(5101, {	-- Heroic: Gundrak Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

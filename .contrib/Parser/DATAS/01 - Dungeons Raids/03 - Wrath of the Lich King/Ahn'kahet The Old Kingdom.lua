@@ -98,7 +98,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(60585, { -- Amanitar
 						["_encounter"] = { 583, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(60584, { -- Jedoga Shadowseeker
@@ -120,31 +120,31 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(63330, { -- Elder Nadox
 						["_encounter"] = { 580, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63332, { -- Prince Taldaram
 						["_encounter"] = { 581, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63333, { -- Amanitar
 						["_encounter"] = { 583, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63331, { -- Jedoga Shadowseeker
 						["_encounter"] = { 582, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63329, { -- Herald Volazj
 						["_encounter"] = { 584, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 				})),
@@ -416,10 +416,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								["timeline"] = { "added 4.0.3" },
 							}),
 							ach(1862),	-- Volazj's Quick Demise
-							{	-- Champion of the Frozen Wastes
-								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-								["criteriaID"] = 5611,			-- Herald Volazj slain
-							},
 							i(41790),	-- Design: Precise Scarlet Ruby
 							i(37617),	-- Staff of Sinister Claws
 							i(37615),	-- Titanium Compound Bow

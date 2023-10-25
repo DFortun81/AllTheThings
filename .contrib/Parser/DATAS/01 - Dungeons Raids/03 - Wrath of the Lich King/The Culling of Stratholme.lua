@@ -109,25 +109,25 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(63374, { -- Meathook
 						["_encounter"] = { 611, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63377, { -- Salramm the Fleshcrafter
 						["_encounter"] = { 612, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63376, { -- Chrono-Lord Epoch
 						["_encounter"] = { 613, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63374, { -- Mal'Ganis
 						["_encounter"] = { 614, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 				})),
@@ -378,9 +378,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						["groups"] = {
 							ach(5106, {	-- Heroic: The Culling of Stratholme Guild Run
 								["timeline"] = { "added 4.0.3" },
-							}),
-							crit(6434, {	-- Mal'Ganis slain
-								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 							}),
 							-- #if AFTER 7.3.5
 							i(37108),	-- Dreadlord's Blade (7.3.5 - Used to be only Normal Mode)

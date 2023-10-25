@@ -113,25 +113,25 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(63358, { -- Drakos the Interrogator
 						["_encounter"] = { 622, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63361, { -- Varos Cloudstrider
 						["_encounter"] = { 623, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63356, { -- Mage-Lord Urom
 						["_encounter"] = { 624, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63360, { -- Ley-Guardian Eregos
 						["_encounter"] = { 625, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 				})),
@@ -415,10 +415,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 									},
 								}),
 							}),
-							{	-- Champion of the Frozen Wastes
-								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-								["criteriaID"] = 5617,		-- Ley-Guardian Eregos slain
-							},
 							ach(5104, {	-- Heroic: The Oculus Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

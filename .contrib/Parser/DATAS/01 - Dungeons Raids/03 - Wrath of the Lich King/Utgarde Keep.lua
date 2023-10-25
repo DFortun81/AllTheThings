@@ -100,13 +100,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(63319, { -- Prince Keleseth
 						["_encounter"] = { 638, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63318, { -- Skarvald the Constructor
 						["_encounter"] = { 639, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63321, { -- Dalronn the Controller
@@ -115,7 +115,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(63320, { -- Ingvar the Plunderer
 						["_encounter"] = { 640, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 				})),
@@ -411,10 +411,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					e(640, {	-- Ingvar the Plunderer
 						["creatureID"] = 23954,	-- Ingvar the Plunderer
 						["groups"] = {
-							{	-- Champion of the Frozen Wastes
-								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-								["criteriaID"] = 5608,		-- Ingvar the Plunderer slain
-							},
 							ach(5095, {	-- Heroic: Utgarde Keep Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

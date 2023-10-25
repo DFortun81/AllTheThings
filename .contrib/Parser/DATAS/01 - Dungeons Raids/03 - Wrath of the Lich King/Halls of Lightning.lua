@@ -113,25 +113,25 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(63353, { -- General Bjarngrim
 						["_encounter"] = { 597, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63349, { -- Volkhan
 						["_encounter"] = { 598, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63350, { -- Ionar
 						["_encounter"] = { 599, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63348, { -- Loken
 						["_encounter"] = { 600, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 				})),
@@ -419,10 +419,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					e(600, {	-- Loken
 						["creatureID"] = 28923,	-- Loken
 						["groups"] = {
-							{	-- Champion of the Frozen Wastes
-								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-								["criteriaID"] = 5616,			-- Loken slain
-							},
 							ach(5103, {	-- Heroic: Halls of Lightning Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

@@ -107,25 +107,25 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(63367, { -- Svala Sorrowgrave
 						["_encounter"] = { 641, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63371, { -- Gortok Palehoof
 						["_encounter"] = { 642, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63369, { -- Skadi the Ruthless
 						["_encounter"] = { 643, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63366, { -- King Ymiron
 						["_encounter"] = { 644, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 				})),
@@ -381,10 +381,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								["timeline"] = { "added 4.0.3" },
 							}),
 							ach(2157),	-- King's Bane
-							{	-- Champion of the Frozen Wastes
-								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-								["criteriaID"] = 5618,		-- King Ymiron slain [index 11 in retail]
-							},
 							i(41797),	-- Design: Austere Earthsiege Diamond (7.3.5 - Used to be only Normal Mode)
 							-- #if AFTER 7.3.5
 							i(37060),	-- Jeweled Coronation Sword (7.3.5 - Used to be only Normal Mode)

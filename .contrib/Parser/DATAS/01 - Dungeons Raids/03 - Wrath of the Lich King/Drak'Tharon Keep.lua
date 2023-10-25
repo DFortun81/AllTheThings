@@ -102,25 +102,25 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(63334, { -- Trollgore
 						["_encounter"] = { 588, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63335, { -- Novos the Summoner
 						["_encounter"] = { 589, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63334, { -- King Dred
 						["_encounter"] = { 590, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63337, { -- The Prophet Tharon'ja
 						["_encounter"] = { 591, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 				})),
@@ -416,10 +416,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					e(591, {	-- The Prophet Tharon'ja
 						["creatureID"] = 26632,	-- The Prophet Tharon'ja
 						["groups"] = {
-							{	-- Champion of the Frozen Wastes
-								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-								["criteriaID"] = 9261,		-- The Prophet Tharon'ja slain
-							},
 							ach(5099, {	-- Heroic: Drak'Tharon Keep Guild Run
 								["timeline"] = { "added 4.0.3" },
 							}),

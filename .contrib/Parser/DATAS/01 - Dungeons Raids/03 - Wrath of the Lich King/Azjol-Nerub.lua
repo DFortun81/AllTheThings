@@ -91,19 +91,19 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					crit(63328, {	-- Krik'thir the Gatewatcher
 						["_encounter"] = { 585, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63326, {	-- Hadronox
 						["_encounter"] = { 586, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 					crit(63327, {	-- Anub'arak
 						["_encounter"] = { 587, HEROIC_DUNGEON },
 						["groups"] = {
-							
+
 						},
 					}),
 				})),
@@ -363,9 +363,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							ach(1860),	-- Gotta Go!
 							ach(5097, {	-- Heroic: Azjol-Nerub Guild Run
 								["timeline"] = { "added 4.0.3" },
-							}),
-							crit(5610, {	-- Anub'arak slain
-								["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 							}),
 							i(41796, {	-- Design: Glinting Twilight Opal [CATA+] / Design: Infused Twilight Opal [WRATH]
 								["timeline"] = { "removed 4.0.3" },

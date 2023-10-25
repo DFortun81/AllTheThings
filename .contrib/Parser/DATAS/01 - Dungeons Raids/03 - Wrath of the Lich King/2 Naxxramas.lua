@@ -1972,9 +1972,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								ach(5016, {	-- Just Can't Get Enough - Guild Edition
 									["timeline"] = { "added 4.0.3" },
 								}),
-								ach(1658, {	-- Champion of the Frozen Wastes
-									["criteriaID"] = 5888,	-- Kel'Thuzad (10 or 25 player) slain
-								}),
 								ach(578, {	-- The Dedicated Few (10 player)
 									["criteriaID"] = 6802,	-- Kel'Thuzad slain
 									-- #if ANYCLASSIC
@@ -2826,9 +2823,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 								}),
 								ach(5016, {	-- Just Can't Get Enough - Guild Edition
 									["timeline"] = { "added 4.0.3" },
-								}),
-								ach(1658, {	-- Champion of the Frozen Wastes
-									["criteriaID"] = 5888,	-- Kel'Thuzad (10 or 25 player) slain
 								}),
 								ach(579, {	-- The Dedicated Few (25 player)
 									["criteriaID"] = 7172,	-- Kel'Thuzad slain

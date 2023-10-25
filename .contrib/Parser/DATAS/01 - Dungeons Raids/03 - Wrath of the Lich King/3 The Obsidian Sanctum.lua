@@ -60,9 +60,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						ach(5017, {	-- The Twilight Zone - Guild Edition
 							["timeline"] = { "added 4.0.3" },
 						}),
-						crit(5889, {	-- Sartharion (10 or 25 player) slain
-							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-						}),
 						i(40613),	-- Gloves of the Lost Conqueror		//** Confirmed Drop 4/19/19 [1 Drake up]
 						i(40614),	-- Gloves of the Lost Protector
 						i(40615),	-- Gloves of the Lost Vanquisher	//** Confirmed Drop 4/19/19 [2 Drakes(s) up]
@@ -126,9 +123,6 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						}),
 						ach(5017, {	-- The Twilight Zone - Guild Edition
 							["timeline"] = { "added 4.0.3" },
-						}),
-						crit(5889, {	-- Sartharion (10 or 25 player) slain
-							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 						}),
 						i(40628),	-- Gauntlets of the Lost Conqueror		//** Confirmed Drop 4/19/19 [3 Drakes up]
 						i(40629),	-- Gauntlets of the Lost Protector
