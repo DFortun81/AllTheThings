@@ -574,6 +574,7 @@ root(ROOTS.ExpansionFeatures,
 						i(111988),	-- The Tannery, Level 2
 						i(111986),	-- Trading Post, Level 2
 						i(116185),	-- War Mill, Level 2
+						-- TODO: this is weird...
 						ach(9406, {		-- Working More Orders (250)
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["g"] = {
@@ -599,10 +600,19 @@ root(ROOTS.ExpansionFeatures,
 								i(111971),	-- Barracks, Level 3
 							},
 						}),
-						ach(9462, {	-- Draenor Angler
+						ach(9462,  {	-- Draenor Angler
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
-							["g"] = {
-								i(111928),	-- Fishing Shack, Level 3
+							["sym"] = {{"meta_achievement",
+								9461,		-- Sea Scorpion Angler
+								9460,		-- Jawless Skulker Angler
+								9459,		-- Fat Sleeper Angler
+								9458,		-- Blind Lake Sturgeon Angler
+								9457,		-- Blackwater Whiptail Angler
+								9456,		-- Abyssal Gulper Eel Angler
+								9455,		-- Fire Ammonite
+							}},
+							["groups"] = {
+								i(111928),		-- Fishing Shack, Level 3 [Blueprints]
 							},
 						}),
 						ach(9453, {	-- Draenic Stone Collector
@@ -1106,6 +1116,7 @@ root(ROOTS.ExpansionFeatures,
 						i(111990),	-- The Forge, Level 2
 						i(111988),	-- The Tannery, Level 2
 						i(111986),	-- Trading Post, Level 2
+						-- TODO: this is weird...
 						ach(9406, {		-- Working More Orders (250)
 							["g"] = {
 								i(111930),	-- Alchemy Lab, Level 3
@@ -1137,11 +1148,20 @@ root(ROOTS.ExpansionFeatures,
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
-						ach(9462, {	-- Draenor Angler
-							["g"] = {
-								i(111928),	-- Fishing Shack, Level 3
-							},
+						ach(9462,  {	-- Draenor Angler
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["sym"] = {{"meta_achievement",
+								9461,		-- Sea Scorpion Angler
+								9460,		-- Jawless Skulker Angler
+								9459,		-- Fat Sleeper Angler
+								9458,		-- Blind Lake Sturgeon Angler
+								9457,		-- Blackwater Whiptail Angler
+								9456,		-- Abyssal Gulper Eel Angler
+								9455,		-- Fire Ammonite
+							}},
+							["groups"] = {
+								i(111928),		-- Fishing Shack, Level 3 [Blueprints]
+							},
 						}),
 						ach(9495, {	-- The Bone Collector
 							["g"] = {
