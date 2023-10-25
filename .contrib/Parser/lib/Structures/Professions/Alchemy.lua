@@ -688,6 +688,21 @@ EXPERT_ARTISAN_ALCHEMY = {
 	}),
 })));
 ]]--
+LEGION_ALCHEMY = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	r(264250),	-- Broken Isles Alchemy
+	cat(456, {	-- Transmutation
+		r(213257),	-- Transmute: Blood of Sargeras
+		r(213252),	-- Transmute: Cloth to Herbs
+		r(213249),	-- Transmute: Cloth to Skins
+		r(213254),	-- Transmute: Fish to Gems
+		r(213255),	-- Transmute: Meat to Pants
+		r(213256),	-- Transmute: Meat to Pet
+		r(213248),	-- Transmute: Ore to Cloth
+		r(213251),	-- Transmute: Ore to Herbs
+		r(213253),	-- Transmute: Skins to Herbs
+		r(213250),	-- Transmute: Skins to Ore
+	}),
+}));
 
 BFA_ALCHEMY = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	r(264255, {	-- Kul Tiran Alchemy [A]
