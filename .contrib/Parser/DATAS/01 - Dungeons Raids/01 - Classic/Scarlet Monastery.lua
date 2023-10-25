@@ -631,15 +631,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 								i(34227, {	-- Deadman's Hand
 									["timeline"] = { "added 2.3.0", "removed 5.0.4", "added 10.1.7" },
 								}),
-								o(103821, {
+								o(103821, {	-- Doan's Strongbox
 									["groups"] = {
 										i(7146, {	-- The Scarlet Key
-											["provider"] = { "o", 103821 },	-- Doan's Strongbox
 											["description"] = "Found in the chest after killing Arcanist Doan.",
 											["timeline"] = { "removed 4.0.3" },
 										}),
 										i(208485, {	-- The Scarlet Key
-											["provider"] = { "o", 103821 },	-- Doan's Strongbox
 											["description"] = "Found in the chest after killing Arcanist Doan. Can be looted once per week per account.",
 											["timeline"] = { "added 10.1.7" },
 										}),
