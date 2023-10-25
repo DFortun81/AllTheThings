@@ -17,6 +17,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				bubbleDown({ ["races"] = ALLIANCE_ONLY }, ach(4296, {	-- Trial of the Champion (A)
+					-- #if NOT ANYCLASSIC
+					-- Blizzard removed the criteria for this achievement in Wrath Classic.
 					crit(11420, { -- Mokra the Skullcrusher
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
@@ -38,11 +40,14 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					crit(13313, { -- Eadric the Pure
 						["_encounter"] = { 635, NORMAL_DUNGEON },
 					}),
+					-- #endif
 					crit(13314, { -- The Black Knight
 						["_encounter"] = { 637, NORMAL_DUNGEON },
 					}),
 				})),
 				bubbleDown({ ["races"] = ALLIANCE_ONLY }, ach(4298, {	-- Heroic: Trial of the Champion (A)
+					-- #if NOT ANYCLASSIC
+					-- Blizzard removed the criteria for this achievement in Wrath Classic.
 					crit(12539, { -- Mokra the Skullcrusher
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
@@ -64,11 +69,14 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					crit(12551, { -- Eadric the Pure
 						["_encounter"] = { 635, HEROIC_DUNGEON },
 					}),
+					-- #endif
 					crit(12553, { -- The Black Knight
 						["_encounter"] = { 637, HEROIC_DUNGEON },
 					}),
 				})),
 				bubbleDown({ ["races"] = HORDE_ONLY }, ach(3778, {	-- Trial of the Champion (H)
+					-- #if NOT ANYCLASSIC
+					-- Blizzard removed the criteria for this achievement in Wrath Classic.
 					crit(11420, { -- Marshal Jacob Alerius
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
@@ -90,11 +98,14 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					crit(13313, { -- Eadric the Pure
 						["_encounter"] = { 635, NORMAL_DUNGEON },
 					}),
+					-- #endif
 					crit(13314, { -- The Black Knight
 						["_encounter"] = { 637, NORMAL_DUNGEON },
 					}),
 				})),
 				bubbleDown({ ["races"] = HORDE_ONLY }, ach(4297, {	-- Heroic: Trial of the Champion (H)
+					-- #if NOT ANYCLASSIC
+					-- Blizzard removed the criteria for this achievement in Wrath Classic.
 					crit(12539, { -- Marshal Jacob Alerius
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
@@ -116,6 +127,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					crit(12551, { -- Eadric the Pure
 						["_encounter"] = { 635, HEROIC_DUNGEON },
 					}),
+					-- #endif
 					crit(12553, { -- The Black Knight
 						["_encounter"] = { 637, HEROIC_DUNGEON },
 					}),
