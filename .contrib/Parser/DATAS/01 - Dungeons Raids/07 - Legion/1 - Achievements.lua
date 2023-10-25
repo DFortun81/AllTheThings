@@ -76,5 +76,14 @@ root(ROOTS.Instances, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { ADDED_7_0_
 				i(141216),	-- Grove Defiler (MOUNT!)
 			},
 		}),
+		-- #IF AFTER LEGION
+		-- #IF BEFORE BFA
+		ach(11162, {	-- Keystone Master
+			ach(11185),	-- Keystone Conqueror
+			ach(11184),	-- Keystone Challenger
+			ach(11183),	-- Keystone Initiate
+		}),
+		-- #ENDIF
+		-- #ENDIF
 	}),
 })));

@@ -62,5 +62,12 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				16280,	-- Mythic: Uldaman: Legacy of Tyr
 			}},
 		}),
+		-- #IF AFTER DF
+		ach(11162, {	-- Keystone Master
+			ach(11185),	-- Keystone Conqueror
+			ach(11184),	-- Keystone Challenger
+			ach(11183),	-- Keystone Initiate
+		}),
+		-- #ENDIF
 	}),
 })));

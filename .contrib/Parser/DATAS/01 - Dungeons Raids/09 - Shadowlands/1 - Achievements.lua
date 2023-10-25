@@ -97,5 +97,14 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 				i(184183),		-- Voracious Gorger (MOUNT!)
 			},
 		}),
+		-- #IF AFTER SHADOWLANDS
+		-- #IF BEFORE DF
+		ach(11162, {	-- Keystone Master
+			ach(11185),	-- Keystone Conqueror
+			ach(11184),	-- Keystone Challenger
+			ach(11183),	-- Keystone Initiate
+		}),
+		-- #ENDIF
+		-- #ENDIF
 	}),
 })));

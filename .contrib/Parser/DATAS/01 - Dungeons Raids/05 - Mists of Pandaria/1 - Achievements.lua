@@ -3,6 +3,41 @@
 -----------------------------------------------------
 root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(ACHIEVEMENTS, {
+		ach(6927, {		-- Glory of the Pandaria Hero
+			["sym"] = {{"meta_achievement",
+				6925,	-- Pandaria Dungeon Hero
+				6460,	-- Hydrophobia
+				6475,	-- Cleaning Up
+				6671,	-- Seeds of Doubt
+				6420,	-- Hopocalypse Now!
+				6089,	-- Keep Rollin' Rollin' Rollin'
+				6400,	-- How Did He Get Up There?
+				6402,	-- Ling-Ting's Herbal Journey
+				6478,	-- Glintrok N' Roll
+				6736,	-- What Does This Button Do?
+				6713,	-- Quarrelsome Quilen Quintet
+				6477,	-- Respect
+				6472,	-- The Obvious Solution
+				6471,	-- Hate Leads to Suffering
+				6479,	-- Bomberman
+				6476,	-- Conscriptinator
+				6684,	-- Humane Society
+				6427,	-- Mosh Pit
+				6928,	-- Burning Man
+				6929,	-- And Stay Dead!
+				6531,	-- Attention to Detail
+				6394,	-- Rattle No More
+				6396,	-- Sanguinarian
+				6821,	-- School's Out Forever
+				6688,	-- Where's My Air Support?
+				6485,	-- Return to Sender
+				6822,	-- Run with the Wind
+				6715,	-- Polyformic Acid Science
+			}},
+			["groups"] = {
+				i(87769),	-- Crimson Cloud Serpent (MOUNT!)
+			},
+		}),
 		ach(6932, {	-- Glory of the Pandaria Raider
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -40,7 +75,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 				i(87773),	-- Heavenly Crimson Cloud Serpent (MOUNT!)
 			},
 		}),
-		ach(6925, {		-- Pandaria Dungeon Hero
+		ach(6925, {	-- Pandaria Dungeon Hero
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				6758,	-- Heroic: Temple of the Jade Serpent

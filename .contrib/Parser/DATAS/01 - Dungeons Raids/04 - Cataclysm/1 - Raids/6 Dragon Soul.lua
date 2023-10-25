@@ -49,6 +49,26 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						["_encounter"] = { 333, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
+				ach(6169, {	-- Glory of the Dragon Soul Raider
+					["sym"] = {{"meta_achievement",
+						6109,	-- Heroic: Morchok
+						6110,	-- Heroic: Warlord Zon'ozz
+						6111,	-- Heroic: Yor'sahj the Unsleeping
+						6112,	-- Heroic: Hagara the Stormbinder
+						6113,	-- Heroic: Ultraxion
+						6114,	-- Heroic: Warmaster Blackhorn
+						6174,	-- Don't Stand So Close to Me
+						6129,	-- Taste the Rainbow!
+						6128,	-- Ping Pong Champion
+						6084,	-- Minutes to Midnight
+						6105,	-- Deck Defender
+						6133,	-- Maybe He'll Get Dizzy...
+						6180,	-- Chromatic Champion
+					}},
+					["groups"] = {
+						i(77068),	-- Twilight Harbinger (MOUNT!)
+					},
+				}),
 				ach(6123),	-- Dragon Soul Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {

@@ -49,5 +49,14 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_0_1_L
                 i(161215),	-- Obsidian Krolusk (MOUNT!)
             },
 		}),
+		-- #IF AFTER BFA
+		-- #IF BEFORE SHADOWLANDS
+		ach(11162, {	-- Keystone Master
+			ach(11185),	-- Keystone Conqueror
+			ach(11184),	-- Keystone Challenger
+			ach(11183),	-- Keystone Initiate
+		}),
+		-- #ENDIF
+		-- #ENDIF
 	}),
 })));

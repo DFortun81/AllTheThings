@@ -64,7 +64,7 @@ local function oldD(id, groups)
 	return bubbleDownFiltered(OLD_DIFFICULTIES_BUBBLE_DOWN_CONTENTS, OLD_DIFFICULTIES_BUBBLE_DOWN_FILTER, n(id, {
 		["ignoreBonus"] = true,
 		["groups"] = groups,
-	}));	
+	}));
 end
 
 
@@ -147,6 +147,27 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 					crit(23664, {	-- Garrosh Hellscream
 						["_encounter"] = { 869, LFR_RAID },
 					}),
+				}),
+				ach(8454, {	-- Glory of the Orgrimmar Raider
+					["sym"] = {{"meta_achievement",
+						8536,	-- No More Tears
+						8528,	-- Go Long
+						8532,	-- None Shall Pass
+						8521,	-- Swallow Your Pride
+						8530,	-- The Immortal Vanguard
+						8520,	-- Fire in the Hole!
+						8453,	-- Rescue Raiders
+						8448,	-- Gamon Will Save Us!
+						8538,	-- Unlimited Potential
+						8529,	-- Criss Cross
+						8527,	-- Giant Dinosaur vs. Mega Snail
+						8543,	-- Lasers and Magnets and Drills! Oh My!
+						8531,	-- Now We are the Paragon
+						8537,	-- Strike!
+					}},
+					["groups"] = {
+						i(104208),	-- Spawn of Galakras (MOUNT!)
+					},
 				}),
 				ach(8510),	-- Siege of Orgrimmar Guild Run
 			}),
