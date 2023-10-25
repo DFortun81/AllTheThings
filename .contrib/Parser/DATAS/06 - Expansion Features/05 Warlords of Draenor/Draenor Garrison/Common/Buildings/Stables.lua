@@ -11,61 +11,193 @@ root(ROOTS.ExpansionFeatures,
 						-- TODO: add sourceQuests to the criteria, or use _quests ?
 						a(ach(9539, {	-- Advanced Husbandry (Alliance)
 							i(116668),		-- Armored Frostboar (MOUNT!)
-							crit(1),		-- Maimclaw Killed
-							crit(2),		-- Beast-Lasher Killed
-							crit(3),		-- Moth of Wrath Killed
-							crit(4),		-- Thundercall Killed
-							crit(5),		-- Ironbore Killed
-							crit(6),		-- Karak Killed
+							crit(26068),		-- Maimclaw Killed
+							crit(26072),		-- Maimclaw Killed
+							crit(26071),		-- Maimclaw Killed
+							crit(26070),		-- Maimclaw Killed
+							crit(26069),		-- Maimclaw Killed
+							crit(26073),		-- Maimclaw Killed
+							crit(26080),		-- Beast-Lasher Killed
+							crit(26081),		-- Beast-Lasher Killed
+							crit(26082),		-- Beast-Lasher Killed
+							crit(26083),		-- Beast-Lasher Killed
+							crit(26084),		-- Beast-Lasher Killed
+							crit(26085),		-- Beast-Lasher Killed
+							crit(26086),		-- Moth of Wrath Killed
+							crit(26087),		-- Moth of Wrath Killed
+							crit(26088),		-- Moth of Wrath Killed
+							crit(26089),		-- Moth of Wrath Killed
+							crit(26090),		-- Moth of Wrath Killed
+							crit(26091),		-- Moth of Wrath Killed
+							crit(26092),		-- Thundercall Killed
+							crit(26093),		-- Thundercall Killed
+							crit(26094),		-- Thundercall Killed
+							crit(26095),		-- Thundercall Killed
+							crit(26096),		-- Thundercall Killed
+							crit(26097),		-- Thundercall Killed
+							crit(26098),		-- Ironbore Killed
+							crit(26099),		-- Ironbore Killed
+							crit(26100),		-- Ironbore Killed
+							crit(26101),		-- Ironbore Killed
+							crit(26102),		-- Ironbore Killed
+							crit(26103),		-- Ironbore Killed
+							crit(26074),		-- Karak Killed
+							crit(26075),		-- Karak Killed
+							crit(26076),		-- Karak Killed
+							crit(26077),		-- Karak Killed
+							crit(26078),		-- Karak Killed
+							crit(26079),		-- Karak Killed
 						})),
 						h(ach(9705, {	-- Advanced Husbandry (Horde)
 							i(116668),		-- Armored Frostboar (MOUNT!)
-							crit(1),		-- Maimclaw Killed
-							crit(2),		-- Beast-Lasher Killed
-							crit(3),		-- Moth of Wrath Killed
-							crit(4),		-- Thundercall Killed
-							crit(5),		-- Ironbore Killed
-							crit(6),		-- Karak Killed
+							crit(26068),		-- Maimclaw Killed
+							crit(26072),		-- Maimclaw Killed
+							crit(26071),		-- Maimclaw Killed
+							crit(26070),		-- Maimclaw Killed
+							crit(26069),		-- Maimclaw Killed
+							crit(26073),		-- Maimclaw Killed
+							crit(26080),		-- Beast-Lasher Killed
+							crit(26081),		-- Beast-Lasher Killed
+							crit(26082),		-- Beast-Lasher Killed
+							crit(26083),		-- Beast-Lasher Killed
+							crit(26084),		-- Beast-Lasher Killed
+							crit(26085),		-- Beast-Lasher Killed
+							crit(26086),		-- Moth of Wrath Killed
+							crit(26087),		-- Moth of Wrath Killed
+							crit(26088),		-- Moth of Wrath Killed
+							crit(26089),		-- Moth of Wrath Killed
+							crit(26090),		-- Moth of Wrath Killed
+							crit(26091),		-- Moth of Wrath Killed
+							crit(26092),		-- Thundercall Killed
+							crit(26093),		-- Thundercall Killed
+							crit(26094),		-- Thundercall Killed
+							crit(26095),		-- Thundercall Killed
+							crit(26096),		-- Thundercall Killed
+							crit(26097),		-- Thundercall Killed
+							crit(26098),		-- Ironbore Killed
+							crit(26099),		-- Ironbore Killed
+							crit(26100),		-- Ironbore Killed
+							crit(26101),		-- Ironbore Killed
+							crit(26102),		-- Ironbore Killed
+							crit(26103),		-- Ironbore Killed
+							crit(26074),		-- Karak Killed
+							crit(26075),		-- Karak Killed
+							crit(26076),		-- Karak Killed
+							crit(26077),		-- Karak Killed
+							crit(26078),		-- Karak Killed
+							crit(26079),		-- Karak Killed
 						})),
 						ach(9526, {	-- Master of Mounts
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["g"] = {
 								i(112003),		-- Stables, Level 3 [Blueprints]
-								crit(1),		-- Wolf Trained
-								crit(2),		-- Talbuk Trained
-								crit(3),		-- Clefthoof Trained
-								crit(4),		-- Boar Trained
-								crit(5),		-- Riverbeast Trained
-								crit(6),		-- Elekk Trained
+								crit(26064, { ["races"] = ALLIANCE_ONLY }),		-- Wolf Trained
+								crit(26065, { ["races"] = HORDE_ONLY }),		-- Wolf Trained
+								crit(26062, { ["races"] = ALLIANCE_ONLY }),		-- Talbuk Trained
+								crit(26063, { ["races"] = HORDE_ONLY }),		-- Talbuk Trained
+								crit(26061, { ["races"] = ALLIANCE_ONLY }),		-- Clefthoof Trained
+								crit(26060, { ["races"] = HORDE_ONLY }),		-- Clefthoof Trained
+								crit(26058, { ["races"] = ALLIANCE_ONLY }),		-- Boar Trained
+								crit(26059, { ["races"] = HORDE_ONLY }),		-- Boar Trained
+								crit(26057, { ["races"] = ALLIANCE_ONLY }),		-- Riverbeast Trained
+								crit(26056, { ["races"] = HORDE_ONLY }),		-- Riverbeast Trained
+								crit(26055, { ["races"] = ALLIANCE_ONLY }),		-- Elekk Trained
+								crit(26054, { ["races"] = HORDE_ONLY }),		-- Elekk Trained
 								ach(9538, {		-- Intro to Husbandry
-									crit(1),		-- Wrangling a Wolf
-									crit(2),		-- Taming a Talbuk
-									crit(3),		-- Capturing a Clefthoof
-									crit(4),		-- Besting a Boar
-									crit(5),		-- Requisition a Riverbeast
-									crit(6),		-- Entangling an Elekk
+									crit(26051, { ["races"] = ALLIANCE_ONLY }),		-- Wrangling a Wolf
+									crit(26047, { ["races"] = HORDE_ONLY }),		-- Wrangling a Wolf
+									crit(26046, { ["races"] = ALLIANCE_ONLY }),		-- Taming a Talbuk
+									crit(26052, { ["races"] = HORDE_ONLY }),		-- Taming a Talbuk
+									crit(26043, { ["races"] = ALLIANCE_ONLY }),		-- Capturing a Clefthoof
+									crit(26049, { ["races"] = HORDE_ONLY }),		-- Capturing a Clefthoof
+									crit(26042, { ["races"] = ALLIANCE_ONLY }),		-- Besting a Boar
+									crit(26048, { ["races"] = HORDE_ONLY }),		-- Besting a Boar
+									crit(26045, { ["races"] = ALLIANCE_ONLY }),		-- Requisition a Riverbeast
+									crit(26053, { ["races"] = HORDE_ONLY }),		-- Requisition a Riverbeast
+									crit(26044, { ["races"] = ALLIANCE_ONLY }),		-- Entangling an Elekk
+									crit(26050, { ["races"] = HORDE_ONLY }),		-- Entangling an Elekk
 								}),
 							},
 						}),
 						a(ach(9540, {	-- The Stable Master (Alliance)
 							i(116781),		-- Armored Frostwolf (MOUNT!)
 							title(277),		-- Stable Master
-							crit(1),		-- Maimclaw Killed
-							crit(2),		-- Beast-Lasher Killed
-							crit(3),		-- Moth of Wrath Killed
-							crit(4),		-- Thundercall Killed
-							crit(5),		-- Ironbore Killed
-							crit(6),		-- Karak Killed
+							crit(26104),		-- Maimclaw Killed
+							crit(26105),		-- Maimclaw Killed
+							crit(26106),		-- Maimclaw Killed
+							crit(26107),		-- Maimclaw Killed
+							crit(26108),		-- Maimclaw Killed
+							crit(26109),		-- Maimclaw Killed
+							crit(26110),		-- Beast-Lasher Killed
+							crit(26111),		-- Beast-Lasher Killed
+							crit(26112),		-- Beast-Lasher Killed
+							crit(26113),		-- Beast-Lasher Killed
+							crit(26114),		-- Beast-Lasher Killed
+							crit(26115),		-- Beast-Lasher Killed
+							crit(26116),		-- Moth of Wrath Killed
+							crit(26117),		-- Moth of Wrath Killed
+							crit(26118),		-- Moth of Wrath Killed
+							crit(26119),		-- Moth of Wrath Killed
+							crit(26120),		-- Moth of Wrath Killed
+							crit(26121),		-- Moth of Wrath Killed
+							crit(26122),		-- Thundercall Killed
+							crit(26123),		-- Thundercall Killed
+							crit(26124),		-- Thundercall Killed
+							crit(26125),		-- Thundercall Killed
+							crit(26126),		-- Thundercall Killed
+							crit(26127),		-- Thundercall Killed
+							crit(26128),		-- Ironbore Killed
+							crit(26129),		-- Ironbore Killed
+							crit(26130),		-- Ironbore Killed
+							crit(26131),		-- Ironbore Killed
+							crit(26132),		-- Ironbore Killed
+							crit(26133),		-- Ironbore Killed
+							crit(26134),		-- Karak Killed
+							crit(26135),		-- Karak Killed
+							crit(26136),		-- Karak Killed
+							crit(26137),		-- Karak Killed
+							crit(26138),		-- Karak Killed
+							crit(26139),		-- Karak Killed
 						})),
 						h(ach(9706, {	-- The Stable Master (Horde)
 							i(116781),		-- Armored Frostwolf (MOUNT!)
 							title(277),		-- Stable Master
-							crit(1),		-- Maimclaw Killed
-							crit(2),		-- Beast-Lasher Killed
-							crit(3),		-- Moth of Wrath Killed
-							crit(4),		-- Thundercall Killed
-							crit(5),		-- Ironbore Killed
-							crit(6),		-- Karak Killed
+							crit(26104),		-- Maimclaw Killed
+							crit(26105),		-- Maimclaw Killed
+							crit(26106),		-- Maimclaw Killed
+							crit(26107),		-- Maimclaw Killed
+							crit(26108),		-- Maimclaw Killed
+							crit(26109),		-- Maimclaw Killed
+							crit(26110),		-- Beast-Lasher Killed
+							crit(26111),		-- Beast-Lasher Killed
+							crit(26112),		-- Beast-Lasher Killed
+							crit(26113),		-- Beast-Lasher Killed
+							crit(26114),		-- Beast-Lasher Killed
+							crit(26115),		-- Beast-Lasher Killed
+							crit(26116),		-- Moth of Wrath Killed
+							crit(26117),		-- Moth of Wrath Killed
+							crit(26118),		-- Moth of Wrath Killed
+							crit(26119),		-- Moth of Wrath Killed
+							crit(26120),		-- Moth of Wrath Killed
+							crit(26121),		-- Moth of Wrath Killed
+							crit(26122),		-- Thundercall Killed
+							crit(26123),		-- Thundercall Killed
+							crit(26124),		-- Thundercall Killed
+							crit(26125),		-- Thundercall Killed
+							crit(26126),		-- Thundercall Killed
+							crit(26127),		-- Thundercall Killed
+							crit(26128),		-- Ironbore Killed
+							crit(26129),		-- Ironbore Killed
+							crit(26130),		-- Ironbore Killed
+							crit(26131),		-- Ironbore Killed
+							crit(26132),		-- Ironbore Killed
+							crit(26133),		-- Ironbore Killed
+							crit(26134),		-- Karak Killed
+							crit(26135),		-- Karak Killed
+							crit(26136),		-- Karak Killed
+							crit(26137),		-- Karak Killed
+							crit(26138),		-- Karak Killed
+							crit(26139),		-- Karak Killed
 						})),
 					}),
 					n(QUESTS, sharedData({ ["_drop"] = { "isDaily" } },{
