@@ -3539,10 +3539,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(76075, {	-- A Ghostly Message
 			["providers"] = {
 				{ "n", 53869 },	-- Orphan Matron Seacole (A)
+				{ "n", 53865 },	-- Orphan Matron Nanee (H)
 			},
 			["timeline"] = { "added 10.1.7" },
 			["coords"] = {
 				{ 31.9, 50, ELWYNN_FOREST },	-- Alliance
+				{ 62.4, 66.6, TIRISFAL_GLADES },	-- Horde
 			},
 			["groups"] = {
 				i(206596),	-- Tome of Thomas Thomson (QI!)
