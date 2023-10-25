@@ -1668,11 +1668,11 @@ i(0, 358072);		-- Bound Blizzard
 i(137576, 171840);	-- Coldflame Infernal
 i(198824, 385262);	-- Duskwing Ohuna
 i(208598, 419345);	-- Eve's Ghastly Rider
+i(0, 419567);		-- Ginormous Grrloc
+i(0, 400976);		-- Gleaming Moonbeast
 i(192807, 374278);	-- Renewed Magmammoth
 i(205208, 408654);	-- Sandy Shalewing [TODO: Check if you actually get item]
 i(210022, 424082);	-- Mimiron's Jumpjets
---- NYI ---
-i(0, 419567);		-- Ginormous Grrloc
 
 ------------------
 -- PATCH 10.2.0 --
