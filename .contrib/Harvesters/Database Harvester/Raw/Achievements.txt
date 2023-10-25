@@ -13354,3 +13354,5 @@
 19451@@@<DNT> Fandral's Flamescythe Acquisition
 10.2.0.51790
 19461@@@Kissed by the Wind
+10.2.0.51825
+19080@@@Arcane Influence
