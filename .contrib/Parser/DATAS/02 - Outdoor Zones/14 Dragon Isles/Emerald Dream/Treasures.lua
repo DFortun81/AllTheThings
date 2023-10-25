@@ -203,6 +203,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				i(203332),	-- Winding Slitherdrake: Spiked Horns (DM!)
 				i(203357),	-- Winding Slitherdrake: Spiked Tail (DM!)
 			}),
+			o(408720, {	-- Laden Somnut
+				--replace small somnut at renown 11
+				--dm can be looted from it too (formula, may be, too?)
+				--add zone drop into loot table
+			}),
 		}),
 	}),
 })));

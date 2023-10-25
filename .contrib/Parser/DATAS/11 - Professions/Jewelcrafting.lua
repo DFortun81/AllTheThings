@@ -207,6 +207,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 	tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18941, {	-- Dazzling Dragons
+			-- #if BEFORE 10.2.0
 				crit(61906, {	-- Jeweled Ruby Whelpling
 					["provider"] = { "i", 193887 },	-- Jeweled Ruby Whelpling
 				}),
@@ -222,6 +223,23 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				crit(61913, {	-- Jeweled Amber Whelpling
 					["provider"] = { "i", 193885 },	-- Jeweled Amber Whelpling
 				}),
+			-- #else
+				crit(63214, {	-- Jeweled Ruby Whelpling
+					["provider"] = { "i", 193887 },	-- Jeweled Ruby Whelpling
+				}),
+				crit(63215, {	-- Jeweled Emerald Whelpling
+					["provider"] = { "i", 193888 },	-- Jeweled Emerald Whelpling
+				}),
+				crit(63216, {	-- Jeweled Sapphire Whelpling
+					["provider"] = { "i", 193886 },	-- Jeweled Sapphire Whelpling
+				}),
+				crit(63217, {	-- Jeweled Onyx Whelpling
+					["provider"] = { "i", 193889 },	-- Jeweled Onyx Whelpling
+				}),
+				crit(63218, {	-- Jeweled Amber Whelpling
+					["provider"] = { "i", 193885 },	-- Jeweled Amber Whelpling
+				}),
+			-- #endif
 			}),
 		})),
 		n(QUESTS, {

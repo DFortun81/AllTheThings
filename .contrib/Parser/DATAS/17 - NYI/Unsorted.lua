@@ -931,7 +931,6 @@ root(ROOTS.Unsorted, {
 				i(208337),	-- Leaf Steward's Leggings
 				i(208340),	-- Stag's Flourishing Mantle
 				i(208341),	-- Fire-Runed Spaulders
-				i(208342),	-- Girdle of Nature's Fury
 				i(208355),	-- String of Delicacies
 				i(208361),	-- Splinterlimb's Branch
 				i(208363),	-- Twinfang of the Cian

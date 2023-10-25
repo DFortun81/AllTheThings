@@ -102,6 +102,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78211,
 				["coord"] = { 40.5, 49.6, EMERALD_DREAM },
 				["g"] = {
+					i(208342),	-- Girdle of Nature's Fury
 					i(210650),	-- Mark of the Keen-Eyed Dreamsaber (CI!)
 					i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)
 				},
@@ -133,11 +134,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(210045, {	-- Moragh the Slothful
 				["questID"] = 78210,
 				["coords"] = {
-					{ 38.8, 71.6, EMERALD_DREAM }, -- entrance
+					{ 38.8, 71.6, EMERALD_DREAM }, -- Entrance
 					{ 40.5, 72.6, EMERALD_DREAM }, -- Moragh
 				},
 				["g"] = {
 					i(210729),	-- Mark of the Verdant Bristlebruin (CI!)
+					i(209954),	-- Moragh's Favorite Rock (TODO: remove if it will drop somewhere else)
 					i(208329),	-- Warm Grasp of the Dream
 				},
 			}),
@@ -182,10 +184,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)
 				},
 			}),
-			n(209365, {	-- Splinterlimb
+			n(209358, {	-- Splinterlimb
 				["description"] = "Gain one stack of 'Corrupting Sparks' per cycle of his route, at 8th stack become enemy (rare)",
 				["crs"] = {
-					209358,	-- Splinterlimb
+					209365,	-- Splinterlimb
 				},
 				["questID"] = 77863,
 				["coord"] = { 61.9, 52.2, EMERALD_DREAM },

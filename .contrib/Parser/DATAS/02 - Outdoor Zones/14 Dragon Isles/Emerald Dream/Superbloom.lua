@@ -35,7 +35,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			})),
 			n(REWARDS, {
 				i(211414),	-- Blossoming Dreamtrove
-				i(211413),	-- Budding Dreamtrove
+				i(211413, {	-- Budding Dreamtrove
+					i(203340),	-- Winding Slitherdrake: Cluster Jaw Horns (DM!)
+				}),
 				i(211411),	-- Sprouting Dreamtrove
 				filter(COSMETIC, {
 					i(210661),	-- Dreamcatcher's Crescent

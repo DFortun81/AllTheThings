@@ -1,0 +1,61 @@
+﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	[407739] = {
+		readable = "Triflesnatch's Roving Trove",
+		model = 1349622,
+		text = {
+			en = "Triflesnatch's Roving Trove",
+			es = "Triflesnatch's Roving Trove",
+			de = "Triflesnatch's Roving Trove",
+			fr = "Triflesnatch's Roving Trove",
+			it = "Triflesnatch's Roving Trove",
+			pt = "Triflesnatch's Roving Trove",
+			ru = "Triflesnatch's Roving Trove",
+			ko = "Triflesnatch's Roving Trove",
+			cn = "Triflesnatch's Roving Trove",
+		},
+	},
+	[412995] = {
+		readable = "Small Box of Vials",
+		model = 3917382,
+		text = {
+			en = "Small Box of Vials",
+			es = "Small Box of Vials",
+			de = "Small Box of Vials",
+			fr = "Small Box of Vials",
+			it = "Small Box of Vials",
+			pt = "Small Box of Vials",
+			ru = "Small Box of Vials",
+			ko = "Small Box of Vials",
+			cn = "Small Box of Vials",
+		},
+	},
+	[413780] = {
+		readable = "On the Nature of the Dream",
+		text = {
+			en = "On the Nature of the Dream",
+			es = "On the Nature of the Dream",
+			de = "On the Nature of the Dream",
+			fr = "On the Nature of the Dream",
+			it = "On the Nature of the Dream",
+			pt = "On the Nature of the Dream",
+			ru = "On the Nature of the Dream",
+			ko = "On the Nature of the Dream",
+			cn = "On the Nature of the Dream",
+		},
+	},
+	[413787] = {
+		readable = "The Tragedy of Erinethria",
+		text = {
+			en = "The Tragedy of Erinethria",
+			es = "The Tragedy of Erinethria",
+			de = "The Tragedy of Erinethria",
+			fr = "The Tragedy of Erinethria",
+			it = "The Tragedy of Erinethria",
+			pt = "The Tragedy of Erinethria",
+			ru = "The Tragedy of Erinethria",
+			ko = "The Tragedy of Erinethria",
+			cn = "The Tragedy of Erinethria",
+		},
+	},
+})
+do ObjectDB[objectID] = objectData; end

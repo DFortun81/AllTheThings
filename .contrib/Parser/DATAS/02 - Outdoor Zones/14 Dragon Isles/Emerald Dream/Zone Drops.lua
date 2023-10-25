@@ -66,7 +66,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			filter(TRINKET_F, {
 				i(209953),	-- Dancing Dream Blossoms
-				i(209954),	-- Moragh's Favorite Rock
 				i(209956),	-- Ori's Verdant Feather
 				i(209959),	-- Pinch of Dream Magic
 			}),
