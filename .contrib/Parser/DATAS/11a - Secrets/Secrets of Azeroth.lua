@@ -1138,7 +1138,6 @@ root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["
 	q(77854),	-- Upon completion of Into the Sands (questID 76509)
 	q(77421),	-- accepted 'Out of the Sands' (questID 77305)
 	q(76508),	-- Upon completion of Out of the Sands (questID 77305)
-	q(77972),	-- 
 	q(77576),	-- Upon completion of A Titanic Mold (QuestID 77822)
 	q(77577),	-- Upon completion of A Key To Reforging (QuestID 77831)
 	q(77893),	-- Upon completion of this quest and receiving the QI
