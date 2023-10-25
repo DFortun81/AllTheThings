@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(201045),	-- Icecrown Bleu
 					i(201398),	-- Mogu Mozzarella
 					i(201820),	-- Silithus Swiss
-					i(203433, {	-- Wheel of Whelpwhisper Brie
+					i(203433, {	-- Wheel of Whelpwhisper Brie (QI!)
 						["timeline"] = { ADDED_10_1_5 },
 					}),
 				},
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(193029, {	-- Lysindra
 				["coord"] = { 48.2, 82.7, VALDRAKKEN },
 				["g"] = {
-					i(203445, {	-- Stuffed Doll
+					i(203445, {	-- Stuffed Doll (QI!)
 						["timeline"] = { ADDED_10_1_5 },
 					}),
 				},
@@ -135,7 +135,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(106448, {	-- Tithris
 				["coord"] = { 47.3, 46.7, VALDRAKKEN },
 				["g"] = {
-					i(203443, {	-- Box of Leapmaize Crackers
+					i(203443, {	-- Box of Leapmaize Crackers (QI!)
 						["timeline"] = { ADDED_10_1_5 },
 					}),
 				},

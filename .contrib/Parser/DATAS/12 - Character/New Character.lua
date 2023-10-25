@@ -1071,6 +1071,15 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["classes"] = { WARLOCK },
 			}),
 		}),
+		n(MAILBOX, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+			i(206681),	-- Letter from Oman (QI!)
+			i(208226, {	-- Mysterious Letter (QI!)
+				["races"] = ALLIANCE_ONLY,
+			}),
+			i(208227, {	-- Mysterious Letter (QI!)
+				["races"] = HORDE_ONLY,
+			}),
+		})),
 		n(QUESTS, {
 			q(65425, {	-- Whatever You Sayaad (A)
 				["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
@@ -1089,7 +1098,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
 			}),
 			q(76427, {	-- A Dark Summons (H)
-				["provider"] = { "i", 208227 },	-- Mysterious Letter
+				["provider"] = { "i", 208227 },	-- Mysterious Letter (QI!)
 				["races"] = HORDE_ONLY,
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
@@ -1100,10 +1109,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				-- ["coord"] = { X, Y, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 }
+				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(76410, {	-- A Dark Summons (A)
-				["provider"] = { "i", 208226 },	-- Mysterious Letter
+				["provider"] = { "i", 208226 },	-- Mysterious Letter (QI!)
 				["races"] = ALLIANCE_ONLY,
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
@@ -1149,6 +1158,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["classes"] = { WARLOCK },
 				["timeline"] = { ADDED_10_1_5 },
 				["g"] = {
+					i(206160),	-- Madam Shadow's Grimoire (QI!)
 					spell(412234),	-- Madam Shadow's Soulstone
 				},
 			}),
@@ -1185,7 +1195,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			q(76163, {	-- A Lighter Shade of Fel
 				["sourceQuests"] = { 75544 },	-- When Revenge Burns Green
-				["provider"] = { "i", 206681 },	-- Letter from Oman
+				["provider"] = { "i", 206681 },	-- Letter from Oman (QI!)
 				["classes"] = { WARLOCK },
 				["description"] = "You get this quest in your mailbox next weekly reset after finishing 'When Revenge Burns Green'",
 				["timeline"] = { ADDED_10_1_5 },

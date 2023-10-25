@@ -113,7 +113,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						o(404314,{	-- Chipped Stone Tablet
 							["coord"] = { 45.7, 23.9, AZQROTH },
 							["g"] = {
-								i(206859),	-- Chipped Stone Tablet
+								i(206859),	-- Chipped Stone Tablet (QI!)
 							},
 						}),
 					}),
@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						o(403786,{	-- Antlered Skull
 							["coord"] = { 75.1, 41.9, AZEWRATH },
 							["g"] = {
-								i(206578),	-- An Antlered Skull
+								i(206578),	-- An Antlered Skull (QI!)
 							},
 						}),
 					}),
@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						o(404492,{	-- Gilded Vase
 							["coord"] = { 40.1, 39.7, AZMOURNE },
 							["g"] = {
-								i(207003),	-- Gilded Vase
+								i(207003),	-- Gilded Vase (QI!)
 							},
 						}),
 					}),
@@ -197,7 +197,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						o(404242,{	-- Oil Soaked Book
 							["coord"] = { 12.0, 30.9, THE_WARLANDS },
 							["g"] = {
-								i(206749),	-- Oil-Soaked Log Book
+								i(206749),	-- Oil-Soaked Log Book (QI!)
 							},
 						}),
 					}),
@@ -267,59 +267,59 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 207756 },	-- Murloc You
 						["coord"] = { 57.1, 63.2, 2199 },	-- Tyrhold Reservoir (Scenario Map) / follow player
 						["g"] = {
-							i(207008),	-- A Fish
+							i(207008),	-- A Fish (QI!)
 						},
 					}),
 					q(76379, {	-- A Murloc and a Dragon Walk into a Time Rift...
 						["provider"] = { "n", 206822 },	-- Alulgultasza de Urgl-Blalul <Queen of the... Murloc... Dragons>
 						["coord"] = { 49.4, 73.7, AZMERLOTH },
 						["g"] = {
-							i(206599),	-- Azmerlothian Hourglass
+							i(206599),	-- Azmerlothian Hourglass (QI!)
 						},
 					}),
 					q(76453, {	-- A Stony Reception
-						["provider"] = { "i", 206859 },	-- Chipped Stone Tabled
+						["provider"] = { "i", 206859 },	-- Chipped Stone Tabled (QI!)
 						["coord"] = { 45.7, 23.9, AZQROTH },
 					}),
 					q(76547, {	-- All That Glitters..
-						["provider"] = { "i", 207003 },	-- Gilded Vase
+						["provider"] = { "i", 207003 },	-- Gilded Vase (QI!)
 						["coord"] = { 40.1, 39.7, AZMOURNE },
 					}),
 					q(76362, {	-- An Antlered Skull
-						["provider"] = { "i", 206578 },	-- An Antlered Skull
+						["provider"] = { "i", 206578 },	-- An Antlered Skull (QI!)
 						["coord"] = { 75.1, 41.9, AZEWRATH },
 					}),
 					q(76521, {	-- Buzzing Boffins
 						["provider"] = { "n", 207509 },	-- Boffins
 						["coord"] = { 77.5, 64.1, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						["g"] = {
-							i(206957),	-- Boffins
+							i(206957),	-- Boffins (QI!)
 						},
 					}),
 					q(76404, {	-- Cogs in a Machine
-						["provider"] = { "i", 206602 },	-- Mechanical Cog
+						["provider"] = { "i", 206602 },	-- Mechanical Cog (QI!)
 						["coord"] = { 57.7, 64.2, 2199 }, 	-- Tyrhold Reservoir (Scenario Map)
 					}),
 					q(76533, {	-- Dangerous Documentation
 						["provider"] = { "n", 207525 },	-- Watcher's Log
 						["coord"] = { 58.2, 39.0, ULDEROTH },
 						["g"] = {
-							i(206962),	-- Watcher's Log
+							i(206962),	-- Watcher's Log (QI!)
 						},
 					}),
 					q(76546, {	-- Mantid Methodology
-						["provider"] = { "i", 206998 },	-- Amber Sword
+						["provider"] = { "i", 206998 },	-- Amber Sword (QI!)
 						["coord"] = { 63.5, 65.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 					}),
 					q(76449, {	-- The Endless Conflict
-						["provider"] = { "i", 206749 },	-- Oil-Soaked Log Book
+						["provider"] = { "i", 206749 },	-- Oil-Soaked Log Book (QI!)
 						["coord"] = { 12.0, 30.9, THE_WARLANDS },
 					}),
 					q(76459, {	-- The Resistance
 						["provider"] = { "n", 207297 },	-- Ellemayne
 						["coord"] = { 67.4, 63.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						["g"] = {
-							i(206775),	-- Map to Suramar
+							i(206775),	-- Map to Suramar (QI!)
 						},
 					}),
 					q(76406, {	-- The Sins of the Ashbringer
@@ -329,18 +329,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							{ 39.7, 58.0, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						},
 						["g"] = {
-							i(206638),	-- Azmourne's Corrupted Ashbringer
+							i(206638),	-- Azmourne's Corrupted Ashbringer (QI!)
 						},
 					}),
 					q(76351, {	-- Titanic Beasts
-						["provider"] = { "i", 206564 },	-- Time-Displaced Titanic Disc
+						["provider"] = { "i", 206564 },	-- Time-Displaced Titanic Disc (QI!)
 						["coords"] = {
 							{ 55, 57.5, ULDEROTH },
 							{ 45.8, 72.1, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						},
 					}),
 					q(76544, {	-- Wasteland Warriors
-						["provider"] = { "i", 206984 },	-- Blood-Soaked Book
+						["provider"] = { "i", 206984 },	-- Blood-Soaked Book (QI!)
 						["coord"] = { 71.2, 70.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 					}),
 					q(77236, {	-- When Time Needs Mending
@@ -390,7 +390,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					o(404432,{	-- Bload Soaked Book
 						["coord"] = { 71.2, 70.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						["g"] = {
-							i(206984),	-- Blood-Soaked Book
+							i(206984),	-- Blood-Soaked Book (QI!)
 						},
 					}),
 					o(403919,{	-- Mechanical Cog
@@ -400,13 +400,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							{ 38.1, 52.3, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						},
 						["g"] = {
-							i(206602),	-- Mechanized Cog
+							i(206602),	-- Mechanized Cog (QI!)
 						},
 					}),
 					o(404480,{	-- Ragged Mantid Sword
 					 	["coord"] = { 63.5, 65.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 					 	["g"] = {
-							i(206998),	-- Amber Sword
+							i(206998),	-- Amber Sword (QI!)
 						},
 					}),
 				}),

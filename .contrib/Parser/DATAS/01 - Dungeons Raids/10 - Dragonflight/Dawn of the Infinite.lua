@@ -296,8 +296,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					["provider"] = { "n", 205706 },	-- Future Chromie
 					["coord"] = { 52.3, 39.5, THALDRASZUS },
 					["g"] = {
-						i(206586),	-- Epoch Extractor
-						i(206269),	-- Time-Lost Essence
+						i(206586),	-- Epoch Extractor (QI!)
+						i(206269),	-- Time-Lost Essence (QI!)
 					},
 				}),
 				q(76431),	-- Popped when Future Chromie and Chromie met
@@ -309,7 +309,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					["provider"] = { "n", 205707 },	-- Chromie
 					["coord"] = { 61.4, 79.7, THALDRASZUS },
 					["g"] = {
-						i(206369),	-- Time Trap
+						i(206369),	-- Time Trap (QI!)
 					},
 				}),
 				q(76144, {	-- Morchie Mayhem
@@ -331,7 +331,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					},
 				}),
 				q(76147, {	-- Rewind and Reconcile
-					["provider"] = { "i", 206145 },	-- Mysterious Time Relic
+					["provider"] = { "i", 206145 },	-- Mysterious Time Relic (QI!)
 					--["coord"] = { ??, ??, 2194 }, -- No coords since it dungeon
 					["g"] = {
 						i(208390),	-- Bronze Archive Stone

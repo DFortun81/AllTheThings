@@ -196,7 +196,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["lvl"] = 57,
 		}),
 		q(76257, {	-- Darkmaster's Scourgestone
-			["provider"] = { "i", 206373 },	-- Darkmaster's Scourgestone
+			["provider"] = { "i", 206373 },	-- Darkmaster's Scourgestone (QI!)
 			["timeline"] = { ADDED_10_1_5 },
 			["g"] = {
 				i(12844),	-- Argent Dawn Valor Token
@@ -1072,7 +1072,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 	n(1853, {	-- Darkmaster Gandling
 		["description"] = "You must full clear out the Crypt before this boss will spawn on the bottom floor. It is recommended that you clear the top floor last so that you have an opportunity to properly position your group.",
 		["groups"] = {
-			i(206373, {	-- Darkmaster's Scourgestone
+			i(206373, {	-- Darkmaster's Scourgestone (QI!)
 				["provider"] = { "i", 12846 },	-- Argent Dawn Commission
 				["description"] = "Drops only with equipped Argent Dawn Commission",
 				["timeline"] = { ADDED_10_1_5 },

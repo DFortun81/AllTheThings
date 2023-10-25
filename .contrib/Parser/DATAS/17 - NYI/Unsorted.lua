@@ -1149,6 +1149,9 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		tier(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+			n(QUEST_ITEMS, {
+				i(206521),	-- Single Black Coffee
+			}),
 			n(QUESTS, {
 				--10.1.5.49516
 				q(73022),	-- [DNT] Custom Delays

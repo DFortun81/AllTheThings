@@ -128,9 +128,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
-						i(203451),	-- Decorative Shrubbery
-						i(203446),	-- Soothing Incense
-						i(203445),	-- Stuffed Doll
+						i(203451),	-- Decorative Shrubbery (QI!)
+						i(203446),	-- Soothing Incense (QI!)
+						i(203445),	-- Stuffed Doll (QI!)
 					},
 				}),
 				q(72668, {	-- A Nuturing Enviroment
@@ -143,9 +143,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
-						i(203432),	-- Bag of Spicy Pet Snacks
-						i(203443),	-- Box of Leapmaize Crackers
-						i(203433),	-- Wheel of Whelpwhisper Brie
+						i(203432),	-- Bag of Spicy Pet Snacks (QI!)
+						i(203443),	-- Box of Leapmaize Crackers (QI!)
+						i(203433),	-- Wheel of Whelpwhisper Brie (QI!)
 					},
 				}),
 				------ Obsidian Whelp ------
@@ -168,9 +168,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 199259 },	-- Lasztak
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 					["g"] = {
-						i(202292),	-- Crystalline Shell
-						i(202288),	-- Obsidian Gemstone
-						i(202286),	-- Warmed Coal
+						i(202292),	-- Crystalline Shell (QI!)
+						i(202288),	-- Obsidian Gemstone (QI!)
+						i(202286),	-- Warmed Coal (QI!)
 					}
 				}),
 				------ Day 2 ------
@@ -194,7 +194,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
-						i(202293),	-- Rusziona's Whistle
+						i(202293),	-- Rusziona's Whistle (QI!)
 					},
 				}),
 				------ Day 4 ------
@@ -226,10 +226,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 199259 },	-- Lasztak
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 					["g"] = {
-						i(204869),	-- Bolt of Ruby Cloth
-						i(202697),	-- Crimson Cushion
-						i(204870),	-- Lasztak's Thread Order
-						i(203712),	-- Soft Peafowl Down
+						i(204869),	-- Bolt of Ruby Cloth (QI!)
+						i(202697),	-- Crimson Cushion (QI!)
+						i(204870),	-- Lasztak's Thread Order (QI!)
+						i(203712),	-- Soft Peafowl Down (QI!)
 					},
 				}),
 				------ Day 2 ------
@@ -241,8 +241,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 199259 },	-- Lasztak
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 					["g"] = {
-						i(202693),	-- Dragonfruit Pie
-						i(204868),	-- Pre-Made Pie Crust
+						i(202693),	-- Dragonfruit Pie (QI!)
+						i(204868),	-- Pre-Made Pie Crust (QI!)
 						i(193826),	-- Trusty Dragonkin Rake
 					}
 				}),
@@ -257,8 +257,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
-						i(203625),	-- Belastrasza's Whistle
-						i(202250),	-- Sweet Snapflower Bulb
+						i(203625),	-- Belastrasza's Whistle (QI!)
+						i(202250),	-- Sweet Snapflower Bulb (QI!)
 					},
 				}),
 				------ Day 4 ------
@@ -290,9 +290,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 199259 },	-- Lasztak
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 					["g"] = {
-						i(202643),	-- Soft Sand
-						i(202645),	-- Unused Bowl
-						i(202644),	-- Whelp's First Hourglass
+						i(202643),	-- Soft Sand (QI!)
+						i(202645),	-- Unused Bowl (QI!)
+						i(202644),	-- Whelp's First Hourglass (QI!)
 					},
 				}),
 				------ Day 2 ------
@@ -318,7 +318,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
-						i(203624),	-- Zhusadormu's Whistle
+						i(203624),	-- Zhusadormu's Whistle (QI!)
 					}
 				}),
 				------ Day 4 ------
@@ -352,8 +352,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["g"] = {
 					-- Removed Frost since it duplicates into 50+ things that require Awakened Frost
 					--	i(190329),	-- Awakened Frost
-						i(202332),	-- Blue Dragon Bedtime Story
-						i(202330),	-- Fine-Pointed Quill
+						i(202332),	-- Blue Dragon Bedtime Story (QI!)
+						i(202330),	-- Fine-Pointed Quill (QI!)
 					},
 				}),
 				------ Day 2 ------
@@ -365,7 +365,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
-						i(202404),	-- Bite-Sized Ley Crystal
+						i(202404),	-- Bite-Sized Ley Crystal (QI!)
 					},
 				}),
 				q(73006, {	-- Well, Actually...
@@ -379,7 +379,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
-						i(202409),	-- Zalethgos's Whistle
+						i(202409),	-- Zalethgos's Whistle (QI!)
 					},
 				}),
 				------ Day 4 ------
@@ -411,9 +411,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 199259 },	-- Lasztak
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 					["g"] = {
-						i(202695),	-- Ancient Water
-						i(202696), -- Comforting Ducky
-						i(202694),	-- Loamy Soil
+						i(202695),	-- Ancient Water (QI!)
+						i(202696),	-- Comforting Ducky (QI!)
+						i(202694),	-- Loamy Soil (QI!)
 					},
 				}),
 				------ Day 2 ------
@@ -439,7 +439,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
-						i(203621),	-- Posidriss's Whistle
+						i(203621),	-- Posidriss's Whistle (QI!)
 					},
 				}),
 				------ Day 4 ------
@@ -466,9 +466,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 199259 },	-- Lasztak
 					["coord"] = { 13.3, 57.5, VALDRAKKEN },
 					["g"] = {
-						i(202266),	-- Bag of Spicy Pet Snacks
-						i(203386),	-- Box of Leapmaize Crackers
-						i(202265),	-- Wheel of Whelpwhisper Brie
+						i(202266),	-- Bag of Spicy Pet Snacks (QI!)
+						i(203386),	-- Box of Leapmaize Crackers (QI!)
+						i(202265),	-- Wheel of Whelpwhisper Brie (QI!)
 					},
 				}),
 				q(73126, {	-- Arts and Crafts and Baths
@@ -486,7 +486,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 201443 },	-- Celetiros
 					["coord"] = { 13.9, 59.2, VALDRAKKEN },
 					["g"] = {
-						i(203684),	-- Silver Timepiece
+						i(203684),	-- Silver Timepiece (QI!)
 					},
 				}),
 				q(73133, {	--  Cozy Camouflage
@@ -514,9 +514,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 182082 },	-- Agapanthus
 					["coord"] = { 13.3, 57.2, VALDRAKKEN },
 					["g"] = {
-						i(202690),	-- Decorative Shrubbery
-						i(202400),	-- Soothing Incense
-						i(202399),	-- Stuffed Doll
+						i(202690),	-- Decorative Shrubbery (QI!)
+						i(202400),	-- Soothing Incense (QI!)
+						i(202399),	-- Stuffed Doll (QI!)
 					},
 				}),
 				q(73135, {	-- Obsidian Obfuscation
@@ -534,7 +534,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 201443 },	-- Celetiros
 					["coord"] = { 13.9, 59.2, VALDRAKKEN },
 					["g"] = {
-						i(203684),	-- Silver Timepiece
+						i(203684),	-- Silver Timepiece (QI!)
 					},
 				}),
 				q(74488, {	-- Runaway Rusziona
@@ -542,7 +542,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 201443 },	-- Celetiros
 					["coord"] = { 13.9, 59.2, VALDRAKKEN },
 					["g"] = {
-						i(203684),	-- Silver Timepiece
+						i(203684),	-- Silver Timepiece (QI!)
 					},
 				}),
 				q(73132, {	-- Scanning the Stacks
@@ -555,7 +555,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 201443 },	-- Celetiros
 					["coord"] = { 13.9, 59.2, VALDRAKKEN },
 					["g"] = {
-						i(203684),	-- Silver Timepiece
+						i(203684),	-- Silver Timepiece (QI!)
 					},
 				}),
 				q(74489, {	-- Zhoomsa
@@ -563,7 +563,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 201443 },	-- Celetiros
 					["coord"] = { 13.9, 59.2, VALDRAKKEN },
 					["g"] = {
-						i(203684),	-- Silver Timepiece
+						i(203684),	-- Silver Timepiece (QI!)
 					},
 				}),
 			})),
@@ -573,7 +573,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 201443 },	-- Celetiros
 					["coord"] = { 13.9, 59.2, VALDRAKKEN },
 					["g"] = {
-						i(203684),	-- Silver Timepiece
+						i(203684),	-- Silver Timepiece (QI!)
 					},
 				}),
 				q(77429, {	-- Practice Makes Perfect: Posidriss
@@ -581,7 +581,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 201443 },	-- Celetiros
 					["coord"] = { 13.9, 59.2, VALDRAKKEN },
 					["g"] = {
-						i(203684),	-- Silver Timepiece
+						i(203684),	-- Silver Timepiece (QI!)
 					},
 				}),
 				q(77426, {	-- Practice Makes Perfect: Rusziona
@@ -589,7 +589,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 201443 },	-- Celetiros
 					["coord"] = { 13.9, 59.2, VALDRAKKEN },
 					["g"] = {
-						i(203684),	-- Silver Timepiece
+						i(203684),	-- Silver Timepiece (QI!)
 					},
 				}),
 				q(77428, {	-- Practice Makes Perfect: Zalethgos
@@ -597,7 +597,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 201443 },	-- Celetiros
 					["coord"] = { 13.9, 59.2, VALDRAKKEN },
 					["g"] = {
-						i(203684),	-- Silver Timepiece
+						i(203684),	-- Silver Timepiece (QI!)
 					},
 				}),
 				q(77427, {	-- Practice Makes Perfect: Zhusadormu
@@ -605,7 +605,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 201443 },	-- Celetiros
 					["coord"] = { 13.9, 59.2, VALDRAKKEN },
 					["g"] = {
-						i(203684),	-- Silver Timepiece
+						i(203684),	-- Silver Timepiece (QI!)
 					},
 				}),
 			})),

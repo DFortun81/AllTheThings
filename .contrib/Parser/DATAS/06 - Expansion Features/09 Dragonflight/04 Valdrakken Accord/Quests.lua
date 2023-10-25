@@ -283,6 +283,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							["provider"] = { "n", 200078 },	-- Watcher Koranos
 							["coord"] = { 42.1, 85.7, 20 },	-- Keeper's Rest
 							["maps"] = 2146,	-- The Eastern Glades
+							["g"] = {
+								i(204474),	-- Silver Scale (QI!)
+							},
 						}),
 						q(72444, {	-- A Sliver of Silver
 							["sourceQuests"] = { 72443 },	-- Tyr's Fall

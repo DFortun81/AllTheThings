@@ -177,7 +177,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					-- #endif
 				}},
 				["g"] = {
-					i(203432, {	-- Bag of Spicy Pet Snacks
+					i(203432, {	-- Bag of Spicy Pet Snacks (QI!)
 						["timeline"] = { ADDED_10_1_5 },
 					}),
 				},

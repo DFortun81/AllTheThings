@@ -468,7 +468,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						["coord"] = { 58.5, 23.6, VALDRAKKEN },
 						["provider"] = {"i",208092},	-- Torch of Pyrreth
 						["groups"] = {
-							i(208107),	-- Kathos' Field Glasses
+							i(208107),	-- Kathos' Field Glasses (QI!)
 						},
 					}),
 				},
