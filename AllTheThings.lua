@@ -8061,7 +8061,8 @@ app.CreateAchievementCategory = function(id, t)
 end
 
 -- Achievement Criteria Lib
-local EJ_GetCreatureInfo = EJ_GetCreatureInfo;
+local EJ_GetCreatureInfo, GetAchievementCriteriaInfoByID
+	= EJ_GetCreatureInfo, GetAchievementCriteriaInfoByID
 -- Criteria field values which will use the value of the respective Achievement instead
 local UseParentAchievementValueKeys = {
 	"c", "classID", "races", "r", "u", "e", "pb", "pvp"
@@ -8086,6 +8087,60 @@ local function GetParentAchievementInfo(t, key)
 	end
 	DelayedCallback(app.report, 1, "Missing Referenced Achievement!",id);
 end
+-- Returns expected criteria data for either criteriaIndex or criteriaID
+local function GetCriteriaInfo(achievementID, criteriaIndexOrID)
+	local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
+		= GetAchievementCriteriaInfoByID(achievementID, criteriaIndexOrID, true)
+	if not criteriaString then
+		criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
+		= GetAchievementCriteriaInfo(achievementID, criteriaIndexOrID, true)
+	end
+	return criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
+end
+local function default_name(t)
+	if t.link then return t.link; end
+	if t.encounterID then
+		return EJ_GetEncounterInfo(t.encounterID);
+	end
+	local achievementID = t.achievementID;
+	if achievementID then
+		local criteriaID = t.criteriaID;
+		if criteriaID then
+			local name = GetCriteriaInfo(achievementID, criteriaID);
+			if not IsRetrieving(name) then return name; end
+
+			local providers = t.providers;
+			if providers then
+				for k,v in ipairs(providers) do
+					if v[2] > 0 then
+						if v[1] == "o" then
+							return app.ObjectNames[v[2]];
+						elseif v[1] == "i" then
+							return GetItemInfo(v[2]);
+						elseif v[1] == "n" then
+							return app.NPCNameFromID[v[2]];
+						end
+					end
+				end
+			end
+
+			local sourceQuests = t.sourceQuests;
+			if sourceQuests then
+				local name
+				for k,id in ipairs(sourceQuests) do
+					name = app.GetQuestName(id);
+					if name then
+						return name
+					end
+				end
+				return
+			end
+		end
+	end
+	app.PrintDebug("failed to retrieve criteria name",achievementID,t.criteriaID)
+	return L["WRONG_FACTION"];
+end
+local cache = app.CreateCache("hash")
 local criteriaFields = {
 	["key"] = function(t)
 		return "criteriaID";
@@ -8104,47 +8159,7 @@ local criteriaFields = {
 		end
 	end,
 	["name"] = function(t)
-		if t.link then return t.link; end
-		if t.encounterID then
-			return EJ_GetEncounterInfo(t.encounterID);
-		end
-		local achievementID = t.achievementID;
-		if achievementID then
-			local criteriaID = t.criteriaID;
-			if criteriaID then
-				local name = t.GetInfo(achievementID, criteriaID, true);
-				if not IsRetrieving(name) then return name; end
-
-				local providers = t.providers;
-				if providers then
-					for k,v in ipairs(providers) do
-						if v[2] > 0 then
-							if v[1] == "o" then
-								return app.ObjectNames[v[2]];
-							elseif v[1] == "i" then
-								return GetItemInfo(v[2]);
-							elseif v[1] == "n" then
-								return app.NPCNameFromID[v[2]];
-							end
-						end
-					end
-				end
-
-				local sourceQuests = t.sourceQuests;
-				if sourceQuests then
-					local name
-					for k,id in ipairs(sourceQuests) do
-						name = app.GetQuestName(id);
-						if name then
-							return name
-						end
-					end
-					return RETRIEVING_DATA
-				end
-			end
-		end
-		app.PrintDebug("failed to retrieve criteria name",achievementID,t.criteriaID)
-		return L["WRONG_FACTION"];
+		return cache.GetCachedField(t, "name", default_name)
 	end,
 	["description"] = function(t)
 		if t.encounterID then
@@ -8203,15 +8218,12 @@ local criteriaFields = {
 			if app.CurrentCharacter.Achievements[achievementID] then return true; end
 			local criteriaID = t.criteriaID;
 			if criteriaID then
-				return select(3, t.GetInfo(achievementID, criteriaID, true));
+				return select(3, GetCriteriaInfo(achievementID, criteriaID));
 			end
 		end
 	end,
 	["index"] = function(t)
 		return 1;
-	end,
-	GetInfo = function()
-		return GetAchievementCriteriaInfoByID;
 	end,
 };
 criteriaFields.collectible = fields.collectible;
@@ -8222,21 +8234,9 @@ for _,key in ipairs(UseParentAchievementValueKeys) do
 		return GetParentAchievementInfo(t, key);
 	end
 end
-app.BaseAchievementCriteria = app.BaseObjectFields(criteriaFields, "BaseAchievementCriteria");
-
-local criteriaFieldsWithIndex = RawCloneData(criteriaFields);
-local function GetAchievementCriteriaInfoWithoutThrowingADumbassError(achievementID, criteriaID, hidden)
-	if criteriaID <= GetAchievementNumCriteria(achievementID, hidden) then
-		return GetAchievementCriteriaInfo(achievementID, criteriaID, hidden);
-	elseif app.IsGit then
-		-- Time to sleep for ever little print.
-		-- app.print("Invalid Achievement Criteria Index", achievementID, criteriaID);
-	end
-end
-criteriaFieldsWithIndex.GetInfo = function() return GetAchievementCriteriaInfoWithoutThrowingADumbassError; end;
-app.BaseAchievementCriteriaWithIndex = app.BaseObjectFields(criteriaFieldsWithIndex, "BaseAchievementCriteriaWithIndex");
+local BaseAchievementCriteria = app.BaseObjectFields(criteriaFields, "BaseAchievementCriteria");
 app.CreateAchievementCriteria = function(id, t, init)
-	t = setmetatable(constructor(id, t, "criteriaID"), id < 500 and app.BaseAchievementCriteriaWithIndex or app.BaseAchievementCriteria);
+	t = setmetatable(constructor(id, t, "criteriaID"), BaseAchievementCriteria);
 	if init then
 		GetParentAchievementInfo(t, "");
 		-- app.PrintDebug("CreateAchievementCriteria.Init",t.hash)
