@@ -10,6 +10,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["lvl"] = 110,
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(11762, {["timeline"] = {ADDED_7_2_0}}),	-- Can I Get A Helya (Trial of Valor)
 				ach(11394, {	-- Trial of Valor
 					crit(34578, { -- Odyn
 						["_encounter"] = { 1819, LFR_RAID },

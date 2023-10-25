@@ -271,6 +271,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						revampAch(3179),	-- Knock, Knock, Knock on Wood (10 player)
 						revampAch(3176),	-- Lose Your Illusion (10 player)
 						revampAch(2979),	-- Lumberjacked (10 player)
+						ach(11751, {["timeline"] = {ADDED_7_2_0}}),	-- Mogg-Saron (Ulduar)
 						revampAch(2937),	-- Must Deconstruct Faster (10 player)
 						revampAch(2931),	-- Nerf Engineering (10 player)
 						revampAch(2934),	-- Nerf Gravity Bombs (10 player)

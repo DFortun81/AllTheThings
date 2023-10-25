@@ -22,6 +22,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["lvl"] = { 45 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(12020),	-- Argussy Up (Antorus, the Burning Throne)
 				ach(11988, {	-- Light's Breach
                     crit(37232, {    -- Garothi Worldbreaker
                         ["_encounter"] = { 1992, LFR_RAID },

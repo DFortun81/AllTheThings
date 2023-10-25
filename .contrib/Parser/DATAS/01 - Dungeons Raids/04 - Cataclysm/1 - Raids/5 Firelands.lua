@@ -96,6 +96,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						i(69230),	-- Corrupted Fire Hawk (MOUNT!)
 					},
 				}),
+				ach(11755, {["timeline"] = {ADDED_7_2_0}}),	-- Hot Couture (Firelands)
 				ach(5802, {	-- Firelands
 					crit(17430, {	-- Beth'tilac
 						["_encounter"] = { 192, NORMAL_RAID },

@@ -36,6 +36,7 @@ root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, {
 				title(185),	-- <Name>, Defender of a Shattered World
 			},
 		}),
+		ach(11754, {["timeline"] = {ADDED_7_2_0}}),	-- Glamour of Twilight (The Bastion of Twilight and Blackwing Descent)
 		ach(4845, {	-- Glory of the Cataclysm Hero
 			["sym"] = {{"meta_achievement",
 				4844,	-- Cataclysm Dungeon Hero
@@ -102,5 +103,6 @@ root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, {
 				i(62901),	-- Drake of the East Wind (MOUNT!)
 			},
 		}),
+		ach(11757, {["timeline"] = {ADDED_7_2_0}}),	-- Sha of Fabulous (Heart of Fear and Terrace of Endless Spring)
 	}),
 })));

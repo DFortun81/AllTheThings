@@ -5,7 +5,7 @@
 root(ROOTS.PVP, {
 	pvp(tier(MOP_TIER, {
 		n(SEASON_MALEVOLENT, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 5.0.0", "removed 5.2.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.0.0", "removed 5.2.0" }, }, {
 				ach(8243, {	-- Hero of the Alliance: Malevolent
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -22,6 +22,7 @@ root(ROOTS.PVP, {
 				i(95041, {	-- Malevolent Gladiator's Cloud Serpent
 					["description"] = "Awarded to members of the Arena teams during MoP Season 1 that were in the 0.5% bracket of their battlegroup.",
 				}),
+				ach(11717, {["timeline"] = {ADDED_7_2_0}}),	-- Why Male(volent) Models? (PvP Season 12)
 			})),
 			n(PVP_HONOR, {
 				cl(DEATHKNIGHT, {
@@ -2334,7 +2335,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_TYRANNICAL, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 5.2.0", "removed 5.4.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.2.0", "removed 5.4.0" }, }, {
 				ach(8652, {	-- Hero of the Alliance: Tyrannical
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2351,6 +2352,7 @@ root(ROOTS.PVP, {
 				i(104325, {	-- Tyrannical Gladiator's Cloud Serpent
 					["description"] = "Awarded to members of the Arena teams during MoP Season 2 that were in the 0.5% bracket of their battlegroup.",
 				}),
+				ach(11718, {["timeline"] = {ADDED_7_2_0}}),	-- Dressed to Oppress (PvP Season 13)
 			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
@@ -5449,7 +5451,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_GRIEVOUS, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 5.4.0", "removed 5.4.7" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.4.0", "removed 5.4.7" }, }, {
 				ach(8649),	-- Challenger: Mists of Pandaria Season 3/Season 14
 				ach(8645, {	-- Duelist: Mists of Pandaria Season 3/Season 14
 					i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
@@ -5492,6 +5494,7 @@ root(ROOTS.PVP, {
 					},
 				}),
 				ach(8646),	-- Rival: Mists of Pandaria Season 3/Season 14
+				ach(11719, {["timeline"] = {ADDED_7_2_0}}),	-- It's Not Fashion Unless It Hurts (PvP Season 14)
 			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
@@ -8647,7 +8650,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_PRIDEFUL, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 5.4.7", "removed 6.0.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.4.7", "removed 6.0.0" }, }, {
 				ach(8670),	-- Challenger: Mists of Pandaria Season 4/Season 15
 				ach(8668, {	-- Duelist: Mists of Pandaria Season 4/Season 15
 					i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
@@ -8690,6 +8693,7 @@ root(ROOTS.PVP, {
 					["filterID"] = MOUNTS,
 				}),
 				ach(8669),	-- Rival: Mists of Pandaria Season 4/Season 15
+				ach(11720, {["timeline"] = {ADDED_7_2_0}}),	-- Wear It With Pride (PvP Season 15)
 			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,

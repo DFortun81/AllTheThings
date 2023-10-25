@@ -10,6 +10,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 		["lvl"] = 100,
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(11740, {["timeline"] = {ADDED_7_2_0}}),	-- Make it W-orc W-orc (Blackrock Foundry)
 				ach(8989, {	-- Slagworks
 					crit(25019, {	-- Gruul
 						["_encounter"] = { 1161, LFR_RAID },

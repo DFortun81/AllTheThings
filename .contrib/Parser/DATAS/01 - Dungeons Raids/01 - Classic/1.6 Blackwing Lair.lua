@@ -17,6 +17,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_THREE, {
 		["isRaid"] = true,
 		["lvl"] = lvlsquish(50, 50, 25),
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(11742, {["timeline"] = {ADDED_7_2_0}}),	-- Dress in Lairs (Blackwing Lair)
+			}),
 			n(QUESTS, {
 				q(7781, {	-- The Lord of Blackrock [A]
 					["provider"] = { "i", 19003 },	-- Head of Nefarian

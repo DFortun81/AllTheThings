@@ -64,12 +64,12 @@ end]];
 -- #endif
 root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 3.0.1" } }, pvp(tier(WOTLK_TIER, {
 	n(SEASON_DEADLY, {
-		bubbleDown({
+		n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { "added 3.0.1", "removed 3.1.0" },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = DEADLY_GLADIATOR_ONUPDATE,
 			-- #endif
-		}, n(ACHIEVEMENTS, {
+		},{
 			ach(3336, {	-- Deadly Gladiator: Wrath of the Lich King Season 1
 				title(56),	-- Deadly Gladiator <Name>
 			}),
@@ -80,6 +80,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			i(46708, {	-- Deadly Gladiator's Frost Wyrm
 				["description"] = "Awarded to members of the Arena teams during Wrath Season 1 that were in the 0.5% bracket of their battlegroup.",
 			}),
+			ach(11710, {["timeline"] = {ADDED_7_2_0}}),	-- Lethal Looks (PvP Season 5)
 		})),
 		n(PVP_HONOR, {
 			n(WEAPONS, {
@@ -1843,12 +1844,12 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 		-- #endif
 	}),
 	applyclassicphase(WRATH_PHASE_TWO, n(SEASON_FURIOUS, {
-		bubbleDown({
+		n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { "added 3.1.0", "removed 3.2.0" },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = FURIOUS_GLADIATOR_ONUPDATE,
 			-- #endif
-		}, n(ACHIEVEMENTS, {
+		},{
 			ach(3436, {	-- Furious Gladiator: Wrath of the Lich King Season 2
 				title(132),	-- Furious Gladiator <Name>
 			}),
@@ -1859,6 +1860,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			i(46171, {	-- Furious Gladiator's Frost Wyrm
 				["description"] = "Awarded to members of the Arena teams during Wrath Season 2 that were in the 0.5% bracket of their battlegroup.",
 			}),
+			ach(11711, {["timeline"] = {ADDED_7_2_0}}),	-- The Fierce and the Furious (PvP Season 6)
 		})),
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {
@@ -2577,12 +2579,12 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 		})),
 	})),
 	applyclassicphase(WRATH_PHASE_THREE, n(SEASON_RELENTLESS, {
-		bubbleDown({
+		n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { "added 3.2.0", "removed 3.3.2" },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = RELENTLESS_GLADIATOR_ONUPDATE,
 			-- #endif
-		}, n(ACHIEVEMENTS, {
+		},{
 			ach(3758, {	-- Relentless Gladiator: Wrath of the Lich King Season 3
 				title(134),	-- Relentless Gladiator <Name>
 			}),
@@ -2593,6 +2595,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			i(47840, {	-- Relentless Gladiator's Frost Wyrm
 				["description"] = "Awarded to members of the Arena teams during Wrath Season 3 that were in the 0.5% bracket of their battlegroup.",
 			}),
+			ach(11712, {["timeline"] = {ADDED_7_2_0}}),	-- Relentlessly Good Looking (PvP Season 7)
 		})),
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {
@@ -3329,12 +3332,12 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 		})),
 	})),
 	applyclassicphase(WRATH_PHASE_FOUR, n(SEASON_WRATHFUL, {
-		bubbleDown({
+		n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { "added 3.3.2", "removed 4.0.1" },
 			-- #if BEFORE 5.0.1
 			["OnUpdate"] = WRATHFUL_GLADIATOR_ONUPDATE,
 			-- #endif
-		}, n(ACHIEVEMENTS, {
+		},{
 			ach(4599, {	-- Wrathful Gladiator: Wrath of the Lich King Season  4
 				title(142),	-- Wrathful Gladiator <Name>
 			}),
@@ -3345,6 +3348,7 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			i(50435, {	-- Wrathful Gladiator's Frost Wyrm
 				["description"] = "Awarded to members of the Arena teams during Wrath Season 4 that were in the 0.5% bracket of their battlegroup.",
 			}),
+			ach(11713, {["timeline"] = {ADDED_7_2_0}}),	-- Wrath of the Stitch King (PvP Season 8)
 		})),
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {

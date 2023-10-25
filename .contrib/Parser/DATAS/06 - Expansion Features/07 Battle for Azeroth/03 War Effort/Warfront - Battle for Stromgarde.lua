@@ -758,6 +758,7 @@ root(ROOTS.ExpansionFeatures,
 									crit(42127),	-- Venomarus
 									crit(42133),	-- Cresting Goliath
 								}),
+								ach(12993),	-- Don't Warfront Me
 								ach(13739, {	-- Heroic: Tour of War (A)
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {

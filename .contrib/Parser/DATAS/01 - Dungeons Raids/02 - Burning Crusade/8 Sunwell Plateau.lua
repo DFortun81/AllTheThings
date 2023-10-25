@@ -21,6 +21,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FIVE, {
 		["isRaid"] = true,
 		["lvl"] = lvlsquish(68, 68, 30),	-- Level 68s could zone in without any attunements. TODO: Check this.
 		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(11749, {["timeline"] = {ADDED_7_2_0}}),	-- Suns Out, Thori'dals Out (Sunwell Plateau)
+			}),
 			n(ZONE_DROPS, bubbleDown({
 			-- #IF AFTER 10.0
 				["_drop"] = { "classes", "c" },

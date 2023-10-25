@@ -2,6 +2,42 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(ACHIEVEMENTS, {
+	n(ARMOR, {
+		ach(11761, {	-- Azeroth's Next Top Model
+			title(356),	-- Stylist
+		}),
+		ach(10694, {	-- Fabulous
+			["sym"] = {{"meta_achievement",
+				10687,	-- Fashionista: Back
+				10682,	-- Fashionista: Chest
+				10685,	-- Fashionista: Feet
+				10693,	-- Fashionista: Hand
+				10681,	-- Fashionista: Head
+				10684,	-- Fashionista: Legs
+				10691,	-- Fashionista: Shirt
+				10692,	-- Fashionista: Shoulder
+				10690,	-- Fashionista: Tabard
+				10686,	-- Fashionista: Waist
+				10689,	-- Fashionista: Weapon & Off-Hand
+				10688,	-- Fashionista: Wrist
+			}},
+			["groups"] = {
+				title(334),	-- the Fabulous
+			},
+		}),
+		ach(10687),	-- Fashionista: Back
+		ach(10682),	-- Fashionista: Chest
+		ach(10685),	-- Fashionista: Feet
+		ach(10693),	-- Fashionista: Hand
+		ach(10681),	-- Fashionista: Head
+		ach(10684),	-- Fashionista: Legs
+		ach(10691),	-- Fashionista: Shirt
+		ach(10692),	-- Fashionista: Shoulder
+		ach(10690),	-- Fashionista: Tabard
+		ach(10686),	-- Fashionista: Waist
+		ach(10689),	-- Fashionista: Weapon & Off-Hand
+		ach(10688),	-- Fashionista: Wrist
+	}),
 	filter(MOUNTS, {
 		a(ach(15834, {	-- A Horde of Hoofbeats (A, 500 mounts)
 			i(198654),	-- Otterworldly Ottuk Carrier (MOUNT!)
@@ -59,4 +95,25 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		ach(2142),		-- Filling Up The Barn (25 mounts)
 		ach(2141),		-- Stable Keeper (10 mounts)
 	}),
+	filter(TOYS, {
+		ach(15781, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- The Joy of Toy (500)
+			i(197986),	-- Murglasses (TOY!)
+		})),
+		ach(12996, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {	-- Toybox Tycoon (400)
+			i(163244),		-- Brutus (PET!)
+		})),
+		ach(11176, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Remember to Share (300)
+			i(140500),		-- Mechanized Lumber Extractor (MOUNT!)
+		})),
+		ach(10354, bubbleDownSelf({ ["timeline"] = { "added 6.2.2" } }, {	-- Crashin' Thrashin' Commander(200)
+			title(53),		-- Crashin' Thrashin'
+		})),
+		ach(9673, bubbleDownSelf({ ["timeline"] = { "added 6.0.2" } }, {		-- The Toymaster (150)
+			i(119215),		-- Robo-Gnomebulator (TOY!)
+		})),
+		ach(9672, {["timeline"] = { "added 6.0.2" }}),		-- Tons of Toys (100)
+		ach(9671, {["timeline"] = { "added 6.0.2" }}),		-- Having a Ball (50)
+		ach(9670, {["timeline"] = { "added 6.0.2" }}),		-- Toying Around (25)
+	}),
 }))
+

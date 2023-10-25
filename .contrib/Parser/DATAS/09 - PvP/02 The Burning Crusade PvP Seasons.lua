@@ -356,12 +356,12 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 		})),
 	}),
 	n(SEASON_GLADIATOR, {
-		bubbleDown({
+		n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { "added 2.0.1.6180", "removed 2.1.2" },
 			-- #if BEFORE WRATH
 			["OnUpdate"] = SEASONONE_GLADIATOR_ONUPDATE,
 			-- #endif
-		}, n(ACHIEVEMENTS, {
+		},{
 			ach(886, {	-- Swift Nether Drake
 				["provider"] = { "i", 30609 },	-- Swift Nether Drake
 				["filterID"] = MOUNTS,
@@ -369,6 +369,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			i(30609, {	-- Swift Nether Drake
 				["description"] = "Awarded to members of the Arena teams during TBC Season 1 that were in the 0.5% bracket of their battlegroup.",
 			}),
+			ach(11706, {["timeline"] = {ADDED_7_2_0}}),	-- The Original (PvP Season 1)
 		})),
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {
@@ -1302,12 +1303,12 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 		}),
 	}),
 	applyclassicphase(TBC_PHASE_TWO, n(SEASON_MERCILESS, {
-		bubbleDown({
-			["timeline"] = { "added 2.1.2", "removed 2.3.0.7501" },
-			-- #if BEFORE WRATH
-			["OnUpdate"] = MERCILESS_GLADIATOR_ONUPDATE,
-			-- #endif
-		}, n(ACHIEVEMENTS, {
+		n(ACHIEVEMENTS, bubbleDown({
+				["timeline"] = { "added 2.1.2", "removed 2.3.0.7501" },
+				-- #if BEFORE WRATH
+				["OnUpdate"] = MERCILESS_GLADIATOR_ONUPDATE,
+				-- #endif
+		}, {
 			ach(418, {	-- Merciless Gladiator: Burning Crusade Season 2
 				title(37),	-- Merciless Gladiator <Name>
 			}),
@@ -1318,6 +1319,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			i(34092, {	-- Merciless Nether Drake
 				["description"] = "Awarded to members of the Arena teams during TBC Season 2 that were in the 0.5% bracket of their battlegroup.",
 			}),
+			ach(11707, {["timeline"] = {ADDED_7_2_0}}),	-- No Mercy (PvP Season 2)
 		})),
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {
@@ -2021,12 +2023,12 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 		}),
 	})),
 	applyclassicphase(TBC_PHASE_THREE, n(SEASON_VENGEFUL, {
-		bubbleDown({
+		n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { "added 2.3.0.7501", "removed 2.4.3.8600" },
 			-- #if BEFORE WRATH
 			["OnUpdate"] = VENGEFUL_GLADIATOR_ONUPDATE,
 			-- #endif
-		}, n(ACHIEVEMENTS, {
+		},{
 			ach(419, {	-- Vengeful Gladiator: Burning Crusade Season 3
 				title(40),	-- Vengeful Gladiator <Name>
 			}),
@@ -2037,6 +2039,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			i(37676, {	-- Vengeful Nether Drake
 				["description"] = "Awarded to members of the Arena teams during TBC Season 3 that were in the 0.5% bracket of their battlegroup.",
 			}),
+			ach(11708, {["timeline"] = {ADDED_7_2_0}}),	-- With a Vengeance (PvP Season 3)
 		})),
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {
@@ -2782,12 +2785,12 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 		}),
 	})),
 	applyclassicphase(TBC_PHASE_FIVE, n(SEASON_BRUTAL, {
-		bubbleDown({
+		n(ACHIEVEMENTS, bubbleDown({
 			["timeline"] = { "added 2.4.3.8600", "removed 3.0.1" },
 			-- #if BEFORE 4.0.1
 			["OnUpdate"] = BRUTAL_GLADIATOR_ONUPDATE,
 			-- #endif
-		}, n(ACHIEVEMENTS, {
+		},{
 			ach(420, {	-- Brutal Gladiator: Burning Crusade Season 4
 				title(49),	-- Brutal Gladiator <Name>
 			}),
@@ -2798,6 +2801,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			i(43516, {	-- Brutal Nether Drake
 				["description"] = "Awarded to members of the Arena teams during TBC Season 4 that were in the 0.5% bracket of their battlegroup.",
 			}),
+			ach(11709, {["timeline"] = {ADDED_7_2_0}}),	-- Tough Threads (PvP Season 4)
 		})),
 		n(PVP_GLADIATOR, {
 			n(WEAPONS, {

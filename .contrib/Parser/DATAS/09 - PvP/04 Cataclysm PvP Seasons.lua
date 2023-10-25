@@ -418,7 +418,7 @@ root(ROOTS.PVP, {
 			},
 		}),
 		n(SEASON_VICIOUS, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 4.0.3", "removed 4.2.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 4.0.3", "removed 4.2.0" }, }, {
 				ach(5344, {	-- Hero of the Alliance: Vicious
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -435,6 +435,7 @@ root(ROOTS.PVP, {
 				i(71339, {	-- Vicious Gladiator's Twilight Drake
 					["description"] = "Awarded to members of the Arena teams during Cata Season 1 that were in the 0.5% bracket of their battlegroup.",
 				}),
+				ach(11714, {["timeline"] = {ADDED_7_2_0}}),	-- Viciously Vintage (PvP Season 9)
 			})),
 			n(PVP_HONOR, {
 				cl(DEATHKNIGHT, {
@@ -2439,7 +2440,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_RUTHLESS, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 4.2.0", "removed 4.3.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 4.2.0", "removed 4.3.0" }, }, {
 				ach(6316, {	-- Hero of the Alliance: Ruthless
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2456,6 +2457,7 @@ root(ROOTS.PVP, {
 				i(71954, {	-- Ruthless Gladiator's Twilight Drake
 					["description"] = "Awarded to members of the Arena teams during Cata Season 2 that were in the 0.5% bracket of their battlegroup.",
 				}),
+				ach(11715, {["timeline"] = {ADDED_7_2_0}}),	-- (Ruth)less is More (PvP Season 10)
 			})),
 			n(PVP_GLADIATOR, {
 				n(WEAPONS, {
@@ -3808,7 +3810,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_CATACLYSMIC, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 4.3.0", "removed 5.0.0" }, }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 4.3.0", "removed 5.0.0" }, }, {
 				ach(6939, {	-- Hero of the Alliance: Cataclysmic
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -3825,6 +3827,7 @@ root(ROOTS.PVP, {
 				i(85785, {	-- Cataclysmic Gladiator's Twilight Drake
 					["description"] = "Awarded to members of the Arena teams during Cata Season 3 that were in the 0.5% bracket of their battlegroup.",
 				}),
+				ach(11716, {["timeline"] = {ADDED_7_2_0}}),	-- Cataclysmic Catwalk (PvP Season 11)
 			})),
 			n(PVP_GLADIATOR, {
 				n(WEAPONS, {

@@ -19,6 +19,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(12537),	-- Uldir Guild Run
+				ach(12991),	-- New Mog, G'huun This?
 				ach(12806, {	-- Glory of the Uldir Raider
 					["sym"] = {{"meta_achievement",
 						12551,	-- Double Dribble

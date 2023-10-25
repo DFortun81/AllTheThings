@@ -72,6 +72,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(101426),		-- Micronax (PET!)
 					},
 				}),
+				ach(11760, {["timeline"] = {ADDED_7_2_0}}),	-- Retro Trend (Tomb of Sargeras)
 				ach(11782),	-- Tomb of Sargeras Guild Run
 			}),
 			n(WORLD_QUESTS, {

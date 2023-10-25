@@ -25,6 +25,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					-- #endif
 					["maps"] = { AZSHARA },
 				}),
+				ach(11741, {["timeline"] = {ADDED_7_2_0}}),	-- So Hot Right Now (Molten Core)
 			}),
 			n(FACTIONS, {
 				faction(749, {	-- Hydraxian Waterlords

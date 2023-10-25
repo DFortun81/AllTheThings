@@ -5,7 +5,7 @@
 root(ROOTS.PVP, {
 	pvp(tier(LEGION_TIER, {
 		n(SEASON_VINDICTIVE, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.0.3", "removed 7.1.0.23222" } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 7.0.3", "removed 7.1.0.23222" } }, {
 				ach(11017),	-- Challenger: Legion Season 1
 				ach(11022, {	-- Defender of the Alliance: Legion Season 1
 					["races"] = ALLIANCE_ONLY,
@@ -98,6 +98,7 @@ root(ROOTS.PVP, {
 					["provider"] = { "i", 141843 },	-- Vindictive Gladiator's Storm Dragon (MOUNT!)
 					["filterID"] = MOUNTS,
 				}),
+				ach(11630, {["timeline"] = {ADDED_7_2_0}}),	-- More Like Win-dictive (PvP Season 19 or 20)
 			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				n(PVP_COMBATANT, {
@@ -3481,7 +3482,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_CRUEL, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.2.0", "removed 7.2.5" } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 7.2.0", "removed 7.2.5" } }, {
 				ach(11039),	-- Challenger: Legion Season 3
 				ach(11008, {	-- Cruel Combatant (Alliance) Legion Season 3
 					["races"] = ALLIANCE_ONLY,
@@ -3574,6 +3575,7 @@ root(ROOTS.PVP, {
 						}),
 					},
 				}),
+				ach(11723, {["timeline"] = {ADDED_7_2_0}}),	-- Cruel Intentions (PvP Season 21 or 22)
 			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				n(PVP_COMBATANT, {
@@ -7109,7 +7111,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_FIERCE, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 7.3.0", "removed 7.3.0.25600" } }, { -- Antorus Opening
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 7.3.0", "removed 7.3.0.25600" } }, { -- Antorus Opening
 				ach(12036),	-- Challenger: Legion Season 5
 				ach(12039, {	-- Defender of the Alliance: Legion Season 5
 					["races"] = ALLIANCE_ONLY,
@@ -7202,6 +7204,7 @@ root(ROOTS.PVP, {
 						}),
 					},
 				}),
+				ach(12021),	-- Claws Out (PvP Season 23, 24, or 25)
 			})),
 			n(FACTION_HEADER_ALLIANCE, {
 				n(PVP_COMBATANT, {

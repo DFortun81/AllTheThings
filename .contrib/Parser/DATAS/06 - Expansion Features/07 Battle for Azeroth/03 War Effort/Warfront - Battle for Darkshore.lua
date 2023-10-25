@@ -752,6 +752,7 @@ root(ROOTS.ExpansionFeatures,
 										crit(43465),	-- Catapult
 									},
 								}),
+								ach(13433),	-- Tall, Dark, and Sinister
 								ach(13297, {	-- War for the Shore (A)
 									["races"] = ALLIANCE_ONLY,
 								}),

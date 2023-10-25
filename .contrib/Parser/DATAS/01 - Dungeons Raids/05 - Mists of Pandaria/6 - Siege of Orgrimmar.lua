@@ -169,6 +169,7 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						i(104208),	-- Spawn of Galakras (MOUNT!)
 					},
 				}),
+				ach(11759, {["timeline"] = {ADDED_7_2_0}}),	-- Yaass'shaarj (Siege of Orgrimmar)
 				ach(8510),	-- Siege of Orgrimmar Guild Run
 			}),
 			n(QUESTS, {

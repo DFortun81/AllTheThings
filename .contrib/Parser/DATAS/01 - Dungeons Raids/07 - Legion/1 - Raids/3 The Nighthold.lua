@@ -52,6 +52,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						["provider"] = { "n", 104154 },	-- Gul'dan
                     }),
                 }),
+				ach(11628, {["timeline"] = {ADDED_7_2_0}}),	-- That's So Last Millennium (Nighthold)
 				ach(10868),	-- The Nighthold Guild Run
 			}),
 			n(WORLD_QUESTS, {

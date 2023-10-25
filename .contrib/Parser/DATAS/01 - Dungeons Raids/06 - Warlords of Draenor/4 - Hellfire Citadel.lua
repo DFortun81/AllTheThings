@@ -10,6 +10,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 		["lvl"] = 100,
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(11631, {["timeline"] = {ADDED_7_2_0}}),	-- Extreme Makeover: Fel Edition (Hellfire Citadel)
 				ach(10149, {	-- Glory of the Hellfire Raider
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",

@@ -24,6 +24,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.3.0"
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(14058),	-- All Eyes On Me (Ny'alotha)
 				ach(14146, {	-- Glory of the Ny'alotha Raider
 					["sym"] = {{"meta_achievement",
 					14019,	-- Smoke Test

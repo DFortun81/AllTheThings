@@ -124,6 +124,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 						["_encounter"] = { 1623, 6 },
 					}),
 				}),
+				ach(11752, {["timeline"] = {ADDED_7_2_0}}),	-- Style of the Crusader (Trial of the Crusader)
 			}),
 			n(VENDORS, {
 				n(35579, {	-- Aspirant Forudir <Triumphant Armor Vendor>
@@ -1829,7 +1830,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 							a(ig(48708)),		-- Spellstorm Blade
 							h(ig(48703)),		-- The Facebreaker
 							a(ig(48712)),		-- The Spinebreaker
-							
+
 						}),
 						-- #if BEFORE 4.0.3
 						i(47242, {	-- Trophy of the Crusade

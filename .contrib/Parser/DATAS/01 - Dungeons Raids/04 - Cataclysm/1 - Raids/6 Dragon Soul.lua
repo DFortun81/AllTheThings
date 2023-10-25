@@ -69,6 +69,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						i(77068),	-- Twilight Harbinger (MOUNT!)
 					},
 				}),
+				ach(11756, {["timeline"] = {ADDED_7_2_0}}),	-- Wardrobe of the Old Gods (Dragon Soul)
 				ach(6123),	-- Dragon Soul Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {

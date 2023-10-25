@@ -3,6 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 	n(ACHIEVEMENTS, {
+		ach(11747, {["timeline"] = {ADDED_7_2_0}}),	-- Merely a Set (Serpentshrine Cavern and The Eye)
 		ach(1287, {		-- Outland Dungeon Hero
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -58,5 +59,6 @@ root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 				698,	-- Sunwell Plateau
 			}},
 		}),
+		ach(11746, {["timeline"] = {ADDED_7_2_0}}),	-- Outlandish Style (Gruuls' Lair, Karazhan, and Magtheridon's Lair)
 	}),
 })));

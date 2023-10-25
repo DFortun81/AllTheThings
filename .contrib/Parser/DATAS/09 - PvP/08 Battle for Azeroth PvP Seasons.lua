@@ -6,7 +6,7 @@
 root(ROOTS.PVP, {
 	pvp(tier(BFA_TIER, {
 		n(SEASON_DREAD, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 8.0.1", "removed 8.1.0" } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 8.0.1", "removed 8.1.0" } }, {
 				ach(12959),	-- Challenger: Battle for Azeroth Season 1
 				ach(13199),	-- Combatant: Battle for Azeroth Season 1
 				ach(12962, {	-- Duelist: Battle for Azeroth Season 1
@@ -36,6 +36,7 @@ root(ROOTS.PVP, {
 					["races"] = HORDE_ONLY,
 				}),
 				ach(12960),	-- Rival: Battle for Azeroth Season 1
+				ach(12993, {["timeline"] = { ADDED_8_0_1 }}),	-- Don't Warfront Me
 			})),
 			n(PVP_ASPIRANT, {
 				n(WEAPONS, {
@@ -538,7 +539,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_SINISTER, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 8.1.0", "removed 8.2.0" } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 8.1.0", "removed 8.2.0" } }, {
 				ach(13203),	-- Challenger: Battle for Azeroth Season 2
 				ach(13204),	-- Combatant: Battle for Azeroth Season 2
 				ach(13209, {	-- Duelist: Battle for Azeroth Season 2
@@ -567,6 +568,7 @@ root(ROOTS.PVP, {
 					["provider"] = { "i", 156880 },	-- Sinister Gladiator's Proto-Drake (MOUNT!)
 					["filterID"] = MOUNTS,
 				}),
+				ach(13433, { ["timeline"] = { ADDED_8_0_1 }}),	-- Tall, Dark, and Sinister
 			})),
 			n(PVP_ASPIRANT, {
 				n(WEAPONS, {
@@ -1094,7 +1096,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_NOTORIOUS, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 8.2.0", "removed 8.3.0" } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 8.2.0", "removed 8.3.0" } }, {
 				ach(13634),	-- Challenger: Battle for Azeroth Season 3
 				ach(13639),	-- Combatant: Battle for Azeroth Season 3
 				ach(13642, {	-- Duelist: Battle for Azeroth Season 3
@@ -1123,6 +1125,7 @@ root(ROOTS.PVP, {
 					["filterID"] = MOUNTS,
 				}),
 				ach(13641),	-- Rival: Battle for Azeroth Season 3
+				ach(13585, { ["timeline"] = { ADDED_8_2_0 }}),	-- Never Lose, Never Choose To
 			})),
 			n(PVP_ASPIRANT, {
 				n(WEAPONS, {
@@ -1691,7 +1694,7 @@ root(ROOTS.PVP, {
 			}),
 		}),
 		n(SEASON_CORRUPTED, {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { "added 8.3.0", REMOVED_9_0_1 } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 8.3.0", REMOVED_9_0_1 } }, {
 				ach(13959),	-- Challenger: Battle for Azeroth Season 4
 				ach(13962),	-- Combatant: Battle for Azeroth Season 4
 				ach(13957, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
@@ -1720,6 +1723,7 @@ root(ROOTS.PVP, {
 					["races"] = HORDE_ONLY,
 				}),
 				ach(13963),	-- Rival: Battle for Azeroth Season 4
+				ach(14059, { ["timeline"] = { ADDED_8_3_0 }}),	-- The Eyes Have It (BFA PvP Season 4)
 			})),
 			n(PVP_ASPIRANT, {
 				n(WEAPONS, {

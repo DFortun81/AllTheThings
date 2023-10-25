@@ -26,6 +26,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 		["lvl"] = 50,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
+				ach(11743, {["timeline"] = {ADDED_7_2_0}}),	-- Accessor-Eyes (Temple of Ahn'Qiraj)
 				achWithRep(956, 910, {	-- Brood of Nozdormu
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Brood of Nozdormu to Exalted.",

@@ -20,6 +20,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
+				ach(13385),	-- Daz'aling Attire
 				ach(13315, {	-- Glory of the Dazar'alor Raider
 					["sym"] = {{"meta_achievement",
 						13316,	-- Can I Get a Hek Hek Hek Yeah?
