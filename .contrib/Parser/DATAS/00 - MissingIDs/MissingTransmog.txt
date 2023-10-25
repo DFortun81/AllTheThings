@@ -36175,6 +36175,9 @@ s(188118)/i(206756),	-- Ghrino Pauldrons
 s(188119)/i(206757),	-- Ghrino Bracers
 3.4.3.51384
 s(193798)/i(5108),	-- Dark Iron Leather
+3.4.3.51831
+s(194432)/i(211850),	-- The Horseman's Horrific Helm
+s(194433)/i(211851),	-- The Horseman's Baleful Blade
 7.3.0.24473
 s(76)/i(746),	-- Lord Brandon's Tabard (Test)
 s(147)/i(906),	-- Tan Leather Shoulderpads (Test)
@@ -39263,7 +39266,6 @@ s(25600)/i(51880),	-- h's Fetching Knife \\ Gluth's Fetching Knife
 s(25662)/i(51949),	-- Monster - Polearm, Epic D 07 (Val'kyr)
 s(25691)/i(51986),	-- Stalwart Wrap
 s(25693)/i(51988),	-- Stalwart Handguards
-s(25708)/i(52019),	-- Precious' Ribbon \\ ious' Ribbon \\ Precious's Ribbon
 s(25712)/i(52037),	-- Monster - Mace, Bloodqueen - D01
 s(25740)/i(52519),	--
 s(25741)/i(52520),	--
@@ -56202,11 +56204,6 @@ s(92749)/i(156153),	--
 s(92750)/i(156154),	--
 s(92751)/i(156155),	--
 s(92752)/i(156156),	--
-s(92821)/i(156251),	-- Shroud of Alteration
-s(92822)/i(156252),	-- Greaves of the Stonewarder
-s(92823)/i(156253),	-- Shoulders of Misfortune
-s(92824)/i(156254),	-- Leggings of the Tortured Earth
-s(92826)/i(156256),	-- Grips of Chaos
 s(92896)/i(156342),	--
 s(92913)/i(156362),	--
 s(92914)/i(156363),	--
@@ -56253,14 +56250,6 @@ s(93000)/i(156449),	--
 s(93001)/i(156450),	--
 s(93004)/i(156453),	--
 s(93008)/i(156457),	--
-s(93010)/i(156460),	-- Mimiron's Repeater
-s(93011)/i(156461),	-- Adamant Handguards
-s(93014)/i(156465),	-- Iceshear Mantle
-s(93015)/i(156466),	-- Bracers of Righteous Reformation
-s(93016)/i(156467),	-- Boots of Unsettled Prey
-s(93017)/i(156468),	-- Cloak of the Dormant Blaze
-s(93018)/i(156469),	-- Pillar of Fortitude
-s(93019)/i(156470),	-- Bloodcrush Cudgel
 s(93020)/i(156471),	--
 s(93047)/i(156547),	--
 s(93069)/i(156667),	--
@@ -60477,37 +60466,29 @@ s(107764)/i(173856),	-- Cloth Mantle
 s(107765)/i(173857),	-- Cloth Headdress
 s(107766)/i(173858),	-- Cloth Wraps
 s(108031)/i(174099),	--
-s(108414)/i(174234),	-- Maniacal Speaker's Cover \\ Cloth Helm - PH \\ Cloth Helm
 s(108418)/i(174235),	-- Cloth Chest - PH \\ Cloth Chest
 s(108423)/i(174236),	-- Cloth Shoulder - PH \\ Cloth Shoulder
-s(108426)/i(174237),	-- Breeches of Faithful Execution \\ Cloth Pants - PH \\ Cloth Pants
 s(108430)/i(174238),	-- Cloth Bracer - PH \\ Cloth Bracer
 s(108434)/i(174239),	-- Cloth Boots - PH \\ Cloth Boots
 s(108438)/i(174240),	-- Cloth Belt - PH \\ Cloth Belt
 s(108442)/i(174241),	-- Cloth Gloves - PH \\ Cloth Gloves
 s(108446)/i(174242),	-- Lether Chest - PH \\ Lether Chest
-s(108450)/i(174243),	-- Guise of the Voracious Prowler \\ Leather Helm - PH \\ Leather Helm
 s(108454)/i(174244),	-- Leather Shoulder - PH \\ Leather Shoulder
 s(108458)/i(174245),	-- Leather Gloves - PH \\ Leather Gloves
 s(108462)/i(174246),	-- Leather Bracer - PH \\ Leather Bracer
-s(108466)/i(174247),	-- Grotesque Mutilator's Leggings \\ Leather Pants - PH \\ Leather Pants
 s(108470)/i(174248),	-- Leather Belt - PH \\ Leather Belt
 s(108474)/i(174249),	-- Leather Boots - PH \\ Leather Boots
-s(108478)/i(174250),	-- Psyche Tormentor's Visage \\ Mail Helm - PH \\ Mail Helm
 s(108482)/i(174251),	-- Mail Chest - PH \\ Mail Chest
 s(108486)/i(174252),	-- Mail Shoulder - PH \\ Mail Shoulder
 s(108490)/i(174253),	-- Mail Gloves - PH \\ Mail Gloves
 s(108494)/i(174254),	-- Mail Bracer - PH \\ Mail Bracer
-s(108498)/i(174255),	-- Greaves of Shattered Thoughts \\ Mail Pants - PH \\ Mail Pants
 s(108502)/i(174256),	-- Mail Belt - PH \\ Mail Belt
 s(108506)/i(174257),	-- Mail Boots - PH \\ Mail Boots
-s(108510)/i(174258),	-- Greathelm of Indiscriminate Brutality \\ Plate Helm - PH \\ Plate Helm
 s(108514)/i(174259),	-- Plate Chest - PH \\ Plate Chest
 s(108518)/i(174260),	-- Plate Shoulder - PH \\ Plate Shoulder
 s(108522)/i(174261),	-- Plate Gloves - PH \\ Plate Gloves
 s(108526)/i(174262),	-- Plate Bracer - PH \\ Plate Bracer
 s(108530)/i(174263),	-- Plate Belt - PH \\ Plate Belt
-s(108534)/i(174264),	-- Chitinous Conqueror's Legplates \\ Plate Pants - PH \\ Plate Pants
 s(108538)/i(174265),	-- Plate Boots - PH \\ Plate Boots
 8.3.0.32203
 s(108651)/i(174453),	--
@@ -65131,7 +65112,7 @@ s(188797)/i(207258),	-- Screaming Torchfiend's Shawl \\ 10.2 Raid - Emerald Drea
 s(188798)/i(207259),	-- Screaming Torchfiend's Armlets \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Wrist
 s(188799)/i(207260),	-- Screaming Torchfiend's Clasp \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Waist
 s(188800)/i(207261),	-- Screaming Torchfiend's Horned Memento \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-s(188801)/i(207262),	-- Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
+s(188801)/i(207262),	-- Screaming Torchfiend's Blazewraps \\ Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
 s(188802)/i(207263),	-- Screaming Torchfiend's Burning Scowl \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Head
 s(188803)/i(207264),	-- Screaming Torchfiend's Grasp \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Hand
 s(188804)/i(207265),	-- Screaming Torchfiend's Clutches \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Feet
@@ -66537,17 +66518,17 @@ s(192359)/i(207261),	-- Screaming Torchfiend's Horned Memento \\ 10.2 Raid - Eme
 s(192360)/i(207261),	-- Screaming Torchfiend's Horned Memento \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Shoulder
 s(192361)/i(207261),	-- Screaming Torchfiend's Horned Memento \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Shoulder
 s(192362)/i(207261),	-- Screaming Torchfiend's Horned Memento \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-s(192363)/i(207262),	-- Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
-s(192364)/i(207262),	-- Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
-s(192365)/i(207262),	-- Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
-s(192366)/i(207262),	-- Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
-s(192367)/i(207262),	-- Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
-s(192368)/i(207262),	-- Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
-s(192369)/i(207262),	-- Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
-s(192370)/i(207262),	-- Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
-s(192371)/i(207262),	-- Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
-s(192372)/i(207262),	-- Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
-s(192373)/i(207262),	-- Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
+s(192363)/i(207262),	-- Screaming Torchfiend's Blazewraps \\ Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
+s(192364)/i(207262),	-- Screaming Torchfiend's Blazewraps \\ Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
+s(192365)/i(207262),	-- Screaming Torchfiend's Blazewraps \\ Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
+s(192366)/i(207262),	-- Screaming Torchfiend's Blazewraps \\ Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
+s(192367)/i(207262),	-- Screaming Torchfiend's Blazewraps \\ Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
+s(192368)/i(207262),	-- Screaming Torchfiend's Blazewraps \\ Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
+s(192369)/i(207262),	-- Screaming Torchfiend's Blazewraps \\ Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
+s(192370)/i(207262),	-- Screaming Torchfiend's Blazewraps \\ Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
+s(192371)/i(207262),	-- Screaming Torchfiend's Blazewraps \\ Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
+s(192372)/i(207262),	-- Screaming Torchfiend's Blazewraps \\ Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
+s(192373)/i(207262),	-- Screaming Torchfiend's Blazewraps \\ Screaming Torchfiends Blazewraps \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Legs
 s(192374)/i(207263),	-- Screaming Torchfiend's Burning Scowl \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Head
 s(192375)/i(207263),	-- Screaming Torchfiend's Burning Scowl \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Head
 s(192376)/i(207263),	-- Screaming Torchfiend's Burning Scowl \\ 10.2 Raid - Emerald Dream - Class Sets - Demon Hunter - Armor - Leather - Head
@@ -66786,10 +66767,10 @@ s(192665)/i(208420),	-- Visage of the Devouring Flame \\ 10.2 Raid - Emerald Dre
 s(192666)/i(208420),	-- Visage of the Devouring Flame \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - HEAD 2
 s(192667)/i(208420),	-- Visage of the Devouring Flame \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - HEAD 2
 s(192668)/i(208420),	-- Visage of the Devouring Flame \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - HEAD 2
-s(192671)/i(209202),	-- Verdant Gladiator's Chain Vest
-s(192672)/i(209202),	-- Verdant Gladiator's Chain Vest
-s(192673)/i(209203),	-- Verdant Gladiator's Chain Tunic
-s(192674)/i(209203),	-- Verdant Gladiator's Chain Tunic
+s(192671)/i(209202),	-- Verdant Gladiator's Chain Robe \\ Verdant Gladiator's Chain Vest
+s(192672)/i(209202),	-- Verdant Gladiator's Chain Robe \\ Verdant Gladiator's Chain Vest
+s(192673)/i(209203),	-- Verdant Gladiator's Chain Vestments \\ Verdant Gladiator's Chain Tunic
+s(192674)/i(209203),	-- Verdant Gladiator's Chain Vestments \\ Verdant Gladiator's Chain Tunic
 s(192675)/i(209204),	-- Verdant Gladiator's Chain Sabatons
 s(192676)/i(209204),	-- Verdant Gladiator's Chain Sabatons
 s(192677)/i(209205),	-- Verdant Gladiator's Chain Boots
@@ -67506,8 +67487,6 @@ s(193669)/i(210562),	--
 s(193670)/i(210563),	--
 s(193671)/i(210564),	--
 s(193718)/i(210649),	--
-s(193722)/i(210662),	-- Ochre Ornament of the Grove
-s(193725)/i(210666),	-- Crest of the Seething Flamekeeper
 s(193735)/i(210694),	--
 s(193736)/i(210694),	--
 s(193737)/i(210694),	--
@@ -67736,3 +67715,7 @@ s(194146)/i(211473),	-- Corrupted Knot
 s(194147)/i(207120),	-- Anguished Restraints \\ Cloth - WRIST 1
 s(194148)/i(207120),	-- Anguished Restraints \\ Cloth - WRIST 1
 s(194149)/i(207120),	-- Anguished Restraints \\ Cloth - WRIST 1
+10.2.0.51790
+s(194163)/i(211513),	-- Howling Echoes
+10.2.0.51825
+s(194439)/i(211871),	--

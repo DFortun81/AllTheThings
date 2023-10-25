@@ -162,8 +162,6 @@ ach(18860),	-- <Hidden> ACCOUNT: Renown Campaign Complete - Tyr 3
 ach(18938),	-- Seeing Red (account)
 10.1.7.50505
 ach(18959),	-- Don't Lose Your Head, Man
-ach(18960),	-- Kickin' With the Wick
-ach(18962),	-- A Cleansing Fire
 10.1.7.50730
 ach(6313),	-- [DNT] UTILITY: Promotion - China (Cenarion Hatchling)
 ach(9030),	-- Login Tracking Achievement [SERVER ONLY]
@@ -296,7 +294,6 @@ ach(19422),	-- Drake's Dreaming Crests earned
 ach(19423),	-- Wyrm's Dreaming Crests earned
 ach(19424),	-- Aspect's Dreaming Crests earned
 10.2.0.51601
-ach(17547),	-- The Lick King
 ach(19447),	-- <DNT> Eggs in Abundance Completed
 10.2.0.51685
 ach(19451),	-- <DNT> Fandral's Flamescythe Acquisition
