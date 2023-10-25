@@ -84,7 +84,7 @@ root(ROOTS.ExpansionFeatures,
 					["races"] = HORDE_ONLY,
 				}),
 				ach(9094, {	-- Garrison Architect
-					["sym"] = {{"meta_achievement",					
+					["sym"] = {{"meta_achievement",
 						9125,	-- Draftsman
 						9128,	-- Grand Master Draftsman
 						9126,	-- Master Draftsman
@@ -163,13 +163,47 @@ root(ROOTS.ExpansionFeatures,
 					crit(25213),		-- Pet Menagerie
 				}),
 				ach(9096, {	-- Master Builder
-					crit(1),		-- At least 3 small buildings activated
-					crit(2),		-- At least 2 medium buildings activated
-					crit(3),		-- At least 2 large buildings activated
+					crit(25226),		-- At least 3 small buildings activated
+					crit(25237),		-- At least 3 small buildings activated
+					crit(25238),		-- At least 3 small buildings activated
+					crit(25239),		-- At least 3 small buildings activated
+					crit(25240),		-- At least 3 small buildings activated
+					crit(25241),		-- At least 3 small buildings activated
+					crit(25242),		-- At least 3 small buildings activated
+					crit(25243),		-- At least 3 small buildings activated
+					crit(25233),		-- At least 3 small buildings activated
+					crit(25244),		-- At least 3 small buildings activated
+					crit(25245),		-- At least 2 medium buildings activated
+					crit(25246),		-- At least 2 medium buildings activated
+					crit(25247),		-- At least 2 medium buildings activated
+					crit(25248),		-- At least 2 medium buildings activated
+					crit(25249),		-- At least 2 medium buildings activated
+					crit(25250),		-- At least 2 large buildings activated
+					crit(25251),		-- At least 2 large buildings activated
+					crit(25252),		-- At least 2 large buildings activated
+					crit(25253),		-- At least 2 large buildings activated
+					crit(25225),		-- At least 2 large buildings activated
 					ach(9095, {		-- Builder
-						crit(1),		-- At least 2 small buildings activated
-						crit(2),		-- At least 2 medium buildings activated
-						crit(3),		-- At least 1 large building activated
+						crit(25236),		-- At least 2 small buildings activated
+						crit(25227),		-- At least 2 small buildings activated
+						crit(25228),		-- At least 2 small buildings activated
+						crit(25229),		-- At least 2 small buildings activated
+						crit(25235),		-- At least 2 small buildings activated
+						crit(25230),		-- At least 2 small buildings activated
+						crit(25231),		-- At least 2 small buildings activated
+						crit(25232),		-- At least 2 small buildings activated
+						crit(25233),		-- At least 2 small buildings activated
+						crit(25234),		-- At least 2 small buildings activated
+						crit(25216),		-- At least 2 medium buildings activated
+						crit(25220),		-- At least 2 medium buildings activated
+						crit(25217),		-- At least 2 medium buildings activated
+						crit(25218),		-- At least 2 medium buildings activated
+						crit(25219),		-- At least 2 medium buildings activated
+						crit(25221),		-- At least 1 large building activated
+						crit(25222),		-- At least 1 large building activated
+						crit(25223),		-- At least 1 large building activated
+						crit(25224),		-- At least 1 large building activated
+						crit(27941),		-- At least 1 large building activated
 					}),
 				}),
 				ach(9246),		-- Master Draenor Crafter
