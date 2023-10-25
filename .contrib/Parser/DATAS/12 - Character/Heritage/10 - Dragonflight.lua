@@ -375,7 +375,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 202700 },	-- Lysander Starshade
 					["coord"] = { 54, 79.4, FELWOOD },
 					["g"] = {
-						i(207004),	-- Incanter's Tome
+						i(207004),	-- Incanter's Tome (QI!)
 					},
 				}),
 				q(76196, {	-- Mercy or Misery
@@ -465,7 +465,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 199768 },	-- Dark Ranger Velonara
 					["coord"] = { 45.4, 42, SILVERPINE_FOREST },
 					["g"] = {
-						i(202182),	-- Acid Rifle
+						i(202182),	-- Acid Rifle (QI!)
 					},
 				}),
 				q(72857, {	-- Boom Weed
@@ -473,7 +473,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 199767 },	-- Master Apothecary Faranell
 					["coord"] = { 45.5, 41.9, SILVERPINE_FOREST },
 					["g"] = {
-						i(202186),	-- Boom Weed
+						i(202186),	-- Boom Weed (QI!)
 					},
 				}),
 				q(72856, {	-- Nothing Like the Classic
@@ -481,7 +481,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 199767 },	-- Master Apothecary Faranell
 					["coord"] = { 45.5, 41.9, SILVERPINE_FOREST },
 					["g"] ={
-						i(202187),	-- Plagued Flesh
+						i(202187),	-- Plagued Flesh (QI!)
 					},
 				}),
 				q(72859, {	-- A Proper Disguise
@@ -493,7 +493,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 199793 },	-- Calia Menethil
 					["coord"] = { 45.6, 41.6, SILVERPINE_FOREST },
 					["g"] = {
-						i(206929),	-- Hawlsey's Armor
+						i(206929),	-- Hawlsey's Armor (QI!)
 					},
 				}),
 				q(72860, {	-- Fear is Our Weapon
@@ -513,7 +513,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 199792 },	-- Lilian Voss
 					["coord"] = { 45.4, 41.6, SILVERPINE_FOREST },
 					["g"] = {
-						i(204799),	-- Scarlet Disguise
+						i(204799),	-- Scarlet Disguise (QI!)
 					},
 				}),
 				q(72862, {	-- Among Us

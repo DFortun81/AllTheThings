@@ -570,13 +570,13 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 							i(208191),	-- Time Lost Fragment
 						},
 					}),
-					i(208146, {	-- Incomplete Tablet
+					i(208146, {	-- Incomplete Tablet (QI!)
 						["cost"] = {{"i",208191,3}},	-- Time Lost Fragment (QI)
 					}),
 				},
 			}),
 			q(77305, {	-- Out of the Sands
-				["provider"] = { "i", 208146 },	-- Incomplete Tablet
+				["provider"] = { "i", 208146 },	-- Incomplete Tablet (QI)
 				--["sourceQuest"] = 76509,	-- Into the Sands
 			}),
 

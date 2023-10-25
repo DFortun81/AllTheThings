@@ -1175,7 +1175,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 205892 },	-- Shandris Feathermoon
 					["g"] = {
-						i(206598),	-- Smoldering Blossom
+						i(206598),	-- Smoldering Blossom (QI!)
 					},
 				}),
 				q(75922, {	-- Inflammatory Information
@@ -1188,7 +1188,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 205142 },	-- Shandris Feathermoon
 					["coord"] = { 21.7, 77.0, OHNAHRAN_PLAINS },
 					["g"] = {
-						i(206353),	-- Sentinel's Whistle
+						i(206353),	-- Sentinel's Whistle (QI!)
 					},
 				}),
 			})),

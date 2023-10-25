@@ -232,7 +232,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["timeline"] = { ADDED_10_1_7 },
 					["coord"] = { 57.7, 66.9, THE_WAKING_SHORES },
 					["g"] = {
-						i(208182),	-- Bronze Timepiece
+						i(208182),	-- Bronze Timepiece (QI!)
 					},
 				}),
 				q(68796, {	-- The Skytop Observatory

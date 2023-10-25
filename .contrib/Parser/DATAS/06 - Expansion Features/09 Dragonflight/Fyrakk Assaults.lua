@@ -303,10 +303,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
-	n(FYRAKK_ASSAULTS, {
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, {
+	n(FYRAKK_ASSAULTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 		q(75448),	-- Ward of Ingira Elite
 		q(75447),	-- Ward of Fyrakk Elite / Forgemaster 1st kill
 		q(75157),	-- Completes with 'Suffusion Camp' (questID 75888) (spellID 411135)
-	}),
+	})),
 }));

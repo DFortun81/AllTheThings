@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 					{ 71.8, 44.6, ORGRIMMAR },
 				},
 				["g"] = {
-					i(208206),	-- Teleportation Crystal
+					i(208206),	-- Teleportation Crystal (QI!)
 				},
 			}),
 			q(77409, {	-- Uncertainty
@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 				["coord"] = { 53.7, 68.2, KROKUUN },
 				["sourceQuests"] = { 77410 },	-- Opening Wounds
 				["g"] = {
-					i(208203),	-- Brilliant Star
+					i(208203),	-- Brilliant Star (QI!)
 				},
 			}),
 			q(77789, {	-- Severing Ties

@@ -17,7 +17,7 @@ local function DreamboundBOA(itemID, vendorItemID)
 end
 local DREAMSURGE_COALESCENCE = 207026;
 local DREAMSURGE_CHRYSALIS = 208153;
-root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DREAMSURGE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		n(QUESTS, {
 			q(77423, {	-- Surging Dreams
@@ -348,11 +348,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 		}),
 	})),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, {
 	n(DREAMSURGE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		q(78276),	-- 1st kill day / weekly
 		q(77794),	-- after 'some' boss kills for 'Birth of Flames' event
 	})),
-})));
+}));
