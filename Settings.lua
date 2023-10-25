@@ -3660,6 +3660,7 @@ local ids = {
 	["conduitID"] = "Conduit ID",
 	["creatureID"] = L["CREATURE_ID"],
 	["creatures"] = "Creatures List",
+	["criteriaID"] = "Criteria ID",
 	["currencyID"] = "Currency ID",
 	["difficultyID"] = L["DIFFICULTY_ID"],
 	["displayID"] = "Display ID",
