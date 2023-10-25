@@ -396,4 +396,4 @@ class Items(Thing):
     @staticmethod
     def extract_table_info(row: dict[str, str], build: str | None = None) -> str:
         # Helps Toys and Transmog
-        return f"{row['ID']}{DELIMITER}{row['Display_lang']}"
+        return f"{row['ID']}{DELIMITER}{row['Display_lang'].strip()}"
