@@ -98,12 +98,6 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["u"] = REMOVED_FROM_GAME,	-- 17th April 2023
 			["races"] = HORDE_ONLY,
 		}),
-		mount(419567, {	-- Ginormous Grrloc (MOUNT!)
-			["timeline"] = { "added 10.1.7.51886"},
-		}),
-		mount(400976, {	-- Gleaming Moonbeast (MOUNT!)
-			["timeline"] = { "added 10.1.7.51886"},
-		}),
 		i(112327, {	-- Grinning Reaver (MOUNT!)
 			["timeline"] = { "added 6.0.1.18297", "removed 8.3.0" },
 		}),
