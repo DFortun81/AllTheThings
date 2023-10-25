@@ -1,6 +1,8 @@
 -- Fishing - Skill ID 356 / Spell ID 7620
 profession(FISHING, {
+	-- #if NOT ANYCLASSIC
 	-- TODO: Many of these achievements can probably be better sourced according to where/how they are obtained I just wanted them out of Achievements for clean up
+	-- TODO: add timeline/sort into Location data
 	n(ACHIEVEMENTS, {
 		ach(1561,  {	-- 1000 Fish
 			ach(1560),		-- 500 Fish
@@ -297,7 +299,6 @@ profession(FISHING, {
 		}),
 		ach(6839),		-- Zen Master Fisherman
 	}),
-	-- #if NOT ANYCLASSIC
 	-- TODO: The format of this is all sorts of messed up and should be sorted into the addon. Clean this up!
 	n(DROPS, {
 		i(34109, {	-- Weather-Beaten Journal
