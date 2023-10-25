@@ -826,6 +826,13 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 
 root(ROOTS.HiddenQuestTriggers, {
 	tier(DF_TIER, {
+		-- Ensembles
+		q(77850),	-- Ensemble: Infinite Acolyte's Regalia (spellID 419820)
+		q(77851),	-- Ensemble: Infinite Acolyte's Regalia (spellID 421485)
+		q(77852),	-- Ensemble: Infinite Acolyte's Regalia (spellID 421486)
+		q(77853),	-- Ensemble: Infinite Acolyte's Regalia (spellID 421487)
+
+		-- Quantum Items
 		-- q(77595),	-- when you learn everything from Quantum ?
 		-- q(77596),	-- when you learn everything from Quantum ?
 		-- q(77597),	-- when you learn everything from Quantum ?
