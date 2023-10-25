@@ -1671,10 +1671,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1214, {	-- Aldren Cordon <Clothier>
 					["coord"] = { 64.8, 66.0, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select","itemID",
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Grey Shirt
+						16060,	-- Common White Shirt	
+					}},
 					["groups"] = {
-						i(16059),	-- Common Brown Shirt
-						i(3428),	-- Common Grey Shirt
-						i(16060),	-- Common White Shirt
 						i(4782, {	-- Solstice Robe
 							["isLimited"] = true,
 						}),

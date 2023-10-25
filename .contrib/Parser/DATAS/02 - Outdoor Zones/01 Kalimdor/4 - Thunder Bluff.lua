@@ -899,6 +899,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.6, 56.7, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Grey Shirt
+						16060,	-- Common White Shirt	
 						837,	-- Heavy Weave Armor
 						3589,	-- Heavy Weave Belt
 						3590,	-- Heavy Weave Bracers
@@ -912,11 +915,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						202,	-- Thick Cloth Shoes
 						200,	-- Thick Cloth Vest
 					}},
-					["groups"] = {
-						i(16059),	-- Common Brown Shirt
-						i(3428),	-- Common Grey Shirt
-						i(16060),	-- Common White Shirt
-					},
 				}),
 				n(3018, {	-- Hogor Thunderhoof <Guns Merchant>
 					["coord"] = { 55.6, 56.6, THUNDER_BLUFF },

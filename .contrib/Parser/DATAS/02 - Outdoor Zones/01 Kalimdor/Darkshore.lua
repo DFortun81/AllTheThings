@@ -2543,11 +2543,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.6, 20.6, DARKSHORE },
 					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(3428),	-- Common Grey Shirt
-						i(16059),	-- Common Brown Shirt
-						i(16060),	-- Common White Shirt
-					},
+					["sym"] = {{"select","itemID",
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Grey Shirt
+						16060,	-- Common White Shirt	
+					}},
 				}),
 				n(4307, {	-- Heldan Galesong <Fisherman>
 					["coord"] = { 37.0, 56.4, DARKSHORE },

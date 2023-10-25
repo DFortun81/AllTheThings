@@ -1587,6 +1587,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2375,	-- Battered Leather Gloves
 						2370,	-- Battered Leather Harness
 						2372,	-- Battered Leather Pants
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Gray Shirt
+						16060,	-- Common White Shirt
 						837,	-- Heavy Weave Armor
 						3589,	-- Heavy Weave Belt
 						3590,	-- Heavy Weave Bracers
@@ -1607,9 +1610,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2364,	-- Woven Vest
 					}},
 					["groups"] = {
-						i(16059),	-- Common Brown Shirt
-						i(3428),	-- Common Gray Shirt
-						i(16060),	-- Common White Shirt
 						i(1835),	-- Dirty Leather Belt
 						i(210),		-- Dirty Leather Boots
 						i(1836),	-- Dirty Leather Bracers

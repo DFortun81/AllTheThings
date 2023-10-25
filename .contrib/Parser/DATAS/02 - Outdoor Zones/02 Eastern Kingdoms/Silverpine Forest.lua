@@ -1576,10 +1576,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(3554, {	-- Andrea Boynton <Clothier>
 					["coord"] = { 44.6, 39.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
+					["sym"] = {{"select","itemID",
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Grey Shirt
+						16060,	-- Common White Shirt	
+					}},
 					["groups"] = {
-						i(16059),	-- Common Brown Shirt
-						i(3428),	-- Common Gray Shirt
-						i(16060),	-- Common White Shirt
 						i(4782, {	-- Solstice Robe
 							["isLimited"] = true,
 						}),
