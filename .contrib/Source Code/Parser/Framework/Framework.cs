@@ -1611,9 +1611,14 @@ namespace ATT
             if (data.TryGetValue("_encounter", out object encounterData))
             {
                 var encounterListData = Objects.CompressToList<long>(encounterData);
-                decimal encounterHash = Convert.ToDecimal(encounterListData[0])
-                    + (encounterListData.Count > 1 ? Convert.ToDecimal(encounterListData[1]) : 0M) / 100M;
-                DuplicateDataIntoGroups(data, encounterHash, "_encounterHash");
+                int encIndex = 0;
+                while (encIndex < encounterListData.Count)
+                {
+                    decimal encounterHash = Convert.ToDecimal(encounterListData[encIndex])
+                        + (encounterListData.Count > 1 ? Convert.ToDecimal(encounterListData[encIndex + 1]) : 0M) / 100M;
+                    DuplicateDataIntoGroups(data, encounterHash, "_encounterHash");
+                    encIndex += 2;
+                }
                 cloned = true;
             }
 
@@ -1642,7 +1647,7 @@ namespace ATT
                 // Make sure any Criteria which are listed under Guild Achievements are also forced non-collectible
                 if (data.TryGetValue("g", out List<object> g))
                 {
-                    foreach(object group in g)
+                    foreach (object group in g)
                     {
                         if (group.TryConvert(out Dictionary<string, object> groupData))
                         {
