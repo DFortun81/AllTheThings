@@ -58,14 +58,39 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 				["sourceQuests"] = { 77412 },	-- Proof and Promise
 			}),
 		}),
-		n(SPECIAL, {
-			i(208691, {	-- Argunite Cluster
-				["description"] = "Rewarded from any Allies of Azraal after the questline",
-				["sourceQuests"] = { 77795 },	-- Scavenged Artifacts
-				["crs"] = { 209855 },	-- Heraat <Ally of Arzaal>
-				["coord"] = { 56.4 ,52.2, KROKUUN },
+		n(SPECIAL, sharedData({
+			["sourceQuests"] = { 77795 },	-- Scavenged Artifacts
+			["g"] = {
+				i(208691, {	-- Argunite Cluster
+					["description"] = "Rewarded from any Allies of Arzaal after the questline",
+				}),
+			}
+		}, {
+			n(209860, {	-- Eranthi
+				["coord"] = { 58.9 ,23.7, ANTORAN_WASTES },
+				["questID"] = 77804,
 			}),
-		}),
+			n(209855, {	-- Heraat
+				["coord"] = { 56.4 ,52.2, KROKUUN },
+				["questID"] = 77800,
+			}),
+			n(209853, {	-- Saatilu
+				["coord"] = { 61.5 ,28.7, KROKUUN },
+				["questID"] = 77799,
+			}),
+			n(209863, {	-- Tronaar
+				["coord"] = { 51.9, 67.9, EREDATH },
+				["questID"] = 77807,
+			}),
+			n(209861, {	-- Yazdan
+				["coord"] = { 53.8, 52.9, ANTORAN_WASTES },
+				["questID"] = 77805,
+			}),
+			n(209862, {	-- Zyaana
+				["coord"] = { 55.1, 27.9, EREDATH },
+				["questID"] = 77806,
+			}),
+		})),
 		n(VENDORS, {
 			n(125246, {	-- Gaal <Blacksmith>
 				["sourceQuests"] = { 77795 },	-- Scavenged Artifacts
