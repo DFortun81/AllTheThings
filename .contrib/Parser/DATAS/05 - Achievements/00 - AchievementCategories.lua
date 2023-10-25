@@ -70,7 +70,6 @@ root(ROOTS.Achievements, {
 		achcat(ACHIEVEMENT_CATEGORY_DRAGONFLIGHT_RAID, {["timeline"] = {ADDED_10_0_2_LAUNCH}}),
 	}),
 	achcat(ACHIEVEMENT_CATEGORY_PROFESSIONS, {
-		-- TODO: sub-categories as they are cleaned
 		achcat(ACHIEVEMENT_CATEGORY_ALCHEMY, {["timeline"] = {ADDED_10_1_7}}),
 		achcat(ACHIEVEMENT_CATEGORY_BLACKSMITHING, {["timeline"] = {ADDED_10_1_7}}),
 		achcat(ACHIEVEMENT_CATEGORY_ENCHANTING, {["timeline"] = {ADDED_10_1_7}}),
@@ -115,7 +114,9 @@ root(ROOTS.Achievements, {
 		-- TODO: sub-categories as they are cleaned
 	}),
 	achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
-		-- TODO: sub-categories as they are cleaned
+		achcat(ACHIEVEMENT_CATEGORY_TOY_BOX),
+		achcat(ACHIEVEMENT_CATEGORY_MOUNTS),
+		achcat(ACHIEVEMENT_CATEGORY_APPEARANCES),
 		achcat(ACHIEVEMENT_CATEGORY_DRAGON_ISLES_DRAKE_COSMETICS),
 	}),
 	achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES, {

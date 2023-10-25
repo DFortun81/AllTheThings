@@ -1,9 +1,8 @@
---------------------------------------------------
---    A C H I E V E M E N T S    M O D U L E    --
---------------------------------------------------
-
-root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
-	achcat(ACHIEVEMENT_CATEGORY_TOY_BOX, {
+-------------------------------------------
+--    C H A R A C T E R   M O D U L E    --
+-------------------------------------------
+root(ROOTS.Character, n(ACHIEVEMENTS, {
+	filter(TOYS, {
 		ach(15781, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- The Joy of Toy (500)
 			i(197986),	-- Murglasses (TOY!)
 		})),
@@ -23,4 +22,4 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS, {
 		ach(9671, {["timeline"] = { "added 6.0.2" }}),		-- Having a Ball (50)
 		ach(9670, {["timeline"] = { "added 6.0.2" }}),		-- Toying Around (25)
 	}),
-}));
+}))
