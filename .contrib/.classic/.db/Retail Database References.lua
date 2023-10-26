@@ -38,28 +38,28 @@
 -- #IMPORT: 07 - Events\\Zalazane's Fall\\
 
 -- Craftables
--- #IMPORT: 10 - Craftables\\01 - Classic.lua
--- #IMPORT: 10 - Craftables\\02 - Burning Crusade.lua
--- #IMPORT: 10 - Craftables\\03 - Wrath of the Lich King.lua
--- #IMPORT: 10 - Craftables\\04 - Cataclysm.lua
+-- #IMPORT: 09 - Crafted Items\\01 - Classic.lua
+-- #IMPORT: 09 - Crafted Items\\02 - Burning Crusade.lua
+-- #IMPORT: 09 - Crafted Items\\03 - Wrath of the Lich King.lua
+-- #IMPORT: 09 - Crafted Items\\04 - Cataclysm.lua
 
 -- Group Finder
 -- #IMPORT: 04 - Group Finder\\Group Finder.lua
 
 -- Professions
--- #IMPORT: 11 - Professions\\
+-- #IMPORT: 10 - Professions\\
 
 -- Promotions & In-Game Shop
 -- #IMPORT: 12 - Promotions\\
 -- #IMPORT: 13 - In-Game Shop\\
 
 -- PvP
--- #IMPORT: 09 - PvP\\00 Achievements.lua
--- #IMPORT: 09 - PvP\\Battlegrounds\\
--- #IMPORT: 09 - PvP\\01 Classic PvP.lua
--- #IMPORT: 09 - PvP\\02 The Burning Crusade PvP Seasons.lua
--- #IMPORT: 09 - PvP\\03 Wrath of the Lich King PvP Seasons.lua
--- #IMPORT: 09 - PvP\\04 Cataclysm PvP Seasons.lua
+-- #IMPORT: 08 - PvP\\00 Achievements.lua
+-- #IMPORT: 08 - PvP\\Battlegrounds\\
+-- #IMPORT: 08 - PvP\\01 Classic PvP.lua
+-- #IMPORT: 08 - PvP\\02 The Burning Crusade PvP Seasons.lua
+-- #IMPORT: 08 - PvP\\03 Wrath of the Lich King PvP Seasons.lua
+-- #IMPORT: 08 - PvP\\04 Cataclysm PvP Seasons.lua
 
 -- NYI
 -- #IMPORT: 17 - NYI\\
