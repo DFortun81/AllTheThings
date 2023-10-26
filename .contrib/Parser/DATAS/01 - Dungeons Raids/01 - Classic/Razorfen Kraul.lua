@@ -270,8 +270,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(1727),	-- Sword of Decay
 				i(776),		-- Vendetta
 				i(3569, {	-- Vicar's Robe
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { "removed 6.0.2", "added 10.1.7" },
+					-- #if BEFORE 6.0.2
 					["cr"] = 4517,	-- Death's Head Priest
+					-- #endif
 				}),
 				i(1978),	-- Wolfclaw Gloves
 			}),
