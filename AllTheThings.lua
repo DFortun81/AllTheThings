@@ -3049,6 +3049,16 @@ local ResolveFunctions = {
 	["myModID"] = function(finalized, searchResults, o)
 		FinalizeModID = o.modID;
 	end,
+	-- Instruction to apply the modID from the Source object to any Items within the finalized search results
+	["whereMyModID"] = function(finalized, searchResults, o)
+		local modID = o.modID
+		for k=#searchResults,1,-1 do
+			local s = searchResults[k];
+			if not s.modID or s.modID ~= modID then
+				tremove(searchResults, k);
+			end
+		end
+	end,
 	-- Instruction to query all criteria of an Achievement via the in-game APIs and generate Criteria data into the most-accurate Sources
 	["achievement_criteria"] = function(finalized, searchResults, o)
 		-- Instruction to select the criteria provided by the achievement this is attached to. (maybe build this into achievements?)
