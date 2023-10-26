@@ -22,12 +22,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["g"] = {
 					i(187793),	-- Personal Containment Trap (TOY!)
 					crit(52552, {
-						["crs"] = { 181221 },	-- Bygone Elemental
+						["crs"] = { 181221 },	-- Bygone Geomental
 						["coord"] = { 61.9, 68, ZERETH_MORTIS },
 					}),
-					crit(52553, {	-- Gaiagantic
+					crit(52553, {
 						["description"] = "Only Available during the Daily Quest: Overgrown Story (64785).",
-						["crs"] = { 181223 },
+						["crs"] = { 181223 },	-- Gaiagantic
 						["coord"] = { 60.9, 64.4, ZERETH_MORTIS },
 					}),
 					crit(52554, {

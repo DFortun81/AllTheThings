@@ -7,34 +7,34 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 		n(COVENANT_ASSAULTS, {
 			n(ACHIEVEMENTS, {
 				ach(15032, {	-- Breaking Their Hold
-					crit(1, {	-- Dead On Their Feet
+					crit(52000, {	-- Dead On Their Feet
 						["sourceQuests"] = { 63455 },	-- Dead On Their Feet
 					}),
-					crit(2, {	-- Here's an Axe, Get to Work!
+					crit(52001, {	-- Here's an Axe, Get to Work!
 						["sourceQuests"] = { 63625 },	-- Here's an Axe, Get to Work!
 					}),
-					crit(3, {	-- You and What Army
+					crit(52002, {	-- You and What Army
 						["sourceQuests"] = { 63773 },	-- You and What Army
 					}),
-					crit(4, {	-- An Embarrassment of Corpses
+					crit(52003, {	-- An Embarrassment of Corpses
 						["sourceQuests"] = { 63774 },	-- An Embarrassment of Corpses
 					}),
-					crit(5, {	-- Putting A Plan Together
+					crit(52004, {	-- Putting A Plan Together
 						["sourceQuests"] = { 63545 },	-- Putting A Plan Together
 					}),
-					crit(6, {	-- Centurions March!
+					crit(52005, {	-- Centurions March!
 						["sourceQuests"] = { 63753 },	-- Centurions March!
 					}),
-					crit(7, {	-- Pulling His Chain
+					crit(52006, {	-- Pulling His Chain
 						["sourceQuests"] = { 63621 },	-- Pulling His Chain
 					}),
-					crit(8, {	-- Splash Damage
+					crit(52007, {	-- Splash Damage
 						["sourceQuests"] = { 59004 },	-- Splash Damage
 					}),
-					crit(9, {	-- Get to the Point
+					crit(52008, {	-- Get to the Point
 						["sourceQuests"] = { 63664 },	-- Get to the Point
 					}),
-					crit(10, {	-- Somebody Feed Kevin
+					crit(52009, {	-- Somebody Feed Kevin
 						["sourceQuests"] = { 63669 },	-- Somebody Feed Kevin
 					}),
 				}),
@@ -53,112 +53,112 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					}},
 				}),
 				ach(15036, {	-- Rooting Out The Evil
-					crit(1, {	-- Clean Out the Crucible
+					crit(52031, {	-- Clean Out the Crucible
 						["sourceQuests"] = { 63968 },	-- Clean Out the Crucible
 					}),
-					crit(2, {	-- Looming Darkness
+					crit(52032, {	-- Looming Darkness
 						["sourceQuests"] = { 63969 },	-- Looming Darkness
 					}),
-					crit(3, {	-- No Soul Left Behind
+					crit(52033, {	-- No Soul Left Behind
 						["sourceQuests"] = { 63970 },	-- No Soul Left Behind
 					}),
-					crit(4, {	-- Snail Stomping
+					crit(52034, {	-- Snail Stomping
 						["sourceQuests"] = { 63971 },	-- Snail Stomping
 					}),
-					crit(5, {	-- Just Don't Ask Me to Spell It
+					crit(52035, {	-- Just Don't Ask Me to Spell It
 						["sourceQuests"] = { 63972 },	-- Just Don't Ask Me to Spell It
 					}),
-					crit(6, {	-- Double Dromans
+					crit(52036, {	-- Double Dromans
 						["sourceQuests"] = { 63973 },	-- Double Dromans
 					}),
-					crit(7, {	-- That's Going to Sting
+					crit(52037, {	-- That's Going to Sting
 						["sourceQuests"] = { 63974 },	-- That's Going to Sting
 					}),
-					crit(8, {	-- The Soul Blade
+					crit(52038, {	-- The Soul Blade
 						["sourceQuests"] = { 63945 },	-- The Soul Blade
 					}),
-					crit(9, {	-- A Shady Place
+					crit(52039, {	-- A Shady Place
 						["sourceQuests"] = { 63951 },	-- A Shady Place
 					}),
-					crit(10, {	-- Heavy-Handed Tactics
+					crit(52040, {	-- Heavy-Handed Tactics
 						["sourceQuests"] = { 63952 },	-- Heavy-Handed Tactics
 					}),
 				}),
 				ach(15033, {	-- Taking the Tremaculum
-					crit(1, {	-- Terrorizing the Tremaculum
+					crit(52017, {	-- Terrorizing the Tremaculum
 						["sourceQuests"] = { 63833 },	-- Terrorizing the Tremaculum
 					}),
-					crit(2, {	-- Weapons of the Tremaculum
+					crit(52018, {	-- Weapons of the Tremaculum
 						["sourceQuests"] = { 63834 },	-- Weapons of the Tremaculum
 					}),
-					crit(3, {	-- That's a Good Trick
+					crit(52019, {	-- That's a Good Trick
 						["sourceQuests"] = { 63842 },	-- That's a Good Trick
 					}),
-					crit(4, {	-- Fangcrack's Fan Club
+					crit(52020, {	-- Fangcrack's Fan Club
 						["sourceQuests"] = { 63836 },	-- Fangcrack's Fan Club
 					}),
-					crit(5, {	-- A Tea for Every Occasion
+					crit(52021, {	-- A Tea for Every Occasion
 						["sourceQuests"] = { 63837 },	-- A Tea for Every Occasion
 					}),
-					crit(6, {	-- Duelist's Challenge
+					crit(52022, {	-- Duelist's Challenge
 						["sourceQuests"] = { 63838 },	-- Duelist's Challenge
 					}),
-					crit(7, {	-- If Even One is Worthy
+					crit(52023, {	-- If Even One is Worthy
 						["sourceQuests"] = { 63839 },	-- If Even One is Worthy
 					}),
-					crit(8, {	-- They Grow Up So Quickly
+					crit(52024, {	-- They Grow Up So Quickly
 						["sourceQuests"] = { 63840 },	-- They Grow Up So Quickly
 					}),
-					crit(9, {	-- The Skyhunt
+					crit(52025, {	-- The Skyhunt
 						["sourceQuests"] = { 63841 },	-- The Skyhunt
 					}),
-					crit(10, {	-- Wrath of the Party Herald
+					crit(52026, {	-- Wrath of the Party Herald
 						["sourceQuests"] = { 63835 },	-- Wrath of the Party Herald
 					}),
 				}),
 				ach(15000, {	-- United Front
-					crit(1, {	-- Necrolord Assault
+					crit(51720, {	-- Necrolord Assault
 						["sourceQuests"] = { 63543 },	-- Necrolord Assault
 					}),
-					crit(2, {	-- Venthyr Assault
+					crit(51721, {	-- Venthyr Assault
 						["sourceQuests"] = { 63822 },	-- Venthyr Assault
 					}),
-					crit(3, {	-- Night Fae Assault
+					crit(51722, {	-- Night Fae Assault
 						["sourceQuests"] = { 63823 },	-- Night Fae Assault
 					}),
-					crit(4, {	-- Kyrian Assault
+					crit(51723, {	-- Kyrian Assault
 						["sourceQuests"] = { 63824 },	-- Kyrian Assault
 					}),
 				}),
 				ach(15034, {	-- Wings Against the Flames
-					crit(1, {	-- Mine's Bigger
+					crit(52010, {	-- Mine's Bigger
 						["sourceQuests"] = { 63828 },	-- Mine's Bigger
 					}),
-					crit(2, {	-- Heart and Soul
+					crit(52011, {	-- Heart and Soul
 						["sourceQuests"] = { 63843 },	-- Heart and Soul
 					}),
-					crit(3, {	-- No One Floats Down Here
+					crit(52012, {	-- No One Floats Down Here
 						["sourceQuests"] = { 63829 },	-- No One Floats Down Here
 					}),
-					crit(4, {	-- Encouraging Words
+					crit(52013, {	-- Encouraging Words
 						["sourceQuests"] = { 63827 },	-- Encouraging Words
 					}),
-					crit(5, {	-- Courage of the Soul
+					crit(52014, {	-- Courage of the Soul
 						["sourceQuests"] = { 63858 },	-- Courage of the Soul
 					}),
-					crit(6, {	-- Saved By The Bells
+					crit(52015, {	-- Saved By The Bells
 						["sourceQuests"] = { 63859 },	-- Saved By The Bells
 					}),
-					crit(7, {	-- United In Pride
+					crit(52016, {	-- United In Pride
 						["sourceQuests"] = { 63863 },	-- United In Pride
 					}),
-					crit(8, {	-- The Ember Count
+					crit(52041, {	-- The Ember Count
 						["sourceQuests"] = { 63846 },	-- The Ember Count
 					}),
-					crit(9, {	-- Kill The Flame
+					crit(52042, {	-- Kill The Flame
 						["sourceQuests"] = { 63853 },	-- Kill The Flame
 					}),
-					crit(10, {	-- The Dreadful Blend
+					crit(52043, {	-- The Dreadful Blend
 						["sourceQuests"] = { 63864 },	-- The Dreadful Blend
 					}),
 				}),
@@ -370,19 +370,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["coord"] = { 33.8, 54.8, THE_MAW },
 							["g"] = {
 								achraw(15037, {	-- This Army
-									crit(1, {	-- Cutter Fin
+									crit(52044, {	-- Cutter Fin
 										["crs"] = { 177771 },	-- Cutter Fin
 									}),
-									crit(2, {	-- Kearnen the Blade
+									crit(52045, {	-- Kearnen the Blade
 										["crs"] = { 177769 },	-- Kearnen the Blade
 									}),
-									crit(3, {	-- Winslow Swan
+									crit(52046, {	-- Winslow Swan
 										["crs"] = { 177764 },	-- Winslow Swain
 									}),
-									crit(4, {	-- Boil Master Yetch
+									crit(52047, {	-- Boil Master Yetch
 										["crs"] = { 177767 },	-- Boil Master Yetch
 									}),
-									crit(5, {	-- Flytrap
+									crit(52048, {	-- Flytrap
 										["crs"] = { 158300 },	-- Flytrap
 									}),
 								}),
@@ -530,28 +530,28 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["coord"] = { 22.2, 43.3, THE_MAW },
 							["g"] = {
 								ach(15044, {	-- Krrprripripkraak's Heroes
-									crit(1, {	-- Elder Gwenna
+									crit(52078, {	-- Elder Gwenna
 										["crs"] = { 179555 },	-- Elder Gwenna
 										["coord"] = { 20.4, 43.9, THE_MAW },
 									}),
-									crit(2, {	-- Foreman Thorodir
+									crit(52079, {	-- Foreman Thorodir
 										["crs"] = { 179554 },	-- Foreman Thorodir
 										["coord"] = { 20.6, 32.8, THE_MAW },
 									}),
-									crit(3, {	-- Te'zan
+									crit(52080, {	-- Te'zan
 										["crs"] = { 179553 },	-- Te'zan
 										["coord"] = { 25.6, 39.0, THE_MAW },
 									}),
-									crit(4, {	-- Warden Casad
+									crit(52081, {	-- Warden Casad
 										["crs"] = { 179561 },	-- Warden Casad
 										["coord"] = { 23.7, 42.4, THE_MAW },
 									}),
-									crit(5, {	-- Kivarr
+									crit(52082, {	-- Kivarr
 										["description"] = "Inside the cave.",
 										["crs"] = { 179557 },	-- Kivarr
 										["coord"] = { 20.8, 39.3, THE_MAW },
 									}),
-									crit(6, {	-- Guardian Kota
+									crit(52083, {	-- Guardian Kota
 										["crs"] = { 179559 },	-- Guardian Kota
 										["coord"] = { 21.9, 45.7, THE_MAW },
 									}),
@@ -726,35 +726,35 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["coord"] = { 29.6, 17.9, THE_MAW },
 							["g"] = {
 								ach(15042, {	-- Tea for the Troubled
-									crit(1, {	-- Simone
+									crit(52065, {	-- Simone
 										["crs"] = { 179465 },	-- Simone
 										["coord"] = { 26.7, 14.6, THE_MAW },
 									}),
-									crit(2, {	-- Laurent
+									crit(52066, {	-- Laurent
 										["crs"] = { 179466 },	-- Laurent
 										["coord"] = { 31.6, 14.2, THE_MAW },
 									}),
-									crit(3, {	-- Archivist Fane
+									crit(52067, {	-- Archivist Fane
 										["crs"] = { 179471 },	-- Archivist Fane
 										["coord"] = { 26.6, 20.0, THE_MAW },
 									}),
-									crit(4, {	-- The Countess
+									crit(52068, {	-- The Countess
 										["crs"] = { 179473 },	-- The Countess
 										["coord"] = { 24.8, 17.4, THE_MAW },
 									}),
-									crit(5, {	-- Kael'thas Sunstrider
+									crit(52069, {	-- Kael'thas Sunstrider
 										["crs"] = { 179475 },	-- Kael'thas Sunstrider
 										["coord"] = { 27.0, 18.5, THE_MAW },
 									}),
-									crit(6, {	-- Lost Sybille
+									crit(52070, {	-- Lost Sybille
 										["crs"] = { 179476 },	-- Lost Sybille
 										["coord"] = { 31.3, 20.5, THE_MAW },
 									}),
-									crit(7, {	-- Vulca
+									crit(52071, {	-- Vulca
 										["crs"] = { 179477 },	-- Vulca
 										["coord"] = { 27.3, 20.2, THE_MAW },
 									}),
-									crit(8, {	-- Iven
+									crit(52072, {	-- Iven
 										["crs"] = { 179478 },	-- Iven
 										["coord"] = { 32.7, 14.8, THE_MAW },
 									}),
