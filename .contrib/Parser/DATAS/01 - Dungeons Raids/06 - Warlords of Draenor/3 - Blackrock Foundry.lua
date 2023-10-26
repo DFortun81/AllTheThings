@@ -121,6 +121,10 @@ local SYM_VANQ_LEGS =	{{"select","itemID",
 						115535,	-- Ogreskull Boneplate Greaves
 						115573,	-- Poisoner's Legguards
 						},{"whereMyModID"}}
+local function SymModID(sym, modID)
+	local symmodid = { sym[1],{"where","modID",modID}}
+	return symmodid
+end
 
 ------ EnconterToLoot ------
 local EncounterToLoot = {
@@ -730,47 +734,49 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 				Boss(BLACKHAND, {	-- Blackhand
 					i(120277, {	-- Essence of the Iron Conqueror
 						["questID"] = 37553,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["g"] = {
 							i(120215, {	-- Helm of the Iron Conqueror
-								["sym"] = SYM_CONQ_HELM,
+								["sym"] = SymModID(SYM_CONQ_HELM, 3),
 							}),
 							i(120216, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SYM_CONQ_SHLDR,
+								["sym"] = SymModID(SYM_CONQ_SHLDR, 3),
 							}),
 							i(120212, {	-- Chest of the Iron Conqueror
-								["sym"] = SYM_CONQ_CHEST,
+								["sym"] = SymModID(SYM_CONQ_CHEST, 3),
 							}),
 							i(120213, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SYM_CONQ_GLOVE,
+								["sym"] = SymModID(SYM_CONQ_GLOVE, 3),
 							}),
 							i(120214, {	-- Leggings of the Iron Conqueror
-								["sym"] = SYM_CONQ_LEGS,
+								["sym"] = SymModID(SYM_CONQ_LEGS, 3),
 							}),
 						},
 					}),
 					i(119310, {	-- Essence of the Iron Conqueror
 						["questID"] = 37540,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["g"] = {
 							i(120215, {	-- Helm of the Iron Conqueror
-								["sym"] = SYM_CONQ_HELM,
+								["sym"] = SymModID(SYM_CONQ_HELM, 3),
 							}),
 							i(120216, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SYM_CONQ_SHLDR,
+								["sym"] = SymModID(SYM_CONQ_SHLDR, 3),
 							}),
 							i(120212, {	-- Chest of the Iron Conqueror
-								["sym"] = SYM_CONQ_CHEST,
+								["sym"] = SymModID(SYM_CONQ_CHEST, 3),
 							}),
 							i(120213, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SYM_CONQ_GLOVE,
+								["sym"] = SymModID(SYM_CONQ_GLOVE, 3),
 							}),
 							i(120214, {	-- Leggings of the Iron Conqueror
-								["sym"] = SYM_CONQ_LEGS,
+								["sym"] = SymModID(SYM_CONQ_LEGS, 3),
 							}),
 						},
 					}),
@@ -778,22 +784,23 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["questID"] = 37555,
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["g"] = {
 							i(120225, {	-- Helm of the Iron Protector
-								["sym"] = SYM_PROT_HELM,
+								["sym"] = SymModID(SYM_PROT_HELM, 3),
 							}),
 							i(120226, {	-- Shoulders of the Iron Protector
-								["sym"] = SYM_PROT_SHLDR,
+								["sym"] = SymModID(SYM_PROT_SHLDR, 3),
 							}),
 							i(120222, {	-- Chest of the Iron Protector
-								["sym"] = SYM_PROT_CHEST,
+								["sym"] = SymModID(SYM_PROT_CHEST, 3),
 							}),
 							i(120223, {	-- Gauntlets of the Iron Protector
-								["sym"] = SYM_PROT_GLOVE,
+								["sym"] = SymModID(SYM_PROT_GLOVE, 3),
 							}),
 							i(120224, {	-- Leggings of the Iron Protector
-								["sym"] = SYM_PROT_LEGS,
+								["sym"] = SymModID(SYM_PROT_LEGS, 3),
 							}),
 						},
 					}),
@@ -801,22 +808,23 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["questID"] = 37543,
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["g"] = {
 							i(120225, {	-- Helm of the Iron Protector
-								["sym"] = SYM_PROT_HELM,
+								["sym"] = SymModID(SYM_PROT_HELM, 3),
 							}),
 							i(120226, {	-- Shoulders of the Iron Protector
-								["sym"] = SYM_PROT_SHLDR,
+								["sym"] = SymModID(SYM_PROT_SHLDR, 3),
 							}),
 							i(120222, {	-- Chest of the Iron Protector
-								["sym"] = SYM_PROT_CHEST,
+								["sym"] = SymModID(SYM_PROT_CHEST, 3),
 							}),
 							i(120223, {	-- Gauntlets of the Iron Protector
-								["sym"] = SYM_PROT_GLOVE,
+								["sym"] = SymModID(SYM_PROT_GLOVE, 3),
 							}),
 							i(120224, {	-- Leggings of the Iron Protector
-								["sym"] = SYM_PROT_LEGS,
+								["sym"] = SymModID(SYM_PROT_LEGS, 3),
 							}),
 						},
 					}),
@@ -824,22 +832,23 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["questID"] = 37554,
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["g"] = {
 							i(120218, {	-- Helm of the Iron Vanquisher
-								["sym"] = SYM_VANQ_HELM,
+								["sym"] = SymModID(SYM_VANQ_HELM, 3),
 							}),
 							i(120220, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SYM_VANQ_SHLDR,
+								["sym"] = SymModID(SYM_VANQ_SHLDR, 3),
 							}),
 							i(120221, {	-- Chest of the Iron Vanquisher
-								["sym"] = SYM_VANQ_CHEST,
+								["sym"] = SymModID(SYM_VANQ_CHEST, 3),
 							}),
 							i(120217, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SYM_VANQ_GLOVE,
+								["sym"] = SymModID(SYM_VANQ_GLOVE, 3),
 							}),
 							i(120219, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SYM_VANQ_LEGS,
+								["sym"] = SymModID(SYM_VANQ_LEGS, 3),
 							}),
 						},
 					}),
@@ -847,22 +856,23 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["questID"] = 37541,
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["g"] = {
 							i(120218, {	-- Helm of the Iron Vanquisher
-								["sym"] = SYM_VANQ_HELM,
+								["sym"] = SymModID(SYM_VANQ_HELM, 3),
 							}),
 							i(120220, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SYM_VANQ_SHLDR,
+								["sym"] = SymModID(SYM_VANQ_SHLDR, 3),
 							}),
 							i(120221, {	-- Chest of the Iron Vanquisher
-								["sym"] = SYM_VANQ_CHEST,
+								["sym"] = SymModID(SYM_VANQ_CHEST, 3),
 							}),
 							i(120217, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SYM_VANQ_GLOVE,
+								["sym"] = SymModID(SYM_VANQ_GLOVE, 3),
 							}),
 							i(120219, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SYM_VANQ_LEGS,
+								["sym"] = SymModID(SYM_VANQ_LEGS, 3),
 							}),
 						},
 					}),
@@ -894,22 +904,23 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["questID"] = 37557,
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["g"] = {
 							i(120230, {	-- Helm of the Iron Conqueror
-								["sym"] = SYM_CONQ_HELM,
+								["sym"] = SymModID(SYM_CONQ_HELM, 5),
 							}),
 							i(120231, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SYM_CONQ_SHLDR,
+								["sym"] = SymModID(SYM_CONQ_SHLDR, 5),
 							}),
 							i(120227, {	-- Chest of the Iron Conqueror
-								["sym"] = SYM_CONQ_CHEST,
+								["sym"] = SymModID(SYM_CONQ_CHEST, 5),
 							}),
 							i(120228, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SYM_CONQ_GLOVE,
+								["sym"] = SymModID(SYM_CONQ_GLOVE, 5),
 							}),
 							i(120229, {	-- Leggings of the Iron Conqueror
-								["sym"] = SYM_CONQ_LEGS,
+								["sym"] = SymModID(SYM_CONQ_LEGS, 5),
 							}),
 						},
 					}),
@@ -917,22 +928,23 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["questID"] = 37551,
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["g"] = {
 							i(120230, {	-- Helm of the Iron Conqueror
-								["sym"] = SYM_CONQ_HELM,
+								["sym"] = SymModID(SYM_CONQ_HELM, 5),
 							}),
 							i(120231, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SYM_CONQ_SHLDR,
+								["sym"] = SymModID(SYM_CONQ_SHLDR, 5),
 							}),
 							i(120227, {	-- Chest of the Iron Conqueror
-								["sym"] = SYM_CONQ_CHEST,
+								["sym"] = SymModID(SYM_CONQ_CHEST, 5),
 							}),
 							i(120228, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SYM_CONQ_GLOVE,
+								["sym"] = SymModID(SYM_CONQ_GLOVE, 5),
 							}),
 							i(120229, {	-- Leggings of the Iron Conqueror
-								["sym"] = SYM_CONQ_LEGS,
+								["sym"] = SymModID(SYM_CONQ_LEGS, 5),
 							}),
 						},
 					}),
@@ -940,22 +952,23 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["questID"] = 37559,
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["g"] = {
 							i(120240, {	-- Helm of the Iron Protector
-								["sym"] = SYM_PROT_HELM,
+								["sym"] = SymModID(SYM_PROT_HELM, 5),
 							}),
 							i(120241, {	-- Shoulders of the Iron Protector
-								["sym"] = SYM_PROT_SHLDR,
+								["sym"] = SymModID(SYM_PROT_SHLDR, 5),
 							}),
 							i(120237, {	-- Chest of the Iron Protector
-								["sym"] = SYM_PROT_CHEST,
+								["sym"] = SymModID(SYM_PROT_CHEST, 5),
 							}),
 							i(120238, {	-- Gauntlets of the Iron Protector
-								["sym"] = SYM_PROT_GLOVE,
+								["sym"] = SymModID(SYM_PROT_GLOVE, 5),
 							}),
 							i(120239, {	-- Leggings of the Iron Protector
-								["sym"] = SYM_PROT_LEGS,
+								["sym"] = SymModID(SYM_PROT_LEGS, 5),
 							}),
 						},
 					}),
@@ -963,22 +976,23 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["questID"] = 37547,
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["g"] = {
 							i(120240, {	-- Helm of the Iron Protector
-								["sym"] = SYM_PROT_HELM,
+								["sym"] = SymModID(SYM_PROT_HELM, 5),
 							}),
 							i(120241, {	-- Shoulders of the Iron Protector
-								["sym"] = SYM_PROT_SHLDR,
+								["sym"] = SymModID(SYM_PROT_SHLDR, 5),
 							}),
 							i(120237, {	-- Chest of the Iron Protector
-								["sym"] = SYM_PROT_CHEST,
+								["sym"] = SymModID(SYM_PROT_CHEST, 5),
 							}),
 							i(120238, {	-- Gauntlets of the Iron Protector
-								["sym"] = SYM_PROT_GLOVE,
+								["sym"] = SymModID(SYM_PROT_GLOVE, 5),
 							}),
 							i(120239, {	-- Leggings of the Iron Protector
-								["sym"] = SYM_PROT_LEGS,
+								["sym"] = SymModID(SYM_PROT_LEGS, 5),
 							}),
 						},
 					}),
@@ -986,22 +1000,23 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["questID"] = 37558,
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["g"] = {
 							i(120233, {	-- Helm of the Iron Vanquisher
-								["sym"] = SYM_VANQ_HELM,
+								["sym"] = SymModID(SYM_VANQ_HELM, 5),
 							}),
 							i(120235, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SYM_VANQ_SHLDR,
+								["sym"] = SymModID(SYM_VANQ_SHLDR, 5),
 							}),
 							i(120236, {	-- Chest of the Iron Vanquisher
-								["sym"] = SYM_VANQ_CHEST,
+								["sym"] = SymModID(SYM_VANQ_CHEST, 5),
 							}),
 							i(120232, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SYM_VANQ_GLOVE,
+								["sym"] = SymModID(SYM_VANQ_GLOVE, 5),
 							}),
 							i(120234, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SYM_VANQ_LEGS,
+								["sym"] = SymModID(SYM_VANQ_LEGS, 5),
 							}),
 						},
 					}),
@@ -1009,22 +1024,23 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["questID"] = 37549,
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["g"] = {
 							i(120233, {	-- Helm of the Iron Vanquisher
-								["sym"] = SYM_VANQ_HELM,
+								["sym"] = SymModID(SYM_VANQ_HELM, 5),
 							}),
 							i(120235, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SYM_VANQ_SHLDR,
+								["sym"] = SymModID(SYM_VANQ_SHLDR, 5),
 							}),
 							i(120236, {	-- Chest of the Iron Vanquisher
-								["sym"] = SYM_VANQ_CHEST,
+								["sym"] = SymModID(SYM_VANQ_CHEST, 5),
 							}),
 							i(120232, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SYM_VANQ_GLOVE,
+								["sym"] = SymModID(SYM_VANQ_GLOVE, 5),
 							}),
 							i(120234, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SYM_VANQ_LEGS,
+								["sym"] = SymModID(SYM_VANQ_LEGS, 5),
 							}),
 						},
 					}),
@@ -1083,22 +1099,23 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["questID"] = 37560,	-- Essence of the Iron Conqueror
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["g"] = {
 							i(120245, {	-- Helm of the Iron Conqueror
-								["sym"] = SYM_CONQ_HELM,
+								["sym"] = SymModID(SYM_CONQ_HELM, 6),
 							}),
 							i(120246, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SYM_CONQ_SHLDR,
+								["sym"] = SymModID(SYM_CONQ_SHLDR, 6),
 							}),
 							i(120242, {	-- Chest of the Iron Conqueror
-								["sym"] = SYM_CONQ_CHEST,
+								["sym"] = SymModID(SYM_CONQ_CHEST, 6),
 							}),
 							i(120243, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SYM_CONQ_GLOVE,
+								["sym"] = SymModID(SYM_CONQ_GLOVE, 6),
 							}),
 							i(120244, {	-- Leggings of the Iron Conqueror
-								["sym"] = SYM_CONQ_LEGS,
+								["sym"] = SymModID(SYM_CONQ_LEGS, 6),
 							}),
 						},
 					}),
@@ -1106,22 +1123,23 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["questID"] = 37552,	-- Essence of the Iron Conqueror
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["g"] = {
 							i(120245, {	-- Helm of the Iron Conqueror
-								["sym"] = SYM_CONQ_HELM,
+								["sym"] = SymModID(SYM_CONQ_HELM, 6),
 							}),
 							i(120246, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SYM_CONQ_SHLDR,
+								["sym"] = SymModID(SYM_CONQ_SHLDR, 6),
 							}),
 							i(120242, {	-- Chest of the Iron Conqueror
-								["sym"] = SYM_CONQ_CHEST,
+								["sym"] = SymModID(SYM_CONQ_CHEST, 6),
 							}),
 							i(120243, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SYM_CONQ_GLOVE,
+								["sym"] = SymModID(SYM_CONQ_GLOVE, 6),
 							}),
 							i(120244, {	-- Leggings of the Iron Conqueror
-								["sym"] = SYM_CONQ_LEGS,
+								["sym"] = SymModID(SYM_CONQ_LEGS, 6),
 							}),
 						},
 					}),
@@ -1129,22 +1147,23 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["questID"] = 37562,	-- Essence of the Iron Protector
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["g"] = {
 							i(120255, {	-- Helm of the Iron Protector
-								["sym"] = SYM_PROT_HELM,
+								["sym"] = SymModID(SYM_PROT_HELM, 6),
 							}),
 							i(120256, {	-- Shoulders of the Iron Protector
-								["sym"] = SYM_PROT_SHLDR,
+								["sym"] = SymModID(SYM_PROT_SHLDR, 6),
 							}),
 							i(120252, {	-- Chest of the Iron Protector
-								["sym"] = SYM_PROT_CHEST,
+								["sym"] = SymModID(SYM_PROT_CHEST, 6),
 							}),
 							i(120253, {	-- Gauntlets of the Iron Protector
-								["sym"] = SYM_PROT_GLOVE,
+								["sym"] = SymModID(SYM_PROT_GLOVE, 6),
 							}),
 							i(120254, {	-- Leggings of the Iron Protector
-								["sym"] = SYM_PROT_LEGS,
+								["sym"] = SymModID(SYM_PROT_LEGS, 6),
 							}),
 						},
 					}),
@@ -1152,22 +1171,23 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["questID"] = 37548,	-- Essence of the Iron Protector
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["g"] = {
 							i(120255, {	-- Helm of the Iron Protector
-								["sym"] = SYM_PROT_HELM,
+								["sym"] = SymModID(SYM_PROT_HELM, 6),
 							}),
 							i(120256, {	-- Shoulders of the Iron Protector
-								["sym"] = SYM_PROT_SHLDR,
+								["sym"] = SymModID(SYM_PROT_SHLDR, 6),
 							}),
 							i(120252, {	-- Chest of the Iron Protector
-								["sym"] = SYM_PROT_CHEST,
+								["sym"] = SymModID(SYM_PROT_CHEST, 6),
 							}),
 							i(120253, {	-- Gauntlets of the Iron Protector
-								["sym"] = SYM_PROT_GLOVE,
+								["sym"] = SymModID(SYM_PROT_GLOVE, 6),
 							}),
 							i(120254, {	-- Leggings of the Iron Protector
-								["sym"] = SYM_PROT_LEGS,
+								["sym"] = SymModID(SYM_PROT_LEGS, 6),
 							}),
 						},
 					}),
@@ -1175,22 +1195,23 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["questID"] = 37561,	-- Essence of the Iron Vanquisher
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["g"] = {
 							i(120248, {	-- Helm of the Iron Vanquisher
-								["sym"] = SYM_VANQ_HELM,
+								["sym"] = SymModID(SYM_VANQ_HELM, 6),
 							}),
 							i(120250, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SYM_VANQ_SHLDR,
+								["sym"] = SymModID(SYM_VANQ_SHLDR, 6),
 							}),
 							i(120251, {	-- Chest of the Iron Vanquisher
-								["sym"] = SYM_VANQ_CHEST,
+								["sym"] = SymModID(SYM_VANQ_CHEST, 6),
 							}),
 							i(120247, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SYM_VANQ_GLOVE,
+								["sym"] = SymModID(SYM_VANQ_GLOVE, 6),
 							}),
 							i(120249, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SYM_VANQ_LEGS,
+								["sym"] = SymModID(SYM_VANQ_LEGS, 6),
 							}),
 						},
 					}),
@@ -1198,22 +1219,23 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						["questID"] = 37550,	-- Essence of the Iron Vanquisher
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
+						["modID"] = 0,	-- in-game this drops with no modID
 						["_drop"] = { "g" },	-- API lists all 3 token types
 						["g"] = {
 							i(120248, {	-- Helm of the Iron Vanquisher
-								["sym"] = SYM_VANQ_HELM,
+								["sym"] = SymModID(SYM_VANQ_HELM, 6),
 							}),
 							i(120250, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SYM_VANQ_SHLDR,
+								["sym"] = SymModID(SYM_VANQ_SHLDR, 6),
 							}),
 							i(120251, {	-- Chest of the Iron Vanquisher
-								["sym"] = SYM_VANQ_CHEST,
+								["sym"] = SymModID(SYM_VANQ_CHEST, 6),
 							}),
 							i(120247, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SYM_VANQ_GLOVE,
+								["sym"] = SymModID(SYM_VANQ_GLOVE, 6),
 							}),
 							i(120249, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SYM_VANQ_LEGS,
+								["sym"] = SymModID(SYM_VANQ_LEGS, 6),
 							}),
 						},
 					}),
