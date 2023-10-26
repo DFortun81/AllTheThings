@@ -1253,7 +1253,7 @@ app.SourceSpecificFields = {
 				app.print("Invalid Unobtainable Filter:",u);
 				return;
 			end
-			-- track the highest unobtainable value, which is the most obtainable (according to UNOBTAINABLE_ITEM_TEXTURES)
+			-- track the highest unobtainable value, which is the most obtainable (according to UNOBTAINABLE_ITEM_REASONS)
 			if check > max then
 				new = u;
 				max = check;
@@ -1666,7 +1666,9 @@ local function GetUnobtainableTexture(group)
 	-- TODO: Use 4 for inactive events, use 5 for active events
 	local filter, u = 4, group.u;
 	if u then
-		if (group.itemID or group.spellID) and u > 1 and u < 1000 and not app.IsBoP(group) then
+		-- only b = 0 (BoE), not BoA/BoP
+		-- removed, elite, bmah, tcg, summon
+		if u > 1 and u < 12 and (group.b or 0) == 0 then
 			filter = 2;
 		else
 			local record = L["UNOBTAINABLE_ITEM_REASONS"][u];
@@ -1678,8 +1680,11 @@ local function GetUnobtainableTexture(group)
 				return;
 			end
 		end
+		return L["UNOBTAINABLE_ITEM_TEXTURES"][filter];
 	end
-	return L["UNOBTAINABLE_ITEM_TEXTURES"][filter];
+	if group.e then
+		return L["UNOBTAINABLE_ITEM_TEXTURES"][app.Modules.Events.FilterIsEventActive(group) and 5 or 4];
+	end
 end
 -- Returns an applicable Indicator Icon Texture for the specific group if one can be determined
 app.GetIndicatorIcon = function(group)
@@ -1693,7 +1698,7 @@ app.GetIndicatorIcon = function(group)
 		local asset = group.indicatorIcon;
 		if asset then
 			return app.asset(asset);
-		elseif group.e or group.u then
+		else
 			asset = GetUnobtainableTexture(group);
 			if asset then
 				return asset;
@@ -8751,7 +8756,29 @@ local function CacheInfo(t, field)
 end
 local function default_link(t)
 	if t.itemID then
-		return select(2, GetItemInfo(t.itemID));
+		local name, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(t.itemID);
+		if link then
+			--[[ -- Debug Prints
+			local _t, id = cache.GetCached(t);
+			print("rawset item info",id,link,name,quality,b)
+			--]]
+			t = cache.GetCached(t);
+			t.link = link;
+			t.q = quality;
+			if not t.name then
+				t.name = name
+			end
+			if not t.icon then
+				t.icon = icon
+			end
+			if quality > 6 then
+				-- heirlooms return as 1 but are technically BoE for our concern
+				t.b = 2;
+			else
+				t.b = b;
+			end
+			return link;
+		end
 	end
 end
 local CollectedSpeciesHelper = setmetatable({}, {
@@ -8828,6 +8855,9 @@ local fields = {
 	end,
 	["link"] = function(t)
 		return cache.GetCachedField(t, "link", default_link);
+	end,
+	["b"] = function(t)
+		return cache.GetCachedField(t, "b");
 	end,
 	["tsm"] = function(t)
 		return sformat("p:%d:1:3", t.speciesID);
