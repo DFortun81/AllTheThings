@@ -199,7 +199,7 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208120, {	-- Quantum Knife
 		ig(108150),	-- Hardened Draeneic Steel Dagger)	(NY)
-	})
+	}),
 	i(208121, {	-- Quantum Knuckles
 	}),
 	i(208110, {	-- Quantum Mace			(One-Handed)

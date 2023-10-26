@@ -3203,11 +3203,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2428,	-- Jailor Marlgen
 					},
 				}),
-				--#if BEFORE CATA
+				-- #if BEFORE CATA
 				i(3053, {	-- Humbert's Chestpiece
 					["timeline"] = { "removed 4.0.3", "added 8.0.1" },	-- Maybe was never removed. Not sure. Current retail source is Tamra Stormpike (Rare).
 					["crs"] = {
 						2344,	-- Dun Garok Mountaineer
+						14275,	-- Tamra Stormpike
 					},
 				}),
 				-- #endif
