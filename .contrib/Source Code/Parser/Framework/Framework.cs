@@ -251,14 +251,16 @@ namespace ATT
                 }
 
                 _heirarchicalFieldAdjustments = new Dictionary<string, bool>();
-                foreach (string consolidateField in Config["HierarchicalConsolidationFields"])
+                string[] fields = Config["HierarchicalConsolidationFields"] ?? Array.Empty<string>();
+                foreach (string consolidateField in fields)
                 {
                     if (!_heirarchicalFieldAdjustments.ContainsKey(consolidateField))
                     {
                         _heirarchicalFieldAdjustments.Add(consolidateField, true);
                     }
                 }
-                foreach (string propagateField in Config["HierarchicalPropagationFields"])
+                fields = Config["HierarchicalPropagationFields"] ?? Array.Empty<string>();
+                foreach (string propagateField in fields)
                 {
                     if (!_heirarchicalFieldAdjustments.ContainsKey(propagateField))
                     {

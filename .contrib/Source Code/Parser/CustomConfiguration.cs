@@ -119,7 +119,6 @@ namespace ATT
                     return node;
                 }
 
-                // maybe just throw instead?
                 return null;
             }
         }
@@ -139,7 +138,6 @@ namespace ATT
                     }
                 }
 
-                // maybe just throw instead?
                 return null;
             }
         }
