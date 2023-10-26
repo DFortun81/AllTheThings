@@ -524,6 +524,10 @@ if tonumber(app.GameBuildVersion) > 100000 then
 	fieldConverters.altQuests = nil;
 	-- 'awp' isn't needed for caching into 'AllGamePatches' currently... I don't really see a future where we 'pre-add' future Retail content in public releases
 	fieldConverters.awp = nil;
+	-- Base Class provides auto-fields for these and they do no actual caching
+	fieldConverters.c = nil
+	fieldConverters.r = nil
+	fieldConverters.races = nil
 end
 
 local _converter;
