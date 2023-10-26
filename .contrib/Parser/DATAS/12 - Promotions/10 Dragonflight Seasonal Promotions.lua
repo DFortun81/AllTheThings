@@ -109,7 +109,7 @@ root(ROOTS.Promotions, {
 			}),
 			mount(397406, {	-- Wonderous Wavewhisker
 				["description"] = "Obtained if you set up a 6-Month WoW Subscription. Promotion valid through January 9, 2024.",
-				["timeline"] = { "added 10.1.0." }, -- "removed 10.2.5.49570" },
+				["timeline"] = { "added 10.1.0", "removed 10.2.0.99999"  },
 			}),
 			i(32566, {	-- Picnic Basket (TOY!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between July 11th, 10:00 a.m. & July 18th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
@@ -133,11 +133,11 @@ root(ROOTS.Promotions, {
 			}),
 			mount(419567, {	-- Ginormous Grrloc (MOUNT!)
 				["description"] = "Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 8, 2024.",
-				["timeline"] = { "added 10.1.7.51886"},
+				["timeline"] = { "added 10.1.7.51886", "removed 10.2.0.99999" },
 			}),
 			mount(400976, {	-- Gleaming Moonbeast (MOUNT!)
 				["description"] = "Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 8, 2024.",
-				["timeline"] = { "added 10.1.7.51886"},
+				["timeline"] = { "added 10.1.7.51886", "removed 10.2.0.99999" },
 			}),
 		},
 	}),
