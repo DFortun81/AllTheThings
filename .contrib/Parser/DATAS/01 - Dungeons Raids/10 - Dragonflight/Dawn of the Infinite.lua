@@ -48,7 +48,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(114389), -- Element-Binder Helm				(NYI)
 			ig(114265),	-- Leafscale Helm					(NYI)
 			ig(121508),	-- Stormborn Crown					(NYI)
-
+			
 			ig(134624),	-- Firebrand Helm					(Removed)
 			ig(134798),	-- Ironbranded Ringmail Helm		(Removed)
 		}),
@@ -63,7 +63,6 @@ local QUANTUM_GROUP = sharedData({
 		filter(MAIL, {
 		--	ig(1445),	-- Blackrock Pauldrons				(Removed)			Added in 10.1.7 to original Source
 		--	ig(3231),	-- Cutthroat Pauldrons				(Removed)			Added in 10.1.7 to original Source
-
 			ig(18320),	-- Demonheart Spaulders				(NYI)
 		}),
 		filter(PLATE, {
@@ -190,7 +189,6 @@ local QUANTUM_GROUP = sharedData({
 		-- CA IS NOT POSSIBLE -- Gold 13.07.2023
 		ig(134746),	-- Covert Greatsword 				(NYI)
 		ig(134606),	-- Scorching Greatsword 			(NYI)
-
 	--	ig(2014),	-- Black Metal Greatsword 			(Removed)(Unique)	Added in 10.1.7 to original Source
 	--	ig(2204),	-- Brashclaws Skewer 				(Removed)(Unique)	Added in 10.1.7 to original Source
 	--	ig(3188),	-- Coral Claymore 					(Removed)			Added in 10.1.7 to original Source
@@ -200,7 +198,8 @@ local QUANTUM_GROUP = sharedData({
 	--	ig(2754),	-- Tarnished Bastard Sword			(Removed)(Unique)	Added in 10.1.7 to original Source
 	}),
 	i(208120, {	-- Quantum Knife
-	}),
+		ig(108150),	-- Hardened Draeneic Steel Dagger)	(NY)
+	})
 	i(208121, {	-- Quantum Knuckles
 	}),
 	i(208110, {	-- Quantum Mace			(One-Handed)
