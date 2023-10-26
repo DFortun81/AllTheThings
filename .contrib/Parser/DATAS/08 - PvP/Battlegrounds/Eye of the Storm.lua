@@ -5,7 +5,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	applyclassicphase(TBC_PHASE_ONE, m(EYE_OF_THE_STORM, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\Achievement_bg_wineos",
-		["maps"] = { 397 },	-- Eye of the Storm (BG)
+		["maps"] = {
+			EYE_OF_THE_STORM,
+			397,	-- Eye of the Storm (BG)
+		},
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {

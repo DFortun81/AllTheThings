@@ -73,6 +73,20 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 			}),
 			n(ACHIEVEMENTS, {
+				applyevent(EVENTS.WOW_ANNIVERSARY, ach(13928, {	-- Alterac Valley of Olde (A)
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(172022),	-- Stormpike Battle Ram (MOUNT!)
+					},
+					["timeline"] = { "added 8.2.5" },
+				})),
+				applyevent(EVENTS.WOW_ANNIVERSARY, ach(13930, {	-- Alterac Valley of Olde (H)
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(172023),	-- Frostwolf Snarler (MOUNT!)
+					},
+					["timeline"] = { "added 8.2.5" },
+				})),
 				applyclassicphase(PHASE_TWO, achWithRep(708, 729, {	-- Hero of the Frostwolf Clan
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Frostwolf Clan to Exalted.",

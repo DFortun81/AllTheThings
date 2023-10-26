@@ -85,9 +85,20 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(583, {	-- Arathi Basin All-Star
 					["timeline"] = { "added 3.0.1" },
+					["g"] = {
+						crit(426),	-- Assault 2 bases
+						crit(427),	-- Defend 2 bases
+					},
 				}),
 				ach(584, {	-- Arathi Basin Assassin
 					["timeline"] = { "added 3.0.1" },
+					["g"] = {
+						crit(431),	-- Kill 5 people at the blacksmith
+						crit(432),	-- Kill 5 people at the farm
+						crit(433),	-- Kill 5 people at the gold mine
+						crit(434),	-- Kill 5 people at the lumber mill
+						crit(435),	-- Kill 5 people at the stables
+					},
 				}),
 				ach(165, {	-- Arathi Basin Perfection
 					["timeline"] = { "added 3.0.1" },
