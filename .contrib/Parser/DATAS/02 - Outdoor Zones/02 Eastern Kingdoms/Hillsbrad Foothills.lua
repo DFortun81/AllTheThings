@@ -2772,6 +2772,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						-- #if AFTER CATA
+						i(3053, {	-- Humbert's Chestpiece
+							["timeline"] = { "removed 4.0.3", "added 8.0.1" },	-- Maybe was never removed. Not sure. Pre Cata source is Dun Garok Rifleman (Zone Drop).
+						}),
+						-- #endif
 						i(4724, {	-- Humbert's Helm
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
@@ -3198,20 +3203,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2428,	-- Jailor Marlgen
 					},
 				}),
+				--#if BEFORE CATA
 				i(3053, {	-- Humbert's Chestpiece
-					["timeline"] = { "removed 4.0.3", "added 8.0.1" },	-- Maybe was never removed. Not sure.
-					-- #if AFTER CATA
-					["coords"] = {
-						{ 63.2, 85.8, HILLSBRAD_FOOTHILLS },
-					},
-					-- #endif
+					["timeline"] = { "removed 4.0.3", "added 8.0.1" },	-- Maybe was never removed. Not sure. Current retail source is Tamra Stormpike (Rare).
 					["crs"] = {
-						-- #if BEFORE CATA
 						2344,	-- Dun Garok Mountaineer
-						-- #endif
-						14275,	-- Tamra Stormpike
 					},
 				}),
+				-- #endif
 				i(4724, {	-- Humbert's Helm
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
