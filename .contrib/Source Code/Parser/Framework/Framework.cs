@@ -237,13 +237,38 @@ namespace ATT
         /// </summary>
         private static long NestedDifficultyID { get; set; }
 
+        private static Dictionary<string, bool> _heirarchicalFieldAdjustments;
         /// <summary>
-        /// Represents fields which can be consolidated upwards in heirarchy if all children groups have the same value for the field
+        /// Represents the allowed adjustments for hierarchical fields
         /// </summary>
-        private static string[] HeirarchicalConsolidationFields = new string[]
+        private static IDictionary<string, bool> HierarchicalFieldAdjustments
         {
-            "sourceIgnored",
-        };
+            get
+            {
+                if (_heirarchicalFieldAdjustments != null)
+                {
+                    return _heirarchicalFieldAdjustments;
+                }
+
+                _heirarchicalFieldAdjustments = new Dictionary<string, bool>();
+                foreach (string consolidateField in Config["HierarchicalConsolidationFields"])
+                {
+                    if (!_heirarchicalFieldAdjustments.ContainsKey(consolidateField))
+                    {
+                        _heirarchicalFieldAdjustments.Add(consolidateField, true);
+                    }
+                }
+                foreach (string propagateField in Config["HierarchicalPropagationFields"])
+                {
+                    if (!_heirarchicalFieldAdjustments.ContainsKey(propagateField))
+                    {
+                        _heirarchicalFieldAdjustments.Add(propagateField, false);
+                    }
+                }
+
+                return _heirarchicalFieldAdjustments;
+            }
+        }
 
         /// <summary>
         /// Assign the custom headers to the Framework's internal reference.
@@ -531,7 +556,6 @@ namespace ATT
                     TypeUseCounts[type] = new Dictionary<decimal, int>();
                 }
             }
-            HeirarchicalConsolidationFields = Config["HeirarchicalConsolidationFields"] ?? HeirarchicalConsolidationFields;
             string[] configDebugDBs = Config["DebugDB"];
             if (configDebugDBs != null)
             {
@@ -2118,8 +2142,9 @@ namespace ATT
             if ((groups?.Count ?? 0) == 0) return;
 
             HashSet<object> fieldValues = new HashSet<object>();
-            foreach (string field in HeirarchicalConsolidationFields)
+            foreach (KeyValuePair<string, bool> fieldAdjustment in HierarchicalFieldAdjustments)
             {
+                string field = fieldAdjustment.Key;
                 foreach (object group in groups)
                 {
                     if (group is IDictionary<string, object> data && data.TryGetValue(field, out object value))
@@ -2138,11 +2163,14 @@ namespace ATT
                 {
                     parentGroup[field] = fieldValues.First();
 
-                    foreach (object group in groups)
+                    if (fieldAdjustment.Value)
                     {
-                        if (group is IDictionary<string, object> data)
+                        foreach (object group in groups)
                         {
-                            data.Remove(field);
+                            if (group is IDictionary<string, object> data)
+                            {
+                                data.Remove(field);
+                            }
                         }
                     }
                 }
