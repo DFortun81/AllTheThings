@@ -171,6 +171,9 @@ local DefaultFields = {
 	["iconPath"] = function(t)
 		return t.icon
 	end,
+	["creatureID"] = function(t)	-- TODO: Do something about this, it's silly.
+		return t.npcID;
+	end,
 };
 
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)

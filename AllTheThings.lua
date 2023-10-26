@@ -2696,6 +2696,7 @@ local function Resolve_Extract(results, group, field)
 	end
 	return results;
 end
+local GetAchievementNumCriteria = GetAchievementNumCriteria
 
 -- Defines a known set of functions which can be run via symlink resolution. The inputs to each function will be identical in order when called.
 -- searchResults - the current set of searchResults when reaching the current sym command
@@ -3049,7 +3050,7 @@ local ResolveFunctions = {
 	["myModID"] = function(finalized, searchResults, o)
 		FinalizeModID = o.modID;
 	end,
-	-- Instruction to apply the modID from the Source object to any Items within the finalized search results
+	-- Instruction to use the modID from the Source object to filter matching modID on any Items within the finalized search results
 	["whereMyModID"] = function(finalized, searchResults, o)
 		local modID = o.modID
 		for k=#searchResults,1,-1 do
@@ -3057,78 +3058,6 @@ local ResolveFunctions = {
 			if not s.modID or s.modID ~= modID then
 				tremove(searchResults, k);
 			end
-		end
-	end,
-	-- Instruction to query all criteria of an Achievement via the in-game APIs and generate Criteria data into the most-accurate Sources
-	["achievement_criteria"] = function(finalized, searchResults, o)
-		-- Instruction to select the criteria provided by the achievement this is attached to. (maybe build this into achievements?)
-		if GetAchievementNumCriteria then
-			local achievementID = o.achievementID;
-			if not achievementID then
-				app.PrintDebug("'achievement_criteria' used on a non-Achievement group")
-				return;
-			end
-			local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id, criteriaObject, uniqueID
-			for criteriaID=1,GetAchievementNumCriteria(achievementID, true),1 do
-				criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, uniqueID = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
-				if not uniqueID or uniqueID <= 0 then uniqueID = criteriaID; end
-				criteriaObject = app.CreateAchievementCriteria(uniqueID, {["achievementID"] = achievementID}, true);
-
-				-- SourceQuest
-				if criteriaType == 27 then
-					local quests = SearchForField("questID", assetID)
-					if #quests > 0 then
-						for _,c in ipairs(quests) do
-							-- criteria inherit their achievement data ONLY when the achievement data is actually referenced... this is required for proper caching
-							NestObject(c, criteriaObject);
-							BuildGroups(c);
-							CacheFields(criteriaObject);
-							app.DirectGroupUpdate(c);
-							criteriaObject = app.CreateAchievementCriteria(uniqueID, {["achievementID"] = achievementID}, true);
-							-- app.PrintDebug("Add-Crit",achievementID,uniqueID,"=>",c.hash)
-						end
-						-- added to the quest(s) groups, not added to achievement
-						criteriaObject = nil;
-					else
-						app.print("'achievement_criteria' Quest type missing Quest Source group!",achievementID,assetID)
-					end
-				-- Items
-				elseif criteriaType == 36 or criteriaType == 41 or criteriaType == 42 then
-					criteriaObject.providers = {{ "i", assetID }};
-				elseif criteriaType == 110	-- Casting spells on specific target
-					or criteriaType == 29 or criteriaType == 69	-- Buff Gained
-					or criteriaType == 52 or criteriaType == 53	-- Class/Race (TODO?)
-					or criteriaType == 54 -- Spell, by means of a personal buff?
-					or criteriaType == 43 then	-- Exploration
-						-- Ignored
-				elseif criteriaType == 0 then	-- NPC Kills
-					-- app.PrintDebug("NPC Kill Criteria",assetID)
-					local c = app.SearchForObject("npcID", assetID, "key")
-					if c then
-						-- criteria inherit their achievement data ONLY when the achievement data is actually referenced... this is required for proper caching
-						NestObject(c, criteriaObject);
-						BuildGroups(c);
-						CacheFields(criteriaObject);
-						app.DirectGroupUpdate(c);
-						-- app.PrintDebug("Add-Crit",achievementID,uniqueID,"=>",c.hash)
-						-- added to the npc group, not added to achievement
-						criteriaObject = nil;
-					elseif assetID and assetID > 0 then
-						app.print("'achievement_criteria' NPC type missing NPC Source group!",achievementID,assetID)
-						criteriaObject.crs = { assetID };
-					end
-				else
-					--app.print("Unhandled Criteria Type", criteriaType, assetID, achievementID);
-				end
-				-- Criteria was not Sourced, so put it under the Achievement
-				if criteriaObject then
-					NestObject(o, criteriaObject);
-					CacheFields(criteriaObject);
-					tinsert(searchResults, criteriaObject);
-				end
-			end
-			BuildGroups(o);
-			app.DirectGroupUpdate(o);
 		end
 	end,
 	-- Instruction to include only search results where an item is a relic (Not used currently)
@@ -3143,6 +3072,98 @@ local ResolveFunctions = {
 	-- 	end
 	-- end,
 };
+
+-- Replace achievementy_criteria function if criteria API doesn't exist
+if GetAchievementNumCriteria then
+	-- Instruction to query all criteria of an Achievement via the in-game APIs and generate Criteria data into the most-accurate Sources
+	ResolveFunctions.achievement_criteria = function(finalized, searchResults, o)
+		-- Instruction to select the criteria provided by the achievement this is attached to. (maybe build this into achievements?)
+		local achievementID = o.achievementID;
+		if not achievementID then
+			app.PrintDebug("'achievement_criteria' used on a non-Achievement group")
+			return;
+		end
+		local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, id, criteriaObject, uniqueID
+		for criteriaID=1,GetAchievementNumCriteria(achievementID, true),1 do
+			criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, uniqueID = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
+			if not uniqueID or uniqueID <= 0 then uniqueID = criteriaID; end
+			criteriaObject = app.CreateAchievementCriteria(uniqueID, {["achievementID"] = achievementID}, true);
+
+			-- criteriaType ref: https://warcraft.wiki.gg/wiki/API_GetAchievementCriteriaInfo
+			-- Quest source
+			if criteriaType == 27	-- Completing a quest
+			then
+				local quests = SearchForField("questID", assetID)
+				if #quests > 0 then
+					for _,c in ipairs(quests) do
+						-- criteria inherit their achievement data ONLY when the achievement data is actually referenced... this is required for proper caching
+						NestObject(c, criteriaObject);
+						BuildGroups(c);
+						CacheFields(criteriaObject);
+						app.DirectGroupUpdate(c);
+						criteriaObject = app.CreateAchievementCriteria(uniqueID, {["achievementID"] = achievementID}, true);
+						-- app.PrintDebug("Add-Crit",achievementID,uniqueID,"=>",c.hash)
+					end
+					-- added to the quest(s) groups, not added to achievement
+					criteriaObject = nil;
+				else
+					app.print("'achievement_criteria' Quest type missing Quest Source group!","Quest",assetID,app:Linkify("Achievement #"..achievementID,app.Colors.ChatLink,"search:achievementID:"..achievementID))
+				end
+			-- NPC source
+			elseif criteriaType == 0	-- Monster kill
+			then
+				-- app.PrintDebug("NPC Kill Criteria",assetID)
+				local c = app.SearchForObject("npcID", assetID)
+				if c then
+					-- criteria inherit their achievement data ONLY when the achievement data is actually referenced... this is required for proper caching
+					NestObject(c, criteriaObject);
+					BuildGroups(c);
+					CacheFields(criteriaObject);
+					app.DirectGroupUpdate(c);
+					-- app.PrintDebug("Add-Crit",achievementID,uniqueID,"=>",c.hash)
+					-- added to the npc group, not added to achievement
+					criteriaObject = nil;
+				elseif assetID and assetID > 0 then
+					app.print("'achievement_criteria' NPC type missing NPC Source group!","NPC",assetID,app:Linkify("Achievement #"..achievementID,app.Colors.ChatLink,"search:achievementID:"..achievementID))
+					criteriaObject.crs = { assetID };
+				end
+			-- Items
+			elseif criteriaType == 36	-- Acquiring items (soulbound)
+				or criteriaType == 41	-- Eating or drinking a specific item
+				or criteriaType == 42	-- Fishing things up
+				or criteriaType == 57	-- Having items (tabards and legendaries)
+			then
+				criteriaObject.providers = {{ "i", assetID }};
+			-- Currency
+			elseif criteriaType == 12	-- Collecting currency
+			then
+				criteriaObject.cost = {{ "c", assetID, reqQuantity }};
+			-- Ignored
+			elseif criteriaType == 29	-- Casting a spell (often crafting)
+				or criteriaType == 43	-- Exploration
+				or criteriaType == 52	-- Killing specific classes of player
+				or criteriaType == 53	-- Kill-a-given-race (TODO?)
+				or criteriaType == 54	-- Using emotes on targets
+				or criteriaType == 69	-- Buff Gained
+				or criteriaType == 110	-- Casting spells on specific target
+			then
+				-- nothing to do here
+			else
+				--app.print("Unhandled Criteria Type", criteriaType, assetID, achievementID);
+				-- app.PrintDebug("Collecting currency",criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, uniqueID)
+			end
+			-- Criteria was not Sourced, so put it under the Achievement
+			if criteriaObject then
+				NestObject(o, criteriaObject);
+				CacheFields(criteriaObject);
+				tinsert(searchResults, criteriaObject);
+			end
+		end
+		BuildGroups(o);
+		app.DirectGroupUpdate(o);
+	end
+end
+
 -- Subroutine Logic Cache
 local SubroutineCache = {
 	["pvp_gear_base"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2)
@@ -3775,7 +3796,13 @@ end
 -- NOTE: ONLY performs the symlink for 'achievement_criteria'
 app.FillAchievementCriteriaAsync = function(o)
 	local sym = o.sym
-	if not sym then return end
+	if not sym then
+		-- manually apply achievement_criteria symlink if no symlink exists
+		-- this is insane but actually works... bloated AF and needs refinement of checking for existing criteria etc.
+		-- o.sym = {{"achievement_criteria"}}
+		-- app.FillRunner.Run(ResolveSymlinkGroupAsync, o);
+		return
+	end
 
 	local sym = sym[1][1]
 	if sym ~= "achievement_criteria" then return end
@@ -12016,10 +12043,6 @@ local npcFields = {
 	["displayID"] = function(t)
 		return app.NPCDisplayIDFromID[t.npcID];
 	end,
-	["creatureID"] = function(t)	-- TODO: Do something about this, it's silly.
-		return t.npcID;
-	end,
-
 	["iconAsDefault"] = function(t)
 		return (t.parent and t.parent.headerID == app.HeaderConstants.VENDORS and "Interface\\Icons\\INV_Misc_Coin_01")
 			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
