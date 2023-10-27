@@ -10,8 +10,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(198852, {	-- Bear Termination Orders
 				["questID"] = 70407,
 			}),
-			i(192055),	-- Dragon Isles Artifact
-			i(200443),	-- Dragon Isles Artifact
 			i(198843, {	-- Emerald Gardens Explorer's Notes
 				["questID"] = 70392,
 			}),
@@ -85,8 +83,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			o_repeated({	-- Disturbed Dirt (all 5 of them)
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-				["sym"] = {
-					{"select","itemID",
+				["sym"] = {{"select","itemID",
 					199061, -- A Guide to Rare Fish
 					199062, -- Ruby Gem Cluster Map
 					194540, -- Nokhud Armorer's Notes
@@ -125,8 +122,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			o(376587, {	-- Expedition Scout's Pack
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				-- No coords. Wowhead has literally over 1,000 coords for it
-				["sym"] = {
-					{"select","itemID",
+				["sym"] = {{"select","itemID",
 					-- Common Drops
 					199061, -- A Guide to Rare Fish
 					199062, -- Ruby Gem Cluster Map
@@ -176,8 +172,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			o(376426, {	-- Magic-Bound Chest
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
-				["sym"] = {
-					{"select","itemID",
+				["sym"] = {{"select","itemID",
 					199061, -- A Guide to Rare Fish
 					199062, -- Ruby Gem Cluster Map
 					194540, -- Nokhud Armorer's Notes

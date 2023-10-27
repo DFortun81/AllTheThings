@@ -569,14 +569,6 @@ i(153119);	-- Wyrmtongue Cache of Finery
 
 -- ^^ Not cleaned
 
--- 10.0.2 Uncollect
-
--- 10.0.0 Uncollect
-
-
-
-
-
 ------------------
 -- PATCH 10.0.0 --
 ------------------
@@ -674,49 +666,27 @@ i(7005);	-- Skinning Knife
 ------------------
 -- PATCH 10.0.7 --
 ------------------
--- Quest Items --
-i(202362);	-- Arcane Focus
-i(203463);	-- Atrenosh's Journal
-i(202181);	-- Best-root Tuber
-i(202185);	-- Chillwrought Worm Meat
-i(202394);	-- Fresh Plains Meat
-i(202244);	-- Frosty Foraged Foods
-i(203689);	-- Horn Signet of Tetsos
-i(203692);	-- Horn Signet of Arrosh
-i(203697);	-- Horn Signet of Ekrati
-i(203698);	-- Horn Signet of Talon Hermin
-i(204093);	-- Lunker Morsel
-i(202713);	-- Scattered Supplies
-i(198834);	-- Scribbled Bark Chunks
-i(202246);	-- Winterpelt Jewelry
--- Stupid Stuff
+--- Trash ---
 i(205241);	-- Bone Necklace
 i(204442);	-- Clump of Tar
+i(204234);	-- Dead Worms
+i(205239);	-- Fluffy Ear
 i(205235);	-- Hound Paw
+i(205236);	-- Long-Toed Talon
 i(205237);	-- Pristine Beast Fur
+i(205238);	-- Rain-soaked Feather
+i(205244);	-- Rain-soaked pelt
 i(205242);	-- Serrated Stone
 i(204308);	-- Sturdy Bone
 i(204873);	-- Tied-up Envelope
 i(205240);	-- Wooden Eagle Statue
 i(205243);	-- Spare Bow String
---
-i(204814);	-- Aged Journal
-i(204815);	-- Ambiguous Compendium
-i(204813);	-- Blank Tome
+--- Common ---
 i(204237);	-- Clockwork Azshara
-i(204234);	-- Dead Worms
-i(203473);	-- Geyser Flower
 i(204235);	-- Kaldorei Fruitcake
-i(204816);	-- Mysterious Almanac
-i(204812);	-- Seared Book
+-- Misc
 i(203988);	-- Warshard of the Hakkari, Unborn
 i(203989);	-- Warshard of the Hakkari, Unborn
-
--- Poor Trash
-i(205236);	-- Long-Toed Talon
-i(205238);	-- Rain-soaked Feather
-i(205239);	-- Fluffy Ear
-i(205244);	-- Rain-soaked pelt
 
 
 ------------------

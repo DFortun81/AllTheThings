@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DRAGONSCALE_EXPEDITION, {
-		n(CATALOGING, {
+		n(CATALOGING, bubbleDownSelf({ ["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 8 } }, {
 			n(ACHIEVEMENTS, {
 				ach(16570, {	-- A Legendary Album
 					crit(55758, {	-- Abu'Gar
@@ -47,27 +47,23 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				ach(16560),	-- Wildlife Photographer
 			}),
 			n(QUESTS, {
-					-- RENOWN 8 --
+				------ RENOWN 8 ------
 				q(69869, {	-- A Cataloger's Paradise
-					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 8 },	-- Dragonscale Expedition Renown 8
 					["description"] = "Spawns Anywhere on Dragon Isles.",
 					["provider"] = { "n", 196643 },	-- Doc Nanners
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
 				q(72525, {	-- Basic Cataloging Gear
-					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 8 },	-- Dragonscale Expedition Renown 8
 					["sourceQuests"] = { 69869 },	-- A Cataloger's Paradise
 					["provider"] = { "n", 187707 },	-- Cataloger Coralie
 					["coord"] = { 48.5, 82.7, THE_WAKING_SHORES },
 				}),
 				q(69870, {	-- Pictures with Purpose
-					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 8 },	-- Dragonscale Expedition Renown 8
 					["sourceQuests"] = { 72525 },	-- Basic Cataloging Gear
 					["provider"] = { "n", 187707 },	-- Cataloger Coralie
 					["coord"] = { 48.5, 82.7, THE_WAKING_SHORES },
 				}),
 				q(65486, {	-- Picture Perfect
-					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 8 },	-- Dragonscale Expedition Renown 8
 					["sourceQuests"] = { 69870 },	-- Pictures with Purpose
 					["provider"] = { "n", 185651 },	-- Akunda the Cataloger
 					["coord"] = { 49.9, 68.4, THE_WAKING_SHORES },
@@ -113,6 +109,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["timeline"] = { ADDED_10_1_0 },
 				}),
 			})),
-		}),
+		})),
 	}),
 })));

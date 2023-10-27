@@ -26,6 +26,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		filter(RECIPES, {
 			tier(CLASSIC_TIER, {
+				r(8387),	-- Find Herbs [Rank 2]
 				r(2369),	-- Herb Gathering
 				r(2371),	-- Herb Gathering
 			}),

@@ -319,6 +319,11 @@ i(173374);	-- Rajani Insignia [BOA]
 -- PATCH 10.0.2 --
 ------------------
 i(200447);	-- Centaur Hunting Trophy
+i(200443);	-- Dragon Isles Artifact
+i(200285);	-- Dragonscale Expedition Insignia [Uncommon]
+i(200452);	-- Dragonscale Expedition Insignia [Rare]
+i(201921);	-- Dragonscale Expedition Insignia [Epic]
+i(202091);	-- Dragonscale Expedition Insignia [Epic 2.5k]
 i(200287);	-- Iskaara Tuskarr Insignia [Uncommon]
 i(200453);	-- Iskaara Tuskarr Insignia [Rare]
 i(201922);	-- Iskaara Tuskarr Insignia [Epic]

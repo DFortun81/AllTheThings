@@ -58,6 +58,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 72713 },	-- Inheritance
 					["provider"] = { "n", 199531 },	-- Scalecommander Emberthal
 					["coord"] = { 55.1, 35.8, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(203692),	-- Horn Signet of Arrosh (QI!)
+						i(203697),	-- Horn Signet of Ekrati (QI!)
+						i(203698),	-- Horn Signet of Talon Hermin (QI!)
+						i(203689),	-- Horn Signet of Tetsos (QI!)
+					},
 				}),
 				q(73094, {	-- Aiding the Expedition
 					["sourceQuests"] = { 72545 },	-- Creche Fallen
@@ -105,6 +111,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				},
 				["provider"] = { "n", 200010 },	-- Atrenosh Hailstone
 				["coord"] = { 34.7, 57.6, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(203463),	-- Atrenosh's Journal (QI!)
+				},
 			}),
 			q(74379, {	-- Still Within Reach
 				["sourceQuests"] = {
@@ -198,6 +207,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "n", 200562 },	-- Turik
 				["coord"] = { 34.2, 60.0, THE_FORBIDDEN_REACH },
 				["isDaily"] = true,
+				["g"] = {
+					i(204093),	-- Lunker Morsel (QI!)
+				},
 			}),
 			-- Maruuk
 			q(74910, {	-- New Foes
@@ -278,6 +290,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			q(73142, {	-- Busting Blues
 				["provider"] = { "n", 199199 },	-- Scalecommander Cindrethresh
 				["coord"] = { 35.3, 59.5, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(202362),	-- Arcane Focus (QI!)
+				},
 			}),
 			q(73189, {	-- Creche Cache
 				["provider"] = { "n", 200727 },	-- Volethi

@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DRAGONSCALE_EXPEDITION, {
-		n(ANCIENT_WAYGATES, {
+		n(ANCIENT_WAYGATES, bubbleDownSelf({ ["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 7 } }, {
 			n(ACHIEVEMENTS, {
 				ach(16292, {	-- Mastering the Waygates
 					["description"] = "In order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
@@ -58,31 +58,26 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(QUESTS, {
-					-- RENOWN 7 --
+				------ RENOWN 7 ------
 				q(66595, {	-- Dormant Discovery
-					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 7 },	-- Dragonscale Expedition Renown 7
 					["provider"] = { "i", 198538 },	-- Magically Bound Message
 				}),
 				q(66597, {	-- This Old Stone
-					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 7 },	-- Dragonscale Expedition Renown 7
 					["sourceQuests"] = { 66595 },	-- Dormant Discovery
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 				}),
 				q(66598, {	-- Nightborne Know-How
-					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 7 },	-- Dragonscale Expedition Renown 7
 					["sourceQuests"] = { 66597 },	-- This Old Stone
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 				}),
 				q(70215, {	-- Curiosity is Key
-					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 7 },	-- Dragonscale Expedition Renown 7
 					["sourceQuests"] = { 66598 },	-- Nightborne Know-How
 					["provider"] = { "n", 189764 },	-- Warpcaster Delandra
 					["coord"] = { 45.9, 40.7, THE_AZURE_SPAN },
 				}),
 				q(66582, {	-- Power Procurement
-					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 7 },	-- Dragonscale Expedition Renown 7
 					["sourceQuests"] = { 70215 },	-- Curiosity is Key
 					["provider"] = { "n", 189764 },	-- Warpcaster Delandra
 					["coord"] = { 45.9, 40.7, THE_AZURE_SPAN },
@@ -92,13 +87,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 				q(70154, {	-- A Gateway to Somewhere
-					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 7 },	-- Dragonscale Expedition Renown 7
 					["sourceQuests"] = { 66582 },	-- Power Procurement
 					["provider"] = { "n", 189764 },	-- Warpcaster Delandra
 					["coord"] = { 45.9, 40.7, THE_AZURE_SPAN },
 				}),
 				q(70156, {	-- An Ancient Awakening
-					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 7 },	-- Dragonscale Expedition Renown 7
 					["sourceQuests"] = { 70154 },	-- A Gateway to Somewhere
 					["provider"] = { "n", 189764 },	-- Warpcaster Delandra
 					["coord"] = { 48.6, 30.3, THE_AZURE_SPAN },
@@ -113,7 +106,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						}),
 					},
 				}),
-					-- RENOWN 8 --
+				------ RENOWN 8 ------
 				q(70702, {	-- Continued Waygate Exploration
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 8 },	-- Dragonscale Expedition Renown 8
 					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
@@ -255,7 +248,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						}),
 					},
 				}),
-					-- RENOWN 10 --
+				------ RENOWN 10 ------
 				q(71146, {	-- Continued Waygate Exploration
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 10 },	-- Dragonscale Expedition Renown 10
 					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
@@ -267,7 +260,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					-- Temporary lockCriteria before Blizzard fix this (71146 got unflag for anyone who did it before 75444 when patch 10.0.7 went live)
 					["lockCriteria"] = { 1, "questID", 75444 },	-- Continued Waygate Exploration
 				}),
-					-- RENOWN 11 --
+				------ RENOWN 11 ------
 				q(75444, {	-- Waygate Exploration: The Forbidden Reach
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 11 },	-- Dragonscale Expedition Renown 23
 					["sourceQuest"] = 71146,	-- Continued Waygate Exploration
@@ -277,7 +270,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					["timeline"] = { ADDED_10_0_7 },
 				}),
-					-- RENOWN 15 --
+				------ RENOWN 15 ------
 				q(71148, {	-- Continued Waygate Exploration
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 15 },	-- Dragonscale Expedition Renown 15
 					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
@@ -291,7 +284,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["isBreadcrumb"] = true,
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
-					-- RENOWN 17 --
+				------ RENOWN 17 ------
 				q(71149, {	-- Continued Waygate Exploration
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 17 },	-- Dragonscale Expedition Renown 17
 					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
@@ -301,7 +294,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["isBreadcrumb"] = true,
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
-					-- RENOWN 20 --
+				------ RENOWN 20 ------
 				q(71150, {	-- Continued Waygate Exploration
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 20 },	-- Dragonscale Expedition Renown 20
 					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
@@ -311,7 +304,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["isBreadcrumb"] = true,
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
-					-- RENOWN 23 --
+				------ RENOWN 23 ------
 				q(71151, {	-- Continued Waygate Exploration
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 23 },	-- Dragonscale Expedition Renown 23
 					["description"] = "Spawns Anywhere on Dragon Isles. \n\nIn order to complete all of the Doc Nanners |cffffff00Continued Waygate Exploration|r breadcrumbs, you MUST complete the Waygate Unlocks on one character. If you use Alts, the breadcrumbs will repeat, locking you out of the last few in the sequence, depending on the number of Waygates opened by an Alt.",
@@ -321,7 +314,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["isBreadcrumb"] = true,
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 				}),
-				q(75154, {	-- Waygate: Morqut Islet
+				q(75154, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Waygate: Morqut Islet
 					-- TODO: ["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 23 },	-- Dragonscale Expedition Renown 23
 					["sourceQuests"] = {
 						75444,	-- Waygate Exploration: The Forbidden Reach
@@ -329,13 +322,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 189066 },	-- Thaelin Darkanvil
 					["coord"] = { 47.2, 90.3, THE_WAKING_SHORES },
 					["DisablePartySync"] = true,
-					["timeline"] = { ADDED_10_0_7 },
 					["g"] = {
 						i(204438),	-- Enchanted Arcana Vessel
 					},
-				}),
+				})),
 			}),
-		}),
+		})),
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {

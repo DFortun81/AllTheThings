@@ -28,6 +28,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
 					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(202713),	-- Scattered Supplies (QI!)
+					},
 				}),
 				q(73159, {	-- Exploring Our Past
 					["sourceQuests"] = { 73160 },	-- Helping Hand and Claw
@@ -523,6 +526,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386690, {	-- Ambiguous Compendium
 							["coord"] = { 29.4, 58.1, THE_FORBIDDEN_REACH },
 							["questID"] = 74613,
+							["g"] = {
+								i(204815),	-- Ambiguous Compendium
+							},
 						}),
 						o(393282, {	-- Balloon Box
 							["questID"] = 75217,
@@ -646,6 +652,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386680, {	-- Mysterious Almanac
 							["coord"] = { 29.4, 58.3, THE_FORBIDDEN_REACH },
 							["questID"] = 74589,
+							["g"] = {
+								i(204816),	-- Mysterious Almanac
+							},
 						}),
 						o(386582, {	-- Neltharion Gift Token
 							["coord"] = { 26.4, 49.4, THE_FORBIDDEN_REACH },
@@ -753,6 +762,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386683, {	-- Seared Book
 							["coord"] = { 29.2, 58.5, THE_FORBIDDEN_REACH },
 							["questID"] = 74609,
+							["g"] = {
+								i(204812),	-- Seared Book
+							},
 						}),
 						o(385401, {	-- Searing Chest
 							["coord"] = { 28.5, 57.5, THE_FORBIDDEN_REACH },

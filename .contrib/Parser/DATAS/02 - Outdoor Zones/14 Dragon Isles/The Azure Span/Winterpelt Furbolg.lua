@@ -21,6 +21,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 					["minReputation"] = { FACTION_WINTERPELT_FURBOLG, UNFRIENDLY+2050 },
 					["provider"] = { "n", 189401 },	-- Sonova Snowden
 					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
+					["g"] = {
+						i(202246),	-- Winterpelt Jewelry
+					},
 				}),
 				q(72588, {	-- Primalist Pillagers
 					["sourceQuests"] = {
@@ -29,6 +32,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 					["minReputation"] = { FACTION_WINTERPELT_FURBOLG, UNFRIENDLY+2050 },
 					["provider"] = { "n", 189401 },	-- Sonova Snowden
 					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
+					["g"] = {
+						i(202244),	-- Frosty Foraged Foods (QI!)
+					},
 				}),
 
 				-- First time + Repeatable handins
@@ -115,12 +121,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
 					["provider"] = { "n", 199271 },	-- Elder Mhaz
 					["coord"] = { 57.4, 21.1, THE_AZURE_SPAN },
+					["g"] = {
+						i(202181),	-- Best-root Tuber (QI!)
+					},
 				}),
 				q(72553, {	-- More Effort, More Reward
 					["sourceQuests"] = { 72551 },	-- A Living History
 					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 50
 					["provider"] = { "n", 199272 },	-- Matron Fherg
 					["coord"] = { 57.4, 20.9, THE_AZURE_SPAN },
+					["g"] = {
+						i(202185),	-- Chillwrought Worm Meat (QI!)
+					},
 				}),
 				q(72554, {	-- Break Him
 					["sourceQuests"] = {
@@ -179,6 +191,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 					["coord"] = { 67.0, 11.9, THE_AZURE_SPAN },
 					["g"] = {
 						i(202264),	-- Defender of the Winterpelt
+						i(198834),	-- Scribbled Bark Chunks (QI!)
 					},
 				}),
 

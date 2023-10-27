@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 	m(VALDRAKKEN, {
 		n(REWARDS, {
 			i(200452, {	-- Dragonscale Expedition Insignia
-				["minReputation"] = { 2507, 25 },	-- Dragonscale Expedition Renonwn 25
+				["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
@@ -319,6 +319,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			["coord"] = { 35.4, 58.8, VALDRAKKEN },
 			["repeatable"] = true,
 			["g"] = {
+				i(200285),	-- Dragonscale Expedition Insignia [Uncommon]
 				i(200288),	-- Maruuk Centaur Insignia [Uncommon]
 				i(200287),	-- Iskaara Tuskarr Insignia [Uncommon]
 				i(200289),	-- Valdrakken Accord Insignia [Uncommon]
@@ -351,6 +352,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(206135),	-- Heroic Dungeon Delver's Trophy Chest
 					i(206136),	-- Heroic Dungeon Delver's Trophy Crest
 					------ Reputation ------
+					i(200285),	-- Dragonscale Expedition Insignia [Uncommon]
 					i(200288),	-- Maruuk Centaur Insignia [Uncommon]
 					i(200287),	-- Iskaara Tuskarr Insignia [Uncommon]
 					i(205365),	-- Loamm Niffen Insignia [Uncommon]

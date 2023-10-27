@@ -1,5 +1,0 @@
-0.5.5.3494
-r(8387),	-- Find Herbs
-
-
-Nothing is Missing in HerbalismItemDB.lua! Good Work!

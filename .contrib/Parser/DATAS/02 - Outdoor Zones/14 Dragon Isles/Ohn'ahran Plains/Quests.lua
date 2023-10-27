@@ -1034,6 +1034,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72593 },	-- A Tomul-tuous Beginning
 					["provider"] = { "n", 202706 },	-- Scout Tomul
 					["coord"] = { 69.4, 47.7, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(202394),	-- Fresh Plains Meat (QI!)
+					},
 				}),
 				q(72595, {	-- The Search for Bovan Windtotem
 					["sourceQuests"] = { 72593 },	-- A Tomul-tuous Beginning
@@ -1088,6 +1091,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 72601 },	-- Bovan's Last Hope
 					["provider"] = { "n", 199409 },	-- Windsage Boku
 					["coord"] = { 56.6, 73.8, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(203473),	-- Geyser Flower (QI!)
+					},
 				}),
 				q(72603, {	-- What Words Are Worth
 					["sourceQuests"] = { 72602 },	-- Optimistic Mystic
