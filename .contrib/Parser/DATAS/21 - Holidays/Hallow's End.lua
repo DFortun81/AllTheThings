@@ -3483,7 +3483,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		q(43162, {	-- Under the Crooked Tree
 			["qg"] = 109734,	-- Hag of the Crooked Tree
-			["sourceQuest"] = 43259,	-- Beware of the Crooked Tree
+			-- ["sourceQuest"] = 43259,	-- Beware of the Crooked Tree	[not required 2023-10-25]
 			["coord"] = { 34.9, 56.0, VALSHARAH },
 			["timeline"] = { "added 7.0.1" },
 			["isDaily"] = true,

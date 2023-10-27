@@ -181,7 +181,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 		n(GROUP_FINDER, {
 			i(187902, {	-- Sporebat Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
-				["description"] = "Can drop from the last boss from any bc timewalking dungeon with the nightfae covenant active.",	
+				["description"] = "Can drop from the last boss from any bc timewalking dungeon with the nightfae covenant active.",
 			}),
 			i(129747, {	-- Swirling Timewarped Vial
 				["description"] = "Drops from the last boss from any bc timewalking dungeon.",
@@ -1261,11 +1261,11 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 	tier(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
 		n(GROUP_FINDER, {
 			i(129928, {	-- Frigid Timewarped Prism
-				["description"] = "Can drop from the last boss from any wotlk timewalking dungeon with the nightfae covenant active.",	
+				["description"] = "Can drop from the last boss from any wotlk timewalking dungeon with the nightfae covenant active.",
 			}),
 			i(187903, {	-- Jormungar Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
-				["description"] = "Can drop from any last boss of each dungeon with the nightfae covenant active.",	
+				["description"] = "Can drop from any last boss of each dungeon with the nightfae covenant active.",
 			}),
 		}),
 		n(QUESTS, {
@@ -1530,11 +1530,12 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							i(171575),	-- Valius, Gavel of the Lightbringer
 							i(171573),	-- Warmace of Menethil
 							i(171579),	-- Windrunner's Heartseeker
-							
+
 							-- Possible WOTLK TW Items (from killing Yogg Quest)
 							-- Confirmed
 							i(156466),	-- Bracers of Righteous Reformation
-							
+							i(156251),	-- Shroud of Alteration
+
 							--[[  Possibly
 							i(156461),	-- Adamant Handguards
 							i(156255),	-- Belt of the Sleeper
@@ -1551,9 +1552,8 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							i(156460),	-- Mimiron's Repeater
 							i(156469),	-- Pillar of Fortitude
 							i(156253),	-- Shoulders of Misfortune
-							i(156251),	-- Shroud of Alteration
 							--]]
-							
+
 							--[[ Heigan
 							I didnt see any Heigan Loot, but technically it should drop.
 							i(171618),	-- Amulet of Autopsy
@@ -2671,7 +2671,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 		n(GROUP_FINDER, {
 			i(185053, {	-- Kodo Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
-				["description"] = "Can drop from the last boss from any cata timewalking dungeon with the nightfae covenant active.",	
+				["description"] = "Can drop from the last boss from any cata timewalking dungeon with the nightfae covenant active.",
 			}),
 			i(133378, {	-- Smoldering Timewarped Ember (A)
 				["description"] = "Drops from the last boss from any cata timewalking dungeon.",
@@ -3574,7 +3574,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 		n(GROUP_FINDER, {
 			i(187904, {	-- Cloud Serpent Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
-				["description"] = "Can drop from the last boss from any mop timewalking dungeon with the nightfae covenant active.",	
+				["description"] = "Can drop from the last boss from any mop timewalking dungeon with the nightfae covenant active.",
 			}),
 			i(143776, {	-- Shrouded Timewarped Coin
 				["description"] = "Drops from the last boss from any mop timewalking dungeon.",
@@ -4058,7 +4058,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 		n(GROUP_FINDER, {
 			i(187905, {	-- Boar Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
-				["description"] = "Can drop from the last boss from any wod timewalking dungeon with the nightfae covenant active.",	
+				["description"] = "Can drop from the last boss from any wod timewalking dungeon with the nightfae covenant active.",
 			}),
 			i(167921, {	-- Shimmering Timewarped Crystal (A)
 				["description"] = "Drops from the last boss from any wod timewalking dungeon.",
@@ -4922,7 +4922,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 }},{
 		n(GROUP_FINDER, {
 			i(210063, {	-- Invader's Satchel of Helpful Goods // Legion TW Daily Reward
-				["description"] = "Rewarded for completing any legion timewalking dungeon.\nAvailable once per day.",		
+				["description"] = "Rewarded for completing any legion timewalking dungeon.\nAvailable once per day.",
 				["timeline"] = { ADDED_10_1_7 },
 				["g"] = {
 					i(113788),	-- Blossoming Belt*
@@ -4965,7 +4965,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 				},
 			}),
 			i(187906, {	-- Owl Serpent Soul (SS!)
-				["description"] = "Can drop from the last boss from any legion timewalking dungeon with the nightfae covenant active.",	
+				["description"] = "Can drop from the last boss from any legion timewalking dungeon with the nightfae covenant active.",
 			}),
 			i(187611, {	-- Whispering Felflame Crystal
 				["description"] = "Drops from the last boss from any legion timewalking dungeon.",

@@ -7731,24 +7731,31 @@ end
 app.TryPopulateQuestRewards = function(questObject)
 	app.FunctionRunner.Run(TryPopulateQuestRewards, questObject);
 end
+local function PrintBreadcrumbWarning(title, questID, group)
+	if not group.text then
+		Callback(PrintBreadcrumbWarning, title, questID, group)
+		return
+	end
+
+	app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
+		title,
+		app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
+		group.text,
+		app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)))
+
+	app:PlayRemoveSound()
+end
 -- Will print a warning message and play a warning sound if the given QuestID being completed will prevent being able to complete a breadcrumb
 -- (as far as ATT is capable of knowing)
 app.CheckForBreadcrumbPrevention = function(title, questID)
 	if questID then
 		local nextQuests = SearchForField("nextQuests", questID);
 		if #nextQuests > 0 then
-			local warning;
 			for _,group in pairs(nextQuests) do
-				if not group.collected and app.RecursiveCharacterRequirementsFilter(group) then
-					app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
-						title,
-						app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
-						group.text or RETRIEVING_DATA,
-						app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)));
-					warning = true;
+				if not group.collected and app.RecursiveCharacterRequirementsFilter(group) and app.RecursiveUnobtainableFilter(group) then
+					PrintBreadcrumbWarning(title, questID, group)
 				end
 			end
-			if warning then app:PlayRemoveSound(); end
 		end
 	end
 end
