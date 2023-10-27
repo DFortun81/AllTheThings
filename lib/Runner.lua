@@ -22,38 +22,51 @@ local QueueStack;
 -- A static coroutine which can be invoked to reverse-sequentially process all Functions within the Stack,
 -- passing the corresponding Stack param to each called Function.
 -- Any Functions which do not return a status will be removed
-local StackCo = c_create(function()
-	while true do
-		-- app.PrintDebug("StackCo:Call",#Stack)
-		local f, p, s, c;
-		for i=#Stack,1,-1 do
-			f, p = Stack[i], StackParams[i];
-			-- app.PrintDebug("StackCo:Run",i,f,p)
-			s, c = pcall(f, p);
-			-- Function call has an error or it is not continuing, remove it from the Stack
-			if not s or not c then
-				if not s then app.PrintDebug("StackError:",c) end
-				-- app.PrintDebug("StackCo:Remove",i)
-				tremove(Stack, i);
-				tremove(StackParams, i);
+local StackCo
+local function SetStackCo()
+	-- app.PrintDebug("SetStackCo")
+	StackCo = c_create(function()
+		while true do
+			-- app.PrintDebug("StackCo:Call",#Stack)
+			local f, p, s, c;
+			for i=#Stack,1,-1 do
+				f, p = Stack[i], StackParams[i];
+				-- app.PrintDebug("StackCo:Run",i,f,p)
+				s, c = pcall(f, p);
+				-- Function call has an error or it is not continuing, remove it from the Stack
+				if not s or not c then
+					if not s then app.PrintDebug("StackError:",c) end
+					-- app.PrintDebug("StackCo:Remove",i)
+					tremove(Stack, i);
+					tremove(StackParams, i);
+				end
 			end
+			-- app.PrintDebug("StackCo:Done")
+			-- Re-call StackCo if anything remains in the Stack
+			if #Stack > 0 then
+				-- app.PrintDebug("StackCo:QueueStack",#Stack)
+				QueueStack();
+			end
+			-- after processing the Stack, yield this coroutine
+			-- app.PrintDebug("StackCo:Yield")
+			c_yield();
 		end
-		-- app.PrintDebug("StackCo:Done")
-		-- Re-call StackCo if anything remains in the Stack
-		if #Stack > 0 then
-			-- app.PrintDebug("StackCo:QueueStack",#Stack)
-			QueueStack();
-		end
-		-- after processing the Stack, yield this coroutine
-		-- app.PrintDebug("StackCo:Yield")
-		c_yield();
-	end
-end);
+	end)
+end
+SetStackCo()
 -- Function that begins a once-per-frame pass of the StackCo to run all Functions in the Stack
 local function RunStack()
-	-- app.PrintDebug("RunStackStatus:",c_status(StackCo))
+	-- app.PrintDebug("StackCoStatus:",c_status(StackCo))
+	if c_status(StackCo) == "dead" then SetStackCo() end
 	RunningStack = nil;
-	c_resume(StackCo);
+	local ok, err = pcall(c_resume, StackCo);
+	if not ok then
+		app.PrintDebug("RunStack:Error:",err)
+		if app.Debugging then
+			local instanceTrace = debugstack(StackCo, err);
+			print(instanceTrace)
+		end
+	end
 end
 QueueStack = function()
 	-- app.PrintDebug("QueueStackStatus:",RunningStack and "REPEAT" or "FIRST",c_status(StackCo))
@@ -63,9 +76,9 @@ QueueStack = function()
 end
 -- Accepts a param and Function which will execute on the following frame using the provided param
 local function Push(param, name, func)
-	-- app.PrintDebug("Push",name,func,param)
-	tinsert(Stack, func);
-	tinsert(StackParams, param or 1);
+	Stack[#Stack + 1] = func;
+	StackParams[#StackParams + 1] = param or 1;
+	-- app.PrintDebug("Push @",#StackParams,name,func,param)
 	QueueStack();
 end
 app.Push = Push;
