@@ -312,9 +312,13 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 	}),
 	ach(10587, {	-- Hot Swapper
 		["provider"] = { "i", 130251 },	-- Jewelcraft
+		["timeline"] = { "added 7.0.3.21134" },
 	}),
-	ach(10761),	-- Resourceful
+	ach(10761, {	-- Resourceful
+		["timeline"] = { "added 7.0.3.21491" },
+	}),
 	ach(10588, {	-- The Shortest Distance
 		["provider"] = { "i", 132518 },	-- Blingtron's Circuit Design Tutorial
+		["timeline"] = { "added 7.0.3.21134" },
 	}),
 })));
