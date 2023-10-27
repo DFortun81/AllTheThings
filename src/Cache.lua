@@ -8,10 +8,10 @@ local C_Map_GetAreaInfo = C_Map.GetAreaInfo;
 
 -- App locals
 local contains, classIndex, raceIndex, factionID =
-	app.contains, app.ClassIndex, app.RaceIndex, app.FactionID
+	app.contains, app.ClassIndex, app.RaceIndex, app.FactionID;
 
 -- Module locals
-local AllCaches, AllGamePatches, runners, QuestTriggers = {}, {}, {}, {}
+local AllCaches, AllGamePatches, postscripts, runners, QuestTriggers = {}, {}, {}, {}, {};
 local containerMeta = {
 	__index = function(t, id)
 		if id then
@@ -112,18 +112,6 @@ end;
 local cacheQuestID = function(group, questID)
 	CacheField(group, "questID", questID);
 end
-local cacheGroupForModItemID = {}
-tinsert(runners, function()
-	local modItemID
-	-- app.PrintDebug("caching for modItemID",#cacheGroupForModItemID)
-	for _,group in ipairs(cacheGroupForModItemID) do
-		modItemID = group.modItemID
-		if modItemID ~= group.itemID then
-			CacheField(group, "itemID", modItemID)
-		end
-	end
-	-- app.PrintDebug("caching for modItemID done")
-end)
 if app.Debugging and app.Version == "[Git]" then
 	local L = app.L;
 	local referenceCounter = {};
@@ -234,7 +222,7 @@ local mapKeyUncachers = {
 			uncacheMap(group, coord[3]);
 		end
 	end,
-}
+};
 local fieldConverters = {
 	-- Simple Converters
 	["achievementID"] = cacheAchievementID,
@@ -277,8 +265,7 @@ local fieldConverters = {
 		CacheField(group, "instanceID", value);
 	end,
 	["itemID"] = function(group, value)
-		CacheField(group, "itemID", value)
-		cacheGroupForModItemID[#cacheGroupForModItemID + 1] = group
+		CacheField(group, "itemID", value);
 	end,
 	["otherItemID"] = function(group, value)
 		CacheField(group, "itemID", value);
@@ -592,6 +579,24 @@ if tonumber(app.GameBuildVersion) > 100000 then
 			end
 		end
 	end
+	
+	-- Retail has this weird modItemID field that complicates everything, so put that here instead.
+	local cacheGroupForModItemID = {}
+	fieldConverters.itemID = function(group, value)
+		CacheField(group, "itemID", value);
+		cacheGroupForModItemID[#cacheGroupForModItemID + 1] = group
+	end
+	tinsert(postscripts, function()
+		local modItemID
+		-- app.PrintDebug("caching for modItemID",#cacheGroupForModItemID)
+		for _,group in ipairs(cacheGroupForModItemID) do
+			modItemID = group.modItemID
+			if modItemID ~= group.itemID and modItemID then
+				CacheField(group, "itemID", modItemID)
+			end
+		end
+		-- app.PrintDebug("caching for modItemID done")
+	end)
 end
 
 CacheFields = function(group, skipMapCaching)
@@ -599,6 +604,9 @@ CacheFields = function(group, skipMapCaching)
 	_CacheFields(group);
 	for i,runner in ipairs(runners) do
 		runner();
+	end
+	for i,postscript in ipairs(postscripts) do
+		postscript();
 	end
 	wipe(runners);
 	return group;
