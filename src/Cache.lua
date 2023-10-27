@@ -583,8 +583,8 @@ if tonumber(app.GameBuildVersion) > 100000 then
 			end
 		end
 	end
-	
-	-- Retail has this weird modItemID field that complicates everything, so put that here instead.
+
+	-- Retail has this required modItemID field that complicates everything, so put that here instead.
 	local cacheGroupForModItemID = {}
 	fieldConverters.itemID = function(group, value)
 		CacheField(group, "itemID", value);
@@ -595,10 +595,11 @@ if tonumber(app.GameBuildVersion) > 100000 then
 		-- app.PrintDebug("caching for modItemID",#cacheGroupForModItemID)
 		for _,group in ipairs(cacheGroupForModItemID) do
 			modItemID = group.modItemID
-			if modItemID ~= group.itemID and modItemID then
+			if modItemID and modItemID ~= group.itemID then
 				CacheField(group, "itemID", modItemID)
 			end
 		end
+		wipe(cacheGroupForModItemID)
 		-- app.PrintDebug("caching for modItemID done")
 	end)
 end
