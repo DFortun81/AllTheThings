@@ -522,20 +522,6 @@ local fieldConverters = {
 	end,
 };
 
----- Retail Differences ----
-if tonumber(app.GameBuildVersion) > 100000 then
-	-- 'altQuests' in Retail pretending to be the same quest as a different quest actually causes problems for searches
-	-- and it makes more sense to not pretend they're the same than to hamper existing logic with more conditionals to
-	-- make sure we actually get the data that we search for
-	fieldConverters.altQuests = nil;
-	-- 'awp' isn't needed for caching into 'AllGamePatches' currently... I don't really see a future where we 'pre-add' future Retail content in public releases
-	fieldConverters.awp = nil;
-	-- Base Class provides auto-fields for these and they do no actual caching
-	fieldConverters.c = nil
-	fieldConverters.r = nil
-	fieldConverters.races = nil
-end
-
 local _converter;
 local function _CacheFields(group)
 	local n = 0;
@@ -570,6 +556,46 @@ local function _CacheFields(group)
 		end
 	end
 end
+
+---- Retail Differences ----
+if tonumber(app.GameBuildVersion) > 100000 then
+	-- 'altQuests' in Retail pretending to be the same quest as a different quest actually causes problems for searches
+	-- and it makes more sense to not pretend they're the same than to hamper existing logic with more conditionals to
+	-- make sure we actually get the data that we search for
+	fieldConverters.altQuests = nil;
+	-- 'awp' isn't needed for caching into 'AllGamePatches' currently... I don't really see a future where we 'pre-add' future Retail content in public releases
+	fieldConverters.awp = nil;
+	-- Base Class provides auto-fields for these and they do no actual caching
+	fieldConverters.c = nil
+	fieldConverters.r = nil
+	fieldConverters.races = nil
+
+	-- use single iteration of each group by way of not performing any group field additions while the cache process is running
+	_CacheFields = function(group)
+		local mapKeys
+		local hasG = group.g
+		for key,value in pairs(group) do
+			_converter = fieldConverters[key];
+			if _converter then
+				if _converter(group, value) then
+					if mapKeys then mapKeys[key] = value
+					else mapKeys = { [key] = value }; end
+				end
+			end
+		end
+		if hasG then
+			for _,subgroup in ipairs(hasG) do
+				_CacheFields(subgroup);
+			end
+		end
+		if mapKeys then
+			for key,value in pairs(mapKeys) do
+				mapKeyUncachers[key](group, value);
+			end
+		end
+	end
+end
+
 CacheFields = function(group, skipMapCaching)
 	currentMapCounters[-1] = skipMapCaching and 1 or 0;
 	_CacheFields(group);
