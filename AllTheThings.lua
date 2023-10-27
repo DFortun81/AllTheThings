@@ -11613,7 +11613,8 @@ app.GetCurrentMapID = function()
 	local substitutions = L.QUEST_ID_TO_MAP_ID[originalMapID];
 	if substitutions then
 		for questID,mapID in pairs(substitutions) do
-			if not C_QuestLog_IsQuestFlaggedCompleted(questID) then
+			-- if quest is unflagged but has been flagged at some point for this character, allow the mapID switch
+			if not C_QuestLog_IsQuestFlaggedCompleted(questID) and app.CurrentCharacter.Quests[questID] then
 				return mapID;
 			end
 		end
