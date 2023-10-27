@@ -544,7 +544,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16428.03, {	-- Snowhide Camp
 				q(66708, {	-- Riders in the Snow
-					["sourceQuests"] = { 66340 },	-- Into the Azure
+					["sourceQuests"] = {
+						66340,	-- Into the Azure
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["provider"] = { "n", 190300 },	-- Tuskarr Elder
 					["coord"] = { 65.9, 25.5, THE_AZURE_SPAN },
 					["isBreadcrumb"] = true,
@@ -859,7 +862,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16428.09, {	-- Lost Ruins
 				q(66964, {	-- Artifacts in the Wrong Hands
-					["sourceQuests"] = { 66340 },	-- Into the Azure
+					["sourceQuests"] = {
+						66340,	-- Into the Azure
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["provider"] = { "n", 196545 },	-- Polky Cogzapper
 					["coord"] = { 65.9, 25.3, THE_AZURE_SPAN },
 					["isBreadcrumb"] = true,

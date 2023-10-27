@@ -2153,10 +2153,14 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef, c
 			tinsert(info, k..":"..tostring(v))
 		end
 	end
-	-- TODO: show account-wide unlock quests of various types... DF Campaign/ZC WQ unlock...etc?
+	local acctUnlocks = {
+		C_QuestLog_IsQuestFlaggedCompleted(72366) and "DF_CA" or "N",	-- Dragonflight Campaign Complete
+		C_QuestLog_IsQuestFlaggedCompleted(75658) and "DF_ZC" or "N",	-- Dragonflight Zaralek Caverns Complete
+	}
 	tinsert(info, "L:"..app.Level.." R:"..app.RaceID.." ("..app.Race..") C:"..app.ClassIndex.." ("..app.Class..")");
 	tinsert(info, "cov:"..(covInfo or "N/A").." renown"..(app.TableConcat(majorFactionInfo)));
 	tinsert(info, "skills"..(app.TableConcat(skills) or ""));
+	tinsert(info, "unlocks:"..app.TableConcat(acctUnlocks, nil, nil, "|"))
 	tinsert(info, "sq:"..app.SourceQuestString(questRef or id));
 	tinsert(info, "lq:"..(app.TableConcat(app.LastQuestsTurnedIn, nil, nil, "<") or ""));
 	tinsert(info, mapID and ("mapID:"..mapID.." ("..C_Map_GetMapInfo(mapID).name..")") or "mapID:??");
