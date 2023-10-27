@@ -35,13 +35,13 @@ local function SetStackCo()
 				s, c = pcall(f, p);
 				-- Function call has an error or it is not continuing, remove it from the Stack
 				if not s or not c then
-					if not s then app.PrintDebug("StackError:",c) end
+					if not s then app.PrintDebug("StackError:",i,f,p,c) end
 					-- app.PrintDebug("StackCo:Remove",i)
 					tremove(Stack, i);
 					tremove(StackParams, i);
 				end
 			end
-			-- app.PrintDebug("StackCo:Done")
+			-- app.PrintDebug("StackCo:Done",f,p)
 			-- Re-call StackCo if anything remains in the Stack
 			if #Stack > 0 then
 				-- app.PrintDebug("StackCo:QueueStack",#Stack)
@@ -189,10 +189,14 @@ local function CreateRunner(name)
 	local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
 	local Name = "Runner:"..name;
 	local QueueIndex = 1;
-	local Pushed;
-	local function SetPerFrame(count)
+	local Pushed, perFrame
+	local function SetPerFrame(count, instant)
 		Config.PerFrame = math_max(1, tonumber(count) or 1);
-		-- app.PrintDebug("FR.PerFrame."..name,Config.PerFrame)
+		-- app.PrintDebug("FR.PerFrame."..name,Config.PerFrame,instant)
+		-- if this per frame change was performed while in the runner queue, then yield immediately so that it takes effect
+		if not instant then
+			perFrame = 0
+		end
 	end
 	local function Reset()
 		Config.PerFrame = 1;
@@ -207,7 +211,8 @@ local function CreateRunner(name)
 	-- Static coroutine for the Runner which runs one loop each time the Runner is called, and yields on the Stack
 	local RunnerCoroutine = c_create(function()
 		while true do
-			local i, perFrame = 1, Config.PerFrame;
+			local i = 1
+			perFrame = Config.PerFrame
 			local params;
 			local func = FunctionQueue[i];
 			-- app.PrintDebug("FRC.Running."..name)
@@ -298,7 +303,7 @@ local function CreateRunner(name)
 	-- Defines how many functions will be executed per frame. Executes via the Runner when encountered in the Queue, unless specified as 'instant'
 	Runner.SetPerFrame = function(count, instant)
 		if instant then
-			SetPerFrame(count);
+			SetPerFrame(count, instant);
 		else
 			Runner.Run(SetPerFrame, count);
 		end
