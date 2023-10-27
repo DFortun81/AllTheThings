@@ -3156,15 +3156,12 @@ if GetAchievementNumCriteria then
 				--app.print("Unhandled Criteria Type", criteriaType, assetID, achievementID);
 				-- app.PrintDebug("Collecting currency",criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, uniqueID)
 			end
-			-- Criteria was not Sourced, so put it under the Achievement
+			-- Criteria was not Sourced, so return it in search results
 			if criteriaObject then
-				NestObject(o, criteriaObject);
 				CacheFields(criteriaObject);
 				tinsert(searchResults, criteriaObject);
 			end
 		end
-		BuildGroups(o);
-		app.DirectGroupUpdate(o);
 	end
 end
 
@@ -22014,7 +22011,7 @@ local function AssignDirectGroupOnUpdates()
 end
 
 local function PrePopulateAchievementSymlinks()
-	local achCache = app.SearchForFieldContainer("achievementID")
+	local achCache = app.CleanInheritingGroups(app.SearchForFieldContainer("achievementID"), "sourceIgnored")
 	-- app.PrintDebug("FillAchSym")
 	if achCache then
 		local FillSym = app.FillAchievementCriteriaAsync
