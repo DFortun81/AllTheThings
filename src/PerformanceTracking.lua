@@ -180,9 +180,9 @@ perf_meta_capture = {
 		end
 
 		local perf = GetPerfForScope(t, "NOSCOPE")
-		local scope = perf.__name.."."..key
+		local scope = perf.__name
 		if type(val) == "table" then
-			local pt = CaptureTable(val, scope)
+			local pt = CaptureTable(val, scope.."."..key)
 			rawset(t, key, pt)
 			AutoCaptureTable(pt, scope)
 			return

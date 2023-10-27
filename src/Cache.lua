@@ -72,9 +72,7 @@ local CreateDataCache = function(name, skipMapCaching)
 end
 currentCache = CreateDataCache("default");
 
-local currentMapCounters = setmetatable({}, {
-	__index = function(t, id) return 0; end,
-});
+local currentMapGroup, allowMapCaching = setmetatable({}, { __index = function() return end }), true
 local cacheAchievementID = function(group, value)
 	CacheField(group, "achievementID", value);
 end
@@ -89,20 +87,21 @@ end
 local cacheHeaderID = function(group, headerID)
 	CacheField(group, "headerID", headerID);
 end
+local function allowCacheMapID(group, mapID)
+	-- already are within a caching group for this mapID or not allowing map caching, don't cache
+	if currentMapGroup[mapID] or not allowMapCaching then return end
+	-- if the group has no sub-groups, then we allow caching for this new mapID, but don't capture it as a mapgroup
+	if not rawget(group, "g") then return true end
+	-- otherwise capture this group as the containing cache group of this mapID
+	-- app.PrintDebug(">>>map:",mapID,group.key,group[group.key])
+	currentMapGroup[mapID] = group
+	return true
+end
 local cacheMapID = function(group, mapID)
-	local count = currentMapCounters[mapID];
-	if count == 0 then
-		currentMapCounters[mapID] = 1;
-		if currentMapCounters[-1] == 0 then
-			-- as a reminder for future me/contrib, this is to prevent multiple caching of content into one mapID when all that content is within
-			-- a group which has already been cached against that mapID
-			CacheField(group, "mapID", mapID);
-		end
-	else
-		currentMapCounters[mapID] = count + 1;
-	end
-	return true;
-end;
+	if not allowCacheMapID(group, mapID) then return end
+	CacheField(group, "mapID", mapID);
+	return true
+end
 local cacheObjectID = function(group, objectID)
 	CacheField(group, "objectID", objectID);
 end;
@@ -209,12 +208,11 @@ local cacheProviderOrCost = function(group, provider)
 end
 
 local nextCustomMapID = -2;
-local uncacheMap = function(group, mapID, field)
-	if mapID then
-		local count = currentMapCounters[mapID];
-		if count > 0 then
-			currentMapCounters[mapID] = count - 1;
-		end
+local uncacheMap = function(group, mapID)
+	-- remove this group's mapID if it is the current map group for this mapID
+	if currentMapGroup[mapID] == group then
+		-- app.PrintDebug("<<<map:",mapID,group.key,group[group.key])
+		currentMapGroup[mapID] = nil
 	end
 end;
 local mapKeyUncachers = {
@@ -225,18 +223,14 @@ local mapKeyUncachers = {
 		end
 	end,
 	["coord"] = function(group, coord)
-		if not (group.instanceID or group.mapID or group.objectiveID) then	-- Retail doesn't have this line, investigate why or if they should
+		uncacheMap(group, coord[3]);
+	end,
+	["coords"] = function(group, coords)
+		for i,coord in ipairs(coords) do
 			uncacheMap(group, coord[3]);
 		end
 	end,
-	["coords"] = function(group, coords)
-		if not (group.instanceID or group.mapID or group.objectiveID) then	-- Retail doesn't have this line, investigate why or if they should
-			for i,coord in ipairs(coords) do
-				uncacheMap(group, coord[3]);
-			end
-		end
-	end,
-};
+}
 local fieldConverters = {
 	-- Simple Converters
 	["achievementID"] = cacheAchievementID,
@@ -573,7 +567,7 @@ if tonumber(app.GameBuildVersion) > 100000 then
 	-- use single iteration of each group by way of not performing any group field additions while the cache process is running
 	_CacheFields = function(group)
 		local mapKeys
-		local hasG = group.g
+		local hasG = rawget(group, "g")
 		for key,value in pairs(group) do
 			_converter = fieldConverters[key];
 			if _converter then
@@ -597,12 +591,11 @@ if tonumber(app.GameBuildVersion) > 100000 then
 end
 
 CacheFields = function(group, skipMapCaching)
-	currentMapCounters[-1] = skipMapCaching and 1 or 0;
+	allowMapCaching = not skipMapCaching
 	_CacheFields(group);
 	for i,runner in ipairs(runners) do
 		runner();
 	end
-	wipe(currentMapCounters);
 	wipe(runners);
 	return group;
 end
