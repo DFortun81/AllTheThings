@@ -9,7 +9,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- 737,	-- The Vortex Pinnacle
 			-- 857,	-- Throne of the Four Winds
 		--},
-		["achievementID"] = 4865,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				explorationAch(4865),	-- Explore Uldum

@@ -881,6 +881,12 @@ inst = function(id, t)									-- Create an INSTANCE Object
 	end
 end
 map = function(id, t)									-- Create a MAP Object
+	if t then
+		-- do not attach achievements to maps
+		if t.achievementID then
+			error("Do not attach 'achievementID' to a map.")
+		end
+	end
 	return struct("mapID", id, t);
 end
 m = map;												-- Create a MAP Object (alternative shortcut)

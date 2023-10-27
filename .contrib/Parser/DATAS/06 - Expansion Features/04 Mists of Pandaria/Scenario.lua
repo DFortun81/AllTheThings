@@ -63,7 +63,6 @@ root(ROOTS.ExpansionFeatures,
 					["crs"] = {
 						78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
 					},
-					["achievementID"] = 7252,	-- A Brewing Storm
 					["g"] = {
 						n(ACHIEVEMENTS, {
 							ach(7252),	-- A Brewing Storm
@@ -75,45 +74,33 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				m(487, {	-- A Little Patience
-					["achievementID"] = 7988,	-- A Little Patience
-					["g"] = {
-						n(ACHIEVEMENTS, {
-							ach(7988),	-- A Little Patience
-							ach(7989),	-- Bubbletrapped!
-							ach(7990),	-- Cannonballer
-							ach(7992),	-- I Used To Love Them
-							ach(7993),	-- We've Been Dancin'
-							ach(7991),	-- Which Came First?
-						}),
-					},
+					n(ACHIEVEMENTS, {
+						ach(7988),	-- A Little Patience
+						ach(7989),	-- Bubbletrapped!
+						ach(7990),	-- Cannonballer
+						ach(7992),	-- I Used To Love Them
+						ach(7993),	-- We've Been Dancin'
+						ach(7991),	-- Which Came First?
+					}),
 				}),
 				m(480, {	-- Arena of Annihilation
-					-- shared by actual proving grounds instance... hmmm
-					-- ["achievementID"] = 7271,	-- Arena of Annihilation
-					["g"] = {
-						n(ACHIEVEMENTS, {
-							ach(7271),	-- Arena of Annihilation
-							ach(7273),	-- Beat the Heat
-							ach(7272, {	-- In the Eye of the Tiger
-								crit(19342),	-- Kill Cloudbender Kobo
-								crit(20432),	-- Kill Maki Waterblade
-								crit(20433),	-- Kill Satay Byu
-							}),
+					n(ACHIEVEMENTS, {
+						ach(7271),	-- Arena of Annihilation
+						ach(7273),	-- Beat the Heat
+						ach(7272, {	-- In the Eye of the Tiger
+							crit(19342),	-- Kill Cloudbender Kobo
+							crit(20432),	-- Kill Maki Waterblade
+							crit(20433),	-- Kill Satay Byu
 						}),
-					},
+					}),
 				}),
 				m(451, {	-- Assault on Zan'vess
-					["achievementID"] = 8016,	-- Assault on Zan'vess
-					["g"] = {
-						n(ACHIEVEMENTS, {
-							ach(8016),	-- Assault on Zan'vess
-							ach(8017),	-- For the Swarm
-						}),
-					},
+					n(ACHIEVEMENTS, {
+						ach(8016),	-- Assault on Zan'vess
+						ach(8017),	-- For the Swarm
+					}),
 				}),
 				m(524, {	-- Battle on the High Seas
-					["allianceAchievementID"] = 8314,	-- Battle on the High Seas (A)
-					["hordeAchievementID"] = 8315,	-- Battle on the High Seas (H)
 					["crs"] = { 78777 },	-- Lorewalker Shin <Heroic Scenario Storyteller>
 					["g"] = {
 						n(ACHIEVEMENTS, {
@@ -126,38 +113,34 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				m(452, {	-- Brewmoon Festival
-					["achievementID"] = 6923,	-- Brewmoon Festival
-					["g"] = {
-						n(ACHIEVEMENTS, {
-							ach(6931, {	-- Binan Village All-Star
-								crit(21330),	-- Briaw Shan
-								crit(21331),	-- Barrel of Fireworks
-								crit(21335),	-- Vale Marksman
-								crit(21332),	-- Karasang Wild Brew
-								crit(21334),	-- Tian Disciple
-								crit(21333),	-- Derpa Derpa
-							}),
-							ach(6923),	-- Brewmoon Festival
-							ach(7385, {	-- Pub Crawl
-								i(87528),	-- Honorary Brewmaster Keg (TOY!)
-								crit(20680),	-- Spill No Evil
-								crit(20681),	-- Yaungolian Barbecue
-								crit(20682),	-- Binan Village All-Star
-								crit(20683),	-- The Keg Runner
-								crit(20684),	-- Monkey in the Middle
-								crit(20685),	-- Monkey See, Monkey Kill
-								crit(20686),	-- Don't Shake the Keg
-								crit(20687),	-- Party of Six
-								crit(20688),	-- The Perfect Pour
-								crit(20689),	-- Save it for Later
-								crit(20690),	-- Perfect Delivery
-							}),
-							ach(6930),	-- Yaungolian Barbecue
+					n(ACHIEVEMENTS, {
+						ach(6931, {	-- Binan Village All-Star
+							crit(21330),	-- Briaw Shan
+							crit(21331),	-- Barrel of Fireworks
+							crit(21335),	-- Vale Marksman
+							crit(21332),	-- Karasang Wild Brew
+							crit(21334),	-- Tian Disciple
+							crit(21333),	-- Derpa Derpa
 						}),
-					},
+						ach(6923),	-- Brewmoon Festival
+						ach(7385, {	-- Pub Crawl
+							i(87528),	-- Honorary Brewmaster Keg (TOY!)
+							crit(20680),	-- Spill No Evil
+							crit(20681),	-- Yaungolian Barbecue
+							crit(20682),	-- Binan Village All-Star
+							crit(20683),	-- The Keg Runner
+							crit(20684),	-- Monkey in the Middle
+							crit(20685),	-- Monkey See, Monkey Kill
+							crit(20686),	-- Don't Shake the Keg
+							crit(20687),	-- Party of Six
+							crit(20688),	-- The Perfect Pour
+							crit(20689),	-- Save it for Later
+							crit(20690),	-- Perfect Delivery
+						}),
+						ach(6930),	-- Yaungolian Barbecue
+					}),
 				}),
 				m(523, {	-- Blood in the Snow
-					["achievementID"] = 8316,	-- Blood in the Snow
 					["crs"] = {
 						78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
 					},
@@ -171,7 +154,6 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				m(481, {	-- Crypt of Forgotten Kings
-					["achievementID"] = 7522,	-- Crypt of Forgotten Kings
 					["maps"] = { 482 },	-- Crypt of Forgotten Kings
 					["crs"] = {
 						78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
@@ -187,7 +169,6 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				m(488, {	-- Dagger in the Dark
-					["achievementID"] = 8009,	-- Dagger in the Dark
 					["maps"] = { 489 },	-- Dagger in the Dark
 					["g"] = {
 						n(ACHIEVEMENTS, {
@@ -199,8 +180,6 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				m(498, {	-- Domination Point / Lion's Landing
-					["allianceAchievementID"] = 8010,	-- Lion's Landing
-					["hordeAchievementID"] = 8013,	-- Domination Point
 					["maps"] = { 486 },	-- Lion's Landing
 					["g"] = {
 						n(ACHIEVEMENTS, {
@@ -230,7 +209,6 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				m(520, {	-- Dark Heart of Pandaria
-					["achievementID"] = 8317,	-- Dark Heart of Pandaria
 					["maps"] = { 521 },	-- Dark Heart of Pandaria
 					["crs"] = {
 						78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
@@ -244,17 +222,13 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				m(448, {	-- Greenstone Village
-					["achievementID"] = 7265,	-- Greenstone Village
-					["g"] = {
-						n(ACHIEVEMENTS, {
-							ach(7265),	-- Greenstone Village
-							ach(7267),	-- Perfect Delivery
-							ach(7266),	-- Save it for Later
-						}),
-					},
+					n(ACHIEVEMENTS, {
+						ach(7265),	-- Greenstone Village
+						ach(7267),	-- Perfect Delivery
+						ach(7266),	-- Save it for Later
+					}),
 				}),
 				m(522, {	-- The Secrets of Ragefire
-					["achievementID"] = 8294,	-- The Secrets of Ragefire
 					["crs"] = {
 						78777,	-- Lorewalker Shin <Heroic Scenario Storyteller>
 					},
@@ -267,38 +241,31 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				m(483, {	-- Theramore's Fall
-					["allianceAchievementID"] = 7523,	-- Theramore's Fall (A)
-					["hordeAchievementID"] = 7524,	-- Theramore's Fall (H)
-					["g"] = {
-						n(ACHIEVEMENTS, {
-							a(ach(7526)),	-- Kite Flight (A)
-							h(ach(7529)),	-- Kite Fight (H)
-							a(ach(7527)),	-- No Tank You (A)
-							h(ach(7530)),	-- No Tank You (H)
-							a(ach(7523)),	-- Theramore's Fall (A)
-							h(ach(7524)),	-- Theramore's Fall (H)
-						}),
-					},
+					n(ACHIEVEMENTS, {
+						a(ach(7526)),	-- Kite Flight (A)
+						h(ach(7529)),	-- Kite Fight (H)
+						a(ach(7527)),	-- No Tank You (A)
+						h(ach(7530)),	-- No Tank You (H)
+						a(ach(7523)),	-- Theramore's Fall (A)
+						h(ach(7524)),	-- Theramore's Fall (H)
+					}),
 				}),
 				m(450, {	-- Unga Ingoo
-					["achievementID"] = 7249,	-- Unga Ingoo
-					["g"] = {
-						n(ACHIEVEMENTS, {
-							ach(7239),	-- Monkey in the Middle
-							ach(7248, {	-- Monkey See, Monkey Kill
-								crit(20696),	-- Captain Ook
-								crit(19858),	-- Ba-Bam
-								crit(19823),	-- Ookie
-								crit(19857),	-- Chihozen Binono
-								crit(19822),	-- Grooka Grooka
-								crit(19821),	-- Rik Rik
-								crit(20585),	-- Protected King Unga Keg
-							}),
-							ach(7231),	-- Spill No Evil
-							ach(7232),	-- The Keg Runner
-							ach(7249),	-- Unga Ingoo
+					n(ACHIEVEMENTS, {
+						ach(7239),	-- Monkey in the Middle
+						ach(7248, {	-- Monkey See, Monkey Kill
+							crit(20696),	-- Captain Ook
+							crit(19858),	-- Ba-Bam
+							crit(19823),	-- Ookie
+							crit(19857),	-- Chihozen Binono
+							crit(19822),	-- Grooka Grooka
+							crit(19821),	-- Rik Rik
+							crit(20585),	-- Protected King Unga Keg
 						}),
-					},
+						ach(7231),	-- Spill No Evil
+						ach(7232),	-- The Keg Runner
+						ach(7249),	-- Unga Ingoo
+					}),
 				}),
 				n(REWARDS, {
 					["description"] = "Mini Guide to farm both boxes:\nStep 1: Create a class-trial character.\nStep 2: Enter the portal room to travel to Jade Forest & fly to the Vale of Eternal Blossoms capital.\nStep 3: Pick up the Quest 'Heroic Deeds' in the middle of the capital.\nStep 4: Fly to the Seat of Knowledge and pick up the quest 'The King and the Council'.\nStep 5: Complete the 'Blood in the Snow' scenario on heroic.\nStep 6: Turn in the quest 'The King and the Council' and pick up the follow-up quest 'The Warchief and the Darkness'.\nStep 7: Complete the \"Dark heart of Pandaria\" scenario on either normal or heroic.\nStep 8: Turn in all quests, open all the boxes, logout & delete the trial character. Repeat Step 1-8.\nYou can create 4 trial characters per hour and 12 per week (based on realtime).\nBonus: The Trial Char can also be used to kill the World Boss on the Timless Isle. Talk to Chromie at the Seat Entrance for a free teleport.",

@@ -3,7 +3,6 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(CATA_TIER, bubbleDown({ ["timeline"] = { "added 4.0.6" } }, {
 	m(245, {	-- Tol Barad Peninsula
-		["achievementID"] = 4874,
 		["description"] = "Tol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.",
 		["lvl"] = 80,
 		["groups"] = {

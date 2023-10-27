@@ -76,18 +76,13 @@ local currentMapCounters = setmetatable({}, {
 	__index = function(t, id) return 0; end,
 });
 local cacheAchievementID = function(group, value)
-	-- achievements used on maps should not cache the location for the achievement
-	if group.mapID then
-		--print("Map has an achievementID linked. This is a deprecated style.", group.hash);
-		return;
-	end
 	CacheField(group, "achievementID", value);
 end
 local cacheCreatureID = function(group, creatureID)
 	if creatureID > 0 then
 		CacheField(group, "creatureID", creatureID);
 	end
-end;
+end
 local cacheFactionID = function(group, id)
 	CacheField(group, "factionID", id);
 end
@@ -99,6 +94,8 @@ local cacheMapID = function(group, mapID)
 	if count == 0 then
 		currentMapCounters[mapID] = 1;
 		if currentMapCounters[-1] == 0 then
+			-- as a reminder for future me/contrib, this is to prevent multiple caching of content into one mapID when all that content is within
+			-- a group which has already been cached against that mapID
 			CacheField(group, "mapID", mapID);
 		end
 	else
@@ -112,7 +109,19 @@ end;
 local cacheQuestID = function(group, questID)
 	CacheField(group, "questID", questID);
 end
-if app.Version == "[Git]" then
+local cacheGroupForModItemID = {}
+tinsert(runners, function()
+	local modItemID
+	-- app.PrintDebug("caching for modItemID",#cacheGroupForModItemID)
+	for _,group in ipairs(cacheGroupForModItemID) do
+		modItemID = group.modItemID
+		if modItemID ~= group.itemID then
+			CacheField(group, "itemID", modItemID)
+		end
+	end
+	-- app.PrintDebug("caching for modItemID done")
+end)
+if app.Debugging and app.Version == "[Git]" then
 	local L = app.L;
 	local referenceCounter = {};
 	app.ReferenceCounter = referenceCounter;
@@ -270,11 +279,8 @@ local fieldConverters = {
 		CacheField(group, "instanceID", value);
 	end,
 	["itemID"] = function(group, value)
-		local modItemID = group.modItemID or value;
-		if modItemID ~= value then
-			CacheField(group, "itemID", modItemID);
-		end
-		CacheField(group, "itemID", value);
+		CacheField(group, "itemID", value)
+		cacheGroupForModItemID[#cacheGroupForModItemID + 1] = group
 	end,
 	["otherItemID"] = function(group, value)
 		CacheField(group, "itemID", value);
@@ -289,8 +295,8 @@ local fieldConverters = {
 		CacheField(group, "professionID", value);
 	end,
 	["questID"] = cacheQuestID,
-	["questIDA"] = cacheQuestID,	-- These are referenced in Retail, not sure if used.
-	["questIDH"] = cacheQuestID,	-- These are referenced in Retail, not sure if used.
+	["questIDA"] = cacheQuestID,
+	["questIDH"] = cacheQuestID,
 	["requireSkill"] = function(group, value)
 		CacheField(group, "requireSkill", value);	-- NOTE: professionID in Retail, investigate why
 	end,
@@ -565,8 +571,6 @@ local function _CacheFields(group)
 	end
 end
 CacheFields = function(group, skipMapCaching)
-	wipe(currentMapCounters);
-	wipe(runners);
 	currentMapCounters[-1] = skipMapCaching and 1 or 0;
 	_CacheFields(group);
 	for i,runner in ipairs(runners) do
