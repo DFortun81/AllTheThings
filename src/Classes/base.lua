@@ -178,7 +178,7 @@ local DefaultFields = {
 
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 local classDefinitions, _cache = {};
-local BaseObjectFields = function(fields, className)
+local BaseObjectFields = not app.__perf and function(fields, className)
 	if not className then
 		print("A Class Name must be declared when using BaseObjectFields");
 	end
@@ -208,6 +208,39 @@ local BaseObjectFields = function(fields, className)
 		end
 	};
 end
+-- performance tracking wrapped base fields
+or function(fields, className)
+	if not className then
+		print("A Class Name must be declared when using BaseObjectFields");
+	end
+	local class = { __type = function() return className; end };
+	if not classDefinitions[className] then
+		classDefinitions[className] = class;
+	else
+		print("A Class has already been defined with that name!", className);
+	end
+	if fields then
+		for key,method in pairs(fields) do
+			class[key] = method;
+		end
+	end
+
+	-- Inject the default fields into the class
+	for key,method in pairs(DefaultFields) do
+		if not rawget(class, key) then
+			class[key] = method;
+		end
+	end
+	app.__perf.CaptureTable(class, className)
+	return {
+		__class = class,
+		__index = function(t, key)
+			_cache = rawget(class, key);
+			if _cache then return _cache(t); end
+		end
+	}
+end
+
 app.BaseObjectFields = BaseObjectFields;
 app.BaseClass = BaseObjectFields(nil, "BaseClass");
 
