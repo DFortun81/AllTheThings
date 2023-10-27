@@ -23,7 +23,7 @@ app:GetWindow("HiddentQuestTriggers", {
 				visible = true,
 				g = hqt,
 				_hqt = true,
-			});
+			}, true);
 		end
 	end,
 	OnRebuild = function(self)

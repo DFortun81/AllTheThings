@@ -23,7 +23,7 @@ app:GetWindow("HiddentAchievementTriggers", {
 				visible = true,
 				g = hat,
 				_hqt = true,
-			});
+			}, true);
 		end
 	end,
 	OnRebuild = function(self)
