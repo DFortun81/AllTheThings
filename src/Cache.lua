@@ -47,8 +47,12 @@ local currentCache, CacheFields;
 
 -- Cache a given group into the current cache for the provided field and value
 local function CacheField(group, field, value)
-	local c = currentCache[field][value]
-	c[#c + 1] = group
+	if field and value then
+		local c = currentCache[field][value]
+		c[#c + 1] = group
+	else
+		print("Attempting to cache invalid data", field, value, group.text);
+	end
 end
 
 -- Returns: An object which can be used for holding cached data by various keys allowing for quick updates of data states.
