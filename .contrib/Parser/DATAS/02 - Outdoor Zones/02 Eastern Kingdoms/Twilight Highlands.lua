@@ -21,30 +21,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						crit(1, {	-- High Shaman MacKilligan slain
+						crit(15952, {	-- High Shaman MacKilligan slain
 							["creatureID"] = 46885,
 							["coord"] = { 45.8, 33.6, TWILIGHT_HIGHLANDS },
 						}),
-						crit(2, {	-- Dillan MacHurley slain
+						crit(15953, {	-- Dillan MacHurley slain
 							["creatureID"] = 46378,
 							["coords"] = {
 								{ 45.0, 37.6, TWILIGHT_HIGHLANDS },
 								{ 46.8, 36.8, TWILIGHT_HIGHLANDS },
 							},
 						}),
-						crit(3, {	-- Gunwald Greybeard slain
+						crit(15954, {	-- Gunwald Greybeard slain
 							["creatureID"] = 46376,
 							["coord"] = { 45.2, 42.8, TWILIGHT_HIGHLANDS },
 						}),
-						crit(4, {	-- Cliff Thundermar slain
+						crit(15955, {	-- Cliff Thundermar slain
 							["creatureID"] = 46377,
 							["coord"] = { 52.8, 28.2, TWILIGHT_HIGHLANDS },
 						}),
-						crit(5, {	-- The Black Recluse spider slain
+						crit(15950, {	-- The Black Recluse spider slain
 							["creatureID"] = 47115,
 							["coord"] = { 45.8, 31.6, TWILIGHT_HIGHLANDS },
 						}),
-						crit(6, {	-- Korthalon the Black slain
+						crit(15951, {	-- Korthalon the Black slain
 							["creatureID"] = 47171,
 							["coord"] = { 52.0, 27.6, TWILIGHT_HIGHLANDS },
 						}),

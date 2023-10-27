@@ -402,7 +402,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 29101,	-- Punting Season
 					["groups"] = {
 						n(52383, {	-- Nemesis <Echo of the Usurper>
-							crit(5, {	-- Infernal Ambassadors (Slay Nemesis at Ashen Lake without taking damage from Molten Fury)
+							crit(17834, {	-- Infernal Ambassadors (Slay Nemesis at Ashen Lake without taking damage from Molten Fury)
 								["achievementID"] = 5869,
 							}),
 						}),
@@ -799,7 +799,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 29161,	-- Those Bears Up There
 					["groups"] = {
 						n(52749, {	-- Pyrachnis <Beth'tilac Lieutenant>
-							crit(1, {	-- Infernal Ambassadors (Slay Pyrachnis without using the Emerald of Aessina)
+							crit(17829, {	-- Infernal Ambassadors (Slay Pyrachnis without using the Emerald of Aessina)
 								["achievementID"] = 5869,
 							}),
 						}),
@@ -1358,7 +1358,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 27.0, 62.7, MOUNT_HYJAL },
 					["sourceQuest"] = 29200,	-- Leyara
 					["groups"] = {
-						ach(5866, crit(2)),	-- The Molten Front Offensive / Gain access to the Molten Front
+						ach(5866, crit(17814)),	-- The Molten Front Offensive / Gain access to the Molten Front
 					},
 				}),
 				q(29196, {	-- To the Sanctuary!

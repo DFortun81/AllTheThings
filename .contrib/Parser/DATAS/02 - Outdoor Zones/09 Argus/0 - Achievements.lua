@@ -1074,72 +1074,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			},
 		}),
 		ach(12074, {	-- Shoot First, Loot Later
-			crit(1, {	-- Krokul Emergency Cache
-				["_quests"] = { 48884 },
-			}),
-			crit(2, {	-- Legion Tower Chest
-				["_quests"] = { 48885 },
-			}),
-			crit(3, {	-- Lost Krokul Chest
-				["_quests"] = { 48886 },
-			}),
-			crit(4, {	-- Eredar Treasure Cache
-				["_quests"] = { 48743 },
-			}),
-			crit(5, {	-- Chest of Ill-Gotten Gains
-				["_quests"] = { 48744 },
-			}),
-			crit(6, {	-- Student's Surprising Surplus
-				["_quests"] = { 48745 },
-			}),
-			crit(7, {	-- Void-Tinged Chest
-				["_quests"] = { 48747 },
-			}),
-			crit(8, {	-- Augari Secret Stash
-				["_quests"] = { 48748 },
-			}),
-			crit(9, {	-- Desperate Eredar's Cache
-				["_quests"] = { 48749 },
-			}),
-			crit(10, {	-- Shattered House Chest
-				["_quests"] = { 48750 },
-			}),
-			crit(11, {	-- Doomseeker's Treasure
-				["_quests"] = { 48751 },
-			}),
-			crit(12, {	-- Forgotten Legion Supplies
-				["_quests"] = { 49017 },
-			}),
-			crit(13, {	-- Ancient Legion War Cache
-				["_quests"] = { 49018 },
-			}),
-			crit(14, {	-- Fel-Bound Chest
-				["_quests"] = { 49019 },
-			}),
-			crit(15, {	-- Legion Treasure Hoard
-				["_quests"] = { 49020 },
-			}),
-			crit(16, {	-- Timeworn Fel Chest
-				["_quests"] = { 49021 },
-			}),
-			crit(17, {	-- Augari-Runed Chest
-				["_quests"] = { 49129 },
-			}),
-			crit(18, {	-- Secret Augari Chest
-				["_quests"] = { 49151 },
-			}),
-			crit(19, {	-- Augari Goods
-				["_quests"] = { 49153 },
-			}),
-			crit(20, {	-- Long-Lost Augari Treasure
-				["_quests"] = { 49154 },
-			}),
-			crit(21, {	-- Precious Augari Keepsakes
-				["_quests"] = { 49156 },
-			}),
-			crit(22, {	-- Missing Augari Chest
-				["_quests"] = { 49159 },
-			}),
+			["sym"] = {{ "achievement_criteria" }},
 		}),
 		ach(12102),	-- To Kill Demons...
 		ach(12101),	-- We Came Here For Two Reasons

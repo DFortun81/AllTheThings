@@ -7,46 +7,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 		n(ACHIEVEMENTS, {
 			achraw(13790, {	-- Armed for Action
 				["description"] = "Each criteria can be earned by creating weapons with Rocket-Chief Fuselage during the |cFFffd200Toys for Destruction|r daily.",
-				["g"] = {
-					crit(1, {	-- Volatile Blaster
-						["_quests"] = { 54090 },	-- Toys For Destruction
-					}),
-					crit(2, {	-- Ricket's Special Delivery
-						["_quests"] = { 54090 },	-- Toys For Destruction
-					}),
-					crit(3, {	-- Lightning Zap 5000
-						["_quests"] = { 54090 },	-- Toys For Destruction
-					}),
-					crit(4, {	-- Supercollider
-						["_quests"] = { 54090 },	-- Toys For Destruction
-					}),
-					crit(5, {	-- Boltspitter
-						["_quests"] = { 54090 },	-- Toys For Destruction
-					}),
-				},
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13513, {	-- Available in Eight Colors (unlocks paint: Battletorn Blue)
-				crit(1, {	-- Big-ol Bronze
-					["_quests"] = { 55517 },	-- Paint Vial: Big-ol Bronze
-				}),
-				crit(2, {	-- Fel Mint Green
-					["_quests"] = { 55452 },	-- Paint Vial: Fel Mint Green
-				}),
-				crit(3, {	-- Mechagon Gold
-					["_quests"] = { 55455 },	-- Paint Vial: Mechagon Gold
-				}),
-				crit(4, {	-- Copper Trim
-					["_quests"] = { 55456 },	-- Paint Vial: Copper Trim
-				}),
-				crit(5, {	-- Lemonade Steel
-					["_quests"] = { 55454 },	-- Paint Vial: Lemonade Steel
-				}),
-				crit(6, {	-- Fireball Red
-					["_quests"] = { 55451 },	-- Paint Vial: Fireball Red
-				}),
-				crit(7, {	-- Overload Orange
-					["_quests"] = { 55457 },	-- Paint Vial: Overload Orange
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13472),	-- Deep Pockets
 			ach(13473, {	-- Diversed Investments
@@ -71,117 +35,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 			}),
 			ach(13477),	-- Junkyard Apprentice
 			ach(13479, {	-- Junkyard Architect
-				crit(1, {	-- Scrap Grenade
-					["_quests"] = { 55101 },	-- Junkyard Tinkering and You
-				}),
-				crit(2, {	-- Scrap Trap
-					["_quests"] = { 55030 },	-- Blueprint: Scrap Trap
-				}),
-				crit(3, {	-- Hundred-Fathom Lure
-					["_quests"] = { 55055, }	-- Build a Bigger Fish Trap
-				}),
-				crit(4, {	-- Mechanocat Laser Pointer
-					["_quests"] = { 55056 },	-- Blueprint: Mechanocat Laser Pointer
-				}),
-				crit(5, {	-- Canned Minnows
-					["_quests"] = { 55057 },	-- Blueprint: Canned Minnows
-				}),
-				crit(6, {	-- Vaultbot Key
-					["_quests"] = { 55058 },	-- Blueprint: Vaultbot Key
-				}),
-				crit(7, {	-- Emergency Repair Kit
-					["_quests"] = { 55059 },	-- Blueprint: Emergency Repair Kit
-				}),
-				crit(8, {	-- Emergency Powerpack
-					["_quests"] = { 55060 },	-- Blueprint: Emergency Powerpack
-				}),
-				crit(9, {	-- Mechano-Treat
-					["_quests"] = { 55061 },	-- Blueprint: Mechano-Treat
-				}),
-				crit(10, {	-- Ultrasafe Transporter: Mechagon
-					["_quests"] = { 55062 },	-- Blueprint: Ultrasafe Transporter: Mechagon
-				}),
-				crit(11, {	-- G99.99 Landshark
-					["_quests"] = { 55063 },	-- Blueprint: G99.99 Landshark
-				}),
-				crit(12, {	-- Rustbolt Gramophone
-					["_quests"] = { 55064 },	-- Blueprint: Rustbolt Gramophone
-				}),
-				crit(13, {	-- Rustbolt Kegerator
-					["_quests"] = { 55065 },	-- Blueprint: Rustbolt Kegerator
-				}),
-				crit(14, {	-- Beastbot Powerpack
-					["_quests"] = { 55066 },	-- Blueprint: Beastbot Powerpack
-				}),
-				crit(15, {	-- BAWLD-371
-					["_quests"] = { 55068 },	-- Blueprint: BAWLD-371
-				}),
-				crit(16, {	-- Protocol Transference Device
-					["_quests"] = { 55069 },	-- Blueprint: Protocol Transference Device
-				}),
-				crit(17, {	-- Emergency Rocket Chicken
-					["_quests"] = { 55071 },	-- Blueprint: Emergency Rocket Chicken
-				}),
-				crit(18, {	-- Battle Box
-					["_quests"] = { 55072 },	-- Blueprint: Battle Box
-				}),
-				crit(19, {	-- Rustbolt Resistance Insignia
-					["_quests"] = { 55073 },	-- Blueprint: Rustbolt Resistance Insignia
-				}),
-				crit(20, {	-- Rustbolt Requisitions
-					["_quests"] = { 55074 },	-- Blueprint: Rustbolt Requisitions
-				}),
-				crit(21, {	-- Scrapmaster's Blowtorch
-					["_quests"] = { 56181 },	-- This One's On Me
-				}),
-				crit(22, {	-- Experimental Adventurer's Augment
-					["_quests"] = { 56087 },	-- Blueprint: Experimental Adventurer Augment
-				}),
-				crit(23, {	-- Advanced Adventurer Augment
-					["_quests"] = { 56145 },	-- Blueprint: Advanced Adventurer Augment
-				}),
-				crit(24, {	-- Extraordinary Adventurer Augment
-					["_quests"] = { 56165 },	-- Blueprint: Extraordinary Adventurer Augment
-				}),
-				crit(25, {	-- Holographic Digitalization Relay
-					["_quests"] = { 56086 },	-- Blueprint: Holographic Digitalization Relay
-				}),
-				crit(26, {	-- Personal Time Displayer
-					["_quests"] = { 55070 },	-- Blueprint: Personal Time Displacer
-				}),
-				crit(27, {	-- Orange Spraybot
-					["_quests"] = { 55075 },	-- Blueprint: Orange Spraybot
-				}),
-				crit(28, {	-- Green Spraybot
-					["_quests"] = { 55076 },	-- Blueprint: Green Spraybot
-				}),
-				crit(29, {	-- Blue Spraybot
-					["_quests"] = { 55077 },	-- Blueprint: Blue Spraybot
-				}),
-				crit(30, {	-- Utility Mechanoclaw
-					["_quests"] = { 55078 },	-- Blueprint: Utility Mechanoclaw
-				}),
-				crit(31, {	-- Microbot XD
-					["_quests"] = { 55079 },	-- Blueprint: Microbot XD
-				}),
-				crit(32, {	-- Anti-Gravity Pack
-					["_quests"] = { 55081 },	-- Blueprint: Anti-Gravity Pack
-				}),
-				crit(33, {	-- Rustbolt Pocket Turrent
-					["_quests"] = { 55082 },	-- Blueprint: Rustbolt Pocket Turret
-				}),
-				crit(34, {	-- Annoy-o-Tron Gang
-					["_quests"] = { 55083 },	-- Blueprint: Annoy-o-Tron Gang
-				}),
-				crit(35, {	-- Encrypted Black Market Radio
-					["_quests"] = { 55084 },	-- Blueprint: Encrypted Black Market Radio
-				}),
-				crit(36, {	-- Re-Procedurally Generated Punchcard
-					["_quests"] = { 55067 },	-- Blueprint: Re-Procedurally Generated Punchcard
-				}),
-				crit(37, {	-- S.P.A.R.E. Crate
-					["_quests"] = { 56740 },	-- S.P.A.R.E. Crates
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13478, {	-- Junkyard Collector
 				-- identical criteria as full achievement
@@ -189,64 +43,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 			}),
 			ach(13474),	-- Junkyard Machinist
 			ach(13686, {	-- Junkyard Melomaniac
-				crit(1, {	-- Ode to Tinkertown
-					["_quests"] = { 55534 },	-- Rustbolt Gramophone
-				}),
-				crit(2, {	-- Gnomeregan Forever
-					["_quests"] = { 56515 },	-- Vinyl: Gnomeregan Forever
-				}),
-				crit(3, {	-- Mimiron's Brainstorm
-					["_quests"] = { 56516 },	-- Vinyl: Mimiron's Brainstorm
-				}),
-				crit(4, {	-- Battle of Gnomeregan
-					["_quests"] = { 56517 },	-- Vinyl: Battle of Gnomeregan
-				}),
-				crit(5, {	-- Depths of Ulduar
-					["_quests"] = { 56518 },	-- Vinyl: Depths of Ulduar
-				}),
-				crit(6, {	-- Triumph of Gnomeregan
-					["_quests"] = { 56519 },	-- Vinyl: Triumph of Gnomeregan
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13475),	-- Junkyard Scavenger
 			ach(13476),	-- Junkyard Tinkerer
 			ach(13791, {	-- Making the Mount
-				crit(1, {	-- Shop Project
-					["_quests"] = { 55608 },	-- Shop Project
-				}),
-				crit(2, {	-- Right Bot for the Job
-					["_quests"] = { 54086 },	-- Right Bot for the Job
-				}),
-				crit(3, {	-- Ready to Rumble
-					["_quests"] = { 54929 },	-- Ready to Rumble
-				}),
-				crit(4, {	-- Knock 'Em Out The Box
-					["_quests"] = { 55373 },	-- Knock 'Em Out The Box
-				}),
-				crit(5, {	-- A Little Leg Work
-					["_quests"] = { 55697 },	-- A Little Leg Work
-				}),
-				crit(6, {	-- The Nuts and Bolts of It
-					["_quests"] = { 54922 },	-- The Nuts and Bolts of It
-				}),
-				crit(7, {	-- Factory Refurbished
-					["_quests"] = { 56168 },	-- Factory Refurbished
-				}),
-				crit(8, {	-- Grease the Wheels
-					["_quests"] = { 54083 },	-- Grease The Wheels
-				}),
-				crit(9, {	-- Emission Free
-					["_quests"] = { 56175 },	-- Emission Free
-				}),
-				crit(10, {	-- Test Drive
-					["_quests"] = { 55696 },	-- Test Drive
-				}),
-				crit(11, {	-- Knock His Bot Off
-					["_quests"] = { 55753 },	-- Knock His Bot Off
-				}),
-				crit(12, {	-- Drive it Away Today
-					["_quests"] = { 55622 },	-- Drive It Away Today
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13541, {	-- Mecha-Done
 				-- Meta Achievement should symlink the contained Achievements from Source

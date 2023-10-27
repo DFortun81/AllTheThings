@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(5443, {		-- E'ko Madness
 					["timeline"] = { "added 4.0.3" },
 					["groups"] = {
-						crit(1, {	-- Winterspring Furbolg
+						crit(15632, {	-- Winterspring Furbolg
 							["crs"] = {
 								10738,	-- High Chief Winterfall
 								7442,	-- Winterfall Pathfinder
@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 36.8, 55.6, WINTERSPRING },
 							},
 						}),
-						crit(2, {	-- Wildkin
+						crit(16177, {	-- Wildkin
 							["crs"] = {
 								7454,	-- Berserk Owlbeast
 								7452,	-- Crazed Owlbeast
@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 57.6, 75.6, WINTERSPRING }
 							},
 						}),
-						crit(3, {	-- Shardtooth Bears
+						crit(16178, {	-- Shardtooth Bears
 							["crs"] = {
 								7444,	-- Shardtooth Bear
 								7443,	-- Shardtooth Mauler
@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 55.8, 38.8, WINTERSPRING },
 							},
 						}),
-						crit(4, {	-- Frostmaul Giants
+						crit(16179, {	-- Frostmaul Giants
 							["crs"] = {
 								7428,	-- Frostmaul Giant
 							},
@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 63.2, 89.8, WINTERSPRING },
 							},
 						}),
-						crit(5, {	-- Frostsabers
+						crit(16180, {	-- Frostsabers
 							["crs"] = {
 								7431,	-- Frostsaber
 								10737,	-- Shy-Rotam
@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 51.4, 22.0, WINTERSPRING },
 							},
 						}),
-						crit(6, {	-- Chillwind Chimaera
+						crit(16181, {	-- Chillwind Chimaera
 							["crs"] = {
 								7448,	-- Chillwind Chimera
 							},
@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ 58.0, 23.8, WINTERSPRING },
 							},
 						}),
-						crit(7, {	-- Ice Thistle Yeti
+						crit(16182, {	-- Ice Thistle Yeti
 							["crs"] = {
 								7459,	-- Ice Thistle Matriarch
 								7460,	-- Ice Thistle Patriarch

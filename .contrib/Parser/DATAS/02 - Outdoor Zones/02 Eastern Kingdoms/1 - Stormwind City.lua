@@ -2597,45 +2597,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						crit(1, {	-- Hitting a Walleye
-							["_quests"] = { 26414 },	-- Hitting a Walleye
-						}),
-						crit(2, {	-- Diggin' For Worms
-							["_quests"] = { 26420 },	-- Diggin' For Worms
-						}),
-						crit(3, {	-- Rock Lobster
-							["_quests"] = { 26442 },	-- Rock Lobster
-						}),
-						crit(4, {	-- Big Gulp
-							["_quests"] = { 26488 },	-- Big Gulp
-						}),
-						crit(5, {	-- Thunder Falls
-							["_quests"] = { 26536 },	-- Thunder Falls
-						}),
-					},
+					["sym"] = {{ "achievement_criteria" }},
 				})),
 				applyclassicphase(CATA_PHASE_ONE, ach(5474, {	-- Let's Do Lunch: Stormwind
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						crit(1, {	-- A Fisherman's Feast
-							["sourceQuest"] = 26190,	-- A Fisherman's Feast
-						}),
-						crit(2, {	-- Feeling Crabby?
-							["sourceQuest"] = 26177,	-- Feeling Crabby?
-						}),
-						crit(3, {	-- Orphans Like Cookies Too!
-							["sourceQuest"] = 26192,	-- Orphans Like Cookies Too!
-						}),
-						crit(4, {	-- Penny's Pumpkin Pancakes
-							["sourceQuest"] = 26153,	-- Penny's Pumpkin Pancakes
-						}),
-						crit(5, {	-- The King's Cider
-							["sourceQuest"] = 26183,	-- The King's Cider
-						}),
-					},
+					["sym"] = {{ "achievement_criteria" }},
 				})),
 			}),
 			battlepets({

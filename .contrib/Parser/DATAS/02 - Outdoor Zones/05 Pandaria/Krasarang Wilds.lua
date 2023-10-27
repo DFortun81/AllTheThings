@@ -55,15 +55,15 @@ root(ROOTS.Zones, {
 									["sym"] = {{ "achievement_criteria" }},
 								}),
 								ach(7932, {	-- I'm In Your Base, Killing Your Dudes
-									crit(1, {	-- Champion of Arms slain
+									crit(22456, {	-- Champion of Arms slain
 										["coord"] = { 89.5, 22.7, KRASARANG_WILDS },	-- Dalan Nightbreaker (H)
 										["cr"] = 68318,	-- Dalan Nightbreaker (H)
 									}),
-									crit(2, {	-- Champion of the Shadows slain
+									crit(22458, {	-- Champion of the Shadows slain
 										["coord"] = { 89.1, 26.8, KRASARANG_WILDS },	-- Mavis Harms (H)
 										["cr"] = 68317,	-- Mavis Harms (H)
 									}),
-									crit(3, {	-- Champion of the Light slain
+									crit(22460, {	-- Champion of the Light slain
 										["coord"] = { 92.2, 24.8, KRASARANG_WILDS },	-- Disha Fearwarden (H)
 										["cr"] = 68319,	-- Disha Fearwarden (H)
 									}),
@@ -741,15 +741,15 @@ root(ROOTS.Zones, {
 						["g"] = {
 							n(ACHIEVEMENTS, {
 								ach(7932, {	-- I'm In Your Base, Killing Your Dudes
-									crit(1, {	-- Champion of Arms slain
+									crit(22455, {	-- Champion of Arms slain
 										["coord"] = { 13.5, 54.8, KRASARANG_WILDS },	-- Kar Warmaker
 										["cr"] = 68321,	-- Kar Warmaker
 									}),
-									crit(2, {	-- Champion of the Shadows slain
+									crit(22457, {	-- Champion of the Shadows slain
 										["coord"] = { 12.8, 64.7, KRASARANG_WILDS },	-- Ubunti the Shade
 										["cr"] = 68320,	-- Ubunti the Shade
 									}),
-									crit(3, {	-- Champion of the Light slain
+									crit(22459, {	-- Champion of the Light slain
 										["coord"] = { 9.68, 54.4, KRASARANG_WILDS },	-- Muerta
 										["cr"] = 68322,	-- Muerta
 									}),

@@ -285,20 +285,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 				["description"] = "Turn in all items at 44.90, 27.41.",
 				["coord"] = { 44.90, 27.41, DRUSTVAR },
-				["g"] = {
-					crit(1, {	-- Crossbow
-						["_quests"] = { 53430 },
-					}),
-					crit(2, {	-- Flask
-						["_quests"] = { 53431 },
-					}),
-					crit(3, {	-- Hat
-						["_quests"] = { 53433 },
-					}),
-					crit(4, {	-- Knife
-						["_quests"] = { 53432 },
-					}),
-				},
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			petbattle(ach(13279, {	-- Family Battler
 				["collectible"] = false,

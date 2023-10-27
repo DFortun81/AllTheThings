@@ -87,7 +87,8 @@ root(ROOTS.Zones, {
 						crit(1, {	-- Shadowmoon Village
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = {
-								-- TODO: there's more required here
+								10673,	-- Felspine the Greater (H)
+								10769,	-- Dissension Amongst the Ranks... (H)
 								10745,	-- News of Victory (H)
 							},
 						}),

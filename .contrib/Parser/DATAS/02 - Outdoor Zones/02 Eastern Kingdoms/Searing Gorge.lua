@@ -17,22 +17,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4910, {	-- Searing Gorge Quests
 					["timeline"] = { "added 4.0.1" },
 					["groups"] = {
-						crit(1, {	-- Thorium Advance
+						crit(38257, {	-- Thorium Advance
 							["sourceQuest"] = 27964,	-- Dig-Boss Dinwhisker
 						}),
-						crit(2, {	-- The Seat of the Brotherhood
-							["sourceQuests"] = {
-								27979,	-- Dark Ministry
-								28099,	-- Rasha'krak
-								--[[ TODO:: possibly needed:
-								27981,	-- Heat That Just Don't Quit
-								]]--
-							},
+						crit(38264, {	-- The Seat of the Brotherhood 1/2
+							["sourceQuest"] = 27979,	-- Dark Ministry
 						}),
-						crit(3, {	-- In the Hall of the Mountain-Lord
+						crit(38261, {	-- The Seat of the Brotherhood 2/2
+							["sourceQuest"] = 28099,	-- Rasha'krak
+						}),
+						crit(38266, {	-- In the Hall of the Mountain-Lord
 							["sourceQuest"] = 28035,	-- The Mountain-Lord's Support
 						}),
-						crit(4, {	-- Into the Gorge
+						crit(38267, {	-- Into the Gorge
 							["sourceQuest"] = 28064,	-- Welcome to the Brotherhood
 						}),
 					},

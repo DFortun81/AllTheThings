@@ -39,45 +39,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						crit(1, {	-- Fish Head
-							["_quests"] = { 29317 },	-- Fish Head
-						}),
-						crit(2, {	-- Tadpole Terror
-							["_quests"] = { 29319 },	-- Tadpole Terror
-						}),
-						crit(3, {	-- Like Pike?
-							["_quests"] = { 29320 },	-- Like Pike?
-						}),
-						crit(4, {	-- Time for Slime
-							["_quests"] = { 29322 },	-- Time for Slime
-						}),
-						crit(5, {	-- Moat Monster!
-							["_quests"] = { 29361 },	-- Moat Monster!
-						}),
-					},
+					["sym"] = {{ "achievement_criteria" }},
 				})),
 				applyclassicphase(CATA_PHASE_ONE, ach(5844, {	-- Let's Do Lunch: Undercity
 					["timeline"] = { "added 4.2.0" },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						crit(1, {	-- Fungus Among Us
-							["sourceQuest"] = 29315,	-- Fungus Among Us
-						}),
-						crit(2, {	-- Escargot A Go-Go
-							["sourceQuest"] = 29333,	-- Escargot A Go-Go
-						}),
-						crit(3, {	-- Would You Like Some Flies With That?
-							["sourceQuest"] = 29360,	-- Would You Like Some Flies With That?
-						}),
-						crit(4, {	-- Lily, Oh Lily
-							["sourceQuest"] = 29332,	-- Lily, Oh Lily
-						}),
-						crit(5, {	-- Roach Coach
-							["sourceQuest"] = 29334,	-- Roach Coach
-						}),
-					},
+					["sym"] = {{ "achievement_criteria" }},
 				})),
 			}),
 			battlepets({
