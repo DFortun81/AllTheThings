@@ -2774,12 +2774,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- #if AFTER CATA
 						i(3053, {	-- Humbert's Chestpiece
-							["timeline"] = { "removed 4.0.3", "added 8.0.1" },	-- Maybe was never removed. Not sure. Pre Cata source is Dun Garok Rifleman (Zone Drop).
+							["timeline"] = { "removed 4.0.3", "added 8.0.1" },	-- Maybe was never removed. Not sure. Pre Cata source is Dun Garok Mountaineer (Zone Drop).
 						}),
 						-- #endif
-						i(4724, {	-- Humbert's Helm
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-						}),
 					},
 				}),
 				n(50818, {	-- The Dark Prowler
