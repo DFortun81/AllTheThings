@@ -535,9 +535,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				i(200126, {	-- Mantle of Copious Chronologies
 					["crs"] = RARE_GROUP_TIME,
 				}),
-				i(200293, {	-- Primal Scion's Twinblade
-					["crs"] = RARE_GROUP_FIVE,
-				}),
 				i(200228, {	-- Protoscale Pauldrons
 					["crs"] = RARE_GROUP_DRAGONKIN,
 				}),
@@ -635,6 +632,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				i(200233, {	-- Paradox Saber
 					["crs"] = RARE_GROUP_DRAGON,
+				}),
+				i(200293, {	-- Primal Scion's Twinblade
+					["crs"] = RARE_GROUP_FIVE,
 				}),
 				i(200169, {	-- Protector's Molten Cudgel
 					["crs"] = RARE_GROUP_DJARADIN,
