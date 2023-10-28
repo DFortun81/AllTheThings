@@ -1614,7 +1614,10 @@ root(ROOTS.Zones, {
 					}),
 					o(241600, {	-- Discarded Helm
 						["questID"] = 38702,
-						["coord"] = { 49.9, 81.2, TANAAN_JUNGLE },
+						["coords"] = {
+							{ 49.9, 81.2, TANAAN_JUNGLE },
+							{ 51.3, 79.5, TANAAN_JUNGLE },	-- Cave Entrance
+						},
 						["g"] = {
 							i(127312),	-- Fallen Adventurer's Helm
 						},
