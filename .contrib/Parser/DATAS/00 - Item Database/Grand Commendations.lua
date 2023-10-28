@@ -357,10 +357,10 @@ i(187429, FACTION_THE_WILD_HUNT);			-- Petrified Sylvan Antlers
 ------------------
 -- PATCH 10.0.2 --
 ------------------
-i(200285, FACTION_DRAGONSCALE_EXPEDITION);			-- Dragonscale Expedition Insignia [Uncommon]
-i(200452, FACTION_DRAGONSCALE_EXPEDITION);			-- Dragonscale Expedition Insignia [Rare]
-i(201921, FACTION_DRAGONSCALE_EXPEDITION);			-- Dragonscale Expedition Insignia [Epic]
-i(202091, FACTION_DRAGONSCALE_EXPEDITION);			-- Dragonscale Expedition Insignia [Epic 2.5k]
+i(200285, FACTION_DRAGONSCALE_EXPEDITION);	-- Dragonscale Expedition Insignia [Uncommon]
+i(200452, FACTION_DRAGONSCALE_EXPEDITION);	-- Dragonscale Expedition Insignia [Rare]
+i(201921, FACTION_DRAGONSCALE_EXPEDITION);	-- Dragonscale Expedition Insignia [Epic]
+i(202091, FACTION_DRAGONSCALE_EXPEDITION);	-- Dragonscale Expedition Insignia [Epic 2.5k]
 i(200287, FACTION_ISKAARA_TUSKARR);			-- Iskaara Tuskarr Insignia [Uncommon]
 i(200453, FACTION_ISKAARA_TUSKARR);			-- Iskaara Tuskarr Insignia [Rare]
 i(201922, FACTION_ISKAARA_TUSKARR);			-- Iskaara Tuskarr Insignia [Epic]
@@ -373,6 +373,11 @@ i(200289, FACTION_VALDRAKKEN_ACCORD);		-- Valdrakken Accord Insignia [Uncommon]
 i(200455, FACTION_VALDRAKKEN_ACCORD);		-- Valdrakken Accord Insignia [Rare]
 i(201924, FACTION_VALDRAKKEN_ACCORD);		-- Valdrakken Accord Insignia [Epic]
 i(202093, FACTION_VALDRAKKEN_ACCORD);		-- Valdrakken Accord Insignia [Epic 2.5k]
+
+------------------
+-- PATCH 10.1.5 --
+------------------
+i(208952, FACTION_SORIDORMI);				-- Soridormi's Letter of Commendation
 
 ------------------
 -- PATCH 10.1.0 --

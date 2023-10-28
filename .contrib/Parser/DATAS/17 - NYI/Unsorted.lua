@@ -912,7 +912,6 @@ root(ROOTS.Unsorted, {
 				i(211176),	-- Arsenal: Scalewarden's Club
 				i(211177),	-- Arsenal: Scalewarden's Shortsword
 				--
-				i(208567),	-- Cracked Medal of Conquest
 				i(211126),	-- Glorious Medal of Honor
 				i(208564),	-- Lesser Verdant Trophy of Conquest
 				i(208565),	-- Verdant Trophy of Conquest
@@ -920,7 +919,6 @@ root(ROOTS.Unsorted, {
 				i(208568),	-- Lesser Verdant Crest of Honor
 				i(208569),	-- Verdant Crest of Honor
 				i(208570),	-- Greater Verdant Crest of Honor
-				i(210326),	-- Medal of Conquest
 				i(206366),	-- Cracked Trophy of Strife
 			}),
 			n(RARES, {

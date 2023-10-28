@@ -340,7 +340,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 		i(203724, {	-- Field Medic's Hazard Payout
 			["timeline"] = { ADDED_10_0_7 },
 			["g"] = {
-				i(208567),	-- Medal of Conquest
+				i(208567, {	-- Cracked Medal of Conquest
+					["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
+				}),
+				i(210326, {	-- Medal of Conquest
+					["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+				}),
 			},
 		}),
 	})),

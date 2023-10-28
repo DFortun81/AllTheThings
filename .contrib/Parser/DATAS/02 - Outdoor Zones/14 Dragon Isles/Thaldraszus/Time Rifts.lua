@@ -355,7 +355,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(DILATED_TIME_CAPSULE),
 								i(207002),	-- Encapsulated Destiny
 								i(207027),	-- Greater Encapsulated Destiny
-								i(208951),	-- Paracausal Cluster
+								i(208951, {	-- Paracausal Cluster
+									currency(PARACAUSAL_FLAKES),
+								}),
 								i(208952),	-- Soridormi's Letter of Commendation
 							}),
 						},
@@ -644,6 +646,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							}),
 							i(208945, {	-- Paracausal Crate
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 500 }},
+								["g"] = {
+									currency(PARACAUSAL_FLAKES),
+								},
 							}),
 						}),
 					}),

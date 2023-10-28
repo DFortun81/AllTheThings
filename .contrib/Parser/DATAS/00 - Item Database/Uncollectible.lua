@@ -20,9 +20,6 @@ i(181781);	-- Almost Empty Amontillado Cask
 i(183596);	-- Broken Artifact
 i(191734);	-- Motion Sick Peon's Magical Elixir
 
--- Tailoring
-i(184480);	-- Lightless Silk Pouch
-
 -- 9.1 (no unsorted yet so don't know categories)
 i(186472);	-- Wisps of Memory
 
@@ -123,20 +120,13 @@ i(184149);	-- Widowbloom-Infused Fragrance
 i(181648);	-- Ziggurat Focusing Crystal
 
 -- Battle Pet
-i(183714);	-- Swamp Reed (presumably Withered Creeper was originally learned via this item, but is now wild-caught, so this item being anywhere other than this folder makes the pet show as Unsorted or NYI or w/e)
 i(180627); -- Tranquil Wader
 i(180632); -- Gorm Rootstinger
 i(182672); -- Misty Leaper
 
 -- Consumables
 -- BC
-i(23379);	-- Cinder Bracers
-i(23529);	-- Adamantite Sharpening Stone
-i(23764);	-- Adamantite Scope
-i(23765);	-- Khorium Scope
-i(23766);	-- Stabilized Eternium Scope
 i(23820);	-- Critter Enlarger
-i(28421);	-- Adamantite Weightstone
 
 i(180686);	-- "Borrowed" Soulstone
 i(181616);	-- A Treatise on the Great Battles of Lordaeron
@@ -225,7 +215,6 @@ i(141655);	-- Shimmering Ancient Mana Cluster
 i(180410);	-- Simmiring Draft of Shadows
 i(118905);	-- Sinister Spores
 i(169856);	-- Spark-1351
-i(1187);	-- Spiked Collar
 i(168271);	-- Stolen Ramkahen Banner
 i(119216);	-- Super Sticky Glitter Bomb
 i(15723);	-- Tea with Sugar
@@ -557,11 +546,6 @@ i(89427);	-- Ancient Mogu Treasure
 i(85224);	-- Basic Seed Pack
 i(140360);	-- Rockwurm Barb
 i(153119);	-- Wyrmtongue Cache of Finery
-
-
-
-
-
 
 
 
