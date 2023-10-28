@@ -10,6 +10,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["g"] = bubbleDownRepSkip(FACTION_THE_ASCENDED, {
 					{		-- Neutral
 						i(190644, {	-- Vessel of Profound Possibilities
+							["cost"] = {{"c",2009,10000}},	-- 10,000 Cosmic Flux
 							["timeline"] = { ADDED_9_2_0 },
 							["sym"] = {
 								{"select","tierID",SL_TIER},{"pop"},	-- SL Tier

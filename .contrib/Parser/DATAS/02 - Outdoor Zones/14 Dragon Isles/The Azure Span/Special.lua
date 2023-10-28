@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			n(196768, {	-- Primal Bear Cub
-				["description"] = "Give 3x Hornswog Hunk and a Honey Snack to Primal Bear Cub while wearing the title Honorary Dryad will give you this pet.",
+				["description"] = "Give 3x Hornswog Hunk and a Honey Snack to Primal Bear Cub while wearing the title Honorary Dryad (from Thalendra [192522]) will give you this pet.",
 				["sourceQuests"] = { 67606 },	-- A Dryadic Remedy
 				["coord"] = { 67.4, 18.4, THE_AZURE_SPAN },
 				["g"] = {
@@ -49,7 +49,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							{ "i", 201420, 20 },	-- 20xGnolan's House Special
 						},
 					}),
-
 				},
 			}),
 		}),

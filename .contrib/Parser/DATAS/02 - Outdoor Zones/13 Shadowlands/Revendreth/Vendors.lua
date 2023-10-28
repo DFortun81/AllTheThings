@@ -156,6 +156,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(184755),	-- Reinforced High Collar
 					i(182207),	-- Illusion: Sinsedge (ILLUSION!)
 					i(190644, {	-- Vessel of Profound Possibilities
+						["cost"] = {{"c",2009,10000}},	-- 10,000 Cosmic Flux
 						["timeline"] = { "added 9.2.0" },
 						["sym"] = {
 							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
