@@ -302,12 +302,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["g"] = {
 						q(75632, {	-- A Dislocated Disc
 							["sourceQuests"] = {
+								-- required
+								75923,	-- Raise the Alarm
+								-- 1 required?
 								72444,	-- A Sliver of Silver
-								76422,	-- Infinity and Beyond
+								76422,	-- Infinity and Beyond (definitely optional, someone confirm this is available without 72444 instead)
 							},
-							["sourceQuestNumRequired"] = 1,
+							["sourceQuestNumRequired"] = 2,
 							["provider"] = { "n", 187669 },	-- Nozdormu
-							["coord"] = { 60.4, 58.9, VALDRAKKEN },
+							["coord"] = { 61.4, 39.1, VALDRAKKEN },
 						}),
 						q(75633, {	-- We Have the Technology
 							["sourceQuests"] = { 75632 },	-- A Dislocated Disc
@@ -370,11 +373,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							["sourceQuests"] = { 76176 },	-- First Steps
 							["provider"] = { "n", 204667 },	-- Etenrus
 							["coord"] = { 60.3, 58.8, THALDRASZUS },
+							["maps"] = { THE_STORM_PEAKS },
 						}),
 						q(75637, {	-- The Final Beacon
 							["sourceQuests"] = { 75636 },	-- Tyrangulation
 							["provider"] = { "n", 206682 },	-- Travard
 							["coord"] = { 60.3, 58.7, THALDRASZUS },
+							["maps"] = { 2228 },	-- The Black Empire
 						}),
 						q(75638, {	-- Dislocated Disc Located
 							["sourceQuests"] = { 75637 },	-- The Final Beacon

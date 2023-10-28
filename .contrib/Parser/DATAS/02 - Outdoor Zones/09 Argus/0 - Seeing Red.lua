@@ -62,7 +62,17 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 			["sourceQuests"] = { 77795 },	-- Scavenged Artifacts
 			["g"] = {
 				i(208691, {	-- Argunite Cluster
-					["description"] = "Rewarded from any Allies of Arzaal after the questline",
+					["description"] = "Rewarded from any Allies of Arzaal after the questline. Contains a few random items related to Argus.",
+					["sym"] = {{"select","itemID",
+						151718,	-- Argulite
+						151565,	-- Astral Glory
+						151564,	-- Empyrium
+						151566,	-- Fiendish Leather
+						151722,	-- Florid Malachite
+						151579,	-- Labradorite
+						151567,	-- Lightweave Cloth
+					},
+					{"select","currencyID",1508}},	-- Veiled Argunite
 				}),
 			}
 		}, {
