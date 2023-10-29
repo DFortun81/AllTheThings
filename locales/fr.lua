@@ -596,8 +596,11 @@ ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’ensembl
 		L.SECRETS_HEADER = "Secrets";
 		L.LIMITED_QUANTITY = "Il s’agit d’une quantité limitée qui n’est pas toujours disponible chez le vendeur.";
 		L.SOURCE_ID_MISSING = "Veuillez signaler cet objet et le lieu où il a été acquis sur le Discord d’ATT, dans le salon #retail-errors !";
-		L.ADDED_WITH_PATCH_FORMAT = "Ceci a été ajouté au patch %s";
-		L.REMOVED_WITH_PATCH_FORMAT = "Ceci a été retiré au patch %s";
+		L.ADDED_WITH_PATCH_FORMAT = "Ceci a été ajouté au patch %s";	--TODO: Added in %s
+		--TODO: L.WAS_ADDED_WITH_PATCH_FORMAT = "Added in %s";
+		--TODO: L.ADDED_BACK_WITH_PATCH_FORMAT = "Re-added in %s";
+		--TODO: L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Added in %s";
+		L.REMOVED_WITH_PATCH_FORMAT = "Ceci a été retiré au patch %s";	--TODO: Removed in %s
 
 	-- Artifact Relic Completion
 		L.ARTIFACT_RELIC_CACHE = "Ouvre l’interface des Armes prodigieuses pour toutes tes Armes prodigieuses afin de vérifier si c’est une amélioration ou non. Cela est utile pour déterminer si tu peux échanger cet objet à un Twink ou non.";

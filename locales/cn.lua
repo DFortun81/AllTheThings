@@ -604,6 +604,7 @@ ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DISCOUNT_
 		L.SECRETS_HEADER = "解密";
 		L.LIMITED_QUANTITY = "此物品有数量限制，在商人处并非总是可见。";
 		L.SOURCE_ID_MISSING = "请在 #retail-errors 中向 ATT Discord 报告此物品及其获取地点！";
+		--TODO: recheck these patch strings
 		L.ADDED_WITH_PATCH_FORMAT = "补丁 %s 中添加";
 		L.WAS_ADDED_WITH_PATCH_FORMAT = "最新补丁 %s 中添加";
 		L.ADDED_BACK_WITH_PATCH_FORMAT = "补丁 %s 中添加回归";

@@ -606,9 +606,9 @@ ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."В
 		L.SOURCE_ID_MISSING = "Пожалуйста, сообщите в канале #retail-errors на нашем сервере Discord, где Вы нашли эту вещь!";
 		L.ADDED_WITH_PATCH_FORMAT = "Добавлено в %s";
 		L.WAS_ADDED_WITH_PATCH_FORMAT = "Добавлено в %s";
-		--L.ADDED_BACK_WITH_PATCH_FORMAT = "Added back with patch %s";
-		--L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Newly added back with patch %s";
-		L.REMOVED_WITH_PATCH_FORMAT = "Удалено через %s";
+		L.ADDED_BACK_WITH_PATCH_FORMAT = "Добавлено снова в %s";
+		L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Добавлено снова в %s";
+		L.REMOVED_WITH_PATCH_FORMAT = "Удалено в %s";
 
 	-- Icons and Collection Text
 		L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abffСобрано|r";	-- Acquired the colors and icon from CanIMogIt.

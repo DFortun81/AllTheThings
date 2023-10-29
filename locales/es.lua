@@ -595,8 +595,11 @@ ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCOUNT_TO
 		--TODO: L.SECRETS_HEADER = "Secrets";
 		--TODO: L.LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
 		--TODO: L.SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
-		--TODO: L.ADDED_WITH_PATCH_FORMAT = "This gets added in patch %s";
-		--TODO: L.REMOVED_WITH_PATCH_FORMAT = "This gets removed in patch %s";
+		--TODO: L.ADDED_WITH_PATCH_FORMAT = "Added in %s";
+		--TODO: L.WAS_ADDED_WITH_PATCH_FORMAT = "Added in %s";
+		--TODO: L.ADDED_BACK_WITH_PATCH_FORMAT = "Re-added in %s";
+		--TODO: L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Added in %s";
+		--TODO: L.REMOVED_WITH_PATCH_FORMAT = "Removed in %s";
 
 	-- Artifact Relic Completion
 		--TODO: L.ARTIFACT_RELIC_CACHE = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
