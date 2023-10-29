@@ -3708,11 +3708,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["timeline"] = { "added 5.0.1" },
 				}),
 				q(32041, {	-- Candy Bucket — Kun-Lai Summit, Grummle Bazaar, Neutral
-					["coord"] = { 57.4, 59.9, KUN_LAI_SUMMIT },
+					["coord"] = { 64.2, 61.2, KUN_LAI_SUMMIT },
 					["timeline"] = { "added 5.0.1" },
 				}),
 				q(32037, {	-- Candy Bucket — Kun-Lai Summit, One Keg, Neutral
-					["coord"] = { 64.2, 61.2, KUN_LAI_SUMMIT },
+					["coord"] = { 57.4, 59.9, KUN_LAI_SUMMIT },
 					["timeline"] = { "added 5.0.1" },
 				}),
 				q(32051, {	-- Candy Bucket — Kun-Lai Summit, Zouchin Village, Neutral
