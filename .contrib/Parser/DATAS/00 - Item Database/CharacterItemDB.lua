@@ -242,3 +242,4 @@ iq(210729, 78517, DRUID);	-- Mark of the Verdant Bristlebruin
 iq(210728, 78521, DRUID);	-- Moon-Blessed Claw
 iq(210727, 78518, DRUID);	-- Pollenfused Bristlebruin Fur Sample
 iq(210753, 78516, DRUID);	-- Scale of the Prismatic Whiskerfish
+iq(211314, 78842, HUNTER);	-- Cinder of Companionship

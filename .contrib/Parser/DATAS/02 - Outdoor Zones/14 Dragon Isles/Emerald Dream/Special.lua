@@ -110,6 +110,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 			}),
+			i(210753, {	-- Scale of the Prismatic Whiskerfish (CI!)
+				["provider"] = { "i", 210784 },	-- Xena, the Whimsical Whiskerfish
+			}),
 		}),
 	}),
 })));

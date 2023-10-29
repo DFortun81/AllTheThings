@@ -12,6 +12,9 @@ root(ROOTS.Character, filter(MISC, {
 		i(210645, {	-- Feather of Friends (CI!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
+		i(210754, {	-- Feather of the Blazing Somnowl (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
 		i(211280, {	-- Feather of the Smoke Red Moon (CI!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
@@ -111,6 +114,9 @@ root(ROOTS.Character, filter(MISC, {
 		i(210727, {	-- Pollenfused Bristlebruin Fur Sample (CI!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
+		i(210753, {	-- Scale of the Prismatic Whiskerfish (CI!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
 		i(136795, {	-- Tome of the Wilds: Charm Woodland Creature (CI!)
 			["timeline"] = { ADDED_7_0_3_LAUNCH },
 		}),
@@ -133,6 +139,9 @@ root(ROOTS.Character, filter(MISC, {
 		}),
 		i(166502, {	-- Blood-Soaked Tome of Dark Whispers (CI!)
 			["timeline"] = { ADDED_8_1_0 },
+		}),
+		i(211314, {	-- Cinder of Companionship (CI!)
+			["timeline"] = { ADDED_10_2_0 },
 		}),
 		i(136782, {	-- Fireworks Instruction Manual (CI!)
 			["timeline"] = { ADDED_7_0_3_LAUNCH },

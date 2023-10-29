@@ -424,6 +424,21 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					i(208212),	-- Dreaming Essence
 				},
 			}),
+			n(SPECIAL, {
+				i(210783, {	-- Awakening Sunfish
+					["description"] = "Fish in the lava pools of the Pit of Volcoross.",
+				}),
+				i(210782, {	-- Slumbering Moonfish
+					["description"] = "Fish in the waters of the Wellspring Atrium.",
+				}),
+				i(210784, {	-- Xena, the Whimsical Whiskerfish
+					["description"] = "First get the Attuned Angler Buff by returing 10 Awakening Sunfish and 10 Slumbering Moonfish. Go back into the raid and fish in the biggest pool of water within the Wellspring Atrium.",
+					["cost"] = {
+						{ "i", 210783, 10 },	-- Awakening Sunfish
+						{ "i", 210782, 10 },	-- Slumbering Moonfish
+					},
+				}),
+			}),
 			d(ALL_DIFFICULTIES_RAID, {
 				bossNoLoot(GNARLROOT, {
 					i(210170),	-- Design: Dreamtender's Charm (RECIPE!)
@@ -456,11 +471,13 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				}),
 				bossNoLoot(LARODAR_KEEPER_OF_THE_FLAME, {
 					i(210175),	-- Formula: Enchant Weapon - Dreaming Devotion (RECIPE!)
+					i(209035),	-- Hearthstone of the Flame (TOY!)
 				}),
 				bossNoLoot(NYMUE_WEAVER_OF_THE_CYCLE, {
 					i(210670),	-- Pattern: Verdant Tether (RECIPE!)
 				}),
 				bossNoLoot(TINDRAL_SAGESWIFT_SEER_OF_THE_FLAME, {
+					i(211314),	-- Cinder of Companionship (CI!)
 					i(211280),	-- Feather of the Smoke Red Moon (CI!)
 					i(210644),	-- Plans: Flourishing Dream Helm (RECIPE!)
 				}),
@@ -516,7 +533,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					}),
 				}),
 				bossNoLoot(LARODAR_KEEPER_OF_THE_FLAME, {
-					ach(19089),	-- Don't Let the Doe Hit You On The Way Out
+					ach(19089, {	-- Don't Let the Doe Hit You On The Way Out
+						i(210556),	-- Ivy (PET!)
+					}),
 				}),
 				bossNoLoot(NYMUE_WEAVER_OF_THE_CYCLE, {
 					ach(19394),	-- A Dream Within a Dream
@@ -654,7 +673,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						title(528),	-- <Name>, Famed Slayer of Fyrakk
 					})),
 					ach(19389),	-- Mythic: Fyrakk the Blazing Guild Run
-					i(210061),	-- Anu'relos, Flame's Guidance (MOUNT!)
+					i(210061, {	-- Anu'relos, Flame's Guidance (MOUNT!)
+						i(210754),	-- Feather of the Blazing Somnowl (CI!)
+					}),
 					i(210947, {	-- Flame-Warped Curio
 						["sym"] = {{"sub","instance_tier",1207,MYTHIC_RAID}}
 					}),
