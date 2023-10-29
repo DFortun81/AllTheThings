@@ -36,9 +36,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			o(408107, {	-- Crystalline Glowblossom
 				["questID"] = 77950,
 				["coord"] = { 39.1, 65.5, EMERALD_DREAM },
-				["g"] = {
-					i(210725),	-- Owl Post (TOY!)
-				},
 			}),
 			o(407862, {	-- Hidden Moonkin Stash
 				["questID"] = 77858,
