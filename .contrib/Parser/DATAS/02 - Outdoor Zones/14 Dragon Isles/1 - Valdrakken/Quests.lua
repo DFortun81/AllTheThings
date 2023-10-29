@@ -4,25 +4,25 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(VALDRAKKEN, {
 		n(REWARDS, {
-			i(200452, {	-- Dragonscale Expedition Insignia
+			i(200452, {	-- Dragonscale Expedition Insignia [Rare]
 				["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
 			}),
-			i(200453, {	-- Iskaara Tuskarr Insignia
+			i(200453, {	-- Iskaara Tuskarr Insignia [Rare]
 				["minReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
 			}),
-			i(200454, {	-- Maruuk Centaur Insignia
+			i(200454, {	-- Maruuk Centaur Insignia [Rare]
 				["minReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
 				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				-- #endif
 			}),
-			i(200455, {	-- Valdrakken Accord Insignia
+			i(200455, {	-- Valdrakken Accord Insignia [Rare]
 				["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 				-- #if BEFORE 10.0.7
 				["description"] = "This is only awarded if your character is currently max Renown with this reputation.",

@@ -11,7 +11,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["maxReputation"] = { FACTION_LOAMM_NIFFEN, 20 },
 					["isWeekly"] = true,
 					["g"] = {
-						i(205985),	-- Loamm Niffen Insignia [Epic]
+						i(205985),	-- Loamm Niffen Insignia [Epic 500]
 						i(205983, {	-- Scentsational Niffen Treasures
 							["sym"] = {
 								{"select", "mapID", ZARALEK_CAVERN },

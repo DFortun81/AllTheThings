@@ -41,10 +41,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(204717),	-- Splintered Spark of Shadowflame
 						},
 					}),
-					i(200452),	-- Dragonscale Expedition Insignia
-					i(200453),	-- Iskaara Tuskarr Insignia
-					i(200454),	-- Maruuk Centaur Insignia
-					i(200455),	-- Valdrakken Accord Insignia
+					i(200452),	-- Dragonscale Expedition Insignia [Rare]
+					i(200453),	-- Iskaara Tuskarr Insignia [Rare]
+					i(200454),	-- Maruuk Centaur Insignia [Rare]
+					i(200455),	-- Valdrakken Accord Insignia [Rare]
 				},
 			}, {
 				q(72169),	-- Proving in Arenas

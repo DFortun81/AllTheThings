@@ -67,19 +67,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(202172),	-- Overflowing Satchel of Coins
 					},
 				}),
-				i(201921, {	-- Dragonscale Expedition Insignia
+				i(201921, {	-- Dragonscale Expedition Insignia [Epic 500]
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
-				i(201922, {	-- Iskaara Tuskarr Insignia
+				i(201922, {	-- Iskaara Tuskarr Insignia [Epic 500]
 					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
-				i(201923, {	-- Maruuk Centaur Insignia
+				i(201923, {	-- Maruuk Centaur Insignia [Epic 500]
 					["minReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
-				i(201924, {	-- Valdrakken Accord Insignia
+				i(201924, {	-- Valdrakken Accord Insignia [Epic 500]
 					["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),

@@ -359,19 +359,19 @@ i(187429, FACTION_THE_WILD_HUNT);			-- Petrified Sylvan Antlers
 ------------------
 i(200285, FACTION_DRAGONSCALE_EXPEDITION);	-- Dragonscale Expedition Insignia [Uncommon]
 i(200452, FACTION_DRAGONSCALE_EXPEDITION);	-- Dragonscale Expedition Insignia [Rare]
-i(201921, FACTION_DRAGONSCALE_EXPEDITION);	-- Dragonscale Expedition Insignia [Epic]
+i(201921, FACTION_DRAGONSCALE_EXPEDITION);	-- Dragonscale Expedition Insignia [Epic 500]
 i(202091, FACTION_DRAGONSCALE_EXPEDITION);	-- Dragonscale Expedition Insignia [Epic 2.5k]
 i(200287, FACTION_ISKAARA_TUSKARR);			-- Iskaara Tuskarr Insignia [Uncommon]
 i(200453, FACTION_ISKAARA_TUSKARR);			-- Iskaara Tuskarr Insignia [Rare]
-i(201922, FACTION_ISKAARA_TUSKARR);			-- Iskaara Tuskarr Insignia [Epic]
+i(201922, FACTION_ISKAARA_TUSKARR);			-- Iskaara Tuskarr Insignia [Epic 500]
 i(202092, FACTION_ISKAARA_TUSKARR);			-- Iskaara Tuskarr Insignia [Epic 2.5k]
 i(200288, FACTION_MARUUK_CENTAUR);			-- Maruuk Centaur Insignia [Uncommon]
 i(200454, FACTION_MARUUK_CENTAUR);			-- Maruuk Centaur Insignia [Rare]
-i(201923, FACTION_MARUUK_CENTAUR);			-- Maruuk Centaur Insignia [Epic]
+i(201923, FACTION_MARUUK_CENTAUR);			-- Maruuk Centaur Insignia [Epic 500]
 i(202094, FACTION_MARUUK_CENTAUR);			-- Maruuk Centaur Insignia [Epic 2.5k]
 i(200289, FACTION_VALDRAKKEN_ACCORD);		-- Valdrakken Accord Insignia [Uncommon]
 i(200455, FACTION_VALDRAKKEN_ACCORD);		-- Valdrakken Accord Insignia [Rare]
-i(201924, FACTION_VALDRAKKEN_ACCORD);		-- Valdrakken Accord Insignia [Epic]
+i(201924, FACTION_VALDRAKKEN_ACCORD);		-- Valdrakken Accord Insignia [Epic 500]
 i(202093, FACTION_VALDRAKKEN_ACCORD);		-- Valdrakken Accord Insignia [Epic 2.5k]
 
 ------------------
@@ -384,7 +384,7 @@ i(208952, FACTION_SORIDORMI);				-- Soridormi's Letter of Commendation
 ------------------
 i(205365, FACTION_LOAMM_NIFFEN);			-- Loamm Niffen Insignia [Uncommon]
 i(205342, FACTION_LOAMM_NIFFEN);			-- Loamm Niffen Insignia [Rare]
-i(205985, FACTION_LOAMM_NIFFEN);			-- Loamm Niffen Insignia [Epic]
+i(205985, FACTION_LOAMM_NIFFEN);			-- Loamm Niffen Insignia [Epic 500]
 
 ------------------
 -- PATCH 10.1.5 --
@@ -393,3 +393,8 @@ i(208617, FACTION_EBON_BLADE);				-- Ebon Blade Commendation Badge [BOP]
 i(208133, FACTION_ORGRIMMAR);				-- Orgrimmar Insignia [BOP]
 i(208134, FACTION_RUSTBOLT_RESISTANCE);		-- Rustbolt Resistance Insignia [BOP]
 i(208132, FACTION_STORMWIND);				-- Stormwind Insignia [BOP]
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+i(211417, FACTION_DREAM_WARDENS);			-- Dream Wardens Insignia [Epic 1k]

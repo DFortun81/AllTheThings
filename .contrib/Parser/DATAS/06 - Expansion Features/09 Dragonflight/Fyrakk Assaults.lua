@@ -157,8 +157,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			})),
 			n(REWARDS, {
 				i(205258),	-- Everburning Shadowflame
-				i(200453),	-- Iskaara Tuskarr Insignia
-				i(200454),	-- Maruuk Centaur Insignia
+				i(200453),	-- Iskaara Tuskarr Insignia [Rare]
+				i(200454),	-- Maruuk Centaur Insignia [Rare]
 				i(204076, {	-- Drake's Shadowflame Crest Fragments
 					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 				}),

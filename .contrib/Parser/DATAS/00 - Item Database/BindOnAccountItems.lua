@@ -299,19 +299,19 @@ i(200080);	-- Draconium Nugget
 i(200443);	-- Dragon Isles Artifact
 i(200285);	-- Dragonscale Expedition Insignia [Uncommon]
 i(200452);	-- Dragonscale Expedition Insignia [Rare]
-i(201921);	-- Dragonscale Expedition Insignia [Epic]
+i(201921);	-- Dragonscale Expedition Insignia [Epic 500]
 i(202091);	-- Dragonscale Expedition Insignia [Epic 2.5k]
 i(200083);	-- Irontree Branch
 i(200287);	-- Iskaara Tuskarr Insignia [Uncommon]
 i(200453);	-- Iskaara Tuskarr Insignia [Rare]
-i(201922);	-- Iskaara Tuskarr Insignia [Epic]
+i(201922);	-- Iskaara Tuskarr Insignia [Epic 500]
 i(202092);	-- Iskaara Tuskarr Insignia [Epic 2.5k]
 i(200085);	-- Khaz'gorite Wire
 i(200086);	-- Khaz'gorite-Infused Resin
 i(202173);	-- Magmote
 i(200288);	-- Maruuk Centaur Insignia [Uncommon]
 i(200454);	-- Maruuk Centaur Insignia [Rare]
-i(201923);	-- Maruuk Centaur Insignia [Epic]
+i(201923);	-- Maruuk Centaur Insignia [Epic 500]
 i(202094);	-- Maruuk Centaur Insignia [Epic 2.5k]
 i(201254);	-- Medal of Honor [A] (Season 1)
 i(201255);	-- Medal of Honor [H] (Season 1)
@@ -322,7 +322,7 @@ i(200081);	-- Strong Seavine
 i(200450);	-- Titan Relic
 i(200289);	-- Valdrakken Accord Insignia [Uncommon]
 i(200455);	-- Valdrakken Accord Insignia [Rare]
-i(201924);	-- Valdrakken Accord Insignia [Epic]
+i(201924);	-- Valdrakken Accord Insignia [Epic 500]
 i(202093);	-- Valdrakken Accord Insignia [Epic 2.5k]
 
 ------------------
@@ -391,7 +391,7 @@ i(204337);	-- Awakened Heirloom Scabbard
 i(204727);	-- Coveted Bauble
 i(205365);	-- Loamm Niffen Insignia [Uncommon]
 i(205342);	-- Loamm Niffen Insignia [Rare]
-i(205985);	-- Loamm Niffen Insignia [Epic]
+i(205985);	-- Loamm Niffen Insignia [Epic 500]
 i(204179);	-- Medal of Honor [A] (Season 2)
 i(204180);	-- Medal of Honor [H] (Season 2)
 i(206200);	-- Obsidian Equipment Chest
