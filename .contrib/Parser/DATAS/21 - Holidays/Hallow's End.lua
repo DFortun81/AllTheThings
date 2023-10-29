@@ -3696,7 +3696,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["timeline"] = { "added 5.0.1" },
 				}),
 				q(32034, {	-- Candy Bucket — Krasarang Wilds, Marista, Neutral
-					["coord"] = { 53.44, 76.49, KRASARANG_WILDS },
+					["coord"] = { 51.4, 77.29, KRASARANG_WILDS },
 					["timeline"] = { "added 5.0.1" },
 				}),
 				q(32036, {	-- Candy Bucket — Krasarang Wilds, Zhu's Watch, Neutral
@@ -4307,7 +4307,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["timeline"] = { "added 4.1.0.13726" },
 				}),
 				q(32052, {	-- Candy Bucket — Vale of Eternal Blossoms, Shrine of Seven Stars, Alliance
-					["coord"] = { 37.7, 66.1, 393 },
+					["coord"] = { 87.0, 68.8, VALE_OF_ETERNAL_BLOSSOMS },
 					["timeline"] = { "added 5.0.1" },
 				}),
 				q(28985, {	-- Candy Bucket — Vashj'ir, Darkbreak Cove, Alliance
@@ -4664,7 +4664,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["timeline"] = { "added 2.0.1" },
 				}),
 				q(32022, {	-- Candy Bucket — Vale of Eternal Blossoms, Shrine of Two Moons, Horde
-					["coord"] = { 61.9, 16.1, 391 },
+					["coord"] = { 61.9, 16.1, VALE_OF_ETERNAL_BLOSSOMS },
 					["timeline"] = { "added 5.0.1" },
 				}),
 				q(28984, {	-- Candy Bucket — Vashj'ir, Legion's Rest, Horde
