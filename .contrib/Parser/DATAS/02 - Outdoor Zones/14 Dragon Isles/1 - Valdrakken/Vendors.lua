@@ -59,6 +59,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 1 }},
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
 					}),
+					i(210436, {	-- Nature's Cradle
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 6 }},
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 }
+					}),
 					i(202122, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Primal Chaos Cluster
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S1, 3 }},
 						["g"] = {
