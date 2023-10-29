@@ -16680,7 +16680,7 @@ function app:GetDataCache()
 				dynamic_withsubgroups = true,
 				name = L["NEW_WITH_PATCH"],
 				description = L["NEW_WITH_PATCH_TOOLTIP"],
-				icon = app.asset("WindowIcon_RWP")
+				icon = app.asset("Interface_Newly_Added")
 			}),
 
 			-- Artifacts
