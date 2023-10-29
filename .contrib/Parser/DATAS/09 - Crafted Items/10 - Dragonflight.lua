@@ -3085,6 +3085,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			i(193253),	-- Cacophonous Thunderscale
 			i(193251),	-- Crystalspine Fur
 			i(198837),	-- Curious Hide Scraps
+			i(210456, {["timeline"] = {ADDED_10_2_0}}),	-- Dreaming Antler Fragment
 			i(198841),	-- Large Sample of Curious Hide
 			i(193216),	-- Dense Hide+
 			i(193217),	-- Dense Hide++

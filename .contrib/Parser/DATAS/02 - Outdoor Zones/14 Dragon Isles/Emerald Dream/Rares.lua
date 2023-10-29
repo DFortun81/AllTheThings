@@ -39,6 +39,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 34.5, 63.2, EMERALD_DREAM },
 				["g"] = {
 					i(208332),	-- Horns of the Envoy
+					i(208365),	-- Winter's Stand
 					i(208881),	-- Shiversnap Blossom (QI!)
 				},
 			}),
@@ -48,6 +49,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 30.0, 20.7, EMERALD_DREAM },
 				["g"] = {
 					i(208328),	-- Fystia's Deft Hands
+					i(209881),	-- Fystia's Fiery Kris
 				},
 			}),
 			n(209913, {	-- Fruitface
@@ -103,6 +105,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 40.5, 49.6, EMERALD_DREAM },
 				["g"] = {
 					i(208342),	-- Girdle of Nature's Fury
+					i(208363),	-- Twinfang of the Cian
 					i(210650),	-- Mark of the Keen-Eyed Dreamsaber (CI!)
 					i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)
 				},
@@ -112,6 +115,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 41.1, 73.3, EMERALD_DREAM },
 				["g"] = {
 					i(210683),	-- Mark of the Dreamtalon Matriarch (CI!)
+					i(208379),	-- Keevah's Extended Claw
 					i(208343),	-- Matriarch's Flowery Band
 					i(208339),	-- Saber's Stone Pauldrons
 				},
@@ -140,6 +144,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["g"] = {
 					i(210729),	-- Mark of the Verdant Bristlebruin (CI!)
 					i(209954),	-- Moragh's Favorite Rock (TODO: remove if it will drop somewhere else)
+					i(208380),	-- Moragh's Kneading Claw
 					i(208329),	-- Warm Grasp of the Dream
 				},
 			}),
@@ -164,6 +169,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 65.0, 84.2, EMERALD_DREAM },
 				["g"] = {
 					i(208327),	-- Maruud's Piercing Hands
+					i(209882),	-- Maruud's Undertow
 				},
 			}),
 			n(210161, {	-- Ristar, the Rabid
@@ -194,6 +200,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["g"] = {
 					i(209955),	-- Root of Fire
 					i(208346),	-- Singed Barkbands
+					i(208361),	-- Splinterlimb's Branch
 				},
 			}),
 			n(210111, {	-- Surging Lasher
@@ -205,6 +212,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{ 57.1, 52.5, EMERALD_DREAM },
 				},
 				["g"] = {
+					i(208367),	-- Lasher's Red Thorn
 					i(208330),	-- Piercing Touch of the Vine
 					i(208335),	-- Vibrant Fall Leggings
 				},
