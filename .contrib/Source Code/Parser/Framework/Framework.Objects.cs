@@ -989,6 +989,9 @@ namespace ATT
 
                 // Arcana Manipulation [DF]
                 {2821, 2821},   // Arcana Manipulation
+
+                // Supply Shipments [DF]
+                {2886, 2886},   // Supply Shipments
             };
 
             /// <summary>
@@ -1021,6 +1024,7 @@ namespace ATT
                 {393, "SKINNING"},
                 {2777, "SOUL_CYPHERING"},
                 {2811, "STYGIA_CRAFTING"},
+                {2886, "SUPPLY_SHIPMENTS"},
                 {197, "TAILORING"},
                 {2847, "TUSKARR_FISHING_GEAR"},
             };
