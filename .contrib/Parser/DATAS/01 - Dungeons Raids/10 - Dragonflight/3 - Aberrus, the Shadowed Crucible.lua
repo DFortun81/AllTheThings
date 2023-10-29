@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 ------ Encounter Constants ------
 local KAZZARA = 2522;
 local AMALGAMATION = 2529;
@@ -17,19 +16,19 @@ local SARKARETH = 2520;
 local EncounterToCRS = {
 	[KAZZARA] = { 201261 },	-- Kazzara, the Hellforged
 	[AMALGAMATION] = {
-						201774,	-- Essence of Shadow
-						201773,	-- Eternal Blaze
-						201934,	-- Shadowflame Amalgamation
-					},
+		201774,	-- Essence of Shadow
+		201773,	-- Eternal Blaze
+		201934,	-- Shadowflame Amalgamation
+	},
 	[EXPERIMENTS] = {
-						200912,	-- Neldris <Experiment 4>
-						200918,	-- Rionthus <Experiment 328>
-						200913,	-- Thadrion <Experiment 147>
-					},
+		200912,	-- Neldris <Experiment 4>
+		200918,	-- Rionthus <Experiment 328>
+		200913,	-- Thadrion <Experiment 147>
+	},
 	[ASSAULT] = {
-					202791,	-- Ignara
-					199659,	-- Warlord Kagni
-				},
+		202791,	-- Ignara
+		199659,	-- Warlord Kagni
+	},
 	[RASHOK] = { 201320 },	-- Rashok, the Elder
 	[ZSKARN] = { 202637 },	-- Zskarn <the Vigilant Steward>
 	[MAGMORAX] = { 201579 },	-- Magmorax

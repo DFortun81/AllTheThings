@@ -3,37 +3,31 @@
 -----------------------------------------------------
 ------ Encounter Constants ------
 local GNARLROOT = 2564;
-local IGIRA_THE_CRUEL = 2554;
+local IGIRA = 2554;
 local VOLCOROSS = 2557;
 local COUNCIL_OF_DREAMS = 2555;
-local LARODAR_KEEPER_OF_THE_FLAME = 2553;
-local NYMUE_WEAVER_OF_THE_CYCLE = 2556;
+local LARODAR = 2553;
+local NYMUE = 2556;
 local SMOLDERON = 2563;
-local TINDRAL_SAGESWIFT_SEER_OF_THE_FLAME = 2565;
-local FYRAKK_THE_BLAZING = 2519;
+local TINDRAL = 2565;
+local FYRAKK = 2519;
 
 ------ EncounterToCRS ------
 local EncounterToCRS = {
 	[GNARLROOT] = { 209333 },	-- Gnarlroot
-	[IGIRA_THE_CRUEL] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
+	[IGIRA] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
 	[VOLCOROSS] = { 208478 },	-- Volcoross
 	[COUNCIL_OF_DREAMS] = {
 		208365,	-- Aerwynn <Council of Dreams>
 		208956,	-- Pip <Council of Dreams>
 		208363,	-- Urctos <Council of Dreams>
 	},
-	[LARODAR_KEEPER_OF_THE_FLAME] = { 208445 },	-- Larodar, Keeper of the Flame
-	[NYMUE_WEAVER_OF_THE_CYCLE] = { 206172 },	-- Nymue <Weaver of the Cycle>
+	[LARODAR] = { 208445 },	-- Larodar, Keeper of the Flame
+	[NYMUE] = { 206172 },	-- Nymue <Weaver of the Cycle>
 	[SMOLDERON] = { 200927 },	-- Smolderon <The Firelord>
-	[TINDRAL_SAGESWIFT_SEER_OF_THE_FLAME] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
-	[FYRAKK_THE_BLAZING] = { 204931 },	-- Fyrakk <The Blazing>
+	[TINDRAL] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
+	[FYRAKK] = { 204931 },	-- Fyrakk <The Blazing>
 };
-
------- All Bosses crs ------
-local ALL_BOSSES = {};
-for k,v in pairs(EncounterToCRS) do
-	ALL_BOSSES = appendGroups(v, ALL_BOSSES);
-end
 
 ------ EnconterToLoot ------
 local EncounterToLoot = {
@@ -51,7 +45,7 @@ local EncounterToLoot = {
 		i(207794),	-- Staff of Incandescent Torment
 		i(207126),	-- Twisted Blossom Stompers
 	},
-	[IGIRA_THE_CRUEL] = {
+	[IGIRA] = {
 		i(207466, {	-- Dreadful Tormented Dreamheart
 			i(207201),	-- Thorns of the Risen Nightmare
 			i(207264),	-- Screaming Torchfiend's Grasp
@@ -110,7 +104,7 @@ local EncounterToLoot = {
 		i(210206),	-- Verdant Sanctuary Bands
 		i(210205),	-- Vigilant Protector's Bracers
 	},
-	[LARODAR_KEEPER_OF_THE_FLAME] = {
+	[LARODAR] = {
 		i(207474, {	-- Dreadful Ashen Dreamheart
 			i(207199),	-- Greaves of the Risen Nightmare
 			i(207262),	-- Screaming Torchfiend's Blazewraps
@@ -141,7 +135,7 @@ local EncounterToLoot = {
 		i(207170),	-- Smoldering Seedling
 		i(207143),	-- Twisted Flamecuffs
 	},
-	[NYMUE_WEAVER_OF_THE_CYCLE] = {
+	[NYMUE] = {
 		i(207462, {	-- Dreadful Verdurous Dreamheart
 			i(207203),	-- Casket of the Risen Nightmare
 			i(207266),	-- Screaming Torchfiend's Binding
@@ -202,7 +196,7 @@ local EncounterToLoot = {
 		i(207161),	-- Mantle of Blazing Sacrifice
 		i(207791),	-- Remnant Charglaive
 	},
-	[TINDRAL_SAGESWIFT_SEER_OF_THE_FLAME] = {
+	[TINDRAL] = {
 		i(207470, {	-- Dreadful Blazing Dreamheart
 			i(207200),	-- Piercing Gaze of the Risen Nightmare
 			i(207263),	-- Screaming Torchfiend's Burning Scowl
@@ -233,7 +227,7 @@ local EncounterToLoot = {
 		i(207157),	-- Smoldering Chevalier's Greatbelt
 		i(207134),	-- Tasseted Emberwalkers
 	},
-	[FYRAKK_THE_BLAZING] = {
+	[FYRAKK] = {
 		i(208614),	-- Augury of the Primal Flame
 		i(207124),	-- Blooming Redeemer's Sash
 		i(207171),	-- Blossom of Amirdrassil
@@ -247,7 +241,9 @@ local EncounterToLoot = {
 		i(207788),	-- Vakash, the Shadowed Inferno
 	},
 };
-local ZONE_DROPS_GROUP = {
+
+------ Zone Drops ------
+local ZoneDropLoot = {
 	i(208442),	-- Daydreamer's Glimmering Ring [BoE]
 	i(208427),	-- Insurgent Flame Warboots [BoE]
 	i(208431),	-- Lost Scholar's Temporal Shoulderdials [BoE]
@@ -260,17 +256,15 @@ local ZONE_DROPS_GROUP = {
 };
 
 ------ Boss Functions ------
-local function bossNoLoot(id, t)
-	local encounter = e(id, t);
-	encounter.crs = EncounterToCRS[id];
-	return encounter
-end
-local function boss(id, t)
-	local encounter = {}
-	encounter = bossNoLoot(id, t);
-	encounter.groups = appendGroups(EncounterToLoot[id], encounter.groups or {});
-	return encounter
-end
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, ZoneDropLoot)
+local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
+InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
+
+InstanceHelper.UpgradeMapping = {
+	[LFR_RAID] = 3,
+	[NORMAL_RAID] = 5,
+	[HEROIC_RAID] = 6,
+};
 
 root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	inst(1207, {	-- Amirdrassil, the Dream's Hope
@@ -294,7 +288,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						["_encounter"] = { GNARLROOT, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(63096, { -- Igira the Cruel
-						["_encounter"] = { IGIRA_THE_CRUEL, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { IGIRA, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(63101, { -- Smolderon
 						["_encounter"] = { SMOLDERON, ANY_DIFFICULTY_ID_RAID },
@@ -305,7 +299,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						["_encounter"] = { VOLCOROSS, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(63098, { -- Larodar, Keeper of the Flame
-						["_encounter"] = { LARODAR_KEEPER_OF_THE_FLAME, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { LARODAR, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(19346, {	-- The Viridian Weave
@@ -313,15 +307,15 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						["_encounter"] = { COUNCIL_OF_DREAMS, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(63100, { -- Nymue, Weaver of the Cycle
-						["_encounter"] = { NYMUE_WEAVER_OF_THE_CYCLE, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { NYMUE, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(19347, {	-- Fate of Amirdrassil
 					crit(63102, { -- Tindral Sageswift, Seer of the Flame
-						["_encounter"] = { TINDRAL_SAGESWIFT_SEER_OF_THE_FLAME, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { TINDRAL, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(63103, { -- Fyrakk the Blazing
-						["_encounter"] = { FYRAKK_THE_BLAZING, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { FYRAKK, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(19331, {	-- Amirdrassil, the Dream's Hope
@@ -329,28 +323,28 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						["_encounter"] = { GNARLROOT, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(63096, { -- Igira the Cruel
-						["_encounter"] = { IGIRA_THE_CRUEL, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { IGIRA, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(63097, { -- Volcoross
 						["_encounter"] = { VOLCOROSS, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(63098, { -- Larodar, Keeper of the Flame
-						["_encounter"] = { LARODAR_KEEPER_OF_THE_FLAME, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { LARODAR, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(63099, { -- Council of Dreams
 						["_encounter"] = { COUNCIL_OF_DREAMS, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(63100, { -- Nymue, Weaver of the Cycle
-						["_encounter"] = { NYMUE_WEAVER_OF_THE_CYCLE, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { NYMUE, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(63101, { -- Smolderon
 						["_encounter"] = { SMOLDERON, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(63102, { -- Tindral Sageswift, Seer of the Flame
-						["_encounter"] = { TINDRAL_SAGESWIFT_SEER_OF_THE_FLAME, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { TINDRAL, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(63103, { -- Fyrakk the Blazing
-						["_encounter"] = { FYRAKK_THE_BLAZING, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { FYRAKK, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(19333, {	-- Heroic: Amirdrassil, the Dream's Hope
@@ -358,28 +352,28 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						["_encounter"] = { GNARLROOT, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(63105, { -- Igira the Cruel
-						["_encounter"] = { IGIRA_THE_CRUEL, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { IGIRA, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(63106, { -- Volcoross
 						["_encounter"] = { VOLCOROSS, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(63107, { -- Larodar, Keeper of the Flame
-						["_encounter"] = { LARODAR_KEEPER_OF_THE_FLAME, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { LARODAR, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(63108, { -- Council of Dreams
 						["_encounter"] = { COUNCIL_OF_DREAMS, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(63109, { -- Nymue, Weaver of the Cycle
-						["_encounter"] = { NYMUE_WEAVER_OF_THE_CYCLE, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { NYMUE, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(63110, { -- Smolderon
 						["_encounter"] = { SMOLDERON, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(63111, { -- Tindral Sageswift, Seer of the Flame
-						["_encounter"] = { TINDRAL_SAGESWIFT_SEER_OF_THE_FLAME, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { TINDRAL, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(63112, { -- Fyrakk the Blazing
-						["_encounter"] = { FYRAKK_THE_BLAZING, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { FYRAKK, HEROIC_PLUS_ID_RAID },
 					}),
 				}),
 				ach(19334, {	-- Mythic: Amirdrassil, the Dream's Hope
@@ -418,11 +412,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				ach(19387),	-- Amirdrassil, the Dream's Hope Guild Run
 				ach(19388),	-- Heroic: Amirdrassil, the Dream's Hope Guild Run
 			}),
-			n(COMMON_BOSS_DROPS, {
-				["crs"] = ALL_BOSSES,
-				["g"] = {
-					i(208212),	-- Dreaming Essence
-				},
+			CommonBossDrops({
+				i(208212),	-- Dreaming Essence
 			}),
 			n(SPECIAL, {
 				i(210783, {	-- Awakening Sunfish
@@ -439,11 +430,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					},
 				}),
 			}),
-			d(ALL_DIFFICULTIES_RAID, {
-				bossNoLoot(GNARLROOT, {
+			Difficulty(ALL_DIFFICULTIES_RAID).AddGroups({
+				BossOnly(GNARLROOT, {
 					i(210170),	-- Design: Dreamtender's Charm (RECIPE!)
 				}),
-				bossNoLoot(IGIRA_THE_CRUEL, {
+				BossOnly(IGIRA, {
 					i(210148, {	-- Overflowing Satchel of Pilfered Recipes
 						i(194642),	-- Design: Choker of Shielding (RECIPE!)
 						i(204975),	-- Formula: Enchant Weapon - Shadowflame Wreathe (RECIPE!)
@@ -466,115 +457,111 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						i(199227),	-- Schematic: Sophisticated Problem Solver (RECIPE!)
 					}),
 				}),
-				bossNoLoot(COUNCIL_OF_DREAMS, {
+				BossOnly(VOLCOROSS),
+				BossOnly(COUNCIL_OF_DREAMS, {
 					i(210169),	-- Pattern: Verdant Conduit (RECIPE!)
 				}),
-				bossNoLoot(LARODAR_KEEPER_OF_THE_FLAME, {
+				BossOnly(LARODAR, {
 					i(210175),	-- Formula: Enchant Weapon - Dreaming Devotion (RECIPE!)
 					i(209035),	-- Hearthstone of the Flame (TOY!)
 				}),
-				bossNoLoot(NYMUE_WEAVER_OF_THE_CYCLE, {
+				BossOnly(NYMUE, {
 					i(210670),	-- Pattern: Verdant Tether (RECIPE!)
 				}),
-				bossNoLoot(TINDRAL_SAGESWIFT_SEER_OF_THE_FLAME, {
+				BossOnly(SMOLDERON),
+				BossOnly(TINDRAL, {
 					i(211314),	-- Cinder of Companionship (CI!)
 					i(211280),	-- Feather of the Smoke Red Moon (CI!)
 					i(210644),	-- Plans: Flourishing Dream Helm (RECIPE!)
 				}),
-				bossNoLoot(FYRAKK_THE_BLAZING, {
+				BossOnly(FYRAKK, {
 					i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing (DM!)
 				}),
 			}),
-			d(LFR_RAID, {
-				n(COMMON_BOSS_DROPS, {
-					["crs"] = ALL_BOSSES,
-					["g"] = {
-						currency(WHELPLINGS_DREAMING_CREST, {
-							["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
-						}),
-					},
+			Difficulty(LFR_RAID).AddGroupsWithUpgrades({
+				ZoneDrops({
+					currency(WHELPLINGS_DREAMING_CREST, {
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+					}),
 				}),
-				n(ZONE_DROPS, ZONE_DROPS_GROUP),
 				header(HEADERS.Achievement, 19344, {	-- Incarnate's Wake
-					boss(GNARLROOT),
-					boss(IGIRA_THE_CRUEL),
-					boss(SMOLDERON),
+					Boss(GNARLROOT),
+					Boss(IGIRA),
+					Boss(SMOLDERON),
 				}),
 				header(HEADERS.Achievement, 19345, {	-- Molten Incursion
-					boss(VOLCOROSS),
-					boss(LARODAR_KEEPER_OF_THE_FLAME),
+					Boss(VOLCOROSS),
+					Boss(LARODAR),
 				}),
 				header(HEADERS.Achievement, 19346, {	-- The Viridian Weave
-					boss(COUNCIL_OF_DREAMS),
-					boss(NYMUE_WEAVER_OF_THE_CYCLE),
+					Boss(COUNCIL_OF_DREAMS),
+					Boss(NYMUE),
 				}),
 				header(HEADERS.Achievement, 19347, {	-- Fate of Amirdrassil
-					boss(TINDRAL_SAGESWIFT_SEER_OF_THE_FLAME),
-					boss(FYRAKK_THE_BLAZING, {
+					Boss(TINDRAL),
+					Boss(FYRAKK, {
 						i(210947, {	-- Flame-Warped Curio
-							["sym"] = {{"sub","instance_tier",1207,LFR_RAID}}
+							["sym"] = {{"sub","instance_tier",1207,LFR_RAID}},
+							["up"] = IGNORED_VALUE,
 						}),
 					}),
 				}),
 			}),
-			d(NORMAL_PLUS_RAID, {
-				bossNoLoot(GNARLROOT, {
+			Difficulty(NORMAL_PLUS_RAID).AddGroups({
+				BossOnly(GNARLROOT, {
 					ach(19322),	-- Meaner Pastures
 				}),
-				bossNoLoot(IGIRA_THE_CRUEL, {
+				BossOnly(IGIRA, {
 					ach(19320),	-- Cruelty Free
 				}),
-				bossNoLoot(VOLCOROSS, {
+				BossOnly(VOLCOROSS, {
 					ach(19321),	-- Swog Champion
 				}),
-				bossNoLoot(COUNCIL_OF_DREAMS, {
+				BossOnly(COUNCIL_OF_DREAMS, {
 					ach(19193, {	-- Ducks In A Row
 						i(210347),	-- Sergeant Quackers (PET!)
 					}),
 				}),
-				bossNoLoot(LARODAR_KEEPER_OF_THE_FLAME, {
+				BossOnly(LARODAR, {
 					ach(19089, {	-- Don't Let the Doe Hit You On The Way Out
 						i(210556),	-- Ivy (PET!)
 					}),
 				}),
-				bossNoLoot(NYMUE_WEAVER_OF_THE_CYCLE, {
+				BossOnly(NYMUE, {
 					ach(19394),	-- A Dream Within a Dream
 				}),
-				bossNoLoot(SMOLDERON, {
+				BossOnly(SMOLDERON, {
 					ach(19319),	-- Haven't We Done This Before?
 				}),
-				bossNoLoot(TINDRAL_SAGESWIFT_SEER_OF_THE_FLAME, {
+				BossOnly(TINDRAL, {
 					ach(19393),	-- Whelp, I'm Lost
 				}),
-				bossNoLoot(FYRAKK_THE_BLAZING, {
+				BossOnly(FYRAKK, {
 					ach(19390),	-- Memories of Teldrassil
 				}),
 			}),
-			d(NORMAL_RAID, {
-				n(COMMON_BOSS_DROPS, {
-					["crs"] = ALL_BOSSES,
-					["g"] = {
-						currency(DRAKES_DREAMING_CREST, {
-							["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
-						}),
-					},
+			Difficulty(NORMAL_RAID).AddGroupsWithUpgrades({
+				ZoneDrops({
+				--	currency(DRAKES_DREAMING_CREST, {
+				--		["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+				--	}),
 				}),
-				n(ZONE_DROPS, ZONE_DROPS_GROUP),
-				boss(GNARLROOT),
-				boss(IGIRA_THE_CRUEL),
-				boss(VOLCOROSS),
-				boss(COUNCIL_OF_DREAMS),
-				boss(LARODAR_KEEPER_OF_THE_FLAME),
-				boss(NYMUE_WEAVER_OF_THE_CYCLE),
-				boss(SMOLDERON),
-				boss(TINDRAL_SAGESWIFT_SEER_OF_THE_FLAME),
-				boss(FYRAKK_THE_BLAZING, {
+				Boss(GNARLROOT),
+				Boss(IGIRA),
+				Boss(VOLCOROSS),
+				Boss(COUNCIL_OF_DREAMS),
+				Boss(LARODAR),
+				Boss(NYMUE),
+				Boss(SMOLDERON),
+				Boss(TINDRAL),
+				Boss(FYRAKK, {
 					i(210947, {	-- Flame-Warped Curio
-						["sym"] = {{"sub","instance_tier",1207,NORMAL_RAID}}
+						["sym"] = {{"sub","instance_tier",1207,NORMAL_RAID}},
+						["up"] = IGNORED_VALUE,
 					}),
 				}),
 			}),
-			d(HEROIC_PLUS_RAID, {
+			Difficulty(HEROIC_PLUS_RAID).AddGroups({
 				n(QUESTS, {
 					q(78876, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {	-- A Glowing Memento
 						["provider"] = { "i", 211375 },	-- Everglowing Ember
@@ -583,53 +570,49 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						},
 					})),
 				}),
-				bossNoLoot(GNARLROOT),
-				bossNoLoot(IGIRA_THE_CRUEL),
-				bossNoLoot(VOLCOROSS),
-				bossNoLoot(COUNCIL_OF_DREAMS),
-				bossNoLoot(LARODAR_KEEPER_OF_THE_FLAME),
-				bossNoLoot(NYMUE_WEAVER_OF_THE_CYCLE),
-				bossNoLoot(SMOLDERON),
-				bossNoLoot(TINDRAL_SAGESWIFT_SEER_OF_THE_FLAME),
-				bossNoLoot(FYRAKK_THE_BLAZING, {
+				BossOnly(GNARLROOT),
+				BossOnly(IGIRA),
+				BossOnly(VOLCOROSS),
+				BossOnly(COUNCIL_OF_DREAMS),
+				BossOnly(LARODAR),
+				BossOnly(NYMUE),
+				BossOnly(SMOLDERON),
+				BossOnly(TINDRAL),
+				BossOnly(FYRAKK, {
 					ach(19350, {["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 }}),	-- Ahead of the Curve: Fyrakk the Blazing
 					i(211375),	-- Everglowing Ember (QS!)
 				}),
 			}),
-			d(HEROIC_RAID, {
-				n(COMMON_BOSS_DROPS, {
-					["crs"] = ALL_BOSSES,
-					["g"] = {
-						currency(WYRMS_DREAMING_CREST, {
-							["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
-						}),
-					},
+			Difficulty(HEROIC_RAID).AddGroupsWithUpgrades({
+				ZoneDrops({
+				--	currency(WYRMS_DREAMING_CREST, {
+				--		["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+				--	}),
 				}),
-				n(ZONE_DROPS, ZONE_DROPS_GROUP),
-				boss(GNARLROOT),
-				boss(IGIRA_THE_CRUEL),
-				boss(VOLCOROSS),
-				boss(COUNCIL_OF_DREAMS),
-				boss(LARODAR_KEEPER_OF_THE_FLAME),
-				boss(NYMUE_WEAVER_OF_THE_CYCLE),
-				boss(SMOLDERON),
-				boss(TINDRAL_SAGESWIFT_SEER_OF_THE_FLAME),
-				boss(FYRAKK_THE_BLAZING, {
+				Boss(GNARLROOT),
+				Boss(IGIRA),
+				Boss(VOLCOROSS),
+				Boss(COUNCIL_OF_DREAMS),
+				Boss(LARODAR),
+				Boss(NYMUE),
+				Boss(SMOLDERON),
+				Boss(TINDRAL),
+				Boss(FYRAKK, {
 					i(210947, {	-- Flame-Warped Curio
-						["sym"] = {{"sub","instance_tier",1207,HEROIC_RAID}}
+						["sym"] = {{"sub","instance_tier",1207,HEROIC_RAID}},
+						["up"] = IGNORED_VALUE,
 					}),
 				}),
 			}),
-			d(MYTHIC_RAID, {
-				n(COMMON_BOSS_DROPS, {
-					["crs"] = ALL_BOSSES,
-					["g"] = {
-						currency(ASPECTS_DREAMING_CREST, {
-							["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
-						}),
-					},
+			Difficulty(MYTHIC_RAID).AddGroups({
+				ZoneDrops({
+				--	currency(ASPECTS_DREAMING_CREST, {
+				--		["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+				--	}),
 				}),
-				n(ZONE_DROPS, {
+				n(ZONE_DROPS, sharedData({	-- First 2 week BoP version drops
+					["timeline"] = { ADDED_10_2_0, "removed 10.2.5" },
+				},{
 					i(210548),	-- Daydreamer's Glimmering Ring [BoP]
 					i(210542),	-- Insurgent Flame Warboots [BoP]
 					i(210545),	-- Lost Scholar's Temporal Shoulderdials [BoP]
@@ -639,32 +622,32 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					i(210546),	-- Vengeful Bladebeak Girdle [BoP]
 					i(210540),	-- Visage of the Devouring Flame [BoP]
 					i(210544),	-- Whispering Fanged Cord [BoP]
-				}),
-				boss(GNARLROOT, {
+				})),
+				Boss(GNARLROOT, {
 					ach(19335),	-- Mythic: Gnarlroot
 				}),
-				boss(IGIRA_THE_CRUEL, {
+				Boss(IGIRA, {
 					ach(19336),	-- Mythic: Igira the Cruel
 				}),
-				boss(VOLCOROSS, {
+				Boss(VOLCOROSS, {
 					ach(19337),	-- Mythic: Volcoross
 				}),
-				boss(COUNCIL_OF_DREAMS, {
+				Boss(COUNCIL_OF_DREAMS, {
 					ach(19338),	-- Mythic: Council of Dreams
 				}),
-				boss(LARODAR_KEEPER_OF_THE_FLAME, {
+				Boss(LARODAR, {
 					ach(19339),	-- Mythic: Larodar, Keeper of the Flame
 				}),
-				boss(NYMUE_WEAVER_OF_THE_CYCLE, {
+				Boss(NYMUE, {
 					ach(19340),	-- Mythic: Nymue, Weaver of the Cycle
 				}),
-				boss(SMOLDERON, {
+				Boss(SMOLDERON, {
 					ach(19341),	-- Mythic: Smolderon
 				}),
-				boss(TINDRAL_SAGESWIFT_SEER_OF_THE_FLAME, {
+				Boss(TINDRAL, {
 					ach(19342),	-- Mythic: Tindral Sageswift, Seer of the Flame
 				}),
-				boss(FYRAKK_THE_BLAZING, {
+				Boss(FYRAKK, {
 					ach(19343, {	-- Mythic: Fyrakk the Blazing
 						title(530),	-- <Name> the Blazing
 					}),
@@ -677,7 +660,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 						i(210754),	-- Feather of the Blazing Somnowl (CI!)
 					}),
 					i(210947, {	-- Flame-Warped Curio
-						["sym"] = {{"sub","instance_tier",1207,MYTHIC_RAID}}
+						["sym"] = {{"sub","instance_tier",1207,MYTHIC_RAID}},
+						["up"] = IGNORED_VALUE,
 					}),
 				}),
 			}),
