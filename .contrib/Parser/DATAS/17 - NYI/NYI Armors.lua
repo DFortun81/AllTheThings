@@ -2455,6 +2455,14 @@ root(ROOTS.NeverImplemented, {
 				i(208990),	-- The Horseman's Ring [Hallow's End]
 				i(208989),	-- Wicked Witch's Signet [Hallow's End]
 			})),
+
+			-- 10.2.0
+			tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+				i(208979),	-- 10.2 Monster - Merithra - Robe
+				i(208982),	-- 10.2 Monster - Merithra - Waist
+				i(208981),	-- 10.2 Monster - Merithra - Wrist
+				i(211132),	-- Omni Storm
+			})),
 		}),
 	}),
 });

@@ -744,5 +744,11 @@ root(ROOTS.NeverImplemented, {
 			i(208987),	-- The Horseman's Sinister Slicer [Hallow's End]
 			i(209022),	-- The Horseman's Sinister Slicer [Hallow's End]
 		})),
+
+		-- 10.2.0
+		tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+			i(207025),	-- <Placeholder> Fyrakk Axe - Shadowflame
+			i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1
+		})),
 	}),
 });
