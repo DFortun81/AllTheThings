@@ -605,6 +605,9 @@ ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."В
 		L.LIMITED_QUANTITY = "Предмет имеется в ограниченном количестве и может не всегда быть доступен у торговца.";
 		L.SOURCE_ID_MISSING = "Пожалуйста, сообщите в канале #retail-errors на нашем сервере Discord, где Вы нашли эту вещь!";
 		L.ADDED_WITH_PATCH_FORMAT = "Это будет добавлено в патче %s";
+		L.WAS_ADDED_WITH_PATCH_FORMAT = "Добавлено в патче %s";
+		--L.ADDED_BACK_WITH_PATCH_FORMAT = "Added back with patch %s";
+		--L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Newly added back with patch %s";
 		L.REMOVED_WITH_PATCH_FORMAT = "Это исчезнет в патче %s";
 
 	-- Icons and Collection Text
