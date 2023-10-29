@@ -4088,6 +4088,7 @@ i(208850, 0);		-- Lil' Maggz
 -- PATCH 10.2.0 --
 ------------------
 --- ITEM ---
+i(210409, 4286);	-- Aura
 i(210522, 4288);	-- Blueloo
 i(210553, 4289);	-- Dreamborne Scarab
 i(210555, 4290);	-- Dreamhoof
@@ -4117,8 +4118,6 @@ n(211182, 4277);	-- Sapnibbler
 n(211295, 4279);	-- Slumbertooth
 n(212459, 4303);	-- Snaggletoof
 --- UNSORTED ---
-i(211271, 3491);	-- Arfus
-i(210409, 4286);	-- Aura
 i(210556, 4291);	-- Ivy
 i(210870, 4311);	-- Mitzy
 
