@@ -187,6 +187,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78212,
 				["coord"] = { 43.5, 47.0, EMERALD_DREAM },
 				["g"] = {
+					i(209956),	-- Ori's Verdant Feather
 					i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)
 				},
 			}),

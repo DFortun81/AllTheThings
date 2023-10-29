@@ -890,6 +890,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 55.5, 50.0, EMERALD_DREAM }, -- 47.1, 30.3
 					["repeatable"] = true,
 				}),
+				--probably move big rares here, since they have seems like weekly lockout?
 			}),
 		}),
 	}),
@@ -933,5 +934,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(77370),	-- 'Chest' (spellID 418389)
 		--q(77497),	-- 'Chest' (spellID 420761)
 		--q(77505), -- 'Chest' (spellID 421191)
+		--q(77512),	-- ?
+		--q(77369),	-- ?
 	}),
 }));

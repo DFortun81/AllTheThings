@@ -1603,7 +1603,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71994, 391505);	-- Infurious Bubble Poppy
 			FirstCraft(75142, 405124, ADDED_10_1_0);	-- Lambent Bubble Poppy
 			FirstCraft(71973, 391511);	-- Lush Bubble Poppy
-			--FirstCraft(X, 421176, ADDED_10_2_0);	-- Overgrown Bubble Poppy
+			FirstCraft(77824, 421176, ADDED_10_2_0);	-- Overgrown Bubble Poppy
 			FirstCraft(71986, 391513);	-- Titan-Touched Bubble Poppy
 			FirstCraft(71978, 391515);	-- Windswept Bubble Poppy
 			-- Hochenblume
@@ -1612,7 +1612,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71992, 391498);	-- Infurious Hochenblume
 			FirstCraft(75141, 405123, ADDED_10_1_0);	-- Lambent Hochenblume
 			FirstCraft(71969, 391415);	-- Lush Hochenblume
-			--FirstCraft(X, 421224, ADDED_10_2_0);	-- Overgrown Hochenblume
+			FirstCraft(77823, 421224, ADDED_10_2_0);	-- Overgrown Hochenblume
 			FirstCraft(71984, 391496);	-- Titan-Touched Hochenblume
 			FirstCraft(71976, 391431);	-- Windswept Hochenblume
 			-- Saxifrage
@@ -1622,7 +1622,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(72341, 391499);	-- Infurious Saxifrage
 			FirstCraft(75143, 405126, ADDED_10_1_0);	-- Lambent Saxifrage
 			FirstCraft(71975, 391502);	-- Lush Saxifrage
-			--FirstCraft(X, 421226, ADDED_10_2_0);	-- Overgrown Saxifrage
+			FirstCraft(77826, 421226, ADDED_10_2_0);	-- Overgrown Saxifrage
 			FirstCraft(71987, 391503);	-- Titan-Touched Saxifrage
 			FirstCraft(71979, 391504);	-- Windswept Saxifrage
 			-- Writhebark
@@ -1632,7 +1632,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(71993, 391506);	-- Infurious Writhebark
 			FirstCraft(75144, 405127, ADDED_10_1_0);	-- Lambent Writhebark
 			FirstCraft(71971, 391512);	-- Lush Writhebark
-			--FirstCraft(X, 421227, ADDED_10_2_0);	-- Overgrown Writhebark
+			FirstCraft(77825, 421227, ADDED_10_2_0);	-- Overgrown Writhebark
 			FirstCraft(71985, 391514);	-- Titan-Touched Writhebark
 			FirstCraft(71977, 391516);	-- Windswept Writhebark
 			-- Overload
@@ -1640,7 +1640,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(72343, 391562);	-- Overload Frigid Herb
 			FirstCraft(72348, 391558);	-- Overload Infurious Herb
 			FirstCraft(75138, 405134, ADDED_10_1_0);	-- Overload Lambent Herb
-			--FirstCraft(X, 422293, ADDED_10_2_0);	-- Overload Overgrown Herb
+			FirstCraft(78007, 422293, ADDED_10_2_0);	-- Overload Overgrown Herb
 			FirstCraft(72344, 391557);	-- Overload Titan-Touched Herb
 			FirstCraft(72342, 391560);	-- Overload Windswept Herb
 		})),
