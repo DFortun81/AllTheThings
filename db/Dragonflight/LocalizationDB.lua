@@ -967,7 +967,6 @@ localize(L.HEADER_ICONS, {
 	[-1000330] = "Interface/Icons/inv_misc_celebrationcake_01",
 });
 localize(L.HEADER_EVENTS, {
-	[-1000242] = 1396,
 	[-1000249] = 1181,
 	[-1000266] = 1382,
 	[-1000281] = 372,
