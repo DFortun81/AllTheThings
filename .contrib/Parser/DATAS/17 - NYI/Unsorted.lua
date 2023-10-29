@@ -791,8 +791,6 @@ root(ROOTS.Unsorted, {
 				i(210422),	-- Loamm Niffen Insignia [Epic 2.5k]
 				------ Equipment Chest ------
 				i(210595),	-- Dreaming Equipment Chest
-				------ Paragon ------
-				i(210992),	-- Overflowing Dream Warden Trove
 				------ Time Rifts ------
 				i(209856),	-- Dilated Time Pod
 				------ Tame Hunter Pets ------

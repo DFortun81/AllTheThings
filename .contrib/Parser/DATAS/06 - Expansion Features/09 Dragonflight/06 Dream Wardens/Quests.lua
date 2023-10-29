@@ -81,6 +81,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}, {	-- RENOWN 18 --
 			}, {	-- RENOWN 19 --
 			}, {	-- RENOWN 20 --
+				title(532),	-- <Name>, Dream Defender
+				i(210992),	-- Overflowing Dream Warden Trove
 			},
 		})),
 	}),

@@ -1011,14 +1011,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
 			["timeline"] = { CREATED_10_1_0 },
 		}, {
-			i(203340),	-- Winding Slitherdrake: Cluster Jaw Horns
 			i(203319),	-- Winding Slitherdrake: Finned Cheek
 			i(203343),	-- Winding Slitherdrake: Hairy Jaw
 			i(203329),	-- Winding Slitherdrake: Heavy Horns
 			i(203360),	-- Winding Slitherdrake: Large Finned Tail
 			i(203301),	-- Winding Slitherdrake: Light Blue and Copper Armor
 			i(203302),	-- Winding Slitherdrake: Purple and Silver Armor
-			i(203337),	-- Winding Slitherdrake: Thorn Horns
 			i(203333),	-- Winding Slitherdrake: Short Horns
 			i(203344),	-- Winding Slitherdrake: Single Jaw Horn
 			i(203354),	-- Winding Slitherdrake: White Scales
@@ -1073,47 +1071,60 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 210412, {	-- Flourishing Whimsydrake
 			i(210482),	-- Flourishing Whimsydrake: Back Fins (DM!)
-			i(210471),	-- Flourishing Whimsydrake: Body Armor
-			i(210478),	-- Flourishing Whimsydrake: Gold and Pink Armor
-			i(210476),	-- Flourishing Whimsydrake: Helmet
 			i(210486),	-- Flourishing Whimsydrake: Horns (DM!)
 			i(210485),	-- Flourishing Whimsydrake: Long Snout (DM!)
 			i(210487),	-- Flourishing Whimsydrake: Neck Fins (DM!)
 			i(210479),	-- Flourishing Whimsydrake: Night Scales (DM!)
 			i(210483),	-- Flourishing Whimsydrake: Ridged Brow (DM!)
-			i(210480),	-- Flourishing Whimsydrake: Sunrise Scales
 			i(210481),	-- Flourishing Whimsydrake: Sunset Scales (DM!)
 			i(210484),	-- Flourishing Whimsydrake: Underbite Snout (DM!)
 		}),
+		header(HEADERS.Item, 210412, sharedData({	-- Flourishing Whimsydrake
+			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
+			["timeline"] = { CREATED_10_2_0 },
+		}, {
+			i(210471),	-- Flourishing Whimsydrake: Body Armor
+			i(210478),	-- Flourishing Whimsydrake: Gold and Pink Armor
+			i(210476),	-- Flourishing Whimsydrake: Helmet
+			i(210480),	-- Flourishing Whimsydrake: Sunrise Scales
+		})),
 		header(HEADERS.Item, 206156, { -- Grotto Netherwing Drake
-			i(207760),	-- Grotto Netherwing Drake: Armor
 			i(207779),	-- Grotto Netherwing Drake: Barbed Tail (DM!)
-			i(207776),	-- Grotto Netherwing Drake: Black Scales
 			i(207762),	-- Grotto Netherwing Drake: Chin Spike (DM!)
 			i(207761),	-- Grotto Netherwing Drake: Chin Tendrils (DM!)
-			i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back
-			i(207765),	-- Grotto Netherwing Drake: Cluster Spiked Crest
+			i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back (DM!)
+			i(207765),	-- Grotto Netherwing Drake: Cluster Spiked Crest (DM!)
+			i(207764),	-- Grotto Netherwing Drake: Head Spike (DM!)
+			i(207772),	-- Grotto Netherwing Drake: Long Horns (DM!)
+			i(207769),	-- Grotto Netherwing Drake: Outcast Pattern (DM!)
+			i(207771),	-- Grotto Netherwing Drake: Short Horns (DM!)
+			i(207763),	-- Grotto Netherwing Drake: Single Horned Crest (DM!)
+			i(207773),	-- Grotto Netherwing Drake: Spiked Jaw (DM!)
+			i(207766),	-- Grotto Netherwing Drake: Triple Spiked Crest (DM!)
+		}),
+		header(HEADERS.Item, 206156, sharedData({	-- Grotto Netherwing Drake
+			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
+			["timeline"] = { CREATED_10_2_0 },
+		}, {
+			i(207760),	-- Grotto Netherwing Drake: Armor
+			i(207776),	-- Grotto Netherwing Drake: Black Scales
 			i(207778),	-- Grotto Netherwing Drake: Double Finned Tail
 			i(207774),	-- Grotto Netherwing Drake: Finned Jaw
-			i(207764),	-- Grotto Netherwing Drake: Head Spike
 			i(207770),	-- Grotto Netherwing Drake: Helm
-			i(207772),	-- Grotto Netherwing Drake: Long Horns
-			i(207769),	-- Grotto Netherwing Drake: Outcast Pattern
 			i(207757),	-- Grotto Netherwing Drake: Purple and Silver Armor
-			i(207771),	-- Grotto Netherwing Drake: Short Horns (DM!)
-			i(207763),	-- Grotto Netherwing Drake: Single Horned Crest
 			i(207758),	-- Grotto Netherwing Drake: Spiked Back
-			i(207773),	-- Grotto Netherwing Drake: Spiked Jaw (DM!)
 			i(207775),	-- Grotto Netherwing Drake: Teal Scales
 			i(207767),	-- Grotto Netherwing Drake: Tempestuous Pattern
-			i(207766),	-- Grotto Netherwing Drake: Triple Spiked Crest
 			i(211381),	-- Grotto Netherwing Drake: Violet Scales
 			i(207768),	-- Grotto Netherwing Drake: Volatile Pattern
 			i(207777),	-- Grotto Netherwing Drake: Yellow Scales
-		}),
-		header(HEADERS.Item, 194705, {	-- Highland Drake
+		})),
+		header(HEADERS.Item, 194705, sharedData({	-- Highland Drake
+			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
+			["timeline"] = { CREATED_10_2_0 },
+		}, {
 			i(210432),	-- Highland Drake: Winter Veil Armor
-		}),
+		})),
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
 			i(210537),	-- Renewed Proto-Drake: Embodiment of Shadowflame (DM!)
 			i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing (DM!)
@@ -1121,11 +1132,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		header(HEADERS.Item, 194549, {	-- Windborne Velocidrake
 		}),
 		header(HEADERS.Item, 204361, {	-- Winding Slitherdrake
+			i(203340),	-- Winding Slitherdrake: Cluster Jaw Horns (DM!)
 			pvp(i(210064)),	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator (DM!)
 			i(203311),	-- Winding Slitherdrake: Hairy Chin (DM!)
 			i(203315),	-- Winding Slitherdrake: Small Spiked Crest (DM!)
 			i(203332),	-- Winding Slitherdrake: Spiked Horns (DM!)
 			i(203357),	-- Winding Slitherdrake: Spiked Tail (DM!)
+			i(203337),	-- Winding Slitherdrake: Thorn Horns (DM!)
 		}),
 	})),
 })));

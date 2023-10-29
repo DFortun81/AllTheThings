@@ -293,7 +293,6 @@ i(203351, 73842);	-- Winding Slitherdrake: Bronze Scales
 i(203323, 73811);	-- Winding Slitherdrake: Brown Hair
 i(203312, 73800);	-- Winding Slitherdrake: Cluster Chin Horn
 i(203331, 73820);	-- Winding Slitherdrake: Cluster Horns
-i(203340, 73831);	-- Winding Slitherdrake: Cluster Jaw Horns
 i(203321, 73809);	-- Winding Slitherdrake: Curled Cheek Horn
 i(203334, 73824);	-- Winding Slitherdrake: Curled Horns
 i(203346, 73837);	-- Winding Slitherdrake: Curled Nose
@@ -329,7 +328,6 @@ i(203303, 73791);	-- Winding Slitherdrake: Red and Gold Armor
 i(203325, 73813);	-- Winding Slitherdrake: Red Hair
 i(203353, 73844);	-- Winding Slitherdrake: Red Scales
 i(203327, 73815);	-- Winding Slitherdrake: Tan Horns
-i(203337, 73827);	-- Winding Slitherdrake: Thorn Horns
 i(203342, 73833);	-- Winding Slitherdrake: Triple Jaw Horns
 i(203333, 73822);	-- Winding Slitherdrake: Short Horns
 i(203344, 73835);	-- Winding Slitherdrake: Single Jaw Horn
@@ -344,6 +342,8 @@ i(203324, 73812);	-- Winding Slitherdrake: White Hair
 i(203328, 73816);	-- Winding Slitherdrake: White Horns
 i(203354, 73845);	-- Winding Slitherdrake: White Scales
 i(203304, 73792);	-- Winding Slitherdrake: Yellow and Silver Armor
+--- NYI ---
+i(203319, 73807);	-- Winding Slitherdrake: Finned Cheek
 
 ------------------
 -- PATCH 10.1.5 --
@@ -366,7 +366,6 @@ i(208858, 77875);	-- Highland Drake: Pirates' Day Armor
 i(208742, 77774);	-- Renewed Proto-Drake: Brewfest Armor
 i(197349, 69550);	-- Renewed Proto-Drake: Gold and White Armor
 i(197582, 69786);	-- Windborne Velocidrake: White and Pink Armor
-i(203319, 73807);	-- Winding Slitherdrake: Finned Cheek
 i(203306, 73794);	-- Winding Slitherdrake: Horned Brow
 i(203336, 73826);	-- Winding Slitherdrake: Paired Horns
 i(203359, 73851);	-- Winding Slitherdrake: Shark Finned Tail
@@ -420,6 +419,8 @@ i(207768, 77139);	-- Grotto Netherwing Drake: Volatile Pattern
 i(207777, 77148);	-- Grotto Netherwing Drake: Yellow Scales
 i(210537, 78453);	-- Renewed Proto-Drake: Embodiment of Shadowflame
 i(210536, 78451);	-- Renewed Proto-Drake: Embodiment of the Blazing
+i(203340, 73831);	-- Winding Slitherdrake: Cluster Jaw Horns
 i(210064, 72371);	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator
 i(203315, 73803);	-- Winding Slitherdrake: Small Spiked Crest
 i(203332, 73821);	-- Winding Slitherdrake: Spiked Horns
+i(203337, 73827);	-- Winding Slitherdrake: Thorn Horns

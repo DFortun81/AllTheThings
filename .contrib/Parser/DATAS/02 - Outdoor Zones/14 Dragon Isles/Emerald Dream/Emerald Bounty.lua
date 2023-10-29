@@ -172,6 +172,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!)
 						i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back (DM!) / also was looted from purple
 						i(207772),	-- Grotto Netherwing Drake: Long Horns (DM!)
+						i(207769),	-- Grotto Netherwing Drake: Outcast Pattern (DM!)
 						i(210241),	-- Recipe: Dreamwalker's Healing Potion (RECIPE!)
 						i(211065),	-- Technique: Mark of the Auric Dreamstag (RECIPE!)
 						--[Mark of the Boreal Dreamtalon] from blue bag
@@ -342,7 +343,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77212),	-- loot cache
 		--6 - Dreamer's Daisy
 		q(77392),	-- plant green seed
-		q(77391),	-- plant blue seed 
+		q(77391),	-- plant blue seed
 		q(77274),	-- plant purple seed
 		q(77390),	-- contrib with dewdrop
 		q(78795),	-- contrib with dewdrop for green seed
