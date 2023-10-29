@@ -1535,6 +1535,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							-- Confirmed
 							i(156466),	-- Bracers of Righteous Reformation
 							i(156251),	-- Shroud of Alteration
+							i(156253),	-- Shoulders of Misfortune
 
 							--[[  Possibly
 							i(156461),	-- Adamant Handguards
@@ -1551,7 +1552,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							i(156254),	-- Leggings of the Tortured Earth
 							i(156460),	-- Mimiron's Repeater
 							i(156469),	-- Pillar of Fortitude
-							i(156253),	-- Shoulders of Misfortune
 							--]]
 
 							--[[ Heigan
