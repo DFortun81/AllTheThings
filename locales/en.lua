@@ -717,11 +717,11 @@ local L = {
 	["SECRETS_HEADER"] = "Secrets";
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
 	["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
-	["ADDED_WITH_PATCH_FORMAT"] = "Added with patch %s";
-	["WAS_ADDED_WITH_PATCH_FORMAT"] = "Newly added with patch %s";
-	["ADDED_BACK_WITH_PATCH_FORMAT"] = "Added back with patch %s";
-	["WAS_ADDED_BACK_WITH_PATCH_FORMAT"] = "Newly added back with patch %s";
-	["REMOVED_WITH_PATCH_FORMAT"] = "Will be removed with patch %s";
+	["ADDED_WITH_PATCH_FORMAT"] = "Added in %s";
+	["WAS_ADDED_WITH_PATCH_FORMAT"] = "Added in %s";
+	["ADDED_BACK_WITH_PATCH_FORMAT"] = "Re-added in %s";
+	["WAS_ADDED_BACK_WITH_PATCH_FORMAT"] = "Added in %s";
+	["REMOVED_WITH_PATCH_FORMAT"] = "Removed in %s";
 
 	-- Filter Text
 	["ACHIEVEMENT_ID"] = "Achievement ID";

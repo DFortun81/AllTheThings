@@ -604,11 +604,11 @@ ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."В
 		L.SECRETS_HEADER = "Секреты";
 		L.LIMITED_QUANTITY = "Предмет имеется в ограниченном количестве и может не всегда быть доступен у торговца.";
 		L.SOURCE_ID_MISSING = "Пожалуйста, сообщите в канале #retail-errors на нашем сервере Discord, где Вы нашли эту вещь!";
-		L.ADDED_WITH_PATCH_FORMAT = "Это будет добавлено в патче %s";
-		L.WAS_ADDED_WITH_PATCH_FORMAT = "Добавлено в патче %s";
+		L.ADDED_WITH_PATCH_FORMAT = "Добавлено в %s";
+		L.WAS_ADDED_WITH_PATCH_FORMAT = "Добавлено в %s";
 		--L.ADDED_BACK_WITH_PATCH_FORMAT = "Added back with patch %s";
 		--L.WAS_ADDED_BACK_WITH_PATCH_FORMAT = "Newly added back with patch %s";
-		L.REMOVED_WITH_PATCH_FORMAT = "Это исчезнет в патче %s";
+		L.REMOVED_WITH_PATCH_FORMAT = "Удалено через %s";
 
 	-- Icons and Collection Text
 		L.COLLECTED = "|T" .. app.asset("known") .. ":0|t |cff15abffСобрано|r";	-- Acquired the colors and icon from CanIMogIt.
