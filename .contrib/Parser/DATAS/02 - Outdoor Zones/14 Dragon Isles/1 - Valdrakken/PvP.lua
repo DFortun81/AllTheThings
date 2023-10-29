@@ -61,11 +61,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(202184, {	-- Trophy of Strife
 						["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 					}),
-					i(206366, {	-- Trophy of Strife
-						["timeline"] = { ADDED_10_1_0 },
+					i(206366, {	-- Cracked Trophy of Strife
+						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 					}),
 					i(206367, {	-- Cracked Trophy of Strife
-						["timeline"] = { ADDED_10_1_0 },
+						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 					}),
 				},
 			}, {
@@ -1385,6 +1385,152 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(198585),	-- Drakebreaker's Legguards
 								i(198586),	-- Drakebreaker's Mantle
 								i(198583),	-- Drakebreaker's Sabatons
+							},
+						}),
+						i(211172, {	-- Arsenal: Scalewarden's Axe
+							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["g"] = {
+								i(206242),	-- Scalewarden's Battleaxe
+								i(206244),	-- Scalewarden's Carver
+								i(206243),	-- Scalewarden's Hatchet
+							},
+						}),
+						i(211176, {	-- Arsenal: Scalewarden's Club
+							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["g"] = {
+								i(206256),	-- Scalewarden's Cudgel
+								i(206255),	-- Scalewarden's Hammer
+								i(206263),	-- Scalewarden's Scepter
+							},
+						}),
+						i(211175, {	-- Arsenal: Scalewarden's Mace
+							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["g"] = {
+								i(206254),	-- Scalewarden's Club
+								i(206262),	-- Scalewarden's Crusher
+								i(206261),	-- Scalewarden's Mace
+							},
+						}),
+						i(211177, {	-- Arsenal: Scalewarden's Shortsword
+							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["g"] = {
+								i(206265),	-- Scalewarden's Sabre
+								i(206248),	-- Scalewarden's Shortsword
+								i(206247),	-- Scalewarden's Spellblade
+							},
+						}),
+						i(211169, {	-- Arsenal: Scalewarden's Greatsword
+							["cost"] = {{ "i", BLOODY_TOKENS, 800 }},
+							["g"] = {
+								i(206253),	-- Scalewarden's Broadsword
+								i(206252),	-- Scalewarden's Greatsword
+							},
+						}),
+						i(211165, {	-- Arsenal: Scalewarden's Gun
+							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["g"] = {
+								i(206245),	-- Scalewarden's Handcannon
+							},
+						}),
+						i(211174, {	-- Arsenal: Scalewarden's Dagger
+							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["g"] = {
+								i(206820),	-- Scalewarden's Dagger
+								i(206830),	-- Scalewarden's Dirk
+							},
+						}),
+						i(211167, {	-- Arsenal: Scalewarden's Offhand
+							["cost"] = {{ "i", BLOODY_TOKENS, 300 }},
+							["g"] = {
+								i(206249),	-- Scalewarden's Flame
+							},
+						}),
+						i(211170, {	-- Arsenal: Scalewarden's Polearm
+							["cost"] = {{ "i", BLOODY_TOKENS, 800 }},
+							["g"] = {
+								i(206258),	-- Scalewarden's Impaler
+								i(206259),	-- Scalewarden's Spear
+							},
+						}),
+						i(211171, {	-- Arsenal: Scalewarden's Shield
+							["cost"] = {{ "i", BLOODY_TOKENS, 300 }},
+							["g"] = {
+								i(206257),	-- Scalewarden's Aegis
+							},
+						}),
+						i(211168, {	-- Arsenal: Scalewarden's Stave
+							["cost"] = {{ "i", BLOODY_TOKENS, 800 }},
+							["g"] = {
+								i(206251),	-- Scalewarden's Battlestaff
+								i(206250),	-- Scalewarden's Spire
+							},
+						}),
+						i(211166, {	-- Arsenal: Scalewarden's Wand
+							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["g"] = {
+								i(206260),	-- Scalewarden's Wand
+							},
+						}),
+						i(211173, {	-- Arsenal: Scalewarden's Warglaive
+							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["g"] = {
+								i(206246),	-- Scalewarden's Twinblade
+							},
+						}),
+						i(211141, {	-- Ensemble: Scalewarden's Cloth Armor
+							["cost"] = {{ "i", BLOODY_TOKENS, 3000 }},
+							["g"] = {
+								i(206240),	-- Scalewarden's Cloak
+								i(206212),	-- Scalewarden's Cloth Bindings
+								i(206210),	-- Scalewarden's Cloth Cord
+								i(206205),	-- Scalewarden's Cloth Garb
+								i(206207),	-- Scalewarden's Cloth Gloves
+								i(206213),	-- Scalewarden's Cloth Mantle
+								i(206209),	-- Scalewarden's Cloth Pants
+								i(206206),	-- Scalewarden's Cloth Slippers
+								i(206208),	-- Scalewarden's Crown
+							},
+						}),
+						i(211139, {	-- Ensemble: Scalewarden's Leather Armor
+							["cost"] = {{ "i", BLOODY_TOKENS, 3000 }},
+							["g"] = {
+								i(206241),	-- Scalewarden's Drape
+								i(206216),	-- Scalewarden's Hood
+								i(206218),	-- Scalewarden's Leather Belt
+								i(206214),	-- Scalewarden's Leather Boots
+								i(206217),	-- Scalewarden's Leather Breeches
+								i(206215),	-- Scalewarden's Leather Handwraps
+								i(206220),	-- Scalewarden's Leather Jerkin
+								i(206221),	-- Scalewarden's Leather Shoulderguard
+								i(206219),	-- Scalewarden's Leather Wraps
+							},
+						}),
+						i(211136, {	-- Ensemble: Scalewarden's Mail Armor
+							["cost"] = {{ "i", BLOODY_TOKENS, 3000 }},
+							["g"] = {
+								i(206238),	-- Scalewarden's Cape
+								i(206237),	-- Scalewarden's Chain Armguards
+								i(206230),	-- Scalewarden's Chain Armor
+								i(206236),	-- Scalewarden's Chain Cinch
+								i(206235),	-- Scalewarden's Chain Epaulets
+								i(206231),	-- Scalewarden's Chain Greaves
+								i(206232),	-- Scalewarden's Chain Grips
+								i(206234),	-- Scalewarden's Chain Leggings
+								i(206233),	-- Scalewarden's Helm
+							},
+						}),
+						i(211134, {	-- Ensemble: Scalewarden's Plate Armor
+							["cost"] = {{ "i", BLOODY_TOKENS, 3000 }},
+							["g"] = {
+								i(206222),	-- Scalewarden's Faceplate
+								i(206229),	-- Scalewarden's Plate Bracers
+								i(206228),	-- Scalewarden's Plate Clasp
+								i(206223),	-- Scalewarden's Plate Cuirass
+								i(206225),	-- Scalewarden's Plate Gauntlets
+								i(206226),	-- Scalewarden's Plate Legguards
+								i(206224),	-- Scalewarden's Plate Sabatons
+								i(206227),	-- Scalewarden's Plate Spaulders
+								i(206239),	-- Scalewarden's Shawl
 							},
 						}),
 						filter(TOYS, {

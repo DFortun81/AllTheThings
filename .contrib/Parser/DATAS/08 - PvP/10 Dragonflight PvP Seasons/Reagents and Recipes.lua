@@ -5,12 +5,20 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 	filter(REAGENTS, {
 		i(190450),	-- Awakened Ire
 		i(190451),	-- Rousing Ire
-		i(204190, {["timeline"] = { ADDED_10_1_0 }}),	-- Obsidian Crest of Honor
-		i(204189, {["timeline"] = { ADDED_10_1_0 }}),	-- Greater Obsidian Crest of Honor
-		i(204191, {["timeline"] = { ADDED_10_1_0 }}),	-- Lesser Obsidian Crest of Honor
-		i(204187, {["timeline"] = { ADDED_10_1_0 }}),	-- Obsidian Trophy of Conquest
-		i(204186, {["timeline"] = { ADDED_10_1_0 }}),	-- Greater Obsidian Trophy of Conquest
-		i(204188, {["timeline"] = { ADDED_10_1_0 }}),	-- Lesser Obsidian Trophy of Conquest
+		-- Season 2 --
+		i(204190, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Obsidian Crest of Honor
+		i(204189, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Greater Obsidian Crest of Honor
+		i(204191, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Lesser Obsidian Crest of Honor
+		i(204187, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Obsidian Trophy of Conquest
+		i(204186, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Greater Obsidian Trophy of Conquest
+		i(204188, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Lesser Obsidian Trophy of Conquest
+		-- Season 3 --
+		i(208569, {["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 }}),	-- Verdant Crest of Honor
+		i(208570, {["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 }}),	-- Greater Verdant Crest of Honor
+		i(208568, {["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 }}),	-- Lesser Verdant Crest of Honor
+		i(208565, {["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 }}),	-- Verdant Trophy of Conquest
+		i(208566, {["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 }}),	-- Greater Verdant Trophy of Conquest
+		i(208564, {["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 }}),	-- Lesser Verdant Trophy of Conquest
 	}),
 	filter(RECIPES, {
 		i(201257),	-- Bloodstained Pattern: Infurious Hide (RECIPE!)

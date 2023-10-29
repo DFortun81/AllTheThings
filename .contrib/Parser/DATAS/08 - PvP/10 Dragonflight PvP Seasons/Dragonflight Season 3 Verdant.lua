@@ -1197,13 +1197,13 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 							}),
 						}),
 						filter(REAGENTS, {
-							i(208566, {	-- Greater Trophy of Conquest
+							i(208566, {	-- Greater Verdant Trophy of Conquest
 								["cost"] = { { "c", CONQUEST, 875 } },
 							}),
-							i(208564, {	-- Lesser Trophy of Conquest
+							i(208564, {	-- Lesser Verdant Trophy of Conquest
 								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
-							i(208565, {	-- Trophy of Conquest
+							i(208565, {	-- Verdant Trophy of Conquest
 								["cost"] = { { "c", CONQUEST, 700 } },
 							}),
 						}),

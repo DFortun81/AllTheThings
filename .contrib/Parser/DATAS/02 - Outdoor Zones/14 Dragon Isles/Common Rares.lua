@@ -324,10 +324,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				i(200195),	-- Thunderscale Legguards
 				i(200880),	-- Wind-Sealed Mana Capsule
 					-- Insignias @ Max Renown
-				i(200289),	-- Valdrakken Accord Insignia
-				i(200285),	-- Dragonscale Expedition Insignia
-				i(200287),	-- Iskaara Tuskarr Insignia
-				i(200288),	-- Maruuk Centaur Insingia
+				i(200289),	-- Valdrakken Accord Insignia [Uncommon]
+				i(200285),	-- Dragonscale Expedition Insignia [Uncommon]
+				i(200287),	-- Iskaara Tuskarr Insignia [Uncommon]
+				i(200288),	-- Maruuk Centaur Insingia [Uncommon]
 			},
 		}),
 		-- Any Items listed here should meet the following criteria:
