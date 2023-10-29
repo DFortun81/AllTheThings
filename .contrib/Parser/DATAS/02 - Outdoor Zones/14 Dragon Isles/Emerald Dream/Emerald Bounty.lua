@@ -273,6 +273,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--I hate it >_<
 		--...78975 is currently pop when looting cache in addition to loot hqt, only if 'bloom effect' (80+) happen.
 		--as of 18.10 contrib into other player plant fire as regular self planting.
+		--could be two different qid for hitting 80/100 for blue and purple seed.
 		q(78975),	-- any plant cache that was looted after blooming (purple seed), daily/weekly?
 		--1 - Ageless Blossom
 		--q(),	-- plant green seed
@@ -482,19 +483,19 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(),	-- contrib with purple seed (to other player plant)
 		q(77357),	-- bloom spot / 'Chest' (spellID 418327)
 		q(77396),	-- loot cache
-		--17 - Whisperbloom Sapling (bugged on ptr)
-		--q(),	-- plant green seed
-		--q(),	-- plant blue seed
-		--q(),	-- plant purple seed
-		--q(),	-- contrib with dewdrop
-		--q(),	-- contrib with dewdrop for green seed
-		--q(),	-- contrib with dewdrop for blue seed
-		--q(),	-- contrib with dewdrop for purple seed
+		--17 - Whisperbloom Sapling
+		q(77545),	-- plant green seed
+		q(77542),	-- plant blue seed
+		q(77540),	-- plant purple seed
+		q(77541),	-- contrib with dewdrop
+		q(78819),	-- contrib with dewdrop for green seed
+		q(78817),	-- contrib with dewdrop for blue seed
+		q(78818),	-- contrib with dewdrop for purple seed
 		--q(),	-- contrib with green seed (to other player plant)
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
 		--q(),	-- bloom spot
-		--q(),	-- loot cache
+		q(77543),	-- loot cache
 		--18 - Ysera's Clover
 		q(77216),	-- plant green seed
 		q(77215),	-- plant blue seed

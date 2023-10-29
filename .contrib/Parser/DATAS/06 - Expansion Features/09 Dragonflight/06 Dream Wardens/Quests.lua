@@ -67,7 +67,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			}, {	-- RENOWN 11 --
+				--missing quest for battle pets?
 			}, {	-- RENOWN 12 --
+				q(78364, {	-- Drake's Dreaming Crest
+					["provider"] = { "n", 208143 },	-- Keeper Amrymn
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+				}),
 			}, {	-- RENOWN 13 --
 			}, {	-- RENOWN 14 --
 			}, {	-- RENOWN 15 --
@@ -83,6 +88,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(DREAM_WARDENS, {
-		q(76574),	-- Pop right after renown 8 was reached (Blooming Proficiency II or after qID 77675)
+		q(76574),	-- Pop right after renown 8 was reached (Blooming Proficiency II) (spellIDs 427685 & 425375)
+		q(76575),	-- Pop right after renown 12 was reached (Blooming Proficiency III) (spellIDs 427685 & 425375)
 	}),
 }));

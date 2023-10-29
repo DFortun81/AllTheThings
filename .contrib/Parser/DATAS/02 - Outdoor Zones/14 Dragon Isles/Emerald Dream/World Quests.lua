@@ -123,6 +123,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 					q(76993, {	-- Turtle Power
 						["coord"] = { 42.6, 81.6, EMERALD_DREAM },
+						["g"] = {
+							i(211302),	-- Slumberfruit (QI!)
+						},
 					}),
 				})),
 			},

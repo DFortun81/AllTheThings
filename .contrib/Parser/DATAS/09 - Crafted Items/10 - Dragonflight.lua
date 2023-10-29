@@ -1268,7 +1268,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(75596, 408230, ADDED_10_1_0);	-- Mallard Mortar
 			FirstCraft(71891, 382407);	-- Neural Silencer Mk3
 			FirstCraft(71889, 382338);	-- Portable Alchemist's Lab Bench
-			--FirstCraft(X, 416149, ADDED_10_2_0);	-- Portable Party Platter
+			FirstCraft(76736, 416149, ADDED_10_2_0);	-- Portable Party Platter
 			FirstCraft(71890, 382337);	-- Portable Tinker's Workbench
 			FirstCraft(71471, 382328);	-- S.A.V.I.O.R
 			FirstCraft(72711, 396777);	-- Tinker Removal Kit

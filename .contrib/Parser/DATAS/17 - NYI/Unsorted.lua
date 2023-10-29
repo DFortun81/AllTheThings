@@ -967,7 +967,6 @@ root(ROOTS.Unsorted, {
 			i(208705),	-- Druidic Totem
 			i(208731),	-- Blacksmith Bammer Key
 			i(208745),	-- Your Reward [DNT]
-			i(208757),	-- Ash's Recipes to Delight and Nourish Your Plant Pals
 			i(208856),	-- Pocket Lint
 			i(208955),	-- Pilfered Dreamshard
 			i(208979),	-- 10.2 Monster - Merithra - Robe
@@ -982,7 +981,6 @@ root(ROOTS.Unsorted, {
 			i(209323),	-- Emerald Dreamtime
 			i(209324),	-- Azure Leywine
 			i(209326),	-- Maruukai Pale Ale
-			i(209416),	-- Turtle Eggshell Shards
 			i(209806),	-- Cataloger's Film
 			i(209853),	-- Unstable Water Walking Potion
 			i(209856),	-- Dilated Time Pod
@@ -1051,7 +1049,6 @@ root(ROOTS.Unsorted, {
 			i(211132),	-- Omni Storm
 			i(211270),	-- Pristine Core Leather
 			------
-			i(211302),	-- Slumberfruit
 			i(211314),	-- Cinder of Companionship
 			i(211353),	-- Roasted Ram Special
 			i(211396),	-- Attuned Glowspore Grip
