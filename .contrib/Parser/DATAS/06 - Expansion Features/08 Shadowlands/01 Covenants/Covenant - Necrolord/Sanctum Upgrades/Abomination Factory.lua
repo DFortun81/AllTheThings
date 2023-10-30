@@ -438,6 +438,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(158300, {	-- Flytrap
 									["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
 									["coord"] = { 54.3, 68.1, MALDRAXXUS },
+									["crs"] = { 167157 },	-- Flytrap (Ghost)
 									["g"] = {
 										i(182501),	-- Stitched Conjurer's Slippers
 										i(182483),	-- Stitched Harbinger's Stompers
@@ -448,6 +449,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(158301, {	-- Marz
 									["sourceQuests"] = { 57611 },	-- Construct Body: Marz
 									["coord"] = { 54.2, 68.6, MALDRAXXUS },
+									["crs"] = { 167162 },	-- Marz (Ghost)
 									["g"] = {
 										i(182482),	-- Stitched Harbinger's Chestguard
 										i(182500),	-- Stitched Conjurer's Tunic
@@ -458,6 +460,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(159241, {	-- Roseboil
 									["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
 									["coord"] = { 55.1, 68.1, MALDRAXXUS },
+									["crs"] = { 167159 },	-- Roseboil (Ghost)
 									["g"] = {
 										i(182496),	-- Stitched Wraith's Belt
 										i(182487),	-- Stitched Harbinger's Warbelt
@@ -490,7 +493,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									}),
 									q(59747, {    -- A Lost Soul
 										["description"] = "Pull the chain on the right side of the vault as you enter.",
-										["provider"] = { "n", 166096 },	-- Miru Soulblossom
+										["providers"] = {
+											{ "n", 166096 },	-- Miru Soulblossom
+											{ "o", 350972 },	-- Cell Portcullis Chain
+										},
 										["coords"] = {
 											{ 32.9, 33.3, 1649 },	-- Etheric Vault
 											{ 58.3, 36.2, 1649 },	-- Chain to pull [60166]
@@ -755,6 +761,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(159226, {	-- Sabrina
 									["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
 									["coord"] = { 54.8, 68.8, MALDRAXXUS },
+									["crs"] = { 173028 },	-- Sabrina (Ghost)
 									["g"] = {
 										i(182485),	-- Stitched Harbinger's Greaves
 										i(182494),	-- Stitched Wraith's Breeches
@@ -765,6 +772,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(159198, {	-- The Professor
 									["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
 									["coord"] = { 55.4, 68.2, MALDRAXXUS },
+									["crs"] = { 167762 },	-- The Professor (Ghost)
 									["g"] = {
 										i(182513),	-- Stitched Tactician's Spaulders
 										i(182504),	-- Stitched Conjurer's Mantle
@@ -775,6 +783,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(159212, {	-- Toothpick
 									["sourceQuests"] = { 58414 },	-- Construct Body: Toothpick
 									["coord"] = { 54.9, 67.8, MALDRAXXUS },
+									["crs"] = { 167764 },	-- Toothpick (Ghost)
 									["g"] = {
 										i(182488),	-- Stitched Harbinger's Vambraces
 										i(182497),	-- Stitched Wraith's Armguards
@@ -943,6 +952,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(159240, {	-- Gas Bag
 									["sourceQuests"] = { 57608 },	-- Construct Body: Gas Bag
 									["coord"] = { 54.2, 68.0, MALDRAXXUS },
+									["crs"] = { 167763 },	-- Gas Bag (Ghost)
 									["g"] = {
 										i(182499),	-- Stitched Conjurer's Cowl
 										i(182490),	-- Stitched Wraith's Visage
@@ -953,6 +963,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(159214, {	-- Guillotine
 									["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
 									["coord"] = { 54.4, 67.9, MALDRAXXUS },
+									["crs"] = { 173030 },	-- Guillotine (Ghost)
 									["g"] = {
 										i(182493),	-- Stitched Wraith's Stranglers
 										i(182484),	-- Stitched Harbinger's Crushers
@@ -1157,6 +1168,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(159199, {	-- Iron Phillip
 									["sourceQuests"] = { 58411 },	-- Construct Body: Iron Phillip
 									["coord"] = { 55.5, 68.4, MALDRAXXUS },
+									["crs"] = { 173048 },	-- Iron Phillip (Ghost)
 									["g"] = {
 										i(181806),	-- Regrown Osteowings
 									},
@@ -1164,6 +1176,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(161678, {	-- Mama Tomalin
 									["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
 									["coord"] = { 55.3, 68.6, MALDRAXXUS },
+									["crs"] = { 167756 },	-- Mama Tomalin (Ghost)
 									["g"] = {
 										i(181809),	-- Tomalins Seasoning Crystal
 									},
@@ -1171,6 +1184,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								n(158298, {	-- Naxx
 									["sourceQuests"] = { 58413 },	-- Construct Body: Naxx
 									["coord"] = { 54.8, 68.7, MALDRAXXUS },
+									["crs"] = { 173049 },	-- Naxx (Ghost)
 									["g"] = {
 										i(181802),	-- Standard of Death's Chosen
 									},
