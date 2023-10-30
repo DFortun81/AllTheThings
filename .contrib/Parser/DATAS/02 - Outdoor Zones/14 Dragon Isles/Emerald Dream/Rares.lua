@@ -75,6 +75,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
 				["questID"] = 77982, -- bonus objective qID
 				["coord"] = { 53.8, 40.7, EMERALD_DREAM },
+				["g"] = {
+					i(208355),	-- String of Delicacies
+				},
 			}),
 			n(210075, {	-- Henri Snufftail
 				["questID"] = 77944,
