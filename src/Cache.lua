@@ -636,7 +636,6 @@ end
 -- Performance Tracking for Caching
 if app.__perf then
 	app.__perf.CaptureTable(fieldConverters, "CacheFields");
-	CacheFields = app.__perf.CaptureFunction(CacheFields, "CacheFields", "CacheFields")
 end
 
 -- Returns: A table containing all subgroups which contain a given value of field relative to the group or nil.

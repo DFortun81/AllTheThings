@@ -425,9 +425,6 @@ end
 
 -- Define Modules
 app.Modules = {};
-if app.__perf then
-	app.__perf.AutoCaptureTable(app.Modules, "Modules")
-end
 
 -- Global Variables
 AllTheThingsSavedVariables = {};

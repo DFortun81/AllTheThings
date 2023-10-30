@@ -6,11 +6,6 @@
 -- App locals
 local appName, app = ...;
 
--- Performance Tracking for AllTheThings Functions
-if app.__perf then
-	app.__perf.AutoCaptureTable(app, appName);
-end
-
 local L = app.L;
 local GetRelativeValue = app.GetRelativeValue;
 
@@ -13418,6 +13413,7 @@ end
 local function DirectGroupUpdate(group, got)
 	-- DGU OnUpdate needs to run regardless of filtering
 	if group.DGUOnUpdate then
+		-- app.PrintDebug("DGU:OnUpdate",group.hash)
 		group:DGUOnUpdate();
 	end
 	-- starting an update from a non-top-level group means we need to verify this group should even handle updates based on current filters first
@@ -22147,7 +22143,7 @@ app.InitDataCoroutine = function()
 	PrePopulateAchievementSymlinks()
 
 	-- Let a frame go before hitting the initial refresh to make sure as much time as possible is allowed for the operation
-	-- print("Yield prior to Refresh")
+	-- app.PrintDebug("Yield prior to Refresh")
 	coroutine.yield();
 
 	-- Prepare the Sound Pack!

@@ -1,20 +1,21 @@
 
-local _, app = ...;
+local appName, app = ...;
 
 -- Contains debugging logic for wrapping functionality with a performance monitor
 -- Add to TOC prior to src/base.lua
 
-local unpack, GetTimePreciseSec, pairs, type
-	= unpack, GetTimePreciseSec, pairs, type
-local tinsert, table_concat, rawset, setmetatable
-	= tinsert, table.concat, rawset, setmetatable;
+-- Concepts: Functions are wrapped in performance tracking functions. The name represents the key within a scope.
+-- Tables should represent a scope nested within their parent table's scope, etc.
+-- Functions should use their containing Table scope with a key name
+
+local unpack, GetTimePreciseSec, pairs, ipairs, type, tinsert, table_concat, rawset, setmetatable
+	= unpack, GetTimePreciseSec, pairs, ipairs, type, tinsert, table.concat, rawset, setmetatable
 
 local debug = false
 local print = function(...)
 	if debug then print(...) end
 end
 
--- app.__perf[Key][Tracker(Count,Time)]
 local scopes = {}
 
 local keyMeta = {
@@ -26,11 +27,12 @@ local keyMeta = {
 };
 local performance = setmetatable({}, {
 	__index = function(t, scopeName)
-		local scope = setmetatable({__name=scopeName}, keyMeta);
+		local scope = setmetatable({__scope=scopeName}, keyMeta);
 		rawset(t, scopeName, scope);
 		return scope;
 	end,
 });
+-- app.__perf[Key][Tracker(Count,Time)]
 app.__perf = performance;
 
 scopes.__new = function(t, scope) scopes[t] = performance[scope] return scopes[t] end
@@ -69,56 +71,27 @@ local function IgnorePerf(o)
 	if not o then return true end
 	if type(o) == "table" then
 		local mt = getmetatable(o)
-		if mt and mt.__index and type(mt.__index) == "function" then print("ignoring meta function wrapper!",o) return true end
-		if o.IsForbidden then print("ignoring game object!",o:GetName()) return true end
+		if mt and mt.__index and type(mt.__index) == "function" then print("Perf.Ignore: Meta Function Wrapper!",o) return true end
+		if o.IsForbidden then print("Perf.Ignore: Game Object!",o:GetName()) return true end
 	end
 end
 
--- Attempts to get the scope for the table. If it does not exist, it will be set to the provided 'scope'
+-- Attempts to get the performance scope for the table. If it does not exist, it will be set using the provided 'scope'
 local function GetPerfForScope(t, scope)
 	return scopes[t] or (scope and scopes.__new(t, scope)) or nil
-end
-
-local function perf_replace_table(source, key)
-	local func = source[key]
-	if type(func) ~= "function" or type(key) ~= "string" then return end
-	local perf = GetPerfForScope(source)
-	if not perf then
-		print("failed perf:t replace",key)
-		return
-	end
-	-- replace each function with itself wrapped in a perf update
-	-- origFunctions[key] = func;4
-	-- app.PrintDebug("Perf:",perf.__name,key)
-
-	-- Perf capture of func calls
-	local typePerf = perf[key];
-	source[key] = function(...)
-		local now = GetTimePreciseSec();
-		local res = {func(...)};
-		typePerf.time = typePerf.time + (GetTimePreciseSec() - now);
-		typePerf.count = typePerf.count + 1;
-		return unpack(res);
-	end
-
-	-- Simple print of func calls
-	-- app[key] = function(...)
-	-- 	app.PrintDebug("app.",key)
-	-- 	return func(...)
-	-- end
-
 end
 
 local function perf_replace_function(func, name)
 	if type(func) ~= "function" then return func end
 	local perf = GetPerfForScope(func)
 	if not perf then
-		print("failed perf:f replace",func)
-		return
+		print("Perf.F.NOPERF:",func)
+		return func
 	end
 
 	-- Perf capture of func calls
 	local typePerf = perf[name];
+	print("Perf.F:",perf.__scope,name)
 	return function(...)
 		local now = GetTimePreciseSec();
 		local res = {func(...)};
@@ -134,22 +107,27 @@ local function perf_replace_function(func, name)
 	-- end
 end
 
-local function CaptureTable(table, scope)
-	if IgnorePerf(table) then return table end
-	GetPerfForScope(table, scope or tostring(table))
-
-	for key,func in pairs(table) do
-		perf_replace_table(table, key)
-	end
-	return table;
-end
-
 -- Returns the Function wrapped in a performance capture function.
 -- NOTE: The Caller must replace the original reference
 local function CaptureFunction(func, name, scope)
 	GetPerfForScope(func, scope or name or tostring(func))
 
 	return perf_replace_function(func, name);
+end
+
+local function CaptureTable(table, scope)
+	if IgnorePerf(table) then return table end
+	GetPerfForScope(table, scope or tostring(table))
+
+	print("Perf.T:",scope)
+	local keys = {}
+	for key,_ in pairs(table) do
+		keys[#keys + 1] = key
+	end
+	for _,key in ipairs(keys) do
+		table[key] = CaptureFunction(table[key], key, scope)
+	end
+	return table;
 end
 
 local perf_meta_capture
@@ -159,13 +137,15 @@ local function AutoCaptureTable(t, scope)
 
 	-- setup the captured table for auto-tacking
 	local mt = getmetatable(t)
-	if mt and mt.__newindex then
-		print("can't performance wrap",perf.__name)
-	elseif mt then
-		print("added mt __newindex",perf.__name)
-		mt.__newindex = perf_meta_capture.__newindex
+	if mt then
+		if mt.__newindex then
+			print("Perf.A.FAIL",scope,perf.__scope)
+		else
+			print("Perf.A.__newindex",scope,perf.__scope)
+			mt.__newindex = perf_meta_capture.__newindex
+		end
 	else
-		print("added mt",perf.__name)
+		print("Perf.A",scope,perf.__scope)
 		return setmetatable(t, perf_meta_capture)
 	end
 end
@@ -180,11 +160,12 @@ perf_meta_capture = {
 		end
 
 		local perf = GetPerfForScope(t, "NOSCOPE")
-		local scope = perf.__name
+		local scope = perf.__scope
 		if type(val) == "table" then
-			local pt = CaptureTable(val, scope.."."..key)
+			local tscope = scope.."."..key
+			local pt = CaptureTable(val, tscope)
 			rawset(t, key, pt)
-			AutoCaptureTable(pt, scope)
+			AutoCaptureTable(pt, tscope)
 			return
 		elseif type(val) == "function" then
 			local pf = CaptureFunction(val, key, scope)
@@ -198,14 +179,12 @@ perf_meta_capture = {
 	end,
 }
 
--- Sets a metatable.__newindex on the given table which automatically performance-captures all assigned keys of the table (if possible)
+-- Sets a metatable.__newindex on the given table which automatically performance-captures all assigned keys of the table (if applicable)
 performance.AutoCaptureTable = AutoCaptureTable
 -- Replaces all functions in the provided table with performance capture functions of those functions
 performance.CaptureTable = CaptureTable
--- Returns a wrapped version of the function with performance capture
+-- Returns a performance capture function for the function
 performance.CaptureFunction = CaptureFunction
--- performance.CaptureModules = function()
--- 	for name,module in pairs(app.Modules) do
--- 		CaptureTable("Module."..name, module)
--- 	end
--- end
+
+-- Performance Tracking for AllTheThings Functionality
+AutoCaptureTable(app, appName);
