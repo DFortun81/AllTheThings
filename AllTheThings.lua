@@ -17858,7 +17858,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		end
 		-- Wraps a given object such that it can act as a filtered Header of the base group
 		local CreateWrapVisualHeader = function(base, groups)
-			return Wrap(setmetatable(constructor(nil, {g=groups or {}}, "WrapVisualHeader"), BaseVisualHeaderClone), base);
+			return Wrap(setmetatable(constructor(nil, {sort = true, g=groups or {}}, "WrapVisualHeader"), BaseVisualHeaderClone), base);
 		end
 		-- Returns the consolidated data format for the next header level
 		-- Headers are forced not collectible, and will have their content sorted, and can be copied from the existing Source header
