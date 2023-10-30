@@ -54,8 +54,10 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
-local rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove, string_lower, sformat, strsplit, GetTimePreciseSec, type
-	= rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove, string.lower, string.format, strsplit, GetTimePreciseSec, type;
+local rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove, string_lower,
+		string_match, sformat, string_gsub, strsplit, GetTimePreciseSec, type
+	= rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove, string.lower,
+		string.match, string.format, string.gsub, strsplit, GetTimePreciseSec, type;
 local ATTAccountWideData;
 
 -- App & Module locals
@@ -333,7 +335,7 @@ end
 local function formatNumericWithCommas(amount)
   local formatted, k = amount
   while true do
-	formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
+	formatted, k = string_gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
 	if (k==0) then
 	  break
 	end
@@ -1886,7 +1888,7 @@ GetSpecsString = function(specs, includeNames, trim)
 		end
 	end
 	if trim then
-		return string.match(app.TableConcat(icons),'^%s*(.*%S)');
+		return string_match(app.TableConcat(icons),'^%s*(.*%S)');
 	end
 	return app.TableConcat(icons);
 end
@@ -4339,6 +4341,8 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
 		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
 		local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
+		local FilterUnobtainable, FilterCharacter, FirstParent
+			= app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.RecursiveFirstParentWithField
 		local abbrevs = L["ABBREVIATIONS"];
 		for _,j in ipairs(group.g or group) do
 			parent = j.parent;
@@ -4348,21 +4352,19 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				and not app.HasCost(j, paramA, paramB)
 			then
 				text = BuildSourceTextColorized(parent);
-				if showUnsorted or (not string.match(text, L["UNSORTED_1"]) and not string.match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
+				if showUnsorted or (not string_match(text, L["UNSORTED_1"]) and not string_match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
 					for source,replacement in pairs(abbrevs) do
-						text = string.gsub(text, source, replacement);
+						text = string_gsub(text, source, replacement);
 					end
 					-- doesn't meet current unobtainable filters
-					if not app.RecursiveUnobtainableFilter(j) then
+					if not FilterUnobtainable(parent) then
 						tinsert(unfiltered, text .. " |TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t");
 					-- from obtainable, different character source
-					elseif not app.RecursiveCharacterRequirementsFilter(j) then
+					elseif not FilterCharacter(parent) then
 						tinsert(temp, text .. " |TInterface\\FriendsFrame\\StatusIcon-Offline:0|t");
 					else
 						-- check if this needs an unobtainable icon even though it's being shown
-						uTexture = GetUnobtainableTexture(
-							(j.e and j) or app.RecursiveFirstParentWithField(parent, "e")
-							or (j.u and j) or app.RecursiveFirstParentWithField(parent, "u"));
+						uTexture = GetUnobtainableTexture(FirstParent(parent, "e") or FirstParent(parent, "u"));
 						-- add the texture to the source line
 						if uTexture then
 							text = text .. " |T" .. uTexture .. ":0|t";
@@ -4820,7 +4822,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 			if #knownBy > 0 then
 				app.Sort(knownBy, app.SortDefaults.Name);
 				local desc = L["KNOWN_BY"] .. app.TableConcat(knownBy, "text", "??", ", ");
-				tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
+				tinsert(info, { left = string_gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
 			end
 		end
 
@@ -4839,7 +4841,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 			if #knownBy > 0 then
 				app.Sort(knownBy, app.SortDefaults.Name);
 				local desc = sformat(L["QUEST_ONCE_PER_ACCOUNT_FORMAT"],app.TableConcat(knownBy, "text", "??", ", "));
-				tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
+				tinsert(info, { left = string_gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
 			end
 		end
 
@@ -6014,9 +6016,9 @@ end
 app.UpdateRawIDs = UpdateRawIDs;
 
 local function SearchForLink(link)
-	if string.match(link, "item") then
+	if string_match(link, "item") then
 		-- Parse the link and get the itemID and bonus ids.
-		local itemString = string.match(link, "item[%-?%d:]+") or link;
+		local itemString = string_match(link, "item[%-?%d:]+") or link;
 		if itemString then
 			local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId,
 				linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = strsplit(":", link);
@@ -6060,7 +6062,7 @@ local function SearchForLink(link)
 			-- can't search for nothing!
 			return;
 		end
-		--print(string.gsub(string.gsub(link, "|c", "c"), "|h", "h"));
+		--print(string_gsub(string_gsub(link, "|c", "c"), "|h", "h"));
 		-- app.PrintDebug("SEARCH FOR FIELD",kind,id)
 		if kind == "itemid" or kind == "i" then
 			return SearchForField("itemID", id);
@@ -6087,7 +6089,7 @@ local function SearchForLink(link)
 		elseif kind == "objectID" or kind == "object" or kind == "o" then
 			return SearchForField("objectID", id);
 		else
-			return SearchForField(string.gsub(kind, "id", "ID"), id);
+			return SearchForField(string_gsub(kind, "id", "ID"), id);
 		end
 	end
 end
@@ -8059,7 +8061,7 @@ local fields = {
 			end
 		end
 		local statistic = GetStatistic(t.achievementID);
-		if statistic and statistic ~= '0' and statistic ~= '' and not string.match(statistic, "%W") then
+		if statistic and statistic ~= '0' and statistic ~= '' and not string_match(statistic, "%W") then
 			return statistic;
 		end
 	end,
@@ -9303,7 +9305,7 @@ local fields = {
 				return a.Deaths > b.Deaths;
 			end);
 			for i,data in ipairs(c) do
-				GameTooltip:AddDoubleLine("  " .. string.gsub(data.text, "-" .. GetRealmName(), ""), data.Deaths, 1, 1, 1);
+				GameTooltip:AddDoubleLine("  " .. string_gsub(data.text, "-" .. GetRealmName(), ""), data.Deaths, 1, 1, 1);
 			end
 		end
 	end,
@@ -11504,7 +11506,7 @@ end
 
 -- Imports the raw information from the rawlink into the specified group
 app.ImportRawLink = function(group, rawlink, ignoreSource)
-	rawlink = rawlink and string.match(rawlink, "item[%-?%d:]+");
+	rawlink = rawlink and string_match(rawlink, "item[%-?%d:]+");
 	if rawlink and group then
 		group.rawlink = rawlink;
 		-- importing a rawlink will clear any cached upgrade info for the group
@@ -18343,11 +18345,11 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 								local text = string_lower(input);
 								local f = tonumber(text);
 								if text ~= "" and tostring(f) ~= text then
-									text = string.gsub(text, "-", "%%-");
+									text = string_gsub(text, "-", "%%-");
 									app.PrintDebug("search match",text)
 									-- The string form did not match, the filter must have been by name.
 									for id,filter in pairs(L["FILTER_ID_TYPES"]) do
-										if string.match(string_lower(filter), text) then
+										if string_match(string_lower(filter), text) then
 											f = tonumber(id);
 											break;
 										end
@@ -21225,7 +21227,7 @@ app.LoadDebugger = function()
 					-- this probably doesn't work in other locales
 					msg = msg:gsub("item: ", "");
 					-- print("Loot parse",msg)
-					local itemString = string.match(msg, "item[%-?%d:]+");
+					local itemString = string_match(msg, "item[%-?%d:]+");
 					if itemString then
 						-- print("Looted Item",itemString)
 						local itemID = GetItemInfoInstant(itemString);
@@ -21676,7 +21678,7 @@ app.Startup = function()
 	-- app.PrintMemoryUsage("Startup")
 	local v = C_AddOns.GetAddOnMetadata(appName, "Version");
 	-- if placeholder exists as the Version tag, then assume we are not on the Release version
-	if string.match(v, "version") then
+	if string_match(v, "version") then
 		app.Version = "[Git]";
 		-- adjust the Setting screen version display since it was already set from metadata
 		if app.Settings.version then
@@ -22344,7 +22346,7 @@ end
 -- Clickable ATT Chat Link Handling
 (function()
 	hooksecurefunc("SetItemRef", function(link, text)
-		-- print("Chat Link Click",link,string.gsub(text, "\|","&"));
+		-- print("Chat Link Click",link,string_gsub(text, "\|","&"));
 		-- if IsShiftKeyDown() then
 		-- 	ChatEdit_InsertLink(text);
 		-- else
