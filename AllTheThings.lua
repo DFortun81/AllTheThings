@@ -7207,7 +7207,7 @@ local function MapSourceQuestsRecursive(parentQuestID, questID, currentDepth, de
 		end
 
 		-- don't consider locked quests which have been skipped if not tracking locked quests
-		if not questRef.collected and questRef.locked and not app.Settings:Get("Thing:QuestsLocked") then
+		if questRef.locked and not app.Settings:Get("Thing:QuestsLocked") then
 			questRef.collectible = false;
 		end
 
