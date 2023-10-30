@@ -219,7 +219,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				q(76348, {	-- Big Bright Beautiful Barrier
 					["sourceQuests"] = { 76532 },	-- Assault on the Wellspring
-					["provider"] = { "n", 208738 },	-- Suzska
+					["provider"] = { "n", 208378 },	-- Suzska
 					["coord"] = { 27.6, 32.1, EMERALD_DREAM },
 					["g"] = {
 						i(209895),	-- Chartreuse Champion's Legplates
@@ -230,7 +230,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				q(76347, {	-- Power, Eruption, and Lies
 					["sourceQuests"] = { 76348 },	-- Big Bright Beautiful Barrier
-					["provider"] = { "n", 208738 },	-- Suzska
+					["provider"] = { "n", 208378 },	-- Suzska
 					["coord"] = { 33.5, 30.3, EMERALD_DREAM },
 					["g"] = {
 						i(209885),	-- Chartreuse Champion's Chestplate
