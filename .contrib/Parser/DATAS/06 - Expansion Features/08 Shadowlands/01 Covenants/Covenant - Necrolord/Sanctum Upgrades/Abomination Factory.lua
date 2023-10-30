@@ -1259,6 +1259,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 						n(VENDORS, {
 							n(159238, {	-- Atticus <Supplies & Acquisitions>
 								["coord"] = { 55.2, 68.2, MALDRAXXUS },
+								["crs"] = { 167161 },	-- Atticus (Ghost)
 								["g"] = appendGroups(ATTICUS_GROUP, {
 									i(184589, {	-- Bag of Potions
 										["description"] = "This becomes available within Chill's Reach during 'A Brokered Deal'.",
