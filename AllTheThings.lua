@@ -13373,6 +13373,7 @@ local function AdjustParentProgress(group, progChange, totalChange)
 		-- app.PrintDebug("END:",parent.progress,parent.total)
 		-- verify visibility of the group, always a 'group' since it is already a parent of another group, as long as it's not the root window data
 		if not parent.window then
+			parent.visible = nil
 			SetGroupVisibility(rawget(parent, "parent"), parent);
 		end
 		AdjustParentProgress(parent, progChange, totalChange);
@@ -17851,6 +17852,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			"nmc",
 			"nmr",
 			"hash",
+			"expanded",
+			"indent",
 		}) do
 			BaseVisualHeaderClone.__class[field] = app.EmptyFunction
 		end
