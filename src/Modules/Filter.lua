@@ -129,12 +129,17 @@ function(item)
 end);
 
 -- MinReputation
+local ExclusiveFactions = {
+	932,	-- The Aldor
+	934,	-- The Scryers
+	1104,	-- Frenzyheart Tribe
+	1105,	-- The Oracles
+}
 DefineToggleFilter("MinReputation", CharacterFilters,
 function(item)
 	local minReputation = item.minReputation;
-	if minReputation and app.IsFactionExclusive(minReputation[1]) then
+	if minReputation and ExclusiveFactions[minReputation[1]] then
 		if minReputation[2] > (select(6, GetFactionInfoByID(minReputation[1])) or 0) then
-			--print("Filtering Out", item.key, item[item.key], item.text, item.minReputation[1], app.CreateFaction(item.minReputation[1]).text);
 			return false;
 		else
 			return true;
@@ -143,6 +148,21 @@ function(item)
 		return true;
 	end
 end);
+
+-- MaxReputation (TODO)
+-- DefineToggleFilter("MaxReputation", CharacterFilters,
+-- function(item)
+-- 	local maxReputation = item.maxReputation;
+-- 	if maxReputation then
+-- 		if maxReputation[2] > (select(6, GetFactionInfoByID(maxReputation[1])) or 0) then
+-- 			return false;
+-- 		else
+-- 			return true;
+-- 		end
+-- 	else
+-- 		return true;
+-- 	end
+-- end);
 
 -- Event
 -- Defined in OnLoad due to raw logic captured in Events Module
