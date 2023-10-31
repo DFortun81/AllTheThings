@@ -71,7 +71,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			filter(MOUNTS, {
 			}),
 			filter(COSMETIC, {
-				
+			--	3itemshere
 			}),
 		}),
 		n(UNAVAILABLE, {
@@ -139,15 +139,15 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(206331, {	-- Ensemble: Vagabond’s Sepia Threads
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 					["g"] = {
-						i(189875),	-- Corrupted Runelord's Sash
-						i(189876),	-- Corrupted Runelord's Handguards
+					--	i(189875),	-- Corrupted Runelord's Sash
+					--	i(189876),	-- Corrupted Runelord's Handguards
 					},
 				}),
 				i(206342, {	-- Ensemble: Wanderer’s Sepia Trappings
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 					["g"] = {
-						i(189875),	-- Corrupted Runelord's Sash
-						i(189876),	-- Corrupted Runelord's Handguards
+					--	i(189875),	-- Corrupted Runelord's Sash
+					--	i(189876),	-- Corrupted Runelord's Handguards
 					},
 				}),
 				i(, {	-- Fang of the Mountain
@@ -213,7 +213,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(, {	-- Razor-Edged Kukri
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
 				}),
-				i(, {	-- Ruby Felfire Bulwark
+				i(190910, { -- Ruby Felfire Bulwark
 					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
 				}),
 				i(208675, {	-- Savage Champion’s Aggression
@@ -234,7 +234,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(208640),	-- Savage Champion's Belt
 					},
 				}),
-				i(, {	-- Sinister Fel Staff
+				i(190557, {	-- Sinister Fel Staff
 					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
 				}),
 				i(190220, {	-- Standard of the Guardian
@@ -635,9 +635,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190543, {	-- Silvered Warcloak
 					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
 				}),
-				i(190557, {	-- Sinister Fel Staff
-					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
-				}),
 				i(207957, { -- Aquamarine Felfire Bulwark
 					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
 				}),
@@ -706,9 +703,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 				}),
 				i(190909, { -- Ruby Felfire Splitblade
-					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
-				}),
-				i(190910, { -- Ruby Felfire Bulwark
 					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
 				}),
 				i(190143, { -- Shard of Frozen Secrets
