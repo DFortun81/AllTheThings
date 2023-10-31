@@ -112,23 +112,23 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	n(VENDORS, {
 		n(AVAILABLE, {
 			filter(MOUNTS, {
-				i(, {	-- Spectral Gryphon 
+				i(76889, {	-- Spectral Gryphon 
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 				}),
-				i(, {	-- Spectral Wind Rider
+				i(76902, {	-- Spectral Wind Rider
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 				}),
-				i(, {	-- Swift Zhevra
+				i(37719, {	-- Swift Zhevra
 					["cost"] = { { "c", TRADERS_TENDER, 550 }, },
 				}),
 			}),
 			filter(BATTLE_PETS, {
-				i(, {	-- Drazka’zet the Wrathful
+				i(190176, {	-- Drazka’zet the Wrathful
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 				}),
 			}),
 			filter(TOYS, {
-				i(, {	-- Foam Toy Rack
+				i(45063, {	-- Foam Toy Rack
 					["cost"] = { { "c", TRADERS_TENDER, 425 }, },
 				}),
 			}),
