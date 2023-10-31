@@ -7,7 +7,23 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 		n(ACHIEVEMENTS, {
 			achraw(13790, {	-- Armed for Action
 				["description"] = "Each criteria can be earned by creating weapons with Rocket-Chief Fuselage during the |cFFffd200Toys for Destruction|r daily.",
-				["sym"] = {{ "achievement_criteria" }},
+				["groups"] = {
+					crit(1, {	-- Volatile Blaster
+						["_quests"] = { 54090 },	-- Toys For Destruction
+					}),
+					crit(2, {	-- Ricket's Special Delivery
+						["_quests"] = { 54090 },	-- Toys For Destruction
+					}),
+					crit(3, {	-- Lightning Zap 5000
+						["_quests"] = { 54090 },	-- Toys For Destruction
+					}),
+					crit(4, {	-- Supercollider
+						["_quests"] = { 54090 },	-- Toys For Destruction
+					}),
+					crit(5, {	-- Boltspitter
+						["_quests"] = { 54090 },	-- Toys For Destruction
+					}),
+				},
 			}),
 			ach(13513, {	-- Available in Eight Colors (unlocks paint: Battletorn Blue)
 				["sym"] = {{ "achievement_criteria" }},
