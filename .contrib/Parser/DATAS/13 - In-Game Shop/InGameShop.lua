@@ -7,11 +7,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	n(ACHIEVEMENTS, {
 		ach(8917, {	-- Collector's Edition: Dread Hatchling
 			["provider"] = { "i", 109014 },	-- Dread Hatchling
-			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0" },
+			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0", "added 10.1.0" },
 		}),
 		ach(8916, {	-- Collector's Edition: Dread Raven
 			["provider"] = { "i", 109013 },	-- Dread Raven
-			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0" },
+			["timeline"] = { "added 5.4.7.17807", "removed 8.3.0", "added 10.1.0" },
 		}),
 		ach(12230, {	-- Collector's Edition: Gilded Ravasaur
 			["provider"] = { "i", 153540 },	-- Gilded Ravasaur
@@ -24,11 +24,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		ach(6849, {	-- Collector's Edition: Imperial Quilen
 			["provider"] = { "i", 85870 },	-- Imperial Quilen
-			["timeline"] = { "added 5.0.1.15662" },
+			["timeline"] = { "added 5.0.1.15662", "removed 5.4.7", "added 8.3.0" },
 		}),
 		ach(6848, {	-- Collector's Edition: Lucky Quilen Cub
 			["provider"] = { "i", 85871 },	-- Lucky Quilen Cub
-			["timeline"] = { "added 5.0.1.15662" },
+			["timeline"] = { "added 5.0.1.15662", "removed 5.4.7", "added 8.3.0" },
 		}),
 		ach(10321, {	-- Collector's Edition: Nibbles
 			["provider"] = { "i", 128426 },	-- Nibbles
@@ -41,7 +41,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		ach(12232, {	-- Collector's Edition: Tottle
 			["provider"] = { "i", 153541 },	-- Tottle
-			["timeline"] = { "added 7.3.5.25937" },
+			["timeline"] = { "added 7.3.5.25937", "removed 10.1.7" },	-- Removed Sep 17th, 2023
 		}),
 		ach(19029, {	-- Lil' Maggz
 			["timeline"] = { "added 10.1.7.51313", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
@@ -93,7 +93,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 6.2.2.20395", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
 		}),
 		i(85870, {	-- Imperial Quilen (MOUNT!)
-			["timeline"] = { "added 9.0.2" },
+			["timeline"] = { "added 8.3.0" },
 		}),
 		i(107951, {	-- Iron Skyreaver (MOUNT!)
 			["timeline"] = { "added 5.4.2.17585", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
@@ -234,7 +234,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 4.0.3.13286" },
 		}),
 		i(85871, {	-- Lucky Quilen Cub (PET!)
-			["timeline"] = { ADDED_5_0_4 },
+			["timeline"] = { "added 8.3.0" },
 		}),
 		i(141893, {	-- Mischief (PET!)
 			["timeline"] = { "added 7.1.0.22996", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
@@ -284,13 +284,13 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		["description"] = "Only available in the Asian In-Game Shop.",
 		["groups"] = {
 			i(103557, {	-- Enduring Elixir of Wisdom
-				["timeline"] = { "added 5.4.0.17153" },
+				["timeline"] = { "added 5.4.0.17153", "removed 6.0.2" },
 			}),
 			i(105911, {	-- Pouch of Enduring Wisdom
-				["timeline"] = { "added 5.4.0.17153" },
+				["timeline"] = { "added 5.4.0.17153", "removed 6.0.2" },
 			}),
 			i(105912, {	-- Pouch of Enduring Wisdom (5)
-				["timeline"] = { "added 5.4.0.17153" },
+				["timeline"] = { "added 5.4.0.17153", "removed 6.0.2" },
 			}),
 		},
 	}),
