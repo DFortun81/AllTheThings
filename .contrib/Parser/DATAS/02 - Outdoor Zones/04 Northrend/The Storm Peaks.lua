@@ -1622,6 +1622,11 @@ root(ROOTS.Zones, {
 							i(44190),	-- Spaulders of Frozen Knives
 							i(44195),	-- Spaulders of the Giant Lords
 							i(44192),	-- Stalactite Chopper
+							-- #if ANYCLASSIC
+							i(206392, {	-- Tabard of the Sons of Hodir
+								["factionID"] = 1119,	-- The Sons of Hodir
+							}),
+							-- #endif
 						},
 					}),
 					n(30472, {	-- Olut Alegut
