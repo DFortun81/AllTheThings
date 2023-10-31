@@ -175,7 +175,6 @@ root(ROOTS.NeverImplemented, {
 				-- Ranged
 				i(190715),	-- Anodized Sniper Rifle
 				i(190711),	-- Arcanist's Barbed Baton
-				i(190147),	-- Longbow of the Twisted Grove
 			}),
 		})),
 
@@ -234,7 +233,6 @@ root(ROOTS.NeverImplemented, {
 			i(206327),	-- Ensemble: Vagabond's Deep Threads
 			i(206328),	-- Ensemble: Vagabond's Cloudy Threads
 			i(206329),	-- Ensemble: Vagabond's Grassy Threads
-			i(206331),	-- Ensemble: Vagabond's Sepia Threads
 			i(206333),	-- Ensemble: Wanderer's Aquatic Trappings
 			i(206334),	-- Ensemble: Wanderer's Plum Trappings
 			i(206335),	-- Ensemble: Wanderer's Faded Trappings
@@ -243,7 +241,6 @@ root(ROOTS.NeverImplemented, {
 			i(206338),	-- Ensemble: Wanderer's Deep Trappings
 			i(206339),	-- Ensemble: Wanderer's Cloudy Trappings
 			i(206340),	-- Ensemble: Wanderer's Grassy Trappings
-			i(206342),	-- Ensemble: Wanderer's Sepia Trappings
 			i(207029),	-- Scarlet Zealot's Heater Shield
 		})),
 
@@ -253,32 +250,6 @@ root(ROOTS.NeverImplemented, {
 			i(208547),	-- Explorer's Reading Spectacles [Recruit a Friend?]
 			i(190874),	-- Glittering Fel Gavel [Seeing Red]
 			i(209053),	-- Green Brewfest Bulwark [Brewfest]
-			i(208786),	-- Luxurious Niffen Hat
-				------ TRADING POST ------
-			i(208638),	-- Savage Champion's Vision
-			i(208639),	-- Savage Champion's Tusks
-			i(208640),	-- Savage Champion's Belt
-			i(208641),	-- Savage Champion's Thorns
-			i(208642),	-- Savage Champion's Gladius
-			i(208643),	-- Savage Champion's Disemboweler
-			i(208648),	-- Possessed Watcher Kabuto
-			i(208650),	-- Possessed Watcher Pauldrons
-			i(208651),	-- Possessed Watcher Cord
-			i(208652),	-- Possessed Watcher Fan
-			i(208653),	-- Possessed Watcher Bloom
-			i(208654),	-- Possessed Watcher Keg
-			i(208655),	-- Voice of the Alluring Call
-			i(208656),	-- Wings of the Alluring Call
-			i(208657),	-- Chains of the Alluring Call
-			i(208659),	-- Flayer of the Alluring Call
-			i(208660),	-- Effigy of the Alluring Call
-			i(208661),	-- Caduceus of the Alluring Call
-			i(208669),	-- Possessed Watcher Guise
-			i(208671),	-- Possessed Watcher Arsenal
-			i(208672),	-- Jewels of the Alluring Call
-			i(208673),	-- Instruments of the Alluring Call
-			i(208674),	-- Savage Champion's Trophies
-			i(208675),	-- Savage Champion's Aggression
 		})),
 	}),
 });

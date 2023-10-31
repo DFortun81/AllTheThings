@@ -53,9 +53,15 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		}),
 		q(76106, {	-- Report to the Trading Post -- September 2023
 			["timeline"] = { ADDED_10_1_5 },
+			["u"] = REMOVED_FROM_GAME,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 		q(76107, {	-- Report to the Trading Post -- October 2023
+			["timeline"] = { ADDED_10_1_7 },
+			["u"] = REMOVED_FROM_GAME,
+			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+		}),
+		q(76108, {	-- Report to the Trading Post -- November 2023
 			["timeline"] = { ADDED_10_1_7 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
@@ -63,15 +69,16 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	n(SPECIAL, bubbleDownSelf({ ["description"] = "This is rewarded for filling the Travel Points Progress Bar in the month." }, {
 		n(AVAILABLE, {
 			filter(MOUNTS, {
-				i(208598),	-- Eve's Ghastly Rider (MOUNT!)
 			}),
 			filter(COSMETIC, {
+				
 			}),
 		}),
 		n(UNAVAILABLE, {
 			filter(MOUNTS, {
 				i(190231),	-- Ash'adar, Harbinger of Dawn (MOUNT!)
 				i(190168),	-- Crusty Crawler (MOUNT!) (Sep 2023)
+				i(208598),	-- Eve's Ghastly Rider (MOUNT!)
 				i(190169),	-- Quawks (MOUNT!)
 				i(190613),	-- Savage Green Battle Turtle (MOUNT!)
 			}),
@@ -105,137 +112,136 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	n(VENDORS, {
 		n(AVAILABLE, {
 			filter(MOUNTS, {
-				i(137576, {	-- Dim Coldflame Core (MOUNT!)
-					["cost"] = { { "c", TRADERS_TENDER, 700 }, },
-					["timeline"] = { ADDED_10_1_7 },
+				i(, {	-- Spectral Gryphon 
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+				}),
+				i(, {	-- Spectral Wind Rider
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+				}),
+				i(, {	-- Swift Zhevra
+					["cost"] = { { "c", TRADERS_TENDER, 550 }, },
 				}),
 			}),
 			filter(BATTLE_PETS, {
-				i(49693, {	-- Lil' KT (PET!)
+				i(, {	-- Drazka’zet the Wrathful
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 				}),
 			}),
 			filter(TOYS, {
-				i(32542, { -- Imp in a Ball (TOY!)
-					["cost"] = { { "c", TRADERS_TENDER, 350 }, },
+				i(, {	-- Foam Toy Rack
+					["cost"] = { { "c", TRADERS_TENDER, 425 }, },
 				}),
 			}),
 			filter(COSMETIC, {
-				i(208663, {	-- Ashamane's Vestment of Rebirth
-					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
-					["classes"] = DRUID,
-					["groups"] = {
-						i(208620),	-- Ashamane's Helm of Rebirth
-						i(208621),	-- Ashamane's Spaulders of Rebirth
-						i(208622),	-- Ashamane's Fangs of Rebirth
+				i(, {	-- Acolyte’s Etched Warhammer
+					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
+				}),
+				i(206331, {	-- Ensemble: Vagabond’s Sepia Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(189875),	-- Corrupted Runelord's Sash
+						i(189876),	-- Corrupted Runelord's Handguards
 					},
 				}),
-				i(208664, {	-- Ashamane's Blessings of Rebirth
+				i(206342, {	-- Ensemble: Wanderer’s Sepia Trappings
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(189875),	-- Corrupted Runelord's Sash
+						i(189876),	-- Corrupted Runelord's Handguards
+					},
+				}),
+				i(, {	-- Fang of the Mountain
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(, {	-- Gnomish Liquid Transfer Apparatus
+					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
+				}),
+				i(208673, {	-- Instruments of the Alluring Call
 					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
-					["classes"] = DRUID,
+					["classes"] = WARLOCK,
 					["groups"] = {
-						i(208623),	-- Ashamane's Blade of Rebirth
-						i(208624),	-- Ashamane's Claws of Rebirth
-						i(208625),	-- Ashamane's Crescent of Rebirth
-						i(208626),	-- Ashamane Jewel of Rebirth
+						i(208659),	-- Flayer of the Alluring Call
+						i(208660),	-- Effigy of the Alluring Call
+						i(208661),	-- Caduceus of the Alluring Call
 					},
 				}),
-				i(190710, {	-- Caged Eye of the Watcher
+				i(208672, {	-- Jewels of the Alluring Call
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = WARLOCK,
+					["groups"] = {
+						i(208655),	-- Voice of the Alluring Call
+						i(208656),	-- Wings of the Alluring Call
+						i(208657),	-- Chains of the Alluring Call
+					},
+				}),
+				i(, {	-- Krokul Guisame
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(190147, {	-- Longbow of the Twisted Grove
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				}),
+				i(, {	-- Loyal Blademaster’s Greatsword
 					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
 				}),
-				i(190689, {	-- Corrupted Bladefist
-					["cost"] = { { "c", TRADERS_TENDER, 525 }, },
+				i(208786, {	-- Luxurious Niffen Hat
+					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
 				}),
-				i(190802, { -- Drape of Endless Twilight
+				i(, {	-- Maw of Rage
+					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
+				}),
+				i(, {	-- Mechanized Skullcrusher
+					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
+				}),
+				i(208671, {	-- Possessed Watcher Arsenal
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = MONK,
+					["groups"] = {
+						i(208648),	-- Possessed Watcher Kabuto
+						i(208650),	-- Possessed Watcher Pauldrons
+						i(208651),	-- Possessed Watcher Cord
+					},
+				}),
+				i(208669, {	-- Possessed Watcher Guide
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = MONK,
+					["groups"] = {
+						i(208652),	-- Possessed Watcher Fan
+						i(208653),	-- Possessed Watcher Bloom
+						i(208654),	-- Possessed Watcher Keg
+					},
+				}),
+				i(, {	-- Razor-Edged Kukri
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
 				}),
-				i(206341, {	-- Ensemble: Wanderer's Lively Trappings
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-					["g"] = {
-						i(206319),	-- Wanderer's Lively Cloak
-						i(206308),	-- Wanderer's Lively Scarf
+				i(, {	-- Ruby Felfire Bulwark
+					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
+				}),
+				i(208675, {	-- Savage Champion’s Aggression
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = WARRIOR,
+					["groups"] = {
+						i(208641),	-- Savage Champion's Thorns
+						i(208642),	-- Savage Champion's Gladius
+						i(208643),	-- Savage Champion's Disemboweler
 					},
 				}),
-				i(206330, {	-- Ensemble: Vagabond's Lively Threads
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-					["g"] = {
-						i(206286),	-- Vagabond's Lively Cape
-						i(206297),	-- Vagabond's Lively Hood
-					},
-				}),
-				i(190216, {	-- Feathered Cowl of the Guardian
-					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
-				}),
-				i(190200, {	-- Feathered Drape of the Guardian
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				}),
-				i(190800, { -- Gleaming Mail Tabard
-					["cost"] = { { "c", TRADERS_TENDER, 125 }, },
-				}),
-				i(190145, {	-- Gilded Drakkonid Morningstar
+				i(208674, {	-- Savage Champion’s Trophies
 					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = WARRIOR,
+					["groups"] = {
+						i(208638),	-- Savage Champion's Vision
+						i(208639),	-- Savage Champion's Tusks
+						i(208640),	-- Savage Champion's Belt
+					},
 				}),
-				i(190076, {	-- Granny's Old Hat
+				i(, {	-- Sinister Fel Staff
 					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
 				}),
-				i(190578, {	-- Headmaster's Command
-					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				i(190220, {	-- Standard of the Guardian
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 				}),
-				i(208763, {	-- Headmaster's Skullcap
-					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
-				}),
-				i(190558, {	-- Helm of the Fierce
-					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
-				}),
-				i(210265, {	-- High Scholar's Grand Staff
-					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
-				}),
-				i(208667, {	-- Nathreza Blasphemer's Flames
-					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
-					["classes"] = DEMONHUNTER,
-					["groups"] = {
-						i(208633),	-- Nathreza Blasphemer's Horns
-						i(208634),	-- Nathreza Blasphemer's Mantle
-						i(208635),	-- Nathreza Blasphemer's Shard
-					},
-				}),
-				i(208668, {	-- Nathreza Blasphemer's Glaives
-					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
-					["classes"] = DEMONHUNTER,
-					["groups"] = {
-						i(208636),	-- Nathreza Blasphemer's Wingglaive
-						i(208637),	-- Nathreza Blasphemer's Warglaive
-					},
-				}),
-				i(190801, { -- Shadowy Mail Tabard
-					["cost"] = { { "c", TRADERS_TENDER, 125 }, },
-				}),
-				i(190433, {	-- Shifty Merchant's Tunic
+				i(, {	-- Tidecaller’s Cinch
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
-				}),
-				i(208665, {	-- Webbed Saronite Exoskeleton
-					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
-					["classes"] = DEATHKNIGHT,
-					["groups"] = {
-						i(208627),	-- Webbed Saronite Headguard
-						i(208628),	-- Webbed Saronite Spaulders
-						i(208629),	-- Webbed Saronite Girdle
-					},
-				}),
-				i(208666, {	-- Webbed Saronite Weaponry
-					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
-					["classes"] = DEATHKNIGHT,
-					["groups"] = {
-						i(208630),	-- Webbed Saronite Greataxe
-						i(208631),	-- Webbed Saronite Eviscerator
-						i(208632),	-- Webbed Saronite Devourer
-					},
-				}),
-				i(190199, {	-- Well-Worn Grimskull Cinch
-					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
-				}),
-				i(190804, { -- Wine-Soaked Hammer
-					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
 				}),
 			}),
 		}),
@@ -255,6 +261,10 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(54811),	-- Celestial Steed (MOUNT!)
 				i(118515),	-- Cindermane Charger (MOUNT!)
+				i(137576, {	-- Dim Coldflame Core (MOUNT!)
+					["cost"] = { { "c", TRADERS_TENDER, 700 }, },
+					["timeline"] = { ADDED_10_1_7 },
+				}),
 				i(206027, {	-- Felcrystal Scorpion (MOUNT!)
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 					["timeline"] = { ADDED_10_1_0 },
@@ -278,6 +288,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190607, {	-- Garrlok (PET!)
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 				}),
+				i(49693, {	-- Lil' KT (PET!)
+					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
+				}),
 				i(49665, {	-- Pandaren Monk (PET!)
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 				}),
@@ -297,6 +310,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			filter(TOYS, {
 				i(206268, { -- Ethereal Transmogrifier (TOY!)
 					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				}),
+				i(32542, { -- Imp in a Ball (TOY!)
+					["cost"] = { { "c", TRADERS_TENDER, 350 }, },
 				}),
 			}),
 			filter(COSMETIC, {
@@ -808,6 +824,122 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208147, {	-- Yellow Tweed Cap
 					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
 				}),
+				i(208663, {	-- Ashamane's Vestment of Rebirth
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = DRUID,
+					["groups"] = {
+						i(208620),	-- Ashamane's Helm of Rebirth
+						i(208621),	-- Ashamane's Spaulders of Rebirth
+						i(208622),	-- Ashamane's Fangs of Rebirth
+					},
+				}),
+				i(208664, {	-- Ashamane's Blessings of Rebirth
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = DRUID,
+					["groups"] = {
+						i(208623),	-- Ashamane's Blade of Rebirth
+						i(208624),	-- Ashamane's Claws of Rebirth
+						i(208625),	-- Ashamane's Crescent of Rebirth
+						i(208626),	-- Ashamane Jewel of Rebirth
+					},
+				}),
+				i(190710, {	-- Caged Eye of the Watcher
+					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
+				}),
+				i(190689, {	-- Corrupted Bladefist
+					["cost"] = { { "c", TRADERS_TENDER, 525 }, },
+				}),
+				i(190802, { -- Drape of Endless Twilight
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(206341, {	-- Ensemble: Wanderer's Lively Trappings
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(206319),	-- Wanderer's Lively Cloak
+						i(206308),	-- Wanderer's Lively Scarf
+					},
+				}),
+				i(206330, {	-- Ensemble: Vagabond's Lively Threads
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+					["g"] = {
+						i(206286),	-- Vagabond's Lively Cape
+						i(206297),	-- Vagabond's Lively Hood
+					},
+				}),
+				i(190216, {	-- Feathered Cowl of the Guardian
+					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
+				}),
+				i(190200, {	-- Feathered Drape of the Guardian
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
+				i(190800, { -- Gleaming Mail Tabard
+					["cost"] = { { "c", TRADERS_TENDER, 125 }, },
+				}),
+				i(190145, {	-- Gilded Drakkonid Morningstar
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+				}),
+				i(190076, {	-- Granny's Old Hat
+					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
+				}),
+				i(190578, {	-- Headmaster's Command
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				}),
+				i(208763, {	-- Headmaster's Skullcap
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				}),
+				i(190558, {	-- Helm of the Fierce
+					["cost"] = { { "c", TRADERS_TENDER, 250 }, },
+				}),
+				i(210265, {	-- High Scholar's Grand Staff
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+				}),
+				i(208667, {	-- Nathreza Blasphemer's Flames
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = DEMONHUNTER,
+					["groups"] = {
+						i(208633),	-- Nathreza Blasphemer's Horns
+						i(208634),	-- Nathreza Blasphemer's Mantle
+						i(208635),	-- Nathreza Blasphemer's Shard
+					},
+				}),
+				i(208668, {	-- Nathreza Blasphemer's Glaives
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = DEMONHUNTER,
+					["groups"] = {
+						i(208636),	-- Nathreza Blasphemer's Wingglaive
+						i(208637),	-- Nathreza Blasphemer's Warglaive
+					},
+				}),
+				i(190801, { -- Shadowy Mail Tabard
+					["cost"] = { { "c", TRADERS_TENDER, 125 }, },
+				}),
+				i(190433, {	-- Shifty Merchant's Tunic
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
+				}),
+				i(208665, {	-- Webbed Saronite Exoskeleton
+					["cost"] = { { "c", TRADERS_TENDER, 450 }, },
+					["classes"] = DEATHKNIGHT,
+					["groups"] = {
+						i(208627),	-- Webbed Saronite Headguard
+						i(208628),	-- Webbed Saronite Spaulders
+						i(208629),	-- Webbed Saronite Girdle
+					},
+				}),
+				i(208666, {	-- Webbed Saronite Weaponry
+					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
+					["classes"] = DEATHKNIGHT,
+					["groups"] = {
+						i(208630),	-- Webbed Saronite Greataxe
+						i(208631),	-- Webbed Saronite Eviscerator
+						i(208632),	-- Webbed Saronite Devourer
+					},
+				}),
+				i(190199, {	-- Well-Worn Grimskull Cinch
+					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
+				}),
+				i(190804, { -- Wine-Soaked Hammer
+					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
+				}),
 			}),
 		}),
 	}),
@@ -854,9 +986,6 @@ root(ROOTS.NeverImplemented, {
 		n(VENDORS, {
 			filter(BATTLE_PETS, {
 				pet(3255, {	-- Buttercup (PET!)
-					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
-				}),
-				i(190176, {	-- Drazka'zet the Wrathful (PET!)
 					["cost"] = { { "c", TRADERS_TENDER, 750 }, },
 				}),
 				i(190173, {	-- Lil' Maka'jin (PET!)
