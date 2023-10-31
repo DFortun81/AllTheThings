@@ -22123,21 +22123,6 @@ app.InitDataCoroutine = function()
 		if completion == 2 then currentQuestsCache[questID] = nil; end
 	end
 
-	app:RegisterEvent("QUEST_LOG_UPDATE");
-	app:RegisterEvent("QUEST_TURNED_IN");
-	app:RegisterEvent("QUEST_ACCEPTED");
-	app:RegisterEvent("QUEST_REMOVED");
-	app:RegisterEvent("HEIRLOOMS_UPDATED");
-	app:RegisterEvent("ARTIFACT_UPDATE");
-	app:RegisterEvent("CRITERIA_UPDATE");
-	app:RegisterEvent("TOYS_UPDATED");
-	app:RegisterEvent("LOOT_OPENED");
-	app:RegisterEvent("QUEST_DATA_LOAD_RESULT");
-	app:RegisterEvent("SKILL_LINES_CHANGED");
-	app:RegisterEvent("TOOLTIP_DATA_UPDATE");
-	app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED");
-	app:RegisterEvent("VIGNETTES_UPDATED");
-
 	-- check if we are in a Party Sync session when loading in
 	app.IsInPartySync = C_QuestSession.Exists();
 
@@ -22177,6 +22162,21 @@ app.InitDataCoroutine = function()
 	for i,handler in ipairs(app.EventHandlers.OnReady) do
 		handler();
 	end
+
+	app:RegisterEvent("QUEST_LOG_UPDATE");
+	app:RegisterEvent("QUEST_TURNED_IN");
+	app:RegisterEvent("QUEST_ACCEPTED");
+	app:RegisterEvent("QUEST_REMOVED");
+	app:RegisterEvent("HEIRLOOMS_UPDATED");
+	app:RegisterEvent("ARTIFACT_UPDATE");
+	app:RegisterEvent("CRITERIA_UPDATE");
+	app:RegisterEvent("TOYS_UPDATED");
+	app:RegisterEvent("LOOT_OPENED");
+	app:RegisterEvent("QUEST_DATA_LOAD_RESULT");
+	app:RegisterEvent("SKILL_LINES_CHANGED");
+	app:RegisterEvent("TOOLTIP_DATA_UPDATE");
+	app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED");
+	app:RegisterEvent("VIGNETTES_UPDATED");
 
 	-- finally can say the app is ready
 	-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
