@@ -111,7 +111,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					["_quests"] = { 44153 },
 				}),
 				crit(33168, {	-- Complete the first order campaign effort
-					["_quests"] = { 42116 },
+					-- ["_quests"] = { 42116 },
 				}),
 			}),
 			ach(10750),	-- Fighting with Style: Hidden

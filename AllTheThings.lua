@@ -22010,7 +22010,7 @@ local function AssignDirectGroupOnUpdates()
 end
 
 local function PrePopulateAchievementSymlinks()
-	local achCache = app.CleanInheritingGroups(app.SearchForFieldContainer("achievementID"), "sourceIgnored")
+	local achCache = app.SearchForFieldContainer("achievementID")
 	-- app.PrintDebug("FillAchSym")
 	if achCache then
 		local FillSym = app.FillAchievementCriteriaAsync
@@ -22020,7 +22020,7 @@ local function PrePopulateAchievementSymlinks()
 		for achID,groups in pairs(achCache) do
 			for i=1,#groups do
 				group = groups[i]
-				if group.__type == "BaseAchievement" then
+				if group.__type == "BaseAchievement" and not GetRelativeValue(group, "sourceIgnored") then
 					-- app.PrintDebug("FillAchSym",group.hash)
 					Run(FillSym, group)
 				end

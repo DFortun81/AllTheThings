@@ -580,6 +580,9 @@ achWithAnyReps = function(id, factions, t)				-- Create an ACHIEVEMENT Object wi
 end
 achraw = function(id, altID, t)							-- Create an ACHIEVEMENT Object whose Criteria will not be adjusted by AchievementDB info
 	t = ach(id, altID, t);
+	if t.sym then
+		error("Do not use 'sym' on achievement: "..id..". It causes criteria to be placed under Hidden Quest Triggers")
+	end
 	-- TODO: hopefully we can define a better way for these Criteria to exist such that the Criteria can be moved as expected again
 	-- they were being moved under HQT defined in _quests via AchievementDB from Blizzard
 	-- but for now prevent the Criteria from disappearing into the Unsorted window

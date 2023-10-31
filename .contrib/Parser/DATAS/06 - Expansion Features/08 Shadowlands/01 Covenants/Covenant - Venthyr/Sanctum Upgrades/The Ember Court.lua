@@ -313,7 +313,16 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								}),
 							}),
 							achraw(14726, {	-- It's Certainly Never Boring
-								["sym"] = {{ "achievement_criteria" }},
+								crit(1),	-- Messy
+								crit(2),	-- Clean
+								crit(3),	-- Safe
+								crit(4),	-- Dangerous
+								crit(5),	-- Humble
+								crit(6),	-- Decadent
+								crit(7),	-- Relaxing
+								crit(8),	-- Exciting
+								crit(9),	-- Casual
+								crit(10),	-- Formal
 							}),
 							ach(14727),		-- Master of Ceremonies
 							ach(14679, {	-- Party Palace

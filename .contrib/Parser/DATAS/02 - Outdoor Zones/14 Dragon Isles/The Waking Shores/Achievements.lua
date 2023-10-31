@@ -126,7 +126,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}
 			}),
 			achraw(16406, {	-- All Sides of the Story
-				["sym"] = {{ "achievement_criteria" }},
+				crit(1, {	-- Captain Garrick & Shuja Grimaxe
+					["sourceQuests"] = {
+						70135,	-- Encroaching Elementals [A]
+						66111,	-- Encroaching Elementals [H]
+					},
+				}),
+				crit(2, {	-- Duroz & Kolgar
+					["_quests"] = { 70708 },	-- Hallow
+				}),
+				crit(3, {	-- Tarjin the Blind
+					["_quests"] = { 70779 },	-- Tarjin's Tales
+				}),
+				crit(4, {	-- Veritistrasz
+					["_quests"] = { 70268 },	-- Memories Revived
+				}),
 			}),
 			ach(15991, {	-- Dragon Glyphs: Crumbling Life Archway
 				["coord"] = { 57.7, 55.0, THE_WAKING_SHORES },
@@ -239,7 +253,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			pvp(ach(16592)),	-- Tour of Duty: The Waking Shores
 			ach(16297, {	-- Treasures of The Waking Shores
-				["sym"] = {{ "achievement_criteria" }},	
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(16334, {	-- Waking Hope
 				["sym"] = {{ "achievement_criteria" }},

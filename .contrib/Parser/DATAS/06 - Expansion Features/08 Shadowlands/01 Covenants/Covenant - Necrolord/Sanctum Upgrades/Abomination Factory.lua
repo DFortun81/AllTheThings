@@ -102,7 +102,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					},
 					["g"] = {
 						n(ACHIEVEMENTS, {
-							achraw(14684, {	-- Abominable Lives
+							ach(14684, {	-- Abominable Lives
 								["sym"] = {{ "achievement_criteria" }},
 							}),
 							achraw(14833, {	-- Fashion Abomination
@@ -331,7 +331,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							ach(14753, {	-- It's a Wrap
 								["cost"] = { { "i", 178594, 100 } },	-- 100 Anima-bound Wraps
 							}),
-							achraw(14751, {	-- The Gang's All Here
+							ach(14751, {	-- The Gang's All Here
 								["sym"] = {{ "achievement_criteria" }},
 								["g"] = {
 									i(182074),		-- Chosen Tauralus (MOUNT!)
@@ -559,6 +559,15 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["sourceQuests"] = { 60042 },	-- May I Take Your Order?
 										["provider"] = { "n", 167150 },	-- Rathan
 										["coord"] = { 55.1, 68.8, MALDRAXXUS },
+									}),
+									header(HEADERS.Quest, 60291, {	-- Triggered when completing 'Corspe Run' for the first time
+										["questID"] = 62535,
+										["sourceQuests"] = {
+											60291,	-- Corpse Run
+											61522,	-- Corpse Run
+											61523,	-- Corpse Run
+										},
+										-- achievement_criteria
 									}),
 									q(60291, {    -- Corpse Run
 										["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
@@ -1195,6 +1204,12 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["provider"] = { "n", 167150 },	-- Rathan
 										["coord"] = { 55.1, 68.8, MALDRAXXUS },
 										["cost"] = { { "i", 183717, 1 }, },	-- 1x Bindings of Wellbeing
+										["g"] = {
+											header(HEADERS.Quest, 61637, {	-- Triggered after recruiting Unity
+												["questID"] = 58412,
+												-- achievement_criteria
+											}),
+										},
 									}),
 								}),
 								n(REWARDS, {
@@ -1356,7 +1371,6 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, bubbleDown({ ["customCollect"] = "
 				q(57854),	-- Triggered after recruiting Sabrina
 				q(57857),	-- Triggered after recruiting Toothpick
 				q(57612),	-- Triggered after recruiting The Professor
-				q(58412),	-- Triggered after recruiting Unity
 
 			-- Stitching Table Abomination 'Upgrades'
 				q(62575),	-- Crafted Armor Plating at Abominable Stitching Table
@@ -1397,7 +1411,6 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, bubbleDown({ ["customCollect"] = "
 			q(62573),	-- Abomination level 3 sitching Chef hat/Sticky Cat.
 			q(61512),	-- Completing Something Old, Something Used first time. Confirmed first time 30.09.2021
 			q(63099),	-- Opening "Bag of Potions" (itemID 184589) from Atticus (spellID 346867)
-			q(62535),	-- Triggered when completing 'Corspe Run' for the first time
 			q(60873),	-- Buying Bag of Sin Stones (180442) from Atticus
 			q(62988),	-- digging with Chordy in Revendreth
 			q(64666),	-- Completing Baker's Dozen (59043) (next week's quest rewarded Tomalin's Seasoning Crystal (181809))
