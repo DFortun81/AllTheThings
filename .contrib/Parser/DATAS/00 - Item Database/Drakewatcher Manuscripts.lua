@@ -360,11 +360,13 @@ i(208106, 77259);	-- Winding Slitherdrake: Visage of the Infinite
 ------------------
 -- PATCH 10.1.7 --
 ------------------
+i(208859, 77876);	-- Cliffside Wylderdrake: Day of the Dead Armor
 i(196967, 69167);	-- Cliffside Wylderdrake: Gold and White Armor
 i(197095, 69296);	-- Highland Drake: Gold and White Armor
 i(208858, 77875);	-- Highland Drake: Pirates' Day Armor
 i(208742, 77774);	-- Renewed Proto-Drake: Brewfest Armor
 i(197349, 69550);	-- Renewed Proto-Drake: Gold and White Armor
+i(208680, 77725);	-- Windborne Velocidrake: Hallow's End Armor
 i(197582, 69786);	-- Windborne Velocidrake: White and Pink Armor
 i(203306, 73794);	-- Winding Slitherdrake: Horned Brow
 i(203336, 73826);	-- Winding Slitherdrake: Paired Horns
@@ -373,9 +375,6 @@ i(203298, 73786);	-- Winding Slitherdrake: White and Gold Armor
 i(203355, 73846);	-- Winding Slitherdrake: Yellow Scales
 -- Special -- [Blizzard Combined all 5 Above into one item.. That gives 5 QuestIDs.. Hijacking One for tracking]
 i(208200, 69167);	-- Dragon Isles Drakes: Gilded Armor
--- NYI --
-i(208859, 77876);	-- Cliffside Wylderdrake: Day of the Dead Armor
-i(208680, 77725);	-- Windborne Velocidrake: Hallow's End Armor
 
 ------------------
 -- PATCH 10.2.0 --
