@@ -169,7 +169,7 @@ local DefaultFields = {
 		return t.f
 	end,
 	["iconPath"] = function(t)
-		return t.icon
+		return rawget(t, "icon")
 	end,
 	["creatureID"] = function(t)	-- TODO: Do something about this, it's silly.
 		return t.npcID;
