@@ -654,13 +654,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							applyevent(EVENTS.NOBLEGARDEN, q(63719, {	-- Temel's Egg
 								["cost"] = { { "i", 185682, 1 } },	-- Temel's Egg
 							})),
-							applyevent(EVENTS.HALLOWS_END, q(64546, {	-- Visions of Sire Denathrius
-								["provider"] = { "n", 180458 },	-- Vision of Sire Denathrius
-								["repeatable"] = true,	-- probably yearly, Blizzard API says it's daily, in practice it unflaggs right after completion
-								["g"] = {
-									i(181442),	-- Vision of Sire Denathrius
-								},
-							})),
 							q(62146),	-- A Little More Comfortable
 							q(62130),	-- A Quiet Moment
 							q(62126),	-- Animal Rescue
@@ -2240,9 +2233,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										["cost"] = { { "c", ANIMA, 25 } },
 										["questID"] = 61457,
 									}),
-									applyevent(EVENTS.HALLOWS_END, i(187133, {	-- Bewitching Little Hat
-										["cost"] = { { "c", 1820, 25 } },	-- 25x Infused Ruby
-									})),
 									i(181517, {	-- Building: Dredger Pool (EC!)
 										["cost"] = { { "c", ANIMA, 100 } },
 										["questID"] = 61493,
@@ -2470,7 +2460,6 @@ root(ROOTS.HiddenQuestTriggers, {
 			--q(61941),	-- Maybe Etiquette?
 			q(61926),	-- Maybe Revendreth Etiquette?
 			q(63353),	-- Triggered after turning in Red Noggin Candle as criteria for Rendle's Big Day
-			q(61458),	-- After using [Visions of Sire Denathrius] in Ember Court
 			q(61414),	-- Faulty Fireworks (+Safe)
 
 		-- Baroness Vashj Decrees

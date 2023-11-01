@@ -2437,6 +2437,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29430, {	-- A Friend in Need (Alliance)
 			["qg"] = 51934,	-- Gretchen Fenlow
 			["coord"] = { 32.3, 50.9, ELWYNN_FOREST },
+			["maps"] = { STORMWIND_CITY },
 			["timeline"] = { "added 4.0.1" },
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
@@ -2445,6 +2446,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(29431, {	-- A Friend in Need (Horde)
 			["qg"] = 53763,	-- Candace Fenlow
 			["coord"] = { 62.4, 66.7, TIRISFAL_GLADES },
+			["maps"] = { ORGRIMMAR },
 			["timeline"] = { "added 4.0.1" },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
@@ -3536,6 +3538,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 		}),
+		q(64546,	-- Visions of Sire Denathrius
+		bubbleDownSelf({
+			["timeline"] = { ADDED_9_1_0 },
+			["customCollect"] = "SL_COV_VEN",
+		},{
+			["description"] = "Speak with Theotar within The Ember Court scenario to spawn the 'Vision of Sire Denathrius'. During the final Tribute stage, accept the quest to receive the permanent unlock for your Ember Court.",
+			["crs"] = {
+				165196,	-- Theotar (Inside Ember Court)
+				164966,	-- Temel <The Party Herald> (with a hat)
+			},
+			["coords"] = {
+				{ 28.0, 43.0, REVENDRETH },	-- with hat, outside Sinfall
+			},
+			["provider"] = { "n", 180458 },	-- Vision of Sire Denathrius
+			["repeatable"] = true,	-- probably yearly, Blizzard API says it's daily, in practice it unflaggs right after completion
+			["maps"] = { 1644 },	-- The Ember Court
+			["groups"] = {
+				i(181442, {	-- Vision of Sire Denathrius
+					["questID"] = 61458,
+				}),
+			},
+		})),
 		q(76075, {	-- A Ghostly Message
 			["providers"] = {
 				{ "n", 53869 },	-- Orphan Matron Seacole (A)
@@ -4898,6 +4922,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = PET_VENDOR_GROUPS,
 		}),
+		n(164966,	-- Temel <The Party Herald> (with a hat)
+		bubbleDownSelf({["timeline"] = { ADDED_9_1_0 }},{
+			["coords"] = {
+				{ 28.0, 43.0, REVENDRETH },	-- with hat, outside Sinfall
+				{ 58.8, 80.0, SINFALL_REACHES },	-- without hat
+			},
+			["crs"] = { 172531 },	-- Temel <The Party Herald> (with no hat - combining these because they sell the same stuff)
+			["groups"] = {
+				i(187133, {	-- Bewitching Little Hat
+					["cost"] = { { "c", 1820, 25 } },	-- 25x Infused Ruby
+				}),
+			},
+		})),
 		n(52497, {	-- Spanky <Mask Vendor>
 			["coord"] = { 31.8, 50.0, ELWYNN_FOREST },
 			["timeline"] = { "added 4.2.2.14545" },
