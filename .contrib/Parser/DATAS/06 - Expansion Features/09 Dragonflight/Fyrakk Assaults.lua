@@ -137,6 +137,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 203520 },	-- Stellagosa
 					["coord"] = { 57.9, 34.5, THE_AZURE_SPAN },
 				}),
+				q(75376, {	-- Suffuse, Reuse, Recycle
+					["provider"] = { "n", 203522 },	-- Archmage Khadgar
+					["coord"] = { 58.4, 34.5, THE_AZURE_SPAN },
+				}),
 				q(75374, {	-- To Defend the Span
 					["provider"] = { "n", 203603 },	-- Brena
 					["coord"] = { 58.6, 34.3, THE_AZURE_SPAN },

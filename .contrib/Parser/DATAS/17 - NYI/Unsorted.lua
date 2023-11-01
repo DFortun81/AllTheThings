@@ -1004,7 +1004,6 @@ root(ROOTS.Unsorted, {
 				q(75338),	-- Lavermix
 				q(75341),	--
 				q(75342),	-- Kronkapace
-				q(75376, {["_drop"] = { "g" },}),	-- Suffuse, Reuse, Recycle
 				q(75389),	--
 				q(75429),	--
 				q(75442),	--
