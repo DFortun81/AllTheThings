@@ -394,8 +394,8 @@ namespace ATT
         /// A Dictionary of key-ID types and the respective objects which contain the specified key which will be captured and output during Debug runs</para>
         /// NOTE: Each key name/value may contain multiple sets of data due to duplication of individual listings
         /// </summary>
-        public static Dictionary<string, SortedDictionary<decimal, List<IDictionary<string, object>>>> DebugDBs { get; }
-                = new Dictionary<string, SortedDictionary<decimal, List<IDictionary<string, object>>>>();
+        public static Dictionary<string, SortedDictionary<decimal, IDictionary<string, object>>> DebugDBs { get; }
+                = new Dictionary<string, SortedDictionary<decimal, IDictionary<string, object>>>();
 
         /// <summary>
         /// A collection of named format strings for logging messages
@@ -563,7 +563,7 @@ namespace ATT
             {
                 foreach (string key in configDebugDBs)
                 {
-                    DebugDBs[key] = new SortedDictionary<decimal, List<IDictionary<string, object>>>();
+                    DebugDBs[key] = new SortedDictionary<decimal, IDictionary<string, object>>();
                 }
             }
             ImportConfiguredObjectTypes(Config["ObjectTypes"]);
@@ -681,6 +681,24 @@ namespace ATT
 
             if (MergeItemData)
             {
+                if (DebugMode)
+                {
+                    // Capture references to specified Debug DB keys for Debug output
+                    foreach (KeyValuePair<string, SortedDictionary<decimal, IDictionary<string, object>>> dbKeyDatas in DebugDBs)
+                    {
+                        if (data.TryGetValue(dbKeyDatas.Key, out decimal keyValue) && keyValue > 0)
+                        {
+                            if (!dbKeyDatas.Value.TryGetValue(keyValue, out IDictionary<string, object> keyValueValues))
+                                dbKeyDatas.Value[keyValue] = keyValueValues = new Dictionary<string, object>();
+
+                            //Dictionary<string, object> clone = new Dictionary<string, object>(data);
+                            //clone.Remove("g");
+                            Objects.Merge(keyValueValues, data);
+                            keyValueValues.Remove("g");
+                        }
+                    }
+                }
+
                 if (!DataValidation(data, ref modID, ref minLevel, ref awp))
                     return false;
             }
@@ -727,27 +745,6 @@ namespace ATT
                 CurrentParentGroup = previousParent;
                 DifficultyRoot = previousDifficultyRoot;
                 NestedDifficultyID = previousDifficulty;
-            }
-
-            if (!MergeItemData)
-            {
-                if (DebugMode)
-                {
-                    // Capture references to specified Debug DB keys for Debug output
-                    foreach (KeyValuePair<string, SortedDictionary<decimal, List<IDictionary<string, object>>>> dbKeyDatas in DebugDBs)
-                    {
-                        if (data.TryGetValue(dbKeyDatas.Key, out decimal keyValue) && keyValue > 0)
-                        {
-                            if (!dbKeyDatas.Value.TryGetValue(keyValue, out List<IDictionary<string, object>> keyValueValues))
-                                dbKeyDatas.Value[keyValue] = keyValueValues = new List<IDictionary<string, object>>();
-
-                            Dictionary<string, object> clone = new Dictionary<string, object>(data);
-                            clone.Remove("g");
-
-                            keyValueValues.Add(clone);
-                        }
-                    }
-                }
             }
 
             return true;
@@ -4924,7 +4921,7 @@ namespace ATT
                         Objects.ExportDB(debugFolder.FullName);
 
                         // Export custom Debug DB data to the Debugging folder. (as JSON for simplicity)
-                        foreach (KeyValuePair<string, SortedDictionary<decimal, List<IDictionary<string, object>>>> dbKeyDatas in DebugDBs)
+                        foreach (KeyValuePair<string, SortedDictionary<decimal, IDictionary<string, object>>> dbKeyDatas in DebugDBs)
                         {
                             File.WriteAllText(Path.Combine(debugFolder.FullName, dbKeyDatas.Key + "_DebugDB.json"), ToJSON(dbKeyDatas.Value), Encoding.UTF8);
                         }
