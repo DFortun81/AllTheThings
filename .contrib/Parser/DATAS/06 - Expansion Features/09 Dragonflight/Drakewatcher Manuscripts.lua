@@ -1044,12 +1044,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 	})),
 	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 		i(208200),	-- Dragon Isles Drakes: Gilded Armor (DM!)
-		header(HEADERS.Item, 194521, sharedData({	-- Cliffside Wylderdrake
-			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["timeline"] = { CREATED_10_1_7 },
-		}, {
-			i(208859),	-- Cliffside Wylderdrake: Day of the Dead Armor
-		})),
+		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
+			applyevent(EVENTS.PIRATES_DAY, i(208859)),	-- Cliffside Wylderdrake: Day of the Dead Armor
+		}),
 		header(HEADERS.Item, 194705, {	-- Highland Drake
 			applyevent(EVENTS.PIRATES_DAY, i(208858)),	-- Highland Drake: Pirates' Day Armor (DM!)
 		}),

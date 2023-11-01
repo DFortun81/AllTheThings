@@ -197,7 +197,6 @@ root(ROOTS.NeverImplemented, {
 			i(206283),	-- Vagabond's Deep Cape
 			i(206284),	-- Vagabond's Cloudy Cape
 			i(206285),	-- Vagabond's Grassy Cape
-			i(206287),	-- Vagabond's Sepia Cape
 			i(206289),	-- Vagabond's Aquatic Hood
 			i(206290),	-- Vagabond's Plum Hood
 			i(206291),	-- Vagabond's Faded Hood
@@ -206,7 +205,6 @@ root(ROOTS.NeverImplemented, {
 			i(206294),	-- Vagabond's Deep Hood
 			i(206295),	-- Vagabond's Cloudy Hood
 			i(206296),	-- Vagabond's Grassy Hood
-			i(206298),	-- Vagabond's Sepia Hood
 			i(206299),	-- Wanderer's Aquatic Scarf
 			i(206301),	-- Wanderer's Plum Scarf
 			i(206302),	-- Wanderer's Faded Scarf
@@ -215,7 +213,6 @@ root(ROOTS.NeverImplemented, {
 			i(206305),	-- Wanderer's Deep Scarf
 			i(206306),	-- Wanderer's Cloudy Scarf
 			i(206307),	-- Wanderer's Grassy Scarf
-			i(206309),	-- Wanderer's Sepia Scarf
 			i(206311),	-- Wanderer's Aquatic Cloak
 			i(206312),	-- Wanderer's Plum Cloak
 			i(206313),	-- Wanderer's Faded Cloak
@@ -224,7 +221,6 @@ root(ROOTS.NeverImplemented, {
 			i(206316),	-- Wanderer's Deep Cloak
 			i(206317),	-- Wanderer's Cloudy Cloak
 			i(206318),	-- Wanderer's Grassy Cloak
-			i(206320),	-- Wanderer's Sepia Cloak
 			i(206322),	-- Ensemble: Vagabond's Aquatic Threads
 			i(206323),	-- Ensemble: Vagabond's Plum Threads
 			i(206324),	-- Ensemble: Vagabond's Faded Threads

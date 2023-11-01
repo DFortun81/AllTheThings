@@ -5565,8 +5565,6 @@ root(ROOTS.NeverImplemented, {
 	i(156254),	-- Leggings of the Tortured Earth
 	i(156460),	-- Mimiron's Repeater
 	i(156469),	-- Pillar of Fortitude
-	i(156253),	-- Shoulders of Misfortune
-	i(156251),	-- Shroud of Alteration
 });
 --[[
 -- Post Processors

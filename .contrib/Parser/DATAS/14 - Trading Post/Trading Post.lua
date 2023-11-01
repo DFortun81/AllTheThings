@@ -71,7 +71,11 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			filter(MOUNTS, {
 			}),
 			filter(COSMETIC, {
-			--	3itemshere
+				i(208943, {	-- Arsenal: Cosmic Weapons Cache
+					i(208941),	-- M’thorus, Dagger of the Grand Design
+					i(208959),	-- Taesavir, Sword of the Grand Design
+					i(208940),	-- Voidsong, Stave of the Harbinger
+				}),
 			}),
 		}),
 		n(UNAVAILABLE, {
@@ -133,27 +137,27 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 			filter(COSMETIC, {
-				i(, {	-- Acolyte’s Etched Warhammer
+				i(190832, {	-- Acolyte’s Etched Warhammer
 					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
 				}),
 				i(206331, {	-- Ensemble: Vagabond’s Sepia Threads
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 					["g"] = {
-					--	i(189875),	-- Corrupted Runelord's Sash
-					--	i(189876),	-- Corrupted Runelord's Handguards
+						i(206287),	-- Vagabond's Sepia Cape
+						i(206298),	-- Vagabond's Sepia Hood
 					},
 				}),
 				i(206342, {	-- Ensemble: Wanderer’s Sepia Trappings
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 					["g"] = {
-					--	i(189875),	-- Corrupted Runelord's Sash
-					--	i(189876),	-- Corrupted Runelord's Handguards
+						i(206309),	-- Wanderer's Sepia Scarf
+						i(206320),	-- Wanderer's Sepia Cloak
 					},
 				}),
-				i(, {	-- Fang of the Mountain
+				i(190217, {	-- Fang of the Mountain
 					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
 				}),
-				i(, {	-- Gnomish Liquid Transfer Apparatus
+				i(190065, {	-- Gnomish Liquid Transfer Apparatus
 					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
 				}),
 				i(208673, {	-- Instruments of the Alluring Call
@@ -174,22 +178,22 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(208657),	-- Chains of the Alluring Call
 					},
 				}),
-				i(, {	-- Krokul Guisame
+				i(190833, {	-- Krokul Guisame
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
 				}),
 				i(190147, {	-- Longbow of the Twisted Grove
 					["cost"] = { { "c", TRADERS_TENDER, 500 }, },
 				}),
-				i(, {	-- Loyal Blademaster’s Greatsword
+				i(190824, {	-- Loyal Blademaster’s Greatsword
 					["cost"] = { { "c", TRADERS_TENDER, 225 }, },
 				}),
 				i(208786, {	-- Luxurious Niffen Hat
 					["cost"] = { { "c", TRADERS_TENDER, 200 }, },
 				}),
-				i(, {	-- Maw of Rage
+				i(190843, {	-- Maw of Rage
 					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
 				}),
-				i(, {	-- Mechanized Skullcrusher
+				i(190813, {	-- Mechanized Skullcrusher
 					["cost"] = { { "c", TRADERS_TENDER, 150 }, },
 				}),
 				i(208671, {	-- Possessed Watcher Arsenal
@@ -210,7 +214,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(208654),	-- Possessed Watcher Keg
 					},
 				}),
-				i(, {	-- Razor-Edged Kukri
+				i(190831, {	-- Razor-Edged Kukri
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
 				}),
 				i(190910, { -- Ruby Felfire Bulwark
@@ -240,7 +244,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190220, {	-- Standard of the Guardian
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 				}),
-				i(, {	-- Tidecaller’s Cinch
+				i(190806, {	-- Tidecaller’s Cinch
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
 				}),
 			}),
@@ -470,9 +474,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(190885),	-- Wanderer's Snowy Scarf
 					},
 				}),
-				i(190217, {	-- Fang of the Mountain
-					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
-				}),
 				i(190856, {	-- Fetid Bouquet
 					["cost"] = { { "c", TRADERS_TENDER, 100 }, },
 				}),
@@ -487,9 +488,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(202248, {	-- Frozen Shadow
 					["cost"] = { { "c", TRADERS_TENDER, 400 }, },
-				}),
-				i(190065, {	-- Gnomish Liquid Transfer Apparatus
-					["cost"] = { { "c", TRADERS_TENDER, 75 }, },
 				}),
 				i(190063, {	-- Greatcloak of the Virtuous Protector
 					["cost"] = { { "c", TRADERS_TENDER, 50 }, },

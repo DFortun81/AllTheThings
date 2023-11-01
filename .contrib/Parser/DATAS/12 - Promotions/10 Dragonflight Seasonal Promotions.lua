@@ -139,6 +139,16 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 8, 2024.",
 				["timeline"] = { "added 10.1.7.51886", "removed 10.2.0.99999" },
 			}),
+			pet(2623, {	-- Dottie (PET!)
+				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between November 7th, 10:00 a.m. & November 14th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { "added 10.2.0" }, -- "removed 10.1.0.49570" },
+			--	["u"] = REMOVED_FROM_GAME,	-- 18th July 2023
+			}),
+			i(72575, {	-- White Riding Camel (MOUNT!)
+				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between November 7th, 10:00 a.m. & November 14th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { "added 10.2.0" }, -- "removed 10.1.0.49570" },
+			--	["u"] = REMOVED_FROM_GAME,	-- 18th July 2023
+			}),
 		},
 	}),
 });
