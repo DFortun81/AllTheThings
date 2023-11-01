@@ -941,9 +941,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			header(HEADERS.Item, 193484, {	-- Pilot
 				q(70062, {	-- Some Call Me Bug Catcher
 					["sourceQuests"] = {
-						DF_ACCOUNT_CAMPAIGN_QUEST,
 						70220,	-- Shady Sanctuary
+						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 186503 },	-- Gracus
 					["coord"] = { 30.7, 58.0, OHNAHRAN_PLAINS },	-- Is Moving
 				}),
