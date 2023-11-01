@@ -305,13 +305,21 @@ namespace ATT
                     foreach (object listObj in list)
                     {
                         var config = i <= max ? _list[i] : null;
-                        if (config == null)
+                        if (config == null || config._val != null)
                         {
+                            if (listObj is IDictionary<string, object>)
+                            {
+                                throw new InvalidDataException("Cannot merge JSON types within Config Array data");
+                            }
                             _list.Add(new CustomConfigurationNode(listObj));
+                        }
+                        else if (listObj is IDictionary<string, object> && config._dict != null)
+                        {
+                            config.ApplyData(listObj);
                         }
                         else
                         {
-                            config.ApplyData(listObj);
+                            throw new InvalidDataException("Cannot merge JSON types within Config Array data");
                         }
                         i++;
                     }

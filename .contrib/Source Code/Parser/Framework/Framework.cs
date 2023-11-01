@@ -736,12 +736,15 @@ namespace ATT
                     // Capture references to specified Debug DB keys for Debug output
                     foreach (KeyValuePair<string, SortedDictionary<decimal, List<IDictionary<string, object>>>> dbKeyDatas in DebugDBs)
                     {
-                        if (data.TryGetValue(dbKeyDatas.Key, out decimal keyValue))
+                        if (data.TryGetValue(dbKeyDatas.Key, out decimal keyValue) && keyValue > 0)
                         {
                             if (!dbKeyDatas.Value.TryGetValue(keyValue, out List<IDictionary<string, object>> keyValueValues))
                                 dbKeyDatas.Value[keyValue] = keyValueValues = new List<IDictionary<string, object>>();
 
-                            keyValueValues.Add(data);
+                            Dictionary<string, object> clone = new Dictionary<string, object>(data);
+                            clone.Remove("g");
+
+                            keyValueValues.Add(clone);
                         }
                     }
                 }
@@ -1779,7 +1782,6 @@ namespace ATT
             Consolidate_providers(data);
             Consolidate_sourceQuests(data);
             Consolidate_altQuests(data);
-            Consolidate_ConflictingFields(data);
 
             // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
             // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
@@ -1791,6 +1793,8 @@ namespace ATT
             Items.DetermineSourceID(data);
             Objects.AssignFactionID(data);
             CheckObjectConversion(data);
+
+            Consolidate_ConflictingFields(data);
 
             //VerifyListContentOrdering(data);
 
@@ -1814,9 +1818,8 @@ namespace ATT
             if (data.TryGetValue("name", out string name))
             {
                 // Determine the Most-Significant ID Type (itemID, questID, npcID, etc)
-                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
+                if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue) && objKeyValue.TryConvert(out long id))
                 {
-                    long id = Convert.ToInt64(objKeyValue);
                     // Store the name of this object (or whatever it is) in our table.
                     if (!NAMES_BY_TYPE.TryGetValue(objectData.ObjectType, out Dictionary<long, object> names))
                     {

@@ -26,25 +26,38 @@ namespace ATT
             Framework.CurrentParseStage = ParseStage.InitializeParserConfigs;
 
 
-            // Determine if running in Debug Mode or not.
-            if (args != null && args.Length > 0)
+            try
             {
-                char[] argSplit = new[] { '=' };
-                foreach (var arg in args)
+                // Determine if running in Debug Mode or not.
+                if (args != null && args.Length > 0)
                 {
-                    if (arg == "debug") Framework.DebugMode = true;
-                    else if (arg.Contains("="))
+                    char[] argSplit = new[] { '=' };
+                    foreach (var arg in args)
                     {
-                        string[] argPieces = arg.Split(argSplit);
-                        HandleParserArgument(argPieces[0], argPieces[1]);
+                        if (arg == "debug") Framework.DebugMode = true;
+                        else if (arg.Contains("="))
+                        {
+                            string[] argPieces = arg.Split(argSplit);
+                            HandleParserArgument(argPieces[0], argPieces[1]);
+                        }
                     }
                 }
-            }
 
-            if (!Framework.HasConfig())
+                if (!Framework.HasConfig())
+                {
+                    // Ensure the Parser uses the default config if nothing is specified.
+                    Framework.InitConfigSettings("parser.config");
+
+#if DEBUG
+                    Framework.InitConfigSettings("parser.debug.config");
+#endif
+                }
+            }
+            catch(FormatException configException)
             {
-                // Ensure the Parser uses the default config if nothing is specified.
-                Framework.InitConfigSettings("parser.config");
+                Trace.WriteLine(configException);
+                Console.ReadLine();
+                return;
             }
 
             var preprocessorArray = Framework.Config["PreProcessorTags"];
