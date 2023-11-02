@@ -4,8 +4,8 @@ local app = select(2, ...);
 local L = app.L;
 
 DRAKE_MANUSCRIPTS = "Манускрипты наблюдений за драконами";
-TRACK_ACC_WIDE = app.ccColors.Account.."тслеживать на весь аккаунт|R";
-ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."Весь Аккаунт|R по умолчанию.";
+local TRACK_ACC_WIDE = app.ccColors.Account.."тслеживать на весь аккаунт|R";
+local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."Весь Аккаунт|R по умолчанию.";
 
 -- General Text
 	L.DESCRIPTION = "\"Глупцы! Вы сами нашли свою погибель! Вам никогда не понять, сколь велика сила, потревоженная вами.  Вы сражались отчаянно, чтобы проникнуть в царство Жнеца. Теперь перед вами лежит лишь один путь – путь проклятых.\"";
