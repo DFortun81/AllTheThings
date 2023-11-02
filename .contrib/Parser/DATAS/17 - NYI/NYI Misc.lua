@@ -628,7 +628,6 @@ root(ROOTS.NeverImplemented, {
 				i(194873),	-- Apprentice's Fluffed Quill
 				i(191192),	-- Assorted Parts
 				i(192078),	-- Bottled Putrescence
-				i(200638),	-- Bubblefilled Flounder [Speculated to be used in a Secret /Braghe]
 				i(191058),	-- Dilapidated Parchment: Bottom Half
 				i(191876),	-- DNT - Stonename Razorstone
 				i(191877),	-- DNT - Stonename Razorstone

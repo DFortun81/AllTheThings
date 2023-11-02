@@ -48,6 +48,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 				["cost"] = { { "i", 198047, 1 }, },	-- 1x Kul Tiran Red
 			}),
+			i(200638, {	-- Bubblefilled Flounder [Speculated to be used in a Secret /Braghe]
+				["description"] = "Found inside a secret fish bubble while dead. Wonder what its for?",
+				["coord"] = { 19.4, 36.3, THE_WAKING_SHORES },
+			}),
 		}),
 	}),
 })));
