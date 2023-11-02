@@ -1639,16 +1639,16 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(65646, {	-- Headguard of the Order
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
-						-- You get these when completing the quest
-						i(141976, {	-- Headguard of the Order
-							["timeline"] = { "added 7.0.3.22248" },
-						}),
-						i(141977, {	-- Faceguard of the Order
-							["timeline"] = { "added 7.0.3.22248" },
-						}),
-						i(141978, {	-- Helm of the Order
-							["timeline"] = { "added 7.0.3.22248" },
-						}),
+						-- You get these when completing the quest (Only when completing Horde version specifically and relogging, gg Blizz)
+						-- i(141976, {	-- Headguard of the Order
+						-- 	["timeline"] = { "added 7.0.3.22248" },
+						-- }),
+						-- i(141977, {	-- Faceguard of the Order
+						-- 	["timeline"] = { "added 7.0.3.22248" },
+						-- }),
+						-- i(141978, {	-- Helm of the Order
+						-- 	["timeline"] = { "added 7.0.3.22248" },
+						-- }),
 					},
 				}),
 				q(28466, {	-- Weapons of Darkness (Tauren)
@@ -1671,12 +1671,15 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						-- You get these when completing the quest
 						i(141976, {	-- Headguard of the Order
 							["timeline"] = { "added 7.0.3.22248" },
+							["description"] = "May need to re-login to the game to properly trigger this collected from Blizzard.",
 						}),
 						i(141977, {	-- Faceguard of the Order
 							["timeline"] = { "added 7.0.3.22248" },
+							["description"] = "May need to re-login to the game to properly trigger this collected from Blizzard.",
 						}),
 						i(141978, {	-- Helm of the Order
 							["timeline"] = { "added 7.0.3.22248" },
+							["description"] = "May need to re-login to the game to properly trigger this collected from Blizzard.",
 						}),
 					},
 				}),
