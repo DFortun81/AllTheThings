@@ -20134,6 +20134,9 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				data = app.CreateProfession(self.lastTradeSkillID);
 				app.BuildSearchResponse_IgnoreUnavailableRecipes = true;
 				NestObjects(data, app:BuildSearchResponse("requireSkill", data.requireSkill));
+				-- Profession headers use 'professionID' and don't actually convey a requirement on knowing the skill
+				-- but in a Profession window for that skill it's nice to see what that skill can craft...
+				NestObjects(data, app:BuildSearchResponse("professionID", data.requireSkill));
 				app.BuildSearchResponse_IgnoreUnavailableRecipes = nil;
 				data.indent = 0;
 				data.visible = true;
