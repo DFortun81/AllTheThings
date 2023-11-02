@@ -17980,13 +17980,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					-- Get the header chain for the group
 					nextParent = group.parent;
 
-					-- Pre-nest some groups based on their type after grabbing the parent
-					-- Achievements / Achievement / Criteria
-					if group.key == "criteriaID" and group.achievementID then
-						-- print("pre-nest achieve",group.criteriaID, group.achievementID)
-						group = app.CreateAchievement(group.achievementID, CreateHeaderData(group));
-					end
-
 					-- Building the header chain for each mapped Thing
 					topHeader = nil;
 					while nextParent do
