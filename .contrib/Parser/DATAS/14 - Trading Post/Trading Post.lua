@@ -116,7 +116,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	n(VENDORS, {
 		n(AVAILABLE, {
 			filter(MOUNTS, {
-				i(76889, {	-- Spectral Gryphon 
+				i(76889, {	-- Spectral Gryphon
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 				}),
 				i(76902, {	-- Spectral Wind Rider
@@ -237,6 +237,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(208639),	-- Savage Champion's Tusks
 						i(208640),	-- Savage Champion's Belt
 					},
+				}),
+				i(190829, {	-- Shawl of Flowing Magic
+					["cost"] = { { "c", TRADERS_TENDER, 50 }, },
 				}),
 				i(190557, {	-- Sinister Fel Staff
 					["cost"] = { { "c", TRADERS_TENDER, 175 }, },
