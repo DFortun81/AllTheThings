@@ -16691,6 +16691,12 @@ function app:GetDataCache()
 				icon = app.asset("Category_PetJournal")
 			}),
 
+			-- Character Unlocks
+			app.CreateDynamicHeader("characterUnlock", {
+				name = CHARACTER.." "..UNLOCK.."s",
+				icon = app.asset("Category_ItemSets")
+			}),
+
 			-- Conduits
 			app.CreateDynamicHeader("conduitID", SimpleNPCGroup(-981, {suffix=EXPANSION_NAME8})),
 

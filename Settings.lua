@@ -59,6 +59,7 @@ local Things = {
 	"Achievements",
 	"AzeriteEssences",
 	"BattlePets",
+	"CharacterUnlocks",
 	"Conduits",
 	"DrakewatcherManuscripts",
 	"FlightPaths",
@@ -107,6 +108,7 @@ local GeneralSettingsBase = {
 		["Thing:Achievements"] = true,
 		["Thing:AzeriteEssences"] = true,
 		["Thing:BattlePets"] = true,
+		["Thing:CharacterUnlocks"] = true,
 		["Thing:Conduits"] = true,
 		["Thing:DrakewatcherManuscripts"] = true,
 		["Thing:FlightPaths"] = true,
@@ -755,6 +757,7 @@ ATTSettingsObjectMixin = {
 		else
 			self:SetPoint("TOPLEFT", other, "BOTTOMLEFT", 0, 4)
 		end
+		return self
 	end,
 	-- Performs SetPoint anchoring against the 'other' frame to align this Checkbox after it (right)
 	AlignAfter = function(self, other, add)
@@ -766,6 +769,7 @@ ATTSettingsObjectMixin = {
 		else
 			self:SetPoint("LEFT", other, "RIGHT", -4 + add, 0)
 		end
+		return self
 	end,
 	-- Disables, checks, fades the checkbox
 	OnRefreshCheckedDisabled = function(self)
@@ -1752,38 +1756,38 @@ end)
 checkboxMainOnlyMode:SetATTTooltip(L["MAIN_ONLY_MODE_TOOLTIP"])
 checkboxMainOnlyMode:AlignBelow(checkboxTransmog, 1)
 
-local accwideCheckboxHeirlooms = child:CreateForcedAccountWideCheckbox()
-accwideCheckboxHeirlooms:AlignBelow(checkboxMainOnlyMode, accwideCheckboxTransmog)
+local accwideCheckboxHeirlooms =
+child:CreateForcedAccountWideCheckbox()
+	:AlignBelow(checkboxMainOnlyMode, accwideCheckboxTransmog)
+local checkboxHeirlooms =
+child:CreateTrackingCheckbox("HEIRLOOMS", "Heirlooms")
+	:AlignAfter(accwideCheckboxHeirlooms)
+child:CreateTrackingCheckbox("HEIRLOOMS_UPGRADES", "HeirloomUpgrades", "Heirlooms")
+	:AlignAfter(checkboxHeirlooms)
 
-local checkboxHeirlooms = child:CreateTrackingCheckbox("HEIRLOOMS", "Heirlooms")
-checkboxHeirlooms:AlignAfter(accwideCheckboxHeirlooms)
+local accwideCheckboxIllusions =
+child:CreateForcedAccountWideCheckbox()
+	:AlignBelow(accwideCheckboxHeirlooms)
+child:CreateTrackingCheckbox("ILLUSIONS", "Illusions")
+	:AlignAfter(accwideCheckboxIllusions)
 
-local checkboxHeirloomUpgrades = child:CreateTrackingCheckbox("HEIRLOOMS_UPGRADES", "HeirloomUpgrades", "Heirlooms")
-checkboxHeirloomUpgrades:AlignAfter(checkboxHeirlooms)
+local accwideCheckboxMounts =
+child:CreateForcedAccountWideCheckbox()
+	:AlignBelow(accwideCheckboxIllusions)
+child:CreateTrackingCheckbox("MOUNTS", "Mounts")
+	:AlignAfter(accwideCheckboxMounts)
 
-local accwideCheckboxIllusions = child:CreateForcedAccountWideCheckbox()
-accwideCheckboxIllusions:AlignBelow(accwideCheckboxHeirlooms)
+local accwideCheckboxBattlePets =
+child:CreateForcedAccountWideCheckbox()
+	:AlignBelow(accwideCheckboxMounts)
+child:CreateTrackingCheckbox("BATTLE_PETS", "BattlePets")
+	:AlignAfter(accwideCheckboxBattlePets)
 
-local checkboxIllusions = child:CreateTrackingCheckbox("ILLUSIONS", "Illusions")
-checkboxIllusions:AlignAfter(accwideCheckboxIllusions)
-
-local accwideCheckboxMounts = child:CreateForcedAccountWideCheckbox()
-accwideCheckboxMounts:AlignBelow(accwideCheckboxIllusions)
-
-local checkboxMounts = child:CreateTrackingCheckbox("MOUNTS", "Mounts")
-checkboxMounts:AlignAfter(accwideCheckboxMounts)
-
-local accwideCheckboxBattlePets = child:CreateForcedAccountWideCheckbox()
-accwideCheckboxBattlePets:AlignBelow(accwideCheckboxMounts)
-
-local checkboxBattlePets = child:CreateTrackingCheckbox("BATTLE_PETS", "BattlePets")
-checkboxBattlePets:AlignAfter(accwideCheckboxBattlePets)
-
-local accwideCheckboxToys = child:CreateForcedAccountWideCheckbox()
-accwideCheckboxToys:AlignBelow(accwideCheckboxBattlePets)
-
-local checkboxToys = child:CreateTrackingCheckbox("TOYS", "Toys")
-checkboxToys:AlignAfter(accwideCheckboxToys)
+local accwideCheckboxToys =
+child:CreateForcedAccountWideCheckbox()
+	:AlignBelow(accwideCheckboxBattlePets)
+child:CreateTrackingCheckbox("TOYS", "Toys")
+	:AlignAfter(accwideCheckboxToys)
 
 local headerGeneralThings = child:CreateHeaderLabel(L["GENERAL_THINGS_LABEL"])
 headerGeneralThings:SetPoint("LEFT", headerMode, 0, 0)
@@ -1807,50 +1811,57 @@ headerGeneralThings.OnRefresh = function(self)
     end
 end
 
-local accwideCheckboxAchievements = child:CreateAccountWideCheckbox("ACHIEVEMENTS", "Achievements")
-accwideCheckboxAchievements:SetPoint("TOPLEFT", headerGeneralThings, "BOTTOMLEFT", -2, 0)
+local accwideCheckboxAchievements =
+child:CreateAccountWideCheckbox("ACHIEVEMENTS", "Achievements")
+	:AlignBelow(headerGeneralThings, -0.25)
+child:CreateTrackingCheckbox("ACHIEVEMENTS", "Achievements")
+	:AlignAfter(accwideCheckboxAchievements)
 
-local checkboxAchievements = child:CreateTrackingCheckbox("ACHIEVEMENTS", "Achievements")
-checkboxAchievements:AlignAfter(accwideCheckboxAchievements)
+local accwideCheckboxCharacterUnlocks =
+child:CreateAccountWideCheckbox("CHARACTERUNLOCKS", "CharacterUnlocks")
+	:AlignBelow(accwideCheckboxAchievements)
+child:CreateTrackingCheckbox("CHARACTERUNLOCKS", "CharacterUnlocks")
+	:AlignAfter(accwideCheckboxCharacterUnlocks)
 
-local accwideCheckboxFlightPaths = child:CreateAccountWideCheckbox("FLIGHT_PATHS", "FlightPaths")
-accwideCheckboxFlightPaths:AlignBelow(accwideCheckboxAchievements)
+local accwideCheckboxFlightPaths =
+child:CreateAccountWideCheckbox("FLIGHT_PATHS", "FlightPaths")
+	:AlignBelow(accwideCheckboxCharacterUnlocks)
+child:CreateTrackingCheckbox("FLIGHT_PATHS", "FlightPaths")
+	:AlignAfter(accwideCheckboxFlightPaths)
 
-local checkboxFlightPaths = child:CreateTrackingCheckbox("FLIGHT_PATHS", "FlightPaths")
-checkboxFlightPaths:AlignAfter(accwideCheckboxFlightPaths)
+local accwideCheckboxFollowers =
+child:CreateAccountWideCheckbox("FOLLOWERS", "Followers")
+	:AlignBelow(accwideCheckboxFlightPaths)
+child:CreateTrackingCheckbox("FOLLOWERS", "Followers")
+	:AlignAfter(accwideCheckboxFollowers)
 
-local accwideCheckboxFollowers = child:CreateAccountWideCheckbox("FOLLOWERS", "Followers")
-accwideCheckboxFollowers:AlignBelow(accwideCheckboxFlightPaths)
+local accwideCheckboxQuests =
+child:CreateAccountWideCheckbox("QUESTS", "Quests")
+	:AlignBelow(accwideCheckboxFollowers)
+local checkboxQuests =
+child:CreateTrackingCheckbox("QUESTS", "Quests")
+	:AlignAfter(accwideCheckboxQuests)
+child:CreateTrackingCheckbox("QUESTS_LOCKED", "QuestsLocked")
+	:AlignAfter(checkboxQuests)
 
-local checkboxFollowers = child:CreateTrackingCheckbox("FOLLOWERS", "Followers")
-checkboxFollowers:AlignAfter(accwideCheckboxFollowers)
+local accwideCheckboxRecipes =
+child:CreateAccountWideCheckbox("RECIPES", "Recipes")
+	:AlignBelow(accwideCheckboxQuests)
+child:CreateTrackingCheckbox("RECIPES", "Recipes")
+	:AlignAfter(accwideCheckboxRecipes)
 
-local accwideCheckboxQuests = child:CreateAccountWideCheckbox("QUESTS", "Quests")
-accwideCheckboxQuests:AlignBelow(accwideCheckboxFollowers)
+local accwideCheckboxReputations =
+child:CreateAccountWideCheckbox("REPUTATIONS", "Reputations")
+	:AlignBelow(accwideCheckboxRecipes)
+child:CreateTrackingCheckbox("REPUTATIONS", "Reputations")
+	:AlignAfter(accwideCheckboxReputations)
 
-local checkboxQuests = child:CreateTrackingCheckbox("QUESTS", "Quests")
-checkboxQuests:AlignAfter(accwideCheckboxQuests)
-
-local checkboxLockedQuests = child:CreateTrackingCheckbox("QUESTS_LOCKED", "QuestsLocked")
-checkboxLockedQuests:AlignAfter(checkboxQuests)
-
-local accwideCheckboxRecipes = child:CreateAccountWideCheckbox("RECIPES", "Recipes")
-accwideCheckboxRecipes:AlignBelow(accwideCheckboxQuests)
-
-local checkboxRecipes = child:CreateTrackingCheckbox("RECIPES", "Recipes")
-checkboxRecipes:AlignAfter(accwideCheckboxRecipes)
-
-local accwideCheckboxReputations = child:CreateAccountWideCheckbox("REPUTATIONS", "Reputations")
-accwideCheckboxReputations:AlignBelow(accwideCheckboxRecipes)
-
-local checkboxReputations = child:CreateTrackingCheckbox("REPUTATIONS", "Reputations")
-checkboxReputations:AlignAfter(accwideCheckboxReputations)
-
-local accwideCheckboxTitles = child:CreateAccountWideCheckbox("TITLES", "Titles")
-accwideCheckboxTitles:AlignBelow(accwideCheckboxReputations)
-
-local checkboxTitles = child:CreateTrackingCheckbox("TITLES", "Titles")
-checkboxTitles:AlignAfter(accwideCheckboxTitles)
+local accwideCheckboxTitles =
+child:CreateAccountWideCheckbox("TITLES", "Titles")
+	:AlignBelow(accwideCheckboxReputations)
+local checkboxTitles =
+child:CreateTrackingCheckbox("TITLES", "Titles")
+	:AlignAfter(accwideCheckboxTitles)
 
 local headerExpansionThings = child:CreateHeaderLabel(L["EXPANSION_THINGS_LABEL"])
 headerExpansionThings:SetPoint("LEFT", headerMode, 0, 0)
@@ -1863,35 +1874,36 @@ headerExpansionThings.OnRefresh = function(self)
 	end
 end
 
-local accwideCheckboxMusicRollsAndSelfieFilters = child:CreateAccountWideCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
-accwideCheckboxMusicRollsAndSelfieFilters:SetPoint("TOPLEFT", headerExpansionThings, "BOTTOMLEFT", -2, 0)
+local accwideCheckboxMusicRollsAndSelfieFilters =
+child:CreateAccountWideCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
+	:AlignBelow(headerExpansionThings, -0.25)
+child:CreateTrackingCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
+	:AlignAfter(accwideCheckboxMusicRollsAndSelfieFilters)
 
-local checkboxMusicRollsAndSelfieFilters = child:CreateTrackingCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
-checkboxMusicRollsAndSelfieFilters:AlignAfter(accwideCheckboxMusicRollsAndSelfieFilters)
+local accwideCheckboxAzeriteEssences =
+child:CreateAccountWideCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
+	:AlignBelow(accwideCheckboxMusicRollsAndSelfieFilters)
+child:CreateTrackingCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
+	:AlignAfter(accwideCheckboxAzeriteEssences)
 
-local accwideCheckboxAzeriteEssences = child:CreateAccountWideCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
-accwideCheckboxAzeriteEssences:AlignBelow(accwideCheckboxMusicRollsAndSelfieFilters)
+local accwideCheckboxConduits =
+child:CreateAccountWideCheckbox("SOULBINDCONDUITS", "Conduits")
+	:AlignBelow(accwideCheckboxAzeriteEssences)
+child:CreateTrackingCheckbox("SOULBINDCONDUITS", "Conduits")
+	:AlignAfter(accwideCheckboxConduits)
 
-local checkboxAzeriteEssences = child:CreateTrackingCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
-checkboxAzeriteEssences:AlignAfter(accwideCheckboxAzeriteEssences)
+local accwideCheckboxRunecarvingPowers =
+child:CreateForcedAccountWideCheckbox()
+	:AlignBelow(accwideCheckboxConduits)
+child:CreateTrackingCheckbox("RUNEFORGELEGENDARIES", "RuneforgeLegendaries")
+	:AlignAfter(accwideCheckboxRunecarvingPowers)
 
-local accwideCheckboxConduits = child:CreateAccountWideCheckbox("SOULBINDCONDUITS", "Conduits")
-accwideCheckboxConduits:AlignBelow(accwideCheckboxAzeriteEssences)
-
-local checkboxConduits = child:CreateTrackingCheckbox("SOULBINDCONDUITS", "Conduits")
-checkboxConduits:AlignAfter(accwideCheckboxConduits)
-
-local accwideCheckboxRunecarvingPowers = child:CreateForcedAccountWideCheckbox()
-accwideCheckboxRunecarvingPowers:AlignBelow(accwideCheckboxConduits)
-
-local checkboxRunecarvingPowers = child:CreateTrackingCheckbox("RUNEFORGELEGENDARIES", "RuneforgeLegendaries")
-checkboxRunecarvingPowers:AlignAfter(accwideCheckboxRunecarvingPowers)
-
-local accwideCheckboxDrakewatcherManuscripts = child:CreateForcedAccountWideCheckbox()
-accwideCheckboxDrakewatcherManuscripts:AlignBelow(accwideCheckboxRunecarvingPowers)
-
-local checkboxDrakewatcherManuscripts = child:CreateTrackingCheckbox("DRAKEWATCHERMANUSCRIPTS", "DrakewatcherManuscripts")
-checkboxDrakewatcherManuscripts:AlignAfter(accwideCheckboxDrakewatcherManuscripts)
+local accwideCheckboxDrakewatcherManuscripts =
+child:CreateForcedAccountWideCheckbox()
+	:AlignBelow(accwideCheckboxRunecarvingPowers)
+local checkboxDrakewatcherManuscripts =
+child:CreateTrackingCheckbox("DRAKEWATCHERMANUSCRIPTS", "DrakewatcherManuscripts")
+	:AlignAfter(accwideCheckboxDrakewatcherManuscripts)
 
 local headerAdditionalResources = child:CreateHeaderLabel(L["EXTRA_THINGS_LABEL"])
 headerAdditionalResources:SetPoint("LEFT", headerMode, 0, 0)

@@ -4,8 +4,7 @@ local Recipes = root(ROOTS.RecipeDB);
 local iq = function(itemID, questID, classID, raceID)
 	if itemID ~= 0 then
 		local item = {
-			["filterID"] = RECIPES,
-			["_drop"] = { "spellID" }
+			type = "characterUnlockQuestID",
 		}
 		if questID then
 			item.questID = questID;
@@ -22,9 +21,8 @@ end
 local is = function(itemID, spellID, classID)
 	if itemID ~= 0 then
 		local item = {
-			["recipeID"] = spellID,
-			["filterID"] = RECIPES,
-			["collectible"] = true
+			spellID = spellID,
+			type = "characterUnlockSpellID",
 		}
 		if classID then
 			item.classes = { classID };
@@ -32,8 +30,8 @@ local is = function(itemID, spellID, classID)
 		Items[itemID] = item;
 	else
 		local spell = {
-			["filterID"] = RECIPES,
-			["collectible"] = true
+			spellID = spellID,
+			type = "characterUnlockSpellID",
 		}
 		if classID then
 			spell.classes = { classID };
@@ -176,6 +174,8 @@ iq(187931, 65059, DRUID);			-- Mark of the Regal Dredbat
 iq(187936, 65062, DRUID);			-- Mark of the Sable Ardenmoth
 iq(187888, 64987, DRUID);			-- Mark of the Shimmering Ardenmoth
 iq(187884, 64986, DRUID);			-- Mark of the Twilight Runestag
+
+-- TODO Pocopoc Customization Items
 
 ------------------
 -- PATCH 10.0.2 --

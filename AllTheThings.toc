@@ -53,6 +53,7 @@ src\Classes\Filter Types.lua
 src\Classes\Illusions.lua
 src\Classes\Miscellaneous.lua
 src\Classes\PVP Ranks.lua
+src\Classes\CharacterUnlock.lua
 Settings.lua
 AllTheThings.lua
 db\Dragonflight\Categories.lua

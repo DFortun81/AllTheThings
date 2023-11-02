@@ -381,6 +381,8 @@ local L = {
 	["AZERITE_ESSENCES_CHECKBOX_TOOLTIP"] = "Enable this option to track Azerite Essences.\n\nTracked per character by default.";
 	["BATTLE_PETS_CHECKBOX"] = app.ccColors.Insane .. PETS;
 	["BATTLE_PETS_CHECKBOX_TOOLTIP"] = "Enable this option to track battle pets and companions. These can be found in the open world or via boss drops in various Dungeons and Raids as well as from Vendors and Reputation.\n\n"..ACC_WIDE_DEFAULT;
+	["CHARACTERUNLOCKS_CHECKBOX"] = app.ccColors.Insane..CHARACTER.." "..UNLOCK.."s";
+	["CHARACTERUNLOCKS_CHECKBOX_TOOLTIP"] = "Enable this option to track "..CHARACTER.." "..UNLOCK.."s. These are various character-based unlocks which aren't clearly able to be categorized as another type (e.g. Hex variants, Polymorph variants, Hunter species taming unlocks, Pocopoc customizations, etc.)\n\nTracked per character by default.";
 	["FLIGHT_PATHS_CHECKBOX"] = app.ccColors.Insane .. "Flight Paths & Ferry Stations";
 	["FLIGHT_PATHS_CHECKBOX_TOOLTIP"] = "Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\nNOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.";
 	["FOLLOWERS_CHECKBOX"] = app.ccColors.Insane .. GARRISON_FOLLOWERS.." & "..COVENANT_MISSIONS_FOLLOWERS;
@@ -467,6 +469,7 @@ local L = {
 	-- Account-Wide Checkboxes
 	["ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP"] = TRACK_ACC_WIDE.."\n\nAchievement tracking is usually "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
 	["ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP"] = TRACK_ACC_WIDE.."\n\nAzerite Essences cannot technically be collected and used "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", but if you only care about collecting them on your main character then you may prefer tracking them "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..".";
+	["ACCOUNT_WIDE_CHARACTERUNLOCKS_TOOLTIP"] = TRACK_ACC_WIDE.."\n\nConsider any Character Unlock collected if any character has collected it.";
 	["ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP"] = TRACK_ACC_WIDE.."\n\nFlight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
 	["ACCOUNT_WIDE_FOLLOWERS_TOOLTIP"] = TRACK_ACC_WIDE.."\n\nFollowers are typically per character, but do you really want to have to collect 243 Garrison Inn Followers on one character at a rate of 1 per week?\n\nI think not, good sir.";
 	["ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP"] = TRACK_ACC_WIDE.."\n\nMusic Rolls & Selfie Filters are not normally tracked "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE.." in Blizzard's database, but we can do that.\n\nNOTE: You can only play Music Rolls using the Jukebox Toy or snap a selfie with your S.E.L.F.I.E Camera Toy that you have collected on your current character.";

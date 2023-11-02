@@ -256,6 +256,8 @@ app.CreateClass = function(className, classKey, fields, ...)
 		print("Fields must be declared when using CreateClass");
 	end
 
+	-- app.PrintDebug("CreateClass",className, classKey)
+
 	-- Ensure that a key field exists!
 	if not fields.key then
 		fields.key = function() return classKey; end;
@@ -334,6 +336,7 @@ app.ExtendClass = function(baseClassName, className, classKey, fields, ...)
 	else
 		print("Could not find specified base class:", baseClassName);
 	end
+	-- app.PrintDebug("ExtendClass",baseClassName, className, classKey)
 	return app.CreateClass(className, classKey, fields, ...);
 end
 
