@@ -4,7 +4,7 @@ local app = select(2, ...);
 local L = app.L;
 
 DRAKE_MANUSCRIPTS = "Манускрипты наблюдений за драконами";
-local TRACK_ACC_WIDE = app.ccColors.Account.."тслеживать на весь аккаунт|R";
+local TRACK_ACC_WIDE = app.ccColors.Account.."Отслеживать на весь аккаунт|R";
 local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Account.."Весь Аккаунт|R по умолчанию.";
 
 -- General Text
