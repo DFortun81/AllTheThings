@@ -3908,7 +3908,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        LogError("ItemDB not in the correct format!");
+                                        LogError("RecipeDB not in the correct format!");
                                         Console.WriteLine(CurrentFileName);
                                         Console.WriteLine(ToJSON(o));
                                         Console.ReadLine();
@@ -3917,7 +3917,7 @@ namespace ATT
                             }
                             else
                             {
-                                LogError("ItemDB not in the correct format!");
+                                LogError("RecipeDB not in the correct format!");
                                 Console.WriteLine(CurrentFileName);
                                 Console.ReadLine();
                             }

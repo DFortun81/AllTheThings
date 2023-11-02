@@ -18,25 +18,21 @@ local iq = function(itemID, questID, classID, raceID)
 		Items[itemID] = item;
 	end
 end
-local is = function(itemID, spellID, classID)
+local is = function(itemID, spellID, classID, raceID)
+	local item = {
+		spellID = spellID,
+		type = "characterUnlockSpellID",
+	}
+	if classID then
+		item.classes = { classID };
+	end
+	if raceID then
+		item.races = { raceID };
+	end
 	if itemID ~= 0 then
-		local item = {
-			spellID = spellID,
-			type = "characterUnlockSpellID",
-		}
-		if classID then
-			item.classes = { classID };
-		end
 		Items[itemID] = item;
 	else
-		local spell = {
-			spellID = spellID,
-			type = "characterUnlockSpellID",
-		}
-		if classID then
-			spell.classes = { classID };
-		end
-		Recipes[spellID] = spell;
+		Recipes[spellID] = item;
 	end
 end
 

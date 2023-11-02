@@ -95,7 +95,7 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED
 						497,	-- The Black Temple (Temple Summit)
 					},
 					["groups"] = {
-						r(101508),	-- The Codex of Xerrath (CI!)
+						spell(101508),	-- The Codex of Xerrath (CI!)
 						mount(148972),	-- Dreadsteed (MOUNT!)
 						mount(148970),	-- Felsteed (MOUNT!)
 					},
