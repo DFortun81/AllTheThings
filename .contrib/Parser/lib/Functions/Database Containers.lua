@@ -67,6 +67,7 @@ CategoryDB = CreateDatabaseContainer("CategoryDB");
 FilterDB = CreateDatabaseContainer("FilterDB");
 FlightPathDB = CreateDatabaseContainer("FlightPathDB");
 ObjectDB = CreateDatabaseContainer("ObjectDB");
+RecipeDB = CreateDatabaseContainer("RecipeDB");
 --[[
 -- Proof of Concept:
 -- If you assign new partial data to the object, it'll retain its previous data instead of discarding it.
