@@ -15,7 +15,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(54740),	-- [DNT] REUSE ME
 		q(57917),	-- [DNT] Test - JAM
 		q(8274),	-- Test Kill Quest - triggered after The Conquest Pit: Final Showdown (12431)
-		q(6842),	-- Unused
 		q(7069),	-- Unused
 		q(8458),	-- Unused
 		q(24797),	-- REUSE
@@ -1293,7 +1292,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(62585),	-- Triggered after restoring Ohm of Meditation for "A Rare and Unusual Spirit" (questID 62603)
 		q(62586),	-- Triggered after restoring Lia the Curious
 		q(62958),	-- triggered during Marasmius dailies (spellID 345588)
-		q(62960),	-- Triggered after "Go Beyond!" (questID 62459) (spellID 345591) 
+		q(62960),	-- Triggered after "Go Beyond!" (questID 62459) (spellID 345591)
 		q(62961),	-- Completed after doing "Go Beyond!" (questID ??) (spellID 345592)
 		q(62962),	-- triggered when turning in "Into the Unknown" (questID 62296) (spellID 345590)
 		q(62963),	-- triggered when turning in "Go Beyond!" (questID ??) (spellID 345593)
@@ -1406,7 +1405,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(62596),	-- Triggered when completing 'The Great Luckydo'
 		q(59266),	-- triggered when i picked up the last eye for "Prying Eyes"
 		q(60166),	-- Triggered after raising portcullis to access Miru Soulblossom in Etheric Vault
-		
+
 		-- Swapping covenants
 		q(62023),	-- Become a Kyrian (spellID 360992 & 356127)
 		q(62708),	-- Become a Kyrian (spellID 360992)
