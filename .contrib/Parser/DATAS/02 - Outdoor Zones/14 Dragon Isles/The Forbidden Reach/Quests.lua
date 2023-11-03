@@ -45,7 +45,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 				}),
 				q(72712, {	-- The Best We Have
-					["sourceQuests"] = { 74847 },	-- Emberthal Awaits
+					["sourceQuests"] = { 73076 },	-- Return to the Reach
 					["provider"] = { "n", 199532 },	-- Scalecommander Emberthal
 					["coord"] = { 32.6, 60.3, THE_FORBIDDEN_REACH },
 				}),

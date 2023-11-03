@@ -466,7 +466,10 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 						29189,	-- Wicked Webs
 						29159,	-- Pyrorachnophobia
 						29160,	-- Egg-stinction
+						29192,	-- The Wardens are Watching
+						29210,	-- Enduring the Heat
 					},
+					["sourceQuestNumRequired"] = 5,
 					["isDaily"] = true,
 				}),
 				q(29305, {	-- Strike at the Heart

@@ -416,7 +416,7 @@ root(ROOTS.Zones, {
 					}),
 					q(9792, {	-- A Message to Telaar
 						["qg"] = 18008,	-- Ikuti
-						["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
+						["minReputation"] = { 978, NEUTRAL },	-- Kurenai, Neutral.
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(64, 64, 10),
 					}),
@@ -711,7 +711,7 @@ root(ROOTS.Zones, {
 					}),
 					q(9833, {	-- Lines of Communication
 						["qg"] = 18009,	-- Puluu
-						["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
+						["minReputation"] = { 978, NEUTRAL },	-- Kurenai, Neutral.
 						["coord"] = { 40.8, 28.6, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 62, 10),
@@ -822,7 +822,7 @@ root(ROOTS.Zones, {
 					}),
 					q(9834, {	-- Natural Armor
 						["qg"] = 18010,	-- Maktu
-						["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
+						["minReputation"] = { 978, NEUTRAL },	-- Kurenai, Neutral.
 						["coord"] = { 41.6, 27.4, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 62, 10),
@@ -1018,7 +1018,7 @@ root(ROOTS.Zones, {
 					}),
 					q(9830, {	-- Stinger Venom
 						["qg"] = 18009,	-- Puluu
-						["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
+						["minReputation"] = { 978, NEUTRAL },	-- Kurenai, Neutral.
 						["coord"] = { 40.8, 28.6, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 62, 10),
@@ -1126,7 +1126,7 @@ root(ROOTS.Zones, {
 					}),
 					q(9902, {	-- The Terror of Marshlight Lake
 						["qg"] = 18009,	-- Puluu
-						["sourceQuest"] = 10116,	-- WANTED: Chieftain Mummaki
+						["minReputation"] = { 978, NEUTRAL },	-- Kurenai, Neutral.
 						["coord"] = { 40.8, 28.6, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 62, 10),

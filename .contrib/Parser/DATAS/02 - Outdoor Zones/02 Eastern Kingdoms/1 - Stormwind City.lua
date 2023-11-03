@@ -4334,11 +4334,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = COOKING_AWARD_GROUPS,
 				}),
 				q(334, {	-- Package for Thurman
-					["providers"] = {
-						{ "n", 1428 },	-- Rema Schneider
-						{ "i", 2760 },	-- Thurman's Sewing Kit
-					},
-					["sourceQuest"] = 333,	-- Harlan Needs a Resupply
+					["qg"] = 1428,	-- Rema Schneider
 					-- #if AFTER LEGION
 					["coord"] = { 58.0, 67.2, STORMWIND_CITY },
 					-- #elseif AFTER WRATH
@@ -4347,6 +4343,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.5, 55.3, STORMWIND_CITY },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2760),	-- Thurman's Sewing Kit (QI!)
+					},
 				}),
 				q(27044, {	-- Peasant Problems
 					["qg"] = 44293,	-- Anduin Wrynn <Prince of Stormwind>

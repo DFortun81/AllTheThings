@@ -548,7 +548,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					q(42754, {	-- Jump-Capable
 						["sourceQuests"] = {
 							42733,	-- A Very Special Kind of Fuel
-							42732,	-- Deadlier Warglaives
+							-- 42732,	-- Deadlier Warglaives
 						},
 						["provider"] = { "n", 98646 },	-- Jace Darkweaver
 						["coord"] = { 59.0, 74.0, 721 },
