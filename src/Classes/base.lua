@@ -196,14 +196,14 @@ local BaseObjectFields = not app.__perf and function(fields, className)
 
 	-- Inject the default fields into the class
 	for key,method in pairs(DefaultFields) do
-		if not rawget(class, key) then
+		if not class[key] then
 			class[key] = method;
 		end
 	end
 	return {
 		__class = class,
 		__index = function(t, key)
-			_cache = rawget(class, key);
+			_cache = class[key];
 			if _cache then return _cache(t); end
 		end
 	};
@@ -227,7 +227,7 @@ or function(fields, className)
 
 	-- Inject the default fields into the class
 	for key,method in pairs(DefaultFields) do
-		if not rawget(class, key) then
+		if not class[key] then
 			class[key] = method;
 		end
 	end
@@ -235,8 +235,11 @@ or function(fields, className)
 	return {
 		__class = class,
 		__index = function(t, key)
-			_cache = rawget(class, key);
+			_cache = class[key];
 			if _cache then return _cache(t); end
+			-- capture a new empty function return for missing keys so we can track how much missing keys are called on various classes
+			class[key] = function() end
+			return class[key]()
 		end
 	}
 end
