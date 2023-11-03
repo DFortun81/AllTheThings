@@ -15918,10 +15918,10 @@ RowOnEnter = function (self)
 			end
 		end
 		local fields = {
-			"collectibleAsUpgrade",
-			-- "__type",
-			-- "key",
-			-- "hash",
+			-- "collectibleAsUpgrade",
+			"__type",
+			"key",
+			"hash",
 			-- "name",
 			-- "link",
 			-- "sourceIgnored",
@@ -17858,8 +17858,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			"nmc",
 			"nmr",
 			"hash",
-			"expanded",
-			"indent",
 		}) do
 			BaseVisualHeaderClone.__class[field] = app.EmptyFunction
 		end

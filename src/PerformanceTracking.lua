@@ -94,17 +94,13 @@ local function perf_replace_function(func, name)
 	print("Perf.F:",perf.__scope,name)
 	return function(...)
 		local now = GetTimePreciseSec();
+		-- if app.IsReady then print(now,perf.__scope,name,">",...) end
 		local res = {func(...)};
+		-- print(now,perf.__scope,name,"<")
 		typePerf.time = typePerf.time + (GetTimePreciseSec() - now);
 		typePerf.count = typePerf.count + 1;
 		return unpack(res);
 	end
-
-	-- Simple print of func calls
-	-- return function(...)
-	-- 	app.PrintDebug("app.",key)
-	-- 	return func(...)
-	-- end
 end
 
 -- Returns the Function wrapped in a performance capture function.
