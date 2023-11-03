@@ -857,6 +857,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					i(208644),	-- Lasher Plant Matter (QI!)
+					i(208647),	-- Primed Emerald Dream Fertilizer (QI!)
 					i(209416),	-- Turtle Eggshell Shards (QI!)
 				},
 			}),
