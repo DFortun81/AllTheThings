@@ -1054,6 +1054,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #ELSE
 						26930,	-- After the Crusade (reported as inaccurate quest)
 						25007,	-- East... Always to the East (assumed from report)
+						25006,	-- The Grasp Weakens (from Discord report)
 						-- #ENDIF
 					},
 					["sourceQuestNumRequired"] = 1,
