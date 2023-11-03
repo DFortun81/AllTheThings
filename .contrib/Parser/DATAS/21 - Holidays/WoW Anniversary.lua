@@ -8,8 +8,8 @@ WOW_ANNIVERSARY_ROOT = createHeader({
 	eventID = EVENTS.WOW_ANNIVERSARY,
 	eventSchedule = {
 		1, -- Recurring, note that this changes every year.
-		11, 6, 10, 0,	-- 11/06 at 10:00 AM
-		11, 30, 10, 0	-- 11/30 at 10:00 AM
+		11, 16, 10, 0,	-- 11/16 at 10:00 AM
+		12, 07, 10, 0	-- 12/07 at 10:00 AM
 	},
 	text = {
 		en = "WoW's Anniversary",
