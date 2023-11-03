@@ -4,8 +4,74 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		n(RARES, {
-			i(189715, {	-- Pocopoc's Diamond Vambraces
-				["questID"] = 65481,
+			n(COMMON_BOSS_DROPS, {
+				i(189715, {	-- Pocopoc's Diamond Vambraces
+					["questID"] = 65481,
+				}),
+			}),
+		}),
+		n(RARES, {
+			n(SPECIAL, {
+				["description"] = "Upon defeat of any other Rare creature in ZM, there is a small chance that one of these 'special' rares will begin to activate.\nIt is not currently known whether there is a minimum cooldown between spawns, though it's been reported as quick as 50 min.",
+				["group"] = {
+					n(COMMON_BOSS_DROPS, {
+						["crs"] = {
+							182155,	-- High Reaver Damaris
+							182114,	-- Iska, Outrider of Ruin
+							182158,	-- Reanimatrox Marzan
+						},
+						["groups"] = {
+							i(190104),	-- Deadeye's Spirit Piercer
+							i(190463),	-- Dismal Mystic's Glaive
+							i(190050),	-- Entropic Broker's Ripper
+							i(190124),	-- Interrogator's Vicious Dirk
+							i(190107),	-- Staff of Broken Coils
+						},
+					}),
+					n(182155, {	-- High Reaver Damaris
+						["crs"] = { 182156 },	-- Edra, the Will Grazer
+						["coord"] = { 63.8, 27, ZERETH_MORTIS },
+						["questID"] = 65586,
+						["isDaily"] = true,
+						["g"] = {
+							i(190106),	-- Approaching Terror's Torch
+							i(190105),	-- Chilling Domination Mace
+							i(190459),	-- Cold Dispiriting Barricade
+							i(190460),	-- High Reaver's Sickle
+						},
+					}),
+					n(182114, {	-- Iska, Outrider of Ruin
+						["coord"] = { 63.8, 27, ZERETH_MORTIS },
+						["questID"] = 65585,
+						["isDaily"] = true,
+						["g"] = {
+							n(182120, {	-- Rhuv, Gorger of Ruin
+								["coord"] = { 63.8, 27, ZERETH_MORTIS },
+								["questID"] = 65706,
+								["isDaily"] = true,
+								["g"] = {
+									i(190765),	-- Colossal Plaguespew Mawrat (MOUNT!)
+								},
+							}),
+							i(190458),	-- Atrophy's Omnious Bulwark
+							i(190102),	-- Chains of Infectious Serrations
+							i(190103),	-- Pillar of Noxious Dissemination
+							i(190126),	-- Rotculler's Encroaching Shears
+						},
+					}),
+					n(182158, {	-- Reanimatrox Marzan
+						["crs"] = { 182161 },	-- Phalangax, the Final Grasp
+						["coord"] = { 63.8, 27, ZERETH_MORTIS },
+						["questID"] = 65587,
+						["isDaily"] = true,
+						["g"] = {
+							i(190108),	-- Aegis of Laughing Souls
+							i(190109),	-- Cudgel of Mortality's Chains
+							i(190127),	-- Marzan's Dancing Twin-Scythe
+							i(190461),	-- Reanimator's Beguiling Baton
+						},
+					}),
+				},
 			}),
 		}),
 		n(RARES, sharedData({ ["isDaily"] = true }, {
@@ -156,22 +222,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					i(190054),	-- Facet Sharpening Crossbow
 				},
 			}),
-			n(182155, {	-- High Reaver Damaris
-				["crs"] = { 182156 },	-- Edra, the Will Grazer
-				["coord"] = { 63.8, 27, ZERETH_MORTIS },
-				["questID"] = 65586,
-				["g"] = {
-					i(190106),	-- Approaching Terror's Torch
-					i(190105),	-- Chilling Domination Mace
-					i(190459),	-- Cold Dispiriting Barricade
-					i(190104),	-- Deadeye's Spirit Piercer
-					i(190463),	-- Dismal Mystic's Glaive
-					i(190050),	-- Entropic Broker's Ripper
-					i(190460),	-- High Reaver's Sickle
-					i(190124),	-- Interrogator's Vicious Dirk
-					i(190107),	-- Staff of Broken Coils
-				},
-			}),
 			n(180978, {	-- Hirukon <Aurelid Prime>
 				["description"] = "To see how to summon this boss use Debug Mode.",
 				["coord"] = { 52.2, 75.2, ZERETH_MORTIS },
@@ -217,29 +267,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					i(190005),	-- Hirukon's Radiant Reach
 					i(189905),	-- Hirukon's Syrupy Squeezers
 					i(189946),	-- Jellied Aurelid Mantle
-				},
-			}),
-			n(182114, {	-- Iska, Outrider of Ruin
-				["coord"] = { 63.8, 27, ZERETH_MORTIS },
-				["questID"] = 65585,
-				["g"] = {
-					n(182120, {	-- Rhuv, Gorger of Ruin
-						["coord"] = { 63.8, 27, ZERETH_MORTIS },
-						["questID"] = 65706,
-						["isDaily"] = true,
-						["g"] = {
-							i(190765),	-- Colossal Plaguespew Mawrat (MOUNT!)
-						},
-					}),
-					i(190458),	-- Atrophy's Omnious Bulwark
-					i(190102),	-- Chains of Infectious Serrations
-					i(190104),	-- Deadeye's Spirit Piercer
-					i(190463),	-- Dismal Mystic's Glaive
-					i(190050),	-- Entropic Broker's Ripper
-					i(190124),	-- Interrogator's Vicious Dirk
-					i(190103),	-- Pillar of Noxious Dissemination
-					i(190126),	-- Rotculler's Encroaching Shears
-					i(190107),	-- Staff of Broken Coils
 				},
 			}),
 			n(178508, {	-- Mother Phestis <Tarachnid Prime>
@@ -291,22 +318,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					i(189961),	-- Enduring Protector's Shoulderguards
 					i(190390),	-- Protector's Diffusion Implement
 					i(189177),	-- Revelation Key (PS)
-				},
-			}),
-			n(182158, {	-- Reanimatrox Marzan
-				["crs"] = { 182161 },	-- Phalangax, the Final Grasp
-				["coord"] = { 63.8, 27, ZERETH_MORTIS },
-				["questID"] = 65587,
-				["g"] = {
-					i(190108),	-- Aegis of Laughing Souls
-					i(190109),	-- Cudgel of Mortality's Chains
-					i(190104),	-- Deadeye's Spirit Piercer
-					i(190463),	-- Dismal Mystic's Glaive
-					i(190050),	-- Entropic Broker's Ripper
-					i(190124),	-- Interrogator's Vicious Dirk
-					i(190127),	-- Marzan's Dancing Twin-Scythe
-					i(190461),	-- Reanimator's Beguiling Baton
-					i(190107),	-- Staff of Broken Coils
 				},
 			}),
 			n(183927, {	-- Sand Matriarch Ileus

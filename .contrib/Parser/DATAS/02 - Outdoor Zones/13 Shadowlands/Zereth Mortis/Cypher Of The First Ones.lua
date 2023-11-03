@@ -191,7 +191,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 180800 },	-- Koh Shira
 					["coord"] = { 39.3, 55.5, 2027 },
-					-- TODO: maybe symlink these because they come from multiple quests?
 					["g"] = {
 						i(190985),	-- Crystallic Cryptic Mask
 						i(190991),	-- Crystallic Enigmatic Epaulets

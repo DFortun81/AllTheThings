@@ -403,20 +403,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 184442 },	-- Feroz
 					["coord"] = { 47.7, 79.9, ZERETH_MORTIS },
-					["g"] = {
-						i(190985),	-- Crystallic Cryptic Mask
-						i(190991),	-- Crystallic Enigmatic Epaulets
-						i(190997),	-- Crystallic Numerus Crown
-						i(190979),	-- Crystallic Oracular Smock
-						i(190984),	-- Nova Cryptic Mask
-						i(190990),	-- Nova Enigmatic Epaulets
-						i(190996),	-- Nova Numerus Crown
-						i(190978),	-- Nova Oracular Smock
-						i(190983),	-- Scouring Cryptic Mask
-						i(190989),	-- Scouring Enigmatic Epaulets
-						i(190995),	-- Scouring Numerus Crown
-						i(190977),	-- Scouring Oracular Smock
-					},
+					-- these are now all granted from completing 'Reap What We Have Sown' which is the quickest quest chain to complete
+					["sym"] = {{"select","itemID",
+									190985,	-- Crystallic Cryptic Mask
+									190991,	-- Crystallic Enigmatic Epaulets
+									190997,	-- Crystallic Numerus Crown
+									190979,	-- Crystallic Oracular Smock
+									190984,	-- Nova Cryptic Mask
+									190990,	-- Nova Enigmatic Epaulets
+									190996,	-- Nova Numerus Crown
+									190978,	-- Nova Oracular Smock
+									190983,	-- Scouring Cryptic Mask
+									190989,	-- Scouring Enigmatic Epaulets
+									190995,	-- Scouring Numerus Crown
+									190977,	-- Scouring Oracular Smock
+					}},
 				}),
 				q(64843, {	-- Key Crafting
 					["sourceQuests"] = { 64842 },	-- Flora Frenzy
@@ -583,20 +584,21 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64876 },	-- Music of the Spheres
 					["provider"] = { "n", 181706 },	-- Popopoc
 					["coord"] = { 34.1, 47.3, ZERETH_MORTIS },
-					["g"] = {
-						i(190985),	-- Crystallic Cryptic Mask
-						i(190991),	-- Crystallic Enigmatic Epaulets
-						i(190997),	-- Crystallic Numerus Crown
-						i(190979),	-- Crystallic Oracular Smock
-						i(190984),	-- Nova Cryptic Mask
-						i(190990),	-- Nova Enigmatic Epaulets
-						i(190996),	-- Nova Numerus Crown
-						i(190978),	-- Nova Oracular Smock
-						i(190983),	-- Scouring Cryptic Mask
-						i(190989),	-- Scouring Enigmatic Epaulets
-						i(190995),	-- Scouring Numerus Crown
-						i(190977),	-- Scouring Oracular Smock
-					},
+					-- these are now all granted from completing 'Reap What We Have Sown' which is the quickest quest chain to complete
+					["sym"] = {{"select","itemID",
+									190985,	-- Crystallic Cryptic Mask
+									190991,	-- Crystallic Enigmatic Epaulets
+									190997,	-- Crystallic Numerus Crown
+									190979,	-- Crystallic Oracular Smock
+									190984,	-- Nova Cryptic Mask
+									190990,	-- Nova Enigmatic Epaulets
+									190996,	-- Nova Numerus Crown
+									190978,	-- Nova Oracular Smock
+									190983,	-- Scouring Cryptic Mask
+									190989,	-- Scouring Enigmatic Epaulets
+									190995,	-- Scouring Numerus Crown
+									190977,	-- Scouring Oracular Smock
+					}},
 				}),
 				q(65245, {	-- Pop Goes the Devourer!
 					["sourceQuests"] = { 64878 },	-- What A Long Strange Trip
