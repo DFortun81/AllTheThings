@@ -10,8 +10,8 @@ local rawget, ipairs, pairs
 	= rawget, ipairs, pairs;
 
 -- App locals
-local SearchForField, SearchForFieldContainer
-	= app.SearchForField, app.SearchForFieldContainer;
+local SearchForField, SearchForFieldContainer, ArrayAppend
+	= app.SearchForField, app.SearchForFieldContainer, app.ArrayAppend;
 local AccountWideQuests = app.EmptyTable
 
 -- Module locals
@@ -172,7 +172,7 @@ local function UpdateCosts()
 	-- app.PrintDebugPrior("UpdateCosts:Done",app._SettingsRefresh)
 end
 
-app.UpdateCostGroup = function(c)
+local function UpdateCostGroup(c)
 	CacheFilters();
 	-- app.PrintDebug("UpdateCostGroup",c.hash,app._SettingsRefresh)
 	local refresh = app._SettingsRefresh;
@@ -185,20 +185,26 @@ app.UpdateCostGroup = function(c)
 			type, id = cost[1], cost[2];
 			-- app.PrintDebug("UpdateCostGroup:",type,id)
 			if type == "i" then
-				groups = UpdateCostsByItemID(id, refresh);
+				groups = ArrayAppend(groups, UpdateCostsByItemID(id, refresh))
 			elseif type == "c" then
-				groups = UpdateCostsByCurrencyID(id, refresh);
+				groups = ArrayAppend(groups, UpdateCostsByCurrencyID(id, refresh))
 			end
 		end
 		if groups then
 			-- app.PrintDebug("UpdateCostGroup:groups",#groups)
+			local c
 			for i=1,#groups do
-				UpdateRunner.Run(DGU, groups[i]);
+				c = groups[i]
+				-- make sure this cost is DGU
+				UpdateRunner.Run(DGU, c);
+				-- but also it might have other costs which need to be checked...
+				UpdateRunner.Run(UpdateCostGroup, c);
 			end
 		end
 	end
 	-- app.PrintDebug("UpdateCostGroup:Done",c.hash,app._SettingsRefresh)
 end
+app.UpdateCostGroup = UpdateCostGroup
 
 -- Returns whether 't' should be considered collectible based on the set of costCollectibles already assigned to this 't'
 app.CollectibleAsCost = function(t)
@@ -244,7 +250,8 @@ local api = {};
 app.Modules.Costs = api;
 api.OnLoad = function()
 	DGU = app.DirectGroupUpdate;
-	UpdateRunner = app.UpdateRunner;
+	api.Runner = app.CreateRunner("costs");
+	UpdateRunner = api.Runner
 	CacheFilters();
 end
 api.OnStartup = function(AccountData)
