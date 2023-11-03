@@ -188,52 +188,50 @@ app.StartCoroutine = StartCoroutine;
 local function CreateRunner(name)
 	local FunctionQueue, ParameterBucketQueue, ParameterSingleQueue, Config = {}, {}, {}, { PerFrame = 1 };
 	local Name = "Runner:"..name;
-	local QueueIndex = 1;
+	local QueueIndex, RunIndex = 1, 1
 	local Pushed, perFrame
-	local function SetPerFrame(count, instant)
+	local function SetPerFrame(count)
 		Config.PerFrame = math_max(1, tonumber(count) or 1);
-		-- app.PrintDebug("FR.PerFrame."..name,Config.PerFrame,instant)
-		-- if this per frame change was performed while in the runner queue, then yield immediately so that it takes effect
-		if not instant then
-			perFrame = 0
-		end
+		-- app.PrintDebug("FR.PerFrame."..name,Config.PerFrame)
+		-- always yield immediately so that it takes effect when encountered
+		perFrame = 0
 	end
 	local function Reset()
-		Config.PerFrame = 1;
-		-- when done with all functions in the queue, reset the queue index and clear the queues of data
-		QueueIndex = 1;
-		wipe(FunctionQueue);
-		wipe(ParameterBucketQueue);
-		wipe(ParameterSingleQueue);
-		-- app.PrintDebug("FR:Reset."..name)
+		SetPerFrame(1)
+		-- when done with all functions in the queue, reset the indexes and clear the queues of data
+		QueueIndex = 1
+		RunIndex = Pushed and 0 or 1	-- reset while running will resume and continue at index 1
+		wipe(FunctionQueue)
+		wipe(ParameterBucketQueue)
+		wipe(ParameterSingleQueue)
+		-- app.PrintDebug("FR:Reset."..name,"Q@",QueueIndex,"R@",RunIndex)
 	end
 
 	-- Static coroutine for the Runner which runs one loop each time the Runner is called, and yields on the Stack
 	local RunnerCoroutine = c_create(function()
 		while true do
-			local i = 1
 			perFrame = Config.PerFrame
 			local params;
-			local func = FunctionQueue[i];
+			local func = FunctionQueue[RunIndex];
 			-- app.PrintDebug("FRC.Running."..name)
 			while func do
 				perFrame = perFrame - 1;
-				params = ParameterBucketQueue[i];
+				params = ParameterBucketQueue[RunIndex];
 				if params then
-					-- app.PrintDebug("FRC.Run.N."..name,i,unpack(params))
+					-- app.PrintDebug("FRC.Run.N."..name,RunIndex,unpack(params))
 					pcall(func, unpack(params));
 				else
-					-- app.PrintDebug("FRC.Run.1."..name,i,ParameterSingleQueue[i])
-					pcall(func, ParameterSingleQueue[i]);
+					-- app.PrintDebug("FRC.Run.1."..name,RunIndex,ParameterSingleQueue[RunIndex])
+					pcall(func, ParameterSingleQueue[RunIndex]);
 				end
-				-- app.PrintDebug("FRC.Done."..name,i)
+				-- app.PrintDebug("FRC.Done."..name,RunIndex)
 				if perFrame <= 0 then
 					-- app.PrintDebug("FRC.Yield."..name)
 					c_yield();
 					perFrame = Config.PerFrame;
 				end
-				i = i + 1;
-				func = FunctionQueue[i];
+				RunIndex = RunIndex + 1;
+				func = FunctionQueue[RunIndex];
 			end
 			-- Run the OnEnd function if it exists
 			local OnEnd = FunctionQueue[0];
@@ -241,8 +239,8 @@ local function CreateRunner(name)
 				-- app.PrintDebug("FRC.End."..name,#FunctionQueue)
 				OnEnd();
 			end
-			Reset();
 			Pushed = nil;
+			Reset();
 			-- Yield false to kick the StackRun off the Stack to stop calling this coroutine since it is complete until Run is called again
 			c_yield(false);
 		end
@@ -303,7 +301,7 @@ local function CreateRunner(name)
 	-- Defines how many functions will be executed per frame. Executes via the Runner when encountered in the Queue, unless specified as 'instant'
 	Runner.SetPerFrame = function(count, instant)
 		if instant then
-			SetPerFrame(count, instant);
+			SetPerFrame(count);
 		else
 			Runner.Run(SetPerFrame, count);
 		end
