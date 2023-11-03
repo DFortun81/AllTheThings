@@ -474,6 +474,24 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			}),
 		},
 	})),
+	--[[tier(xx, bubbleDownSelf({ ["timeline"] = { "added 10.1.7" } }, {
+		["description"] = "These rewards are available to anyone who purchases xx Heroic Edition.",
+		["timeline"] = { "added 10.1.7" },
+		["groups"] = {
+			pet(xx, {	-- xx (PET!)
+				["description"] = "This is a pre-order bonus only available before the launch of xx.",
+				["timeline"] = { REMOVED_10_0_2 },
+			}),
+			pet(xx),	-- xx (PET!)
+		--	mount(359843),	-- Algarian Stormrider (MOUNT!)
+			ach(19027),	-- Heroic Edition: Algarian Stormrider
+			n(REWARDS, {
+				["description"] = "The following additional rewards were only available if you purchased xx Epic Edition.",
+				["groups"] = {
+				},
+			}),
+		},
+	})),--]]
 
 	-- Anniversary
 	n(WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5, REMOVED_10_1_0 } }, {
