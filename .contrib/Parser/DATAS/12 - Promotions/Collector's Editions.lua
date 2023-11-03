@@ -488,6 +488,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			n(REWARDS, {
 				["description"] = "The following additional rewards were only available if you purchased xx Epic Edition.",
 				["groups"] = {
+					i(211257, {		-- Arsenal: Stormrider's Stormhammers
+					}),
 				},
 			}),
 		},
