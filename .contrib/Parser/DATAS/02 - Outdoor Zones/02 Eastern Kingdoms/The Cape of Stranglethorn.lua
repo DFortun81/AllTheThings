@@ -1442,7 +1442,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						26601,	-- Mok'rash the Cleaver
 						26606,	-- Mukla's Demise
 					},
-					["sourQuestNumRequired"] = 1,
+					["sourceQuestNumRequired"] = 1,
 					["description"] = "You need to complete at least one of [Kill-Collect], [Mok'rash the Cleaver], or [Mukla's Demise] to pick up this quest.",
 					["coord"] = { 42.6, 71.8, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { "added 4.0.3.13277" },
