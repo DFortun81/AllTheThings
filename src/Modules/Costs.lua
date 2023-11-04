@@ -6,8 +6,8 @@ local _, app = ...;
 -- Encapsulates the functionality for handling and checking Cost information
 
 -- Global locals
-local rawget, ipairs, pairs
-	= rawget, ipairs, pairs;
+local rawget, ipairs, pairs, type
+	= rawget, ipairs, pairs, type
 
 -- App locals
 local SearchForField, SearchForFieldContainer, ArrayAppend
@@ -176,14 +176,15 @@ local function UpdateCostGroup(c)
 	CacheFilters();
 	-- app.PrintDebug("UpdateCostGroup",c.hash,app._SettingsRefresh)
 	local refresh = app._SettingsRefresh;
+	-- update cost
 	local costs = c.cost;
 	if costs and type(costs) == "table" then
-		-- app.PrintDebug("UpdateCostGroup:cost",#costs)
+		-- app.PrintDebug("UCG:cost",#costs)
 		local cost, type, id, groups;
 		for i=1,#costs do
 			cost = costs[i];
 			type, id = cost[1], cost[2];
-			-- app.PrintDebug("UpdateCostGroup:",type,id)
+			-- app.PrintDebug("UCG:",type,id)
 			if type == "i" then
 				groups = ArrayAppend(groups, UpdateCostsByItemID(id, refresh))
 			elseif type == "c" then
@@ -191,7 +192,7 @@ local function UpdateCostGroup(c)
 			end
 		end
 		if groups then
-			-- app.PrintDebug("UpdateCostGroup:groups",#groups)
+			-- app.PrintDebug("UCG:groups",#groups)
 			local c
 			for i=1,#groups do
 				c = groups[i]
@@ -202,7 +203,34 @@ local function UpdateCostGroup(c)
 			end
 		end
 	end
-	-- app.PrintDebug("UpdateCostGroup:Done",c.hash,app._SettingsRefresh)
+	-- update provider.i
+	local providers = c.providers;
+	if providers and type(providers) == "table" then
+		-- app.PrintDebug("UCG:providers",#providers)
+		local prov, type, id, groups;
+		for i=1,#providers do
+			prov = providers[i];
+			type, id = prov[1], prov[2];
+			-- app.PrintDebug("UCG:",type,id)
+			if type == "i" then
+				groups = ArrayAppend(groups, UpdateCostsByItemID(id, refresh))
+			elseif type == "c" then
+				groups = ArrayAppend(groups, UpdateCostsByCurrencyID(id, refresh))
+			end
+		end
+		if groups then
+			-- app.PrintDebug("UCG:groups",#groups)
+			local p
+			for i=1,#groups do
+				p = groups[i]
+				-- make sure this prov is DGU
+				UpdateRunner.Run(DGU, p);
+				-- but also it might have other costs which need to be checked...
+				UpdateRunner.Run(UpdateCostGroup, p);
+			end
+		end
+	end
+	-- app.PrintDebug("UCG:Done",c.hash,app._SettingsRefresh)
 end
 app.UpdateCostGroup = UpdateCostGroup
 
