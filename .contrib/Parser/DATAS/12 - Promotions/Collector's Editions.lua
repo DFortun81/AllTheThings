@@ -160,6 +160,13 @@ WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION = createHeader({
 		en = "These rewards were made available to anyone who purchased a World of Warcraft 15th Anniversary Collector's Edition.",
 	},
 });
+THE_WAR_WITHIN_TEMPORARY = createHeader({
+	readable = "The War Within",
+	icon = 5306251,
+	text = {
+		en = "The War Within",
+	},
+});
 root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_BALANCE }, {
 	tier(CLASSIC_TIER, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {
 		["description"] = "These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",
@@ -474,19 +481,135 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			}),
 		},
 	})),
-	tier(WW_TIER, bubbleDownSelf({ ["timeline"] = { "added 10.1.7.51972" } }, {
+	n(THE_WAR_WITHIN_TEMPORARY, bubbleDownSelf({ ["timeline"] = { "added 10.1.7.51972" } }, {
 		["description"] = "These rewards are available to anyone who purchases War Within Heroic Edition.",
 		["timeline"] = { "added 10.1.7.51972" },
 		["groups"] = {
 			mount(417888),	-- Algarian Stormrider (MOUNT!)
 			ach(19027),	-- Heroic Edition: Algarian Stormrider
+			n(DRAGONRIDING_RACING, {
+				n(ACHIEVEMENTS, {
+					ach(18928, {	-- Storm Rider: Bronze
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							18925,	-- Crystal Circuit Storm Gryphon: Bronze
+							18913,	-- Fen Flythrough Storm Gryphon: Bronze
+							18910,	-- Ruby Lifeshrine Loop Storm Gryphon: Bronze
+							18922,	-- Stormsunder Crater Circuit Storm Gryphon: Bronze
+							18919,	-- Tyrhold Trial Storm Gryphon: Bronze
+							18916,	-- Vakthros Ascent Storm Gryphon: Bronze
+						}},
+					}),
+					ach(18929, {	-- Storm Rider: Silver
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							18926,	-- Crystal Circuit Storm Gryphon: Silver
+							18914,	-- Fen Flythrough Storm Gryphon: Silver
+							18911,	-- Ruby Lifeshrine Loop Storm Gryphon: Silver
+							18923,	-- Stormsunder Crater Circuit Storm Gryphon: Silver
+							18920,	-- Tyrhold Trial Storm Gryphon: Silver
+							18917,	-- Vakthros Ascent Storm Gryphon: Silver
+						}},
+					}),
+					ach(18931, {	-- Storm Rider: Gold
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							18927,	-- Crystal Circuit Storm Gryphon: Gold
+							18915,	-- Fen Flythrough Storm Gryphon: Gold
+							18912,	-- Ruby Lifeshrine Loop Storm Gryphon: Gold
+							18924,	-- Stormsunder Crater Circuit Storm Gryphon: Gold
+							18921,	-- Tyrhold Trial Storm Gryphon: Gold
+							18918,	-- Vakthros Ascent Storm Gryphon: Gold
+						}},
+						["g"] = {
+							title(520),	-- The Storm Rider <Name>
+						},
+					}),
+				}),
+				n(QUESTS, {
+					q(77813, {	-- Lightning Strikes
+						-- ["provider"] = { "n",  },
+						-- ["coord"] = { 54.4, 23.7, },
+					}),
+					q(77815, {	-- The Storm Race Tour
+						-- ["provider"] = { "n",  },
+						-- ["coord"] = { 54.4, 23.7, },
+						["g"] = {
+							i(209417, {	-- Ensemble: Thundering Stormrider's Attire
+								["questID"] = 78049,
+								["g"] = {
+									i(210021),	-- Thundering Stormrider's Breastplate
+									i(209335),	-- Thundering Stormrider's Buckle
+									i(209334),	-- Thundering Stormrider's Epaulettes
+									i(210020),	-- Thundering Stormrider's Grips
+									i(209333),	-- Thundering Stormrider's Helmet
+								},
+							}),
+						},
+					}),
+					dragonridingrace(77793, {	-- Crystal Circuit - Storm Gryphon
+						["provider"] = { "n", 202524 },	-- Bronze Timekeeper
+						["coord"] = { 38.6, 60.6, ZARALEK_CAVERN },
+						["g"] = {
+							ach(18925),	-- Crystal Circuit Storm Gryphon: Bronze
+							ach(18926),	-- Crystal Circuit Storm Gryphon: Silver
+							ach(18927),	-- Crystal Circuit Storm Gryphon: Gold
+						},
+					}),
+					dragonridingrace(77785, {	-- Fen Flythrough - Storm Gryphon
+						["provider"] = { "n", 191121 },	-- Bronze Timekeeper
+						["coord"] = { 86.3, 35.8, OHNAHRAN_PLAINS },
+						["g"] = {
+							ach(18913),	-- Fen Flythrough Storm Gryphon: Bronze
+							ach(18914),	-- Fen Flythrough Storm Gryphon: Silver
+							ach(18915),	-- Fen Flythrough Storm Gryphon: Gold
+						},
+					}),
+					dragonridingrace(77777, {	-- Ruby Lifeshrine Loop - Storm Gryphon
+						["provider"] = { "n", 190123 },	-- Bronze Timekeeper
+						["coord"] = { 63.3, 70.9, THE_WAKING_SHORES },
+						["g"] = {
+							ach(18910),	-- Ruby Lifeshrine Loop Storm Gryphon: Bronze
+							ach(18911),	-- Ruby Lifeshrine Loop Storm Gryphon: Silver
+							ach(18912),	-- Ruby Lifeshrine Loop Storm Gryphon: Gold
+						},
+					}),
+					dragonridingrace(77787, {	-- Stormsunder Crater Circuit - Storm Gryphon
+						["provider"] = { "n", 200183 },	-- Bronze Timekeeper
+						["coord"] = { 76.3, 65.7, THE_FORBIDDEN_REACH },
+						["g"] = {
+							ach(18922),	-- Stormsunder Crater Circuit Storm Gryphon: Bronze
+							ach(18923),	-- Stormsunder Crater Circuit Storm Gryphon: Silver
+							ach(18924),	-- Stormsunder Crater Circuit Storm Gryphon: Gold
+						},
+					}),
+					dragonridingrace(77784, {	-- Tyrhold Trial - Storm Gryphon
+						["provider"] = { "n", 193651 },	-- Bronze Timekeeper
+						["coord"] = { 57.2, 66.9, THALDRASZUS },
+						["g"] = {
+							ach(18919),	-- Tyrhold Trial Storm Gryphon: Bronze
+							ach(18920),	-- Tyrhold Trial Storm Gryphon: Silver
+							ach(18921),	-- Tyrhold Trial Storm Gryphon: Gold
+						},
+					}),
+					dragonridingrace(77786, {	-- Vakthros Ascent - Storm Gryphon
+						["provider"] = { "n", 192115 },	-- Bronze Timekeeper
+						["coord"] = { 71.3, 24.7, THE_AZURE_SPAN },
+						["g"] = {
+							ach(18916),	-- Vakthros Ascent Storm Gryphon: Bronze
+							ach(18917),	-- Vakthros Ascent Storm Gryphon: Silver
+							ach(18918),	-- Vakthros Ascent Storm Gryphon: Gold
+						},
+					}),
+				}),
+			}),
 			n(REWARDS, {
 				["description"] = "The following additional rewards are only available if you purchased War Within Epic Edition.",
 				["groups"] = {
 					ach(19030),	-- Squally
 					pet(4266),	-- Squally (PET!)
 					i(208704),	-- Deepdwellers Earthen Hearthstone (TOY!)
-					i(208883),	-- Sandbox Storm Gryphon			(TOY!)					
+					i(208883),	-- Sandbox Storm Gryphon (TOY!)
 					i(209330),	-- Stormrider's Buckle
 					i(209321),	-- Stormrider's Boots
 					i(209320),	-- Stormrider's Breastplate

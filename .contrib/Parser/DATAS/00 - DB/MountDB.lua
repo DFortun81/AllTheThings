@@ -1663,6 +1663,7 @@ i(190636, 0);		-- Armored Siege Kodo
 ------------------
 -- PATCH 10.1.7 --
 ------------------
+i(0, 417888);		-- Algarian Stormrider
 i(208572, 420097);	-- Azure Worldchiller
 i(0, 358072);		-- Bound Blizzard
 i(137576, 171840);	-- Coldflame Infernal
@@ -1673,7 +1674,6 @@ i(0, 400976);		-- Gleaming Moonbeast
 i(192807, 374278);	-- Renewed Magmammoth
 i(205208, 408654);	-- Sandy Shalewing [TODO: Check if you actually get item]
 i(210022, 424082);	-- Mimiron's Jumpjets
-i(0, 417888);		-- Algarian Stormrider
 
 ------------------
 -- PATCH 10.2.0 --

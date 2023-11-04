@@ -251,7 +251,7 @@ local L = {
 			["lore"] = "Four years after the Battle of Mount Hyjal, tensions between the Alliance & the Horde begin to arise once again. Intent on settling the arid region of Durotar, Thrall's new Horde expanded its ranks, inviting the undead Forsaken to join orcs, tauren, & trolls. Meanwhile, dwarves, gnomes & the ancient night elves pledged their loyalties to a reinvigorated Alliance, guided by the human kingdom of Stormwind. After Stormwind's king, Varian Wrynn, mysteriously disappeared, Highlord Bolvar Fordragon served as Regent but his service was marred by the manipulations & mind control of the Onyxia, who ruled in disguise as a human noblewoman. As heroes investigated Onyxia's manipulations, ancient foes surfaced in lands throughout the world to menace Horde & Alliance alike.",
 			["lvl"] = 1,
 		},
-		{	-- Burning Crusade
+		{	-- The Burning Crusade
 			["icon"] = app.asset("Expansion_TBC"),
 			["lore"] = "The Burning Crusade is the first expansion. Its main features include an increase of the level cap up to 70, the introduction of the blood elves & the draenei as playable races, & the addition of the world of Outland, along with many new zones, dungeons, items, quests, & monsters.",
 			["lvl"] = 10,
@@ -295,6 +295,11 @@ local L = {
 			["icon"] = app.asset("Expansion_DF"),
 			["lore"] = "Dragonflight is the ninth expansion. The dragonflights of Azeroth have returned, called upon to defend their ancestral home, the Dragon Isles. Surging with elemental magic and the life energies of Azeroth, the Isles are awakening once more, and it's up to you to explore their primordial wonder and discover long-forgotten secrets.",
 			["lvl"] = 58,
+		},
+		{	-- The War Within
+			--["icon"] = app.asset("Expansion_TWW"),
+			["icon"] = 5341930,
+			["lore"] = "The War Within is the tenth expansion."
 		},
 	};
 

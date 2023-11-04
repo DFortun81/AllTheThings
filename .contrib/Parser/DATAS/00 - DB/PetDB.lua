@@ -4078,11 +4078,10 @@ i(206174, 3582);	-- Blub
 i(208543, 4265);	-- Lil' Frostwing
 i(211271, 3491);	-- Arfus
 --- SPECIAL ---
-i(0, 4267);			-- Lil' Maggz
-i(0, 3579);			-- Ysergle The Dreamurk
-i(0, 4266);			-- Squally
 i(0, 3236);			-- Gnomelia Gearheart
-
+i(0, 4267);			-- Lil' Maggz
+i(0, 4266);			-- Squally
+i(0, 3579);			-- Ysergle The Dreamurk
 --- NYI ---
 i(208850, 0);		-- Lil' Maggz
 
