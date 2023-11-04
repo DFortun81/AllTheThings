@@ -197,6 +197,7 @@ local function CreateRunner(name)
 		perFrame = 0
 	end
 	local function Reset()
+		-- app.PrintDebug("FR:Reset."..name,"Qi",QueueIndex,"Ri",RunIndex,"#F",#FunctionQueue)
 		SetPerFrame(1)
 		-- when done with all functions in the queue, reset the indexes and clear the queues of data
 		QueueIndex = 1
@@ -204,7 +205,7 @@ local function CreateRunner(name)
 		wipe(FunctionQueue)
 		wipe(ParameterBucketQueue)
 		wipe(ParameterSingleQueue)
-		-- app.PrintDebug("FR:Reset."..name,"Q@",QueueIndex,"R@",RunIndex)
+		-- app.PrintDebug("FR:Reset."..name,"Qi",QueueIndex,"Ri",RunIndex,"#F",#FunctionQueue)
 	end
 
 	-- Static coroutine for the Runner which runs one loop each time the Runner is called, and yields on the Stack

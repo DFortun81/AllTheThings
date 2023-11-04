@@ -154,6 +154,12 @@ end
 local function UpdateCosts()
 	CacheFilters();
 	local refresh = app._SettingsRefresh;
+	-- cancel all existing running cost updates
+	UpdateRunner.Reset()
+	UpdateRunner.SetPerFrame(50)
+
+	-- UpdateRunner.OnEnd(CostCalcComplete)
+	-- UpdateRunner.Run(CostCalcStart)
 	-- app.PrintDebug("UpdateCosts",refresh)
 
 	-- app.Debugging = nil
@@ -165,7 +171,8 @@ local function UpdateCosts()
 		-- if itemID == 163036 then app.Debugging = true end	-- Polished Pet Charms
 		-- if itemID == 40619 then app.Debugging = true end	-- Leggings of the Lost Conqueror
 		-- app.PrintDebug("Check Cost Item",itemID)
-		UpdateCostsByItemID(itemID, refresh, refs);
+		-- UpdateCostsByItemID(itemID, refresh, refs);
+		UpdateRunner.Run(UpdateCostsByItemID, itemID, refresh, refs)
 		-- app.Debugging = nil
 	end
 	-- app.Debugging = true
@@ -177,7 +184,8 @@ local function UpdateCosts()
 		-- app.Debugging = nil
 		-- if currencyID == 2029 then app.Debugging = true end
 		-- app.PrintDebug("Check Cost Curr",currencyID)
-		UpdateCostsByCurrencyID(currencyID, refresh, refs);
+		-- UpdateCostsByCurrencyID(currencyID, refresh, refs);
+		UpdateRunner.Run(UpdateCostsByCurrencyID, currencyID, refresh, refs)
 	end
 	-- app.Debugging = true
 	-- app.PrintDebugPrior("UpdateCosts:Done",app._SettingsRefresh)
