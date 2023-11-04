@@ -72,9 +72,11 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 			filter(COSMETIC, {
 				i(208943, {	-- Arsenal: Cosmic Weapons Cache
+					i(208939),	-- Gorridar, Darkblade of the Sunderer
 					i(208941),	-- M’thorus, Dagger of the Grand Design
+					i(208962),	-- Seetheras, Broadsword of the SUnderer
 					i(208959),	-- Taesavir, Sword of the Grand Design
-					i(208940),	-- Voidsong, Stave of the Harbinger
+					i(208940),	-- Voidsong, Stave of the Harbinger					
 				}),
 			}),
 		}),
