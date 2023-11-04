@@ -15,9 +15,11 @@ WARCRAFT_RUMBLE = createHeader({
 root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
     n(ACHIEVEMENTS, {
 		ach(15344, {    -- "S.A.F.E" Pilot
-        }),
-		pet(3236, {	-- Gnomelia Gearheart (PET!)
 			["description"] = "Play Warcraft Rumble on your phone until you defeat Hogger. Restart the App & you receive the pet.",
+			-- ToDO: Use provider?
+			["groups"] = {
+				pet(3236, {	-- Gnomelia Gearheart (PET!)
+			},
 		}),
         ach(17344, {    -- Warcraft Rumble Minis, Get 'Em All!
             ["providers"] = {
