@@ -354,12 +354,12 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40180,  {	-- Mail Men
-				["sourceQuests"] = { 40201 },	-- Playthings
+				["sourceQuests"] = { 40183 },	-- Over Your Head
 				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			}),
 			q(40177, { -- Leather Lady
-				["sourceQuests"] = { 40201 },	-- Playthings
+				["sourceQuests"] = { 40183 },	-- Over Your Head
 				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			}),
