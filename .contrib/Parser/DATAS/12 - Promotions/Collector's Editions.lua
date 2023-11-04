@@ -474,26 +474,32 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			}),
 		},
 	})),
-	--[[tier(xx, bubbleDownSelf({ ["timeline"] = { "added 10.1.7" } }, {
-		["description"] = "These rewards are available to anyone who purchases xx Heroic Edition.",
-		["timeline"] = { "added 10.1.7" },
+	tier(WW_TIER, bubbleDownSelf({ ["timeline"] = { "added 10.1.7.51972" } }, {
+		["description"] = "These rewards are available to anyone who purchases War Within Heroic Edition.",
+		["timeline"] = { "added 10.1.7.51972" },
 		["groups"] = {
-			pet(xx, {	-- xx (PET!)
-				["description"] = "This is a pre-order bonus only available before the launch of xx.",
-				["timeline"] = { REMOVED_10_0_2 },
-			}),
-			pet(xx),	-- xx (PET!)
-		--	mount(359843),	-- Algarian Stormrider (MOUNT!)
+			mount(417888),	-- Algarian Stormrider (MOUNT!)
 			ach(19027),	-- Heroic Edition: Algarian Stormrider
 			n(REWARDS, {
-				["description"] = "The following additional rewards were only available if you purchased xx Epic Edition.",
+				["description"] = "The following additional rewards are only available if you purchased War Within Epic Edition.",
 				["groups"] = {
-					i(211257, {		-- Arsenal: Stormrider's Stormhammers
-					}),
+					ach(19030),	-- Squally
+					pet(4266),	-- Squally (PET!)
+					i(208704),	-- Deepdwellers Earthen Hearthstone (TOY!)
+					i(208883),	-- Sandbox Storm Gryphon			(TOY!)					
+					i(209330),	-- Stormrider's Buckle
+					i(209321),	-- Stormrider's Boots
+					i(209320),	-- Stormrider's Breastplate
+					i(209331),	-- Stormrider's Cape
+					i(209329),	-- Stormrider's Epaulettes
+					i(209325),	-- Stormrider's Grips
+					i(209327),	-- Stormrider's Helmet
+					i(209328),	-- Stormrider's Pants
+					i(209332),	-- Stormrider's Wristguards
 				},
 			}),
 		},
-	})),--]]
+	})),
 
 	-- Anniversary
 	n(WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5, REMOVED_10_1_0 } }, {

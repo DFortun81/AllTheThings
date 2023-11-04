@@ -14,14 +14,11 @@ WARCRAFT_RUMBLE = createHeader({
 
 root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
     n(ACHIEVEMENTS, {
-		--[[ach(15344, {    -- "S.A.F.E" Pilot
-            ["providers"] = {
-				{ "i", 201931 },  -- <Pet here>
-			},
+		ach(15344, {    -- "S.A.F.E" Pilot
         }),
-		i(, {	-- <pet here>
+		pet(3236, {	-- Gnomelia Gearheart (PET!)
 			["description"] = "Play Warcraft Rumble on your phone until you defeat Hogger. Restart the App & you receive the pet.",
-		}),--]]
+		}),
         ach(17344, {    -- Warcraft Rumble Minis, Get 'Em All!
             ["providers"] = {
 				{ "i", 201931 },  -- Warcraft Rumble Toy: Maiev (TOY!)

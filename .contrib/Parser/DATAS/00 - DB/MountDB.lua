@@ -1673,6 +1673,7 @@ i(0, 400976);		-- Gleaming Moonbeast
 i(192807, 374278);	-- Renewed Magmammoth
 i(205208, 408654);	-- Sandy Shalewing [TODO: Check if you actually get item]
 i(210022, 424082);	-- Mimiron's Jumpjets
+i(0, 417888);		-- Algarian Stormrider
 
 ------------------
 -- PATCH 10.2.0 --
