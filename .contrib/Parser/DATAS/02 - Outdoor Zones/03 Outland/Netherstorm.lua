@@ -1669,6 +1669,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["sym"] = {
 							{"sub", "pvp_gear_base", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR },	-- Gladiator's Set
+							{"exclude","itemID",28379},	-- Sergeant's Heavy Cape (A)
+							{"exclude","itemID",28378},	-- Sergeant's Heavy Cape (H)
 							-- #if BEFORE LEGION
 							{ "finalize" },
 							{"sub", "pvp_gear_base", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR },{ "finalize" },	-- Merciless Gladiator's Set
