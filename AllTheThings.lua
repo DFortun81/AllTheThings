@@ -3156,6 +3156,9 @@ if GetAchievementNumCriteria then
 			-- Criteria was not Sourced, so return it in search results
 			if criteriaObject then
 				CacheFields(criteriaObject);
+				-- this criteria object may have been turned into a cost via costs/providers assignment, so make sure we update those respective costs via the Cost Runner
+				-- if settings are changed while this is running, it's ok because it refreshes costs from the cache
+				app.Modules.Costs.Runner.Run(app.UpdateCostGroup, criteriaObject)
 				tinsert(searchResults, criteriaObject);
 			end
 		end
