@@ -62,8 +62,8 @@ local ATTAccountWideData;
 
 -- App & Module locals
 local ArrayAppend = app.ArrayAppend;
-local CacheFields, SearchForField, SearchForFieldContainer, SearchForSourceIDQuickly
-	= app.CacheFields, app.SearchForField, app.SearchForFieldContainer, app.SearchForSourceIDQuickly;
+local CacheFields, SearchForField, SearchForFieldContainer, SearchForSourceIDQuickly, GetRawField
+	= app.CacheFields, app.SearchForField, app.SearchForFieldContainer, app.SearchForSourceIDQuickly, app.GetRawField
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local TryColorizeName = app.TryColorizeName;
@@ -10531,21 +10531,21 @@ local function default_costCollectibles(t)
 	-- Search by modItemID if possible for accuracy
 	if modItemID and modItemID ~= t.itemID then
 		id = modItemID;
-		results = SearchForField("itemIDAsCost", id);
+		results = GetRawField("itemIDAsCost", id);
 		-- app.PrintDebug("itemIDAsCost.modItemID",id,results and #results)
 	end
 	-- If no results, search by itemID + modID only if different
 	if not results or #results < 1 then
 		id = GetGroupItemIDWithModID(nil, t.itemID, t.modID);
 		if id ~= modItemID then
-			results = SearchForField("itemIDAsCost", id);
+			results = GetRawField("itemIDAsCost", id);
 			-- app.PrintDebug("itemIDAsCost.modID",id,results and #results)
 		end
 	end
 	-- If no results, search by plain itemID only
 	if (not results or #results < 1) and t.itemID then
 		id = t.itemID;
-		results = SearchForField("itemIDAsCost", id);
+		results = GetRawField("itemIDAsCost", id);
 	end
 	if results and #results > 0 then
 		-- not sure we need to copy these into another table
@@ -11823,8 +11823,8 @@ end
 local function default_costCollectibles(t)
 	local id = t.itemID;
 	if id then
-		local results = SearchForField("itemIDAsCost", id);
-		if #results > 0 then
+		local results = GetRawField("itemIDAsCost", id);
+		if results and #results > 0 then
 			-- app.PrintDebug("default_costCollectibles",t.hash,id,#results)
 			return results;
 		end

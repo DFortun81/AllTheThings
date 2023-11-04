@@ -688,6 +688,14 @@ local function SearchForField(field, id)
 	return SearchForFieldContainer(field)[id], field, id;
 end
 
+-- Returns: A table containing all groups which contain the provided id for a given field.
+-- NOTE: Can be nil for simplicity in use
+local function GetRawField(field, id)
+	local container = rawget(currentCache, field)
+	if not container then return end
+	return rawget(container, id), field, id;
+end
+
 -- Returns: A table containing all groups which contain the provided id for a given field from all established data caches.
 local function SearchForFieldInAllCaches(field, id)
 	local ArrayAppend = app.ArrayAppend;
@@ -795,6 +803,7 @@ app.AllGamePatches = AllGamePatches;
 app.CacheFields = CacheFields;
 app.CreateDataCache = CreateDataCache;
 app.GetRawFieldContainer = GetRawFieldContainer;
+app.GetRawField = GetRawField;
 app.SearchForFieldRecursively = SearchForFieldRecursively;
 app.SearchForFieldContainer = SearchForFieldContainer;
 app.SearchForField = SearchForField;

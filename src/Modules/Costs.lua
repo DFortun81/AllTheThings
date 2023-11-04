@@ -10,8 +10,8 @@ local rawget, ipairs, pairs, type
 	= rawget, ipairs, pairs, type
 
 -- App locals
-local SearchForField, SearchForFieldContainer, ArrayAppend
-	= app.SearchForField, app.SearchForFieldContainer, app.ArrayAppend;
+local SearchForFieldContainer, ArrayAppend, GetRawField
+	= app.SearchForFieldContainer, app.ArrayAppend, app.GetRawField
 local AccountWideQuests = app.EmptyTable
 
 -- Module locals
@@ -90,15 +90,17 @@ local function CacheFilters()
 	CheckCanBeCollected = app.MODE_DEBUG_OR_ACCOUNT and CanBeAccountCollected or CanBeCollected;
 end
 local function UpdateCostsByItemID(itemID, refresh, refs)
-	local costs = SearchForField("itemID", itemID);
+	local costs = GetRawField("itemID", itemID);
 	if costs then
 		local costTotal, ref;
-		refs = refs or SearchForField("itemIDAsCost", itemID);
-		for i=1,#refs do
-			ref = refs[i];
-			if CheckCollectible(ref) then
-				costTotal = 1;
-				break;
+		refs = refs or GetRawField("itemIDAsCost", itemID)
+		if refs then
+			for i=1,#refs do
+				ref = refs[i];
+				if CheckCollectible(ref) then
+					costTotal = 1;
+					break;
+				end
 			end
 		end
 		local isCost = costTotal and true or nil;
@@ -110,20 +112,22 @@ local function UpdateCostsByItemID(itemID, refresh, refs)
 			c._CheckCollectible = isCost;
 			c._SettingsRefresh = refresh;
 		end
-	-- else app.PrintDebug("ItemID as Cost is not Sourced!",itemID)
-		return costs;
+	-- else app.PrintDebug("Item as Cost is not Sourced!",itemID)
 	end
+	return costs;
 end
 local function UpdateCostsByCurrencyID(currencyID, refresh, refs)
-	local costs = SearchForField("currencyID", currencyID);
+	local costs = GetRawField("currencyID", currencyID);
 	if costs then
 		local costTotal, ref;
-		refs = refs or SearchForField("currencyIDAsCost", currencyID);
-		for i=1,#refs do
-			ref = refs[i];
-			if CheckCollectible(ref) then
-				costTotal = 1;
-				break;
+		refs = refs or GetRawField("currencyIDAsCost", currencyID)
+		if refs then
+			for i=1,#refs do
+				ref = refs[i];
+				if CheckCollectible(ref) then
+					costTotal = 1;
+					break;
+				end
 			end
 		end
 		local isCost = costTotal and true or nil;
@@ -135,9 +139,16 @@ local function UpdateCostsByCurrencyID(currencyID, refresh, refs)
 			c._CheckCollectible = isCost;
 			c._SettingsRefresh = refresh;
 		end
-	-- else app.PrintDebug("ItemID as Cost is not Sourced!",itemID)
-		return costs;
+	-- else app.PrintDebug("Currency as Cost is not Sourced!",currencyID)
 	end
+	return costs;
+end
+
+local function CostCalcStart()
+	app.print("Cost Updates Starting...")
+end
+local function CostCalcComplete()
+	app.print("Cost Updates Done")
 end
 
 local function UpdateCosts()
