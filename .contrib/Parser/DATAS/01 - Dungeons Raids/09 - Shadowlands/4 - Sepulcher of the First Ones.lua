@@ -824,7 +824,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 					i(182318),	-- Viscous Ink (CONDUIT!)
 				}),
 			}),
-			d(LFR_RAID, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Queue NPC
+			d(LFR_RAID, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Queue NPC
 				["crs"] = { 205959 },	-- Ta'elfar <Trader of Histories>
 				["coord"] = { 41.3, 71.0, ORIBOS },
 			})),
