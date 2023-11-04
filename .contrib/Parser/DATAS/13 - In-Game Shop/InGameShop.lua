@@ -426,8 +426,6 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		i(190220, {	-- Standard of the Guardian
 			["timeline"] = { "added 10.1.0.49444", "removed 10.1.0.49801" },	-- Removed from store May 31
-			["u"] = REMOVED_FROM_GAME,
-		--	["description"] = "Will be available from Trading Post later in 2023.",
 		}),
 		i(200925,	-- Ensemble: Solemn Watchman's Garb
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
