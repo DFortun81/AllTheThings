@@ -2565,7 +2565,7 @@ namespace ATT
                         }
                         else
                         {
-                            Log("Failed to duplicate criteria object due to missing 'achID': " + ToJSON(data));
+                            Log("Failed to duplicate criteria object due to missing 'achID'", data);
                         }
                         break;
                     case "achID":
@@ -2576,6 +2576,7 @@ namespace ATT
                         };
                         // verify that random other stuff contained within Achievements is not duplicated.... (like Raid Encounters...)
                         cloned.Remove("g");
+                        cloned.Remove("sym");
                         //if (cloned.TryGetValue("g", out List<object> achGroups))
                         //{
                         //    List<object> cleanedGroups = new List<object>();
@@ -2615,7 +2616,7 @@ namespace ATT
                         }
                         else
                         {
-                            Log("Failed to duplicate criteria object due to missing 'questID': " + ToJSON(data));
+                            Log("Failed to duplicate criteria object due to missing 'questID'", data);
                         }
                         break;
                         // handle other types of duplication sources if necessary
