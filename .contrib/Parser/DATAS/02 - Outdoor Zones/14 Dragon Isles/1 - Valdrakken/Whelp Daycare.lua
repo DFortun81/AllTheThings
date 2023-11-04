@@ -18,88 +18,88 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(ACHIEVEMENTS, {
 				ach(17782, {	-- Daycare Derby
 					i(197961),	-- Whelps on Strings (TOY!)
-					crit(1, {	-- Runaway Rusziona
+					crit(59192, {	-- Runaway Rusziona
 						["sourceQuests"] = { 74488 },	-- Runaway Rusziona
 					}),
-					crit(2, {	-- Zaleth on the Go
+					crit(59194, {	-- Zaleth on the Go
 						["sourceQuests"] = { 74490 },	-- Zaleth on the Go
 					}),
-					crit(3, {	-- Zhoomsa
+					crit(59193, {	-- Zhoomsa
 						["sourceQuests"] = { 74489 },	-- Zhoomsa
 					}),
-					crit(4, {	-- Pole Position Posidriss
+					crit(59195, {	-- Pole Position Posidriss
 						["sourceQuests"] = { 74491 },	-- Pole Position Posidriss
 					}),
-					crit(5, {	-- Blistering Belastrasza
+					crit(59196, {	-- Blistering Belastrasza
 						["sourceQuests"] = { 74492 },	-- Blistering Belastrasza
 					}),
 				}),
 				ach(18383, {	-- Hey Nanny Nanny
 					title(510),	-- Whelptender <Name>
-					crit(1, {	-- Rusziona
+					crit(60127, {	-- Rusziona
 						["sourceQuests"] = { 72461 },	-- Anatidaephobia
 					}),
-					crit(2, {	-- Belastrasza
+					crit(60128, {	-- Belastrasza
 						["sourceQuests"] = { 72995 },	-- Patience, Please
 					}),
-					crit(3, {	-- Zhusadormu
+					crit(60129, {	-- Zhusadormu
 						["sourceQuests"] = { 73002 },	-- Temporal Immunity
 					}),
-					crit(4, {	-- Zalethgos
+					crit(60130, {	-- Zalethgos
 						["sourceQuests"] = { 73009 },	-- Sight Isn't Everything
 					}),
-					crit(5, {	-- Posidriss
+					crit(60131, {	-- Posidriss
 						["sourceQuests"] = { 73016 },	-- Hibernation
 					}),
 				}),
 				ach(18384, {	-- Whelp, There It Is
 					i(205165),	-- Axel (PET!)
-					crit(1, {	-- A Wealth of Whelp Snacks
+					crit(60132, {	-- A Wealth of Whelp Snacks
 						["sourceQuests"] = { 73119 },	-- A Wealth of Whelp Snacks
 					}),
-					crit(2, {	-- Appetizing Aftermath
+					crit(60133, {	-- Appetizing Aftermath
 						["sourceQuests"] = { 73120 },	-- Appetizing Aftermath
 					}),
-					crit(3, {	-- Hoard Behavior
+					crit(60134, {	-- Hoard Behavior
 						["sourceQuests"] = { 73124 },	-- Hoard Behavior
 					}),
-					crit(4, {	-- Arts and Crafts and Baths
+					crit(60135, {	-- Arts and Crafts and Baths
 						["sourceQuests"] = { 73126 },	-- Arts and Crafts and Baths
 					}),
-					crit(5, {	-- Off the Page
+					crit(60136, {	-- Off the Page
 						["sourceQuests"] = { 73128 },	-- Off the Page
 					}),
-					crit(6, {	-- Fowl Runic Scribblings
+					crit(60137, {	-- Fowl Runic Scribblings
 						["sourceQuests"] = { 73130 },	-- Fowl Runic Scribblings
 					}),
-					crit(7, {	--  Dignified Disguises
+					crit(60138, {	--  Dignified Disguises
 						["sourceQuests"] = { 73131 },	--  Dignified Disguises
 					}),
-					crit(8, {	-- Scanning the Stacks
+					crit(60139, {	-- Scanning the Stacks
 						["sourceQuests"] = { 73132 },	-- Scanning the Stacks
 					}),
-					crit(9, {	-- Cozy Camouflage
+					crit(60140, {	-- Cozy Camouflage
 						["sourceQuests"] = { 73133 },	-- Cozy Camouflage
 					}),
-					crit(10, {	-- Eternal Escapades
+					crit(60141, {	-- Eternal Escapades
 						["sourceQuests"] = { 73134 },	-- Eternal Escapades
 					}),
-					crit(11, {	-- Obsidian Obfuscation
+					crit(60142, {	-- Obsidian Obfuscation
 						["sourceQuests"] = { 73135 },	-- Obsidian Obfuscation
 					}),
-					crit(12, {	-- Runaway Rusziona
+					crit(60143, {	-- Runaway Rusziona
 						["sourceQuests"] = { 74488 },	-- Runaway Rusziona
 					}),
-					crit(13, {	-- Zhoomsa
+					crit(60144, {	-- Zhoomsa
 						["sourceQuests"] = { 74489 },	-- Zhoomsa
 					}),
-					crit(14, {	-- Zaleth on the Go
+					crit(60145, {	-- Zaleth on the Go
 						["sourceQuests"] = { 74490 },	-- Zaleth on the Go
 					}),
-					crit(15, {	-- Pole Position Posidriss
+					crit(60146, {	-- Pole Position Posidriss
 						["sourceQuests"] = { 74491 },	-- Pole Position Posidriss
 					}),
-					crit(16, {	-- Blistering Belastrasza
+					crit(60147, {	-- Blistering Belastrasza
 						["sourceQuests"] = { 74492 },	-- Blistering Belastrasza
 					}),
 				}),

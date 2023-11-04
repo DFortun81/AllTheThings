@@ -5,100 +5,100 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 	m(THE_WAKING_SHORES, {
 		n(ACHIEVEMENTS, {
 			ach(16676, {	-- Adventurer of The Waking Shores
-				crit(1, {
+				crit(56033, {
 					["_npcs"] = { 196056 },	-- Gushgut the Beaksinker
 				}),
-				crit(2, {
+				crit(56034, {
 					["_npcs"] = { 193256 },	-- Nulltheria the Void Gazer
 				}),
-				crit(3, {
+				crit(56035, {
 					["_npcs"] = { 187945 },	-- Anhydros the Tidetaker
 				}),
-				crit(4, {
+				crit(56036, {
 					["_npcs"] = { 193181 },	-- Skewersnout <Raypier of the Deep>
 				}),
-				crit(5, {
+				crit(56037, {
 					["_npcs"] = { 193263 },	-- Helmet Missingway
 				}),
-				crit(6, {
+				crit(56038, {
 					["_npcs"] = { 192738 },	-- Brundin the Dragonbane <Qalashi War Party>
 				}),
-				crit(7, {
+				crit(56039, {
 					["_npcs"] = { 193217 },	-- Drakewing
 				}),
-				crit(8, {
+				crit(56040, {
 					["_npcs"] = { 193148 },	-- Thunderous Matriarch
 				}),
-				crit(9, {
+				crit(56041, {
 					["_npcs"] = { 193135 },	-- Azra's Prized Peony
 				}),
-				crit(10, {	-- Snappy
+				crit(56042, {	-- Snappy
 					["_npcs"] = { 193226 },	-- Gorjo the Crab Shackler
 				}),
-				crit(11, {
+				crit(56043, {
 					["_npcs"] = { 193118 },	-- O'nank Shorescour
 				}),
-				crit(12, {
+				crit(56044, {
 					["_npcs"] = { 193120 },	-- Smogswog the Firebreather
 				}),
-				crit(13, {
+				crit(56045, {
 					["_npcs"] = { 193132 },	-- Amethyzar the Glittering
 				}),
-				crit(14, {
+				crit(56046, {
 					["_npcs"] = { 186827 },	-- Magmaton
 				}),
-				crit(15, {
+				crit(56047, {
 					["_npcs"] = { 193152 },	-- Massive Magmashell
 				}),
-				crit(16, {
+				crit(56048, {
 					["_npcs"] = { 193154 },	-- Forgotten Gryphon
 				}),
-				crit(17, {
-					["_npcs"] = { 193134 },	-- Enkine the Voracious
-				}),
-				crit(18, {
-					["_npcs"] = { 193198 },	-- Captain Lancer
-				}),
-				crit(19, {
+				crit(57852, {
 					["_npcs"] = { 192362 },	-- Possessive Hornswog
 				}),
-				crit(20, {
+				crit(56049, {
+					["_npcs"] = { 193134 },	-- Enkine the Voracious
+				}),
+				crit(56050, {
+					["_npcs"] = { 193198 },	-- Captain Lancer
+				}),
+				crit(56052, {
 					["_npcs"] = { 186859 },	-- Worldcarver A'tir
 				}),
-				crit(21, {
+				crit(56053, {
 					["_npcs"] = { 190985 },	-- Death's Shadow
 				}),
-				crit(22, {
+				crit(56054, {
 					["_npcs"] = { 189822 },	-- Shas'ith
 				}),
-				crit(23, {
+				crit(56055, {
 					["_npcs"] = { 193266 },	-- Lepidoralia the Resplendent
 				}),
-				crit(24, {
+				crit(56056, {
 					["_npcs"] = { 186783 },	-- Cauldronbearer Blakor
 				}),
-				crit(25, {
+				crit(56057, {
 					["_npcs"] = { 187598 },	-- Rohzor Forgesmash <Djaradin Smithmaster>
 				}),
-				crit(26, {
+				crit(56058, {
 					["_npcs"] = { 187886 },	-- Turboris
 				}),
-				crit(27, {
+				crit(56059, {
 					["_npcs"] = { 190986 },	-- Battlehorn Pyrhus
 				}),
-				crit(28, {
+				crit(56060, {
 					["_npcs"] = { 190991 },	-- Char
 				}),
-				crit(29, {
+				crit(56061, {
 					["_npcs"] = { 193232 },	-- Rasnar the War Ender
 				}),
-				crit(30, {
+				crit(56988, {
 					["_npcs"] = { 187306 },	-- Morchok <Harbinger of Twilight>
 				}),
-				crit(31, {
+				crit(56989, {
 					["_npcs"] = { 193271 },	-- Shadeslash Trakken
 				}),
-				crit(32, {
+				crit(57003, {
 					["_npcs"] = { 193175 },	-- Slurpo, the Incredible Snail
 				}),
 			}),
@@ -126,19 +126,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}
 			}),
 			achraw(16406, {	-- All Sides of the Story
-				crit(1, {	-- Captain Garrick & Shuja Grimaxe
+				crit(55253, {	-- Captain Garrick & Shuja Grimaxe
 					["sourceQuests"] = {
 						70135,	-- Encroaching Elementals [A]
+					},
+					["races"] = ALLIANCE_ONLY,
+				}),
+				crit(55254, {	-- Captain Garrick & Shuja Grimaxe
+					["sourceQuests"] = {
 						66111,	-- Encroaching Elementals [H]
 					},
+					["races"] = HORDE_ONLY,
 				}),
-				crit(2, {	-- Duroz & Kolgar
+				crit(55246, {	-- Duroz & Kolgar
 					["_quests"] = { 70708 },	-- Hallow
 				}),
-				crit(3, {	-- Tarjin the Blind
+				crit(55244, {	-- Tarjin the Blind
 					["_quests"] = { 70779 },	-- Tarjin's Tales
 				}),
-				crit(4, {	-- Veritistrasz
+				crit(55245, {	-- Veritistrasz
 					["_quests"] = { 70268 },	-- Memories Revived
 				}),
 			}),

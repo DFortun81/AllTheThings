@@ -123,30 +123,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 30.5, 45.3, ZARALEK_CAVERN },
 			}),
 			ach(17739, {	-- Embers of Neltharion
-				-- crit(1, {	-- A Creche Divided
-				-- 	["sourceQuests"] = { 73156 },	-- Return to Viridia
-				-- }),
-				-- crit(2, {	-- Breaking Ground
-				-- 	["sourceQuests"] = { 75644 },	-- Six Hundred Feet Under
-				-- }),
-				-- crit(3, {	-- Sundered Legacy
-				-- 	["sourceQuests"] = { 72965 },	-- Aspects of Our Legacy
-				-- }),
-				-- crit(4, {	-- The Ancient Bargain
-				-- 	["sourceQuests"] = { 75145 },	-- In the Wake of the Ashes
-				-- }),
-				-- crit(5, {	-- Inherited Sin
-				-- 	["sourceQuests"] = {
-				-- 		74562 ,	-- Break Them Out
-				-- 		74563 ,	-- Worst of the Worst
-				-- 	},
-				-- }),
-				-- crit(6, {	-- Inevitable Confrontation
-				-- 	["sourceQuests"] = { 72930 },	-- Stopping Sarkareth
-				-- }),
-				-- crit(7, {	-- A Flame, Extinguished
-				-- 	["sourceQuests"] = { 75417 },	-- Symbol of Hope
-				-- }),
 				crit(58530, {	-- A Creche Divided
 					["sourceQuests"] = { 73156 },	-- Return to Viridia
 				}),

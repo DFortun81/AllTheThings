@@ -318,16 +318,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 			}),
 			ach(14738, {	-- Hunting Party
-				crit(1, {	-- Complete Hunt: Shadehounds
+				crit(49251, {	-- Complete Hunt: Shadehounds
 					["_quests"] = { 63180 }
 				}),
-				crit(2, {	-- Complete Hunt: Soul Eaters
+				crit(49238, {	-- Complete Hunt: Soul Eaters
 					["_quests"] = { 63199 }
 				}),
-				crit(3, {	-- Complete Hunt: Death Elemental
+				crit(49248, {	-- Complete Hunt: Death Elemental
 					["_quests"] = { 63198 }
 				}),
-				crit(4, {	-- Complete Hunt: Winged Soul Eaters
+				crit(51060, {	-- Complete Hunt: Winged Soul Eaters
 					["_quests"] = { 63194 }
 				}),
 			}),

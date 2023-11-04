@@ -171,42 +171,42 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 			ach(15229, {	-- Traversing the Spheres
 				i(187860),	-- Mortis Mover (TOY!)
-				crit(1, {	-- Pollinated Extraction
+				crit(52610, {	-- Pollinated Extraction
 					["provider"] = { "i", 187879 },	-- Pollinated Extraction
 					["coord"] = { 60.4, 76.2, ZERETH_MORTIS },
 				}),
-				crit(2, {	-- Honeycombed Lattice
+				crit(52611, {	-- Honeycombed Lattice
 					["provider"] = { "i", 187885 },	-- Honeycombed Lattice
 					["coord"] = { 64.1, 59.4, ZERETH_MORTIS },
 				}),
-				crit(3, {	-- Anima-charged Yolk
+				crit(52612, {	-- Anima-charged Yolk
 					["provider"] = { "i", 187890 },	-- Anima-charged Yolk
 				}),
-				crit(4, {	-- Unstable Agitant
+				crit(52613, {	-- Unstable Agitant
 					["provider"] = { "i", 187889 },	-- Unstable Agitant
 					["coord"] = { 25.5, 56.7, ZERETH_MORTIS },
 				}),
-				crit(5, {	-- Empyrean Essence
+				crit(52614, {	-- Empyrean Essence
 					["provider"] = { "i", 187891 },	-- Empyrean Essence
 					["coord"] = { 46.1, 71.0, ZERETH_MORTIS },
 				}),
-				crit(6, {	-- Incorporeal Sand
+				crit(52615, {	-- Incorporeal Sand
 					["provider"] = { "i", 187892 },	-- Incorporeal Sand
 					["coord"] = { 43.2, 29.0, ZERETH_MORTIS },
 				}),
-				crit(7, {	-- Volatile Precursor
+				crit(52616, {	-- Volatile Precursor
 					["provider"] = { "i", 187893 },	-- Volatile Precursor
 					["coord"] = { 43.5, 57.9, ZERETH_MORTIS },
 				}),
-				crit(8, {	-- Energized Firmament
+				crit(52617, {	-- Energized Firmament
 					["provider"] = { "i", 187894 },	-- Energized Firmament
 					["coord"] = { 53.3, 30.8, ZERETH_MORTIS },
 				}),
-				crit(9, {	-- Wayward Essence
+				crit(53057, {	-- Wayward Essence
 					["provider"] = { "i", 190128 },	-- Wayward Essence
 					["coord"] = { 32.7, 40.7, ZERETH_MORTIS },
 				}),
-				crit(10, {	-- Serene Pigment
+				crit(53058, {	-- Serene Pigment
 					["provider"] = { "i", 190129 },	-- Serene Pigment
 					["coord"] = { 34.5, 46.6, ZERETH_MORTIS },
 				}),

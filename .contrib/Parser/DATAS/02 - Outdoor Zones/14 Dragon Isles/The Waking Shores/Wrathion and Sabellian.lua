@@ -18,36 +18,44 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		n(-1102, {	-- Wrathion & Sabellian
 			n(ACHIEVEMENTS, {
 				ach(16497, {	-- I'm Playing All Sides
-					crit(1, {	-- Sabellian
-						["_quests"] = {
+					crit(55860, {	-- Sabellian
+						["sourceQuests"] = {
 							72338,	-- Greater Obsidian Key
+						},
+					}),
+					crit(55861, {	-- Sabellian
+						["sourceQuests"] = {
 							66131,	-- Unlocking Our Past
 						},
 					}),
-					crit(2, {	-- Wrathion
-						["_quests"] = {
+					crit(55862, {	-- Wrathion
+						["sourceQuests"] = {
 							72337,	-- Greater Obsidian Key
+						},
+					}),
+					crit(55863, {	-- Wrathion
+						["sourceQuests"] = {
 							66130,	-- Unlocking our Past
 						},
 					}),
-					crit(3, {	-- Forgemaster Bazentus
-						["_quests"] = { 66126 },	-- Unlocking Our Past
+					crit(57972, {	-- Forgemaster Bazentus
+						["sourceQuests"] = { 66126 },	-- Unlocking Our Past
 					}),
-					crit(4, {	-- Igys the Believer
-						["_quests"] = { 66129 },	-- Unlocking Our Past
+					crit(55864, {	-- Igys the Believer
+						["sourceQuests"] = { 66129 },	-- Unlocking Our Past
 					}),
 				}),
 				ach(16496, {	-- Obsidian Champion
-					crit(1, {
+					crit(57868, {
 						["_quests"] = { 67015 },	-- Forging the Answer
 					}),
-					crit(2, {
+					crit(56053, {
 						["_quests"] = { 67027 },	-- Death's Shadow
 					}),
-					crit(3, {
+					crit(56988, {
 						["_quests"] = { 66901 },	-- Breaking the World
 					}),
-					crit(4, {
+					crit(56054, {
 						["_quests"] = { 66903 },	-- Clearing the Vault
 					}),
 				}),
