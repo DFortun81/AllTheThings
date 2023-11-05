@@ -1761,20 +1761,6 @@ namespace ATT
             if (!CheckTimeline(data))
                 return false;
 
-            data.TryGetValue("g", out List<object> g);
-            int subGroupCount = g?.Count ?? 0;
-            // no sub-groups, remove the g field
-            if (subGroupCount == 0)
-            {
-                data.Remove("g");
-                // certain types with empty groups shouldn't be included
-                if (data.ContainsKey("achievementCategoryID"))
-                {
-                    Log($"Sourced Achievement Category {data["achievementCategoryID"]} contained no content after Parsing");
-                    return false;
-                }
-            }
-
             Consolidate_cost(data);
             Consolidate_providers(data);
             Consolidate_sourceQuests(data);
@@ -1790,6 +1776,26 @@ namespace ATT
             Items.DetermineSourceID(data);
             Objects.AssignFactionID(data);
             CheckObjectConversion(data);
+
+            data.TryGetValue("g", out List<object> g);
+            int subGroupCount = g?.Count ?? 0;
+            // no sub-groups, remove the g field
+            if (subGroupCount == 0)
+            {
+                data.Remove("g");
+                // certain types with empty groups shouldn't be included
+                if (data.TryGetValue("achievementCategoryID", out long achievementCategoryID))
+                {
+                    Log($"INFO: Sourced Achievement Category {achievementCategoryID} contained no content after Parsing", data);
+                    return false;
+                }
+                // headers with nothing in them and no relevant data shouldn't be included
+                //if (data.TryGetValue("headerID", out long headerID) && headerID < 0 && !data.ContainsKey("sym") && !data.ContainsKey("questID"))
+                //{
+                //    LogDebug($"INFO: Sourced Header {headerID} contained no content after Parsing", data);
+                //    return false;
+                //}
+            }
 
             Consolidate_ConflictingFields(data);
 
