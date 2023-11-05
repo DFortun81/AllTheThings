@@ -3,7 +3,7 @@
 -----------------------------------------------------
 WARCRAFT_RUMBLE = createHeader({
 	readable = "Warcraft Rumble",
-	icon = "",
+	icon = "4226119",
 	text = {
 		en = "Warcraft Rumble",
 	},

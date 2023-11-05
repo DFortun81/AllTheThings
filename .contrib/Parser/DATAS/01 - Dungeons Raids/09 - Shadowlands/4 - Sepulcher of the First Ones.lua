@@ -832,25 +832,25 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 			-- #ENDIF
 			d(LFR_RAID, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
 				n(ZONE_DROPS, ZONE_DROPS_GROUP),
-				header(HEADERS.Achievement, 15493, {	-- Ephemeral Plains
+			--	header(HEADERS.Achievement, 15493, {	-- Ephemeral Plains
 					boss(VIGILANT_GUARDIAN),
 					boss(SKOLEX_THE_INSATIABLE_RAVENER),
 					boss(ARTIFICER_XYMOX),
 					boss(HALONDRUS_THE_RECLAIMER),
-				}),
-				header(HEADERS.Achievement, 15492, {	-- Cornerstone of Creation
+			--	}),
+			--	header(HEADERS.Achievement, 15492, {	-- Cornerstone of Creation
 					boss(DAUSEGNE_THE_FALLEN_ORACLE),
 					boss(PROTOTYPE_PANTHEON),
 					boss(LIHUVIM_PRINCIPAL_ARCHITECT),
-				}),
-				header(HEADERS.Achievement, 15416, {	-- Domination's Grasp
+			--	}),
+			--	header(HEADERS.Achievement, 15416, {	-- Domination's Grasp
 					boss(ANDUIN_WRYNN),
 					boss(LORDS_OF_DREAD),
 					boss(RYGELON),
-				}),
-				header(HEADERS.Achievement, 15418, {	-- The Grand Design
+			--	}),
+			--	header(HEADERS.Achievement, 15418, {	-- The Grand Design
 					boss(THE_JAILER),
-				}),
+			--	}),
 			})),
 			d(NORMAL_PLUS_RAID, {
 				bossNoLoot(VIGILANT_GUARDIAN, {

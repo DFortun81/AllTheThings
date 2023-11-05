@@ -207,7 +207,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 			o(405538, {	-- Loose Dirt Mound
 				["questID"] = 77299,
 				["coord"] = { 57.8, 26.3, NAGRAND },
-				["description"] = "Look to the island floating in the air.",
+				["description"] = "On the island floating in the air.",
 			}),
 			o(410181, {	-- Loose Dirt Mound
 				["questID"] = 78208,
@@ -224,7 +224,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					{ 36.8, 35.6, GRIZZLY_HILLS }, -- Start of Log Ride
 					{ 20.2, 81.3, GRIZZLY_HILLS }, -- Loose Dirt Mound
 				},
-				["description"] = "Take the log ride, must have WHEE! buff for Loose Dirt Mound to be visible.",
+				["description"] = "Talk to the NPC at the northern waypoint to take a ride on the log. At the end, you will receive the WHEE! buff which is required to see the Loose Dirt Mound.",
 			}),
 			o(409835, {	-- Loose Dirt Mound
 				["questID"] = 77300,
