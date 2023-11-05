@@ -40,6 +40,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						{ 55.6, 55.0, ZARALEK_CAVERN },
 					},
 					["isWeekly"] = IGNORED_VALUE,
+					["isBreadcrumb"] = true,
 				}),
 				q(75888, {	-- Suffusion Camp
 					["providers"] = {

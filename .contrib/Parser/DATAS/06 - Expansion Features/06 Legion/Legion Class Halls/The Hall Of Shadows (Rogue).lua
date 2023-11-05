@@ -768,12 +768,13 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					})),
 					-- Side Quest
 					q(47591, {	-- Wanna Buy a Lamp?
-						["sourceQuests"] = {
-							42504,	-- The Unseen Blade (A)
-							42627,	-- The Unseen Blade (H)
-							40849,	-- The Dreadblades
-							41924,	-- Fangs of the Devourer
-						},
+						-- TODO: Determine actual sourceQuests 3 Retail-Errors reports with these not being completed
+						-- ["sourceQuests"] = {
+						-- 	42504,	-- The Unseen Blade (A)
+						-- 	42627,	-- The Unseen Blade (H)
+						-- 	40849,	-- The Dreadblades
+						-- 	41924,	-- Fangs of the Devourer
+						-- },
 						["provider"] = { "n", 103792 },	-- Griftah
 						["coord"] = { 45.4, 27.6, THE_HALL_OF_SHADOWS },
 						["timeline"] = { "added 7.2.5" },

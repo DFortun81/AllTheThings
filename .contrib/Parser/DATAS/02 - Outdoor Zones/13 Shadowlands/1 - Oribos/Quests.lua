@@ -610,21 +610,27 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 62763 },	-- Support the Court
 				["provider"] = { "n", 172431 },	-- Lady Moonberry <Court of Night>
 				["coord"] = { 49.2, 52.2, ARDENWEALD },
+				-- #if BEFORE DF
 				["lvl"] = { 48, 60 },
+				-- #endif
 			}),
 			------ Bastion ------
 			q(62729, {	-- Return to Oribos
 				["sourceQuests"] = { 62723 },	-- Bolstering Bastion
 				["provider"] = { "n", 159478 },	-- Kalisthene
 				["coord"] = { 51.1, 43.7, BASTION },
+				-- #if BEFORE DF
 				["lvl"] = { 48, 60 },
+				-- #endif
 			}),
 			------ Maldraxxus ------
 			q(62761, {	-- Return to Oribos
 				["sourceQuests"] = { 62748 },	-- Rallying Maldraxxus
 				["provider"] = { "n", 175008 },	-- Secutor Mevix
 				["coord"] = { 52.8, 68.2, MALDRAXXUS },
+				-- #if BEFORE DF
 				["lvl"] = { 48, 60 },
+				-- #endif
 			}),
 			------ Revendreth ------
 			q(62779, {	-- Return to Oribos
@@ -637,7 +643,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					{ 52.0, 38.6, SINFALL_REACHES },	-- Prince Renathal [for Venthyr]
 					{ 61.4, 60.2, REVENDRETH },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
 				},
+				-- #if BEFORE DF
 				["lvl"] = { 48, 60 },
+				-- #endif
 			}),
 			------ Battlegrounds ------
 			pvp(q(65034, {	-- Return to Oribos
