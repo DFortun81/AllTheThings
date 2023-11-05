@@ -1296,7 +1296,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 514,	-- Smith Argus
 					["coord"] = { 41.7, 65.5, ELWYNN_FOREST },
 					["timeline"] = { "added 4.0.3" },
-					["races"] = { HUMAN },
+					["races"] = { HUMAN, KULTIRAN },
 				}),
 				q(26150, {	-- A Visit With Maybell
 					["qg"] = 253,	-- William Pestle

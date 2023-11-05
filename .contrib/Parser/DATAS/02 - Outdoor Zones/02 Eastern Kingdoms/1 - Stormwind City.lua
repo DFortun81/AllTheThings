@@ -3470,7 +3470,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 26394,	-- Continue to Stormwind
 					["coord"] = { 77.0, 61.2, STORMWIND_CITY },
 					["timeline"] = { "added 4.0.3" },
-					["races"] = { HUMAN },
+					["races"] = { HUMAN, KULTIRAN },
 				}),
 				q(25156, {	-- Elemental Goo
 					["qg"] = 50480,	-- Isabel Jones
@@ -4430,7 +4430,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 26395,	-- Dungar Longdrink
 					["coord"] = { 71.0, 72.6, STORMWIND_CITY },
 					["timeline"] = { "added 4.0.3" },
-					["races"] = { HUMAN },
+					["races"] = { HUMAN, KULTIRAN },
 				}),
 				q(6285, {	-- Return to Lewis
 					["providers"] = {
