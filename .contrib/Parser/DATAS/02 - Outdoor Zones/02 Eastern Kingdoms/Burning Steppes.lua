@@ -1784,9 +1784,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(14482, {	-- Pattern: Cindercloth Cloak
 					["cr"] = 7037,	-- Thaurissan Firewalker
+					["coords"] = {
+						{43.8, 39.4, BURNING_STEPPES},
+						{58.8, 37.2, BURNING_STEPPES},
+					},
 				}),
 				i(14490, {	-- Pattern: Cindercloth Pants
 					["cr"] = 7037,	-- Thaurissan Firewalker
+					["coords"] = {
+						{43.8, 39.4, BURNING_STEPPES},
+						{58.8, 37.2, BURNING_STEPPES},
+					},
 				}),
 				-- #if AFTER 10.0.5
 				i(15738, {	-- Pattern: Heavy Scorpid Gauntlets (RECIPE!)

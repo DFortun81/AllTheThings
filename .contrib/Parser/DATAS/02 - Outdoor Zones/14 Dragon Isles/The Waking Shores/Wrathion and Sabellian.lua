@@ -893,6 +893,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				i(194508, {	-- Plans: Alvin the Anvil (RECIPE!)
 					["description"] = "Drops Around Obsidian Citadel from Powerful Blacksmiths.",
+					["crs"] = { 187598 },	-- Rohzor Forgesmash
 				}),
 				i(194481, {	-- Plans: Obsidian Seared Crusher (RECIPE!)
 					["description"] = "Drops Around Obsidian Citadel.",

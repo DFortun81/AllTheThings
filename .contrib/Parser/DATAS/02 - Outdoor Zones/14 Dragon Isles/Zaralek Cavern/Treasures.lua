@@ -131,11 +131,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 			}),
 			o(386086, {	-- Seething Cache
-				["description"] = "You'll need to pick up 3x stacks of a Insidious Insight debuff from Seething Orbs located in the Zaqali Caldera",
+				["description"] = "You'll need to pick up 3x stacks of a Insidious Insight debuff from Seething Orbs located in the Zaqali Caldera (Plot coords in Debug).\n\nWarning: While you may click each Seething Orb with multiple players, when the first player clicks the Seething Cache, the debuff will be removed from all nearby players and the cache itself will be gone!",
 				["coord"] = { 32.3, 39.4, ZARALEK_CAVERN },
 				["questID"] = 73410,
 				["g"] = {
 					i(192779),	-- Seething Slug (MOUNT!)
+					o(386083, {	-- Seething Orb
+						["coords"] = {
+							{25.2, 44.8, ZARALEK_CAVERN},
+							{26.8, 46.9, ZARALEK_CAVERN},
+							{27.7, 49.0, ZARALEK_CAVERN},
+							{28.0, 51.3, ZARALEK_CAVERN},
+							{28.7, 55.3, ZARALEK_CAVERN},
+							{29.1, 42.5, ZARALEK_CAVERN},
+							{29.9, 48.0, ZARALEK_CAVERN},
+							{30.2, 40.0, ZARALEK_CAVERN},
+							{31.2, 51.9, ZARALEK_CAVERN},
+							{32.7, 52.2, ZARALEK_CAVERN},
+							{34.4, 45.7, ZARALEK_CAVERN},
+							{35.7, 48.8, ZARALEK_CAVERN},
+							{35.8, 41.4, ZARALEK_CAVERN},
+							{36.2, 44.0, ZARALEK_CAVERN},
+							{37.6, 46.7, ZARALEK_CAVERN},
+						},
+					}),
 				},
 			}),
 			o(386080, {	-- Scorching Key

@@ -904,8 +904,12 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					18821,	-- Geologist's Ledger - Overloaded Elements
 				}},
 				["g"] = {
-					crit(4),	-- Iridescent Ore Recovered
-					crit(5),	-- Elementally-Charged Stone Recovered
+					crit(4, {	-- Iridescent Ore Recovered
+						["provider"] = {"i",201301},	-- Iridescent Ore
+					}),
+					crit(5, {	-- Elementally-Charged Stone Recovered
+						["provider"] = {"i",202011},	-- Elementally-Charged Stone
+					}),
 				},
 			}),
 			ach(18819, {	-- Geologist's Ledger - Draconium

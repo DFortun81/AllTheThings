@@ -204,6 +204,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(159753, { -- Ravenomous
 				["description"] = "Crush Boneweave Spiderlings in the area for a chance to spawn the rare.  After flying around for a little while, it will land and be attackable.",
 				["coord"] = { 54.0, 18.4, MALDRAXXUS },
+				["crs"] = { 159901 },	-- Boneweave Spiderling
 				["questID"] = 58004,
 				["g"] = {
 					i(181283),	-- Foulwing Buzzer (PET!)
