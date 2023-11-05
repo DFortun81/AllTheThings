@@ -178,9 +178,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["isDaily"] = true,
 			["description"] = "Inside a hidden underwater cave beneath the waterfall.",
 			["g"] = {
-				crit(8, {	-- I Thought You Said They'd Be Rare?
-					["achievementID"] = 13691,
-				}),
 				i(170167),	-- Eel Filet
 			},
 		}),
