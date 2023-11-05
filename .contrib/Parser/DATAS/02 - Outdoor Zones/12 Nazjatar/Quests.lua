@@ -1870,7 +1870,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["sourceQuest"] = 56047,	-- We Can't Have Dull Weapons
 		}),
 		q(56075, {	-- Stolen Power
-			["provider"] = { "i", 154064 },	-- Axol Darksea
+			["provider"] = { "n", 154064 },	-- Axol Darksea
 			["coord"] = { 59.0, 19.0, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
