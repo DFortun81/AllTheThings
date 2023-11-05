@@ -65,5 +65,6 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			i(151008),	-- Vilefiend Fang
 			i(151007),	-- Ur'zul Ichor
 		}),
+		currency(1508),	-- Veiled Argunite
 	}),
 })));

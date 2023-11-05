@@ -470,6 +470,14 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 			i(136713),	-- Shadowruby Band
 			i(130224),	-- Skystone Loop
 		}),
+		spell(31252, {	-- Prospecting
+			i(151718),	-- Argulite
+			i(151720),	-- Chemirine
+			i(151722),	-- Florid Malachite
+			i(151721),	-- Hesselian
+			i(151579),	-- Labradorite
+			i(151719),	-- Lightsphene
+		}),
 	}),
 	prof(LEATHERWORKING, {
 		n(ARMOR, {

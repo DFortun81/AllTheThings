@@ -140,6 +140,9 @@ root(ROOTS.WorldDrops, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.
 		i(121378),	-- Saga of Elandrul
 		i(121375),	-- Voo's Juicer
 	}),
+	filter(REAGENTS, {
+		i(151567),	-- Lightweave Cloth
+	}),
 	filter(RECIPES, {
 		prof(ALCHEMY, {
 			i(142119),	-- Recipe: Potion of Prolonged Power [Rank 1] (RECIPE!)

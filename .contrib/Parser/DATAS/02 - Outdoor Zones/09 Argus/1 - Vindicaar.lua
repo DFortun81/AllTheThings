@@ -435,6 +435,32 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				}),
 			}),
 			n(VENDORS, {
+				n(129674, {	-- Maras <Primal Sargerite Trader>
+					["coords"] = {
+						{ 57.0, 66.0, THE_VINDICAAR_ANTORAN_WASTES_LOWER },
+						{ 42.0, 58.6, THE_VINDICAAR_EREDATH_LOWER },
+						{ 40.6, 65.6, THE_VINDICAAR_KROKUUN_LOWER },
+					},
+					["groups"] = appendAllGroups(
+						sharedData({
+							["cost"] = {{"i",151568,1}},	-- Primal Sargerite
+						},{
+							i(151565),	-- Astral Glory
+							i(151564),	-- Empyrium
+							i(151566),	-- Fiendish Leather
+							i(151567),	-- Lightweave Cloth
+						}),
+						sharedData({
+							["cost"] = {{"i",151568,10}},	-- Primal Sargerite
+						},{
+							i(151718),	-- Argulite
+							i(151720),	-- Chemirine
+							i(151722),	-- Florid Malachite
+							i(151721),	-- Hesselian
+							i(151579),	-- Labradorite
+							i(151719),	-- Lightsphene
+						})),
+				}),
 				n(127120, {	-- Vindicator Jaelaana <Army of the Light Emissary>
 					["coords"] = {
 						{ 44.8, 75.0, THE_VINDICAAR_KROKUUN_UPPER },
