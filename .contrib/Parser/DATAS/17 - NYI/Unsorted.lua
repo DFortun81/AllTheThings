@@ -501,10 +501,6 @@ root(ROOTS.Unsorted, {
 				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(54447, {
-				["description"] = "Category: |cFFf09f26The Zandalari|r",
-				["lvl"] = 50,
-			}),
 			q(53723),	--
 			q(54215),	--
 			q(54216),	--

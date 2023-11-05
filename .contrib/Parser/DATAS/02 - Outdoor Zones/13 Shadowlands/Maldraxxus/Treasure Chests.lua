@@ -295,9 +295,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(358315, {		-- Skeletal Hand Fragments
-				["description"] = "You must possess the Animated Ulna and Animated Radius to interact with this object.",
 				["coord"] = { 47.4, 62.1, MALDRAXXUS },
 				["questID"] = 62318,
+				["cost"] = {
+					{"i",183111,1},	-- Animated Ulna
+					{"i",183112,1},	-- Animated Radius
+				},
 				["g"] = {
 					i(183113),	-- Flexing Phalanges
 				},

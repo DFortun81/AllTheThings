@@ -4,6 +4,9 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		n(SPECIAL, {
+			i(189167, {	-- Glimmer of Satisfaction
+				["description"] = "Eating a feast has a chance to spawn this item in your inventory.",
+			}),
 			o(375516, {	-- Lost Comb
 				["description"] = "Almost at the top of the pillar in a little nest attached to the side of the pillar. Require flying but might be doable during Portal Play and with Venthyr Ability.",
 				["coord"] = { 63.3, 60.5, ZERETH_MORTIS },
@@ -36,8 +39,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					i(189989),	-- Penguin Soul (SS!)
 				},
 			}),
-			i(189167, {	-- Glimmer of Satisfaction
-				["description"] = "Eating a feast has a chance to spawn this item in your inventory.",
+			i(187662, {	-- Strange Goop
+				["description"] = "Can be fished from around Hirukon spawn point, or purchased from auction house.",
+				["coord"] = { 52.2, 75.2, ZERETH_MORTIS },
 			}),
 		})
 	}),

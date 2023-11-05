@@ -2193,6 +2193,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
+					n(SPECIAL, {
+						o(373438, {	-- Coilclutch Vine
+							["timeline"] = { ADDED_9_2_5 },
+							["coord"] = { 34.7, 75, 205 },
+							["cost"] = {{"i",187662,1}},	-- Strange Goop
+							["g"] = {
+								i(187916),	-- Coilclutch Vine
+							},
+						}),
+					}),
 					n(VENDORS, {
 						n(50324, {	-- Provisioner Arok <Earthen Ring Quartermaster>
 							["coord"] = { 49.1, 42.1, 205 },

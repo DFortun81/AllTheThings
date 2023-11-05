@@ -223,44 +223,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				},
 			}),
 			n(180978, {	-- Hirukon <Aurelid Prime>
-				["description"] = "To see how to summon this boss use Debug Mode.",
 				["coord"] = { 52.2, 75.2, ZERETH_MORTIS },
+				["cost"] = {{"i",187923,1}},	-- Aurelid Lure
 				["questID"] = 65548,
 				["g"] = {
-					i(187923, {	-- Aurelid Lure
-						["description"] = "Step 1: Fish up Strange Goop from the water around Hirukon.\nStep 2: Talk to Vashj in Maldraxxus.\nStep 3: Collect the Three items needed.\nStep 4: Collect the Aurelid Lure from Vashj.",
-						["cr"] = 182194,	--- Baroness Vashj
-						["coord"] = { 57.6, 92, MALDRAXXUS },
-						["questID"] = 65039,
-						["isWeekly"] = true,
-						["g"] = {
-							i(187662, {	-- Strange Goop
-								["description"] = "To start the questline fish up this item from around Hirukon spawn point.",
-								["coord"] = { 52.2, 75.2, ZERETH_MORTIS },
-							}),
-							o(373438, {	-- Coilclutch Vine
-								["description"] = "Found in the Shimmering Expanse",
-								["coord"] = { 34.7, 75, 205 },
-								["g"] = {
-									i(187916),	-- Coilclutch Vine
-								},
-							}),
-							o(373439, {	--  Flipper Fish School
-								["description"] = "Found in the Nazjatar",
-								["coord"] = { 72.8, 24.3, NAZJATAR },
-								["g"] = {
-									i(187922),	-- Flipper Fish
-								},
-							}),
-							o(373437, {	-- Pungent Blobfish Cluster
-								["description"] = "Found in the Colifang Reservoir",
-								["coord"] = { 52.2, 37.9, ZANGARMARSH },
-								["g"] = {
-									i(187915),	-- Pungent Blobfish
-								},
-							}),
-						},
-					}),
 					i(187676, {	-- Deepstar Polyp (MOUNT!)
 						["description"] = "This mount has 100% drop chance if you do the summon.",
 					}),

@@ -1381,6 +1381,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
+				n(SPECIAL, {
+					o(373437, {	-- Pungent Blobfish Cluster
+						["timeline"] = { ADDED_9_2_5 },
+						["description"] = "Inside Coilfang Reservoir area.",
+						["cost"] = {{"i",187662,1}},	-- Strange Goop
+						["coord"] = { 52.2, 37.9, ZANGARMARSH },
+						["g"] = {
+							i(187915),	-- Pungent Blobfish
+						},
+					}),
+				}),
 				n(VENDORS, {
 					n(18581, {	-- Alliance Field Scout
 						["coord"] = { 64.6, 46.4, ZANGARMARSH },
