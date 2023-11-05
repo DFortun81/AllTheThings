@@ -492,7 +492,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					{ "i", 200938, 1 },	-- 1x Empty Soul Cage
 					{ "i", 199414, 1 },	-- 1x Zapthrottle Soul Inhaler
 				},
-				["coord"] = { 49.8, 32.8, THE_WAKING_SHORES },
+				["coords"] = { 
+					{ 49.8, 32.8, THE_WAKING_SHORES },
+					{ 46.8, 32.8, THE_WAKING_SHORES },
+					{ 77.8, 38.8, THE_AZURE_SPAN },
+				},
 				["g"] = {
 					i(201297, {	-- Docile Earthen Soul
 						i(193920),	-- Earthen Soul
@@ -500,7 +504,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 				},
 			}),
-			i(200931, {	-- Encaged Firey Soul
+			i(200931, {	-- Encaged Fiery Soul
 				["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 				["cost"] = {
 					{ "i", 200938, 1 },	-- 1x Empty Soul Cage
