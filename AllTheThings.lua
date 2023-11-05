@@ -22017,7 +22017,7 @@ local function PrePopulateAchievementSymlinks()
 	-- app.PrintDebug("FillAchSym")
 	if achCache then
 		local FillSym = app.FillAchievementCriteriaAsync
-		app.FillRunner.SetPerFrame(1000)
+		app.FillRunner.SetPerFrame(500)
 		local Run = app.FillRunner.Run
 		local group
 		for achID,groups in pairs(achCache) do
