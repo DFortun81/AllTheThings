@@ -921,7 +921,7 @@ localize(L.HEADER_ICONS, {
 	[-1000276] = "Interface/Icons/inv_jewelry_amulet_03",
 	[-1000277] = "Interface/Icons/ACHIEVEMENT_GUILDPERK_LADYLUCK",
 	[-1000278] = "Interface/Icons/INV_MISC_FILM_01",
-	[-1000279] = "",
+	[-1000279] = "4226119",
 	[-1000280] = "Interface/Icons/inv_chest_leather_08",
 	[-1000281] = "Interface/Icons/inv_mace_1h_bastionquest_b_02",
 	[-1000282] = "Interface/Icons/inv_misc_questionmark",
