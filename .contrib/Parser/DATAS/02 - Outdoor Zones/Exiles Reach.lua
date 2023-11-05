@@ -1161,6 +1161,12 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 			o(329919, {	-- Stolen Supplies
 				["coord"] = { 59.3, 37.6, EXILES_REACH },
 				["questID"] = 56581,
+				["groups"] = {
+					i(174811),	-- Stitched Cloth Tunic
+					i(174812),	-- Stitched Leather Tunic
+					i(174814),	-- Dented Chestpiece
+					i(174813),	-- Linked Mail Hauberk
+				},
 			}),
 			o(327407, {	-- Precious Ogre Stash
 				["coord"] = { 41.8, 42.8, EXILES_REACH },
