@@ -625,7 +625,8 @@ root(ROOTS.Zones, {
 							{ "n", 63535 },	-- Elder Shiao
 						},
 						["altQuests"] = {
-							30768,	-- My Husband...
+							31386,	-- The Shado-Pan Offensive (A)
+							31388,	-- The Shado-Pan Offensive (H)
 						},
 						["sourceQuests"] = {
 							30660,	-- The Ordo Warbringer (A)
@@ -1095,6 +1096,8 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 30992,	-- Finish This!
 						["altQuests"] = {
 							31695,	-- Beyond the Wall
+							31386,	-- The Shado-Pan Offensive (A)
+							31388,	-- The Shado-Pan Offensive (H)
 						},
 					}),
 					q(30467, {	-- My Son...

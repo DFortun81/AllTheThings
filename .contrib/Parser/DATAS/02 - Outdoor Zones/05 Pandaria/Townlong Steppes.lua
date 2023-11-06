@@ -137,6 +137,10 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							49560,	-- Hero's Call: Townlong Steppes!
 							49542,	-- Warchief's Command: Townlong Steppes!
+							31386,	-- The Shado-Pan Offensive (A)
+							31388,	-- The Shado-Pan Offensive (H)
+							30768,	-- My Husband...
+							31695,	-- Beyond the Wall
 						},
 					}),
 					q(31198, {	-- A Morale Victory
