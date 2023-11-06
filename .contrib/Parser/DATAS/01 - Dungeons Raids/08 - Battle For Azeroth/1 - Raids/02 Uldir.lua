@@ -854,14 +854,12 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 						ach(13010),	-- Mythic: G'huun Guild Run
 						ach(12542, bubbleDownSelf({["timeline"] = { "added 8.0.1", "removed 8.1.0" } }, {	-- Hall of Fame: G'huun (Alliance)
 							["races"] = ALLIANCE_ONLY,
-							["collectible"] = false,
 							["g"] = {
 								title(374),	-- <Name>, Famed Slayer of G'huun
 							},
 						})),
 						ach(12543, bubbleDownSelf({["timeline"] = { "added 8.0.1", "removed 8.1.0" } }, {	-- Hall of Fame: G'huun (Horde)
 							["races"] = HORDE_ONLY,
-							["collectible"] = false,
 							["g"] = {
 								title(374),	-- <Name>, Famed Slayer of G'huun
 							},

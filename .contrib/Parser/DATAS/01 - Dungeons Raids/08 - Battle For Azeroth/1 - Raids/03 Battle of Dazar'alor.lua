@@ -998,14 +998,12 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 						}),
 						ach(13326, bubbleDownSelf({["timeline"] = { "added 8.1.0", "removed 8.2.0" } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Alliance)
 							["races"] = ALLIANCE_ONLY,
-							["collectible"] = false,
 							["g"] = {
 								title(384),	-- <Name>, Famed Conqueror of Dazar'alor
 							},
 						})),
 						ach(13327, bubbleDownSelf({["timeline"] = { "added 8.1.0", "removed 8.2.0" } }, {	-- Hall of Fame: Lady Jaina Proudmoore (Horde)
 							["races"] = HORDE_ONLY,
-							["collectible"] = false,
 							["g"] = {
 								title(385),	-- <Name>, Famed Defender of Dazar'alor
 							},

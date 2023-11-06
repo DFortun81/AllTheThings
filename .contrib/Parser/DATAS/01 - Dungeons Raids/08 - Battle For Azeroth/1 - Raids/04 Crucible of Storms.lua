@@ -179,14 +179,12 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 							["timeline"] = { "added 8.1.0", "removed 8.2.0" },
 						}),
 						ach(13423, bubbleDownSelf({["timeline"] = { "added 8.1.0", "removed 8.2.0" } }, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (A)
-							["collectible"] = false,
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(400),	-- <Name>, Famed Slayer of the Harbinger
 							},
 						})),
 						ach(13424, bubbleDownSelf({["timeline"] = { "added 8.1.0", "removed 8.2.0" } }, {	-- Hall of Fame: Uu'nat, Harbinger of the Void (H)
-							["collectible"] = false,
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(400),	-- <Name>, Famed Slayer of the Harbinger
