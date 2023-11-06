@@ -1399,9 +1399,29 @@ root(ROOTS.Zones, {
 						["requireSkill"] = FISHING,	-- doesn't seem like you can even get access to the faction on a non-fisher.  flew/walked all around the area on a character with no professions and nothing, and as soon as i flew up on a character with fishing the faction unlocked and all the NPCs appeared
 						["icon"] = "Interface\\Icons\\achievement_faction_anglers",
 						["g"] = {
+							faction(1358, {	-- Nat Pagle
+								n(QUESTS, {
+									q(31443, {	-- Flying Tiger Gourami
+										["requireSkill"] = FISHING,
+										["description"] = "Found while fishing in any inland body of water on Pandaria.\n\n",
+										["provider"] = { "i", 86542 },	-- Flying Tiger Gourami
+										["isDaily"] = true,
+									}),
+									q(31446, {	-- Mimic Octopus
+										["requireSkill"] = FISHING,
+										["description"] = "Found while fishing in any inland body of water on Pandaria.",
+										["provider"] = { "i", 86545 },	-- Mimic Octopus
+										["isDaily"] = true,
+									}),
+									q(31444, {	-- Spinefish Alpha
+										["requireSkill"] = FISHING,
+										["description"] = "Found while fishing in inland water near Sha-touched land.",
+										["provider"] = { "i", 86544 },	-- Spinefish Alpha
+										["isDaily"] = true,
+									}),
+								}),
+							}),
 							n(QUESTS, {
-							--	TODO: add the following quests.  i'm just moving them into the file as i see them so i can ensure the correct coordinates are added and none get forgotten.  i hate this zone.
-								-- Spinefish Alpha
 								q(30613, {	-- Armored Carp
 									["requireSkill"] = FISHING,
 									["provider"] = { "n", 60135 },	-- Trawler Yotimo
@@ -1419,12 +1439,6 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 59586 },	-- Angler Shen
 									["isDaily"] = true,
 									["coord"] = { 70.8, 40.1, KRASARANG_WILDS },
-								}),
-								q(31443, {	-- Flying Tiger Gourami
-									["requireSkill"] = FISHING,
-									["description"] = "Found while fishing in any inland body of water on Pandaria.\n\n",
-									["provider"] = { "i", 86542 },	-- Flying Tiger Gourami
-									["isDaily"] = true,
 								}),
 								q(30658, {	-- Huff & Puff
 									["requireSkill"] = FISHING,
@@ -1450,12 +1464,6 @@ root(ROOTS.Zones, {
 									["isDaily"] = true,
 									["coord"] = { 70.8, 41.3, KRASARANG_WILDS },
 								}),
-								q(31446, {	-- Mimic Octopus
-									["requireSkill"] = FISHING,
-									["description"] = "Found while fishing in any inland body of water on Pandaria.",
-									["provider"] = { "i", 86545 },	-- Mimic Octopus
-									["isDaily"] = true,
-								}),
 								q(30763, {	-- Piranha!
 									["requireSkill"] = FISHING,
 									["provider"] = { "n", 60675 },	-- Fo Fook
@@ -1480,12 +1488,6 @@ root(ROOTS.Zones, {
 									["isDaily"] = true,
 									["coord"] = { 70.8, 40.2, KRASARANG_WILDS },
 								}),
-								q(31444, {	-- Spinefish Alpha
-									["requireSkill"] = FISHING,
-									["description"] = "Found while fishing in inland water near Sha-touched land.",
-									["provider"] = { "i", 86544 },	-- Spinefish Alpha
-									["isDaily"] = true,
-								}),
 								q(30701, {	-- Viseclaw Soup
 									["requireSkill"] = FISHING,
 									["provider"] = { "n", 60675 },	-- Fo Fook
@@ -1507,7 +1509,7 @@ root(ROOTS.Zones, {
 							}),
 							n(VENDORS, {
 								n(63721, {	-- Nat Pagle <The Anglers Quartermaster>
-									["coord"] = { 71.7, 40.1, KRASARANG_WILDS },
+									["coord"] = { 68.4, 43.5, KRASARANG_WILDS },
 									["g"] = {
 										i(85500, {	-- Angler's Fishing Raft (TOY!)
 											["cost"] = 8500000,	-- 850g
@@ -2079,7 +2081,7 @@ root(ROOTS.Zones, {
 
 					q(30169, {	-- Raid Leader Slovan
 						["provider"] = { "n", 58278 }, -- Tired Shushen <Waterspeaker>
-						["coord"] = { 30.1, 35.3, KRASARANG_WILDS },
+						["coord"] = { 29.7, 39, KRASARANG_WILDS },
 						["g"] = {
 							i(88387),	-- Shushen's Spittoon (TOY!)
 						},
@@ -2416,7 +2418,7 @@ root(ROOTS.Zones, {
 
 					q(30168, {	-- Thieving Raiders
 						["provider"] = { "n", 58278 },	-- Tired Shushen
-						["coord"] = { 30.1, 35.3, KRASARANG_WILDS },
+						["coord"] = { 29.7, 39, KRASARANG_WILDS },
 						["g"] = {
 							i(81532),	-- Silkspawn Carving
 							i(81534),	-- Carp Hunter Feather
@@ -2634,12 +2636,14 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(36882, {	-- The Great Angler Returns
+						["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
 						["requireSkill"] = FISHING,
 						["provider"] = { "n", 63721 },	-- Nat Pagle
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36609, {	-- The Great Angler Returns
 						["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
+						["requireSkill"] = FISHING,
 						["provider"] = { "n", 63721 },	-- Nat Pagle
 						["races"] = HORDE_ONLY,
 					}),

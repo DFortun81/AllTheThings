@@ -613,17 +613,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 40,
 				}),
-				q(25468, {	-- Forces of Nature: Faerie Dragons
-					["qg"] = 40913,	-- Handler Jesana
-					["sourceQuest"] = 25469,	-- Forces of Nature: Mountain Giants
-					["coord"] = { 77.0, 56.6, FERALAS },
-					["timeline"] = { "added 4.0.3.13277" },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(25409, {	-- Forces of Nature: Hippogryphs
 					["qg"] = 40078,	-- Handler Tessina
 					["sourceQuest"] = 25407,	-- Forces of Nature: Wisps
 					["coord"] = { 57.1, 53.8, FERALAS },
+					["timeline"] = { "added 4.0.3.13277" },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(25468, {	-- Forces of Nature: Faerie Dragons
+					["qg"] = 40913,	-- Handler Jesana
+					["sourceQuest"] = 26574,	-- Adella's Covert Camp
+					["coord"] = { 77.0, 56.6, FERALAS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),

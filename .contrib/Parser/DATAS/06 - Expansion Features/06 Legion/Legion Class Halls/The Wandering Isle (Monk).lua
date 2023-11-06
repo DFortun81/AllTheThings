@@ -241,7 +241,13 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 					}),
 					-- Start Zone
 					q(40795, {	-- The Fight Begins
-						["sourceQuests"] = { 40698 },	-- Purity of Form
+						["sourceQuests"] = {
+							-- #if BEFORE BFA
+							40698,	-- Purity of Form
+							-- #else
+							40793,	-- A Matter of Planning
+							-- #endif
+						},
 						["provider"] = { "n", 99179 },	-- Master Hsu
 						["coord"] = { 52.8, 59.7, THE_WANDERING_ISLE },
 					}),

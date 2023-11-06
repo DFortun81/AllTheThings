@@ -227,11 +227,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 12.8, 49.1, THE_AZURE_SPAN },
 				["isRepeatable"] = true,
 			}, {
+				q(72785),	-- Contribute Supplies: Draconium Nugget
+				q(72786),	-- Contribue Supplies: Strong Seavine
 				q(72787),	-- Contribute Supplies: Battered Imbu-made Net
+				q(72788),	-- Contribue Supplies: Irontree Branch
 				q(72789),	-- Contribue Supplies: Salinated Serevite
 				q(72790),	-- Contribute Supplies: Khaz'gorite-infused Resin
-				q(72786),	-- Contribue Supplies: Strong Seavine
-				q(72788),	-- Contribue Supplies: Irontree Branch
 				q(72791),	-- Contribute Supplies: Khaz'gorite Wire
 			})),
 			prof(TUSKARR_FISHING_GEAR, sharedData({

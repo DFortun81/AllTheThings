@@ -1448,14 +1448,7 @@ root(ROOTS.Zones, {
 					q(30665, {	-- The Defense of Shado-Pan Fallback
 						["coord"] = { 44.4, 89.9, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60161 },	-- Shado-Master Chong
-						["sourceQuests"] = {
-							30656,	-- Barrels of Fun
-							30650,	-- Pandaren Prisoners (A)
-							30655,	-- Pandaren Prisoners (H)
-							30661,	-- The Ordo Warbringer
-							30663,	-- The Ordo Warbringer
-							31453,	-- The Shado-Pan (breadcrumb)
-						},
+						["sourceQuest"] = 30457,	-- Call Out Their Leader
 					}),
 					q(30855, {	-- The Fall of Shai Hu
 						["coord"] = { 74.9, 88.5, KUN_LAI_SUMMIT },
@@ -1806,12 +1799,7 @@ root(ROOTS.Zones, {
 					q(30670, {	-- Turnabout
 						["coord"] = { 44.4, 89.9, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60161 },	-- Shado-Master Chong
-						["sourceQuests"] = {
-							30656,	-- Barrels of Fun
-							30650,	-- Pandaren Prisoners
-							30661,	-- The Ordo Warbringer
-							30663,	-- The Ordo Warbringer
-						},
+						["sourceQuest"] = 30457,	-- Call Out Their Leader
 					}),
 					q(30752, {	-- Unbelievable!
 						["coord"] = { 35.3, 49.5, KUN_LAI_SUMMIT },

@@ -33,6 +33,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
 				}),
 				q(74847, {	-- Emberthal Awaits
+					["timeline"] = { REMOVED_10_1_0 },
 					["sourceQuests"] = {
 						75050,	-- An Eclectic Accord
 						74769,	-- Stemming the Irontide

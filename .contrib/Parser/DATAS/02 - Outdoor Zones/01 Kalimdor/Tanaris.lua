@@ -4411,7 +4411,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25421, {	-- The Grand Tablet (A)
 					["provider"] = { "o", 202474 },	-- Antediluvean Chest
-					["sourceQuest"] = 25070,	-- What Lies Within  ?? Ancient Obstacles
 					["coord"] = { 37.8, 82.4, TANARIS },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
@@ -4429,7 +4428,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25107, {	-- The Grand Tablet (H)
 					["provider"] = { "o", 202474 },	-- Antediluvean Chest
-					["sourceQuest"] = 25070,	-- What Lies Within
 					["coord"] = { 37.8, 82.4, TANARIS },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,

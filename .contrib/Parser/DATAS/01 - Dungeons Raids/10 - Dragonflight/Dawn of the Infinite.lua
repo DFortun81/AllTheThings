@@ -178,6 +178,7 @@ local QUANTUM_GROUP = sharedData({
 	i(208122, {	-- Quantum Warglaives
 	}),
 	i(208123, {	-- Quantum Wand
+		ig(134590),	--Vanguard Baton of Light			(Removed)
 	}),
 	i(208216, {	-- Reins of the Quantum Courser
 		["description"] = "Turns into one (1) unlearned Dungeon Mount from before Dragonflight.",

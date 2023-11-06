@@ -576,7 +576,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 						["lvl"] = 103,
 					}),
 					q(46333, {	-- Livin' on the Ledge
-						["sourceQuests"] = { 46251 },	-- Shard Times
+						["sourceQuests"] = {
+							46734,	-- Assault on Broken Shore
+							47137,	-- Champions of Legionfall
+						},
 						["provider"] = { "n", 118316 },	-- Illidari Enforcer
 						["coord"] = { 44.0, 62.7, BROKEN_SHORE },
 					}),

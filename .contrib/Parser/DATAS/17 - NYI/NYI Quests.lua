@@ -4533,7 +4533,6 @@ root(ROOTS.NeverImplemented, {
 				q(53281),	-- Winter's Kiss Cluster
 				q(53283),	-- Flourishing Sea Stalks
 				q(53284),	-- Flourishing Riverbud
-				q(53288),	-- Overgrown Anchor Weed
 				q(53297),	-- Flourishing Riverbud
 				q(53299),	-- Blooming Siren's Sting
 				q(53302),	-- Flourishing Riverbud
