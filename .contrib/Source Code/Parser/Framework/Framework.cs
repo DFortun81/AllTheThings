@@ -1909,8 +1909,8 @@ namespace ATT
                 }
             }
 
-            // Explicitly-marked 'non-collectible' Headers should not be necessary and can be warned to convert to Automatic Header type
-            if (data.TryGetValue("collectible", out bool collectible) && !collectible && data.ContainsKey("g"))
+            // Explicitly-marked 'non-collectible' Headers should not be necessary and can be warned to convert to Automatic Header type (ignored if it is a quest)
+            if (data.TryGetValue("collectible", out bool collectible) && !collectible && !data.ContainsKey("questID") && data.ContainsKey("g"))
             {
                 LogDebug($"WARN: Explicitly Non-Collectible Header defined. Convert to Automatic Header or adjust as needed", data);
             }
