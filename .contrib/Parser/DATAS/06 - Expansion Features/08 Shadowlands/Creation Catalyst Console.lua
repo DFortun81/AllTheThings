@@ -521,7 +521,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 				}),
 			}),
-			pvp(n(PVP_GLADIATOR, {
+			pvp(n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_0 } }, {
 				["description"] = "This is theorized to be available from PvP gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 7897 }, {
 					cl(DEATHKNIGHT, {
@@ -633,7 +633,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added
 						},
 					}),
 				}),
-			})),
+			}))),
 			pvp(n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_0 } }, {
 				["description"] = "This is theorized to be available from PvP gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 7532 }, {
