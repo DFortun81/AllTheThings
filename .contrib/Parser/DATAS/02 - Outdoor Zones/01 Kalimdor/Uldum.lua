@@ -16,11 +16,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["providers"] = {
 						{ "i", 63044 },	-- Brown Riding Camel
 						{ "i", 63045 },	-- Tan Riding Camel
+						{ "i", 63046 },	-- Reins of the Grey Riding Camel
 					},
 				}),
 				achWithRep(4884, 1173),	-- Ramkahen
 				ach(5767, {	-- Scourer of the Eternal Sands
-					title(143),		-- the Camel-Hoarder
+					["provider"] = { "i", 63046 },	-- Reins of the Grey Riding Camel
+					["groups"] = {
+						title(143),		-- the Camel-Hoarder
+					},
 				}),
 				ach(4872, {	-- Unearthing Uldum
 					crit(1, {	-- Rescued by Outsiders
