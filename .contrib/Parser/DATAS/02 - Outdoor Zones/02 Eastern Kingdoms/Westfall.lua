@@ -1218,13 +1218,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(572, {	-- Leprithus
 					-- #if AFTER CATA
 					["coord"] = { 41.7, 29.3, WESTFALL },
+					["description"] = "Spawns once a day at approximately 20:00/8 PM server time.",
 					-- #else
 					["coords"] = {
 						{ 42.4, 30.8, WESTFALL },
 						{ 65.2, 63.2, WESTFALL },
 						{ 60.0, 77.6, WESTFALL },
 					},
-					["description"] = "Spawns at BOTH the northern and west-most southern spawn points at approximately 8 PM server time. If you are quick, you could probably snag both.",
+					["description"] = "Spawns at BOTH the northern and west-most southern spawn points at approximately 20:00/8 PM server time. If you are quick, you could probably snag both.",
 					-- #endif
 					["groups"] = {
 						i(1387, {	-- Ghoulfang
@@ -1238,8 +1239,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(1424, {	-- Master Digger
 					-- #if AFTER CATA
 					["coord"] = { 46.2, 18.6, WESTFALL },
+					["description"] = "Spawns inside Jangolode Mine, at the end of the cave.",
 					-- #else
 					["coord"] = { 46.2, 18.8, WESTFALL },
+					["description"] = "Spawns inside Jangolode Mine.",
 					-- #endif
 					["groups"] = {
 						i(6205, {	-- Burrowing Shovel
@@ -1273,6 +1276,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coords"] = {
 						{ 56.0, 9.8, WESTFALL },
 						{ 49.8, 10.4, WESTFALL },
+					["description"] = "This mob is running around fast.",
 					},
 					-- #else
 					["coords"] = {
