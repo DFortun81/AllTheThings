@@ -1276,8 +1276,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coords"] = {
 						{ 56.0, 9.8, WESTFALL },
 						{ 49.8, 10.4, WESTFALL },
-					["description"] = "This mob is running around fast.",
 					},
+					["description"] = "This mob is running around fast.",
 					-- #else
 					["coords"] = {
 						{ 55.2, 13.4, WESTFALL },
