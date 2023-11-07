@@ -994,7 +994,6 @@ root(ROOTS.NeverImplemented, {
 				i(209856),	-- Dilated Time Pod
 				------ Items from Questlines that Gives Rep ------
 				i(211131),	-- Delicately Curated Blossoms
-				i(210916),	-- Ember of Fyrakk
 				i(210920),	-- Gift of Amirdrassil
 				------ Winter Veil ------
 				i(210657),	-- Gently Shaken Gift

@@ -360,7 +360,106 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 				------ Chapter 5 ------
+				q(76384, {	-- The Bloom Begins
+					["sourceQuests"] = { 76337 },	-- The Ember Still Smolders
+					["provider"] = { "n", 206896 },	-- Merithra
+					["coord"] = { 50.7, 62.8, EMERALD_DREAM },
+				}),
+				q(76416, {	-- Forward Unto Fire
+					["sourceQuests"] = { 76384 },	-- The Bloom Begins
+					["provider"] = { "n", 208503 },	-- Alexstrasza the Life-Binder
+					["coord"] = { 50.7, 62.8, EMERALD_DREAM },
+				}),
+				q(76386, {	-- A Clash of Ice and Fire
+					["sourceQuests"] = { 76416 },	-- Forward Unto Fire
+					["provider"] = { "n", 208553 },	-- Vyranoth
+					["coord"] = { 38.8, 39.1, EMERALD_DREAM },
+					["g"] = {
+						i(208544),	-- Frozenheart's Wrath (QI!)
+						--modID 27 bonusID 9546
+						i(209906),	-- Fearless Faerie's Belt
+						i(209929),	-- Fearless Faerie's Boots
+					},
+				}),
+				q(76385, {	-- Hazardous Horticulture
+					["sourceQuests"] = { 76416 },	-- Forward Unto Fire
+					["provider"] = { "n", 208551 },	-- Merithra
+					["coord"] = { 38.9, 39.0, EMERALD_DREAM },
+				}),
+				q(76436, {	-- A Scrap of Hope
+					["sourceQuests"] = {
+						76386,	-- A Clash of Ice and Fire
+						76385,	-- Hazardous Horticulture
+					},
+					["provider"] = { "n", 208550 },	-- Alexstrasza the Life-Binder
+					["coord"] = { 38.7, 39.1, EMERALD_DREAM },
+					["g"] = {
+						i(210023),	-- Scrap of Parchment (QI!)
+					},
+				}),
+				q(76387, {	-- Defense of the Ancients
+					["sourceQuests"] = {
+						76386,	-- A Clash of Ice and Fire
+						76385,	-- Hazardous Horticulture
+					},
+					["provider"] = { "n", 208552 },	-- Tyrande Whisperwind
+					["coord"] = { 38.6, 39.1, EMERALD_DREAM },
+					["g"] = {
+						--modID 27 bonusID 9546
+						i(209887),	-- Fearless Faerie's Vest
+					},
+				}),
+				q(76388, {	-- Fighting Fire With Fire
+					["sourceQuests"] = {
+						76436,	-- A Scrap of Hope
+						76387,	-- Defense of the Ancients
+					},
+					["provider"] = { "n", 208550 },	-- Alexstrasza the Life-Binder
+					["coord"] = { 38.6, 39.0, EMERALD_DREAM },
+					["g"] = {
+						--modID 27 bonusID 9546
+						i(209898),	-- Fearless Faerie's Trousers
+					},
+				}),
+				q(76398, {	-- Aerial Supremacy
+					["sourceQuests"] = { 76388 },	-- Fighting Fire With Fire
+					["provider"] = { "n", 208567 },	-- Merithra
+					["coord"] = { 34.9, 35.4, EMERALD_DREAM },
+				}),
+				q(76389, {	-- The Age of Mortals
+					["sourceQuests"] = { 76388 },	-- Fighting Fire With Fire
+					["provider"] = { "n", 208568 },	-- Tyrande Whisperwind
+					["coord"] = { 34.9, 35.3, EMERALD_DREAM },
+					["g"] = {
+						i(208752),	-- Horn of Cenarius (QI!)
+						--modID 27 bonusID 9546
+						i(209899),	-- Fearless Faerie's Shoulderpads
+					},
+				}),
+				q(76401, {	-- Echo of the Firelands
+					["sourceQuests"] = {
+						76398,	-- Aerial Supremacy
+						76389,	-- The Age of Mortals
+					},
+					["provider"] = { "n", 208572 },	-- Alexstrasza the Life-Binder
+					["coord"] = { 35.0, 33.5, EMERALD_DREAM },
+					["g"] = {
+						--modID 27 bonusID 9546
+						i(209921),	-- Spirited Stag's Branch
+						i(209940),	-- Spirited Stag's Spire
+					},
+				}),
 				------ Chapter 6 ------
+				-- ?
+				q(76402, {	-- Amirdrassil, the Dream's Hope: Fyrakk
+					["sourceQuests"] = { 76401 },	-- Echo of the Firelands
+					["provider"] = { "n", 206921 },	-- Alexstrasza the Life-Binder
+					["coord"] = { 34.9, 35.4, EMERALD_DREAM },
+					["g"] = {
+						i(210916),	-- Ember of Fyrakk [2.5k Dream Warden rep]
+						i(206960),	-- Enchanted Wyrm's Dreaming Crest
+					},
+				}),
 			}),
 			-- non-story quests below for now
 			q(76460, {	-- A Dragon in Hand is Worth Two in the Roost
@@ -932,5 +1031,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(77505), -- 'Chest' (spellID 421191)
 		--q(77512),	-- ?
 		--q(77369),	-- ?
+		--q(77217),	-- ? (during ch5 quests (76386 & 76385), bloom spot?)
+		--q(77218),	-- ? (during ch5 quests (76388), bloom spot?)
 	}),
 }));
