@@ -14,10 +14,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["isWeekly"] = true,
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+					["maxReputation"] = { FACTION_DREAM_WARDENS, 20 },
 					["g"] = {
 						i(210872, {	-- Satchel of Dreams
-						-- Superbloom?
-
+							["sym"] = {
+								{"select", "headerID", 78203 },
+								{"pop"},
+								{"where", "headerID", REWARDS },
+								{"pop"},
+							},
 						}),
 					},
 				}),

@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			},
 			]]--
 			["g"] = {
-				n(QUESTS, sharedData({ ["isWorldQuest"] = true, }, {
+				n(QUESTS, sharedData({ ["isWorldQuest"] = true, ["maxReputation"] = { FACTION_DREAM_WARDENS, 20 }, }, {
 					q(76520, {	-- A Shared Dream
 						["coord"] = { 63.7, 73.4, EMERALD_DREAM },
 						["g"] = {
@@ -96,10 +96,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						["g"] = {
 							i(208447),	-- Purifying Tangle (QI!)
 						},
-					}),	
+					}),
 					pvp(q(78215, {	-- Rooted in Danger
 						["coord"] = { 44.8, 41.9, EMERALD_DREAM },
-					})),				
+					})),
 					q(76988, {	-- Sylvan Slalom
 						["coord"] = { 34.1, 57.6, EMERALD_DREAM },
 					}),

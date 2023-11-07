@@ -127,9 +127,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["provider"] = { "n", 212797 },	-- Talisa Whisperbloom
 					["coord"] = { 49.7, 62.1, EMERALD_DREAM },
 					["isWeekly"] = true,
+					["maxReputation"] = { FACTION_DREAM_WARDENS, 20 },
 					["g"] = {
-						i(211394),	-- Harvested Dreamseed Cache
-						--(TODO: Superbloom share)
+						i(211394, {	-- Harvested Dreamseed Cache
+							["sym"] = {
+								{"select", "headerID", 78203 },
+								{"pop"},
+								{"where", "headerID", REWARDS },
+								{"pop"},
+							},
+						}),
 					},
 				}),
 			}),
