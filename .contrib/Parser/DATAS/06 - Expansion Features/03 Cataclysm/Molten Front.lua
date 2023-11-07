@@ -462,14 +462,14 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["qg"] = 52495,	-- Shalis Darkhunter
 					["coord"] = { 57.6, 49.6, 338 },
 					["sourceQuests"] = {
-						29283,	-- Calling the Ancients
-						29189,	-- Wicked Webs
 						29159,	-- Pyrorachnophobia
 						29160,	-- Egg-stinction
+						29189,	-- Wicked Webs
 						29192,	-- The Wardens are Watching
 						29210,	-- Enduring the Heat
+						29283,	-- Calling the Ancients
 					},
-					["sourceQuestNumRequired"] = 5,
+					["sourceQuestNumRequired"] = 4,
 					["isDaily"] = true,
 				}),
 				q(29305, {	-- Strike at the Heart

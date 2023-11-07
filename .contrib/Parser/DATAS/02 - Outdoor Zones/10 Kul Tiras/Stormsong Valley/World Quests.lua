@@ -13,9 +13,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			}),
 			q(52115, {	-- In the Shadow of the Kraken
 			}),
-			q(53288, {	-- Overgrown Anchor Weed
-				["requireSkill"] = HERBALISM,
-			}),
 			q(52345, {	-- Work Order: Ravenberry Tarts (this quest was added to Zuldazar WQ file but I'm not sure it can spawn there)
 			}),
 			]]--
@@ -79,6 +76,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["requireSkill"] = HERBALISM,
 			}),
 			q(53285, {	-- Blooming Star Moss
+				["requireSkill"] = HERBALISM,
+			}),
+			q(53288, {	-- Overgrown Anchor Weed
 				["requireSkill"] = HERBALISM,
 			}),
 			q(52045, {	-- Boarder Patrol

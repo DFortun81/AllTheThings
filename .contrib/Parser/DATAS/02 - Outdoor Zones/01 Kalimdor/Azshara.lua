@@ -1564,7 +1564,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuests"] = {
 						24430,	-- Blacken the Skies
 						24434,	-- Commando Drop
-						14464,	-- Lightning Strike Assassination
 					},
 					["coord"] = { 14.0, 64.8, AZSHARA },
 					["timeline"] = { "added 4.0.1.12984" },

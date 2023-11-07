@@ -39,6 +39,11 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					["qg"] = 49476,	-- Pip Quickwit
 					["sourceQuest"] = 28735,	-- To the Chamber of Incineration!
 				}),
+				q(28804, {
+					["provider"] = { "o", 207412 },	-- Stone Tablet
+					["requireSkill"] = ARCHAEOLOGY,
+					["isRepeatable"] = true,
+				}),
 			}),
 			n(ZONE_DROPS, {
 				i(55791, { -- Acanthia's Lost Pendant
