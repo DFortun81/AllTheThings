@@ -431,18 +431,19 @@ localize(L.HEADER_NAMES, {
 	[-1000217] = "The Silithyst Must Flow",
 	[-1000222] = "BlizzCon",
 	[-1000223] = "Collector's Edition",
-	[-1000224] = "Dark Portal Pass",
-	[-1000232] = "TBC Classic Deluxe Edition",
-	[-1000234] = "WotLK Classic Northrend Heroic Upgrade",
-	[-1000235] = "WotLK Classic Northrend Epic Upgrade",
-	[-1000240] = "iCoke",
-	[-1000241] =  AUCTION_CATEGORY_MISCELLANEOUS,
-	[-1000242] = REFER_A_FRIEND,
-	[-1000244] = "Spirit of Competition",
-	[-1000245] = BATTLE_PET_SOURCE_9,
-	[-1000248] = "Ensembles",
-	[-1000249] = "Arsenals",
-	[-1000250] = "Sourceless",
+	[-1000224] = "Heroic Edition",
+	[-1000225] = "Epic Edition",
+	[-1000226] = "TBC Classic Deluxe Edition",
+	[-1000227] = "WotLK Classic Northrend Upgrade",
+	[-1000228] = "Cata Classic Blazing Upgrade",
+	[-1000242] = "iCoke",
+	[-1000243] =  AUCTION_CATEGORY_MISCELLANEOUS,
+	[-1000244] = REFER_A_FRIEND,
+	[-1000246] = "Spirit of Competition",
+	[-1000247] = BATTLE_PET_SOURCE_9,
+	[-1000250] = "Ensembles",
+	[-1000251] = "Arsenals",
+	[-1000252] = "Sourceless",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000015] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -464,14 +465,10 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000215] = "In addition to all players on a realm working towards completing the War Effort, one player had to create the Scepter of the Shifting Sands - a very difficult task that could only be solved by a server's top guild back when the questline was added. After the war effort was finished and the army of the Alliance and the Horde arrived in Silithus, the Scepter of the Shifting Sands could be used on the Scarab Gong. Doing so resulted in the opening of Ahn'Qiraj. The first player to bang the Scarab Gong on each server would be rewarded with the Scarab Lord title (in Burning Crusade, the title will not be available in Classic!) and the Black Qiraji Resonating Crystal mount. Anyone else who followed them within 10 hours was rewarded with the title as well.\n\nAlthough it is still possible to complete the questline for the Scepter of the Shifting Sands after the gates have been opened on your server, doing so will not reward neither the Black Qiraji Resonating Crystal nor the Scarab Lord title.",
 	[-1000216] = "The Scourge Invasion was a world event in Patch 1.11 and again during the Wrath of the Lich King Pre-Patch during 3.0.1 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
 	[-1000217] = "The Silithyst Must Flow is the name of the world PvP event in Silithus, where players of both factions must try and secure as much Silithyst as possible. Silithyst is a red crystalline dust that reaches the surface through geysers exclusive to the Silithus desert. Both the Alliance and the Horde have taken an interest in this new substance, and researchers on both sides have discovered unique and valuable properties in the dust. The Horde and Alliance camps in the region have both been outfitted with turn-in stations where players can unload the Silithyst they collect.",
-	[-1000224] = "These rewards were made available to anyone who purchased a Dark Portal Pass for TBC Classic.\n\nThe act of adding items for real money to the In-Game Shop in Classic has widely been frowned upon.",
-	[-1000232] = "These rewards were made available to anyone who purchased a Deluxe Edition of TBC Classic. (not to be confused with the original Burning Crusade Collector's Edition)",
-	[-1000234] = "These rewards were made available to anyone who purchased a Northrend Heroic Upgrade for WotLK Classic. (not to be confused with the original Wrath of the Lich King Collector's Edition)",
-	[-1000235] = "These rewards were made available to anyone who purchased a Northrend Heroic Upgrade for WotLK Classic. (not to be confused with the original Wrath of the Lich King Collector's Edition)",
-	[-1000240] = "These were only available through the 2006 iCoke Promotion (China Only)",
-	[-1000241] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
-	[-1000244] = "This is a Battlegrounds-based event that coincides with the beginning of the Summer Olympic games. The only time this was celebrated was in 2008 to correspond to the Beijing Olympics, and although there appeared to be the intention to repeat this event, it never returned.",
-	[-1000250] = "This Category contains Things that probably exist in the game but no known source.",
+	[-1000242] = "These were only available through the 2006 iCoke Promotion (China Only)",
+	[-1000243] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
+	[-1000246] = "This is a Battlegrounds-based event that coincides with the beginning of the Summer Olympic games. The only time this was celebrated was in 2008 to correspond to the Beijing Olympics, and although there appeared to be the intention to repeat this event, it never returned.",
+	[-1000252] = "This Category contains Things that probably exist in the game but no known source.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -588,18 +585,19 @@ localize(L.HEADER_ICONS, {
 	[-1000217] = "Interface/Icons/spell_holiday_tow_spicecloud",
 	[-1000222] = _.asset("Promotion_Blizzcon"),
 	[-1000223] = _.asset("Promotion_Collector"),
-	[-1000224] = "Interface/Icons/achievement_dungeon_outland_dungeonmaster",
-	[-1000232] = _.asset("Expansion_TBC"),
-	[-1000234] = _.asset("Expansion_WOTLK"),
-	[-1000235] = _.asset("Expansion_WOTLK"),
-	[-1000240] = "Interface/Icons/Inv_drink_10",
-	[-1000241] = "Interface/Icons/Spell_Misc_Drink",
-	[-1000242] = _.asset("achievement_reputation_08"),
-	[-1000244] = "Interface/Icons/inv_jewelry_amulet_03",
-	[-1000245] = "Interface/Icons/inv_misc_ticket_tarot_stack_01",
-	[-1000248] = "Interface/Icons/inv_chest_leather_08",
-	[-1000249] = "Interface/Icons/inv_mace_1h_bastionquest_b_02",
-	[-1000250] = "Interface/Icons/inv_misc_questionmark",
+	[-1000224] = _.asset("Weapon_Type_Heirloom"),
+	[-1000225] = _.asset("Weapon_Type_Legendary"),
+	[-1000226] = _.asset("Expansion_TBC"),
+	[-1000227] = _.asset("Expansion_WOTLK"),
+	[-1000228] = _.asset("Expansion_CATA"),
+	[-1000242] = "Interface/Icons/Inv_drink_10",
+	[-1000243] = "Interface/Icons/Spell_Misc_Drink",
+	[-1000244] = _.asset("achievement_reputation_08"),
+	[-1000246] = "Interface/Icons/inv_jewelry_amulet_03",
+	[-1000247] = "Interface/Icons/inv_misc_ticket_tarot_stack_01",
+	[-1000250] = "Interface/Icons/inv_chest_leather_08",
+	[-1000251] = "Interface/Icons/inv_mace_1h_bastionquest_b_02",
+	[-1000252] = "Interface/Icons/inv_misc_questionmark",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000177] = 372,
@@ -624,7 +622,6 @@ localize(L.EVENT_REMAPPING, {
 
 -- Programmatic Event Scheduling
 _.Modules.Events.SetEventInformation(479, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=3,["weekday"]=1,["year"]=2023},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=10,["weekday"]=1,["year"]=2023},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=1,["weekday"]=1,["year"]=2023},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=8,["weekday"]=1,["year"]=2023},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=5,["weekday"]=1,["year"]=2023},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=12,["weekday"]=1,["year"]=2023},{["remappedID"]=376}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=3,["weekday"]=1,["year"]=2023},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=10,["weekday"]=1,["year"]=2023},{["remappedID"]=374}),
@@ -634,7 +631,8 @@ _.Modules.Events.SetEventInformation(479, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=7,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=14,["weekday"]=1,["year"]=2024},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=5,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=12,["weekday"]=1,["year"]=2024},{["remappedID"]=376}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=2,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=9,["weekday"]=1,["year"]=2024},{["remappedID"]=374}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=7,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=14,["weekday"]=1,["year"]=2024},{["remappedID"]=375})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=7,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=14,["weekday"]=1,["year"]=2024},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=4,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=11,["weekday"]=1,["year"]=2024},{["remappedID"]=376})
 });
 _.Modules.Events.SetEventInformation(201, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=1,["year"]=2022},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=7,["year"]=2022}),
@@ -2605,7 +2603,6 @@ localize(L.HEADER_NAMES, {
 	[-1000206] = "Anglerwettbewerb im Schlingendorntal",
 	[-1000214] = "Die Öffnung des Dunklen Portals",
 	[-1000215] = "Das Szepter der Sandstürme",
-	[-1000224] = "Pass zum Dunklen Portal",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -3190,7 +3187,6 @@ localize(L.HEADER_NAMES, {
 	[-1000206] = "Gran espectáculo de pesca de Tuercespina",
 	[-1000214] = "La apertura del Portal Oscuro",
 	[-1000215] = "El cetro del Mar de Dunas",
-	[-1000224] = "Pase para el Portal Oscuro",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
@@ -3790,8 +3786,7 @@ localize(L.HEADER_NAMES, {
 	[-1000214] = "L'ouverture de la Porte des ténèbres",
 	[-1000215] = "Le Sceptre des Sables changeants",
 	[-1000223] = "Edition Collector",
-	[-1000224] = "Passe Porte des ténèbres",
-	[-1000232] = "Édition BC Classic Deluxe",
+	[-1000226] = "Édition BC Classic Deluxe",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -4906,7 +4901,6 @@ localize(L.HEADER_NAMES, {
 	[-1000206] = "가시덤불 골짜기 낚시왕 선발대회",
 	[-1000214] = "어둠의 문 열기",
 	[-1000215] = "흐르는 모래의 홀",
-	[-1000224] = "다크 포털 패스",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "웨폰 마스터는 캐릭터에게 특정 무기 기술을 배울 수 있는 기회를 제공하는 NPC로, 사용 가능 여부는 웨폰 마스터마다 다릅니다. 모든 무기 기술은 레벨 20이 필요한 폴암을 제외하고 레벨 1에서 훈련할 수 있습니다.\n\n4.0.1 패치에서는 각 병과가 생성 시 모든 병과에 적합한 무기 숙련도를 배우게 되므로 무기 전문가와의 훈련은 더 이상 필요하지 않게 되었습니다. 무기 마스터는 곧 게임에서 제거되었습니다.",
@@ -5480,7 +5474,6 @@ localize(L.HEADER_NAMES, {
 	[-1000206] = "Festerê de Pesca da Selva do Espinhaço",
 	[-1000214] = "A abertura do Portal Negro",
 	[-1000215] = "Cetro das Areias Cambiantes",
-	[-1000224] = "Passe do Portal Negro",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Um mestre de armas é um NPC que oferece aos personagens a oportunidade de aprender habilidades específicas com armas, cuja disponibilidade varia de um mestre de armas para outro. Todas as habilidades com armas podem ser treinadas no nível 1, exceto as armas de haste, que exigem nível 20.\n\nO treinamento com um mestre de armas tornou-se obsoleto no Patch 4.0.1, já que todas as proficiências de armas apropriadas à classe agora são aprendidas por cada classe após a criação. Os mestres de armas foram removidos do jogo logo depois.",
@@ -6081,8 +6074,7 @@ localize(L.HEADER_NAMES, {
 	[-1000215] = "Скипетр Зыбучих песков",
 	[-1000216] = "Вторжение Плети",
 	[-1000223] = "Коллекционное издание",
-	[-1000224] = "Пропуск Темного портала",
-	[-1000250] = "Без Источника",
+	[-1000252] = "Без Источника",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -6693,12 +6685,9 @@ localize(L.HEADER_NAMES, {
 	[-1000217] = "希利苏斯流沙",
 	[-1000222] = "暴雪嘉年华",
 	[-1000223] = "典藏版",
-	[-1000224] = "穿过黑暗之门",
-	[-1000232] = "燃烧的远征经典怀旧服典藏包",
-	[-1000234] = "巫妖王之怒经典怀旧服诺森德英雄礼包",
-	[-1000235] = "巫妖王之怒经典怀旧服诺森德史诗礼包",
-	[-1000240] = "可口可乐活动",
-	[-1000250] = "无来源",
+	[-1000226] = "燃烧的远征经典怀旧服典藏包",
+	[-1000242] = "可口可乐活动",
+	[-1000252] = "无来源",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
