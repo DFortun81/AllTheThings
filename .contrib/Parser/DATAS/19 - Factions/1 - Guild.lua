@@ -1,7 +1,6 @@
 ---------------------------------------------
 --     F A C T I O N S     M O D U L E     --
 ---------------------------------------------
-
 root(ROOTS.Factions, {
 	faction(1168, {	-- Your Guild (Faction) <Guild Vendor>
 		["coords"] = {
@@ -36,18 +35,14 @@ root(ROOTS.Factions, {
 		},
 		["g"] = {
 			ach(4989, {	-- A Class Act
-				["collectible"] = false,
-				["g"] = {
-					i(63352, {	-- Shroud of Cooperation - Honored
-						["races"] = ALLIANCE_ONLY,
-					}),
-					i(63353, {	-- Shroud of Cooperation - Honored
-						["races"] = HORDE_ONLY
-					}),
-				},
+				i(63352, {	-- Shroud of Cooperation - Honored
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(63353, {	-- Shroud of Cooperation - Honored
+					["races"] = HORDE_ONLY
+				}),
 			}),
 			ach(5179, {	-- Alliance Slayer
-				["collectible"] = false,
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(65362, {	-- Guild Page [H] (PET!) - Honored - minipet bound to Character
@@ -56,70 +51,44 @@ root(ROOTS.Factions, {
 				},
 			}),
 			ach(5024, {	-- Better Leveling Through Chemistry
-				["collectible"] = false,
-				["g"] = {
-					i(65498),	-- Recipe: Big Cauldron of Battle (RECIPE!)
-				},
+				i(65498),	-- Recipe: Big Cauldron of Battle (RECIPE!)
 			}),
 			ach(6634, {	-- Challenge Conquerors: Gold - Guild Edition
-				["collectible"] = false,
-				["g"] = {
-					i(85513, {	-- Thundering Serpent Hatchling (PET!)
-						["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
-					}),
-				},
+				i(85513, {	-- Thundering Serpent Hatchling (PET!)
+					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
+				}),
 			}),
 			ach(9651, {	-- Challenge Warlords: Gold - Guild Edition
 				["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.|r",
-				["collectible"] = false,
 				["g"] = {
 					i(114968),	-- Deathwatch Hatchling (PET!) - Revered
 				},
 			}),
 			ach(5144, {	-- Critter Kill Squad
-				["collectible"] = false,
-				["g"] = {
-					i(63398, {	-- Armadillo Pup (PET!) - Revered
-						["timeline"] = { ADDED_4_0_3 },
-					}),
-				},
+				i(63398, {	-- Armadillo Pup (PET!) - Revered
+					["timeline"] = { ADDED_4_0_3 },
+				}),
 			}),
 			ach(5840, {	-- Dragonwrath, Tarecgosa's Rest - Guild Edition
-				["collectible"] = false,
-				["g"] = {
-					i(71033, {	-- Lil' Tarecgosa (PET!) - Exalted
-						["timeline"] = { "added 4.2.0.14333" },
-					}),
-				},
+				i(71033, {	-- Lil' Tarecgosa (PET!) - Exalted
+					["timeline"] = { "added 4.2.0.14333" },
+				}),
 			}),
 			ach(4988, {	-- Guild Glory of the Cataclysm Raider
-				["collectible"] = false,
-				["g"] = {
-					i(63125),	-- Dark Phoenix (MOUNT!) - Exalted
-				},
+				i(63125),	-- Dark Phoenix (MOUNT!) - Exalted
 			}),
 			ach(9669, {	-- Guild Glory of the Draenor Raider
-				["collectible"] = false,
-				["g"] = {
-					i(116666),	-- Blacksteel Battleboar (MOUNT!) - Exalted
-				},
+				i(116666),	-- Blacksteel Battleboar (MOUNT!) - Exalted
 			}),
 			ach(6682, {	-- Guild Glory of the Pandaria Raider
-				["collectible"] = false,
-				["g"] = {
-					i(85666),	-- Thundering Jade Cloud Serpent (MOUNT!) - Exalted
-				},
+				i(85666),	-- Thundering Jade Cloud Serpent (MOUNT!) - Exalted
 			}),
 			ach(6681, {	-- Guild Pandaren Dungeon Hero
-				["collectible"] = false,
-				["g"] = {
-					i(89190),	-- Tailored Initiate's Shirt - Honored
-					i(89192),	-- Tailored Memeber's Shirt - Honored
-					i(89194),	-- Tailored Officer's Shirt - Honored
-				},
+				i(89190),	-- Tailored Initiate's Shirt - Honored
+				i(89192),	-- Tailored Memeber's Shirt - Honored
+				i(89194),	-- Tailored Officer's Shirt - Honored
 			}),
 			ach(5031, {	-- Horde Slayer
-				["collectible"] = false,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(65361, {	-- Guild Page [A] (PET!) - Honored - minipet bound to Character
@@ -128,24 +97,17 @@ root(ROOTS.Factions, {
 				},
 			}),
 			ach(5035, {	-- Master Crafter
-				["collectible"] = false,
-				["g"] = {
-					i(65360, {	-- Cloak of Coordination - Revered
-						["races"] = ALLIANCE_ONLY,
-					}),
-					i(65274, {	-- Cloak of Coordination - Revered
-						["races"] = HORDE_ONLY,
-					}),
-				},
+				i(65360, {	-- Cloak of Coordination - Revered
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(65274, {	-- Cloak of Coordination - Revered
+					["races"] = HORDE_ONLY,
+				}),
 			}),
 			ach(5465, {	-- Mix Master
-				["collectible"] = false,
-				["g"] = {
-					i(65435),	-- Recipe: Cauldron of Battle (RECIPE!)
-				},
+				i(65435),	-- Recipe: Cauldron of Battle (RECIPE!)
 			}),
 			ach(6644, {	-- Pandaren Embassy (A)
-				["collectible"] = false,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(89191),	-- Artisan Initiate's Shirt - Exalted
@@ -154,7 +116,6 @@ root(ROOTS.Factions, {
 				},
 			}),
 			ach(6664, {	-- Pandaren Embassy (H)
-				["collectible"] = false,
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(89191),	-- Artisan Initiate's Shirt - Exalted
@@ -163,18 +124,14 @@ root(ROOTS.Factions, {
 				},
 			}),
 			ach(5201, {	-- Profit Sharing
-				["collectible"] = false,
-				["g"] = {
-					i(65363, {	-- Guild Herald [A] (PET!) - Revered - minipet bound to Character
-						["races"] = ALLIANCE_ONLY,
-					}),
-					i(65364, {	-- Guild Herald [H] (PET!) - Revered - minipet bound to Character
-						["races"] = HORDE_ONLY,
-					}),
-				},
+				i(65363, {	-- Guild Herald [A] (PET!) - Revered - minipet bound to Character
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(65364, {	-- Guild Herald [H] (PET!) - Revered - minipet bound to Character
+					["races"] = HORDE_ONLY,
+				}),
 			}),
 			ach(7448, {	-- Scenario Roundup (A)
-				["collectible"] = false,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(85508),	-- Initiate's Shirt - Honored
@@ -183,7 +140,6 @@ root(ROOTS.Factions, {
 				},
 			}),
 			ach(7449, {	-- Scenario Roundup (H)
-				["collectible"] = false,
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(85508),	-- Initiate's Shirt - Honored
@@ -192,43 +148,32 @@ root(ROOTS.Factions, {
 				},
 			}),
 			ach(5467, {	-- Set the Oven to "Cataclysmic"
-				["collectible"] = false,
-				["g"] = {
-					i(62799),	-- Recipe: Broiled Dragon Feast (RECIPE!)
-				},
+				i(62799),	-- Recipe: Broiled Dragon Feast (RECIPE!)
 			}),
 			ach(5036, {	-- That's a Lot of Bait
-				["collectible"] = false,
-				["g"] = {
-					i(62800),	-- Recipe: Seafood Magnifique Feast (RECIPE!)
-				},
+				i(62800),	-- Recipe: Seafood Magnifique Feast (RECIPE!)
 			}),
 			ach(5812, {	-- United Nations (A)
-				["collectible"] = false,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(63138),	-- Dark Phoenix Hatchling (PET!) - Exalted
 				},
 			}),
 			ach(5892, {	-- United Nations (H)
-				["collectible"] = false,
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(63138),	-- Dark Phoenix Hatchling (PET!) - Exalted
 				},
 			}),
 			ach(6626, {	-- Working Better as a Team
-				["collectible"] = false,
-				["g"] = {
-					i(127011),	-- Pristine Lightforged Legplates - Honored
-					i(122252),	-- Tarnished Leggings of Destruction - Honored
-					i(122251),	-- Polished Legplates of Valor - Honored
-					i(122254),	-- Stained Shadowcraft Pants - Honored
-					i(122253),	-- Mystical Kilt of Elements - Honored
-					i(122256),	-- Tattered Dreadmist Leggings - Honored
-					i(122255),	-- Preened Wildfeather Leggings - Honored
-					i(122264),	-- Burnished Legplates of Might - Honored
-				},
+				i(127011),	-- Pristine Lightforged Legplates - Honored
+				i(122252),	-- Tarnished Leggings of Destruction - Honored
+				i(122251),	-- Polished Legplates of Valor - Honored
+				i(122254),	-- Stained Shadowcraft Pants - Honored
+				i(122253),	-- Mystical Kilt of Elements - Honored
+				i(122256),	-- Tattered Dreadmist Leggings - Honored
+				i(122255),	-- Preened Wildfeather Leggings - Honored
+				i(122264),	-- Burnished Legplates of Might - Honored
 			}),
 			i(62298, {	-- Golden King (MOUNT!)
 				["races"] = ALLIANCE_ONLY,
@@ -315,7 +260,6 @@ root(ROOTS.Factions, {
 				ach(5158),	-- Stay Classy
 				ach(7446),	-- The Ultimate Challenge
 				ach(5780),	-- You Have Been Challenged
-
 				-- QUESTS --
 				ach(5422),	-- A Daily Routine
 				ach(6629),	-- Daily Anticipation
@@ -324,7 +268,6 @@ root(ROOTS.Factions, {
 				ach(5421),	-- That's a Lot of Travel Time
 				ach(4947),	-- That's a Lot of Turn Ins
 				ach(5265),	-- The Daily Grind
-
 				-- PLAYER VS. PLAYER
 					-- GENERAL --
 				ach(5179),	-- Alliance Slayer
@@ -370,7 +313,6 @@ root(ROOTS.Factions, {
 				ach(5437),	-- Guild Warlords
 				ach(5240),	-- Now That's Teamwork
 				ach(5241),	-- Stick Together Team
-
 				-- DUNGEONS & RAIDS
 				ach(5009),	-- A Legendary Collection
 				ach(4955),	-- Are You Not Entertained?
@@ -397,7 +339,6 @@ root(ROOTS.Factions, {
 				ach(5187),	-- Val'anyr, Hammer of Ancient Kings - Guild Edition
 				ach(5185),	-- Warglaives of Azzinoth - Guild Edition
 				ach(4861),	-- We Are Legendary
-
 				-- PROFESSIONS --
 				ach(16797),	-- Artisan's Consortium Monopolist
 				ach(5027),	-- Bushels and Bushels
@@ -423,7 +364,6 @@ root(ROOTS.Factions, {
 				ach(5466),	-- Time to Open a Restaurant
 				ach(5274),	-- We're Gonna Need a Bigger Boat
 				ach(6626),	-- Working Better as a Team
-
 				-- REPUTATION --
 				ach(5129),	-- Ambassadors
 				ach(7844),	-- Ambassadors
@@ -439,7 +379,6 @@ root(ROOTS.Factions, {
 				ach(5812),	-- United Nations
 				ach(5892),	-- United Nations
 				ach(5035),	-- Master Crafter
-
 				-- GUILD FEATS OF STRENGTH --
 				ach(5440),	-- Guild Battlemasters
 				ach(5441),	-- Guild Battlemasters
