@@ -745,7 +745,6 @@ q(28800),	-- Whispers of the Djinn
 q(28801),	-- Tol'vir Hieroglyphics
 q(28802),	-- Map of the Architects
 q(28803),	-- Vengeance of the Wildhammer
-q(28804),	-- Dark Iron Contingency Plan
 q(28835),	-- Necessary Refreshment (Backup Groundspawn Quest)
 q(28844),	-- [DEPRECATED] Hyena Harvest
 q(28851),	-- [DEPRECATED] Sullah's Sideshow
@@ -1568,8 +1567,6 @@ q(76541),	--
 q(76542),	--
 q(76543),	--
 q(76573),	--
-q(76575),	--
-q(76736),	--
 q(77101),	-- PTR:Ingredient Quest Template
 q(77156),	-- PTR:Botanical Redistribution
 q(77161),	--
@@ -1606,12 +1603,7 @@ q(77514),	--
 q(77525),	--
 q(77533),	--
 q(77539),	--
-q(77540),	--
-q(77541),	--
-q(77542),	--
-q(77543),	--
 q(77544),	--
-q(77545),	--
 q(77546),	--
 q(77547),	--
 q(77548),	--
@@ -1641,7 +1633,6 @@ q(77692),	--
 q(77693),	--
 q(77694),	--
 q(77695),	--
-q(77697),	-- PTR:The Right Food...
 q(77711),	-- PTR:And a Pinch of Magic
 q(77738),	--
 q(77740),	--
@@ -1667,10 +1658,6 @@ q(77781),	--
 q(77803),	--
 q(77812),	--
 q(77814),	--
-q(77823),	--
-q(77824),	--
-q(77825),	--
-q(77826),	--
 q(77827),	--
 q(77828),	--
 q(77832),	-- PTR:Shadows upon shadows
@@ -1687,7 +1674,6 @@ q(77988),	--
 q(77991),	--
 q(77992),	--
 q(77995),	--
-q(78007),	--
 q(78040),	--
 q(78047),	--
 q(78061),	--
@@ -1734,7 +1720,6 @@ q(78349),	-- PTR:Gundrak Fast Track - Reverse
 q(78355),	-- PTR:Essence of a Broken Dream
 q(78357),	--
 q(78362),	--
-q(78364),	-- PTR:Drake's Dreaming Crest
 q(78366),	--
 q(78372),	-- PTR:Drake's Dreaming Crest
 q(78373),	--
@@ -1748,7 +1733,6 @@ q(78391),	-- PTR:Maker's Marathon - Reverse
 q(78394),	--
 q(78420),	--
 q(78421),	-- PTR:The Power of Dreams
-q(78422),	--
 q(78423),	--
 q(78429),	--
 q(78432),	--
@@ -1821,9 +1805,6 @@ q(78751),	--
 q(78763),	-- PTR:Dragonflight (70) E
 q(78789),	--
 q(78800),	--
-q(78817),	--
-q(78818),	--
-q(78819),	--
 q(78822),	--
 q(78824),	--
 q(78825),	--
@@ -1831,7 +1812,6 @@ q(78829),	--
 10.2.0.51601
 q(78834),	--
 q(78840),	--
-q(78842),	--
 q(78846),	--
 q(78847),	--
 q(78848),	--
@@ -1854,3 +1834,8 @@ q(78906),	--
 q(78928),	--
 q(78955),	--
 q(78973),	--
+10.2.0.51973
+q(77952),	--
+10.2.0.52038
+q(77837),	--
+q(78048),	--

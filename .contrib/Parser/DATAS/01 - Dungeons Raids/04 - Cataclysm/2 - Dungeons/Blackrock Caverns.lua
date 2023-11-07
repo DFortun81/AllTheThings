@@ -39,7 +39,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					["qg"] = 49476,	-- Pip Quickwit
 					["sourceQuest"] = 28735,	-- To the Chamber of Incineration!
 				}),
-				q(28804, {
+				q(28804, {	-- Dark Iron Contingency Plan
 					["provider"] = { "o", 207412 },	-- Stone Tablet
 					["requireSkill"] = ARCHAEOLOGY,
 					["isRepeatable"] = true,
@@ -133,7 +133,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(55263),	-- Renouncer's Cowl
 						i(55265),	-- Signet of Transformation
 					},
-				}),				
+				}),
 				e(107, {  -- Karsh Steelbender
 					["crs"] = { 39698 },	-- Karsh Steelbender
 					["groups"] = {
@@ -143,7 +143,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(55271),	-- Quicksilver Amulet
 						i(55272),	-- Steelbender's Masterpiece
 					},
-				}),	
+				}),
 				e(108, {  -- Beauty
 					["crs"] = { 39700 },	-- Beauty
 					["groups"] = {
@@ -153,7 +153,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(55277),	-- Beauty's Favorite Bone
 						i(55276),	-- Kibble
 					},
-				}),	
+				}),
 				e(109, {  -- Ascendent Lord Obsidius
 					["crs"] = { 39705 },	-- Ascendent Lord Obsidius
 					["groups"] = {
@@ -177,7 +177,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				e(105, {  -- Rom'ogg Bonecrusher
 					["crs"] = { 39665 },	-- Rom'ogg Bonecrusher
 					["groups"] = {
-						ach(5281),	-- Crushing Bones and Cracking Skulls						
+						ach(5281),	-- Crushing Bones and Cracking Skulls
 						i(56311),	-- Inquisition Robes
 						i(56313),	-- Manacles of Pain
 						i(56314),	-- Shield of the Iron Maiden
@@ -195,7 +195,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(56298),	-- Renouncer's Cowl
 						i(56299),	-- Signet of Transformation
 					},
-				}),				
+				}),
 				e(107, {  -- Karsh Steelbender
 					["crs"] = { 39698 },	-- Karsh Steelbender
 					["groups"] = {
@@ -206,7 +206,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(56300),	-- Quicksilver Amulet
 						i(56302),	-- Steelbender's Masterpiece
 					},
-				}),	
+				}),
 				e(108, {  -- Beauty
 					["crs"] = { 39700 },	-- Beauty
 					["groups"] = {
@@ -216,7 +216,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(56309),	-- Beauty's Chew Toy
 						i(56307),	-- Kibble
 					},
-				}),	
+				}),
 				e(109, {  -- Ascendent Lord Obsidius
 					["crs"] = { 39705 },	-- Ascendent Lord Obsidius
 					["groups"] = {
@@ -235,8 +235,8 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					},
 				}),
 			}),
-			-- #else	
-			d(NormalPlus, {				
+			-- #else
+			d(NormalPlus, {
 				e(105, {  -- Rom'ogg Bonecrusher
 					["crs"] = { 39665 },	-- Rom'ogg Bonecrusher
 					["groups"] = {
@@ -330,7 +330,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					},
 				}),
 			}),
-			-- #endif	
+			-- #endif
 		},
 	}),
 })));
