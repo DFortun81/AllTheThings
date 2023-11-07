@@ -582,6 +582,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			},
 			{
 				["name"] = "Blazing Citrine Ring",
+				["timeline"] = { "added 2.0.1" },
 				["recipeID"] = 25617
 			},
 			{
