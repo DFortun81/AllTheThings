@@ -44,8 +44,10 @@ root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, {
 				5282,	-- Arrested Development
 				5283,	-- Too Hot to Handle
 				5284,	-- Ascendant Descending
+				-- #if BEFORE 10.2.0
 				5285,	-- Old Faithful
 				5286,	-- Prince of Tides
+				-- #endif
 				5287,	-- Rotten to the Core
 				5288,	-- No Static at All
 				5289,	-- Extra Credit Bonus Stage

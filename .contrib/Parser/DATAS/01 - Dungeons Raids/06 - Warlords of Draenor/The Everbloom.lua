@@ -142,7 +142,9 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 						{"sub", "common_wod_dungeon_drop", 2, WRIST},
 					},
 					["g"] = {
-						ach(9493),	-- They Burn, Burn, Burn
+						ach(9493, {	-- They Burn, Burn, Burn
+							["timeline"] = { ADDED_6_0_3_LAUNCH, "removed 10.2.0" },
+						}),
 						i(119174),	-- Sol's Magestaff
 						i(110014),	-- Spores of Alacrity
 					},
