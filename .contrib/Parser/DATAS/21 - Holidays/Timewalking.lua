@@ -1743,6 +1743,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 			["g"] = {
 				n(ZONE_DROPS, {
 					--[[ Possibly
+					-- When confirmed, also remove them from the file at the very bottom
 					i(156461),	-- Adamant Handguards
 					i(156470),	-- Bloodcrush Cudgel
 					i(156467),	-- Boots of Unsettled Prey
