@@ -68,48 +68,104 @@ root(ROOTS.Instances, { tier(LEGION_TIER, {
 					["sourceQuest"] = 48803,	-- Forging a Key to the Past
 					["g"] = {
 						i(152241, sharedData({["modID"] = 2}, { -- Ensemble: Light-Woven Triumvirate Regalia
-							i(151337),	-- Head
-							i(151299),	-- Shoulder
-							i(151635),	-- Cloak
-							i(151303),	-- Chest
-							i(151305),	-- Wrist
-							i(151300),	-- Hands
-							i(151302),	-- Waist
-							i(151304),	-- Legs
-							i(151301),	-- Feet
+							["description"] = "May require relogging to gain all appearances.",
+							["g"] = {
+								-- Heroic items
+								i(151337, {["modID"] = 2,}),	-- Head
+								i(151299, {["modID"] = 2,}),	-- Shoulder
+								i(151635, {["modID"] = 2,}),	-- Cloak
+								i(151303, {["modID"] = 2,}),	-- Chest
+								i(151305, {["modID"] = 2,}),	-- Wrist
+								i(151300, {["modID"] = 2,}),	-- Hands
+								i(151302, {["modID"] = 2,}),	-- Waist
+								i(151304, {["modID"] = 2,}),	-- Legs
+								i(151301, {["modID"] = 2,}),	-- Feet
+								-- Mythic items
+								i(151337, {["modID"] = 23,}),	-- Head
+								i(151299, {["modID"] = 23,}),	-- Shoulder
+								--i(151635, {["modID"] = 23,}),	-- Cloak - No mythic version of the cloak exists
+								i(151303, {["modID"] = 23,}),	-- Chest
+								i(151305, {["modID"] = 23,}),	-- Wrist
+								i(151300, {["modID"] = 23,}),	-- Hands
+								i(151302, {["modID"] = 23,}),	-- Waist
+								i(151304, {["modID"] = 23,}),	-- Legs
+								i(151301, {["modID"] = 23,}),	-- Feet
+							},
 						})),
 						i(152242, sharedData({["modID"] = 2}, { -- Ensemble: Burnished Triumvirate Armor
-							i(151336),	-- Head
-							i(151319),	-- Shoulder
-							i(151306),	-- Cloak
-							i(151313),	-- Chest
-							i(151315),	-- Wrist
-							i(151318),	-- Hands
-							i(151316),	-- Waist
-							i(151314),	-- Legs
-							i(151317),	-- Feet
+							["description"] = "May require relogging to gain all appearances.",
+							["g"] = {
+								-- Heroic items
+								i(151336, {["modID"] = 2,}),	-- Head
+								i(151319, {["modID"] = 2,}),	-- Shoulder
+								i(151306, {["modID"] = 2,}),	-- Cloak
+								i(151313, {["modID"] = 2,}),	-- Chest
+								i(151315, {["modID"] = 2,}),	-- Wrist
+								i(151318, {["modID"] = 2,}),	-- Hands
+								i(151316, {["modID"] = 2,}),	-- Waist
+								i(151314, {["modID"] = 2,}),	-- Legs
+								i(151317, {["modID"] = 2,}),	-- Feet
+								-- Mythic items
+								i(151336, {["modID"] = 23,}),	-- Head
+								i(151319, {["modID"] = 23,}),	-- Shoulder
+								--i(151306, {["modID"] = 23,}),	-- Cloak - No mythic version of the cloak exists
+								i(151313, {["modID"] = 23,}),	-- Chest
+								i(151315, {["modID"] = 23,}),	-- Wrist
+								i(151318, {["modID"] = 23,}),	-- Hands
+								i(151316, {["modID"] = 23,}),	-- Waist
+								i(151314, {["modID"] = 23,}),	-- Legs
+								i(151317, {["modID"] = 23,}),	-- Feet
+							},
 						})),
 						i(152243, sharedData({["modID"] = 2}, { -- Ensemble: Sterling Triumvirate Chainmail
-							i(151324),	-- Head
-							i(151323),	-- Shoulder
-							i(151634),	-- Cloak
-							i(151325),	-- Chest
-							i(151321),	-- Wrist
-							i(151322),	-- Hands
-							i(151326),	-- Waist
-							i(151338),	-- Legs
-							i(151320),	-- Feet
+							["description"] = "May require relogging to gain all appearances.",
+							["g"] = {
+								-- Heroic items
+								i(151324, {["modID"] = 2,}),	-- Head
+								i(151323, {["modID"] = 2,}),	-- Shoulder
+								i(151634, {["modID"] = 2,}),	-- Cloak
+								i(151325, {["modID"] = 2,}),	-- Chest
+								i(151321, {["modID"] = 2,}),	-- Wrist
+								i(151322, {["modID"] = 2,}),	-- Hands
+								i(151326, {["modID"] = 2,}),	-- Waist
+								i(151338, {["modID"] = 2,}),	-- Legs
+								i(151320, {["modID"] = 2,}),	-- Feet
+								-- Mythic items
+								i(151324, {["modID"] = 23,}),	-- Head
+								i(151323, {["modID"] = 23,}),	-- Shoulder
+								--i(151634, {["modID"] = 23,}),	-- Cloak - No mythic version of the cloak exists
+								i(151325, {["modID"] = 23,}),	-- Chest
+								i(151321, {["modID"] = 23,}),	-- Wrist
+								i(151322, {["modID"] = 23,}),	-- Hands
+								i(151326, {["modID"] = 23,}),	-- Waist
+								i(151338, {["modID"] = 23,}),	-- Legs
+								i(151320, {["modID"] = 23,}),	-- Feet
+							},
 						})),
 						i(152244, sharedData({["modID"] = 2}, { -- Ensemble: Venerated Triumvirate Battleplate
-							i(151333),	-- Head
-							i(151331),	-- Shoulder
-							i(151298),	-- Cloak
-							i(151329),	-- Chest
-							i(151328),	-- Wrist
-							i(151332),	-- Hands
-							i(151327),	-- Waist
-							i(151339),	-- Legs
-							i(151330),	-- Feet
+							["description"] = "May require relogging to gain all appearances.",
+							["g"] = {
+								-- Heroic items
+								i(151333, {["modID"] = 2,}),	-- Head
+								i(151331, {["modID"] = 2,}),	-- Shoulder
+								i(151298, {["modID"] = 2,}),	-- Cloak
+								i(151329, {["modID"] = 2,}),	-- Chest
+								i(151328, {["modID"] = 2,}),	-- Wrist
+								i(151332, {["modID"] = 2,}),	-- Hands
+								i(151327, {["modID"] = 2,}),	-- Waist
+								i(151339, {["modID"] = 2,}),	-- Legs
+								i(151330, {["modID"] = 2,}),	-- Feet
+								-- Mythic items
+								i(151333, {["modID"] = 23,}),	-- Head
+								i(151331, {["modID"] = 23,}),	-- Shoulder
+								--i(151298, {["modID"] = 23,}),	-- Cloak - No mythic version of the cloak exists
+								i(151329, {["modID"] = 23,}),	-- Chest
+								i(151328, {["modID"] = 23,}),	-- Wrist
+								i(151332, {["modID"] = 23,}),	-- Hands
+								i(151327, {["modID"] = 23,}),	-- Waist
+								i(151339, {["modID"] = 23,}),	-- Legs
+								i(151330, {["modID"] = 23,}),	-- Feet
+							},
 						})),
 					},
 				}),
