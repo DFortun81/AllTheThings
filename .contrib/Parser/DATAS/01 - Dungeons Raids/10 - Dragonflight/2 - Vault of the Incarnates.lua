@@ -1,16 +1,15 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 ------ Encounter Constants ------
 local ERANOG = 2480;
 local TERROS = 2500;
 local THE_PRIMAL_COUNCIL = 2486;
-local SENNARTH_THE_COLD_BREATH = 2482;
-local DATHEA_ASCENDED = 2502;
-local KUROG_GRIMTOTEM = 2491;
-local BROODKEEPER_DIURNA = 2493;
-local RASZAGETH_THE_STORM_EATER = 2499;
+local SENNARTH = 2482;
+local DATHEA = 2502;
+local KUROG = 2491;
+local DIURNA = 2493;
+local RASZAGETH = 2499;
 
 ------ EncounterToCRS ------
 local EncounterToCRS = {
@@ -22,11 +21,11 @@ local EncounterToCRS = {
 		187767,	-- Embar Firepath
 		187772,	-- Opalfang
 	},
-	[SENNARTH_THE_COLD_BREATH] = { 187967 },	-- Sennarth, the Cold Breath
-	[DATHEA_ASCENDED] = { 189813 },	-- Dathea, Ascended
-	[KUROG_GRIMTOTEM] = { 181378 },	-- Kurog Grimtotem
-	[BROODKEEPER_DIURNA] = { 190245 },	-- Broodkeeper Diurna
-	[RASZAGETH_THE_STORM_EATER] = { 193909 },	-- Raszageth the Storm-Eater
+	[SENNARTH] = { 187967 },	-- Sennarth, the Cold Breath
+	[DATHEA] = { 189813 },	-- Dathea, Ascended
+	[KUROG] = { 181378 },	-- Kurog Grimtotem
+	[DIURNA] = { 190245 },	-- Broodkeeper Diurna
+	[RASZAGETH] = { 193909 },	-- Raszageth the Storm-Eater
 };
 
 ------ EnconterToLoot ------
@@ -64,7 +63,7 @@ local EncounterToLoot = {
 		i(195486),	-- Twisted Loam Spaulders
 		i(194301),	-- Whispering Incarnate Icon
 	},
-	[SENNARTH_THE_COLD_BREATH] = {
+	[SENNARTH] = {
 		i(195511),	-- Acid-Proof Webbing
 		i(195505),	-- Caustic Coldsteel Slicer
 		i(195508),	-- Chilled Silken Restraints
@@ -74,7 +73,7 @@ local EncounterToLoot = {
 		i(194304),	-- Iceblood Deathsnare
 		i(195507),	-- Unnatural Dripstone Cinch
 	},
-	[DATHEA_ASCENDED] = {
+	[DATHEA] = {
 		i(195493),	-- Ascended Squallspires
 		i(195495),	-- Daring Chasm-Leapers
 		i(195494),	-- Dathea's Cyclonic Cage
@@ -84,7 +83,7 @@ local EncounterToLoot = {
 		i(194302),	-- Storm-Eater's Boon
 		i(195492),	-- Windborne Hatsuburi
 	},
-	[KUROG_GRIMTOTEM] = {
+	[KUROG] = {
 		i(194306),	-- All-Totem of the Master
 		i(195483),	-- Awak'mani, Grimtotem's Legacy
 		i(194305),	-- Controlled Current Technique
@@ -95,7 +94,7 @@ local EncounterToLoot = {
 		i(195516),	-- Surging-Song Conductors
 		i(195514),	-- Treacherous Totem Wraps
 	},
-	[BROODKEEPER_DIURNA] = {
+	[DIURNA] = {
 		i(194307),	-- Broodkeeper's Promise
 		i(195520),	-- Broodsworn Legionnaire's Pavise
 		i(195523),	-- Eggtender's Safety Mitts
@@ -107,7 +106,7 @@ local EncounterToLoot = {
 		i(195526),	-- Seal of Filial Duty
 		i(195522),	-- Tassets of the Tarasek Legion
 	},
-	[RASZAGETH_THE_STORM_EATER] = {
+	[RASZAGETH] = {
 		i(195531),	-- Calamitous Shockguards
 		i(194310),	-- Desperate Invoker's Codex
 		i(195528),	-- Incarnate Sky-Splitter
@@ -168,7 +167,7 @@ InstanceHelper.ExtraLoots = {
 			end
 		end,
 		Data = {
-			[SENNARTH_THE_COLD_BREATH] = {
+			[SENNARTH] = {
 				i(196588, {	-- Dreadful Jade Forgestone
 					i(200409),	-- Greaves of the Haunted Frostbrood
 					i(200346),	-- Skybound Avenger's Legguards
@@ -191,7 +190,7 @@ InstanceHelper.ExtraLoots = {
 					i(200427),	-- Poleyns of the Walking Mountain
 				}),
 			},
-			[DATHEA_ASCENDED] = {
+			[DATHEA] = {
 				i(196587, {	-- Dreadful Garnet Forgestone
 					i(200407),	-- Grasps of the Haunted Frostbrood
 					i(200344),	-- Skybound Avenger's Grips
@@ -214,7 +213,7 @@ InstanceHelper.ExtraLoots = {
 					i(200425),	-- Gauntlets of the Walking Mountain
 				}),
 			},
-			[KUROG_GRIMTOTEM] = {
+			[KUROG] = {
 				i(196586, {	-- Dreadful Amethyst Forgestone
 					i(200405),	-- Breastplate of the Haunted Frostbrood
 					i(200342),	-- Skybound Avenger's Harness
@@ -237,7 +236,7 @@ InstanceHelper.ExtraLoots = {
 					i(200423),	-- Husk of the Walking Mountain
 				}),
 			},
-			[BROODKEEPER_DIURNA] = {
+			[DIURNA] = {
 				i(196589, {	-- Dreadful Lapis Forgestone
 					i(200410),	-- Jaws of the Haunted Frostbrood
 					i(200347),	-- Skybound Avenger's Ailerons
@@ -260,7 +259,7 @@ InstanceHelper.ExtraLoots = {
 					i(200428),	-- Peaks of the Walking Mountain
 				}),
 			},
-			[RASZAGETH_THE_STORM_EATER] = {
+			[RASZAGETH] = {
 				i(196590, {	-- Dreadful Topaz Forgestone
 					i(200408),	-- Maw of the Haunted Frostbrood
 					i(200345),	-- Skybound Avenger's Visor
@@ -312,7 +311,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 						["_encounter"] = { THE_PRIMAL_COUNCIL, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55111, { -- Dathea, Ascended
-						["_encounter"] = { DATHEA_ASCENDED, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { DATHEA, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(17111, {	-- Caverns of Infusion
@@ -320,18 +319,18 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 						["_encounter"] = { TERROS, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55114, { -- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH_THE_COLD_BREATH, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { SENNARTH, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55115, { -- Kurog Grimtotem
-						["_encounter"] = { KUROG_GRIMTOTEM, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { KUROG, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(17112, {	-- Fury of the Storm
 					crit(55116, { -- Broodkeeper Diurna
-						["_encounter"] = { BROODKEEPER_DIURNA, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { DIURNA, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55117, { --Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH_THE_STORM_EATER, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { RASZAGETH, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(16343, {	-- Vault of the Incarnates
@@ -342,22 +341,22 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 						["_encounter"] = { THE_PRIMAL_COUNCIL, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55111, { -- Dathea, Ascended
-						["_encounter"] = { DATHEA_ASCENDED, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { DATHEA, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55113, { -- Terros
 						["_encounter"] = { TERROS, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55114, { -- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH_THE_COLD_BREATH, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { SENNARTH, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55115, { -- Kurog Grimtotem
-						["_encounter"] = { KUROG_GRIMTOTEM, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { KUROG, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55116, { -- Broodkeeper Diurna
-						["_encounter"] = { BROODKEEPER_DIURNA, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { DIURNA, ANY_DIFFICULTY_ID_RAID },
 					}),
 					crit(55117, { --Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH_THE_STORM_EATER, ANY_DIFFICULTY_ID_RAID },
+						["_encounter"] = { RASZAGETH, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(16345, {	-- Heroic: Vault of the Incarnates
@@ -368,22 +367,22 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 						["_encounter"] = { THE_PRIMAL_COUNCIL, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(55123, { -- Dathea, Ascended
-						["_encounter"] = { DATHEA_ASCENDED, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { DATHEA, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(55124, { -- Terros
 						["_encounter"] = { TERROS, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(55125, { -- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH_THE_COLD_BREATH, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { SENNARTH, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(55127, { -- Kurog Grimtotem
-						["_encounter"] = { KUROG_GRIMTOTEM, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { KUROG, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(55126, { -- Broodkeeper Diurna
-						["_encounter"] = { BROODKEEPER_DIURNA, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { DIURNA, HEROIC_PLUS_ID_RAID },
 					}),
 					crit(55128, { --Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH_THE_STORM_EATER, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { RASZAGETH, HEROIC_PLUS_ID_RAID },
 					}),
 				}),
 				ach(16354, {	-- Mythic: Vault of the Incarnates
@@ -462,13 +461,13 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				BossOnly(ERANOG),
 				BossOnly(TERROS),
 				BossOnly(THE_PRIMAL_COUNCIL),
-				BossOnly(SENNARTH_THE_COLD_BREATH),
-				BossOnly(DATHEA_ASCENDED),
-				BossOnly(KUROG_GRIMTOTEM, {
+				BossOnly(SENNARTH),
+				BossOnly(DATHEA),
+				BossOnly(KUROG, {
 					i(200916),	-- Formula: Illusion: Primal Mastery (RECIPE!)
 				}),
-				BossOnly(BROODKEEPER_DIURNA),
-				BossOnly(RASZAGETH_THE_STORM_EATER, {
+				BossOnly(DIURNA),
+				BossOnly(RASZAGETH, {
 					i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
 				}),
 			}),
@@ -477,16 +476,16 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				header(HEADERS.Achievement, 17110, {	-- The Primal Bulwark
 					Boss(ERANOG),
 					Boss(THE_PRIMAL_COUNCIL),
-					Boss(DATHEA_ASCENDED),
+					Boss(DATHEA),
 				}),
 				header(HEADERS.Achievement, 17111, {	-- Caverns of Infusion
 					Boss(TERROS),
-					Boss(SENNARTH_THE_COLD_BREATH),
-					Boss(KUROG_GRIMTOTEM),
+					Boss(SENNARTH),
+					Boss(KUROG),
 				}),
 				header(HEADERS.Achievement, 17112, {	-- Fury of the Storm
-					Boss(BROODKEEPER_DIURNA),
-					Boss(RASZAGETH_THE_STORM_EATER),
+					Boss(DIURNA),
+					Boss(RASZAGETH),
 				}),
 			}),
 			Difficulty(NORMAL_PLUS_RAID).AddGroups({
@@ -499,19 +498,19 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				BossOnly(THE_PRIMAL_COUNCIL, {
 					ach(16364),	-- The Lunker Below
 				}),
-				BossOnly(SENNARTH_THE_COLD_BREATH, {
+				BossOnly(SENNARTH, {
 					ach(16419),	-- I Was Saving That For Later
 				}),
-				BossOnly(DATHEA_ASCENDED, {
+				BossOnly(DATHEA, {
 					ach(16458),	-- Nothing But Air
 				}),
-				BossOnly(KUROG_GRIMTOTEM, {
+				BossOnly(KUROG, {
 					ach(16450),	-- The Power is MINE!
 				}),
-				BossOnly(BROODKEEPER_DIURNA, {
+				BossOnly(DIURNA, {
 					ach(16442),	-- Incubation Extermination
 				}),
-				BossOnly(RASZAGETH_THE_STORM_EATER, {
+				BossOnly(RASZAGETH, {
 					ach(16451),	-- The Ol Raszle Daszle
 				}),
 			}),
@@ -528,11 +527,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				Boss(ERANOG),
 				Boss(TERROS),
 				Boss(THE_PRIMAL_COUNCIL),
-				Boss(SENNARTH_THE_COLD_BREATH),
-				Boss(DATHEA_ASCENDED),
-				Boss(KUROG_GRIMTOTEM),
-				Boss(BROODKEEPER_DIURNA),
-				Boss(RASZAGETH_THE_STORM_EATER),
+				Boss(SENNARTH),
+				Boss(DATHEA),
+				Boss(KUROG),
+				Boss(DIURNA),
+				Boss(RASZAGETH),
 			}),
 			Difficulty(HEROIC_PLUS_RAID).AddGroups({
 				CommonBossDrops({
@@ -547,11 +546,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				BossOnly(ERANOG),
 				BossOnly(TERROS),
 				BossOnly(THE_PRIMAL_COUNCIL),
-				BossOnly(SENNARTH_THE_COLD_BREATH),
-				BossOnly(DATHEA_ASCENDED),
-				BossOnly(KUROG_GRIMTOTEM),
-				BossOnly(BROODKEEPER_DIURNA),
-				BossOnly(RASZAGETH_THE_STORM_EATER, {
+				BossOnly(SENNARTH),
+				BossOnly(DATHEA),
+				BossOnly(KUROG),
+				BossOnly(DIURNA),
+				BossOnly(RASZAGETH, {
 					ach(17107, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Ahead of the Curve: Raszageth the Storm-Eater
 				}),
 			}),
@@ -571,11 +570,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				Boss(ERANOG),
 				Boss(TERROS),
 				Boss(THE_PRIMAL_COUNCIL),
-				Boss(SENNARTH_THE_COLD_BREATH),
-				Boss(DATHEA_ASCENDED),
-				Boss(KUROG_GRIMTOTEM),
-				Boss(BROODKEEPER_DIURNA),
-				Boss(RASZAGETH_THE_STORM_EATER),
+				Boss(SENNARTH),
+				Boss(DATHEA),
+				Boss(KUROG),
+				Boss(DIURNA),
+				Boss(RASZAGETH),
 			}),
 			Difficulty(MYTHIC_RAID).AddGroups({
 				CommonBossDrops({
@@ -611,19 +610,19 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				Boss(THE_PRIMAL_COUNCIL, {
 					ach(16348),	-- Mythic: The Primal Council
 				}),
-				Boss(SENNARTH_THE_COLD_BREATH, {
+				Boss(SENNARTH, {
 					ach(16349),	-- Mythic: Sennarth, The Cold Breath
 				}),
-				Boss(DATHEA_ASCENDED, {
+				Boss(DATHEA, {
 					ach(16350),	-- Mythic: Dathea, Ascended
 				}),
-				Boss(KUROG_GRIMTOTEM, {
+				Boss(KUROG, {
 					ach(16351),	-- Mythic: Kurog Grimtotem
 				}),
-				Boss(BROODKEEPER_DIURNA, {
+				Boss(DIURNA, {
 					ach(16352),	-- Mythic: Broodkeeper Diurna
 				}),
-				Boss(RASZAGETH_THE_STORM_EATER, {
+				Boss(RASZAGETH, {
 					ach(16353, {	-- Mythic: Raszageth the Storm-Eater
 						title(488),	-- <Name> the Storm-Eater
 					}),
