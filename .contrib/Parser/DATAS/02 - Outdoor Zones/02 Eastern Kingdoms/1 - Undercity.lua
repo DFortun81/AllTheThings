@@ -72,6 +72,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(FLIGHT_PATHS, {
 				fp(11, {	-- Undercity, Tirisfal
+					["description"] = "Can be picked up only during Chromie time.",
 					["cr"] = 4551,	-- Michael Garrett <Bat Handler>
 					["coord"] = { 63.6, 48.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
