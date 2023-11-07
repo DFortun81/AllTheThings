@@ -136,9 +136,9 @@ REMOVED_3_4_1 = "removed 3.4.1.47612";					-- Wrath of the Lich King Classic 3.4
 CREATED_3_4_2 = "created 3.4.2.50664";					-- Wrath of the Lich King Classic 3.4.2 Launch on July 28th, 2023
 ADDED_3_4_2 = "added 3.4.2.50664";						-- Wrath of the Lich King Classic 3.4.2 Launch on July 28th, 2023
 REMOVED_3_4_2 = "removed 3.4.2.50664";					-- Wrath of the Lich King Classic 3.4.2 Launch on July 28th, 2023
-CREATED_3_4_3 = "created 3.4.3";						-- Wrath of the Lich King Classic 3.4.3 Launch on
-ADDED_3_4_3 = "added 3.4.3";							-- Wrath of the Lich King Classic 3.4.3 Launch on
-REMOVED_3_4_3 = "removed 3.4.3";						-- Wrath of the Lich King Classic 3.4.3 Launch on
+CREATED_3_4_3 = "created 3.4.3.51666";					-- Wrath of the Lich King Classic 3.4.3 Launch on October 10th, 2023
+ADDED_3_4_3 = "added 3.4.3.51666";						-- Wrath of the Lich King Classic 3.4.3 Launch on October 10th, 2023
+REMOVED_3_4_3 = "removed 3.4.3.51666";					-- Wrath of the Lich King Classic 3.4.3 Launch on October 10th, 2023
 
 ---------------
 -- CATACLYSM --
@@ -170,6 +170,8 @@ REMOVED_4_3_0 = "removed 4.3.0.15005";					-- Cataclysm 4.3.0 Launch on November
 CREATED_4_3_2 = "created 4.3.2.15211";					-- Cataclysm 4.3.2 Launch on January 31st, 2012
 ADDED_4_3_2 = "added 4.3.2.15211";						-- Cataclysm 4.3.2 Launch on January 31st, 2012
 REMOVED_4_3_2 = "removed 4.3.2.15211";					-- Cataclysm 4.3.2 Launch on January 31st, 2012
+--- CLASSIC TIMELINES ---
+
 
 -----------------------
 -- MISTS OF PANDARIA --
@@ -341,15 +343,19 @@ REMOVED_10_1_5 = "removed 10.1.5.50401";				-- Dragonflight 10.1.5 Launch on Jul
 CREATED_10_1_7 = "created 10.1.7.51187";				-- Dragonflight 10.1.7 Launch on September 5th, 2023
 ADDED_10_1_7 = "added 10.1.7.51187";					-- Dragonflight 10.1.7 Launch on September 5th, 2023
 REMOVED_10_1_7 = "removed 10.1.7.51187";				-- Dragonflight 10.1.7 Launch on September 5th, 2023
-CREATED_10_2_0 = "created 10.2.0";						-- Dragonflight 10.2.0 Launch on
-ADDED_10_2_0 = "added 10.2.0";							-- Dragonflight 10.2.0 Launch on
-REMOVED_10_2_0 = "removed 10.2.0";						-- Dragonflight 10.2.0 Launch on
+CREATED_10_2_0 = "created 10.2.0";						-- Dragonflight 10.2.0 Launch on November 7th, 2023
+ADDED_10_2_0 = "added 10.2.0";							-- Dragonflight 10.2.0 Launch on November 7th, 2023
+REMOVED_10_2_0 = "removed 10.2.0";						-- Dragonflight 10.2.0 Launch on November 7th, 2023
 CREATED_10_2_5 = "created 10.2.5";						-- Dragonflight 10.2.5 Launch on
 ADDED_10_2_5 = "added 10.2.5";							-- Dragonflight 10.2.5 Launch on
 REMOVED_10_2_5 = "removed 10.2.5";						-- Dragonflight 10.2.5 Launch on
 CREATED_10_2_7 = "created 10.2.7";						-- Dragonflight 10.2.7 Launch on
 ADDED_10_2_7 = "added 10.2.7";							-- Dragonflight 10.2.7 Launch on
 REMOVED_10_2_7 = "removed 10.2.7";						-- Dragonflight 10.2.7 Launch on
-CREATED_10_3_0 = "created 10.3.0";						-- Dragonflight 10.3.0 Launch on
-ADDED_10_3_0 = "added 10.3.0";							-- Dragonflight 10.3.0 Launch on
-REMOVED_10_3_0 = "removed 10.3.0";						-- Dragonflight 10.3.0 Launch on
+
+--------------------
+-- THE WAR WITHIN --
+--------------------
+CREATED_11_0_0 = "created 11.0.0";						-- The War Within 10.0.0/Pre-Patch Launch on
+ADDED_11_0_0 = "added 11.0.0";							-- The War Within 10.0.0/Pre-Patch Launch on
+REMOVED_11_0_0 = "removed 11.0.0.";						-- The War Within 10.0.0/Pre-Patch Launch on

@@ -106,7 +106,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["cost"] = {{ "c", CONQUEST, 375 }},
 						}),
 						i(210572, {	-- Verdant Equipment Chest
-							["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+							["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
 							["cost"] = {{ "c", CONQUEST, 375 }},
 						}),
 					},
@@ -522,7 +522,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						n(BACK, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
+						n(BACK, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {
 							i(211243, {	-- Hellbloom Cape
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 120 },
@@ -586,7 +586,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						filter(CLOTH, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
+						filter(CLOTH, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {
 							i(211217, {	-- Hellbloom Bindings
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 120 },
@@ -675,7 +675,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						filter(LEATHER, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
+						filter(LEATHER, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {
 							i(211223, {	-- Hellbloom Belt
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 120 },
@@ -759,7 +759,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						filter(MAIL, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
+						filter(MAIL, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {
 							i(211242, {	-- Hellbloom Armguards
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 120 },
@@ -843,7 +843,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						filter(PLATE, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
+						filter(PLATE, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {
 							i(211234, {	-- Hellbloom Bracers
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 120 },
@@ -997,7 +997,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						n(WEAPONS, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {
+						n(WEAPONS, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {
 							i(211194, {	-- Hellbloom Aegis
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 150 },
@@ -1169,10 +1169,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 								}),
 								i(210324, {	-- Medal of Honor [A]
-									["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+									["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
 								}),
 								i(210325, {	-- Medal of Honor [H]
-									["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+									["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
 								}),
 							},
 						}),

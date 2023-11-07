@@ -12,15 +12,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["g"] = {
 					i(208393, {	-- Nascent Aspect's Dreaming Crest
 						["cost"] = {{"c", ASPECTS_DREAMING_CREST, 45}},
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
 					}),
 					i(208395, {	-- Nascent Whelpling's Dreaming Crest
 						["cost"] = {{"c", WHELPLINGS_DREAMING_CREST, 45}},
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
 					}),
 					i(208394, {	-- Nascent Wyrm's Dreaming Crest
 						["cost"] = {{"c", WYRMS_DREAMING_CREST, 45}},
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
 					}),
 					i(201584),	-- Serevite Rod
 				},
@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					i(210436, {	-- Nature's Cradle
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 6 }},
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 }
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }
 					}),
 					i(202122, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Primal Chaos Cluster
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S1, 3 }},

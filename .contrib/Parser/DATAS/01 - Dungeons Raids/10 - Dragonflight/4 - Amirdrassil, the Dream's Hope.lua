@@ -481,7 +481,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 			Difficulty(LFR_RAID).AddGroupsWithUpgrades({
 				ZoneDrops({
 					currency(WHELPLINGS_DREAMING_CREST, {
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
 					}),
 				}),
 				header(HEADERS.Achievement, 19344, {	-- Incarnate's Wake
@@ -543,7 +543,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 			Difficulty(NORMAL_RAID).AddGroupsWithUpgrades({
 				ZoneDrops({
 				--	currency(DRAKES_DREAMING_CREST, {
-				--		["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+				--		["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
 				--	}),
 				}),
 				Boss(GNARLROOT),
@@ -563,7 +563,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 			}),
 			Difficulty(HEROIC_PLUS_RAID).AddGroups({
 				n(QUESTS, {
-					q(78876, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {	-- A Glowing Memento
+					q(78876, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {	-- A Glowing Memento
 						["provider"] = { "i", 211375 },	-- Everglowing Ember
 						["g"] = {
 							i(210537),	-- Renewed Proto-Drake: Embodiment of Shadowflame (DM!)
@@ -579,14 +579,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				BossOnly(SMOLDERON),
 				BossOnly(TINDRAL),
 				BossOnly(FYRAKK, {
-					ach(19350, {["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 }}),	-- Ahead of the Curve: Fyrakk the Blazing
+					ach(19350, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }}),	-- Ahead of the Curve: Fyrakk the Blazing
 					i(211375),	-- Everglowing Ember (QS!)
 				}),
 			}),
 			Difficulty(HEROIC_RAID).AddGroupsWithUpgrades({
 				ZoneDrops({
 				--	currency(WYRMS_DREAMING_CREST, {
-				--		["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+				--		["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
 				--	}),
 				}),
 				Boss(GNARLROOT),
@@ -607,7 +607,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 			Difficulty(MYTHIC_RAID).AddGroups({
 				ZoneDrops({
 				--	currency(ASPECTS_DREAMING_CREST, {
-				--		["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 },
+				--		["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
 				--	}),
 				}),
 				n(ZONE_DROPS, sharedData({	-- First 2 week BoP version drops
@@ -651,8 +651,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					ach(19343, {	-- Mythic: Fyrakk the Blazing
 						title(530),	-- <Name> the Blazing
 					}),
-					ach(19351, {["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 }}),	-- Cutting Edge: Fyrakk the Blazing
-					ach(19392, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_10_3_0 } }, {	-- Hall of Fame: Fyrakk the Blazing
+					ach(19351, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }}),	-- Cutting Edge: Fyrakk the Blazing
+					ach(19392, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {	-- Hall of Fame: Fyrakk the Blazing
 						title(528),	-- <Name>, Famed Slayer of Fyrakk
 					})),
 					ach(19389),	-- Mythic: Fyrakk the Blazing Guild Run
