@@ -583,6 +583,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			{
 				["name"] = "Blazing Citrine Ring",
 				["recipeID"] = 25617
+				["timeline"] = { "added 4.0.3" },
 			},
 			{
 				["name"] = "Braided Copper Ring",
