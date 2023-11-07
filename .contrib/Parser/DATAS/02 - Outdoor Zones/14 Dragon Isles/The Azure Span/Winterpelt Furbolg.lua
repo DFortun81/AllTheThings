@@ -181,8 +181,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 				q(72945, {	-- Our Path Ahead
 					["sourceQuests"] = { 72558 },	-- Our Honored Ancestors
 					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 75
-					["provider"] = { "n", 199996 },	-- Ancestor Brazzok
-					["coord"] = { 66.0, 12.7, THE_AZURE_SPAN },
+					["provider"] = { "n", 199300 },	-- Ancestor Molg
+					["coord"] = { 67.0, 13.1, THE_AZURE_SPAN },
 				}),
 				q(72559, {	-- History Heist
 					["sourceQuests"] = { 72558 },	-- Our Honored Ancestors
