@@ -1451,7 +1451,9 @@ root(ROOTS.NeverImplemented, {
 				pet(3975),	-- Midnight Terrorwing (PET!)
 				pet(4237),	-- Treanthony (PET!)
 				-- With SpeciesID Attached
-				i(206174),	-- Blub (PET!)
+				i(206174, {	-- Blub (PET!)
+					["modelID"] = 112678,
+				}),
 			})),
 
 			-- 10.1.7
@@ -1460,7 +1462,16 @@ root(ROOTS.NeverImplemented, {
 				i(208850),	-- Lil' Maggz (PET!) [Item Never Available]
 			})),
 
-
+			-- 10.2.0
+			tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+				-- With SpeciesID Attached
+				i(210409, {	-- Aura (PET!) [Trading Post?]
+					["modelID"] = 114495,
+				}),
+				i(210870, {	-- Mitzy (PET!) [Winter Veil?]
+					["modelID"] = 115261,
+				}),
+			})),
 		}),
 	}),
 });

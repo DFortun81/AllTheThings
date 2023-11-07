@@ -20,6 +20,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(206191),	-- Roquefort-Stuffed Peppers
 					i(206190),	-- Venrik's Goat Milk
 				})),
+
+				-- 10.2.0
+				tier(DF_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+					i(210495),	-- Slumbering Peacebloom Tea
+				})),
 			}),
 		}),
 		filter(RECIPES, {
@@ -60,6 +65,12 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(412537),	-- Picante Pomfruit Cake (RECIPE!)
 					r(412536),	-- Roquefort-Stuffed Peppers (RECIPE!)
 					r(412535),	-- Venrik's Goat Milk (RECIPE!)
+				})),
+
+				-- 10.2.0
+				tier(DF_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+					-- Without SpellID attached
+					i(210496),	-- Recipe: Slumbering Peacebloom Tea
 				})),
 			}),
 		}),

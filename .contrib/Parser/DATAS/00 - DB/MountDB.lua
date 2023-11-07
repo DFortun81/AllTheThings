@@ -1674,6 +1674,8 @@ i(0, 400976);		-- Gleaming Moonbeast
 i(192807, 374278);	-- Renewed Magmammoth
 i(205208, 408654);	-- Sandy Shalewing [TODO: Check if you actually get item]
 i(210022, 424082);	-- Mimiron's Jumpjets
+--- NYI ---
+i(203727, 0);		-- Gleaming Moonbeast's Reins
 
 ------------------
 -- PATCH 10.2.0 --
@@ -1699,7 +1701,7 @@ i(209060, 422486);	-- Verdant Armoredon
 i(210345, 425416);	-- Verdant Gladiator's Slitherdrake
 i(210070, 424534);	-- Vicious Moonbeast
 i(210069, 424535);	-- Vicious Moonbeast
---- Unsorted ---
+--- NYI ---
 i(210141, 424601);	-- [PH] Brown-Furred Spiky Bakar
 i(210142, 424607);	-- [PH] Red-Furred Bakar
 i(210143, 424608);	-- [PH] White-Furred Bakar
@@ -1715,3 +1717,4 @@ i(211085, 428062);	-- Jeweled Sapphire Scarab
 i(210774, 427041);	-- Ochre Dreamtalon
 i(211087, 428067);	-- Shadowflame Hellbike
 i(210059, 424476);	-- Winter Night Dreamsaber
+i(210140, 0);		-- [PH] Black-Furred Bakar

@@ -949,6 +949,56 @@ root(ROOTS.NeverImplemented, {
 				i(210550),	-- Set Keystone Map: Dawn of the Infinite: Galakrond's Fall
 				i(210551),	-- Set Keystone Map: Dawn of the Infinite: Murozond's Rise
 				i(210040),	-- Set Keystone Map: Throne of the Tides
+				------ Unknown ------
+				i(208692),	-- Ancient Roottwined Tome
+				i(209019),	-- Conjured Sugarfree Firewater Sorbet
+				i(210786),	-- Dreaming Whiskerfish
+				i(210687),	-- Ironfur Sample
+				i(211418),	-- Q'onzu Edict of Change
+				i(208690),	-- Roottwined Key
+				i(210726),	-- Ruby Flightstone
+				i(210346),	-- Self-Baking Herb Based Cookies
+				i(208606),	-- Somnagora's Heart
+				i(209853),	-- Unstable Water Walking Potion
+				i(208745),	-- Your Reward [DNT]
+				------ Trash ------
+				i(210445),	-- Ash Pouch
+				i(210441),	-- Behemoth's Feather
+				i(210554),	-- Blazing Feather
+				i(210444),	-- Burning Flower
+				i(210450),	-- Flaming Orb
+				i(210449),	-- Heated Scales
+				i(210451),	-- Imp Tail
+				i(210443),	-- Matchbook
+				i(208856),	-- Pocket Lint
+				i(211270),	-- Pristine Core Leather
+				i(210442),	-- Sizzling Charcoal
+				i(210452),	-- Small Demon Horn
+				i(210439),	-- Speck of Mana
+				i(210440),	-- Splendid Blossom
+				i(210438),	-- Wisp Dust
+				------ Rewards ------
+				i(210224),	-- Small Emerald Bloom
+				i(210225),	-- Medium Emerald Bloom
+				i(210226),	-- Large Emerald Bloom
+				------ Insignia ------
+				i(210419),	-- Dream Wardens Insignia [Uncommon]
+				i(210420),	-- Dream Wardens Insignia [Rare]
+				i(210421),	-- Dream Wardens Insignia [Epic 500]
+				i(211416),	-- Dream Wardens Insignia [Epic 1k]
+				i(210423),	-- Dream Wardens Insignia [Epic 2.5k]
+				i(210422),	-- Loamm Niffen Insignia [Epic 2.5k]
+				------ Equipment Chest ------
+				i(210595),	-- Dreaming Equipment Chest
+				------ Time Rifts ------
+				i(209856),	-- Dilated Time Pod
+				------ Items from Questlines that Gives Rep ------
+				i(211131),	-- Delicately Curated Blossoms
+				i(210916),	-- Ember of Fyrakk
+				i(210920),	-- Gift of Amirdrassil
+				------ Winter Veil ------
+				i(210657),	-- Gently Shaken Gift
+				i(209871),	-- Winter Veil Gift
 			})),
 		}),
 	}),

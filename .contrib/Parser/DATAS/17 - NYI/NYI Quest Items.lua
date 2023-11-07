@@ -1,8 +1,6 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
--- Everything in this file hasn't been implemented yet.
-
 root(ROOTS.NeverImplemented, {
 	filter(QUEST_ITEMS, {
 		tier(CLASSIC_TIER, {
@@ -218,6 +216,35 @@ root(ROOTS.NeverImplemented, {
 				i(208733),	-- Dragonhorn Flute
 				i(208737),	-- Hole-Punched Bakar Tooth
 				i(208734),	-- Waterlogged Ledger
+			})),
+
+			-- 10.2.0
+			tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+				i(206378),	-- [DNT] Test Loot
+				i(206379),	-- [DNT] Test Loot
+				i(208230),	-- Anaya's Pendant
+				i(208571),	-- Artisan's Consortium Leaflet
+				i(209324),	-- Azure Leywine
+				i(208703),	-- Blacksmith Bammer
+				i(208731),	-- Blacksmith Bammer Key
+				i(209806),	-- Cataloger's Film
+				i(209318),	-- Dalaran Dazzler
+				i(207632),	-- Dream-Attuned Crystal
+				i(209323),	-- Emerald Dreamtime
+				i(209316),	-- Goat's Milk in a Skull Mug
+				i(209319),	-- Hornswog's Breath
+				i(208217),	-- Illusory Scroll of Youth - NOT USED
+				i(209317),	-- Karazhan Twist
+				i(209952),	-- Mark of Q'onzu
+				i(209326),	-- Maruukai Pale Ale
+				i(208702),	-- Memory Essence
+				i(209322),	-- Niffen Strong-Sniffer Stout
+				i(208955),	-- Pilfered Dreamshard
+				i(208232),	-- Singed Darnassian Tabard
+				i(208221),	-- Soil of the Dreamgrove
+				i(208231),	-- Talisman of Hope
+				i(208049),	-- Valarjar Trophy
+				i(208599),	-- Verdant Dream Seed
 			})),
 		}),
 	}),

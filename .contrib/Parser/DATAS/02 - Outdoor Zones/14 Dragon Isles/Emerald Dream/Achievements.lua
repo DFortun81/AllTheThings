@@ -63,7 +63,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["_npcs"] = { 210047 },	-- Somnambulant Ori
 				}),
 				crit(62935, {	-- Splinterlimb
-					["_npcs"] = { 209365 },	-- Splinterlimb
+					["_npcs"] = { 209358 },	-- Splinterlimb
 				}),
 				crit(62941, {	-- Surging Lasher
 					["_npcs"] = { 210111 },	-- Surging Lasher

@@ -645,7 +645,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["provider"] = { "n", 210164 },	-- Thaalean
 				["coord"] = { 58.1, 77.3, EMERALD_DREAM },
 				["g"] = {
-					--i(210864),	-- Improvised Leafbed (TOY!)
+					i(210864),	-- Improvised Leafbed (TOY!)
 					i(210952),	-- Spare Heated Hearthstone
 				},
 			}),
@@ -861,27 +861,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(209416),	-- Turtle Eggshell Shards (QI!)
 				},
 			}),
-			--[[
-			q(, {	--
-				["sourceQuests"] = {  },	--
-				["provider"] = { "n",  },	--
-				["coord"] = { , EMERALD_DREAM },
-			}),
-			q(, {	--
-				--["sourceQuests"] = {  },	-- no requirement as of 7.Sept
-				["provider"] = { "n",  },	--
-				["coord"] = { , EMERALD_DREAM },
-			}),
-
-			q(, {	--
-				["sourceQuests"] = {  },	--
-				["provider"] = { "n",  },	--
-				["coord"] = { , EMERALD_DREAM },
+			q(77711, {	--	And a Pinch of Magic
+				["sourceQuests"] = { 77697 },	-- The Right Food...
+				--["provider"] = { "n",  },	--
+				--["coord"] = { 48.6, 67.8, EMERALD_DREAM },
 				["g"] = {
+					i(208705),	-- Druidic Totem (QI!)
 				},
 			}),
-			]]--
-
+			q(77762, {	--	A Little Hope is Never without Worth
+				["sourceQuests"] = { 77711 },	-- And a Pinch of Magic
+				--["provider"] = { "n",  },	--
+				--["coord"] = { , EMERALD_DREAM },
+				["g"] = {
+					i(210774),	-- Ochre Dreamtalon (MOUNT!)
+				},
+			}),
 			n(BONUS_OBJECTIVES, {
 				-- from 'big' rares bonus objective
 				i(211303),	-- Dryad's Supply Pouch

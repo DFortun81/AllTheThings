@@ -145,6 +145,16 @@ root(ROOTS.NeverImplemented, {
 				i(208229),	-- Honor of the Forsaken (TOY!)
 				i(206347),	-- Mannequin Charm (TOY!)
 			})),
+
+			-- 10.2.0
+			tier(DF_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+				i(211424),	-- Dreaming Banner of the Aspects (TOY!)
+				i(209859),	-- Festive Trans-Dimensional Bird Whistle (TOY!) [Winter Veil?]
+				i(208825),	-- Junior Timekeeper's Racing Belt (TOY!) [Winter Veil?]
+				i(208798),	-- Recorded Memories of Tyr's Guard (TOY!) [Tyr Part 4?]
+				i(210656),	-- Winter Veil Socks (TOY!) [Winter Veil?]
+				i(208087),	-- Unknown (TOY!)
+			})),
 		}),
 	}),
 });

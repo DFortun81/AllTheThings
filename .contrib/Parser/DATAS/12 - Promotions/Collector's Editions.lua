@@ -33,9 +33,6 @@ TBC_CLASSIC_DELUXE_EDITION = createHeader({
 		fr = "Édition BC Classic Deluxe",
 		cn = "燃烧的远征经典怀旧服典藏包",
 	},
-	description = {
-		en = "These rewards were made available to anyone who purchased a Deluxe Edition of TBC Classic. (not to be confused with the original Burning Crusade Collector's Edition)",
-	},
 });
 WOTLK_CLASSIC_NORTHREND_UPGRADE = createHeader({
 	readable = "WotLK Classic Northrend Upgrade",
@@ -57,6 +54,9 @@ THE_WAR_WITHIN_TEMPORARY = createHeader({
 	text = {
 		en = "The War Within",
 	},
+	description = {
+		en = "The War Within is the tenth expansion for World of Warcraft and the beginning of the Worldsoul Saga. Journey through never-before-seen subterranean worlds filled with hidden wonders and lurking perils, down to the dark depths of the nerubian empire, where the malicious Harbinger of the Void is gathering arachnid forces to bring Azeroth to its knees.",
+	};
 });
 WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION = createHeader({
 	readable = "WoW 15th Anniversary Collector's Edition",

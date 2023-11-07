@@ -1,8 +1,6 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
--- Everything in this file hasn't been implemented yet.
-
 root(ROOTS.NeverImplemented, {
 	n(WEAPONS, {
 		filter(BOWS, {
@@ -749,6 +747,7 @@ root(ROOTS.NeverImplemented, {
 		tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 			i(207025),	-- <Placeholder> Fyrakk Axe - Shadowflame
 			i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1
+			i(210961),	-- Alara'shinu
 		})),
 	}),
 });

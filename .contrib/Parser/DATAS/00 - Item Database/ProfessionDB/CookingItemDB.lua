@@ -826,3 +826,5 @@ i(0, 412535);	-- Venrik's Goat Milk
 ------------------
 --- ITEM ---
 i(210242, 416001);	-- Slumbering Peacebloom Tea
+--- NYI ---
+i(210496, 0);		-- Slumbering Peacebloom Tea

@@ -1,7 +1,6 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
--- Everything in this file hasn't been implemented yet.
 -- #if AFTER 3.0.1
 root(ROOTS.NeverImplemented, {
 	filter(TITLES, {

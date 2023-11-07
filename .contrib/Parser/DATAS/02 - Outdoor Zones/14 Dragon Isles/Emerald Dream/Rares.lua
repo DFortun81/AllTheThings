@@ -31,6 +31,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["g"] = {
 					i(208333),	-- Fallen Flame's Crown
 					i(208364),	-- Falling Leaf Saber
+					i(208341),	-- Fire-Runed Spaulders
+					i(208334),	-- Legplates of the Krakken
 				},
 			}),
 			n(209929, {	-- Envoy of Winter
@@ -39,7 +41,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 34.5, 63.2, EMERALD_DREAM },
 				["g"] = {
 					i(208332),	-- Horns of the Envoy
-					i(208365),	-- Winter's Stand
+					i(208365, {	-- Winter's Stand
+						i(209948),	-- Spring's Keeper
+					}),
 					i(208881),	-- Shiversnap Blossom (QI!)
 				},
 			}),

@@ -6,6 +6,14 @@
 root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(ENGINEERING, {
+			filter(MISC, {
+				tier(DF_TIER, {
+					-- 10.2.0
+					tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+						i(210198),	-- Depleted Battery
+					})),
+				}),
+			}),
 			n(CRAFTABLES, {
 				tier(DF_TIER, {
 					-- 10.0.0

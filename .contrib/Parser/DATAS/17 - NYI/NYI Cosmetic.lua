@@ -247,5 +247,175 @@ root(ROOTS.NeverImplemented, {
 			i(190874),	-- Glittering Fel Gavel [Seeing Red]
 			i(209053),	-- Green Brewfest Bulwark [Brewfest]
 		})),
+
+		-- 10.2.0
+		tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+				------ Random ------
+			i(210663),	-- Circlet of the Mother Tree
+			i(210666),	-- Crest of the Seething Flamekeeper
+			i(210664),	-- Frost Sapling's Adornment
+			i(210662),	-- Ochre Ornament of the Grove
+			i(208199),	-- Tabard of the Tyr's Guard [From Tyr Part 4?]
+			i(210433),	-- Visage of Aurostor [From World Boss?]
+
+				------ Darnassian Questline? ------
+			i(210415),	-- Darnassian Moonsilver Spaulders
+			i(210418),	-- Darnassian Cloak
+			i(210424),	-- Darnassian Tabard
+
+				------ Trading Post ------
+			n(SETS, {
+				------ Wastewander Tracker ------
+				i(211122),	-- Ensemble: Wastewander Tracker's Kit
+				i(211121),	-- Wastewander Tracker's Bindings
+				i(211117),	-- Wastewander Tracker's Boots
+				i(211115),	-- Wastewander Tracker's Breastplate
+				i(211120),	-- Wastewander Tracker's Cinch
+				i(211164),	-- Wastewander Tracker's Cloak
+				i(211119),	-- Wastewander Tracker's Dowser
+				i(211116),	-- Wastewander Tracker's Grips
+				i(211118),	-- Wastewander Tracker's Pants
+				i(211113),	-- Wastewander Tracker's Rebreather
+				i(211114),	-- Wastewander Tracker's Spaulders
+
+				------ Unrelenting Justice ------
+				i(211093),	-- Belt of Unrelenting Justice
+				i(211092),	-- Bracers of Unrelenting Justice
+				i(211095),	-- Cloak of Unrelenting Justice
+				i(211088),	-- Gloves of Unrelenting Justice
+				i(211090),	-- Helm of Unrelenting Justice
+				i(211094),	-- Leggings of Unrelenting Justice
+				--i(190494),	-- Treads of Unrelenting Justice [Reused Darkmoon Harlequin's Shoes?]
+				i(211091),	-- Tunic of Unrelenting Justice
+
+				------ Sky-Captain ------
+				i(210078),	-- Sky-Captain's Formal Attire
+				i(210066),	-- Sky-Captain's Formal Boots
+				i(210071),	-- Sky-Captain's Formal Cape
+				i(210067),	-- Sky-Captain's Formal Coat
+				i(210065),	-- Sky-Captain's Formal Hat
+				i(210068),	-- Sky-Captain's Formal Pants
+				i(210079),	-- Sky-Captain's Masquerade Attire
+				i(210073),	-- Sky-Captain's Masquerade Boots
+				i(210076),	-- Sky-Captain's Masquerade Cape
+				i(210074),	-- Sky-Captain's Masquerade Coat
+				i(210072),	-- Sky-Captain's Masquerade Hat
+				i(210075),	-- Sky-Captain's Masquerade Pants
+
+				------ Battle Magister ------
+				i(208695),	-- Battle Magister's Belt
+				i(208700),	-- Battle Magister's Enchantments
+				i(208694),	-- Battle Magister's Epaulets
+				i(208693),	-- Battle Magister's Orbs
+				i(208699),	-- Battle Magister's Regalia
+				i(208698),	-- Battle Magister's Scepter
+				i(208696),	-- Battle Magister's Scimitar
+				i(208697),	-- Battle Magister's Shard
+
+				------ Silver Hoarder ------
+				i(208710),	-- Flames of the Silver Hoarder
+				i(208709),	-- Flight of the Silver Hoarder
+				i(208706),	-- Horns of the Silver Hoarder
+				i(208711),	-- Saber of the Silver Hoarder
+				i(208708),	-- Sash of the Silver Hoarder
+				i(208725),	-- Scales of the Silver Hoarder
+				i(208707),	-- Shoulderguards of the Silver Hoarder
+				i(208726),	-- Treasure of the Silver Hoarder
+
+				------ Krag'wa's Executor ------
+				i(208716),	-- Hatchet of Krag'wa's Executor
+				i(208712),	-- Headdress of Krag'wa's Executor
+				i(208713),	-- Idols of Krag'wa's Executor
+				i(208729),	-- Imminence of Krag'wa's Executor
+				i(208715),	-- Safeguard of Krag'wa's Executor
+				i(208717),	-- Talons of Krag'wa's Executor
+				i(208730),	-- Tools of Krag'wa's Executor
+				i(208714),	-- Vines of Krag'wa's Executor
+
+				------ Hornstrider Hunter ------
+				i(208719),	-- Hornstrider Hunter's Ammunition
+				i(208718),	-- Hornstrider Hunter's Beak
+				i(208727),	-- Hornstrider Hunter's Camouflage
+				i(208720),	-- Hornstrider Hunter's Crest
+				i(208723),	-- Hornstrider Hunter's Harpooner
+				i(208728),	-- Hornstrider Hunter's Preference
+				i(208722),	-- Hornstrider Hunter's Pride
+				i(208721),	-- Hornstrider Hunter's Serrator
+
+				------ Scarlet Zealot's Trappings ------
+				i(210883),	-- Ensemble: Scarlet Zealot's Trappings
+			}),
+			n(ARMOR, {
+				------ Sarong ------
+				i(210861),	-- Trader's Aquatic Sarong
+				i(210849),	-- Trader's Azure Sarong
+				i(210854),	-- Trader's Camo Sarong
+				i(210857),	-- Trader's Carrot Sarong
+				i(210852),	-- Trader's Cloudy Sarong
+				i(210844),	-- Trader's Crimson Sarong
+				i(210853),	-- Trader's Deep Sarong
+				i(210856),	-- Trader's Faded Sarong
+				i(210851),	-- Trader's Grassy Sarong
+				i(210846),	-- Trader's Lively Sarong
+				i(210855),	-- Trader's Lively Sarong
+				i(210848),	-- Trader's Midnight Sarong
+				i(210859),	-- Trader's Plum Sarong
+				i(210858),	-- Trader's Rosy Sarong
+				i(210850),	-- Trader's Sepia Sarong
+				i(210862),	-- Trader's Snowy Sarong
+				i(210863),	-- Trader's Sunny Sarong
+				i(210860),	-- Trader's Violet Sarong
+
+				------ Stones ------
+				i(210869),	-- Blademaster's Azure Stones
+				i(210865),	-- Blademaster's Crimson Stones
+				i(210867),	-- Blademaster's Lively Stones
+				i(210866),	-- Blademaster's Suntouched Stones
+				i(210868),	-- Blademaster's Violet Stones
+
+				------ Armor ------
+				i(211069),	-- Azure Treads of the Kalu'ak
+				i(211268),	-- Blademaster's Thundering Greatsword
+				i(211267),	-- Classic Snowy Tabard
+				i(211070),	-- Crimson Treads of the Kalu'ak
+				i(211130),	-- Errant Crusader's Helm
+				i(211002),	-- Golden Mobile Timepiece
+				i(211066),	-- Gossamer Desert Gown
+				i(211071),	-- Lively Treads of the Kalu'ak
+				i(211294),	-- Marauder King's Body Carver
+				i(211259),	-- Regal Gryphon Rider's Headgear
+				i(211145),	-- Royal Witch Doctor's Trophies
+				i(210999),	-- Ruby Faced Mobile Timepiece
+				i(211129),	-- Sand-Swept Soiree Gloves
+				i(211001),	-- Sapphire Faced Mobile Timepiece
+				i(211068),	-- Sepia Treads of the Kalu'ak
+				i(211258),	-- Wildhammer Scout's Headgear
+				i(211137),	-- Witch Doctor's Fetish Frame
+				i(211295),	-- Wrathful Crusader's Helm
+			}),
+			n(WEAPONS, {
+				------ Stormhammer ------
+				i(211255),	-- Regal Stormhammer
+				i(211256),	-- Thundering Stormhammer
+				i(211257),	-- Arsenal: Stormrider's Stormhammers
+				------ Whispering Temple Blade ------
+				i(211298),	-- Whispering Temple Blade
+				i(211299),	-- Gleaming Whispering Temple Blade
+				i(211300),	-- Arsenal: Whispering Temple Blades
+				------ Axe ------
+				i(211064),	-- Dwarven Crown Splitter
+				i(211097),	-- Gilded Crown Splitter
+				------ Gun ------
+				i(211096),	-- Gold-Plated Witchhunter's Carbine
+				i(211072),	-- Time Marshal's Carbine
+				------ Shield ------
+				i(211098),	-- Copper Scarab Bulwark
+				i(211099),	-- Gilded Scarab Bulwark
+				i(211159),	-- Royal Witch Doctor's Guard
+				i(211158),	-- Witch Doctor's Fetish Guard
+				------ Winter Veil ------
+				i(210843),	-- Candied Blade
+			}),
+		})),
 	}),
 });

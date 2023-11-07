@@ -1035,6 +1035,15 @@ end
 -- MissingIDs also host speciesIDs that are still missing in our database. For a full list of speciesID see Database Harvester > Raw > Pets.txt
 
 -----------------
+-- CLASSIC WOW --
+-----------------
+i(198665, 4234);	-- Pebble's Pebble
+i(200060, 4235);	-- Hoplet
+i(204982, 4236);	-- Glub
+i(187794, 4233);	-- Flurky
+i(211082, 4329);	-- Arfus (WOTLK)
+
+-----------------
 --   CLASSIC   --
 -----------------
 -- ITEM --
@@ -4118,15 +4127,6 @@ n(211302, 4280);	-- Pewling
 n(211182, 4277);	-- Sapnibbler
 n(211295, 4279);	-- Slumbertooth
 n(212459, 4303);	-- Snaggletoof
---- UNSORTED ---
+--- NYI ---
 i(210556, 4291);	-- Ivy
 i(210870, 4311);	-- Mitzy
-
------------------
--- CLASSIC WOW --
------------------
-i(198665, 4234);	-- Pebble's Pebble
-i(200060, 4235);	-- Hoplet
-i(204982, 4236);	-- Glub
-i(187794, 4233);	-- Flurky
-i(211082, 4329);	-- Arfus (WOTLK)

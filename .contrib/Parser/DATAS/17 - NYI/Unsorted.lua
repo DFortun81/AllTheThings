@@ -573,223 +573,9 @@ root(ROOTS.Unsorted, {
 	}),
 	tier(DF_TIER, {
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
-			filter(BATTLE_PETS, {
-				i(210409),	-- Aura (PET!) [Trading Post]
-				i(210870),	-- Mitzy (PET!) [Winter Veil?]
-			}),
-			filter(COSMETIC, {
-					------ Random ------
-				i(210663),	-- Circlet of the Mother Tree
-				i(210666),	-- Crest of the Seething Flamekeeper
-				i(210664),	-- Frost Sapling's Adornment
-				i(210662),	-- Ochre Ornament of the Grove
-				i(208199),	-- Tabard of the Tyr's Guard [From Tyr Part 4?]
-				i(210433),	-- Visage of Aurostor [From World Boss?]
-
-					------ Darnassian Questline? ------
-				i(210415),	-- Darnassian Moonsilver Spaulders
-				i(210418),	-- Darnassian Cloak
-				i(210424),	-- Darnassian Tabard
-
-					------ Trading Post ------
-				n(SETS, {
-					------ Wastewander Tracker ------
-					i(211122),	-- Ensemble: Wastewander Tracker's Kit
-					i(211121),	-- Wastewander Tracker's Bindings
-					i(211117),	-- Wastewander Tracker's Boots
-					i(211115),	-- Wastewander Tracker's Breastplate
-					i(211120),	-- Wastewander Tracker's Cinch
-					i(211164),	-- Wastewander Tracker's Cloak
-					i(211119),	-- Wastewander Tracker's Dowser
-					i(211116),	-- Wastewander Tracker's Grips
-					i(211118),	-- Wastewander Tracker's Pants
-					i(211113),	-- Wastewander Tracker's Rebreather
-					i(211114),	-- Wastewander Tracker's Spaulders
-
-					------ Unrelenting Justice ------
-					i(211093),	-- Belt of Unrelenting Justice
-					i(211092),	-- Bracers of Unrelenting Justice
-					i(211095),	-- Cloak of Unrelenting Justice
-					i(211088),	-- Gloves of Unrelenting Justice
-					i(211090),	-- Helm of Unrelenting Justice
-					i(211094),	-- Leggings of Unrelenting Justice
-					--i(190494),	-- Treads of Unrelenting Justice [Reused Darkmoon Harlequin's Shoes?]
-					i(211091),	-- Tunic of Unrelenting Justice
-
-					------ Sky-Captain ------
-					i(210078),	-- Sky-Captain's Formal Attire
-					i(210066),	-- Sky-Captain's Formal Boots
-					i(210071),	-- Sky-Captain's Formal Cape
-					i(210067),	-- Sky-Captain's Formal Coat
-					i(210065),	-- Sky-Captain's Formal Hat
-					i(210068),	-- Sky-Captain's Formal Pants
-					i(210079),	-- Sky-Captain's Masquerade Attire
-					i(210073),	-- Sky-Captain's Masquerade Boots
-					i(210076),	-- Sky-Captain's Masquerade Cape
-					i(210074),	-- Sky-Captain's Masquerade Coat
-					i(210072),	-- Sky-Captain's Masquerade Hat
-					i(210075),	-- Sky-Captain's Masquerade Pants
-
-					------ Battle Magister ------
-					i(208695),	-- Battle Magister's Belt
-					i(208700),	-- Battle Magister's Enchantments
-					i(208694),	-- Battle Magister's Epaulets
-					i(208693),	-- Battle Magister's Orbs
-					i(208699),	-- Battle Magister's Regalia
-					i(208698),	-- Battle Magister's Scepter
-					i(208696),	-- Battle Magister's Scimitar
-					i(208697),	-- Battle Magister's Shard
-
-					------ Silver Hoarder ------
-					i(208710),	-- Flames of the Silver Hoarder
-					i(208709),	-- Flight of the Silver Hoarder
-					i(208706),	-- Horns of the Silver Hoarder
-					i(208711),	-- Saber of the Silver Hoarder
-					i(208708),	-- Sash of the Silver Hoarder
-					i(208725),	-- Scales of the Silver Hoarder
-					i(208707),	-- Shoulderguards of the Silver Hoarder
-					i(208726),	-- Treasure of the Silver Hoarder
-
-					------ Krag'wa's Executor ------
-					i(208716),	-- Hatchet of Krag'wa's Executor
-					i(208712),	-- Headdress of Krag'wa's Executor
-					i(208713),	-- Idols of Krag'wa's Executor
-					i(208729),	-- Imminence of Krag'wa's Executor
-					i(208715),	-- Safeguard of Krag'wa's Executor
-					i(208717),	-- Talons of Krag'wa's Executor
-					i(208730),	-- Tools of Krag'wa's Executor
-					i(208714),	-- Vines of Krag'wa's Executor
-
-					------ Hornstrider Hunter ------
-					i(208719),	-- Hornstrider Hunter's Ammunition
-					i(208718),	-- Hornstrider Hunter's Beak
-					i(208727),	-- Hornstrider Hunter's Camouflage
-					i(208720),	-- Hornstrider Hunter's Crest
-					i(208723),	-- Hornstrider Hunter's Harpooner
-					i(208728),	-- Hornstrider Hunter's Preference
-					i(208722),	-- Hornstrider Hunter's Pride
-					i(208721),	-- Hornstrider Hunter's Serrator
-
-					------ Scarlet Zealot's Trappings ------
-					i(210883),	-- Ensemble: Scarlet Zealot's Trappings
-				}),
-				n(ARMOR, {
-					------ Sarong ------
-					i(210861),	-- Trader's Aquatic Sarong
-					i(210849),	-- Trader's Azure Sarong
-					i(210854),	-- Trader's Camo Sarong
-					i(210857),	-- Trader's Carrot Sarong
-					i(210852),	-- Trader's Cloudy Sarong
-					i(210844),	-- Trader's Crimson Sarong
-					i(210853),	-- Trader's Deep Sarong
-					i(210856),	-- Trader's Faded Sarong
-					i(210851),	-- Trader's Grassy Sarong
-					i(210846),	-- Trader's Lively Sarong
-					i(210855),	-- Trader's Lively Sarong
-					i(210848),	-- Trader's Midnight Sarong
-					i(210859),	-- Trader's Plum Sarong
-					i(210858),	-- Trader's Rosy Sarong
-					i(210850),	-- Trader's Sepia Sarong
-					i(210862),	-- Trader's Snowy Sarong
-					i(210863),	-- Trader's Sunny Sarong
-					i(210860),	-- Trader's Violet Sarong
-
-					------ Stones ------
-					i(210869),	-- Blademaster's Azure Stones
-					i(210865),	-- Blademaster's Crimson Stones
-					i(210867),	-- Blademaster's Lively Stones
-					i(210866),	-- Blademaster's Suntouched Stones
-					i(210868),	-- Blademaster's Violet Stones
-
-					------ Armor ------
-					i(211069),	-- Azure Treads of the Kalu'ak
-					i(211268),	-- Blademaster's Thundering Greatsword
-					i(211267),	-- Classic Snowy Tabard
-					i(211070),	-- Crimson Treads of the Kalu'ak
-					i(211130),	-- Errant Crusader's Helm
-					i(211002),	-- Golden Mobile Timepiece
-					i(211066),	-- Gossamer Desert Gown
-					i(211071),	-- Lively Treads of the Kalu'ak
-					i(211294),	-- Marauder King's Body Carver
-					i(211259),	-- Regal Gryphon Rider's Headgear
-					i(211145),	-- Royal Witch Doctor's Trophies
-					i(210999),	-- Ruby Faced Mobile Timepiece
-					i(211129),	-- Sand-Swept Soiree Gloves
-					i(211001),	-- Sapphire Faced Mobile Timepiece
-					i(211068),	-- Sepia Treads of the Kalu'ak
-					i(211258),	-- Wildhammer Scout's Headgear
-					i(211137),	-- Witch Doctor's Fetish Frame
-					i(211295),	-- Wrathful Crusader's Helm
-				}),
-				n(WEAPONS, {
-					------ Stormhammer ------
-					i(211255),	-- Regal Stormhammer
-					i(211256),	-- Thundering Stormhammer
-					i(211257),	-- Arsenal: Stormrider's Stormhammers
-					------ Whispering Temple Blade ------
-					i(211298),	-- Whispering Temple Blade
-					i(211299),	-- Gleaming Whispering Temple Blade
-					i(211300),	-- Arsenal: Whispering Temple Blades
-					------ Axe ------
-					i(211064),	-- Dwarven Crown Splitter
-					i(211097),	-- Gilded Crown Splitter
-					------ Gun ------
-					i(211096),	-- Gold-Plated Witchhunter's Carbine
-					i(211072),	-- Time Marshal's Carbine
-					------ Shield ------
-					i(211098),	-- Copper Scarab Bulwark
-					i(211099),	-- Gilded Scarab Bulwark
-					i(211159),	-- Royal Witch Doctor's Guard
-					i(211158),	-- Witch Doctor's Fetish Guard
-					------ Winter Veil ------
-					i(210843),	-- Candied Blade
-				}),
-			}),
 			filter(MISC, {
-				------ Unknown ------
-				i(208692),	-- Ancient Roottwined Tome
-				i(209019),	-- Conjured Sugarfree Firewater Sorbet
-				i(210786),	-- Dreaming Whiskerfish
-				i(210687),	-- Ironfur Sample
-				i(211418),	-- Q'onzu Edict of Change
-				i(208690),	-- Roottwined Key
-				i(210726),	-- Ruby Flightstone
-				i(210346),	-- Self-Baking Herb Based Cookies
-				i(208606),	-- Somnagora's Heart
-				i(209853),	-- Unstable Water Walking Potion
-				i(208745),	-- Your Reward [DNT]
-				------ Trash ------
-				i(210445),	-- Ash Pouch
-				i(210441),	-- Behemoth's Feather
-				i(210554),	-- Blazing Feather
-				i(210444),	-- Burning Flower
-				i(210450),	-- Flaming Orb
-				i(210449),	-- Heated Scales
-				i(210451),	-- Imp Tail
-				i(210443),	-- Matchbook
-				i(208856),	-- Pocket Lint
-				i(211270),	-- Pristine Core Leather
-				i(210442),	-- Sizzling Charcoal
-				i(210452),	-- Small Demon Horn
-				i(210439),	-- Speck of Mana
-				i(210440),	-- Splendid Blossom
-				i(210438),	-- Wisp Dust
-				------ Rewards ------
-				i(210224),	-- Small Emerald Bloom
-				i(210225),	-- Medium Emerald Bloom
-				i(210226),	-- Large Emerald Bloom
-				------ Insignia ------
-				i(210419),	-- Dream Wardens Insignia [Uncommon]
-				i(210420),	-- Dream Wardens Insignia [Rare]
-				i(210421),	-- Dream Wardens Insignia [Epic 500]
-				i(211416),	-- Dream Wardens Insignia [Epic 1k]
-				i(210423),	-- Dream Wardens Insignia [Epic 2.5k]
-				i(210422),	-- Loamm Niffen Insignia [Epic 2.5k]
-				------ Equipment Chest ------
-				i(210595),	-- Dreaming Equipment Chest
-				------ Time Rifts ------
-				i(209856),	-- Dilated Time Pod
 				------ Tame Hunter Pets ------
+				-- Check if These pop any QuestIDs we can source them properly
 				i(209863),	-- Moontouched Thorns
 				i(209864),	-- Moontouched Thorns
 				i(209865),	-- Moontouched Thorns
@@ -799,59 +585,8 @@ root(ROOTS.Unsorted, {
 				i(209866),	-- Thornspeaker Ritual Knife
 				i(209867),	-- Thornspeaker Ritual Knife
 				i(209868),	-- Thornspeaker Ritual Knife
-				------ Items from Questlines that Gives Rep ------
-				i(211131),	-- Delicately Curated Blossoms
-				i(210916),	-- Ember of Fyrakk
-				i(210920),	-- Gift of Amirdrassil
-				------ Winter Veil ------
-				i(210657),	-- Gently Shaken Gift
-				i(209871),	-- Winter Veil Gift
-			}),
-			filter(MOUNTS, {
-				i(210140),	-- [PH] Black-Furred Bakar (No SpellID?)
-				i(210141),	-- [PH] Brown-Furred Spiky Bakar (MOUNT!)
-				i(210142),	-- [PH] Red-Furred Bakar (MOUNT!)
-				i(210143),	-- [PH] White-Furred Bakar (MOUNT!)
-				i(210144),	-- [PH] Yellow-Furred Spiky Bakar (MOUNT!)
-				i(210145),	-- [PH] YellowBlack-Furred Bakar (MOUNT!)
-				i(210919),	-- Crimson Glimmerfur (MOUNT!)
-				i(211075),	-- Deathbringer's Shadowcycle (MOUNT!)
-				i(211089),	-- Felreaver Deathcycle (MOUNT!)
-				i(211084),	-- Golden Regal Scarab (MOUNT!)
-				i(211074),	-- Jeweled Copper Scarab (MOUNT!)
-				i(211086),	-- Jeweled Jade Scarab (MOUNT!)
-				i(211085),	-- Jeweled Sapphire Scarab (MOUNT!)
-				i(210774),	-- Ochre Dreamtalon (MOUNT!)
-				i(211087),	-- Shadowflame Hellbike (MOUNT!)
 			}),
 			filter(QUEST_ITEMS, {
-				------ Unknown ------
-				i(206378),	-- [DNT] Test Loot
-				i(206379),	-- [DNT] Test Loot
-				i(208230),	-- Anaya's Pendant
-				i(208571),	-- Artisan's Consortium Leaflet
-				i(209324),	-- Azure Leywine
-				i(208703),	-- Blacksmith Bammer
-				i(208731),	-- Blacksmith Bammer Key
-				i(209806),	-- Cataloger's Film
-				i(209318),	-- Dalaran Dazzler
-				i(207632),	-- Dream-Attuned Crystal
-				i(208705),	-- Druidic Totem
-				i(209323),	-- Emerald Dreamtime
-				i(209316),	-- Goat's Milk in a Skull Mug
-				i(209319),	-- Hornswog's Breath
-				i(208217),	-- Illusory Scroll of Youth - NOT USED
-				i(209317),	-- Karazhan Twist
-				i(209952),	-- Mark of Q'onzu
-				i(209326),	-- Maruukai Pale Ale
-				i(208702),	-- Memory Essence
-				i(209322),	-- Niffen Strong-Sniffer Stout
-				i(208955),	-- Pilfered Dreamshard
-				i(208232),	-- Singed Darnassian Tabard
-				i(208221),	-- Soil of the Dreamgrove
-				i(208231),	-- Talisman of Hope
-				i(208049),	-- Valarjar Trophy
-				i(208599),	-- Verdant Dream Seed
 				------ Raid Quest ------
 				i(210470),	-- Echoed Ephemera
 				i(210498),	-- Fused Essence
@@ -871,48 +606,310 @@ root(ROOTS.Unsorted, {
 				i(211398),	-- Attuned Sophic Vellum
 			}),
 			n(PROFESSIONS, {
-				------ Recipes ------
 				i(207461),	-- Schematic: Portable Party Platter (RECIPE!)
-				------ Profession Treausres ------
-				i(210198),	-- Depleted Battery
-				------ Duplicate? ------
-				i(210495),	-- Slumbering Peacebloom Tea
-				i(210496),	-- Recipe: Slumbering Peacebloom Tea
 			}),
-			n(RARES, {
-				i(208373),	-- Band of Bated Breath
-				i(208331),	-- Cowl of the Flame
-				i(209880),	-- Curve of Starry Dusks
-				i(208371),	-- Fire Assassin's Boots
-				i(208341),	-- Fire-Runed Spaulders
-				i(208385),	-- Flame Endowed Blade
-				i(208337),	-- Leaf Steward's Leggings
-				i(208336),	-- Legguards of the Dreamsaber
-				i(208334),	-- Legplates of the Krakken
-				i(208381),	-- Scepter of Still Waters
-				i(208324),	-- Scorching Dryad's Chestpiece
-				i(209948),	-- Spring's Keeper
-				i(208340),	-- Stag's Flourishing Mantle
-				i(208355),	-- String of Delicacies
+			n(QUESTS, {
+				-- 10.2.0.51239
+				q(75272),	-- PTR:Test
+				q(75610),	--
+				q(76161),	-- PTR:Conversation Testing [DNT]
+				q(76164),	-- PTR:Bovan's Last Hope
+				q(76167),	-- PTR:A Place of Refuge
+				q(76168),	-- PTR:A Place of Refuge
+				q(76201),	-- PTR:Clone Ownership Verification [DNT]
+				q(76259),	--
+				q(76280),	--
+				q(76281),	--
+				q(76282),	--
+				q(76283),	--
+				q(76346),	--
+				q(76349),	--
+				q(76432),	-- PTR:Slay Corrupted Denizens
+				q(76466),	--
+				q(76467),	--
+				q(76468),	--
+				q(76541),	--
+				q(76542),	--
+				q(76543),	--
+				q(76573),	--
+				q(77101),	-- PTR:Ingredient Quest Template
+				q(77156),	-- PTR:Botanical Redistribution
+				q(77161),	--
+				q(77162),	--
+				q(77177),	--
+				q(77196),	--
+				q(77200),	--
+				q(77201),	--
+				q(77217),	--
+				q(77218),	--
+				q(77226),	--
+				q(77227),	--
+				q(77229),	--
+				q(77319),	--
+				q(77320),	--
+				q(77321),	--
+				q(77329),	--
+				q(77349),	--
+				q(77350),	--
+				q(77351),	--
+				q(77353),	--
+				q(77354),	--
+				q(77356),	--
+				q(77365),	--
+				q(77367),	--
+				q(77369),	--
+				q(77370),	--
+				q(77372),	--
+				q(77490),	--
+				q(77497),	--
+				q(77505),	--
+				q(77512),	--
+				q(77514),	--
+				q(77525),	--
+				q(77533),	--
+				q(77539),	--
+				q(77544),	--
+				q(77546),	--
+				q(77547),	--
+				q(77548),	--
+				q(77549),	--
+				q(77550),	--
+				q(77551),	--
+				q(77552),	--
+				q(77553),	--
+				q(77554),	--
+				q(77555),	--
+				q(77556),	--
+				q(77557),	--
+				q(77558),	--
+				q(77559),	--
+				q(77560),	--
+				q(77561),	--
+				q(77562),	--
+				q(77563),	--
+				q(77564),	--
+				q(77565),	--
+				q(77566),	--
+				q(77650),	--
+				q(77663),	--
+				q(77681),	-- PTR:Alerting all Adversaries!
+				q(77683),	--
+				q(77692),	--
+				q(77693),	--
+				q(77694),	--
+				q(77695),	--
+				q(77711),	-- PTR:And a Pinch of Magic
+				q(77738),	--
+				q(77740),	--
+				q(77741),	--
+				q(77742),	--
+				q(77748),	--
+				q(77749),	--
+				q(77750),	--
+				q(77751),	--
+				q(77752),	--
+				q(77753),	--
+				q(77758),	--
+				q(77759),	--
+				q(77762),	-- PTR:A Little Hope is Never without Worth
+				q(77767),	--
+				q(77768),	--
+				q(77769),	--
+				q(77770),	--
+				q(77771),	--
+				q(77772),	--
+				q(77773),	--
+				q(77781),	--
+				q(77803),	--
+				q(77812),	--
+				q(77814),	--
+				q(77827),	--
+				q(77828),	--
+				q(77832),	-- PTR:Shadows upon shadows
+				q(77847),	--
+				q(77855),	--
+				q(77859),	--
+				q(77917),	--
+				q(77918),	--
+				q(77925),	--
+				q(77926),	--
+				q(77933),	--
+				q(77939),	--
+				q(77988),	--
+				q(77991),	--
+				q(77992),	--
+				q(77995),	--
+				q(78040),	--
+				q(78047),	--
+				q(78061),	--
+				q(78067),	--
+				q(78087),	--
+				q(78096),	-- PTR:A Silver Lining
+				q(78129),	-- PTR:Gotta Go Faster
+				q(78130),	--
+				q(78131),	-- PTR:A Winter Veil Gift
+				q(78209),	--
+				q(78216),	--
+				q(78217),	--
+				q(78218),	--
+				q(78238),	--
+				q(78246),	--
+				q(78247),	--
+				q(78252),	--
+				q(78253),	--
+				q(78259),	--
+				q(78268),	-- PTR:[DNT] Test Quest
+				q(78286),	--
+				q(78301),	-- PTR:Skalawag Slither
+				q(78302),	-- PTR:Skalawag Slither - Advanced
+				q(78303),	-- PTR:Skalawag Slither - Reverse
+				q(78311),	--
+				q(78312),	--
+				q(78313),	--
+				q(78314),	--
+				q(78315),	--
+				q(78316),	--
+				q(78317),	--
+				q(78318),	--
+				q(78320),	--
+				q(78325),	-- PTR:Daggercap Dart
+				q(78326),	-- PTR:Daggercap Dart - Advanced
+				q(78327),	-- PTR:Daggercap Dart - Reverse
+				q(78331),	--
+				q(78334),	-- PTR:Blackriver Burble
+				q(78335),	-- PTR:Blackriver Burble - Advanced
+				q(78336),	-- PTR:Blackriver Burble - Reverse
+				q(78346),	-- PTR:Gundrak Fast Track
+				q(78347),	-- PTR:Gundrak Fast Track - Advanced
+				q(78349),	-- PTR:Gundrak Fast Track - Reverse
+				q(78355),	-- PTR:Essence of a Broken Dream
+				q(78357),	--
+				q(78362),	--
+				q(78366),	--
+				q(78372),	-- PTR:Drake's Dreaming Crest
+				q(78373),	--
+				q(78374),	-- PTR:Flightstones
+				q(78377),	--
+				q(78380),	--
+				q(78388),	-- PTR:Gigantic Dreamseeds
+				q(78389),	-- PTR:Maker's Marathon
+				q(78390),	-- PTR:Maker's Marathon - Advanced
+				q(78391),	-- PTR:Maker's Marathon - Reverse
+				q(78394),	--
+				q(78420),	--
+				q(78421),	-- PTR:The Power of Dreams
+				q(78423),	--
+				q(78429),	--
+				q(78432),	--
+				q(78433),	--
+				q(78441),	-- PTR:Crystalsong Crisis
+				q(78442),	-- PTR:Crystalsong Crisis - Advanced
+				q(78443),	-- PTR:Crystalsong Crisis - Reverse
+				q(78445),	--
+				q(78454),	-- PTR:Dragonblight Dragon Flight
+				q(78455),	-- PTR:Dragonblight Dragon Flight - Advanced
+				q(78456),	-- PTR:Dragonblight Dragon Flight - Reverese
+				q(78494),	--
+				q(78499),	-- PTR:Citadel Sortie
+				q(78500),	-- PTR:Citadel Sortie - Advanced
+				q(78501),	-- PTR:Citadel Sortie - Reverse
+				q(78504),	-- PTR:A Gently Shaken Gift
+				q(78553),	--
+				q(78554),	--
+				q(78558),	-- PTR:Sholazar Spree
+				q(78559),	-- PTR:Sholazar Spree - Advanced
+				q(78560),	-- PTR:Sholazar Spree - Reverse
+				q(78566),	--
+				q(78567),	--
+				q(78568),	--
+				q(78569),	--
+				q(78576),	--
+				q(78577),	--
+				q(78578),	--
+				q(78581),	-- PTR:Dragon Isles Supplies
+				q(78582),	-- PTR:Dragon Isles Supplies
+				q(78583),	-- PTR:Dragon Isles Supplies
+				q(78584),	-- PTR:Dragon Isles Supplies
+				q(78585),	--
+				q(78586),	--
+				q(78587),	--
+				q(78588),	--
+				-- 10.2.0.51297
+				q(78595),	-- PTR:Dream Infused
+				q(78599),	--
+				q(78600),	--
+				q(78601),	--
+				q(78602),	--
+				-- 10.2.0.51425
+				q(78606),	--
+				q(78608),	-- PTR:Geothermal Jaunt
+				q(78609),	-- PTR:Geothermal Jaunt - Advanced
+				q(78610),	-- PTR:Geothermal Jaunt - Reverse
+				q(78617),	--
+				q(78622),	--
+				q(78623),	--
+				q(78625),	--
+				q(78644),	--
+				q(78660),	--
+				q(78677),	--
+				q(78678),	--
+				-- 10.2.0.51521
+				q(78708),	--
+				q(78709),	--
+				q(78710),	--
+				q(78711),	--
+				q(78712),	--
+				q(78720),	--
+				q(78723),	--
+				q(78725),	--
+				q(78730),	--
+				q(78731),	--
+				q(78732),	--
+				q(78737),	--
+				q(78751),	--
+				q(78763),	-- PTR:Dragonflight (70) E
+				q(78789),	--
+				q(78800),	--
+				q(78822),	--
+				q(78824),	--
+				q(78825),	--
+				q(78829),	--
+				-- 10.2.0.51601
+				q(78834),	--
+				q(78840),	--
+				q(78846),	--
+				q(78847),	--
+				q(78848),	--
+				q(78849),	--
+				q(78850),	--
+				q(78851),	--
+				q(78852),	--
+				q(78882),	--
+				q(78883),	--
+				q(78884),	--
+				q(78885),	--
+				q(78886),	--
+				q(78887),	--
+				q(78888),	--
+				q(78889),	--
+				q(78891),	--
+				q(78899),	--
+				q(78906),	--
+				-- 10.2.0.51685
+				q(78928),	--
+				q(78955),	--
+				q(78973),	--
+				-- 10.2.0.51973
+				q(77952),	--
+				-- 10.2.0.52038
+				q(77837),	--
+				q(78048),	--
 			}),
-			filter(TOYS, {
-				i(211424),	-- Dreaming Banner of the Aspects (TOY!)
-				i(209859),	-- Festive Trans-Dimensional Bird Whistle (TOY!) [Winter Veil?]
-				i(208825),	-- Junior Timekeeper's Racing Belt (TOY!) [Winter Veil?]
-				i(208798),	-- Recorded Memories of Tyr's Guard (TOY!) [Tyr Part 4?]
-				i(210656),	-- Winter Veil Socks (TOY!) [Winter Veil?]
-				i(208087),	--
-			}),
-			n(WEAPONS, {
-				i(210961),	-- Alara'shinu
-			}),
-
 		})),
 		tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(208550),	-- Dragon Isles Drakes: White Scales [Tyr Part 4]
 			}),
-			i(203727),	-- Gleaming Moonbeast's Reins
 			n(QUESTS, {
 				-- 10.1.7.51754
 				q(75369),	-- Use Your Coin!

@@ -480,36 +480,18 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 				["modelID"] = 75637,
 			}),
 			-- Without MountID Attached
-			i(143638, {	-- Archdruid's Lunarwing Form (MOUNT!)
-				-- ["modelID"] = ,
-			}),
-			i(142225, {	-- Ban-lu, Grandmaster's Companion (MOUNT!)
-				-- ["modelID"] = ,
-			}),
-			i(142232, {	-- Battlelord's Bloodthirsty War Wyrm (MOUNT!)
-				-- ["modelID"] = ,
-			}),
-			i(142231, {	-- Deathlord's Vilebrood Vanquisher (MOUNT!)
-				-- ["modelID"] = ,
-			}),
-			i(143489, {	-- Farseer's Raging Tempest (MOUNT!)
-				-- ["modelID"] = ,
-			}),
-			i(142224, {	-- High Priest's Lightsworn Seeker (MOUNT!)
-				-- ["modelID"] = ,
-			}),
-			i(143502, {	-- Highlord's Golden Charger (MOUNT!)
-				-- ["modelID"] = ,
-			}),
-			i(142227, {	-- Huntmaster's Loyal Wolfhawk (MOUNT!)
-				-- ["modelID"] = ,
-			}),
+			i(143638),	-- Archdruid's Lunarwing Form (MOUNT!) [Item Never Available]
+			i(142225),	-- Ban-lu, Grandmaster's Companion (MOUNT!) [Item Never Available]
+			i(142232),	-- Battlelord's Bloodthirsty War Wyrm (MOUNT!) [Item Never Available]
+			i(142231),	-- Deathlord's Vilebrood Vanquisher (MOUNT!) [Item Never Available]
+			i(143489),	-- Farseer's Raging Tempest (MOUNT!) [Item Never Available]
+			i(142224),	-- High Priest's Lightsworn Seeker (MOUNT!) [Item Never Available]
+			i(143502),	-- Highlord's Golden Charger (MOUNT!) [Item Never Available]
+			i(142227),	-- Huntmaster's Loyal Wolfhawk (MOUNT!) [Item Never Available]
 			i(143752, {	-- Mag'har Direwolf (MOUNT!)
 				["modelID"] = 84468,
 			}),
-			i(143493, {	-- Shadowblade's Murderous Omen (MOUNT!)
-				-- ["modelID"] = ,
-			}),
+			i(143493),	-- Shadowblade's Murderous Omen (MOUNT!) [Item Never Available]
 		})),
 	}),
 	tier(BFA_TIER, {
@@ -669,7 +651,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 				["modelID"] = 88719,
 			}),
 			-- Without MountID Attached
-			i(190581),	-- Nether-Gorged Greatwyrm (MOUNT!)
+			i(190581),	-- Nether-Gorged Greatwyrm (MOUNT!) [Item Never Available]
 		})),
 	}),
 	tier(DF_TIER, {
@@ -811,13 +793,67 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 				-- ["modelID"] =
 			}),
 			-- Without MountID Attached
-			i(206167),	-- Way of the Wonderous Wavewhisker (MOUNT!)
+			i(206167),	-- Way of the Wonderous Wavewhisker (MOUNT!) [Item Never Available]
 		})),
 
 		-- 10.1.5
 		tier(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 			-- Without MountID Attached
-			i(190636),	-- Armored Siege Kodo (MOUNT!)
+			i(190636),	-- Armored Siege Kodo (MOUNT!) [Item Never Available]
+		})),
+
+		-- 10.1.7
+		tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+			-- Without MountID Attached
+			i(203727),	-- Gleaming Moonbeast's Reins (MOUNT!) [Item Never Available]
+		})),
+
+		-- 10.2.0
+		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+			-- With MountID Attached
+			i(210141, {	-- [PH] Brown-Furred Spiky Bakar (MOUNT!)
+				-- ["modelID"] = ,
+			}),
+			i(210142, {	-- [PH] Red-Furred Bakar (MOUNT!)
+				-- ["modelID"] = ,
+			}),
+			i(210143, {	-- [PH] White-Furred Bakar (MOUNT!)
+				-- ["modelID"] = ,
+			}),
+			i(210144, {	-- [PH] Yellow-Furred Spiky Bakar (MOUNT!)
+				-- ["modelID"] = ,
+			}),
+			i(210145, {	-- [PH] YellowBlack-Furred Bakar (MOUNT!)
+				-- ["modelID"] = ,
+			}),
+			i(210919, {	-- Crimson Glimmerfur (MOUNT!) [Trading Post?]
+				["modelID"] = 115371,
+			}),
+			i(211075, {	-- Deathbringer's Shadowcycle (MOUNT!) [Trading Post?]
+				["modelID"] = 114788,
+			}),
+			i(211089, {	-- Felreaver Deathcycle (MOUNT!) [Trading Post?]
+				["modelID"] = 114785,
+			}),
+			i(211084, {	-- Golden Regal Scarab (MOUNT!) [Trading Post?]
+				["modelID"] = 114740,
+			}),
+			i(211074, {	-- Jeweled Copper Scarab (MOUNT!) [Trading Post?]
+				["modelID"] = 114739,
+			}),
+			i(211086, {	-- Jeweled Jade Scarab (MOUNT!) [Trading Post?]
+				["modelID"] = 114744,
+			}),
+			i(211085, {	-- Jeweled Sapphire Scarab (MOUNT!) [Trading Post?]
+				["modelID"] = 114737,
+			}),
+			i(211087, {	-- Shadowflame Hellbike (MOUNT!) [Trading Post?]
+				["modelID"] = 114787,
+			}),
+			-- Without MountID Attached
+			i(210140, {	-- [PH] Black-Furred Bakar
+				-- ["modelID"] = ,
+			}),
 		})),
 	}),
 }));
