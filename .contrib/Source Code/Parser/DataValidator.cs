@@ -82,7 +82,7 @@ namespace ATT
                     {
                         if (!validation.IsValid(val))
                         {
-                            Framework.LogError($"Validation Failure: {validation.Key}", data);
+                            Framework.LogError($"Validation Failure for field '{validation.Key}':", data);
                         }
                     }
                 }
@@ -250,7 +250,7 @@ namespace ATT
                 {
                     if (!IsValid(list[i]))
                     {
-                        Framework.LogWarn($"Invalid field '{Key}' Value '{list[i]}' Cleaned", data);
+                        Framework.LogDebugWarn($"Invalid field '{Key}' Value '{list[i]}' Cleaned", data);
                         list.RemoveAt(i);
                     }
                 }
@@ -261,7 +261,7 @@ namespace ATT
                 {
                     if (!IsValid(objlist[i]))
                     {
-                        Framework.LogWarn($"Invalid field '{Key}' Value '{objlist[i]}' Cleaned", data);
+                        Framework.LogDebugWarn($"Invalid field '{Key}' Value '{objlist[i]}' Cleaned", data);
                         objlist.RemoveAt(i);
                     }
                 }
@@ -270,7 +270,7 @@ namespace ATT
             {
                 if (!IsValid(tval))
                 {
-                    Framework.LogWarn($"Invalid field '{Key}' Value '{tval}' Cleaned", data);
+                    Framework.LogDebugWarn($"Invalid field '{Key}' Value '{tval}' Cleaned", data);
                     data.Remove(Key);
                 }
             }
@@ -344,7 +344,7 @@ namespace ATT
                 {
                     if (!IsValid(list[i]))
                     {
-                        Framework.LogWarn($"Invalid field '{Key}' Value '{list[i]}' Cleaned", data);
+                        Framework.LogDebugWarn($"Invalid field '{Key}' Value '{list[i]}' Cleaned", data);
                         list.RemoveAt(i);
                     }
                 }
@@ -355,7 +355,7 @@ namespace ATT
                 {
                     if (!IsValid(objlist[i]))
                     {
-                        Framework.LogWarn($"Invalid field '{Key}' Value '{objlist[i]}' Cleaned", data);
+                        Framework.LogDebugWarn($"Invalid field '{Key}' Value '{objlist[i]}' Cleaned", data);
                         objlist.RemoveAt(i);
                     }
                 }
@@ -364,7 +364,7 @@ namespace ATT
             {
                 if (!IsValid(tval))
                 {
-                    Framework.LogWarn($"Invalid field '{Key}' Value '{tval}' Cleaned", data);
+                    Framework.LogDebugWarn($"Invalid field '{Key}' Value '{tval}' Cleaned", data);
                     data.Remove(Key);
                 }
             }

@@ -1051,6 +1051,11 @@ namespace ATT
                         data["r"] = 1;  // Horde Only!
                         data.Remove("races");   // We do not need to include races for this as it is HORDE_ONLY.
                     }
+                    // All Races?
+                    else if (ALL_RACES.Matches(races))
+                    {
+                        data.Remove("races");   // We do not need to include races for this as it is ALL_RACES.
+                    }
                 }
             }
             #endregion
@@ -1784,8 +1789,6 @@ end");
                     case "title":
                     case "order":
                     case "maphash":
-                    case "rwp":
-                    case "awp":
                         {
                             item[field] = ATT.Export.ToString(value).Replace("\n", "\\n").Replace("\r", "\\r").Replace("\t", "\\t");
                             break;
@@ -1861,6 +1864,8 @@ end");
                     case "sqreq":
                     case "zone-quest":
                     case "zone-text-areaID":
+                    case "rwp":
+                    case "awp":
                         {
                             try
                             {

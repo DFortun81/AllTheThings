@@ -44,6 +44,16 @@ namespace ATT
         }
 
         /// <summary>
+        /// Outputs the message to the Trace in Debug only which is something that may merit attention
+        /// </summary>
+        /// <param name="message"></param>
+        public static void LogDebugWarn(string message, object data = null)
+        {
+            if (DebugMode)
+                Log("WARN: " + message + (data != null ? (" " + ToJSON(data)) : string.Empty));
+        }
+
+        /// <summary>
         /// Outputs the message to the Trace
         /// </summary>
         /// <param name="message"></param>

@@ -436,6 +436,39 @@ namespace ATT
         /// <param name="sequence"></param>
         /// <param name="sequence"></param>
         /// <returns></returns>
+        public static bool Matches<T>(this ICollection<T> x, ICollection<T> y)
+        {
+            // check counts
+            int xCount = x?.Count ?? -1;
+            int yCount = y?.Count ?? -1;
+            if (xCount != yCount)
+            {
+                return false;
+            }
+            // matching count is only valid if both are null
+            else if (xCount == -1)
+            {
+                return true;
+            }
+
+            // check elements regardless of ordering
+            HashSet<T> copy = new HashSet<T>(y);
+            foreach (T item in x)
+            {
+                if (!copy.Remove(item))
+                    return false;
+            }
+            return copy.Count == 0;
+        }
+
+        /// <summary>
+        /// Returns whether the sequence matches the content of another sequence regardless of ordering<para/>
+        /// NOTE: Not well-optimized for long sequences
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="sequence"></param>
+        /// <param name="sequence"></param>
+        /// <returns></returns>
         public static bool Matches<T>(this IEnumerable<T> x, IEnumerable<T> y)
         {
             // check counts
@@ -458,7 +491,7 @@ namespace ATT
                 if (!copy.Remove(item))
                     return false;
             }
-            return true;
+            return copy.Count == 0;
         }
     }
 }

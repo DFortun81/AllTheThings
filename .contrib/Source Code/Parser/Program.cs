@@ -53,7 +53,7 @@ namespace ATT
 #endif
                 }
             }
-            catch(FormatException configException)
+            catch (FormatException configException)
             {
                 Trace.WriteLine(configException);
                 Console.ReadLine();
@@ -118,38 +118,33 @@ namespace ATT
                 Framework.IgnoredValue = lua.GetString("IGNORED_VALUE");
                 Framework.Validator = new DataValidator(lua, Framework.Config);
 
-                // Try to Copy in the Alliance Only / Horde Only lists
+                // Try to Copy in the Alliance Only / Horde Only / All Races lists
                 try
                 {
-                    var list = new List<object>();
-                    var dict = new Dictionary<object, bool>();
-                    foreach (var keyValue in lua.GetTable("ALLIANCE_ONLY").Values)
+                    var set = new HashSet<object>();
+                    foreach (var race in lua.GetTable("ALLIANCE_ONLY").Values.AsTypedEnumerable<long>())
                     {
-                        var race = Convert.ToInt64(keyValue);
-                        if (!dict.ContainsKey(race))
-                        {
-                            dict[race] = true;
-                            list.Add(race);
-                        }
+                        set.Add(race);
                     }
-                    list.Sort();
-                    Framework.ALLIANCE_ONLY = list;
-                    Framework.ALLIANCE_ONLY_DICT = dict;
+                    Framework.ALLIANCE_ONLY = set.ToList();
 
-                    list = new List<object>();
-                    dict = new Dictionary<object, bool>();
-                    foreach (var keyValue in lua.GetTable("HORDE_ONLY").Values)
+                    set.Clear();
+                    foreach (var race in lua.GetTable("HORDE_ONLY").Values.AsTypedEnumerable<long>())
                     {
-                        var race = Convert.ToInt64(keyValue);
-                        if (!dict.ContainsKey(race))
-                        {
-                            dict[race] = true;
-                            list.Add(race);
-                        }
+                        set.Add(race);
                     }
-                    list.Sort();
-                    Framework.HORDE_ONLY = list;
-                    Framework.HORDE_ONLY_DICT = dict;
+                    Framework.HORDE_ONLY = set.ToList();
+
+                    set.Clear();
+                    foreach (var race in lua.GetTable("ALL_RACES").Values.AsTypedEnumerable<long>())
+                    {
+                        set.Add(race);
+                    }
+                    Framework.ALL_RACES = set.ToList();
+
+                    Framework.ALLIANCE_ONLY.Sort();
+                    Framework.HORDE_ONLY.Sort();
+                    Framework.ALL_RACES.Sort();
                 }
                 catch (Exception e)
                 {

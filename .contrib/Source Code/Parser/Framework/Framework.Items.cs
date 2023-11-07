@@ -486,8 +486,6 @@ namespace ATT
                     case "lore":
                     case "name":
                     case "description":
-                    case "rwp":
-                    case "awp":
                     case "type":
                         {
                             item[field] = ATT.Export.ToString(value);
@@ -522,6 +520,8 @@ namespace ATT
                     case "conduitID":
                     case "f":
                     case "filterForRWP":
+                    case "rwp":
+                    case "awp":
                     case "r":
                     case "ilvl":
                     case "b":
@@ -787,7 +787,7 @@ namespace ATT
                     }
                     else if (data["itemID"].TryConvert(out long itemID) && itemID > 0)
                     {
-                        LogDebug($"INFO: Conditional Item data not merged: {itemID} = ", data);
+                        LogDebug($"INFO: Conditional Item data not merged: {itemID} =", data);
                     }
                 }
             }

@@ -124,6 +124,11 @@ namespace ATT
             { "DF", new int[] { 10, 2, 0, 52068 } },
         };
 
+        /// <summary>
+        /// Represents the function to use when performing a processing pass against the data
+        /// </summary>
+        private static Func<IDictionary<string, object>, bool> ProcessingFunction { get; set; }
+
         public static string CURRENT_RELEASE_PHASE_NAME = "UNKNOWN";
 
         /// <summary>
@@ -154,8 +159,7 @@ namespace ATT
         // These get loaded from _main.lua now.
         public static List<object> ALLIANCE_ONLY;
         public static List<object> HORDE_ONLY;
-        public static Dictionary<object, bool> ALLIANCE_ONLY_DICT;
-        public static Dictionary<object, bool> HORDE_ONLY_DICT;
+        public static List<object> ALL_RACES;
 
         /// <summary>
         /// All of the Category IDs that have been referenced somewhere in the database.
@@ -237,11 +241,21 @@ namespace ATT
         /// </summary>
         private static long NestedDifficultyID { get; set; }
 
-        private static Dictionary<string, bool> _heirarchicalFieldAdjustments;
+        /// <summary>
+        /// Represents the nested ModID currently being processed
+        /// </summary>
+        private static long NestedModID { get; set; }
+
+        /// <summary>
+        /// Represents the nested min lvl currently being processed
+        /// </summary>
+        private static long NestedMinLvl { get; set; } = 1;
+
+        private static Dictionary<string, int> _heirarchicalFieldAdjustments;
         /// <summary>
         /// Represents the allowed adjustments for hierarchical fields
         /// </summary>
-        private static IDictionary<string, bool> HierarchicalFieldAdjustments
+        private static IDictionary<string, int> HierarchicalFieldAdjustments
         {
             get
             {
@@ -250,13 +264,13 @@ namespace ATT
                     return _heirarchicalFieldAdjustments;
                 }
 
-                _heirarchicalFieldAdjustments = new Dictionary<string, bool>();
+                _heirarchicalFieldAdjustments = new Dictionary<string, int>();
                 string[] fields = Config["HierarchicalConsolidationFields"] ?? Array.Empty<string>();
                 foreach (string consolidateField in fields)
                 {
                     if (!_heirarchicalFieldAdjustments.ContainsKey(consolidateField))
                     {
-                        _heirarchicalFieldAdjustments.Add(consolidateField, true);
+                        _heirarchicalFieldAdjustments.Add(consolidateField, -1);
                     }
                 }
                 fields = Config["HierarchicalPropagationFields"] ?? Array.Empty<string>();
@@ -264,7 +278,15 @@ namespace ATT
                 {
                     if (!_heirarchicalFieldAdjustments.ContainsKey(propagateField))
                     {
-                        _heirarchicalFieldAdjustments.Add(propagateField, false);
+                        _heirarchicalFieldAdjustments.Add(propagateField, 1);
+                    }
+                }
+                fields = Config["HierarchicalNonRepeatFields"] ?? Array.Empty<string>();
+                foreach (string propagateField in fields)
+                {
+                    if (!_heirarchicalFieldAdjustments.ContainsKey(propagateField))
+                    {
+                        _heirarchicalFieldAdjustments.Add(propagateField, 0);
                     }
                 }
 
@@ -671,61 +693,37 @@ namespace ATT
         /// Process a data container.
         /// </summary>
         /// <param name="data">The data container.</param>
-        /// <param name="modID">The modID.</param>
-        /// <param name="minLevel">The minimum required level.</param>
+        ///
         /// <returns>Whether or not the data is valid.</returns>
-        private static bool Process(IDictionary<string, object> data, long modID, long minLevel, long phase, long awp)
+        private static bool Process(IDictionary<string, object> data)
         {
             // Check to make sure the data is valid.
             if (data == null) return false;
 
-            if (MergeItemData)
+            if (DebugMode && MergeItemData)
             {
-                if (DebugMode)
+                // Capture references to specified Debug DB keys for Debug output
+                foreach (KeyValuePair<string, SortedDictionary<decimal, IDictionary<string, object>>> dbKeyDatas in DebugDBs)
                 {
-                    // Capture references to specified Debug DB keys for Debug output
-                    foreach (KeyValuePair<string, SortedDictionary<decimal, IDictionary<string, object>>> dbKeyDatas in DebugDBs)
+                    if (data.TryGetValue(dbKeyDatas.Key, out decimal keyValue) && keyValue > 0)
                     {
-                        if (data.TryGetValue(dbKeyDatas.Key, out decimal keyValue) && keyValue > 0)
-                        {
-                            if (!dbKeyDatas.Value.TryGetValue(keyValue, out IDictionary<string, object> keyValueValues))
-                                dbKeyDatas.Value[keyValue] = keyValueValues = new Dictionary<string, object>();
+                        if (!dbKeyDatas.Value.TryGetValue(keyValue, out IDictionary<string, object> keyValueValues))
+                            dbKeyDatas.Value[keyValue] = keyValueValues = new Dictionary<string, object>();
 
-                            //Dictionary<string, object> clone = new Dictionary<string, object>(data);
-                            //clone.Remove("g");
-                            Objects.Merge(keyValueValues, data);
-                            keyValueValues.Remove("g");
-                        }
+                        Dictionary<string, object> clone = new Dictionary<string, object>(data);
+                        clone.Remove("g");
+                        Objects.Merge(keyValueValues, clone);
                     }
                 }
+            }
 
-                if (!DataValidation(data, ref modID, ref minLevel, ref awp))
-                    return false;
-            }
-            else
-            {
-                if (!DataConsolidation(data))
-                    return false;
-            }
+            // handle the current processing against the data
+            if (!ProcessingFunction(data))
+                return false;
 
             // If this container has an aqd or hqd, then process those objects as well.
-            if (data.TryGetValue("aqd", out IDictionary<string, object> qd)) Process(qd, modID, minLevel, phase, awp);
-            if (data.TryGetValue("hqd", out qd)) Process(qd, modID, minLevel, phase, awp);
-
-            // If this container has an AWP, determine if it's greater than the one supplied, then keep it, otherwise get rid of it.
-            if (data.TryGetValue("awp", out long myAWP))
-            {
-                if (myAWP == awp)
-                {
-                    // If it's equal to the current awp, strip it out. (no need to repeat data)
-                    data.Remove("awp");
-                }
-                else
-                {
-                    // Otherwise we want to set the current awp to this value when we process the relative groups.
-                    awp = myAWP;
-                }
-            }
+            if (data.TryGetValue("aqd", out IDictionary<string, object> qd)) Process(qd);
+            if (data.TryGetValue("hqd", out qd)) Process(qd);
 
             // If this container has groups, then process those groups as well.
             if (data.TryGetValue("g", out List<object> groups))
@@ -733,18 +731,60 @@ namespace ATT
                 var previousParent = CurrentParentGroup;
                 if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue))
                     CurrentParentGroup = new KeyValuePair<string, object>(objectData.ObjectType, objKeyValue);
+                // Track the hierarchy of modID
+                bool restoreModID = false;
+                long previousMod = NestedModID;
+                if (data.TryGetValue("modID", out long nestedModID) && nestedModID != NestedModID)
+                {
+                    NestedModID = nestedModID;
+                    restoreModID = true;
+                    //LogDebug($"INFO: New inherited modID {NestedModID}", data);
+                }
+                // Track the hierarchy of difficultyID
+                bool restoreDifficulty = false;
                 var previousDifficultyRoot = DifficultyRoot;
                 var previousDifficulty = NestedDifficultyID;
+                if (data.TryGetValue("difficultyID", out long nestedDiffID) && nestedDiffID != NestedDifficultyID)
+                {
+                    DifficultyRoot = data;
+                    NestedDifficultyID = nestedDiffID;
+                    restoreDifficulty = true;
+                    //LogDebug($"INFO: New inherited difficultyID {NestedDifficultyID}", data);
+                }
+                // Track the hierarchy of lvl
+                bool restoreLvl = false;
+                long previousLvl = NestedMinLvl;
+                long dataLvl = GetDataMinLvl(data);
+                if (dataLvl > NestedMinLvl)
+                {
+                    NestedMinLvl = dataLvl;
+                    restoreLvl = true;
+                    //LogDebug($"INFO: New inherited lvl {NestedMinLvl}", data);
+                }
 
-                Process(groups, modID, minLevel, phase, awp);
+                Process(groups);
 
                 // Parent field consolidation now that groups have been processed
                 if (!MergeItemData)
                     ConsolidateHeirarchicalFields(data, groups);
 
+                if (restoreDifficulty)
+                {
+                    //LogDebug($"INFO: Restore previous difficultyID {previousDifficulty} => {NestedDifficultyID}", data);
+                    DifficultyRoot = previousDifficultyRoot;
+                    NestedDifficultyID = previousDifficulty;
+                }
+                if (restoreModID)
+                {
+                    //LogDebug($"INFO: Restore previous modID {previousMod} => {NestedModID}", data);
+                    NestedModID = previousMod;
+                }
+                if (restoreLvl)
+                {
+                    //LogDebug($"INFO: Restore previous lvl {previousLvl} => {NestedMinLvl}", data);
+                    NestedMinLvl = previousLvl;
+                }
                 CurrentParentGroup = previousParent;
-                DifficultyRoot = previousDifficultyRoot;
-                NestedDifficultyID = previousDifficulty;
             }
 
             return true;
@@ -756,7 +796,7 @@ namespace ATT
         /// * Validation of raw data<para/>
         /// </summary>
         /// <param name="data"></param>
-        private static bool DataValidation(IDictionary<string, object> data, ref long modID, ref long minLevel, ref long awp)
+        private static bool DataValidation(IDictionary<string, object> data)
         {
             // Retail has no reason to include Objective groups since the in-game Quest system does not warrant ATT including all this extra information
             // Crieve wants objectives and doesn't agree with this, but will allow it outside of Classic Builds.
@@ -765,6 +805,8 @@ namespace ATT
             // verify the timeline data of Merged data (can prevent keeping the data in the data container)
             if (!CheckTimeline(data))
                 return false;
+
+            Validate_General(data);
 
             // If this item has an "unobtainable" flag on it, meaning for a different phase of content.
             if (data.TryGetValue("u", out long phase))
@@ -783,9 +825,6 @@ namespace ATT
                 }
             }
 
-            // dynamic config-driven validaton
-            Validator.Validate(data);
-
             // Get the filter for this Item
             Objects.Filters filter = Objects.Filters.Ignored;
             if (data.TryGetValue("f", out long f))
@@ -797,10 +836,9 @@ namespace ATT
                     FILTERS_WITH_REFERENCES[f] = true;
                 }
                 // remove modID from things which shouldn't have it
-                if (f >= 56 && data.Remove("modID"))
+                if (f >= 56)
                 {
-                    //Trace.WriteLine("Removed bad modID", data.GetString("itemID"));
-                    modID = 0;
+                    data.Remove("modID");
                 }
                 // filterID -- should be a positive value, or removed
                 else if (f <= 0)
@@ -827,20 +865,16 @@ namespace ATT
             }
 
             // Apply the inherited modID for items which do not specify their own modID
-            if (modID > 0 && data.ContainsKey("itemID") && !data.ContainsKey("modID"))
+            if (NestedModID > 0 && data.ContainsKey("itemID") && !data.ContainsKey("modID"))
             {
-                //Trace.WriteLine($"Applied inherited modID {modID} over {data.GetString("modID")} for item {data.GetString("itemID")}");
-                data["modID"] = modID;
+                //LogDebug($"INFO: Applied inherited modID {NestedModID} for item {data.GetString("itemID")}");
+                data["modID"] = NestedModID;
             }
             else if (data.ContainsKey("ignoreBonus"))
             {
                 // will be removed later
                 data["modID"] = 0;
                 //Trace.WriteLine("Removed ignoreBonus modID", data.GetString("itemID"));
-            }
-            else if (data.TryGetValue("modID", out object objModID))
-            {
-                modID = Convert.ToInt64(objModID);
             }
 
             if (data.TryGetValue("categoryID", out long categoryID)) ProcessCategoryObject(data, categoryID);
@@ -934,13 +968,6 @@ namespace ATT
             Validate_Quest(data);
             Validate_sym(data);
 
-            // Track the hierarchy of difficultyID
-            if (data.TryGetValue("difficultyID", out long d))
-            {
-                DifficultyRoot = data;
-                NestedDifficultyID = d;
-            }
-
             // Throw away automatic Spell ID assignments for certain filter types.
             if (data.TryGetValue("spellID", out f))
             {
@@ -988,8 +1015,6 @@ namespace ATT
                     data.Remove("s");
                 }
             }
-
-            minLevel = LevelConsolidation(data, minLevel);
 
             Validate_cost(data);
             Validate_providers(data);
@@ -1049,6 +1074,22 @@ namespace ATT
             Items.MarkItemAsReferenced(data);
 
             return true;
+        }
+
+        /// <summary>
+        /// General validation on contrib-defined data
+        /// </summary>
+        /// <param name="data"></param>
+        private static void Validate_General(IDictionary<string, object> data)
+        {
+            // dynamic config-driven validaton
+            Validator.Validate(data);
+
+            // Explicitly-marked 'non-collectible' Headers should not be necessary and can be warned to convert to Automatic Header type (ignored if it is a quest)
+            if (data.TryGetValue("collectible", out bool collectible) && !collectible && !data.ContainsKey("questID") && data.ContainsKey("g"))
+            {
+                LogDebug($"WARN: Explicitly Non-Collectible Header defined. Convert to Automatic Header or adjust as needed", data);
+            }
         }
 
         private static void Validate_cost(IDictionary<string, object> data)
@@ -1402,7 +1443,7 @@ namespace ATT
         }
 
         /// <summary>
-        /// Validates that certain conflciting fields do not simultaneously exist within one piece of data. May indicate external data is bad or weird or needs fixing
+        /// Validates that certain conflicting fields do not simultaneously exist within one piece of data. May indicate external data is bad or weird or needs fixing
         /// </summary>
         private static void Consolidate_ConflictingFields(IDictionary<string, object> data)
         {
@@ -1761,7 +1802,10 @@ namespace ATT
             if (!CheckTimeline(data))
                 return false;
 
+            Consolidate_General(data);
+
             Consolidate_cost(data);
+            Consolidate_lvl(data);
             Consolidate_providers(data);
             Consolidate_sourceQuests(data);
             Consolidate_altQuests(data);
@@ -1875,7 +1919,6 @@ namespace ATT
                 */
             }
 
-            // clean up any Parser metadata tags
             List<string> removeKeys = new List<string>();
 
             foreach (KeyValuePair<string, object> dataKvp in data)
@@ -1895,6 +1938,12 @@ namespace ATT
             return true;
         }
 
+        private static void Consolidate_General(IDictionary<string, object> data)
+        {
+            // dynamic config-driven validaton will perform clean up if any API data is weird and can't be fixed by contrib easily
+            Validator.Validate(data);
+        }
+
         /// <summary>
         /// Checks the data for any required data relationships based on existing fields
         /// </summary>
@@ -1907,12 +1956,6 @@ namespace ATT
                 {
                     LogError($"'criteriaID' {criteriaID} missing 'achID' under non-Achievement group [{CurrentParentGroup.Value.Key}:{CurrentParentGroup.Value.Value}]", data);
                 }
-            }
-
-            // Explicitly-marked 'non-collectible' Headers should not be necessary and can be warned to convert to Automatic Header type (ignored if it is a quest)
-            if (data.TryGetValue("collectible", out bool collectible) && !collectible && !data.ContainsKey("questID") && data.ContainsKey("g"))
-            {
-                LogDebug($"WARN: Explicitly Non-Collectible Header defined. Convert to Automatic Header or adjust as needed", data);
             }
         }
 
@@ -2072,7 +2115,7 @@ namespace ATT
                                     // CRIEVE NOTE: Braghe wanted Debug Mode to not completely delete a thing from the exported Debug files...
                                     // Deleting it from the actual database is actually expected for the real builds,
                                     // so don't remove this. This is how I want it. Thanks!
-                                    if (!Framework.DebugMode) return false;    // Invalid
+                                    if (!DebugMode) return false;    // Invalid
                                 }
 
                                 // Mark the first patch this was removed on. (the upcoming patch)
@@ -2136,10 +2179,24 @@ namespace ATT
                 }
 
                 // Mark when this thing was put into (or back into) the game.
-                data["awp"] = addedPatch; // "Added With Patch"
+                if (addedPatch > 10000)
+                {
+                    if (data.TryGetValue("awp", out long awp) && awp != addedPatch)
+                    {
+                        LogDebugWarn($"Field replaced 'awp': {addedPatch} => {awp}", data);
+                    }
+                    data["awp"] = addedPatch; // "Added With Patch"
+                }
 
                 // Future Unobtainable
-                if (removedPatch > 10000) data["rwp"] = removedPatch; // "Removed With Patch"
+                if (removedPatch > 10000)
+                {
+                    if (data.TryGetValue("rwp", out long rwp) && rwp != removedPatch)
+                    {
+                        LogDebugWarn($"Field replaced 'rwp': {removedPatch} => {rwp}", data);
+                    }
+                    data["rwp"] = removedPatch; // "Removed With Patch"
+                }
             }
 
             return true;
@@ -2150,14 +2207,21 @@ namespace ATT
             if ((groups?.Count ?? 0) == 0) return;
 
             HashSet<object> fieldValues = new HashSet<object>();
-            foreach (KeyValuePair<string, bool> fieldAdjustment in HierarchicalFieldAdjustments)
+            foreach (KeyValuePair<string, int> fieldAdjustment in HierarchicalFieldAdjustments)
             {
+                bool cleanParentGroups = fieldAdjustment.Value == 0;
                 string field = fieldAdjustment.Key;
+                parentGroup.TryGetValue(field, out object parentVal);
+
                 foreach (object group in groups)
                 {
                     if (group is IDictionary<string, object> data && data.TryGetValue(field, out object value))
                     {
                         fieldValues.Add(value);
+                        if (cleanParentGroups && Equals(parentVal, value))
+                        {
+                            data.Remove(field);
+                        }
                     }
                     else
                     {
@@ -2166,20 +2230,34 @@ namespace ATT
                     }
                 }
 
-                // exactly 1 unique value across all groups, set it on the parent and remove it from all groups
+                // exactly 1 unique value across all groups, then adjust...
                 if (fieldValues.Count == 1)
                 {
-                    parentGroup[field] = fieldValues.First();
-
-                    if (fieldAdjustment.Value)
+                    object val = fieldValues.First();
+                    if (!Equals(parentVal, val))
                     {
-                        foreach (object group in groups)
-                        {
-                            if (group is IDictionary<string, object> data)
+                        // parent has a different field val, don't touch it
+                        // Crit auto-assign to 3.0.1 in crit() if no timeline
+                        fieldValues.Clear();
+                        break;
+                    }
+                    switch (fieldAdjustment.Value)
+                    {
+                        // remove from groups and add to parent
+                        case -1:
+                            parentGroup[field] = val;
+                            foreach (object group in groups)
                             {
-                                data.Remove(field);
+                                if (group is IDictionary<string, object> data)
+                                {
+                                    data.Remove(field);
+                                }
                             }
-                        }
+                            break;
+                        // only add to parent
+                        case 1:
+                            parentGroup[field] = val;
+                            break;
                     }
                 }
 
@@ -2484,9 +2562,7 @@ namespace ATT
         /// Verifies the 'lvl' tag within the data confines to the already-determined minLevel for the scope of this data
         /// </summary>
         /// <param name="data"></param>
-        /// <param name="minLevel"></param>
-        /// <returns></returns>
-        private static long LevelConsolidation(IDictionary<string, object> data, long minLevel)
+        private static void Consolidate_lvl(IDictionary<string, object> data)
         {
             // If the level of this object is less than the current minimum level, we can safely remove it.
             if (data.TryGetValue("lvl", out object lvlRef))
@@ -2497,24 +2573,38 @@ namespace ATT
                     if (lvls.Count < 2)
                     {
                         var level = Convert.ToInt64(lvls[0]);
-                        if (level <= minLevel) data.Remove("lvl");
+                        if (level <= NestedMinLvl) data.Remove("lvl");
                         else
                         {
                             // replace the single value list with the single value to save on memory
                             data["lvl"] = level;
-                            minLevel = level;
                         }
                     }
                 }
                 else
                 {
                     var level = Convert.ToInt64(lvlRef);
-                    if (level <= minLevel) data.Remove("lvl");
-                    else minLevel = level;
+                    if (level <= NestedMinLvl) data.Remove("lvl");
+                }
+            }
+        }
+
+        private static long GetDataMinLvl(IDictionary<string, object> data)
+        {
+            // If the level of this object is less than the current minimum level, we can safely remove it.
+            if (data.TryGetValue("lvl", out object lvlRef))
+            {
+                if (lvlRef is List<object> lvls)
+                {
+                    return Convert.ToInt64(lvls[0]);
+                }
+                else
+                {
+                    return Convert.ToInt64(lvlRef);
                 }
             }
 
-            return minLevel;
+            return 1;
         }
 
         /// <summary>
@@ -2656,11 +2746,7 @@ namespace ATT
         /// Process a list of data containers.
         /// </summary>
         /// <param name="list">The data container list.</param>
-        /// <param name="modID">The modID.</param>
-        /// <param name="minLevel">The minimum required level.</param>
-        /// <param name="phase">The current phase of the game this was added.</param>
-        /// <param name="awp">The patch this object was added to the game.</param>
-        private static void Process(List<object> list, long modID, long minLevel, long phase, long awp)
+        private static void Process(List<object> list)
         {
             // Check to make sure the data is valid.
             if (list == null) return;
@@ -2668,7 +2754,7 @@ namespace ATT
             // Iterate through the list and process all of the relative data dictionaries.
             for (int i = list.Count - 1; i >= 0; --i)
             {
-                if (!Process(list[i] as IDictionary<string, object>, modID, minLevel, phase, awp)) list.RemoveAt(i);
+                if (!Process(list[i] as IDictionary<string, object>)) list.RemoveAt(i);
             }
         }
 
@@ -2696,6 +2782,9 @@ namespace ATT
 
             // Merge the Item Data into the Containers.
             CurrentParseStage = ParseStage.Validation;
+            // ignore cleaning during validation pass so we can report contrib data errors
+            Validator.OnlyClean = false;
+            ProcessingFunction = DataValidation;
             foreach (var container in Objects.AllContainers)
             {
                 ProcessContainer(container);
@@ -2706,6 +2795,8 @@ namespace ATT
             AdditionalProcessing();
 
             CurrentParseStage = ParseStage.Consolidation;
+            Validator.OnlyClean = true;
+            ProcessingFunction = DataConsolidation;
             foreach (var container in Objects.AllContainers)
             {
                 ProcessContainer(container);
@@ -2966,7 +3057,7 @@ namespace ATT
                         // dont bother adding quests which literally have nothing useful in them
                         if (entry.Count > 1)
                         {
-                            LevelConsolidation(entry, 1);
+                            Consolidate_lvl(entry);
                             unsortedQuests.Add(entry);
                         }
                     }
@@ -3005,7 +3096,7 @@ namespace ATT
             }
 
             ProcessingAchievementCategory = container.Key.Contains("Achievement");
-            Process(container.Value, 0, 1, 0, 10000);  // Initial WoW Build we'll use as 1.0.0. (10000)
+            Process(container.Value);
         }
 
         /// <summary>
