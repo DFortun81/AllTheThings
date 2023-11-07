@@ -682,3 +682,5 @@
 530@@@%s the Blazing
 531@@@%s the Dreaming Hero
 532@@@%s, Dream Defender
+10.2.0.52038
+520@@@%s the Storm Rider

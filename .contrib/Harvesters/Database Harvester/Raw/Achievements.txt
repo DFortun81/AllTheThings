@@ -13356,3 +13356,28 @@
 19461@@@Kissed by the Wind
 10.2.0.51825
 19080@@@Arcane Influence
+10.2.0.52038
+15344@@@"S.A.F.E" Pilot
+18910@@@Ruby Lifeshrine Loop Storm Gryphon: Bronze
+18911@@@Ruby Lifeshrine Loop Storm Gryphon: Silver
+18912@@@Ruby Lifeshrine Loop Storm Gryphon: Gold
+18913@@@Fen Flythrough Storm Gryphon: Bronze
+18914@@@Fen Flythrough Storm Gryphon: Silver
+18915@@@Fen Flythrough Storm Gryphon: Gold
+18916@@@Vakthros Ascent Storm Gryphon: Bronze
+18917@@@Vakthros Ascent Storm Gryphon: Silver
+18918@@@Vakthros Ascent Storm Gryphon: Gold
+18919@@@Tyrhold Trial Storm Gryphon: Bronze
+18920@@@Tyrhold Trial Storm Gryphon: Silver
+18921@@@Tyrhold Trial Storm Gryphon: Gold
+18922@@@Stormsunder Crater Circuit Storm Gryphon: Bronze
+18923@@@Stormsunder Crater Circuit Storm Gryphon: Silver
+18924@@@Stormsunder Crater Circuit Storm Gryphon: Gold
+18925@@@Crystal Circuit Storm Gryphon: Bronze
+18926@@@Crystal Circuit Storm Gryphon: Silver
+18927@@@Crystal Circuit Storm Gryphon: Gold
+18928@@@Storm Rider: Bronze
+18929@@@Storm Rider: Silver
+18931@@@Storm Rider: Gold
+19027@@@Heroic Edition: Algarian Stormrider
+19030@@@Squally
