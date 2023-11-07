@@ -10,6 +10,8 @@ BFA_TIER = 8;
 SL_TIER = 9;
 DF_TIER = 10;
 TWW_TIER = 11;
+MD_TIER = 12;
+TLT_TIER = 13;
 
 
 -- #if AFTER DF

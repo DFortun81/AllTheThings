@@ -12,7 +12,7 @@ COLLECTORS_EDITION = createHeader({
 	},
 });
 HEROIC_EDITION = createHeader({
-	readable = "Diablo III",
+	readable = "Heroic Edition",
 	icon = [[~_.asset("Weapon_Type_Heirloom")]],
 	text = {
 		en = "Heroic Edition",
@@ -53,7 +53,7 @@ CATA_CLASSIC_BLAZING_UPGRADE = createHeader({
 });
 THE_WAR_WITHIN_TEMPORARY = createHeader({
 	readable = "The War Within",
-	icon = 5306251,
+	icon = [[~_.asset("Expansion_TWW")]],
 	text = {
 		en = "The War Within",
 	},
