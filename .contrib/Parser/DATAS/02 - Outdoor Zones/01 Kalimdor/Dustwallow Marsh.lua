@@ -1400,8 +1400,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1204, {	-- Mudrock Soup and Bugs
 					["qg"] = 4794,	-- Morgan Stern
-					-- #if AFTER CATA
 					["sourceQuest"] = 1260,	-- Morgan Stern
+					-- #if AFTER CATA
 					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
 					-- #else
 					["coord"] = { 66.4, 45.4, DUSTWALLOW_MARSH },
