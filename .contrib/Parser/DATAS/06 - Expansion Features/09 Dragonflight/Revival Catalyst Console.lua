@@ -1000,7 +1000,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 				}),
 			})),
-			-- ModID/BonusID might not be correct
 			header(HEADERS.LFGDungeon, ADMIRDRASSIL_THE_DREAMS_HOPE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 				d(LFR_RAID, {
 					["description"] = "",
