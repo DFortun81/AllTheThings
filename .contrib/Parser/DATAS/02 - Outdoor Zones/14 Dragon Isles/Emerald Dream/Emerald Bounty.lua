@@ -290,13 +290,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(),	-- contrib with dewdrop
 		--q(),	-- contrib with dewdrop for green seed
 		--q(),	-- contrib with dewdrop for blue seed
-		--q(),	-- contrib with dewdrop for purple seed
-		--q(),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant)
-		--q(),	-- bloom spot
+		--q(),	-- bloom spot (80/100)
+		--q(),	-- bloom spot (100/100)
 		--q(),	-- loot cache
-		--2 - Belligerent Begonias
+		--2 - Belligerent Begonias (spellID 418401 as reference with qid)
 		q(77359),	-- plant green seed
 		q(77361),	-- plant blue seed
 		q(77269),	-- plant purple seed
@@ -304,12 +301,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78779),	-- contrib with dewdrop for green seed
 		q(78777),	-- contrib with dewdrop for blue seed
 		q(78778),	-- contrib with dewdrop for purple seed
-		--q(),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant)
-		q(77365),	-- bloom spot
+		q(77365),	-- bloom spot (80/100)
+		q(77349),	-- bloom spot (100/100)
 		q(77360),	-- loot cache
-		--3 - Chiming Foxglove
+		--3 - Chiming Foxglove (spellID 417935 as reference with qid)
 		q(77222),	-- plant green seed
 		q(77223),	-- plant blue seed
 		q(77219),	-- plant purple seed
@@ -317,12 +312,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78773),	-- contrib with dewdrop for green seed
 		q(78771),	-- contrib with dewdrop for blue seed
 		q(78772),	-- contrib with dewdrop for purple seed
-		--q(),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant)
-		--q(),	-- bloom spot / 77227?
+		q(77226),	-- bloom spot (80/100)
+		q(77227),	-- bloom spot (100/100) (spellID 418309)
 		q(77211),	-- loot cache
-		--4 - Comfy Chamomile
+		--4 - Comfy Chamomile (spellID 423188 as reference with qid)
 		q(77519),	-- plant green seed
 		q(77516),	-- plant blue seed
 		q(77518),	-- plant purple seed
@@ -330,12 +323,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78810),	-- contrib with dewdrop for green seed
 		q(78808),	-- contrib with dewdrop for blue seed
 		q(78809),	-- contrib with dewdrop for purple seed
-		--q(),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant)
-		--q(),	-- bloom spot / 77512?
+		q(77514),	-- bloom spot (80/100) 
+		q(77512),	-- bloom spot (100/100) (spellID 423152)
 		q(77517),	-- loot cache
-		--5 - Dragon's Daffodil
+		--5 - Dragon's Daffodil (spellID 417947 as reference with qid)
 		q(77224),	-- plant green seed
 		q(77225),	-- plant blue seed
 		q(77220),	-- plant purple seed
@@ -343,12 +334,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78776),	-- contrib with dewdrop for green seed
 		q(78774),	-- contrib with dewdrop for blue seed
 		q(78775),	-- contrib with dewdrop for purple seed
-		--q(),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant) / ??? completed 77220 unflagged 77229
-		q(77228),	-- bloom spot / purple
+		q(77228),	-- bloom spot (80/100)
+		q(77229),	-- bloom spot (100/100) (spellID 418312)
 		q(77212),	-- loot cache
-		--6 - Dreamer's Daisy
+		--6 - Dreamer's Daisy (spellID 418781 as reference with qid)
 		q(77392),	-- plant green seed
 		q(77391),	-- plant blue seed
 		q(77274),	-- plant purple seed
@@ -356,25 +345,21 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78795),	-- contrib with dewdrop for green seed
 		q(78793),	-- contrib with dewdrop for blue seed
 		q(78794),	-- contrib with dewdrop for purple seed
-		--q(77356),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant)
-		q(77370),	-- bloom spot / 'Chest' (spellID 418389)
+		q(77370),	-- bloom spot (80/100) / 'Chest' (spellID 418389)
+		q(77356),	-- bloom spot (100/100)
 		q(77393),	-- loot cache
-		--7 - Flourishing Scurfpea
-		q(77538),	-- plant green seed / 77533?
+		--7 - Flourishing Scurfpea (spellID 423190 as reference with qid)
+		q(77538),	-- plant green seed
 		q(77535),	-- plant blue seed
 		q(77537),	-- plant purple seed
 		q(77534),	-- contrib with dewdrop
 		q(78813),	-- contrib with dewdrop for green seed
 		q(78811),	-- contrib with dewdrop for blue seed
 		q(78812),	-- contrib with dewdrop for purple seed
-		--q(),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant)
-		q(77532),	-- bloom spot
+		q(77533),	-- bloom spot (80/100)
+		q(77532),	-- bloom spot (100/100)
 		q(77536),	-- loot cache
-		--8 - Fuzzy Licorice / 77367?
+		--8 - Fuzzy Licorice (spellID 418626 as reference with qid)
 		q(77380),	-- plant green seed
 		q(77379),	-- plant blue seed
 		q(77271),	-- plant purple seed
@@ -382,12 +367,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78785),	-- contrib with dewdrop for green seed
 		q(78783),	-- contrib with dewdrop for blue seed
 		q(78784),	-- contrib with dewdrop for purple seed
-		--q(),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant)
-		q(77353),	-- bloom spot
+		q(77367),	-- bloom spot (80/100)
+		q(77353),	-- bloom spot (100/100)
 		q(77381),	-- loot cache
-		--9 - Glade Goldenrod
+		--9 - Glade Goldenrod (spellID 421186 as reference with qid)
 		q(77511),	-- plant green seed
 		q(77508),	-- plant blue seed
 		q(77510),	-- plant purple seed
@@ -395,25 +378,21 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78807),	-- contrib with dewdrop for green seed
 		q(78805),	-- contrib with dewdrop for blue seed
 		q(78806),	-- contrib with dewdrop for purple seed
-		--q(),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant)
-		q(77504),	-- bloom spot / 'Chest' (spellID 421192)
+		q(77505),	-- bloom spot (80/100) (spellID 421191)
+		q(77504),	-- bloom spot (100/100) (spellID 421192)
 		q(77509),	-- loot cache
-		--10 - Lavatouched Lilies
+		--10 - Lavatouched Lilies (spellID 420631 as reference with qid)
 		q(77496),	-- plant green seed
 		q(77493),	-- plant blue seed
 		q(77495),	-- plant purple seed
 		q(77492),	-- contrib with dewdrop
 		q(78801),	-- contrib with dewdrop for green seed
 		q(78799),	-- contrib with dewdrop for blue seed
-		--q(77503),	-- contrib with dewdrop for purple seed / Blizzard, on contrib it trigger planting green seed for Lullaby Lavender. Really?
-		--q(),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant)
-		q(77491),	-- bloom spot / 'Chest' (spellID 420623) (green seed?)
+		q(78800),	-- contrib with dewdrop for purple seed
+		q(77491),	-- bloom spot (80/100) (spellID 420623)
+		q(77490),	-- bloom spot (100/100) (spellID 420626)
 		q(77494),	-- loot cache
-		--11 - Lofty Lupin / 77354?
+		--11 - Lofty Lupin (spellID 418724 as reference with qid)
 		q(77384),	-- plant green seed
 		q(77383),	-- plant blue seed
 		q(77272),	-- plant purple seed
@@ -421,12 +400,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78788),	-- contrib with dewdrop for green seed
 		q(78786),	-- contrib with dewdrop for blue seed
 		q(78787),	-- contrib with dewdrop for purple seed
-		--q(),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant)
-		q(77368),	-- bloom spot / 'Chest' (spellID 418387)
+		q(77368),	-- bloom spot (80/100) (spellID 418387)
+		q(77354),	-- bloom spot (100/100) (spellID 418324)
 		q(77385),	-- loot cache
-		--12 - Lullaby Lavender
+		--12 - Lullaby Lavender (spellID 420757 as reference with qid)
 		q(77503),	-- plant green seed
 		q(77500),	-- plant blue seed
 		q(77502),	-- plant purple seed
@@ -434,13 +411,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78804),	-- contrib with dewdrop for green seed
 		q(78802),	-- contrib with dewdrop for blue seed
 		q(78803),	-- contrib with dewdrop for purple seed
-		--q(),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant)
-		q(77498),	-- bloom spot / 'Chest' (spellID 420760) (green?)
-		q(77497),	-- bloom for blue seed / 'Chest' (spellID 420761)
+		q(77498),	-- bloom spot (80/100) / 'Chest' (spellID 420760)
+		q(77497),	-- bloom spot (100/100) / 'Chest' (spellID 420761)
 		q(77501),	-- loot cache
-		--13 - Moon Tulip
+		--13 - Moon Tulip (spellID 423189 as reference with qid)
 		q(77531),	-- plant green seed
 		q(77528),	-- plant blue seed
 		q(77530),	-- plant purple seed
@@ -448,12 +422,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78816),	-- contrib with dewdrop for green seed
 		q(78814),	-- contrib with dewdrop for blue seed
 		q(78815),	-- contrib with dewdrop for purple seed
-		--q(),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant)
-		q(77526),	-- bloom spot / 'Chest' (spellID 423213)
+		q(77526),	-- bloom spot (80/100) / 'Chest' (spellID 423213)
+		q(77525),	-- bloom spot (100/100)
 		q(77529),	-- loot cache
-		--14 - Ringing Rose
+		--14 - Ringing Rose (spellID 418780 as reference with qid)
 		q(77387),	-- plant green seed
 		q(77386),	-- plant blue seed
 		q(77273),	-- plant purple seed
@@ -461,12 +433,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78792),	-- contrib with dewdrop for green seed
 		q(78790),	-- contrib with dewdrop for blue seed
 		q(78791),	-- contrib with dewdrop for purple seed
-		--q(),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant)
-		q(77355),	-- bloom spot
+		q(77369),	-- bloom spot (80/100) (spellID 418388)
+		q(77355),	-- bloom spot (100/100)
 		q(77389),	-- loot cache
-		--15 - Singing Weedling
+		--15 - Singing Weedling (spellID 418432 as reference with qid)
 		q(77375),	-- plant green seed
 		q(77374),	-- plant blue seed
 		q(77270),	-- plant purple seed
@@ -474,13 +444,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78782),	-- contrib with dewdrop for green seed
 		q(78780),	-- contrib with dewdrop for blue seed
 		q(78781),	-- contrib with dewdrop for purple seed
-		--q(),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant)
-		q(77350),	-- bloom spot with green seed
-		q(77366),	-- bloom spot / 'Chest' (spellID 418385)
+		q(77366),	-- bloom spot (80/100) (spellID 418385)
+		q(77350),	-- bloom spot (100/100) (spellID 418321)
 		q(77373),	-- loot cache
-		--16 - Viridescent Sprout
+		--16 - Viridescent Sprout (spellID 418782 as reference with qid)
 		q(77395),	-- plant green seed
 		q(77394),	-- plant blue seed
 		q(77275),	-- plant purple seed
@@ -488,25 +455,21 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78798),	-- contrib with dewdrop for green seed
 		q(78796),	-- contrib with dewdrop for blue seed
 		q(78797),	-- contrib with dewdrop for purple seed
-		--q(),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant)
-		q(77357),	-- bloom spot / 'Chest' (spellID 418327)
+		q(77372),	-- bloom spot (80/100)
+		q(77357),	-- bloom spot (100/100) / 'Chest' (spellID 418327)
 		q(77396),	-- loot cache
-		--17 - Whisperbloom Sapling
+		--17 - Whisperbloom Sapling (spellID 423984 as reference with qid)
 		q(77545),	-- plant green seed
 		q(77542),	-- plant blue seed
-		q(77540),	-- plant purple seed
+		q(77544),	-- plant purple seed
 		q(77541),	-- contrib with dewdrop
 		q(78819),	-- contrib with dewdrop for green seed
 		q(78817),	-- contrib with dewdrop for blue seed
 		q(78818),	-- contrib with dewdrop for purple seed
-		--q(),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant)
-		q(77539),	-- bloom spot
+		q(77540),	-- bloom spot (80/100)
+		q(77539),	-- bloom spot (100/100)
 		q(77543),	-- loot cache
-		--18 - Ysera's Clover
+		--18 - Ysera's Clover (spellID 417874 as reference with qid)
 		q(77216),	-- plant green seed
 		q(77215),	-- plant blue seed
 		q(77214),	-- plant purple seed
@@ -514,10 +477,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78768),	-- contrib with dewdrop for green seed
 		q(78769),	-- contrib with dewdrop for blue seed
 		q(78770),	-- contrib with dewdrop for purple seed
-		--q(77218),	-- contrib with green seed (to other player plant)
-		--q(),	-- contrib with blue seed (to other player plant)
-		--q(),	-- contrib with purple seed (to other player plant)
-		q(77217),	-- bloom spot
+		q(77217),	-- bloom spot (80/100)
+		q(77218),	-- bloom spot (100/100) (spellID 418259)
 		q(77210),	-- loot cache
 	}),
 }));
