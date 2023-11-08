@@ -1061,6 +1061,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(77218),	-- Ysera's Clover / contrib with green seed (to other player plant)?
 		--q(77227),	-- ?
 		--q(77229),	-- Dragon's Daffodil / contrib with purple seed (to other player plant)?
+		--q(77354),	-- Loffin Lupin / contrib without seed to epic plant
 		--q(77369),	-- ?
 		--q(77490),	-- 'Chest' (spellID 420626)
 		--q(77505), -- 'Chest' (spellID 421191)

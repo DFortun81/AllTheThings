@@ -374,18 +374,18 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(),	-- contrib with purple seed (to other player plant)
 		q(77532),	-- bloom spot
 		q(77536),	-- loot cache
-		--8 - Fuzzy Licorice
+		--8 - Fuzzy Licorice / 77367?
 		q(77380),	-- plant green seed
 		q(77379),	-- plant blue seed
 		q(77271),	-- plant purple seed
 		q(77378),	-- contrib with dewdrop
 		q(78785),	-- contrib with dewdrop for green seed
-		q(78783),	-- contrib with dewdrop for blue seed / 77367?
+		q(78783),	-- contrib with dewdrop for blue seed
 		q(78784),	-- contrib with dewdrop for purple seed
 		--q(),	-- contrib with green seed (to other player plant)
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
-		--q(),	-- bloom spot
+		q(77353),	-- bloom spot
 		q(77381),	-- loot cache
 		--9 - Glade Goldenrod
 		q(77511),	-- plant green seed
@@ -413,7 +413,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(),	-- contrib with purple seed (to other player plant)
 		q(77491),	-- bloom spot / 'Chest' (spellID 420623) (green seed?)
 		q(77494),	-- loot cache
-		--11 - Lofty Lupin
+		--11 - Lofty Lupin / 77354?
 		q(77384),	-- plant green seed
 		q(77383),	-- plant blue seed
 		q(77272),	-- plant purple seed
@@ -477,7 +477,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(),	-- contrib with green seed (to other player plant)
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
-		q(77366),	-- bloom spot / 'Chest' (spellID 418385) -- 77350 (old build? different bloom?)
+		q(77350),	-- bloom spot with green seed
+		q(77366),	-- bloom spot / 'Chest' (spellID 418385)
 		q(77373),	-- loot cache
 		--16 - Viridescent Sprout
 		q(77395),	-- plant green seed
