@@ -377,8 +377,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["g"] = {
 						i(208544),	-- Frozenheart's Wrath (QI!)
 						--modID 27 bonusID 9546
+						i(209903),	-- Chartreuse Champion's Girdle
+						i(209883),	-- Chartreuse Champion's Sabatons
 						i(209906),	-- Fearless Faerie's Belt
 						i(209929),	-- Fearless Faerie's Boots
+						i(209928),	-- Spirited Stag's Treads
+						i(209905),	-- Spirited Stag's Waistguard
+						i(209904),	-- Summer Soother's Sash
+						i(209927),	-- Summer Soother's Slippers
 					},
 				}),
 				q(76385, {	-- Hazardous Horticulture
@@ -406,7 +412,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 38.6, 39.1, EMERALD_DREAM },
 					["g"] = {
 						--modID 27 bonusID 9546
+						i(209885),	-- Chartreuse Champion's Chestplate
 						i(209887),	-- Fearless Faerie's Vest
+						i(209886),	-- Spirited Stag's Chestguard
+						i(209884),	-- Summer Soother's Gown
 					},
 				}),
 				q(76388, {	-- Fighting Fire With Fire
@@ -418,7 +427,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 38.6, 39.0, EMERALD_DREAM },
 					["g"] = {
 						--modID 27 bonusID 9546
+						i(209895),	-- Chartreuse Champion's Legplates
 						i(209898),	-- Fearless Faerie's Trousers
+						i(209897),	-- Spirited Stag's Legguards
+						i(209896),	-- Summer Soother's Leggings
 					},
 				}),
 				q(76398, {	-- Aerial Supremacy
@@ -433,7 +445,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["g"] = {
 						i(208752),	-- Horn of Cenarius (QI!)
 						--modID 27 bonusID 9546
+						i(209900),	-- Chartreuse Champion's Shoulderplates
 						i(209899),	-- Fearless Faerie's Shoulderpads
+						i(209902),	-- Spirited Stag's Epaulets
+						i(209901),	-- Summer Soother's Shoulders
 					},
 				}),
 				q(76401, {	-- Echo of the Firelands
@@ -445,8 +460,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["coord"] = { 35.0, 33.5, EMERALD_DREAM },
 					["g"] = {
 						--modID 27 bonusID 9546
+						i(209923),	-- Chartreuse Champion's Blade
+						i(209919),	-- Chartreuse Champion's Bulwark
+						i(209937),	-- Chartreuse Champion's Gavel
+						i(209938),	-- Chartreuse Champion's Greatsword
+						i(209924),	-- Chartreuse Champion's Warspear
+						i(209925),	-- Fearless Faerie's Dirk
+						i(209922),	-- Fearless Faerie's Glaive
+						i(209942),	-- Fearless Faerie's Kris
+						i(209932),	-- Fearless Faerie's Mace
 						i(209921),	-- Spirited Stag's Branch
+						i(209934),	-- Spirited Stag's Chopper
+						i(209943),	-- Spirited Stag's Claymore
+						i(209941),	-- Spirited Stag's Curve
+						i(209935),	-- Spirited Stag's Handaxe
+						i(209933),	-- Spirited Stag's Longbow
 						i(209940),	-- Spirited Stag's Spire
+						i(209931),	-- Summer Soother's Cane
+						i(209920),	-- Summer Soother's Implement
+						i(209936),	-- Summer Soother's Mallet
+						i(209939),	-- Summer Soother's Wand
 					},
 				}),
 				------ Chapter 6 ------
@@ -1024,14 +1057,19 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77717),	-- lockout after turn in quest and flower show timer (progress bar)
 		--
 		q(78707),	-- Moonberry's Many Mischief Makers (itemID 210996)
-		-- ???
+		--all of this is possibly bloom (80+) for blue/purple seeds
 		--q(77490),	-- 'Chest' (spellID 420626)
 		--q(77370),	-- 'Chest' (spellID 418389)
 		--q(77497),	-- 'Chest' (spellID 420761)
 		--q(77505), -- 'Chest' (spellID 421191)
 		--q(77512),	-- ?
 		--q(77369),	-- ?
-		--q(77217),	-- ? (during ch5 quests (76386 & 76385), bloom spot?)
-		--q(77218),	-- ? (during ch5 quests (76388), bloom spot?)
+		--q(77217),	-- ?
+		--q(77218),	-- ?
+		--q(77229),	-- ?
+		--q(77227),	-- ?
+		--q(77505),	-- ?
+		--q(77539),	-- ?
+		--q(77218),	-- ?
 	}),
 }));

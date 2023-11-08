@@ -411,7 +411,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(),	-- contrib with green seed (to other player plant)
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
-		q(77491),	-- bloom spot / 'Chest' (spellID 420623)
+		q(77491),	-- bloom spot / 'Chest' (spellID 420623) (green seed?)
 		q(77494),	-- loot cache
 		--11 - Lofty Lupin
 		q(77384),	-- plant green seed
