@@ -81,7 +81,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				16336,	-- Azure Spanner
 				16363,	-- Just Don't Ask Me to Spell It
 				17739,	-- Embers of Neltharion
-				19308,	-- Freshscales Fifteen
 				16761,	-- Dragon Isles Explorer
 				17766,	-- Explore Zaralek Cavern
 				19309,	-- Explore the Emerald Dream
