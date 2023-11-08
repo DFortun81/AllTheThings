@@ -990,8 +990,6 @@ root(ROOTS.NeverImplemented, {
 				i(210422),	-- Loamm Niffen Insignia [Epic 2.5k]
 				------ Equipment Chest ------
 				i(210595),	-- Dreaming Equipment Chest
-				------ Time Rifts ------
-				i(209856),	-- Dilated Time Pod
 				------ Items from Questlines that Gives Rep ------
 				i(211131),	-- Delicately Curated Blossoms
 				i(210920),	-- Gift of Amirdrassil

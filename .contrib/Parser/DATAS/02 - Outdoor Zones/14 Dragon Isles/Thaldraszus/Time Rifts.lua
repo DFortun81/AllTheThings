@@ -8,7 +8,11 @@ TIME_RIFTS = createHeader({
 		en = [[~GetSpellInfo(408633)]],
 	},
 });
+-- #if BEFORE 10.2.0
 local DILATED_TIME_CAPSULE = 207030;
+-- #elseif
+local DILATED_TIME_CAPSULE = 209856;
+-- #endif
 local AZQROTH = 2201;
 local AZEWRATH = 2202;
 local AZMOURNE = 2203;

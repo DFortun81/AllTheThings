@@ -16,7 +16,11 @@ local function DreamboundBOA(itemID, vendorItemID)
 	return i;
 end
 local DREAMSURGE_COALESCENCE = 207026;
+-- #if BEFORE 10.2.0
 local DREAMSURGE_CHRYSALIS = 208153;
+-- #else
+local DREAMSURGE_CHRYSALIS = 210254;
+-- #endif
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DREAMSURGE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		n(QUESTS, {
