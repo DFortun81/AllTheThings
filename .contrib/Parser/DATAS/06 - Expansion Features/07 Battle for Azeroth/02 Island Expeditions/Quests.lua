@@ -55,9 +55,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					i(168615),	-- Volatile Worldvein (Rank 1)
 					i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
 					i(166999),	-- Treasure Map
-					i(169764, {	-- Worldvein Intelligence Reports
-						["questID"] = 56533,	-- Worldvein Rumors
-					}),
+					i(169764),	-- Worldvein Intelligence Reports
 					mi(2158, {	-- Investigating the Rumors
 						["questID"] = 56528,	-- procs when completing Investigating the Rumors on Alliance
 						["sourceQuest"] = 56533,	-- Worldvein Rumors
@@ -86,6 +84,10 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					}),
 				},
 			}),
+			q(56533, {	-- Worldvein Rumors
+				["provider"] = {"i",169764},	-- Worldvein Intelligence Reports
+				["races"] = ALLIANCE_ONLY,
+			}),
 			q(53435, {	-- Azerite for the Horde
 				["isWeekly"] = true,
 				["provider"] = { "n", 123000 },	-- Captain Rez'okun
@@ -95,9 +97,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					i(168615),	-- Volatile Worldvein (Rank 1)
 					i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
 					i(166999),	-- Treasure Map
-					i(169765, {	-- Worldvein Intelligence Reports
-						["questID"] = 56534,	-- Worldvein Rumors
-					}),
+					i(169765),	-- Worldvein Intelligence Reports
 					mi(2159, {	-- Investigating the Rumors
 						-- ["questID"] = ,	-- procs when completing Investigating the Rumors on Horde
 						["sourceQuest"] = 56534,	-- Worldvein Rumors
@@ -125,6 +125,10 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						un(REMOVED_FROM_GAME, i(168618)),	-- Brilliant Worldvein (Rank 4)
 					}),
 				},
+			}),
+			q(56534, {	-- Worldvein Rumors
+				["provider"] = {"i",169765},	-- Worldvein Intelligence Reports
+				["races"] = HORDE_ONLY,
 			}),
 		}),
 		-- One-Time Item Drop Quests

@@ -1774,33 +1774,28 @@ root(ROOTS.Zones, {
 					n(73657, {	-- Great Chef Woo <Food & Drink>
 						["description"] = "You can turn in various zone drops to this vendor for Timeless Coins.\n\nThe quests can be repeated indefinitely.",
 						["coord"] = { 41.8, 63.7, TIMELESS_ISLE },
-						["g"] = {
-							i(104265, {	-- Great Turtle Meat
-								["description"] = "Can be turned in for 50 Timeless Coins.",
-								["repeatable"] = true,
-								["questID"] = 33235,	-- Great Turtle Meat
+						["g"] = sharedData({
+							["repeatable"] = true,
+							["groups"] = {
+								currency(777),	-- Timeless Coins
+							},
+						},{
+							q(33235, {	-- Great Turtle Meat
+								["cost"] = {{"i",104265,1}},	-- Great Turtle Meat
 							}),
-							i(104266, {	-- Heavy Yak Flank
-								["description"] = "Can be turned in for 50 Timeless Coins.",
-								["repeatable"] = true,
-								["questID"] = 33236,	-- Heavy Yak Flank
+							q(33236, {	-- Heavy Yak Flank
+								["cost"] = {{"i",104266,1}},	-- Heavy Yak Flank
 							}),
-							i(104264, {	-- Meaty Crane Leg
-								["description"] = "Can be turned in for 20 Timeless Coins.",
-								["repeatable"] = true,
-								["questID"] = 33234,	-- Meaty Crane Leg
+							q(33234, {	-- Meaty Crane Leg
+								["cost"] = {{"i",104264,1}},	-- Meaty Crane Leg
 							}),
-							i(104257, {	-- Pristine Firestorm Egg
-								["description"] = "Can be turned in for 500 Timeless Coins.",
-								["repeatable"] = true,
-								["questID"] = 33239,	-- Pristine Firestorm Egg
+							q(33239, {	-- Pristine Firestorm Egg
+								["cost"] = {{"i",104257,1}},	-- Pristine Firestorm Egg
 							}),
-							i(104267, {	-- Thick Tiger Haunch
-								["description"] = "Can be turned in for 100 Timeless Coins.",
-								["repeatable"] = true,
-								["questID"] = 33238,	-- Thick Tiger Haunch
+							q(33238, {	-- Thick Tiger Haunch
+								["cost"] = {{"i",104267,1}},	-- Thick Tiger Haunch
 							}),
-						},
+						}),
 					}),
 					n(73819, {	-- Ku-Mo <Hand-Made Kites>
 						["coord"] = { 41.1, 63.8, TIMELESS_ISLE },
@@ -2051,6 +2046,12 @@ root(ROOTS.Zones, {
 						i(104166),	-- Ominous Flame (PET!)
 						i(104227),	-- Technique: Glyph of Pillar of Light
 					}),
+					i(104265, {	-- Great Turtle Meat
+						["description"] = "Can be turned in for 50 Timeless Coins.",
+					}),
+					i(104266, {	-- Heavy Yak Flank
+						["description"] = "Can be turned in for 50 Timeless Coins.",
+					}),
 					n(72898,  {	-- High Priest of Ordos
 						i(104329),	-- Ash-Covered Horn (TOY!)
 					}),
@@ -2058,6 +2059,9 @@ root(ROOTS.Zones, {
 						i(104288),	-- Condensed Jademist
 						i(104224),	-- Technique: Glyph of Evaporation
 						i(104164),	-- Jademist Dancer (PET!)
+					}),
+					i(104264, {	-- Meaty Crane Leg
+						["description"] = "Can be turned in for 20 Timeless Coins.",
 					}),
 					n(72888,  {	-- Molten Guardian
 						i(104328),	-- Cauterizing Core
@@ -2075,6 +2079,9 @@ root(ROOTS.Zones, {
 					n(72805,  {	-- Primal Stalker
 						i(104268),	-- Pristine Stalker Hide
 					}),
+					i(104257, {	-- Pristine Firestorm Egg
+						["description"] = "Can be turned in for 500 Timeless Coins.",
+					}),
 					n(73018,  {	-- Spectral Brewmaster
 						i(104335),	-- Thick Pi'jiu Brew
 						i(104235),		-- Technique: Glyph of Lingering Ancestors
@@ -2089,6 +2096,9 @@ root(ROOTS.Zones, {
 					}),
 					n(72908,  {	-- Spotted Swarmer
 						i(104290),	-- Sticky Silkworm Goo
+					}),
+					i(104267, {	-- Thick Tiger Haunch
+						["description"] = "Can be turned in for 100 Timeless Coins.",
 					}),
 					n(72761,  {	-- Windfeather Nestkeeper
 						i(104231),	-- Technique: Glyph of Inspired Hymns
