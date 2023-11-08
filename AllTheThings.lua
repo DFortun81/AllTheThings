@@ -9909,6 +9909,7 @@ local FlightPathMapIDs = {
 	2055,	-- Sepulcher of the First Ones (has FPs inside)
 	2149,	-- Ohn'ahran Plains [The Nokhud Offensive] (has FPs inside)
 	2175,	-- Zaralek Cavern
+	2241,	-- Emerald Dream
 };
 local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes, GetTaxiMapID
 	= C_TaxiMap.GetTaxiNodesForMap, C_TaxiMap.GetAllTaxiNodes, GetTaxiMapID;
