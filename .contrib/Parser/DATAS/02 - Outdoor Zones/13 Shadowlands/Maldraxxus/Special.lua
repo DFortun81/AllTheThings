@@ -17,6 +17,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						},
 						["questID"] = 65039,
 						["isWeekly"] = true,
+						["timeline"] = { ADDED_9_2_0 },
 					}),
 				},
 			}),

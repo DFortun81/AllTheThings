@@ -1247,14 +1247,14 @@ namespace ATT
 
             public static void ExportAutoLocale(string filename)
             {
-                var AllLocaleTypes = new SortedDictionary<string, SortedDictionary<long, object>>();
+                var AllLocaleTypes = new SortedDictionary<string, SortedDictionary<long, string>>();
 
                 foreach (var localeKey in NAMES_BY_TYPE)
                 {
                     if (AutoLocalizeType(localeKey.Key))
                     {
                         string localeDictionaryName = localeKey.Key.Replace("ID", string.Empty).ToUpper() + "_NAMES";
-                        AllLocaleTypes.Add(localeDictionaryName, new SortedDictionary<long, object>(localeKey.Value));
+                        AllLocaleTypes.Add(localeDictionaryName, new SortedDictionary<long, string>(localeKey.Value));
                     }
                 }
 

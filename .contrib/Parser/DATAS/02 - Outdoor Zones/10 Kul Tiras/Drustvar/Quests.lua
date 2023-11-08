@@ -138,7 +138,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["sourceQuests"] = { 48111 },	-- Trial by Superstition
 			}),
 			q(48522, {	-- A Revealing Missive
-				["itemID"] = 152587,	-- Levae's Missive
+				["provider"] = {"i",152587},	-- Levae's Missive
 				["races"] = ALLIANCE_ONLY,
 				["description"] = "This quest appears to drop from whichever Sister you kill last.",
 				["sourceQuests"] = { 48520 },	-- The Three Sisters
@@ -515,7 +515,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				},
 			}),
 			q(49806, {	-- Hidden Dealings
-				["itemID"] = 156517,	-- Hastily Drawn Map
+				["provider"] = {"i",156517},	-- Hastily Drawn Map
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 49804 },	-- Sharp Thinking
 				["crs"] = {
@@ -580,7 +580,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			}),
 			q(51134, {	-- If Bones Could Talk
 				["races"] = ALLIANCE_ONLY,
-				["itemID"] = 159748,	-- Rune-Etched Bone
+				["provider"] = {"i",159748},	-- Rune-Etched Bone
 				["sourceQuests"] = { 48941 },	-- A Slight Detour
 				-- Needs confirmation -- the quest didn't auto-pop and I didn't notice the item in my bags until later.  This source is based on a wowhead comment.
 				-- Not required for "Drust Do It."
@@ -1307,7 +1307,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			}),
 			q(50965, {	-- Those Who Remain
 				["races"] = ALLIANCE_ONLY,
-				["itemID"] = 160027,	-- Ashenwood Relic
+				["provider"] = {"i",160027},	-- Ashenwood Relic
 				["sourceQuests"] = { 48622 },	-- The Vanishing Lord
 				-- May only drop while on A Farmer's Fate / Lost in the Woods as that was the point I picked it up; needs confirmation.
 				["crs"] = {

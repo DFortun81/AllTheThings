@@ -980,7 +980,7 @@ root(ROOTS.Zones, {
 					q(37322, {	-- The Prophet's Final Message
 						["sourceQuests"] = { 33256 },	-- The Defense of Karabor
 						["description"] = "The item that starts this quest is mailed to you.",
-						["itemID"] = 119208,	-- The Prophet's Arcanum
+						["provider"] = {"i",119208},	-- The Prophet's Arcanum
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(33255, {	-- The Righteous March
@@ -1019,9 +1019,11 @@ root(ROOTS.Zones, {
 					q(36309, {	-- The Strength of Iron
 						["requireSkill"] = BLACKSMITHING,
 						["description"] = "This can be looted from almost any mob in Shadowmoon Valley; however, Karnoth has a guaranteed drop for the item.",
-						["itemID"] = 115343,	-- Haephest's Satchel
+						["providers"] = {
+							{ "n", 75043 },	-- Karnoth
+							{ "i", 115343},	-- Haephest's Satchel
+						},
 						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 75043 },	-- Karnoth
 					}),
 					q(34792, {	-- The Traitor's True Name
 						["sourceQuests"] = { 34789 },	-- Speaker for the Dead

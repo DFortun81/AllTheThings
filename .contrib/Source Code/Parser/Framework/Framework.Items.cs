@@ -1015,10 +1015,8 @@ namespace ATT
                 }
 
                 // quite spammmmmy, only enable if needed
-                if (!data.ContainsKey("s"))
-#pragma warning disable CS0162 // Unreachable code detected
-                    if (DoSpammyDebugLogging) LogDebug($"INFO: Failed to match SourceID for Item {sourceIDKey}");
-#pragma warning restore CS0162 // Unreachable code detected
+                if (DoSpammyDebugLogging && !data.ContainsKey("s"))
+                    LogDebug($"INFO: Failed to match SourceID for Item {sourceIDKey}");
             }
 
             /// <summary>

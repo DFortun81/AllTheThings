@@ -1028,7 +1028,7 @@ root(ROOTS.Zones, {
 					q(12888, {	-- SCRAP-E
 						["qg"] = 29724,	-- Library Guardian
 						["coord"] = { 39.2, 42.0, THE_STORM_PEAKS },	-- general area
-						["itemID"] = 41267,	-- SCRAP-E Access Card
+						["provider"] = {"i",41267},	-- SCRAP-E Access Card
 						["requireSkill"] = ENGINEERING,
 					}),
 					q(13064, {	-- Sibling Rivalry

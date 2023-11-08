@@ -1,6 +1,6 @@
 local Items = ItemDBConditional;
 local i = function(itemID, illusionID, questID)
-	Items[itemID] = { ["illusionID"] = illusionID, ["questID"] = questID };
+	Items[itemID] = { ["illusionID"] = illusionID, ["questID"] = questID, ["type"] = "illusionID" };
 end
 -----------------
 -- PATCH 6.0.2 --

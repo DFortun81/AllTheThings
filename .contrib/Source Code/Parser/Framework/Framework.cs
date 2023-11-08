@@ -219,7 +219,7 @@ namespace ATT
         /// <summary>
         /// All of the names stored for each data type.
         /// </summary>
-        private static IDictionary<string, Dictionary<long, object>> NAMES_BY_TYPE = new Dictionary<string, Dictionary<long, object>>();
+        private static IDictionary<string, Dictionary<long, string>> NAMES_BY_TYPE = new Dictionary<string, Dictionary<long, string>>();
 
         /// <summary>
         /// Represents the current parent group when processing the 'g' subgroup
@@ -1809,6 +1809,7 @@ namespace ATT
             Consolidate_providers(data);
             Consolidate_sourceQuests(data);
             Consolidate_altQuests(data);
+            Consolidate_item(data);
 
             // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
             // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
@@ -1819,6 +1820,7 @@ namespace ATT
             CheckRequiredDataRelationships(data);
             Items.DetermineSourceID(data);
             Objects.AssignFactionID(data);
+
             CheckObjectConversion(data);
 
             data.TryGetValue("g", out List<object> g);
@@ -1868,9 +1870,9 @@ namespace ATT
                 if (ObjectData.TryGetMostSignificantObjectType(data, out ObjectData objectData, out object objKeyValue) && objKeyValue.TryConvert(out long id))
                 {
                     // Store the name of this object (or whatever it is) in our table.
-                    if (!NAMES_BY_TYPE.TryGetValue(objectData.ObjectType, out Dictionary<long, object> names))
+                    if (!NAMES_BY_TYPE.TryGetValue(objectData.ObjectType, out Dictionary<long, string> names))
                     {
-                        NAMES_BY_TYPE[objectData.ObjectType] = names = new Dictionary<long, object>();
+                        NAMES_BY_TYPE[objectData.ObjectType] = names = new Dictionary<long, string>();
                     }
                     names[id] = name;
 
@@ -1936,6 +1938,24 @@ namespace ATT
             }
 
             return true;
+        }
+
+        private static void Consolidate_item(IDictionary<string, object> data)
+        {
+            if (data.TryGetValue("itemID", out long itemID))
+            {
+                // Maybe this empty Item should actually be a Character Unlock
+                if (!data.ContainsKey("g") && !data.ContainsKey("sym") && !data.ContainsKey("type")
+                    // not illusions...
+                    && !data.ContainsKey("illusionID")
+                    && data.TryGetValue("questID", out long questID))
+                {
+                    Items.TryGetName(data, out string name);
+
+                    data["type"] = "characterUnlockQuestID";
+                    LogWarn($"Add to CharacterItemDB.lua or convert to proper Quest with 'provider': iq({itemID}, {questID});					-- {name}");
+                }
+            }
         }
 
         private static void Consolidate_General(IDictionary<string, object> data)

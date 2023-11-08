@@ -24,16 +24,24 @@ namespace ATT
         {
             // Firstly, we need to know the type of object we're working with.
             if (data is bool b) ExportBooleanValue(builder, b);
+            else if (data is long l) builder.Append(ToString(l));
+            else if (data is int i) builder.Append(ToString(i));
+            else if (data is short s) builder.Append(ToString(s));
+            else if (data is decimal d) builder.Append(ToString(d));
+            else if (data is float f) builder.Append(ToString(f));
+            else if (data is double db) builder.Append(ToString(db));
             else if (data is string str) ExportStringValue(builder, str);
             else if (data is IDictionary<string, List<object>> listdict) ExportCompressedLua(builder, listdict);
             else if (data is IDictionary<long, long> longLongDict) ExportCompressedLua(builder, longLongDict);
             else if (data is IDictionary<long, object> longdict) ExportCompressedLua(builder, longdict);
+            else if (data is IDictionary<long, string> strdict) ExportCompressedLua(builder, strdict);
             else if (data is IDictionary<string, object> dict) ExportCompressedLua(builder, dict);
             else if (data is IList<List<object>> listObjects) ExportCompressedLua(builder, listObjects);
             else if (data is IList<object> list) ExportCompressedLua(builder, list);
             else
             {
                 // Default: Write it raw. Best of luck.
+                Framework.LogWarn($"Failed to determine a proper export type {data.GetType().Name}");
                 builder.Append(ToString(data));
             }
         }
