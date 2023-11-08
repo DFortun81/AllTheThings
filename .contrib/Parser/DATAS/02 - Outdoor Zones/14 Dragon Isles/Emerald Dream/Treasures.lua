@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(212011, {	-- Statue of the Sky Mistress
 				["questID"] = 78367,
-				["description"] = "Find a Mark of Avianna and return to the statute with the buff still active. Druids can activate in moonkin form.",
+				["description"] = "Find a Mark of Avianna and return to the statute with the buff still active. Druids can activate in travel (fly) form.",
 				["coord"] = { 64.2, 19.3, EMERALD_DREAM },
 				["g"] = {
 					o(411066, {	-- Reliquary of Aviana

@@ -1089,12 +1089,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(207761),	-- Grotto Netherwing Drake: Chin Tendrils (DM!)
 			i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back (DM!)
 			i(207765),	-- Grotto Netherwing Drake: Cluster Spiked Crest (DM!)
+			i(207774),	-- Grotto Netherwing Drake: Finned Jaw (DM!)
 			i(207764),	-- Grotto Netherwing Drake: Head Spike (DM!)
 			i(207772),	-- Grotto Netherwing Drake: Long Horns (DM!)
 			i(207769),	-- Grotto Netherwing Drake: Outcast Pattern (DM!)
 			i(207771),	-- Grotto Netherwing Drake: Short Horns (DM!)
 			i(207763),	-- Grotto Netherwing Drake: Single Horned Crest (DM!)
 			i(207773),	-- Grotto Netherwing Drake: Spiked Jaw (DM!)
+			i(207767),	-- Grotto Netherwing Drake: Tempestuous Pattern (DM!)
 			i(207766),	-- Grotto Netherwing Drake: Triple Spiked Crest (DM!)
 		}),
 		header(HEADERS.Item, 206156, sharedData({	-- Grotto Netherwing Drake
@@ -1104,12 +1106,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(207760),	-- Grotto Netherwing Drake: Armor
 			i(207776),	-- Grotto Netherwing Drake: Black Scales
 			i(207778),	-- Grotto Netherwing Drake: Double Finned Tail
-			i(207774),	-- Grotto Netherwing Drake: Finned Jaw
 			i(207770),	-- Grotto Netherwing Drake: Helm
 			i(207757),	-- Grotto Netherwing Drake: Purple and Silver Armor
 			i(207758),	-- Grotto Netherwing Drake: Spiked Back
 			i(207775),	-- Grotto Netherwing Drake: Teal Scales
-			i(207767),	-- Grotto Netherwing Drake: Tempestuous Pattern
 			i(211381),	-- Grotto Netherwing Drake: Violet Scales
 			i(207768),	-- Grotto Netherwing Drake: Volatile Pattern
 			i(207777),	-- Grotto Netherwing Drake: Yellow Scales
@@ -1123,7 +1123,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
 			i(210537),	-- Renewed Proto-Drake: Embodiment of Shadowflame (DM!)
 			i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing (DM!)
-			i(197371),	-- Renewed Proto-Drake: Green Hair
+			i(197371),	-- Renewed Proto-Drake: Green Hair (DM!)
 		}),
 		header(HEADERS.Item, 194549, {	-- Windborne Velocidrake
 		}),

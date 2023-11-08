@@ -251,7 +251,6 @@ root(ROOTS.NeverImplemented, {
 		-- 10.2.0
 		tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				------ Random ------
-			i(210663),	-- Circlet of the Mother Tree
 			i(210666),	-- Crest of the Seething Flamekeeper
 			i(210664),	-- Frost Sapling's Adornment
 			i(210662),	-- Ochre Ornament of the Grove

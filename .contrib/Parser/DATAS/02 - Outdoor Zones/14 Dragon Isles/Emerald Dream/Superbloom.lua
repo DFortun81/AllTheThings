@@ -36,12 +36,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(REWARDS, {
 				i(211414),	-- Blossoming Dreamtrove
 				i(211413, {	-- Budding Dreamtrove
+					i(207774),	-- Grotto Netherwing Drake: Finned Jaw (DM!)
 					i(207763),	-- Grotto Netherwing Drake: Single Horned Crest (DM!)
+					i(207767),	-- Grotto Netherwing Drake: Tempestuous Pattern (DM!)
 					i(197371),	-- Renewed Proto-Drake: Green Hair (DN!)
 					i(203340),	-- Winding Slitherdrake: Cluster Jaw Horns (DM!)
 				}),
 				i(211411),	-- Sprouting Dreamtrove
 				filter(COSMETIC, {
+					i(210663),	-- Circlet of the Mother Tree
 					i(210661),	-- Dreamcatcher's Crescent
 				}),
 				filter(CLOTH, {
