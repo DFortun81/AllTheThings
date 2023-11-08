@@ -10,7 +10,7 @@ TIME_RIFTS = createHeader({
 });
 -- #if BEFORE 10.2.0
 local DILATED_TIME_CAPSULE = 207030;
--- #elseif
+-- #else
 local DILATED_TIME_CAPSULE = 209856;
 -- #endif
 local AZQROTH = 2201;
