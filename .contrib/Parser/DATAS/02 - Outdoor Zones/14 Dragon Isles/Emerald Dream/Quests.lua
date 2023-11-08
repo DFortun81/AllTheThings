@@ -1031,12 +1031,12 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77572),	-- 'Make player eligible for superbloom' (spellID 425375)
 		q(77887),	-- 'World Quest Unlock' (spellID 421687)
 		q(78904),	-- 'Local Stories Quest Unlock' (spellID 429258) (after qID 77178 'Tactical Withdrawal')
-		---Dryad Garden
+		-- Dryad Garden
 		q(77808),	-- Quest "What Do I Call You?": Pick the title of "Mother"
 		q(77809),	-- Quest "What Do I Call You?": Pick the title of "Father"
 		q(77810),	-- Quest "What Do I Call You?": Pick the title of "Commander"
 		q(77811),	-- Quest "What Do I Call You?": Pick the title of "Guardian"
-		-- there is likely one questID unique to each class. Need to test this theory
+		-- Require Legion Class Hall for each unique class line (otherwise there will be only 4 above)
 		q(77834),	-- Quest "What Do I Call You?": Pick the title of "Archdruid"
 		q(78235),	-- Quest "What Do I Call You?": Pick the title of "Battlelord"
 		q(78258),	-- Quest "What Do I Call You?": Pick the title of "Grandmaster"

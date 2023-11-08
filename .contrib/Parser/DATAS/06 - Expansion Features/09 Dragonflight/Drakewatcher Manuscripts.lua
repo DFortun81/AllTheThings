@@ -1098,6 +1098,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(207773),	-- Grotto Netherwing Drake: Spiked Jaw (DM!)
 			i(207767),	-- Grotto Netherwing Drake: Tempestuous Pattern (DM!)
 			i(207766),	-- Grotto Netherwing Drake: Triple Spiked Crest (DM!)
+			i(207768),	-- Grotto Netherwing Drake: Volatile Pattern (DM!)
 		}),
 		header(HEADERS.Item, 206156, sharedData({	-- Grotto Netherwing Drake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
@@ -1111,7 +1112,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(207758),	-- Grotto Netherwing Drake: Spiked Back
 			i(207775),	-- Grotto Netherwing Drake: Teal Scales
 			i(211381),	-- Grotto Netherwing Drake: Violet Scales
-			i(207768),	-- Grotto Netherwing Drake: Volatile Pattern
 			i(207777),	-- Grotto Netherwing Drake: Yellow Scales
 		})),
 		header(HEADERS.Item, 194705, sharedData({	-- Highland Drake

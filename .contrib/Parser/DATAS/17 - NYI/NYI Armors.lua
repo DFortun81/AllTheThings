@@ -2467,7 +2467,6 @@ root(ROOTS.NeverImplemented, {
 				i(208331),	-- Cowl of the Flame
 				i(209880),	-- Curve of Starry Dusks
 				i(208385),	-- Flame Endowed Blade
-				i(208337),	-- Leaf Steward's Leggings
 				i(208336),	-- Legguards of the Dreamsaber
 				i(208381),	-- Scepter of Still Waters
 				i(208324),	-- Scorching Dryad's Chestpiece
