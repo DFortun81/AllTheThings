@@ -1058,18 +1058,12 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--
 		q(78707),	-- Moonberry's Many Mischief Makers (itemID 210996)
 		--all of this is possibly bloom (80+) for blue/purple seeds
-		--q(77490),	-- 'Chest' (spellID 420626)
-		--q(77370),	-- 'Chest' (spellID 418389)
-		--q(77497),	-- 'Chest' (spellID 420761)
-		--q(77505), -- 'Chest' (spellID 421191)
-		--q(77512),	-- ?
-		--q(77369),	-- ?
-		--q(77217),	-- ?
-		--q(77218),	-- ?
-		--q(77229),	-- ?
+		--q(77218),	-- Ysera's Clover / contrib with green seed (to other player plant)?
 		--q(77227),	-- ?
-		--q(77505),	-- ?
-		--q(77539),	-- ?
-		--q(77218),	-- ?
+		--q(77229),	-- Dragon's Daffodil / contrib with purple seed (to other player plant)?
+		--q(77369),	-- ?
+		--q(77490),	-- 'Chest' (spellID 420626)
+		--q(77505), -- 'Chest' (spellID 421191)
+		--q(77512),	-- Comfy Chamomile / bloom spot?
 	}),
 }));

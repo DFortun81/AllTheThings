@@ -307,7 +307,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(),	-- contrib with green seed (to other player plant)
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
-		--q(),	-- bloom spot
+		q(77365),	-- bloom spot
 		q(77360),	-- loot cache
 		--3 - Chiming Foxglove
 		q(77222),	-- plant green seed
@@ -356,10 +356,10 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78795),	-- contrib with dewdrop for green seed
 		q(78793),	-- contrib with dewdrop for blue seed
 		q(78794),	-- contrib with dewdrop for purple seed
-		--q(),	-- contrib with green seed (to other player plant)
+		--q(77356),	-- contrib with green seed (to other player plant)
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
-		--q(),	-- bloom spot / 77356?
+		q(77370),	-- bloom spot / 'Chest' (spellID 418389)
 		q(77393),	-- loot cache
 		--7 - Flourishing Scurfpea
 		q(77538),	-- plant green seed / 77533?
@@ -437,7 +437,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(),	-- contrib with green seed (to other player plant)
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
-		q(77498),	-- bloom spot / 'Chest' (spellID 420760)
+		q(77498),	-- bloom spot / 'Chest' (spellID 420760) (green?)
+		q(77497),	-- bloom for blue seed / 'Chest' (spellID 420761)
 		q(77501),	-- loot cache
 		--13 - Moon Tulip
 		q(77531),	-- plant green seed
@@ -502,7 +503,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(),	-- contrib with green seed (to other player plant)
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
-		--q(),	-- bloom spot
+		q(77539),	-- bloom spot
 		q(77543),	-- loot cache
 		--18 - Ysera's Clover
 		q(77216),	-- plant green seed
@@ -515,7 +516,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(77218),	-- contrib with green seed (to other player plant)
 		--q(),	-- contrib with blue seed (to other player plant)
 		--q(),	-- contrib with purple seed (to other player plant)
-		--q(),	-- bloom spot / 77217?
+		q(77217),	-- bloom spot
 		q(77210),	-- loot cache
 	}),
 }));
