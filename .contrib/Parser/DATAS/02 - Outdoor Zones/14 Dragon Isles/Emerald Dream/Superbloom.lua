@@ -56,6 +56,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				n(DRAKE_MANUSCRIPTS, {
 					i(207762),	-- Grotto Netherwing Drake: Chin Spike (DM!)
+					i(203344),	-- Winding Slitherdrake: Single Jaw Horn (DM!)
 				}),
 				filter(FINGER_F, {
 					i(210376),	-- Beautiful Blizzard Binding

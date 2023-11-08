@@ -997,6 +997,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203353),	-- Winding Slitherdrake: Red Scales (DM!)
 			i(203327),	-- Winding Slitherdrake: Tan Horns (DM!)
 			i(203342),	-- Winding Slitherdrake: Triple Jaw Horns (DM!)
+			i(203344),	-- Winding Slitherdrake: Single Jaw Horn (DM!)
 			i(203317),	-- Winding Slitherdrake: Small Finned Crest (DM!)
 			i(203358),	-- Winding Slitherdrake: Small Finned Tail (DM!)
 			i(203364),	-- Winding Slitherdrake: Small Finned Throat (DM!)
@@ -1018,7 +1019,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203301),	-- Winding Slitherdrake: Light Blue and Copper Armor
 			i(203302),	-- Winding Slitherdrake: Purple and Silver Armor
 			i(203333),	-- Winding Slitherdrake: Short Horns
-			i(203344),	-- Winding Slitherdrake: Single Jaw Horn
 			i(203354),	-- Winding Slitherdrake: White Scales
 		})),
 	})),
