@@ -253,7 +253,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 38.4, 62.1, EMERALD_DREAM },
 				["g"] = {
 					i(208354),	-- Cerulean Turtle's Pendant
-					i(210133),	-- Harvest Guardian Cloak
 				},
 			}),
 			--[[ removed?

@@ -836,7 +836,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
 			["timeline"] = { CREATED_10_0_0 },
 		}, {
-			i(197371),	-- Renewed Proto-Drake: Green Hair
 			i(197356),	-- Renewed Proto-Drake: Hairy Back
 			i(197354),	-- Renewed Proto-Drake: Horned Back
 			i(197393),	-- Renewed Proto-Drake: White Scales
@@ -1125,6 +1124,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
 			i(210537),	-- Renewed Proto-Drake: Embodiment of Shadowflame (DM!)
 			i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing (DM!)
+			i(197371),	-- Renewed Proto-Drake: Green Hair
 		}),
 		header(HEADERS.Item, 194549, {	-- Windborne Velocidrake
 		}),

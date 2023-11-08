@@ -15,6 +15,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(BACK, {
+				i(210133),	-- Harvest Guardian Cloak
 				i(210134),	-- Wind Wolf Shroud
 			}),
 			filter(CLOTH, {
