@@ -52,6 +52,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78015,	-- bonus objective qID
 				["coord"] = { 30.0, 20.7, EMERALD_DREAM },
 				["g"] = {
+					i(208371),	-- Fire Assassin's Boots
 					i(208328),	-- Fystia's Deft Hands
 					i(209881),	-- Fystia's Fiery Kris
 				},

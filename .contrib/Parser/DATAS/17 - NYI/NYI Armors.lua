@@ -2466,7 +2466,6 @@ root(ROOTS.NeverImplemented, {
 				i(208373),	-- Band of Bated Breath
 				i(208331),	-- Cowl of the Flame
 				i(209880),	-- Curve of Starry Dusks
-				i(208371),	-- Fire Assassin's Boots
 				i(208385),	-- Flame Endowed Blade
 				i(208337),	-- Leaf Steward's Leggings
 				i(208336),	-- Legguards of the Dreamsaber
