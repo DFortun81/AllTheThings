@@ -5705,6 +5705,7 @@ _.ObjectNames = {
 	[411466] = "Unwaking Echo",
 	[411778] = "Pollenfused Bristlebruin Fur Sample",
 	[411936] = "Orb Location",
+	[412950] = "Moon-Blessed Claw",
 	[412995] = "Small Box of Vials",
 	[413774] = "The Legend of Elun'Ahir",
 	[413780] = "On the Nature of the Dream",
@@ -10089,6 +10090,7 @@ _.ObjectModels = {
 	[411181] = 4576987,
 	[411466] = 1349621,
 	[411936] = 4485606,
+	[412950] = 202801,
 	[412995] = 3917382,
 	[413774] = 1124086,
 }
