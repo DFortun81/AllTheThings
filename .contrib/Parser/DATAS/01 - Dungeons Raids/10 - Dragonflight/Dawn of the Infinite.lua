@@ -488,6 +488,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				n(COMMON_BOSS_DROPS, {
 					currency(PARACAUSAL_FLAKES),
 					currency(SORIDORMIS_RECOGNITION),
+					i(204078),	-- Aspect's Shadowflame Crest Fragment
 				}),
 				e(2521, {	-- Chronikar
 					["crs"] = { 198995 },	-- Chronikar
@@ -612,6 +613,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				n(COMMON_BOSS_DROPS, {
 					currency(PARACAUSAL_FLAKES),
 					currency(SORIDORMIS_RECOGNITION),
+					i(204078),	-- Aspect's Shadowflame Crest Fragment
 				}),
 				e(2521, {	-- Chronikar
 					["crs"] = { 198995 },	-- Chronikar
