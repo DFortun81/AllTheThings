@@ -1097,8 +1097,8 @@ local function GetProgressTextForTooltip(data, iconOnly)
 	return app.TableConcat(text, nil, "", " ");
 end
 local function GetAddedWithPatchString(awp, addedBack)
-	if awp then
 		awp = tonumber(awp);
+	if awp then
 		local formatString = "ADDED";
 		if app.GameBuildVersion == awp then
 			formatString = "WAS_" .. formatString;
@@ -6888,7 +6888,6 @@ local QuestNameFromServer = setmetatable({}, { __index = function(t, id)
 
 		app.RequestLoadQuestByID(id);
 	end
-	return RETRIEVING_DATA;
 end});
 local QuestNameDefault = setmetatable({}, { __index = function(t, id)
 	if id then
@@ -8179,9 +8178,7 @@ local function default_name(t)
 				local name
 				for k,id in ipairs(sourceQuests) do
 					name = app.GetQuestName(id);
-					if name then
-						return name
-					end
+					if not IsRetrieving(name) then return name; end
 				end
 				return
 			end
