@@ -112,8 +112,7 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	tier(WOTLK_TIER, {
 		["timeline"] = { "added 3.4.0" },
 		["groups"] = {
-			-- 2022 11th November until 15th January 2023
-			q(72522, {	-- Festering Emerald Drake
+			q(72522, {	-- Festering Emerald Drake [2022 11th November until 15th January 2023]
 				["qg"] = 28687,	-- Amisi Azuregaze <Innkeeper>
 				["altQuests"] = { 72523 },	-- Imp in a Ball (Cities)
 				["coord"] = { 50.0, 39.6, NORTHREND_DALARAN },
@@ -149,8 +148,65 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 				},
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			-- 2023 17th January until 31st July 2023
-			q(70862, {	-- Hoplet
+			q(74940, {	-- Flurky [2023 17th January until 31st July 2023]
+				["qg"] = 28687,	-- Amisi Azuregaze <Innkeeper>
+				["coord"] = { 50.0, 39.6, NORTHREND_DALARAN },
+				["maps"] = {
+					THE_EXODAR,
+					IRONFORGE,
+					STORMWIND_CITY,
+					UNDERCITY,
+					THUNDER_BLUFF,
+					ORGRIMMAR,
+					SILVERMOON_CITY,
+					SHATTRATH_CITY,
+				},
+				["crs"] = {
+					5111,	-- Innkeeper Firebrew <Innkeeper>
+					6740,	-- Innkeeper Allison <Innkeeper>
+					6746,	-- Innkeeper Pala <Innkeeper>
+					6929,	-- Innkeeper Gryshka <Innkeeper>
+					19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
+					28687,	-- Amisi Azuregaze
+					29532,	-- Ajay Green
+					31557,	-- Uda the Beast
+					32413,	-- Isirami Fairwind
+				},
+				["groups"] = {
+					i(187794),	-- Flurky
+				},
+			}),
+			q(75491, {	-- Glub [2023 17th January until 31st July 2023]
+				["qg"] = 28687,	-- Amisi Azuregaze <Innkeeper>
+				["coord"] = { 50.0, 39.6, NORTHREND_DALARAN },
+				["maps"] = {
+					THE_EXODAR,
+					IRONFORGE,
+					STORMWIND_CITY,
+					UNDERCITY,
+					THUNDER_BLUFF,
+					ORGRIMMAR,
+					SILVERMOON_CITY,
+					SHATTRATH_CITY,
+				},
+				["crs"] = {
+					5111,	-- Innkeeper Firebrew <Innkeeper>
+					6740,	-- Innkeeper Allison <Innkeeper>
+					6746,	-- Innkeeper Pala <Innkeeper>
+					6929,	-- Innkeeper Gryshka <Innkeeper>
+					19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
+					28687,	-- Amisi Azuregaze
+					29532,	-- Ajay Green
+					31557,	-- Uda the Beast
+					32413,	-- Isirami Fairwind
+				},
+				["groups"] = {
+					i(204982, {	-- Glub
+						-- Description is under the 6 Months Promo?
+					}),
+				},
+			}),
+			q(70862, {	-- Hoplet [2023 17th January until 31st July 2023]
 				["qg"] = 28687,	-- Amisi Azuregaze <Innkeeper>
 				["coord"] = { 50.0, 39.6, NORTHREND_DALARAN },
 				["maps"] = {
@@ -181,63 +237,8 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 					}),
 				},
 			}),
-			q(75491, {	-- Glub
-				["qg"] = 28687,	-- Amisi Azuregaze <Innkeeper>
-				["coord"] = { 50.0, 39.6, NORTHREND_DALARAN },
-				["maps"] = {
-					THE_EXODAR,
-					IRONFORGE,
-					STORMWIND_CITY,
-					UNDERCITY,
-					THUNDER_BLUFF,
-					ORGRIMMAR,
-					SILVERMOON_CITY,
-					SHATTRATH_CITY,
-				},
-				["crs"] = {
-					5111,	-- Innkeeper Firebrew <Innkeeper>
-					6740,	-- Innkeeper Allison <Innkeeper>
-					6746,	-- Innkeeper Pala <Innkeeper>
-					6929,	-- Innkeeper Gryshka <Innkeeper>
-					19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
-					28687,	-- Amisi Azuregaze
-					29532,	-- Ajay Green
-					31557,	-- Uda the Beast
-					32413,	-- Isirami Fairwind
-				},
-				["groups"] = {
-					i(204982, {	-- Glub
-						-- Description is under the 6 Months Promo?
-					}),
-				},
-			}),
-			q(74940, {	-- Flurky
-				["qg"] = 28687,	-- Amisi Azuregaze <Innkeeper>
-				["coord"] = { 50.0, 39.6, NORTHREND_DALARAN },
-				["maps"] = {
-					THE_EXODAR,
-					IRONFORGE,
-					STORMWIND_CITY,
-					UNDERCITY,
-					THUNDER_BLUFF,
-					ORGRIMMAR,
-					SILVERMOON_CITY,
-					SHATTRATH_CITY,
-				},
-				["crs"] = {
-					5111,	-- Innkeeper Firebrew <Innkeeper>
-					6740,	-- Innkeeper Allison <Innkeeper>
-					6746,	-- Innkeeper Pala <Innkeeper>
-					6929,	-- Innkeeper Gryshka <Innkeeper>
-					19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
-					28687,	-- Amisi Azuregaze
-					29532,	-- Ajay Green
-					31557,	-- Uda the Beast
-					32413,	-- Isirami Fairwind
-				},
-				["groups"] = {
-					i(187794),	-- Flurky
-				},
+			i(207097, {	-- Nightmarish Emerald Drake
+				["description"] = "Obtained if you set up a 12 Month WoW Subscription after 27th October 2023.",
 			}),
 		},
 	}),

@@ -384,8 +384,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Blazing Heroic Edition.",
 			["g"] = {
-				-- mount(),	-- Avatar of Flame (MOUNT!)
-				-- pet(),	-- Lil’ Wrathion (PET!)
+				mount(423869),	-- Avatar of Flame (MOUNT!)
+				i(209945),	-- Lil’ Wrathion (PET!)
 
 				-- Later
 				-- Twilight's Hammer Regalia Transmog Set

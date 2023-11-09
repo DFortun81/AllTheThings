@@ -996,6 +996,7 @@ local CompanionPetSpeciesIDToSpellID = {
 	[4236] = 407786,	-- Glub
 	[4233] = 359755,	-- Flurky
 	[4329] = 428053,	-- Arfus
+	[4274] = 423868,	-- Lil' Wrathion
 };
 for key,value in pairs(CompanionPetSpeciesIDToSpellID) do
 	if CompanionPetSpellIDToSpeciesID[value] then
@@ -1042,6 +1043,7 @@ i(200060, 4235);	-- Hoplet
 i(204982, 4236);	-- Glub
 i(187794, 4233);	-- Flurky
 i(211082, 4329);	-- Arfus (WOTLK)
+i(209945, 4274);	-- Lil' Wrathion (WOTLK)
 
 -----------------
 --   CLASSIC   --
