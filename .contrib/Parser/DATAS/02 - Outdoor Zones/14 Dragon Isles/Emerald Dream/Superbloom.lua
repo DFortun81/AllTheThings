@@ -152,7 +152,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 			q(78871),	-- 'Superbloom: Step 8'
 			q(78892),	-- 'Superbloom: Step 9'
 			-- spells for achievement Fruit of the Bloom ach(19310)
-			q(78751),	-- Arachnid Annihilation (spellId 428203)
+			q(78751),	-- Arachnid Annihilation (spellID 428203)
 			q(78487),	-- Basket of Explosive Acorns (spellID 424568)
 			q(78488),	-- Bubble Blowgun (spellID 414636)
 			q(78482),	-- Dream Gatherer (spellID 418100)

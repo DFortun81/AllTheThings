@@ -4,16 +4,6 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(EMERALD_DREAM, {
 		n(ZONE_DROPS, {
-			i(201437),	-- Slumbering Dream Fragment
-			i(201439, {	-- Renewed Dream
-				["cost"] = {{"i",201437,5}},	-- 5x Slumbering Dream Fragment
-				["g"] = {
-					i(201469),	-- Emerald Green Apple
-					i(207779),	-- Grotto Netherwing Drake: Barbed Tail (DM!)
-					i(207771),	-- Grotto Netherwing Drake: Short Horns (DM!)
-					i(207766),	-- Grotto Netherwing Drake: Triple Spiked Crest (DM!)
-				},
-			}),
 			n(BACK, {
 				i(210133),	-- Harvest Guardian Cloak
 				i(210134),	-- Wind Wolf Shroud
@@ -27,6 +17,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				i(210103),	-- Maple Tender Sash
 				i(210118),	-- Maple Tender Slippers
 				i(210106),	-- Maple Tender Wristbands
+			}),
+			n(DRAKE_MANUSCRIPTS, {
+				i(207779),	-- Grotto Netherwing Drake: Barbed Tail (DM!)
+				i(207771),	-- Grotto Netherwing Drake: Short Horns (DM!)
+				i(207766),	-- Grotto Netherwing Drake: Triple Spiked Crest (DM!)
 			}),
 			filter(FINGER_F, {
 				i(208350),	-- Ochre Field Signet

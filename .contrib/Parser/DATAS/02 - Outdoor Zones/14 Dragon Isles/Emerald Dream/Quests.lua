@@ -1048,6 +1048,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78856),	-- unlock ability to buy Memorie (i: 210567) (require: Fol'ya Pup (any other pet with same model?)) (spellID 429068)
 		q(78858),	-- unlock ability to buy Reverie (i: 210505) (require: Pilot (any other pet with same model)) (spellID 429055 / 429053)
 		q(78853),	-- unlock ability to buy Snorr (i: 210785) (require: Axel (any other pet with same model?)) (spellID xx)
+		q(78886),	-- unlock ability to buy Somnolet (i: 210652) (require: Dustie) (spellID 426355)
 		q(78857),	-- unlock ability to buy Somnolet (i: 210652) (require: Seedle (any other pet with same model?)) (spellID 429070)
 		--
 		q(78977),	-- pop after finishing qID 78890 (Emerald Frenzy) first time (daily), seems like it is fired when give you reward

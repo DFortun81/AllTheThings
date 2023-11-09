@@ -631,7 +631,6 @@ root(ROOTS.Unsorted, {
 				q(76541),	--
 				q(76542),	--
 				q(76543),	--
-				q(76573),	--
 				q(77101),	-- PTR:Ingredient Quest Template
 				q(77156),	-- PTR:Botanical Redistribution
 				q(77161),	--
@@ -703,7 +702,6 @@ root(ROOTS.Unsorted, {
 				q(77828),	--
 				q(77832),	-- PTR:Shadows upon shadows
 				q(77847),	--
-				q(77855),	--
 				q(77859),	--
 				q(77917),	--
 				q(77918),	--
@@ -785,7 +783,6 @@ root(ROOTS.Unsorted, {
 				q(78454),	-- PTR:Dragonblight Dragon Flight
 				q(78455),	-- PTR:Dragonblight Dragon Flight - Advanced
 				q(78456),	-- PTR:Dragonblight Dragon Flight - Reverese
-				q(78494),	--
 				q(78499),	-- PTR:Citadel Sortie
 				q(78500),	-- PTR:Citadel Sortie - Advanced
 				q(78501),	-- PTR:Citadel Sortie - Reverse
@@ -831,18 +828,14 @@ root(ROOTS.Unsorted, {
 				q(78678),	--
 				-- 10.2.0.51521
 				q(78708),	--
-				q(78709),	--
 				q(78710),	--
 				q(78711),	--
 				q(78712),	--
 				q(78720),	--
-				q(78723),	--
 				q(78725),	--
-				q(78730),	--
 				q(78731),	--
 				q(78732),	--
 				q(78737),	--
-				q(78751),	--
 				q(78763),	-- PTR:Dragonflight (70) E
 				q(78789),	--
 				q(78822),	--
@@ -863,7 +856,6 @@ root(ROOTS.Unsorted, {
 				q(78883),	--
 				q(78884),	--
 				q(78885),	--
-				q(78886),	--
 				q(78887),	--
 				q(78888),	--
 				q(78889),	--
