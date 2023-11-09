@@ -7936,7 +7936,7 @@ local function BuildTextFromNPCIDs(t, npcIDs)
 			end
 		end
 	end
-	if retry then return RETRIEVING_DATA; end
+	if retry then return end
 	name = table.concat(textTbl);
 	t.name = name;
 	return name;
@@ -8609,7 +8609,7 @@ local fields = {
 		end
 	end,
 	["text"] = function(t)
-		if not t.artifactinfo then return RETRIEVING_DATA; end
+		if not t.artifactinfo then return end
 		local id = t.parent;
 		id = id and id.headerID;
 		-- Artifact listing in the Main item sets category just show 'Variant #' but elsewhere show the Item's name
@@ -11291,7 +11291,7 @@ itemTooltipHarvesterFields.text = function(t)
 							t.info.retries = (t.info.retries or 0) + 1;
 							-- 30 attempts to load the sub-item, otherwise just continue parsing tooltip without it
 							if t.info.retries < 30 then
-								return RETRIEVING_DATA;
+								return
 							end
 							app.PrintDebug("Failed loading sub-item for",t.info.itemID)
 						end
