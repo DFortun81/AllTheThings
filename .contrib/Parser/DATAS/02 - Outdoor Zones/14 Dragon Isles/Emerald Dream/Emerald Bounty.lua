@@ -154,17 +154,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sym"] = {
 						{"select", "npcID", 211265 },	-- Sylvia Whisperbloom
 						{"pop"},
-						{"where", "filterID", MISC },
+						{"where", "filterID", MOUNTS },
 						{"pop"},
-					},
-					["g"] = {
-						i(209947),	-- Blossoming Dreamstag (MOUNT!)
-						i(210058),	-- Evening Sun Dreamsaber (MOUNT!)
-						i(207764),	-- Grotto Netherwing Drake: Head Spike (DM!)
-						i(210057),	-- Morning Flourish Dreamsaber (MOUNT!)
-						i(209950),	-- Rekindled Dreamstag (MOUNT!)
-						i(210775),	-- Snowfluff Dreamtalon (MOUNT!)
-						i(210769),	-- Springtide Dreamtalon (MOUNT!)
 					},
 				}),
 				i(210218, {	-- Plump Dreamy Bounty
@@ -246,6 +237,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 							i(211081),	-- Mark of the Auroral Dreamtalon (CI!)
 							i(210739),	-- Mark of the Snowy Umbraclaw (CI!)
 						}),
+						filter(MOUNTS, {
+							i(209947),	-- Blossoming Dreamstag (MOUNT!)
+							i(210058),	-- Evening Sun Dreamsaber (MOUNT!)
+							i(207764),	-- Grotto Netherwing Drake: Head Spike (DM!)
+							i(210057),	-- Morning Flourish Dreamsaber (MOUNT!)
+							i(209950),	-- Rekindled Dreamstag (MOUNT!)
+							i(210775),	-- Snowfluff Dreamtalon (MOUNT!)
+							i(210769),	-- Springtide Dreamtalon (MOUNT!)
+						}),
 						filter(PLATE, {
 							i(209989),	-- Overgrown Freyan Boots
 							i(209994),	-- Overgrown Freyan Girdle
@@ -279,10 +279,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	m(EMERALD_DREAM, {
 		--I hate it >_<
-		--...78975 is currently pop when looting cache in addition to loot hqt, only if 'bloom effect' (80+) happen.
-		--as of 18.10 contrib into other player plant fire as regular self planting.
-		--could be two different qid for hitting 80/100 for blue and purple seed.
+		--...78975 is currently pop when looting cache in addition to loot hqt
 		q(78975),	-- any plant cache that was looted after blooming (purple seed), daily/weekly?
+		--as of 18.10 contrib into other player plant fire as regular self planting.
+		--
+		--Blizzard Dreamseed Hotfixes - Big Bonus for First 5 A Week
+		--q(79306),	-- ?
+		--q(79305),	-- ?
+		--q(),
+		--q(),
+		--q(),
+		--
 		--1 - Ageless Blossom
 		--q(),	-- plant green seed
 		--q(),	-- plant blue seed
