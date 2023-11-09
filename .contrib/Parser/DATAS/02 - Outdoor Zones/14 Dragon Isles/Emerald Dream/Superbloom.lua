@@ -147,7 +147,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		header(HEADERS.Quest, 78203, {	-- Superbloom
 			q(78203),	-- Superbloom
 			--
-			q(73817),	-- after Superbloom end (weekly lockout)?
 			--q(78553),	-- Marikke (n: 207543) lockout (as last notes stay, should be another npc here now?)
 			q(78502),	-- pop with delay after new rare was killed and event 'end' / 'Sprouting Dreamtrove'?
 			--q(78554),	-- on 2nd kill with rare state of event - was looted small dreamseed
