@@ -702,7 +702,6 @@ root(ROOTS.Unsorted, {
 				q(77828),	--
 				q(77832),	-- PTR:Shadows upon shadows
 				q(77847),	--
-				q(77859),	--
 				q(77917),	--
 				q(77918),	--
 				q(77925),	--
