@@ -17945,8 +17945,8 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				for _,group in ipairs(results) do
 					-- do not use any raw Source groups in the final list
 					group = CreateObject(group);
-					-- Instance/Map/Class groups are allowed as root of minilist
-					if (group.instanceID or (group.mapID and (group.key == "mapID" or (group.key == "headerID" and group.mapID < 0 and group.mapID == self.mapID))) or group.key == "classID")
+					-- Instance/Map/Class/Header(of current map) groups are allowed as root of minilist
+					if (group.instanceID or (group.mapID and (group.key == "mapID" or (group.key == "headerID" and group.mapID == self.mapID))) or group.key == "classID")
 						-- and actually match this minilist...
 						-- only if this group mapID matches the minilist mapID directly or by maps
 						and (group.mapID == self.mapID or (group.maps and contains(group.maps, self.mapID))) then
