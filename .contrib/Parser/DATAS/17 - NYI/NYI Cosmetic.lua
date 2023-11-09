@@ -252,8 +252,6 @@ root(ROOTS.NeverImplemented, {
 		tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				------ Random ------
 			i(210666),	-- Crest of the Seething Flamekeeper
-			i(210664),	-- Frost Sapling's Adornment
-			i(210662),	-- Ochre Ornament of the Grove
 			i(208199),	-- Tabard of the Tyr's Guard [From Tyr Part 4?]
 			i(210433),	-- Visage of Aurostor [From World Boss?]
 

@@ -48,6 +48,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					filter(COSMETIC, {
 						i(210663),	-- Circlet of the Mother Tree
 						i(210661),	-- Dreamcatcher's Crescent
+						i(210664),	-- Frost Sapling's Adornment
+						i(210662),	-- Ochre Ornament of the Grove
 					}),
 					n(DRAKE_MANUSCRIPTS, {
 						i(207762),	-- Grotto Netherwing Drake: Chin Spike (DM!)
