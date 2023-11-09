@@ -1250,13 +1250,6 @@ root(ROOTS.Zones, {
 							{ 36.7, 84.0, TIMELESS_ISLE },
 						},
 						["g"] = {
-							i(104264, {	-- Meaty Crane Leg
-								["description"] = "Can be turned in to Great Chef Woo for 20 Timeless Isle coins.",
-								["repeatable"] = true,
-								["questID"] = 33234,	-- Meaty Crane Leg
-								["coord"] = { 41.8, 63.7, TIMELESS_ISLE },
-								["provider"] = { "n", 73657 },	-- Great Chef Woo
-							}),
 							i(104287),	-- Windfeather Plume
 						},
 					}),
