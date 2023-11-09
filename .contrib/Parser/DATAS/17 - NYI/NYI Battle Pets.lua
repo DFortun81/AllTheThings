@@ -1292,9 +1292,6 @@ root(ROOTS.NeverImplemented, {
 					["modelID"] = 105429,
 				}),
 				-- With SpeciesID Attached
-				i(190176, {	-- Drazka'zet the Wrathful (PET!)
-					["modelID"] = 105301,
-				}),
 				i(190173, {	-- Lil' Maka'jin (PET!)
 					["modelID"] = 83638,
 				}),

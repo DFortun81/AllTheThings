@@ -398,7 +398,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Blazing Heroic Edition.",
 			["g"] = {
-				-- mount(),	-- Runebound Firelord (MOUNT!)
+				mount(424009),	-- Runebound Firelord (MOUNT!)
 				-- pet(),	-- Lil’ Wrathion (PET!)
 			},
 		}),

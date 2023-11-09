@@ -129,7 +129,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 			filter(BATTLE_PETS, {
-				i(190176, {	-- Drazka’zet the Wrathful
+				i(190176, {	-- Drazka'zet the Wrathful
 					["cost"] = { { "c", TRADERS_TENDER, 650 }, },
 				}),
 			}),
@@ -1052,7 +1052,7 @@ root(ROOTS.NeverImplemented, {
 
 
 				-- Gloves
-				
+
 				-- Head
 
 				-- Weapons
