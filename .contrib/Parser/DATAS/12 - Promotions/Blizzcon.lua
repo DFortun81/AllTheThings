@@ -20,7 +20,7 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	}),
 
 	ach(412, {	-- Blizzcon 2007 - Murloc Costume
-		["provider"] = { "i", 20371 },	-- Murloc Costume (TOY!)
+		["provider"] = { "i", 33079 },	-- Murloc Costume (TOY!)
 		["timeline"] = { "added 3.0.1" },
 	}),
 	i(33079, {	-- Murloc Costume (TOY!)
