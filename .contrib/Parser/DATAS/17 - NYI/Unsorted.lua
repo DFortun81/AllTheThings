@@ -733,7 +733,6 @@ root(ROOTS.Unsorted, {
 				q(78253),	--
 				q(78259),	--
 				q(78268),	-- PTR:[DNT] Test Quest
-				q(78286),	--
 				q(78301),	-- PTR:Skalawag Slither
 				q(78302),	-- PTR:Skalawag Slither - Advanced
 				q(78303),	-- PTR:Skalawag Slither - Reverse
@@ -821,7 +820,6 @@ root(ROOTS.Unsorted, {
 				q(78617),	--
 				q(78622),	--
 				q(78623),	--
-				q(78625),	--
 				q(78644),	--
 				q(78660),	--
 				q(78677),	--

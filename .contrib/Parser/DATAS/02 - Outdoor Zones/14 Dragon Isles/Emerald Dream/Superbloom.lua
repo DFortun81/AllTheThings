@@ -43,6 +43,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						i(207767),	-- Grotto Netherwing Drake: Tempestuous Pattern (DM!)
 						i(197371),	-- Renewed Proto-Drake: Green Hair (DN!)
 						i(203340),	-- Winding Slitherdrake: Cluster Jaw Horns (DM!)
+						i(203329),	-- Winding Slitherdrake: Heavy Horns (DM!)
 					}),
 					i(211411),	-- Sprouting Dreamtrove
 					filter(COSMETIC, {
@@ -146,6 +147,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		header(HEADERS.Quest, 78203, {	-- Superbloom
 			q(78203),	-- Superbloom
 			--
+			q(73817),	-- after Superbloom end (weekly lockout)?
 			--q(78553),	-- Marikke (n: 207543) lockout (as last notes stay, should be another npc here now?)
 			q(78502),	-- pop with delay after new rare was killed and event 'end' / 'Sprouting Dreamtrove'?
 			--q(78554),	-- on 2nd kill with rare state of event - was looted small dreamseed

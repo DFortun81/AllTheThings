@@ -283,9 +283,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78975),	-- any plant cache that was looted after blooming (purple seed), daily/weekly?
 		--as of 18.10 contrib into other player plant fire as regular self planting.
 		--
-		--Blizzard Dreamseed Hotfixes - Big Bonus for First 5 A Week
-		--q(79306),	-- ?
-		--q(79305),	-- ?
+		q(79306),	-- after 1st seed/plant?
+		q(79305),	-- after turn in 78821/seedbloom reward lockout?
 		--q(),
 		--q(),
 		--q(),

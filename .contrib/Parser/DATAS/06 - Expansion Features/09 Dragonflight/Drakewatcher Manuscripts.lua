@@ -1011,7 +1011,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["timeline"] = { CREATED_10_1_0 },
 		}, {
 			i(203319),	-- Winding Slitherdrake: Finned Cheek
-			i(203329),	-- Winding Slitherdrake: Heavy Horns
 			i(203301),	-- Winding Slitherdrake: Light Blue and Copper Armor
 			i(203302),	-- Winding Slitherdrake: Purple and Silver Armor
 			i(203333),	-- Winding Slitherdrake: Short Horns
@@ -1130,6 +1129,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			pvp(i(210064)),	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator (DM!)
 			i(203311),	-- Winding Slitherdrake: Hairy Chin (DM!)
 			i(203343),	-- Winding Slitherdrake: Hairy Jaw (DM!)
+			i(203329),	-- Winding Slitherdrake: Heavy Horns (DM!)
 			i(203360),	-- Winding Slitherdrake: Large Finned Tail (DM!)
 			i(203344),	-- Winding Slitherdrake: Single Jaw Horn (DM!)
 			i(203315),	-- Winding Slitherdrake: Small Spiked Crest (DM!)

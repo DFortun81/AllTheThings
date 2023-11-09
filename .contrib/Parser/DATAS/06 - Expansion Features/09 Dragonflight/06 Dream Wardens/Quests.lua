@@ -95,8 +95,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 
 root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 	n(DREAM_WARDENS, {
-		--q(78286),	-- Pop after turn in questID 78444 (first time)
-		--q(78625),	-- Pop after turn in questID 78444 (first time)
+		q(78286),	-- Pop after turn in questID 78444 (first time)
+		q(78625),	-- Pop after turn in questID 78444 (first time)
 		--
 		q(76573),	-- Pop right after renown 4 was reached (Blooming Proficiency I) (spellIDs 427685 & 425375)
 		q(78709),	-- Pop right after renown 5 was reached (Infusion Unlock Tracking) (spellID 427978)
