@@ -37,7 +37,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(209929, {	-- Envoy of Winter
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
-				["questID"] = 77878, -- bonus objective qID
 				["coord"] = { 34.5, 63.2, EMERALD_DREAM },
 				["g"] = {
 					i(208332),	-- Horns of the Envoy
@@ -46,16 +45,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						i(209948),	-- Spring's Keeper
 					}),
 					i(208881),	-- Shiversnap Blossom (QI!)
+					bo(77878),	-- Envoy of Winter bonus objective
 				},
 			}),
 			n(209893, {	-- Firebrand Fystia
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
-				["questID"] = 78015,	-- bonus objective qID
 				["coord"] = { 30.0, 20.7, EMERALD_DREAM },
 				["g"] = {
 					i(208371),	-- Fire Assassin's Boots
 					i(208328),	-- Fystia's Deft Hands
 					i(209881),	-- Fystia's Fiery Kris
+					bo(78015),	-- Firebrand Fystia bonus objective
 				},
 			}),
 			n(209913, {	-- Fruitface
@@ -79,10 +79,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(209936, {	-- Greedy Gessie
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
-				["questID"] = 77982, -- bonus objective qID
 				["coord"] = { 53.8, 40.7, EMERALD_DREAM },
 				["g"] = {
 					i(208355),	-- String of Delicacies
+					bo(77982),	-- Greedy Gessie bonus objective
 				},
 			}),
 			n(210075, {	-- Henri Snufftail
@@ -169,16 +169,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(209113, {	-- Nouberon
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
-				["questID"] = 77570, -- bonus objective qID
 				["coord"] = { 61.0, 70.3, EMERALD_DREAM },
+				["g"] = {
+					bo(77570),	-- Nouberon bonus objective
+				},
+			}),
+			n(209912, {	-- Raszageth's Last Breath
+				["description"] = "Finish bonus objective in marked area to make him spawn.",
+				["coords"] = {
+					{ 26.3, 28.5, EMERALD_DREAM },
+					--{ 65.4, 43.5, EMERALD_DREAM },
+					--{ 67.5, 66.2, EMERALD_DREAM },
+					--{ 41.5, 31.1, EMERALD_DREAM },
+				},
+				["g"] = {
+					bo(77859),	-- Raszageth's Last Breath bonus objective
+				},
 			}),
 			n(209898, {	-- Reefbreaker Moruud
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
-				["questID"] = 77867, -- bonus objective qID
 				["coord"] = { 65.0, 84.2, EMERALD_DREAM },
 				["g"] = {
 					i(208327),	-- Maruud's Piercing Hands
 					i(209882),	-- Maruud's Undertow
+					bo(77867),	-- Reefbreaker Moruud bonus objective
 				},
 			}),
 			n(210161, {	-- Ristar, the Rabid
@@ -228,13 +242,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			n(209902, {	-- Talthonel Ashwhisper
-				--["description"] = "Unsure what trigger this rare to spawn, killing druids of flames (rootsear defiler?) may be?",
+				["description"] = "Killing druids of flames can make her spawn in area where they are persist.",
 				["questID"] = 77994,
 				["coords"] = {
 					{ 61.5, 67.5, EMERALD_DREAM },
 					{ 59.2, 43.7, EMERALD_DREAM },
 					{ 62.8, 52.1, EMERALD_DREAM },
 					{ 63.8, 69.9, EMERALD_DREAM },
+					{ 35.1, 22.6, EMERALD_DREAM },
+					{ 36.9, 22.4, EMERALD_DREAM },
 				},
 				["g"] = {
 					i(208369),	-- Druid's Vengeful Gaze
@@ -257,15 +273,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208354),	-- Cerulean Turtle's Pendant
 				},
 			}),
-			--[[ removed?
-			n(209912, {	-- Raszageth's Last Breath
-				["questID"] = 77859,
-				["coords"] = {
-					{ 65.4, 43.5, EMERALD_DREAM },
-					{ 67.5, 66.2, EMERALD_DREAM },
-					{ 41.5, 31.1, EMERALD_DREAM },
-				},
-			}),]]--
 		})),
 	}),
 })));

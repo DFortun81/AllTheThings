@@ -7,6 +7,7 @@ EMERALD_BOUNTY = createHeader({
 	icon = "464030",
 	text = {
 		en = "Emerald Bounty",
+		ru = "Изумрудный дар",
 	},
 });
 

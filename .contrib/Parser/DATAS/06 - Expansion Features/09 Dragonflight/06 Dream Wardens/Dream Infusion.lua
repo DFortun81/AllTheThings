@@ -7,6 +7,7 @@ DREAM_INFUSION = createHeader({
 	icon = "1394953",
 	text = {
 		en = "Dream Infusion",
+		ru = "Настой Сна",
 	},
 });
 root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
