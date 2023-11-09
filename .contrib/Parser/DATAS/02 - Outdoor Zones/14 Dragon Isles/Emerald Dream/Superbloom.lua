@@ -47,6 +47,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(211411),	-- Sprouting Dreamtrove
 					filter(COSMETIC, {
 						i(210663),	-- Circlet of the Mother Tree
+						i(210666),	-- Crest of the Seething Flamekeeper
 						i(210661),	-- Dreamcatcher's Crescent
 						i(210664),	-- Frost Sapling's Adornment
 						i(210662),	-- Ochre Ornament of the Grove

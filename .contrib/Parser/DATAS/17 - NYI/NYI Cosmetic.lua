@@ -251,7 +251,6 @@ root(ROOTS.NeverImplemented, {
 		-- 10.2.0
 		tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				------ Random ------
-			i(210666),	-- Crest of the Seething Flamekeeper
 			i(208199),	-- Tabard of the Tyr's Guard [From Tyr Part 4?]
 			i(210433),	-- Visage of Aurostor [From World Boss?]
 
