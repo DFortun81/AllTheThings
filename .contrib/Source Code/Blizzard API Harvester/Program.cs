@@ -118,14 +118,6 @@ namespace ATT
             // pre-determine which IDs will exist in the API for each type
             //DetermineAvailableIDs();
 
-            // start thread for simply writing data
-            Thread threadDataWriter = new Thread(SaveFiles)
-            {
-                IsBackground = true,
-                Name = "DataWriter.Thread",
-            };
-            threadDataWriter.Start();
-
             // start thread for sending API requests
             Thread threadAPISender = new Thread(SendAPIRequests)
             {
@@ -142,6 +134,17 @@ namespace ATT
             };
             threadAPIReceiver.Start();
 
+            // start thread for simply writing data
+            Thread threadDataWriter = new Thread(SaveFiles)
+            {
+                IsBackground = true,
+                Name = "DataWriter.Thread",
+            };
+            threadDataWriter.Start();
+
+            // ensure that both API receiver and data writer threads were created before continuing, otherwise can get stuck
+            while (!WaitForData || !WaitForAPI || !WaitForRequests) { Thread.Sleep(50); }
+
             if (ProcessObjects[ObjType.item] && parseOnlyDate == null)
             {
                 InitItems();
@@ -151,7 +154,7 @@ namespace ATT
             }
 
             // dont switch to quest harvest until items are done
-            while (APIResults.Count > 0 || DataResults.Count > 0) { Thread.Sleep(50); }
+            while (APIRequests.Count > 0 || APIResults.Count > 0 || DataResults.Count > 0) { Thread.Sleep(50); }
 
             if (ProcessObjects[ObjType.quest] && parseOnlyDate == null)
             {
@@ -161,14 +164,14 @@ namespace ATT
                 HarvestQuests();
             }
 
-            // ensure that both API receiver and data writer threads were created before continuing, otherwise can get stuck
-            while (!WaitForData || !WaitForAPI || !WaitForRequests) { Thread.Sleep(50); }
+            // wait for all queues to clear
+            while (APIRequests.Count > 0 || APIResults.Count > 0 || DataResults.Count > 0) { Thread.Sleep(50); }
 
-            // stop waiting to capture API results
-            WaitForAPI = false;
+            // stop waiting to send API requests
+            WaitForRequests = false;
 
-            // parse any RAW files once completed
-            while (WaitForData || DataResults.Count > 0) { Thread.Sleep(50); }
+            // make sure threads are done
+            while (WaitForData || WaitForAPI || WaitForRequests) { Thread.Sleep(50); }
 
             if (!string.IsNullOrEmpty(Error))
             {
