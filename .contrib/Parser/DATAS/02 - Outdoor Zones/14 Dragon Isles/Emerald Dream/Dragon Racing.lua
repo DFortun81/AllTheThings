@@ -314,45 +314,45 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					ach(19122, {	-- Emerald Dream Challenge: Silver
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
-							19058,	-- Canopy Concours Challenge: Silver
-							19073,	-- Emerald Amble Challenge: Silver
-							19043,	-- Shoreline Switchback Challenge: Silver
-							18989,	-- Smoldering Sprint Challenge: Silver
-							19004,	-- Viridescent Venture Challenge: Silver
-							18954,	-- Ysera Invitational Challenge: Silver
+							19057,	-- Canopy Concours Challenge: Silver
+							19072,	-- Emerald Amble Challenge: Silver
+							19042,	-- Shoreline Switchback Challenge: Silver
+							18988,	-- Smoldering Sprint Challenge: Silver
+							19003,	-- Viridescent Venture Challenge: Silver
+							18953,	-- Ysera Invitational Challenge: Silver
 						}},
 					}),
 					ach(19123, {	-- Emerald Dream Challenge: Gold
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
-							19060,	-- Canopy Concours Challenge: Gold
-							19075,	-- Emerald Amble Challenge: Gold
-							19045,	-- Shoreline Switchback Challenge: Gold
-							18991,	-- Smoldering Sprint Challenge: Gold
-							19006,	-- Viridescent Venture Challenge: Gold
-							18956,	-- Ysera Invitational Challenge: Gold
+							19058,	-- Canopy Concours Challenge: Gold
+							19073,	-- Emerald Amble Challenge: Gold
+							19043,	-- Shoreline Switchback Challenge: Gold
+							18989,	-- Smoldering Sprint Challenge: Gold
+							19004,	-- Viridescent Venture Challenge: Gold
+							18954,	-- Ysera Invitational Challenge: Gold
 						}},
 					}),
 					ach(19124, {	-- Emerald Dream Reverse Challenge: Bronze
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
-							19057,	-- Canopy Concours Reverse Challenge: Bronze
-							19072,	-- Emerald Amble Reverse Challenge: Bronze
-							19042,	-- Shoreline Switchback Reverse Challenge: Bronze
-							18988,	-- Smoldering Sprint Reverse Challenge: Bronze
-							19003,	-- Viridescent Venture Reverse Challenge: Bronze
-							18953,	-- Ysera Invitational Reverse Challenge: Bronze
+							19059,	-- Canopy Concours Reverse Challenge: Bronze
+							19074,	-- Emerald Amble Reverse Challenge: Bronze
+							19044,	-- Shoreline Switchback Reverse Challenge: Bronze
+							18990,	-- Smoldering Sprint Reverse Challenge: Bronze
+							19005,	-- Viridescent Venture Reverse Challenge: Bronze
+							18955,	-- Ysera Invitational Reverse Challenge: Bronze
 						}},
 					}),
 					ach(19125, {	-- Emerald Dream Reverse Challenge: Silver
 						-- Meta Achievement
 						["sym"] = {{"meta_achievement",
-							19059,	-- Canopy Concours Reverse Challenge: Silver
-							19074,	-- Emerald Amble Reverse Challenge: Silver
-							19044,	-- Shoreline Switchback Reverse Challenge: Silver
-							18990,	-- Smoldering Sprint Reverse Challenge: Silver
-							19005,	-- Viridescent Venture Reverse Challenge: Silver
-							18955,	-- Ysera Invitational Reverse Challenge: Silver
+							19060,	-- Canopy Concours Reverse Challenge: Silver
+							19075,	-- Emerald Amble Challenge: Silver
+							19045,	-- Shoreline Switchback Challenge: Silver
+							18991,	-- Smoldering Sprint Challenge: Silver
+							19006,	-- Viridescent Venture Challenge: Silver
+							18956,	-- Ysera Invitational Challenge: Silver
 						}},
 					}),
 					ach(19126, {	-- Emerald Dream Reverse Challenge: Gold
@@ -397,16 +397,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						--["coord"] = {  },
 						["g"] = {
 							ach(19056),	-- Canopy Concours Challenge: Bronze
-							ach(19058),	-- Canopy Concours Challenge: Silver
-							ach(19060),	-- Canopy Concours Challenge: Gold
+							ach(19057),	-- Canopy Concours Challenge: Silver
+							ach(19058),	-- Canopy Concours Challenge: Gold
 						},
 					}),
 					dragonridingrace(78106, {	-- Canopy Concours - Reverse Challenge
 						["provider"] = { "n", 202749 },	-- Bronze Timekeeper
 						--["coord"] = {  },
 						["g"] = {
-							ach(19057),	-- Canopy Concours Reverse Challenge: Bronze
-							ach(19059),	-- Canopy Concours Reverse Challenge: Silver
+							ach(19059),	-- Canopy Concours Reverse Challenge: Bronze
+							ach(19060),	-- Canopy Concours Reverse Challenge: Silver
 							ach(19061),	-- Canopy Concours Reverse Challenge: Gold
 						},
 					}),
@@ -415,16 +415,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						--["coord"] = {  },
 						["g"] = {
 							ach(19071),	-- Emerald Amble Challenge: Bronze
-							ach(19073),	-- Emerald Amble Challenge: Silver
-							ach(19075),	-- Emerald Amble Challenge: Gold
+							ach(19072),	-- Emerald Amble Challenge: Silver
+							ach(19073),	-- Emerald Amble Challenge: Gold
 						},
 					}),
 					dragonridingrace(78119, {	-- Emerald Amble - Reverse Challenge
 						["provider"] = { "n", 202676 },	-- Bronze Timekeeper
 						--["coord"] = {  },
 						["g"] = {
-							ach(19072),	-- Emerald Amble Reverse Challenge: Bronze
-							ach(19074),	-- Emerald Amble Reverse Challenge: Silver
+							ach(19074),	-- Emerald Amble Reverse Challenge: Bronze
+							ach(19075),	-- Emerald Amble Reverse Challenge: Silver
 							ach(19076),	-- Emerald Amble Reverse Challenge: Gold
 						},
 					}),
@@ -433,16 +433,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						--["coord"] = {  },
 						["g"] = {
 							ach(19041),	-- Shoreline Switchback Challenge: Bronze
-							ach(19043),	-- Shoreline Switchback Challenge: Silver
-							ach(19045),	-- Shoreline Switchback Challenge: Gold
+							ach(19042),	-- Shoreline Switchback Challenge: Silver
+							ach(19043),	-- Shoreline Switchback Challenge: Gold
 						},
 					}),
 					dragonridingrace(78020, {	-- Shoreline Switchback - Reverse Challenge
 						["provider"] = { "n", 202524 },	-- Bronze Timekeeper
 						--["coord"] = {  },
 						["g"] = {
-							ach(19042),	-- Shoreline Switchback Reverse Challenge: Bronze
-							ach(19044),	-- Shoreline Switchback Reverse Challenge: Silver
+							ach(19044),	-- Shoreline Switchback Reverse Challenge: Bronze
+							ach(19045),	-- Shoreline Switchback Reverse Challenge: Silver
 							ach(19046),	-- Shoreline Switchback Reverse Challenge: Gold
 						},
 					}),
@@ -451,16 +451,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						--["coord"] = {  },
 						["g"] = {
 							ach(19002),	-- Viridescent Venture Challenge: Bronze
-							ach(19004),	-- Viridescent Venture Challenge: Silver
-							ach(19006),	-- Viridescent Venture Challenge: Gold
+							ach(19003),	-- Viridescent Venture Challenge: Silver
+							ach(19004),	-- Viridescent Venture Challenge: Gold
 						},
 					}),
 					dragonridingrace(77987, {	-- Viridescent Venture - Reverse Challenge
 						["provider"] = { "n", 202795 },	-- Bronze Timekeeper
 						--["coord"] = {  },
 						["g"] = {
-							ach(19003),	-- Viridescent Venture Reverse Challenge: Bronze
-							ach(19005),	-- Viridescent Venture Reverse Challenge: Silver
+							ach(19005),	-- Viridescent Venture Reverse Challenge: Bronze
+							ach(19006),	-- Viridescent Venture Reverse Challenge: Silver
 							ach(19007),	-- Viridescent Venture Reverse Challenge: Gold
 						},
 					}),
@@ -469,16 +469,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						--["coord"] = {  },
 						["g"] = {
 							ach(18987),	-- Smoldering Sprint Challenge: Bronze
-							ach(18989),	-- Smoldering Sprint Challenge: Silver
-							ach(18991),	-- Smoldering Sprint Challenge: Gold
+							ach(18988),	-- Smoldering Sprint Challenge: Silver
+							ach(18989),	-- Smoldering Sprint Challenge: Gold
 						},
 					}),
 					dragonridingrace(78000, {	-- Smoldering Sprint - Reverse Challenge
 						["provider"] = { "n", 202772 },	-- Bronze Timekeeper
 						--["coord"] = {  },
 						["g"] = {
-							ach(18988),	-- Smoldering Sprint Reverse Challenge: Bronze
-							ach(18990),	-- Smoldering Sprint Reverse Challenge: Silver
+							ach(18990),	-- Smoldering Sprint Reverse Challenge: Bronze
+							ach(18991),	-- Smoldering Sprint Reverse Challenge: Silver
 							ach(18992),	-- Smoldering Sprint Reverse Challenge: Gold
 						},
 					}),
@@ -487,16 +487,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						--["coord"] = {  },
 						["g"] = {
 							ach(18952),	-- Ysera Invitational Challenge: Bronze
-							ach(18954),	-- Ysera Invitational Challenge: Silver
-							ach(18956),	-- Ysera Invitational Challenge: Gold
+							ach(18953),	-- Ysera Invitational Challenge: Silver
+							ach(18954),	-- Ysera Invitational Challenge: Gold
 						},
 					}),
 					dragonridingrace(77845, {	-- Ysera Invitational - Reverse Challenge
 						["provider"] = { "n", 202973 },	-- Bronze Timekeeper
 						--["coord"] = {  },
 						["g"] = {
-							ach(18953),	-- Ysera Invitational Reverse Challenge: Bronze
-							ach(18955),	-- Ysera Invitational Reverse Challenge: Silver
+							ach(18955),	-- Ysera Invitational Reverse Challenge: Bronze
+							ach(18956),	-- Ysera Invitational Reverse Challenge: Silver
 							ach(18957),	-- Ysera Invitational Reverse Challenge: Gold
 						},
 					}),
