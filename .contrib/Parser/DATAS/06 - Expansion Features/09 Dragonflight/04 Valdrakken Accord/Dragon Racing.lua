@@ -61,6 +61,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(210549,	-- Dream Racer's Purse
 					bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 						i(207765),	-- Grotto Netherwing Drake: Cluster Spiked Crest (DM!)
+						i(207758),	-- Grotto Netherwing Drake: Spiked Back (DM!)
 						i(207768),	-- Grotto Netherwing Drake: Volatile Pattern (DM!)
 						i(203343),	-- Winding Slitherdrake: Hairy Jaw (DM!) (discord report from user dumbomb in #error)
 						i(203360),	-- Winding Slitherdrake: Large Finned Tail (DM!) (discord report from user nohh in #error)

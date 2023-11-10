@@ -785,7 +785,6 @@ root(ROOTS.Unsorted, {
 				q(78500),	-- PTR:Citadel Sortie - Advanced
 				q(78501),	-- PTR:Citadel Sortie - Reverse
 				q(78504),	-- PTR:A Gently Shaken Gift
-				q(78553),	--
 				q(78554),	--
 				q(78558),	-- PTR:Sholazar Spree
 				q(78559),	-- PTR:Sholazar Spree - Advanced

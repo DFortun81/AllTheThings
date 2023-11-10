@@ -135,20 +135,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 77872,
 				["coord"] = { 34.1, 56.4, EMERALD_DREAM },
 				["g"] = {
-					n(210060, {	-- Triflesnatcher
-						["description"] = "1st owl",
-						["questID"] = 77855,	-- (Not in ATT?)
+					q(77855, {	-- Triflesnatcher
+						["name"] = "First owl",
+						["provider"] = { "n", 210060 },
 						["coord"] = { 39.7, 52.1, EMERALD_DREAM },
 					}),
-					n(210081, {	-- Triflesnatcher
-						["description"] = "2nd owl",
-						["questID"] = 77857,
+					q(77857, {	-- Triflesnatcher
+						["name"] = "Second owl",
+						["provider"] = { "n", 210081 },
 						["coord"] = { 42.2, 56.2, EMERALD_DREAM },
+						["sourceQuest"] = 77855,	-- First owk
 					}),
-					n(210060, {	-- Triflesnatcher
-						["description"] = "3rd owl",
-						["questID"] = 77860,
+					q(77860, {	-- Triflesnatcher
+						["name"] = "Third owl",
+						["provider"] = { "n", 210060 },
 						["coord"] = { 41.7, 62.5, EMERALD_DREAM },
+						["sourceQuest"] = 77857,	-- Second owl
 					}),
 				},
 			}),

@@ -147,8 +147,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		header(HEADERS.Quest, 78203, {	-- Superbloom
 			q(78203),	-- Superbloom
 			--
-			--q(78553),	-- Marikke (n: 207543) lockout (as last notes stay, should be another npc here now?)
 			q(78502),	-- pop with delay after new rare was killed and event 'end' / 'Sprouting Dreamtrove'?
+			q(78553),	-- pop if you loot any seed from Veriann Timbercrush (daily/weekly?)
 			--q(78554),	-- on 2nd kill with rare state of event - was looted small dreamseed
 			q(79082, {["repeatable"]=true}),	-- 'The Superbloom'
 			q(78866),	-- 'Superbloom: Step 2'

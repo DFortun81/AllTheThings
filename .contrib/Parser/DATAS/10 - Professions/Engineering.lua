@@ -1152,7 +1152,9 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["coord"] = { 62.6, 36.2, EMERALD_DREAM },
 				["questID"] = 78281,
 				["g"] = {
-					i(210197),	-- Unhatched Battery
+					i(210197, {	-- Unhatched Battery
+						i(210198),	-- Depleted Battery
+					}),
 				},
 			})),
 		}),

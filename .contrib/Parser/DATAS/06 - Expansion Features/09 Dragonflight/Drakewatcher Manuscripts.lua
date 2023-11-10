@@ -1092,6 +1092,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(207769),	-- Grotto Netherwing Drake: Outcast Pattern (DM!)
 			i(207771),	-- Grotto Netherwing Drake: Short Horns (DM!)
 			i(207763),	-- Grotto Netherwing Drake: Single Horned Crest (DM!)
+			i(207758),	-- Grotto Netherwing Drake: Spiked Back (DM!)
 			i(207773),	-- Grotto Netherwing Drake: Spiked Jaw (DM!)
 			i(207767),	-- Grotto Netherwing Drake: Tempestuous Pattern (DM!)
 			i(207766),	-- Grotto Netherwing Drake: Triple Spiked Crest (DM!)
@@ -1106,7 +1107,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(207778),	-- Grotto Netherwing Drake: Double Finned Tail
 			i(207770),	-- Grotto Netherwing Drake: Helm
 			i(207757),	-- Grotto Netherwing Drake: Purple and Silver Armor
-			i(207758),	-- Grotto Netherwing Drake: Spiked Back
 			i(207775),	-- Grotto Netherwing Drake: Teal Scales
 			i(211381),	-- Grotto Netherwing Drake: Violet Scales
 			i(207777),	-- Grotto Netherwing Drake: Yellow Scales
