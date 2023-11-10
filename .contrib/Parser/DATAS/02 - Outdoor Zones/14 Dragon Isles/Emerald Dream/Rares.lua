@@ -45,7 +45,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						i(209948),	-- Spring's Keeper
 					}),
 					i(208881),	-- Shiversnap Blossom (QI!)
-					bo(77878),	-- Envoy of Winter bonus objective
+					bo(77878, true),	-- Envoy of Winter bonus objective
 				},
 			}),
 			n(209893, {	-- Firebrand Fystia
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208371),	-- Fire Assassin's Boots
 					i(208328),	-- Fystia's Deft Hands
 					i(209881),	-- Fystia's Fiery Kris
-					bo(78015),	-- Firebrand Fystia bonus objective
+					bo(78015, true),	-- Firebrand Fystia bonus objective
 				},
 			}),
 			n(209913, {	-- Fruitface
@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 53.8, 40.7, EMERALD_DREAM },
 				["g"] = {
 					i(208355),	-- String of Delicacies
-					bo(77982),	-- Greedy Gessie bonus objective
+					bo(77982, true),	-- Greedy Gessie bonus objective
 				},
 			}),
 			n(210075, {	-- Henri Snufftail
@@ -171,7 +171,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
 				["coord"] = { 61.0, 70.3, EMERALD_DREAM },
 				["g"] = {
-					bo(77570),	-- Nouberon bonus objective
+					bo(77570, true),	-- Nouberon bonus objective
 				},
 			}),
 			n(209912, {	-- Raszageth's Last Breath
@@ -183,7 +183,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					--{ 41.5, 31.1, EMERALD_DREAM },
 				},
 				["g"] = {
-					bo(77859),	-- Raszageth's Last Breath bonus objective
+					bo(77859, true),	-- Raszageth's Last Breath bonus objective
 				},
 			}),
 			n(209898, {	-- Reefbreaker Moruud
@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["g"] = {
 					i(208327),	-- Maruud's Piercing Hands
 					i(209882),	-- Maruud's Undertow
-					bo(77867),	-- Reefbreaker Moruud bonus objective
+					bo(77867, true),	-- Reefbreaker Moruud bonus objective
 				},
 			}),
 			n(210161, {	-- Ristar, the Rabid
