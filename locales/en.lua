@@ -855,7 +855,13 @@ local L = {
 		["The Primalist Future"] = "Primalist Future",
 		["The Storm's Fury"] = "Storm's Fury",
 		["WoW Anniversary"] = "Anniversary",
-		["Zaralek Cavern Racing Completionist: Gold"] = "Racing: Gold",
+		["Dragonriding Challenge: Dragon Isles: Gold"] = "Challenge: Gold",
+		["Dragon Racing Completionist: Gold"] = "Gold",
+		["Emerald Dream Challenge Racing Completionist: Gold"] = "Challenge: Gold",
+		["Emerald Dream Racing Completionist: Gold"] = "Gold",
+		["Forbidden Reach Challenge Racing Completionist: Gold"] = "Challenge: Gold",
+		["Forbidden Reach Racing Completionist: Gold"] = "Gold",
+		["Zaralek Cavern Racing Completionist: Gold"] = "Gold",
 	};
 
 	-- Custom Icons for Factions (seems to be no automatic Faction-Icon associations in-game)
