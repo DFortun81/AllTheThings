@@ -33,19 +33,19 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 			["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 		}),
 		currency(WHELPLINGS_DREAMING_CREST, {
-			["description"] = "Drops in M+ 0-5",
+		--	["description"] = "Drops in M+ 2-5.",	-- Blizzard added description
 			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
 		}),
 		currency(DRAKES_DREAMING_CREST, {
-			["description"] = "Drops in M+ 6-10",
+		--	["description"] = "Drops in M+ 6-10",	-- Blizzard added description
 			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
 		}),
 		currency(WYRMS_DREAMING_CREST, {
-			["description"] = "Drops in M+ 11-15",
+		--	["description"] = "Drops in M+ 11-15",	-- Blizzard added description
 			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
 		}),
 		currency(ASPECTS_DREAMING_CREST, {
-			["description"] = "Drops in M+ 16+",
+		--	["description"] = "Drops in M+ 16+",	-- Blizzard added description
 			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
 		}),
 		header(HEADERS.Achievement, SEASON_THUNDERING, bubbleDownSelf({

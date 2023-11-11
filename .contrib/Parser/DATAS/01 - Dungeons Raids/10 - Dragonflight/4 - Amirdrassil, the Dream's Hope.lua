@@ -479,7 +479,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				}),
 			}),
 			Difficulty(LFR_RAID).AddGroupsWithUpgrades({
-				ZoneDrops({
+				CommonBossDrops({
 					currency(WHELPLINGS_DREAMING_CREST, {
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
 					}),
