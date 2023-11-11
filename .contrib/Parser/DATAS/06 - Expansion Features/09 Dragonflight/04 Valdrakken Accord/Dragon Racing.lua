@@ -65,6 +65,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(207758),	-- Grotto Netherwing Drake: Spiked Back (DM!)
 						i(207768),	-- Grotto Netherwing Drake: Volatile Pattern (DM!)
 						i(203343),	-- Winding Slitherdrake: Hairy Jaw (DM!) (discord report from user dumbomb in #error)
+						i(203333),	-- Winding Slitherdrake: Short Horns (DM!) (discord report from user shinshiva in #general)
 						i(203360),	-- Winding Slitherdrake: Large Finned Tail (DM!) (discord report from user nohh in #error)
 						i(203337),	-- Winding Slitherdrake: Thorn Horns (DM!)
 					})),

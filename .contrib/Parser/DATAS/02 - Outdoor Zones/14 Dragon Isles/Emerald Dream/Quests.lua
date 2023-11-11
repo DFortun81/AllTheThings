@@ -1036,11 +1036,21 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77809),	-- Quest "What Do I Call You?": Pick the title of "Father"
 		q(77810),	-- Quest "What Do I Call You?": Pick the title of "Commander"
 		q(77811),	-- Quest "What Do I Call You?": Pick the title of "Guardian"
-		-- Require Legion Class Hall for each unique class line (otherwise there will be only 4 above)
-		q(77834),	-- Quest "What Do I Call You?": Pick the title of "Archdruid"
-		q(78235),	-- Quest "What Do I Call You?": Pick the title of "Battlelord"
-		q(78258),	-- Quest "What Do I Call You?": Pick the title of "Grandmaster"
-		q(78257),	-- Quest "What Do I Call You?": Pick the title of "Highlord"
+		-- Require Legion Class Hall (and seems like completely finished quest chain from it?) for each unique class line (otherwise there will be only 4 above)
+		q(77834),	-- Quest "What Do I Call You?": Pick the title of "Archdruid" (druid)
+		q(78238),	-- Quest "What Do I Call You?": Pick the title of "Archmage" (mage)
+		q(78235),	-- Quest "What Do I Call You?": Pick the title of "Battlelord" (warrior)
+		--q(),	-- Quest "What Do I Call You?": Pick the title of "Deathlord"(dk)
+		--q(),	-- Quest "What Do I Call You?": Pick the title of "Farseer" (shaman)
+		q(78258),	-- Quest "What Do I Call You?": Pick the title of "Grandmaster" (monk)
+		q(78246),	-- Quest "What Do I Call You?": Pick the title of "High Priest" (priest)
+		q(78257),	-- Quest "What Do I Call You?": Pick the title of "Highlord" (paladin)
+		--q(),	-- Quest "What Do I Call You?": Pick the title of "Huntmaster" (hunter)
+		--q(),	-- Quest "What Do I Call You?": Pick the title of "Illidari" (dh, doesn't exist?)
+		--q(),	-- Quest "What Do I Call You?": Pick the title of "Master Assassin" (rogue, doesn't exist?)
+		--q(),	-- Quest "What Do I Call You?": Pick the title of "Netherlord" (warlock)
+		--q(),	-- Quest "What Do I Call You?": Pick the title of "Shadowbane" (rogue?)
+		--q(),	-- Quest "What Do I Call You?": Pick the title of "Slayer" (dh?)
 		-- Elanna unlocks for battle pets
 		q(78854),	-- unlock ability to buy Dreamborne Scarab (i: 210553) (require: Endmite (any other pet with same model?)) (spellID 429058)
 		q(78855),	-- unlock ability to buy Dreamhoof (i: 210555) (require: Leyhart (any other pet with same model?)) (spellID 429064)
