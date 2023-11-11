@@ -25,5 +25,5 @@
 -- #IMPORT: 00 - Item Database\\Item Filters for RWP.lua
 -- #IMPORT: 00 - Item Database\\MusicRolls.lua
 -- #IMPORT: 00 - Item Database\\RuneforgePowers.lua
--- Can't use 00 - Item Database\\SourceIDs.lua
+-- #IMPORT: 00 - Item Database\\Source IDs\\
 -- #IMPORT: 00 - Item Database\\Uncollectible.lua

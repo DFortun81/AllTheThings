@@ -149,7 +149,7 @@ namespace ATT
         /// <summary>
         /// The first patch they added Transmog as something you could collect.
         /// </summary>
-        private static readonly long ADDED_TRANSMOG_VERSION = FIRST_EXPANSION_PATCH["LEGION"].ConvertVersion();
+        private static readonly long ADDED_TRANSMOG_VERSION = 0;// FIRST_EXPANSION_PATCH["LEGION"].ConvertVersion();
 
         /// <summary>
         /// The maximum available Phase Identifier.
