@@ -42,6 +42,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(197371),	-- Renewed Proto-Drake: Green Hair (DN!)
 					i(203340),	-- Winding Slitherdrake: Cluster Jaw Horns (DM!)
 					i(203329),	-- Winding Slitherdrake: Heavy Horns (DM!)
+					i(203344),	-- Winding Slitherdrake: Single Jaw Horn (DM!)
 				}),
 				i(211411),	-- Sprouting Dreamtrove
 				filter(COSMETIC, {
@@ -53,7 +54,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				n(DRAKE_MANUSCRIPTS, {
 					i(207762),	-- Grotto Netherwing Drake: Chin Spike (DM!)
-					i(203344),	-- Winding Slitherdrake: Single Jaw Horn (DM!)
 				}),
 				filter(RECIPES, {
 					i(210242),	-- Recipe: Slumbering Peacebloom Tea (RECIPE!)
