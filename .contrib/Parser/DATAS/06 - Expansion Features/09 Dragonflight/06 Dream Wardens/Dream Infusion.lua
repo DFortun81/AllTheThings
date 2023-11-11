@@ -1,8 +1,8 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-local DREAM_INFUSION = 2777;
-DREAM_INFUSION = createHeader({
+local CURRENCY_DREAM_INFUSION = 2777;
+local DREAM_INFUSION = createHeader({
 	readable = "Dream Infusion",
 	icon = "1394953",
 	text = {
@@ -35,14 +35,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 50.2, 61.8, EMERALD_DREAM },
 				["repeatable"] = true,
 				["g"] = {
-					currency(DREAM_INFUSION),
+					currency(CURRENCY_DREAM_INFUSION),
 				},
 			}),
 			n(VENDORS, {
 				n(211209, {	-- Elianna <Dream Infuser>
 					["coord"] = { 50.2, 61.8, EMERALD_DREAM },
 					["g"] = bubbleDownFiltered({
-						["cost"] = {{"c", DREAM_INFUSION, 1}},
+						["cost"] = {{"c", CURRENCY_DREAM_INFUSION, 1}},
 					},FILTERFUNC_itemID,{
 						filter(BATTLE_PETS, {
 							i(210553),	-- Dreamborne Scarab (PET!)
