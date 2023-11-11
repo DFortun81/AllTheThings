@@ -7,14 +7,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(CRAFTABLES, {
 				i(210041),	-- Shipment of Goods
 			}),
-			filter(RECIPES, {
+			filter(RECIPES, sharedData({ ["u"] = TRAINING }, {
 				r(424695),	-- Draconium Shipment
 				r(424736),	-- Skin Shipment
 				r(424810),	-- Cloth Shipment
 				r(424823),	-- Food Shipment
 				r(424876),	-- Khaz'gorite Shipment
 				r(427111),	-- Diamond Shipment
-			}),
+			})),
 			n(QUESTS, sharedData({
 				["provider"] = { "n", 211240 },	-- Eran'nda
 				["coord"] = { 52.5, 62.5, EMERALD_DREAM },
