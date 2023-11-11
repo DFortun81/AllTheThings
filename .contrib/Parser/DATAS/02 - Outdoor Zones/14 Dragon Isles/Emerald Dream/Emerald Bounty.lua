@@ -72,6 +72,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 					crit(62397, {	-- Whisperbloom Sapling (n: 211059)
 						["coord"] = { 51.2, 58.7, EMERALD_DREAM },
+						["description"] = "Spawns every hour at the 50 minute mark.",
 					}),
 					crit(62028, {	-- Ysera's Clover (n: 208443)
 						["coord"] = { 59.2, 58.8, EMERALD_DREAM },
