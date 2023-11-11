@@ -135,8 +135,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				n(QUESTS, {
 					dragonridingrace(78102, {	-- Canopy Concours
-						["provider"] = { "n", 202749 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210784 },	-- Bronze Timekeeper
+						["coord"] = { 62.8, 88.1, EMERALD_DREAM },
 						["g"] = {
 							ach(19047),	-- Canopy Concours: Bronze
 							ach(19048),	-- Canopy Concours: Silver
@@ -144,8 +144,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(78103, {	-- Canopy Concours - Advanced
-						["provider"] = { "n", 202749 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210784 },	-- Bronze Timekeeper
+						["coord"] = { 62.8, 88.1, EMERALD_DREAM },
 						["g"] = {
 							ach(19050),	-- Canopy Concours Advanced: Bronze
 							ach(19051),	-- Canopy Concours Advanced: Silver
@@ -153,8 +153,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(78104, {	-- Canopy Concours - Reverse
-						["provider"] = { "n", 202749 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210784 },	-- Bronze Timekeeper
+						["coord"] = { 62.8, 88.1, EMERALD_DREAM },
 						["g"] = {
 							ach(19053),	-- Canopy Concours Reverse: Bronze
 							ach(19054),	-- Canopy Concours Reverse: Silver
@@ -162,8 +162,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(78115, {	-- Emerald Amble
-						["provider"] = { "n", 202676 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210861 },	-- Bronze Timekeeper
+						["coord"] = { 32.3, 48.2, EMERALD_DREAM },
 						["g"] = {
 							ach(19062),	-- Emerald Amble: Bronze
 							ach(19063),	-- Emerald Amble: Silver
@@ -171,8 +171,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(78116, {	-- Emerald Amble - Advanced
-						["provider"] = { "n", 202676 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210861 },	-- Bronze Timekeeper
+						["coord"] = { 32.3, 48.2, EMERALD_DREAM },
 						["g"] = {
 							ach(19065),	-- Emerald Amble Advanced: Bronze
 							ach(19066),	-- Emerald Amble Advanced: Silver
@@ -180,8 +180,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(78117, {	-- Emerald Amble - Reverse
-						["provider"] = { "n", 202676 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210861 },	-- Bronze Timekeeper
+						["coord"] = { 32.3, 48.2, EMERALD_DREAM },
 						["g"] = {
 							ach(19068),	-- Emerald Amble Reverse: Bronze
 							ach(19069),	-- Emerald Amble Reverse: Silver
@@ -189,8 +189,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(78016, {	-- Shoreline Switchback
-						["provider"] = { "n", 202524 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210497 },	-- Bronze Timekeeper
+						["coord"] = { 69.6, 52.6, EMERALD_DREAM },
 						["g"] = {
 							ach(19032),	-- Shoreline Switchback: Bronze
 							ach(19033),	-- Shoreline Switchback: Silver
@@ -198,8 +198,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(78017, {	-- Shoreline Switchback - Advanced
-						["provider"] = { "n", 202524 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210497 },	-- Bronze Timekeeper
+						["coord"] = { 69.6, 52.6, EMERALD_DREAM },
 						["g"] = {
 							ach(19035),	-- Shoreline Switchback Advanced: Bronze
 							ach(19036),	-- Shoreline Switchback Advanced: Silver
@@ -207,8 +207,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(78018, {	-- Shoreline Switchback - Reverse
-						["provider"] = { "n", 202524 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210497 },	-- Bronze Timekeeper
+						["coord"] = { 69.6, 52.6, EMERALD_DREAM },
 						["g"] = {
 							ach(19038),	-- Shoreline Switchback Reverse: Bronze
 							ach(19039),	-- Shoreline Switchback Reverse: Silver
@@ -216,8 +216,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(77983, {	-- Smoldering Sprint
-						["provider"] = { "n", 202772 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210310 },	-- Bronze Timekeeper
+						["coord"] = { 37.2, 44.1, EMERALD_DREAM },
 						["g"] = {
 							ach(18978),	-- Smoldering Sprint: Bronze
 							ach(18979),	-- Smoldering Sprint: Silver
@@ -225,8 +225,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(77984, {	-- Smoldering Sprint - Advanced
-						["provider"] = { "n", 202772 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210310 },	-- Bronze Timekeeper
+						["coord"] = { 37.2, 44.1, EMERALD_DREAM },
 						["g"] = {
 							ach(18981),	-- Smoldering Sprint Advanced: Bronze
 							ach(18982),	-- Smoldering Sprint Advanced: Silver
@@ -234,8 +234,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(77985, {	-- Smoldering Sprint - Reverse
-						["provider"] = { "n", 202772 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210310 },	-- Bronze Timekeeper
+						["coord"] = { 37.2, 44.1, EMERALD_DREAM },
 						["g"] = {
 							ach(18984),	-- Smoldering Sprint Reverse: Bronze
 							ach(18985),	-- Smoldering Sprint Reverse: Silver
@@ -243,8 +243,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(77996, {	-- Viridescent Venture
-						["provider"] = { "n", 202795 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210412 },	-- Bronze Timekeeper
+						["coord"] = { 35.1, 55.2, EMERALD_DREAM },
 						["g"] = {
 							ach(18993),	-- Viridescent Venture: Bronze
 							ach(18994),	-- Viridescent Venture: Silver
@@ -252,8 +252,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(77997, {	-- Viridescent Venture - Advanced
-						["provider"] = { "n", 202795 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210412 },	-- Bronze Timekeeper
+						["coord"] = { 35.1, 55.2, EMERALD_DREAM },
 						["g"] = {
 							ach(18996),	-- Viridescent Venture Advanced: Bronze
 							ach(18997),	-- Viridescent Venture Advanced: Silver
@@ -261,8 +261,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(77998, {	-- Viridescent Venture - Reverse
-						["provider"] = { "n", 202795 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210412 },	-- Bronze Timekeeper
+						["coord"] = { 35.1, 55.2, EMERALD_DREAM },
 						["g"] = {
 							ach(18999),	-- Viridescent Venture Reverse: Bronze
 							ach(19000),	-- Viridescent Venture Reverse: Silver
@@ -270,8 +270,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(77841, {	-- Ysera Invitational
-						["provider"] = { "n", 202973 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210023 },	-- Bronze Timekeeper
+						["coord"] = { 59.1, 28.8, EMERALD_DREAM },
 						["g"] = {
 							ach(18943),	-- Ysera Invitational: Bronze
 							ach(18944),	-- Ysera Invitational: Silver
@@ -279,8 +279,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(77842, {	-- Ysera Invitational - Advanced
-						["provider"] = { "n", 202973 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210023 },	-- Bronze Timekeeper
+						["coord"] = { 59.1, 28.8, EMERALD_DREAM },
 						["g"] = {
 							ach(18946),	-- Ysera Invitational Advanced: Bronze
 							ach(18947),	-- Ysera Invitational Advanced: Silver
@@ -288,8 +288,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(77843, {	-- Ysera Invitational - Reverse
-						["provider"] = { "n", 202973 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210023 },	-- Bronze Timekeeper
+						["coord"] = { 59.1, 28.8, EMERALD_DREAM },
 						["g"] = {
 							ach(18949),	-- Ysera Invitational Reverse: Bronze
 							ach(18950),	-- Ysera Invitational Reverse: Silver
@@ -393,8 +393,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				n(QUESTS, {
 					dragonridingrace(78105, {	-- Canopy Concours - Challenge
-						["provider"] = { "n", 202749 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210784 },	-- Bronze Timekeeper
+						["coord"] = { 62.8, 88.1, EMERALD_DREAM },
 						["g"] = {
 							ach(19056),	-- Canopy Concours Challenge: Bronze
 							ach(19057),	-- Canopy Concours Challenge: Silver
@@ -402,8 +402,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(78106, {	-- Canopy Concours - Reverse Challenge
-						["provider"] = { "n", 202749 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210784 },	-- Bronze Timekeeper
+						["coord"] = { 62.8, 88.1, EMERALD_DREAM },
 						["g"] = {
 							ach(19059),	-- Canopy Concours Reverse Challenge: Bronze
 							ach(19060),	-- Canopy Concours Reverse Challenge: Silver
@@ -411,8 +411,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(78118, {	-- Emerald Amble - Challenge
-						["provider"] = { "n", 202676 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210861 },	-- Bronze Timekeeper
+						["coord"] = { 32.3, 48.2, EMERALD_DREAM },
 						["g"] = {
 							ach(19071),	-- Emerald Amble Challenge: Bronze
 							ach(19072),	-- Emerald Amble Challenge: Silver
@@ -420,8 +420,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(78119, {	-- Emerald Amble - Reverse Challenge
-						["provider"] = { "n", 202676 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210861 },	-- Bronze Timekeeper
+						["coord"] = { 32.3, 48.2, EMERALD_DREAM },
 						["g"] = {
 							ach(19074),	-- Emerald Amble Reverse Challenge: Bronze
 							ach(19075),	-- Emerald Amble Reverse Challenge: Silver
@@ -429,8 +429,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(78019, {	-- Shoreline Switchback - Challenge
-						["provider"] = { "n", 202524 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210497 },	-- Bronze Timekeeper
+						["coord"] = { 69.6, 52.6, EMERALD_DREAM },
 						["g"] = {
 							ach(19041),	-- Shoreline Switchback Challenge: Bronze
 							ach(19042),	-- Shoreline Switchback Challenge: Silver
@@ -438,8 +438,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(78020, {	-- Shoreline Switchback - Reverse Challenge
-						["provider"] = { "n", 202524 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210497 },	-- Bronze Timekeeper
+						["coord"] = { 69.6, 52.6, EMERALD_DREAM },
 						["g"] = {
 							ach(19044),	-- Shoreline Switchback Reverse Challenge: Bronze
 							ach(19045),	-- Shoreline Switchback Reverse Challenge: Silver
@@ -447,8 +447,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(77986, {	-- Viridescent Venture - Challenge
-						["provider"] = { "n", 202795 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210412 },	-- Bronze Timekeeper
+						["coord"] = { 35.1, 55.2, EMERALD_DREAM },
 						["g"] = {
 							ach(19002),	-- Viridescent Venture Challenge: Bronze
 							ach(19003),	-- Viridescent Venture Challenge: Silver
@@ -456,8 +456,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(77987, {	-- Viridescent Venture - Reverse Challenge
-						["provider"] = { "n", 202795 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210412 },	-- Bronze Timekeeper
+						["coord"] = { 35.1, 55.2, EMERALD_DREAM },
 						["g"] = {
 							ach(19005),	-- Viridescent Venture Reverse Challenge: Bronze
 							ach(19006),	-- Viridescent Venture Reverse Challenge: Silver
@@ -465,8 +465,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(77999, {	-- Smoldering Sprint - Challenge
-						["provider"] = { "n", 202772 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210310 },	-- Bronze Timekeeper
+						["coord"] = { 37.2, 44.1, EMERALD_DREAM },
 						["g"] = {
 							ach(18987),	-- Smoldering Sprint Challenge: Bronze
 							ach(18988),	-- Smoldering Sprint Challenge: Silver
@@ -474,8 +474,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(78000, {	-- Smoldering Sprint - Reverse Challenge
-						["provider"] = { "n", 202772 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210310 },	-- Bronze Timekeeper
+						["coord"] = { 37.2, 44.1, EMERALD_DREAM },
 						["g"] = {
 							ach(18990),	-- Smoldering Sprint Reverse Challenge: Bronze
 							ach(18991),	-- Smoldering Sprint Reverse Challenge: Silver
@@ -483,8 +483,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(77844, {	-- Ysera Invitational - Challenge
-						["provider"] = { "n", 202973 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210023 },	-- Bronze Timekeeper
+						["coord"] = { 59.1, 28.8, EMERALD_DREAM },
 						["g"] = {
 							ach(18952),	-- Ysera Invitational Challenge: Bronze
 							ach(18953),	-- Ysera Invitational Challenge: Silver
@@ -492,8 +492,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 					dragonridingrace(77845, {	-- Ysera Invitational - Reverse Challenge
-						["provider"] = { "n", 202973 },	-- Bronze Timekeeper
-						--["coord"] = {  },
+						["provider"] = { "n", 210023 },	-- Bronze Timekeeper
+						["coord"] = { 59.1, 28.8, EMERALD_DREAM },
 						["g"] = {
 							ach(18955),	-- Ysera Invitational Reverse Challenge: Bronze
 							ach(18956),	-- Ysera Invitational Reverse Challenge: Silver
