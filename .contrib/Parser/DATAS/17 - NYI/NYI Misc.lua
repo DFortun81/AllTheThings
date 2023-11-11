@@ -868,7 +868,6 @@ root(ROOTS.NeverImplemented, {
 				i(209835),	-- Crate of Dreambound Plate
 				i(209997),	-- Distilled Knowledge of Timeways
 				i(208925),	-- Dreambound Trinket
-				i(210062),	-- Ironbound Satchel of Helpful Goods
 				i(204720),	-- Join the New Scarlet Crusade!
 				i(205224),	-- Just a Rock
 				i(208545),	-- Kindled Bonfire

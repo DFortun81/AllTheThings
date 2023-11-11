@@ -4057,6 +4057,11 @@ local BLOOM = -146;
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORDS_OF_DRAENOR_DUNGEON_EVENT, {
 	tier(WOD_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 }},{
 		n(GROUP_FINDER, {
+			i(210062, {	-- Ironbound Satchel of Helpful Goods // Draenor TW Daily Reward
+				["description"] = "Rewarded for completing any Draenor timewalking dungeon.\nAvailable once per day.",
+				["timeline"] = { ADDED_10_1_7 },
+				["sym"] = { { "select", "itemID", 156698 } },	-- Tranquil Satchel of Helpful Goods
+			}),
 			i(187905, {	-- Boar Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },
 				["description"] = "Can drop from the last boss from any wod timewalking dungeon with the nightfae covenant active.",

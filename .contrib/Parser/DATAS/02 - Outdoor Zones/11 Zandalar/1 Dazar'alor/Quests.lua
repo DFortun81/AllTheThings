@@ -771,7 +771,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(48404, {	-- The Scamps
-				["sourceQuests"] = { 52131 },	-- We Need Each Other
+				["sourceQuests"] = { 52472 },	-- Make Loh Go
 				["coord"] = { 55.9, 88.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 125312 },	-- Scrollsage Rooka

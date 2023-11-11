@@ -1212,7 +1212,7 @@ root(ROOTS.Zones, {
 					}),
 					q(12180, {	-- The Captive Prospectors
 						["qg"] = 26885,	-- Mountaineer Kilian
-						["sourceQuest"] = 12014,	-- Steady as a Rock?
+						["sourceQuest"] = 12128,	-- Check Up on Raegar
 						["coord"] = { 76.9, 48.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
