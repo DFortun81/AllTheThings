@@ -1314,7 +1314,7 @@ settings.UpdateMode = function(self, doRefresh)
 	if self:Get("DebugMode") then
 		filterSet.Group()
 		filterSet.Unobtainable()
-		filterSet.Visible()
+		filterSet.Visible(true)
 		filterSet.FilterID()
 		filterSet.Class()
 		filterSet.Race()
@@ -1325,6 +1325,7 @@ settings.UpdateMode = function(self, doRefresh)
 		-- Default filter fallback in Debug mode is based on Show Completed toggles so that uncollectible/completed content can still be hidden in Debug if desired
 		filterSet.DefaultGroup(not self:Get("Show:CompletedGroups"))
 		filterSet.DefaultThing(not self:Get("Show:CollectedThings"))
+		filterSet.Trackable()
 
 		settings:SetThingTracking("Debug")
 		app.MODE_ACCOUNT = nil

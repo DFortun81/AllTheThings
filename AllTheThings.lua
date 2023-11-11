@@ -13152,9 +13152,9 @@ local function CacheFilterFunctions()
 	RecursiveGroupRequirementsFilter = app.RecursiveGroupRequirementsFilter;
 	GroupFilter = app.GroupFilter;
 	GroupVisibilityFilter, ThingVisibilityFilter = app.GroupVisibilityFilter, app.CollectedItemVisibilityFilter;
-	TrackableFilter = app.ShowTrackableThings;
+	TrackableFilter = app.ShowTrackableThings
 	DefaultGroupVisibility, DefaultThingVisibility = app.DefaultGroupFilter(), app.DefaultThingFilter();
-	-- app.PrintDebug("CacheFilterFunctions")
+	-- app.PrintDebug("CacheFilterFunctions","DG",DefaultGroupVisibility,"DT",DefaultThingVisibility)
 	-- app.PrintDebug("ItemUnboundSetting",ItemUnboundSetting)
 end
 local function SetGroupVisibility(parent, group)
