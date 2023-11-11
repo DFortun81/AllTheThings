@@ -131,6 +131,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["isWeekly"] = true,
 					["maxReputation"] = { FACTION_DREAM_WARDENS, 20 },
 					["g"] = {
+						i(SEEDBLOOM, {	
+							["description"] = "Any item bought via Seedbloom's can also be obtained randomly from The Emerald Bounty event while planting or contributing a Small Dreamseed, Plump Dreamseed, or Gigantic Dreamseed.",
+						}),
 						i(211394, {	-- Harvested Dreamseed Cache
 							["sym"] = {
 								{"select", "headerID", 78203 },
@@ -150,7 +153,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 			}),
 			n(REWARDS, {
-				i(SEEDBLOOM),
 				i(210219, {	-- Gigantic Dreamy Bounty
 					["provider"] = {"i", 208047, 1},	-- Gigantic Dreamseed
 					["sym"] = {
