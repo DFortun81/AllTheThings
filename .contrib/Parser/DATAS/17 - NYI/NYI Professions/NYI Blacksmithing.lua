@@ -91,7 +91,6 @@ root(ROOTS.NeverImplemented, {
 						i(108081),	-- Hardened Draenic Steel Helm
 						i(108084),	-- Hardened Draenic Steel Girdle
 						i(108080),	-- Hardened Draenic Steel Guantlets
-						i(108082),	-- Hardened Draenic Steel Legguards
 						i(108154),	-- Hardened Draenic Steel Mace
 						i(108083),	-- Hardened Draenic Steel Shoulders
 						i(108142),	-- Hardened Draenic Steel War Axe

@@ -53,6 +53,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(MAIL, {
 			ig(18320),	-- Demonheart Spaulders				(NYI)
+			ig(114273),	-- Leafscale Spaulders				(NYI)
 		}),
 		filter(PLATE, {
 			ig(93099),	-- Yaungolian Pauldrons				(NYI)
@@ -77,6 +78,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(134791),	-- Ruinous Tunic					(Removed)
 		}),
 		filter(MAIL, {
+			ig(114315),	-- Chestguard of Meditative Focus	(NYI)
 			ig(114252), -- Leafscale Chestguard				(NYI)
 			ig(108218),	-- Peerless Draeneic Steel Chest	(NYI)
 			ig(93086),	-- Swashbuckling Vest				(NYI)
@@ -116,6 +118,7 @@ local QUANTUM_GROUP = sharedData({
 		filter(MAIL, {
 		}),
 		filter(PLATE, {
+			ig(108082),	-- Hardened Draenic Steel Legguards	(NYI)
 		}),
 	}),
 	i(208111, {	-- Quantum Axe			(One-Handed)

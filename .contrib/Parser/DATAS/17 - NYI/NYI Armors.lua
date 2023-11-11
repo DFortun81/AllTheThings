@@ -693,7 +693,6 @@ root(ROOTS.NeverImplemented, {
 					i(114261),	-- Leafscale Gauntlets
 					i(114265),	-- Leafscale Helm
 					i(114269),	-- Leafscale Legguards
-					i(114273),	-- Leafscale Spaulders
 					i(114277),	-- Leafscale Belt
 					i(107863),	-- 7.0 PH Mail Vest
 					i(107867),	-- 7.0 PH Mail Sabatons

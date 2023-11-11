@@ -745,7 +745,6 @@ root(ROOTS.NeverImplemented, {
 					i(114400),	-- Belt of Falling Leaves
 				}),
 				filter(MAIL, {
-					i(114315),	-- Chestguard of Meditative Focus
 					i(114385),	-- Element-Binder Gauntlets
 					i(114389),	-- Element-Binder Helm
 					i(114393),	-- Element-Binder Legguards
