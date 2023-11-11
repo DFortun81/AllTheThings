@@ -767,7 +767,6 @@ root(ROOTS.Unsorted, {
 				q(78389),	-- PTR:Maker's Marathon
 				q(78390),	-- PTR:Maker's Marathon - Advanced
 				q(78391),	-- PTR:Maker's Marathon - Reverse
-				q(78394),	--
 				q(78420),	--
 				q(78421),	-- PTR:The Power of Dreams
 				q(78423),	--
