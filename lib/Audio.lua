@@ -85,15 +85,15 @@ local DefaultSoundPack = api:CreateSoundPack("Default", {
 	REMOVE = {
 		app.asset("remove1.ogg"),
 	},
-	REPORT = {
-		app.asset("report1.ogg"),
-	},
+	REPORT = {},	-- Only specifying the REPORT table prevents any report sound from playing
 });
 CurrentSoundPack = DefaultSoundPack;
 
 -- Some extra Sound Packs
-api:CreateSoundPack("Default (Without Report Sounds)", {
-	REPORT = {},	-- Only specifying the REPORT table prevents any report sound from playing
+api:CreateSoundPack("Default (With Report Sounds)", {
+	REPORT = {
+		app.asset("report1.ogg"),
+	},
 });
 
 -- Play Audio API
