@@ -49,6 +49,7 @@ local GetDifficultyInfo = _G["GetDifficultyInfo"];
 local GetFactionInfoByID = _G["GetFactionInfoByID"];
 local GetItemInfo = _G["GetItemInfo"];
 local GetItemInfoInstant = _G["GetItemInfoInstant"];
+local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
 local PlayerHasToy = _G["PlayerHasToy"];
 local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
@@ -5663,7 +5664,7 @@ local function ProcessIncomingChunk(sender, uid, index, chunk)
 		character.lastPlayed = tonumber(data[9]);
 		character.Deaths = tonumber(data[10]);
 		if character.classID then character.class = C_CreatureInfo.GetClassInfo(character.classID).classFile; end
-		if character.raceID then character.race = C_CreatureInfo.GetRaceInfo(character.raceID).clientFileString; end
+		if character.raceID then character.race = C_CreatureInfo_GetRaceInfo(character.raceID).clientFileString; end
 		for i=11,#data,1 do
 			local piece = splittoarray("/", data[i]);
 			local key = piece[1];
@@ -9145,7 +9146,7 @@ local unitFields = {
 				end
 				if character.raceID then
 					t.raceID = character.raceID;
-					t.race = C_CreatureInfo.GetRaceInfo(character.raceID).raceName;
+					t.race = C_CreatureInfo_GetRaceInfo(character.raceID).raceName;
 				end
 				t.name = TryColorizeName(t, character.name or UNKNOWN).."-"..(character.realm or UNKNOWN);
 				t.level = character.lvl;
@@ -12610,7 +12611,6 @@ end)();
 -- Race Lib
 (function()
 local cache = app.CreateCache("raceID");
-local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
 local C_AlliedRaces_GetRaceInfoByID = C_AlliedRaces.GetRaceInfoByID;
 local function default_name(t)
 	local info = C_CreatureInfo_GetRaceInfo(t.raceID);
@@ -15340,12 +15340,16 @@ RowOnEnter = function (self)
 			GameTooltip:AddDoubleLine(L["CLASSES_CHECKBOX"], str);
 		end
 		if app.Settings:GetTooltipSetting("RaceRequirements") then
+			local usecolors = app.Settings:GetTooltipSetting("UseMoreColors")
 			if reference.races then
-				local str = "";
+				local races_tbl = {}
+				-- temp ref with .raceID of only a single race so we can simply use TryColorizeName
+				local temp_ref = {}
 				for i,race in ipairs(reference.races) do
-					if i > 1 then str = str .. ", "; end
-					str = str .. C_CreatureInfo.GetRaceInfo(race).raceName;
+					temp_ref.raceID = race
+					races_tbl[#races_tbl + 1] = usecolors and TryColorizeName(temp_ref, C_CreatureInfo_GetRaceInfo(race).raceName) or C_CreatureInfo_GetRaceInfo(race).raceName
 				end
+				local str = app.TableConcat(races_tbl, nil, nil, ", ")
 				if #reference.races > 4 then
 					GameTooltip:AddLine(L["RACES_CHECKBOX"] .. " " .. str, nil, nil, nil, 1);
 				else
@@ -15353,9 +15357,9 @@ RowOnEnter = function (self)
 				end
 			elseif reference.r and reference.r > 0 then
 				if reference.r == 2 then
-					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], app.Settings:GetTooltipSetting("UseMoreColors") and Colorize(ITEM_REQ_ALLIANCE, app.Colors.Alliance) or ITEM_REQ_ALLIANCE);
+					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], usecolors and Colorize(ITEM_REQ_ALLIANCE, app.Colors.Alliance) or ITEM_REQ_ALLIANCE)
 				elseif reference.r == 1 then
-					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], app.Settings:GetTooltipSetting("UseMoreColors") and Colorize(ITEM_REQ_HORDE, app.Colors.Horde) or ITEM_REQ_HORDE);
+					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], usecolors and Colorize(ITEM_REQ_HORDE, app.Colors.Horde) or ITEM_REQ_HORDE)
 				else
 					GameTooltip:AddDoubleLine(L["RACES_CHECKBOX"], "Unknown");
 				end

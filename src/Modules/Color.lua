@@ -19,7 +19,7 @@ local Alliance, Horde = Enum.FlightPathFaction.Alliance, Enum.FlightPathFaction.
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local ALLIANCE_ONLY = app.Modules.FactionData.FACTION_RACES[1];
 local HORDE_ONLY = app.Modules.FactionData.FACTION_RACES[2];
-local containsAny = app.containsAny;
+local containsAny, contains = app.containsAny, app.contains
 local CS = CreateFrame("ColorSelect", nil, app.frame);
 CS:Hide();
 
@@ -79,6 +79,17 @@ app.TryColorizeName = function(group, name)
 		elseif group.races then
 			local hrace = containsAny(group.races, HORDE_ONLY);
 			local arace = containsAny(group.races, ALLIANCE_ONLY);
+			if hrace and not arace then
+				-- this group requires a horde-only race, and not any alliance race
+				return Colorize(name, colors.Horde);
+			elseif arace and not hrace then
+				-- this group requires a alliance-only race, and not any horde race
+				return Colorize(name, colors.Alliance);
+			end
+		-- specific raceID
+		elseif group.raceID then
+			local hrace = contains(HORDE_ONLY, group.raceID);
+			local arace = contains(ALLIANCE_ONLY, group.raceID);
 			if hrace and not arace then
 				-- this group requires a horde-only race, and not any alliance race
 				return Colorize(name, colors.Horde);
