@@ -1152,6 +1152,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			header(HEADERS.Spell, 375232, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Emerald Dream [PH]
 				q(76982, {	-- A Sentinel's Summon
 					["maps"] = { VALDRAKKEN },
+					["timeline"] = { REMOVED_10_2_0 },
 				}),
 				q(75918, {	-- Fire Season
 					["sourceQuests"] = { 76982 },	-- A Sentinel's Summon
