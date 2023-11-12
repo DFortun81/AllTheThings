@@ -128,9 +128,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					19309,	-- Explore the Emerald Dream
 					19312,	-- Super Duper Bloom
 				}},
-				["g"] = {
-					i(210414),	-- Forest Lord's Antlers (COSMETIC!)
-				},
 			}),
 			ach(19306, {	-- Emerald Dream Glyph Hunter
 				["sym"] = {{"meta_achievement",
@@ -252,6 +249,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			pvp(ach(19294)),	-- Tour of Duty: Emerald Dream
 			ach(19317, {	-- Treasures of the Emerald Dream
+				i(210414),	-- Forest Lord's Antlers (COSMETIC!)
 				crit(62954, {	-- Crystalline Glowblossom
 					["_quests"] = { 77950 },
 				}),
