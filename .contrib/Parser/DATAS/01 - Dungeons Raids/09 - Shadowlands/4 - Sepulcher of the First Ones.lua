@@ -402,37 +402,37 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 				}),
 				ach(15478, {	-- Heroic: Sepulcher of the First Ones
 					crit(53162, { -- Vigilant Guardian
-						["_encounter"] = { VIGILANT_GUARDIAN, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { VIGILANT_GUARDIAN, HEROIC_RAID },
 					}),
 					crit(53166, { -- Skolex, the Insatiable Ravener
-						["_encounter"] = { SKOLEX_THE_INSATIABLE_RAVENER, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { SKOLEX_THE_INSATIABLE_RAVENER, HEROIC_RAID },
 					}),
 					crit(53170, { -- Artificer Xy'mox
-						["_encounter"] = { ARTIFICER_XYMOX, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { ARTIFICER_XYMOX, HEROIC_RAID },
 					}),
 					crit(53174, { -- Dausegne, the Fallen Oracle
-						["_encounter"] = { DAUSEGNE_THE_FALLEN_ORACLE, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { DAUSEGNE_THE_FALLEN_ORACLE, HEROIC_RAID },
 					}),
 					crit(53178, { -- Prototype Pantheon
-						["_encounter"] = { PROTOTYPE_PANTHEON, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { PROTOTYPE_PANTHEON, HEROIC_RAID },
 					}),
 					crit(53182, { -- Lihuvim, Principal Architect
-						["_encounter"] = { LIHUVIM_PRINCIPAL_ARCHITECT, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { LIHUVIM_PRINCIPAL_ARCHITECT, HEROIC_RAID },
 					}),
 					crit(53186, { -- Halondrus the Reclaimer
-						["_encounter"] = { HALONDRUS_THE_RECLAIMER, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { HALONDRUS_THE_RECLAIMER, HEROIC_RAID },
 					}),
 					crit(53190, { -- Anduin Wrynn
-						["_encounter"] = { ANDUIN_WRYNN, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { ANDUIN_WRYNN, HEROIC_RAID },
 					}),
 					crit(53194, { -- Lords of Dread
-						["_encounter"] = { LORDS_OF_DREAD, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { LORDS_OF_DREAD, HEROIC_RAID },
 					}),
 					crit(53198, {-- Rygelon
-						["_encounter"] = { RYGELON, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { RYGELON, HEROIC_RAID },
 					}),
 					crit(53202, {-- The Jailer
-						["_encounter"] = { THE_JAILER, HEROIC_PLUS_ID_RAID },
+						["_encounter"] = { THE_JAILER, HEROIC_RAID },
 					}),
 				}),
 				ach(15490, {	-- Mythic: Sepulcher of the First Ones
