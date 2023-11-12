@@ -25,6 +25,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 78430 },	-- Mean Green Infusion Machine
 				["provider"] = { "n", 211209 },	-- Elianna
 				["coord"] = { 50.2, 61.8, EMERALD_DREAM },
+				["repeatable"] = true,	-- TODO: ShadowBrooks remove repeatable flag once blizzard fixes quest
 				["g"] = {
 					i(210776),	-- Lesser Dream Infusion
 				},

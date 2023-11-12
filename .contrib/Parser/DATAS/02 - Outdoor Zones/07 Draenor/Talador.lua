@@ -813,12 +813,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 73.0, 38.7, TALADOR },
 						["sourceQuests"] = {
 							34685,	-- As The Smoke Rises (breadcrumb)
-							34566,	-- At Your Command
-							36843,	-- They Came From Above
-							34624,	-- Gas Guzzlers (alliance, artillery tower)
-							34573,	-- Iridium Recovery (alliance, artillery tower)
-							34875,	-- Next Steps (alliance, arcane sanctum)
-							34571,	-- Out of Jovite (alliance, artillery tower)
+							34711,	-- Due Cause to Celebrate(A)
+							34712,	-- Due Cause to Celebrate(H)
 						},
 					}),
 					q(34406, {	-- Caught In The Chaos
