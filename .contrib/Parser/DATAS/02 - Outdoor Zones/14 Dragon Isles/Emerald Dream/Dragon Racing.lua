@@ -446,25 +446,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 							ach(19046),	-- Shoreline Switchback Reverse Challenge: Gold
 						},
 					}),
-					dragonridingrace(77986, {	-- Viridescent Venture - Challenge
-						["provider"] = { "n", 210412 },	-- Bronze Timekeeper
-						["coord"] = { 35.1, 55.2, EMERALD_DREAM },
-						["g"] = {
-							ach(19002),	-- Viridescent Venture Challenge: Bronze
-							ach(19003),	-- Viridescent Venture Challenge: Silver
-							ach(19004),	-- Viridescent Venture Challenge: Gold
-						},
-					}),
-					dragonridingrace(77987, {	-- Viridescent Venture - Reverse Challenge
-						["provider"] = { "n", 210412 },	-- Bronze Timekeeper
-						["coord"] = { 35.1, 55.2, EMERALD_DREAM },
-						["g"] = {
-							ach(19005),	-- Viridescent Venture Reverse Challenge: Bronze
-							ach(19006),	-- Viridescent Venture Reverse Challenge: Silver
-							ach(19007),	-- Viridescent Venture Reverse Challenge: Gold
-						},
-					}),
-					dragonridingrace(77999, {	-- Smoldering Sprint - Challenge
+					dragonridingrace(77986, {	-- Smoldering Sprint - Challenge
 						["provider"] = { "n", 210310 },	-- Bronze Timekeeper
 						["coord"] = { 37.2, 44.1, EMERALD_DREAM },
 						["g"] = {
@@ -473,13 +455,31 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 							ach(18989),	-- Smoldering Sprint Challenge: Gold
 						},
 					}),
-					dragonridingrace(78000, {	-- Smoldering Sprint - Reverse Challenge
+					dragonridingrace(77987, {	-- Smoldering Sprint - Reverse Challenge
 						["provider"] = { "n", 210310 },	-- Bronze Timekeeper
 						["coord"] = { 37.2, 44.1, EMERALD_DREAM },
 						["g"] = {
 							ach(18990),	-- Smoldering Sprint Reverse Challenge: Bronze
 							ach(18991),	-- Smoldering Sprint Reverse Challenge: Silver
 							ach(18992),	-- Smoldering Sprint Reverse Challenge: Gold
+						},
+					}),
+					dragonridingrace(77999, {	-- Viridescent Venture - Challenge
+						["provider"] = { "n", 210412 },	-- Bronze Timekeeper
+						["coord"] = { 35.1, 55.2, EMERALD_DREAM },
+						["g"] = {
+							ach(19002),	-- Viridescent Venture Challenge: Bronze
+							ach(19003),	-- Viridescent Venture Challenge: Silver
+							ach(19004),	-- Viridescent Venture Challenge: Gold
+						},
+					}),
+					dragonridingrace(78000, {	-- Viridescent Venture - Reverse Challenge
+						["provider"] = { "n", 210412 },	-- Bronze Timekeeper
+						["coord"] = { 35.1, 55.2, EMERALD_DREAM },
+						["g"] = {
+							ach(19005),	-- Viridescent Venture Reverse Challenge: Bronze
+							ach(19006),	-- Viridescent Venture Reverse Challenge: Silver
+							ach(19007),	-- Viridescent Venture Reverse Challenge: Gold
 						},
 					}),
 					dragonridingrace(77844, {	-- Ysera Invitational - Challenge
