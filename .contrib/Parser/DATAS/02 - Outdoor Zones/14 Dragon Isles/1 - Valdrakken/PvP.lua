@@ -1210,7 +1210,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							}),
 							i(198076, {	-- Pest Fogger
 								["cost"] = {
-									{ "i", BLOODY_TOKENS, 100 },
+									{ "c", BLOODY_TOKENS, 100 },
 								},
 							}),
 							i(206141, {	-- Prismatic Snail Mucus
@@ -1235,22 +1235,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							}),
 							i(202064, {	-- Warbanner of Ire
 								["cost"] = {
-									{ "i", BLOODY_TOKENS, 100 },
+									{ "c", BLOODY_TOKENS, 100 },
 								},
 							}),
 							i(200953, {	-- Wild Dragon Fruit
 								["cost"] = {
-									{ "i", BLOODY_TOKENS, 100 },
+									{ "c", BLOODY_TOKENS, 100 },
 								},
 							}),
 							i(200966, {	-- Wild Truffle
 								["cost"] = {
-									{ "i", BLOODY_TOKENS, 100 },
+									{ "c", BLOODY_TOKENS, 100 },
 								},
 							}),
 						}),
 						i(211148, {	-- Arsenal: Drakebreaker's Axe
-							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(199070),	-- Drakebreaker's Cleaver
 								i(199072),	-- Drakebreaker's Hacker
@@ -1258,7 +1258,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 						}),
 						i(211144, {	-- Arsenal: Drakebreaker's Club
-							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(199088),	-- Drakebreaker's Cudgel
 								i(199087),	-- Drakebreaker's Maul
@@ -1266,46 +1266,46 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 						}),
 						i(211153, {	-- Arsenal: Drakebreaker's Greatsword
-							["cost"] = {{ "i", BLOODY_TOKENS, 800 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
 							["g"] = {
 								i(199084),	-- Drakebreaker's Broadsword
 								i(199085),	-- Drakebreaker's Greatsword
 							},
 						}),
 						i(211157, {	-- Arsenal: Drakebreaker's Gun
-							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(199075),	-- Drakebreaker's Heartseeker
 							},
 						}),
 						i(211146, {	-- Arsenal: Drakebreaker's Knife
-							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(199077),	-- Drakebreaker's Dagger
 								i(199078),	-- Drakebreaker's Shiv
 							},
 						}),
 						i(211155, {	-- Arsenal: Drakebreaker's Offhand
-							["cost"] = {{ "i", BLOODY_TOKENS, 300 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 300 }},
 							["g"] = {
 								i(199079),	-- Drakebreaker's Horn
 							},
 						}),
 						i(211152, {	-- Arsenal: Drakebreaker's Polearm
-							["cost"] = {{ "i", BLOODY_TOKENS, 800 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
 							["g"] = {
 								i(199090),	-- Drakebreaker's Impaler
 								i(199091),	-- Drakebreaker's Javelin
 							},
 						}),
 						i(211150, {	-- Arsenal: Drakebreaker's Shield
-							["cost"] = {{ "i", BLOODY_TOKENS, 300 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 300 }},
 							["g"] = {
 								i(199089),	-- Drakebreaker's Bulwark
 							},
 						}),
 						i(211143, {	-- Arsenal: Drakebreaker's Spiked Hammer
-							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(199095),	-- Drakebreaker's Crusher
 								i(199096),	-- Drakebreaker's Mace
@@ -1313,26 +1313,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 						}),
 						i(211154, {	-- Arsenal: Drakebreaker's Stave
-							["cost"] = {{ "i", BLOODY_TOKENS, 800 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
 							["g"] = {
 								i(199082),	-- Drakebreaker's Pole
 								i(199081),	-- Drakebreaker's Staff
 							},
 						}),
 						i(211156, {	-- Arsenal: Drakebreaker's Wand
-							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(199093),	-- Drakebreaker's Rod
 							},
 						}),
 						i(211147, {	-- Arsenal: Drakebreaker's Warglaive
-							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(199076),	-- Drakebreaker's Glaive
 							},
 						}),
 						i(211140, {	-- Ensemble: Drakebreaker's Cloth Armor
-							["cost"] = {{ "i", BLOODY_TOKENS, 3000 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 3000 }},
 							["g"] = {
 								i(198566),	-- Drakebreaker's Boots
 								i(198961),	-- Drakebreaker's Cloak
@@ -1346,7 +1346,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 						}),
 						i(211138, {	-- Ensemble: Drakebreaker's Leather Armor
-							["cost"] = {{ "i", BLOODY_TOKENS, 3000 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 3000 }},
 							["g"] = {
 								i(198578),	-- Drakebreaker's Bindings
 								i(198576),	-- Drakebreaker's Breeches
@@ -1360,7 +1360,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 						}),
 						i(211135, {	-- Ensemble: Drakebreaker's Mail Armor
-							["cost"] = {{ "i", BLOODY_TOKENS, 3000 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 3000 }},
 							["g"] = {
 								i(198596),	-- Drakebreaker's Bracers
 								i(198589),	-- Drakebreaker's Chestguard
@@ -1374,7 +1374,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 						}),
 						i(211100, {	-- Ensemble: Drakebreaker's Plate Armor
-							["cost"] = {{ "i", BLOODY_TOKENS, 3000 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 3000 }},
 							["g"] = {
 								i(198588),	-- Drakebreaker's Armplates
 								i(198582),	-- Drakebreaker's Breastplate
@@ -1388,7 +1388,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 						}),
 						i(211172, {	-- Arsenal: Scalewarden's Axe
-							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(206242),	-- Scalewarden's Battleaxe
 								i(206244),	-- Scalewarden's Carver
@@ -1396,7 +1396,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 						}),
 						i(211176, {	-- Arsenal: Scalewarden's Club
-							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(206256),	-- Scalewarden's Cudgel
 								i(206255),	-- Scalewarden's Hammer
@@ -1404,7 +1404,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 						}),
 						i(211175, {	-- Arsenal: Scalewarden's Mace
-							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(206254),	-- Scalewarden's Club
 								i(206262),	-- Scalewarden's Crusher
@@ -1412,7 +1412,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 						}),
 						i(211177, {	-- Arsenal: Scalewarden's Shortsword
-							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(206265),	-- Scalewarden's Sabre
 								i(206248),	-- Scalewarden's Shortsword
@@ -1420,65 +1420,65 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 						}),
 						i(211169, {	-- Arsenal: Scalewarden's Greatsword
-							["cost"] = {{ "i", BLOODY_TOKENS, 800 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
 							["g"] = {
 								i(206253),	-- Scalewarden's Broadsword
 								i(206252),	-- Scalewarden's Greatsword
 							},
 						}),
 						i(211165, {	-- Arsenal: Scalewarden's Gun
-							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(206245),	-- Scalewarden's Handcannon
 							},
 						}),
 						i(211174, {	-- Arsenal: Scalewarden's Dagger
-							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(206820),	-- Scalewarden's Dagger
 								i(206830),	-- Scalewarden's Dirk
 							},
 						}),
 						i(211167, {	-- Arsenal: Scalewarden's Offhand
-							["cost"] = {{ "i", BLOODY_TOKENS, 300 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 300 }},
 							["g"] = {
 								i(206249),	-- Scalewarden's Flame
 							},
 						}),
 						i(211170, {	-- Arsenal: Scalewarden's Polearm
-							["cost"] = {{ "i", BLOODY_TOKENS, 800 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
 							["g"] = {
 								i(206258),	-- Scalewarden's Impaler
 								i(206259),	-- Scalewarden's Spear
 							},
 						}),
 						i(211171, {	-- Arsenal: Scalewarden's Shield
-							["cost"] = {{ "i", BLOODY_TOKENS, 300 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 300 }},
 							["g"] = {
 								i(206257),	-- Scalewarden's Aegis
 							},
 						}),
 						i(211168, {	-- Arsenal: Scalewarden's Stave
-							["cost"] = {{ "i", BLOODY_TOKENS, 800 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
 							["g"] = {
 								i(206251),	-- Scalewarden's Battlestaff
 								i(206250),	-- Scalewarden's Spire
 							},
 						}),
 						i(211166, {	-- Arsenal: Scalewarden's Wand
-							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(206260),	-- Scalewarden's Wand
 							},
 						}),
 						i(211173, {	-- Arsenal: Scalewarden's Warglaive
-							["cost"] = {{ "i", BLOODY_TOKENS, 500 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
 							["g"] = {
 								i(206246),	-- Scalewarden's Twinblade
 							},
 						}),
 						i(211141, {	-- Ensemble: Scalewarden's Cloth Armor
-							["cost"] = {{ "i", BLOODY_TOKENS, 3000 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 3000 }},
 							["g"] = {
 								i(206240),	-- Scalewarden's Cloak
 								i(206212),	-- Scalewarden's Cloth Bindings
@@ -1492,7 +1492,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 						}),
 						i(211139, {	-- Ensemble: Scalewarden's Leather Armor
-							["cost"] = {{ "i", BLOODY_TOKENS, 3000 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 3000 }},
 							["g"] = {
 								i(206241),	-- Scalewarden's Drape
 								i(206216),	-- Scalewarden's Hood
@@ -1506,7 +1506,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 						}),
 						i(211136, {	-- Ensemble: Scalewarden's Mail Armor
-							["cost"] = {{ "i", BLOODY_TOKENS, 3000 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 3000 }},
 							["g"] = {
 								i(206238),	-- Scalewarden's Cape
 								i(206237),	-- Scalewarden's Chain Armguards
@@ -1520,7 +1520,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							},
 						}),
 						i(211134, {	-- Ensemble: Scalewarden's Plate Armor
-							["cost"] = {{ "i", BLOODY_TOKENS, 3000 }},
+							["cost"] = {{ "c", BLOODY_TOKENS, 3000 }},
 							["g"] = {
 								i(206222),	-- Scalewarden's Faceplate
 								i(206229),	-- Scalewarden's Plate Bracers
