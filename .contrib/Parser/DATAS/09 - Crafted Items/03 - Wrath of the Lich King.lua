@@ -461,16 +461,6 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 		}),
 	}),
 	prof(HERBALISM, {
-		n(DISCOVERY, {
-			r(55503, {	-- Lifeblood (Rank 6) / Rank 7 [CATA]
-				-- #if AFTER CATA
-				["rank"] = 7,
-				-- #else
-				["rank"] = 6,
-				-- #endif
-				["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 }
-			}),
-		}),
 		spell(2366, {	-- Herb Gathering
 			i(36903),	-- Adder's Tongue
 			i(108353, {["timeline"] = {ADDED_6_0_2}}),	-- Adder's Tongue Stem
@@ -766,9 +756,6 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 		}),
 	}),
 	prof(MINING, {
-		n(DISCOVERY, {
-			r(53040, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}, ["rank"] = 6 }),	-- Toughness [Rank 6]
-		}),
 		spell(2575, {	-- Mining
 			i(36909),	-- Cobalt Ore
 			i(108305, {["timeline"] = {ADDED_6_0_2}}),	-- Cobalt Ore Nugget

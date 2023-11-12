@@ -285,16 +285,6 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 		}),
 	}),
 	prof(HERBALISM, {
-		n(DISCOVERY, {
-			r(81708, {	-- Lifeblood [Rank 1] [CATA]
-				["rank"] = 1,
-				["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 }
-			}),
-			r(74497, {	-- Lifeblood (Rank 8) [CATA]
-				["rank"] = 8,
-				["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 }
-			}),
-		}),
 		spell(2366, {	-- Herb Gathering
 			i(52985),	-- Azshara's Veil
 			i(108362, {["timeline"] = {ADDED_6_0_2}}),	-- Azshara's Veil Stem
@@ -610,9 +600,6 @@ root(ROOTS.Craftables, tier(CATA_TIER, applyclassicphase(CATA_PHASE_ONE, bubbleD
 			i(67282, {	-- Elementium Geode (PET!)
 				["requireSkill"] = MINING,
 			}),
-		}),
-		n(DISCOVERY, {
-			r(74496, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Toughness [Rank 7]
 		}),
 		spell(2575, {	-- Mining
 			i(52185),	-- Elementium Ore

@@ -1276,40 +1276,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		-- #endif
 	}),
 	prof(HERBALISM, {
-		n(DISCOVERY, {
-			r(55428, {	-- Lifeblood [Rank 1] / Rank 2 [CATA]
-				-- #if AFTER CATA
-				["rank"] = 2,
-				-- #else
-				["rank"] = 1,
-				-- #endif
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
-			}),
-			r(55480, {	-- Lifeblood [Rank 2] / Rank 3 [CATA]
-				-- #if AFTER CATA
-				["rank"] = 3,
-				-- #else
-				["rank"] = 2,
-				-- #endif
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
-			}),
-			r(55500, {	-- Lifeblood [Rank 3] / Rank 4 [CATA]
-				-- #if AFTER CATA
-				["rank"] = 4,
-				-- #else
-				["rank"] = 3,
-				-- #endif
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
-			}),
-			r(55501, {	-- Lifeblood (Rank 4) / Rank 5 [CATA]
-				-- #if AFTER CATA
-				["rank"] = 5,
-				-- #else
-				["rank"] = 4,
-				-- #endif
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
-			}),
-		}),
 		i(11020, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Evergreen Pouch
 			["cost"] = {
 				{ "i", 11018, 2 },	-- Un'Goro Soil
@@ -2172,12 +2138,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		}),
 	}),
 	prof(MINING, {
-		n(DISCOVERY, {
-			r(53120, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 1 }),	-- Toughness [Rank 1]
-			r(53121, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 2 }),	-- Toughness [Rank 2]
-			r(53122, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 3 }),	-- Toughness [Rank 3]
-			r(53123, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 4 }),	-- Toughness [Rank 4]
-		}),
 		spell(2575, {	-- Mining
 			i(2836),	-- Coarse Stone
 			i(2770),	-- Copper Ore

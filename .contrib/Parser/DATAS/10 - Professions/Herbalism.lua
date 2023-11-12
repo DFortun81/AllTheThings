@@ -3,6 +3,70 @@
 -----------------------------------------------------
 local HERBALISM_KNOWLEDGE = 2034;
 root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERBALISM }, {
+	-- #if AFTER 3.0.2
+	n(DISCOVERY, {
+		r(55428, {	-- Lifeblood [Rank 1] / Rank 2 [CATA]
+			-- #if AFTER CATA
+			["rank"] = 2,
+			-- #else
+			["rank"] = 1,
+			-- #endif
+			["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
+		}),
+		r(55480, {	-- Lifeblood [Rank 2] / Rank 3 [CATA]
+			-- #if AFTER CATA
+			["rank"] = 3,
+			-- #else
+			["rank"] = 2,
+			-- #endif
+			["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
+		}),
+		r(55500, {	-- Lifeblood [Rank 3] / Rank 4 [CATA]
+			-- #if AFTER CATA
+			["rank"] = 4,
+			-- #else
+			["rank"] = 3,
+			-- #endif
+			["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
+		}),
+		r(55501, {	-- Lifeblood (Rank 4) / Rank 5 [CATA]
+			-- #if AFTER CATA
+			["rank"] = 5,
+			-- #else
+			["rank"] = 4,
+			-- #endif
+			["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
+		}),
+		r(55502, {	-- Lifeblood (Rank 5) / Rank 6 [CATA]
+			-- #if AFTER CATA
+			["rank"] = 6,
+			-- #else
+			["rank"] = 5,
+			-- #endif
+			["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
+		}),
+		r(55503, {	-- Lifeblood (Rank 6) / Rank 7 [CATA]
+			-- #if AFTER CATA
+			["rank"] = 7,
+			-- #else
+			["rank"] = 6,
+			-- #endif
+			["timeline"] = { ADDED_3_0_3, REMOVED_6_0_2 }
+		}),
+		r(81708, {	-- Lifeblood [Rank 1] [CATA]
+			["rank"] = 1,
+			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 }
+		}),
+		r(74497, {	-- Lifeblood (Rank 8) [CATA]
+			["rank"] = 8,
+			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_6_0_2 }
+		}),
+		r(121279, {	-- Lifeblood (Rank 9) [MOP]
+			["rank"] = 9,
+			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 }
+		}),
+	}),
+	-- #endif
 	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18837, {	-- Broken Isles Herbalism Techniques

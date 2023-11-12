@@ -564,16 +564,6 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 		i(27429),	-- Zangarian Sporefish
 	}),
 	prof(HERBALISM, {
-		n(DISCOVERY, {
-			r(55502, {	-- Lifeblood (Rank 5) / Rank 6 [CATA]
-				-- #if AFTER CATA
-				["rank"] = 6,
-				-- #else
-				["rank"] = 5,
-				-- #endif
-				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 }
-			}),
-		}),
 		spell(2366, {	-- Herb Gathering
 			i(22790),	-- Ancient Lichen
 			i(108348, {["timeline"] = {ADDED_6_0_2}}),	-- Ancient Lichen Petal
@@ -934,9 +924,6 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(MINING, {
-		n(DISCOVERY, {
-			r(53124, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 5 }),	-- Toughness [Rank 5]
-		}),
 		spell(2575, {	-- Mining
 			i(23425),	-- Adamantite Ore
 			i(108302, {["timeline"] = {ADDED_6_0_2}}),	-- Adamantite Ore Nugget

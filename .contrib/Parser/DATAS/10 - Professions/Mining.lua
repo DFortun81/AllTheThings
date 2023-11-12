@@ -3,6 +3,18 @@
 -----------------------------------------------------
 local MINING_KNOWLEDGE = 2035;
 root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING }, {
+	-- #if AFTER 3.0.2
+	n(DISCOVERY, {
+		r(53120, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 1 }),	-- Toughness [Rank 1]
+		r(53121, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 2 }),	-- Toughness [Rank 2]
+		r(53122, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 3 }),	-- Toughness [Rank 3]
+		r(53123, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 4 }),	-- Toughness [Rank 4]
+		r(53124, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}, ["rank"] = 5 }),	-- Toughness [Rank 5]
+		r(53040, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}, ["rank"] = 6 }),	-- Toughness [Rank 6]
+		r(74496, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Toughness [Rank 7]
+		r(102163, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Toughness [Rank 8]
+	}),
+	-- #endif
 	tier(CLASSIC_TIER, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18841, {	-- Doing Your Share

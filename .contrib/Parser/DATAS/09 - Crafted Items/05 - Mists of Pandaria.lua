@@ -455,12 +455,6 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(HERBALISM, {
-		n(DISCOVERY, {
-			r(121279, {	-- Lifeblood (Rank 9) [MOP]
-				["rank"] = 9,
-				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 }
-			}),
-		}),
 		spell(2366, {	-- Herb Gathering
 			i(89639),	-- Desecrated Herb
 			i(97624, {["timeline"] = {ADDED_5_3_0}}),	-- Desecrated Herb Pod
@@ -1050,9 +1044,6 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(MINING, {
-		n(DISCOVERY, {
-			r(102163, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Toughness [Rank 8]
-		}),
 		spell(2575, {	-- Mining
 			i(72094),	-- Black Trillium Ore
 			i(97512, {["timeline"] = {ADDED_5_3_0}}),	-- Ghost Iron Nugget
