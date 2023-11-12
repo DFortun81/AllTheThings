@@ -473,12 +473,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		})),
 		n(SPECIAL, {
 			i(200932, {	-- Encaged Airy Soul
-				["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+				["description"] = "In order to capture a soul with Empty Soul Cage, the elite air elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 				["cost"] = {
 					{ "i", 200938, 1 },	-- 1x Empty Soul Cage
 					{ "i", 199414, 1 },	-- 1x Zapthrottle Soul Inhaler
 				},
-				["coord"] = { 24.6, 36.0, OHNAHRAN_PLAINS },
+				["coord"] = { 58.2, 66.6, THE_AZURE_SPAN },
 				["g"] = {
 					i(201296, {	-- Docile Airy Soul
 						i(193921),	-- Airy Soul
@@ -487,7 +487,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				},
 			}),
 			i(200936, {	-- Encaged Earthen Soul
-				["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+				["description"] = "In order to capture a soul with Empty Soul Cage, the elite earth elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 				["cost"] = {
 					{ "i", 200938, 1 },	-- 1x Empty Soul Cage
 					{ "i", 199414, 1 },	-- 1x Zapthrottle Soul Inhaler
@@ -505,7 +505,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				},
 			}),
 			i(200931, {	-- Encaged Fiery Soul
-				["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+				["description"] = "In order to capture a soul with Empty Soul Cage, the elite fire elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 				["cost"] = {
 					{ "i", 200938, 1 },	-- 1x Empty Soul Cage
 					{ "i", 199414, 1 },	-- 1x Zapthrottle Soul Inhaler
@@ -519,12 +519,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				},
 			}),
 			i(200934, {	-- Encaged Frosty Soul
-				["description"] = "In order to capture a soul with Empty Soul Cage, the elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
+				["description"] = "In order to capture a soul with Empty Soul Cage, the elite frost elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",
 				["cost"] = {
 					{ "i", 200938, 1 },	-- 1x Empty Soul Cage
 					{ "i", 199414, 1 },	-- 1x Zapthrottle Soul Inhaler
 				},
-				["coord"] = { 55.2, 76.6, OHNAHRAN_PLAINS },
+				["coord"] = { 58.2, 66.6, THE_AZURE_SPAN },
 				["g"] = {
 					i(201299, {	-- Docile Frosty Soul
 						i(193919),	-- Frosty Soul
