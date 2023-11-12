@@ -673,7 +673,6 @@ root(ROOTS.Unsorted, {
 				q(77693),	--
 				q(77694),	--
 				q(77695),	--
-				q(77711),	-- PTR:And a Pinch of Magic
 				q(77738),	--
 				q(77740),	--
 				q(77741),	--
@@ -685,9 +684,7 @@ root(ROOTS.Unsorted, {
 				q(77752),	--
 				q(77753),	--
 				q(77758),	--
-				q(77759),	--
 				q(77762),	-- PTR:A Little Hope is Never without Worth
-				q(77767),	--
 				q(77768),	--
 				q(77769),	--
 				q(77770),	--

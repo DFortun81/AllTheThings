@@ -995,8 +995,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			q(77711, {	--	And a Pinch of Magic
 				["sourceQuests"] = { 77697 },	-- The Right Food...
-				--["provider"] = { "n",  },	--
-				--["coord"] = { 48.6, 67.8, EMERALD_DREAM },
+				["provider"] = { "n", 209571 },	-- Professor Ash
+				["coord"] = { 48.7, 68.0, EMERALD_DREAM },
 				["g"] = {
 					i(208705),	-- Druidic Totem (QI!)
 				},
@@ -1066,6 +1066,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77712),	-- talk with Smoldering Sprout (n: 209253) first time which transform itself into Blackened Sprout
 		q(77713),	-- talk with Blackened Sprout (n: 209468) transform itself into Sprout (n: 209292) and unlock quests
 		q(77717),	-- lockout after turn in quest and flower show timer (progress bar)
+		q(77767),	-- after turn in qID 77711 (And a Pinch of Magic), when Professor Ash come to flower (spellIDs 421103 & 420717)
+		q(77759),	-- after turn in qID 77711 (And a Pinch of Magic), when animation start pop around flower (spellID 420720)
 		--
 		q(78707),	-- Moonberry's Many Mischief Makers (itemID 210996)
 	}),
