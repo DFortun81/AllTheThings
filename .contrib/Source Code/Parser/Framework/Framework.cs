@@ -2254,12 +2254,12 @@ namespace ATT
                 if (fieldValues.Count == 1)
                 {
                     object val = fieldValues.First();
-                    if (!Equals(parentVal, val))
+                    if (parentVal != null && !Equals(parentVal, val))
                     {
                         // parent has a different field val, don't touch it
                         // Crit auto-assign to 3.0.1 in crit() if no timeline
                         fieldValues.Clear();
-                        break;
+                        continue;
                     }
                     switch (fieldAdjustment.Value)
                     {
