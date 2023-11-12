@@ -4,7 +4,7 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(QUESTS, {
 		q(72481, {	-- The Waking Shore Tour
-			["sourceQuests"] = { 68796 },	-- The Skytop Observatory
+			["sourceQuests"] = { 68798 },	-- Dragon Glyphs and You
 			["provider"] = { "n", 193411 },	-- Celormu
 			["coord"] = { 73.3, 52.1, THE_WAKING_SHORES },
 		}),
