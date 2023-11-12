@@ -90,6 +90,7 @@ local GeneralSettingsBase = {
 		["AccountWide:Achievements"] = true,
 		["AccountWide:AzeriteEssences"] = true,
 		-- ["AccountWide:BattlePets"] = true,
+		["AccountWide:CharacterUnlocks"] = true,
 		["AccountWide:Conduits"] = true,
 		-- ["AccountWide:DrakewatcherManuscripts"] = true,
 		["AccountWide:FlightPaths"] = true,
