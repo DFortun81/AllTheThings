@@ -6898,7 +6898,7 @@ local QuestNameDefault = setmetatable({}, { __index = function(t, id)
 	end
 end});
 local function GetQuestName(id)
-	return L["QUEST_NAMES"][id] or QuestNameFromServer[id] or QuestNameDefault[id];
+	return L.QUEST_NAMES[id] or QuestNameFromServer[id] or QuestNameDefault[id];
 end
 app.GetQuestName = GetQuestName;
 local QuestsRequested = {};
@@ -6909,13 +6909,8 @@ app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 	QuestsRequested[questID] = nil;
 	-- Store the Quest title if successful, regardless of already being cached
 	if success then
-		local name = QuestUtils_GetQuestName(questID);
-		if name and name ~= "" then
-			-- app.PrintDebug("Available QuestData",questID,title)
-			QuestNameFromServer[questID] = name;
 			-- trigger a slight delayed refresh to visible ATT windows since a quest name was now populated
 			app:RefreshWindows();
-		end
 	else
 	-- 	this quest name cannot be populated by the server
 		-- app.PrintDebug("No Server QuestData",questID)
@@ -14370,7 +14365,7 @@ function app:RefreshWindows()
 	if app.Processing_RefreshWindows then return; end
 	app.Processing_RefreshWindows = true;
 	-- app.PrintDebug("RefreshWindows:Async")
-	AfterCombatOrDelayedCallback(RefreshWindows, 0.1);
+	Callback(RefreshWindows);
 end
 local function ClearRowData(self)
 	self.ref = nil;
