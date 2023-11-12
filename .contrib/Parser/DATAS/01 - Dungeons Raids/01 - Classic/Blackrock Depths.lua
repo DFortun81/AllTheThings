@@ -1288,7 +1288,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 				q(4286, {	-- The Good Stuff
 					["qg"] = 9177,	-- Oralius
-					["coord"] = { 84.6, 68.7, BADLANDS },
+					["coord"] = { 84.6, 68.7, BURNING_STEPPES },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
