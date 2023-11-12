@@ -6900,7 +6900,8 @@ end});
 local function GetQuestName(id)
 	return L.QUEST_NAMES[id] or QuestNameFromServer[id] or QuestNameDefault[id];
 end
-app.GetQuestName = GetQuestName;
+-- Will return a manual Quest locale name, Server name, or a default fallback quest name
+app.GetQuestName = GetQuestName
 local QuestsRequested = {};
 local QuestsToPopulate = {};
 -- This event seems to fire synchronously from C_QuestLog.RequestLoadQuestByID if we already have the data
@@ -8174,8 +8175,11 @@ local function default_name(t)
 				local name
 				for k,id in ipairs(sourceQuests) do
 					name = app.GetQuestName(id);
-					if not IsRetrieving(name) then return name; end
+					-- special case to ignore caching a default quest name as criteria name
+					if not IsRetrieving(name) and not name:find("Quest #") then return name; end
+					t.__questname = name
 				end
+				-- app.PrintDebug("criteria sq no name",t.achievementID,t.criteriaID,rawget(t,"name"))
 				return
 			end
 		end
@@ -8202,7 +8206,7 @@ local criteriaFields = {
 		end
 	end,
 	["name"] = function(t)
-		return cache.GetCachedField(t, "name", default_name)
+		return cache.GetCachedField(t, "name", default_name) or t.__questname
 	end,
 	["description"] = function(t)
 		if t.encounterID then
