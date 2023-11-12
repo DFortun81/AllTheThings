@@ -96,11 +96,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(BOSSES, bubbleDownFiltered({
 					["description"] = "Can drop any Time Rift Vendor Item.",
 				}, FILTERFUNC_npcID,{
-					n(COMMON_BOSS_DROPS, {
-						-- Both drops from any boss
-						i(207113),	-- Grimoire of the Trickster Fel Imp (CI!)
-						i(208052),	-- Grimoire of the Voracious Felmaw (CI!)
-					}),
 					-- testing out organizing with raw NPCs for bosses and nesting under the respective maps where they spawn
 					-- this will allow the achievement criteria to move under the proper bosses instead of being listed separately in lists
 					-- there's 7 boss zones and 14
@@ -206,6 +201,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						}),
 					}),
 				})),
+				n(COMMON_BOSS_DROPS, {
+					["crs"] = {
+						205307,	-- Fractured Causality / Fury of N'zoth
+						205306,	-- Fractured Causality / Illidan
+						205305,	-- Fractured Causality / The Lich King
+						204808,	-- Fractured Causality / Gil'dan
+						205304,	-- Fractured Causality / Freya
+						205309,	-- Fractured Causality / Overload Mechagon
+						205308,	-- Fractured Causality / Varian Wrynn
+					},
+					["groups"] = {
+						i(DILATED_TIME_CAPSULE),
+						-- Both drops from any boss
+						i(207113),	-- Grimoire of the Trickster Fel Imp (CI!)
+						i(208052),	-- Grimoire of the Voracious Felmaw (CI!)
+					},
+				}),
 				n(FACTIONS, {
 					faction(FACTION_SORIDORMI, {
 						["cost"] = {{ "c", SORIDORMIS_RECOGNITION, 42000 }},
@@ -376,17 +388,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					i(207583, {	-- Box of Collapsed Reality
 						-- Anything from vendors can drop here, but the chance is so small, it's not worth to mention this as a source.
-					}),
-					i(DILATED_TIME_CAPSULE, {
-						["crs"] = {
-							205307,	-- Fractured Causality / Fury of N'zoth
-							205306,	-- Fractured Causality / Illidan
-							205305,	-- Fractured Causality / The Lich King
-							204808,	-- Fractured Causality / Gil'dan
-							205304,	-- Fractured Causality / Freya
-							205309,	-- Fractured Causality / Overload Mechagon
-							205308,	-- Fractured Causality / Varian Wrynn
-						},
 					}),
 					i(207083),	-- Gift of the Ravenous Black Gryphon (MOUNT!)
 					i(207057),	-- Gift of the White War Wolf (MOUNT!)
