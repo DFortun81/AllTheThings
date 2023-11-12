@@ -685,6 +685,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 74547 },	-- Ryan Metcalf
 					}),
 					q(34897, {	-- Rangari Roundup
+						["description"] = "You need to be close to Rangari Navra before quest shows up on mini-map",
 						["coord"] = { 43.6, 51.6, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 80378 },	-- Rangari Navra
