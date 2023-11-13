@@ -55,6 +55,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208371),	-- Fire Assassin's Boots
 					i(208328),	-- Fystia's Deft Hands
 					i(209881),	-- Fystia's Fiery Kris
+					i(208331),	-- Cowl of the Flame
 					bo(78015, true),	-- Firebrand Fystia bonus objective
 				},
 			}),

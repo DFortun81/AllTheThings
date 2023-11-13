@@ -2463,7 +2463,6 @@ root(ROOTS.NeverImplemented, {
 				i(211132),	-- Omni Storm
 				------ Rares? ------
 				i(208373),	-- Band of Bated Breath
-				i(208331),	-- Cowl of the Flame
 				i(209880),	-- Curve of Starry Dusks
 				i(208385),	-- Flame Endowed Blade
 				i(208336),	-- Legguards of the Dreamsaber
