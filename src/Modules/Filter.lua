@@ -107,6 +107,8 @@ DefineToggleFilter("Unobtainable", AccountFilters,
 function(item)
 	return not item.u or SettingsUnobtainable[item.u];
 end);
+-- manually track Unobtainable in CurrentCharacterFilters
+RawCharacterFilters.Unobtainable = api.Filters.Unobtainable
 
 -- PvP	-- FilterItemClass_PvP
 DefineToggleFilter("PvP", AccountFilters,
