@@ -715,7 +715,6 @@ root(ROOTS.Unsorted, {
 				q(78067),	--
 				q(78087),	--
 				q(78096),	-- PTR:A Silver Lining
-				q(78129),	-- PTR:Gotta Go Faster
 				q(78130),	--
 				q(78131),	-- PTR:A Winter Veil Gift
 				q(78209),	--

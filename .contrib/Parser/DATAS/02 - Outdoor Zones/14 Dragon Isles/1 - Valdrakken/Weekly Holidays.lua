@@ -136,12 +136,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["_drop"] = { "g" },	-- Drop Trash
 			}, {
 				-- #IF AFTER DF
-				pvp(q(47148, {			-- Something Different
+				pvp(q(47148, {	-- Something Different
 					["timeline"] = { ADDED_10_0_2_LAUNCH },
 				})),
 				-- #ENDIF
-				pvp(q(78128, {			-- Gotta Go Fast
+				pvp(q(78128, {	-- Gotta Go Fast
 					["timeline"] = { ADDED_10_2_0 },
+				})),
+				pvp(q(78129, {	-- Gotta Go Faster
+					["timeline"] = { ADDED_10_2_0 },
+					["sourceQuest"] = { 78128 },
 				})),
 			})),
 		}),
