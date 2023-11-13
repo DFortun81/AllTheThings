@@ -63,7 +63,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/3 Corrupted Flower
-									["provider"] = { "i", 24416 },	-- Corrupted Flower
+									["providers"] = {
+										{ "i",  24416 },	-- Corrupted Flower
+										{ "o", 182127 },	-- Corrupted Flower
+									},
 								}),
 							},
 						}),
@@ -789,6 +792,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9675, {	-- Beast Training
 					["qg"] = 17614,	-- Huntress Kella Nightbow
+					["sourceQuest"] = 9593,	-- Taming the Beast (3/3)
 					["coord"] = { 24.2, 54.4, AZUREMYST_ISLE },
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { THE_EXODAR },
@@ -1222,6 +1226,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),
 				}),
+				q(9757, {	-- Seek Huntress Kella Nightbow
+					["qg"] = 17110,	-- Acteon <Hunter Trainer>
+					["coord"] = { 49.8, 51.8, AZUREMYST_ISLE },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+				}),
 				q(9537, {	-- Show Gnomercy
 					["qg"] = 17240,	-- Admiral Odesyus
 					["sourceQuest"] = 9531,	-- Tree's Company
@@ -1280,6 +1292,62 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						recipe(71),		-- Defensive Stance
 						--recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
 						recipe(355),	-- Taunt
+						-- #endif
+					},
+				}),
+				q(9591, {	-- Taming the Beast (1/3)
+					["qg"] = 17614,	-- Huntress Kella Nightbow
+					["sourceQuest"] = 9757,	-- Seek Huntress Kella Nightbow
+					["coord"] = { 24.2, 54.2, AZUREMYST_ISLE },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- Tame a Barbed Crawler
+							["providers"] = {
+								{ "n", 17217 },	-- Barbed Crawler
+								{ "i", 23896 },	-- Taming Totem
+							},
+						}),
+					},
+				}),
+				q(9592, {	-- Taming the Beast (2/3)
+					["qg"] = 17614,	-- Huntress Kella Nightbow
+					["sourceQuest"] = 9591,	-- Taming the Beast (1/3)
+					["coord"] = { 24.2, 54.2, AZUREMYST_ISLE },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- Tame a Greater Timberstrider
+							["providers"] = {
+								{ "n", 17374 },	-- Greater Timberstrider
+								{ "i", 23897 },	-- Taming Totem
+							},
+						}),
+					},
+				}),
+				q(9593, {	-- Taming the Beast (3/3)
+					["qg"] = 17614,	-- Huntress Kella Nightbow
+					["sourceQuest"] = 9592,	-- Taming the Beast (2/3)
+					["coord"] = { 24.2, 54.2, AZUREMYST_ISLE },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- Tame a Nightstalker
+							["providers"] = {
+								{ "n", 17203 },	-- Nightstalker
+								{ "i", 23898 },	-- Taming Totem
+							},
+						}),
+						-- #if BEFORE CATA
+						recipe(883),	-- Call Pet
+						recipe(2641),	-- Dismiss Pet
+						recipe(1515),	-- Tame Beast
 						-- #endif
 					},
 				}),
