@@ -17384,7 +17384,7 @@ customWindowUpdates["AchievementHarvester"] = function(self, ...)
 		if not self.initialized then
 			self.doesOwnUpdate = true;
 			self.initialized = true;
-			self.Limit = 18359;	-- MissingAchievements:10.0.2.46781
+			self.Limit = 19451;	-- MissingAchievements:10.2.0.51685
 			self.PartitionSize = 2000;
 			local db = {};
 			local CleanUpHarvests = function()

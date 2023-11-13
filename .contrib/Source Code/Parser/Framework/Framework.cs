@@ -1508,6 +1508,17 @@ namespace ATT
                 parent.Value.TryConvert(out achID);
             }
 
+            // Single SourceQuests can convert to _quests for criteria cloning
+            if (data.TryGetValue("sourceQuests", out List<object> questIDs) && questIDs.Count == 1)
+            {
+                long sqQuestID = questIDs.AsTypedEnumerable<long>().First();
+
+                LogDebugWarn($"Converted single 'sourceQuests' to '_quests' for Criteria {achID}:{criteriaID} with sourceQuest: {sqQuestID}");
+                data["_quests"] = new List<long> { sqQuestID };
+                // can remove 'sourceQuests' from the criteria since it's going to be sourced under the required quest
+                data.Remove("sourceQuests");
+            }
+
             // Grab AchievementDB info
             if (!ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo))
                 return;
@@ -1517,17 +1528,33 @@ namespace ATT
                 return;
 
             // Grab matching Criteria data
-            var criteriaData = criteriaList.AsTypedEnumerable<IDictionary<string, object>>().FirstOrDefault(c => c.TryGetValue("criteriaID", out long criteriaInfoID) && criteriaInfoID == criteriaID);
+            bool critUID = false;
+            bool critID = false;
+            long criteriaInfoID = 0;
+            long criteriaInfoUID = 0;
+            var criteriaData = criteriaList.AsTypedEnumerable<IDictionary<string, object>>().FirstOrDefault(c =>
+                (c.TryGetValue("criteriaID", out criteriaInfoID) | c.TryGetValue("criteriaUID", out criteriaInfoUID)) &&
+                ((critID = criteriaInfoID == criteriaID) | (critUID = criteriaInfoUID == criteriaID)));
             if (criteriaData == null)
                 return;
 
+            // Make sure criteria include both ID and UID if possible for clarity in-game (not entirely sure this is needed yet... Achievement/Criteria is so complicated)
+            //if (critID && criteriaInfoUID > 0)
+            //{
+            //    data["uid"] = criteriaInfoUID;
+            //}
+            //if (critUID && criteriaInfoID > 0)
+            //{
+            //    data["id"] = criteriaInfoID;
+            //}
+
             // Check for criteria DB data that is useful for parsing
-            // SourceQuest can convert to _quests for criteria cloning
+            // SourceQuest(s) can convert to _quests for criteria cloning
             if (criteriaData.TryGetValue("sourceQuest", out long questID))
             {
                 if (data.TryGetValue("_quests", out object quests))
                 {
-                    LogDebug($"WARN: Remove _quests {ToJSON(quests)} from Criteria {achID}:{criteriaID}. AchievementDB contains sourceQuest: {questID}");
+                    LogDebugWarn($"Remove _quests/sourceQuests {ToJSON(quests)} from Criteria {achID}:{criteriaID}. AchievementDB contains sourceQuest: {questID}");
                 }
                 else
                 {
@@ -1541,7 +1568,7 @@ namespace ATT
                 // {
                 //     LogDebug($"WARN: Move cost/provider from Criteria {achID}:{criteriaID} to its SourceQuest {questID} if applicable");
                 // }
-                // can remove 'sourceQuests' from the criteria in Retail since it's going to be sourced under the required quest
+                // can remove 'sourceQuests' from the criteria since it's going to be sourced under the required quest
                 data.Remove("sourceQuests");
             }
 

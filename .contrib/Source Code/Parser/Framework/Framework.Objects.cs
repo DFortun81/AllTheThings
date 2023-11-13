@@ -1866,6 +1866,8 @@ end");
                     case "zone-text-areaID":
                     case "rwp":
                     case "awp":
+                    case "id":
+                    case "uid":
                         {
                             try
                             {
@@ -2180,7 +2182,7 @@ end");
                             // Only warn the programmer once per field per session.
                             if (WARNED_FIELDS.ContainsKey(field)) return;
                             WARNED_FIELDS[field] = true;
-                            Log($"WARN: Parser is ignoring field [{field}] = {ToJSON(value)}{Environment.NewLine}", item);
+                            LogWarn($"Parser is ignoring field [{field}] = {ToJSON(value)}{Environment.NewLine}", item);
                             break;
                         }
                 }
