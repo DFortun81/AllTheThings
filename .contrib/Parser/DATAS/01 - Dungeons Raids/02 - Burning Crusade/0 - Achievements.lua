@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+-- #if AFTER 3.0.1
 root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 	n(ACHIEVEMENTS, {
 		ach(11747, {["timeline"] = {ADDED_7_2_0}}),	-- Merely a Set (Serpentshrine Cavern and The Eye)
@@ -62,3 +63,4 @@ root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 		ach(11746, {["timeline"] = {ADDED_7_2_0}}),	-- Outlandish Style (Gruuls' Lair, Karazhan, and Magtheridon's Lair)
 	}),
 })));
+-- #endif

@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+-- #if AFTER 3.0.2
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	n(ACHIEVEMENTS, {
 		ach(1283, {		-- Classic Dungeonmaster
@@ -37,4 +38,5 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			}},
 		}),
 	}),
-}))
+}));
+-- #endif
