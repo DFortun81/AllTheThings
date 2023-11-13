@@ -8134,12 +8134,15 @@ local function GetParentAchievementInfo(t, key)
 	DelayedCallback(app.report, 1, "Missing Referenced Achievement!",id);
 end
 -- Returns expected criteria data for either criteriaIndex or criteriaID
-local function GetCriteriaInfo(achievementID, criteriaIndexOrID)
+local function GetCriteriaInfo(achievementID, t)
+	-- prioritize the correct id
+	local critUID = t.uid or t.criteriaID
+	local critID = t.id or critUID
 	local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
-		= GetAchievementCriteriaInfoByID(achievementID, criteriaIndexOrID, true)
-	if not criteriaString and criteriaIndexOrID <= GetAchievementNumCriteria(achievementID) then
+		= GetAchievementCriteriaInfoByID(achievementID, critUID)
+	if not criteriaString and critID <= GetAchievementNumCriteria(achievementID) then
 		criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
-		= GetAchievementCriteriaInfo(achievementID, criteriaIndexOrID, true)
+		= GetAchievementCriteriaInfo(achievementID, critID, true)
 	end
 	return criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
 end
@@ -8152,9 +8155,18 @@ local function default_name(t)
 	if achievementID then
 		local criteriaID = t.criteriaID;
 		if criteriaID then
-			local name = GetCriteriaInfo(achievementID, criteriaID);
+			-- typical criteria name lookup
+			local name = GetCriteriaInfo(achievementID, t);
 			if not IsRetrieving(name) then return name; end
 
+			-- app.PrintDebug("fallback crit name",achievementID,criteriaID,t.uid,t.id)
+			-- criteria nested under a parent of a known Thing
+			local parent = t.parent
+			if parent and parent.key and app.ThingKeys[parent.key] and parent.key ~= "achievementID" then
+				if not IsRetrieving(parent.name) then return parent.name end
+			end
+
+			-- criteria with provider data
 			local providers = t.providers;
 			if providers then
 				for k,v in ipairs(providers) do
@@ -8170,6 +8182,7 @@ local function default_name(t)
 				end
 			end
 
+			-- criteria with sourceQuests data
 			local sourceQuests = t.sourceQuests;
 			if sourceQuests then
 				local name
@@ -8265,7 +8278,7 @@ local criteriaFields = {
 			if app.CurrentCharacter.Achievements[achievementID] then return true; end
 			local criteriaID = t.criteriaID;
 			if criteriaID then
-				return select(3, GetCriteriaInfo(achievementID, criteriaID));
+				return select(3, GetCriteriaInfo(achievementID, t));
 			end
 		end
 	end,
@@ -8315,7 +8328,7 @@ harvesterFields.text = function(t)
 			if totalCriteria > 0 then
 				local criteria = {};
 				for criteriaID=totalCriteria,1,-1 do
-					local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaUID = GetAchievementCriteriaInfo(achievementID, criteriaID);
+					local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaUID = GetAchievementCriteriaInfo(achievementID, criteriaID, true);
 					local crit = { ["criteriaID"] = criteriaID, ["criteriaUID"] = criteriaUID };
 					if criteriaString ~= nil and criteriaString ~= "" then
 						crit.name = criteriaString;
