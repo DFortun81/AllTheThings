@@ -11,7 +11,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "o", 381653 },	-- Fang Flap Fire Signups
 				["coord"] = { 42.8, 69.3, VALDRAKKEN },
 			}),
-			ach(16556),	-- Great Gourmand of The Ruby Feast
+			ach(16556, {	-- Great Gourmand of The Ruby Feast
+				["coord"] = { 61.0, 12.2, VALDRAKKEN },
+			}),
 		}),
 	}),
 })));
