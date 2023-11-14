@@ -1490,7 +1490,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 				}),
 			})),
-			header(HEADERS.Achievement, SEASON_OBSIDIAN, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+			pvp(header(HEADERS.Achievement, SEASON_OBSIDIAN, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 				n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {	-- "Tier Slots"
 					cl(DEATHKNIGHT, {
 						i(202461),	-- Lingering Phantom's Dreadhorns
@@ -1843,7 +1843,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						}),
 					},
 				})),
-			})),
+			}))),
 			n(QUESTS, {
 				q(72360, {	-- Reviving the Machine
 					["provider"] = { "n", 191369 },	-- Watcher Koranos
