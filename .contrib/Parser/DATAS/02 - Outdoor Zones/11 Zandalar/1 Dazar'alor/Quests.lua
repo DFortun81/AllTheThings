@@ -515,7 +515,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			}),
 			q(49768, {	-- Nesingwary's Trek
 				["sourceQuests"] = {
-					47438,	-- Picking a Side [One pre-req back from previous, Discord 2023-8-2]
+					49663,	-- False Prophecies
+					-- 47438,	-- Picking a Side [One pre-req back from previous, Discord 2023-8-2]
 					-- 47514,	-- Zuldazar [Cross-referenced latest quest from completion sequence, Discord 2023-8-2]
 				},
 				["isBreadcrumb"] = true,
