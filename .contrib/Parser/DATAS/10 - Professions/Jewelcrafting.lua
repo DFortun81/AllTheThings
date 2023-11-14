@@ -159,35 +159,45 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		n(QUESTS, {
 			q(28778,  {	-- Broken Boar Figurine
 				["provider"] = { "i", 65895 },	-- Figurine - King of Boars
+				-- #if BEFORE 10.2.
 				["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
+				-- #endif
 				["groups"] = {
 					i(52351),	-- Figurine - King of Boars
 				},
 			}),
 			q(28776,  {	-- Broken Earthen Figurine
 				["provider"] = { "i", 65897 },	-- Figurine - Earthen Guardian
+				-- #if BEFORE 10.2.
 				["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR, DRUID, DEMONHUNTER, MONK },
+				-- #endif
 				["groups"] = {
 					i(52352),	-- Figurine - Earthen Guardian
 				},
 			}),
 			q(28777,  {	-- Broken Owl Figurine
 				["provider"] = { "i", 65894 },	-- Figurine - Dream Owl
+				-- #if BEFORE 10.2.
 				["classes"] = { PALADIN, SHAMAN, DRUID, MONK, PRIEST },
+				-- #endif
 				["groups"] = {
 					i(52354),	-- Figurine - Dream Owl
 				},
 			}),
 			q(25047,  {	-- Broken Panther Figurine
 				["provider"] = { "i", 52197 },	-- Figurine - Demon Panther
+				-- #if BEFORE 10.2.
 				["classes"] = { HUNTER, SHAMAN, MONK, DEMONHUNTER, DRUID, ROGUE },
+				-- #endif
 				["groups"] = {
 					i(52199),	-- Figurine - Demon Panther
 				},
 			}),
 			q(28775,  {	-- Broken Serpent Figurine
 				["provider"] = { "i", 65896 },	-- Figurine - Jeweled Serpent
+				-- #if BEFORE 10.2.
 				["classes"] = { SHAMAN, DRUID, MONK, PALADIN, PRIEST, MAGE, WARLOCK },
+				-- #endif
 				["groups"] = {
 					i(52353),	-- Figurine - Jeweled Serpent
 				},
