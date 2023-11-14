@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				})),
 				pvp(q(78129, {	-- Gotta Go Faster
 					["timeline"] = { ADDED_10_2_0 },
-					["sourceQuest"] = { 78128 },
+					["sourceQuests"] = { 78128 },
 				})),
 			})),
 		}),

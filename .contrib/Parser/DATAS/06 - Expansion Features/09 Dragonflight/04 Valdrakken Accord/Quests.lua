@@ -301,7 +301,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["icon"] = 5172995,
 					["g"] = {
 						q(75632, {	-- A Dislocated Disc
-							["sourceQuest"] = { 72444 },	-- A Sliver of Silver
+							["sourceQuests"] = { 72444 },	-- A Sliver of Silver
 							["provider"] = { "n", 187669 },	-- Nozdormu
 							["coord"] = { 61.4, 39.1, VALDRAKKEN },
 						}),

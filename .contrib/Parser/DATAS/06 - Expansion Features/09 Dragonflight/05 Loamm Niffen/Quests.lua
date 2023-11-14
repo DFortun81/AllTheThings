@@ -185,6 +185,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(197373),	-- Renewed Proto-Drake: Helm (DM!)
 						i(197600),	-- Windborne Velocidrake: Helm (DM!)
 						i(203326),	-- Winding Slitherdrake: Helm (DM!)
+						-- #if AFTER 10.2.0
+						i(210476),	-- Flourishing Whimsydrake: Helmet (DM!)
+						i(207770),	-- Grotto Netherwing Drake: Helm (DM!)
+						i(197119),	-- Highland Drake: Helm (DM!)
+						-- #endif
 					}
 				}),
 			}, {	-- RENOWN 20 --

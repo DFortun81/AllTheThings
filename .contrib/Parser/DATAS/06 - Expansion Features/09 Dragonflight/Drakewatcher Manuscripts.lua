@@ -775,7 +775,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
 			["timeline"] = { CREATED_10_0_0 },
 		}, {
-			i(197119),	-- Highland Drake: Helm
 			i(197146),	-- Highland Drake: White Scales
 		})),
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
@@ -1062,6 +1061,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		header(HEADERS.Item, 210412, {	-- Flourishing Whimsydrake
 			i(210482),	-- Flourishing Whimsydrake: Back Fins (DM!)
+			i(210476),	-- Flourishing Whimsydrake: Helmet (DM!)
 			i(210486),	-- Flourishing Whimsydrake: Horns (DM!)
 			i(210485),	-- Flourishing Whimsydrake: Long Snout (DM!)
 			i(210487),	-- Flourishing Whimsydrake: Neck Fins (DM!)
@@ -1076,7 +1076,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}, {
 			i(210471),	-- Flourishing Whimsydrake: Body Armor
 			i(210478),	-- Flourishing Whimsydrake: Gold and Pink Armor
-			i(210476),	-- Flourishing Whimsydrake: Helmet
 			i(210480),	-- Flourishing Whimsydrake: Sunrise Scales
 		})),
 		header(HEADERS.Item, 206156, { -- Grotto Netherwing Drake
@@ -1088,6 +1087,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(207778),	-- Grotto Netherwing Drake: Double Finned Tail (DM!)
 			i(207774),	-- Grotto Netherwing Drake: Finned Jaw (DM!)
 			i(207764),	-- Grotto Netherwing Drake: Head Spike (DM!)
+			i(207770),	-- Grotto Netherwing Drake: Helm (DM!)
 			i(207772),	-- Grotto Netherwing Drake: Long Horns (DM!)
 			i(207769),	-- Grotto Netherwing Drake: Outcast Pattern (DM!)
 			i(207771),	-- Grotto Netherwing Drake: Short Horns (DM!)
@@ -1104,7 +1104,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}, {
 			i(207760),	-- Grotto Netherwing Drake: Armor
 			i(207776),	-- Grotto Netherwing Drake: Black Scales
-			i(207770),	-- Grotto Netherwing Drake: Helm
 			i(207757),	-- Grotto Netherwing Drake: Purple and Silver Armor
 			i(207775),	-- Grotto Netherwing Drake: Teal Scales
 			i(211381),	-- Grotto Netherwing Drake: Violet Scales
@@ -1116,6 +1115,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}, {
 			i(210432),	-- Highland Drake: Winter Veil Armor
 		})),
+		header(HEADERS.Item, 194705, {	-- Highland Drake
+			i(197119),	-- Highland Drake: Helm (DM!)
+		}),
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
 			i(210537),	-- Renewed Proto-Drake: Embodiment of Shadowflame (DM!)
 			i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing (DM!)
