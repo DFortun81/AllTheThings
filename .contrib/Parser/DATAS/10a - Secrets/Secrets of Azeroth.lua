@@ -94,7 +94,6 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 				}),
 			}),
 			ach(18646, {	-- Whodunnit?
-				-- TODO: proper criteria
 				i(208152),	-- Pattie (MOUNT!)
 				title(519),	-- Honorary Preservationists (TITLE!)
 				crit(60849, {	-- A Preservationist

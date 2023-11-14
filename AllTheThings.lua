@@ -8140,7 +8140,7 @@ local function GetCriteriaInfo(achievementID, t)
 	local critID = t.id or critUID
 	local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
 		= GetAchievementCriteriaInfoByID(achievementID, critUID)
-	if not criteriaString and critID <= GetAchievementNumCriteria(achievementID) then
+	if IsRetrieving(criteriaString) and critID <= GetAchievementNumCriteria(achievementID) then
 		criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
 		= GetAchievementCriteriaInfo(achievementID, critID, true)
 	end

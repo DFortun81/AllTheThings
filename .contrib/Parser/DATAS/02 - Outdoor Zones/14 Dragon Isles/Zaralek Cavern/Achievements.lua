@@ -67,6 +67,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["_npcs"] = { 203646 },	-- Dinn
 					}),
 					crit(59501, {
+						["_npcs"] = { 203625 },	-- Karokta
+					}),
+					crit(59502, {
 						["_npcs"] = { 203466 },	-- Kapraku
 					}),
 					crit(59503, {
