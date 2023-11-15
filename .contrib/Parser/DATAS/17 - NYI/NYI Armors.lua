@@ -2462,7 +2462,6 @@ root(ROOTS.NeverImplemented, {
 				i(208981),	-- 10.2 Monster - Merithra - Wrist
 				i(211132),	-- Omni Storm
 				------ Rares? ------
-				i(208373),	-- Band of Bated Breath
 				i(208385),	-- Flame Endowed Blade
 				i(208336),	-- Legguards of the Dreamsaber
 				i(208381),	-- Scepter of Still Waters
