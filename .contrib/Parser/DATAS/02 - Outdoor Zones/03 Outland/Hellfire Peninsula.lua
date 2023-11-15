@@ -2052,7 +2052,10 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/12 Ravager Egg
-								["provider"] = { "i", 23217 },	-- Ravager Egg
+								["providers"] = {
+									{ "i",  23217 },	-- Ravager Egg
+									{ "o", 181385 },	-- Ravager Egg
+								},
 								["crs"] = {
 									16933,	-- Razorfang Ravager
 									16934,	-- Quillfang Ravager
