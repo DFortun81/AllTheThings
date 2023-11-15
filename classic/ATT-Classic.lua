@@ -2667,16 +2667,21 @@ local onClickForDynamicCategory = function(row, button)
 	end
 end
 local onUpdateForDynamicCategory = function(data)
+	local window = data.dynamicWindow;
 	data.progress = nil; data.total = nil;
-	data.dynamicWindow:ForceRebuild();
-	--print("onUpdateForDynamicCategory", data.text, data.progress, data.total);
-	local parent, total = data.parent, data.total;
-	if parent and total then
-		parent.progress = parent.progress + data.progress;
-		parent.total = parent.total + total;
-		data.visible = app.GroupVisibilityFilter(data);
+	if window then
+		window:ForceRebuild();
+		--print("onUpdateForDynamicCategory", data.text, data.progress, data.total);
+		local parent, total = data.parent, data.total;
+		if parent and total then
+			parent.progress = parent.progress + data.progress;
+			parent.total = parent.total + total;
+			data.visible = app.GroupVisibilityFilter(data);
+		else
+			data.visible = true;
+		end
 	else
-		data.visible = true;
+		data.visible = false;
 	end
 	return true;
 end
