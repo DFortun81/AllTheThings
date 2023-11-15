@@ -1067,6 +1067,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(210487),	-- Flourishing Whimsydrake: Neck Fins (DM!)
 			i(210479),	-- Flourishing Whimsydrake: Night Scales (DM!)
 			i(210483),	-- Flourishing Whimsydrake: Ridged Brow (DM!)
+			i(210480),	-- Flourishing Whimsydrake: Sunrise Scales (DM!)
 			i(210481),	-- Flourishing Whimsydrake: Sunset Scales (DM!)
 			i(210484),	-- Flourishing Whimsydrake: Underbite Snout (DM!)
 		}),
@@ -1076,7 +1077,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}, {
 			i(210471),	-- Flourishing Whimsydrake: Body Armor
 			i(210478),	-- Flourishing Whimsydrake: Gold and Pink Armor
-			i(210480),	-- Flourishing Whimsydrake: Sunrise Scales
 		})),
 		header(HEADERS.Item, 206156, { -- Grotto Netherwing Drake
 			i(207779),	-- Grotto Netherwing Drake: Barbed Tail (DM!)
