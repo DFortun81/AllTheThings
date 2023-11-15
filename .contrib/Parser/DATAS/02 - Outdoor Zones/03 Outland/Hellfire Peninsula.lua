@@ -2624,12 +2624,12 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(9405, {	-- The Warchief's Mandate
-						["qg"] = 3230,	-- Nazgrel
+						["providers"] = {
+							{ "n", 3230 },	-- Nazgrel
+							{ "i", 23550 },	-- Heavy Stone Axe
+						},
 						["sourceQuest"] = 9401,	-- A Strange Weapon
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 23550, 1 },	-- Heavy Stone Axe
-						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
@@ -2802,13 +2802,21 @@ root(ROOTS.Zones, {
 					q(10055, {	-- Waste Not, Want Not
 						["qg"] = 21209,	-- Dumphry
 						["coord"] = { 51.2, 60.3, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 25912, 8 },	-- Salvaged Metal
-							{ "i", 25911, 8 },	-- Salvaged Wood
-						},
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
+							objective(1, {	-- 0/8 Salvaged Metal
+								["providers"] = {
+									{ "i",  25912 },	-- Salvaged Metal
+									{ "o", 182798 },	-- Salvaged Metal
+								},
+							}),
+							objective(2, {	-- 0/8 Salvaged Wood
+								["providers"] = {
+									{ "i",  25911 },	-- Salvaged Wood
+									{ "o", 182799 },	-- Salvaged Wood
+								},
+							}),
 							i(29938),	-- Battle Seeker Chesguard
 							i(29943),	-- Legionnaire's Studded Helm
 							i(29945),	-- Magistrate's Greaves
@@ -2823,7 +2831,7 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/12 Gan'arg Sapper slain
-								["cr"] = 18827,	-- Gan'arg Sapper
+								["provider"] = { "n", 18827 },	-- Gan'arg Sapper
 							}),
 						},
 					}),
