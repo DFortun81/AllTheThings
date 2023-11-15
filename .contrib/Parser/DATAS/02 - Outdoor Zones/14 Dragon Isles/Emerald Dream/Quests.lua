@@ -955,6 +955,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			--Sprout weekly?
 			q(77677, {	-- Some Water...
+				["description"] = "Dismount, and click through dialoge to obtain quest.",
 				--["sourceQuests"] = {
 				--	77283,	-- A Multi-Front Battle
 				--	77887,	-- 'World Quest Unlock' (spellID 421687)
