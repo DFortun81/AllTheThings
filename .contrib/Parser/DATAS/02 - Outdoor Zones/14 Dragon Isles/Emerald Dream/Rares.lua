@@ -172,6 +172,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["description"] = "Finish bonus objective in marked area to make him spawn.",
 				["coord"] = { 61.0, 70.3, EMERALD_DREAM },
 				["g"] = {
+					i(209880),	-- Curve of Starry Dusks
 					bo(77570, true),	-- Nouberon bonus objective
 				},
 			}),

@@ -1871,6 +1871,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 50.2, 55.8, VALDRAKKEN },
 					["timeline"] = { ADDED_10_1_0 },
 				}),
+				q(79321, {	-- The Catalyst's Gift
+					["provider"] = { "n", 213930 },	-- Koszaru
+					["coord"] = { 48.0, 58.6, VALDRAKKEN },
+					["timeline"] = { ADDED_10_2_0 },
+				}),
 			}),
 		},
 	}),
