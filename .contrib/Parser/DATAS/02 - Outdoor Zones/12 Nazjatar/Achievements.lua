@@ -10,61 +10,61 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		})),
 		-- TODO: more dataz
 		ach(13692, {	-- Give Me the Biggest Bag You've Got
-			crit(1),	-- Spawn of Nalaada
-			crit(2),	-- Glittering Diamondshell
-			crit(3),	-- Sandclaw Nestseeker
-			crit(4),	-- Daggertooth Frenzy
-			crit(5),	-- Skittering Eel
-			crit(6),	-- Pearlescent Glimmershell
-			crit(7),	-- Scalebrood Hydra
-			crit(8),	-- Caverndark Nightmare
-			crit(9),	-- Chitterspine Needler
-			crit(10),	-- Wriggler
-			crit(11),	-- Amethyst Softshell
-			crit(12),	-- Stormwrath
-			crit(13),	-- Brinestone Algan
-			crit(14),	-- Coral Lashling
-			crit(15),	-- Budding Algan
-			crit(16),	-- Sandkeep
-			crit(17),	-- Seafury
-			crit(18),	-- Necrofin Tadpole
-			crit(19),	-- Murgle
-			crit(20),	-- Underlight Sealamp
-			crit(21),	-- Encrusted Coin
-			crit(22),	-- Flopping Fish
-			crit(23),	-- Seastorm Totem
-			crit(24),	-- Zanj'ir Weapon Rack
-			crit(25),	-- Eternal Palace Dining Set
-			crit(26),	-- Shirakess Warning Sign
-			crit(27),	-- Voidcaster's Supply Bag
-			crit(28),	-- Storm Totem
-			crit(29),	-- Sea Totem
-			crit(30),	-- Mudwrap
-			crit(31),	-- Skeletal Hand
-			crit(32),	-- Mardivas' Bag of Containing
-			crit(33),	-- Blind Eye
-			crit(34),	-- Barnacled Bag of Goods
-			crit(35),	-- Shadescale
-			crit(36),	-- Abyss Pearl
-			crit(37),	-- Intact Naga Skeleton
-			crit(38),	-- Ancient Reefwalker Bark
-			crit(39),	-- Reefwalker Bark
-			crit(40),	-- Voltscale Shield
-			crit(41),	-- Tidal Guard
-			crit(42),	-- Razorshell
-			crit(43),	-- Snapdragon Scent Gland
-			crit(44),	-- Alpha Fin
-			crit(45),	-- Exposed Fish
-			crit(46, {	-- Fathom Ray Wing
+			crit(45560),	-- Spawn of Nalaada
+			crit(45561),	-- Glittering Diamondshell
+			crit(45562),	-- Sandclaw Nestseeker
+			crit(45563),	-- Daggertooth Frenzy
+			crit(45564),	-- Skittering Eel
+			crit(45565),	-- Pearlescent Glimmershell
+			crit(45566),	-- Scalebrood Hydra
+			crit(45567),	-- Caverndark Nightmare
+			crit(45568),	-- Chitterspine Needler
+			crit(45569),	-- Wriggler
+			crit(45570),	-- Amethyst Softshell
+			crit(45571),	-- Stormwrath
+			crit(45572),	-- Brinestone Algan
+			crit(45573),	-- Coral Lashling
+			crit(45574),	-- Budding Algan
+			crit(45575),	-- Sandkeep
+			crit(45576),	-- Seafury
+			crit(45577),	-- Necrofin Tadpole
+			crit(45578),	-- Murgle
+			crit(46070),	-- Underlight Sealamp
+			crit(46071),	-- Encrusted Coin
+			crit(46072),	-- Flopping Fish
+			crit(46073),	-- Seastorm Totem
+			crit(46074),	-- Zanj'ir Weapon Rack
+			crit(46075),	-- Eternal Palace Dining Set
+			crit(46076),	-- Shirakess Warning Sign
+			crit(46077),	-- Voidcaster's Supply Bag
+			crit(46078),	-- Storm Totem
+			crit(46079),	-- Sea Totem
+			crit(46080),	-- Mudwrap
+			crit(46081),	-- Skeletal Hand
+			crit(46082),	-- Mardivas' Bag of Containing
+			crit(46083),	-- Blind Eye
+			crit(46084),	-- Barnacled Bag of Goods
+			crit(46085),	-- Shadescale
+			crit(46086),	-- Abyss Pearl
+			crit(46087),	-- Intact Naga Skeleton
+			crit(46088),	-- Ancient Reefwalker Bark
+			crit(46089),	-- Reefwalker Bark
+			crit(46090),	-- Voltscale Shield
+			crit(46091),	-- Tidal Guard
+			crit(46092),	-- Razorshell
+			crit(46093),	-- Snapdragon Scent Gland
+			crit(46094),	-- Alpha Fin
+			crit(46095),	-- Exposed Fish
+			crit(46096, {	-- Fathom Ray Wing
 				["_quests"] = { 57247, 56972 },	-- Fathom Ray Wing A/H
 			}),
-			crit(47),	-- Muck Slime
-			crit(48),	-- Brightspine Shell
-			crit(49, {	-- Giant Crab leg
+			crit(46097),	-- Muck Slime
+			crit(46098),	-- Brightspine Shell
+			crit(46099, {	-- Giant Crab leg
 				["_quests"] = { 57248, 56973 },	-- Giant Crab Leg A/H
 			}),
-			crit(50),	-- Fermented Deviate Fish
-			crit(51, {	-- Eel Filet
+			crit(46100),	-- Fermented Deviate Fish
+			crit(46101, {	-- Eel Filet
 				["_quests"] = { 57246, 56971 },	-- Eel Filet A/H
 			}),
 		}),
@@ -130,6 +130,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		ach(13638, {	-- Undersea Usurper
 			i(169194),		-- Snapback Scuttler (MOUNT!)
 			title(405),		-- of the Deeps
+			-- TODO: We're lacking named data to convert this nested achievement criteria tree to criteriaUIDs (quests we do have are HQTs)
 			ach(13635, {	-- Tour of the Depths
 				crit(1, {	-- Complete an Emissary for your ally in Nazjatar
 					["_quests"] = { 56119, 56120 },	-- The Ankoan / The Unshackled
@@ -194,6 +195,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				ach(13757),	-- Battle-Scarred: Vim Brineheart
 			})),
 			ach(13549, {	-- Trove Tracker
+				-- TODO: We're lacking named data to convert this nested achievement criteria tree to criteriaUIDs
+				-- crit(45197),	-- 20 Arcane Chests
+				-- crit(45222),	-- 7 Glowing Arcane Trunks
 				crit(1),	-- 20 Arcane Chests
 				crit(2),	-- 7 Glowing Arcane Trunks
 			}),

@@ -9,14 +9,14 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["isDaily"] = true,
 			["coord"] = { 52.4, 41.9, NAZJATAR },
 			["g"] = {
-				crit(1, {	-- I Thought You Said They'd Be Rare?
+				crit(45519, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(170189, {	-- Blind Eye
 					["description"] = "Turn it in to |cFFFFD700Gloomseeker Yarga|r (cave entrance at 38.6, 58.3) for a hefty sum of gold.",
 				--	["questID"] = ,
 					["g"] = {
-						crit(33, {	-- Blind Eye
+						crit(46083, {	-- Blind Eye
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					},
@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			},
 			["isDaily"] = true,
 			["g"] = {
-				crit(2, {	-- I Thought You Said They'd Be Rare?
+				crit(45520, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(167786),	-- Germinating Seed
@@ -50,16 +50,16 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				{ 72.2, 36.2, NAZJATAR },
 			},
 			["g"] = {
-				crit(3, {	-- I Thought You Said They'd Be Rare?
+				crit(45521, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(169363, {	-- Amethyst Softshell (PET!)
-					crit(11, {	-- Amethyst Softshell
+					crit(45570, {	-- Amethyst Softshell
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
 				i(170172, {	-- Brightspine Shell
-					crit(48, {	-- Brightspine Shell
+					crit(46098, {	-- Brightspine Shell
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				170183,	-- Reefwalker Bark
 			}},
 			["g"] = {
-				crit(4, {	-- I Thought You Said They'd Be Rare?
+				crit(45522, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 			},
@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["description"] = "First complete the white item version of Brinestone Pickaxe (/att quest:55531), which can drop from any rare or treasure in Nazjatar.\n\nAfter you completed 'What Will It Mine?', you are now eligible to loot the green quality Brinestone Pickaxe from Chitterspine Encroachers around Avarius' location.\n\nOnce you obtained the green quality Brinestone Pickaxe, you can interact with the stone at the Rare's Location to start the summoning ritual.\n\nYou have to collect 5 different colored shards, which are mined from nearby untrackable Brinestone Deposits & put the correct shard into each pillar.\n\nThere are 7 Deposits, within max. 50-60 yards of the event, can be mined without the mining profession & have 1 minute respawn timer.\n\nThe mining recipes are not bound to a daily lockout & can be farmed.\n\nRespawn timer of the Event is roughly 20 minutes.",
 			["g"] = {
 				i(169373, {	-- Brinestone Algan (PET!)
-					crit(13, {	-- Brinestone Algan
+					crit(45573, {	-- Brinestone Algan
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -102,16 +102,16 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["isDaily"] = true,
 			["coord"] = { 73.4, 54.0, NAZJATAR },
 			["g"] = {
-				crit(5, {	-- I Thought You Said They'd Be Rare?
+				crit(45524, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(170177, {	-- Exposed Fish
-					crit(45, {	-- Exposed Fish
+					crit(46095, {	-- Exposed Fish
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
 				i(170179, {	-- Snapdragon Scent Gland
-					crit(43, {	-- Snapdragon Scent Gland
+					crit(46093, {	-- Snapdragon Scent Gland
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -125,11 +125,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				{ 39.8, 77.2, NAZJATAR },	-- cave entrance
 			},
 			["g"] = {
-				crit(6, {	-- I Thought You Said They'd Be Rare?
+				crit(45525, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(169372, {	-- Necrofin Tadpole (PET!)
-					crit(18, {	-- Necrofin Tadpole
+					crit(45577, {	-- Necrofin Tadpole
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					["description"] = "Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
 				--	didn't trigger quest completion!
 					["g"] = {
-						crit(31, {	-- Skeletal Hand
+						crit(46081, {	-- Skeletal Hand
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					},
@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["isDaily"] = true,
 			["g"] = {
 				i(169375, {	-- Coral Lashling (PET!)
-					crit(14, {	-- Coral Lashling
+					crit(45572, {	-- Coral Lashling
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -162,11 +162,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 42.3, 13.2, NAZJATAR },
 			["isDaily"] = true,
 			["g"] = {
-				crit(7, {	-- I Thought You Said They'd Be Rare?
+				crit(45527, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(169356, {	-- Caverndark Nightmare (PET!)
-					crit(8, {	-- Caverndark Nightmare
+					crit(45567, {	-- Caverndark Nightmare
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -198,11 +198,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			},
 			["isDaily"] = true,
 			["g"] = {
-				crit(9, {	-- I Thought You Said They'd Be Rare?
+				crit(45529, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(169361, {	-- Daggertooth Frenzy (PET!)
-					crit(4, {	-- Daggertooth Frenzy
+					crit(45563, {	-- Daggertooth Frenzy
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -216,7 +216,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				{ 56.4, 43.5, NAZJATAR },
 			},
 			["g"] = {
-				crit(10, {	-- I Thought You Said They'd Be Rare?
+				crit(45530, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(170176),	-- Fathom Ray Wing
@@ -230,11 +230,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			},
 			["isDaily"] = true,
 			["g"] = {
-				crit(11, {	-- I Thought You Said They'd Be Rare?
+				crit(45531, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(170188, {	-- Barnacled Bag of Goods
-					crit(34, {	-- Barnacled Bag of Goods
+					crit(46084, {	-- Barnacled Bag of Goods
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -245,12 +245,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 52.1, 75.4, NAZJATAR },
 			["isDaily"] = true,
 			["g"] = {
-				crit(12, {	-- I Thought You Said They'd Be Rare?
+				crit(45532, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(170167),	-- Eel Filet
 				i(169359, {	-- Spawn of Nalaada (PET!)
-					crit(1, {	-- Spawn of Nalaada
+					crit(45560, {	-- Spawn of Nalaada
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -268,11 +268,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			},
 			["isDaily"] = true,
 			["g"] = {
-				crit(13, {	-- I Thought You Said They'd Be Rare?
+				crit(45533, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(170180, {	-- Razorshell
-					crit(42, {	-- Razorshell
+					crit(46092, {	-- Razorshell
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -294,11 +294,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			},
 			["isDaily"] = true,
 			["g"] = {
-				crit(14, {	-- I Thought You Said They'd Be Rare?
+				crit(45534, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(169352, {	-- Pearlescent Glimmershell (PET!)
-					crit(6, {	-- Pearlescent Glimmershell
+					crit(45565, {	-- Pearlescent Glimmershell
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -318,7 +318,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				170183,	-- Reefwalker Bark
 			}},
 			["g"] = {
-				crit(15, {	-- I Thought You Said They'd Be Rare?
+				crit(45535, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 			},
@@ -329,11 +329,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["isDaily"] = true,
 			["coord"] = { 28.8, 29.0, NAZJATAR },
 			["g"] = {
-				crit(16, {	-- I Thought You Said They'd Be Rare?
+				crit(45536, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(170190, {	-- Mardivas' Bag of Containing
-					crit(32, {	-- Mardivas' Bag of Containing
+					crit(46082, {	-- Mardivas' Bag of Containing
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 					i(169332),	-- Strange Mineralized Water
@@ -341,7 +341,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					i(169333),	-- Strange Volcanic Rock
 				}),
 				i(169371, {	-- Murgle (PET!)
-					crit(19, {	-- Murgle
+					crit(45578, {	-- Murgle
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -368,16 +368,16 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			},
 			["isDaily"] = true,
 			["g"] = {
-				crit(17, {	-- I Thought You Said They'd Be Rare?
+				crit(45537, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(170172, {	-- Brightspine Shell
-					crit(48, {	-- Brightspine Shell
+					crit(46098, {	-- Brightspine Shell
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
 				i(169366, {	-- Wriggler (PET!)
-					crit(10, {	-- Wriggler
+					crit(45569, {	-- Wriggler
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -397,11 +397,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				{ 70.6, 24.7, NAZJATAR },
 			},
 			["g"] = {
-				crit(18, {	-- I Thought You Said They'd Be Rare?
+				crit(45538, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(169355, {	-- Chitterspine Needler (PET!)
-					crit(9, {	-- Chitterspine Needler
+					crit(45568, {	-- Chitterspine Needler
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -418,7 +418,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				170183,	-- Reefwalker Bark
 			}},
 			["g"] = {
-				crit(19, {	-- I Thought You Said They'd Be Rare?
+				crit(45539, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 			},
@@ -428,16 +428,16 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 43.2, 88.0, NAZJATAR },
 			["isDaily"] = true,
 			["g"] = {
-				crit(20, {	-- I Thought You Said They'd Be Rare?
+				crit(45540, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(169367, {	-- Seafury (PET!)
-					crit(17, {	-- Seafury
+					crit(45576, {	-- Seafury
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
 				i(170193, {	-- Sea Totem
-					crit(29, {	-- Sea Totem
+					crit(46079, {	-- Sea Totem
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -448,11 +448,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 43.0, 75.6, NAZJATAR },
 			["isDaily"] = true,
 			["g"] = {
-				crit(21, {	-- I Thought You Said They'd Be Rare?
+				crit(45541, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(169368, {	-- Stormwrath (PET!)
-					crit(12, {	-- Stormwrath
+					crit(45571, {	-- Stormwrath
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -469,11 +469,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				{ 76.4, 24.4, NAZJATAR },
 			},
 			["g"] = {
-				crit(22, {	-- I Thought You Said They'd Be Rare?
+				crit(45542, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(169374, {	-- Budding Algan (PET!)
-					crit(15, {	-- Budding Algan
+					crit(45574, {	-- Budding Algan
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -484,11 +484,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["questID"] = 56276,	-- 57191 and 57192 triggered around the time sandcastle
 			["isDaily"] = true,
 			["g"] = {
-				crit(23, {	-- I Thought You Said They'd Be Rare?
+				crit(45543, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(169369, {	-- Sandkeep (PET!)
-					crit(16, {	-- Sandkeep
+					crit(45575, {	-- Sandkeep
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -505,12 +505,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				{ 81.2, 39.8, NAZJATAR },
 			},
 			["g"] = {
-				crit(24, {	-- I Thought You Said They'd Be Rare?
+				crit(45544, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(170171),	-- Giant Crab Leg
 				i(169350, {	-- Glittering Diamondshell (PET!)
-					crit(2, {	-- Glittering Diamondshell
+					crit(45561, {	-- Glittering Diamondshell
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -527,7 +527,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				169370,	-- Scalebrood Hydra (PET!)
 			}},
 			["g"] = {
-				crit(25, {	-- I Thought You Said They'd Be Rare?
+				crit(45545, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 			},
@@ -542,7 +542,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				169370,	-- Scalebrood Hydra (PET!)
 			}},
 			["g"] = {
-				crit(26, {	-- I Thought You Said They'd Be Rare?
+				crit(45546, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 			},
@@ -557,7 +557,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				169370,	-- Scalebrood Hydra (PET!)
 			}},
 			["g"] = {
-				crit(27, {	-- I Thought You Said They'd Be Rare?
+				crit(45547, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 			},
@@ -568,12 +568,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["questID"] = 56295,
 			["coord"] = { 63.0, 12.0, NAZJATAR },
 			["g"] = {
-				crit(28, {	-- I Thought You Said They'd Be Rare?
+				crit(45548, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(170167),	-- Eel Filet
 				i(170187, {	-- Shadescale (TOY!)
-					crit(35, {	-- Shadescale
+					crit(46085, {	-- Shadescale
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -587,16 +587,16 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				{ 41.3, 15.9, NAZJATAR },
 			},
 			["g"] = {
-				crit(29, {	-- I Thought You Said They'd Be Rare?
+				crit(45549, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(170181, {	-- Tidal Guard
-					crit(41, {	-- Tidal Guard
+					crit(46091, {	-- Tidal Guard
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
 				i(170182, {	-- Voltscale Shield
-					crit(40, {	-- Voltscale Shield
+					crit(46090, {	-- Voltscale Shield
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -607,11 +607,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 71.6, 54.8, NAZJATAR },
 			["isDaily"] = true,
 			["g"] = {
-				crit(30, {	-- I Thought You Said They'd Be Rare?
+				crit(45550, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(170179, {	-- Snapdragon Scent Gland
-					crit(43, {	-- Snapdragon Scent Gland
+					crit(46093, {	-- Snapdragon Scent Gland
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -630,7 +630,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["isDaily"] = true,
 			["description"] = "On top of the coral reef. Requires Flying.",
 			["g"] = {
-				crit(31, {	-- I Thought You Said They'd Be Rare?
+				crit(45551, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(169163),	-- Silent Glider (MOUNT!)
@@ -642,7 +642,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["isDaily"] = true,
 			["coord"] = { 62.4, 29.6, NAZJATAR },
 			["g"] = {
-				crit(32, {	-- I Thought You Said They'd Be Rare?
+				crit(45553, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(170193, {	-- Sea Totem
@@ -659,11 +659,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["isDaily"] = true,
 			["description"] = "Kill the |cFFFFD700Azsh'ari Invoker|r that is channeling an orb above the water pool.",
 			["g"] = {
-				crit(33, {	-- I Thought You Said They'd Be Rare?
+				crit(45554, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(170193, {	-- Sea Totem
-					crit(29, {	-- Sea Totem
+					crit(46079, {	-- Sea Totem
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -676,11 +676,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["isDaily"] = true,
 			["description"] = "Clusters of purple, void-tinged sacs grow around the area where the rare spawns.  Look for ones you can interact with called |cFFFFD700Undisturbed Specimens|r — 5 of these need to be popped to spawn the rare, but they don't all have to be destroyed by one person.",
 			["g"] = {
-				crit(34, {	-- I Thought You Said They'd Be Rare?
+				crit(45555, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(170196, {	-- Shirakess Warning Sign (TOY!)
-					crit(26, {	-- Shirakess Warning Sign
+					crit(46076, {	-- Shirakess Warning Sign
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -694,16 +694,16 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			},
 			["isDaily"] = true,
 			["g"] = {
-				crit(35, {	-- I Thought You Said They'd Be Rare?
+				crit(45556, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(170178, {	-- Alpha Fin
-					crit(44, {	-- Alpha Fin
+					crit(46094, {	-- Alpha Fin
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
 				i(170177, {	-- Exposed Fish
-					crit(45, {	-- Exposed Fish
+					crit(46095, {	-- Exposed Fish
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -722,7 +722,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				170183,	-- Reefwalker Bark
 			}},
 			["g"] = {
-				crit(36, {	-- I Thought You Said They'd Be Rare?
+				crit(45557, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 			},
@@ -733,11 +733,11 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 67.5, 34.6, NAZJATAR },
 			["isDaily"] = true,
 			["g"] = {
-				crit(37, {	-- I Thought You Said They'd Be Rare?
+				crit(45558, {	-- I Thought You Said They'd Be Rare?
 					["achievementID"] = 13691,
 				}),
 				i(170186, {	-- Abyss Pearl
-					crit(36, {	-- Abyss Pearl
+					crit(46086, {	-- Abyss Pearl
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
@@ -750,12 +750,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["description"] = "Throw chum into Eel Infested Waters multiple times. He will spawn after ~8 throws.",
 			["g"] = {
 				i(169376, {	-- Skittering Eel (PET!)
-					crit(5, {	-- Skittering Eel
+					crit(45564, {	-- Skittering Eel
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
 				i(170181, {	-- Tidal Guard
-					crit(41, {	-- Tidal Guard
+					crit(46091, {	-- Tidal Guard
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
