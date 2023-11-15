@@ -44,6 +44,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(134798),	-- Ironbranded Ringmail Helm		(Removed)
 		}),
 		filter(PLATE, {
+			ig(108205),	-- Peerless Draenic Steel Helm		(NYI)
 		}),
 	}),
 	i(208062, {	-- Quantum Shoulders
@@ -99,6 +100,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(93088),	-- Swasbuckling Gauntlets			(NYI)
 		}),
 		filter(PLATE, {
+			ig(108180),	-- Peerless Draenic Steel Guantlets	(NYI)
 		}),
 	}),
 	i(208065, {	-- Quantum Legs
@@ -118,11 +120,14 @@ local QUANTUM_GROUP = sharedData({
 		filter(MAIL, {
 		}),
 		filter(PLATE, {
+			ig(121510),	-- Dreadsworn Legguards				(NYI)
 			ig(108082),	-- Hardened Draenic Steel Legguards	(NYI)
 		}),
 	}),
 	i(208111, {	-- Quantum Axe			(One-Handed)
 		ig(134604),	-- Vanguard Hacker					(Removed)
+
+		ig(134586),	-- Vanguard Hatchet					(NYI)
 	}),
 	i(208117, {	-- Quantum Bow
 	}),
@@ -157,11 +162,14 @@ local QUANTUM_GROUP = sharedData({
 		ig(134606),	-- Scorching Greatsword 			(NYI)
 	}),
 	i(208120, {	-- Quantum Knife
-		ig(108150),	-- Hardened Draeneic Steel Dagger)	(NYI)
+		ig(147908),	-- 6.0 Weapon - Knife_1h_DraenorRaid_D_01 - Jade	(NYI)
+		ig(108150),	-- Hardened Draeneic Steel Dagger	(NYI)
+		ig(108236),	-- Peerless Draenic Steel Dagger	(NYI)
 
 		ig(14151),	-- Chanting Blade					(Removed)
 	}),
 	i(208121, {	-- Quantum Knuckles
+		ig(2942),	-- Iron Knuckles					(Removed)
 	}),
 	i(208110, {	-- Quantum Mace			(One-Handed)
 	}),
@@ -170,6 +178,8 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208126, {	-- Quantum Shield
 		ig(134803),	-- Seasoned Redoubt 				(Removed)
+
+		ig(108245),	-- Peerless Draenic Steel Bulwark	(NYI)
 	}),
 	i(208115, {	-- Quantum Staff
 		ig(115298),	-- Spectral Spire 					(NYI)

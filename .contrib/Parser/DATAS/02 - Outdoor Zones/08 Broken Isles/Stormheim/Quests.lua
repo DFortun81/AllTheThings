@@ -1097,7 +1097,6 @@ root(ROOTS.NeverImplemented, {
 			}),
 			filter(PLATE, {
 				i(121506),	-- Dreadsworn Crown
-				i(121510),	-- Dreadsworn Legguards
 			}),
 		}),
 	}),

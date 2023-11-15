@@ -99,10 +99,8 @@ root(ROOTS.NeverImplemented, {
 						i(108242),	-- Peerless Draenic Steel Bulwark
 						i(108243),	-- Peerless Draenic Steel Bulwark
 						i(108244),	-- Peerless Draenic Steel Bulwark
-						i(108245),	-- Peerless Draenic Steel Bulwark
 						i(108234),	-- Peerless Draenic Steel Dagger
 						i(108235),	-- Peerless Draenic Steel Dagger
-						i(108236),	-- Peerless Draenic Steel Dagger
 						i(108237),	-- Peerless Draenic Steel Dagger
 						i(108162),	-- Peerless Draenic Steel Chestplate
 						i(108178),	-- Peerless Draenic Steel Chestplate
@@ -115,7 +113,6 @@ root(ROOTS.NeverImplemented, {
 						i(108181),	-- Peerless Draenic Steel Helm
 						i(108189),	-- Peerless Draenic Steel Helm
 						i(108197),	-- Peerless Draenic Steel Helm
-						i(108205),	-- Peerless Draenic Steel Helm
 						i(108213),	-- Peerless Draenic Steel Helm
 						i(108221),	-- Peerless Draenic Steel Helm
 						i(108168),	-- Peerless Draenic Steel Girdle
@@ -126,7 +123,6 @@ root(ROOTS.NeverImplemented, {
 						i(108216),	-- Peerless Draenic Steel Girdle
 						i(108224),	-- Peerless Draenic Steel Girdle
 						i(108164),	-- Peerless Draenic Steel Guantlets
-						i(108180),	-- Peerless Draenic Steel Guantlets
 						i(108188),	-- Peerless Draenic Steel Guantlets
 						i(108196),	-- Peerless Draenic Steel Guantlets
 						i(108204),	-- Peerless Draenic Steel Guantlets

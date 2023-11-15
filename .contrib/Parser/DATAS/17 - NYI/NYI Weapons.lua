@@ -400,7 +400,6 @@ root(ROOTS.NeverImplemented, {
 			i(62329),	-- Dire Slasher (never added)
 			i(115295),	-- Spectral Dagger
 			i(115446),	-- Brianium Dagger
-			i(147908),	-- 6.0 Weapon - Knife_1h_DraenorRaid_D_01 - Jade (added i BFA)
 			i(182564),	-- NPE Weapon Dagger AGI
 			i(182573),	-- NPE Weapon Dagger AGI 2
 			-- ItemID/Retrieving
@@ -464,7 +463,6 @@ root(ROOTS.NeverImplemented, {
 			i(80983),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
 			i(115292),	-- Spectral Axe
 			i(117010),	-- Forester's Axe	(Never added in Game)
-			i(134586),	-- Vanguard Hatchet
 			i(134755),	-- Covert Hatchet
 			i(182562),	-- NPE Weapon 1H Axe AGI
 			i(182577),	-- NPE Weapon 1H Axe AGI 2
