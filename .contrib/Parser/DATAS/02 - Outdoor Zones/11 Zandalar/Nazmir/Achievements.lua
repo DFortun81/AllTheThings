@@ -6,141 +6,46 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	m(NAZMIR, {
 		n(ACHIEVEMENTS, {
 			ach(12942, {	-- Adventurer of Nazmir
-				crit(1, {	-- Ancient Jawbreaker
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(2, {	-- Azerite Infused Elemental
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(3, {	-- Azerite Infused Slag
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(4, {	-- Blood Priest Xak'lar
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(5, {	-- Uroku the Bound
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(6, {	-- King Kooba
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(7, {	-- Chag's Challenge
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(8, {	-- Corpse Bringer Yal'kar
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(9, {	-- Cursed Chest
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(10, {	-- Gwugnug the Cursed
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(11, {	-- Glompmaw
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(12, {	-- Gutrip the Hungry
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(13, {	-- Queen Tzxi'kik
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(14, {	-- Infected Direhorn
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(15, {	-- Jax'teb the Reanimated
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(16, {	-- Juba the Scarred
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(17, {	-- Kal'draxa
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(18, {	-- Krubbs
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(19, {	-- Lost Scroll
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(20, {	-- Bajiatha
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(21, {	-- Scout Skrasniss
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(22, {	-- Scrounger Patriarch
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(23, {	-- Tainted Guardian
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(24, {	-- Totem Maker Jash'ga
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(25, {	-- Urn of Agussu
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(26, {	-- Venomjaw
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(27, {	-- Wardrummer Zurula
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(28, {	-- Xu'ba the Bone Collector
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(29, {	-- Za'amar the Queen's Blade
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(30, {	-- Zanxib the Engorged
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(31, {	-- Lo'kuno
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(32, {	-- Mala'kili and Rohnkor
-					-- ["_npcs"] = { NPCID },
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13020, {	-- Bow to Your Masters
 				["collectible"] = false,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(1, {	-- Bwonsamdi respected
+					crit(41525, {	-- Bwonsamdi respected
 						["coord"] = { 39.4, 24.7, NAZMIR },
 						["cr"] = 122688,	-- Bwonsamdi
 					}),
-					crit(2, {	-- Krag'wa respected
+					crit(41495, {	-- Krag'wa respected
 						["coord"] = { 75.4, 56.7, NAZMIR },
 						["cr"] = 120551,	-- Krag'wa
 					}),
 				}
 			}),
 			ach(13024, {	-- Carved in Stone, Written in Blood
-				crit(1, {	-- Ancient Nazmani Tablet
+				crit(41860, {	-- Ancient Nazmani Tablet
 					["provider"] = {"o",298921},	-- Ancient Nazmani Tablet
 					["coord"] = { 56.3, 57.3, NAZMIR },
 					["icon"] = "Interface\\Icons\\inv_misc_rune_11",
 				}),
-				crit(2, {	-- Weathered Nazmani Tablet
+				crit(41861, {	-- Weathered Nazmani Tablet
 					["provider"] = {"o",298963},	-- Weathered Nazmani Tablet
 					["coord"] = { 43.4, 48.1, NAZMIR },
 					["icon"] = "Interface\\Icons\\inv_misc_rune_11",
 				}),
-				crit(3, {	-- Cracked Tablet
+				crit(41862, {	-- Cracked Tablet
 					["provider"] = {"o",298965},	-- Cracked Tablet
 					["coord"] = { 51.2, 85.1, NAZMIR },
 					["icon"] = "Interface\\Icons\\inv_misc_rune_11",
 				}),
-				crit(4, {	-- Fractured Tablet
+				crit(42116, {	-- Fractured Tablet
 					["provider"] = {"o",299073},	-- Fractured Tablet
 					["coord"] = { 42.6, 57.1, NAZMIR },
 					["icon"] = "Interface\\Icons\\inv_misc_rune_11",
 				}),
 			}),
 			ach(12588, {	-- Eat Your Greens
-				crit(1, {	-- Saurolisk Tail
+				crit(40542, {	-- Saurolisk Tail
 					["provider"] = {"o",291233},	-- Saurolisk Tail
 					["coords"] = {
 						{ 30.3, 52.7, NAZMIR },
@@ -149,7 +54,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					},
 					["icon"] = "Interface\\Icons\\inv_misc_herb_whiptail",
 				}),
-				crit(2, {	-- Bwonsamdi's Tears
+				crit(40543, {	-- Bwonsamdi's Tears
 					["provider"] = {"o",291238},	-- Bwonsamdi's Tears
 					["coords"] = {
 						{ 55.6, 74.7, NAZMIR },
@@ -157,7 +62,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					},
 					["icon"] = "Interface\\Icons\\inv_misc_herb_riverbud",
 				}),
-				crit(3, {	-- Gnarl Root
+				crit(40544, {	-- Gnarl Root
 					["provider"] = {"o",291241},	-- Gnarl Root
 					["coords"] = {
 						{ 28.0, 35.3, NAZMIR },
@@ -166,7 +71,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					},
 					["icon"] = "Interface\\Icons\\inv_misc_herb_07",
 				}),
-				crit(4, {	-- Sapphire Amaraina
+				crit(40546, {	-- Sapphire Amaraina
 					["provider"] = {"o",292812},	-- Sapphire Amaraina
 					["coords"] = {
 						{ 73.7, 39.7, NAZMIR },
@@ -174,7 +79,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					},
 					["icon"] = "Interface\\Icons\\inv_misc_herb_taladororchid",
 				}),
-				crit(5, {	-- Krag'wa's Ire
+				crit(40549, {	-- Krag'wa's Ire
 					["provider"] = {"o",292823},	-- Krag'wa's Ire
 					["coords"] = {
 						{ 52.6, 35.8, NAZMIR },
@@ -182,7 +87,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					},
 					["icon"] = "Interface\\Icons\\inv_misc_herb_talandrasrose_petal",
 				}),
-				crit(6, {	-- Stonebloom
+				crit(40550, {	-- Stonebloom
 					["provider"] = {"o",292825},	-- Stonebloom
 					["coords"] = {
 						{ 54.5, 56.1, NAZMIR },
@@ -395,28 +300,28 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			ach(11868, {	-- The Dark Heart of Nazmir
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(1, {	-- Deep in the Swamp
+					crit(36955, {	-- Deep in the Swamp
 						["sourceQuests"] = { 47188 },	-- The Aid of the Loa
 					}),
-					crit(2, {	-- A Pact with Death
+					crit(36956, {	-- A Pact with Death
 						["sourceQuests"] = { 47250 },	-- We'll Meet Again
 					}),
-					crit(3, {	-- Undercover Sista
+					crit(37971, {	-- Undercover Sista
 						["sourceQuests"] = { 49082 },	-- Upward and Onward
 					}),
-					crit(4, {	-- Turtle Power
+					crit(37970, {	-- Turtle Power
 						["sourceQuests"] = { 49160 },	-- Torga's Eternal Return
 					}),
-					crit(5, {	-- A Friend in the Frogs
+					crit(36957, {	-- A Friend in the Frogs
 						["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
 					}),
-					crit(6, {	-- Bring the Boom
+					crit(36979, {	-- Bring the Boom
 						["sourceQuests"] = { 47601 },	-- Field Evaluation
 					}),
-					crit(7, {	-- Everything Contained
+					crit(36958, {	-- Everything Contained
 						["sourceQuests"] = { 49985 },	-- Return to Gloom Hollow
 					}),
-					crit(8, {	-- Bleeding the Blood Trolls
+					crit(36978, {	-- Bleeding the Blood Trolls
 						["sourceQuests"] = { 50087 },	-- Ateena's Fall
 					}),
 				},
@@ -427,34 +332,34 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			}),
 			pvp(ach(12574)),	-- Tour of Duty: Nazmir
 			ach(12771, {	-- Treasures of Nazmir
-				crit(1, {		-- Lucky Horace's Lucky Chest
+				crit(40857, {		-- Lucky Horace's Lucky Chest
 					["_quests"] = { 49867 },
 				}),
-				crit(2, {		-- Partially-Digested Treasure
+				crit(40858, {		-- Partially-Digested Treasure
 					["_quests"] = { 50061 },
 				}),
-				crit(3, {		-- Cursed Nazmani Chest
+				crit(40859, {		-- Cursed Nazmani Chest
 					["_quests"] = { 49979 },
 				}),
-				crit(4, {		-- Cleverly Disguised Chest
+				crit(40860, {		-- Cleverly Disguised Chest
 					["_quests"] = { 49885 },
 				}),
-				crit(5, {		-- Lost Nazmani Treasure
+				crit(40861, {		-- Lost Nazmani Treasure
 					["_quests"] = { 49891 },
 				}),
-				crit(6, {		-- Offering to Bwonsamdi
+				crit(40862, {		-- Offering to Bwonsamdi
 					["_quests"] = { 49484 },
 				}),
-				crit(7, {		-- Shipwrecked Chest
+				crit(40863, {		-- Shipwrecked Chest
 					["_quests"] = { 49483 },
 				}),
-				crit(8, {		-- Venomous Seal
+				crit(40864, {		-- Venomous Seal
 					["_quests"] = { 49889 },
 				}),
-				crit(9, {		-- Swallowed Naga Chest
+				crit(40865, {		-- Swallowed Naga Chest
 					["_quests"] = { 50045 },
 				}),
-				crit(10, {		-- Wunja's Trove
+				crit(40866, {		-- Wunja's Trove
 					["_quests"] = { 49313 },
 				}),
 			}),
