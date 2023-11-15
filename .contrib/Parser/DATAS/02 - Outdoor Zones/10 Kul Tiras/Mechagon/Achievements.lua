@@ -8,19 +8,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 			achraw(13790, {	-- Armed for Action
 				["description"] = "Each criteria can be earned by creating weapons with Rocket-Chief Fuselage during the |cFFffd200Toys for Destruction|r daily.",
 				["groups"] = {
-					crit(1, {	-- Volatile Blaster
+					crit(46003, {	-- Volatile Blaster
 						["_quests"] = { 54090 },	-- Toys For Destruction
 					}),
-					crit(2, {	-- Ricket's Special Delivery
+					crit(45999, {	-- Ricket's Special Delivery
 						["_quests"] = { 54090 },	-- Toys For Destruction
 					}),
-					crit(3, {	-- Lightning Zap 5000
+					crit(46000, {	-- Lightning Zap 5000
 						["_quests"] = { 54090 },	-- Toys For Destruction
 					}),
-					crit(4, {	-- Supercollider
+					crit(46001, {	-- Supercollider
 						["_quests"] = { 54090 },	-- Toys For Destruction
 					}),
-					crit(5, {	-- Boltspitter
+					crit(46002, {	-- Boltspitter
 						["_quests"] = { 54090 },	-- Toys For Destruction
 					}),
 				},
@@ -87,210 +87,213 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 				},
 			}),
 			ach(13556, {	-- Outside Influences
-				crit(1, {	-- Aid from Nordrassil
+				crit(45246, {	-- Aid from Nordrassil
 					["_quests"] = { 55463 },	-- Aid from Nordrassil
 				}),
-				crit(2, {	-- One Gnome's Trash
+				crit(45248, {	-- One Gnome's Trash
 					["_quests"] = { 55575 },	-- One Gnome's Trash
 				}),
-				crit(3, {	-- Clues Abound
+				crit(45249, {	-- Clues Abound
 					["_quests"] = { 55658 },	-- Clues Abound
 				}),
-				crit(4, {	-- A Historical Mess
+				crit(45250, {	-- A Historical Mess
 					["_quests"] = { 55672 },	-- A Historical Mess
 				}),
-				crit(5, {	-- A Growing Mystery
+				crit(45251, {	-- A Growing Mystery
 					["_quests"] = { 55688 },	-- A Growing Mystery
 				}),
-				crit(6, {	-- Time for Heroics
+				crit(45252, {	-- Time for Heroics
 					["_quests"] = { 55717 },	-- Time for Heroics
 				}),
-				crit(7, {	-- Strange Discovery
+				crit(45253, {	-- Strange Discovery
 					["_quests"] = { 55718 },	-- Strange Discovery
 				}),
-				crit(8, {	-- Deck 'Em
+				crit(45258, {	-- Deck 'Em
 					["_quests"] = { 56049 },	-- Deck 'Em
 				}),
-				crit(9, {	-- Bugs, Lots of 'Em!
+				crit(45255, {	-- Bugs, Lots of 'Em!
 					["_quests"] = { 55765 },	-- Bugs, Lots of 'Em!
 				}),
-				crit(10, {	-- Pirates? I hate Those Guys!
+				crit(45633, {	-- Pirates? I hate Those Guys!
 					["_quests"] = { 56469 },	-- Pirates? I hate Those Guys!
 				}),
-				crit(11, {	-- Rico's Rescue
+				crit(45256, {	-- Rico's Rescue
 					["_quests"] = { 55885 },	-- Rico's Rescue
 				}),
-				crit(12, {	-- The Other Place
+				crit(45257, {	-- The Other Place
 					["_quests"] = { 55816 },	-- The Other Place
 				}),
-				crit(13, {	-- The Final Act
+				crit(45259, {	-- The Final Act
 					["_quests"] = { 56053 },	-- The Final Act
 				}),
-				crit(14, {	-- Abduction Reduction
+				crit(45263, {	-- Abduction Reduction
 					["_quests"] = { 55905 },	-- Abduction Reduction
 				}),
-				crit(15, {	-- Aim High
+				crit(45264, {	-- Aim High
 					["_quests"] = { 55813 },	-- Aim High
 				}),
-				crit(16, {	-- Pirates, Sea Monsters, Robots
+				crit(45368, {	-- Pirates, Sea Monsters, Robots
 					["_quests"] = { 56184 },	-- Pirates, Sea Monsters, Robots
 				}),
-				crit(17, {	-- Go For The Gold
+				crit(45369, {	-- Go For The Gold
 					["_quests"] = { 56301 },	-- Go For The Gold
 				}),
-				crit(18, {	-- The Family Jewels
+				crit(45370, {	-- The Family Jewels
 					["_quests"] = { 56306 },	-- The Family Jewels
 				}),
-				crit(19, {	-- Adapt, Improve, Overcome!
+				crit(45371, {	-- Adapt, Improve, Overcome!
 					["_quests"] = { 56142 },	-- Adapt, Improve, Overcome!
 				}),
-				crit(20, {	-- Toys for Destruction
+				crit(45403, {	-- Toys for Destruction
 					["_quests"] = { 54090 },	-- Toys for Destruction
 				}),
-				crit(21, {	-- Playtime's Over
+				crit(45405, {	-- Playtime's Over
 					["_quests"] = { 55528 },	-- Playtime's Over
 				}),
-				crit(22, {	-- Battle Tested
+				crit(45406, {	-- Battle Tested
 					["_quests"] = { 56355 },	-- Battle Tested
 				}),
-				crit(23, {	-- Be Kind, Rewind
+				crit(45409, {	-- Be Kind, Rewind
 					["_quests"] = { 56365 },	-- Be Kind, Rewind
 				}),
-				crit(24, {	-- My Chicken are Not For Eating!
+				crit(45609, {	-- My Chicken are Not For Eating!
 					["_quests"] = { 56523 },	-- My Chicken are Not For Eating!
 				}),
-				crit(25, {	-- Off-the-Books Brawlin'
-					["_quests"] = { 56558, 56552 },	-- Off-the-Books Brawlin' A/H
+				crit(45620, {	-- Off-the-Books Brawlin'
+					["_quests"] = { 56552 },	-- Off-the-Books Brawlin' (H)
 				}),
-				crit(26, {	-- Discs of Norgannon
+				crit(45621, {	-- Off-the-Books Brawlin'
+					["_quests"] = { 56558 },	-- Off-the-Books Brawlin' (A)
+				}),
+				crit(45644, {	-- Discs of Norgannon
 					["_quests"] = { 56410 },	-- Discs of Norgannon
 				}),
-				crit(27, {	-- Toys Like Us
+				crit(45643, {	-- Toys Like Us
 					["_quests"] = { 56572 },	-- Toys Like Us
 				}),
-				crit(28, {	-- Waste Not
+				crit(45645, {	-- Waste Not
 					["_quests"] = { 56508 },	-- Waste Not
 				}),
-				crit(29, {	-- Taking The Air Out
+				crit(45646, {	-- Taking The Air Out
 					["_quests"] = { 56501 },	-- Taking The Air Out
 				}),
-				crit(30, {	-- Unprofitable Ventures
+				crit(45647, {	-- Unprofitable Ventures
 					["_quests"] = { 56471 },	-- Unprofitable Ventures
 				}),
-				crit(31, {	-- A Direct Approach
+				crit(45648, {	-- A Direct Approach
 					["_quests"] = { 56493 },	-- A Direct Approach
 				}),
-				crit(32, {	-- Cogfrenzy's Construction Frenzy
+				crit(45694, {	-- Cogfrenzy's Construction Frenzy
 					["_quests"] = { 56405 },	-- Cogfrenzy's Construction Frenzy
 				}),
 			}),
 			ach(13470, {	-- Rest In Pistons
-				crit(1, {	-- Mechagnoian Nullfier
+				crit(45117, {	-- Mechagnoian Nullfier
 					["_npcs"] = { 151124 },
 				}),
-				crit(2, {	-- The Scrap King
+				crit(45118, {	-- The Scrap King
 					["_npcs"] = { 151625 },
 				}),
-				crit(3, {	-- Mecharantuala
+				crit(45119, {	-- Mecharantuala
 					["_npcs"] = { 151672 },
 				}),
-				crit(4, {	-- Jawbreaker
+				crit(45121, {	-- Jawbreaker
 					["_npcs"] = { 151684 },
 				}),
-				crit(5, {	-- Paol Pondwader
+				crit(45122, {	-- Paol Pondwader
 					["_npcs"] = { 151702 },
 				}),
-				crit(6, {	-- Rumblerocks
+				crit(45123, {	-- Rumblerocks
 					["_npcs"] = { 150575 },
 				}),
-				crit(7, {	-- Arachnoid Harvester
+				crit(45124, {	-- Arachnoid Harvester
 					["_npcs"] = { 151934 },
 				}),
-				crit(8,	{	-- Killsaw
+				crit(45125,	{	-- Killsaw
 					["_npcs"] = { 152007 },
 				}),
-				crit(9,	{	-- Fungarian Furor
+				crit(45126,	{	-- Fungarian Furor
 					["_npcs"] = { 151884 },
 				}),
-				crit(10, {	-- Foul Manifestations
+				crit(45127, {	-- Foul Manifestations
 					["_npcs"] = { 151202 },
 				}),
-				crit(11, {	-- Deepwater Maw
+				crit(45128, {	-- Deepwater Maw
 					["_npcs"] = { 151569 },
 				}),
-				crit(12, {	-- OOX-Avenger/MG
+				crit(45129, {	-- OOX-Avenger/MG
 					["_npcs"] = { 151296 },
 				}),
-				crit(13, {	-- Bonepicker
+				crit(45130, {	-- Bonepicker
 					["_npcs"] = { 152001 },
 				}),
-				crit(14, {	-- Boggac Skullbash
+				crit(45131, {	-- Boggac Skullbash
 					["_npcs"] = { 151308 },
 				}),
-				crit(15, {	-- Uncle T'Rogg
+				crit(45132, {	-- Uncle T'Rogg
 					["_npcs"] = { 151940 },
 				}),
-				crit(16, {	-- Seaspit
+				crit(45133, {	-- Seaspit
 					["_npcs"] = { 150937 },
 				}),
-				crit(17, {	-- Sparkqueen P'Emp
+				crit(45134, {	-- Sparkqueen P'Emp
 					["_npcs"] = { 153000 },
 				}),
-				crit(18, {	-- Rustfeather
+				crit(45135, {	-- Rustfeather
 					["_npcs"] = { 152182 },
 				}),
-				crit(19, {	-- Malfunctioning Beasetbot
+				crit(45136, {	-- Malfunctioning Beasetbot
 					["_npcs"] = { 151933 },
 				}),
-				crit(20, {	-- Crazed Trogg
+				crit(45137, {	-- Crazed Trogg
 					["_npcs"] = { 152569 },
 				}),
-				crit(21, {	-- Earthbreaker Gulroc
+				crit(45138, {	-- Earthbreaker Gulroc
 					["_npcs"] = { 150342 },
 				}),
-				crit(22, {	-- Ol' Big Tusk
+				crit(45145, {	-- Ol' Big Tusk
 					["_npcs"] = { 153206 },
 				}),
-				crit(23, {	-- Gemicide
+				crit(45146, {	-- Gemicide
 					["_npcs"] = { 153205 },
 				}),
-				crit(24, {	-- Oxidized Leachbeast
+				crit(45157, {	-- Oxidized Leachbeast
 					["_npcs"] = { 152764 },
 				}),
-				crit(25, {	-- Boilburn
+				crit(45152, {	-- Boilburn
 					["_npcs"] = { 153200 },
 				}),
-				crit(26, {	-- The Kleptoboss
+				crit(45153, {	-- The Kleptoboss
 					["_npcs"] = { 152113 },
 				}),
-				crit(27, {	-- Steel Singer Freza
+				crit(45154, {	-- Steel Singer Freza
 					["_npcs"] = { 153226 },
 				}),
-				crit(28, {	-- Gear Checker Cogstar
+				crit(45155, {	-- Gear Checker Cogstar
 					["_npcs"] = { 153228 },
 				}),
-				crit(29, {	-- Mr. Fixthis
+				crit(45156, {	-- Mr. Fixthis
 					["_npcs"] = { 151627 },
 				}),
-				crit(30, {	-- Vaultbot
+				crit(45158, {	-- Vaultbot
 					["_npcs"] = { 150394 },	-- Armored Vaultbot
 				}),
-				crit(31, {	-- Enforcer KX-T57
+				crit(45373, {	-- Enforcer KX-T57
 					["_npcs"] = { 154153 },
 				}),
-				crit(32, {	-- The Rusty Prince
+				crit(45374, {	-- The Rusty Prince
 					["_npcs"] = { 154225 },
 				}),
-				crit(33, {	-- Gorged Gear-Cruncher
+				crit(45410, {	-- Gorged Gear-Cruncher
 					["_npcs"] = { 154701 },
 				}),
-				crit(34, {	-- Caustic Mechaslime
+				crit(45411, {	-- Caustic Mechaslime
 					["_npcs"] = { 154739 },
 				}),
-				crit(35, {	-- The Doppel Gang
+				crit(45433, {	-- The Doppel Gang
 					["_npcs"] = { 155060 },
 				}),
-				crit(36, {	-- Scrapclaw
+				crit(45691, {	-- Scrapclaw
 					["_npcs"] = { 155583 },
 				}),
 			}),
@@ -298,52 +301,52 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 				["sourceQuests"] = { 55609 },	-- Operation: Mechagon - The Mechoriginator
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(1, {	-- The Legend of Mechagon
+					crit(45695, {	-- The Legend of Mechagon
 						["_quests"] = { 54088 },	-- The Legend of Mechagon
 					}),
-					crit(2, {	-- Looking Inside
+					crit(45697, {	-- Looking Inside
 						["_quests"] = { 55040 },	-- Looking Inside
 					}),
-					crit(3, {	-- Let's Get it Started
+					crit(45699, {	-- Let's Get it Started
 						["_quests"] = { 54945 },	-- Let's Get it Started
 					}),
-					crit(4, {	-- You Must be This Height
+					crit(45701, {	-- You Must be This Height
 						["_quests"] = { 54087 },	-- You Must be This Height
 					}),
-					crit(5, {	-- Report to Gila
+					crit(45702, {	-- Report to Gila
 						["_quests"] = { 54946 },	-- Report to Gila
 					}),
-					crit(6, {	-- A Small Team
+					crit(45703, {	-- A Small Team
 						["_quests"] = { 54947 },	-- A Small Team
 					}),
-					crit(7, {	-- The Start of Something Bigger
+					crit(45704, {	-- The Start of Something Bigger
 						["_quests"] = { 54992 },	-- The Start of Something Bigger
 					}),
-					crit(8, {	-- Princely Visit
+					crit(45705, {	-- Princely Visit
 						["_quests"] = { 55645 },	-- Princely Visit
 					}),
-					crit(9, {	-- The Resistance Needs YOU!
+					crit(45706, {	-- The Resistance Needs YOU!
 						["_quests"] = { 55729 },	-- The Resistance Needs YOU!
 					}),
-					crit(10, {	-- Rescuing the Resistance
+					crit(45707, {	-- Rescuing the Resistance
 						["_quests"] = { 55730 },	-- Rescuing the Resistance
 					}),
-					crit(11, {	-- My Father's Armies
+					crit(45708, {	-- My Father's Armies
 						["_quests"] = { 55731 },	-- My Father's Armies
 					}),
-					crit(12, {	-- We Can Fix It
+					crit(45709, {	-- We Can Fix It
 						["_quests"] = { 55995 },	-- We Can Fix It
 					}),
-					crit(13, {	-- Drill Rig Construction
+					crit(45710, {	-- Drill Rig Construction
 						["_quests"] = { 55734 },	-- Drill Rig Construction
 					}),
-					crit(14, {	-- Send My Father a Message
+					crit(45711, {	-- Send My Father a Message
 						["_quests"] = { 55096 },	-- Send My Father a Message
 					}),
-					crit(15, {	-- Welcome to the Resistance
+					crit(45712, {	-- Welcome to the Resistance
 						["_quests"] = { 55736 },	-- Welcome to the Resistance
 					}),
-					crit(16, {	-- Operation: Mechagon - The Mechoriginator
+					crit(45713, {	-- Operation: Mechagon - The Mechoriginator
 						["_quests"] = { 55609 },	-- Operation: Mechagon - The Mechoriginator
 					}),
 				},
@@ -352,137 +355,137 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 				["sourceQuests"] = { 55609 },	-- Operation: Mechagon - The Mechoriginator
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(1, {	-- The Legend of Mechagon
+					crit(46294, {	-- The Legend of Mechagon
 						["_quests"] = { 55646 },	-- The Legend of Mechagon
 					}),
-					crit(2, {	-- A Quick Ear Hustle
+					crit(46304, {	-- A Quick Ear Hustle
 						["_quests"] = { 55647 },	-- A Quick Ear Hustle
 					}),
-					crit(3, {	-- This is Our Vault Now
+					crit(46305, {	-- This is Our Vault Now
 						["_quests"] = { 55648 },	-- This is Our Vault Now
 					}),
-					crit(4, {	-- Let's Get it Started
+					crit(46306, {	-- Let's Get it Started
 						["_quests"] = { 55630 },	-- Let's Get it Started
 					}),
-					crit(5, {	-- You Must be This Height
+					crit(46307, {	-- You Must be This Height
 						["_quests"] = { 55632 },	-- You Must be This Height
 					}),
-					crit(6, {	-- Machinations for Mechagon
+					crit(46308, {	-- Machinations for Mechagon
 						["_quests"] = { 55649 },	-- Machinations for Mechagon
 					}),
-					crit(7, {	-- Only the Best Will Do
+					crit(46309, {	-- Only the Best Will Do
 						["_quests"] = { 55650 },	-- Only the Best Will Do
 					}),
-					crit(8, {	-- To Mechagon!
+					crit(46310, {	-- To Mechagon!
 						["_quests"] = { 55651 },	-- To Mechagon!
 					}),
-					crit(9, {	-- Prospectus Bay
+					crit(46311, {	-- Prospectus Bay
 						["_quests"] = { 55652 },	-- Prospectus Bay
 					}),
-					crit(10, {	-- We Come in Peace... and Profit
+					crit(46312, {	-- We Come in Peace... and Profit
 						["_quests"] = { 55685 },	-- We Come in Peace... and Profit
 					}),
-					crit(11, {	-- The Resistance Needs YOU!
+					crit(45706, {	-- The Resistance Needs YOU!
 						["_quests"] = { 55729 },	-- The Resistance Needs YOU!
 					}),
-					crit(12, {	-- Rescuing the Resistance
+					crit(45707, {	-- Rescuing the Resistance
 						["_quests"] = { 55730 },	-- Rescuing the Resistance
 					}),
-					crit(13, {	-- My Father's Armies
+					crit(45708, {	-- My Father's Armies
 						["_quests"] = { 55731 },	-- My Father's Armies
 					}),
-					crit(14, {	-- We Can Fix It
+					crit(45709, {	-- We Can Fix It
 						["_quests"] = { 55995 },	-- We Can Fix It
 					}),
-					crit(15, {	-- Drill Rig Construction
+					crit(45710, {	-- Drill Rig Construction
 						["_quests"] = { 55734 },	-- Drill Rig Construction
 					}),
-					crit(16, {	-- Send My Father a Message
+					crit(45711, {	-- Send My Father a Message
 						["_quests"] = { 55096 },	-- Send My Father a Message
 					}),
-					crit(17, {	-- Welcome to the Resistance
+					crit(45712, {	-- Welcome to the Resistance
 						["_quests"] = { 55736 },	-- Welcome to the Resistance
 					}),
-					crit(18, {	-- Operation: Mechagon - The Mechoriginator
+					crit(45713, {	-- Operation: Mechagon - The Mechoriginator
 						["_quests"] = { 55609 },	-- Operation: Mechagon - The Mechoriginator
 					}),
 				},
 			}),
 			petbattle(ach(13625, {	-- Mighty Minions of Mechagon
-				crit(5, {	-- CK-9 Micro-Oppression Unit
-					["crs"] = { 154926 },	-- CK-9 Micro-Oppression Unit
-					["coord"] = { 65.4, 57.6, MECHAGON },
-				}),
-				crit(4, {	-- Creakclank
-					["crs"] = { 154925 },	-- Creakclank
-					["coord"] = { 59.2, 50.9, MECHAGON },
-				}),
-				crit(1, {	-- Gnomefeaster
+				crit(45459, {	-- Gnomefeaster
 					["crs"] = { 154922 },	-- Gnomefeaster
 					["coord"] = { 64.7, 64.6, MECHAGON },
 				}),
-				crit(3, {	-- Goldenbot XD
-					["crs"] = { 154924 },	-- Goldenbot XD
-					["coord"] = { 60.6, 56.9, MECHAGON },
-				}),
-				crit(2, {	-- Sputtertube
+				crit(45460, {	-- Sputtertube
 					["crs"] = { 154923 },	-- Sputtertube
 					["coord"] = { 60.7, 46.5, MECHAGON },
 				}),
-				crit(6, {	-- Unit 35
+				crit(45461, {	-- Goldenbot XD
+					["crs"] = { 154924 },	-- Goldenbot XD
+					["coord"] = { 60.6, 56.9, MECHAGON },
+				}),
+				crit(45462, {	-- Creakclank
+					["crs"] = { 154925 },	-- Creakclank
+					["coord"] = { 59.2, 50.9, MECHAGON },
+				}),
+				crit(45463, {	-- CK-9 Micro-Oppression Unit
+					["crs"] = { 154926 },	-- CK-9 Micro-Oppression Unit
+					["coord"] = { 65.4, 57.6, MECHAGON },
+				}),
+				crit(45464, {	-- Unit 35
 					["crs"] = { 154927 },	-- Unit 35
 					["coord"] = { 51.1, 45.4, MECHAGON },
 				}),
-				crit(7, {	-- Unit 6
+				crit(45465, {	-- Unit 6
 					["crs"] = { 154928 },	-- Unit 6
 					["coord"] = { 39.5, 40.2, MECHAGON },
 				}),
-				crit(8, {	-- Unit 17
+				crit(45466, {	-- Unit 17
 					["crs"] = { 154929 },	-- Unit 17
 					["coord"] = { 72.1, 72.9, MECHAGON },
 				}),
 			})),
 			achraw(13708, {	-- Most Minis Wins
-				crit(1, {	-- Izira Gearsworn
+				crit(45771, {	-- Izira Gearsworn
 					["provider"] = { "i", 169794 },	-- Azeroth Mini: Izira Gearsworn
 				}),
-				crit(2, {	-- Wrenchbot
+				crit(45782, {	-- Wrenchbot
 					["provider"] = { "i", 169797 },	-- Azeroth Mini: Wrenchbot
 				}),
-				crit(3, {	-- Gazlowe
+				crit(45772, {	-- Gazlowe
 					["provider"] = { "i", 169840 },	-- Azeroth Mini: Gazlowe
 				}),
-				crit(4, {	-- Overspark
+				crit(45773, {	-- Overspark
 					["provider"] = { "i", 169844 },	-- Azeroth Mini: Overspark
 				}),
-				crit(5, {	-- Prince Erazmin
+				crit(45774, {	-- Prince Erazmin
 					["provider"] = { "i", 169841 },	-- Azeroth Mini: Erazmin
 				}),
-				crit(6, {	-- Bondo Bigblock
+				crit(45775, {	-- Bondo Bigblock
 					["provider"] = { "i", 169795 },	-- Azeroth Mini: Bondo Bigblock
 				}),
-				crit(7, {	-- Cork Stuttguard
+				crit(45776, {	-- Cork Stuttguard
 					["provider"] = { "i", 169843 },	-- Azeroth Mini: Cork Stuttguard
 				}),
-				crit(8, {	-- Roadtrogg
+				crit(45777, {	-- Roadtrogg
 					["provider"] = { "i", 169842 },	-- Azeroth Mini: Roadtrogg
 				}),
-				crit(9, {	-- Naeno Megacrash
+				crit(45778, {	-- Naeno Megacrash
 					["provider"] = { "i", 169849 },	-- Azeroth Mini: Naeno Megacrash
 				}),
-				crit(10, {	-- Cogstar
+				crit(45779, {	-- Cogstar
 					["provider"] = { "i", 169851 },	-- Azeroth Mini: Cogstar
 				}),
-				crit(11, {	-- HK-8
+				crit(45780, {	-- HK-8
 					["provider"] = { "i", 169845 },	-- Azeroth Mini: HK-8
 				}),
-				crit(12, {	-- Blastatron
+				crit(45781, {	-- Blastatron
 					["provider"] = { "i", 169852 },	-- Azeroth Mini: Blastatron
 				}),
-				crit(13, {	-- King Mechagon
+				crit(45785, {	-- King Mechagon
 					["provider"] = { "i", 169846 },	-- Azeroth Mini: King Mechagon
 				}),
-				crit(14, {	-- Sapphronetta
+				crit(45784, {	-- Sapphronetta
 					["provider"] = { "i", 169876 },	-- Azeroth Mini: Sapphronetta
 				}),
 			}),
@@ -496,10 +499,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 				},
 				["crs"] = { 150497 },	-- Scrappy
 				["g"] = {
-					crit(1, {	-- Revive Scrappy
+					crit(45628, {	-- Revive Scrappy
 						["provider"] = { "i", 166970 },	-- 1x Energy Cell
 					}),
-					crit(2, {	-- Feed Scrappy
+					crit(45629, {	-- Feed Scrappy
 						["provider"] = { "i", 167071 },	-- 1x Mechano-Treat
 					}),
 				},
@@ -512,34 +515,34 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 							i(158932),	-- Secretest Fish
 						},
 					}),
-					crit(1, {	-- Bottom Feeding Stinkfish
+					crit(44737, {	-- Bottom Feeding Stinkfish
 						["_quests"] = { 55299 },
 					}),
-					crit(2, {	-- Bolted Steelhead
+					crit(44738, {	-- Bolted Steelhead
 						["_quests"] = { 55305 },
 					}),
-					crit(3, {	-- Pond Hopping Springfish
+					crit(44739, {	-- Pond Hopping Springfish
 						["_quests"] = { 55306 },
 					}),
-					crit(4, {	-- Shadowy Cave Eel
+					crit(44740, {	-- Shadowy Cave Eel
 						["_quests"] = { 55307 },
 					}),
-					crit(5, {	-- Mechanical Blowfish
+					crit(44741, {	-- Mechanical Blowfish
 						["_quests"] = { 55308 },
 					}),
-					crit(6, {	-- Spitting Clownfish
+					crit(44742, {	-- Spitting Clownfish
 						["_quests"] = { 55309 },
 					}),
-					crit(7, {	-- Sludge-Fouled Carp
+					crit(44743, {	-- Sludge-Fouled Carp
 						["_quests"] = { 55310 },
 					}),
-					crit(8, {	-- Energized Lighting Cod
+					crit(44744, {	-- Energized Lighting Cod
 						["_quests"] = { 55311 },
 					}),
-					crit(9, {	-- Solarsprocket Barbel
+					crit(44745, {	-- Solarsprocket Barbel
 						["_quests"] = { 55312 },
 					}),
-					crit(10, {	-- Tasty Steelfin
+					crit(44746, {	-- Tasty Steelfin
 						["_quests"] = { 55313 },
 					}),
 				},

@@ -6,105 +6,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 	m(DRUSTVAR, {
 		n(ACHIEVEMENTS, {
 			ach(12941, {	-- Adventurer of Drustvar
-				crit(1, {	-- Betsy
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(2, {	-- Quillrat Matriarch
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(3, {	-- Barbthorn Queen
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(4, {	-- Vicemaul
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(5, {	-- Bonesquall
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(6, {	-- Gluttonous Yeti
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(7, {	-- Longfang
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(8, {	-- Ancient Sarcophagus
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(9, {	-- Beastly Ritual Skull
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(10, {	-- Rimestone
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(11, {	-- Whargarble the Ill-Tempered
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(12, {	-- Seething Cache
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(13, {	-- Grozgore
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(14, {	-- Gorehorn
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(15, {	-- Beshol
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(16, {	-- Talon
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(17, {	-- Emily Mayville
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(18, {	-- Nevermore
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(19, {	-- Balethorn
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(20, {	-- Bilefang Mother
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(21, {	-- Executioner Blackwell
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(22, {	-- Deathcap
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(23, {	-- Hyo'gi
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(24, {	-- Captain Leadfist
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(25, {	-- Arvon the Betrayed
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(26, {	-- Arclight
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(27, {	-- Avalanche
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(28, {	-- Haywire Golem
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(29, {	-- Gorged Boar
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(30, {	-- Sister Martha
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(31, {	-- Fungi Trio
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(32, {	-- Braedan Whitewall
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(33, {	-- Hexed Hunter
-					-- ["_npcs"] = { NPCID },
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13083, {	-- Better, Faster, Stronger
 				["description"] = "Collect and have active Witch's Boons: Excellence, Extra Pep, Rage, and Fortitude which are on a 5 minute timer and the debuff Witch's Curse: Newt. Debuffs can remove one of your buffs. Coords are possible brew spawn points.",
@@ -133,6 +35,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					{ 19.00, 58.29, DRUSTVAR },
 				},
 			}),
+			-- TODO: We're lacking named data to convert this nested achievement criteria tree to criteriaUIDs
 			ach(13094, {	-- Cursed Game Hunter
 				crit(1, {	-- Goats
 					["crs"] = { 143929 },	-- Hexed Craghopper
@@ -239,43 +142,43 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				},
 			}),
 			ach(13064, {	-- Drust the Facts, Ma'am
-				crit(1, {	-- Drust Stele: The Circle
+				crit(41436, {	-- Drust Stele: The Circle
 					["coord"] = { 36.8, 64.5, DRUSTVAR },
 					["provider"] = {"o",296915},
 				}),
-				crit(2, {	-- Drust Stele: The Ritual
+				crit(41437, {	-- Drust Stele: The Ritual
 					["coord"] = { 50.8, 73.7, DRUSTVAR },
 					["provider"] = {"o",296916},
 				}),
-				crit(3, {	-- Drust Stele: The Tree
+				crit(41438, {	-- Drust Stele: The Tree
 					["coord"] = { 27.3, 48.3, DRUSTVAR },
 					["provider"] = {"o",296917},
 				}),
-				crit(4, {	-- Drust Stele: Breath Into Stone
+				crit(41439, {	-- Drust Stele: Breath Into Stone
 					["coord"] = { 59.5, 66.7, DRUSTVAR },
 					["provider"] = {"o",296918},
 				}),
-				crit(5, {	-- Drust Stele: Sacrifice
+				crit(41441, {	-- Drust Stele: Sacrifice
 					["coord"] = { 27.6, 57.6, DRUSTVAR },
 					["provider"] = {"o",297627},
 				}),
-				crit(6, {	-- Drust Stele: Constructs
+				crit(41442, {	-- Drust Stele: Constructs
 					["coord"] = { 50.2, 42.5, DRUSTVAR },
 					["provider"] = {"o",297628},
 				}),
-				crit(7, {	-- Drust Stele: The Cycle
+				crit(41443, {	-- Drust Stele: The Cycle
 					["coord"] = { 19.0, 57.9, DRUSTVAR },
 					["provider"] = {"o",297629},
 				}),
-				crit(8, {	-- Drust Stele: Conflict
+				crit(41445, {	-- Drust Stele: Conflict
 					["coord"] = { 46.5, 37.3, DRUSTVAR },
 					["provider"] = {"o",297630},
 				}),
-				crit(9, {	-- Drust Stele: The Flayed Man
+				crit(41446, {	-- Drust Stele: The Flayed Man
 					["coord"] = { 56.6, 86.0, DRUSTVAR },
 					["provider"] = {"o",297631},
 				}),
-				crit(10, {	-- Drust Stele: Protectors of the Forest
+				crit(41449, {	-- Drust Stele: Protectors of the Forest
 					["coord"] = { 44.6, 45.7, DRUSTVAR },
 					["provider"] = {"o",297632},
 				}),
@@ -293,19 +196,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13280, {	-- Hobbyist Aquarist
 						["collectible"] = false,
 						["g"] = {
-							crit(1, {	-- Captain Hermes
+							crit(43591, {	-- Captain Hermes
 								["creatureID"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
-							crit(3, {	-- Dilbert McClint
+							crit(43593, {	-- Dilbert McClint
 								["creatureID"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
-							crit(4, {	-- Fizzie Sparkwhistle
+							crit(43594, {	-- Fizzie Sparkwhistle
 								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
-							crit(5, {	-- Michael Skarn
+							crit(43595, {	-- Michael Skarn
 								["creatureID"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
@@ -314,19 +217,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13270, {	-- Beast Mode
 						["collectible"] = false,
 						["g"] = {
-							crit(1, {	-- Captain Hermes
+							crit(43611, {	-- Captain Hermes
 								["creatureID"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
-							crit(3, {	-- Dilbert McClint
+							crit(43613, {	-- Dilbert McClint
 								["creatureID"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
-							crit(4, {	-- Fizzie Sparkwhistle
+							crit(43614, {	-- Fizzie Sparkwhistle
 								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
-							crit(5, {	-- Michael Skarn
+							crit(43615, {	-- Michael Skarn
 								["creatureID"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
@@ -335,19 +238,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13271, {	-- Critters with Huge Teeth
 						["collectible"] = false,
 						["g"] = {
-							crit(1, {	-- Captain Hermes
+							crit(43631, {	-- Captain Hermes
 								["creatureID"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
-							crit(3, {	-- Dilbert McClint
+							crit(43633, {	-- Dilbert McClint
 								["creatureID"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
-							crit(4, {	-- Fizzie Sparkwhistle
+							crit(43634, {	-- Fizzie Sparkwhistle
 								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
-							crit(5, {	-- Michael Skarn
+							crit(43635, {	-- Michael Skarn
 								["creatureID"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
@@ -356,19 +259,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13272, {	-- Dragons Make Everything Better
 						["collectible"] = false,
 						["g"] = {
-							crit(1, {	-- Captain Hermes
+							crit(43652, {	-- Captain Hermes
 								["creatureID"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
-							crit(3, {	-- Dilbert McClint
+							crit(43654, {	-- Dilbert McClint
 								["creatureID"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
-							crit(4, {	-- Fizzie Sparkwhistle
+							crit(43655, {	-- Fizzie Sparkwhistle
 								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
-							crit(5, {	-- Michael Skarn
+							crit(43656, {	-- Michael Skarn
 								["creatureID"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
@@ -377,19 +280,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13273, {	-- Element of Success
 						["collectible"] = false,
 						["g"] = {
-							crit(1, {	-- Captain Hermes
+							crit(43671, {	-- Captain Hermes
 								["creatureID"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
-							crit(3, {	-- Dilbert McClint
+							crit(43673, {	-- Dilbert McClint
 								["creatureID"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
-							crit(4, {	-- Fizzie Sparkwhistle
+							crit(43674, {	-- Fizzie Sparkwhistle
 								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
-							crit(5, {	-- Michael Skarn
+							crit(43675, {	-- Michael Skarn
 								["creatureID"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
@@ -398,19 +301,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13274, {	-- Fun With Flying
 						["collectible"] = false,
 						["g"] = {
-							crit(1, {	-- Captain Hermes
+							crit(43699, {	-- Captain Hermes
 								["creatureID"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
-							crit(3, {	-- Dilbert McClint
+							crit(43701, {	-- Dilbert McClint
 								["creatureID"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
-							crit(4, {	-- Fizzie Sparkwhistle
+							crit(43702, {	-- Fizzie Sparkwhistle
 								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
-							crit(5, {	-- Michael Skarn
+							crit(43703, {	-- Michael Skarn
 								["creatureID"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
@@ -419,19 +322,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13281, {	-- Human Resources
 						["collectible"] = false,
 						["g"] = {
-							crit(1, {	-- Captain Hermes
+							crit(43721, {	-- Captain Hermes
 								["creatureID"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
-							crit(3, {	-- Dilbert McClint
+							crit(43723, {	-- Dilbert McClint
 								["creatureID"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
-							crit(4, {	-- Fizzie Sparkwhistle
+							crit(43724, {	-- Fizzie Sparkwhistle
 								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
-							crit(5, {	-- Michael Skarn
+							crit(43725, {	-- Michael Skarn
 								["creatureID"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
@@ -440,19 +343,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13275, {	-- Magician's Secrets
 						["collectible"] = false,
 						["g"] = {
-							crit(1, {	-- Captain Hermes
+							crit(43740, {	-- Captain Hermes
 								["creatureID"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
-							crit(3, {	-- Dilbert McClint
+							crit(43742, {	-- Dilbert McClint
 								["creatureID"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
-							crit(4, {	-- Fizzie Sparkwhistle
+							crit(43743, {	-- Fizzie Sparkwhistle
 								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
-							crit(5, {	-- Michael Skarn
+							crit(43744, {	-- Michael Skarn
 								["creatureID"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
@@ -461,19 +364,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13277, {	-- Machine Learning
 						["collectible"] = false,
 						["g"] = {
-							crit(1, {	-- Captain Hermes
+							crit(43759, {	-- Captain Hermes
 								["creatureID"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
-							crit(3, {	-- Dilbert McClint
+							crit(43761, {	-- Dilbert McClint
 								["creatureID"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
-							crit(4, {	-- Fizzie Sparkwhistle
+							crit(43762, {	-- Fizzie Sparkwhistle
 								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
-							crit(5, {	-- Michael Skarn
+							crit(43763, {	-- Michael Skarn
 								["creatureID"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
@@ -482,19 +385,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13278, {	-- Not Quite Dead Yet
 						["collectible"] = false,
 						["g"] = {
-							crit(1, {	-- Captain Hermes
+							crit(43778, {	-- Captain Hermes
 								["creatureID"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
-							crit(3, {	-- Dilbert McClint
+							crit(43780, {	-- Dilbert McClint
 								["creatureID"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
-							crit(4, {	-- Fizzie Sparkwhistle
+							crit(43781, {	-- Fizzie Sparkwhistle
 								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
-							crit(5, {	-- Michael Skarn
+							crit(43782, {	-- Michael Skarn
 								["creatureID"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),

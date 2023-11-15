@@ -8,138 +8,67 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			ach(12473, {	-- A Sound Plan
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					crit(1, {	-- The Ashvane Trading Company
+					crit(39984, {	-- The Ashvane Trading Company
 						["sourceQuests"] = { 50531 },	-- Under Their Noses
 					}),
-					crit(2, {	-- Freehold
+					crit(39987, {	-- Freehold
 						["sourceQuests"] = { 49404 },	-- Fairwind's "Friends"
 					}),
-					crit(3, {	-- Defenders of Daelin's Gate
+					crit(39988, {	-- Defenders of Daelin's Gate
 						["sourceQuests"] = {
-							49740,	-- Cease Fire!
 							49736,	-- For Kul Tiras!
 						},
 					}),
-					crit(4, {	-- Enemies Within
+					crit(39990, {	-- Defenders of Daelin's Gate
+						["sourceQuests"] = {
+							49740,	-- Cease Fire!
+						},
+					}),
+					crit(39991, {	-- Enemies Within
 						["sourceQuests"] = { 50972 },	-- Proudmoore's Parley
 					}),
-					crit(5, {	-- The Shadow Over Anglepoint
+					crit(39993, {	-- The Shadow Over Anglepoint
 						["sourceQuests"] = { 49302 },	-- The Deadliest Catch
 					}),
-					crit(6, {	-- The Norwington Estate
+					crit(39992, {	-- The Norwington Estate
 						["sourceQuests"] = {
-							48089,	-- Mountain Sounds
 							48088,	-- No Party Like a Trogg Party
 						},
 					}),
-					crit(7, {	-- Castaways and Cutouts
-						["sourceQuests"] = {	-- uncommented are definitely required (have turned both in as final quests to earn the criteria on separate playthroughs).  not sure if the commented-out ones are required.  'toxic community' and 'glimmering locket' definitely aren't required.
-							48421,	-- Blood in the Tides
+					crit(40155, {	-- The Norwington Estate
+						["sourceQuests"] = {
+							48089,	-- Mountain Sounds
+						},
+					}),
+					crit(39985, {	-- Castaways and Cutouts
+						["sourceQuests"] = {
+							48505,	-- Lovesick and Lost
+						},
+					}),
+					crit(40551, {	-- Castaways and Cutouts
+						["sourceQuests"] = {
+							49178,	-- My Favorite Things
+						},
+					}),
+					crit(40552, {	-- Castaways and Cutouts
+						["sourceQuests"] = {
 							49226,	-- Silencing the Sisters
-							--	49230,	-- Local Flavor
-							--	48505,	-- Lovesick and Lost
-							--	49178,	-- My Favorite Things
+						},
+					}),
+					crit(40553, {	-- Castaways and Cutouts
+						["sourceQuests"] = {
+							49230,	-- Local Flavor
+						},
+					}),
+					crit(40554, {	-- Castaways and Cutouts
+						["sourceQuests"] = {
+							48421,	-- Blood in the Tides
 						},
 					}),
 				},
 			}),
 			ach(12939, {	-- Adventurer of Tiragarde Sound
-				crit(1, {	-- Auditor Dolp
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(2, {	-- Barman Bill
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(3, {	-- Bashmu
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(4, {	-- Black-Eyed Bart
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(5, {	-- Blackthorne
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(6, {	-- Broodmother Razora
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(7, {	-- Captain Wintersail
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(8, {	-- Carla Smirk
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(9, {	-- Fowlmouth
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(10, {	-- Foxhollow Skyterror
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(11, {	-- Gulliver
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(12, {	-- Kulett the Ornery
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(13, {	-- Lumbergrasp Sentinel
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(14, {	-- Maison the Portable
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(15, {	-- Imperiled Merchants
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(16, {	-- Merianae
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(17, {	-- P4-N73R4
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(18, {	-- Pack Leader Asenya
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(19, {	-- Raging Swell
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(20, {	-- Ranja
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(21, {	-- Saurolisk Tamer Mugg
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(22, {	-- Sawtooth
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(23, {	-- Shiverscale the Toxic
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(24, {	-- Squacks
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(25, {	-- Squirgle of the Depths
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(26, {	-- Sythian the Swift
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(27, {	-- Tempestria
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(28, {	-- Tentulos the Drifter
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(29, {	-- Teres
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(30, {	-- Tort Jaw
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(31, {	-- Totes
-					-- ["_npcs"] = { NPCID },
-				}),
-				crit(32, {	-- Twin-hearted Construct
-					-- ["_npcs"] = { NPCID },
-				}),
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			explorationAch(12556),	-- Explore Tiragarde Sound
 			petbattle(ach(13279, {	-- Family Battler
