@@ -45,6 +45,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 					i(208881),	-- Shiversnap Blossom (QI!)
 					bo(77878, true),	-- Envoy of Winter bonus objective
+					i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)
 				},
 			}),
 			n(209893, {	-- Firebrand Fystia
