@@ -8151,10 +8151,10 @@ local function default_name(t)
 	if t.encounterID then
 		return EJ_GetEncounterInfo(t.encounterID);
 	end
+	local name
 	local achievementID = t.achievementID;
 	if achievementID then
 		local criteriaID = t.criteriaID;
-		local name
 		if criteriaID then
 			-- typical criteria name lookup
 			name = GetCriteriaInfo(achievementID, t);
@@ -8201,8 +8201,12 @@ local function default_name(t)
 			end
 		end
 	end
-	app.PrintDebug("failed to retrieve criteria name",achievementID,t.criteriaID)
-	-- return L["WRONG_FACTION"];
+	app.PrintDebug("failed to retrieve criteria name",achievementID,t.criteriaID,name,t._default_name_retry)
+	t._default_name_retry = (t._default_name_retry or 0) + 1
+	if (t._default_name_retry > 10) then
+		t._default_name_retry = nil
+		return name or UNKNOWN
+	end
 end
 local cache = app.CreateCache("hash")
 local criteriaFields = {
