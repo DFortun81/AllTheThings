@@ -191,6 +191,9 @@ root(ROOTS.WorldDrops, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_
 			["description"] = "Drops from Fiery World Creatures.",
 		}),
 		i(198876),	-- Technique: Weathered Explorer's Stave (RECIPE!)
+		i(207461, {	-- Schematic: Portable Party Platter (RECIPE!)
+			["description"] = "You must be a mage or get one to help you. The mage character needs to have DF cooking and a rare quality Chef's Splendid Rolling Pin equipped with the special tooltip \"Whenever you gain Well Fed, you conjure a DF Dessert from among the recipes you have learned.\" and at least 1 DF dessert recipe learned. The engineer needs DF engineering skill leveled to 50, 1 Light Parchment and 1 Engineer's Ink. If the engineer is close enough to the mage when they get the Well Fed buff, the engineer will get the recipe.",
+		}),
 	}),
 	n(WEAPONS, {
 		i(199020),	-- Drake Racing Starter Pistol
