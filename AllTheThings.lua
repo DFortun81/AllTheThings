@@ -8111,7 +8111,7 @@ local EJ_GetCreatureInfo, GetAchievementCriteriaInfoByID
 	= EJ_GetCreatureInfo, GetAchievementCriteriaInfoByID
 -- Criteria field values which will use the value of the respective Achievement instead
 local UseParentAchievementValueKeys = {
-	"c", "classID", "races", "r", "u", "e", "pb", "pvp"
+	"c", "classID", "races", "r", "u", "e", "pb", "pvp", "requireSkill"
 }
 local function GetParentAchievementInfo(t, key)
 	-- if the Achievement data was already cached, but the criteria is still getting here
@@ -8154,16 +8154,18 @@ local function default_name(t)
 	local achievementID = t.achievementID;
 	if achievementID then
 		local criteriaID = t.criteriaID;
+		local name
 		if criteriaID then
 			-- typical criteria name lookup
-			local name = GetCriteriaInfo(achievementID, t);
+			name = GetCriteriaInfo(achievementID, t);
 			if not IsRetrieving(name) then return name; end
 
 			-- app.PrintDebug("fallback crit name",achievementID,criteriaID,t.uid,t.id)
 			-- criteria nested under a parent of a known Thing
 			local parent = t.parent
 			if parent and parent.key and app.ThingKeys[parent.key] and parent.key ~= "achievementID" then
-				if not IsRetrieving(parent.name) then return parent.name end
+				name = parent.name
+				if not IsRetrieving(name) and not name:find("Quest #") then return name; end
 			end
 
 			-- criteria with provider data
@@ -8172,25 +8174,27 @@ local function default_name(t)
 				for k,v in ipairs(providers) do
 					if v[2] > 0 then
 						if v[1] == "o" then
-							return app.ObjectNames[v[2]];
+							name = app.ObjectNames[v[2]];
+							break
 						elseif v[1] == "i" then
-							return GetItemInfo(v[2]);
+							name = GetItemInfo(v[2]);
+							break
 						elseif v[1] == "n" then
-							return app.NPCNameFromID[v[2]];
+							name = app.NPCNameFromID[v[2]];
+							break
 						end
 					end
 				end
+				if not IsRetrieving(name) then return name; end
 			end
 
 			-- criteria with sourceQuests data
 			local sourceQuests = t.sourceQuests;
 			if sourceQuests then
-				local name
 				for k,id in ipairs(sourceQuests) do
 					name = app.GetQuestName(id);
-					-- special case to ignore caching a default quest name as criteria name
-					if not IsRetrieving(name) and not name:find("Quest #") then return name; end
 					t.__questname = name
+					if not IsRetrieving(name) and not name:find("Quest #") then return name; end
 				end
 				-- app.PrintDebug("criteria sq no name",t.achievementID,t.criteriaID,rawget(t,"name"))
 				return
@@ -8198,7 +8202,7 @@ local function default_name(t)
 		end
 	end
 	app.PrintDebug("failed to retrieve criteria name",achievementID,t.criteriaID)
-	return L["WRONG_FACTION"];
+	-- return L["WRONG_FACTION"];
 end
 local cache = app.CreateCache("hash")
 local criteriaFields = {
