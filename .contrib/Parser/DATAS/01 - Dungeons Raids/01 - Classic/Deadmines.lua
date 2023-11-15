@@ -309,9 +309,9 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["coord"] = { 44.0, 78.3, WESTFALL },
 				-- #else
 				["coords"] = {
+					{ 57.4, 42.9, 55 },
 					{ 46.8, 47.8, 55 },
 					{ 61.7, 65.8, 55 },
-					--{ , 55 },
 				},
 				-- #endif
 				["groups"] = {
