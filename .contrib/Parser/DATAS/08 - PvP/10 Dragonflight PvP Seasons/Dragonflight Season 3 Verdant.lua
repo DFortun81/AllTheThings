@@ -1229,16 +1229,16 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
 							i(209554, {	-- Verdant Gladiator's Axestaff
-								-- ["cost"] = { { "c", CONQUEST, } },
+								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
 							i(209547, {	-- Verdant Gladiator's Bow
 								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
 							i(209549, {	-- Verdant Gladiator's Bulwark
-								-- ["cost"] = { { "c", CONQUEST, } },
+								["cost"] = { { "c", CONQUEST, 450 } },
 							}),
 							i(209542, {	-- Verdant Gladiator's Censer
-								-- ["cost"] = { { "c", CONQUEST, } },
+								["cost"] = { { "c", CONQUEST, 450 } },
 							}),
 							i(209546, {	-- Verdant Gladiator's Claws
 								["cost"] = { { "c", CONQUEST, 900 } },
@@ -1247,13 +1247,13 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
 							i(209548, {	-- Verdant Gladiator's Greatstaff
-								-- ["cost"] = { { "c", CONQUEST, } },
+								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
 							i(209550, {	-- Verdant Gladiator's Greatsword
-								-- ["cost"] = { { "c", CONQUEST, } },
+								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
 							i(209551, {	-- Verdant Gladiator's Pulverizer
-								-- ["cost"] = { { "c", CONQUEST, } },
+								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
 							i(209540, {	-- Verdant Gladiator's Rifle
 								["cost"] = { { "c", CONQUEST, 1800 } },
@@ -1262,16 +1262,16 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 								["cost"] = { { "c", CONQUEST, 1350 } },
 							}),
 							i(209538, {	-- Verdant Gladiator's Scythe
-								-- ["cost"] = { { "c", CONQUEST, } },
+								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
 							i(209543, {	-- Verdant Gladiator's Shield
 								["cost"] = { { "c", CONQUEST, 450 } },
 							}),
 							i(209553, {	-- Verdant Gladiator's Shotel
-								-- ["cost"] = { { "c", CONQUEST, } },
+								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
 							i(209545, {	-- Verdant Gladiator's Sickle
-								-- ["cost"] = { { "c", CONQUEST, } },
+								["cost"] = { { "c", CONQUEST, 1350 } },
 							}),
 							i(209535, {	-- Verdant Gladiator's Splitter
 								["cost"] = { { "c", CONQUEST, 900 } },
@@ -1280,7 +1280,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 								["cost"] = { { "c", CONQUEST, 1800 } },
 							}),
 							i(209552, {	-- Verdant Gladiator's Sword
-								-- ["cost"] = { { "c", CONQUEST, } },
+								["cost"] = { { "c", CONQUEST, 900 } },
 							}),
 							i(209537, {	-- Verdant Gladiator's Warglaive
 								["cost"] = { { "c", CONQUEST, 900 } },
