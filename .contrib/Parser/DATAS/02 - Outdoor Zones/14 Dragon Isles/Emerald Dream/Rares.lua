@@ -113,6 +113,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 78211,
 				["coord"] = { 40.5, 49.6, EMERALD_DREAM },
 				["g"] = {
+					i(208336),	-- Legguards of the Dreamsaber
 					i(208342),	-- Girdle of Nature's Fury
 					i(208363),	-- Twinfang of the Cian
 					i(210650),	-- Mark of the Keen-Eyed Dreamsaber (CI!)

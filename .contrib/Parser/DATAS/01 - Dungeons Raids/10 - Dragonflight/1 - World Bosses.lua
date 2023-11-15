@@ -132,6 +132,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					i(208441),	-- Restful Dozer's Shoes
 					i(208439),	-- Rousing Earth Striders
 					i(208443),	-- Slumbering Ursine Talisman
+					i(210480),	-- Flourishing Whimsydrake: Sunrise Scales
 				}),
 			})),
 			q(76367,	-- Hibernation Heroes
