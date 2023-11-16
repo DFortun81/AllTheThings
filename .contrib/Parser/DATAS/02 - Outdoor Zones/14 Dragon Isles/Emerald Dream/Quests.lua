@@ -1052,15 +1052,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(),	-- Quest "What Do I Call You?": Pick the title of "Netherlord" (warlock)
 		--q(),	-- Quest "What Do I Call You?": Pick the title of "Shadowbane" (rogue?)
 		--q(),	-- Quest "What Do I Call You?": Pick the title of "Slayer" (dh?)
-		-- Elanna unlocks for battle pets
-		q(78854),	-- unlock ability to buy Dreamborne Scarab (i: 210553) (require: Endmite (any other pet with same model?)) (spellID 429058)
-		q(78855),	-- unlock ability to buy Dreamhoof (i: 210555) (require: Leyhart (any other pet with same model?)) (spellID 429064)
-		q(78859),	-- unlock ability to buy Drowsey (i: 210777) (require: any ZC snail? Mine was Tricky) (spellID 429073 / 429074)
-		q(78856),	-- unlock ability to buy Memorie (i: 210567) (require: Fol'ya Pup (any other pet with same model?)) (spellID 429068)
-		q(78858),	-- unlock ability to buy Reverie (i: 210505) (require: Pilot (any other pet with same model)) (spellID 429055 / 429053)
-		q(78853),	-- unlock ability to buy Snorr (i: 210785) (require: Axel (any other pet with same model?)) (spellID xx)
-		q(78886),	-- unlock ability to buy Somnolet (i: 210652) (require: Dustie) (spellID 426355)
-		q(78857),	-- unlock ability to buy Somnolet (i: 210652) (require: Seedle (any other pet with same model?)) (spellID 429070)
 		--
 		q(78977),	-- pop after finishing qID 78890 (Emerald Frenzy) first time (daily), seems like it is fired when give you reward
 		-- Sprout

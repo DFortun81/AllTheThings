@@ -116,6 +116,6 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 		q(75207),	-- looted lost supplies while on climbing WQ 75061 (No Mushroom For Ever)
 		q(75210),	-- looted lost supplies while on climbing WQ 75062 (Crystalline Conundrum)
 		q(75206),	-- looted lost supplies while on climbing WQ 75058 (Spearheading Acquisitio)
-		q(77962),	-- looted lost supplies while on climbing WQ 77158 (Botanical Redistribution)
+		q(77692),	-- looted lost supplies while on climbing WQ 77156 (Botanical Redistribution)
 	}),
 })));
