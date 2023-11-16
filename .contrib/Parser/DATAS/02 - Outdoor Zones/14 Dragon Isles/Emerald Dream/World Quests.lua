@@ -45,6 +45,84 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 					q(78370, {	-- Claws for Concern
 						["coord"] = { 37.7, 67.5, EMERALD_DREAM },
+						["groups"] = {
+							ach(19293, {	-- Friends In Feathers
+								--require q(78370) / Claws for Concern
+								i(210522),	-- Blueloo (PET!)
+								crit(62785, {	-- Beaks
+									["coord"] = { 36.9, 65.8, EMERALD_DREAM },
+									["crs"] = { 212053 },
+								}),
+								crit(62776, {	-- Bumbletweet
+									["coord"] = { 39.1, 66.0, EMERALD_DREAM },
+									["crs"] = { 212042 },
+								}),
+								crit(62788, {	-- Chickle
+									["coord"] = { 36.4, 71.2, EMERALD_DREAM },
+									["crs"] = { 212056 },
+								}),
+								crit(62790, {	-- Eugene
+									["coord"] = { 36.4, 62.7, EMERALD_DREAM },
+									["crs"] = { 212058 },
+								}),
+								crit(62775, {	-- Feets
+									["coord"] = { 38.4, 69.5, EMERALD_DREAM },
+									["crs"] = { 212039 },
+								}),
+								crit(62779, {	-- Fruffles
+									["coord"] = { 39.3, 71.7, EMERALD_DREAM },
+									["crs"] = { 212046 },
+								}),
+								crit(62789, {	-- Fuzz
+									["coord"] = { 38.7, 63.5, EMERALD_DREAM },
+									["crs"] = { 212057 },
+								}),
+								crit(62773, {	-- Giblet
+									["coord"] = { 35.6, 67.1, EMERALD_DREAM },
+									["crs"] = { 212033 },
+								}),
+								crit(62784, {	-- Hops
+									["coord"] = { 37.7, 73.3, EMERALD_DREAM },
+									["crs"] = { 212052 },
+								}),
+								crit(62783, {	-- Meep
+									["coord"] = { 35.5, 69.7, EMERALD_DREAM },
+									["crs"] = { 212051 },
+								}),
+								crit(62787, {	-- Moonbeam
+									["coord"] = { 36.1, 69.7, EMERALD_DREAM },
+									["crs"] = { 212055 },
+								}),
+								crit(62782, {	-- Owlington
+									["coord"] = { 37.4, 72.2, EMERALD_DREAM },
+									["crs"] = { 212050 },
+								}),
+								crit(62777, {	-- Peanut
+									["coord"] = { 38.0, 69.0, EMERALD_DREAM },
+									["crs"] = { 212044 },
+								}),
+								crit(62778, {	-- Snoozle
+									["coord"] = { 40.4, 71.5, EMERALD_DREAM },
+									["crs"] = { 212045 },
+								}),
+								crit(62780, {	-- Squawkle
+									["coord"] = { 36.3, 71.6, EMERALD_DREAM },
+									["crs"] = { 212047 },
+								}),
+								crit(62786, {	-- Squeaky
+									["coord"] = { 38.4, 69.3, EMERALD_DREAM },
+									["crs"] = { 212054 },
+								}),
+								crit(62791, {	-- Tickles
+									["coord"] = { 38.7, 70.4, EMERALD_DREAM },
+									["crs"] = { 212060 },
+								}),
+								crit(62781, {	-- Wingnut
+									["coord"] = { 37.8, 70.2, EMERALD_DREAM },
+									["crs"] = { 212049 },
+								}),
+							}),
+						},
 					}),
 					q(77761, {	-- Documenting a Dream
 						["coord"] = { 58.1, 49.6, EMERALD_DREAM },
