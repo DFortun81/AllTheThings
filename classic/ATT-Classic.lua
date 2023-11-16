@@ -5764,11 +5764,17 @@ else
 			t.encounterID = id;
 			return t;
 		else
-			t = constructor(id, t, "encounterID");
-			t.text = "INVALID ENCOUNTER " .. id;
-			print(t.text);
-			return t;
+			local providers = t.providers;
+			if providers then
+				t = (providers[1][1] == "n" and app.CreateNPC or app.CreateObject)(providers[1][2], t);
+				t.encounterID = id;
+				return t;
+			end
 		end
+		t = constructor(id, t, "encounterID");
+		t.text = "INVALID ENCOUNTER " .. id;
+		print(t.text);
+		return t;
 	end
 end
 end)();

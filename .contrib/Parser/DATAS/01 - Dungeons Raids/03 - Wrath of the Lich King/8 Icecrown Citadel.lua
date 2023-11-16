@@ -950,11 +950,18 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(50342),	-- Whispering Fanged Skull
 						},
 					}),
-					e(1626, {	-- Icecrown Gunship Battle
-						["crs"] = {
-							36939,	-- High Overlord Saurfang
-							36948,	-- Muradin Bronzebeard
+					e(1626, {	-- Icecrown Gunship Battle [High Overlord Saurfang (A) / Muradin Bronzebeard (H)]
+						-- This is a smart header that will change itself to the faction specific version on initial load.
+						["providers"] = {
+							{ "o", 201873 },	-- Gunship Armory (A)
+							{ "o", 202180 },	-- Gunship Armory (H)
 						},
+						["OnInit"] = [[function(t)
+							t.crs = { 36948, 36939 };
+							t.objectID = t.providers[_.FactionID == Enum.FlightPathFaction.Horde and 2 or 1][2];
+							t.providers = nil;
+							return t;
+						end]],
 						["groups"] = {
 							ach(4536),	-- I'm on a Boat (10 player)
 							i(50787),	-- Frost Giant's Cleaver
@@ -1267,11 +1274,18 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(50343),	-- Whispering Fanged Skull
 						},
 					}),
-					e(1626, {	-- Icecrown Gunship Battle
-						["crs"] = {
-							36939,	-- High Overlord Saurfang
-							36948,	-- Muradin Bronzebeard
+					e(1626, {	-- Icecrown Gunship Battle [High Overlord Saurfang (A) / Muradin Bronzebeard (H)]
+						-- This is a smart header that will change itself to the faction specific version on initial load.
+						["providers"] = {
+							{ "o", 201873 },	-- Gunship Armory (A)
+							{ "o", 202180 },	-- Gunship Armory (H)
 						},
+						["OnInit"] = [[function(t)
+							t.crs = { 36948, 36939 };
+							t.objectID = t.providers[_.FactionID == Enum.FlightPathFaction.Horde and 2 or 1][2];
+							t.providers = nil;
+							return t;
+						end]],
 						["groups"] = {
 							ach(4536),	-- I'm on a Boat (10 player)
 							i(51916),	-- Frost Giant's Cleaver
@@ -1608,11 +1622,18 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(49990),	-- Ring of Maddening Whispers
 						},
 					}),
-					e(1626, {	-- Icecrown Gunship Battle
-						["crs"] = {
-							36939,	-- High Overlord Saurfang
-							36948,	-- Muradin Bronzebeard
+					e(1626, {	-- Icecrown Gunship Battle [High Overlord Saurfang (A) / Muradin Bronzebeard (H)]
+						-- This is a smart header that will change itself to the faction specific version on initial load.
+						["providers"] = {
+							{ "o", 201873 },	-- Gunship Armory (A)
+							{ "o", 202180 },	-- Gunship Armory (H)
 						},
+						["OnInit"] = [[function(t)
+							t.crs = { 36948, 36939 };
+							t.objectID = t.providers[_.FactionID == Enum.FlightPathFaction.Horde and 2 or 1][2];
+							t.providers = nil;
+							return t;
+						end]],
 						["groups"] = {
 							ach(4612),	-- I'm on a Boat (25 player)
 							i(50411),	-- Scourgeborne Waraxe
@@ -1945,11 +1966,18 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							i(50644),	-- Ring of Maddening Whispers
 						},
 					}),
-					e(1626, {	-- Icecrown Gunship Battle
-						["crs"] = {
-							36939,	-- High Overlord Saurfang
-							36948,	-- Muradin Bronzebeard
+					e(1626, {	-- Icecrown Gunship Battle [High Overlord Saurfang (A) / Muradin Bronzebeard (H)]
+						-- This is a smart header that will change itself to the faction specific version on initial load.
+						["providers"] = {
+							{ "o", 201873 },	-- Gunship Armory (A)
+							{ "o", 202180 },	-- Gunship Armory (H)
 						},
+						["OnInit"] = [[function(t)
+							t.crs = { 36948, 36939 };
+							t.objectID = t.providers[_.FactionID == Enum.FlightPathFaction.Horde and 2 or 1][2];
+							t.providers = nil;
+							return t;
+						end]],
 						["groups"] = {
 							ach(4612),	-- I'm on a Boat (25 player)
 							i(50654),	-- Scourgeborne Waraxe
