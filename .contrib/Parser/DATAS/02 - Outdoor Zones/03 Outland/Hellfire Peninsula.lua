@@ -1015,13 +1015,9 @@ root(ROOTS.Zones, {
 						["qg"] = 22430,	-- Assistant Klatu
 						["sourceQuest"] = 10903,	-- Return to Honor Hold
 						["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
+						["cost"] = { { "i", 31795, 1 } },	-- Draenei Prayer Beads
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
-						["groups"] = {
-							objective(1, {	-- 0/1 Draenei Prayer Beads
-								["provider"] = { "i", 31795 },	-- Draenei Prayer Beads
-							}),
-						},
 					}),
 					q(10144, {	-- Disrupt Their Reinforcements [Alliance]
 						["qg"] = 19310,	-- Forward Commander Kingston
@@ -1113,6 +1109,11 @@ root(ROOTS.Zones, {
 								},
 								["coord"] = { 53.0, 27.7, HELLFIRE_PENINSULA },
 							}),
+							objective(3, {	-- 0/1 Burning Legion Gate Key
+								["provider"] = { "i", 29795 },	-- Burning Legion Gate Key
+								["coord"] = { 53.1, 26.5, HELLFIRE_PENINSULA },
+								["cr"] = 19298,	-- Warbringer Arix'Amal
+							}),
 						},
 					}),
 					q(10937, {	-- Drill the Drillmaster
@@ -1191,7 +1192,10 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(10919, {	-- Fei Fei's Treat
-						["qg"] = 20206,	-- Fei Fei
+						["providers"] = {
+							{ "n",  20206 },	-- Fei Fei
+							{ "o", 185302 },	-- Fei Fei's Cache
+						},
 						["sourceQuest"] = 10903,	-- Return to Honor Hold
 						-- #if BEFORE WRATH
 						["description"] = "In order to finish this, you need to talk to the Warrant Officer. After the dialog You're given the option to buy a 'Fei Fei Doggy Treat' for:\nSparkling Zircon: Gem vendor in the Inn\nMaiden's Anguish: Grand Master Alchemist or Reagent vendor in the tower.\nSilken Thread: Upstairs in the inn from the Grand Master Tailor",
@@ -1669,6 +1673,11 @@ root(ROOTS.Zones, {
 									{ "o", 182935 },	-- Rune of Spite
 								},
 								["coord"] = { 53.0, 27.7, HELLFIRE_PENINSULA },
+							}),
+							objective(3, {	-- 0/1 Burning Legion Gate Key
+								["provider"] = { "i", 29795 },	-- Burning Legion Gate Key
+								["coord"] = { 53.1, 26.5, HELLFIRE_PENINSULA },
+								["cr"] = 19298,	-- Warbringer Arix'Amal
 							}),
 						},
 					}),
@@ -2302,8 +2311,9 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Shredder Keys
 								["providers"] = {
-									{ "i", 30794 },	-- Shredder Keys
-									{ "i", 30803 },	-- Felhound Whistle
+									{ "i",  30794 },	-- Shredder Keys
+									{ "i",  30803 },	-- Felhound Whistle
+									{ "o", 184980 },	-- Felhound Poo
 								},
 								["coord"] = { 51.2, 30.6, HELLFIRE_PENINSULA },
 								["cr"] = 21847,	-- Fel Guard Hound
@@ -2435,7 +2445,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10395, {	-- The Dark Missive
-						["provider"] = { "i", 29588 },	-- Burning Legion Missive
+						["providers"] = {
+							{ "i", 29588 },	-- Burning Legion Missive
+							{ "i", 29589 },	-- Burning Legion Missive
+						},
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
@@ -2856,7 +2869,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10393, {	-- Vile Plans
-						["provider"] = { "i", 29590 },	-- Burning Legion Missive
+						["providers"] = {
+							{ "i", 29590 },	-- Burning Legion Missive
+							{ "i", 29589 },	-- Burning Legion Missive
+						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
