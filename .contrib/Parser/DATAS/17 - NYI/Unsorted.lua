@@ -605,9 +605,8 @@ root(ROOTS.Unsorted, {
 				i(211397),	-- Attuned Rune of Shadowbinding
 				i(211398),	-- Attuned Sophic Vellum
 			}),
-			n(PROFESSIONS, {
-				i(207461),	-- Schematic: Portable Party Platter (RECIPE!)
-			}),
+			--n(PROFESSIONS, {
+			--}),
 			n(QUESTS, {
 				-- 10.2.0.51239
 				q(75272),	-- PTR:Test

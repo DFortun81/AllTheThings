@@ -39,6 +39,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 34.5, 63.2, EMERALD_DREAM },
 				["g"] = {
 					i(208332),	-- Horns of the Envoy
+					i(208340),	-- Stag's Flourishing Mantle
 					i(208337),	-- Leaf Steward's Leggings
 					i(208365, {	-- Winter's Stand
 						i(209948),	-- Spring's Keeper
