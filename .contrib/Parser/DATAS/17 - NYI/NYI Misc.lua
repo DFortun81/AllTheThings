@@ -990,7 +990,6 @@ root(ROOTS.NeverImplemented, {
 				i(210595),	-- Dreaming Equipment Chest
 				------ Items from Questlines that Gives Rep ------
 				i(211131),	-- Delicately Curated Blossoms
-				i(210920),	-- Gift of Amirdrassil
 				------ Winter Veil ------
 				i(210657),	-- Gently Shaken Gift
 				i(209871),	-- Winter Veil Gift

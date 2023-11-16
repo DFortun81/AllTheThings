@@ -483,7 +483,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 				------ Chapter 6 ------
-				-- ?
 				q(76402, {	-- Amirdrassil, the Dream's Hope: Fyrakk
 					["sourceQuests"] = { 76401 },	-- Echo of the Firelands
 					["provider"] = { "n", 206921 },	-- Alexstrasza the Life-Binder
@@ -491,6 +490,80 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["g"] = {
 						i(210916),	-- Ember of Fyrakk [2.5k Dream Warden rep]
 						i(206960),	-- Enchanted Wyrm's Dreaming Crest
+					},
+				}),
+				q(77780, {	-- A Blossom Witnessed
+					["sourceQuests"] = { 76402 },	-- Amirdrassil, the Dream's Hope: Fyrakk
+					["provider"] = { "n", 211634 },	-- Tyrande Whisperwind
+					["coord"] = { 27.5, 31.4, EMERALD_DREAM },
+				}),
+				q(76276, {	-- A Changed Land
+					["sourceQuests"] = { 77780 },	-- A Blossom Witnessed
+					["provider"] = { "n", 206397 },	-- Merithra of the Dream
+					["coord"] = { 14.8, 55.8, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(209806),	-- Cataloger's Film (QI!)
+						--modID 27 bonusID 9546
+						i(209915),	-- Perennial Pompon Pendant
+						i(209916),	-- Sunrise Circlet
+					},
+				}),
+				q(77329, {	-- Auspicious Gathering
+					["sourceQuests"] = { 76276 },	-- A Changed Land
+					["provider"] = { "n", 206397 },	-- Merithra of the Dream
+					["coord"] = { 14.8, 55.8, OHNAHRAN_PLAINS },
+				}),
+				q(77200, {	-- Offerings for the Well
+					["sourceQuests"] = { 77329 },	-- Auspicious Gathering
+					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind (TODO: re-check npcID)
+					["coord"] = { 50.8, 61.4, 2239 },	-- Amirdrassil
+					["g"] = {
+						i(208230),	-- Anaya's Pendant (QI!)
+						i(208232),	-- Singed Darnassian Tabard (QI!)
+						i(208221),	-- Soil of the Dreamgrove (QI!)
+						i(208231),	-- Talisman of Hope (QI!)
+					},
+				}),
+				q(76280, {	-- New Moon
+					["sourceQuests"] = { 77200 },	-- Offerings for the Well
+					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind (TODO: re-check npcID)
+					["coord"] = { 50.8, 61.4, 2239 },	-- Amirdrassil
+				}),
+				q(76281, {	-- Something Worth Celebrating
+					["sourceQuests"] = { 76280 },	-- New Moon
+					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind  (TODO: re-check npcID)
+					["coord"] = { 50.8, 61.5, 2239 },	-- Amirdrassil
+				}),
+				q(76282, {	-- A Disquieting Feeling
+					["sourceQuests"] = { 76280 },	-- New Moon (TODO: 76281 is required for phase?)
+					["provider"] = { "n", 209042 },	-- Kalecgos
+					["coord"] = { 54.2, 57.9, 2239 },	-- Amirdrassil
+					["g"] = {
+						i(209316),	-- Goat's Milk in a Skull Mug (QI!)
+						i(209318),	-- Dalaran Dazzler (QI!)
+						i(209317),	-- Karazhan Twist (QI!)
+						i(209319),	-- Hornswog's Breath (QI!)
+						i(209322),	-- Niffen Strong-Sniffer Stout (QI!)
+						i(209324),	-- Azure Leywine (QI!)
+						i(209323),	-- Emerald Dreamtime (QI!)
+						i(209326),	-- Maruukai Pale Ale (QI!)
+						--modID 27 bonusID 9546
+						i(209914),	-- Bramble Bark Band
+						i(209912),	-- Luscious Leaf Loop
+						i(209913),	-- Summer Sky Signet
+					},
+				}),
+				q(77781, {	-- A Different Enthusiasm
+					["sourceQuests"] = { 76280 },	-- New Moon (TODO: 76281 is required for phase?)
+					["provider"] = { "n", 206849 },	-- Merithra of the Dream
+					["coord"] = { 54.2, 57.9, 2239 },	-- Amirdrassil
+				}),
+				q(76283, {	-- Andu-falah-dor
+					["sourceQuests"] = { 76281 },	-- New Moon (TOD): 76282 & 77781 also required?)
+					["provider"] = { "n", 206849 },	-- Merithra of the Dream
+					["coord"] = { 54.2, 57.9, 2239 },	-- Amirdrassil
+					["g"] = {
+						i(210920),	-- Gift of Amirdrassil [2.5k Dream Warden rep]
 					},
 				}),
 			}),
@@ -1032,6 +1105,9 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77572),	-- 'Make player eligible for superbloom' (spellID 425375)
 		q(77887),	-- 'World Quest Unlock' (spellID 421687)
 		q(78904),	-- 'Local Stories Quest Unlock' (spellID 429258) (after qID 77178 'Tactical Withdrawal')
+		q(77769),	-- 'Stay a while and listen' n: 206930 during qID 76280 (New Moon)
+		q(77768),	-- 'Stay a while and listen' n: 206402 during qID 76280 (New Moon)
+		q(77771),	-- 'Stay a while and listen' n: 206943 during qID 76280 (New Moon)
 		-- Dryad Garden
 		q(77808),	-- Quest "What Do I Call You?": Pick the title of "Mother"
 		q(77809),	-- Quest "What Do I Call You?": Pick the title of "Father"
