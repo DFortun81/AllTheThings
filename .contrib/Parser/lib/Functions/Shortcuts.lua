@@ -683,18 +683,24 @@ cr = creature;											-- Create a CREATURE Object (alternative shortcut)
 crit = function(criteriaUID, t)							-- Create an Achievement Criteria Object (localized automatically)
 	if not t then t = {};
 	elseif not t.groups then
-		if not isarray(t) then
-			-- DO NOT do that lol
+		if isarray(t) then
+			t = { ["groups"] = t };
+		end
+	end
+	if t.groups or t.g and #(t.groups or t.g) > 0 then
+		-- TODO: make this an error once cleaned up
+		-- print(table.concat({"Do not nest content inside Achievement Criteria:",criteriaUID}))
+	end
 			if t.achievementID then
 				-- print(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaUID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
 				-- error(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaUID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
 			end
 			if t.questID then
-				error(table.concat({"Do not use QuestID:",t.questID," inside Achievement Criteria:",criteriaUID," ==> Use '_quests' to indicate a Criteria granted from completion of a single Quest."}))
-			end
-		else
-			t = { ["groups"] = t };
-		end
+		error(table.concat({"Do not use 'questID' in crit(",criteriaUID,") ==> [\"_quests\"]={",t.questID,"}"}))
+	end
+	if t.creatureID or t.npcID then
+		-- TODO: make this an error once cleaned up
+		-- print(table.concat({"Do not use 'creatureID' or 'npcID' in crit(",criteriaUID,") ==> [\"crs\"]={",t.creatureID or t.npcID,"}"}))
 	end
 	t.criteriaID = criteriaUID;
 	if not t.timeline then bubbleDown({ ["timeline"] = { "added 3.0.1" } }, t); end
