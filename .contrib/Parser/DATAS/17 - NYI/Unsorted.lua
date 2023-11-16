@@ -666,7 +666,6 @@ root(ROOTS.Unsorted, {
 				q(77566),	--
 				q(77650),	--
 				q(77663),	--
-				q(77681),	-- PTR:Alerting all Adversaries!
 				q(77683),	--
 				q(77692),	--
 				q(77693),	--

@@ -29,6 +29,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(204187),	-- Obsidian Trophy of Conquest
 					},
 				})),
+				q(77681, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Alerting All Adversaries!
+					["provider"] = { "i", 205187 },	-- Artisan's Consortium Leaflet
+					["g"] = {
+						i(212537),	-- Verdant Trophy of Conquest
+						i(212538),	-- Greater Verdant Trophy of Conquest
+					},
+				})),
 			}),
 			n(QUESTS, sharedData({
 				["provider"] = { "n", 196191 },	-- Malicia
@@ -1173,6 +1180,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								}),
 								i(210325, {	-- Medal of Honor [H]
 									["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
+								}),
+								i(208571, {	-- Artisan's Consortium Leaflet (QI)
+									["timeline"] = { ADDED_10_2_0 },
 								}),
 							},
 						}),

@@ -223,7 +223,6 @@ root(ROOTS.NeverImplemented, {
 				i(206378),	-- [DNT] Test Loot
 				i(206379),	-- [DNT] Test Loot
 				i(208230),	-- Anaya's Pendant
-				i(208571),	-- Artisan's Consortium Leaflet
 				i(209324),	-- Azure Leywine
 				i(208703),	-- Blacksmith Bammer
 				i(208731),	-- Blacksmith Bammer Key
