@@ -439,19 +439,34 @@ root(ROOTS.Zones, {
 						["coord"] = { 52.2, 36.4, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
+						["groups"] = {
+							objective(1, {	-- 0/20 Shattered Hand Souls Reaped
+								["providers"] = {
+									{ "n", 16867 },	-- Shattered Hand Grunt
+									{ "n", 16870 },	-- Shattered Hand Captain
+									{ "n", 16878 },	-- Shattered Hand Berserker
+									{ "n", 19295 },	-- Shattered Hand Grenadier
+									{ "n", 19410 },	-- Shattered Hand Neophyte
+									{ "n", 19411 },	-- Shattered Hand Warlock
+									{ "n", 19413 },	-- Shattered Hand Mage
+									{ "n", 19414 },	-- Shattered Hand Guard
+									{ "n", 19415 },	-- Shattered Hand Acolyte
+								},
+							}),
+						},
 					}),
 					q(9442, {	-- A Debilitating Sickness
 						["qg"] = 17123,	-- Earthcaller Ryga
 						["sourceQuest"] = 9441,	-- Envoy to the Mag'har
 						["timeline"] = { "removed 4.0.3" },
-						["cost"] = {
-							{ "i", 23753, 1 },	-- Drycap Mushroom
-						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Drycap Mushroom
-								["provider"] = { "i", 23753 },
+								["providers"] = {
+									{ "i",  23753 },	-- Drycap Mushroom
+									{ "o", 181680 },	-- Drycap Mushroom
+								},
 								["coord"] = { 33.5, 64.1, HELLFIRE_PENINSULA },
 							}),
 						},
@@ -464,7 +479,7 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/15 Marauding Crust Burster slain
-								["cr"] = 16857,	-- Marauding Crust Burster
+								["provider"] = { "n", 16857 },	-- Marauding Crust Burster
 							}),
 							i(25785),	-- Adept's Band
 							i(25784),	-- Imbued Chain
@@ -474,14 +489,14 @@ root(ROOTS.Zones, {
 						["qg"] = 17015,
 						["sourceQuest"] = 9375,	-- The Road to Falcon Watch
 						["coord"] = { 27.1, 61.9, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 23343, 1 },	-- Torn Pilgrim's Pack
-						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(61, 61, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Torn Pilgrim's Pack
-								["provider"] = { "i", 23343 },	-- Torn Pilgrim's Pack
+								["providers"] = {
+									{ "i",  23343 },	-- Torn Pilgrim's Pack
+									{ "o", 184478 },	-- Torn Pilgrim's Pack
+								},
 								["coord"] = { 22.1, 68.5, HELLFIRE_PENINSULA }
 							}),
 							i(25783),	-- Pilgrim's Cover
@@ -497,18 +512,18 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							i(23669, {	-- Ancestral Spirit Wolf Totem
-								["cr"] = 17062,	-- Krun Spinebreaker
+								["provider"] = { "n", 17062 },	-- Krun Spinebreaker
 								["coord"] = { 33.6, 43.6, HELLFIRE_PENINSULA },
 							}),
 						},
 					}),
 					q(9401, {	-- A Strange Weapon
-						["qg"] = 17062,	-- Fel Orc Corpse
+						["providers"] = {
+							{ "n", 17062 },	-- Fel Orc Corpse
+							{ "i", 23550 },	-- Heavy Stone Axe
+						},
 						["sourceQuest"] = 9400,	-- The Assassin
 						["coord"] = { 33.6, 43.5, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 23550, 1 },	-- Heavy Stone Axe
-						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
@@ -516,13 +531,13 @@ root(ROOTS.Zones, {
 						["qg"] = 19361,	-- Naladu
 						["sourceQuest"] = 10403,	-- Naladu
 						["coord"] = { 16.2, 65.0, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 29501, 1 },	-- Sha'naar Key
-						},
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Sha'naar Key
-								["provider"] = { "i", 29501 },	-- Sha'naar Key
+								["providers"] = {
+									{ "i",  29501 },	-- Sha'naar Key
+									{ "o", 184466 },	-- Metal Coffer
+								},
 								["coord"] = { 14.3, 63.5, HELLFIRE_PENINSULA }
 							}),
 						},
@@ -550,14 +565,14 @@ root(ROOTS.Zones, {
 					q(9383, {	-- An Ambitious Plan
 						["qg"] = 17006,	-- Elsaana
 						["coord"] = { 23.2, 36.6, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 23442, 1 },	-- Glowing Sanctified Crystal
-						},
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(61, 61, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Glowing Sanctified Crystal
-								["provider"] = { "i", 23417 },	-- Sanctified Crystal
+								["providers"] = {
+									{ "i", 23442 },	-- Glowing Sanctified Crystal
+									{ "i", 23417 },	-- Sanctified Crystal
+								},
 								["coord"] = { 48.0, 84.4, HELLFIRE_PENINSULA },
 								["cr"] = 16975,	-- Uncontrolled Voidwalker
 							}),
@@ -567,35 +582,35 @@ root(ROOTS.Zones, {
 						["qg"] = 16825,	-- Father Malgor Devidicus
 						["sourceQuest"] = 10143,	-- Expedition Point
 						["coord"] = { 54.2, 63.5, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 25938, 1 },	-- Mysteries of the Light
-						},
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Mysteries of the Light
-								["provider"] = { "i", 25938 },	-- Mysteries of the Light
+								["providers"] = {
+									{ "i",  25938 },	-- Mysteries of the Light
+									{ "o", 182804 },	-- Mysteries of the Light
+								},
 								["coord"] = { 55.0, 86.8, HELLFIRE_PENINSULA },
 							}),
 						},
 					}),
 					q(10835, {	-- Apothecary Antonivich
-						["qg"] = 21279,	-- Apothecary Albreck
+						["providers"] = {
+							{ "n", 21279 },	-- Apothecary Albreck
+							{ "i", 31550 },	-- Albreck's Findings
+						},
 						["sourceQuest"] = 10538,	-- Boiling Blood
 						["coord"] = { 61.1, 81.7, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 31550, 1 },	-- Albreck's Findings
-						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10449, {	-- Apothecary Zelana
-						["qg"] = 21256,	-- Vurtok Axebreaker
+						["providers"] = {
+							{ "n", 21256 },	-- Vurtok Axebreaker
+							{ "i", 30326 },	-- Bonechewer Blood Samples
+						},
 						["sourceQuest"] = 10450,	-- Bonechewer Blood
 						["coord"] = { 55.1, 36.3, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 30326, 1 },	-- Bonechewer Blood Samples
-						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
@@ -637,7 +652,10 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(10288, {	-- Arrival in Outland [Alliance]
-						["qg"] = 19229,	-- Commander Duron
+						["providers"] = {
+							{ "n", 19229 },	-- Commander Duron
+							{ "i", 28105 },	-- Duron's Report
+						},
 						["sourceQuests"] = {
 							10119,	-- Through the Dark Portal [Alliance]
 							-- #if AFTER 4.0.3.13277
@@ -651,14 +669,14 @@ root(ROOTS.Zones, {
 							-- #endif
 						},
 						["coord"] = { 87.3, 50.7, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 28105, 1 },	-- Duron's Report
-						},
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10120, {	-- Arrival in Outland [Horde]
-						["qg"] = 19253,	-- Lieutenant General Orion
+						["providers"] = {
+							{ "n", 19253 },	-- Lieutenant General Orion
+							{ "i", 28024 },	-- Orion's Report
+						},
 						["sourceQuests"] = {
 							9407,	-- Through the Dark Portal [Horde]
 							-- #if AFTER 4.0.3.13277
@@ -672,9 +690,6 @@ root(ROOTS.Zones, {
 							-- #endif
 						},
 						["coord"] = { 87.3, 49.8, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 28024, 1 },	-- Orion's Report
-						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
@@ -685,14 +700,12 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Arzeth the Powerless slain
-								["crs"] = {
-									19354,	-- Arzeth the Merciless <Servant of the Betrayer>
-									20680,	-- Arzeth the Powerless <Servant of the Betrayer>
+								["providers"] = {
+									{ "n", 20680 },	-- Arzeth the Powerless <Servant of the Betrayer>
+									{ "i", 29513 },	-- Staff of the Dreghood Elders
 								},
+								["cr"] = 19354,	-- Arzeth the Merciless <Servant of the Betrayer>
 								["coord"] = { 14.3, 58.8, HELLFIRE_PENINSULA },
-								["cost"] = {
-									{ "i", 29513, 1 },	-- Staff of the Dreghood Elders
-								},
 							}),
 						},
 					}),
@@ -719,7 +732,7 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Urga'zz slain
-								["cr"] = 18976,	-- Urga'zz
+								["provider"] = { "n", 18976 },	-- Urga'zz
 								["coord"] = { 53.7, 31.5, HELLFIRE_PENINSULA },
 							}),
 							i(30857),	-- Deep Core Lantern
@@ -730,14 +743,14 @@ root(ROOTS.Zones, {
 					q(9397, {	-- Birds of a Feather
 						["qg"] = 16790,	-- Falconer Drenna Riverwind
 						["coord"] = { 27.7, 60.3, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 23486, 1 },	-- Caged Female Kaliri Hatchling
-						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Caged Female Kaliri Hatchling
-								["provider"] = { "i", 23485 },	-- Empty Birdcage
+								["providers"] = {
+									{ "i", 23486 },	-- Caged Female Kaliri Hatchling
+									{ "i", 23485 },	-- Empty Birdcage
+								},
 								["coord"] = { 29, 81, HELLFIRE_PENINSULA },
 								["cr"] = 17034,	-- Female Kaliri Hatchling
 							}),
@@ -796,15 +809,21 @@ root(ROOTS.Zones, {
 						["qg"] = 21279,	-- Apothecary Albreck
 						["sourceQuest"] = 10242,	-- Spinebreaker Post
 						["coord"] = { 61.1, 81.7, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 30430, 12 },	-- Boiled Blood
-						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/12 Boiled Blood
-								["provider"] = { "i", 30425 },	-- Bleeding Hollow Blood
+								["providers"] = {
+									{ "i", 30425 },	-- Boiled Blood
+									{ "i", 30430 },	-- Bleeding Hollow Blood
+								},
 								["coord"] = { 65.2, 71.2, HELLFIRE_PENINSULA },
+								["crs"] = {
+									19701,	-- Bonechewer Evoker
+									16876,	-- Bonechewer Mutant
+									16925,	-- Bonechewer Raider
+									18952,	-- Bonechewer Scavenger
+								},
 							}),
 						},
 					}),
@@ -859,7 +878,7 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							objective(1, {	-- 0/3 Fel Cannon MKI slain
-								["cr"] = 22461,	-- Fel Cannon MKI
+								["provider"] = { "n", 22461 },	-- Fel Cannon MKI
 							}),
 						},
 					}),
@@ -886,7 +905,7 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(61, 61, 10),
 						["groups"] = {
 							objective(1, {	-- 0/5 Raging Colossus slain
-								["cr"] = 19188,	-- Raging Colossus
+								["provider"] = { "n", 19188 },	-- Raging Colossus
 							}),
 							i(28062),	-- Expedition Repeater
 							i(28063),	-- Survivalist's Wand
@@ -914,7 +933,7 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							objective(1, {	-- 0/4 Illidari Taskmaster slain
-								["cr"] = 17058,	-- Illidari Taskmaster
+								["provider"] = { "n", 17058 },	-- Illidari Taskmaster
 							}),
 						},
 					}),
@@ -926,8 +945,8 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Arazzius the Cruel slain
+								["provider"] = { "n", 19191 },	-- Arazzius the Cruel
 								["coord"] = { 43.8, 31.6, HELLFIRE_PENINSULA },
-								["cr"] = 19191,	-- Arazzius the Cruel
 							}),
 							i(28041),	-- Bladefist's Breadth
 							i(28042),	-- Regal Protectorate
@@ -962,10 +981,10 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							objective(1, {	-- 0/4 Stonescythe Alpha slain
-								["cr"] = 16929,	-- Stonescythe Alpha
+								["provider"] = { "n", 16929 },	-- Stonescythe Alpha
 							}),
 							objective(2, {	-- 0/8 Stonescythe Whelp slain
-								["cr"] = 16927,	-- Stonescythe Whelp
+								["provider"] = { "n", 16927 },	-- Stonescythe Whelp
 							}),
 						},
 					}),
@@ -996,11 +1015,13 @@ root(ROOTS.Zones, {
 						["qg"] = 22430,	-- Assistant Klatu
 						["sourceQuest"] = 10903,	-- Return to Honor Hold
 						["coord"] = { 54.3, 63.6, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 31795, 1 },	-- Draenei Prayer Beads
-						},
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
+						["groups"] = {
+							objective(1, {	-- 0/1 Draenei Prayer Beads
+								["provider"] = { "i", 31795 },	-- Draenei Prayer Beads
+							}),
+						},
 					}),
 					q(10144, {	-- Disrupt Their Reinforcements [Alliance]
 						["qg"] = 19310,	-- Forward Commander Kingston
@@ -1010,11 +1031,17 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- Disrupt Portal Grimh
-								["provider"] = { "i", 28106 },	-- Kingston's Primers
+								["providers"] = {
+									{ "o", 184414 },	-- Portal Grimh
+									{ "i",  28106 },	-- Kingston's Primers
+								},
 								["coord"] = { 71.5, 55.2, HELLFIRE_PENINSULA },
 							}),
 							objective(2, {	-- Disrupt Portal Kaalez
-								["provider"] = { "i", 28106 },	-- Kingston's Primers
+								["providers"] = {
+									{ "o", 184415 },	-- Portal Kaalez
+									{ "i",  28106 },	-- Kingston's Primers
+								},
 								["coord"] = { 72.7, 59.0, HELLFIRE_PENINSULA },
 							}),
 							i(29932),	-- Arcane Ringed Tunic
@@ -1031,12 +1058,18 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
-							objective(1, {	-- Disrupt Portal Grimh
-								["provider"] = { "i", 28478 },	-- To'arch's Primers
+							objective(1, {	-- Disrupt Portal Xilus
+								["providers"] = {
+									{ "o", 184290 },	-- Portal Xilus
+									{ "i",  28478 },	-- To'arch's Primers
+								},
 								["coord"] = { 71.5, 55.2, HELLFIRE_PENINSULA },
 							}),
-							objective(2, {	-- Disrupt Portal Kaalez
-								["provider"] = { "i", 28478 },	-- To'arch's Primers
+							objective(2, {	-- Disrupt Portal Kruul
+								["providers"] = {
+									{ "o", 184289 },	-- Portal Kruul
+									{ "i",  28478 },	-- To'arch's Primers
+								},
 								["coord"] = { 72.7, 59.0, HELLFIRE_PENINSULA },
 							}),
 							i(29932),	-- Arcane Ringed Tunic
@@ -1054,11 +1087,11 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/10 Gan'arg Servant slain
-								["cr"] = 16947,	-- Gan'arg Servant
+								["provider"] = { "n", 16947 },	-- Gan'arg Servant
 							}),
 							objective(2, {	-- 0/1 Razorsaw slain
+								["provider"] = { "n", 20798 },	-- Razorsaw
 								["coord"] = { 64.3, 30.9, HELLFIRE_PENINSULA },
-								["cr"] = 20798,	-- Razorsaw
 							}),
 						},
 					}),
@@ -1070,11 +1103,14 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Warbringer Arix'Amal
+								["provider"] = { "n", 19298 },	-- Warbringer Arix'Amal
 								["coord"] = { 53.1, 26.5, HELLFIRE_PENINSULA },
-								["cr"] = 19298,	-- Warbringer Arix'Amal
 							}),
 							objective(2, {	-- 0/1 Close Burning Legion Gate
-								["provider"] = { "i", 29795 },	-- Burning Legion Gate Key
+								["providers"] = {
+									{ "i",  29795 },	-- Burning Legion Gate Key
+									{ "o", 182935 },	-- Rune of Spite
+								},
 								["coord"] = { 53.0, 27.7, HELLFIRE_PENINSULA },
 							}),
 						},
@@ -1087,8 +1123,8 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Drillmaster Zurok slain
+								["provider"] = { "n", 19312 },	-- Drillmaster Zurok
 								["coord"] = { 48.0, 56.3, HELLFIRE_PENINSULA },
-								["cr"] = 19312,	-- Drillmaster Zurok
 							}),
 							i(31720),	-- Battlemaster's Breastplate
 							i(31718),	-- Darkstorm Tunic
@@ -1104,7 +1140,7 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/3 Fel Cannon MKI slain
-								["cr"] = 22461,	-- Fel Cannon MKI
+								["provider"] = { "n", 22461 },	-- Fel Cannon MKI
 							}),
 						},
 					}),
@@ -1181,7 +1217,7 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/20 Bonechewer Orc slain
-								["cr"] = 21161,	-- Bonechewer Orc
+								["provider"] = { "n", 21161 },	-- Bonechewer Orc
 							}),
 							i(29919),	-- Adamantine Kite Shield
 							i(29915),	-- Desolation Rod
@@ -1215,13 +1251,13 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Dreadcaller slain
-								["cr"] = 19434,	-- Dreadcaller
+								["provider"] = { "n", 19434 },	-- Dreadcaller
 							}),
 							objective(2, {	-- 0/4 Flamewaker Imp slain
-								["cr"] = 19136,	-- Flamewaker Imp
+								["provider"] = { "n", 19136 },	-- Flamewaker Imp
 							}),
 							objective(3, {	-- 0/6 Infernal Warbringer slain
-								["cr"] = 19261,	-- Infernal Warbringer
+								["provider"] = { "n", 19261 },	-- Infernal Warbringer
 							}),
 							i(29911),	-- Agamaggan's Quill
 							i(29913),	-- Foe Reaver
@@ -1241,14 +1277,11 @@ root(ROOTS.Zones, {
 						["qg"] = 3230,	-- Nazgrel
 						["sourceQuest"] = 10388,	-- Return to Thrallmar
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 29586, 1 },	-- Head of Forgefiend Razorsaw
-						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/10 Gan'arg Servant slain
-								["cr"] = 16947,	-- Gan'arg Servant
+								["provider"] = { "n", 16947 },	-- Gan'arg Servant
 							}),
 							objective(2, {	-- 0/1 Head of Forgefiend Razorsaw
 								["provider"] = { "i", 29586 },	-- Head of Forgefiend Razorsaw
@@ -1274,14 +1307,14 @@ root(ROOTS.Zones, {
 						["qg"] = 19683,	-- Ogath the Mad
 						["sourceQuest"] = 10294,	-- Void Ridge
 						["coord"] = { 61.8, 81.5, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 29162, 1 },	-- Galaxis Soul Shard
-						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Galaxis Soul Shard
-								["provider"] = { "i", 29226 },	-- Warp Rift Generator
+								["providers"] = {
+									{ "i", 29162 },	-- Galaxis Soul Shard
+									{ "i", 29226 },	-- Warp Rift Generator
+								},
 								["coord"] = { 81, 78.8, HELLFIRE_PENINSULA },
 								["cr"] = 16939,	-- Void Baron Galaxis
 							}),
@@ -1523,16 +1556,16 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- Manni Saved
+								["provider"] = { "n", 19763 },	-- Manni
 								["coord"] = { 45.1, 41.1, HELLFIRE_PENINSULA },
-								["cr"] = 19763,	-- Manni
 							}),
 							objective(2, {	-- Moh Saved
+								["provider"] = { "n", 19764 },	-- Moh
 								["coord"] = { 46.4, 45.2, HELLFIRE_PENINSULA },
-								["cr"] = 19764,	-- Moh
 							}),
 							objective(3, {	-- Jakk Saved
+								["provider"] = { "n", 19766 },	-- Jakk
 								["coord"] = { 47.5, 46.6, HELLFIRE_PENINSULA },
-								["cr"] = 19766,	-- Jakk
 							}),
 							i(30858),	-- Peon Sleep Potion
 						},
@@ -1540,13 +1573,21 @@ root(ROOTS.Zones, {
 					q(10086, {	-- I Work... For the Horde!
 						["qg"] = 21283,	-- Megzeg Nukklebust
 						["coord"] = { 55.1, 38.7, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 25912, 8 },	-- Salvaged Metal
-							{ "i", 25911, 8 },	-- Salvaged Wood
-						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
+							objective(1, {	-- 0/8 Salvaged Metal
+								["providers"] = {
+									{ "i",  25912 },	-- Salvaged Metal
+									{ "o", 182798 },	-- Salvaged Metal
+								},
+							}),
+							objective(2, {	-- 0/8 Salvaged Wood
+								["providers"] = {
+									{ "i",  25911 },	-- Salvaged Wood
+									{ "o", 182799 },	-- Salvaged Wood
+								},
+							}),
 							i(29938),	-- Battle Seeker Chesguard
 							i(29943),	-- Legionnaire's Studded Helm
 							i(29945),	-- Magistrate's Greaves
@@ -1557,11 +1598,22 @@ root(ROOTS.Zones, {
 						["qg"] = 16820,	-- Lieutenant Amadi
 						["sourceQuest"] = 10482,	-- Fel Orc Scavengers
 						["coord"] = { 50.9, 60.1, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 30157, 1 },	-- Cursed Talisman
-						},
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
+						["groups"] = {
+							objective(1, {	-- 0/1 Cursed Talisman
+								["provider"] = { "i", 30157 },	-- Cursed Talisman
+								["crs"] = {
+									16873,	-- Bleeding Hollow Dark Shaman
+									16871,	-- Bleeding Hollow Grunt
+									19422,	-- Bleeding Hollow Necrolyte
+									16907,	-- Bleeding Hollow Peon
+									19424,	-- Bleeding Hollow Tormentor
+									19457,	-- Grillok "Darkeye"
+									19442,	-- Worg Master Kruush
+								},
+							}),
+						},
 					}),
 					q(10161, {	-- In Case of Emergency...
 						["qg"] = 19367,	-- "Screaming" Screed Luckheed <Zeppelin Pilot>
@@ -1569,7 +1621,13 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/30 Zeppelin Debris
-								["provider"] = { "i", 28116 },	-- Zeppelin Debris
+								["providers"] = {
+									{ "i",  28116 },	-- Zeppelin Debris
+									{ "o", 183394 },	-- Zeppelin Debris (Grey Gear)
+									{ "o", 183395 },	-- Zeppelin Debris (Plate)
+									{ "o", 183396 },	-- Zeppelin Debris (Arch)
+									{ "o", 183397 },	-- Zeppelin Debris (Brown Gear)
+								},
 							}),
 							i(25980),	-- Aerodynamic Scaled Vest
 							i(25981),	-- Dirigible Crash Helmet
@@ -1602,11 +1660,14 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Warbringer Arix'Amal
+								["provider"] = { "n", 19298 },	-- Warbringer Arix'Amal
 								["coord"] = { 53.1, 26.5, HELLFIRE_PENINSULA },
-								["cr"] = 19298,	-- Warbringer Arix'Amal
 							}),
 							objective(2, {	-- 0/1 Close Burning Legion Gate
-								["provider"] = { "i", 29795 },	-- Burning Legion Gate Key
+								["providers"] = {
+									{ "i",  29795 },	-- Burning Legion Gate Key
+									{ "o", 182935 },	-- Rune of Spite
+								},
 								["coord"] = { 53.0, 27.7, HELLFIRE_PENINSULA },
 							}),
 						},
@@ -1619,23 +1680,23 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10140, {	-- Journey to Honor Hold
-						["qg"] = 18931,	-- Amish Wildhammer
+						["providers"] = {
+							{ "n", 18931 },	-- Amish Wildhammer
+							{ "i", 28105 },	-- Duron's Report
+						},
 						["sourceQuest"] = 10288,	-- Arrival in Outland
 						["coord"] = { 87.3, 52.4, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 28105, 1 },	-- Duron's Report
-						},
 						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(10289, {	-- Journey to Thrallmar
-						["qg"] = 18930,	-- Vlagga Freyfeather
+						["providers"] = {
+							{ "n", 18930 },	-- Vlagga Freyfeather
+							{ "i", 28024 },	-- Orion's Report
+						},
 						["sourceQuest"] = 10120,	-- Arrival in Outland
 						["coord"] = { 87.3, 48.1, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 28024, 1 },	-- Orion's Report
-						},
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -1646,10 +1707,10 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(61, 61, 10),
 						["groups"] = {
 							objective(1, {	-- 0/8 Thornfang Ravager slain
-								["cr"] = 19349,	-- Thornfang Ravager
+								["provider"] = { "n", 19349 },	-- Thornfang Ravager
 							}),
 							objective(2, {	-- 0/8 Thornfang Venomspitter slain
-								["cr"] = 19350,	-- Thornfang Venomspitter
+								["provider"] = { "n", 19350 },	-- Thornfang Venomspitter
 							}),
 						},
 					}),
@@ -1716,12 +1777,12 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- Arch Mage Xintor slain
+								["provider"] = { "n", 16977 },	-- Arch Mage Xintor
 								["coord"] = { 53.7, 81.1, HELLFIRE_PENINSULA },
-								["cr"] = 16977,	-- Arch Mage Xintor
 							}),
 							objective(2, {	-- Lieutenant Commander Thalvos slain
+								["provider"] = { "n", 16978 },	-- Lieutenant Commander Thalvos
 								["coord"] = { 54.8, 83.5, HELLFIRE_PENINSULA },
-								["cr"] = 16978,	-- Lieutenant Commander Thalvos
 							}),
 							i(25989),	-- Draenethyst Chaplet
 							i(25992),	-- Enforcer's Chain
@@ -1751,13 +1812,13 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/12 Unyielding Footman slain
-								["cr"] = 16904,	-- Unyielding Footman
+								["provider"] = { "n", 16904 },	-- Unyielding Footman
 							}),
 							objective(2, {	-- 0/8 Unyielding Knight slain
-								["cr"] = 16906,	-- Unyielding Knight
+								["provider"] = { "n", 16906 },	-- Unyielding Knight
 							}),
 							objective(3, {	-- 0/6 Unyielding Sorcerer slain
-								["cr"] = 16905,	-- Unyielding Sorcerer
+								["provider"] = { "n", 16905 },	-- Unyielding Sorcerer
 							}),
 						},
 					}),
@@ -1788,15 +1849,24 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							objective(1, {	-- Western Beacon
-								["provider"] = { "i", 23480 },	-- Lit Torch
+								["providers"] = {
+									{ "i",  23480 },	-- Lit Torch
+									{ "o", 181581 },	-- Western Beacon
+								},
 								["coord"] = { 30.0, 60.6, HELLFIRE_PENINSULA },
 							}),
 							objective(2, {	-- Central Beacon
-								["provider"] = { "i", 23480 },	-- Lit Torch
+								["providers"] = {
+									{ "i",  23480 },	-- Lit Torch
+									{ "o", 181580 },	-- Central Beacon
+								},
 								["coord"] = { 34.1, 60.0, HELLFIRE_PENINSULA },
 							}),
 							objective(3, {	-- Southern Beacon
-								["provider"] = { "i", 23480 },	-- Lit Torch
+								["providers"] = {
+									{ "i",  23480 },	-- Lit Torch
+									{ "o", 181579 },	-- Southern Beacon
+								},
 								["coord"] = { 36.1, 65.4, HELLFIRE_PENINSULA },
 							}),
 							i(25503),	-- Flamehandler's Gloves
@@ -1862,13 +1932,13 @@ root(ROOTS.Zones, {
 						["lvl"] = 68,
 					}),
 					q(9438, {	-- Messenger to Thrall
-						["qg"] = 3230,	-- Nazgrel
+						["providers"] = {
+							{ "n", 3230 },	-- Nazgrel
+							{ "i", 23662 },	-- Letter from Nazgrel
+						},
 						["sourceQuest"] = 9406,	-- The Mag'har
 						["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
 						["timeline"] = { "removed 4.0.3" },
-						["cost"] = {
-							{ "i", 23662, 1 },	-- Letter from Nazgrel
-						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
@@ -1884,11 +1954,17 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- Gateway Murketh Destroyed
-								["provider"] = { "i", 28038 },	-- Seaforium PU-36 Explosive Nether Modulator
+								["providers"] = {
+									{ "i",  28038 },	-- Seaforium PU-36 Explosive Nether Modulator
+									{ "o", 183350 },	-- Gateway Murketh
+								},
 								["coord"] = { 78.0, 47.2, HELLFIRE_PENINSULA },
 							}),
 							objective(2, {	-- Gateway Shaadraz Destroyed
-								["provider"] = { "i", 28038 },	-- Seaforium PU-36 Explosive Nether Modulator
+								["providers"] = {
+									{ "i",  28038 },	-- Seaforium PU-36 Explosive Nether Modulator
+									{ "o", 183351 },	-- Gateway Shaadraz
+								},
 								["coord"] = { 77.7, 51.9, HELLFIRE_PENINSULA },
 							}),
 							i(29942),	-- Battle Scarred Leggings / 10.0.7: Battle-Scarred Leggings
@@ -1905,11 +1981,17 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- Gateway Murketh Destroyed
-								["provider"] = { "i", 28038 },	-- Seaforium PU-36 Explosive Nether Modulator
+								["providers"] = {
+									{ "i",  28038 },	-- Seaforium PU-36 Explosive Nether Modulator
+									{ "o", 183350 },	-- Gateway Murketh
+								},
 								["coord"] = { 78.0, 47.2, HELLFIRE_PENINSULA },
 							}),
 							objective(2, {	-- Gateway Shaadraz Destroyed
-								["provider"] = { "i", 28038 },	-- Seaforium PU-36 Explosive Nether Modulator
+								["providers"] = {
+									{ "i",  28038 },	-- Seaforium PU-36 Explosive Nether Modulator
+									{ "o", 183351 },	-- Gateway Shaadraz
+								},
 								["coord"] = { 77.7, 51.9, HELLFIRE_PENINSULA },
 							}),
 							i(29942),	-- Battle Scarred Leggings / 10.0.7: Battle-Scarred Leggings
@@ -1926,16 +2008,22 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/20 Gan'arg Peon slain
-								["provider"] = { "i", 28132 },	-- Area 52 Special
-								["cr"] = 19398,	-- Gan'arg Peon
+								["providers"] = {
+									{ "n", 19398 },	-- Gan'arg Peon
+									{ "i", 28132 },	-- Area 52 Special
+								},
 							}),
 							objective(2, {	-- 0/5 Mo'arg Overseer slain
-								["provider"] = { "i", 28132 },	-- Area 52 Special
-								["cr"] = 19397,	-- Mo'arg Overseer
+								["providers"] = {
+									{ "n", 19397 },	-- Mo'arg Overseer
+									{ "i", 28132 },	-- Area 52 Special
+								},
 							}),
 							objective(3, {	-- 0/5 Fel Cannon Destroyed
-								["provider"] = { "i", 28132 },	-- Area 52 Special
-								["cr"] = 19399,	-- Fel Cannon
+								["providers"] = {
+									{ "n", 19399 },	-- Fel Cannon
+									{ "i", 28132 },	-- Area 52 Special
+								},
 							}),
 							i(29933),	-- Arcane Ringed Greaves
 							i(29936),	-- Skyfire Greaves
@@ -1951,16 +2039,22 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/20 Gan'arg Peon slain
-								["provider"] = { "i", 28132 },	-- Area 52 Special
-								["cr"] = 19398,	-- Gan'arg Peon
+								["providers"] = {
+									{ "n", 19398 },	-- Gan'arg Peon
+									{ "i", 28132 },	-- Area 52 Special
+								},
 							}),
 							objective(2, {	-- 0/5 Mo'arg Overseer slain
-								["provider"] = { "i", 28132 },	-- Area 52 Special
-								["cr"] = 19397,	-- Mo'arg Overseer
+								["providers"] = {
+									{ "n", 19397 },	-- Mo'arg Overseer
+									{ "i", 28132 },	-- Area 52 Special
+								},
 							}),
 							objective(3, {	-- 0/5 Fel Cannon Destroyed
-								["provider"] = { "i", 28132 },	-- Area 52 Special
-								["cr"] = 19399,	-- Fel Cannon
+								["providers"] = {
+									{ "n", 19399 },	-- Fel Cannon
+									{ "i", 28132 },	-- Area 52 Special
+								},
 							}),
 							i(29933),	-- Arcane Ringed Greaves
 							i(29936),	-- Skyfire Greaves
@@ -2002,11 +2096,14 @@ root(ROOTS.Zones, {
 					q(10236, {	-- Outland Sucks!
 						["qg"] = 16915,	-- Foreman Razelcraz
 						["coord"] = { 51.3, 30.5, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 28554, 6 },	-- Shredder Spare Parts
-						},
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
+							objective(1, {	-- 0/6 Shredder Spare Parts
+								["providers"] = {
+									{ "i",  28554 },	-- Shredder Spare Parts
+									{ "o", 183934 },	-- Shredder Parts
+								},
+							}),
 							i(23424),	-- Fel Iron Ore
 						},
 					}),
@@ -2018,8 +2115,8 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- Arazzius the Cruel slain
+								["provider"] = { "n", 19191 },	-- Arazzius the Cruel
 								["coord"] = { 43.8, 31.6, HELLFIRE_PENINSULA },
-								["cr"] = 19191,	-- Arazzius the Cruel
 							}),
 							i(28041),	-- Bladefist's Breadth
 							i(28042),	-- Regal Protectorate
@@ -2029,11 +2126,17 @@ root(ROOTS.Zones, {
 					q(9345, {	-- Preparing the Salve
 						["qg"] = 16858,	-- Grelag
 						["coord"] = { 60.9, 81.6, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 23205, 12 },	-- Hellfire Spineleaf
-						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
+						["groups"] = {
+							objective(1, {	-- 0/12 Hellfire Spineleaf
+								["providers"] = {
+									{ "i",  23205 },	-- Hellfire Spineleaf
+									{ "o", 181372 },	-- Hellfire Spineleaf
+								},
+								["coord"] = { 62.8, 64.9, HELLFIRE_PENINSULA },
+							}),
+						},
 					}),
 					q(9385, {	-- Rampaging Ravagers
 						["qg"] = 16850,	-- Gremni Longbeard
@@ -2042,7 +2145,7 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							objective(1, {	-- 0/10 Quillfang Ravager slain
-								["cr"] = 16934,	-- Quillfang Ravager
+								["provider"] = { "n", 16934 },	-- Quillfang Ravager
 							}),
 						},
 					}),
@@ -2109,16 +2212,22 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/20 Gan'arg Peon slain
-								["provider"] = { "i", 28132 },	-- Area 52 Special
-								["cr"] = 19398,	-- Gan'arg Peon
+								["providers"] = {
+									{ "n", 19398 },	-- Gan'arg Peon
+									{ "i", 28132 },	-- Area 52 Special
+								},
 							}),
 							objective(2, {	-- 0/5 Mo'arg Overseer slain
-								["provider"] = { "i", 28132 },	-- Area 52 Special
-								["cr"] = 19397,	-- Mo'arg Overseer
+								["providers"] = {
+									{ "n", 19397 },	-- Mo'arg Overseer
+									{ "i", 28132 },	-- Area 52 Special
+								},
 							}),
 							objective(3, {	-- 0/5 Fel Cannon Destroyed
-								["provider"] = { "i", 28132 },	-- Area 52 Special
-								["cr"] = 19399,	-- Fel Cannon
+								["providers"] = {
+									{ "n", 19399 },	-- Fel Cannon
+									{ "i", 28132 },	-- Area 52 Special
+								},
 							}),
 						},
 					}),
@@ -2131,16 +2240,22 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/20 Gan'arg Peon slain
-								["provider"] = { "i", 28132 },	-- Area 52 Special
-								["cr"] = 19398,	-- Gan'arg Peon
+								["providers"] = {
+									{ "n", 19398 },	-- Gan'arg Peon
+									{ "i", 28132 },	-- Area 52 Special
+								},
 							}),
 							objective(2, {	-- 0/5 Mo'arg Overseer slain
-								["provider"] = { "i", 28132 },	-- Area 52 Special
-								["cr"] = 19397,	-- Mo'arg Overseer
+								["providers"] = {
+									{ "n", 19397 },	-- Mo'arg Overseer
+									{ "i", 28132 },	-- Area 52 Special
+								},
 							}),
 							objective(3, {	-- 0/5 Fel Cannon Destroyed
-								["provider"] = { "i", 28132 },	-- Area 52 Special
-								["cr"] = 19399,	-- Fel Cannon
+								["providers"] = {
+									{ "n", 19399 },	-- Fel Cannon
+									{ "i", 28132 },	-- Area 52 Special
+								},
 							}),
 						},
 					}),
@@ -2161,11 +2276,16 @@ root(ROOTS.Zones, {
 						["qg"] = 16796,	-- Amaan the Wise
 						["sourceQuest"] = 9543,	-- Atonement
 						["coord"] = { 23.4, 36.5, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 23642, 10 },	-- Sha'naar Relic
-						},
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
+						["groups"] = {
+							objective(1, {	-- 0/10 Sha'naar Relic
+								["providers"] = {
+									{ "i",  23642 },	-- Sha'naar Relic
+									{ "o", 181637 },	-- Sha'naar Relic
+								},
+							}),
+						},
 					}),
 					q(10340, {	-- Shatter Point
 						["qg"] = 19310,	-- Forward Commander Kingston
@@ -2181,12 +2301,12 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Shredder Keys
-								["provider"] = { "i", 30794 },	-- Shredder Keys
+								["providers"] = {
+									{ "i", 30794 },	-- Shredder Keys
+									{ "i", 30803 },	-- Felhound Whistle
+								},
 								["coord"] = { 51.2, 30.6, HELLFIRE_PENINSULA },
 								["cr"] = 21847,	-- Fel Guard Hound
-								["cost"] = {
-									{ "i", 30803, 1 },	-- Felhound Whistle
-								},
 							}),
 							i(18588),	-- Ez-Thro Dynamite II
 						},
@@ -2223,12 +2343,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10242, {	-- Spinebreaker Post
-						["qg"] = 21257,	-- Apothecary Zelana
+						["providers"] = {
+							{ "n", 21257 },	-- Apothecary Zelana
+							{ "i", 30404 },	-- Bleeding Hollow Blood Sample
+						},
 						["sourceQuest"] = 10449,	-- Apothecary Zelana
 						["coord"] = { 66.1, 41.9, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 30404, 1 },	-- Bleeding Hollow Blood Sample
-						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
@@ -2255,7 +2375,7 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/10 Terrorfiend slain
-								["cr"] = 16951,	-- Terrorfiend slain
+								["provider"] = { "n", 16951 },	-- Terrorfiend
 							}),
 						},
 					}),
@@ -2267,10 +2387,10 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							objective(1, {	-- 0/4 Haal'eshi Windwalker slain
-								["cr"] = 16966,	-- Haal'eshi Windwalker slain
+								["provider"] = { "n", 16966 },	-- Haal'eshi Windwalker slain
 							}),
 							objective(2, {	-- 0/6 Haal'eshi Talonguard slain
-								["cr"] = 16967,	-- Haal'eshi Talonguard slain
+								["provider"] = { "n", 16967 },	-- Haal'eshi Talonguard slain
 							}),
 						},
 					}),
@@ -2280,14 +2400,20 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
+						["groups"] = {
+							objective(1, {	-- Find Krun Spinebreaker
+								["provider"] = { "n", 17062 },	-- Krun Spinebreaker
+								["coord"] = { 33.6, 43.6, HELLFIRE_PENINSULA },
+							}),
+						},
 					}),
 					q(10230, {	-- The Battle Horn
-						["qg"] = 19736,	-- Althen the Historian
+						["providers"] = {
+							{ "n", 19736 },	-- Althen the Historian
+							{ "i", 28562 },	-- Unyielding Battle Horn
+						},
 						["sourceQuest"] = 10229,	-- Decipher the Tome
 						["coord"] = { 61.7, 81.7, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 28562, 1 },	-- Unyielding Battle Horn
-						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
@@ -2321,11 +2447,11 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- Demoniac Scryer Reading
-								["provider"] = { "i", 31607 },	-- Demoniac Scryer Reading
-								["coord"] = { 44, 51, HELLFIRE_PENINSULA },
-								["cost"] = {
-									{ "i", 31606, 1 },	-- Demoniac Scryer
+								["providers"] = {
+									{ "i", 31607 },	-- Demoniac Scryer Reading
+									{ "i", 31606 },	-- Demoniac Scryer
 								},
+								["coord"] = { 44, 51, HELLFIRE_PENINSULA },
 							}),
 							i(31715),	-- Demoniac Soul Prison
 						},
@@ -2337,29 +2463,35 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Morod the Windstirrer Freed
-								["provider"] = { "i", 29501 },	-- Sha'naar Key
+								["providers"] = {
+									{ "n", 20677 },	-- Morod the Windstirrer
+									{ "i", 29501 },	-- Sha'naar Key
+								},
 								["coord"] = { 13.0, 61.0, HELLFIRE_PENINSULA },
-								["cr"] = 20677,	-- Morod the Windstirrer
 							}),
 							objective(2, {	-- 0/1 Akoru the Firecaller Freed
-								["provider"] = { "i", 29501 },	-- Sha'naar Key
+								["providers"] = {
+									{ "n", 20678 },	-- Akoru the Firecaller
+									{ "i", 29501 },	-- Sha'naar Key
+								},
 								["coord"] = { 15.6, 58.6, HELLFIRE_PENINSULA },
-								["cr"] = 20678,	-- Akoru the Firecaller
 							}),
 							objective(3, {	-- 0/1 Aylaan the Waterwaker Freed
-								["provider"] = { "i", 29501 },	-- Sha'naar Key
+								["providers"] = {
+									{ "n", 20679 },	-- Aylaan the Waterwaker
+									{ "i", 29501 },	-- Sha'naar Key
+								},
 								["coord"] = { 13.0, 58.6, HELLFIRE_PENINSULA },
-								["cr"] = 20679,	-- Aylaan the Waterwaker
 							}),
 						},
 					}),
 					q(10349, {	-- The Earthbinder
-						["qg"] = 19293,	-- Tola'thion
+						["providers"] = {
+							{ "n", 19293 },	-- Tola'thion
+							{ "i", 29477 },	-- Crimson Crystal Shard
+						},
 						["sourceQuest"] = 10134,	-- Crimson Crystal Clue
 						["coord"] = { 15.6, 52.0, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 29477, 1 },	-- Crimson Crystal Shard
-						},
 						["lvl"] = lvlsquish(61, 61, 10),
 					}),
 					q(10935, {	-- The Exorcism of Colonel Jules
@@ -2420,11 +2552,11 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 The Head of the Hand of Kargath
-								["provider"] = { "i", 31706 },	-- The Head of the Hand of Kargath
-								["coord"] = { 47.6, 49.8, HELLFIRE_PENINSULA },
-								["cost"] = {
-									{ "i", 31702, 1 },	-- Challenge from the Horde
+								["providers"] = {
+									{ "i", 31706 },	-- The Head of the Hand of Kargath
+									{ "i", 31702 },	-- Challenge from the Horde
 								},
+								["coord"] = { 47.6, 49.8, HELLFIRE_PENINSULA },
 								["crs"] = {
 									19264,	-- Force Commander Gorax
 									22374,	-- Hand of Kargath
@@ -2447,10 +2579,10 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							objective(1, {	-- 0/8 Stonescythe Whelp slain
-								["cr"] = 16927,	-- Stonescythe Whelp
+								["provider"] = { "n", 16927 },	-- Stonescythe Whelp
 							}),
 							objective(2, {	-- 0/3 Stonescythe Alpha slain
-								["cr"] = 16929,	-- Stonescythe Alpha
+								["provider"] = { "n", 16929 },	-- Stonescythe Alpha
 							}),
 						},
 					}),
@@ -2462,7 +2594,7 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/10 Terrorfiend slain
-								["cr"] = 16951,	-- Terrorfiend
+								["provider"] = { "n", 16951 },	-- Terrorfiend
 							}),
 						},
 					}),
@@ -2481,12 +2613,12 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(9406, {	-- The Mag'har
-						["qg"] = 16845,	-- Gorkan Bloodfish
+						["providers"] = {
+							{ "n", 16845 },	-- Gorkan Bloodfish
+							{ "i", 23569 },	-- Letter from the Mag'har
+						},
 						["sourceQuest"] = 9410,	-- A Spirit Guide
 						["coord"] = { 31.9, 27.7, HELLFIRE_PENINSULA },
-						["cost"] = {
-							{ "i", 23569, 1 },	-- Letter from the Mag'har
-						},
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
 						-- #if AFTER 4.0.3
@@ -2506,8 +2638,8 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- Z'kral slain
+								["provider"] = { "n", 18974 },	-- Z'kral
 								["coord"] = { 56.3, 61.4, HELLFIRE_PENINSULA },
-								["cr"] = 18974,	-- Z'kral
 							}),
 							i(25982),	-- Foreman's Sash
 							i(25983),	-- Heavy Miner's Belt
@@ -2534,13 +2666,13 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Dreadcaller slain
-								["cr"] = 19434,	-- Dreadcaller
+								["provider"] = { "n", 19434 },	-- Dreadcaller
 							}),
 							objective(2, {	-- 0/4 Flamewaker Imp slain
-								["cr"] = 19136,	-- Flamewaker Imp
+								["provider"] = { "n", 19136 },	-- Flamewaker Imp
 							}),
 							objective(3, {	-- 0/6 Infernal Warbringer slain
-								["cr"] = 19261,	-- Infernal Warbringer
+								["provider"] = { "n", 19261 },	-- Infernal Warbringer
 							}),
 							i(29911),	-- Agamaggan's Quill
 							i(29913),	-- Foe Reaver
@@ -2557,7 +2689,10 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/8 Cleanse Trampled Skeleton
-								["provider"] = { "i", 25889 },	-- Draenei Holy Water
+								["providers"] = {
+									{ "i",  25889 },	-- Draenei Holy Water
+									{ "o", 182789 },	-- Trampled Skeleton
+								},
 							}),
 						},
 					}),
@@ -2568,10 +2703,10 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							objective(1, {	-- 0/6 Terrorfiend slain
-								["cr"] = 16951,	-- Terrorfiend
+								["provider"] = { "n", 16951 },	-- Terrorfiend
 							}),
 							objective(2, {	-- 0/6 Blistering Rot slain
-								["cr"] = 16901,	-- Blistering Rot
+								["provider"] = { "n", 16901 },	-- Blistering Rot
 							}),
 						},
 					}),
@@ -2643,11 +2778,11 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/3 Warp Nether
-								["provider"] = { "i", 29051 },	-- Warp Nether
-								["coord"] = { 52, 84, HELLFIRE_PENINSULA },
-								["cost"] = {
-									{ "i", 29027, 1 },	-- Unstable Warp Rift Generator
+								["providers"] = {
+									{ "i", 29051 },	-- Warp Nether
+									{ "i", 29027 },	-- Unstable Warp Rift Generator
 								},
+								["coord"] = { 52, 84, HELLFIRE_PENINSULA },
 								["cr"] = 20145,	-- Unstable Voidwalker
 							}),
 						},
@@ -2710,13 +2845,13 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(58, 58, 10),
 						["groups"] = {
 							objective(1, {	-- 0/12 Unyielding Footman slain
-								["cr"] = 16904,	-- Unyielding Footman
+								["provider"] = { "n", 16904 },	-- Unyielding Footman
 							}),
 							objective(2, {	-- 0/10 Unyielding Sorcerer slain
-								["cr"] = 16905,	-- Unyielding Sorcerer
+								["provider"] = { "n", 16905 },	-- Unyielding Sorcerer
 							}),
 							objective(3, {	-- 0/5 Unyielding Knight slain
-								["cr"] = 16906,	-- Unyielding Knight
+								["provider"] = { "n", 16906 },	-- Unyielding Knight
 							}),
 						},
 					}),
