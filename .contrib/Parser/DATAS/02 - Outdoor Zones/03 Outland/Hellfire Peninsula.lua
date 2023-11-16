@@ -748,8 +748,9 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							objective(1, {	-- 0/1 Caged Female Kaliri Hatchling
 								["providers"] = {
-									{ "i", 23486 },	-- Caged Female Kaliri Hatchling
-									{ "i", 23485 },	-- Empty Birdcage
+									{ "i",  23486 },	-- Caged Female Kaliri Hatchling
+									{ "i",  23485 },	-- Empty Birdcage
+									{ "o", 181582 },	-- Kaliri Nest
 								},
 								["coord"] = { 29, 81, HELLFIRE_PENINSULA },
 								["cr"] = 17034,	-- Female Kaliri Hatchling
