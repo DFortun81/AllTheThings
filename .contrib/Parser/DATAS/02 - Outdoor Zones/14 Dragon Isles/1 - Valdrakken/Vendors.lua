@@ -52,12 +52,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					})),
 					i(206028, {	-- Chest of Gold
-						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 2 }},
-						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 2 }},
+						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_7 }
 					}),
 					i(204195, {	-- Drake's Shadowflame Crest
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 1 }},
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
+					}),
+					i(210756, {	-- Gleaming Satchel of Drake's Dreaming Crests
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 1 }},
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }
 					}),
 					i(210436, {	-- Nature's Cradle
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 6 }},
@@ -72,6 +76,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(206037, {	-- Ruby Flightstone
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 1 }},
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }
+					}),
+					i(210726, {	-- Ruby Flightstone
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 1 }},
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }
+					}),
+					i(210762, {	-- Shimmering Clutch of Wyrm's Dreaming Crests
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 2 }},
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }
+					}),
+					i(208396, {	-- Splintered Spark of Dreams
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 6 }},
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }
 					}),
 					i(202152, {	-- Storm-Charged Manipulator
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S1, 6 }},
