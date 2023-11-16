@@ -2639,13 +2639,17 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
 						["requireSkill"] = FISHING,
 						["provider"] = { "n", 63721 },	-- Nat Pagle
+						["coord"] = { 68.4, 43.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { ADDED_6_0_3_LAUNCH },
 					}),
 					q(36609, {	-- The Great Angler Returns
 						["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
 						["requireSkill"] = FISHING,
 						["provider"] = { "n", 63721 },	-- Nat Pagle
+						["coord"] = { 68.4, 43.5, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
+						["timeline"] = { ADDED_6_0_3_LAUNCH },
 					}),
 					q(30738, {	-- Thelonius
 						["provider"] = { "n", 60506 },	-- Thelonius
