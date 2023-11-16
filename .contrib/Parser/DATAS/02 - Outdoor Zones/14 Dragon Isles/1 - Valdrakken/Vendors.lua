@@ -52,7 +52,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					})),
 					i(206028, {	-- Chest of Gold
+						-- #if BEFORE 10.2.0
+						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S2, 2 }},
+						-- #else
 						["cost"] = {{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 2 }},
+						-- #endif
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_7 }
 					}),
 					i(204195, {	-- Drake's Shadowflame Crest
