@@ -123,6 +123,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					["modID"] = 3,
 				},{
 					i(210751),	-- Mark of the Hibernating Runebear (CI!)
+					i(210433, { -- Visage of Aurostor
+						["modID"] = 0,
+					}),	
 					i(208440),	-- Aurostor's Sleeping Knickers
 					i(208437),	-- Crown of Freya's Chosen
 					i(208436),	-- Flame-Etched Breastplate
