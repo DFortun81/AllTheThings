@@ -956,8 +956,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							{ "o", 201873 },	-- Gunship Armory (A)
 							{ "o", 202180 },	-- Gunship Armory (H)
 						},
+						["crs"] = {
+							36939,    -- High Overlord Saurfang
+							36948,    -- Muradin Bronzebeard
+						},
 						["OnInit"] = [[function(t)
-							t.crs = { 36948, 36939 };
 							t.objectID = t.providers[_.FactionID == Enum.FlightPathFaction.Horde and 2 or 1][2];
 							t.providers = nil;
 							return t;
@@ -1280,8 +1283,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							{ "o", 201873 },	-- Gunship Armory (A)
 							{ "o", 202180 },	-- Gunship Armory (H)
 						},
+						["crs"] = {
+							36939,    -- High Overlord Saurfang
+							36948,    -- Muradin Bronzebeard
+						},
 						["OnInit"] = [[function(t)
-							t.crs = { 36948, 36939 };
 							t.objectID = t.providers[_.FactionID == Enum.FlightPathFaction.Horde and 2 or 1][2];
 							t.providers = nil;
 							return t;
@@ -1628,8 +1634,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							{ "o", 201873 },	-- Gunship Armory (A)
 							{ "o", 202180 },	-- Gunship Armory (H)
 						},
+						["crs"] = {
+							36939,    -- High Overlord Saurfang
+							36948,    -- Muradin Bronzebeard
+						},
 						["OnInit"] = [[function(t)
-							t.crs = { 36948, 36939 };
 							t.objectID = t.providers[_.FactionID == Enum.FlightPathFaction.Horde and 2 or 1][2];
 							t.providers = nil;
 							return t;
@@ -1972,8 +1981,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 							{ "o", 201873 },	-- Gunship Armory (A)
 							{ "o", 202180 },	-- Gunship Armory (H)
 						},
+						["crs"] = {
+							36939,    -- High Overlord Saurfang
+							36948,    -- Muradin Bronzebeard
+						},
 						["OnInit"] = [[function(t)
-							t.crs = { 36948, 36939 };
 							t.objectID = t.providers[_.FactionID == Enum.FlightPathFaction.Horde and 2 or 1][2];
 							t.providers = nil;
 							return t;

@@ -5758,15 +5758,18 @@ if EJ_GetEncounterInfo then
 	}, (function(t) return t.questID; end));
 else
 	app.CreateEncounter = function(id, t)
-		local npcID = t.creatureID or (t.crs and t.crs[1]) or t.npcID or (t.qgs and t.qgs[1]);
-		if npcID then
-			t = app.CreateNPC(npcID, t);
+		local providers = t.providers;
+		if providers then
+			local provider = providers[1];
+			tremove(providers, 1);
+			if #providers < 1 then t.providers = nil; end
+			t = (provider[1] == "n" and app.CreateNPC or app.CreateObject)(provider[2], t);
 			t.encounterID = id;
 			return t;
 		else
-			local providers = t.providers;
-			if providers then
-				t = (providers[1][1] == "n" and app.CreateNPC or app.CreateObject)(providers[1][2], t);
+			local npcID = t.creatureID or (t.crs and t.crs[1]) or t.npcID or (t.qgs and t.qgs[1]);
+			if npcID then
+				t = app.CreateNPC(npcID, t);
 				t.encounterID = id;
 				return t;
 			end
