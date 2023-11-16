@@ -956,7 +956,6 @@ root(ROOTS.NeverImplemented, {
 				i(211418),	-- Q'onzu Edict of Change
 				i(208690),	-- Roottwined Key
 				i(210726),	-- Ruby Flightstone
-				i(210346),	-- Self-Baking Herb Based Cookies
 				i(208606),	-- Somnagora's Heart
 				i(209853),	-- Unstable Water Walking Potion
 				i(208745),	-- Your Reward [DNT]
