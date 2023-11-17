@@ -20757,3 +20757,27 @@
 184285@@@Gnomelia Gearheart
 209576@@@Energy
 209681@@@Squally
+10.2.0.52095
+210529@@@Energy
+210687@@@Tindral Sageswift
+210952@@@Fyrakk
+211521@@@Moira Thaurissan
+211561@@@Sansok Khan
+213128@@@Merithra
+213130@@@Tyrande Whisperwind
+213131@@@Alexstrasza the Life-Binder
+213407@@@Lil' Wrathion
+213534@@@Shikaar Hunter
+213682@@@Ravenholdt Mini-Assassin
+213755@@@Vyranoth
+213820@@@Innocent Faerie Dragon
+213821@@@Elusive Swifthoof Gladehart
+213822@@@Turtle
+213823@@@Merithra
+213867@@@Eternus
+214052@@@Archdruid of the Flame
+214187@@@Lord Itharius
+214244@@@Red Drake
+214294@@@Archdruid of the Flame
+214779@@@Sentinel of the New Moon
+215015@@@Ash'alah
