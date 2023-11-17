@@ -20781,3 +20781,50 @@
 214294@@@Archdruid of the Flame
 214779@@@Sentinel of the New Moon
 215015@@@Ash'alah
+10.2.0.52188
+211774@@@Sylvanesh
+213807@@@Merithra
+213813@@@Molten Sporebat
+213814@@@Green Drake
+213815@@@Rydra Scalegorger
+213816@@@Galok Wingslicer
+213818@@@Igira the Cruel
+213819@@@Otharia
+214245@@@Kalecgos
+214246@@@Merithra
+214247@@@Nozdormu
+214248@@@Ebyssian
+214249@@@Vyranoth
+214250@@@Alexstrasza the Life-Binder
+214303@@@Priestess Alinya
+214304@@@Belysra Starbreeze
+214305@@@Priestess Kyleen Il'dinare
+214306@@@Moon Priestess Lasara
+214307@@@Cerellean Whiteclaw
+214308@@@Rensar Greathoof
+214311@@@Altruis the Sufferer
+214312@@@Arko'narin Starshade
+214314@@@Broll Bearmantle
+214315@@@Commander Mar'alith
+214316@@@Delaryn Summermoon
+214320@@@Delas Moonfang
+214321@@@Drelanim Whisperwind
+214322@@@Kery'nael Thorngale
+214323@@@Solarys Thorngale
+214325@@@Grimclaw
+214326@@@Commander Jarod Shadowsong
+214328@@@Koda Steelclaw
+214329@@@Lea Stonepaw
+214330@@@Lyessa Bloomwatcher
+214331@@@Lysander Starshade
+214332@@@Maiev Shadowsong
+214333@@@Marin Bladewing
+214335@@@Mirana Starlight
+214336@@@Archmage Mordent Evenshade
+214337@@@Myara Nightsong
+214340@@@Raene Wolfrunner
+214344@@@Sentinel Cordressa Briarbow
+214345@@@Shandris Feathermoon
+214346@@@Skylord Omnuron
+214347@@@Thisalee Crow
+214349@@@Tyrande Whisperwind
