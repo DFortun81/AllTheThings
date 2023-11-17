@@ -424,3 +424,9 @@ i(203344, 73835);	-- Winding Slitherdrake: Single Jaw Horn
 i(203315, 73803);	-- Winding Slitherdrake: Small Spiked Crest
 i(203332, 73821);	-- Winding Slitherdrake: Spiked Horns
 i(203337, 73827);	-- Winding Slitherdrake: Thorn Horns
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+-- TODO: Has spellID 431709, needs different handling?
+i(212518, 0);	-- Manuscript of Endless Possibility
