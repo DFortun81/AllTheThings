@@ -197,19 +197,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["collectible"] = false,
 						["g"] = {
 							crit(43591, {	-- Captain Hermes
-								["creatureID"] = 139489,	-- Captain Hermes
+								["cr"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
 							crit(43593, {	-- Dilbert McClint
-								["creatureID"] = 140461,	-- Dilbert McClint
+								["cr"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
 							crit(43594, {	-- Fizzie Sparkwhistle
-								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+								["cr"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
 							crit(43595, {	-- Michael Skarn
-								["creatureID"] = 140880,	-- Michael Skarn
+								["cr"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
 						},
@@ -218,19 +218,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["collectible"] = false,
 						["g"] = {
 							crit(43611, {	-- Captain Hermes
-								["creatureID"] = 139489,	-- Captain Hermes
+								["cr"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
 							crit(43613, {	-- Dilbert McClint
-								["creatureID"] = 140461,	-- Dilbert McClint
+								["cr"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
 							crit(43614, {	-- Fizzie Sparkwhistle
-								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+								["cr"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
 							crit(43615, {	-- Michael Skarn
-								["creatureID"] = 140880,	-- Michael Skarn
+								["cr"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
 						},
@@ -239,19 +239,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["collectible"] = false,
 						["g"] = {
 							crit(43631, {	-- Captain Hermes
-								["creatureID"] = 139489,	-- Captain Hermes
+								["cr"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
 							crit(43633, {	-- Dilbert McClint
-								["creatureID"] = 140461,	-- Dilbert McClint
+								["cr"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
 							crit(43634, {	-- Fizzie Sparkwhistle
-								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+								["cr"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
 							crit(43635, {	-- Michael Skarn
-								["creatureID"] = 140880,	-- Michael Skarn
+								["cr"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
 						},
@@ -260,19 +260,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["collectible"] = false,
 						["g"] = {
 							crit(43652, {	-- Captain Hermes
-								["creatureID"] = 139489,	-- Captain Hermes
+								["cr"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
 							crit(43654, {	-- Dilbert McClint
-								["creatureID"] = 140461,	-- Dilbert McClint
+								["cr"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
 							crit(43655, {	-- Fizzie Sparkwhistle
-								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+								["cr"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
 							crit(43656, {	-- Michael Skarn
-								["creatureID"] = 140880,	-- Michael Skarn
+								["cr"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
 						},
@@ -281,19 +281,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["collectible"] = false,
 						["g"] = {
 							crit(43671, {	-- Captain Hermes
-								["creatureID"] = 139489,	-- Captain Hermes
+								["cr"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
 							crit(43673, {	-- Dilbert McClint
-								["creatureID"] = 140461,	-- Dilbert McClint
+								["cr"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
 							crit(43674, {	-- Fizzie Sparkwhistle
-								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+								["cr"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
 							crit(43675, {	-- Michael Skarn
-								["creatureID"] = 140880,	-- Michael Skarn
+								["cr"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
 						},
@@ -302,19 +302,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["collectible"] = false,
 						["g"] = {
 							crit(43699, {	-- Captain Hermes
-								["creatureID"] = 139489,	-- Captain Hermes
+								["cr"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
 							crit(43701, {	-- Dilbert McClint
-								["creatureID"] = 140461,	-- Dilbert McClint
+								["cr"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
 							crit(43702, {	-- Fizzie Sparkwhistle
-								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+								["cr"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
 							crit(43703, {	-- Michael Skarn
-								["creatureID"] = 140880,	-- Michael Skarn
+								["cr"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
 						},
@@ -323,19 +323,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["collectible"] = false,
 						["g"] = {
 							crit(43721, {	-- Captain Hermes
-								["creatureID"] = 139489,	-- Captain Hermes
+								["cr"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
 							crit(43723, {	-- Dilbert McClint
-								["creatureID"] = 140461,	-- Dilbert McClint
+								["cr"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
 							crit(43724, {	-- Fizzie Sparkwhistle
-								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+								["cr"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
 							crit(43725, {	-- Michael Skarn
-								["creatureID"] = 140880,	-- Michael Skarn
+								["cr"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
 						},
@@ -344,19 +344,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["collectible"] = false,
 						["g"] = {
 							crit(43740, {	-- Captain Hermes
-								["creatureID"] = 139489,	-- Captain Hermes
+								["cr"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
 							crit(43742, {	-- Dilbert McClint
-								["creatureID"] = 140461,	-- Dilbert McClint
+								["cr"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
 							crit(43743, {	-- Fizzie Sparkwhistle
-								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+								["cr"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
 							crit(43744, {	-- Michael Skarn
-								["creatureID"] = 140880,	-- Michael Skarn
+								["cr"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
 						},
@@ -365,19 +365,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["collectible"] = false,
 						["g"] = {
 							crit(43759, {	-- Captain Hermes
-								["creatureID"] = 139489,	-- Captain Hermes
+								["cr"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
 							crit(43761, {	-- Dilbert McClint
-								["creatureID"] = 140461,	-- Dilbert McClint
+								["cr"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
 							crit(43762, {	-- Fizzie Sparkwhistle
-								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+								["cr"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
 							crit(43763, {	-- Michael Skarn
-								["creatureID"] = 140880,	-- Michael Skarn
+								["cr"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
 						},
@@ -386,19 +386,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["collectible"] = false,
 						["g"] = {
 							crit(43778, {	-- Captain Hermes
-								["creatureID"] = 139489,	-- Captain Hermes
+								["cr"] = 139489,	-- Captain Hermes
 								["coord"] = { 21.4, 66.4, DRUSTVAR },
 							}),
 							crit(43780, {	-- Dilbert McClint
-								["creatureID"] = 140461,	-- Dilbert McClint
+								["cr"] = 140461,	-- Dilbert McClint
 								["coord"] = { 63.6, 59.6, DRUSTVAR },
 							}),
 							crit(43781, {	-- Fizzie Sparkwhistle
-								["creatureID"] = 140813,	-- Fizzie Sparkwhistle
+								["cr"] = 140813,	-- Fizzie Sparkwhistle
 								["coord"] = { 38.1, 38.5, DRUSTVAR },
 							}),
 							crit(43782, {	-- Michael Skarn
-								["creatureID"] = 140880,	-- Michael Skarn
+								["cr"] = 140880,	-- Michael Skarn
 								["coord"] = { 61.0, 17.6, DRUSTVAR },
 							}),
 						},

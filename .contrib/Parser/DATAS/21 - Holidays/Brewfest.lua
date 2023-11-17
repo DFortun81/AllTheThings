@@ -1211,13 +1211,47 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["isDaily"] = true,
 			}),
 			q(12278, {	-- Brew of the Month Club (A)
+				["timeline"] = { "added 2.2.2" },	-- Originally added 3.0.2, but in TBC Classic?!
+				["maps"] = { DUN_MOROGH },
+				["races"] = ALLIANCE_ONLY,
+				["altQuests"] = { 12420 },	-- Brew of the Month Club (A) [???]
+				-- #IF ANYCLASSIC
+				-- #if AFTER WRATH
+				["OnUpdate"] = [[function(t)
+					if not (C_QuestLog.IsQuestFlaggedCompleted(t.questID) or C_QuestLog.IsQuestFlaggedCompleted(t.altQuests[1])) then
+						if ATTAccountWideData.Achievements[2796] then
+							t.collected = 2;
+							t.OnUpdate = nil;
+						end
+					end
+				end]],
+				-- #endif
+				-- #endif
 				-- #if AFTER 3.0.0
 				["provider"] = { "i", 37571 },    -- "Brew of the Month" Club Membership Form (current)
 				-- #else
 				["provider"] = { "i", 37736 },    -- "Brew of the Month" Club Membership Form (original)
+				["description"] = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
+				["repeatable"] = true,
 				-- #endif
-				["altQuests"] = { 12420 },	-- Brew of the Month Club (A) [???]
+			}),
+			-- #IF NOT ANYCLASSIC
+			q(12420, {	-- Brew of the Month Club (A)
+				["provider"] = { "i", 37736 },    -- "Brew of the Month" Club Membership Form (original)
+				["altQuests"] = { 12278 },	-- Brew of the Month Club (A)
 				["timeline"] = { "added 2.2.2" },	-- Originally added 3.0.2, but in TBC Classic?!
+				["u"] = REMOVED_FROM_GAME,	-- this version isn't available, but don't know when it was 'removed'
+				["maps"] = { DUN_MOROGH },
+				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,	-- original quest was reset yearly
+			}),
+			-- #ENDIF
+			q(12306, {	-- Brew of the Month Club (H)
+				["timeline"] = { "added 2.2.2" },	-- Originally added 3.0.2, but in TBC Classic?!
+				["maps"] = { DUROTAR },
+				["races"] = HORDE_ONLY,
+				["altQuests"] = { 12421 },	-- Brew of the Month Club (H) [???]
+				-- #IF ANYCLASSIC
 				-- #if AFTER WRATH
 				["OnUpdate"] = [[function(t)
 					if not (C_QuestLog.IsQuestFlaggedCompleted(t.questID) or C_QuestLog.IsQuestFlaggedCompleted(t.altQuests[1])) then
@@ -1228,38 +1262,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					end
 				end]],
 				-- #endif
-				["maps"] = { DUN_MOROGH },
-				["races"] = ALLIANCE_ONLY,
-				-- #if BEFORE 3.0.0
-				["description"] = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
-				["repeatable"] = true,
 				-- #endif
-			}),
-			q(12306, {	-- Brew of the Month Club (H)
 				-- #if AFTER 3.0.0
 				["provider"] = { "i", 37599 },    -- "Brew of the Month" Club Membership Form (current)
 				-- #else
 				["provider"] = { "i", 37737 },    -- "Brew of the Month" Club Membership Form (original)
-				-- #endif
-				["altQuests"] = { 12421 },	-- Brew of the Month Club (H) [???]
-				["timeline"] = { "added 2.2.2" },	-- Originally added 3.0.2, but in TBC Classic?!
-				-- #if AFTER WRATH
-				["OnUpdate"] = [[function(t)
-					if not (C_QuestLog.IsQuestFlaggedCompleted(t.questID) or C_QuestLog.IsQuestFlaggedCompleted(t.altQuests[1])) then
-						if ATTAccountWideData.Achievements[2796] then
-							t.collected = 2;
-							t.OnUpdate = nil;
-						end
-					end
-				end]],
-				-- #endif
-				["maps"] = { DUROTAR },
-				["races"] = HORDE_ONLY,
-				-- #if BEFORE 3.0.0
 				["description"] = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
 				["repeatable"] = true,
 				-- #endif
 			}),
+			-- #IF NOT ANYCLASSIC
+			q(12421, {	-- Brew of the Month Club (H)
+				["provider"] = { "i", 37737 },    -- "Brew of the Month" Club Membership Form (original)
+				["altQuests"] = { 12306 },	-- Brew of the Month Club (H)
+				["timeline"] = { "added 2.2.2" },	-- Originally added 3.0.2, but in TBC Classic?!
+				["u"] = REMOVED_FROM_GAME,	-- this version isn't available, but don't know when it was 'removed'
+				["maps"] = { DUROTAR },
+				["races"] = HORDE_ONLY,
+				["isYearly"] = true,	-- original quest was reset yearly
+			}),
+			-- #ENDIF
 			q(76591, {	-- Bubbling Brews
 				["qg"] = 207496,	-- Bragdur Battlebrew
 				["coord"] = { 29.7, 56.2, VALDRAKKEN },

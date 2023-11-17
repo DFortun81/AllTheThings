@@ -699,8 +699,7 @@ crit = function(criteriaUID, t)							-- Create an Achievement Criteria Object (
 		error(table.concat({"Do not use 'questID' in crit(",criteriaUID,") ==> [\"_quests\"]={",t.questID,"}"}))
 	end
 	if t.creatureID or t.npcID then
-		-- TODO: make this an error once cleaned up
-		-- print(table.concat({"Do not use 'creatureID' or 'npcID' in crit(",criteriaUID,") ==> [\"crs\"]={",t.creatureID or t.npcID,"}"}))
+		error(table.concat({"Do not use 'creatureID' or 'npcID' in crit(",criteriaUID,") ==> [\"crs\"]={",t.creatureID or t.npcID,"}"}))
 	end
 	t.criteriaID = criteriaUID;
 	if not t.timeline then bubbleDown({ ["timeline"] = { "added 3.0.1" } }, t); end

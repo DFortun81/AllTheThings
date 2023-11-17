@@ -268,6 +268,7 @@ root(ROOTS.Zones, {
 					["questID"] = 43307,
 					["coord"] = { 78.4, 71.4, STORMHEIM },
 				}),
+				qNYI(43308),	-- Treasure 071 - Outskirts (required for Achievement data)
 			}),
 		}),
 	}),

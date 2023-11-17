@@ -106,15 +106,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["collectible"] = false,
 						["g"] = {
 							crit(43601, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
 							crit(43602, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
 							crit(43603, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -123,15 +123,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["collectible"] = false,
 						["g"] = {
 							crit(43621, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
 							crit(43622, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
 							crit(43623, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -140,15 +140,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["collectible"] = false,
 						["g"] = {
 							crit(43643, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
 							crit(43644, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
 							crit(43645, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -157,15 +157,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["collectible"] = false,
 						["g"] = {
 							crit(43662, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
 							crit(43663, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
 							crit(43664, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -174,15 +174,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["collectible"] = false,
 						["g"] = {
 							crit(43690, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
 							crit(43691, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
 							crit(43692, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -191,15 +191,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["collectible"] = false,
 						["g"] = {
 							crit(43709, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
 							crit(43710, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
 							crit(43711, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -208,15 +208,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["collectible"] = false,
 						["g"] = {
 							crit(43731, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
 							crit(43732, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
 							crit(43733, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -225,15 +225,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["collectible"] = false,
 						["g"] = {
 							crit(43750, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
 							crit(43751, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
 							crit(43752, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -242,15 +242,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["collectible"] = false,
 						["g"] = {
 							crit(43769, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
 							crit(43770, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
 							crit(43771, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},
@@ -259,15 +259,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["collectible"] = false,
 						["g"] = {
 							crit(43788, {	-- Lozu
-								["creatureID"] = 141529,	-- Lozu
+								["cr"] = 141529,	-- Lozu
 								["coord"] = { 72.8, 48.6, NAZMIR },
 							}),
 							crit(43789, {	-- Grady Prett
-								["creatureID"] = 141799,	-- Grady Prett
+								["cr"] = 141799,	-- Grady Prett
 								["coord"] = { 36.0, 54.6, NAZMIR },
 							}),
 							crit(43790, {	-- Korval Darkbeard
-								["creatureID"] = 141814,	-- Korval Darkbeard
+								["cr"] = 141814,	-- Korval Darkbeard
 								["coord"] = { 43.0, 38.8, NAZMIR },
 							}),
 						},

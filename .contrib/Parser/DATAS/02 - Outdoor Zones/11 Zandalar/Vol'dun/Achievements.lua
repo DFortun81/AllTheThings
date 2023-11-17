@@ -51,15 +51,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["g"] = {
 							crit(43604, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
-								["creatureID"] = 141879,	-- Keeyo
+								["cr"] = 141879,	-- Keeyo
 							}),
 							crit(43605, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
-								["creatureID"] = 141945,	-- Sizzik
+								["cr"] = 141945,	-- Sizzik
 							}),
 							crit(43606, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
-								["creatureID"] = 142054,	-- Kusa
+								["cr"] = 142054,	-- Kusa
 							}),
 						},
 					}),
@@ -68,15 +68,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["g"] = {
 							crit(43624, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
-								["creatureID"] = 141879,	-- Keeyo
+								["cr"] = 141879,	-- Keeyo
 							}),
 							crit(43625, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
-								["creatureID"] = 141945,	-- Sizzik
+								["cr"] = 141945,	-- Sizzik
 							}),
 							crit(43626, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
-								["creatureID"] = 142054,	-- Kusa
+								["cr"] = 142054,	-- Kusa
 							}),
 						},
 					}),
@@ -85,15 +85,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["g"] = {
 							crit(43646, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
-								["creatureID"] = 141879,	-- Keeyo
+								["cr"] = 141879,	-- Keeyo
 							}),
 							crit(43647, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
-								["creatureID"] = 141945,	-- Sizzik
+								["cr"] = 141945,	-- Sizzik
 							}),
 							crit(43648, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
-								["creatureID"] = 142054,	-- Kusa
+								["cr"] = 142054,	-- Kusa
 							}),
 						},
 					}),
@@ -102,15 +102,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["g"] = {
 							crit(43665, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
-								["creatureID"] = 141879,	-- Keeyo
+								["cr"] = 141879,	-- Keeyo
 							}),
 							crit(43666, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
-								["creatureID"] = 141945,	-- Sizzik
+								["cr"] = 141945,	-- Sizzik
 							}),
 							crit(43667, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
-								["creatureID"] = 142054,	-- Kusa
+								["cr"] = 142054,	-- Kusa
 							}),
 						},
 					}),
@@ -119,15 +119,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["g"] = {
 							crit(43693, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
-								["creatureID"] = 141879,	-- Keeyo
+								["cr"] = 141879,	-- Keeyo
 							}),
 							crit(43694, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
-								["creatureID"] = 141945,	-- Sizzik
+								["cr"] = 141945,	-- Sizzik
 							}),
 							crit(43695, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
-								["creatureID"] = 142054,	-- Kusa
+								["cr"] = 142054,	-- Kusa
 							}),
 						},
 					}),
@@ -136,15 +136,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["g"] = {
 							crit(43712, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
-								["creatureID"] = 141879,	-- Keeyo
+								["cr"] = 141879,	-- Keeyo
 							}),
 							crit(43713, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
-								["creatureID"] = 141945,	-- Sizzik
+								["cr"] = 141945,	-- Sizzik
 							}),
 							crit(43714, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
-								["creatureID"] = 142054,	-- Kusa
+								["cr"] = 142054,	-- Kusa
 							}),
 						},
 					}),
@@ -153,15 +153,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["g"] = {
 							crit(43734, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
-								["creatureID"] = 141879,	-- Keeyo
+								["cr"] = 141879,	-- Keeyo
 							}),
 							crit(43735, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
-								["creatureID"] = 141945,	-- Sizzik
+								["cr"] = 141945,	-- Sizzik
 							}),
 							crit(43736, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
-								["creatureID"] = 142054,	-- Kusa
+								["cr"] = 142054,	-- Kusa
 							}),
 						},
 					}),
@@ -170,15 +170,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["g"] = {
 							crit(43753, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
-								["creatureID"] = 141879,	-- Keeyo
+								["cr"] = 141879,	-- Keeyo
 							}),
 							crit(43754, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
-								["creatureID"] = 141945,	-- Sizzik
+								["cr"] = 141945,	-- Sizzik
 							}),
 							crit(43755, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
-								["creatureID"] = 142054,	-- Kusa
+								["cr"] = 142054,	-- Kusa
 							}),
 						},
 					}),
@@ -187,15 +187,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["g"] = {
 							crit(43772, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
-								["creatureID"] = 141879,	-- Keeyo
+								["cr"] = 141879,	-- Keeyo
 							}),
 							crit(43773, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
-								["creatureID"] = 141945,	-- Sizzik
+								["cr"] = 141945,	-- Sizzik
 							}),
 							crit(43774, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
-								["creatureID"] = 142054,	-- Kusa
+								["cr"] = 142054,	-- Kusa
 							}),
 						},
 					}),
@@ -204,15 +204,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["g"] = {
 							crit(43791, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
-								["creatureID"] = 141879,	-- Keeyo
+								["cr"] = 141879,	-- Keeyo
 							}),
 							crit(43792, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
-								["creatureID"] = 141945,	-- Sizzik
+								["cr"] = 141945,	-- Sizzik
 							}),
 							crit(43793, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
-								["creatureID"] = 142054,	-- Kusa
+								["cr"] = 142054,	-- Kusa
 							}),
 						},
 					}),
