@@ -302,6 +302,13 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 						["coord"] = { 48.0, 74.8, DRAGONBLIGHT },
 						["cost"] = {{"i",207580,1}},	-- Shomko's Unyielding Spear
 					}),
+					n(208182, {	-- Crazed Looter
+						["description"] = "Spawns after using spear at statue",
+						["coord"] = { 33.63, 58.45, BOREAN_TUNDRA },
+						["groups"] = {
+							i(207594),	-- Looter's Purse
+						},
+					}),
 				},
 			}),
 
@@ -1119,7 +1126,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 root(ROOTS.HiddenQuestTriggers, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 	q(77204),	-- placed 'Golden Chalice'
 	q(76987),	-- completed 'The Inquisitive' (account-wide completion) (achievementID 18642)
-	q(76995),	-- looted Crazed Looter first time (itemID 208182)
+	q(76995),	-- looted Crazed Looter first time (NPC 208182)
 	q(77687),	-- completed 'A Secretive Contact' (questID 77165)
 	q(78202),	-- completed 'Unfinished Thinking Cap' (questID 77237)
 	q(76505),	-- completed 'The Tricked-Out Thinking Cap' (questID 76504)
