@@ -2011,8 +2011,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				i(208210),	-- Celebration Package
 				i(172013),	-- Celebration Firework
 				i(171177),	-- Invitation from the Timewalkers
-				i(208543),	-- Lil' Frostwing (PET!)
-				ach(19192),	-- Lil' Frostwing
+				i(208543, {	-- Lil' Frostwing (PET!)
+					ach(19192),	-- Lil' Frostwing
+				}),
 			}),
 		}),
 	})),
