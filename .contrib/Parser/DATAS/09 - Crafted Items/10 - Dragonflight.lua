@@ -2934,7 +2934,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(72346, 389465, ADDED_10_0_7);	-- Serevite Seam
 			FirstCraft(71955, 389463);	-- Hardened Serevite
 			FirstCraft(71961, 389464);	-- Infurious Serevite
-			--FirstCraft(X, 421244, ADDED_10_2_0);	-- Living Serevite Deposit
+			FirstCraft(77827, 421244, ADDED_10_2_0);	-- Living Serevite Deposit
 			FirstCraft(75139, 405120, ADDED_10_1_0);	-- Metamorphic Serevite
 			FirstCraft(71953, 389459);	-- Molten Serevite
 			FirstCraft(71959, 389462);	-- Primal Serevite

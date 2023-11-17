@@ -1105,9 +1105,9 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77572),	-- 'Make player eligible for superbloom' (spellID 425375)
 		q(77887),	-- 'World Quest Unlock' (spellID 421687)
 		q(78904),	-- 'Local Stories Quest Unlock' (spellID 429258) (after qID 77178 'Tactical Withdrawal')
-		q(77769),	-- 'Stay a while and listen' n: 206930 during qID 76280 (New Moon)
-		q(77768),	-- 'Stay a while and listen' n: 206402 during qID 76280 (New Moon)
-		q(77771),	-- 'Stay a while and listen' n: 206943 during qID 76280 (New Moon)
+		q(77769),	-- 'Stay a while and listen' Delaryn Summermoon (n: 206930) during qID 76281 (Something Worth Celebrating)
+		q(77768),	-- 'Stay a while and listen' Tyrande Whisperwind (n: 206402) during qID 76281 (Something Worth Celebrating)
+		q(77771),	-- 'Stay a while and listen' Lady Jaina Proudmoore (n: 206943) during qID 76281 (Something Worth Celebrating)
 		-- Dryad Garden
 		q(77808),	-- Quest "What Do I Call You?": Pick the title of "Mother"
 		q(77809),	-- Quest "What Do I Call You?": Pick the title of "Father"
