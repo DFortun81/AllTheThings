@@ -45,15 +45,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13280, {	-- Hobbyist Aquarist
 						["collectible"] = false,
 						["g"] = {
-							crit(17, {	-- Karaga
+							crit(43607, {	-- Karaga
 								["creatureID"] = 142096,	-- Karaga
 								["coord"] = { 70.6, 29.6, ZULDAZAR },
 							}),
-							crit(18, {	-- Talia Sparkbrow
+							crit(43608, {	-- Talia Sparkbrow
 								["creatureID"] = 142114,	-- Talia Sparkbrow
 								["coord"] = { 48.4, 35.0, ZULDAZAR },
 							}),
-							crit(19, {	-- Zujai
+							crit(43609, {	-- Zujai
 								["creatureID"] = 142234,	-- Zujai
 								["coord"] = { 50.6, 24.0, ZULDAZAR },
 							}),
@@ -62,15 +62,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13270, {	-- Beast Mode
 						["collectible"] = false,
 						["g"] = {
-							crit(17, {	-- Karaga
+							crit(43627, {	-- Karaga
 								["creatureID"] = 142096,	-- Karaga
 								["coord"] = { 70.6, 29.6, ZULDAZAR },
 							}),
-							crit(18, {	-- Talia Sparkbrow
+							crit(43628, {	-- Talia Sparkbrow
 								["creatureID"] = 142114,	-- Talia Sparkbrow
 								["coord"] = { 48.4, 35.0, ZULDAZAR },
 							}),
-							crit(19, {	-- Zujai
+							crit(43629, {	-- Zujai
 								["creatureID"] = 142234,	-- Zujai
 								["coord"] = { 50.6, 24.0, ZULDAZAR },
 							}),
@@ -79,15 +79,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13271, {	-- Critters with Huge Teeth
 						["collectible"] = false,
 						["g"] = {
-							crit(17, {	-- Karaga
+							crit(43649, {	-- Karaga
 								["creatureID"] = 142096,	-- Karaga
 								["coord"] = { 70.6, 29.6, ZULDAZAR },
 							}),
-							crit(18, {	-- Talia Sparkbrow
+							crit(43650, {	-- Talia Sparkbrow
 								["creatureID"] = 142114,	-- Talia Sparkbrow
 								["coord"] = { 48.4, 35.0, ZULDAZAR },
 							}),
-							crit(19, {	-- Zujai
+							crit(43651, {	-- Zujai
 								["creatureID"] = 142234,	-- Zujai
 								["coord"] = { 50.6, 24.0, ZULDAZAR },
 							}),
@@ -96,15 +96,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13272, {	-- Dragons Make Everything Better
 						["collectible"] = false,
 						["g"] = {
-							crit(17, {	-- Karaga
+							crit(43668, {	-- Karaga
 								["creatureID"] = 142096,	-- Karaga
 								["coord"] = { 70.6, 29.6, ZULDAZAR },
 							}),
-							crit(18, {	-- Talia Sparkbrow
+							crit(43669, {	-- Talia Sparkbrow
 								["creatureID"] = 142114,	-- Talia Sparkbrow
 								["coord"] = { 48.4, 35.0, ZULDAZAR },
 							}),
-							crit(19, {	-- Zujai
+							crit(43670, {	-- Zujai
 								["creatureID"] = 142234,	-- Zujai
 								["coord"] = { 50.6, 24.0, ZULDAZAR },
 							}),
@@ -113,15 +113,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13273, {	-- Element of Success
 						["collectible"] = false,
 						["g"] = {
-							crit(17, {	-- Karaga
+							crit(43696, {	-- Karaga
 								["creatureID"] = 142096,	-- Karaga
 								["coord"] = { 70.6, 29.6, ZULDAZAR },
 							}),
-							crit(18, {	-- Talia Sparkbrow
+							crit(43697, {	-- Talia Sparkbrow
 								["creatureID"] = 142114,	-- Talia Sparkbrow
 								["coord"] = { 48.4, 35.0, ZULDAZAR },
 							}),
-							crit(19, {	-- Zujai
+							crit(43698, {	-- Zujai
 								["creatureID"] = 142234,	-- Zujai
 								["coord"] = { 50.6, 24.0, ZULDAZAR },
 							}),
@@ -130,15 +130,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13274, {	-- Fun With Flying
 						["collectible"] = false,
 						["g"] = {
-							crit(17, {	-- Karaga
+							crit(43715, {	-- Karaga
 								["creatureID"] = 142096,	-- Karaga
 								["coord"] = { 70.6, 29.6, ZULDAZAR },
 							}),
-							crit(18, {	-- Talia Sparkbrow
+							crit(43716, {	-- Talia Sparkbrow
 								["creatureID"] = 142114,	-- Talia Sparkbrow
 								["coord"] = { 48.4, 35.0, ZULDAZAR },
 							}),
-							crit(19, {	-- Zujai
+							crit(43717, {	-- Zujai
 								["creatureID"] = 142234,	-- Zujai
 								["coord"] = { 50.6, 24.0, ZULDAZAR },
 							}),
@@ -147,15 +147,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13281, {	-- Human Resources
 						["collectible"] = false,
 						["g"] = {
-							crit(17, {	-- Karaga
+							crit(43737, {	-- Karaga
 								["creatureID"] = 142096,	-- Karaga
 								["coord"] = { 70.6, 29.6, ZULDAZAR },
 							}),
-							crit(18, {	-- Talia Sparkbrow
+							crit(43738, {	-- Talia Sparkbrow
 								["creatureID"] = 142114,	-- Talia Sparkbrow
 								["coord"] = { 48.4, 35.0, ZULDAZAR },
 							}),
-							crit(19, {	-- Zujai
+							crit(43739, {	-- Zujai
 								["creatureID"] = 142234,	-- Zujai
 								["coord"] = { 50.6, 24.0, ZULDAZAR },
 							}),
@@ -164,15 +164,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13275, {	-- Magician's Secrets
 						["collectible"] = false,
 						["g"] = {
-							crit(17, {	-- Karaga
+							crit(43756, {	-- Karaga
 								["creatureID"] = 142096,	-- Karaga
 								["coord"] = { 70.6, 29.6, ZULDAZAR },
 							}),
-							crit(18, {	-- Talia Sparkbrow
+							crit(43757, {	-- Talia Sparkbrow
 								["creatureID"] = 142114,	-- Talia Sparkbrow
 								["coord"] = { 48.4, 35.0, ZULDAZAR },
 							}),
-							crit(19, {	-- Zujai
+							crit(43758, {	-- Zujai
 								["creatureID"] = 142234,	-- Zujai
 								["coord"] = { 50.6, 24.0, ZULDAZAR },
 							}),
@@ -181,15 +181,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13277, {	-- Machine Learning
 						["collectible"] = false,
 						["g"] = {
-							crit(17, {	-- Karaga
+							crit(43775, {	-- Karaga
 								["creatureID"] = 142096,	-- Karaga
 								["coord"] = { 70.6, 29.6, ZULDAZAR },
 							}),
-							crit(18, {	-- Talia Sparkbrow
+							crit(43776, {	-- Talia Sparkbrow
 								["creatureID"] = 142114,	-- Talia Sparkbrow
 								["coord"] = { 48.4, 35.0, ZULDAZAR },
 							}),
-							crit(19, {	-- Zujai
+							crit(43777, {	-- Zujai
 								["creatureID"] = 142234,	-- Zujai
 								["coord"] = { 50.6, 24.0, ZULDAZAR },
 							}),
@@ -198,15 +198,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13278, {	-- Not Quite Dead Yet
 						["collectible"] = false,
 						["g"] = {
-							crit(17, {	-- Karaga
+							crit(43794, {	-- Karaga
 								["creatureID"] = 142096,	-- Karaga
 								["coord"] = { 70.6, 29.6, ZULDAZAR },
 							}),
-							crit(18, {	-- Talia Sparkbrow
+							crit(43795, {	-- Talia Sparkbrow
 								["creatureID"] = 142114,	-- Talia Sparkbrow
 								["coord"] = { 48.4, 35.0, ZULDAZAR },
 							}),
-							crit(19, {	-- Zujai
+							crit(43796, {	-- Zujai
 								["creatureID"] = 142234,	-- Zujai
 								["coord"] = { 50.6, 24.0, ZULDAZAR },
 							}),

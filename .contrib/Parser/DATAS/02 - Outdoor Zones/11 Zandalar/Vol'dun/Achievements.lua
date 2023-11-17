@@ -49,15 +49,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13280, {	-- Hobbyist Aquarist
 						["collectible"] = false,
 						["g"] = {
-							crit(14, {	-- Keeyo
+							crit(43604, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
 								["creatureID"] = 141879,	-- Keeyo
 							}),
-							crit(15, {	-- Sizzik
+							crit(43605, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
 								["creatureID"] = 141945,	-- Sizzik
 							}),
-							crit(16, {	-- Kusa
+							crit(43606, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
 								["creatureID"] = 142054,	-- Kusa
 							}),
@@ -66,15 +66,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13270, {	-- Beast Mode
 						["collectible"] = false,
 						["g"] = {
-							crit(14, {	-- Keeyo
+							crit(43624, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
 								["creatureID"] = 141879,	-- Keeyo
 							}),
-							crit(15, {	-- Sizzik
+							crit(43625, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
 								["creatureID"] = 141945,	-- Sizzik
 							}),
-							crit(16, {	-- Kusa
+							crit(43626, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
 								["creatureID"] = 142054,	-- Kusa
 							}),
@@ -83,15 +83,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13271, {	-- Critters with Huge Teeth
 						["collectible"] = false,
 						["g"] = {
-							crit(14, {	-- Keeyo
+							crit(43646, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
 								["creatureID"] = 141879,	-- Keeyo
 							}),
-							crit(15, {	-- Sizzik
+							crit(43647, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
 								["creatureID"] = 141945,	-- Sizzik
 							}),
-							crit(16, {	-- Kusa
+							crit(43648, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
 								["creatureID"] = 142054,	-- Kusa
 							}),
@@ -100,15 +100,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13272, {	-- Dragons Make Everything Better
 						["collectible"] = false,
 						["g"] = {
-							crit(14, {	-- Keeyo
+							crit(43665, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
 								["creatureID"] = 141879,	-- Keeyo
 							}),
-							crit(15, {	-- Sizzik
+							crit(43666, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
 								["creatureID"] = 141945,	-- Sizzik
 							}),
-							crit(16, {	-- Kusa
+							crit(43667, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
 								["creatureID"] = 142054,	-- Kusa
 							}),
@@ -117,15 +117,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13273, {	-- Element of Success
 						["collectible"] = false,
 						["g"] = {
-							crit(14, {	-- Keeyo
+							crit(43693, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
 								["creatureID"] = 141879,	-- Keeyo
 							}),
-							crit(15, {	-- Sizzik
+							crit(43694, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
 								["creatureID"] = 141945,	-- Sizzik
 							}),
-							crit(16, {	-- Kusa
+							crit(43695, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
 								["creatureID"] = 142054,	-- Kusa
 							}),
@@ -134,15 +134,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13274, {	-- Fun With Flying
 						["collectible"] = false,
 						["g"] = {
-							crit(14, {	-- Keeyo
+							crit(43712, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
 								["creatureID"] = 141879,	-- Keeyo
 							}),
-							crit(15, {	-- Sizzik
+							crit(43713, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
 								["creatureID"] = 141945,	-- Sizzik
 							}),
-							crit(16, {	-- Kusa
+							crit(43714, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
 								["creatureID"] = 142054,	-- Kusa
 							}),
@@ -151,15 +151,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13281, {	-- Human Resources
 						["collectible"] = false,
 						["g"] = {
-							crit(14, {	-- Keeyo
+							crit(43734, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
 								["creatureID"] = 141879,	-- Keeyo
 							}),
-							crit(15, {	-- Sizzik
+							crit(43735, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
 								["creatureID"] = 141945,	-- Sizzik
 							}),
-							crit(16, {	-- Kusa
+							crit(43736, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
 								["creatureID"] = 142054,	-- Kusa
 							}),
@@ -168,15 +168,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13275, {	-- Magician's Secrets
 						["collectible"] = false,
 						["g"] = {
-							crit(14, {	-- Keeyo
+							crit(43753, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
 								["creatureID"] = 141879,	-- Keeyo
 							}),
-							crit(15, {	-- Sizzik
+							crit(43754, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
 								["creatureID"] = 141945,	-- Sizzik
 							}),
-							crit(16, {	-- Kusa
+							crit(43755, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
 								["creatureID"] = 142054,	-- Kusa
 							}),
@@ -185,15 +185,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13277, {	-- Machine Learning
 						["collectible"] = false,
 						["g"] = {
-							crit(14, {	-- Keeyo
+							crit(43772, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
 								["creatureID"] = 141879,	-- Keeyo
 							}),
-							crit(15, {	-- Sizzik
+							crit(43773, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
 								["creatureID"] = 141945,	-- Sizzik
 							}),
-							crit(16, {	-- Kusa
+							crit(43774, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
 								["creatureID"] = 142054,	-- Kusa
 							}),
@@ -202,15 +202,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					ach(13278, {	-- Not Quite Dead Yet
 						["collectible"] = false,
 						["g"] = {
-							crit(14, {	-- Keeyo
+							crit(43791, {	-- Keeyo
 								["coord"] = { 57.0, 49.0, VOLDUN },
 								["creatureID"] = 141879,	-- Keeyo
 							}),
-							crit(15, {	-- Sizzik
+							crit(43792, {	-- Sizzik
 								["coord"] = { 26.6, 54.8, VOLDUN },
 								["creatureID"] = 141945,	-- Sizzik
 							}),
-							crit(16, {	-- Kusa
+							crit(43793, {	-- Kusa
 								["coord"] = { 45.0, 46.4, VOLDUN },
 								["creatureID"] = 142054,	-- Kusa
 							}),
