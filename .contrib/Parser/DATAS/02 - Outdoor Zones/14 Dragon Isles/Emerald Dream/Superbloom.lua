@@ -7,7 +7,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(ACHIEVEMENTS, {
 				ach(19313),	-- Bloom Man Group
 				ach(19315),	-- Dream Chaser
-				ach(19310),	-- Fruit of the Bloom
+				ach(19310, {	-- Fruit of the Bloom
+					crit(62910),	-- Basket of Explosive Acorns
+					crit(62911),	-- Bubble Blowgun
+					crit(62912),	-- Dream Gatherer
+					crit(62913),	-- Feral Overflow
+					crit(62914),	-- Flower Trail
+					crit(62915),	-- Lifesurger
+					crit(62916),	-- Memory of L'ghorek
+					crit(62917),	-- Memory of Ursoc
+					crit(62918),	-- Mighty Roar
+					crit(62919),	-- Moonkin Jump
+					crit(62920),	-- Moonkin Mayhem
+					crit(62921),	-- Potent Lullaby
+					crit(62922),	-- Putrid Propulsion
+					crit(62923),	-- Sack of Talontreats
+					crit(62924),	-- Star Shower
+					crit(62925),	-- The Superb Loom
+					crit(62926),	-- Wake Up!
+					crit(63414),	-- Nae'dra Nibbles
+					crit(63415),	-- Fae Lens
+					crit(63438),	-- Arachnid Annihilation
+				}),
 				ach(19312),	-- Super Duper Bloom
 			}),
 			n(QUESTS, {
