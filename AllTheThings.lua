@@ -6891,7 +6891,7 @@ local QuestNameFromServer = setmetatable({}, { __index = function(t, id)
 	end
 end});
 local QuestNameDefault = setmetatable({}, { __index = function(t, id)
-	if id then
+	if id and rawget(QuestNameFromServer, id) ~= nil then
 		local name = "Quest #"..id.."*";
 		t[id] = name;
 		return name;
