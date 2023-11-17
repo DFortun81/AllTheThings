@@ -820,137 +820,125 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				}),
 				------ The End ------
 			}),
-			crit(53309, {	--  Small Pet Problems
-				["achievementID"] = 15515,	-- Path to Enlightenment
-				["collectible"] = false,
-				["g"] = {
-					q(65064, {	-- Look Who I Found!
-						["sourceQuests"] = { 65305 },	-- The Way Forward
-						["provider"] = { "n", 184486 },	-- Tamra
-						["coord"] = { 34.7, 66.3, ZERETH_MORTIS },
-					}),
-					q(65066, {	-- Flora Aroma
-						["sourceQuests"] = { 65064 },	-- Look Who I Found!
-						["provider"] = { "n", 182346 },	-- Tamra
-						["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
-						["g"] = {
-							i(189479),	-- Chromatic Rosid
-						},
-					}),
-					q(65067, {	-- Broker Beaker
-						["sourceQuests"] = { 65064 },	-- Look Who I Found!
-						["provider"] = { "n", 182346 },	-- Tamra
-						["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
-					}),
-					q(65068, {	-- Cascades of Magnitude
-						["sourceQuests"] = {
-							65066,	-- Flora Aroma
-							65067,	-- Broker Beaker
-						},
-						["provider"] = { "n", 182346 },	-- Tamra
-						["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
-					}),
-					q(65069, {	-- Culling the Maelstorm
-						["sourceQuests"] = { 65068 },	-- Cascades of Magnitude
-						["provider"] = { "n", 182346 },	-- Tamra
-						["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
-					}),
-					q(65070, {	-- Can I Keep Him?
-						["sourceQuests"] = { 65069 },	-- Culling the Maelstorm
-						["provider"] = { "n", 182346 },	-- Tamra
-						["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
-						["g"] = {
-							i(189585),	-- E'rnee (PET!)
-						}
-					}),
-				},
+			header(HEADERS.AchCriteria, 15515.01, {	--  Small Pet Problems
+				q(65064, {	-- Look Who I Found!
+					["sourceQuests"] = { 65305 },	-- The Way Forward
+					["provider"] = { "n", 184486 },	-- Tamra
+					["coord"] = { 34.7, 66.3, ZERETH_MORTIS },
+				}),
+				q(65066, {	-- Flora Aroma
+					["sourceQuests"] = { 65064 },	-- Look Who I Found!
+					["provider"] = { "n", 182346 },	-- Tamra
+					["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
+					["g"] = {
+						i(189479),	-- Chromatic Rosid
+					},
+				}),
+				q(65067, {	-- Broker Beaker
+					["sourceQuests"] = { 65064 },	-- Look Who I Found!
+					["provider"] = { "n", 182346 },	-- Tamra
+					["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
+				}),
+				q(65068, {	-- Cascades of Magnitude
+					["sourceQuests"] = {
+						65066,	-- Flora Aroma
+						65067,	-- Broker Beaker
+					},
+					["provider"] = { "n", 182346 },	-- Tamra
+					["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
+				}),
+				q(65069, {	-- Culling the Maelstorm
+					["sourceQuests"] = { 65068 },	-- Cascades of Magnitude
+					["provider"] = { "n", 182346 },	-- Tamra
+					["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
+				}),
+				q(65070, {	-- Can I Keep Him?
+					["sourceQuests"] = { 65069 },	-- Culling the Maelstorm
+					["provider"] = { "n", 182346 },	-- Tamra
+					["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
+					["g"] = {
+						i(189585),	-- E'rnee (PET!)
+					}
+				}),
 			}),
-			crit(53310, {	--  Not Al Are Lost
-				["achievementID"] = 15515,	-- Path to Enlightenment
-				["collectible"] = false,
-				["g"] = {
-					q(64771, {	-- Enlightened Exodus
-						["sourceQuests"] = { 64958 },	-- The Forces Gather
-						["provider"] = { "n", 181003 },	-- Al'dalil
-						["coord"] = { 33.7, 64.7, ZERETH_MORTIS },
-					}),
-					q(64741, {	-- Security Check
-						["sourceQuests"] = { 64771 },	-- Enlightened Exodus
-						["provider"] = { "n", 181003 },	-- Al'dalil
-						["coord"] = { 33.7, 64.7, ZERETH_MORTIS },
-					}),
-					q(64742, {	-- Traces of Tampering
-						["sourceQuests"] = { 64741 },	-- Security Check
-						["provider"] = { "n", 181003 },	-- Al'dalil
-						["coord"] = { 33.7, 64.7, ZERETH_MORTIS },
-					}),
-					q(64744, {	-- Broker Decloaker
-						["sourceQuests"] = { 64742 },	-- Traces of Tampering
-						["provider"] = { "n", 181003 },	-- Al'dalil
-						["coord"] = { 33.7, 59.8, ZERETH_MORTIS },
-					}),
-					q(64743, {	-- Xy Are You Doing This?
-						["sourceQuests"] = { 64742 },	-- Traces of Tampering
-						["provider"] = { "n", 181003 },	-- Al'dalil
-						["coord"] = { 33.7, 59.8, ZERETH_MORTIS },
-					}),
-					q(64758, {	-- Following the Leader
-						["sourceQuests"] = {
-							64744,	-- Broker Decloaker
-							64743,	-- Xy Are You Doing This?
-						},
-						["provider"] = { "n", 180936 },	-- Rana
-						["coord"] = { 33.8, 59.8, ZERETH_MORTIS },
-					}),
-					q(64760, {	-- Technical Difficulties
-						["sourceQuests"] = { 64758 },	-- Following the Leader
-						["provider"] = { "n", 180936 },	-- Rana
-						["coord"] = { 31.7, 67.4, ZERETH_MORTIS },
-						["g"] = {
-							i(190597),	-- Symbol of the Lupine
-							i(190602),	-- Symbol of the Raptora
-							i(190582),	-- Symbol of the Vombata
-						},
-					}),
-				},
+			header(HEADERS.AchCriteria, 15515.02, {	--  Not Al Are Lost
+				q(64771, {	-- Enlightened Exodus
+					["sourceQuests"] = { 64958 },	-- The Forces Gather
+					["provider"] = { "n", 181003 },	-- Al'dalil
+					["coord"] = { 33.7, 64.7, ZERETH_MORTIS },
+				}),
+				q(64741, {	-- Security Check
+					["sourceQuests"] = { 64771 },	-- Enlightened Exodus
+					["provider"] = { "n", 181003 },	-- Al'dalil
+					["coord"] = { 33.7, 64.7, ZERETH_MORTIS },
+				}),
+				q(64742, {	-- Traces of Tampering
+					["sourceQuests"] = { 64741 },	-- Security Check
+					["provider"] = { "n", 181003 },	-- Al'dalil
+					["coord"] = { 33.7, 64.7, ZERETH_MORTIS },
+				}),
+				q(64744, {	-- Broker Decloaker
+					["sourceQuests"] = { 64742 },	-- Traces of Tampering
+					["provider"] = { "n", 181003 },	-- Al'dalil
+					["coord"] = { 33.7, 59.8, ZERETH_MORTIS },
+				}),
+				q(64743, {	-- Xy Are You Doing This?
+					["sourceQuests"] = { 64742 },	-- Traces of Tampering
+					["provider"] = { "n", 181003 },	-- Al'dalil
+					["coord"] = { 33.7, 59.8, ZERETH_MORTIS },
+				}),
+				q(64758, {	-- Following the Leader
+					["sourceQuests"] = {
+						64744,	-- Broker Decloaker
+						64743,	-- Xy Are You Doing This?
+					},
+					["provider"] = { "n", 180936 },	-- Rana
+					["coord"] = { 33.8, 59.8, ZERETH_MORTIS },
+				}),
+				q(64760, {	-- Technical Difficulties
+					["sourceQuests"] = { 64758 },	-- Following the Leader
+					["provider"] = { "n", 180936 },	-- Rana
+					["coord"] = { 31.7, 67.4, ZERETH_MORTIS },
+					["g"] = {
+						i(190597),	-- Symbol of the Lupine
+						i(190602),	-- Symbol of the Raptora
+						i(190582),	-- Symbol of the Vombata
+					},
+				}),
 			}),
-			crit(53311, {	--  A Return to Grace
-				["achievementID"] = 15515,	-- Path to Enlightenment
-				["collectible"] = false,
-				["g"] = {
-					q(65463, {	-- The Wellspring of the First Ones
-						["sourceQuests"] = { 64958 },	-- The Forces Gather
-						["provider"] = { "n", 181084 },	-- Drim
-						["coord"] = { 61.4, 49.3, ZERETH_MORTIS },
-						["isBreadcrumb"] = true,
+			header(HEADERS.AchCriteria, 15515.03, {	--  A Return to Grace
+				q(65463, {	-- The Wellspring of the First Ones
+					["sourceQuests"] = { 64958 },	-- The Forces Gather
+					["provider"] = { "n", 181084 },	-- Drim
+					["coord"] = { 61.4, 49.3, ZERETH_MORTIS },
+					["isBreadcrumb"] = true,
+				}),
+				q(65349, {	-- Lost Grace
+					["sourceQuests"] = { 65463 },	-- The Wellspring of the First Ones (MIGHT BE SHAMAN ONLY?!) Might be Breadcrumb!
+					["provider"] = { "n", 182146 },	-- Olem
+					["coord"] = { 61.9, 53.5, ZERETH_MORTIS },
+				}),
+				q(65350, {	-- Restore the Flow
+					["sourceQuests"] = { 65349 },	-- Lost Grace
+					["provider"] = { "n", 184537 },	-- Nadir
+					["coord"] = { 55, 50.3, ZERETH_MORTIS },
+				}),
+				q(65353, {	-- An Automa-free Diet
+					["sourceQuests"] = { 65349 },	-- Lost Grace
+					["provider"] = { "n", 184537 },	-- Nadir
+					["coord"] = { 55, 50.3, ZERETH_MORTIS },
+				}),
+				q(65448, {	--  A Return to Grace
+					["sourceQuests"] = { 65350 },	-- Restore the Flow
+					["provider"] = { "o", 375283 },	-- Percolation Array
+					["coord"] = { 74.1, 69, 2028 },
+					["g"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
+						i(188026),	-- Anthemic Bracers
+						i(188012),	-- Choral Wraps
+						i(188034),	-- Harmonium Vambrace
+						i(188018),	-- Staccato Cuffs
 					}),
-					q(65349, {	-- Lost Grace
-						["sourceQuests"] = { 65463 },	-- The Wellspring of the First Ones (MIGHT BE SHAMAN ONLY?!) Might be Breadcrumb!
-						["provider"] = { "n", 182146 },	-- Olem
-						["coord"] = { 61.9, 53.5, ZERETH_MORTIS },
-					}),
-					q(65350, {	-- Restore the Flow
-						["sourceQuests"] = { 65349 },	-- Lost Grace
-						["provider"] = { "n", 184537 },	-- Nadir
-						["coord"] = { 55, 50.3, ZERETH_MORTIS },
-					}),
-					q(65353, {	-- An Automa-free Diet
-						["sourceQuests"] = { 65349 },	-- Lost Grace
-						["provider"] = { "n", 184537 },	-- Nadir
-						["coord"] = { 55, 50.3, ZERETH_MORTIS },
-					}),
-					q(65448, {	--  A Return to Grace
-						["sourceQuests"] = { 65350 },	-- Restore the Flow
-						["provider"] = { "o", 375283 },	-- Percolation Array
-						["coord"] = { 74.1, 69, 2028 },
-						["g"] = bubbleDown({["b"]=1},{	-- Quest reward versions are BoP
-							i(188026),	-- Anthemic Bracers
-							i(188012),	-- Choral Wraps
-							i(188034),	-- Harmonium Vambrace
-							i(188018),	-- Staccato Cuffs
-						}),
-					}),
-				},
+				}),
 			}),
 			header(HEADERS.Item, 188808, {	-- Patient Bufonid
 				q(65727, {	-- The Burrowed Bufonid
