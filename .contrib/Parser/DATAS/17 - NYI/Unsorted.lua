@@ -1097,17 +1097,15 @@ root(ROOTS.Unsorted, {
 				i(211397),	-- Attuned Rune of Shadowbinding
 				i(211398),	-- Attuned Sophic Vellum
 			}),
-			--n(PROFESSIONS, {
-			--}),
 			n(QUESTS, {
 				-- 10.2.0.51239
-				q(75272),	-- PTR:Test
+				q(75272),	-- Test
 				q(75610),	--
-				q(76161),	-- PTR:Conversation Testing [DNT]
-				q(76164),	-- PTR:Bovan's Last Hope
+				q(76161),	-- Conversation Testing [DNT]
+				q(76164),	-- Bovan's Last Hope
 				q(76167),	-- PTR:A Place of Refuge
 				q(76168),	-- PTR:A Place of Refuge
-				q(76201),	-- PTR:Clone Ownership Verification [DNT]
+				q(76201),	-- Clone Ownership Verification [DNT]
 				q(76259),	--
 				q(76346),	--
 				q(76349),	--
@@ -1118,12 +1116,12 @@ root(ROOTS.Unsorted, {
 				q(76541),	--
 				q(76542),	--
 				q(76543),	--
-				q(77101),	-- PTR:Ingredient Quest Template
+				q(77101),	-- Ingredient Quest Template
 				q(77161),	--
 				q(77162),	--
 				q(77177),	--
 				q(77196),	--
-				q(77201),	--
+				q(77201),	-- A Personal Offering
 				q(77319),	--
 				q(77320),	--
 				q(77321),	--
@@ -1166,7 +1164,6 @@ root(ROOTS.Unsorted, {
 				q(77752),	--
 				q(77753),	--
 				q(77758),	--
-				q(77762),	-- PTR:A Little Hope is Never without Worth
 				q(77770),	--
 				q(77772),	--
 				q(77773),	--
@@ -1174,7 +1171,7 @@ root(ROOTS.Unsorted, {
 				q(77812),	--
 				q(77814),	--
 				q(77828),	--
-				q(77832),	-- PTR:Shadows upon shadows
+				q(77832),	-- Shadows upon shadows
 				q(77847),	--
 				q(77917),	--
 				q(77918),	--
@@ -1185,14 +1182,14 @@ root(ROOTS.Unsorted, {
 				q(77991),	--
 				q(77992),	--
 				q(77995),	--
-				q(78040),	--
-				q(78047),	--
+				q(78040),	-- The Outland Cup Begins
+				q(78047),	-- The Outland Cup Circuit
 				q(78061),	--
 				q(78067),	--
 				q(78087),	--
 				q(78096),	-- PTR:A Silver Lining
 				q(78130),	--
-				q(78131),	-- PTR:A Winter Veil Gift
+				q(78131),	-- A Winter Veil Gift
 				q(78209),	--
 				q(78216),	--
 				q(78217),	--
@@ -1201,10 +1198,10 @@ root(ROOTS.Unsorted, {
 				q(78252),	--
 				q(78253),	--
 				q(78259),	--
-				q(78268),	-- PTR:[DNT] Test Quest
-				q(78301),	-- PTR:Skalawag Slither
-				q(78302),	-- PTR:Skalawag Slither - Advanced
-				q(78303),	-- PTR:Skalawag Slither - Reverse
+				q(78268),	-- [DNT] Test Quest
+				q(78301),	-- Scalawag Slither	 PTR:Skalawag Slither
+				q(78302),	-- Scalawag Slither - Advanced	 PTR:Skalawag Slither - Advanced
+				q(78303),	-- Scalawag Slither - Reverse	 PTR:Skalawag Slither - Reverse
 				q(78311),	--
 				q(78312),	--
 				q(78313),	--
@@ -1214,50 +1211,50 @@ root(ROOTS.Unsorted, {
 				q(78317),	--
 				q(78318),	--
 				q(78320),	--
-				q(78325),	-- PTR:Daggercap Dart
-				q(78326),	-- PTR:Daggercap Dart - Advanced
-				q(78327),	-- PTR:Daggercap Dart - Reverse
+				q(78325),	-- Daggercap Dart
+				q(78326),	-- Daggercap Dart - Advanced
+				q(78327),	-- Daggercap Dart - Reverse
 				q(78331),	--
-				q(78334),	-- PTR:Blackriver Burble
-				q(78335),	-- PTR:Blackriver Burble - Advanced
-				q(78336),	-- PTR:Blackriver Burble - Reverse
-				q(78346),	-- PTR:Gundrak Fast Track
-				q(78347),	-- PTR:Gundrak Fast Track - Advanced
-				q(78349),	-- PTR:Gundrak Fast Track - Reverse
-				q(78355),	-- PTR:Essence of a Broken Dream
+				q(78334),	-- Blackriver Burble
+				q(78335),	-- Blackriver Burble - Advanced
+				q(78336),	-- Blackriver Burble - Reverse
+				q(78346),	-- Gundrak Fast Track
+				q(78347),	-- Gundrak Fast Track - Advanced
+				q(78349),	-- Gundrak Fast Track - Reverse
+				q(78355),	-- Essence of a Broken Dream
 				q(78357),	--
 				q(78362),	--
 				q(78366),	--
-				q(78372),	-- PTR:Drake's Dreaming Crest
-				q(78373),	--
-				q(78374),	-- PTR:Flightstones
+				q(78372),	-- Drake's Dreaming Crest
+				q(78373),	-- The Dream Thanks You
+				q(78374),	-- Flightstones
 				q(78377),	--
 				q(78380),	--
-				q(78388),	-- PTR:Gigantic Dreamseeds
-				q(78389),	-- PTR:Maker's Marathon
-				q(78390),	-- PTR:Maker's Marathon - Advanced
-				q(78391),	-- PTR:Maker's Marathon - Reverse
+				q(78388),	-- Gigantic Dreamseeds
+				q(78389),	-- The Makers' Marathon	 PTR:Maker's Marathon
+				q(78390),	-- The Makers' Marathon - Advanced	 PTR:Maker's Marathon - Advanced
+				q(78391),	-- The Makers' Marathon - Reverse	 PTR:Maker's Marathon - Reverse
 				q(78420),	--
-				q(78421),	-- PTR:The Power of Dreams
+				q(78421),	-- The Power of Dreams
 				q(78423),	--
 				q(78429),	--
 				q(78432),	--
 				q(78433),	--
-				q(78441),	-- PTR:Crystalsong Crisis
-				q(78442),	-- PTR:Crystalsong Crisis - Advanced
-				q(78443),	-- PTR:Crystalsong Crisis - Reverse
+				q(78441),	-- Crystalsong Crisis
+				q(78442),	-- Crystalsong Crisis - Advanced
+				q(78443),	-- Crystalsong Crisis - Reverse
 				q(78445),	--
-				q(78454),	-- PTR:Dragonblight Dragon Flight
-				q(78455),	-- PTR:Dragonblight Dragon Flight - Advanced
-				q(78456),	-- PTR:Dragonblight Dragon Flight - Reverese
-				q(78499),	-- PTR:Citadel Sortie
-				q(78500),	-- PTR:Citadel Sortie - Advanced
-				q(78501),	-- PTR:Citadel Sortie - Reverse
-				q(78504),	-- PTR:A Gently Shaken Gift
+				q(78454),	-- Dragonblight Dragon Flight
+				q(78455),	-- Dragonblight Dragon Flight - Advanced
+				q(78456),	-- Dragonblight Dragon Flight - Reverese
+				q(78499),	-- Citadel Sortie
+				q(78500),	-- Citadel Sortie - Advanced
+				q(78501),	-- Citadel Sortie - Reverse
+				q(78504),	-- A Gently Shaken Gift
 				q(78554),	--
-				q(78558),	-- PTR:Sholazar Spree
-				q(78559),	-- PTR:Sholazar Spree - Advanced
-				q(78560),	-- PTR:Sholazar Spree - Reverse
+				q(78558),	-- Sholazar Spree
+				q(78559),	-- Sholazar Spree - Advanced
+				q(78560),	-- Sholazar Spree - Reverse
 				q(78566),	--
 				q(78567),	--
 				q(78568),	--
@@ -1265,25 +1262,25 @@ root(ROOTS.Unsorted, {
 				q(78576),	--
 				q(78577),	--
 				q(78578),	--
-				q(78581),	-- PTR:Dragon Isles Supplies
-				q(78582),	-- PTR:Dragon Isles Supplies
-				q(78583),	-- PTR:Dragon Isles Supplies
-				q(78584),	-- PTR:Dragon Isles Supplies
-				q(78585),	--
-				q(78586),	--
-				q(78587),	--
-				q(78588),	--
+				q(78581),	-- Dragon Isles Supplies
+				q(78582),	-- Dragon Isles Supplies
+				q(78583),	-- Dragon Isles Supplies
+				q(78584),	-- Dragon Isles Supplies
+				q(78585),	-- Dragon Isles Supplies
+				q(78586),	-- Dragon Isles Supplies
+				q(78587),	-- Dragon Isles Supplies
+				q(78588),	-- Dragon Isles Supplies
 				-- 10.2.0.51297
-				q(78595),	-- PTR:Dream Infused
+				q(78595),	-- Dream Infused
 				q(78599),	--
-				q(78600),	--
-				q(78601),	--
-				q(78602),	--
+				q(78600),	-- Amirdrassil, the Dream's Hope: Up in Smoke
+				q(78601),	-- Amirdrassil, the Dream's Hope: Up in Smoke
+				q(78602),	-- Amirdrassil, the Dream's Hope: Up in Smoke
 				-- 10.2.0.51425
 				q(78606),	--
-				q(78608),	-- PTR:Geothermal Jaunt
-				q(78609),	-- PTR:Geothermal Jaunt - Advanced
-				q(78610),	-- PTR:Geothermal Jaunt - Reverse
+				q(78608),	-- Geothermal Jaunt
+				q(78609),	-- Geothermal Jaunt - Advanced
+				q(78610),	-- Geothermal Jaunt - Reverse
 				q(78617),	--
 				q(78622),	--
 				q(78623),	--
@@ -1301,7 +1298,7 @@ root(ROOTS.Unsorted, {
 				q(78731),	--
 				q(78732),	--
 				q(78737),	--
-				q(78763),	-- PTR:Dragonflight (70) E
+				q(78763),	-- Dragonflight (70) E
 				q(78789),	--
 				q(78822),	--
 				q(78824),	--
@@ -1321,7 +1318,15 @@ root(ROOTS.Unsorted, {
 				-- 10.2.0.52038
 				q(77837),	--
 				q(78048),	--
+				-- 10.2.0.52095
+				q(76383),	--
+				q(78176),	--
+				-- 10.2.0.52188
+				q(76279),	--
+				q(78086),	--
+				q(79332),	--
 			}),
+			--]]
 		})),
 		tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			n(DRAKEWATCHER_MANUSCRIPTS, {

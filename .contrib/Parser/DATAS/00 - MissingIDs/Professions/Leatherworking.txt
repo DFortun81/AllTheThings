@@ -1,3 +1,6 @@
+1.15.0.52124
+r(429354),	-- Void-Touched Leather Gloves
+r(429869),	-- Void-Touched Leather Gauntlets
 3.0.1.8303
 r(45541),	--
 r(48038),	--
@@ -16,7 +19,7 @@ r(74493),	-- Savage Leather
 r(78421),	--
 r(78422),	--
 5.0.3.15890
-r(102366),	-- Exotic Leather
+r(102366),	-- Mist-Touched Leather \\ Exotic Leather
 7.3.0.24473
 r(163216),	-- Blackened Dragonscale
 r(163218),	-- Deepsea Scale
@@ -42,6 +45,9 @@ r(196425),	-- Stonehide Boot Base
 
 Missing in LeatherworkingItemDB.lua
 
+1.15.0.52124
+r(429354),	-- Void-Touched Leather Gloves
+r(429869),	-- Void-Touched Leather Gauntlets
 3.0.1.8303
 r(45541),	--
 r(48038),	--

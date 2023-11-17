@@ -1,0 +1,14 @@
+10.2.5.52206
+pet(4402),	-- Teele
+pet(4406),	-- Sarge
+
+
+
+
+Missing in PetDB.lua
+
+10.2.0.52095
+pet(4316),	-- Lil' Wrathion
+10.2.5.52206
+pet(4402),	-- Teele
+pet(4406),	-- Sarge

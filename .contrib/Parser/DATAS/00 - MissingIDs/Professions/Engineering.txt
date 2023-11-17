@@ -101,6 +101,8 @@ r(13166),	-- Battle Chicken
 r(13258),	-- Summon Goblin Bomb
 r(19804),	-- Arcanite Dragonling
 r(23070),	-- Dense Dynamite
+1.15.0.52124
+r(424641),	-- Shredder Autosalvage Unit
 2.0.0.6080
 r(30303),	-- Elemental Blasting Powder
 r(30304),	-- Fel Iron Casing
@@ -652,6 +654,8 @@ r(26428),	-- Large Red Rocket Cluster
 r(26442),	-- Firework Launcher
 r(26443),	-- Cluster Launcher \\ Firework Cluster Launcher
 r(28327),	-- Steam Tonk Controller
+1.15.0.52124
+r(424641),	-- Shredder Autosalvage Unit
 2.0.0.6080
 r(30303),	-- Elemental Blasting Powder
 r(30304),	-- Fel Iron Casing

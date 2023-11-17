@@ -9279,6 +9279,135 @@ s(165307)/i(24222),	-- Shadowfoot Stabber \\ The Shadowfoot Stabber
 s(165308)/i(171470),	--
 1.14.3.42926
 s(169660)/i(191481),	-- Tabard of Mastery
+1.15.0.52124
+s(184334)/i(202254),	--
+s(184335)/i(202256),	-- Privateer's Ornate Pistol
+s(185840)/i(204804),	--
+s(185841)/i(204807),	--
+s(185852)/i(204910),	-- Monster - Trident, Naga (Gold)
+s(189607)/i(208194),	--
+s(189612)/i(208222),	--
+s(189729)/i(208413),	--
+s(189733)/i(208422),	--
+s(189735)/i(208424),	--
+s(189773)/i(208483),	--
+s(189774)/i(208484),	--
+s(190111)/i(208740),	--
+s(190117)/i(208774),	--
+s(190750)/i(209418),	--
+s(190751)/i(209420),	--
+s(190752)/i(209424),	--
+s(190753)/i(209423),	--
+s(190754)/i(209421),	--
+s(190757)/i(209432),	--
+s(190758)/i(209436),	--
+s(190805)/i(209523),	--
+s(190806)/i(209524),	--
+s(190807)/i(209525),	--
+s(190808)/i(209526),	--
+s(190809)/i(209527),	--
+s(190816)/i(209534),	--
+s(190841)/i(209559),	--
+s(190842)/i(209560),	--
+s(190843)/i(209561),	--
+s(190844)/i(209562),	--
+s(190845)/i(209563),	--
+s(190846)/i(209564),	--
+s(190847)/i(209566),	--
+s(190848)/i(209567),	--
+s(190849)/i(209568),	--
+s(190850)/i(209569),	--
+s(190851)/i(209570),	--
+s(190852)/i(209571),	--
+s(190853)/i(209572),	--
+s(190854)/i(209573),	--
+s(190855)/i(209577),	--
+s(190856)/i(209578),	--
+s(190857)/i(209579),	--
+s(190858)/i(209580),	--
+s(190859)/i(209581),	--
+s(190867)/i(209590),	--
+s(190920)/i(209667),	--
+s(190921)/i(209669),	--
+s(190922)/i(209670),	--
+s(190923)/i(209671),	--
+s(190924)/i(209672),	--
+s(190925)/i(209674),	--
+s(190926)/i(209675),	--
+s(190927)/i(209676),	--
+s(190928)/i(209678),	--
+s(190929)/i(209679),	--
+s(190930)/i(209680),	--
+s(190931)/i(209682),	--
+s(190932)/i(209683),	--
+s(190933)/i(209684),	--
+s(190934)/i(209685),	--
+s(190935)/i(209687),	--
+s(190936)/i(209688),	--
+s(190937)/i(209689),	--
+s(190938)/i(209690),	--
+s(190939)/i(209691),	--
+s(190940)/i(209692),	--
+s(190941)/i(209694),	--
+s(191028)/i(209818),	--
+s(191029)/i(209822),	--
+s(191030)/i(209824),	--
+s(191031)/i(209828),	--
+s(191032)/i(209830),	--
+s(191033)/i(209842),	--
+s(193739)/i(210696),	--
+s(193786)/i(210741),	--
+s(193791)/i(210773),	--
+s(193792)/i(210781),	--
+s(193796)/i(210794),	--
+s(193797)/i(210795),	--
+s(194080)/i(211263),	-- Judgement Chestguard
+s(194121)/i(211423),	--
+s(194131)/i(211443),	--
+s(194132)/i(211444),	--
+s(194133)/i(211445),	--
+s(194134)/i(211455),	--
+s(194135)/i(211456),	--
+s(194136)/i(211457),	--
+s(194137)/i(211458),	--
+s(194138)/i(211460),	--
+s(194139)/i(211461),	--
+s(194140)/i(211463),	--
+s(194141)/i(211464),	--
+s(194142)/i(211465),	--
+s(194143)/i(211466),	--
+s(194144)/i(211468),	--
+s(194151)/i(211500),	--
+s(194152)/i(211501),	-- Chestguard of Might
+s(194153)/i(211502),	--
+s(194154)/i(211504),	--
+s(194155)/i(211505),	--
+s(194156)/i(211506),	--
+s(194157)/i(211507),	--
+s(194158)/i(211508),	--
+s(194159)/i(211509),	--
+s(194160)/i(211510),	--
+s(194161)/i(211511),	--
+s(194162)/i(211512),	--
+s(194422)/i(211789),	--
+s(194430)/i(211842),	--
+s(194431)/i(211843),	--
+s(194434)/i(211852),	--
+s(194435)/i(211856),	--
+s(194436)/i(211857),	--
+s(194481)/i(211925),	--
+s(194485)/i(211940),	--
+s(194486)/i(211941),	--
+s(194488)/i(211944),	--
+1.15.0.52186
+s(194909)/i(212580),	-- Lorekeeper's Staff
+s(194910)/i(212581),	-- Outrunner's Bow
+s(194911)/i(212582),	-- Protector's Sword
+s(194912)/i(212583),	-- Sentinel's Blade
+s(194913)/i(212584),	-- Advisor's Gnarled Staff
+s(194914)/i(212585),	-- Outrider's Bow
+s(194915)/i(212586),	-- Legionnaire's Sword
+s(194916)/i(212587),	-- Scout's Blade
 2.5.1.38043
 s(116764)/i(185976),	-- Communal Faceguard
 s(116768)/i(185977),	-- Communal Pauldrons
@@ -65328,14 +65457,6 @@ s(189576)/i(207248),	-- Mystic Heron's Burdens \\ 10.2 Raid - Emerald Dream - Cl
 s(189577)/i(207248),	-- Mystic Heron's Burdens \\ 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Leather - Chest
 s(189578)/i(207248),	-- Mystic Heron's Burdens \\ 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Leather - Chest
 s(189579)/i(207248),	-- Mystic Heron's Burdens \\ 10.2 Raid - Emerald Dream - Class Sets - Monk - Armor - Leather - Chest
-s(189739)/i(208429),	-- Mossen Rage Waistguard \\ 10.2 Raid - World Boss - Armor - Mail - WAIST 2
-s(189744)/i(208435),	-- Forgotten Jalgar's Girdle \\ 10.2 Raid - World Boss - Armor - Plate - WAIST 2 (War Art)
-s(189745)/i(208436),	-- Flame-Etched Breastplate \\ 10.2 Raid - World Boss - Armor - Plate - CHEST 2
-s(189746)/i(208437),	-- Crown of Freya's Chosen \\ 10.2 Raid - World Boss - Armor - Mail - HEAD 2
-s(189747)/i(208438),	-- Grasps of Awakened Fury \\ 10.2 Raid - World Boss - Armor - Leather - HAND 2
-s(189748)/i(208439),	-- Rousing Earth Striders \\ 10.2 Raid - World Boss - Armor - Leather - FEET 3
-s(189749)/i(208440),	-- Aurostor's Sleeping Knickers \\ 10.2 Raid - World Boss - Armor - Cloth - LEGS 2
-s(189750)/i(208441),	-- Restful Dozer's Shoes \\ 10.2 Raid - World Boss - Armor - Cloth - FEET 3
 s(189833)/i(208552),	--
 s(189989)/i(207276),	-- Cloak of Lunar Communion \\ 10.2 Raid - Emerald Dream - Class Sets - Priest - Armor - Generic - Cloak
 s(189990)/i(207276),	-- Cloak of Lunar Communion \\ 10.2 Raid - Emerald Dream - Class Sets - Priest - Armor - Generic - Cloak
@@ -66108,7 +66229,7 @@ s(192599)/i(207134),	-- Tasseted Emberwalkers \\ Leather - FEET 2
 s(192600)/i(207134),	-- Tasseted Emberwalkers \\ Leather - FEET 2
 s(192601)/i(207134),	-- Tasseted Emberwalkers \\ Leather - FEET 2
 s(192602)/i(207134),	-- Tasseted Emberwalkers \\ Leather - FEET 2
-s(192607)/i(208432),	-- Vengeful Bladebeak Girdle \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - WAIST 3
+s(192605)/i(208432),	-- Vengeful Bladebeak Girdle \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - WAIST 3
 s(192610)/i(208432),	-- Vengeful Bladebeak Girdle \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - WAIST 3
 s(192611)/i(208432),	-- Vengeful Bladebeak Girdle \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - WAIST 3
 s(192612)/i(208432),	-- Vengeful Bladebeak Girdle \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - WAIST 3
@@ -66129,7 +66250,7 @@ s(192654)/i(207132),	-- Frenzied Incarnate Legwraps \\ Leather - LEGS 1
 s(192655)/i(207132),	-- Frenzied Incarnate Legwraps \\ Leather - LEGS 1
 s(192656)/i(207132),	-- Frenzied Incarnate Legwraps \\ Leather - LEGS 1
 s(192657)/i(207132),	-- Frenzied Incarnate Legwraps \\ Leather - LEGS 1
-s(192662)/i(208420),	-- Visage of the Devouring Flame \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - HEAD 2
+s(192660)/i(208420),	-- Visage of the Devouring Flame \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - HEAD 2
 s(192665)/i(208420),	-- Visage of the Devouring Flame \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - HEAD 2
 s(192666)/i(208420),	-- Visage of the Devouring Flame \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - HEAD 2
 s(192667)/i(208420),	-- Visage of the Devouring Flame \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Leather - HEAD 2
@@ -66452,7 +66573,7 @@ s(193200)/i(207156),	-- Fused Obsidian Sabatons \\ Plate - FEET 2
 s(193201)/i(207156),	-- Fused Obsidian Sabatons \\ Plate - FEET 2
 s(193202)/i(207156),	-- Fused Obsidian Sabatons \\ Plate - FEET 2
 s(193203)/i(207156),	-- Fused Obsidian Sabatons \\ Plate - FEET 2
-s(193208)/i(208426),	-- Mask of the Unbidden Grim \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - HEAD 2
+s(193206)/i(208426),	-- Mask of the Unbidden Grim \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - HEAD 2
 s(193209)/i(208426),	-- Mask of the Unbidden Grim \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - HEAD 2
 s(193210)/i(208426),	-- Mask of the Unbidden Grim \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - HEAD 2
 s(193211)/i(208426),	-- Mask of the Unbidden Grim \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - HEAD 2
@@ -66493,7 +66614,7 @@ s(193299)/i(207157),	-- Smoldering Chevalier's Greatbelt \\ Plate - WAIST 2
 s(193300)/i(207157),	-- Smoldering Chevalier's Greatbelt \\ Plate - WAIST 2
 s(193301)/i(207157),	-- Smoldering Chevalier's Greatbelt \\ Plate - WAIST 2
 s(193302)/i(207157),	-- Smoldering Chevalier's Greatbelt \\ Plate - WAIST 2
-s(193307)/i(208427),	-- Insurgent Flame Warboots \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - FEET 3
+s(193305)/i(208427),	-- Insurgent Flame Warboots \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - FEET 3
 s(193308)/i(208427),	-- Insurgent Flame Warboots \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - FEET 3
 s(193309)/i(208427),	-- Insurgent Flame Warboots \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - FEET 3
 s(193310)/i(208427),	-- Insurgent Flame Warboots \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Plate - FEET 3
@@ -66578,7 +66699,7 @@ s(193436)/i(207143),	-- Twisted Flamecuffs \\ Mail - WRIST 1
 s(193437)/i(207143),	-- Twisted Flamecuffs \\ Mail - WRIST 1
 s(193438)/i(207143),	-- Twisted Flamecuffs \\ Mail - WRIST 1
 s(193439)/i(207143),	-- Twisted Flamecuffs \\ Mail - WRIST 1
-s(193442)/i(208428),	-- Mantle of Slumbering Sands \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - SHOULDER 2
+s(193440)/i(208428),	-- Mantle of Slumbering Sands \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - SHOULDER 2
 s(193443)/i(208428),	-- Mantle of Slumbering Sands \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - SHOULDER 2
 s(193444)/i(208428),	-- Mantle of Slumbering Sands \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - SHOULDER 2
 s(193445)/i(208428),	-- Mantle of Slumbering Sands \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - SHOULDER 2
@@ -66587,7 +66708,7 @@ s(193447)/i(208428),	-- Mantle of Slumbering Sands \\ 10.2 Raid - Emerald Dream 
 s(193448)/i(208428),	-- Mantle of Slumbering Sands \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - SHOULDER 2
 s(193449)/i(208428),	-- Mantle of Slumbering Sands \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - SHOULDER 2
 s(193450)/i(208428),	-- Mantle of Slumbering Sands \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - SHOULDER 2
-s(193453)/i(208434),	-- Sentinel's Gilded Poulaines \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - FEET 3
+s(193451)/i(208434),	-- Sentinel's Gilded Poulaines \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - FEET 3
 s(193456)/i(208434),	-- Sentinel's Gilded Poulaines \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - FEET 3
 s(193457)/i(208434),	-- Sentinel's Gilded Poulaines \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - FEET 3
 s(193458)/i(208434),	-- Sentinel's Gilded Poulaines \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Mail - FEET 3
@@ -66628,7 +66749,7 @@ s(193521)/i(207122),	-- Lost Scholar's Belted Treads \\ Cloth - FEET 1
 s(193522)/i(207122),	-- Lost Scholar's Belted Treads \\ Cloth - FEET 1
 s(193523)/i(207122),	-- Lost Scholar's Belted Treads \\ Cloth - FEET 1
 s(193524)/i(207122),	-- Lost Scholar's Belted Treads \\ Cloth - FEET 1
-s(193527)/i(208431),	-- Lost Scholar's Temporal Shoulderdials \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - SHOULDER 2
+s(193525)/i(208431),	-- Lost Scholar's Temporal Shoulderdials \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - SHOULDER 2
 s(193528)/i(208431),	-- Lost Scholar's Temporal Shoulderdials \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - SHOULDER 2
 s(193529)/i(208431),	-- Lost Scholar's Temporal Shoulderdials \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - SHOULDER 2
 s(193530)/i(208431),	-- Lost Scholar's Temporal Shoulderdials \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - SHOULDER 2
@@ -66657,7 +66778,7 @@ s(193570)/i(207121),	-- Vesture of the Smoldering Serpent \\ Cloth - CHEST 1
 s(193571)/i(207121),	-- Vesture of the Smoldering Serpent \\ Cloth - CHEST 1
 s(193572)/i(207121),	-- Vesture of the Smoldering Serpent \\ Cloth - CHEST 1
 s(193573)/i(207121),	-- Vesture of the Smoldering Serpent \\ Cloth - CHEST 1
-s(193576)/i(208430),	-- Whispering Fanged Cord \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - WAIST 3
+s(193574)/i(208430),	-- Whispering Fanged Cord \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - WAIST 3
 s(193577)/i(208430),	-- Whispering Fanged Cord \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - WAIST 3
 s(193578)/i(208430),	-- Whispering Fanged Cord \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - WAIST 3
 s(193579)/i(208430),	-- Whispering Fanged Cord \\ 10.2 Raid - Emerald Dream - Trash - BoE - Armor - Cloth - WAIST 3
@@ -66760,3 +66881,320 @@ s(193977)/i(211079),	--
 s(193978)/i(211079),	--
 10.2.0.51825
 s(194439)/i(211871),	--
+10.2.0.52095
+s(188881)/i(207728),	--
+10.2.0.52188
+s(190868)/i(209591),	-- Wristbands of Chosen Renewal
+s(190869)/i(209592),	-- Belt of Chosen Renewal
+s(190870)/i(209593),	-- Shoulders of Chosen Renewal
+s(190871)/i(209594),	-- Legguards of Chosen Renewal
+s(190872)/i(209595),	-- Crown of Chosen Renewal
+s(190873)/i(209596),	-- Grips of Chosen Renewal
+s(190874)/i(209597),	-- Anklets of Chosen Renewal
+s(190875)/i(209598),	-- Wraps of Chosen Renewal
+s(194079)/i(211260),	-- Crimson Gladiator's Spear
+10.2.5.52206
+s(165310)/i(187651),	-- Evoker Tunic
+s(165311)/i(187652),	-- Evoker Boots
+s(165312)/i(187653),	-- Evoker Gloves
+s(165313)/i(187654),	-- Evoker Coif
+s(165314)/i(187655),	-- Evoker Legwraps
+s(165315)/i(187656),	-- Evoker Pauldrons
+s(165316)/i(187657),	-- Evoker Belt
+s(165317)/i(187658),	-- Evoker Armbands
+s(189752)/i(208450),	-- Coiled Explorer's Rope
+s(189753)/i(208451),	-- Archivist's Buckled Cap
+s(189754)/i(208452),	-- Adventurer's Buckled Hat
+s(189755)/i(208453),	-- Explorer's Super Scooper
+s(189756)/i(208454),	-- Explorer's Mining Pick
+s(189757)/i(208455),	-- Explorer's Sturdy Hook
+s(189758)/i(208456),	-- Explorer's Hefty Pack
+s(189759)/i(208457),	-- Explorer's Spelunking Torch
+s(189760)/i(208458),	-- Explorer's Extravagant Lantern
+s(189761)/i(208459),	-- Explorer's Improvised Cudgel
+s(189762)/i(208470),	-- Greenstone Breastplate
+s(189763)/i(208471),	-- Sentinel's Chestpiece
+s(189764)/i(208472),	-- Greenstone Gauntlets
+s(189765)/i(208473),	-- Greenstone Boots
+s(189779)/i(208492),	-- Thunderpaw Gloves
+s(189780)/i(208493),	-- Spirit-Waker Gloves
+s(189781)/i(208494),	-- Spirit-Waker Robe
+s(189783)/i(208496),	-- Thunderpaw Tunic
+s(192897)/i(210258),	-- Scrollkeeper Handwraps
+s(192898)/i(210259),	-- Scrollkeeper Raiment
+s(192899)/i(210260),	-- Mistveil Handguards
+s(192900)/i(210261),	-- Mistveil Vest
+s(192901)/i(210263),	-- Sentinel's Gloves
+s(192902)/i(210264),	-- Sentinel's Warboots
+s(192904)/i(210266),	-- Greenstone Helm
+s(192905)/i(210267),	-- Jade Guardian's Chain Armor
+s(192906)/i(210268),	-- Spirit-Waker Treads
+s(192907)/i(210269),	-- Jade Guardian's Sabatons
+s(192908)/i(210270),	-- Thunderpaw Boots
+s(192909)/i(210271),	-- Jade Guardian's Gauntlets
+s(192910)/i(210272),	-- Spirit-Waker Crown
+s(192911)/i(210273),	-- Jade Guardian's Helm
+s(192912)/i(210274),	-- Thunderpaw Helm
+s(192913)/i(210275),	-- Greenstone Legguards
+s(192914)/i(210276),	-- Spirit-Waker Leggings
+s(192915)/i(210277),	-- Jade Guardian's Leggings
+s(192916)/i(210278),	-- Thunderpaw Breeches
+s(192917)/i(210279),	-- Thunderpaw Spaulders
+s(192918)/i(210280),	-- Greenstone Shoulders
+s(192919)/i(210281),	-- Spirit-Waker Mantle
+s(192920)/i(210282),	-- Jade Guardian's Monnion
+s(192921)/i(210283),	-- Greenstone Girdle
+s(192922)/i(210284),	-- Spirit-Waker Cord
+s(192923)/i(210285),	-- Jade Guardian's Belt
+s(192924)/i(210286),	-- Thunderpaw Belt
+s(192925)/i(210287),	-- Spirit-Waker Wristwraps
+s(192926)/i(210288),	-- Greenstone Bracers
+s(192927)/i(210289),	-- Jade Guardian's Bracers
+s(192928)/i(210290),	-- Thunderpaw Bracers
+s(192929)/i(210291),	-- Sentinel's Helmet
+s(192930)/i(210292),	-- Dawnwatcher's Ringmail
+s(192931)/i(210293),	-- Scrollkeeper Sandals
+s(192932)/i(210294),	-- Dawnwatcher's Footguards
+s(192933)/i(210295),	-- Mistveil Treads
+s(192934)/i(210296),	-- Dawnwatcher's Gloves
+s(192935)/i(210297),	-- Scrollkeeper Helm
+s(192936)/i(210298),	-- Dawnwatcher's Headguard
+s(192937)/i(210299),	-- Mistveil Cover
+s(192938)/i(210300),	-- Sentinel's Legplates
+s(192939)/i(210301),	-- Scrollkeeper Pants
+s(192940)/i(210302),	-- Dawnwatcher's Legguards
+s(192941)/i(210303),	-- Mistveil Legguards
+s(192942)/i(210304),	-- Mistveil Shoulders
+s(192943)/i(210305),	-- Sentinel's Spaulders
+s(192944)/i(210306),	-- Scrollkeeper Shoulderpads
+s(192945)/i(210307),	-- Dawnwatcher's Spaulder
+s(192946)/i(210308),	-- Sentinel's Belt
+s(192947)/i(210309),	-- Scrollkeeper Belt
+s(192948)/i(210310),	-- Dawnwatcher's Waistguard
+s(192949)/i(210311),	-- Mistveil Waistband
+s(192950)/i(210312),	-- Scrollkeeper Cuffs
+s(192951)/i(210313),	-- Sentinel's Vambraces
+s(192952)/i(210314),	-- Dawnwatcher's Bands
+s(192953)/i(210315),	-- Mistveil Bindings
+s(192957)/i(210333),	-- Jadeweave Cloak
+s(192958)/i(210334),	-- Dreadweave Cloak
+s(192959)/i(210335),	-- Jadestone Dagger
+s(192960)/i(210336),	-- Pandaren Rifle
+s(192961)/i(210337),	-- Rename Me Post Vertical
+s(192962)/i(210338),	-- Fogcutter Staff
+s(192963)/i(210339),	-- Timerunner's Staff
+s(192964)/i(210340),	-- Timerunner's Sword
+s(192965)/i(210341),	-- Rename Me Post Vertical
+s(192966)/i(210342),	-- Rubywrought Hewer
+s(192967)/i(210343),	-- Cerulean Crusher
+s(192968)/i(210344),	-- Timerunner's Mace
+s(193060)/i(210524),	-- Timerunning Cover
+s(193061)/i(210525),	-- Timerunner's Cloak
+s(193062)/i(210526),	-- Unraveling Tunic
+s(193063)/i(210527),	-- Timerunning Bracers
+s(193064)/i(210528),	-- Timerunning Belt
+s(193065)/i(210529),	-- Timerunning Boots
+s(193066)/i(210530),	-- Timerunning Pants
+s(193067)/i(210531),	-- Timerunnning Shoulderpads
+s(193068)/i(210532),	-- Timerunning Gloves
+s(193069)/i(210533),	-- Timerunning Staff
+s(193673)/i(210598),	-- Passionsilk Mitts
+s(193674)/i(210599),	-- Passionsilk Vestments
+s(193675)/i(210600),	-- Passionsilk Slippers
+s(193676)/i(210601),	-- Passionsilk Cap
+s(193677)/i(210602),	-- Passionsilk Trousers
+s(193678)/i(210603),	-- Passionsilk Amice
+s(193679)/i(210604),	-- Passionsilk Sash
+s(193680)/i(210605),	-- Passionsilk Bands
+s(193681)/i(210606),	-- Spiderhide Grips
+s(193682)/i(210607),	-- Spiderhide Jerkin
+s(193683)/i(210608),	-- Spiderhide Footpads
+s(193684)/i(210609),	-- Spiderhide Helmet
+s(193685)/i(210610),	-- Spiderhide Britches
+s(193686)/i(210611),	-- Spiderhide Shoulderpads
+s(193687)/i(210612),	-- Spiderhide Cinch
+s(193688)/i(210613),	-- Spiderhide Wristguards
+s(193689)/i(210614),	-- Reedstalker Chestguard
+s(193690)/i(210615),	-- Reedstalker Boots
+s(193691)/i(210616),	-- Reedstalker Grips
+s(193692)/i(210617),	-- Reedstalker Headpiece
+s(193693)/i(210618),	-- Reedstalker Greaves
+s(193694)/i(210619),	-- Reedstalker Shoulderguard
+s(193695)/i(210620),	-- Reedstalker Girdle
+s(193696)/i(210621),	-- Reedstalker Wristguards
+s(193697)/i(210622),	-- Shan'ze Chestplate
+s(193699)/i(210624),	-- Shan'ze Handguards
+s(193700)/i(210625),	-- Shan'ze Sabatons
+s(193701)/i(210626),	-- Shan'ze Greathelm
+s(193702)/i(210627),	-- Shan'ze Greaves
+s(193703)/i(210628),	-- Shan'ze Pauldrons
+s(193704)/i(210629),	-- Shan'ze Waistguard
+s(193705)/i(210630),	-- Shan'ze Armplates
+s(193707)/i(210634),	-- Dreadwood Bulwark
+s(193708)/i(210635),	-- Rename Me Post Vertical
+s(193709)/i(210636),	-- Timerunner's Shield
+s(193710)/i(210637),	-- Timerunner's Dagger
+s(193711)/i(210638),	-- Jadestone Greataxe
+s(193712)/i(210639),	-- Timerunner's Bow
+s(193713)/i(210640),	-- Crane's Beak Effigy
+s(193714)/i(210641),	-- Dawn Watcher's Spear
+s(193715)/i(210642),	-- Timerunner's Greatsword
+s(193716)/i(210643),	-- Mistspinner's Channel
+s(193824)/i(210884),	-- Timerunner's Breastplate
+s(193825)/i(210885),	-- Timerunner's Gauntlets
+s(193826)/i(210886),	-- Timerunner's Warboots
+s(193827)/i(210887),	-- Timerunner's Gloves
+s(193828)/i(210888),	-- Timerunner's Handwraps
+s(193829)/i(210889),	-- Timerunner's Robe
+s(193830)/i(210890),	-- Timerunner's Tunic
+s(193831)/i(210891),	-- Timerunner's Warhelm
+s(193832)/i(210892),	-- Timerunner's Chestguard
+s(193833)/i(210893),	-- Timerunner's Slippers
+s(193834)/i(210894),	-- Timerunner's Sabatons
+s(193835)/i(210895),	-- Timerunner's Boots
+s(193836)/i(210896),	-- Timerunner's Grips
+s(193837)/i(210897),	-- Timerunner's Hood
+s(193838)/i(210898),	-- Timerunner's Coif
+s(193839)/i(210899),	-- Timerunner's Helm
+s(193840)/i(210900),	-- Timerunner's Legplates
+s(193841)/i(210901),	-- Timerunner's Leggings
+s(193842)/i(210902),	-- Timerunner's Legguards
+s(193843)/i(210903),	-- Timerunner's Breeches
+s(193844)/i(210904),	-- Timerunner's Spaulders
+s(193845)/i(210905),	-- Timerunner's Pauldrons
+s(193846)/i(210906),	-- Timerunner's Amice
+s(193847)/i(210907),	-- Timerunner's Monnion
+s(193848)/i(210908),	-- Timerunner's Girdle
+s(193849)/i(210909),	-- Timerunner's Sash
+s(193850)/i(210910),	-- Timerunner's Chain
+s(193851)/i(210911),	-- Timerunner's Belt
+s(193852)/i(210912),	-- Timerunner's Wristwraps
+s(193853)/i(210913),	-- Timerunner's Armplates
+s(193854)/i(210914),	-- Timerunner's Bands
+s(193855)/i(210915),	-- Timerunner's Bracers
+s(194003)/i(211149),	-- Dawnwatcher's Warbow
+s(194004)/i(211151),	-- Serpentguard Crossbow
+s(194007)/i(211160),	-- Jade Grand Falchion
+s(194008)/i(211161),	-- Shan'ze Bonebreaker
+s(194009)/i(211162),	-- Tian Monastery Scimitar
+s(194010)/i(211163),	-- Tian Monastery Crescent
+s(194109)/i(211352),	-- Eternal Yellow Rose
+s(194110)/i(211354),	-- Eternal White Rose
+s(194111)/i(211355),	-- Eternal Pink Rose
+s(194113)/i(211357),	-- Eternal Orange Rose
+s(194114)/i(211358),	-- Eternal Blue Rose
+s(194115)/i(211359),	-- Eternal Black Rose
+s(194440)/i(211877),	-- Drake Racer's Scarf
+s(194441)/i(211881),	-- Outlandish Drake Racer's Helmet
+s(194442)/i(211882),	-- Outlandish Drake Racer's Shoulderpads
+s(194443)/i(211883),	-- Outlandish Drake Racer's Jersey
+s(194444)/i(211884),	-- Outlandish Drake Racer's Handwraps
+s(194445)/i(211885),	-- Outlandish Drake Racer's Belt
+s(194446)/i(211886),	-- Outlandish Drake Racer's Leggings
+s(194447)/i(211887),	-- Outlandish Drake Racer's Boots
+s(194448)/i(211888),	-- Outlandish Drake Racer's Scarf
+s(194482)/i(211926),	-- Riders of Azeroth Tabard
+s(194483)/i(211928),	-- Ruby Riders of Azeroth Tabard
+s(194487)/i(211939),	--
+s(194668)/i(212179),	-- Dreadlord's Shadowsbane Tunic
+s(194669)/i(212180),	-- Dreadlord's Shadowsbane Cloak
+s(194670)/i(212181),	-- Dreadlord's Shadowsbane Sabatons
+s(194671)/i(212182),	-- Dreadlord's Shadowsbane Grips
+s(194672)/i(212183),	-- Dreadlord's Shadowsbane Helm
+s(194673)/i(212184),	-- Dreadlord's Shadowsbane Breeches
+s(194674)/i(212185),	-- Dreadlord's Shadowsbane Shoulderpads
+s(194675)/i(212186),	-- Dreadlord's Shadowsbane Sash
+s(194676)/i(212187),	-- Dreadlord's Shadowsbane Wristbands
+s(194677)/i(212188),	-- Dreadlord's Venombane Tunic
+s(194678)/i(212189),	-- Dreadlord's Venombane Cloak
+s(194679)/i(212190),	-- Dreadlord's Venombane Sabatons
+s(194680)/i(212191),	-- Dreadlord's Venombane Grips
+s(194681)/i(212192),	-- Dreadlord's Venombane Helm
+s(194682)/i(212193),	-- Dreadlord's Venombane Breeches
+s(194683)/i(212194),	-- Dreadlord's Venombane Shoulderpads
+s(194684)/i(212195),	-- Dreadlord's Venombane Sash
+s(194685)/i(212196),	-- Dreadlord's Venombane Wristbands
+s(194686)/i(212197),	-- Love Witch's Blouse
+s(194687)/i(212198),	-- Love Witch's Boots
+s(194688)/i(212199),	-- Love Witch's Gloves
+s(194689)/i(212200),	-- Love Witch's Hat
+s(194690)/i(212201),	-- Love Witch's Skirt
+s(194691)/i(212202),	-- Love Witch's Shoulders
+s(194692)/i(212203),	-- Love Witch's Sash
+s(194693)/i(212204),	-- Sky Witch's Blouse
+s(194694)/i(212205),	-- Sky Witch's Boots
+s(194695)/i(212206),	-- Sky Witch's Gloves
+s(194696)/i(212207),	-- Sky Witch's Hat
+s(194697)/i(212208),	-- Sky Witch's Skirt
+s(194698)/i(212209),	-- Sky Witch's Shoulders
+s(194699)/i(212210),	-- Sky Witch's Sash
+s(194700)/i(212211),	-- Twilight Witch's Blouse
+s(194701)/i(212212),	-- Twilight Witch's Boots
+s(194702)/i(212213),	-- Twilight Witch's Gloves
+s(194703)/i(212214),	-- Twilight Witch's Hat
+s(194704)/i(212215),	-- Twilight Witch's Skirt
+s(194705)/i(212216),	-- Twilight Witch's Shoulders
+s(194706)/i(212217),	-- Twilight Witch's Sash
+s(194707)/i(212336),	-- The Tavern's Tabard
+s(194708)/i(212338),	-- DNT - Hearthstone - Loot - Hat (Needs Art)
+s(194709)/i(212342),	--
+s(194710)/i(212343),	--
+s(194719)/i(212369),	-- Heart-Shaped Back
+s(194720)/i(212372),	-- Magenta Masquerade Gloves
+s(194721)/i(212373),	-- Gossamer Magenta Gown
+s(194722)/i(212374),	-- Classic Rosy Tabard
+s(194723)/i(212375),	-- Lovely Rosy Longbow
+s(194724)/i(212376),	-- Lovely Gothic Longbow
+s(194725)/i(212377),	-- Love Witch's Rosy Wand
+s(194726)/i(212378),	-- Love Witch's Gothic Wand
+s(194727)/i(212379),	-- Love Witch's Rosy Staff
+s(194728)/i(212380),	-- Love Witch's Gothic Staff
+s(194729)/i(212381),	-- Love's Bulwark
+s(194730)/i(212382),	-- Flourescent Splitblade
+s(194891)/i(212530),	-- Teal Bulwark
+s(194892)/i(212532),	-- Reno's Hat
+s(194893)/i(212542),	-- Flowing Aquatic Gloves
+s(194894)/i(212543),	-- Gossamer Teal Gown
+s(194895)/i(212544),	-- Classic Aquatic Tabard
+s(194896)/i(212545),	-- Rosy Heart Crown
+s(194897)/i(212555),	-- Guise of the Royal Masquerade
+s(194898)/i(212556),	-- Guise of the Shining Masquerade
+s(194903)/i(212572),	-- Dueler's Rosy Shoulder Cape
+s(194904)/i(212573),	-- Dueler's Cloudy Shoulder Cape
+s(194905)/i(212574),	-- Dueler's Aquatic Shoulder Cape
+s(194906)/i(212576),	-- Champion's Violet Cleaver
+s(194907)/i(212578),	-- Quel'Serrar Skyborn Radiant Blade
+s(194908)/i(212579),	-- Quel'Serrar Skyborn Blade
+s(194920)/i(212591),	-- Mantle of Unrelenting Justice
+s(194921)/i(212592),	-- Treads of Unrelenting Justice
+s(194927)/i(212607),	-- Reno's Lucky Hat
+s(194929)/i(212610),	-- Wings of the Emerald Monarch
+s(194930)/i(212611),	-- Wings of the Tourmaline Monarch
+s(194931)/i(212612),	-- Wings of the Amethyst Monarch
+s(194932)/i(212613),	-- Wings of the Amber Monarch
+s(194933)/i(212614),	-- Dueler's Sunny Shoulder Cape
+s(194934)/i(212615),	-- Dueler's Snowy Shoulder Cape
+s(194935)/i(212616),	-- Dueler's Violet Shoulder Cape
+s(194936)/i(212617),	-- Dueler's Crimson Shoulder Cape
+s(194937)/i(212618),	-- Dueler's Plum Shoulder Cape
+s(194938)/i(212619),	-- Dueler's Carrot Shoulder Cape
+s(194939)/i(212620),	-- Dueler's Faded Shoulder Cape
+s(194940)/i(212621),	-- Dueler's Lively Shoulder Cape
+s(194941)/i(212622),	-- Dueler's Camo Shoulder Cape
+s(194942)/i(212623),	-- Dueler's Brick Shoulder Cape
+s(194943)/i(212624),	-- Dueler's Deep Shoulder Cape
+s(194944)/i(212625),	-- Dueler's Grassy Shoulder Cape
+s(194945)/i(212626),	-- Dueler's Sepia Shoulder Cape
+s(194946)/i(212627),	-- Dueler's Azure Shoulder Cape
+s(194947)/i(212628),	-- Dueler's Midnight Shoulder Cape
+s(194948)/i(212633),	-- [PH] Explorer Chest
+s(194949)/i(212634),	-- [PH] Explorer Gloves
+s(194950)/i(212635),	-- [PH] Explorer Waist
+s(194951)/i(212636),	-- [PH] Explorers Pants
+s(194952)/i(212637),	-- [PH] Explorer Boots
+s(194953)/i(212638),	-- [PH] Unearthed Chest
+s(194954)/i(212639),	-- [PH] Unearthed Gloves
+s(194955)/i(212640),	-- [PH] Unearthed Waist
+s(194956)/i(212641),	-- [PH] Unearthed Pants
+s(194957)/i(212642),	-- [PH] Unearthed Boots
+s(194958)/i(212644),	-- The Tavern's Belt
