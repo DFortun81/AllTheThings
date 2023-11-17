@@ -554,12 +554,12 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 					}),
 					n(QUESTS, {
 						q(77813, {	-- Lightning Strikes
-							-- ["provider"] = { "n",  },
-							-- ["coord"] = { 54.4, 23.7, },
+							["provider"] = { "n", 197478 },	-- Herald Flaps
 						}),
 						q(77815, {	-- The Storm Race Tour
-							-- ["provider"] = { "n",  },
-							-- ["coord"] = { 54.4, 23.7, },
+							["provider"] = { "n", 193359 },	-- Lord Andestrasz
+							["coord"] = { 75.2, 55.0, THE_WAKING_SHORES },
+							["sourceQuest"] = 77813,	-- Lightning Strikes
 							["g"] = {
 								i(209417, {	-- Ensemble: Thundering Stormrider's Attire
 									["questID"] = 78049,
