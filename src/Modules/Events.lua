@@ -141,7 +141,7 @@ end
 -- Event Helpers
 local CustomEventHelpers = {
 	[1271] = { 559,562,587,643,1056,1263 },	-- EVENTS.TIMEWALKING
-	[133701] = { 1395, 1400 },	-- EVENTS.DRAGONRIDING_CUP
+	[133701] = { 1395, 1400, 1407, 1429, 1430, 1431 },	-- EVENTS.DRAGONRIDING_CUP
 };
 setmetatable(EventInformation, { __index = function(t, id)
 	-- app.PrintDebug("EventInformation.__index",id)

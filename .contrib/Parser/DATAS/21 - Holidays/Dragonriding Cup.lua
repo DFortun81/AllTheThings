@@ -1883,20 +1883,31 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				}),
 			}),
 			n(QUESTS, {
-			-- TODO
-			-- 	q(, {	-- The Outland Cup Begins
-			-- 		["provider"] = { "n", 199261 },	-- Holiday Enthusiast
-			-- 		--["coord"] = { },
-			-- 		["isBreadcrumb"] = true,
-			-- 	}),
-			-- 	q(, {	-- The Outland Cup's Introduction
-			-- 		["sourceQuests"] = { 76429 },	-- The Outland Cup Begins
-			-- 		["provider"] = { "n", 206737 },	-- Lord Andestrasz
-			-- 		--["coord"] = { },
-			-- 		["g"] = {
-			-- 			currency(RIDERS_OF_AZEROTH_BADGE),
-			-- 		},
-			-- 	}),
+				q(78040, {	-- The Outland Cup Begins
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , ,  },
+					["isBreadcrumb"] = true,
+				}),
+				q(79127, {	-- The Outland Cup Begins
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , , },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(79128, {	-- The Outland Cup Begins
+					--["provider"] = { "n",  },	--
+					--["coord"] = { , ,  },
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+				}),
+				q(76426, {	-- The Outland Cup Circuit
+					["sourceQuests"] = { 78040, 79127, 79128 },	-- The Outland Cup Begins
+					--["provider"] = { "n", },	--
+					--["coord"] = { , , },
+					["g"] = {
+						currency(RIDERS_OF_AZEROTH_BADGE),
+					},
+				}),
 				dragonridingrace(77264, {	-- Auchindoun Coaster
 					["provider"] = { "n", 204092 },	-- Bronze Timekeeper
 					--["coord"] = { },
