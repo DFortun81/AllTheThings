@@ -20828,3 +20828,41 @@
 214346@@@Skylord Omnuron
 214347@@@Thisalee Crow
 214349@@@Tyrande Whisperwind
+10.2.5.52206
+204728@@@Thieving Dreadsquall
+204730@@@Ruby Observer
+205982@@@Reese
+207694@@@Abereth
+207698@@@Neltharion Agent
+207797@@@Tuskarr Merchant
+207801@@@Zaqali Quartermaster
+207814@@@[TEMPLATE] Critter Familiar - Guardian
+207972@@@Kaiana
+208077@@@Coalo
+208114@@@Raffles
+208139@@@Peikon
+208356@@@Nirobin's Spectacles
+208364@@@Zenata
+208775@@@Bujji
+208943@@@Reese
+208986@@@Atrenosh Hailstone
+208987@@@Scalecommander Viridia
+210073@@@Hap'he
+212148@@@Calia Menethil
+212301@@@[DNT] Zombie
+214051@@@Vyranoth
+214256@@@Heartseeker Moth
+214259@@@Heartseeker Mana Ray
+214286@@@Teele
+214540@@@Mia Greymane
+214851@@@Ebyssian
+214856@@@Sabellian
+214857@@@Merithra
+214859@@@Wrathion
+215565@@@[DNT] Pink Duckling
+216067@@@Shandris Feathermoon
+216068@@@Tyrande Whisperwind
+216179@@@Sarge
+216252@@@Scalecommander Azurathel
+216253@@@Scalecommander Cindrethresh
+216255@@@Scalecommander Emberthal

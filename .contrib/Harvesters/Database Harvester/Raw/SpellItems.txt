@@ -11486,3 +11486,25 @@
 7009@@@10.2.0 FX Testing - Enchant Visualt - Emerald Dream
 7032@@@Verdant Crush
 7052@@@|cnITEM_EPIC_COLOR:Incandescent Essence|r
+10.2.5.52206
+7055@@@+Haste
+7060@@@+Critical Strike
+7061@@@+Mastery
+7062@@@+Leech
+7063@@@+Speed
+7064@@@+Health Regen
+7072@@@+Critical Strike & +Haste
+7073@@@+Critical Strike & +Health Regen
+7074@@@+Critical Strike & +Leech
+7075@@@+Haste & +Health Regen
+7076@@@+Haste & +Leech
+7077@@@+Health Regen & +Leech
+7078@@@+Health Regen & +Mastery
+7079@@@+Health Regen & +Speed
+7080@@@+Leech & +Mastery
+7081@@@+Leech & +Speed
+7082@@@+Mastery & +Critical Strike
+7083@@@+Mastery & +Haste
+7084@@@+Mastery & +Speed
+7085@@@+Speed & +Critical Strike
+7086@@@+Speed & +Haste

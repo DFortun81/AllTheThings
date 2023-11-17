@@ -1747,3 +1747,18 @@
 417888@@@Algarian Stormrider
 10.2.0.52095
 424009@@@Runebound Firelord
+10.2.5.52206
+374204@@@Explorer's Stonehide Packbeast
+422588@@@Prototype Dynamic Ground Mount [DNT]
+423789@@@Prototype Dynamic BC Flight Mount [DNT]
+427777@@@Heartseeker Mana Ray
+430747@@@Soar
+430833@@@Soar
+431049@@@Grotto Netherwing Drake
+431050@@@Flourishing Whimsydrake
+431357@@@Fur-endship Fox
+431360@@@Twilight Sky Prowler
+431992@@@Compass Rose
+432455@@@Noble Flying Carpet
+432558@@@Majestic Azure Peafowl
+432610@@@PH Red Hornstrider

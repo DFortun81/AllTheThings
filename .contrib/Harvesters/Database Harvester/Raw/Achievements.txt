@@ -13381,3 +13381,106 @@
 18931@@@Storm Rider: Gold
 19027@@@Heroic Edition: Algarian Stormrider
 19030@@@Squally
+10.2.5.52206
+19400@@@Support Your Local Artisans
+19508@@@Love Language Expert
+19582@@@Blackriver Burble: Bronze
+19583@@@Blackriver Burble: Silver
+19584@@@Blackriver Burble: Gold
+19585@@@Blackriver Burble Advanced: Bronze
+19586@@@Blackriver Burble Advanced: Silver
+19587@@@Blackriver Burble Advanced: Gold
+19588@@@Blackriver Burble Reverse: Bronze
+19589@@@Blackriver Burble Reverse: Silver
+19590@@@Blackriver Burble Reverse: Gold
+19591@@@Zul'Drak Zephyr: Bronze
+19592@@@Zul'Drak Zephyr: Silver
+19593@@@Zul'Drak Zephyr: Gold
+19594@@@Zul'Drak Zephyr Advanced: Bronze
+19595@@@Zul'Drak Zephyr Advanced: Silver
+19596@@@Zul'Drak Zephyr Advanced: Gold
+19597@@@Zul'Drak Zephyr Reverse: Bronze
+19598@@@Zul'Drak Zephyr Reverse: Silver
+19599@@@Zul'Drak Zephyr Reverse: Gold
+19600@@@Makers Marathon: Bronze
+19601@@@Makers Marathon: Silver
+19602@@@Makers Marathon: Gold
+19603@@@Makers Marathon Advanced: Bronze
+19604@@@Makers Marathon Advanced: Silver
+19605@@@Makers Marathon Advanced: Gold
+19606@@@Makers Marathon Reverse: Bronze
+19607@@@Makers Marathon Reverse: Silver
+19608@@@Makers Marathon Reverse: Gold
+19609@@@Crystalsong Crisis: Bronze
+19610@@@Crystalsong Crisis: Silver
+19611@@@Crystalsong Crisis: Gold
+19612@@@Crystalsong Crisis Advanced: Bronze
+19613@@@Crystalsong Crisis Advanced: Silver
+19614@@@Crystalsong Crisis Advanced: Gold
+19615@@@Crystalsong Crisis Reverse: Bronze
+19616@@@Crystalsong Crisis Reverse: Silver
+19617@@@Crystalsong Crisis Reverse: Gold
+19618@@@Dragonblight Dragon Flight: Bronze
+19619@@@Dragonblight Dragon Flight: Silver
+19620@@@Dragonblight Dragon Flight: Gold
+19621@@@Dragonblight Dragon Flight Advanced: Bronze
+19622@@@Dragonblight Dragon Flight Advanced: Silver
+19623@@@Dragonblight Dragon Flight Advanced: Gold
+19624@@@Dragonblight Dragon Flight Reverse: Bronze
+19625@@@Dragonblight Dragon Flight Reverse: Silver
+19626@@@Dragonblight Dragon Flight Reverse: Gold
+19627@@@Citadel Sortie: Bronze
+19628@@@Citadel Sortie: Silver
+19629@@@Citadel Sortie: Gold
+19630@@@Citadel Sortie Advanced: Bronze
+19631@@@Citadel Sortie Advanced: Silver
+19632@@@Citadel Sortie Advanced: Gold
+19633@@@Citadel Sortie Reverse: Bronze
+19634@@@Citadel Sortie Reverse: Silver
+19635@@@Citadel Sortie Reverse: Gold
+19636@@@Sholazar Spree: Bronze
+19637@@@Sholazar Spree: Silver
+19638@@@Sholazar Spree: Gold
+19639@@@Sholazar Spree Advanced: Bronze
+19640@@@Sholazar Spree Advanced: Silver
+19641@@@Sholazar Spree Advanced: Gold
+19642@@@Sholazar Spree Reverse: Bronze
+19643@@@Sholazar Spree Reverse: Silver
+19644@@@Sholazar Spree Reverse: Gold
+19647@@@Geothermal Jaunt: Bronze
+19648@@@Geothermal Jaunt: Silver
+19649@@@Geothermal Jaunt: Gold
+19650@@@Geothermal Jaunt Advanced: Bronze
+19651@@@Geothermal Jaunt Advanced: Silver
+19652@@@Geothermal Jaunt Advanced: Gold
+19653@@@Geothermal Jaunt Reverse: Bronze
+19654@@@Geothermal Jaunt Reverse: Silver
+19655@@@Geothermal Jaunt Reverse: Gold
+19656@@@Gundrak Fast Track: Bronze
+19657@@@Gundrak Fast Track: Silver
+19658@@@Gundrak Fast Track: Gold
+19659@@@Gundrak Fast Track Advanced: Bronze
+19660@@@Gundrak Fast Track Advanced: Silver
+19661@@@Gundrak Fast Track Advanced: Gold
+19662@@@Gundrak Fast Track Reverse: Bronze
+19663@@@Gundrak Fast Track Reverse: Silver
+19664@@@Gundrak Fast Track Reverse: Gold
+19665@@@Coldarra Climb: Bronze
+19666@@@Coldarra Climb: Silver
+19667@@@Coldarra Climb: Gold
+19668@@@Coldarra Climb Advanced: Bronze
+19669@@@Coldarra Climb Advanced: Silver
+19670@@@Coldarra Climb Advanced: Gold
+19671@@@Coldarra Climb Reverse: Bronze
+19672@@@Coldarra Climb Reverse: Silver
+19673@@@Coldarra Climb Reverse: Gold
+19674@@@Northrend: Bronze
+19675@@@Northrend: Silver
+19676@@@Northrend: Gold
+19677@@@Northrend Advanced: Bronze
+19679@@@Northrend Advanced: Silver
+19681@@@Northrend Advanced: Gold
+19682@@@Northrend Reverse: Bronze
+19683@@@Northrend Reverse: Silver
+19684@@@Northrend Reverse: Gold
+19685@@@The Archives Called, You Answered
