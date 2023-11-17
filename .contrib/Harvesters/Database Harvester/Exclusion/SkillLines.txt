@@ -198,6 +198,9 @@
 754@@@Racial - Human
 270@@@Pet - Generic
 758@@@Pet - Event - Remote Control
+2851@@@Engraving
+2853@@@Runes
+2885@@@Meditation
 756@@@Blood Elf Racial
 759@@@Language: Draenei
 760@@@Draenei Racial
