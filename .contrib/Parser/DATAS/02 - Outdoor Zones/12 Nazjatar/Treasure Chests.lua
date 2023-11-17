@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				i(170198, {	-- Eternal Palace Dining Set (TOY!)
 					["description"] = "Obtained from the 12th |cFFFFD700Arcane Chest|r you open.",
 					["g"] = {
-						crit(25, {	-- Eternal Palace Dining Set
+						crit(46075, {	-- Eternal Palace Dining Set
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					},

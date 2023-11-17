@@ -9,11 +9,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["collectible"] = false,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(4, {	-- Gonk Respected
+					crit(41498, {	-- Gonk Respected
 						["coord"] = { 49.2, 44.3, ZULDAZAR },
 						["cr"] = 129740,	-- Gonk
 					}),
-					crit(6, {	-- Jani Respected
+					crit(41500, {	-- Jani Respected
 						["sourceQuests"] = {
 							51145,	-- Curse of Jani (A)
 							47442,	-- Curse of Jani (H)
@@ -21,11 +21,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 						["coord"] = { 35.4, 7.81, DAZARALOR },
 						["cr"] = 126334,	-- Jani
 					}),
-					crit(7, {	-- Pa'ku Respected
+					crit(41501, {	-- Pa'ku Respected
 						["coord"] = { 71.5, 49.4, ZULDAZAR },
 						["cr"] = 127377,	-- Pa'ku
 					}),
-					crit(8, {	-- Rezan Respected
+					crit(41502, {	-- Rezan Respected
 						["coord"] = { 70.8, 29.8, ZULDAZAR },
 						["cr"] = 124948,	-- Rezan
 					}),

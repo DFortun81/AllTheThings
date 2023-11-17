@@ -54,7 +54,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			crit(61668, {	-- Drums of Fury
 				["provider"] = { "i", 120257 },	-- Drums of Fury
 			}),
-			crit(10, {	-- Drums of the Mountain
+			crit(61669, {	-- Drums of the Mountain
 				["provider"] = { "i", 142406 },	-- Drums of the Mountain
 			}),
 			crit(61672, {	-- Drums of the Maelstrom
@@ -63,7 +63,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			crit(61673, {	-- Drums of Deathly Ferocity
 				["provider"] = { "i", 172233 },	-- Drums of Deathly Ferocity
 			}),
-			crit(13, {	-- Feral Hide Drums
+			crit(61675, {	-- Feral Hide Drums
 				["provider"] = { "i", 193470 },	-- Feral Hide Drums
 			}),
 		}),

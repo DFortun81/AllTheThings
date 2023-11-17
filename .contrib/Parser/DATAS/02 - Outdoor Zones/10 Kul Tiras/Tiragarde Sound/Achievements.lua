@@ -77,15 +77,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13280, {	-- Hobbyist Aquarist
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
+							crit(43598, {	-- Kwint
 								["creatureID"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
+							crit(43599, {	-- Delia Hanako
 								["creatureID"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
+							crit(43600, {	-- Burly
 								["creatureID"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
@@ -94,15 +94,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13270, {	-- Beast Mode
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
+							crit(43618, {	-- Kwint
 								["creatureID"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
+							crit(43619, {	-- Delia Hanako
 								["creatureID"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
+							crit(43620, {	-- Burly
 								["creatureID"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
@@ -111,15 +111,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13271, {	-- Critters with Huge Teeth
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
+							crit(43639, {	-- Kwint
 								["creatureID"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
+							crit(43640, {	-- Delia Hanako
 								["creatureID"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
+							crit(43641, {	-- Burly
 								["creatureID"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
@@ -128,15 +128,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13272, {	-- Dragons Make Everything Better
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
+							crit(43659, {	-- Kwint
 								["creatureID"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
+							crit(43660, {	-- Delia Hanako
 								["creatureID"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
+							crit(43661, {	-- Burly
 								["creatureID"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
@@ -145,15 +145,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13273, {	-- Element of Success
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
+							crit(43678, {	-- Kwint
 								["creatureID"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
+							crit(43679, {	-- Delia Hanako
 								["creatureID"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
+							crit(43689, {	-- Burly
 								["creatureID"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
@@ -162,15 +162,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13274, {	-- Fun With Flying
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
+							crit(43706, {	-- Kwint
 								["creatureID"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
+							crit(43707, {	-- Delia Hanako
 								["creatureID"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
+							crit(43708, {	-- Burly
 								["creatureID"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
@@ -179,15 +179,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13281, {	-- Human Resources
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
+							crit(43728, {	-- Kwint
 								["creatureID"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
+							crit(43729, {	-- Delia Hanako
 								["creatureID"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
+							crit(43730, {	-- Burly
 								["creatureID"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
@@ -196,15 +196,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13275, {	-- Magician's Secrets
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
+							crit(43747, {	-- Kwint
 								["creatureID"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
+							crit(43748, {	-- Delia Hanako
 								["creatureID"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
+							crit(43749, {	-- Burly
 								["creatureID"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
@@ -213,15 +213,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13277, {	-- Machine Learning
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
+							crit(43766, {	-- Kwint
 								["creatureID"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
+							crit(43767, {	-- Delia Hanako
 								["creatureID"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
+							crit(43768, {	-- Burly
 								["creatureID"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),
@@ -230,15 +230,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13278, {	-- Not Quite Dead Yet
 						["collectible"] = false,
 						["g"] = {
-							crit(8, {	-- Kwint
+							crit(43785, {	-- Kwint
 								["creatureID"] = 141077,	-- Kwint
 								["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
 							}),
-							crit(9, {	-- Delia Hanako
+							crit(43786, {	-- Delia Hanako
 								["creatureID"] = 141292,	-- Delia Hanako
 								["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
 							}),
-							crit(10, {	-- Burly
+							crit(43787, {	-- Burly
 								["creatureID"] = 141479,	-- Burly
 								["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
 							}),

@@ -15,6 +15,7 @@ root(ROOTS.ExpansionFeatures,
 								h(i(116201)),	-- Goblin Workshop, Level 3 [Blueprints]
 								crit(26627),		-- Robo-Rooster
 								crit(26628),		-- Sticky Grenade
+								-- TODO: The criteria indexes used here will need to be replaced by a criteriaUID, but they're a complex mess and so I don't even know how :(
 								crit(3),			-- Pneumatic Power Gauntlet
 								crit(4),			-- Prototype Mekgineer's Chopper
 								crit(26631),		-- "Skyterror" Personal Delivery System

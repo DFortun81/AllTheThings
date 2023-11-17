@@ -73,12 +73,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["collectible"] = false,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(2, {	--  Port of Zuldazar
+					crit(40025, {	--  Port of Zuldazar
 						["sourceQuests"] = { 50881 },	-- Royal Report
 					}),
-					crit(6, {	-- The Zanchuli Council
+					crit(37954, {	-- The Zanchuli Council
 						["sourceQuests"] = {	-- whichever one you pick
 							47439,	-- Gonk, Lord of the Pack
+						},
+					}),
+					crit(37953, {	-- The Zanchuli Council
+						["sourceQuests"] = {	-- whichever one you pick
 							47440,	-- Pa'ku, Master of Winds
 						},
 					}),

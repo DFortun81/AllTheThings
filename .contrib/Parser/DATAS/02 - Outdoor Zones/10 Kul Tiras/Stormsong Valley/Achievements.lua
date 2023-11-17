@@ -22,15 +22,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13280, {	-- Hobbyist Aquarist
 						["collectible"] = false,
 						["g"] = {
-							crit(2, {	-- Eddie Fixit
+							crit(43592, {	-- Eddie Fixit
 								["creatureID"] = 140315,	-- Eddie Fixit
 								["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 							}),
-							crit(6, {	-- Ellie Vern
+							crit(43596, {	-- Ellie Vern
 								["creatureID"] = 141002,	-- Ellie Vern
 								["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 							}),
-							crit(7, {	-- Leana Darkwind
+							crit(43597, {	-- Leana Darkwind
 								["creatureID"] = 141046,	-- Leana Darkwind
 								["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 							}),
@@ -39,15 +39,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13270, {	-- Beast Mode
 						["collectible"] = false,
 						["g"] = {
-							crit(2, {	-- Eddie Fixit
+							crit(43612, {	-- Eddie Fixit
 								["creatureID"] = 140315,	-- Eddie Fixit
 								["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 							}),
-							crit(6, {	-- Ellie Vern
+							crit(43616, {	-- Ellie Vern
 								["creatureID"] = 141002,	-- Ellie Vern
 								["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 							}),
-							crit(7, {	-- Leana Darkwind
+							crit(43617, {	-- Leana Darkwind
 								["creatureID"] = 141046,	-- Leana Darkwind
 								["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 							}),
@@ -56,15 +56,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13271, {	-- Critters with Huge Teeth
 						["collectible"] = false,
 						["g"] = {
-							crit(2, {	-- Eddie Fixit
+							crit(43632, {	-- Eddie Fixit
 								["creatureID"] = 140315,	-- Eddie Fixit
 								["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 							}),
-							crit(6, {	-- Ellie Vern
+							crit(43636, {	-- Ellie Vern
 								["creatureID"] = 141002,	-- Ellie Vern
 								["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 							}),
-							crit(7, {	-- Leana Darkwind
+							crit(43638, {	-- Leana Darkwind
 								["creatureID"] = 141046,	-- Leana Darkwind
 								["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 							}),
@@ -73,15 +73,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13272, {	-- Dragons Make Everything Better
 						["collectible"] = false,
 						["g"] = {
-							crit(2, {	-- Eddie Fixit
+							crit(43653, {	-- Eddie Fixit
 								["creatureID"] = 140315,	-- Eddie Fixit
 								["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 							}),
-							crit(6, {	-- Ellie Vern
+							crit(43657, {	-- Ellie Vern
 								["creatureID"] = 141002,	-- Ellie Vern
 								["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 							}),
-							crit(7, {	-- Leana Darkwind
+							crit(43658, {	-- Leana Darkwind
 								["creatureID"] = 141046,	-- Leana Darkwind
 								["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 							}),
@@ -90,15 +90,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13273, {	-- Element of Success
 						["collectible"] = false,
 						["g"] = {
-							crit(2, {	-- Eddie Fixit
+							crit(43672, {	-- Eddie Fixit
 								["creatureID"] = 140315,	-- Eddie Fixit
 								["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 							}),
-							crit(6, {	-- Ellie Vern
+							crit(43676, {	-- Ellie Vern
 								["creatureID"] = 141002,	-- Ellie Vern
 								["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 							}),
-							crit(7, {	-- Leana Darkwind
+							crit(43677, {	-- Leana Darkwind
 								["creatureID"] = 141046,	-- Leana Darkwind
 								["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 							}),
@@ -107,15 +107,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13274, {	-- Fun With Flying
 						["collectible"] = false,
 						["g"] = {
-							crit(2, {	-- Eddie Fixit
+							crit(43700, {	-- Eddie Fixit
 								["creatureID"] = 140315,	-- Eddie Fixit
 								["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 							}),
-							crit(6, {	-- Ellie Vern
+							crit(43704, {	-- Ellie Vern
 								["creatureID"] = 141002,	-- Ellie Vern
 								["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 							}),
-							crit(7, {	-- Leana Darkwind
+							crit(43705, {	-- Leana Darkwind
 								["creatureID"] = 141046,	-- Leana Darkwind
 								["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 							}),
@@ -124,15 +124,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13281, {	-- Human Resources
 						["collectible"] = false,
 						["g"] = {
-							crit(2, {	-- Eddie Fixit
+							crit(43722, {	-- Eddie Fixit
 								["creatureID"] = 140315,	-- Eddie Fixit
 								["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 							}),
-							crit(6, {	-- Ellie Vern
+							crit(43726, {	-- Ellie Vern
 								["creatureID"] = 141002,	-- Ellie Vern
 								["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 							}),
-							crit(7, {	-- Leana Darkwind
+							crit(43727, {	-- Leana Darkwind
 								["creatureID"] = 141046,	-- Leana Darkwind
 								["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 							}),
@@ -141,15 +141,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13275, {	-- Magician's Secrets
 						["collectible"] = false,
 						["g"] = {
-							crit(2, {	-- Eddie Fixit
+							crit(43741, {	-- Eddie Fixit
 								["creatureID"] = 140315,	-- Eddie Fixit
 								["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 							}),
-							crit(6, {	-- Ellie Vern
+							crit(44012, {	-- Ellie Vern
 								["creatureID"] = 141002,	-- Ellie Vern
 								["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 							}),
-							crit(7, {	-- Leana Darkwind
+							crit(43746, {	-- Leana Darkwind
 								["creatureID"] = 141046,	-- Leana Darkwind
 								["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 							}),
@@ -158,15 +158,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13277, {	-- Machine Learning
 						["collectible"] = false,
 						["g"] = {
-							crit(2, {	-- Eddie Fixit
+							crit(43760, {	-- Eddie Fixit
 								["creatureID"] = 140315,	-- Eddie Fixit
 								["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 							}),
-							crit(6, {	-- Ellie Vern
+							crit(43764, {	-- Ellie Vern
 								["creatureID"] = 141002,	-- Ellie Vern
 								["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 							}),
-							crit(7, {	-- Leana Darkwind
+							crit(43765, {	-- Leana Darkwind
 								["creatureID"] = 141046,	-- Leana Darkwind
 								["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 							}),
@@ -175,15 +175,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					ach(13278, {	-- Not Quite Dead Yet
 						["collectible"] = false,
 						["g"] = {
-							crit(2, {	-- Eddie Fixit
+							crit(43779, {	-- Eddie Fixit
 								["creatureID"] = 140315,	-- Eddie Fixit
 								["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
 							}),
-							crit(6, {	-- Ellie Vern
+							crit(43783, {	-- Ellie Vern
 								["creatureID"] = 141002,	-- Ellie Vern
 								["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
 							}),
-							crit(7, {	-- Leana Darkwind
+							crit(43784, {	-- Leana Darkwind
 								["creatureID"] = 141046,	-- Leana Darkwind
 								["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
 							}),

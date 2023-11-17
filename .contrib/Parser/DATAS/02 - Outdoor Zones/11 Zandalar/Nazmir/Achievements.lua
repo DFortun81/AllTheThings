@@ -292,7 +292,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			ach(13048, {	-- Life Finds a Way... To Die!
 				["collectible"] = false,
 				["g"] = {
-					crit(4, {		-- Makatau the Pterrordax slain
+					crit(41683, {		-- Makatau the Pterrordax slain
 						["coord"] = { 26.3, 73.3, NAZMIR },
 					}),
 				},

@@ -96,7 +96,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			crit(61706, {	-- Unbreakable Healing Amplifiers
 				["provider"] = { "i", 44949 },	-- Unbreakable Healing Amplifiers
 			}),
-			crit(27, {	-- Mechanized Snow Goggles
+			crit(61702, {	-- Mechanized Snow Goggles
 				["providers"] = {
 					-- TODO: Check This when doing Engi
 					{ "i", 41112 },	-- Mechanized Snow Goggles

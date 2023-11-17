@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				i(169352, {	-- Pearlescent Glimmershell (PET!)
 					["cost"] = { { "c", 1721, 150 }, },	-- 150x Prismatic Manapearl
 					["g"] = {
-						crit(6, {	-- Pearlescent Glimmershell
+						crit(45565, {	-- Pearlescent Glimmershell
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					},
@@ -308,7 +308,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				i(169352, {	-- Pearlescent Glimmershell (PET!)
 					["cost"] = { { "c", 1721, 150 }, },	-- 150x Prismatic Manapearl
 					["g"] = {
-						crit(6, {	-- Pearlescent Glimmershell
+						crit(45565, {	-- Pearlescent Glimmershell
 							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 						}),
 					},

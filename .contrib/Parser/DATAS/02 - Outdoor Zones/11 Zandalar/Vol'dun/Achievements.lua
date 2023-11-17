@@ -12,15 +12,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["collectible"] = false,
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					crit(3, {	-- Akunda respected
+					crit(41497, {	-- Akunda respected
 						["coord"] = { 53.1, 91.5, VOLDUN },
 						["cr"] = 128152,	-- Akunda
 					}),
-					crit(5, {	-- Kimbul respected
+					crit(41499, {	-- Kimbul respected
 						["coord"] = { 57.0, 10.8, VOLDUN },
 						["cr"] = 123052,	-- Kimbul
 					}),
-					crit(9, {	-- Avatar of Sethraliss respected
+					crit(41503, {	-- Avatar of Sethraliss respected
 						["coord"] = { 27.0, 52.5, VOLDUN },
 						["cr"] = 135210,	-- Avatar of Sethraliss
 					}),

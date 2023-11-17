@@ -675,7 +675,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }
 				["g"] = {
 					ach(6480),	-- Settle Down, Bro
 					ach(6709),	-- Sha of Anger Guild Run
-					crit(5, {	-- Sha of Anger slain
+					crit(19136, {	-- Sha of Anger slain
 						["achievementID"] = 6926,	-- Tranquil Master
 					}),
 					-- Mounts, Caches, and Quest Items!
