@@ -572,7 +572,499 @@ root(ROOTS.Unsorted, {
 		}),
 	}),
 	tier(DF_TIER, {
+		tier(DF_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+			i(21815),	-- Wrinkled Love Token
+			i(34258),	-- Lovely Fireworks
+			i(72120),	-- Mist-Touched Leather
+			i(141624),	-- Love Potion No. 13
+			i(163186),	-- Fiery Hearthsteed
+			i(192796),	-- Explorer's Stonehide Packbeast
+			i(199547),	-- Spine-Reinforced Spaulders
+			i(199549),	-- Depth Delver's Spaulders
+			i(199856),	-- Rustic Tuskarr Trader's Pack
+			i(199857),	-- Tan Tuskarr Trader's Pack
+			i(199858),	-- Dark Tuskarr Trader's Pack
+			i(199859),	-- Burgundy Tuskarr Trader's Pack
+			i(199883),	-- Tuskarr Sharktooth Bolt-Thrower
+			i(202247),	-- Technoscryers
+			i(203431),	-- Ensemble: Burden of Unrelenting Justice
+			i(205455),	-- Telescope Lens
+			i(207460),	-- Dreadsquall Eggshell Fragment
+			i(208084),	-- Technoscryers
+			i(208201),	-- Paper Scraps
+			i(208202),	-- Neltharion Agent Instructions
+			i(208450),	-- Coiled Explorer's Rope
+			i(208451),	-- Archivist's Buckled Cap
+			i(208452),	-- Adventurer's Buckled Hat
+			i(208453),	-- Explorer's Super Scooper
+			i(208454),	-- Explorer's Mining Pick
+			i(208455),	-- Explorer's Sturdy Hook
+			i(208456),	-- Explorer's Hefty Pack
+			i(208457),	-- Explorer's Spelunking Torch
+			i(208458),	-- Explorer's Extravagant Lantern
+			i(208459),	-- Explorer's Improvised Cudgel
+			i(208470),	-- Greenstone Breastplate
+			i(208471),	-- Sentinel's Chestpiece
+			i(208472),	-- Greenstone Gauntlets
+			i(208473),	-- Greenstone Boots
+			i(208487),	-- Stalwart Band
+			i(208489),	-- Ankh of Reincarnation
+			i(208491),	-- Theurgist's Seal
+			i(208492),	-- Thunderpaw Gloves
+			i(208493),	-- Spirit-Waker Gloves
+			i(208494),	-- Spirit-Waker Robe
+			i(208496),	-- Thunderpaw Tunic
+			i(208553),	-- Timerunner's Chalice
+			i(208554),	-- Chaos Brand
+			i(208555),	-- Blood of Mannoroth
+			i(208556),	-- Flicker Blossom
+			i(208822),	-- Infinite Hearthstone
+			i(210256),	-- Cloud-Rider Seal
+			i(210257),	-- Bamboo Band
+			i(210258),	-- Scrollkeeper Handwraps
+			i(210259),	-- Scrollkeeper Raiment
+			i(210260),	-- Mistveil Handguards
+			i(210261),	-- Mistveil Vest
+			i(210262),	-- Divine Prayer Beads
+			i(210263),	-- Sentinel's Gloves
+			i(210264),	-- Sentinel's Warboots
+			i(210266),	-- Greenstone Helm
+			i(210267),	-- Jade Guardian's Chain Armor
+			i(210268),	-- Spirit-Waker Treads
+			i(210269),	-- Jade Guardian's Sabatons
+			i(210270),	-- Thunderpaw Boots
+			i(210271),	-- Jade Guardian's Gauntlets
+			i(210272),	-- Spirit-Waker Crown
+			i(210273),	-- Jade Guardian's Helm
+			i(210274),	-- Thunderpaw Helm
+			i(210275),	-- Greenstone Legguards
+			i(210276),	-- Spirit-Waker Leggings
+			i(210277),	-- Jade Guardian's Leggings
+			i(210278),	-- Thunderpaw Breeches
+			i(210279),	-- Thunderpaw Spaulders
+			i(210280),	-- Greenstone Shoulders
+			i(210281),	-- Spirit-Waker Mantle
+			i(210282),	-- Jade Guardian's Monnion
+			i(210283),	-- Greenstone Girdle
+			i(210284),	-- Spirit-Waker Cord
+			i(210285),	-- Jade Guardian's Belt
+			i(210286),	-- Thunderpaw Belt
+			i(210287),	-- Spirit-Waker Wristwraps
+			i(210288),	-- Greenstone Bracers
+			i(210289),	-- Jade Guardian's Bracers
+			i(210290),	-- Thunderpaw Bracers
+			i(210291),	-- Sentinel's Helmet
+			i(210292),	-- Dawnwatcher's Ringmail
+			i(210293),	-- Scrollkeeper Sandals
+			i(210294),	-- Dawnwatcher's Footguards
+			i(210295),	-- Mistveil Treads
+			i(210296),	-- Dawnwatcher's Gloves
+			i(210297),	-- Scrollkeeper Helm
+			i(210298),	-- Dawnwatcher's Headguard
+			i(210299),	-- Mistveil Cover
+			i(210300),	-- Sentinel's Legplates
+			i(210301),	-- Scrollkeeper Pants
+			i(210302),	-- Dawnwatcher's Legguards
+			i(210303),	-- Mistveil Legguards
+			i(210304),	-- Mistveil Shoulders
+			i(210305),	-- Sentinel's Spaulders
+			i(210306),	-- Scrollkeeper Shoulderpads
+			i(210307),	-- Dawnwatcher's Spaulder
+			i(210308),	-- Sentinel's Belt
+			i(210309),	-- Scrollkeeper Belt
+			i(210310),	-- Dawnwatcher's Waistguard
+			i(210311),	-- Mistveil Waistband
+			i(210312),	-- Scrollkeeper Cuffs
+			i(210313),	-- Sentinel's Vambraces
+			i(210314),	-- Dawnwatcher's Bands
+			i(210315),	-- Mistveil Bindings
+			i(210318),	-- Chocolate Bon-Bomb
+			i(210332),	-- O.D.I.E.'s Remote Control
+			i(210333),	-- Jadeweave Cloak
+			i(210334),	-- Dreadweave Cloak
+			i(210335),	-- Jadestone Dagger
+			i(210336),	-- Pandaren Rifle
+			i(210337),	-- Rename Me Post Vertical
+			i(210338),	-- Fogcutter Staff
+			i(210339),	-- Timerunner's Staff
+			i(210340),	-- Timerunner's Sword
+			i(210341),	-- Rename Me Post Vertical
+			i(210342),	-- Rubywrought Hewer
+			i(210343),	-- Cerulean Crusher
+			i(210344),	-- Timerunner's Mace
+			i(210413),	-- Map of Shadowfang Keep Security
+			i(210416),	-- Formula: Intoxicating Toxic Perfume
+			i(210417),	-- Memo from Apothecary Hummel
+			i(210431),	-- Artisanal Bon-Bombs
+			i(210523),	-- Timerunning Neck
+			i(210524),	-- Timerunning Cover
+			i(210525),	-- Timerunner's Cloak
+			i(210526),	-- Unraveling Tunic
+			i(210527),	-- Timerunning Bracers
+			i(210528),	-- Timerunning Belt
+			i(210529),	-- Timerunning Boots
+			i(210530),	-- Timerunning Pants
+			i(210531),	-- Timerunnning Shoulderpads
+			i(210532),	-- Timerunning Gloves
+			i(210533),	-- Timerunning Staff
+			i(210598),	-- Passionsilk Mitts
+			i(210599),	-- Passionsilk Vestments
+			i(210600),	-- Passionsilk Slippers
+			i(210601),	-- Passionsilk Cap
+			i(210602),	-- Passionsilk Trousers
+			i(210603),	-- Passionsilk Amice
+			i(210604),	-- Passionsilk Sash
+			i(210605),	-- Passionsilk Bands
+			i(210606),	-- Spiderhide Grips
+			i(210607),	-- Spiderhide Jerkin
+			i(210608),	-- Spiderhide Footpads
+			i(210609),	-- Spiderhide Helmet
+			i(210610),	-- Spiderhide Britches
+			i(210611),	-- Spiderhide Shoulderpads
+			i(210612),	-- Spiderhide Cinch
+			i(210613),	-- Spiderhide Wristguards
+			i(210614),	-- Reedstalker Chestguard
+			i(210615),	-- Reedstalker Boots
+			i(210616),	-- Reedstalker Grips
+			i(210617),	-- Reedstalker Headpiece
+			i(210618),	-- Reedstalker Greaves
+			i(210619),	-- Reedstalker Shoulderguard
+			i(210620),	-- Reedstalker Girdle
+			i(210621),	-- Reedstalker Wristguards
+			i(210622),	-- Shan'ze Chestplate
+			i(210624),	-- Shan'ze Handguards
+			i(210625),	-- Shan'ze Sabatons
+			i(210626),	-- Shan'ze Greathelm
+			i(210627),	-- Shan'ze Greaves
+			i(210628),	-- Shan'ze Pauldrons
+			i(210629),	-- Shan'ze Waistguard
+			i(210630),	-- Shan'ze Armplates
+			i(210634),	-- Dreadwood Bulwark
+			i(210635),	-- Rename Me Post Vertical
+			i(210636),	-- Timerunner's Shield
+			i(210637),	-- Timerunner's Dagger
+			i(210638),	-- Jadestone Greataxe
+			i(210639),	-- Timerunner's Bow
+			i(210640),	-- Crane's Beak Effigy
+			i(210641),	-- Dawn Watcher's Spear
+			i(210642),	-- Timerunner's Greatsword
+			i(210643),	-- Mistspinner's Channel
+			i(210658),	-- Discarded Perfume Bottle
+			i(210681),	-- Timerunner's Topaz
+			i(210688),	-- Manufacturing Oil
+			i(210695),	-- Delightful Chocolate Sample
+			i(210714),	-- Timerunner's Sapphire
+			i(210715),	-- Timerunner's Amethyst
+			i(210716),	-- Timerunner's Opal
+			i(210717),	-- Timerunner's Ruby
+			i(210718),	-- Ephemeral Fractured Ruby
+			i(210719),	-- Grizzly Hills Flower
+			i(210720),	-- Delicate Flower
+			i(210721),	-- Fanciful Flower
+			i(210743),	-- Borrowed Camera
+			i(210819),	-- Chocolate-Covered Cherries
+			i(210821),	-- Berry Chocolate Tart
+			i(210841),	-- Buttered Oysters
+			i(210842),	-- Fresh Fig
+			i(210855),	-- Trader's Brick Sarong
+			i(210884),	-- Timerunner's Breastplate
+			i(210885),	-- Timerunner's Gauntlets
+			i(210886),	-- Timerunner's Warboots
+			i(210887),	-- Timerunner's Gloves
+			i(210888),	-- Timerunner's Handwraps
+			i(210889),	-- Timerunner's Robe
+			i(210890),	-- Timerunner's Tunic
+			i(210891),	-- Timerunner's Warhelm
+			i(210892),	-- Timerunner's Chestguard
+			i(210893),	-- Timerunner's Slippers
+			i(210894),	-- Timerunner's Sabatons
+			i(210895),	-- Timerunner's Boots
+			i(210896),	-- Timerunner's Grips
+			i(210897),	-- Timerunner's Hood
+			i(210898),	-- Timerunner's Coif
+			i(210899),	-- Timerunner's Helm
+			i(210900),	-- Timerunner's Legplates
+			i(210901),	-- Timerunner's Leggings
+			i(210902),	-- Timerunner's Legguards
+			i(210903),	-- Timerunner's Breeches
+			i(210904),	-- Timerunner's Spaulders
+			i(210905),	-- Timerunner's Pauldrons
+			i(210906),	-- Timerunner's Amice
+			i(210907),	-- Timerunner's Monnion
+			i(210908),	-- Timerunner's Girdle
+			i(210909),	-- Timerunner's Sash
+			i(210910),	-- Timerunner's Chain
+			i(210911),	-- Timerunner's Belt
+			i(210912),	-- Timerunner's Wristwraps
+			i(210913),	-- Timerunner's Armplates
+			i(210914),	-- Timerunner's Bands
+			i(210915),	-- Timerunner's Bracers
+			i(210926),	-- Me, Myself, and Chocolate Package
+			i(210927),	-- Fruity Cocktail Flight
+			i(210928),	-- Healthy Body Package
+			i(210929),	-- Comfort Food Package
+			i(210965),	-- Single-Use Bouquet
+			i(210973),	-- Heartseeker Mana Ray
+			i(210974),	-- Eyes For You Only
+			i(210975),	-- Date Simulation Modulator
+			i(210982),	-- Draught of Power
+			i(210983),	-- Draught of Stamina
+			i(210984),	-- Draught of Critical Strike
+			i(210985),	-- Draught of Haste
+			i(210986),	-- Draught of Speed
+			i(210987),	-- Draught of Leech
+			i(210988),	-- Draught of Regeneration
+			i(210989),	-- Draught of Mastery
+			i(210990),	-- Draught of Versatility
+			i(211101),	-- Ephemeral Hungering Topaz
+			i(211102),	-- Ephemeral Hungering Sapphire
+			i(211103),	-- Ephemeral Quick Opal
+			i(211104),	-- Ephemeral Fractured Emerald
+			i(211105),	-- Ephemeral Quick Amethyst
+			i(211106),	-- Ephemeral Smooth Amethyst
+			i(211107),	-- Ephemeral Sustaining Topaz
+			i(211108),	-- Ephemeral Swift Amethyst
+			i(211109),	-- Timerunner's Emerald
+			i(211110),	-- Ephemeral Sustaining Sapphire
+			i(211111),	-- Ephemeral Swift Ruby
+			i(211112),	-- Ephemeral Swift Emerald
+			i(211123),	-- Ephemeral Quick Sapphire
+			i(211124),	-- Ephemeral Smooth Opal
+			i(211125),	-- Ephemeral Hungering Emerald
+			i(211127),	-- Note from Bang Sparknozzle
+			i(211149),	-- Dawnwatcher's Warbow
+			i(211151),	-- Serpentguard Crossbow
+			i(211160),	-- Jade Grand Falchion
+			i(211161),	-- Shan'ze Bonebreaker
+			i(211162),	-- Tian Monastery Scimitar
+			i(211163),	-- Tian Monastery Crescent
+			i(211208),	-- O.D.I.E.'s Remote Control
+			i(211254),	-- Timerunner's Bandage
+			i(211279),	-- Cache of Infinite Treasure
+			i(211344),	-- Miniaturizer
+			i(211345),	-- Knick of Time
+			i(211346),	-- Gigantifier
+			i(211347),	-- Scarab's Shell
+			i(211352),	-- Eternal Yellow Rose
+			i(211354),	-- Eternal White Rose
+			i(211355),	-- Eternal Pink Rose
+			i(211357),	-- Eternal Orange Rose
+			i(211358),	-- Eternal Blue Rose
+			i(211359),	-- Eternal Black Rose
+			i(211383),	-- Luvkip
+			i(211388),	-- Timerunner's Starter Kit
+			i(211429),	-- Bundle of Love Tokens
+			i(211430),	-- Bundle of Love Tokens
+			i(211432),	-- Teele
+			i(211486),	-- Winding Slitherdrake
+			i(211778),	-- O.D.I.E.'s Remote Control
+			i(211781),	-- O.D.I.E.'s Remote Control
+			i(211782),	-- Note from Zikky
+			i(211810),	-- Chocolate-Covered Crunchies
+			i(211812),	-- Renewed Proto-Drake: Love Armor
+			i(211864),	-- Exquisite Love Boat
+			i(211868),	-- Winding Slitherdrake: Lunar Festival Armor
+			i(211877),	-- Drake Racer's Scarf
+			i(211881),	-- Outlandish Drake Racer's Helmet
+			i(211882),	-- Outlandish Drake Racer's Shoulderpads
+			i(211883),	-- Outlandish Drake Racer's Jersey
+			i(211884),	-- Outlandish Drake Racer's Handwraps
+			i(211885),	-- Outlandish Drake Racer's Belt
+			i(211886),	-- Outlandish Drake Racer's Leggings
+			i(211887),	-- Outlandish Drake Racer's Boots
+			i(211888),	-- Outlandish Drake Racer's Scarf
+			i(211922),	-- Bouquet of Flowers
+			i(211923),	-- Sealed Letter
+			i(211926),	-- Riders of Azeroth Tabard
+			i(211928),	-- Ruby Riders of Azeroth Tabard
+			i(211946),	-- Hearthstone Game Table
+			i(211949),	-- Durumu's Glass Pupil
+			i(211965),	-- Hearthstone Wild Card
+			i(211976),	-- Pink Brightbursts
+			i(212154),	-- Hearthstone Invitation Letter
+			i(212155),	-- Hearthstone Invitation Letter
+			i(212156),	-- Hearthstone Invitation Letter
+			i(212157),	-- An Invitation
+			i(212179),	-- Dreadlord's Shadowsbane Tunic
+			i(212180),	-- Dreadlord's Shadowsbane Cloak
+			i(212181),	-- Dreadlord's Shadowsbane Sabatons
+			i(212182),	-- Dreadlord's Shadowsbane Grips
+			i(212183),	-- Dreadlord's Shadowsbane Helm
+			i(212184),	-- Dreadlord's Shadowsbane Breeches
+			i(212185),	-- Dreadlord's Shadowsbane Shoulderpads
+			i(212186),	-- Dreadlord's Shadowsbane Sash
+			i(212187),	-- Dreadlord's Shadowsbane Wristbands
+			i(212188),	-- Dreadlord's Venombane Tunic
+			i(212189),	-- Dreadlord's Venombane Cloak
+			i(212190),	-- Dreadlord's Venombane Sabatons
+			i(212191),	-- Dreadlord's Venombane Grips
+			i(212192),	-- Dreadlord's Venombane Helm
+			i(212193),	-- Dreadlord's Venombane Breeches
+			i(212194),	-- Dreadlord's Venombane Shoulderpads
+			i(212195),	-- Dreadlord's Venombane Sash
+			i(212196),	-- Dreadlord's Venombane Wristbands
+			i(212197),	-- Love Witch's Blouse
+			i(212198),	-- Love Witch's Boots
+			i(212199),	-- Love Witch's Gloves
+			i(212200),	-- Love Witch's Hat
+			i(212201),	-- Love Witch's Skirt
+			i(212202),	-- Love Witch's Shoulders
+			i(212203),	-- Love Witch's Sash
+			i(212204),	-- Sky Witch's Blouse
+			i(212205),	-- Sky Witch's Boots
+			i(212206),	-- Sky Witch's Gloves
+			i(212207),	-- Sky Witch's Hat
+			i(212208),	-- Sky Witch's Skirt
+			i(212209),	-- Sky Witch's Shoulders
+			i(212210),	-- Sky Witch's Sash
+			i(212211),	-- Twilight Witch's Blouse
+			i(212212),	-- Twilight Witch's Boots
+			i(212213),	-- Twilight Witch's Gloves
+			i(212214),	-- Twilight Witch's Hat
+			i(212215),	-- Twilight Witch's Skirt
+			i(212216),	-- Twilight Witch's Shoulders
+			i(212217),	-- Twilight Witch's Sash
+			i(212218),	-- Ensemble: Dreadlord's Shadowsbane Regalia
+			i(212219),	-- Ensemble: Dreadlord's Venombane Regalia
+			i(212220),	-- Ensemble: Love Witch's Attire
+			i(212221),	-- Ensemble: Sky Witch's Attire
+			i(212222),	-- Ensemble: Twilight Witch's Attire
+			i(212227),	-- Reins of the Fur-endship Fox
+			i(212228),	-- Reins of the Soaring Sky Fox
+			i(212229),	-- Reins of the Twilight Sky Prowler
+			i(212335),	-- Collector's Carryall
+			i(212336),	-- The Tavern's Tabard
+			i(212337),	-- Stone of the Hearth (Needs Icon)
+			i(212338),	-- DNT - Hearthstone - Loot - Hat (Needs Art)
+			i(212369),	-- Heart-Shaped Back
+			i(212371),	-- Azerothian Archivist Initiation Token
+			i(212372),	-- Magenta Masquerade Gloves
+			i(212373),	-- Gossamer Magenta Gown
+			i(212374),	-- Classic Rosy Tabard
+			i(212375),	-- Lovely Rosy Longbow
+			i(212376),	-- Lovely Gothic Longbow
+			i(212377),	-- Love Witch's Rosy Wand
+			i(212378),	-- Love Witch's Gothic Wand
+			i(212379),	-- Love Witch's Rosy Staff
+			i(212380),	-- Love Witch's Gothic Staff
+			i(212381),	-- Love's Bulwark
+			i(212382),	-- Flourescent Splitblade
+			i(212459),	-- Copy of The Old Wizard's Almanac
+			i(212460),	-- Copy of Excerpts from the Journal of Archmage Vargoth
+			i(212461),	-- Copy of Kirin Tor Monthly (March Issue)
+			i(212462),	-- Copy of Remedial Magic 101: Tips from the Pros
+			i(212463),	-- Copy of Common / Orcish Dictionary
+			i(212464),	-- Copy of Kirin Tor Monthly (November Issue)
+			i(212465),	-- Copy of Bundle of Romantic Correspondences
+			i(212466),	-- Copy of Losses of the Third War
+			i(212467),	-- Discarded Advertisement
+			i(212468),	-- Copy of Blinking Rules & Regulations
+			i(212469),	-- Copy of Polymorphic Rules & Regulations
+			i(212470),	-- Copy of Thinking with Portals - A Memorandum on Proper Portal Usage
+			i(212471),	-- Copy of the Journal of Archmage Antonidas
+			i(212472),	-- Copy of The Fluffy Bunny
+			i(212473),	-- Copy of The Archmage Antonidas - Part I
+			i(212474),	-- Copy of The Archmage Antonidas - Part II
+			i(212475),	-- Copy of The Archmage Antonidas - Part III
+			i(212476),	-- Copy of The Dangers of Magic Abuse
+			i(212477),	-- Copy of The Schools of Arcane Magic - Introduction
+			i(212478),	-- Copy of The Schools of Arcane Magic - Abjuration
+			i(212479),	-- Copy of The Schools of Arcane Magic - Conjuration
+			i(212480),	-- Copy of The Schools of Arcane Magic - Divination
+			i(212481),	-- Copy of The Schools of Arcane Magic - Enchantment
+			i(212482),	-- Copy of The Schools of Arcane Magic - Illusion
+			i(212483),	-- Copy of The Schools of Arcane Magic - Necromancy
+			i(212484),	-- Copy of The Schools of Arcane Magic - Transmutation
+			i(212485),	-- Copy of Weathered Diary - Dates from the Third War
+			i(212486),	-- Copy of The Worst Mage in Dalaran: A Children's Book
+			i(212487),	-- Copy of On the Virtues of Magic
+			i(212488),	-- Copy of Kirin Tor Monthly (May Issue)
+			i(212489),	-- Copy of a Damaged Apprentice Journal
+			i(212500),	-- Delicate Silk Parasol
+			i(212518),	-- Manuscript of Endless Possibility
+			i(212522),	-- Compass Rose
+			i(212523),	-- Delicate Jade Parasol
+			i(212524),	-- Delicate Crimson Parasol
+			i(212525),	-- Delicate Ebony Parasol
+			i(212530),	-- Teal Bulwark
+			i(212532),	-- Reno's Hat
+			i(212542),	-- Flowing Aquatic Gloves
+			i(212543),	-- Gossamer Teal Gown
+			i(212544),	-- Classic Aquatic Tabard
+			i(212545),	-- Rosy Heart Crown
+			i(212555),	-- Guise of the Royal Masquerade
+			i(212556),	-- Guise of the Shining Masquerade
+			i(212572),	-- Dueler's Rosy Shoulder Cape
+			i(212573),	-- Dueler's Cloudy Shoulder Cape
+			i(212574),	-- Dueler's Aquatic Shoulder Cape
+			i(212576),	-- Champion's Violet Cleaver
+			i(212577),	-- Arsenal: Quel'Serrar Skyborn Blades
+			i(212578),	-- Quel'Serrar Skyborn Radiant Blade
+			i(212579),	-- Quel'Serrar Skyborn Blade
+			i(212591),	-- Mantle of Unrelenting Justice
+			i(212592),	-- Treads of Unrelenting Justice
+			i(212599),	-- Noble Flying Carpet
+			i(212606),	-- Sarge
+			i(212607),	-- Reno's Lucky Hat
+			i(212608),	-- Potion [DNT]
+			i(212610),	-- Wings of the Emerald Monarch
+			i(212611),	-- Wings of the Tourmaline Monarch
+			i(212612),	-- Wings of the Amethyst Monarch
+			i(212613),	-- Wings of the Amber Monarch
+			i(212614),	-- Dueler's Sunny Shoulder Cape
+			i(212615),	-- Dueler's Snowy Shoulder Cape
+			i(212616),	-- Dueler's Violet Shoulder Cape
+			i(212617),	-- Dueler's Crimson Shoulder Cape
+			i(212618),	-- Dueler's Plum Shoulder Cape
+			i(212619),	-- Dueler's Carrot Shoulder Cape
+			i(212620),	-- Dueler's Faded Shoulder Cape
+			i(212621),	-- Dueler's Lively Shoulder Cape
+			i(212622),	-- Dueler's Camo Shoulder Cape
+			i(212623),	-- Dueler's Brick Shoulder Cape
+			i(212624),	-- Dueler's Deep Shoulder Cape
+			i(212625),	-- Dueler's Grassy Shoulder Cape
+			i(212626),	-- Dueler's Sepia Shoulder Cape
+			i(212627),	-- Dueler's Azure Shoulder Cape
+			i(212628),	-- Dueler's Midnight Shoulder Cape
+			i(212630),	-- Reins of the Majestic Azure Peafowl
+			i(212631),	-- Reins of the Brilliant Sunburst Peafowl
+			i(212632),	-- Reins of the Starry Twilight Peafowl
+			i(212633),	-- [PH] Explorer Chest
+			i(212634),	-- [PH] Explorer Gloves
+			i(212635),	-- [PH] Explorer Waist
+			i(212636),	-- [PH] Explorers Pants
+			i(212637),	-- [PH] Explorer Boots
+			i(212638),	-- [PH] Unearthed Chest
+			i(212639),	-- [PH] Unearthed Gloves
+			i(212640),	-- [PH] Unearthed Waist
+			i(212641),	-- [PH] Unearthed Pants
+			i(212642),	-- [PH] Unearthed Boots
+			i(212643),	-- Golden Egg Heirloom
+			i(212644),	-- The Tavern's Belt
+			i(212645),	-- PH Hornstrider Red
+		})),
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+			i(210964),	-- Lil' Wrathion
+			i(210706),	-- Drowsed Shepherd's Gloves
+			i(211927),	-- Tattered Dreamleaf
+			i(212536),	-- Lesser Verdant Trophy of Conquest
+			i(212537),	-- Verdant Trophy of Conquest
+			i(212538),	-- Greater Verdant Trophy of Conquest
+			i(212539),	-- Lesser Verdant Crest of Honor
+			i(212540),	-- Verdant Crest of Honor
+			i(212541),	-- Greater Verdant Crest of Honor
+			i(212554),	-- Medal of Conquest
+			i(209591),	-- Wristbands of Chosen Renewal
+			i(209592),	-- Belt of Chosen Renewal
+			i(209593),	-- Shoulders of Chosen Renewal
+			i(209594),	-- Legguards of Chosen Renewal
+			i(209595),	-- Crown of Chosen Renewal
+			i(209596),	-- Grips of Chosen Renewal
+			i(209597),	-- Anklets of Chosen Renewal
+			i(209598),	-- Wraps of Chosen Renewal
+			i(209604),	-- Ensemble: Raiment of Amirdrassil
+			i(210254),	-- Dreamsurge Cocoon
+			i(211260),	-- Crimson Gladiator's Spear
 			filter(MISC, {
 				------ Tame Hunter Pets ------
 				-- Check if These pop any QuestIDs we can source them properly
