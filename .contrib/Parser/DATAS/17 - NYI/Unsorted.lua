@@ -1073,7 +1073,6 @@ root(ROOTS.Unsorted, {
 				------ Raid Quest ------
 				i(210498),	-- Fused Essence
 				i(210494),	-- Incandescent Essence
-				i(210430),	-- Twisted Dreaming Essence
 				------ Fyralath Questline ------
 				i(211396),	-- Attuned Glowspore Grip
 				i(211397),	-- Attuned Rune of Shadowbinding
@@ -1191,7 +1190,6 @@ root(ROOTS.Unsorted, {
 				q(78346),	-- Gundrak Fast Track
 				q(78347),	-- Gundrak Fast Track - Advanced
 				q(78349),	-- Gundrak Fast Track - Reverse
-				q(78355),	-- Essence of a Broken Dream
 				q(78357),	--
 				q(78362),	--
 				q(78366),	--

@@ -432,8 +432,12 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 			}),
 			Difficulty(ALL_DIFFICULTIES_RAID).AddGroups({
 				n(QUESTS, {
+					q(78355,{	-- Essence of a Broken Dream
+						["provider"] = { "i", 210430 },	-- Twisted Dreaming Essence (QI!)
+					}),
 					q(78421, {	-- The Power of Dreams (TODO: I guess it should be enchant for head quest and can be in any difficulty, move it if it is not)
 						["provider"] = { "n", 210039 },	-- Merithra
+						["sourceQuest"] = 78355,	-- Essence of a Broken Dream (QI!)
 						["g"] = {
 							i(210470),	-- Echoed Ephemera (QI!)
 							i(210472),	-- Igira's Cruel Nightmare (QI!)
@@ -445,6 +449,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				}),
 				BossOnly(GNARLROOT, {
 					i(210170),	-- Design: Dreamtender's Charm (RECIPE!)
+					i(210430),	-- Twisted Dreaming Essence
 				}),
 				BossOnly(IGIRA, {
 					i(210148, {	-- Overflowing Satchel of Pilfered Recipes
