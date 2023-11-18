@@ -431,6 +431,18 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				}),
 			}),
 			Difficulty(ALL_DIFFICULTIES_RAID).AddGroups({
+				n(QUESTS, {
+					q(78421, {	-- The Power of Dreams (TODO: I guess it should be enchant for head quest and can be in any difficulty, move it if it is not)
+						["provider"] = { "n", 210039 },	-- Merithra
+						["g"] = {
+							i(210470),	-- Echoed Ephemera (QI!)
+							i(210472),	-- Igira's Cruel Nightmare (QI!)
+							i(210473),	-- Larodar's Fiery Reverie (QI!)
+							i(210475),	-- Smolderon's Delusions of Grandeur (QI!)
+							i(210474),	-- Tindral's Fowl Fantasia (QI!)
+						},
+					}),
+				}),
 				BossOnly(GNARLROOT, {
 					i(210170),	-- Design: Dreamtender's Charm (RECIPE!)
 				}),
@@ -541,6 +553,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				}),
 			}),
 			Difficulty(NORMAL_RAID).AddGroupsWithUpgrades({
+				n(QUESTS, {
+					q(78600, {	-- Amirdrassil, the Dream's Hope: Up in Smoke (N)
+						["provider"] = { "n", 210016 },	-- Tyrande Whisperwind
+						["g"] = {
+							i(210791),	-- Fragment of Emberscar (QI!)
+						},
+					}),
+				}),
 				ZoneDrops({
 				--	currency(DRAKES_DREAMING_CREST, {
 				--		["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
@@ -584,6 +604,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				}),
 			}),
 			Difficulty(HEROIC_RAID).AddGroupsWithUpgrades({
+				n(QUESTS, {
+					q(78601, {	-- Amirdrassil, the Dream's Hope: Up in Smoke (H)
+						["provider"] = { "n", 210016 },	-- Tyrande Whisperwind
+						["g"] = {
+							i(210792),	-- Fragment of Emberscar (QI!)
+						},
+					}),
+				}),
 				ZoneDrops({
 				--	currency(WYRMS_DREAMING_CREST, {
 				--		["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
@@ -605,6 +633,14 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				}),
 			}),
 			Difficulty(MYTHIC_RAID).AddGroups({
+				n(QUESTS, {
+					q(78602, {	-- Amirdrassil, the Dream's Hope: Up in Smoke (M)
+						["provider"] = { "n", 210016 },	-- Tyrande Whisperwind
+						["g"] = {
+							i(210793),	-- Fragment of Emberscar (QI!)
+						},
+					}),
+				}),
 				ZoneDrops({
 				--	currency(ASPECTS_DREAMING_CREST, {
 				--		["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
@@ -671,6 +707,15 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	inst(1207, {	-- Amirdrassil, the Dream's Hope
-
+		-- Normal
+		q(78311),	-- Gnalroot
+		q(78312),	-- Igira the Cruel
+		q(78313),	-- Volcoross
+		q(78314),	-- Council of Dreams
+		q(78315),	-- Larodar, Keeper of the Flame
+		q(78316),	-- Nymue, Weaver of the Cycle
+		q(78317),	-- Smolderon
+		q(78318),	-- Tindral Sageswift, Seer of the Flame
+		q(78320),	-- Fyrakk the Blazing
 	}),
 })));

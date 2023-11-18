@@ -2943,7 +2943,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Overload
 			FirstCraft(71964, 389701);	-- Overload Hardened Node
 			FirstCraft(71967, 389704);	-- Overload Infurious Node
-			--FirstCraft(X, 422809, ADDED_10_2_0);	-- Overload Living Deposit
+			FirstCraft(78061, 422809, ADDED_10_2_0);	-- Overload Living Deposit
 			FirstCraft(75137, 405131, ADDED_10_1_0);	-- Overload Metamorphic Node
 			FirstCraft(71963, 389700);	-- Overload Molten Node
 			FirstCraft(71966, 389702);	-- Overload Primal Node
@@ -2959,6 +2959,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		-- Needs Achievements attached (roughly 1/3 should be attached to achievement criteria)
 		-- Remove collectible tag=false tag for those that can be collected due achievement
 			FirstSkin(74204, 193243),	-- Skinning Acrosoth
+			FirstSkin(78824, 210288, ADDED_10_2_0),	-- Skinning Ancient Core Hound
 			FirstSkin(74219, 187111),	-- Skinning Ancient Hornswog
 			FirstSkin(74197, 193231),	-- Skinning Ancient Tundrafur (spawns with Blightpaw)
 			FirstSkin(74162, 193341),	-- Skinning Angen (Great Hunt)
@@ -3054,6 +3055,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstSkin(74173, 193123),	-- Skinning Steamgill
 			FirstSkin(74167, 193133),	-- Skinning Sunscale Behemoth
 			FirstSkin(74213, 193634),	-- Skinning Swog'ranka
+			FirstSkin(77792, 121911, ADDED_10_2_0),	-- Skinning Voracious Mikanji (TODO: need event tag?)
 			FirstSkin(74143, 191103),	-- Skinning Uranto the Swift (Grand Hunt)
 			FirstSkin(74148, 194601),	-- Skinning Zagdech
 			FirstSkin(74149, 194624),	-- Skinning Zumakh (Grand Hunt)

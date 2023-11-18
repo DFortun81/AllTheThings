@@ -1080,18 +1080,9 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(QUEST_ITEMS, {
 				------ Raid Quest ------
-				i(210470),	-- Echoed Ephemera
 				i(210498),	-- Fused Essence
-				i(210472),	-- Igira's Cruel Nightmare
 				i(210494),	-- Incandescent Essence
-				i(210473),	-- Larodar's Fiery Reverie
-				i(210475),	-- Smolderon's Delusions of Grandeur
-				i(210474),	-- Tindral's Fowl Fantasia
 				i(210430),	-- Twisted Dreaming Essence
-				------ Raid Skip ------
-				i(210791),	-- Fragment of Emberscar [N]
-				i(210792),	-- Fragment of Emberscar [H]
-				i(210793),	-- Fragment of Emberscar [M]
 				------ Fyralath Questline ------
 				i(211396),	-- Attuned Glowspore Grip
 				i(211397),	-- Attuned Rune of Shadowbinding
@@ -1201,15 +1192,6 @@ root(ROOTS.Unsorted, {
 				q(78301),	-- Scalawag Slither	 PTR:Skalawag Slither
 				q(78302),	-- Scalawag Slither - Advanced	 PTR:Skalawag Slither - Advanced
 				q(78303),	-- Scalawag Slither - Reverse	 PTR:Skalawag Slither - Reverse
-				q(78311),	--
-				q(78312),	--
-				q(78313),	--
-				q(78314),	--
-				q(78315),	--
-				q(78316),	--
-				q(78317),	--
-				q(78318),	--
-				q(78320),	--
 				q(78325),	-- Daggercap Dart
 				q(78326),	-- Daggercap Dart - Advanced
 				q(78327),	-- Daggercap Dart - Reverse
@@ -1234,7 +1216,6 @@ root(ROOTS.Unsorted, {
 				q(78390),	-- The Makers' Marathon - Advanced	 PTR:Maker's Marathon - Advanced
 				q(78391),	-- The Makers' Marathon - Reverse	 PTR:Maker's Marathon - Reverse
 				q(78420),	--
-				q(78421),	-- The Power of Dreams
 				q(78423),	--
 				q(78429),	--
 				q(78432),	--
@@ -1272,9 +1253,6 @@ root(ROOTS.Unsorted, {
 				-- 10.2.0.51297
 				q(78595),	-- Dream Infused
 				q(78599),	--
-				q(78600),	-- Amirdrassil, the Dream's Hope: Up in Smoke
-				q(78601),	-- Amirdrassil, the Dream's Hope: Up in Smoke
-				q(78602),	-- Amirdrassil, the Dream's Hope: Up in Smoke
 				-- 10.2.0.51425
 				q(78606),	--
 				q(78608),	-- Geothermal Jaunt
@@ -1300,7 +1278,6 @@ root(ROOTS.Unsorted, {
 				q(78763),	-- Dragonflight (70) E
 				q(78789),	--
 				q(78822),	--
-				q(78824),	--
 				q(78825),	--
 				q(78829),	--
 				-- 10.2.0.51601
