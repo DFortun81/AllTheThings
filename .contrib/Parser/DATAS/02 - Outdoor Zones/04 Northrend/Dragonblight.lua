@@ -68,38 +68,40 @@ root(ROOTS.Zones, {
 						-- #endif
 						-- #else
 						["groups"] = {
-							crit(1, {	-- The Warden's Task
+							crit(39007, {	-- The Warden's Task
 								["sourceQuest"] = 12169,	-- The High Cultist
 							}),
-							crit(2, {	-- Redirecting the Ley Lines
+							crit(39008, {	-- Redirecting the Ley Lines
 								["sourceQuest"] = 12107,	-- The End of the Line
 							}),
-							crit(3, {	-- Informing the Queen
+							crit(39009, {	-- Informing the Queen
 								["sourceQuest"] = 12123,	-- Informing the Queen
 							}),
-							crit(4, {	-- The Dragonflights
-								["sourceQuests"] = {
-									13343,	-- Mystery of the Infinite, Redux
-									12459,	-- That Which Creates Can Also Destroy
-									-- TODO:: confirm below
-									12266,	-- Tales of Destruction
-									12419,	-- The Fate of the Ruby Dragonshrine
-									12456,	-- The Plume of Alystros
-								},
+							crit(39010, {	-- The Dragonflights
+								["sourceQuest"] = 12266,	-- Tales of Destruction
 							}),
-							crit(5, {	-- Angrathar the Wrathgate
+							crit(39011, {	-- The Dragonflights
+								["sourceQuest"] = 12459,	-- That Which Creates Can Also Destroy
+							}),
+							crit(39012, {	-- The Dragonflights
+								["sourceQuest"] = 12456,	-- The Plume of Alystros
+							}),
+							crit(39013, {	-- The Dragonflights
+								["sourceQuest"] = 13343,	-- Mystery of the Infinite, Redux
+							}),
+							crit(285, {	-- Angrathar the Wrathgate
 								["sourceQuest"] = 12499,	-- Return to Angrathar
 							}),
-							crit(6, {	-- Frostmourne
+							crit(39014, {	-- Frostmourne
 								["sourceQuest"] = 12478,	-- Frostmourne Cavern
 							}),
-							crit(7, {	-- "Strategic Alliance"
-								["sourceQuests"] = {
-									12080,	-- Really Big Worm
-									12078,	-- Worm Wrangler
-								},
+							crit(39016, {	-- "Strategic Alliance"
+								["sourceQuest"] = 12078,	-- Worm Wrangler
 							}),
-							crit(8, {	-- Oacha'noa
+							crit(39017, {	-- "Strategic Alliance"
+								["sourceQuest"] = 12080,	-- Really Big Worm
+							}),
+							crit(39024, {	-- Oacha'noa
 								["sourceQuest"] = 12032,	-- Conversing With the Depths
 							}),
 						},
@@ -135,44 +137,46 @@ root(ROOTS.Zones, {
 						-- #endif
 						-- #else
 						["groups"] = {
-							crit(1, {	-- The Taunka
+							crit(39018, {	-- The Taunka
 								["sourceQuest"] = 12008,	-- Agmar's Hammer
 							}),
-							crit(2, {	-- Traitors to the Horde
+							crit(63852, {	-- Traitors to the Horde
 								["sourceQuest"] = 12136,	-- The Translated Tome
 							}),
-							crit(3, {	-- Redirecting the Ley Lines
+							crit(39019, {	-- Redirecting the Ley Lines
 								["sourceQuest"] = 12110,	-- The End of the Line
 							}),
-							crit(4, {	-- Containing the Rot
+							crit(39022, {	-- Containing the Rot
 								["sourceQuest"] = 12111,	-- Where the Wild Things Roam
 							}),
-							crit(5, {	-- Angrathar the Wrathgate
+							crit(286, {	-- Angrathar the Wrathgate
 								["sourceQuest"] = 12500,	-- Return To Angrathar
 							}),
-							crit(6, {	-- Informing the Queen
+							crit(39020, {	-- Informing the Queen
 								["sourceQuest"] = 12124,	-- Informing the Queen
 							}),
-							crit(7, {	-- The Dragonflights
-								["sourceQuests"] = {
-									13343,	-- Mystery of the Infinite, Redux
-									12459,	-- That Which Creates Can Also Destroy
-									-- TODO:: confirm below
-									12266,	-- Tales of Destruction
-									12419,	-- The Fate of the Ruby Dragonshrine
-									12456,	-- The Plume of Alystros
-								},
+							crit(39010, {	-- The Dragonflights
+								["sourceQuest"] = 12266,	-- Tales of Destruction
 							}),
-							crit(8, {	-- "Strategic Alliance"
-								["sourceQuests"] = {
-									12080,	-- Really Big Worm
-									12078,	-- Worm Wrangler
-								},
+							crit(39011, {	-- The Dragonflights
+								["sourceQuest"] = 12459,	-- That Which Creates Can Also Destroy
 							}),
-							crit(9, {	-- The Scarlet Onslaught
+							crit(39012, {	-- The Dragonflights
+								["sourceQuest"] = 12456,	-- The Plume of Alystros
+							}),
+							crit(39013, {	-- The Dragonflights
+								["sourceQuest"] = 13343,	-- Mystery of the Infinite, Redux
+							}),
+							crit(39016, {	-- "Strategic Alliance"
+								["sourceQuest"] = 12078,	-- Worm Wrangler
+							}),
+							crit(39017, {	-- "Strategic Alliance"
+								["sourceQuest"] = 12080,	-- Really Big Worm
+							}),
+							crit(39023, {	-- The Scarlet Onslaught
 								["sourceQuest"] = 12285,	-- Do Unto Others
 							}),
-							crit(10, {	-- Oacha'noa
+							crit(39024, {	-- Oacha'noa
 								["sourceQuest"] = 12032,	-- Conversing With the Depths
 							}),
 						},

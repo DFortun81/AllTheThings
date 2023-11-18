@@ -36,49 +36,56 @@ root(ROOTS.Zones, {
 						["rank"] = 140,
 						-- #endif
 						-- #else
-						crit(1, {	-- Crusader Bridenbrad
+						crit(39139, {	-- Crusader Bridenbrad
 							["sourceQuest"] = 13083,	-- Light Within the Darkness
 						}),
-						crit(2, {	-- The Unthinkable
+						crit(39135, {	-- The Unthinkable
 							["sourceQuest"] = 13219,	-- Battle at Valhalas: Final Challenge
 						}),
-						crit(3, {	-- Teaching the Meaning of Fear
+						crit(39136, {	-- Teaching the Meaning of Fear
 							["sourceQuest"] = 13235,	-- The Flesh Giant Champion
 						}),
-						crit(4, {	-- The Heart of the Lich King
-							["sourceQuests"] = {
-								13403,	-- Tirion's Gambit (A)
-								13364,	-- Tirion's Gambit (H)
-							},
+						crit(39137, {	-- The Heart of the Lich King
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 13403,	-- Tirion's Gambit (A)
 						}),
-						crit(5, {	-- What's Yours Is Mine
-							["sourceQuests"] = {
-								12898,	-- The Shadow Vault (A)
-								12899,	-- The Shadow Vault (H)
-							},
+						crit(39138, {	-- The Heart of the Lich King
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 13364,	-- Tirion's Gambit (H)
 						}),
-						crit(6, {	-- Seizing Saronite
-							["sourceQuests"] = {
-								13174,	-- Amidst the Confusion
-								-- TODO: verify below:
-								13172,	-- Seeds of Chaos
-							},
+						crit(39130, {	-- What's Yours Is Mine
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 12898,	-- The Shadow Vault (A)
 						}),
-						crit(7, {	-- Malykriss: The Vile Hold
+						crit(39131, {	-- What's Yours Is Mine
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 12899,	-- The Shadow Vault (H)
+						}),
+						crit(39132, {	-- Seizing Saronite
+							["sourceQuest"] = 13172,	-- Seeds of Chaos
+						}),
+						crit(39133, {	-- Seizing Saronite
+							["sourceQuest"] = 13174,	-- Amidst the Confusion
+						}),
+						crit(39134, {	-- Malykriss: The Vile Hold
 							["sourceQuest"] = 13164,	-- The Fate of Bloodbane
 						}),
-						crit(8, {	-- In Defiance of the Scourge
+						crit(39119, {	-- In Defiance of the Scourge
 							["sourceQuest"] = 13157,	-- The Crusaders' Pinnacle
 						}),
+						-- TODO: This is a nestes criteria tree of HQTs, so were can we get the name?
 						crit(9, {	-- Mord'rethar: The Death Gate
 							-- NOTE: this was automatically marked as complete for some reason
 						}),
-						crit(10, {	-- Aldur'thar: The Desolation Gate
-							["sourceQuests"] = {
-								13346,	-- No Rest For The Wicked (A)
-								13367,	-- No Rest For The Wicked (H)
-							},
+						crit(39124, {	-- Aldur'thar: The Desolation Gate
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 13346,	-- No Rest For The Wicked (A)
 						}),
+						crit(39125, {	-- Aldur'thar: The Desolation Gate
+							["races"] = HORDE_ONLY,
+							["sourceQuest"] = 13367,	-- No Rest For The Wicked (H)
+						}),
+						-- TODO: This is a nestes criteria tree of HQTs, so were can we get the name?
 						crit(11, {	-- Corp'rethar: The Horror Gate
 							-- NOTE: this was automatically marked as complete for some reason
 						}),

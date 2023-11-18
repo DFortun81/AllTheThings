@@ -173,22 +173,22 @@ root(ROOTS.Zones, {
 						["rank"] = 75,
 						-- #endif
 						-- #else
-						crit(1, {	-- Hunting Bigger Game
+						crit(39053, {	-- Hunting Bigger Game
 							["sourceQuest"] = 12595,	-- In Search of Bigger Game
 						}),
-						crit(2, {	-- Teeth, Spikes, and Talons
+						crit(2004, {	-- Teeth, Spikes, and Talons
 							["sourceQuest"] = 12614,	-- Post-partum Aggression
 						}),
-						crit(3, {	-- The Wolvar
+						crit(39054, {	-- The Wolvar
 							["sourceQuest"] = 12540,	-- Just Following Orders
 						}),
-						crit(4, {	-- The Oracles
+						crit(39055, {	-- The Oracles
 							["sourceQuest"] = 12581,	-- A Hero's Burden
 						}),
-						crit(5, {	-- The Lifewarden
+						crit(39056, {	-- The Lifewarden
 							["sourceQuest"] = 12805,	-- Salvaging Life's Strength
 						}),
-						crit(6, {	-- Watching Over the Basin
+						crit(39726, {	-- Watching Over the Basin
 							["sourceQuest"] = 12546,	-- Reclamation
 						}),
 						-- #endif
