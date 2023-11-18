@@ -3679,6 +3679,7 @@ local ids = {
 	["difficultyID"] = L["DIFFICULTY_ID"],
 	["displayID"] = "Display ID",
 	["encounterID"] = L["ENCOUNTER_ID"],
+	["e"] = "Event ID",
 	["factionID"] = L["FACTION_ID"],
 	["filterID"] = L["FILTER_ID"],
 	["flightPathID"] = L["FLIGHT_PATH_ID"],

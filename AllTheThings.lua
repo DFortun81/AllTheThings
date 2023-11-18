@@ -2665,7 +2665,7 @@ end
 do
 local select, tremove, unpack =
 	  select, tremove, unpack;
-local FinalizeModID, PruneFinalized;
+local FinalizeModID, PruneFinalized
 -- Checks if any of the provided arguments can be found within the first array object
 local function ContainsAnyValue(arr, ...)
 	local value;
@@ -3002,11 +3002,21 @@ local ResolveFunctions = {
 				app.print("Failed to select achievementID",value);
 			end
 		end
-		PruneFinalized = true;
+		PruneFinalized = { "g" };
 	end,
-	-- Instruction to simply 'prune' sub-groups from the finalized selection
-	["prune"] = function()
-		PruneFinalized = true;
+	-- Instruction to simply 'prune' sub-groups from the finalized selection, or specified fields
+	["prune"] = function(finalized, searchResults, o, cmd, ...)
+		local vals = select("#", ...);
+		if vals < 1 then
+			PruneFinalized = { "g" }
+			return;
+		end
+		local value;
+		for i=1,vals do
+			value = select(i, ...);
+			if PruneFinalized then PruneFinalized[#PruneFinalized + 1] = value
+			else PruneFinalized = { value } end
+		end
 	end,
 	-- Instruction to include only search results where an item is of a specific relic type
 	["relictype"] = function(finalized, searchResults, o, cmd, ...)
@@ -3730,7 +3740,9 @@ ResolveSymbolicLink = function(o)
 				s.sourceParent = nil;
 				s.parent = nil;
 				if PruneFinalized then
-					s.g = nil;
+					for _,field in ipairs(PruneFinalized) do
+						s[field] = nil
+					end
 				end
 				-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
 				sHash = s.hash;
@@ -3747,7 +3759,9 @@ ResolveSymbolicLink = function(o)
 				s.sourceParent = nil;
 				s.parent = nil;
 				if PruneFinalized then
-					s.g = nil;
+					for _,field in ipairs(PruneFinalized) do
+						s[field] = nil
+					end
 				end
 				-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
 				sHash = s.hash;

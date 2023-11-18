@@ -39,7 +39,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(114389), -- Element-Binder Helm				(NYI)
 			ig(114265),	-- Leafscale Helm					(NYI)
 			ig(121508),	-- Stormborn Crown					(NYI)
-			
+
 			ig(134624),	-- Firebrand Helm					(Removed)
 			ig(134798),	-- Ironbranded Ringmail Helm		(Removed)
 		}),
@@ -58,7 +58,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(PLATE, {
 			ig(93099),	-- Yaungolian Pauldrons				(NYI)
-			
+
 			ig(103785),	-- Tusks of Mannoroth Heroic		(Removed)
 		}),
 	}),
@@ -198,9 +198,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208216, {	-- Reins of the Quantum Courser
 		["description"] = "Turns into one (1) unlearned Dungeon Mount from before Dragonflight.",
 		["filter"] = MISC,	-- Not an actual Mount itself
-		["groups"] = {		-- Listed manually here, as otherwise it doesnt show when there is no timewalking event active.
-			i(133543),		-- Reins of the Infinite Timereaver
-		},
 		["sym"] = {{"select","itemID",
 			-- Dungeon
 			68823,	-- Armored Razzashi Raptor
@@ -212,14 +209,16 @@ local QUANTUM_GROUP = sharedData({
 			159921,	-- Mummified Raptor Skull
 			44151,	-- Reins of the Blue Proto-Drake
 			63040,	-- Reins of the Drake of the North Wind
-		--	133543,	-- Reins of the Infinite Timereaver
+			133543,	-- Reins of the Infinite Timereaver
 			32768,	-- Reins of the Raven Lord
 			63043,	-- Reins of the Vitreous Stone Drake
 			159842,	-- Sharkbait's Favorite Crackers
 			35513,	-- Swift White Hawkstrider
 			68824,	-- Swift Zulian Panther
 			160829,	-- Underrot Crawg Harness
-		}},-- Raid (Maybe in future)--	78919, -- Experiment 12-B--	71665, -- Flametalon of Alysrazor--	77069, -- Life-Binder's Handmaiden--	45693, -- Mimiron's Head--	77067, -- Reins of the Blazing Drake
+		},
+		{"prune","u","e"}	-- prune any unobtainable/event statuses from the selected monuts
+		},-- Raid (Maybe in future)--	78919, -- Experiment 12-B--	71665, -- Flametalon of Alysrazor--	77069, -- Life-Binder's Handmaiden--	45693, -- Mimiron's Head--	77067, -- Reins of the Blazing Drake
 	}),
 });
 local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
@@ -862,7 +861,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			ig(114389), -- Element-Binder Helm				(NYI)
 			ig(114265),	-- Leafscale Helm					(NYI)
 			ig(121508),	-- Stormborn Crown					(NYI)
-			
+
 			ig(134624),	-- Firebrand Helm					(Removed)
 			ig(134798),	-- Ironbranded Ringmail Helm		(Removed)
 		}),
