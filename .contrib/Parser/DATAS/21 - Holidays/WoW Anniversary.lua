@@ -1073,6 +1073,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["questID"] = 47463,
 				["isRaid"] = true,
 				["isDaily"] = true,
+				["maps"] = {
+					DUSKWOOD,
+					THE_HINTERLANDS,
+					ASHENVALE,
+					FERALAS,
+				},
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
