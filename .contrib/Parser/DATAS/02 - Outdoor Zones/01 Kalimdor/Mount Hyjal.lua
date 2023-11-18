@@ -642,7 +642,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25901, {	-- Hyjal Recycling Program
 					["qg"] = 41497,	-- Logram
 					["coord"] = { 56.8, 56.0, MOUNT_HYJAL },
-					["sourceQuest"] = 25904,	-- The Hammer and the Key	-- verify
+					["sourceQuest"] = 25372,	-- Aessina's Miracle
 					["groups"] = {
 						i(57347),	-- Bloodbolt Crossbow
 						i(57345),	-- Razorproof Greaves
