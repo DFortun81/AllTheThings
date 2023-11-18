@@ -20,6 +20,13 @@ local function FirstSkin(questID, creatureID, added, group)
 	end
 	return t;
 end
+local function FirstSkinAnniversaryWB(questID, name, added)
+	local t = { ["questID"] = questID, ["name"] = name, };
+	if added then
+		t.timeline = { added };
+	end
+	return t;
+end
 
 root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	i(190456),	-- Artisan's Mettle
@@ -2963,6 +2970,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstSkin(74219, 187111),	-- Skinning Ancient Hornswog
 			FirstSkin(74197, 193231),	-- Skinning Ancient Tundrafur (spawns with Blightpaw)
 			FirstSkin(74162, 193341),	-- Skinning Angen (Great Hunt)
+			applyevent(EVENTS.WOW_ANNIVERSARY, FirstSkinAnniversaryWB(77792, "Emeriss, Lethon, Taerar, Ysondre", ADDED_10_2_0)),	-- Skinning Any Anniversary World Boss
 			FirstSkin(74225, 190986),	-- Skinning Battlehorn Pyrhus
 			FirstSkin(74174, 193168),	-- Skinning Biryuk
 			FirstSkin(74122, 197353),	-- Skinning Blisterhide
@@ -3055,7 +3063,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstSkin(74173, 193123),	-- Skinning Steamgill
 			FirstSkin(74167, 193133),	-- Skinning Sunscale Behemoth
 			FirstSkin(74213, 193634),	-- Skinning Swog'ranka
-			FirstSkin(77792, 121911, ADDED_10_2_0),	-- Skinning Voracious Mikanji (TODO: need event tag?)
 			FirstSkin(74143, 191103),	-- Skinning Uranto the Swift (Grand Hunt)
 			FirstSkin(74148, 194601),	-- Skinning Zagdech
 			FirstSkin(74149, 194624),	-- Skinning Zumakh (Grand Hunt)

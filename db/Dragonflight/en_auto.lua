@@ -3203,6 +3203,7 @@ local keys = {
 [75708]="Weekly: A Race To The Finish",
 [77230]="Pay Shakey's Tab",
 [77397]="Talk with 'Appraiser' Sazsel Stickyfingers",
+[77792]="Emeriss, Lethon, Taerar, Ysondre",
 [77973]="Third Lock",
 [77974]="First Lock"},
 ["S_NAMES"]={
