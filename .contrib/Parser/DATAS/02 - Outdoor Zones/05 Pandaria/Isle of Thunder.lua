@@ -774,7 +774,7 @@ root(ROOTS.Zones, {
 						["questID"] = 32610,
 						["coord"] = { 44.7, 29.8, ISLE_OF_THUNDER },
 						["g"] = {
-							crit(7, {	-- Al'tabim the All-Seeing
+							crit(22826, {	-- Al'tabim the All-Seeing
 								["achievementID"] = 8103,	-- Champions of Lei Shen
 							}),
 						},
@@ -787,7 +787,7 @@ root(ROOTS.Zones, {
 							{ 42.9, 36.3, 505 },
 						},
 						["g"] = {
-							crit(8, {	-- Backbreaker Uru
+							crit(22827, {	-- Backbreaker Uru
 								["achievementID"] = 8103,	-- Champions of Lei Shen
 							}),
 						},
@@ -800,7 +800,7 @@ root(ROOTS.Zones, {
 						["questID"] = 32610,
 						["coord"] = { 61.4, 49.5, ISLE_OF_THUNDER },
 						["g"] = {
-							crit(6, {	-- God-Hulk Ramuk
+							crit(22825, {	-- God-Hulk Ramuk
 								["achievementID"] = 8103,	-- Champions of Lei Shen
 							}),
 						},
@@ -810,7 +810,7 @@ root(ROOTS.Zones, {
 						["questID"] = 32610,
 						["coord"] = { 53.7, 53.1, ISLE_OF_THUNDER },
 						["g"] = {
-							crit(5, {	-- Goda
+							crit(22824, {	-- Goda
 								["achievementID"] = 8103,	-- Champions of Lei Shen
 							}),
 						},
@@ -826,7 +826,7 @@ root(ROOTS.Zones, {
 							{ 50.2, 90.8, ISLE_OF_THUNDER },
 							},
 							["g"] = {
-							crit(1, {	-- Haywire Sunreaver Construct
+							crit(22820, {	-- Haywire Sunreaver Construct
 								["achievementID"] = 8103,	-- Champions of Lei Shen
 							}),
 							i(94124),	-- Sunreaver Micro-Sentry (PET!)
@@ -847,7 +847,7 @@ root(ROOTS.Zones, {
 							{ 37.6, 82.6, ISLE_OF_THUNDER },
 						},
 						["g"] = {
-							crit(3, {	-- Ku'lai the Skyclaw
+							crit(22822, {	-- Ku'lai the Skyclaw
 								["achievementID"] = 8103,	-- Champions of Lei Shen
 							}),
 						},
@@ -857,7 +857,7 @@ root(ROOTS.Zones, {
 						["questID"] = 32610,
 						["coord"] = { 54.3, 35.4, ISLE_OF_THUNDER },
 						["g"] = {
-							crit(6, {	-- Lu-Ban
+							crit(22825, {	-- Lu-Ban
 								["achievementID"] = 8103,	-- Champions of Lei Shen
 							}),
 						},
@@ -870,7 +870,7 @@ root(ROOTS.Zones, {
 							{ 39.0, 37.2, 506 },
 						},
 						["g"] = {
-							crit(10, {	-- Molthor
+							crit(22829, {	-- Molthor
 								["achievementID"] = 8103,	-- Champions of Lei Shen
 							}),
 						},
@@ -880,7 +880,7 @@ root(ROOTS.Zones, {
 						["questID"] = 32610,
 						["coord"] = { 35.10, 62.45, ISLE_OF_THUNDER },
 						["g"] = {
-							crit(2, {	-- Mumta
+							crit(22821, {	-- Mumta
 								["achievementID"] = 8103,	-- Champions of Lei Shen
 							}),
 						},
@@ -893,7 +893,7 @@ root(ROOTS.Zones, {
 							{ 50.49, 74.96, ISLE_OF_THUNDER },	-- Path Start
 						},
 						["g"] = {
-							crit(4, {	-- Progenitus
+							crit(22823, {	-- Progenitus
 								["achievementID"] = 8103,	-- Champions of Lei Shen
 							}),
 						},

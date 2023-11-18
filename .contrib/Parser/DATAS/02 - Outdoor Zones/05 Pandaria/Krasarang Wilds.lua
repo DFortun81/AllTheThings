@@ -57,15 +57,15 @@ root(ROOTS.Zones, {
 								ach(7932, {	-- I'm In Your Base, Killing Your Dudes
 									crit(22456, {	-- Champion of Arms slain
 										["coord"] = { 89.5, 22.7, KRASARANG_WILDS },	-- Dalan Nightbreaker (H)
-										["cr"] = 68318,	-- Dalan Nightbreaker (H)
+										["provider"] = { "n", 68318 },	-- Dalan Nightbreaker (H)
 									}),
 									crit(22458, {	-- Champion of the Shadows slain
 										["coord"] = { 89.1, 26.8, KRASARANG_WILDS },	-- Mavis Harms (H)
-										["cr"] = 68317,	-- Mavis Harms (H)
+										["provider"] = { "n", 68317 },	-- Mavis Harms (H)
 									}),
 									crit(22460, {	-- Champion of the Light slain
 										["coord"] = { 92.2, 24.8, KRASARANG_WILDS },	-- Disha Fearwarden (H)
-										["cr"] = 68319,	-- Disha Fearwarden (H)
+										["provider"] = { "n", 68319 },	-- Disha Fearwarden (H)
 									}),
 								}),
 							}),
@@ -85,9 +85,6 @@ root(ROOTS.Zones, {
 									["races"] = HORDE_ONLY,
 									["coord"] = { 92.2, 24.8, KRASARANG_WILDS },	-- manually verified October 19, 2020
 									["g"] = {
-										crit(3, {	-- Champion of the Light slain
-											["achievementID"] = 7932,	-- I'm In Your Base, Killing Your Dudes
-										}),
 										i(92787),	-- Horde Insignia of Conquering
 									},
 								}),
@@ -743,15 +740,15 @@ root(ROOTS.Zones, {
 								ach(7932, {	-- I'm In Your Base, Killing Your Dudes
 									crit(22455, {	-- Champion of Arms slain
 										["coord"] = { 13.5, 54.8, KRASARANG_WILDS },	-- Kar Warmaker
-										["cr"] = 68321,	-- Kar Warmaker
+										["provider"] = { "n", 68321 }, 	-- Kar Warmaker
 									}),
 									crit(22457, {	-- Champion of the Shadows slain
 										["coord"] = { 12.8, 64.7, KRASARANG_WILDS },	-- Ubunti the Shade
-										["cr"] = 68320,	-- Ubunti the Shade
+										["provider"] = { "n", 68320 },	-- Ubunti the Shade
 									}),
 									crit(22459, {	-- Champion of the Light slain
 										["coord"] = { 9.68, 54.4, KRASARANG_WILDS },	-- Muerta
-										["cr"] = 68322,	-- Muerta
+										["provider"] = { "n", 68322 },	-- Muerta
 									}),
 								}),
 								ach(7928, {	-- Operation: Shieldwall Campaign [Not entered to Pandaria Outdoor Zones files, these criteria are spread over not only the Pandaria zones but also Classic]
@@ -759,13 +756,23 @@ root(ROOTS.Zones, {
 									crit(22425),		-- The Man With a Thousand Faces
 									crit(22426),		-- The Voice of the Gods
 									crit(22427),		-- Jaina's Hope
-									crit(5),		-- The Korune
+									crit(22428, {		-- The Korune
+										["sourceQuest"] = 32194,
+									}),
+									crit(22430, {		-- The Korune
+										["sourceQuest"] = 32243,
+									}),
 									crit(22431),		-- Heart of the Alliance
 									crit(22432),		-- Secrets of the Past
 									crit(22434),		-- The Divine Bell
 									crit(22538),		-- The Purge of Dalaran
 									crit(22433),		-- An Ancient Ally
-									crit(11),		-- In Search of Harmony
+									crit(22436, {		-- In Search of Harmony
+										["sourceQuest"] = 32336,
+									}),
+									crit(22735, {		-- In Search of Harmony
+										["sourceQuest"] = 32337,
+									}),
 									crit(22437),		-- Breath of Darkest Shadow
 								}),
 							}),
@@ -1305,9 +1312,6 @@ root(ROOTS.Zones, {
 									["coord"] = { 13.5, 54.8, KRASARANG_WILDS },	-- manually verified October 19, 2020
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
-										crit(1, {	-- Champion of Arms slain
-											["achievementID"] = 7932,	-- I'm in Your Base, Killing Your Dudes
-										}),
 										i(92782),	-- Steadfast Footman's Medallion
 									},
 								}),
@@ -1315,9 +1319,6 @@ root(ROOTS.Zones, {
 									["coord"] = { 9.68, 54.4, KRASARANG_WILDS },	-- manually verified October 19, 2020
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
-										crit(3, {	-- Champion of the Light slain
-											["achievementID"] = 7932,	-- I'm In Your Base, Killing Your Dudes
-										}),
 										i(92786),	-- Alliance Insignia of Conquering
 									},
 								}),
@@ -1325,9 +1326,6 @@ root(ROOTS.Zones, {
 									["coord"] = { 12.8, 64.7, KRASARANG_WILDS },	-- manually verified October 19, 2020
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
-										crit(2, {	-- Champion of the Shadows slain
-											["achievementID"] = 7932,	-- I'm In Your Base, Killing Your Dudes
-										}),
 										i(92784),	-- SI:7 Operative's Manual
 									},
 								}),
