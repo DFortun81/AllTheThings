@@ -93,12 +93,12 @@ root(ROOTS.Zones, {
 					achraw(9610,  {	-- History of Violence (Broken Precipice)
 						["description"] = "In order to get the relics, except the Bust, use Jewel of Transformation in the area and then break boulder piles.",
 						["groups"] = {
-							crit(1),	-- Krog the Dominator's Hammer
-							crit(2, {	-- Thak the Conqueror's Bust
+							crit(26397),	-- Krog the Dominator's Hammer
+							crit(26399, {	-- Thak the Conqueror's Bust
 								["coord"] = { 41.2, 12.2, DRAENOR_NAGRAND },
 							}),
-							crit(3),	-- Thurg the Slave Lord's Necklace
-							crit(4),	-- Gorg the Subjugator's Idol
+							crit(26400),	-- Thurg the Slave Lord's Necklace
+							crit(26404),	-- Gorg the Subjugator's Idol
 						},
 					}),
 					ach(9617,  {	-- Making the Cut (Gorian Proving Grounds)
@@ -1843,7 +1843,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 42.6, 36.2, DRAENOR_NAGRAND },
 						["lvl"] = 100,
 						["g"] = {
-							crit(4, {	-- Gortag Steelgrip
+							crit(26143, {	-- Gortag Steelgrip
 								["achievementID"] = 9541,	-- The Song of Silence
 							}),
 						},

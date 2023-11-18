@@ -11,7 +11,7 @@ root(ROOTS.Zones, {
 						["questID"] = 38461,
 						["coord"] = { 84.6, 49.2, HELHEIM },
 						["g"] = {
-							crit(6, {	-- Fenri
+							crit(33298, {	-- Fenri
 								["achievementID"] = 11263,	-- Adventurer of Stormheim
 							}),
 							i(129044),	-- Frothing Helhound's Fury
@@ -27,7 +27,7 @@ root(ROOTS.Zones, {
 						["questID"] = 39870,
 						["coord"] = { 29.0, 61.6, HELHEIM },
 						["g"] = {
-							crit(17, {	-- Soulthirster
+							crit(33310, {	-- Soulthirster
 								["achievementID"] = 11263,	-- Adventurer of Stormheim
 							}),
 							i(129188),	-- Bleakwater Jelly (PET!)

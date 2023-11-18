@@ -31,7 +31,7 @@ root(ROOTS.Zones, {
 				}),
 				q(41990),	-- Chopped
 				q(45307, {	-- Claws for Alarm!
-					crit(3, {	-- Claws for Alarm!
+					crit(34848, {	-- Claws for Alarm!
 						["achievementID"] = 11427,	-- No Shellfish Endeavor
 					}),
 				}),
