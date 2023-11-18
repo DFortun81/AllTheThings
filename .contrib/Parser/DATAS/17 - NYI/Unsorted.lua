@@ -1054,15 +1054,6 @@ root(ROOTS.Unsorted, {
 			i(212540),	-- Verdant Crest of Honor
 			i(212541),	-- Greater Verdant Crest of Honor
 			i(212554),	-- Medal of Conquest
-			i(209591),	-- Wristbands of Chosen Renewal
-			i(209592),	-- Belt of Chosen Renewal
-			i(209593),	-- Shoulders of Chosen Renewal
-			i(209594),	-- Legguards of Chosen Renewal
-			i(209595),	-- Crown of Chosen Renewal
-			i(209596),	-- Grips of Chosen Renewal
-			i(209597),	-- Anklets of Chosen Renewal
-			i(209598),	-- Wraps of Chosen Renewal
-			i(209604),	-- Ensemble: Raiment of Amirdrassil
 			i(210254),	-- Dreamsurge Cocoon
 			i(211260),	-- Crimson Gladiator's Spear
 			filter(MISC, {
@@ -1111,7 +1102,6 @@ root(ROOTS.Unsorted, {
 				q(77162),	--
 				q(77177),	--
 				q(77196),	--
-				q(77201),	-- A Personal Offering
 				q(77319),	--
 				q(77320),	--
 				q(77321),	--
@@ -1154,7 +1144,6 @@ root(ROOTS.Unsorted, {
 				q(77752),	--
 				q(77753),	--
 				q(77758),	--
-				q(77770),	--
 				q(77772),	--
 				q(77773),	--
 				q(77803),	--
@@ -1299,7 +1288,6 @@ root(ROOTS.Unsorted, {
 				q(78176),	--
 				-- 10.2.0.52188
 				q(76279),	--
-				q(78086),	--
 				q(79332),	--
 			}),
 			--]]

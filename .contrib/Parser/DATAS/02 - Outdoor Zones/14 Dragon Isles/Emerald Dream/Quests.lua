@@ -513,9 +513,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["provider"] = { "n", 206397 },	-- Merithra of the Dream
 					["coord"] = { 14.8, 55.8, OHNAHRAN_PLAINS },
 				}),
+				q(77201, {	-- A Personal Offering
+					["sourceQuests"] = { 77329 },	-- Auspicious Gathering (TODO: may be required finishing 76213 in addition?)
+					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind
+					["races"] = { NIGHTELF },
+					["coord"] = { 50.8, 61.4, 2239 },	-- Amirdrassil
+					["g"] = {
+						i(209604, {	-- Ensemble: Raiment of Amirdrassi
+							i(209591),	-- Wristbands of Chosen Renewal
+							i(209592),	-- Belt of Chosen Renewal
+							i(209593),	-- Shoulders of Chosen Renewal
+							i(209594),	-- Legguards of Chosen Renewal
+							i(209595),	-- Crown of Chosen Renewal
+							i(209596),	-- Grips of Chosen Renewal
+							i(209597),	-- Anklets of Chosen Renewal
+							i(209598),	-- Wraps of Chosen Renewal
+						}),
+					},
+				}),
 				q(77200, {	-- Offerings for the Well
 					["sourceQuests"] = { 77329 },	-- Auspicious Gathering
-					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind (TODO: re-check npcID)
+					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind
 					["coord"] = { 50.8, 61.4, 2239 },	-- Amirdrassil
 					["g"] = {
 						i(208230),	-- Anaya's Pendant (QI!)
@@ -526,12 +544,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				q(76280, {	-- New Moon
 					["sourceQuests"] = { 77200 },	-- Offerings for the Well
-					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind (TODO: re-check npcID)
+					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind
 					["coord"] = { 50.8, 61.4, 2239 },	-- Amirdrassil
 				}),
 				q(76281, {	-- Something Worth Celebrating
 					["sourceQuests"] = { 76280 },	-- New Moon
-					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind  (TODO: re-check npcID)
+					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind
 					["coord"] = { 50.8, 61.5, 2239 },	-- Amirdrassil
 				}),
 				q(76282, {	-- A Disquieting Feeling
@@ -1108,6 +1126,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77769),	-- 'Stay a while and listen' Delaryn Summermoon (n: 206930) during qID 76281 (Something Worth Celebrating)
 		q(77768),	-- 'Stay a while and listen' Tyrande Whisperwind (n: 206402) during qID 76281 (Something Worth Celebrating)
 		q(77771),	-- 'Stay a while and listen' Lady Jaina Proudmoore (n: 206943) during qID 76281 (Something Worth Celebrating)
+		q(77770),	-- 'Stay a while and listen' Lady Jaina Proudmoore (n: 209610) during qID 76283 (Andu-falah-dor)
+		--q(),	-- 'Stay a while and listen' Watcher Koranos (n: 209334) during qID 76283 (Andu-falah-dor) (have dialog above him, but nothing when you talk to him)
 		-- Dryad Garden
 		q(77808),	-- Quest "What Do I Call You?": Pick the title of "Mother"
 		q(77809),	-- Quest "What Do I Call You?": Pick the title of "Father"
@@ -1138,5 +1158,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77759),	-- after turn in qID 77711 (And a Pinch of Magic), when animation start pop around flower (spellID 420720)
 		--
 		q(78707),	-- Moonberry's Many Mischief Makers (itemID 210996)
+		q(78086),	-- Ensemble: Raiment of Amirdrassi (itemID 209604)
 	}),
 }));
