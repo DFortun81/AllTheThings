@@ -1113,7 +1113,6 @@ root(ROOTS.Unsorted, {
 				q(76466),	--
 				q(76467),	--
 				q(76468),	--
-				q(76541),	--
 				q(76542),	--
 				q(76543),	--
 				q(77101),	-- Ingredient Quest Template
