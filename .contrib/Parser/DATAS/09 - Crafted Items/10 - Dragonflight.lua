@@ -20,13 +20,6 @@ local function FirstSkin(questID, creatureID, added, group)
 	end
 	return t;
 end
-local function FirstSkinAnniversaryWB(questID, name, added)
-	local t = { ["questID"] = questID, ["name"] = name, };
-	if added then
-		t.timeline = { added };
-	end
-	return t;
-end
 
 root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	i(190456),	-- Artisan's Mettle
@@ -2970,7 +2963,6 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstSkin(74219, 187111),	-- Skinning Ancient Hornswog
 			FirstSkin(74197, 193231),	-- Skinning Ancient Tundrafur (spawns with Blightpaw)
 			FirstSkin(74162, 193341),	-- Skinning Angen (Great Hunt)
-			applyevent(EVENTS.WOW_ANNIVERSARY, FirstSkinAnniversaryWB(77792, "Emeriss, Lethon, Taerar, Ysondre", ADDED_10_2_0)),	-- Skinning Any Anniversary World Boss
 			FirstSkin(74225, 190986),	-- Skinning Battlehorn Pyrhus
 			FirstSkin(74174, 193168),	-- Skinning Biryuk
 			FirstSkin(74122, 197353),	-- Skinning Blisterhide
@@ -3445,6 +3437,9 @@ root(ROOTS.HiddenQuestTriggers, {
 		prof(MINING, {
 			-- TODO: these are possibly weekly, perhaps track them normally
 			q(66936),	-- Heated Ore Sample / Unyielding Stone Chunk
+		}),
+		prof(SKINNING, {
+			q(77792),	-- Dreamscale daily lockout for anniversary world boss (Emeriss, Lethon, Taerar, Ysondre)
 		}),
 		prof(TAILORING, {
 			q(71946),	-- Timeweaving unlocked
