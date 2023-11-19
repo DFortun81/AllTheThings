@@ -60,7 +60,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(10297, {	-- The Opening of the Dark Portal
 					["qg"] = 20201,	-- Sa'at
+					-- TODO Confirm if required in classic
+					-- #if ANYCLASSIC
 					["sourceQuest"] = 10296,	-- The Black Morass
+					-- #endif
 					["cost"] = {
 						{ "i", 24289, 1 },	-- Chrono-beacon
 					},
