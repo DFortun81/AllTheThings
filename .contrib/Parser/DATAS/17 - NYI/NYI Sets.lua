@@ -2588,43 +2588,43 @@ root(ROOTS.NeverImplemented, {
 						}),
 					}),
 					cl(MONK, {
-							cl(MONK, BREWMASTER, {
-								i(177345),	-- Mistdancer Spire
-								i(177341),	-- Mistdancer Amulet
-								i(177342),	-- Mistdancer Band of Stoicism
-								i(177343),	-- Mistdancer Ring of Stoicism
-								i(177346),	-- Mistdancer Defender Idol
-								i(177344),	-- Mistdancer Defender Stone
-		
-							}),
-							cl(MONK, MISTWEAVER, {
-								i(177353),	-- Mistdancer Staff
-								i(177349),	-- Mistdancer Necklace
-								i(177347),	-- Mistdancer Cloak of Wisdom
-								i(177495),	-- Mistdancer Bindings
-								i(177490),	-- Mistdancer Gloves
-								i(177494),	-- Mistdancer Waistband
-								i(177492),	-- Mistdancer Britches
-								i(177489),	-- Mistdancer Boots
-								i(177351),	-- Mistdancer Band of Wisdom
-								i(177350),	-- Mistdancer Ring of Wisdom
-								i(177348),	-- Mistdancer Idol of Wisdom
-								i(177352),	-- Mistdancer Stone of Wisdom
-							}),
-							cl(MONK, WINDWALKER, {
-								i(177354),	-- Mistdancer Sword
-								i(177356),	-- Mistdancer Choker
-								i(177360),	-- Mistdancer Cloak of Rage
-								i(177488),	-- Mistdancer Cuffs
-								i(177483),	-- Mistdancer Handguards
-								i(177487),	-- Mistdancer Cord
-								i(177485),	-- Mistdancer Legguards
-								i(177482),	-- Mistdancer Footpads
-								i(177357),	-- Mistdancer Band of Onslaught
-								i(177358),	-- Mistdancer Ring of Onslaught
-								i(177355),	-- Mistdancer Idol of Rage
-								i(177359),	-- Mistdancer Stone of Rage
-							}),
+						cl(MONK, BREWMASTER, {
+							i(177345),	-- Mistdancer Spire
+							i(177341),	-- Mistdancer Amulet
+							i(177342),	-- Mistdancer Band of Stoicism
+							i(177343),	-- Mistdancer Ring of Stoicism
+							i(177346),	-- Mistdancer Defender Idol
+							i(177344),	-- Mistdancer Defender Stone
+	
+						}),
+						cl(MONK, MISTWEAVER, {
+							i(177353),	-- Mistdancer Staff
+							i(177349),	-- Mistdancer Necklace
+							i(177347),	-- Mistdancer Cloak of Wisdom
+							i(177495),	-- Mistdancer Bindings
+							i(177490),	-- Mistdancer Gloves
+							i(177494),	-- Mistdancer Waistband
+							i(177492),	-- Mistdancer Britches
+							i(177489),	-- Mistdancer Boots
+							i(177351),	-- Mistdancer Band of Wisdom
+							i(177350),	-- Mistdancer Ring of Wisdom
+							i(177348),	-- Mistdancer Idol of Wisdom
+							i(177352),	-- Mistdancer Stone of Wisdom
+						}),
+						cl(MONK, WINDWALKER, {
+							i(177354),	-- Mistdancer Sword
+							i(177356),	-- Mistdancer Choker
+							i(177360),	-- Mistdancer Cloak of Rage
+							i(177488),	-- Mistdancer Cuffs
+							i(177483),	-- Mistdancer Handguards
+							i(177487),	-- Mistdancer Cord
+							i(177485),	-- Mistdancer Legguards
+							i(177482),	-- Mistdancer Footpads
+							i(177357),	-- Mistdancer Band of Onslaught
+							i(177358),	-- Mistdancer Ring of Onslaught
+							i(177355),	-- Mistdancer Idol of Rage
+							i(177359),	-- Mistdancer Stone of Rage
+						}),
 					}),
 					cl(PALADIN, {
 						cl(PALADIN, HOLY, {
