@@ -1186,6 +1186,23 @@ root(ROOTS.NeverImplemented, {
 			})),
 		}),
 		tier(WOD_TIER, {
+			-- 6.0.1
+			tier(WOD_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 6.0.1" } }, {
+				-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
+				n(CLASS_TRIAL, {
+					cl(DRUID, {
+						cl(DRUID, GUARDIAN, {
+							i(117536),	-- Springrain Choker
+							i(117535),	-- Springrain Cloak of Durability
+							i(117539),	-- Springrain Band of Durability
+							i(117538),	-- Springrain Ring of Durability
+							i(117537),	-- Springrain Idol of Durability
+							i(117540),	-- Springrain Stone of Durability
+						}),
+					}),
+				}),
+			})),
+
 			-- 6.2.0
 			tier(WOD_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 6.2.0" } }, {
 				n(SEASON_PRIMAL, {
@@ -1265,6 +1282,72 @@ root(ROOTS.NeverImplemented, {
 						i(127092),	-- Gladiator's Plate Gauntlets
 						-- i(127103),	-- Gladiator's Plate Shoulders	-- in NYI Sourceless
 						i(127114),	-- Gladiator's Plate Legguards
+					}),
+				}),
+			})),
+
+			-- 6.2.2
+			tier(WOD_TIER, 2.2, bubbleDown({ ["timeline"] = { "created 6.2.2" } }, {
+				-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
+				n(CLASS_TRIAL, {
+					cl(DEATHKNIGHT, {
+						cl(DEATHKNIGHT, BLOOD, {
+							i(129426),	-- Heart-Lesion Greatsword
+							i(129446),	-- Heart-Lesion Faceguard
+							i(129448),	-- Heart-Lesion Amulet
+							i(129453),	-- Heart-Lesion Shoulderguards
+							i(129443),	-- Heart-Lesion Cloak of Stoicism
+							i(129442),	-- Heart-Lesion Chestguard
+							i(129455),	-- Heart-Lesion Armguards
+							i(129445),	-- Heart-Lesion Handguards
+							i(129454),	-- Heart-Lesion Waistband
+							i(129447),	-- Heart-Lesion Legguards
+							i(129444),	-- Heart-Lesion Greaves
+							i(129451),	-- Heart-Lesion Band of Stoicism
+							i(129450),	-- Heart-Lesion Ring of Stoicism
+							i(129449),	-- Heart-Lesion Defender Idol
+							i(129452),	-- Heart-Lesion Defender Stone
+						}),
+					}),
+					cl(DRUID, {
+						cl(DRUID, GUARDIAN, {
+							i(129603),	-- Springrain Cloak of Durability
+							i(129607),	-- Springrain Band of Durability
+							i(129606),	-- Springrain Ring of Durability
+							i(129605),	-- Springrain Idol of Durability
+							i(129608),	-- Springrain Stone of Durability
+						}),
+						cl(DRUID, RESTORATION, {
+							i(129602),	-- Springrain Staff
+							i(129597),	-- Springrain Hood
+							i(129599),	-- Springrain Shoulders
+							i(129587),	-- Springrain Cloak of Wisdom
+							i(129594),	-- Springrain Jerkin
+							i(129601),	-- Springrain Bindings
+							i(129596),	-- Springrain Gloves
+							i(129600),	-- Springrain Waistband
+							i(129598),	-- Springrain Britches
+							i(129595),	-- Springrain Boots
+							i(129590),	-- Springrain Band of Wisdom
+							i(129591),	-- Springrain Ring of Wisdom
+							i(129589),	-- Springrain Idol of Wisdom
+							i(129592),	-- Springrain Stone of Wisdom
+						}),
+					}),
+					cl(MAGE, {
+						cl(MAGE, FROST, {
+							i(129523),	-- Mountainsage Wand
+						}),
+					}),
+					cl(PRIEST, {
+						cl(PRIEST, SHADOW, {
+							i(129404),	-- Communal Stave
+						}),
+					}),
+					cl(WARLOCK, {
+						cl(WARLOCK, AFFLICTION, {
+							i(129423),	-- Felsoul Wand
+						}),
 					}),
 				}),
 			})),
@@ -1762,8 +1845,342 @@ root(ROOTS.NeverImplemented, {
 					}),
 				}),
 			})),
+
 			-- 7.2.5
 			tier(LEGION_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 7.2.5" } }, {
+				-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
+				n(CLASS_TRIAL, {
+					cl(DEATHKNIGHT, {
+						cl(DEATHKNIGHT, UNHOLY, {
+							i(150624),	-- Heart-Lesion Helm
+							i(157661),	-- Heart-Lesion Helm
+							i(150626),	-- Heart-Lesion Pauldrons
+							i(157663),	-- Heart-Lesion Pauldrons
+							i(150621),	-- Heart-Lesion Breastplate
+							i(157658),	-- Heart-Lesion Breastplate
+							i(150628),	-- Heart-Lesion Vambraces
+							i(157665),	-- Heart-Lesion Vambraces
+							i(150623),	-- Heart-Lesion Gauntlets
+							i(157660),	-- Heart-Lesion Gauntlets
+							i(150627),	-- Heart-Lesion Girdle
+							i(157664),	-- Heart-Lesion Girdle
+							i(150625),	-- Heart-Lesion Legplates
+							i(157662),	-- Heart-Lesion Legplates
+							i(150622),	-- Heart-Lesion Sabatons
+							i(157659),	-- Heart-Lesion Sabatons
+						}),
+						-- #if BEFORE 10.1.5
+						cl(DEATHKNIGHT, BLOOD, {
+							i(153717),	-- Heart-Lession Greatsword
+							i(153737),	-- Heart-Lesion Faceguard
+							i(153739),	-- Heart-Lesion Amulet
+							i(153744),	-- Heart-Lesion Shoulderguards
+							i(153734),	-- Heart-Lesion Cloak of Stoicism
+							i(153733),	-- Heart-Lesion Chestguard
+							i(153746),	-- Heart-Lesion Armguards
+							i(153736),	-- Heart-Lesion Handguards
+							i(153745),	-- Heart-Lesion Waistband
+							i(153738),	-- Heart-Lesion Legguards
+							i(153735),	-- Heart-Lesion Greaves
+							i(153742),	-- Heart-Lesion Band of Stoicism
+							i(153741),	-- Heart-Lesion Ring of Stoicism
+							i(153740),	-- Heart-Lesion Defender Idol
+							i(153743),	-- Heart-Lesion Defender Stone
+						}),
+						-- #endif
+					}),
+					cl(DEMONHUNTER, {
+						cl(DEMONHUNTER, HAVOC, {
+							i(150715),	-- Illidari Warglaive
+							i(150716),	-- Illidari Blindfold
+							i(150726),	-- Illidari Blindfold
+							i(150722),	-- Illidari Shoulders
+							i(150724),	-- Illidari Shoulders
+							i(150720),	-- Illidari Robe
+							i(150728),	-- Illidari Robe
+							i(150718),	-- Illidari Bracers
+							i(150729),	-- Illidari Bracers
+							i(150721),	-- Illidari Gloves
+							i(150727),	-- Illidari Gloves
+							i(150719),	-- Illidari Belt
+							i(150731),	-- Illidari Belt
+							i(150717),	-- Illidari Leggings
+							i(150725),	-- Illidari Leggings
+							i(150723),	-- Illidari Boots
+							i(150730),	-- Illidari Boots
+						}),
+					}),
+					cl(DRUID, {
+						cl(DRUID, BALANCE, {
+							i(150632),	-- Springrain Headpiece
+							i(150634),	-- Springrain Spaulders
+							i(150629),	-- Springrain Tunic
+							i(150636),	-- Springrain Bracers
+							i(150631),	-- Springrain Grips
+							i(150635),	-- Springrain Belt
+							i(150633),	-- Springrain Leggings
+							i(150630),	-- Springrain Treads
+						}),
+						-- #if BEFORE 10.1.5
+						cl(DRUID, FERAL, {
+							i(153794),	-- Springrain Choker
+						}),
+						cl(DRUID, GUARDIAN, {
+							i(153793),	-- Springrain Cloak of Durability
+							i(153797),	-- Springrain Band of Durability
+							i(153796),	-- Springrain Ring of Durability
+							i(153795),	-- Springrain Idol of Durability
+							i(153798),	-- Springrain Stone of Durability
+						}),
+						cl(DRUID, RESTORATION, {
+							i(153792),	-- Springrain Staff
+							i(153787),	-- Springrain Hood
+							i(153778),	-- Springrain Necklace
+							i(153789),	-- Springrain Shoulders
+							i(153777),	-- Springrain Cloak of Wisdom
+							i(153784),	-- Springrain Jerkin
+							i(153791),	-- Springrain Bindings
+							i(153786),	-- Springrain Gloves
+							i(153790),	-- Springrain Waistband
+							i(153788),	-- Springrain Britches
+							i(153785),	-- Springrain Boots
+							i(153780),	-- Springrain Band of Wisdom
+							i(153781),	-- Springrain Ring of Wisdom
+							i(153779),	-- Springrain Idol of Wisdom
+							i(153782),	-- Springrain Stone of Wisdom
+						}),
+						-- #endif
+					}),
+					cl(HUNTER, {
+						cl(HUNTER, BEAST_MASTERY, {
+							i(150640),	-- Trailseeker Helm
+							i(150642),	-- Trailseeker Spaulders
+							i(150637),	-- Trailseeker Vest
+							i(150644),	-- Trailseeker Bracers
+							i(150639),	-- Trailseeker Gauntlets
+							i(150643),	-- Trailseeker Belt
+							i(150641),	-- Trailseeker Legguards
+							i(150638),	-- Trailseeker Greaves
+						}),
+					}),
+					cl(MAGE, {
+						cl(MAGE, FROST, {
+							i(150651),	-- Mountainsage Cord
+							i(150646),	-- Mountainsage Handwraps
+							i(150647),	-- Mountainsage Hood
+							i(150648),	-- Mountainsage Leggings
+							i(150649),	-- Mountainsage Robe
+							i(150645),	-- Mountainsage Sandals
+							i(150650),	-- Mountainsage Shoulderpads
+							i(150652),	-- Mountainsage Wristwraps
+							i(153828),	-- Mountainsage Wand
+						}),
+					}),
+					cl(MONK, {
+						-- #if BEFORE 10.1.5
+						cl(MONK, BREWMASTER, {
+							i(153831),	-- Mistdancer Amulet
+							i(153832),	-- Mistdancer Band of Stoicism
+							i(153833),	-- Mistdancer Ring of Stoicism
+							i(153836),	-- Mistdancer Defender Idol
+							i(153834),	-- Mistdancer Defender Stone
+						}),
+						cl(MONK, MISTWEAVER, {
+							i(153847),	-- Mistdancer Hood
+							i(153851),	-- Mistdancer Necklace
+							i(153855),	-- Mistdancer Shoulders
+							i(153848),	-- Mistdancer Cloak of Wisdom
+							i(153866),	-- Mistdancer Jerkin
+							i(153858),	-- Mistdancer Bindings
+							i(153846),	-- Mistdancer Gloves
+							i(153857),	-- Mistdancer Waistband
+							i(153850),	-- Mistdancer Britches
+							i(153845),	-- Mistdancer Boots
+							i(153853),	-- Mistdancer Band of Wisdom
+							i(153852),	-- Mistdancer Ring of Wisdom
+							i(153849),	-- Mistdancer Idol of Wisdom
+							i(153854),	-- Mistdancer Stone of Wisdom
+						}),
+						-- #endif
+						cl(MONK, WINDWALKER, {
+							i(150656),	-- Mistdancer Helm
+							i(150658),	-- Mistdancer Pauldrons
+							i(150653),	-- Mistdancer Vest
+							i(150660),	-- Mistdancer Cuffs
+							i(150655),	-- Mistdancer Handguards
+							i(150659),	-- Mistdancer Cord
+							i(150657),	-- Mistdancer Legguards
+							i(150654),	-- Mistdancer Footpads
+						}),
+					}),
+					cl(PALADIN, {
+						-- #if BEFORE 10.1.5
+						cl(PALADIN, HOLY, {
+							i(153890),	-- Sunsoul Shield
+							i(153879),	-- Sunsoul Headpiece
+							i(153881),	-- Sunsoul Necklace
+							i(153886),	-- Sunsoul Spaulders
+							i(153876),	-- Sunsoul Cloak of Wisdom
+							i(153875),	-- Sunsoul Breastplate
+							i(153888),	-- Sunsoul Armplates
+							i(153878),	-- Sunsoul Gloves
+							i(153887),	-- Sunsoul Belt
+							i(153880),	-- Sunsoul Leggings
+							i(153877),	-- Sunsoul Boots
+							i(153884),	-- Sunsoul Band of Wisdom
+							i(153883),	-- Sunsoul Ring of Wisdom
+							i(153882),	-- Sunsoul Idol of Wisdom
+							i(153885),	-- Sunsoul Stone of Wisdom
+						}),
+						cl(PALADIN, PROTECTION, {
+							i(153904),	-- Sunsoul Faceguard
+							i(153906),	-- Sunsoul Amulet
+							i(153911),	-- Sunsoul Shoulderguards
+							i(153901),	-- Sunsoul Cloak of Stoicism
+							i(153900),	-- Sunsoul Chestguard
+							i(153913),	-- Sunsoul Armguards
+							i(153903),	-- Sunsoul Handguards
+							i(153912),	-- Sunsoul Waistband
+							i(153905),	-- Sunsoul Legguards
+							i(153902),	-- Sunsoul Greaves
+							i(153909),	-- Sunsoul Band of Stoicism
+							i(153908),	-- Sunsoul Ring of Stoicism
+							i(153907),	-- Sunsoul Defender Idol
+							i(153910),	-- Sunsoul Defender Stone
+						}),
+						-- #endif
+						cl(PALADIN, RETRIBUTION, {
+							i(150664),	-- Sunsoul Helm
+							i(150666),	-- Sunsoul Pauldrons
+							i(150661),	-- Sunsoul Battleplate
+							i(150668),	-- Sunsoul Vambraces
+							i(150663),	-- Sunsoul Gauntlets
+							i(150667),	-- Sunsoul Girdle
+							i(150665),	-- Sunsoul Legplates
+							i(150662),	-- Sunsoul Sabatons
+						}),
+					}),
+					cl(PRIEST, {
+						cl(PRIEST, HOLY, {
+							-- #if BEFORE 10.1.5
+							i(153919),	-- Communal Wand
+							-- #endif
+							i(150671),	-- Communal Cowl
+							i(150674),	-- Communal Mantle
+							i(150673),	-- Communal Robe
+							i(150676),	-- Communal Bindings
+							i(150670),	-- Communal Gloves
+							i(150675),	-- Communal Sash
+							i(150672),	-- Communal Pants
+							i(150669),	-- Communal Boots
+						}),
+						-- #if BEFORE 10.1.5
+						cl(PRIEST, SHADOW, {
+							i(153944),	-- Communal Stave
+							i(153938),	-- Communal Cowl
+							i(153914),	-- Communal Medallion
+							i(153941),	-- Communal Mantle
+							i(153935),	-- Communal Cloak of Destruction
+							i(153940),	-- Communal Robe
+							i(153943),	-- Communal Bindings
+							i(153937),	-- Communal Gloves
+							i(153942),	-- Communal Sash
+							i(153939),	-- Communal Pants
+							i(153936),	-- Communal Boots
+							i(153916),	-- Communal Band of Destruction
+							i(153917),	-- Communal Ring of Destruction
+							i(153915),	-- Communal Idol of Destruction
+							i(153918),	-- Communal Stone of Destruction
+						}),
+						-- #endif
+					}),
+					cl(ROGUE, {
+						cl(ROGUE, ASSASSINATION, {
+							i(150680),	-- Lightdrinker Hood
+							i(150682),	-- Lightdrinker Shoulders
+							i(150677),	-- Lightdrinker Jerkin
+							i(150684),	-- Lightdrinker Bindings
+							i(150679),	-- Lightdrinker Gloves
+							i(150683),	-- Lightdrinker Waistband
+							i(150681),	-- Lightdrinker Britches
+							i(150678),	-- Lightdrinker Boots
+						}),
+					}),
+					cl(SHAMAN, {
+						cl(SHAMAN, ELEMENTAL, {
+							i(150688),	-- Streamtalker Coif
+							i(150690),	-- Streamtalker Pauldrons
+							i(150685),	-- Streamtalker Tunic
+							i(150692),	-- Streamtalker Armbands
+							i(150687),	-- Streamtalker Gloves
+							i(150691),	-- Streamtalker Belt
+							i(150689),	-- Streamtalker Legwraps
+							i(150686),	-- Streamtalker Boots
+						}),
+						-- #if BEFORE 10.1.5
+						cl(SHAMAN, RESTORATION, {
+							i(153999),	-- Streamtalker Slicers
+							i(154003),	-- Streamtalker Cowl
+							i(153993),	-- Streamtalker Necklace
+							i(154006),	-- Streamtalker Spaulders
+							i(153992),	-- Streamtalker Cloak of Wisdom
+							i(154000),	-- Streamtalker Vest
+							i(154008),	-- Streamtalker Bracers
+							i(154002),	-- Streamtalker Grips
+							i(154007),	-- Streamtalker Girdle
+							i(154004),	-- Streamtalker Leggings
+							i(154001),	-- Streamtalker Sabatons
+							i(153996),	-- Streamtalker Band of Wisdom
+							i(153995),	-- Streamtalker Ring of Wisdom
+							i(153994),	-- Streamtalker Idol of Wisdom
+							i(153997),	-- Streamtalker Stone of Wisdom
+						}),
+						-- #endif
+					}),
+					cl(WARLOCK, {
+						cl(WARLOCK, AFFLICTION, {
+							i(154022),	-- Felsoul Wand
+							i(150695),	-- Felsoul Cowl
+							i(150698),	-- Felsoul Shoulderpads
+							i(150697),	-- Felsoul Robe
+							i(150700),	-- Felsoul Wristwraps
+							i(150694),	-- Felsoul Handwraps
+							i(150699),	-- Felsoul Cord
+							i(150696),	-- Felsoul Leggings
+							i(150693),	-- Felsoul Sandals
+						}),
+					}),
+					cl(WARRIOR, {
+						cl(WARRIOR, ARMS, {
+							i(150704),	-- Oathsworn Helm
+							i(150706),	-- Oathsworn Pauldrons
+							i(150701),	-- Oathsworn Breastplate
+							i(150708),	-- Oathsworn Vambraces
+							i(150703),	-- Oathsworn Gauntlets
+							i(150707),	-- Oathsworn Girdle
+							i(150705),	-- Oathsworn Legplates
+							i(150702),	-- Oathsworn Sabatons
+						}),
+						-- #if BEFORE 10.1.5
+						cl(WARRIOR, PROTECTION, {
+							i(154041),	-- Oathsworn Faceguard
+							i(154043),	-- Oathsworn Amulet
+							i(154048),	-- Oathsworn Shoulderguards
+							i(154038),	-- Oathsworn Cloak of Stoicism
+							i(154037),	-- Oathsworn Chestguard
+							i(154050),	-- Oathsworn Armguards
+							i(154040),	-- Oathsworn Handguards
+							i(154049),	-- Oathsworn Waistband
+							i(154042),	-- Oathsworn Legguards
+							i(154039),	-- Oathsworn Greaves
+							i(154045),	-- Oathsworn Band of Stoicism
+							i(154046),	-- Oathsworn Ring of Stoicism
+							i(154044),	-- Oathsworn Defender Idol
+							i(154047),	-- Oathsworn Defender Stone
+						}),
+						-- #endif
+					}),
+				}),
 				n(PARTY_SYNC, {
 					cl(DEATHKNIGHT, {
 						i(150609),	-- Bloodcaked Runeblade
@@ -1851,7 +2268,553 @@ root(ROOTS.NeverImplemented, {
 				}),
 			})),	
 		}),
+		tier(BFA_TIER, {
+			-- 8.0.1
+			tier(BFA_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 8.0.1" } }, {
+				-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
+				n(CLASS_TRIAL, {
+					cl(DEMONHUNTER, HAVOC, {
+						i(164760),	-- Illidari Warglaives
+						i(164748),	-- Illidari Blindfold
+						i(164758),	-- Illidari Chain
+						i(164746),	-- Illidari Shoulders
+						i(164759),	-- Illidari Drape
+						i(164750),	-- Illidari Robe
+						i(164751),	-- Illidari Bracers
+						i(164749),	-- Illidari Gloves
+						i(164753),	-- Illidari Belt
+						i(164747),	-- Illidari Leggings
+						i(164752),	-- Illidari Boots
+						i(164756),	-- Illidari Band
+						i(164757),	-- Illidari Ring
+						i(164755),	-- Charm of Demonic Fire
+						i(164754),	-- Demon Trophy
+					}),
+				}),
+			})),
+
+			-- 8.2.5
+			tier(BFA_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 8.2.5" } }, {
+				-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
+				n(CLASS_TRIAL, {
+					cl(DEATHKNIGHT, {
+						cl(DEATHKNIGHT, UNHOLY, {
+							i(170593),	-- Heart-Lesion Pendant
+						}),
+						cl(DEATHKNIGHT, BLOOD, {
+							i(170590),	-- Heart-Lesion Greatsword
+							i(170770),	-- Heart-Lesion Faceguard
+							i(170599),	-- Heart-Lesion Amulet
+							i(170772),	-- Heart-Lesion Shoulderguards
+							i(170598),	-- Heart-Lesion Cloak of Stoicism
+							i(170767),	-- Heart-Lesion Chestguard
+							i(170774),	-- Heart-Lesion Armguards
+							i(170769),	-- Heart-Lesion Handguards
+							i(170773),	-- Heart-Lesion Waistband
+							i(170771),	-- Heart-Lesion Legguards
+							i(170768),	-- Heart-Lesion Greaves
+							i(170602),	-- Heart-Lesion Band of Stoicism
+							i(170601),	-- Heart-Lesion Ring of Stoicism
+							i(170600),	-- Heart-Lesion Defender Idol
+							i(170603),	-- Heart-Lesion Defender Stone
+						}),
+					}),
+					cl(DEMONHUNTER, {
+						cl(DEMONHUNTER, HAVOC, {
+							i(170927),	-- Illidari Shoulders
+							i(170939),	-- Illidari Chain
+							i(170937),	-- Illidari Band
+							i(170938),	-- Illidari Ring
+						}),
+					}),
+					cl(DRUID, {
+						cl(DRUID, BALANCE, {
+							i(170627),	-- Springrain Choker
+						}),
+						cl(DRUID, FERAL, {
+							i(170606),	-- Springrain Choker
+						}),
+						cl(DRUID, GUARDIAN, {
+							i(170619),	-- Springrain Necklace
+							i(170626),	-- Springrain Cloak of Durability
+							i(170630),	-- Springrain Band of Durability
+							i(170629),	-- Springrain Ring of Durability
+							i(170628),	-- Springrain Idol of Durability
+							i(170631),	-- Springrain Stone of Durability
+						}),
+						cl(DRUID, RESTORATION, {
+							i(170625),	-- Springrain Staff -- not granted with boost
+							i(170612),	-- Springrain Medallion
+						}),
+					}),
+					cl(HUNTER, {
+						cl(HUNTER, BEAST_MASTERY, {
+							i(170633),	-- Trailseeker Choker
+						}),
+					}),
+					cl(MAGE, {
+						cl(MAGE, FROST, {
+							i(170640),	-- Mountainsage Medallion
+						}),
+					}),
+					cl(MONK, {
+						cl(MONK, BREWMASTER, {
+							i(170647),	-- Mistdancer Amulet
+							i(170648),	-- Mistdancer Band of Stoicism
+							i(170649),	-- Mistdancer Ring of Stoicism
+							i(170652),	-- Mistdancer Defender Idol
+							i(170650),	-- Mistdancer Defender Stone
+						}),
+						cl(MONK, MISTWEAVER, {
+							i(170655),	-- Mistdancer Necklace
+						}),
+						cl(MONK, WINDWALKER, {
+							i(170662),	-- Mistdancer Choker
+						}),
+					}),
+					cl(PALADIN, {
+						cl(PALADIN, HOLY, {
+							i(170674),	-- Sunsoul Shield -- not granted with boost
+							i(170668),	-- Sunsoul Necklace
+						}),
+						cl(PALADIN, PROTECTION, {
+							i(170685),	-- Sunsoul Amulet
+						}),
+						cl(PALADIN, RETRIBUTION, {
+							i(170679),	-- Sunsoul Pendant
+						}),
+					}),
+					cl(PRIEST, {
+						cl(PRIEST, DISCIPLINE, {
+							i(170696),	-- Communal Necklace
+						}),
+						cl(PRIEST, SHADOW, {
+							i(170703),	-- Communal Stave
+							i(170865),	-- Communal Cowl
+							i(170690),	-- Communal Medallion
+							i(170868),	-- Communal Mantle
+							i(170702),	-- Communal Cloak of Destruction
+							i(170867),	-- Communal Robe
+							i(170870),	-- Communal Bindings
+							i(170864),	-- Communal Gloves
+							i(170869),	-- Communal Sash
+							i(170866),	-- Communal Pants
+							i(170863),	-- Communal Boots
+							i(170692),	-- Communal Band of Destruction
+							i(170693),	-- Communal Ring of Destruction
+							i(170691),	-- Communal Idol of Destruction
+							i(170694),	-- Communal Stone of Destruction
+						}),
+					}),
+					cl(ROGUE, {
+						cl(ROGUE, ASSASSINATION, {
+							i(170705),	-- Lightdrinker Choker
+						}),
+					}),
+					cl(SHAMAN, {
+						cl(SHAMAN, ELEMENTAL, {
+							i(170719),	-- Streamtalker Medallion
+						}),
+						cl(SHAMAN, ENHANCEMENT, {
+							i(170714),	-- Streamtalker Choker
+						}),
+						cl(SHAMAN, RESTORATION, {
+							i(170734),	-- Streamtalker Slicers -- not granted with boost
+							i(170735),	-- Streamtalker Shield -- not granted with boost
+							i(170728),	-- Streamtalker Necklace
+						}),
+					}),
+					cl(WARLOCK, {
+						cl(WARLOCK, AFFLICTION, {
+							i(170736),	-- Felsoul Medallion
+						}),
+					}),
+					cl(WARRIOR, {
+						cl(WARRIOR, ARMS, {
+							i(170757),	-- Oathsworn Pendant
+						}),
+						cl(WARRIOR, PROTECTION, {
+							i(170922),	-- Oathsworn Faceguard
+							i(170748),	-- Oathsworn Amulet
+							i(170924),	-- Oathsworn Shoulderguards
+							i(170747),	-- Oathsworn Cloak of Stoicism
+							i(170919),	-- Oathsworn Chestguard
+							i(170926),	-- Oathsworn Armguards
+							i(170921),	-- Oathsworn Handguards
+							i(170925),	-- Oathsworn Waistband
+							i(170923),	-- Oathsworn Legguards
+							i(170920),	-- Oathsworn Greaves
+							i(170750),	-- Oathsworn Band of Stoicism
+							i(170751),	-- Oathsworn Ring of Stoicism
+							i(170749),	-- Oathsworn Defender Idol
+							i(170752),	-- Oathsworn Defender Stone
+						}),
+					}),
+				}),
+			})),
+		}),
 		tier(SL_TIER, {
+			-- 9.0.1
+			tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 9.0.1" } }, {
+				-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
+				n(CLASS_TRIAL, {
+					cl(DEATHKNIGHT, {
+						cl(DEATHKNIGHT, UNHOLY, {
+							i(177287),	-- Heart-Lesion Blade
+							i(177289),	-- Heart-Lesion Pendant
+							i(177288),	-- Heart-Lesion Cloak of Battle
+							i(177433),	-- Heart-Lesion Vambraces
+							i(177428),	-- Heart-Lesion Gauntlets
+							i(177432),	-- Heart-Lesion Girdle
+							i(177430),	-- Heart-Lesion Legplates
+							i(177427),	-- Heart-Lesion Sabatons
+							i(177291),	-- Heart-Lesion Band of Might
+							i(177290),	-- Heart-Lesion Ring of Might
+							i(177293),	-- Heart-Lesion Idol of Battle
+							i(177292),	-- Heart-Lesion Stone of Battle
+						}),
+						cl(DEATHKNIGHT, BLOOD, {
+							i(177295),	-- Heart-Lesion Amulet
+							i(177294),	-- Heart-Lesion Cloak of Stoicism
+							i(177440),	-- Heart-Lesion Armguards
+							i(177436),	-- Heart-Lesion Handguards
+							i(177439),	-- Heart-Lesion Waistband
+							i(177437),	-- Heart-Lesion Legguards
+							i(177435),	-- Heart-Lesion Greaves
+							i(177298),	-- Heart-Lesion Band of Stoicism
+							i(177297),	-- Heart-Lesion Ring of Stoicism
+							i(177296),	-- Heart-Lesion Defender Idol
+							i(177299),	-- Heart-Lesion Defender Stone
+						}),
+					}),
+					cl(DEMONHUNTER, {
+						cl(DEMONHUNTER, HAVOC, {
+							i(177581),	-- Illidari Warglaive
+							i(177579),	-- Illidari Chain
+							i(177580),	-- Illidari Drape
+							i(177572),	-- Illidari Bracers
+							i(177570),	-- Illidari Gloves
+							i(177574),	-- Illidari Belt
+							i(177568),	-- Illidari Leggings
+							i(177573),	-- Illidari Boots
+							i(177577),	-- Illidari Band
+							i(177578),	-- Illidari Ring
+							i(177576),	-- Charm of Demonic Fire
+							i(177575),	-- Demon Trophy
+						}),
+					}),
+					cl(DRUID, {
+						cl(DRUID, BALANCE, {
+							i(177306),	-- Springrain Stave
+							i(177321),	-- Springrain Choker
+							i(177319),	-- Springrain Cloak of Destruction
+							i(177448),	-- Springrain Bracers
+							i(177443),	-- Springrain Grips
+							i(177447),	-- Springrain Belt
+							i(177445),	-- Springrain Leggings
+							i(177442),	-- Springrain Treads
+							i(177309),	-- Springrain Band of Destruction
+							i(177310),	-- Springrain Ring of Destruction
+							i(177308),	-- Springrain Idol of Destruction
+							i(177311),	-- Springrain Stone of Destruction
+						}),
+						cl(DRUID, FERAL, {
+							i(177312),	-- Springrain Spear
+							i(177301),	-- Springrain Choker
+							i(177300),	-- Springrain Cloak of Rage
+							i(177456),	-- Springrain Cuffs
+							i(177451),	-- Springrain Handguards
+							i(177455),	-- Springrain Cord
+							i(177453),	-- Springrain Legguards
+							i(177450),	-- Springrain Footpads
+							i(177304),	-- Springrain Band of Onslaught
+							i(177303),	-- Springrain Ring of Onslaught
+							i(177302),	-- Springrain Idol of Rage
+							i(177305),	-- Springrain Stone of Rage
+						}),
+						cl(DRUID, GUARDIAN, {
+							i(177314),	-- Springrain Necklace
+							i(177320),	-- Springrain Cloak of Durability
+							i(177324),	-- Springrain Band of Durability
+							i(177323),	-- Springrain Ring of Durability
+							i(177322),	-- Springrain Idol of Durability
+							i(177325),	-- Springrain Stone of Durability
+						}),
+						cl(DRUID, RESTORATION, {
+							i(177307),	-- Springrain Medallion
+							i(177313),	-- Springrain Cloak of Wisdom
+							i(177464),	-- Springrain Bindings
+							i(177459),	-- Springrain Gloves
+							i(177463),	-- Springrain Waistband
+							i(177461),	-- Springrain Britches
+							i(177458),	-- Springrain Boots
+							i(177316),	-- Springrain Band of Wisdom
+							i(177317),	-- Springrain Ring of Wisdom
+							i(177315),	-- Springrain Idol of Wisdom
+							i(177318),	-- Springrain Stone of Wisdom
+						}),
+					}),
+					cl(HUNTER, {
+						cl(HUNTER, BEAST_MASTERY, {
+							i(177332),	-- Trailseeker Shotgun
+							i(177333),	-- Trailseeker Spear
+							i(177327),	-- Trailseeker Choker
+							i(177326),	-- Trailseeker Cloak of Rage
+							i(177472),	-- Trailseeker Bracers
+							i(177467),	-- Trailseeker Gauntlets
+							i(177471),	-- Trailseeker Belt
+							i(177469),	-- Trailseeker Legguards
+							i(177466),	-- Trailseeker Greaves
+							i(177329),	-- Trailseeker Band of Onslaught
+							i(177330),	-- Trailseeker Ring of Onslaught
+							i(177328),	-- Trailseeker Idol of Rage
+							i(177331),	-- Trailseeker Stone of Rage
+						}),
+					}),
+					cl(MAGE, {
+						cl(MAGE, FROST, {
+							i(177340),	-- Mountainsage Staff
+							i(177334),	-- Mountainsage Medallion
+							i(177339),	-- Mountainsage Cloak of Destruction
+							i(177480),	-- Mountainsage Wristwraps
+							i(177474),	-- Mountainsage Handwraps
+							i(177479),	-- Mountainsage Cord
+							i(177476),	-- Mountainsage Leggings
+							i(177473),	-- Mountainsage Sandals
+							i(177336),	-- Mountainsage Band of Destruction
+							i(177337),	-- Mountainsage Ring of Destruction
+							i(177335),	-- Mountainsage Idol of Destruction
+							i(177338),	-- Mountainsage Stone of Destruction
+						}),
+					}),
+					cl(MONK, {
+							cl(MONK, BREWMASTER, {
+								i(177345),	-- Mistdancer Spire
+								i(177341),	-- Mistdancer Amulet
+								i(177342),	-- Mistdancer Band of Stoicism
+								i(177343),	-- Mistdancer Ring of Stoicism
+								i(177346),	-- Mistdancer Defender Idol
+								i(177344),	-- Mistdancer Defender Stone
+		
+							}),
+							cl(MONK, MISTWEAVER, {
+								i(177353),	-- Mistdancer Staff
+								i(177349),	-- Mistdancer Necklace
+								i(177347),	-- Mistdancer Cloak of Wisdom
+								i(177495),	-- Mistdancer Bindings
+								i(177490),	-- Mistdancer Gloves
+								i(177494),	-- Mistdancer Waistband
+								i(177492),	-- Mistdancer Britches
+								i(177489),	-- Mistdancer Boots
+								i(177351),	-- Mistdancer Band of Wisdom
+								i(177350),	-- Mistdancer Ring of Wisdom
+								i(177348),	-- Mistdancer Idol of Wisdom
+								i(177352),	-- Mistdancer Stone of Wisdom
+							}),
+							cl(MONK, WINDWALKER, {
+								i(177354),	-- Mistdancer Sword
+								i(177356),	-- Mistdancer Choker
+								i(177360),	-- Mistdancer Cloak of Rage
+								i(177488),	-- Mistdancer Cuffs
+								i(177483),	-- Mistdancer Handguards
+								i(177487),	-- Mistdancer Cord
+								i(177485),	-- Mistdancer Legguards
+								i(177482),	-- Mistdancer Footpads
+								i(177357),	-- Mistdancer Band of Onslaught
+								i(177358),	-- Mistdancer Ring of Onslaught
+								i(177355),	-- Mistdancer Idol of Rage
+								i(177359),	-- Mistdancer Stone of Rage
+							}),
+					}),
+					cl(PALADIN, {
+						cl(PALADIN, HOLY, {
+							i(177367),	-- Sunsoul Scepter
+							i(180716),	-- Sunsoul Scepter
+							i(180717),	-- Sunsoul Shield
+							i(177362),	-- Sunsoul Necklace
+							i(177361),	-- Sunsoul Cloak of Wisdom
+							i(177512),	-- Sunsoul Armplates
+							i(177507),	-- Sunsoul Gloves
+							i(177511),	-- Sunsoul Belt
+							i(177509),	-- Sunsoul Leggings
+							i(177506),	-- Sunsoul Boots
+							i(177365),	-- Sunsoul Band of Wisdom
+							i(177364),	-- Sunsoul Ring of Wisdom
+							i(177363),	-- Sunsoul Idol of Wisdom
+							i(177366),	-- Sunsoul Stone of Wisdom
+						}),
+						cl(PALADIN, PROTECTION, {
+							i(177368),	-- Sunsoul Sword
+							i(177369),	-- Sunsoul Bulwark
+							i(177378),	-- Sunsoul Amulet
+							i(177377),	-- Sunsoul Cloak of Stoicism
+							i(177520),	-- Sunsoul Armguards
+							i(177515),	-- Sunsoul Handguards
+							i(177519),	-- Sunsoul Waistband
+							i(177517),	-- Sunsoul Legguards
+							i(177514),	-- Sunsoul Greaves
+							i(177381),	-- Sunsoul Band of Stoicism
+							i(177380),	-- Sunsoul Ring of Stoicism
+							i(177379),	-- Sunsoul Defender Idol
+							i(177382),	-- Sunsoul Defender Stone
+						}),
+						cl(PALADIN, RETRIBUTION, {
+							i(177370),	-- Sunsoul Warmaul
+							i(177372),	-- Sunsoul Pendant
+							i(177371),	-- Sunsoul Cloak of Battle
+							i(177504),	-- Sunsoul Vambraces
+							i(177499),	-- Sunsoul Gauntlets
+							i(177503),	-- Sunsoul Girdle
+							i(177501),	-- Sunsoul Legplates
+							i(177498),	-- Sunsoul Sabatons
+							i(177374),	-- Sunsoul Band of Might
+							i(177373),	-- Sunsoul Ring of Might
+							i(177376),	-- Sunsoul Idol of Battle
+							i(177375),	-- Sunsoul Stone of Battle
+						}),
+					}),
+					cl(PRIEST, {
+						cl(PRIEST, DISCIPLINE, {
+							i(177394),	-- Communal Staff
+							i(177383),	-- Communal Medallion
+							i(177388),	-- Communal Cloak of Wisdom
+							i(177528),	-- Communal Wristwraps
+							i(177522),	-- Communal Handwraps
+							i(177527),	-- Communal Cord
+							i(177524),	-- Communal Leggings
+							i(177521),	-- Communal Sandals
+							i(177391),	-- Communal Band of Wisdom
+							i(177392),	-- Communal Ring of Wisdom
+							i(177390),	-- Communal Idol of Wisdom
+							i(177393),	-- Communal Stone of Wisdom
+						}),
+						cl(PRIEST, SHADOW, {
+							i(177389),	-- Communal Necklace
+							i(177395),	-- Communal Cloak of Destruction
+							i(177534),	-- Communal Bindings
+							i(177530),	-- Communal Gloves
+							i(177533),	-- Communal Sash
+							i(177531),	-- Communal Pants
+							i(177529),	-- Communal Boots
+							i(177385),	-- Communal Band of Destruction
+							i(177386),	-- Communal Ring of Destruction
+							i(177384),	-- Communal Idol of Destruction
+							i(177387),	-- Communal Stone of Destruction
+						}),
+					}),
+					cl(ROGUE, {
+						cl(ROGUE, ASSASSINATION, {
+							i(177402),	-- Lightdrinker Dagger
+							i(177403),	-- Lightdrinker Shiv
+							i(177404),	-- Lightdrinker Sword
+							i(177397),	-- Lightdrinker Choker
+							i(177396),	-- Lightdrinker Cloak of Rage
+							i(177542),	-- Lightdrinker Bindings
+							i(177537),	-- Lightdrinker Gloves
+							i(177541),	-- Lightdrinker Waistband
+							i(177539),	-- Lightdrinker Britches
+							i(177536),	-- Lightdrinker Boots
+							i(177399),	-- Lightdrinker Band of Onslaught
+							i(177400),	-- Lightdrinker Ring of Onslaught
+							i(177398),	-- Lightdrinker Idol of Rage
+							i(177401),	-- Lightdrinker Stone of Rage
+						}),
+					}),
+					cl(SHAMAN, {
+						cl(SHAMAN, ELEMENTAL, {
+							i(177417),	-- Streamtalker Aegis
+							i(177416),	-- Streamtalker Claws
+							i(177411),	-- Streamtalker Medallion
+							i(177425),	-- Streamtalker Cloak of Destruction
+							i(177550),	-- Streamtalker Armbands
+							i(177545),	-- Streamtalker Gloves
+							i(177549),	-- Streamtalker Belt
+							i(177547),	-- Streamtalker Legwraps
+							i(177544),	-- Streamtalker Boots
+							i(177414),	-- Streamtalker Band of Destruction
+							i(177413),	-- Streamtalker Ring of Destruction
+							i(177412),	-- Streamtalker Idol of Destruction
+							i(177415),	-- Streamtalker Stone of Destruction
+						}),
+						cl(SHAMAN, ENHANCEMENT, {
+							i(177418),	-- Streamtalker Talons
+							i(177406),	-- Streamtalker Choker
+							i(177405),	-- Streamtalker Cloak of Rage
+							i(177558),	-- Streamtalker Armguard
+							i(177553),	-- Streamtalker Handguards
+							i(177557),	-- Streamtalker Waistguard
+							i(177555),	-- Streamtalker Legguards
+							i(177552),	-- Streamtalker Greaves
+							i(177408),	-- Streamtalker Band of Onslaught
+							i(177409),	-- Streamtalker Ring of Onslaught
+							i(177407),	-- Streamtalker Idol of Rage
+							i(177410),	-- Streamtalker Stone of Rage
+						}),
+						cl(SHAMAN, RESTORATION, {
+							i(177420),	-- Streamtalker Necklace
+							i(177419),	-- Streamtalker Cloak of Wisdom
+							i(177566),	-- Streamtalker Bracers
+							i(177561),	-- Streamtalker Grips
+							i(177565),	-- Streamtalker Girdle
+							i(177563),	-- Streamtalker Leggings
+							i(177560),	-- Streamtalker Sabatons
+							i(177423),	-- Streamtalker Band of Wisdom
+							i(177422),	-- Streamtalker Ring of Wisdom
+							i(177421),	-- Streamtalker Idol of Wisdom
+							i(177424),	-- Streamtalker Stone of Wisdom
+						}),
+					}),
+					cl(WARLOCK, {
+						cl(WARLOCK, AFFLICTION, {
+							i(177589),	-- Felsoul Staff
+							i(177583),	-- Felsoul Medallion
+							i(177588),	-- Felsoul Cloak of Destruction
+							i(177613),	-- Felsoul Wristwraps
+							i(177607),	-- Felsoul Handwraps
+							i(177612),	-- Felsoul Cord
+							i(177609),	-- Felsoul Leggings
+							i(177606),	-- Felsoul Sandals
+							i(177585),	-- Felsoul Band of Destruction
+							i(177586),	-- Felsoul Ring of Destruction
+							i(177584),	-- Felsoul Idol of Destruction
+							i(177587),	-- Felsoul Stone of Destruction
+						}),
+					}),
+					cl(WARRIOR, {
+						cl(WARRIOR, ARMS, {
+							i(177590),	-- Oathsworn Greataxe
+							i(177591),	-- Oathsworn Headchopper
+							i(177604),	-- Oathsworn Pendant
+							i(177605),	-- Oathsworn Cloak of Battle
+							i(177621),	-- Oathsworn Vambraces
+							i(177616),	-- Oathsworn Gauntlets
+							i(177620),	-- Oathsworn Girdle
+							i(177618),	-- Oathsworn Legplates
+							i(177615),	-- Oathsworn Sabatons
+							i(177601),	-- Oathsworn Band of Might
+							i(177600),	-- Oathsworn Ring of Might
+							i(177602),	-- Oathsworn Idol of Battle
+							i(177603),	-- Oathsworn Stone of Battle
+						}),
+						cl(WARRIOR, PROTECTION, {
+							i(177592),	-- Oathsworn Axe
+							i(177593),	-- Oathsworn Bulwark
+							i(177595),	-- Oathsworn Amulet
+							i(177594),	-- Oathsworn Cloak of Stoicism
+							i(177628),	-- Oathsworn Armguards
+							i(177624),	-- Oathsworn Handguards
+							i(177627),	-- Oathsworn Waistband
+							i(177625),	-- Oathsworn Legguards
+							i(177623),	-- Oathsworn Greaves
+							i(177597),	-- Oathsworn Band of Stoicism
+							i(177598),	-- Oathsworn Ring of Stoicism
+							i(177596),	-- Oathsworn Defender Idol
+							i(177599),	-- Oathsworn Defender Stone
+						}),
+					}),
+				}),
+			})),
+
 			-- 9.2.0
 			tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
 				header(HEADERS.LFGDungeon, 2288, {	-- Sepulcher of the First Ones

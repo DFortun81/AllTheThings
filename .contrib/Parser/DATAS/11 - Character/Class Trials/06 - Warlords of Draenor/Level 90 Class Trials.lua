@@ -412,20 +412,3 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 		}),
 	})),
 }));
-
-root(ROOTS.NeverImplemented, {
-	n(CLASS_TRIAL, {
-		tier(WOD_TIER, {
-			cl(DRUID, {
-				cl(DRUID, GUARDIAN, {
-					i(117536),	-- Springrain Choker
-					i(117535),	-- Springrain Cloak of Durability
-					i(117539),	-- Springrain Band of Durability
-					i(117538),	-- Springrain Ring of Durability
-					i(117537),	-- Springrain Idol of Durability
-					i(117540),	-- Springrain Stone of Durability
-				}),
-			}),
-		}),
-	}),
-});
