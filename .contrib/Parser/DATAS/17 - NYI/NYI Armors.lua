@@ -991,6 +991,15 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 			filter(NECK_F, {
+				tier(LEGION_TIER, 0.3, {
+					i(131919),	-- Bitestone Incisor
+					i(134710),	-- Enveloping Choker
+					i(134708),	-- Enveloping Necklace
+					i(134628),	-- Scorching Choker
+					i(134599),	-- Vanguard Choker
+					i(134597),	-- Vanguard Necklace
+					i(134598),	-- Vanguard Pendant
+				}),
 				tier(LEGION_TIER, 3.5, {
 					i(157750),	-- Pendant of Good Fortune
 				}),
@@ -1020,8 +1029,20 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 			filter(TRINKET_F, {
+				tier(LEGION_TIER, 0.3, {
+					i(133062),	-- Demon Trophy of Insanity
+					i(131803),	-- Spine of Barax
+				}),
+				tier(LEGION_TIER, 1.0, {
+					i(140035),	-- Fluctuating Arc Capacitor
+					i(138084),	-- Iron Wrought Insignia of Conquest
+					i(138090),	-- Iron Wrought Insignia of Dominance
+					i(138093),	-- Iron Wrought Insignia of Victory
+					i(140027),	-- Ley Spark
+				}),
 				tier(LEGION_TIER, 3.0, {
 					i(151967),	-- Electrostatic Lasso
+					i(151961),	-- Legionsteel Flywheel
 				}),
 				tier(LEGION_TIER, 3.5, {
 					i(157746),	-- Graven Keepsake
@@ -1328,6 +1349,8 @@ root(ROOTS.NeverImplemented, {
 			}),
 			filter(NECK_F, {
 				tier(BFA_TIER, 0.1, {
+					i(153399),	-- Shaleshell Pendant
+					i(154970),	-- Shaleshell Pendant
 					i(158502),	-- Shaleshell Pendant
 					i(158554),	-- Shaleshell Pendant
 				}),
@@ -1363,21 +1386,33 @@ root(ROOTS.NeverImplemented, {
 			}),
 			filter(TRINKET_F, {
 				tier(BFA_TIER, 0.1, {
-					i(161222),	-- Latency Manipulator
 					i(161223),	-- Agency Manipulator
-					i(161289),	-- Rikal's Shark Teeth
-					i(158511),	-- Seabeast Tusk
-					i(158512),	-- Lucky Braid
-					i(158513),	-- Shimmering Rune
-					i(158514),	-- Petrified Basilisk Scale
-					i(158515),	-- Oceanographer's Weather Log
-					i(158516),	-- Privateer's Spyglass
-					i(158570),	-- Seabeast Tusk
-					i(158571),	-- Lucky Braid
-					i(158572),	-- Shimmering Rune
-					i(158573),	-- Petrified Basilisk Scale
+					i(154983),	-- Bijou of the Golden City
 					i(158574),	-- Bijou of the Golden City
+					i(154984),	-- Enchanted Devilsaur Claw
 					i(158575),	-- Enchanted Devilsaur Claw
+					i(161222),	-- Latency Manipulator
+					i(153409),	-- Lucky Braid
+					i(154980),	-- Lucky Braid
+					i(158512),	-- Lucky Braid
+					i(158571),	-- Lucky Braid
+					i(153413),	-- Privateer's Spyglass
+					i(158516),	-- Privateer's Spyglass
+					i(153412),	-- Oceanographer's Weather Log
+					i(158515),	-- Oceanographer's Weather Log
+					i(153411),	-- Petrified Basilisk Scale
+					i(154982),	-- Petrified Basilisk Scale
+					i(158514),	-- Petrified Basilisk Scale
+					i(158573),	-- Petrified Basilisk Scale
+					i(161289),	-- Rikal's Shark Teeth
+					i(153408),	-- Seabeast Tusk
+					i(154979),	-- Seabeast Tusk
+					i(158511),	-- Seabeast Tusk
+					i(158570),	-- Seabeast Tusk
+					i(153410),	-- Shimmering Rune
+					i(154981),	-- Shimmering Rune
+					i(158513),	-- Shimmering Rune
+					i(158572),	-- Shimmering Rune
 				}),
 				tier(BFA_TIER, 2.5, {
 					i(171528),	-- Reign of the Dead

@@ -601,6 +601,12 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 							},
 						}),
 						i(153216, {	-- Relinquished Trinket
+							["groups"] = {
+								-- This is the only source of this item (probably)
+								i(136736),	-- Badge of the Wardens
+								i(134322),	-- Drained Mana Crystal
+								i(136749),	-- Mark of the Sentinel
+							},
 							["sym"] = {
 								{"sub", "legion_relinquished", {"INVTYPE_TRINKET"} },	-- Trinkets Only!
 							},

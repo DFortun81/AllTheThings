@@ -223,6 +223,7 @@ root(ROOTS.NeverImplemented, {
 				i(137602),	-- Unknown
 				i(140787),	-- Unknown
 				i(140921),	-- Unknown
+				i(147904),	-- Cage Key
 			}),
 		}),
 		tier(BFA_TIER, {

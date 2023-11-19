@@ -2856,6 +2856,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					i(133539, {	-- Reflection of the Light
 						["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
 					}),
+					i(133540, {	-- Rotting Skull
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 50 }},
+					}),
 				-- Gear!!
 					i(133525, {	-- Bones of the Damned
 						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},

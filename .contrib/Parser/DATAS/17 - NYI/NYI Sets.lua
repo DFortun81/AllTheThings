@@ -2265,6 +2265,17 @@ root(ROOTS.NeverImplemented, {
 						i(150608),	-- Protector's Axe
 						i(150620),	-- Protector's Barrier
 					}),
+					filter(NECK_F, {
+						i(150713),	-- Woven Silver Pendant
+					}),
+					filter(FINGER_F, {
+						i(150711),	-- Dingy Golden Band
+						i(150712),	-- Dull Onyx Band
+					}),
+					filter(TRINKET_F, {
+						i(150710),	-- Burnished Charm
+						i(150709),	-- Lacquered Carving
+					}),
 				}),
 			})),	
 		}),
