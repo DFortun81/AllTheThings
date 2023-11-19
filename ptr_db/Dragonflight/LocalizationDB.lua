@@ -1021,8 +1021,12 @@ localize(L.HEADER_EVENTS, {
 	[-1000330] = 1181,
 	[-1000331] = 1225,
 	[-1000332] = 1262,
+	[-1000333] = 1397,
 });
 -- Programmatic Event Scheduling
+_.Modules.Events.SetEventInformation(1397, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=4,["year"]=2022},{["hour"]=0,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=4,["year"]=2022})
+});
 _.Modules.Events.SetEventInformation(1262, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=6,["weekday"]=1,["year"]=2022},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=27,["weekday"]=1,["year"]=2022})
 });
