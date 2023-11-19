@@ -965,12 +965,10 @@ root(ROOTS.NeverImplemented, {
 				i(210444),	-- Burning Flower
 				i(210450),	-- Flaming Orb
 				i(210449),	-- Heated Scales
-				i(210451),	-- Imp Tail
 				i(210443),	-- Matchbook
 				i(208856),	-- Pocket Lint
 				i(211270),	-- Pristine Core Leather
 				i(210442),	-- Sizzling Charcoal
-				i(210452),	-- Small Demon Horn
 				i(210439),	-- Speck of Mana
 				i(210440),	-- Splendid Blossom
 				i(210438),	-- Wisp Dust
