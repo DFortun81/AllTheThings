@@ -455,7 +455,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						["description"] = "This rare only spawns during its associated world quest.",
 						["coord"] = { 47.32, 65.81, STORMSONG_VALLEY },
 						["g"] = {
-							crit(27, {	-- Whiplash
+							crit(41841, {	-- Whiplash
 								["achievementID"] = 12940,	-- Adventurer of Stormsong Valley
 							}),
 						},

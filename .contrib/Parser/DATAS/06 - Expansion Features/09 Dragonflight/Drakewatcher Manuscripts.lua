@@ -1140,6 +1140,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203337),	-- Winding Slitherdrake: Thorn Horns (DM!)
 		}),
 	})),
+	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
+		i(212518),	-- Manuscript of Endless Possibility (DM!)
+	})),
 })));
 
 root(ROOTS.NeverImplemented, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {

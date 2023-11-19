@@ -541,7 +541,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["sourceQuests"] = { 63672 },	-- A Cry From the Heart
 					["provider"] = { "n", 177434 },	-- Ysera
 					["coord"] = { 47.8, 53.5, ARDENWEALD },
-					["customCollect"] = { "SL_COV_KYR", "SL_COV_NEC", "SL_COV_VEN" },	-- Kyrian / Necrolord / Venthyr
+					["description"] = "Non-Night Fae version.",
 				}),
 				q(63673, {	-- Hunting Amid Houses [Night Fae]
 					["sourceQuests"] = { 63672 },	-- A Cry From the Heart

@@ -936,7 +936,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Infusions of Power
 			--FirstCraft(X, 414989, ADDED_10_2_0);	-- Enchanted Aspect's Dreaming Crest
 			FirstCraft(75316, 406418, ADDED_10_1_0);	-- Enchanted Aspect's Shadowflame Crest
-			--FirstCraft(X, 414985, ADDED_10_2_0);	-- Enchanted Whelpling's Dreaming Crest
+			FirstCraft(76541, 414985, ADDED_10_2_0);	-- Enchanted Whelpling's Dreaming Crest
 			FirstCraft(75256, 406108, ADDED_10_1_0);	-- Enchanted Whelpling's Shadowflame Crest
 			--FirstCraft(X, 414988, ADDED_10_2_0);	-- Enchanted Wyrm's Dreaming Crest
 			FirstCraft(75315, 406413, ADDED_10_1_0);	-- Enchanted Wyrm's Shadowflame Crest
@@ -2934,7 +2934,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(72346, 389465, ADDED_10_0_7);	-- Serevite Seam
 			FirstCraft(71955, 389463);	-- Hardened Serevite
 			FirstCraft(71961, 389464);	-- Infurious Serevite
-			--FirstCraft(X, 421244, ADDED_10_2_0);	-- Living Serevite Deposit
+			FirstCraft(77827, 421244, ADDED_10_2_0);	-- Living Serevite Deposit
 			FirstCraft(75139, 405120, ADDED_10_1_0);	-- Metamorphic Serevite
 			FirstCraft(71953, 389459);	-- Molten Serevite
 			FirstCraft(71959, 389462);	-- Primal Serevite
@@ -2943,7 +2943,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Overload
 			FirstCraft(71964, 389701);	-- Overload Hardened Node
 			FirstCraft(71967, 389704);	-- Overload Infurious Node
-			--FirstCraft(X, 422809, ADDED_10_2_0);	-- Overload Living Deposit
+			FirstCraft(78061, 422809, ADDED_10_2_0);	-- Overload Living Deposit
 			FirstCraft(75137, 405131, ADDED_10_1_0);	-- Overload Metamorphic Node
 			FirstCraft(71963, 389700);	-- Overload Molten Node
 			FirstCraft(71966, 389702);	-- Overload Primal Node
@@ -2959,6 +2959,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		-- Needs Achievements attached (roughly 1/3 should be attached to achievement criteria)
 		-- Remove collectible tag=false tag for those that can be collected due achievement
 			FirstSkin(74204, 193243),	-- Skinning Acrosoth
+			FirstSkin(78824, 210288, ADDED_10_2_0),	-- Skinning Ancient Core Hound
 			FirstSkin(74219, 187111),	-- Skinning Ancient Hornswog
 			FirstSkin(74197, 193231),	-- Skinning Ancient Tundrafur (spawns with Blightpaw)
 			FirstSkin(74162, 193341),	-- Skinning Angen (Great Hunt)
@@ -3436,6 +3437,9 @@ root(ROOTS.HiddenQuestTriggers, {
 		prof(MINING, {
 			-- TODO: these are possibly weekly, perhaps track them normally
 			q(66936),	-- Heated Ore Sample / Unyielding Stone Chunk
+		}),
+		prof(SKINNING, {
+			q(77792),	-- Dreamscale daily lockout for anniversary world boss (Emeriss, Lethon, Taerar, Ysondre)
 		}),
 		prof(TAILORING, {
 			q(71946),	-- Timeweaving unlocked

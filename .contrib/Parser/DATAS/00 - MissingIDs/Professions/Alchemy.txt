@@ -46,6 +46,8 @@ r(17551),	-- Stonescale Oil
 1.13.0.28211
 r(22430),	-- Refined Scale of Onyxia
 r(22808),	-- Elixir of Greater Water Breathing
+1.15.0.52124
+r(426607),	-- Elixir of Coalesced Regret
 2.0.0.6080
 r(28544),	-- Elixir of Major Strength
 r(28545),	-- Elixir of Healing Power
@@ -390,6 +392,8 @@ Missing in AlchemyItemDB.lua
 r(11454),	-- Inlaid Mithril Cylinder
 1.13.0.28211
 r(24266),	-- Gurubashi Mojo Madness
+1.15.0.52124
+r(426607),	-- Elixir of Coalesced Regret
 6.0.1.18179
 r(156588),	-- Alchemical Catalyst - Fireweed
 r(156589),	-- Alchemical Catalyst - Flytrap

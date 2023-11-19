@@ -1,0 +1,14 @@
+1.15.0.52124
+r(427061),	--
+r(429348),	-- Shifting Silver Breastplate
+r(430397),	-- Blackfathom Sharpening Stone
+
+
+
+
+Missing in BlacksmithingItemDB.lua
+
+1.15.0.52124
+r(427061),	--
+r(429348),	-- Shifting Silver Breastplate
+r(430397),	-- Blackfathom Sharpening Stone

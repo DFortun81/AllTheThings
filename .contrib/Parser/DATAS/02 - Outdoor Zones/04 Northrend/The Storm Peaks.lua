@@ -167,72 +167,69 @@ root(ROOTS.Zones, {
 						-- #endif
 						-- #else
 						-- NOTE: Blizzard shifted a bunch of the criteriaIDs between alliance/horde, so this looks a bit messy but it is correct
-						crit(1, {	-- Defending K3
-							["sourceQuests"] = {
-								12824,	-- Demolitionist Extraordinaire
-								--12822,	-- Know No Fear -- TODO: verify. This wasn't required on horde but appears to be required for alliance...?
-							},
+						crit(39058, {	-- Defending K3
+							["sourceQuest"] = 12822,	-- Know No Fear
 						}),
-						crit(2, {	-- The Harpy Problem
+						crit(39059, {	-- Defending K3
+							["sourceQuest"] = 12824,	-- Demolitionist Extraordinaire
+						}),
+						crit(39060, {	-- The Harpy Problem
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								12867,	-- Baby Stealers
-								12868,	-- Sirana Iceshriek
-							},
+							["sourceQuest"] = 12867,	-- Baby Stealers
 						}),
-						crit(2, {	-- Norgannon's Shell (H)
+						crit(39061, {	-- The Harpy Problem
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 12868,	-- Sirana Iceshriek
+						}),
+						crit(39063, {	-- Norgannon's Shell (H)
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 12928,	-- Norgannon's Shell (H)
 						}),
-						crit(3, {	-- Norgannon's Shell (A)
+						crit(39062, {	-- Norgannon's Shell (A)
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuest"] = 12872,	-- Norgannon's Shell (A)
 						}),
-						crit(3, {	-- Bringing Down the Iron Colossus (H)
-							["races"] = HORDE_ONLY,
-							["sourceQuests"] = {
-								12978,	-- Facing the Storm
-								12965,	-- The Gifts of Loken
-								13007,	-- The Iron Colossus
-							},
+						crit(39064, {	-- Bringing Down the Iron Colossus
+							["sourceQuest"] = 12965,	-- The Gifts of Loken
 						}),
-						crit(4, {	-- Bringing Down the Iron Colossus (A)
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								12978,	-- Facing the Storm
-								12965,	-- The Gifts of Loken
-								13007,	-- The Iron Colossus
-							},
+						crit(39065, {	-- Bringing Down the Iron Colossus
+							["sourceQuest"] = 12978,	-- Facing the Storm
 						}),
-						crit(4, {	-- Pursuing a Legend
+						crit(39066, {	-- Bringing Down the Iron Colossus
+							["sourceQuest"] = 13007,	-- The Iron Colossus
+						}),
+						crit(39069, {	-- Pursuing a Legend
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 13285,	-- Forging the Keystone
 						}),
-						crit(5, {	-- For the Frostborn King
+						crit(39067, {	-- For the Frostborn King
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = {
-								12973,	-- The Brothers Bronzebeard
-								12876,	-- Unwelcome Guests
-							},
+							["sourceQuest"] = 12973,	-- The Brothers Bronzebeard
 						}),
-						crit(5, {	-- The Story of Stormhoof
+						crit(39068, {	-- For the Frostborn King
+							["races"] = ALLIANCE_ONLY,
+							["sourceQuest"] = 12876,	-- Unwelcome Guests
+						}),
+						crit(39070, {	-- The Story of Stormhoof
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 13058,	-- Changing the Wind's Course
 						}),
-						crit(6, {	-- Bearly Ready
+						crit(39071, {	-- Bearly Ready
 							["sourceQuest"] = 12972,	-- You'll Need a Bear
 						}),
-						crit(7, {	-- Heartbreak
+						crit(39072, {	-- Heartbreak
 							["sourceQuest"] = 13064,	-- Sibling Rivalry
 						}),
-						crit(8, {	-- The Sons of Hodir
-							["sourceQuests"] = {
-								12976,	-- A Monument to the Fallen
-								12987,	-- Mounting Hodir's Helm
-								13001,	-- Raising Hodir's Spear
-							},
+						crit(39073, {	-- The Sons of Hodir
+							["sourceQuest"] = 12976,	-- A Monument to the Fallen
 						}),
-						crit(9, {	-- Loken
+						crit(39074, {	-- The Sons of Hodir
+							["sourceQuest"] = 12987,	-- Mounting Hodir's Helm
+						}),
+						crit(39075, {	-- The Sons of Hodir
+							["sourceQuest"] = 13001,	-- Raising Hodir's Spear
+						}),
+						crit(39076, {	-- Loken
 							["sourceQuest"] = 13047,	-- Loken
 						}),
 						-- #endif

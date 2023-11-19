@@ -16,7 +16,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					["collectible"] = false,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						crit(8, {	-- Rezan Respected
+						crit(41502, {	-- Rezan Respected
 							["cr"] = 122963,	-- Rezan
 						}),
 					},

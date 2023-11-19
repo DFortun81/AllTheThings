@@ -931,6 +931,7 @@ root(ROOTS.Zones, {
 						crit(24129),	-- Southsea Firebrew
 					}),
 					ach(8729, {	-- Treasure, Treasure Everywhere
+						-- TODO: This is a nested criteria tree that will need a way to get names for the bottom level to display correctly. Each criteria seems to correspond to a treasure, so maybe link them up that way?
 						crit(1),	-- 17/17 Moss-Covered Chests
 						crit(4),	-- 4/4 Sturdy Chests
 						crit(5),	-- 2/2 Smoldering Chests

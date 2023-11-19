@@ -70,6 +70,7 @@ root(ROOTS.Zones, {
 				ach(11737),	-- Disrupting the Nether
 				explorationAch(11543),	-- Explore Broken Shore
 				ach(11738),	-- It'll Nether Happen
+				ach(11841),	-- Naxt Victim
 				ach(11735),	-- Take Command
 			}),
 		}),

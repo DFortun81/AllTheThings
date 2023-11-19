@@ -22,30 +22,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						crit(15952, {	-- High Shaman MacKilligan slain
-							["creatureID"] = 46885,
+							["cr"] = 46885,
 							["coord"] = { 45.8, 33.6, TWILIGHT_HIGHLANDS },
 						}),
 						crit(15953, {	-- Dillan MacHurley slain
-							["creatureID"] = 46378,
+							["cr"] = 46378,
 							["coords"] = {
 								{ 45.0, 37.6, TWILIGHT_HIGHLANDS },
 								{ 46.8, 36.8, TWILIGHT_HIGHLANDS },
 							},
 						}),
 						crit(15954, {	-- Gunwald Greybeard slain
-							["creatureID"] = 46376,
+							["cr"] = 46376,
 							["coord"] = { 45.2, 42.8, TWILIGHT_HIGHLANDS },
 						}),
 						crit(15955, {	-- Cliff Thundermar slain
-							["creatureID"] = 46377,
+							["cr"] = 46377,
 							["coord"] = { 52.8, 28.2, TWILIGHT_HIGHLANDS },
 						}),
 						crit(15950, {	-- The Black Recluse spider slain
-							["creatureID"] = 47115,
+							["cr"] = 47115,
 							["coord"] = { 45.8, 31.6, TWILIGHT_HIGHLANDS },
 						}),
 						crit(15951, {	-- Korthalon the Black slain
-							["creatureID"] = 47171,
+							["cr"] = 47171,
 							["coord"] = { 52.0, 27.6, TWILIGHT_HIGHLANDS },
 						}),
 					},
@@ -145,22 +145,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						crit(1, {	-- Warlord Halthar slain
-							["creatureID"] = 46493,
+							["cr"] = 46493,
 							["coord"] = { 49.0, 37.2, TWILIGHT_HIGHLANDS },
 						}),
 						crit(2, {	-- Karkrog the Exterminator slain
-							["creatureID"] = 46756,
+							["cr"] = 46756,
 							["coords"] = {
 								{ 50.8, 33.8, TWILIGHT_HIGHLANDS },
 								{ 51.6, 33.0, TWILIGHT_HIGHLANDS },
 							},
 						}),
 						crit(3, {	-- The Black Recluse spider slain
-							["creatureID"] = 47115,
+							["cr"] = 47115,
 							["coord"] = { 45.8, 31.6, TWILIGHT_HIGHLANDS },
 						}),
 						crit(4, {	-- Korthalon the Black slain
-							["creatureID"] = 47171,
+							["cr"] = 47171,
 							["coord"] = { 52.0, 27.6, TWILIGHT_HIGHLANDS },
 						}),
 					},

@@ -535,15 +535,15 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 			crit(19785, {	-- The Emperor's Burden - Part 1
 				["coord"] = { 47.0, 45.1, THE_JADE_FOREST },
 			}),
-			crit(2),	-- The Emperor's Burden - Part 2 (Kun-Lai Summit)
+			crit(19790),	-- The Emperor's Burden - Part 2 (Kun-Lai Summit)
 			crit(19786, {	-- The Emperor's Burden - Part 3
 				["coord"] = { 55.8, 56.8, THE_JADE_FOREST },
 			}),
-			crit(4),	-- The Emperor's Burden - Part 4 (Krasarang Wilds)
-			crit(5),	-- The Emperor's Burden - Part 5 (Townlong Steppes)
-			crit(6),	-- The Emperor's Burden - Part 6 (Kun-Lai Summit)
-			crit(7),	-- The Emperor's Burden - Part 7 (Kun-Lai Summit)
-			crit(8),	-- The Emperor's Burden - Part 8 (Vale of Eternal Blossoms)
+			crit(19787),	-- The Emperor's Burden - Part 4 (Krasarang Wilds)
+			crit(19789),	-- The Emperor's Burden - Part 5 (Townlong Steppes)
+			crit(19788),	-- The Emperor's Burden - Part 6 (Kun-Lai Summit)
+			crit(19791),	-- The Emperor's Burden - Part 7 (Kun-Lai Summit)
+			crit(19792),	-- The Emperor's Burden - Part 8 (Vale of Eternal Blossoms)
 		}),
 		ach(6847, {	-- The Song of the Yaungol
 			crit(19773),	-- Yaungol Tactics (Kun-Lai Summit)
@@ -552,72 +552,72 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 			crit(19776),	-- Trapped in a Strange Land (Townlong Steppes)
 		}),
 		ach(6350, {	-- To All the Squirrels I Once Caressed?
-			crit(1,  {	-- Amethyst Spiderling
-				["crs"] = { 64798 },	-- Amethyst Spiderling
+			crit(20817,  {	-- Amethyst Spiderling
+				["provider"] = { "n", 64798 },	-- Amethyst Spiderling
 				["maps"] = { KRASARANG_WILDS },
 			}),
-			crit(2,  {	-- Bandicoon
-				["crs"] = { 64782 },	-- Bandicoon
+			crit(20812,  {	-- Bandicoon
+				["provider"] = { "n", 64782 },	-- Bandicoon
 				["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 			}),
-			crit(3,  {	-- Clouded Hedgehog
-				["crs"] = { 64803 },	-- Clouded Hedgehog
+			crit(20821,  {	-- Clouded Hedgehog
+				["provider"] = { "n", 64803 },	-- Clouded Hedgehog
 				["maps"] = { DREAD_WASTES },
 			}),
-			crit(4,  {	-- Coral Adder
-				["crs"] = { 59356 },	-- Coral Adder
+			crit(20811,  {	-- Coral Adder
+				["provider"] = { "n", 59356 },	-- Coral Adder
 				["maps"] = { THE_JADE_FOREST },
 			}),
-			crit(5, {	-- Dancing Water Skimmer
-				["crs"] = { 65209 },	-- Dancing Water Skimmer
+			crit(20827, {	-- Dancing Water Skimmer
+				["provider"] = { "n", 65209 },	-- Dancing Water Skimmer
 				["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 			}),
-			crit(6,  {	-- Emperor Crab
-				["crs"] = { 63329 },	-- Emperor Crab
+			crit(20822,  {	-- Emperor Crab
+				["provider"] = { "n", 63329 },	-- Emperor Crab
 				["maps"] = { DREAD_WASTES },
 			}),
-			crit(7, {	-- Gilded Moth
-				["crs"] = { 65205 },	-- Gilded Moth
+			crit(20826, {	-- Gilded Moth
+				["provider"] = { "n", 65205 },	-- Gilded Moth
 				["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 			}),
-			crit(8, {	-- Golden Civet
-				["crs"] = { 65206 },	-- Golden Civet
+			crit(20828, {	-- Golden Civet
+				["provider"] = { "n", 65206 },	-- Golden Civet
 				["maps"] = { VALE_OF_ETERNAL_BLOSSOMS },
 			}),
-			crit(9,  {	-- Leopard Tree Frog
-				["crs"] = { 64774 },	-- Leopard Tree Frog
+			crit(20824,  {	-- Leopard Tree Frog
+				["provider"] = { "n", 64774 },	-- Leopard Tree Frog
 				["maps"] = { THE_JADE_FOREST },
 			}),
-			crit(10, {	-- Luyu Moth
-				["crs"] = { 63289 },	-- Luyu Moth
+			crit(20813, {	-- Luyu Moth
+				["provider"] = { "n", 63289 },	-- Luyu Moth
 				["maps"] = { KRASARANG_WILDS },
 			}),
-			crit(11, {	-- Malayan Quillrat
-				["crs"] = { 64784 },	-- Malayan Quillrat
+			crit(20825, {	-- Malayan Quillrat
+				["provider"] = { "n", 64784 },	-- Malayan Quillrat
 				["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 			}),
-			crit(12, {	-- Marsh Fiddler
-				["crs"] = { 64786 },	-- Marsh Fiddler
+			crit(18979, {	-- Marsh Fiddler
+				["provider"] = { "n", 64786 },	-- Marsh Fiddler
 				["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 			}),
-			crit(13, {	-- Mongoose
-				["crs"] = { 65191 },	-- Mongoose
+			crit(20819, {	-- Mongoose
+				["provider"] = { "n", 65191 },	-- Mongoose
 				["maps"] = { TOWNLONG_STEPPES },
 			}),
-			crit(14, {	-- Resilient Roach
-				["crs"] = { 64807 },	-- Resilient Roach
+			crit(20823, {	-- Resilient Roach
+				["provider"] = { "n", 64807 },	-- Resilient Roach
 				["maps"] = { DREAD_WASTES },
 			}),
-			crit(15, {	-- Shrine Fly
-				["crs"] = { 59770 },	-- Shrine Fly
+			crit(18980, {	-- Shrine Fly
+				["provider"] = { "n", 59770 },	-- Shrine Fly
 				["maps"] = { THE_JADE_FOREST },
 			}),
-			crit(16, {	-- Sifang Otter
-				["crs"] = { 64787 },	-- Sifang Otter
+			crit(18978, {	-- Sifang Otter
+				["provider"] = { "n", 64787 },	-- Sifang Otter
 				["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 			}),
-			crit(17, {	-- Yakrat
-				["crs"] = { 64802 },	-- Yakrat
+			crit(20820, {	-- Yakrat
+				["provider"] = { "n", 64802 },	-- Yakrat
 				["maps"] = { TOWNLONG_STEPPES },
 			}),
 		}),
@@ -629,8 +629,18 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 			crit(19809),	-- Victory in Kun-Lai (Kun-Lai Summit)
 		}),
 		ach(8078, {	-- Zul'Again
-			crit(1),	-- Zandalari Scouts Slain slain (10) (Townlong Steppes, Dread Wastes, Kun-Lai Summit, Krasarang Wilds, The Jade Forest)
-			crit(2),	-- Zandalari Warbringers Slain slain (5) (Townlong Steppes, Dread Wastes, Kun-Lai Summit, The Jade Forest)
+			crit(22733, {	-- Zandalari Scouts Slain slain (10) (Townlong Steppes, Dread Wastes, Kun-Lai Summit, Krasarang Wilds, The Jade Forest)
+				["provider"] = { "n", 69768 },
+			}),
+			crit(22942, {	-- Zandalari Warbringers Slain slain (5) (Townlong Steppes, Dread Wastes, Kun-Lai Summit, The Jade Forest)
+				["provider"] = { "n", 69842 },
+			}),
+			crit(22941, {	-- Zandalari Warbringers Slain slain (5) (Townlong Steppes, Dread Wastes, Kun-Lai Summit, The Jade Forest)
+				["provider"] = { "n", 69841 },
+			}),
+			crit(22732, {	-- Zandalari Warbringers Slain slain (5) (Townlong Steppes, Dread Wastes, Kun-Lai Summit, The Jade Forest)
+				["provider"] = { "n", 69769 },
+			}),
 		}),
 	}),
 }))))

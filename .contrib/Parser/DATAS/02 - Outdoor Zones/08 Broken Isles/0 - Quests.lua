@@ -31,12 +31,24 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					ach(11186, {	-- Tehd & Marius' Excellent Adventure
-						crit(1, {		-- Azsuna
+						crit(32400, {		-- Azsuna
 							["_quests"] = {
 								42367,	-- Arkethrax
-								38212,	-- Brogozog
-								38352,	-- Kazrok
+							},
+						}),
+						crit(32401, {		-- Azsuna
+							["_quests"] = {
 								42069,	-- Felwing
+							},
+						}),
+						crit(32402, {		-- Azsuna
+							["_quests"] = {
+								38352,	-- Kazrok
+							},
+						}),
+						crit(32403, {		-- Azsuna
+							["_quests"] = {
+								38212,	-- Brogozog
 							},
 						}),
 						crit(32404),		-- Val'sharah

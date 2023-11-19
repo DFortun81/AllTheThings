@@ -1,0 +1,10 @@
+1.15.0.52124
+r(430409),	-- Blackfathom Mana Oil
+
+
+
+
+Missing in EnchantingItemDB.lua
+
+1.15.0.52124
+r(430409),	-- Blackfathom Mana Oil

@@ -142,14 +142,13 @@ root(ROOTS.Zones, {
 						["crs"] = { 31685 },	-- Borean Marmot
 					}),
 					-- #else
-					-- These are returning garbage data on Retail
-					crit(1,  {	-- Arctic Hare (Dragonblight, Zul'Drak, Borean Tundra)
+					crit(21293,  {	-- Arctic Hare (Dragonblight, Zul'Drak, Borean Tundra)
 						["maps"] = { BOREAN_TUNDRA, DRAGONBLIGHT, ZULDRAK },
-						["crs"] = { 29328 },	-- Arctic Hare
+						["provider"] = { "n", 29328 },	-- Arctic Hare
 					}),
-					crit(2,  {	-- Borean Marmot (Borean Tundra)
+					crit(21294,  {	-- Borean Marmot (Borean Tundra)
 						["maps"] = { BOREAN_TUNDRA },
-						["crs"] = { 31685 },	-- Borean Marmot
+						["provider"] = { "n", 31685 },	-- Borean Marmot
 					}),
 					-- #endif
 					crit(9301,  {	-- Fjord Penguin (Howling Fjord)
@@ -180,18 +179,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					-- #else
-					-- These are returning garbage data on Retail
-					crit(6,  {	-- Grizzly Squirrel (Grizzly Hills, Twilight Highlands)
+					crit(21295,  {	-- Grizzly Squirrel (Grizzly Hills, Twilight Highlands)
 						["maps"] = {
 							GRIZZLY_HILLS,
 							-- #if AFTER CATA
 							TWILIGHT_HIGHLANDS,
 							-- #endif
 						},
-						["crs"] = {
-							31889,		-- Grizzly Squirrel
+						["providers"] = {
+							{ "n", 31889 },		-- Grizzly Squirrel
 							-- #if AFTER CATA
-							62818,		-- Grizzly Squirrel
+							{ "n", 62818 },		-- Grizzly Squirrel
 							-- #endif
 						},
 					}),
@@ -216,18 +214,17 @@ root(ROOTS.Zones, {
 						["crs"] = { 31890 },	-- Mountain Skunk
 					}),
 					-- #else
-					-- These are returning garbage data on Retail
-					crit(7,  {	-- Huge Toad (Hillsbrad Foothills, Twilight Highlands, Zul'Drak, Swamp of Sorrows)
+					crit(21296,  {	-- Huge Toad (Hillsbrad Foothills, Twilight Highlands, Zul'Drak, Swamp of Sorrows)
 						["maps"] = { HILLSBRAD_FOOTHILLS, SWAMP_OF_SORROWS, ZULDRAK },
-						["crs"] = { 6653 },	-- Huge Toad
+						["provider"] = { "n", 6653 },	-- Huge Toad
 					}),
-					crit(8,  {	-- Lava Crab (Searing Gorge, Burning Steppes)
+					crit(21297,  {	-- Lava Crab (Searing Gorge, Burning Steppes)
 						["maps"] = { SEARING_GORGE, BURNING_STEPPES },
-						["crs"] = { 9700 },	-- Lava Crab
+						["provider"] = { "n", 9700 },	-- Lava Crab
 					}),
-					crit(9,  {	-- Mountain Skunk (Stonetalon Mountains, Grizzly Hills, Winterspring, Howling Fjord)
+					crit(21298,  {	-- Mountain Skunk (Stonetalon Mountains, Grizzly Hills, Winterspring, Howling Fjord)
 						["maps"] = { GRIZZLY_HILLS, HOWLING_FJORD, STONETALON_MOUNTAINS, WINTERSPRING },
-						["crs"] = { 31890 },	-- Mountain Skunk
+						["provider"] = { "n", 31890 },	-- Mountain Skunk
 					}),
 					-- #endif
 					crit(9308, {	-- Scalawag Frog (Howling Fjord)
@@ -244,10 +241,9 @@ root(ROOTS.Zones, {
 						["crs"] = { 28440 },	-- Tundra Penguin
 					}),
 					-- #else
-					-- These are returning garbage data on Retail
-					crit(12, {	-- Tundra Penguin (Borean Tundra)
+					crit(21299, {	-- Tundra Penguin (Borean Tundra)
 						["maps"] = { BOREAN_TUNDRA },
-						["crs"] = { 28440 },	-- Tundra Penguin
+						["provider"] = { "n", 28440 },	-- Tundra Penguin
 					}),
 					-- #endif
 				}),

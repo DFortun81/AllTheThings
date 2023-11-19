@@ -253,6 +253,60 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										["sourceQuests"] = { 62997 },	-- Blueprint: Vial of Lichfrost
 										["provider"] = { "i", 184477 },	-- Vial of Lichfrost
 									}),
+									q(62986, {	-- Blueprint: Vesper of Calling
+										["provider"] = { "i", 184450 },	-- Blueprint: Vesper of Calling
+									}),
+									q(62477, {	-- Blueprint: Skystrider Glider
+										["provider"] = { "i", 183761 },	-- Blueprint: Skystrider Glider
+									}),
+									q(61272, {	-- Blueprint: Charm of Discord
+										["provider"] = { "i", 181155 },	-- Blueprint: Charm of Discord
+									}),
+									q(61304, {	-- Blueprint: Kyrian Smith's Kit
+										["provider"] = { "i", 181165 },	-- Blueprint: Kyrian Smith's Kit
+									}),
+									q(63000, {	-- Blueprint: Charm of Focus
+										["provider"] = { "i", 181238 },	-- Blueprint: Charm of Focus
+									}),
+									q(62997, {	-- Blueprint: Vial of Lichfrost
+										["provider"] = { "i", 184349 },	-- Blueprint: Vial of Lichfrost
+									}),
+									q(62928, {	-- Blueprint: Ring of Warding
+										["provider"] = { "i", 184348 },	-- Blueprint: Ring of Warding
+									}),
+									q(62981, {	-- Blueprint: Artisan Tool Belt
+										["provider"] = { "i", 184414 },	-- Blueprint: Artisan Tool Belt
+									}),
+									q(62971, {	-- Blueprint: Gilded Abacus
+										["provider"] = { "i", 184411 },	-- Blueprint: Gilded Abacus
+									}),
+									q(62486, {	-- Blueprint: Empyrean Refreshment
+										["provider"] = { "i", 183794 },	-- Blueprint: Empyrean Refreshment
+									}),
+									q(61269, {	-- Blueprint: Charm of Persistence
+										["provider"] = { "i", 181147 },	-- Blueprint: Charm of Persistence
+									}),
+									q(60973, {	-- Blueprint: Phial of Serenity
+										["provider"] = { "i", 180495 },	-- Blueprint: Phial of Serenity
+									}),
+									q(60946, {	-- Blueprint: Deep Echo Trident
+										["provider"] = { "i", 180472 },	-- Blueprint: Deep Echo Trident
+									}),
+									q(62984, {	-- Blueprint: Medallion of Service
+										["provider"] = { "i", 184445 },	-- Blueprint: Medallion of Service
+									}),
+									q(60947, {	-- Blueprint: Charm of Fortitude
+										["provider"] = { "i", 180482 },	-- Blueprint: Charm of Fortitude
+									}),
+									q(60975, {	-- Blueprint: Spiritforged Aegis
+										["provider"] = { "i", 180494 },	-- Blueprint: Spiritforged Aegis
+									}),
+									q(62970, {	-- Blueprint: Steward Mail Pouch
+										["provider"] = { "i", 184407 },	-- Blueprint: Steward Mail Pouch
+									}),
+									q(61713, {	-- Blueprint: Charm of Quickness
+										["provider"] = { "i", 182162 },	-- Blueprint: Charm of Quickness
+									}),
 								}),
 								filter(RECIPES, {
 									-- Lures
@@ -397,7 +451,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 											{ "i", ELYSIAN_FEATHERS, 4 },
 										},
 									}),
-
 									-- Boons
 									i(184578, {	-- Artisan Tool Belt
 										["cost"] = {
@@ -450,7 +503,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 											{ "i", NIGHTFORGED_STEEL, 8 },
 										},
 									}),
-
 									-- Charms
 									i(181157, {	-- Charm of Discord
 										["cost"] = {
@@ -484,7 +536,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 											{ "i", ELYSIAN_FEATHERS, 4 },
 										},
 									}),
-
 									-- Equipment
 									i(181499, {	-- Deep Echo Trident
 										["cost"] = {
@@ -695,9 +746,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										["crs"] = { 172409 },	-- Myn'ir
 										["g"] = {
 											n(COURAGE, {
-												i(182162, {	-- Blueprint: Charm of Quickness
-													["questID"] = 61713,	-- Blueprint: Charm of Quickness
-												}),
+												i(182162),	-- Blueprint: Charm of Quickness
 											}),
 											n(LOYALTY, {
 												["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
@@ -706,10 +755,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 														["achievementID"] = 14852,	-- The Hoot of the Issue
 													}),
 													crit(48624, ach(14502)),	-- Pursuing Loyalty - Alderyn & Myn'ir
-													i(184407, {	-- Blueprint: Steward Mail Pouch
-													--	this quest showed as complete for me before i did it... not sure what's up there.
-														["questID"] = 62970,	-- Blueprint: Steward Mail Pouch
-													}),
+													i(184407),	-- Blueprint: Steward Mail Pouch
 												},
 											}),
 										},
@@ -719,24 +765,18 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 											["achievementID"] = 14851,	-- Bastion of Protection
 										}),
 										n(COURAGE, {
-											i(180494, {	-- Blueprint: Spiritforged Aegis
-												["questID"] = 60975,	-- Blueprint: Spiritforged Aegis
-											}),
+											i(180494),	-- Blueprint: Spiritforged Aegis
 										}),
 									}),
 									n(172177, {	-- Echthra
 										n(COURAGE, {
-											i(180482, {	-- Blueprint: Charm of Fortitude
-												["questID"] = 60947,	-- Blueprint: Charm of Fortitude
-											}),
+											i(180482),	-- Blueprint: Charm of Fortitude
 										}),
 										n(LOYALTY, {
 											["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
 											["g"] = {
 												crit(48623, ach(14502)),	-- Pursuing Loyalty - Echthra
-												i(184445, {	-- Blueprint: Medallion of Service
-													["questID"] = 62984,	-- Blueprint: Medallion of Service
-												}),
+												i(184445),	-- Blueprint: Medallion of Service
 											},
 										}),
 									}),
@@ -745,17 +785,13 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 											["achievementID"] = 14851,	-- Bastion of Protection
 										}),
 										n(COURAGE, {
-											i(180472, {	-- Blueprint: Deep Echo Trident
-												["questID"] = 60946,	-- Blueprint: Deep Echo Trident
-											}),
+											i(180472),	-- Blueprint: Deep Echo Trident
 										}),
 										n(LOYALTY, {
 											["description"] = "Requires defeating the first 6 memories on 'Courage' difficulty (Kalisthene, Echthra, Alderyn & Myn'ir, Nuuminuuru, Craven Corinth, and Splinterbark Nightmare).",
 											["g"] = {
 												crit(48622, ach(14502)),	-- Pursuing Loyalty - Kalisthene
-												i(180495, {	-- Blueprint: Phial of Serenity
-													["questID"] = 60973,	-- Blueprint: Phial of Serenity
-												}),
+												i(180495),	-- Blueprint: Phial of Serenity
 											},
 										}),
 									}),
@@ -775,9 +811,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(172682, {	-- Splinterbark Nightmare
 										n(COURAGE, {
-											i(181147, {	-- Blueprint: Charm of Persistence
-												["questID"] = 61269,	-- Blueprint: Charm of Persistence
-											}),
+											i(181147),	-- Blueprint: Charm of Persistence
 										}),
 									}),
 								}),
@@ -969,16 +1003,12 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								n(REWARDS, {
 									n(171873, {	-- Athanos
 										n(COURAGE, {
-											i(182975, {	-- Ascension Calling: Mikanikos
-												["questID"] = 62223,	-- Ascension Calling: Mikanikos
-											}),
+											i(182975),	-- Ascension Calling: Mikanikos
 										}),
 									}),
 									n(172333, {	-- Azaruux
 										n(COURAGE, {
-											i(183794, {	-- Blueprint: Empyrean Refreshment
-												["questID"] = 62486,	-- Blueprint: Empyrean Refreshment
-											}),
+											i(183794),	-- Blueprint: Empyrean Refreshment
 										}),
 									}),
 									n(172412, {	-- Craven Corinth
@@ -986,9 +1016,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 											["description"] = "Requires defeating Than'tiok, Mad Mortimer, and Athanos on 'Courage' difficulty; and unlocking Azaruux.",
 											["g"] = {
 												crit(48626, ach(14502)),	-- Pursuing Loyalty - Craven Corinth
-												i(184411, {	-- Blueprint: Gilded Abacus
-													["questID"] = 62971,	-- Blueprint: Gilded Abacus
-												}),
+												i(184411),	-- Blueprint: Gilded Abacus
 											},
 										}),
 									}),
@@ -1001,9 +1029,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										["g"] = {
 											ach(14853),	-- All The Colors of the Painbow
 											n(COURAGE, {
-												i(184414, {	-- Blueprint: Artisan Tool Belt
-													["questID"] = 62981,	-- Blueprint: Artisan Tool Belt
-												}),
+												i(184414),	-- Blueprint: Artisan Tool Belt
 											}),
 											n(LOYALTY, {
 												crit(48629, ach(14502)),	-- Pursuing Loyalty - Mad Mortimer
@@ -1019,25 +1045,19 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 													["achievementID"] = 14852,	-- The Hoot of the Issue
 												}),
 												crit(48627, ach(14502)),	-- Pursuing Loyalty - Splinterbark Nightmare
-												i(184348, {	-- Blueprint: Ring of Warding
-													["questID"] = 62928,	-- Blueprint: Ring of Warding
-												}),
+												i(184348),	-- Blueprint: Ring of Warding
 											},
 										}),
 									}),
 									n(172411, {	-- Thran'tiok
 										n(COURAGE, {
-											i(184349, {	-- Blueprint: Vial of Lichfrost
-												["questID"] = 62997,	-- Blueprint: Vial of Lichfrost
-											}),
+											i(184349),	-- Blueprint: Vial of Lichfrost
 										}),
 										n(LOYALTY, {
 											["description"] = "Requires unlocking and defeating Azaruux.",
 											["g"] = {
 												crit(48628, ach(14502)),	-- Pursuing Loyalty - Thran'tiok
-												i(181238, {	-- Blueprint: Charm of Focus
-													["questID"] = 63000,	-- Blueprint: Charm of Focus
-												}),
+												i(181238),	-- Blueprint: Charm of Focus
 											},
 										}),
 									}),
@@ -1149,16 +1169,12 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(171873, {	-- Athanos
 										n(LOYALTY, {
-											i(181165, {	-- Blueprint: Kyrian Smith's Kit
-												["questID"] = 61304,	-- Blueprint: Kyrian Smith's Kit
-											}),
+											i(181165),	-- Blueprint: Kyrian Smith's Kit
 										}),
 									}),
 									n(172333, {	-- Azaruux
 										n(LOYALTY, {
-											i(181155, {	-- Blueprint: Charm of Discord
-													["questID"] = 61272,	-- Blueprint: Charm of Discord
-												}),
+											i(181155),	-- Blueprint: Charm of Discord
 										}),
 									}),
 									n(172412, {	-- Craven Corinth
@@ -1186,9 +1202,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 											crit(51099, {	-- Defeat Kalisthene as Mikanikos
 												["achievementID"] = 14861,	-- Learning from the Masters
 											}),
-											i(183761, {	-- Blueprint: Skystrider Glider
-												["questID"] = 62477,	-- BLueprint: Skystrider Glider
-											}),
+											i(183761),	-- Blueprint: Skystrider Glider
 										}),
 									}),
 									n(172410, {	-- Nuuminuuru
@@ -1238,9 +1252,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									}),
 									n(172682, {	-- Splinterbark Nightmare
 										n(WISDOM, {
-											i(184450, {	-- Blueprint: Vesper of Calling
-												["questID"] = 62986,	-- Blueprint: Vesper of Calling
-											}),
+											i(184450),	-- Blueprint: Vesper of Calling
 										}),
 									}),
 									n(172411, {	-- Thran'tiok

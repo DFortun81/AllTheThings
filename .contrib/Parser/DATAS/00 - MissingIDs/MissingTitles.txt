@@ -1,2 +1,4 @@
 3.4.1.47966
 title(210),	-- Battlemaster %s
+10.2.5.52206
+title(536),	-- %s, Isles Archivist

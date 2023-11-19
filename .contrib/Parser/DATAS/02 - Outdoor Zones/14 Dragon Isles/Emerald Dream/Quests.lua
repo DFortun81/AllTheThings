@@ -483,7 +483,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 				------ Chapter 6 ------
-				-- ?
 				q(76402, {	-- Amirdrassil, the Dream's Hope: Fyrakk
 					["sourceQuests"] = { 76401 },	-- Echo of the Firelands
 					["provider"] = { "n", 206921 },	-- Alexstrasza the Life-Binder
@@ -491,6 +490,98 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["g"] = {
 						i(210916),	-- Ember of Fyrakk [2.5k Dream Warden rep]
 						i(206960),	-- Enchanted Wyrm's Dreaming Crest
+					},
+				}),
+				q(77780, {	-- A Blossom Witnessed
+					["sourceQuests"] = { 76402 },	-- Amirdrassil, the Dream's Hope: Fyrakk
+					["provider"] = { "n", 211634 },	-- Tyrande Whisperwind
+					["coord"] = { 27.5, 31.4, EMERALD_DREAM },
+				}),
+				q(76276, {	-- A Changed Land
+					["sourceQuests"] = { 77780 },	-- A Blossom Witnessed
+					["provider"] = { "n", 206397 },	-- Merithra of the Dream
+					["coord"] = { 14.8, 55.8, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(209806),	-- Cataloger's Film (QI!)
+						--modID 27 bonusID 9546
+						i(209915),	-- Perennial Pompon Pendant
+						i(209916),	-- Sunrise Circlet
+					},
+				}),
+				q(77329, {	-- Auspicious Gathering
+					["sourceQuests"] = { 76276 },	-- A Changed Land
+					["provider"] = { "n", 206397 },	-- Merithra of the Dream
+					["coord"] = { 14.8, 55.8, OHNAHRAN_PLAINS },
+				}),
+				q(77201, {	-- A Personal Offering
+					["sourceQuests"] = { 77329 },	-- Auspicious Gathering (TODO: may be required finishing 76213 in addition?)
+					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind
+					["races"] = { NIGHTELF },
+					["coord"] = { 50.8, 61.4, 2239 },	-- Amirdrassil
+					["g"] = {
+						i(209604, {	-- Ensemble: Raiment of Amirdrassi
+							i(209591),	-- Wristbands of Chosen Renewal
+							i(209592),	-- Belt of Chosen Renewal
+							i(209593),	-- Shoulders of Chosen Renewal
+							i(209594),	-- Legguards of Chosen Renewal
+							i(209595),	-- Crown of Chosen Renewal
+							i(209596),	-- Grips of Chosen Renewal
+							i(209597),	-- Anklets of Chosen Renewal
+							i(209598),	-- Wraps of Chosen Renewal
+						}),
+					},
+				}),
+				q(77200, {	-- Offerings for the Well
+					["sourceQuests"] = { 77329 },	-- Auspicious Gathering
+					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind
+					["coord"] = { 50.8, 61.4, 2239 },	-- Amirdrassil
+					["g"] = {
+						i(208230),	-- Anaya's Pendant (QI!)
+						i(208232),	-- Singed Darnassian Tabard (QI!)
+						i(208221),	-- Soil of the Dreamgrove (QI!)
+						i(208231),	-- Talisman of Hope (QI!)
+					},
+				}),
+				q(76280, {	-- New Moon
+					["sourceQuests"] = { 77200 },	-- Offerings for the Well
+					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind
+					["coord"] = { 50.8, 61.4, 2239 },	-- Amirdrassil
+				}),
+				q(76281, {	-- Something Worth Celebrating
+					["sourceQuests"] = { 76280 },	-- New Moon
+					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind
+					["coord"] = { 50.8, 61.5, 2239 },	-- Amirdrassil
+				}),
+				q(76282, {	-- A Disquieting Feeling
+					["sourceQuests"] = { 76280 },	-- New Moon (TODO: 76281 is required for phase?)
+					["provider"] = { "n", 209042 },	-- Kalecgos
+					["coord"] = { 54.2, 57.9, 2239 },	-- Amirdrassil
+					["g"] = {
+						i(209316),	-- Goat's Milk in a Skull Mug (QI!)
+						i(209318),	-- Dalaran Dazzler (QI!)
+						i(209317),	-- Karazhan Twist (QI!)
+						i(209319),	-- Hornswog's Breath (QI!)
+						i(209322),	-- Niffen Strong-Sniffer Stout (QI!)
+						i(209324),	-- Azure Leywine (QI!)
+						i(209323),	-- Emerald Dreamtime (QI!)
+						i(209326),	-- Maruukai Pale Ale (QI!)
+						--modID 27 bonusID 9546
+						i(209914),	-- Bramble Bark Band
+						i(209912),	-- Luscious Leaf Loop
+						i(209913),	-- Summer Sky Signet
+					},
+				}),
+				q(77781, {	-- A Different Enthusiasm
+					["sourceQuests"] = { 76280 },	-- New Moon (TODO: 76281 is required for phase?)
+					["provider"] = { "n", 206849 },	-- Merithra of the Dream
+					["coord"] = { 54.2, 57.9, 2239 },	-- Amirdrassil
+				}),
+				q(76283, {	-- Andu-falah-dor
+					["sourceQuests"] = { 76281 },	-- New Moon (TOD): 76282 & 77781 also required?)
+					["provider"] = { "n", 206849 },	-- Merithra of the Dream
+					["coord"] = { 54.2, 57.9, 2239 },	-- Amirdrassil
+					["g"] = {
+						i(210920),	-- Gift of Amirdrassil [2.5k Dream Warden rep]
 					},
 				}),
 			}),
@@ -1004,9 +1095,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			q(77762, {	--	A Little Hope is Never without Worth
 				["sourceQuests"] = { 77711 },	-- And a Pinch of Magic
-				--["provider"] = { "n",  },	--
-				--["coord"] = { , EMERALD_DREAM },
+				["provider"] = { "n", 209571 },	-- Professor Ash
+				["coord"] = { 48.7, 68.0, EMERALD_DREAM },
 				["g"] = {
+					i(211131),	-- Delicately Curated Blossoms [750 Dream Warden rep]
 					i(210774),	-- Ochre Dreamtalon (MOUNT!)
 				},
 			}),
@@ -1032,6 +1124,11 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77572),	-- 'Make player eligible for superbloom' (spellID 425375)
 		q(77887),	-- 'World Quest Unlock' (spellID 421687)
 		q(78904),	-- 'Local Stories Quest Unlock' (spellID 429258) (after qID 77178 'Tactical Withdrawal')
+		q(77769),	-- 'Stay a while and listen' Delaryn Summermoon (n: 206930) during qID 76281 (Something Worth Celebrating)
+		q(77768),	-- 'Stay a while and listen' Tyrande Whisperwind (n: 206402) during qID 76281 (Something Worth Celebrating)
+		q(77771),	-- 'Stay a while and listen' Lady Jaina Proudmoore (n: 206943) during qID 76281 (Something Worth Celebrating)
+		q(77770),	-- 'Stay a while and listen' Lady Jaina Proudmoore (n: 209610) during qID 76283 (Andu-falah-dor)
+		--q(),	-- 'Stay a while and listen' Watcher Koranos (n: 209334) during qID 76283 (Andu-falah-dor) (have dialog above him, but nothing when you talk to him)
 		-- Dryad Garden
 		q(77808),	-- Quest "What Do I Call You?": Pick the title of "Mother"
 		q(77809),	-- Quest "What Do I Call You?": Pick the title of "Father"
@@ -1052,15 +1149,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(),	-- Quest "What Do I Call You?": Pick the title of "Netherlord" (warlock)
 		--q(),	-- Quest "What Do I Call You?": Pick the title of "Shadowbane" (rogue?)
 		--q(),	-- Quest "What Do I Call You?": Pick the title of "Slayer" (dh?)
-		-- Elanna unlocks for battle pets
-		q(78854),	-- unlock ability to buy Dreamborne Scarab (i: 210553) (require: Endmite (any other pet with same model?)) (spellID 429058)
-		q(78855),	-- unlock ability to buy Dreamhoof (i: 210555) (require: Leyhart (any other pet with same model?)) (spellID 429064)
-		q(78859),	-- unlock ability to buy Drowsey (i: 210777) (require: any ZC snail? Mine was Tricky) (spellID 429073 / 429074)
-		q(78856),	-- unlock ability to buy Memorie (i: 210567) (require: Fol'ya Pup (any other pet with same model?)) (spellID 429068)
-		q(78858),	-- unlock ability to buy Reverie (i: 210505) (require: Pilot (any other pet with same model)) (spellID 429055 / 429053)
-		q(78853),	-- unlock ability to buy Snorr (i: 210785) (require: Axel (any other pet with same model?)) (spellID xx)
-		q(78886),	-- unlock ability to buy Somnolet (i: 210652) (require: Dustie) (spellID 426355)
-		q(78857),	-- unlock ability to buy Somnolet (i: 210652) (require: Seedle (any other pet with same model?)) (spellID 429070)
 		--
 		q(78977),	-- pop after finishing qID 78890 (Emerald Frenzy) first time (daily), seems like it is fired when give you reward
 		-- Sprout
@@ -1071,5 +1159,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77759),	-- after turn in qID 77711 (And a Pinch of Magic), when animation start pop around flower (spellID 420720)
 		--
 		q(78707),	-- Moonberry's Many Mischief Makers (itemID 210996)
+		q(78086),	-- Ensemble: Raiment of Amirdrassi (itemID 209604)
 	}),
 }));

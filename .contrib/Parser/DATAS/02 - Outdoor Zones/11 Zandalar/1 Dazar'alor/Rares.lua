@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 48333,
 				["coord"] = { 55.01, 83.61, DAZARALOR },
 				["g"] = {
-					crit(11, {	-- Kul'krazahn (Adventurer of Zuldazar)
+					crit(41875, {	-- Kul'krazahn (Adventurer of Zuldazar)
 						["achievementID"] = 12944,	-- Adventurer of Zuldazar
 					}),
 					i(160947),	-- Amani Berserker's Chopper

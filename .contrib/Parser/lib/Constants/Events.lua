@@ -26,15 +26,16 @@ EVENTS = {
 	THE_GREAT_GNOMEREGAN_RUN = 696,
 	THOUSAND_BOAT_BASH = 642,
 	TRIAL_OF_STYLE = 691,
-	
+
 	-- Dragonriding Cups
-	DRAGONRIDING_CUP = 133701,	-- Generic Header [Crieve made this up, it's just supposed to be Unique!] (NOTE: It's referenced in Events.lua.
+	-- Note: These need to all be referenced in src\Modules\Events.lua
+	DRAGONRIDING_CUP = 133701,	-- Generic Header [Crieve made this up, it's just supposed to be Unique!]
 	KALIMDOR_CUP = 1395,
 	EASTERN_KINGDOMS_CUP = 1400,
-	OUTLAND_CUP = 0, -- TODO: CRIEVE NOTE: Add it to the events list in Events.lua.
-	NORTHREND_CUP = 0, -- TODO: CRIEVE NOTE: Add it to the events list in Events.lua.
-	PANDARIA_CUP = 0, -- TODO: CRIEVE NOTE: Add it to the events list in Events.lua.
-	BROKEN_ISLES_CUP = 0, -- TODO: CRIEVE NOTE: Add it to the events list in Events.lua.
+	OUTLAND_CUP = 1407,
+	NORTHREND_CUP = 1429,
+	PANDARIA_CUP = 1430,
+	BROKEN_ISLES_CUP = 1431,
 
 	-- No event file exists for these yet. (and maybe they don't need to?)
 	AUCTION_HOUSE_DANCE_PARTY = 692,

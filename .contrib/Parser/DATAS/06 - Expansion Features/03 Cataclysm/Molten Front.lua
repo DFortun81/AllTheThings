@@ -208,7 +208,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					},
 					["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
 					["groups"] = {
-						ach(5866, crit(6)),	-- The Molten Front Offensive / Recruit an armorer
+						ach(5866, crit(17818)),	-- The Molten Front Offensive / Recruit an armorer
 					},
 				}),
 				q(29139, {	-- Agressive Growth
@@ -251,7 +251,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					},
 					["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
 					["groups"] = {
-						ach(5866, crit(5)),	-- The Molten Front Offensive / Recruit Elderlimb and the ancients
+						ach(5866, crit(17817)),	-- The Molten Front Offensive / Recruit Elderlimb and the ancients
 					},
 				}),
 				q(29181, {	-- Druids of the Talon
@@ -260,7 +260,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
 					["groups"] = {
-						ach(5866, crit(3)),	-- The Molten Front Offensive / Recruit the Druids of the Talon
+						ach(5866, crit(17815)),	-- The Molten Front Offensive / Recruit the Druids of the Talon
 					},
 				}),
 				q(29160, {	-- Egg-stinction
@@ -314,7 +314,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					},
 					["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
 					["groups"] = {
-						ach(5866, crit(7)),	-- The Molten Front Offensive / Filling the Moonwell
+						ach(5866, crit(17819)),	-- The Molten Front Offensive / Filling the Moonwell
 					},
 				}),
 				q(29265, {	-- Fire Flowers
@@ -361,7 +361,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["coord"] = { 47.0, 90.0, 338 },
 					["sourceQuest"] = 29280,	-- Nourishing Waters
 					["groups"] = {
-						ach(5859, crit(3)),	-- Legacy of Leyara / Into the Depths
+						ach(5859, crit(17796)),	-- Legacy of Leyara / Into the Depths
 					},
 				}),
 				q(29209, {	-- Into the Fiery Depths
@@ -379,7 +379,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["coord"] = { 50.6, 87.0, 338 },
 					["sourceQuest"] = 29249,	-- Planting Season
 					["groups"] = {
-						ach(5866, crit(8)),	-- The Molten Front Offensive / Find the Crimson Lasher
+						ach(5866, crit(17820)),	-- The Molten Front Offensive / Find the Crimson Lasher
 					},
 				}),
 				q(29278, {	-- Living Obsidium
@@ -402,7 +402,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["coord"] = { 51.8, 31.0, 338 },
 					["sourceQuest"] = 29181,	-- Druids of the Talon
 					["groups"] = {
-						ach(5866, crit(9)),	-- The Molten Front Offensive / Save Anren Shadowseeker
+						ach(5866, crit(17821)),	-- The Molten Front Offensive / Save Anren Shadowseeker
 					},
 				}),
 				q(29287, {	-- Peaked Interest
@@ -551,7 +551,7 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
 					["groups"] = {
-						ach(5866, crit(4)),	-- The Molten Front Offensive / Recruit the Shadow Wardens
+						ach(5866, crit(17816)),	-- The Molten Front Offensive / Recruit the Shadow Wardens
 					},
 				}),
 				q(29192, {	-- The Wardens are Watching

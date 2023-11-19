@@ -15,13 +15,13 @@ root(ROOTS.Zones, {
 					ach(7294),	-- A Taste of Things to Come (Halfhill)
 					explorationAch(6969),	-- Explore Valley of the Four Winds
 					ach(7295, {	-- Listen to the Drunk Fish (Halfhill)
-						crit(1),	-- Juicycrunch Carrot
-						crit(2),	-- Green Cabbage
-						crit(3),	-- Scallions
-						crit(4),	-- Mogu Pumpkin
-						crit(5),	-- Red Blossom Leek
-						crit(6),	-- Pink Turnip
-						crit(7),	-- White Turnip
+						crit(20536),	-- Juicycrunch Carrot
+						crit(21034),	-- Green Cabbage
+						crit(21037),	-- Scallions
+						crit(21035),	-- Mogu Pumpkin
+						crit(21036),	-- Red Blossom Leek
+						crit(21038),	-- Pink Turnip
+						crit(21039),	-- White Turnip
 					}),
 					ach(6301, {	-- Rally the Valley
 						["sym"] = {{ "achievement_criteria" }},

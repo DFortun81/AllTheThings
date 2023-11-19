@@ -52,50 +52,59 @@ root(ROOTS.Zones, {
 						["rank"] = 100,
 						-- #endif
 						-- #else
-						crit(1, {	-- Sseratus
+						crit(39098, {	-- Sseratus
 							["sourceQuest"] = 12516,	-- Too Much of a Good Thing
 						}),
-						crit(2, {	-- Quetz'lun
+						crit(39099, {	-- Quetz'lun
 							["sourceQuest"] = 12685,	-- You Reap What You Sow
 						}),
-						crit(3, {	-- Akali
+						crit(39100, {	-- Akali
 							["sourceQuest"] = 12730,	-- Convocation at Zol'Heb
 						}),
-						crit(4, {	-- The Amphitheater of Anguish
+						crit(5799, {	-- The Amphitheater of Anguish
 							["sourceQuest"] = 12948,	-- The Champion of Anguish
 						}),
-						crit(5, {	-- Finding Allies
-							["sourceQuests"] = {
-								12861,	-- Trolls Is Gone Crazy!
-								-- TODO: verify below:
-								12902,	-- In Search of Answers
-								12859,	-- This Just In: Fire Still Hot!
-							},
+						crit(39083, {	-- Finding Allies
+							["sourceQuest"] = 12859,	-- This Just In: Fire Still Hot!
 						}),
-						crit(6, {	-- The Storm King's Crusade
-							["sourceQuests"] = {
-								12904,	-- Light Won't Grant Me Vengeance
-								12919,	-- The Storm King's Crusade
-								-- TODO: verify below:
-								12901,	-- Making Something Out Of Nothing
-								12903,	-- That's What Friends Are For...
-							},
+						crit(39084, {	-- Finding Allies
+							["sourceQuest"] = 12861,	-- Trolls Is Gone Crazy!
 						}),
-						crit(7, {	-- Betrayal
+						crit(39086, {	-- The Storm King's Crusade
+							["sourceQuest"] = 12903,	-- That's What Friends Are For...
+						}),
+						crit(39087, {	-- The Storm King's Crusade
+							["sourceQuest"] = 12901,	-- Making Something Out Of Nothing
+						}),
+						crit(39088, {	-- The Storm King's Crusade
+							["sourceQuest"] = 12904,	-- Light Won't Grant Me Vengeance
+						}),
+						crit(39089, {	-- The Storm King's Crusade
+							["sourceQuest"] = 12919,	-- The Storm King's Crusade
+						}),
+						crit(5805, {	-- Betrayal
 							["sourceQuest"] = 12713,	-- Betrayal
 						}),
-						crit(8, {	-- The Argent Patrol
-							["sourceQuests"] = {
-								12584,	-- Pure Evil
-								12506,	-- Trouble at the Altar of Sseratus
-								-- TODO: confirm the following:
-								12555,	-- A Tangled Skein
-								12504,	-- Argent Crusade, We Are Leaving!
-								12606,	-- Cocooned!
-								12512,	-- Leave No One Behind
-								12554,	-- Malas the Corrupter
-								12508,	-- Mopping Up
-							},
+						crit(39090, {	-- The Argent Patrol
+							["sourceQuest"] = 12504,	-- Argent Crusade, We Are Leaving!
+						}),
+						crit(39091, {	-- The Argent Patrol
+							["sourceQuest"] = 12508,	-- Mopping Up
+						}),
+						crit(39092, {	-- The Argent Patrol
+							["sourceQuest"] = 12584,	-- Pure Evil
+						}),
+						crit(39093, {	-- The Argent Patrol
+							["sourceQuest"] = 12554,	-- Malas the Corrupter
+						}),
+						crit(39094, {	-- The Argent Patrol
+							["sourceQuest"] = 12555,	-- A Tangled Skein
+						}),
+						crit(39095, {	-- The Argent Patrol
+							["sourceQuest"] = 12506,	-- Trouble at the Altar of Sseratus
+						}),
+						crit(39096, {	-- The Argent Patrol
+							["sourceQuest"] = 12512,	-- Leave No One Behind
 						}),
 						-- #endif
 					}),

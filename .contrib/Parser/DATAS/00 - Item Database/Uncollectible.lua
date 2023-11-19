@@ -796,3 +796,5 @@ i(209034);	-- Half-Completed Invasion Plans (Dropped in Argus during Seeing Red 
 ------------------
 --- Trash ---
 i(192717);	-- Animated Splinter
+i(210451);	-- Imp Tail
+i(210452);	-- Small Demon Horn

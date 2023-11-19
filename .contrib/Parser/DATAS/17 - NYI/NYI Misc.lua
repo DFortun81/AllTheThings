@@ -223,6 +223,7 @@ root(ROOTS.NeverImplemented, {
 				i(137602),	-- Unknown
 				i(140787),	-- Unknown
 				i(140921),	-- Unknown
+				i(147904),	-- Cage Key
 			}),
 		}),
 		tier(BFA_TIER, {
@@ -850,7 +851,6 @@ root(ROOTS.NeverImplemented, {
 			tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 				i(208417),	-- Chromie's Certificate of Temporal Tidiness
 				i(208097),	-- Flamethrower
-				i(207594),	-- Looter's Purse
 				i(208108),	-- Madam Shadow's Old Grimoire
 				i(205259),	-- Order Soul
 				i(207096),	-- Paracausal Chest
@@ -956,7 +956,6 @@ root(ROOTS.NeverImplemented, {
 				i(211418),	-- Q'onzu Edict of Change
 				i(208690),	-- Roottwined Key
 				i(210726),	-- Ruby Flightstone
-				i(210346),	-- Self-Baking Herb Based Cookies
 				i(208606),	-- Somnagora's Heart
 				i(209853),	-- Unstable Water Walking Potion
 				i(208745),	-- Your Reward [DNT]
@@ -967,12 +966,10 @@ root(ROOTS.NeverImplemented, {
 				i(210444),	-- Burning Flower
 				i(210450),	-- Flaming Orb
 				i(210449),	-- Heated Scales
-				i(210451),	-- Imp Tail
 				i(210443),	-- Matchbook
 				i(208856),	-- Pocket Lint
 				i(211270),	-- Pristine Core Leather
 				i(210442),	-- Sizzling Charcoal
-				i(210452),	-- Small Demon Horn
 				i(210439),	-- Speck of Mana
 				i(210440),	-- Splendid Blossom
 				i(210438),	-- Wisp Dust
@@ -989,9 +986,6 @@ root(ROOTS.NeverImplemented, {
 				i(210422),	-- Loamm Niffen Insignia [Epic 2.5k]
 				------ Equipment Chest ------
 				i(210595),	-- Dreaming Equipment Chest
-				------ Items from Questlines that Gives Rep ------
-				i(211131),	-- Delicately Curated Blossoms
-				i(210920),	-- Gift of Amirdrassil
 				------ Winter Veil ------
 				i(210657),	-- Gently Shaken Gift
 				i(209871),	-- Winter Veil Gift

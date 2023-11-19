@@ -91,9 +91,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				crit(62058, {	-- A Dream of Fields and Fire
 					["sourceQuests"] = { 76401 },	-- Echo of the Firelands
 				}),
-				-- crit(62059, {	-- New Beginnings
-				-- 	["sourceQuests"] = { 76283 },	-- xx
-				-- }),
+				crit(62059, {	-- New Beginnings
+					["sourceQuests"] = { 76283 },	-- Andu-falah-dor
+				}),
 			}),
 			ach(19301, {	-- Dragon Glyphs: Amirdrassil
 				["coord"] = { 49.9, 64.3, EMERALD_DREAM },

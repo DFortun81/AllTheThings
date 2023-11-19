@@ -96,6 +96,7 @@ root(ROOTS.WorldDrops, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.
 		}),
 		filter(NECK_F, {
 			i(141588),	-- Talisman of Jaimil Lightheart
+			i(141587),	-- Queen Yh'saerie's Pendant
 		}),
 		filter(FINGER_F, {
 			i(141581),	-- Demar's Band of Amore
@@ -111,7 +112,11 @@ root(ROOTS.WorldDrops, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "added 7.
 			i(139103),	-- An'she's Band
 		}),
 		filter(TRINKET_F, {
+			i(134146),	-- Brulstone Idol
 			i(141584),	-- Eyasu's Mulligan
+			i(134379),	-- Infernal Bloodstone Shard
+			i(134366),	-- Legionnaire's Mandate
+			i(141586),	-- Marfisi's Giant Censer
 			i(141585),	-- Six-feater Fan
 		}),
 	}),

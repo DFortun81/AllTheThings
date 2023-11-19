@@ -205,6 +205,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				--dm can be looted from it too (formula, may be, too?)
 				--add zone drop into loot table
 			}),
+			o(413784, {	-- Self-Baking Herb Based Cookies
+				["questID"] = 78834,
+				["coord"] = { 59.6, 19, EMERALD_DREAM },
+				["groups"] = {
+					i(210346),	-- Self-Baking Herb Based Cookies
+				},
+			}),
 		}),
 	}),
 })));

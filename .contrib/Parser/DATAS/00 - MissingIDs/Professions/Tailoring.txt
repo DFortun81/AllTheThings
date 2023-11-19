@@ -105,6 +105,9 @@ r(18444),	-- Runecloth Headband
 r(18446),	-- Wizardweave Robe
 r(18449),	-- Runecloth Shoulders
 r(18450),	-- Wizardweave Turban
+1.15.0.52124
+r(428424),	--
+r(429351),	-- Extraplanar Spidersilk Boots
 2.0.0.6080
 r(26745),	-- Bolt of Netherweave
 r(26746),	-- Netherweave Bag
@@ -848,6 +851,9 @@ r(28210),	-- Gaea's Embrace
 r(28480),	-- Sylvan Vest
 r(28481),	-- Sylvan Crown
 r(28482),	-- Sylvan Shoulders
+1.15.0.52124
+r(428424),	--
+r(429351),	-- Extraplanar Spidersilk Boots
 2.0.0.6080
 r(26745),	-- Bolt of Netherweave
 r(26746),	-- Netherweave Bag

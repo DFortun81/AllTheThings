@@ -10,6 +10,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 	},{
 		n(ACHIEVEMENTS, {
 			ach(11298, {	-- A Classy Outfit
+				-- TODO: The criteria indexes used here will need to be replaced by a criteriaUID for every individual source quest, since the sub criteria don't have names. They then will get their name from the sourceQuest. Then the ones with faction requirements I don't even know how to convert them. So I'm not doing any of that right now :)
 				crit(5212, {	-- Class Hall Helm Earned
 					["description"] = "Rewarded by a quest in your class's Order Hall campaign.",
 					["sourceQuests"] = {

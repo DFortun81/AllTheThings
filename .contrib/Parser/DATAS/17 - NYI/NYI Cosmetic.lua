@@ -252,7 +252,6 @@ root(ROOTS.NeverImplemented, {
 		tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				------ Random ------
 			i(208199),	-- Tabard of the Tyr's Guard [From Tyr Part 4?]
-			i(210433),	-- Visage of Aurostor [From World Boss?]
 
 				------ Darnassian Questline? ------
 			i(210415),	-- Darnassian Moonsilver Spaulders

@@ -1326,7 +1326,6 @@ root(ROOTS.Zones, {
 						41426,	-- Against Their Will
 						41709,	-- Breaking Down the Big Guns
 						41425,	-- Sunken Foes
-						41409,	-- Timing Is Everything
 					},
 				}),
 				q(44842, {	-- Shield, Meet Spell
@@ -1389,7 +1388,6 @@ root(ROOTS.Zones, {
 						41426,	-- Against Their Will
 						41709,	-- Breaking Down the Big Guns
 						41425,	-- Sunken Foes
-						41409,	-- Timing Is Everything
 					},
 				}),
 				q(45316, {	-- Stabilizing Suramar
@@ -1787,7 +1785,6 @@ root(ROOTS.Zones, {
 						41426,	-- Against Their Will
 						41709,	-- Breaking Down the Big Guns
 						41425,	-- Sunken Foes
-						41409,	-- Timing Is Everything
 					},
 				}),
 				q(40368, {	-- Turtle Powered

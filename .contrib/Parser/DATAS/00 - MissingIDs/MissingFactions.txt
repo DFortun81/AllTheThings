@@ -171,6 +171,10 @@ faction(2403),	-- CTF - Flag - Alliance
 faction(1041),	-- Frenzy
 1.14.2.41959
 faction(2505),	-- Dragonflight, Chromatic
+1.15.0.52124
+faction(2586),	-- Azeroth Commerce Authority
+faction(2587),	-- Durotar Supply and Logistics
+faction(2588),	-- S03 - Scarlet Crusade Disguise
 2.0.0.6080
 faction(914),	-- PLAYER, Blood Elf
 faction(923),	-- Farstriders
@@ -626,3 +630,5 @@ faction(2565),	-- Loamm Niffen (Paragon)
 faction(2576),	-- Druids of the Flame
 10.2.0.51239
 faction(2575),	-- Dream Wardens (Paragon)
+10.2.5.52206
+faction(2615),	-- Azerothian Archives

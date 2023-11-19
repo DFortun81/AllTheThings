@@ -175,6 +175,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 				["crs"] = {
 					33113,	-- Flame Leviathan
 					33118,	-- Ignis the Furnace Master
+					33186,	-- Razorscale
 					33293,	-- XT-002 Deconstructor
 					32871,	-- Algalon the Observer
 					32927,	-- Runemaster Molgeim
@@ -1372,6 +1373,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						["crs"] = {
 							33113,	-- Flame Leviathan
 							33118,	-- Ignis the Furnace Master
+							33186,	-- Razorscale
 							33293,	-- XT-002 Deconstructor
 							32871,	-- Algalon the Observer
 							32927,	-- Runemaster Molgeim

@@ -419,6 +419,14 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["timeline"] = { ADDED_10_1_0 },
 			}),
 			-- Patch 10.2.0
+			q(77933, {	-- Bubbling Discoveries
+				["provider"] = { "n", 210162 },	-- Magnolia Oaken
+				["coord"] = { 36.8, 63.1, VALDRAKKEN },
+				["timeline"] = { ADDED_10_2_0 },
+				["g"] = {
+					i(198608),	-- Alchemy Notes
+				},
+			}),
 			q(77932, {	-- Warmth of Life
 				["provider"] = { "n", 210162 },	-- Magnolia Oaken
 				["coord"] = { 36.8, 63.1, VALDRAKKEN },

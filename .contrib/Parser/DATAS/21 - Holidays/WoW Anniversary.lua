@@ -187,12 +187,12 @@ WOW_ANNIVERSARY_EIGHTEEN = createHeader({
 WOW_ANNIVERSARY_NINETEEN = createHeader({
 	readable = "WoW's 19th Anniversary",
 	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
-	--eventID = 1262,
-	--eventSchedule = {
-	--	0, -- November 6th through November 27th
-	--	2022, 11, 6,	-- 11/06/2022
-	--	2022, 11, 27,	-- 11/27/2022
-	--},
+	eventID = 1397,
+	eventSchedule = {
+		0, -- November 16th through December 7th
+		2022, 11, 16,	-- 11/16/2022
+		2022, 12, 7,	-- 12/07/2022
+	},
 	text = {
 		en = [[~select(2,GetAchievementInfo(18702))]],
 	},
@@ -1979,6 +1979,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					CAVERNS_OF_TIME,
 				},
 				["groups"] = {
+					i(208572, {	-- Azure Worldchiller (MOUNT!)
+						["timeline"] = { "added 10.2.0.52148" }
+					}),
+					i(186469, {	-- Illidari Doomhawk (MOUNT!)
+						["timeline"] = { "removed 10.2.0.52148" }
+					}),
+					i(186501);	-- Doomwalker Trophy Stand (TOY!)
 					i(186506),	-- Akama's Edge
 					i(186460),	-- Anger-Spark Gloves
 					i(186459),	-- Archaic Charm of Presence
@@ -1993,21 +2000,34 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(186468),	-- Talon of the Tempest
 					i(186463),	-- Terrorweave Tunic
 					i(186484),	-- Voidforged Greaves
-					i(186469),	-- Illidari Doomhawk (MOUNT!)
-					i(186501);	-- Doomwalker Trophy Stand (TOY!)
 				},
 			}),
 		}),
 	})),
 	n(WOW_ANNIVERSARY_EIGHTEEN, bubbleDownSelf({ ["timeline"] = { "added 10.0.0.46455" } },{
 	})),
-	n(WOW_ANNIVERSARY_NINETEEN, bubbleDownSelf({ ["timeline"] = { "added 10.2.0" } },{
+	n(WOW_ANNIVERSARY_NINETEEN, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52148" } },{
 		ach(18702),	-- WoW's 19th Anniversary
-		ach(19028),	-- Lil' Frostwing
-		i(208210),	-- Celebration Package
-		i(208211),	-- Anniversary Gift
-		i(208543),	-- Lil' Frostwing (PET!)
-		i(208572),	-- Azure Worldchiller (MOUNT!)
+		n(MAILBOX, {
+			i(208211, {	-- Anniversary Gift
+				i(208210),	-- Celebration Package
+				i(172013),	-- Celebration Firework
+				i(171177),	-- Invitation from the Timewalkers
+				i(208543, {	-- Lil' Frostwing (PET!)
+					ach(19192),	-- Lil' Frostwing
+				}),
+			}),
+		}),
+		n(VENDORS, {
+			n(158061, {	-- Historian Ma'di
+				["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },
+				["groups"] = {
+					i(186469, {	-- Illidari Doomhawk (MOUNT!)
+						["cost"] = {{ "c", TIMEWARPED_BADGE, 5000 }},
+					}),
+				},
+			}),
+		}),
 	})),
 })));
 --[[

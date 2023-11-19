@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				152812,	-- Zoatroid
 			},
 			["g"] = {
-				crit(36, {	-- Abyss Pearl
+				crit(46086, {	-- Abyss Pearl
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -155,7 +155,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["repeatable"] = true,
 			["questID"] = 56969,
 			["g"] = {
-				crit(38, {	-- Ancient Reefwalker Bark
+				crit(46088, {	-- Ancient Reefwalker Bark
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -171,7 +171,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				153263,	-- Kritch
 			},
 			["g"] = {
-				crit(34, {	-- Barnacled Bag of Goods
+				crit(46084, {	-- Barnacled Bag of Goods
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				152793,	-- Sea Spireshell
 			},
 			["g"] = {
-				crit(48, {	-- Brightspine Shell
+				crit(46098, {	-- Brightspine Shell
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -189,7 +189,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		i(167012, {	-- Brinestone Pickaxe
 			["description"] = "Drops commonly from Chitterspine Encroachers in the north north west of Nazjatar, after completing the white item version of Brinestone Pickaxe (/att quest:55531)",
 			["coord"] = { 36.8, 13.1, NAZJATAR },
-			["crs"] = {	-- 
+			["crs"] = {	--
 				153804,	-- Chitterspine Encroacher
 			},
 		}),
@@ -222,7 +222,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 38.0, 59.2, NAZJATAR },
 			["g"] = {
 				i(170473),	-- Jingling Sack
-				crit(21, {	-- Encrusted Coin
+				crit(46071, {	-- Encrusted Coin
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -251,7 +251,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				155914,	-- Zanj'ir Snapdragon
 			},
 			["g"] = {
-				crit(45, {	-- Exposed Fish
+				crit(46095, {	-- Exposed Fish
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -273,7 +273,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				153313,	-- Vyz'olgo the Mind-Taker
 			},
 			["g"] = {
-				crit(50, {	-- Fermented Deviate Fish
+				crit(46100, {	-- Fermented Deviate Fish
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -309,7 +309,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				152544,	-- Voidscale Trenchstalker
 			},
 			["g"] = {
-				crit(37, {	-- Intact Naga Skeleton
+				crit(46087, {	-- Intact Naga Skeleton
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -326,7 +326,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				151534,	-- Necrofin Scavenger
 			},
 			["g"] = {
-				crit(32, {	-- Mardivas' Bag of Containing
+				crit(46082, {	-- Mardivas' Bag of Containing
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 				i(169332),	-- Strange Mineralized Water
@@ -340,7 +340,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				152792,	-- Prismatic Spireshell
 			},
 			["g"] = {
-				crit(47, {	-- Muck Slime
+				crit(46097, {	-- Muck Slime
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -355,7 +355,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				151166,	-- Wayward Algan
 			},
 			["g"] = {
-				crit(30, {	-- Mudwrap
+				crit(46080, {	-- Mudwrap
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -366,7 +366,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				152383,	-- Snapshell Tortoise
 			},
 			["g"] = {
-				crit(42, {	-- Razorshell
+				crit(46092, {	-- Razorshell
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -392,13 +392,13 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				152560,	-- Whitewave Reefwalker
 			},
 			["g"] = {
-				crit(39, {	-- Reefwalker Bark
+				crit(46089, {	-- Reefwalker Bark
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
 		}),
 		i(169370, {	-- Scalebrood Hydra (PET!)
-			crit(7, {	-- Scalebrood Hydra
+			crit(45566, {	-- Scalebrood Hydra
 				["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 			}),
 		}),
@@ -441,7 +441,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				153310,	-- Qalina, Spear of Ice
 			},
 			["g"] = {
-				crit(23, {	-- Seastorm Totem
+				crit(46073, {	-- Seastorm Totem
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -458,7 +458,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				152673,	-- Wave Surger
 			},
 			["g"] = {
-				crit(29, {	-- Sea Totem
+				crit(46079, {	-- Sea Totem
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -474,7 +474,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				151534,	-- Necrofin Scavenger
 			},
 			["g"] = {
-				crit(31, {	-- Skeletal Hand
+				crit(46081, {	-- Skeletal Hand
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -497,7 +497,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				155914,	-- Zanj'ir Snapdragon
 			},
 			["g"] = {
-				crit(43, {	-- Snapdragon Scent Gland
+				crit(46093, {	-- Snapdragon Scent Gland
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -507,7 +507,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				152683	-- Raging Tempest
 			},
 			["g"] = {
-				crit(28, {	-- Storm Totem
+				crit(46078, {	-- Storm Totem
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -520,7 +520,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				153654,	-- Voltscale Guardian
 			},
 			["g"] = {
-				crit(41, {	-- Tidal Guard
+				crit(46091, {	-- Tidal Guard
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -548,7 +548,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				153304,	-- Undana Frostbarb
 			},
 			["g"] = {
-				crit(27, {	-- Voidcaster's Supply Bag
+				crit(46077, {	-- Voidcaster's Supply Bag
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -558,7 +558,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				153306,	-- Azsh'ari Leviathan
 			},
 			["g"] = {
-				crit(40, {	-- Voltscale Shield
+				crit(46077, {	-- Voltscale Shield
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -573,7 +573,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				151946,	-- Zanj'ir Bulwark
 			},
 			["g"] = {
-				crit(20, {	-- Underlight Sealamp
+				crit(46070, {	-- Underlight Sealamp
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
@@ -608,7 +608,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				152884,	-- Zanj'ir Trapper
 			},
 			["g"] = {
-				crit(24, {	-- Underlight Sealamp
+				crit(46074, {	-- Zanj'ir Weapon Rack
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},

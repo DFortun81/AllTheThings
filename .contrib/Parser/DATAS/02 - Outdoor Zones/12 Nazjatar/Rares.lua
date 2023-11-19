@@ -646,7 +646,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					["achievementID"] = 13691,
 				}),
 				i(170193, {	-- Sea Totem
-					crit(29, {	-- Sea Totem
+					crit(46079, {	-- Sea Totem
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),

@@ -49,6 +49,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_0_1_L
                 i(161215),	-- Obsidian Krolusk (MOUNT!)
             },
 		}),
+		ach(12489),	-- Losing My Profession
 		-- #IF AFTER BFA
 		-- #IF BEFORE SHADOWLANDS
 		ach(11162, {	-- Keystone Master

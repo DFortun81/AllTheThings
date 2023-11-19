@@ -151,7 +151,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					152697,	-- Ulmath
 				},
 				["g"] = bubbleDown({["modID"] = 3 }, {
-					crit(2, {	-- Defeat one of the World Bosses in Nazjatar
+					crit(45739, {	-- Defeat one of the World Bosses in Nazjatar
 						["achievementID"] = 13635,	-- Tour of the Depths
 					}),
 					i(170089),	-- Liara's Spire
@@ -204,7 +204,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				},
 				["creatureID"] = 152671,	-- Wekemara
 				["g"] = bubbleDown({["modID"] = 3}, {
-					crit(2, {	-- Defeat one of the World Bosses in Nazjatar
+					crit(45740, {	-- Defeat one of the World Bosses in Nazjatar
 						["achievementID"] = 13635,	-- Tour of the Depths
 					}),
 					i(168340),	-- Naga Ritualist's Mantle

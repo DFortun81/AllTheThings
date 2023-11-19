@@ -226,19 +226,19 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 						["collectible"] = false,
 						["g"] = {
 							crit(40145, {	-- Governess Tabitha
-								["creatureID"] = 131595,	-- Governess Tabitha
+								["cr"] = 131595,	-- Governess Tabitha
 							}),
 							crit(40146, {	-- Head Vintner Justin
-								["creatureID"] = 131615,	-- Head Vintner Justin
+								["cr"] = 131615,	-- Head Vintner Justin
 							}),
 							crit(40147, {	-- Groundskeeper Lilith
-								["creatureID"] = 131617,	-- Groundskeeper Lilith
+								["cr"] = 131617,	-- Groundskeeper Lilith
 							}),
 							crit(40148, {	-- Seamstress Johanna
-								["creatureID"] = 131619,	-- Seamstress Johanna
+								["cr"] = 131619,	-- Seamstress Johanna
 							}),
 							crit(40149, {	-- Huntmaster Grath
-								["creatureID"] = 131853,	-- Huntmaster Grath
+								["cr"] = 131853,	-- Huntmaster Grath
 							}),
 						},
 					}),

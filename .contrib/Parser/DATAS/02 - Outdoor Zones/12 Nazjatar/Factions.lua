@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 								["classes"] = HEALERS,
 							}),
 							i(170203, {	-- Flopping Fish (TOY!)
-								crit(22, {	-- Flopping Fish
+								crit(46072, {	-- Flopping Fish
 									["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 								}),
 							}),
@@ -63,7 +63,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 								["classes"] = HEALERS,
 							}),
 							i(170203, {	-- Flopping Fish (TOY!)
-								crit(22, {	-- Flopping Fish
+								crit(46072, {	-- Flopping Fish
 									["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 								}),
 							}),

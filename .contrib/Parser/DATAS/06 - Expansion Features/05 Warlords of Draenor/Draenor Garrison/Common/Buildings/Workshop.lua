@@ -15,8 +15,8 @@ root(ROOTS.ExpansionFeatures,
 								h(i(116201)),	-- Goblin Workshop, Level 3 [Blueprints]
 								crit(26627),		-- Robo-Rooster
 								crit(26628),		-- Sticky Grenade
-								crit(3),			-- Pneumatic Power Gauntlet
-								crit(4),			-- Prototype Mekgineer's Chopper
+								crit(26629),		-- Pneumatic Power Gauntlet
+								crit(26637),		-- Prototype Mekgineer's Chopper
 								crit(26631),		-- "Skyterror" Personal Delivery System
 								crit(26632),		-- GG-117 Micro-Jetpack
 								crit(26635),		-- Sentry Turrets

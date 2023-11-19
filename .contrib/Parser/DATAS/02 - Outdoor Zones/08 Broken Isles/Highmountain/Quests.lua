@@ -539,7 +539,7 @@ root(ROOTS.Zones, {
 						i(132114),	-- Slime-Stacked Shoulderplates
 						i(132115),	-- Slime-Stacked Mantle
 						i(132117),	-- Slime-Stacked Shoulderpads
-						crit(2, {	-- Oh, the Clawdacity!
+						crit(34846, {	-- Oh, the Clawdacity!
 							["achievementID"] = 11427,	-- No Shellfish Endeavor
 						}),
 					},
