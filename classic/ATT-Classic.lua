@@ -657,7 +657,7 @@ local function GetAddedWithPatchString(awp, addedBack)
 			return nil;	-- Don't want to show this at the moment, let's add a configuration first!
 		end
 		if addedBack then formatString = formatString .. "_BACK"; end
-		return sformat(L[formatString .. "_WITH_PATCH_FORMAT"], 
+		return sformat(L[formatString .. "_WITH_PATCH_FORMAT"],
 		math.floor(awp / 10000) .. "." .. (math.floor(awp / 100) % 10) .. "." .. (awp % 10));
 	end
 end
@@ -876,7 +876,7 @@ local function GetBestMapForGroup(group, currentMapID)
 		if mapID and mapID == currentMapID then
 			return mapID;
 		end
-		
+
 		local coords = group.coords;
 		if coords then
 			for i,coord in ipairs(coords) do
@@ -895,7 +895,7 @@ local function GetBestMapForGroup(group, currentMapID)
 				end
 			end
 		end
-		
+
 		return mapID or GetBestMapForGroup(group.parent, currentMapID);
 	end
 end
@@ -2018,7 +2018,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				group.g = merged;
 			end
 		end
-		
+
 		if mostAccessibleSource then
 			group.rwp = mostAccessibleSource.rwp;
 			group.e = mostAccessibleSource.e;
@@ -2102,7 +2102,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 		end
-		
+
 		local awp, rwp = GetRelativeValue(group, "awp"), group.rwp;
 		local awpGreaterThanRWP = true;
 		if awp and ((rwp or (group.u and group.u < 3)) or awp >= app.GameBuildVersion) then
@@ -2809,7 +2809,7 @@ function app:GetDataCache()
 				isCraftedCategory = true
 			});
 		end
-		
+
 		-- Group Finder
 		if app.Categories.GroupFinder then
 			tinsert(g, {
@@ -2819,7 +2819,7 @@ function app:GetDataCache()
 				g = app.Categories.GroupFinder,
 			});
 		end
-		
+
 		-- Professions
 		if app.Categories.Professions then
 			tinsert(g, {
@@ -3215,7 +3215,7 @@ local function AttachTooltip(self)
 
 				-- Does the tooltip have an itemlink?
 				local itemName, link = self:GetItem();
-				if link then 
+				if link then
 					if owner and owner.cooldownWrapper then
 						local parent = owner:GetParent();
 						if parent then
@@ -3231,7 +3231,7 @@ local function AttachTooltip(self)
 							end
 						end
 					end
-					
+
 					-- Normal item tooltip, not on the Toy Box.
 					AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
 				end
@@ -3554,7 +3554,7 @@ else
 	WorldMapTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 	WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 	WorldMapTooltip:HookScript("OnShow", AttachTooltip);
-	
+
 	tinsert(app.EventHandlers.OnReady, function()
 		local GameTooltip_SetLFGDungeonReward = GameTooltip.SetLFGDungeonReward;
 		if GameTooltip_SetLFGDungeonReward then
@@ -3572,7 +3572,7 @@ else
 				end
 			end
 		end
-		
+
 		local GameTooltip_SetLFGDungeonShortageReward = GameTooltip.SetLFGDungeonShortageReward;
 		if GameTooltip_SetLFGDungeonShortageReward then
 			GameTooltip.SetLFGDungeonShortageReward = function(self, dungeonID, shortageSeverity, lootIndex)
@@ -4128,7 +4128,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 				if criteriaID then
 					local name = t.GetInfo(achievementID, criteriaID, true);
 					if not IsRetrieving(name) then return name; end
-					
+
 					local providers = t.providers;
 					if providers then
 						for k,v in ipairs(providers) do
@@ -4143,7 +4143,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 							end
 						end
 					end
-					
+
 					local sourceQuests = t.sourceQuests;
 					if sourceQuests then
 						for k,id in ipairs(sourceQuests) do
@@ -5169,7 +5169,7 @@ if C_PetJournal then
 		local count = C_PetJournal.GetNumCollectedInfo(t.speciesID);
 		return SetBattlePetCollected(t, t.speciesID, count and count > 0);
 	end
-	
+
 	local C_MountJournal = _G["C_MountJournal"];
 	if C_MountJournal then
 		-- Once the Mount Journal API is available, then all mounts become account wide.
@@ -5761,7 +5761,7 @@ else
 		local providers = t.providers;
 		if providers then
 			local provider = providers[1];
-			tremove(providers, 1);
+			--tremove(providers, 1);
 			if #providers < 1 then t.providers = nil; end
 			t = (provider[1] == "n" and app.CreateNPC or app.CreateObject)(provider[2], t);
 			t.encounterID = id;
@@ -6556,7 +6556,7 @@ if C_Heirloom then
 			return C_Heirloom_PlayerHasHeirloom(t.heirloomUnlockID);
 		end,
 	});
-	
+
 	-- Clone base item fields and extend the properties.
 	local heirloomFields = {
 		icon = function(t)
@@ -6638,7 +6638,7 @@ if C_Heirloom then
 		app.CacheHeirlooms = function()
 			-- app.PrintDebug("CacheHeirlooms",#heirloomIDs)
 			if #heirloomIDs < 1 then return; end
-			
+
 			-- Setup upgrade tokens that contain levels for the heirlooms. Order matters.
 			-- Ranks 1 & 2 were added with WOD (6.1.0.19445)
 			local armorTokenItemIDs = {
@@ -6752,7 +6752,7 @@ if C_Heirloom then
 			wipe(heirloomIDs);
 		end
 	end
-	
+
 	local CreateHeirloom = app.ExtendClass("Item", "Heirloom", "itemID", heirloomFields,
 	"AsRWP", {
 		collectible = function(t)
@@ -6795,7 +6795,7 @@ if C_Heirloom then
 	app.CreateHeirloom = function(id, t)
 		t = CreateHeirloom(id, t);
 		--t.b = 2;	-- Heirlooms are always BoA
-		
+
 		-- unlocking the heirloom is the only thing contained in the heirloom
 		t.g = { CreateHeirloomUnlock(id, { e = t.e, u = t.u }); }
 		tinsert(heirloomIDs, id);
@@ -6843,7 +6843,7 @@ if C_ToyBox then
 	fields.isBNETCollectible = function(t)
 		return isBNETCollectible(t.toyID);
 	end
-	
+
 	app.events.TOYS_UPDATED = function(toyID, new)
 		if toyID then
 			app.SetAccountCollected(app.SearchForField("toyID", toyID)[1] or app.CreateToy(toyID), "Toys", toyID, PlayerHasToy(toyID));
@@ -7080,7 +7080,7 @@ app.GetMapName = function(mapID)
 		local zoneTextSubstitution = L.MAP_ID_TO_ZONE_TEXT[mapID];
 		if zoneTextSubstitution then return zoneTextSubstitution; end
 		if mapIDToMapName[mapID] then return mapIDToMapName[mapID]; end
-		
+
 		local info = C_Map_GetMapInfo(mapID);
 		return (info and info.name) or ("Map ID #" .. mapID);
 	else
@@ -9607,7 +9607,7 @@ local function RefreshCollections()
 			end
 			coroutine.yield();
 		end
-		
+
 		-- Refresh Toys
 		local collected;
 		for id,t in pairs(app.SearchForFieldContainer("toyID")) do
@@ -10737,7 +10737,7 @@ local function RowOnEnter(self)
 				--GameTooltip:AddLine(reference.parent.text or RETRIEVING_DATA, 1, 1, 1);
 			end
 		end
-		
+
 		local linesByText = {};
 		for i=1,GameTooltip:NumLines() do
 			linesByText[_G["GameTooltipTextLeft"..i]:GetText()] = true;
@@ -12923,7 +12923,7 @@ local function SortForMiniList(a,b)
 		-- neither a or b exists, equality returns false
 		return false;
 	end
-	
+
 	if a.isRaid then
 		if not b.isRaid then
 			return true;
@@ -12937,7 +12937,7 @@ local function SortForMiniList(a,b)
 	elseif a.maps then
 		return false;
 	end
-	
+
 	-- Any two similar-type groups with text
 	return tostring(a.name or a.text) < tostring(b.name or b.text);
 end
@@ -12961,7 +12961,7 @@ local CachedMapData = setmetatable({}, {
 							return o;
 						end
 					end
-					
+
 					local o = app.CreateNPC(headerID);
 					tinsert(groups, o);
 					t[headerID] = o;
@@ -12972,7 +12972,7 @@ local CachedMapData = setmetatable({}, {
 			local function MergeIntoHeader(headerID, o)
 				MergeObject(headers[headerID].g, o);
 			end
-			
+
 			local header = {};
 			header.mapID = mapID;
 			header.g = groups;
@@ -13002,7 +13002,7 @@ local CachedMapData = setmetatable({}, {
 				local r = GetRelativeValue(group, "r");
 				if r then clone.r = r; end
 				setmetatable(clone, getmetatable(group));
-				
+
 				local key = group.key;
 				if (key == "mapID" or key == "instanceID") or ((key == "headerID" or key == "npcID") and (group.maps and (mapID < 0 and contains(group.maps, mapID)))) then
 					header.key = key;
@@ -13048,7 +13048,7 @@ local CachedMapData = setmetatable({}, {
 					end
 				end
 			end
-			
+
 			-- Swap out the map data for the header.
 			results = ((results.classID and app.CreateCharacterClass) or (header.key == "instanceID" and app.CreateInstance) or app.CreateMap)(header[header.key], header);
 			ExpandGroupsRecursively(results, true);
@@ -13057,7 +13057,7 @@ local CachedMapData = setmetatable({}, {
 			results.mapID = mapID;
 			results.back = 1;
 			results.indent = 0;
-			
+
 			local difficultyID = (IsInInstance() and select(3, GetInstanceInfo())) or (EJ_GetDifficulty and EJ_GetDifficulty()) or 0;
 			if difficultyID ~= 0 then
 				for _,row in ipairs(header.g) do
@@ -13070,7 +13070,7 @@ local CachedMapData = setmetatable({}, {
 					end
 				end
 			end
-			
+
 			-- Sort the list, but not for instances.
 			if not results.instanceID then
 				app.Sort(groups, SortForMiniList);
@@ -14235,7 +14235,7 @@ app.events.ADDON_LOADED = function(addonName)
 	-- Only execute for this addon.
 	if addonName ~= appName then return; end
 	app:UnregisterEvent("ADDON_LOADED");
-	
+
 	AllTheThingsAD = _G["AllTheThingsAD"];	-- For account-wide data.
 	if not AllTheThingsAD then
 		AllTheThingsAD = _G["ATTClassicAD"];
@@ -14652,7 +14652,7 @@ app.events.VARIABLES_LOADED = function()
 
 		-- Now that all the windows are loaded, cache flight paths!
 		app.CacheFlightPathData();
-	
+
 		-- Execute the OnReady handlers.
 		for i,handler in ipairs(app.EventHandlers.OnReady) do
 			handler();
