@@ -1095,9 +1095,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			q(77762, {	--	A Little Hope is Never without Worth
 				["sourceQuests"] = { 77711 },	-- And a Pinch of Magic
-				--["provider"] = { "n",  },	--
-				--["coord"] = { , EMERALD_DREAM },
+				["provider"] = { "n", 209571 },	-- Professor Ash
+				["coord"] = { 48.7, 68.0, EMERALD_DREAM },
 				["g"] = {
+					i(211131),	-- Delicately Curated Blossoms [750 Dream Warden rep]
 					i(210774),	-- Ochre Dreamtalon (MOUNT!)
 				},
 			}),

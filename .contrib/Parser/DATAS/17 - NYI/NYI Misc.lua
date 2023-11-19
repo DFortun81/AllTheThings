@@ -987,8 +987,6 @@ root(ROOTS.NeverImplemented, {
 				i(210422),	-- Loamm Niffen Insignia [Epic 2.5k]
 				------ Equipment Chest ------
 				i(210595),	-- Dreaming Equipment Chest
-				------ Items from Questlines that Gives Rep ------
-				i(211131),	-- Delicately Curated Blossoms
 				------ Winter Veil ------
 				i(210657),	-- Gently Shaken Gift
 				i(209871),	-- Winter Veil Gift
