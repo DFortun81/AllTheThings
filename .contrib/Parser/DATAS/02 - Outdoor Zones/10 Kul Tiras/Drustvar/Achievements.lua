@@ -35,70 +35,142 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					{ 19.00, 58.29, DRUSTVAR },
 				},
 			}),
-			-- TODO: We're lacking named data to convert this nested achievement criteria tree to criteriaUIDs
 			ach(13094, {	-- Cursed Game Hunter
-				crit(1, {	-- Goats
+				crit(41794, {	-- Goats
 					["crs"] = { 143929 },	-- Hexed Craghopper
 					["coord"] = { 54.4, 21.8, DRUSTVAR },
 				}),
-				crit(2, {	-- Deer
+				crit(42143, {	-- Deer
 					["crs"] = {
-						129835,	-- Gorehorn
 						129764,	-- Hexcrazed Doe
+					},
+					["coord"] = { 55.8, 44.0, DRUSTVAR },
+				}),
+				crit(42144, {	-- Deer
+					["crs"] = {
 						128361,	-- Hexcrazed Greatstag
 					},
 					["coord"] = { 55.8, 44.0, DRUSTVAR },
 				}),
-				crit(3, {	-- Pigs
+				crit(42145, {	-- Deer
 					["crs"] = {
-						124548,	-- Betsy
+						129835,	-- Gorehorn
+					},
+					["coord"] = { 55.8, 44.0, DRUSTVAR },
+				}),
+				crit(41783, {	-- Pigs
+					["crs"] = {
 						124170,	-- Fallhaven Pig
 					},
 					["coord"] = { 58.8, 34.6, DRUSTVAR },
 				}),
-				crit(4, {	-- Thornclaws
+				crit(41784, {	-- Pigs
 					["crs"] = {
-						135868,	-- Greenstalker
-						135869,	-- Greenstalker
+						124548,	-- Betsy
+					},
+					["coord"] = { 58.8, 34.6, DRUSTVAR },
+				}),
+				crit(42265, {	-- Thornclaws
+					["crs"] = {
 						142278,	-- Hexed Thornclaw
 					},
 					["coord"] = { 33.0, 63.0, DRUSTVAR },
 				}),
-				crit(5, {	-- Wolves
+				crit(42266, {	-- Thornclaws
 					["crs"] = {
-						124885,	-- Bewitched Darkmaw
-						132194,	-- Hexenwolf Alpha
+						135868,	-- Greenstalker
+					},
+					["coord"] = { 33.0, 63.0, DRUSTVAR },
+				}),
+				crit(42267, {	-- Thornclaws
+					["crs"] = {
+						135869,	-- Greenstalker
+					},
+					["coord"] = { 33.0, 63.0, DRUSTVAR },
+				}),
+				crit(41779, {	-- Wolves
+					["crs"] = {
 						132195,	-- Hexenwolf Tracker
 					},
 					["coord"] = { 24.6, 65.6, DRUSTVAR },
 				}),
-				crit(6, {	-- Ravens
+				crit(41780, {	-- Wolves
 					["crs"] = {
-						124382,	-- Bonepicker Raven
+						132194,	-- Hexenwolf Alpha
+					},
+					["coord"] = { 24.6, 65.6, DRUSTVAR },
+				}),
+				crit(41781, {	-- Wolves
+					["crs"] = {
+						124885,	-- Bewitched Darkmaw
+					},
+					["coord"] = { 24.6, 65.6, DRUSTVAR },
+				}),
+				crit(42146, {	-- Ravens
+					["crs"] = {
 						124890,	-- Ensorcelled Bonepicker
 					},
 					["coord"] = { 58.0, 26.8, DRUSTVAR },
 				}),
-				crit(7, {	-- Rabbits
+				crit(42147, {	-- Ravens
 					["crs"] = {
-						129904,	-- Cottontail Matron
+						124382,	-- Bonepicker Raven
+					},
+					["coord"] = { 58.0, 26.8, DRUSTVAR },
+				}),
+				crit(41790, {	-- Rabbits
+					["crs"] = {
 						129877,	-- Ensorcelled Hare
+					},
+					["coord"] = { 55.6, 45.2, DRUSTVAR },
+				}),
+				crit(41791, {	-- Rabbits
+					["crs"] = {
 						129899,	-- Frenzied Cottontail
 					},
 					["coord"] = { 55.6, 45.2, DRUSTVAR },
 				}),
-				crit(8, {	-- Falcons
+				crit(41792, {	-- Rabbits
+					["crs"] = {
+						129904,	-- Cottontail Matron
+					},
+					["coord"] = { 55.6, 45.2, DRUSTVAR },
+				}),
+				crit(41785, {	-- Falcons
 					["crs"] = {
 						131518,	-- Cursed Falcon
+					},
+					["coord"] = { 31.6, 25.0, DRUSTVAR },
+				}),
+				crit(41786, {	-- Falcons
+					["crs"] = {
 						132240,	-- Cursed Falcon
-						122961,	-- Cursed Game-hawk
+					},
+					["coord"] = { 31.6, 25.0, DRUSTVAR },
+				}),
+				crit(41788, {	-- Falcons
+					["crs"] = {
 						133988,	-- Cursed Gyrfalcon
 					},
 					["coord"] = { 31.6, 25.0, DRUSTVAR },
 				}),
-				crit(9, {	-- Bramblebacks
+				crit(41789, {	-- Falcons
+					["crs"] = {
+						122961,	-- Cursed Game-hawk
+					},
+					["coord"] = { 31.6, 25.0, DRUSTVAR },
+				}),
+				crit(42153, {	-- Bramblebacks
 					["crs"] = {
 						134753,	-- Cursed Brambleback
+					},
+					["coords"] = {
+						{ 17.6, 57.0, DRUSTVAR },
+						{ 24.6, 47.8, DRUSTVAR },
+					},
+				}),
+				crit(42154, {	-- Bramblebacks
+					["crs"] = {
 						133501,	-- Hexed Brambleback
 					},
 					["coords"] = {
@@ -106,22 +178,27 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 						{ 24.6, 47.8, DRUSTVAR },
 					},
 				}),
-				crit(10, {	-- Sea Lions
+				crit(42148, {	-- Sea Lions
 					["crs"] = { 143953 },	-- Bewitched Seal
 					["coord"] = { 21.8, 22.6, DRUSTVAR },
 				}),
-				crit(11, {	-- Horses
+				crit(42149, {	-- Horses
 					["crs"] = {
-						134307,	-- Hexthralled Courser
 						131534,	-- Hexthralled Guardsman
 					},
 					["coord"] = { 32.0, 21.6, DRUSTVAR },
 				}),
-				crit(12, {	-- Sharks
+				crit(42150, {	-- Horses
+					["crs"] = {
+						134307,	-- Hexthralled Courser
+					},
+					["coord"] = { 32.0, 21.6, DRUSTVAR },
+				}),
+				crit(42151, {	-- Sharks
 					["crs"] = { 143951 },	-- Hexed Dreadmaw
 					["coord"] = { 22.6, 70.6, DRUSTVAR },
 				}),
-				crit(13, {	-- Crabs
+				crit(42152, {	-- Crabs
 					["crs"] = { 143928 },	-- Cursed Snapclaw
 					["coord"] = { 76.21, 65.22, DRUSTVAR },
 				}),
