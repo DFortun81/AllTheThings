@@ -1430,13 +1430,9 @@ namespace ATT
             if (!data.TryGetValue("criteriaID", out long criteriaID))
                 return;
 
-            if (criteriaID == 22912)
-            {
-
-            }
-
             // due to AchievementDB using 'HQT' questIDs for some Criterias, let's just tell Parser to ignore moving them based on AchievementDB until we think of a better solution...
-            if (data.ContainsKey("_noautomation"))
+            // also ignore criteria which have _encounters defined. maybe eventually figure out the ModiferTree logic for them instead
+            if (data.ContainsKey("_noautomation") || data.ContainsKey("_encounters"))
                 return;
 
             data.TryGetValue("achID", out long achID);
