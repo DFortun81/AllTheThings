@@ -1192,7 +1192,6 @@ root(ROOTS.Unsorted, {
 				q(78366),	--
 				q(78372),	-- Drake's Dreaming Crest
 				q(78373),	-- The Dream Thanks You
-				q(78374),	-- Flightstones
 				q(78377),	--
 				q(78380),	--
 				q(78388),	-- Gigantic Dreamseeds

@@ -72,7 +72,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			}, {	-- RENOWN 11 --
-				--missing quest for battle pets?
 			}, {	-- RENOWN 12 --
 				q(78364, {	-- Drake's Dreaming Crest
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
@@ -81,6 +80,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}, {	-- RENOWN 13 --
 			}, {	-- RENOWN 14 --
 			}, {	-- RENOWN 15 --
+				q(78374, {	-- Flightstones
+					["provider"] = { "n", 208143 },	-- Keeper Amrymn
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+				}),
 			}, {	-- RENOWN 16 --
 			}, {	-- RENOWN 17 --
 			}, {	-- RENOWN 18 --
