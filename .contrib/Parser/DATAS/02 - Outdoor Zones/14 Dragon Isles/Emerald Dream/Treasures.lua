@@ -201,9 +201,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				i(203357),	-- Winding Slitherdrake: Spiked Tail (DM!)
 			}),
 			o(408720, {	-- Laden Somnut
-				--replace small somnut at renown 11
-				--dm can be looted from it too (formula, may be, too?)
-				--add zone drop into loot table
+				["sym"] = {
+					--add zone drop into loot table
+					{"select","mapID",EMERALD_DREAM},{"pop"},{"where","headerID",ZONE_DROPS},
+					--replace small somnut at renown 11
+					{"select","objectID",408719},{"pop"},
+				},
 			}),
 			o(413784, {	-- Self-Baking Herb Based Cookies
 				["questID"] = 78834,
