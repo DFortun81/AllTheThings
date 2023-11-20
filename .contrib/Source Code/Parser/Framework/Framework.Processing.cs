@@ -1414,6 +1414,9 @@ namespace ATT
             if (CurrentParentGroup.Value.Key == "npcID" && CurrentParentGroup.Value.Value.TryConvert(out long id) && id > 0)
                 return;
 
+            // Classic can't trust Retail data for Achievements because Blizzard
+            if (!Program.PreProcessorTags.ContainsKey("RETAIL")) return;
+
             // Pull in any defined Achievement Criteria/Tree unless we've defined it a 'meta' Achievement
             if (achInfo.TryGetValue("criteriaTreeID", out long criteriaTreeID) &&
                 TypeDB.TryGetValue(nameof(CriteriaTree), out IDictionary<long, IDBType> criteriaTreeDb) &&
@@ -1427,12 +1430,15 @@ namespace ATT
 
         private static void Incorporate_Criteria(IDictionary<string, object> data)
         {
+            // Classic can't trust Retail data for Achievements because Blizzard
+            if (!Program.PreProcessorTags.ContainsKey("RETAIL")) return;
+
             if (!data.TryGetValue("criteriaID", out long criteriaID))
                 return;
 
             // due to AchievementDB using 'HQT' questIDs for some Criterias, let's just tell Parser to ignore moving them based on AchievementDB until we think of a better solution...
             // also ignore criteria which have _encounters defined. maybe eventually figure out the ModiferTree logic for them instead
-            if (data.ContainsKey("_noautomation") || data.ContainsKey("_encounters"))
+            if (data.ContainsKey("_noautomation") || data.ContainsKey("_encounter"))
                 return;
 
             data.TryGetValue("achID", out long achID);

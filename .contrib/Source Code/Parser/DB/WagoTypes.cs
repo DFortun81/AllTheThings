@@ -16,7 +16,8 @@ namespace ATT.DB
         {
             typeof(Achievement),
             typeof(Criteria),
-            typeof(CriteriaTree)
+            typeof(CriteriaTree),
+            typeof(ModifierTree),
         };
 
         private static readonly IDictionary<Type, PropertyInfo[]> _typeProperties = new Dictionary<Type, PropertyInfo[]>();
