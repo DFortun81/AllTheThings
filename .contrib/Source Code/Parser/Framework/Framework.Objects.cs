@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ATT.FieldTypes;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -576,7 +577,7 @@ namespace ATT
                 }
             }
 
-            private static void TrackPostProcessMergeKey(string key, decimal value)
+            internal static void TrackPostProcessMergeKey(string key, decimal value)
             {
                 if (!PostProcessMergedKeyValues.TryGetValue(key, out HashSet<decimal> keyValues))
                 {
@@ -605,7 +606,7 @@ namespace ATT
                 {
                     foreach (var keyValueMergeSet in keyGroup.Value)
                     {
-                        Log($"WARN: Failed to merge data which requires a Source: [{keyGroup.Key}]:[{keyValueMergeSet.Key}]", keyValueMergeSet.Value);
+                        LogWarn($"Failed to merge data which requires a Source: [{keyGroup.Key}]:[{keyValueMergeSet.Key}]", keyValueMergeSet.Value);
                     }
                 }
             }
@@ -1846,6 +1847,7 @@ end");
                     case "runeforgePowerID":
                     case "raceID":
                     case "conduitID":
+                    case "criteriaTreeID":
                     case "f":
                     case "filterForRWP":
                     case "u":
@@ -1947,6 +1949,10 @@ end");
                     case "crs":
                     case "titleIDs":
                     case "zone-text-areas":
+                    case "_quests":
+                    case "_npcs":
+                    case "_objects":
+                    case "_achievements":
                         {
                             MergeIntegerArrayData(item, field, value);
                             break;
@@ -2005,7 +2011,7 @@ end");
                         }
                     // List O' List O' Objects Data Type Fields that could also be numberical values.
                     case "cost":
-                        MergeField_cost(item, value);
+                        Cost.Merge(item, value);
                         break;
                     case "minReputation":
                     case "maxReputation":
@@ -2134,11 +2140,7 @@ end");
                             return;
                         }
 
-                    case "_quests":
                     case "_items":
-                    case "_npcs":
-                    case "_objects":
-                    case "_achievements":
                     case "_factions":
                     case "_encounter":
                         {
@@ -2186,84 +2188,6 @@ end");
                             break;
                         }
                 }
-            }
-
-            internal static void MergeField_cost(IDictionary<string, object> item, object value)
-            {
-                const string field = "cost";
-
-                // Convert the raw data to a list of generic objects.
-                var costsObjs = CompressToList(value);
-                if (costsObjs == null)
-                {
-                    // simple gold cost is represented as a number
-                    try
-                    {
-                        var gold = Convert.ToInt64(value);
-                        item[field] = gold;
-                        return;
-                    }
-                    catch { }
-                    throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + ToJSON(value));
-                }
-
-                // verify each generic object is itself a list of generic objects so we have nice typed values to work with
-                List<List<object>> costsList = new List<List<object>>();
-                bool nonNested = false;
-                foreach (var costObj in costsObjs)
-                {
-                    var costList = CompressToList(costObj);
-                    // assume that a single cost list was used for this 'cost' field... warn about it being non-standard
-                    if (costList == null)
-                    {
-                        nonNested = true;
-                        break;
-                    }
-                    costsList.Add(costList);
-                }
-
-                if (nonNested)
-                {
-                    Log($"WARN: Non-Standard format for '{field}' used: {ToJSON(costsObjs)}");
-                    costsList.Add(costsObjs);
-                }
-
-                for (int i = costsList.Count - 1; i >= 0; --i)
-                {
-                    var cost = costsList[i];
-                    string costType = cost[0].ToString();
-                    // ensure the cost has the appropriate number of objects based on type
-                    if (costType == "i" || costType == "c")
-                    {
-                        if (cost.Count == 4)
-                        {
-                            var phase = long.Parse(cost[3].ToString());
-                            if (phase > MAX_PHASE_ID && !(phase >= 1000 && (phase < (MAX_PHASE_ID + 1) * 100)))
-                            {
-                                costsList.RemoveAt(i);
-                                //Log($"Excluding Cost {ToJSON(cost)}");
-                                continue;
-                            }
-                        }
-                        else if (cost.Count != 3)
-                        {
-                            Log($"WARN: Non-Standard format for '{field}' used: {ToJSON(costsObjs)}");
-                        }
-
-                    }
-
-                    if (Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
-                    {
-                        // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
-                        if (costType == "i" && cost[1].TryConvert(out long costID))
-                        {
-                            // cost item can be a ModItemID (decimal) value as well, but only care to mark the raw ItemID as referenced
-                            Items.MarkItemAsReferenced(costID);
-                        }
-                    }
-                }
-
-                item[field] = costsList;
             }
 
             internal static void MergeField_provider(IDictionary<string, object> item, object value)

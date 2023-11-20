@@ -364,7 +364,7 @@ namespace ATT
         /// <summary>
         /// Try to convert the object to a specific Type
         /// </summary>
-        public static bool TryConvert<T>(this object obj, out T value)
+        public static bool TryConvert<T>(this object obj, out T value, bool lazy = false)
         {
             if (obj is T val)
             {
@@ -372,16 +372,17 @@ namespace ATT
                 return true;
             }
 
-            try
+            if (!lazy)
             {
-                value = (T)Convert.ChangeType(obj, typeof(T));
-                return true;
+                try
+                {
+                    value = (T)Convert.ChangeType(obj, typeof(T));
+                    return true;
+                }
+                catch { }
             }
-            catch
-            {
-                value = default;
-                return false;
-            }
+            value = default;
+            return false;
         }
 
         /// <summary>
