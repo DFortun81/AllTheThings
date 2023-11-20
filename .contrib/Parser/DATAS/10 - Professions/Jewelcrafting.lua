@@ -27,41 +27,39 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			crit(61645, {	-- Shipment: Shifting Sun Curio
 				["_quests"] = { 12963 },	-- Shipment: Shifting Sun Curio
 			}),
+			-- these remaining criteria are generated from DB data in Retail
+			-- #IF ANYCLASSIC
 			crit(61646, {	-- Nibbler! No!
 				["_quests"] = {
 					25105,	-- Nibbler! No! [A]
 					25158 ,	-- Nibbler! No! [H]
 				},
-				["sourceQuestNumRequired"] = 1,
 			}),
 			crit(61648, {	-- A Present for Lila
 				["_quests"] = {
 					25154,	-- A Present for Lila [A]
 					25160 ,	-- A Present for Lila [H]
 				},
-				["sourceQuestNumRequired"] = 1,
 			}),
 			crit(61650, {	-- Ogrezonians in the Mood
 				["_quests"] = {
 					25155,	-- Ogrezonians in the Mood [A]
 					25161 ,	-- Ogrezonians in the Mood [H]
 				},
-				["sourceQuestNumRequired"] = 1,
 			}),
 			crit(61652, {	-- Elemental Goo
 				["_quests"] = {
 					25156,	-- Elemental Goo [A]
 					25162 ,	-- Elemental Goo [H]
 				},
-				["sourceQuestNumRequired"] = 1,
 			}),
 			crit(149174, {	-- The Latest Fashion!
 				["_quests"] = {
 					25157,	-- The Latest Fashion! [A]
 					25159 ,	-- The Latest Fashion! [H]
 				},
-				["sourceQuestNumRequired"] = 1,
 			}),
+			-- #ENDIF
 		}),
 		ach(18909, {	-- Fantastic Figurines
 			crit(61827, {	-- Figurine - Jade Owl
