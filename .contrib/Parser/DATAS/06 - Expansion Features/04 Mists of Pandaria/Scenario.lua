@@ -656,7 +656,6 @@ root(ROOTS.NeverImplemented, {
 				filter(LEATHER, {
 					i(93049),	-- Mogubreaker Jerkin
 					i(93050),	-- Mogubreaker Boots
-					i(93051),	-- Mogubreaker Gloves
 					i(93055),	-- Mogubreaker Waistband
 					i(93056),	-- Mogubreaker Bindings
 					i(93078),	-- Hozen-Stitched Jerkin
@@ -681,7 +680,6 @@ root(ROOTS.NeverImplemented, {
 					i(93088),	-- Swashbuckling Gauntlets
 					i(93089),	-- Swashbuckling Helm
 					i(93090),	-- Swashbuckling Legguards
-					i(93091),	-- Swashbuckling Spaulders
 					i(93093),	-- Swashbuckling Bracers
 				}),
 				filter(PLATE, {

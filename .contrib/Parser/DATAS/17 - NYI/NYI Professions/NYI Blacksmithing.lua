@@ -75,7 +75,6 @@ root(ROOTS.NeverImplemented, {
 						i(107982),	-- Draenic Steel Girdle
 						i(107972),	-- Draenic Steel Legguards
 						i(107980),	-- Draenic Steel Legguards
-						i(108058),	-- Draenic Steel Mace
 						i(107973),	-- Draenic Steel Shoulders
 						i(107981),	-- Draenic Steel Shoulders
 						i(108046),	-- Draenic Steel War Axe
@@ -137,7 +136,6 @@ root(ROOTS.NeverImplemented, {
 						i(108222),	-- Peerless Draenic Steel Legguards
 						i(108238),	-- Peerless Draenic Steel Mace
 						i(108239),	-- Peerless Draenic Steel Mace
-						i(108240),	-- Peerless Draenic Steel Mace
 						i(108241),	-- Peerless Draenic Steel Mace
 						i(108167),	-- Peerless Draenic Steel Shoulders
 						i(108183),	-- Peerless Draenic Steel Shoulders

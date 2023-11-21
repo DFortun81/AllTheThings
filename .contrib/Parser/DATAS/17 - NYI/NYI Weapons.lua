@@ -481,7 +481,6 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(ONE_HANDED_MACES, {
 			-- Load In Game
-			i(107390),	-- Obliterator Firing Lever
 			i(115296),	-- Spectral Warmace
 			i(115299),	-- Spectral Scepter
 			i(163930),	-- Kovork's Rattle
