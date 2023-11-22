@@ -1148,11 +1148,8 @@ root(ROOTS.Unsorted, {
 				q(77803),	--
 				q(77812),	--
 				q(77814),	--
-				q(77828),	--
 				q(77832),	-- Shadows upon shadows
 				q(77847),	--
-				q(77917),	--
-				q(77918),	--
 				q(77925),	--
 				q(77926),	--
 				q(77939),	--
@@ -1195,10 +1192,8 @@ root(ROOTS.Unsorted, {
 				q(78366),	--
 				q(78372),	-- Drake's Dreaming Crest
 				q(78373),	-- The Dream Thanks You
-				q(78374),	-- Flightstones
 				q(78377),	--
 				q(78380),	--
-				q(78388),	-- Gigantic Dreamseeds
 				q(78389),	-- The Makers' Marathon	 PTR:Maker's Marathon
 				q(78390),	-- The Makers' Marathon - Advanced	 PTR:Maker's Marathon - Advanced
 				q(78391),	-- The Makers' Marathon - Reverse	 PTR:Maker's Marathon - Reverse
@@ -1239,7 +1234,6 @@ root(ROOTS.Unsorted, {
 				q(78588),	-- Dragon Isles Supplies
 				-- 10.2.0.51297
 				q(78595),	-- Dream Infused
-				q(78599),	--
 				-- 10.2.0.51425
 				q(78606),	--
 				q(78608),	-- Geothermal Jaunt
@@ -1254,7 +1248,6 @@ root(ROOTS.Unsorted, {
 				q(78678),	--
 				-- 10.2.0.51521
 				q(78708),	--
-				q(78710),	--
 				q(78711),	--
 				q(78712),	--
 				q(78720),	--
@@ -1291,9 +1284,6 @@ root(ROOTS.Unsorted, {
 			--]]
 		})),
 		tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
-			n(DRAKEWATCHER_MANUSCRIPTS, {
-				i(208550),	-- Dragon Isles Drakes: White Scales [Tyr Part 4]
-			}),
 			n(QUESTS, {
 				-- 10.1.7.51754
 				q(75369),	-- Use Your Coin!

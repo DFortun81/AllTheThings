@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			i(210684, {	-- Mark of the Thriving Dreamtalon (CI!)
 				["provider"] = { "i", 210764 },	-- Silent Mark of the Dreamtalon
 			}),
-			header(HEADERS.Item, 210728, {	-- Moon-Blessed Claw
+			header(HEADERS.Item, 210728, bubbleDownSelf({ ["classes"] = { DRUID }}, {	-- Moon-Blessed Claw
 				o(412995, {	-- Small Box of Vials
 					["coord"] = { 54.9, 25.4, EMERALD_DREAM },
 					["g"] = {
@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						i(210728),	-- Moon-Blessed Claw (CI!)
 					},
 				}),
-			}),
+			})),
 			i(210753, {	-- Scale of the Prismatic Whiskerfish (CI!)
 				["provider"] = { "i", 210784 },	-- Xena, the Whimsical Whiskerfish
 			}),

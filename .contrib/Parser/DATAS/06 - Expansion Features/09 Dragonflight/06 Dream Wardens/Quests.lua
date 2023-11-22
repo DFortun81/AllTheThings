@@ -72,7 +72,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			}, {	-- RENOWN 11 --
-				--missing quest for battle pets?
 			}, {	-- RENOWN 12 --
 				q(78364, {	-- Drake's Dreaming Crest
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
@@ -81,8 +80,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}, {	-- RENOWN 13 --
 			}, {	-- RENOWN 14 --
 			}, {	-- RENOWN 15 --
+				q(78374, {	-- Flightstones
+					["provider"] = { "n", 208143 },	-- Keeper Amrymn
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+				}),
 			}, {	-- RENOWN 16 --
 			}, {	-- RENOWN 17 --
+				q(78388, {	-- Gigantic Dreamseeds
+					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
+					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
+				}),
 			}, {	-- RENOWN 18 --
 			}, {	-- RENOWN 19 --
 			}, {	-- RENOWN 20 --
@@ -102,5 +109,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78709),	-- Pop right after renown 5 was reached (Infusion Unlock Tracking) (spellID 427978)
 		q(76574),	-- Pop right after renown 8 was reached (Blooming Proficiency II) (spellIDs 427685 & 425375)
 		q(76575),	-- Pop right after renown 12 was reached (Blooming Proficiency III) (spellIDs 427685 & 425375)
+		q(78710),	-- Pop right after renown 12 was reached (Blooming Expertise) (?)
+		q(78599),	-- Ensemble: Elegant Green Dragon Outerwear (itemID 210790)
 	}),
 }));

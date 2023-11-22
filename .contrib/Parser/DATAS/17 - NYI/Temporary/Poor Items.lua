@@ -38,7 +38,6 @@ root(ROOTS.NeverImplemented, {
 						i(97),	-- Deprecated Dwarven Novice's Robe
 						i(5053),	-- Deprecated Plain Brown Robe
 						i(2574),	-- Deprecated Trogg Vest
-						i(3959),	-- Mesh Armor
 					}),
 					n(WRIST, {
 						i(1298),	-- Deprecated Night Mage Wristguards

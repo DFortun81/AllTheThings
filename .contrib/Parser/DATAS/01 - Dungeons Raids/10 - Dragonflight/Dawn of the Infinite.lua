@@ -55,6 +55,7 @@ local QUANTUM_GROUP = sharedData({
 		filter(MAIL, {
 			ig(18320),	-- Demonheart Spaulders				(NYI)
 			ig(114273),	-- Leafscale Spaulders				(NYI)
+			ig(93091),	-- Swashbuckling Spaulders			(NYI)
 		}),
 		filter(PLATE, {
 			ig(93099),	-- Yaungolian Pauldrons				(NYI)
@@ -64,6 +65,8 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208064, {	-- Quantum Chestpiece
 		filter(CLOTH, {
+			ig(3959),	-- Mesh Armor						(NYI)
+			ig(14150),	-- Robe of Evocation				(Removed)
 		}),
 		filter(LEATHER, {
 			ig(114251),	-- Bloodthorn Chestguard 			(NYI)
@@ -95,17 +98,21 @@ local QUANTUM_GROUP = sharedData({
 		filter(CLOTH, {
 		}),
 		filter(LEATHER, {
+			ig(93051),	-- Mogubreaker Gloves				(NYI)
 		}),
 		filter(MAIL, {
 			ig(93088),	-- Swasbuckling Gauntlets			(NYI)
 		}),
 		filter(PLATE, {
 			ig(108180),	-- Peerless Draenic Steel Guantlets	(NYI)
+			ig(93096),	-- Yaungolian Gauntlets				(NYI)
 		}),
 	}),
 	i(208065, {	-- Quantum Legs
 		filter(CLOTH, {
 			ig(3957),	-- Mesh Pants (NYI)
+
+			ig(23173),	-- Abomination Skin Leggings	(Removed)
 		}),
 		filter(LEATHER, {
 			ig(114268),	-- Bloodthorn Legguards 		(NYI)
@@ -118,6 +125,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(134760),	-- Masked Leggings 				(Removed)
 		}),
 		filter(MAIL, {
+			ig(89465),	-- Scarshell Legguards			(Removed) -- Unsorted. Where was this from originally?
 		}),
 		filter(PLATE, {
 			ig(121510),	-- Dreadsworn Legguards				(NYI)
@@ -136,6 +144,7 @@ local QUANTUM_GROUP = sharedData({
 	i(208119, {	-- Quantum Firearm
 	}),
 	i(208125, {	-- Quantum Focus
+		ig(18316),	-- Obsidian Bauble					(NYI)
 	}),
 	i(208113, {	-- Quantum Greataxe		(Two-Handed)
 		ig(39769),	-- Arcanite Ripper					(BMAH)
@@ -165,6 +174,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(147908),	-- 6.0 Weapon - Knife_1h_DraenorRaid_D_01 - Jade	(NYI)
 		ig(108150),	-- Hardened Draeneic Steel Dagger	(NYI)
 		ig(108236),	-- Peerless Draenic Steel Dagger	(NYI)
+		ig(3222),	-- Wicked Dagger					(NYI)
 
 		ig(14151),	-- Chanting Blade					(Removed)
 	}),
@@ -172,6 +182,11 @@ local QUANTUM_GROUP = sharedData({
 		ig(2942),	-- Iron Knuckles					(Removed)
 	}),
 	i(208110, {	-- Quantum Mace			(One-Handed)
+		ig(108058),	-- Draenic Steel Mace				(NYI)
+		ig(107390),	-- Obliterator Firing Lever			(NYI)
+		ig(108240),	-- Peerless Draenic Steel Mace		(NYI)
+
+		ig(2048),	-- Anvilmar Hammer					(Removed)
 	}),
 	i(208116, {	-- Quantum Polearm
 		ig(115297),	-- Spectral Polearm 				(NYI)
@@ -179,6 +194,7 @@ local QUANTUM_GROUP = sharedData({
 	i(208126, {	-- Quantum Shield
 		ig(134803),	-- Seasoned Redoubt 				(Removed)
 
+		ig(108242),	-- Peerless Draenic Steel Bulwark	(NYI)
 		ig(108245),	-- Peerless Draenic Steel Bulwark	(NYI)
 	}),
 	i(208115, {	-- Quantum Staff

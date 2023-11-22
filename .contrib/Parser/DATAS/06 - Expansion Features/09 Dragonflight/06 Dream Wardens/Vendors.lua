@@ -71,7 +71,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							["cost"] = { { "c", DRAGON_SUPPLIES, 375 } },
 						}),
 					}, {	-- RENOWN 16 --
-						i(210790, {	-- Ensemble: Elegant Green Dragon Outerwear (qID 78599)
+						i(210790, {	-- Ensemble: Elegant Green Dragon Outerwear
 							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
 							["g"] = {
 								i(210789),	-- Elegant Green Dragon Epaulets

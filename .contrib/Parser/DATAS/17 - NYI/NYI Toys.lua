@@ -151,7 +151,6 @@ root(ROOTS.NeverImplemented, {
 				i(211424),	-- Dreaming Banner of the Aspects (TOY!)
 				i(209859),	-- Festive Trans-Dimensional Bird Whistle (TOY!) [Winter Veil?]
 				i(208825),	-- Junior Timekeeper's Racing Belt (TOY!) [Winter Veil?]
-				i(208798),	-- Recorded Memories of Tyr's Guard (TOY!) [Tyr Part 4?]
 				i(210656),	-- Winter Veil Socks (TOY!) [Winter Veil?]
 				i(208087),	-- Unknown (TOY!)
 			})),
