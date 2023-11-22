@@ -938,7 +938,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(75316, 406418, ADDED_10_1_0);	-- Enchanted Aspect's Shadowflame Crest
 			FirstCraft(76541, 414985, ADDED_10_2_0);	-- Enchanted Whelpling's Dreaming Crest
 			FirstCraft(75256, 406108, ADDED_10_1_0);	-- Enchanted Whelpling's Shadowflame Crest
-			--FirstCraft(X, 414988, ADDED_10_2_0);	-- Enchanted Wyrm's Dreaming Crest
+			FirstCraft(76542, 414988, ADDED_10_2_0);	-- Enchanted Wyrm's Dreaming Crest
 			FirstCraft(75315, 406413, ADDED_10_1_0);	-- Enchanted Wyrm's Shadowflame Crest
 			FirstCraft(75235, 405937, ADDED_10_1_0);	-- Titan Training Matrix V
 		})),
