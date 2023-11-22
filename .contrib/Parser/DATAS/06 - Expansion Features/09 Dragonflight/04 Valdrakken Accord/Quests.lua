@@ -430,7 +430,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								ach(18958, {	-- Of the Tyr's Guard
 									title(516),	-- Of the Tyr's Guard
 								}),
-								
 							},
 						}),
 					},
