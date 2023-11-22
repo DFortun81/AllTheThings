@@ -42,7 +42,6 @@ root(ROOTS.NeverImplemented, {
 				i(24071),	-- Bland Dagger
 				i(17142),	-- Shard of the Defiler
 				i(2664),	-- Spinner Fang
-				i(3222),	-- Wicked Dagger
 			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
@@ -93,7 +92,6 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(HELD_IN_OFF_HAND, {
 			tier(CLASSIC_TIER, {
-				i(18316),	-- Obsidian Bauble
 				i(19989),	-- Tome of Devouring Shadows
 			}),
 			tier(DF_TIER, {

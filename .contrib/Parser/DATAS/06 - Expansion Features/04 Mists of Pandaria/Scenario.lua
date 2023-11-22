@@ -695,7 +695,6 @@ root(ROOTS.NeverImplemented, {
 					i(92829),	-- Jinyu-Forged Vambraces
 					i(93094),	-- Yaungolian Breastplate
 					i(93095),	-- Yaungolian Sabatons
-					i(93096),	-- Yaungolian Gauntlets
 					i(93097),	-- Yaungolian Helm
 					i(93098),	-- Yaungolian Legplates
 					i(93099),	-- Yaungolian Pauldrons

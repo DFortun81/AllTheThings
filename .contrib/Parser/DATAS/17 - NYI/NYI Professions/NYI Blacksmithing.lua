@@ -95,7 +95,6 @@ root(ROOTS.NeverImplemented, {
 						i(108142),	-- Hardened Draenic Steel War Axe
 						i(108079),	-- Hardened Draenic Steel Warboots
 						i(108085),	-- Hardened Draenic Steel Wristwraps
-						i(108242),	-- Peerless Draenic Steel Bulwark
 						i(108243),	-- Peerless Draenic Steel Bulwark
 						i(108244),	-- Peerless Draenic Steel Bulwark
 						i(108234),	-- Peerless Draenic Steel Dagger
