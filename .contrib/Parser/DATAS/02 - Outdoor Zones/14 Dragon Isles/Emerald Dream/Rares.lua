@@ -217,6 +217,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 43.5, 47.0, EMERALD_DREAM },
 				["g"] = {
 					i(209956),	-- Ori's Verdant Feather
+					i(208381),	-- Scepter of Still Waters
 					i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)
 				},
 			}),

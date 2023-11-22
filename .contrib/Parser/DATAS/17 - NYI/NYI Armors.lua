@@ -2498,7 +2498,6 @@ root(ROOTS.NeverImplemented, {
 				i(211132),	-- Omni Storm
 				------ Rares? ------
 				i(208385),	-- Flame Endowed Blade
-				i(208381),	-- Scepter of Still Waters
 				i(208324),	-- Scorching Dryad's Chestpiece
 				i(208340),	-- Stag's Flourishing Mantle
 			})),
