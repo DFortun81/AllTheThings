@@ -195,11 +195,90 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				ach(13757),	-- Battle-Scarred: Vim Brineheart
 			})),
 			ach(13549, {	-- Trove Tracker
-				-- TODO: We're lacking named data to convert this nested achievement criteria tree to criteriaUIDs
-				-- crit(45197),	-- 20 Arcane Chests
-				-- crit(45222),	-- 7 Glowing Arcane Trunks
-				crit(1),	-- 20 Arcane Chests
-				crit(2),	-- 7 Glowing Arcane Trunks
+				crit(45197, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326394 },
+				}),
+				crit(45198, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326401 },
+				}),
+				crit(45199, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326402 },
+				}),
+				crit(45200, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326403 },
+				}),
+				crit(45201, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326404 },
+				}),
+				crit(45202, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326405 },
+				}),
+				crit(45203, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326406 },
+				}),
+				crit(45204, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326407 },
+				}),
+				crit(45205, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326408 },
+				}),
+				crit(45206, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326419 },
+				}),
+				crit(45207, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326417 },
+				}),
+				crit(45208, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326416 },
+				}),
+				crit(45209, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326415 },
+				}),
+				crit(45210, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326414 },
+				}),
+				crit(45211, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326413 },
+				}),
+				crit(45212, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326412 },
+				}),
+				crit(45213, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326411 },
+				}),
+				crit(45214, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326410 },
+				}),
+				crit(45215, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326409 },
+				}),
+				crit(45216, {	-- 20 Arcane Chests
+					["provider"] = { "o", 326418 },
+				}),
+				crit(45222, {	-- 7 Glowing Arcane Trunks
+					["provider"] = { "o", 326400 },
+				}),
+				crit(45219, {	-- 7 Glowing Arcane Trunks
+					["provider"] = { "o", 326397 },
+				}),
+				crit(45220, {	-- 7 Glowing Arcane Trunks
+					["provider"] = { "o", 326398 },
+				}),
+				crit(45218, {	-- 7 Glowing Arcane Trunks
+					["provider"] = { "o", 326396 },
+				}),
+				crit(45217, {	-- 7 Glowing Arcane Trunks
+					["provider"] = { "o", 326395 },
+				}),
+				crit(45221, {	-- 7 Glowing Arcane Trunks
+					["provider"] = { "o", 326399 },
+				}),
+				crit(45793, {	-- 7 Glowing Arcane Trunks
+					["provider"] = { "o", 329783 },
+				}),
+				crit(46122, {	-- 7 Glowing Arcane Trunks
+					["provider"] = { "o", 332220 },
+				})
 			}),
 			ach(13711),	-- A Fistful of Manapearls
 			ach(13722, {	-- Terror of the Tadpoles
