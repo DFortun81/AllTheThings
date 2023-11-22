@@ -37,16 +37,28 @@ namespace ATT.DB.Types
         /// </summary>
         public bool IsUseful() =>
             GetSourceQuest() > 0 ||
-            //GetProviderItem() > 0 ||  // Incorporated from AchievementDB data instead to receive proper cost amount if any
-            GetProviderNPC() > 0;
+            GetSpellID() > 0 ||
+            GetProviderItem() > 0 ||
+            GetProviderNPC() > 0 ||
+            GetRequiredAchievement() > 0 ||
+            GetModifierTreeID() > 0;
 
         public long GetSourceQuest() =>
             Type == 27 ? Asset : 0;
 
-        public long GetProviderItem() => 0;
-            //Type == 36 || Type == 41 || Type == 42 || Type == 57 ? Asset : 0;
+        public long GetSpellID() =>
+            Type == 29 || Type == 34 ? Asset : 0;
+
+        public long GetProviderItem() =>
+        Type == 36 || Type == 41 || Type == 42 || Type == 57 ? Asset : 0;
 
         public long GetProviderNPC() =>
             Type == 0 && Asset > 0 ? Asset : 0;
+
+        public long GetRequiredAchievement() =>
+            Type == 8 ? Asset : 0;
+
+        public long GetModifierTreeID() =>
+            Modifier_tree_ID;
     }
 }

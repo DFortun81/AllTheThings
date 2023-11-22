@@ -1368,6 +1368,11 @@ namespace ATT
                 data.ContainsKey("criteriaID") ||
                 (data.TryGetValue("collectible", out bool collectible) && !collectible)) return;
 
+            if (achID == 1563)
+            {
+
+            }
+
             // Grab AchievementDB info
             ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
 
@@ -1403,6 +1408,9 @@ namespace ATT
                 }
             }
 
+            // Classic can't trust Retail data for Achievements because Blizzard
+            if (!Program.PreProcessorTags.ContainsKey("RETAIL")) return;
+
             // only incorporate achievement criteria which is not under a header or another achievement
             if (CurrentParentGroup.HasValue &&
                 CurrentParentGroup.Value.Key != "npcID" &&
@@ -1411,20 +1419,17 @@ namespace ATT
                 return;
             }
 
+            // don't incorporate criteria if the achievement is listed under an NPC group
             if (CurrentParentGroup.Value.Key == "npcID" && CurrentParentGroup.Value.Value.TryConvert(out long id) && id > 0)
                 return;
 
-            // Classic can't trust Retail data for Achievements because Blizzard
-            if (!Program.PreProcessorTags.ContainsKey("RETAIL")) return;
-
             // Pull in any defined Achievement Criteria/Tree unless we've defined it a 'meta' Achievement
             if (achInfo.TryGetValue("criteriaTreeID", out long criteriaTreeID) &&
-                TypeDB.TryGetValue(nameof(CriteriaTree), out IDictionary<long, IDBType> criteriaTreeDb) &&
-                criteriaTreeDb.TryGetValue(criteriaTreeID, out IDBType criteriaTree) &&
+                TryGetTypeDBObject(criteriaTreeID, out CriteriaTree criteriaTree) &&
                 !CheckSingleSymlink(data, "meta_achievement"))
             {
                 // CriteriaTree can be linked to a Parent, or CriteriaID
-                Incorporate_CriteriaTree(achID, data, criteriaTree as CriteriaTree, criteriaTreeDb);
+                Incorporate_CriteriaTree(achID, data, criteriaTree.ID, criteriaTree);
             }
         }
 
@@ -1459,15 +1464,11 @@ namespace ATT
                         {
                             if (criteriaUID > 0)
                             {
-                                LogDebug($"INFO: Replaced Criteria index {achID}:{criteriaID} with UID {criteriaUID}");
+                                //LogDebug($"INFO: Replaced Criteria index {achID}:{criteriaID} with UID {criteriaUID}");
                                 criteriaID = criteriaUID;
                                 data["criteriaID"] = criteriaID;
                                 matchedCriteriaInfo = criteriaInfo;
                                 break;
-                            }
-                            else
-                            {
-                                LogWarn($"Convert (or remove) Criteria Index to CriteriaUID(s) as it cannot be determined automatically: {achID}:{criteriaID}");
                             }
                         }
                     }
@@ -1505,69 +1506,147 @@ namespace ATT
             }
 
             // Grab matching Criteria data
-            if (TypeDB.TryGetValue(nameof(Criteria), out IDictionary<long, IDBType> criteriaDb) &&
-                criteriaDb.TryGetValue(criteriaID, out IDBType criteria) &&
-                criteria is Criteria criteriaData)
+            if (!TryGetTypeDBObject(criteriaID, out Criteria criteriaData))
             {
-                // merge CriteriaDB data into Criteria data
-                // SourceQuest(s) can convert to _quests for criteria cloning
-                long sq = criteriaData.GetSourceQuest();
-                if (sq > 0)
+                // If it wasn't found by UID, then try to check by ID using Achievement referenced CriteriaTree
+                // Get matching Achievement
+                if (!TryGetTypeDBObject(achID, out Achievement achievementData))
                 {
-                    if (data.TryGetValue("_quests", out object quests))
-                    {
-                        LogDebugWarn($"Remove _quests {ToJSON(quests)} from Criteria {achID}:{criteriaID}. DB contains sourceQuest: {sq}");
-                    }
-                    else
-                    {
-                        LogDebug($"INFO: Added _quests to Criteria {achID}:{criteriaID} with sourceQuest: {sq}");
-                    }
-
-                    Objects.Merge(data, "_quests", sq);
-
-                    // Criteria moved under a Quest should not have a cost/provider, but rather their destination should have that data
-                    // if (data.ContainsKey("cost") || data.ContainsKey("providers"))
-                    // {
-                    //     LogDebugWarn($"Move cost/provider from Criteria {achID}:{criteriaID} to its SourceQuest {questID} if applicable");
-                    // }
-                    // can remove 'sourceQuests' from the criteria since it's going to be sourced under the required quest
-                    data.Remove("sourceQuests");
+                    LogWarn($"Failed to find matching Achievement data for ID: {achID}");
+                    return;
                 }
 
-                // Provider Item for the Criteria (if not ignored)
-                long providerItem = criteriaData.GetProviderItem();
-                if (providerItem > 0 && (!data.TryGetValue("_ignorable", out bool ignorable) || !ignorable))
+                // Get matching CriteriaTree
+                if (!TryGetTypeDBObject(achievementData.Criteria_tree, out CriteriaTree criteriaTreeData))
                 {
-                    if (data.TryGetValue("providers", out object providers))
-                    {
-                        LogDebug($"INFO: Added providers to Criteria {achID}:{criteriaID} with Item: {providerItem}");
-                    }
-
-                    Objects.Merge(data, "providers", new List<object> { new List<object> { "i", providerItem } });
+                    LogWarn($"Failed to find matching CriteriaTree data for ID: {achievementData.Criteria_tree}");
+                    return;
                 }
 
-                // Provider NPC for the Criteria
-                long providerNPC = criteriaData.GetProviderNPC();
-                if (providerNPC > 0)
+                // Get children of the CriteriaTree
+                if (TryGetTypeDBObjectChildren(criteriaTreeData, out List<CriteriaTree> children))
                 {
-                    // modifier tree ID
-                    // 25 (NONE) -> 26 (MAP_DIFFICULTY_OLD=1)
-                    // 27 (NONE) -> 28 (MAP_DIFFICULTY_OLD=0)
-                    // 0 - 5D dungeon (AN) (d=1)
-                    // 25 - 5DH difficulty (AN) (d=2) / 25R difficulty (Naxx) (d=4) -> 26 (Type 20 Asset 1)
-                    // 27 - 10R difficulty (Naxx) (d=3) -> 28 (Type 20 Asset 0)
-                    if (data.TryGetValue("_npcs", out object npcs) || data.TryGetValue("crs", out object crs))
+                    long critIndex = criteriaID - 1;
+                    foreach (CriteriaTree child in children)
                     {
-                        LogDebugWarn($"Remove _npcs/crs {ToJSON(npcs)} from Criteria {achID}:{criteriaID}. DB contains linked NPC: {providerNPC}");
-                        data.Remove("crs");
+                        // See if the CriteriaTree OrderIndex matches the CriteriaID, then apply the proper CriteriaUID from the CriteriaTree
+                        if (child.OrderIndex == critIndex)
+                        {
+                            criteriaTreeData = child;
+                            //// this can be multiple criteria...
+                            //if (child.CriteriaID > 0)
+                            //{
+                            //    LogDebug($"INFO: Replaced Criteria index {achID}:{criteriaID} with UID {child.CriteriaID} (via DB)");
+                            //    criteriaID = child.CriteriaID;
+                            //    data["criteriaID"] = criteriaID;
+                            //}
+                            //else
+                            //{
+                            //    Incorporate_CriteriaTree(achID, data, child.ID, child, children.Count == 1);
+                            //    if (!data.ContainsKey("g") && data.TryGetValue("criteriaID", out long nestCritID) && nestCritID == criteriaID)
+                            //    {
+                            //        if (TryGetTypeDBObjectChildren(child, out List<CriteriaTree> childTrees))
+                            //        {
+                            //            LogWarn($"Criteria {achID}:{criteriaID} is weird. It uses unsupported CriteriaUID: {ToJSON(childTrees.Select(c => c.CriteriaID).ToList())}");
+                            //            Log($"Please ensure the data is accurate and add [\"_noautomation\"] = true, to the crit() group to remove this warning.");
+                            //            return;
+                            //        }
+                            //    }
+                            //}
+                            break;
+                        }
                     }
-                    else
-                    {
-                        LogDebug($"INFO: Added _npcs to Criteria {achID}:{criteriaID} with NPC: {providerNPC}");
-                    }
-
-                    Objects.Merge(data, "_npcs", providerNPC);
                 }
+
+                // See if we didn't end up with a valid UID with nothing nested
+                //if (!data.ContainsKey("g") && data.TryGetValue("criteriaID", out long newCritID) && newCritID == criteriaID)
+                //{
+                if (TryGetTypeDBObjectChildren(criteriaTreeData, out List<CriteriaTree> childTrees))
+                {
+                    LogWarn($"Criteria {achID}:{criteriaID} is weird. It uses unsupported CriteriaUID: {ToJSON(childTrees.Select(c => c.CriteriaID).ToList())}");
+                    Log($"--- Please ensure the data is accurate and add [\"_noautomation\"] = true, to the crit() group to remove this warning.");
+                }
+                else
+                {
+                    LogWarn($"Criteria {achID}:{criteriaID} is weird. It uses unsupported CriteriaUID.");
+                    Log($"--- Please ensure the data is accurate and add [\"_noautomation\"] = true, to the crit() group to remove this warning.");
+                }
+                //}
+                return;
+            }
+
+            // merge CriteriaDB data into Criteria data
+            // SourceQuest(s) can convert to _quests for criteria cloning
+            long sq = criteriaData.GetSourceQuest();
+            if (sq > 0)
+            {
+                if (data.TryGetValue("_quests", out object quests))
+                {
+                    //LogDebugWarn($"Remove _quests {ToJSON(quests)} from Criteria {achID}:{criteriaID}. DB contains sourceQuest: {sq}");
+                }
+                else
+                {
+                    //LogDebug($"INFO: Added _quests to Criteria {achID}:{criteriaID} with sourceQuest: {sq}");
+                }
+
+                Objects.Merge(data, "_quests", sq);
+
+                // Criteria moved under a Quest should not have a cost/provider, but rather their destination should have that data
+                // if (data.ContainsKey("cost") || data.ContainsKey("providers"))
+                // {
+                //     LogDebugWarn($"Move cost/provider from Criteria {achID}:{criteriaID} to its SourceQuest {questID} if applicable");
+                // }
+                // can remove 'sourceQuests' from the criteria since it's going to be sourced under the required quest
+                data.Remove("sourceQuests");
+            }
+
+            // Provider Item for the Criteria (if not ignored)
+            long providerItem = criteriaData.GetProviderItem();
+            if (providerItem > 0 && (!data.TryGetValue("_ignorable", out bool ignorable) || !ignorable))
+            {
+                if (data.TryGetValue("providers", out object providers))
+                {
+                    //LogDebug($"INFO: Added providers to Criteria {achID}:{criteriaID} with Item: {providerItem}");
+                }
+
+                Objects.Merge(data, "providers", new List<object> { new List<object> { "i", providerItem } });
+            }
+
+            // Provider NPC for the Criteria
+            long providerNPC = criteriaData.GetProviderNPC();
+            if (providerNPC > 0)
+            {
+                // modifier tree ID
+                // 25 (NONE) -> 26 (MAP_DIFFICULTY_OLD=1)
+                // 27 (NONE) -> 28 (MAP_DIFFICULTY_OLD=0)
+                // 0 - 5D dungeon (AN) (d=1)
+                // 25 - 5DH difficulty (AN) (d=2) / 25R difficulty (Naxx) (d=4) -> 26 (Type 20 Asset 1)
+                // 27 - 10R difficulty (Naxx) (d=3) -> 28 (Type 20 Asset 0)
+                if (data.TryGetValue("_npcs", out object npcs) || data.TryGetValue("crs", out object crs))
+                {
+                    //LogDebugWarn($"Remove _npcs/crs {ToJSON(npcs)} from Criteria {achID}:{criteriaID}. DB contains linked NPC: {providerNPC}");
+                    data.Remove("crs");
+                }
+                else
+                {
+                    //LogDebug($"INFO: Added _npcs to Criteria {achID}:{criteriaID} with NPC: {providerNPC}");
+                }
+
+                Objects.Merge(data, "_npcs", providerNPC);
+            }
+
+            long emoteModifierTreeID = criteriaData.GetModifierTreeID();
+            if (emoteModifierTreeID > 0)
+            {
+                Incorporate_ModifierTree(data, emoteModifierTreeID);
+                // -> modifiertree -> parent[collection] -> type=4(creature target) -> Asset
+            }
+
+            long spellID = criteriaData.GetSpellID();
+            if (spellID > 0)
+            {
+                // TODO: adjust?
+                //Objects.Merge(data, "spellID", spellID);
             }
 
             //bool critUID = false;
@@ -1618,13 +1697,30 @@ namespace ATT
             //}
         }
 
-        private static void Incorporate_CriteriaTree(long achID, IDictionary<string, object> data, CriteriaTree criteriaTree, IDictionary<long, IDBType> criteriaTreeDb, bool mergeDirectly = false)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="achID"></param>
+        /// <param name="data"></param>
+        /// <param name="criteriaTreeID"></param>
+        /// <param name="criteriaTree"></param>
+        /// <param name="mergeDirectly"></param>
+        /// <param name="level"></param>
+        /// <param name="extraData">Any existing contrib data from a criteria group by ID which needs to migrate into the child criteria by UID instead</param>
+        private static bool Incorporate_CriteriaTree(long achID, IDictionary<string, object> data, long criteriaTreeID,
+            CriteriaTree criteriaTree = null, bool mergeDirectly = false, int level = 0, IDictionary<string, object> extraData = null)
         {
+            if (criteriaTree == null)
+            {
+                if (!TryGetTypeDBObject(criteriaTreeID, out CriteriaTree refCriteriaTree))
+                    return false;
+
+                criteriaTree = refCriteriaTree;
+            }
+
+            bool incorporated = false;
             // CriteriaTree itself is linked to a Criteria
-            if (criteriaTree.CriteriaID != 0 &&
-                TypeDB.TryGetValue(nameof(Criteria), out IDictionary<long, IDBType> criteriaDb) &&
-                criteriaDb.TryGetValue(criteriaTree.CriteriaID, out IDBType criteriaType) &&
-                criteriaType is Criteria criteria && criteria.IsUseful())
+            if (criteriaTree.CriteriaID != 0 && TryGetTypeDBObject(criteriaTree.CriteriaID, out Criteria criteria) && criteria.IsUseful())
             {
                 long criteriaProviderItem = criteria.GetProviderItem();
                 // Don't incorporate ignore-flagged CriteriaTree whose Criteria is simply a provider Item (i.e. Old Crafty has 2 criteria both with same provider)
@@ -1633,30 +1729,42 @@ namespace ATT
                     if (criteriaTree.Amount <= 1)
                     {
                         // instead merge the single provider onto the achievement itself
-                        LogDebug($"INFO: Incorporating Provider Item {criteriaProviderItem} for Achievement {achID}");
+                        //LogDebug($"INFO: Incorporating Provider Item {criteriaProviderItem} for Achievement {achID}");
                         Objects.Merge(data, "provider", new List<object> { "i", criteriaProviderItem });
                     }
                     else
                     {
                         // or merge the amount of items as a cost
-                        LogDebug($"INFO: Incorporating Cost Item {criteriaProviderItem} x {criteriaTree.Amount} for Achievement {achID}");
-                        Cost.Merge(data, new List<object> { new List<object> { "i", criteriaProviderItem, criteriaTree.Amount } });
+                        //LogDebug($"INFO: Incorporating Cost Item {criteriaProviderItem} x {criteriaTree.Amount} for Achievement {achID}");
+                        Cost.Merge(data, "i", criteriaProviderItem, criteriaTree.Amount);
                     }
                 }
                 else
                 {
                     IDictionary<string, object> criteriaData = criteria.AsData();
                     criteriaData["achID"] = achID;
-                    criteriaData["_ignorable"] = criteriaTree.IsIgnoreFlags();
-                    if (mergeDirectly)
+                    if (extraData != null)
                     {
-                        Incorporate_Criteria(criteriaData);
+                        Objects.Merge(criteriaData, extraData);
+                        extraData = null;
+                    }
+                    //criteriaData["_ignorable"] = criteriaTree.IsIgnoreFlags();
+                    // we can merge single criteria under a criteriatree into the achievement if it's 1 level down,
+                    // otherwise it's a criteira which is split instead
+                    if (mergeDirectly && level == 1)
+                    {
                         LogDebug($"INFO: Incorporating single Criteria Data from {criteriaTree.CriteriaID} into Achievement: {achID}", data);
+                        Incorporate_Criteria(criteriaData);
+                        incorporated = true;
 
                         // then merge certain fields into the Achievement data instead of nesting the Criteria
                         if (criteriaData.TryGetValue("cost", out object cost))
                         {
                             Cost.Merge(data, cost);
+                        }
+                        if (criteriaData.TryGetValue("providers", out object providers))
+                        {
+                            Objects.Merge(data, "providers", providers);
                         }
                         if (criteriaData.TryGetValue("_objects", out List<object> objects))
                         {
@@ -1683,9 +1791,43 @@ namespace ATT
                             }
                         }
                     }
+                    // sometimes a nested criteriatree is used at the second level for a single criteriatree... very good Blizz
+                    //else if (mergeDirectly && level == 2)   // Ach 4925
+                    //{
+                    //    LogDebug($"INFO: Incorporating single Criteria: {achID}:{criteriaTree.CriteriaID}", data);
+                    //    long criteriaIndex = criteriaTree.OrderIndex + 1;
+                    //    bool merged = false;
+                    //    // see if a CriteriaID by OrderIndex exists, and merge into that instead
+                    //    if (data.TryGetValue("g", out List<object> datag))
+                    //    {
+                    //        foreach (IDictionary<string, object> obj in datag.AsTypedEnumerable<IDictionary<string, object>>())
+                    //        {
+                    //            if (obj.TryGetValue("criteriaID", out long objCriteriaID) && objCriteriaID == criteriaIndex)
+                    //            {
+                    //                LogDebug($"--- into existing Criteria by Index: {achID}:{objCriteriaID}");
+                    //                merged = true;
+                    //                Objects.Merge(obj, criteriaData);
+                    //                break;
+                    //            }
+                    //        }
+                    //    }
+                    //    if (!merged)
+                    //    {
+                    //        Objects.Merge(data, "g", criteriaData);
+                    //    }
+                    //}
+                    // otherwise the criteria index may be split into multiple criteriaUID, and we just merge them all into the achievement
                     else
                     {
-                        LogDebug($"INFO: Incorporating Criteria: {achID}:{criteriaTree.CriteriaID}", data);
+                        incorporated = true;
+                        if (data.TryGetValue("timeline", out object timeline))
+                        {
+                            Objects.Merge(criteriaData, "timeline", timeline);
+                        }
+                        if (data.TryGetValue("awp", out object awp))
+                        {
+                            Objects.Merge(criteriaData, "awp", awp);
+                        }
                         Objects.Merge(data, "g", criteriaData);
                     }
                     // Achievements whose criteria is incorporated should no longer use achievement_criteria symlink
@@ -1698,13 +1840,197 @@ namespace ATT
             }
 
             // CriteriaTree can be a parent, which means the children should be incorporated as criteria of the data
-            if (TypeDB[nameof(CriteriaTree) + nameof(TypeCollection<CriteriaTree>)].TryGetValue(criteriaTree.ID, out IDBType children) &&
-                children is TypeCollection<CriteriaTree> childTrees)
+            if (TryGetTypeDBObjectChildren(criteriaTree, out List<CriteriaTree> childTrees))
             {
-                foreach (CriteriaTree child in childTrees.Collection)
+                long criteriaIndex = criteriaTree.OrderIndex + 1;
+                if (level == 3)
+                {
+
+                }
+                // beyond the first criteriatree split merging into an achievement, we instead want the criteriatree
+                // data to merge directly into criteria index groups if sourced
+                if (level == 1)
+                {
+                    // sometimes a nested criteriatree is used at the second level for a single criteriatree... very good Blizz
+                    // so we will try to merge those criteria directly into the matching data criteria, if they are sourced using index
+                    // otherwise they will merge under the achievement as expected
+                    //if (mergeDirectly)   // Ach 4925
+                    //{
+
+                    //}
+                    //else // Ach 13635
+                    //{
+                    // see if a CriteriaID by OrderIndex exists, and merge sub-criteria into that instead as if it was an achievement
+                    if (data.TryGetValue("g", out List<object> datag))
+                    {
+                        // since we're nesting sub-criteria individually, we don't need an indexed-criteria which represents the cumulative value of those nested criteria
+                        for (int i = datag.Count - 1; i >= 0; i--)
+                        {
+                            IDictionary<string, object> obj = datag[i] as IDictionary<string, object>;
+                            if (obj.TryGetValue("criteriaID", out long objCriteriaID) && objCriteriaID == criteriaIndex)
+                            {
+                                if (obj.TryGetValue("_noautomation", out bool noautomation) && noautomation)
+                                {
+                                    return incorporated;
+                                }
+
+                                LogDebug($"Removing existing Criteria by Index: {achID}:{objCriteriaID}");
+                                datag.RemoveAt(i);
+                                // but any other data needs to be preserved somehow, can warn contrib to migrate to new UIDs
+                                obj.Remove("criteriaID");
+                                obj.Remove("achID");
+                                obj.Remove("timeline");
+                                obj.Remove("awp");
+                                if (obj.Keys.Count > 0)
+                                {
+                                    LogWarn($"--- Migrate (or remove) extra data into the proper sub-criteria(s): {ToJSON(childTrees.Select(c => c.CriteriaID).ToList())} <== ", obj);
+                                    extraData = new Dictionary<string, object>(obj);
+                                }
+                                break;
+                            }
+                        }
+                    }
+                    // either already sourced a criteriaUID group, or nothing. so merge a criteriaUID group with index
+                    //if (!indexFound)
+                    //{
+                    //    IDictionary<string, object> criteriaData = new Dictionary<string, object>
+                    //        {
+                    //            { "criteriaID", criteriaIndex },
+                    //            { "achID", achID }
+                    //        };
+                    //    Objects.Merge(data, "g", criteriaData);
+                    //}
+                    //}
+                }
+
+                foreach (CriteriaTree child in childTrees)
                 {
                     // for single criteria of achievement, just list criteria data directly into achievement
-                    Incorporate_CriteriaTree(achID, data, child, criteriaTreeDb, childTrees.Collection.Count == 1);
+                    incorporated |= Incorporate_CriteriaTree(achID, data, child.ID, child, childTrees.Count == 1, level + 1, extraData);
+                }
+
+                // no criteria from the criteriatree were 'useful' and added, so generate an indexed-criteria for tracking in game
+                if (!incorporated && level > 0 && childTrees.Count >= 1)
+                {
+                    IDictionary<string, object> criteriaData = new Dictionary<string, object>
+                    {
+                        { "criteriaID", criteriaIndex },
+                        { "achID", achID }
+                    };
+                    LogDebug($"Added Criteria by Index (since no sub-criteria could be incorporated): {achID}:{criteriaIndex}");
+                    Objects.Merge(data, "g", criteriaData);
+                }
+            }
+
+            return incorporated;
+        }
+
+        private static void Incorporate_ModifierTree(IDictionary<string, object> data, long id, ModifierTree existingModifierTree = null)
+        {
+            if (existingModifierTree == null)
+            {
+                if (!TryGetTypeDBObject(id, out ModifierTree modifierTree))
+                    return;
+
+                existingModifierTree = modifierTree;
+            }
+
+            // 2 (SingleTrue)
+            if (existingModifierTree.Operator == 2)
+            {
+                switch (existingModifierTree.Type)
+                {
+                    // 4 (TARGET_CREATURE_ENTRY)
+                    case 4:
+                    // 81 (BATTLE_PET_ENTRY)
+                    case 81:
+                        Objects.Merge(data, "_npcs", existingModifierTree.Asset);
+                        break;
+                    // 19 (ITEM_IS_ITEMID)
+                    case 19:
+                        Objects.Merge(data, "provider", new List<object> { "i", existingModifierTree.Asset });
+                        break;
+                    // 62 (GUILD_REPUTATION)
+                    case 62:
+                        Objects.Merge(data, "minReputation", new List<object> { 1168, existingModifierTree.Asset });
+                        Objects.Merge(data, "_factions", 1168);
+                        break;
+                    // 75 (THE_TILLERS_REPUTATION)
+                    case 75:
+                        Objects.Merge(data, "minReputation", new List<object> { 1272, existingModifierTree.Asset });
+                        Objects.Merge(data, "_factions", 1272);
+                        break;
+                    // 84 (IS_ON_QUEST)
+                    case 84:
+                    // 110 (REWARDED_QUEST)
+                    case 110:
+                        Objects.Merge(data, "_quests", existingModifierTree.Asset);
+                        break;
+                    // 111 (REWARDED_QUEST)
+                    case 111:
+                        Objects.Merge(data, "_quests", existingModifierTree.Asset);
+                        break;
+                    // 85 (EXALTED_WITH_FACTION)
+                    case 85:
+                        Objects.Merge(data, "minReputation", new List<object> { existingModifierTree.Asset, 42000 });
+                        Objects.Merge(data, "_factions", existingModifierTree.Asset);
+                        break;
+                    // 86 (HAS_ACHIEVEMENT)
+                    case 86:
+                        Objects.Merge(data, "_achievements", existingModifierTree.Asset);
+                        break;
+                    // 88 (CLOUD_SERPENT_REPUTATION)
+                    case 88:
+                        Objects.Merge(data, "minReputation", new List<object> { 1271, existingModifierTree.Asset });
+                        Objects.Merge(data, "_factions", 1271);
+                        break;
+                    // 95 (FACTION_STANDING)
+                    case 95:
+                        Objects.Merge(data, "minReputation", new List<object> { existingModifierTree.Asset, existingModifierTree.SecondaryAsset });
+                        Objects.Merge(data, "_factions", existingModifierTree.Asset);
+                        break;
+                    // 99 (SKILL)
+                    case 99:
+                        Objects.Merge(data, "requireSkill", existingModifierTree.Asset);
+                        // SecondaryAsset = skill level
+                        break;
+                    // 105 (ITEM_COUNT)
+                    case 105:
+                        if (existingModifierTree.SecondaryAsset == 1)
+                        {
+                            Objects.Merge(data, "provider", new List<object> { "i", existingModifierTree.Asset });
+                        }
+                        else
+                        {
+                            Cost.Merge(data, "i", existingModifierTree.Asset, existingModifierTree.SecondaryAsset);
+                        }
+                        break;
+                    // 119 (CURRENCY_AMOUNT)
+                    case 119:
+                        Cost.Merge(data, "c", existingModifierTree.Asset, existingModifierTree.SecondaryAsset);
+                        break;
+                    // 191 (PLAYER_RACE_IS)
+                    case 191:
+                        Objects.Merge(data, "races", existingModifierTree.Asset);
+                        break;
+                    // 199 (HAS_TOY)
+                    case 199:
+                        Objects.Merge(data, "provider", new List<object> { "i", existingModifierTree.Asset });
+                        break;
+                    // 221 (PARAGON_LEVEL_WITH_FACTION_EQUAL_OR_GREATER)
+                    case 221:
+                        Objects.Merge(data, "minReputation", new List<object> { existingModifierTree.SecondaryAsset, existingModifierTree.Asset });
+                        Objects.Merge(data, "_factions", existingModifierTree.SecondaryAsset);
+                        break;
+                }
+            }
+
+            // ModifierTree can be a parent, which means the children should be incorporated into the data instead
+            if (TryGetTypeDBObjectChildren(existingModifierTree, out List<ModifierTree> childTrees))
+            {
+                foreach (ModifierTree child in childTrees)
+                {
+                    Incorporate_ModifierTree(data, child.ID, child);
                 }
             }
         }
@@ -1712,7 +2038,7 @@ namespace ATT
         private static bool CheckSingleSymlink(IDictionary<string, object> data, string command)
         {
             return data.TryGetValue("sym", out List<object> symObj) && symObj.Count == 1 &&
-                                symObj.First() is List<object> symCmdObj && symCmdObj.Count == 1 &&
+                                symObj.First() is List<object> symCmdObj && symCmdObj.Count >= 1 &&
                                 symCmdObj.First() is string symCmdStr && symCmdStr == command;
         }
 
@@ -2762,6 +3088,35 @@ namespace ATT
                         // handle other types of duplication sources if necessary
                 }
             }
+        }
+
+        private static bool TryGetTypeDBObject<T>(long id, out T data)
+            where T : IDBType
+        {
+            if (TypeDB.TryGetValue(typeof(T).Name, out IDictionary<long, IDBType> db) &&
+                db.TryGetValue(id, out IDBType obj) &&
+                obj is T dbData)
+            {
+                data = dbData;
+                return true;
+            }
+
+            data = default;
+            return false;
+        }
+
+        private static bool TryGetTypeDBObjectChildren<T>(IDBType data, out List<T> children)
+            where T : IDBType
+        {
+            if (TypeDB[typeof(T).Name + nameof(TypeCollection<T>)].TryGetValue(data.ID, out IDBType childCollection) &&
+                    childCollection is TypeCollection<T> childTrees)
+            {
+                children = childTrees.Collection;
+                return true;
+            }
+
+            children = default;
+            return false;
         }
 
         private class TierList

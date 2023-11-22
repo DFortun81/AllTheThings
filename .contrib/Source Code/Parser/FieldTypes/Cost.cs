@@ -48,6 +48,11 @@ namespace ATT.FieldTypes
             return null;
         }
 
+        public static Cost Merge(IDictionary<string, object> data, string type, decimal id, long amount)
+        {
+            return Merge(data, new object[] { new object[] { type, id, amount } });
+        }
+
         public static Cost Merge(IDictionary<string, object> data, object value)
         {
             Cost cost;

@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace ATT
 {
@@ -1672,7 +1673,7 @@ end");
                     if (field == "timeline")
                     {
                         // Verify the timeline data is parsable since it's 'just a string' ... could be anything!
-                        if (!System.Text.RegularExpressions.Regex.IsMatch(index, "^(created|added|deleted|removed|blackmarket|timewalking) [0-9][\\.0-9]+$"))
+                        if (!Regex.IsMatch(index, "^(created|added|deleted|removed|blackmarket|timewalking) [0-9][\\.0-9]+$"))
                             throw new InvalidDataException("Invalid 'timeline' value: " + index);
                     }
                     if (oldList.Contains(index)) continue;

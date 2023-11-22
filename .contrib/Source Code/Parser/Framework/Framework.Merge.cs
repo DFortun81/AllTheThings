@@ -877,6 +877,27 @@ namespace ATT
                     }
                 }
             }
+            // ModifierTree creates parent mapping one-time
+            if (type == nameof(ModifierTree))
+            {
+                IDictionary<long, IDBType> modifierTreeDb = TypeDB[type];
+                Dictionary<long, IDBType> modifierTreeParents = new Dictionary<long, IDBType>();
+                TypeDB[nameof(ModifierTree) + nameof(TypeCollection<ModifierTree>)] = modifierTreeParents;
+
+                foreach (ModifierTree modifierTree in modifierTreeDb.Values.AsTypedEnumerable<ModifierTree>())
+                {
+                    if (modifierTree.Parent != 0)
+                    {
+                        if (!(modifierTreeParents.TryGetValue(modifierTree.Parent, out IDBType modifierChildren) &&
+                            modifierChildren is TypeCollection<ModifierTree> childrenTrees))
+                        {
+                            modifierTreeParents[modifierTree.Parent] = childrenTrees = new TypeCollection<ModifierTree>();
+                        }
+
+                        childrenTrees.Collection.Add(modifierTree);
+                    }
+                }
+            }
         }
 
         public static Dictionary<TKey, object> ParseAsDictionary<TKey>(LuaTable table)
