@@ -424,6 +424,8 @@ i(203344, 73835);	-- Winding Slitherdrake: Single Jaw Horn
 i(203315, 73803);	-- Winding Slitherdrake: Small Spiked Crest
 i(203332, 73821);	-- Winding Slitherdrake: Spiked Horns
 i(203337, 73827);	-- Winding Slitherdrake: Thorn Horns
+-- Special -- [Blizzard Combined all 5 Above into one item.. That gives 5 QuestIDs.. Hijacking One for tracking]
+i(208550, 69214);	-- Dragon Isles Drakes: White Scales [Tyr Part 4]
 
 ------------------
 -- PATCH 10.2.0 --

@@ -1287,9 +1287,6 @@ root(ROOTS.Unsorted, {
 			--]]
 		})),
 		tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
-			n(DRAKEWATCHER_MANUSCRIPTS, {
-				i(208550),	-- Dragon Isles Drakes: White Scales [Tyr Part 4]
-			}),
 			n(QUESTS, {
 				-- 10.1.7.51754
 				q(75369),	-- Use Your Coin!

@@ -384,6 +384,57 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						}),
 					},
 				})),
+				header(HEADERS.Quest, 77339, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Data Recovery
+					["icon"] = 5245774,
+					["groups"] = {
+						q(77339, {	-- Data Recovery
+							["provider"] = { "n", 208703 },	-- Valunei
+							["coord"] = { 53.8, 61, VALDRAKKEN },
+						}),
+						q(77377, {	-- To Tyrhold! For Tyr!
+							["provider"] = { "n", 208701 },	-- Travard
+							["coord"] = { 60.6, 63.6, THALDRASZUS },
+						}),
+						q(77340, {	-- Infiltrating the Nighthold'
+							["provider"] = { "n", 208832 },	-- Eternus
+							["coord"] = { 60.4, 59, THALDRASZUS },
+							["maps"] = {
+									2221,	-- The Nighthold (Scenario)
+									2220,	-- The Nighthold (Scenario)
+								},
+							["groups"] = {
+								o(410786, {	-- Alydrus' Research Notes
+									["questID"] = 78395,
+									["groups"] = {
+										i(210255),	-- Alydrus' Research Notes
+									},
+								}),
+							},
+						}),
+						q(77342, {	-- Disc Delivery
+							["provider"] = { "n", 208834 },	-- Nozdormu
+							["coord"] = { 60.4, 58.7, THALDRASZUS },	
+							["groups"] = {
+								i(208798),	-- Recorded Memories of Tyr's Guard (TOY!)
+							},
+						}),
+						q(77343, {	-- A Tyrful Reunion
+							["provider"] = { "n", 208833 },	-- Alexstrasza the Life-Binder
+							["coord"] = { 60.4, 58.6, THALDRASZUS },	
+						}),
+						q(77344, {	-- Time to Process
+							["provider"] = { "n", 208800 },	-- Travard
+							["coord"] = { 60.4, 58.7, THALDRASZUS },
+							["groups"] = {
+								i(208550),	-- Dragon Isles Drakes: White Scales [Tyr Part 4]
+								ach(18958, {	-- Of the Tyr's Guard
+									title(516),	-- Of the Tyr's Guard
+								}),
+								
+							},
+						}),
+					},
+				})),
 				q(72688, {	-- Renown Supplies
 					["provider"] = { "n", 193015 },	-- Unatos
 					["coord"] = { 58.1, 35.2, VALDRAKKEN },
@@ -994,5 +1045,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 
 		q(76177, {["timeline"] = {ADDED_10_1_7}}),	-- RP after finishing `Dislocated Disc Located`(questID 75638)
 		q(78141, {["timeline"] = {ADDED_10_1_7}}),	-- RP after finishing `Dislocated Disc Located`(questID 75638) (for whatever reason this one pop now?)
+		q(77819, {["timeline"] = {ADDED_10_2_0}}),	-- After questID 77344 Receiving Achievement?
+		q(77820, {["timeline"] = {ADDED_10_2_0}}),	-- After questID 77344 Receiving Title 516?
 	}),
 })));

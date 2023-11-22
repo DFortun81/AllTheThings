@@ -1245,12 +1245,12 @@ i(210411);	-- Fast Growing Seed
 i(210864);	-- Improvised Leafbed
 i(210725);	-- Owl Post
 i(207092);	-- Portable Party Platter
+i(208798);	-- Recorded Memories of Tyr's Guard
 i(210497);	-- Verdant Legend's Pennant
 --- NYI ---
 i(211424);	-- Dreaming Banner of the Aspects
 i(209859);	-- Festive Trans-Dimensional Bird Whistle
 i(209035);	-- Hearthstone of the Flame
 i(208825);	-- Junior Timekeeper's Racing Belt
-i(208798);	-- Recorded Memories of Tyr's Guard
 i(210656);	-- Winter Veil Socks
 i(208087);	-- Unknown
