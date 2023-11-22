@@ -388,14 +388,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["icon"] = 5245774,
 					["groups"] = {
 						q(77339, {	-- Data Recovery
+							["sourceQuests"] = { 75638 },	-- Dislocated Disc Located
 							["provider"] = { "n", 208703 },	-- Valunei
 							["coord"] = { 53.8, 61, VALDRAKKEN },
 						}),
 						q(77377, {	-- To Tyrhold! For Tyr!
+							["sourceQuests"] = { 77339 },	-- Data Recovery
 							["provider"] = { "n", 208701 },	-- Travard
 							["coord"] = { 60.6, 63.6, THALDRASZUS },
 						}),
 						q(77340, {	-- Infiltrating the Nighthold'
+							["sourceQuests"] = { 77377 },	-- To Tyrhold! For Tyr!
 							["provider"] = { "n", 208832 },	-- Eternus
 							["coord"] = { 60.4, 59, THALDRASZUS },
 							["maps"] = {
@@ -412,6 +415,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							},
 						}),
 						q(77342, {	-- Disc Delivery
+							["sourceQuests"] = { 77340 },	-- Infiltrating the Nighthold'
 							["provider"] = { "n", 208834 },	-- Nozdormu
 							["coord"] = { 60.4, 58.7, THALDRASZUS },	
 							["groups"] = {
@@ -419,10 +423,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							},
 						}),
 						q(77343, {	-- A Tyrful Reunion
+							["sourceQuests"] = { 77342 },	-- Disc Delivery
 							["provider"] = { "n", 208833 },	-- Alexstrasza the Life-Binder
 							["coord"] = { 60.4, 58.6, THALDRASZUS },	
 						}),
 						q(77344, {	-- Time to Process
+							["sourceQuests"] = { 77343 },	-- A Tyrful Reunion
 							["provider"] = { "n", 208800 },	-- Travard
 							["coord"] = { 60.4, 58.7, THALDRASZUS },
 							["groups"] = {
