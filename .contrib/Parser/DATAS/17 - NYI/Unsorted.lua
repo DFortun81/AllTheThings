@@ -1194,7 +1194,6 @@ root(ROOTS.Unsorted, {
 				q(78373),	-- The Dream Thanks You
 				q(78377),	--
 				q(78380),	--
-				q(78388),	-- Gigantic Dreamseeds
 				q(78389),	-- The Makers' Marathon	 PTR:Maker's Marathon
 				q(78390),	-- The Makers' Marathon - Advanced	 PTR:Maker's Marathon - Advanced
 				q(78391),	-- The Makers' Marathon - Reverse	 PTR:Maker's Marathon - Reverse
@@ -1235,7 +1234,6 @@ root(ROOTS.Unsorted, {
 				q(78588),	-- Dragon Isles Supplies
 				-- 10.2.0.51297
 				q(78595),	-- Dream Infused
-				q(78599),	--
 				-- 10.2.0.51425
 				q(78606),	--
 				q(78608),	-- Geothermal Jaunt
@@ -1250,7 +1248,6 @@ root(ROOTS.Unsorted, {
 				q(78678),	--
 				-- 10.2.0.51521
 				q(78708),	--
-				q(78710),	--
 				q(78711),	--
 				q(78712),	--
 				q(78720),	--
