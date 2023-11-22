@@ -130,35 +130,127 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		ach(13638, {	-- Undersea Usurper
 			i(169194),		-- Snapback Scuttler (MOUNT!)
 			title(405),		-- of the Deeps
-			-- TODO: We're lacking named data to convert this nested achievement criteria tree to criteriaUIDs (quests we do have are HQTs)
 			ach(13635, {	-- Tour of the Depths
-				crit(1, {	-- Complete an Emissary for your ally in Nazjatar
-					["_quests"] = { 56119, 56120 },	-- The Ankoan / The Unshackled
+				crit(45742, {	-- Complete an Emissary for your ally in Nazjatar
+					["_quests"] = { 56119 },	-- The Ankoan
 				}),
-				crit(2),	-- Defeat one of the World Bosses of Nazjatar
-				crit(3),	-- Learn about the Scrying Stones of Nazjatar
-				crit(4, {	-- Defeat one of Azshara's Champions
+				crit(45743, {	-- Complete an Emissary for your ally in Nazjatar
+					["_quests"] = { 56120 },	-- The Unshackled
+				}),
+				crit(45739, {	-- Defeat one of the World Bosses of Nazjatar
+					["_quests"] = { 56057 },	-- The Soulbinder
+				}),
+				crit(45740, {	-- Defeat one of the World Bosses of Nazjatar
+					["_quests"] = { 56056 },	-- Terror of the Depths
+				}),
+				crit(45744, {	-- Learn about the Scrying Stones of Nazjatar
+					["_quests"] = { 56211 },	-- Scrying Stones (A)
+				}),
+				crit(45745, {	-- Learn about the Scrying Stones of Nazjatar
+					["_quests"] = { 56210 },	-- Scrying Stones (H)
+				}),
+				crit(45508, {	-- Defeat one of Azshara's Champions
+					["_quests"] = {
+						55899,	-- Starseeker of the Shirakess
+					},
+				}),
+				crit(45515, {	-- Defeat one of Azshara's Champions
+					["_quests"] = {
+						55892,	-- Champion Eldanar, Shield of Her Glory
+					},
+				}),
+				crit(45509, {	-- Defeat one of Azshara's Champions
 					["_quests"] = {
 						55893,	-- Azanz, the Slitherblade
-						55891,	-- Champion Aldrantiss, Defender of Her Kingdom
-						55887,	-- Champion Alzana, Arrow of Thunder
-						55892,	-- Champion Eldanar, Shield of Her Glory
-						55889,	-- Champion Kyx'zhul the Deepspeaker
-						55888,	-- Champion Qalina, Spear of Ice
-						55890,	-- Champion Vyz'olgo the Mind-Taker
-						55895,	-- Frozen Winds of Zhiela
-						55900,	-- Kassar, Wielder of Dark Blades
-						55899,	-- Starseeker of the Shirakess
-						55897,	-- Szun, Breaker of Slaves
+					},
+				}),
+				crit(45507, {	-- Defeat one of Azshara's Champions
+					["_quests"] = {
 						55898,	-- Tempest-Speaker Shalan'ali
+					},
+				}),
+				crit(45504, {	-- Defeat one of Azshara's Champions
+					["_quests"] = {
+						55897,	-- Szun, Breaker of Slaves
+					},
+				}),
+				crit(45512, {	-- Defeat one of Azshara's Champions
+					["_quests"] = {
 						55886,	-- The Zanj'ir Brutalizer
+					},
+				}),
+				crit(45514, {	-- Defeat one of Azshara's Champions
+					["_quests"] = {
+						55887,	-- Champion Alzana, Arrow of Thunder
+					},
+				}),
+				crit(45517, {	-- Defeat one of Azshara's Champions
+					["_quests"] = {
+						55888,	-- Champion Qalina, Spear of Ice
+					},
+				}),
+				crit(45505, {	-- Defeat one of Azshara's Champions
+					["_quests"] = {
+						55895,	-- Frozen Winds of Zhiela
+					},
+				}),
+				crit(45518, {	-- Defeat one of Azshara's Champions
+					["_quests"] = {
+						55890,	-- Champion Vyz'olgo the Mind-Taker
+					},
+				}),
+				crit(45510, {	-- Defeat one of Azshara's Champions
+					["_quests"] = {
 						55896,	-- Undana, Chilling Assassin
+					},
+				}),
+				crit(45516, {	-- Defeat one of Azshara's Champions
+					["_quests"] = {
+						55889,	-- Champion Kyx'zhul the Deepspeaker
+					},
+				}),
+				crit(45511, {	-- Defeat one of Azshara's Champions
+					["_quests"] = {
+						55900,	-- Kassar, Wielder of Dark Blades
+					},
+				}),
+				crit(45506, {	-- Defeat one of Azshara's Champions
+					["_quests"] = {
 						55894,	-- Zoko, Her Iron Defender
 					},
 				}),
-				crit(5),	-- Level a Nazjatar Ally to Level 5
-				crit(6),	-- Defeat one of Mardivas's Laboratory Creations
-				crit(7),	-- Find and Assist Mrrl
+				crit(45513, {	-- Defeat one of Azshara's Champions
+					["_quests"] = {
+						55891,	-- Champion Aldrantiss, Defender of Her Kingdom
+					},
+				}),
+				crit(45734, {	-- Level a Nazjatar Ally to Level 5
+					["_quests"] = { 56809 },	-- Super Friends
+				}),
+				crit(45735, {	-- Level a Nazjatar Ally to Level 5
+					["_quests"] = { 56814 },	-- Anytime You Need a Friend
+				}),
+				crit(45736, {	-- Level a Nazjatar Ally to Level 5
+					["_quests"] = { 56804 },	-- With Friends Like You, Who Needs Anemones?
+				}),
+				crit(45737, {	-- Level a Nazjatar Ally to Level 5
+					["_quests"] = { 56778 },	-- A Glint of the Darkness
+				}),
+				crit(45738, {	-- Level a Nazjatar Ally to Level 5
+					["_quests"] = { 56783 },	-- The Lambent Lockbox
+				}),
+				crit(45733, {	-- Level a Nazjatar Ally to Level 5
+					["_quests"] = { 56788 },	-- Reclaimed Treasure
+				}),
+				crit(45741, {	-- Defeat one of Mardivas's Laboratory Creations
+					["_quests"] = { 55121 },	-- The Laboratory of Mardivas
+				}),
+				crit(45746, {	-- Find and Assist Mrrl
+					["_quests"] = { 55983 },	-- A Safer Place (A)
+				}),
+				crit(45747, {	-- Find and Assist Mrrl
+					["_quests"] = { 55530 },	-- A Safer Place (H)
+				}),
 			}),
 			ach(13690, {	-- Nazjatarget Eliminated
 				["sym"] = {{ "achievement_criteria" }},
