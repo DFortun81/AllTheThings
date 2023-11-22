@@ -140,7 +140,7 @@ root(ROOTS.Zones, {
 							crit(39018, {	-- The Taunka
 								["sourceQuest"] = 12008,	-- Agmar's Hammer
 							}),
-							crit(63852, {	-- Traitors to the Horde
+							crit(39021, {	-- Traitors to the Horde
 								["sourceQuest"] = 12136,	-- The Translated Tome
 							}),
 							crit(39019, {	-- Redirecting the Ley Lines
