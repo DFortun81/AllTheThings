@@ -2496,10 +2496,6 @@ root(ROOTS.NeverImplemented, {
 				i(208982),	-- 10.2 Monster - Merithra - Waist
 				i(208981),	-- 10.2 Monster - Merithra - Wrist
 				i(211132),	-- Omni Storm
-				------ Rares? ------
-				i(208385),	-- Flame Endowed Blade
-				i(208324),	-- Scorching Dryad's Chestpiece
-				i(208340),	-- Stag's Flourishing Mantle
 			})),
 		}),
 	}),
