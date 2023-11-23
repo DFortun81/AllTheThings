@@ -12,6 +12,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 22.8, 32.3, EMERALD_DREAM },
 				["g"] = {
 					i(208356),	-- Earthbound Furbolg's Shroud
+					i(208385),	-- Flame Endowed Blade
 				},
 			}),
 			n(210050, {	-- Bloodstripe Great Ray
@@ -157,6 +158,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210729),	-- Mark of the Verdant Bristlebruin (CI!)
 					i(209954),	-- Moragh's Favorite Rock (TODO: remove if it will drop somewhere else)
 					i(208380),	-- Moragh's Kneading Claw
+					i(208381),	-- Scepter of Still Waters
 					i(208329),	-- Warm Grasp of the Dream
 				},
 			}),
@@ -269,6 +271,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 77990,
 				["coord"] = { 26.0, 26.6, EMERALD_DREAM },
 				["g"] = {
+					i(208324),	-- Scorching Dryad's Chestpiece
 					i(208389),	-- Spear of the Wilds
 					i(208370),	-- The Apostle's Steps
 				},

@@ -65,6 +65,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(193036),	-- Left-Handed Magnifying Glass
 				},
 			}),
+			o(410833, {	-- The Reforging of the Tyr's Guard
+				["sourceQuests"] = { 77344 },	-- Time to Process
+				["timeline"] = { ADDED_10_2_0 },
+				["coord"] = { 60.8, 63.8, THALDRASZUS },
+				["questID"] = 78330,
+				["g"] = {
+					i(210321),	-- The Reforging of the Tyr's Guard [book]
+				},
+			}),
 			o(381108, {	-- Yennu's Map
 				["coord"] = { 54.9, 75.4, THALDRASZUS },
 				["g"] = {
