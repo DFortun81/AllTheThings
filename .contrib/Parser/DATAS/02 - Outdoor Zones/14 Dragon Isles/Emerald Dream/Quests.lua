@@ -1128,7 +1128,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77768),	-- 'Stay a while and listen' Tyrande Whisperwind (n: 206402) during qID 76281 (Something Worth Celebrating)
 		q(77771),	-- 'Stay a while and listen' Lady Jaina Proudmoore (n: 206943) during qID 76281 (Something Worth Celebrating)
 		q(77770),	-- 'Stay a while and listen' Lady Jaina Proudmoore (n: 209610) during qID 76283 (Andu-falah-dor)
-		--q(),	-- 'Stay a while and listen' Watcher Koranos (n: 209334) during qID 76283 (Andu-falah-dor) (have dialog above him, but nothing when you talk to him)
+		q(77772),	-- 'Stay a while and listen' Watcher Koranos (n: 209334) during qID 76283 (Andu-falah-dor)
 		-- Dryad Garden
 		q(77808),	-- Quest "What Do I Call You?": Pick the title of "Mother"
 		q(77809),	-- Quest "What Do I Call You?": Pick the title of "Father"
