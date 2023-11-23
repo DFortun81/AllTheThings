@@ -180,6 +180,12 @@ root(ROOTS.NeverImplemented, {
 				i(100949),	-- Thunderlord Cache Reward
 			})),
 
+			-- 6.1.0
+			tier(WOD_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 6.1.0" } }, {
+				i(122419),	-- Scouting Missive: Gorian Proving Grounds
+				i(122420),	-- Scouting Missive: Gorian Proving Grounds
+			})),
+
 			-- 6.x.x
 			n(P6xx, {
 				i(120370),	-- Unknown
