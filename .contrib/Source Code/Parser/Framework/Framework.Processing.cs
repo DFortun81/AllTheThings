@@ -1559,19 +1559,8 @@ namespace ATT
                 }
 
                 // See if we didn't end up with a valid UID with nothing nested
-                //if (!data.ContainsKey("g") && data.TryGetValue("criteriaID", out long newCritID) && newCritID == criteriaID)
-                //{
-                if (TryGetTypeDBObjectChildren(criteriaTreeData, out List<CriteriaTree> childTrees))
-                {
-                    LogWarn($"Criteria {achID}:{criteriaID} is weird. It uses unsupported CriteriaUID: {ToJSON(childTrees.Select(c => c.CriteriaID).ToList())}");
-                    Log($"--- Please ensure the data is accurate and add [\"_noautomation\"] = true, to the crit() group to remove this warning.");
-                }
-                else
-                {
-                    LogWarn($"Criteria {achID}:{criteriaID} is weird. It uses unsupported CriteriaUID.");
-                    Log($"--- Please ensure the data is accurate and add [\"_noautomation\"] = true, to the crit() group to remove this warning.");
-                }
-                //}
+                LogWarn($"Criteria {achID}:{criteriaID} is weird. It uses unsupported CriteriaUID: {ToJSON(GetAllNestedTypeDBObjects(criteriaTreeData).Select(t => t.CriteriaID).Where(id => id > 0).ToList())}");
+                Log($"--- Please ensure the data is accurate and add [\"_noautomation\"] = true, to the crit() group to remove this warning.");
                 return;
             }
 
@@ -1842,11 +1831,13 @@ namespace ATT
             // CriteriaTree can be a parent, which means the children should be incorporated as criteria of the data
             if (TryGetTypeDBObjectChildren(criteriaTree, out List<CriteriaTree> childTrees))
             {
-                long criteriaIndex = criteriaTree.OrderIndex + 1;
-                if (level == 3)
+                foreach (CriteriaTree child in childTrees)
                 {
-
+                    incorporated |= Incorporate_CriteriaTree(achID, data, child.ID, child, childTrees.Count == 1, level + 1, extraData);
                 }
+
+                long criteriaIndex = criteriaTree.OrderIndex + 1;
+
                 // beyond the first criteriatree split merging into an achievement, we instead want the criteriatree
                 // data to merge directly into criteria index groups if sourced
                 if (level == 1)
@@ -1860,7 +1851,7 @@ namespace ATT
                     //}
                     //else // Ach 13635
                     //{
-                    // see if a CriteriaID by OrderIndex exists, and merge sub-criteria into that instead as if it was an achievement
+                    // see if a CriteriaID by OrderIndex exists, and see if we need to warn about extra data that it contains, if we didn't end up incorporating any criteria
                     if (data.TryGetValue("g", out List<object> datag))
                     {
                         // since we're nesting sub-criteria individually, we don't need an indexed-criteria which represents the cumulative value of those nested criteria
@@ -1874,8 +1865,11 @@ namespace ATT
                                     return incorporated;
                                 }
 
-                                LogDebug($"Removing existing Criteria by Index: {achID}:{objCriteriaID}");
-                                datag.RemoveAt(i);
+                                if (incorporated)
+                                {
+                                    LogDebug($"Removing existing Criteria by Index: {achID}:{objCriteriaID}");
+                                    datag.RemoveAt(i);
+                                }
                                 // but any other data needs to be preserved somehow, can warn contrib to migrate to new UIDs
                                 obj.Remove("criteriaID");
                                 obj.Remove("achID");
@@ -1883,7 +1877,7 @@ namespace ATT
                                 obj.Remove("awp");
                                 if (obj.Keys.Count > 0)
                                 {
-                                    LogWarn($"--- Migrate (or remove) extra data into the proper sub-criteria(s): {ToJSON(childTrees.Select(c => c.CriteriaID).ToList())} <== ", obj);
+                                    LogWarn($"Migrate (or remove) extra data from {achID}:{criteriaIndex} into the proper sub-criteria(s): {ToJSON(GetAllNestedTypeDBObjects(criteriaTree).Select(t => t.CriteriaID).Where(id => id > 0).ToList())} <== ", obj);
                                     extraData = new Dictionary<string, object>(obj);
                                 }
                                 break;
@@ -1901,24 +1895,6 @@ namespace ATT
                     //    Objects.Merge(data, "g", criteriaData);
                     //}
                     //}
-                }
-
-                foreach (CriteriaTree child in childTrees)
-                {
-                    // for single criteria of achievement, just list criteria data directly into achievement
-                    incorporated |= Incorporate_CriteriaTree(achID, data, child.ID, child, childTrees.Count == 1, level + 1, extraData);
-                }
-
-                // no criteria from the criteriatree were 'useful' and added, so generate an indexed-criteria for tracking in game
-                if (!incorporated && level > 0 && childTrees.Count >= 1)
-                {
-                    IDictionary<string, object> criteriaData = new Dictionary<string, object>
-                    {
-                        { "criteriaID", criteriaIndex },
-                        { "achID", achID }
-                    };
-                    LogDebug($"Added Criteria by Index (since no sub-criteria could be incorporated): {achID}:{criteriaIndex}");
-                    Objects.Merge(data, "g", criteriaData);
                 }
             }
 
@@ -3117,6 +3093,25 @@ namespace ATT
 
             children = default;
             return false;
+        }
+
+        private static IEnumerable<T> GetAllNestedTypeDBObjects<T>(T obj)
+            where T : IDBType
+        {
+            if (TryGetTypeDBObjectChildren(obj, out List<T> nested))
+            {
+                foreach (T child in nested)
+                {
+                    yield return child;
+
+                    foreach (T id in GetAllNestedTypeDBObjects(child))
+                    {
+                        yield return id;
+                    }
+                }
+            }
+
+            yield break;
         }
 
         private class TierList
