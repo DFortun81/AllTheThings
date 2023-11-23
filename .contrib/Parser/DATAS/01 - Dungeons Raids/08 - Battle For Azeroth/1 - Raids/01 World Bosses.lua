@@ -151,9 +151,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					152697,	-- Ulmath
 				},
 				["g"] = bubbleDown({["modID"] = 3 }, {
-					crit(45739, {	-- Defeat one of the World Bosses in Nazjatar
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
 					i(170089),	-- Liara's Spire
 					i(170093),	-- Tyr'mar's Greatsword
 					i(170091),	-- Willbinder's Halberd
@@ -204,9 +201,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				},
 				["creatureID"] = 152671,	-- Wekemara
 				["g"] = bubbleDown({["modID"] = 3}, {
-					crit(45740, {	-- Defeat one of the World Bosses in Nazjatar
-						["achievementID"] = 13635,	-- Tour of the Depths
-					}),
 					i(168340),	-- Naga Ritualist's Mantle
 					i(168366),	-- Tidal Lurker's Greathelm
 					i(168351),	-- Spitcharged Shoulderguards

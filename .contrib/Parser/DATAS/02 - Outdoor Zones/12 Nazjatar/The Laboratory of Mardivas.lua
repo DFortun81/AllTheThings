@@ -11,9 +11,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		["coord"] = { 60.7, 32.4, NAZJATAR },
 		["icon"] = "Interface\\Icons\\inv_crystallized_water",	-- icon for Strange Mineralized Water
 		["g"] = {
-			crit(45741, {	-- Defeat one of Mardivas's Laboratory creations
-				["achievementID"] = 13635,	-- Tour of the Depths
-			}),
 			currency(1721),	-- Prismatic Manapearl x5
 			n(155139, {	-- Arcane Amalgamation
 				["description"] = "Activate no crystals.",

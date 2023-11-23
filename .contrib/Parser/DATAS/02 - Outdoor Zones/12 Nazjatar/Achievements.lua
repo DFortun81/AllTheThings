@@ -244,6 +244,8 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				}),
 				crit(45741, {	-- Defeat one of Mardivas's Laboratory Creations
 					["_quests"] = { 55121 },	-- The Laboratory of Mardivas
+					-- We do not want this to point to "Boss Kill Credit [DNT]" when there is a perfectly fine quest to point at
+					["_noautomation"] = true,
 				}),
 				crit(45746, {	-- Find and Assist Mrrl
 					["_quests"] = { 55983 },	-- A Safer Place (A)
