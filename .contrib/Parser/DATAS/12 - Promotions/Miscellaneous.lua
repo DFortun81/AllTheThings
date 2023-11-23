@@ -86,8 +86,19 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 		["description"] = "This was awarded to players when they linked their original WoW account to a Battle.Net Tag. No longer available as all accounts now require Battle.Net Tag initially, unless you have access to an unattached account.",
 		["timeline"] = { ADDED_3_2_2 },
 	}),
+	ach(9030),	-- Blizzard hard deleted this one from the game?
 	ach(9496, {	-- Warlord's Deathwheel
 		["timeline"] = { "added 6.0.2.18888" },
+		["g"] = {
+			crit(25887, {
+				["provider"] = { "i", 116788 },
+				["_noautomation"] = true,
+			}),
+			crit(27433, {
+				["provider"] = { "i", 116788 },
+				["_noautomation"] = true,
+			}),
+		},
 	}),
 	i(116788, {	-- Warlord's Deathwheel (MOUNT!)
 		["description"] = "Azeroth Choppers promotional mount. You had to have logged in on a Horde character between the 24th of July and the 30th of September 2014 in order for your account to receive this mount.",
