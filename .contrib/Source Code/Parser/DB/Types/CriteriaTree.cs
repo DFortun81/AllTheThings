@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace ATT.DB.Types
 {
@@ -16,18 +17,20 @@ namespace ATT.DB.Types
         public long OrderIndex { get; set; }
         public long Flags { get; set; }
 
+        private TypeFlags _flags => (TypeFlags)Flags;
+
         public bool IsIgnoreFlags() =>
-            // 0x2 - Do not display
-            (Flags & 0x2) != 0;
+            (_flags & TypeFlags.DoNotDisplay) == TypeFlags.DoNotDisplay;
+
+        public bool IsAllianceOnlyFlags() =>
+            (_flags & TypeFlags.Alliance) == TypeFlags.Alliance;
+
+        public bool IsHordeOnlyFlags() =>
+            (_flags & TypeFlags.Horde) == TypeFlags.Horde;
 
         public IDictionary<string, object> AsData()
         {
-            return new Dictionary<string, object>
-            {
-                { "id", ID },
-                { "criteriaID", CriteriaID },
-                { "parentCriteriaID", Parent },
-            };
+            throw new NotImplementedException();
         }
     }
 }

@@ -1831,6 +1831,15 @@ namespace ATT
             // CriteriaTree can be a parent, which means the children should be incorporated as criteria of the data
             if (TryGetTypeDBObjectChildren(criteriaTree, out List<CriteriaTree> childTrees))
             {
+                if (criteriaTree.IsAllianceOnlyFlags())
+                {
+                    extraData = new Dictionary<string, object> { { "r", 2 } };
+                }
+                else if (criteriaTree.IsHordeOnlyFlags())
+                {
+                    extraData = new Dictionary<string, object> { { "r", 1 } };
+                }
+
                 foreach (CriteriaTree child in childTrees)
                 {
                     incorporated |= Incorporate_CriteriaTree(achID, data, child.ID, child, childTrees.Count == 1, level + 1, extraData);
@@ -1875,10 +1884,10 @@ namespace ATT
                                 obj.Remove("achID");
                                 obj.Remove("timeline");
                                 obj.Remove("awp");
+                                obj.Remove("r");
                                 if (obj.Keys.Count > 0)
                                 {
                                     LogWarn($"Migrate (or remove) extra data from {achID}:{criteriaIndex} into the proper sub-criteria(s): {ToJSON(GetAllNestedTypeDBObjects(criteriaTree).Select(t => t.CriteriaID).Where(id => id > 0).ToList())} <== ", obj);
-                                    extraData = new Dictionary<string, object>(obj);
                                 }
                                 break;
                             }

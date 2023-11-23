@@ -20,6 +20,8 @@ namespace ATT.DB.Types
         public long Eligibility_world_state_ID { get; set; }
         public long Eligibility_world_state_value { get; set; }
 
+        private TypeFlags _flags => (TypeFlags)Flags;
+
         public IDictionary<string, object> AsData()
         {
             return new Dictionary<string, object>
@@ -29,8 +31,13 @@ namespace ATT.DB.Types
         }
 
         public bool IsIgnoreFlags() =>
-            // 0x2 - Do not display
-            (Flags & 0x2) != 0;
+            (_flags & TypeFlags.DoNotDisplay) == TypeFlags.DoNotDisplay;
+
+        public bool IsAllianceOnlyFlags() =>
+            (_flags & TypeFlags.Alliance) == TypeFlags.Alliance;
+
+        public bool IsHordeOnlyFlags() =>
+            (_flags & TypeFlags.Horde) == TypeFlags.Horde;
 
         /// <summary>
         /// Returns if this Criteria has some data that we can actually use (i.e. quest, item, npc, etc.)
