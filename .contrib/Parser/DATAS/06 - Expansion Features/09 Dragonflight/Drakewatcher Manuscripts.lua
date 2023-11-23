@@ -712,7 +712,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}, {
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw
 			i(196993),	-- Cliffside Wylderdrake: Sleek Horns
-			i(197014),	-- Cliffside Wylderdrake: White Scales
 		})),
 		header(HEADERS.Item, 194705, {	-- Highland Drake
 			i(197099),	-- Highland Drake: Armor (DM!)
@@ -771,12 +770,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(197107),	-- Highland Drake: Triple Finned Head (DM!)
 			i(197148),	-- Highland Drake: Vertical Finned Tail (DM!)
 		}),
-		header(HEADERS.Item, 194705, sharedData({	-- Highland Drake
-			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["timeline"] = { CREATED_10_0_0 },
-		}, {
-			i(197146),	-- Highland Drake: White Scales
-		})),
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
 			i(197357),	-- Renewed Proto-Drake: Armor (DM!)
 			i(197401),	-- Renewed Proto-Drake: Beaked Snout (DM!)
@@ -837,7 +830,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}, {
 			i(197356),	-- Renewed Proto-Drake: Hairy Back
 			i(197354),	-- Renewed Proto-Drake: Horned Back
-			i(197393),	-- Renewed Proto-Drake: White Scales
 		})),
 		header(HEADERS.Item, 194549, {	-- Windborne Velocidrake
 			i(197588),	-- Windborne Velocidrake: Armor (DM!)
@@ -885,7 +877,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["timeline"] = { CREATED_10_0_0 },
 		}, {
 			i(197621),	-- Windborne Velocidrake: Exposed Finned Tail
-			i(197616),	-- Windborne Velocidrake: White Scales
 		})),
 	}),
 	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
@@ -1012,7 +1003,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203319),	-- Winding Slitherdrake: Finned Cheek
 			i(203301),	-- Winding Slitherdrake: Light Blue and Copper Armor
 			i(203302),	-- Winding Slitherdrake: Purple and Silver Armor
-			i(203354),	-- Winding Slitherdrake: White Scales
 		})),
 	})),
 	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
@@ -1057,6 +1047,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 	})),
 	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+		i(208550),	-- Dragon Isles Drakes: White Scales (DM!)
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
 		}),
 		header(HEADERS.Item, 210412, {	-- Flourishing Whimsydrake
@@ -1177,5 +1168,11 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { AD
 		i(197349, {["timeline"] = {ADDED_10_1_7}}),	-- Renewed Proto-Drake: Gold and White Armor (DM!)
 		i(197582, {["timeline"] = {ADDED_10_1_7}}),	-- Windborne Velocidrake: White and Pink Armor (DM!)
 		i(203298, {["timeline"] = {ADDED_10_1_7}}),	-- Winding Slitherdrake: White and Gold Armor (DM!)
+		-- Dragon Isles Drakes: White Scales
+		i(197014, {["timeline"] = {ADDED_10_2_0}}),	-- Cliffside Wylderdrake: White Scales (DM!)
+		i(197146, {["timeline"] = {ADDED_10_2_0}}),	-- Highland Drake: White Scales (DM!)
+		i(197393, {["timeline"] = {ADDED_10_2_0}}),	-- Renewed Proto-Drake: White Scales (DM!)
+		i(197616, {["timeline"] = {ADDED_10_2_0}}),	-- Windborne Velocidrake: White Scales (DM!)
+		i(203354, {["timeline"] = {ADDED_10_2_0}}),	-- Winding Slitherdrake: White Scales (DM!)
 	}),
 })));
