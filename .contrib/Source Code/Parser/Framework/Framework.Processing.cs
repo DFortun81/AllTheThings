@@ -463,7 +463,15 @@ namespace ATT
 
                         Dictionary<string, object> clone = new Dictionary<string, object>(data);
                         clone.Remove("g");
-                        Objects.Merge(keyValueValues, clone);
+                        // special case for criteria, to list under their achievement instead of into it since they contain the same achID
+                        if (data.ContainsKey("criteriaID"))
+                        {
+                            Objects.Merge(keyValueValues, "g", clone);
+                        }
+                        else
+                        {
+                            Objects.Merge(keyValueValues, clone);
+                        }
                     }
                 }
             }
@@ -1368,6 +1376,11 @@ namespace ATT
                 data.ContainsKey("criteriaID") ||
                 (data.TryGetValue("collectible", out bool collectible) && !collectible)) return;
 
+            if (achID == 1195)
+            {
+
+            }
+
             // Grab AchievementDB info
             ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
 
@@ -1837,11 +1850,17 @@ namespace ATT
 
                 foreach (CriteriaTree child in childTrees)
                 {
+                    if (level == 0)
+                    {
+                        // add level 1 criteriaIndex for proper name retrieval in game
+                        extraData = extraData ?? new Dictionary<string, object>();
+                        extraData["id"] = child.OrderIndex + 1;
+                    }
+
                     incorporated |= Incorporate_CriteriaTree(achID, data, child.ID, child, childTrees.Count == 1, level + 1, extraData);
                 }
 
                 long criteriaIndex = criteriaTree.OrderIndex + 1;
-
                 // beyond the first criteriatree split merging into an achievement, we instead want the criteriatree
                 // data to merge directly into criteria index groups if sourced
                 if (level == 1)
