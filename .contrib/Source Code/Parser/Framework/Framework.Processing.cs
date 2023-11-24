@@ -1368,11 +1368,6 @@ namespace ATT
                 data.ContainsKey("criteriaID") ||
                 (data.TryGetValue("collectible", out bool collectible) && !collectible)) return;
 
-            if (achID == 1563)
-            {
-
-            }
-
             // Grab AchievementDB info
             ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
 
@@ -1962,7 +1957,8 @@ namespace ATT
                         break;
                     // 86 (HAS_ACHIEVEMENT)
                     case 86:
-                        Objects.Merge(data, "_achievements", existingModifierTree.Asset);
+                        // typically we use 'meta_achievement' in these cases
+                        //Objects.Merge(data, "_achievements", existingModifierTree.Asset);
                         break;
                     // 88 (CLOUD_SERPENT_REPUTATION)
                     case 88:
