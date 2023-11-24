@@ -151,9 +151,6 @@ root(ROOTS.NeverImplemented, {
 				tier(BFA_TIER, 0.1, {
 					i(161118),	-- Marrow Shatter
 				}),
-				tier(BFA_TIER, 1.0, {
-					i(166405),	-- Blindside
-				}),
 			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
@@ -482,8 +479,6 @@ root(ROOTS.NeverImplemented, {
 			-- Load In Game
 			i(115296),	-- Spectral Warmace
 			i(115299),	-- Spectral Scepter
-			i(163930),	-- Kovork's Rattle
-			i(174228),	-- Gavel of the Oasis
 			i(182578),	-- NPE Weapon 1H Mace AGI
 			-- ItemID/Retrieving
 			i(38468),	-- Kalu'ak Peacebringer

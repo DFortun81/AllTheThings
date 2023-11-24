@@ -534,26 +534,26 @@ root(ROOTS.NeverImplemented, {
 		tier(WOD_TIER, {
 			n(BACK, {
 				tier(WOD_TIER, 0.1, {
-					i(112230),	-- Storm Scale Cloak
-					i(112231),	-- Drape of Nimble Deflection
-					i(112232),	-- Three-Kodohide Cloak
-					i(112233),	-- Cloak of Bloody Forces
-					i(114297),	-- Feather-Cord Cloak
-					i(114298),	-- Cloak of Bent Dreams
-					i(114299),	-- Suture-Slice Cloak
-					i(114300),	-- Grimchop Greatcloak
-					i(114301),	-- Axebreak Darkcloak
-					i(114360),	-- Eagle Eye Windcloak
-					i(114361),	-- Drape of Dark Shadows
-					i(114362),	-- Cloak of Keening Spirits
-					i(114363),	-- Gutwrencher's Greatcloak
-					i(114364),	-- Towerkin Cloak
 					i(114421),	-- Arrowleaf Longcloak
-					i(114422),	-- Mindbreaker Drape
-					i(114423),	-- Drape of Mindmending
+					i(114301),	-- Axebreak Darkcloak
 					i(114424),	-- Blade-Ring Greatcloak
 					i(114425),	-- Bleak Shore Cloak
-					--
+					i(114298),	-- Cloak of Bent Dreams
+					i(112233),	-- Cloak of Bloody Forces
+					i(114362),	-- Cloak of Keening Spirits
+					i(114361),	-- Drape of Dark Shadows
+					i(114423),	-- Drape of Mindmending
+					i(112231),	-- Drape of Nimble Deflection
+					i(114360),	-- Eagle Eye Windcloak
+					i(114297),	-- Feather-Cord Cloak
+					i(114300),	-- Grimchop Greatcloak
+					i(114363),	-- Gutwrencher's Greatcloak
+					i(114422),	-- Mindbreaker Drape
+					i(112230),	-- Storm Scale Cloak
+					i(114299),	-- Suture-Slice Cloak
+					i(112232),	-- Three-Kodohide Cloak
+					i(114364),	-- Towerkin Cloak
+					-- Does Not Load In Game --
 					i(108814),	-- 6.0 PH Cloak Agi
 					i(108822),	-- 6.0 PH Cloak STR
 					i(108823),	-- 6.0 PH Cloak Int
@@ -570,176 +570,166 @@ root(ROOTS.NeverImplemented, {
 			filter(CLOTH, {
 				tier(WOD_TIER, 0.1, {
 					i(114247),	-- Firefly Bracers
-					i(114254),	-- Firefly Robes
-					i(114255),	-- Firefly Sandals
-					i(114259),	-- Firefly Gloves
-					i(114263),	-- Firefly Hood
-					i(114267),	-- Firefly Trousers
-					i(114271),	-- Firefly Mantle
 					i(114275),	-- Firefly Cord
-					i(105710),	-- Lasso Bracers, Humanoid
-					i(105928),	-- Magic Bunny Hat
-					i(104355),	-- Titan Rocket Boots
-					--
-					i(107866),	-- 7.0 PH Cloth Treads
+					i(114255),	-- Firefly Sandals
+					-- Does Not Load In Game --
+					i(107887),	-- 7.0 PH Cloth Cord
 					i(107871),	-- 7.0 PH Cloth Gloves
 					i(107874),	-- 7.0 PH Cloth Hood
 					i(107878),	-- 7.0 PH Cloth Leggings
-					i(107881),	-- 7.0 PH Cloth Robe
 					i(107884),	-- 7.0 PH Cloth Mantle
-					i(107887),	-- 7.0 PH Cloth Cord
+					i(107881),	-- 7.0 PH Cloth Robe
+					i(107866),	-- 7.0 PH Cloth Treads
 					i(107890),	-- 7.0 PH Cloth Wristwraps
 					i(109272),	-- 7.0 QA Combat Test Caster Belt 1
-					i(109278),	-- 7.0 QA Combat Test Caster Robes 1
-					i(109290),	-- 7.0 QA Combat Test Caster Shoulders 1
 					i(109296),	-- 7.0 QA Combat Test Caster Belt 2
-					i(109297),	-- 7.0 QA Combat Test Caster Gloves 1
-					i(109298),	-- 7.0 QA Combat Test Caster Helm 1
-					i(109299),	-- 7.0 QA Combat Test Caster Legs 1
-					i(109302),	-- 7.0 QA Combat Test Caster Robes 2
-					i(109303),	-- 7.0 QA Combat Test Caster Shoulders 2
 					i(109339),	-- 7.0 QA Combat Test Caster Belt 3
-					i(109340),	-- 7.0 QA Combat Test Caster Gloves 2
-					i(109341),	-- 7.0 QA Combat Test Caster Helm 2
-					i(109342),	-- 7.0 QA Combat Test Caster Legs 2
-					i(109343),	-- 7.0 QA Combat Test Caster Robes 3
-					i(109344),	-- 7.0 QA Combat Test Caster Shoulders 3
-					i(109363),	-- 7.0 QA Combat Test Caster Gloves 3
-					i(109379),	-- 7.0 QA Combat Test Caster Boots
-					i(109398),	-- 7.0 QA Combat Test Caster Bracer 1
-					i(109405),	-- 7.0 QA Combat Test Caster Helm 3
-					i(109411),	-- 7.0 QA Combat Test Caster Legs 3
-					i(109419),	-- 7.0 QA Combat Test Caster Legs 4
-					i(109423),	-- 7.0 QA Combat Test Caster Robes 4
-					i(109437),	-- 7.0 QA Combat Test Caster Helm 4
-					i(109451),	-- 7.0 QA Combat Test Caster Boots 2
-					i(109463),	-- 7.0 QA Combat Test Caster Bracer 2
-					i(109473),	-- 7.0 QA Combat Test Caster Shoulders 4
 					i(109477),	-- 7.0 QA Combat Test Caster Belt 4
-					i(109521),	-- 7.0 QA Combat Test Caster Gloves 4
+					i(109379),	-- 7.0 QA Combat Test Caster Boots
+					i(109451),	-- 7.0 QA Combat Test Caster Boots 2
 					i(109540),	-- 7.0 QA Combat Test Caster Boots 3
+					i(109398),	-- 7.0 QA Combat Test Caster Bracer 1
+					i(109463),	-- 7.0 QA Combat Test Caster Bracer 2
 					i(109542),	-- 7.0 QA Combat Test Caster Bracer 3
 					i(109546),	-- 7.0 QA Combat Test Caster Bracer 4
+					i(109297),	-- 7.0 QA Combat Test Caster Gloves 1
+					i(109340),	-- 7.0 QA Combat Test Caster Gloves 2
+					i(109363),	-- 7.0 QA Combat Test Caster Gloves 3
+					i(109521),	-- 7.0 QA Combat Test Caster Gloves 4
+					i(109298),	-- 7.0 QA Combat Test Caster Helm 1
+					i(109341),	-- 7.0 QA Combat Test Caster Helm 2
+					i(109405),	-- 7.0 QA Combat Test Caster Helm 3
+					i(109437),	-- 7.0 QA Combat Test Caster Helm 4
+					i(109299),	-- 7.0 QA Combat Test Caster Legs 1
+					i(109342),	-- 7.0 QA Combat Test Caster Legs 2
+					i(109411),	-- 7.0 QA Combat Test Caster Legs 3
+					i(109419),	-- 7.0 QA Combat Test Caster Legs 4
+					i(109278),	-- 7.0 QA Combat Test Caster Robes 1
+					i(109302),	-- 7.0 QA Combat Test Caster Robes 2
+					i(109343),	-- 7.0 QA Combat Test Caster Robes 3
+					i(109423),	-- 7.0 QA Combat Test Caster Robes 4
+					i(109290),	-- 7.0 QA Combat Test Caster Shoulders 1
+					i(109303),	-- 7.0 QA Combat Test Caster Shoulders 2
+					i(109344),	-- 7.0 QA Combat Test Caster Shoulders 3
+					i(109473),	-- 7.0 QA Combat Test Caster Shoulders 4
+					i(105710),	-- Lasso Bracers, Humanoid
+					i(105928),	-- Magic Bunny Hat
+					i(104355),	-- Titan Rocket Boots
 				}),
 				tier(WOD_TIER, 0.2, {
 					i(116001),	-- Cord of Skulls
 				}),
 				tier(WOD_TIER, 0.3, {
+					-- Does Not Load In Game --
 					i(120318),	-- Sol-Shaper's Sandals
 				}),
 			}),
 			filter(LEATHER, {
 				tier(WOD_TIER, 0.1, {
 					i(107660),	-- Battle Aged Leather Pauldrons
-					i(114248),	-- Bloodthorn Bracers
-					i(114251),	-- Bloodthorn Chestguard
-					i(114256),	-- Bloodthorn Boots
-					i(114260),	-- Bloodthorn Gauntlets
-					i(114264),	-- Bloodthorn Hood
-					i(114268),	-- Bloodthorn Legguards
-					i(114272),	-- Bloodthorn Spaulders
 					i(114276),	-- Bloodthorn Belt
-					--
-					i(107203),	-- Lasso Bracers, Powerup
-					i(109264),	-- 6.0 QA Combat Test Leather Bracer
-					i(109276),	-- 6.0 QA Combat Test Leather Legs
-					i(109287),	-- 6.0 QA Combat Test Leather Helm 2
+					i(114256),	-- Bloodthorn Boots
+					i(114248),	-- Bloodthorn Bracers
+					-- Does Not Load In Game --
 					i(109294),	-- 6.0 QA Combat Test Leather Belt
-					i(109305),	-- 6.0 QA Combat Test Leather Gloves
-					i(109306),	-- 6.0 QA Combat Test Leather Helm 3
-					i(109307),	-- 6.0 QA Combat Test Leather Legs 2
-					i(109308),	-- 6.0 QA Combat Test Leather Shoulders
-					i(109345),	-- 6.0 QA Combat Test Leather Chest
-					i(109346),	-- 6.0 QA Combat Test Leather Gloves
-					i(109347),	-- 6.0 QA Combat Test Leather Helm 4
-					i(109348),	-- 6.0 QA Combat Test Leather Legs 3
-					i(109349),	-- 6.0 QA Combat Test Leather Shoulders 2
 					i(109358),	-- 6.0 QA Combat Test Leather Belt 2
-					i(109366),	-- 6.0 QA Combat Test Leather Gloves 2
-					i(109375),	-- 6.0 QA Combat Test Leather Helm
-					i(109388),	-- 6.0 QA Combat Test Leather Robes
-					i(109400),	-- 6.0 QA Combat Test Leather Chest 2
-					i(109414),	-- 6.0 QA Combat Test Leather Boots
-					i(109415),	-- 6.0 QA Combat Test Leather Bracer 2
 					i(109428),	-- 6.0 QA Combat Test Leather Belt 3
-					i(109432),	-- 6.0 QA Combat Test Leather Shoulders 3
-					i(109440),	-- 6.0 QA Combat Test Leather Chest 3
 					i(109444),	-- 6.0 QA Combat Test Leather Belt 4
+					i(109414),	-- 6.0 QA Combat Test Leather Boots
 					i(109469),	-- 6.0 QA Combat Test Leather Boots 3
-					i(109475),	-- 6.0 QA Combat Test Leather Legs 4
-					i(109479),	-- 6.0 QA Combat Test Leather Bracer 3
-					i(109486),	-- 6.0 QA Combat Test Leather Shoulders 4
-					i(109493),	-- 6.0 QA Combat Test Leather Gloves 2
 					i(109513),	-- 6.0 QA Combat Test Leather Boots 2
+					i(109264),	-- 6.0 QA Combat Test Leather Bracer
+					i(109415),	-- 6.0 QA Combat Test Leather Bracer 2
+					i(109479),	-- 6.0 QA Combat Test Leather Bracer 3
 					i(109547),	-- 6.0 QA Combat Test Leather Bracer 4
+					i(109345),	-- 6.0 QA Combat Test Leather Chest
+					i(109400),	-- 6.0 QA Combat Test Leather Chest 2
+					i(109440),	-- 6.0 QA Combat Test Leather Chest 3
+					i(109305),	-- 6.0 QA Combat Test Leather Gloves
+					i(109346),	-- 6.0 QA Combat Test Leather Gloves
+					i(109366),	-- 6.0 QA Combat Test Leather Gloves 2
+					i(109493),	-- 6.0 QA Combat Test Leather Gloves 2
+					i(109375),	-- 6.0 QA Combat Test Leather Helm
+					i(109287),	-- 6.0 QA Combat Test Leather Helm 2
+					i(109306),	-- 6.0 QA Combat Test Leather Helm 3
+					i(109347),	-- 6.0 QA Combat Test Leather Helm 4
+					i(109276),	-- 6.0 QA Combat Test Leather Legs
+					i(109307),	-- 6.0 QA Combat Test Leather Legs 2
+					i(109348),	-- 6.0 QA Combat Test Leather Legs 3
+					i(109475),	-- 6.0 QA Combat Test Leather Legs 4
+					i(109388),	-- 6.0 QA Combat Test Leather Robes
+					i(109308),	-- 6.0 QA Combat Test Leather Shoulders
+					i(109349),	-- 6.0 QA Combat Test Leather Shoulders 2
+					i(109432),	-- 6.0 QA Combat Test Leather Shoulders 3
+					i(109486),	-- 6.0 QA Combat Test Leather Shoulders 4
+					i(107203),	-- Lasso Bracers, Powerup
 				}),
 				tier(WOD_TIER, 0.2, {
 					i(116207),	-- 6.0 LFR - Highmaul Raid - UNUSED - Leather Belt 1
 				}),
 				tier(WOD_TIER, 0.3, {
+					-- Does Not Load In Game --
 					i(107337),	-- Practice Power Bracers
 				}),
 				n(P6xx, {
-					i(107864),	-- 7.0 PH Leather Vest
+					-- Does Not Load In Game --
+					i(107889),	-- 7.0 PH Leather Belt
 					i(107868),	-- 7.0 PH Leather Boots
+					i(107880),	-- 7.0 PH Leather Breeches
 					i(107869),	-- 7.0 PH Leather Gloves
 					i(107876),	-- 7.0 PH Leather Helm
-					i(107880),	-- 7.0 PH Leather Breeches
 					i(107882),	-- 7.0 PH Leather Spaulders
-					i(107889),	-- 7.0 PH Leather Belt
+					i(107864),	-- 7.0 PH Leather Vest
 					i(107893),	-- 7.0 PH Leather Wristwraps
 					i(120363),	-- 7.0 QA Combat Test Leather Boots 4
 				})
 			}),
 			filter(MAIL, {
 				tier(WOD_TIER, 0.1, {
-					i(114249),	-- Leafscale Bracers
-					i(114252),	-- Leafscale Chestguard
-					i(114257),	-- Leafscale Boots
-					i(114261),	-- Leafscale Gauntlets
-					i(114265),	-- Leafscale Helm
-					i(114269),	-- Leafscale Legguards
 					i(114277),	-- Leafscale Belt
-					i(107863),	-- 7.0 PH Mail Vest
-					i(107867),	-- 7.0 PH Mail Sabatons
+					i(114257),	-- Leafscale Boots
+					i(114249),	-- Leafscale Bracers
+					-- Does Not Load In Game --
+					i(109517),	-- 6.0 QA Combat Test Mail Chest 4
+					i(107888),	-- 7.0 PH Mail Belt
 					i(107872),	-- 7.0 PH Mail Gauntlets
 					i(107875),	-- 7.0 PH Mail Helm
 					i(107879),	-- 7.0 PH Mail Leggings
 					i(107885),	-- 7.0 PH Mail Monnion
-					i(107888),	-- 7.0 PH Mail Belt
+					i(107867),	-- 7.0 PH Mail Sabatons
+					i(107863),	-- 7.0 PH Mail Vest
 					i(107892),	-- 7.0 PH Mail Wristwraps
-					i(109265),	-- 7.0 QA Combat Test Mail Helm
-					i(109270),	-- 7.0 QA Combat Test Mail Legs 1
-					i(109280),	-- 7.0 QA Combat Test Mail Bracer 1
 					i(109313),	-- 7.0 QA Combat Test Mail Belt 1
-					i(109314),	-- 7.0 QA Combat Test Mail Chest 1
-					i(109315),	-- 7.0 QA Combat Test Mail Gloves 1
-					i(109316),	-- 7.0 QA Combat Test Mail Helm 2
-					i(109317),	-- 7.0 QA Combat Test Mail Legs 2
-					i(109318),	-- 7.0 QA Combat Test Mail Shoulders 1
-					i(109350),	-- 7.0 QA Combat Test Mail Chest 2
-					i(109351),	-- 7.0 QA Combat Test Mail Gloves 2
-					i(109352),	-- 7.0 QA Combat Test Mail Helm 3
-					i(109353),	-- 7.0 QA Combat Test Mail Legs 3
-					i(109354),	-- 7.0 QA Combat Test Mail Shoulders 2
 					i(109359),	-- 7.0 QA Combat Test Mail Belt 2
-					i(109371),	-- 7.0 QA Combat Test Mail Bracer 2
-					i(109382),	-- 7.0 QA Combat Test Mail Helm 4
+					i(109416),	-- 7.0 QA Combat Test Mail Belt 3
+					i(109488),	-- 7.0 QA Combat Test Mail Belt 4
 					i(109393),	-- 7.0 QA Combat Test Mail Boots 1
 					i(109396),	-- 7.0 QA Combat Test Mail Boots 2
-					i(109416),	-- 7.0 QA Combat Test Mail Belt 3
-					i(109425),	-- 7.0 QA Combat Test Mail Shoulders 3
 					i(109433),	-- 7.0 QA Combat Test Mail Boots 3
-					i(109441),	-- 7.0 QA Combat Test Mail Legs 4
-					i(109457),	-- 7.0 QA Combat Test Mail Gloves 3
-					i(109484),	-- 7.0 QA Combat Test Mail Shoulders 4
-					i(109488),	-- 7.0 QA Combat Test Mail Belt 4
-					i(109504),	-- 7.0 QA Combat Test Mail Gloves 4
-					i(109510),	-- 7.0 QA Combat Test Mail Chest 3
-					i(109517),	-- 6.0 QA Combat Test Mail Chest 4
 					i(109541),	-- 7.0 QA Combat Test Mail Boots 4
+					i(109280),	-- 7.0 QA Combat Test Mail Bracer 1
+					i(109371),	-- 7.0 QA Combat Test Mail Bracer 2
 					i(109543),	-- 7.0 QA Combat Test Mail Bracer 3
 					i(109548),	-- 7.0 QA Combat Test Mail Bracer 4
+					i(109314),	-- 7.0 QA Combat Test Mail Chest 1
+					i(109350),	-- 7.0 QA Combat Test Mail Chest 2
+					i(109510),	-- 7.0 QA Combat Test Mail Chest 3
+					i(109315),	-- 7.0 QA Combat Test Mail Gloves 1
+					i(109351),	-- 7.0 QA Combat Test Mail Gloves 2
+					i(109457),	-- 7.0 QA Combat Test Mail Gloves 3
+					i(109504),	-- 7.0 QA Combat Test Mail Gloves 4
+					i(109265),	-- 7.0 QA Combat Test Mail Helm
+					i(109316),	-- 7.0 QA Combat Test Mail Helm 2
+					i(109352),	-- 7.0 QA Combat Test Mail Helm 3
+					i(109382),	-- 7.0 QA Combat Test Mail Helm 4
+					i(109270),	-- 7.0 QA Combat Test Mail Legs 1
+					i(109317),	-- 7.0 QA Combat Test Mail Legs 2
+					i(109353),	-- 7.0 QA Combat Test Mail Legs 3
+					i(109441),	-- 7.0 QA Combat Test Mail Legs 4
+					i(109318),	-- 7.0 QA Combat Test Mail Shoulders 1
+					i(109354),	-- 7.0 QA Combat Test Mail Shoulders 2
+					i(109425),	-- 7.0 QA Combat Test Mail Shoulders 3
+					i(109484),	-- 7.0 QA Combat Test Mail Shoulders 4
 				}),
 				tier(WOD_TIER, 0.2, {
 					i(116031),	-- 6.0 LFR - Highmaul Raid - UNUSED - Mail Versatile Belt 1
@@ -748,113 +738,108 @@ root(ROOTS.NeverImplemented, {
 			filter(PLATE, {
 				tier(WOD_TIER, 0.1, {
 					i(114250),	-- Ruby Plate Bracers
-					i(114253),	-- Ruby Plate Breastplate
 					i(114258),	-- Ruby Plate Greaves
-					i(114262),	-- Ruby Plate Gauntlets
-					i(114266),	-- Ruby Plate Greathelm
-					i(114270),	-- Ruby Plate Legplates
-					i(114274),	-- Ruby Plate Shoulderguard
 					i(114278),	-- Ruby Plate Girdle
-					--
-					i(107985),	-- Draenic Steel Warboots
-					i(107986),	-- Draenic Steel Gauntlets
-					i(107987),	-- Draenic Steel Helm
-					i(107988),	-- Draenic Steel Legguards
-					i(107989),	-- Draenic Steel Shoulders
-					i(107990),	-- Draenic Steel Girdle
-					i(107991),	-- Draenic Steel Wristwraps
-					i(107992),	-- Draenic Steel Chestplate
-					i(107993),	-- Draenic Steel Warboots
-					i(107994),	-- Draenic Steel Gauntlets
-					i(107995),	-- Draenic Steel Helm
-					i(107996),	-- Draenic Steel Legguards
-					i(107997),	-- Draenic Steel Shoulders
-					i(107998),	-- Draenic Steel Girdle
-					i(107999),	-- Draenic Steel Wristwraps
-					i(108000),	-- Draenic Steel Chestplate
-					i(108001),	-- Draenic Steel Warboots
-					i(108002),	-- Draenic Steel Gauntlets
-					i(108003),	-- Draenic Steel Helm
-					i(108004),	-- Draenic Steel Legguards
-					i(108005),	-- Draenic Steel Shoulders
-					i(108006),	-- Draenic Steel Girdle
-					i(108007),	-- Draenic Steel Wristwraps
-					i(108008),	-- Draenic Steel Chestplate
-					i(108009),	-- Draenic Steel Warboots
-					i(108010),	-- Draenic Steel Gauntlets
-					i(108011),	-- Draenic Steel Helm
-					i(108012),	-- Draenic Steel Legguards
-					i(108013),	-- Draenic Steel Shoulders
-					i(108014),	-- Draenic Steel Girdle
-					i(108015),	-- Draenic Steel Wristwraps
-					i(108016),	-- Draenic Steel Chestplate
-					i(108017),	-- Draenic Steel Warboots
-					i(108018),	-- Draenic Steel Gauntlets
-					i(108019),	-- Draenic Steel Helm
-					i(108020),	-- Draenic Steel Legguards
-					i(108021),	-- Draenic Steel Shoulders
-					i(108022),	-- Draenic Steel Girdle
-					i(108023),	-- Draenic Steel Wristwraps
-					i(108024),	-- Draenic Steel Chestplate
-					i(108025),	-- Draenic Steel Warboots
-					i(108026),	-- Draenic Steel Gauntlets
-					i(108027),	-- Draenic Steel Helm
-					i(108028),	-- Draenic Steel Legguards
-					i(108029),	-- Draenic Steel Shoulders
-					i(108030),	-- Draenic Steel Girdle
-					i(108031),	-- Draenic Steel Wristwraps
-					i(108032),	-- Draenic Steel Chestplate
-					i(108033),	-- Draenic Steel Warboots
-					i(108034),	-- Draenic Steel Gauntlets
-					i(108035),	-- Draenic Steel Helm
-					i(108036),	-- Draenic Steel Legguards
-					i(108037),	-- Draenic Steel Shoulders
-					i(108038),	-- Draenic Steel Girdle
-					i(108039),	-- Draenic Steel Wristwraps
-					--
-					i(109268),	-- 7.0 QA Combat Test Plate Bracer 1
-					i(109275),	-- 7.0 QA Combat Test Plate Chest 1
-					i(109284),	-- 7.0 QA Combat Test Plate Shoulders 1
-					i(109289),	-- 7.0 QA Combat Test Plate Gloves 1
+					-- Does Not Load In Game --
 					i(109321),	-- 7.0 QA Combat Test Plate Belt 1
-					i(109322),	-- 7.0 QA Combat Test Plate Chest 2
-					i(109323),	-- 7.0 QA Combat Test Plate Gloves 2
-					i(109324),	-- 7.0 QA Combat Test Plate Helm 1
-					i(109325),	-- 7.0 QA Combat Test Plate Legs 1
-					i(109326),	-- 7.0 QA Combat Test Plate Shoulders 2
 					i(109327),	-- 7.0 QA Combat Test Plate Belt 2
-					i(109328),	-- 7.0 QA Combat Test Plate Chest 3
-					i(109329),	-- 7.0 QA Combat Test Plate Gloves 3
-					i(109330),	-- 7.0 QA Combat Test Plate Helm 2
-					i(109331),	-- 7.0 QA Combat Test Plate Legs 2
-					i(109332),	-- 7.0 QA Combat Test Plate Shoulders 3
 					i(109333),	-- 7.0 QA Combat Test Plate Belt 3
-					i(109334),	-- 7.0 QA Combat Test Plate Chest 4
-					i(109335),	-- 7.0 QA Combat Test Plate Gloves 4
-					i(109336),	-- 7.0 QA Combat Test Plate Helm 3
-					i(109337),	-- 7.0 QA Combat Test Plate Legs 3
-					i(109338),	-- 7.0 QA Combat Test Plate Shoulders 4
 					i(109372),	-- 7.0 QA Combat Test Plate Belt 4
-					i(109409),	-- 7.0 QA Combat Test Plate Bracer 2
-					i(109422),	-- 7.0 QA Combat Test Plate Bracer 3
-					i(109436),	-- 7.0 QA Combat Test Plate Bracer 4
-					i(109439),	-- 7.0 QA Combat Test Plate Helm 4
-					i(109450),	-- 7.0 QA Combat Test Plate Legs 4
 					i(109455),	-- 7.0 QA Combat Test Plate Boots
 					i(109461),	-- 7.0 QA Combat Test Plate Boots 2
 					i(109501),	-- 7.0 QA Combat Test Plate Boots 3
+					i(109268),	-- 7.0 QA Combat Test Plate Bracer 1
+					i(109409),	-- 7.0 QA Combat Test Plate Bracer 2
+					i(109422),	-- 7.0 QA Combat Test Plate Bracer 3
+					i(109436),	-- 7.0 QA Combat Test Plate Bracer 4
+					i(109275),	-- 7.0 QA Combat Test Plate Chest 1
+					i(109322),	-- 7.0 QA Combat Test Plate Chest 2
+					i(109328),	-- 7.0 QA Combat Test Plate Chest 3
+					i(109334),	-- 7.0 QA Combat Test Plate Chest 4
+					i(109289),	-- 7.0 QA Combat Test Plate Gloves 1
+					i(109323),	-- 7.0 QA Combat Test Plate Gloves 2
+					i(109329),	-- 7.0 QA Combat Test Plate Gloves 3
+					i(109335),	-- 7.0 QA Combat Test Plate Gloves 4
+					i(109324),	-- 7.0 QA Combat Test Plate Helm 1
+					i(109330),	-- 7.0 QA Combat Test Plate Helm 2
+					i(109336),	-- 7.0 QA Combat Test Plate Helm 3
+					i(109439),	-- 7.0 QA Combat Test Plate Helm 4
+					i(109325),	-- 7.0 QA Combat Test Plate Legs 1
+					i(109331),	-- 7.0 QA Combat Test Plate Legs 2
+					i(109337),	-- 7.0 QA Combat Test Plate Legs 3
+					i(109450),	-- 7.0 QA Combat Test Plate Legs 4
+					i(109284),	-- 7.0 QA Combat Test Plate Shoulders 1
+					i(109326),	-- 7.0 QA Combat Test Plate Shoulders 2
+					i(109332),	-- 7.0 QA Combat Test Plate Shoulders 3
+					i(109338),	-- 7.0 QA Combat Test Plate Shoulders 4
+					i(107992),	-- Draenic Steel Chestplate
+					i(108000),	-- Draenic Steel Chestplate
+					i(108008),	-- Draenic Steel Chestplate
+					i(108016),	-- Draenic Steel Chestplate
+					i(108024),	-- Draenic Steel Chestplate
+					i(108032),	-- Draenic Steel Chestplate
+					i(107986),	-- Draenic Steel Gauntlets
+					i(107994),	-- Draenic Steel Gauntlets
+					i(108002),	-- Draenic Steel Gauntlets
+					i(108010),	-- Draenic Steel Gauntlets
+					i(108018),	-- Draenic Steel Gauntlets
+					i(108026),	-- Draenic Steel Gauntlets
+					i(108034),	-- Draenic Steel Gauntlets
+					i(107990),	-- Draenic Steel Girdle
+					i(107998),	-- Draenic Steel Girdle
+					i(108006),	-- Draenic Steel Girdle
+					i(108014),	-- Draenic Steel Girdle
+					i(108022),	-- Draenic Steel Girdle
+					i(108030),	-- Draenic Steel Girdle
+					i(108038),	-- Draenic Steel Girdle
+					i(107987),	-- Draenic Steel Helm
+					i(107995),	-- Draenic Steel Helm
+					i(108003),	-- Draenic Steel Helm
+					i(108011),	-- Draenic Steel Helm
+					i(108019),	-- Draenic Steel Helm
+					i(108027),	-- Draenic Steel Helm
+					i(108035),	-- Draenic Steel Helm
+					i(107988),	-- Draenic Steel Legguards
+					i(107996),	-- Draenic Steel Legguards
+					i(108004),	-- Draenic Steel Legguards
+					i(108012),	-- Draenic Steel Legguards
+					i(108020),	-- Draenic Steel Legguards
+					i(108028),	-- Draenic Steel Legguards
+					i(108036),	-- Draenic Steel Legguards
+					i(107989),	-- Draenic Steel Shoulders
+					i(107997),	-- Draenic Steel Shoulders
+					i(108005),	-- Draenic Steel Shoulders
+					i(108013),	-- Draenic Steel Shoulders
+					i(108021),	-- Draenic Steel Shoulders
+					i(108029),	-- Draenic Steel Shoulders
+					i(108037),	-- Draenic Steel Shoulders
+					i(107985),	-- Draenic Steel Warboots
+					i(107993),	-- Draenic Steel Warboots
+					i(108001),	-- Draenic Steel Warboots
+					i(108009),	-- Draenic Steel Warboots
+					i(108017),	-- Draenic Steel Warboots
+					i(108025),	-- Draenic Steel Warboots
+					i(108033),	-- Draenic Steel Warboots
+					i(107991),	-- Draenic Steel Wristwraps
+					i(107999),	-- Draenic Steel Wristwraps
+					i(108007),	-- Draenic Steel Wristwraps
+					i(108015),	-- Draenic Steel Wristwraps
+					i(108023),	-- Draenic Steel Wristwraps
+					i(108031),	-- Draenic Steel Wristwraps
+					i(108039),	-- Draenic Steel Wristwraps
 				}),
 				tier(WOD_TIER, 0.2, {
 					i(116232),	-- 6.0 LFR - Highmaul Raid - UNUSED - Plate Versatile Belt 1
 				}),
 				n(P6xx, {
+					-- Does Not Load In Game --
 					i(107862),	-- 7.0 PH Plate Chestplate
-					i(107865),	-- 7.0 PH Plate Warboots
 					i(107870),	-- 7.0 PH Plate Gauntlets
+					i(107886),	-- 7.0 PH Plate Girdle
 					i(107873),	-- 7.0 PH Plate Helm
 					i(107877),	-- 7.0 PH Plate Legguards
 					i(107883),	-- 7.0 PH Plate Shoulders
-					i(107886),	-- 7.0 PH Plate Girdle
+					i(107865),	-- 7.0 PH Plate Warboots
 					i(107891),	-- 7.0 PH Plate Wristwraps
 				})
 			}),
@@ -865,66 +850,70 @@ root(ROOTS.NeverImplemented, {
 			}),
 			filter(NECK_F, {
 				tier(WOD_TIER, 0.1, {
+					-- Does Not Load In Game --
 					i(108812),	-- 6.0 PH Neck Agi
-					i(108818),	-- 6.0 PH Neck Str
 					i(108819),	-- 6.0 PH Neck Int
-					i(109267),	-- 6.0 QA Combat Test Healer Neck
-					i(109293),	-- 6.0 QA Combat Test Healer Neck 2
+					i(108818),	-- 6.0 PH Neck Str
 					i(109295),	-- 6.0 QA Combat Test Agility DPS Neck
-					i(109300),	-- 6.0 QA Combat Test Caster DPS Neck
 					i(109369),	-- 6.0 QA Combat Test Agility DPS Neck 2
 					i(109427),	-- 6.0 QA Combat Test Agility DPS Neck 3
+					i(109300),	-- 6.0 QA Combat Test Caster DPS Neck
 					i(109452),	-- 6.0 QA Combat Test Caster DPS Neck 2
 					i(109459),	-- 6.0 QA Combat Test Caster DPS Neck 3
 					i(109522),	-- 6.0 QA Combat Test Caster DPS Neck 4
+					i(109267),	-- 6.0 QA Combat Test Healer Neck
+					i(109293),	-- 6.0 QA Combat Test Healer Neck 2
 					i(109526),	-- 7.0 QA Combat Test Neck 4
 				}),
 			}),
 			filter(FINGER_F, {
 				tier(WOD_TIER, 0.1, {
+					-- Does Not Load In Game --
 					i(108813),	-- 6.0 PH Ring Agi
-					i(108820),	-- 6.0 PH Ring Str
 					i(108821),	-- 6.0 PH Ring Int
-					i(109277),	-- 7.0 QA Combat Test Ring 1
-					i(109365),	-- 6.0 QA Combat Test Caster DPS Ring
+					i(108820),	-- 6.0 PH Ring Str
 					i(109391),	-- 6.0 QA Combat Test Agility DPS Ring 2
-					i(109410),	-- 6.0 QA Combat Test Caster DPS Ring 2
 					i(109418),	-- 6.0 QA Combat Test Agility DPS Ring 3
+					i(109478),	-- 6.0 QA Combat Test Agility DPS Ring 4
+					i(109365),	-- 6.0 QA Combat Test Caster DPS Ring
+					i(109410),	-- 6.0 QA Combat Test Caster DPS Ring 2
 					i(109447),	-- 6.0 QA Combat Test Caster DPS Ring 3
 					i(109454),	-- 6.0 QA Combat Test Caster DPS Ring 4
-					i(109478),	-- 6.0 QA Combat Test Agility DPS Ring 4
 					i(109512),	-- 6.0 QA Combat Test Caster DPS Ring 5
+					i(109277),	-- 7.0 QA Combat Test Ring 1
 				}),
 				n(P6xx, {
+					-- Does Not Load In Game --
 					i(109516),	-- 7.0 QA Combat Test Ring 5
 				}),
 			}),
 			filter(TRINKET_F, {
 				tier(WOD_TIER, 0.1, {
 					i(114960),	-- Spires unused
+					-- Does Not Load In Game --
 					i(109263),	-- 6.0 QA Combat Test Agility DPS Trinket
-					i(109286),	-- 7.0 QA Combat Test Caster DPS Trinket 1
 					i(109360),	-- 6.0 QA Combat Test Agility DPS Trinket 2
-					i(109370),	-- 7.0 QA Combat Test Caster DPS Trinket 2
-					i(109376),	-- 6.0 QA Combat Test Strength DPS Trinket
-					i(109378),	-- 6.0 QA Combat Test Tank Trinket
 					i(109386),	-- 6.0 QA Combat Test Agility DPS Trinket 3
-					i(109394),	-- 6.0 QA Combat Test Tank Trinket 2
-					i(109403),	-- 6.0 QA Combat Test Strength DPS Trinket 2
-					i(109407),	-- 6.0 QA Combat Test Caster DPS Trinket 3
-					i(109413),	-- 7.0 QA Combat Test Caster DPS Trinket 4
 					i(109442),	-- 6.0 QA Combat Test Agility DPS Trinket 4
+					i(109407),	-- 6.0 QA Combat Test Caster DPS Trinket 3
+					i(109376),	-- 6.0 QA Combat Test Strength DPS Trinket
+					i(109403),	-- 6.0 QA Combat Test Strength DPS Trinket 2
 					i(109446),	-- 6.0 QA Combat Test Strength DPS Trinket 3
 					i(109467),	-- 6.0 QA Combat Test Strength DPS Trinket 4
+					i(109378),	-- 6.0 QA Combat Test Tank Trinket
+					i(109394),	-- 6.0 QA Combat Test Tank Trinket 2
 					i(109480),	-- 6.0 QA Combat Test Tank Trinket 3
 					i(109495),	-- 6.0 QA Combat Test Tank Trinket 4
 					i(109515),	-- 6.0 QA Combat Test Tank Trinket 5
-					i(113017),	-- 7.0 QRP Template PH Int Trinket #2
-					i(113018),	-- 7.0 QRP Template PH Str Trinket #1
-					i(113019),	-- 7.0 QRP Template PH Str Trinket #2
+					i(109286),	-- 7.0 QA Combat Test Caster DPS Trinket 1
+					i(109370),	-- 7.0 QA Combat Test Caster DPS Trinket 2
+					i(109413),	-- 7.0 QA Combat Test Caster DPS Trinket 4
 					i(113020),	-- 7.0 QRP Template PH Agi Trinket #1
 					i(113021),	-- 7.0 QRP Template PH Agi Trinket #2
 					i(113022),	-- 7.0 QRP Template PH Int Trinket #1
+					i(113017),	-- 7.0 QRP Template PH Int Trinket #2
+					i(113018),	-- 7.0 QRP Template PH Str Trinket #1
+					i(113019),	-- 7.0 QRP Template PH Str Trinket #2
 				}),
 				tier(WOD_TIER, 2.0, {
 					i(124870),	-- Wild Gladiator's Accolade of Conquest
