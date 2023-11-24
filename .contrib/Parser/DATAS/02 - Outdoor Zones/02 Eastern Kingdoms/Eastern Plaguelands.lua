@@ -771,12 +771,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						crit(17428, {	-- Beezil Linkspanner
 							["description"] = "Collect all other travelers, then speak to Beezil at Light Hope's Chapel.",
-							["groups"] = {
-								n(46022, {	-- Beezil Linkspanner
-									["questID"] = 27563,
-									["coord"] = { 73.8, 52.4, EASTERN_PLAGUELANDS },
-								}),
-							},
+							["_npcs"] = { 46022 },	-- Beezil Linkspanner
 						}),
 					},
 				}),
@@ -3461,6 +3456,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				n(46022, {	-- Beezil Linkspanner
+					["sourceQuest"] = 27449,	-- Honor and Strength
+					["coord"] = { 73.8, 52.4, EASTERN_PLAGUELANDS },
+				}),
 				n(12941, {	-- Jase Farlane <Trade Supplies>
 					-- #if AFTER CATA
 					["coord"] = { 74.3, 50.9, EASTERN_PLAGUELANDS },
@@ -3884,6 +3883,7 @@ root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { "added 4.0.3" } },
 		q(27552),	-- Triggers on changing buffs at Fiona's Caravan
 		q(27553),	-- Triggers on changing buffs at Fiona's Caravan
 		q(27554),	-- Triggers on changing buffs at Fiona's Caravan
+		q(27563),	-- [FLAG] Beezil's Flag
 	}),
 })));
 -- #endif
