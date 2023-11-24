@@ -689,7 +689,7 @@ crit = function(criteriaUID, t)							-- Create an Achievement Criteria Object (
 	end
 	if t.groups or t.g and #(t.groups or t.g) > 0 then
 		-- TODO: make this an error once cleaned up
-		-- print(table.concat({"Do not nest content inside Achievement Criteria:",criteriaUID}))
+		print(table.concat({"WARN: Do not nest content (g/groups) inside Achievement Criteria:",criteriaUID}))
 	end
 			if t.achievementID then
 				-- print(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaUID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
