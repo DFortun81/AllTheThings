@@ -7472,20 +7472,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 });
 -- #endif
-
--- #if AFTER 3.3.3.11723
-root(ROOTS.NeverImplemented, {
-	tier(WOTLK_TIER, {
-		n(ARMOR, {
-			filter(NECK_F, {
-				i(49314, {	-- Sparkling Onyxia Tooth Pendant
-					["timeline"] = { "created 3.3.3.11723" },
-				}),
-				i(49312, {	-- Purified Onyxia Blood Talisman
-					["timeline"] = { "created 3.3.3.11723" },
-				}),
-			}),
-		}),
-	}),
-});
--- #endif

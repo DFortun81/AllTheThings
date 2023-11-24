@@ -1,11 +1,7 @@
 -- Build NYI
 root(ROOTS.NeverImplemented, {
-	tier(CLASSIC_TIER),
-	tier(TBC_TIER),
-	tier(WOTLK_TIER),
 	tier(CATA_TIER),
 	tier(MOP_TIER),
-	tier(WOD_TIER),
 	tier(LEGION_TIER),
 	tier(BFA_TIER),
 	tier(SL_TIER),
@@ -14,9 +10,6 @@ root(ROOTS.NeverImplemented, {
 	n(ARMOR),
 	filter(BAGS),
 	filter(BATTLE_PETS),			-- completed up to 10.1.5
-	-- #if AFTER CATA
-	n(CLASS_TRIAL),					-- completed up to 10.1.0
-	-- #endif
 	filter(CONSUMABLES),
 	n(FACTIONS),
 	n(FLIGHT_PATHS),				-- completed up to 10.1.0
@@ -31,9 +24,6 @@ root(ROOTS.NeverImplemented, {
 	-- #endif
 	filter(MISC),
 	filter(MOUNTS),					-- completed up to 10.1.5
-	n(PARTY_SYNC, {					-- completed up to 9.2.5
-		["timeline"] = { "added 8.2.5" },
-	}),
 	n(PROFESSIONS, {
 		prof(ALCHEMY),
 		prof(ARCANA_MANIPULATION),	-- completed up to 10.1.5

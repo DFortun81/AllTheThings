@@ -1080,24 +1080,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(42580),	-- Shaman Shrine - Stormheim Wind 01
 	}),
 });
-root(ROOTS.NeverImplemented, {
-	tier(LEGION_TIER, {
-		n(ARMOR, {
-			filter(CLOTH, {
-				i(121507),	-- Runespeaker's Crown
-				i(121511),	-- Runespeaker's Leggings
-			}),
-			filter(LEATHER, {
-				i(121509),	-- Runesworn Crown
-				i(121513),	-- Runesworn Breeches
-			}),
-			filter(MAIL, {
-				i(121508),	-- Stormborn Crown
-				i(121512),	-- Stormborn Leggings
-			}),
-			filter(PLATE, {
-				i(121506),	-- Dreadsworn Crown
-			}),
-		}),
-	}),
-});

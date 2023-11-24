@@ -597,12 +597,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(45396),	-- Mana Devourer Kill
 	}),
 });
-root(ROOTS.NeverImplemented, {
-	tier(LEGION_TIER, {
-		n(ARMOR, {
-			filter(CLOTH, {
-				i(142214),	-- 7.1 Dungeon - Karazhan - Cloth SHOULDER 2
-			}),
-		}),
-	}),
-});

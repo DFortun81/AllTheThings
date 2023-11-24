@@ -2,6 +2,7 @@
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, {
+	-- TODO: Sort this file
 	n(WEAPONS, {
 		filter(BOWS, {
 			tier(CLASSIC_TIER, {
@@ -744,5 +745,127 @@ root(ROOTS.NeverImplemented, {
 			i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1
 			i(210961),	-- Alara'shinu
 		})),
+	}),
+	n(WEAPONS, {
+		i(77559),	-- Replica Grand Marshal's left Hand Blade
+		i(77583),	-- Replica High Warlords Left Claw
+		i(77588),	-- Replica High Warlord's Quickblade
+		i(77586),	-- Replica High Warlord's Spellblade
+		i(77570),	-- Replica High Warlord's Battle Mace
+		i(77587),	-- Replica High Warlord's Destroyer
+		i(32187),	-- Chancellor's Heavy Crossbow
+		i(32188),	-- Chancellor's Fleshslicer
+		i(32189),	-- Chancellor's Ripper
+		i(32191),	-- Chancellor's Battletome
+		i(32185),	-- Chancellor's War Staff
+		i(32178),	-- Chancellor's Shanker
+		i(32184),	-- Chancellor's Painsaw
+		i(32181),	-- Chancellor's Bonegrinder
+		i(32174),	-- Chancellor's Cleaver
+		i(32182),	-- Chancellor's Decapitator
+		i(32177),	-- Chancellor's Quickblade
+		i(32180),	-- Chancellor's Slicer
+		i(32192),	-- Chancellor's Barricade
+		i(32175),	-- Chancellor's Hacker
+		i(32190),	-- Chancellor's Spellblade
+		i(32183),	-- Chancellor's Maul
+		i(32186),	-- Chancellor's Warblade
+		i(32173),	-- Chancellor's Bonecracker
+		i(32176),	-- Chancellor's Pummeler
+		i(32179),	-- Chancellor's Shiv
+		i(23458),	-- High Warlord's Spellblade
+		i(23462),	-- High Warlord's Tome of Destruction
+		i(23463),	-- High Warlord's Tome of Mending
+		i(23457),	-- High Warlord's Destroyer
+		i(23461),	-- High Warlord's Quickblade
+		i(23459),	-- High Warlord's Battle Mace
+		i(120272),	-- High Warlord's Razor
+		i(120273),	-- High Warlord's Razor
+	}),
+	n(WEAPONS, {
+		tier(WOTLK_TIER, {
+			n(SEASON_DEADLY, {
+				-- #if NOT ANYCLASSIC
+				i(42444),	-- Savage Gladiator's War Edge (Throw Wep)
+				-- #endif
+				i(42523),	-- Savage Gladiator's Endgame
+				i(42529),	-- Savage Gladiator's Reprieve
+				i(42535),	-- Savage Gladiator's Grimoire
+				-- #if NOT ANYCLASSIC
+				i(42574),	-- Savage Gladiator's Idol of Resolve
+				i(42575),	-- Savage Gladiator's Idol of Steadfastness
+				i(42576),	-- Savage Gladiator's Idol of Tenacity
+				i(42611),	-- Savage Gladiator's Libram of Fortitude
+				i(42612),	-- Savage Gladiator's Libram of Justice
+				i(42618),	-- Savage Gladiator's Sigil of Strife
+				i(42593),	-- Savage Gladiator's Totem of Indomitability
+				i(42594),	-- Savage Gladiator's Totem of Survival
+				i(42595),	-- Savage Gladiator's Totem of the Third Wind
+				-- #endif
+			}),
+		}),
+		tier(WOD_TIER, {
+			n(SEASON_PRIMAL, {
+				i(180460),	-- Primal Combatant's Decapitator
+				i(111076),	-- Primal Gladiator's Staff (H), none elite
+				i(115603),	-- Primal Gladiator's Staff (A), none elite
+				i(115854),	-- Primal Gladiator's Staff
+				i(111073),	-- Primal Gladiator's Heavy Crossbow
+				i(115600),	-- Primal Gladiator's Heavy Crossbow
+			}),
+			--
+			i(114946),	-- Admiral Taylor's Spellguard
+			i(119408),	-- Foereaver Polearm
+			i(117994),	-- RENAME Karabor Honor Guard Axe
+			i(117993),	-- RENAME Rangari Boot Knife
+		}),
+		tier(LEGION_TIER, {
+			n(ARTIFACTS, {
+				i(137661),	-- Truthguard
+				i(136593),	-- Doomhammer Offhand Appearance Record (referenced by actual item)
+				i(134562),	-- Odyns Fury
+				i(139439),	-- The Highkeeper's Ward
+				i(132474),	-- Scythe of Elune
+				i(132475),	-- Scythe of Elune
+				i(132476),	-- Scythe of Elune
+				i(132477),	-- Scythe of Elune
+				i(132478),	-- Scythe of Elune
+				i(132479),	-- G'Hanir, the Mother Tree
+				i(132480),	-- G'Hanir, the Mother Tree
+				i(132481),	-- G'Hanir, the Mother Tree
+				i(132482),	-- G'Hanir, the Mother Tree
+				i(132483),	-- G'Hanir, the Mother Tree
+				i(118180),	-- Aluneth
+				i(129752),	-- Aluneth
+				i(129753),	-- Aluneth
+				i(129754),	-- Aluneth
+				i(129755),	-- Aluneth
+				i(129967),	-- Sheilun
+				i(129968),	-- Sheilun
+				i(129969),	-- Sheilun
+				i(129970),	-- Sheilun
+				i(136858),	-- Darkened T'uure
+				i(139275),	-- Aluneth
+				i(139891),	-- Aluneth
+				i(137660),	-- The Silver Hand
+				i(137581),	-- Test Artifact 1
+				i(139621),	-- The Watcher's Hammer. Used for Lost Edicts of the Watcher Paladin Appearance, actual appearance is gained via a different item
+				i(137582),	-- Ashbringer
+				i(131738),	-- Ashbringer
+				i(131739),	-- Ashbringer
+				i(131741),	-- Ashbringer
+				i(131742),	-- Ashbringer
+				i(122747),	-- Ashbringer
+				i(129738),	-- Verus
+				i(129735),	-- Verus
+				i(129736),	-- Verus
+				i(129737),	-- Verus
+				i(129899),	-- The Eagle Spear
+				i(128824),	-- Tome of the Silver Hand
+			}),
+			i(150611),	-- Guardian's Oaken Spear
+			i(150584),	-- Pike of Feral Rage
+			i(150613),	-- Survivalist's Hunting Spear
+		}),
 	}),
 });

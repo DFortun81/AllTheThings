@@ -1317,14 +1317,3 @@ root(ROOTS.Zones, {
 		}),
 	})),
 });
-
-root(ROOTS.NeverImplemented, {
-	tier(WOTLK_TIER, {
-		n(ARMOR, {
-			filter(TRINKET_F, {
-				i(44869),	-- Frenzyheart Insignia of Fury
-				i(44870),	-- Oracle Talisman of Ablution
-			}),
-		}),
-	}),
-});

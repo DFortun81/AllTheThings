@@ -838,11 +838,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(43447),	-- Vignette: Wraithtalon - secondary trigger for Wraithtalon rare in Val'sharah
 	}),
 });
-
-root(ROOTS.NeverImplemented, {
-	tier(LEGION_TIER, {
-		n(RELICS, {
-			i(130162),	-- Val-Sharah Artifact Gem #1 [Holy]
-		}),
-	}),
-});

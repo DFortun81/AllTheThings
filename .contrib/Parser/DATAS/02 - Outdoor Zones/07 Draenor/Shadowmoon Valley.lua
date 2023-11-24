@@ -1856,22 +1856,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(49544),	-- triggers after handing in "Hero's Call: Shadowmoon Valley!" (questID 49562)
 	}),
 });
-root(ROOTS.NeverImplemented, {
-	tier(WOD_TIER, {
-		n(WEAPONS, {
-			i(117994),	-- RENAME Karabor Honor Guard Axe
-			i(117993),	-- RENAME Rangari Boot Knife
-		}),
-	}),
-});
-root(ROOTS.NeverImplemented, {
-	tier(WOD_TIER, {
-		n(ARMOR, {
-			n(BACK, {
-				i(117494),	-- Windfang Drape
-				i(117495),	-- Windfang Greatcloak
-				i(117496),	-- Windfang Cloak
-			}),
-		}),
-	}),
-});

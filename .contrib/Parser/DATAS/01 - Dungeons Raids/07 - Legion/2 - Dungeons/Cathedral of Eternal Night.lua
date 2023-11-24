@@ -180,16 +180,3 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		},
 	}),
 }));
-
-root(ROOTS.NeverImplemented, {
-	tier(LEGION_TIER, {
-		inst(900, {	-- Cathedral of Eternal Night
-			d(HEROIC_DUNGEON, {
-				i(147514),	-- Felguard Destroyer's Legplates
-				i(147515),	-- Hellblaze Invader's Greaves
-				i(147517),	-- Inquisitor's Battle Cowl
-				i(147516),	-- Legion Stalker's Hood
-			}),
-		}),
-	}),
-});

@@ -2291,10 +2291,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(37314),	-- Trading Post - Trading Post selected (H)
 	}),
 });
-root(ROOTS.NeverImplemented, {
-	tier(WOD_TIER, {
-		n(WEAPONS, {
-			i(114946),	-- Admiral Taylor's Spellguard
-		}),
-	}),
-});

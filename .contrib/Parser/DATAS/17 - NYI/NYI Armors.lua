@@ -4,8 +4,8 @@
 -- Everything in this file hasn't been implemented yet.
 
 root(ROOTS.NeverImplemented, {
-	tier(CLASSIC_TIER, {
-		n(ARMOR, {
+	n(ARMOR, {
+		tier(CLASSIC_TIER, {
 			n(BACK, {
 				i(22230),	-- Frightmaw Hide
 			}),
@@ -79,9 +79,7 @@ root(ROOTS.NeverImplemented, {
 				i(20525),	-- Earthen Sigil
 			}),
 		}),
-	}),
-	tier(TBC_TIER, {
-		n(ARMOR, {
+		tier(TBC_TIER, {
 			n(BACK, {
 				n(P2xx, {
 					i(28045),	-- Cloak of the Demon Stalker
@@ -174,9 +172,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-	}),
-	tier(WOTLK_TIER, {
-		n(ARMOR, {
+		tier(WOTLK_TIER, {
 			n(BACK, {
 				n(P3xx, {
 					i(37174),	-- Rippling Azure Cloak
@@ -266,6 +262,10 @@ root(ROOTS.NeverImplemented, {
 					i(44391),	-- Cast Steel Choker
 					i(44392),	-- Necklace of Permeation
 				}),
+				tier(WOTLK_TIER, 3.3, {
+					i(49312),	-- Purified Onyxia Blood Talisman
+					i(49314),	-- Sparkling Onyxia Tooth Pendant
+				}),
 				n(P3xx, {
 					i(33197),	-- Mossy Necklace
 					--
@@ -286,6 +286,10 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 			filter(TRINKET_F, {
+				tier(WOTLK_TIER, 1.0, {
+					i(44869),	-- Frenzyheart Insignia of Fury
+					i(44870),	-- Oracle Talisman of Ablution
+				}),
 				n(P3xx, {
 					i(38572),	-- Bounty Procurement Enhancer
 					i(39819),	-- Bloodbinder's Runestone
@@ -297,9 +301,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-	}),
-	tier(CATA_TIER, {
-		n(ARMOR, {
+		tier(CATA_TIER, {
 			cl(ROGUE, {
 				tier(CATA_TIER, 0.3, {
 					i(54692),	-- Armor of Thero-Shan
@@ -337,6 +339,7 @@ root(ROOTS.NeverImplemented, {
 					i(57528),	-- Hogger's Mangy Handgrips
 					i(60728),	-- Keeshan's Burlap Vest
 					i(65746),	-- Leggings of Valorous Defense
+					i(47102),	-- Manaweave Robe
 				}),
 			}),
 			filter(LEATHER, {
@@ -514,9 +517,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-	}),
-	tier(MOP_TIER, {
-		n(ARMOR, {
+		tier(MOP_TIER, {
 			filter(PLATE, {
 				tier(MOP_TIER, 0.1, {
 					i(81709),	-- Belt of Broken Bones
@@ -530,9 +531,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-	}),
-	tier(WOD_TIER, {
-		n(ARMOR, {
+		tier(WOD_TIER, {
 			n(BACK, {
 				tier(WOD_TIER, 0.1, {
 					i(112230),	-- Storm Scale Cloak
@@ -562,6 +561,10 @@ root(ROOTS.NeverImplemented, {
 					i(109453),	-- 7.0 QA Combat Test Cloak 2
 					i(109496),	-- 7.0 QA Combat Test Cloak 4
 					i(109538),	-- 7.0 QA Combat Test Cloak 3
+					--
+					i(117494),	-- Windfang Drape
+					i(117495),	-- Windfang Greatcloak
+					i(117496),	-- Windfang Cloak
 				}),
 			}),
 			filter(CLOTH, {
@@ -670,6 +673,9 @@ root(ROOTS.NeverImplemented, {
 					i(109513),	-- 6.0 QA Combat Test Leather Boots 2
 					i(109547),	-- 6.0 QA Combat Test Leather Bracer 4
 				}),
+				tier(WOD_TIER, 0.2, {
+					i(116207),	-- 6.0 LFR - Highmaul Raid - UNUSED - Leather Belt 1
+				}),
 				tier(WOD_TIER, 0.3, {
 					i(107337),	-- Practice Power Bracers
 				}),
@@ -734,6 +740,9 @@ root(ROOTS.NeverImplemented, {
 					i(109541),	-- 7.0 QA Combat Test Mail Boots 4
 					i(109543),	-- 7.0 QA Combat Test Mail Bracer 3
 					i(109548),	-- 7.0 QA Combat Test Mail Bracer 4
+				}),
+				tier(WOD_TIER, 0.2, {
+					i(116031),	-- 6.0 LFR - Highmaul Raid - UNUSED - Mail Versatile Belt 1
 				}),
 			}),
 			filter(PLATE, {
@@ -835,6 +844,9 @@ root(ROOTS.NeverImplemented, {
 					i(109461),	-- 7.0 QA Combat Test Plate Boots 2
 					i(109501),	-- 7.0 QA Combat Test Plate Boots 3
 				}),
+				tier(WOD_TIER, 0.2, {
+					i(116232),	-- 6.0 LFR - Highmaul Raid - UNUSED - Plate Versatile Belt 1
+				}),
 				n(P6xx, {
 					i(107862),	-- 7.0 PH Plate Chestplate
 					i(107865),	-- 7.0 PH Plate Warboots
@@ -914,11 +926,31 @@ root(ROOTS.NeverImplemented, {
 					i(113021),	-- 7.0 QRP Template PH Agi Trinket #2
 					i(113022),	-- 7.0 QRP Template PH Int Trinket #1
 				}),
+				tier(WOD_TIER, 2.0, {
+					i(124870),	-- Wild Gladiator's Accolade of Conquest
+					i(125044),	-- Wild Combatant's Accolade of Conquest
+					i(125347),	-- Wild Gladiator's Accolade of Conquest
+					i(125521),	-- Wild Combatant's Accolade of Conquest
+					i(124871),	-- Wild Gladiator's Accolade of Dominance
+					i(125045),	-- Wild Combatant's Accolade of Dominance
+					i(125348),	-- Wild Gladiator's Accolade of Dominance
+					i(125522),	-- Wild Combatant's Accolade of Dominance
+					i(124874),	-- Wild Gladiator's Accolade of Endurance
+					i(125048),	-- Wild Combatant's Accolade of Endurance
+					i(125351),	-- Wild Gladiator's Accolade of Endurance
+					i(125525),	-- Wild Combatant's Accolade of Endurance
+					i(124873),	-- Wild Gladiator's Accolade of Meditation
+					i(125047),	-- Wild Combatant's Accolade of Meditation
+					i(125350),	-- Wild Gladiator's Accolade of Meditation
+					i(125524),	-- Wild Combatant's Accolade of Meditation
+					i(124872),	-- Wild Gladiator's Accolade of Victory
+					i(125046),	-- Wild Combatant's Accolade of Victory
+					i(125349),	-- Wild Gladiator's Accolade of Victory
+					i(125523),	-- Wild Combatant's Accolade of Victory
+				}),
 			}),
 		}),
-	}),
-	tier(LEGION_TIER, {
-		n(ARMOR, {
+		tier(LEGION_TIER, {
 			cl(ROGUE, {
 				tier(LEGION_TIER, 0.3, {
 					i(130327),	-- Artful Britches
@@ -945,28 +977,57 @@ root(ROOTS.NeverImplemented, {
 			}),
 			filter(CLOTH, {
 				tier(LEGION_TIER, 0.3, {
-					i(138420),	-- Pilfered Ettin String
 					i(134017),	-- Don Carlos' Famous Hat
+					i(138420),	-- Pilfered Ettin String
+					i(121507),	-- Runespeaker's Crown
+					i(121511),	-- Runespeaker's Leggings
+				}),
+				tier(LEGION_TIER, 2.0, {
+					i(147517, {["modID"] = 2 }),	-- Inquisitor's Battle Cowl
 				}),
 				tier(LEGION_TIER, 3.0, {
 					i(153289),	-- Eredar Priestess' Tunic
 				}),
+				tier(LEGION_TIER, 3.5, {
+					i(142214),	-- 7.1 Dungeon - Karazhan - Cloth SHOULDER 2
+				}),
 			}),
 			filter(LEATHER, {
 				tier(LEGION_TIER, 0.3, {
-					i(129127),	-- Ebon Stalker's Boots
 					i(129046),	-- 7.0 PH Leather Helm
+					i(129127),	-- Ebon Stalker's Boots
+					i(121509),	-- Runesworn Crown
+					i(121513),	-- Runesworn Breeches
+				}),
+				tier(LEGION_TIER, 2.0, {
+					i(147516, {["modID"] = 2 }),	-- Legion Stalker's Hood
 				}),
 			}),
 			filter(MAIL, {
 				tier(LEGION_TIER, 0.3, {
 					i(129152),	-- Boulderfall Stompers
+					i(121508),	-- Stormborn Crown
+					i(121512),	-- Stormborn Leggings
+				}),
+				tier(LEGION_TIER, 2.0, {
+					i(147515, {["modID"] = 2 }),	-- Hellblaze Invader's Greaves
 				}),
 				tier(LEGION_TIER, 2.5, {
 					i(140011),	-- Duskwatch Adjudicator's Pauldrons
 				}),
 				tier(LEGION_TIER, 3.0, {
 					i(152745),	-- REUSE ME
+				}),
+			}),
+			filter(PLATE, {
+				tier(LEGION_TIER, 0.3, {
+					i(121506),	-- Dreadsworn Crown
+				}),
+				tier(LEGION_TIER, 1.0, {
+					i(138489),	-- Kargath's Sacrified Hands
+				}),
+				tier(LEGION_TIER, 2.0, {
+					i(147514, {["modID"] = 2 }),	-- Felguard Destroyer's Legplates
 				}),
 			}),
 			filter(COSMETIC, {
@@ -999,6 +1060,9 @@ root(ROOTS.NeverImplemented, {
 					i(134599),	-- Vanguard Choker
 					i(134597),	-- Vanguard Necklace
 					i(134598),	-- Vanguard Pendant
+				}),
+				tier(LEGION_TIER, 3.0, {
+					i(153484),	-- Fierce Combatant's Necklace
 				}),
 				tier(LEGION_TIER, 3.5, {
 					i(157750),	-- Pendant of Good Fortune
@@ -1052,10 +1116,15 @@ root(ROOTS.NeverImplemented, {
 					i(150367),	-- Test Trinket
 				}),
 			}),
+			n(RELICS, {
+				tier(LEGION_TIER, 0.3, {
+					i(133018),	-- Azsuna Package 3 - Holy 1 - Unused
+					i(138229),	-- Nightmare Boss 3 Relic Storm
+					i(130162),	-- Val-Sharah Artifact Gem #1 [Holy]
+				}),
+			}),
 		}),
-	}),
-	tier(BFA_TIER, {
-		n(ARMOR, {
+		tier(BFA_TIER, {
 			d(TIMEWALKING_DUNGEON, {
 				tier(LEGION_TIER, 2.5, {
 					i(150450),	-- Nether Shadow Tunic
@@ -1413,6 +1482,7 @@ root(ROOTS.NeverImplemented, {
 					i(154981),	-- Shimmering Rune
 					i(158513),	-- Shimmering Rune
 					i(158572),	-- Shimmering Rune
+					i(157766),	-- Vial of Nightmare Fog
 				}),
 				tier(BFA_TIER, 2.5, {
 					i(171528),	-- Reign of the Dead
@@ -1427,9 +1497,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-	}),
-	tier(SL_TIER, {
-		n(ARMOR, {
+		tier(SL_TIER, {
 			n(BACK, {
 				tier(SL_TIER, 0.1, {
 					i(169822),	-- Flowing Cloak
@@ -1508,6 +1576,9 @@ root(ROOTS.NeverImplemented, {
 			filter(LEATHER, {
 				tier(SL_TIER, 0.1, {
 					i(178148),	-- 9.0 Dungeon - PH Item
+					i(180559),	-- Boots of Endless Betrayal
+					i(180565),	-- Lifeless Buckled Girdle
+					i(180618),	-- Stained Maggot Squishers
 					i(178305),	-- unused
 				}),
 				tier(SL_TIER, 2.0, {
@@ -2093,9 +2164,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-	}),
-	tier(DF_TIER, {
-		n(ARMOR, {
+		tier(DF_TIER, {
 			n(BACK, {
 				-- 10.0.0
 				tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {

@@ -12973,13 +12973,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(47408),	-- Fierce Gladiator's Chain Armor (Hunter)
 	}),
 });
--- #endif
-root(ROOTS.NeverImplemented, {
-	tier(LEGION_TIER, {
-		n(SEASON_FIERCE, {
-			filter(NECK_F, {
-				i(153484),	-- Fierce Combatant's Necklace
-			}),
-		}),
-	}),
-});
