@@ -931,10 +931,132 @@ root(ROOTS.Zones, {
 						crit(24129),	-- Southsea Firebrew
 					}),
 					ach(8729, {	-- Treasure, Treasure Everywhere
-						-- TODO: This is a nested criteria tree that will need a way to get names for the bottom level to display correctly. Each criteria seems to correspond to a treasure, so maybe link them up that way?
-						crit(1),	-- 17/17 Moss-Covered Chests
-						crit(4),	-- 4/4 Sturdy Chests
-						crit(5),	-- 2/2 Smoldering Chests
+						crit(24083, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223204 },
+						}),
+						crit(24084, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223115 },
+						}),
+						crit(24085, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223114 },
+						}),
+						crit(24086, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223113 },
+						}),
+						crit(24087, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223112 },
+						}),
+						crit(24088, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223111 },
+						}),
+						crit(24089, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223110 },
+						}),
+						crit(24090, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223109 },
+						}),
+						crit(24091, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223108 },
+						}),
+						crit(24092, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223107 },
+						}),
+						crit(24093, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223106 },
+						}),
+						crit(24094, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223105 },
+						}),
+						crit(24095, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223104 },
+						}),
+						crit(24096, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223103 },
+						}),
+						crit(24097, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223102 },
+						}),
+						crit(24098, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223101 },
+						}),
+						crit(24099, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223100 },
+						}),
+						crit(24100, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223099 },
+						}),
+						crit(24101, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223098 },
+						}),
+						crit(24102, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223097 },
+						}),
+						crit(24103, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223096 },
+						}),
+						crit(24104, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223095 },
+						}),
+						crit(24105, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223094 },
+						}),
+						crit(24106, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223093 },
+						}),
+						crit(24107, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223092 },
+						}),
+						crit(24108, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223091 },
+						}),
+						crit(24109, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223090 },
+						}),
+						crit(24110, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223089 },
+						}),
+						crit(24111, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223088 },
+						}),
+						crit(24112, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223087 },
+						}),
+						crit(24113, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223086 },
+						}),
+						crit(24114, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223085 },
+						}),
+						crit(24115, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 223084 },
+						}),
+						crit(24116, {	-- 17/17 Moss-Covered Chests
+							["provider"] = { "o", 221670 },
+						}),
+						crit(24117, {	-- 1/1 Skull-Covered Chest
+							["provider"] = { "o", 221617 },
+						}),
+						crit(24118, {	-- 1/1 Blazing Chest
+							["provider"] = { "o", 221673 },
+						}),
+						crit(24119, {	-- 4/4 Sturdy Chests
+							["provider"] = { "o", 223118 },
+						}),
+						crit(24120, {	-- 4/4 Sturdy Chests
+							["provider"] = { "o", 223117 },
+						}),
+						crit(24121, {	-- 4/4 Sturdy Chests
+							["provider"] = { "o", 223116 },
+						}),
+						crit(24122, {	-- 4/4 Sturdy Chests
+							["provider"] = { "o", 221671 },
+						}),
+						crit(24123, {	-- 2/2 Smoldering Chests
+							["provider"] = { "o", 223119 },
+						}),
+						crit(24124, {	-- 2/2 Smoldering Chests
+							["provider"] = { "o", 221672 },
+						}),
 					}),
 					ach(8727),	-- Where There's Pirates, There's Booty
 				}),
@@ -1521,9 +1643,6 @@ root(ROOTS.Zones, {
 						["questID"] = 33210,  -- One-Time Chest - Blazing Chest
 						["coord"] = { 47.3, 26.9, TIMELESS_ISLE },
 						["g"] = {
-							crit(3, {	-- 1/1 Blazing Chest
-								["achievementID"] = 8729,	-- Treasure, Treasure Everywhere
-							}),
 							i(103982),	-- Burden of Eternity
 						},
 					}),
@@ -1713,9 +1832,7 @@ root(ROOTS.Zones, {
 						["questID"] = 33203,
 						["coord"] = { 62.9, 35.3, 555 },	-- Cavern of Lost Spirits
 						["g"] = {
-							crit(24117, {	-- 1/1 Skull-Covered Chest
-								["achievementID"] = 8729,	-- Treasure, Treasure Everywhere
-							}),
+
 						},
 					}),
 					o(221672, {	-- Smoldering Chest
