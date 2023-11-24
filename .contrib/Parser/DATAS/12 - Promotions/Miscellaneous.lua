@@ -86,7 +86,6 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 		["description"] = "This was awarded to players when they linked their original WoW account to a Battle.Net Tag. No longer available as all accounts now require Battle.Net Tag initially, unless you have access to an unattached account.",
 		["timeline"] = { ADDED_3_2_2 },
 	}),
-	ach(9030),	-- Blizzard hard deleted this one from the game?
 	ach(9496, {	-- Warlord's Deathwheel
 		["timeline"] = { "added 6.0.2.18888" },
 		["g"] = {
