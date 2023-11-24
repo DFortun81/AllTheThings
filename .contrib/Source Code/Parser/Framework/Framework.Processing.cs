@@ -1376,7 +1376,7 @@ namespace ATT
                 data.ContainsKey("criteriaID") ||
                 (data.TryGetValue("collectible", out bool collectible) && !collectible)) return;
 
-            if (achID == 1195)
+            if (achID == 15402)
             {
 
             }
@@ -1841,11 +1841,13 @@ namespace ATT
             {
                 if (criteriaTree.IsAllianceOnlyFlags())
                 {
-                    extraData = new Dictionary<string, object> { { "r", 2 } };
+                    extraData = extraData ?? new Dictionary<string, object>();
+                    extraData["r"] = 2;
                 }
                 else if (criteriaTree.IsHordeOnlyFlags())
                 {
-                    extraData = new Dictionary<string, object> { { "r", 1 } };
+                    extraData = extraData ?? new Dictionary<string, object>();
+                    extraData["r"] = 1;
                 }
 
                 foreach (CriteriaTree child in childTrees)
@@ -1892,20 +1894,39 @@ namespace ATT
                                 {
                                     LogDebug($"Removing existing Criteria by Index: {achID}:{objCriteriaID}");
                                     datag.RemoveAt(i);
+                                    // but any other data needs to be preserved somehow, can warn contrib to migrate to new UIDs
+                                    obj.Remove("criteriaID");
+                                    obj.Remove("achID");
+                                    obj.Remove("timeline");
+                                    obj.Remove("awp");
+                                    obj.Remove("r");
+                                    if (obj.Keys.Count > 0)
+                                    {
+                                        LogWarn($"Migrate (or remove) extra data from {achID}:{criteriaIndex} into the proper sub-criteria(s): {ToJSON(GetAllNestedTypeDBObjects(criteriaTree).Select(t => t.CriteriaID).Where(id => id > 0).ToList())} <== ", obj);
+                                    }
                                 }
-                                // but any other data needs to be preserved somehow, can warn contrib to migrate to new UIDs
-                                obj.Remove("criteriaID");
-                                obj.Remove("achID");
-                                obj.Remove("timeline");
-                                obj.Remove("awp");
-                                obj.Remove("r");
-                                if (obj.Keys.Count > 0)
+                                else
                                 {
-                                    LogWarn($"Migrate (or remove) extra data from {achID}:{criteriaIndex} into the proper sub-criteria(s): {ToJSON(GetAllNestedTypeDBObjects(criteriaTree).Select(t => t.CriteriaID).Where(id => id > 0).ToList())} <== ", obj);
+                                    LogWarn($"Add '_noautomation' to Criteria by Index: {achID}:{objCriteriaID} if it contains accurate data since it failed to incorporate useful data.");
+                                    incorporated = true;
                                 }
                                 break;
                             }
                         }
+                    }
+
+                    if (!incorporated && !data.ContainsKey("achievement_criteria"))
+                    {
+                        extraData = extraData ?? new Dictionary<string, object>();
+                        if (extraData.TryGetValue("id", out long id) && id == criteriaIndex)
+                        {
+                            extraData.Remove("id");
+                        }
+                        extraData["criteriaID"] = criteriaIndex;
+                        extraData["achID"] = achID;
+                        extraData["_noautomation"] = true;
+                        LogDebug($"Added Criteria by Index {achID}:{criteriaIndex} since data incorporation had no useful criteria", extraData);
+                        Objects.Merge(data, "g", extraData);
                     }
                     // either already sourced a criteriaUID group, or nothing. so merge a criteriaUID group with index
                     //if (!indexFound)
