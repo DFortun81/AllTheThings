@@ -2,8 +2,6 @@
 root(ROOTS.NeverImplemented, {
 	tier(CATA_TIER),
 	tier(MOP_TIER),
-	tier(LEGION_TIER),
-	tier(BFA_TIER),
 	tier(SL_TIER),
 	tier(DF_TIER),
 	n(ACHIEVEMENTS),

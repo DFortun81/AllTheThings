@@ -150,17 +150,3 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 		}),
 	}),
 })));
-
-root(ROOTS.NeverImplemented, {
-	tier(BFA_TIER, {
-		n(WEEKLY_HOLIDAYS, {
-			i(164258),	-- Cache of Uldir Treasures
-			i(164259),	-- Cache of Uldir Treasures
-			i(164260),	-- Cache of Uldir Treasures
-			i(165730),	-- Cache of Dazar'alor Treasures
-			i(165731),	-- Cache of Dazar'alor Treasures
-			i(165732),	-- Cache of Dazar'alor Treasures
-			i(170145),	-- Cache of Palace Treasures
-		}),
-	}),
-});

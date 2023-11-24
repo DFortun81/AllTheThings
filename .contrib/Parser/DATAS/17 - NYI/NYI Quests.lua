@@ -3131,6 +3131,9 @@ root(ROOTS.NeverImplemented, {
 		tier(BFA_TIER, {
 			-- 8.0.1
 			tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 8.0.1" } }, {
+				q(53550),	-- A Change in Leadership
+				q(50882,{ ["_drop"] = { "g" },}),	-- All to Ash
+				q(52220),	-- Dragon Attack
 				q(53339),	-- LFG - BFA - Island Expedition - Heroic Win - Nth
 				q(53340),	-- LFG - BFA - Island Expedition - Mythic Win - Nth
 				q(51838),	-- LFG - BFA - Island Expedition - Normal Win - Nth
@@ -4820,6 +4823,7 @@ root(ROOTS.NeverImplemented, {
 
 			-- 8.2.0
 			tier(BFA_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { "created 8.2.0" } }, {
+				q(54048),	-- To Kill A Warden
 				q(56836),	-- The Eternal Palace: Master's Call
 				q(56837),	-- The Eternal Palace: Master's Call
 				q(56838),	-- The Eternal Palace: Master's Call
@@ -5405,6 +5409,7 @@ root(ROOTS.NeverImplemented, {
 				q(57962),	-- Heroic: Battle for Darkshore
 				q(57973),	-- Heroic: Battle for Darkshore
 				q(57974),	-- Heroic: Battle for Darkshore
+				q(57874),	-- Visions of a Dark Destiny
 				-- Unsorted
 				q(55036, {
 					["description"] = "Area: |cFFf09f26Prototype|r",

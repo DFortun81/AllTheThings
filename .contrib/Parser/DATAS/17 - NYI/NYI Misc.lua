@@ -323,6 +323,7 @@ root(ROOTS.NeverImplemented, {
 				i(168171),	-- [PH] Objective Reward
 				i(172381),	-- [PH] Objective Reward
 				i(168244),	-- [PH] Treasure Reward
+				i(170145),	-- Cache of Palace Treasures
 				i(164774),	-- Decrypted Message Module
 				i(169081),	-- Holographic Combat Entity Data
 				i(175246),	-- N'lyeth, Sliver of N'Zoth (Unused verison)

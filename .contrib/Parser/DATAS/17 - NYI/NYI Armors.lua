@@ -989,6 +989,7 @@ root(ROOTS.NeverImplemented, {
 					i(121513),	-- Runesworn Breeches
 				}),
 				tier(LEGION_TIER, 2.0, {
+					i(147036),	-- Fel-Stippled Legguards
 					i(147516, {["modID"] = 2 }),	-- Legion Stalker's Hood
 				}),
 			}),
@@ -999,6 +1000,7 @@ root(ROOTS.NeverImplemented, {
 					i(121512),	-- Stormborn Leggings
 				}),
 				tier(LEGION_TIER, 2.0, {
+					i(147058),	-- Chaos-Calming Wristguards
 					i(147515, {["modID"] = 2 }),	-- Hellblaze Invader's Greaves
 				}),
 				tier(LEGION_TIER, 2.5, {
@@ -1017,6 +1019,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 				tier(LEGION_TIER, 2.0, {
 					i(147514, {["modID"] = 2 }),	-- Felguard Destroyer's Legplates
+					i(147074),	-- Vambraces of Resoulte Justice
 				}),
 			}),
 			filter(COSMETIC, {
@@ -1343,6 +1346,7 @@ root(ROOTS.NeverImplemented, {
 					i(160675),	-- Tertius Breastplate
 					i(160676),	-- Quartius Breastplate
 					i(160677),	-- Pentius Breastplate
+					i(164525),	-- Rattling Bone Greatbelt
 					i(153365),	-- Dead-Watcher Greaves
 					i(153366),	-- Dead-Watcher Helmet
 					i(153367),	-- Dead-Watcher Breastplate
@@ -1398,12 +1402,17 @@ root(ROOTS.NeverImplemented, {
 			filter(COSMETIC, {
 				tier(BFA_TIER, 0.1, {
 					i(158329),	-- Hidden Gloves
+					i(163922),	-- Kobold Candle Helm
+					i(163923),	-- Kobold Candle Helm
+				}),
+				tier(BFA_TIER, 1.5, {
+					i(168004),	-- Gift of N'Zoth
 				}),
 				tier(BFA_TIER, 2.0, {
 					i(168659),	-- Hidden Chestpiece
 					i(168664),	-- Hidden Boots
 					i(168665),	-- Hidden Bracers
-				})
+				}),
 			}),
 			filter(NECK_F, {
 				tier(BFA_TIER, 0.1, {
@@ -1445,10 +1454,14 @@ root(ROOTS.NeverImplemented, {
 			filter(TRINKET_F, {
 				tier(BFA_TIER, 0.1, {
 					i(161223),	-- Agency Manipulator
+					i(157761),	-- Barbaric Mindslaver
 					i(154983),	-- Bijou of the Golden City
 					i(158574),	-- Bijou of the Golden City
+					i(157764),	-- Claw of the Crystalline Scorpid
+					i(157765),	-- Draught of Souls
 					i(154984),	-- Enchanted Devilsaur Claw
 					i(158575),	-- Enchanted Devilsaur Claw
+					i(157763),	-- Engine of Eradication
 					i(161222),	-- Latency Manipulator
 					i(153409),	-- Lucky Braid
 					i(154980),	-- Lucky Braid
@@ -1484,6 +1497,12 @@ root(ROOTS.NeverImplemented, {
 					i(167138),	-- QA Combat Test Trinket 1
 					i(167139),	-- QA Combat Test Trinket 2
 				}),
+			}),
+			filter(MISC, {
+				i(164287),	-- Plundered Dragonrider Spaulders
+				i(164288),	-- Plundered Gjalerbron Pauldrons
+				i(164286),	-- Plundered Runecaster's Mantle
+				i(164285),	-- Plundered Shoveltusk-Hide Shoulders
 			}),
 		}),
 		tier(SL_TIER, {
@@ -1566,9 +1585,15 @@ root(ROOTS.NeverImplemented, {
 				tier(SL_TIER, 0.1, {
 					i(178148),	-- 9.0 Dungeon - PH Item
 					i(180559),	-- Boots of Endless Betrayal
+					i(180561),	-- Bracers of Impossible Choices
+					i(180560),	-- Girdle of Nefarious Strategy
+					i(180620),	-- High Shadow Councilor's Wrap
 					i(180565),	-- Lifeless Buckled Girdle
 					i(180618),	-- Stained Maggot Squishers
+					i(180567),	-- Stutterstep Treads
 					i(178305),	-- unused
+					i(180566),	-- Well-Flattened Wristguards
+					i(180619),	-- Wristwraps of Broken Trust
 				}),
 				tier(SL_TIER, 2.0, {
 					i(188068),	-- Staccato Bands
@@ -1684,8 +1709,14 @@ root(ROOTS.NeverImplemented, {
 			}),
 			filter(PLATE, {
 				tier(SL_TIER, 0.1, {
+					i(180537),	-- Eredar Warcouncil Sabatons
+					i(180538),	-- Nathrezim Battle Girdle
 					i(170051),	-- Lost Pauldron of Might
 					i(170052),	-- Lost Helm of Might
+					i(180539),	-- Vambraces of Life's Assurance
+					i(180550),	-- Doomwalker Warboots
+					i(180551),	-- Flamelicked Girdle
+					i(180552),	-- Wristguards of the Dark Keepers
 				}),
 				tier(SL_TIER, 2.0, {
 					i(188082),	-- Harmonium Armor

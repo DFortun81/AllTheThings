@@ -1602,13 +1602,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(77246, {["timeline"]={ADDED_10_1_5}}),	-- after <Channel the power of your weapon into the gateway.> for Grimoire of the Xorothian Felhunter (itemID 208050)
 	}),
 });
-root(ROOTS.NeverImplemented, {
-	tier(LEGION_TIER, {
-		inst(946, {	-- Antorus, the Burning Throne
-			-- Added in 9.1 Why? Noone knows
-			i(180537),	-- Eredar Warcouncil Sabatons
-			i(180538),	-- Nathrezim Battle Girdle
-			i(180539),	-- Vambraces of Life's Assurance
-		}),
-	}),
-});

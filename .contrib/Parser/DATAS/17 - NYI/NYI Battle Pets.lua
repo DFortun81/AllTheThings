@@ -1433,10 +1433,6 @@ root(ROOTS.NeverImplemented, {
 				i(205037, {	-- Void Lurker (PET!)
 					["modelID"] = 112164,
 				}),
-				-- Without SpeciesID Attached
-				i(205232, {	-- [DNT] REUSE (PET!)
-					["modelID"] = 112180,
-				}),
 			})),
 
 			-- 10.1.5

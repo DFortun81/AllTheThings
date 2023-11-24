@@ -539,23 +539,3 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "ad
 		}),
 	}),
 })));
-
-root(ROOTS.NeverImplemented, {
-	tier(BFA_TIER, {	-- Battle For Azeroth
-		n(EXPANSION_PRELAUNCH, {
-			n(QUESTS, {
-				q(50882,{	-- All to Ash
-					["_drop"] = { "g" },
-				}),
-				q(52220, {	-- Dragon Attack
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 52197,	-- Long Away
-				}),
-				q(53550, {	-- A Change in Leadership
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 50879,	-- The Trees Have Ears
-				}),
-			}),
-		}),
-	}),
-});

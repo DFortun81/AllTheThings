@@ -1349,13 +1349,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(46332),	-- [DNT]Shadow Priests - Elune Death Enabled — for trying to use Xal'atath to absorb Elune's power after Sisters of the Moon
 	}),
 });
-root(ROOTS.NeverImplemented, tier(LEGION_TIER, {
-	inst(875, {	-- Tomb of Sargeras
-		i(147036),	-- Fel-Stippled Legguards		(removed Beta)
-		i(147058),	-- Chaos-Calming Wristguards	(removed Beta)
-		i(147074),	-- Vambraces of Resoulte Justice
-		i(157761),	-- Barbaric Mindslaver
-		i(157763),	-- Engine of Eradication
-		i(146304),	-- Fel Titan Hammer (test version for Maiden Mog Drop)
-	}),
-}));

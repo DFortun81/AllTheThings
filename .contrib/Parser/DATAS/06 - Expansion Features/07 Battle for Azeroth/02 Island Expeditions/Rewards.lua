@@ -770,20 +770,3 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 		}),
 	}),
 }));
-root(ROOTS.NeverImplemented, {
-	tier(BFA_TIER, {
-		n(ISLAND_EXPEDITIONS, {
-			filter(TOYS, {
-				i(163922),	-- Used for a toy, you never can get the actual item
-				i(163923),	-- Used for a toy, you never can get the actual item
-			}),
-			i(164286),	-- Plundered Runecaster's Mantle
-			i(164285),	-- Plundered Shoveltusk-Hide Shoulders
-			i(164287),	-- Plundered Dragonrider Spaulders
-			i(164288),	-- Plundered Gjalerbron Pauldrons
-		}),
-		filter(PLATE, {
-			i(164525),	-- Rattling Bone Greatbelt
-		}),
-	}),
-});

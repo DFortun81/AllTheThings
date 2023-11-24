@@ -330,27 +330,3 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 		},
 	}),
 }));
-
-root(ROOTS.NeverImplemented, {
-	tier(BFA_TIER, {
-		n(-10080, {	-- Horrific Visions
-			ach(14116),	-- All Bridges Burned
-			ach(14121),	-- Daring Defender
-			ach(14113),	-- Imagine a Dark, Dark World
-			ach(14122),	-- Long Trek Through Darkness
-			ach(14088),	-- Orgrimmar - Pained
-			ach(14090),	-- Orgrimmar - Dark Imagination
-			ach(14092),	-- Orgrimmar - Burned Bridge
-			ach(14099),	-- Orgrimmar - Daredevil
-			ach(14100),	-- Orgrimmar - Long Night
-			ach(14106),	-- Pained Expression
-			ach(14083),	-- Stormwind - Pained
-			ach(14084),	-- Stormwind - Dark Imagination
-			ach(14085),	-- Stormwind - Burned Bridge
-			ach(14086),	-- Stormwind - Daredevil
-			ach(14087),	-- Stormwind - Long Night
-			ach(13996),	-- The Dark Horde
-			ach(13995),	-- Twilight over the White City
-		}),
-	}),
-});

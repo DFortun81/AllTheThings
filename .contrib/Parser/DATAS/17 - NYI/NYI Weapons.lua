@@ -861,6 +861,90 @@ root(ROOTS.NeverImplemented, {
 			i(150611),	-- Guardian's Oaken Spear
 			i(150584),	-- Pike of Feral Rage
 			i(150613),	-- Survivalist's Hunting Spear
+			i(146304),	-- Fel Titan Hammer
+		}),
+		tier(BFA_TIER, {
+			n(SEASON_DREAD, {
+				i(159941),	-- Honorable Combatant's Inked Vessel
+				i(161937),	-- Honorable Combatant's Inked Vessel
+				i(159923),	-- Honorable Combatant's Salutary Scepter
+				i(161929),	-- Honorable Combatant's Salutary Scepter
+			}),
+			n(SEASON_SINISTER, {
+				i(165036),	-- Sinister Gladiator's Halberd (A)
+				i(165201),	-- Sinister Aspirant's Halberd (A)
+			}),
+			n(SEASON_NOTORIOUS, {
+				i(167522),	-- Notorious Aspirant's Shield Wall (A)
+				i(167521),	-- Notorious Aspirant's Shield Wall (H)
+				--i(169725),	-- Notorious Gladiator's Bonegrinder (A)	-- in NYI Sourceless
+				--i(169724),	-- Notorious Gladiator's Bonegrinder (H)	-- in NYI Sourceless
+			}),
+			n(WAR_EFFORT, {
+				n(WEAPONS, {
+					i(165617),	-- UNUSED - PH Horde Warfront Protectorate
+					i(177114),	-- Honorbound Longbow
+					i(177128),	-- 7th Legionnaire's Longbow
+					i(177118),	-- Honorbound Pigsticker
+					i(177132),	-- 7th Legionnaire's Halberd
+					i(177113),	-- Honorbound Skullcleaver
+					i(177143),	-- 7th Legionnaire's Skullcleaver
+					i(177115),	-- Honorbound Dagger
+					i(177129),	-- 7th Legionnaire's Dagger
+					i(177116),	-- Honorbound Skullcrusher
+					i(177130),	-- 7th Legionnaire's Warhammer
+					i(177141),	-- 7th Legionnaire's Spellhammer
+					i(177144),	-- Honorbound Warhammer
+					i(177117),	-- Honorbound Bonebreaker
+					i(177131),	-- 7th Legionnaire's Battle Hammer
+					i(177119),	-- Honorbound War Staff
+					i(177133),	-- 7th Legionnaire's Stave
+					i(177120),	-- Honorbound Wand
+					i(177135),	-- 7th Legionnaire's Wand
+					i(177122),	-- Honorbound Protectorate
+					i(177125),	-- Honorbound Barrier
+					i(177138),	-- 7th Legionnaire's Aegis
+					i(177142),	-- 7th Legionnaire's Shield
+					i(177123),	-- Honorbound Focus
+					i(177139),	-- 7th Legionnaire's Censer
+					i(177124),	-- Honorbound Warglaive
+					i(177140),	-- 7th Legionnaire's Warglaive
+					i(177126),	-- Honorbound Portable Cannon
+					i(177136),	-- 7th Legionnaire's Hand Cannon
+					i(177127),	-- Honorbound Gladius
+					i(177134),	-- 7th Legionnaire's Longsword
+					i(177137),	-- 7th Legionnaire's Claymore
+					i(177121),	-- Honorbound Decapitator
+				}),
+			}),
+			i(159538),	-- Coldscale Cudgel
+			i(159498),	-- Coldscale Pistol
+			i(159586),	-- Coralshell Blade
+			i(159559),	-- Coralshell Halberd
+			i(159513),	-- Deepwarden Fangs
+			i(159603),	-- Deepwarden Spark
+			i(159541),	-- Dockyard Mace
+			i(159500),	-- Dockyard Sidearm
+			i(159591),	-- Gnarlwood Cutlass
+			i(159553),	-- Gnarlwood Hammer
+			i(159567),	-- Gnarlwood Staff
+			i(159512),	-- Gol Osigr Handblade
+			i(159801),	-- Gol Osigr Targe
+			i(159817),	-- Gol Osigr Torch
+			i(159499),	-- Ironcrest Longrifle
+			i(159552),	-- Shipwrecker Maul
+			i(159588),	-- Stagheart Falchion
+			i(159542),	-- Stagheart Gavel
+			i(159472),	-- Stagheart Hatchet
+			i(159561),	-- Stagheart Poleaxe
+			i(159562),	-- Tideguard Pike
+			i(159503),	-- Tideguard Slicers
+			i(159565),	-- Tideguard Spire
+			i(159495),	-- Wavecaller Speargun
+			i(159526),	-- Wintersail Dirk
+			i(159554),	-- Wintersail Hammer
+			i(159592),	-- Wintersail Sabre
+			i(159510),	-- Wintersail Strikers
 		}),
 	}),
 });

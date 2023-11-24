@@ -2622,6 +2622,301 @@ root(ROOTS.NeverImplemented, {
 						i(164754),	-- Demon Trophy
 					}),
 				}),
+				n(SEASON_DREAD, {
+					filter(CLOTH, {
+						i(166907),	-- Dread Gladiator's Silk Robe
+						i(166908),	-- Dread Gladiator's Silk Treads
+						i(166909),	-- Dread Gladiator's Silk Gloves
+						i(166910),	-- Dread Gladiator's Silk Hood
+						i(166911),	-- Dread Gladiator's Silk Leggings
+						i(166912),	-- Dread Gladiator's Silk Mantle
+						i(166913),	-- Dread Gladiator's Silk Cord
+						i(166914),	-- Dread Gladiator's Silk Cuffs
+						i(166938),	-- Dread Gladiator's Silk Robe
+						i(166939),	-- Dread Gladiator's Silk Treads
+						i(166940),	-- Dread Gladiator's Silk Gloves
+						i(166941),	-- Dread Gladiator's Silk Hood
+						i(166942),	-- Dread Gladiator's Silk Leggings
+						i(166943),	-- Dread Gladiator's Silk Mantle
+						i(166944),	-- Dread Gladiator's Silk Cord
+						i(166945),	-- Dread Gladiator's Silk Cuffs
+					}),
+					filter(LEATHER, {
+						i(166946),	-- Dread Gladiator's Leather Tunic
+						i(166947),	-- Dread Gladiator's Leather Boots
+						i(166948),	-- Dread Gladiator's Leather Gloves
+						i(166949),	-- Dread Gladiator's Leather Helm
+						i(166950),	-- Dread Gladiator's Leather Legguards
+						i(166951),	-- Dread Gladiator's Leather Spaulders
+						i(166952),	-- Dread Gladiator's Leather Belt
+						i(166953),	-- Dread Gladiator's Leather Bindings
+						i(166915),	-- Dread Gladiator's Leather Tunic
+						i(166916),	-- Dread Gladiator's Leather Boots
+						i(166917),	-- Dread Gladiator's Leather Gloves
+						i(166918),	-- Dread Gladiator's Leather Helm
+						i(166919),	-- Dread Gladiator's Leather Legguards
+						i(166920),	-- Dread Gladiator's Leather Spaulders
+						i(166921),	-- Dread Gladiator's Leather Belt
+						i(166922),	-- Dread Gladiator's Leather Bindings
+					}),
+					filter(MAIL, {
+						i(166954),	-- Dread Gladiator's Chain Armor
+						i(166955),	-- Dread Gladiator's Chain Sabatons
+						i(166956),	-- Dread Gladiator's Chain Gauntlets
+						i(166957),	-- Dread Gladiator's Chain Helm
+						i(166958),	-- Dread Gladiator's Chain Leggings
+						i(166959),	-- Dread Gladiator's Chain Spaulders
+						i(166960),	-- Dread Gladiator's Chain Waistguard
+						i(166961),	-- Dread Gladiator's Chain Armbands
+						i(166923),	-- Dread Gladiator's Chain Armor
+						i(166924),	-- Dread Gladiator's Chain Sabatons
+						i(166925),	-- Dread Gladiator's Chain Gauntlets
+						i(166926),	-- Dread Gladiator's Chain Helm
+						i(166927),	-- Dread Gladiator's Chain Leggings
+						i(166928),	-- Dread Gladiator's Chain Spaulders
+						i(166929),	-- Dread Gladiator's Chain Waistguard
+						i(166930),	-- Dread Gladiator's Chain Armbands
+					}),
+					filter(PLATE, {
+						i(166906),	-- Dread Gladiator's Plate Pauldrons
+						i(166931),	-- Dread Gladiator's Plate Chestpiece
+						i(166932),	-- Dread Gladiator's Plate Warboots
+						i(166933),	-- Dread Gladiator's Plate Gauntlets
+						i(166934),	-- Dread Gladiator's Plate Helm
+						i(166935),	-- Dread Gladiator's Plate Legguards
+						i(166936),	-- Dread Gladiator's Plate Girdle
+						i(166937),	-- Dread Gladiator's Plate Armguards
+						i(166962),	-- Dread Gladiator's Plate Chestpiece
+						i(166963),	-- Dread Gladiator's Plate Warboots
+						i(166964),	-- Dread Gladiator's Plate Gauntlets
+						i(166965),	-- Dread Gladiator's Plate Helm
+						i(166966),	-- Dread Gladiator's Plate Legguards
+						i(166967),	-- Dread Gladiator's Plate Pauldrons
+						i(166968),	-- Dread Gladiator's Plate Girdle
+						i(166969),	-- Dread Gladiator's Plate Armguards
+					}),
+				}),
+				n(SEASON_SINISTER, {
+					filter(CLOTH, {
+						i(166634),	-- Sinister Gladiator's Silk Armor (A)
+						i(166660),	-- Sinister Gladiator's Silk Shoulderguards (A)
+						i(166611),	-- Sinister Gladiator's Silk Cap (A)
+						i(166630),	-- Sinister Gladiator's Silk Armor (H)
+						i(166654),	-- Sinister Gladiator's Silk Shoulderguards (H)
+						i(166606),	-- Sinister Gladiator's Silk Cap (H)
+					}),
+					filter(LEATHER, {
+						i(166637),	-- Sinister Gladiator's Leather Harness (A)
+						i(166613),	-- Sinister Gladiator's Leather Headpiece (A)
+						i(166658),	-- Sinister Gladiator's Leather Shoulderpads (A)
+						i(166631),	-- Sinister Gladiator's Leather Harness (H)
+						i(166607),	-- Sinister Gladiator's Leather Headpiece (H)
+						i(166655),	-- Sinister Gladiator's Leather Shoulderpads (H)
+					}),
+					filter(MAIL, {
+						i(166661),	-- Sinister Gladiator's Chain Epaulets (A)
+						i(166612),	-- Sinister Gladiator's Chain Skullcover (A)
+						i(166636),	-- Sinister Gladiator's Chain Vest (A)
+						i(166632),	-- Sinister Gladiator's Chain Vest (H)
+						i(166608),	-- Sinister Gladiator's Chain Skullcover (H
+						i(166656),	-- Sinister Gladiator's Chain Epaulets (H)
+					}),
+					filter(PLATE, {
+						i(166635),	-- Sinister Gladiator's Plate Chestplate (A)
+						i(166659),	-- Sinister Gladiator's Shoulderplates (A)
+						i(166610),	-- Sinister Gladiator's Plate Skullguard (A)
+						i(166633),	-- Sinister Gladiator's Plate Chestplate (H)
+						i(166657),	-- Sinister Gladiator's Shoulderplates (H)
+						i(166609),	-- Sinister Gladiator's Plate Skullguard (H)
+					}),
+				}),
+				n(WAR_EFFORT, {
+					n(WARFRONT_BATTLE_FOR_STROMGARDE, {
+						filter(CLOTH, {
+							i(163269),	-- 7th Legionnaire's Mantle
+							i(163340),	-- 7th Legionnaire's Circlet
+							i(163343),	-- 7th Legionnaire's Sash
+							i(163425),	-- Honorbound Artificer's Mantle
+							i(163427),	-- Honorbound Artificer's Skullcap
+							i(163431),	-- Honorbound Artificer's Sash
+							i(163258),	-- 7th Legionnaire's Mitts
+							i(163260),	-- 7th Legionnaire's Cowl
+							i(163272),	-- 7th Legionnaire's Waistwrap
+							i(163290),	-- Honorbound Artificer's Handwraps
+							i(163292),	-- Honorbound Artificer's Crown
+							i(163301),	-- Honorbound Artificer's Shoulderpads
+							i(163310),	-- Honorbound Artificer's Waistwrap
+							i(163338),	-- 7th Legionnaire's Epaulets
+							i(163429),	-- Honorbound Artificer's Wrap
+						}),
+						filter(LEATHER, {
+							i(163378),	-- 7th Legionnaire's Shoulderpads
+							i(163379),	-- 7th Legionnaire's Pants
+							i(163381),	-- 7th Legionnaire's Mask
+							i(163382),	-- 7th Legionnaire's Tunic
+							i(163385),	-- 7th Legionnaire's Belt
+							i(163433),	-- Honorbound Outrider's Mantle
+							i(163436),	-- Honorbound Outrider's Faceguard
+							i(163440),	-- Honorbound Outrider's Belt
+							i(163262),	-- 7th Legionnaire's Guise
+							i(163267),	-- 7th Legionnaire's Shoulderguards
+							i(163274),	-- 7th Legionnaire's Strap
+							i(163287),	-- Honorbound Outrider's Treads
+							i(163288),	-- Honorbound Outrider's Grasps
+							i(163294),	-- Honorbound Outrider's Headcover
+							i(163299),	-- Honorbound Outrider's Shoulderpads
+							i(163305),	-- Honorbound Outrider's Strap
+							i(163434),	-- Honorbound Outrider's Vestments
+						}),
+						filter(MAIL, {
+							i(163286),	-- Honorbound Vanguard's Footguards
+							i(163291),	-- Honorbound Vanguard's Strikers
+							i(163293),	-- Honorbound Vanguard's Warhelm
+							i(163297),	-- Honorbound Vanguard's Legguards
+							i(163302),	-- Honorbound Vanguard's Spaulders
+							i(163304),	-- Honorbound Vanguard's Waistcord
+							i(163392),	-- 7th Legionnaire's Vestments
+							i(163393),	-- 7th Legionnaire's Raiment
+							i(163443),	-- Honorbound Vanguard's Vestments
+							i(163450),	-- Honorbound Vanguard's Raiment
+							i(163396),	-- 7th Legionnaire's Skullcap
+							i(163390),	-- 7th Legionnaire's Spaulders
+							i(163402),	-- 7th Legionnaire's Chain Belt
+							i(163447),	-- Honorbound Vanguard's Helm
+							i(163442),	-- Honorbound Vanguard's Pauldrons
+							i(163452),	-- Honorbound Vanguard's Chain Belt
+							i(163250),	-- 7th Legionnaire's Hauberk
+							i(163254),	-- 7th Legionnaire's Footguards
+							i(163259),	-- 7th Legionnaire's Grasps
+							i(163261),	-- 7th Legionnaire's Warhelm
+							i(163270),	-- 7th Legionnaire's Chain Mantle
+							i(163273),	-- 7th Legionnaire's Clasp
+							i(163444),	-- Honorbound Vanguard's Vestments
+						}),
+						filter(PLATE, {
+							i(163406),	-- 7th Legionnaire's Shoulderplates
+							i(163408),	-- 7th Legionnaire's Legplates
+							i(163412),	-- 7th Legionnaire's Helmet
+							i(163413),	-- 7th Legionnaire's Strikers
+							i(163420),	-- 7th Legionnaire's Stompers
+							i(163423),	-- 7th Legionnaire's Girdle
+							i(163454),	-- Honorbound Centurion's Pauldrons
+							i(163457),	-- Honorbound Centurion's Helmet
+							i(163462),	-- Honorbound Centurion's Girdle
+							i(163247),	-- 7th Legionnaire's Greathelm
+							i(163249),	-- 7th Legionnaire's Chestpiece
+							i(163252),	-- 7th Legionnaire's Wargreaves
+							i(163257),	-- 7th Legionnaire's Crushers
+							i(163263),	-- 7th Legionnaire's Chausses
+							i(163268),	-- 7th Legionnaire's Plate Mantle
+							i(163271),	-- 7th Legionnaire's Waistguard
+							i(163276),	-- 7th Legionnaire's Wristguards
+							i(163279),	-- Honorbound Centurion's Warhelm
+							i(163281),	-- Honorbound Centurion's Chestguard
+							i(163284),	-- Honorbound Centurion's Stompers
+							i(163289),	-- Honorbound Centurion's Crushers
+							i(163295),	-- Honorbound Centurion's Chausses
+							i(163300),	-- Honorbound Centurion's Spaulders
+							i(163303),	-- Honorbound Centurion's Waistguard
+							i(163404),	-- 7th Legionnaire's Vambraces
+							i(163419),	-- 7th Legionnaire's Breastplate
+						}),
+						n(BACK, {
+							i(163245),	-- 7th Legionnaire's Satin Cloak
+							i(163311),	-- 7th Legionnaire's Shroud
+							i(163312),	-- 7th Legionnaire's Shawl
+							i(163416),	-- 7th Legionnaire's Drape
+							i(163344),	-- 7th Legionnarie's Cape
+							i(163345),	-- 7th Legionnarie's Leather Drape
+							i(163346),	-- Warfront Gear Drape
+							i(163348),	-- Warfront Gear Cloak
+							i(163349),	-- 7th Legionnaire's Chain Cloak
+							i(163350),	-- 7th Legionnaire's Cloak
+							i(163352),	-- 7th Legionnaire's Steel Cloak
+							i(163354),	-- 7th Legionnaire's War Cloak
+							i(163353),	-- 7th Legionnarie's Greatcloak
+							i(163356),	-- Honorbound Artificier's Drape (different version used with locked to specific classes)
+							i(163358),	-- Honorbound Artificier's Greatcloak (different version used with locked to specific classes)
+							i(163359),	-- Warfront Gear Cape
+							i(163361),	-- Honorbound Outrider's Greatcloak (different version used with locked to specific classes)
+							i(163362),	-- Honorbound Outrider's Cloak  (different version used with locked to specific classes)
+							i(163363),	-- Warfront Gear Cape
+							i(163364),	-- Warfront Gear Cloak
+							i(163365),	-- Honorbound Vanguard's Greatcloak (different version used with locked to specific classes)
+							i(163367),	-- Honorbound Vanguard's Long Cloak (different version used with locked to specific classes)
+							i(163369),	-- Honorbound Centurion's Greatcloak
+							i(163370),	-- Warfront Gear Drape
+							i(163371),	-- Honorbound Centurion's Cloak
+							i(163415),	-- 7th Legionnarie's Iron Cloak
+						}),
+					}),
+				}),
+			})),
+
+			-- 8.1.0
+			tier(BFA_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 8.1.0" } }, {
+				inst(1031, {	-- Uldir
+					filter(CLOTH, {
+						i(166406),	-- Flaskzertauren's Cloth Robes
+						i(166407),	-- Flaskzertauren's Cloth Shoulders
+					}),
+					filter(LEATHER, {
+						i(166409),	-- Flaskzertauren's Leather Shoulderpads
+						i(166408),	-- Flaskzertauren's Leather Spaulders
+						i(166404),	-- Flaskzertauren's Leather Tunic
+						i(166403),	-- Flaskzertauren's Leather Vest
+					}),
+					filter(MAIL, {
+						i(166402),	-- Flaskzertauren's Mail Hauberk
+						i(166410),	-- Flaskzertauren's Mail Shoulderguards
+					}),
+					filter(PLATE, {
+						i(166400),	-- Flaskzertauren's Plate Chestguard
+						i(166401),	-- Flaskzertauren's Plate Cuirass
+						i(166412),	-- Flaskzertauren's Plate Pauldrons
+						i(166411),	-- Flaskzertauren's Plate Shoulderguards
+					}),
+				}),
+			})),
+
+			-- 8.2.0
+			tier(BFA_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 8.2.0" } }, {
+				n(WAR_EFFORT, {
+					n(WARFRONT_BATTLE_FOR_DARKSHORE, {
+						filter(CLOTH, {
+							i(183762),	-- Moonpriest's Coronet
+							i(183763),	-- Moonpriest's Mantle
+							i(183772),	-- Moonpriest's Vestments
+							i(183774),	-- Plaguebringer's Cowl
+							i(183775),	-- Plaguebringer's Shoulderguards
+							i(183784),	-- Plaguebringer's Robe
+						}),
+						filter(LEATHER, {
+							i(183764),	-- Darkwood Sentinel's Tunic
+							i(183765),	-- Darkwood Sentinel's Cowl
+							i(183766),	-- Darkwood Sentinel's Monnions
+							i(183776),	-- Deathstalker's Chestpiece
+							i(183777),	-- Deathstalker's Collar
+							i(183778),	-- Deathstalker's Shoulderguards
+						}),
+						filter(MAIL, {
+							i(183767),	-- Kaldorei Archer's Chainmail
+							i(183768),	-- Kaldorei Archer's Hood
+							i(183769),	-- Kaldorei Archer's Shoulderguards
+							i(183779),	-- Blightguard's Harness
+							i(183780),	-- Blightguard's Helmet
+							i(183781),	-- Blightguard's Shoulderguards
+						}),
+						filter(PLATE, {
+							i(183770),	-- Wardenguard's Chestplate
+							i(183771),	-- Wardenguard's Greathelm
+							i(183773),	-- Wardenguard's Pauldrons
+							i(183782),	-- Deathguard's Chestplate
+							i(183783),	-- Deathguard's Helm
+							i(183785),	-- Deathguard's Pauldrons
+						}),
+					}),
+				}),
 			})),
 
 			-- 8.2.5
@@ -2780,6 +3075,56 @@ root(ROOTS.NeverImplemented, {
 							i(170749),	-- Oathsworn Defender Idol
 							i(170752),	-- Oathsworn Defender Stone
 						}),
+					}),
+				}),
+			})),
+
+			-- 8.3.0
+			tier(BFA_TIER, 3.0, bubbleDown({ ["timeline"] = { "created 8.3.0" } }, {
+				n(SEASON_CORRUPTED, {
+					filter(CLOTH, {
+						i(172718),	-- Corrupted Gladiator's Silk Armor (A)
+						i(172695),	-- Corrupted Gladiator's Silk Cap (A)
+						i(172744),	-- Corrupted Gladiator's Silk Shoulderguards (A)
+						i(172714),	-- Corrupted Gladiator's Silk Armor (H)
+						i(172690),	-- Corrupted Gladiator's Silk Cap (H)
+						i(172738),	-- Corrupted Gladiator's Silk Shoulderguards (H)
+					}),
+					filter(LEATHER, {
+						i(172721),	-- Corrupted Gladiator's Leather Harness (A)
+						i(172697),	-- Corrupted Gladiator's Leather Headpiece (A)
+						i(172742),	-- Corrupted Gladiator's Leather Shoulderpads (A)
+						i(172715),	-- Corrupted Gladiator's Leather Harness (H)
+						i(172691),	-- Corrupted Gladiator's Leather Headpiece (H)
+						i(172739),	-- Corrupted Gladiator's Leather Shoulderpads (H)
+					}),
+					filter(MAIL, {
+						i(172745),	-- Corrupted Gladiator's Chain Epaulets (A)
+						i(172696),	-- Corrupted Gladiator's Chain Skullcover (A)
+						i(172720),	-- Corrupted Gladiator's Chain Vest (A)
+						i(172716),	-- Corrupted Gladiator's Chain Vest (H)
+						i(172692),	-- Corrupted Gladiator's Chain Skullcover (H)
+						i(172740),	-- Corrupted Gladiator's Chain Epaulets (H)
+					}),
+					filter(PLATE, {
+						i(172719),	-- Corrupted Gladiator's Plate Chestplate (A)
+						i(172694),	-- Corrupted Gladiator's Plate Skullguard (A)
+						i(172743),	-- Corrupted Gladiator's Shoulderplates (A)
+						i(172741),	-- Corrupted Gladiator's Shoulderplates (H)
+						i(172693),	-- Corrupted Gladiator's Plate Skullguard (H)
+						i(172717),	-- Corrupted Gladiator's Plate Chestplate (H)
+					}),
+					n(BACK, {
+						i(172655),	-- Corrupted Gladiator's Shawl
+						i(172656),	-- Corrupted Gladiator's Greatcloak
+						i(172657),	-- Corrupted Gladiator's Drape
+						i(172658),	-- Corrupted Gladiator's Cape
+						i(172659),	-- Corrupted Gladiator's Shawl
+						i(172660),	-- Corrupted Gladiator's Greatcloak
+						i(172661),	-- Corrupted Gladiator's Drape
+						i(172662),	-- Corrupted Gladiator's Cape
+						i(172851),	-- Corrupted Aspirant's Greatcloak
+						i(172855),	-- Corrupted Aspirant's Greatcloak
 					}),
 				}),
 			})),
@@ -3141,6 +3486,111 @@ root(ROOTS.NeverImplemented, {
 							i(177598),	-- Oathsworn Ring of Stoicism
 							i(177596),	-- Oathsworn Defender Idol
 							i(177599),	-- Oathsworn Defender Stone
+						}),
+					}),
+				}),
+				m(EXILES_REACH, {
+					filter(CLOTH, {
+						i(175181),	-- Expeditionary Cloth Boots
+						i(175213),	-- Expeditionary Cloth Boots
+						i(174795),	-- Expeditionary Cloth Mantle
+					}),
+					filter(LEATHER, {
+						i(175183),	-- Expeditionary Leather Boots
+						i(175215),	-- Expeditionary Leather Boots
+						i(174796),	-- Expeditionary Leather Pauldrons
+					}),
+					filter(MAIL, {
+						i(175182),	-- Expeditionary Mail Sabatons
+						i(175214),	-- Expeditionary Mail Sabatons
+						i(174797),	-- Expeditionary Mail Shoulders
+					}),
+					filter(PLATE, {
+						i(174798),	-- Expeditionary Plate Shoulderguard
+						i(175180),	-- Expeditionary Plate Warboots
+						i(175212),	-- Expeditionary Plate Warboots
+					}),
+				}),
+				n(SEASON_CORRUPTED, {
+					n(TRINKET, {
+						i(184055),	-- Corrupted Gladiator's Medallion
+						i(184056),	-- Corrupted Gladiator's Relentless Brooch
+						i(184057),	-- Corrupted Gladiator's Sigil of Adaptation
+					}),
+				}),
+				inst(786, {	-- The Nighthold
+					cl(DEATHKNIGHT, {
+						i(180553),	-- Dreadwake Bonecage
+						i(180554),	-- Dreadwake Legplates
+						i(180555),	-- Dreadwake Pauldrons
+					}),
+					cl(DEMONHUNTER, {
+						i(180615),	-- Tunic of Second Sight
+						i(180616),	-- Legwraps of Second Sight
+						i(180617),	-- Shoulderguards of Second Sight
+					}),
+					cl(MONK, {
+						i(180562),	-- Tunic of Enveloped Dissonance
+						i(180563),	-- Leggings of Enveloped Dissonance
+						i(180564),	-- Pauldrons of Enveloped
+					}),
+					cl(PALADIN, {
+						i(180535),	-- Breastplate of the Highlord
+						i(180540),	-- Light's Vanguard Breastplate
+						i(180541),	-- Light's Vanguard Legplates
+						i(180542),	-- Light's Vanguard Shoulderplates
+					}),
+					cl(ROGUE, {
+						i(180556),	-- Doomblade Tunic
+						i(180557),	-- Doomblade Pants
+						i(180558),	-- Doomblade Spaulders
+					}),
+				}),
+				n(WAR_EFFORT, {
+					n(WARFRONT_BATTLE_FOR_STROMGARDE, {
+						filter(CLOTH, {
+							i(174025),	-- 7th Legionnaire's Garb
+							i(174026),	-- 7th Legionnaire's Footcover
+							i(174031),	-- Honorbound Artificer's Toeslips
+							i(174032),	-- Honorbound Artificer's Pantaloons
+							i(174033),	-- Honorbound Artificer's Wristwraps
+						}),
+						filter(LEATHER, {
+							i(174027),	-- 7th Legionnaire's Gloves
+							i(174028),	-- 7th Legionnaire's Vambraces
+							i(174034),	-- Honorbound Outrider's Wristcover
+							i(174035),	-- Honorbound Outrider's Chestcover
+							i(177092),	-- 7th Legionnaire's Legwraps
+							i(177094),	-- 7th Legionnaire's Cuffs
+							i(177095),	-- Honorbound Artificer's Sandals
+							i(177096),	-- Honorbound Artificer's Legwraps
+							i(177098),	-- Honorbound Artificer's Cuffs
+							i(177104),	-- Honorbound Artificer's Mitts
+							i(177097),	-- Honorbound Outrider's Pants
+							i(177101),	-- Honorbound Outrider's Bracers
+							i(177105),	-- Honorbound Outrider's Gloves
+							i(177106),	-- Honorbound Outrider's Boots
+						}),
+						filter(MAIL, {
+							i(174029),	-- 7th Legionnaire's Wristbangles
+							i(174030),	-- 7th Legionnaire's Britches
+							i(174036),	-- Honorbound Vanguard's Bracers
+							i(177159),	-- Honorbound Vanguard's Chainmail
+							i(177160),	-- 7th Legionnaire's Chainmail
+							i(177093),	-- 7th Legionnaire's Leggings
+							i(177100),	-- Honorbound Vanguard's Bindings
+							i(177107),	-- Honorbound Vanguard's Leggings
+							i(177108),	-- Honorbound Vanguard's Handguards
+							i(177109),	-- Honorbound Vanguard's Sabatons
+						}),
+						filter(PLATE, {
+							i(174037),	-- Honorbound Centurion's Wristplates
+							i(177099),	-- Honorbound Centurion's Vambraces
+							i(177102),	-- 7th Legionnaire's Legguards
+							i(177103),	-- 7th Legionnaire's Greaves
+							i(177110),	-- Honorbound Centurion's Legplates
+							i(177111),	-- Honorbound Centurion's Gauntlets
+							i(177112),	-- Honorbound Centurion's Greaves
 						}),
 					}),
 				}),
