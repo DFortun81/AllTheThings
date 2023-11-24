@@ -128,6 +128,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					19309,	-- Explore the Emerald Dream
 					19312,	-- Super Duper Bloom
 				}},
+				["groups"] = {
+					title(55),	-- <Name> of the Emerald Dream
+				},
 			}),
 			ach(19306, {	-- Emerald Dream Glyph Hunter
 				["sym"] = {{"meta_achievement",
