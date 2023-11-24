@@ -3281,142 +3281,145 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 				["isBreadcrumb"] = true,
 				["sourceQuest"] = 33657,	-- Moving In
 			}),
-			q(38193, {	-- Scouting Missive: Broken Precipice
+			q(38193, {	-- Missive: Assault on the Broken Precipice
 				["provider"] = { "i", 122423 },	-- Scouting Missive: Broken Precipice
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 			}),
-			q(38196, {	-- Scouting Missive: Darktide Roost
+			q(38196, {	-- Missive: Assault on Darktide Roost
 				["provider"] = { "i", 122417 },	-- Scouting Missive: Darktide Roost
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 			}),
-			q(38192, {	-- Scouting Missive: Everbloom Wilds
+			q(38192, {	-- Missive: Assault on the Everbloom Wilds
 				["provider"] = { "i", 122404 },	-- Scouting Missive: Everbloom Wilds
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 			}),
-			q(38194, {	-- Scouting Missive: Gorian Proving Grounds
-				["provider"] = { "i", 122420 },	-- Scouting Missive: Gorian Proving Grounds
-				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { "created 6.1.0.19445" },
-				["repeatable"] = true,
-			}),
-			q(38191, {	-- Scouting Missive: Iron Siegeworks
+			q(38191, {	-- Missive: Assault on the Iron Siegeworks
 				["provider"] = { "i", 122406 },	-- Scouting Missive: Iron Siegeworks
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 			}),
-			q(38198, {	-- Scouting Missive: Lost Veil Anzu
+			q(38198, {	-- Missive: Assault on Lost Veil Anzu
 				["provider"] = { "i", 122414 },	-- Scouting Missive: Lost Veil Anzu
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 			}),
-			q(38190, {	-- Scouting Missive: Magnarok
+			q(38190, {	-- Missive: Assault on Magnarok
 				["provider"] = { "i", 122399 },	-- Scouting Missive: Magnarok
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 			}),
-			q(38195, {	-- Scouting Missive: Mok'gol Watchpost
+			q(38195, {	-- Missive: Assault on Mok'gol Watchpost
 				["provider"] = { "i", 122422 },	-- Scouting Missive: Mok'gol Watchpost
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 			}),
-			q(38199, {	-- Scouting Missive: Pillars of Fate
+			q(38199, {	-- Missive: Assault on Pillars of Fate
 				["provider"] = { "i", 122409 },	-- Scouting Missive: Pillars of Fate
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 			}),
-			q(38201, {	-- Scouting Missive: Shattrath Harbor
+			q(38201, {	-- Missive: Assault on Shattrath Harbor
 				["provider"] = { "i", 122410 },	-- Scouting Missive: Shattrath Harbor
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 			}),
-			q(38200, {	-- Scouting Missive: Skettis
+			q(38200, {	-- Missive: Assault on Skettis
 				["provider"] = { "i", 122407 },	-- Scouting Missive: Skettis
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 			}),
-			q(38197, {	-- Scouting Missive: Socrethar's Rise
+			q(38197, {	-- Missive: Assault on Socrethar's Rise
 				["provider"] = { "i", 122415 },	-- Scouting Missive: Socrethar's Rise
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 			}),
-			q(38189, {	-- Scouting Missive: Stonefury Cliffs
+			q(38189, {	-- Missive: Assault on Stonefury Cliffs
 				["provider"] = { "i", 122401 },	-- Scouting Missive: Stonefury Cliffs
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 			}),
-			q(40944, {	-- Scouting Missive: The Heart of Shattrath
+			q(40944, {	-- Missive: Assault on the Heart of Shattrath
 				["provider"] = { "i", 133883 },	-- Scouting Missive: The Heart of Shattrath
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 			}),
-			q(40942, {	-- Scouting Missive: The Pit
+			q(40942, {	-- Missive: Assault on the Pit
 				["provider"] = { "i", 133878 },	-- Scouting Missive: The Pit
 				["races"] = ALLIANCE_ONLY,
 				["repeatable"] = true,
 			}),
-			q(38180, {	-- Scouting Missive: Broken Precipice
-				["provider"] = { "i", 122424 },
+			q(38180, {	-- Missive: Assault on the Broken Precipice
+				["provider"] = { "i", 122424 },	-- Scouting Missive: Broken Precipice
 				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
 			}),
-			q(38182, {	-- Scouting Missive: Darktide Roost
-				["provider"] = { "i", 122418 },
+			q(38182, {	-- Missive: Assault on Darktide Roost
+				["provider"] = { "i", 122418 },	-- Scouting Missive: Darktide Roost
 				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
 			}),
-			q(38179, {	-- Scouting Missive: Everbloom Wilds
-				["provider"] = { "i", 122400 },
+			q(38179, {	-- Missive: Assault on the Everbloom Wilds
+				["provider"] = { "i", 122400 },	-- Scouting Missive: Everbloom Wilds
 				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
 			}),
-			q(38202, {	-- Scouting Missive: Gorian Proving Grounds
-				["provider"] = { "i", 122419 },
+			q(38178, {	-- Missive: Assault on the Iron Siegeworks
+				["provider"] = { "i", 122402 },	-- Scouting Missive: Iron Siegeworks
 				["races"] = HORDE_ONLY,
-				["timeline"] = { "created 6.1.0.19445" },
+				["repeatable"] = true,
 			}),
-			q(38178, {	-- Scouting Missive: Iron Siegeworks
-				["provider"] = { "i", 122402 },
+			q(38184, {	-- Missive: Assault on Lost Veil Anzu
+				["provider"] = { "i", 122413 },	-- Scouting Missive: Lost Veil Anzu
 				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
 			}),
-			q(38184, {	-- Scouting Missive: Lost Veil Anzu
-				["provider"] = { "i", 122413 },
+			q(38177, {	-- Missive: Assault on Magnarok
+				["provider"] = { "i", 122403 },	-- Scouting Missive: Magnarok
 				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
 			}),
-			q(38177, {	-- Scouting Missive: Magnarok
-				["provider"] = { "i", 122403 },
+			q(38181, {	-- Missive: Assault on Mok'gol Watchpost
+				["provider"] = { "i", 122421 },	-- Scouting Missive: Mok'gol Watchpost
 				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
 			}),
-			q(38181, {	-- Scouting Missive: Mok'gol Watchpost
-				["provider"] = { "i", 122421 },
+			q(38185, {	-- Missive: Assault on Pillars of Fate
+				["provider"] = { "i", 122411 },	-- Scouting Missive: Pillars of Fate
 				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
 			}),
-			q(38185, {	-- Scouting Missive: Pillars of Fate
-				["provider"] = { "i", 122411 },
+			q(38187, {	-- Missive: Assault on Shattrath Harbor
+				["provider"] = { "i", 122412 },	-- Scouting Missive: Shattrath Harbor
 				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
 			}),
-			q(38187, {	-- Scouting Missive: Shattrath Harbor
-				["provider"] = { "i", 122412 },
+			q(38186, {	-- Missive: Assault on Skettis
+				["provider"] = { "i", 122408 },	-- Scouting Missive: Skettis
 				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
 			}),
-			q(38186, {	-- Scouting Missive: Skettis
-				["provider"] = { "i", 122408 },
+			q(38183, {	-- Missive: Assault on Socrethar's Rise
+				["provider"] = { "i", 122416 },	-- Scouting Missive: Socrethar's Rise
 				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
 			}),
-			q(38183, {	-- Scouting Missive: Socrethar's Rise
-				["provider"] = { "i", 122416 },
+			q(38176, {	-- Missive: Assault on Stonefury Cliffs
+				["provider"] = { "i", 122405 },	-- Scouting Missive: Stonefury Cliffs
 				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
 			}),
-			q(38176, {	-- Scouting Missive: Stonefury Cliffs
-				["provider"] = { "i", 122405 },
+			q(40943, {	-- Missive: Assault on the Heart of Shattrath
+				["provider"] = { "i", 133884 },	-- Scouting Missive: The Heart of Shattrath
 				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
 			}),
-			q(40943, {	-- Scouting Missive: The Heart of Shattrath
-				["provider"] = { "i", 133884 },
+			q(40941, {	-- Missive: Assault on the Pit
+				["provider"] = { "i", 133876 },	-- Scouting Missive: The Pit
 				["races"] = HORDE_ONLY,
-			}),
-			q(40941, {	-- Scouting Missive: The Pit
-				["provider"] = { "i", 133876 },
-				["races"] = HORDE_ONLY,
+				["repeatable"] = true,
 			}),
 		}),
 	})),

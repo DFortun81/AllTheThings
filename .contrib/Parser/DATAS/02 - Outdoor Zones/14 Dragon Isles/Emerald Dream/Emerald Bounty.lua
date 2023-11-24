@@ -161,6 +161,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						{"where", "filterID", MOUNTS },
 						{"pop"},
 					},
+					["g"] = {
+						i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back (DM!) / also was looted from purple
+						i(210490),	-- Technique: Vantus Rune: Amirdrassil, the Dream's Hope (RECIPE!)
+					},
 				}),
 				i(210218, {	-- Plump Dreamy Bounty
 					["provider"] = {"i", 208067, 1},	-- Plump Dreamseed
@@ -176,6 +180,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						i(207772),	-- Grotto Netherwing Drake: Long Horns (DM!)
 						i(207769),	-- Grotto Netherwing Drake: Outcast Pattern (DM!)
 						i(210241),	-- Recipe: Dreamwalker's Healing Potion (RECIPE!)
+						i(210242),	-- Recipe: Slumbering Peacebloom Tea (RECIPE!)
+						i(210490),	-- Technique: Vantus Rune: Amirdrassil, the Dream's Hope (RECIPE!)
 						i(211065),	-- Technique: Mark of the Auric Dreamstag (RECIPE!)
 						--[Mark of the Boreal Dreamtalon] from blue bag
 						--[Mark of the Snowy Umbraclaw] from blue bag

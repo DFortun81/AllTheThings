@@ -1611,6 +1611,8 @@ root(ROOTS.NeverImplemented, {
 				q(38298, { ["name"] = "Herbs Galore", ["_drop"] = { "g" }, }),	-- Herbs Galore
 				q(36293, { ["name"] = "It's Gotta Work!", }),	-- It's Gotta Work!
 				q(38245, { ["name"] = "Lots of Ore", ["_drop"] = { "g" }, }),	-- Lots of Ore
+				q(38194, { ["name"] = "Missive: Assault on the Gorian Proving Grounds", }),	-- Missive: Assault on the Gorian Proving Grounds
+				q(38202, { ["name"] = "Missive: Assault on the Gorian Proving Grounds", }),	-- Missive: Assault on the Gorian Proving Grounds
 				q(38244, { ["name"] = "More Ore", ["_drop"] = { "g" }, }),	-- More Ore
 				q(37752, { ["name"] = "Pet Battles Active", }),	-- Pet Battles Active
 				q(37972, { ["name"] = "Pet Battles Not Active", }),	-- Pet Battles Not Active

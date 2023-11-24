@@ -7,6 +7,34 @@ end
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(EMERALD_DREAM, {
 		n(RARES, sharedData({ ["isDaily"] = true },{
+			n(COMMON_BOSS_DROPS, {
+				["crs"] = {	-- Probably all, but going w/ only confirmed
+					209929,	-- Envoy of Winter
+					209893,	-- Firebrand Fystia
+					209913,	-- Fruitface
+					209936,	-- Greedy Gessie
+					210075,	-- Henri Snufftail
+					210046,	-- Keen-eyed Cian
+					210051,	-- Matriarch Keevah
+					208658,	-- Moltenbinder's Disciple
+					210045,	-- Moragh the Slothful
+					209113,	-- Nouberon
+					210161,	-- Ristar, the Rabid
+					209358,	-- Splinterlimb
+					210111,	-- Surging Lasher
+					209902,	-- Talthonel Ashwhisper
+					209911,	-- The Apostle
+					210508,	-- Voracious Mikanji
+				},
+				["groups"] = {
+					i(210171),	-- Formula: Enchanted Aspect's Dreaming Crest (RECIPE!)
+					i(210173),	-- Formula: Enchanted Whelpling's Dreaming Crest (RECIPE!)
+					i(210172),	-- Formula: Enchanted Wyrm's Dreaming Crest (RECIPE!)
+					i(210492),	-- Technique: Grotto Netherwing Drake: Chin Tendrils (RECIPE!)
+					i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)
+					i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)
+				},
+			}),
 			n(210559, {	-- Balboan (have vignette as Isaqa)
 				["questID"] = 78039,
 				["coord"] = { 22.8, 32.3, EMERALD_DREAM },
@@ -46,7 +74,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 					i(208881),	-- Shiversnap Blossom (QI!)
 					bo(77878, true),	-- Envoy of Winter bonus objective
-					i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)
 				},
 			}),
 			n(209893, {	-- Firebrand Fystia
@@ -119,7 +146,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(208342),	-- Girdle of Nature's Fury
 					i(208363),	-- Twinfang of the Cian
 					i(210650),	-- Mark of the Keen-Eyed Dreamsaber (CI!)
-					i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)
 				},
 			}),
 			n(210051, {	-- Matriarch Keevah
@@ -167,7 +193,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 55.0, 36.8, EMERALD_DREAM },
 				["g"] = {
 					i(210647),	-- Mark of the Umbramane (CI!)
-					i(210492),	-- Technique: Grotto Netherwing Drake: Chin Tendrils (RECIPE!)
 					i(208375),	-- Owlbear's Decisive Strike
 					i(209958),	-- Rune of the Umbramane (TODO: unless it is really zone drop)
 				},
@@ -220,7 +245,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["g"] = {
 					i(209956),	-- Ori's Verdant Feather
 					i(208381),	-- Scepter of Still Waters
-					i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)
 				},
 			}),
 			n(209358, {	-- Splinterlimb

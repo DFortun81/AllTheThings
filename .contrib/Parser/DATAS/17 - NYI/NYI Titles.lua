@@ -30,7 +30,6 @@ root(ROOTS.NeverImplemented, {
 				title(84),	-- <Name>, Hero of Orgrimmar
 				title(86),	-- <Name> of the Darkspear
 				title(60),	-- <Name> of the Ebon Blade
-				title(55),	-- <Name> of the Emerald Dream
 				title(54),	-- <Name> of the Ten Storms
 				title(87),	-- <Name> the Forsaken
 				title(82),	-- <Name> the Lion Hearted
