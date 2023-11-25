@@ -7,12 +7,14 @@ root(ROOTS.NeverImplemented, {
 	n(ARMOR),
 	filter(BAGS),
 	filter(BATTLE_PETS),			-- completed up to 10.1.5
+	n(CONDUITS),
 	filter(CONSUMABLES),
 	n(FACTIONS),
 	n(FLIGHT_PATHS),				-- completed up to 10.1.0
 	n(FOLLOWERS, {					-- completed up to 10.1.5
 		["timeline"] = { "added 6.0.1" },
 	}),
+	n(HEIRLOOMS),
 	-- #if AFTER 8.0.1
 	filter(ILLUSIONS),				-- completed up to 10.1.5
 	-- #endif
