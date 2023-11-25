@@ -40,7 +40,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 22.8, 32.3, EMERALD_DREAM },
 				["g"] = {
 					i(208356),	-- Earthbound Furbolg's Shroud
-					i(208385),	-- Flame Endowed Blade
 				},
 			}),
 			n(210050, {	-- Bloodstripe Great Ray
@@ -136,6 +135,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["g"] = {
 					i(208348),	-- Binds of the Shatterer
 					i(208345),	-- Forgebreaker's Belt
+					i(208385),	-- Flame Endowed Blade
 				},
 			}),
 			n(210046, {	-- Keen-eyed Cian
@@ -184,7 +184,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210729),	-- Mark of the Verdant Bristlebruin (CI!)
 					i(209954),	-- Moragh's Favorite Rock (TODO: remove if it will drop somewhere else)
 					i(208380),	-- Moragh's Kneading Claw
-					i(208381),	-- Scepter of Still Waters
 					i(208329),	-- Warm Grasp of the Dream
 				},
 			}),
