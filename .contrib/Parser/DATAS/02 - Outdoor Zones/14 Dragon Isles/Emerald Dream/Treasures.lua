@@ -46,6 +46,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			n(210544, {	-- Laughing Sprigling
 				["questID"] = 78033,	-- trigger 'accepted' part and completed when he drop chest (pseudo-quest?), have (w) in-game
+				["isWeekly"] = true,
 				["description"] = "Interact with this npc 3 times to spawn chest, after each interaction - he will run away. Just follow him.",
 				["coords"] = {
 					{ 64.3, 61.3, EMERALD_DREAM },
