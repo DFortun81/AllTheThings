@@ -94,7 +94,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}, {	-- RENOWN 19 --
 			}, {	-- RENOWN 20 --
 				title(532),	-- <Name>, Dream Defender
-				i(210992),	-- Overflowing Dream Warden Trove
+					-- RENOWN 20+++ --
+				q(76425, {	--	Renowned with the Dream Wardens
+					["provider"] = { "n", 208143 },	-- Keeper Amrymn
+					["repeatable"] = true,
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+					["g"] = {
+						i(210992, {	-- Overflowing Dream Warden Trove
+						}),
+					},
+				}),
 			},
 		})),
 	}),
