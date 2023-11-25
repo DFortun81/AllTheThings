@@ -975,7 +975,6 @@ root(ROOTS.NeverImplemented, {
 				i(210449),	-- Heated Scales
 				i(210443),	-- Matchbook
 				i(208856),	-- Pocket Lint
-				i(211270),	-- Pristine Core Leather
 				i(210442),	-- Sizzling Charcoal
 				i(210439),	-- Speck of Mana
 				i(210440),	-- Splendid Blossom
