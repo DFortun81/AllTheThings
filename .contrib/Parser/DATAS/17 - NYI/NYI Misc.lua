@@ -118,6 +118,19 @@ root(ROOTS.NeverImplemented, {
 				i(52446),	-- Illustrious Jewelcrafter's Token
 			})),
 
+			-- 4.2.0
+			tier(CATA_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 4.2.0" } }, {
+				i(71679),	-- Chest of the Fiery Conqueror
+				i(71686),	-- Chest of the Fiery Protector
+				i(71672),	-- Chest of the Fiery Vanquisher
+				i(71676),	-- Gauntlets of the Fiery Conqueror
+				i(71683),	-- Gauntlets of the Fiery Protector
+				i(71669),	-- Gauntlets of the Fiery Vanquisher
+				i(71678),	-- Leggings of the Fiery Conqueror
+				i(71685),	-- Leggings of the Fiery Protector
+				i(71671),	-- Leggings of the Fiery Vanquisher
+			})),
+
 			-- 4.3.0
 			tier(CATA_TIER, 3.0, bubbleDown({ ["timeline"] = { "created 4.3.0" } }, {
 				i(78892),	-- Perfect Geode
@@ -216,6 +229,34 @@ root(ROOTS.NeverImplemented, {
 
 			-- 7.2.0
 			tier(LEGION_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 7.2.0" } }, {
+				n(SEASON_RUTHLESS, {
+					n(PVP_ELITE, {
+						i(146483),	-- Ensemble: Elite Ruthless Gladiator's Dreadplate Armor
+						i(146481),	-- Ensemble: Elite Ruthless Gladiator's Dragonhide Armor
+						i(146479),	-- Ensemble: Elite Ruthless Gladiator's Chain Armor
+						i(146497),	-- Ensemble: Elite Ruthless Gladiator's Silk Armor
+						i(146495),	-- Ensemble: Elite Ruthless Gladiator's Scaled Armor
+						i(146493),	-- Ensemble: Elite Ruthless Gladiator's Satin Armor
+						i(146487),	-- Ensemble: Elite Ruthless Gladiator's Leather Armor
+						i(146491),	-- Ensemble: Elite Ruthless Gladiator's Ringmail Armor
+						i(146485),	-- Ensemble: Elite Ruthless Gladiator's Felweave Armor
+						i(146489),	-- Ensemble: Elite Ruthless Gladiator's Plate Armor
+					}),
+				}),
+				n(SEASON_CATACLYSMIC, {
+					n(PVP_ELITE, {
+						i(146463),	-- Ensemble: Elite Cataclysmic Gladiator's Dreadplate Armor
+						i(146461),	-- Ensemble: Elite Cataclysmic Gladiator's Dragonhide Armor
+						i(146459),	-- Ensemble: Elite Cataclysmic Gladiator's Chain Armor
+						i(146477),	-- Ensemble: Elite Cataclysmic Gladiator's Silk Armor
+						i(146475),	-- Ensemble: Elite Cataclysmic Gladiator's Scaled Armor
+						i(146473),	-- Ensemble: Elite Cataclysmic Gladiator's Satin Armor
+						i(146467),	-- Ensemble: Elite Cataclysmic Gladiator's Leather Armor
+						i(146471),	-- Ensemble: Elite Cataclysmic Gladiator's Ringmail Armor
+						i(146465),	-- Ensemble: Elite Cataclysmic Gladiator's Felweave Armor
+						i(146469),	-- Ensemble: Elite Cataclysmic Gladiator's Plate Armor
+					}),
+				}),
 				i(146801),	-- BUILDING CONTRIBUTION REWARD ITEM [NYI]
 				i(146800),	-- BUILDING CONTRIBUTION REWARD ITEM [NYI]
 				i(146799),	-- BUILDING CONTRIBUTION REWARD ITEM [NYI]
@@ -409,6 +450,10 @@ root(ROOTS.NeverImplemented, {
 				i(183841),	-- Emergency Flare
 				i(180738),	-- Enchanter's Journal
 				i(180739),	-- Engineer's Journal
+				i(183413),	-- Ensemble: Stitched Alacrity of Maldraxxus
+				i(183411),	-- Ensemble: Stitched Authority of Maldraxxus
+				i(183414),	-- Ensemble: Stitched Guile of Maldraxxus
+				i(183415),	-- Ensemble: Stitched Rationale of Maldraxxus
 				i(178564),	-- Eye of the Jailer:|CFFff2020 +1000 |R
 				i(178588),	-- Fae Armaments
 				i(184041),	-- Festive Umbrella
@@ -560,6 +605,7 @@ root(ROOTS.NeverImplemented, {
 				i(187434),	-- Lightseed Sapling
 				i(187432),	-- Magifocus Heartwood
 				i(186715),	-- Research Report: Improved Alloys
+				i(187137),	-- Research Report: Relic Finding Techniques
 				i(187526),	-- Suspicious List
 				i(184844),	-- Test Item
 				i(187515),	-- Theotar's Bottomless Teapot

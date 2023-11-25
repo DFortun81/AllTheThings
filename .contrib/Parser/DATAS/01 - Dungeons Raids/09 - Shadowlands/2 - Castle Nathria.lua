@@ -1528,9 +1528,3 @@ root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, {
 		q(70470),	-- Sire Denthrius
 	}),
 }));
-
-root(ROOTS.NeverImplemented, tier(SL_TIER, {
-	inst(1190, {	-- Castle Nathria
-		i(184873),	-- Soul Igniter (Test)
-	}),
-}));

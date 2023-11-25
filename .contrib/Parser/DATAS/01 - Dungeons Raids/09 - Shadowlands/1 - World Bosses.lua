@@ -256,11 +256,3 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 		}),
 	}),
 })));
-
-root(ROOTS.NeverImplemented, {
-	tier(SL_TIER, {
-		n(WORLD_BOSSES, {
-			i(190622),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Accessory - Trinket - Omni
-		}),
-	}),
-});

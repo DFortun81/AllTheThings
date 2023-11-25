@@ -799,6 +799,46 @@ root(ROOTS.NeverImplemented, {
 				-- #endif
 			}),
 		}),
+		tier(CATA_TIER, {
+			n(SEASON_VICIOUS, {
+				i(64693),	-- Bloodthirsty Gladiator's Barrier
+				i(64694),	-- Bloodthirsty Gladiator's Baton of Light
+				i(64695),	-- Bloodthirsty Gladiator's Battle Staff (Epic BG Item, never made it out of beta)
+				i(64700),	-- Bloodthirsty Gladiator's Bonecracker (Epic BG Item, never made it out of beta)
+				i(64701),	-- Bloodthirsty Gladiator's Bonegrinder (Epic BG Item, never made it out of beta)
+				i(64717),	-- Bloodthirsty Gladiator's Cleaver (Epic BG Item, never made it out of beta)
+				i(64726),	-- Bloodthirsty Gladiator's Decapitator (Epic BG item never made it out of beta)
+				i(64743),	-- Bloodthirsty Gladiator's Endgame
+				i(64744),	-- Bloodthirsty Gladiator's Energy Staff (Epic BG Item, never made it out of beta)
+				i(64775),	-- Bloodthirsty Gladiator's Fleshslicer (Epic BG item never made it out of beta)
+				i(64755),	-- Bloodthirsty Gladiator's Greatsword (Epic BG item never made it out of beta)
+				i(64752),	-- Bloodthirsty Gladiator's Gravel (Epic BG Item, never made it out of beta)
+				i(64758),	-- Bloodthirsty Gladiator's Hacker (Epic BG Item, never made it out of beta)
+				i(64760),	-- Bloodthirsty Gladiator's Heavy Crossbow (Epic BG item never made it out of beta)
+				i(64783),	-- Bloodthirsty Gladiator's Longbow (Epic BG item never made it out of beta)
+				i(64810),	-- Bloodthirsty Gladiator's Pike (Epic BG item never made it out of beta)
+				i(64816),	-- Bloodthirsty Gladiator's Pummeler (Epic BG Item, never made it out of beta)
+				i(64817),	-- Bloodthirsty Gladiator's Quickblade (Epic BG Item, never made it out of beta)
+				i(64818),	-- Bloodthirsty Gladiator's Redoubt
+				i(64823),	-- Bloodthirsty Gladiator's Reprieve
+				i(64824),	-- Bloodthirsty Gladiator's Rifle (Epic BG item never made it out of beta)
+				i(64825),	-- Bloodthirsty Gladiator's Right Render (Epic BG item never made it out of beta)
+				i(64826),	-- Bloodthirsty Gladiator's Ripper (Epic BG Item, never made it out of beta)
+				i(64848),	-- Bloodthirsty Gladiator's Shanker (Epic BG Item, never made it out of beta)
+				i(64849),	-- Bloodthirsty Gladiator's Shield Wall
+				i(64850),	-- Bloodthirsty Gladiator's Shiv
+				i(64774),	-- Bloodthirsty Gladiator's Slasher (Epic BG item never made it out of beta)
+				i(64858),	-- Bloodthirsty Gladiator's Slicer (Epic BG Item, never made it out of beta)
+				i(64859),	-- Bloodthirsty Gladiator's Spellblade (Epic BG Item, never made it out of beta)
+				i(64860),	-- Bloodthirsty Gladiator's Staff (Epic BG Item, never made it out of beta)
+				i(64861),	-- Bloodthirsty Gladiator's Touch of Defeat
+			}),
+			i(65878),	-- Charbelching Wand
+			i(52969),	-- Heartache Dagger
+			--
+			i(54554),	-- Bejeweled Ship's Wheel
+			i(54553),	-- Kliklak's Fearsome Greatsword
+		}),
 		tier(WOD_TIER, {
 			n(SEASON_PRIMAL, {
 				i(180460),	-- Primal Combatant's Decapitator
@@ -945,6 +985,24 @@ root(ROOTS.NeverImplemented, {
 			i(159554),	-- Wintersail Hammer
 			i(159592),	-- Wintersail Sabre
 			i(159510),	-- Wintersail Strikers
+		}),
+		tier(SL_TIER, {
+			inst(1193, {	-- Sanctum of Domination
+				i(181374),	-- Sylvanas Shadowlands Bow
+				i(186414, {	-- Rae'shalare, Death's Whisper (LFR)
+					["bonusID"] = 451,
+				}),
+				i(186414, {	-- Rae'shalare, Death's Whisper (Heroic)
+					["bonusID"] = 1,
+				}),
+				i(186414, {	-- Rae'shalare, Death's Whisper (Mythic)
+					["bonusID"] = 450,
+				}),
+			}),
+			i(182350),	-- Ardenweald Raid Mace STR
+			i(180152),	-- Drust 2H Axe
+			--
+			i(189780),	-- <DNT> 9.2 Raid - Sepulcher of the First Ones - Boss 01 - Solitary Guardian - Shield
 		}),
 	}),
 });

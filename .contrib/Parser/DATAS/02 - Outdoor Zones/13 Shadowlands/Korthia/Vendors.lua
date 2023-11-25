@@ -559,11 +559,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(63631),	-- learning Ensemble: Renathal's Battlefield Attire
 	q(63635),	-- learning Ensemble: Renathal's Field Inquisitor's Vestments
 });
-
-root(ROOTS.NeverImplemented, {
-	tier(SL_TIER, {
-		filter(MISC, {
-			i(187137),	-- Research Report: Relic Finding Techniques (this effect is now granted from a spell learned from quest 64368)
-		}),
-	}),
-});

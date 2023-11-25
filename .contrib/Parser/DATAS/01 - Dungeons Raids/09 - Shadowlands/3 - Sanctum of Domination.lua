@@ -1361,23 +1361,6 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 	}),
 })));
 
-root(ROOTS.NeverImplemented, {
-	tier(SL_TIER, {
-		inst(1193, {	-- Sanctum of Domination
-			i(181374),	-- Sylvanas Shadowlands Bow
-			i(186414, {	-- Rae'shalare, Death's Whisper (LFR)
-				["bonusID"] = 451,
-			}),
-			i(186414, {	-- Rae'shalare, Death's Whisper (Heroic)
-				["bonusID"] = 1,
-			}),
-			i(186414, {	-- Rae'shalare, Death's Whisper (Mythic)
-				["bonusID"] = 450,
-			}),
-		}),
-	}),
-});
-
 root(ROOTS.HiddenQuestTriggers, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
 	inst(1193, {	-- Sanctum of Domination
 		--q(63074),	-- Stygian ember loot >-- seems a too low number for this.

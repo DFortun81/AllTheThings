@@ -1281,17 +1281,3 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	})),
 }));
 -- #endif
-
--- #if AFTER 6.0.1.18500
-root(ROOTS.NeverImplemented, {
-	tier(CATA_TIER, {
-		n(ARMOR, {
-			filter(MAIL, {
-				i(113715, {	-- Sparkmail Vest
-					["timeline"] = { "created 6.0.1.18500" },
-				}),
-			}),
-		}),
-	}),
-});
--- #endif

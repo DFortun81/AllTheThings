@@ -679,6 +679,61 @@ root(ROOTS.NeverImplemented, {
 						i(64946),	-- Gladiator's Plate Gauntlets
 						i(64947),	-- Gladiator's Plate Chestpiece
 					}),
+					n(BACK, {
+						i(60782),	-- Vicious Gladiator's Cloak of Conquest
+						i(60784),	-- Vicious Gladiator's Cloak of Dominance
+						i(60785),	-- Vicious Gladiator's Cloak of Dominance
+						i(60774),	-- Vicious Gladiator's Cloak of Victory
+						i(60775),	-- Vicious Gladiator's Cloak of Victory
+						i(60777),	-- Vicious Gladiator's Cloak of Victory
+						i(60780),	-- Vicious Gladiator's Cloak of Conquest
+						i(60781),	-- Vicious Gladiator's Cloak of Conquest
+					}),
+					n(WRIST, {
+						i(60585),	-- Vicious Gladiator's Armwraps of Dominance
+						i(60608),	-- Vicious Gladiator's Armwraps of Dominance
+						i(60588),	-- Vicious Gladiator's Armwraps of Triumph
+						i(60597),	-- Vicious Gladiator's Armwraps of Triumph
+						i(60598),	-- Vicious Gladiator's Armwraps of Triumph
+					}),
+					n(WAIST, {
+						i(60606),	-- Vicious Gladiator's Belt of Dominance
+						i(60609),	-- Vicious Gladiator's Belt of Dominance
+					}),
+					n(FEET, {
+						i(60584),	-- Vicious Gladiator's Boots of Dominance
+						i(60590),	-- Vicious Gladiator's Boots of Triumph
+						i(60610),	-- Vicious Gladiator's Boots of Dominance
+					}),
+					filter(NECK_F, {
+						i(60660),	-- Vicious Gladiator's Pendant of Dominance
+						i(60663),	-- Vicious Gladiator's Pendant of Dominance
+						i(60665),	-- Vicious Gladiator's Pendant of Conquest
+						i(60666),	-- Vicious Gladiator's Pendant of Conquest
+						i(60667),	-- Vicious Gladiator's Pendant of Conquest
+						i(60671),	-- Vicious Gladiator's Pendant of Victory
+						i(60672),	-- Vicious Gladiator's Pendant of Victory
+						i(60674),	-- Vicious Gladiator's Pendant of Victory
+					}),
+					filter(FINGER_F, {
+						i(60646),	-- Vicious Gladiator's Band of Dominance
+						i(60648),	-- Vicious Gladiator's Band of Dominance
+						i(60652),	-- Vicious Gladiator's Band of Triumph
+						i(60653),	-- Vicious Gladiator's Band of Triumph
+						i(60654),	-- Vicious Gladiator's Band of Triumph
+						i(60655),	-- Vicious Gladiator's Band of Triumph
+						i(60656),	-- Vicious Gladiator's Band of Triumph
+						i(60657),	-- Vicious Gladiator's Band of Triumph
+					}),
+					filter(TRINKET_F, {
+						i(60802),	-- Vicious Gladiator's Medallion of Accuracy
+						i(60803),	-- Vicious Gladiator's Medallion of Alacrity
+						i(60804),	-- Vicious Gladiator's Medallion of Prowess
+						i(60805),	-- Vicious Gladiator's Medallion of Command
+						i(61027),	-- Vicious Gladiator's Emblem of Accuracy
+						i(61028),	-- Vicious Gladiator's Emblem of Alacrity
+						i(61029),	-- Vicious Gladiator's Emblem of Prowess
+					}),
 				}),
 			})),
 
@@ -3511,6 +3566,144 @@ root(ROOTS.NeverImplemented, {
 						i(175212),	-- Expeditionary Plate Warboots
 					}),
 				}),
+				n(KYRIAN, {
+					filter(MAIL, {
+						i(179394),	-- 9.0 Covenant - Bastion - Mail - Base - Head
+						i(179395),	-- 9.0 Covenant - Bastion - Mail - Base - Chest
+						i(179396),	-- 9.0 Covenant - Bastion - Mail - Base - Feet
+						i(179397),	-- 9.0 Covenant - Bastion - Mail - Base - Hands
+						i(179398),	-- 9.0 Covenant - Bastion - Mail - Base - Legs
+						i(179399),	-- 9.0 Covenant - Bastion - Mail - Base - Shoulders
+						i(179400),	-- 9.0 Covenant - Bastion - Mail - Base - Waist
+						i(179401),	-- 9.0 Covenant - Bastion - Mail - Base - Wrists
+					}),
+					filter(PLATE, {
+						i(177684),	-- 9.0 Covenant - Bastion - Plate - Head
+						i(177685),	-- 9.0 Covenant - Bastion - Plate - Chest
+						i(177686),	-- 9.0 Covenant - Bastion - Plate - Feet
+						i(177687),	-- 9.0 Covenant - Bastion - Plate - Hands
+						i(177688),	-- 9.0 Covenant - Bastion - Plate - Legs
+						i(177689),	-- 9.0 Covenant - Bastion - Plate - Shoulders
+						i(177690),	-- 9.0 Covenant - Bastion - Plate - Waist
+						i(177691),	-- 9.0 Covenant - Bastion - Plate - Wrists
+					}),
+					n(BACK, {
+						i(179402),	-- 9.0 Covenant - Bastion - Mail - Base - Cloak
+						i(177692),	-- 9.0 Covenant - Bastion - Plate - Base - Cloak
+					}),
+				}),
+				n(NIGHT_FAE, {
+					filter(CLOTH, {
+						i(179439),	-- 9.0 Covenant - Ardenweald - Cloth - Head
+						i(179440),	-- 9.0 Covenant - Ardenweald - Cloth - Chest
+						i(179441),	-- 9.0 Covenant - Ardenweald - Cloth - Feet
+						i(179442),	-- 9.0 Covenant - Ardenweald - Cloth - Hands
+						i(179443),	-- 9.0 Covenant - Ardenweald - Cloth - Legs
+						i(179444),	-- 9.0 Covenant - Ardenweald - Cloth - Shoulders
+						i(179445),	-- 9.0 Covenant - Ardenweald - Cloth - Waist
+						i(179446),	-- 9.0 Covenant - Ardenweald - Cloth - Wrists
+						i(179659),	-- Conservator's Silken Tunic
+						i(179660),	-- Winterborn Tunic
+					}),
+					filter(LEATHER, {
+						i(179430),	-- 9.0 Covenant - Ardenweald - Leather - Head
+						i(179431),	-- 9.0 Covenant - Ardenweald - Leather - Chest
+						i(179432),	-- 9.0 Covenant - Ardenweald - Leather - Feet
+						i(179433),	-- 9.0 Covenant - Ardenweald - Leather - Hands
+						i(179434),	-- 9.0 Covenant - Ardenweald - Leather - Legs
+						i(179435),	-- 9.0 Covenant - Ardenweald - Leather - Shoulders
+						i(179436),	-- 9.0 Covenant - Ardenweald - Leather - Waist
+						i(179437),	-- 9.0 Covenant - Ardenweald - Leather - Wrists
+						i(179775),	-- Conservator's Leather Tunic
+					}),
+					filter(MAIL, {
+						i(179448),	-- 9.0 Covenant - Ardenweald - Mail Head - D_01
+						i(179449),	-- 9.0 Covenant - Ardenweald - Mail Chest - D_01
+						i(179450),	-- 9.0 Covenant - Ardenweald - Mail Feet - D_01
+						i(179451),	-- 9.0 Covenant - Ardenweald - Mail Hands - D_01
+						i(179452),	-- 9.0 Covenant - Ardenweald - Mail Legs - D_01
+						i(179453),	-- 9.0 Covenant - Ardenweald - Mail Shoulders - D_01
+						i(179454),	-- 9.0 Covenant - Ardenweald - Mail Waist - D_01
+						i(179455),	-- 9.0 Covenant - Ardenweald - Mail Wrists - D_01
+						i(180570),	-- 9.0 Covenant - Ardenweald - Mail Head - D_02
+						i(180571),	-- 9.0 Covenant - Ardenweald - Mail Chest - D_02
+						i(180572),	-- 9.0 Covenant - Ardenweald - Mail Feet - D_02
+						i(180573),	-- 9.0 Covenant - Ardenweald - Mail Hands - D_02
+						i(180574),	-- 9.0 Covenant - Ardenweald - Mail Legs - D_02
+						i(180575),	-- 9.0 Covenant - Ardenweald - Mail Shoulders - D_02
+						i(180576),	-- 9.0 Covenant - Ardenweald - Mail Waist - D_02
+						i(180577),	-- 9.0 Covenant - Ardenweald - Mail Wrists - D_02
+					}),
+					filter(PLATE, {
+						i(173914),	-- 9.0 Covenant - Ardenweald - Plate Head
+						i(173915),	-- 9.0 Covenant - Ardenweald - Plate Chest
+						i(173916),	-- 9.0 Covenant - Ardenweald - Plate Feet
+						i(173917),	-- 9.0 Covenant - Ardenweald - Plate Hands
+						i(173918),	-- 9.0 Covenant - Ardenweald - Plate Legs
+						i(173919),	-- 9.0 Covenant - Ardenweald - Plate Shoulders
+						i(173920),	-- 9.0 Covenant - Ardenweald - Plate Waist
+						i(173921),	-- 9.0 Covenant - Ardenweald - Plate Wrists
+					}),
+					n(BACK, {
+						i(179621),	-- Ardenweald Covenant Mail Cloak
+						i(179630),	-- Ardenweald Covenant Mail Cloak
+						i(179631),	-- Ardenweald Covenant Mail Cloak
+						i(179632),	-- Ardenweald Covenant Mail Cloak
+						i(179447),	-- 9.0 Covenant - Ardenweald - Cloth - Cloak
+						i(179438),	-- 9.0 Covenant - Ardenweald - Leather - Cloak
+						i(179456),	-- 9.0 Covenant - Ardenweald - Mail Cloak - D_01
+						i(180578),	-- 9.0 Covenant - Ardenweald - Mail Cloak - D_02
+						i(173926),	-- 9.0 Covenant - Ardenweald - Plate Cloak
+					}),
+				}),
+				n(NECROLORD, {
+					filter(CLOTH, {
+						i(179412),	-- 9.0 Covenant - Maldraxxus - Cloth - Head
+						i(179413),	-- 9.0 Covenant - Maldraxxus - Cloth - Chest
+						i(179414),	-- 9.0 Covenant - Maldraxxus - Cloth - Feet
+						i(179415),	-- 9.0 Covenant - Maldraxxus - Cloth - Hands
+						i(179416),	-- 9.0 Covenant - Maldraxxus - Cloth - Legs
+						i(179417),	-- 9.0 Covenant - Maldraxxus - Cloth - Shoulders
+						i(179418),	-- 9.0 Covenant - Maldraxxus - Cloth - Waist
+						i(179419),	-- 9.0 Covenant - Maldraxxus - Cloth - Wrists
+					}),
+					filter(LEATHER, {
+						i(179403),	-- 9.0 Covenant - Maldraxxus - Leather - Head
+						i(179404),	-- 9.0 Covenant - Maldraxxus - Leather - Chest
+						i(179405),	-- 9.0 Covenant - Maldraxxus - Leather - Feet
+						i(179406),	-- 9.0 Covenant - Maldraxxus - Leather - Hands
+						i(179407),	-- 9.0 Covenant - Maldraxxus - Leather - Legs
+						i(179408),	-- 9.0 Covenant - Maldraxxus - Leather - Shoulders
+						i(179409),	-- 9.0 Covenant - Maldraxxus - Leather - Waist
+						i(179410),	-- 9.0 Covenant - Maldraxxus - Leather - Wrists
+					}),
+					filter(MAIL, {
+						i(179421),	-- 9.0 Covenant - Maldraxxus - Mail Head
+						i(179422),	-- 9.0 Covenant - Maldraxxus - Mail Chest
+						i(179423),	-- 9.0 Covenant - Maldraxxus - Mail Feet
+						i(179424),	-- 9.0 Covenant - Maldraxxus - Mail Hands
+						i(179425),	-- 9.0 Covenant - Maldraxxus - Mail Legs
+						i(179426),	-- 9.0 Covenant - Maldraxxus - Mail Shoulders
+						i(179427),	-- 9.0 Covenant - Maldraxxus - Mail Waist
+						i(179428),	-- 9.0 Covenant - Maldraxxus - Mail Wrists
+					}),
+					filter(PLATE, {
+						i(174185),	-- 9.0 Covenant - Maldraxxus - Plate Head
+						i(174186),	-- 9.0 Covenant - Maldraxxus - Plate Chest
+						i(174187),	-- 9.0 Covenant - Maldraxxus - Plate Feet
+						i(174188),	-- 9.0 Covenant - Maldraxxus - Plate Hands
+						i(174189),	-- 9.0 Covenant - Maldraxxus - Plate Legs
+						i(174190),	-- 9.0 Covenant - Maldraxxus - Plate Shoulders
+						i(174191),	-- 9.0 Covenant - Maldraxxus - Plate Waist
+						i(174192),	-- 9.0 Covenant - Maldraxxus - Plate Wrists
+					}),
+					n(BACK, {
+						i(179420),	-- 9.0 Covenant - Maldraxxus - Cloth - Cloak
+						i(179411),	-- 9.0 Covenant - Maldraxxus - Leather - Cloak
+						i(179429),	-- 9.0 Covenant - Maldraxxus - Mail Cloak
+						i(174193),	-- 9.0 Covenant - Maldraxxus - Plate Cloak
+					}),
+				}),
 				n(SEASON_CORRUPTED, {
 					n(TRINKET, {
 						i(184055),	-- Corrupted Gladiator's Medallion
@@ -3544,6 +3737,57 @@ root(ROOTS.NeverImplemented, {
 						i(180556),	-- Doomblade Tunic
 						i(180557),	-- Doomblade Pants
 						i(180558),	-- Doomblade Spaulders
+					}),
+				}),
+				n(VENTHYR, {
+					filter(CLOTH, {
+						i(179466),	-- 9.0 Covenant - Revendreth - Cloth - Head
+						i(179467),	-- 9.0 Covenant - Revendreth - Cloth - Chest
+						i(179468),	-- 9.0 Covenant - Revendreth - Cloth - Feet
+						i(179469),	-- 9.0 Covenant - Revendreth - Cloth - Hands
+						i(179470),	-- 9.0 Covenant - Revendreth - Cloth - Legs
+						i(179471),	-- 9.0 Covenant - Revendreth - Cloth - Shoulders
+						i(179472),	-- 9.0 Covenant - Revendreth - Cloth - Waist
+						i(179473),	-- 9.0 Covenant - Revendreth - Cloth - Wrists
+					}),
+					filter(LEATHER, {
+						i(179457),	-- 9.0 Covenant - Revendreth - Leather - Head
+						i(179458),	-- 9.0 Covenant - Revendreth - Leather - Chest
+						i(179459),	-- 9.0 Covenant - Revendreth - Leather - Feet
+						i(179460),	-- 9.0 Covenant - Revendreth - Leather - Hands
+						i(179461),	-- 9.0 Covenant - Revendreth - Leather - Legs
+						i(179462),	-- 9.0 Covenant - Revendreth - Leather - Shoulders
+						i(179463),	-- 9.0 Covenant - Revendreth - Leather - Waist
+						i(179464),	-- 9.0 Covenant - Revendreth - Leather - Wrists
+					}),
+					filter(MAIL, {
+						i(179475),	-- 9.0 Covenant - Revendreth - Mail Head
+						i(179476),	-- 9.0 Covenant - Revendreth - Mail Chest
+						i(179477),	-- 9.0 Covenant - Revendreth - Mail Feet
+						i(179478),	-- 9.0 Covenant - Revendreth - Mail Hands
+						i(179479),	-- 9.0 Covenant - Revendreth - Mail Legs
+						i(179480),	-- 9.0 Covenant - Revendreth - Mail Shoulders
+						i(179481),	-- 9.0 Covenant - Revendreth - Mail Waist
+						i(179482),	-- 9.0 Covenant - Revendreth - Mail Wrists
+					}),
+					filter(PLATE, {
+						i(174198),	-- 9.0 Covenant - Revendreth - Plate Head
+						i(174199),	-- 9.0 Covenant - Revendreth - Plate Chest
+						i(174200),	-- 9.0 Covenant - Revendreth - Plate Feet
+						i(174201),	-- 9.0 Covenant - Revendreth - Plate Hands
+						i(174202),	-- 9.0 Covenant - Revendreth - Plate Legs
+						i(174203),	-- 9.0 Covenant - Revendreth - Plate Shoulders
+						i(174204),	-- 9.0 Covenant - Revendreth - Plate Waist
+						i(174205),	-- 9.0 Covenant - Revendreth - Plate Wrists
+					}),
+					n(BACK, {
+						i(181812),	-- 9.0 Covenant - Revendreth - Accessory - Special Back - 1 - Red
+						i(181813),	-- 9.0 Covenant - Revendreth - Accessory - Special Back - 2 - Black
+						i(181814),	-- 9.0 Covenant - Revendreth - Accessory - Special Back - 3 - Red
+						i(179474),	-- 9.0 Covenant - Revendreth - Cloth - Cloak
+						i(179465),	-- 9.0 Covenant - Revendreth - Leather - Cloak
+						i(179483),	-- 9.0 Covenant - Revendreth - Mail Cloak
+						i(174206),	-- 9.0 Covenant - Revendreth - Plate Cloak
 					}),
 				}),
 				n(WAR_EFFORT, {
@@ -3592,6 +3836,15 @@ root(ROOTS.NeverImplemented, {
 							i(177111),	-- Honorbound Centurion's Gauntlets
 							i(177112),	-- Honorbound Centurion's Greaves
 						}),
+					}),
+				}),
+			})),
+
+			-- 9.1.5
+			tier(SL_TIER, 1.5, bubbleDown({ ["timeline"] = { "created 9.1.5" } }, {
+				n(-10048, {	-- Mage Tower
+					cl(MAGE, {	-- Regalia of the Arcane Tempest set
+						i(188643),	-- Raiment of the Arcane Tempest
 					}),
 				}),
 			})),

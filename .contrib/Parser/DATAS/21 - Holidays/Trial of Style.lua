@@ -471,18 +471,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(55587),	-- Ensemble: Tranquil Spiritbind Regalia
 	}),
 });
-
-root(ROOTS.NeverImplemented, bubbleDown({ ["timeline"] = { "created 7.2.5" } }, {
-	n(TRIAL_OF_STYLE_HEADER, {
-		i(188240),	-- Augur's Walkers
-		i(188246),	-- Bloodbathed Slippers
-		i(188247),	-- Boots of the Blightbelcher
-		i(188242),	-- Cleric's Sabatons
-		i(188245),	-- Cold Cage Moccasins
-		i(188251),	-- Corrupted Cleats
-		i(188239),	-- Keeper's Strides
-		i(188250),	-- Pustule Prancers
-		i(188241),	-- Stalker's Treads
-		i(188238),	-- Thief's Footpads
-	}),
-}));

@@ -653,11 +653,3 @@ root(ROOTS.Zones, {
 		}),
 	}),
 });
-
-root(ROOTS.NeverImplemented, {
-	tier(CATA_TIER, {
-		n(WEAPONS, {
-			i(52969),	-- Heartache Dagger	-- 52965 got added
-		}),
-	}),
-});

@@ -5843,6 +5843,10 @@ root(ROOTS.NeverImplemented, {
 				q(59986),	-- Wide Worlds of Catalysts
 				q(60888),	-- Ceremony of Awakening
 				q(60599),	-- Soul Shape
+				q(62012),	-- Ensemble: Stitched Alacrity of Maldraxxus
+				q(62011),	-- Ensemble: Stitched Authority of Maldraxxus
+				q(62013),	-- Ensemble: Stitched Guile of Maldraxxus
+				q(62014),	-- Ensemble: Stitched Rationale of Maldraxxus
 				-- Quest from Unsorted
 				q(60286, { ["name"] = "A Token of Our Admiration", }),	-- A Token of Our Admiration
 				q(60463, { ["name"] = "Anima Appeal", }),	-- Anima Appeal

@@ -119,6 +119,7 @@ root(ROOTS.NeverImplemented, {
 				}),
 				n(P2xx, {
 					i(25794),	-- Bone Studded Girdle
+					i(33964),	-- Helm of the Stormcaller
 					--
 					i(30289),	-- Cenarion Warden's Belt
 				}),
@@ -341,10 +342,23 @@ root(ROOTS.NeverImplemented, {
 					i(65746),	-- Leggings of Valorous Defense
 					i(47102),	-- Manaweave Robe
 				}),
+				tier(CATA_TIER, 3.0, {
+					i(78532),	-- Clockwinder's Immaculate Gloves
+					i(78608),	-- Clockwinder's Immaculate Gloves
+					i(78541),	-- Hood of Hidden Flesh
+					i(78556),	-- Lightwarper Vestments
+					i(78635),	-- Lightwarper Vestments
+					i(78555),	-- Robes of Searing Shadow
+					i(78542),	-- Soulgaze Cowl
+					i(78620),	-- Soulgaze Cowl
+					i(78533),	-- The Hands of Gilly
+					i(78607),	-- The Hands of Gilly
+				}),
 			}),
 			filter(LEATHER, {
 				tier(CATA_TIER, 0.3, {
 					i(56701),	-- Jinxed Vest
+					i(56405),	-- Oasis Bracers
 					i(59796),	-- Treads of Decapod Death
 					i(63012),	-- Skull Kickers
 					--
@@ -396,8 +410,40 @@ root(ROOTS.NeverImplemented, {
 					i(62703),	-- Art Template Leather Shoulder - Leather_Cataclysm_B_01 - Brown
 					i(62704),	-- Art Template Leather Wrist - Leather_Cataclysm_B_01 - Brown
 				}),
+				tier(CATA_TIER, 2.0, {
+					i(71569),	-- Flamebinder Bracers
+					i(71394),	-- Flamebinding Girdle
+					i(71581),	-- Smolderskull Bindings
+				}),
+				tier(CATA_TIER, 3.0, {
+					i(78565),	-- Belt of Hidden Keys
+					i(78640),	-- Belt of Hidden Keys
+					i(78566),	-- Belt of Universal Curing
+					i(78641),	-- Belt of Universal Curing
+					i(78517),	-- Boots of Fungoid Growth
+					i(78592),	-- Boots of Fungoid Growth
+					i(78574),	-- Bracers of Manifold Pockets
+					i(78654),	-- Bracers of Manifold Pockets
+					i(78505),	-- Decaying Herbalist's Robes
+					i(78582),	-- Decaying Herbalist's Robes
+					i(78531),	-- Fungus-Born Gloves
+					i(78604),	-- Fungus-Born Gloves
+					i(78530),	-- Lightfinger Handwraps
+					i(78609),	-- Lightfinger Handwraps
+					i(78575),	-- Luminescent Bracers
+					i(78652),	-- Luminescent Bracers
+					i(78540),	-- Helmet of Perpetual Rebirth
+					i(78618),	-- Helmet of Perpetual Rebirth
+					i(78539),	-- Nocturnal Gaze
+					i(78617),	-- Nocturnal Gaze
+					i(78516),	-- Rooftop Griptoes
+					i(78594),	-- Rooftop Griptoes
+					i(78504),	-- Shadowbinder Chestguard
+					i(78581),	-- Shadowbinder Chestguard
+				}),
 				n(P4xx, {
 					i(59790),	-- Gnash-Crusher Helm
+					i(65099),	-- Tsanga's Helm
 				})
 			}),
 			filter(MAIL, {
@@ -438,6 +484,30 @@ root(ROOTS.NeverImplemented, {
 					i(54781),	-- Thorbia's Gauntlets
 					i(54783),	-- Silvered Bronze Shoulders
 				}),
+				tier(CATA_TIER, 2.0, {
+					i(71570),	-- Bracers of Forked Lightning
+					i(71582),	-- Bracers of Misting Ash
+				}),
+				tier(CATA_TIER, 3.0, {
+					i(78527),	-- Arrowflick Gauntlets
+					i(78610),	-- Arrowflick Gauntlets
+					i(78512),	-- Boneshard Boots
+					i(78596),	-- Boneshard Boots
+					i(78572),	-- Bracers of the Spectral Wolf
+					i(78561),	-- Cord of Dragon Sinew
+					i(78642),	-- Cord of Dragon Sinew
+					i(78571),	-- Dragonbelly Bracers
+					i(78653),	-- Dragonbelly Bracers
+					i(78501),	-- Dragonflayer Vest
+					i(78579),	-- Dragonflayer Vest
+					i(78502),	-- Ghostworld Chestguard
+					i(78562),	-- Girdle of Shamanic Fury
+					i(78528),	-- Gloves of Ghostly Dreams
+					i(78513),	-- Sabatons of the Graceful Spirit
+					i(78537),	-- Wolfdream Circlet
+					i(78536),	-- Zeherah's Dragonskull Crown
+					i(78619),	-- Zeherah's Dragonskull Crown
+				}),
 				n(P4xx, {
 					i(68844),	-- Unknown
 				}),
@@ -454,6 +524,39 @@ root(ROOTS.NeverImplemented, {
 					i(59772),	-- Bracers of Burbling Freedom (Yes, Same name)
 					i(65743),	-- Helm of Vicious Direction
 					i(54789),	-- Art Template Plate Belt - Plate_Common_C_01 - Rust
+				}),
+				tier(CATA_TIER, 2.0, {
+					i(71583),	-- Bracers of Imperious Truths
+					i(71585),	-- Bracers of Regal Force
+					i(71584),	-- Gigantiform Bracers
+					i(71400),	-- Girdle of the Indomitable Flame
+				}),
+				tier(CATA_TIER, 3.0, {
+					i(78563),	-- Blinding Girdle of Truth
+					i(78644),	-- Blinding Girdle of Truth
+					i(78499),	-- Bones of the Damned
+					i(78583),	-- Bones of the Damned
+					i(78650),	-- Bracers of Unrelenting Excellence
+					i(78584),	-- Chestplate of the Unshakable Titan
+					i(78564),	-- Demonbone Waistguard
+					i(78645),	-- Demonbone Waistguard
+					i(78573),	-- Flashing Bracers of Warmth
+					i(78648),	-- Flashing Bracers of Warmth
+					i(78646),	-- Forgesmelter Waistplate
+					i(78606),	-- Gauntlets of Feathery Blows
+					i(78529),	-- Gleaming Grips of Mending
+					i(78612),	-- Gleaming Grips of Mending
+					i(78538),	-- Glowing Wings of Hope
+					i(78621),	-- Glowing Wings of Hope
+					i(78525),	-- Grimfist Crushers
+					i(78605),	-- Grimfist Crushers
+					i(78569),	-- Heartcrusher Wristplates
+					i(78649),	-- Heartcrusher Wristplates
+					i(78615),	-- Jaw of Repudiation
+					i(78503),	-- Shining Carapace of Glory
+					i(78578),	-- Shining Carapace of Glory
+					i(78534),	-- Visage of Petrification
+					i(78614),	-- Visage of Petrification
 				}),
 				n(P4xx, {
 					i(47091),	-- Unfaltering Armguards (4.0)
@@ -689,6 +792,7 @@ root(ROOTS.NeverImplemented, {
 					i(114277),	-- Leafscale Belt
 					i(114257),	-- Leafscale Boots
 					i(114249),	-- Leafscale Bracers
+					i(113715),	-- Sparkmail Vest
 					-- Does Not Load In Game --
 					i(109517),	-- 6.0 QA Combat Test Mail Chest 4
 					i(107888),	-- 7.0 PH Mail Belt
@@ -1113,6 +1217,20 @@ root(ROOTS.NeverImplemented, {
 					i(133018),	-- Azsuna Package 3 - Holy 1 - Unused
 					i(138229),	-- Nightmare Boss 3 Relic Storm
 					i(130162),	-- Val-Sharah Artifact Gem #1 [Holy]
+				}),
+			}),
+			n(TRIAL_OF_STYLE_HEADER, {
+				tier(LEGION_TIER, 2.5, {
+					i(188240),	-- Augur's Walkers
+					i(188246),	-- Bloodbathed Slippers
+					i(188247),	-- Boots of the Blightbelcher
+					i(188242),	-- Cleric's Sabatons
+					i(188245),	-- Cold Cage Moccasins
+					i(188251),	-- Corrupted Cleats
+					i(188239),	-- Keeper's Strides
+					i(188250),	-- Pustule Prancers
+					i(188241),	-- Stalker's Treads
+					i(188238),	-- Thief's Footpads
 				}),
 			}),
 		}),
@@ -1728,6 +1846,7 @@ root(ROOTS.NeverImplemented, {
 					i(188086),	-- Harmonium Shoulderplates
 					i(188081),	-- Harmonium Visor
 					--
+					i(190623),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Plate Shoulders
 					i(190298),	-- Eternal Warder's Breastplate
 					i(190303),	-- Eternal Warder's Buckle
 					i(190265),	-- Eternal Warder's Chestplate
@@ -2174,6 +2293,9 @@ root(ROOTS.NeverImplemented, {
 					i(179341),	-- Critterbomb Contraption
 					i(181332),	-- Sinstone Kernel
 				}),
+				tier(SL_TIER, 0.5, {
+					i(184873),	-- Soul Igniter (Test)
+				}),
 				tier(SL_TIER, 2.0, {
 					i(188105),	-- [PH] Copy Fine Razorwing Quill
 					i(188057),	-- [PH] Copy Harmonic Crowd Breaker
@@ -2181,6 +2303,8 @@ root(ROOTS.NeverImplemented, {
 					i(188092),	-- [PH] Copy Korthian Anima Vessel
 					i(188058),	-- [PH] Copy Tome of Insight
 					i(188103),	-- [PH] Copy Vault Attendant's Cape
+					--
+					i(190622),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Accessory - Trinket - Omni
 				}),
 			}),
 		}),

@@ -31,6 +31,12 @@ root(ROOTS.NeverImplemented, {
 				i(115291),		-- Whole Pot-Roasted Elekk
 			})),
 		}),
+		tier(SL_TIER, {
+			-- 9.2.0
+			tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
+				i(185974),	-- Bahmeht Chain Link
+			})),
+		}),
 	}),
 });
 -- #endif

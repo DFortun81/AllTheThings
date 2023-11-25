@@ -274,13 +274,3 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 		},
 	}),
 }));
-root(ROOTS.NeverImplemented, {
-	tier(CATA_TIER, {
-		inst(72, {	-- The Bastion of Twilight
-			["mapID"] = 294,
-			["groups"] = {
-				i(65099),	-- Tsanga's Helm
-			},
-		}),
-	}),
-});

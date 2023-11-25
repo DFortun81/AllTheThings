@@ -493,11 +493,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(64149),	-- Completing any quest with Winslow Swan during necrolord assault (might be achievement "this army" pop),
 	q(64983),	-- After completing The Maw intro, upon teleport and loading screen into Oribos (level 48 human rogue)
 });
-
-root(ROOTS.NeverImplemented, {
-	tier(SL_TIER, {
-		filter(CONSUMABLES, {
-			i(185974),	-- Bahmeht Chain Link (PTR only)
-		}),
-	}),
-});

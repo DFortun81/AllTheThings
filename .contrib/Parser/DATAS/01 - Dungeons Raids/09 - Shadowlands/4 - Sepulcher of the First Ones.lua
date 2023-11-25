@@ -1083,12 +1083,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		}),
 	}),
 });
-
-root(ROOTS.NeverImplemented, {
-	tier(SL_TIER, {
-		inst(1195, {	-- Sepulcher of the First Ones
-			i(189780),	-- <DNT> 9.2 Raid - Sepulcher of the First Ones - Boss 01 - Solitary Guardian - Shield
-			i(190623),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - Trash Drops - Armor - Plate Shoulders
-		}),
-	}),
-});

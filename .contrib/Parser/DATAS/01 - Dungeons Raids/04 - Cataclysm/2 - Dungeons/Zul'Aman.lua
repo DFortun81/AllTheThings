@@ -285,15 +285,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(35443),	-- Zul'Aman Reward Quest - Heroic completion
 	}),
 });
-root(ROOTS.NeverImplemented, {
-	tier(CATA_TIER, {
-		inst(77, {	-- Zul'Aman
-			["mapID"] = ZULAMAN,
-			["groups"] = {
-				filter(MAIL, {
-					i(33964),	-- Helm of the Stormcaller - Never Added
-				}),
-			},
-		}),
-	}),
-});

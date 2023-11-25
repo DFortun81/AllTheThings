@@ -1793,8 +1793,8 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(63165),	-- after earning "To the Moon" (achievementID 14887) (spellID 347027)
 	q(62989),	-- Arsenal: Doubt's Weapon Cache
 	q(62990),	-- Arsenal: Wisdom's Weapon Cache
-	q(63018),	-- learning Ensemble: Vestments of the Discordant
-	q(63019),	-- learning Ensemble: Garb of the Discordant
-	q(63020),	-- learning Ensemble: Chain of the Discordant
-	q(63021),	-- learning Ensemble: Warplate of the Discordant
+	q(63018),	-- Ensemble: Vestments of the Discordant
+	q(63019),	-- Ensemble: Garb of the Discordant
+	q(63020),	-- Ensemble: Chain of the Discordant
+	q(63021),	-- Ensemble: Warplate of the Discordant
 });
