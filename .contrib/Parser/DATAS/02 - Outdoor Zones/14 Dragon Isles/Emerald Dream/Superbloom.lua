@@ -166,7 +166,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["description"] = "Rewarded for achieving 8000 points at the Superbloom Event.\nThe Event always starts on the hour.",
 				}),
 				i(211413, {	-- Budding Dreamtrove
-					["description"] = "Rewarded for achieving 4500 points or more at the Superbloom Event.\nThe Event always starts on the hour.",
+					["description"] = "Rewarded for achieving 5500 points or more at the Superbloom Event.\nThe Event always starts on the hour.",
 					["groups"] = {
 						i(207762),	-- Grotto Netherwing Drake: Chin Spike (DM!)
 						i(207774),	-- Grotto Netherwing Drake: Finned Jaw (DM!)
@@ -179,7 +179,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 				i(211411, {	-- Sprouting Dreamtrove
-					["description"] = "Rewarded for achieving 2500 points or more at the Superbloom Event.\nThe Event always starts on the hour.",
+					["description"] = "Rewarded for achieving 2300 points or more at the Superbloom Event.\nThe Event always starts on the hour.",
 				}),
 			}),
 		}),
