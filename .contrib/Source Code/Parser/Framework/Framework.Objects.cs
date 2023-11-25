@@ -1954,6 +1954,7 @@ end");
                     case "_npcs":
                     case "_objects":
                     case "_achievements":
+                    case "_factions":
                         {
                             MergeIntegerArrayData(item, field, value);
                             break;
@@ -2142,7 +2143,6 @@ end");
                         }
 
                     case "_items":
-                    case "_factions":
                     case "_encounter":
                         {
                             List<long> list = CompressToList<long>(value);

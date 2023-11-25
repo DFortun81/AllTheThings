@@ -45,6 +45,7 @@ namespace ATT.DB.Types
         public bool IsUseful() =>
             GetSourceQuest() > 0 ||
             GetSpellID() > 0 ||
+            GetFactionID() > 0 ||
             GetProviderItem() > 0 ||
             GetProviderNPC() > 0 ||
             GetRequiredAchievement() > 0 ||
@@ -55,6 +56,9 @@ namespace ATT.DB.Types
 
         public long GetSpellID() =>
             Type == 29 || Type == 34 ? Asset : 0;
+
+        public long GetFactionID() =>
+            Type == 46 ? Asset : 0;
 
         public long GetProviderItem() =>
         Type == 36 || Type == 41 || Type == 42 || Type == 57 ? Asset : 0;

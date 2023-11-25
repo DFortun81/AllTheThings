@@ -1026,6 +1026,19 @@ namespace ATT
             }
         }
 
+        private static bool TryGetSOURCED(string field, object idObj, out List<IDictionary<string, object>> sources)
+        {
+            if (SOURCED.TryGetValue(field, out Dictionary<long, List<IDictionary<string, object>>> fieldSources) && idObj is long id && id > 0
+                && fieldSources.TryGetValue(id, out List<IDictionary<string, object>> objectSources))
+            {
+                sources = objectSources;
+                return true;
+            }
+
+            sources = default;
+            return false;
+        }
+
         private static void CaptureForSOURCED(IDictionary<string, object> data, string field, object idObj)
         {
             if (SOURCED.TryGetValue(field, out Dictionary<long, List<IDictionary<string, object>>> fieldSources) && idObj is long id && id > 0)
@@ -1581,11 +1594,8 @@ namespace ATT
                 {
                     //LogDebugWarn($"Remove _quests {ToJSON(quests)} from Criteria {achID}:{criteriaID}. DB contains sourceQuest: {sq}");
                 }
-                else
-                {
-                    //LogDebug($"INFO: Added _quests to Criteria {achID}:{criteriaID} with sourceQuest: {sq}");
-                }
 
+                LogDebug($"INFO: Added _quests to Criteria {achID}:{criteriaID} with sourceQuest: {sq}");
                 Objects.Merge(data, "_quests", sq);
 
                 // Criteria moved under a Quest should not have a cost/provider, but rather their destination should have that data
@@ -1599,13 +1609,9 @@ namespace ATT
 
             // Provider Item for the Criteria (if not ignored)
             long providerItem = criteriaData.GetProviderItem();
-            if (providerItem > 0 && (!data.TryGetValue("_ignorable", out bool ignorable) || !ignorable))
+            if (providerItem > 0)
             {
-                if (data.TryGetValue("providers", out object providers))
-                {
-                    //LogDebug($"INFO: Added providers to Criteria {achID}:{criteriaID} with Item: {providerItem}");
-                }
-
+                LogDebug($"INFO: Added providers to Criteria {achID}:{criteriaID} with Item: {providerItem}");
                 Objects.Merge(data, "providers", new List<object> { new List<object> { "i", providerItem } });
             }
 
@@ -1624,11 +1630,8 @@ namespace ATT
                     //LogDebugWarn($"Remove _npcs/crs {ToJSON(npcs)} from Criteria {achID}:{criteriaID}. DB contains linked NPC: {providerNPC}");
                     data.Remove("crs");
                 }
-                else
-                {
-                    //LogDebug($"INFO: Added _npcs to Criteria {achID}:{criteriaID} with NPC: {providerNPC}");
-                }
 
+                LogDebug($"INFO: Added _npcs to Criteria {achID}:{criteriaID} with NPC: {providerNPC}");
                 Objects.Merge(data, "_npcs", providerNPC);
             }
 
@@ -1646,52 +1649,19 @@ namespace ATT
                 //Objects.Merge(data, "spellID", spellID);
             }
 
-            //bool critUID = false;
-            //bool critID = false;
-            //long criteriaInfoID = 0;
-            //long criteriaInfoUID = 0;
-            //var criteriaData = criteriaList.AsTypedEnumerable<IDictionary<string, object>>().FirstOrDefault(c =>
-            //    (c.TryGetValue("criteriaID", out criteriaInfoID) | c.TryGetValue("criteriaUID", out criteriaInfoUID)) &&
-            //    ((critID = criteriaInfoID == criteriaID) | (critUID = criteriaInfoUID == criteriaID)));
-            //if (criteriaData == null)
-            //    return;
-
-            // Make sure criteria include both ID and UID if possible for clarity in-game (not entirely sure this is needed yet... Achievement/Criteria is so complicated)
-            //if (critID && criteriaInfoUID > 0)
-            //{
-            //    data["uid"] = criteriaInfoUID;
-            //}
-            //if (critUID && criteriaInfoID > 0)
-            //{
-            //    data["id"] = criteriaInfoID;
-            //}
-
-            // Check for criteria DB data that is useful for parsing
-
-            // TODO: can do this later when adding some way to verify that the criteria WAS actually moved under the NPC
-            // currently it will try to move under certain NPCs which are not sourced and basically disappear
-            // n-provider can convert to _npcs for criteria cloning
-            //if (criteriaData.TryGetValue("provider", out object providerObject) && providerObject is IList<object> objectList)
-            //{
-            //    var type = objectList[0] as string;
-            //    objectList[1].TryConvert(out long id);
-            //    if (id > 0 && NPCS_WITH_REFERENCES[id])
-            //    {
-            //        if (type == "n")
-            //        {
-            //            if (data.TryGetValue("_npcs", out object quests))
-            //            {
-            //                LogDebug($"INFO: Remove _npcs from Criteria {achID}:{criteriaID}. AchievementDB contains n-provider: {id}");
-            //            }
-            //            else
-            //            {
-            //                LogDebug($"INFO: Added _npcs to Criteria {achID}:{criteriaID} with NPCID: {id}");
-            //            }
-
-            //            data["_npcs"] = new List<long> { id };
-            //        }
-            //    }
-            //}
+            long factionID = criteriaData.GetFactionID();
+            if (factionID > 0)
+            {
+                if (!TryGetSOURCED("factionID", factionID, out _))
+                {
+                    LogWarn($"Faction {factionID} should be sourced for nesting Criteria {achID}:{criteriaID}");
+                }
+                else
+                {
+                    LogDebug($"INFO: Added _factions to Criteria {achID}:{criteriaID} with Faction: {factionID}");
+                    Objects.Merge(data, "_factions", factionID);
+                }
+            }
         }
 
         /// <summary>
@@ -1745,7 +1715,6 @@ namespace ATT
                         Objects.Merge(criteriaData, extraData);
                         extraData = null;
                     }
-                    //criteriaData["_ignorable"] = criteriaTree.IsIgnoreFlags();
                     // we can merge single criteria under a criteriatree into the achievement if it's 1 level down,
                     // otherwise it's a criteira which is split instead
                     if (mergeDirectly && level == 1)
@@ -1788,31 +1757,6 @@ namespace ATT
                             }
                         }
                     }
-                    // sometimes a nested criteriatree is used at the second level for a single criteriatree... very good Blizz
-                    //else if (mergeDirectly && level == 2)   // Ach 4925
-                    //{
-                    //    LogDebug($"INFO: Incorporating single Criteria: {achID}:{criteriaTree.CriteriaID}", data);
-                    //    long criteriaIndex = criteriaTree.OrderIndex + 1;
-                    //    bool merged = false;
-                    //    // see if a CriteriaID by OrderIndex exists, and merge into that instead
-                    //    if (data.TryGetValue("g", out List<object> datag))
-                    //    {
-                    //        foreach (IDictionary<string, object> obj in datag.AsTypedEnumerable<IDictionary<string, object>>())
-                    //        {
-                    //            if (obj.TryGetValue("criteriaID", out long objCriteriaID) && objCriteriaID == criteriaIndex)
-                    //            {
-                    //                LogDebug($"--- into existing Criteria by Index: {achID}:{objCriteriaID}");
-                    //                merged = true;
-                    //                Objects.Merge(obj, criteriaData);
-                    //                break;
-                    //            }
-                    //        }
-                    //    }
-                    //    if (!merged)
-                    //    {
-                    //        Objects.Merge(data, "g", criteriaData);
-                    //    }
-                    //}
                     // otherwise the criteria index may be split into multiple criteriaUID, and we just merge them all into the achievement
                     else
                     {
@@ -1867,15 +1811,6 @@ namespace ATT
                 // data to merge directly into criteria index groups if sourced
                 if (level == 1)
                 {
-                    // sometimes a nested criteriatree is used at the second level for a single criteriatree... very good Blizz
-                    // so we will try to merge those criteria directly into the matching data criteria, if they are sourced using index
-                    // otherwise they will merge under the achievement as expected
-                    //if (mergeDirectly)   // Ach 4925
-                    //{
-
-                    //}
-                    //else // Ach 13635
-                    //{
                     // see if a CriteriaID by OrderIndex exists, and see if we need to warn about extra data that it contains, if we didn't end up incorporating any criteria
                     if (data.TryGetValue("g", out List<object> datag))
                     {
@@ -1900,6 +1835,7 @@ namespace ATT
                                     obj.Remove("timeline");
                                     obj.Remove("awp");
                                     obj.Remove("r");
+                                    obj.Remove("g");
                                     if (obj.Keys.Count > 0)
                                     {
                                         LogWarn($"Migrate (or remove) extra data from {achID}:{criteriaIndex} into the proper sub-criteria(s): {ToJSON(GetAllNestedTypeDBObjects(criteriaTree).Select(t => t.CriteriaID).Where(id => id > 0).ToList())} <== ", obj);
@@ -1928,17 +1864,6 @@ namespace ATT
                         LogDebug($"Added Criteria by Index {achID}:{criteriaIndex} since data incorporation had no useful criteria", extraData);
                         Objects.Merge(data, "g", extraData);
                     }
-                    // either already sourced a criteriaUID group, or nothing. so merge a criteriaUID group with index
-                    //if (!indexFound)
-                    //{
-                    //    IDictionary<string, object> criteriaData = new Dictionary<string, object>
-                    //        {
-                    //            { "criteriaID", criteriaIndex },
-                    //            { "achID", achID }
-                    //        };
-                    //    Objects.Merge(data, "g", criteriaData);
-                    //}
-                    //}
                 }
             }
 
