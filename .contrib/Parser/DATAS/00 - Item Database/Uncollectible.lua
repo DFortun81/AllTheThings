@@ -567,6 +567,7 @@ i(194973);	-- Reclaim Concoctions
 ------------------
 -- PATCH 10.0.2 --
 ------------------
+i(192717);	-- Animated Splinter
 i(200100);	-- Batubar the Relentless
 i(194433);	-- Bloodhorn's Horn
 i(202108);	-- Bouncing Bass
@@ -795,7 +796,6 @@ i(209034);	-- Half-Completed Invasion Plans (Dropped in Argus during Seeing Red 
 -- PATCH 10.2.0 --
 ------------------
 --- Trash ---
-i(192717);	-- Animated Splinter
 i(210451);	-- Imp Tail
 i(210452);	-- Small Demon Horn
 i(211270);	-- Pristine Core Leather

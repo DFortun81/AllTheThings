@@ -77,7 +77,6 @@ root(ROOTS.NeverImplemented, {
 						i(107980),	-- Draenic Steel Legguards
 						i(107973),	-- Draenic Steel Shoulders
 						i(107981),	-- Draenic Steel Shoulders
-						i(108046),	-- Draenic Steel War Axe
 						i(107969),	-- Draenic Steel Warboots
 						i(107977),	-- Draenic Steel Warboots
 						i(107975),	-- Draenic Steel Wristwraps
@@ -85,8 +84,6 @@ root(ROOTS.NeverImplemented, {
 						i(116653),	-- Unstable Greater Steelforged Essence
 						i(116650),	-- Unstable Greater Truesteel Essence
 						i(108158),	-- Hardened Draenic Steel Bulwark
-						i(108150),	-- Hardened Draenic Steel Dagger
-						i(108078),	-- Hardened Draenic Steel Chestplate
 						i(108081),	-- Hardened Draenic Steel Helm
 						i(108084),	-- Hardened Draenic Steel Girdle
 						i(108080),	-- Hardened Draenic Steel Guantlets
@@ -106,7 +103,6 @@ root(ROOTS.NeverImplemented, {
 						i(108194),	-- Peerless Draenic Steel Chestplate
 						i(108202),	-- Peerless Draenic Steel Chestplate
 						i(108210),	-- Peerless Draenic Steel Chestplate
-						i(108218),	-- Peerless Draenic Steel Chestplate
 						i(108165),	-- Peerless Draenic Steel Helm
 						i(108181),	-- Peerless Draenic Steel Helm
 						i(108189),	-- Peerless Draenic Steel Helm
@@ -145,8 +141,6 @@ root(ROOTS.NeverImplemented, {
 						i(108223),	-- Peerless Draenic Steel Shoulders
 						i(108226),	-- Peerless Draenic Steel War Axe
 						i(108227),	-- Peerless Draenic Steel War Axe
-						i(108228),	-- Peerless Draenic Steel War Axe
-						i(108229),	-- Peerless Draenic Steel War Axe
 						i(108163),	-- Peerless Draenic Steel Warboots
 						i(108179),	-- Peerless Draenic Steel Warboots
 						i(108187),	-- Peerless Draenic Steel Warboots
@@ -193,7 +187,7 @@ root(ROOTS.NeverImplemented, {
 						i(152836, {["modID"] = 90, ["sourceID"] = 90677, ["name"] = "Stormsteel Greatsword", }),
 						i(152836, {["modID"] = 91, ["sourceID"] = 90678, ["name"] = "Stormsteel Greatsword", }),
 						i(152836, {["modID"] = 92, ["sourceID"] = 90679, ["name"] = "Stormsteel Greatsword", }),
-						
+
 						-- sourceID without itemID due to wrong ingame tooltips
 						i(0, {["sourceID"] = 97975, ["name"] = "Honorable Combatant's Aegis", }),	-- i(161892),
 						i(0, {["sourceID"] = 97976, ["name"] = "Honorable Combatant's Aegis", }),	-- i(161892),

@@ -28,7 +28,6 @@ root(ROOTS.NeverImplemented, {
 				i(21614),	-- Wormhide Protector
 			}),
 			filter(MAIL, {
-				i(18320),	-- Demonheart Spaulders
 				i(18304),	-- Greenroot Mail
 				--
 				i(12105),	-- Pridemail Leggings
@@ -1072,8 +1071,6 @@ root(ROOTS.NeverImplemented, {
 				tier(LEGION_TIER, 0.3, {
 					i(134017),	-- Don Carlos' Famous Hat
 					i(138420),	-- Pilfered Ettin String
-					i(121507),	-- Runespeaker's Crown
-					i(121511),	-- Runespeaker's Leggings
 				}),
 				tier(LEGION_TIER, 2.0, {
 					i(147517, {["modID"] = 2 }),	-- Inquisitor's Battle Cowl
@@ -1089,8 +1086,6 @@ root(ROOTS.NeverImplemented, {
 				tier(LEGION_TIER, 0.3, {
 					i(129046),	-- 7.0 PH Leather Helm
 					i(129127),	-- Ebon Stalker's Boots
-					i(121509),	-- Runesworn Crown
-					i(121513),	-- Runesworn Breeches
 				}),
 				tier(LEGION_TIER, 2.0, {
 					i(147036),	-- Fel-Stippled Legguards
@@ -1100,8 +1095,6 @@ root(ROOTS.NeverImplemented, {
 			filter(MAIL, {
 				tier(LEGION_TIER, 0.3, {
 					i(129152),	-- Boulderfall Stompers
-					i(121508),	-- Stormborn Crown
-					i(121512),	-- Stormborn Leggings
 				}),
 				tier(LEGION_TIER, 2.0, {
 					i(147058),	-- Chaos-Calming Wristguards
@@ -1115,9 +1108,6 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 			filter(PLATE, {
-				tier(LEGION_TIER, 0.3, {
-					i(121506),	-- Dreadsworn Crown
-				}),
 				tier(LEGION_TIER, 1.0, {
 					i(138489),	-- Kargath's Sacrified Hands
 				}),
@@ -1739,8 +1729,6 @@ root(ROOTS.NeverImplemented, {
 					i(190283),	-- Unbound Explorer's Striders
 					i(190286),	-- Unbound Explorer's Trousers
 					i(190287),	-- Unbound Explorer's Waistwrap
-					--
-					i(189917),	-- Constellation Master's Smock
 					--
 					i(190618, {	-- Lattice of the Distant Keeper
 						["bonusID"] = 451

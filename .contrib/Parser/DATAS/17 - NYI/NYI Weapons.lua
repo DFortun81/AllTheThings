@@ -523,8 +523,6 @@ root(ROOTS.NeverImplemented, {
 			i(171401),	-- Phaeweald Rapier
 		}),
 		filter(POLEARMS, {
-			-- Load In Game
-			i(115297),	-- Spectral Polearm
 			-- ItemID/Retrieving
 			i(54965),	-- Stormwind Spear
 			i(108797),	-- 7.0 PH Weapon - 2H Polearm Agi
@@ -604,7 +602,6 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(STAVES, {
 			-- Load In Game
-			i(115298),	-- Spectral Spire
 			i(182566),	-- NPE Weapon Staff AGI
 			i(182572),	-- NPE Weapon Staff INT
 			i(180491),	-- Wingdancer's Spire
@@ -639,7 +636,6 @@ root(ROOTS.NeverImplemented, {
 			i(69916),	-- Trollbane (Daakara)
 			i(80980),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 			i(80984),	-- Expropriator's Greataxe
-			i(115293),	-- Spectral Greataxe
 			i(182568),	-- NPE Weapon 2H Axe STR
 			-- ItemID/Retrieving
 			i(23420),	-- Engraved Axe

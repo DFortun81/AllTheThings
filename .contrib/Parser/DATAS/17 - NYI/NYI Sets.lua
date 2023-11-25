@@ -1258,30 +1258,15 @@ root(ROOTS.NeverImplemented, {
 				}),
 				n(-299, {	-- Missions
 					filter(CLOTH, {
-						i(114317),	-- Mantisweave Robes
-						i(114383),	-- Gloves of Hooded Nightmares
-						i(114387),	-- Hood of Hooded Nightmares
-						i(114391),	-- Trousers of Hooded Nightmares
 						i(114399),	-- Cord of Hooded Nightmares
 					}),
 					filter(LEATHER, {
-						i(114314),	-- Shadow-Gorged Chestguard
-						i(114384),	-- Gauntlets of Falling Leaves
-						i(114388),	-- Hood of Falling Leaves
-						i(114392),	-- Legguards of Falling Leaves
 						i(114400),	-- Belt of Falling Leaves
 					}),
 					filter(MAIL, {
-						i(114385),	-- Element-Binder Gauntlets
-						i(114389),	-- Element-Binder Helm
-						i(114393),	-- Element-Binder Legguards
 						i(114401),	-- Element-Binder Belt
 					}),
 					filter(PLATE, {
-						i(114316),	-- Salt-Scorched Breastplate
-						i(114386),	-- Gauntlets of Grievous Storms
-						i(114390),	-- Greathelm of Grievous Storms
-						i(114394),	-- Legplates of Grievous Storms
 						i(114402),	-- Girdle of Grievous Storms
 					}),
 				}),
@@ -2607,7 +2592,7 @@ root(ROOTS.NeverImplemented, {
 					}),
 				}),
 			})),
-			
+
 			-- 7.3.5
 			tier(LEGION_TIER, 3.5, bubbleDown({ ["timeline"] = { "created 7.3.5" } }, {
 				n(NEW_CHARACTER, {
@@ -3326,7 +3311,7 @@ root(ROOTS.NeverImplemented, {
 							i(177343),	-- Mistdancer Ring of Stoicism
 							i(177346),	-- Mistdancer Defender Idol
 							i(177344),	-- Mistdancer Defender Stone
-	
+
 						}),
 						cl(MONK, MISTWEAVER, {
 							i(177353),	-- Mistdancer Staff

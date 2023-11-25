@@ -66,7 +66,6 @@ root(ROOTS.NeverImplemented, {
 						i(156),	-- Deprecated Tauren Recruit's Pants
 						i(128),	-- Deprecated Tauren Trapper's Pants
 						i(2106),	-- Deprecated Worn Pants
-						i(3957),	-- Mesh Pants
 						i(91),	-- OLDDwarven Initiate's Pants
 						i(6131),	-- Trapper's Pants
 					}),
@@ -103,7 +102,6 @@ root(ROOTS.NeverImplemented, {
 						i(3061),	-- Deprecated Deepwood Breastplate
 						i(917),	-- Deprecated Shadow Leather Armor
 						i(1999),	-- Deprecated Torn Leather Harness
-						i(3984),	-- Strapped Armor
 					}),
 					n(WRIST, {
 						i(3979),	-- Strapped Bracers
@@ -119,7 +117,6 @@ root(ROOTS.NeverImplemented, {
 					}),
 					n(LEGS, {
 						i(3064),	-- Deprecated Deepwood Pants
-						i(3982),	-- Strapped Pants
 					}),
 					n(FEET, {
 						i(3060),	-- Deprecated Deepwood Boots
@@ -1047,7 +1044,7 @@ root(ROOTS.NeverImplemented, {
 					i(21564),	-- Monster - Gun, Kaldorei PVP Alliance
 					i(34034),	-- Monster - Gun, Plaguebringer
 					i(21554),	-- Monster - Gun, PvP Horde
-					i(30128),	-- Monster - Gun, Techno					
+					i(30128),	-- Monster - Gun, Techno
 				}),
 				filter(ONE_HANDED_MACES, {
 					i(32892),	-- Monster - Black Temple - Hammer, 1H - Illidari Blood Lord
@@ -1439,7 +1436,7 @@ root(ROOTS.NeverImplemented, {
 					i(28023),	-- Monster - Throwing Axe (Poison)
 					i(33338),	-- Monster - Throwing Knife (Fire Trail)
 					i(31497),	-- Monster - Throwing Trident, Wicked
-					i(31499),	-- Monster - Throwing Trident, Wicked Blue Glow					
+					i(31499),	-- Monster - Throwing Trident, Wicked Blue Glow
 				}),
 			}),
 		}),
@@ -1521,7 +1518,7 @@ root(ROOTS.NeverImplemented, {
 					i(49773),	-- Monster - Icecrown Raid - Axe, 2H - High Overlord Saurfang
 					i(49291),	-- Monster - Polearm, Icecrown Raid (Vengeance Enchant)
 					i(38304),	-- Monster - Scythe, Antiok's
-					i(40435),	-- Monster - Vrykul - Axe, 2H C_01 - Blue Glow, High					
+					i(40435),	-- Monster - Vrykul - Axe, 2H C_01 - Blue Glow, High
 				}),
 				filter(BOWS, {
 					i(49761),	-- Monster - Argent Alliance - Bow
@@ -1578,7 +1575,7 @@ root(ROOTS.NeverImplemented, {
 					i(42776),	-- Monster - Gun, PvP Alliance
 					i(50817),	-- Monster - Gun, Silver Musket (0.5s Delay)
 					i(49462),	-- Monster - Gun, Tauren Crude
-					i(41613),	-- Monster - Gun, Ulduar					
+					i(41613),	-- Monster - Gun, Ulduar
 				}),
 				filter(ONE_HANDED_MACES, {
 					i(52015),	-- Monster - Angry Dread
@@ -1661,7 +1658,7 @@ root(ROOTS.NeverImplemented, {
 				filter(MISC, {
 					i(54612),	-- Monster - Item, Orb - A01 Ice
 					i(52358),	-- Monster - Item, Potion Purple
-					i(46733),	-- Monster - Item, Tankard Brewfest (Year 3 Green)					
+					i(46733),	-- Monster - Item, Tankard Brewfest (Year 3 Green)
 				}),
 				filter(POLEARMS, {
 					i(35235),	-- Monster - Halberd, Kaw's
@@ -2395,7 +2392,7 @@ root(ROOTS.NeverImplemented, {
 					i(75224),	-- Monster - Axe_2h_PVPCataclysmS3_C_01 - Red
 					i(75225),	-- Monster - Axe_2h_PVPCataclysmS3_C_01 - Yellow
 					i(69644),	-- Monster - Felsteel Reaper (alt color)
-					i(56475),	-- Monster - Polearm, Icecrown Raid (Purple Flame)					
+					i(56475),	-- Monster - Polearm, Icecrown Raid (Purple Flame)
 				}),
 				filter(BOWS, {
 					i(58793),	-- Monster - Bow, Cataclysm B01
@@ -2428,7 +2425,7 @@ root(ROOTS.NeverImplemented, {
 					i(52058),	-- Monster - Valanos' Longbow (0.5 Speed)
 					i(60884),	-- Overwrite Test - Additional Item
 					i(57413),	-- Test Item - Extended Cost (No Refund)
-					i(57414),	-- Test Item - Extended Cost (Refundable)					
+					i(57414),	-- Test Item - Extended Cost (Refundable)
 				}),
 				filter(CROSSBOWS, {
 					i(62285),	-- Monster - Crossbow B01 Silver
@@ -2438,7 +2435,7 @@ root(ROOTS.NeverImplemented, {
 					i(58789),	-- Monster - Crossbow, Cataclysm B02 Green
 					i(62400),	-- Monster - Crossbow, COT Strat (Alliance)
 					i(56086),	-- Monster - Crossbow, Grim Batol Raid
-					i(52579),	-- Monster - Crossbow, PVE Alliance (Anduin)					
+					i(52579),	-- Monster - Crossbow, PVE Alliance (Anduin)
 				}),
 				filter(DAGGERS, {
 					i(50142),	-- Monster - Axe1H, Goblin B01 Black
@@ -2537,7 +2534,7 @@ root(ROOTS.NeverImplemented, {
 					i(61964),	-- Monster - Rifle, Blood Elf B01 Gold
 					i(61965),	-- Monster - Rifle, Blood Elf C01 Gold
 					i(61966),	-- Monster - Rifle, Blood Elf D01 Gold
-					i(61967),	-- Monster - Rifle, Outland Raid D03					
+					i(61967),	-- Monster - Rifle, Outland Raid D03
 				}),
 				filter(TWO_HANDED_AXES, {
 					i(63252),	-- Monster - Axe, 2H Horde D 02
@@ -2630,7 +2627,7 @@ root(ROOTS.NeverImplemented, {
 					i(62903),	-- Monster - Book, Guardian of Ancient Kings (paladin spell)
 					i(54879),	-- Monster - Item, Bottle - Black (Broken)
 					i(54880),	-- Monster - Item, Bottle - Green (Broken)
-					i(62484),	-- Monster - Item, Shovel (1h)					
+					i(62484),	-- Monster - Item, Shovel (1h)
 				}),
 				filter(POLEARMS, {
 					i(52010),	-- Monster - Bleak Scythe
@@ -2745,7 +2742,7 @@ root(ROOTS.NeverImplemented, {
 					i(56092),	-- Monster - Staff, Wooden Handle Rounded Head Wind Enchant
 					i(52529),	-- Monster - Staff, Worgen Pink
 					i(52523),	-- Monster - Staff, Worgen Red
-					i(52012),	-- Monster - Stanchion of Primal Instinct					
+					i(52012),	-- Monster - Stanchion of Primal Instinct
 				}),
 				filter(ONE_HANDED_SWORDS, {
 					i(49694),	-- Monster - Sword 2H, Tauren (TEST)
@@ -2800,7 +2797,7 @@ root(ROOTS.NeverImplemented, {
 					i(61370),	-- Monster - Sword, 2H Twilight's Hammer Purple (Special - Purple, High)
 					i(60890),	-- Monster - Sword, 2H Twilight's Hammer Red (Executioner)
 					i(56154),	-- Monster - Sword2H, Broadsword Fiery
-					i(68818),	-- Monster - Zin'rokh					
+					i(68818),	-- Monster - Zin'rokh
 				}),
 				filter(THROWN, {
 					i(66347),	-- Archaic Throwing Daggers
@@ -2834,7 +2831,7 @@ root(ROOTS.NeverImplemented, {
 					i(66786),	-- Well Repaired Throwing Daggers
 					i(66785),	-- Well Repaired Throwing Stars
 					i(78559),	-- Windslicer Boomerang
-					i(78637),	-- Windslicer Boomerang					
+					i(78637),	-- Windslicer Boomerang
 				}),
 				filter(WANDS, {
 					i(60967),	-- Monster - BWDRaid D01
