@@ -72,6 +72,9 @@ root(ROOTS.Zones, {
 			i(134334, {	-- Disgraced Court Cloak
 				["bonusID"] = 1812,
 			}),
+			filter(REAGENTS, {
+				i(124124),	-- Blood of Sargeras
+			}),
 			n(NECK, {
 				i(139101),	-- An'she's Pendant
 				i(134161),	-- Brulstone Pendant

@@ -46,7 +46,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["questID"] = 77942,
 				["coord"] = { 51.1, 31.7, EMERALD_DREAM },
 				["g"] = {
-					i(208349),	-- Burning Leather Cuffs
 					i(208376),	-- Great Ray's Longbow
 					i(208347),	-- Stone Wolf's Cuffs
 					i(208326),	-- Vest of the Flametide
@@ -163,6 +162,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 63.9, 36.1, EMERALD_DREAM },
 				["g"] = {
 					i(208323),	-- Nature's Firebathed Robes
+					i(208349),	-- Burning Leather Cuffs
 					i(208358),	-- Sunset's Bulwark
 				},
 			}),

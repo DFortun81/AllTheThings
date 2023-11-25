@@ -1572,7 +1572,11 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 79612 },	-- Knight-Lord Dranarus
 						["coord"] = { 71.8, 29.7, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34971,	-- The Only Way to Travel
+						["sourceQuests"] = {
+							34972,	-- Armor Up
+							34949,	-- Joining the Ranks
+						},
+						["sourceQuestNumRequired"] = 1,
 						["isBreadcrumb"] = true,
 					}),
 					q(33580, {	-- The Purge of Veil Shadar
