@@ -3,10 +3,10 @@
 ---------------------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST = createHeader({
-	readable = "Crieve's Never Implemeneted List",
+	readable = "Crieve's Never Implemented List",
 	icon = "Interface\\Icons\\INV_Chest_Plate03",
 	text = {
-		en = "Crieve's Never Implemeneted List",
+		en = "Crieve's Never Implemented List",
 	},
 	description = {
 		en = "If the following are sorted somewhere, please delete them from this list. Thanks.",
