@@ -14,6 +14,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				ach(4926, {	-- Bloodmyst Isle Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- The Triumvirate's First, Boros
 							["sourceQuest"] = 9700,	-- I Shoot Magic Into the Darkness
@@ -45,6 +46,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["sourceQuest"] = 9759,	-- Ending Their World
 						}),
 					},
+					-- #ENDIF
 				}),
 				explorationAch(861, {	-- Explore Bloodmyst Isle
 					-- #if BEFORE WRATH

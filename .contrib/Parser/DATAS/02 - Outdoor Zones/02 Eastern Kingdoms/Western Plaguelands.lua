@@ -20,6 +20,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4893, {	-- Western Plaguelands Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- The First Battle for Andorhal
 							["sourceQuests"] = {
@@ -47,6 +48,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			-- #if AFTER 7.0.3.21570

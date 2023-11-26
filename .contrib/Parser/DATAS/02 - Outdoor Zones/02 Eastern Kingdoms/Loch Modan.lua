@@ -17,6 +17,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4899, {	-- Loch Modan Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- The Road to Thelsamar
 							["sourceQuests"] = {
@@ -47,6 +48,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({
@@ -1674,7 +1676,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {{"select","itemID",
 						16059,	-- Common Brown Shirt
 						3428,	-- Common Grey Shirt
-						16060,	-- Common White Shirt	
+						16060,	-- Common White Shirt
 					}},
 					["groups"] = {
 						i(4782, {	-- Solstice Robe

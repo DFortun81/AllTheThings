@@ -27,6 +27,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				ach(4872, {	-- Unearthing Uldum
+					-- #IF ANYCLASSIC
 					crit(1, {	-- Rescued by Outsiders
 						["sourceQuest"] = 28112,	-- Escape From the Lost City
 					}),
@@ -54,6 +55,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					crit(7, {	-- Promises
 						["sourceQuest"] = 28633,	-- The Coffer of Promise
 					}),
+					-- #ENDIF
 				}),
 			}),
 			battlepets({

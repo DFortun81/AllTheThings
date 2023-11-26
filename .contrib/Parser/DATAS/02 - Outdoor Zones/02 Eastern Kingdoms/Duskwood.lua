@@ -21,6 +21,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(12430, {	-- Duskwood Quests
 					["timeline"] = { "added 7.3.5.25727" },
 					["races"] = ALLIANCE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- The Legend of Stalvan
 							["sourceQuest"] = 26674,	-- Mistmantle's Revenge
@@ -43,6 +44,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({

@@ -40,6 +40,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4869, {	-- Sinking into Vashj'ir (A)
 					["races"] = ALLIANCE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Defense of The Briny Cutter
 							["_quests"] = { 25558 },	-- All or Nothing
@@ -76,9 +77,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["_quests"] = { 26193 },	-- Defending the Rift
 						}),
 					},
+					-- #ENDIF
 				}),
 				ach(4982, {	-- Sinking into Vashj'ir (H)
 					["races"] = HORDE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Defense of The Immortal Coil
 							["_quests"] = { 25949 },	-- Blood and Thunder!
@@ -115,6 +118,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["_quests"] = { 26194 },	-- Defending the Rift
 						}),
 					},
+					-- #ENDIF
 				}),
 				achWithRep(4881, 1135),	-- The Earthen Ring
 			}),

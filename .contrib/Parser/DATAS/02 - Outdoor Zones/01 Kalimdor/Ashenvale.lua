@@ -12,6 +12,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4925, {	-- Ashenvale Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Maestra's Post
 							["sourceQuest"] = 13626,	-- Respect for the Fallen
@@ -46,10 +47,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
+					-- #ENDIF
 				}),
 				ach(4976, {	-- Ashenvale Quests
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- The Corrupted Heart of the Forest
 							["sourceQuests"] = {
@@ -86,6 +89,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 13888,	-- Vortex
 						}),
 					},
+					-- #ENDIF
 				}),
 				explorationAch(845, {	-- Explore Ashenvale
 					-- #if BEFORE WRATH

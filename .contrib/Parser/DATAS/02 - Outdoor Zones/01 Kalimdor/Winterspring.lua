@@ -157,6 +157,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				ach(4940, {	-- Winterspring Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- The Winterfall Furbolg
 							["sourceQuest"] = 28472,	-- Words of the High Chief
@@ -191,6 +192,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 28842,	-- Umbranse's Deliverance
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({

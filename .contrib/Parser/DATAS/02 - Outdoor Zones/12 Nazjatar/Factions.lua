@@ -78,5 +78,23 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				["isWorldQuest"] = true,
 			}),
 		})),
+		faction(2375, {	-- Hunter Akana
+			["races"] = ALLIANCE_ONLY,
+		}),
+		faction(2376, {	-- Farseer Ori
+			["races"] = ALLIANCE_ONLY,
+		}),
+		faction(2377, {	-- Bladesman Inowari
+			["races"] = ALLIANCE_ONLY,
+		}),
+		faction(2388, {	-- Poen Gillbrack
+			["races"] = HORDE_ONLY,
+		}),
+		faction(2389, {	-- Neri Sharpfin
+			["races"] = HORDE_ONLY,
+		}),
+		faction(2390, {	-- Vim Brineheart
+			["races"] = HORDE_ONLY,
+		}),
 	}),
 })));

@@ -26,6 +26,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(12429, {	-- Wetlands Quests
 					["timeline"] = { "added 7.3.5.25727" },
 					["races"] = ALLIANCE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Slabchisel Survey
 							["sourceQuests"] = {
@@ -66,6 +67,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({

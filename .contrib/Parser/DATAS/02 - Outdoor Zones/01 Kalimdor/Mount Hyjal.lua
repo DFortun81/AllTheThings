@@ -14,6 +14,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(ACHIEVEMENTS, {
 				ach(5483),	-- Bounce
 				ach(4870, {	-- Coming Down the Mountain
+					-- #IF ANYCLASSIC
 					crit(1, {	-- The Return of the Ancients
 						["sourceQuest"] = 25584,	-- The Return of the Ancients
 					}),
@@ -48,6 +49,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					crit(9, {	-- Extinguish the Firelord
 						["sourceQuest"] = 25551,	-- The Firelord
 					}),
+					-- #ENDIF
 				}),
 				explorationAch(4863),	-- Explore Hyjal
 				ach(5860, {		-- The 'Unbeatable?' Pterodactyl: BEATEN.
