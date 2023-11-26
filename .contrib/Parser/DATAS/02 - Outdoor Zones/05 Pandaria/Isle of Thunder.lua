@@ -157,7 +157,10 @@ root(ROOTS.Zones, {
 							["_npcs"] = { 69961 },
 						}),
 					}),
-					ach(8111),	-- This Isn't Even My Final Form
+					ach(8111, {	-- This Isn't Even My Final Form
+						["description"] = "Kill Drakkari God-Hulk patrolling on foot path near coord, then drink Zandalari Potion as Coord.",
+						["coord"] = { 36.6, 70.2, ISLE_OF_THUNDER },
+					}),
 					ach(8104),	-- Thunder Plunder
 					ach(8108, {	-- When in Ihgaluk, Do as the Skumblade Do
 						crit(22832),	-- Kroshik Egg

@@ -4430,7 +4430,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 26395,	-- Dungar Longdrink
 					["coord"] = { 71.0, 72.6, STORMWIND_CITY },
 					["timeline"] = { "added 4.0.3" },
-					["races"] = { HUMAN, KULTIRAN },
+					["races"] = { HUMAN, KULTIRAN, VOIDELF },
 				}),
 				q(6285, {	-- Return to Lewis
 					["providers"] = {
