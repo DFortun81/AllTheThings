@@ -1157,9 +1157,6 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(10985),	-- Legion raid bosses defeated
 		ach(10986),	-- Legion raid boss defeated the most
 		ach(11063),	-- Hidden Tracking - 1+ Acquision Line Completed
-		ach(11152),	-- Hidden Tracking - Appearance Unlock - Hidden - Color 2
-		ach(11153),	-- Hidden Tracking - Appearance Unlock - Hidden - Color 3 (update criteria when world quests available)
-		ach(11154),	-- Hidden Tracking - Appearance Unlock - Hidden - Color 4
 		ach(11156),	-- Artifacts - Beast Master Hunter Hati Scale Info
 		ach(11158),	-- Hidden Tracking - Order Hall Class Set - Artifact XP Earned
 		ach(11174),	-- Hidden Tracking - 2+ Acquision Line Completed

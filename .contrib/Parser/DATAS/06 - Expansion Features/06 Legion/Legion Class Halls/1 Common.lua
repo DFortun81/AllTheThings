@@ -10,7 +10,6 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 	},{
 		n(ACHIEVEMENTS, {
 			ach(11298, {	-- A Classy Outfit
-				-- TODO: The criteria indexes used here will need to be replaced by a criteriaUID for every individual source quest, since the sub criteria don't have names. They then will get their name from the sourceQuest. Then the ones with faction requirements I don't even know how to convert them. So I'm not doing any of that right now :)
 				crit(5212, {	-- Class Hall Helm Earned
 					["description"] = "Rewarded by a quest in your class's Order Hall campaign.",
 					["sourceQuests"] = {
@@ -28,6 +27,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 						44255,	-- Axe and You Shall Receive (Warrior)
 					},
 				}),
+				-- #IF ANYCLASSIC
 				crit(2, {	-- Class Hall Bracers Earned
 					["description"] = "Recruit 6 Champions for your class's Order Hall.",
 					["sourceQuests"] = {
@@ -79,6 +79,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					["description"] = "Reach Exalted reputation with the Nightfallen.",
 					["minReputation"] = { 1859, EXALTED },
 				}),
+				 -- #ENDIF
 			}),
 			un(REMOVED_FROM_GAME, ach(10852)),		-- Artifact or Artifiction
 			ach(11137, {	-- A Legendary Campaign
@@ -115,7 +116,21 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					-- ["_quests"] = { 42116 },
 				}),
 			}),
-			ach(10750),	-- Fighting with Style: Hidden
+			ach(10750, {	-- Fighting with Style: Hidden
+				["_noautomation"] = true,
+				["groups"] = {
+					ach(11152, {	-- Hidden Tracking - Appearance Unlock - Hidden - Color 2
+						["description"] = "Progress indicates number of Legion Dungeons completed",
+					}),
+					ach(11153, {	-- Hidden Tracking - Appearance Unlock - Hidden - Color 3
+						["description"] = "Progress indicates number of Legion World Quests completed",
+					}),
+					ach(11154, {	-- Hidden Tracking - Appearance Unlock - Hidden - Color 4
+						["description"] = "Progress indicates number of players defeated in PvP",
+						["pvp"] = true,
+					}),
+				},
+			}),
 			ach(10747, {	-- Fighting with Style: Upgraded
 				ach(10746, {	-- Forged for Battle
 					["sourceQuests"] = {

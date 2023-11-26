@@ -1387,12 +1387,8 @@ namespace ATT
         {
             if (!data.TryGetValue("achID", out long achID) ||
                 data.ContainsKey("criteriaID") ||
-                (data.TryGetValue("collectible", out bool collectible) && !collectible)) return;
-
-            if (achID == 15402)
-            {
-
-            }
+                (data.TryGetValue("collectible", out bool collectible) && !collectible) ||
+                (data.TryGetValue("_noautomation", out bool noautomation) && noautomation)) return;
 
             // Grab AchievementDB info
             ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
@@ -1647,6 +1643,20 @@ namespace ATT
             {
                 // TODO: adjust?
                 //Objects.Merge(data, "spellID", spellID);
+            }
+
+            long achievementID = criteriaData.GetRequiredAchievement();
+            if (achievementID > 0)
+            {
+                if (!TryGetSOURCED("achID", achievementID, out _))
+                {
+                    LogDebugWarn($"Achievement {achievementID} linked to Criteria {achID}:{criteriaID}, but it's likely a hidden achievement. Not nesting Criteria.");
+                }
+                else
+                {
+                    LogDebug($"INFO: Added _achievements to Criteria {achID}:{criteriaID} with Ach: {achievementID}");
+                    Objects.Merge(data, "_achievements", achievementID);
+                }
             }
 
             long factionID = criteriaData.GetFactionID();
@@ -1922,8 +1932,9 @@ namespace ATT
                         break;
                     // 86 (HAS_ACHIEVEMENT)
                     case 86:
-                        // typically we use 'meta_achievement' in these cases
-                        //Objects.Merge(data, "_achievements", existingModifierTree.Asset);
+                    // 87 (HAS_ACHIEVEMENT_ON_CHARACTER)
+                    case 87:
+                        Objects.Merge(data, "_achievements", existingModifierTree.Asset);
                         break;
                     // 88 (CLOUD_SERPENT_REPUTATION)
                     case 88:
