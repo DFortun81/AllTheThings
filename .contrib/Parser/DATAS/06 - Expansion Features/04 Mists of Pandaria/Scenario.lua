@@ -124,18 +124,22 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						ach(6923),	-- Brewmoon Festival
 						ach(7385, {	-- Pub Crawl
-							i(87528),	-- Honorary Brewmaster Keg (TOY!)
-							crit(20680),	-- Spill No Evil
-							crit(20681),	-- Yaungolian Barbecue
-							crit(20682),	-- Binan Village All-Star
-							crit(20683),	-- The Keg Runner
-							crit(20684),	-- Monkey in the Middle
-							crit(20685),	-- Monkey See, Monkey Kill
-							crit(20686),	-- Don't Shake the Keg
-							crit(20687),	-- Party of Six
-							crit(20688),	-- The Perfect Pour
-							crit(20689),	-- Save it for Later
-							crit(20690),	-- Perfect Delivery
+							["sym"] = {{"meta_achievement",
+								7231,	-- Spill No Evil
+								6930,	-- Yaungolian Barbecue
+								6931,	-- Binan Village All-Star
+								7232,	-- The Keg Runner
+								7239,	-- Monkey in the Middle
+								7248,	-- Monkey See, Monkey Kill
+								7257,	-- Don't Shake the Keg
+								7258,	-- Party of Six
+								7261,	-- The Perfect Pour
+								7266,	-- Save it for Later
+								7267,	-- Perfect Delivery
+							}},
+							["groups"] = {
+								i(87528),	-- Honorary Brewmaster Keg (TOY!)
+							},
 						}),
 						ach(6930),	-- Yaungolian Barbecue
 					}),
