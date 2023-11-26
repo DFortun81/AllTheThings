@@ -8101,6 +8101,7 @@ app.CreateAchievement = function(id, t)
 	return setmetatable(constructor(id, t, "achID"), app.BaseAchievement);
 end
 
+-- Achievement Category Lib
 local categoryFields = {
 	["key"] = function(t)
 		return "achievementCategoryID";
@@ -8217,7 +8218,7 @@ local function default_name(t)
 	end
 	app.PrintDebug("failed to retrieve criteria name",achievementID,t.criteriaID,name,t._default_name_retry)
 	t._default_name_retry = (t._default_name_retry or 0) + 1
-	if (t._default_name_retry > 10) then
+	if (t._default_name_retry > 25) then
 		t._default_name_retry = nil
 		return name or UNKNOWN
 	end

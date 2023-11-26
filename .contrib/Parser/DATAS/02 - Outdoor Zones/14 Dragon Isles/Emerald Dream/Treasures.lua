@@ -21,6 +21,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			o(413774, {	-- The Legend of Elun'Ahir
 				["questID"] = 78831,
 				["coord"] = { 49.8, 61.7, EMERALD_DREAM },
+				["isDaily"] = true,
 				["g"] = {
 					i(210049),	-- The Legend of Elun'Ahir
 				},
@@ -74,6 +75,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			o(411778, {	-- Pollenfused Bristlebruin Fur Sample
 				["classes"] = { DRUID },
 				["coord"] = { 63.7, 39.2, EMERALD_DREAM },
+				["sourceQuest"] = 78046,	-- Overseer Oversight
 				["g"] = {
 					i(210727),	-- Pollenfused Bristlebruin Fur Sample (CI!)
 				},

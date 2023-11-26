@@ -440,10 +440,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 			}),
 			q(14064, {	-- Sharing a Bountiful Feast (Alliance)
 				["qg"] = 34653,	-- Bountiful Table Hostess
+				["coords"] = {
+					{ 34.1, 51.0, ELWYNN_FOREST },
+				},
 				["maps"] = {
 					DARNASSUS,
 					DUN_MOROGH,
-					ELWYNN_FOREST,
 					-- #if AFTER BFA
 					DARKSHORE,
 					-- #endif

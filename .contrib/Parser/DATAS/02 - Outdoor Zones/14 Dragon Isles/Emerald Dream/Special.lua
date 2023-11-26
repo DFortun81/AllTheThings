@@ -18,15 +18,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			--i(209867),	-- Thornspeaker Ritual Knife need to be used on Liliuna (crs: 210981, 210982, 210983) @ 57.0, 49.0, EMERALD_DREAM to summon tammable beast
 			--i(209868),	-- Thornspeaker Ritual Knife need to be used on Astera (crs: 210988, 210989, 210990) @ 36.0, 61.0, EMERALD_DREAM to summon tammable beast
 			--
-			i(210669, {	-- Mark of the Evergreen Dreamsaber (CI!)
-				["provider"] = { "i", 210755 },	-- Silent Mark of the Dreamsaber
-			}),
-			i(210738, {	-- Mark of the Loamy Umbraclaw (CI!)
-				["provider"] = { "i", 210766 },	-- Silent Mark of the Umbraclaw
-			}),
-			i(210731, {	-- Mark of the Lush Dreamstag (CI!)
-				["provider"] = { "i", 210767 },	-- Silent Mark of the Dreamstag
-			}),
 			header(HEADERS.Item, 210535, {	-- Mark of the Slumbering Somnowl
 				i(210565, {	-- Soft Somnowl Feather
 					["description"] = "Use Hibernate on Somnowls then interact with them.",
@@ -43,9 +34,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						{ "i", 194864, 3 },	-- 3x Runed Writhebark
 					},
 				}),
-			}),
-			i(210684, {	-- Mark of the Thriving Dreamtalon (CI!)
-				["provider"] = { "i", 210764 },	-- Silent Mark of the Dreamtalon
 			}),
 			header(HEADERS.Item, 210728, bubbleDownSelf({ ["classes"] = { DRUID }}, {	-- Moon-Blessed Claw
 				o(412995, {	-- Small Box of Vials
@@ -110,6 +98,26 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 			})),
+			i(210669, {	-- Mark of the Evergreen Dreamsaber (CI!)
+				["provider"] = { "i", 210755 },	-- Silent Mark of the Dreamsaber
+				["crs"] = { 206551 },	-- Dreamsaber
+				["coord"] = {72.3, 49.1, EMERALD_DREAM},
+			}),
+			i(210738, {	-- Mark of the Loamy Umbraclaw (CI!)
+				["provider"] = { "i", 210766 },	-- Silent Mark of the Umbraclaw
+				["crs"] = { 211342 },	-- Angered Umberclaw
+				["coord"] = {47.5, 44.0, EMERALD_DREAM},
+			}),
+			i(210731, {	-- Mark of the Lush Dreamstag (CI!)
+				["provider"] = { "i", 210767 },	-- Silent Mark of the Dreamstag
+				["crs"] = { 210894 },	-- Flathoof Dreamstag
+				["coord"] = {46.5, 48.4, EMERALD_DREAM},
+			}),
+			i(210684, {	-- Mark of the Thriving Dreamtalon (CI!)
+				["provider"] = { "i", 210764 },	-- Silent Mark of the Dreamtalon
+				["crs"] = { 210892 },	-- Striped Dreamtalon
+				["coord"] = {52.5, 47.0, EMERALD_DREAM},
+			}),
 			i(210753, {	-- Scale of the Prismatic Whiskerfish (CI!)
 				["provider"] = { "i", 210784 },	-- Xena, the Whimsical Whiskerfish
 			}),
