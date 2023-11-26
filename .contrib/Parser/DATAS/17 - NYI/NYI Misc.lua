@@ -773,6 +773,45 @@ root(ROOTS.NeverImplemented, {
 				i(187621),	-- Writ of Construction
 				i(193361),	-- zzOldIncomplete Hunting Necklace
 				i(199110),	-- zzOldMechanical Maestro Duck
+
+				i(186159),	-- Mythic Keystone
+				i(187523),	-- Your Reward [DNT]
+				i(191032),	-- Oily Fat
+				i(191045),	-- Yu's Bloodied Journal Entry
+				i(191050),	-- 10.0 Food/Drink Template - Food Only - Level 65 - Required Level 60
+				i(191051),	-- 10.0 Food/Drink Template - Food Only - Level 70 - Required Level 65
+				i(191052),	-- 10.0 Food/Drink Template - Drink Only - Level 65 - Required Level 60
+				i(191053),	-- 10.0 Food/Drink Template - Drink Only - Level 70 - Required Level 65
+				i(191056),	-- 10.0 Food/Drink Template - Both Health and Mana - Level 70 - Required Level 65
+				i(191059),	-- Dilapidated Parchment: Top Half
+				i(191062),	-- 10 Food/Drink Template - Alcohol - Weak
+				i(191063),	-- 10 Food/Drink Template - Alcohol - Potent
+				i(191064),	-- 10 Food/Drink Template - Alcohol - Strong
+				i(191069),	-- Beacon of the Black Prince
+				i(191244),	-- I.P.F. Mark 15
+				i(191287),	-- Dragonscale Expedition Crate
+				i(191412),	-- Small Expedition Pick
+				i(191413),	-- Sturdy Expedition Pick
+				i(191422),	-- Crystal Magical Lockpick
+				i(191426),	-- Whelmed Duckling
+				i(191667),	-- Aged Key
+				i(191787),	-- Partially Digested Hand
+				i(191849),	-- Serevite Angle Iron
+				i(191856),	-- Reinforced Hooked Line
+				i(191861),	-- Rocdrop Carapace
+				i(191864),	-- Rocdrop Pudgepart
+				i(192054),	-- Medallion of a Fallen Friend
+				i(192089),	-- Fresh Vorquin Carcass
+				i(192127),	-- Basilisk Eggs
+				i(192130),	-- Sundered Flame Weapon Mold
+				i(192181),	-- Order to Elements
+				i(192182),	-- Decay to Elements
+				i(192545),	-- Primal Flame Fragment
+				i(192476),	-- Expedition Bullwhip
+				i(192560),	-- Bossy Storm Stuff
+				i(192600),	-- [DNT][PH] Meat
+				i(192646),	-- Aqueous Speck
+				i(192769),	-- Cracked Spear
 			})),
 
 			-- 10.0.2
