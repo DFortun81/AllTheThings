@@ -446,6 +446,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 	}),
 	i(208111, {	-- Quantum Axe			(One-Handed)
+		ig(5255),	-- Quilboar Tomahawk					(NYI)
 		ig(134586),	-- Vanguard Hatchet						(NYI)
 
 		ig(134742),	-- Cold-Touched Hacker					(Removed)
@@ -564,6 +565,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(163930),	-- Kovork's Rattle						(NYI)
 		ig(107390),	-- Obliterator Firing Lever				(NYI)(Unique)
 		ig(108240),	-- Peerless Draenic Steel Mace			(NYI)
+		ig(115299),	-- Spectral Scepter						(NYI)
 
 		ig(2048),	-- Anvilmar Hammer						(Removed)
 		ig(134756),	-- Covert Gavel							(Removed)
@@ -1250,7 +1252,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- Quantum Items
 		-- q(77595),	-- when you learn everything from Quantum ?
 		-- q(77596),	-- when you learn everything from Quantum ?
-		-- q(77597),	-- when you learn everything from Quantum ?
+		q(77597),	-- when you learn everything from Quantum Axe (One-Handed)
 		-- q(77598),	-- when you learn everything from Quantum ?
 		-- q(77599),	-- when you learn everything from Quantum ?
 		-- q(77600),	-- when you learn everything from Quantum ?
