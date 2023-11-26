@@ -599,6 +599,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(93141),	-- Scavenged Pandaren Spear				(MoP Scenario)
 	}),
 	i(208126, {	-- Quantum Shield
+		ig(18303),	-- Nimble Buckler						(NYI)
 		ig(108242),	-- Peerless Draenic Steel Bulwark		(NYI)
 		ig(108245),	-- Peerless Draenic Steel Bulwark		(NYI)
 

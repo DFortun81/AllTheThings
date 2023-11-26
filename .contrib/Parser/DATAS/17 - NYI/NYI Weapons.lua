@@ -228,7 +228,6 @@ root(ROOTS.NeverImplemented, {
 				i(7748),	-- Forcestone Buckler
 				i(20502),	-- Ironbark Shield [NPC Shield]
 				i(18342),	-- Quel'dorei Guard [NPC Shield I believe]
-				i(18303),	-- Nimble Buckler
 			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {

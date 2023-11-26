@@ -171,6 +171,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["coord"] = { 62.6, 73.3, ZARALEK_CAVERN },
 					["g"] = {
 						i(204387),	-- Buzzing Orb Core
+						i(204833),	-- Buzzing Orb Core (QI!)
 					},
 				}),
 				q(72962, {	-- Open That Door!
@@ -274,6 +275,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["coord"] = { 37.0, 47.0, ZARALEK_CAVERN },
 					["g"] = {
 						i(204386),	-- Pocket Darkened Elemental Core
+						i(203682),	-- Darkened Elemental Core (QI!)
 					},
 				}),
 				q(72915, {	-- Alliance of Convenience
@@ -456,6 +458,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72925 },	-- With Our Powers Combined
 					["provider"] = { "n", 200101 },	-- Wrathion
 					["coord"] = { 47.2, 27.8, ZARALEK_CAVERN },
+					["g"] = {
+						i(204877),	-- 'The Resting Blade' (QI!)
+						i(204184),	-- Ebon Eviscerator (QI!)
+					},
 				}),
 				q(72928, {	-- Wipe Them Out
 					["sourceQuests"] = { 72925 },	-- With Our Powers Combined
@@ -868,6 +874,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 55.6, 57.0, ZARALEK_CAVERN },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["classes"] = { EVOKER },
+				["g"] = {
+					i(204436),	-- Chipped Horn Signet (QI!)
+				},
 			}),
 			------ Miscellaneous ------
 			q(75232, {	-- Fallen Effects
@@ -886,6 +895,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(204805),	-- Suspended Sulfuric Droplet
 					i(204810),	-- Drogbar Rocks
 					i(204811),	-- Drogbar Stones
+					i(205031),	-- Broodmother Venom (QI!)
+					i(205030),	-- Crawler Venom (QI!)
 				},
 			}),
 		}),

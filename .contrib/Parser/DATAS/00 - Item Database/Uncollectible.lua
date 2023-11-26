@@ -642,7 +642,7 @@ i(201184);	-- Spare Bow String
 ------------------
 -- PATCH 10.0.5 --
 ------------------
--- Profession White Items
+--- Profession White Items ---
 i(5956);	-- Blacksmith Hammer
 i(85663);	-- Herbalist's Spade
 i(2901);	-- Mining Pick
@@ -669,7 +669,7 @@ i(205243);	-- Spare Bow String
 --- Common ---
 i(204237);	-- Clockwork Azshara
 i(204235);	-- Kaldorei Fruitcake
--- Misc
+--- Misc ---
 i(203988);	-- Warshard of the Hakkari, Unborn
 i(203989);	-- Warshard of the Hakkari, Unborn
 
@@ -678,20 +678,13 @@ i(203989);	-- Warshard of the Hakkari, Unborn
 -- PATCH 10.1.0 --
 ------------------
 -- Quest Items --
-i(204877);	-- 'The Resting Blade'
 i(203458);	-- Black Dragonscale Robes
-i(205031);	-- Broodmother Venom
-i(204833);	-- Buzzing Orb Core
-i(204436);	-- Chipped Horn Signet
-i(205030);	-- Crawler Venom
-i(203682);	-- Darkened Elemental Core
 i(203391);	-- Dented Dwarven Pocketwatch
 i(203453);	-- Dragonbone Totem
 i(204437);	-- Drakeforged Armaments
 i(203455);	-- Draketooth Fetish
 i(202873);	-- Drooping Mushroom Cutting
 i(203396);	-- Displayed Armor Piece
-i(204184);	-- Ebon Eviscerator
 i(204803);	-- Echoed Lurker Flesh
 i(203394);	-- Elementally Charged Orb
 i(204433);	-- Everburning Fireshard
