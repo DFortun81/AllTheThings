@@ -39,6 +39,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					currency(CURRENCY_DREAM_INFUSION),
 				},
 			}),
+			q(78595, {	-- Dream Infused
+				["description"] = "Requires Renown 18",
+				["provider"] = { "n", 211962 },	-- Merlsysra
+				["g"] = {
+					currency(CURRENCY_DREAM_INFUSION),
+				},
+			}),
 			n(VENDORS, {
 				n(211209, {	-- Elianna <Dream Infuser>
 					["coord"] = { 50.2, 61.8, EMERALD_DREAM },

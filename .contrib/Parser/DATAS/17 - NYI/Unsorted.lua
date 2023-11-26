@@ -1232,7 +1232,6 @@ root(ROOTS.Unsorted, {
 				q(78587),	-- Dragon Isles Supplies
 				q(78588),	-- Dragon Isles Supplies
 				-- 10.2.0.51297
-				q(78595),	-- Dream Infused
 				-- 10.2.0.51425
 				q(78606),	--
 				q(78608),	-- Geothermal Jaunt

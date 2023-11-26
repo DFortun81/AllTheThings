@@ -766,7 +766,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 122915 },	-- Zolani
 			}),
 			q(48452, {	-- The Red Market
-				["sourceQuests"] = { 46926 },	-- Shakedown
+				["sourceQuests"] = { 46915 },	-- Trust of a King
 				["provider"] = { "n", 126148 },	-- Witch Doctor Jala
 				["coord"] = { 44.3, 82.1, DAZARALOR },
 				["races"] = HORDE_ONLY,
