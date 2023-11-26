@@ -76,9 +76,14 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
 			title(195),		-- Farmer
 		}),
 		ach(8023, {		-- Wakener
-			title(218),		-- the Wakener
-			crit(22566),		-- Amber is the Color of My Energy
-			crit(22567),		-- Klaxxi
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				7312,		-- Amber is the Color of My Energy
+				6545,		-- Klaxxi
+			}},
+			["g"] = {
+				title(218),		-- the Wakener
+			},
 		}),
 	}),
 }));
