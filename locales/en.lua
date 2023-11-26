@@ -839,6 +839,7 @@ local L = {
 		["Sanctum Upgrades %> "] = "",
 		["The Azure Span"] = "Azure Span",
 		["The Forbidden Reach"] = "Forbidden Reach",
+		["The Superbloom"] = "Superbloom",
 		["The Waking Shores"] = "Waking Shores",
 		["The Primalist Future"] = "Primalist Future",
 		["The Storm's Fury"] = "Storm's Fury",
