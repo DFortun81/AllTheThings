@@ -17,7 +17,24 @@ root(ROOTS.Zones, {
 					ach(7323),	-- Collateral Damage
 					ach(7320),	-- Dog Pile
 					explorationAch(6979),	-- Explore Vale of Eternal Blossoms
-					ach(7317),	-- One Many Army
+					ach(7317, {		-- One Many Army
+						crit(20517),		-- Cracklefang
+						crit(20518),		-- Vicejaw
+						crit(20519),		-- General Temuja
+						crit(20520),		-- Shadowmaster Sydow
+						crit(20521),		-- Aetha
+						crit(20522),		-- Quid
+						crit(20523),		-- Spirit of Lao-Fe
+						crit(20524),		-- Baolai the Immolator
+						crit(20528),		-- Gaohun the Soul-Severer
+						crit(20526),		-- Bloodtip
+						crit(23913),		-- Wulon
+						crit(20528),		-- Gochao the Ironfist
+						crit(20529),		-- Huo-Shuang
+						crit(20530),		-- Bai-Jin the Butcher
+						crit(20531),		-- Kri'chon
+						crit(20532),		-- Vyraxxis
+					}),
 					ach(7324, {	-- One Step at a Time
 						["sym"] = {{ "achievement_criteria" }},
 					}),

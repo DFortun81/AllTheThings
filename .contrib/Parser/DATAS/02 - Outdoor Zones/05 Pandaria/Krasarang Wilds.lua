@@ -50,10 +50,28 @@ root(ROOTS.Zones, {
 						["icon"] = "Interface\\Icons\\achievement_general_hordeslayer",
 						["g"] = {
 							n(ACHIEVEMENTS, {
-								ach(7929, {	-- Dominance Offensive Campaign
-									["races"] = HORDE_ONLY,
-									["sym"] = {{ "achievement_criteria" }},
-								}),
+								h(ach(7929, {	-- Dominance Offensive Campaign
+									crit(22438),			-- Domination Point
+									crit(22439),			-- The Voice of the Gods
+									crit(22440),			-- The Horde Is Family
+									crit(22441, {    -- Blood For Blood
+										["sourceQuests"] = { 32191 },    -- Ancient Guardians
+									}),
+									crit(22442, {    -- Blood For Blood
+										["sourceQuests"] = { 32192 },    -- Bloodlines
+									}),
+									crit(22443, {    -- Blood For Blood
+										["sourceQuests"] = { 32244 },    -- The Korune
+									}),
+									crit(22448),			-- The Korune
+									crit(22449),			-- Pride
+									crit(22450),			-- Rise of the Blood Elves
+									crit(22451),			-- Secrets of the Past
+									crit(22452),			-- The Divine Bell
+									crit(22453),			-- The Darnassus Operation
+									crit(22539),			-- The Purge of Dalaran
+									crit(22454),			-- Breath of Darkest Shadow
+								})),
 								ach(7932, {	-- I'm In Your Base, Killing Your Dudes
 									crit(22456, {	-- Champion of Arms slain
 										["coord"] = { 89.5, 22.7, KRASARANG_WILDS },	-- Dalan Nightbreaker (H)
