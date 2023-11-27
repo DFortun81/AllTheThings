@@ -238,6 +238,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["races"] = HORDE_ONLY,
 				["sourceQuests"] = { 56205 },	-- Just Ptrust Me On This
 				["g"] = {
+					crit(45335),	-- Just Ptrust Me On This
 					ach(13030, {	-- How to Ptrain Your Pterrordax
 						["races"] = HORDE_ONLY,
 						["g"] = {
@@ -283,6 +284,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				}),
 				crit(41677, {		-- King K'tal the Devilsaur slain
 					["coord"] = { 71.24, 21.84, ZULDAZAR },
+				}),
+			}),
+			ach(13512, {	-- Master Calligrapher
+				crit(44855, {	-- Master of Calligraphy - Triangle
+					["_quests"] = {
+						55344,	-- Calligraphy [H]
+					},
 				}),
 			}),
 			ach(12481, {	-- The Final Seal

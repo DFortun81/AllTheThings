@@ -8,6 +8,23 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			ach(12943, {	-- Adventurer of Vol'dun
 				["sym"] = {{ "achievement_criteria" }},
 			}),
+			h(ach(13009, {	-- Adept Sandfisher
+				crit(41335, {		-- Cobalt Sandworm Scale
+					["_quests"] = { 51173 },	-- Sandfishing
+				}),
+				crit(41336, {		-- Silver Sandworm Scale
+					["_quests"] = { 51173 },	-- Sandfishing
+				}),
+				crit(41337, {		-- Emerald Sandworm Scale
+					["_quests"] = { 51173 },	-- Sandfishing
+				}),
+				crit(41338, {		-- Ruby Sandworm Scale
+					["_quests"] = { 51173 },	-- Sandfishing
+				}),
+				crit(41339, {		-- Onyx Sandworm Scale
+					["_quests"] = { 51173 },	-- Sandfishing
+				}),
+			})),
 			ach(13020, {	-- Bow to Your Masters
 				["collectible"] = false,
 				["races"] = HORDE_ONLY,
@@ -26,6 +43,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				},
 			}),
+			h(ach(13017)),	-- Champion of the Vulpera
 			ach(13018, {	-- Dune Rider
 				["coords"] = {
 					{ 47.9, 62.5, VOLDUN },
@@ -199,6 +217,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 							}),
 						},
 					}),
+					ach(13512, {	-- Master Calligrapher
+						crit(44854, {	-- Master of Calligraphy - Square
+							["_quests"] = {
+								55343,	-- Calligraphy [H]
+							},
+						}),
+					}),
 					ach(13278, {	-- Not Quite Dead Yet
 						["collectible"] = false,
 						["g"] = {
@@ -329,14 +354,20 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["_quests"] = { 53004 },
 				}),
 			}),
-			ach(13014, {	-- Vorrik's Champion
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					crit(41356),	-- Faithless slain with Vorrik's Bulwark slain
-					crit(41357),	-- Faithless slain with Rakjan the Unbroken slain
-					crit(41358),	-- Faithless charged with a Battle Krolusk slain
-				},
-			}),
+			h(ach(13014, {	-- Vorrik's Champion
+				crit(41356, {	-- Faithless slain with Vorrik's Bulwark slain
+					["_quests"] = { 51957 },	-- The Wrath of Vorrik
+					["races"] = HORDE_ONLY,	-- explicit tag due to H-ach on regular WQ until parser can inherit from parent ach for us
+				}),
+				crit(41357, {	-- Faithless slain with Rakjan the Unbroken slain
+					["_quests"] = { 51983 },	-- Vorrik's Vengeance
+					["races"] = HORDE_ONLY,	-- explicit tag due to H-ach on regular WQ until parser can inherit from parent ach for us
+				}),
+				crit(41358, {	-- Faithless charged with a Battle Krolusk slain
+					-- ["_quests"] = {  },	-- Not tied to a WQ, always available once unlocked via storyline I think
+					-- ["races"] = HORDE_ONLY,	-- explicit tag due to H-ach on regular WQ until parser can inherit from parent ach for us
+				}),
+			})),
 		}),
 	}),
 })));

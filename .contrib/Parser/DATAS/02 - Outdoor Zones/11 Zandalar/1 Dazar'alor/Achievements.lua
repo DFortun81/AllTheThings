@@ -41,6 +41,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				},
 			}),
+			h(ach(13294, {	-- Loremaster of Zandalar [H]
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					11861,	-- The Throne of Zuldazar
+					11868,	-- The Dark Heart of Nazmir
+					12478,	-- Secrets in the Sands
+				}},
+			})),
 			ach(13039, {	-- Paku'ai
 				["description"] = "Travel to the coordinates provided and click the totems for the easiest method to get the achievement.\n\nRequires alignment with Pa'ku.  You can switch loa by speaking to Chronicler Ash'tari in Dazar'alor (50.7, 35.2).\n",
 				["coords"] = {
@@ -88,8 +96,25 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				},
 			}),
+			ach(13517, {	-- Two Sides To Every Tale
+				["sym"] = {{"meta_achievement",
+					12479,	-- Zandalar Forever!
+					13466,	-- Tides of Vengeance (H)
+				}},
+				["g"] = {
+					h(i(168055)),	-- Bloodflank Charger (MOUNT!)
+				},
+			}),
 			ach(12555, {	-- Welcome to Zandalar
 				["sourceQuests"] = { 52131 },	-- We Need Each Other
+				["races"] = HORDE_ONLY,
+			}),
+			ach(12891, {	-- Zandalar Forever!
+				["sym"] = {{"meta_achievement",
+					13294,	-- Loremaster of Zandalar [H]
+					12480,	-- A Bargain of Blood
+					12481,	-- The Final Seal
+				}},
 				["races"] = HORDE_ONLY,
 			}),
 		}),

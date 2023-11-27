@@ -132,5 +132,6 @@ root(ROOTS.Zones, {
 				title(47),	-- the Explorer
 			},
 		})),
+		ach(13144),		-- Wide World of Quests
 	}),
 })

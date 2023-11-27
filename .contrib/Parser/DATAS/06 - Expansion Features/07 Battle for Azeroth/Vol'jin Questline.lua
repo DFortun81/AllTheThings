@@ -4,7 +4,10 @@
 
 root(ROOTS.ExpansionFeatures, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	header(HEADERS.Achievement, 12719, bubbleDownSelf({ ["lvl"] = lvlsquish(120, 120, 50), ["races"] = HORDE_ONLY }, {	-- Spirits Be With You
-		ach(12719),	-- Spirits Be With You
+		ach(12719, {	-- Spirits Be With You
+			crit(40709),	-- The Fallen Chieftain
+			crit(40710),	-- Justice For The Fallen
+		}),
 		q(51513, {	-- Zalazane Returns
 			["sourceQuest"] = 50954,	-- Zandalar Forever!
 			["provider"] = { "n", 120171 },	-- Rokhan

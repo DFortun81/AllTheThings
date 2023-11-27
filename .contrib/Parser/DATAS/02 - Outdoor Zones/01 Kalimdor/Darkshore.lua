@@ -46,6 +46,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Explore Darkshore, revealing the covered areas of the world map.",
 					-- #endif
 				}),
+				a(ach(13251, {	-- In Teldrassil's Shadow
+					["timeline"] = { ADDED_8_1_0 },
+					["_noautomation"] = true,
+				})),
 				ach(5453, {	-- Ghost in the Dark
 					["sourceQuest"] = 28529,	-- Writings of the Void
 					["timeline"] = { "added 4.0.3" },
@@ -2546,7 +2550,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = {{"select","itemID",
 						16059,	-- Common Brown Shirt
 						3428,	-- Common Grey Shirt
-						16060,	-- Common White Shirt	
+						16060,	-- Common White Shirt
 					}},
 				}),
 				n(4307, {	-- Heldan Galesong <Fisherman>

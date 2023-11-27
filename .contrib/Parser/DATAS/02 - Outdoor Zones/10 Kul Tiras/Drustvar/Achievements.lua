@@ -482,6 +482,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			})),
+			ach(13512, {	-- Master Calligrapher
+				crit(44854, {	-- Master of Calligraphy - Square
+					["_quests"] = {
+						55264,	-- Calligraphy [A]
+					},
+				}),
+			}),
 			ach(13087, {	-- Sausage Sampler
 				["description"] = "Can be completed as Horde by purchasing items on the AH.",
 				["g"] = {

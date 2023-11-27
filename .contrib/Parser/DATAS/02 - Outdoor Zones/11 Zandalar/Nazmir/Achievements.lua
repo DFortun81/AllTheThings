@@ -297,6 +297,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				},
 			}),
+			ach(13512, {	-- Master Calligrapher
+				crit(44853, {	-- Master of Calligraphy - Circle
+					["_quests"] = {
+						55342,	-- Calligraphy [H]
+					},
+				}),
+			}),
 			ach(11868, {	-- The Dark Heart of Nazmir
 				["races"] = HORDE_ONLY,
 				["g"] = {
