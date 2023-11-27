@@ -4,6 +4,37 @@
 root(ROOTS.Zones, {
 	-- TODO: some of these are lacking lots of information! (crs/coords/etc.)
 	n(ACHIEVEMENTS, {
+		ach(7411, {		-- 10000 Daily Quests Completed
+			ach(973),		-- 5 Daily Quests Completed
+			ach(974),		-- 50 Daily Quests Completed
+			ach(975),		-- 200 Daily Quests Completed
+			ach(976),		-- 500 Daily Quests Completed
+			ach(977),		-- 1000 Daily Quests Completed
+			ach(5751),		-- 2500 Daily Quests Completed
+			ach(7410),		-- 5000 Daily Quests Completed
+		}),
+		ach(4957, {		-- 20 Dungeon Quests Completed
+			ach(4956),		-- 5 Dungeon Quests Completed
+		}),
+		ach(978, {		-- 3000 Quests Completed
+			title(42),		-- the Seeker
+			ach(503),		-- 50 Quests Completed
+			ach(504),		-- 100 Quests Completed
+			ach(505),		-- 250 Quests Completed
+			ach(506),		-- 500 Quests Completed
+			ach(507),		-- 1000 Quests Completed
+			ach(508),		-- 1500 Quests Completed
+			ach(32),		-- 2000 Quests Completed
+		}),
+		ach(11132, {	-- 10,000 World Quests Completed
+			ach(11126),		-- 50 World Quests Completed
+			ach(11127),		-- 200 World Quests Completed
+			ach(11128),		-- 500 World Quests Completed
+			ach(11129),		-- 1000 World Quests Completed
+			ach(11130),		-- 2500 World Quests Completed
+			ach(11131),		-- 5000 World Quests Completed
+		}),
+		ach(31),		-- A Simple Re-Quest
 		applyclassicphase(BFA_PHASE_ONE, ach(12988, {	-- Battle for Azeroth Explorer
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -72,7 +103,33 @@ root(ROOTS.Zones, {
 			crit(27869, { ["races"] = HORDE_ONLY }),	-- Orgrimmar
 			crit(27864, { ["races"] = ALLIANCE_ONLY }),	-- Stormwind City
 		}),
+		applyclassicphase(WRATH_PHASE_ONE, ach(941, {	-- Hemet Nesingwary: The Collected Quests
+			-- #if BEFORE WRATH
+			["description"] = "Complete the Green Hills of Stranglethorn, Hills Like White Elekk and Snows of Northrend achievements.",
+			["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
+			["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
+			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 939, 938, 940); end]],
+			-- #else
+			["maps"] = {
+				NAGRAND,
+				-- #if AFTER CATA
+				NORTHERN_STRANGLETHORN,
+				-- #else
+				STRANGLETHORN_VALE,
+				-- #endif
+				SHOLAZAR_BASIN,
+			},
+			["sym"] = {{"meta_achievement",
+				939,	-- Hills Like White Elekk
+				938,	-- The Snows of Northrend
+				940,	-- The Green Hills of Stranglethorn
+			}},
+			-- #endif
+		})),
 		ach(1833),	-- It's Happy Hour Somewhere
+		ach(5752, {		-- Justly Rewarded
+			ach(1182),		-- The Bread Winner
+		}),
 		ach(4875, {	-- Loremaster of Cataclysm
 			["sym"] = {{"meta_achievement",
 				4870,	-- Coming Down the Mountain
@@ -84,6 +141,21 @@ root(ROOTS.Zones, {
 				4872,	-- Unearthing Uldum
 			}},
 		}),
+		applyclassicphase(WRATH_PHASE_ONE, ach(1576, {	-- Of Blood and Anguish
+			["sourceQuests"] = {
+				9977,	-- The Ring of Blood: The Final Challenge
+				12948,	-- The Champion of Anguish
+			},
+			["maps"] = { NAGRAND, ZULDRAK },
+			["groups"] = {
+				crit(5799, {	-- The Champion of Anguish
+					["_quests"] = { 12948 },	-- The Champion of Anguish
+				}),
+				crit(5798, {	-- The Ring of Blood: The Final Challenge
+					["_quests"] = { 9977 },	-- The Ring of Blood: The Final Challenge
+				}),
+			},
+		})),
 		ach(2556, {	-- Pest Control
 			crit(9364),	-- Larva (Naxxramas, Ghostlands)
 			crit(9366),	-- Water Snake (Orgrimmar, Northern Stranglethorn, Durotar, Twilight Highlands)
@@ -105,6 +177,62 @@ root(ROOTS.Zones, {
 			crit(9368),	-- Rat (Ashenvale, Dire Maul, The Lost Isles, Gilneas, Loch Modan, The Deadmines, Stormwind City, Arathi Highlands, Darkshore, Nagrand, Terokkar Forest, Scholomance, Tirisfal Glades, Howling Fjord, The Cape of Stranglethorn, The Culling of Stratholme, Azshara, Desolace, Gilneas City, Maraudon, Sunken Temple and The Hinterlands)
 		}),
 		ach(1832),	-- Tastes Like Chicken
+		ach(4958, {		-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
+			crit(5798),		-- Ring of Blood in Nagrand
+			crit(5799),		-- Amphitheater of Anguish in Zul'Drak
+			crit(13918),	-- Crucible of Carnage in Twilight Highlands
+		}),
+		-- #if BEFORE 5.0.4.16016
+		applyclassicphase(WRATH_PHASE_ONE, ach(1681, {	-- The Loremaster (A)
+			["sym"] = {{"meta_achievement",
+				1678,	-- Loremaster of Kalimdor (A)
+				1676,	-- Loremaster of Eastern Kingdoms (A)
+				1262,	-- Loremaster of Outland (A)
+				41,		-- Loremaster of Northrend (A)
+			}},
+			["timeline"] = { "added 3.0.1", "removed 5.0.4.16016" },
+			["races"] = ALLIANCE_ONLY,
+			["groups"] = {
+				title(93),	-- Loremaster
+				i(43300),	-- Loremaster's Colors
+			},
+		})),
+		applyclassicphase(WRATH_PHASE_ONE, ach(1682, {	-- The Loremaster (H)
+			["sym"] = {{"meta_achievement",
+				1680,	-- Loremaster of Kalimdor (H)
+				1677,	-- Loremaster of Eastern Kingdoms (H)
+				1274,	-- Loremaster of Outland (H)
+				1360,	-- Loremaster of Northrend (H)
+			}},
+			["timeline"] = { "added 3.0.1", "removed 5.0.4.16016" },
+			["races"] = HORDE_ONLY,
+			["groups"] = {
+				title(93),	-- Loremaster
+				i(43300),	-- Loremaster's Colors
+			},
+		})),
+		-- #endif
+		ach(7520, {		-- The Loremaster
+			["sym"] = {{"meta_achievement",
+				1676,	-- Loremaster of Eastern Kingdoms
+				1678,	-- Loremaster of Kalimdor
+				1262,	-- Loremaster of Outland
+				41,		-- Loremaster of Northrend
+				4875,	-- Loremaster of Cataclysm
+				6541,	-- Loremaster of Pandaria
+				9833,	-- Loremaster of Draenor (A)
+				9923,	-- Loremaster of Draenor (H)
+				11157,	-- Loremaster of Legion
+				12593,	-- Loremaster of Kul Tiras (A)
+				13294,	-- Loremaster of Zandalar (H)
+				14280,	-- Loremaster of Shadowlands
+			}},
+			["timeline"] = { "added 5.0.4.16016" },
+			["groups"] = {
+				title(93),		-- Loremaster
+				i(43300),		-- Loremaster's Colors
+			},
+		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(46, {	-- Universal Explorer [7.0.3] / World Explorer
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
