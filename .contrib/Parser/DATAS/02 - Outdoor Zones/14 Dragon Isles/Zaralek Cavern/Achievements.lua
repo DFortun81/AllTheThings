@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["_npcs"] = { 203468 },	-- Aquifon
 					}),
 					crit(59493, {
-						["_npcs"] = { 203621 },	-- Brullo the Strong
+						-- DB data applies the chest object
 					}),
 					crit(59494, {
 						["_npcs"] = { 204093 },	-- Colossian

@@ -417,7 +417,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						q(77342, {	-- Disc Delivery
 							["sourceQuests"] = { 77340 },	-- Infiltrating the Nighthold'
 							["provider"] = { "n", 208834 },	-- Nozdormu
-							["coord"] = { 60.4, 58.7, THALDRASZUS },	
+							["coord"] = { 60.4, 58.7, THALDRASZUS },
 							["groups"] = {
 								i(208798),	-- Recorded Memories of Tyr's Guard (TOY!)
 							},
@@ -425,7 +425,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						q(77343, {	-- A Tyrful Reunion
 							["sourceQuests"] = { 77342 },	-- Disc Delivery
 							["provider"] = { "n", 208833 },	-- Alexstrasza the Life-Binder
-							["coord"] = { 60.4, 58.6, THALDRASZUS },	
+							["coord"] = { 60.4, 58.6, THALDRASZUS },
 						}),
 						q(77344, {	-- Time to Process
 							["sourceQuests"] = { 77343 },	-- A Tyrful Reunion
@@ -469,7 +469,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}, {	-- RENOWN 14 --
 				q(70892, {	-- Crafting Your Start
 					["provider"] = { "n", 191000 },	-- Dothenos
-					["coord"] = { 36.4, 52.8, VALDRAKKEN },
+					["coord"] = { 36.4, 62.9, VALDRAKKEN },
 					["requireSkill"] = ALCHEMY,
 					["g"] = {
 						i(201706),	-- Notebook of Crafting Knowledge
@@ -477,7 +477,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(72329, {	-- Crafting Your Start
 					["provider"] = { "n", 191000 },	-- Dothenos
-					["coord"] = { 36.4, 52.8, VALDRAKKEN },
+					["coord"] = { 36.4, 62.9, VALDRAKKEN },
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						i(201708),	-- Notebook of Crafting Knowledge
@@ -485,7 +485,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(72330, {	-- Crafting Your Start
 					["provider"] = { "n", 191000 },	-- Dothenos
-					["coord"] = { 36.4, 52.8, VALDRAKKEN },
+					["coord"] = { 36.4, 62.9, VALDRAKKEN },
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
 						i(201710),	-- Notebook of Crafting Knowledge
@@ -493,7 +493,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(72331, {	-- Crafting Your Start
 					["provider"] = { "n", 191000 },	-- Dothenos
-					["coord"] = { 36.4, 52.8, VALDRAKKEN },
+					["coord"] = { 36.4, 62.9, VALDRAKKEN },
 					["requireSkill"] = INSCRIPTION,
 					["g"] = {
 						i(201711),	-- Notebook of Crafting Knowledge
@@ -501,7 +501,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(72332, {	-- Crafting Your Start
 					["provider"] = { "n", 191000 },	-- Dothenos
-					["coord"] = { 36.4, 52.8, VALDRAKKEN },
+					["coord"] = { 36.4, 62.9, VALDRAKKEN },
 					["requireSkill"] = MINING,
 					["g"] = {
 						i(201700),	-- Notebook of Crafting Knowledge
@@ -509,7 +509,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(72333, {	-- Crafting Your Start
 					["provider"] = { "n", 191000 },	-- Dothenos
-					["coord"] = { 36.4, 52.8, VALDRAKKEN },
+					["coord"] = { 36.4, 62.9, VALDRAKKEN },
 					["requireSkill"] = TAILORING,
 					["g"] = {
 						i(201715),	-- Notebook of Crafting Knowledge
@@ -816,7 +816,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}, {	-- RENOWN 24 --
 				q(70889, {	-- Crafting for Expertise
 					["provider"] = { "n", 191000 },	-- Dothenos
-					["coord"] = { 36.4, 52.8, VALDRAKKEN },
+					["coord"] = { 36.4, 62.9, VALDRAKKEN },
 					["requireSkill"] = ALCHEMY,
 					["g"] = {
 						i(201706),	-- Notebook of Crafting Knowledge
@@ -824,7 +824,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(70902, {	-- Crafting for Expertise
 					["provider"] = { "n", 191000 },	-- Dothenos
-					["coord"] = { 36.4, 52.8, VALDRAKKEN },
+					["coord"] = { 36.4, 62.9, VALDRAKKEN },
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
 						i(201710),	-- Notebook of Crafting Knowledge
@@ -832,7 +832,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(70909, {	-- Crafting for Expertise
 					["provider"] = { "n", 191000 },	-- Dothenos
-					["coord"] = { 36.4, 52.8, VALDRAKKEN },
+					["coord"] = { 36.4, 62.9, VALDRAKKEN },
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						i(201708),	-- Notebook of Crafting Knowledge
@@ -840,7 +840,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(72334, {	-- Crafting for Expertise
 					["provider"] = { "n", 191000 },	-- Dothenos
-					["coord"] = { 36.4, 52.8, VALDRAKKEN },
+					["coord"] = { 36.4, 62.9, VALDRAKKEN },
 					["requireSkill"] = INSCRIPTION,
 					["g"] = {
 						i(201711),	-- Notebook of Crafting Knowledge
@@ -848,7 +848,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(72335, {	-- Crafting for Expertise
 					["provider"] = { "n", 191000 },	-- Dothenos
-					["coord"] = { 36.4, 52.8, VALDRAKKEN },
+					["coord"] = { 36.4, 62.9, VALDRAKKEN },
 					["requireSkill"] = MINING,
 					["g"] = {
 						i(201716),	-- Notebook of Crafting Knowledge
@@ -856,7 +856,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(72336, {	-- Crafting for Expertise
 					["provider"] = { "n", 191000 },	-- Dothenos
-					["coord"] = { 36.4, 52.8, VALDRAKKEN },
+					["coord"] = { 36.4, 62.9, VALDRAKKEN },
 					["requireSkill"] = TAILORING,
 					["g"] = {
 						i(201715),	-- Notebook of Crafting Knowledge

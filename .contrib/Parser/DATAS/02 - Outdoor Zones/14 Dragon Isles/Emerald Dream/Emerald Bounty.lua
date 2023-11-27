@@ -131,7 +131,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["isWeekly"] = true,
 					["maxReputation"] = { FACTION_DREAM_WARDENS, 20 },
 					["g"] = {
-						i(SEEDBLOOM, {	
+						i(SEEDBLOOM, {
 							["description"] = "Any item bought via Seedbloom's can also be obtained randomly from The Emerald Bounty event while planting or contributing a Small Dreamseed, Plump Dreamseed, or Gigantic Dreamseed.",
 						}),
 						i(211394, {	-- Harvested Dreamseed Cache
@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 			}),
-			n(RARE, {
+			n(RARES, {
 				n(209915, {	-- Amalgamation of Dreams
 					["questID"] = 77856,
 					--["coords"] = {}, -- any plant spot
@@ -192,7 +192,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					-- Dont Think we should symlink this?
 				}),
 			}),
-			n(VENDOR, {
+			n(VENDORS, {
 				n(211265, {	-- Sylvia Whisperbloom
 					["coord"] = { 59.8, 16.9, EMERALD_DREAM },
 					["g"] = bubbleDownFiltered({
@@ -281,6 +281,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						}),
 					}),
 				}),
+				n(212797, {	-- Talisa Whisperbloom
+					["sym"] = {{"sub","common_vendor",211265}},	-- Sylvia Whisperbloom
+				}),
 			}),
 		}),
 	}),
@@ -339,7 +342,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78810),	-- contrib with dewdrop for green seed
 		q(78808),	-- contrib with dewdrop for blue seed
 		q(78809),	-- contrib with dewdrop for purple seed
-		q(77514),	-- bloom spot (80/100) 
+		q(77514),	-- bloom spot (80/100)
 		q(77512),	-- bloom spot (100/100) (spellID 423152)
 		q(77517),	-- loot cache
 		--5 - Dragon's Daffodil (spellID 417947 as reference with qid)
