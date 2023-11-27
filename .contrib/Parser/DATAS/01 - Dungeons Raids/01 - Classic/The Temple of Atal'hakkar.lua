@@ -299,7 +299,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 				q(3447, {	-- Secret of the Circle
-					["qg"] = 7771,	-- Marvon Rivetseeker
+					["providers"] = {
+						{ "n",   7771 },	-- Marvon Rivetseeker
+						{ "o", 148838 },	-- Idol of Hakkar
+					},
 					["sourceQuest"] = 3444,	-- The Stone Circle
 					["coord"] = { 52.6, 45.8, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
@@ -374,7 +377,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 				q(3373, {	-- The Essence of Eranikus
-					["provider"] = { "i", 10454 },	-- Essence of Eranikus
+					["providers"] = {
+						{ "i",  10454 },	-- Essence of Eranikus
+						{ "o", 148512 },	-- Essence Font
+					},
 					["description"] = "Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",
 					["timeline"] = { "removed 4.0.3" },
 					["lvl"] = 48,
@@ -653,6 +659,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				-- #if BEFORE 4.0.3
 				["description"] = "Go to the Pit of Refuse.\n\nClear all of the trash as you travel around the circular platform. You'll notice balconies that dip out and overlook the center of the pit. Essentially, once it's all cleared, each of your party members should spread out and be assigned to a balcony with an Atal'ai Shrine. The shrines must be clicked in a specific order:\n\n    South (Bottom)\n    North (Top)\n    Southwest (Bottom Left)\n    Southeast (Bottom Right)\n    Northwest (Top Left)\n    Northeast (Top Right)\n\nOnce a statue has been clicked in the correct sequence, it'll turn green. If not, the person attempting to activate will gain a curse.",
 				-- #endif
+				["provider"] = { "o", 148832 },	-- Atal'ai Statue
 				["timeline"] = { "removed 4.0.3" },
 				["groups"] = {
 					i(22444, {	-- Putrid Vine
