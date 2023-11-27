@@ -687,36 +687,6 @@ namespace ATT
                 }
             }
 
-            // TODO: move to consolidation
-            if (data.TryGetValue("providers", out object objRef) && objRef is List<object> providers)
-            {
-                foreach (var providerRef in providers)
-                {
-                    if (providerRef is List<object> provider)
-                    {
-                        string providerType = provider[0]?.ToString();
-                        long id = Convert.ToInt64(provider[1]);
-                        if (providerType == "i")
-                        {
-                            if (Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
-                            {
-                                // if the provider is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
-                                Items.MarkItemAsReferenced(id);
-                            }
-                        }
-                        else if (providerType == "n")
-                        {
-                            NPCS_WITH_REFERENCES[id] = true;
-                            MarkCustomHeaderAsRequired(id);
-                        }
-                        else if (providerType == "o")
-                        {
-                            ProcessObjectInstance(data, id);
-                        }
-                    }
-                }
-            }
-
             // Throw away automatic Spell ID assignments for certain filter types.
             if (data.TryGetValue("spellID", out f))
             {
@@ -2179,9 +2149,14 @@ namespace ATT
                 switch (pType)
                 {
                     case "i":
-                        var item = Items.GetNull(pID);
-                        if (!Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
+                        if (Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
                         {
+                            // if the provider is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
+                            Items.MarkItemAsReferenced(pID);
+                        }
+                        else
+                        {
+                            var item = Items.GetNull(pID);
                             // Crieve doesn't want this. Sometimes the only valid source is the provider, which is fine for quest items.
                             if (item == null || !Items.IsItemReferenced(pID))
                             {
@@ -2198,9 +2173,13 @@ namespace ATT
                         }
                         break;
                     case "n":
+                        NPCS_WITH_REFERENCES[(long)pID] = true;
+                        MarkCustomHeaderAsRequired((long)pID);
+                        break;
                     case "o":
+                        ProcessObjectInstance(data, (long)pID);
+                        break;
                     case "a":
-                        // maybe something for NPCs, Objects... ?
                         break;
                     default:
                         LogError($"Invalid Data Value: provider-type {pType}", data);
@@ -2701,7 +2680,6 @@ namespace ATT
         /// <param name="objectID">The Object ID.</param>
         private static void ProcessObjectInstance(IDictionary<string, object> data, long objectID)
         {
-            // TODO: move to Consolidation
             OBJECTS_WITH_REFERENCES[objectID] = true;
             if (!ObjectDB.TryGetValue(objectID, out Dictionary<string, object> objectData))
             {
