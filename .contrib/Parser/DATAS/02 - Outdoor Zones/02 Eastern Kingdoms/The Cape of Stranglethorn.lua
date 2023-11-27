@@ -18,6 +18,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				ach(4905, {	-- Cape of Stranglethorn Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- The Trolls of Zul'gurub
 							["sourceQuests"] = { 26814, 26555 },	-- High Priest Venoxis (A, H)
@@ -36,6 +37,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 26703,	-- Bloodsail's End
 						}),
 					},
+					-- #ENDIF
 				}),
 				explorationAch(4995, {	-- Explore the Cape of Stranglethorn
 					["timeline"] = { "added 4.0.3" },

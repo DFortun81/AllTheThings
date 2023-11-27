@@ -56,10 +56,14 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Csv, Version=2.0.93.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Csv.2.0.93\lib\net40\Csv.dll</HintPath>
+    </Reference>
     <Reference Include="KeraLua, Version=1.3.2.0, Culture=neutral, PublicKeyToken=04d04586786c6f34, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\KeraLua.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="NLua, Version=1.3.2.0, Culture=neutral, PublicKeyToken=8df2ab518030ea95, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\NLua.dll</HintPath>
@@ -71,6 +75,8 @@
     <Compile Include="CollectedStatus.cs" />
     <Compile Include="CustomConfiguration.cs" />
     <Compile Include="DataValidator.cs" />
+    <Compile Include="DB\Types\TypeFlags.cs" />
+    <Compile Include="DB\Types\ModifierTree.cs" />
     <Compile Include="Export\Export %28Compressed Lua%29.cs" />
     <Compile Include="Export\Export %28Raw Lua%29.cs" />
     <Compile Include="Export\Export %28Shortcuts%29.cs" />
@@ -86,19 +92,31 @@
     <Compile Include="Export\Object Data\QuestData.cs" />
     <Compile Include="Export\Object Data\SpellData.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="FieldTypes\Cost.cs" />
+    <Compile Include="FieldTypes\IExportableField.cs" />
+    <Compile Include="FieldTypes\IProcessedField.cs" />
     <Compile Include="Framework\Framework.Objects.cs" />
     <Compile Include="Framework\Framework.Items.cs" />
     <Compile Include="Framework\Framework.cs" />
+    <Compile Include="Framework\Framework.Processing.cs" />
     <Compile Include="Harvesters\ObjectHarvester.cs" />
     <Compile Include="Framework\ParseStage.cs" />
     <Compile Include="MiniJSON.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tracer.cs" />
+    <Compile Include="DB\IDBType.cs" />
+    <Compile Include="DB\Types\Achievement.cs" />
+    <Compile Include="DB\Types\Criteria.cs" />
+    <Compile Include="DB\Types\CriteriaTree.cs" />
+    <Compile Include="DB\Types\TypeCollection.cs" />
+    <Compile Include="DB\WagoTypes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <Compile Include="Framework\Framework.Logging.cs" />
+    <Compile Include="Framework\Framework.Merge.cs" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\att_logo_128_new_jrX_icon.ico" />
@@ -110,5 +128,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

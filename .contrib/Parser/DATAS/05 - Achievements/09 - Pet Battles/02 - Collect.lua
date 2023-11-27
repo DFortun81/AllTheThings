@@ -87,12 +87,15 @@ root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 				["provider"] = { "i", 102146 },
 			}),
 		})),
-		petbattle(ach(6611, {		-- Continental Tamer*
-			crit(19431),		-- Outland Tamer
-			crit(19430),		-- Kalimdor Tamer
-			crit(19432),		-- Northrend Tamer
-			crit(19429),		-- Eastern Kingdoms Tamer
-			crit(19433),		-- Pandaria Tamer
+		petbattle(ach(6611, {		-- Continental Tamer
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				6614,	-- Outland Tamer
+				6612,	-- Kalimdor Tamer
+				6615,	-- Northrend Tamer
+				6613,	-- Eastern Kingdoms Tamer
+				6616,	-- Pandaria Tamer
+			}},
 		})),
 		petbattle(ach(8397, {		-- Crazy for Cats* (need to add locations to comments for future use - wowhead did not link)
 			title_gendered(252, 240),	-- the Crazy Cat Man / the Crazy Cat Lady

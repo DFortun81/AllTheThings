@@ -77,11 +77,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["provider"] = { "n", 150202 },	-- Waveblade Hunter (Hunter Akana)
 			["races"] = ALLIANCE_ONLY,
 			["description"] = "Offered when |cFFFFD700Hunter Akana|r reaches rank 5.",
-			["g"] = {
-				crit(5, {	-- Level a Nazjatar Ally to Level 5.
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
-			},
 		}),
 		q(55984, {	-- A Good Offense
 			["provider"] = { "n", 153623 },	-- Korl
@@ -132,22 +127,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 48.1, 45.3, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 56156,	-- A Tempered Blade
-			["g"] = {
-				crit(7, {	-- Find and Assist Mrrl
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
-			},
 		}),
 		q(55530, {	-- A Safer Place (H)
 			["provider"] = { "n", 152084 },	-- Mrrl
 			["coord"] = { 48.1, 45.3, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55500,	-- Save a Friend
-			["g"] = {
-				crit(7, {	-- Find and Assist Mrrl
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
-			},
 		}),
 		q(56156, {	-- A Tempered Blade
 			["provider"] = { "n", 154248 },	-- Bladesman Inowari
@@ -261,9 +246,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["races"] = HORDE_ONLY,
 			["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 5.",
 			["g"] = {
-				crit(5, {	-- Level a Nazjatar Ally to Level 5.
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
 				i(169908),	-- Cleverly Concealed Supplies
 			},
 		}),
@@ -1387,9 +1369,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154297 },	-- Bladesman Inowari
 			["g"] = {
-				crit(5, {	-- Level a Nazjatar Ally to Level 5.
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
 				i(169905),	-- Faintly Glowing Supplies
 			},
 		}),
@@ -1765,22 +1744,12 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 37.8, 55.8, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 56156,	-- A Tempered Blade
-			["g"] = {
-				crit(3, {	-- Learn about the Scrying Stones of Nazjatar
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
-			},
 		}),
 		q(56210, {	-- Scrying Stones
 			["provider"] = { "n", 153512 },	-- Finder Pruc
 			["coord"] = { 49.0, 62.1, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 55500,	-- Save A Friend
-			["g"] = {
-				crit(3, {	-- Learn about the Scrying Stones of Nazjatar
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
-			},
 		}),
 		q(55860, {	-- Sea Slug Liquidation (A)
 			["provider"] = { "n", 153385 },	-- Blademaster Okani
@@ -1913,9 +1882,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches Rank 5.",
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				crit(5, {	-- Level a Nazjatar Ally to Level 5
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
 				i(169909, {	-- Poen's Neat Things
 					i(169942),	-- Vibrant Sea Blossom
 				}),
@@ -2058,9 +2024,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["races"] = ALLIANCE_ONLY,
 			["provider"] = { "n", 154304 },	-- Farseer Ori
 			["g"] = {
-				crit(5, {	-- Level a Nazjatar Ally to Level 5.
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
 				i(169905),	-- Faintly Glowing Supplies
 			},
 		}),
@@ -2544,9 +2507,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 5.",
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				crit(5, {	-- Level a Nazjatar Ally to Level 5
-					["achievementID"] = 13635,	-- Tour of the Depths
-				}),
 				i(169910, {	-- Vim's Scavenged Supplies
 					i(169942),	-- Vibrant Sea Blossom
 				}),

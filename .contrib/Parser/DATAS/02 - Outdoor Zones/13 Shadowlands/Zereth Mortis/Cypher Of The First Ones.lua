@@ -9,11 +9,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				ach(15542),	-- Apocopocolypse Now
 				ach(15402, {	-- Cyphers of the First Ones
 					recipe(365040),	-- Pale Regal Cervid
-					-- TODO: These are nested criteria pointing to garisson talents. The subcriteria don't have a name. That makes converting them to UID hard.
-					crit(1),	-- All Metrial Cyphers
-					crit(2),	-- All Aelic Cyphers
-					crit(3),	-- All Dealic Cyphers
-					crit(4),	-- All Trebalim Cyphers
+					crit(1, {	-- All Metrial Cyphers
+						["_noautomation"] = true,
+					}),
+					crit(2, {	-- All Aelic Cyphers
+						["_noautomation"] = true,
+					}),
+					crit(3, {	-- All Dealic Cyphers
+						["_noautomation"] = true,
+					}),
+					crit(4, {	-- All Trebalim Cyphers
+						["_noautomation"] = true,
+					}),
 				}),
 				ach(15508, {	-- Fashion of the First Ones
 					["sym"] = {{ "achievement_criteria" }},

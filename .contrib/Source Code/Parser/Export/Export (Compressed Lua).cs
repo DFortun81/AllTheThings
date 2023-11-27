@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ATT.FieldTypes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,13 +31,16 @@ namespace ATT
             else if (data is float f) builder.Append(ToString(f));
             else if (data is double db) builder.Append(ToString(db));
             else if (data is string str) ExportStringValue(builder, str);
-            else if (data is IDictionary<string, List<object>> listdict) ExportCompressedLua(builder, listdict);
-            else if (data is IDictionary<long, long> longLongDict) ExportCompressedLua(builder, longLongDict);
-            else if (data is IDictionary<long, object> longdict) ExportCompressedLua(builder, longdict);
-            else if (data is IDictionary<long, string> strdict) ExportCompressedLua(builder, strdict);
-            else if (data is IDictionary<string, object> dict) ExportCompressedLua(builder, dict);
+            else if (data is IExportableField field) ExportCompressedLua(builder, field.AsExportType());
+            else if (data is IList<long> longlist) ExportCompressedLua(builder, longlist);
+            else if (data is IList<string> strlist) ExportCompressedLua(builder, strlist);
             else if (data is IList<List<object>> listObjects) ExportCompressedLua(builder, listObjects);
-            else if (data is IList<object> list) ExportCompressedLua(builder, list);
+            else if (data is IList<object> objlist) ExportCompressedLua(builder, objlist);
+            else if (data is IDictionary<string, List<object>> listdict) ExportCompressedLua(builder, listdict);
+            else if (data is IDictionary<string, object> dict) ExportCompressedLua(builder, dict);
+            else if (data is IDictionary<long, long> longLongDict) ExportCompressedLua(builder, longLongDict);
+            else if (data is IDictionary<long, string> strdict) ExportCompressedLua(builder, strdict);
+            else if (data is IDictionary<long, object> longdict) ExportCompressedLua(builder, longdict);
             else
             {
                 // Default: Write it raw. Best of luck.

@@ -49,6 +49,18 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 							},
 						}),
 					}),
+					n(VENDORS, {
+						n(52915, {	-- Harald
+							["cost"] = {
+								{ "i", 33865, 1 },	-- Amani Hex Stick
+							},
+							["groups"] = {
+								i(33926, {	-- Sealed Scroll Case
+									["description"] = "Can contain profession recipes."
+								})
+							},
+						}),
+					}),
 					n(ZONE_DROPS, {
 						i(69801, {	-- Amani Armguards
 							["crs"] = {
@@ -145,11 +157,6 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 								}),
 								crit(16840, {	-- Harald saved.
 									["provider"] = { "n", 52915 },	-- Harald
-									["groups"] = {
-										i(33926, {	-- Sealed Scroll Case
-											["description"] = "Can contain profession recipes."
-										})
-									}
 								}),
 								crit(16841, {	-- Relissa saved.
 									["provider"] = { "n", 52912 },	-- Relissa
@@ -258,7 +265,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 					}),
 					e(191, {	-- Daakara
 						["crs"] = { 23863 },	-- Daakara
-						["groups"] = {					
+						["groups"] = {
 							ach(5769),	-- Heroic: Zul'Aman
 							ach(5771),	-- Heroic: Zul'Aman Guild Run
 							ach(5760),	-- Ring Out!

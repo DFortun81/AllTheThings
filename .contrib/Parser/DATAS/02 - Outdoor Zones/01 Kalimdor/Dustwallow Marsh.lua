@@ -13,6 +13,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4929, {	-- Dustwallow Marsh Quests (Alliance)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	--	Disgrace the Defectors
 							["sourceQuest"] = 27213,	-- The End of the Deserters
@@ -42,10 +43,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 27411,	-- Challenge to the Black Flight
 						}),
 					},
+					-- #ENDIF
 				}),
 				ach(4978, {	-- Dustwallow Marsh Quests (Horde)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Wild Threats
 							["sourceQuests"] = {
@@ -89,6 +92,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 27411,	-- Challenge to the Black Dragonflight
 						}),
 					},
+					-- #ENDIF
 				}),
 				explorationAch(850, {	-- Explore Dustwallow Marsh
 					-- #if BEFORE WRATH

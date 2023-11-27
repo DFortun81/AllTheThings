@@ -28,6 +28,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(ACHIEVEMENTS, {
 				ach(4930, {	-- Desolace Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- The Naga Threat
 							["sourceQuest"] = 14302,	-- Official Assessment
@@ -67,6 +68,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
+					-- #ENDIF
 				}),
 				explorationAch(848, {	-- Explore Desolace
 					-- #if BEFORE WRATH

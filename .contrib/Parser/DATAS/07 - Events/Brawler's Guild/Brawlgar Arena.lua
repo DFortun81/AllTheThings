@@ -9,6 +9,19 @@ root(ROOTS.WorldEvents, m(503,
 	["lvl"] = 120,
 	["icon"] = "Interface\\Icons\\INV_MISC_HEAD_ORC2_BRN",
 	["groups"] = {
+		n(FACTIONS, sharedData({
+			["races"] = HORDE_ONLY,
+		},{
+			faction(1690, {	-- Brawl'gar Arena (Season 2)
+				["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
+			}),
+			faction(2010, {	-- Brawl'gar Arena (Season 3)
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1_LAUNCH },
+			}),
+			faction(2372, {	-- Brawl'gar Arena
+				["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
+			}),
+		})),
 		n(REWARDS, {
 			--	attaching questIDs and sourceQuests here makes the SQ list not display correctly (the items display instead of the quests).
 			i(92718, {	-- Brawler's Purse

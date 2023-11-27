@@ -46,7 +46,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						crit(38856, {	-- Life from the Dream
 							["sourceQuest"] = 24566,	-- Sowing a Solution
-						}),						
+						}),
 						crit(38857, {	-- Forward Command
 							["sourceQuest"] = 25044,	-- Diplomacy By Another Means
 						}),
@@ -73,21 +73,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						crit(38867, {	-- Fort Triumph
 							["sourceQuest"] = 25080,	-- Batteries Not Yet Included
-						}),	
+						}),
 						crit(38868, {	-- Fort Triumph
 							["sourceQuest"] = 25082,	-- Working the Bugs Out
 						}),
 						crit(38869, {	-- Fort Triumph
 							["sourceQuest"] = 25175,	-- The Bad News
-						}),	
+						}),
 						crit(38870, {	-- Fort Triumph
 							["sourceQuest"] = 25185,	-- The Deed Is Done
-						}),						
+						}),
 					},
 				}),
 				ach(4981, {	-- Southern Barrens Quests (H)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Hunter's Hill
 							["sourceQuests"] = {
@@ -140,6 +141,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 24747,	-- Sabotage!
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({

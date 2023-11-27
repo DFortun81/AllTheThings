@@ -20,6 +20,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				ach(4938, {	-- Thousand Needles Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- The Treasure Trove [A]
 							["races"] = ALLIANCE_ONLY,
@@ -52,6 +53,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 28161,	-- Spread the Word [H]
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({

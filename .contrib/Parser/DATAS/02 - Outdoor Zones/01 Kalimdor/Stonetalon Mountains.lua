@@ -21,6 +21,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				ach(4936, {	-- Stonetalon Mountains Quests (A)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Clearing a Path
 							["sourceQuests"] = {
@@ -37,10 +38,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 25851,	-- Dances with Grimtotem
 						}),
 					},
+					-- #ENDIF
 				}),
 				ach(4980, {	-- Stonetalon Mountains Quests (H)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- A Short-Lived Victory
 							["sourceQuest"] = 26010,	-- Ashes to Ashes
@@ -58,6 +61,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 26115,	-- To Be Horde...
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({

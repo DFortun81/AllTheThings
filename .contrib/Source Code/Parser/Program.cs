@@ -96,6 +96,25 @@ namespace ATT
                 }
                 while (Errored);
 
+                // Load all Wago DB CSV files
+                Framework.CurrentParseStage = ParseStage.WagoDBMerge;
+                do
+                {
+                    Errored = false;
+                    // Load all of the RAW JSON Data into the database.
+                    var files = Directory.EnumerateFiles(databaseRootFolder, "*.csv", SearchOption.AllDirectories).Where(p => p.Contains("Wago")).ToList();
+                    files.Sort(StringComparer.InvariantCulture);
+                    foreach (var f in files) ParseWagoDbCsvFile(f);
+
+                    if (Errored)
+                    {
+                        Trace.WriteLine("Please re-download the above Invalid CSV file(s) from wago.tools/db2");
+                        Trace.WriteLine("Press Enter once you have resolved the issue.");
+                        Console.ReadLine();
+                    }
+                }
+                while (Errored);
+
                 // Load all of the Lua files into the database.
                 var mainFileName = $"{databaseRootFolder}\\..\\_main.lua";
                 var luaFiles = Directory.GetFiles(databaseRootFolder, "*.lua", SearchOption.AllDirectories).ToList();
@@ -159,6 +178,7 @@ namespace ATT
                     ParseLUAFile(lua, fileName);
                 }
 
+                Framework.CurrentParseStage = ParseStage.PreProcessingSetup;
                 try
                 {
                     // Try to grab the contents of the global variable "CustomHeaders".
@@ -173,7 +193,6 @@ namespace ATT
                     Trace.WriteLine(e);
                 }
 
-                Framework.CurrentParseStage = ParseStage.PreProcessingSetup;
                 do
                 {
                     try
@@ -258,6 +277,17 @@ namespace ATT
                 Trace.WriteLine(e);
                 Console.ReadLine();
             }
+        }
+
+        private static void ParseWagoDbCsvFile(string f)
+        {
+            // Ignore Wago DB files if not on Retail... they're always latest so can't be used for older versions
+            if (!((string[])Framework.Config["PreProcessorTags"]).Contains("RETAIL")) return;
+
+            string csv = File.ReadAllText(f);
+            string type = f.Substring(f.LastIndexOf('\\') + 1);
+            type = type.Substring(0, type.IndexOf('.'));
+            Framework.ParseWagoCsv(type, csv);
         }
 
         private static void HandleParserArgument(string name, string value)

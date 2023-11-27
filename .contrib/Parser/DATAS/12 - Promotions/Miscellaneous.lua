@@ -88,6 +88,16 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 	}),
 	ach(9496, {	-- Warlord's Deathwheel
 		["timeline"] = { "added 6.0.2.18888" },
+		["g"] = {
+			crit(25887, {
+				["provider"] = { "i", 116788 },
+				["_noautomation"] = true,
+			}),
+			crit(27433, {
+				["provider"] = { "i", 116788 },
+				["_noautomation"] = true,
+			}),
+		},
 	}),
 	i(116788, {	-- Warlord's Deathwheel (MOUNT!)
 		["description"] = "Azeroth Choppers promotional mount. You had to have logged in on a Horde character between the 24th of July and the 30th of September 2014 in order for your account to receive this mount.",

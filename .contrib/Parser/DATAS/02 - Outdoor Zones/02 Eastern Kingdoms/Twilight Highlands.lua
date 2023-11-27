@@ -59,6 +59,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				ach(4873, {	-- Fading into Twilight (Alliance)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Good News, For Once
 							["sourceQuests"] = {
@@ -93,10 +94,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27787,	-- Skullcrusher the Mountain
 						}),
 					},
+					-- #ENDIF
 				}),
 				ach(5501, {	-- Fading into Twilight (Horde)
 					["timeline"] = { "added 4.0.3" },
 					["races"] = HORDE_ONLY,
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Goblin Work Ethic
 							["sourceQuest"] = 26337,	-- Beating the Market
@@ -123,6 +126,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27788,	-- Skullcrusher the Mountain
 						}),
 					},
+					-- #ENDIF
 				}),
 				ach(4960, {	-- Round Three. Fight!
 					["sourceQuest"] = 27868,	-- The Crucible of Carnage: The Twilight Terror!

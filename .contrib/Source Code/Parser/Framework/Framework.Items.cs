@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ATT.FieldTypes;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
@@ -567,7 +568,7 @@ namespace ATT
                                 // setting a spellID on an Item with a recipeID should do nothing
                                 if (field == "spellID" && item.TryGetValue("recipeID", out long recipeID) && recipeID > 0)
                                 {
-                                    LogDebug($"WARN: spellID = '{value}' is skipped for Item already assigned 'recipeID' = '{recipeID}' :", item);
+                                    LogDebugWarn($"spellID = '{value}' is skipped for Item already assigned 'recipeID' = '{recipeID}' :", item);
                                     break;
                                 }
 
@@ -698,9 +699,10 @@ namespace ATT
                             item[field] = newListOfLists;
                             break;
                         }
-                    case "cost":
-                        Objects.MergeField_cost(item, value);
-                        break;
+                    // 'cost' is specific based on Source, so it shouldn't merge for all Sources of an Item
+                    //case "cost":
+                    //    Cost.Add(item, value);
+                    //    break;
                     case "lc":
                         Objects.MergeField_lockCriteria(item, value);
                         break;

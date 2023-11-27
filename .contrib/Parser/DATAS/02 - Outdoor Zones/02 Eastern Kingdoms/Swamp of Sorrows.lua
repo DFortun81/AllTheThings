@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				ach(4904, {	-- Swamp of Sorrows Quests
 					["timeline"] = { "added 4.0.3" },
+					-- #IF ANYCLASSIC
 					["groups"] = {
 						crit(1, {	-- Bogpaddle
 							["sourceQuest"] = 27600,	-- In With a Bang
@@ -43,6 +44,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 						}),
 					},
+					-- #ENDIF
 				}),
 			}),
 			battlepets({

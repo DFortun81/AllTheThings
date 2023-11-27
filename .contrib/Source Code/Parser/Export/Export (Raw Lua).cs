@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ATT.FieldTypes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,17 +24,28 @@ namespace ATT
         private static void ExportRawLua(StringBuilder builder, object data, string indent = "")
         {
             // Firstly, we need to know the type of object we're working with.
-            if (data is bool b) builder.Append(b ? "1" : "false");  // NOTE: 0 in lua is evaluated as true, not false. So we can't shorten it. (rip)
-            else if (data is string str) builder.Append('"').Append(str.Replace("\"", "\\\"")).Append('"');
+            if (data is bool b) ExportBooleanValue(builder, b);
+            else if (data is long l) builder.Append(ToString(l));
+            else if (data is int i) builder.Append(ToString(i));
+            else if (data is short s) builder.Append(ToString(s));
+            else if (data is decimal d) builder.Append(ToString(d));
+            else if (data is float f) builder.Append(ToString(f));
+            else if (data is double db) builder.Append(ToString(db));
+            else if (data is string str) ExportStringValue(builder, str);
+            else if (data is IExportableField field) ExportRawLua(builder, field.AsExportType());
+            else if (data is IList<long> longlist) ExportRawLua(builder, longlist, indent);
+            else if (data is IList<string> strlist) ExportRawLua(builder, strlist, indent);
+            else if (data is IList<List<object>> listObjects) ExportRawLua(builder, listObjects, indent);
+            else if (data is IList<object> objlist) ExportRawLua(builder, objlist, indent);
             else if (data is IDictionary<string, List<object>> listdict) ExportRawLua(builder, listdict, indent);
-            else if (data is IDictionary<long, long> longlongdict) ExportRawLua(builder, longlongdict, indent);
-            else if (data is IDictionary<long, object> longdict) ExportRawLua(builder, longdict, indent);
             else if (data is IDictionary<string, object> dict) ExportRawLua(builder, dict, indent);
-            else if (data is IList<List<object>> listOLists) ExportRawLua(builder, listOLists);
-            else if (data is IList<object> list) ExportRawLua(builder, list, indent);
+            else if (data is IDictionary<long, long> longLongDict) ExportRawLua(builder, longLongDict, indent);
+            else if (data is IDictionary<long, string> strdict) ExportRawLua(builder, strdict, indent);
+            else if (data is IDictionary<long, object> longdict) ExportRawLua(builder, longdict, indent);
             else
             {
-                // Default: Write it as a String. Best of luck.
+                // Default: Write it raw. Best of luck.
+                Framework.LogWarn($"Failed to determine a proper export type {data.GetType().Name}");
                 builder.Append(ToString(data));
             }
         }
