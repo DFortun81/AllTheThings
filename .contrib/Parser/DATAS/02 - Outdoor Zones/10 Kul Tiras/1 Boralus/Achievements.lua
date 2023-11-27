@@ -36,21 +36,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					12496,	-- Stormsong and Danc
 				}},
 			})),
-			a(achraw(13285, {	-- Upright Citizens
-				i(166247),		-- Citizens Brigade Whistle (TOY!)
-				crit(43718, {		-- Russel the Bard recruited
-					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
-					["coord"] = { 72.4, 68.9, BORALUS },
-				}),
-				crit(43719, {		-- Flynn Fairwind recruited
-					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
-					["coord"] = { 72.0, 61.6, BORALUS },
-				}),
-				crit(43720, {		-- Leeroy Jenkins recruited
-					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
-					["coord"] = { 66.8, 64.0, BORALUS },
-				}),
-			})),
 			ach(13517, {	-- Two Sides To Every Tale
 				["sym"] = {{"meta_achievement",
 					12891,	-- A Nation United

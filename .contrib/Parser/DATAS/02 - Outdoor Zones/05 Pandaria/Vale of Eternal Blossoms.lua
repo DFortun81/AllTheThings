@@ -22,13 +22,17 @@ root(ROOTS.Zones, {
 						crit(20518),		-- Vicejaw
 						crit(20519),		-- General Temuja
 						crit(20520),		-- Shadowmaster Sydow
-						crit(20521),		-- Aetha
-						crit(20522),		-- Quid
+						crit(20521, {		-- Aetha
+							["crs"] = { 58778 },
+						}),
+						crit(20522, {		-- Quid
+							["crs"] = { 58771 },
+						}),
 						crit(20523),		-- Spirit of Lao-Fe
 						crit(20524),		-- Baolai the Immolator
-						crit(20528),		-- Gaohun the Soul-Severer
+						crit(20525),		-- Gaohun the Soul-Severer
 						crit(20526),		-- Bloodtip
-						crit(23913),		-- Wulon
+						crit(20527),		-- Wulon
 						crit(20528),		-- Gochao the Ironfist
 						crit(20529),		-- Huo-Shuang
 						crit(20530),		-- Bai-Jin the Butcher
@@ -1366,7 +1370,7 @@ root(ROOTS.Zones, {
 							i(103624),	-- Treasures of the Vale
 						},
 					}),
-					n(63510, {	-- Wulon
+					n(63509, {	-- Wulon
 						["coords"] = {
 							{ 45.3, 76.3, VALE_OF_ETERNAL_BLOSSOMS },
 							{ 40.2, 77.1, VALE_OF_ETERNAL_BLOSSOMS },

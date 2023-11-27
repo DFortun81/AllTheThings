@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["sourceQuests"] = { 52131 },	-- We Need Each Other
 				["races"] = HORDE_ONLY,
 			}),
-			ach(12891, {	-- Zandalar Forever!
+			ach(12479, {	-- Zandalar Forever!
 				["sym"] = {{"meta_achievement",
 					13294,	-- Loremaster of Zandalar [H]
 					12480,	-- A Bargain of Blood
