@@ -44,6 +44,7 @@ root(ROOTS.Zones, {
 						39387,	-- The Skies of Highmountain
 						39456,	-- Unexpected Allies
 					},
+					["sourceQuestNumRequired"] = 1,
 				}),
 				q(39429, {	-- Assaulting the Haglands
 					["sourceQuests"] = { 38910 },	-- Rocs vs Eagles
