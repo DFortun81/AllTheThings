@@ -6,6 +6,22 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 	n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
 		n(BUILDINGS, {
 			garrisonBuilding(145, {	-- Trading Post (rank 1: 111, rank 2: 144, rank 3: 145)
+				n(ACHIEVEMENTS, {
+					ach(9475, {		-- Laughing Skull Orcs
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							title(287, {	-- Masked Chuckler
+								["races"] = HORDE_ONLY,
+							}),
+						},
+					}),
+					ach(9476, {		-- Sha'tari Defense
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							a(title(288)),	-- Peacekeeper
+						},
+					}),
+				}),
 				n(QUESTS, {
 					q(36948, {	-- Auctioning for Parts
 						["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",

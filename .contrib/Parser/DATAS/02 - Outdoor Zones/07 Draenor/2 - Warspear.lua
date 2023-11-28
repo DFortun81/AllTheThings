@@ -9,6 +9,17 @@ root(ROOTS.Zones, {
 			["races"] = HORDE_ONLY,
 			["lvl"] = 100,
 			["g"] = {
+				n(ACHIEVEMENTS, {
+					ach(9469),		-- Arakkoa Outcasts
+					ach(9471, {		-- Frostwolf Orcs
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							title(282, {	-- <Name> of the Frostwolves
+								["races"] = HORDE_ONLY,
+							}),
+						},
+					}),
+				}),
 				n(FLIGHT_PATHS, {
 					fp(1408, {	-- Warspear, Ashran
 						["coord"] = { 44.2, 33.9, WARSPEAR },
