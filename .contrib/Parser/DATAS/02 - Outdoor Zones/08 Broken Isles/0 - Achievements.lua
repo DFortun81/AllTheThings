@@ -3,6 +3,14 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
+		ach(10672, {	-- Broken Isles Diplomat
+			crit(30498),		-- Court of Farondis
+			crit(30500),		-- The Dreamweavers
+			crit(30497),		-- Highmountain Tribe
+			crit(30501),		-- The Valarjar
+			crit(30499),		-- The Nightfallen
+			crit(30496),		-- The Wardens
+		}),
 		applyclassicphase(LEGION_PHASE_ONE, ach(11188, {	-- Broken Isles Explorer
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -532,6 +540,14 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				h(i(143864)),	-- Prestigious War Wolf (MOUNT!)
 			},
 		}),
+		ach(11159, {	-- Friends in a Broken Land
+			crit(30501),		-- The Valarjar
+			crit(30497),		-- Highmountain Tribe
+			crit(30498),		-- Court of Farondis
+			crit(30500),		-- The Dreamweavers
+			crit(30499),		-- The Nightfallen
+			crit(30496),		-- The Wardens
+		}),
 		ach(11157, {	-- Loremaster of Legion
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -542,6 +558,8 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				11124,	-- Good Suramaritan
 			}},
 		}),
+		ach(11653),		-- Paragon of the Broken Isles
+		ach(11652),		-- The Reputable
 		ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
 			crit(50222, {	-- Felspider
 				["crs"] = { 113345 },	-- Felspider

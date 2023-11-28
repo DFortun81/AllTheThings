@@ -8,6 +8,7 @@ root(ROOTS.Zones, {
 			n(ACHIEVEMENTS, {
 				ach(11731),	-- A Magic Contribution
 				ach(11732),	-- A Magnificent Contribution
+				ach(11796),	-- Armies of Legionfall
 				ach(11736),	-- Assume Command
 				ach(11546, {	-- Breaching the Tomb
 					crit(36598,  {	-- Armies of Legionfall
@@ -70,6 +71,7 @@ root(ROOTS.Zones, {
 				ach(11737),	-- Disrupting the Nether
 				explorationAch(11543),	-- Explore Broken Shore
 				ach(11738),	-- It'll Nether Happen
+				ach(11545),	-- Legionfall Commander
 				ach(11841),	-- Naxt Victim
 				ach(11735),	-- Take Command
 			}),
