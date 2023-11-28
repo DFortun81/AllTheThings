@@ -227,7 +227,6 @@ iq(183413, 62012);					-- Ensemble: Stitched Alacrity of Maldraxxus
 iq(181443, 61459);					-- The Party Herald's Party Hat
 iq(183957, 62657);					-- Invitation: Grandmaster Vole
 iq(183956, 62656);					-- Invitation: Choofa
-iq(181761, 62628);					-- The Grandmaster's Voucher
 iq(182975, 62223);					-- Ascension Calling: Mikanikos
 
 -----------------
