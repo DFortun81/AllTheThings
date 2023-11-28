@@ -318,6 +318,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				},
 			}),
+			ach(12956),		-- Tortollan Seekers
 			pvp(ach(12575)),	-- Tour of Duty: Zuldazar
 			ach(12851, {	-- Treasures of Zuldazar
 				crit(40988, {	-- Offerings of the Chosen

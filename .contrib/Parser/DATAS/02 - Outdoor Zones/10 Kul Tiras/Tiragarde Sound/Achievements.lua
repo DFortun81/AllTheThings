@@ -301,6 +301,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					},
 				}),
 			}),
+			ach(12951, {	-- Proudmoore Admiralty
+				["races"] = ALLIANCE_ONLY,
+			}),
 			a(ach(13049, {	-- The Long Con
 				crit(41668),	-- Aged to Perfection
 				crit(41669),	-- Trixie Business

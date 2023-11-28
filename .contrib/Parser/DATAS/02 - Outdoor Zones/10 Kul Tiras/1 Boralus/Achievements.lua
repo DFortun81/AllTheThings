@@ -17,8 +17,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			}),
+			ach(12947, {	-- Azerothian Diplomat
+				crit(42229, {["races"] = ALLIANCE_ONLY }),		-- Proudmoore (A) / Zandalari Empire (H)
+				crit(42231, {["races"] = ALLIANCE_ONLY }),		-- Order of Embers (A)
+				crit(42230, {["races"] = ALLIANCE_ONLY }),		-- Storm's Wake (A)
+				crit(41654, {["races"] = ALLIANCE_ONLY }),		-- 7th Legion (A)
+				crit(43121),		-- Champions of Azeroth
+				crit(43122),		-- Tortollan Seekers
+			}),
 			ach(12759, {	-- Baiting the Enemy
 				["races"] = HORDE_ONLY,
+			}),
+			ach(12954, {	-- Champion of the 7th Legion
+				["races"] = ALLIANCE_ONLY,
 			}),
 			ach(12593, {	-- Kul Tourist
 				["sym"] = {{"meta_achievement",

@@ -321,6 +321,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				},
 			}),
+			ach(12949, {	-- The Voldunai
+				["races"] = HORDE_ONLY,
+			}),
 			pvp(ach(12576)),	-- Tour of Duty: Vol'dun
 			ach(12849, {	-- Treasures of Vol'dun
 				crit(40966,  {	-- Ashvane Spoils
