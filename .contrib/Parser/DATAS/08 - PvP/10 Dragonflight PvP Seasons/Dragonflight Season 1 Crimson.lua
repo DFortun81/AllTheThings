@@ -53,7 +53,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				-- Fashion
 				ach(16764, {		-- Crimson Carpet Fashion
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
+				--	["timeline"] = { ADDED_10_0_2_LAUNCH },
 				}),
 			})),
 			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
