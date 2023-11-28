@@ -44,7 +44,22 @@ root(ROOTS.Zones, {
 						crit(22173),	-- Tenwu of the Red Smoke
 						crit(22172),	-- Hawkmaster Nurong
 					}),
+					ach(6366),	-- Shado-Pan
+					ach(8210),	-- Shado-Pan Assault
 					ach(7307),	-- Silent Assassin
+					ach(7479, {		-- The Shado-Master
+						title(205),		-- Shado-Master
+						ach(6366),		-- Shado-Pan
+						ach(6470),		-- Heroic: Shado-Pan Monastery
+						ach(6480),		-- Settle Down, Bro
+						ach(7297),		-- Proven Strength
+						ach(7298),		-- Getting Around with the Shado-Pan
+						ach(7299),		-- Loner and a Rebel
+						ach(7307),		-- Silent Assassin
+						ach(7308),		-- Know Your Role
+						ach(7309),		-- Fire in the Yaung-hole!
+						ach(7310),		-- Defender of Gods
+					}),
 					ach(7288),	-- Yak Attack (Niuzao Temple)
 				}),
 				battlepets({

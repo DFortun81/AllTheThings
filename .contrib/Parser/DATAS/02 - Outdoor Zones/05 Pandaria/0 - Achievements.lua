@@ -358,6 +358,40 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 			crit(20416),	-- Xin Wo Yin the Broken Hearted (Jade Forest)
 			crit(20417),	-- Ren Yun the Blind (Kun-Lai Summit)
 		}),
+		ach(6828, {		-- Pandaren Ambassador (Alliance)
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				i(89785, {		-- Pandaren Kite (A) (MOUNT!)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				crit(19389),		-- Golden Lotus
+				crit(19388),		-- The August Celestials
+				crit(18993),		-- Shado-Pan
+				crit(19390),		-- The Klaxxi
+				crit(19393),		-- The Lorewalkers
+				crit(19392),		-- The Anglers
+				crit(19391),		-- The Tillers
+				crit(19395),		-- Order of the Cloud Serpent
+				crit(19481),		-- Tushui Pandaren
+			},
+		}),
+		ach(6827, {		-- Pandaren Ambassador (Horde)
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				i(81559, {		-- Pandaren Kite (H) (MOUNT!)
+					["races"] = HORDE_ONLY,
+				}),
+				crit(19389),		-- Golden Lotus
+				crit(19388),		-- The August Celestials
+				crit(18993),		-- Shado-Pan
+				crit(19390),		-- The Klaxxi
+				crit(19393),		-- The Lorewalkers
+				crit(19392),		-- The Anglers
+				crit(19391),		-- The Tillers
+				crit(19395),		-- Order of the Cloud Serpent
+				crit(19480),		-- Huojin Pandaren
+			},
+		}),
 		applyclassicphase(MOP_PHASE_ONE, ach(6974, {	-- Pandaria Explorer [7.0.3] / Explore Pandaria
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",

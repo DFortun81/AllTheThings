@@ -50,6 +50,9 @@ root(ROOTS.Zones, {
 						["icon"] = "Interface\\Icons\\achievement_general_hordeslayer",
 						["g"] = {
 							n(ACHIEVEMENTS, {
+								ach(8206, {		-- Dominance Offensive
+									["races"] = HORDE_ONLY,
+								}),
 								h(ach(7929, {	-- Dominance Offensive Campaign
 									crit(22438),			-- Domination Point
 									crit(22439),			-- The Voice of the Gods
@@ -769,6 +772,9 @@ root(ROOTS.Zones, {
 										["provider"] = { "n", 68322 },	-- Muerta
 									}),
 								}),
+								ach(8205, {		-- Operation: Shieldwall
+									["races"] = ALLIANCE_ONLY,
+								}),
 								ach(7928, {	-- Operation: Shieldwall Campaign [Not entered to Pandaria Outdoor Zones files, these criteria are spread over not only the Pandaria zones but also Classic]
 									crit(22424),		-- Lion's Landing
 									crit(22425),		-- The Man With a Thousand Faces
@@ -1415,6 +1421,9 @@ root(ROOTS.Zones, {
 						["requireSkill"] = FISHING,	-- doesn't seem like you can even get access to the faction on a non-fisher.  flew/walked all around the area on a character with no professions and nothing, and as soon as i flew up on a character with fishing the faction unlocked and all the NPCs appeared
 						["icon"] = "Interface\\Icons\\achievement_faction_anglers",
 						["g"] = {
+							n(ACHIEVEMENTS, {
+								ach(6547),		-- The Anglers
+							}),
 							faction(1358, {	-- Nat Pagle
 								n(QUESTS, {
 									q(31443, {	-- Flying Tiger Gourami
@@ -1567,6 +1576,7 @@ root(ROOTS.Zones, {
 								--	the challenger quests (1) are dailies, which reset, and (2) completing one completes all of them every day, including the final quest in the chain, so adding a SQ to this achievement won't work
 									["description"] = "Requires completing August Celestials dailies at the Cradle of Chi-Ji for a total of 15 days.  After you complete the first set of dailies, you'll be given an additional quest to defeat a challenger.  You can only work on the achievement on days when the August Celestials request your aid at the Temple of the Red Crane.\n\n",
 								}),
+								ach(6543),	-- The August Celestials
 							}),
 							n(QUESTS, {
 								q(30716, {	-- Chasing Hope

@@ -46,6 +46,8 @@ root(ROOTS.Zones, {
 						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(7322),	-- Roll Club
+					ach(6546),	-- The Golden Lotus
+					ach(6548),	-- The Lorewalkers
 				}),
 				battlepets({
 					pet(751),	-- Dancing Water Skimmer (PET!)
