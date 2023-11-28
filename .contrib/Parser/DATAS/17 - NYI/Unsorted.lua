@@ -3147,7 +3147,6 @@ root(ROOTS.Unsorted, {
 			--10.1.5.49516
 			i(206564),	-- Time-Displaced Titanic Disc \\ Time Displaced Titanic Disc
 			--10.1.5.49719
-			i(207030),	-- Dilated Time Capsule
 			--10.2.0.52038
 			i(208751),	-- Squally
 			i(208878),	-- Adventurer's Footlocker

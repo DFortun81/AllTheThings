@@ -212,6 +212,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						205308,	-- Fractured Causality / Varian Wrynn
 					},
 					["groups"] = {
+						i(207030, {	-- Dilated Time Capsule (10.1.5)
+							["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
+						}),
 						i(DILATED_TIME_CAPSULE),
 						-- Both drops from any boss
 						i(207113),	-- Grimoire of the Trickster Fel Imp (CI!)
