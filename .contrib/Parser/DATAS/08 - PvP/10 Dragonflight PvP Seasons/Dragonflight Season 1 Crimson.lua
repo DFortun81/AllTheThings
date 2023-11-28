@@ -52,7 +52,9 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					title(482),	-- Crimson Soloist <Name>
 				}),
 				-- Fashion
-				ach(16764),		-- Crimson Carpet Fashion
+				ach(16764, {		-- Crimson Carpet Fashion
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
+				}),
 			})),
 			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 				i(201789, {	-- Vicious Sabertooth [A] (MOUNT!)
