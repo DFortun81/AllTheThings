@@ -24,6 +24,7 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(134670),	-- Auxiliary's Cowl					(Removed)
 			ig(134787),	-- Entrenched Cowl					(Removed)
+			ig(19105),	-- Frost Runed Headdress			(Removed)
 			ig(134615),	-- Inflammatory Hood				(Removed)
 
 			ig(105810),	-- Buc-Zakai Burning Hood			(Ordos)
@@ -486,6 +487,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(18316),	-- Obsidian Bauble						(NYI)
 
 		ig(134727),	-- Cold-Touched Endgame					(Removed)
+		ig(13371),	-- Father Flame							(Removed)
 
 		ig(98324),	-- Immaculate Pandaren Cane				(MoP Scenario)
 		ig(98325),	-- Immaculate Pandaren Rod				(MoP Scenario)
@@ -494,6 +496,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(134717),	-- Cold-Touched Decapitator				(NYI)
 		ig(108046),	-- Draenic Steel War Axe				(NYI)
 		ig(189996),	-- Elegantly Balanced Axe				(NYI)(Unique)
+		ig(108227),	-- Peerless Draenic Steel War Axe		(NYI)
 		ig(108228),	-- Peerless Draenic Steel War Axe		(NYI)
 		ig(108229), -- Peerless Draenic Steel War Axe		(NYI)
 		ig(115293),	-- Spectral Greataxe					(NYI)
@@ -536,6 +539,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(14151),	-- Chanting Blade						(Removed)
 		ig(134718),	-- Cold-Touched Shanker					(Removed)
 		ig(134748),	-- Covert Shanker						(Removed)
+		ig(37597),	-- Direbrew's Shanker [Level 70]		(Removed)
 		ig(134666),	-- Recruit's Shanker					(Removed)
 		ig(134610),	-- Scorching Shanker					(Removed)
 		ig(134779),	-- Seasoned Shanker						(Removed)
@@ -633,6 +637,8 @@ local QUANTUM_GROUP = sharedData({
 		ig(93129),	-- Scavenged Pandaren Staff				(MoP Scenario)
 	}),
 	i(208109, {	-- Quantum Sword		(One-Handed)
+		ig(166364),	-- Song of the Fallen					(NYI)
+
 		ig(134725),	-- Cold-Touched Mageblade 				(Removed)
 		ig(134726),	-- Cold-Touched Sword 					(Removed)
 		ig(134758),	-- Covert Mageblade 					(Removed)

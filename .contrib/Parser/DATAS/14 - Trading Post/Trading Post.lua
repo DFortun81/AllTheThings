@@ -1076,7 +1076,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52188" }, {
+		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52188" } }, {
 			n(MONTHLY_REWARD, {
 				
 			}),
@@ -1095,7 +1095,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 			filter(COSMETIC, {
 			}),
-		}),
+		})),
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, {
