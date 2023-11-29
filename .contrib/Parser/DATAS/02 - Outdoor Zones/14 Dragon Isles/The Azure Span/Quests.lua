@@ -866,6 +866,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						66340,	-- Into the Azure
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 196545 },	-- Polky Cogzapper
 					["coord"] = { 65.9, 25.3, THE_AZURE_SPAN },
 					["isBreadcrumb"] = true,
