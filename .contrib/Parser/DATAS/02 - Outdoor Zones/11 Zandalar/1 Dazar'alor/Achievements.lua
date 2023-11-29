@@ -109,6 +109,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			}),
 			ach(13517, {	-- Two Sides To Every Tale
 				["sym"] = {{"meta_achievement",
+					12891,	-- A Nation United
+					13467,	-- Tides of Vengeance (A)
 					12479,	-- Zandalar Forever!
 					13466,	-- Tides of Vengeance (H)
 				}},

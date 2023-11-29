@@ -40,34 +40,34 @@ root(ROOTS.Zones, {
 		})),
 		ach(6826, {["timeline"] = {ADDED_5_0_4}, ["_noautomation"] = true}),		-- 55 Exalted Reputations
 		ach(5723, {["timeline"] = {ADDED_4_0_6}, ["_noautomation"] = true}),		-- 50 Exalted Reputations
-		ach(5374, {["timeline"] = {ADDED_4_0_3_LAUNCH}, ["_noautomation"] = true}),-- 45 Exalted Reputations
+		ach(5374, {["timeline"] = {ADDED_4_0_3_LAUNCH}, ["_noautomation"] = true}), -- 45 Exalted Reputations
 		ach(1015, {		-- 40 Exalted Reputations
 			["g"] = {
 				title(46),		-- <Name> the Exalted
 			},
 			["_noautomation"] = true,
 		}),
-		ach(1014, {
+		ach(1014, {		-- 35 Exalted Reputations
 			["_noautomation"] = true,
-		}),		-- 35 Exalted Reputations
-		ach(518, {
+		}),
+		ach(518, {		-- 30 Exalted Reputations
 			["_noautomation"] = true,
-		}),		-- 30 Exalted Reputations
-		ach(519, {
+		}),
+		ach(519, {		-- 25 Exalted Reputations
 			["_noautomation"] = true,
-		}),		-- 25 Exalted Reputations
-		ach(521, {
+		}),
+		ach(521, {		-- 15 Exalted Reputations
 			["_noautomation"] = true,
-		}),		-- 15 Exalted Reputations
-		ach(524, {
+		}),
+		ach(524, {		-- 10 Exalted Reputations
 			["_noautomation"] = true,
-		}),		-- 10 Exalted Reputations
-		ach(520, {
+		}),
+		ach(520, {		-- 20 Exalted Reputations
 			["_noautomation"] = true,
-		}),		-- 20 Exalted Reputations
-		ach(523, {
+		}),
+		ach(523, {		-- 5 Exalted Reputations
 			["_noautomation"] = true,
-		}),		-- 5 Exalted Reputations
+		}),
 		ach(978, {		-- 3000 Quests Completed
 			title(42),		-- the Seeker
 			ach(503),		-- 50 Quests Completed
