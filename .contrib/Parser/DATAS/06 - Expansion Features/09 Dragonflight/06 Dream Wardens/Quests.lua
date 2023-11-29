@@ -78,6 +78,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 				}),
 			}, {	-- RENOWN 13 --
+				q(78583, {	-- Dragon Isles Supplies (Alt)
+					["provider"] = { "n", 208143 },	-- Keeper Amrymn
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+				}),
 			}, {	-- RENOWN 14 --
 			}, {	-- RENOWN 15 --
 				q(78374, {	-- Flightstones
@@ -93,6 +97,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}, {	-- RENOWN 18 --
 			}, {	-- RENOWN 19 --
 			}, {	-- RENOWN 20 --
+				q(78373, {	-- The Dream Thanks You
+					["provider"] = { "n", 211962 },	-- Melsysra
+					["maps"] = { EMERALD_DREAM },	-- follow you around
+					["groups"] = {
+						i(206960),	-- Enchanted Wyrm's Dreaming Crest
+					},
+				})
 				title(532),	-- <Name>, Dream Defender
 					-- RENOWN 20+++ --
 				q(76425, {	--	Renowned with the Dream Wardens
