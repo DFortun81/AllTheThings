@@ -107,41 +107,22 @@ namespace ATT.FieldTypes
 
             if (_costTypes == null) return;
 
-            foreach (var costType in _costTypes)
-            {
-                foreach (var costRecord in costType.Value)
-                {
-                    switch (costType.Key)
-                    {
-                        case "i":
-                            // anything that costs Mark of Honor should have pvp tag
-                            if (costRecord.Value == 137642)
-                            {
-                                _data["pvp"] = true;
-                            }
-
-                            if (Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
-                            {
-                                // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
-                                Items.MarkItemAsReferenced(costRecord.Value);
-                            }
-                            break;
-                        case "c":
-                            if (costRecord.Value == 1602 ||   // Conquest
-                                costRecord.Value == 1792)     // Honor
-                            {
-                                _data["pvp"] = true;
-                            }
-                            break;
-                        case "g":
-                            if (costRecord.Value == 0)
-                            {
-                                LogError($"'cost' has a gold value of 0. Remove it.", _data);
-                            }
-                            break;
-                    }
-                }
-            }
+            //foreach (var costType in _costTypes)
+            //{
+            //    switch (costType.Key)
+            //    {
+            //        //case "i":
+            //        //    foreach (var costRecord in costType.Value)
+            //        //    {
+            //        //    }
+            //        //    break;
+            //        //case "c":
+            //        //    foreach (var costRecord in costType.Value)
+            //        //    {
+            //        //    }
+            //        //    break;
+            //    }
+            //}
         }
 
         public void Incorporate() { }
@@ -163,6 +144,13 @@ namespace ATT.FieldTypes
                         foreach (var costRec in costType.Value)
                         {
                             decimal costID = costRec.Key;
+
+                            if (Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
+                            {
+                                // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
+                                Items.MarkItemAsReferenced((long)costID);
+                            }
+
                             var item = Items.GetNull(costID);
                             if (item == null || !Items.IsItemReferenced(costID))
                             {
@@ -177,6 +165,12 @@ namespace ATT.FieldTypes
                                 clean.Add(costID);
                             }
 
+                            // anything that costs Mark of Honor should have pvp tag
+                            if (costID == 137642M)
+                            {
+                                _data["pvp"] = true;
+                            }
+
                             // Single Cost Item on a Achieve/Criteria group should be represented as a Provider instead
                             if (_data.TryGetValue("achID", out long _) ||
                                 _data.TryGetValue("criteriaID", out long _))
@@ -188,6 +182,19 @@ namespace ATT.FieldTypes
                                     clean.Add(costID);
                                     Objects.Merge(_data, "provider", new List<object> { "i", costRec.Key });
                                 }
+                            }
+                            break;
+                        }
+                        break;
+                    case "c":
+                        foreach (var costRec in costType.Value)
+                        {
+                            decimal costID = costRec.Key;
+
+                            if (costID == 1602M ||   // Conquest
+                                costID == 1792M)     // Honor
+                            {
+                                _data["pvp"] = true;
                             }
                             break;
                         }
