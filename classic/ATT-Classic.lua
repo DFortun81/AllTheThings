@@ -7603,6 +7603,7 @@ app.events.MAP_EXPLORATION_UPDATED = function(...)
 		end
 	end);
 end
+tinsert(app.EventHandlers.OnRecalculate, app.events.MAP_EXPLORATION_UPDATED);
 app.events.UI_INFO_MESSAGE = function(messageID)
 	if messageID == 372 then
 		app.events.MAP_EXPLORATION_UPDATED();
