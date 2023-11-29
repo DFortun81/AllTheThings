@@ -929,7 +929,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0} }, {
+		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, "removed 10.2.0.52188"} }, {
 			n(MONTHLY_REWARD, {
 				i(208943, {	-- Arsenal: Cosmic Weapons Cache
 					i(208939),	-- Gorridar, Darkblade of the Sunderer
@@ -1076,8 +1076,25 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(DECEMBER, {
-
+		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52188" }, {
+			n(MONTHLY_REWARD, {
+				
+			}),
+			filter(BATTLE_PETS, {
+				i(190607, {	-- Garrlok (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 750}},
+				}),
+				i(210870, {	-- Mitzy (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
+			}),
+			filter(MOUNTS, {
+				i(210919, {	-- Crimson Glimmerfur (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
+			}),
+			filter(COSMETIC, {
+			}),
 		}),
 	}),
 }));
