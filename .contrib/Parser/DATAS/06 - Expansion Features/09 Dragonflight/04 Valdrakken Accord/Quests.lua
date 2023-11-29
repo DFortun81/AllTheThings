@@ -438,6 +438,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								}),
 							},
 						}),
+						q(77341, {	-- Logotyrapy
+							["sourceQuests"] = { 77344 }, -- Time to Process
+							["provider"] = { "i", 208826 },	-- Letter from Valunei (QI!)
+							["groups"] = {
+								i(208199),	-- Tabard of the Tyr's Guard
+							},
+						}),
 					},
 				})),
 				q(72688, {	-- Renown Supplies
