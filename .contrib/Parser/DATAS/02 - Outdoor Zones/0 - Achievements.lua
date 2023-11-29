@@ -16,32 +16,58 @@ root(ROOTS.Zones, {
 		ach(4957, {		-- 20 Dungeon Quests Completed
 			ach(4956),		-- 5 Dungeon Quests Completed
 		}),
-		ach(18471, {["timeline"] = {ADDED_10_1_5}}),	-- 110 Exalted Reputations
+		ach(18471, {["timeline"] = {ADDED_10_1_5}, ["_noautomation"] = true}),	-- 110 Exalted Reputations
 		ach(12866, bubbleDownSelf({["timeline"] = {ADDED_8_0_1_LAUNCH}}, {	-- 100 Exalted Reputations
-			i(163982),		-- Pureheart Courser (MOUNT!)
-			title(379),		-- Esteemed <Name>
+			["g"] = {
+				i(163982),		-- Pureheart Courser (MOUNT!)
+				title(379),		-- Esteemed <Name>
+			},
+			["_noautomation"] = true,
 		})),
-		ach(12865, {["timeline"] = {ADDED_8_0_1_LAUNCH}}),		-- 90 Exalted Reputations
+		ach(12865, {["timeline"] = {ADDED_8_0_1_LAUNCH}, ["_noautomation"] = true}),		-- 90 Exalted Reputations
 		ach(12864, bubbleDownSelf({["timeline"] = {ADDED_8_0_1_LAUNCH}}, {	-- 80 Exalted Reputations
-			title(380),		-- <Name> the Admired
+			["g"] = {
+				title(380),		-- <Name> the Admired
+			},
+			["_noautomation"] = true,
 		})),
-		ach(11177, {["timeline"] = {ADDED_7_0_3_LAUNCH}}),		-- 70 Exalted Reputations
+		ach(11177, {["timeline"] = {ADDED_7_0_3_LAUNCH}, ["_noautomation"] = true}),		-- 70 Exalted Reputations
 		ach(6742, bubbleDownSelf({["timeline"] = {ADDED_5_0_4}}, {		-- 60 Exalted Reputations
-			title(197),		-- <Name> the Beloved
+			["g"] = {
+				title(197),		-- <Name> the Beloved
+			},
+			["_noautomation"] = true,
 		})),
-		ach(6826, {["timeline"] = {ADDED_5_0_4}}),		-- 55 Exalted Reputations
-		ach(5723, {["timeline"] = {ADDED_4_0_6}}),		-- 50 Exalted Reputations
-		ach(5374, {["timeline"] = {ADDED_4_0_3_LAUNCH}}),-- 45 Exalted Reputations
+		ach(6826, {["timeline"] = {ADDED_5_0_4}, ["_noautomation"] = true}),		-- 55 Exalted Reputations
+		ach(5723, {["timeline"] = {ADDED_4_0_6}, ["_noautomation"] = true}),		-- 50 Exalted Reputations
+		ach(5374, {["timeline"] = {ADDED_4_0_3_LAUNCH}, ["_noautomation"] = true}),-- 45 Exalted Reputations
 		ach(1015, {		-- 40 Exalted Reputations
-			title(46),		-- <Name> the Exalted
+			["g"] = {
+				title(46),		-- <Name> the Exalted
+			},
+			["_noautomation"] = true,
 		}),
-		ach(1014),		-- 35 Exalted Reputations
-		ach(518),		-- 30 Exalted Reputations
-		ach(519),		-- 25 Exalted Reputations
-		ach(521),		-- 15 Exalted Reputations
-		ach(524),		-- 10 Exalted Reputations
-		ach(520),		-- 20 Exalted Reputations
-		ach(523),		-- 5 Exalted Reputations
+		ach(1014, {
+			["_noautomation"] = true,
+		}),		-- 35 Exalted Reputations
+		ach(518, {
+			["_noautomation"] = true,
+		}),		-- 30 Exalted Reputations
+		ach(519, {
+			["_noautomation"] = true,
+		}),		-- 25 Exalted Reputations
+		ach(521, {
+			["_noautomation"] = true,
+		}),		-- 15 Exalted Reputations
+		ach(524, {
+			["_noautomation"] = true,
+		}),		-- 10 Exalted Reputations
+		ach(520, {
+			["_noautomation"] = true,
+		}),		-- 20 Exalted Reputations
+		ach(523, {
+			["_noautomation"] = true,
+		}),		-- 5 Exalted Reputations
 		ach(978, {		-- 3000 Quests Completed
 			title(42),		-- the Seeker
 			ach(503),		-- 50 Quests Completed
@@ -226,7 +252,9 @@ root(ROOTS.Zones, {
 			crit(9363),	-- Gold Beetle (Halls of Stone, Badlands, Tanaris, Halls of Lightning)
 			crit(9368),	-- Rat (Ashenvale, Dire Maul, The Lost Isles, Gilneas, Loch Modan, The Deadmines, Stormwind City, Arathi Highlands, Darkshore, Nagrand, Terokkar Forest, Scholomance, Tirisfal Glades, Howling Fjord, The Cape of Stranglethorn, The Culling of Stratholme, Azshara, Desolace, Gilneas City, Maraudon, Sunken Temple and The Hinterlands)
 		}),
-		ach(522),	-- Somebody Likes Me
+		ach(522, {	-- Somebody Likes Me
+			["_noautomation"] = true,
+		}),
 		ach(1832),	-- Tastes Like Chicken
 		ach(942,   {	-- The Diplomat (A)
 			["races"] = ALLIANCE_ONLY,
