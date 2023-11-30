@@ -834,6 +834,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
 						}),
+						-- #if BEFORE TBC
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, q(77617, {	-- Relics of the Light
+							["qg"] = 925,	-- Brother Sammuel <Paladin Trainer>
+							["coord"] = { 50.4, 42.0, ELWYNN_FOREST },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { PALADIN },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Crusader Strike
+									["provider"] = { "i", 205420 },	-- Libram of Judgement
+									["cr"] = 38,	-- Defias Thug
+								}),
+								recipe(410002),	-- Engrave Gloves - Crusader Strike
+								i(2385),	-- Tarnished Chain Gloves
+							},
+						})),
+						-- #endif
 						q(54, {	-- Report to Goldshire
 							["providers"] = {
 								{ "n", 197 },	-- Marshal McBride
