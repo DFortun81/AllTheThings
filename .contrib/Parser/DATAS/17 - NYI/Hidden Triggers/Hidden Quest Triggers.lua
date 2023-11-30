@@ -2327,5 +2327,8 @@ root(ROOTS.HiddenQuestTriggers, {
 
 		-- Timewalking - Master of Timeways Triggers
 		q(78204),	-- First Week Trigger
+
+		-- PVP
+		q(79332, {["repeatable"]=true}),	-- Triggers after willing a Brawl: Battleground Blitz (possibly only when theres an elistment bonus?)
 	}),
 });
