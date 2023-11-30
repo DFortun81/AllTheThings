@@ -69,7 +69,7 @@ APPRENTICE_JOURNEYMAN_LEATHERWORKING = {
 		r(19083, {["timeline"] = {ADDED_2_1_0}}),	-- Wicked Leather Pants
 		r(36075, {["timeline"] = {ADDED_4_0_3}}),	-- Wildfeather Leggings
 	}),
-	n(MISC, {
+	filter(MISC, {
 		r(3816),	-- Cured Light Hide
 		r(3817),	-- Cured Medium Hide
 		r(3780),	-- Heavy Armor Kit
@@ -128,7 +128,7 @@ EXPERT_ARTISAN_LEATHERWORKING = {
 		r(10632),	-- Helm of Fire
 		-- #endif
 	}),
-	n(MISC,	{
+	filter(MISC,	{
 		r(3818),	-- Cured Heavy Hide
 		r(19047),	-- Cured Rugged Hide
 		r(10482),	-- Cured Thick Hide
@@ -1215,7 +1215,7 @@ DF_LEATHERWORKING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = 
 		r(375183),	-- Skinner's Cap
 		r(375187),	-- Smithing Apron
 	}),
-	n(MISC, {
+	filter(MISC, {
 		r(375178),	-- Earthshine Scales
 		r(375168),	-- Feral Hide Drums
 		r(375179),	-- Frostbite Scales

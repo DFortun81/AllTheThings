@@ -62,7 +62,7 @@ APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = {
 		r(9916),	-- Steel Breastplate
 		r(9935),	-- Steel Plate Helm
 	}),
-	n(MISC, {
+	filter(MISC, {
 		r(3326),	-- Coarse Grinding Stone
 		r(2665),	-- Coarse Sharpening Stone
 		r(3116),	-- Coarse Weightstone
