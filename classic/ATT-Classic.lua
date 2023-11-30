@@ -1114,13 +1114,18 @@ local function MergeClone(g, o)
 	local e = GetRelativeValue(o, "e");
 	if e then clone.e = e; end
 	if not o.itemID or o.b == 1 then
-		local r = GetRelativeValue(o, "r");
-		if r then
-			clone.r = r;
-			clone.races = nil;
+		local races = o.races;
+		if races then
+			clone.races = CloneArray(races);
 		else
-			local races = GetRelativeValue(o, "races");
-			if races then clone.races = CloneArray(races); end
+			local r = GetRelativeValue(o, "r");
+			if r then
+				clone.r = r;
+				clone.races = nil;
+			else
+				races = GetRelativeValue(o, "races");
+				if races then clone.races = CloneArray(races); end
+			end
 		end
 		local c = GetRelativeValue(o, "c");
 		if c then clone.c = CloneArray(c); end
@@ -11708,7 +11713,7 @@ local BuildCategory = function(self, headers, searchResults, inst)
 					headerType = "holiday";
 				elseif GetRelativeValue(o, "isPromotionCategory") then
 					headerType = "promo";
-				elseif GetRelativeValue(o, "isPVPCategory") then
+				elseif GetRelativeValue(o, "isPVPCategory") or o.pvp then
 					headerType = "pvp";
 				elseif GetRelativeValue(o, "isEventCategory") then
 					headerType = "event";
