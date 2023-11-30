@@ -2924,7 +2924,7 @@ function app:GetDataCache()
 		tinsert(g, app.CreateDynamicCategory("Battle Pets"));
 		tinsert(g, app.CreateDynamicCategory("Factions"));
 		tinsert(g, app.CreateDynamicCategory("Flight Paths"));
-		if C_Heirloom then tinsert(g, app.CreateDynamicCategory("Heirlooms")); end
+		if C_Heirloom and app.GameBuildVersion >= 30000 then tinsert(g, app.CreateDynamicCategory("Heirlooms")); end
 		tinsert(g, app.CreateDynamicCategory("Mounts"));
 		tinsert(g, app.CreateDynamicCategory("Titles"));
 		tinsert(g, app.CreateDynamicCategory("Toys"));
@@ -6532,7 +6532,7 @@ app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
 }, (function(t) return t.factionID; end));
 
 -- Heirloom Lib
-if C_Heirloom then
+if C_Heirloom and app.GameBuildVersion >= 30000 then
 	-- Heirloom API is available. Awesome!
 	local C_Heirloom_GetHeirloomInfo = C_Heirloom.GetHeirloomInfo;
 	local C_Heirloom_GetHeirloomLink = C_Heirloom.GetHeirloomLink;

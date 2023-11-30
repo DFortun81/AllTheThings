@@ -1085,7 +1085,7 @@ FlightPathsAccountWideCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "TOPLEFT
 
 -- Heirlooms aren't in the game until late Wrath Classic.
 local HeirloomsCheckBox;
-if C_Heirloom then
+if C_Heirloom and app.GameBuildVersion >= 30000 then
 HeirloomsCheckBox = settings:CreateCheckBox(HEIRLOOMS,
 function(self)
 	self:SetChecked(settings:Get("Thing:Heirlooms"));
