@@ -3,6 +3,15 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
+		ach(10876, {	-- Battle on the Broken Isles
+			["sym"] = {{ "achievement_criteria" }},
+			["g"] = {
+				i(139003, {	-- Pocket Pet Portal
+					["questID"] = 43016,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+			},
+		}),
 		ach(10672, {	-- Broken Isles Diplomat
 			crit(30498),		-- Court of Farondis
 			crit(30500),		-- The Dreamweavers
@@ -39,6 +48,44 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				11545,	-- Legionfall Commander
 			}},
 		}),
+		petbattle(ach(11233, {	-- Broken Isles Safari
+			i(141352),		-- Rescued Fawn (PET!)
+			crit(33107),		-- Albatross Chick (Azsuna, Stormheim)
+			crit(33108),		-- Fledgling Kingfeather (Azsuna)
+			crit(33109),		-- Fledgling Oliveback (Azsuna)
+			crit(33110),		-- Golden Eaglet (Stormheim)
+			crit(33111),		-- Long-Eared Owl (Highmountain, Stormheim)
+			crit(33112),		-- Northern Hawk Owl (Highmountain)
+			crit(33113),		-- Burrow Spiderling (Highmountain)
+			crit(33114),		-- Juvenile Scuttleback (Azsuna, Eye of Azshara)
+			crit(33115),		-- Olivetail Hare (Azsuna)
+			crit(33116),		-- Felspider (Azsuna)
+			crit(33117),		-- Shimmering Aquafly (Val'sharah)
+			crit(33118),		-- Terror Larva (Val'sharah)
+			crit(33119),		-- Slithering Brownscale (Stormheim, Val'sharah, Azsuna)
+			crit(33120),		-- Vale Flitter (Val'sharah)
+			crit(33121),		-- Auburn Ringtail (Val'sharah)
+			crit(33122),		-- Spring Strider (Val'sharah)
+			crit(33123),		-- Black-Footed Fox Kit (Highmountain, Stormheim)
+			crit(33124),		-- Mist Fox Kit (Highmountain, Stormheim)
+			crit(33125),		-- Rose Taipan (Stormheim)
+			crit(33126),		-- Tiny Apparition (Stormheim)
+			crit(33127),		-- Echo Batling (Highmountain)
+			crit(33128),		-- Hog-Nosed Bat (Highmountain)
+			crit(33129),		-- Spiketail Beaver (Highmountain)
+			crit(33130),		-- Erudite Manafiend (Azsuna)
+			crit(33131),		-- Eldritch Manafiend (Azsuna)
+			crit(33132),		-- Coralback Fiddler (Highmountain)
+			crit(33133),		-- Mudshell Conch (Highmountain)
+			crit(33134),		-- Dust Bunny (Dalaran)
+			crit(33135),		-- Vicious Broodling (Suramar)
+			crit(33136),		-- Crystalline Broodling (Suramar)
+			crit(33137),		-- Thornclaw Broodling (Suramar)
+			crit(33138),		-- Gleamhoof Fawn (Val'sharah)
+			crit(33139),		-- Coastal Sandpiper (Azsuna, Suramar, Eye of Azshara)
+			crit(33140),		-- Blind Rat (Dalaran)
+			crit(33141),		-- Stormstruck Beaver (Stormheim)
+		})),
 		petbattle(ach(9696, {	-- Family Familiar
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",

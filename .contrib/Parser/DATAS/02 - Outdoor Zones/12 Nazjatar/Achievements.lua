@@ -123,6 +123,19 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				}),
 			},
 		})),
+		petbattle(ach(13694, {	-- Nazjatari Safari
+			crit(45591),	-- Spireshell Snail
+			crit(45592),	-- Muck Slug
+			crit(45593),	-- Sandclaw Sunshell
+			crit(45594),	-- Abyssal Slitherling
+			crit(45595),	-- Chitterspine Skitterling
+			crit(45596),	-- Deeptide Fingerling
+			crit(45597),	-- Sandclaw Pincher
+			crit(45598),	-- Glimmershell Scuttler
+			crit(45599),	-- Hissing Chitterspine
+			crit(45600),	-- Great Sea Albatross
+			crit(45601),	-- Bloodseeker
+		})),
 		pvp(ach(13568)),	-- For Nazjatar!
 		pvp(ach(13720)),	-- Supplying the Assassins
 		pvp(ach(13569)),	-- Tour of Duty: Nazjatar

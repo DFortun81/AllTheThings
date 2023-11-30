@@ -329,6 +329,20 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 				["coord"] = { 33.3, 25.0, KRASARANG_WILDS },
 			}),
 		}),
+		petbattle(ach(8519, {	-- Celestial Family
+			crit(23600, {	-- Xu-Fu, Cub of Xuen
+				["provider"] = { "i", 101771 },
+			}),
+			crit(23719, {	-- Chi-Chi, Hatchling of Chi-Ji
+				["provider"] = { "i", 102145 },
+			}),
+			crit(23720, {	-- Yu'la, Broodling of Yu'lon
+				["provider"] = { "i", 102147 },
+			}),
+			crit(23721, {	-- Zao, Calfling of Niuzao
+				["provider"] = { "i", 102146 },
+			}),
+		})),
 		ach(7285),	-- Every Day I'm Pand-a-ren
 		ach(6846, {	-- Fish Tales
 			crit(19768),	-- Watersmithing (Jade Forest)
@@ -358,6 +372,21 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 			crit(20416),	-- Xin Wo Yin the Broken Hearted (Jade Forest)
 			crit(20417),	-- Ren Yun the Blind (Kun-Lai Summit)
 		}),
+		petbattle(ach(8518, {	-- Master of the Master
+			crit(23620),	-- Blingtron 4000
+			crit(23610),	-- Wrathion
+			crit(23611),	-- Lorewalker Cho
+			crit(23616),	-- Chen Stormstout
+			crit(23619),	-- Wise Mari
+			crit(23607),	-- Shademaster Kiryn
+			crit(23617),	-- Sully "The Pickle" McLeary
+			crit(23618),	-- Taran Zhu
+			crit(23621),	-- Dr. Ion Goldbloom
+			crit(23612),	-- Xu-Fu, Cub of Xuen
+			crit(23615),	-- Chi-Chi, Hatchling of Chi-Ji
+			crit(23614),	-- Zao, Calfling of Niuzao
+			crit(23613),	-- Yu'la, Broodling of Yu'lon
+		})),
 		ach(6828, {		-- Pandaren Ambassador (Alliance)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
@@ -403,6 +432,15 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 				6979,	-- Explore Vale of Eternal Blossoms
 				6969,	-- Explore Valley of the Four Winds
 			}},
+		})),
+		petbattle(ach(6616, {		-- Pandaria Tamer
+			crit(21494),		-- Dread Wastes
+			crit(21489),		-- The Jade Forest
+			crit(21491),		-- Krasarang Wilds
+			crit(21492),		-- Kun-Lai Summit
+			crit(21493),		-- Townlong Steppes
+			crit(21495),		-- Vale of Eternal Blossoms
+			crit(21490),		-- Valley of the Four Winds
 		})),
 		ach(7997, {	-- Riches of Pandaria
 			ach(7996),	-- Bounty of Pandaria
@@ -537,6 +575,7 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 				["coord"] = { 23.2, 30.8, VALLEY_OF_THE_FOUR_WINDS },
 			}),
 		}),
+		petbattle(ach(8410)),	-- The Celestial Tournament
 		ach(6754, {	-- The Dark Heart of the Mogu
 			crit(19662, {	-- Valley of the Emperors (Kun-Lai Summit)
 				["provider"] = {"o",213331},	-- Valley of the Emperors

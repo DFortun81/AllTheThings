@@ -29,6 +29,34 @@ root(ROOTS.Zones, m(DRAENOR, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } 
 				i(128706),	-- Soaring Skyterror (MOUNT!)
 			},
 		}),
+		petbattle(ach(9685, {		-- Draenor Safari
+			i(111866),		-- Royal Peacock
+			crit(27256),		-- Amberbarb Wasp (Gorgrond)
+			crit(27259),		-- Axebeak Hatchling (Gorgrond)
+			crit(27253),		-- Bloodsting Wasp (Spires of Arak)
+			crit(27260),		-- Brilliant Bloodfeather (Talador)
+			crit(27276),		-- Flat-Tooth Calf (Talador)
+			crit(27017),		-- Frostfur Rat (Frostfire Ridge)
+			crit(27263),		-- Frostshell Pincher (Frostfire Ridge)
+			crit(27261),		-- Golden Dawnfeather (Spires of Arak)
+			crit(27252),		-- Icespine Hatchling (Frostfire Ridge)
+			crit(27264),		-- Ironclaw Scuttler (Frostfire Ridge, Stormheim)
+			crit(27258),		-- Junglebeak (Gorgrond)
+			crit(27267),		-- Kelp Scuttler (Azsuna, Stormheim)
+			crit(27246),		-- Leatherhide Runt (Nagrand)
+			crit(27248),		-- Moonshell Crab (Shadowmoon Valley)
+			crit(27250),		-- Mossbite Skitterer (Shadowmoon Valley)
+			crit(27247),		-- Mud Jumper (Spires of Arak, Talador, Stormheim, Highmountain, Nagrand)
+			crit(27275),		-- Mudback Calf (Gorgrond)
+			crit(27269),		-- Royal Moth (Shadowmoon Valley, Talador, Spires of Arak, Azsuna)
+			crit(27278),		-- Shadow Sporebat (Talador)
+			crit(27272),		-- Swamplighter Firefly (Spires of Arak, Highmountain)
+			crit(27251),		-- Thicket Skitterer (Spires of Arak)
+			crit(27255),		-- Twilight Wasp (Frostfire Ridge, Gorgrond, Frostwall)
+			crit(27274),		-- Waterfly (Shadowmoon Valley, Talador, Spires of Arak, Tanaan Jungle)
+			crit(27254),		-- Wood Wasp (Gorgrond)
+			crit(27266),		-- Zangar Crawler (Shadowmoon Valley, Spires of Arak)
+		})),
 		ach(9728, {			-- Grand Treasure Hunter
 			ach(10348),		-- Master Treasure Hunter
 			ach(9727),		-- Expert Treasure Hunter

@@ -633,6 +633,33 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}},
 			["timeline"] = { ADDED_9_1_5 },
 		}),
+		petbattle(ach(14867, {	-- Shadowlands Safari
+			crit(50923),		-- Animared Cruor
+			crit(50926),		-- Bleak Skitterer
+			crit(50922),		-- Clutch
+			crit(50916),		-- Copperfur Kit
+			crit(50921),		-- Deepwood Leaper
+			crit(50907),		-- Dusky Dredwing Pup
+			crit(50911),		-- Fledgling Teroclaw
+			crit(50913),		-- Fluttering Glimmerfly
+			crit(50917),		-- Glimmerpool Hatchling
+			crit(50919),		-- Gorm Rootstinger
+			crit(50906),		-- Lost Soul
+			crit(50909),		-- Mire Creeper
+			crit(50924),		-- Necroray Spawnling
+			crit(50925),		-- Pulsating Maggot
+			crit(50910),		-- Rosetipped Spiderling
+			crit(50915),		-- Rustfur Kit
+			crit(50920),		-- Tranquil Wader
+			crit(50912),		-- Vibrant Glimmerfly
+			crit(50914),		-- Wader Chick
+			crit(50918),		-- Wild Etherwyrm
+			crit(50908),		-- Withering Creeper
+			crit(51093),		-- Verdant Kit
+			crit(51094),		-- Decay Grub
+			crit(51095),		-- Starmoth
+			crit(51096),		-- Crawbat
+		})),
 		ach(14825, {	-- Shadowlands Voyager
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
