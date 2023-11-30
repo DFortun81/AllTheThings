@@ -900,7 +900,9 @@ root(ROOTS.Craftables, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, bubbleDow
 			applyclassicphase(TBC_PHASE_FOUR, i(185849)),	-- Greater Drums of Panic
 			applyclassicphase(TBC_PHASE_FOUR, i(185850)),	-- Greater Drums of Restoration
 			applyclassicphase(TBC_PHASE_FOUR, i(185851)),	-- Greater Drums of Speed
-			applyclassicphase(TBC_PHASE_FOUR, i(185852)),	-- Greater Drums of War
+			applyclassicphase(TBC_PHASE_FOUR, i(185852, {	-- Greater Drums of War
+				["timeline"] = { "added 2.0.1", "removed 3.0.1" },
+			})),
 			-- #endif
 			i(34330, {["timeline"] = {ADDED_2_3_0}}),	-- Heavy Knothide Armor Kit
 			i(23793),	-- Heavy Knothide Leather

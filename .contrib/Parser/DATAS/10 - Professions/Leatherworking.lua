@@ -3535,6 +3535,7 @@ profession(LEATHERWORKING, {
 				}),
 				applyclassicphase(TBC_PHASE_FOUR, {
 					["name"] = "Greater Drums of War",
+					["timeline"] = { "added 2.0.1", "removed 3.0.1" },
 					["recipeID"] = 351766,
 				}),
 				-- #endif
