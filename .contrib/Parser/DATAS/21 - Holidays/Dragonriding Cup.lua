@@ -2555,8 +2555,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				-- 		19599,	-- Zul'Drak Zephyr Reverse: Gold
 				-- 	}},
 				-- }),
-				-- TODO: Completionist metas
-				-- ach(, {	-- Northrend Racing Completionist
+				-- ach(19721, {	-- Northrend Racing Completionist
 				-- 	-- Meta Achievement
 				-- 	["sym"] = {{"meta_achievement",
 				-- 		19674,	-- Northrend: Bronze
@@ -2564,7 +2563,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				-- 		19682,	-- Northrend Reverse: Bronze
 				-- 	}},
 				-- }),
-				-- ach(, {	-- Northrend Racing Completionist: Silver
+				-- ach(19722, {	-- Northrend Racing Completionist: Silver
 				-- 	-- Meta Achievement
 				-- 	["sym"] = {{"meta_achievement",
 				-- 		19675,	-- Northrend: Silver
@@ -2572,7 +2571,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				-- 		19683,	-- Northrend Reverse: Silver
 				-- 	}},
 				-- }),
-				-- ach(, {	-- Northrend Racing Completionist: Gold
+				-- ach(19723, {	-- Northrend Racing Completionist: Gold
 				-- 	-- Meta Achievement
 				-- 	["sym"] = {{"meta_achievement",
 				-- 		19676,	-- Northrend: Gold
