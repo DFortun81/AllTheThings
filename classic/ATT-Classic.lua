@@ -5918,7 +5918,7 @@ local fields = {
 		return title;
 	end,
 	["reputation"] = function(t)
-		return select(6, GetFactionInfoByID(t.factionID));
+		return select(6, GetFactionInfoByID(t.factionID)) or 0;
 	end,
 	["ceiling"] = function(t)
 		local _, _, _, m, ma = GetFactionInfoByID(t.factionID);
