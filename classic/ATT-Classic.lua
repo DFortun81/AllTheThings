@@ -6818,7 +6818,7 @@ end
 fields.itemID = function(t)
 	return t.toyID;
 end
-if C_ToyBox then
+if C_ToyBox and app.GameBuildVersion >= 30000 then
 	-- Toy API is in!
 	local C_ToyBox_GetToyInfo = C_ToyBox.GetToyInfo;
 	local function isBNETCollectible(toyID)
