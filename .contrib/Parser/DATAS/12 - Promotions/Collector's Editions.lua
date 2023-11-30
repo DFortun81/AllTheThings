@@ -380,7 +380,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		},
 	})),
 	-- #if ANYCLASSIC
-	n(CATA_CLASSIC_BLAZING_UPGRADE, {
+	n(CATA_CLASSIC_BLAZING_UPGRADE, bubbleDownSelf({ ["timeline"] = { "added 3.0.1", "removed 4.0.1" } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Blazing Heroic Edition.",
 			["g"] = {
@@ -392,7 +392,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 				-- Town-In-A-Box Starter Set Toy
 			},
 		}),
-	}),
+	})),
 	-- #else
 	n(CATA_CLASSIC_BLAZING_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 		n(HEROIC_EDITION, {
