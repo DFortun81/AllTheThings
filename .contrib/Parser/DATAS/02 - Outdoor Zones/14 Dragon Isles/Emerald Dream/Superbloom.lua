@@ -8,26 +8,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				ach(19313),	-- Bloom Man Group
 				ach(19315),	-- Dream Chaser
 				ach(19310, {	-- Fruit of the Bloom
-					crit(62910),	-- Basket of Explosive Acorns
-					crit(62911),	-- Bubble Blowgun
-					crit(62912),	-- Dream Gatherer
-					crit(62913),	-- Feral Overflow
-					crit(62914),	-- Flower Trail
-					crit(62915),	-- Lifesurger
-					crit(62916),	-- Memory of L'ghorek
-					crit(62917),	-- Memory of Ursoc
-					crit(62918),	-- Mighty Roar
-					crit(62919),	-- Moonkin Jump
-					crit(62920),	-- Moonkin Mayhem
-					crit(62921),	-- Potent Lullaby
-					crit(62922),	-- Putrid Propulsion
-					crit(62923),	-- Sack of Talontreats
-					crit(62924),	-- Star Shower
-					crit(62925),	-- The Superb Loom
-					crit(62926),	-- Wake Up!
-					crit(63414),	-- Nae'dra Nibbles
-					crit(63415),	-- Fae Lens
-					crit(63438),	-- Arachnid Annihilation
+					["provider"] = {"o",410267},	-- Dreamfruit (there's multiple ID's but we only care about the name)
+					-- Parser handles the criteria
+					-- crit(62910),	-- Basket of Explosive Acorns
+					-- crit(62911),	-- Bubble Blowgun
+					-- crit(62912),	-- Dream Gatherer
+					-- crit(62913),	-- Feral Overflow
+					-- crit(62914),	-- Flower Trail
+					-- crit(62915),	-- Lifesurger
+					-- crit(62916),	-- Memory of L'ghorek
+					-- crit(62917),	-- Memory of Ursoc
+					-- crit(62918),	-- Mighty Roar
+					-- crit(62919),	-- Moonkin Jump
+					-- crit(62920),	-- Moonkin Mayhem
+					-- crit(62921),	-- Potent Lullaby
+					-- crit(62922),	-- Putrid Propulsion
+					-- crit(62923),	-- Sack of Talontreats
+					-- crit(62924),	-- Star Shower
+					-- crit(62925),	-- The Superb Loom
+					-- crit(62926),	-- Wake Up!
+					-- crit(63414),	-- Nae'dra Nibbles
+					-- crit(63415),	-- Fae Lens
+					-- crit(63438),	-- Arachnid Annihilation
 				}),
 				ach(19312),	-- Super Duper Bloom
 			}),
@@ -118,48 +120,32 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 			}),
-			n(RARES, sharedData({ ["isWeekly"] = true }, {
-				n(207554, { -- Veriann Timbercrush
-					["description"] = "Spawns at the end of the Superbloom Event.\nThe Event always starts on the hour.",
-					["coord"] = { 43.8, 71.8, EMERALD_DREAM },
-					--["questID"] = xx, --could be 78502
-					["g"] = {
-						filter(COSMETIC, {
-							i(210663),	-- Circlet of the Mother Tree
-							i(210666),	-- Crest of the Seething Flamekeeper
-							i(210661),	-- Dreamcatcher's Crescent
-							i(210664),	-- Frost Sapling's Adornment
-							i(210662),	-- Ochre Ornament of the Grove
-						}),
-						filter(RECIPES, {
-							i(210171),	-- Formula: Enchanted Aspect's Dreaming Crest (RECIPE!)
-							i(210173),	-- Formula: Enchanted Whelpling's Dreaming Crest (RECIPE!)
-							i(210172),	-- Formula: Enchanted Wyrm's Dreaming Crest (RECIPE!)
-							i(210492),	-- Technique: Grotto Netherwing Drake: Chin Tendrils (RECIPE!) (Only Timbercrush)
-							i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)	(Only Timbercrush)
-							i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)	(Only Timbercrush)
-						}),
-					},
-				}),
-				n(207543, { -- Marikke
-					["description"] = "Spawns at the end of the Superbloom Event.\nThe Event always starts on the hour.",
-					["coord"] = { 44.1, 71.9, EMERALD_DREAM },
-					--["questID"] = xx, -- could be 78553
-					["g"] = {
-						filter(COSMETIC, {
-							i(210663),	-- Circlet of the Mother Tree
-							i(210666),	-- Crest of the Seething Flamekeeper
-							i(210661),	-- Dreamcatcher's Crescent
-							i(210664),	-- Frost Sapling's Adornment
-							i(210662),	-- Ochre Ornament of the Grove
-						}),
-						filter(RECIPES, {
-							i(210171),	-- Formula: Enchanted Aspect's Dreaming Crest (RECIPE!)
-							i(210173),	-- Formula: Enchanted Whelpling's Dreaming Crest (RECIPE!)
-							i(210172),	-- Formula: Enchanted Wyrm's Dreaming Crest (RECIPE!)
-						}),
-					},
-				}),
+			n(COMMON_BOSS_DROPS, sharedData({ ["isWeekly"] = true }, {
+				["description"] = "Spawns at the end of the Superbloom Event.\nThe Event always starts on the hour.",
+				["coord"] = { 43.8, 71.8, EMERALD_DREAM },
+				["crs"] = {
+					-- if they add variable end bosses put their npcID here
+					-- if they have unqiue drops we can split it somehow
+					207554, -- Veriann Timbercrush
+				},
+				["groups"] = {
+					-- Cosmetic
+					i(210663),	-- Circlet of the Mother Tree
+					i(210666),	-- Crest of the Seething Flamekeeper
+					i(210661),	-- Dreamcatcher's Crescent
+					i(210664),	-- Frost Sapling's Adornment
+					i(210662),	-- Ochre Ornament of the Grove
+					-- Recipes
+					i(210171),	-- Formula: Enchanted Aspect's Dreaming Crest (RECIPE!)
+					i(210173),	-- Formula: Enchanted Whelpling's Dreaming Crest (RECIPE!)
+					i(210172),	-- Formula: Enchanted Wyrm's Dreaming Crest (RECIPE!)
+					i(210492),	-- Technique: Grotto Netherwing Drake: Chin Tendrils (RECIPE!) (Only Timbercrush)
+					i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)	(Only Timbercrush)
+					i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)	(Only Timbercrush)
+				},
+				-- Looks like this was temp on PTR only
+				-- n(207543, { -- Marikke
+				-- }),
 			})),
 			n(REWARDS, {
 				i(211414, {	-- Blossoming Dreamtrove

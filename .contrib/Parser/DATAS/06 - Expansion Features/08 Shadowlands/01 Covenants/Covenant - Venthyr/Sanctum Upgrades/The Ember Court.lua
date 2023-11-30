@@ -637,11 +637,14 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								}),
 							})),
 						}),
-						n(QUESTS, sharedData({["isWeekly"] = true,},{
+						n(QUESTS, sharedData({["isWeekly"] = true},{
 							q(61524),	-- The Ember Court
+							q(62628, {	-- Vole's Voucher
+								["provider"] = {"i",181761},	-- The Grandmaster's Voucher
+							}),
 						})),
 						-- Repeatable Event quests within Ember Court
-						n(QUESTS, sharedData({["isDaily"] = true,},{
+						n(QUESTS, sharedData({["isDaily"] = true},{
 							applyevent(EVENTS.NOBLEGARDEN, q(63721, {	-- Lord Garridan's Egg
 								["cost"] = { { "i", 185684, 1 } },	-- Lord Garridan's Egg
 							})),
@@ -763,10 +766,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								o(356700, {	-- Grandmaster Vole's Extravagant Tribute
 									["crs"] = { 171848 },	-- Grandmaster Vole
 									["g"] = appendGroups(VOLE_GROUP, {
-										i(181761, {	-- The Grandmaster's Voucher
-											["isWeekly"] = true,
-											["questID"] = 62628,	-- Vole's Voucher
-										}),
+										i(181761),	-- The Grandmaster's Voucher
 										i(181765),	-- Marcel Mullby's Marker
 										i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
 										i(181767),	-- Small Coin Purse

@@ -614,7 +614,7 @@ root(ROOTS.HiddenQuestTriggers, tier(BFA_TIER, {
 		q(57105, {["repeatable"]=true}),	-- Upgrade Your Jetpack (Optional) — clicking on box of Azerite-Imbued Powder in Island Expeditions, Horde
 		q(55712, {["repeatable"]=true}),	-- Upgrade Your A.T.O.M.I.K. Mk. II (Optional) — upgrading robot in Island Expeditions, Alliance
 		q(57107, {["repeatable"]=true}),	-- Upgrade Your A.T.O.M.I.K. Mk. II (Optional) — upgrading robot in Island Expeditions, Horde
-		q(55619),	-- Upgrade Your Vehicle (Optional), Alliance
+		q(55619, {["repeatable"]=true}),	-- Upgrade Your Vehicle (Optional), Alliance
 		q(57103, {["repeatable"]=true}),	-- Upgrade Your Vehicle (Optional), Horde
 		q(55617),	-- Expedition Siege Engine — assembling siege engine in Island Expeditions
 		q(56998),	-- triggered when turning in "Azerite for the Alliance," (53436) which also triggered "Azerite for the Horde" (53435).  i also got Rank 1 Volatile Worldvein from the quest, so maybe this is for receiving that?

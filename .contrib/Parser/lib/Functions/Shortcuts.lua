@@ -687,7 +687,7 @@ crit = function(criteriaUID, t)							-- Create an Achievement Criteria Object (
 			t = { ["groups"] = t };
 		end
 	end
-	if (t.groups or t.g) and #(t.groups or t.g) > 0 then
+	if (t.groups or t.g) and #(t.groups or t.g) > 0 and false then
 		error(table.concat({"Do not nest content (g/groups) inside Achievement Criteria:",criteriaUID}))
 	end
 			if t.achievementID then

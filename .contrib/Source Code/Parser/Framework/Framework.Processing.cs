@@ -1357,8 +1357,7 @@ namespace ATT
         {
             if (!data.TryGetValue("achID", out long achID) ||
                 data.ContainsKey("criteriaID") ||
-                (data.TryGetValue("collectible", out bool collectible) && !collectible) ||
-                (data.TryGetValue("_noautomation", out bool noautomation) && noautomation)) return;
+                (data.TryGetValue("collectible", out bool collectible) && !collectible)) return;
 
             // Grab AchievementDB info
             ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
@@ -1393,6 +1392,12 @@ namespace ATT
                     DuplicateDataIntoGroups(data, achCatID, "achievementCategoryID");
                     //LogDebug($"Duplicated Achievement {achID} into Achievement Category");
                 }
+            }
+
+            // data marked with noautomation shouldn't incorporate more than this
+            if (data.TryGetValue("_noautomation", out bool noautomation) && noautomation)
+            {
+                return;
             }
 
             // Classic can't trust Retail data for Achievements because Blizzard

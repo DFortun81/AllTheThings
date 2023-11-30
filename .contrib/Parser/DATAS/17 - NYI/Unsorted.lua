@@ -1190,7 +1190,6 @@ root(ROOTS.Unsorted, {
 				q(78362),	--
 				q(78366),	--
 				q(78372),	-- Drake's Dreaming Crest
-				q(78373),	-- The Dream Thanks You
 				q(78377),	--
 				q(78380),	--
 				q(78389),	-- The Makers' Marathon	 PTR:Maker's Marathon
@@ -1225,7 +1224,6 @@ root(ROOTS.Unsorted, {
 				q(78578),	--
 				q(78581),	-- Dragon Isles Supplies
 				q(78582),	-- Dragon Isles Supplies
-				q(78583),	-- Dragon Isles Supplies
 				q(78584),	-- Dragon Isles Supplies
 				q(78585),	-- Dragon Isles Supplies
 				q(78586),	-- Dragon Isles Supplies
@@ -1277,7 +1275,6 @@ root(ROOTS.Unsorted, {
 				q(78176),	--
 				-- 10.2.0.52188
 				q(76279),	--
-				q(79332),	--
 			}),
 			--]]
 		})),
@@ -3147,7 +3144,6 @@ root(ROOTS.Unsorted, {
 			--10.1.5.49516
 			i(206564),	-- Time-Displaced Titanic Disc \\ Time Displaced Titanic Disc
 			--10.1.5.49719
-			i(207030),	-- Dilated Time Capsule
 			--10.2.0.52038
 			i(208751),	-- Squally
 			i(208878),	-- Adventurer's Footlocker

@@ -176,8 +176,6 @@ iq(166749, 54859);					-- Lyrics: Song of the Sea
 -----------------
 iq(170147, 56908);					-- Paint Bottle: Goblin Green
 iq(170146, 56907);					-- Paint Bottle: Nukular Red
-iq(168266, 56079);					-- Strange Recycling Requisition
-iq(168264, 55148);					-- Recycling Requisition
 iq(170148, 56909);					-- Paint Bottle: Electric Blue
 
 -----------------
@@ -227,7 +225,6 @@ iq(183413, 62012);					-- Ensemble: Stitched Alacrity of Maldraxxus
 iq(181443, 61459);					-- The Party Herald's Party Hat
 iq(183957, 62657);					-- Invitation: Grandmaster Vole
 iq(183956, 62656);					-- Invitation: Choofa
-iq(181761, 62628);					-- The Grandmaster's Voucher
 iq(182975, 62223);					-- Ascension Calling: Mikanikos
 
 -----------------

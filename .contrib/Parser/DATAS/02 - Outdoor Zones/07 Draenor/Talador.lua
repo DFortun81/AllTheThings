@@ -2316,7 +2316,7 @@ root(ROOTS.Zones, {
 						["questID"] = 34260,
 						["coord"] = { 81.8, 34.9, TALADOR },
 						["g"] = {
-							i(109118),	-- Blackrock Ore
+							--i(109118),	-- Blackrock Ore
 						},
 					}),
 					o(228016, {	-- Barrel of Fish

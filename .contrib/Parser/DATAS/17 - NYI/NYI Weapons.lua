@@ -180,11 +180,6 @@ root(ROOTS.NeverImplemented, {
 				i(18583),	-- Warglaive of Azzinoth (Right)
 				i(18584),	-- Warglaive of Azzinoth (Left)
 			}),
-			tier(BFA_TIER, {
-				tier(BFA_TIER, 1.0, {
-					i(166364),	-- Song of the Fallen
-				}),
-			}),
 			tier(SL_TIER, {
 				tier(SL_TIER, 1.5, {
 					i(187568),	-- Duskwatch Arcblade
