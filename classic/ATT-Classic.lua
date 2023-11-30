@@ -14498,13 +14498,13 @@ app.events.ADDON_LOADED = function(addonName)
 		local container = currentCharacter[field];
 		local oldstate = container[id];
 		if collected then
+			accountWideData[field][id] = 1;
 			if not oldstate then
 				if t and not (accountWideSettings[field] and accountWideData[field][id]) then
 					--print("SetCollected", field, id, accountWideSettings[field], accountWideData[field][id]);
 					AddToCollection(t);
 				end
 				container[id] = 1;
-				accountWideData[field][id] = 1;
 				local now = time();
 				timeStamps[field] = now;
 				currentCharacter.lastPlayed = now;
@@ -14534,13 +14534,13 @@ app.events.ADDON_LOADED = function(addonName)
 		local container = currentCharacter[field];
 		local oldstate = container[id];
 		if collected then
+			accountWideData[field][id] = 1;
 			if not oldstate then
 				if t and not (accountWideSettings[subtype] and accountWideData[field][id]) then
 					--print("SetCollectedForSubType", field, subtype, id, accountWideSettings[subtype], accountWideData[field][id]);
 					AddToCollection(t);
 				end
 				container[id] = 1;
-				accountWideData[field][id] = 1;
 				local now = time();
 				timeStamps[field] = now;
 				currentCharacter.lastPlayed = now;
