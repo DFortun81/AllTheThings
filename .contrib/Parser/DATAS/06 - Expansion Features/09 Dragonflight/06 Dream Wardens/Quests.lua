@@ -103,7 +103,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["groups"] = {
 						i(206960),	-- Enchanted Wyrm's Dreaming Crest
 					},
-				})
+				}),
 				title(532),	-- <Name>, Dream Defender
 					-- RENOWN 20+++ --
 				q(76425, {	--	Renowned with the Dream Wardens
