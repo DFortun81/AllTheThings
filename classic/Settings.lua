@@ -913,7 +913,7 @@ end
 BattlePetsCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local BattlePetsAccountWideCheckBox;
-if C_PetJournal then
+if C_PetJournal and app.GameBuildVersion > 30000 then
 BattlePetsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
 	self:SetChecked(true);
@@ -1270,7 +1270,7 @@ function(self)
 	settings:UpdateMode();
 	app:RefreshDataCompletely("MountsCheckBox");
 end);
-if C_PetJournal then
+if C_PetJournal and app.GameBuildVersion > 30000 then
 MountsCheckBox:SetATTTooltip("Enable this option to track mounts.");
 else
 MountsCheckBox:SetATTTooltip("Enable this option to track mounts.\n\nFair warning! Do this at your own risk, it will take up a lot of inventory space across your account and they can not be sent between characters!\n\nAdditionally, the cost of all Vendor mounts is reduced to 1/10 of their current prices with Wrath.");

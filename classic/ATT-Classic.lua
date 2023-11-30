@@ -5145,7 +5145,7 @@ local mountFields = {
 	end,
 };
 
-if C_PetJournal then
+if C_PetJournal and app.GameBuildVersion > 30000 then
 	-- Once the Pet Journal API is available, then all pets become account wide.
 	SetBattlePetCollected = function(t, speciesID, collected)
 		return app.SetAccountCollected(t, "BattlePets", speciesID, collected);
