@@ -1078,7 +1078,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		})),
 		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52188" } }, {
 			n(MONTHLY_REWARD, {
-				
+				pet(3255),	-- Buttercup (PET!)
 			}),
 			filter(BATTLE_PETS, {
 				i(190607, {	-- Garrlok (PET!)
@@ -1104,10 +1104,20 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208699, {	-- Battle Magisters Regalia
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = MAGE,
+					["g"] = {
+						i(208695),	-- Battle Magister's Belt
+						i(208694),	-- Battle Magister's Epaulets
+						i(208693),	-- Battle Magister's Orbs
+					},
 				}),
 				i(208700, {	-- Battle Magisters Enchantments
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = MAGE,
+					["g"] = {
+						i(208698),	-- Battle Magister's Scepter
+						i(208696),	-- Battle Magister's Scimitar
+						i(208697),	-- Battle Magister's Shard
+					},
 				}),
 				i(210869, {	-- Blademasters Azure Stones
 					["cost"] = {{"c", TRADERS_TENDER, 200}},
@@ -1179,22 +1189,31 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190874, {	-- Glittering Fel Gavel
 					["cost"] = {{"c", TRADERS_TENDER, 200}},
 				}),
+				i(208729, {	-- Imminence of Krag'wa's Executor
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+					["classes"] = SHAMAN,
+					["g"] = {
+						i(208712),	-- Headdress of Krag'wa's Executor
+						i(208713),	-- Idols of Krag'wa's Executor
+						i(208714),	-- Vines of Krag'wa's Executor
+					},
+				}),
 				i(208727, {	-- Hornstrider Hunters Camouflage
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = HUNTER,
 					["g"] = {
-					--	i(211255),	-- Regal Stormhammer
-					--	i(211256),	-- Thundering Stormhammer
-					--	i(211256),	-- Thundering Stormhammer
+						i(208719),	-- Hornstrider Hunter's Ammunition
+						i(208718),	-- Hornstrider Hunter's Beak
+						i(208720),	-- Hornstrider Hunter's Crest
 					},
 				}),
 				i(208728, {	-- Hornstrider Hunters Preference
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = HUNTER,
 					["g"] = {
-					--	i(211255),	-- Regal Stormhammer
-					--	i(211256),	-- Thundering Stormhammer
-					--	i(211256),	-- Thundering Stormhammer
+						i(208723),	-- Hornstrider Hunter's Harpooner
+						i(208722),	-- Hornstrider Hunter's Pride
+						i(208721),	-- Hornstrider Hunter's Serrator					
 					},
 				}),
 				-- jeweled
@@ -1205,18 +1224,18 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = EVOKER,
 					["g"] = {
-					--	i(211255),	-- Regal Stormhammer
-					--	i(211256),	-- Thundering Stormhammer
-					--	i(211256),	-- Thundering Stormhammer
+						i(208706),	-- Horns of the Silver Hoarder
+						i(208708),	-- Sash of the Silver Hoarder
+						i(208707),	-- Shoulderguards of the Silver Hoarder
 					},
 				}),
 				i(208730, {	-- Tools of Kragwas Executor
 					["cost"] = {{"c", TRADERS_TENDER, 750}},
 					["classes"] = SHAMAN,
 					["g"] = {
-					--	i(211255),	-- Regal Stormhammer
-					--	i(211256),	-- Thundering Stormhammer
-					--	i(211256),	-- Thundering Stormhammer
+						i(208716),	-- Hatchet of Krag'wa's Executor
+						i(208715),	-- Safeguard of Krag'wa's Executor
+						i(208717),	-- Talons of Krag'wa's Executor				
 					},
 				}),
 				i(210844, {	-- Traders Crimson Sarong
@@ -1229,9 +1248,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = EVOKER,
 					["g"] = {
-					--	i(211255),	-- Regal Stormhammer
-					--	i(211256),	-- Thundering Stormhammer
-					--	i(211256),	-- Thundering Stormhammer
+						i(208710),	-- Flames of the Silver Hoarder
+						i(208709),	-- Flight of the Silver Hoarder
+						i(208711),	-- Saber of the Silver Hoarder
 					},
 				}),
 				i(211258, {	-- Wildhammer Scouts Headgear
@@ -1278,9 +1297,6 @@ root(ROOTS.HiddenQuestTriggers, {
 root(ROOTS.NeverImplemented, {
 	tier(DF_TIER, bubbleDown({ ["timeline"] = { CREATED_10_0_5 }, }, {
 		filter(BATTLE_PETS, {
-			pet(3255, {	-- Buttercup (PET!)
-				["cost"] = {{"c", TRADERS_TENDER, 750}},
-			}),
 			i(190173, {	-- Lil' Maka'jin (PET!)
 				["cost"] = {{"c", TRADERS_TENDER, 750}},
 			}),
@@ -1496,13 +1512,11 @@ root(ROOTS.NeverImplemented, {
 					i(190445),	-- Envenomed Gutripper
 					i(190218),	-- Jeweled Ripper
 					i(190132),	-- Krokul Battlescythe
-					i(190685),	-- Lost Crusader's Azure Battleaxe
 					i(190148),	-- Ravencrest's Razor
 					i(189872),	-- Shattered Krokul Edge
 					i(190079),	-- Smoldering Forgeblade
 					i(189884),	-- Vengeful Nemesis Warblades
 					i(190219),	-- Virulent Gavel
-					i(190203),	-- Craftsman Timber Mallet
 
 					-- Two-Hand Wep
 					i(190131),	-- Brick-on-a-Stick
@@ -1624,45 +1638,6 @@ root(ROOTS.NeverImplemented, {
 					i(210072),	-- Sky-Captain's Masquerade Hat
 					i(210075),	-- Sky-Captain's Masquerade Pants
 
-					------ Battle Magister ------
-					i(208695),	-- Battle Magister's Belt
-					i(208700),	-- Battle Magister's Enchantments
-					i(208694),	-- Battle Magister's Epaulets
-					i(208693),	-- Battle Magister's Orbs
-					i(208699),	-- Battle Magister's Regalia
-					i(208698),	-- Battle Magister's Scepter
-					i(208696),	-- Battle Magister's Scimitar
-					i(208697),	-- Battle Magister's Shard
-
-					------ Silver Hoarder ------
-					i(208710),	-- Flames of the Silver Hoarder
-					i(208709),	-- Flight of the Silver Hoarder
-					i(208706),	-- Horns of the Silver Hoarder
-					i(208711),	-- Saber of the Silver Hoarder
-					i(208708),	-- Sash of the Silver Hoarder
-					i(208725),	-- Scales of the Silver Hoarder
-					i(208707),	-- Shoulderguards of the Silver Hoarder
-					i(208726),	-- Treasure of the Silver Hoarder
-
-					------ Krag'wa's Executor ------
-					i(208716),	-- Hatchet of Krag'wa's Executor
-					i(208712),	-- Headdress of Krag'wa's Executor
-					i(208713),	-- Idols of Krag'wa's Executor
-					i(208729),	-- Imminence of Krag'wa's Executor
-					i(208715),	-- Safeguard of Krag'wa's Executor
-					i(208717),	-- Talons of Krag'wa's Executor
-					i(208730),	-- Tools of Krag'wa's Executor
-					i(208714),	-- Vines of Krag'wa's Executor
-
-					------ Hornstrider Hunter ------
-					i(208719),	-- Hornstrider Hunter's Ammunition
-					i(208718),	-- Hornstrider Hunter's Beak
-					i(208727),	-- Hornstrider Hunter's Camouflage
-					i(208720),	-- Hornstrider Hunter's Crest
-					i(208723),	-- Hornstrider Hunter's Harpooner
-					i(208728),	-- Hornstrider Hunter's Preference
-					i(208722),	-- Hornstrider Hunter's Pride
-					i(208721),	-- Hornstrider Hunter's Serrator
 				}),
 				n(ARMOR, {
 					------ Sarong ------
