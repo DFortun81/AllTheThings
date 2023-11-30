@@ -190,7 +190,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
 					},
 				}),
-				q(6805, bubbleDown({ ["timeline"] = REMOVED_WITH_WRATH }, {	-- Stormers and Rumblers
+				q(6805, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Stormers and Rumblers
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["maps"] = { SILITHUS },
