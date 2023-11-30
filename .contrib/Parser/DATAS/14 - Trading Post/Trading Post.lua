@@ -1094,6 +1094,149 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 			filter(COSMETIC, {
+				i(211257, {	-- Arsenal Stormriders Stormhammers
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+					["g"] = {
+						i(211255),	-- Regal Stormhammer
+						i(211256),	-- Thundering Stormhammer
+					},
+				}),
+				i(208699, {	-- Battle Magisters Regalia
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+					["classes"] = MAGE,
+				}),
+				i(208700, {	-- Battle Magisters Enchantments
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+					["classes"] = MAGE,
+				}),
+				i(210869, {	-- Blademasters Azure Stones
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(211268, {	-- Blademasters Thundering Greatsword
+					["cost"] = {{"c", TRADERS_TENDER, 225}},
+				}),
+				i(210843, {	-- Candied Blade
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
+				i(190430, {	-- Chipped Gladius
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(211267, {	-- Classic Snowy Tabard
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190203, {	-- Craftsman Timber Mallet
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(211070, {	-- Crimson Treads of the Kaluak
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				-- chilled touch
+				i(208039, { -- Ember Court Soiree Gloves
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(210883, {	-- Ensemble Scarlet Zealots Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 550}},
+					["groups"] = {
+						i(190427),	-- Scarlet Zealots Cloak
+						i(190444),	-- Scarlet Zealots Cassock
+						i(207029),	-- Scarlet Zealots Heater Shield
+					},
+				}),
+				i(190851, { -- Ensemble Vagabonds Crimson Threads
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+						i(190827), -- Vagabonds Crimson Cape
+						i(190828), -- Vagabonds Crimson Hood
+					},
+				}),
+				i(190922, { -- Ensemble: Vagabond's Snowy Threads
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+						i(190882), -- Vagabond's Snowy Cape
+						i(190884), -- Vagabond's Snowy Hood
+					},
+				}),
+				i(190850, { -- Ensemble Wanderers Crimson Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+						i(190825), -- Wanderer's Crimson Cloak
+						i(190826), -- Wanderer's Crimson Scarf
+					},
+				}),
+				i(190921, { -- Ensemble: Wanderer's Snowy Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+						i(190883), -- Wanderer's Snowy Cloak
+						i(190885), -- Wanderer's Snowy Scarf
+					},
+				}),
+				i(211130, {	-- Errant Crusaders Helm
+					["cost"] = {{"c", TRADERS_TENDER, 225}},
+				}),
+				i(190886, { -- Fine White Evening Gloves
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190874, {	-- Glittering Fel Gavel
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(208727, {	-- Hornstrider Hunters Camouflage
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+					["classes"] = HUNTER,
+					["g"] = {
+					--	i(211255),	-- Regal Stormhammer
+					--	i(211256),	-- Thundering Stormhammer
+					--	i(211256),	-- Thundering Stormhammer
+					},
+				}),
+				i(208728, {	-- Hornstrider Hunters Preference
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+					["classes"] = HUNTER,
+					["g"] = {
+					--	i(211255),	-- Regal Stormhammer
+					--	i(211256),	-- Thundering Stormhammer
+					--	i(211256),	-- Thundering Stormhammer
+					},
+				}),
+				-- jeweled
+				i(190685, {	-- Lost Crusaders Azure Battleaxe
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(208725, {	-- Scales of the Silver Hoarder
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+					["classes"] = EVOKER,
+					["g"] = {
+					--	i(211255),	-- Regal Stormhammer
+					--	i(211256),	-- Thundering Stormhammer
+					--	i(211256),	-- Thundering Stormhammer
+					},
+				}),
+				i(208730, {	-- Tools of Kragwas Executor
+					["cost"] = {{"c", TRADERS_TENDER, 750}},
+					["classes"] = SHAMAN,
+					["g"] = {
+					--	i(211255),	-- Regal Stormhammer
+					--	i(211256),	-- Thundering Stormhammer
+					--	i(211256),	-- Thundering Stormhammer
+					},
+				}),
+				i(210844, {	-- Traders Crimson Sarong
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(210846, {	-- Traders Lively Sarong
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(208726, {	-- Treasure of the Silver Hoarder
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+					["classes"] = EVOKER,
+					["g"] = {
+					--	i(211255),	-- Regal Stormhammer
+					--	i(211256),	-- Thundering Stormhammer
+					--	i(211256),	-- Thundering Stormhammer
+					},
+				}),
+				i(211258, {	-- Wildhammer Scouts Headgear
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
 			}),
 		})),
 	}),
@@ -1193,16 +1336,6 @@ root(ROOTS.NeverImplemented, {
 			}),
 			-- Belt
 
-			-- Chest
-			i(190444, {	-- Scarlet Zealot's Cassock
-				["cost"] = {{"c", TRADERS_TENDER, 225}},
-			}),
-
-			-- Cloak
-			i(190427, {	-- Scarlet Zealot's Cloak
-				["cost"] = {{"c", TRADERS_TENDER, 75}},
-			}),
-
 
 			-- Gloves
 
@@ -1223,9 +1356,6 @@ root(ROOTS.NeverImplemented, {
 			-- Off-Hand
 
 			-- Shield
-			i(190077, {	-- Scarlet Zealot's Heater Shield
-				["cost"] = {{"c", TRADERS_TENDER, 200}},
-			}),
 
 			i(190672),	-- Deathguard Acolyte's Cloak
 			i(189869),	-- Distinguished Warcloak
@@ -1363,7 +1493,6 @@ root(ROOTS.NeverImplemented, {
 					-- One-Hand Wep
 					i(190675),	-- Arborcidal Peon's Chopper
 					i(190446),	-- Blazing Forgehammer
-					i(190430),	-- Chipped Gladius
 					i(190445),	-- Envenomed Gutripper
 					i(190218),	-- Jeweled Ripper
 					i(190132),	-- Krokul Battlescythe
@@ -1452,7 +1581,6 @@ root(ROOTS.NeverImplemented, {
 				i(206338),	-- Ensemble: Wanderer's Deep Trappings
 				i(206339),	-- Ensemble: Wanderer's Cloudy Trappings
 				i(206340),	-- Ensemble: Wanderer's Grassy Trappings
-				i(207029),	-- Scarlet Zealot's Heater Shield
 			})),
 
 			-- 10.2.0
@@ -1535,9 +1663,6 @@ root(ROOTS.NeverImplemented, {
 					i(208728),	-- Hornstrider Hunter's Preference
 					i(208722),	-- Hornstrider Hunter's Pride
 					i(208721),	-- Hornstrider Hunter's Serrator
-
-					------ Scarlet Zealot's Trappings ------
-					i(210883),	-- Ensemble: Scarlet Zealot's Trappings
 				}),
 				n(ARMOR, {
 					------ Sarong ------
@@ -1546,11 +1671,9 @@ root(ROOTS.NeverImplemented, {
 					i(210854),	-- Trader's Camo Sarong
 					i(210857),	-- Trader's Carrot Sarong
 					i(210852),	-- Trader's Cloudy Sarong
-					i(210844),	-- Trader's Crimson Sarong
 					i(210853),	-- Trader's Deep Sarong
 					i(210856),	-- Trader's Faded Sarong
 					i(210851),	-- Trader's Grassy Sarong
-					i(210846),	-- Trader's Lively Sarong
 					i(210855),	-- Trader's Lively Sarong
 					i(210848),	-- Trader's Midnight Sarong
 					i(210859),	-- Trader's Plum Sarong
@@ -1561,7 +1684,6 @@ root(ROOTS.NeverImplemented, {
 					i(210860),	-- Trader's Violet Sarong
 
 					------ Stones ------
-					i(210869),	-- Blademaster's Azure Stones
 					i(210865),	-- Blademaster's Crimson Stones
 					i(210867),	-- Blademaster's Lively Stones
 					i(210866),	-- Blademaster's Suntouched Stones
@@ -1571,7 +1693,6 @@ root(ROOTS.NeverImplemented, {
 					i(211069),	-- Azure Treads of the Kalu'ak
 					i(211268),	-- Blademaster's Thundering Greatsword
 					i(211267),	-- Classic Snowy Tabard
-					i(211070),	-- Crimson Treads of the Kalu'ak
 					i(211130),	-- Errant Crusader's Helm
 					i(211002),	-- Golden Mobile Timepiece
 					i(211066),	-- Gossamer Desert Gown
@@ -1588,10 +1709,6 @@ root(ROOTS.NeverImplemented, {
 					i(211295),	-- Wrathful Crusader's Helm
 				}),
 				n(WEAPONS, {
-					------ Stormhammer ------
-					i(211255),	-- Regal Stormhammer
-					i(211256),	-- Thundering Stormhammer
-					i(211257),	-- Arsenal: Stormrider's Stormhammers
 					------ Whispering Temple Blade ------
 					i(211298),	-- Whispering Temple Blade
 					i(211299),	-- Gleaming Whispering Temple Blade
@@ -1607,8 +1724,6 @@ root(ROOTS.NeverImplemented, {
 					i(211099),	-- Gilded Scarab Bulwark
 					i(211159),	-- Royal Witch Doctor's Guard
 					i(211158),	-- Witch Doctor's Fetish Guard
-					------ Winter Veil ------
-					i(210843),	-- Candied Blade
 				}),
 			})),
 		}),
