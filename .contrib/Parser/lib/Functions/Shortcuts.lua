@@ -1410,10 +1410,6 @@ local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill
 	if itemID == 0 then
 		-- The RecipeDB table isn't setup to always return a value.
 		object = recipeDB[recipeID];
-		if not object then
-			object = {};
-			recipeDB[recipeID] = object;
-		end
 	else
 		-- Cache the object as an item
 		object = itemDBConditional[itemID];
@@ -1469,8 +1465,17 @@ local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill
 	end
 	return object;
 end
+
+local RecipeDBConditional = CreateDatabaseContainer("RecipeDB", {
+	__index = function(t, key)
+		key = tonumber(key);
+		local recipe = { };
+		rawset(t, key, recipe);
+		return recipe;
+	end,
+});
 GetRecipeHelperForProfession = function(professionID)
-	recipeDB = root(ROOTS.RecipeDB);	-- NOTE: This value doesn't get persisted yet.
+	recipeDB = RecipeDBConditional;
 	CurrentProfessionID = professionID;
 	return ItemRecipeHelper;
 end
