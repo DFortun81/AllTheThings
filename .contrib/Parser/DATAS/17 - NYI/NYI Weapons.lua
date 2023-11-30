@@ -489,7 +489,6 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(ONE_HANDED_SWORDS, {
 			-- Load In Game
-			i(134613),	-- Scorching Quickblade
 			i(137225),	-- Thunderfury, Blessed Blade of the Windseeker (mog testing)
 			i(162447),	-- Marrow Render
 			i(182567),	-- NPE Weapon 1H Sword AGI

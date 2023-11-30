@@ -95,7 +95,6 @@ root(ROOTS.NeverImplemented, {
 						i(4811),	-- Deprecated Studded Shoulders
 						i(3459),	-- Deprecated Weathered Shoulderpads
 						i(1424),	-- Deprecated Worn Leather Shoulderpads
-						i(3983),	-- Strapped Shoulderpads
 					}),
 					n(CHEST, {
 						i(1535),	-- Deprecated Bloodscalp Vest

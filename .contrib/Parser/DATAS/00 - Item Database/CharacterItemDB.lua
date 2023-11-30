@@ -218,10 +218,6 @@ iq(182618, 62085);					-- Reclaimed Vessel
 iq(183517, 62372);					-- Page 76 of the Necronom-i-nom
 iq(187923, 65039);					-- Aurelid Lure
 --- NYI ---
-iq(183415, 62014);					-- Ensemble: Stitched Rationale of Maldraxxus
-iq(183414, 62013);					-- Ensemble: Stitched Guile of Maldraxxus
-iq(183411, 62011);					-- Ensemble: Stitched Authority of Maldraxxus
-iq(183413, 62012);					-- Ensemble: Stitched Alacrity of Maldraxxus
 iq(181443, 61459);					-- The Party Herald's Party Hat
 iq(183957, 62657);					-- Invitation: Grandmaster Vole
 iq(183956, 62656);					-- Invitation: Choofa

@@ -1448,7 +1448,6 @@ root(ROOTS.NeverImplemented, {
 			}),
 			filter(PLATE, {
 				tier(BFA_TIER, 0.1, {
-					i(156752),	-- Skullbreaker Gauntlets
 					i(160673),	-- Primus Breastplate
 					i(160674),	-- Secondus Breastplate
 					i(160675),	-- Tertius Breastplate

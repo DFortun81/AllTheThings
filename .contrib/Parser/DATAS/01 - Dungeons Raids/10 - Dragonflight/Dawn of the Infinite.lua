@@ -129,6 +129,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(LEATHER, {
 			ig(114272),	-- Bloodthorn Spaulders				(NYI)
+			ig(3983),	-- Strapped Shoulderpads			(NYI)
 
 			ig(134731),	-- Frosthide Shoulderpads			(Removed)
 			ig(134761),	-- Masked Shoulderpads				(Removed)
@@ -339,6 +340,7 @@ local QUANTUM_GROUP = sharedData({
 			i(114386),	-- Gauntlets of Grievous Storms		(NYI)
 			ig(108180),	-- Peerless Draenic Steel Guantlets	(NYI)
 			ig(114262),	-- Ruby Plate Gauntlets				(NYI)
+			ig(156752),	-- Skullbreaker Gauntlets			(NYI)
 
 			ig(134736),	-- Chillplate Gauntlets				(Removed)
 			ig(134683),	-- Front-Line Gauntlets				(Removed)
@@ -479,6 +481,7 @@ local QUANTUM_GROUP = sharedData({
 	i(208119, {	-- Quantum Firearm
 		ig(134720),	-- Cold-Touched Rifle					(Removed)
 		ig(134749),	-- Covert Rifle							(Removed)
+		ig(56376),	-- Thundercall							(Removed)
 
 		ig(98269),	-- Immaculate Pandaren Gun				(MoP Scenario)
 		ig(93134),	-- Scavenged Pandaren Gun				(MoP Scenario)
@@ -523,6 +526,9 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208112, {	-- Quantum Greatsword	(Two-Handed)
 		ig(134746),	-- Covert Greatsword					(Removed)
+		ig(186410, {	-- Jaithys, the Prison Blade		(Removed)
+			["modID"] = 6, -- Mythic raid
+		}),
 		ig(134664),	-- Recruit's Greatsword					(Removed)
 		ig(134606),	-- Scorching Greatsword					(Removed)
 
@@ -624,6 +630,7 @@ local QUANTUM_GROUP = sharedData({
 
 		ig(6679),	-- Armor Piercer						(Removed)
 		ig(134721),	-- Cold-Touched Staff 					(Removed)
+		ig(1388),	-- Crooked Staff						(Removed)
 		ig(2280),	-- Kam's Walking Stick					(Removed)
 		ig(134674),	-- Recruit's Battle Staff				(Removed)
 		ig(134619),	-- Scorching Staff						(Removed)
@@ -637,8 +644,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(93129),	-- Scavenged Pandaren Staff				(MoP Scenario)
 	}),
 	i(208109, {	-- Quantum Sword		(One-Handed)
+		ig(134613),	-- Scorching Quickblade					(NYI)
 		ig(166364),	-- Song of the Fallen					(NYI)
 
+		ig(19110),	-- Cold Forged Blade 					(Removed)
 		ig(134725),	-- Cold-Touched Mageblade 				(Removed)
 		ig(134726),	-- Cold-Touched Sword 					(Removed)
 		ig(134758),	-- Covert Mageblade 					(Removed)
@@ -1262,7 +1271,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(77597),	-- when you learn everything from Quantum Axe (One-Handed)
 		-- q(77598),	-- when you learn everything from Quantum ?
 		-- q(77599),	-- when you learn everything from Quantum ?
-		-- q(77600),	-- when you learn everything from Quantum ?
+		q(77600),	-- when you learn everything from Quantum Greathammer (Two-Handed)(Mace)
 		-- q(77601),	-- when you learn everything from Quantum ?
 		-- q(77602),	-- when you learn everything from Quantum ?
 		-- q(77603),	-- when you learn everything from Quantum ?
@@ -1271,7 +1280,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- q(77606),	-- when you learn everything from Quantum ?
 		-- q(77607),	-- when you learn everything from Quantum ?
 		-- q(77608),	-- when you learn everything from Quantum ?
-		-- q(77609),	-- when you learn everything from Quantum ?
+		q(77609),	-- when you learn everything from Quantum Focus
 		-- q(77610),	-- when you learn everything from Quantum ?
 		-- q(77611),	-- when you learn everything from Quantum ?
 		-- q(77622),	-- when you learn everything from Quantum ?
