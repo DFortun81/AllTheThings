@@ -697,7 +697,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
 						{
 							["itemID"] = 21293,		-- Tablet of Grace of Air Totem III
-							-- #if AFTER CATA
+							-- #if AFTER WRATH
 							["spellID"] = 0,
 							-- #else
 							["spellID"] = 25359,	-- Grace of Air Totem III
