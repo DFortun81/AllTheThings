@@ -2330,6 +2330,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 49.2, 70.6, WESTERN_PLAGUELANDS },
 					},
 					-- #endif
+					-- #if AFTER 10.1.7
+					["groups"] = {
+						i(9296),	-- Recipe: Gift of Arthas (Discord 30.11.2023)
+					},
+					-- #endif
 				}),
 				n(1841, {	-- Scarlet Executioner
 					-- #if AFTER CATA
