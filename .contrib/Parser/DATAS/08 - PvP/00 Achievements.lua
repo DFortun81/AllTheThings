@@ -394,6 +394,11 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["timeline"] = { "added 3.0.1" },
 		["races"] = HORDE_ONLY,
 	}),
+	un(REMOVED_FROM_GAME, ach(1161, {		-- High Five: 2200
+		un(REMOVED_FROM_GAME, ach(404)),		-- High Five: 2000
+		un(REMOVED_FROM_GAME, ach(407)),		-- High Five: 1750
+		un(REMOVED_FROM_GAME, ach(406)),		-- High Five: 1550
+	})),
 	ach(10561, {	-- Honorable Medallion
 		["timeline"] = { "added 7.0.3" },
 	}),
@@ -451,6 +456,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["timeline"] = { "added 3.0.1" },
 		["races"] = HORDE_ONLY,
 	}),
+	un(REMOVED_FROM_GAME, ach(409)),		-- Last Man Standing
 	ach(247, {	-- Make Love, Not Warcraft
 		["timeline"] = { "added 3.0.1" },
 	}),
@@ -478,11 +484,23 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["races"] = HORDE_ONLY,
 	}),
 	-- #endif
+	ach(10537, bubbleDownSelf({		-- Patron of War
+		["u"] = REMOVED_FROM_GAME,}, {
+			title(326, {	-- <Name>, Patron of War
+				["description"] = "Connect Twitch and Battle.net accounts and watch tournament streams",
+			}),
+	})),
 	ach(618, {	-- Putting Out the Light
 		["provider"] = { "n", 17468 },	-- Prophet Velen
 		["timeline"] = { "added 3.0.1" },
 		["maps"] = { THE_EXODAR },
 		["races"] = HORDE_ONLY,
+	}),
+	ach(14191, {							-- Servant of N'Zoth
+		["u"] = REMOVED_FROM_GAME,			-- REMOVED in 9.0.1
+		["g"] = {
+			un(REMOVED_FROM_GAME, title(414)),	-- <Name>, Servant of N'Zoth
+		},
 	}),
 	ach(615, {	-- Storming Stormwind
 		["providers"] = {
@@ -547,6 +565,10 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			})),
 		},
 	})),
+	un(REMOVED_FROM_GAME, ach(8392, {		-- Tournament Glory 2013
+		un(REMOVED_FROM_GAME, title(128)),		-- Vanquisher
+	})),
+	un(REMOVED_FROM_GAME, ach(8391)),		-- Tournament Participation 2013
 	ach(604, {	-- Wrath of the Alliance
 		["timeline"] = { "added 3.0.1" },
 		["races"] = ALLIANCE_ONLY,

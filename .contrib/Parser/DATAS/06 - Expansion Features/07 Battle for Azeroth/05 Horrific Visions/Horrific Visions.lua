@@ -26,6 +26,11 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				ach(14062, {	-- Horrific Vision of Stormwind
 					["maps"] = { 1470 },
 				}),
+				un(REMOVED_FROM_GAME, ach(14140, {	-- Mad World
+					un(REMOVED_FROM_GAME, title(419)),	-- %s, the Faceless One
+					un(REMOVED_FROM_GAME, ach(14141)),	-- Solo Nightmares - Stormwind
+					un(REMOVED_FROM_GAME, ach(14142)),	-- Solo Nightmares - Orgrimmar
+				})),
 				ach(14143, {	-- Reeking of Visions
 					["sym"] = {{"meta_achievement",
 						14065,	-- The Even More Horrific Vision of Orgrimmar

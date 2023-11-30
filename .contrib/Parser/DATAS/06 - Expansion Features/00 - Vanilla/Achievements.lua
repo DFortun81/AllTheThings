@@ -1,9 +1,8 @@
---------------------------------------------------
---    A C H I E V E M E N T S    M O D U L E    --
---------------------------------------------------
-
-root(ROOTS.Achievements, achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
-	achcat(ACHIEVEMENT_CATEGORY_MOUNTS_FOS, {
+-------------------------------------------------------------------
+--      E X P A N S I O N   F E A T U R E S    M O D U L E       --
+-------------------------------------------------------------------
+root(ROOTS.ExpansionFeatures, tier(CLASSIC_TIER, {
+	n(PROFESSIONS, {
 		ach(879, {	-- Old School Ride
 			["providers"] = {
 				{ "i", 13328 },	-- Black Ram

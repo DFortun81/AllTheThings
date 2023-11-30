@@ -65,6 +65,7 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 		["description"] = "Offered as a fan website gift around Christmas 2006, in Europe. (EU Only)",
 		["timeline"] = { ADDED_2_0_3 },
 	}),
+	un(REMOVED_FROM_GAME, ach(12454)),		-- Salute to Starcraft
 	i(90953, {	-- Spectral Cub (PET!)
 		["description"] = "Reward from the Battle.net World Championship in Shanghai 2012 (China Only)",
 		["timeline"] = { "added 5.0.4.16004" },
