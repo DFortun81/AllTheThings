@@ -14,6 +14,9 @@ root(ROOTS.Zones, {
 						}),
 					}
 				}),
+				ach(10586, {	-- Mass Obliteration
+					["u"] = REMOVED_FROM_GAME,
+				}),
 			}),
 		}),
 	}),

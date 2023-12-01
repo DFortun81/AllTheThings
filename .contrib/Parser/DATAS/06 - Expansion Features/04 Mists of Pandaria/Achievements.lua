@@ -3,6 +3,14 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(ACHIEVEMENTS, {
+		un(REMOVED_FROM_GAME, a(ach(8030))),	-- A Test of Valor (Alliance)
+		un(REMOVED_FROM_GAME, h(ach(8031))),	-- A Test of Valor (Horde)
+		un(REMOVED_FROM_GAME, h(ach(8307, {	-- Darkspear Revolutionary
+			un(REMOVED_FROM_GAME, h(title(228))),	-- Darkspear Revolutionary
+		}))),
+		un(REMOVED_FROM_GAME, a(ach(8306, {	-- Hordebreaker
+			un(REMOVED_FROM_GAME, a(title(230))),	-- the Hordebreaker
+		}))),
 		ach(6926, {	-- Tranquil Master
 			title(203),	-- the Tranquil Master
 			crit(19668, {	-- Sha of Doubt

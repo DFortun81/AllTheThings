@@ -5,6 +5,27 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	un(REMOVED_FROM_GAME, ach(9016, {	-- Breaker of the Black Harvest
 		un(REMOVED_FROM_GAME, title(256)),	-- of the Black Harvest
 	})),
+	un(REMOVED_FROM_GAME, ach(2358, {		-- Charger
+		["classes"] = { PALADIN },
+	})),
+	un(REMOVED_FROM_GAME, ach(16)),		-- Did Somebody Order a Knuckle Sandwich?
+	un(REMOVED_FROM_GAME, ach(2716)),	-- Dual Talent Specialization
+	un(REMOVED_FROM_GAME, ach(2357, {		-- Dreadsteed of Xoroth
+		["classes"] = { WARLOCK },
+	})),
+	un(REMOVED_FROM_GAME, ach(558)),	-- Greedy
+	un(REMOVED_FROM_GAME, ach(12544, {	-- Level 120 (Legacy)
+		un(REMOVED_FROM_GAME, ach(10)),		-- Level 50 (Legacy)
+		un(REMOVED_FROM_GAME, ach(11)),		-- Level 60 (Legacy)
+		un(REMOVED_FROM_GAME, ach(12)),		-- Level 70 (Legacy)
+		un(REMOVED_FROM_GAME, ach(13)),		-- Level 80 (Legacy)
+		un(REMOVED_FROM_GAME, ach(4826)),	-- Level 85 (Legacy)
+		un(REMOVED_FROM_GAME, ach(6193)),	-- Level 90 (Legacy)
+		un(REMOVED_FROM_GAME, ach(9060)),	-- Level 100 (Legacy)
+		un(REMOVED_FROM_GAME, ach(10671)),	-- Level 110 (Legacy)
+	})),
+	un(REMOVED_FROM_GAME, ach(705)),	-- Master of Arms
+	un(REMOVED_FROM_GAME, ach(559)),	-- Needy
 	un(REMOVED_FROM_GAME, ach(3259, {	-- Realm First! Celestial Defender
 		un(REMOVED_FROM_GAME, title(125)),	-- the Celestial Defender
 	})),
@@ -114,6 +135,16 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	un(REMOVED_FROM_GAME, ach(6867)),	-- Realm First! Zen Master Scribe
 	un(REMOVED_FROM_GAME, ach(6871)),	-- Realm First! Zen Master Skinner
 	un(REMOVED_FROM_GAME, ach(6872)),	-- Realm First! Zen Master Tailor
+	un(REMOVED_FROM_GAME, ach(2359, {		-- Swift Flight Form
+		["classes"] = { DRUID },
+	})),
+	un(REMOVED_FROM_GAME, ach(11296, {		-- The Ancient Keeper
+		["classes"] = { HUNTER },
+	})),
+	un(REMOVED_FROM_GAME, ach(11297, {		-- The Balance of Light and Shadow
+		["classes"] = { PRIEST },
+	})),
+	un(REMOVED_FROM_GAME, ach(892)),	-- The Right Stuff
 	n(ARMOR, {
 		ach(11761, {	-- Azeroth's Next Top Model
 			title(356),	-- Stylist

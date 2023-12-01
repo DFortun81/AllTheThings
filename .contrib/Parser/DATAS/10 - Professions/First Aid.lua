@@ -26,6 +26,7 @@ profession(FIRST_AID, {
 		recipe(27033),	-- Heavy Nethercloth Bandage
 	})),
 	applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
+		un(REMOVED_FROM_GAME, ach(135)),	-- Grand Master in First Aid
 		recipe(45545),	-- Frostweave Bandage
 		recipe(45546),	-- Heavy Frostweave Bandage
 	})),

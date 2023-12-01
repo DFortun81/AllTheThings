@@ -282,6 +282,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["_npcs"] = { 126208 },	-- Varga
 			}),
 		}),
+		un(REMOVED_FROM_GAME, ach(12071)),		-- Crucible's Promise
 		explorationAch(12069),	-- Explore Argus
 		petbattle(ach(12100, {	-- Family Fighter
 			-- Meta Achievements
@@ -1056,6 +1057,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 48107 },	-- The Sigil of Awakening
 			}),
 		}),
+		un(REMOVED_FROM_GAME, ach(12072)),		-- Now You're Cooking with Netherlight
 		ach(12083, {	-- Paragon of Argus
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
