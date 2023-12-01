@@ -614,7 +614,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 9,
 					["groups"] = {
 						objective(1, {	-- 0/8 Handful of Oats
-							["provider"] = { "i", 1528 },	-- Handful of Oats
+							["providers"] = {
+								{ "i", 1528 },	-- Handful of Oats
+								{ "o", 2724 },	-- Sack of Oats
+							},
 						}),
 						i(2165, {	-- Old Blanchy's Blanket
 							["timeline"] = { "removed 4.0.3" },

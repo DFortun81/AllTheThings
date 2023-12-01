@@ -5655,6 +5655,42 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if BEFORE TBC
+			n(TREASURES, {
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(205864, {	-- Charred Note
+					--["provider"] = { "o",  },	-- Charred Note -- CLASSICTODO
+					["questID"] = 75939,	-- Charred Note HQT / Might Also be 75940
+					["coord"] = { 33.0, 24.75, STORMWIND_CITY },
+					["maps"] = { DUSKWOOD },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(205897, {	-- Rune of Martyrdom
+					["provider"] = { "n", 205153 },	-- Ada Gelhardt
+					["questID"] = 75969,	-- Ada Gelhardt HQT
+					["sourceQuest"] = 75939,	-- Charred Note HQT / Might Also be 75940
+					["coord"] = { 4.3, 28.25, DUSKWOOD },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						recipe(410015),	-- Engrave Chest - Seal of Martyrdom
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(205683, {	-- Rune of Rebuke
+					["provider"] = { "n", 203475 },	-- Liv Bradford
+					["questID"] = 75300,	-- Stuart Credit HQT
+					["coord"] = { 22.6, 64.7, STORMWIND_CITY },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						recipe(425621),	-- Engrave Pants - Rebuke
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(69334, {	-- Adherent Hanjun <Tushui Quartermaster>
 					["coord"] = { 68.0, 17.0, STORMWIND_CITY },

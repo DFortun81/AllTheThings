@@ -1300,7 +1300,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
 						objective(1, {	-- 0/8 Bundle of Wood
-							["provider"] = { "i", 13872 },	-- Bundle of Wood
+							["providers"] = {
+								{ "i",  13872 },	-- Bundle of Wood
+								{ "o", 176793 },	-- Bundle of Wood
+							},
 						}),
 					},
 				}),
@@ -2230,6 +2233,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+			}),
+			-- #endif
+			-- #if BEFORE TBC
+			n(TREASURES, {
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(205685, {	-- Rune of Aegis
+					["provider"] = { "n", 204989 },	-- Wounded Adventurer
+					["coord"] = { 62.0, 47.32, ELWYNN_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						recipe(425619),	-- Engrave Chest - Aegis
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206264, {	-- Rune of Inspiration
+					["provider"] = { "n", 204937 },	-- Adventurer's Spirit
+					["coord"] = { 52.2, 84.65, ELWYNN_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						recipe(410011),	-- Engrave Pants - Inspiration Exemplar
+					},
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {
