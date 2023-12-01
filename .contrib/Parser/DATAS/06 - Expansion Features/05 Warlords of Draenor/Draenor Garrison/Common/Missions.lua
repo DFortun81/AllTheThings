@@ -422,11 +422,13 @@ root(ROOTS.ExpansionFeatures,
 						i(118427),	-- Autographed Hearthstone Card (TOY!)
 						i(114128),	-- Balanced Weapon Enhancement
 						i(114806),	-- Blackrock Armor Set
+						i(114081),	-- Blackrock Weaponry
 						i(114745),	-- Braced Armor Enhancement
 						i(128316),	-- Bulging Barrel of Oil
 						i(123858),	-- Follower Retraining Scroll Case
 						i(118354),	-- Follower Retraining Certificate
 						i(114808),	-- Fortified Armor Enhancement
+						i(128314),	-- Frozen Arms of a Hero
 						i(122583),	-- Grease Monkey Guide
 						i(114746),	-- Goredrenched Armor Set
 						i(114622),	-- Goredrenched Weaponry

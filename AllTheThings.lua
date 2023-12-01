@@ -8804,6 +8804,13 @@ local C_PetJournal_GetPetInfoByPetID = C_PetJournal.GetPetInfoByPetID;
 local C_PetJournal_GetPetInfoBySpeciesID = C_PetJournal.GetPetInfoBySpeciesID;
 local C_PetJournal_GetPetInfoByIndex = C_PetJournal.GetPetInfoByIndex;
 
+local PerCharacterSpecies = {
+	[281] = 1,	-- Guild Page (A)
+	[280] = 1,	-- Guild Page (H)
+	[282] = 1,	-- Guild Herald (A)
+	[283] = 1,	-- Guild Herald (H)
+}
+
 local cache = app.CreateCache("speciesID");
 local function CacheInfo(t, field)
 	local _t, id = cache.GetCached(t);
@@ -8861,6 +8868,9 @@ local CollectedSpeciesHelper = setmetatable({}, {
 			app.PrintDebug("SpeciesID " .. key .. " was not found.");
 		elseif num > 0 then
 			t[key] = 1;
+			if PerCharacterSpecies[key] then
+				ATTAccountWideData.BattlePets[key] = 1
+			end
 			return 1;
 		end
 	end
@@ -8886,6 +8896,7 @@ app.RefreshFunctions.RefreshCollectedBattlePets = function()
 		if petID then
 			PetIDSpeciesIDHelper[petID] = speciesID;
 		end
+		petID = CollectedSpeciesHelper[speciesID]
 	end
 	-- app.PrintDebug("RCBP-Done")
 end
@@ -8905,6 +8916,10 @@ local fields = {
 		end
 		local altSpeciesID = t.altSpeciesID;
 		if altSpeciesID and CollectedSpeciesHelper[altSpeciesID]then
+			return 2;
+		end
+		-- certain Battle Pets are per Character, so we can implicitly check for them as Account-Wide since Battle Pets have no toggle for that
+		if ATTAccountWideData.BattlePets[t.speciesID] then
 			return 2;
 		end
 	end,

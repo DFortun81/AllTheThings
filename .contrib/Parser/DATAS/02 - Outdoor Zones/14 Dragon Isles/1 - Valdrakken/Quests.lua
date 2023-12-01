@@ -312,6 +312,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 196499 },	-- Therazal
 				["coord"] = { 49.9, 56, VALDRAKKEN },
 				["isBreadcrumb"] = true,	-- unconfirmed
+				["g"] = {
+					i(201793),	-- Resplendent Gemstone
+				},
 			}),
 		}),
 		n(QUESTS, sharedData({
