@@ -11858,6 +11858,9 @@ local mountFields = {
 	["name"] = function(t)
 		return cache.GetCachedField(t, "name", CacheInfo);
 	end,
+	["mountJournalID"] = function(t)
+		return cache.GetCachedField(t, "mountJournalID", CacheInfo);
+	end,
 	["costCollectibles"] = function(t)
 		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 	end,
@@ -14781,6 +14784,31 @@ app.TrySearchAHForGroup = function(group)
 		return true;
 	end
 end
+do
+local IsTracking, StartTracking, StopTracking
+	= C_ContentTracking.IsTracking, C_ContentTracking.StartTracking, C_ContentTracking.StopTracking
+app.AddContentTracking = function(group)
+	-- if this group is currently tracked
+	local s, mountID, achievementID = group.s, group.mountJournalID, group.achievementID
+	local type = s and 0
+				or mountID and 1
+				or achievementID and 2
+				or nil
+	if type then
+		local id = type == 0 and s
+				or type == 1 and mountID
+				or type == 2 and achievementID
+		if IsTracking(type,id) then
+			-- app.PrintDebug("StopTracking",type,id)
+			StopTracking(type, id, Enum.ContentTrackingStopType.Manual)
+		else
+			-- app.PrintDebug("StartTracking",type,id)
+			StartTracking(type, id)
+		end
+		return true
+	end
+	end
+end
 local RowOnEnter, RowOnLeave;
 local function RowOnClick(self, button)
 	local reference = self.ref;
@@ -14958,6 +14986,13 @@ local function RowOnClick(self, button)
 						app.RefreshCollections();
 					end
 					return true;
+				end
+			end
+
+			-- Alt Click on a data row attempts to (un)track the group/nested groups, not from window header unless a popout window
+			if IsAltKeyDown() and (self.index > 0 or window.ExpireTime) then
+				if app.AddContentTracking(reference) then
+					return true
 				end
 			end
 
@@ -21776,6 +21811,7 @@ app.Startup = function()
 	if not accountWideData.Achievements then accountWideData.Achievements = {}; end
 	if not accountWideData.Artifacts then accountWideData.Artifacts = {}; end
 	if not accountWideData.AzeriteEssenceRanks then accountWideData.AzeriteEssenceRanks = {}; end
+	if not accountWideData.BattlePets then accountWideData.BattlePets = {}; end
 	if not accountWideData.Buildings then accountWideData.Buildings = {}; end
 	if not accountWideData.CommonItems then accountWideData.CommonItems = {}; end
 	if not accountWideData.Factions then accountWideData.Factions = {}; end
