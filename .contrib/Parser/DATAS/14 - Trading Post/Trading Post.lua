@@ -1632,12 +1632,6 @@ root(ROOTS.NeverImplemented, {
 					i(210067),	-- Sky-Captain's Formal Coat
 					i(210065),	-- Sky-Captain's Formal Hat
 					i(210068),	-- Sky-Captain's Formal Pants
-					i(210079),	-- Sky-Captain's Masquerade Attire
-					i(210073),	-- Sky-Captain's Masquerade Boots
-					i(210076),	-- Sky-Captain's Masquerade Cape
-					i(210074),	-- Sky-Captain's Masquerade Coat
-					i(210072),	-- Sky-Captain's Masquerade Hat
-					i(210075),	-- Sky-Captain's Masquerade Pants
 
 				}),
 				n(ARMOR, {
