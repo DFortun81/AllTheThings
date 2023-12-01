@@ -889,6 +889,12 @@ root(ROOTS.NeverImplemented, {
 			i(150584),	-- Pike of Feral Rage
 			i(150613),	-- Survivalist's Hunting Spear
 			i(146304),	-- Fel Titan Hammer
+			i(147374, {	-- Wooden Toy Shield [Alliance]
+				["timeline"] = { "created 7.3.0.24484" },
+			}),
+			i(147377, {	-- Wooden Toy Shield [Horde]
+				["timeline"] = { "created 7.3.0.24484" },
+			}),
 		}),
 		tier(BFA_TIER, {
 			n(SEASON_DREAD, {
@@ -943,6 +949,9 @@ root(ROOTS.NeverImplemented, {
 					i(177137),	-- 7th Legionnaire's Claymore
 					i(177121),	-- Honorbound Decapitator
 				}),
+			}),
+			i(167998, {	-- Dark Iron Tankard
+				["timeline"] = { "created 8.1.5.29701" },
 			}),
 			i(159538),	-- Coldscale Cudgel
 			i(159498),	-- Coldscale Pistol

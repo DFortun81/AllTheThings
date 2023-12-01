@@ -9,6 +9,7 @@ root(ROOTS.NeverImplemented, {
 	filter(BATTLE_PETS),			-- completed up to 10.1.5
 	n(CONDUITS),
 	filter(CONSUMABLES),
+	filter(COSMETIC),
 	n(FACTIONS),
 	n(FLIGHT_PATHS),				-- completed up to 10.1.0
 	n(FOLLOWERS, {					-- completed up to 10.1.5
@@ -49,6 +50,7 @@ root(ROOTS.NeverImplemented, {
 	n(QUESTS),
 	filter(RECIPES),
 	n(SETS),
+	n(SOURCELESS),	-- TODO: move these things into correct NYI.lua files
 	-- #if AFTER 3.0.1
 	filter(TITLES),
 	-- #endif

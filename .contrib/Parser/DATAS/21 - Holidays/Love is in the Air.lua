@@ -2420,17 +2420,3 @@ end
 root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	q(74957),	-- daily tracker for Bad Luck Protection on Love Rocket drop
 }));
-
--- #if AFTER 3.3.0.10772
-root(ROOTS.NeverImplemented, n(LOVE_IS_IN_THE_AIR_HEADER, {
-	q(11558, {	-- Dangerous Love (H)
-		["timeline"] = { "created 3.3.0.10772" },
-	}),
-	i(147374, {	-- Wooden Toy Shield [Alliance]
-		["timeline"] = { "created 7.3.0.24484" },
-	}),
-	i(147377, {	-- Wooden Toy Shield [Horde]
-		["timeline"] = { "created 7.3.0.24484" },
-	}),
-}));
--- #endif

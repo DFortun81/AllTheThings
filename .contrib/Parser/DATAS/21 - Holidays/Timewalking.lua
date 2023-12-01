@@ -5559,21 +5559,23 @@ root(ROOTS.HiddenQuestTriggers, tier(LEGION_TIER, {
 	q(65176),	-- learning Ensemble: Ravencrest's Battleplate (188209)
 }));
 root(ROOTS.NeverImplemented, {
-	-- Possible WOTLK TW Items (from killing Yogg Quest) or Zone Drop
-	i(156461),	-- Adamant Handguards
-	i(156255),	-- Belt of the Sleeper
-	i(156470),	-- Bloodcrush Cudgel
-	i(156467),	-- Boots of Unsettled Prey
-	i(156468),	-- Cloak of the Dormant Blaze
-	i(156257),	-- Daschal's Bite
-	i(156462),	-- Drape of the Spellweaver
-	i(156463),	-- Golemheart Longbow
-	i(156252),	-- Greaves of the Stonewarder
-	i(156256),	-- Grips of Chaos
-	i(156465),	-- Iceshear Mantle
-	i(156254),	-- Leggings of the Tortured Earth
-	i(156460),	-- Mimiron's Repeater
-	i(156469),	-- Pillar of Fortitude
+	n(SOURCELESS, {
+		-- Possible WOTLK TW Items (from killing Yogg Quest) or Zone Drop
+		i(156461),	-- Adamant Handguards
+		i(156255),	-- Belt of the Sleeper
+		i(156470),	-- Bloodcrush Cudgel
+		i(156467),	-- Boots of Unsettled Prey
+		i(156468),	-- Cloak of the Dormant Blaze
+		i(156257),	-- Daschal's Bite
+		i(156462),	-- Drape of the Spellweaver
+		i(156463),	-- Golemheart Longbow
+		i(156252),	-- Greaves of the Stonewarder
+		i(156256),	-- Grips of Chaos
+		i(156465),	-- Iceshear Mantle
+		i(156254),	-- Leggings of the Tortured Earth
+		i(156460),	-- Mimiron's Repeater
+		i(156469),	-- Pillar of Fortitude
+	}),
 });
 --[[
 -- Post Processors

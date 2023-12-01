@@ -322,6 +322,7 @@ local QUANTUM_GROUP = sharedData({
 		filter(MAIL, {
 			ig(114385),	-- Element-Binder Gauntlets			(NYI)
 			ig(114261),	-- Leafscale Gauntlets				(NYI)
+			ig(4012),	-- Sterling Chain Gloves			(NYI)
 
 			ig(134733),	-- Frigidlink Gauntlets				(Removed)
 			ig(134679),	-- Greenhorn's Gauntlets			(Removed)

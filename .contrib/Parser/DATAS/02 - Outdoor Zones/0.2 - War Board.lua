@@ -666,7 +666,3 @@ root(ROOTS.Zones, {
 		},
 	}),
 });
-root(ROOTS.NeverImplemented, {
-	n(QUESTS, {
-	}),
-});

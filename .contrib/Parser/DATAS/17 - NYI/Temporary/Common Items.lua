@@ -359,7 +359,6 @@ root(ROOTS.NeverImplemented, {
 				}),
 				filter(DAGGERS, {
 					i(49605),	-- Battlescarred Dagger
-					i(49395),	-- Rigging Slicer
 				}),
 				filter(FIST_WEAPONS, {
 					i(56090),	-- Monster, Controller

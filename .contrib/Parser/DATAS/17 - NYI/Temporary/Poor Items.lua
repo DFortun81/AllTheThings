@@ -157,7 +157,6 @@ root(ROOTS.NeverImplemented, {
 					}),
 					n(HANDS, {
 						i(3051),	-- Deprecated Winter Mail Gloves
-						i(4012),	-- Sterling Chain Gloves
 					}),
 					n(WAIST, {
 						i(1969),	-- Deprecated Stormwind Guard Belt

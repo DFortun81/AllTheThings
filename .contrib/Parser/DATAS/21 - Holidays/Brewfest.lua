@@ -2600,14 +2600,6 @@ root(ROOTS.HiddenQuestTriggers, {
 });
 -- #endif
 
--- #if AFTER 8.1.5.29701
-root(ROOTS.NeverImplemented, n(BREWFEST_HEADER, {
-	i(167998, {	-- Dark Iron Tankard
-		["timeline"] = { "created 8.1.5.29701" },
-	}),
-}));
--- #endif
-
 --[[ TODO: Transfer these achievement criteria to the item on the actual vendor
 -- Alliance
 {	-- Barleybrew Clear

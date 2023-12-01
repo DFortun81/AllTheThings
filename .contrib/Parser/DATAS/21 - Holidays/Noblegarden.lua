@@ -597,11 +597,3 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	}),
 	-- #endif
 })));
-
-root(ROOTS.NeverImplemented, {
-	n(NOBLEGARDEN_HEADER, {
-		i(6834, {	-- Black Tuxedo
-			["timeline"] = { "created 1.12.1.11159" },
-		}),
-	}),
-});

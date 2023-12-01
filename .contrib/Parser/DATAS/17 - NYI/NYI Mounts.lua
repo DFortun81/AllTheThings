@@ -123,6 +123,17 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			mount(28828, {	-- Nether Drake (MOUNT!)
 				["modelID"] = 16314,
 			}),
+			-- #if ANYCLASSIC
+			i(33183, {	-- Old Magic Broom (MOUNT!)
+				["timeline"] = { "deleted 4.2.2" },
+			}),
+			i(33182, {	-- Swift Flying Broom (MOUNT!)
+				["timeline"] = { "deleted 4.2.2" },
+			}),
+			i(33184, {	-- Swift Magic Broom (MOUNT!)
+				["timeline"] = { "deleted 4.2.2" },
+			}),
+			-- #endif
 		})),
 
 		-- 2.0.5
@@ -160,6 +171,15 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 				["modelID"] = 6477,
 			}),
 		})),
+
+		-- #if ANYCLASSIC
+		-- 2.2.2
+		tier(TBC_TIER, 2.2, bubbleDownSelf({ ["timeline"] = { CREATED_2_2_2 } }, {
+			i(33176, {	-- Flying Broom (MOUNT!)
+				["timeline"] = { "deleted 4.2.2" },
+			}),
+		})),
+		-- #endif
 
 		-- 2.2.3
 		tier(TBC_TIER, 2.3, bubbleDownSelf({ ["timeline"] = { CREATED_2_2_3 } }, {

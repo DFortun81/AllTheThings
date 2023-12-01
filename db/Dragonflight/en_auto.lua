@@ -402,6 +402,7 @@ local keys = {
 [11551]="Agamath, the First Gate",
 [11552]="Rohendor, the Second Gate",
 [11553]="Archonisus, the Final Gate",
+[11558]="Dangerous Love",
 [11577]="WoW Collector's Edition: - DEM - E - FLAG",
 [11588]="REUSE",
 [11589]="REUSE",

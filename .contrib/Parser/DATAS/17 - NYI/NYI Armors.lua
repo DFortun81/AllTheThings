@@ -60,6 +60,15 @@ root(ROOTS.NeverImplemented, {
 			filter(FINGER_F, {
 				i(13812),	-- Ring of the Dawn
 				i(19065),	-- Emerald Circle
+				i(33959, {	-- Ring of Ghoulish Delight
+					["timeline"] = { "created 2.3.0.7521" },
+				}),
+				i(33958, {	-- The Horseman's Signet Ring
+					["timeline"] = { "created 2.3.0.7521" },
+				}),
+				i(33957, {	-- Witches Band
+					["timeline"] = { "created 2.3.0.7521" },
+				}),
 				--
 				i(4988),	-- Burning Obsidian Band
 				i(17000),	-- Band of the Wraith
