@@ -826,9 +826,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(210145, {	-- [PH] YellowBlack-Furred Bakar (MOUNT!)
 				-- ["modelID"] = ,
 			}),
-			i(210919, {	-- Crimson Glimmerfur (MOUNT!) [Trading Post?]
-				["modelID"] = 115371,
-			}),
 			i(211075, {	-- Deathbringer's Shadowcycle (MOUNT!) [Trading Post?]
 				["modelID"] = 114788,
 			}),

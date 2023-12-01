@@ -1285,9 +1285,6 @@ root(ROOTS.NeverImplemented, {
 			-- 10.0.5
 			tier(DF_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 				-- Only SpeciesID
-				pet(3255, {	-- Buttercup (PET!)
-					["modelID"] = 105497,
-				}),
 				pet(3254, {	-- Watcher of the Huntress (PET!)
 					["modelID"] = 105429,
 				}),
@@ -1460,9 +1457,6 @@ root(ROOTS.NeverImplemented, {
 				-- With SpeciesID Attached
 				i(210409, {	-- Aura (PET!) [Trading Post?]
 					["modelID"] = 114495,
-				}),
-				i(210870, {	-- Mitzy (PET!) [Winter Veil?]
-					["modelID"] = 115261,
 				}),
 			})),
 		}),

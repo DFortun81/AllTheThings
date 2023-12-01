@@ -71,6 +71,11 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		}),
 		q(76108, {	-- Report to the Trading Post -- November 2023
 			["timeline"] = { ADDED_10_1_7 },
+			["u"] = REMOVED_FROM_GAME,
+			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+		}),
+		q(76112, {	-- Report to the Trading Post -- Dec 2023
+			["timeline"] = { ADDED_10_2_0 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 	}),
@@ -615,14 +620,14 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208039, { -- Ember Court Soiree Gloves
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
-				i(190576, { -- Ensemble Vagabonds Azure Threads
+				i(190576, { -- Ensemble: Vagabonds Azure Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
 						i(190541), -- Vagabond's Azure Cape
 						i(190572), -- Vagabond's Azure Hood
 					},
 				}),
-				i(190851, { -- Ensemble Vagabonds Crimson Threads
+				i(190851, { -- Ensemble: Vagabonds Crimson Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
 						i(190827), -- Vagabonds Crimson Cape
@@ -636,7 +641,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(190542), -- Wanderer's Azure Scarf
 					},
 				}),
-				i(190850, { -- Ensemble Wanderers Crimson Trappings
+				i(190850, { -- Ensemble: Wanderers Crimson Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
 						i(190825), -- Wanderer's Crimson Cloak
@@ -1144,15 +1149,15 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208039, { -- Ember Court Soiree Gloves
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
-				i(210883, {	-- Ensemble Scarlet Zealots Trappings
+				i(210883, {	-- Ensemble: Scarlet Zealots Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 550}},
 					["groups"] = {
-						i(190427),	-- Scarlet Zealots Cloak
 						i(190444),	-- Scarlet Zealots Cassock
+						i(190427),	-- Scarlet Zealots Cloak
 						i(207029),	-- Scarlet Zealots Heater Shield
 					},
 				}),
-				i(190851, { -- Ensemble Vagabonds Crimson Threads
+				i(190851, { -- Ensemble: Vagabonds Crimson Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
 						i(190827), -- Vagabonds Crimson Cape
@@ -1166,7 +1171,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(190884), -- Vagabond's Snowy Hood
 					},
 				}),
-				i(190850, { -- Ensemble Wanderers Crimson Trappings
+				i(190850, { -- Ensemble: Wanderers Crimson Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
 						i(190825), -- Wanderer's Crimson Cloak
@@ -1213,7 +1218,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["g"] = {
 						i(208723),	-- Hornstrider Hunter's Harpooner
 						i(208722),	-- Hornstrider Hunter's Pride
-						i(208721),	-- Hornstrider Hunter's Serrator					
+						i(208721),	-- Hornstrider Hunter's Serrator
 					},
 				}),
 				i(190685, {	-- Lost Crusaders Azure Battleaxe
@@ -1234,7 +1239,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["g"] = {
 						i(208716),	-- Hatchet of Krag'wa's Executor
 						i(208715),	-- Safeguard of Krag'wa's Executor
-						i(208717),	-- Talons of Krag'wa's Executor				
+						i(208717),	-- Talons of Krag'wa's Executor
 					},
 				}),
 				i(210844, {	-- Traders Crimson Sarong
@@ -1298,9 +1303,6 @@ root(ROOTS.NeverImplemented, {
 		filter(BATTLE_PETS, {
 			i(190173, {	-- Lil' Maka'jin (PET!)
 				["cost"] = {{"c", TRADERS_TENDER, 750}},
-			}),
-			i(68385, {	-- Lil' Ragnaros (PET!)
-				["cost"] = {{"c", TRADERS_TENDER, 650}},
 			}),
 			pet(3254, {	-- Watcher of the Huntress (PET!)
 				["cost"] = {{"c", TRADERS_TENDER, 750}},
@@ -1665,9 +1667,6 @@ root(ROOTS.NeverImplemented, {
 
 					------ Armor ------
 					i(211069),	-- Azure Treads of the Kalu'ak
-					i(211268),	-- Blademaster's Thundering Greatsword
-					i(211267),	-- Classic Snowy Tabard
-					i(211130),	-- Errant Crusader's Helm
 					i(211002),	-- Golden Mobile Timepiece
 					i(211066),	-- Gossamer Desert Gown
 					i(211071),	-- Lively Treads of the Kalu'ak
@@ -1678,7 +1677,6 @@ root(ROOTS.NeverImplemented, {
 					i(211129),	-- Sand-Swept Soiree Gloves
 					i(211001),	-- Sapphire Faced Mobile Timepiece
 					i(211068),	-- Sepia Treads of the Kalu'ak
-					i(211258),	-- Wildhammer Scout's Headgear
 					i(211137),	-- Witch Doctor's Fetish Frame
 					i(211295),	-- Wrathful Crusader's Helm
 				}),
@@ -1702,10 +1700,10 @@ root(ROOTS.NeverImplemented, {
 			})),
 		}),
 		filter(MOUNTS, {
-			i(190767),	-- Armored Golden Pterrordax (MOUNT!) (Unknown 2023)
-			mount(369480),	-- Cerulean Marsh Hopper (MOUNT!) (Unknown 2023)
-			i(190539),	-- Coral-Stalker Waveray (MOUNT!) (Unknown 2023)
-			i(137615),	-- Molten Flarecore (MOUNT!) (Unknown 2023)
+			i(190767),	-- Armored Golden Pterrordax (MOUNT!)
+			mount(369480),	-- Cerulean Marsh Hopper (MOUNT!)
+			i(190539),	-- Coral-Stalker Waveray (MOUNT!)
+			i(137615),	-- Molten Flarecore (MOUNT!)
 		}),
 	})),
 });

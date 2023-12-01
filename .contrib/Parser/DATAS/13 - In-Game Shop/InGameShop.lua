@@ -449,6 +449,14 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			i(208408),	-- High Scholar's Sash
 			i(208409),	-- High Scholar's Slippers
 		})),
+		i(210079, -- Sky-Captain's Masquerade Attire
+			bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52301", "removed 10.2.0.99999" } }, {	-- Removed Jan 1st, 2024
+			i(210073),	-- Sky-Captain's Masquerade Boots
+			i(210076),	-- Sky-Captain's Masquerade Cape
+			i(210074),	-- Sky-Captain's Masquerade Coat
+			i(210072),	-- Sky-Captain's Masquerade Hat
+			i(210075),	-- Sky-Captain's Masquerade Pants
+		})),
 	}),
 	-- #endif
 	-- #if AFTER 8.1.5.29737
