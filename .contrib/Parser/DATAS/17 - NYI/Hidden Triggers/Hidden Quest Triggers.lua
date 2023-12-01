@@ -2312,7 +2312,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	--      DF      --
 	------------------
 	tier(DF_TIER, {
-
 		-- New Heritage questline start HQTs
 		q(75246),	-- Human Heritage (spellID 406118)
 		q(75247),	-- Orc Heritage (spellID 406119)
@@ -2324,10 +2323,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(75253),	-- Dwarf Heritage (spellID 406128)
 		q(76457),	-- Undead Heritage (spellID 414546)
 		q(76458),	-- Night Elf Heritage (spellID 414550)
-
 		-- Timewalking - Master of Timeways Triggers
-		q(78204),	-- First Week Trigger
-
+		q(78204),	-- First Week Trigger (spellID 423861)
 		-- PVP
 		q(79332, {["repeatable"]=true}),	-- Triggers after willing a Brawl: Battleground Blitz (possibly only when theres an elistment bonus?)
 	}),

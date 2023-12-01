@@ -126,9 +126,11 @@ root(ROOTS.Factions, {
 			ach(5201, {	-- Profit Sharing
 				i(65363, {	-- Guild Herald [A] (PET!) - Revered - minipet bound to Character
 					["races"] = ALLIANCE_ONLY,
+					["minReputation"] = { 1168, REVERED },
 				}),
 				i(65364, {	-- Guild Herald [H] (PET!) - Revered - minipet bound to Character
 					["races"] = HORDE_ONLY,
+					["minReputation"] = { 1168, REVERED },
 				}),
 			}),
 			ach(7448, {	-- Scenario Roundup (A)
