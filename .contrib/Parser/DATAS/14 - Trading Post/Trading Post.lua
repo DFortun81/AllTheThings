@@ -929,7 +929,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, "removed 10.2.0.52188"} }, {
+		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, "removed 10.2.0.52301"} }, {
 			n(MONTHLY_REWARD, {
 				i(208943, {	-- Arsenal: Cosmic Weapons Cache
 					i(208939),	-- Gorridar, Darkblade of the Sunderer
@@ -1076,7 +1076,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52188" } }, {
+		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52301" } }, {
 			n(MONTHLY_REWARD, {
 				pet(3255),	-- Buttercup (PET!)
 			}),
@@ -1096,6 +1096,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			filter(COSMETIC, {
 				i(211257, {	-- Arsenal Stormriders Stormhammers
 					["cost"] = {{"c", TRADERS_TENDER, 400}},
+					["classes"] = { DEATHKNIGHT, DRUID, EVOKER, MONK, ROGUE, PRIEST, PALADIN, SHAMAN, WARRIOR, ROGUE },
 					["g"] = {
 						i(211255),	-- Regal Stormhammer
 						i(211256),	-- Thundering Stormhammer
@@ -1140,7 +1141,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(211070, {	-- Crimson Treads of the Kaluak
 					["cost"] = {{"c", TRADERS_TENDER, 50}},
 				}),
-				-- chilled touch
 				i(208039, { -- Ember Court Soiree Gloves
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
@@ -1216,7 +1216,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(208721),	-- Hornstrider Hunter's Serrator					
 					},
 				}),
-				-- jeweled
 				i(190685, {	-- Lost Crusaders Azure Battleaxe
 					["cost"] = {{"c", TRADERS_TENDER, 200}},
 				}),
