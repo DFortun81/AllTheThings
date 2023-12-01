@@ -1295,10 +1295,8 @@ root(ROOTS.Unsorted, {
 				-- All of these are for Dawn of the Infinite Quantum Items
 				q(77595),	--
 				q(77596),	--
-				q(77597),	--
 				q(77598),	--
 				q(77599),	--
-				q(77600),	--
 				q(77601),	--
 				q(77602),	--
 				q(77603),	--
@@ -1307,7 +1305,6 @@ root(ROOTS.Unsorted, {
 				q(77606),	--
 				q(77607),	--
 				q(77608),	--
-				q(77609),	--
 				q(77610),	--
 				q(77611),	--
 				q(77622),	--

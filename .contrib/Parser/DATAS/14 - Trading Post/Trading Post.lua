@@ -1299,7 +1299,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	})),
 });
 root(ROOTS.NeverImplemented, {
-	tier(DF_TIER, bubbleDown({ ["timeline"] = { CREATED_10_0_5 }, }, {
+	n(TRADING_POST_NYI, bubbleDown({ ["timeline"] = { CREATED_10_0_5 }, }, {
 		filter(BATTLE_PETS, {
 			i(190173, {	-- Lil' Maka'jin (PET!)
 				["cost"] = {{"c", TRADERS_TENDER, 750}},

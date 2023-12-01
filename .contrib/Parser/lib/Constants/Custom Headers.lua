@@ -63,6 +63,9 @@ LEVEL_SIXTY_TRIAL = -160;
 AVAILABLE = -1204;
 UNAVAILABLE = -1205;
 EXPANSION_PRELAUNCH = -520;
+
+-- NYI
+TRADING_POST_NYI = -11111;
 --------------------------
 --     T H E  E N D     --
 --------------------------

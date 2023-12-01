@@ -53,6 +53,7 @@ root(ROOTS.NeverImplemented, {
 	filter(TITLES),
 	-- #endif
 	filter(TOYS),					-- completed up to 10.1.5
+	n(TRADING_POST_NYI),
 	n(WEAPONS),
 });
 root(ROOTS.HiddenAchievementTriggers, {

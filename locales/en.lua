@@ -1074,6 +1074,9 @@ local L = {
 		[-10080] = "Interface\\Icons\\trade_alchemy_potiond2",						-- Horrific Visions
 		[-10081] = "Interface\\Icons\\spell_shadow_shadowmend",						-- Corrupted Area (Vision Scenario)
 		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
+
+	-- NYI
+		[-11111] = app.asset("Category_TradingPost"),						-- Trading Post NYI
 	};
 	["HEADER_NAMES"] = {
 	-- Class Trial
@@ -1285,6 +1288,9 @@ local L = {
 		[-10080] = SPLASH_BATTLEFORAZEROTH_8_3_0_FEATURE1_TITLE,				-- Horrific Visions
 		[-10081] = "Corrupted Area",
 		[-10082] = "Lost Area",
+
+	-- NYI
+		[-11111] = "TradingPost",												-- Trading Post NYI
 	};
 
 	-- Deprecated! (move these eventually)
