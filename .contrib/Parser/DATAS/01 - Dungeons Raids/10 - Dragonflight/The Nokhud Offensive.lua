@@ -48,6 +48,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					["provider"] = { "n", 193985 },	-- Initiate Zorig
 					["coord"] = { 31.4, 71.0, OHNAHRAN_PLAINS },	-- Follows you
 					["g"] = {
+						i(200100),	-- Batubar the Relentless (QI!)
+						i(200115),	-- Sarantuya the Ever-True (QI!)
 						i(197891),	-- Embroidered Broadhoof Cowl
 						i(197889),	-- Geyserwalker Visage
 						i(197897),	-- Keratin-Reinforced Coif

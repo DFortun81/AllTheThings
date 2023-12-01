@@ -917,13 +917,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 191924 },	-- Hunter Narman
 					["coord"] = { 63.6, 40.5, OHNAHRAN_PLAINS },
-					["cost"] = { { "i", 199918, 1 }, },	-- 1x Honey Plum Tart
+					["g"] = {
+						i(201044),	-- Cirrus Flowers (QI!)
+						i(199918),	-- Honey Plum Tart (QI!)
+					},
 				}),
 				q(70730, {	-- Shikaar Giver
 					["sourceQuests"] = { 65806 },	-- Maruukai
 					["provider"] = { "n", 190192 },	-- Windsage Dawa
 					["coord"] = { 62.8, 35.4, OHNAHRAN_PLAINS },
 					["cost"] = { { "i", 199919, 1 }, },	-- 1x Yak Milk Pudding
+					["g"] = {
+						i(200258),	-- Arbhog's Horns (QI!)
+						i(199919),	-- Yak Milk Pudding (QI!)
+					},
 				}),
 				q(70721, {	-- After My Ohn Heart
 					["sourceQuests"] = {

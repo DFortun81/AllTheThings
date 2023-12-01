@@ -1692,7 +1692,7 @@ i(209951, 423891);	-- Lunar Dreamstag
 i(210946, 427546);	-- Mammyth
 i(210057, 424482);	-- Morning Flourish Dreamsaber
 i(209950, 423877);	-- Rekindled Dreamstag
-i(0, 424009);		-- Runebound Firelord
+i(210008, 424009);	-- Runebound Firelord
 i(210969, 427724);	-- Salatrancer
 i(210060, 424474);	-- Shadow Dusk Dreamsaber
 i(210775, 427043);	-- Snowfluff Dreamtalon

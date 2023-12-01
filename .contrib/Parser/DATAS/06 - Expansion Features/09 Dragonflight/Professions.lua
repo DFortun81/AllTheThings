@@ -288,6 +288,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 70650 },	-- In Tyr's Footsteps: The Waking Shores
 					["provider"] = { "o", 380918 },	-- Broken Ornamented Statue
 					["coord"] = { 63.9, 41.5, THE_WAKING_SHORES },
+					["g"] = {
+						i(198983),	-- Broken Part: Arm (QI!)
+						i(198982),	-- Broken Part: Head (QI!)
+						i(198984),	-- Broken Part: Shattered Orb (QI!)
+					},
 				}),
 				q(70621, {	-- Third Challenge of Tyr: Persistence Embodied
 					["sourceQuests"] = { 70509 },	-- Third Challenge of Tyr: Persistence
@@ -492,7 +497,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					{ "i", 200938, 1 },	-- 1x Empty Soul Cage
 					{ "i", 199414, 1 },	-- 1x Zapthrottle Soul Inhaler
 				},
-				["coords"] = { 
+				["coords"] = {
 					{ 49.8, 32.8, THE_WAKING_SHORES },
 					{ 46.8, 32.8, THE_WAKING_SHORES },
 					{ 77.8, 38.8, THE_AZURE_SPAN },

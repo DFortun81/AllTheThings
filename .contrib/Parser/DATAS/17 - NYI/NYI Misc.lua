@@ -774,44 +774,288 @@ root(ROOTS.NeverImplemented, {
 				i(193361),	-- zzOldIncomplete Hunting Necklace
 				i(199110),	-- zzOldMechanical Maestro Duck
 
-				i(186159),	-- Mythic Keystone
-				i(187523),	-- Your Reward [DNT]
-				i(191032),	-- Oily Fat
-				i(191045),	-- Yu's Bloodied Journal Entry
-				i(191050),	-- 10.0 Food/Drink Template - Food Only - Level 65 - Required Level 60
-				i(191051),	-- 10.0 Food/Drink Template - Food Only - Level 70 - Required Level 65
-				i(191052),	-- 10.0 Food/Drink Template - Drink Only - Level 65 - Required Level 60
-				i(191053),	-- 10.0 Food/Drink Template - Drink Only - Level 70 - Required Level 65
-				i(191056),	-- 10.0 Food/Drink Template - Both Health and Mana - Level 70 - Required Level 65
-				i(191059),	-- Dilapidated Parchment: Top Half
-				i(191062),	-- 10 Food/Drink Template - Alcohol - Weak
+				--- Might Appear In Game ---
 				i(191063),	-- 10 Food/Drink Template - Alcohol - Potent
 				i(191064),	-- 10 Food/Drink Template - Alcohol - Strong
-				i(191069),	-- Beacon of the Black Prince
-				i(191244),	-- I.P.F. Mark 15
-				i(191287),	-- Dragonscale Expedition Crate
-				i(191412),	-- Small Expedition Pick
-				i(191413),	-- Sturdy Expedition Pick
-				i(191422),	-- Crystal Magical Lockpick
-				i(191426),	-- Whelmed Duckling
+				i(191062),	-- 10 Food/Drink Template - Alcohol - Weak
+				i(191056),	-- 10.0 Food/Drink Template - Both Health and Mana - Level 70 - Required Level 65
+				i(191052),	-- 10.0 Food/Drink Template - Drink Only - Level 65 - Required Level 60
+				i(191053),	-- 10.0 Food/Drink Template - Drink Only - Level 70 - Required Level 65
+				i(191050),	-- 10.0 Food/Drink Template - Food Only - Level 65 - Required Level 60
+				i(191051),	-- 10.0 Food/Drink Template - Food Only - Level 70 - Required Level 65
+				i(200823),	-- 300x Magnifying Glass
+				i(194719),	-- [DEPRECATED]Illusionary Coin
+				i(194706),	-- [DEPRECATED]Illusionary Key
+				i(192600),	-- [DNT][PH] Meat
+				i(200770),	-- A Brief History of Azeroth
+				i(200264),	-- A Steamy Romance Novel: The Lusty Draconian Mage
+				i(200282),	-- A Steamy Romance Novel: The Lusty Draconian Mage
+				i(196584),	-- Acorn Milk
+				i(200783),	-- Adorned Ohunan Jess
 				i(191667),	-- Aged Key
+				i(200804),	-- Ancestor's Scales
+				i(199105),	-- Ancheevy
+				i(194689),	-- Anchovy Crisps
+				i(192646),	-- Aqueous Speck
+				i(195455),	-- Argali Cheese
+				i(195459),	-- Argali Milk
+				i(200825),	-- Assorted Debris
+				i(200768),	-- Assorted Salamanther Lures
+				i(198141),	-- Astral Essence
+				i(200613),	-- Aylaag Windstone Fragment
+				i(200817),	-- Azure Splinters
+				i(200766),	-- Bakar Fangs
+				i(192127),	-- Basilisk Eggs
+				i(191069),	-- Beacon of the Black Prince
+				i(200789),	-- Beckoning Kite
+				i(200782),	-- Bejeweled Horseshoes
+				i(199186),	-- Bewitched Wood
+				i(200697),	-- Blightshroom
+				i(198668),	-- Blooming Shallowlily
+				i(198442),	-- Bogthwottle's Shrinky-Do
+				i(192560),	-- Bossy Storm Stuff
+				i(200798),	-- Bottled Diseased Parasites
+				i(200824),	-- Bottled Lightning
+				i(200791),	-- Braided Ottuk Hair Fishing Line
+				i(196540),	-- Broadhoof Tail Poutine
+				i(200834),	-- Can You Smell It?
+				i(200590),	-- Carefully Rolled Message
+				i(198688),	-- Catnip Leaf
+				i(200821),	-- Celsius 232
+				i(200769),	-- Ceramic Shards
+				i(200691),	-- Claw Thistle Barbs
+				i(199212),	-- Clubfish
+				i(200811),	-- Congealed Sap Droplet
+				i(200814),	-- Congealing Shard
+				i(198832),	-- Conjured Blubbery Muffin
+				i(198833),	-- Conjured Celebratory Cake
+				i(198831),	-- Conjured Snow in a Cone
+				i(198830),	-- Conjured Tasty Hatchling's Treat
+				i(200967),	-- Conquest
+				i(200950),	-- Consortium Packaging String
+				i(200774),	-- Contained Void Sample
+				i(200248),	-- Cooked Book
+				i(194721),	-- Cracked Hourglass
+				i(192769),	-- Cracked Spear
+				i(197853),	-- Critter Kebab
+				i(191422),	-- Crystal Magical Lockpick
+				i(197856),	-- Cup o' Wakeup
+				i(200700),	-- Cuppressa Berries
+				i(192182),	-- Decay to Elements
+				i(200799),	-- Decaying Pelt Bolt
+				i(200848),	-- Decorative Bouquet
+				i(198541),	-- Depleted Violet Vapors
+				i(200815),	-- Deposited
+				i(191059),	-- Dilapidated Parchment: Top Half
+				i(200592),	-- Dirty Old Satchel
+				i(198440),	-- Discounted Meat
+				i(194692),	-- Distilled Fish Juice
+				i(200262),	-- Do-It-Yourself Part Building Kit
+				i(200305),	-- Dracthyr Water Rations
+				i(200780),	-- Dragon Horns
+				i(199833),	-- Dragonhead Eel
+				i(191287),	-- Dragonscale Expedition Crate
+				i(194685),	-- Dragonspring Water
+				i(200850),	-- Dream-Infused Seed
+				i(199101),	-- Dried Wyldermane Kelp
+				i(200554),	-- Dropcap Head
+				i(200820),	-- Dry Wood Log
+				i(201722),	-- Edicts of the Prime Designate, Volume 742
+				i(194678),	-- Elemental Crystal
+				i(201467),	-- Emerald Bloom
+				i(201327),	-- Emerald Dreamtime
+				i(195572),	-- Empty Elixir
+				i(197854),	-- Enchanted Argali Tenderloin
+				i(200685),	-- Enchanted Compass
+				i(200840),	-- Encyclopaedia Draeconica Set
+				i(200767),	-- Energized Crystal
+				i(200818),	-- Eternal Flame
+				i(200929),	-- Everglow Nectar
+				i(194716),	-- Evorian Report
+				i(192476),	-- Expedition Bullwhip
+				i(197851),	-- Extra Crispy Mutton
+				i(200805),	-- Fallen Watcher Remains
+				i(200476),	-- Fallingwater Overlook VIP Entry Pass
+				i(199185),	-- Fanciful Strings
+				i(200695),	-- Fangtooth Petals
+				i(195460),	-- Fermented Musken Milk
+				i(198674),	-- Filled Life Pools Vial
+				i(201427),	-- Fleeting Sands
+				i(200846),	-- Fletching-less Arrows
+				i(200622),	-- Focusing Incense
+				i(195458),	-- Forager's Stew
+				i(200847),	-- Frail Shield
+				i(195466),	-- Frenzy and Chips
+				i(192089),	-- Fresh Vorquin Carcass
+				i(195462),	-- Fried Hornstrider Wings
+				i(198479),	-- Gale Rider
+				i(200692),	-- Gift of the Grove
+				i(197852),	-- Goat Brisket
+				i(200221),	-- Gorloc Crystals
+				i(197847),	-- Gorloc Fin Soup
+				i(200704),	-- Gratona Seed
+				i(196583),	-- Greenberry Toast
+				i(199208),	-- Grungle
+				i(200607),	-- Half-Eaten Banana
+				i(197848),	-- Hearty Squash Stew
+				i(200845),	-- Heavily Deformed Mace
+				i(200853),	-- How to Grow a Tree in 10 Days
+				i(199102),	-- Hunk o' Blubber
+				i(200784),	-- Hunting Trophies
+				i(200589),	-- Hydro Life Seed
+				i(199207),	-- Iceback Sculpin
+				i(200776),	-- Igneous Rock Sculpture
+				i(199646),	-- Imbu Tuskarr Bandages
+				i(199343),	-- Immaculate Sac of Swog Treasures
+				i(199187),	-- Impossible Sheet Music
+				i(194693),	-- Improvised Sushi
+				i(200555),	-- Inferno Seeds
+				i(200620),	-- Inflaming Incense
+				i(200838),	-- Insignia of the Kirin Tor
+				i(200830),	-- Instantly Drying Clay
+				i(191244),	-- I.P.F. Mark 15
+				i(200822),	-- Jar of Ashes
+				i(198139),	-- Jeb's Underwear
+				i(194680),	-- Jerky Surprise
+				i(196182),	-- Journal Entry
+				i(198840),	-- Kalecite Cluster
+				i(200772),	-- Knowledge Discs
+				i(199213),	-- Lakkamuk Blenny
+				i(200935),	-- Large Egg Shell
+				i(200778),	-- Lava Blowing for Dummies
+				i(200587),	-- Leatherbound Expedition Note
+				i(200596),	-- Letter from Thaelin Darkanvil
+				i(200698),	-- Ley Orb
+				i(200702),	-- Magenta Titian Extract
+				i(200839),	-- Magical Cleaning Broom
+				i(197850),	-- Mammoth Dumpling
+				i(195457),	-- Mammoth Jerky
+				i(199205),	-- Manasucker
+				i(200680),	-- Maruukai Mule
+				i(194677),	-- Marvelous Mood Ring
+				i(200588),	-- Meaty Stem
+				i(192054),	-- Medallion of a Fallen Friend
+				i(200699),	-- Milkweed Fibers
+				i(198666),	-- Milky Snapflower
+				i(201466),	-- Mote of Dreams
+				i(194682),	-- Mother's Gift
+				i(194707),	-- Myridian Report
+				i(186159),	-- Mythic Keystone
+				i(200099),	-- M.R.E.
+				i(199103),	-- Nappa's Famous Tea
+				i(200948),	-- Obsidian Hunting Hook
+				i(200777),	-- Obsidian Shards
+				i(200595),	-- Odorous Parchment
+				i(200681),	-- Ohn Lite
+				i(191032),	-- Oily Fat
+				i(198456),	-- Oliveye Fry
+				i(200831),	-- Opalescent Figure
+				i(192181),	-- Order to Elements
+				i(200773),	-- Otherworldly Artifact
+				i(200844),	-- Overly Bent Bow
+				i(200553),	-- Panthis Nectar
+				i(200829),	-- Pareidolic Image
 				i(191787),	-- Partially Digested Hand
-				i(191849),	-- Serevite Angle Iron
+				i(199100),	-- Peppersmelt
+				i(199104),	-- Piping-Hot Orca Milk
+				i(195456),	-- Plains Flatbread
+				i(196585),	-- Plainswheat Pretzel
+				i(200828),	-- Pocketed Clouds
+				i(200121),	-- Potion of Beginner's Luck
+				i(194718),	-- Premium Salamander Feed
+				i(200606),	-- Previously Owned Map
+				i(192545),	-- Primal Flame Fragment
+				i(194750),	-- Professional Equipment
+				i(201726),	-- Progress Report: Uldorus
+				i(200771),	-- Projected Starmap
+				i(198452),	-- Prototype F
+				i(199834),	-- Pulpy Seagrass
+				i(201428),	-- Quicksilver Sands
+				i(194695),	-- Ramloaf
+				i(200765),	-- Reed Sculpture
 				i(191856),	-- Reinforced Hooked Line
+				i(200781),	-- Rejuvenating Ashes
+				i(200797),	-- Repulsive Perfume
+				i(200690),	-- Ritherem Petals
+				i(200694),	-- River Bell Bulbs
 				i(191861),	-- Rocdrop Carapace
 				i(191864),	-- Rocdrop Pudgepart
-				i(192054),	-- Medallion of a Fallen Friend
-				i(192089),	-- Fresh Vorquin Carcass
-				i(192127),	-- Basilisk Eggs
+				i(200796),	-- Rotting Wood Totem
+				i(199063),	-- Salted Fish Scraps
+				i(197858),	-- Salt-Baked Scalebelly
+				i(200835),	-- Sand Pouch
+				i(201379),	-- Scalewatch Cage Key
+				i(200619),	-- Scaralesh's Special
+				i(194887),	-- Scrap Trap
+				i(200593),	-- Sealed Expedition Note
+				i(194694),	-- Seasoned Hornswog Steak
+				i(195463),	-- Seasoned Mudstomper Belly
+				i(200775),	-- Self-Luminous Orb
+				i(200851),	-- Self-Trimming Bonsai
+				i(191849),	-- Serevite Angle Iron
+				i(199206),	-- Shattered Adamant Scales
+				i(200802),	-- Signet of the Dragonflights
+				i(199476),	-- Singed Cloth Scraps
+				i(200764),	-- Slimy Shinies
+				i(191412),	-- Small Expedition Pick
+				i(199832),	-- Smoked Seaviper
+				i(200837),	-- So You Think You Can Rune?
+				i(200621),	-- Soothing Incense
+				i(199184),	-- Spellbound Bone Pipes
+				i(194686),	-- Spicy Musken Drummies
+				i(200477),	-- Stack of VIP Passes
+				i(200304),	-- Stored Dracthyr Rations
+				i(200826),	-- Stored Humid Air
+				i(195465),	-- Stormwing Egg Breakfast
+				i(200787),	-- Strong Exotic Spices
+				i(199074),	-- Studies of Arcane Magic
+				i(191413),	-- Sturdy Expedition Pick
 				i(192130),	-- Sundered Flame Weapon Mold
-				i(192181),	-- Order to Elements
-				i(192182),	-- Decay to Elements
-				i(192545),	-- Primal Flame Fragment
-				i(192476),	-- Expedition Bullwhip
-				i(192560),	-- Bossy Storm Stuff
-				i(192600),	-- [DNT][PH] Meat
-				i(192646),	-- Aqueous Speck
-				i(192769),	-- Cracked Spear
+				i(195464),	-- Sweetened Broadhoof Milk
+				i(197857),	-- Swog Slurp
+				i(196582),	-- Syrup-Drenched Toast
+				i(200639),	-- Talisman of Ohn'ahra
+				i(200637),	-- Talisman of the Maruuk
+				i(198842),	-- Tallstrider Feather
+				i(200792),	-- Taxidermied Catch
+				i(194886),	-- Tazenrath's Torn Wing
+				i(200849),	-- Tear of the Dreamer
+				i(201436),	-- Temporally-Locked Sands
+				i(200693),	-- Terata Leaves
+				i(200594),	-- Thaelin's Second Favorite Comb
+				i(200705),	-- Thaldraszus Root
+				i(200803),	-- Through the Stained-Glass
+				i(198979),	-- Time Capsule Letter
+				i(199106),	-- Tiny Leviathan Bone
+				i(200833),	-- Titan Watcher Replica
+				i(200701),	-- Titian Extract
+				i(201727),	-- To My Staunchest Allies
+				i(199835),	-- Torga's Braid
+				i(199204),	-- Torn Resilient Leather Scraps
+				i(200809),	-- Trinket-Packed Collar
+				i(200812),	-- Unmelting Crystalline Structure
+				i(198453),	-- Unstable Azerite Grenade
+				i(200951),	-- Valdrakken Critter Snacks
+				i(201468),	-- Verdant Swirl
+				i(200703),	-- Vine Flower Fibers
+				i(200819),	-- Volatile Sparks
+				i(200870),	-- Vorquin Essence
+				i(194688),	-- Vorquin Filet
+				i(201438),	-- Weary Sands
+				i(200827),	-- Weathered Sculpture
+				i(191426),	-- Whelmed Duckling
+				i(200222),	-- White Bell Pigment
+				i(198486),	-- Windscale Rider
+				i(200623),	-- Wind-Grown Grass
+				i(200696),	-- Winter Berries
+				i(200806),	-- Woodcarving Stone
+				i(200810),	-- Wooden Stonegrabber Figurine
+				i(200807),	-- Wooden Ursine Figure
+				i(194742),	-- Worn Book
+				i(194889),	-- XD-57 "Bullseye" Guided Rocket Kit
+				i(187523),	-- Your Reward [DNT]
+				i(191045),	-- Yu's Bloodied Journal Entry
+				i(194713),	-- Zepharion Report
 			})),
 
 			-- 10.0.2
@@ -842,6 +1086,200 @@ root(ROOTS.NeverImplemented, {
 				i(199553),	-- Memory of Unity
 				i(201928),	-- Ohn'ir Windprayer Talisman
 				i(201251),	-- Pillaged Contender's Strongbox
+
+				--- Might Appear In Game ---
+				i(193389),	-- Adamantine Core
+				i(201210),	-- Albino Feather
+				i(192604),	-- Ancient Lantern
+				i(192608),	-- Ancient Resin
+				i(201220),	-- Ancient Tool
+				i(192684),	-- Ancient War Tusk
+				i(193450),	-- Arakkoa Doll
+				i(201175),	-- Arakkoa Ritual Feather
+				i(193448),	-- Arcane Cell
+				i(201824),	-- Arcane Fluid
+				i(201823),	-- Arcane-Infused Webbing
+				i(201967),	-- Autographed Skull
+				i(201191),	-- Back Scratcher
+				i(192685),	-- Battle-Hardened Fang
+				i(201198),	-- Beaded Bracelet
+				i(192610),	-- Beady Woodland Eye
+				i(201187),	-- Bent Lockpicks
+				i(201226),	-- Big Rock
+				i(201180),	-- Bone Necklace
+				i(201205),	-- Bone Toothpick
+				i(201211),	-- Bottled Ear Wax
+				i(192611),	-- Bottled Torrent
+				i(192747),	-- Broken Branch
+				i(201165),	-- Burnished Bauble
+				i(200533),	-- Bygone Idol
+				i(192686),	-- Charred Carapace
+				i(192655),	-- Chilling Spider Leg
+				i(192624),	-- Cracked Scales
+				i(201178),	-- Cracked Skull
+				i(192688),	-- Cracked Stone Bracers
+				i(201216),	-- Crumbled Elemental Spark
+				i(193384),	-- Crumbling Bone
+				i(192746),	-- Curio of Yore
+				i(192651),	-- Damaged Core
+				i(200532),	-- Damaged Qiraji Ring
+				i(193385),	-- Decaying Resin
+				i(201188),	-- Deceased Critter
+				i(200451),	-- Deep Sea Star
+				i(193420),	-- Depleted Mana Stone
+				i(192698),	-- Depleted Titan Training Matrix
+				i(192652),	-- Discharged Thunderscale
+				i(192613),	-- Dragon Tooth
+				i(201193),	-- Dragon Tooth Shank
+				i(201197),	-- Dream Journal
+				i(192687),	-- Duck Bill
+				i(192689),	-- Eagle Eye
+				i(192614),	-- Elemental Ooze
+				i(201195),	-- Empty Herb Pouch
+				i(201968),	-- Enormous Grain of Salt
+				i(192691),	-- Eternal Ice Stalactite
+				i(192692),	-- Faerie Dust
+				i(201174),	-- Fantastic Jewel
+				i(192693),	-- First Heads Horn
+				i(200937),	-- Flavorful Soup Bone
+				i(192653),	-- Floppy Molten Ear
+				i(192697),	-- Fluffy Ear
+				i(201206),	-- Fresh Meat Lump
+				i(192700),	-- Frozen Dorsal Spike
+				i(192701),	-- Frozen Eye
+				i(192616),	-- Fung Eye
+				i(192654),	-- Giant Stone Eye
+				i(192702),	-- Giant's Heart
+				i(192707),	-- Gnawing Incisors
+				i(201190),	-- Goo Filled Flask
+				i(192656),	-- Half-Digested Fish
+				i(201227),	-- Half-Eaten Stone
+				i(201228),	-- Handful of Gravel
+				i(201173),	-- Handful of Teeth
+				i(192657),	-- Hardy Cloven Hoof
+				i(193438),	-- Harrowing Osteal
+				i(201185),	-- Hidden Blade
+				i(192703),	-- Hide-Piercing Horn
+				i(192617),	-- Hound Paw
+				i(192704),	-- Huge Flat Tooth
+				i(192618),	-- Ice Chunks
+				i(192705),	-- Imposing Tusk
+				i(192659),	-- Impressive Mandible
+				i(192619),	-- Impressive Tail Fin
+				i(201723),	-- Indecipherable Pages
+				i(201170),	-- Knucklebones
+				i(201192),	-- Large Dragonbone Dice
+				i(192620),	-- Large Tail Spikes
+				i(192621),	-- Long-Toed Talon
+				i(192708),	-- Magnificent Antler
+				i(201200),	-- Makeshift Totem
+				i(192622),	-- Massive Beast Eye
+				i(192660),	-- Massive Hydra Claw
+				i(192623),	-- Massive Proto-Dragon Claw
+				i(192709),	-- Membranous Wing
+				i(192714),	-- Mgrrrl
+				i(192695),	-- Molten Mandible
+				i(192625),	-- Motionless Stone
+				i(192626),	-- Mound of Dust
+				i(200105),	-- Muck Covered Flotsam
+				i(200933),	-- Mushy Vegtable
+				i(193410),	-- Nauseating Stinger
+				i(192710),	-- Nearly Unbreakable Horn
+				i(201209),	-- Nibbled Fish Head
+				i(201730),	-- Nokhud Centaur Spear
+				i(201731),	-- Nokhud Centaur Staff
+				i(192627),	-- Obsidian Clump
+				i(192645),	-- Obsidian Nugget
+				i(192711),	-- Oily Liver
+				i(201214),	-- Olfactory Truffle
+				i(201176),	-- Ornate Bracelet
+				i(192712),	-- Otherworldly Essence
+				i(201203),	-- Painted Gnoll Band
+				i(201219),	-- Parchment Cards
+				i(201171),	-- Perfectly Round Stone
+				i(192713),	-- Pharyngeal Jaw
+				i(192628),	-- Phoenix Ash
+				i(192715),	-- Phoenix Stone
+				i(201163),	-- Piece of Dragonkin Eggshell
+				i(201183),	-- Pouch of Salt
+				i(192661),	-- Prehistoric Fin
+				i(192716),	-- Prehistoric Sediment
+				i(201196),	-- Pretty Flower
+				i(192629),	-- Primal Beast Claw
+				i(201194),	-- Pumice Hand Chalk
+				i(192662),	-- Pyretic Speck
+				i(192706),	-- Razor Quill
+				i(192630),	-- Reef Carapace
+				i(192605),	-- Reptilian Fang
+				i(192718),	-- Rock-Hard Eggshell
+				i(192650),	-- Roomy Shell
+				i(201186),	-- Rope Bonds
+				i(192719),	-- Scaled Toes
+				i(192663),	-- Scaly Wing
+				i(192694),	-- Second Head's Fang
+				i(201208),	-- Seer's Crystal
+				i(192690),	-- Serrated Limb
+				i(192664),	-- Serrated Pincer
+				i(201182),	-- Serrated Stone
+				i(192666),	-- Severed Roots
+				i(192632),	-- Sharp Bird Talon
+				i(201207),	-- Shells in a Conch
+				i(201162),	-- Shiny Metal Scraps
+				i(192668),	-- Short Rib
+				i(192669),	-- Sizeable Feather
+				i(201201),	-- Skull Pendant
+				i(192720),	-- Slender Twisting Horn
+				i(192683),	-- Slimy Frog Eggs
+				i(200106),	-- Slimy Old Boot
+				i(192633),	-- Slit-Shaped Pupil
+				i(201221),	-- Small Titan Mechanism
+				i(192634),	-- Smashed Metal Scraps
+				i(201222),	-- Smooth Seashell
+				i(201179),	-- Snapped Tusk Tip
+				i(193387),	-- Solar Battery
+				i(201213),	-- Sparkling Stone
+				i(201729),	-- Spiked Horseshoe
+				i(192670),	-- Splendid Feather
+				i(201199),	-- Splendid Feather Necklace
+				i(192721),	-- Splendid Horn
+				i(192722),	-- Splendid Whiskers
+				i(201813),	-- Spoiled Firewine
+				i(192723),	-- Springy Tongue
+				i(201202),	-- Squirrel Tail
+				i(202065),	-- Static Sand
+				i(201970),	-- Stolen Illidari Blindfold
+				i(201167),	-- Stone Calendar
+				i(192671),	-- Sublime Flower
+				i(192609),	-- Swim Bladder
+				i(200107),	-- Tarnished Engagement Ring
+				i(192672),	-- Tattered Proto-Wing
+				i(201224),	-- Tauren Horn
+				i(192647),	-- Terrene Speck
+				i(192724),	-- Terrifying Teeth
+				i(192725),	-- Thin Blubber
+				i(192696),	-- Third Head's Eye
+				i(201223),	-- Thorn Bracelet
+				i(201969),	-- Threatening Note
+				i(201971),	-- Threatening Note
+				i(193447),	-- Thunder Thigh
+				i(192726),	-- Thunderhorn
+				i(192727),	-- Timeless Horns
+				i(193391),	-- Time-Worn Fang
+				i(201164),	-- Titan Runestone
+				i(201204),	-- Tooth Bracelet
+				i(192665),	-- Torn Dragon Wing
+				i(192673),	-- Torn Ear
+				i(192728),	-- Undamaged Silk Gland
+				i(192729),	-- Unhinged Mandible
+				i(192674),	-- Unknown Titan Mechanism
+				i(192730),	-- Unstable Arcane Essence
+				i(201168),	-- Untainted Scales
+				i(201424),	-- Unusable Plant Matter
+				i(192731),	-- Venomous Fang
+				i(192635),	-- Warped Metal
+				i(192675),	-- Winglet
+				i(201177),	-- Wooden Eagle Statue
+				i(200531),	-- Worn Chitin Fragment
 			})),
 
 			-- 10.0.5
@@ -914,6 +1352,7 @@ root(ROOTS.NeverImplemented, {
 				i(205933),	-- Add Keystone Affix: Entangling
 				i(205935),	-- Add Keystone Affix: Incorporeal
 				i(206158),	-- Add Keystone Affix: Shielding
+				i(205903),	-- Barter Pebble
 				i(204885),	-- Boulder Breakdown Mixture
 				i(204846),	-- Conjured Rocks on the Rocks
 				i(205220),	-- Corroded Key
@@ -921,6 +1360,8 @@ root(ROOTS.NeverImplemented, {
 				i(205198),	-- Detailed Titan Key
 				i(205691),	-- Hypnotic Murloc Lure
 				i(204886),	-- Insulating Embershard
+				i(203397),	-- Kirygosa's Note
+				i(205959),	-- Letter from Kirygosa
 				i(205163),	-- Lucky Horseshoe - FOR TESTING AURAS DO NOT USE (SH)
 				i(205898),	-- Metal Key and shield disabled
 				i(205454),	-- Researchers Wheel Barrow

@@ -123,6 +123,9 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["sourceQuests"] = { 72450 },	-- The Clessington Will
 					["provider"] = { "n", 198983 },	-- Master Mathias Shaw
 					["coord"] = { 36.5, 51.1, NORTHSHIRE_VALLEY },
+					["g"] = {
+						i(204214),	-- Drakefire Amulet (QI!)
+					},
 				}),
 				q(72452, {	-- Go with Honor, Friend
 					["sourceQuests"] = { 72451 },	-- Will to Survive

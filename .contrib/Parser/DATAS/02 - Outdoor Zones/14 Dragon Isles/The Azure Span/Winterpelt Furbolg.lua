@@ -7,6 +7,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 			n(ACHIEVEMENTS, {
 				ach(17427),	-- Winterpelt Conversationalist
 			}),
+			n(MAILBOX, {
+				i(204254),	-- Sonova's Request
+			}),
 			n(QUESTS, {
 				-- Intro quests
 				q(72546, {	-- Academic Assistance

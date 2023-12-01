@@ -1376,40 +1376,58 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			------ Hemet Nesingwary ------
 			-- TODO: perhaps verify these further...? either has no quest pre-req, or requires DF_ACCOUNT_CAMPAIGN_QUEST | 65686
 			q(66972, {	-- Old Stonetusk
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 45.0, 40.1, THE_AZURE_SPAN },
-				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				["g"] = {
+					i(194432),	-- Old Stonetusk's Tusk (QI!)
+				},
 			}),
 			q(66958, {	-- Protect And Herd
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 18.8, 49.2, THE_AZURE_SPAN },
-				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				["g"] = {
+					i(194433),	-- Bloodhorn's Horn (QI!)
+				},
 			}),
 			q(66968, {	-- Pruning The Pack
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 65.5, 25.9, THE_AZURE_SPAN },
-				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				["g"] = {
+					i(194440),	-- Yetor's Head (QI!)
+				},
 			}),
 			q(66957, {	-- A Shadow In The Ice
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 46.7, 38.7, THE_AZURE_SPAN },
-				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				["g"] = {
+					i(194439),	-- Frostfist's Eye (QI!)
+				},
 			}),
 			q(66939, {	-- Hunting the Huntmaster
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 62.7, 60.1, THE_AZURE_SPAN },
-				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				["g"] = {
+					i(194430),	-- Krakle's Trigger Paw (QI!)
+				},
 			}),
 			q(66971, {	-- The Face of Death
+				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
 				-- ["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 191205 },	-- Hemet Nesingwary
 				["coord"] = { 63.5, 15.6, THE_AZURE_SPAN },
-				["description"] = "Hemet Nesingwary does a circle around the whole zone and stops at the quest places one by one.",
+				["g"] = {
+					i(194444),	-- Frostjaw's Jaw (QI!)
+				},
 			}),
 			------ Painting ------
 			q(70166, {	-- The Joy of Painting

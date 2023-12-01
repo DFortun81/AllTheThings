@@ -385,7 +385,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			["description"] = "These rewards were made available to anyone who purchased Blazing Heroic Edition.",
 			["g"] = {
 				mount(423869),	-- Avatar of Flame (MOUNT!)
-				i(209945),	-- Lil’ Wrathion (PET!)
+				i(209945),	-- Lil' Wrathion (PET!)
 
 				-- Later
 				-- Twilight's Hammer Regalia Transmog Set
@@ -398,8 +398,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Blazing Heroic Edition.",
 			["g"] = {
-				mount(424009),	-- Runebound Firelord (MOUNT!)
-				pet(4316),	-- Lil’ Wrathion (PET!)
+				i(210008),	-- Runebound Firelord (MOUNT!)
+				i(210964),	-- Lil' Wrathion (PET!)
 			},
 		}),
 	})),
@@ -635,18 +635,20 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			["description"] = "These rewards were made available to anyone who purchased The War Within Epic Edition.",
 			["g"] = {
 				ach(19030),	-- Squally
-				pet(4266),	-- Squally (PET!)
+				i(208751),	-- Squally (PET!)
 				i(208704),	-- Deepdwellers Earthen Hearthstone (TOY!)
 				i(208883),	-- Sandbox Storm Gryphon (TOY!)
-				i(209330),	-- Stormrider's Buckle
-				i(209321),	-- Stormrider's Boots
-				i(209320),	-- Stormrider's Breastplate
-				i(209331),	-- Stormrider's Cape
-				i(209329),	-- Stormrider's Epaulettes
-				i(209325),	-- Stormrider's Grips
-				i(209327),	-- Stormrider's Helmet
-				i(209328),	-- Stormrider's Pants
-				i(209332),	-- Stormrider's Wristguards
+				i(209336, {	-- Ensemble: Stormrider's Attire
+					i(209330),	-- Stormrider's Buckle
+					i(209321),	-- Stormrider's Boots
+					i(209320),	-- Stormrider's Breastplate
+					i(209331),	-- Stormrider's Cape
+					i(209329),	-- Stormrider's Epaulettes
+					i(209325),	-- Stormrider's Grips
+					i(209327),	-- Stormrider's Helmet
+					i(209328),	-- Stormrider's Pants
+					i(209332),	-- Stormrider's Wristguards
+				}),
 			},
 		}),
 	})),

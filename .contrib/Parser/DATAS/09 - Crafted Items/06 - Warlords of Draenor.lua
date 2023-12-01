@@ -150,9 +150,11 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 		}),
 		filter(MISC, {
 			i(202210, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Truesteel Essence
+			i(202208, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Steelforged Essence
 			i(127713, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Mighty Steelforged Essence
 			i(127714, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Mighty Truesteel Essence
 			i(202211, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Truesteel Essence
+			i(202209, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Steelforged Essence
 			i(127731, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Steelforged Essence
 			i(127732, {["timeline"] = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Truesteel Essence
 			i(118720),	-- Secret of Draenor Blacksmithing
@@ -304,6 +306,12 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 			-- WOD_CRAFTED_ITEM_DF_REMARKABLE(109174, 202213),	-- Razorguard Mechshades + Remarkable Linkgrease Locksprocket
 			-- #ENDIF
 		}),
+		filter(MISC, {
+			i(202212, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Linkgrease Locksprocket
+			i(202214, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive True Iron Trigger
+			i(202215, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable True Iron Trigger
+			i(202213, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Linkgrease Locksprocket
+		}),
 	}),
 	prof(HERBALISM, {
 		filter(BATTLE_PETS, {
@@ -398,6 +406,10 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 			WOD_CRAFTED_ITEM_DF_IMPRESSIVE(113131, 202220),	-- Warmaster's Firestick + Impressive Weapon Crystal
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(113131, 202221),	-- Warmaster's Firestick + Remarkable Weapon Crystal
 			-- #ENDIF
+		}),
+		filter(MISC, {
+			i(202220, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Weapon Crystal
+			i(202221, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Weapon Crystal
 		}),
 	}),
 	prof(JEWELCRAFTING, {
@@ -614,6 +626,10 @@ root(ROOTS.Craftables, tier(WOD_TIER, applyclassicphase(WOD_PHASE_ONE, bubbleDow
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(114813, 202219),	-- Hexweave Robe + Remarkable Hexweave Essence
 			WOD_CRAFTED_ITEM_DF_REMARKABLE(114815, 202219),	-- Hexweave Slippers + Remarkable Hexweave Essence
 			-- #ENDIF
+		}),
+		filter(MISC, {
+			i(202218, {["timeline"] = {ADDED_10_0_5}}),	-- Impressive Hexweave Essence
+			i(202219, {["timeline"] = {ADDED_10_0_5}}),	-- Remarkable Hexweave Essence
 		}),
 		filter(MOUNTS, {
 			i(115363),	-- Creeping Carpet (MOUNT!)

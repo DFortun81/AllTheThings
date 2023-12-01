@@ -26,7 +26,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(210702, {	-- Solar Synthesis Gloves
 							["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
 						}),
-						i(210706, {	-- Drowsed Shepherd's Vest
+						i(210706, {	-- Drowsed Shepherd's Gloves
 							["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },
 						}),
 						i(210700, {	-- Auburn Scavenger Gauntlets

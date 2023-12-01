@@ -256,6 +256,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 66431 },	-- In Mourning
 					["provider"] = { "n", 187323 },	-- Tutaqan
 					["coord"] = { 53.9, 41.3, THE_WAKING_SHORES },
+					["g"] = {
+						i(200188),	-- Broken Fishing Pole (QI!)
+						i(200191),	-- Ottuk Lure (QI!)
+						i(200190),	-- Stuffed Duckling Toy (QI!)
+					},
 				}),
 				q(66443, {	-- Calling the Hunting Party
 					["description"] = "Automatically given after the previous quest.",

@@ -1761,7 +1761,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				})),
 				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {	-- "Off Slots"
-					["description"] = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",	
+					["description"] = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
 					["groups"] = {
 						cl(DEATHKNIGHT, {
 							i(202458),	-- Lingering Phantom's Deathlink
@@ -1863,6 +1863,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["isWeekly"] = true,
 					["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 },
 					["g"] = {
+						i(202002),	-- Enlightened Renascence (QI!)
+						i(202000),	-- Minor Renascence (QI!)
 						currency(2166),	-- Revival Catalyst Account-Wide Currency
 					},
 				}),

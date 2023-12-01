@@ -17,13 +17,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(194965),	-- Recipe: Yusa's Hearty Stew (RECIPE!)
 				},
 			}),
-			n(194928, {	-- Hearthkeeper Erden
-				["coord"] = { 62.2, 35.7, OHNAHRAN_PLAINS },
-				["g"] = {
-					i(199918),	-- Honey Plum Tart
-					i(199919),	-- Yak Milk Pudding
-				},
-			}),
 			n(192997, {	-- Ludo
 				["description"] = "Pet!",
 				["coord"] = { 61.7, 41.0, OHNAHRAN_PLAINS },

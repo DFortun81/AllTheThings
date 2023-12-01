@@ -4086,12 +4086,12 @@ i(206174, 3582);	-- Blub
 ------------------
 -- PATCH 10.1.7 --
 ------------------
-i(208543, 4265);	-- Lil' Frostwing
 i(211271, 3491);	-- Arfus
+i(208543, 4265);	-- Lil' Frostwing
+i(208751, 4266);	-- Squally
 --- SPECIAL ---
 i(0, 3236);			-- Gnomelia Gearheart
 i(0, 4267);			-- Lil' Maggz
-i(0, 4266);			-- Squally
 i(0, 3579);			-- Ysergle The Dreamurk
 --- NYI ---
 i(208850, 0);		-- Lil' Maggz
@@ -4109,6 +4109,7 @@ i(210651, 4299);	-- Dustite
 i(210690, 4306);	-- Elmer
 i(210692, 4308);	-- Juniper
 i(210633, 4297);	-- Kal'andu
+i(210964, 4316);	-- Lil' Wrathion
 i(210567, 4292);	-- Memorie
 i(210570, 4295);	-- Napps
 i(210505, 4287);	-- Reverie

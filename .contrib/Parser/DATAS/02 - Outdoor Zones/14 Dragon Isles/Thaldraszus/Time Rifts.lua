@@ -419,6 +419,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(206998),	-- Amber Sword (QI!)
 						},
 					}),
+					n(206587, {
+						-- ["coord"] = { 63.5, 65.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+						["g"] = {
+							i(206564),	-- Time-Displaced Titanic Disc (QI!)
+						},
+					}),
 				}),
 				n(VENDORS, {
 					n(208338, {	-- Baron Silver <Azmourne Vendor>
