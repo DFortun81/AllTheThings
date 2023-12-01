@@ -963,7 +963,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 9,
 					["groups"] = {
 						objective(1, {	-- 0/1 Furlbrow's Pocket Watch
-							["provider"] = { "i", 841 },	-- Furlbrow's Pocket Watch
+							["providers"] = {
+								{ "i", 841 },	-- Furlbrow's Pocket Watch
+								{ "o", 290 },	-- Furlbrow's Wardrobe
+							},
 							["coord"] = { 49.3, 19.5, WESTFALL },
 						}),
 					},

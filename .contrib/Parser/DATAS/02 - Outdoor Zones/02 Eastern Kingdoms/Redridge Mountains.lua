@@ -415,7 +415,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 					["groups"] = {
 						objective(1, {	-- 0/1 Hilary's Necklace
-							["provider"] = { "i", 10958 },	-- Hilary's Necklace
+							["providers"] = {
+								{ "i",  10958 },	-- Hilary's Necklace
+								{ "o", 154357 },	-- Glinting Mud
+							},
 							["coords"] = {
 								{ 19.3, 51.8, REDRIDGE_MOUNTAINS },
 								{ 25.9, 54.1, REDRIDGE_MOUNTAINS },
