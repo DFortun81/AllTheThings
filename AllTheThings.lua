@@ -17970,7 +17970,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			results = app.CleanInheritingGroups(SearchForField("mapID", self.mapID), "sourceIgnored");
 			-- app.PrintDebug("Rebuild#",#results);
 			if results and #results > 0 then
-				-- app.PrintDebug(#results,"Minilist Results for mapID",self.mapID)
 				-- Simplify the returned groups
 				groups = {};
 				wipe(rootGroups);

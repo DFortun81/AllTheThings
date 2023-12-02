@@ -18,9 +18,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["g"] = {
 						i(210872, {	-- Satchel of Dreams
 							["sym"] = {
-								{"select", "headerID", 78203 },
-								{"pop"},
-								{"where", "headerID", REWARDS },
+								{"select", "itemID", 211389 },	-- Cache of Overblooming Treasures,
 								{"pop"},
 							},
 						}),

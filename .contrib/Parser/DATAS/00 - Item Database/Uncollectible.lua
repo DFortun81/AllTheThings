@@ -548,7 +548,10 @@ i(140360);	-- Rockwurm Barb
 i(153119);	-- Wyrmtongue Cache of Finery
 
 
-
+i(199204);	-- Torn Resilient Leather Scraps
+i(192626);	-- Mound of Dust
+i(201466);	-- Mote of Dreams
+i(201467);	-- Emerald Bloom
 
 
 -- ^^ Not cleaned

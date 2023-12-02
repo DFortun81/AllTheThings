@@ -16,9 +16,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 		n(EMERALD_BOUNTY, {
 			currency(2650),	-- Emerald Dewdrop
 			i(208066),	-- Small Dreamseed
-			i(208067, {	-- Plump Dreamseed
-				i(210059),	-- Reins of the Winter Night Dreamsaber (MOUNT!) / should be from any dreamseed (according to blue post)
-			}),
+			i(208067),	-- Plump Dreamseed
 			i(208047),	-- Gigantic Dreamseed
 			n(ACHIEVEMENTS, {
 				ach(19013, {	-- I Dream of Seeds
@@ -136,9 +134,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						}),
 						i(211394, {	-- Harvested Dreamseed Cache
 							["sym"] = {
-								{"select", "headerID", 78203 },
-								{"pop"},
-								{"where", "headerID", REWARDS },
+								{"select", "itemID", 211389 },	-- Cache of Overblooming Treasures,
 								{"pop"},
 							},
 						}),
@@ -159,11 +155,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						{"select", "npcID", 211265 },	-- Sylvia Whisperbloom
 						{"pop"},
 						{"where", "filterID", MOUNTS },
+						-- include possible blue seed loots (very likely so far that everything is available in higher tiers from lower)
+						{"select","itemID",210218},	-- Plump Dreamy Bounty
 						{"pop"},
-					},
-					["g"] = {
-						i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back (DM!) / also was looted from purple
-						i(210490),	-- Technique: Vantus Rune: Amirdrassil, the Dream's Hope (RECIPE!)
 					},
 				}),
 				i(210218, {	-- Plump Dreamy Bounty
@@ -175,6 +169,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						{"pop"},
 					},
 					["g"] = {
+						i(210059),	-- Reins of the Winter Night Dreamsaber (MOUNT!) / should be from any dreamseed (according to blue post)
 						i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!)
 						i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back (DM!) / also was looted from purple
 						i(207772),	-- Grotto Netherwing Drake: Long Horns (DM!)

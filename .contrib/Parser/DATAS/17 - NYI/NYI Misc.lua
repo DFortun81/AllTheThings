@@ -862,7 +862,6 @@ root(ROOTS.NeverImplemented, {
 				i(200820),	-- Dry Wood Log
 				i(201722),	-- Edicts of the Prime Designate, Volume 742
 				i(194678),	-- Elemental Crystal
-				i(201467),	-- Emerald Bloom
 				i(201327),	-- Emerald Dreamtime
 				i(195572),	-- Empty Elixir
 				i(197854),	-- Enchanted Argali Tenderloin
@@ -937,7 +936,6 @@ root(ROOTS.NeverImplemented, {
 				i(192054),	-- Medallion of a Fallen Friend
 				i(200699),	-- Milkweed Fibers
 				i(198666),	-- Milky Snapflower
-				i(201466),	-- Mote of Dreams
 				i(194682),	-- Mother's Gift
 				i(194707),	-- Myridian Report
 				i(186159),	-- Mythic Keystone
@@ -1031,7 +1029,6 @@ root(ROOTS.NeverImplemented, {
 				i(200701),	-- Titian Extract
 				i(201727),	-- To My Staunchest Allies
 				i(199835),	-- Torga's Braid
-				i(199204),	-- Torn Resilient Leather Scraps
 				i(200809),	-- Trinket-Packed Collar
 				i(200812),	-- Unmelting Crystalline Structure
 				i(198453),	-- Unstable Azerite Grenade
@@ -1180,7 +1177,6 @@ root(ROOTS.NeverImplemented, {
 				i(192714),	-- Mgrrrl
 				i(192695),	-- Molten Mandible
 				i(192625),	-- Motionless Stone
-				i(192626),	-- Mound of Dust
 				i(200105),	-- Muck Covered Flotsam
 				i(200933),	-- Mushy Vegtable
 				i(193410),	-- Nauseating Stinger
