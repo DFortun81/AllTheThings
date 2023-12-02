@@ -5378,12 +5378,9 @@ local SpecificSources = {
 		[app.HeaderConstants.DROPS] = true,
 	},
 };
-local tremove = tremove;
 local function CleanTop(top, keephash)
-	if top and top.hash == keephash then
-		return true;
-	end
 	if top then
+		if top.hash == keephash then return true end
 		local g = top.g;
 		if g then
 			local count, gi, cleaned = #g;
@@ -5420,12 +5417,21 @@ app.BuildSourceParent = function(group)
 	-- pull all listings of this 'Thing'
 	local keyValue = group[groupKey];
 	local things = specificSource and { group } or app.SearchForLink(groupKey .. ":" .. keyValue);
-	-- app.PrintDebug("BuildSourceParent",groupKey,thingCheck,specificSource,keyValue,#things)
+	-- app.PrintDebug("BuildSourceParent",group.hash,thingCheck,specificSource,keyValue,#things)
+	-- if app.Debugging then
+	-- 	local sourceGroup = {
+	-- 		["text"] = "DEBUG THINGS",
+	-- 		["OnUpdate"] = app.AlwaysShowUpdate,
+	-- 		["skipFill"] = true,
+	-- 		["g"] = {},
+	-- 	};
+	-- 	NestObjects(sourceGroup, things, true)
+	-- 	NestObject(group, sourceGroup, nil, 1)
+	-- end
 	if things then
 		local groupHash = group.hash;
 		local isAchievement = groupKey == "achievementID";
 		local SearchForObject = app.SearchForObject;
-		-- app.PrintDebug("Found Source things",#things,groupHash)
 		local parents, parentKey, parent;
 		-- collect all possible parent groups for all instances of this Thing
 		for _,thing in pairs(things) do
@@ -5434,13 +5440,13 @@ app.BuildSourceParent = function(group)
 				while parent do
 					-- app.PrintDebug("parent",parent.text,parent.key)
 					parentKey = parent.key;
-					if parentKey and parent[parentKey] then
+					if parentKey and parent[parentKey] and parent.hash ~= groupHash then
 						-- only show certain types of parents as sources.. typically 'Game World Things'
 						-- or if the parent is directly tied to an NPC
 						if thingKeys[parentKey] or parent.npcID or parent.creatureID then
 							-- keep the Criteria nested for Achievements, to show proper completion tracking under various Sources
 							if isAchievement then
-								-- app.PrintDebug("isAchieve:keepSource",thing.hash)
+								-- app.PrintDebug("isAchieve:keepSource",thing.hash,"under",parent.hash)
 								parent._keepSource = thing.hash;
 							end
 							-- add the parent for display later
@@ -5524,6 +5530,7 @@ app.BuildSourceParent = function(group)
 		if groupKey == "criteriaID" and #things == 0 then
 			local achID = group.achievementID;
 			parent = app.SearchForObject("achievementID", achID) or { achievementID = achID };
+			-- app.PrintDebug("add achievement for empty criteria",achID)
 			if parents then tinsert(parents, parent);
 			else parents = { parent }; end
 		end
@@ -5544,7 +5551,7 @@ app.BuildSourceParent = function(group)
 				keepSource = parent._keepSource;
 				-- clear the flag from the Source
 				parent._keepSource = nil;
-				-- if keepSource then print("Keeping Criteria under",parent.hash) end
+				-- if keepSource then app.PrintDebug("Keeping Criteria under",parent.hash) end
 				clonedParent = keepSource and CreateObject(parent) or CreateObject(parent, true);
 				clonedParent.collectible = false;
 				if keepSource then
