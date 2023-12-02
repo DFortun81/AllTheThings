@@ -182,7 +182,12 @@ end
 local function AttachTooltipSearchResults(self, lineNumber, search, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",search,...)
 	app.SetSkipPurchases(1);
-	pcall(AttachTooltipRawSearchResults, self, lineNumber, GetCachedSearchResults(search, method, ...));
+	local s, group = pcall(GetCachedSearchResults, search, method, ...)
+	if s then
+		AttachTooltipRawSearchResults(self, lineNumber, group)
+	else
+		app.PrintDebug("pcall tooltip failed",group)
+	end
 	app.SetSkipPurchases(0);
 end
 local function AttachTooltip(self, ttdata)
