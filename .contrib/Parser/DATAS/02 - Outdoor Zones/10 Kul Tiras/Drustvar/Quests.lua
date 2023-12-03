@@ -331,8 +331,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 135085 },	-- Captain Lilian Nottley
 				["coord"] = { 39.7, 57.9, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
-				["sourceQuests"] = { 49890 },	-- Drustfall
-				-- May be available earlier; needs confirmation.
+				["sourceQuests"] = { 49807 },	-- A New Order
 			}),
 			q(50445, {	-- Controlling the Situation
 				["provider"] = { "n", 133105 },	-- Warren Ashton

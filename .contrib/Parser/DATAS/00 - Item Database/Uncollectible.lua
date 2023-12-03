@@ -569,13 +569,22 @@ i(198390);	-- Milling
 i(201361);	-- Primal Inspiration
 i(194709);	-- Prospecting
 i(194973);	-- Reclaim Concoctions
+i(200825);	-- Assorted Debris
 
 ------------------
 -- PATCH 10.0.2 --
 ------------------
 i(201926);	-- Crushing
 --- Trash ---
+i(192610);	-- Beady Woodland Eye
+i(192622);	-- Massive Beast Eye
+i(192629);	-- Primal Beast Claw
+i(192630);	-- Reef Carapace
+i(192632);	-- Sharp Bird Talon
+i(192657);	-- Hardy Cloven Hoof
+i(192673);	-- Torn Ear
 i(192717);	-- Animated Splinter
+i(201209);	-- Nibbled Fish Head
 -- Wierd
 i(202108);	-- Bouncing Bass
 

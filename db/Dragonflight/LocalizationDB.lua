@@ -2513,6 +2513,7 @@ _.FlightPathNames = {
 -- Object Database Module
 _.ObjectNames = {
 	[31] = "Old Lion Statue",
+	[33] = "Locked Chest",
 	[34] = "Old Jug",
 	[35] = "Captain's Footlocker",
 	[36] = "Broken Barrel",
@@ -5823,7 +5824,6 @@ _.ObjectNames = {
 	[409914] = "Mimiron's Booster Part",
 	[410179] = "Loose Dirt Mound",
 	[410181] = "Loose Dirt Mound",
-	[410267] = "Dreamfruit",
 	[410426] = "Half-Filled Dreamless Sleep Potion",
 	[410434] = "Splash Potion of Narcolepsy",
 	[410442] = "Root of the Problem",
@@ -7055,6 +7055,7 @@ _.ObjectIcons = {
 }
 _.ObjectModels = {
 	[31] = 189908,
+	[33] = 196979,
 	[34] = 189821,
 	[35] = 198238,
 	[36] = 199567,
@@ -10349,7 +10350,6 @@ _.ObjectModels = {
 	[409914] = 84489,
 	[410179] = 189528,
 	[410181] = 189528,
-	[410267] = 511490,
 	[410426] = 2833934,
 	[410434] = 2833934,
 	[410456] = 2833991,
@@ -10463,6 +10463,7 @@ localize(L.FILTER_ID_TYPES, {
 });
 localize(_.ObjectNames, {
 	[31] = "Alte Löwenstatue",
+	[33] = "Verschlossene Truhe",
 	[34] = "Alter Henkelkrug",
 	[35] = "Schließkiste des Kapitäns",
 	[36] = "Zerbrochenes Fass",
@@ -13693,7 +13694,6 @@ localize(_.ObjectNames, {
 	[409020] = "Notiz an Kritha",
 	[409835] = "Lockerer Erdhaufen",
 	[410181] = "Lockerer Erdhaufen",
-	[410267] = "Traumfrucht",
 	[413784] = "Selbstbackende Kekse auf Kräuterbasis",
 	[9999908] = "|cFFFFFFFFSchritt 1:|r Gather Consumables.",
 	[9999909] = "|cFFFFFFFFSchritt 2:|r Caverns of Consumption",
@@ -13808,6 +13808,7 @@ localize(L.FILTER_ID_TYPES, {
 });
 localize(_.ObjectNames, {
 	[31] = "Estatua de león antigua",
+	[33] = "Cofre cerrado",
 	[34] = "Vieja jarra",
 	[35] = "Baúl del Capitán",
 	[36] = "Barrica rota",
@@ -16965,7 +16966,6 @@ localize(_.ObjectNames, {
 	[409019] = "Nota garabateada deprisa",
 	[409020] = "Nota para Kritha",
 	[409835] = "Montículo de porquería blanda",
-	[410267] = "Fruta del Sueño",
 	[413784] = "Galletas de hierbas autococinables",
 	[9999912] = "|cFFFFFFFFStep 5:|r Vigía diligente",
 	[9999915] = "|cFFFFFFFFStep 8:|r Vigía de piedra",
@@ -17126,6 +17126,7 @@ localize(L.FILTER_ID_TYPES, {
 });
 localize(_.ObjectNames, {
 	[31] = "Statue du vieux lion",
+	[33] = "Coffre verrouillé",
 	[34] = "Vieille cruche",
 	[35] = "Coffre du capitaine",
 	[36] = "Tonneau cassé",
@@ -20325,7 +20326,6 @@ localize(_.ObjectNames, {
 	[408224] = "Pierre griffonnée à la hâte",
 	[408976] = "Tome ancien",
 	[409835] = "Monticule de terre meuble",
-	[410267] = "Fruit du Rêve",
 	[413784] = "Cookies auto préparés à base d’herbes",
 	[9000000] = "Pierre de vent sculptée",
 	[9999891] = "Objectic principal uniquement",
@@ -23428,7 +23428,6 @@ localize(_.ObjectNames, {
 	[405515] = "Scatola Incantata",
 	[408224] = "Pietra Scarabocchiata di Fretta",
 	[409835] = "Mucchio di Terra Smossa",
-	[410267] = "Frutto del Sogno",
 	[413784] = "Biscotti alle Erbe Autocuocenti",
 	[9999912] = "|cFFFFFFFFStep 5:|r Guardiano Diligente",
 	[9999915] = "|cFFFFFFFFStep 8:|r Guardia di Pietra",
@@ -23566,6 +23565,7 @@ localize(L.FILTER_ID_TYPES, {
 });
 localize(_.ObjectNames, {
 	[31] = "오래된 사자상",
+	[33] = "잠긴 궤짝",
 	[34] = "낡은 단지",
 	[35] = "선장의 사물함",
 	[36] = "부서진 통",
@@ -26529,7 +26529,6 @@ localize(_.ObjectNames, {
 	[404432] = "[Blood Soaked Book]",
 	[404492] = "금빛 꽃병",
 	[405515] = "마력 깃든 상자",
-	[410267] = "꿈과일",
 	[413784] = "알아서 구워지는 약초 쿠키",
 	[9999912] = "|cFFFFFFFFStep 5:|r 성실한 감시자",
 	[9999915] = "|cFFFFFFFFStep 8:|r 바위 감시병",
@@ -26601,6 +26600,7 @@ localize(L.FILTER_ID_TYPES, {
 });
 localize(_.ObjectNames, {
 	[31] = "Estátua de Leão Antiga",
+	[33] = "Baú Trancado",
 	[34] = "Velho Garrafão",
 	[35] = "Maleta do Capitão",
 	[36] = "Barril Quebrado",
@@ -29738,7 +29738,6 @@ localize(_.ObjectNames, {
 	[409019] = "Bilhete Escrito Às Pressas",
 	[409020] = "Bilhete para Kritha",
 	[409835] = "Monte de Terra Solta",
-	[410267] = "Fruta do Sonho",
 	[413784] = "Biscoitos Vegetais Autoassados",
 	[9999912] = "|cFFFFFFFFStep 5:|r Vigia Diligente",
 	[9999915] = "|cFFFFFFFFStep 8:|r Observador de Pedra",
@@ -29955,6 +29954,7 @@ localize(L.FILTER_ID_TYPES, {
 });
 localize(_.ObjectNames, {
 	[31] = "Статуя старого льва",
+	[33] = "Запертый сундук",
 	[34] = "Старый кувшин",
 	[35] = "Сундучок капитана",
 	[36] = "Разбитая бочка",
@@ -33192,7 +33192,6 @@ localize(_.ObjectNames, {
 	[409835] = "Куча рыхлой земли",
 	[410179] = "Куча рыхлой земли",
 	[410181] = "Куча рыхлой земли",
-	[410267] = "Сонный плод",
 	[413784] = "Самопекущееся печенье на травах",
 	[9999890] = "Оскверненная добыча",
 	[9999891] = "Только Основная Задача",
@@ -36424,7 +36423,6 @@ localize(_.ObjectNames, {
 	[405585] = "魔兽游戏箔纸袋",
 	[405586] = "魔兽游戏箔纸袋",
 	[405587] = "魔兽游戏箔纸袋",
-	[410267] = "美梦果",
 	[413784] = "自焙草药饼干",
 	[9000000] = "微风雕塑之石",
 	[9999890] = "已腐化拾取",

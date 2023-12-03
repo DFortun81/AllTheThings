@@ -1138,7 +1138,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(77834),	-- Quest "What Do I Call You?": Pick the title of "Archdruid" (druid)
 		q(78238),	-- Quest "What Do I Call You?": Pick the title of "Archmage" (mage)
 		q(78235),	-- Quest "What Do I Call You?": Pick the title of "Battlelord" (warrior)
-		--q(),	-- Quest "What Do I Call You?": Pick the title of "Deathlord"(dk)
+		q(77812),	-- Quest "What Do I Call You?": Pick the title of "Deathlord"(dk)
 		--q(),	-- Quest "What Do I Call You?": Pick the title of "Farseer" (shaman)
 		q(78258),	-- Quest "What Do I Call You?": Pick the title of "Grandmaster" (monk)
 		q(78246),	-- Quest "What Do I Call You?": Pick the title of "High Priest" (priest)

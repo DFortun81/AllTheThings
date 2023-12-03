@@ -1144,7 +1144,6 @@ root(ROOTS.Unsorted, {
 				q(77758),	--
 				q(77773),	--
 				q(77803),	--
-				q(77812),	--
 				q(77814),	--
 				q(77832),	-- Shadows upon shadows
 				q(77847),	--

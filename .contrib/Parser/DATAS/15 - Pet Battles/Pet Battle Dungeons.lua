@@ -87,7 +87,7 @@ root(ROOTS.PetBattles, petbattle(n(-795, bubbleDown({ ["timeline"] = { ADDED_5_4
 			q(46291, {	-- The Deadmines Strike Back
 				["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
 				["coord"] = { 41.6, 71.2, WESTFALL },
-				["sourceQuest"] = 46263,	-- Deadmines, Part Three?
+				["sourceQuest"] = 46293,	-- Deadmines, Part Three?
 				["g"] = {
 					spell(244502),	-- Manapoof Link: Westfall
 				},

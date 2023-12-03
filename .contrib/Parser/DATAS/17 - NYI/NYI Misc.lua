@@ -799,7 +799,6 @@ root(ROOTS.NeverImplemented, {
 				i(192646),	-- Aqueous Speck
 				i(195455),	-- Argali Cheese
 				i(195459),	-- Argali Milk
-				i(200825),	-- Assorted Debris
 				i(200768),	-- Assorted Salamanther Lures
 				i(198141),	-- Astral Essence
 				i(200613),	-- Aylaag Windstone Fragment
@@ -1099,7 +1098,6 @@ root(ROOTS.NeverImplemented, {
 				i(201191),	-- Back Scratcher
 				i(192685),	-- Battle-Hardened Fang
 				i(201198),	-- Beaded Bracelet
-				i(192610),	-- Beady Woodland Eye
 				i(201187),	-- Bent Lockpicks
 				i(201226),	-- Big Rock
 				i(201180),	-- Bone Necklace
@@ -1150,7 +1148,6 @@ root(ROOTS.NeverImplemented, {
 				i(201227),	-- Half-Eaten Stone
 				i(201228),	-- Handful of Gravel
 				i(201173),	-- Handful of Teeth
-				i(192657),	-- Hardy Cloven Hoof
 				i(193438),	-- Harrowing Osteal
 				i(201185),	-- Hidden Blade
 				i(192703),	-- Hide-Piercing Horn
@@ -1167,7 +1164,6 @@ root(ROOTS.NeverImplemented, {
 				i(192621),	-- Long-Toed Talon
 				i(192708),	-- Magnificent Antler
 				i(201200),	-- Makeshift Totem
-				i(192622),	-- Massive Beast Eye
 				i(192660),	-- Massive Hydra Claw
 				i(192623),	-- Massive Proto-Dragon Claw
 				i(192709),	-- Membranous Wing
@@ -1177,7 +1173,6 @@ root(ROOTS.NeverImplemented, {
 				i(200933),	-- Mushy Vegtable
 				i(193410),	-- Nauseating Stinger
 				i(192710),	-- Nearly Unbreakable Horn
-				i(201209),	-- Nibbled Fish Head
 				i(201730),	-- Nokhud Centaur Spear
 				i(201731),	-- Nokhud Centaur Staff
 				i(192627),	-- Obsidian Clump
@@ -1197,11 +1192,9 @@ root(ROOTS.NeverImplemented, {
 				i(192661),	-- Prehistoric Fin
 				i(192716),	-- Prehistoric Sediment
 				i(201196),	-- Pretty Flower
-				i(192629),	-- Primal Beast Claw
 				i(201194),	-- Pumice Hand Chalk
 				i(192662),	-- Pyretic Speck
 				i(192706),	-- Razor Quill
-				i(192630),	-- Reef Carapace
 				i(192605),	-- Reptilian Fang
 				i(192718),	-- Rock-Hard Eggshell
 				i(192650),	-- Roomy Shell
@@ -1214,7 +1207,6 @@ root(ROOTS.NeverImplemented, {
 				i(192664),	-- Serrated Pincer
 				i(201182),	-- Serrated Stone
 				i(192666),	-- Severed Roots
-				i(192632),	-- Sharp Bird Talon
 				i(201207),	-- Shells in a Conch
 				i(201162),	-- Shiny Metal Scraps
 				i(192668),	-- Short Rib
@@ -1260,7 +1252,6 @@ root(ROOTS.NeverImplemented, {
 				i(201164),	-- Titan Runestone
 				i(201204),	-- Tooth Bracelet
 				i(192665),	-- Torn Dragon Wing
-				i(192673),	-- Torn Ear
 				i(192728),	-- Undamaged Silk Gland
 				i(192729),	-- Unhinged Mandible
 				i(192674),	-- Unknown Titan Mechanism
