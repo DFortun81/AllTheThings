@@ -787,10 +787,22 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			--]]
 		}),
 		spell(2656, {	-- Smelting
-			i(36916),	-- Cobalt Bar
-			i(36913),	-- Saronite Bar
-			i(41163),	-- Titanium Bar
+			i(36916, {	-- Cobalt Bar
+				["cost"] = { { "i", 36909, 1 } },	-- Cobalt Ore
+			}),
+			i(36913, {	-- Saronite Bar
+				["cost"] = { { "i", 36912, 2 } },	-- Saronite Ore
+			}),
+			i(41163, {	-- Titanium Bar
+				["cost"] = { { "i", 36910, 2 } },	-- Titanium Ore
+			}),
 			i(37663, {	-- Titansteel Bar
+				["cost"] = {
+					{ "i", 41163, 3 },	-- Titanium Bar
+					{ "i", 35624, 1 },	-- Eternal Earth
+					{ "i", 36860, 1 },	-- Eternal Fire
+					{ "i", 35627, 1 },	-- Eternal Shadow
+				},
 				["OnTooltip"] = [[function(t)
 					if _.CurrentCharacter.Spells[55208] then
 						if GetSpellCooldown(55208) > 0 then
