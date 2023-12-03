@@ -133,51 +133,50 @@ local function CanAttachTooltips()
 end
 -- Tooltip Functions
 local function AttachTooltipRawSearchResults(self, lineNumber, group)
-	if group then
-		-- app.PrintDebug("Tooltip lines before search results",group.hash,group.tooltipInfo and #group.tooltipInfo)
-		-- if app.Debugging then app.PrintTable(group.tooltipInfo) end
-		-- If there was info text generated for this search result, then display that first.
-		if group.tooltipInfo and #group.tooltipInfo > 0 then
-			local left, right;
-			for _,entry in ipairs(group.tooltipInfo) do
-				left = entry.left;
-				right = entry.right;
-				if right then
-					self:AddDoubleLine(left or " ", right);
-				elseif entry.r then
-					if entry.wrap then
-						self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255, 1);
-					else
-						self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255);
-					end
+	if not group then return end
+	-- app.PrintDebug("Tooltip lines before search results",group.hash,group.tooltipInfo and #group.tooltipInfo)
+	-- if app.Debugging then app.PrintTable(group.tooltipInfo) end
+	-- If there was info text generated for this search result, then display that first.
+	if group.tooltipInfo and #group.tooltipInfo > 0 then
+		local left, right;
+		for _,entry in ipairs(group.tooltipInfo) do
+			left = entry.left;
+			right = entry.right;
+			if right then
+				self:AddDoubleLine(left or " ", right);
+			elseif entry.r then
+				if entry.wrap then
+					self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255, 1);
 				else
-					if entry.wrap then
-						self:AddLine(left, nil, nil, nil, 1);
-					else
-						self:AddLine(left);
-					end
+					self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255);
+				end
+			else
+				if entry.wrap then
+					self:AddLine(left, nil, nil, nil, 1);
+				else
+					self:AddLine(left);
 				end
 			end
 		end
-
-		-- If the user has Show Collection Progress turned on.
-		if group.encounterID then
-			self:Show();
-		elseif group.collectionText and self:NumLines() > 0 then
-			local rightSide = _G[self:GetName() .. "TextRight" .. (lineNumber or 1)];
-			if rightSide then
-				if self.CloseButton then
-					-- dont think the region for the rightText can be modified within the tooltip, so pad instead
-					rightSide:SetText(group.collectionText .. "     ");
-				else
-					rightSide:SetText(group.collectionText);
-				end
-				rightSide:Show();
-			end
-		end
-
-		self.AttachComplete = not group.working;
 	end
+
+	-- If the user has Show Collection Progress turned on.
+	if group.encounterID then
+		self:Show();
+	elseif group.collectionText and self:NumLines() > 0 then
+		local rightSide = _G[self:GetName() .. "TextRight" .. (lineNumber or 1)];
+		if rightSide then
+			if self.CloseButton then
+				-- dont think the region for the rightText can be modified within the tooltip, so pad instead
+				rightSide:SetText(group.collectionText .. "     ");
+			else
+				rightSide:SetText(group.collectionText);
+			end
+			rightSide:Show();
+		end
+	end
+
+	self.AttachComplete = not group.working;
 end
 local function AttachTooltipSearchResults(self, lineNumber, search, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",search,...)
