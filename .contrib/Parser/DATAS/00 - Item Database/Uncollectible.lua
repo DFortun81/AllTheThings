@@ -554,6 +554,8 @@ i(201466);	-- Mote of Dreams
 i(201467);	-- Emerald Bloom
 i(192624);	-- Cracked Scales
 i(192747);	-- Broken Branch
+i(192625);	-- Motionless Stone
+i(201468);	-- Verdant Swirl
 
 
 -- ^^ Not cleaned

@@ -1033,7 +1033,6 @@ root(ROOTS.NeverImplemented, {
 				i(200812),	-- Unmelting Crystalline Structure
 				i(198453),	-- Unstable Azerite Grenade
 				i(200951),	-- Valdrakken Critter Snacks
-				i(201468),	-- Verdant Swirl
 				i(200703),	-- Vine Flower Fibers
 				i(200819),	-- Volatile Sparks
 				i(200870),	-- Vorquin Essence
@@ -1174,7 +1173,6 @@ root(ROOTS.NeverImplemented, {
 				i(192709),	-- Membranous Wing
 				i(192714),	-- Mgrrrl
 				i(192695),	-- Molten Mandible
-				i(192625),	-- Motionless Stone
 				i(200105),	-- Muck Covered Flotsam
 				i(200933),	-- Mushy Vegtable
 				i(193410),	-- Nauseating Stinger
