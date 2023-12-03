@@ -1952,7 +1952,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 				for left,splitCount in pairs(splitCounts) do
 					if splitCount.count < 6 then
-						if #splitCount.variants < 1 then
+						if #splitCount.variants == 0 then
 							tinsert(info, 1, { left = left, wrap = not string.find(left, " > ") });
 							count = count + 1;
 						else
@@ -2896,7 +2896,14 @@ function app:GetDataCache()
 				isPromotionCategory = true
 			});
 		end
-
+		
+		-- Season of Discovery
+		if app.Categories.SeasonOfDiscovery then
+			for i,o in ipairs(app.Categories.SeasonOfDiscovery) do
+				tinsert(g, o);
+			end
+		end
+		
 		-- Skills
 		if app.Categories.Skills then
 			tinsert(g, {
@@ -3073,6 +3080,11 @@ local SCARAB_LORD = {
 };
 local function AttachTooltipRawSearchResults(self, lineNumber, group)
 	if group then
+		-- If nothing was put into the tooltip initially, mark the text of the source.
+		if self:NumLines() == 0 then
+			self:AddDoubleLine(group.name or group.text, " ", 1, 1, 1, 1);
+		end
+		
 		-- If there was info text generated for this search result, then display that first.
 		if group.tooltipInfo and #group.tooltipInfo > 0 then
 			local left, right, o;
@@ -10711,16 +10723,8 @@ local function RowOnEnter(self)
 				local link = reference.link;
 				if link then
 					pcall(GameTooltip.SetHyperlink, GameTooltip, link);
-					if reference.spellID then
-						local requireSkill = GetRelativeValue(reference, "requireSkill");
-						if requireSkill == 333 then
-							AttachTooltipSearchResults(GameTooltip, 1, "spellID:" .. reference.spellID, SearchForField, "spellID", reference.spellID);
-						elseif requireSkill == 960 then
-							GameTooltip:AddLine(GameTooltipTextLeft1:GetText(), 1, 1, 1, true);
-							GameTooltipTextLeft1:SetText(reference.name);
-							GameTooltip:Show();
-						end
-					end
+					local spellID = reference.spellID;
+					if spellID then AttachTooltipSearchResults(GameTooltip, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID); end
 				end
 			end
 		end
