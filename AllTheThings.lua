@@ -2713,6 +2713,17 @@ local ResolveFunctions = {
 			val = select(i, ...);
 			cache = SearchForField(field, val);
 			if #cache > 0 then
+				-- the default search includes Things which are also related to the search thing, which symlinks
+				-- don't really expect, so we also need to filter these selects by making sure the results
+				-- have the field being searched... maybe should move into the Cache logic directly as an alternate search
+				local o
+				for k=#cache,1,-1 do
+					o = cache[k];
+					if o[field] ~= val then
+						tremove(cache, k);
+						-- app.PrintDebug("removed select",field,val,"=>",o.hash)
+					end
+				end
 				ArrayAppend(searchResults, cache);
 			else
 				app.print("Failed to select ", field, val);
@@ -3280,9 +3291,10 @@ local SubroutineCache = {
 	end,
 	["common_vendor"] = function(finalized, searchResults, o, cmd, npcID)
 		local select, pop, is = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.is;
-		select(finalized, searchResults, o, "select", "creatureID", npcID);	-- Main Vendor
+		select(finalized, searchResults, o, "select", "npcID", npcID);	-- Main Vendor
 		pop(finalized, searchResults);	-- Remove Main Vendor and push his children into the processing queue.
-		is(finalized, searchResults, o, "is", "itemID");	-- Only Items
+		-- TODO: don't think we will need this anymore with 'select' fixes to only pull actual Thing being selected
+		-- is(finalized, searchResults, o, "is", "itemID");	-- Only Items
 	end,
 	-- TW Instance
 	["tw_instance"] = function(finalized, searchResults, o, cmd, instanceID)
