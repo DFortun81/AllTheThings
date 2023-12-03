@@ -3846,7 +3846,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 A Simple Compass
-							["provider"] = { "i", 2998 },	-- A Simple Compass
+							["providers"] = {
+								{ "i", 2998 },	-- A Simple Compass
+								{ "o", 1166 },	-- Alexston's Chest
+							},
 							["coord"] = { 36.3, 54.6, WESTFALL },
 						}),
 					},
@@ -5658,7 +5661,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if BEFORE TBC
 			n(TREASURES, {
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(205864, {	-- Charred Note
-					--["provider"] = { "o",  },	-- Charred Note -- CLASSICTODO
+					["provider"] = { "o", 402215 },	-- Charred Note
 					["questID"] = 75939,	-- Charred Note HQT / Might Also be 75940
 					["coord"] = { 33.0, 24.75, STORMWIND_CITY },
 					["maps"] = { DUSKWOOD },

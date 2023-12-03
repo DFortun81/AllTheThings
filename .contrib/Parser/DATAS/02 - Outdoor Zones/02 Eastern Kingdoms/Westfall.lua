@@ -1316,6 +1316,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if BEFORE TBC
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(210537, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {	-- Undying Laborer
+					["coord"] = { 31.8, 43.5, WESTFALL },
+					["groups"] = {
+						i(208849, {	-- Libram of Blessings
+							["classes"] = { PALADIN },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								recipe(425618),	-- Engrave Chest - Horn of Lordaeron
+							},
+						}),
+						i(205905, {	-- Memory of a Devout Champion
+							["classes"] = { PRIEST },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								recipe(425215),	-- Engrave Chest - Twisted Faith
+							},
+						}),
+					},
+				}))),
+				-- #endif
 				n(462, {	-- Vultros
 					-- #if AFTER CATA
 					["coords"] = {
@@ -1351,6 +1372,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if AFTER 9.0.2
 			n(TREASURES, {
 				o(357515, sharedDataSelf({ ["timeline"] = { ADDED_9_0_2 } }, {	-- Sack of Oats
 					["coords"] = {
@@ -1383,6 +1405,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 			}),
+			-- #endif
 			n(VENDORS, {
 				n(1669, {	-- Defias Profiteer <Free Wheeling Merchant>
 					["coord"] = { 43.4, 66.8, WESTFALL },
