@@ -1019,8 +1019,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 15,
 					["groups"] = {
 						objective(1, {	-- 0/1 Oslow's Toolbox
-							["provider"] = { "i", 1309 },	-- Oslow's Toolbox
-							["coord"] = { 41.4, 54.4, REDRIDGE_MOUNTAINS },
+							["providers"] = {
+								{ "i", 1309 },	-- Oslow's Toolbox
+								{ "o", 32 },	-- Sunken Chest
+							},
+							["coord"] = { 41.5, 54.68, REDRIDGE_MOUNTAINS },
 						}),
 						i(2313),	-- Medium Armor Kit
 					},

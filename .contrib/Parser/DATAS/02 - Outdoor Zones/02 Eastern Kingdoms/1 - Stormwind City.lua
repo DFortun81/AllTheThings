@@ -3972,7 +3972,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 16,
 					["groups"] = {
 						objective(2, {	-- 0/2 Clara's Fresh Apple
-							["provider"] = { "i", 8683 },	-- Clara's Fresh Apple
+							["providers"] = {
+								{ "i",   8683 },	-- Clara's Fresh Apple
+								{ "o", 142076 },	-- Clara's Fresh Apples
+							},
 							["coord"] = { 34, 57.2, ELWYNN_FOREST },
 						}),
 					},

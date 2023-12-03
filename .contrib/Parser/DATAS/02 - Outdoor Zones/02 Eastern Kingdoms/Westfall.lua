@@ -181,6 +181,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["providers"] = {
 						{ "o", 34 },	-- Old Jug
 						{ "i", 1362 },	-- Final Clue to Sander's Treasure
+						{ "o", 33 },	-- Locked Chest
 					},
 					["sourceQuest"] = 139,	-- Captain Sander's Hidden Treasure (3/4)
 					["coords"] = {

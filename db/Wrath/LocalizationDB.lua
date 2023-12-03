@@ -1323,6 +1323,8 @@ _.FlightPathNames = {
 -- Object Database Module
 _.ObjectNames = {
 	[31] = "Old Lion Statue",
+	[32] = "Sunken Chest",
+	[33] = "Locked Chest",
 	[34] = "Old Jug",
 	[35] = "Captain's Footlocker",
 	[36] = "Broken Barrel",
@@ -1489,6 +1491,7 @@ _.ObjectNames = {
 	[141853] = "Violet Tragan",
 	[141979] = "Ancient Treasure",
 	[142071] = "Egg-O-Matic",
+	[142076] = "Clara's Fresh Apples",
 	[142088] = "Tablet of Will",
 	[142122] = "Wanted Poster",
 	[142127] = "Rin'ji's Secret",
@@ -2677,6 +2680,8 @@ _.ObjectIcons = {
 }
 _.ObjectModels = {
 	[31] = 189908,
+	[32] = 196976,
+	[33] = 196979,
 	[34] = 189821,
 	[35] = 198238,
 	[36] = 199567,
@@ -2843,6 +2848,7 @@ _.ObjectModels = {
 	[141853] = 203791,
 	[141979] = 199748,
 	[142071] = 197760,
+	[142076] = 199734,
 	[142088] = 200640,
 	[142122] = 199421,
 	[142127] = 200640,
@@ -3473,6 +3479,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 });
 localize(_.ObjectNames, {
 	[31] = "Alte Löwenstatue",
+	[32] = "Versunkene Truhe",
+	[33] = "Verschlossene Truhe",
 	[34] = "Alter Henkelkrug",
 	[35] = "Schließkiste des Kapitäns",
 	[36] = "Zerbrochenes Fass",
@@ -3637,6 +3645,7 @@ localize(_.ObjectNames, {
 	[141853] = "Violetter Tragan",
 	[141979] = "Antiker Schatz",
 	[142071] = "Ei-o-Mat",
+	[142076] = "Claras frische Äpfel",
 	[142088] = "Schrifttafel des Willens",
 	[142122] = "Steckbrief",
 	[142127] = "Rin'jis Geheimnis",
@@ -4246,6 +4255,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 });
 localize(_.ObjectNames, {
 	[31] = "Estatua de león antigua",
+	[32] = "Cofre sumergido",
+	[33] = "Cofre cerrado",
 	[34] = "Vieja jarra",
 	[35] = "Baúl del Capitán",
 	[36] = "Barrica rota",
@@ -4411,6 +4422,7 @@ localize(_.ObjectNames, {
 	[141853] = "Tragano violeta",
 	[141979] = "Tesoro antiguo",
 	[142071] = "Huevomático",
+	[142076] = "Manzanas Frescas de Clara",
 	[142088] = "Tablilla de Voluntad",
 	[142122] = "Cartel de Se busca",
 	[142127] = "Secreto de Rin'ji",
@@ -5045,6 +5057,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 });
 localize(_.ObjectNames, {
 	[31] = "Statue du vieux lion",
+	[32] = "Coffre englouti",
+	[33] = "Coffre verrouillé",
 	[34] = "Vieille cruche",
 	[35] = "Coffre du capitaine",
 	[36] = "Tonneau cassé",
@@ -5210,6 +5224,7 @@ localize(_.ObjectNames, {
 	[141853] = "Tragan pourpre",
 	[141979] = "Trésor ancien",
 	[142071] = "Œuf-O-Matic",
+	[142076] = "Pommes fraîches de Clara",
 	[142088] = "Tablette de volonté",
 	[142122] = "Avis de recherche",
 	[142127] = "Secret de Rin'ji",
@@ -6592,6 +6607,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 });
 localize(_.ObjectNames, {
 	[31] = "오래된 사자상",
+	[32] = "가라앉은 상자",
+	[33] = "잠긴 궤짝",
 	[34] = "낡은 단지",
 	[35] = "선장의 사물함",
 	[36] = "부서진 통",
@@ -7352,6 +7369,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 });
 localize(_.ObjectNames, {
 	[31] = "Estátua de Leão Antiga",
+	[32] = "Baú Afundado",
+	[33] = "Baú Trancado",
 	[34] = "Velho Garrafão",
 	[35] = "Maleta do Capitão",
 	[36] = "Barril Quebrado",
@@ -8152,6 +8171,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 });
 localize(_.ObjectNames, {
 	[31] = "Статуя старого льва",
+	[32] = "Затонувший сундук",
+	[33] = "Запертый сундук",
 	[34] = "Старый кувшин",
 	[35] = "Сундучок капитана",
 	[36] = "Разбитая бочка",
@@ -8317,6 +8338,7 @@ localize(_.ObjectNames, {
 	[141853] = "Фиалковый траган",
 	[141979] = "Древнее сокровище",
 	[142071] = "Яйц-О-Матик",
+	[142076] = "Свежие яблоки Клары",
 	[142088] = "Табличка воли",
 	[142122] = "Плакат \"Разыскивается\"",
 	[142127] = "Секрет Рин'джи",
@@ -8974,6 +8996,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 });
 localize(_.ObjectNames, {
 	[31] = "陈旧的石狮子",
+	[32] = "沉没的箱子",
 	[34] = "旧罐子",
 	[35] = "船长的手提箱",
 	[36] = "破酒桶",
