@@ -53,15 +53,45 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						["cost"] = {{"c", CURRENCY_DREAM_INFUSION, 1}},
 					},FILTERFUNC_itemID,{
 						filter(BATTLE_PETS, {
-							i(210553),	-- Dreamborne Scarab (PET!)
-							i(210555),	-- Dreamhoof (PET!)
-							i(210777),	-- Drowsey (PET!)
-							i(210567),	-- Memorie (PET!)
 							i(210785, {	-- Snorr (PET!)
 								["cost"] = {{ "i", 210776, 1 }},	-- 1x Lesser Dream Infusion
 							}),
-							i(210652),	-- Somnolet (PET!)
-							i(210505),	-- Reverie (PET!)
+							i(210553, {	-- Dreamborne Scarab (PET!)
+								["providers"] = {
+									{"n",203292},	-- Endmite
+								},
+							}),
+							i(210555, {	-- Dreamhoof (PET!)
+								["providers"] = {
+									{"n",210692},	-- Juniper
+									{"n",211288},	-- Leyhart
+									{"n",210691},	-- Spruce
+								},
+							}),
+							i(210777, {	-- Drowsey (PET!)
+								["providers"] = {
+									{"n",205121},	-- Tricky
+								},
+							}),
+							i(210567, {	-- Memorie (PET!)
+								["providers"] = {
+									{"n",211177},	-- Fol'ya Pup
+									{"n",210570},	-- Napps
+									{"n",210571},	-- Snoozles
+								},
+							}),
+							i(210652, {	-- Somnolet (PET!)
+								["providers"] = {
+									-- {"n",???},	-- Dustie
+									{"n",211182},	-- Sapnibbler
+									{"n",210648},	-- Seedle
+								},
+							}),
+							i(210505, {	-- Reverie (PET!)
+								["providers"] = {
+									{"n",193484},	-- Pilot
+								},
+							}),
 						}),
 						filter(MOUNTS, {
 							i(210831),	-- Delugen (MOUNT!)
