@@ -552,6 +552,8 @@ i(199204);	-- Torn Resilient Leather Scraps
 i(192626);	-- Mound of Dust
 i(201466);	-- Mote of Dreams
 i(201467);	-- Emerald Bloom
+i(192624);	-- Cracked Scales
+i(192747);	-- Broken Branch
 
 
 -- ^^ Not cleaned

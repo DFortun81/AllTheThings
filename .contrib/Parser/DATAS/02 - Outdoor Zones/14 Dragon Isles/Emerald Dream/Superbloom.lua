@@ -8,7 +8,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				ach(19313),	-- Bloom Man Group
 				ach(19315),	-- Dream Chaser
 				ach(19310, {	-- Fruit of the Bloom
-					["provider"] = {"o",410267},	-- Dreamfruit (there's multiple ID's but we only care about the name)
+					-- need to revise this... there are other Dreamfruit which don't provide these powers :weary:
+					-- would need coords accurately for them to match properly
+					-- ["provider"] = {"o",410267},	-- Dreamfruit (there's multiple ID's but we only care about the name)
 					-- Parser handles the criteria
 					-- crit(62910),	-- Basket of Explosive Acorns
 					-- crit(62911),	-- Bubble Blowgun

@@ -1107,12 +1107,10 @@ root(ROOTS.NeverImplemented, {
 				i(201205),	-- Bone Toothpick
 				i(201211),	-- Bottled Ear Wax
 				i(192611),	-- Bottled Torrent
-				i(192747),	-- Broken Branch
 				i(201165),	-- Burnished Bauble
 				i(200533),	-- Bygone Idol
 				i(192686),	-- Charred Carapace
 				i(192655),	-- Chilling Spider Leg
-				i(192624),	-- Cracked Scales
 				i(201178),	-- Cracked Skull
 				i(192688),	-- Cracked Stone Bracers
 				i(201216),	-- Crumbled Elemental Spark
