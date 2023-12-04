@@ -58,38 +58,38 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							}),
 							i(210553, {	-- Dreamborne Scarab (PET!)
 								["providers"] = {
-									{"n",203292},	-- Endmite
+									{"i",203292},	-- Endmite
 								},
 							}),
 							i(210555, {	-- Dreamhoof (PET!)
 								["providers"] = {
-									{"n",210692},	-- Juniper
-									{"n",211288},	-- Leyhart
-									{"n",210691},	-- Spruce
+									{"i",210692},	-- Juniper
+									{"i",211288},	-- Leyhart
+									{"i",210691},	-- Spruce
 								},
 							}),
 							i(210777, {	-- Drowsey (PET!)
 								["providers"] = {
-									{"n",205121},	-- Tricky
+									{"i",205121},	-- Tricky
 								},
 							}),
 							i(210567, {	-- Memorie (PET!)
 								["providers"] = {
-									{"n",211177},	-- Fol'ya Pup
-									{"n",210570},	-- Napps
-									{"n",210571},	-- Snoozles
+									{"i",211177},	-- Fol'ya Pup
+									{"i",210570},	-- Napps
+									{"i",210571},	-- Snoozles
 								},
 							}),
 							i(210652, {	-- Somnolet (PET!)
 								["providers"] = {
-									-- {"n",???},	-- Dustie
-									{"n",211182},	-- Sapnibbler
-									{"n",210648},	-- Seedle
+									-- {"i",???},	-- Dustie
+									{"i",211182},	-- Sapnibbler
+									{"i",210648},	-- Seedle
 								},
 							}),
 							i(210505, {	-- Reverie (PET!)
 								["providers"] = {
-									{"n",193484},	-- Pilot
+									{"i",193484},	-- Pilot
 								},
 							}),
 						}),
