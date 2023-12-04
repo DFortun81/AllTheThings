@@ -27,7 +27,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							{"pop"},								-- Discard the Header and acquire all of their children.
 							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
 							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
+							{"extract", "itemID"},					-- Only Items!
 							{"invtype", "INVTYPE_WAIST" },
 						},
 					}),
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							{"pop"},								-- Discard the Header and acquire all of their children.
 							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
 							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
+							{"extract", "itemID"},					-- Only Items!
 							{"invtype", "INVTYPE_FEET" },
 						},
 					}),
@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							{"pop"},								-- Discard the Header and acquire all of their children.
 							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
 							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
+							{"extract", "itemID"},					-- Only Items!
 							{"invtype", "INVTYPE_WRIST" },
 						},
 					}),
@@ -62,7 +62,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							{"pop"},								-- Discard the Header and acquire all of their children.
 							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
 							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
+							{"extract", "itemID"},					-- Only Items!
 							{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
 						},
 					}),
@@ -72,7 +72,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							{"pop"},								-- Discard the Header and acquire all of their children.
 							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
 							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
+							{"extract", "itemID"},					-- Only Items!
 							{"invtype", "INVTYPE_CLOAK" },
 						},
 					}),
@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							{"pop"},								-- Discard the Header and acquire all of their children.
 							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
 							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
+							{"extract", "itemID"},					-- Only Items!
 							{"invtype", "INVTYPE_HAND" },
 						},
 					}),
@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							{"pop"},								-- Discard the Header and acquire all of their children.
 							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
 							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
+							{"extract", "itemID"},					-- Only Items!
 							{"invtype", "INVTYPE_HEAD" },
 						},
 					}),
@@ -102,7 +102,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							{"pop"},								-- Discard the Header and acquire all of their children.
 							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
 							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
+							{"extract", "itemID"},					-- Only Items!
 							{"invtype", "INVTYPE_LEGS" },
 						},
 					}),
@@ -122,7 +122,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							{"pop"},								-- Discard the Header and acquire all of their children.
 							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
 							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
+							{"extract", "itemID"},					-- Only Items!
 							{"invtype", "INVTYPE_SHOULDER" },
 						},
 					}),

@@ -8,9 +8,8 @@ local SymPvPFilter = function(SeasonID, HeaderID, FilterID, Extra)
 		{"where", "headerID", SeasonID},		-- Season
 		{"pop"},								-- Discard the Season Header and acquire all of their children.
 		{"where", "headerID", HeaderID},		-- Header
-		{"pop"},								-- Discard the Header and acquire all of their children.
-		{"where", "filterID", FilterID},		-- Filter
-		{"pop"},								-- Discard the Filter Header and acquire all of their children.
+		{"extract","itemID"},					-- Extract Items
+		{"where", "f", FilterID},				-- Filter
 
 		{"select", "itemID", Extra }
 	}
@@ -23,9 +22,8 @@ local SymPvPFilterDouble = function(HeaderID, FilterID, Extra)
 		{"where", "headerID", SEASON_ETERNAL},	-- Eternal Season
 		{"pop"},								-- Discard the Eternal Season Header and acquire all of their children.
 		{"where", "headerID", HeaderID},		-- Header
-		{"pop"},								-- Discard the Header and acquire all of their children.
-		{"where", "filterID", FilterID},		-- Filter
-		{"pop"},								-- Discard the Filter Header and acquire all of their children.
+		{"extract","itemID"},					-- Extract Items
+		{"where", "f", FilterID},				-- Filter
 		{"finalize"},							-- Push Everything to the Queue
 
 		{"select", "tierID", SL_TIER},			-- Select Shadowlands
@@ -33,12 +31,8 @@ local SymPvPFilterDouble = function(HeaderID, FilterID, Extra)
 		{"where", "headerID", SEASON_COSMIC},	-- Cosmic Season
 		{"pop"},								-- Discard the Cosmic Season Header and acquire all of their children.
 		{"where", "headerID", HeaderID},		-- Header
-		{"pop"},								-- Discard the Header and acquire all of their children.
-		{"where", "filterID", FilterID},		-- Filter
-		{"pop"},								-- Discard the Filter Header and acquire all of their children.
-		{"finalize"},							-- Push Everything to the Queue
-
-		{"merge"},								-- Merge the Queue
+		{"extract","itemID"},					-- Extract Items
+		{"where", "f", FilterID},				-- Filter
 	}
 	if Extra then
 		local extraCmd = {"select", "itemID" };
@@ -73,9 +67,6 @@ local SymPvPClass = function(ClassID, Extra)
 		{"pop"},								-- Discard the Classes Header and acquire all of their children.
 		{"where", "classID", ClassID},			-- Class
 		{"pop"},								-- Discard the Class Header and acquire all of their children.
-		{"finalize"},							-- Push Everything to the Queue
-
-		{"merge"},								-- Merge the Queue
 	}
 	if Extra then
 		local extraCmd = {"select", "itemID" };
@@ -246,9 +237,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								{"where", "headerID", SEASON_ETERNAL},	-- Eternal Season
 								{"pop"},								-- Discard the Eternal Season Header and acquire all of their children.
 								{"where", "headerID", PVP_ASPIRANT},	-- Aspirant Gear
-								{"pop"},								-- Discard the Aspirant Header and acquire all of their children.
-								{"where", "headerID", WEAPONS},			-- Weapons
-								{"pop"},								-- Discard the Weapons Header and acquire all of their children.
+								{"find", "headerID", WEAPONS},			-- Weapons
+								{"extract","itemID"},					-- Extract Items
 								{"finalize"},							-- Push Everything to the Queue
 
 								{"select", "tierID", SL_TIER},			-- Select Shadowlands
@@ -256,12 +246,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								{"where", "headerID", SEASON_COSMIC},	-- Cosmic Season
 								{"pop"},								-- Discard the Cosmic Season Header and acquire all of their children.
 								{"where", "headerID", PVP_ASPIRANT},	-- Aspirant Gear
-								{"pop"},								-- Discard the Aspirant Header and acquire all of their children.
-								{"where", "headerID", WEAPONS},			-- Weapons
-								{"pop"},								-- Discard the Weapons Header and acquire all of their children.
-								{"finalize"},							-- Push Everything to the Queue
-
-								{"merge"},								-- Merge the Queue
+								{"find", "headerID", WEAPONS},			-- Weapons
+								{"extract","itemID"},					-- Extract Items
 							},
 						}),
 						i(201844, {	-- Ensemble: Cosmic Aspirant's Cloth Armor
