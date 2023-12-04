@@ -2719,22 +2719,12 @@ local ResolveFunctions = {
 	["select"] = function(finalized, searchResults, o, cmd, field, ...)
 		local cache, val;
 		local vals = select("#", ...);
+		local Search = app.SearchForObject
 		for i=1,vals do
 			val = select(i, ...);
-			cache = SearchForField(field, val);
-			if #cache > 0 then
-				-- the default search includes Things which are also related to the search thing, which symlinks
-				-- don't really expect, so we also need to filter these selects by making sure the results
-				-- have the field being searched... maybe should move into the Cache logic directly as an alternate search
-				-- local o
-				-- for k=#cache,1,-1 do
-				-- 	o = cache[k];
-				-- 	if o[field] ~= val then
-				-- 		tremove(cache, k);
-				-- 		-- app.PrintDebug("removed select",field,val,"=>",o.hash)
-				-- 	end
-				-- end
-				ArrayAppend(searchResults, cache);
+			cache = Search(field, val, "field", true);
+			if cache then
+				ArrayAppend(searchResults, cache)
 			else
 				app.print("Failed to select ", field, val);
 			end
