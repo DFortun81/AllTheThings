@@ -1165,6 +1165,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 1339,	-- Mountaineer Stormpike's Task
 					["coord"] = { 24.7, 18.3, LOCH_MODAN },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 				}),
