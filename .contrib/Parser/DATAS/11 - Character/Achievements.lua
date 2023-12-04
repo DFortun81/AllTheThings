@@ -2,6 +2,84 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(ACHIEVEMENTS, {
+	ach(523, {	-- 5 Exalted Reputations
+		["timeline"] = { ADDED_3_0_2 },
+		["_noautomation"] = true,
+	}),
+	ach(524, {	-- 10 Exalted Reputations
+		["timeline"] = { ADDED_3_0_2 },
+		["_noautomation"] = true,
+	}),
+	ach(521, {	-- 15 Exalted Reputations
+		["timeline"] = { ADDED_3_0_2 },
+		["_noautomation"] = true,
+	}),
+	ach(520, {	-- 20 Exalted Reputations
+		["timeline"] = { ADDED_3_0_2 },
+		["_noautomation"] = true,
+	}),
+	ach(519, {	-- 25 Exalted Reputations
+		["timeline"] = { ADDED_3_0_2 },
+		["_noautomation"] = true,
+	}),
+	ach(518, {	-- 30 Exalted Reputations
+		["timeline"] = { ADDED_3_0_2 },
+		["_noautomation"] = true,
+	}),
+	ach(1014, {	-- 35 Exalted Reputations
+		["timeline"] = { ADDED_3_0_2 },
+		["_noautomation"] = true,
+	}),
+	ach(1015, {	-- 40 Exalted Reputations
+		["timeline"] = { ADDED_3_0_2 },
+		["g"] = {
+			title(46),		-- <Name> the Exalted
+		},
+		["_noautomation"] = true,
+	}),
+	ach(5374, { -- 45 Exalted Reputations
+		["timeline"] = { ADDED_4_0_3_LAUNCH },
+		["_noautomation"] = true,
+	}),
+	ach(5723, {	-- 50 Exalted Reputations
+		["timeline"] = { ADDED_4_0_6 },
+		["_noautomation"] = true,
+	}),
+	ach(6826, {	-- 55 Exalted Reputations
+		["timeline"] = { ADDED_5_0_4 },
+		["_noautomation"] = true,
+	}),
+	ach(6742, bubbleDownSelf({["timeline"] = {ADDED_5_0_4}}, {	-- 60 Exalted Reputations
+		["g"] = {
+			title(197),	-- <Name> the Beloved
+		},
+		["_noautomation"] = true,
+	})),
+	ach(11177, {	-- 70 Exalted Reputations
+		["timeline"] = { ADDED_7_0_3_LAUNCH },
+		["_noautomation"] = true,
+	}),
+	ach(12864, bubbleDownSelf({["timeline"] = {ADDED_8_0_1_LAUNCH}}, {	-- 80 Exalted Reputations
+		["g"] = {
+			title(380),		-- <Name> the Admired
+		},
+		["_noautomation"] = true,
+	})),
+	ach(12865, {	-- 90 Exalted Reputations
+		["timeline"] = { ADDED_8_0_1_LAUNCH },
+		["_noautomation"] = true,
+	}),
+	ach(12866, bubbleDownSelf({["timeline"] = {ADDED_8_0_1_LAUNCH}}, {	-- 100 Exalted Reputations
+		["g"] = {
+			i(163982),		-- Pureheart Courser (MOUNT!)
+			title(379),		-- Esteemed <Name>
+		},
+		["_noautomation"] = true,
+	})),
+	ach(18471, {	-- 110 Exalted Reputations
+		["timeline"] = { ADDED_10_1_5 },
+		["_noautomation"] = true,
+	}),
 	un(REMOVED_FROM_GAME, ach(9016, {	-- Breaker of the Black Harvest
 		un(REMOVED_FROM_GAME, title(256)),	-- of the Black Harvest
 	})),

@@ -4,106 +4,110 @@
 root(ROOTS.Zones, {
 	-- TODO: some of these are lacking lots of information! (crs/coords/etc.)
 	n(ACHIEVEMENTS, {
+		ach(973, {		-- 5 Daily Quests Completed
+			["timeline"] = { ADDED_3_0_2 },
+		}),
+		ach(974, {		-- 50 Daily Quests Completed
+			["timeline"] = { ADDED_3_0_2 },
+		}),
+		ach(975, {		-- 200 Daily Quests Completed
+			["timeline"] = { ADDED_3_0_2 },
+		}),
+		ach(976, {		-- 500 Daily Quests Completed
+			["timeline"] = { ADDED_3_0_2 },
+		}),
+		ach(977, {		-- 1000 Daily Quests Completed
+			["timeline"] = { ADDED_3_0_2 },
+		}),
+		ach(5751, {		-- 2500 Daily Quests Completed
+			["timeline"] = { ADDED_4_1_0 },
+		}),
+		ach(7410, {		-- 5000 Daily Quests Completed
+			["timeline"] = { ADDED_5_0_4 },
+		}),
 		ach(7411, {		-- 10000 Daily Quests Completed
-			ach(973),		-- 5 Daily Quests Completed
-			ach(974),		-- 50 Daily Quests Completed
-			ach(975),		-- 200 Daily Quests Completed
-			ach(976),		-- 500 Daily Quests Completed
-			ach(977),		-- 1000 Daily Quests Completed
-			ach(5751),		-- 2500 Daily Quests Completed
-			ach(7410),		-- 5000 Daily Quests Completed
+			["timeline"] = { ADDED_5_0_4 },
+		}),
+		ach(4956, {		-- 5 Dungeon Quests Completed
+			["timeline"] = { ADDED_4_0_3 },
 		}),
 		ach(4957, {		-- 20 Dungeon Quests Completed
-			ach(4956),		-- 5 Dungeon Quests Completed
+			["timeline"] = { ADDED_4_0_3 },
 		}),
-		ach(18471, {["timeline"] = {ADDED_10_1_5}, ["_noautomation"] = true}),	-- 110 Exalted Reputations
-		ach(12866, bubbleDownSelf({["timeline"] = {ADDED_8_0_1_LAUNCH}}, {	-- 100 Exalted Reputations
-			["g"] = {
-				i(163982),		-- Pureheart Courser (MOUNT!)
-				title(379),		-- Esteemed <Name>
-			},
-			["_noautomation"] = true,
-		})),
-		ach(12865, {["timeline"] = {ADDED_8_0_1_LAUNCH}, ["_noautomation"] = true}),		-- 90 Exalted Reputations
-		ach(12864, bubbleDownSelf({["timeline"] = {ADDED_8_0_1_LAUNCH}}, {	-- 80 Exalted Reputations
-			["g"] = {
-				title(380),		-- <Name> the Admired
-			},
-			["_noautomation"] = true,
-		})),
-		ach(11177, {["timeline"] = {ADDED_7_0_3_LAUNCH}, ["_noautomation"] = true}),		-- 70 Exalted Reputations
-		ach(6742, bubbleDownSelf({["timeline"] = {ADDED_5_0_4}}, {		-- 60 Exalted Reputations
-			["g"] = {
-				title(197),		-- <Name> the Beloved
-			},
-			["_noautomation"] = true,
-		})),
-		ach(6826, {["timeline"] = {ADDED_5_0_4}, ["_noautomation"] = true}),		-- 55 Exalted Reputations
-		ach(5723, {["timeline"] = {ADDED_4_0_6}, ["_noautomation"] = true}),		-- 50 Exalted Reputations
-		ach(5374, {["timeline"] = {ADDED_4_0_3_LAUNCH}, ["_noautomation"] = true}), -- 45 Exalted Reputations
-		ach(1015, {		-- 40 Exalted Reputations
-			["g"] = {
-				title(46),		-- <Name> the Exalted
-			},
-			["_noautomation"] = true,
+		ach(503, {		-- 50 Quests Completed
+			["timeline"] = { ADDED_3_0_2 },
 		}),
-		ach(1014, {		-- 35 Exalted Reputations
-			["_noautomation"] = true,
+		ach(504, {		-- 100 Quests Completed
+			["timeline"] = { ADDED_3_0_2 },
 		}),
-		ach(518, {		-- 30 Exalted Reputations
-			["_noautomation"] = true,
+		ach(505, {		-- 250 Quests Completed
+			["timeline"] = { ADDED_3_0_2 },
 		}),
-		ach(519, {		-- 25 Exalted Reputations
-			["_noautomation"] = true,
+		ach(506, {		-- 500 Quests Completed
+			["timeline"] = { ADDED_3_0_2 },
 		}),
-		ach(521, {		-- 15 Exalted Reputations
-			["_noautomation"] = true,
+		ach(507, {		-- 1000 Quests Completed
+			["timeline"] = { ADDED_3_0_2 },
 		}),
-		ach(524, {		-- 10 Exalted Reputations
-			["_noautomation"] = true,
+		ach(508, {		-- 1500 Quests Completed
+			["timeline"] = { ADDED_3_0_2 },
 		}),
-		ach(520, {		-- 20 Exalted Reputations
-			["_noautomation"] = true,
-		}),
-		ach(523, {		-- 5 Exalted Reputations
-			["_noautomation"] = true,
+		ach(32, {		-- 2000 Quests Completed
+			["timeline"] = { ADDED_4_0_1 },
 		}),
 		ach(978, {		-- 3000 Quests Completed
-			title(42),		-- the Seeker
-			ach(503),		-- 50 Quests Completed
-			ach(504),		-- 100 Quests Completed
-			ach(505),		-- 250 Quests Completed
-			ach(506),		-- 500 Quests Completed
-			ach(507),		-- 1000 Quests Completed
-			ach(508),		-- 1500 Quests Completed
-			ach(32),		-- 2000 Quests Completed
+			["timeline"] = { ADDED_4_0_1 },
+			["g"] = {
+				title(42),		-- <Name> the Seeker
+			},
+		}),
+		ach(11126, {	-- 50 World Quests Completed
+			["timeline"] = { ADDED_7_0_3 },
+		}),
+		ach(11127, {	-- 200 World Quests Completed
+			["timeline"] = { ADDED_7_0_3 },
+		}),
+		ach(11128, {	-- 500 World Quests Completed
+			["timeline"] = { ADDED_7_0_3 },
+		}),
+		ach(11129, {	-- 1000 World Quests Completed
+			["timeline"] = { ADDED_7_0_3 },
+		}),
+		ach(11130, {	-- 2500 World Quests Completed
+			["timeline"] = { ADDED_7_0_3 },
+		}),
+		ach(11131, {	-- 5000 World Quests Completed
+			["timeline"] = { ADDED_7_0_3 },
 		}),
 		ach(11132, {	-- 10,000 World Quests Completed
-			ach(11126),		-- 50 World Quests Completed
-			ach(11127),		-- 200 World Quests Completed
-			ach(11128),		-- 500 World Quests Completed
-			ach(11129),		-- 1000 World Quests Completed
-			ach(11130),		-- 2500 World Quests Completed
-			ach(11131),		-- 5000 World Quests Completed
+			["timeline"] = { ADDED_7_0_3 },
 		}),
-		ach(31),		-- A Simple Re-Quest
+		ach(31, {		-- A Simple Re-Quest
+			["timeline"] = { ADDED_3_0_2 },
+		}),
 		ach(948,   {	-- Ambassador of the Alliance
+			["timeline"] = { ADDED_3_0_2 },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				title(98),		-- Ambassador
+				title(98),		-- Ambassador <Name>
 				crit(5328),		-- Exalted Darnassus
 				crit(5332),		-- Exalted Exodar
+				-- #if AFTER CATA
 				crit(16826),	-- Exalted Gilneas
+				-- #endif
 				crit(5329),		-- Exalted Gnomeregan Exiles
 				crit(5330),		-- Exalted Ironforge
 				crit(5331),		-- Exalted Stormwind
 			},
 		}),
 		ach(762,   {	-- Ambassador of the Horde
+			["timeline"] = { ADDED_3_0_2 },
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				title(98),		-- Ambassador
+				title(98),		-- Ambassador <Name>
+				-- #if AFTER CATA
 				crit(16825),	-- Exalted Bilgewater Cartel
+				-- #endif
 				crit(5313),		-- Exalted Darkspear Trolls
 				crit(5314),		-- Exalted Orgrimmar
 				crit(5317),		-- Exalted Silvermoon City
@@ -133,7 +137,7 @@ root(ROOTS.Zones, {
 			}},
 		})),
 		ach(9924, {	-- Field Photographer
-			title(307),	-- Field Photographer
+			title(307),	-- Field Photographer <Name>
 			crit(27865),	-- Onyxia's Lair
 			crit(27863),	-- The Frozen Throne
 			crit(27866),	-- The Dark Portal
@@ -204,7 +208,7 @@ root(ROOTS.Zones, {
 		})),
 		ach(1833),	-- It's Happy Hour Somewhere
 		ach(5752, {		-- Justly Rewarded
-			ach(1182),		-- The Bread Winner
+			["timeline"] = { ADDED_4_1_0 },
 		}),
 		ach(4875, {	-- Loremaster of Cataclysm
 			["sym"] = {{"meta_achievement",
@@ -256,10 +260,13 @@ root(ROOTS.Zones, {
 			["_noautomation"] = true,
 		}),
 		ach(1832),	-- Tastes Like Chicken
+		ach(1182, {		-- The Bread Winner
+			["timeline"] = { ADDED_3_0_2 },
+		}),
 		ach(942,   {	-- The Diplomat (A)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
-				title(48),		-- the Diplomat
+				title(48),		-- <Name> the Diplomat
 				crit(2011),		-- Exalted with Timbermaw Hold
 				crit(5337),		-- Exalted with the Kurenai
 				crit(4757),		-- Exalted with the Sporeggar
@@ -268,7 +275,7 @@ root(ROOTS.Zones, {
 		ach(943,   {	-- The Diplomat (H)
 			["races"] = HORDE_ONLY,
 			["g"] = {
-				title(48),		-- the Diplomat
+				title(48),		-- <Name> the Diplomat
 				crit(2011),		-- Exalted with Timbermaw Hold
 				crit(5321),		-- Exalted with the Mag'har
 				crit(4757),		-- Exalted with the Sporeggar
@@ -291,7 +298,7 @@ root(ROOTS.Zones, {
 			["timeline"] = { "added 3.0.1", "removed 5.0.4.16016" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
-				title(93),	-- Loremaster
+				title(93),	-- Loremaster <Name>
 				i(43300),	-- Loremaster's Colors
 			},
 		})),
@@ -305,7 +312,7 @@ root(ROOTS.Zones, {
 			["timeline"] = { "added 3.0.1", "removed 5.0.4.16016" },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
-				title(93),	-- Loremaster
+				title(93),	-- Loremaster <Name>
 				i(43300),	-- Loremaster's Colors
 			},
 		})),
@@ -327,7 +334,7 @@ root(ROOTS.Zones, {
 			}},
 			["timeline"] = { "added 5.0.4.16016" },
 			["groups"] = {
-				title(93),		-- Loremaster
+				title(93),		-- Loremaster <Name>
 				i(43300),		-- Loremaster's Colors
 			},
 		}),
@@ -355,9 +362,11 @@ root(ROOTS.Zones, {
 				-- #endif
 			}},
 			["groups"] = {
-				title(47),	-- the Explorer
+				title(47),	-- <Name> the Explorer
 			},
 		})),
-		ach(13144),		-- Wide World of Quests
+		ach(13144, {	-- Wide World of Quests
+			["timeline"] = { ADDED_8_0_1 },
+		}),
 	}),
 })
