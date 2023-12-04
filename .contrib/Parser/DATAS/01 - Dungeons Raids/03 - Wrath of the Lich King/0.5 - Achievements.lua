@@ -4,10 +4,10 @@
 root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 	n(ACHIEVEMENTS, {
 		ach(3844, {	-- 1000 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1, "deleted 4.0.6" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 		}),
 		ach(4316, {	-- 2500 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1, "deleted 4.0.6" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(1658, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Champion of the Frozen Wastes
 			title(97),	-- , Champion of the Frozen Wastes
