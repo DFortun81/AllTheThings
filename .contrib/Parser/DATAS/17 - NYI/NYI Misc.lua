@@ -990,7 +990,6 @@ root(ROOTS.NeverImplemented, {
 				i(200775),	-- Self-Luminous Orb
 				i(200851),	-- Self-Trimming Bonsai
 				i(191849),	-- Serevite Angle Iron
-				i(199206),	-- Shattered Adamant Scales
 				i(200802),	-- Signet of the Dragonflights
 				i(199476),	-- Singed Cloth Scraps
 				i(200764),	-- Slimy Shinies
@@ -1192,7 +1191,6 @@ root(ROOTS.NeverImplemented, {
 				i(192716),	-- Prehistoric Sediment
 				i(201196),	-- Pretty Flower
 				i(201194),	-- Pumice Hand Chalk
-				i(192662),	-- Pyretic Speck
 				i(192706),	-- Razor Quill
 				i(192605),	-- Reptilian Fang
 				i(192718),	-- Rock-Hard Eggshell
@@ -1216,7 +1214,6 @@ root(ROOTS.NeverImplemented, {
 				i(200106),	-- Slimy Old Boot
 				i(192633),	-- Slit-Shaped Pupil
 				i(201221),	-- Small Titan Mechanism
-				i(192634),	-- Smashed Metal Scraps
 				i(201222),	-- Smooth Seashell
 				i(201179),	-- Snapped Tusk Tip
 				i(193387),	-- Solar Battery
@@ -1476,7 +1473,6 @@ root(ROOTS.NeverImplemented, {
 				------ Trash ------
 				i(210445),	-- Ash Pouch
 				i(210441),	-- Behemoth's Feather
-				i(210554),	-- Blazing Feather
 				i(210444),	-- Burning Flower
 				i(210450),	-- Flaming Orb
 				i(210449),	-- Heated Scales

@@ -1186,7 +1186,6 @@ root(ROOTS.Unsorted, {
 				q(78357),	--
 				q(78362),	--
 				q(78366),	--
-				q(78372),	-- Drake's Dreaming Crest
 				q(78377),	--
 				q(78380),	--
 				q(78389),	-- The Makers' Marathon	 PTR:Maker's Marathon
@@ -1217,8 +1216,6 @@ root(ROOTS.Unsorted, {
 				q(78576),	--
 				q(78577),	--
 				q(78578),	--
-				q(78581),	-- Dragon Isles Supplies
-				q(78582),	-- Dragon Isles Supplies
 				q(78584),	-- Dragon Isles Supplies
 				q(78585),	-- Dragon Isles Supplies
 				q(78586),	-- Dragon Isles Supplies

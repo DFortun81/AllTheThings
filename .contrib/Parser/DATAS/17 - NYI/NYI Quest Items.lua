@@ -337,7 +337,6 @@ root(ROOTS.NeverImplemented, {
 				i(191105),	-- Kerwal's Paw
 				i(192472),	-- Khanam Matra's Message
 				i(193397),	-- Kyrakka's Fangs
-				i(188213),	-- Large Green Bag
 				i(194435),	-- Large Tool
 				i(194744),	-- Lava-Charred Flesh
 				i(200873),	-- Leftover Bread

@@ -549,9 +549,6 @@ i(153119);	-- Wyrmtongue Cache of Finery
 
 
 i(199204);	-- Torn Resilient Leather Scraps
-i(192626);	-- Mound of Dust
-i(201466);	-- Mote of Dreams
-i(201467);	-- Emerald Bloom
 i(192624);	-- Cracked Scales
 i(192747);	-- Broken Branch
 i(192625);	-- Motionless Stone
@@ -580,9 +577,13 @@ i(201926);	-- Crushing
 --- Trash ---
 i(192610);	-- Beady Woodland Eye
 i(192622);	-- Massive Beast Eye
+i(192626);	-- Mound of Dust
 i(192629);	-- Primal Beast Claw
+i(192662);	-- Pyretic Speck
 i(192630);	-- Reef Carapace
 i(192632);	-- Sharp Bird Talon
+i(199206);	-- Shattered Adamant Scales
+i(192634);	-- Smashed Metal Scraps
 i(192657);	-- Hardy Cloven Hoof
 i(192673);	-- Torn Ear
 i(192717);	-- Animated Splinter
@@ -806,6 +807,9 @@ i(209034);	-- Half-Completed Invasion Plans (Dropped in Argus during Seeing Red 
 -- PATCH 10.2.0 --
 ------------------
 --- Trash ---
+i(210554);	-- Blazing Feather
+i(201467);	-- Emerald Bloom
 i(210451);	-- Imp Tail
+i(201466);	-- Mote of Dreams
 i(210452);	-- Small Demon Horn
 i(211270);	-- Pristine Core Leather

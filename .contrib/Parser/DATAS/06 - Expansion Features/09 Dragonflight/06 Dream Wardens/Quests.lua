@@ -58,6 +58,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 				}),
+				-- alts only
+				q(78581, {	-- Dragon Isles Supplies
+					["provider"] = { "n", 208143 },	-- Keeper Amrymn
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+				}),
 			}, {	-- RENOWN 9 --
 				q(78387, {	-- Plump Dreamseeds
 					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
@@ -72,6 +77,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			}, {	-- RENOWN 11 --
+				-- alts only
+				q(78582, {	-- Dragon Isles Supplies
+					["provider"] = { "n", 208143 },	-- Keeper Amrymn
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+				}),
 			}, {	-- RENOWN 12 --
 				q(78364, {	-- Drake's Dreaming Crest
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
@@ -96,6 +106,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}, {	-- RENOWN 18 --
 			}, {	-- RENOWN 19 --
+				q(78372, {	-- Drake's Dreaming Crest
+					["provider"] = { "n", 208143 },	-- Keeper Amrymn
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+				}),
 			}, {	-- RENOWN 20 --
 				q(78373, {	-- The Dream Thanks You
 					["provider"] = { "n", 211962 },	-- Melsysra
