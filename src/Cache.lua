@@ -2,8 +2,8 @@ do
 local appName, app = ...;
 
 -- Global locals
-local ipairs, tinsert, pairs, rawset, type, wipe, setmetatable, rawget
-	= ipairs, tinsert, pairs, rawset, type, wipe, setmetatable, rawget;
+local ipairs, tinsert, pairs, rawset, type, wipe, setmetatable, rawget, math_floor
+	= ipairs, tinsert, pairs, rawset, type, wipe, setmetatable, rawget, math.floor
 local C_Map_GetAreaInfo = C_Map.GetAreaInfo;
 
 -- App locals
@@ -754,6 +754,192 @@ local function SearchForSpecificGroups(t, group, hashes)
 	end
 end
 
+-- This method performs the SearchForField logic, but then may verifies that ONLY a specific matching, filtered-priority object is returned
+-- require - Determine the required level of matching found objects:
+-- * "key" - only accept objects whose key is also the field with value
+-- * "field" - only accept objects which contain the exact field with value
+-- * none - accept any object which is cached against the specific field value
+-- allowMultiple - Whether to return multiple matching objects as an array (within the 'require' restriction)
+local function SearchForObject(field, id, require, allowMultiple)
+	local fcache, count
+	-- Items are cached by base ItemID and ModItemID, so when searching by ItemID, use ModItemID for
+	-- match requirement accuracy
+	if field == "itemID" then
+		-- if we're NOT searching for a plain itemID, we have to be more careful
+		local idBase = math_floor(id)
+		if idBase ~= id then
+			fcache = SearchForField("modItemID", id);
+			-- if we found no specific modItemID results, then we can revert to basic itemID
+			if #fcache == 0 then
+				fcache = nil
+				id = idBase
+			end
+		end
+	end
+	fcache = fcache or SearchForField(field, id);
+	count = #fcache;
+	if count == 0 then
+		-- app.PrintDebug("SFO",field,id,require,"0~")
+		return
+	end
+	local fcacheObj;
+	require = (require == "key" and 2) or (require == "field" and 1) or 0;
+	-- quick escape for single cache results! hooray!
+	if count == 1 then
+		fcacheObj = fcache[1];
+		if (require == 0) or
+			(require == 1 and fcacheObj[field] == id) or
+			(require == 2 and fcacheObj.key == field and fcacheObj[field] == id)
+		then
+			-- app.PrintDebug("SFO",field,id,require,"1=",fcacheObj.hash)
+			return allowMultiple and {fcacheObj} or fcacheObj
+		end
+		-- one result, but doesn't meet the 'require'
+		-- app.PrintDebug("SFO",field,id,require,"1~",fcacheObj.hash)
+		return;
+	end
+
+	local keyMatch, fieldMatch, match;
+	local Filter = app.RecursiveCharacterRequirementsFilter;
+
+	-- split logic based on allowMultiple to reduce conditionals within loop
+	if allowMultiple then
+		local filterMatch
+		-- split logic based on require to reduce conditionals within loop
+		if require == 2 then
+			-- Key require
+			for i=1,count,1 do
+				fcacheObj = fcache[i];
+				-- field matching id
+				if fcacheObj[field] == id then
+					if fcacheObj.key == field then
+						-- with keyed-field matching key & current filters
+						if Filter(fcacheObj) then
+							-- app.PrintDebug("SFO",field,id,require,"F>",fcacheObj.hash)
+							if filterMatch then filterMatch[#filterMatch + 1] = fcacheObj
+							else filterMatch = {fcacheObj} end
+						end
+						if keyMatch then keyMatch[#keyMatch + 1] = fcacheObj
+						else keyMatch = {fcacheObj} end
+					end
+				end
+			end
+		elseif require == 1 then
+			-- Field require
+			for i=1,count,1 do
+				fcacheObj = fcache[i];
+				-- field matching id
+				if fcacheObj[field] == id then
+					if fcacheObj.key == field then
+						-- with keyed-field matching key & current filters
+						if Filter(fcacheObj) then
+							-- app.PrintDebug("SFO",field,id,require,"F>",fcacheObj.hash)
+							if filterMatch then filterMatch[#filterMatch + 1] = fcacheObj
+							else filterMatch = {fcacheObj} end
+						end
+						if keyMatch then keyMatch[#keyMatch + 1] = fcacheObj
+						else keyMatch = {fcacheObj} end
+					else
+						-- with field matching id
+						if fieldMatch then fieldMatch[#fieldMatch + 1] = fcacheObj
+						else fieldMatch = {fcacheObj} end
+					end
+				end
+			end
+		else
+			-- No require
+			for i=1,count,1 do
+				fcacheObj = fcache[i];
+				-- field matching id
+				if fcacheObj[field] == id then
+					if fcacheObj.key == field then
+						-- with keyed-field matching key & current filters
+						if Filter(fcacheObj) then
+							-- app.PrintDebug("SFO",field,id,require,"F>",fcacheObj.hash)
+							if filterMatch then filterMatch[#filterMatch + 1] = fcacheObj
+							else filterMatch = {fcacheObj} end
+						end
+						if keyMatch then keyMatch[#keyMatch + 1] = fcacheObj
+						else keyMatch = {fcacheObj} end
+					else
+						-- with field matching id
+						if fieldMatch then fieldMatch[#fieldMatch + 1] = fcacheObj
+						else fieldMatch = {fcacheObj} end
+					end
+				-- basic group related to search
+				else
+					if match then match[#match + 1] = fcacheObj
+					else match = {fcacheObj} end
+				end
+			end
+		end
+		-- app.PrintDebug("SFO",field,id,require,"?>",keyMatch and keyMatch.hash,fieldMatch and fieldMatch.hash,match and match.hash)
+		return filterMatch or keyMatch or fieldMatch or match or nil;
+	else	-- single returnd object
+		-- split logic based on require to reduce conditionals within loop
+		if require == 2 then
+			-- Key require
+			for i=1,count,1 do
+				fcacheObj = fcache[i];
+				-- field matching id
+				if fcacheObj[field] == id then
+					if fcacheObj.key == field then
+						-- with keyed-field matching key & current filters
+						if Filter(fcacheObj) then
+							-- app.PrintDebug("SFO",field,id,require,"F>",fcacheObj.hash)
+							return fcacheObj;
+						end
+						keyMatch = keyMatch or fcacheObj;
+					end
+				end
+			end
+		elseif require == 1 then
+			-- Field require
+			for i=1,count,1 do
+				fcacheObj = fcache[i];
+				-- field matching id
+				if fcacheObj[field] == id then
+					if fcacheObj.key == field then
+						-- with keyed-field matching key & current filters
+						if Filter(fcacheObj) then
+							-- app.PrintDebug("SFO",field,id,require,"F>",fcacheObj.hash)
+							return fcacheObj;
+						end
+						keyMatch = keyMatch or fcacheObj;
+					else
+						-- with field matching id
+						fieldMatch = fieldMatch or fcacheObj;
+					end
+				end
+			end
+		else
+			-- No require
+			for i=1,count,1 do
+				fcacheObj = fcache[i];
+				-- field matching id
+				if fcacheObj[field] == id then
+					if fcacheObj.key == field then
+						-- with keyed-field matching key & current filters
+						if Filter(fcacheObj) then
+							-- app.PrintDebug("SFO",field,id,require,"F>",fcacheObj.hash)
+							return fcacheObj;
+						end
+						keyMatch = keyMatch or fcacheObj;
+					else
+						-- with field matching id
+						fieldMatch = fieldMatch or fcacheObj;
+					end
+				-- basic group related to search
+				else
+					match = match or fcacheObj;
+				end
+			end
+		end
+		-- app.PrintDebug("SFO",field,id,require,"?>",keyMatch and keyMatch.hash,fieldMatch and fieldMatch.hash,match and match.hash)
+		return keyMatch or fieldMatch or match or nil;
+	end
+end
+
 -- Verify no infinite parent recursion exists for a given group
 local function VerifyRecursion(group, checked)
 	if type(group) ~= "table" then return; end
@@ -809,6 +995,7 @@ app.SearchForFieldContainer = SearchForFieldContainer;
 app.SearchForField = SearchForField;
 app.SearchForFieldInAllCaches = SearchForFieldInAllCaches;
 app.SearchForManyInAllCaches = SearchForManyInAllCaches;
+app.SearchForObject = SearchForObject;
 app.SearchForRelativeItems = SearchForRelativeItems;
 app.SearchForSourceIDQuickly = SearchForSourceIDQuickly;
 app.SearchForSpecificGroups = SearchForSpecificGroups;
