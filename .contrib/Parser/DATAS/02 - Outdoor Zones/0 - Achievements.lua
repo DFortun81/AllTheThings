@@ -222,10 +222,6 @@ root(ROOTS.Zones, {
 			}},
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(1576, {	-- Of Blood and Anguish
-			["sourceQuests"] = {
-				9977,	-- The Ring of Blood: The Final Challenge
-				12948,	-- The Champion of Anguish
-			},
 			["maps"] = { NAGRAND, ZULDRAK },
 			["groups"] = {
 				crit(5799, {	-- The Champion of Anguish
