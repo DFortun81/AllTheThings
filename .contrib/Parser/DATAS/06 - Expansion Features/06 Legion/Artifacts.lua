@@ -179,11 +179,13 @@ root(ROOTS.ExpansionFeatures,
 		n(ARTIFACTS, {
 			["description"] = "\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",
 			["groups"] = {
-				un(REMOVED_FROM_GAME, ach(11143, {		-- Honoring the Past
+				ach(11143, {		-- Honoring the Past
+					["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 					["_noautomation"] = true,	-- It has 3 hidden achievements as criteria
-				})),
-				un(REMOVED_FROM_GAME, ach(10853, {		-- Part of History
-				})),
+				}),
+				ach(10853, {		-- Part of History
+					["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+				}),
 				cl(WARRIOR, {
 					i(128910, {	-- Strom'kar, the Warbreaker
 						BaseAppearance("Interface\\Icons\\inv_sword_2h_artifactarathor_d_01", {

@@ -7,9 +7,12 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "ad
 		["lvl"] = 98,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				un(REMOVED_FROM_GAME, ach(11201, {		-- Defender of Azeroth: Legion Invasions
-					un(REMOVED_FROM_GAME, ach(11200)),		-- Stand Against the Legion
-				})),
+				ach(11201, {		-- Defender of Azeroth: Legion Invasions
+					["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
+				}),
+				ach(11200, {		-- Stand Against the Legion
+					["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
+				}),
 			}),
 			n(MAILBOX, {
 				["description"] = "These items came automatically in the mail box (sometimes even pre-equipped), once the pre-expansion patch launched due to class & ability changes.",
