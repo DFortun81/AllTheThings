@@ -57,15 +57,9 @@ root(ROOTS.Zones, {
 									crit(22438),			-- Domination Point
 									crit(22439),			-- The Voice of the Gods
 									crit(22440),			-- The Horde Is Family
-									crit(22441, {    -- Blood For Blood
-										["sourceQuests"] = { 32191 },    -- Ancient Guardians
-									}),
-									crit(22442, {    -- Blood For Blood
-										["sourceQuests"] = { 32192 },    -- Bloodlines
-									}),
-									crit(22443, {    -- Blood For Blood
-										["sourceQuests"] = { 32244 },    -- The Korune
-									}),
+									crit(22441),			-- Blood For Blood (Ancient Guardians)
+									crit(22442),			-- Blood For Blood (Bloodlines)
+									crit(22443),			-- Blood For Blood (The Korune)
 									crit(22448),			-- The Korune
 									crit(22449),			-- Pride
 									crit(22450),			-- Rise of the Blood Elves
@@ -780,23 +774,15 @@ root(ROOTS.Zones, {
 									crit(22425),		-- The Man With a Thousand Faces
 									crit(22426),		-- The Voice of the Gods
 									crit(22427),		-- Jaina's Hope
-									crit(22428, {		-- The Korune
-										["sourceQuest"] = 32194,
-									}),
-									crit(22430, {		-- The Korune
-										["sourceQuest"] = 32243,
-									}),
+									crit(22428),		-- The Korune
+									crit(22430),		-- The Korune
 									crit(22431),		-- Heart of the Alliance
 									crit(22432),		-- Secrets of the Past
 									crit(22434),		-- The Divine Bell
 									crit(22538),		-- The Purge of Dalaran
 									crit(22433),		-- An Ancient Ally
-									crit(22436, {		-- In Search of Harmony
-										["sourceQuest"] = 32336,
-									}),
-									crit(22735, {		-- In Search of Harmony
-										["sourceQuest"] = 32337,
-									}),
+									crit(22436),		-- In Search of Harmony
+									crit(22735),		-- In Search of Harmony
 									crit(22437),		-- Breath of Darkest Shadow
 								}),
 							}),
