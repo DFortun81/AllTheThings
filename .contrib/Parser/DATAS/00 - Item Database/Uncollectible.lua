@@ -556,6 +556,8 @@ i(192624);	-- Cracked Scales
 i(192747);	-- Broken Branch
 i(192625);	-- Motionless Stone
 i(201468);	-- Verdant Swirl
+i(192635);	-- Warped Metal
+i(192627);	-- Obsidian Clump
 
 
 -- ^^ Not cleaned

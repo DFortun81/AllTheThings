@@ -1175,7 +1175,6 @@ root(ROOTS.NeverImplemented, {
 				i(192710),	-- Nearly Unbreakable Horn
 				i(201730),	-- Nokhud Centaur Spear
 				i(201731),	-- Nokhud Centaur Staff
-				i(192627),	-- Obsidian Clump
 				i(192645),	-- Obsidian Nugget
 				i(192711),	-- Oily Liver
 				i(201214),	-- Olfactory Truffle
@@ -1259,7 +1258,6 @@ root(ROOTS.NeverImplemented, {
 				i(201168),	-- Untainted Scales
 				i(201424),	-- Unusable Plant Matter
 				i(192731),	-- Venomous Fang
-				i(192635),	-- Warped Metal
 				i(192675),	-- Winglet
 				i(201177),	-- Wooden Eagle Statue
 				i(200531),	-- Worn Chitin Fragment

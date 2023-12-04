@@ -431,6 +431,10 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				}),
 			}),
 			Difficulty(ALL_DIFFICULTIES_RAID).AddGroups({
+				CommonBossDrops({
+					i(210780),	-- Lesser Ember of Fyr'alath
+					i(210871),	-- Greater Ember of Fyr'alath
+				}),
 				n(QUESTS, {
 					q(78355,{	-- Essence of a Broken Dream
 						["provider"] = { "i", 210430 },	-- Twisted Dreaming Essence (QI!)
