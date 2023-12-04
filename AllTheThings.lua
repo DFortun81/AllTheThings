@@ -2698,6 +2698,16 @@ local function Resolve_Extract(results, group, field)
 	end
 	return results;
 end
+local function Resolve_Find(results, group, field, val)
+	if group[field] == val then
+		tinsert(results, group);
+	elseif group.g then
+		for _,o in ipairs(group.g) do
+			Resolve_Find(results, o, field, val);
+		end
+	end
+	return results;
+end
 local GetAchievementNumCriteria = GetAchievementNumCriteria
 
 -- Defines a known set of functions which can be run via symlink resolution. The inputs to each function will be identical in order when called.
@@ -2851,6 +2861,19 @@ local ResolveFunctions = {
 		if orig then
 			for _,o in ipairs(orig) do
 				Resolve_Extract(searchResults, o, field);
+			end
+		end
+	end,
+	-- Instruction to find all nested results which contain a given field/value
+	["find"] = function(finalized, searchResults, o, cmd, field, val)
+		local orig;
+		if #searchResults > 0 then
+			orig = RawCloneData(searchResults);
+		end
+		wipe(searchResults);
+		if orig then
+			for _,o in ipairs(orig) do
+				Resolve_Find(searchResults, o, field, val);
 			end
 		end
 	end,
