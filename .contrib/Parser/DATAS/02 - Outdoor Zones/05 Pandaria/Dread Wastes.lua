@@ -109,7 +109,7 @@ root(ROOTS.Zones, {
 							6545,		-- Klaxxi
 						}},
 						["g"] = {
-							title(218),		-- the Wakener
+							title(218),		-- <Name> the Wakener
 						},
 					}),
 				}),

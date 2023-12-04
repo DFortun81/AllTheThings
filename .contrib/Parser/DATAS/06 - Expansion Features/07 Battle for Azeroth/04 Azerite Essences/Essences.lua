@@ -48,7 +48,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				un(REMOVED_FROM_GAME, ach(13779, {		-- Phenomenal Cosmic Power
-					un(REMOVED_FROM_GAME, title(407)),		-- , Azeroth's Champion"
+					un(REMOVED_FROM_GAME, title(407)),		-- <Name>, Azeroth's Champion
 				})),
 			}),
 			n(ALL_ROLES, {

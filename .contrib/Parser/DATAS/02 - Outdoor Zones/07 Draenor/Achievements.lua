@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(DRAENOR, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } 
 			},
 		}),
 		petbattle(ach(9685, {		-- Draenor Safari
-			i(111866),		-- Royal Peacock
+			i(111866),		-- Royal Peacock (PET!)
 			crit(27256),		-- Amberbarb Wasp (Gorgrond)
 			crit(27259),		-- Axebeak Hatchling (Gorgrond)
 			crit(27253),		-- Bloodsting Wasp (Spires of Arak)

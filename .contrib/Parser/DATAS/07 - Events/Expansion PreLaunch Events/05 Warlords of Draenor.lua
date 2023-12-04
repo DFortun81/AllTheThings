@@ -7,7 +7,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 		["lvl"] = 90,
 		["groups"] = {
 			un(REMOVED_FROM_GAME, ach(9618, {		-- The Iron Invasion
-				un(REMOVED_FROM_GAME,title(289)),		-- of the Iron Vanguard
+				un(REMOVED_FROM_GAME,title(289)),		-- <Name> of the Iron Vanguard
 			})),
 		},
 	}),

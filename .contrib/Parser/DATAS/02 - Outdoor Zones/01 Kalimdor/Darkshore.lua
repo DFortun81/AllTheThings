@@ -46,10 +46,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Explore Darkshore, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				a(ach(13251, {	-- In Teldrassil's Shadow
+				ach(13251, {	-- In Teldrassil's Shadow
 					["timeline"] = { ADDED_8_1_0 },
+					["races"] = ALLIANCE_ONLY,
 					["_noautomation"] = true,
-				})),
+				}),
 				ach(5453, {	-- Ghost in the Dark
 					["sourceQuest"] = 28529,	-- Writings of the Void
 					["timeline"] = { "added 4.0.3" },

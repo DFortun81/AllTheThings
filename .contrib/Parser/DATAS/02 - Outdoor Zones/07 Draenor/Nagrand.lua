@@ -157,7 +157,7 @@ root(ROOTS.Zones, {
 						["g"] = {
 							n(ACHIEVEMENTS, {
 								ach(9472, {		-- Steamwheedle Preservation Society
-									title(284),		-- "Conservationist"
+									title(284),		-- "Conservationist" <Name>
 								}),
 							}),
 							n(QUESTS, {

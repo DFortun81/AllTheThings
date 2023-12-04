@@ -10,7 +10,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					ach(9475, {		-- Laughing Skull Orcs
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							title(287, {	-- Masked Chuckler
+							title(287, {	-- Masked Chuckler <Name>
 								["races"] = HORDE_ONLY,
 							}),
 						},
@@ -18,7 +18,9 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 					ach(9476, {		-- Sha'tari Defense
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							a(title(288)),	-- Peacekeeper
+							title(288, {	-- Peacekeeper <Name>
+								["races"] = ALLIANCE_ONLY,
+							}),
 						},
 					}),
 				}),
