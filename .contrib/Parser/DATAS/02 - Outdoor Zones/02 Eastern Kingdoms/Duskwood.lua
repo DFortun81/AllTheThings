@@ -1208,6 +1208,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 68,	-- The Legend of Stalvan (3/13)
 					["coord"] = { 72.6, 46.9, DUSKWOOD },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),
