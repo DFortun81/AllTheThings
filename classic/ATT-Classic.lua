@@ -8868,6 +8868,9 @@ local spellFields = {
 		end
 		return "Interface\\ICONS\\INV_Scroll_04";
 	end,
+	["description"] = function(t)
+		return GetSpellDescription(t.spellID);
+	end,
 	["craftTypeID"] = function(t)
 		return app.CurrentCharacter.SpellRanks[t.spellID];
 	end,
