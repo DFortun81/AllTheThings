@@ -3,20 +3,8 @@
 -----------------------------------------------------
 root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(ACHIEVEMENTS, {
-		ach(5535, {	-- 1000 Valor Points
-			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-		}),
-		ach(5536, {	-- 5000 Valor Points
-			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-		}),
-		ach(5537, {	-- 25,000 Valor Points
-			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-		}),
-		ach(5538, {	-- 50,000 Valor Points
-			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-		}),
 		ach(6924, {	-- 100,000 Valor Points
-			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 		}),
 		ach(6927, {		-- Glory of the Pandaria Hero
 			["sym"] = {{"meta_achievement",
