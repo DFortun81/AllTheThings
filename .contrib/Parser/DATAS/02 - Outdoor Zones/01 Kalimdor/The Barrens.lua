@@ -983,7 +983,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				q(78266, {	-- Dark Iron Ordinance
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, q(78266, {	-- Dark Iron Ordinance
 					["qg"] = 211653,	-- Grizzby
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
 					["maps"] = { WETLANDS, ARATHI_HIGHLANDS },
@@ -1000,7 +1000,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
-				}),
+				})),
 				-- #endif
 				q(1069, {	-- Deepmoss Spider Eggs
 					["qg"] = 3446,	-- Mebok Mizzyrix
@@ -1165,13 +1165,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				q(78265, {	-- Fish Oil
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, q(78265, {	-- Fish Oil
 					["qg"] = 211653,	-- Grizzby
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
 					["cost"] = { { "i", 17058, 24 } },	-- Fish Oil
 					["maps"] = { ARATHI_HIGHLANDS, BLACKFATHOM_DEEPS, DESOLACE, DUSTWALLOW_MARSH, FERALAS, HILLSBRAD_FOOTHILLS, STRANGLETHORN_VALE, SWAMP_OF_SORROWS, WETLANDS },
 					["lvl"] = 20,
-				}),
+				})),
 				-- #endif
 				q(1503, {	-- Forged Steel
 					["qg"] = 5878,	-- Thun'grim Firegaze
@@ -2361,7 +2361,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				q(78267, {	-- Shredder Turbochargers
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, q(78267, {	-- Shredder Turbochargers
 					["qg"] = 211653,	-- Grizzby
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
 					["maps"] = { STONETALON_MOUNTAINS },
@@ -2373,7 +2373,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 214129,	-- Venture Co. Light Shredder
 						}),
 					},
-				}),
+				})),
 				-- #endif
 				q(887, {	-- Southsea Freebooters
 					-- #if AFTER CATA
@@ -3841,7 +3841,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				n(211653, {	-- Grizzby
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(211653, {	-- Grizzby
 					["sourceQuests"] = {
 						78265,	-- Fish Oil
 						78266,	-- Dark Iron Ordinance
@@ -3914,7 +3914,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
-				}),
+				})),
 				-- #endif
 				-- #if AFTER 3.1.0.9626
 				n(3443, {	-- Grub

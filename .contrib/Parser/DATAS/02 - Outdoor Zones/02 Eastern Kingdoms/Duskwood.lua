@@ -2249,6 +2249,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211472, {	-- Libram of Banishment
+					["coords"] = {
+						{ 22.8, 68.0, DUSKWOOD },
+						{ 50.8, 75.0, DUSKWOOD },
+					},
+					["classes"] = { PALADIN },
+					["cr"] = 215,	-- Defias Night Runner
+					["groups"] = {
+						recipe(416037),	-- Engrave Pants - Exorcist
+					},
+				})),
+				-- #endif
 				i(897, {	-- Madwolf Bracers
 					["cr"] = 206,	-- Nightbane Vile Fang
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
