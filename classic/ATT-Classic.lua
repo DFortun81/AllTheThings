@@ -3983,6 +3983,9 @@ local categoryFields = {
 	["icon"] = function(t)
 		return app.asset("Category_Achievements");
 	end,
+	["ignoreSourceLookup"] = function(t)
+		return true;
+	end,
 };
 if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil) then
 	-- Achievements are in. We can use the API.
@@ -4903,6 +4906,9 @@ app.CreateCategory = app.CreateClass("Category", "categoryID", {
 	["icon"] = function(t)
 		return app.CategoryIcons[t.categoryID] or defaultIcon;
 	end,
+	["ignoreSourceLookup"] = function(t)
+		return true;
+	end,
 });
 end)();
 
@@ -4962,6 +4968,9 @@ app.CreateCharacterClass, app.BaseCharacterClass = app.CreateClass("CharacterCla
 	end,
 	["classColors"] = function(t)
 		return RAID_CLASS_COLORS[C_CreatureInfo.GetClassInfo(t.classID).classFile];
+	end,
+	["ignoreSourceLookup"] = function(t)
+		return true;
 	end,
 });
 app.CreateUnit = app.CreateClass("Unit", "unit", {
@@ -5065,6 +5074,9 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 		if icon then text = "|T" .. icon .. ":0|t " .. text; end
 		return text;
 	end,
+	["ignoreSourceLookup"] = function(t)
+		return true;
+	end,
 });
 app.CreateQuestUnit = app.ExtendClass("Unit", "QuestUnit", "unit", {
 	["visible"] = app.ReturnTrue,
@@ -5092,6 +5104,9 @@ app.CreateQuestUnit = app.ExtendClass("Unit", "QuestUnit", "unit", {
 				end
 			end
 		end
+	end,
+	["ignoreSourceLookup"] = function(t)
+		return true;
 	end,
 });
 end)();
@@ -7453,6 +7468,9 @@ local createMap, mapClass = app.CreateClass("Map", "mapID", {
 	["lvl"] = function(t)
 		return C_Map_GetMapLevels(t.mapID);
 	end,
+	["ignoreSourceLookup"] = function(t)
+		return true;
+	end,
 });
 app.BaseMap = mapClass;
 app.CreateMap = function(id, t)
@@ -7576,6 +7594,9 @@ app.CreateInstance = app.CreateClass("Instance", "instanceID", {
 	end,
 	["saved"] = function(t)
 		return t.locks;
+	end,
+	["ignoreSourceLookup"] = function(t)
+		return true;
 	end,
 },
 "WithCreature", {}, (function(t)
@@ -7764,6 +7785,9 @@ local createCustomHeader = app.CreateClass("Header", "headerID", {
 	["trackable"] = function(t)
 		return t.questID;
 	end,
+	["ignoreSourceLookup"] = function(t)
+		return true;
+	end,
 },
 "WithEvent", app.Modules.Events.Fields, (function(t) return L.HEADER_EVENTS[t.headerID]; end));
 app.CreateCustomHeader = createCustomHeader;
@@ -7858,6 +7882,9 @@ app.CreateHeader = app.CreateClass("AutomaticHeader", "autoID", {
 		end
 		print("Unhandled Header Type", t.type, t.autoID, typ);
 		return app.EmptyTable;
+	end,
+	["ignoreSourceLookup"] = function(t)
+		return true;
 	end,
 },
 "WithQuest", {
@@ -8031,6 +8058,9 @@ app.CreateProfession = app.CreateClass("Profession", "professionID", {
 	end,
 	["requireSkill"] = function(t)
 		return t.professionID;
+	end,
+	["ignoreSourceLookup"] = function(t)
+		return true;
 	end,
 	["sym"] = function(t)
 		return {{"selectprofession", t.professionID}};
@@ -8907,6 +8937,8 @@ end)();
 		__index = function(t, key)
 			if key == "key" then
 				return "tierID";
+			elseif key == "ignoreSourceLookup" then
+				return true;
 			else
 				local info = rawget(L.TIER_DATA, t.tierID);
 				return info and rawget(info, key);
@@ -12641,8 +12673,9 @@ local function OnInitForPopout(self, group)
 		end
 	end
 	]]--
-
-	if self.data.key then
+	
+	local dataKey = self.data.key;
+	if dataKey then
 		if group.cost and type(group.cost) == "table" then
 			local costGroup = {
 				["text"] = "Cost",
@@ -12720,11 +12753,13 @@ local function OnInitForPopout(self, group)
 			end
 		end
 		
-		local results = app:BuildSearchResponse(app:GetDataCache().g, self.data.key, self.data[self.data.key]);
-		if #results > 0 then
-			if not self.data.g then self.data.g = {}; end
-			for i,result in ipairs(results) do
-				tinsert(self.data.g, result);
+		if not self.data.ignoreSourceLookup then
+			local results = app:BuildSearchResponse(app:GetDataCache().g, dataKey, self.data[dataKey]);
+			if #results > 0 then
+				if not self.data.g then self.data.g = {}; end
+				for i,result in ipairs(results) do
+					tinsert(self.data.g, result);
+				end
 			end
 		end
 	end
