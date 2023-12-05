@@ -15,6 +15,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			o(413780, {	-- On the Nature of the Dream
 				["questID"] = 78833,
 				["coord"] = { 54.4, 24.6, EMERALD_DREAM },
+				["isDaily"] = true,
 				["g"] = {
 					i(208649),	-- On the Nature of the Dream
 				},
@@ -30,6 +31,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			o(413787, {	-- The Tragedy of Erinethria
 				["questID"] = 78835,
 				["coord"] = { 53.7, 23.9, EMERALD_DREAM },
+				["isDaily"] = true,
 				["g"] = {
 					i(208619),	-- The Tragedy of Erinethria
 				},
@@ -79,6 +81,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuest"] = 78046,	-- Overseer Oversight
 				["g"] = {
 					i(210727),	-- Pollenfused Bristlebruin Fur Sample (CI!)
+				},
+			}),
+			o(413784, {	-- Self-Baking Herb Based Cookies
+				["questID"] = 78834,
+				["coord"] = { 59.6, 19, EMERALD_DREAM },
+				["isDaily"] = true,
+				["groups"] = {
+					i(210346),	-- Self-Baking Herb Based Cookies
 				},
 			}),
 			n(212009, {	-- Statue of the Ashen Panther
@@ -210,13 +220,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					{"select","mapID",EMERALD_DREAM},{"pop"},{"where","headerID",ZONE_DROPS},
 					--replace small somnut at renown 11
 					{"select","objectID",408719},{"pop"},
-				},
-			}),
-			o(413784, {	-- Self-Baking Herb Based Cookies
-				["questID"] = 78834,
-				["coord"] = { 59.6, 19, EMERALD_DREAM },
-				["groups"] = {
-					i(210346),	-- Self-Baking Herb Based Cookies
 				},
 			}),
 		}),
