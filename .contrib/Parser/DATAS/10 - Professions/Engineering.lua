@@ -1414,6 +1414,12 @@ profession(ENGINEERING, {
 					["timeline"] = { "deleted 6.0.2" },
 					["recipeID"] = 19567,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, {
+					["name"] = "Shredder Autosalvage Unit",
+					["recipeID"] = 424641,
+				}),
+				-- #endif
 				{
 					["name"] = "Snowmaster 9000",
 					["recipeID"] = 21940,

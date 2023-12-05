@@ -1028,6 +1028,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(10518),	-- Parachute Cloak
 			i(6712),	-- Practice Lock
 			i(15846),	-- Salt Shaker
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(210147)),	-- Shredder Autosalvage Unit
+			-- #endif
 			i(17716),	-- Snowmaster 9000 (TOY!)
 			applyclassicphase(TBC_PHASE_ONE, i(22728)),	-- Steam Tonk Controller
 			i(4366),	-- Target Dummy

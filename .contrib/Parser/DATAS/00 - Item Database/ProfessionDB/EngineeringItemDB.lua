@@ -230,3 +230,17 @@ i(208317, 419042);	-- Verdant Combatant's Cloth Goggles
 i(208318, 419043);	-- Verdant Combatant's Leather Goggles
 i(208319, 419044);	-- Verdant Combatant's Mail Goggles
 i(208320, 419045);	-- Verdant Combatant's Plate Goggles
+
+
+-- #if ANYCLASSIC
+------------------
+--  WOW CLASSIC --
+------------------
+
+-- #if SEASON_OF_DISCOVERY
+--------------------------
+-- Season of Discovery ---
+--------------------------
+i(210178, 424641);	-- Shredder Autosalvage Unit
+-- #endif
+-- #endif

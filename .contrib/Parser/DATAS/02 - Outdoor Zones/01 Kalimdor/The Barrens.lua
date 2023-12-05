@@ -2370,6 +2370,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/16 Shredder Turbocharger
 							["provider"] = { "i", 210146 },	-- Shredder Turbocharger
 							["coord"] = { 62.6, 52.8, STONETALON_MOUNTAINS },
+							["cost"] = { { "i", 210147, 25 } },	-- Shredder Autosalvage Unit
+							["description"] = "This may take a more than 25 salvage units. It's ~50% chance to salvage the right item.",
 							["cr"] = 214129,	-- Venture Co. Light Shredder
 						}),
 					},

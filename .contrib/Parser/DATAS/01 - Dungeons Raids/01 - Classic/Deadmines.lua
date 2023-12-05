@@ -594,6 +594,9 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					-- #if BEFORE 4.0.3
 					i(5195),	-- Gold-flecked Gloves
 					-- #endif
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(210178)),	-- Schematic: Shredder Autosalvage Unit
+					-- #endif
 				},
 			}),
 			n(1763, {	-- Gilnid <The Smelter>
