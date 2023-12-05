@@ -67,14 +67,6 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["provider"] = { "i", 193470 },	-- Feral Hide Drums
 			}),
 		}),
-		ach(18898, {	-- That's Just Cruel
-			crit(61656, {	-- Nefarian Defeated
-				["provider"] = { "i", 15138 },	-- Onyxia Scale Cloak
-			}),
-			crit(61657, {	-- 	Nefarian Defeated (Again)
-				["provider"] = { "i", 15138 },	-- Onyxia Scale Cloak
-			}),
-		}),
 	})),
 	tier(CLASSIC_TIER, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {

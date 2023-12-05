@@ -317,6 +317,22 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 	ach(10761, {	-- Resourceful
 		["timeline"] = { "added 7.0.3.21491" },
 	}),
+	ach(18898, {	-- That's Just Cruel
+		crit(61656, {	-- Nefarian Defeated
+			["providers"] = {
+				{ "i", 15138 },	-- Onyxia Scale Cloak
+				{ "n", 11583 },	-- Nefarian
+			},
+			["maps"] = { BLACKWING_LAIR },
+		}),
+		crit(61657, {	-- 	Nefarian Defeated (Again)
+			["providers"] = {
+				{ "i", 15138 },	-- Onyxia Scale Cloak
+				{ "n", 41376 },	-- Nefarian
+			},
+			["maps"] = { 286 },	-- Blackwing Descent
+		}),
+	}),
 	ach(10588, {	-- The Shortest Distance
 		["provider"] = { "i", 132518 },	-- Blingtron's Circuit Design Tutorial
 		["timeline"] = { "added 7.0.3.21134" },

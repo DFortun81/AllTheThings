@@ -7,6 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			o(409849, {	-- Ashwood Research Binder
 				["questID"] = 78911,
 				["coord"] = { 60.8, 44.9, EMERALD_DREAM },
+				["isDaily"] = true,
 				["g"] = {
 					i(210737),	-- Ashwood Research Binder
 				},

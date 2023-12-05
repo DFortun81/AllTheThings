@@ -1071,8 +1071,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuests"] = { 78398 },	-- A Dash of Minerals...
 				["provider"] = { "n", 209458 },	-- Dewy Sapling
 				["coord"] = { 48.6, 67.8, EMERALD_DREAM },
+				["cost"] = {{"i",208647,1}},	-- Primed Emerald Dream Fertilizer (QI!)
 				["g"] = {
 					i(208757),	-- Ash's Recipes to Delight and Nourish Your Plant Pals (QI!)
+					i(208644, {	-- Lasher Plant Matter (QI!)
+						["providers"] = {
+							{"n",210772},	-- Fenblossom Lashling
+							{"n",208750},	-- Verdant Emerald Lasher
+						},
+						["coord"] = { 57.7, 55.4, EMERALD_DREAM },
+					}),
+					i(209416, {	-- Turtle Eggshell Shards (QI!)
+						["provider"] = {"o",408997},	-- Turtle Egg
+						["coords"] = {
+							{ 43.5, 80.9, EMERALD_DREAM },
+							{ 43.1, 79.6, EMERALD_DREAM },
+							{ 43.0, 77.2, EMERALD_DREAM },
+						},
+					}),
 					i(208646, {	-- Combined Fertilizer Ingredients (QI!)
 						["cost"] = {
 							{"i", 4537, 5},	-- 5x Tel'Abim Banana / @ 49.6, 61.6, 2200
@@ -1080,9 +1096,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 							{"i", 208644, 5},	-- 5x Lasher Plant Matter / @ active Emerald Frenzy from any lasher
 						},
 					}),
-					i(208644),	-- Lasher Plant Matter (QI!)
-					i(208647),	-- Primed Emerald Dream Fertilizer (QI!)
-					i(209416),	-- Turtle Eggshell Shards (QI!)
+					i(208647, {	-- Primed Emerald Dream Fertilizer (QI!)
+						["description"] = "Takes 3 days to turn into this.",
+						["cost"] = {{"i",208646,1}},	-- Combined Fertilizer Ingredients (QI!)
+					}),
 				},
 			}),
 			q(77711, {	--	And a Pinch of Magic
