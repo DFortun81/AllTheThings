@@ -1708,6 +1708,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(ZONE_DROPS, {
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206169, {	-- Rune of Explosive Shot
+					["coord"] = { 51.8, 20.0, MULGORE },
+					["classes"] = { HUNTER },
+					["cr"] = 3058,	-- Arra'chea
+					["groups"] = {
+						recipe(410123),	-- Engrave Gloves - Explosive Shot
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204809, {	-- Rune of Furious Thunder
+					["coords"] = {
+						{ 51.8, 20.0, MULGORE },
+						{ 30.8, 61.6, MULGORE },
+					},
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						3058,	-- Arra'chea
+						207515,	-- Lurkmane
+					},
+					["groups"] = {
+						recipe(403476),	-- Engrave Pants - Furious Thunder
+					},
+				})),
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204478, {	-- Severed Gnoll Head
 					["coord"] = { 53.6, 73.6, MULGORE },
 					["timeline"] = { "removed 2.0.1" },

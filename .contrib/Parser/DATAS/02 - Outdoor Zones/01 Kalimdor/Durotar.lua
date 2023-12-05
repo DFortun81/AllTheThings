@@ -1573,6 +1573,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["races"] = HORDE_ONLY,
 						}),
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					n(ZONE_DROPS, {
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206169, {	-- Rune of Explosive Shot
+							["coord"] = { 40.6, 67.7, DUROTAR },
+							["classes"] = { HUNTER },
+							["cr"] = 3281,	-- Sarkoth
+							["groups"] = {
+								recipe(410123),	-- Engrave Gloves - Explosive Shot
+							},
+						})),
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204809, {	-- Rune of Furious Thunder
+							["coord"] = { 40.6, 67.7, DUROTAR },
+							["classes"] = { WARRIOR },
+							["cr"] = 3281,	-- Sarkoth
+							["groups"] = {
+								recipe(403476),	-- Engrave Pants - Furious Thunder
+							},
+						})),
+					}),
+					-- #endif
 				},
 			}),
 			n(ACHIEVEMENTS, {
@@ -3364,11 +3384,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if BEFORE 4.0.3
+			-- #if ANYCLASSIC
 			n(ZONE_DROPS, {
 				i(4882, {	-- Benedict's Key
 					["cr"] = 3192,	-- Lieutenant Benedict
 					["coord"] = { 59.6, 58.2, DUROTAR },
+					["timeline"] = { "deleted 4.0.3" },
+				}),
+				i(769, {	-- Chunk of Boar Meat
+					["coord"] = { 53.6, 59.6, DUROTAR },
+					["crs"] = {
+						3099,	-- Dire Mottled Boar
+						3100,	-- Elder Mottled Boar
+						3225,	-- Corrupted Mottled Boar
+					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(207062, {	-- Severed Centaur Head

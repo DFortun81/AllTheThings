@@ -1801,6 +1801,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if ANYCLASSIC
+				i(769, {	-- Chunk of Boar Meat
+					["coord"] = { 37.0, 34.4, LOCH_MODAN },
+					["crs"] = {
+						1190,	-- Mountain Boar
+						1191,	-- Mangy Mountain Boar
+						1192,	-- Elder Mountain Boar
+					},
+				}),
+				-- #endif
 				i(2823, {	-- Mo'grosh Can Opener
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3

@@ -1829,6 +1829,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.4, 24.6, TELDRASSIL },
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206169, {	-- Rune of Explosive Shot
+					["coord"] = { 45.6, 59.6, TELDRASSIL },
+					["classes"] = { HUNTER },
+					["cr"] = 7318,	-- Rageclaw
+					["groups"] = {
+						recipe(410123),	-- Engrave Gloves - Explosive Shot
+					},
+				})),
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208610, {	-- Severed Owl Head
 					["coord"] = { 40.6, 53.6, TELDRASSIL },
 					["timeline"] = { "removed 2.0.1" },

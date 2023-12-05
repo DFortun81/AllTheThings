@@ -2762,6 +2762,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				-- #if ANYCLASSIC
+				i(769, {	-- Chunk of Boar Meat
+					["coord"] = { 46.6, 59.8, DUN_MOROGH },
+					["crs"] = {
+						1689,	-- Scarred Crag Boar
+						1127,	-- Elder Crag Boar
+						1126,	-- Large Crag Boar
+						1125,	-- Crag Boar
+						-- #if SEASON_OF_DISCOVERY
+						208638,	-- Fyodi
+						-- #endif
+					},
+				}),
+				-- #endif
 				i(2886),	-- Crag Boar Rib
 				i(2067, {	-- Frostbit Staff
 					["cr"] = 1117,	-- Rockjaw Bonesnapper
@@ -2885,6 +2899,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206169, {	-- Rune of Explosive Shot
+					["coord"] = { 31.6, 40.0, DUN_MOROGH },
+					["classes"] = { HUNTER },
+					["cr"] = 208638,	-- Fyodi
+					["groups"] = {
+						recipe(410123),	-- Engrave Gloves - Explosive Shot
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204809, {	-- Rune of Furious Thunder
+					["coord"] = { 31.6, 40.0, DUN_MOROGH },
+					["classes"] = { WARRIOR },
+					["cr"] = 208638,	-- Fyodi
+					["groups"] = {
+						recipe(403476),	-- Engrave Pants - Furious Thunder
+					},
+				})),
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208159, {	-- Severed Troll Head
 					["coord"] = { 26.6, 50.6, DUN_MOROGH },
 					["timeline"] = { "removed 2.0.1" },

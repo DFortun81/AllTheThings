@@ -2408,6 +2408,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				-- #if ANYCLASSIC
+				i(769, {	-- Chunk of Boar Meat
+					["coord"] = { 41.6, 88.0, ELWYNN_FOREST },
+					["crs"] = {
+						119,	-- Longsnout
+						390,	-- Porcine Entourage
+						330,	-- Princess
+						524,	-- Rockhide Boar
+						113,	-- Stonetusk Boar
+					},
+				}),
+				-- #endif
 				i(1307, {	-- Gold Pickup Schedule
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
@@ -2505,6 +2517,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204809, {	-- Rune of Furious Thunder
+					["coord"] = { 41.6, 78.8, ELWYNN_FOREST },
+					["classes"] = { WARRIOR },
+					["cr"] = 327,	-- Goldtooth
+					["groups"] = {
+						recipe(403476),	-- Engrave Pants - Furious Thunder
+					},
+				})),
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204478, {	-- Severed Gnoll Head
 					["coord"] = { 50.15, 62.81, ELWYNN_FOREST },
 					["timeline"] = { "removed 2.0.1" },

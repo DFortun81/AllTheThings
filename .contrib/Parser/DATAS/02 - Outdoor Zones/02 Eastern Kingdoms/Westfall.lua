@@ -1523,6 +1523,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						519,	-- Slark
 					},
 				}),
+				-- #if ANYCLASSIC
+				i(769, {	-- Chunk of Boar Meat
+					["coord"] = { 54.2, 42.6, WESTFALL },
+					["maps"] = { REDRIDGE_MOUNTAINS },
+					["crs"] = {
+						454,	-- Young Goretusk
+						157,	-- Goretusk
+						547,	-- Great Goretusk
+					},
+				}),
+				-- #endif
 				-- #if AFTER 4.0.3
 				i(1927, {	-- Deadmines Cleaver
 					["cr"] = 594,	-- Defias Henchman
