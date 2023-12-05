@@ -81,6 +81,14 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
 					}),
+					ach(9470, {		-- Council of Exarchs
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							title(283, {	-- Prelate <Name>
+								["races"] = ALLIANCE_ONLY,
+							}),
+						},
+					}),
 					explorationAch(8938),	-- Explore Shadowmoon Valley
 					ach(9436, {	-- It's the Stones! (Socrethar's Rise)
 						["description"] = "Must be on the daily quest Assault on Socrethar's Rise.",

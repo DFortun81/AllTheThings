@@ -297,13 +297,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				},
 			}),
-			ach(13512, {	-- Master Calligrapher
-				crit(44853, {	-- Master of Calligraphy - Circle
-					["_quests"] = {
-						55342,	-- Calligraphy [H]
-					},
-				}),
-			}),
 			ach(12948, {	-- Talanji's Expedition
 				["races"] = HORDE_ONLY,
 			}),

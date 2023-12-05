@@ -9,17 +9,6 @@ root(ROOTS.Zones, {
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 100,
 			["g"] = {
-				n(ACHIEVEMENTS, {
-					ach(9469),		-- Arakkoa Outcasts
-					ach(9470, {		-- Council of Exarchs
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							title(283, {	-- Prelate <Name>
-								["races"] = ALLIANCE_ONLY,
-							}),
-						},
-					}),
-				}),
 				n(FLIGHT_PATHS, {
 					fp(1420, {	-- Stormshield (Alliance), Ashran
 						["coord"] = { 30.6, 48.4, STORMSHIELD },

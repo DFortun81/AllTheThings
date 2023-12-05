@@ -3,14 +3,34 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(ACHIEVEMENTS, {
-		un(REMOVED_FROM_GAME, a(ach(8030))),	-- A Test of Valor (Alliance)
-		un(REMOVED_FROM_GAME, h(ach(8031))),	-- A Test of Valor (Horde)
-		un(REMOVED_FROM_GAME, h(ach(8307, {	-- Darkspear Revolutionary
-			un(REMOVED_FROM_GAME, h(title(228))),	-- Darkspear Revolutionary
-		}))),
-		un(REMOVED_FROM_GAME, a(ach(8306, {	-- Hordebreaker
-			un(REMOVED_FROM_GAME, a(title(230))),	-- the Hordebreaker
-		}))),
+		ach(8030, {	-- A Test of Valor (Alliance)
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+		}),
+		ach(8031, {	-- A Test of Valor (Horde)
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+		}),
+		ach(8307, {	-- Darkspear Revolutionary
+			["races"] = HORDE_ONLY,
+			["timeline"] = { ADDED_5_3_0, REMOVED_5_4_0 },
+			["g"] = {
+				title(228, {	-- Darkspear Revolutionary <Name>
+					["races"] = HORDE_ONLY,
+					["timeline"] = { ADDED_5_3_0, REMOVED_5_4_0 },
+				}),
+			}
+		}),
+		ach(8306, {	-- Hordebreaker
+			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { ADDED_5_3_0, REMOVED_5_4_0 },
+			["g"] = {
+				title(230, {	-- <Name> the Hordebreaker
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { ADDED_5_3_0, REMOVED_5_4_0 },
+				}),
+			}
+		}),
 		ach(6926, {	-- Tranquil Master
 			title(203),	-- the Tranquil Master
 			crit(19668, {	-- Sha of Doubt

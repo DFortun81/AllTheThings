@@ -48,17 +48,22 @@ root(ROOTS.Zones, {
 					ach(8210),	-- Shado-Pan Assault
 					ach(7307),	-- Silent Assassin
 					ach(7479, {		-- The Shado-Master
-						title(205),		-- Shado-Master
-						ach(6366),		-- Shado-Pan
-						ach(6470),		-- Heroic: Shado-Pan Monastery
-						ach(6480),		-- Settle Down, Bro
-						ach(7297),		-- Proven Strength
-						ach(7298),		-- Getting Around with the Shado-Pan
-						ach(7299),		-- Loner and a Rebel
-						ach(7307),		-- Silent Assassin
-						ach(7308),		-- Know Your Role
-						ach(7309),		-- Fire in the Yaung-hole!
-						ach(7310),		-- Defender of Gods
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							6366,		-- Shado-Pan
+							6470,		-- Heroic: Shado-Pan Monastery
+							6480,		-- Settle Down, Bro
+							7297,		-- Proven Strength
+							7298,		-- Getting Around with the Shado-Pan
+							7299,		-- Loner and a Rebel
+							7307,		-- Silent Assassin
+							7308,		-- Know Your Role
+							7309,		-- Fire in the Yaung-hole!
+							7310,		-- Defender of Gods
+						}},
+						["g"] = {
+							title(205),		-- Shado-Master
+						},
 					}),
 					ach(7288),	-- Yak Attack (Niuzao Temple)
 				}),

@@ -16,7 +16,9 @@ root(ROOTS.Zones, {
 					ach(7318),	-- A Taste of History
 					ach(7323),	-- Collateral Damage
 					ach(7320),	-- Dog Pile
-					un(REMOVED_FROM_GAME, ach(7315)),		-- Eternally in the Vale
+					ach(7315, {	-- Eternally in the Vale
+						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+					}),
 					explorationAch(6979),	-- Explore Vale of Eternal Blossoms
 					ach(7317, {		-- One Many Army
 						crit(20517),		-- Cracklefang

@@ -221,6 +221,38 @@ root(ROOTS.Zones, {
 				4872,	-- Unearthing Uldum
 			}},
 		}),
+		ach(13512, {	-- Master Calligrapher
+			crit(44853, {	-- Master of Calligraphy - Circle
+				["_quests"] = {
+					55340,	-- Calligraphy [A]
+				},
+			}),
+			crit(44854, {	-- Master of Calligraphy - Square
+				["_quests"] = {
+					55264,	-- Calligraphy [A]
+				},
+			}),
+			crit(44855, {	-- Master of Calligraphy - Triangle
+				["_quests"] = {
+					55341,	-- Calligraphy [A]
+				},
+			}),
+			crit(44853, {	-- Master of Calligraphy - Circle
+				["_quests"] = {
+					55342,	-- Calligraphy [H]
+				},
+			}),
+			crit(44854, {	-- Master of Calligraphy - Square
+				["_quests"] = {
+					55343,	-- Calligraphy [H]
+				},
+			}),
+			crit(44855, {	-- Master of Calligraphy - Triangle
+				["_quests"] = {
+					55344,	-- Calligraphy [H]
+				},
+			}),
+		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(1576, {	-- Of Blood and Anguish
 			["maps"] = { NAGRAND, ZULDRAK },
 			["groups"] = {

@@ -911,6 +911,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(111660, {	-- Iron Starlette (PET!)
 							["timeline"] = { "added 6.0.1.18505" },
 						}),
+						ach(9618, {		-- The Iron Invasion
+							["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
+							["g"] = {
+								title(289, {		-- <Name> of the Iron Vanguard
+									["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
+								}),
+							},
+						}),
 					},
 				}),
 				q(2993, {	-- Return to the Hinterlands
@@ -1530,6 +1538,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(111660, {	-- Iron Starlette (PET!)
 							["timeline"] = { "added 6.0.1.18505" },
+						}),
+						ach(9618, {		-- The Iron Invasion
+							["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
+							["g"] = {
+								title(289, {		-- <Name> of the Iron Vanguard
+									["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
+								}),
+							},
 						}),
 					},
 				}),

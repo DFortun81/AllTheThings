@@ -482,13 +482,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			})),
-			ach(13512, {	-- Master Calligrapher
-				crit(44854, {	-- Master of Calligraphy - Square
-					["_quests"] = {
-						55264,	-- Calligraphy [A]
-					},
-				}),
-			}),
 			ach(12952, {	-- Order of Embers
 				["races"] = ALLIANCE_ONLY,
 			}),

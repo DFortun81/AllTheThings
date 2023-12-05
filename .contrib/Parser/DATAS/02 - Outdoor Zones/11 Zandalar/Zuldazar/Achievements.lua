@@ -286,13 +286,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					["coord"] = { 71.24, 21.84, ZULDAZAR },
 				}),
 			}),
-			ach(13512, {	-- Master Calligrapher
-				crit(44855, {	-- Master of Calligraphy - Triangle
-					["_quests"] = {
-						55344,	-- Calligraphy [H]
-					},
-				}),
-			}),
 			ach(12481, {	-- The Final Seal
 				["sourceQuests"] = { 50954 },	-- Zandalar Forever!
 				["races"] = HORDE_ONLY,

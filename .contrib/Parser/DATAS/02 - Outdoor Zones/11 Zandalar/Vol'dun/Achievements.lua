@@ -236,13 +236,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				},
 			})),
-			ach(13512, {	-- Master Calligrapher
-				crit(44854, {	-- Master of Calligraphy - Square
-					["_quests"] = {
-						55343,	-- Calligraphy [H]
-					},
-				}),
-			}),
 			ach(13016, {	-- Scavenger of the Sands
 				crit(41342,  {	-- Jason's Rusty Blade
 					["_quests"] = { 53132 },

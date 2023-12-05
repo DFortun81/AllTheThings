@@ -217,13 +217,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					["coord"] = { 75.07, 31.13, STORMSONG_VALLEY },
 				}),
 			}),
-			ach(13512, {	-- Master Calligrapher
-				crit(44855, {	-- Master of Calligraphy - Triangle
-					["_quests"] = {
-						55341,	-- Calligraphy [A]
-					},
-				}),
-			}),
 			ach(13054, {	-- Sabertron Assemble
 				crit(41420, { -- Red Sabertron slain
 					["_quests"] = { 51947, 51956 },	-- Sabertron (RED) / Default Sabertron

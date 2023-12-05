@@ -294,13 +294,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			ach(13058, {	-- Kul Tiran Up the Dance Floor
 				["coord"] = { 50.27, 25.11, TIRAGARDE_SOUND },
 			}),
-			ach(13512, {	-- Master Calligrapher
-				crit(44853, {	-- Master of Calligraphy - Circle
-					["_quests"] = {
-						55340,	-- Calligraphy [A]
-					},
-				}),
-			}),
 			ach(12951, {	-- Proudmoore Admiralty
 				["races"] = ALLIANCE_ONLY,
 			}),
