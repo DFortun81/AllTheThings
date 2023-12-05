@@ -418,23 +418,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(1655, {	-- Bailor's Ore Shipment
-					["qg"] = 6241,	-- Bailor Stonehand
-					["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
-					["coord"] = { 36.0, 45.0, LOCH_MODAN },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { PALADIN },
-					["repeatable"] = true,
-					["lvl"] = 20,
-					["groups"] = {
-						objective(1, {	-- 0/1 Jordan's Ore Shipment
-							["provider"] = { "i", 6992 },	-- Jordan's Ore Shipment
-							["coord"] = { 71.6, 21.4, LOCH_MODAN },
-						}),
-						i(6993),	-- Jordan's Refined Ore Shipment
-					},
-				}),
 				q(26147, {	-- Bigger and Uglier
 					["qg"] = 1090,	-- Mountaineer Wallbang
 					["sourceQuest"] = 26146,	-- In Defense of the King's Lands

@@ -532,9 +532,6 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				["cr"] = 824,	-- Defias Digger
 				-- #endif
 			}),
-			i(6994, {	-- Whitestone Oak Lumber
-				["cr"] = 641,	-- Goblin Woodcarver
-			}),
 			i(1945, {	-- Woodworking Gloves
 				["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 				-- #if BEFORE 4.0.3

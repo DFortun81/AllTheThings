@@ -300,22 +300,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				q(1442, {	-- Seeking the Kor Gem
-					["qg"] = 3649,	-- Thundris Windweaver
-					["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
-					["coord"] = { 37.4, 40.2, DARKSHORE },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { PALADIN },
-					["repeatable"] = true,
-					["lvl"] = 20,
-					["groups"] = {
-						objective(1, {	-- 0/1 Corrupted Kor Gem
-							["provider"] = { "i", 6995 },	-- Corrupted Kor Gem
-						}),
-						i(7083),	-- Purified Kor Gem
-					},
-				}),
 				q(3765, {	-- The Corruption Abroad
 					["qg"] = 4984,  -- Argos Nightwhisper
 					-- #if AFTER WRATH
@@ -452,15 +436,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						4788,	-- Fallenroot Satyr
 						4798,	-- Fallenroot Shadowstalker
 						4831,	-- Lady Sarevess
-					},
-					-- #endif
-				}),
-				i(6995, {	-- Corrupted Kor Gem
-					-- #if BEFORE 6.0.1.18322
-					["crs"] = {
-						4803,	-- Blackfathom Oracle
-						4805,	-- Blackfathom Sea Witch
-						4802,	-- Blackfathom Tide Priestess
 					},
 					-- #endif
 				}),

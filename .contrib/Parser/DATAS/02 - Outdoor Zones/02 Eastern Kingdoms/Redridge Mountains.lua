@@ -564,6 +564,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["providers"] = {
 						{ "o", 31 },	-- Old Lion Statue
 						{ "i", 1083 },	-- Glyph of Azora
+						{ "o", 76 },	-- An Empty Jar
 					},
 					["sourceQuest"] = 94,	-- A Watchful Eye
 					["coord"] = { 84.3, 46.9, REDRIDGE_MOUNTAINS },
@@ -1322,6 +1323,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(214456, {	-- Dro'zem the Blasphemous
+					["coords"] = {
+						{ 34.8, 7.6, REDRIDGE_MOUNTAINS },
+						{ 63.6, 42.4, REDRIDGE_MOUNTAINS },
+						{ 78.4, 72.8, REDRIDGE_MOUNTAINS },
+						{ 76.2, 83.4, REDRIDGE_MOUNTAINS },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["groups"] = {
+						i(211488, {	-- Rune of the Avenger
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(410008),	-- Engrave Pants - Avenger's Shield
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(147222, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Gnollfeaster
 					["coord"] = { 24.4, 70.9, REDRIDGE_MOUNTAINS },
 					["questID"] = 54214,
@@ -1351,6 +1372,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(214519, {	-- Incinerator Gar'im
+					["coord"] = { 77.8, 86.2, REDRIDGE_MOUNTAINS },
+					["timeline"] = { "removed 2.0.1" },
+					["groups"] = {
+						i(211477, {	-- Rune of Incinerate
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(416015),	-- Engrave Pants - Incinerate
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(14271, {	-- Ribchaser
 					-- #if AFTER CATA
 					["coords"] = {

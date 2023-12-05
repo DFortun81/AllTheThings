@@ -1838,17 +1838,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(6324),	-- Robes of Arugal
 					},
 				}),
-				o(182011, {	-- Crate of Ingots
-					["timeline"] = { "added 2.2.0.7272", "removed 4.0.3" },
-					["groups"] = {
-						i(24224, {	-- Crate of Bloodforged Ingots
-							["timeline"] = { "added 2.2.0.7272", "removed 4.0.3" },
-						}),
-					},
-				}),
-				o(91138, {	-- Jordan's Hammer
-					i(6895),	-- Jordan's Smithing Hammer
-				}),
 				n(3864, {	-- Fel Steed/Shadow Charger
 					i(6341),	-- Eerie Stable Lantern
 					i(932),	-- Fel Steed Saddlebags

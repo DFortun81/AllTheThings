@@ -2434,6 +2434,7 @@ tinsert(settings.MostRecentTab.objects, DebuggingLabel);
 local ids = {
 	["achievementID"] = "Achievement ID",
 	["artID"] = "Art ID",
+	["awp"] = "Added With Patch",
 	["creatureID"] = "Creature ID",
 	["Coordinates"] = "Coordinates",
 	["currencyID"] = "Currency ID",
@@ -2453,12 +2454,13 @@ local ids = {
 	["Objectives"] = "Objectives",
 	["questID"] = "Quest ID",
 	["QuestGivers"] = "Quest Givers",
+	["rwp"] = "Removed With Patch",
 	["speciesID"] = "Species ID",
 	["spellID"] = "Spell ID",
 	["s"] = "Source ID",
 };
 local last = nil;
-for _,id in pairs({"achievementID","artID", "creatureID","Coordinates","currencyID","Descriptions","displayID","explorationID","factionID","filterID","flightPathID"}) do
+for _,id in pairs({"awp","rwp","achievementID","artID","creatureID","Coordinates","currencyID","Descriptions","displayID","explorationID","factionID","filterID","flightPathID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));

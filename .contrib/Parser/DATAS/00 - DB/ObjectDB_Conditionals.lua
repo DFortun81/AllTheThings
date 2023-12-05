@@ -11,6 +11,25 @@ researchEquipment.icon = [[~_.asset("Icon_PetFamily_Mechanical")]];
 -- Spirit of the Wolf
 ObjectDB[226469].text.en = [[~GetSpellInfo(154259)]];
 
+-- #if BEFORE CATA
+ObjectDB[256] = {
+	readable = "WANTED",
+	icon = "Interface/Icons/inv_scroll_03",
+	model = 199424,
+	text = {
+		en = "WANTED",
+		es = "SE BUSCA",
+		de = "GESUCHT",
+		fr = "AVIS DE RECHERCHE",
+		it = "RICERCATO",
+		pt = "PROCURA-SE",
+		ru = "РАЗЫСКИВАЕТСЯ",
+		ko = "현상 수배!",
+		cn = "通缉",
+	},
+};
+-- #endif
+
 -- TODO: Change the headers for this stuff to a custom header and allow the object localizer to translate the object so it appears on the tooltip.
 -- Item 1: Scintillating Murloc Skin Lotion
 local locales = ObjectDB[13000002].text;

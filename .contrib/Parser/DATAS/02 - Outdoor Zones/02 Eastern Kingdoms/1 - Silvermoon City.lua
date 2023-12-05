@@ -352,7 +352,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9691,	-- Return to Silvermoon
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
-					["maps"] = { GHOSTLANDS, BLACKFATHOM_DEEPS, RAGEFIRE_CHASM, SHADOWFANG_KEEP },
+					["maps"] = { BLACKFATHOM_DEEPS, GHOSTLANDS, RAGEFIRE_CHASM, SHADOWFANG_KEEP },
 					["cost"] = { { "i", 24223, 1 } },	-- Bloodvalor's Notes
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
@@ -361,12 +361,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Corrupted Kor Gem
 							["provider"] = { "i", 6995 },	-- Corrupted Kor Gem
+							["crs"] = {
+								4803,	-- Blackfathom Oracle
+								4805,	-- Blackfathom Sea Witch
+								4802,	-- Blackfathom Tide Priestess
+							},
 						}),
 						objective(2, {	-- 0/1 Crate of Bloodforged Ingots
-							["provider"] = { "i", 24224 },	-- Crate of Bloodforged Ingots
+							["providers"] = {
+								{ "i",  24224 },	-- Crate of Bloodforged Ingots
+								{ "o", 182011 },	-- Crate of Ingots
+							},
 						}),
 						objective(3, {	-- 0/1 Blood of the Wrathful
-							["provider"] = { "i", 24225 },	-- Blood of the Wrathful
+							["providers"] = {
+								{ "i",  24225 },	-- Blood of the Wrathful
+								{ "o", 182024 },	-- Blood Filled Orb
+							},
+							["cr"] = 17830,	-- Zelemar the Wrathful
 						}),
 						objective(4, {	-- 0/1 Blood Knight Insignia
 							["provider"] = { "i", 24226 },	-- Blood Knight Insignia

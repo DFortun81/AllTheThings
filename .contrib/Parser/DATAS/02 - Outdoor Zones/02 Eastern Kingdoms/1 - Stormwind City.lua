@@ -1970,8 +1970,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if BEFORE TBC
-				n(createHeader({	-- Speak to Brother Romulus
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(createHeader({	-- Speak to Brother Romulus
 					readable = "Speak to Brother Romulus",
 					icon = "Interface\\CURSOR\\Speak",
 					text = {
@@ -1992,7 +1992,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
-				}),
+				})),
 				-- #endif
 				q(343, {	-- Speaking of Fortitude
 					["qg"] = 1444,	-- Brother Kristoff

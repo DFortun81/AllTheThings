@@ -2345,22 +2345,66 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
 					["coord"] = { 52.6, 36.8, DUN_MOROGH },
 					["timeline"] = { "removed 4.0.3" },
-					["maps"] = { DEADMINES, LOCH_MODAN, SHADOWFANG_KEEP, BLACKFATHOM_DEEPS },
+					["maps"] = { BLACKFATHOM_DEEPS, DARKSHORE, DEADMINES, LOCH_MODAN, SHADOWFANG_KEEP },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Whitestone Oak Lumber
 							["provider"] = { "i", 6994 },	-- Whitestone Oak Lumber
-						}),
-						objective(2, {	-- 0/1 Jordan's Refined Ore Shipment
-							["provider"] = { "i", 6993 },	-- Jordan's Refined Ore Shipment
+							["cr"] = 641,	-- Goblin Woodcarver
 						}),
 						objective(3, {	-- 0/1 Jordan's Smithing Hammer
-							["provider"] = { "i", 6895 },	-- Jordan's Smithing Hammer
+							["providers"] = {
+								{ "i", 6895 },	-- Jordan's Smithing Hammer
+								{ "o", 91138 },	-- Jordan's Hammer
+							},
 						}),
-						objective(4, {	-- 0/1 Purified Kor Gem
-							["provider"] = { "i", 7083 },	-- Purified Kor Gem
+						q(1655, {	-- Bailor's Ore Shipment
+							["qg"] = 6241,	-- Bailor Stonehand
+							["coord"] = { 36.0, 45.0, LOCH_MODAN },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+							["classes"] = { PALADIN },
+							["repeatable"] = true,
+							["lvl"] = 20,
+							["groups"] = {
+								objective(1, {	-- 0/1 Jordan's Ore Shipment
+									["providers"] = {
+										{ "i", 6992 },	-- Jordan's Ore Shipment
+										{ "o", 92420 },	-- Bailor's Ore
+									},
+									["coord"] = { 71.6, 21.4, LOCH_MODAN },
+								}),
+								objective(2, {	-- 0/1 Jordan's Refined Ore Shipment
+									["provider"] = { "i", 6993 },	-- Jordan's Refined Ore Shipment
+									["questID"] = 1654,	-- The Test of Righteousness (2/3)
+								}),
+							},
+						}),
+						q(1442, {	-- Seeking the Kor Gem
+							["qg"] = 3649,	-- Thundris Windweaver
+							["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
+							["coord"] = { 37.4, 40.2, DARKSHORE },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+							["classes"] = { PALADIN },
+							["repeatable"] = true,
+							["lvl"] = 20,
+							["groups"] = {
+								objective(1, {	-- 0/1 Corrupted Kor Gem
+									["provider"] = { "i", 6995 },	-- Corrupted Kor Gem
+									["crs"] = {
+										4803,	-- Blackfathom Oracle
+										4805,	-- Blackfathom Sea Witch
+										4802,	-- Blackfathom Tide Priestess
+									},
+								}),
+								objective(4, {	-- 0/1 Purified Kor Gem
+									["provider"] = { "i", 7083 },	-- Purified Kor Gem
+									["questID"] = 1654,	-- The Test of Righteousness (2/3)
+								}),
+							},
 						}),
 					},
 				}),
