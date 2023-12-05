@@ -982,6 +982,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				q(78266, {	-- Dark Iron Ordinance
+					["qg"] = 211653,	-- Grizzby
+					["coord"] = { 61.8, 39.4, THE_BARRENS },
+					["maps"] = { WETLANDS, ARATHI_HIGHLANDS },
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/20 Dark Iron Ordinance
+							["provider"] = { "i", 210138 },	-- Dark Iron Ordinance
+							["coord"] = { 61.4, 29.6, WETLANDS },
+							["crs"] = {
+								1051,	-- Dark Iron Dwarf
+								1052,	-- Dark Iron Saboteur
+								1053,	-- Dark Iron Tunneler
+								1054,	-- Dark Iron Demolitionist
+							},
+						}),
+					},
+				}),
+				-- #endif
 				q(1069, {	-- Deepmoss Spider Eggs
 					["qg"] = 3446,	-- Mebok Mizzyrix
 					["coord"] = { 62.37, 37.32, THE_BARRENS },
@@ -1144,6 +1164,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				q(78265, {	-- Fish Oil
+					["qg"] = 211653,	-- Grizzby
+					["coord"] = { 61.8, 39.4, THE_BARRENS },
+					["cost"] = { { "i", 17058, 24 } },	-- Fish Oil
+					["maps"] = { ARATHI_HIGHLANDS, BLACKFATHOM_DEEPS, DESOLACE, DUSTWALLOW_MARSH, FERALAS, HILLSBRAD_FOOTHILLS, STRANGLETHORN_VALE, SWAMP_OF_SORROWS, WETLANDS },
+					["lvl"] = 20,
+				}),
+				-- #endif
 				q(1503, {	-- Forged Steel
 					["qg"] = 5878,	-- Thun'grim Firegaze
 					["sourceQuest"] = 1502,	-- Thun'grim Firegaze
@@ -2331,6 +2360,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				q(78267, {	-- Shredder Turbochargers
+					["qg"] = 211653,	-- Grizzby
+					["coord"] = { 61.8, 39.4, THE_BARRENS },
+					["maps"] = { STONETALON_MOUNTAINS },
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/16 Shredder Turbocharger
+							["provider"] = { "i", 210146 },	-- Shredder Turbocharger
+							["coord"] = { 62.6, 52.8, STONETALON_MOUNTAINS },
+							["cr"] = 214129,	-- Venture Co. Light Shredder
+						}),
+					},
+				}),
+				-- #endif
 				q(887, {	-- Southsea Freebooters
 					-- #if AFTER CATA
 					["qg"] = 3453,	-- Wharfmaster Dizzywig
@@ -3796,6 +3840,82 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				n(211653, {	-- Grizzby
+					["sourceQuests"] = {
+						78265,	-- Fish Oil
+						78266,	-- Dark Iron Ordinance
+						78267,	-- Shredder Turbochargers
+					},
+					["coord"] = { 61.8, 39.4, THE_BARRENS },
+					["lvl"] = 20,
+					["groups"] = {
+						i(210822, {	-- Harmonious Epiphany
+							["classes"] = { PRIEST },
+							["cost"] = 50000,	-- 5g
+							["groups"] = {
+								recipe(415995),	-- Engrave Chest - Serendipity
+							},
+						}),
+						i(210820, {	-- Rune of Sacrifice
+							["cost"] = 50000,	-- 5g
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(410010),	-- Engrave Pants - Divine Sacrifice
+							},
+						}),
+						i(210654, {	-- Spell Notes: Rewind Time
+							["classes"] = { MAGE },
+							["cost"] = 50000,	-- 5g
+							["groups"] = {
+								recipe(401761),	-- Engrave Gloves - Rewind Time
+							},
+						}),
+						i(210818, {	-- Rune of Lone Wolf
+							["classes"] = { HUNTER },
+							["cost"] = 50000,	-- 5g
+							["groups"] = {
+								recipe(410122),	-- Engrave Chest - Lone Wolf
+							},
+						}),
+						i(210817, {	-- Rune of Survival
+							["classes"] = { DRUID },
+							["cost"] = 50000,	-- 5g
+							["groups"] = {
+								recipe(416042),	-- Engrave Chest - Survival of the Fittest
+							},
+						}),
+						i(210825, {	-- Rune of the Warbringer
+							["classes"] = { WARRIOR },
+							["cost"] = 50000,	-- 5g
+							["groups"] = {
+								recipe(425445),	-- Engrave Chest - Warbringer
+							},
+						}),
+						i(210824, {	-- Rune of the Pact
+							["classes"] = { WARLOCK },
+							["cost"] = 50000,	-- 5g
+							["groups"] = {
+								recipe(425476),	-- Engrave Pants - Demonic Pact
+							},
+						}),
+						i(210653, {	-- Rune of Main Gauche
+							["classes"] = { ROGUE },
+							["cost"] = 50000,	-- 5g
+							["groups"] = {
+								recipe(424990),	-- Engrave Gloves - Main Gauche
+							},
+						}),
+						i(210823, {	-- Rune of Dual Wield Specialization
+							["classes"] = { SHAMAN },
+							["cost"] = 50000,	-- 5g
+							["groups"] = {
+								recipe(410096),	-- Engrave Chest - Dual Wield Specialization
+							},
+						}),
+					},
+				}),
+				-- #endif
 				-- #if AFTER 3.1.0.9626
 				n(3443, {	-- Grub
 					-- #if AFTER CATA
