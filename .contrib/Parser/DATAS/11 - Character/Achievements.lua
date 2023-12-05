@@ -32,10 +32,10 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	}),
 	ach(1015, {	-- 40 Exalted Reputations
 		["timeline"] = { ADDED_3_0_2 },
+		["_noautomation"] = true,
 		["g"] = {
 			title(46),		-- <Name> the Exalted
 		},
-		["_noautomation"] = true,
 	}),
 	ach(5374, { -- 45 Exalted Reputations
 		["timeline"] = { ADDED_4_0_3_LAUNCH },
@@ -50,31 +50,31 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		["_noautomation"] = true,
 	}),
 	ach(6742, bubbleDownSelf({["timeline"] = {ADDED_5_0_4}}, {	-- 60 Exalted Reputations
+		["_noautomation"] = true,
 		["g"] = {
 			title(197),	-- <Name> the Beloved
 		},
-		["_noautomation"] = true,
 	})),
 	ach(11177, {	-- 70 Exalted Reputations
 		["timeline"] = { ADDED_7_0_3_LAUNCH },
 		["_noautomation"] = true,
 	}),
 	ach(12864, bubbleDownSelf({["timeline"] = {ADDED_8_0_1_LAUNCH}}, {	-- 80 Exalted Reputations
+		["_noautomation"] = true,
 		["g"] = {
 			title(380),		-- <Name> the Admired
 		},
-		["_noautomation"] = true,
 	})),
 	ach(12865, {	-- 90 Exalted Reputations
 		["timeline"] = { ADDED_8_0_1_LAUNCH },
 		["_noautomation"] = true,
 	}),
 	ach(12866, bubbleDownSelf({["timeline"] = {ADDED_8_0_1_LAUNCH}}, {	-- 100 Exalted Reputations
+		["_noautomation"] = true,
 		["g"] = {
 			i(163982),		-- Pureheart Courser (MOUNT!)
 			title(379),		-- Esteemed <Name>
 		},
-		["_noautomation"] = true,
 	})),
 	ach(18471, {	-- 110 Exalted Reputations
 		["timeline"] = { ADDED_10_1_5 },

@@ -2,110 +2,149 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 
-root(ROOTS.WorldEvents, m(503,
-	-- bubbleDown({ ["u"] = REMOVED_FROM_GAME },
-	{	-- Brawlgar Arena
+root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Brawlgar Arena
 	["races"] = HORDE_ONLY,
 	["lvl"] = 120,
 	["icon"] = "Interface\\Icons\\INV_MISC_HEAD_ORC2_BRN",
 	["groups"] = {
 		n(ACHIEVEMENTS, {
-			un(REMOVED_FROM_GAME, a(ach(11565, {	-- King of the Guild (Alliance)(Legion)
-				un(REMOVED_FROM_GAME, ach(11563)),		-- The Second Rule of Brawler's Guild(Legion)
-				un(REMOVED_FROM_GAME, ach(11560)),		-- You Are Not Your $#*@! Legplates(Legion)
-			}))),
-			un(REMOVED_FROM_GAME, h(ach(11566, {	-- King of the Guild (Horde)
-				un(REMOVED_FROM_GAME, ach(11564)),		-- The Second Rule of Brawler's Guild(Legion)
-				un(REMOVED_FROM_GAME, ach(11561)),		-- You Are Not Your $#*@! Legplates(Legion)
-			}))),
-			un(REMOVED_FROM_GAME, a(ach(7949))),	-- Rabble Rabble Rabble (Season 2) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
-			un(REMOVED_FROM_GAME, h(ach(7950))),	-- Rabble Rabble Rabble (Season 2) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
-			un(REMOVED_FROM_GAME, ach(7944)),		-- Bottle Service (Season 2) **Comments on wowhead indicate this might still available in Legion, this needs to be tested.**
-			un(REMOVED_FROM_GAME, a(ach(7941))),	-- Brawlin' and Shot Callin' (Season 1) (Alliance)
-			un(REMOVED_FROM_GAME, h(ach(7942))),	-- Brawlin' and Shot Callin' (Season 1) (Horde)
-			un(REMOVED_FROM_GAME, a(ach(9170, {	-- Brawlin' and Shot Callin' (Season 2) (Alliance)
-				un(REMOVED_FROM_GAME, a(ach(9169))),	-- The Second Rule of Brawler's Guild (Season 2)
-				un(REMOVED_FROM_GAME, a(ach(9168))),	-- You Are Not Your $#*@! Legplates (Season 2)
-				un(REMOVED_FROM_GAME, a(ach(7947))),	-- The First Rule of Brawler's Guild (Season 1 or 2)
-			}))),
-			un(REMOVED_FROM_GAME, a(ach(9174, {	-- Brawlin' and Shot Callin' (Season 2) (Horde)
-				un(REMOVED_FROM_GAME, h(ach(9173))),	-- The Second Rule of Brawler's Guild (Season 2)
-				un(REMOVED_FROM_GAME, h(ach(9172))),	-- You Are Not Your $#*@! Legplates (Season 2)
-				un(REMOVED_FROM_GAME, h(ach(7948))),	-- The First Rule of Brawler's Guild (Season 1 or 2)
-			}))),
-			un(REMOVED_FROM_GAME, ach(11570)),		-- Educated Guesser
-			un(REMOVED_FROM_GAME, ach(13194)),		-- I Am Thrall's Complete Lack Of Surprise(BFA)
-			un(REMOVED_FROM_GAME, a(ach(13191, {	-- Brawler for Azeroth (Alliance)(BFA)
-				un(REMOVED_FROM_GAME, title(209)),	-- Brawler
-				un(REMOVED_FROM_GAME, ach(13189, {	-- The Second Rule of Brawler's Guild(BFA)
-					un(REMOVED_FROM_GAME, i(93195)),-- Brawler's Pass
-				})),
-				un(REMOVED_FROM_GAME, ach(13186)),	-- You Are Not Your $#*@! Legplates(BFA)
-				un(REMOVED_FROM_GAME, ach(11558)),	-- The First Rule of Brawler's Guild
-			}))),
-			un(REMOVED_FROM_GAME, h(ach(13192, {	-- Brawler for Azeroth (Horde)(BFA)
-				un(REMOVED_FROM_GAME, title(209)),	-- Brawler
-				un(REMOVED_FROM_GAME, ach(13190, {	-- The Second Rule of Brawler's Guild(BFA)
-					un(REMOVED_FROM_GAME, i(93228)),-- Brawler's Pass
-				})),
-				un(REMOVED_FROM_GAME, ach(13188)),	-- You Are Not Your $#*@! Legplates(BFA)
-				un(REMOVED_FROM_GAME, ach(11559)),	-- The First Rule of Brawler's Guild
-			}))),
-			un(REMOVED_FROM_GAME, ach(11573)),		-- Rumble Club
-			un(REMOVED_FROM_GAME, ach(11567)),		-- You Are Not The Contents Of Your Wallet
-			un(REMOVED_FROM_GAME, a(ach(8340, {	-- Deck Your Collection (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
-				--i(98543),	-- Wraps of the Blood-Soaked Brawler [Only leaving in under Season 2 since you are still able to complete that as of Legion and possibly BfA]
-			}))),
-			un(REMOVED_FROM_GAME, h(ach(8343, {	-- Deck Your Collection (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
-				--i(98543),	-- Wraps of the Blood-Soaked Brawler [Only leaving in under Season 2 since you are still able to complete that as of Legion and possibly BfA]
-			}))),
-			un(REMOVED_FROM_GAME, a(ach(9176, {			-- Deck Your Collection (Season 2) (Alliance) **Comments on wowhead indicate this is still available in Legion you just have to get lucky and get the random bosses you need for it. Can add this back in if brawler's guild becomes available again in the future. **
-				i(98543),				-- Wraps of the Blood-Soaked Brawler
-				crit(23383),				-- Grandpa Grumplefloot
-				crit(23394),				-- Ty'thar
-				crit(23385),				-- Master Boom Boom
-				crit(23386),				-- Razorgrin
-				crit(23387),				-- Splat
-				crit(23388),				-- Mecha-Bruce
-				crit(23389),				-- Dippy & Doopy
-				crit(23390),				-- Blingtron 3000
-				crit(23384),				-- The Bear and the Lady Fair
-				crit(23393),				-- Ro-Shambo
-				crit(23391),				-- Mingus Diggs
-				crit(23392),				-- The Blind Hero
-				un(REMOVED_FROM_GAME, a(ach(8339))),	-- Collect Your Deck (Season 2)
-			}))),
-			un(REMOVED_FROM_GAME, h(ach(9177, {			-- Deck Your Collection (Season 2) (Horde) **Comments on wowhead indicate this is still available in Legion you just have to get lucky and get the random bosses you need for it. Can add this back in if brawler's guild becomes available again in the future. **
-				i(98543),				-- Wraps of the Blood-Soaked Brawler
-				crit(23383),				-- Grandpa Grumplefloot
-				crit(23394),				-- Ty'thar
-				crit(23385),				-- Master Boom Boom
-				crit(23386),				-- Razorgrin
-				crit(23387),				-- Splat
-				crit(23388),				-- Mecha-Bruce
-				crit(23389),				-- Dippy & Doopy
-				crit(23390),				-- Blingtron 3000
-				crit(23384),				-- The Bear and the Lady Fair
-				crit(23393),				-- Ro-Shambo
-				crit(23391),				-- Mingus Diggs
-				crit(23392),				-- The Blind Hero
-				un(REMOVED_FROM_GAME, h(ach(8342))),	-- Collect Your Deck (Season 2)
-			}))),
-			un(REMOVED_FROM_GAME, ach(7945)),		-- Haters Gonna Hate (Season 2) **Can't find any commentary on whether this is still available in Legion season or not.**
-			un(REMOVED_FROM_GAME, a(ach(8335))),	-- Having a Brawl (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
-			un(REMOVED_FROM_GAME, h(ach(8337))),	-- Having a Brawl (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
-			un(REMOVED_FROM_GAME, ach(7943)),		-- I'm Your Number One Fan (Season 2) **Can't find any commentary on whether this is still available in Legion season or not.**
-			un(REMOVED_FROM_GAME, a(ach(8336))),	-- I've Got the Biggest Brawls of Them All (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
-			un(REMOVED_FROM_GAME, h(ach(8338))),	-- I've Got the Biggest Brawls of Them All (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
-			un(REMOVED_FROM_GAME, ach(11572)),		-- I Am Thrall's Complete Lack Of Surprise(Legion)
-			un(REMOVED_FROM_GAME, a(ach(7946))),	-- Now You're Just Showing Off (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
-			un(REMOVED_FROM_GAME, h(ach(8022))),	-- Now You're Just Showing Off (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
-			un(REMOVED_FROM_GAME, a(ach(9171))),	-- Now You're Just Showing Off (Season 2) (Alliance) **Comments on wowhead indicate this might still available in Legion, this needs to be tested.**
-			un(REMOVED_FROM_GAME, h(ach(9175))),	-- Now You're Just Showing Off (Season 2) (Horde) **Comments on wowhead indicate this might still available in Legion, this needs to be tested.**
-			un(REMOVED_FROM_GAME, a(ach(7940))),	-- The Second Rule of Brawler's Guild (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
-			un(REMOVED_FROM_GAME, h(ach(7939))),	-- The Second Rule of Brawler's Guild (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
-			un(REMOVED_FROM_GAME, a(ach(7937))),	-- You Are Not Your $#*@! Legplates (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
-			un(REMOVED_FROM_GAME, h(ach(8020))),	-- You Are Not Your $#*@! Legplates (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
+			ach(7944, {		-- Bottle Service (Season 2)
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+			}),
+			ach(13192, {	-- Brawler for Azeroth
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
+				["g"] = {
+					title(209, {	-- Brawler <Name>
+						["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
+					}),
+				}
+			}),
+			ach(7942, {		-- Brawlin' and Shot Callin' (Season 1)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+			}),
+			ach(9174, {		-- Brawlin' and Shot Callin' (Season 2)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+			}),
+			ach(8342, {		-- Collect Your Deck (Season 2)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+			}),
+			ach(8343, {		-- Deck Your Collection (Season 1)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_3_0, REMOVED_6_0_2 },
+				["g"] = {
+					i(98543, {	-- Wraps of the Blood-Soaked Brawler
+						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+					}),
+				},
+			}),
+			ach(9177, {		-- Deck Your Collection (Season 2)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+				["g"] = {
+					i(98543, {	-- Wraps of the Blood-Soaked Brawler
+						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+					}),
+				},
+			}),
+			ach(11570, {	-- Educated Guesser
+				["timeline"] = { ADDED_7_1_5, REMOVED_8_0_1 },
+			}),
+			ach(7945, {		-- Haters Gonna Hate (Season 2)
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+			}),
+			ach(8337, {		-- Having a Brawl (Season 1)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_3_0, REMOVED_6_0_2 },
+			}),
+			ach(13194, {	-- I Am Thrall's Complete Lack Of Surprise
+				["timeline"] = { ADDED_7_1_5, REMOVED_8_1_5 },
+			}),
+			ach(11572, {	-- I Am Thrall's Complete Lack Of Surprise (Season 3)
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
+			ach(7943, {		-- I'm Your Number One Fan (Season 2)
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+			}),
+			ach(8338, {		-- I've Got the Biggest Brawls of Them All (Season 1)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_3_0, REMOVED_6_0_2 },
+			}),
+			ach(11566, {	-- King of the Guild (Season 3)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
+			ach(8022, {		-- Now You're Just Showing Off (Season 1)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+			}),
+			ach(9175, {		-- Now You're Just Showing Off (Season 2)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+			}),
+			ach(7950, {		-- Rabble Rabble Rabble (Season 2)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+			}),
+			ach(11573, {	-- Rumble Club
+				["timeline"] = { ADDED_7_1_5, REMOVED_9_1_5 },
+			}),
+			ach(7948, {		-- The First Rule of Brawler's Guild (Season 1 or 2)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_1_0, REMOVED_7_0_3 },
+			}),
+			ach(11559, {	-- The First Rule of Brawler's Guild
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_7_2_0, REMOVED_9_1_5 },
+			}),
+			ach(7939, {		-- The Second Rule of Brawler's Guild (Season 1)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+			}),
+			ach(9173, {		-- The Second Rule of Brawler's Guild (Season 2)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+				["g"] = {
+					i(93195, {	-- Brawler's Pass
+						["timeline"] = { ADDED_5_1_0, REMOVED_9_1_5 },
+					}),
+				}
+			}),
+			ach(11564, {	-- The Second Rule of Brawler's Guild (Season 3)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
+			ach(13190, {	-- The Second Rule of Brawler's Guild
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
+				["g"] = {
+					i(93195, {	-- Brawler's Pass
+						["timeline"] = { ADDED_5_1_0, REMOVED_9_1_5 },
+					}),
+				}
+			}),
+			ach(8020, {		-- You Are Not Your $#*@! Legplates (Season 1)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+			}),
+			ach(9172, {		-- You Are Not Your $#*@! Legplates (Season 2)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+			}),
+			ach(11561, {	-- You Are Not Your $#*@! Legplates (Season 3)
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
+			ach(13188, {	-- You Are Not Your $#*@! Legplates
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
+			}),
+			ach(11567, {	-- You Are Not The Contents Of Your Wallet
+				["timeline"] = { ADDED_7_1_5, REMOVED_9_1_5 },
+			}),
 		}),
 		n(FACTIONS, sharedData({
 			["races"] = HORDE_ONLY,
@@ -558,4 +597,4 @@ root(ROOTS.WorldEvents, m(503,
 			}),
 		}),
 	},
-}));
+})));
