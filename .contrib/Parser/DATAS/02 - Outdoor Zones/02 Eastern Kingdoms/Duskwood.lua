@@ -1245,6 +1245,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 72,	-- The Legend of Stalvan (6/13)
 					["coord"] = { 29.6, 61.9, STORMWIND_CITY },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),
@@ -1257,7 +1258,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 22,
 					["groups"] = {
 						objective(1, {	-- 0/1 A Faded Journal Page
-							["provider"] = { "i", 921 },	-- A Faded Journal Page
+							["providers"] = {
+								{ "i", 921 },	-- A Faded Journal Page
+								{ "o", 1562 },	-- Marshal Haggard's Chest
+							},
 							["coord"] = { 85.6, 69.6, ELWYNN_FOREST },
 						}),
 					},
@@ -1985,6 +1989,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4827, {	-- Wizard's Belt
 							["isLimited"] = true,
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(210709, {	-- Recipe: Elixir of Coelesced Regret
+							["isLimited"] = true,
+						})),
+						-- #endif
 						i(6053, {	-- Recipe: Holy Protection Potion (RECIPE!)
 							["isLimited"] = true,
 						}),

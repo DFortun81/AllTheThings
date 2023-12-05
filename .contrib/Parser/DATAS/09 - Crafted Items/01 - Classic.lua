@@ -80,6 +80,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(10592),	-- Catseye Elixir
 			i(8949),	-- Elixir of Agility
 			i(13453),	-- Elixir of Brute Force
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(210708)),	-- Elixir of Coelesced Regret
+			-- #endif
 			i(3389),	-- Elixir of Defense
 			i(9224),	-- Elixir of Demonslaying
 			i(9233),	-- Elixir of Detect Demon

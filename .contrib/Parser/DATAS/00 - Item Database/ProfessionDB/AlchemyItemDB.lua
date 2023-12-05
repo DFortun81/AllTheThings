@@ -1132,3 +1132,17 @@ i(0, 405832);	-- Stinky Bright Potion
 i(210241, 415628);	-- Dreamwalker's Healing Potion
 --- DISCOVERY ---
 i(0, 415810);		-- Potion of Withering Dreams
+
+
+-- #if ANYCLASSIC
+------------------
+--  WOW CLASSIC --
+------------------
+
+-- #if SEASON_OF_DISCOVERY
+--------------------------
+-- Season of Discovery ---
+--------------------------
+i(210709, 426607);	-- Elixir of Coalesced Regret
+-- #endif
+-- #endif

@@ -968,6 +968,12 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 					["name"] = "Elixir of Brute Force",
 					["recipeID"] = 17557
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, {
+					["name"] = "Elixir of Coalesced Regret",
+					["recipeID"] = 426607
+				}),
+				-- #endif
 				{
 					["name"] = "Elixir of Defense",
 					["recipeID"] = 3177

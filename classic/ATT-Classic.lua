@@ -13054,6 +13054,8 @@ local CachedMapData = setmetatable({}, {
 				if c then clone.c = c; end
 				local r = GetRelativeValue(group, "r");
 				if r then clone.r = r; end
+				local lvl = GetRelativeValue(group, "lvl");
+				if lvl then clone.lvl = lvl; end
 				setmetatable(clone, getmetatable(group));
 
 				local key = group.key;

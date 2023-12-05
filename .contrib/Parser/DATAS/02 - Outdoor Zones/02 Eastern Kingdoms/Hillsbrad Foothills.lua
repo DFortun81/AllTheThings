@@ -3106,6 +3106,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(5772, {	-- Pattern: Red Woolen Bag
 							["isLimited"] = true,
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(210709, {	-- Recipe: Elixir of Coelesced Regret
+							["isLimited"] = true,
+						})),
+						-- #endif
 						i(7561, {	-- Schematic: Goblin Jumper Cables
 							["isLimited"] = true,
 						}),
