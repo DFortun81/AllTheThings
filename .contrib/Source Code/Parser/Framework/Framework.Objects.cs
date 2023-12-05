@@ -549,8 +549,8 @@ namespace ATT
                     // merge into anything that's not an Achievement, or into Achievements which are not within the Achievements category
                     if (!ProcessingAchievementCategory || key != "achID")
                     {
-                        // does this data contain the key?
-                        if (data.TryGetValue(key, out decimal keyValue))
+                        // does this data contain the key? and never merge into a Criteria directly
+                        if (data.TryGetValue(key, out decimal keyValue) && !data.ContainsKey("criteriaID"))
                         {
                             // for 'factionID' merge into, make sure it does not also have 'itemID' (commendations etc.)
                             if (key == "factionID" && data.ContainsKey("itemID"))
