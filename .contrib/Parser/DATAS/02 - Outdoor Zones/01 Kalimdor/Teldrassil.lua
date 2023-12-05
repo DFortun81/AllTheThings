@@ -1828,6 +1828,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 2030,	-- Elder Timberling
 					["coord"] = { 45.4, 24.6, TELDRASSIL },
 				}),
+				-- #if BEFORE TBC
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208610, {	-- Severed Owl Head
+					["coord"] = { 40.6, 53.6, TELDRASSIL },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						1996,	-- Strigid Screecher
+						1995,	-- Strigid Owl
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208612, {	-- Severed Spider Head
+					["coord"] = { 59.8, 59.0, TELDRASSIL },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						1998,	-- Webwood Lurker
+						1999,	-- Webwood Venomfang
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208611, {	-- Severed Tiger Head
+					["coord"] = { 40.4, 60.0, TELDRASSIL },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						2042,	-- Nightsaber
+						2043,	-- Nightsaber Stalker
+					},
+				})),
+				-- #endif
 			}),
 		},
 	}),

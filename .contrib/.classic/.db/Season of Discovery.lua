@@ -65,6 +65,139 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(c
 			["races"] = HORDE_ONLY,
 		}),
 	}),
+	n(createHeader({	-- Monster Hunting
+		readable = "Monster Hunting",
+		icon = "Interface\\CURSOR\\Attack",
+		text = {
+			en = "Monster Hunting",
+			es = "Caza de Monstruos",
+			de = "Monsterjagd",
+			fr = "Chasse aux Monstres",
+			it = "Caccia ai Mostri",
+			pt = "Caça aos Monstros",
+			ru = "Охота на монстров",
+			ko = "몬스터 사냥",
+			cn = "怪物狩猎",
+		},
+	}), {
+		["classes"] = { WARRIOR },
+		["groups"] = {
+			i(204703, {	-- Rune of Devastate
+				["cost"] = {
+					{ "i", 204688, 1 },	-- Monster Hunter's First Rune Fragment
+					{ "i", 204689, 1 },	-- Monster Hunter's Second Rune Fragment
+					{ "i", 204690, 1 },	-- Monster Hunter's Third Rune Fragment
+				},
+				["maps"] = { DARNASSUS, DUN_MOROGH, DUROTAR, STORMWIND_CITY, MULGORE, UNDERCITY },
+				["classes"] = { WARRIOR },
+				["groups"] = {
+					recipe(403475),	-- Engrave Gloves - Devastate
+				},
+			}),
+			n(209608, {	-- Delwynna <Monster Hunter>
+				["coord"] = { 64.0, 22.0, DARNASSUS },
+				["timeline"] = { "removed 2.0.1" },
+				["classes"] = { WARRIOR },
+				["races"] = { NIGHTELF },
+				["groups"] = {
+					i(204688, {	-- Monster Hunter's First Rune Fragment
+						["cost"] = { { "i", 208610, 1 } },	-- Severed Owl Head
+					}),
+					i(204689, {	-- Monster Hunter's Second Rune Fragment
+						["cost"] = { { "i", 208611, 1 } },	-- Severed Tiger Head
+					}),
+					i(204690, {	-- Monster Hunter's Third Rune Fragment
+						["cost"] = { { "i", 208612, 1 } },	-- Severed Spider Head
+					}),
+				},
+			}),
+			n(208619, {	-- Dorac Graves <Tactical Surgeon>
+				["coord"] = { 48.0, 70.6, UNDERCITY },
+				["timeline"] = { "removed 2.0.1" },
+				["classes"] = { WARRIOR },
+				["races"] = { UNDEAD },
+				["groups"] = {
+					i(204688, {	-- Monster Hunter's First Rune Fragment
+						["cost"] = { { "i", 207975, 1 } },	-- Severed Bat Head
+					}),
+					i(204689, {	-- Monster Hunter's Second Rune Fragment
+						["cost"] = { { "i", 204477, 1 } },	-- Severed Murloc Head
+					}),
+					i(204690, {	-- Monster Hunter's Third Rune Fragment
+						["cost"] = { { "i", 204478, 1 } },	-- Severed Gnoll Head
+					}),
+				},
+			}),
+			n(208652, {	-- Junni Steelpass <Monster Hunter>
+				["coord"] = { 46.6, 53.6, DUN_MOROGH },
+				["timeline"] = { "removed 2.0.1" },
+				["classes"] = { WARRIOR },
+				["races"] = { DWARF, GNOME },
+				["groups"] = {
+					i(204688, {	-- Monster Hunter's First Rune Fragment
+						["cost"] = { { "i", 208158, 1 } },	-- Pristine Trogg Heart
+					}),
+					i(204689, {	-- Monster Hunter's Second Rune Fragment
+						["cost"] = { { "i", 208159, 1 } },	-- Severed Troll Head
+					}),
+					i(204690, {	-- Monster Hunter's Third Rune Fragment
+						["cost"] = { { "i", 208160, 1 } },	-- Severed Wendigo Paw
+					}),
+				},
+			}),
+			n(207637, {	-- Vateya Timberhoof <Monster Hunter>
+				["coord"] = { 46.4, 61.8, MULGORE },
+				["timeline"] = { "removed 2.0.1" },
+				["classes"] = { WARRIOR },
+				["races"] = { TAUREN },
+				["groups"] = {
+					i(204688, {	-- Monster Hunter's First Rune Fragment
+						["cost"] = { { "i", 206994, 1 } },	-- Severed Quilboar Head
+					}),
+					i(204689, {	-- Monster Hunter's Second Rune Fragment
+						["cost"] = { { "i", 206995, 1 } },	-- Severed Harpy Head
+					}),
+					i(204690, {	-- Monster Hunter's Third Rune Fragment
+						["cost"] = { { "i", 204478, 1 } },	-- Severed Gnoll Head
+					}),
+				},
+			}),
+			n(207957, {	-- Vahi Bonesplitter <Monster Hunter>
+				["coord"] = { 53.0, 43.6, DUROTAR },
+				["timeline"] = { "removed 2.0.1" },
+				["classes"] = { WARRIOR },
+				["races"] = { ORC, TROLL },
+				["groups"] = {
+					i(204688, {	-- Monster Hunter's First Rune Fragment
+						["cost"] = { { "i", 206994, 1 } },	-- Severed Quilboar Head
+					}),
+					i(204689, {	-- Monster Hunter's Second Rune Fragment
+						["cost"] = { { "i", 206995, 1 } },	-- Severed Harpy Head
+					}),
+					i(204690, {	-- Monster Hunter's Third Rune Fragment
+						["cost"] = { { "i", 207062, 1 } },	-- Severed Centaur Head
+					}),
+				},
+			}),
+			n(203226, {	-- Viktoria Woods <Monster Hunter>
+				["coord"] = { 69.8, 50.0, STORMWIND_CITY },
+				["timeline"] = { "removed 2.0.1" },
+				["classes"] = { WARRIOR },
+				["races"] = { HUMAN },
+				["groups"] = {
+					i(204688, {	-- Monster Hunter's First Rune Fragment
+						["cost"] = { { "i", 204476, 1 } },	-- Severed Kobold Head
+					}),
+					i(204689, {	-- Monster Hunter's Second Rune Fragment
+						["cost"] = { { "i", 204477, 1 } },	-- Severed Murloc Head
+					}),
+					i(204690, {	-- Monster Hunter's Third Rune Fragment
+						["cost"] = { { "i", 204478, 1 } },	-- Severed Gnoll Head
+					}),
+				},
+			}),
+		},
+	}),
 	n(QUESTS, {
 		q(78612, {	-- A Full Shipment [Alliance - Level 9]
 			["qg"] = 213077,	-- Elaine Compton

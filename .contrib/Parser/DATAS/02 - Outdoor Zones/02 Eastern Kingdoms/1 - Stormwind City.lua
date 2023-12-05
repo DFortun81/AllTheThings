@@ -1970,6 +1970,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if BEFORE TBC
+				n(createHeader({	-- Speak to Brother Romulus
+					readable = "Speak to Brother Romulus",
+					icon = "Interface\\CURSOR\\Speak",
+					text = {
+						en = "Speak to Brother Romulus",
+						es = "Habla con el Hermano Romulus",
+						de = "Sprich mit Bruder Romulus",
+						fr = "Parlez à Frère Romulus",
+						it = "Parla con Fratello Romulus",
+						pt = "Fale com o Irmão Romulus",
+						ru = "Поговорите с Брат Ромул",
+						ko = "로물루스 형제와 대화하세요",
+						cn = "与罗穆卢斯修士交谈",
+					},
+				}), {
+					["questID"] = 75939,	-- Brother Romulus HQT
+					["qg"] = 205278,	-- Brother Romulus
+					["coord"] = { 38.6, 28.8, STORMWIND_CITY },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				-- #endif
 				q(343, {	-- Speaking of Fortitude
 					["qg"] = 1444,	-- Brother Kristoff
 					-- #if AFTER WRATH
@@ -3126,7 +3150,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(TREASURES, {
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(205864, {	-- Charred Note
 					["provider"] = { "o", 402215 },	-- Charred Note
-					["questID"] = 75939,	-- Charred Note HQT / Might Also be 75940
+					["questID"] = 75940,	-- Charred Note HQT
+					["sourceQuest"] = 75939,	-- Brother Romulus HQT
 					["coord"] = { 33.0, 24.75, STORMWIND_CITY },
 					["maps"] = { DUSKWOOD },
 					["timeline"] = { "removed 2.0.1" },
@@ -3136,7 +3161,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(205897, {	-- Rune of Martyrdom
 					["provider"] = { "n", 205153 },	-- Ada Gelhardt
 					["questID"] = 75969,	-- Ada Gelhardt HQT
-					["sourceQuest"] = 75939,	-- Charred Note HQT / Might Also be 75940
+					["sourceQuest"] = 75940,	-- Charred Note HQT
 					["coord"] = { 4.3, 28.25, DUSKWOOD },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { PALADIN },

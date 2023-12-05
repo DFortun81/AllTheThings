@@ -2357,6 +2357,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 				}),
 				-- #endif
+				-- #if BEFORE TBC
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(207975, {	-- Severed Bat Head
+					["coord"] = { 43.2, 53.0, TIRISFAL_GLADES },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						1553,	-- Greater Duskbat
+						1554,	-- Vampiric Duskbat
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204478, {	-- Severed Gnoll Head
+					["coord"] = { 59.2, 36.2, TIRISFAL_GLADES },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						1674,	-- Rot Hide Gnoll
+						1941,	-- Rot Hide Graverobber
+						1675,	-- Rot Hide Mongrel
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204477, {	-- Severed Murloc Head
+					["coord"] = { 35.2, 42.0, TIRISFAL_GLADES },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						1545,	-- Vile Fin Muckdweller
+						1544,	-- Vile Fin Minor Oracle
+					},
+				})),
+				-- #endif
 				i(3319, {	-- Short Sabre
 					["cr"] = 1529,	-- Bleeding Horror
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023

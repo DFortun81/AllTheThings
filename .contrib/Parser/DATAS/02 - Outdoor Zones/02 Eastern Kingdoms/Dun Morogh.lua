@@ -544,7 +544,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 29.8, 71.2, DUN_MOROGH },
 							-- #endif
 							["timeline"] = { "removed 7.0.3" },
-							["races"] = { DWARF, NIGHT_ELF },
+							["races"] = { DWARF, NIGHTELF },
 							["classes"] = { WARRIOR },
 						}),
 						q(3115, {	-- Tainted Memorandum
@@ -2862,6 +2862,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if BEFORE TBC
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208158, {	-- Pristine Trogg Heart
+					["coord"] = { 70.6, 59.2, DUN_MOROGH },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						1116,	-- Rockjaw Ambusher
+						1117,	-- Rockjaw Bonesnapper
+						1115,	-- Rockjaw Skullthumper
+					},
+				})),
+				-- #endif
 				-- #if BEFORE 10.1.7
 				i(2065, {	-- Rockjaw Blade
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
@@ -2871,6 +2883,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 77.6, 59.6, DUN_MOROGH },
 					},
 				}),
+				-- #endif
+				-- #if BEFORE TBC
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208159, {	-- Severed Troll Head
+					["coord"] = { 26.6, 50.6, DUN_MOROGH },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						1123,	-- Frostmane Headhunter
+						1397,	-- Frostmane Seer
+						1124,	-- Frostmane Shadowcaster
+						1121,	-- Frostmane Snowstrider
+						1120,	-- Frostmane Troll
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208160, {	-- Severed Wendigo Paw
+					["coord"] = { 42.6, 55.0, DUN_MOROGH },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						1135,	-- Wendigo
+						1134,	-- Young Wendigo
+					},
+				})),
 				-- #endif
 				i(2066, {	-- Skull Hatchet
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023

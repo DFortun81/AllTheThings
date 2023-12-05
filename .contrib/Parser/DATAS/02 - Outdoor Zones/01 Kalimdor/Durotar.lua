@@ -3370,6 +3370,39 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 3192,	-- Lieutenant Benedict
 					["coord"] = { 59.6, 58.2, DUROTAR },
 				}),
+				-- #if BEFORE TBC
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(207062, {	-- Severed Centaur Head
+					["coord"] = { 51.2, 78.4, DUROTAR },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						3119,	-- Kolkar Drudge
+						3120,	-- Kolkar Outrunner
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206995, {	-- Severed Harpy Head
+					["coord"] = { 48.6, 32.4, DUROTAR },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						3116,	-- Dustwind Pillager
+						3115,	-- Dustwind Harpy
+						3117,	-- Dustwind Savage
+						3118,	-- Dustwind Storm Witch
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206994, {	-- Severed Quilboar Head
+					["coord"] = { 50.0, 49.6, DUROTAR },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						3112,	-- Razormane Scout
+						3111,	-- Razormane Quilboar
+						3114,	-- Razormane Battleguard
+						3113,	-- Razormane Dustrunner
+					},
+				})),
+				-- #endif
 			}),
 			-- #endif
 		},

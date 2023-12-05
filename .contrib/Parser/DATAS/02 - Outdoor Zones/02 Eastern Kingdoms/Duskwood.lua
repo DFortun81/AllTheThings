@@ -1221,7 +1221,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 22,
 					["groups"] = {
 						objective(1, {	-- 0/1 An Undelivered Letter
-							["provider"] = { "i", 910 },	-- An Undelivered Letter
+							["providers"] = {
+								{ "i", 910 },	-- An Undelivered Letter
+								{ "o", 1560 },	-- Storage Chest
+							},
 							["coord"] = { 44.2, 65.8, ELWYNN_FOREST },
 						}),
 					},

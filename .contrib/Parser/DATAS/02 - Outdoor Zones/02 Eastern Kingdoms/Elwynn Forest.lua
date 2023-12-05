@@ -951,6 +951,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
 						}),
+						-- #if BEFORE TBC
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, q(77616, {	-- The Lost Rune
+							["qg"] = 911,	-- Llane Beshere <Warrior Trainer>
+							["coord"] = { 50.2, 42.2, ELWYNN_FOREST },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARRIOR },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
+									["providers"] = {
+										{ "i", 204806 },	-- Rune of Victory Rush
+										{ "o", 397987 },	-- Kobold Stashbox
+									},
+									["coord"] = { 50.6, 27.2, ELWYNN_FOREST },
+								}),
+								recipe(403470),	-- Engrave Gloves - Victory Rush
+								i(2385),	-- Tarnished Chain Gloves
+							},
+						})),
+						-- #endif
 						q(26918, {	-- The Power of the Light
 							["qg"] = 925,	-- Brother Sammuel <Paladin Trainer>
 							["sourceQuest"] = 3101,	-- Consecrated Letter
@@ -1892,6 +1913,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 47,	-- Gold Dust Exchange
 					["coord"] = { 43.2, 65.8, ELWYNN_FOREST },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 3,
 					-- #if BEFORE 4.0.3
@@ -2482,6 +2504,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					--]]
 				}),
+				-- #if BEFORE TBC
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204478, {	-- Severed Gnoll Head
+					["coord"] = { 50.15, 62.81, ELWYNN_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						448,	-- Hogger
+						478,	-- Riverpaw Outrunner
+						 97,	-- Riverpaw Runt
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204476, {	-- Severed Kobold Head
+					["coord"] = { 39.0, 85.24, ELWYNN_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						327,	-- Goldtooth
+						 40,	-- Kobold Miner
+						475,	-- Kobold Tunneler
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204477, {	-- Severed Murloc Head
+					["coord"] = { 50.15, 62.81, ELWYNN_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						285,	-- Murloc
+						 46,	-- Murloc Forager
+						735,	-- Murloc Streamrunner
+					},
+				})),
+				-- #endif
 				i(781, {	-- Stone Gnoll Hammer
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["crs"] = {

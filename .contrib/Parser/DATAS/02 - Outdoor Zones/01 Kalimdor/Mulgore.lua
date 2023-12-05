@@ -1706,6 +1706,36 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
+			-- #if BEFORE TBC
+			n(ZONE_DROPS, {
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204478, {	-- Severed Gnoll Head
+					["coord"] = { 53.6, 73.6, MULGORE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						2949,	-- Palemane Tanner
+						2950,	-- Palemane Skinner
+						2951,	-- Palemane Poacher
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206995, {	-- Severed Harpy Head
+					["coord"] = { 33.6, 42.0, MULGORE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						2962,	-- Windfury Harpy
+						2963,	-- Windfury Wind Witch
+						2965,	-- Windfury Matriarch
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206994, {	-- Severed Quilboar Head
+					["coord"] = { 61.6, 22.4, MULGORE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["cr"] = 3232,	-- Bristleback Interloper
+				})),
+			}),
+			-- #endif
 		},
 	}),
 }));
