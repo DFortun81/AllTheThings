@@ -1,4 +1,4 @@
--- #if BEFORE TBC
+-- #if SEASON_OF_DISCOVERY
 local classHeader = function(classID, g)
 	return cl(classID, bubbleDown({ ["classes"] = { classID } }, g));
 end

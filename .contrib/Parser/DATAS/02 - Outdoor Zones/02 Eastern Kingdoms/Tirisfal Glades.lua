@@ -2357,7 +2357,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 				}),
 				-- #endif
-				-- #if BEFORE TBC
+				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(207975, {	-- Severed Bat Head
 					["coord"] = { 43.2, 53.0, TIRISFAL_GLADES },
 					["timeline"] = { "removed 2.0.1" },

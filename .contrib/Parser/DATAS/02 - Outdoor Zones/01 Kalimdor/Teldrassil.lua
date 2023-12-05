@@ -1828,7 +1828,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 2030,	-- Elder Timberling
 					["coord"] = { 45.4, 24.6, TELDRASSIL },
 				}),
-				-- #if BEFORE TBC
+				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208610, {	-- Severed Owl Head
 					["coord"] = { 40.6, 53.6, TELDRASSIL },
 					["timeline"] = { "removed 2.0.1" },

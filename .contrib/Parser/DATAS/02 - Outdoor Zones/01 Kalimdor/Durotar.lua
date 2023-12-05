@@ -3370,7 +3370,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 3192,	-- Lieutenant Benedict
 					["coord"] = { 59.6, 58.2, DUROTAR },
 				}),
-				-- #if BEFORE TBC
+				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(207062, {	-- Severed Centaur Head
 					["coord"] = { 51.2, 78.4, DUROTAR },
 					["timeline"] = { "removed 2.0.1" },

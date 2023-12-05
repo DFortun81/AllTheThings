@@ -1706,7 +1706,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
-			-- #if BEFORE TBC
+			-- #if SEASON_OF_DISCOVERY
 			n(ZONE_DROPS, {
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204478, {	-- Severed Gnoll Head
 					["coord"] = { 53.6, 73.6, MULGORE },

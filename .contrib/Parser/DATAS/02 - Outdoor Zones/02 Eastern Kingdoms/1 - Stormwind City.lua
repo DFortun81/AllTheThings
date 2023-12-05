@@ -3146,7 +3146,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if BEFORE TBC
+			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(205864, {	-- Charred Note
 					["provider"] = { "o", 402215 },	-- Charred Note

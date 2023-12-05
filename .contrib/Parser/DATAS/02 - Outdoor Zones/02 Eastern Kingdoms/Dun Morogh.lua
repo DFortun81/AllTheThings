@@ -2862,7 +2862,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				-- #if BEFORE TBC
+				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208158, {	-- Pristine Trogg Heart
 					["coord"] = { 70.6, 59.2, DUN_MOROGH },
 					["timeline"] = { "removed 2.0.1" },
@@ -2884,7 +2884,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
-				-- #if BEFORE TBC
+				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208159, {	-- Severed Troll Head
 					["coord"] = { 26.6, 50.6, DUN_MOROGH },
 					["timeline"] = { "removed 2.0.1" },

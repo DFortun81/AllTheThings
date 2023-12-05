@@ -1317,7 +1317,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if BEFORE TBC
+				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(210537, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {	-- Undying Laborer
 					["coord"] = { 31.8, 43.5, WESTFALL },
 					["groups"] = {

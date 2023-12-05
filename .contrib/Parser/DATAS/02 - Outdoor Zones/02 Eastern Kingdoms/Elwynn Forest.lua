@@ -834,7 +834,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { MONK },
 						}),
-						-- #if BEFORE TBC
+						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, q(77617, {	-- Relics of the Light
 							["qg"] = 925,	-- Brother Sammuel <Paladin Trainer>
 							["coord"] = { 50.4, 42.0, ELWYNN_FOREST },
@@ -951,7 +951,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { HUNTER },
 						}),
-						-- #if BEFORE TBC
+						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, q(77616, {	-- The Lost Rune
 							["qg"] = 911,	-- Llane Beshere <Warrior Trainer>
 							["coord"] = { 50.2, 42.2, ELWYNN_FOREST },
@@ -2257,7 +2257,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
-			-- #if BEFORE TBC
+			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(205685, {	-- Rune of Aegis
 					["provider"] = { "n", 204989 },	-- Wounded Adventurer
@@ -2504,7 +2504,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					--]]
 				}),
-				-- #if BEFORE TBC
+				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204478, {	-- Severed Gnoll Head
 					["coord"] = { 50.15, 62.81, ELWYNN_FOREST },
 					["timeline"] = { "removed 2.0.1" },
