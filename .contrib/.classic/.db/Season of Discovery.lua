@@ -260,54 +260,127 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(c
 			recipe(416050),	-- Engrave Chest - Living Seed
 			recipe(416042),	-- Engrave Chest - Survival of the Fittest
 			recipe(410021),	-- Engrave Chest - Wild Strikes
+			recipe(416049),	-- Engrave Gloves - Lacerate
+			recipe(410025),	-- Engrave Gloves - Mangle
+			recipe(416044),	-- Engrave Gloves - Sunfire
+			recipe(410028),	-- Engrave Gloves - Wild Growth
+			recipe(410033),	-- Engrave Pants - Lifebloom
+			recipe(410023),	-- Engrave Pants - Savage Roar
+			recipe(416046),	-- Engrave Pants - Skull Bash
+			recipe(424718),	-- Engrave Pants - Starsurge
 		}),
 		classHeader(HUNTER, {
 			recipe(410115),	-- Engrave Chest - Aspect of the Lion
 			recipe(425759),	-- Engrave Chest - Cobra Strikes
 			recipe(410122),	-- Engrave Chest - Lone Wolf
 			recipe(410113),	-- Engrave Chest - Master Marksman
+			recipe(410110),	-- Engrave Gloves - Beast Mastery
+			recipe(425758),	-- Engrave Gloves - Carve
+			recipe(410121),	-- Engrave Gloves - Chimera Shot
+			recipe(410123),	-- Engrave Gloves - Explosive Shot
+			recipe(425762),	-- Engrave Pants - Flanking Strike
+			recipe(410111),	-- Engrave Pants - Kill Command
+			recipe(425760),	-- Engrave Pants - Serpent Spread
+			recipe(416091),	-- Engrave Pants - Sniper Training
 		}),
 		classHeader(MAGE, {
 			recipe(401759),	-- Engrave Chest - Burnout
 			recipe(415942),	-- Engrave Chest - Enlightenment
 			recipe(401765),	-- Engrave Chest - Fingers of Frost
 			recipe(401767),	-- Engrave Chest - Regeneration
+			recipe(401757),	-- Engrave Gloves - Arcane Blast
+			recipe(401760),	-- Engrave Gloves - Ice Lance
+			recipe(415936),	-- Engrave Gloves - Living Bomb
+			recipe(401761),	-- Engrave Gloves - Rewind Time
+			recipe(425171),	-- Engrave Pants - Arcane Surge
+			recipe(425170),	-- Engrave Pants - Icy Veins
+			recipe(401768),	-- Engrave Pants - Living Flame
+			recipe(415939),	-- Engrave Pants - Mass Regeneration
 		}),
 		classHeader(PALADIN, {
 			recipe(425619),	-- Engrave Chest - Aegis
 			recipe(410014),	-- Engrave Chest - Divine Storm
 			recipe(425618),	-- Engrave Chest - Horn of Lordaeron
 			recipe(410015),	-- Engrave Chest - Seal of Martyrdom
+			recipe(409999),	-- Engrave Gloves - Beacon of Light
+			recipe(410002),	-- Engrave Gloves - Crusader Strike
+			recipe(410001),	-- Engrave Gloves - Hand of Reckoning
+			recipe(410008),	-- Engrave Pants - Avenger's Shield
+			recipe(410010),	-- Engrave Pants - Divine Sacrifice
+			recipe(416037),	-- Engrave Pants - Exorcist
+			recipe(410011),	-- Engrave Pants - Inspiration Exemplar
+			recipe(425621),	-- Engrave Pants - Rebuke
 		}),
 		classHeader(PRIEST, {
 			recipe(415995),	-- Engrave Chest - Serendipity
 			recipe(415997),	-- Engrave Chest - Strength of Soul
 			recipe(425215),	-- Engrave Chest - Twisted Faith
 			recipe(425216),	-- Engrave Chest - Void Plague
+			recipe(402859),	-- Engrave Gloves - Circle of Healing
+			recipe(415996),	-- Engrave Gloves - Mind Sear
+			recipe(402862),	-- Engrave Gloves - Penance
+			recipe(402849),	-- Engrave Gloves - Shadow Word - Death
+			recipe(402852),	-- Engrave Pants - Homunculi
+			recipe(425213),	-- Engrave Pants - Power Word: Barrier
+			recipe(402848),	-- Engrave Pants - Prayer of Mending
+			recipe(402854),	-- Engrave Pants - Shared Pain
 		}),
 		classHeader(ROGUE, {
 			recipe(400080),	-- Engrave Chest - Deadly Brew
 			recipe(400082),	-- Engrave Chest - Just a Flesh Wound
 			recipe(400095),	-- Engrave Chest - Quick Draw
 			recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
+			recipe(424990),	-- Engrave Gloves - Main Gauche
+			recipe(400094),	-- Engrave Gloves - Mutilate
+			recipe(424984),	-- Engrave Gloves - Saber Slash
+			recipe(400105),	-- Engrave Gloves - Shadowstrike
+			recipe(424988),	-- Engrave Gloves - Shiv
+			recipe(400081),	-- Engrave Pants - Between the Eyes
+			recipe(400099),	-- Engrave Pants - Blade Dance
+			--recipe(401488),	-- Engrave Pants - Cutty's Rune [This may be NYI?]
+			recipe(400102),	-- Engrave Pants - Envenom
 		}),
 		classHeader(SHAMAN, {
 			recipe(410096),	-- Engrave Chest - Dual Wield Specialization
 			recipe(416057),	-- Engrave Chest - Healing Rain
 			recipe(410094),	-- Engrave Chest - Overload
 			recipe(410098),	-- Engrave Chest - Shield Mastery
+			recipe(410095),	-- Engrave Gloves - Lava Burst
+			recipe(410104),	-- Engrave Gloves - Lava Lash
+			recipe(425344),	-- Engrave Gloves - Molten Blast
+			recipe(410097),	-- Engrave Gloves - Water Shield
+			recipe(410099),	-- Engrave Pants - Ancestral Guidance
+			recipe(410101),	-- Engrave Pants - Earth Shield
+			recipe(425343),	-- Engrave Pants - Shamanistic Rage
+			recipe(410107),	-- Engrave Pants - Way of Earth
 		}),
 		classHeader(WARLOCK, {
 			recipe(416009),	-- Engrave Chest - Demonic Tactics
 			recipe(403937),	-- Engrave Chest - Lake of Fire
 			recipe(403932),	-- Engrave Chest - Master Channeler
 			recipe(403920),	-- Engrave Chest - Soul Siphon
+			recipe(403925),	-- Engrave Gloves - Chaos Bolt
+			recipe(403919),	-- Engrave Gloves - Haunt
+			recipe(403938),	-- Engrave Gloves - Metamorphosis
+			recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
+			recipe(425477),	-- Engrave Pants - Demonic Grace
+			recipe(425476),	-- Engrave Pants - Demonic Pact
+			recipe(416008),	-- Engrave Pants - Everlasting Affliction
+			recipe(416015),	-- Engrave Pants - Incinerate
 		}),
 		classHeader(WARRIOR, {
 			recipe(403474),	-- Engrave Chest - Blood Frenzy
 			recipe(403480),	-- Engrave Chest - Flagellation
 			recipe(425444),	-- Engrave Chest - Raging Blow
 			recipe(425445),	-- Engrave Chest - Warbringer
+			recipe(403475),	-- Engrave Gloves - Devastate
+			recipe(403489),	-- Engrave Gloves - Endless Rage
+			recipe(425443),	-- Engrave Gloves - Quick Strike
+			recipe(416003),	-- Engrave Gloves - Single-Minded Fury
+			recipe(403470),	-- Engrave Gloves - Victory Rush
+			recipe(425446),	-- Engrave Pants - Consumed by Rage
+			recipe(425447),	-- Engrave Pants - Frenzied Assault
+			recipe(403476),	-- Engrave Pants - Furious Thunder
 		}),
 	}),
 	n(createHeader({	-- Waylaid Supplies

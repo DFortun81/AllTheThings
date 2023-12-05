@@ -12719,6 +12719,14 @@ local function OnInitForPopout(self, group)
 				MergeObject(self.data.g, sourceGroup, 1);
 			end
 		end
+		
+		local results = app:BuildSearchResponse(app:GetDataCache().g, self.data.key, self.data[self.data.key]);
+		if #results > 0 then
+			if not self.data.g then self.data.g = {}; end
+			for i,result in ipairs(results) do
+				tinsert(self.data.g, result);
+			end
+		end
 	end
 
 	BuildGroups(self.data);
