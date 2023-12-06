@@ -617,6 +617,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(134741),	-- Cold-Touched Barrier 				(Removed)
 		ig(134774),	-- Covert Barrier 						(Removed)
 		ig(134757),	-- Covert Reprieve 						(Removed)
+		ig(22336),	-- Draconian Aegis of the Legion		(Removed)
 		ig(134687),	-- Recruit's Barrier 					(Removed)
 		ig(134632),	-- Scorching Redoubt 					(Removed)
 		ig(134803),	-- Seasoned Redoubt 					(Removed)
@@ -1279,7 +1280,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- q(77604),	-- when you learn everything from Quantum ?
 		-- q(77605),	-- when you learn everything from Quantum ?
 		-- q(77606),	-- when you learn everything from Quantum ?
-		-- q(77607),	-- when you learn everything from Quantum ?
+		q(77607),	-- when you learn everything from Quantum Knuckles
 		-- q(77608),	-- when you learn everything from Quantum ?
 		q(77609),	-- when you learn everything from Quantum Focus
 		-- q(77610),	-- when you learn everything from Quantum ?

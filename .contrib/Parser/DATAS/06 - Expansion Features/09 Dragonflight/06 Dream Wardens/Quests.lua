@@ -24,6 +24,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								{"exclude","itemID",211417},	-- Dream Wardens Insignia [Epic 1k]
 								{"exclude","itemID",210243},	-- Technique: Contract: Dream Wardens (RECIPE!)
 							},
+							["g"] = {
+								i(202172),	-- Overflowing Satchel of Coins
+							},
 						}),
 					},
 				}),

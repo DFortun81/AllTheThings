@@ -2444,6 +2444,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		q(55602, {	-- What Will It Lure?
 			["description"] = "Chum can drop from any rare in Nazjatar.",
 			["provider"] = { "i", 168155 },	-- Chum
+			["_drop"] = { "g" },
 			["g"] = {
 				currency(1721),	-- Prismatic Manapearls
 			},

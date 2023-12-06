@@ -825,7 +825,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 13144,	-- Killing Two Scourge With One Skeleton
 					}),
 					q(13036, {	-- Honor Above All Else
-						["coord"] = { 69.4, 47.0, ICECROWN },
+						["coord"] = { 87.5, 75.8, ICECROWN },
 						["qg"] = 28179,	-- Highlord Tirion Fordring
 						["sourceQuests"] = {
 							13226,	-- Judgment Day Comes (A)
