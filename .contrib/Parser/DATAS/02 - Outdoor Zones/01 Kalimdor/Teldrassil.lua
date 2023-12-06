@@ -28,6 +28,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- CRIEVE NOTE: I actually have no idea when they added the proper mapID for this subzone.
 				["zone-text-areas"] = {
 					188,	-- Shadowglen
+					256,	-- Aldrassil
 					257,	-- Shadowthread Cave
 				},
 				-- #endif
