@@ -236,8 +236,8 @@ local function GetUpgrade(t, upmodID, upbonusID)
 	local itemID = t.itemID
 	local up = {
 		itemID = itemID,
-		modID = upmodID > 0 and upmodID or t.modID,
-		bonusID = upbonusID > 0 and upbonusID or t.bonusID
+		modID = upmodID > 0 and upmodID or nil,
+		bonusID = upbonusID > 0 and upbonusID or nil
 	}
 	return CreateItem(itemID, up).AsItemSource;
 end
