@@ -22,11 +22,6 @@ namespace ATT
         static Export()
         {
             // Initialize all of the Object Types in order of Export Priority.
-            if (Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
-            {
-                // Crieve wants AQD/HQD and doesn't agree with excluding this, but will allow it outside of Classic Builds.
-                ObjectData.Create<FactionQuestData>("aqd", "aqd", "_.CreateQuestWithFactionData");
-            }
             ObjectData.Create("buildingID",         "gb",           "_.CreateGarrisonBuilding", "f", "spellID");
             ObjectData.Create<MountData>("mountID", "mnt",          "_.CreateMount", "f", "spellID", "modID");
             ObjectData.Create("headerID",           "h",            "_.CreateHeader", "f");
@@ -70,6 +65,11 @@ namespace ATT
             ObjectData.Create("professionID",       "prof",         "_.CreateProfession", "requireSkill", "modID");
             ObjectData.Create<NPCData>("npcID",     "n",            "_.CreateNPC", "f", "creatureID");
             ObjectData.Create<SpellData>("spellID", "sp", "_.CreateSpell");
+            if (Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
+            {
+                // Crieve wants AQD/HQD and doesn't agree with excluding this, but will allow it outside of Classic Builds.
+                ObjectData.Create<FactionQuestData>("aqd", "aqd", "_.CreateQuestWithFactionData");
+            }
             ObjectData.Create<QuestData>("questID", "q", "_.CreateQuest", "f");
             ObjectData.Create("f",                  "flt",          "_.CreateFilter");
         }

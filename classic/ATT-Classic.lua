@@ -8411,47 +8411,55 @@ end),
 	end
 }, (function(t) return t.isBreadcrumb; end));
 app.CreateQuest = createQuest;
-app.CreateQuestWithFactionData = function(t)
+local ResolveQuestData = function(t)
 	local aqd, hqd = t.aqd, t.hqd;
-	local questData, otherQuestData;
-	if app.FactionID == HORDE_FACTION_ID then
-		questData = hqd;
-		otherQuestData = aqd;
-	else
-		questData = aqd;
-		otherQuestData = hqd;
-	end
-
-	-- Move over the quest data's groups.
-	if questData.g then
-		if not t.g then
-			t.g = questData.g;
+	if aqd and hqd then
+		local questData, otherQuestData;
+		if app.FactionID == HORDE_FACTION_ID then
+			questData = hqd;
+			otherQuestData = aqd;
 		else
-			for _,o in ipairs(questData.g) do
-				tinsert(t.g, 1, o);
+			questData = aqd;
+			otherQuestData = hqd;
+		end
+
+		-- Move over the quest data's groups.
+		if questData.g then
+			if not t.g then
+				t.g = questData.g;
+			else
+				for _,o in ipairs(questData.g) do
+					tinsert(t.g, 1, o);
+				end
+			end
+			questData.g = nil;
+		end
+		if otherQuestData.g then
+			for _,o in ipairs(otherQuestData.g) do
+				o.parent = otherQuestData;
 			end
 		end
-		questData.g = nil;
-	end
-	if otherQuestData.g then
-		for _,o in ipairs(otherQuestData.g) do
-			o.parent = otherQuestData;
-		end
-	end
 
-	-- Apply this quest's current data into the other faction's quest. (this is for tooltip caching and source quest resolution)
-	for key,value in pairs(t) do
-		if key ~= "g" then
-			otherQuestData[key] = value;
+		-- Apply this quest's current data into the other faction's quest. (this is for tooltip caching and source quest resolution)
+		for key,value in pairs(t) do
+			if key ~= "g" then
+				otherQuestData[key] = value;
+			end
 		end
-	end
 
-	-- Apply the faction specific quest data to this object.
-	for key,value in pairs(questData) do t[key] = value; end
-	aqd.r = ALLIANCE_FACTION_ID;
-	hqd.r = HORDE_FACTION_ID;
-	t.otherQuestData = otherQuestData;
-	otherQuestData.nmr = 1;
+		-- Apply the faction specific quest data to this object.
+		for key,value in pairs(questData) do t[key] = value; end
+		aqd.r = ALLIANCE_FACTION_ID;
+		hqd.r = HORDE_FACTION_ID;
+		t.otherQuestData = otherQuestData;
+		otherQuestData.nmr = 1;
+	else
+		error("Missing AQD / HQD", aqd and true or false, hqd and true or false);
+	end
+end
+app.ResolveQuestData = ResolveQuestData;
+app.CreateQuestWithFactionData = function(t)
+	ResolveQuestData(t);
 	return createQuest(t.questID, t);
 end
 app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
@@ -10783,12 +10791,13 @@ local function RowOnEnter(self)
 			end
 		end
 
-		local linesByText = {};
+		local linesByText = {}, title;
 		for i=1,GameTooltip:NumLines() do
-			linesByText[_G["GameTooltipTextLeft"..i]:GetText()] = true;
+			title = _G["GameTooltipTextLeft"..i]:GetText();
+			if title then linesByText[title] = true; end
 		end
 
-		local title = reference.title;
+		title = reference.title;
 		if title then
 			local left, right = strsplit(DESCRIPTION_SEPARATOR, title);
 			if right then
@@ -12758,7 +12767,7 @@ local function OnInitForPopout(self, group)
 		
 		if not self.data.ignoreSourceLookup then
 			local results = app:BuildSearchResponse(app:GetDataCache().g, dataKey, self.data[dataKey]);
-			if #results > 0 then
+			if results and #results > 0 then
 				if not self.data.g then self.data.g = {}; end
 				for i,result in ipairs(results) do
 					tinsert(self.data.g, result);
