@@ -101,14 +101,14 @@ local function FilterInGame(item)	-- ItemIsInGame
 	return not item.u or item.u > 2;
 end
 api.Filters.InGame = FilterInGame;
+-- manually track InGame in CurrentCharacterFilters
+RawCharacterFilters.InGame = api.Filters.InGame
 
 -- Unobtainable 	-- FilterItemClass_UnobtainableItem
 DefineToggleFilter("Unobtainable", AccountFilters,
 function(item)
 	return not item.u or SettingsUnobtainable[item.u];
 end);
--- manually track Unobtainable in CurrentCharacterFilters
-RawCharacterFilters.Unobtainable = api.Filters.Unobtainable
 
 -- PvP	-- FilterItemClass_PvP
 DefineToggleFilter("PvP", AccountFilters,
