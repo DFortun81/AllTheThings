@@ -1139,7 +1139,6 @@ root(ROOTS.NeverImplemented, {
 				i(192700),	-- Frozen Dorsal Spike
 				i(192701),	-- Frozen Eye
 				i(192616),	-- Fung Eye
-				i(192654),	-- Giant Stone Eye
 				i(192702),	-- Giant's Heart
 				i(192707),	-- Gnawing Incisors
 				i(201190),	-- Goo Filled Flask
@@ -1167,7 +1166,6 @@ root(ROOTS.NeverImplemented, {
 				i(192623),	-- Massive Proto-Dragon Claw
 				i(192709),	-- Membranous Wing
 				i(192714),	-- Mgrrrl
-				i(192695),	-- Molten Mandible
 				i(200105),	-- Muck Covered Flotsam
 				i(200933),	-- Mushy Vegtable
 				i(193410),	-- Nauseating Stinger

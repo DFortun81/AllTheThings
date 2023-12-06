@@ -555,6 +555,8 @@ i(192625);	-- Motionless Stone
 i(201468);	-- Verdant Swirl
 i(192635);	-- Warped Metal
 i(192627);	-- Obsidian Clump
+i(192654);	-- Giant Stone Eye
+i(192695);	-- Molten Mandible
 
 
 -- ^^ Not cleaned
