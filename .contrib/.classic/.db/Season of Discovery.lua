@@ -383,6 +383,133 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(c
 			recipe(403476),	-- Engrave Pants - Furious Thunder
 		}),
 	}),
+	n(VENDORS, {
+		["aqd"] = faction(2586, {	-- Azeroth Commerce Authority
+			["crs"] = {
+				213077,	-- Elaine Compton <Supply Officer>
+				214099,	-- Tamelyn Aldridge <Supply Officer>
+				214101,	-- Marcy Baker <Supply Officer>
+			},
+			["coords"] = {
+				{ 54.5, 61.2, STORMWIND_CITY },
+				{ 24.6, 67.2, IRONFORGE },
+				{ 59.8, 56.6, DARNASSUS },
+			},
+		}),
+		["hqd"] = faction(2587, {	-- Durotar Supply and Logistics
+			["crs"] = {
+				214070,	-- Jornah <Supply Officer>
+				214096,	-- Dokimi <Supply Officer>
+				214098,	-- Gishah <Supply Officer>
+			},
+			["coords"] = {
+				{ 51.6, 64.6, ORGRIMMAR },
+				{ 39.8, 53.4, THUNDER_BLUFF },
+				{ 64.6, 38.2, UNDERCITY },
+			},
+		}),
+		["OnInit"] = [[function(t) _.ResolveQuestData(t); local rep = t.factionID; for index,child in ipairs(t.g) do if child.minReputation then child.minReputation[1] = rep; end end return t; end]],
+		["groups"] = {
+			i(211382, {	-- Small Courier Satchel
+				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
+				["cost"] = 4746,	-- 47s 36c
+			}),
+			i(212588, {	-- Provisioner's Gloves
+				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
+				["cost"] = 1325,	-- 13s 25c
+			}),
+			i(212590, {	-- Hoist Strap
+				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
+				["cost"] = 2555,	-- 25s 55c
+			}),
+			i(212589, {	-- Courier Treads
+				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
+				["cost"] = 2214,	-- 22s 14c
+			}),
+			i(211386, {	-- Spell Notes: Arcane Surge
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { MAGE },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(425171),	-- Engrave Pants - Arcane Surge
+				},
+			}),
+			i(211387, {	-- Rune of Beckoning Light
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { PALADIN },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(409999),	-- Engrave Gloves - Beacon of Light
+				},
+			}),
+			i(211392, {	-- Rune of Everlasting Affliction
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { WARLOCK },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(416008),	-- Engrave Pants - Everlasting Affliction
+				},
+			}),
+			i(211391, {	-- Rune of Healing Rain
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { SHAMAN },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(416057),	-- Engrave Chest - Healing Rain
+				},
+			}),
+			i(211385, {	-- Rune of Serpent Spread
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { HUNTER },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(425760),	-- Engrave Pants - Serpent Spread
+				},
+			}),
+			i(211393, {	-- Rune of Single-Minded Fury
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { WARRIOR },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(416003),	-- Engrave Gloves - Single-Minded Fury
+				},
+			}),
+			i(206992, {	-- Rune of Skull Bash
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { DRUID },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(416046),	-- Engrave Pants - Skull Bash
+				},
+			}),
+			i(211390, {	-- Rune of Teasing
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { ROGUE },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(400082),	-- Engrave Chest - Just a Flesh Wound
+				},
+			}),
+			i(205950, {	-- Tenebrous Epiphany
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { PRIEST },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(415996),	-- Engrave Gloves - Mind Sear
+				},
+			}),
+			i(211247, {	-- Pattern: Phoenix Bindings
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["description"] = "WARNING: This is reported as bugged and you don't actually learn anything from this!",
+				["cost"] = 67500,	-- 6.75g
+			}),
+			i(210779, {	-- Plans: Mantle of the Second War
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["description"] = "WARNING: This is reported as bugged and you don't actually learn anything from this!",
+				["cost"] = 67500,	-- 6.75g
+			}),
+		},
+	}),
 	n(createHeader({	-- Waylaid Supplies
 		readable = "Waylaid Supplies",
 		icon = "Interface\\Icons\\inv_box_01",
