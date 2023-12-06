@@ -3161,12 +3161,6 @@ local function AttachTooltip(self)
 
 				-- Does the tooltip have an owner?
 				local owner = self:GetOwner();
-				if owner then
-					if owner.SpellHighlightTexture and false then
-						-- Actionbars, don't want that.
-						return true;
-					end
-				end
 
 				-- Does the tooltip have a target?
 				local target = select(2, self:GetUnit());
@@ -3222,6 +3216,10 @@ local function AttachTooltip(self)
 				-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
 				local spellID = select(2, self:GetSpell());
 				if spellID then
+					if owner.SpellHighlightTexture then
+						-- Actionbars, don't want that.
+						return true;
+					end
 					AttachTooltipSearchResults(self, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID);
 					self:Show();
 					if owner and owner.ActiveTexture then
