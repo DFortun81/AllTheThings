@@ -42,6 +42,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["isWeekly"] = true,
 					["g"] = {
 						i(211389, {	-- Cache of Overblooming Treasures
+							i(211416),	-- Dream Wardens Insignia [Epic 1k BoA]
 							i(211417),	-- Dream Wardens Insignia [Epic 1k]
 							i(210243),	-- Technique: Contract: Dream Wardens (RECIPE!)
 						--	filter(CLOTH, {	 -- Commented out due Tooltip Length

@@ -1487,7 +1487,6 @@ root(ROOTS.NeverImplemented, {
 				------ Insignia ------
 				i(210419),	-- Dream Wardens Insignia [Uncommon]
 				i(210420),	-- Dream Wardens Insignia [Rare]
-				i(211416),	-- Dream Wardens Insignia [Epic 1k]
 				i(210423),	-- Dream Wardens Insignia [Epic 2.5k]
 				i(210422),	-- Loamm Niffen Insignia [Epic 2.5k]
 				------ Equipment Chest ------
