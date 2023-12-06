@@ -2398,6 +2398,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										4803,	-- Blackfathom Oracle
 										4805,	-- Blackfathom Sea Witch
 										4802,	-- Blackfathom Tide Priestess
+										-- #if SEASON_OF_DISCOVERY
+										216661,	-- Blackfathom Tide Priestess
+										-- #endif
 									},
 								}),
 								objective(4, {	-- 0/1 Purified Kor Gem
