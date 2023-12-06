@@ -27,6 +27,31 @@ local OnTooltipForDurotarSupplyAndLogistics = [[function(t)
 	end
 end]];
 
+local AZEROTH_COMMERCE_AUTHORITY_VENDORS = {	-- Azeroth Commerce Authority
+	["crs"] = {
+		213077,	-- Elaine Compton <Supply Officer>
+		214099,	-- Tamelyn Aldridge <Supply Officer>
+		214101,	-- Marcy Baker <Supply Officer>
+	},
+	["coords"] = {
+		{ 54.5, 61.2, STORMWIND_CITY },
+		{ 24.6, 67.2, IRONFORGE },
+		{ 59.8, 56.6, DARNASSUS },
+	},
+};
+local DUROTAR_SUPPLY_AND_LOGISTICS_VENDORS = {	-- Durotar Supply and Logistics
+	["crs"] = {
+		214070,	-- Jornah <Supply Officer>
+		214096,	-- Dokimi <Supply Officer>
+		214098,	-- Gishah <Supply Officer>
+	},
+	["coords"] = {
+		{ 51.6, 64.6, ORGRIMMAR },
+		{ 39.8, 53.4, THUNDER_BLUFF },
+		{ 64.6, 38.2, UNDERCITY },
+	},
+};
+
 root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(createHeader({	-- Season of Discovery
 		readable = "Season of Discovery",
 		icon = "Interface\\Icons\\inv_misc_map_01",
@@ -64,6 +89,111 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(c
 			["maps"] = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },
 			["races"] = HORDE_ONLY,
 		}),
+	}),
+	n(COMMON_VENDOR_ITEMS, {
+		["aqd"] = faction(2586, AZEROTH_COMMERCE_AUTHORITY_VENDORS),
+		["hqd"] = faction(2587, DUROTAR_SUPPLY_AND_LOGISTICS_VENDORS),
+		["OnInit"] = [[function(t) _.ResolveQuestData(t); local rep = t.factionID; for index,child in ipairs(t.g) do if child.minReputation then child.minReputation[1] = rep; end end return t; end]],
+		["groups"] = {
+			i(211382, {	-- Small Courier Satchel
+				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
+				["cost"] = 4746,	-- 47s 36c
+			}),
+			i(212588, {	-- Provisioner's Gloves
+				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
+				["cost"] = 1325,	-- 13s 25c
+			}),
+			i(212590, {	-- Hoist Strap
+				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
+				["cost"] = 2555,	-- 25s 55c
+			}),
+			i(212589, {	-- Courier Treads
+				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
+				["cost"] = 2214,	-- 22s 14c
+			}),
+			i(211386, {	-- Spell Notes: Arcane Surge
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { MAGE },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(425171),	-- Engrave Pants - Arcane Surge
+				},
+			}),
+			i(211387, {	-- Rune of Beckoning Light
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { PALADIN },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(409999),	-- Engrave Gloves - Beacon of Light
+				},
+			}),
+			i(211392, {	-- Rune of Everlasting Affliction
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { WARLOCK },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(416008),	-- Engrave Pants - Everlasting Affliction
+				},
+			}),
+			i(211391, {	-- Rune of Healing Rain
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { SHAMAN },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(416057),	-- Engrave Chest - Healing Rain
+				},
+			}),
+			i(211385, {	-- Rune of Serpent Spread
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { HUNTER },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(425760),	-- Engrave Pants - Serpent Spread
+				},
+			}),
+			i(211393, {	-- Rune of Single-Minded Fury
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { WARRIOR },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(416003),	-- Engrave Gloves - Single-Minded Fury
+				},
+			}),
+			i(206992, {	-- Rune of Skull Bash
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { DRUID },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(416046),	-- Engrave Pants - Skull Bash
+				},
+			}),
+			i(211390, {	-- Rune of Teasing
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { ROGUE },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(400082),	-- Engrave Chest - Just a Flesh Wound
+				},
+			}),
+			i(205950, {	-- Tenebrous Epiphany
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["classes"] = { PRIEST },
+				["cost"] = 45000,	-- 4.5g
+				["groups"] = {
+					recipe(415996),	-- Engrave Gloves - Mind Sear
+				},
+			}),
+			i(211247, {	-- Pattern: Phoenix Bindings
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["description"] = "WARNING: This is reported as bugged and you don't actually learn anything from this!",
+				["cost"] = 67500,	-- 6.75g
+			}),
+			i(210779, {	-- Plans: Mantle of the Second War
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["description"] = "WARNING: This is reported as bugged and you don't actually learn anything from this!",
+				["cost"] = 67500,	-- 6.75g
+			}),
+		},
 	}),
 	n(createHeader({	-- Monster Hunting
 		readable = "Monster Hunting",
@@ -197,37 +327,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(c
 				},
 			}),
 		},
-	}),
-	n(QUESTS, {
-		q(78612, {	-- A Full Shipment [Alliance - Level 9]
-			["qg"] = 213077,	-- Elaine Compton
-			["coord"] = { 54.5, 61.2, STORMWIND_CITY },
-			["cost"] = { { "i", 211365, 1 } },	-- Supply Shipment [Level 9]
-			["maxReputation"] = { 2586, EXALTED },	-- Azeroth Commerce Authority, Exalted.
-			["repeatable"] = true,
-			["races"] = ALLIANCE_ONLY,
-			["lvl"] = 9,
-		}),
-		q(79101, {	-- A Full Shipment [Alliance - Level 18]
-			["qg"] = 213077,	-- Elaine Compton
-			["coord"] = { 54.5, 61.2, STORMWIND_CITY },
-			["cost"] = { { "i", 211839, 1 } },	-- Supply Shipment [Level 18]
-			["maxReputation"] = { 2586, EXALTED },	-- Azeroth Commerce Authority, Exalted.
-			["repeatable"] = true,
-			["races"] = ALLIANCE_ONLY,
-			["lvl"] = 18,
-		}),
-		q(78611, {	-- A Waylaid Shipment [Alliance - Level 18]
-			["qg"] = 213077,	-- Elaine Compton
-			["coord"] = { 54.5, 61.2, STORMWIND_CITY },
-			["cost"] = {
-				{ "i", 211835, 1 },	-- Waylaid Supplies: Smoked Sagefish
-			},
-			["maxReputation"] = { 2586, EXALTED },	-- Azeroth Commerce Authority, Exalted.
-			["repeatable"] = true,
-			["races"] = ALLIANCE_ONLY,
-			["lvl"] = 18,
-		}),
 	}),
 	n(createHeader({	-- Rune Engraving
 		readable = "Rune Engraving",
@@ -383,136 +482,9 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(c
 			recipe(403476),	-- Engrave Pants - Furious Thunder
 		}),
 	}),
-	n(VENDORS, {
-		["aqd"] = faction(2586, {	-- Azeroth Commerce Authority
-			["crs"] = {
-				213077,	-- Elaine Compton <Supply Officer>
-				214099,	-- Tamelyn Aldridge <Supply Officer>
-				214101,	-- Marcy Baker <Supply Officer>
-			},
-			["coords"] = {
-				{ 54.5, 61.2, STORMWIND_CITY },
-				{ 24.6, 67.2, IRONFORGE },
-				{ 59.8, 56.6, DARNASSUS },
-			},
-		}),
-		["hqd"] = faction(2587, {	-- Durotar Supply and Logistics
-			["crs"] = {
-				214070,	-- Jornah <Supply Officer>
-				214096,	-- Dokimi <Supply Officer>
-				214098,	-- Gishah <Supply Officer>
-			},
-			["coords"] = {
-				{ 51.6, 64.6, ORGRIMMAR },
-				{ 39.8, 53.4, THUNDER_BLUFF },
-				{ 64.6, 38.2, UNDERCITY },
-			},
-		}),
-		["OnInit"] = [[function(t) _.ResolveQuestData(t); local rep = t.factionID; for index,child in ipairs(t.g) do if child.minReputation then child.minReputation[1] = rep; end end return t; end]],
-		["groups"] = {
-			i(211382, {	-- Small Courier Satchel
-				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
-				["cost"] = 4746,	-- 47s 36c
-			}),
-			i(212588, {	-- Provisioner's Gloves
-				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
-				["cost"] = 1325,	-- 13s 25c
-			}),
-			i(212590, {	-- Hoist Strap
-				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
-				["cost"] = 2555,	-- 25s 55c
-			}),
-			i(212589, {	-- Courier Treads
-				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
-				["cost"] = 2214,	-- 22s 14c
-			}),
-			i(211386, {	-- Spell Notes: Arcane Surge
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-				["classes"] = { MAGE },
-				["cost"] = 45000,	-- 4.5g
-				["groups"] = {
-					recipe(425171),	-- Engrave Pants - Arcane Surge
-				},
-			}),
-			i(211387, {	-- Rune of Beckoning Light
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-				["classes"] = { PALADIN },
-				["cost"] = 45000,	-- 4.5g
-				["groups"] = {
-					recipe(409999),	-- Engrave Gloves - Beacon of Light
-				},
-			}),
-			i(211392, {	-- Rune of Everlasting Affliction
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-				["classes"] = { WARLOCK },
-				["cost"] = 45000,	-- 4.5g
-				["groups"] = {
-					recipe(416008),	-- Engrave Pants - Everlasting Affliction
-				},
-			}),
-			i(211391, {	-- Rune of Healing Rain
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-				["classes"] = { SHAMAN },
-				["cost"] = 45000,	-- 4.5g
-				["groups"] = {
-					recipe(416057),	-- Engrave Chest - Healing Rain
-				},
-			}),
-			i(211385, {	-- Rune of Serpent Spread
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-				["classes"] = { HUNTER },
-				["cost"] = 45000,	-- 4.5g
-				["groups"] = {
-					recipe(425760),	-- Engrave Pants - Serpent Spread
-				},
-			}),
-			i(211393, {	-- Rune of Single-Minded Fury
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-				["classes"] = { WARRIOR },
-				["cost"] = 45000,	-- 4.5g
-				["groups"] = {
-					recipe(416003),	-- Engrave Gloves - Single-Minded Fury
-				},
-			}),
-			i(206992, {	-- Rune of Skull Bash
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-				["classes"] = { DRUID },
-				["cost"] = 45000,	-- 4.5g
-				["groups"] = {
-					recipe(416046),	-- Engrave Pants - Skull Bash
-				},
-			}),
-			i(211390, {	-- Rune of Teasing
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-				["classes"] = { ROGUE },
-				["cost"] = 45000,	-- 4.5g
-				["groups"] = {
-					recipe(400082),	-- Engrave Chest - Just a Flesh Wound
-				},
-			}),
-			i(205950, {	-- Tenebrous Epiphany
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-				["classes"] = { PRIEST },
-				["cost"] = 45000,	-- 4.5g
-				["groups"] = {
-					recipe(415996),	-- Engrave Gloves - Mind Sear
-				},
-			}),
-			i(211247, {	-- Pattern: Phoenix Bindings
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-				["description"] = "WARNING: This is reported as bugged and you don't actually learn anything from this!",
-				["cost"] = 67500,	-- 6.75g
-			}),
-			i(210779, {	-- Plans: Mantle of the Second War
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-				["description"] = "WARNING: This is reported as bugged and you don't actually learn anything from this!",
-				["cost"] = 67500,	-- 6.75g
-			}),
-		},
-	}),
 	n(createHeader({	-- Waylaid Supplies
 		readable = "Waylaid Supplies",
-		icon = "Interface\\Icons\\inv_box_01",
+		icon = "Interface\\Icons\\inv_crate_03",
 		text = {
 			en = "Waylaid Supplies",
 			es = "Suministros asaltados",
@@ -536,24 +508,265 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(c
 			cn = "伏击补给品任务物品从艾泽拉斯 6 级及以上的小怪中掉落。这些任务要求将路障补给品交付给组织代表，以换取一些银币、经验和声望。当然，补给中也有缺少的物品，你可以补充以获得更大的声望奖励。",
 		},
 	}), {
-		i(210771, {	-- Waylaid Supplies: Copper Bars
-			["cost"] = { { "i", 2840, 20 } },	-- Copper Bar
-			["groups"] = {
-				i(211365),	-- Supply Shipment [Level 9]
-			},
-		}),
-		i(211830, {	-- Waylaid Supplies: Ornate Spyglasses
-			["cost"] = { { "i", 5507, 2 } },	-- Ornate Spyglasses
-			["groups"] = {
-				i(211841),	-- Supply Shipment [Level 25]
-			},
-		}),
-		i(211835, {	-- Waylaid Supplies: Smoked Sagefish
-			["cost"] = { { "i", 21072, 15 } },	-- Smoked Sagefish
-			["groups"] = {
-				i(211839),	-- Supply Shipment [Level 18]
-			},
-		}),
+		["aqd"] = faction(2586, AZEROTH_COMMERCE_AUTHORITY_VENDORS),
+		["hqd"] = faction(2587, DUROTAR_SUPPLY_AND_LOGISTICS_VENDORS),
+		["OnInit"] = [[function(t) _.ResolveQuestData(t); local rep = t.factionID; for index,child in ipairs(t.g[1].g) do if child.minReputation then child.minReputation[1] = rep; end end return t; end]],
+		["groups"] = {
+			n(QUESTS, {
+				q(78612, {	-- A Full Shipment [iLvl 10 - Gathered]
+					["provider"] = { "i", 211365 },	-- Supply Shipment [iLvl 10 - Gathered]
+					["maxReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
+					["description"] = "Grants 300 reputation.",
+					["repeatable"] = true,
+					["lvl"] = 9,
+				}),
+				q(78872, {	-- A Full Shipment [iLvl 10 - Crafted]
+					["provider"] = { "i", 211367 },	-- Supply Shipment [iLvl 10 - Crafted]
+					["maxReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
+					["description"] = "Grants 450 reputation.",
+					["repeatable"] = true,
+					["lvl"] = 12,
+				}),
+				q(79101, {	-- A Full Shipment [iLvl 25 - Gathered]
+					["provider"] = { "i", 211839 },	-- Supply Shipment [iLvl 25 - Gathered]
+					["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+					["description"] = "Grants 500 reputation.",
+					["repeatable"] = true,
+					["lvl"] = 18,
+				}),
+				q(79102, {	-- A Full Shipment [iLvl 25 - Crafted]
+					["provider"] = { "i", 211840 },	-- Supply Shipment [iLvl 25 - Crafted]
+					["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+					["description"] = "Grants 650 reputation.",
+					["repeatable"] = true,
+					["lvl"] = 22,
+				}),
+				q(79103, {	-- A Full Shipment [iLvl 25 - Crafted (Expensive)]
+					["provider"] = { "i", 211841 },	-- Supply Shipment [iLvl 25 - Crafted (Expensive)]
+					["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+					["description"] = "Grants 800 reputation.",
+					["repeatable"] = true,
+					["lvl"] = 25,
+				}),
+				q(79100, {	-- A Waylaid Shipment [iLvl 10]
+					["providers"] = {
+						{ "i", 211331 },	-- Waylaid Supplies: Brilliant Smallfish
+						{ "i", 211327 },	-- Waylaid Supplies: Brown Linen Pants
+						{ "i", 211328 },	-- Waylaid Supplies: Brown Linen Robes
+						{ "i", 210771 },	-- Waylaid Supplies: Copper Bars
+						{ "i", 211319 },	-- Waylaid Supplies: Copper Shortswords
+						{ "i", 211326 },	-- Waylaid Supplies: Embossed Leather Vests
+						{ "i", 211325 },	-- Waylaid Supplies: Handstitched Leather Belts
+						{ "i", 211934 },	-- Waylaid Supplies: Healing Potions
+						{ "i", 211332 },	-- Waylaid Supplies: Heavy Linen Bandages
+						{ "i", 211329 },	-- Waylaid Supplies: Herb Baked Eggs
+						{ "i", 211321 },	-- Waylaid Supplies: Lesser Magic Wands
+						{ "i", 211315 },	-- Waylaid Supplies: Light Leather
+						{ "i", 211318 },	-- Waylaid Supplies: Minor Healing Potions
+						{ "i", 211322 },	-- Waylaid Supplies: Minor Wizard Oil
+						{ "i", 211316 },	-- Waylaid Supplies: Peacebloom
+						{ "i", 211324 },	-- Waylaid Supplies: Rough Boomsticks
+						{ "i", 211323 },	-- Waylaid Supplies: Rough Copper Bombs
+						{ "i", 211933 },	-- Waylaid Supplies: Rough Stone
+						{ "i", 211320 },	-- Waylaid Supplies: Runed Copper Pants
+						{ "i", 211317 },	-- Waylaid Supplies: Silverleaf
+						{ "i", 211330 },	-- Waylaid Supplies: Spiced Wolf Meat
+					},
+					["maxReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
+					["description"] = "Grants 100 reputation.",
+					["repeatable"] = true,
+					["lvl"] = 8,
+				}),
+				q(78611, {	-- A Waylaid Shipment [iLvl 25]
+					["providers"] = {
+						{ "i", 211835 },	-- Waylaid Supplies: Smoked Sagefish
+					},
+					["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+					["description"] = "Grants 100 reputation.",
+					["repeatable"] = true,
+					["lvl"] = 15,
+				}),
+			}),
+			n(createHeader({	-- Crafted
+				readable = "Crafted",
+				icon = "Interface\\CURSOR\\REPAIRNPC",
+				text = {
+					en = "Crafted",
+					--[[
+					es = "",
+					de = "",
+					fr = "",
+					it = "",
+					pt = "",
+					ru = "",
+					ko = "",
+					cn = "",
+					]]--
+				},
+			}), {
+				-- iLvl 10 - Crafted Supplies
+				i(211327, {	-- Waylaid Supplies: Brown Linen Pants
+					["cost"] = { { "i", 4343, 6 } },	-- Brown Linen Pants
+					["groups"] = {
+						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
+					},
+				}),
+				i(211328, {	-- Waylaid Supplies: Brown Linen Robes
+					["cost"] = { { "i", 6238, 4 } },	-- Brown Linen Robes
+					["groups"] = {
+						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
+					},
+				}),
+				i(211319, {	-- Waylaid Supplies: Copper Shortswords
+					["cost"] = { { "i", 2847, 6 } },	-- Copper Shortswords
+					["groups"] = {
+						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
+					},
+				}),
+				i(211326, {	-- Waylaid Supplies: Embossed Leather Vests
+					["cost"] = { { "i", 2300, 3 } },	-- Embossed Leather Vests
+					["groups"] = {
+						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
+					},
+				}),
+				i(211325, {	-- Waylaid Supplies: Handstitched Leather Belts
+					["cost"] = { { "i", 4237, 5 } },	-- Handstitched Leather Belts
+					["groups"] = {
+						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
+					},
+				}),
+				i(211934, {	-- Waylaid Supplies: Healing Potions
+					["cost"] = { { "i", 929, 10 } },	-- Healing Potions
+					["groups"] = {
+						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
+					},
+				}),
+				i(211321, {	-- Waylaid Supplies: Lesser Magic Wands
+					["cost"] = { { "i", 11287, 2 } },	-- Lesser Magic Wands
+					["groups"] = {
+						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
+					},
+				}),
+				i(211318, {	-- Waylaid Supplies: Minor Healing Potions
+					["cost"] = { { "i", 118, 20 } },	-- Minor Healing Potions
+					["groups"] = {
+						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
+					},
+				}),
+				i(211322, {	-- Waylaid Supplies: Minor Wizard Oil
+					["cost"] = { { "i", 20744, 2 } },	-- Minor Wizard Oil
+					["groups"] = {
+						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
+					},
+				}),
+				i(211324, {	-- Waylaid Supplies: Rough Boomsticks
+					["cost"] = { { "i", 4362, 3 } },	-- Rough Boomsticks
+					["groups"] = {
+						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
+					},
+				}),
+				i(211323, {	-- Waylaid Supplies: Rough Copper Bombs
+					["cost"] = { { "i", 4360, 12 } },	-- Rough Copper Bombs
+					["groups"] = {
+						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
+					},
+				}),
+				i(211320, {	-- Waylaid Supplies: Runed Copper Pants
+					["cost"] = { { "i", 3473, 3 } },	-- Runed Copper Pants
+					["groups"] = {
+						i(211367),	-- Supply Shipment [iLvl 10 - Crafted]
+					},
+				}),
+				
+				-- iLvl 25 - Crafted Supplies
+				i(211830, {	-- Waylaid Supplies: Ornate Spyglasses
+					["cost"] = { { "i", 5507, 2 } },	-- Ornate Spyglasses
+					["groups"] = {
+						i(211841),	-- Supply Shipment [Level 25]
+					},
+				}),
+			}),
+			n(createHeader({	-- Gathering
+				readable = "Gathering",
+				icon = "Interface\\CURSOR\\Mine",
+				text = {
+					en = "Gathering",
+					--[[
+					es = "",
+					de = "",
+					fr = "",
+					it = "",
+					pt = "",
+					ru = "",
+					ko = "",
+					cn = "",
+					]]--
+				},
+			}), {
+				-- iLvl 10 - Gathering Supplies
+				i(211331, {	-- Waylaid Supplies: Brilliant Smallfish
+					["cost"] = { { "i", 6290, 20 } },	-- Brilliant Smallfish
+					["groups"] = {
+						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
+					},
+				}),
+				i(210771, {	-- Waylaid Supplies: Copper Bars
+					["cost"] = { { "i", 2840, 20 } },	-- Copper Bars
+					["groups"] = {
+						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
+					},
+				}),
+				i(211332, {	-- Waylaid Supplies: Heavy Linen Bandages
+					["cost"] = { { "i", 2581, 10 } },	-- Heavy Linen Bandages
+					["groups"] = {
+						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
+					},
+				}),
+				i(211329, {	-- Waylaid Supplies: Herb Baked Eggs
+					["cost"] = { { "i", 6888, 20 } },	-- Herb Baked Eggs
+					["groups"] = {
+						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
+					},
+				}),
+				i(211315, {	-- Waylaid Supplies: Light Leather
+					["cost"] = { { "i", 2318, 14 } },	-- Light Leather
+					["groups"] = {
+						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
+					},
+				}),
+				i(211316, {	-- Waylaid Supplies: Peacebloom
+					["cost"] = { { "i", 2447, 20 } },	-- Peacebloom
+					["groups"] = {
+						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
+					},
+				}),
+				i(211933, {	-- Waylaid Supplies: Rough Stone
+					["cost"] = { { "i", 2835, 10 } },	-- Rough Stone
+					["groups"] = {
+						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
+					},
+				}),
+				i(211317, {	-- Waylaid Supplies: Silverleaf
+					["cost"] = { { "i", 765, 20 } },	-- Silverleaf
+					["groups"] = {
+						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
+					},
+				}),
+				i(211330, {	-- Waylaid Supplies: Spiced Wolf Meat
+					["cost"] = { { "i", 2680, 20 } },	-- Spiced Wolf Meat
+					["groups"] = {
+						i(211365),	-- Supply Shipment [iLvl 10 - Gathering]
+					},
+				}),
+				
+				i(211835, {	-- Waylaid Supplies: Smoked Sagefish
+					["cost"] = { { "i", 21072, 15 } },	-- Smoked Sagefish
+					["groups"] = {
+						i(211839),	-- Supply Shipment [Level 18]
+					},
+				}),
+			}),
+		},
 	}),
 }))));
 -- #endif

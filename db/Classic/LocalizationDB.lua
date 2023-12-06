@@ -296,6 +296,8 @@ localize(L.HEADER_NAMES, {
 	[-1000266] = "Monster Hunting",
 	[-1000267] = "Rune Engraving",
 	[-1000268] = "Waylaid Supplies",
+	[-1000269] = "Crafted",
+	[-1000270] = "Gathering",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000015] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -433,7 +435,9 @@ localize(L.HEADER_ICONS, {
 	[-1000265] = "Interface/Icons/inv_misc_map_01",
 	[-1000266] = "Interface/CURSOR/Attack",
 	[-1000267] = "Interface/Icons/trade_engraving",
-	[-1000268] = "Interface/Icons/inv_box_01",
+	[-1000268] = "Interface/Icons/inv_crate_03",
+	[-1000269] = "Interface/CURSOR/REPAIRNPC",
+	[-1000270] = "Interface/CURSOR/Mine",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000192] = 201,
