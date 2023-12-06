@@ -1637,6 +1637,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208851, {	-- Libram of Justice
 					["coord"] = { 69.8, 72.4, WESTFALL },
+					["description"] = "While this supposedly can drop from the Drones, don't bother. Go loot the chest in Loch Modan instead!",
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
