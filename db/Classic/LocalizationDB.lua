@@ -1170,6 +1170,7 @@ _.ObjectNames = {
 	[207724] = "Shipwreck Debris",
 	[397987] = "Kobold Stashbox",
 	[402215] = "Charred Note",
+	[407850] = "Sunken Reliquary",
 }
 _.ObjectIcons = {
 	[31] = "Interface/Icons/INV_Mount_AllianceLionG",
@@ -1908,6 +1909,7 @@ _.ObjectModels = {
 	[181672] = 199787,
 	[207724] = 219411,
 	[397987] = 196982,
+	[407850] = 200953,
 }
 
 -- Supported Locales
@@ -2376,6 +2378,7 @@ localize(_.ObjectNames, {
 	[207724] = "Schiffswracktrümmer",
 	[397987] = "Lagertruhe der Kobolde",
 	[402215] = "Verkohlte Notiz",
+	[407850] = "Versunkener Reliquienschrein",
 });
 end
 if simplifiedLocale == "es" then
@@ -3301,6 +3304,7 @@ localize(_.ObjectNames, {
 	[181672] = "Effigie de l'homme d'osier",
 	[207724] = "Débris d’épave",
 	[397987] = "Boîte de rangement de Kobold",
+	[407850] = "Reliquaire englouti",
 });
 end
 if simplifiedLocale == "it" then
