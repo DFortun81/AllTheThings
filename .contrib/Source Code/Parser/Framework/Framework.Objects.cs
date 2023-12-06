@@ -1638,7 +1638,7 @@ end");
                 }
 
                 // Sort the old list to ensure that the order is consistent, but not for titleIDs/difficulties
-                if (field != "titleIDs" && field != "difficulties")
+                if (field != "titleIDs" && field != "difficulties" && field != "zone-text-areas")
                     oldList.Sort();
 
                 if (oldList.Count == 0)

@@ -20,6 +20,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #else
 				["icon"] = [[~_.asset("Achievement_Character_Dwarf_Male")]],
 				-- #endif
+				-- #if BEFORE 6.0.0
+				-- CRIEVE NOTE: I actually have no idea when they added the proper mapID for this subzone.
+				["zone-text-areas"] = {
+					132,	-- Coldridge Valley
+					800,	-- Coldridge Pass
+					77,		-- Anvilmar
+				},
+				-- #endif
 				["maps"] = {
 					28,		-- Coldridge Pass
 					428,	-- Frostmane Hovel (Coldridge Valley)
@@ -72,15 +80,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["lvl"] = lvlsquish(3, 3, 1),
 							["groups"] = {
 								objective(1, {	-- 0/1 Felix's Box
-									["provider"] = { "i", 10438 },	-- Felix's Box
+									["providers"] = {
+										{ "i",  10438 },	-- Felix's Box
+										{ "o", 148499 },	-- Felix's Box
+									},
 									["coord"] = { 20.9, 76.1, DUN_MOROGH },
 								}),
 								objective(2, {	-- 0/1 Felix's Chest
-									["provider"] = { "i", 16313 },	-- Felix's Chest
+									["providers"] = {
+										{ "i",  16313 },	-- Felix's Chest
+										{ "o", 178084 },	-- Felix's Chest
+									},
 									["coord"] = { 22.8, 79.9, DUN_MOROGH },
 								}),
 								objective(3, {	-- 0/1 Felix's Bucket of Bolts
-									["provider"] = { "i", 16314 },	-- Felix's Bucket of Bolts
+									["providers"] = {
+										{ "i",  16314 },	-- Felix's Bucket of Bolts
+										{ "o", 178085 },	-- Felix's Bucket of Bolts
+									},
 									["coord"] = { 26.3, 79.2, DUN_MOROGH },
 								}),
 							},
@@ -546,6 +563,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 7.0.3" },
 							["races"] = { DWARF, NIGHTELF },
 							["classes"] = { WARRIOR },
+						}),
+						q(2160, {	-- Supplies to Tannok
+							["providers"] = {
+								{ "n", 6782 },	-- Hands Springsprocket
+								{ "i", 7646 },	-- Crate of Inn Supplies
+							},
+							["coord"] = { 33.8, 72.2, DUN_MOROGH },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(57537, {	-- Frosthammer Bracer
+									["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+								}),
+								i(57538, {	-- Kharanos Belt
+									["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+								}),
+								i(57539, {	-- Snow Stomping Boots
+									["timeline"] = { "added 4.0.1", "removed 4.0.3" },
+								}),
+							},
 						}),
 						q(3115, {	-- Tainted Memorandum
 							["providers"] = {
@@ -2132,26 +2169,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 78.2, 20.5, DUN_MOROGH },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(2160, {	-- Supplies to Tannok
-					["providers"] = {
-						{ "n", 6782 },	-- Hands Springsprocket
-						{ "i", 7646 },	-- Crate of Inn Supplies
-					},
-					["coord"] = { 33.8, 72.2, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(57537, {	-- Frosthammer Bracer
-							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
-						}),
-						i(57538, {	-- Kharanos Belt
-							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
-						}),
-						i(57539, {	-- Snow Stomping Boots
-							["timeline"] = { "added 4.0.1", "removed 4.0.3" },
-						}),
-					},
 				}),
 				q(6064, {	-- Taming the Beast (1/3)
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>

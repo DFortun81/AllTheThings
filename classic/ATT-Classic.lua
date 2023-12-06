@@ -7041,7 +7041,6 @@ local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
 local C_MapExplorationInfo_GetExploredMapTextures = C_MapExplorationInfo.GetExploredMapTextures;
 local C_MapExplorationInfo_GetExploredAreaIDsAtPosition = C_MapExplorationInfo.GetExploredAreaIDsAtPosition;
 local mapIDToMapName, mapIDToAreaID = {}, {
-	[427] = { 132, 800 },	-- Coldridge Valley, Coldridge Pass
 	[465] = { 154 },	-- Deathknell
 	[425] = { 9, 59, 24, 34 },	-- Northshire Valley, Northshire Vineyards, Northshire Abbey, Echo Ridge Mine
 	[460] = { 188 },	-- Shadowglen
