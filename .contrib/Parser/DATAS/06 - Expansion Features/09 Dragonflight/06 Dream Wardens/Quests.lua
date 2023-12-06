@@ -16,6 +16,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 					["maxReputation"] = { FACTION_DREAM_WARDENS, 20 },
 					["g"] = {
+						i(210421),	-- Dream Wardens Insignia [Epic 500]
 						i(210872, {	-- Satchel of Dreams
 							["sym"] = {
 								{"select", "itemID", 211389 },	-- Cache of Overblooming Treasures,
