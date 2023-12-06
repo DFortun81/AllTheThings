@@ -24,6 +24,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #else
 				["icon"] = [[~_.asset("Achievement_Character_Nightelf_Female")]],
 				-- #endif
+				-- #if BEFORE 6.0.0
+				-- CRIEVE NOTE: I actually have no idea when they added the proper mapID for this subzone.
+				["zone-text-areas"] = {
+					188,	-- Shadowglen
+					257,	-- Shadowthread Cave
+				},
+				-- #endif
 				["maps"] = { 58 },	-- Shadowthread Cave
 				["groups"] = {
 					battlepets({
