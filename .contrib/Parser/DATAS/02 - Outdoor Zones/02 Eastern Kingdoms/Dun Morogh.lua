@@ -1453,6 +1453,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 2,
+					["groups"] = {
+						q(308, {	-- Distracting Jarven
+							["qg"] = 1373,	-- Jarven Thunderbrew
+							["coord"] = { 47.6, 52.6, DUN_MOROGH },
+							["cost"] = { { "i", 2686, 1 } },	-- Thunder Ale
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+							["repeatable"] = true,
+							["groups"] = {
+								q(311, {	-- Return to Marleth
+									["providers"] = {
+										{ "o", 270 },	-- Unguarded Thunder Ale Barrel
+										{ "i", 2666 },	-- Barrel of Thunder Ale
+									},
+									["sourceQuest"] = 310,	-- Bitter Rivals
+									["coord"] = { 47.7, 52.7, DUN_MOROGH },
+									["timeline"] = { "removed 4.0.3" },
+									["races"] = ALLIANCE_ONLY,
+									["lvl"] = 2,
+								}),
+							},
+						}),
+						q(403, {	-- Guarded Thunderbrew Barrel
+							["provider"] = { "o", 269 },	-- Guarded Thunder Ale Barrel
+							["coord"] = { 47.7, 52.7, DUN_MOROGH },
+							["timeline"] = { "removed 4.0.3" },
+							["races"] = ALLIANCE_ONLY,
+							["repeatable"] = true,
+						}),
+					},
 				}),
 				q(7674, {	-- Black Ram Exchange
 					["qg"] = 1261,	-- Veron Amberstill
@@ -1522,15 +1552,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(308, {	-- Distracting Jarven
-					["qg"] = 1373,	-- Jarven Thunderbrew
-					["altQuests"] = { 310 },	-- Bitter Rivals
-					["coord"] = { 47.6, 52.6, DUN_MOROGH },
-					["cost"] = { { "i", 2686, 1 } },	-- Thunder Ale
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-				}),
+				
 				q(25840, {	-- Eliminate the Resistance
 					["qg"] = 41298,	-- Slamp Wobblecog
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
@@ -1676,15 +1698,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
 					},
-				}),
-				q(403, {	-- Guarded Thunderbrew Barrel
-					["provider"] = { "o", 269 },	-- Guarded Thunder Ale Barrel
-					["sourceQuest"] = 310,	-- Bitter Rivals
-					["altQuests"] = { 311 },	-- Return to Marleth
-					["coord"] = { 47.7, 52.7, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
 				}),
 				q(25933, {	-- Help for the Quarry
 					["qg"] = 41578,	-- Sergeant Flinterhammer
@@ -2020,6 +2033,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 49.4, 48.4, DUN_MOROGH },
 						{ 46, 51.6, DUN_MOROGH },
 					},
+					-- #if BEFORE 4.0.3
+					["description"] = "If you want to finish this, complete 'The Perfect Stout' and then do not accept Shimmer Stout after. Once you grab this quest and return to him, then you can grab Shimmer Stout!",
+					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2043,17 +2059,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(1010),	-- Gnarled Short Staff
 						i(10547),	-- Camping Knife
 					},
-				}),
-				q(311, {	-- Return to Marleth
-					["providers"] = {
-						{ "o", 270 },	-- Unguarded Thunder Ale Barrel
-						{ "i", 2666 },	-- Barrel of Thunder Ale
-					},
-					["sourceQuest"] = 310,	-- Bitter Rivals
-					["coord"] = { 47.7, 52.7, DUN_MOROGH },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 2,
 				}),
 				-- #if AFTER 4.0.3
 				q(6391, {	-- Ride to Ironforge
@@ -2098,10 +2103,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 1374 },	-- Rejold Barleybrew
 						{ "i", 3085 },	-- Barrel of Shimmer Stout
 					},
+					-- #if AFTER CATA
+					["sourceQuest"] = 315,	-- The Perfect Stout
+					-- #else
 					["sourceQuests"] = {
 						415,	-- Rejold's New Brew
 						315,	-- The Perfect Stout
 					},
+					-- #endif
 					["coord"] = { 30.2, 45.8, DUN_MOROGH },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
@@ -2282,7 +2291,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(315, {	-- The Perfect Stout
 					["qg"] = 1374,	-- Rejold Barleybrew
-					["sourceQuest"] = 415,	-- Rejold's New Brew
 					-- #if AFTER CATA
 					["coord"] = { 54.1, 51.1, DUN_MOROGH },
 					-- #else
@@ -2292,7 +2300,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 5,
 					["groups"] = {
 						objective(1, {	-- 0/6 Shimmerweed (7 after CATA)
-							["provider"] = { "i", 2676 },	-- Shimmerweed
+							["providers"] = {
+								{ "i", 2676 },	-- Shimmerweed
+								{ "o", 276 },	-- Shimmerweed Basket
+							},
 							["cr"] = 1397,	-- Frostmane Seer
 						}),
 						i(2326),	-- Ivy-weave Bracers
@@ -2532,7 +2543,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 7,
 					["groups"] = {
 						objective(1, {	-- 0/1 MacGrann's Dried Meats
-							["provider"] = { "i", 2667 },	-- MacGrann's Dried Meats
+							["providers"] = {
+								{ "i", 2667 },	-- MacGrann's Dried Meats
+								{ "o", 272 },	-- MacGrann's Meat Locker
+							},
 							["coord"] = { 38.5, 53.93, DUN_MOROGH },
 						}),
 						i(6177, {	-- Ironwrought Bracers
