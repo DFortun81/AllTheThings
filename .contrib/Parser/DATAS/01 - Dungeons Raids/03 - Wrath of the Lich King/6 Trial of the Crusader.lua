@@ -125,6 +125,14 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, bubb
 					}),
 				}),
 				ach(11752, {["timeline"] = {ADDED_7_2_0}}),	-- Style of the Crusader (Trial of the Crusader)
+				ach(4078, {	-- Realm First! Grand Crusader
+					["timeline"] = { ADDED_3_2_0, REMOVED_3_2_2 },
+					["g"] = {
+						title(135, {	-- Grand Crusader <Name>
+							["timeline"] = { ADDED_3_2_0, REMOVED_3_2_2 },
+						}),
+					},
+				}),
 			}),
 			n(VENDORS, {
 				n(35579, {	-- Aspirant Forudir <Triumphant Armor Vendor>

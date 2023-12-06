@@ -2,50 +2,50 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(ACHIEVEMENTS, {
-	ach(523, {	-- 5 Exalted Reputations
+	ach(523, {		-- 5 Exalted Reputations
 		["timeline"] = { ADDED_3_0_2 },
 		["_noautomation"] = true,
 	}),
-	ach(524, {	-- 10 Exalted Reputations
+	ach(524, {		-- 10 Exalted Reputations
 		["timeline"] = { ADDED_3_0_2 },
 		["_noautomation"] = true,
 	}),
-	ach(521, {	-- 15 Exalted Reputations
+	ach(521, {		-- 15 Exalted Reputations
 		["timeline"] = { ADDED_3_0_2 },
 		["_noautomation"] = true,
 	}),
-	ach(520, {	-- 20 Exalted Reputations
+	ach(520, {		-- 20 Exalted Reputations
 		["timeline"] = { ADDED_3_0_2 },
 		["_noautomation"] = true,
 	}),
-	ach(519, {	-- 25 Exalted Reputations
+	ach(519, {		-- 25 Exalted Reputations
 		["timeline"] = { ADDED_3_0_2 },
 		["_noautomation"] = true,
 	}),
-	ach(518, {	-- 30 Exalted Reputations
+	ach(518, {		-- 30 Exalted Reputations
 		["timeline"] = { ADDED_3_0_2 },
 		["_noautomation"] = true,
 	}),
-	ach(1014, {	-- 35 Exalted Reputations
+	ach(1014, {		-- 35 Exalted Reputations
 		["timeline"] = { ADDED_3_0_2 },
 		["_noautomation"] = true,
 	}),
-	ach(1015, {	-- 40 Exalted Reputations
+	ach(1015, {		-- 40 Exalted Reputations
 		["timeline"] = { ADDED_3_0_2 },
 		["_noautomation"] = true,
 		["g"] = {
 			title(46),		-- <Name> the Exalted
 		},
 	}),
-	ach(5374, { -- 45 Exalted Reputations
+	ach(5374, {	 	-- 45 Exalted Reputations
 		["timeline"] = { ADDED_4_0_3_LAUNCH },
 		["_noautomation"] = true,
 	}),
-	ach(5723, {	-- 50 Exalted Reputations
+	ach(5723, {		-- 50 Exalted Reputations
 		["timeline"] = { ADDED_4_0_6 },
 		["_noautomation"] = true,
 	}),
-	ach(6826, {	-- 55 Exalted Reputations
+	ach(6826, {		-- 55 Exalted Reputations
 		["timeline"] = { ADDED_5_0_4 },
 		["_noautomation"] = true,
 	}),
@@ -80,31 +80,65 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_10_1_5 },
 		["_noautomation"] = true,
 	}),
-	un(REMOVED_FROM_GAME, ach(9016, {	-- Breaker of the Black Harvest
-		un(REMOVED_FROM_GAME, title(256)),	-- of the Black Harvest
-	})),
-	un(REMOVED_FROM_GAME, ach(2358, {		-- Charger
+	ach(9016, {		-- Breaker of the Black Harvest
+		["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
+		["g"] = {
+			title(256, {	-- <Name> of the Black Harvest
+				["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
+			}),
+		},
+	}),
+	ach(2358, {		-- Charger
 		["classes"] = { PALADIN },
-	})),
-	un(REMOVED_FROM_GAME, ach(16)),		-- Did Somebody Order a Knuckle Sandwich?
-	un(REMOVED_FROM_GAME, ach(2716)),	-- Dual Talent Specialization
-	un(REMOVED_FROM_GAME, ach(2357, {		-- Dreadsteed of Xoroth
+		["timeline"] = { ADDED_3_1_0, REMOVED_6_0_2 },
+	}),
+	ach(16, {		-- Did Somebody Order a Knuckle Sandwich?
+		["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+	}),
+	ach(2357, {		-- Dreadsteed of Xoroth
 		["classes"] = { WARLOCK },
-	})),
-	un(REMOVED_FROM_GAME, ach(558)),	-- Greedy
-	un(REMOVED_FROM_GAME, ach(12544, {	-- Level 120 (Legacy)
-		un(REMOVED_FROM_GAME, ach(10)),		-- Level 50 (Legacy)
-		un(REMOVED_FROM_GAME, ach(11)),		-- Level 60 (Legacy)
-		un(REMOVED_FROM_GAME, ach(12)),		-- Level 70 (Legacy)
-		un(REMOVED_FROM_GAME, ach(13)),		-- Level 80 (Legacy)
-		un(REMOVED_FROM_GAME, ach(4826)),	-- Level 85 (Legacy)
-		un(REMOVED_FROM_GAME, ach(6193)),	-- Level 90 (Legacy)
-		un(REMOVED_FROM_GAME, ach(9060)),	-- Level 100 (Legacy)
-		un(REMOVED_FROM_GAME, ach(10671)),	-- Level 110 (Legacy)
-	})),
-	un(REMOVED_FROM_GAME, ach(705)),	-- Master of Arms
-	un(REMOVED_FROM_GAME, ach(559)),	-- Needy
-	ach(879, {	-- Old School Ride
+		["timeline"] = { ADDED_3_1_0, REMOVED_4_0_3 },
+	}),
+	ach(2716, {		-- Dual Talent Specialization
+		["timeline"] = { ADDED_3_1_0, REMOVED_7_0_3 },
+	}),
+	ach(558, {		-- Greedy
+		["timeline"] = { ADDED_3_0_2, REMOVED_8_0_1 },
+	}),
+	ach(10, {		-- Level 50 (Legacy)
+		["timeline"] = { ADDED_3_0_2, REMOVED_9_0_1 },
+	}),
+	ach(11, {		-- Level 60 (Legacy)
+		["timeline"] = { ADDED_3_0_2, REMOVED_9_0_1 },
+	}),
+	ach(12, {		-- Level 70 (Legacy)
+		["timeline"] = { ADDED_3_0_2, REMOVED_9_0_1 },
+	}),
+	ach(13, {		-- Level 80 (Legacy)
+		["timeline"] = { ADDED_3_0_2, REMOVED_9_0_1 },
+	}),
+	ach(4826, {		-- Level 85 (Legacy)
+		["timeline"] = { ADDED_4_0_1, REMOVED_9_0_1 },
+	}),
+	ach(6193, {		-- Level 90 (Legacy)
+	[	"timeline"] = { ADDED_5_0_4, REMOVED_9_0_1 },
+	}),
+	ach(9060, {		-- Level 100 (Legacy)
+		["timeline"] = { ADDED_6_0_2, REMOVED_9_0_1 },
+	}),
+	ach(10671, {	-- Level 110 (Legacy)
+		["timeline"] = { ADDED_7_0_3, REMOVED_9_0_1 },
+	}),
+	ach(12544, {	-- Level 120 (Legacy)
+		["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 },
+	}),
+	ach(705, {		-- Master of Arms
+		["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+	}),
+	ach(559, {		-- Needy
+		["timeline"] = { ADDED_3_0_2, REMOVED_8_0_1 },
+	}),
+	ach(879, {		-- Old School Ride
 		["providers"] = {
 			{ "i", 13328 },	-- Black Ram
 			{ "i", 13329 },	-- Frost Ram
@@ -123,125 +157,297 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		},
 		["timeline"] = { "removed 1.4.0" },
 	}),
-	un(REMOVED_FROM_GAME, ach(3259, {	-- Realm First! Celestial Defender
-		un(REMOVED_FROM_GAME, title(125)),	-- the Celestial Defender
-	})),
-	un(REMOVED_FROM_GAME, ach(6433)),	-- Realm First! Challenge Conqueror: Gold
-	un(REMOVED_FROM_GAME, ach(3117, {	-- Realm First! Death's Demise
-		un(REMOVED_FROM_GAME, title(124)),	-- , Death's Demise
-	})),
-	un(REMOVED_FROM_GAME, ach(4576)),	-- Realm First! Fall of the Lich King
-	un(REMOVED_FROM_GAME, ach(4078, {	-- Realm First! Grand Crusader
-		un(REMOVED_FROM_GAME, title(135)),	-- Grand Crusader
-	})),
-	un(REMOVED_FROM_GAME, ach(1415)),	-- Realm First! Grand Master Alchemist
-	un(REMOVED_FROM_GAME, ach(1420)),	-- Realm First! Grand Master Angler
-	un(REMOVED_FROM_GAME, ach(5395)),	-- Realm First! Grand Master Archaeologist
-	un(REMOVED_FROM_GAME, ach(1414)),	-- Realm First! Grand Master Blacksmith
-	un(REMOVED_FROM_GAME, ach(1416)),	-- Realm First! Grand Master Cook
-	un(REMOVED_FROM_GAME, ach(1417)),	-- Realm First! Grand Master Enchanter
-	un(REMOVED_FROM_GAME, ach(1418)),	-- Realm First! Grand Master Engineer
-	un(REMOVED_FROM_GAME, ach(1421)),	-- Realm First! Grand Master Herbalist
-	un(REMOVED_FROM_GAME, ach(1423)),	-- Realm First! Grand Master Jewelcrafter
-	un(REMOVED_FROM_GAME, ach(1424)),	-- Realm First! Grand Master Leatherworker
-	un(REMOVED_FROM_GAME, ach(1419)),	-- Realm First! Grand Master Medic
-	un(REMOVED_FROM_GAME, ach(1425)),	-- Realm First! Grand Master Miner
-	un(REMOVED_FROM_GAME, ach(1422)),	-- Realm First! Grand Master Scribe
-	un(REMOVED_FROM_GAME, ach(1426)),	-- Realm First! Grand Master Skinner
-	un(REMOVED_FROM_GAME, ach(1427)),	-- Realm First! Grand Master Tailor
-	un(REMOVED_FROM_GAME, ach(5381)),	-- Realm First! Illustrious Alchemist
-	un(REMOVED_FROM_GAME, ach(5387)),	-- Realm First! Illustrious Angler
-	un(REMOVED_FROM_GAME, ach(5396)),	-- Realm First! Illustrious Archaeologist
-	un(REMOVED_FROM_GAME, ach(5382)),	-- Realm First! Illustrious Blacksmith
-	un(REMOVED_FROM_GAME, ach(5383)),	-- Realm First! Illustrious Cook
-	un(REMOVED_FROM_GAME, ach(5384)),	-- Realm First! Illustrious Enchanter
-	un(REMOVED_FROM_GAME, ach(5385)),	-- Realm First! Illustrious Engineer
-	un(REMOVED_FROM_GAME, ach(5388)),	-- Realm First! Illustrious Herbalist
-	un(REMOVED_FROM_GAME, ach(5390)),	-- Realm First! Illustrious Jewelcrafter
-	un(REMOVED_FROM_GAME, ach(5391)),	-- Realm First! Illustrious Leatherworker
-	un(REMOVED_FROM_GAME, ach(5386)),	-- Realm First! Illustrious Medic
-	un(REMOVED_FROM_GAME, ach(5392)),	-- Realm First! Illustrious Miner
-	un(REMOVED_FROM_GAME, ach(5389)),	-- Realm First! Illustrious Scribe
-	un(REMOVED_FROM_GAME, ach(5393)),	-- Realm First! Illustrious Skinner
-	un(REMOVED_FROM_GAME, ach(5394)),	-- Realm First! Illustrious Tailor
-	un(REMOVED_FROM_GAME, ach(457)),	-- Realm First! Level 80
-	un(REMOVED_FROM_GAME, ach(1405)),	-- Realm First! Level 80 Blood Elf
-	un(REMOVED_FROM_GAME, ach(461)),	-- Realm First! Level 80 Death Knight
-	un(REMOVED_FROM_GAME, ach(1406)),	-- Realm First! Level 80 Draenei
-	un(REMOVED_FROM_GAME, ach(466)),	-- Realm First! Level 80 Druid
-	un(REMOVED_FROM_GAME, ach(1407)),	-- Realm First! Level 80 Dwarf
-	un(REMOVED_FROM_GAME, ach(1413)),	-- Realm First! Level 80 Forsaken
-	un(REMOVED_FROM_GAME, ach(1404)),	-- Realm First! Level 80 Gnome
-	un(REMOVED_FROM_GAME, ach(1408)),	-- Realm First! Level 80 Human
-	un(REMOVED_FROM_GAME, ach(462)),	-- Realm First! Level 80 Hunter
-	un(REMOVED_FROM_GAME, ach(460)),	-- Realm First! Level 80 Mage
-	un(REMOVED_FROM_GAME, ach(1409)),	-- Realm First! Level 80 Night Elf
-	un(REMOVED_FROM_GAME, ach(1410)),	-- Realm First! Level 80 Orc
-	un(REMOVED_FROM_GAME, ach(465)),	-- Realm First! Level 80 Paladin
-	un(REMOVED_FROM_GAME, ach(464)),	-- Realm First! Level 80 Priest
-	un(REMOVED_FROM_GAME, ach(458)),	-- Realm First! Level 80 Rogue
-	un(REMOVED_FROM_GAME, ach(467)),	-- Realm First! Level 80 Shaman
-	un(REMOVED_FROM_GAME, ach(1411)),	-- Realm First! Level 80 Tauren
-	un(REMOVED_FROM_GAME, ach(1412)),	-- Realm First! Level 80 Troll
-	un(REMOVED_FROM_GAME, ach(463)),	-- Realm First! Level 80 Warlock
-	un(REMOVED_FROM_GAME, ach(459)),	-- Realm First! Level 80 Warrior
-	un(REMOVED_FROM_GAME, ach(4999)),	-- Realm First! Level 85
-	un(REMOVED_FROM_GAME, ach(5005)),	-- Realm First! Level 85 Death Knight
-	un(REMOVED_FROM_GAME, ach(5000)),	-- Realm First! Level 85 Druid
-	un(REMOVED_FROM_GAME, ach(5004)),	-- Realm First! Level 85 Hunter
-	un(REMOVED_FROM_GAME, ach(5006)),	-- Realm First! Level 85 Mage
-	un(REMOVED_FROM_GAME, ach(5001)),	-- Realm First! Level 85 Paladin
-	un(REMOVED_FROM_GAME, ach(5002)),	-- Realm First! Level 85 Priest
-	un(REMOVED_FROM_GAME, ach(5008)),	-- Realm First! Level 85 Rogue
-	un(REMOVED_FROM_GAME, ach(4998)),	-- Realm First! Level 85 Shaman
-	un(REMOVED_FROM_GAME, ach(5003)),	-- Realm First! Level 85 Warlock
-	un(REMOVED_FROM_GAME, ach(5007)),	-- Realm First! Level 85 Warrior
-	un(REMOVED_FROM_GAME, ach(6524)),	-- Realm First! Level 90
-	un(REMOVED_FROM_GAME, ach(6748)),	-- Realm First! Level 90 Death Knight
-	un(REMOVED_FROM_GAME, ach(6743)),	-- Realm First! Level 90 Druid
-	un(REMOVED_FROM_GAME, ach(6747)),	-- Realm First! Level 90 Hunter
-	un(REMOVED_FROM_GAME, ach(6749)),	-- Realm First! Level 90 Mage
-	un(REMOVED_FROM_GAME, ach(6752)),	-- Realm First! Level 90 Monk
-	un(REMOVED_FROM_GAME, ach(6744)),	-- Realm First! Level 90 Paladin
-	un(REMOVED_FROM_GAME, ach(6745)),	-- Realm First! Level 90 Priest
-	un(REMOVED_FROM_GAME, ach(6751)),	-- Realm First! Level 90 Rogue
-	un(REMOVED_FROM_GAME, ach(6523)),	-- Realm First! Level 90 Shaman
-	un(REMOVED_FROM_GAME, ach(6746)),	-- Realm First! Level 90 Warlock
-	un(REMOVED_FROM_GAME, ach(6750)),	-- Realm First! Level 90 Warrior
-	un(REMOVED_FROM_GAME, ach(1400, {	-- Realm First! Magic Seeker
-		un(REMOVED_FROM_GAME, title(88)),	-- the Magic Seeker
-	})),
-	un(REMOVED_FROM_GAME, ach(1463)),	-- Realm First! Northrend Vanguard
-	un(REMOVED_FROM_GAME, ach(456, {	-- Realm First! Obsidian Slayer
-		un(REMOVED_FROM_GAME, title(106)),	-- Obsidian Slayer
-	})),
-	un(REMOVED_FROM_GAME, ach(6829)),	-- Realm First! Pandaren Ambassador
-	un(REMOVED_FROM_GAME, ach(14662)),	-- Realm First! Shadowlands Keystone Master
-	un(REMOVED_FROM_GAME, ach(6859)),	-- Realm First! Zen Master Alchemist
-	un(REMOVED_FROM_GAME, ach(6865)),	-- Realm First! Zen Master Angler
-	un(REMOVED_FROM_GAME, ach(6873)),	-- Realm First! Zen Master Archaeologist
-	un(REMOVED_FROM_GAME, ach(6860)),	-- Realm First! Zen Master Blacksmith
-	un(REMOVED_FROM_GAME, ach(6861)),	-- Realm First! Zen Master Cook
-	un(REMOVED_FROM_GAME, ach(6862)),	-- Realm First! Zen Master Enchanter
-	un(REMOVED_FROM_GAME, ach(6863)),	-- Realm First! Zen Master Engineer
-	un(REMOVED_FROM_GAME, ach(6866)),	-- Realm First! Zen Master Herbalist
-	un(REMOVED_FROM_GAME, ach(6868)),	-- Realm First! Zen Master Jewelcrafter
-	un(REMOVED_FROM_GAME, ach(6869)),	-- Realm First! Zen Master Leatherworker
-	un(REMOVED_FROM_GAME, ach(6864)),	-- Realm First! Zen Master Medic
-	un(REMOVED_FROM_GAME, ach(6870)),	-- Realm First! Zen Master Miner
-	un(REMOVED_FROM_GAME, ach(6867)),	-- Realm First! Zen Master Scribe
-	un(REMOVED_FROM_GAME, ach(6871)),	-- Realm First! Zen Master Skinner
-	un(REMOVED_FROM_GAME, ach(6872)),	-- Realm First! Zen Master Tailor
-	un(REMOVED_FROM_GAME, ach(2359, {		-- Swift Flight Form
+	ach(1415, {		-- Realm First! Grand Master Alchemist
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
+	}),
+	ach(1420, {		-- Realm First! Grand Master Angler
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
+	}),
+	ach(5395, {		-- Realm First! Grand Master Archaeologist
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
+	}),
+	ach(1414, {		-- Realm First! Grand Master Blacksmith
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
+	}),
+	ach(1416, {		-- Realm First! Grand Master Cook
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
+	}),
+	ach(1417, {		-- Realm First! Grand Master Enchanter
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
+	}),
+	ach(1418, {		-- Realm First! Grand Master Engineer
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
+	}),
+	ach(1421, {		-- Realm First! Grand Master Herbalist
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
+	}),
+	ach(1423, {		-- Realm First! Grand Master Jewelcrafter
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
+	}),
+	ach(1424, {		-- Realm First! Grand Master Leatherworker
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
+	}),
+	ach(1419, {		-- Realm First! Grand Master Medic
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
+	}),
+	ach(1425, {		-- Realm First! Grand Master Miner
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
+	}),
+	ach(1422, {		-- Realm First! Grand Master Scribe
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
+	}),
+	ach(1426, {		-- Realm First! Grand Master Skinner
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
+	}),
+	ach(1427, {		-- Realm First! Grand Master Tailor
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_1 },
+	}),
+	ach(5381, {		-- Realm First! Illustrious Alchemist
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5387, {		-- Realm First! Illustrious Angler
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5396, {		-- Realm First! Illustrious Archaeologist
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5382, {		-- Realm First! Illustrious Blacksmith
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5383, {		-- Realm First! Illustrious Cook
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5384, {		-- Realm First! Illustrious Enchanter
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5385, {		-- Realm First! Illustrious Engineer
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5388, {		-- Realm First! Illustrious Herbalist
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5390, {		-- Realm First! Illustrious Jewelcrafter
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5391, {		-- Realm First! Illustrious Leatherworker
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5386, {		-- Realm First! Illustrious Medic
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5392, {		-- Realm First! Illustrious Miner
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5389, {		-- Realm First! Illustrious Scribe
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5393, {		-- Realm First! Illustrious Skinner
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5394, {		-- Realm First! Illustrious Tailor
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(457, {		-- Realm First! Level 80
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(1405, {		-- Realm First! Level 80 Blood Elf
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),	--
+	ach(461, {		-- Realm First! Level 80 Death Knight
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),	--
+	ach(1406, {		-- Realm First! Level 80 Draenei
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(466, {		-- Realm First! Level 80 Druid
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(1407, {		-- Realm First! Level 80 Dwarf
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(1413, {		-- Realm First! Level 80 Forsaken
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(1404, {		-- Realm First! Level 80 Gnome
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(1408, {		-- Realm First! Level 80 Human
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(462, {		-- Realm First! Level 80 Hunter
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(460, {		-- Realm First! Level 80 Mage
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(1409, {		-- Realm First! Level 80 Night Elf
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),	--
+	ach(1410, {		-- Realm First! Level 80 Orc
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(465, {		-- Realm First! Level 80 Paladin
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(464, {		-- Realm First! Level 80 Priest
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(458, {		-- Realm First! Level 80 Rogue
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(467, {		-- Realm First! Level 80 Shaman
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(1411, {		-- Realm First! Level 80 Tauren
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(1412, {		-- Realm First! Level 80 Troll
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(463, {		-- Realm First! Level 80 Warlock
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(459, {		-- Realm First! Level 80 Warrior
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_2 },
+	}),
+	ach(4999, {		-- Realm First! Level 85
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5005, {		-- Realm First! Level 85 Death Knight
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5000, {		-- Realm First! Level 85 Druid
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5004, {		-- Realm First! Level 85 Hunter
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5006, {		-- Realm First! Level 85 Mage
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5001, {		-- Realm First! Level 85 Paladin
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5002, {		-- Realm First! Level 85 Priest
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5008, {		-- Realm First! Level 85 Rogue
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(4998, {		-- Realm First! Level 85 Shaman
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5003, {		-- Realm First! Level 85 Warlock
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(5007, {		-- Realm First! Level 85 Warrior
+		["timeline"] = { ADDED_4_0_3, REMOVED_4_0_6 },
+	}),
+	ach(6524, {		-- Realm First! Level 90
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6748, {		-- Realm First! Level 90 Death Knight
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6743, { 	-- Realm First! Level 90 Druid
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6747, { 	-- Realm First! Level 90 Hunter
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6749, { 	-- Realm First! Level 90 Mage
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6752, { 	-- Realm First! Level 90 Monk
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6744, { 	-- Realm First! Level 90 Paladin
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6745, { 	-- Realm First! Level 90 Priest
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6751, { 	-- Realm First! Level 90 Rogue
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6523, { 	-- Realm First! Level 90 Shaman
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6746, { 	-- Realm First! Level 90 Warlock
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6750, { 	-- Realm First! Level 90 Warrior
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(1463, {	-- Realm First! Northrend Vanguard
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_0_8 },
+	}),
+	ach(6829, {		-- Realm First! Pandaren Ambassador
+	 	["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(14662, {	-- Realm First! Shadowlands Keystone Master
+		["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 },
+	}),
+	ach(6859, {		-- Realm First! Zen Master Alchemist
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6865, {		-- Realm First! Zen Master Angler
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6873, {		-- Realm First! Zen Master Archaeologist
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6860, {		-- Realm First! Zen Master Blacksmith
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6861, {		-- Realm First! Zen Master Cook
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6862, {		-- Realm First! Zen Master Enchanter
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6863, {		-- Realm First! Zen Master Engineer
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6866, {		-- Realm First! Zen Master Herbalist
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6868, {		-- Realm First! Zen Master Jewelcrafter
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6869, {		-- Realm First! Zen Master Leatherworker
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6864, {		-- Realm First! Zen Master Medic
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6870, {		-- Realm First! Zen Master Miner
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6867, {		-- Realm First! Zen Master Scribe
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6871, {	-- Realm First! Zen Master Skinner
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(6872, {		-- Realm First! Zen Master Tailor
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+	}),
+	ach(2359, {		-- Swift Flight Form
 		["classes"] = { DRUID },
-	})),
-	un(REMOVED_FROM_GAME, ach(11296, {		-- The Ancient Keeper
+		["timeline"] = { ADDED_3_1_0, REMOVED_6_0_2 },
+	}),
+	ach(11296, {	-- The Ancient Keeper
 		["classes"] = { HUNTER },
-	})),
-	un(REMOVED_FROM_GAME, ach(11297, {		-- The Balance of Light and Shadow
+		["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
+	}),
+	ach(11297, {	-- The Balance of Light and Shadow
 		["classes"] = { PRIEST },
-	})),
-	un(REMOVED_FROM_GAME, ach(892)),	-- The Right Stuff
+		["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
+	}),
+	ach(892, {		-- The Right Stuff
+		["timeline"] = { ADDED_3_0_2, REMOVED_9_0_1 },
+	}),
 	n(ARMOR, {
 		ach(11761, {	-- Azeroth's Next Top Model
 			title(356),	-- Stylist

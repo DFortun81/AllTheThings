@@ -102,6 +102,14 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						ach(5018, {	-- You Don't Have an Eternity - Guild Edition
 							["timeline"] = { "added 4.0.3" },
 						}),
+						ach(1400, {	-- Realm First! Magic Seeker
+							["timeline"] = { ADDED_3_0_2, REMOVED_3_0_8  },
+							["g"] = {
+								title(88, {	-- <Name> the Magic Seeker
+									["timeline"] = { ADDED_3_0_2, REMOVED_3_0_8 },
+								}),
+							},
+						}),
 						i(43952),	-- Azure Drake (MOUNT!)
 						-- #if AFTER 4.0.3
 						i(43953, {	-- Blue Drake (MOUNT!)

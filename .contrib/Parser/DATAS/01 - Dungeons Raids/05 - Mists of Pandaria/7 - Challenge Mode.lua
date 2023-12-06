@@ -308,5 +308,8 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_0_4, 
 		ach(8430, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 } }, {	-- Challenge Master: Temple of the Jade Serpent
 			title(249),	-- Jade Protector <Name>
 		})),
+		ach(6433, {	-- Realm First! Challenge Conqueror: Gold
+			["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+		}),
 	}),
 })));

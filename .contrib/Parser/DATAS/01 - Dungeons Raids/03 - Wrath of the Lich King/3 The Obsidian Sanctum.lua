@@ -91,6 +91,14 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							["provider"] = { "n", 30449 },	-- Vesperon
 						}),
 					}),
+					ach(456, {	-- Realm First! Obsidian Slayer
+						["timeline"] = { ADDED_3_0_2, REMOVED_3_0_8 },
+						["g"] = {
+							title(106, {	-- Obsidian Slayer <Name>
+								["timeline"] = { ADDED_3_0_2, REMOVED_3_0_8 },
+							}),
+						},
+					}),
 				}),
 				e(1616, {	-- Sartharion
 					["creatureID"] = 28860,	-- Sartharion

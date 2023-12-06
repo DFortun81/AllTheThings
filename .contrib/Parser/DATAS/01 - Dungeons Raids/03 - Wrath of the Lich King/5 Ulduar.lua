@@ -1237,6 +1237,22 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							["description"] = "Must be killed before killing Freya or they will despawn.",
 							["timeline"] = { "added 3.1.0", "removed 7.3.5.25727" },
 						}),
+						ach(3259, {	-- Realm First! Celestial Defender
+							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+							["g"] = {
+								title(125, {	-- <Name> the Celestial Defender
+									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+								}),
+							},
+						}),
+						ach(3117, {	-- Realm First! Death's Demise
+							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+							["g"] = {
+								title(124, {	-- <Name>, Death's Demise
+								["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+								}),
+							},
+						}),
 					}),
 					applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, n(QUALITY_LEGENDARY, {
 						["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses in 25-Man Ulduar. Hard modes have higher drop chances.",
