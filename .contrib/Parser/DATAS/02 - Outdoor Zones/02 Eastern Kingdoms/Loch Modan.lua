@@ -1655,14 +1655,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208851, {	-- Libram of Justice
-					["provider"] = { "o", 407850 },	-- Sunken Reliquary
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, o(407850, {	-- Sunken Reliquary
 					["coord"] = { 36.8, 91.4, LOCH_MODAN },
 					["timeline"] = { "removed 2.0.1" },
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						recipe(410001),	-- Engrave Gloves - Hand of Reckoning
+						i(208851, {	-- Libram of Justice
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(410001),	-- Engrave Gloves - Hand of Reckoning
+							},
+						}),
 					},
 				})),
 			}),
