@@ -92,6 +92,17 @@ root(ROOTS.Zones, m(DRAENOR, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } 
 				i(111987),	-- Trading Post, Level 3 [Blueprints]
 			},
 		}),
+		petbattle(ach(9724,  {	-- Taming Draenor
+			["timeline"] = { ADDED_6_0_2 },
+			["g"] = {
+				crit(27012),	-- Ashlei [Shadowmoon Valley)
+				crit(27011),	-- Cymre Brightblade [Gorgrond)
+				crit(27013),	-- Gargra [Frostfire Ridge)
+				crit(27016),	-- Taralune [Talador)
+				crit(27015),	-- Tarr the Terrible [Nagrand)
+				crit(27014),	-- Vesharr [Spires of Arak)
+			},
+		})),
 		ach(14728, {		-- To All The Squirrels Through Time and Space
 			crit(49746, {	-- Royal Moth
 				["crs"] = { 88975 },	-- Royal Moth

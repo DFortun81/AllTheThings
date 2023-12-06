@@ -115,6 +115,146 @@ root(ROOTS.Zones, {
 				crit(5316),		-- Exalted Undercity
 			},
 		}),
+		petbattle(ach(9069, bubbleDownSelf({ ["timeline"] = { "added 6.0.1.18471" }, }, {	-- An Awfully Big Adventure
+			["provider"] = { "i", 113216 },	-- Elekk Plushie
+			["groups"] = {
+				i(120121),	-- Trunks (PET!)
+				crit(25118, {	-- Aki the Chosen (Pandaria - Vale of Eternal Blossoms)
+					["_npcs"] = { 66741 },	-- Aki the Chosen
+				}),
+				crit(26969, {	-- Ashlei (Draenor - Shadowmoon Valley)
+					["_npcs"] = { 87124 },	-- Ashlei <Grand Master Pet Tamer>
+				}),
+				crit(26970, {	-- Beegle Blastfuse (Northrend - Howling Fjord)
+					["_npcs"] = { 66635 },	-- Beegle Blastfuse <Master Pet Tamer>
+				}),
+				crit(26971, {	-- Blingtron 4000 (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71933 },	-- Blingtron 4000
+				}),
+				crit(27471, {	-- Bloodknight Antari (Outland - Shadowmoon Valley)
+					["_npcs"] = { 66557 },	-- Bloodknight Antari <Grand Master Pet Tamer>
+				}),
+				crit(26972, {	-- Bordin Steadyfist
+					["_npcs"] = { 66815 },	-- Bordin Steadyfist <Master Pet Tamer>
+				}),
+				crit(26973, {	-- Brok
+					["_npcs"] = { 66819 },	-- Brok <Master Pet Tamer>
+				}),
+				crit(26974, {	-- Burning Pandaren Spirit
+					["_npcs"] = { 68463 },	-- Burning Pandaren Spirit <Grand Master Pet Tamer>
+				}),
+				crit(26975, {	-- Chen Stormstout (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71927 },	-- Chen Stormstout
+				}),
+				crit(26976, {	-- Christoph VonFeasel (Darkmoon Island)
+					["_quests"] = { 36471 },	-- A New Darkmoon Challenger!
+					--["_npcs"] = { 85519 },	-- Christoph VonFeasel <Grand Master Pet Tamer>
+				}),
+				crit(26977, {	-- Courageous Yon
+					["_npcs"] = { 66738 },	-- Courageous Yon <Grand Master Pet Tamer>
+				}),
+				crit(26978, {	-- Cymre Brightblade
+					["_npcs"] = { 83837 },	-- Cymre Brightblade <Grand Master Pet Tamer>
+				}),
+				crit(26979, {	-- Dr. Ion Goldbloom (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71934 },	-- Dr. Ion Goldbloom <Jurassic Expedition>
+				}),
+				crit(26980, {	-- Farmer Nishi
+					["_npcs"] = { 66734 },	-- Farmer Nishi <Grand Master Pet Tamer>
+				}),
+				crit(26981, {	-- Flowing Pandaren Spirit
+					["_npcs"] = { 68462 },	-- Flowing Pandaren Spirit <Grand Master Pet Tamer>
+				}),
+				crit(26982, {	-- Gargra
+					["_npcs"] = { 87122 },	-- Gargra <Grand Master Pet Tamer>
+				}),
+				crit(26983, {	-- Goz Banefury
+					["_npcs"] = { 66822 },	-- Goz Banefury <Master Pet Tamer>
+				}),
+				crit(26984, {	-- Gutretch
+					["_npcs"] = { 66639 },	-- Gutretch <Master Pet Tamer>
+				}),
+				crit(26985, {	-- Hyuna of the Shrines
+					["_npcs"] = { 66730 },	-- Hyuna of the Shrines <Grand Master Pet Tamer>
+				}),
+				crit(26986, {	-- Jeremy Feasel (Darkmoon Island)
+					["_quests"] = { 32175 },	-- Darkmoon Pet Battle!
+					--["_npcs"] = { 67370 },	-- Jeremy Feasel <Master Pet Tamer>
+				}),
+				crit(26987, {	-- Lorewalker Cho (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71926 },	-- Lorewalker Cho
+				}),
+				crit(26988, {	-- Lydia Accoste
+					["_npcs"] = { 66522 },	-- Lydia Accoste <Grand Master Pet Tamer>
+				}),
+				crit(26989, {	-- Major Payne
+					["_npcs"] = { 66675 },	-- Major Payne
+				}),
+				crit(26990, {	-- Mo'ruk
+					["_npcs"] = { 66733 },	-- Mo'ruk <Grand Master Pet Tamer>
+				}),
+				crit(26991, {	-- Morulu The Elder
+					["_npcs"] = { 66553 },	-- Morulu The Elder <Master Pet Tamer>
+				}),
+				crit(26992, {	-- Narrok (Outland)
+					["_npcs"] = { 66552 },	-- Narrok <Master Pet Tamer>
+				}),
+				crit(26993, {	-- Nearly Headless Jacob
+					["_npcs"] = { 66636 },	-- Nearly Headless Jacob <Master Pet Tamer>
+				}),
+				crit(26994, {	-- Nicki Tinytech
+					["_npcs"] = { 66550 },	-- Nicki Tinytech <Master Pet Tamer>
+				}),
+				crit(26995, {	-- Obalis
+					["_npcs"] = { 66824 },	-- Obalis <Grand Master Pet Tamer>
+				}),
+				crit(26996, {	-- Okrut Dragonwaste
+					["_npcs"] = { 66638 },	-- Okrut Dragonwaste <Master Pet Tamer>
+				}),
+				crit(26997, {	-- Ras'an
+					["_npcs"] = { 66551 },	-- Ras'an <Master Pet Tamer>
+				}),
+				crit(26998, {	-- Seeker Zusshi
+					["_npcs"] = { 66918 },	-- Seeker Zusshi <Grand Master Pet Tamer>
+				}),
+				crit(26999, {	-- Shademaster Kiryn (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71930 },	-- Shademaster Kiryn
+				}),
+				crit(27000, {	-- Stone Cold Trixxy (Kalimdor - Winterspring)
+					["_npcs"] = { 66466 },	-- Stone Cold Trixxy <Grand Master Pet Tamer>
+				}),
+				crit(27001, {	-- Sully "The Pickle" McLeary (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71929 },	-- Sully "The Pickle" McLeary <SI:7>
+				}),
+				crit(27002, {	-- Taralune (Draenor - Talador)
+					["_npcs"] = { 87125 },	-- Taralune <Grand Master Pet Tamer>
+				}),
+				crit(27003, {	-- Taran Zhu (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71931 },	-- Taran Zhu <Lord of the Shado-Pan>
+				}),
+				crit(27004, {	-- Tarr the Terrible (Draenor - Nagrand)
+					["_npcs"] = { 87110 },	-- Tarr the Terrible <Grand Master Pet Tamer>
+				}),
+				crit(27005, {	-- Thundering Pandaren Spirit (Pandaria - Kun-Lai Summit)
+					["_npcs"] = { 68465 },	-- Thundering Pandaren Spirit <Grand Master Pet Tamer>
+				}),
+				crit(27006, {	-- Vesharr (Draenor - Spires of Arak)
+					["_npcs"] = { 87123 },	-- Vesharr <Grand Master Pet Tamer>
+				}),
+				crit(27007, {	-- Wastewalker Shu (Pandaria - Dread Wastes)
+					["_npcs"] = { 66739 },	-- Wastewalker Shu <Grand Master Pet Tamer>
+				}),
+				crit(27008, {	-- Whispering Pandaren Spirit (Pandaria - The Jade Forest)
+					["_npcs"] = { 68464 },	-- Whispering Pandaren Spirit <Grand Master Pet Tamer>
+				}),
+				crit(27009, {	-- Wise Mari (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71932 },	-- Wise Mari <Waterspeaker>
+				}),
+				crit(27010, {	-- Wrathion (Pandaria - Celestial Tournament)
+					["_npcs"] = { 71924 },	-- Wrathion <The Black Prince>
+				}),
+			},
+		}))),
 		applyclassicphase(BFA_PHASE_ONE, ach(12988, {	-- Battle for Azeroth Explorer
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -125,6 +265,39 @@ root(ROOTS.Zones, {
 				12561,	-- Explore Nazmir
 				12560,	-- Explore Vol'dun
 			}},
+		})),
+		petbattle(ach(12930, {	-- Battle Safari (Kul Tiras and Zandalar)
+			["timeline"] = { ADDED_8_0_1 },
+			["g"] = {
+				i(163634),		-- Dreadtick Leecher (PET!)
+				crit(41273),		-- Shadowback Crawler
+				crit(41274),		-- River Frog
+				crit(41275),		-- Freshwater Crawler
+				crit(41276),		-- Vale Marmot
+				crit(41277),		-- Valley Chicken
+				crit(41278),		-- Sandyback Crawler
+				crit(41279),		-- River Otter
+				crit(41281),		-- Parasitic Boarfly
+				crit(41282),		-- Shack Crab
+				crit(41283),		-- Inland Croaker
+				crit(41284),		-- Giant Woodworm
+				crit(41285),		-- Shore Butterfly
+				crit(41286),		-- Barrier Hermit
+				crit(41287),		-- Coastal Scuttler
+				crit(41289),		-- Golden Beetle
+				crit(41288),		-- Bloodfever Tarantula
+				crit(41290),		-- Elusive Skimmer
+				crit(41291),		-- Leafy Flutterwing
+				crit(41292),		-- Young Sand Sifter
+				crit(41293),		-- Sticky Oozeling
+				crit(41294),		-- Returned Hatchling
+				crit(41295),		-- Glutted Bleeder
+				crit(41296),		-- Spectral Raven
+				crit(41297),		-- Boghopper
+				crit(41298),		-- Hermit Crab
+				crit(41299),		-- Coastal Bounder
+				crit(41280),		-- Honey Bee
+			},
 		})),
 		applyclassicphase(CATA_PHASE_ONE, ach(4868, {	-- Cataclysm Explorer [7.0.3] / Explore Cataclysm
 			-- Meta Achievement
@@ -288,6 +461,53 @@ root(ROOTS.Zones, {
 			["_noautomation"] = true,
 		}),
 		ach(1832),	-- Tastes Like Chicken
+		petbattle(ach(6607,  {	-- Taming Azeroth
+			["sym"] = {{"meta_achievement",
+				6604,	-- Taming Outland
+				6605,	-- Taming Northrend
+				7525,	-- Taming Cataclysm
+				6606,	-- Taming Pandaria
+				6603,	-- Taming Eastern Kingdoms (A)
+				6602,	-- Taming Kalimdor (H)
+			}},
+			["timeline"] = { ADDED_5_0_4 },
+			["groups"] = {
+				title(207),	-- Tamer
+			},
+		})),
+		petbattle(ach(7525,  {	-- Taming Cataclysm
+			["timeline"] = { ADDED_5_0_4 },
+			["g"] = {
+				crit(21858),	-- Brok [Mount Hyjal)
+				crit(21859),	-- Bordin Steadyfist [Deepholm)
+				crit(21860),	-- Goz Banefury [Twilight Highlands)
+				crit(21861),	-- Obalis [Uldum)
+			},
+		})),
+		petbattle(ach(6601, {	-- Taming the Wild [1)
+			["timeline"] = { ADDED_5_0_4 },
+		})),
+		petbattle(ach(7498, {	-- Taming the Great Outdoors [15)
+			["timeline"] = { ADDED_5_0_4 },
+		})),
+		petbattle(ach(7499, {	-- Taming the World (40)
+			["timeline"] = { ADDED_5_0_4 },
+			["g"] = {
+				i(92738),	-- Safari Hat (TOY!)
+			},
+		})),
+		petbattle(ach(13695, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {	-- Team Aquashock
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				13694,	-- Nazjatari Safari
+				13693,	-- Mecha-Safari
+				13626,	-- Nautical Nuisances of Nazjatar
+				13625,	-- Mighty Minions of Mechagon
+			}},
+			["g"] = {
+				i(169349),	-- Kelpfin (PET!)
+			},
+		}))),
 		ach(1182, {		-- The Bread Winner
 			["timeline"] = { ADDED_3_0_2 },
 		}),
@@ -396,5 +616,19 @@ root(ROOTS.Zones, {
 		ach(13144, {	-- Wide World of Quests
 			["timeline"] = { ADDED_8_0_1 },
 		}),
+		petbattle(ach(6590, {		-- World Safari
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				6586,	-- Eastern Kingdoms Safari
+				6585,	-- Kalimdor Safari
+				6587,	-- Outland Safari
+				6588,	-- Northrend Safari
+				6589,	-- Pandaria Safari
+			}},
+			["timeline"] = { ADDED_5_0_4 },
+			["g"] = {
+				title(199),		-- Zookeeper <Name>
+			},
+		})),
 	}),
 })
