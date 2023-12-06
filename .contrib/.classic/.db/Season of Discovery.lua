@@ -2,28 +2,35 @@
 local classHeader = function(classID, g)
 	return cl(classID, bubbleDown({ ["classes"] = { classID } }, g));
 end
-local OnTooltipForAzerothCommerceAuthority = [[function(t)
+local OnTooltipFor_ACA_SDL = [[function(t)
 	local reputation = t.reputation;
 	if reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
-		local repPerTurnIn = isHuman and 330 or 300;
-		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
-		GameTooltip:AddDoubleLine("Supply Shipment Turn Ins", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		local repPerTurnIn = isHuman and 220 or 200;
-		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
-		GameTooltip:AddDoubleLine("Waylaid Supply Turn Ins", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-	end
-end]];
-local OnTooltipForDurotarSupplyAndLogistics = [[function(t)
-	local reputation = t.reputation;
-	if reputation < 42000 then
-		local isHuman = _.RaceIndex == 1;
-		local repPerTurnIn = 300;
-		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
-		GameTooltip:AddDoubleLine("Supply Shipment Turn Ins", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-		local repPerTurnIn = 200;
-		local x, n = math.ceil((42000 - reputation) / repPerTurnIn), math.ceil(42000 / repPerTurnIn);
-		GameTooltip:AddDoubleLine("Waylaid Supply Turn Ins", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		local isHuman, repPerTurnIn, x, n = _.RaceIndex == 1;
+		if reputation < ]] .. FRIENDLY .. [[ then
+			repPerTurnIn = isHuman and 495 or 450;
+			x, n = math.ceil((]] .. FRIENDLY .. [[ - reputation) / repPerTurnIn), math.ceil(]] .. FRIENDLY .. [[ / repPerTurnIn);
+			GameTooltip:AddDoubleLine("A Full Shipment [iLvl 10 - Crafted]", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			repPerTurnIn = isHuman and 330 or 300;
+			x, n = math.ceil((]] .. FRIENDLY .. [[ - reputation) / repPerTurnIn), math.ceil(]] .. FRIENDLY .. [[ / repPerTurnIn);
+			GameTooltip:AddDoubleLine("A Full Shipment [iLvl 10 - Gathered]", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			repPerTurnIn = isHuman and 110 or 100;
+			x, n = math.ceil((]] .. FRIENDLY .. [[ - reputation) / repPerTurnIn), math.ceil(]] .. FRIENDLY .. [[ / repPerTurnIn);
+			GameTooltip:AddDoubleLine("A Waylaid Shipment [iLvl 10]", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			GameTooltip:AddLine("PROTIP: Save higher ilvl Supply Shipments until later!", 1, 0.1, 0.1);
+		elseif reputation < ]] .. HONORED .. [[ then
+			repPerTurnIn = isHuman and 880 or 880;
+			x, n = math.ceil((]] .. HONORED .. [[ - reputation) / repPerTurnIn), math.ceil(]] .. HONORED .. [[ / repPerTurnIn);
+			GameTooltip:AddDoubleLine("A Full Shipment [iLvl 25 - Crafted (Tier 2)]", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			repPerTurnIn = isHuman and 715 or 650;
+			x, n = math.ceil((]] .. HONORED .. [[ - reputation) / repPerTurnIn), math.ceil(]] .. HONORED .. [[ / repPerTurnIn);
+			GameTooltip:AddDoubleLine("A Full Shipment [iLvl 25 - Crafted (Tier 1)]", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			repPerTurnIn = isHuman and 550 or 500;
+			x, n = math.ceil((]] .. HONORED .. [[ - reputation) / repPerTurnIn), math.ceil(]] .. HONORED .. [[ / repPerTurnIn);
+			GameTooltip:AddDoubleLine("A Full Shipment [iLvl 25 - Gathered]", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			repPerTurnIn = isHuman and 220 or 200;
+			x, n = math.ceil((]] .. HONORED .. [[ - reputation) / repPerTurnIn), math.ceil(]] .. HONORED .. [[ / repPerTurnIn);
+			GameTooltip:AddDoubleLine("A Waylaid Shipment [iLvl 25]", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		end
 	end
 end]];
 
@@ -80,12 +87,12 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(c
 	}), bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {
 	n(FACTIONS, {
 		faction(2586, {	-- Azeroth Commerce Authority
-			["OnTooltip"] = OnTooltipForAzerothCommerceAuthority,
+			["OnTooltip"] = OnTooltipFor_ACA_SDL,
 			["maps"] = { DARNASSUS, IRONFORGE, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		faction(2587, {	-- Durotar Supply and Logistics
-			["OnTooltip"] = OnTooltipForDurotarSupplyAndLogistics,
+			["OnTooltip"] = OnTooltipFor_ACA_SDL,
 			["maps"] = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },
 			["races"] = HORDE_ONLY,
 		}),
@@ -534,15 +541,15 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(c
 					["repeatable"] = true,
 					["lvl"] = 18,
 				}),
-				q(79102, {	-- A Full Shipment [iLvl 25 - Crafted]
-					["provider"] = { "i", 211840 },	-- Supply Shipment [iLvl 25 - Crafted]
+				q(79102, {	-- A Full Shipment [iLvl 25 - Crafted (Tier 1)]
+					["provider"] = { "i", 211840 },	-- Supply Shipment [iLvl 25 - Crafted (Tier 1)]
 					["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
 					["description"] = "Grants 650 reputation.",
 					["repeatable"] = true,
 					["lvl"] = 22,
 				}),
-				q(79103, {	-- A Full Shipment [iLvl 25 - Crafted (Expensive)]
-					["provider"] = { "i", 211841 },	-- Supply Shipment [iLvl 25 - Crafted (Expensive)]
+				q(79103, {	-- A Full Shipment [iLvl 25 - Crafted (Tier 2)]
+					["provider"] = { "i", 211841 },	-- Supply Shipment [iLvl 25 - Crafted (Tier 2)]
 					["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
 					["description"] = "Grants 800 reputation.",
 					["repeatable"] = true,
@@ -579,10 +586,30 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(c
 				}),
 				q(78611, {	-- A Waylaid Shipment [iLvl 25]
 					["providers"] = {
+						{ "i", 211819 },	-- Waylaid Supplies: Bronze Bars
+						{ "i", 211822 },	-- Waylaid Supplies: Bruiseweed
+						{ "i", 211837 },	-- Waylaid Supplies: Goblin Deviled Clams
+						{ "i", 211838 },	-- Waylaid Supplies: Heavy Wool Bandages
+						{ "i", 211821 },	-- Waylaid Supplies: Medium Leather
+						{ "i", 211820 },	-- Waylaid Supplies: Silver Bars
+						{ "i", 211836 },	-- Waylaid Supplies: Smoked Bear Meat
 						{ "i", 211835 },	-- Waylaid Supplies: Smoked Sagefish
+						{ "i", 211823 },	-- Waylaid Supplies: Swiftthistle
+						{ "i", 211831 },	-- Waylaid Supplies: Dark Leather Cloaks
+						{ "i", 211833 },	-- Waylaid Supplies: Gray Woolen Shirts
+						{ "i", 211824 },	-- Waylaid Supplies: Lesser Mana Potions
+						{ "i", 211828 },	-- Waylaid Supplies: Minor Mana Oil
+						{ "i", 211825 },	-- Waylaid Supplies: Rough Bronze Boots
+						{ "i", 211829 },	-- Waylaid Supplies: Small Bronze Bombs
+						{ "i", 211935 },	-- Waylaid Supplies: Elixir of Firepower
+						{ "i", 211832 },	-- Waylaid Supplies: Hillman's Shoulders
+						{ "i", 211830 },	-- Waylaid Supplies: Ornate Spyglasses
+						{ "i", 211834 },	-- Waylaid Supplies: Pearl-clasped Cloaks
+						{ "i", 211827 },	-- Waylaid Supplies: Runed Silver Rods
+						{ "i", 211826 },	-- Waylaid Supplies: Silver Skeleton Keys
 					},
 					["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-					["description"] = "Grants 100 reputation.",
+					["description"] = "Grants 200 reputation.",
 					["repeatable"] = true,
 					["lvl"] = 15,
 				}),
@@ -678,11 +705,79 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(c
 					},
 				}),
 				
-				-- iLvl 25 - Crafted Supplies
+				-- iLvl 25 - Crafted Supplies (Tier 1)
+				i(211831, {	-- Waylaid Supplies: Dark Leather Cloaks
+					["cost"] = { { "i", 2316, 2 } },	-- Dark Leather Cloaks
+					["groups"] = {
+						i(211840),	-- Supply Shipment [iLvl 25 - Crafted (Tier 1)]
+					},
+				}),
+				i(211833, {	-- Waylaid Supplies: Gray Woolen Shirts
+					["cost"] = { { "i", 2587, 4 } },	-- Gray Woolen Shirts
+					["groups"] = {
+						i(211840),	-- Supply Shipment [iLvl 25 - Crafted (Tier 1)]
+					},
+				}),
+				i(211824, {	-- Waylaid Supplies: Lesser Mana Potions
+					["cost"] = { { "i", 3385, 20 } },	-- Lesser Mana Potions
+					["groups"] = {
+						i(211840),	-- Supply Shipment [iLvl 25 - Crafted (Tier 1)]
+					},
+				}),
+				i(211828, {	-- Waylaid Supplies: Minor Mana Oil
+					["cost"] = { { "i", 20745, 2 } },	-- Minor Mana Oil
+					["groups"] = {
+						i(211840),	-- Supply Shipment [iLvl 25 - Crafted (Tier 1)]
+					},
+				}),
+				i(211825, {	-- Waylaid Supplies: Rough Bronze Boots
+					["cost"] = { { "i", 6350, 3 } },	-- Rough Bronze Boots
+					["groups"] = {
+						i(211840),	-- Supply Shipment [iLvl 25 - Crafted (Tier 1)]
+					},
+				}),
+				i(211829, {	-- Waylaid Supplies: Small Bronze Bombs
+					["cost"] = { { "i", 4374, 12 } },	-- Small Bronze Bombs
+					["groups"] = {
+						i(211840),	-- Supply Shipment [iLvl 25 - Crafted (Tier 1)]
+					},
+				}),
+				
+				-- iLvl 25 - Crafted Supplies (Tier 2)
+				i(211935, {	-- Waylaid Supplies: Elixir of Firepower
+					["cost"] = { { "i", 6373, 15 } },	-- Elixir of Firepower
+					["groups"] = {
+						i(211841),	-- Supply Shipment [iLvl 25 - Crafted (Tier 2)]
+					},
+				}),
+				i(211832, {	-- Waylaid Supplies: Hillman's Shoulders
+					["cost"] = { { "i", 4251, 2 } },	-- Hillman's Shoulders
+					["groups"] = {
+						i(211841),	-- Supply Shipment [iLvl 25 - Crafted (Tier 2)]
+					},
+				}),
 				i(211830, {	-- Waylaid Supplies: Ornate Spyglasses
 					["cost"] = { { "i", 5507, 2 } },	-- Ornate Spyglasses
 					["groups"] = {
-						i(211841),	-- Supply Shipment [Level 25]
+						i(211841),	-- Supply Shipment [iLvl 25 - Crafted (Tier 2)]
+					},
+				}),
+				i(211834, {	-- Waylaid Supplies: Pearl-clasped Cloaks
+					["cost"] = { { "i", 5542, 3 } },	-- Pearl-clasped Cloaks
+					["groups"] = {
+						i(211841),	-- Supply Shipment [iLvl 25 - Crafted (Tier 2)]
+					},
+				}),
+				i(211827, {	-- Waylaid Supplies: Runed Silver Rods
+					["cost"] = { { "i", 6339, 1 } },	-- Runed Silver Rods
+					["groups"] = {
+						i(211841),	-- Supply Shipment [iLvl 25 - Crafted (Tier 2)]
+					},
+				}),
+				i(211826, {	-- Waylaid Supplies: Silver Skeleton Keys
+					["cost"] = { { "i", 15869, 14 } },	-- Silver Skeleton Keys
+					["groups"] = {
+						i(211841),	-- Supply Shipment [iLvl 25 - Crafted (Tier 2)]
 					},
 				}),
 			}),
@@ -759,10 +854,59 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(c
 					},
 				}),
 				
+				-- iLvl 25 - Gathering Supplies
+				i(211819, {	-- Waylaid Supplies: Bronze Bars
+					["cost"] = { { "i", 2841, 12 } },	-- Bronze Bars
+					["groups"] = {
+						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
+					},
+				}),
+				i(211822, {	-- Waylaid Supplies: Bruiseweed
+					["cost"] = { { "i", 2453, 20 } },	-- Bruiseweed
+					["groups"] = {
+						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
+					},
+				}),
+				i(211837, {	-- Waylaid Supplies: Goblin Deviled Clams
+					["cost"] = { { "i", 5527, 8 } },	-- Goblin Deviled Clams
+					["groups"] = {
+						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
+					},
+				}),
+				i(211838, {	-- Waylaid Supplies: Heavy Wool Bandages
+					["cost"] = { { "i", 3531, 15 } },	-- Heavy Wool Bandages
+					["groups"] = {
+						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
+					},
+				}),
+				i(211821, {	-- Waylaid Supplies: Medium Leather
+					["cost"] = { { "i", 2319, 12 } },	-- Medium Leather
+					["groups"] = {
+						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
+					},
+				}),
+				i(211820, {	-- Waylaid Supplies: Silver Bars
+					["cost"] = { { "i", 2842, 6 } },	-- Silver Bars
+					["groups"] = {
+						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
+					},
+				}),
+				i(211836, {	-- Waylaid Supplies: Smoked Bear Meat
+					["cost"] = { { "i", 6890, 20 } },	-- Smoked Bear Meat
+					["groups"] = {
+						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
+					},
+				}),
 				i(211835, {	-- Waylaid Supplies: Smoked Sagefish
 					["cost"] = { { "i", 21072, 15 } },	-- Smoked Sagefish
 					["groups"] = {
-						i(211839),	-- Supply Shipment [Level 18]
+						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
+					},
+				}),
+				i(211823, {	-- Waylaid Supplies: Swiftthistle
+					["cost"] = { { "i", 2452, 20 } },	-- Swiftthistle
+					["groups"] = {
+						i(211839),	-- Supply Shipment [iLvl 25 - Gathered]
 					},
 				}),
 			}),
