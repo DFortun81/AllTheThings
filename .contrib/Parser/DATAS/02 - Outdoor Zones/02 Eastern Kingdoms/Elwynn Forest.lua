@@ -2259,24 +2259,49 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(205685, {	-- Rune of Aegis
-					["provider"] = { "n", 204989 },	-- Wounded Adventurer
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(204937, {	-- Adventurer's Spirit
+					["provider"] = { "n", 204827 },	-- Adventurer's Remains
+					["coord"] = { 52.2, 84.65, ELWYNN_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["groups"] = {
+						i(210589, {	-- Echo of the Ancestors
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(410099),	-- Engrave Pants - Ancestral Guidance
+							},
+						}),
+						i(205944, {	-- Reciprocal Epiphany
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(402848),	-- Engrave Pants - Prayer of Mending
+							},
+						}),
+						i(206264, {	-- Rune of Inspiration
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(410011),	-- Engrave Pants - Inspiration Exemplar
+							},
+						}),
+						i(206970, {	-- Rune of Life
+							["classes"] = { DRUID },
+							["groups"] = {
+								recipe(410033),	-- Engrave Pants - Lifebloom
+							},
+						}),
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(204989, {	-- Wounded Adventurer
 					["coord"] = { 62.0, 47.32, ELWYNN_FOREST },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						recipe(425619),	-- Engrave Chest - Aegis
-					},
-				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206264, {	-- Rune of Inspiration
-					["provider"] = { "n", 204937 },	-- Adventurer's Spirit
-					["coord"] = { 52.2, 84.65, ELWYNN_FOREST },
-					["timeline"] = { "removed 2.0.1" },
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						recipe(410011),	-- Engrave Pants - Inspiration Exemplar
+						i(205685, {	-- Rune of Aegis
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(425619),	-- Engrave Chest - Aegis
+							},
+						}),
 					},
 				})),
 			}),

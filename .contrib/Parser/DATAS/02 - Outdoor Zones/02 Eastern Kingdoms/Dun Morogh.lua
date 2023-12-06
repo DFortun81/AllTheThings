@@ -1413,7 +1413,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 5,
 					["groups"] = {
 						objective(1, {	-- 0/1 Rumbleshot's Ammo
-							["provider"] = { "i", 13850 },	-- Rumbleshot's Ammo
+							["providers"] = {
+								{ "i",  13850 },	-- Rumbleshot's Ammo
+								{ "o", 176785 },	-- Ammo Crate
+							},
 							["coord"] = { 44.13, 56.95, DUN_MOROGH },
 						}),
 					},
@@ -2740,6 +2743,55 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+			}),
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(204937, {	-- Adventurer's Spirit
+					["provider"] = { "n", 204827 },	-- Adventurer's Remains
+					["coord"] = { 43.0, 49.6, DUN_MOROGH },
+					["timeline"] = { "removed 2.0.1" },
+					["groups"] = {
+						i(210589, {	-- Echo of the Ancestors
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(410099),	-- Engrave Pants - Ancestral Guidance
+							},
+						}),
+						i(205944, {	-- Reciprocal Epiphany
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(402848),	-- Engrave Pants - Prayer of Mending
+							},
+						}),
+						i(206264, {	-- Rune of Inspiration
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(410011),	-- Engrave Pants - Inspiration Exemplar
+							},
+						}),
+						i(206970, {	-- Rune of Life
+							["classes"] = { DRUID },
+							["groups"] = {
+								recipe(410033),	-- Engrave Pants - Lifebloom
+							},
+						}),
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(208802, {	-- Wounded Adventurer
+					["coord"] = { 25.6, 43.6, DUN_MOROGH },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(205685, {	-- Rune of Aegis
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(425619),	-- Engrave Chest - Aegis
+							},
+						}),
+					},
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {

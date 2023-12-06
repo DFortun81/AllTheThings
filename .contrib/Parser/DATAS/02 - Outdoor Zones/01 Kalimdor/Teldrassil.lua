@@ -226,7 +226,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["lvl"] = 2,
 							["groups"] = {
 								objective(1, {	-- 0/7 Hyacinth Mushroom
-									["provider"] = { "i", 10639 },	-- Hyacinth Mushroom
+									["providers"] = {
+										{ "i",  10639 },	-- Hyacinth Mushroom
+										{ "o", 152094 },	-- Hyacinth Mushroom
+									},
 									["crs"] = {
 										1988,	-- Grell
 										1989,	-- Grellkin
@@ -1768,6 +1771,41 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(204937, {	-- Adventurer's Spirit
+					["provider"] = { "n", 204827 },	-- Adventurer's Remains
+					["coord"] = { 33.6, 35.6, TELDRASSIL },
+					["timeline"] = { "removed 2.0.1" },
+					["groups"] = {
+						i(210589, {	-- Echo of the Ancestors
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(410099),	-- Engrave Pants - Ancestral Guidance
+							},
+						}),
+						i(205944, {	-- Reciprocal Epiphany
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(402848),	-- Engrave Pants - Prayer of Mending
+							},
+						}),
+						i(206264, {	-- Rune of Inspiration
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(410011),	-- Engrave Pants - Inspiration Exemplar
+							},
+						}),
+						i(206970, {	-- Rune of Life
+							["classes"] = { DRUID },
+							["groups"] = {
+								recipe(410033),	-- Engrave Pants - Lifebloom
+							},
+						}),
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(44030, {	-- Draelan <Enchanting Supplies>
 					["coord"] = { 39.0, 30.0, TELDRASSIL },
