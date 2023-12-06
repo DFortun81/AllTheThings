@@ -1716,6 +1716,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1942,	-- Rot Hide Savage
 					},
 				}),
+				-- #if ANYCLASSIC
+				i(3173, {	-- Bear Meat
+					["coord"] = { 52.0, 40.4, SILVERPINE_FOREST },
+					["crs"] = {
+						1797,	-- Giant Grizzled Bear
+						1778,	-- Ferocious Grizzled Bear
+					},
+				}),
+				-- #endif
 				-- #if BEFORE 10.1.7
 				-- This was moved to Hillsbrad Foothills!
 				i(4767, {	-- Coppercloth Gloves

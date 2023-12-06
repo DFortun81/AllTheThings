@@ -1801,6 +1801,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
+				i(3173, {	-- Bear Meat
+					["coord"] = { 29.2, 53.0, LOCH_MODAN },
+					["crs"] = {
+						1186,	-- Elder Black Bear
+						1189,	-- Black Bear Patriarch
+						1188,	-- Grizzled Black Bear
+						1225,	-- Ol' Sooty
+					},
+				}),
 				i(769, {	-- Chunk of Boar Meat
 					["coord"] = { 37.0, 34.4, LOCH_MODAN },
 					["crs"] = {

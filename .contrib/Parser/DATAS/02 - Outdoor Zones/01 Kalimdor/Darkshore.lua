@@ -2597,6 +2597,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				-- #if ANYCLASSIC
+				i(3173, {	-- Bear Meat
+					["coord"] = { 48.6, 31.8, DARKSHORE },
+					["crs"] = {
+						2164,	-- Rabid Thistle Bear
+						2163,	-- Thistle Bear
+						2165,	-- Grizzled Thistle Bear
+					},
+				}),
+				-- #endif
 				i(5332, {	-- Glowing Cat Figurine
 					["cr"] = 3619,	-- Ghost Saber
 				}),
