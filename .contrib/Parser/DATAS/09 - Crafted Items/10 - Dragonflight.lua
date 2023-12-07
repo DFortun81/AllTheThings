@@ -934,7 +934,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			-- Artisan Curios
 			FirstCraft(74310, 400809, ADDED_10_0_7);	-- Glowing Crystal Bookmark
 			-- Infusions of Power
-			--FirstCraft(X, 414989, ADDED_10_2_0);	-- Enchanted Aspect's Dreaming Crest
+			FirstCraft(76543, 414989, ADDED_10_2_0);	-- Enchanted Aspect's Dreaming Crest
 			FirstCraft(75316, 406418, ADDED_10_1_0);	-- Enchanted Aspect's Shadowflame Crest
 			FirstCraft(76541, 414985, ADDED_10_2_0);	-- Enchanted Whelpling's Dreaming Crest
 			FirstCraft(75256, 406108, ADDED_10_1_0);	-- Enchanted Whelpling's Shadowflame Crest

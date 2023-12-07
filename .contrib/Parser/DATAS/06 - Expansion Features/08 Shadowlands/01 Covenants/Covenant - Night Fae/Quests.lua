@@ -77,6 +77,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = {
 					59071,	-- Mending a Broken Hart
 					60272,	-- The Weak Link (not 100% on this, but it's as far in the chain at which I am able to accept this)
+					62899,	-- The Endless Forest
 				},
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 161509 },	-- Lady Moonberry
@@ -576,6 +577,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 					62560,	-- Growing in Power (can be pre-completed due to covenant skip)
 					59071,	-- Mending a Broken Hart
 				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 158544 },	-- Lord Herne
 				["coord"] = { 40.9, 72.4, THE_TRUNK },
 			}),
