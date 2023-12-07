@@ -1138,7 +1138,8 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		prof(INSCRIPTION, {
 			i(45912, {	-- Book of Glyph Mastery
 				-- #if AFTER 6.0.1.18379
-				["sym"] = {{"select","spellID",165465}},	-- Research: Ink of the Sea
+				-- TODO: this spell is not sourced in Retail... it probably should be but I'm not sure where that's all being done currently
+				-- ["sym"] = {{"select","spellID",165465}},	-- Research: Ink of the Sea
 				-- #endif
 				["filterID"] = MISC,
 			}),
