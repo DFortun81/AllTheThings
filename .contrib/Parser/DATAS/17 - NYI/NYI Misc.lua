@@ -917,7 +917,6 @@ root(ROOTS.NeverImplemented, {
 				i(194680),	-- Jerky Surprise
 				i(196182),	-- Journal Entry
 				i(198840),	-- Kalecite Cluster
-				i(200772),	-- Knowledge Discs
 				i(199213),	-- Lakkamuk Blenny
 				i(200935),	-- Large Egg Shell
 				i(200778),	-- Lava Blowing for Dummies
@@ -941,7 +940,6 @@ root(ROOTS.NeverImplemented, {
 				i(200099),	-- M.R.E.
 				i(199103),	-- Nappa's Famous Tea
 				i(200948),	-- Obsidian Hunting Hook
-				i(200777),	-- Obsidian Shards
 				i(200595),	-- Odorous Parchment
 				i(200681),	-- Ohn Lite
 				i(191032),	-- Oily Fat

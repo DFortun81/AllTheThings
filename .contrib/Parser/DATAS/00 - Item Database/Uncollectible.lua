@@ -570,6 +570,8 @@ i(198390);	-- Milling
 i(201361);	-- Primal Inspiration
 i(194709);	-- Prospecting
 i(194973);	-- Reclaim Concoctions
+i(200772);	-- Knowledge Discs
+i(200777);	-- Obsidian Shards
 i(200825);	-- Assorted Debris
 
 ------------------
