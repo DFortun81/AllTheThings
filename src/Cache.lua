@@ -768,7 +768,7 @@ local function SearchForObject(field, id, require, allowMultiple)
 		-- if we're NOT searching for a plain itemID, we have to be more careful
 		local idBase = math_floor(id)
 		if idBase ~= id then
-			fcache = SearchForField("modItemID", id);
+			fcache = SearchForField("itemID", id);
 			-- if we found no specific modItemID results, then we can revert to basic itemID
 			if #fcache == 0 then
 				fcache = nil
