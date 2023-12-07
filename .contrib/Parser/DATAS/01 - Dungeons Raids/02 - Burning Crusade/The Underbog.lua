@@ -124,7 +124,9 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(24246),	-- Sanguine Hibiscus
+				i(24246, {	-- Sanguine Hibiscus
+					["provider"] = { "o", 183385 },	-- Sanguine Hibiscus
+				}),
 			}),
 			d(NORMAL_DUNGEON, {
 				e(576, {	-- Hungarfen
