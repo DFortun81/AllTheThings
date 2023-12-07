@@ -118,6 +118,10 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(c
 				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
 				["cost"] = 2214,	-- 22s 14c
 			}),
+			i(211384, {	-- Sturdy Courier Bag
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["cost"] = 19350,	-- 1g 93s 50c
+			}),
 			i(211386, {	-- Spell Notes: Arcane Surge
 				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
 				["classes"] = { MAGE },
@@ -197,7 +201,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(c
 			}),
 			i(210779, {	-- Plans: Mantle of the Second War
 				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-				["description"] = "WARNING: This is reported as bugged and you don't actually learn anything from this!",
 				["cost"] = 67500,	-- 6.75g
 			}),
 		},
