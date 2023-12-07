@@ -570,9 +570,25 @@ i(198390);	-- Milling
 i(201361);	-- Primal Inspiration
 i(194709);	-- Prospecting
 i(194973);	-- Reclaim Concoctions
+i(200768);	-- Assorted Salamanther Lures
+i(200769);	-- Ceramic Shards
 i(200772);	-- Knowledge Discs
+i(200773);	-- Otherworldly Artifact
 i(200777);	-- Obsidian Shards
+i(200780);	-- Dragon Horns
+i(200806);	-- Woodcarving Stone
+i(200820);	-- Dry Wood Log
+i(200822);	-- Jar of Ashes
 i(200825);	-- Assorted Debris
+i(200826);	-- Stored Humid Air
+i(200828);	-- Pocketed Clouds
+i(200835);	-- Sand Pouch
+i(200837);	-- So You Think You Can Rune?
+i(200838);	-- Insignia of the Kirin Tor
+i(200839);	-- Magical Cleaning Broom
+i(200840);	-- Encyclopaedia Draeconica Set
+i(200848);	-- Decorative Bouquet
+i(200849);	-- Tear of the Dreamer
 
 ------------------
 -- PATCH 10.0.2 --

@@ -799,7 +799,6 @@ root(ROOTS.NeverImplemented, {
 				i(192646),	-- Aqueous Speck
 				i(195455),	-- Argali Cheese
 				i(195459),	-- Argali Milk
-				i(200768),	-- Assorted Salamanther Lures
 				i(198141),	-- Astral Essence
 				i(200613),	-- Aylaag Windstone Fragment
 				i(200817),	-- Azure Splinters
@@ -821,7 +820,6 @@ root(ROOTS.NeverImplemented, {
 				i(200590),	-- Carefully Rolled Message
 				i(198688),	-- Catnip Leaf
 				i(200821),	-- Celsius 232
-				i(200769),	-- Ceramic Shards
 				i(200691),	-- Claw Thistle Barbs
 				i(199212),	-- Clubfish
 				i(200811),	-- Congealed Sap Droplet
@@ -842,7 +840,6 @@ root(ROOTS.NeverImplemented, {
 				i(200700),	-- Cuppressa Berries
 				i(192182),	-- Decay to Elements
 				i(200799),	-- Decaying Pelt Bolt
-				i(200848),	-- Decorative Bouquet
 				i(198541),	-- Depleted Violet Vapors
 				i(200815),	-- Deposited
 				i(191059),	-- Dilapidated Parchment: Top Half
@@ -851,21 +848,18 @@ root(ROOTS.NeverImplemented, {
 				i(194692),	-- Distilled Fish Juice
 				i(200262),	-- Do-It-Yourself Part Building Kit
 				i(200305),	-- Dracthyr Water Rations
-				i(200780),	-- Dragon Horns
 				i(199833),	-- Dragonhead Eel
 				i(191287),	-- Dragonscale Expedition Crate
 				i(194685),	-- Dragonspring Water
 				i(200850),	-- Dream-Infused Seed
 				i(199101),	-- Dried Wyldermane Kelp
 				i(200554),	-- Dropcap Head
-				i(200820),	-- Dry Wood Log
 				i(201722),	-- Edicts of the Prime Designate, Volume 742
 				i(194678),	-- Elemental Crystal
 				i(201327),	-- Emerald Dreamtime
 				i(195572),	-- Empty Elixir
 				i(197854),	-- Enchanted Argali Tenderloin
 				i(200685),	-- Enchanted Compass
-				i(200840),	-- Encyclopaedia Draeconica Set
 				i(200767),	-- Energized Crystal
 				i(200818),	-- Eternal Flame
 				i(200929),	-- Everglow Nectar
@@ -909,10 +903,8 @@ root(ROOTS.NeverImplemented, {
 				i(194693),	-- Improvised Sushi
 				i(200555),	-- Inferno Seeds
 				i(200620),	-- Inflaming Incense
-				i(200838),	-- Insignia of the Kirin Tor
 				i(200830),	-- Instantly Drying Clay
 				i(191244),	-- I.P.F. Mark 15
-				i(200822),	-- Jar of Ashes
 				i(198139),	-- Jeb's Underwear
 				i(194680),	-- Jerky Surprise
 				i(196182),	-- Journal Entry
@@ -924,7 +916,6 @@ root(ROOTS.NeverImplemented, {
 				i(200596),	-- Letter from Thaelin Darkanvil
 				i(200698),	-- Ley Orb
 				i(200702),	-- Magenta Titian Extract
-				i(200839),	-- Magical Cleaning Broom
 				i(197850),	-- Mammoth Dumpling
 				i(195457),	-- Mammoth Jerky
 				i(199205),	-- Manasucker
@@ -946,7 +937,6 @@ root(ROOTS.NeverImplemented, {
 				i(198456),	-- Oliveye Fry
 				i(200831),	-- Opalescent Figure
 				i(192181),	-- Order to Elements
-				i(200773),	-- Otherworldly Artifact
 				i(200844),	-- Overly Bent Bow
 				i(200553),	-- Panthis Nectar
 				i(200829),	-- Pareidolic Image
@@ -955,7 +945,6 @@ root(ROOTS.NeverImplemented, {
 				i(199104),	-- Piping-Hot Orca Milk
 				i(195456),	-- Plains Flatbread
 				i(196585),	-- Plainswheat Pretzel
-				i(200828),	-- Pocketed Clouds
 				i(200121),	-- Potion of Beginner's Luck
 				i(194718),	-- Premium Salamander Feed
 				i(200606),	-- Previously Owned Map
@@ -978,7 +967,6 @@ root(ROOTS.NeverImplemented, {
 				i(200796),	-- Rotting Wood Totem
 				i(199063),	-- Salted Fish Scraps
 				i(197858),	-- Salt-Baked Scalebelly
-				i(200835),	-- Sand Pouch
 				i(201379),	-- Scalewatch Cage Key
 				i(200619),	-- Scaralesh's Special
 				i(194887),	-- Scrap Trap
@@ -993,13 +981,11 @@ root(ROOTS.NeverImplemented, {
 				i(200764),	-- Slimy Shinies
 				i(191412),	-- Small Expedition Pick
 				i(199832),	-- Smoked Seaviper
-				i(200837),	-- So You Think You Can Rune?
 				i(200621),	-- Soothing Incense
 				i(199184),	-- Spellbound Bone Pipes
 				i(194686),	-- Spicy Musken Drummies
 				i(200477),	-- Stack of VIP Passes
 				i(200304),	-- Stored Dracthyr Rations
-				i(200826),	-- Stored Humid Air
 				i(195465),	-- Stormwing Egg Breakfast
 				i(200787),	-- Strong Exotic Spices
 				i(199074),	-- Studies of Arcane Magic
@@ -1013,7 +999,6 @@ root(ROOTS.NeverImplemented, {
 				i(198842),	-- Tallstrider Feather
 				i(200792),	-- Taxidermied Catch
 				i(194886),	-- Tazenrath's Torn Wing
-				i(200849),	-- Tear of the Dreamer
 				i(201436),	-- Temporally-Locked Sands
 				i(200693),	-- Terata Leaves
 				i(200594),	-- Thaelin's Second Favorite Comb
@@ -1040,7 +1025,6 @@ root(ROOTS.NeverImplemented, {
 				i(198486),	-- Windscale Rider
 				i(200623),	-- Wind-Grown Grass
 				i(200696),	-- Winter Berries
-				i(200806),	-- Woodcarving Stone
 				i(200810),	-- Wooden Stonegrabber Figurine
 				i(200807),	-- Wooden Ursine Figure
 				i(194742),	-- Worn Book
