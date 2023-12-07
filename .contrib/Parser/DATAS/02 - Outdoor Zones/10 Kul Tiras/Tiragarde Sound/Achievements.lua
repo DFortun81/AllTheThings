@@ -70,6 +70,40 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			ach(12939, {	-- Adventurer of Tiragarde Sound
 				["sym"] = {{ "achievement_criteria" }},
 			}),
+			ach(13050, {	-- Bless the Rains Down in Freehold
+				crit(41662, {		-- Banana Hoard
+					["coord"] = { 76.1, 84.6, TIRAGARDE_SOUND },
+					["_npcs"] = { 143855 },
+					["_quests"] = {
+						52159,	-- Swab This! [A]
+						53196,	-- Swab This! [H]
+					},
+				}),
+				crit(41663, {		-- Sweete's Feast
+					["coord"] = { 73.3, 83.9, TIRAGARDE_SOUND },
+					["_npcs"] = { 143827 },
+					["_quests"] = {
+						52159,	-- Swab This! [A]
+						53196,	-- Swab This! [H]
+					},
+				}),
+				crit(41664, {		-- Cart o' Cutlasses
+					["coord"] = { 75.0, 82.9, TIRAGARDE_SOUND },
+					["_npcs"] = { 143857 },
+					["_quests"] = {
+						52159,	-- Swab This! [A]
+						53196,	-- Swab This! [H]
+					},
+				}),
+				crit(41665, {		-- Blacktooth Brew
+					["coord"] = { 76.6, 81.8, TIRAGARDE_SOUND },
+					["_npcs"] = { 143840 },
+					["_quests"] = {
+						52159,	-- Swab This! [A]
+						53196,	-- Swab This! [H]
+					},
+				}),
+			}),
 			explorationAch(12556),	-- Explore Tiragarde Sound
 			petbattle(ach(13279, {	-- Family Battler
 				["collectible"] = false,
@@ -246,9 +280,30 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			})),
+			a(ach(13060, {	-- Kul Runnings
+				crit(41764, {		-- Sliding with Style
+					["_quests"] = { 49994 },	-- Sliding with Style
+				}),
+				crit(41766, {		-- Frozen Freestyle
+					["_quests"] = { 53188 },	-- Frozen Freestyle
+				}),
+				crit(41768, {		-- Slippery Slopes
+					["_quests"] = { 53189 },	-- Slippery Slopes
+				}),
+			})),
 			ach(13058, {	-- Kul Tiran Up the Dance Floor
 				["coord"] = { 50.27, 25.11, TIRAGARDE_SOUND },
 			}),
+			ach(12951, {	-- Proudmoore Admiralty
+				["races"] = ALLIANCE_ONLY,
+			}),
+			a(ach(13049, {	-- The Long Con
+				crit(41668),	-- Aged to Perfection
+				crit(41669),	-- Trixie Business
+				crit(41670),	-- Carentan's Payment
+				crit(41671),	-- A Bad Deal
+				crit(41666),	-- The Long Con
+			})),
 			pvp(ach(12577)),	-- Tour of Duty: Tiragarde Sound
 			ach(12852, {	-- Treasures of Tiragarde Sound
 				crit(41012, {	-- Hay Covered Chest
@@ -282,6 +337,21 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					["_quests"] = { 52845 },	-- Singed Treasure Map
 				}),
 			}),
+			a(achraw(13285, {	-- Upright Citizens
+				i(166247),		-- Citizens Brigade Whistle (TOY!)
+				crit(43718, {		-- Russel the Bard recruited
+					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
+					["coord"] = { 72.4, 68.9, BORALUS },
+				}),
+				crit(43719, {		-- Flynn Fairwind recruited
+					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
+					["coord"] = { 72.0, 61.6, BORALUS },
+				}),
+				crit(43720, {		-- Leeroy Jenkins recruited
+					["_quests"] = { 53704 },	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
+					["coord"] = { 66.8, 64.0, BORALUS },
+				}),
+			})),
 		}),
 	}),
 })));

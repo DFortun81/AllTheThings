@@ -183,6 +183,11 @@ root(ROOTS.Zones, {
 					faction(1387, {	-- Kirin Tor Offensive
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
+							n(ACHIEVEMENTS, {
+								ach(8208, {		-- Kirin Tor Offensive
+									["races"] = ALLIANCE_ONLY,
+								}),
+							}),
 							n(68000, {	-- Hiren Loresong <Kirin Tor Offensive Quartermaster>
 								["coord"] = { 64.6, 74.6, ISLE_OF_THUNDER },
 								["races"] = ALLIANCE_ONLY,
@@ -424,6 +429,11 @@ root(ROOTS.Zones, {
 					faction(1388, {	-- Sunreaver Onslaught
 						["races"] = HORDE_ONLY,
 						["g"] = {
+							n(ACHIEVEMENTS, {
+								ach(8209, {		-- Sunreaver Onslaught
+									["races"] = HORDE_ONLY,
+								}),
+							}),
 							n(67672, {	-- Vasarin Redmorn <Sunreaver Onslaught Quartermaster>
 								["coord"] = { 33.4, 32.4, ISLE_OF_THUNDER },
 								["races"] = HORDE_ONLY,

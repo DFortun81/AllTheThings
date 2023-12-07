@@ -297,6 +297,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				},
 			}),
+			ach(12948, {	-- Talanji's Expedition
+				["races"] = HORDE_ONLY,
+			}),
 			ach(11868, {	-- The Dark Heart of Nazmir
 				["races"] = HORDE_ONLY,
 				["g"] = {

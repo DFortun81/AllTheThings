@@ -26,6 +26,19 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				ach(14062, {	-- Horrific Vision of Stormwind
 					["maps"] = { 1470 },
 				}),
+				ach(14140, {	-- Mad World
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						14141,	-- Solo Nightmares - Stormwind
+						14142,	-- Solo Nightmares - Orgrimmar
+					}},
+					["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
+					["g"] = {
+						title(419, {	-- <Name>, the Faceless One
+							["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
+						}),
+					},
+				}),
 				ach(14143, {	-- Reeking of Visions
 					["sym"] = {{"meta_achievement",
 						14065,	-- The Even More Horrific Vision of Orgrimmar
@@ -34,6 +47,12 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					["groups"] = {
 						i(174463),	-- Reek (PET!)
 					},
+				}),
+				ach(14141, {	-- Solo Nightmares - Stormwind
+					["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
+				}),
+				ach(14142, {	-- Solo Nightmares - Orgrimmar
+					["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
 				}),
 				ach(14169, {	-- Symphony of Masks
 					ach(14165),	-- Masked Soliloquy

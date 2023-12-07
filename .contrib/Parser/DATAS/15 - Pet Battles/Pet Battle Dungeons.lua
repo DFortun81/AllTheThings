@@ -2,6 +2,18 @@
 --   P E T    B A T T L E    M O D U L E    --
 ----------------------------------------------
 root(ROOTS.PetBattles, petbattle(n(-795, bubbleDown({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pet Battle Dungeons
+	ach(14021, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {	-- The Shadows Revealed
+		["sym"] = {{ "meta_achievement",
+			11765,	-- Pet Battle Challenge: Wailing Caverns
+			11856,	-- Pet Battle Challenge: Deadmines
+			13269,	-- Pet Battle Challenge: Gnomeregan
+			13627,	-- Pet Battle Challenge: Stratholme
+			14020,	-- Pet Battle Challenge: Blackrock Depths
+		}},
+		["groups"] = {
+			i(174871),	-- Mayhem Mind Melder (TOY!)
+		},
+	})),
 	q(58458, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {	-- Pet Battle Challenge: Blackrock Depths
 		["provider"] = { "n", 161782 },	-- Burt Macklyn
 		["coord"] = { 33.1, 23.1, BLACKROCK_MOUNTAIN_LEVEL3 },

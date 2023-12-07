@@ -482,6 +482,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			})),
+			ach(12952, {	-- Order of Embers
+				["races"] = ALLIANCE_ONLY,
+			}),
 			ach(13087, {	-- Sausage Sampler
 				["description"] = "Can be completed as Horde by purchasing items on the AH.",
 				["g"] = {

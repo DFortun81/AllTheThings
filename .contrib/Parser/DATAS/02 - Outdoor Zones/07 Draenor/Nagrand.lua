@@ -155,6 +155,11 @@ root(ROOTS.Zones, {
 					faction(1711, {	-- Steamwheedle Preservation Society
 						["crs"] = { 87394 },	-- Kwilax Fuseshiv <Reputation Vendor>
 						["g"] = {
+							n(ACHIEVEMENTS, {
+								ach(9472, {		-- Steamwheedle Preservation Society
+									title(284),		-- "Conservationist" <Name>
+								}),
+							}),
 							n(QUESTS, {
 								q(37125, {	-- A Rare Find
 									["provider"] = { "n", 87393 },	-- Sallee Silverclamp

@@ -8,6 +8,145 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 	["maps"] = { DEEPRUN_TRAM },
 	["icon"] = "Interface\\Icons\\ability_warrior_secondwind",
 	["groups"] = {
+		n(ACHIEVEMENTS, {
+			ach(7944, {		-- Bottle Service (Season 2)
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+			}),
+			ach(13191, {	-- Brawler for Azeroth
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
+				["g"] = {
+					title(209, {	-- Brawler <Name>
+						["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
+					}),
+				}
+			}),
+			ach(7941, {		-- Brawlin' and Shot Callin' (Season 1)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+			}),
+			ach(9170, {		-- Brawlin' and Shot Callin' (Season 2)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+			}),
+			ach(8339, {		-- Collect Your Deck (Season 2)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+			}),
+			ach(8340, {		-- Deck Your Collection (Season 1)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_5_3_0, REMOVED_6_0_2 },
+				["g"] = {
+					i(98543, {	-- Wraps of the Blood-Soaked Brawler
+						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+					}),
+				},
+			}),
+			ach(9176, {		-- Deck Your Collection (Season 2)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+				["g"] = {
+					i(98543, {	-- Wraps of the Blood-Soaked Brawler
+						["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+					}),
+				},
+			}),
+			ach(11570, {	-- Educated Guesser
+				["timeline"] = { ADDED_7_1_5, REMOVED_8_0_1 },
+			}),
+			ach(7945, {		-- Haters Gonna Hate (Season 2)
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+			}),
+			ach(8335, {		-- Having a Brawl (Season 1)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_5_3_0, REMOVED_6_0_2 },
+			}),
+			ach(13194, {	-- I Am Thrall's Complete Lack Of Surprise
+				["timeline"] = { ADDED_7_1_5, REMOVED_8_1_5 },
+			}),
+			ach(11572, {	-- I Am Thrall's Complete Lack Of Surprise (Season 3)
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
+			ach(7943, {		-- I'm Your Number One Fan (Season 2)
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+			}),
+			ach(8336, {		-- I've Got the Biggest Brawls of Them All (Season 1)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_5_3_0, REMOVED_6_0_2 },
+			}),
+			ach(11565, {	-- King of the Guild (Season 3)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
+			ach(7946, {		-- Now You're Just Showing Off (Season 1)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+			}),
+			ach(9171, {		-- Now You're Just Showing Off (Season 2)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+			}),
+			ach(7949, {		-- Rabble Rabble Rabble (Season 2)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
+			}),
+			ach(11573, {	-- Rumble Club
+			 	["timeline"] = { ADDED_7_1_5, REMOVED_9_1_5 },
+			}),
+			ach(7947, {		-- The First Rule of Brawler's Guild (Season 1 or 2)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_5_1_0, REMOVED_7_0_3 },
+			}),
+			ach(11558, {	-- The First Rule of Brawler's Guild
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_7_2_0, REMOVED_9_1_5 },
+			}),
+			ach(7940, {		-- The Second Rule of Brawler's Guild (Season 1)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+			}),
+			ach(9169, {		-- The Second Rule of Brawler's Guild (Season 2)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+				["g"] = {
+					i(93195, {	-- Brawler's Pass
+						["timeline"] = { ADDED_5_1_0, REMOVED_9_1_5 },
+					}),
+				}
+			}),
+			ach(11563, {	-- The Second Rule of Brawler's Guild (Season 3)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
+			ach(13189, {	-- The Second Rule of Brawler's Guild
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
+				["g"] = {
+					i(93195, {	-- Brawler's Pass
+						["timeline"] = { ADDED_5_1_0, REMOVED_9_1_5 },
+					}),
+				}
+			}),
+			ach(7937, {		-- You Are Not Your $#*@! Legplates (Season 1)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+			}),
+			ach(9168, {		-- You Are Not Your $#*@! Legplates (Season 2)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+			}),
+			ach(11560, {	-- You Are Not Your $#*@! Legplates (Season 3)
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1 },
+			}),
+			ach(13186, {	-- You Are Not Your $#*@! Legplates
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_8_1_5, REMOVED_9_1_5 },
+			}),
+			ach(11567, {	-- You Are Not The Contents Of Your Wallet
+				["timeline"] = { ADDED_7_1_5, REMOVED_9_1_5 },
+			}),
+		}),
 		n(FACTIONS, sharedData({
 			["races"] = ALLIANCE_ONLY,
 		},{

@@ -22,6 +22,7 @@ root(ROOTS.Zones, {
 						crit(19799),	-- Amber (Dread Wastes)
 						crit(19800),	-- The Empress (Dread Wastes)
 					}),
+					ach(6545),	-- Klaxxi
 					ach(7316, {	-- Over Their Heads
 						crit(20511, {		-- Garalon
 							["crs"] = { 63667 },
@@ -101,6 +102,16 @@ root(ROOTS.Zones, {
 						crit(20960),	-- Battle Hymn
 					}),
 					ach(7314),	-- Test Drive
+					ach(8023, {		-- Wakener
+						-- Meta Achievement
+						["sym"] = {{"meta_achievement",
+							7312,		-- Amber is the Color of My Energy
+							6545,		-- Klaxxi
+						}},
+						["g"] = {
+							title(218),		-- <Name> the Wakener
+						},
+					}),
 				}),
 				battlepets({
 					["sym"] = {{"select","speciesID",

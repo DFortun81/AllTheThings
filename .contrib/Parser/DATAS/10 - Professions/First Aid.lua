@@ -26,6 +26,9 @@ profession(FIRST_AID, {
 		recipe(27033),	-- Heavy Nethercloth Bandage
 	})),
 	applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
+		ach(135, {	-- Grand Master in First Aid
+			["timeline"] = { ADDED_3_0_2, REMOVED_8_0_1 },
+		}),
 		recipe(45545),	-- Frostweave Bandage
 		recipe(45546),	-- Heavy Frostweave Bandage
 	})),

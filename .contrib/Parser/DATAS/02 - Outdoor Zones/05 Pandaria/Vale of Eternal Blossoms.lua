@@ -16,8 +16,32 @@ root(ROOTS.Zones, {
 					ach(7318),	-- A Taste of History
 					ach(7323),	-- Collateral Damage
 					ach(7320),	-- Dog Pile
+					ach(7315, {	-- Eternally in the Vale
+						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
+					}),
 					explorationAch(6979),	-- Explore Vale of Eternal Blossoms
-					ach(7317),	-- One Many Army
+					ach(7317, {		-- One Many Army
+						crit(20517),		-- Cracklefang
+						crit(20518),		-- Vicejaw
+						crit(20519),		-- General Temuja
+						crit(20520),		-- Shadowmaster Sydow
+						crit(20521, {		-- Aetha
+							["crs"] = { 58778 },
+						}),
+						crit(20522, {		-- Quid
+							["crs"] = { 58771 },
+						}),
+						crit(20523),		-- Spirit of Lao-Fe
+						crit(20524),		-- Baolai the Immolator
+						crit(20525),		-- Gaohun the Soul-Severer
+						crit(20526),		-- Bloodtip
+						crit(20527),		-- Wulon
+						crit(20528),		-- Gochao the Ironfist
+						crit(20529),		-- Huo-Shuang
+						crit(20530),		-- Bai-Jin the Butcher
+						crit(20531),		-- Kri'chon
+						crit(20532),		-- Vyraxxis
+					}),
 					ach(7324, {	-- One Step at a Time
 						["sym"] = {{ "achievement_criteria" }},
 					}),
@@ -25,6 +49,8 @@ root(ROOTS.Zones, {
 						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(7322),	-- Roll Club
+					ach(6546),	-- The Golden Lotus
+					ach(6548),	-- The Lorewalkers
 				}),
 				battlepets({
 					pet(751),	-- Dancing Water Skimmer (PET!)
@@ -1349,7 +1375,7 @@ root(ROOTS.Zones, {
 							i(103624),	-- Treasures of the Vale
 						},
 					}),
-					n(63510, {	-- Wulon
+					n(63509, {	-- Wulon
 						["coords"] = {
 							{ 45.3, 76.3, VALE_OF_ETERNAL_BLOSSOMS },
 							{ 40.2, 77.1, VALE_OF_ETERNAL_BLOSSOMS },

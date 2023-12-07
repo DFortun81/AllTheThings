@@ -32,6 +32,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 				["lvl"] = { 50 },
 				["g"] = {
 					n(ACHIEVEMENTS, {
+						ach(12955),		-- Champions of Azeroth
 						pvp(ach(13775, {	-- Essence Overload
 							ach(13772),	-- Essence Essentials
 							ach(13773),	-- Essence Gains

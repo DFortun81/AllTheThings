@@ -239,6 +239,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					["crs"] = { 139359 },
 				}),
 			}),
+			ach(12953, {	-- Storm's Wake
+				["races"] = ALLIANCE_ONLY,
+			}),
 			ach(12496, {	-- Stormsong and Dance
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -269,6 +272,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				},
 			}),
 			ach(13046),		-- These Hills Sing
+			ach(12956),		-- Tortollan Seekers
 			pvp(ach(12578)),	-- Tour of Duty: Stormsong Valley
 			ach(12853, {	-- Treasures of Stormsong Valley
 				-- TODO: _quests on crits / move objects to /Treasures.lua

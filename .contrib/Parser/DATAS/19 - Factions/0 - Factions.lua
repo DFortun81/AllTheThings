@@ -36,6 +36,7 @@ root(ROOTS.Factions, {
 			faction(1174),	-- Wildhammer Clan
 		})),
 		tier(MOP_TIER, sharedData({["races"] = ALLIANCE_ONLY,}, {
+			faction(1419),	-- Bizmo's Brawlpub (Season 1)
 			faction(1376),	-- Operation: Shieldwall
 			faction(1242),	-- Pearlfin Jinyu
 		})),
@@ -82,6 +83,7 @@ root(ROOTS.Factions, {
 			faction(1172),	-- Dragonmaw Clan
 		})),
 		tier(MOP_TIER, sharedData({["races"] = HORDE_ONLY,}, {
+			faction(1374),	-- Brawl'gar Arena (Season 1)
 			faction(1375),	-- Dominance Offensive
 			faction(1228),	-- Forest Hozen
 		})),

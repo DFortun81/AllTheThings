@@ -219,7 +219,22 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			-- #endif
 		},
 	})),
-	ach(611, {	-- Bleeding Bloodhoof
+	ach(5542, {		-- 1000 Conquest Points
+		["timeline"] = { ADDED_3_0_2, REMOVED_7_0_3 },
+	}),
+	ach(5541, {		-- 5000 Conquest Points
+		["timeline"] = { ADDED_3_0_2, REMOVED_7_0_3 },
+	}),
+	ach(5540, {		-- 25,000 Conquest Points
+		["timeline"] = { ADDED_3_0_2, REMOVED_7_0_3 },
+	}),
+	ach(5539, {		-- 50,000 Conquest Points
+		["timeline"] = { ADDED_3_0_2, REMOVED_7_0_3 },
+	}),
+	ach(11468, {	-- Alive for Five
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(611, {		-- Bleeding Bloodhoof
 		["providers"] = {
 			-- #if AFTER CATA
 			{ "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
@@ -230,6 +245,16 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["timeline"] = { "added 3.0.1", REMOVED_9_0_1 },
 		["maps"] = { THUNDER_BLUFF },
 		["races"] = ALLIANCE_ONLY,
+	}),
+	ach(449, {		-- Blood Guard
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(21, {	-- Blood Guard <Name>
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
 	}),
 	applyclassicphase(PHASE_TWO, ach(727, {	-- Call in the Cavalry
 		["providers"] = {
@@ -266,13 +291,56 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["timeline"] = { "added 3.0.1" },
 		["races"] = HORDE_ONLY,
 	})),
-	ach(388, {	-- City Defender (Alliance)
+	ach(12180, {	-- Catching Twenty-Two
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(448, {		-- Centurion
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(23, {	-- Centurion <Name>
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(447, {		-- Champion
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(24, {	-- Champion <Name>
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(388, {		-- City Defender (Alliance)
 		["timeline"] = { "added 3.0.1" },
 		["races"] = ALLIANCE_ONLY,
 	}),
-	ach(1006, {	-- City Defender (Horde)
+	ach(1006, {		-- City Defender (Horde)
 		["timeline"] = { "added 3.0.1" },
 		["races"] = HORDE_ONLY,
+	}),
+	ach(435, {		-- Commander
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(11, {	-- Commander <Name>
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(470, {		-- Corporal
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(2, {	-- Corporal <Name>
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
 	}),
 	pvp(ach(14519, bubbleDownSelf({["timeline"] = ADDED_9_0_2_LAUNCH },{	-- Covenant Combat
 		crit(49222),	-- Venthyr
@@ -280,18 +348,42 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		crit(49224),	-- Necrolord
 		crit(49225),	-- Kyrian
 	}))),
-	ach(227, {	-- Damage Control
+	ach(11167, {	-- Crest of Carnage (Alliance)
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(11168, {	-- Crest of Carnage (Horde)
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(11169, {	-- Crest of Devastation (Alliance)
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(11170, {	-- Crest of Devastation (Horde)
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(11165, {	-- Crest of Heroism (Alliance)
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(11166, {	-- Crest of Heroism (Horde)
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(227, {		-- Damage Control
 		["timeline"] = { "added 3.0.1" },
 	}),
 	-- #if BEFORE CATA
-	ach(616, {	-- Death to the King! [WRATH] / Overthrow the Council [CATA+]
+	ach(616, {		-- Death to the King! [WRATH] / Overthrow the Council [CATA+]
 		["provider"] = { "n", 2784 },	-- King Magni Bronzebeard <Lord of Ironforge>
 		["timeline"] = { "added 3.0.1" },
 		["maps"] = { IRONFORGE },
 		["races"] = HORDE_ONLY,
 	}),
 	-- #endif
-	ach(610, {	-- Death to the Warchief!
+	ach(610, {		-- Death to the Warchief!
 		-- #if AFTER 6.0.3
 		["provider"] = { "n", 86832 },	-- Vol'jin <Warchief>
 		-- #elseif AFTER 4.0.3
@@ -303,7 +395,22 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["maps"] = { ORGRIMMAR },
 		["races"] = ALLIANCE_ONLY,
 	}),
-	ach(612, {	-- Downing the Dark Lady
+	ach(11685, {	-- Decade of Dominance
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(12182, {	-- Demonic Double Dozen
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(11687, {	-- Demonic Dozen
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(11471, {	-- Don't Hate, Grind to Eight
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(12108, {	-- Double Decade of Dominance
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(612, {		-- Downing the Dark Lady
 		["providers"] = {
 			-- #if AFTER 8.0.1
 			{ "n", 134711 },	-- Lady Sylvanas Windrunner <Warchief>
@@ -321,15 +428,47 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		},
 		["races"] = ALLIANCE_ONLY,
 	}),
-	ach(1157, {	-- Duel-icious
+	ach(1157, {		-- Duel-icious
 		["timeline"] = { "added 3.0.1" },
+	}),
+	ach(11693, {	-- Eighteen and Over
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 	}),
 	ach(14815, {	-- Executing the Exarch
 		["provider"] = { "n", 175137 },	-- High Exarch Turalyon <Lord Commander of Alliance Forces>
 		["timeline"] = { ADDED_9_0_1 },
 		["races"] = HORDE_ONLY,
 	}),
-	ach(614, {	-- For The Alliance!
+	ach(434, {		-- Field Marshal
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(13, {	-- Field Marshal <Name>
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(452, {		-- First Sergeant
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(19, {	-- First Sergeant <Name>
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(10991, {	-- First Step into a Larger World
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(11688, {	-- Floor Thirteen
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(10995, {	-- For Prestige
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(614, {		-- For The Alliance!
 		["sym"] = {{"meta_achievement",
 			-- #if AFTER 9.0.1
 			-- Patch 9.0.1 (2020-10-13): [Bleeding Bloodhoof] removed and [Opposing Orgrimmar] added.
@@ -360,7 +499,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
-	ach(619, {	-- For The Horde!
+	ach(619, {		-- For The Horde!
 		["sym"] = {{"meta_achievement",
 			-- #if AFTER 9.0.1
 			-- Patch 9.0.1 (2020-10-13): [Storming Stormwind] removed and replaced with [Executing the Exarch].
@@ -384,26 +523,111 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
-	ach(701, {	-- Freedom of the Alliance
+	ach(11689, {	-- Fourteen for the Team
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(701, {		-- Freedom of the Alliance
 		-- TODO: Add providers and make accessible to classic
 		["timeline"] = { "added 3.0.1" },
 		["races"] = ALLIANCE_ONLY,
 	}),
-	ach(700, {	-- Freedom of the Horde
+	ach(700, {		-- Freedom of the Horde
 		-- TODO: Add providers and make accessible to classic
 		["timeline"] = { "added 3.0.1" },
 		["races"] = HORDE_ONLY,
 	}),
+	ach(446, {		-- General
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(26, {	-- General <Name>
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(11692, {	-- Going On Seventeen
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(433, {		-- Grand Marshal
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(14, {	-- Grand Marshal <Name>
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(8382, {		-- Grievous Conquest (Alliance)
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 },
+	}),
+	ach(8381, {		-- Grievous Conquest (Horde)
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 },
+	}),
+	ach(468, {		-- Grunt
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(16, {	-- Grunt <Name>
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(11472, {	-- Hell, It's About Nine
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(11694, {	-- Hell, It's About Nineteen
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(10992, {	-- Here We Go Again
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(9214, {		-- Hero of Stormshield
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_6_0_2, REMOVED_8_0_1 },
+		["minReputation"] = { 1682, EXALTED },	-- Wrynn's Vanguard
+	}),
+	ach(9215, {		-- Hero of Warspear
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_6_0_2, REMOVED_8_0_1 },
+		["minReputation"] = { 1681, EXALTED },	-- Vol'jin's Spear
+	}),
+	ach(406, {		-- High Five: 1550
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_2_0 },
+	}),
+	ach(407, {		-- High Five: 1750
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_2_0 },
+	}),
+	ach(404, {		-- High Five: 2000
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_2_0 },
+	}),
+	ach(1161, {		-- High Five: 2200
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_2_0 },
+	}),
+	ach(443, {		-- High Warlord
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(28, {	-- High Warlord <Name>
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
 	ach(10561, {	-- Honorable Medallion
 		["timeline"] = { "added 7.0.3" },
 	}),
-	ach(617, {	-- Immortal No More
+	ach(617, {		-- Immortal No More
 		["provider"] = { "n", 7999 },	-- Tyrande Whisperwind <High Priestess of Elune>
 		["timeline"] = { "added 3.0.1", "removed 8.0.1" },
 		["maps"] = { DARNASSUS },
 		["races"] = HORDE_ONLY,
 	}),
-	ach(8052, {	-- Khan (A)
+	ach(8052, {		-- Khan (A)
 		["sym"] = {{"meta_achievement",
 			5258,	-- Master of the Battle for Gilneas
 			3857,	-- Master of Isle of Conquest
@@ -419,7 +643,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
-	ach(8055, {	-- Khan (H)
+	ach(8055, {		-- Khan (H)
 		["sym"] = {{"meta_achievement",
 			5258,	-- Master of the Battle for Gilneas
 			3957,	-- Master of Isle of Conquest
@@ -435,24 +659,117 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
-	ach(613, {	-- Killed in Quel'Thalas
+	ach(613, {		-- Killed in Quel'Thalas
 		["provider"] = { "n", 16802 },	-- Lor'themar Theron <Regent Lord of Quel'Thalas>
 		["timeline"] = { "added 3.0.1" },
 		["maps"] = { SILVERMOON_CITY },
 		["races"] = ALLIANCE_ONLY,
 	}),
-	ach(246, {	-- Know Thy Enemy (Alliance)
+	ach(439, {		-- Knight
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(6, {	-- Knight <Name>
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(438, {		-- Knight-Captain
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(8, {	-- Knight-Captain <Name>
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(437, {		-- Knight-Champion
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(9, {	-- Knight-Champion <Name>
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(472, {		-- Knight-Lieutenant
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(7, {	-- Knight-Lieutenant <Name>
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(246, {		-- Know Thy Enemy (Alliance)
 		["sym"] = {{ "achievement_criteria" }},
 		["timeline"] = { "added 3.0.1" },
 		["races"] = ALLIANCE_ONLY,
 	}),
-	ach(1005, {	-- Know Thy Enemy (Horde)
+	ach(1005, {		-- Know Thy Enemy (Horde)
 		["sym"] = {{ "achievement_criteria" }},
 		["timeline"] = { "added 3.0.1" },
 		["races"] = HORDE_ONLY,
 	}),
-	ach(247, {	-- Make Love, Not Warcraft
+	ach(409, {		-- Last Man Standing
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_2_0 },
+	}),
+	ach(469, {		-- Legionnaire
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(22, {	-- Legionnaire <Name>
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(436, {		-- Lieutenant Commander
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(10, {	-- Lieutenant Commander <Name>
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(444, {		-- Lieutenant General
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(25, {	-- Lieutenant General <Name>
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(247, {		-- Make Love, Not Warcraft
 		["timeline"] = { "added 3.0.1" },
+	}),
+	ach(473, {		-- Marshal
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(12, {	-- Marshal <Name>
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(441, {		-- Master Sergeant
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(4, {	-- Master Sergeant <Name>
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
 	}),
 	ach(14817, {	-- Opposing Orgrimmar
 		["provider"] = { "n", 175135 },	-- Rokhan <Darkspear Chieftain>
@@ -467,7 +784,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["races"] = ALLIANCE_ONLY,
 	}),
 	-- #if AFTER CATA
-	ach(616, {	-- Overthrow the Council [CATA+] / Death to the King! [WRATH]
+	ach(616, {		-- Overthrow the Council [CATA+] / Death to the King! [WRATH]
 		["providers"] = {
 			{ "n", 42129 },	-- Moira Thaurissan <Dark Iron Representative>
 			{ "n", 42131 },	-- Falstad Wildhammer <Wildhammer Clan Representative>
@@ -478,13 +795,122 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["races"] = HORDE_ONLY,
 	}),
 	-- #endif
-	ach(618, {	-- Putting Out the Light
+	ach(10537, {	-- Patron of War
+		["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
+		["g"]= {
+			title(326, {	-- <Name>, Patron of War
+				["description"] = "Connect Twitch and Battle.net accounts and watch tournament streams",
+				["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
+			}),
+		},
+	}),
+	ach(12183, {	-- Prestige Quartermaster
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(8451, {		-- Prideful Conquest (Alliance)
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+	}),
+	ach(8450, {		-- Prideful Conquest (Horde)
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
+	}),
+	ach(9234, {		-- Primal Conquest (Alliance)
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_6_0_2, REMOVED_6_2_0 },
+	}),
+	ach(9233, {		-- Primal Conquest (Horde)
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_6_0_2, REMOVED_6_2_0 },
+	}),
+	ach(618, {		-- Putting Out the Light
 		["provider"] = { "n", 17468 },	-- Prophet Velen
 		["timeline"] = { "added 3.0.1" },
 		["maps"] = { THE_EXODAR },
 		["races"] = HORDE_ONLY,
 	}),
-	ach(615, {	-- Storming Stormwind
+	ach(442, {		-- Private
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(1, {	-- Private <Name>
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(454, {		-- Scout
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(15, {	-- Scout <Name>
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(450, {		-- Senior Sergeant
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(18, {	-- Senior Sergeant <Name>
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(471, {		-- Sergeant (Alliance)
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(3, {	-- Sergeant <Name>
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(453, {		-- Sergeant (Horde)
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(17, {	-- Sergeant <Name>
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(440, {		-- Sergeant Major
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(5, {	-- Sergeant Major <Name>
+				["races"] = ALLIANCE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(14191, {	-- Servant of N'Zoth
+		["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
+		["g"] = {
+			title(414, {	-- <Name>, Servant of N'Zoth
+				["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
+			}),
+		},
+	}),
+	ach(11470, {	-- Slayin' to Seven
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(451, {		-- Stone Guard
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(20, {	-- Stone Guard <Name>
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(615, {		-- Storming Stormwind
 		["providers"] = {
 			-- #if AFTER 7.0.3
 			{ "n", 107574 },	-- Anduin Wrynn
@@ -496,9 +922,17 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["maps"] = { STORMWIND_CITY },
 		["races"] = HORDE_ONLY,
 	}),
-	ach(245, {	-- That Takes Class
+	ach(245, {		-- That Takes Class
 		["sym"] = {{ "achievement_criteria" }},
 		["timeline"] = { "added 3.0.1" },
+	}),
+	ach(1174, {		-- The Arena Master
+		["timeline"] = { ADDED_3_0_2, REMOVED_7_0_3 },
+		["g"] = {
+			title(50, {	-- Arena Master <Name>
+				["timeline"] = { ADDED_3_0_2, REMOVED_7_0_3 },
+			}),
+		},
 	}),
 	applyclassicphase(PHASE_TWO, ach(714, {	-- The Conqueror
 		-- #if BEFORE 3.0.1
@@ -522,7 +956,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			})),
 		},
 	})),
-	ach(229, {	-- The Grim Reaper
+	ach(229, {		-- The Grim Reaper
 		["timeline"] = { "added 3.0.1" },
 	}),
 	applyclassicphase(PHASE_TWO, ach(907, {	-- The Justicar
@@ -547,7 +981,83 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			})),
 		},
 	})),
-	ach(604, {	-- Wrath of the Alliance
+	ach(10743, {	-- The Prestige (A)
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(10745, {	-- The Prestige (H)
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(11469, {	-- The River Six
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(11686, {	-- These Go To Eleven
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(10993, {	-- Third Time's The Charm
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(10988, {	-- Top Honors (A)
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(10990, {	-- Top Honors (H)
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(8392, {		-- Tournament Glory 2013
+		["timeline"] = { ADDED_5_3_0, REMOVED_5_4_0 },
+		["g"] = {
+			title(128, {		-- Vanquisher
+				["timeline"] = { ADDED_5_3_0, REMOVED_5_4_0 },
+			}),
+		},
+	}),
+	ach(8391, {		-- Tournament Participation 2013
+		["timeline"] = { ADDED_5_3_0, REMOVED_5_4_0 },
+	}),
+	ach(12109, {	-- Twenty-One Arms Salute
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(8218, {		-- Tyrannical Conquest (Alliance)
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
+	}),
+	ach(8093, {		-- Tyrannical Conquest (Horde)
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
+	}),
+	ach(445, {		-- Warlord
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2 },
+		["g"] = {
+			title(27, {	-- Warlord <Name>
+				["races"] = HORDE_ONLY,
+				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+			}),
+		},
+	}),
+	ach(10091, {	-- Warmongering Conquest (A)
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },
+	}),
+	ach(10090, {	-- Warmongering Conquest (H)
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },
+	}),
+	ach(11690, {	-- When You're Fifteen
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
+	ach(10089, {	-- Wild Conquest (A)
+		["races"] = ALLIANCE_ONLY,
+		["timeline"] = { ADDED_6_2_0, REMOVED_6_2_2 },
+	}),
+	ach(10088, {	-- Wild Conquest (H)
+		["races"] = HORDE_ONLY,
+		["timeline"] = { ADDED_6_2_0, REMOVED_6_2_2 },
+	}),
+	ach(604, {		-- Wrath of the Alliance
 		["timeline"] = { "added 3.0.1" },
 		["races"] = ALLIANCE_ONLY,
 		-- #if NOT ANYCLASSIC
@@ -560,7 +1070,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		},
 		-- #endif
 	}),
-	ach(603, {	-- Wrath of the Horde
+	ach(603, {		-- Wrath of the Horde
 		["timeline"] = { "added 3.0.1" },
 		["races"] = HORDE_ONLY,
 		-- #if NOT ANYCLASSIC
@@ -573,7 +1083,10 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		},
 		-- #endif
 	}),
-	ach(231, {	-- Wrecking Ball
+	ach(231, {		-- Wrecking Ball
 		["timeline"] = { "added 3.0.1" },
+	}),
+	ach(11691, {	-- You Are Sixteen
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 	}),
 })));

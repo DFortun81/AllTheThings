@@ -86,6 +86,9 @@ root(ROOTS.Zones, {
 								ach(7292, {	-- Green Acres
 									["sourceQuests"] = { 30256 },	-- Learn and Grow IV: Harvesting (while on this quest)
 								}),
+								ach(6544, {		-- The Tillers
+									title(195),		-- Farmer <Name>
+								}),
 							}),
 							faction(1277, {	-- Chee Chee
 								["cr"] = 58709,	-- Chee Chee

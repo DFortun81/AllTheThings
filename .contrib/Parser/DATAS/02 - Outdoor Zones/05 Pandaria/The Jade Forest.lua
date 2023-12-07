@@ -74,6 +74,9 @@ root(ROOTS.Zones, {
 						--	TODO:
 							-- verify if the following dailies exist independent of completion of other dailies:
 								-- Pooped (31716), got credit for this + the 31704 version of "Pooped" when completing 30150, "Sweet as Honey" *** MUST STILL HAVE A HATCHLING ***
+							n(ACHIEVEMENTS, {
+								ach(6550),		-- Order of the Cloud Serpent
+							}),
 							n(QUESTS, {
 								q(30149, {	-- A Feast for the Senses
 									["minReputation"] = { 1271, HONORED },

@@ -29,6 +29,14 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},
 					}),
+					ach(9471, {		-- Frostwolf Orcs
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							title(282, {	-- <Name> of the Frostwolves
+								["races"] = HORDE_ONLY,
+							}),
+						},
+					}),
 					ach(9529, {	-- On the Shadow's Trail [H]
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34295,	-- To Capture Gul'Dan

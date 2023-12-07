@@ -643,6 +643,7 @@ root(ROOTS.Zones, {
 				})),
 				n(ACHIEVEMENTS, {
 					ach(8716),	-- Emissary of Ordos
+					ach(8715),	-- Emperor Shaohao
 					ach(8726),	-- Extreme Treasure Hunter
 					ach(8725, {	-- Eyes On The Ground
 						crit(24011, { 	-- Giant Clam

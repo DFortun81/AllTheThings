@@ -329,6 +329,20 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 				["coord"] = { 33.3, 25.0, KRASARANG_WILDS },
 			}),
 		}),
+		petbattle(ach(8519, {	-- Celestial Family
+			crit(23600, {	-- Xu-Fu, Cub of Xuen
+				["provider"] = { "i", 101771 },
+			}),
+			crit(23719, {	-- Chi-Chi, Hatchling of Chi-Ji
+				["provider"] = { "i", 102145 },
+			}),
+			crit(23720, {	-- Yu'la, Broodling of Yu'lon
+				["provider"] = { "i", 102147 },
+			}),
+			crit(23721, {	-- Zao, Calfling of Niuzao
+				["provider"] = { "i", 102146 },
+			}),
+		})),
 		ach(7285),	-- Every Day I'm Pand-a-ren
 		ach(6846, {	-- Fish Tales
 			crit(19768),	-- Watersmithing (Jade Forest)
@@ -358,6 +372,55 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 			crit(20416),	-- Xin Wo Yin the Broken Hearted (Jade Forest)
 			crit(20417),	-- Ren Yun the Blind (Kun-Lai Summit)
 		}),
+		petbattle(ach(8518, {	-- Master of the Master
+			crit(23620),	-- Blingtron 4000
+			crit(23610),	-- Wrathion
+			crit(23611),	-- Lorewalker Cho
+			crit(23616),	-- Chen Stormstout
+			crit(23619),	-- Wise Mari
+			crit(23607),	-- Shademaster Kiryn
+			crit(23617),	-- Sully "The Pickle" McLeary
+			crit(23618),	-- Taran Zhu
+			crit(23621),	-- Dr. Ion Goldbloom
+			crit(23612),	-- Xu-Fu, Cub of Xuen
+			crit(23615),	-- Chi-Chi, Hatchling of Chi-Ji
+			crit(23614),	-- Zao, Calfling of Niuzao
+			crit(23613),	-- Yu'la, Broodling of Yu'lon
+		})),
+		ach(6828, {		-- Pandaren Ambassador (Alliance)
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				i(89785, {		-- Pandaren Kite (A) (MOUNT!)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				crit(19389),		-- Golden Lotus
+				crit(19388),		-- The August Celestials
+				crit(18993),		-- Shado-Pan
+				crit(19390),		-- The Klaxxi
+				crit(19393),		-- The Lorewalkers
+				crit(19392),		-- The Anglers
+				crit(19391),		-- The Tillers
+				crit(19395),		-- Order of the Cloud Serpent
+				crit(19481),		-- Tushui Pandaren
+			},
+		}),
+		ach(6827, {		-- Pandaren Ambassador (Horde)
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				i(81559, {		-- Pandaren Kite (H) (MOUNT!)
+					["races"] = HORDE_ONLY,
+				}),
+				crit(19389),		-- Golden Lotus
+				crit(19388),		-- The August Celestials
+				crit(18993),		-- Shado-Pan
+				crit(19390),		-- The Klaxxi
+				crit(19393),		-- The Lorewalkers
+				crit(19392),		-- The Anglers
+				crit(19391),		-- The Tillers
+				crit(19395),		-- Order of the Cloud Serpent
+				crit(19480),		-- Huojin Pandaren
+			},
+		}),
 		applyclassicphase(MOP_PHASE_ONE, ach(6974, {	-- Pandaria Explorer [7.0.3] / Explore Pandaria
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -369,6 +432,72 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 				6979,	-- Explore Vale of Eternal Blossoms
 				6969,	-- Explore Valley of the Four Winds
 			}},
+		})),
+		ach(6589, {		-- Pandaria Safari
+			crit(21823),		-- Alpine Foxling (Kun-Lai Summit, Townlong Steppes)
+			crit(21824),		-- Alpine Foxling Kit (Kun-Lai Summit, Townlong Steppes)
+			crit(21832),		-- Amber Moth (Townlong Steppes, Dread Wastes)
+			crit(21809),		-- Amethyst Spiderling (Krasarang Wilds)
+			crit(21798),		-- Bandicoon (Valley of the Four Winds, Suramar, The Veiled Stair, Azsuna, The Jade Forest)
+			crit(21799),		-- Bandicoon Kit (Valley of the Four Winds, The Jade Forest)
+			crit(21781),		-- Bucktooth Flapper (The Jade Forest, Stormheim, Val'sharah)
+			crit(21838),		-- Clouded Hedgehog (Dread Wastes, Townlong Steppes)
+			crit(21839),		-- Crunchy Scorpion (Dread Wastes, Townlong Steppes)
+			crit(21782),		-- Emerald Turtle (The Jade Forest, Valley of the Four Winds, Krasarang Wilds)
+			crit(21840),		-- Emperor Crab (Dread Wastes)
+			crit(21810),		-- Feverbite Hatchling (Krasarang Wilds)
+			crit(21784),		-- Garden Frog (The Jade Forest)
+			crit(21785),		-- Garden Moth (The Jade Forest)
+			crit(21833),		-- Grassland Hopper (Townlong Steppes)
+			crit(21786),		-- Grove Viper (The Jade Forest)
+			crit(21787),		-- Jumping Spider (The Jade Forest, Azsuna)
+			crit(21788),		-- Jungle Darter (The Jade Forest)
+			crit(21811),		-- Jungle Grub (Krasarang Wilds)
+			crit(21834),		-- Kuitan Mongoose (Townlong Steppes)
+			crit(21789),		-- Leopard Tree Frog (The Jade Forest, Gorgrond)
+			crit(21812),		-- Luyu Moth (Krasarang Wilds)
+			crit(21800),		-- Malayan Quillrat (Valley of the Four Winds, Krasarang Wilds, The Veiled Stair, The Jade Forest)
+			crit(21801),		-- Malayan Quillrat Pup (Valley of the Four Winds, The Veiled Stair)
+			crit(21802),		-- Marsh Fiddler (Valley of the Four Winds)
+			crit(21790),		-- Masked Tanuki (The Jade Forest)
+			crit(21791),		-- Masked Tanuki Pup (The Jade Forest)
+			crit(21814),		-- Mei Li Sparkler (Krasarang Wilds)
+			crit(21792),		-- Mirror Strider (The Jade Forest)
+			crit(21835),		-- Mongoose (Townlong Steppes)
+			crit(21836),		-- Mongoose Pup (Townlong Steppes)
+			crit(21825),		-- Plains Monitor (Kun-Lai Summit)
+			crit(21826),		-- Prairie Mouse (Kun-Lai Summit)
+			crit(21841),		-- Rapana Whelk (Azsuna, Stormheim)
+			crit(21843),		-- Resilient Roach (Dread Wastes)
+			crit(21793),		-- Sandy Petrel (The Jade Forest)
+			crit(21815),		-- Savory Beetle (Krasarang Wilds, Valley of the Four Winds)
+			crit(21640),		-- Sea Gull (Tanaris, Frostfire Ridge, Frostwall)
+			crit(21706),		-- Shore Crab (Westfall, Azshara, Borean Tundra, Twilight Highlands, Howling Fjord)
+			crit(21794),		-- Shrine Fly (The Jade Forest)
+			crit(21803),		-- Shy Bandicoon (Valley of the Four Winds)
+			crit(21797),		-- Sifang Otter (Valley of the Four Winds, Krasarang Wilds, The Jade Forest)
+			crit(21816),		-- Sifang Otter Pup (The Jade Forest, Krasarang Wilds)
+			crit(21842),		-- Silent Hedgehog (Dread Wastes, Townlong Steppes)
+			crit(21795),		-- Silkbead Snail (Gorgrond, Spires of ARak, The Jade Forest, Talador)
+			crit(21806),		-- Softshell Snapling (Valley of the Four Winds)
+			crit(21817),		-- Spiny Terrapin (Krasarang Wilds, The Jade Forest)
+			crit(21796),		-- Spirebound Crab (The Jade Forest)
+			crit(21827),		-- Summit Kid (Kun-Lai Summit)
+			crit(21828),		-- Szechuan Chicken (Kun-Lai Summit)
+			crit(21805),		-- Temple Snake (The Jade Forest)
+			crit(21829),		-- Tolai Hare (Kun-Lai Summit, Townlong Steppes)
+			crit(21830),		-- Tolai Hare Pup (Kun-Lai Summit)
+			crit(21837),		-- Yakrat (Townlong Steppes)
+			crit(21831),		-- Zooey Snake (Kun-Lai Summit)
+		}),
+		petbattle(ach(6616, {		-- Pandaria Tamer
+			crit(21494),		-- Dread Wastes
+			crit(21489),		-- The Jade Forest
+			crit(21491),		-- Krasarang Wilds
+			crit(21492),		-- Kun-Lai Summit
+			crit(21493),		-- Townlong Steppes
+			crit(21495),		-- Vale of Eternal Blossoms
+			crit(21490),		-- Valley of the Four Winds
 		})),
 		ach(7997, {	-- Riches of Pandaria
 			ach(7996),	-- Bounty of Pandaria
@@ -503,6 +632,16 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 				["coord"] = { 23.2, 30.8, VALLEY_OF_THE_FOUR_WINDS },
 			}),
 		}),
+		petbattle(ach(6606,  {	-- Taming Pandaria
+			crit(21853),	-- Hyuna of the Shrines [The Jade Forest)
+			crit(21854),	-- Farmer Nishi [Valley of the Four Winds)
+			crit(21871),	-- Mo'ruk [Krasarang Wilds)
+			crit(21855),	-- Courageous Yon [Kun-Lai Summit)
+			crit(21870),	-- Seeker Zusshi [Townlong Steppes)
+			crit(21856),	-- Wastewalker Shu [Dread Wastes)
+			crit(21857),	-- Aki the Chosen [Vale of Eternal Blossoms)
+		})),
+		petbattle(ach(8410)),	-- The Celestial Tournament
 		ach(6754, {	-- The Dark Heart of the Mogu
 			crit(19662, {	-- Valley of the Emperors (Kun-Lai Summit)
 				["provider"] = {"o",213331},	-- Valley of the Emperors

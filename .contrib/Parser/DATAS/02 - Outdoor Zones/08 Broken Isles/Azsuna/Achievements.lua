@@ -13,6 +13,7 @@ root(ROOTS.Zones, {
 					["sym"] = {{ "achievement_criteria" }},
 				}),
 				explorationAch(10665),	-- Explore Azsuna
+				ach(10778),	-- The Nightfallen
 				ach(11256),	-- Treasures of Azsuna
 			}),
 		}),

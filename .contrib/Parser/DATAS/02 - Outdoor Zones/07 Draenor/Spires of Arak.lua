@@ -84,6 +84,7 @@ root(ROOTS.Zones, {
 						["sym"] = {{ "achievement_criteria" }},
 					}),
 					ach(9433),		-- A-VOID-ance
+					ach(9469),		-- Arakkoa Outcasts
 					ach(8925,  {	-- Between Arak and a Hard Place (Alliance)
 						["races"] = ALLIANCE_ONLY,
 						["sym"] = {{ "achievement_criteria" }},

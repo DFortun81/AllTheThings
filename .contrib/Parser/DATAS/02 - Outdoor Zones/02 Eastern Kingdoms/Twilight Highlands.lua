@@ -136,7 +136,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["collectible"] = false,	-- not all criteria are available in this zone, so the header shouldn't be collectible here.
 					["groups"] = {
-						crit(3, {	-- Crucible of Carnage in Twilight Highlands
+						crit(13918, {	-- Crucible of Carnage in Twilight Highlands
 							["sourceQuest"] = 27868,	-- The Crucible of Carnage: The Twilight Terror!
 						}),
 					},

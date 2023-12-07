@@ -3,6 +3,12 @@
 -----------------------------------------------------
 root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 	n(ACHIEVEMENTS, {
+		ach(3844, {	-- 1000 Dungeon & Raid Emblems
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+		}),
+		ach(4316, {	-- 2500 Dungeon & Raid Emblems
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
+		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(1658, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Champion of the Frozen Wastes
 			title(97),	-- , Champion of the Frozen Wastes
 			crit(5888, {	-- Kel'Thuzad (10 or 25 player) slain
@@ -51,7 +57,7 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 				["_encounter"] = { 644, HEROIC_DUNGEON, },
 			}),
 		}))),
-		applyclassicphase(WRATH_PHASE_ONE, ach(2136, {		-- Glory of the Hero
+		applyclassicphase(WRATH_PHASE_ONE, ach(2136, {	-- Glory of the Hero
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				1919,	-- On The Rocks
@@ -213,6 +219,28 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 				477,	-- Utgarde Keep
 				488,	-- Utgarde Pinnacle
 			}},
+		}),
+		ach(11320, {	-- Raiding with Leashes IV: Wrath of the Lick King
+			["timeline"] = { ADDED_7_1_0 },
+			["g"] = {
+				i(142210),		-- Celestial Invitation (Begins a quest for a pet)
+				crit(34587),		-- Dreadmaw (Trial of the Crusader - Icehowl)
+				crit(34589),		-- Nerubian Swarmer (Trial of the Crusader - Anub'arak)
+				crit(34590),		-- Magma Rageling (Ulduar - Ignis the Furnace Master)
+				crit(34591),		-- Ironbound Proto-Whelp (Ulduar - Razorscale)
+				crit(34592),		-- Runeforged Servitor (Ulduar - Iron Council)
+				crit(34593),		-- Sanctum Cub (Ulduar - Auriaya)
+				crit(34594),		-- Winter Rageling (Ulduar - Cache of Winter from Hodir)
+				crit(34595),		-- Snaplasher (Ulduar - Freya's Gift from Freya)
+				crit(34596),		-- G0-R41-0N Ultratonk (Ulduar - Cache of Innovation from Mimiron)
+				crit(34597),		-- Creeping Tentacle (Ulduar - Yogg-Saron)
+				crit(34598),		-- Boneshard (Icecrown Citadel - Lord Marrowgar)
+				crit(34599),		-- Blood Boil (Icecrown Citadel - Deathbringer's Cache from Deathbringer Saurfang)
+				crit(34600),		-- Blightbreath (Icecrown Citadel - Professor Putricide)
+				crit(34601),		-- Soulbroken Whelpling (Icecrown Citadel - Sindragosa)
+				crit(34602),		-- Drudge Ghoul (Icecrown Citadel - The Lich King)
+				crit(34603),		-- Wicked Soul (Icecrown Citadel - The Lich King)
+			},
 		}),
 	}),
 })))

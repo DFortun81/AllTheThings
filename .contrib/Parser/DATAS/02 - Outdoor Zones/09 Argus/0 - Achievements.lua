@@ -1056,6 +1056,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["sourceQuests"] = { 48107 },	-- The Sigil of Awakening
 			}),
 		}),
+		ach(12072, {		-- Now You're Cooking with Netherlight
+			["timeline"] = { ADDED_7_3_0, REMOVED_8_0_1 },
+		}),
 		ach(12083, {	-- Paragon of Argus
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",

@@ -4,6 +4,18 @@
 
 root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, {
 	n(ACHIEVEMENTS, {
+		ach(5535, {	-- 1000 Valor Points
+			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+		}),
+		ach(5536, {	-- 5000 Valor Points
+			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+		}),
+		ach(5537, {	-- 25,000 Valor Points
+			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+		}),
+		ach(5538, {	-- 50,000 Valor Points
+			["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+		}),
 		ach(4844, {	-- Cataclysm Dungeon Hero
 			["sym"] = {{"meta_achievement",
 				5060,	-- Heroic: Blackrock Caverns
@@ -103,6 +115,27 @@ root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, {
 			}},
 			["groups"] = {
 				i(62901),	-- Drake of the East Wind (MOUNT!)
+			},
+		}),
+		ach(12079, {	-- Raiding with Leashes V: Cuteaclysm
+			["timeline"] = { ADDED_7_3_0 },
+			["g"] = {
+				i(152963),		-- Amalgam of Destruction (PET!)
+				crit(37670),		-- Tinytron (Blackwing Descent - Magmatron)
+				crit(37671),		-- Discarded Experiment (Blackwing Descent - Maloriak)
+				crit(37672),		-- Rattlejaw (Blackwing Descent - Nefarian)
+				crit(37673),		-- Twilight Clutch-Sister (The Bastion of Twilight - Valiona)
+				crit(37674),		-- Bound Stream (The Bastion of Twilight - Elementium Monstrosity)
+				crit(37675),		-- Faceless Minion (The Bastion of Twilight - Cho'gall)
+				crit(37677),		-- Drafty (Throne of the Four Winds - Nezir)
+				crit(37676),		-- Zephyrian Prince (Throne of the Four Winds - Al'Akir)
+				crit(37678),		-- Blazehound (Firelands - Shannox)
+				crit(37679),		-- Cinderweb Recluse (Firelands - Beth'tilac)
+				crit(37680),		-- Surger (Firelands - Baleroc)
+				crit(37681),		-- Infernal Pyreclaw (Firelands - Majordomo Staghelm)
+				crit(37682),		-- Faceless Mindlasher (Dragon Soul - Yor'sahj the Unsleeping)
+				crit(37683),		-- Corrupted Blood (Dragon Soul - Greater Cache of the Aspects from Spine of Deathwing)
+				crit(37684),		-- Unstable Tendril (Dragon Soul - Elementium Fragment from Madness of Deathwing)
 			},
 		}),
 		ach(11757, {["timeline"] = {ADDED_7_2_0}}),	-- Sha of Fabulous (Heart of Fear and Terrace of Endless Spring)

@@ -1055,6 +1055,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 			}),
 			n(-10072, {	-- N'Zoth Assault
 				n(ACHIEVEMENTS, {
+					ach(14155),		-- Uldum Accord
 					ach(14153, {	-- Uldum Under Assault
 						crit(47201, {	-- Assault: Amathet Advance
 							["_quests"] = { 55350 },

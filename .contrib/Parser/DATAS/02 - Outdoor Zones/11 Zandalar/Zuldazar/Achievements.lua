@@ -238,6 +238,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["races"] = HORDE_ONLY,
 				["sourceQuests"] = { 56205 },	-- Just Ptrust Me On This
 				["g"] = {
+					crit(45335),	-- Just Ptrust Me On This
 					ach(13030, {	-- How to Ptrain Your Pterrordax
 						["races"] = HORDE_ONLY,
 						["g"] = {
@@ -310,6 +311,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					}),
 				},
 			}),
+			ach(12956),		-- Tortollan Seekers
 			pvp(ach(12575)),	-- Tour of Duty: Zuldazar
 			ach(12851, {	-- Treasures of Zuldazar
 				crit(40988, {	-- Offerings of the Chosen

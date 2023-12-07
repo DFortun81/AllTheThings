@@ -37,6 +37,24 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				689,	-- Ruins of Ahn'Qiraj
 			}},
 		}),
+		ach(7934, {		-- Raiding with Leashes
+			["timeline"] = { ADDED_5_1_0 },
+			["g"] = {
+				i(93031),		-- Mr. Bigglesworth (PET!)
+				crit(22468),		-- Mini Mindslayer (Temple of Ahn'Qiraj - The Prophet Skeram)
+				crit(22469),		-- Anubisath Idol (Temple of Ahn'Qiraj - Emperor Vek'tor)
+				crit(22470),		-- Giant Bone Spider (Naxxramas - Maexxna)
+				crit(22471),		-- Fungal Abomination (Naxxramas - Loatheb)
+				crit(22473),		-- Stitched Pup (Naxxramas - Gluth)
+				crit(22474),		-- Harbinger of Flame (Molten Core - Sulfuron Harbinger)
+				crit(22475),		-- Corefire Imp (Molten Core - Magmadar)
+				crit(22476),		-- Ashstone Core (Molten Core - Golemagg the Incinerator)
+				crit(22477),		-- Untamed Hatchling (Blackwing Lair - Razorgore the Untamed)
+				crit(22478),		-- Chrominius (Blackwing Lair - Chromaggus)
+				crit(22479),		-- Death Talon Whelpguard (Blackwing Lair - Broodlord Lashlayer)
+				crit(22480),		-- Viscidus Globule (Temple of Ahn'Qiraj - Viscidus)
+			},
+		}),
 	}),
 }));
 -- #endif

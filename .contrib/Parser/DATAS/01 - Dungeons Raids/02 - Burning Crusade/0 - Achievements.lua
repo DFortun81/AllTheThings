@@ -61,6 +61,40 @@ root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 			}},
 		}),
 		ach(11746, {["timeline"] = {ADDED_7_2_0}}),	-- Outlandish Style (Gruuls' Lair, Karazhan, and Magtheridon's Lair)
+		ach(8293, {		-- Raiding with Leashes II: Attunement Edition
+			["timeline"] = { ADDED_5_3_0 },
+			["g"] = {
+				i(97558),		-- Tito (PET!)
+				crit(23321),		-- Lil' Bad Wolf (Karazhan - The Big Bad Wolf)
+				crit(23322),		-- Menagerie Custodian (Karazhan - The Curator)
+				crit(23323),		-- Netherspace Abyssal (Karazhan - Prince Malchezaar)
+				crit(23324),		-- Fiendish Imp (Karazhan - Terstian Illhoof)
+				crit(23325),		-- Tideskipper (Serpentshrine Cavern - Morogrim Tidewalker)
+				crit(23326),		-- Tainted Waveling (Serpentshrine Cavern - Hydross the Unstable)
+				crit(23327),		-- Coilfang Stalker (Serpentshrine Cavern - Lady Vashj)
+				crit(23328),		-- Pocket Reaver (The Eye - Void Reaver)
+				crit(23329),		-- Lesser Voidcaller (The Eye - High Astromancer Solarian)
+				crit(23330),		-- Phoenix Hawk Hatchling (The Eye - Al'ar)
+			},
+		}),
+		ach(9824, {		-- Raiding with Leashes III: Drinkin' From the Sunwell
+			["timeline"] = { ADDED_6_1_0 },
+			["g"] = {
+				i(122116),		-- K'ute (PET!)
+				crit(27567),		-- Grotesque (Hyjal Summit - Azgalor)
+				crit(27568),		-- Leviathan Hatchling (Black Temple - High Warlord Naj'entus)
+				crit(27569),		-- Abyssius (Black Temple - Supremus)
+				crit(27570),		-- Fragment of Anger (Black Temple - Reliquary of the Lost)
+				crit(27571),		-- Fragment of Suffering (Black Temple - Reliquary of the Lost)
+				crit(27572),		-- Fragment of Desire (Black Temple - Reliquary of the Lost)
+				crit(27573),		-- Sister of Temptation (Black Temple - Mother Shahraz)
+				crit(27574),		-- Stinkrot (Hyjal Summit - Anetheron)
+				crit(27575),		-- Hyjal Wisp (Hyjal Summit - Archimonde)
+				crit(27576),		-- Sunblade Micro-Defender (Sunwell Plateau - Brutallus)
+				crit(27577),		-- Chaos Pup (Sunwell Plateau - M'uru)
+				crit(27578),		-- Wretched Servant (Sunwell Plateau - Eredar Twins)
+			},
+		}),
 	}),
 })));
 -- #endif

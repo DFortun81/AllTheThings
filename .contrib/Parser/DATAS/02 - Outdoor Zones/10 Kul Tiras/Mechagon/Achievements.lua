@@ -86,6 +86,20 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 					i(168329),	-- Mechacycle Model W (MOUNT!)
 				},
 			}),
+			petbattle(ach(13693, {	-- Mecha-Safari
+				crit(45579),	-- Junkheap Roach
+				crit(45580),	-- Fleeting Frog
+				crit(45581),	-- Mechagon Marmot
+				crit(45582),	-- Motorized Croaker
+				crit(45583),	-- Scrapyard Tunneler
+				crit(45584),	-- Duskytooth Snooter
+				crit(45585),	-- Rustbolt Clucker
+				crit(45586),	-- Rustyroot Snooter
+				crit(45587),	-- Yellow Junkhopper
+				crit(45588),	-- Experimental Roach
+				crit(45589),	-- Specimen 97
+				crit(45590),	-- Malfunctioning Microbot
+			})),
 			ach(13556, {	-- Outside Influences
 				crit(45246, {	-- Aid from Nordrassil
 					["_quests"] = { 55463 },	-- Aid from Nordrassil
@@ -297,6 +311,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 					["_npcs"] = { 155583 },
 				}),
 			}),
+			ach(13557),		-- Rustbolt Rebellion
 			ach(13553, {	-- The Mechagonian Threat (A)
 				["sourceQuests"] = { 55609 },	-- Operation: Mechagon - The Mechoriginator
 				["races"] = ALLIANCE_ONLY,

@@ -229,6 +229,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		ach(8820, {	-- 10th Anniversary
 			i(115301),	-- Molten Corgi (PET!)
 		}),
+		ach(9729, {		-- Victory in Hillsbrad (Alliance)
+			["races"] = ALLIANCE_ONLY,
+			["g"] = {
+				title(280),		-- <Name>, Tarren Mill Terror
+			},
+		}),
+		ach(9566, {		-- Victory in Hillsbrad (Horde)
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				title(281),		-- <Name>, Southshore Slayer
+			},
+		}),
 		n(MAILBOX, {
 			i(107224),	-- Celebration Package
 		}),

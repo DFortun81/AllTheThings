@@ -25,6 +25,7 @@ root(ROOTS.Zones, {
 						i(139773),	-- Emerald Winds (TOY!)
 					},
 				}),
+				ach(12292),	-- Highmountain Tribe
 				ach(11257),	-- Treasures of Highmountain
 			}),
 		}),

@@ -171,6 +171,9 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 					title(141),	-- <Name> of the Ashen Verdict
 				}),
 				ach(11753, {["timeline"] = {ADDED_7_2_0}}),	-- Winter Catalog (Icecrown Citadel)
+				ach(4576, {	-- Realm First! Fall of the Lich King
+					["timeline"] = { ADDED_3_3_3, REMOVED_3_3_5 },
+				}),
 			}),
 			n(FACTIONS, {
 				faction(1156),	-- The Ashen Verdict
