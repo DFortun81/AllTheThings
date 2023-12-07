@@ -220,16 +220,16 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		},
 	})),
 	ach(5542, {		-- 1000 Conquest Points
-		["timeline"] = { ADDED_3_0_2, REMOVED_7_0_3 },
+		["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 	}),
 	ach(5541, {		-- 5000 Conquest Points
-		["timeline"] = { ADDED_3_0_2, REMOVED_7_0_3 },
+		["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 	}),
 	ach(5540, {		-- 25,000 Conquest Points
-		["timeline"] = { ADDED_3_0_2, REMOVED_7_0_3 },
+		["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 	}),
 	ach(5539, {		-- 50,000 Conquest Points
-		["timeline"] = { ADDED_3_0_2, REMOVED_7_0_3 },
+		["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 	}),
 	ach(11468, {	-- Alive for Five
 		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
