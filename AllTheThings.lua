@@ -16409,6 +16409,10 @@ function app:GetDataCache()
 	-- Achievements
 	if app.Categories.Achievements then
 		db = app.CreateNPC(app.HeaderConstants.ACHIEVEMENTS, app.Categories.Achievements);
+		db.sourceIgnored = 1;	-- everything in this category is now cloned!
+		for _, o in ipairs(db.g) do
+			o.sourceIgnored = nil
+		end
 		tinsert(g, db);
 	end
 
