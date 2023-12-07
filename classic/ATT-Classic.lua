@@ -3249,6 +3249,7 @@ local function AttachTooltip(self)
 
 					-- Normal item tooltip, not on the Toy Box.
 					AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
+					return true;
 				end
 
 				-- If the owner has a ref, it's an ATT row. Ignore it.
