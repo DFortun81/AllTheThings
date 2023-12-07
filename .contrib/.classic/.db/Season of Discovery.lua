@@ -196,7 +196,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(c
 			}),
 			i(211247, {	-- Pattern: Phoenix Bindings
 				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-				["description"] = "WARNING: This is reported as bugged and you don't actually learn anything from this!",
 				["cost"] = 67500,	-- 6.75g
 			}),
 			i(210779, {	-- Plans: Mantle of the Second War

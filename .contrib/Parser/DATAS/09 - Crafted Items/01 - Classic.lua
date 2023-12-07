@@ -2352,6 +2352,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			applyclassicphase(PHASE_SIX, i(22655, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Glacial Wrists
 			i(206507, {["timeline"] = {ADDED_10_1_5}}),	-- Necrotic Gown
 			i(206582, {["timeline"] = {ADDED_10_1_5}}),	-- Peculiar Glacial Mantle
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211247)),	-- Phoenix Bindings
+			-- #endif
 			i(206562, {["timeline"] = {ADDED_10_1_5}}),	-- Shroud of Forbidden Magic
 		}),
 		category(230, {	-- Materials
