@@ -2130,7 +2130,9 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 		i(3213),	-- Veteran Bracers
 		i(4678),	-- Veteran Girdle
 		i(2980),	-- Veteran Gloves
-		i(2978),	-- Veteran Leggings [CRIEVE NOTE: This might be in a similar situation to the two other mail items that were swapped out.]
+		i(2978, {	-- Veteran Leggings [CRIEVE NOTE: This might be in a similar situation to the two other mail items that were swapped out.]
+			["timeline"] = { "removed 6.1.0.19445" },	-- Likely unobtainable since adding of Vetaran Legguards
+		}),
 		i(120953, {	-- Veteran Legguards
 			["timeline"] = { "added 6.1.0.19445" },
 		}),
