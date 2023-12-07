@@ -168,7 +168,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 				i(211411, {	-- Sprouting Dreamtrove
-					["description"] = "Granted for achieving 2666 points or more at the Superbloom Event.\nThe Event always starts on the hour.",
+					["description"] = "Granted for achieving 2600 points or more at the Superbloom Event.\nThe Event always starts on the hour.",
 				}),
 			}),
 		}),
