@@ -238,6 +238,14 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				-- #if ANYCLASSIC
+				i(3172, {	-- Boar Intestines
+					["crs"] = {
+						7333,	-- Withered Battle Boar
+						7334,	-- Battle Boar Horror
+					},
+				}),
+				-- #endif
 				i(10573),	-- Boneslasher
 				i(10582),	-- Briar Tredders
 				i(10574),	-- Corpseshroud

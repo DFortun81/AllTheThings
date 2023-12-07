@@ -610,7 +610,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 9,
 					["groups"] = {
 						objective(1, {	-- 0/4 Miners' Gear
-							["provider"] = { "i", 2640 },	-- Miners' Gear
+							["providers"] = {
+								{ "i", 2640 },	-- Miners' Gear
+								{ "o", 271 },	-- Miners' League Crates
+							},
 						}),
 						i(3160, {	-- Ironplate Buckler
 							["timeline"] = { "removed 4.0.3" },
@@ -1808,6 +1811,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1189,	-- Black Bear Patriarch
 						1188,	-- Grizzled Black Bear
 						1225,	-- Ol' Sooty
+					},
+				}),
+				i(3172, {	-- Boar Intestines
+					["coord"] = { 37.0, 34.4, LOCH_MODAN },
+					["crs"] = {
+						1190,	-- Mountain Boar
+						1191,	-- Mangy Mountain Boar
+						1192,	-- Elder Mountain Boar
 					},
 				}),
 				i(769, {	-- Chunk of Boar Meat

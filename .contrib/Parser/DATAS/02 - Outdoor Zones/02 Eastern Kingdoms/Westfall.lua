@@ -1473,6 +1473,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				-- #if ANYCLASSIC
+				i(3172, {	-- Boar Intestines
+					["coord"] = { 54.2, 42.6, WESTFALL },
+					["maps"] = { REDRIDGE_MOUNTAINS },
+					["crs"] = {
+						454,	-- Young Goretusk
+						157,	-- Goretusk
+						547,	-- Great Goretusk
+					},
+				}),
+				-- #endif
 				i(826, {	-- Brutish Riverpaw Axe
 					["cr"] = 124,	-- Riverpaw Brute
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023

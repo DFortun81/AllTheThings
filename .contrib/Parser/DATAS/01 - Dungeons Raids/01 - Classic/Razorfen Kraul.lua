@@ -248,6 +248,15 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 			}),
 			n(ZONE_DROPS, {
+				-- #if ANYCLASSIC
+				i(3172, {	-- Boar Intestines
+					["crs"] = {
+						4512,	-- Rotting Agam'ar
+						4514,	-- Raging Agam'ar
+						4511,	-- Agam'ar
+					},
+				}),
+				-- #endif
 				i(5801, {	-- Kraul Guano
 					["crs"] = {
 						-- #if AFTER 6.0.2
