@@ -7,6 +7,8 @@
 local appName, app = ...;
 app.EmptyTable = setmetatable({}, { __newindex = function() end });
 
+local GetAddOnMetadata = GetAddOnMetadata or C_AddOns.GetAddOnMetadata
+
 -- Generate the version identifier.
 app.Version = GetAddOnMetadata(appName, "Version");
 if string.match(app.Version, "version") then
