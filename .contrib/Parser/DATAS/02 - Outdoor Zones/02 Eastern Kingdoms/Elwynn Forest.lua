@@ -1503,6 +1503,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 31.0, 47.4, REDRIDGE_MOUNTAINS },	-- Verner Osgood
 					},
 					-- #endif
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for "Stormpike's Delivery" in Stormwind
 					["lvl"] = lvlsquish(9, 9, 1),

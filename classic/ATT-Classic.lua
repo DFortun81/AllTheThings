@@ -3009,6 +3009,11 @@ function app:GetDataCache()
 end
 
 -- Tooltip Functions
+local AUTHOR = {
+	["Player-76-0895E23B"] = true,		-- Crieve-Sargeras
+	["Player-4372-0000390A"] = true,	-- Crieve-Atiesh
+	["Player-5813-01CEF978"] = true,	-- Crieve-Wild Growth (SOD)
+};
 local EXTERMINATOR = {
 	["Player-4372-00B131BB"] = true,	-- Aivet
 	["Player-4372-004A0418"] = true,	-- Jubilee
@@ -3171,7 +3176,7 @@ local function AttachTooltip(self)
 						local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid);
 						-- print(guid, type, npcID);
 						if type == "Player" then
-							if guid == "Player-4372-0000390A" then
+							if AUTHOR[guid] then
 								local leftSide = _G[self:GetName() .. "TextLeft1"];
 								if leftSide then
 									leftSide:SetText("|c" .. app.Colors.Raid .. UnitName(target) .. " the Completionist|r");
@@ -3453,7 +3458,7 @@ if TooltipDataProcessor then
 				local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid);
 				-- print(guid, type, npcID);
 				if type == "Player" then
-					if guid == "Player-4372-0000390A" or guid == "Player-76-0895E23B" then
+					if AUTHOR[guid] then
 						local leftSide = _G[tooltip:GetName() .. "TextLeft1"];
 						if leftSide then
 							leftSide:SetText("|c" .. app.Colors.Raid .. name .. " the Completionist|r");
