@@ -34,6 +34,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					{ 23.76, 60.86, DRUSTVAR },
 					{ 19.00, 58.29, DRUSTVAR },
 				},
+				["_noautomation"] = true,
 			}),
 			ach(13094, {	-- Cursed Game Hunter
 				crit(41794, {	-- Goats
