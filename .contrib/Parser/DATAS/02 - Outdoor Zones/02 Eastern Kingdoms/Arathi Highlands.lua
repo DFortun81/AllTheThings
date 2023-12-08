@@ -1058,6 +1058,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(637, {	-- Sully Balloo's Letter
 					["providers"] = {
 						{ "i", 4433 },	-- Waterlogged Envelope
+						{ "o", 2656 },	-- Waterlogged Letter
 						{ "i", 4432 },	-- Sully Balloo's Letter
 					},
 					["coord"] = { 44.3, 92.9, ARATHI_HIGHLANDS },

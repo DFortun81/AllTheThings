@@ -152,6 +152,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			prof(MINING, {
+				i(3340, {	-- Incendicite Ore
+					["provider"] = { "o", 1610 },	-- Incendicite Mineral Vein
+				}),
+			}),
 			n(QUESTS, {
 				q(25726, {	-- A Dumpy Job
 					["qg"] = 41129,	-- Surveyor Thurdan
@@ -1986,7 +1991,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				i(3340),	-- Incendicite Ore
 				-- #if BEFORE 4.0.3
 				i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 					["cr"] = 1160,	-- Captain Halyndor

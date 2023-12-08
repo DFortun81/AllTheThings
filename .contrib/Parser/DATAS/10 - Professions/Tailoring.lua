@@ -1260,7 +1260,13 @@ profession(TAILORING, {
 				{
 					["name"] = "Green Linen Bracers",
 					["recipeID"] = 3841
-				}
+				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, {
+					["name"] = "Phoenix Bindings",
+					["recipeID"] = 428424
+				}),
+				-- #endif
 			}
 		},
 		{

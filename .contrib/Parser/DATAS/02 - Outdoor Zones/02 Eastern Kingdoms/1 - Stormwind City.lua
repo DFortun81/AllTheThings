@@ -325,11 +325,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 25,
 					["groups"] = {
 						objective(1, {	-- 0/1 Tear of Tilloa
-							["provider"] = { "i", 2779 },	-- Tear of Tilloa
+							["providers"] = {
+								{ "i", 2779 },	-- Tear of Tilloa
+								{ "o", 321 },	-- Tear of Tilloa
+							},
 							["coord"] = { 78.5, 36.0, DUSKWOOD },
 						}),
 						objective(2, {	-- 0/1 Musquash Root
-							["provider"] = { "i", 2784 },	-- Musquash Root
+							["providers"] = {
+								{ "i", 2784 },	-- Musquash Root
+								{ "o", 2084 },	-- Musquash Root
+							},
 							["coord"] = { 64.7, 75.5, WETLANDS },
 						}),
 					},

@@ -448,19 +448,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 					["groups"] = {
 						objective(1, {	-- 0/1 Bingles' Wrench
-							["provider"] = { "i", 7343 },	-- Bingles' Wrench
+							["providers"] = {
+								{ "i",   7343 },	-- Bingles' Wrench
+								{ "o", 104564 },	-- Bingles's Toolbucket
+							},
 							["coord"] = { 48.8, 30.0, LOCH_MODAN },
 						}),
 						objective(2, {	-- 0/1 Bingles' Screwdriver
-							["provider"] = { "i", 7345 },	-- Bingles' Screwdriver
+							["providers"] = {
+								{ "i",   7345 },	-- Bingles' Screwdriver
+								{ "o", 104569 },	-- Bingles's Toolbucket
+							},
 							["coord"] = { 48.5, 20.6, LOCH_MODAN },
 						}),
 						objective(3, {	-- 0/1 Bingles' Hammer
-							["provider"] = { "i", 7346 },	-- Bingles' Hammer
+							["providers"] = {
+								{ "i",   7346 },	-- Bingles' Hammer
+								{ "o", 104574 },	-- Bingles's Toolbucket
+							},
 							["coord"] = { 51.8, 24.3, LOCH_MODAN },
 						}),
 						objective(4, {	-- 0/1 Bingles' Blastencapper
-							["provider"] = { "i", 7376 },	-- Bingles' Blastencapper
+							["providers"] = {
+								{ "i",   7376 },	-- Bingles' Blastencapper
+								{ "o", 104575 },	-- Bingles's Blastencapper
+							},
 							["coord"] = { 54.3, 26.5, LOCH_MODAN },
 						}),
 						i(12522, {	-- Bingles' Flying Gloves

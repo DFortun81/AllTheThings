@@ -60,7 +60,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(10216,  {	-- Safety is Job One
-					["qg"] = 19670,	-- Artificer Morphalius
+					["providers"] = {
+						{ "n",  19670 },	-- Artificer Morphalius
+						{ "o", 183877 },	-- Ethereal Transporter Control Panel
+					},
 					["coord"] = { 39.4, 58.5, TEROKKAR_FOREST },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["lvl"] = lvlsquish(64, 64, 15),
@@ -99,7 +102,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(10218, bubbleDown({ ["timeline"] = { "removed 4.3.0.14732" } }, {	-- Someone Else's Hard Work Pays Off [Rewards also removed... :(]
-					["qg"] = 19671,	-- Cryo-Engineer Sha'heen
+					["providers"] = {
+						{ "n",  19671 },	-- Cryo-Engineer Sha'heen
+						{ "o", 183877 },	-- Ethereal Transporter Control Panel
+					},
 					["sourceQuest"] = 10216,	-- Safety Is Job One
 					["maps"] = { TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(64, 64, 15),
