@@ -589,6 +589,7 @@ i(200839);	-- Magical Cleaning Broom
 i(200840);	-- Encyclopaedia Draeconica Set
 i(200848);	-- Decorative Bouquet
 i(200849);	-- Tear of the Dreamer
+i(200853);	-- How to Grow a Tree in 10 Days
 
 ------------------
 -- PATCH 10.0.2 --
@@ -597,6 +598,7 @@ i(201926);	-- Crushing
 --- Trash ---
 i(192610);	-- Beady Woodland Eye
 i(192622);	-- Massive Beast Eye
+i(192623);	-- Massive Proto-Dragon Claw
 i(192626);	-- Mound of Dust
 i(192629);	-- Primal Beast Claw
 i(192662);	-- Pyretic Speck

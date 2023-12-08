@@ -891,7 +891,6 @@ root(ROOTS.NeverImplemented, {
 				i(200607),	-- Half-Eaten Banana
 				i(197848),	-- Hearty Squash Stew
 				i(200845),	-- Heavily Deformed Mace
-				i(200853),	-- How to Grow a Tree in 10 Days
 				i(199102),	-- Hunk o' Blubber
 				i(200784),	-- Hunting Trophies
 				i(200589),	-- Hydro Life Seed
@@ -1145,7 +1144,6 @@ root(ROOTS.NeverImplemented, {
 				i(192708),	-- Magnificent Antler
 				i(201200),	-- Makeshift Totem
 				i(192660),	-- Massive Hydra Claw
-				i(192623),	-- Massive Proto-Dragon Claw
 				i(192709),	-- Membranous Wing
 				i(192714),	-- Mgrrrl
 				i(200105),	-- Muck Covered Flotsam
