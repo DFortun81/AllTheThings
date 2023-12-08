@@ -768,11 +768,14 @@ local function SearchForObject(field, id, require, allowMultiple)
 		-- if we're NOT searching for a plain itemID, we have to be more careful
 		local idBase = math_floor(id)
 		if idBase ~= id then
-			fcache = SearchForField("itemID", id);
-			-- if we found no specific modItemID results, then we can revert to basic itemID
+			fcache = SearchForField(field, id);
 			if #fcache == 0 then
-				fcache = nil
+				-- if we found no specific modItemID results, then we can revert to basic itemID search
 				id = idBase
+				fcache = SearchForField(field, id)
+			else
+				-- otherwise use modItemID as the field for 'require' since it returned results
+				field = "modItemID"
 			end
 		end
 	end
@@ -780,7 +783,7 @@ local function SearchForObject(field, id, require, allowMultiple)
 	count = #fcache;
 	if count == 0 then
 		-- app.PrintDebug("SFO",field,id,require,"0~")
-		return
+		return allowMultiple and app.EmptyTable or nil
 	end
 	local fcacheObj;
 	require = (require == "key" and 2) or (require == "field" and 1) or 0;
@@ -796,7 +799,7 @@ local function SearchForObject(field, id, require, allowMultiple)
 		end
 		-- one result, but doesn't meet the 'require'
 		-- app.PrintDebug("SFO",field,id,require,"1~",fcacheObj.hash)
-		return;
+		return allowMultiple and app.EmptyTable or nil
 	end
 
 	local keyMatch, fieldMatch, match;
@@ -873,8 +876,8 @@ local function SearchForObject(field, id, require, allowMultiple)
 				end
 			end
 		end
-		-- app.PrintDebug("SFO",field,id,require,"?>",keyMatch and keyMatch.hash,fieldMatch and fieldMatch.hash,match and match.hash)
-		return filterMatch or keyMatch or fieldMatch or match or nil;
+		-- app.PrintDebug("SFO",field,id,require,"?>",filterMatch and #filterMatch,keyMatch and #keyMatch,fieldMatch and #fieldMatch,match and #match)
+		return filterMatch or keyMatch or fieldMatch or match or app.EmptyTable
 	else	-- single returnd object
 		-- split logic based on require to reduce conditionals within loop
 		if require == 2 then
