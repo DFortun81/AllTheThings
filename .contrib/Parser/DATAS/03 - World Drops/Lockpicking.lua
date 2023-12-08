@@ -356,6 +356,13 @@ root(ROOTS.WorldDrops, {
 					10606,  -- Schematic: Parachute Cloak
 					4414    -- Schematic: Portable Bronze Mortar
 				}},
+				-- #if AFTER 10.1.7
+				["groups"] = {
+					i(7678,	{	-- Recipe: Thistle Tea
+						["timeline"] = { "added 10.1.7" },
+					}),	
+				},
+				-- #endif
 			}),
 			i(29569, {	-- Strong Junkbox
 				["timeline"] = { "added 2.0.1.6180" },
