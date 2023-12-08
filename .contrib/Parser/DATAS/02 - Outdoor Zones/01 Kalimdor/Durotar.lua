@@ -3281,6 +3281,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 59.6, 58.8, DUROTAR },
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(203079, {	-- Wandering Swordsman
+					["provider"] = { "o", 392029 },	-- Swordsman's Reward
+					["coords"] = {
+						{ 37.0, 46.8, DUROTAR },
+						{ 41.0, 49.8, DUROTAR },
+						{ 55.0, 39.4, DUROTAR },
+						{ 56.4, 27.0, DUROTAR },
+						{ 56.8, 21.6, DUROTAR },
+					},
+					["groups"] = {
+						i(204441, {	-- Rune of Blood Frenzy
+							["races"] = { WARRIOR },
+							["groups"] = {
+								recipe(403474),	-- Engrave Chest - Blood Frenzy
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(5808, {	-- Warlord Kolkanis
 					["coords"] = {
 						{ 46.6, 79.8, DUROTAR },

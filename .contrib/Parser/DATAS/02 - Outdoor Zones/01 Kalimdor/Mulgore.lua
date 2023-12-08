@@ -1633,6 +1633,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(203079, {	-- Wandering Swordsman
+					["provider"] = { "o", 392029 },	-- Swordsman's Reward
+					["coords"] = {
+						{ 45.6, 36.4, MULGORE },
+						{ 51.8, 39.2, MULGORE },
+						{ 37.8, 55.0, MULGORE },
+						{ 40.6, 53.8, MULGORE },
+						{ 60.2, 67.6, MULGORE },
+					},
+					["groups"] = {
+						i(204441, {	-- Rune of Blood Frenzy
+							["races"] = { WARRIOR },
+							["groups"] = {
+								recipe(403474),	-- Engrave Chest - Blood Frenzy
+							},
+						}),
+					},
+				})),
+				-- #endif
 			}),
 			-- #if BEFORE TBC
 			n(RIDING_TRAINER, {

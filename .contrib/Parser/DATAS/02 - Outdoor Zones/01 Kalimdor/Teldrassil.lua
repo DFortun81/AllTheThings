@@ -1778,6 +1778,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(203079, {	-- Wandering Swordsman
+					["provider"] = { "o", 392029 },	-- Swordsman's Reward
+					["coords"] = {
+						{ 39.6, 37.6, TELDRASSIL },
+						{ 39.8, 69.6, TELDRASSIL },
+						{ 34.8, 76.8, TELDRASSIL },
+						{ 54.6, 66.0, TELDRASSIL },
+						{ 62.6, 71.8, TELDRASSIL },
+					},
+					["groups"] = {
+						i(204441, {	-- Rune of Blood Frenzy
+							["races"] = { WARRIOR },
+							["groups"] = {
+								recipe(403474),	-- Engrave Chest - Blood Frenzy
+							},
+						}),
+					},
+				})),
+				-- #endif
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {

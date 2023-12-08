@@ -2712,6 +2712,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(203079, {	-- Wandering Swordsman
+					["provider"] = { "o", 392029 },	-- Swordsman's Reward
+					["coord"] = { 53.8, 47.2, DUN_MOROGH },
+					["groups"] = {
+						i(204441, {	-- Rune of Blood Frenzy
+							["races"] = { WARRIOR },
+							["groups"] = {
+								recipe(403474),	-- Engrave Chest - Blood Frenzy
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(107431, {	-- Weaponized Rabbot
 					["coord"] = { 66.0, 27.0, NEW_TINKERTOWN },
 					["timeline"] = { "added 7.0.3.22290" },

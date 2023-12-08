@@ -1188,6 +1188,7 @@ _.ObjectNames = {
 	[181598] = "Silithyst Geyser",
 	[181672] = "Wickerman Effigy",
 	[207724] = "Shipwreck Debris",
+	[392029] = "Swordsman's Reward",
 	[397987] = "Kobold Stashbox",
 	[402215] = "Charred Note",
 	[407850] = "Sunken Reliquary",
@@ -1944,6 +1945,7 @@ _.ObjectModels = {
 	[181598] = 200154,
 	[181672] = 199787,
 	[207724] = 219411,
+	[392029] = 196988,
 	[397987] = 196982,
 	[407850] = 200953,
 }
@@ -2428,6 +2430,7 @@ localize(_.ObjectNames, {
 	[181598] = "Silithystgeysir",
 	[181672] = "Weidenmann",
 	[207724] = "Schiffswracktrümmer",
+	[392029] = "Belohnung des Schwertkämpfers",
 	[397987] = "Lagertruhe der Kobolde",
 	[402215] = "Verkohlte Notiz",
 	[407850] = "Versunkener Reliquienschrein",
@@ -2900,6 +2903,7 @@ localize(_.ObjectNames, {
 	[181598] = "Géiser de silitista",
 	[181672] = "Efigie del Hombre de Mimbre",
 	[207724] = "Restos de naufragio",
+	[392029] = "Recompensa del espadachín",
 });
 end
 if simplifiedLocale == "fr" then
@@ -3387,6 +3391,7 @@ localize(_.ObjectNames, {
 	[181598] = "Geyser de silithyste",
 	[181672] = "Effigie de l'homme d'osier",
 	[207724] = "Débris d’épave",
+	[392029] = "Récompense de l’épéiste",
 	[397987] = "Boîte de rangement de Kobold",
 	[407850] = "Reliquaire englouti",
 });
@@ -5160,6 +5165,7 @@ localize(_.ObjectNames, {
 	[181598] = "Гейзер силитиста",
 	[181672] = "Фигурка Плетеного человека",
 	[207724] = "Обломки кораблекрушения",
+	[392029] = "Награда мечника",
 	[397987] = "Тайник кобольдов",
 });
 end
