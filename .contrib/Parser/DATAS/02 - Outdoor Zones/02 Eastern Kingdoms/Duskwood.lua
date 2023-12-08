@@ -1759,8 +1759,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Spawns in the Dawning Wood Catacombs.",
 					["coord"] = { 18.0, 38.0, DUSKWOOD },
 					-- #elseif AFTER 10.1.7
-					["description"] = "Wanders the Raven Hill Cemetary.",
-					["coord"] = { 21.1, 43.0, DUSKWOOD },
+					["description"] = "Wanders the Raven Hill Cemetary, spawns at the given coordinates.",
+					["coord"] = { 21.8, 34.0, DUSKWOOD },
 					-- #endif
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["groups"] = {
@@ -1777,21 +1777,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 				n(507, {	-- Fenros
-					-- #if AFTER CATA
+					-- #if BEFORE 4.0.3
+					["description"] = "Patrol between the coordinates.",
+					["coords"] = {
+						{ 59.8, 26.8, DUSKWOOD },
+						{ 63.8, 51.6, DUSKWOOD },
+					},
+					-- #else
+					["description"] = "Spawns in one of multiple locations in Brightwood Grove, and can either be stationary or patrolling.",
 					["coords"] = {
 						{ 58.4, 29.8, DUSKWOOD },
 						{ 62.0, 37.2, DUSKWOOD },
+						{ 60.6, 40.5, DUSKWOOD },
 						{ 61.8, 41.0, DUSKWOOD },
 						{ 63.0, 43.2, DUSKWOOD },
 						{ 61.2, 45.2, DUSKWOOD },
 						{ 64.4, 47.8, DUSKWOOD },
 						{ 64.0, 51.2, DUSKWOOD },
-					},
-					-- #else
-					["description"] = "Patrol between the coordinates",
-					["coords"] = {
-						{ 59.8, 26.8, DUSKWOOD },
-						{ 63.8, 51.6, DUSKWOOD },
 					},
 					-- #endif
 					["groups"] = {
@@ -1814,11 +1816,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(503, {  -- Lord Malathrom
 					-- #if BEFORE 4.0.3
-					["description"] = "Spawns in the Dawning Wood Catacombs",
-					-- #elseif AFTER 10.1.7
-					["description"] = "Spawns in the Dawning Wood Catacombs",
-					-- #endif
+					["description"] = "Spawns in the Dawning Wood Catacombs.",
 					["coord"] = { 25.6, 30.2, DUSKWOOD },
+					-- #elseif AFTER 10.1.7
+					["description"] = "Spawns in one of multiple locations in the Dawning Wood Catacombs.",
+					["coord"] = {
+						{ 24.2, 34.5, DUSKWOOD },
+						{ 25.6, 30.2, DUSKWOOD },
+						{ 20.3, 26.8, DUSKWOOD },
+					},
+					-- #endif
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
 					["groups"] = {
 						i(4462, {	-- Cloak of Rot
@@ -1831,6 +1838,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(521, {  -- Lupos
 					-- #if AFTER 4.0.3
+					["description"] = "Spawns in one of multiple locations at the eastern end of the Darkened Bank.",
 					["coords"] = {
 						{ 60.8, 20.6, DUSKWOOD },
 						{ 65.6, 19.6, DUSKWOOD },
