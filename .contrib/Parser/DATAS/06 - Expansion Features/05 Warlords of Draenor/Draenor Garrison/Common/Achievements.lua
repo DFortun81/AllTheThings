@@ -206,7 +206,9 @@ root(ROOTS.ExpansionFeatures,
 						crit(27941),		-- At least 1 large building activated
 					}),
 				}),
-				ach(9246),		-- Master Draenor Crafter
+				ach(9246, {		-- Master Draenor Crafter
+					["_noautomation"] = true,
+				}),
 				ach(9265),		-- Master of Apexis
 				ach(9825, {	-- Master Relic Hunter
 					["races"] = ALLIANCE_ONLY,
