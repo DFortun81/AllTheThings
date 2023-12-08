@@ -121,21 +121,51 @@ root(ROOTS.Instances, applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, {
 			["timeline"] = { ADDED_7_3_0 },
 			["g"] = {
 				i(152963),		-- Amalgam of Destruction (PET!)
-				crit(37670),		-- Tinytron (Blackwing Descent - Magmatron)
-				crit(37671),		-- Discarded Experiment (Blackwing Descent - Maloriak)
-				crit(37672),		-- Rattlejaw (Blackwing Descent - Nefarian)
-				crit(37673),		-- Twilight Clutch-Sister (The Bastion of Twilight - Valiona)
-				crit(37674),		-- Bound Stream (The Bastion of Twilight - Elementium Monstrosity)
-				crit(37675),		-- Faceless Minion (The Bastion of Twilight - Cho'gall)
-				crit(37677),		-- Drafty (Throne of the Four Winds - Nezir)
-				crit(37676),		-- Zephyrian Prince (Throne of the Four Winds - Al'Akir)
-				crit(37678),		-- Blazehound (Firelands - Shannox)
-				crit(37679),		-- Cinderweb Recluse (Firelands - Beth'tilac)
-				crit(37680),		-- Surger (Firelands - Baleroc)
-				crit(37681),		-- Infernal Pyreclaw (Firelands - Majordomo Staghelm)
-				crit(37682),		-- Faceless Mindlasher (Dragon Soul - Yor'sahj the Unsleeping)
-				crit(37683),		-- Corrupted Blood (Dragon Soul - Greater Cache of the Aspects from Spine of Deathwing)
-				crit(37684),		-- Unstable Tendril (Dragon Soul - Elementium Fragment from Madness of Deathwing)
+				crit(37670, {		-- Tinytron (Blackwing Descent - Magmatron)
+					["provider"] = { "i", 152966 },
+				}),
+				crit(37671, {		-- Discarded Experiment (Blackwing Descent - Maloriak)
+					["provider"] = { "i", 152967 },
+				}),
+				crit(37672, {		-- Rattlejaw (Blackwing Descent - Nefarian)
+					["provider"] = { "i", 152968 },
+				}),
+				crit(37673, {		-- Twilight Clutch-Sister (The Bastion of Twilight - Valiona)
+					["provider"] = { "i", 152969 },
+				}),
+				crit(37674, {		-- Bound Stream (The Bastion of Twilight - Elementium Monstrosity)
+					["provider"] = { "i", 152970 },
+				}),
+				crit(37675, {		-- Faceless Minion (The Bastion of Twilight - Cho'gall)
+					["provider"] = { "i", 152972 },
+				}),
+				crit(37677, {		-- Drafty (Throne of the Four Winds - Nezir)
+					["provider"] = { "i", 152974 },
+				}),
+				crit(37676, {		-- Zephyrian Prince (Throne of the Four Winds - Al'Akir)
+					["provider"] = { "i", 152973 },
+				}),
+				crit(37678, {		-- Blazehound (Firelands - Shannox)
+					["provider"] = { "i", 152975 },
+				}),
+				crit(37679, {		-- Cinderweb Recluse (Firelands - Beth'tilac)
+					["provider"] = { "i", 152976 },
+				}),
+				crit(37680, {		-- Surger (Firelands - Baleroc)
+					["provider"] = { "i", 152977 },
+				}),
+				crit(37681, {		-- Infernal Pyreclaw (Firelands - Majordomo Staghelm)
+					["provider"] = { "i", 152978 },
+				}),
+				crit(37682, {		-- Faceless Mindlasher (Dragon Soul - Yor'sahj the Unsleeping)
+					["provider"] = { "i", 152979 },
+				}),
+				crit(37683, {		-- Corrupted Blood (Dragon Soul - Greater Cache of the Aspects from Spine of Deathwing)
+					["provider"] = { "i", 152980 },
+				}),
+				crit(37684, {		-- Unstable Tendril (Dragon Soul - Elementium Fragment from Madness of Deathwing)
+					["provider"] = { "i", 152981 },
+				}),
 			},
 		}),
 		ach(11757, {["timeline"] = {ADDED_7_2_0}}),	-- Sha of Fabulous (Heart of Fear and Terrace of Endless Spring)

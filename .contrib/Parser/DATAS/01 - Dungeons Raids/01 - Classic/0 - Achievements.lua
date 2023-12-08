@@ -41,18 +41,42 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			["timeline"] = { ADDED_5_1_0 },
 			["g"] = {
 				i(93031),		-- Mr. Bigglesworth (PET!)
-				crit(22468),		-- Mini Mindslayer (Temple of Ahn'Qiraj - The Prophet Skeram)
-				crit(22469),		-- Anubisath Idol (Temple of Ahn'Qiraj - Emperor Vek'tor)
-				crit(22470),		-- Giant Bone Spider (Naxxramas - Maexxna)
-				crit(22471),		-- Fungal Abomination (Naxxramas - Loatheb)
-				crit(22473),		-- Stitched Pup (Naxxramas - Gluth)
-				crit(22474),		-- Harbinger of Flame (Molten Core - Sulfuron Harbinger)
-				crit(22475),		-- Corefire Imp (Molten Core - Magmadar)
-				crit(22476),		-- Ashstone Core (Molten Core - Golemagg the Incinerator)
-				crit(22477),		-- Untamed Hatchling (Blackwing Lair - Razorgore the Untamed)
-				crit(22478),		-- Chrominius (Blackwing Lair - Chromaggus)
-				crit(22479),		-- Death Talon Whelpguard (Blackwing Lair - Broodlord Lashlayer)
-				crit(22480),		-- Viscidus Globule (Temple of Ahn'Qiraj - Viscidus)
+				crit(22468, {		-- Mini Mindslayer (Temple of Ahn'Qiraj - The Prophet Skeram)
+					["provider"] = { "i", 93041 },
+				}),
+				crit(22469, {		-- Anubisath Idol (Temple of Ahn'Qiraj - Emperor Vek'tor)
+					["provider"] = { "i", 93040 },
+				}),
+				crit(22470, {		-- Giant Bone Spider (Naxxramas - Maexxna)
+					["provider"] = { "i", 93030 },
+				}),
+				crit(22471, {		-- Fungal Abomination (Naxxramas - Loatheb)
+					["provider"] = { "i", 93032 },
+				}),
+				crit(22473, {		-- Stitched Pup (Naxxramas - Gluth)
+					["provider"] = { "i", 93029 },
+				}),
+				crit(22474, {		-- Harbinger of Flame (Molten Core - Sulfuron Harbinger)
+					["provider"] = { "i", 93033 },
+				}),
+				crit(22475, {		-- Corefire Imp (Molten Core - Magmadar)
+					["provider"] = { "i", 93034 },
+				}),
+				crit(22476, {		-- Ashstone Core (Molten Core - Golemagg the Incinerator)
+					["provider"] = { "i", 93035 },
+				}),
+				crit(22477, {		-- Untamed Hatchling (Blackwing Lair - Razorgore the Untamed)
+					["provider"] = { "i", 93036 },
+				}),
+				crit(22478, {		-- Chrominius (Blackwing Lair - Chromaggus)
+					["provider"] = { "i", 93038 },
+				}),
+				crit(22479, {		-- Death Talon Whelpguard (Blackwing Lair - Broodlord Lashlayer)
+					["provider"] = { "i", 93037 },
+				}),
+				crit(22480, {		-- Viscidus Globule (Temple of Ahn'Qiraj - Viscidus)
+					["provider"] = { "i", 93039 },
+				}),
 			},
 		}),
 	}),

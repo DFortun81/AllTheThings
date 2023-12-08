@@ -65,34 +65,78 @@ root(ROOTS.Instances, applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
 			["timeline"] = { ADDED_5_3_0 },
 			["g"] = {
 				i(97558),		-- Tito (PET!)
-				crit(23321),		-- Lil' Bad Wolf (Karazhan - The Big Bad Wolf)
-				crit(23322),		-- Menagerie Custodian (Karazhan - The Curator)
-				crit(23323),		-- Netherspace Abyssal (Karazhan - Prince Malchezaar)
-				crit(23324),		-- Fiendish Imp (Karazhan - Terstian Illhoof)
-				crit(23325),		-- Tideskipper (Serpentshrine Cavern - Morogrim Tidewalker)
-				crit(23326),		-- Tainted Waveling (Serpentshrine Cavern - Hydross the Unstable)
-				crit(23327),		-- Coilfang Stalker (Serpentshrine Cavern - Lady Vashj)
-				crit(23328),		-- Pocket Reaver (The Eye - Void Reaver)
-				crit(23329),		-- Lesser Voidcaller (The Eye - High Astromancer Solarian)
-				crit(23330),		-- Phoenix Hawk Hatchling (The Eye - Al'ar)
+				crit(23321, {		-- Lil' Bad Wolf (Karazhan - The Big Bad Wolf)
+					["provider"] = { "i", 97548 },
+				}),
+				crit(23322, {		-- Menagerie Custodian (Karazhan - The Curator)
+					["provider"] = { "i", 97549 },
+				}),
+				crit(23323, {		-- Netherspace Abyssal (Karazhan - Prince Malchezaar)
+					["provider"] = { "i", 97550 },
+				}),
+				crit(23324, {		-- Fiendish Imp (Karazhan - Terstian Illhoof)
+					["provider"] = { "i", 97551 },
+				}),
+				crit(23325, {		-- Tideskipper (Serpentshrine Cavern - Morogrim Tidewalker)
+					["provider"] = { "i", 97552 },
+				}),
+				crit(23326, {		-- Tainted Waveling (Serpentshrine Cavern - Hydross the Unstable)
+					["provider"] = { "i", 97553 },
+				}),
+				crit(23327, {		-- Coilfang Stalker (Serpentshrine Cavern - Lady Vashj)
+					["provider"] = { "i", 97554 },
+				}),
+				crit(23328, {		-- Pocket Reaver (The Eye - Void Reaver)
+					["provider"] = { "i", 97555 },
+				}),
+				crit(23329, {		-- Lesser Voidcaller (The Eye - High Astromancer Solarian)
+					["provider"] = { "i", 97556 },
+				}),
+				crit(23330, {		-- Phoenix Hawk Hatchling (The Eye - Al'ar)
+					["provider"] = { "i", 97557 },
+				}),
 			},
 		}),
 		ach(9824, {		-- Raiding with Leashes III: Drinkin' From the Sunwell
 			["timeline"] = { ADDED_6_1_0 },
 			["g"] = {
 				i(122116),		-- K'ute (PET!)
-				crit(27567),		-- Grotesque (Hyjal Summit - Azgalor)
-				crit(27568),		-- Leviathan Hatchling (Black Temple - High Warlord Naj'entus)
-				crit(27569),		-- Abyssius (Black Temple - Supremus)
-				crit(27570),		-- Fragment of Anger (Black Temple - Reliquary of the Lost)
-				crit(27571),		-- Fragment of Suffering (Black Temple - Reliquary of the Lost)
-				crit(27572),		-- Fragment of Desire (Black Temple - Reliquary of the Lost)
-				crit(27573),		-- Sister of Temptation (Black Temple - Mother Shahraz)
-				crit(27574),		-- Stinkrot (Hyjal Summit - Anetheron)
-				crit(27575),		-- Hyjal Wisp (Hyjal Summit - Archimonde)
-				crit(27576),		-- Sunblade Micro-Defender (Sunwell Plateau - Brutallus)
-				crit(27577),		-- Chaos Pup (Sunwell Plateau - M'uru)
-				crit(27578),		-- Wretched Servant (Sunwell Plateau - Eredar Twins)
+				crit(27567, {		-- Grotesque (Hyjal Summit - Azgalor)
+					["provider"] = { "i", 122105 },
+				}),
+				crit(27568, {		-- Leviathan Hatchling (Black Temple - High Warlord Naj'entus)
+					["provider"] = { "i", 122104 },
+				}),
+				crit(27569, {		-- Abyssius (Black Temple - Supremus)
+					["provider"] = { "i", 122106 },
+				}),
+				crit(27570, {		-- Fragment of Anger (Black Temple - Reliquary of the Lost)
+					["provider"] = { "i", 122107 },
+				}),
+				crit(27571, {		-- Fragment of Suffering (Black Temple - Reliquary of the Lost)
+					["provider"] = { "i", 122108 },
+				}),
+				crit(27572, {		-- Fragment of Desire (Black Temple - Reliquary of the Lost)
+					["provider"] = { "i", 122109 },
+				}),
+				crit(27573, {		-- Sister of Temptation (Black Temple - Mother Shahraz)
+					["provider"] = { "i", 122110 },
+				}),
+				crit(27574, {		-- Stinkrot (Hyjal Summit - Anetheron)
+					["provider"] = { "i", 122111 },
+				}),
+				crit(27575, {		-- Hyjal Wisp (Hyjal Summit - Archimonde)
+					["provider"] = { "i", 122112 },
+				}),
+				crit(27576, {		-- Sunblade Micro-Defender (Sunwell Plateau - Brutallus)
+					["provider"] = { "i", 122113 },
+				}),
+				crit(27577, {		-- Chaos Pup (Sunwell Plateau - M'uru)
+					["provider"] = { "i", 122114 },
+				}),
+				crit(27578, {		-- Wretched Servant (Sunwell Plateau - Eredar Twins)
+					["provider"] = { "i", 122115 },
+				}),
 			},
 		}),
 	}),

@@ -224,22 +224,54 @@ root(ROOTS.Instances, applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 			["timeline"] = { ADDED_7_1_0 },
 			["g"] = {
 				i(142210),		-- Celestial Invitation (Begins a quest for a pet)
-				crit(34587),		-- Dreadmaw (Trial of the Crusader - Icehowl)
-				crit(34589),		-- Nerubian Swarmer (Trial of the Crusader - Anub'arak)
-				crit(34590),		-- Magma Rageling (Ulduar - Ignis the Furnace Master)
-				crit(34591),		-- Ironbound Proto-Whelp (Ulduar - Razorscale)
-				crit(34592),		-- Runeforged Servitor (Ulduar - Iron Council)
-				crit(34593),		-- Sanctum Cub (Ulduar - Auriaya)
-				crit(34594),		-- Winter Rageling (Ulduar - Cache of Winter from Hodir)
-				crit(34595),		-- Snaplasher (Ulduar - Freya's Gift from Freya)
-				crit(34596),		-- G0-R41-0N Ultratonk (Ulduar - Cache of Innovation from Mimiron)
-				crit(34597),		-- Creeping Tentacle (Ulduar - Yogg-Saron)
-				crit(34598),		-- Boneshard (Icecrown Citadel - Lord Marrowgar)
-				crit(34599),		-- Blood Boil (Icecrown Citadel - Deathbringer's Cache from Deathbringer Saurfang)
-				crit(34600),		-- Blightbreath (Icecrown Citadel - Professor Putricide)
-				crit(34601),		-- Soulbroken Whelpling (Icecrown Citadel - Sindragosa)
-				crit(34602),		-- Drudge Ghoul (Icecrown Citadel - The Lich King)
-				crit(34603),		-- Wicked Soul (Icecrown Citadel - The Lich King)
+				crit(34587, {		-- Dreadmaw (Trial of the Crusader - Icehowl)
+					["provider"] = { "i", 142083 },
+				}),
+				crit(34589, {		-- Nerubian Swarmer (Trial of the Crusader - Anub'arak)
+					["provider"] = { "i", 142085 },
+				}),
+				crit(34590, {		-- Magma Rageling (Ulduar - Ignis the Furnace Master)
+					["provider"] = { "i", 142086 },
+				}),
+				crit(34591, {		-- Ironbound Proto-Whelp (Ulduar - Razorscale)
+					["provider"] = { "i", 142087 },
+				}),
+				crit(34592, {		-- Runeforged Servitor (Ulduar - Iron Council)
+					["provider"] = { "i", 142088 },
+				}),
+				crit(34593, {		-- Sanctum Cub (Ulduar - Auriaya)
+					["provider"] = { "i", 142089 },
+				}),
+				crit(34594, {		-- Winter Rageling (Ulduar - Cache of Winter from Hodir)
+					["provider"] = { "i", 142090 },
+				}),
+				crit(34595, {		-- Snaplasher (Ulduar - Freya's Gift from Freya)
+					["provider"] = { "i", 142091 },
+				}),
+				crit(34596, {		-- G0-R41-0N Ultratonk (Ulduar - Cache of Innovation from Mimiron)
+					["provider"] = { "i", 142092 },
+				}),
+				crit(34597, {		-- Creeping Tentacle (Ulduar - Yogg-Saron)
+					["provider"] = { "i", 142093 },
+				}),
+				crit(34598, {		-- Boneshard (Icecrown Citadel - Lord Marrowgar)
+					["provider"] = { "i", 142094 },
+				}),
+				crit(34599, {		-- Blood Boil (Icecrown Citadel - Deathbringer's Cache from Deathbringer Saurfang)
+					["provider"] = { "i", 142095 },
+				}),
+				crit(34600, {		-- Blightbreath (Icecrown Citadel - Professor Putricide)
+					["provider"] = { "i", 142096 },
+				}),
+				crit(34601, {		-- Soulbroken Whelpling (Icecrown Citadel - Sindragosa)
+					["provider"] = { "i", 142097 },
+				}),
+				crit(34602, {		-- Drudge Ghoul (Icecrown Citadel - The Lich King)
+					["provider"] = { "i", 142098 },
+				}),
+				crit(34603, {		-- Wicked Soul (Icecrown Citadel - The Lich King)
+					["provider"] = { "i", 142099 },
+				}),
 			},
 		}),
 	}),
