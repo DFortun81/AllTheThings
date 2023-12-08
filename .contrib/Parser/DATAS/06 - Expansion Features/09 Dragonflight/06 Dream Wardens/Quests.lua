@@ -18,14 +18,82 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["g"] = {
 						i(210421),	-- Dream Wardens Insignia [Epic 500]
 						i(210872, {	-- Satchel of Dreams
-							["sym"] = {
-								{"select", "itemID", 211389 },	-- Cache of Overblooming Treasures,
-								{"pop"},
-								{"exclude","itemID",211417},	-- Dream Wardens Insignia [Epic 1k]
-								{"exclude","itemID",210243},	-- Technique: Contract: Dream Wardens (RECIPE!)
-							},
 							["g"] = {
 								i(202172),	-- Overflowing Satchel of Coins
+							--	filter(CLOTH, {	 -- Commented out due Tooltip Length
+									i(210349),	-- Frigid Conservator's Gown
+									i(210355),	-- Frigid Conservator's Mitts
+									i(210357),	-- Frigid Conservator's Hood
+									i(210361),	-- Frigid Conservator's Leggings
+									i(210366),	-- Frigid Conservator's Shoulders
+									i(210369),	-- Frigid Conservator's Sash
+									i(210372),	-- Frigid Conservator's Bands
+									i(210382),	-- Frigid Conservator's Wrap (cloak) / will leave it here until non-cloth confirm drop
+									i(210391),	-- Frigid Conservator's Slippers
+							--	}),
+							--	filter(LEATHER, {	-- Commented out due Tooltip Length
+									i(210352),	-- Crystalline Tender's Vest
+									i(210353),	-- Crystalline Tender's Gloves
+									i(210359),	-- Crystalline Tender's Guise
+									i(210363),	-- Crystalline Tender's Trousers
+									i(210364),	-- Crystalline Tender's Shoulderpads
+									i(210371),	-- Crystalline Tender's Belt
+									i(210375),	-- Crystalline Tender's Wristbands
+									i(210381),	-- Crystalline Tender's Shroud (cloak) / will leave it here until non-leather confirm drop
+									i(210393),	-- Crystalline Tender's Boots
+							--	}),
+							--	filter(MAIL, {	-- Commented out due Tooltip Length
+									i(210351),	-- Winter Forager's Chestguard
+									i(210356),	-- Winter Forager's Handguards
+									i(210358),	-- Winter Forager's Helm
+									i(210362),	-- Winter Forager's Legguards
+									i(210367),	-- Winter Forager's Epaulets
+									i(210370),	-- Winter Forager's Waistguard
+									i(210374),	-- Winter Forager's Cuffs
+									i(210392),	-- Winter Forager's Treads
+									i(210407),	-- Winter Forager's Cape (cloak) / will leave it here until non-mail confirm drop
+							--	}),
+							--	filter(PLATE, {	-- Commented out due Tooltip Length
+									i(210348),	-- Arctic Warden's Sabatons
+									i(210350),	-- Arctic Warden's Chestplate
+									i(210354),	-- Arctic Warden's Gauntlets
+									i(210360),	-- Arctic Warden's Legplates
+									i(210365),	-- Arctic Warden's Shoulderplates
+									i(210368),	-- Arctic Warden's Girdle
+									i(210373),	-- Arctic Warden's Bracers
+									i(210390),	-- Arctic Warden's Warhelm
+									i(210408),	-- Arctic Warden's Cloak (cloak) / will leave it here until non-plate confirm drop
+							--	}),
+							--	n(WEAPONS, {	-- Commented out due Tooltip Length
+									i(210394),	-- Cold Conservator's Cane
+									i(210384),	-- Cold Conservator's Implement
+									i(210399),	-- Cold Conservator's Mallet
+									i(210402),	-- Cold Conservator's Wand
+									i(210389),	-- Crystalline Tender's Dirk
+									i(210386),	-- Crystalline Tender's Glaive
+									i(210405),	-- Crystalline Tender's Kris
+									i(210395),	-- Crystalline Tender's Mace
+									i(210385),	-- Frigid Forager's Branch
+									i(210406),	-- Frigid Forager's Claymore
+									i(210397),	-- Frigid Forager's Chopper
+									i(210404),	-- Frigid Forager's Curve
+									i(210396),	-- Frigid Forager's Longbow
+									i(210398),	-- Frigid Forager's Handaxe
+									i(210403),	-- Winter Forager's Spire
+									i(210387),	-- Winter Warden's Blade
+									i(210383),	-- Winter Warden's Bulwark
+									i(210400),	-- Winter Warden's Gavel
+									i(210401),	-- Winter Warden's Greatsword
+							--	}),
+							--	filter(FINGER_F, {	-- Commented out due Tooltip Length
+									i(210376),	-- Beautiful Blizzard Binding
+									i(210378),	-- Rime Ridden Ring
+									i(210377),	-- Snipping Sleet Circle
+							--	}),
+							--	filter(NECK_F, {	-- Commented out due Tooltip Length
+									i(210379),	-- Cold Crisp Collar
+									i(210380),	-- Glittering Gelid Goldchain
+							--	}),
 							},
 						}),
 					},
