@@ -115,7 +115,7 @@ end
 app.PrintTable = function(t,depth)
 	-- only allowing table prints when Debug print is active
 	if not app.Debugging then return; end
-	if not t then print("nil"); return; end
+	if t == nil then print("nil"); return; end
 	if type(t) ~= "table" then print(type(t),t); return; end
 	depth = depth or 0;
 	if depth == 0 then app._PrintTable = {}; end
@@ -2723,7 +2723,7 @@ local ResolveFunctions = {
 		for i=1,vals do
 			val = select(i, ...);
 			cache = Search(field, val, "field", true);
-			if cache then
+			if cache and #cache > 0 then
 				ArrayAppend(searchResults, cache)
 			else
 				app.print("Failed to select ", field, val);
@@ -3772,7 +3772,7 @@ ResolveSymbolicLink = function(o)
 				-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
 				sHash = s.hash;
 				if sHash and sHash == oHash then
-					app.print("Symlink group pulled itself into finalized results!",oHash)
+					app.print("Symlink group pulled itself into finalized results!",oHash,o.key,o.modItemID,o.link or o.text,FinalizeModID)
 					s.sym = nil;
 				else
 					FillSymLinks(s);
@@ -3791,7 +3791,7 @@ ResolveSymbolicLink = function(o)
 				-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
 				sHash = s.hash;
 				if sHash and sHash == oHash then
-					app.print("Symlink group pulled itself into finalized results!",oHash)
+					app.print("Symlink group pulled itself into finalized results!",oHash,o.key,o.modItemID,o.link or o.text)
 					s.sym = nil;
 				else
 					FillSymLinks(s);
