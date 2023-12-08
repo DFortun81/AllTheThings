@@ -17187,10 +17187,11 @@ local function SetRescursiveFilters()
 end
 -- If/when this section becomes a module, set Module.SearchResponse.SearchNil instead
 app.SearchNil = "zsxdcfawoidsajd"
-local MainRoot, UnsortedRoot;
+local MainRoot, UnsortedRoot
 local ClonedHierarchyGroups = {};
 local ClonedHierarachyMapping = {};
 local SearchGroups = {};
+local KeepFields = {}
 local Wrap = app.WrapObject;
 local BaseFilterHeaderClone = app.BaseObjectFields({
 	-- Fields in the wrapped object which should not persist when represented as a Header
@@ -17251,8 +17252,8 @@ local function MatchOrCloneParentInHierarchy(group)
 	end
 end
 -- Builds ClonedHierarchyGroups from an array of Sourced groups
-local function BuildClonedHierarchy(sources, clear)
-	-- app.PrintDebug("BSR:Sourced",sources and #sources, clear)
+local function BuildClonedHierarchy(sources)
+	-- app.PrintDebug("BSR:Sourced",sources and #sources)
 	if not sources then return ClonedHierarchyGroups; end
 	local parent, thing;
 	-- for each source of each Thing with the value
@@ -17263,9 +17264,9 @@ local function BuildClonedHierarchy(sources, clear)
 			parent = MatchOrCloneParentInHierarchy(source.parent);
 			if parent then
 				-- clone the Thing into the cloned parent
-				thing = clear and CreateObject(source, true) or CreateObject(source);
+				thing = not KeepFields.g and CreateObject(source, true) or CreateObject(source);
 				-- don't copy in any extra data for the thing which can pull things into groups, or reference other groups
-				thing.sym = nil;
+				if not KeepFields.sym then thing.sym = nil; end
 				thing.sourceParent = nil;
 				-- need to map the cloned Thing also since it may end up being a parent of another Thing
 				ClonedHierarachyMapping[source] = thing;
@@ -17305,35 +17306,42 @@ local function AddSearchGroupsByFieldValue(groups, field, value)
 	end
 end
 -- Builds ClonedHierarchyGroups from the cached container using groups which match a particular key and value
-local function BuildSearchResponseViaCacheContainer(cacheContainer, value, clear)
+local function BuildSearchResponseViaCacheContainer(cacheContainer, value)
 	-- app.PrintDebug("BSR:Cached",value,clear)
 	if cacheContainer then
 		if value then
 			local sources = cacheContainer[value];
-			BuildClonedHierarchy(sources, clear);
+			BuildClonedHierarchy(sources);
 		else
 			for id,sources in pairs(cacheContainer) do
 				-- each Thing's Sources need to be built
-				BuildClonedHierarchy(sources, clear);
+				BuildClonedHierarchy(sources);
 			end
 		end
 	end
 end
 -- Collects a cloned hierarchy of groups which have the field and/or value within the given field. Specify 'clear' if found groups which match
 -- should additionally clear their contents when being cloned
-function app:BuildSearchResponse(field, value, clear)
+function app:BuildSearchResponse(field, value, clear, keep)
 	MainRoot = app:GetDataCache();
 	if MainRoot then
 		UnsortedRoot = app:GetWindow("Unsorted").data;
 		wipe(ClonedHierarchyGroups);
 		wipe(ClonedHierarachyMapping);
 		wipe(SearchGroups);
+		wipe(KeepFields)
+		KeepFields.g = not clear
+		if keep then
+			for k,v in pairs(keep) do
+				KeepFields[k] = v
+			end
+		end
 
 		-- app.PrintDebug("BSR:",field,value,clear)
 		SetRescursiveFilters();
 		local cacheContainer = app.GetRawFieldContainer(field);
 		if cacheContainer then
-			BuildSearchResponseViaCacheContainer(cacheContainer, value, clear);
+			BuildSearchResponseViaCacheContainer(cacheContainer, value);
 		elseif value ~= nil then
 			-- allow searching specifically for a nil field
 			if value == app.SearchNil then
@@ -17341,11 +17349,11 @@ function app:BuildSearchResponse(field, value, clear)
 			end
 			-- app.PrintDebug("BSR:FieldValue",MainRoot.g and #MainRoot.g,field,value,clear)
 			AddSearchGroupsByFieldValue(MainRoot.g, field, value);
-			BuildClonedHierarchy(SearchGroups, clear);
+			BuildClonedHierarchy(SearchGroups);
 		else
 			-- app.PrintDebug("BSR:Field",MainRoot.g and #MainRoot.g,field,clear)
 			AddSearchGroupsByField(MainRoot.g, field);
-			BuildClonedHierarchy(SearchGroups, clear);
+			BuildClonedHierarchy(SearchGroups);
 		end
 		return ClonedHierarchyGroups;
 	end
