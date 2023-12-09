@@ -1431,6 +1431,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(RARES, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(211965, {	-- Carrodin
+					["coord"] = { 47.6, 64.6, WETLANDS },
+					["groups"] = {
+						i(211205, {	-- Rune of Aspect of the Lion
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410115),	-- Engrave Chest - Aspect of the Lion
+							},
+						}),
+						i(210573, {	-- Rune of Consuming Rage
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425446),	-- Engrave Pants - Consumed by Rage
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(50964, {	-- Chops
 					["coord"] = { 58.0, 8.6, WETLANDS },
 					["timeline"] = { "added 5.1.0.16309" },
