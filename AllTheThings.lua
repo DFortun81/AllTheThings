@@ -1212,6 +1212,7 @@ app.MergeSkipFields = {
 	-- 1 -> only when cloning
 	["e"] = 1,
 	["u"] = 1,
+	["up"] = 1,
 	["pvp"] = 1,
 	["pb"] = 1,
 	["requireSkill"] = 1,
@@ -4468,15 +4469,15 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				-- move from depth 3 to depth 1 to find the set of items which best matches for the root
 				for depth=3,1,-1 do
 					if refinedMatches[depth] then
-						-- print("refined",depth,#refinedMatches[depth])
+						-- app.PrintDebug("refined",depth,#refinedMatches[depth])
 						if not root then
 							for _,o in ipairs(refinedMatches[depth]) do
 								-- object meets filter criteria and is exactly what is being searched
 								if app.RecursiveCharacterRequirementsFilter(o) then
-									-- print("filtered root");
+									-- app.PrintDebug("filtered root");
 									if root then
 										local otherRoot = root;
-										-- print("replace root",otherRoot.key,otherRoot[otherRoot.key]);
+										-- app.PrintDebug("replace root",otherRoot.key,otherRoot[otherRoot.key]);
 										root = o;
 										MergeProperties(root, otherRoot);
 										-- previous root content will be nested after
@@ -4487,7 +4488,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 										root = o;
 									end
 								else
-									-- print("unfiltered root",o.key,o[o.key],o.modItemID,paramB);
+									-- app.PrintDebug("unfiltered root",o.key,o[o.key],o.modItemID,paramB);
 									if root then MergeProperties(root, o, true);
 									else root = o; end
 								end
@@ -4495,7 +4496,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 						else
 							for _,o in ipairs(refinedMatches[depth]) do
 								-- Not accurate matched enough to be the root, so it will be nested
-								-- print("nested")
+								-- app.PrintDebug("nested")
 								tinsert(nested, o);
 							end
 						end
@@ -4545,10 +4546,16 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 		-- Ensure the param values are consistent with the new root object values (basically only affects creatureID)
 		paramA, paramB = root.key, root[root.key];
 		-- Special Case for itemID, need to use the modItemID for accuracy in item matching
-		if paramA == "itemID" then
+		if paramA == "itemID" or paramA == "s" then
 			paramB = root.modItemID or paramB;
+			-- if our item root has a bonusID, then we will rely on upgrade module to provide any upgrade
+			-- raw groups with 'up' will never be sourced with a bonusID
+			local bonusID = root.bonusID
+			if bonusID ~= 3524 and bonusID or 0 > 0 then
+				root.up = nil
 		end
-		-- app.PrintDebug("Root",root.key,root[root.key],root.modItemID);
+		end
+		-- app.PrintDebug("Root",root.key,root[root.key],root.modItemID,root.up,root._up);
 		-- app.PrintTable(root)
 		-- app.PrintDebug("Root Collect",root.collectible,root.collected);
 		-- app.PrintDebug("params",paramA,paramB);
