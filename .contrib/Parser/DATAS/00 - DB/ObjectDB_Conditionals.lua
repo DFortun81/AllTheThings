@@ -1,4 +1,5 @@
-﻿-- PROGRAMMATIC OBJECT LOCALES
+﻿-- #if NOT DEBUG
+-- PROGRAMMATIC OBJECT LOCALES
 -- Brightly Colored Egg
 local brightlyColoredEgg = ObjectDB[113768];
 brightlyColoredEgg.icon = [[~_.asset("Holiday_noblegarden")]];
@@ -162,4 +163,5 @@ ObjectDB[176213].text.es = "Sangre de Héroes";	-- Blood of Heroes
 
 -- #if BEFORE CATA
 ObjectDB[182947].icon = "Interface/Icons/inv_misc_book_06";	-- The Codex of Blood
+-- #endif
 -- #endif
