@@ -850,7 +850,6 @@ root(ROOTS.NeverImplemented, {
 				i(200305),	-- Dracthyr Water Rations
 				i(199833),	-- Dragonhead Eel
 				i(191287),	-- Dragonscale Expedition Crate
-				i(194685),	-- Dragonspring Water
 				i(200850),	-- Dream-Infused Seed
 				i(199101),	-- Dried Wyldermane Kelp
 				i(200554),	-- Dropcap Head
@@ -1093,7 +1092,6 @@ root(ROOTS.NeverImplemented, {
 				i(201216),	-- Crumbled Elemental Spark
 				i(193384),	-- Crumbling Bone
 				i(192746),	-- Curio of Yore
-				i(192651),	-- Damaged Core
 				i(200532),	-- Damaged Qiraji Ring
 				i(193385),	-- Decaying Resin
 				i(201188),	-- Deceased Critter
@@ -1170,7 +1168,6 @@ root(ROOTS.NeverImplemented, {
 				i(201196),	-- Pretty Flower
 				i(201194),	-- Pumice Hand Chalk
 				i(192706),	-- Razor Quill
-				i(192605),	-- Reptilian Fang
 				i(192718),	-- Rock-Hard Eggshell
 				i(192650),	-- Roomy Shell
 				i(201186),	-- Rope Bonds
@@ -1228,12 +1225,10 @@ root(ROOTS.NeverImplemented, {
 				i(192665),	-- Torn Dragon Wing
 				i(192728),	-- Undamaged Silk Gland
 				i(192729),	-- Unhinged Mandible
-				i(192674),	-- Unknown Titan Mechanism
 				i(192730),	-- Unstable Arcane Essence
 				i(201168),	-- Untainted Scales
 				i(201424),	-- Unusable Plant Matter
 				i(192731),	-- Venomous Fang
-				i(192675),	-- Winglet
 				i(201177),	-- Wooden Eagle Statue
 				i(200531),	-- Worn Chitin Fragment
 			})),

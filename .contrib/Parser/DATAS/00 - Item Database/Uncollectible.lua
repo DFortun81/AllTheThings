@@ -564,6 +564,10 @@ i(192695);	-- Molten Mandible
 ------------------
 -- PATCH 10.0.0 --
 ------------------
+--- Vendor (White) ---
+i(194685);	-- Dragonspring Water
+
+--- Trash ---
 i(194537);	-- Fiddle with Draconium Fabric Cutters
 i(194538);	-- Fiddle with Khaz'gorite Fabric Cutters
 i(198390);	-- Milling
@@ -596,6 +600,7 @@ i(200853);	-- How to Grow a Tree in 10 Days
 ------------------
 i(201926);	-- Crushing
 --- Trash ---
+i(192605);	-- Reptilian Fang
 i(192610);	-- Beady Woodland Eye
 i(192622);	-- Massive Beast Eye
 i(192623);	-- Massive Proto-Dragon Claw
@@ -606,8 +611,11 @@ i(192630);	-- Reef Carapace
 i(192632);	-- Sharp Bird Talon
 i(199206);	-- Shattered Adamant Scales
 i(192634);	-- Smashed Metal Scraps
+i(192651);	-- Damaged Core
 i(192657);	-- Hardy Cloven Hoof
 i(192673);	-- Torn Ear
+i(192674);	-- Unknown Titan Mechanism
+i(192675);	-- Winglet
 i(192717);	-- Animated Splinter
 i(201209);	-- Nibbled Fish Head
 -- Wierd

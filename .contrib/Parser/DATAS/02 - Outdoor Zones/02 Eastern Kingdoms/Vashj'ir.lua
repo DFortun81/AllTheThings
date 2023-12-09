@@ -1739,7 +1739,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(27716, {	-- Piece of the Past (A)
 							["provider"] = { "i", 62281 },	-- Ancient Elven Etching (A)
-							["sourceQuest"] = 25747,	-- Looking Forward
+							["sourceQuest"] = 25540,	-- Bellies Await
 							["races"] = ALLIANCE_ONLY,
 							["crs"] = {
 								41227,	-- Azsh'ir Infantry
