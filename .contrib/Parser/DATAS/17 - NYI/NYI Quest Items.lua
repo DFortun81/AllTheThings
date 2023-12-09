@@ -232,7 +232,6 @@ root(ROOTS.NeverImplemented, {
 				i(193402),	-- Decatriarch's Fetish
 				i(191086),	-- Decayed Flower
 				i(187855),	-- Decayed Rations
-				i(197950),	-- Deepminted Coin
 				i(200561),	-- Deepwater Lure
 				i(200124),	-- Disoriented Wishtail
 				i(194899),	-- Dispelling Wand

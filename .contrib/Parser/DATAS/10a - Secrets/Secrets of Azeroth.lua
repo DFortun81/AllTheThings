@@ -607,7 +607,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 			}),
 			q(77822, {	-- A Titanic Mold
 				["provider"] = { "i", 208827 },	-- Titan Key Mold
-				["sourceQuest"] = 77653,	-- A Key Story
+				-- ["sourceQuest"] = 77653,	-- A Key Story
 			}),
 
 			-- Day 9 --

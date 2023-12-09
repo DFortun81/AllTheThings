@@ -181,8 +181,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(74877, {	-- Best Friends
 						["sourceQuests"] = {
 							74876,	-- The Buddy System
-							75459,	-- Brand New Digs
+							DF_ACCOUNT_ZC_UNLOCK_QUEST,
 						},
+						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 201426 },	-- Myrrit
 						["coord"] = { 55.6, 57.4, ZARALEK_CAVERN },
 						["cost"] = { { "i", 204791, 1 } },	-- 1x Squishy Snack

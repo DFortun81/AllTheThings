@@ -204,8 +204,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 26.4, 62.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 					["g"] = {
-						i(197946),	-- Dragonforged Poker
-						i(197959),	-- Lavafused Armor
+						i(197946),	-- Dragonforged Poker (QI!)
+						i(197959),	-- Lavafused Armor (QI!)
+						i(197950),	-- Deepminted Coin (QI!)
 					},
 				}),
 				q(65842, {	-- Disarming Behavior

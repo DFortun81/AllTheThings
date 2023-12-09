@@ -1440,7 +1440,6 @@ root(ROOTS.Unsorted, {
 				q(76082),	--
 				q(76108),	--
 				q(76111),	-- Ensemble: Enmity Hood and Cloak
-				q(76112),	--
 				q(76113),	--
 				q(76114),	--
 				q(76123),	--
