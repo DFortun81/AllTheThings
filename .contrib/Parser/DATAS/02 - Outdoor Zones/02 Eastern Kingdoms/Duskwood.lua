@@ -1820,7 +1820,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 25.6, 30.2, DUSKWOOD },
 					-- #elseif AFTER 10.1.7
 					["description"] = "Spawns in one of multiple locations in the Dawning Wood Catacombs.",
-					["coord"] = {
+					["coords"] = {
 						{ 24.2, 34.5, DUSKWOOD },
 						{ 25.6, 30.2, DUSKWOOD },
 						{ 20.3, 26.8, DUSKWOOD },

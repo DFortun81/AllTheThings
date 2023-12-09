@@ -1455,7 +1455,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Marshal Haggard's Badge
-							["provider"] = { "i", 6782 },	-- Marshal Haggard's Badge
+							["providers"] = {
+								{ "i", 6782 },	-- Marshal Haggard's Badge
+								{ "o", 85563 },	-- Dead-tooth's Strongbox
+							},
 							["cost"] = { { "i", 6783, 1 } },	-- Dead-tooth's Key
 							["coord"] = { 89.2, 80.6, ELWYNN_FOREST },
 							["cr"] = 6093,	-- Dead-Tooth Jack
