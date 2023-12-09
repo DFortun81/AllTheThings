@@ -950,8 +950,10 @@ app:GetWindow("Synchronization", {
 		-- Cache the current character's BattleTag. 
 		if BNGetInfo then
 			local battleTag = select(2, BNGetInfo());
-			SilentlyLinkedCharacters[battleTag] = true;
-			CurrentCharacter.battleTag = battleTag;
+			if battleTag then
+				SilentlyLinkedCharacters[battleTag] = true;
+				CurrentCharacter.battleTag = battleTag;
+			end
 		end
 		
 		-- Register for Addon Messaging
