@@ -24,8 +24,6 @@ app:GetWindow("RemovedFromGame", {
 			indent = 0,
 			g = { },
 			OnUpdate = function(data)
-				local oldFilter = ATTClassicSettings.Unobtainables[2];
-				ATTClassicSettings.Unobtainables[2] = true;
 				local g = data.g;
 				if #g < 1 then
 					local results = app:BuildSearchResponse(app:GetDataCache().g, "u", 2);
@@ -35,9 +33,16 @@ app:GetWindow("RemovedFromGame", {
 						end
 					end
 				end
-				ATTClassicSettings.Unobtainables[2] = oldFilter;
 			end,
 		};
 		return true;
 	end,
+	OnUpdate = function(self, ...)
+		-- Update the groups without the Removed From Game filter turned on.
+		local oldFilter = ATTClassicSettings.Unobtainables[2];
+		ATTClassicSettings.Unobtainables[2] = true;
+		self:DefaultUpdate(...);
+		ATTClassicSettings.Unobtainables[2] = oldFilter;
+		return false;
+	end
 });
