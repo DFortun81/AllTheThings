@@ -601,14 +601,19 @@ i(200853);	-- How to Grow a Tree in 10 Days
 i(201926);	-- Crushing
 --- Trash ---
 i(192605);	-- Reptilian Fang
+i(192608);	-- Ancient Resin
+i(192609);	-- Swim Bladder
 i(192610);	-- Beady Woodland Eye
 i(192622);	-- Massive Beast Eye
 i(192623);	-- Massive Proto-Dragon Claw
 i(192626);	-- Mound of Dust
 i(192629);	-- Primal Beast Claw
-i(192662);	-- Pyretic Speck
 i(192630);	-- Reef Carapace
 i(192632);	-- Sharp Bird Talon
+i(192653);	-- Floppy Molten Ear
+i(192662);	-- Pyretic Speck
+i(192666);	-- Severed Roots
+i(192672);	-- Tattered Proto-Wing
 i(199206);	-- Shattered Adamant Scales
 i(192634);	-- Smashed Metal Scraps
 i(192651);	-- Damaged Core
@@ -617,7 +622,12 @@ i(192673);	-- Torn Ear
 i(192674);	-- Unknown Titan Mechanism
 i(192675);	-- Winglet
 i(192717);	-- Animated Splinter
+i(199476);	-- Singed Cloth Scraps
+i(200105);	-- Muck Covered Flotsam
+i(200106);	-- Slimy Old Boot
 i(201209);	-- Nibbled Fish Head
+i(201222);	-- Smooth Seashell
+i(201424);	-- Unusable Plant Matter
 -- Wierd
 i(202108);	-- Bouncing Bass
 

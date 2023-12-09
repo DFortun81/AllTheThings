@@ -975,7 +975,6 @@ root(ROOTS.NeverImplemented, {
 				i(200851),	-- Self-Trimming Bonsai
 				i(191849),	-- Serevite Angle Iron
 				i(200802),	-- Signet of the Dragonflights
-				i(199476),	-- Singed Cloth Scraps
 				i(200764),	-- Slimy Shinies
 				i(191412),	-- Small Expedition Pick
 				i(199832),	-- Smoked Seaviper
@@ -1065,7 +1064,6 @@ root(ROOTS.NeverImplemented, {
 				i(193389),	-- Adamantine Core
 				i(201210),	-- Albino Feather
 				i(192604),	-- Ancient Lantern
-				i(192608),	-- Ancient Resin
 				i(201220),	-- Ancient Tool
 				i(192684),	-- Ancient War Tusk
 				i(193450),	-- Arakkoa Doll
@@ -1112,7 +1110,6 @@ root(ROOTS.NeverImplemented, {
 				i(201174),	-- Fantastic Jewel
 				i(192693),	-- First Heads Horn
 				i(200937),	-- Flavorful Soup Bone
-				i(192653),	-- Floppy Molten Ear
 				i(192697),	-- Fluffy Ear
 				i(201206),	-- Fresh Meat Lump
 				i(192700),	-- Frozen Dorsal Spike
@@ -1144,7 +1141,6 @@ root(ROOTS.NeverImplemented, {
 				i(192660),	-- Massive Hydra Claw
 				i(192709),	-- Membranous Wing
 				i(192714),	-- Mgrrrl
-				i(200105),	-- Muck Covered Flotsam
 				i(200933),	-- Mushy Vegtable
 				i(193410),	-- Nauseating Stinger
 				i(192710),	-- Nearly Unbreakable Horn
@@ -1178,7 +1174,6 @@ root(ROOTS.NeverImplemented, {
 				i(192690),	-- Serrated Limb
 				i(192664),	-- Serrated Pincer
 				i(201182),	-- Serrated Stone
-				i(192666),	-- Severed Roots
 				i(201207),	-- Shells in a Conch
 				i(201162),	-- Shiny Metal Scraps
 				i(192668),	-- Short Rib
@@ -1186,10 +1181,8 @@ root(ROOTS.NeverImplemented, {
 				i(201201),	-- Skull Pendant
 				i(192720),	-- Slender Twisting Horn
 				i(192683),	-- Slimy Frog Eggs
-				i(200106),	-- Slimy Old Boot
 				i(192633),	-- Slit-Shaped Pupil
 				i(201221),	-- Small Titan Mechanism
-				i(201222),	-- Smooth Seashell
 				i(201179),	-- Snapped Tusk Tip
 				i(193387),	-- Solar Battery
 				i(201213),	-- Sparkling Stone
@@ -1205,9 +1198,7 @@ root(ROOTS.NeverImplemented, {
 				i(201970),	-- Stolen Illidari Blindfold
 				i(201167),	-- Stone Calendar
 				i(192671),	-- Sublime Flower
-				i(192609),	-- Swim Bladder
 				i(200107),	-- Tarnished Engagement Ring
-				i(192672),	-- Tattered Proto-Wing
 				i(201224),	-- Tauren Horn
 				i(192647),	-- Terrene Speck
 				i(192724),	-- Terrifying Teeth
@@ -1227,7 +1218,6 @@ root(ROOTS.NeverImplemented, {
 				i(192729),	-- Unhinged Mandible
 				i(192730),	-- Unstable Arcane Essence
 				i(201168),	-- Untainted Scales
-				i(201424),	-- Unusable Plant Matter
 				i(192731),	-- Venomous Fang
 				i(201177),	-- Wooden Eagle Statue
 				i(200531),	-- Worn Chitin Fragment
