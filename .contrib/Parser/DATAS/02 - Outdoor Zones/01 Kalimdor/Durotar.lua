@@ -3293,7 +3293,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(204441, {	-- Rune of Blood Frenzy
-							["races"] = { WARRIOR },
+							["classes"] = { WARRIOR },
 							["groups"] = {
 								recipe(403474),	-- Engrave Chest - Blood Frenzy
 							},
