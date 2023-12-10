@@ -288,6 +288,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(5641, {	-- A Lack of Fear
+					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
+					["coord"] = { 25, 8.2, IRONFORGE },
+					["altQuests"] = {
+						5647,	-- A Lack of Fear [Darnassus]
+						5645,	-- A Lack of Fear [Stormwind City]
+					},
+					["timeline"] = { "removed 2.3.0" },
+					["classes"] = { PRIEST },
+					["races"] = { DWARF },
+					["lvl"] = 20,
+					-- #if BEFORE 2.3.0
+					["groups"] = {
+						recipe(6346),	-- Fear Ward
+					},
+					-- #endif
+				}),
 				q(4512, {	-- A Little Slime Goes a Long Way (1/2)
 					["qg"] = 9616,	-- Laris Geardawdle
 					["coord"] = { 75.4, 23.4, IRONFORGE },
@@ -988,8 +1005,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				q(2997, {	-- The Tome of Divinity [Dun Morogh]
+					["qg"] = 1232,	-- Azar Stronghammer <Paladin Trainer>
+					["coord"] = { 47.6, 52, DUN_MOROGH },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { DWARF },
+					["classes"] = { PALADIN },
+					["isBreadcrumb"] = true,
+					["lvl"] = 12,
+				}),
+				q(2999, {	-- The Tome of Divinity [Ironforge]
+					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
+					["coord"] = { 23.4, 6.2, IRONFORGE },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { DWARF },
+					["classes"] = { PALADIN },
+					["isBreadcrumb"] = true,
+					["lvl"] = 12,
+				}),
+				q(3000, {	-- The Tome of Divinity [Stormwind City]
+					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					["coord"] = { 37.2, 33, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { DWARF },
+					["classes"] = { PALADIN },
+					["isBreadcrumb"] = true,
+					["lvl"] = 12,
+				}),
 				q(1645, {	-- The Tome of Divinity (1a/8)
 					["qg"] = 6179,	-- Tiza Battleforge
+					["sourceQuests"] = {
+						2999,	-- The Tome of Divinity [Ironforge]
+						3000,	-- The Tome of Divinity [Stormwind City]
+					},
 					["altQuests"] = { 1646 },	-- The Tome of Divinity (2/8)
 					["coord"] = { 27.4, 12, IRONFORGE },
 					["timeline"] = { "removed 4.0.3" },

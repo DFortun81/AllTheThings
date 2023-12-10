@@ -155,6 +155,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				},
+				q(5647, {	-- A Lack of Fear
+					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
+					["coord"] = { 39.2, 81, DARNASSUS },
+					["altQuests"] = {
+						5641,	-- A Lack of Fear [Ironforge]
+						5645,	-- A Lack of Fear [Stormwind City]
+					},
+					["timeline"] = { "removed 2.3.0" },
+					["maps"] = { IRONFORGE },
+					["classes"] = { PRIEST },
+					["races"] = { DWARF },
+					["lvl"] = 20,
+					-- #if BEFORE 2.3.0
+					["groups"] = {
+						recipe(6346),	-- Fear Ward
+					},
+					-- #endif
+				}),
 				q(29325, {	-- A Slippery Snack
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },

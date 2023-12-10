@@ -294,6 +294,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 7.2.0.23746" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(5645, {	-- A Lack of Fear
+					["qg"] = 376,	-- High Priestess Laurena <Priest Trainer>
+					["coord"] = { 38.8, 26.4, STORMWIND_CITY },
+					["altQuests"] = {
+						5647,	-- A Lack of Fear [Darnassus]
+						5641,	-- A Lack of Fear [Ironforge]
+					},
+					["timeline"] = { "removed 2.3.0" },
+					["maps"] = { IRONFORGE },
+					["classes"] = { PRIEST },
+					["races"] = { DWARF },
+					["lvl"] = 20,
+					-- #if BEFORE 2.3.0
+					["groups"] = {
+						recipe(6346),	-- Fear Ward
+					},
+					-- #endif
+				}),
 				q(212, {	-- A Meal Served Cold
 					["qg"] = 1141,	-- Angus Stern
 					-- #if AFTER WRATH
