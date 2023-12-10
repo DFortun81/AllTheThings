@@ -3204,13 +3204,11 @@ end
 -- Subroutine Logic Cache
 local SubroutineCache = {
 	["pvp_gear_base"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2)
-		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
+		local select, find = ResolveFunctions.select, ResolveFunctions.find
 		select(finalized, searchResults, o, "select", "tierID", tierID);	-- Select the Expansion header
-		pop(finalized, searchResults);	-- Discard the Expansion header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", headerID1);	-- Select the Season header
+		find(finalized, searchResults, o, "find", "headerID", headerID1);	-- Find the Season header
 		if headerID2 then
-			pop(finalized, searchResults);	-- Discard the Season header and acquire the children.
-			where(finalized, searchResults, o, "where", "headerID", headerID2);	-- Select the Set header
+			find(finalized, searchResults, o, "find", "headerID", headerID2);	-- Find the Set header
 		end
 	end,
 	["pvp_gear_faction_base"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2, headerID3)
@@ -3716,15 +3714,16 @@ ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
 end;
 local ResolveCache = {};
 ResolveSymbolicLink = function(o)
-	local oHash, oKey, oSym = o.hash, o.key, o.sym;
+	local oSym = o.sym
+	if not oSym then return end
+
+	local oHash, oKey = o.hash, o.key;
 	if o.resolved or (oKey and app.ThingKeys[oKey] and ResolveCache[oHash]) then
 		-- app.PrintDebug(o.resolved and "Object Resolve" or "Cache Resolve",oHash,#(o.resolved or ResolveCache[oHash]))
 		local cloned = {};
 		MergeObjects(cloned, o.resolved or ResolveCache[oHash], true);
 		return cloned;
 	end
-
-	if not oSym then return end
 
 	FinalizeModID = nil;
 	PruneFinalized = nil;

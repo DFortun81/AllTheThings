@@ -7744,6 +7744,7 @@ root(ROOTS.PVP, {
 				}),
 				n(PVP_GLADIATOR, {
 					cl(DEATHKNIGHT, {
+						-- TODO: fix Fierce PvP listing to match other seasons...
 						i(149483, {	-- Ensemble: Fierce Gladiator's Dreadplate Armor (A)
 							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction. An ensemble might not grant every itemID, which neither ATT nor Blizzard can fix.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor

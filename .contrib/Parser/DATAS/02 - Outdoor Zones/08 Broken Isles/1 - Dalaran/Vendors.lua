@@ -1,6 +1,17 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+
+local function Sym_PvPSeasonRankSlots(SEASON, RANK, ...)
+	return {
+		{"sub", "pvp_gear_base", LEGION_TIER, SEASON, RANK },
+		{"merge"},
+		{"pop"},	-- Discard the Set header and acquire the children.
+		{"pop"},	-- Discard the Class header and acquire the children.
+		{"invtype", ... },
+	}
+end
+
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(LEGION_DALARAN, {
@@ -4662,246 +4673,111 @@ root(ROOTS.Zones, {
 							["g"] = {
 								i(149424, {	-- Helm of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_HEAD" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_HEAD"),
 								}),
 								i(149427, {	-- Pauldrons of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_SHOULDER" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
 								}),
 								i(149432, {	-- Cloak of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_CLOAK" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_CLOAK"),
 								}),
 								i(149425, {	-- Chest of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149431, {	-- Bracers of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_WRIST" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_WRIST"),
 								}),
 								i(149428, {	-- Gloves of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_HAND" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_HAND"),
 								}),
 								i(149429, {	-- Cinch of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_WAIST" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_WAIST"),
 								}),
 								i(149426, {	-- Leggings of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_LEGS" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_LEGS"),
 								}),
 								i(149430, {	-- Treads of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_FEET" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_FEET"),
 								}),
 								i(149406, {	-- Helm of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_HEAD" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_HEAD"),
 								}),
 								i(149409, {	-- Pauldrons of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_SHOULDER" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
 								}),
 								i(149414, {	-- Cloak of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_CLOAK" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_CLOAK"),
 								}),
 								i(149407, {	-- Chest of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149413, {	-- Bracers of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_WRIST" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_WRIST"),
 								}),
 								i(149410, {	-- Gloves of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_HAND" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_HAND"),
 								}),
 								i(149411, {	-- Cinch of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_WAIST" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_WAIST"),
 								}),
 								i(149408, {	-- Leggings of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_LEGS" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_LEGS"),
 								}),
 								i(149412, {	-- Treads of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_FEET" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_FEET"),
 								}),
 								i(149388, {	-- Helm of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_HEAD" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_HEAD"),
 								}),
 								i(149391, {	-- Pauldrons of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_SHOULDER" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
 								}),
 								i(149396, {	-- Cloak of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_CLOAK" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_CLOAK"),
 								}),
 								i(149389, {	-- Chest of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149395, {	-- Bracers of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_WRIST" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_WRIST"),
 								}),
 								i(149392, {	-- Gloves of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_HAND" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_HAND"),
 								}),
 								i(149393, {	-- Cinch of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_WAIST" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_WAIST"),
 								}),
 								i(149390, {	-- Leggings of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_LEGS" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_LEGS"),
 								}),
 								i(149394, {	-- Treads of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_FEET" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_FEET"),
 								}),
 							},
 						}),
@@ -4911,7 +4787,7 @@ root(ROOTS.Zones, {
 								i(149433, {	-- Helm of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HEAD" },
@@ -4920,7 +4796,7 @@ root(ROOTS.Zones, {
 								i(149436, {	-- Pauldrons of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_SHOULDER" },
@@ -4929,7 +4805,7 @@ root(ROOTS.Zones, {
 								i(149441, {	-- Cloak of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CLOAK" },
@@ -4938,7 +4814,7 @@ root(ROOTS.Zones, {
 								i(149434, {	-- Chest of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
@@ -4947,7 +4823,7 @@ root(ROOTS.Zones, {
 								i(149440, {	-- Bracers of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WRIST" },
@@ -4956,7 +4832,7 @@ root(ROOTS.Zones, {
 								i(149437, {	-- Gloves of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HAND" },
@@ -4965,7 +4841,7 @@ root(ROOTS.Zones, {
 								i(149438, {	-- Cinch of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WAIST" },
@@ -4974,7 +4850,7 @@ root(ROOTS.Zones, {
 								i(149435, {	-- Leggings of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_LEGS" },
@@ -4983,7 +4859,7 @@ root(ROOTS.Zones, {
 								i(149439, {	-- Treads of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_FEET" },
@@ -4992,7 +4868,7 @@ root(ROOTS.Zones, {
 								i(149415, {	-- Helm of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HEAD" },
@@ -5001,7 +4877,7 @@ root(ROOTS.Zones, {
 								i(149418, {	-- Pauldrons of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_SHOULDER" },
@@ -5010,7 +4886,7 @@ root(ROOTS.Zones, {
 								i(149423, {	-- Cloak of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CLOAK" },
@@ -5019,7 +4895,7 @@ root(ROOTS.Zones, {
 								i(149416, {	-- Chest of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
@@ -5028,7 +4904,7 @@ root(ROOTS.Zones, {
 								i(149422, {	-- Bracers of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WRIST" },
@@ -5037,7 +4913,7 @@ root(ROOTS.Zones, {
 								i(149419, {	-- Gloves of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HAND" },
@@ -5046,7 +4922,7 @@ root(ROOTS.Zones, {
 								i(149420, {	-- Cinch of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WAIST" },
@@ -5055,7 +4931,7 @@ root(ROOTS.Zones, {
 								i(149417, {	-- Leggings of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_LEGS" },
@@ -5064,7 +4940,7 @@ root(ROOTS.Zones, {
 								i(149421, {	-- Treads of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_FEET" },
@@ -5073,7 +4949,7 @@ root(ROOTS.Zones, {
 								i(149397, {	-- Helm of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HEAD" },
@@ -5082,7 +4958,7 @@ root(ROOTS.Zones, {
 								i(149400, {	-- Pauldrons of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_SHOULDER" },
@@ -5091,7 +4967,7 @@ root(ROOTS.Zones, {
 								i(149405, {	-- Cloak of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CLOAK" },
@@ -5100,7 +4976,7 @@ root(ROOTS.Zones, {
 								i(149398, {	-- Chest of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
@@ -5109,7 +4985,7 @@ root(ROOTS.Zones, {
 								i(149404, {	-- Bracers of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WRIST" },
@@ -5118,7 +4994,7 @@ root(ROOTS.Zones, {
 								i(149401, {	-- Gloves of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_HAND" },
@@ -5127,7 +5003,7 @@ root(ROOTS.Zones, {
 								i(149402, {	-- Cinch of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_WAIST" },
@@ -5136,7 +5012,7 @@ root(ROOTS.Zones, {
 								i(149399, {	-- Leggings of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_LEGS" },
@@ -5145,7 +5021,7 @@ root(ROOTS.Zones, {
 								i(149403, {	-- Treads of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
 									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },
+										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_ALLIANCE, PVP_ELITE },{"merge"},
 										{"pop"},	-- Discard the Set header and acquire the children.
 										{"pop"},	-- Discard the Class header and acquire the children.
 										{"invtype", "INVTYPE_FEET" },
@@ -6157,246 +6033,111 @@ root(ROOTS.Zones, {
 							["g"] = {
 								i(149424, {	-- Helm of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_HEAD" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_HEAD"),
 								}),
 								i(149427, {	-- Pauldrons of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_SHOULDER" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
 								}),
 								i(149432, {	-- Cloak of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_CLOAK" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_CLOAK"),
 								}),
 								i(149425, {	-- Chest of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149431, {	-- Bracers of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_WRIST" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_WRIST"),
 								}),
 								i(149428, {	-- Gloves of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_HAND" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_HAND"),
 								}),
 								i(149429, {	-- Cinch of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_WAIST" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_WAIST"),
 								}),
 								i(149426, {	-- Leggings of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_LEGS" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_LEGS"),
 								}),
 								i(149430, {	-- Treads of the Demonic Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in BFA Season 1
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DEMONIC, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_FEET" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DEMONIC, PVP_GLADIATOR, "INVTYPE_FEET"),
 								}),
 								i(149406, {	-- Helm of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_HEAD" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_HEAD"),
 								}),
 								i(149409, {	-- Pauldrons of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_SHOULDER" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
 								}),
 								i(149414, {	-- Cloak of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_CLOAK" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_CLOAK"),
 								}),
 								i(149407, {	-- Chest of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149413, {	-- Bracers of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_WRIST" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_WRIST"),
 								}),
 								i(149410, {	-- Gloves of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_HAND" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_HAND"),
 								}),
 								i(149411, {	-- Cinch of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_WAIST" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_WAIST"),
 								}),
 								i(149408, {	-- Leggings of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_LEGS" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_LEGS"),
 								}),
 								i(149412, {	-- Treads of the Dominant Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 7
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_DOMINANT, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_FEET" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_DOMINANT, PVP_GLADIATOR, "INVTYPE_FEET"),
 								}),
 								i(149388, {	-- Helm of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_HEAD" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_HEAD"),
 								}),
 								i(149391, {	-- Pauldrons of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_SHOULDER" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_SHOULDER"),
 								}),
 								i(149396, {	-- Cloak of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_CLOAK" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_CLOAK"),
 								}),
 								i(149389, {	-- Chest of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_CHEST", "INVTYPE_ROBE"),
 								}),
 								i(149395, {	-- Bracers of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_WRIST" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_WRIST"),
 								}),
 								i(149392, {	-- Gloves of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_HAND" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_HAND"),
 								}),
 								i(149393, {	-- Cinch of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_WAIST" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_WAIST"),
 								}),
 								i(149390, {	-- Leggings of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_LEGS" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_LEGS"),
 								}),
 								i(149394, {	-- Treads of the Fierce Gladiator
 									["u"] = REMOVED_FROM_GAME,	-- Removed in Legion Season 6
-									["sym"] = {
-										{"sub", "pvp_gear_faction_base", LEGION_TIER, SEASON_FIERCE, FACTION_HEADER_HORDE, PVP_GLADIATOR },
-										{"pop"},	-- Discard the Set header and acquire the children.
-										{"pop"},	-- Discard the Class header and acquire the children.
-										{"invtype", "INVTYPE_FEET" },
-									},
+									["sym"] = Sym_PvPSeasonRankSlots(SEASON_FIERCE, PVP_GLADIATOR, "INVTYPE_FEET"),
 								}),
 							},
 						}),
