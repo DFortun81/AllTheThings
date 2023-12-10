@@ -20,9 +20,6 @@ local function BuildGroups(parent)
 		end
 	end
 end
-local function IsQuestieLoaded()
-	return Questie and Questie.started;
-end
 
 -- Implementation
 app:GetWindow("Compare Questie DB", {
@@ -146,7 +143,7 @@ app:GetWindow("Compare Questie DB", {
 		};
 		app:StartATTCoroutine("Waiting For Questie...", function()
 			coroutine.yield();
-			while not IsQuestieLoaded() do
+			while not (Questie and Questie.started) do
 				coroutine.yield();
 			end
 			self.IsQuestieLoaded = true;
