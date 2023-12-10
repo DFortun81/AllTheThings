@@ -796,7 +796,6 @@ root(ROOTS.NeverImplemented, {
 				i(200804),	-- Ancestor's Scales
 				i(199105),	-- Ancheevy
 				i(194689),	-- Anchovy Crisps
-				i(192646),	-- Aqueous Speck
 				i(195455),	-- Argali Cheese
 				i(195459),	-- Argali Milk
 				i(198141),	-- Astral Essence
@@ -805,7 +804,6 @@ root(ROOTS.NeverImplemented, {
 				i(200766),	-- Bakar Fangs
 				i(192127),	-- Basilisk Eggs
 				i(191069),	-- Beacon of the Black Prince
-				i(200789),	-- Beckoning Kite
 				i(200782),	-- Bejeweled Horseshoes
 				i(199186),	-- Bewitched Wood
 				i(200697),	-- Blightshroom
@@ -821,7 +819,6 @@ root(ROOTS.NeverImplemented, {
 				i(198688),	-- Catnip Leaf
 				i(200821),	-- Celsius 232
 				i(200691),	-- Claw Thistle Barbs
-				i(199212),	-- Clubfish
 				i(200811),	-- Congealed Sap Droplet
 				i(200814),	-- Congealing Shard
 				i(198832),	-- Conjured Blubbery Muffin
@@ -848,10 +845,8 @@ root(ROOTS.NeverImplemented, {
 				i(194692),	-- Distilled Fish Juice
 				i(200262),	-- Do-It-Yourself Part Building Kit
 				i(200305),	-- Dracthyr Water Rations
-				i(199833),	-- Dragonhead Eel
 				i(191287),	-- Dragonscale Expedition Crate
 				i(200850),	-- Dream-Infused Seed
-				i(199101),	-- Dried Wyldermane Kelp
 				i(200554),	-- Dropcap Head
 				i(201722),	-- Edicts of the Prime Designate, Volume 742
 				i(194678),	-- Elemental Crystal
@@ -886,11 +881,9 @@ root(ROOTS.NeverImplemented, {
 				i(197847),	-- Gorloc Fin Soup
 				i(200704),	-- Gratona Seed
 				i(196583),	-- Greenberry Toast
-				i(199208),	-- Grungle
 				i(200607),	-- Half-Eaten Banana
 				i(197848),	-- Hearty Squash Stew
 				i(200845),	-- Heavily Deformed Mace
-				i(199102),	-- Hunk o' Blubber
 				i(200784),	-- Hunting Trophies
 				i(200589),	-- Hydro Life Seed
 				i(199207),	-- Iceback Sculpin
@@ -907,7 +900,6 @@ root(ROOTS.NeverImplemented, {
 				i(194680),	-- Jerky Surprise
 				i(196182),	-- Journal Entry
 				i(198840),	-- Kalecite Cluster
-				i(199213),	-- Lakkamuk Blenny
 				i(200935),	-- Large Egg Shell
 				i(200778),	-- Lava Blowing for Dummies
 				i(200587),	-- Leatherbound Expedition Note
@@ -916,7 +908,6 @@ root(ROOTS.NeverImplemented, {
 				i(200702),	-- Magenta Titian Extract
 				i(197850),	-- Mammoth Dumpling
 				i(195457),	-- Mammoth Jerky
-				i(199205),	-- Manasucker
 				i(200680),	-- Maruukai Mule
 				i(194677),	-- Marvelous Mood Ring
 				i(200588),	-- Meaty Stem
@@ -939,8 +930,6 @@ root(ROOTS.NeverImplemented, {
 				i(200553),	-- Panthis Nectar
 				i(200829),	-- Pareidolic Image
 				i(191787),	-- Partially Digested Hand
-				i(199100),	-- Peppersmelt
-				i(199104),	-- Piping-Hot Orca Milk
 				i(195456),	-- Plains Flatbread
 				i(196585),	-- Plainswheat Pretzel
 				i(200121),	-- Potion of Beginner's Luck
@@ -951,7 +940,6 @@ root(ROOTS.NeverImplemented, {
 				i(201726),	-- Progress Report: Uldorus
 				i(200771),	-- Projected Starmap
 				i(198452),	-- Prototype F
-				i(199834),	-- Pulpy Seagrass
 				i(201428),	-- Quicksilver Sands
 				i(194695),	-- Ramloaf
 				i(200765),	-- Reed Sculpture
@@ -963,7 +951,6 @@ root(ROOTS.NeverImplemented, {
 				i(191861),	-- Rocdrop Carapace
 				i(191864),	-- Rocdrop Pudgepart
 				i(200796),	-- Rotting Wood Totem
-				i(199063),	-- Salted Fish Scraps
 				i(197858),	-- Salt-Baked Scalebelly
 				i(201379),	-- Scalewatch Cage Key
 				i(200619),	-- Scaralesh's Special
@@ -977,7 +964,6 @@ root(ROOTS.NeverImplemented, {
 				i(200802),	-- Signet of the Dragonflights
 				i(200764),	-- Slimy Shinies
 				i(191412),	-- Small Expedition Pick
-				i(199832),	-- Smoked Seaviper
 				i(200621),	-- Soothing Incense
 				i(199184),	-- Spellbound Bone Pipes
 				i(194686),	-- Spicy Musken Drummies
@@ -1006,7 +992,6 @@ root(ROOTS.NeverImplemented, {
 				i(200833),	-- Titan Watcher Replica
 				i(200701),	-- Titian Extract
 				i(201727),	-- To My Staunchest Allies
-				i(199835),	-- Torga's Braid
 				i(200809),	-- Trinket-Packed Collar
 				i(200812),	-- Unmelting Crystalline Structure
 				i(198453),	-- Unstable Azerite Grenade
@@ -1073,7 +1058,6 @@ root(ROOTS.NeverImplemented, {
 				i(201823),	-- Arcane-Infused Webbing
 				i(201967),	-- Autographed Skull
 				i(201191),	-- Back Scratcher
-				i(192685),	-- Battle-Hardened Fang
 				i(201198),	-- Beaded Bracelet
 				i(201187),	-- Bent Lockpicks
 				i(201226),	-- Big Rock
@@ -1126,7 +1110,6 @@ root(ROOTS.NeverImplemented, {
 				i(192704),	-- Huge Flat Tooth
 				i(192705),	-- Imposing Tusk
 				i(192659),	-- Impressive Mandible
-				i(192619),	-- Impressive Tail Fin
 				i(201723),	-- Indecipherable Pages
 				i(201170),	-- Knucklebones
 				i(201192),	-- Large Dragonbone Dice
@@ -1142,7 +1125,6 @@ root(ROOTS.NeverImplemented, {
 				i(201730),	-- Nokhud Centaur Spear
 				i(201731),	-- Nokhud Centaur Staff
 				i(192645),	-- Obsidian Nugget
-				i(192711),	-- Oily Liver
 				i(201214),	-- Olfactory Truffle
 				i(201176),	-- Ornate Bracelet
 				i(192712),	-- Otherworldly Essence
@@ -1167,7 +1149,6 @@ root(ROOTS.NeverImplemented, {
 				i(192694),	-- Second Head's Fang
 				i(201208),	-- Seer's Crystal
 				i(192690),	-- Serrated Limb
-				i(192664),	-- Serrated Pincer
 				i(201182),	-- Serrated Stone
 				i(201207),	-- Shells in a Conch
 				i(201162),	-- Shiny Metal Scraps
@@ -1195,7 +1176,6 @@ root(ROOTS.NeverImplemented, {
 				i(192671),	-- Sublime Flower
 				i(200107),	-- Tarnished Engagement Ring
 				i(201224),	-- Tauren Horn
-				i(192647),	-- Terrene Speck
 				i(192724),	-- Terrifying Teeth
 				i(192725),	-- Thin Blubber
 				i(192696),	-- Third Head's Eye
@@ -1210,7 +1190,6 @@ root(ROOTS.NeverImplemented, {
 				i(201204),	-- Tooth Bracelet
 				i(192665),	-- Torn Dragon Wing
 				i(192728),	-- Undamaged Silk Gland
-				i(192730),	-- Unstable Arcane Essence
 				i(201168),	-- Untainted Scales
 				i(192731),	-- Venomous Fang
 				i(201177),	-- Wooden Eagle Statue

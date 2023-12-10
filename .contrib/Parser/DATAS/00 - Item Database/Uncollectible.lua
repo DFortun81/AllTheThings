@@ -608,6 +608,7 @@ i(192611);	-- Bottled Torrent
 i(192614);	-- Elemental Ooze
 i(192617);	-- Hound Paw
 i(192618);	-- Ice Chunks
+i(192619);	-- Impressive Tail Fin
 i(192621);	-- Long-Toed Talon
 i(192622);	-- Massive Beast Eye
 i(192623);	-- Massive Proto-Dragon Claw
@@ -615,20 +616,27 @@ i(192626);	-- Mound of Dust
 i(192629);	-- Primal Beast Claw
 i(192630);	-- Reef Carapace
 i(192632);	-- Sharp Bird Talon
+i(192634);	-- Smashed Metal Scraps
+i(192646);	-- Aqueous Speck
+i(192647);	-- Terrene Speck
+i(192651);	-- Damaged Core
 i(192653);	-- Floppy Molten Ear
+i(192657);	-- Hardy Cloven Hoof
 i(192662);	-- Pyretic Speck
+i(192664);	-- Serrated Pincer
 i(192666);	-- Severed Roots
 i(192672);	-- Tattered Proto-Wing
-i(199206);	-- Shattered Adamant Scales
-i(192634);	-- Smashed Metal Scraps
-i(192651);	-- Damaged Core
-i(192657);	-- Hardy Cloven Hoof
 i(192673);	-- Torn Ear
 i(192674);	-- Unknown Titan Mechanism
 i(192675);	-- Winglet
+i(192685);	-- Battle-Hardened Fang
+i(192711);	-- Oily Liver
 i(192717);	-- Animated Splinter
 i(192729);	-- Unhinged Mandible
+i(192730);	-- Unstable Arcane Essence
+i(199206);	-- Shattered Adamant Scales
 i(199476);	-- Singed Cloth Scraps
+i(200789);	-- Beckoning Kite
 i(200105);	-- Muck Covered Flotsam
 i(200106);	-- Slimy Old Boot
 i(201209);	-- Nibbled Fish Head
