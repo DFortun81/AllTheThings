@@ -529,6 +529,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 8.3.0.33062" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(7643, {	-- Ancient Equine Spirit
+					["providers"] = {
+						{ "n", 928 },	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+						{ "i", 18753 },	-- Arcanite Barding
+						{ "n", 14566 },	-- Ancient Equine Spirit
+					},
+					["sourceQuest"] = 7642,	-- Collection of Goods
+					["coord"] = { 37.6, 32.6, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { DIRE_MAUL, HILLSBRAD_FOOTHILLS },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 60,
+					["groups"] = {
+						q(7643, {	-- Ancient Equine Spirit
+							["qg"] = 2357,	-- Merideth Carlson <Horse Breeder>
+							["coord"] = { 52, 55.6, HILLSBRAD_FOOTHILLS },
+							["cost"] = {
+								{ "i", 13724, 20 },	-- Enriched Manna Biscuit
+								{ "g", 500000 },	-- 50g
+							},
+							["timeline"] = { "removed 4.0.3" },
+							["repeatable"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/1 Manna-Enriched Horse Feed
+									["questID"] = 7643,	-- Ancient Equine Spirit
+									["provider"] = { "i", 18775 },	-- Manna-Enriched Horse Feed
+								}),
+							},
+						}),
+					},
+				}),
 				q(5676, {	-- Arcane Feedback [Stormwind City]
 					["qgs"] = {
 						11406,	-- High Priest Rohan <Priest Trainer>
@@ -699,6 +731,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isDaily"] = true,
 					["groups"] = FISHING_AWARD_GROUPS,
 				}),
+				q(7644, {	-- Blessed Arcanite Barding
+					["providers"] = {
+						{ "n", 14566 },	-- Ancient Equine Spirit
+						{ "i", 18792 },	-- Blessed Arcanite Barding
+						{ "n", 928 },	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					},
+					["sourceQuest"] = 7643,	-- Ancient Equine Spirit
+					["coord"] = { 37.6, 32.6, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { DIRE_MAUL },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 60,
+				}),
 				q(29412, {	-- Blown Away
 					["qg"] = 54117,	-- Vin
 					["coord"] = { 58.8, 52.8, STORMWIND_CITY },
@@ -815,6 +861,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 37.2, 56.4, STORMWIND_CITY },
 					["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(7642, {	-- Collection of Goods
+					["qg"] = 1416,	-- Grimand Elmore
+					["sourceQuest"] = 7641,	-- The Work of Grimand Elmore
+					["coord"] = { 51.6, 12.2, STORMWIND_CITY },
+					["cost"] = {
+						{ "i", 13180, 5 },	-- Stratholme Holy Water
+						{ "i", 8836, 10 },	-- Arthas' Tears
+						{ "i", 14047, 40 },	-- Runecloth
+						{ "i", 12360, 6 },	-- Arcanite Bar
+						{ "g", 1500000 },	-- 150g
+					},
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 60,
 				}),
 				q(46274, {	-- Consoling the King
 					["qg"] = 119338,	-- Genn Greymane
@@ -1204,6 +1266,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
+				}),
+				q(7648, {	-- Grimand's Finest Work
+					["providers"] = {
+						{ "n", 1416 },	-- Grimand Elmore
+						{ "i", 18753 },	-- Arcanite Barding
+					},
+					["sourceQuest"] = 7642,	-- Collection of Goods
+					["coord"] = { 51.6, 12.2, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 60,
 				}),
 				q(66420, {	-- Happy Hour
 					["qg"] = 188342,	-- Onnesa
@@ -2256,6 +2330,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
+				q(7646, {	-- The Divination Scryer
+					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					["sourceQuest"] = 7644,	-- Blessed Arcanite Barding
+					["coord"] = { 37.6, 32.6, STORMWIND_CITY },
+					["cost"] = {
+						{ "i", 12800, 1 },	-- Azerothian Diamond
+						{ "i", 18335, 1 },	-- Pristine Black Diamond
+					},
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 60,
+				}),
 				q(28826, {	-- The Eye of the Storm
 					["qg"] = 45226,	-- Naraat the Earthspeaker
 					["sourceQuest"] = 28825,	-- A Personal Summons
@@ -2899,6 +2986,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 85.1, 31.0, STORMWIND_CITY },
 					["timeline"] = { "added 4.0.3.13277", "removed 7.0.3" },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(7641, {	-- The Work of Grimand Elmore
+					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					["coord"] = { 37.6, 32.6, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 60,
 				}),
 				q(26536, {	-- Thunder Falls
 					["qg"] = 5494,	-- Catherine Leland

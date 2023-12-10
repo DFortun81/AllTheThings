@@ -336,8 +336,11 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		}),
 		q(7647, {	-- Judgment and Redemption
-			["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-			-- ["sourceQuest"] = 7646,	-- The Divination Scryer -- TODO: this quest needs to be sourced! (see MissingQuests.txt)
+			["providers"] = {
+				{ "n", 928 },	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+				{ "i", 18804 },	-- Lord Grayson's Satchel
+			},
+			["sourceQuest"] = 7646,	-- The Divination Scryer
 			["coord"] = { 37.6, 32.6, STORMWIND_CITY },
 			["timeline"] = { "removed 4.0.3" },
 			["classes"] = { PALADIN },
@@ -347,6 +350,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				objective(1, {	-- 0/1 Charger's Redeemed Soul
 					["provider"] = { "i", 18799 },	-- Charger's Redeemed Soul
 					["cost"] = { { "i", 18749, 1 } },	-- Charger's Lost Soul
+					["cr"] = 14568,	-- Darkreaver's Fallen Charger
 				}),
 				objective(2, {	-- 0/1 Blessed Arcanite Barding
 					["provider"] = { "i", 18792 },	-- Blessed Arcanite Barding
