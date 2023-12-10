@@ -1080,7 +1080,6 @@ root(ROOTS.NeverImplemented, {
 				i(201180),	-- Bone Necklace
 				i(201205),	-- Bone Toothpick
 				i(201211),	-- Bottled Ear Wax
-				i(192611),	-- Bottled Torrent
 				i(201165),	-- Burnished Bauble
 				i(200533),	-- Bygone Idol
 				i(192686),	-- Charred Carapace
@@ -1102,7 +1101,6 @@ root(ROOTS.NeverImplemented, {
 				i(201197),	-- Dream Journal
 				i(192687),	-- Duck Bill
 				i(192689),	-- Eagle Eye
-				i(192614),	-- Elemental Ooze
 				i(201195),	-- Empty Herb Pouch
 				i(201968),	-- Enormous Grain of Salt
 				i(192691),	-- Eternal Ice Stalactite
@@ -1125,9 +1123,7 @@ root(ROOTS.NeverImplemented, {
 				i(193438),	-- Harrowing Osteal
 				i(201185),	-- Hidden Blade
 				i(192703),	-- Hide-Piercing Horn
-				i(192617),	-- Hound Paw
 				i(192704),	-- Huge Flat Tooth
-				i(192618),	-- Ice Chunks
 				i(192705),	-- Imposing Tusk
 				i(192659),	-- Impressive Mandible
 				i(192619),	-- Impressive Tail Fin
@@ -1135,7 +1131,6 @@ root(ROOTS.NeverImplemented, {
 				i(201170),	-- Knucklebones
 				i(201192),	-- Large Dragonbone Dice
 				i(192620),	-- Large Tail Spikes
-				i(192621),	-- Long-Toed Talon
 				i(192708),	-- Magnificent Antler
 				i(201200),	-- Makeshift Totem
 				i(192660),	-- Massive Hydra Claw
@@ -1215,7 +1210,6 @@ root(ROOTS.NeverImplemented, {
 				i(201204),	-- Tooth Bracelet
 				i(192665),	-- Torn Dragon Wing
 				i(192728),	-- Undamaged Silk Gland
-				i(192729),	-- Unhinged Mandible
 				i(192730),	-- Unstable Arcane Essence
 				i(201168),	-- Untainted Scales
 				i(192731),	-- Venomous Fang
