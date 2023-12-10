@@ -41,6 +41,7 @@ src\UI\Attunements.lua
 src\UI\Auctions.lua
 src\UI\Battle Pets.lua
 src\UI\Breadcrumbs.lua
+src\UI\Compare Questie DB.lua
 src\UI\Dailies.lua
 src\UI\Exploration.lua
 src\UI\Factions.lua

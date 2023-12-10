@@ -127,7 +127,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 				q(1100, {	-- Lonebrow's Journal
-					["provider"] = { "i", 5790 },	-- Lonebrow's Journal
+					["providers"] = {
+						{ "i", 5790 },	-- Henrig Lonebrow's Journal
+						{ "o", 19861 },	-- Henrig Lonebrow's Journal
+					},
 					["coord"] = { 30, 24, THOUSAND_NEEDLES },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,

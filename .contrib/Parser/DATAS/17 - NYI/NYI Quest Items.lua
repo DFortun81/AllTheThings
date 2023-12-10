@@ -285,10 +285,8 @@ root(ROOTS.NeverImplemented, {
 				i(191671),	-- Fragmented Tuskarr Effigy
 				i(200140),	-- Fragments of Fangfall
 				i(191839),	-- Fragrant Bloom
-				i(198350),	-- Fresh Fish Steak
 				i(191100),	-- Fresh Game Meat
 				i(191782),	-- Fresh Proto-Dragon Wings
-				i(200756),	-- Frozen Steak
 				i(200220),	-- Frozen Tail Darter
 				i(194747),	-- Frozen Venom Gland
 				i(191107),	-- Funerary Offering

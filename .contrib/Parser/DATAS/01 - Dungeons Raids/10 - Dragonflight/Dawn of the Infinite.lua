@@ -170,6 +170,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(93091),	-- Swashbuckling Spaulders			(MoP Scenario)
 		}),
 		filter(PLATE, {
+			ig(108215),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(114274),	-- Ruby Plate Shoulderguard			(NYI)
 
 			ig(134737),	-- Chillplate Shoulders				(Removed)
@@ -577,9 +578,12 @@ local QUANTUM_GROUP = sharedData({
 		ig(107390),	-- Obliterator Firing Lever				(NYI)(Unique)
 		ig(108240),	-- Peerless Draenic Steel Mace			(NYI)
 		ig(115299),	-- Spectral Scepter						(NYI)
+		ig(115296),	-- Spectral Warmace						(NYI)
 
 		ig(2048),	-- Anvilmar Hammer						(Removed)
 		ig(134756),	-- Covert Gavel							(Removed)
+		ig(2816),	-- Death Speaker Scepter				(Removed)
+		ig(6196),	-- Noboru's Cudgel						(Removed)
 		ig(134673),	-- Recruit's Gavel						(Removed)
 		ig(134667),	-- Recruit's Pummeler					(Removed)
 		ig(134618),	-- Scorching Gavel						(Removed)
@@ -1283,7 +1287,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(77607),	-- when you learn everything from Quantum Knuckles
 		-- q(77608),	-- when you learn everything from Quantum ?
 		q(77609),	-- when you learn everything from Quantum Focus
-		-- q(77610),	-- when you learn everything from Quantum ?
+		q(77610),	-- when you learn everything from Quantum Wand
 		-- q(77611),	-- when you learn everything from Quantum ?
 		-- q(77622),	-- when you learn everything from Quantum ?
 		-- q(77623),	-- when you learn everything from Quantum ?

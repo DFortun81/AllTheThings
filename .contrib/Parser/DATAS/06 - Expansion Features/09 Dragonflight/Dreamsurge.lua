@@ -28,6 +28,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 211031 },	-- Archdruid Hamuul Runetotem
 				["coord"] = { 50.6, 57.4, VALDRAKKEN },
 				["isBreadcrumb"] = true,
+				["timeline"] = { ADDED_10_1_7, REMOVED_10_2_0 },
 			}),
 			q(77414, {	-- Dreamsurge Investigation
 				["sourceQuests"] = { 77423 },	-- Surging Dreams

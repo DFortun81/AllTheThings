@@ -8641,23 +8641,6 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 		return 0;
 	end
 });
-app.CompareQuestieDB = function()
-	if QuestieLoader then
-		local QuestieDB,missingQuestIDs = QuestieLoader:ImportModule("QuestieDB"), {};
-		for id,_ in pairs(QuestieDB.QuestPointers) do
-			local s = SearchForField("questID", id);
-			if #s == 0 then
-				tinsert(missingQuestIDs, id);
-			end
-		end
-		app.Sort(missingQuestIDs, app.SortDefaults.Number);
-		for _,id in ipairs(missingQuestIDs) do
-			print("Missing Quest ", id);
-		end
-	else
-		print("Error: Questie not available. Please enable it!");
-	end
-end
 app.AddQuestObjectivesToTooltip = function(tooltip, reference)
 	local objectified = false;
 	local questLogIndex = GetQuestLogIndexByID(reference.questID);

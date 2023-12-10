@@ -137,7 +137,6 @@ root(ROOTS.NeverImplemented, {
 						i(108191),	-- Peerless Draenic Steel Shoulders
 						i(108199),	-- Peerless Draenic Steel Shoulders
 						i(108207),	-- Peerless Draenic Steel Shoulders
-						i(108215),	-- Peerless Draenic Steel Shoulders
 						i(108223),	-- Peerless Draenic Steel Shoulders
 						i(108226),	-- Peerless Draenic Steel War Axe
 						i(108163),	-- Peerless Draenic Steel Warboots
