@@ -543,7 +543,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
 					["groups"] = {
-						q(7643, {	-- Ancient Equine Spirit
+						q(7645, {	-- Ancient Equine Spirit
 							["qg"] = 2357,	-- Merideth Carlson <Horse Breeder>
 							["coord"] = { 52, 55.6, HILLSBRAD_FOOTHILLS },
 							["cost"] = {
@@ -1027,6 +1027,43 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = JEWELCRAFTING_AWARD_GROUPS,
+				}),
+				q(7637, {	-- Emphasis on Sacrifice
+					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					["sourceQuests"] = {
+						7670,	-- Lord Grayson Shadowbreaker [Ironforge]
+						7638,	-- Lord Grayson Shadowbreaker [Stormwind City]
+					},
+					["coord"] = { 37.6, 32.6, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["cost"] = 1500000,	-- 150g
+					["maps"] = { IRONFORGE },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 60,
+				}),
+				q(7640, {	-- Exorcising Terrordale
+					["providers"] = {
+						{ "n", 928 },	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+						{ "i", 18752 },	-- Exorcism Censer
+					},
+					["sourceQuest"] = 7639, -- To Show Due Judgment
+					["coord"] = { 37.6, 32.6, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 60,
+					["groups"] = {
+						objective(1, {	-- 
+							["provider"] = { "n", 14564 },	-- Terrordale Spirit
+							-- #if AFTER WRATH
+							["coord"] = { 16.4, 31.8, EASTERN_PLAGUELANDS },
+							-- #else
+							["coord"] = { 19.6, 36.8, EASTERN_PLAGUELANDS },
+							-- #endif
+						}),
+					},
 				}),
 				q(28807, {	-- Expert Opinion
 					["qg"] = 44293,	-- Anduin Wrynn <Prince of Stormwind>
@@ -1631,6 +1668,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 6.1.0.19508" },
 						}),
 					},
+				}),
+				q(7670, {	-- Lord Grayson Shadowbreaker [Ironforge]
+					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
+					["coord"] = { 23.4, 6.2, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { IRONFORGE },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 60,
+				}),
+				q(7638, {	-- Lord Grayson Shadowbreaker [Stormwind City]
+					["qg"] = 6171,	-- Duthorian Rall
+					["coord"] = { 40, 29.8, STORMWIND_CITY },
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 60,
 				}),
 				q(350, {	-- Look to an Old Friend
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
@@ -2989,6 +3045,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7641, {	-- The Work of Grimand Elmore
 					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					["sourceQuest"] = 7640,	-- Exorcising Terrordale
 					["coord"] = { 37.6, 32.6, STORMWIND_CITY },
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { PALADIN },
@@ -3033,6 +3090,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 25.9, 29.2, STORMWIND_CITY },
 					["timeline"] = { "added 4.1.0.13682" },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(7639, {	-- To Show Due Judgment
+					["providers"] = {
+						{ "n", 11406 },	-- High Priest Rohan <Priest Trainer>
+						{ "i", 18819 },	-- Rohan's Exorcism Censer
+					},
+					["sourceQuest"] = 7637, -- Emphasis on Sacrifice
+					["coord"] = { 25, 8.2, IRONFORGE },
+					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 60,
 				}),
 				q(28827, {	-- To the Depths
 					["qg"] = 45226,	-- Naraat the Earthspeaker

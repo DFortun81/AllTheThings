@@ -66,6 +66,32 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				}),
 			},
 		})),
+		q(7666, {	-- Again Into the Great Ossuary [A]
+			["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+			["sourceQuest"] = 7647,	-- Judgment and Redemption
+			["coord"] = { 37.6, 32.6, STORMWIND_CITY },
+			["timeline"] = { "removed 4.0.3" },
+			["classes"] = { PALADIN },
+			["races"] = ALLIANCE_ONLY,
+			["repeatable"] = true,
+			["lvl"] = 60,
+			["groups"] = {
+				i(18746),	-- Divination Scryer
+			},
+		}),
+		q(7669, {	-- Again Into the Great Ossuary [H]
+			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
+			["sourceQuest"] = 8258,	-- The Darkreaver Menace
+			["coord"] = { 38.7, 35.9, ORGRIMMAR },
+			["timeline"] = { "removed 4.0.3" },
+			["classes"] = { SHAMAN },
+			["races"] = HORDE_ONLY,
+			["repeatable"] = true,
+			["lvl"] = 60,
+			["groups"] = {
+				i(18746),	-- Divination Scryer
+			},
+		}),
 		q(27140, {	-- Alexi's Gambit
 			["qg"] = 45110,	-- Alexi Barov <House of Barov>
 			["timeline"] = { "added 4.0.3", "removed 5.0.4" },
@@ -350,7 +376,10 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				objective(1, {	-- 0/1 Charger's Redeemed Soul
 					["provider"] = { "i", 18799 },	-- Charger's Redeemed Soul
 					["cost"] = { { "i", 18749, 1 } },	-- Charger's Lost Soul
-					["cr"] = 14568,	-- Darkreaver's Fallen Charger
+					["crs"] = {
+						14516,	-- Death Knight Darkreaver
+						14568,	-- Darkreaver's Fallen Charger
+					},
 				}),
 				objective(2, {	-- 0/1 Blessed Arcanite Barding
 					["provider"] = { "i", 18792 },	-- Blessed Arcanite Barding
@@ -542,7 +571,6 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		q(7668, {	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
 			["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 			["sourceQuest"] = 7667,	-- Material Assistance
-			["cr"] = 14516,	-- Death Knight Darkreaver
 			["coord"] = { 38.7, 35.9, ORGRIMMAR },
 			["timeline"] = { "removed 1.7.0" },
 			["classes"] = { SHAMAN },
@@ -551,6 +579,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["groups"] = {
 				objective(1, {	-- 0/1 Darkreaver's Head
 					["provider"] = { "i", 18880 },	-- Darkreaver's Head
+					["cr"] = 14516,	-- Death Knight Darkreaver
 				}),
 				i(18807, {	-- Helm of Latent Power
 					["timeline"] = { "removed 1.7.0" },
@@ -563,7 +592,6 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["altQuests"] = {
 				7668,	-- The Darkreaver Menace (Original)
 			},
-			["cr"] = 14516,	-- Death Knight Darkreaver
 			["coord"] = { 38.7, 35.9, ORGRIMMAR },
 			["timeline"] = { "added 1.7.0", "removed 4.0.3" },
 			["classes"] = { SHAMAN },
@@ -572,6 +600,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["groups"] = {
 				objective(1, {	-- 0/1 Darkreaver's Head
 					["provider"] = { "i", 18880 },	-- Darkreaver's Head
+					["cr"] = 14516,	-- Death Knight Darkreaver
 				}),
 				i(20134, {	-- Skyfury Helm
 					["timeline"] = { "added 1.7.0", "removed 4.0.3" },
