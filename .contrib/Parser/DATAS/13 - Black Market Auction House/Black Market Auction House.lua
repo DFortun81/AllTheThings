@@ -9,27 +9,30 @@ root(ROOTS.BlackMarket, {
 				{"exclude", "headerID", VENDORS },	-- Not the Vendor Header
 			},
 		},{
-		-- #IF BEFORE SHADOWLANDS
-		n(142062, {	-- Madam Gosu [Boralus - Alliance]
-			["coord"] = { 56.71, 46.32, BORALUS },
-		}),
-		-- #ENDIF
+		-- #IF BEFORE BFA
 		n(103791, {	-- Madam Gosu [Rogue Class Hall]
 			["coord"] = { 57.91, 46.28, 626 },
 		}),
-		-- #IF BEFORE SHADOWLANDS
-		n(135709, {	-- Madam Goya [Dazar'alor - Horde]
-			["coord"] = { 63.54, 62.68, ZULDAZAR },
-		}),
-		-- #ENDIF
-		n(160081, {	-- Ta'xera <Matron of the Market>
-			["coord"] = { 52.40, 83.80, REVENDRETH },
-		}),
-		-- #IF BEFORE BFA
 		n(100986, {	-- Madam Goya [Underbelly]
 			["coord"] = { 71.37, 17.93, LEGION_THE_UNDERBELLY },
 		}),
 		-- #ENDIF
+		-- #IF BEFORE SHADOWLANDS
+		n(142062, {	-- Madam Gosu [Boralus - Alliance]
+			["coord"] = { 56.71, 46.32, BORALUS },
+		}),
+		n(135709, {	-- Madam Goya [Dazar'alor - Horde]
+			["coord"] = { 63.54, 62.68, ZULDAZAR },
+		}),
+		-- #ENDIF
+		-- #IF BEFORE DF
+		n(160081, {	-- Ta'xera <Matron of the Market>
+			["coord"] = { 52.40, 83.80, REVENDRETH },
+		}),
+		-- #ENDIF
+		n(189676, {	-- Madam Goya
+			["coord"] = { 20.2, 49.1, VALDRAKKEN },
+		}),
 		-- n(94829, {	-- Zhang Yeoh [Garrison]
 		-- 	["coords"] = {
 		-- 		{ 44.96, 50.07, FROSTWALL },
