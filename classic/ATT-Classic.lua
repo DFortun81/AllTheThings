@@ -5705,6 +5705,17 @@ app.DifficultyIcons = {
 	[24] = app.asset("Difficulty_Timewalking"),
 	[33] = app.asset("Difficulty_Timewalking"),
 };
+local GetDifficultyInfo = GetDifficultyInfo;
+if not GetDifficultyInfo(3) then
+	local difficultyData = {
+		[1] = "Normal",
+		[3] = "10-Player",
+		[168] = "10-Player",
+	};
+	GetDifficultyInfo = function(difficultyID)
+		return difficultyData[difficultyID] or "Unknown Difficulty";
+	end
+end
 app.CreateDifficulty = app.CreateClass("Difficulty", "difficultyID", {
 	["text"] = function(t)
 		return t.sourceParent and sformat("%s [%s]", t.name, t.sourceParent.text or UNKNOWN) or t.name;
