@@ -1071,10 +1071,8 @@ root(ROOTS.NeverImplemented, {
 				i(201178),	-- Cracked Skull
 				i(192688),	-- Cracked Stone Bracers
 				i(201216),	-- Crumbled Elemental Spark
-				i(193384),	-- Crumbling Bone
 				i(192746),	-- Curio of Yore
 				i(200532),	-- Damaged Qiraji Ring
-				i(193385),	-- Decaying Resin
 				i(201188),	-- Deceased Critter
 				i(200451),	-- Deep Sea Star
 				i(193420),	-- Depleted Mana Stone
@@ -1136,7 +1134,6 @@ root(ROOTS.NeverImplemented, {
 				i(192715),	-- Phoenix Stone
 				i(201163),	-- Piece of Dragonkin Eggshell
 				i(201183),	-- Pouch of Salt
-				i(192661),	-- Prehistoric Fin
 				i(192716),	-- Prehistoric Sediment
 				i(201196),	-- Pretty Flower
 				i(201194),	-- Pumice Hand Chalk

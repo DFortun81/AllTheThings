@@ -622,6 +622,7 @@ i(192647);	-- Terrene Speck
 i(192651);	-- Damaged Core
 i(192653);	-- Floppy Molten Ear
 i(192657);	-- Hardy Cloven Hoof
+i(192661);	-- Prehistoric Fin
 i(192662);	-- Pyretic Speck
 i(192664);	-- Serrated Pincer
 i(192666);	-- Severed Roots
@@ -634,6 +635,8 @@ i(192711);	-- Oily Liver
 i(192717);	-- Animated Splinter
 i(192729);	-- Unhinged Mandible
 i(192730);	-- Unstable Arcane Essence
+i(193384);	-- Crumbling Bone
+i(193385);	-- Decaying Resin
 i(199206);	-- Shattered Adamant Scales
 i(199476);	-- Singed Cloth Scraps
 i(200789);	-- Beckoning Kite
