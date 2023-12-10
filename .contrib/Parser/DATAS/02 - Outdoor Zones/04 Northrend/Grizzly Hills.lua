@@ -252,6 +252,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12131,	-- We Have the Power
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(36936),	-- Golem Control Unit (QI!)
+						},
 					}),
 					q(12198, {	-- ... Or Maybe We Don't (H)
 						["qg"] = 27227,	-- Prospector Rokar
@@ -404,6 +407,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12138,	-- ... Or Maybe We Don't
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(36935),	-- Raegar's Explosives (QI!)
+						},
 					}),
 					pvp(q(12170, {	-- Blackriver Brawl
 						["qg"] = 27120,	-- Raider Captain Kronn
@@ -1158,6 +1164,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 67.4, 15.2, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							i(35837),	-- Portable Seismograph (QI!)
+							o(188367, {	-- Portable Seismograph
+								["groups"] = {
+									i(35819),	-- Thor Modan Stability Profile (QI!)
+								},
+							}),
 							i(38717),	-- Dusty Miner's Leggings
 							i(39021),	-- Ectoplasm Stained Wristguards
 							i(39050),	-- Ghostridden Waistguard
@@ -1320,6 +1332,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							i(36865),	-- Golem Control Unit (QI!)
 							i(39015),	-- Crackpot Spaulders
 							i(39076),	-- Golem-Rider's Greaves
 							i(38711),	-- Grounded Gloves
@@ -1337,6 +1350,12 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12128,	-- Check Up on Raegar
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(36848),	-- War Golem Blueprint (QI!) Obtained from combining all three sections
+							i(36849),	-- Golem Blueprint Section 1 (QI!)
+							i(36850),	-- Golem Blueprint Section 2 (QI!)
+							i(36851),	-- Golem Blueprint Section 3 (QI!)
+						}
 					}),
 					q(11988, {	-- The Runic Keystone
 						["qg"] = 26361,	-- Torthen Deepdig
@@ -1549,6 +1568,20 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12130,	-- Why Fabricate When You Can Appropriate
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							n(26409, {	-- Rune-Smith Durar
+								["coord"] = { 74.9, 57.0, GRIZZLY_HILLS },
+								["groups"] = {
+									i(36857),	-- Durar's Power Cell
+								},
+							}),
+							n(26410, {	-- Rune-Smith Kathorn
+								["coord"] = { 76.8, 59.3, GRIZZLY_HILLS },
+								["groups"] = {
+									i(36858),	-- Kathorn's Power Cell
+								},
+							}),
+						},
 					}),
 					q(12197, {	-- We Have the Power (H)
 						["qg"] = 27227,	-- Prospector Rokar
@@ -1561,6 +1594,14 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12129,	-- The Perfect Plan
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							o_repeated({
+								i(36852),	-- War Golem Part (QI!)
+								o(188501),	-- War Golem Part
+								o(188502),	-- War Golem Part
+								o(188503),	-- War Golem Part
+							}),
+						},
 					}),
 					q(12307, {	-- Wolfsbane Root
 						["qg"] = 27545,	-- Katja
