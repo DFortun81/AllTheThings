@@ -17391,6 +17391,14 @@ app.ResetCustomWindowParam = function(suffix)
 	customWindowUpdates.params[suffix] = nil;
 	-- app.PrintDebug("ResetCustomWindowParam",suffix)
 end
+-- Allows externally adding custom window update logic which doesn't exist already
+app.AddCustomWindowOnUpdate = function(customName, onUpdate)
+	if customWindowUpdates[customName] then
+		app.print("Cannot replace Custom Window: "..customName)
+	end
+	app.print("Added",customName)
+	customWindowUpdates[customName] = onUpdate
+end
 customWindowUpdates["AchievementHarvester"] = function(self, ...)
 	-- /run AllTheThings:GetWindow("AchievementHarvester"):Toggle();
 	if self:IsVisible() then
