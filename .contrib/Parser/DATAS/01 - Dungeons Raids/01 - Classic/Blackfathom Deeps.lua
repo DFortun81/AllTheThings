@@ -127,6 +127,13 @@ BFDItem(209575, TOTEMS);	-- Carved Driftwood Icon
 
 BFDItem(211491, BAGS);	-- Bottomless Murloc Skin Bag
 BFDItem(211492, BAGS);	-- Kelris's Satchel
+
+local SOD_DISABLE_NORMAL_MODE = [[function(t)
+	if getmetatable(ATTClassicSettings.Unobtainables).__index[1605] then
+		t.u = 2;
+		t.OnUpdate = nil;
+	end
+end]];
 -- #endif
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(227, {	-- Blackfathom Deeps
@@ -145,6 +152,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		["coord"] = { 14.0, 11.1, ASHENVALE },
 		-- #endif
 		["maps"] = { BLACKFATHOM_DEEPS, BLACKFATHOM_DEEPS_LEVEL2, BLACKFATHOM_DEEPS_LEVEL3 },
+		-- #if SEASON_OF_DISCOVERY
+		["sharedLockout"] = 1,
+		["isRaid"] = true,
+		-- #endif
 		["lvl"] = lvlsquish(19, 19, 10),
 		["groups"] = {
 			n(ZONE_DROPS, {
@@ -174,8 +185,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
-			d(NORMAL_DUNGEON, {
-			["groups"] = {
+			d(NORMAL_DUNGEON, bubbleDownSelf({ ["OnUpdate"] = SOD_DISABLE_NORMAL_MODE }, {
 			-- #endif
 			n(QUESTS, {
 				q(6564, {	-- Allegiance to the Old Gods (1/2)
@@ -278,6 +288,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Kelris
 							["provider"] = { "i", 5881 },	-- Head of Kelris
+							["cr"] = 4832,	-- Twilight Lord Kelris
 						}),
 						i(7002, {	-- Arctic Buckler
 							["timeline"] = { "removed 4.0.3" },
@@ -296,6 +307,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Kelris
 							["provider"] = { "i", 5881 },	-- Head of Kelris
+							["cr"] = 4832,	-- Twilight Lord Kelris
 						}),
 						-- #if BEFORE 6.0.1.18322
 						i(65986),	-- Shield Against the Evil Presence
@@ -314,6 +326,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Kelris
 							["provider"] = { "i", 5881 },	-- Head of Kelris
+							["cr"] = 4832,	-- Twilight Lord Kelris
 						}),
 						i(7002, {	-- Arctic Buckler
 							["timeline"] = { "removed 4.0.3" },
@@ -501,6 +514,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Kelris
 							["provider"] = { "i", 5881 },	-- Head of Kelris
+							["cr"] = 4832,	-- Twilight Lord Kelris
 						}),
 					},
 				}),
@@ -671,7 +685,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["timeline"] = { "removed 6.0.1.18322" },
 				-- #if BEFORE 6.0.1.18322
 				["groups"] = {
-					i(5881),	-- Head of Kelris
 					i(1155),	-- Rod of the Sleepwalker
 					i(6903),	-- Gaze Dreamer Pants
 				},
@@ -818,10 +831,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			}}),
+			})),
 			d(3, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" }, }, {	-- 10-Player
 				["description"] = "This instance was converted from a normal difficulty dungeon into a 10-player raid instance.",
-				["difficulties"] = { 168 },
+				["difficulties"] = { 198 },
 				["lvl"] = 25,
 				["groups"] = {
 					n(QUESTS, {
@@ -838,7 +851,20 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 								i(211468),	-- Frayed Chestnut Mantle
 							},
 						}),
-						q(78920, {	-- Baron Aquanis
+						q(79099, {	-- Baron Aquanis (A)
+							["qg"] = 214876,	-- Davius Voidstar
+							["coord"] = { 36.8, 43.6, DARKSHORE },
+							["description"] = "PROTIP: Completing this quest gives you a portal to BFD!",
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 25,
+							["groups"] = {
+								objective(1, {	-- 0/1 Strange Water Globe
+									["provider"] = { "i", 211818 },	-- Strange Water Globe
+									["cr"] = 202699,	-- Baron Aquanis
+								}),
+							},
+						}),
+						q(78920, {	-- Baron Aquanis (H)
 							["provider"] = { "i", 211454 },	-- Strange Water Globe
 							["maps"] = { ASHENVALE },
 							["races"] = HORDE_ONLY,
@@ -856,6 +882,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Head of Kelris
 									["provider"] = { "i", 5881 },	-- Head of Kelris
+									["cr"] = 209678,	-- Twilight Lord Kelris
 								}),
 								i(211460),	-- Ancient Arctic Buckler
 								i(211461),	-- Inscribed Gravestone Scepter
@@ -869,6 +896,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							["groups"] = {
 								objective(1, {	-- 0/1 Head of Kelris
 									["provider"] = { "i", 5881 },	-- Head of Kelris
+									["cr"] = 209678,	-- Twilight Lord Kelris
 								}),
 								i(211460),	-- Ancient Arctic Buckler
 								i(211461),	-- Inscribed Gravestone Scepter

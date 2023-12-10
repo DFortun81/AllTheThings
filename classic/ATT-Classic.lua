@@ -5660,11 +5660,12 @@ app.CreateDeathClass = app.CreateClass("DeathsTracker", "deaths", fields);
 end)();
 
 -- Difficulty Lib
+local GetDifficultyInfo = GetDifficultyInfo;
 (function()
 local difficulties = {
 	[1] = { 9, 148, 173 },
 	[2] = { 174 },
-	[3] = { 175 },
+	[3] = { 175, 198 },
 	[4] = { 176 },
 	[9] = { 1 },
 	[148] = { 1 },
@@ -5672,6 +5673,7 @@ local difficulties = {
 	[174] = { 2 },
 	[175] = { 3 },
 	[176] = { 4 },
+	[198] = { 3 },
 };
 app.DifficultyColors = {
 	[2] = "ff0070dd",
@@ -5705,12 +5707,11 @@ app.DifficultyIcons = {
 	[24] = app.asset("Difficulty_Timewalking"),
 	[33] = app.asset("Difficulty_Timewalking"),
 };
-local GetDifficultyInfo = GetDifficultyInfo;
 if not GetDifficultyInfo(3) then
 	local difficultyData = {
 		[1] = "Normal",
 		[3] = "10-Player",
-		[168] = "10-Player",
+		[198] = "10-Player",
 	};
 	GetDifficultyInfo = function(difficultyID)
 		return difficultyData[difficultyID] or "Unknown Difficulty";
