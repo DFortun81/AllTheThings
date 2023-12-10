@@ -470,7 +470,6 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(ONE_HANDED_MACES, {
 			-- Load In Game
-			i(115296),	-- Spectral Warmace
 			i(182578),	-- NPE Weapon 1H Mace AGI
 			-- ItemID/Retrieving
 			i(38468),	-- Kalu'ak Peacebringer
