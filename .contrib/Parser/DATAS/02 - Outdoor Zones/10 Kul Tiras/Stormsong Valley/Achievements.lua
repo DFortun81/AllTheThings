@@ -6,7 +6,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 	m(STORMSONG_VALLEY, {
 		n(ACHIEVEMENTS, {
 			ach(12940, {	-- Adventurer of Stormsong Valley
-				-- TODO:  Doc Marrtens or Jakala the Cruel may need all the criteria to be written out manually and I just don't feel like doing that right now
 				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(13047),		-- Clever Use of Mechanical Explosives
@@ -15,7 +14,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 			}),
 			explorationAch(12558),	-- Explore Stormsong Valley
-			ach(13045),		-- Every Day I'm Truffling
+			ach(13045, {		-- Every Day I'm Truffling
+				["_noautomation"] = true,
+			}),
 			petbattle(ach(13279, {	-- Family Battler
 				["collectible"] = false,
 				["g"] = {
