@@ -1,6 +1,14 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+-- #if SEASON_OF_DISCOVERY
+local SOD_DISABLE_NORMAL_MODE = [[function(t)
+	if getmetatable(ATTClassicSettings.Unobtainables).__index[1605] then
+		t.u = 2;
+		t.OnUpdate = nil;
+	end
+end]];
+-- #endif
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
 	inst(231, {	-- Gnomeregan
 		-- #if BEFORE MOP
@@ -14,7 +22,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		["maps"] = { 227, 228, 229, },
 		["lvl"] = lvlsquish(19, 19, 10),
 		["groups"] = {
-			n(QUESTS, {
+			n(QUESTS, bubbleDownSelf({ ["OnUpdate"] = SOD_DISABLE_NORMAL_MODE }, {
 				q(2904, {	-- A Fine Mess
 					["qg"] = 7850,	-- Kernobee
 					["timeline"] = { "removed 4.0.3" },
@@ -474,7 +482,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
 				}),
-			}),
+			})),
 			n(REWARDS, {
 				["description"] = "Bring any Grime-Encrusted items that you find to a Sparklematic 5200 to be cleaned.\n\nGrime-Encrusted Objects become Sparklematic-Wrapped Boxes.",
 				["groups"] = {
