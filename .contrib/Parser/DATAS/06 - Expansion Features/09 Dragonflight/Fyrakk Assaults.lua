@@ -86,6 +86,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					-- ["maps"] = { OHNAHRAN_PLAINS },
 					["isWeekly"] = IGNORED_VALUE,	-- One-Time
 					["_drop"] = { "g" },	-- Drop Crest
+					["groups"] = {
+						i(201923, {	-- Maruuk Centaur Insignia [Epic 500]
+						}),
+					},
 				}),
 				q(75182, {	-- Grand Theft Mammoth
 					["provider"] = { "n", 201860 },	-- Khanam Matra Sarest
@@ -117,6 +121,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					-- ["maps"] = { THE_AZURE_SPAN },
 					["isWeekly"] = IGNORED_VALUE,	-- One-Time
 					["_drop"] = { "g" },	-- Drop Crest
+					["group"] = {
+						i(201922, {	-- Iskaara Tuskarr Insignia [Epic 500]
+						}),
+					},
 				}),
 				q(75372, {	-- Drive Them Before Us
 					["provider"] = { "n", 203601 },	-- Blubberwall

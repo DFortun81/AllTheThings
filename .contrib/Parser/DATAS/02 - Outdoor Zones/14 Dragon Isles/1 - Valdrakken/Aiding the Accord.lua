@@ -72,12 +72,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
 				i(201922, {	-- Iskaara Tuskarr Insignia [Epic 500]
+					-- #if BEFORE 10.1
 					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+					-- Rewarded from the Fyrakk Assault in Azure Span with no reputation requirement
+					-- #endif
 				}),
 				i(201923, {	-- Maruuk Centaur Insignia [Epic 500]
 					["minReputation"] = { FACTION_MARUUK_CENTAUR, 25 },
+					-- #if BEFORE 10.1
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+					-- Rewarded from the Fyrakk Assault in OhnAhran Plains with no reputation requirement
+					-- #endif
 				}),
 				i(201924, {	-- Valdrakken Accord Insignia [Epic 500]
 					["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
