@@ -1833,6 +1833,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(4833, {	-- Glorious Shoulders
 							["isLimited"] = true,
 						}),
+						i(3429, {	-- Guardsman Belt
+							["isLimited"] = true,
+						}),
 						i(4832, {	-- Mystic Sarong
 							["isLimited"] = true,
 						}),
