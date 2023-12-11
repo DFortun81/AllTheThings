@@ -12,7 +12,7 @@ ZONE_REWARDS = createHeader({
 		cn = "区域奖励",
 	},
 	description = {
-		en = "These items can drop from repeatable treasure chests, wish crickets, world quests or table missions.",
+		en = "These items can drop from:\nEmissary Quest (Legion&later)\nRepeatable Treasure Chests (SL)\nTable missions (Legion&later)\nWish Crickets (SL)\nWorld Quests (Legion&later)",
 		fr = "Ces objets peuvent provenir de coffres au trésor répétitifs, Criquet à souhait, de quêtes mondiales ou des missions de la table de commandement.",
 		ru = "Эти предметы можно получить в награду из повторяемых сокровищ, заветных сверчков, локальных заданий или заданий командирского стола.",
 		cn = "这些物品可以从可重复的宝箱、祈愿蟋蟀、世界任务或桌面任务中掉落。",
