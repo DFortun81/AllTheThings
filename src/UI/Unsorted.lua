@@ -9,12 +9,8 @@ local tinsert = tinsert;
 app:GetWindow("Unsorted", {
 	parent = UIParent,
 	Silent = true,
+	Commands = { "attunsorted" },
 	OnInit = function(self)
-		SLASH_ATTUNSORTED1 = "/attunsorted";
-		SlashCmdList["ATTUNSORTED"] = function(cmd)
-			self:Toggle();
-		end
-		
 		-- Add an achievement header
 		local achievementHeader = app.CreateNPC(app.HeaderConstants.ACHIEVEMENTS, { g = {} });
 		self.achievementHeader = achievementHeader;

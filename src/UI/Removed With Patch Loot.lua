@@ -6,12 +6,7 @@ local tinsert = tinsert;
 app:GetWindow("RWP", {
 	parent = UIParent,
 	Silent = true,
-	OnInit = function(self, handlers)
-		SLASH_ATTRWP1 = "/attrwp";
-		SlashCmdList["ATTRWP"] = function()
-			self:Toggle();
-		end
-	end,
+	Commands = { "attrwp" },
 	OnRebuild = function(self)
 		if self.data then return true; end
 		self.data = {

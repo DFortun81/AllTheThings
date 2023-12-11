@@ -65,12 +65,7 @@ end
 app:GetWindow("RWPD", {
 	parent = UIParent,
 	Silent = true,
-	OnInit = function(self, handlers)
-		SLASH_ATTRWPDROPS1 = "/attrwpdrops";
-		SlashCmdList["ATTRWPDROPS"] = function()
-			self:Toggle();
-		end
-	end,
+	Commands = { "attrwpdrops" },
 	OnLoad = function(self, settings)
 		ExcludeRecipes = settings.ExcludeRecipes;
 		ExcludeRemovedMaps = settings.ExcludeRemovedMaps;

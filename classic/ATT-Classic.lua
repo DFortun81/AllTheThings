@@ -12928,28 +12928,24 @@ app:GetWindow("Prime", {
 		["point"] = "CENTER",
 		["relativePoint"] = "CENTER",
 	},
+	Commands = {
+		"allthethings",
+		"att",
+		"attc",
+	},
+	OnCommand = function(self, cmd)
+		if cmd and strlen(cmd) > 0 then
+			-- Search for the Link in the database
+			cmd = string.lower(cmd);
+			local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+			if group then app:CreateMiniListForGroup(group); end
+			return true;
+		end
+	end,
 	OnInit = function(self)
 		app.ToggleMainList = function()
 			self:Toggle();
 		end
-
-		SLASH_ATTPRIME1 = "/allthethings";
-		SLASH_ATTPRIME2 = "/att";
-		SLASH_ATTPRIME3 = "/attc";
-		SLASH_ATTPRIME4 = "/things";
-		SLASH_ATTPRIME5 = "/attmain";
-		SlashCmdList["ATTPRIME"] = function(cmd)
-			if cmd and strlen(cmd) > 0 then
-				-- Search for the Link in the database
-				cmd = string.lower(cmd);
-				local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-				if group then app:CreateMiniListForGroup(group); end
-			else
-				-- Default command
-				self:Toggle();
-			end
-		end
-
 	end,
 	OnLoad = function(self, settings)
 		if not settings.visible then
@@ -13198,11 +13194,12 @@ app:GetWindow("CurrentInstance", {
 		["point"] = "BOTTOMRIGHT",
 		["relativePoint"] = "BOTTOMRIGHT",
 	},
+	Commands = {
+		"attminilist",
+		"attmini",
+	},
 	OnInit = function(self, handlers)
-		SLASH_ATTMINILIST1 = "/attmini";
-		SLASH_ATTMINILIST2 = "/attminilist";
 		app.ToggleMiniListForCurrentZone = function() self:Toggle(); end;
-		SlashCmdList["ATTMINILIST"] = app.ToggleMiniListForCurrentZone;
 
 		local delayedUpdate = function()
 			self:DelayedUpdate(true);
@@ -13668,14 +13665,13 @@ app:GetWindow("Tradeskills", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	Commands = {
+		"attskills",
+		"atttradeskill",
+		"attprofession",
+		"attprof",
+	},
 	OnInit = function(self, handlers)
-		SLASH_ATTSKILLS1 = "/attskills";
-		SLASH_ATTSKILLS2 = "/atttradeskill";
-		SLASH_ATTSKILLS3 = "/attprofession";
-		SLASH_ATTSKILLS4 = "/attprof";
-		SlashCmdList["ATTSKILLS"] = function(cmd)
-			self:Toggle();
-		end
 		self:SetMovable(false);
 		self:SetClampedToScreen(false);
 		self.wait = 5;

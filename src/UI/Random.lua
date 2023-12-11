@@ -207,13 +207,7 @@ end
 app:GetWindow("Random", {
 	parent = UIParent,
 	Silent = true,
-	OnInit = function(self, handlers)
-		SLASH_ATTRANDOM1 = "/attran";
-		SLASH_ATTRANDOM2 = "/attrandom";
-		SlashCmdList["ATTRANDOM"] = function(cmd)
-			self:Toggle();
-		end
-	end,
+	Commands = { "attrandom" },
 	OnLoad = function(self, settings)
 		SearchFilter = settings.SearchFilter or "Quest";
 	end,

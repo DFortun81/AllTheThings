@@ -6,12 +6,7 @@ app:GetWindow("Quests", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
-	OnInit = function(self, handlers)
-		SLASH_ATTQUESTS1 = "/attquests";
-		SlashCmdList["ATTQUESTS"] = function(cmd)
-			self:Toggle();
-		end
-	end,
+	Commands = { "attquests" },
 	OnRebuild = function(self, ...)
 		if not self.data then
 			self.data = {

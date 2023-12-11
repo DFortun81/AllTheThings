@@ -5,13 +5,7 @@ local appName, app = ...;
 app:GetWindow("HiddentAchievementTriggers", {
 	parent = UIParent,
 	Silent = true,
-	OnInit = function(self)
-		SLASH_ATTHATS1 = "/atthat";
-		SLASH_ATTHATS2 = "/atthats";
-		SlashCmdList["ATTHATS"] = function(cmd)
-			self:Toggle();
-		end
-	end,
+	Commands = { "atthat", "atthats" },
 	OnLoad = function(self, settings)
 		local hat = app.Categories.HiddenAchievementTriggers;
 		if hat then

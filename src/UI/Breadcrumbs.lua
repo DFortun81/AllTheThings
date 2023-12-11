@@ -10,12 +10,7 @@ app:GetWindow("Breadcrumbs", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
-	OnInit = function(self, handlers)
-		SLASH_ATTBREADCRUMBS1 = "/attbreadcrumbs";
-		SlashCmdList["ATTBREADCRUMBS"] = function(cmd)
-			self:Toggle();
-		end
-	end,
+	Commands = { "attbreadcrumbs" },
 	OnRebuild = function(self, ...)
 		if not self.data then
 			self.data = {

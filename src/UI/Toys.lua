@@ -10,11 +10,8 @@ app:GetWindow("Toys", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	Commands = { "atttoys" },
 	OnInit = function(self, handlers)
-		SLASH_ATTTOYS1 = "/atttoys";
-		SlashCmdList["ATTTOYS"] = function(cmd)
-			self:Toggle();
-		end
 		self.data = {
 			text = TOY_BOX,
 			icon = app.asset("Category_ToyBox"),

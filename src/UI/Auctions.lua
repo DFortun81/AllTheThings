@@ -12,14 +12,10 @@ local auctionData = {};
 app:GetWindow("Auctions", {
 	parent = UIParent,
 	Silent = true,
+	Commands = { "attauctions" },
 	IgnoreSettings = true,
 	IgnoreQuestUpdates = true,
 	OnInit = function(self, handlers)
-		SLASH_ATTAUCTIONS1 = "/attauctions";
-		SlashCmdList["ATTAUCTIONS"] = function(cmd)
-			self:Toggle();
-		end
-		
 		function ProcessAuctions()
 			-- Gather the Auctions
 			local numItems = GetNumAuctionItems("list");

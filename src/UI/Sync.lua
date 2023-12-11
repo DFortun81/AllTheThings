@@ -906,14 +906,8 @@ app:GetWindow("Synchronization", {
 		AutoSync = true,
 		LinkedCharacters = LinkedCharacters,
 	},
+	Commands = { "attsync" },
 	OnInit = function(self, handlers)
-		SLASH_ATTSYNC1 = "/attaccount";
-		SLASH_ATTSYNC2 = "/attdata";
-		SLASH_ATTSYNC3 = "/attsync";
-		SlashCmdList["ATTSYNC"] = function(cmd)
-			self:Toggle();
-		end
-		
 		-- Register for Battle.net addon messaging
 		handlers.BN_CHAT_MSG_ADDON = function(self, prefix, datastring, channel, sender)
 			if prefix ~= AddonMessagePrefix or not datastring or channel ~= "WHISPER" then return; end

@@ -507,21 +507,15 @@ SoftReserveWindow = app:GetWindow("SoftReserves", {
 	parent = UIParent,
 	Silent = true,
 	IgnoreQuestUpdates = true,
+	Commands = { "attsoftreserve", "/attsr" },
+	OnCommand = function(self, cmd)
+		if cmd and cmd ~= "" then
+			ParseSoftReserve(UnitGUID("player"), cmd, true, true);
+			return true;
+		end
+	end,
 	OnInit = function(self, handlers)
 		self.ignoreNoEntries = true;
-		SLASH_ATTSOFTRES1 = "/attsr";
-		SLASH_ATTSOFTRES2 = "/attsoft";
-		SLASH_ATTSOFTRES3 = "/attsoftreserve";
-		SLASH_ATTSOFTRES4 = "/attsoftreserves";
-		SlashCmdList["ATTSOFTRES"] = function(cmd)
-			if cmd and cmd ~= "" then
-				ParseSoftReserve(UnitGUID("player"), cmd, true, true);
-			else
-				-- Default command
-				self:Toggle();
-			end
-		end
-		
 		-- Setup Event Handlers and register for events
 		handlers.CHAT_MSG_ADDON = function(self, ...)
 			CHAT_MSG_ADDON_HANDLER(...);

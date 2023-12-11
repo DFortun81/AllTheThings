@@ -114,12 +114,7 @@ app:GetWindow("Objects", {
 	parent = UIParent,
 	Silent = true,
 	IgnoreQuestUpdates = true,
-	OnInit = function(self, handlers)
-		SLASH_ATTOBJECTS1 = "/attobjects";
-		SlashCmdList["ATTOBJECTS"] = function(cmd)
-			self:Toggle();
-		end
-	end,
+	Commands = { "attobjects" },
 	OnRebuild = function(self)
 		if not self.data then
 			local g = {

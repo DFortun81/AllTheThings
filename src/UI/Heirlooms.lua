@@ -11,11 +11,8 @@ app:GetWindow("Heirlooms", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	Commands = { "attheirlooms" },
 	OnInit = function(self, handlers)
-		SLASH_ATTHEIRLOOMS1 = "/attheirlooms";
-		SlashCmdList["ATTHEIRLOOMS"] = function(cmd)
-			self:Toggle();
-		end
 		self.data = {
 			text = HEIRLOOMS,
 			icon = app.asset("Weapon_Type_Heirloom"),

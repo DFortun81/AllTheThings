@@ -11,11 +11,8 @@ app:GetWindow("Illusions", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	Commands = { "attillusions" },
 	OnInit = function(self, handlers)
-		SLASH_ATTILLUSIONS1 = "/attillusions";
-		SlashCmdList["ATTILLUSIONS"] = function(cmd)
-			self:Toggle();
-		end
 		self.data = {
 			text = L["FILTER_ID_TYPES"][103],
 			icon = 132853,

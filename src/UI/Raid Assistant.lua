@@ -136,14 +136,9 @@ app:GetWindow("RaidAssistant", {
 	parent = UIParent,
 	Silent = true,
 	IgnoreQuestUpdates = true,
+	Commands = { "attra" },
 	OnInit = function(self, handlers)
 		self.ignoreNoEntries = true;
-		SLASH_ATTRAIDASSIST1 = "/attra";
-		SLASH_ATTRAIDASSIST2 = "/attraid";
-		SlashCmdList["ATTRAIDASSIST"] = function(cmd)
-			self:Toggle();
-		end
-		
 		local isBusy = not C_Scenario_IsInScenario and IsInInstance or function()
 			return IsInInstance() or C_Scenario_IsInScenario();
 		end;

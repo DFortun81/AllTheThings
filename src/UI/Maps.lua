@@ -11,12 +11,7 @@ app:GetWindow("Maps", {
 	parent = UIParent,
 	Silent = true,
 	IgnoreQuestUpdates = true,
-	OnInit = function(self, handlers)
-		SLASH_ATTMAPS1 = "/attmaps";
-		SlashCmdList["ATTMAPS"] = function(cmd)
-			self:Toggle();
-		end
-	end,
+	Commands = { "attmaps" },
 	OnRebuild = function(self)
 		if not self.data then
 			local g = {};

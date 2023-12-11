@@ -10,12 +10,8 @@ app:GetWindow("Flight Paths", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	Commands = { "attflightpaths", "attfps" },
 	OnInit = function(self, handlers)
-		SLASH_ATTFLIGHTPATHS1 = "/attflightpaths";
-		SLASH_ATTFLIGHTPATHS1 = "/attfps";
-		SlashCmdList["ATTFLIGHTPATHS"] = function(cmd)
-			self:Toggle();
-		end
 		self.data = {
 			text = "Flight Paths",
 			icon = app.asset("Category_FlightPaths"),

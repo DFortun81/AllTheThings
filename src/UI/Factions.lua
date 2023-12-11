@@ -10,11 +10,8 @@ app:GetWindow("Factions", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	Commands = { "attfactions" },
 	OnInit = function(self, handlers)
-		SLASH_ATTFACTIONS1 = "/attfactions";
-		SlashCmdList["ATTFACTIONS"] = function(cmd)
-			self:Toggle();
-		end
 		self.data = app.CreateNPC(app.HeaderConstants.FACTIONS, {
 			description = "This list shows you all of the factions that you can collect.",
 			visible = true,

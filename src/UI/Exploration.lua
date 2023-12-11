@@ -6,12 +6,7 @@ app:GetWindow("Exploration", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
-	OnInit = function(self, handlers)
-		SLASH_ATTEXPLORATION1 = "/attexploration";
-		SlashCmdList["ATTEXPLORATION"] = function(cmd)
-			self:Toggle();
-		end
-	end,
+	Commands = { "attexploration" },
 	OnRebuild = function(self, ...)
 		if not self.data then
 			self.data = {

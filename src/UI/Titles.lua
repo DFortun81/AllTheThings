@@ -10,11 +10,8 @@ app:GetWindow("Titles", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	Commands = { "atttitles" },
 	OnInit = function(self, handlers)
-		SLASH_ATTTITLES1 = "/atttitles";
-		SlashCmdList["ATTTITLES"] = function(cmd)
-			self:Toggle();
-		end
 		self.data = {
 			text = PAPERDOLL_SIDEBAR_TITLES,
 			icon = app.asset("Category_Titles"),

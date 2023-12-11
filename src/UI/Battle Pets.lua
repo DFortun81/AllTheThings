@@ -14,12 +14,11 @@ app:GetWindow("Battle Pets", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	Commands = {
+		"attpets",
+		"attbattlepets",
+	},
 	OnInit = function(self, handlers)
-		SLASH_ATTPETS1 = "/attpets";
-		SLASH_ATTPETS2 = "/attbattlepets";
-		SlashCmdList["ATTPETS"] = function(cmd)
-			self:Toggle();
-		end
 		self.data = {
 			text = AUCTION_CATEGORY_BATTLE_PETS,
 			icon = app.asset("Category_PetJournal"),

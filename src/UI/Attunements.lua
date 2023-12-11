@@ -61,14 +61,11 @@ end
 app:GetWindow("Attunements", {
 	parent = UIParent,
 	Silent = true,
-	OnInit = function(self, handlers)
-		SLASH_ATTATTUNED1 = "/attuned";
-		SLASH_ATTATTUNED2 = "/attattuned";
-		SLASH_ATTATTUNED3 = "/attunements";
-		SlashCmdList["ATTATTUNED"] = function(cmd)
-			self:Toggle();
-		end
-	end,
+	Commands = {
+		"attuned",
+		"attattuned",
+		"attunements",
+	},
 	OnRebuild = function(self, ...)
 		if not self.data then
 			local attunements = {
