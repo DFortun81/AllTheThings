@@ -47,13 +47,6 @@ root(ROOTS.Factions, {
 			faction(1738),	-- Defender Illona
 			faction(1733),	-- Delvar Ironfist
 		})),
-		tier(BFA_TIER, sharedData({["races"] = ALLIANCE_ONLY,}, {
-			faction(2159),	-- 7th Legion
-			faction(2395),	-- Honeyback Hive
-			faction(2161),	-- Order of Embers
-			faction(2160),	-- Proudmoore Admiralty
-			faction(2162),	-- Storm's Wake
-		})),
 	}),
 	n(FACTION_HEADER_HORDE, {
 		n(-6014, sharedData({["races"] = HORDE_ONLY,}, {	-- Cities
@@ -93,12 +86,6 @@ root(ROOTS.Factions, {
 			faction(1848),	-- Vol'jin's Headhunters
 			faction(1740),	-- Aeda Brightdawn
 			faction(1739),	-- Vivianne
-		})),
-		tier(BFA_TIER, sharedData({["races"] = HORDE_ONLY,}, {
-			faction(2156),	-- Talanji's  Expedition
-			faction(2157),	-- The Honorbound
-			faction(2158),	-- Voldunai
-			faction(2103),	-- Zandalari Empire
 		})),
 	}),
 	tier(CLASSIC_TIER, {
@@ -189,12 +176,5 @@ root(ROOTS.Factions, {
 		faction(1859),	-- The Nightfallen
 		faction(1894),	-- The Wardens
 		faction(1948),	-- Valarjar
-	}),
-	tier(BFA_TIER, {
-		faction(2164),	-- Champions of Azeroth
-		faction(2415),	-- Rajani
-		faction(2391),	-- Rustbolt Resistance
-		faction(2163),	-- Tortollan Seekers
-		faction(2417),	-- Uldum Accord
 	}),
 });

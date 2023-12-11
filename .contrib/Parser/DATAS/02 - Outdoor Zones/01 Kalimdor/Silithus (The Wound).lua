@@ -56,21 +56,23 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 						}),
 					}),
 					n(EMISSARY_QUESTS, {
-						q(50562, {	-- Champions of Azeroth
-							["isWorldQuest"] = true,
-							["coord"] = { 42.22, 44.27, SILITHUS },
-							["lvl"] = { 50 },
-						}),
-						q(54453, {	-- Supplies from Magni
-							["repeatable"] = true,
-							["coord"] = { 42.22, 44.27, SILITHUS },
-							["qg"] = 130216,	-- Magni Bronzebeard
-							["lvl"] = { 50 },
-							["g"] = {
-								i(166298, {	-- Champions of Azeroth Supplies
-									i(166877),	-- Azerite Firework Launcher (TOY!)
-								}),
-							},
+						faction(2164, {	-- Champions of Azeroth
+							q(50562, {	-- Champions of Azeroth
+								["isWorldQuest"] = true,
+								["coord"] = { 42.22, 44.27, SILITHUS },
+								["lvl"] = { 50 },
+							}),
+							q(54453, {	-- Supplies from Magni
+								["repeatable"] = true,
+								["coord"] = { 42.22, 44.27, SILITHUS },
+								["qg"] = 130216,	-- Magni Bronzebeard
+								["lvl"] = { 50 },
+								["g"] = {
+									i(166298, {	-- Champions of Azeroth Supplies
+										i(166877),	-- Azerite Firework Launcher (TOY!)
+									}),
+								},
+							}),
 						}),
 					}),
 					n(PROFESSIONS, {
