@@ -954,7 +954,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(191682, {	-- Explosive Pie
+						i(191682, {	-- Explosive Pie (QI!)
 							["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 						}),
 					},

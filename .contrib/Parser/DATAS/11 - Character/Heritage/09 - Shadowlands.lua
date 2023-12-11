@@ -49,6 +49,9 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_9_2_5 } },
 					},
 					["provider"] = { "n", 176826 },	-- Lady Liadrin
 					["coord"] = { 48.5, 32.1, GHOSTLANDS },
+					["g"] = {
+						i(184895),	-- Forged Ranseur (QI!)
+					},
 				}),
 				q(63485, {	-- An Honest Heart
 					["sourceQuests"] = { 63484 },	-- A Knight's Weapon
@@ -157,6 +160,11 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_9_2_5 } },
 				q(63501, {	-- It's Called Borrowing
 					["sourceQuests"] = { 63498 },	-- Brawl or Brew
 					["provider"] = { "i", 184894 },	-- Thurgaden's Designs
+					["g"] = {
+						i(184916),	-- Boiling Flamecore (QI!)
+						i(184915),	-- Darkforged Ingot (QI!)
+						i(184917),	-- Flamepoint Engraver (QI!)
+					},
 				}),
 				q(63502, {	-- Weapons o' the Dark Iron
 					["sourceQuests"] = { 63501 },	-- It's Called Borrowing
@@ -181,6 +189,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_9_2_5 } },
 					["provider"] = { "n", 144119 },	-- Kasea Angerforge
 					["coord"] = { 47.7, 47.0, 1186 },
 					["g"] = {
+						i(190606),	-- Charred Steak (QI!)
 						i(191123),	-- Grimhowl (MOUNT!)
 					},
 				}),

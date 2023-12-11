@@ -1323,7 +1323,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(191865, {	-- Bottle of Briny Seawater
+						i(191865, {	-- Bottle of Briny Seawater (QI!)
 							["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 						}),
 					},

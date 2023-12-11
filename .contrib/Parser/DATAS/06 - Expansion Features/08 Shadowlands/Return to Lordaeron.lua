@@ -68,6 +68,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["sourceQuests"] = { 65665 },	-- Embodiment
 			["provider"] = { "n", 185829 },	-- Lilian Voss
 			["coord"] = { 68.6, 81.8, MALDRAXXUS },
+			["g"] = {
+				i(191029),	-- Lilian's Hearthstone (QI!)
+			},
 		}),
 		q(65667, {	-- The Remedy of Lordaeron
 			["provider"] = { "n", 185839 },	-- Calia Menethil
@@ -111,6 +114,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				ach(15579, {	-- Return to Lordaeron
 					title(460),	-- <Name> of Lordaeron
 				}),
+				i(191034),	-- Letter to Greymane (QI!)
 			},
 		}),
 	}),
