@@ -95,26 +95,28 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
-				n(115887, {	-- Trinket
-					["coord"] = { 32.4, 66.8, HIGHMOUNTAIN },
-					["g"] = pvp({
-						i(142364),	-- Bag of Twigs
-						i(142368, {	-- Cracked Falcosaur Beak
-							["cost"] = 10000000,	-- 1,000g
-						}),
-						i(142367, {	-- Ivory Feather
-							i(142363),	-- Mark of Prey
-						}),
-						i(142369, {	-- Ivory Hawkstrider (MOUNT!)
-							["cost"] = 100000000,	-- 10,000g
-						}),
-						i(142361, {	-- Ivory Talon
-							i(142363),	-- Mark of Prey
-							title(346, {	-- <Name>, Talon's Vengeance
-								["collectible"] = false,
+				faction(2018, {	-- Talon's Vengeance
+					n(115887, {	-- Trinket
+						["coord"] = { 32.4, 66.8, HIGHMOUNTAIN },
+						["g"] = pvp({
+							i(142364),	-- Bag of Twigs
+							i(142368, {	-- Cracked Falcosaur Beak
+								["cost"] = 10000000,	-- 1,000g
 							}),
+							i(142367, {	-- Ivory Feather
+								i(142363),	-- Mark of Prey
+							}),
+							i(142369, {	-- Ivory Hawkstrider (MOUNT!)
+								["cost"] = 100000000,	-- 10,000g
+							}),
+							i(142361, {	-- Ivory Talon
+								i(142363),	-- Mark of Prey
+								title(346, {	-- <Name>, Talon's Vengeance
+									["collectible"] = false,
+								}),
+							}),
+							i(142366),	-- Regurgitated Leaf
 						}),
-						i(142366),	-- Regurgitated Leaf
 					}),
 				}),
 			}),

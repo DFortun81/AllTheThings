@@ -168,13 +168,4 @@ root(ROOTS.Factions, {
 		faction(1737),	-- Talonpriest Ishaal
 		faction(1736),	-- Tormmok
 	}),
-	tier(LEGION_TIER, {
-		faction(2045),	-- Armies of Legionfall
-		faction(1900),	-- Court of Farondis
-		faction(1828),	-- Highmountain Tribe
-		faction(2018),	-- Talon's Vengeance
-		faction(1859),	-- The Nightfallen
-		faction(1894),	-- The Wardens
-		faction(1948),	-- Valarjar
-	}),
 });
