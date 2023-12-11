@@ -12276,6 +12276,23 @@ function app:GetWindow(suffix, settings)
 		if settings.OnInit then
 			settings.OnInit(window, handlers);
 		end
+		if settings.Commands then
+			local commandRoot = string.upper(settings.Commands[1]);
+			if settings.OnCommand then
+				SlashCmdList[commandRoot] = function(cmd) 
+					if not settings.OnCommand(window, cmd) then
+						window:Toggle(cmd);
+					end
+				end
+			else
+				SlashCmdList[commandRoot] = function(cmd) 
+					window:Toggle(cmd);
+				end
+			end
+			for i,command in ipairs(settings.Commands) do
+				_G["SLASH_" .. commandRoot .. i] = "/" .. command;
+			end
+		end
 		LoadSettingsForWindow(window);
 	end
 	return window;

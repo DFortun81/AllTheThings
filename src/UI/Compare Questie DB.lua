@@ -22,39 +22,38 @@ local function BuildGroups(parent)
 end
 
 -- Implementation
-app:GetWindow("Compare Questie DB", {
+app:GetWindow("Missing Quests", {
 	parent = UIParent,
 	Silent = true,
-	OnInit = function(self, handlers)
-		SLASH_ATTQUESTIE1 = "/attquestie";
-		SlashCmdList["ATTQUESTIE"] = function(cmd)
-			self:Toggle();
-		end
-	end,
+	Commands = {
+		"attmissing",
+		"attquestie",
+		"attmq",
+	},
 	IsQuestieLoaded = false,
 	OnRebuild = function(self, ...)
 		if self.data then return; end
 		self.data = {
-			text = "Compare Questie DB",
+			text = "Missing Quests",
 			icon = app.asset("Interface_Quest"),
-			description = "This window shows you all of the quests that are missing from ATT that exist in Questie and also quests that exist in ATT that are missing in Questie.\n\nObviously you need to have Questie installed.",
+			description = "This window shows you all of the quests that are missing from ATT that exist in Questie or in your Saved Variables.",
 			visible = true, 
 			expanded = true,
 			back = 1,
 			options = {
 				{	-- Missing Quests From ATT Header
-					text = "Missing Quests From ATT",
+					text = "From ATT",
 					icon = app.asset("logo_32x32"),
 					preview = app.asset("Discord_2_128"),
-					description = "The following quests are missing from ATT, but were found in the Questie DB!",
+					description = "The following quests are missing from ATT, but were found in the Questie DB or your Saved Variables!",
 				},
 				{	-- Missing Quests From Questie Header
-					text = "Missing Quests From Questie",
+					text = "From Questie",
 					icon = app.asset("Interface_Quest"),
 					description = "The following quests are missing from Questie, but were found in the ATT DB!",
 				},
-				{	-- Missing Quests From Questie (Sourced) Header
-					text = "Missing Quests From Questie (Sourced)",
+				{	-- Missing Quests From Questie (With ATT Sources) Header
+					text = "From Questie (With ATT Sources)",
 					icon = app.asset("Interface_Quest"),
 					description = "The following quests are missing from Questie, but were found in the ATT DB!",
 				},
