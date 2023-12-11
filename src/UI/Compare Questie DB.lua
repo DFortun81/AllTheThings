@@ -70,6 +70,7 @@ app:GetWindow("Missing Quests", {
 				
 				local MissingQuestsFromATT, MissingQuestsFromQuestie = {}, {};
 				local QuestieDB = QuestieLoader:ImportModule("QuestieDB");
+				if not QuestieDB.QuestPointers then return; end
 				for id,_ in pairs(QuestieDB.QuestPointers) do
 					if #SearchForField("questID", id) == 0 then
 						tinsert(MissingQuestsFromATT, id);
@@ -77,7 +78,7 @@ app:GetWindow("Missing Quests", {
 				end
 				
 				for id,questData in pairs(SearchForFieldContainer("questID")) do
-					if not QuestieDB.QuestPointers[id] and questData[1].u ~= 1 then
+					if not QuestieDB.QuestPointers[id] and #questData > 1 and questData[1].u ~= 1 then
 						local shouldAdd = true;
 						for i,quest in ipairs(questData) do
 							if not quest.parent or GetRelativeValue(quest, "u") == 1 or GetRelativeValue(quest, "_hqt") then

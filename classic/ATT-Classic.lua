@@ -12277,7 +12277,8 @@ function app:GetWindow(suffix, settings)
 			settings.OnInit(window, handlers);
 		end
 		if settings.Commands then
-			local commandRoot = string.upper(settings.Commands[1]);
+			window.Commands = settings.Commands;
+			local commandRoot = string.upper(window.Commands[1]);
 			if settings.OnCommand then
 				SlashCmdList[commandRoot] = function(cmd) 
 					if not settings.OnCommand(window, cmd) then
@@ -12289,7 +12290,7 @@ function app:GetWindow(suffix, settings)
 					window:Toggle(cmd);
 				end
 			end
-			for i,command in ipairs(settings.Commands) do
+			for i,command in ipairs(window.Commands) do
 				_G["SLASH_" .. commandRoot .. i] = "/" .. command;
 			end
 		end
