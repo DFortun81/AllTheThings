@@ -557,6 +557,7 @@ i(192635);	-- Warped Metal
 i(192627);	-- Obsidian Clump
 i(192654);	-- Giant Stone Eye
 i(192695);	-- Molten Mandible
+i(202065);	-- Static Sand
 
 
 -- ^^ Not cleaned

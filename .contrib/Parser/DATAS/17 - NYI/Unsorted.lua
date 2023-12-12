@@ -1677,7 +1677,6 @@ root(ROOTS.Unsorted, {
 				i(201813),	-- Spoiled Firewine
 				i(192723),	-- Springy Tongue
 				i(201202),	-- Squirrel Tail
-				i(202065),	-- Static Sand
 				i(201970),	-- Stolen Illidari Blindfold
 				i(201167),	-- Stone Calendar
 				i(192671),	-- Sublime Flower
