@@ -73,6 +73,16 @@ app:GetWindow("Missing Quests", {
 				if not QuestieDB.QuestPointers then return; end
 				
 				local MissingQuestsFromATTDict, MissingQuestsFromQuestieDict = {}, {};
+				for id,_ in pairs(ATTAccountWideData.Quests) do
+					if not MissingQuestsFromATTDict[id] and #SearchForField("questID", id) == 0 then
+						MissingQuestsFromATTDict[id] = true;
+						tinsert(MissingQuestsFromATT, id);
+					end
+					if not MissingQuestsFromQuestieDict[id] and not QuestieDB.QuestPointers[id] then
+						MissingQuestsFromQuestieDict[id] = true;
+						tinsert(MissingQuestsFromQuestie, id);
+					end
+				end
 				for id,_ in pairs(app.CurrentCharacter.Quests) do
 					if not MissingQuestsFromATTDict[id] and #SearchForField("questID", id) == 0 then
 						MissingQuestsFromATTDict[id] = true;
