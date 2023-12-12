@@ -13,27 +13,6 @@ local AccountWideData, CharacterData, CurrentCharacter, LinkedCharacters, Online
 
 -- Module locals
 local AddonMessagePrefix, MESSAGE_HANDLERS, pendingReceiveChunksForUser, pendingSendChunksForUser, uid = "ATTSYNC", {}, {}, {}, 1;
-local function GenerateChunks(msg, chunksize)
-	local encodedLength = string.len(msg);
-	if encodedLength > chunksize then
-		-- When the message exceeds the length, we have to cut it into sections and deliver it as a set of chunks.
-		--print("Encoded Message exceeded maximum (" .. chunksize .. "): ", encodedLength);
-		local chunks = {};
-		chunksize = chunksize - 16;
-		for i=1,encodedLength,chunksize do
-			local chunk;
-			local j = i + chunksize - 1;
-			if j >= encodedLength then
-				chunk = strsub(msg, i, encodedLength);
-			else
-				chunk = strsub(msg, i, j);
-			end
-			tinsert(chunks, chunk);
-		end
-		--print("Generated " .. #chunks .. " chunks for encoded string!");
-		return chunks;
-	end
-end
 local function ProcessSendChunks()
 	local any;
 	repeat
@@ -126,29 +105,42 @@ local function ReceiveChunk(method, sender, uid, chunkIndex, chunkCount, chunk)
 		return message;
 	end
 end
+local function SendMessageChunks(method, target, msg, chunksize)
+	local encodedLength = string.len(msg);
+	if encodedLength > chunksize then
+		-- When the message exceeds the length, we have to cut it into sections and deliver it as a set of chunks.
+		--print("Encoded Message exceeded maximum (" .. chunksize .. "): ", encodedLength);
+		local chunks = {};
+		chunksize = chunksize - 16;
+		for i=1,encodedLength,chunksize do
+			local chunk;
+			local j = i + chunksize - 1;
+			if j >= encodedLength then
+				chunk = strsub(msg, i, encodedLength);
+			else
+				chunk = strsub(msg, i, j);
+			end
+			tinsert(chunks, chunk);
+		end
+		QueueSendChunks(method, target, chunks);
+		--print("Generated " .. #chunks .. " chunks for encoded string!");
+	else
+		method(target, msg);
+	end
+end
 local function _SendAddonMessage(target, msg)
 	C_ChatInfo.SendAddonMessage(AddonMessagePrefix, msg, "WHISPER", target);
 end
 local function SendAddonMessage(target, msg)
 	--print("SendAddonMessage", target, string.len(msg) > 40 and (strsub(msg, 1, 40) .. "...") or msg);
-	local chunks = GenerateChunks(msg, 255);
-	if chunks then
-		QueueSendChunks(_SendAddonMessage, target, chunks);
-	else
-		_SendAddonMessage(target, msg);
-	end
+	SendMessageChunks(_SendAddonMessage, target, msg, 255);
 end
 local function _SendBattleNetMessage(target, msg)
 	BNSendGameData(target, AddonMessagePrefix, msg);
 end
 local function SendBattleNetMessage(target, msg)
 	--print("SendBattleNetMessage", target, string.len(msg) > 40 and (strsub(msg, 1, 40) .. "...") or msg);
-	local chunks = GenerateChunks(msg, 4086);
-	if chunks then
-		QueueSendChunks(_SendBattleNetMessage, target, chunks);
-	else
-		BNSendGameData(target, AddonMessagePrefix, msg);
-	end
+	SendMessageChunks(_SendBattleNetMessage, target, msg, 4086);
 end
 local function SplitString(separator, text)
     local sep, res = separator or '%s', {}
@@ -652,10 +644,11 @@ MESSAGE_HANDLERS.check = function(self, sender, content, responses)
 	end
 	
 	-- Generate the sync string
-	local response = "chars";
+	local response, chars = "chars," .. CurrentCharacter.guid .. ":" .. CurrentCharacter.lastPlayed, { [CurrentCharacter.guid] = true };
 	for guid,character in pairs(CharacterData) do
-		if character.lastPlayed and not character.ignored then
+		if character.lastPlayed and not character.ignored and not chars[guid] then
 			response = response .. "," .. guid .. ":" .. character.lastPlayed;
+			chars[guid] = true;
 		end
 	end
 	tinsert(responses, response);
@@ -663,7 +656,8 @@ MESSAGE_HANDLERS.check = function(self, sender, content, responses)
 end
 MESSAGE_HANDLERS.char = function(self, sender, content, responses)
 	if not LinkedCharacters[sender] then return false; end
-	ReceiveCharacterSummary(self, sender, responses, content[2], tonumber(content[3]), true);
+	local guid, lastPlayed = strsplit(":", content[2]);
+	ReceiveCharacterSummary(self, sender, responses, guid, tonumber(lastPlayed), true);
 end
 MESSAGE_HANDLERS.chars = function(self, sender, content, responses)
 	if not LinkedCharacters[sender] then return false; end
@@ -828,7 +822,7 @@ local function OnClickForLinkedAccount(row, button)
 			row:GetParent():GetParent():Rebuild();
 		end);
 	else
-		print("SynchronizeWithLinkedCharacter", identifier);
+		--print("SynchronizeWithLinkedCharacter", identifier);
 		
 		-- Cache characters by their names.
 		local characterByInfo = {};
@@ -976,7 +970,7 @@ app:GetWindow("Synchronization", {
 								-- Prevent server names.
 								cmd = strsplit("-", cmd);
 								LinkedCharacters[cmd] = true;
-								SendAddonMessage(cmd, "check," .. CurrentCharacter.battleTag);
+								SendAddonMessage(cmd, "link," .. CurrentCharacter.battleTag);
 								self:Rebuild();
 							end
 						end);
