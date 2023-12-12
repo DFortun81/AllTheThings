@@ -14701,7 +14701,7 @@ app.events.VARIABLES_LOADED = function()
 		coroutine.yield();
 		
 		-- Check for Season of Discovery
-		getmetatable(ATTClassicSettings.Unobtainables).__index[1605] = C_Engraving and C_Engraving.IsEngravingEnabled();
+		getmetatable(ATTClassicSettings.Unobtainables).__index[1605] = C_Seasons and C_Seasons.GetActiveSeason() == 2;
 
 		-- Prepare the Sound Pack!
 		app.Audio:ReloadSoundPack();

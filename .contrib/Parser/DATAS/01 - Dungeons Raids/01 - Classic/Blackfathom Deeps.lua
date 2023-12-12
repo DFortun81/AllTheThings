@@ -129,10 +129,17 @@ BFDItem(211491, BAGS);	-- Bottomless Murloc Skin Bag
 BFDItem(211492, BAGS);	-- Kelris's Satchel
 
 local SOD_DISABLE_NORMAL_MODE = [[function(t)
-	if getmetatable(ATTClassicSettings.Unobtainables).__index[1605] then
+	if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
 		t.u = 2;
-		t.OnUpdate = nil;
 	end
+	t.OnUpdate = nil;
+end]];
+local SOD_TURN_BFD_INTO_RAID = [[function(t)
+	if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
+		t.sharedLockout = 1;
+		t.isRaid = true;
+	end
+	t.OnUpdate = nil;
 end]];
 -- #endif
 root(ROOTS.Instances, tier(CLASSIC_TIER, {
@@ -153,8 +160,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		-- #endif
 		["maps"] = { BLACKFATHOM_DEEPS, BLACKFATHOM_DEEPS_LEVEL2, BLACKFATHOM_DEEPS_LEVEL3 },
 		-- #if SEASON_OF_DISCOVERY
-		["sharedLockout"] = 1,
-		["isRaid"] = true,
+		["OnUpdate"] = SOD_TURN_BFD_INTO_RAID,
 		-- #endif
 		["lvl"] = lvlsquish(19, 19, 10),
 		["groups"] = {
@@ -832,7 +838,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			})),
-			d(3, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" }, }, {	-- 10-Player
+			applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, d(3, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" }, }, {	-- 10-Player
 				["description"] = "This instance was converted from a normal difficulty dungeon into a 10-player raid instance.",
 				["difficulties"] = { 198 },
 				["lvl"] = 25,
@@ -1169,7 +1175,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						},
 					}),
 				},
-			})),
+			}))),
 			-- #endif
 		},
 	}),
