@@ -252,7 +252,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(21, {	-- Blood Guard <Name>
 				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -300,7 +300,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(23, {	-- Centurion <Name>
 				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -310,7 +310,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(24, {	-- Champion <Name>
 				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -328,7 +328,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(11, {	-- Commander <Name>
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -338,7 +338,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(2, {	-- Corporal <Name>
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -445,7 +445,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(13, {	-- Field Marshal <Name>
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -455,7 +455,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(19, {	-- First Sergeant <Name>
 				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -542,7 +542,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(26, {	-- General <Name>
 				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -555,7 +555,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(14, {	-- Grand Marshal <Name>
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -573,7 +573,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(16, {	-- Grunt <Name>
 				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -614,7 +614,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(28, {	-- High Warlord <Name>
 				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -671,7 +671,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(6, {	-- Knight <Name>
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -681,7 +681,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(8, {	-- Knight-Captain <Name>
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -691,7 +691,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(9, {	-- Knight-Champion <Name>
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -701,7 +701,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(7, {	-- Knight-Lieutenant <Name>
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -724,7 +724,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(22, {	-- Legionnaire <Name>
 				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -734,7 +734,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(10, {	-- Lieutenant Commander <Name>
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -744,7 +744,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(25, {	-- Lieutenant General <Name>
 				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -757,7 +757,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(12, {	-- Marshal <Name>
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -767,7 +767,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(4, {	-- Master Sergeant <Name>
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -835,7 +835,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(1, {	-- Private <Name>
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -845,7 +845,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(15, {	-- Scout <Name>
 				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -855,7 +855,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(18, {	-- Senior Sergeant <Name>
 				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -865,7 +865,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(3, {	-- Sergeant <Name>
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -875,7 +875,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(17, {	-- Sergeant <Name>
 				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -885,7 +885,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(5, {	-- Sergeant Major <Name>
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -906,7 +906,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(20, {	-- Stone Guard <Name>
 				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
@@ -1034,7 +1034,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["g"] = {
 			title(27, {	-- Warlord <Name>
 				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_1_4_0, REMOVED_6_0_2 },
+				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
 	}),
