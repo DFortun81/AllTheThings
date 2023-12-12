@@ -12780,7 +12780,7 @@ local function OnInitForPopout(self, group)
 			end
 		end
 		
-		if not self.data.ignoreSourceLookup then
+		if not (self.data.ignoreSourceLookup or (self.data.g and #self.data.g > 0)) then
 			local results = app:BuildSearchResponse(app:GetDataCache().g, dataKey, self.data[dataKey]);
 			if results and #results > 0 then
 				if not self.data.g then self.data.g = {}; end
