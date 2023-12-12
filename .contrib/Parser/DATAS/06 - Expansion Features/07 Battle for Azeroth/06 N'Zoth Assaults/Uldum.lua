@@ -1041,19 +1041,20 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				},
 			}),
 			n(EMISSARY_QUESTS, {
-				faction(2417, {	-- Uldum Accord
-					q(58097, {	-- Supplies from the Uldum Accord
-						["repeatable"] = true,
-						["g"] = {
-							i(174484, {	-- Uldum Accord Supplies
-								i(173283, {	-- Token of a Brilliant Death (Rank 4)
-									["u"] = REMOVED_FROM_GAME,
-								}),
-								i(174481),	-- Cursed Dune Watcher (PET!)
+				q(58097, bubbleDownSelf({ ["minReputation"] = { FACTION_ULDUM_ACCORD, EXALTED } }, {	-- Supplies from the Uldum Accord
+					["repeatable"] = true,
+					["g"] = {
+						i(174484, {	-- Uldum Accord Supplies
+							i(173283, {	-- Token of a Brilliant Death (Rank 4)
+								["u"] = REMOVED_FROM_GAME,
 							}),
-						},
-					}),
-				}),
+							i(174481),	-- Cursed Dune Watcher (PET!)
+						}),
+					},
+				})),
+			}),
+			n(FACTIONS, {
+				faction(FACTION_ULDUM_ACCORD),	-- Uldum Accord
 			}),
 			n(-10072, {	-- N'Zoth Assault
 				n(ACHIEVEMENTS, {

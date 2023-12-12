@@ -860,24 +860,25 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				},
 			}),
 			n(EMISSARY_QUESTS, {
-				faction(2415, {	-- Rajani
-					q(58096, {	-- Supplies from the Rajani
-						["repeatable"] = true,
-						["g"] = {
-							i(174483, {	-- Rajani Supplies
-								i(168816, {	-- Pulsing Star Heart (Rank 4)
-									["u"] = REMOVED_FROM_GAME,
-									["classes"] = HEALERS,
-								}),
-								i(168576, {	-- Roots of Magnificent Revival (Rank 4)
-									["u"] = REMOVED_FROM_GAME,
-									["classes"] = TANKS,
-								}),
-								i(174479),	-- Jade Defender (PET!)
+				q(58096, bubbleDownSelf({ ["minReputation"] = { FACTION_RAJANI, EXALTED } }, {	-- Supplies from the Rajani
+					["repeatable"] = true,
+					["g"] = {
+						i(174483, {	-- Rajani Supplies
+							i(168816, {	-- Pulsing Star Heart (Rank 4)
+								["u"] = REMOVED_FROM_GAME,
+								["classes"] = HEALERS,
 							}),
-						},
-					}),
-				}),
+							i(168576, {	-- Roots of Magnificent Revival (Rank 4)
+								["u"] = REMOVED_FROM_GAME,
+								["classes"] = TANKS,
+							}),
+							i(174479),	-- Jade Defender (PET!)
+						}),
+					},
+				})),
+			}),
+			n(FACTIONS, {
+				faction(FACTION_RAJANI),	-- Rajani
 			}),
 			n(-10072, {	-- N'Zoth Assault
 				n(ACHIEVEMENTS, {
