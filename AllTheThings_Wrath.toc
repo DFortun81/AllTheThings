@@ -41,7 +41,6 @@ src\UI\Attunements.lua
 src\UI\Auctions.lua
 src\UI\Battle Pets.lua
 src\UI\Breadcrumbs.lua
-src\UI\Compare Questie DB.lua
 src\UI\Dailies.lua
 src\UI\Exploration.lua
 src\UI\Factions.lua
@@ -51,6 +50,7 @@ src\UI\Hidden Achievement Triggers.lua
 src\UI\Hidden Quest Triggers.lua
 src\UI\Illusions.lua
 src\UI\Maps.lua
+src\UI\Missing Quests.lua
 src\UI\Mounts.lua
 src\UI\Never Implemented.lua
 src\UI\Objects.lua
