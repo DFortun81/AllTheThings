@@ -79,7 +79,8 @@ app:GetWindow("Achievements", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
-	Commands = { "attachievements" },
+	Commands = { "attach", "attachievements" },
+	RootCommandIndex = 2,
 	OnInit = function(self, handlers)
 		self.data = app.CreateCustomHeader(app.HeaderConstants.ACHIEVEMENTS, {
 			description = "This list shows you all of the achievements that you can collect.",

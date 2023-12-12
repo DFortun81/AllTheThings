@@ -507,7 +507,7 @@ SoftReserveWindow = app:GetWindow("SoftReserves", {
 	parent = UIParent,
 	Silent = true,
 	IgnoreQuestUpdates = true,
-	Commands = { "attsoftreserve", "/attsr" },
+	Commands = { "attsr", "attsoftreserve" },
 	OnCommand = function(self, cmd)
 		if cmd and cmd ~= "" then
 			ParseSoftReserve(UnitGUID("player"), cmd, true, true);

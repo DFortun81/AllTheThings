@@ -534,6 +534,7 @@ app.print = function(...)
 	print(L["TITLE"], ...);
 end
 
+
 -- Color Lib
 local CS = CreateFrame("ColorSelect", nil, app.frame);
 local function Colorize(str, color)
@@ -867,7 +868,6 @@ local function GetDisplayID(data)
 		return app.NPCDisplayIDFromID[data.qgs[1]];
 	end
 end
-
 
 
 local function GetBestMapForGroup(group, currentMapID)
@@ -12278,7 +12278,7 @@ function app:GetWindow(suffix, settings)
 		end
 		if settings.Commands then
 			window.Commands = settings.Commands;
-			local commandRoot = string.upper(window.Commands[1]);
+			local commandRoot = string.upper(window.Commands[settings.RootCommandIndex or 1]);
 			if settings.OnCommand then
 				SlashCmdList[commandRoot] = function(cmd) 
 					if not settings.OnCommand(window, cmd) then
@@ -12828,6 +12828,7 @@ function app:CreateMiniListForGroup(group)
 			OnInitForPopout(self, (group.OnPopout and group:OnPopout()) or group);
 		end,
 		OnLoad = function(self, settings)
+			self.dynamic = true;
 			settings.dynamic = true;
 			settings.sourcePath = self.Suffix;
 
@@ -12930,10 +12931,11 @@ app:GetWindow("Prime", {
 		["relativePoint"] = "CENTER",
 	},
 	Commands = {
-		"allthethings",
 		"att",
+		"allthethings",
 		"attc",
 	},
+	RootCommandIndex = 2,
 	OnCommand = function(self, cmd)
 		if cmd and strlen(cmd) > 0 then
 			-- Search for the Link in the database
@@ -13196,8 +13198,8 @@ app:GetWindow("CurrentInstance", {
 		["relativePoint"] = "BOTTOMRIGHT",
 	},
 	Commands = {
-		"attminilist",
 		"attmini",
+		"attminilist",
 	},
 	OnInit = function(self, handlers)
 		app.ToggleMiniListForCurrentZone = function() self:Toggle(); end;
