@@ -40,13 +40,6 @@ root(ROOTS.Factions, {
 			faction(1376),	-- Operation: Shieldwall
 			faction(1242),	-- Pearlfin Jinyu
 		})),
-		tier(WOD_TIER, sharedData({["races"] = ALLIANCE_ONLY,}, {
-			faction(1731),	-- Councils of Exarchs
-			faction(1847),	-- Hand of The Prophet
-			faction(1710),	-- Sha'tari Defense
-			faction(1738),	-- Defender Illona
-			faction(1733),	-- Delvar Ironfist
-		})),
 	}),
 	n(FACTION_HEADER_HORDE, {
 		n(-6014, sharedData({["races"] = HORDE_ONLY,}, {	-- Cities
@@ -79,13 +72,6 @@ root(ROOTS.Factions, {
 			faction(1374),	-- Brawl'gar Arena (Season 1)
 			faction(1375),	-- Dominance Offensive
 			faction(1228),	-- Forest Hozen
-		})),
-		tier(WOD_TIER, sharedData({["races"] = HORDE_ONLY,}, {
-			faction(1445),	-- Frostwolf Orcs
-			faction(1708),	-- Laughing Skull Orcs
-			faction(1848),	-- Vol'jin's Headhunters
-			faction(1740),	-- Aeda Brightdawn
-			faction(1739),	-- Vivianne
 		})),
 	}),
 	tier(CLASSIC_TIER, {
@@ -157,15 +143,5 @@ root(ROOTS.Factions, {
 		faction(1359),	-- The Black Prince
 		faction(1337),	-- The Klaxxi
 		faction(1345),	-- The Lorewalkers
-	}),
-	tier(WOD_TIER, {
-		faction(1515),	-- Arakkoa Outcasts
-		faction(1849),	-- Order of the Awakened
-		faction(1711),	-- Steamwheedle Preservation Society
-		faction(1850),	-- The Saberstalkers
-		-- Bodyguards
-		faction(1741),	-- Leorajh
-		faction(1737),	-- Talonpriest Ishaal
-		faction(1736),	-- Tormmok
 	}),
 });

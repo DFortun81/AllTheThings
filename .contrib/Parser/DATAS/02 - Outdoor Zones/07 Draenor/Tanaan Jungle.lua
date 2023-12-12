@@ -259,6 +259,12 @@ root(ROOTS.Zones, {
 						pet(1591),	--  Violet Firefly (PET!)
 					},
 				})),
+				n(FACTIONS, {
+					faction(1847, {["races"] = ALLIANCE_ONLY}),	-- Hand of The Prophet
+					faction(1849),	-- Order of the Awakened
+					faction(1850),	-- The Saberstalkers
+					faction(1848, {["races"] = HORDE_ONLY}),	-- Vol'jin's Headhunters
+				}),
 				n(FLIGHT_PATHS, {
 					fp(1643, {	-- Aktar's Post, Tanaan Jungle
 						["coord"] = { 26.0, 38.8, TANAAN_JUNGLE },

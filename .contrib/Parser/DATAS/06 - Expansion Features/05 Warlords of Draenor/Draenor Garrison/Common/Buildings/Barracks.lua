@@ -8,6 +8,9 @@ root(ROOTS.ExpansionFeatures,
 			n(BUILDINGS, {	-- Buildings
 				garrisonBuilding(28,  {	-- Barracks (rank 1: 26, rank 2: 27, rank 3: 28)
 					n(ACHIEVEMENTS, {
+						ach(9498, {		-- Wingman
+							["_noautomation"] = true,
+						}),
 						ach(9499, {		-- Wingmen
 							crit(25890),		-- Leorajh
 							crit(25894),		-- Talonpriest Ishaal
@@ -16,8 +19,16 @@ root(ROOTS.ExpansionFeatures,
 							crit(25893, {["races"] = ALLIANCE_ONLY}),		-- Defender Illona
 							crit(25889, {["races"] = ALLIANCE_ONLY}),		-- Delvar Ironfirst
 							crit(25892, {["races"] = HORDE_ONLY}),		-- Vivianne
-							ach(9498),		-- Wingman
 						}),
+					}),
+					n(FACTIONS, {
+						faction(1740, {["races"] = HORDE_ONLY}),	-- Aeda Brightdawn
+						faction(1738, {["races"] = ALLIANCE_ONLY}),	-- Defender Illona
+						faction(1733, {["races"] = ALLIANCE_ONLY}),	-- Delvar Ironfist
+						faction(1741),	-- Leorajh
+						faction(1737),	-- Talonpriest Ishaal
+						faction(1736),	-- Tormmok
+						faction(1739, {["races"] = HORDE_ONLY}),	-- Vivianne
 					}),
 					n(QUESTS, {
 						q(37126, {	-- An Ogre Without His Sword...(A)

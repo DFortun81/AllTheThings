@@ -169,6 +169,9 @@ root(ROOTS.Zones, {
 						pet(1456),	-- Thicket Skitterer (PET!)
 					},
 				})),
+				n(FACTIONS, {
+					faction(1515),	-- Arakkoa Outcasts
+				}),
 				n(FLIGHT_PATHS, {
 					fp(1513, {	-- Apexis Excavation, Spires of Arak
 						["coord"] = { 37.0, 24.6, SPIRES_OF_ARAK },

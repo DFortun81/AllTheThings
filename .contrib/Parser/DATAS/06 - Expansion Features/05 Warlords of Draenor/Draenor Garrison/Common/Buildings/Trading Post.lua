@@ -24,6 +24,10 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 						},
 					}),
 				}),
+				n(FACTIONS, {
+					faction(1710, {["races"] = ALLIANCE_ONLY}),	-- Sha'tari Defense
+					faction(1708, {["races"] = HORDE_ONLY}),	-- Laughing Skull Orcs
+				}),
 				n(QUESTS, {
 					q(36948, {	-- Auctioning for Parts
 						["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",

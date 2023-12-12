@@ -80,18 +80,6 @@ root(ROOTS.Zones, m(DRAENOR, bubbleDown({ ["timeline"] = { ADDED_6_0_3_LAUNCH } 
 				8671,	-- You'll Get Caught Up In The... Frostfire!
 			}},
 		})),
-		ach(9478, {		-- Savage Friends (A)
-			["races"] = ALLIANCE_ONLY,
-			["g"] = {
-				i(111987),	-- Trading Post, Level 3 [Blueprints]
-			},
-		}),
-		ach(9477, {		-- Savage Friends (H)
-			["races"] = HORDE_ONLY,
-			["g"] = {
-				i(111987),	-- Trading Post, Level 3 [Blueprints]
-			},
-		}),
 		petbattle(ach(9724,  {	-- Taming Draenor
 			["timeline"] = { ADDED_6_0_2 },
 			["g"] = {

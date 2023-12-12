@@ -150,6 +150,9 @@ root(ROOTS.Zones, {
 						}),
 					},
 				})),
+				n(FACTIONS, {
+					faction(1731, {["races"] = ALLIANCE_ONLY}),	-- Council of Exarchs
+				}),
 				n(FLIGHT_PATHS, {
 					fp(1569, {	-- Akeeta's Hovel, Shadowmoon Valley
 						["coord"] = { 65.6, 17.6, DRAENOR_SHADOWMOON_VALLEY },

@@ -683,6 +683,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						ach(9477, {	-- Savage Friends
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["_noautomation"] = true,
 							["g"] = {
 								i(111987),	-- Trading Post, Level 3
 							},
@@ -1162,10 +1163,11 @@ root(ROOTS.ExpansionFeatures,
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9478, {	-- Savage Friends
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["_noautomation"] = true,
 							["g"] = {
 								i(111987),	-- Trading Post, Level 3
 							},
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 					},
 				}),
