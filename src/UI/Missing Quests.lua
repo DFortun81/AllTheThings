@@ -71,21 +71,37 @@ app:GetWindow("Missing Quests", {
 				local MissingQuestsFromATT, MissingQuestsFromQuestie = {}, {};
 				local QuestieDB = QuestieLoader:ImportModule("QuestieDB");
 				if not QuestieDB.QuestPointers then return; end
+				
+				local MissingQuestsFromATTDict, MissingQuestsFromQuestieDict = {}, {};
+				for id,_ in pairs(app.CurrentCharacter.Quests) do
+					if not MissingQuestsFromATTDict[id] and #SearchForField("questID", id) == 0 then
+						MissingQuestsFromATTDict[id] = true;
+						tinsert(MissingQuestsFromATT, id);
+					end
+					if not MissingQuestsFromQuestieDict[id] and not QuestieDB.QuestPointers[id] then
+						MissingQuestsFromQuestieDict[id] = true;
+						tinsert(MissingQuestsFromQuestie, id);
+					end
+				end
 				for id,_ in pairs(QuestieDB.QuestPointers) do
-					if #SearchForField("questID", id) == 0 then
+					if not MissingQuestsFromATTDict[id] and #SearchForField("questID", id) == 0 then
+						MissingQuestsFromATTDict[id] = true;
 						tinsert(MissingQuestsFromATT, id);
 					end
 				end
 				
 				for id,questData in pairs(SearchForFieldContainer("questID")) do
-					if not QuestieDB.QuestPointers[id] and #questData > 1 and questData[1].u ~= 1 then
+					if not MissingQuestsFromQuestieDict[id] and not QuestieDB.QuestPointers[id] and #questData > 1 and questData[1].u ~= 1 then
 						local shouldAdd = true;
 						for i,quest in ipairs(questData) do
 							if not quest.parent or GetRelativeValue(quest, "u") == 1 or GetRelativeValue(quest, "_hqt") then
 								shouldAdd = false;
 							end
 						end
-						if shouldAdd then tinsert(MissingQuestsFromQuestie, id); end
+						if shouldAdd then
+							MissingQuestsFromQuestieDict[id] = true;
+							tinsert(MissingQuestsFromQuestie, id);
+						end
 					end
 				end
 				
