@@ -4535,7 +4535,6 @@ root(ROOTS.NeverImplemented, {
 				q(53214),	--
 				q(53215),	--
 				q(53271),	-- Blooming Star Moss
-				q(53273),	-- Winter's Kiss Cluster
 				q(53281),	-- Winter's Kiss Cluster
 				q(53283),	-- Flourishing Sea Stalks
 				q(53284),	-- Flourishing Riverbud
