@@ -63,9 +63,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 70.8, 35.3, THE_AZURE_SPAN },
 				}),
 				q(72022, {	-- Fishing Frenzy!
-					-- ["coord"] = { XX, YY, THE_AZURE_SPAN },
+					["coord"] = { 58.7, 34.5, THE_AZURE_SPAN },
 					["g"] = {
-						i(200756),	-- Frozen Steak
+						i(200756),	-- Frozen Steak (QI!)
 					},
 				}),
 				q(70064, {	-- For Imbu!

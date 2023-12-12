@@ -68,6 +68,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(199213),	-- Lakkamuk Blenny
 					i(204282),	-- Lunker Bits
 					i(199205),	-- Manasucker
+					i(199103),	-- Nappa's Famous Tea
 					i(204284),	-- Norukk's "All-Purpose" Fish Powder
 					i(199100),	-- Peppersmelt
 					i(199104),	-- Piping-Hot Orca Milk

@@ -1974,7 +1974,6 @@ root(ROOTS.Unsorted, {
 				i(194707),	-- Myridian Report
 				i(186159),	-- Mythic Keystone
 				i(200099),	-- M.R.E.
-				i(199103),	-- Nappa's Famous Tea
 				i(200948),	-- Obsidian Hunting Hook
 				i(200595),	-- Odorous Parchment
 				i(200681),	-- Ohn Lite
