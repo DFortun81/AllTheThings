@@ -571,6 +571,12 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					faction(1228, {	-- Forest Hozen
+						["races"] = HORDE_ONLY,
+					}),
+					faction(1242, {	-- Pearlfin Jinyu
+						["races"] = ALLIANCE_ONLY,
+					}),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(895, {	-- Dawn's Blossom, Jade Forest

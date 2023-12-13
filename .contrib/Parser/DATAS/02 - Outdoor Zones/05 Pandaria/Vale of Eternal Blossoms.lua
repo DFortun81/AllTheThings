@@ -61,6 +61,10 @@ root(ROOTS.Zones, {
 					pet(750),	-- Golden Civet Kitten (PET!)
 					pet(752),	-- Yellow-Bellied Bullfrog (PET!)
 				}),
+				n(FACTIONS, {
+					faction(1269),	-- Golden Lotus
+					faction(1345),	-- The Lorewalkers
+				}),
 				n(FLIGHT_PATHS, {
 					fp(1073, {	-- Serpent's Spine, Vale of Eternal Blossoms
 						["coord"] = { 14.2, 79.2, VALE_OF_ETERNAL_BLOSSOMS },

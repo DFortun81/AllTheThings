@@ -94,6 +94,7 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 					},
 				}),
 				ach(11758),	-- Thunderwear
+				ach(8210),	-- Shado-Pan Assault
 
 				-- Guild Achievements
 				ach(8140),	-- Throne of Thunder Guild Run
@@ -104,6 +105,9 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 				i(94593),	-- Secrets of the Empire
 				i(94594),	-- Titan Runestone
 			})),
+			n(FACTIONS, {
+				faction(1435),	-- Shado-Pan Assault
+			}),
 			n(QUESTS, sharedData({
 				["isWeekly"] = true,
 				["g"] = {

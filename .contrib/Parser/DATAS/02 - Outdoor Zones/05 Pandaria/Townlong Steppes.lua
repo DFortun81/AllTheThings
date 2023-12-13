@@ -45,7 +45,6 @@ root(ROOTS.Zones, {
 						crit(22172),	-- Hawkmaster Nurong
 					}),
 					ach(6366),	-- Shado-Pan
-					ach(8210),	-- Shado-Pan Assault
 					ach(7307),	-- Silent Assassin
 					ach(7479, {		-- The Shado-Master
 						-- Meta Achievement
@@ -92,6 +91,7 @@ root(ROOTS.Zones, {
 					},
 				}),
 				n(FACTIONS, {
+					faction(1270),	-- Shado-Pan
 					faction(1341, {	-- The August Celestials
 						["description"] = "Each day, the August Celestials require your aid at one of their temples.  Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",
 						["collectible"] = false,

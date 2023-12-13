@@ -35,11 +35,6 @@ root(ROOTS.Factions, {
 		tier(CATA_TIER, sharedData({["races"] = ALLIANCE_ONLY,}, {
 			faction(1174),	-- Wildhammer Clan
 		})),
-		tier(MOP_TIER, sharedData({["races"] = ALLIANCE_ONLY,}, {
-			faction(1419),	-- Bizmo's Brawlpub (Season 1)
-			faction(1376),	-- Operation: Shieldwall
-			faction(1242),	-- Pearlfin Jinyu
-		})),
 	}),
 	n(FACTION_HEADER_HORDE, {
 		n(-6014, sharedData({["races"] = HORDE_ONLY,}, {	-- Cities
@@ -67,11 +62,6 @@ root(ROOTS.Factions, {
 		})),
 		tier(CATA_TIER, sharedData({["races"] = HORDE_ONLY,}, {
 			faction(1172),	-- Dragonmaw Clan
-		})),
-		tier(MOP_TIER, sharedData({["races"] = HORDE_ONLY,}, {
-			faction(1374),	-- Brawl'gar Arena (Season 1)
-			faction(1375),	-- Dominance Offensive
-			faction(1228),	-- Forest Hozen
 		})),
 	}),
 	tier(CLASSIC_TIER, {
@@ -129,19 +119,5 @@ root(ROOTS.Factions, {
 		faction(1173),	-- Ramkahen
 		faction(1135),	-- The Earthen Ring
 		faction(1171),	-- Therazane
-	}),
-	tier(MOP_TIER, {
-		faction(1492),	-- Emperor Shaohao
-		faction(1269),	-- Golden Lotus
-		faction(1271),	-- Order of the Cloud Serpent
-		faction(1270),	-- Shado-Pan
-		faction(1435),	-- Shado-Pan Assault
-		faction(1302, {	-- The Anglers
-			faction(1358),	-- Nat Pagle
-		}),
-		faction(1341),	-- The August Celestials
-		faction(1359),	-- The Black Prince
-		faction(1337),	-- The Klaxxi
-		faction(1345),	-- The Lorewalkers
 	}),
 });

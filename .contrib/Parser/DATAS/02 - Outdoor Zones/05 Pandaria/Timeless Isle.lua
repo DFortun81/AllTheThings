@@ -1071,6 +1071,10 @@ root(ROOTS.Zones, {
 						pet(1326),	-- Skywisp Moth (PET!)
 					},
 				}),
+				n(FACTIONS, {
+					faction(1492),	-- Emperor Shaohao
+					faction(1359),	-- The Black Prince
+				}),
 				n(FLIGHT_PATHS, {
 					fp(1294, {	-- Huojin Landing
 						["coord"] = { 21.8, 39.8, TIMELESS_ISLE },

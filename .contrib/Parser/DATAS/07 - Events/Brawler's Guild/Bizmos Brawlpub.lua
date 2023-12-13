@@ -150,6 +150,9 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 		n(FACTIONS, sharedData({
 			["races"] = ALLIANCE_ONLY,
 		},{
+			faction(1419, {	-- Bizmo's Brawlpub (Season 1)
+				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
+			}),
 			faction(1691, {	-- Bizmo's Brawlpub (Season 2)
 				["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
 			}),

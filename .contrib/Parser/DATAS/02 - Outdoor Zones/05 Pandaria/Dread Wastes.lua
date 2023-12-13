@@ -128,6 +128,9 @@ root(ROOTS.Zones, {
 						pet(741),	-- Silent Hedgehog (PET!)
 					},
 				}),
+				n(FACTIONS, {
+					faction(1337),	-- The Klaxxi
+				}),
 				n(FLIGHT_PATHS, {
 					fp(1070, {	-- Klaxxi'vess, Dread Wastes
 						["coord"] = { 55.8, 34.8, DREAD_WASTES },
