@@ -111,6 +111,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
 					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
 				}),
+				i(210422, {	-- Loamm Niffen Insignia [Epic 2.5k]
+					["timeline"] = { ADDED_10_2_0 },
+					["minReputation"] = { FACTION_LOAMM_NIFFEN, 20 },
+					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+				}),
+				i(210423, {	-- Dream Wardens Insignia [Epic 2.5k]
+					["timeline"] = { ADDED_10_2_0 },
+					["minReputation"] = { FACTION_DREAM_WARDENS, 20 },
+					["description"] = "This is only awarded if your character is currently max Renown with this reputation.",
+				}),
 			}),
 			n(QUESTS, sharedData({
 				["provider"] = { "n", 199526 },	-- Kazra
