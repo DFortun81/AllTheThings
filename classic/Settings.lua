@@ -233,9 +233,6 @@ settings.Initialize = function(self)
 	end
 	OnClickForTab(self.Tabs[1]);
 	self:UpdateMode();
-
-	-- Account Synchronization
-	--self.TabsByName["Features"]:InitializeSyncWindow();
 end
 settings.CheckSeasonalDate = function(self, eventID, startMonth, startDay, endMonth, endDay)
 	local today = date("*t");
@@ -2712,57 +2709,148 @@ end);
 OpenProfessionListAutomatically:SetATTTooltip("Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List\n\nShortcut Command: /attskills");
 OpenProfessionListAutomatically:SetPoint("TOPLEFT", OpenAuctionListAutomatically, "BOTTOMLEFT", 0, 4);
 
-local temporaryText = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-temporaryText:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
-temporaryText:SetPoint("TOPRIGHT", line, "BOTTOMLEFT", 300, -8);
-temporaryText:SetJustifyH("LEFT");
-temporaryText:SetText("The sync tool has temporarily left this menu.\n\nYou can still access it via the command: /attsync\n\n\nIf someone knows what started causing the window to freeze when you changed to a different addon's settings context, hit me up.\n\nCool things are in development that should make this feature a whole lot better!");
-temporaryText:Show();
-tinsert(settings.MostRecentTab.objects, temporaryText);
-
-local f = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate");
-f:SetPoint("TOP", temporaryText, "BOTTOM", 0, -8);
-f:SetPoint("LEFT", line, "LEFT", 8, -8);
-f:SetPoint("RIGHT", line, "LEFT", 300, -8);
-f:SetText("Open the Sync Window");
-f:SetHeight(30);
-f:RegisterForClicks("AnyUp");
-f:SetScript("OnClick", function()
-	local syncWindow = app:GetWindow("Synchronization");
-	if syncWindow then
-		if SettingsPanel and SettingsPanel:IsShown() then SettingsPanel:Hide(); end
-		syncWindow:Show();
-	end
-end);
-f:SetATTTooltip("Click this button to open the Sync Window");
-tinsert(settings.MostRecentTab.objects, f);
-
-function tab:InitializeSyncWindow()
-	-- Synchronization Window
-	local syncWindow = app:GetWindow("Sync");
-	syncWindow.CloseButton:Disable();
-	syncWindow:SetClampedToScreen(false);
-	syncWindow:SetToplevel(true);
-	syncWindow:SetMovable(false);
-	syncWindow:SetResizable(false);
-	local oldShow, oldHide = syncWindow.Show, syncWindow.Hide;
-	syncWindow.Show = function(self)
-		self:ClearAllPoints();
-		self:SetParent(settings);
-		self:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 0, 0);
-		self:SetSize(300, 530);
-		self:SetScale(1);
-		oldShow(self);
-	end
-	syncWindow.Hide = function(self)
-		self:ClearAllPoints();
-		self:SetParent(UIParent);
-		self:SetSize(300, 530);
-		oldHide(self);
+-- Window Manager
+local WindowButtons = {};
+local lastWindowButtonRow, lastWindowButtonDistance = line, -8;
+local OnClickForWindowButton = function(self)
+	if SettingsPanel and SettingsPanel:IsShown() then SettingsPanel:Hide(); end
+	local syncWindow = app:GetWindow(self.Suffix);
+	if syncWindow then syncWindow:Show(); end
+end;
+local SetPortraitTexture = _G["SetPortraitTexture"];
+local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
+local function GetDisplayID(data)
+	if data.displayID then
+		return data.displayID;
+	elseif data.creatureID then
+		local displayID = app.NPCDisplayIDFromID[data.creatureID];
+		if displayID then
+			return displayID;
+		end
 	end
 
-	tinsert(tab.objects, syncWindow);
+	if data.providers and #data.providers > 0 then
+		for k,v in pairs(data.providers) do
+			-- if one of the providers is an NPC, we should show its texture regardless of other providers
+			if v[1] == "n" then
+				return app.NPCDisplayIDFromID[v[2]];
+			end
+		end
+	end
+
+	if data.qgs and #data.qgs > 0 then
+		return app.NPCDisplayIDFromID[data.qgs[1]];
+	end
 end
+
+local function SetPortraitIcon(self, data, x)
+	local displayID = GetDisplayID(data);
+	if displayID then
+		SetPortraitTextureFromDisplayID(self, displayID);
+		self:SetWidth(self:GetHeight());
+		self:SetTexCoord(0, 1, 0, 1);
+		return true;
+	elseif data.unit and not data.icon then
+		SetPortraitTexture(self, data.unit);
+		self:SetWidth(self:GetHeight());
+		self:SetTexCoord(0, 1, 0, 1);
+		return true;
+	end
+
+	-- Fallback to a traditional icon.
+	if data.atlas then
+		self:SetAtlas(data.atlas);
+		self:SetWidth(self:GetHeight());
+		self:SetTexCoord(0, 1, 0, 1);
+		if data["atlas-background"] then
+			self.Background:SetAtlas(data["atlas-background"]);
+			self.Background:SetWidth(self:GetHeight());
+			self.Background:Show();
+		end
+		if data["atlas-border"] then
+			self.Border:SetAtlas(data["atlas-border"]);
+			self.Border:SetWidth(self:GetHeight());
+			self.Border:Show();
+			if data["atlas-color"] then
+				local swatches = data["atlas-color"];
+				self.Border:SetVertexColor(swatches[1], swatches[2], swatches[3], swatches[4] or 1.0);
+			else
+				self.Border:SetVertexColor(1, 1, 1, 1.0);
+			end
+		end
+		return true;
+	elseif data.icon then
+		self:SetWidth(self:GetHeight());
+		self:SetTexture(data.icon);
+		local texcoord = data.texcoord;
+		if texcoord then
+			self:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
+		else
+			self:SetTexCoord(0, 1, 0, 1);
+		end
+		return true;
+	end
+end
+local SetWindowForButton = function(self, window)
+	local text = window.Suffix;
+	self.Suffix = text;
+	if window.data then
+		local SettingsName = window.SettingsName;
+		if SettingsName then text = SettingsName; end
+		local icon = window.data.icon;
+		if icon then text = "|T" .. icon .. ":0|t " .. text; end
+	end
+	
+	if window.Commands then text = text .. " ( /" .. window.Commands[1] .. " )"; end
+	self:SetText(text);
+end
+local CreateWindowButton = function()
+	local row = CreateFrame("Button", nil, settings, "UIPanelButtonTemplate");
+	row:SetPoint("LEFT", line, "LEFT", 8, -8);
+	row:SetPoint("RIGHT", line, "LEFT", 300, -8);
+	row:SetPoint("TOP", lastWindowButtonRow, "BOTTOM", 0, lastWindowButtonDistance);
+	row:SetHeight(17);
+	row:RegisterForClicks("AnyUp");
+	row:SetScript("OnClick", OnClickForWindowButton);
+	lastWindowButtonDistance = -1;
+	lastWindowButtonRow = row;
+	tinsert(WindowButtons, row);
+	tinsert(tab.objects, row);
+	return row;
+end
+local doNothing = function() end;
+local WindowManager = {
+	OnRefresh = function(self)
+		local keys,sortedList = {},{};
+		for suffix,window in pairs(app.Windows) do
+			keys[suffix] = window;
+		end
+		keys.Prime = nil;
+		keys.CurrentInstance = nil;
+		for suffix,window in pairs(keys) do
+			tinsert(sortedList, suffix);
+		end
+		app.Sort(sortedList, app.SortDefaults.Text);
+		tinsert(sortedList, 1, "CurrentInstance");
+		tinsert(sortedList, 1, "Prime");
+		local j = 1;
+		for i,suffix in ipairs(sortedList) do
+			local window = app.Windows[suffix];
+			if window and not window.dynamic and window.Commands and not window.HideFromSettings then
+				local button = WindowButtons[j] or CreateWindowButton();
+				SetWindowForButton(button, window);
+				j = j + 1;
+			end
+		end
+		for i=#WindowButtons,j,-1 do
+			WindowButtons[i]:Hide();
+		end
+	end,
+	Hide = doNothing,
+	Show = doNothing,
+	Toggle = doNothing,
+};
+tinsert(settings.MostRecentTab.objects, WindowManager);
 end)();
 
 ------------------------------------------

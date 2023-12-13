@@ -2,9 +2,10 @@
 local appName, app = ...;
 
 -- Implementation
-app:GetWindow("HiddentAchievementTriggers", {
+app:GetWindow("Hiddent Achievement Triggers", {
 	parent = UIParent,
 	Silent = true,
+	HideFromSettings = true,
 	Commands = { "atthat", "atthats" },
 	OnLoad = function(self, settings)
 		local hat = app.Categories.HiddenAchievementTriggers;

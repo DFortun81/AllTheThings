@@ -12278,6 +12278,8 @@ function app:GetWindow(suffix, settings)
 		end
 		if settings.Commands then
 			window.Commands = settings.Commands;
+			window.HideFromSettings = settings.HideFromSettings;
+			window.SettingsName = settings.SettingsName or window.Suffix;
 			local commandRoot = string.upper(window.Commands[settings.RootCommandIndex or 1]);
 			if settings.OnCommand then
 				SlashCmdList[commandRoot] = function(cmd) 
@@ -12920,6 +12922,7 @@ app:GetWindow("Prime", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	SettingsName = "Main List",
 	Defaults = {
 		["y"] = 20,
 		["x"] = 0,
@@ -13187,6 +13190,7 @@ app:GetWindow("CurrentInstance", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	SettingsName = "Mini List",
 	Defaults = {
 		["y"] = 0,
 		["x"] = 0,
@@ -13245,6 +13249,7 @@ app:GetWindow("CurrentInstance", {
 app:GetWindow("Debugger", {
 	parent = UIParent,
 	Silent = true,
+	HideFromSettings = true,
 	OnInit = function(self, handlers)
 		self.AddObject = function(self, info)
 			-- Bubble Up the Maps
@@ -13509,6 +13514,7 @@ app:GetWindow("Debugger", {
 app:GetWindow("ItemFilter", {
 	parent = UIParent,
 	Silent = true,
+	HideFromSettings = true,
 	OnUpdate = function(self, ...)
 		if not self.initialized then
 			self.initialized = true;
@@ -13603,6 +13609,7 @@ app:GetWindow("ItemFilter", {
 app:GetWindow("ItemFinder", {
 	parent = UIParent,
 	Silent = true,
+	HideFromSettings = true,
 	OnUpdate = function(self, ...)
 		if not self.initialized then
 			self.initialized = true;
@@ -13674,6 +13681,7 @@ app:GetWindow("Tradeskills", {
 		"attprofession",
 		"attprof",
 	},
+	HideFromSettings = true,
 	OnInit = function(self, handlers)
 		self:SetMovable(false);
 		self:SetClampedToScreen(false);

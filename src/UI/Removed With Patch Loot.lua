@@ -3,7 +3,7 @@ local appName, app = ...;
 local tinsert = tinsert;
 
 -- Implementation
-app:GetWindow("RWP", {
+app:GetWindow("Removed With Patch", {
 	parent = UIParent,
 	Silent = true,
 	Commands = { "attrwp" },

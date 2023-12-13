@@ -2,9 +2,10 @@
 local appName, app = ...;
 
 -- Implementation
-app:GetWindow("HiddentQuestTriggers", {
+app:GetWindow("Hiddent Quest Triggers", {
 	parent = UIParent,
 	Silent = true,
+	HideFromSettings = true,
 	Commands = { "atthqt", "atthqts" },
 	OnLoad = function(self, settings)
 		local hqt = app.Categories.HiddenQuestTriggers;

@@ -2,7 +2,7 @@
 local appName, app = ...;
 
 -- Implementation
-app:GetWindow("NeverImplemented", {
+app:GetWindow("Never Implemented", {
 	parent = UIParent,
 	Silent = true,
 	Commands = { "attnyi" },

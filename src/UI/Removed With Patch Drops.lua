@@ -62,9 +62,10 @@ local function Export(g, strings)
 end
 
 -- Implementation
-app:GetWindow("RWPD", {
+app:GetWindow("Removed With Patch Drops", {
 	parent = UIParent,
 	Silent = true,
+	HideFromSettings = true,
 	Commands = { "attrwpdrops" },
 	OnLoad = function(self, settings)
 		ExcludeRecipes = settings.ExcludeRecipes;

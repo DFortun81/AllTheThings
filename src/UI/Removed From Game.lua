@@ -3,7 +3,7 @@ local appName, app = ...;
 local tinsert = tinsert;
 
 -- Implementation
-app:GetWindow("RemovedFromGame", {
+app:GetWindow("Removed From Game", {
 	parent = UIParent,
 	Silent = true,
 	Commands = { "attrfg" },
