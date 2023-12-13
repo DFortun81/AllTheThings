@@ -985,7 +985,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, q(78266, {	-- Dark Iron Ordinance
 					["qg"] = 211653,	-- Grizzby
+					["sourceQuest"] = 78284,	-- Grizzby HQT
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
 					["maps"] = { WETLANDS, ARATHI_HIGHLANDS },
 					["lvl"] = 20,
 					["groups"] = {
@@ -1167,7 +1169,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, q(78265, {	-- Fish Oil
 					["qg"] = 211653,	-- Grizzby
+					["sourceQuest"] = 78284,	-- Grizzby HQT
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
 					["cost"] = { { "i", 17058, 24 } },	-- Fish Oil
 					["maps"] = { ARATHI_HIGHLANDS, BLACKFATHOM_DEEPS, DESOLACE, DUSTWALLOW_MARSH, FERALAS, HILLSBRAD_FOOTHILLS, STRANGLETHORN_VALE, SWAMP_OF_SORROWS, WETLANDS },
 					["lvl"] = 20,
@@ -2363,7 +2367,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, q(78267, {	-- Shredder Turbochargers
 					["qg"] = 211653,	-- Grizzby
+					["sourceQuest"] = 78284,	-- Grizzby HQT
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
 					["maps"] = { STONETALON_MOUNTAINS },
 					["lvl"] = 20,
 					["groups"] = {
@@ -2405,6 +2411,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(createHeader({	-- Speak to Grizzby
+					readable = "Speak to Grizzby",
+					icon = "Interface\\CURSOR\\Speak",
+					text = {
+						en = "Speak to Grizzby",
+						es = "Habla con el Grizzby",
+						de = "Sprich mit Grizzby",
+						fr = "Parlez à Grizzby",
+						it = "Parla con Grizzby",
+						pt = "Fale com o Grizzby",
+						ru = "Поговорите с Grizzby",
+						ko = "그리즈비와 대화",
+						cn = "与灰熊交谈",
+					},
+				}), {
+					["questID"] = 78284,	-- Grizzby HQT
+					["qg"] = 211653,	-- Grizzby
+					["coord"] = { 61.8, 39.4, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["lvl"] = 20,
+				})),
+				-- #endif
 				q(1823, {	-- Speak with Ruga
 					["qgs"] = {
 						3354,	-- Sorek
