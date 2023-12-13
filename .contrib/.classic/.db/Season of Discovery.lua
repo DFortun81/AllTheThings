@@ -58,6 +58,18 @@ local DUROTAR_SUPPLY_AND_LOGISTICS_VENDORS = {	-- Durotar Supply and Logistics
 		{ 64.6, 38.2, UNDERCITY },
 	},
 };
+local applyRuneReputationCosts = function(rune)
+	-- #if CLASSIC
+	-- After 2023-12-12 Hotfix
+	rune.minReputation = { 2586, FRIENDLY };	-- ACA / DSL, Friendly.
+	rune.cost = 20000;	-- 2g
+	-- #else
+	-- Before 2023-12-12 Hotfix
+	rune.minReputation = { 2586, HONORED };	-- ACA / DSL, Honored.
+	rune.cost = 45000;	-- 4.5g
+	-- #endif
+	return rune;
+end
 
 root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(createHeader({	-- Season of Discovery
 		readable = "Season of Discovery",
@@ -118,82 +130,60 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(c
 				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
 				["cost"] = 2214,	-- 22s 14c
 			}),
-			i(211384, {	-- Sturdy Courier Bag
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-				["cost"] = 19350,	-- 1g 93s 50c
-			}),
-			i(211386, {	-- Spell Notes: Arcane Surge
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+			applyRuneReputationCosts(i(211386, {	-- Spell Notes: Arcane Surge
 				["classes"] = { MAGE },
-				["cost"] = 45000,	-- 4.5g
 				["groups"] = {
 					recipe(425171),	-- Engrave Pants - Arcane Surge
 				},
-			}),
-			i(211387, {	-- Rune of Beckoning Light
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+			})),
+			applyRuneReputationCosts(i(211387, {	-- Rune of Beckoning Light
 				["classes"] = { PALADIN },
-				["cost"] = 45000,	-- 4.5g
 				["groups"] = {
 					recipe(409999),	-- Engrave Gloves - Beacon of Light
 				},
-			}),
-			i(211392, {	-- Rune of Everlasting Affliction
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+			})),
+			applyRuneReputationCosts(i(211392, {	-- Rune of Everlasting Affliction
 				["classes"] = { WARLOCK },
-				["cost"] = 45000,	-- 4.5g
 				["groups"] = {
 					recipe(416008),	-- Engrave Pants - Everlasting Affliction
 				},
-			}),
-			i(211391, {	-- Rune of Healing Rain
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+			})),
+			applyRuneReputationCosts(i(211391, {	-- Rune of Healing Rain
 				["classes"] = { SHAMAN },
-				["cost"] = 45000,	-- 4.5g
 				["groups"] = {
 					recipe(416057),	-- Engrave Chest - Healing Rain
 				},
-			}),
-			i(211385, {	-- Rune of Serpent Spread
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+			})),
+			applyRuneReputationCosts(i(211385, {	-- Rune of Serpent Spread
 				["classes"] = { HUNTER },
-				["cost"] = 45000,	-- 4.5g
 				["groups"] = {
 					recipe(425760),	-- Engrave Pants - Serpent Spread
 				},
-			}),
-			i(211393, {	-- Rune of Single-Minded Fury
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+			})),
+			applyRuneReputationCosts(i(211393, {	-- Rune of Single-Minded Fury
 				["classes"] = { WARRIOR },
-				["cost"] = 45000,	-- 4.5g
 				["groups"] = {
 					recipe(416003),	-- Engrave Gloves - Single-Minded Fury
 				},
-			}),
-			i(206992, {	-- Rune of Skull Bash
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+			})),
+			applyRuneReputationCosts(i(206992, {	-- Rune of Skull Bash
 				["classes"] = { DRUID },
-				["cost"] = 45000,	-- 4.5g
 				["groups"] = {
 					recipe(416046),	-- Engrave Pants - Skull Bash
 				},
-			}),
-			i(211390, {	-- Rune of Teasing
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+			})),
+			applyRuneReputationCosts(i(211390, {	-- Rune of Teasing
 				["classes"] = { ROGUE },
-				["cost"] = 45000,	-- 4.5g
 				["groups"] = {
 					recipe(400082),	-- Engrave Chest - Just a Flesh Wound
 				},
-			}),
-			i(205950, {	-- Tenebrous Epiphany
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+			})),
+			applyRuneReputationCosts(i(205950, {	-- Tenebrous Epiphany
 				["classes"] = { PRIEST },
-				["cost"] = 45000,	-- 4.5g
 				["groups"] = {
 					recipe(415996),	-- Engrave Gloves - Mind Sear
 				},
-			}),
+			})),
 			i(211247, {	-- Pattern: Phoenix Bindings
 				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
 				["cost"] = 67500,	-- 6.75g
@@ -201,6 +191,10 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(c
 			i(210779, {	-- Plans: Mantle of the Second War
 				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
 				["cost"] = 67500,	-- 6.75g
+			}),
+			i(211384, {	-- Sturdy Courier Bag
+				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
+				["cost"] = 19350,	-- 1g 93s 50c
 			}),
 		},
 	}),
