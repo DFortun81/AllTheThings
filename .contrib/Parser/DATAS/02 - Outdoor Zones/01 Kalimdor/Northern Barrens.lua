@@ -1094,7 +1094,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/15 Deepmoss Egg
 							["providers"] = {
 								{ "i", 5570 },	-- Deepmoss Egg
-								{ "i", 19542 },	-- Deepmoss Eggs
+								{ "o", 19542 },	-- Deepmoss Eggs
+								
 							},
 						}),
 					},
