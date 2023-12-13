@@ -1061,7 +1061,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
 					["groups"] = {
-						objective(1, {	--
+						objective(1, {	-- 0/25 Terrordale Spirit slain
 							["provider"] = { "n", 14564 },	-- Terrordale Spirit
 							-- #if AFTER WRATH
 							["coord"] = { 16.4, 31.8, EASTERN_PLAGUELANDS },
