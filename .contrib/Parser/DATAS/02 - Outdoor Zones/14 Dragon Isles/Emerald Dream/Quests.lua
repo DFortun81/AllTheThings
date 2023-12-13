@@ -502,7 +502,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["provider"] = { "n", 206397 },	-- Merithra of the Dream
 					["coord"] = { 14.8, 55.8, OHNAHRAN_PLAINS },
 					["g"] = {
-						i(209806),	-- Cataloger's Film (QI!)
+						o(409338, {	-- Washed-Up Pack
+							["coord"] = { 21.7, 61.8, OHNAHRAN_PLAINS },
+							["groups"] = {
+								i(209806),	-- Cataloger's Film (QI!)
+							},
+						}),
 						--modID 27 bonusID 9546
 						i(209915),	-- Perennial Pompon Pendant
 						i(209916),	-- Sunrise Circlet

@@ -439,7 +439,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					q(78355,{	-- Essence of a Broken Dream
 						["provider"] = { "i", 210430 },	-- Twisted Dreaming Essence (QI!)
 					}),
-					q(78421, {	-- The Power of Dreams (TODO: I guess it should be enchant for head quest and can be in any difficulty, move it if it is not)
+					q(78421, {	-- The Power of Dreams
 						["provider"] = { "n", 210039 },	-- Merithra
 						["sourceQuest"] = 78355,	-- Essence of a Broken Dream (QI!)
 						["g"] = {
@@ -448,6 +448,15 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 							i(210473),	-- Larodar's Fiery Reverie (QI!)
 							i(210475),	-- Smolderon's Delusions of Grandeur (QI!)
 							i(210474),	-- Tindral's Fowl Fantasia (QI!)
+						},
+					}),
+					q(78429, {	-- The Power of Dreams, Awoken
+						["provider"] = { "n", 210039 },	-- Merithra
+						["sourceQuest"] = 78421,	-- The Power of Dreams
+						["groups"] = {
+							i(210498, {	-- Fused Essence
+								i(210494),	-- Incandescent Essence
+							}),
 						},
 					}),
 				}),
@@ -730,5 +739,6 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 		q(78567),	-- both pop after Fyrakk HC kill on warrior so it is something related to bad luck protection
 		q(78568),	-- but one should be for Greater Ember of Fyr'alath (itemID 210871) (lockout per difficutly or separate one for item?)
 		--
+		q(78423),	-- Account unlock quest (SpellID 425878) received after turning in (questID 78421)
 	}),
 })));

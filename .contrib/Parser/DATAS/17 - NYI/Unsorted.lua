@@ -1070,9 +1070,6 @@ root(ROOTS.Unsorted, {
 				i(209868),	-- Thornspeaker Ritual Knife
 			}),
 			filter(QUEST_ITEMS, {
-				------ Raid Quest ------
-				i(210498),	-- Fused Essence
-				i(210494),	-- Incandescent Essence
 				------ Fyralath Questline ------
 				i(211396),	-- Attuned Glowspore Grip
 				i(211397),	-- Attuned Rune of Shadowbinding
@@ -1192,8 +1189,6 @@ root(ROOTS.Unsorted, {
 				q(78390),	-- The Makers' Marathon - Advanced	 PTR:Maker's Marathon - Advanced
 				q(78391),	-- The Makers' Marathon - Reverse	 PTR:Maker's Marathon - Reverse
 				q(78420),	--
-				q(78423),	--
-				q(78429),	--
 				q(78432),	--
 				q(78433),	--
 				q(78441),	-- Crystalsong Crisis
