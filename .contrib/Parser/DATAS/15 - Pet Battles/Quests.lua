@@ -10,10 +10,7 @@ local FABLED_PANDAREN_PET_SUPPLIES =
 i(94207, {	-- Fabled Pandaren Pet Supplies
 	["sym"] = {{ "fill" }},
 });
-local SHINY_PET_CHARM =
-i(116415, {	-- Shiny Pet Charm
-	["sym"] = {{ "fill" }},
-});
+local SHINY_PET_CHARM = i(116415);	-- Shiny Pet Charm
 root(ROOTS.PetBattles, petbattle({
 	n(QUESTS, {
 		q(44767, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- A Celestial Invitation
