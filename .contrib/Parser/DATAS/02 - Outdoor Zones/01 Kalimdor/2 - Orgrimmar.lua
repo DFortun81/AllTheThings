@@ -120,6 +120,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 			}),
 			n(FACTIONS, {
+				faction(1133, {	-- Bilgewater Cartel
+					["timeline"] = { ADDED_4_0_3 },
+				}),
 				faction(530, {	-- Darkspear Trolls
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Troll_Male",
@@ -130,6 +133,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["OnTooltip"] = OnTooltipForCityFactionReputation,
 					-- #endif
 					["races"] = HORDE_ONLY,
+				}),
+				faction(1352, {	-- Huojin Pandaren
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 				faction(FACTION_ORGRIMMAR, {
 					-- #if AFTER WRATH

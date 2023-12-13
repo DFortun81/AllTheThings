@@ -75,6 +75,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}},
 			}),
 			n(FACTIONS, {
+				faction(1134, {	-- Gilneas
+					["timeline"] = { ADDED_4_0_3 },
+				}),
 				faction(72, {	-- Stormwind
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Human_Female",
@@ -85,6 +88,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["OnTooltip"] = OnTooltipForCityFactionReputation,
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
+				}),
+				faction(1353, {	-- Tushui Pandaren
+					["timeline"] = { ADDED_5_0_4 },
 				}),
 			}),
 			n(FLIGHT_PATHS, {
@@ -1055,7 +1061,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
 					["groups"] = {
-						objective(1, {	-- 
+						objective(1, {	--
 							["provider"] = { "n", 14564 },	-- Terrordale Spirit
 							-- #if AFTER WRATH
 							["coord"] = { 16.4, 31.8, EASTERN_PLAGUELANDS },
