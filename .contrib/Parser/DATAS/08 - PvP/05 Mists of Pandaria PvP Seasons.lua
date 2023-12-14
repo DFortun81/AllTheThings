@@ -5505,114 +5505,85 @@ root(ROOTS.PVP, {
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_weapons_ensemble", MOP_TIER, SEASON_GRIEVOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-									{"select", "itemID", 103167 },	-- Grievous Gladiator's Barrier
-									{"select", "itemID", 103310 },	-- Grievous Gladiator's Baton of Light
-									{"select", "itemID", 103169 },	-- Grievous Gladiator's Battle Staff
-									{"select", "itemID", 103312 },	-- Grievous Gladiator's Bonecracker
-									{"select", "itemID", 103142 },	-- Grievous Gladiator's Cleaver
-									{"select", "itemID", 103139 },	-- Grievous Gladiator's Decapitator
-									{"select", "itemID", 103166 },	-- Grievous Gladiator's Endgame
-									{"select", "itemID", 103209 },	-- Grievous Gladiator's Energy Staff
-									{"select", "itemID", 103207 },	-- Grievous Gladiator's Gavel
-									{"select", "itemID", 103141 },	-- Grievous Gladiator's Greatsword
-									{"select", "itemID", 103311 },	-- Grievous Gladiator's Hacker
-									{"select", "itemID", 103153 },	-- Grievous Gladiator's Longbow
-									{"select", "itemID", 103307 },	-- Grievous Gladiator's Mageblade
-									{"select", "itemID", 103264 },	-- Grievous Gladiator's Pike
-									{"select", "itemID", 103143 },	-- Grievous Gladiator's Pummeler
-									{"select", "itemID", 103144 },	-- Grievous Gladiator's Quickblade
-									{"select", "itemID", 103208 },	-- Grievous Gladiator's Redoubt
-									{"select", "itemID", 103306 },	-- Grievous Gladiator's Render
-									{"select", "itemID", 103176 },	-- Grievous Gladiator's Reprieve
-									{"select", "itemID", 103206 },	-- Grievous Gladiator's Rifle
-									{"select", "itemID", 103305 },	-- Grievous Gladiator's Ripper
-									{"select", "itemID", 103304 },	-- Grievous Gladiator's Shanker
-									{"select", "itemID", 103322 },	-- Grievous Gladiator's Shield Wall
-									{"select", "itemID", 103313 },	-- Grievous Gladiator's Slicer
-									{"select", "itemID", 103168 },	-- Grievous Gladiator's Spellblade
-									{"select", "itemID", 103177 },	-- Grievous Gladiator's Staff
 								},
-								["g"] = {
-									--
-									i(103167, {	-- Grievous Gladiator's Barrier
-										["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-									}),
-									i(103310, {	-- Grievous Gladiator's Baton of Light
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103169, {	-- Grievous Gladiator's Battle Staff
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103312, {	-- Grievous Gladiator's Bonecracker
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103142, {	-- Grievous Gladiator's Cleaver
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103139, {	-- Grievous Gladiator's Decapitator
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103166, {	-- Grievous Gladiator's Endgame
-										["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-									}),
-									i(103209, {	-- Grievous Gladiator's Energy Staff
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103207, {	-- Grievous Gladiator's Gavel
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103141, {	-- Grievous Gladiator's Greatsword
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103311, {	-- Grievous Gladiator's Hacker
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103153, {	-- Grievous Gladiator's Longbow
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103307, {	-- Grievous Gladiator's Mageblade
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103264, {	-- Grievous Gladiator's Pike
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103143, {	-- Grievous Gladiator's Pummeler
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103144, {	-- Grievous Gladiator's Quickblade
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103208, {	-- Grievous Gladiator's Redoubt
-										["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-									}),
-									i(103306, {	-- Grievous Gladiator's Render
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103176, {	-- Grievous Gladiator's Reprieve
-										["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-									}),
-									i(103206, {	-- Grievous Gladiator's Rifle
-										["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-									}),
-									i(103305, {	-- Grievous Gladiator's Ripper
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103304, {	-- Grievous Gladiator's Shanker
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103322, {	-- Grievous Gladiator's Shield Wall
-										["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-									}),
-									i(103313, {	-- Grievous Gladiator's Slicer
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103168, {	-- Grievous Gladiator's Spellblade
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(103177, {	-- Grievous Gladiator's Touch of Defeat
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-								},
+							}),
+							i(103167, {	-- Grievous Gladiator's Barrier
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(103310, {	-- Grievous Gladiator's Baton of Light
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103169, {	-- Grievous Gladiator's Battle Staff
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103312, {	-- Grievous Gladiator's Bonecracker
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103142, {	-- Grievous Gladiator's Cleaver
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103139, {	-- Grievous Gladiator's Decapitator
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103166, {	-- Grievous Gladiator's Endgame
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(103209, {	-- Grievous Gladiator's Energy Staff
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103207, {	-- Grievous Gladiator's Gavel
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103141, {	-- Grievous Gladiator's Greatsword
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103311, {	-- Grievous Gladiator's Hacker
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103153, {	-- Grievous Gladiator's Longbow
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103307, {	-- Grievous Gladiator's Mageblade
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103264, {	-- Grievous Gladiator's Pike
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103143, {	-- Grievous Gladiator's Pummeler
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103144, {	-- Grievous Gladiator's Quickblade
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103208, {	-- Grievous Gladiator's Redoubt
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(103306, {	-- Grievous Gladiator's Render
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103176, {	-- Grievous Gladiator's Reprieve
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(103206, {	-- Grievous Gladiator's Rifle
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(103305, {	-- Grievous Gladiator's Ripper
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103304, {	-- Grievous Gladiator's Shanker
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103322, {	-- Grievous Gladiator's Shield Wall
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(103313, {	-- Grievous Gladiator's Slicer
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103168, {	-- Grievous Gladiator's Spellblade
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(103177, {	-- Grievous Gladiator's Touch of Defeat
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 							}),
 							un(REMOVED_FROM_GAME, i(100225)),	-- Grievous Gladiator's Barrier
 							un(REMOVED_FROM_GAME, i(100492)),	-- Grievous Gladiator's Baton of Light
@@ -6985,118 +6956,90 @@ root(ROOTS.PVP, {
 				["g"] = {
 					n(PVP_GLADIATOR, {
 						n(WEAPONS,  {
-							i(144251, {	-- Arsenal: Grievous Gladiator's Weapons (A)
+							i(144251, {	-- Arsenal: Grievous Gladiator's Weapons (H)
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_weapons_ensemble", MOP_TIER, SEASON_GRIEVOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-									{"select", "itemID", 102982 },	-- Grievous Gladiator's Barrier
-									{"select", "itemID", 102793 },	-- Grievous Gladiator's Baton of Light
-									{"select", "itemID", 102798 },	-- Grievous Gladiator's Battle Staff
-									{"select", "itemID", 102806 },	-- Grievous Gladiator's Bonecracker
-									{"select", "itemID", 102797 },	-- Grievous Gladiator's Cleaver
-									{"select", "itemID", 102807 },	-- Grievous Gladiator's Decapitator
-									{"select", "itemID", 102983 },	-- Grievous Gladiator's Endgame
-									{"select", "itemID", 102804 },	-- Grievous Gladiator's Energy Staff
-									{"select", "itemID", 102787 },	-- Grievous Gladiator's Gavel
-									{"select", "itemID", 102796 },	-- Grievous Gladiator's Greatsword
-									{"select", "itemID", 102801 },	-- Grievous Gladiator's Hacker
-									{"select", "itemID", 102788 },	-- Grievous Gladiator's Longbow
-									{"select", "itemID", 102795 },	-- Grievous Gladiator's Mageblade
-									{"select", "itemID", 102803 },	-- Grievous Gladiator's Pike
-									{"select", "itemID", 102789 },	-- Grievous Gladiator's Pummeler
-									{"select", "itemID", 102809 },	-- Grievous Gladiator's Quickblade
-									{"select", "itemID", 102979 },	-- Grievous Gladiator's Redoubt
-									{"select", "itemID", 102805 },	-- Grievous Gladiator's Render
-									{"select", "itemID", 102980 },	-- Grievous Gladiator's Reprieve
-									{"select", "itemID", 102794 },	-- Grievous Gladiator's Rifle
-									{"select", "itemID", 102800 },	-- Grievous Gladiator's Ripper
-									{"select", "itemID", 102799 },	-- Grievous Gladiator's Shanker
-									{"select", "itemID", 102981 },	-- Grievous Gladiator's Shield Wall
-									{"select", "itemID", 102802 },	-- Grievous Gladiator's Slicer
-									{"select", "itemID", 102791 },	-- Grievous Gladiator's Spellblade
-									{"select", "itemID", 102790 },	-- Grievous Gladiator's Staff
+									{"sub", "pvp_weapons_ensemble", MOP_TIER, SEASON_GRIEVOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR },
 								},
-								["g"] = {
-									-- S15 Tag
-									i(102982, {	-- Grievous Gladiator's Barrier
-										["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-									}),
-									i(102793, {	-- Grievous Gladiator's Baton of Light
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102798, {	-- Grievous Gladiator's Battle Staff
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102806, {	-- Grievous Gladiator's Bonecracker
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102797, {	-- Grievous Gladiator's Cleaver
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102807, {	-- Grievous Gladiator's Decapitator
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102983, {	-- Grievous Gladiator's Endgame
-										["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-									}),
-									i(102804, {	-- Grievous Gladiator's Energy Staff
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102787, {	-- Grievous Gladiator's Gavel
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102796, {	-- Grievous Gladiator's Greatsword
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102801, {	-- Grievous Gladiator's Hacker
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102788, {	-- Grievous Gladiator's Longbow
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102795, {	-- Grievous Gladiator's Mageblade
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102803, {	-- Grievous Gladiator's Pike
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102789, {	-- Grievous Gladiator's Pummeler
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102809, {	-- Grievous Gladiator's Quickblade
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102979, {	-- Grievous Gladiator's Redoubt
-										["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-									}),
-									i(102805, {	-- Grievous Gladiator's Render
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102980, {	-- Grievous Gladiator's Reprieve
-										["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-									}),
-									i(102794, {	-- Grievous Gladiator's Rifle
-										["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-									}),
-									i(102800, {	-- Grievous Gladiator's Ripper
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102799, {	-- Grievous Gladiator's Shanker
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102981, {	-- Grievous Gladiator's Shield Wall
-										["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-									}),
-									i(102802, {	-- Grievous Gladiator's Slicer
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102791, {	-- Grievous Gladiator's Spellblade
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-									i(102790, {	-- Grievous Gladiator's Touch of Defeat
-										["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-									}),
-								},
+							}),
+							-- S15 Tag
+							i(102982, {	-- Grievous Gladiator's Barrier
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(102793, {	-- Grievous Gladiator's Baton of Light
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102798, {	-- Grievous Gladiator's Battle Staff
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102806, {	-- Grievous Gladiator's Bonecracker
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102797, {	-- Grievous Gladiator's Cleaver
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102807, {	-- Grievous Gladiator's Decapitator
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102983, {	-- Grievous Gladiator's Endgame
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(102804, {	-- Grievous Gladiator's Energy Staff
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102787, {	-- Grievous Gladiator's Gavel
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102796, {	-- Grievous Gladiator's Greatsword
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102801, {	-- Grievous Gladiator's Hacker
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102788, {	-- Grievous Gladiator's Longbow
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102795, {	-- Grievous Gladiator's Mageblade
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102803, {	-- Grievous Gladiator's Pike
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102789, {	-- Grievous Gladiator's Pummeler
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102809, {	-- Grievous Gladiator's Quickblade
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102979, {	-- Grievous Gladiator's Redoubt
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(102805, {	-- Grievous Gladiator's Render
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102980, {	-- Grievous Gladiator's Reprieve
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(102794, {	-- Grievous Gladiator's Rifle
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(102800, {	-- Grievous Gladiator's Ripper
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102799, {	-- Grievous Gladiator's Shanker
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102981, {	-- Grievous Gladiator's Shield Wall
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(102802, {	-- Grievous Gladiator's Slicer
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102791, {	-- Grievous Gladiator's Spellblade
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(102790, {	-- Grievous Gladiator's Touch of Defeat
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 							}),
 							un(REMOVED_FROM_GAME, i(100731)),	-- Grievous Gladiator's Barrier
 							un(REMOVED_FROM_GAME, i(100538)),	-- Grievous Gladiator's Baton of Light

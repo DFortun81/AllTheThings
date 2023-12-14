@@ -1343,7 +1343,6 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["sym"] = {
 								{"sub", "pvp_weapons_ensemble", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR },
 								{"sub", "pvp_weapons_ensemble", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR },
-								{"exclude", "itemID", 146651 },	-- Arsenal: Gladiator's Weapons
 							},
 						}),
 						i(33313, {	-- Merciless Gladiator's Barrier

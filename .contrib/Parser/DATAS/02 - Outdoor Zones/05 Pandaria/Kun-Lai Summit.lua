@@ -2038,38 +2038,10 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							n(WEAPONS, {
-								i(144251, {	-- Arsenal: Grievous Gladiator's Weapons (A)
+								i(144251, {	-- Arsenal: Grievous Gladiator's Weapons (H)
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_weapons_ensemble", MOP_TIER, SEASON_GRIEVOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"select", "itemID",
-											102982,	-- Grievous Gladiator's Barrier
-											102793,	-- Grievous Gladiator's Baton of Light
-											102798,	-- Grievous Gladiator's Battle Staff
-											102806,	-- Grievous Gladiator's Bonecracker
-											102797,	-- Grievous Gladiator's Cleaver
-											102807,	-- Grievous Gladiator's Decapitator
-											102983,	-- Grievous Gladiator's Endgame
-											102804,	-- Grievous Gladiator's Energy Staff
-											102787,	-- Grievous Gladiator's Gavel
-											102796,	-- Grievous Gladiator's Greatsword
-											102801,	-- Grievous Gladiator's Hacker
-											102788,	-- Grievous Gladiator's Longbow
-											102795,	-- Grievous Gladiator's Mageblade
-											102803,	-- Grievous Gladiator's Pike
-											102789,	-- Grievous Gladiator's Pummeler
-											102809,	-- Grievous Gladiator's Quickblade
-											102979,	-- Grievous Gladiator's Redoubt
-											102805,	-- Grievous Gladiator's Render
-											102980,	-- Grievous Gladiator's Reprieve
-											102794,	-- Grievous Gladiator's Rifle
-											102800,	-- Grievous Gladiator's Ripper
-											102799,	-- Grievous Gladiator's Shanker
-											102981,	-- Grievous Gladiator's Shield Wall
-											102802,	-- Grievous Gladiator's Slicer
-											102791,	-- Grievous Gladiator's Spellblade
-											102790,	-- Grievous Gladiator's Staff
-										},
+										{"sub", "pvp_weapons_ensemble", MOP_TIER, SEASON_GRIEVOUS, FACTION_HEADER_HORDE, PVP_GLADIATOR },
 									},
 								}),
 								i(102982, {	-- Grievous Gladiator's Barrier

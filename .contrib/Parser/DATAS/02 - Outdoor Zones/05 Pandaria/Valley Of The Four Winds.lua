@@ -3072,35 +3072,7 @@ root(ROOTS.Zones, {
 								i(144252, {	-- Arsenal: Grievous Gladiator's Weapons (A)
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_weapons_ensemble", MOP_TIER, -677, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
-										{"select", "itemID",
-											103167,	-- Grievous Gladiator's Barrier
-											103310,	-- Grievous Gladiator's Baton of Light
-											103169,	-- Grievous Gladiator's Battle Staff
-											103312,	-- Grievous Gladiator's Bonecracker
-											103142,	-- Grievous Gladiator's Cleaver
-											103139,	-- Grievous Gladiator's Decapitator
-											103166,	-- Grievous Gladiator's Endgame
-											103209,	-- Grievous Gladiator's Energy Staff
-											103207,	-- Grievous Gladiator's Gavel
-											103141,	-- Grievous Gladiator's Greatsword
-											103311,	-- Grievous Gladiator's Hacker
-											103153,	-- Grievous Gladiator's Longbow
-											103307,	-- Grievous Gladiator's Mageblade
-											103264,	-- Grievous Gladiator's Pike
-											103143,	-- Grievous Gladiator's Pummeler
-											103144,	-- Grievous Gladiator's Quickblade
-											103208,	-- Grievous Gladiator's Redoubt
-											103306,	-- Grievous Gladiator's Render
-											103176,	-- Grievous Gladiator's Reprieve
-											103206,	-- Grievous Gladiator's Rifle
-											103305,	-- Grievous Gladiator's Ripper
-											103304,	-- Grievous Gladiator's Shanker
-											103322,	-- Grievous Gladiator's Shield Wall
-											103313,	-- Grievous Gladiator's Slicer
-											103168,	-- Grievous Gladiator's Spellblade
-											103177,	-- Grievous Gladiator's Staff
-										},
+										{"sub", "pvp_weapons_ensemble", MOP_TIER, SEASON_GRIEVOUS, FACTION_HEADER_ALLIANCE, PVP_GLADIATOR },
 									},
 								}),
 								i(103167, {	-- Grievous Gladiator's Barrier
