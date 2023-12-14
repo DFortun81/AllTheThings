@@ -552,7 +552,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211499, {	-- Trainee's Outrider Wolf
-							["maxReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
+							["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						-- #endif
@@ -563,7 +563,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(3, i(19569)),	-- Advisor's Gnarled Staff
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(212584, {	-- Advisor's Gnarled Staff
-							["maxReputation"] = { 889, REVERED },	-- Warsong Outriders, Revered.
+							["minReputation"] = { 889, REVERED },	-- Warsong Outriders, Revered.
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						-- #endif
@@ -575,7 +575,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(3, i(19553)),	-- Legionnaire's Sword
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(212586, {	-- Legionnaire's Sword
-							["maxReputation"] = { 889, REVERED },	-- Warsong Outriders, Revered.
+							["minReputation"] = { 889, REVERED },	-- Warsong Outriders, Revered.
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						-- #endif
@@ -587,7 +587,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(3, i(19561)),	-- Outrider's Bow
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(212585, {	-- Outrider's Bow
-							["maxReputation"] = { 889, REVERED },	-- Warsong Outriders, Revered.
+							["minReputation"] = { 889, REVERED },	-- Warsong Outriders, Revered.
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						-- #endif
@@ -599,7 +599,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(3, i(19545)),	-- Scout's Blade
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(212587, {	-- Scout's Blade
-							["maxReputation"] = { 889, REVERED },	-- Warsong Outriders, Revered.
+							["minReputation"] = { 889, REVERED },	-- Warsong Outriders, Revered.
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						-- #endif
@@ -607,15 +607,15 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211500, {	-- Resilient Cloth Headband
-							["maxReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
+							["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211856, {	-- Resilient Mail Coif
-							["maxReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
+							["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211857, {	-- Resilient Leather Mask
-							["maxReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
+							["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						-- #endif
@@ -680,7 +680,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211498, {	-- Trainee's Sentinel Nightsaber
-							["maxReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+							["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						-- #endif
@@ -691,7 +691,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(3, i(19573)),	-- Lorekeeper's Staff
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(212580, {	-- Lorekeeper's Staff
-							["maxReputation"] = { 890, REVERED },	-- Silverwing Sentinels, Revered.
+							["minReputation"] = { 890, REVERED },	-- Silverwing Sentinels, Revered.
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						-- #endif
@@ -702,7 +702,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(3, i(19565)),	-- Outrunner's Bow
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(212581, {	-- Outrunner's Bow
-							["maxReputation"] = { 890, REVERED },	-- Silverwing Sentinels, Revered.
+							["minReputation"] = { 890, REVERED },	-- Silverwing Sentinels, Revered.
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						-- #endif
@@ -713,7 +713,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(3, i(19557)),	-- Protector's Sword
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(212582, {	-- Protector's Sword
-							["maxReputation"] = { 890, REVERED },	-- Silverwing Sentinels, Revered.
+							["minReputation"] = { 890, REVERED },	-- Silverwing Sentinels, Revered.
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						-- #endif
@@ -724,7 +724,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						moh(3, i(19548)),	-- Sentinel's Blade
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(212583, {	-- Sentinel's Blade
-							["maxReputation"] = { 890, REVERED },	-- Silverwing Sentinels, Revered.
+							["minReputation"] = { 890, REVERED },	-- Silverwing Sentinels, Revered.
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						-- #endif
@@ -732,15 +732,15 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211500, {	-- Resilient Cloth Headband
-							["maxReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+							["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211856, {	-- Resilient Mail Coif
-							["maxReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+							["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211857, {	-- Resilient Leather Mask
-							["maxReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+							["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						-- #endif
