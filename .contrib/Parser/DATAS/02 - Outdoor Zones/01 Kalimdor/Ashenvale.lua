@@ -651,6 +651,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 212969 },	-- Kazragore <Far Seer>
 					},
 					["coord"] = { 42.0, 67.0, ASHENVALE },
+					["maxReputation"] = { 889, HONORED },	-- Warsong Outriders, Honored.
 					["timeline"] = { "removed 2.0.1" },
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
@@ -1874,6 +1875,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 212970 },	-- Felore Moonray <Priestess of the Moon>
 					},
 					["coord"] = { 50.5, 72.0, ASHENVALE },
+					["maxReputation"] = { 890, HONORED },	-- Silverwing Sentinels, Honored.
 					["timeline"] = { "removed 2.0.1" },
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
