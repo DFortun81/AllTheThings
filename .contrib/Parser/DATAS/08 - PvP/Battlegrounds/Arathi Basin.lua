@@ -93,6 +93,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(584, {	-- Arathi Basin Assassin
 					["timeline"] = { "added 3.0.1" },
+					["_noautomation"] = true,	-- When Comp Stomp was introduced, Blizzard added new nested criteria but kept the old ones. Just showing the old ones is enough at this time.
 					["g"] = {
 						crit(431),	-- Kill 5 people at the blacksmith
 						crit(432),	-- Kill 5 people at the farm
@@ -103,6 +104,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(165, {	-- Arathi Basin Perfection
 					["timeline"] = { "added 3.0.1" },
+					["_noautomation"] = true,	-- Doesn't show any criteria ingame but they exist so we hide them ourselves
 				}),
 				ach(73, {	-- Disgracin' The Basin
 					["timeline"] = { "added 3.0.1" },
@@ -122,12 +124,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(156, {	-- Territorial Dominance
 					["timeline"] = { "added 3.0.1" },
+					["_noautomation"] = true,	-- Doesn't show any criteria ingame but they exist so we hide them ourselves
 				}),
 				ach(157, {	-- To The Rescue!
 					["timeline"] = { "added 3.0.1" },
 				}),
 				ach(162, {	-- We Had It All Along *cough*
 					["timeline"] = { "added 3.0.1" },
+					["_noautomation"] = true,	-- Doesn't show any criteria ingame but they exist so we hide them ourselves
 				}),
 				applyclassicphase(PHASE_TWO, achWithRep(711, 509, {	-- Knight of Arathor
 					-- #if BEFORE WRATH
