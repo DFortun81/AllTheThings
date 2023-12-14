@@ -161,7 +161,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			}, {	-- RENOWN 11 --
-				-- alts only
 				q(78582, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
@@ -171,18 +170,26 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 				}),
-			}, {	-- RENOWN 13 --
-				q(78583, {	-- Dragon Isles Supplies (Alt)
+				q(78583, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 				}),
+			}, {	-- RENOWN 13 --
 			}, {	-- RENOWN 14 --
 			}, {	-- RENOWN 15 --
 				q(78374, {	-- Flightstones
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 				}),
+				q(78584, {	-- Dragon Isles Supplies
+					["provider"] = { "n", 208143 },	-- Keeper Amrymn
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+				}),
 			}, {	-- RENOWN 16 --
+				q(78585, {	-- Dragon Isles Supplies
+					["provider"] = { "n", 208143 },	-- Keeper Amrymn
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+				}),
 			}, {	-- RENOWN 17 --
 				q(78388, {	-- Gigantic Dreamseeds
 					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom

@@ -1205,8 +1205,6 @@ root(ROOTS.Unsorted, {
 				q(78576),	--
 				q(78577),	--
 				q(78578),	--
-				q(78584),	-- Dragon Isles Supplies
-				q(78585),	-- Dragon Isles Supplies
 				q(78586),	-- Dragon Isles Supplies
 				q(78587),	-- Dragon Isles Supplies
 				q(78588),	-- Dragon Isles Supplies
