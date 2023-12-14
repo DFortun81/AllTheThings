@@ -3,11 +3,8 @@
 ---------------------------------------------------
 local SymPvPFilter = function(SeasonID, HeaderID, FilterID, Extra)
 	SymLink = {
-		{"select", "tierID", SL_TIER},			-- Select Shadowlands
-		{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-		{"where", "headerID", SeasonID},		-- Season
-		{"pop"},								-- Discard the Season Header and acquire all of their children.
-		{"where", "headerID", HeaderID},		-- Header
+		{"select", "headerID", SeasonID},		-- Select Shadowlands
+		{"find", "headerID", HeaderID},			-- Header
 		{"extract","itemID"},					-- Extract Items
 		{"where", "f", FilterID},				-- Filter
 
@@ -17,20 +14,14 @@ local SymPvPFilter = function(SeasonID, HeaderID, FilterID, Extra)
 end
 local SymPvPFilterDouble = function(HeaderID, FilterID, Extra)
 	SymLink = {
-		{"select", "tierID", SL_TIER},			-- Select Shadowlands
-		{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-		{"where", "headerID", SEASON_ETERNAL},	-- Eternal Season
-		{"pop"},								-- Discard the Eternal Season Header and acquire all of their children.
-		{"where", "headerID", HeaderID},		-- Header
+		{"select", "headerID", SEASON_ETERNAL},	-- Select Eternal Season
+		{"find", "headerID", HeaderID},			-- Header
 		{"extract","itemID"},					-- Extract Items
 		{"where", "f", FilterID},				-- Filter
 		{"finalize"},							-- Push Everything to the Queue
 
-		{"select", "tierID", SL_TIER},			-- Select Shadowlands
-		{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-		{"where", "headerID", SEASON_COSMIC},	-- Cosmic Season
-		{"pop"},								-- Discard the Cosmic Season Header and acquire all of their children.
-		{"where", "headerID", HeaderID},		-- Header
+		{"select", "headerID", SEASON_COSMIC},	-- Select Cosmic Season
+		{"find", "headerID", HeaderID},		-- Header
 		{"extract","itemID"},					-- Extract Items
 		{"where", "f", FilterID},				-- Filter
 	}
@@ -45,27 +36,17 @@ local SymPvPFilterDouble = function(HeaderID, FilterID, Extra)
 end
 local SymPvPClass = function(ClassID, Extra)
 	SymLink = {
-		{"select", "tierID", SL_TIER},			-- Select Shadowlands
-		{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-		{"where", "headerID", SEASON_ETERNAL},	-- Eternal Season
-		{"pop"},								-- Discard the Eternal Season Header and acquire all of their children.
-		{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
-		{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
-		{"where", "headerID", CLASSES},			-- Classes
-		{"pop"},								-- Discard the Classes Header and acquire all of their children.
-		{"where", "classID", ClassID},			-- Class
+		{"select", "headerID", SEASON_ETERNAL},	-- Select Eternal Season
+		{"find", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
+		{"find", "headerID", CLASSES},			-- Classes
+		{"find", "classID", ClassID},			-- Class
 		{"pop"},								-- Discard the Class Header and acquire all of their children.
 		{"finalize"},							-- Push Everything to the Queue
 
-		{"select", "tierID", SL_TIER},			-- Select Shadowlands
-		{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-		{"where", "headerID", SEASON_ETERNAL},	-- Eternal Season
-		{"pop"},								-- Discard the Eternal Season Header and acquire all of their children.
-		{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
-		{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
-		{"where", "headerID", CLASSES},			-- Classes
-		{"pop"},								-- Discard the Classes Header and acquire all of their children.
-		{"where", "classID", ClassID},			-- Class
+		{"select", "headerID", SEASON_ETERNAL},	-- Select Eternal Season
+		{"find", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
+		{"find", "headerID", CLASSES},			-- Classes
+		{"find", "classID", ClassID},			-- Class
 		{"pop"},								-- Discard the Class Header and acquire all of their children.
 	}
 	if Extra then
@@ -80,8 +61,7 @@ local SymPvPClass = function(ClassID, Extra)
 end
 local function Sym_CovenantPvPWeapons(SEASON, PVP_TYPE, COVENANT)
 	return {
-		{"select","tierID",SL_TIER},		-- Shadowlands
-		{"find", "headerID", SEASON},		-- Season
+		{"select","headerID",SEASON},		-- Season
 		{"find", "headerID", PVP_TYPE},		-- Gladiator
 		{"find", "headerID", WEAPONS},		-- Weapons
 		{"find", "headerID", COVENANT},		-- Covenant
