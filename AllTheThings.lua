@@ -5121,13 +5121,18 @@ local NPCExpandHeaders = {
 	[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
 	[app.HeaderConstants.COMMON_VENDOR_ITEMS] = true,
 	[app.HeaderConstants.DROPS] = true,
+	[app.HeaderConstants.FACTION_HEADER_ALLIANCE] = true,
+	[app.HeaderConstants.FACTION_HEADER_HORDE] = true,
+	[app.HeaderConstants.PVP_GLADIATOR] = true,
+	[app.HeaderConstants.PVP_ELITE] = true,
 	[app.HeaderConstants.REWARDS] = true,
 	[app.HeaderConstants.ZONE_DROPS] = true,
 };
--- Pulls in Common drop content for specific NPCs if any exists (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
+-- Pulls in Common drop content for specific NPCs if any exists
+-- (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
 local function DetermineNPCDrops(group, FillData)
-	-- assuming for any 'crs' references on an encounter group that all crs are linked to the same resulting content
-	local npcID = group.npcID or group.creatureID or (group.encounterID and group.crs and group.crs[1]);
+	-- assuming for any 'crs' references on an encounter/header group that all crs are linked to the same resulting content
+	local npcID = group.npcID or group.creatureID or ((group.encounterID or group.headerID) and group.crs and group.crs[1]);
 	if npcID and FillData.NestNPCData then
 		-- app.PrintDebug("NPC Group",group.hash,npcID)
 		-- search for groups of this NPC
