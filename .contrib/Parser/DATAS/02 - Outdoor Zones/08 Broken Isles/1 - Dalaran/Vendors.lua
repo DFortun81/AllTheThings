@@ -6,8 +6,7 @@ local function Sym_PvPSeasonRankSlots(SEASON, RANK, ...)
 	return {
 		{"sub", "pvp_gear_base", LEGION_TIER, SEASON, RANK },
 		{"merge"},
-		{"pop"},	-- Discard the Set header and acquire the children.
-		{"pop"},	-- Discard the Class header and acquire the children.
+		{"extract","s"},	-- Only Sources
 		{"invtype", ... },
 	}
 end

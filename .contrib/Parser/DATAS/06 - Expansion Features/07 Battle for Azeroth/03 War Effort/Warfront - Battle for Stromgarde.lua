@@ -3,13 +3,11 @@
 -------------------------------------------------------------------
 local function GenerateRewardsSymlinkForModID(factionHeader, modID)
 	return {
-		{"select", "headerID", WARFRONT_BATTLE_FOR_STROMGARDE },
-		{"pop"},	-- Discard the War Front Header and acquire the children.
-		{"where", "headerID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
-		{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
-		{"where", "headerID", factionHeader},	-- Select the Faction Header.
-		{"pop"},	-- Discard the Faction Header and acquire the children.
-		{"modID", modID},
+		{"select", "questID", 52781 },	-- HQT for the phase of Arathi
+		{"find", "headerID", COMMON_BOSS_DROPS},	-- Find the Common Boss Drop Header.
+		{"find", "headerID", factionHeader},	-- Select the Faction Header.
+		{"extract","s"},	-- Extract Sources
+		{"modID", modID},	-- Apply specific modID
 	};
 end
 local ALLIANCE_WARFRONT_EQUIPMENT = {
@@ -1499,6 +1497,10 @@ root(ROOTS.ExpansionFeatures,
 									["races"] = HORDE_ONLY,
 								}),
 								-- INCURSIONS INFO STARTS HERE
+								i(165872, {	-- 7th Legion Equipment Cache (awarded for all incursions)
+									["description"] = "This cache is awarded for completing any incursion on an Alliance character.",
+									["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 5),	-- iLvl 340
+								}),
 								i(165871, {	-- Honorbound Equipment Cache (awarded for all incursions)
 									["description"] = "This cache is awarded for completing any incursion on a Horde character.",
 									["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 5),	-- iLvl 340
@@ -1531,7 +1533,7 @@ root(ROOTS.ExpansionFeatures,
 									["repeatable"] = true,
 									["u"] = REMOVED_FROM_GAME,
 									["g"] = {
-										i(164578, {	-- Warfronts Equipment Cache
+										i(164578, {	-- Warfronts Equipment Cache (A)
 											["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 5),	-- iLvl 340
 										}),
 									},
@@ -1555,7 +1557,7 @@ root(ROOTS.ExpansionFeatures,
 									["races"] = HORDE_ONLY,
 									["repeatable"] = true,
 									["g"] = {
-										i(164577, {	-- Warfronts Equipment Cache
+										i(164577, {	-- Warfronts Equipment Cache (H)
 											["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_HORDE, 5),	-- iLvl 340
 										}),
 									},
@@ -1632,10 +1634,6 @@ root(ROOTS.ExpansionFeatures,
 								["description"] = "These are obtained by winning the warfront and can be awarded multiple times a week.",
 								["modID"] = 3,
 								["groups"] = {
-									i(165872, {	-- 7th Legion Equipment Cache (awarded for all incursions)
-										["description"] = "This cache is awarded for completing any incursion on an Alliance character.",
-										["sym"] = GenerateRewardsSymlinkForModID(FACTION_HEADER_ALLIANCE, 5),	-- iLvl 340
-									}),
 									-- ALLIANCE SET --
 									i(163891),	-- 7th Legionnaire's Aegis
 									i(163884),	-- 7th Legionnaire's Battle Hammer
