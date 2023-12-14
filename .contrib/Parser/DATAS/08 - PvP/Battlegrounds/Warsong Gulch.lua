@@ -1,6 +1,28 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
+-- #if SEASON_OF_DISCOVERY
+-- Item Database of new pvp items.
+local Items = ItemDBConditional;
+local SODItem = function(itemID, f)
+	if not f then error("ERROR: Missing 'f' for item " .. itemID); end
+	local item = { ["b"] = 1, ["f"] = f };
+	Items[itemID] = item;
+	return item;
+end
+SODItem(212587, DAGGERS);	-- Scout's Blade
+SODItem(212583, DAGGERS);	-- Sentinel's Blade
+SODItem(212584, STAVES);	-- Advisor's Gnarled Staff
+SODItem(212580, STAVES);	-- Lorekeeper's Staff
+SODItem(212586, ONE_HANDED_SWORDS);	-- Legionnaire's Sword
+SODItem(212582, ONE_HANDED_SWORDS);	-- Protector's Sword
+SODItem(212585, BOWS);	-- Outrider's Bow
+SODItem(212581, BOWS);	-- Outrunner's Bow
+
+SODItem(211500, CLOTH);	-- Resilient Cloth Headband
+SODItem(211857, LEATHER);	-- Resilient Leather Mask
+SODItem(211856, MAIL);	-- Resilient Mail Coif
+-- #endif
 local ALLIANCE_FIGHT_FOR_WSG_TIER_1 = {
 	8372,	-- Fight for Warsong Gulch
 	8399,	-- Fight for Warsong Gulch
@@ -528,37 +550,88 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211499, {	-- Trainee's Outrider Wolf
+							["maxReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
+							["timeline"] = { "removed 2.0.1" },
+						})),
+						-- #endif
 						moh(10, i(19505)),	-- Warsong Battle Tabard
 						moh(3, i(19566)),	-- Advisor's Gnarled Staff
 						moh(3, i(19567)),	-- Advisor's Gnarled Staff
 						moh(3, i(19568)),	-- Advisor's Gnarled Staff
 						moh(3, i(19569)),	-- Advisor's Gnarled Staff
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(212584, {	-- Advisor's Gnarled Staff
+							["maxReputation"] = { 889, REVERED },	-- Warsong Outriders, Revered.
+							["timeline"] = { "removed 2.0.1" },
+						})),
+						-- #endif
 						moh(3, i(20425)),	-- Advisor's Gnarled Staff
+						
 						moh(3, i(19550)),	-- Legionnaire's Sword
 						moh(3, i(19551)),	-- Legionnaire's Sword
 						moh(3, i(19552)),	-- Legionnaire's Sword
 						moh(3, i(19553)),	-- Legionnaire's Sword
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(212586, {	-- Legionnaire's Sword
+							["maxReputation"] = { 889, REVERED },	-- Warsong Outriders, Revered.
+							["timeline"] = { "removed 2.0.1" },
+						})),
+						-- #endif
 						moh(3, i(20430)),	-- Legionnaire's Sword
+						
 						moh(3, i(19558)),	-- Outrider's Bow
 						moh(3, i(19559)),	-- Outrider's Bow
 						moh(3, i(19560)),	-- Outrider's Bow
 						moh(3, i(19561)),	-- Outrider's Bow
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(212585, {	-- Outrider's Bow
+							["maxReputation"] = { 889, REVERED },	-- Warsong Outriders, Revered.
+							["timeline"] = { "removed 2.0.1" },
+						})),
+						-- #endif
 						moh(3, i(20437)),	-- Outrider's Bow
+						
 						moh(3, i(19542)),	-- Scout's Blade
 						moh(3, i(19543)),	-- Scout's Blade
 						moh(3, i(19544)),	-- Scout's Blade
 						moh(3, i(19545)),	-- Scout's Blade
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(212587, {	-- Scout's Blade
+							["maxReputation"] = { 889, REVERED },	-- Warsong Outriders, Revered.
+							["timeline"] = { "removed 2.0.1" },
+						})),
+						-- #endif
 						moh(3, i(20441)),	-- Scout's Blade
+						
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211500, {	-- Resilient Cloth Headband
+							["maxReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
+							["timeline"] = { "removed 2.0.1" },
+						})),
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211856, {	-- Resilient Mail Coif
+							["maxReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
+							["timeline"] = { "removed 2.0.1" },
+						})),
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211857, {	-- Resilient Leather Mask
+							["maxReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
+							["timeline"] = { "removed 2.0.1" },
+						})),
+						-- #endif
+						
 						moh(1, i(19534)),	-- Scout's Medallion
 						moh(1, i(19535)),	-- Scout's Medallion
 						moh(1, i(19536)),	-- Scout's Medallion
 						moh(1, i(19537)),	-- Scout's Medallion
 						moh(1, i(20442)),	-- Scout's Medallion
+						
 						moh(1, i(19526)),	-- Battle Healer's Cloak
 						moh(1, i(19527)),	-- Battle Healer's Cloak
 						moh(1, i(19528)),	-- Battle Healer's Cloak
 						moh(1, i(19529)),	-- Battle Healer's Cloak
 						moh(1, i(20427)),	-- Battle Healer's Cloak
+						
 						moh(1, i(19578)),	-- Berserker Bracers
 						moh(1, i(19580)),	-- Berserker Bracers
 						moh(1, i(19581)),	-- Berserker Bracers
@@ -605,37 +678,85 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211498, {	-- Trainee's Sentinel Nightsaber
+							["maxReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+							["timeline"] = { "removed 2.0.1" },
+						})),
+						-- #endif
 						moh(10, i(19506)),	-- Silverwing Battle Tabard
 						moh(3, i(19570)),	-- Lorekeeper's Staff
 						moh(3, i(19571)),	-- Lorekeeper's Staff
 						moh(3, i(19572)),	-- Lorekeeper's Staff
 						moh(3, i(19573)),	-- Lorekeeper's Staff
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(212580, {	-- Lorekeeper's Staff
+							["maxReputation"] = { 890, REVERED },	-- Silverwing Sentinels, Revered.
+							["timeline"] = { "removed 2.0.1" },
+						})),
+						-- #endif
 						moh(3, i(20434)),	-- Lorekeeper's Staff
 						moh(3, i(19562)),	-- Outrunner's Bow
 						moh(3, i(19563)),	-- Outrunner's Bow
 						moh(3, i(19564)),	-- Outrunner's Bow
 						moh(3, i(19565)),	-- Outrunner's Bow
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(212581, {	-- Outrunner's Bow
+							["maxReputation"] = { 890, REVERED },	-- Silverwing Sentinels, Revered.
+							["timeline"] = { "removed 2.0.1" },
+						})),
+						-- #endif
 						moh(3, i(20438)),	-- Outrunner's Bow
 						moh(3, i(19554)),	-- Protector's Sword
 						moh(3, i(19555)),	-- Protector's Sword
 						moh(3, i(19556)),	-- Protector's Sword
 						moh(3, i(19557)),	-- Protector's Sword
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(212582, {	-- Protector's Sword
+							["maxReputation"] = { 890, REVERED },	-- Silverwing Sentinels, Revered.
+							["timeline"] = { "removed 2.0.1" },
+						})),
+						-- #endif
 						moh(3, i(20440)),	-- Protector's Sword
 						moh(3, i(20443)),	-- Sentinel's Blade
 						moh(3, i(19546)),	-- Sentinel's Blade
 						moh(3, i(19547)),	-- Sentinel's Blade
 						moh(3, i(19548)),	-- Sentinel's Blade
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(212583, {	-- Sentinel's Blade
+							["maxReputation"] = { 890, REVERED },	-- Silverwing Sentinels, Revered.
+							["timeline"] = { "removed 2.0.1" },
+						})),
+						-- #endif
 						moh(3, i(19549)),	-- Sentinel's Blade
+						
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211500, {	-- Resilient Cloth Headband
+							["maxReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+							["timeline"] = { "removed 2.0.1" },
+						})),
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211856, {	-- Resilient Mail Coif
+							["maxReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+							["timeline"] = { "removed 2.0.1" },
+						})),
+						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211857, {	-- Resilient Leather Mask
+							["maxReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
+							["timeline"] = { "removed 2.0.1" },
+						})),
+						-- #endif
+						
 						moh(1, i(19538)),	-- Sentinel's Medallion
 						moh(1, i(19539)),	-- Sentinel's Medallion
 						moh(1, i(19540)),	-- Sentinel's Medallion
 						moh(1, i(19541)),	-- Sentinel's Medallion
 						moh(1, i(20444)),	-- Sentinel's Medallion
+						
 						moh(1, i(19530)),	-- Caretaker's Cape
 						moh(1, i(19531)),	-- Caretaker's Cape
 						moh(1, i(19532)),	-- Caretaker's Cape
 						moh(1, i(19533)),	-- Caretaker's Cape
 						moh(1, i(20428)),	-- Caretaker's Cape
+						
 						moh(1, i(19578)),	-- Berserker Bracers
 						moh(1, i(19580)),	-- Berserker Bracers
 						moh(1, i(19581)),	-- Berserker Bracers

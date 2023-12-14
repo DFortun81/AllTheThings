@@ -1,8 +1,22 @@
 -- #if SEASON_OF_DISCOVERY
+-- Item Database of new items
+local Items = ItemDBConditional;
+local SODItem = function(itemID, f)
+	if not f then error("ERROR: Missing 'f' for item " .. itemID); end
+	local item = { ["b"] = 1, ["f"] = f };
+	Items[itemID] = item;
+	return item;
+end
+SODItem(212588, CLOTH);	-- Provisioner's Gloves
+SODItem(212589, LEATHER);	-- Courier Treads
+SODItem(212590, MAIL);	-- Hoist Strap
+SODItem(211382, BAGS);	-- Small Courier Satchel
+SODItem(211384, BAGS);	-- Sturdy Courier Bag
+
 local classHeader = function(classID, g)
 	return cl(classID, bubbleDown({ ["classes"] = { classID } }, g));
 end
-local OnTooltipFor_ACA_SDL = [[function(t)
+local OnTooltipFor_ACA_SDL = [[function(t) 
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		local isHuman, repPerTurnIn, x, n = _.RaceIndex == 1;

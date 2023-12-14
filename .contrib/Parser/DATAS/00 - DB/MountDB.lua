@@ -11,6 +11,10 @@ end
 -----------------
 -- CLASSIC WOW --
 -----------------
+-- SEASON OF DISCOVERY --
+i(211499, 429857);	-- Trainee's Outrider Wolf
+i(211498, 429856);	-- Trainee's Sentinel Nightsaber
+
 -- TBC Classic --
 i(184865, 348459);	-- Reawakened Phase-Hunter
 
