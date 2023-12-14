@@ -128,10 +128,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						["description"] = "|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant.|r",
 						["_drop"] = { "customCollect" },	-- this is Covenant tagged in various other locations
 						["sym"] = {
-							{ "select", "tierID", SL_TIER },	-- SL Tier
-							{ "pop" },							-- pop the Tier header
 							{ "select", "headerID", LEGENDARIES },	-- Legendary header
-							{ "pop" },							-- pop header
 							{ "extract", "runeforgePowerID" },	-- extract all Legendaries into a direct list
 							{ "exclude", "itemID",
 								190584,	-- Memory of Unity (DK)

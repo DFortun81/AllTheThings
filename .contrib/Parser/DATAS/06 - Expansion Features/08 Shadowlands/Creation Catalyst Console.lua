@@ -47,15 +47,10 @@ end
 
 local SymPvP = function(ClassID, HeaderID)
 	SymLinKPvP = {
-		{"select", "tierID", SL_TIER},			-- Select Shadowlands
-		{"pop"},								-- Discard the Shadowland Headers and acquire all of their children.
-		{"where", "headerID", SEASON_COSMIC},	-- Season 3
-		{"pop"},								-- Discard the Custom Headers and acquire all of their children.
-		{"where", "headerID", HeaderID},		-- Glad/Elite
-		{"pop"},								-- Discard the Custom Headers and acquire all of their children.
-		{"where", "headerID", CLASSES},			-- Classes
-		{"pop"},								-- Discard the Custom Headers and acquire all of their children.
-		{"where", "classID", ClassID},
+		{"select", "headerID", SEASON_COSMIC},	-- Select Season 3
+		{"find", "headerID", HeaderID},		-- Glad/Elite
+		{"find", "headerID", CLASSES},			-- Classes
+		{"find", "classID", ClassID},
 		{"pop"},
 	}
 	return SymLinKPvP

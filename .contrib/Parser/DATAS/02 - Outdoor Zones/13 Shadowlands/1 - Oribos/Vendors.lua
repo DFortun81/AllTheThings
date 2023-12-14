@@ -40,49 +40,44 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(188174, {	-- Unchained Equipment Cache [PvP S2]
 						["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
 						["cost"] = {{ "c", CONQUEST, 375 }},
-						--[[
+						-- #IF BEFORE 9.2.0
+						["skipFill"] = true,
 						["sym"] = {
-							{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
-							{"pop"},								-- Discard the Header and acquire all of the children.
-							{"where", "headerID", SEASON_UNCHAINED },			-- Unchained Gladiator: Shadowlands Season 2
-							{"pop"},								-- Discard the Header and acquire all of the children.
-							{"where", "headerID", PVP_GLADIATOR },	-- Gladiator Header
-							{"pop"},								-- Discard the Header and acquire all of the children.
+							{"select", "headerID", SEASON_UNCHAINED },	-- Select Unchained Gladiator: Shadowlands Season 2
+							{"find", "headerID", PVP_GLADIATOR },		-- Gladiator Header
+							{"pop"},									-- Discard the Header and acquire all of the children.
 						},
-						--]]
+						-- #ENDIF
 					}),
 					i(194118, {	-- Cosmic Equipment Chest [PvP S3]
 						["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },
 						["cost"] = {{ "c", CONQUEST, 375 }},
-						--[[
+						-- #IF BEFORE 9.2.5
+						["skipFill"] = true,
 						["sym"] = {
-							{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
-							{"pop"},								-- Discard the Header and acquire all of the children.
-							{"where", "headerID", SEASON_COSMIC },	-- Cosmic Gladiator: Shadowlands Season 3
-							{"pop"},								-- Discard the Header and acquire all of the children.
-							{"where", "headerID", PVP_GLADIATOR },	-- Gladiator Header
+							{"select", "headerID", SEASON_COSMIC },	-- Select Cosmic Gladiator: Shadowlands Season 3
+							{"find", "headerID", PVP_GLADIATOR },	-- Gladiator Header
 							{"pop"},								-- Discard the Header and acquire all of the children.
 						},
-						--]]
+						-- #ENDIF
 					}),
 					i(201355, {	-- Eternal Equipment Chest [PvP S4]
 						["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH },
 						["cost"] = {{ "c", CONQUEST, 375 }},
-						--[[
+						-- #IF BEFORE 10.0.2
+						["skipFill"] = true,
 						["sym"] = {
-							{"select", "tierID", SL_TIER },			-- Select Shadowlands Header
-							{"pop"},								-- Discard the Header and acquire all of the children.
-							{"where", "headerID", SEASON_ETERNAL },	-- Eternal Gladiator: Shadowlands Season 4
-							{"pop"},								-- Discard the Header and acquire all of the children.
-							{"where", "headerID", PVP_GLADIATOR },	-- Gladiator Header
-							{"pop"},								-- Discard the Header and acquire all of the children.
+							{"select", "headerID", SEASON_ETERNAL },	-- Select Eternal Gladiator: Shadowlands Season 4
+							{"find", "headerID", PVP_GLADIATOR },		-- Gladiator Header
+							{"pop"},									-- Discard the Header and acquire all of the children.
 						},
-						--]]
+						-- #ENDIF
 					}),
 					i(188173, {	-- Valorous Equipment Cache [M+ S2]
 						["timeline"] = { ADDED_9_1_5, REMOVED_9_2_0 },
 						["cost"] = {{ "c", VALOR, 500 }},
-						--[[
+						-- #IF BEFORE 9.2.0
+						["skipFill"] = true,
 						["sym"] = {{"select", "instanceID",
 							-- Dungeons
 							1188,	-- De Other Side
@@ -97,17 +92,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							},
 							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
-							{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-							{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
+							{"extract", "itemID"},					-- Only Items!
 							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 						},
-						--]]
+						-- #ENDIF
 					}),
 					i(194334, {	-- Encrypted Equipment Chest [M+ S3]
 						["timeline"] = { ADDED_9_2_5, REMOVED_9_2_7 },
 						["cost"] = {{ "c", VALOR, 500 }},
-						--[[
+						-- #IF BEFORE 9.2.7
+						["skipFill"] = true,
 						["sym"] = {{"select", "instanceID",
 							-- Dungeons
 							1188,	-- De Other Side
@@ -122,17 +116,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							},
 							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
-							{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-							{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
+							{"extract", "itemID"},					-- Only Items!
 							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 						},
-						-]]
+						-- #ENDIF
 					}),
 					i(201362, {	-- Fated Equipment Chest [M+ S4]
 						["timeline"] = { ADDED_9_2_7, REMOVED_10_0_2_LAUNCH },
 						["cost"] = {{ "c", VALOR, 500 }},
-						--[[
+						-- #IF BEFORE 10.0.2
+						["skipFill"] = true,
 						["sym"] = {{"select", "instanceID",
 							-- Dungeons
 							1188,	-- De Other Side
@@ -147,12 +140,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							},
 							{"pop"},								-- Discard the Instance Headers and acquire all of their children.
 							{"where", "difficultyID", 23},			-- Select only the Mythic Difficulty Headers.
-							{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-							{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-							{"is", "itemID"},						-- Only Items!
+							{"extract", "itemID"},					-- Only Items!
 							{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
 						},
-						--]]
+						-- #ENDIF
 					}),
 					i(188198, {	-- Travlers Anima Cache
 						["description"] = "This item allows you to transfer anima between characters in a one-to-one ratio.",

@@ -222,20 +222,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["cost"] = { { "i", MOH, 80 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
 							["sym"] = {
-								{"select", "tierID", SL_TIER},			-- Select Shadowlands
-								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-								{"where", "headerID", SEASON_ETERNAL},	-- Eternal Season
-								{"pop"},								-- Discard the Eternal Season Header and acquire all of their children.
-								{"where", "headerID", PVP_ASPIRANT},	-- Aspirant Gear
+								{"select", "headerID", SEASON_ETERNAL},	-- Select Eternal Season
+								{"find", "headerID", PVP_ASPIRANT},		-- Aspirant Gear
 								{"find", "headerID", WEAPONS},			-- Weapons
 								{"extract","itemID"},					-- Extract Items
 								{"finalize"},							-- Push Everything to the Queue
 
-								{"select", "tierID", SL_TIER},			-- Select Shadowlands
-								{"pop"},								-- Discard the Shadowland Header and acquire all of their children.
-								{"where", "headerID", SEASON_COSMIC},	-- Cosmic Season
-								{"pop"},								-- Discard the Cosmic Season Header and acquire all of their children.
-								{"where", "headerID", PVP_ASPIRANT},	-- Aspirant Gear
+								{"select", "headerID", SEASON_COSMIC},	-- Select Cosmic Season
+								{"find", "headerID", PVP_ASPIRANT},		-- Aspirant Gear
 								{"find", "headerID", WEAPONS},			-- Weapons
 								{"extract","itemID"},					-- Extract Items
 							},

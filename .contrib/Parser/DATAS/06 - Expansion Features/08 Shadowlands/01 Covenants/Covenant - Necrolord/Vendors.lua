@@ -3,10 +3,7 @@
 -------------------------------------------------------------------
 local CHRONICLE_OF_LOST_MEMORIES = i(184665, {	-- Chronicle of Lost Memories
 	["sym"] = {
-		{ "select", "tierID", SL_TIER },	-- SL Tier
-		{ "pop" },							-- pop the Tier header
 		{ "select", "headerID", LEGENDARIES },	-- Legendary header
-		{ "pop" },							-- pop header
 		{ "extract", "runeforgePowerID" },	-- extract all Legendaries into a direct list
 		{ "exclude", "itemID",
 			190584,	-- Memory of Unity (DK)
