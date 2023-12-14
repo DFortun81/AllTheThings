@@ -175,12 +175,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Silverwing Sentinels to Exalted.",
 					-- #endif
+					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(PHASE_TWO, achWithRep(712, 889, {	-- Warsong Outrider (H)
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Warsong Outriders to Exalted.",
 					-- #endif
+					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
 				})),
 			}),
@@ -188,11 +190,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				faction(890, {	-- Silverwing Sentinels
 					["icon"] = "Interface\\Icons\\ability_racial_shadowmeld",
 					["OnTooltip"] = OnTooltipForWarsongGulch,
+					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				faction(889, {	-- Warsong Outriders
 					["icon"] = "Interface\\Icons\\Ability_Warrior_WarCry",
 					["OnTooltip"] = OnTooltipForWarsongGulch,
+					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
