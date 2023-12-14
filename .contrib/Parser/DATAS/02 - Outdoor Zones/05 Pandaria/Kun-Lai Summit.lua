@@ -2887,7 +2887,7 @@ root(ROOTS.Zones, {
 											84962,	-- Malevolent Gladiator's Ripper
 											84967,	-- Malevolent Gladiator's Shanker
 											84910,	-- Malevolent Gladiator's Shield Wall
-											84900,	-- Malevolent Gladiator's Slicer
+											84968,	-- Malevolent Gladiator's Slicer
 											84961,	-- Malevolent Gladiator's Spellblade
 											84789,	-- Malevolent Gladiator's Staff
 											84894,	-- Malevolent Gladiator's Slasher
@@ -2918,7 +2918,7 @@ root(ROOTS.Zones, {
 								un(REMOVED_FROM_GAME, i(84967)),	-- Malevolent Gladiator's Shanker
 								un(REMOVED_FROM_GAME, i(84910)),	-- Malevolent Gladiator's Shield Wall
 								un(REMOVED_FROM_GAME, i(84894)),	-- Malevolent Gladiator's Slasher
-								un(REMOVED_FROM_GAME, i(84900)),	-- Malevolent Gladiator's Slicer
+								un(REMOVED_FROM_GAME, i(84968)),	-- Malevolent Gladiator's Slicer
 								un(REMOVED_FROM_GAME, i(84961)),	-- Malevolent Gladiator's Spellblade
 								un(REMOVED_FROM_GAME, i(84789)),	-- Malevolent Gladiator's Staff
 								-- S13 Tag

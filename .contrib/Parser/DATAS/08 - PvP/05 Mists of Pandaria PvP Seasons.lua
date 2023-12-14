@@ -680,7 +680,7 @@ root(ROOTS.PVP, {
 								{"exclude", "itemID", 84962 },	-- Malevolent Gladiator's Ripper
 								{"exclude", "itemID", 84967 },	-- Malevolent Gladiator's Shanker
 								{"exclude", "itemID", 84910 },	-- Malevolent Gladiator's Shield Wall
-								{"exclude", "itemID", 84900 },	-- Malevolent Gladiator's Slicer
+								{"exclude", "itemID", 84968 },	-- Malevolent Gladiator's Slicer
 								{"exclude", "itemID", 84961 },	-- Malevolent Gladiator's Spellblade
 								{"exclude", "itemID", 84789 },	-- Malevolent Gladiator's Staff
 								{"exclude", "itemID", 84894 },	-- Malevolent Gladiator's Slasher
@@ -791,7 +791,7 @@ root(ROOTS.PVP, {
 						un(REMOVED_FROM_GAME, i(84967)),	-- Malevolent Gladiator's Shanker
 						un(REMOVED_FROM_GAME, i(84910)),	-- Malevolent Gladiator's Shield Wall
 						un(REMOVED_FROM_GAME, i(84894)),	-- Malevolent Gladiator's Slasher
-						un(REMOVED_FROM_GAME, i(84900)),	-- Malevolent Gladiator's Slicer
+						un(REMOVED_FROM_GAME, i(84968)),	-- Malevolent Gladiator's Slicer
 						un(REMOVED_FROM_GAME, i(84961)),	-- Malevolent Gladiator's Spellblade
 						un(REMOVED_FROM_GAME, i(84789)),	-- Malevolent Gladiator's Staff
 					}),
