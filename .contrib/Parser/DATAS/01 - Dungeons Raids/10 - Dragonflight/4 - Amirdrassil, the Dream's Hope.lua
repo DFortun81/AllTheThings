@@ -605,7 +605,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 			Difficulty(ALL_DIFFICULTIES_RAID).AddGroups({
 				CommonBossDrops({
 					i(210780),	-- Lesser Ember of Fyr'alath
-					i(210871),	-- Greater Ember of Fyr'alath
 				}),
 				n(QUESTS, {
 					q(78355,{	-- Essence of a Broken Dream
@@ -672,11 +671,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				}),
 				BossOnly(SMOLDERON),
 				BossOnly(TINDRAL, {
-					i(211314),	-- Cinder of Companionship (CI!)
 					i(211280),	-- Feather of the Smoke Red Moon (CI!)
 					i(210644),	-- Plans: Flourishing Dream Helm (RECIPE!)
 				}),
 				BossOnly(FYRAKK, {
+					i(210871),	-- Greater Ember of Fyr'alath (There are multiple versions?)
 					i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing (DM!)
 				}),
 			}),
@@ -885,6 +884,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					i(210061, {	-- Anu'relos, Flame's Guidance (MOUNT!)
 						i(210754),	-- Feather of the Blazing Somnowl (CI!)
 					}),
+					i(211314),	-- Cinder of Companionship (CI!)
 					i(210947, {	-- Flame-Warped Curio
 						["sym"] = {{"sub","instance_tier",1207,MYTHIC_RAID}},
 						["up"] = IGNORED_VALUE,
