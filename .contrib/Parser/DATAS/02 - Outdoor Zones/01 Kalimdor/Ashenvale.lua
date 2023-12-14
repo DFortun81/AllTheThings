@@ -216,6 +216,92 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			pvp(n(PVP, {
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(createHeader({	-- Defeat a Lieutenant
+					readable = "Defeat a Lieutenant",
+					icon = "Interface\\CURSOR\\Attack",
+					text = {
+						en = "Defeat a Lieutenant",
+						es = "Derrota a un Teniente",
+						de = "Besiege einen Leutnant",
+						fr = "Battre un Lieutenant",
+						it = "Sconfiggi un Tenente",
+						pt = "Derrote um Tenente",
+						ru = "Победить лейтенанта",
+						ko = "중위를 처치하세요",
+						cn = "击败一名中尉",
+					},
+				}), {
+					["aqd"] = {
+						["crs"] = {
+							212730,	-- Tojara <Blademaster>
+							212801,	-- Jubei <Blademaster>
+							212802,	-- Moogul the Sly <Blademaster>
+						},
+						["coords"] = {
+							{ 54.8, 54.8, ASHENVALE },
+							{ 22.0, 38.6, ASHENVALE },
+							{ 69.6, 63.6, ASHENVALE },
+						},
+						["maxReputation"] = { 890, HONORED },	-- Silverwing Sentinels, Honored.
+					},
+					["hqd"] = {
+						["crs"] = {
+							212707,	-- Larodar <Keeper of the Grove>
+							212803,	-- Ceredwyn <Keeper of the Grove>
+							212804,	-- Centrius <Keeper of the Grove>
+						},
+						["coords"] = {
+							{ 51.6, 54.8, ASHENVALE },
+							{ 74.0, 74.0, ASHENVALE },
+							{ 28.6, 28.8, ASHENVALE },
+						},
+						["maxReputation"] = { 889, HONORED },	-- Warsong Outriders, Honored.
+					},
+					["OnInit"] = [[function(t) _.ResolveQuestData(t); t.OnInit = nil; return _.CreateCustomHeader(t.headerID, t); end]],
+					["timeline"] = { "removed 2.0.1" },
+					["repeatable"] = true,
+					["groups"] = {
+						i(211813, {	-- Silverwing Sentinel Charm
+							["races"] = HORDE_ONLY,
+						}),
+						i(211814, {	-- 
+							["races"] = ALLIANCE_ONLY,
+						}),
+					},
+				})),
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(createHeader({	-- Win the Battle
+					readable = "Win the Battle",
+					icon = [[~_.asset("Category_PvP")]],
+					text = {
+						en = "Win the Battle",
+						es = "Gana la Batalla",
+						de = "Gewinne den Kampf",
+						fr = "Gagnez la Bataille",
+						it = "Vinci la Battaglia",
+						pt = "Ganhe a Batalha",
+						ru = "Выиграй битву",
+						ko = "전투에서 승리하세요",
+						cn = "赢得战斗",
+					},
+				}), {
+					["aqd"] = {
+						["cr"] = 212969,	-- Kazragore <Far Seer>
+						["coord"] = { 42.0, 67.0, ASHENVALE },
+						["maxReputation"] = { 890, HONORED },	-- Silverwing Sentinels, Honored.
+					},
+					["hqd"] = {
+						["cr"] = 212970,	-- Felore Moonray <Priestess of the Moon>
+						["coord"] = { 50.5, 72.0, ASHENVALE },
+						["maxReputation"] = { 889, HONORED },	-- Warsong Outriders, Honored.
+					},
+					["OnInit"] = [[function(t) _.ResolveQuestData(t); t.OnInit = nil; return _.CreateCustomHeader(t.headerID, t); end]],
+					["timeline"] = { "removed 2.0.1" },
+					["repeatable"] = true,
+				})),
+			})),
+			-- #endif
 			n(QUESTS, {
 				q(26453, {	-- A Helping Hand
 					["qg"] = 17106,	-- Vindicator Palanaar
@@ -558,6 +644,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, pvp(q(79098, {	-- Clear the Forest!
+					["providers"] = {
+						{ "i", 211813 },	-- Silverwing Sentinel Charm
+						{ "n", 212969 },	-- Kazragore <Far Seer>
+					},
+					["coord"] = { 42.0, 67.0, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
+					["lvl"] = 18,
+					["groups"] = {
+						i(211816),	-- Warsong Battle Drum
+					},
+				}))),
+				-- #endif
 				q(13985, {	-- Clear the Shrine
 					["qg"] = 34599,	-- Bolyun
 					["sourceQuest"] = 13982,	-- In a Bind
@@ -1765,6 +1867,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, pvp(q(79090, {	-- Repelling Invaders
+					["providers"] = {
+						{ "i", 211814 },	-- Warsong Outrider Mark
+						{ "n", 212970 },	-- Felore Moonray <Priestess of the Moon>
+					},
+					["coord"] = { 50.5, 72.0, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
+					["lvl"] = 18,
+					["groups"] = {
+						i(211815),	-- Silverwing Battle Hymn
+					},
+				}))),
+				-- #endif
 				q(26456, {	-- Report from the Northern Front
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
 					["sourceQuest"] = 13935,	-- Defend the Tree!

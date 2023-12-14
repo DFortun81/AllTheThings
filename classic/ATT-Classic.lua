@@ -7803,6 +7803,28 @@ local createCustomHeader = app.CreateClass("Header", "headerID", {
 		return true;
 	end,
 },
+"WithReputation", {
+	collectible = function(t)
+		if app.Settings.Collectibles.Reputations then
+			return true;
+		end
+	end,
+	collected = function(t)
+		if (select(6, GetFactionInfoByID(t.maxReputation[1])) or 0) >= t.maxReputation[2] then
+			return 1;
+		end
+		if app.Settings.AccountWide.Reputations then
+			local searchResults = SearchForField("factionID", t.maxReputation[1]);
+			if #searchResults > 0 then
+				for i,searchResult in ipairs(searchResults) do
+					if searchResult.key == "factionID" and searchResult.collected then
+						return 2;
+					end
+				end
+			end
+		end
+	end
+}, (function(t) return t.maxReputation; end),
 "WithEvent", app.Modules.Events.Fields, (function(t) return L.HEADER_EVENTS[t.headerID]; end));
 app.CreateCustomHeader = createCustomHeader;
 app.CreateNPC = function(id, t)
@@ -8391,7 +8413,7 @@ end),
 				local searchResults = SearchForField("factionID", t.maxReputation[1]);
 				if #searchResults > 0 then
 					for i,searchResult in ipairs(searchResults) do
-						if searchResult.key ~= "questID" and searchResult.collected then
+						if searchResult.key == "factionID" and searchResult.collected then
 							return 2;
 						end
 					end

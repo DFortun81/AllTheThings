@@ -46,6 +46,18 @@ local OnTooltipForWarsongGulch = [[function(t)
 		local x, n = math.ceil((42000 - reputation) / repPerFlagCapture), math.ceil(42000 / repPerFlagCapture);
 		GameTooltip:AddDoubleLine("Flags Captured", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
 		GameTooltip:AddLine(" Each capture is worth " .. repPerFlagCapture .. " rep, +10 on WSG Weekend.", 1, 1, 1);
+-- #if SEASON_OF_DISCOVERY
+		if reputation < ]] .. HONORED .. [[ then
+			GameTooltip:AddLine(" ", 1, 1, 1);
+			GameTooltip:AddLine("Battle for Ashenvale PvP World Event:", 1, 1, 1);
+			local repPerKill = isHuman and 220 or 200;
+			local x, n = math.ceil((]] .. HONORED .. [[ - reputation) / repPerKill), math.ceil(]] .. HONORED .. [[ / repPerKill);
+			GameTooltip:AddDoubleLine("  Defeat a Lieutenant (To Honored)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+			local repPerWin = isHuman and 660 or 600;
+			local x, n = math.ceil((]] .. HONORED .. [[ - reputation) / repPerWin), math.ceil(]] .. HONORED .. [[ / repPerWin);
+			GameTooltip:AddDoubleLine("  Win the Battle (To Honored)", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
+		end
+-- #endif
 	end
 end]];
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
