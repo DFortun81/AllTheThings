@@ -85,6 +85,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(583, {	-- Arathi Basin All-Star
 					["timeline"] = { "added 3.0.1" },
+					["_noautomation"] = true,	-- When Comp Stomp was introduced, Blizzard added new nested criteria but kept the old ones. Just showing the old ones is enough at this time.
 					["g"] = {
 						crit(426),	-- Assault 2 bases
 						crit(427),	-- Defend 2 bases
@@ -117,6 +118,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(161, {	-- Resilient Victory
 					["timeline"] = { "added 3.0.1" },
+					["_noautomation"] = true,	-- Doesn't show any criteria ingame but they exist so we hide them ourselves
 				}),
 				ach(156, {	-- Territorial Dominance
 					["timeline"] = { "added 3.0.1" },
