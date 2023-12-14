@@ -302,7 +302,6 @@ root(ROOTS.NeverImplemented, {
 				i(189126),	-- Gnoll "Lances"
 				i(194328),	-- Gnoll-Worn Cloth
 				i(194071),	-- Gold Ring
-				i(198133),	-- Golden Expedition Compass
 				i(194427),	-- Gorloc Mucus
 				i(191088),	-- Gorloc Scrimshaw
 				i(200667),	-- Grim Morsel
@@ -328,7 +327,6 @@ root(ROOTS.NeverImplemented, {
 				i(199822),	-- Impressive Dragon Skull
 				i(192126),	-- Intact Dracthyr Weapon
 				i(191901),	-- Intact Skull
-				i(198135),	-- Jeb's Supply Pack
 				i(192123),	-- Job Description
 				i(191118),	-- Kargpaw's Totem
 				i(191105),	-- Kerwal's Paw
@@ -433,7 +431,6 @@ root(ROOTS.NeverImplemented, {
 				i(193207),	-- Shadespinner's Web
 				i(193266),	-- Sharp Tooth
 				i(191116),	-- Shiny Gorloc Scale
-				i(198134),	-- Shiny Surveyor Scope
 				i(195468),	-- Shiverweb Silk
 				i(190972),	-- Shiverweb Silk DEPRECATED
 				i(190974),	-- Silk Slasher

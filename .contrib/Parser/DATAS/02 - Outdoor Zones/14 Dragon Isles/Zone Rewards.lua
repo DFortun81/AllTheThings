@@ -10,6 +10,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		},
 	}),
 	n(ZONE_REWARDS, {
+		--DF open world supplies
+		i(200700),	-- Cuppressa Berries
+		i(200690),	-- Ritherem Petals
+		i(200694),	-- River Bell Bulbs
+		--
 		i(199197, {	-- Bottled Essence x5
 			i(190453),	-- Spark of Ingenuity
 		}),

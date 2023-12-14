@@ -13,12 +13,12 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		i(204186, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Greater Obsidian Trophy of Conquest
 		i(204188, {["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }}),	-- Lesser Obsidian Trophy of Conquest
 		-- Season 3 --
-		i(208569, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }}),	-- Verdant Crest of Honor
-		i(208570, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }}),	-- Greater Verdant Crest of Honor
-		i(208568, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }}),	-- Lesser Verdant Crest of Honor
-		i(208565, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }}),	-- Verdant Trophy of Conquest
-		i(208566, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }}),	-- Greater Verdant Trophy of Conquest
-		i(208564, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }}),	-- Lesser Verdant Trophy of Conquest
+		i(212540, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }}),	-- Verdant Crest of Honor
+		i(212541, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }}),	-- Greater Verdant Crest of Honor
+		i(212539, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }}),	-- Lesser Verdant Crest of Honor
+		i(212537, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }}),	-- Verdant Trophy of Conquest
+		i(212538, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }}),	-- Greater Verdant Trophy of Conquest
+		i(212536, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }}),	-- Lesser Verdant Trophy of Conquest
 	}),
 	filter(RECIPES, {
 		i(201257),	-- Bloodstained Pattern: Infurious Hide (RECIPE!)

@@ -1045,12 +1045,6 @@ root(ROOTS.Unsorted, {
 		})),
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			i(211927),	-- Tattered Dreamleaf
-			i(212536),	-- Lesser Verdant Trophy of Conquest
-			i(212537),	-- Verdant Trophy of Conquest
-			i(212538),	-- Greater Verdant Trophy of Conquest
-			i(212539),	-- Lesser Verdant Crest of Honor
-			i(212540),	-- Verdant Crest of Honor
-			i(212541),	-- Greater Verdant Crest of Honor
 			i(212554),	-- Medal of Conquest
 
 			i(211260),	-- Crimson Gladiator's Spear
@@ -1561,7 +1555,6 @@ root(ROOTS.Unsorted, {
 				i(193448),	-- Arcane Cell
 				i(201824),	-- Arcane Fluid
 				i(201823),	-- Arcane-Infused Webbing
-				i(201967),	-- Autographed Skull
 				i(201191),	-- Back Scratcher
 				i(201198),	-- Beaded Bracelet
 				i(201187),	-- Bent Lockpicks
@@ -1589,7 +1582,6 @@ root(ROOTS.Unsorted, {
 				i(192687),	-- Duck Bill
 				i(192689),	-- Eagle Eye
 				i(201195),	-- Empty Herb Pouch
-				i(201968),	-- Enormous Grain of Salt
 				i(192691),	-- Eternal Ice Stalactite
 				i(192692),	-- Faerie Dust
 				i(201174),	-- Fantastic Jewel
@@ -1672,7 +1664,6 @@ root(ROOTS.Unsorted, {
 				i(201813),	-- Spoiled Firewine
 				i(192723),	-- Springy Tongue
 				i(201202),	-- Squirrel Tail
-				i(201970),	-- Stolen Illidari Blindfold
 				i(201167),	-- Stone Calendar
 				i(192671),	-- Sublime Flower
 				i(200107),	-- Tarnished Engagement Ring
@@ -1682,7 +1673,6 @@ root(ROOTS.Unsorted, {
 				i(192696),	-- Third Head's Eye
 				i(201223),	-- Thorn Bracelet
 				i(201969),	-- Threatening Note
-				i(201971),	-- Threatening Note
 				i(193447),	-- Thunder Thigh
 				i(192726),	-- Thunderhorn
 				i(192727),	-- Timeless Horns
@@ -1884,7 +1874,6 @@ root(ROOTS.Unsorted, {
 				i(197853),	-- Critter Kebab
 				i(191422),	-- Crystal Magical Lockpick
 				i(197856),	-- Cup o' Wakeup
-				i(200700),	-- Cuppressa Berries
 				i(192182),	-- Decay to Elements
 				i(200799),	-- Decaying Pelt Bolt
 				i(198541),	-- Depleted Violet Vapors
@@ -1946,7 +1935,6 @@ root(ROOTS.Unsorted, {
 				i(200620),	-- Inflaming Incense
 				i(200830),	-- Instantly Drying Clay
 				i(191244),	-- I.P.F. Mark 15
-				i(198139),	-- Jeb's Underwear
 				i(194680),	-- Jerky Surprise
 				i(196182),	-- Journal Entry
 				i(198840),	-- Kalecite Cluster
@@ -1995,8 +1983,6 @@ root(ROOTS.Unsorted, {
 				i(191856),	-- Reinforced Hooked Line
 				i(200781),	-- Rejuvenating Ashes
 				i(200797),	-- Repulsive Perfume
-				i(200690),	-- Ritherem Petals
-				i(200694),	-- River Bell Bulbs
 				i(191861),	-- Rocdrop Carapace
 				i(191864),	-- Rocdrop Pudgepart
 				i(200796),	-- Rotting Wood Totem

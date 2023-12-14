@@ -1132,6 +1132,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 76.6, 33.6, THE_WAKING_SHORES },
 				["sourceQuestNumRequired"] = 1,
 				["classes"] = { ROGUE },
+				["g"] = {
+					i(198133),	-- Golden Expedition Compass (QI!
+					i(198135),	-- Jeb's Supply Pack (QI!)
+					i(198139),	-- Jeb's Underwear
+					i(198134),	-- Shiny Surveyor Scope (QI!)
+				},
 			}),
 			q(69965, {	-- Quality Assurance
 				["sourceQuests"] = { 66110 },	-- Give Peace a Chance

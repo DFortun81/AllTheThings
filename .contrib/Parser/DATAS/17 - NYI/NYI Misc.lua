@@ -884,7 +884,6 @@ root(ROOTS.NeverImplemented, {
 				i(205691),	-- Hypnotic Murloc Lure
 				i(204886),	-- Insulating Embershard
 				i(203397),	-- Kirygosa's Note
-				i(205959),	-- Letter from Kirygosa
 				i(205163),	-- Lucky Horseshoe - FOR TESTING AURAS DO NOT USE (SH)
 				i(205898),	-- Metal Key and shield disabled
 				i(205454),	-- Researchers Wheel Barrow
@@ -1004,6 +1003,13 @@ root(ROOTS.NeverImplemented, {
 				i(210550),	-- Set Keystone Map: Dawn of the Infinite: Galakrond's Fall
 				i(210551),	-- Set Keystone Map: Dawn of the Infinite: Murozond's Rise
 				i(210040),	-- Set Keystone Map: Throne of the Tides
+				------ Reagents ------
+				i(208569),	-- Verdant Crest of Honor
+				i(208570),	-- Greater Verdant Crest of Honor
+				i(208568),	-- Lesser Verdant Crest of Honor
+				i(208565),	-- Verdant Trophy of Conquest
+				i(208566),	-- Greater Verdant Trophy of Conquest
+				i(208564),	-- Lesser Verdant Trophy of Conquest
 				------ Unknown ------
 				i(208692),	-- Ancient Roottwined Tome
 				i(209019),	-- Conjured Sugarfree Firewater Sorbet
@@ -1027,10 +1033,6 @@ root(ROOTS.NeverImplemented, {
 				i(210439),	-- Speck of Mana
 				i(210440),	-- Splendid Blossom
 				i(210438),	-- Wisp Dust
-				------ Rewards ------
-				i(210224),	-- Small Emerald Bloom
-				i(210225),	-- Medium Emerald Bloom
-				i(210226),	-- Large Emerald Bloom
 				------ Insignia ------
 				i(210419),	-- Dream Wardens Insignia [Uncommon]
 				i(210420),	-- Dream Wardens Insignia [Rare]

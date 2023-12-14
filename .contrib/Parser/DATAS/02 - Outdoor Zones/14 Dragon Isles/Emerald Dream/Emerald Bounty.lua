@@ -18,6 +18,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			i(208066),	-- Small Dreamseed
 			i(208067),	-- Plump Dreamseed
 			i(208047),	-- Gigantic Dreamseed
+			i(210224),	-- Small Emerald Bloom
+			i(210225),	-- Medium Emerald Bloom
+			i(210226),	-- Large Emerald Bloom
 			n(ACHIEVEMENTS, {
 				ach(19013, {	-- I Dream of Seeds
 					crit(62396, {	-- Ageless Blossom

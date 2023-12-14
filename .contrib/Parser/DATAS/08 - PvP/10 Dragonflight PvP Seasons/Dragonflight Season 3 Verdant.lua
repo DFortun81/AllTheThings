@@ -328,6 +328,17 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 								["cost"] = { { "c", HONOR, 875 } },
 							}),
 						}),
+						filter(REAGENTS, {
+							i(212541, {	-- Greater Verdant Crest of Honor
+								["cost"] = { { "c", HONOR, 875 } },
+							}),
+							i(212540, {	-- Verdant Crest of Honor
+								["cost"] = { { "c", HONOR, 700 } },
+							}),
+							i(212539, {	-- Lesser Verdant Crest of Honor
+								["cost"] = { { "c", HONOR, 525 } },
+							}),
+						}),
 						filter(TRINKET_F, {
 							i(209763, {	-- Verdant Aspirant's Badge of Ferocity
 								["cost"] = { { "c", HONOR, 700 } },
@@ -1197,14 +1208,14 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 							}),
 						}),
 						filter(REAGENTS, {
-							i(208566, {	-- Greater Verdant Trophy of Conquest
+							i(212538, {	-- Greater Verdant Trophy of Conquest
 								["cost"] = { { "c", CONQUEST, 875 } },
 							}),
-							i(208564, {	-- Lesser Verdant Trophy of Conquest
-								["cost"] = { { "c", CONQUEST, 525 } },
-							}),
-							i(208565, {	-- Verdant Trophy of Conquest
+							i(212537, {	-- Verdant Trophy of Conquest
 								["cost"] = { { "c", CONQUEST, 700 } },
+							}),
+							i(212536, {	-- Lesser Verdant Trophy of Conquest
+								["cost"] = { { "c", CONQUEST, 525 } },
 							}),
 						}),
 						filter(TRINKET_F, {

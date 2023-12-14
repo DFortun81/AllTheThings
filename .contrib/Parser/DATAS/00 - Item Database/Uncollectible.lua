@@ -646,6 +646,10 @@ i(200106);	-- Slimy Old Boot
 i(201209);	-- Nibbled Fish Head
 i(201222);	-- Smooth Seashell
 i(201424);	-- Unusable Plant Matter
+i(201967);	-- Autographed Skull
+i(201968);	-- Enormous Grain of Salt
+i(201970);	-- Stolen Illidari Blindfold
+i(201971);	-- Threatening Note
 -- Wierd
 i(202108);	-- Bouncing Bass
 
