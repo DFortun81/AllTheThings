@@ -370,6 +370,9 @@ lvlsquish = function(originalLvl, cataLvl, shadowlandsLvl)
 	-- #endif
 	return lvl;
 end
+Sym_PvPWeaponsArsenal = function(TIER, SEASON, PVPSET)
+	return {{"sub","pvp_weapons_ensemble",TIER,SEASON,PVPSET}}
+end
 
 -- Cost Helper Functions
 applycost = function(item, ...)
