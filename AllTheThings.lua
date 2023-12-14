@@ -56,9 +56,9 @@ local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
 local rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove, string_lower,
-		string_match, sformat, string_gsub, strsplit, GetTimePreciseSec, type
+		string_match, sformat, string_gsub, strsplit, GetTimePreciseSec, type, math_floor
 	= rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove, string.lower,
-		string.match, string.format, string.gsub, strsplit, GetTimePreciseSec, type;
+		string.match, string.format, string.gsub, strsplit, GetTimePreciseSec, type, math.floor
 local ATTAccountWideData;
 
 -- App & Module locals
@@ -346,7 +346,7 @@ end
 local function GetMoneyString(amount)
 	if amount > 0 then
 		local formatted
-		local g,s,c = math.floor(amount / 100 / 100), math.floor((amount / 100) % 100), math.floor(amount % 100)
+		local g,s,c = math_floor(amount / 100 / 100), math_floor((amount / 100) % 100), math_floor(amount % 100)
 		if g > 0 then
 			formatted = formatNumericWithCommas(g) .. "|TInterface\\MONEYFRAME\\UI-GoldIcon:0|t"
 		end
@@ -361,7 +361,7 @@ local function GetMoneyString(amount)
 	return amount
 end
 app.GetPatchString = function(patch)
-	return math.floor(patch / 10000) .. "." .. (math.floor(patch / 100) % 10) .. "." .. (patch % 10)
+	return math_floor(patch / 10000) .. "." .. (math_floor(patch / 100) % 10) .. "." .. (patch % 10)
 end
 
 do -- TradeSkill Functionality
@@ -652,7 +652,7 @@ for i=1,MAX_CREATURES_PER_ENCOUNTER do
 	model:SetCamDistanceScale(1.7);
 	model:SetDisplayInfo(987);
 	model:SetFacing(MODELFRAME_DEFAULT_ROTATION);
-	fi = math.floor(i / 2);
+	fi = math_floor(i / 2);
 	model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - 0.3);
 	--model:SetDepth(i);
 	model:Hide();
@@ -711,7 +711,7 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 						model:SetDisplayInfo(displayInfos[i]);
 						model:SetCamDistanceScale(scale);
 						model:SetFacing(rotation);
-						fi = math.floor(i / 2);
+						fi = math_floor(i / 2);
 						model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - (ratio * 0.15));
 						model:Show();
 					end
@@ -1787,11 +1787,11 @@ end
 local function GetItemIDAndModID(modItemID)
 	if modItemID and tonumber(modItemID) then
 		-- print("GetItemIDAndModID",modItemID)
-		local itemID = math.floor(modItemID);
+		local itemID = math_floor(modItemID);
 		modItemID = (modItemID - itemID) * 100.0 + 0.0000005;
-		local modID = math.floor(modItemID);
+		local modID = math_floor(modItemID);
 		modItemID = (modItemID - modID) * 10000.0 + 0.0000005;
-		local bonusID = math.floor(modItemID);
+		local bonusID = math_floor(modItemID);
 		-- print(itemID,modID,bonusID)
 		return itemID, modID, bonusID;
 	end
@@ -2133,8 +2133,8 @@ app.BuildDiscordQuestInfoTable = function(id, infoText, questChange, questRef, c
 	end
 	if position then
 		local x,y = position:GetXY();
-		x = math.floor(x * 1000) / 10;
-		y = math.floor(y * 1000) / 10;
+		x = math_floor(x * 1000) / 10;
+		y = math_floor(y * 1000) / 10;
 		coord = x..", "..y;
 	end
 	local skills = {};
@@ -6134,7 +6134,7 @@ app.SearchForLink = SearchForLink;
 
 -- Map Information Lib
 do
-local math_floor, C_SuperTrack = math.floor, C_SuperTrack;
+local C_SuperTrack = C_SuperTrack;
 local __TomTomWaypointCacheIndexY = { __index = function(t, y)
 	local o = {};
 	t[y] = o;
@@ -6872,8 +6872,8 @@ end)();
 (function()
 local C_QuestLog_GetQuestObjectives,C_QuestLog_IsOnQuest,C_QuestLog_IsQuestReplayable,C_QuestLog_IsQuestReplayedRecently,C_QuestLog_ReadyForTurnIn,C_QuestLog_RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData,C_QuestLog_GetQuestTagInfo =
 	  C_QuestLog.GetQuestObjectives,C_QuestLog.IsOnQuest,C_QuestLog.IsQuestReplayable,C_QuestLog.IsQuestReplayedRecently,C_QuestLog.ReadyForTurnIn,C_QuestLog.RequestLoadQuestByID,QuestUtils_GetQuestName,GetNumQuestLogRewards,GetQuestLogRewardInfo,GetNumQuestLogRewardCurrencies,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData,C_QuestLog.GetQuestTagInfo;
-local GetSpellInfo,math_floor,C_TaskQuest_GetQuestTimeLeftMinutes =
-	  GetSpellInfo,math.floor,C_TaskQuest.GetQuestTimeLeftMinutes;
+local GetSpellInfo,C_TaskQuest_GetQuestTimeLeftMinutes =
+	  GetSpellInfo,C_TaskQuest.GetQuestTimeLeftMinutes;
 local Search = app.SearchForObject;
 -- Quest Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
 local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
@@ -8675,7 +8675,7 @@ local fields = {
 			-- 1 -> Off-Hand Appearance
 			-- 2 -> Main-Hand Appearance
 			-- return select(2, GetItemInfo(sformat("item:%d::::::::%d:::11:::8:%d:", itemID, app.Level, t.artifactID)));
-			local link = sformat("item:%d::::::::%d:::11::%d:8:%d:", math.floor(itemID), app.Level, t.isOffHand and 1 or 2, t.artifactID);
+			local link = sformat("item:%d::::::::%d:::11::%d:8:%d:", math_floor(itemID), app.Level, t.isOffHand and 1 or 2, t.artifactID);
 			-- app.PrintDebug("Artifact link",t.artifactID,itemID,link);
 			local link = select(2, GetItemInfo(link));
 			if not link then return end
@@ -9054,7 +9054,6 @@ app.ClassDB = setmetatable({}, { __index = function(t, className)
 		end
 	end
 end });
-local math_floor = math.floor;
 local cache = app.CreateCache("classID");
 local function CacheInfo(t, field)
 	local _t, id = cache.GetCached(t);
@@ -11673,8 +11672,8 @@ local mapFields = {
 			local position = C_Map_GetPlayerMapPosition(myMapID, "player")
 			if position then
 				local x,y = position:GetXY()
-				x = math.floor(x * 1000) / 10;
-				y = math.floor(y * 1000) / 10;
+				x = math_floor(x * 1000) / 10;
+				y = math_floor(y * 1000) / 10;
 				local _coord = t._coord or {};
 				t._coord = _coord;
 				_coord[1] = x;
@@ -12155,8 +12154,8 @@ local AlternateDataTypes = {
 		return name;
 	end,
 	["crit"] = function(id)
-		local ach = math.floor(id);
-		local crit = math.floor(100 * (id - ach) + 0.005);
+		local ach = math_floor(id);
+		local crit = math_floor(100 * (id - ach) + 0.005);
 		local name = GetAchievementCriteriaInfo(ach, crit);
 		return name;
 	end,
@@ -12165,8 +12164,8 @@ local AlternateDataTypes = {
 		return name, textureFilename;
 	end,
 	["df"] = function(id)
-		local aid = math.floor(id);
-		local hid = math.floor(10000 * (id - aid) + 0.005);
+		local aid = math_floor(id);
+		local hid = math_floor(10000 * (id - aid) + 0.005);
 		id = app.FactionID == Enum.FlightPathFaction.Alliance and tonumber(aid) or tonumber(hid);
 		local name, _, _, _, _, _, _, _, _, _, textureFilename = GetLFGDungeonInfo(id);
 		return name, textureFilename;
@@ -12854,7 +12853,6 @@ end)();
 -- Tier Lib
 do
 local EJ_GetTierInfo = EJ_GetTierInfo;
-local math_floor = math.floor;
 local cache = app.CreateCache("tierID");
 local function CacheInfo(t, field)
 	local _t, id = cache.GetCached(t);
@@ -13804,7 +13802,7 @@ local function CreateMinimapButton()
 			x = math.max(-radius, math.min(cos*diagRadius, radius))
 			y = math.max(-radius, math.min(sin*diagRadius, radius))
 		end
-		self:SetPoint("CENTER", "Minimap", "CENTER", -math.floor(x), math.floor(y));
+		self:SetPoint("CENTER", "Minimap", "CENTER", -math_floor(x), math_floor(y));
 	end
 	local update = function(self)
 		local w, x = GetCursorPosition();
@@ -14676,10 +14674,10 @@ local StoreWindowPosition = function(self)
 			profile.Windows[self.Suffix] = points;
 			for i=1,self:GetNumPoints() do
 				local point, _, refPoint, x, y = self:GetPoint(i);
-				points[i] = { Point = point, PointRef = refPoint, X = math.floor(x), Y = math.floor(y) };
+				points[i] = { Point = point, PointRef = refPoint, X = math_floor(x), Y = math_floor(y) };
 			end
-			points.Width = math.floor(self:GetWidth());
-			points.Height = math.floor(self:GetHeight());
+			points.Width = math_floor(self:GetWidth());
+			points.Height = math_floor(self:GetHeight());
 			points.Locked = self.isLocked or nil;
 			-- print("saved window",self.Suffix)
 			-- app.PrintTable(points)
@@ -15264,7 +15262,7 @@ RowOnEnter = function (self)
 					str = "";
 				end
 				GameTooltip:AddDoubleLine(i == 1 and L["COORDINATES_STRING"] or " ",
-					str.. GetNumberWithZeros(math.floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math.floor(y * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
+					str.. GetNumberWithZeros(math_floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math_floor(y * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
 			end
 			if additionaLine then
 				GameTooltip:AddDoubleLine(" ", additionaLine, 1, 1, 1, 1, 1, 1);
@@ -15312,8 +15310,8 @@ RowOnEnter = function (self)
 		local coord = reference.coord or reference.coord_tooltip;
 		if coord and app.Settings:GetTooltipSetting("Coordinates") then
 			GameTooltip:AddDoubleLine("Coordinate",
-				GetNumberWithZeros(math.floor(coord[1] * 10) * 0.1, 1) .. ", " ..
-				GetNumberWithZeros(math.floor(coord[2] * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
+				GetNumberWithZeros(math_floor(coord[1] * 10) * 0.1, 1) .. ", " ..
+				GetNumberWithZeros(math_floor(coord[2] * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
 		end
 		if reference.speciesID then
 			local progress, total = C_PetJournal.GetNumCollectedInfo(reference.speciesID);
@@ -17448,7 +17446,7 @@ customWindowUpdates["AchievementHarvester"] = function(self, ...)
 				end
 			end;
 			-- add a bunch of raw, delay-loaded items in order into the window
-			local groupCount = math.floor(self.Limit / self.PartitionSize);
+			local groupCount = math_floor(self.Limit / self.PartitionSize);
 			local g, overrides = {}, {visible=true};
 			local partition, partitionStart, partitionGroups;
 			local dlo, obj = app.DelayLoadedObject, app.CreateAchievementHarvester;
@@ -19885,8 +19883,8 @@ customWindowUpdates["list"] = function(self, force, got)
 			StartCoroutine("AutoHarvestFirstPartitionCoroutine", self.AutoHarvestFirstPartitionCoroutine);
 		end
 		-- add a bunch of raw, delay-loaded objects in order into the window
-		local groupCount = math.floor(self.Limit / self.PartitionSize);
-		local groupStart = math.floor(min / self.PartitionSize);
+		local groupCount = math_floor(self.Limit / self.PartitionSize);
+		local groupStart = math_floor(min / self.PartitionSize);
 		local partition, partitionStart, partitionGroups;
 		local dlo = app.DelayLoadedObject;
 		for j=groupStart,groupCount,1 do
@@ -22393,8 +22391,8 @@ end
     -- 	local position = C_Map.GetPlayerMapPosition(mapID, "player")
 	-- 	if position then
     --     	local x,y = position:GetXY();
-    --         x = math.floor(x * 1000) / 10;
-    --         y = math.floor(y * 1000) / 10;
+    --         x = math_floor(x * 1000) / 10;
+    --         y = math_floor(y * 1000) / 10;
 	-- 		coord = x..","..y;
 	-- 	end
 	-- 	app:SetupReportDialog("test", "TEST Report Dialog",
