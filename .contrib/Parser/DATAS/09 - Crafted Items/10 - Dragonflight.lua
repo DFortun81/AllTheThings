@@ -1848,7 +1848,7 @@ root(ROOTS.Craftables, tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 			FirstCraft(75583, 408273, ADDED_10_1_0);	-- Glyph of the Heaved Armament
 			FirstCraft(78896, 429149, ADDED_10_2_0);	-- Glyph of the Lunar Chameleon
 			FirstCraft(76602, 416137, ADDED_10_1_5);	-- Glyph of the Shath'Yar
-			--FirstCraft(X, 427956, ADDED_10_2_0);	-- Mark of the Auric Dreamstag
+			FirstCraft(78708, 427956, ADDED_10_2_0);	-- Mark of the Auric Dreamstag
 		})),
 		i(194829, {	-- Fated Fortune Card
 			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)

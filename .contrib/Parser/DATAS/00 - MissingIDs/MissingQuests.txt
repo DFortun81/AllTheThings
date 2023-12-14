@@ -526,7 +526,6 @@ q(24877),	-- Securing the Ramparts	 WOTLK:Securing the Ramparts
 q(24878),	-- Residue Rendezvous	 WOTLK:Residue Rendezvous
 q(24879),	-- Blood Quickening	 WOTLK:Blood Quickening
 q(24880),	-- Respite for a Tormented Soul	 WOTLK:Respite for a Tormented Soul
-q(25238),	-- Strength Ring Flag
 3.4.0.44729
 q(70349),	--
 3.4.0.46158

@@ -2298,6 +2298,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(24809),	-- Healer Ring Flag - doing "A Change of Heart" in ICC and choosing intellect haste/versa ring
 		q(24810),	-- Melee Ring Flag - doing "A Change of Heart" in ICC and choosing agility ring
 		q(24811),	-- Caster Ring Flag - doing "Choose Your Path" in ICC and choosing intellect crit/haste ring
+		q(25238),	-- Strength Ring Flag - doing "A Change of Heart" in ICC and choosing strength ring
 	}),
 });
 -- #endif
