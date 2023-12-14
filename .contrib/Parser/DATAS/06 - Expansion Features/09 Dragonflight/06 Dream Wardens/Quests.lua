@@ -195,7 +195,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
 					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
 				}),
+				q(78586, {	-- Dragon Isles Supplies
+					["provider"] = { "n", 208143 },	-- Keeper Amrymn
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+				}),
 			}, {	-- RENOWN 18 --
+				q(78587, {	-- Dragon Isles Supplies
+					["provider"] = { "n", 208143 },	-- Keeper Amrymn
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+				}),
 			}, {	-- RENOWN 19 --
 				q(78372, {	-- Drake's Dreaming Crest
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
