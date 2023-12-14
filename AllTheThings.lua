@@ -2691,23 +2691,23 @@ local function ContainsValue(val, ...)
 end
 local function Resolve_Extract(results, group, field)
 	if group[field] then
-		tinsert(results, group);
+		results[#results + 1] = group
 	elseif group.g then
 		for _,o in ipairs(group.g) do
 			Resolve_Extract(results, o, field);
 		end
 	end
-	return results;
 end
-local function Resolve_Find(results, group, field, val)
-	if group[field] == val then
-		tinsert(results, group);
-	elseif group.g then
-		for _,o in ipairs(group.g) do
-			Resolve_Find(results, o, field, val);
+local function Resolve_Find(results, groups, field, val)
+	if groups then
+		for _,o in ipairs(groups) do
+			if o[field] == val then
+				results[#results + 1] = o
+			else
+				Resolve_Find(results, o.g, field, val)
 		end
 	end
-	return results;
+	end
 end
 local GetAchievementNumCriteria = GetAchievementNumCriteria
 
@@ -2857,15 +2857,11 @@ local ResolveFunctions = {
 	end,
 	-- Instruction to find all nested results which contain a given field/value
 	["find"] = function(finalized, searchResults, o, cmd, field, val)
-		local orig;
 		if #searchResults > 0 then
-			orig = RawCloneData(searchResults);
-		end
-		wipe(searchResults);
-		if orig then
-			for _,o in ipairs(orig) do
-				Resolve_Find(searchResults, o, field, val);
-			end
+			local resolved = {}
+			Resolve_Find(resolved, searchResults, field, val)
+			wipe(searchResults)
+			ArrayAppend(searchResults, resolved)
 		end
 	end,
 	-- Instruction to include the search result with a given index within each of the selection's groups
@@ -3212,63 +3208,46 @@ local SubroutineCache = {
 		end
 	end,
 	["pvp_gear_faction_base"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2, headerID3)
-		local select, pop, where = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where;
+		local select, find = ResolveFunctions.select, ResolveFunctions.find
 		select(finalized, searchResults, o, "select", "tierID", tierID);	-- Select the Expansion header
-		pop(finalized, searchResults);	-- Discard the Expansion header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", headerID1);	-- Select the Season header
-		pop(finalized, searchResults);	-- Discard the Season header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", headerID2);	-- Select the Faction header
-		pop(finalized, searchResults);	-- Discard the Faction header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", headerID3);	-- Select the Set header
+		find(finalized, searchResults, o, "find", "headerID", headerID1);	-- Select the Season header
+		find(finalized, searchResults, o, "find", "headerID", headerID2);	-- Select the Faction header
+		find(finalized, searchResults, o, "find", "headerID", headerID3);	-- Select the Set header
 	end,
 	-- Set Gear
 	["pvp_set_ensemble"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2, classID)
-		local select, pop, where, extract = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.extract;
+		local select, find, extract = ResolveFunctions.select, ResolveFunctions.find, ResolveFunctions.extract
 		select(finalized, searchResults, o, "select", "tierID", tierID);	-- Select the Expansion header
-		pop(finalized, searchResults);	-- Discard the Expansion header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", headerID1);	-- Select the Season header
-		pop(finalized, searchResults);	-- Discard the Season header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", headerID2);	-- Select the Set header
-		pop(finalized, searchResults);	-- Discard the Set header and acquire the children.
-		where(finalized, searchResults, o, "where", "classID", classID);	-- Select all the class header.
+		find(finalized, searchResults, o, "find", "headerID", headerID1);	-- Select the Season header
+		find(finalized, searchResults, o, "find", "headerID", headerID2);	-- Select the Set header
+		find(finalized, searchResults, o, "find", "classID", classID);		-- Select the class header
 		extract(finalized, searchResults, o, "extract", "s");	-- Extract all Items with a SourceID
 	end,
 	["pvp_set_faction_ensemble"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2, headerID3, classID)
-		local select, pop, where, extract = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.extract;
+		local select, find, extract = ResolveFunctions.select, ResolveFunctions.find, ResolveFunctions.extract
 		select(finalized, searchResults, o, "select", "tierID", tierID);	-- Select the Expansion header
-		pop(finalized, searchResults);	-- Discard the Expansion header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", headerID1);	-- Select the Season header
-		pop(finalized, searchResults);	-- Discard the Season header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", headerID2);	-- Select the Faction header
-		pop(finalized, searchResults);	-- Discard the Faction header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", headerID3);	-- Select the Set header
-		pop(finalized, searchResults);	-- Discard the Set header and acquire the children.
-		where(finalized, searchResults, o, "where", "classID", classID);	-- Select all the class header.
+		find(finalized, searchResults, o, "find", "headerID", headerID1);	-- Select the Season header
+		find(finalized, searchResults, o, "find", "headerID", headerID2);	-- Select the Faction header
+		find(finalized, searchResults, o, "find", "headerID", headerID3);	-- Select the Set header
+		find(finalized, searchResults, o, "find", "classID", classID);		-- Select the class header
 		extract(finalized, searchResults, o, "extract", "s");	-- Extract all Items with a SourceID
 	end,
 	-- Weapons
 	["pvp_weapons_ensemble"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2)
-		local select, pop, where, extract = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.extract;
+		local select, find, extract = ResolveFunctions.select, ResolveFunctions.find, ResolveFunctions.extract
 		select(finalized, searchResults, o, "select", "tierID", tierID);	-- Select the Expansion header
-		pop(finalized, searchResults);	-- Discard the Expansion header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", headerID1);	-- Select the Season header
-		pop(finalized, searchResults);	-- Discard the Season header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", headerID2);	-- Select the Set header
-		pop(finalized, searchResults);	-- Discard the Set header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", app.HeaderConstants.WEAPONS);	-- Select the "Weapons" header.
+		find(finalized, searchResults, o, "find", "headerID", headerID1);	-- Select the Season header
+		find(finalized, searchResults, o, "find", "headerID", headerID2);	-- Select the Set header
+		find(finalized, searchResults, o, "find", "headerID", app.HeaderConstants.WEAPONS);	-- Select the "Weapons" header.
 		extract(finalized, searchResults, o, "extract", "s");	-- Extract all Items with a SourceID
 	end,
 	["pvp_weapons_faction_ensemble"] = function(finalized, searchResults, o, cmd, tierID, headerID1, headerID2, headerID3)
-		local select, pop, where, extract = ResolveFunctions.select, ResolveFunctions.pop, ResolveFunctions.where, ResolveFunctions.extract;
+		local select, find, extract = ResolveFunctions.select, ResolveFunctions.find, ResolveFunctions.extract
 		select(finalized, searchResults, o, "select", "tierID", tierID);	-- Select the Expansion header
-		pop(finalized, searchResults);	-- Discard the Expansion header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", headerID1);	-- Select the Season header
-		pop(finalized, searchResults);	-- Discard the Season header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", headerID2);	-- Select the Faction header
-		pop(finalized, searchResults);	-- Discard the Faction header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", headerID3);	-- Select the Set header
-		pop(finalized, searchResults);	-- Discard the Set header and acquire the children.
-		where(finalized, searchResults, o, "where", "headerID", app.HeaderConstants.WEAPONS);	-- Select the "Weapons" header.
+		find(finalized, searchResults, o, "find", "headerID", headerID1);	-- Select the Season header
+		find(finalized, searchResults, o, "find", "headerID", headerID2);	-- Select the Faction header
+		find(finalized, searchResults, o, "find", "headerID", headerID3);	-- Select the Set header
+		find(finalized, searchResults, o, "find", "headerID", app.HeaderConstants.WEAPONS);	-- Select the "Weapons" header.
 		extract(finalized, searchResults, o, "extract", "s");	-- Extract all Items with a SourceID
 	end,
 	-- Common Northrend/Cataclysm Recipes Vendor
