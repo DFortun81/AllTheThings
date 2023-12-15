@@ -1169,7 +1169,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		--q(),	-- Quest "What Do I Call You?": Pick the title of "Illidari" (dh, doesn't exist?)
 		--q(),	-- Quest "What Do I Call You?": Pick the title of "Master Assassin" (rogue, doesn't exist?)
 		--q(),	-- Quest "What Do I Call You?": Pick the title of "Netherlord" (warlock)
-		--q(),	-- Quest "What Do I Call You?": Pick the title of "Shadowbane" (rogue?)
+		q(78259),	-- Quest "What Do I Call You?": Pick the title of "Shadowbane" (rogue)
 		--q(),	-- Quest "What Do I Call You?": Pick the title of "Slayer" (dh?)
 		--
 		q(78977),	-- pop after finishing qID 78890 (Emerald Frenzy) first time (daily), seems like it is fired when give you reward

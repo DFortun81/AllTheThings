@@ -284,10 +284,10 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 		["g"] = {
 			header(HEADERS.Item, 206448, {	-- Fyr'alath the Dreamrender
 				n(QUESTS, bubbleDownSelf({
-					--["classes"] = { xx },
+					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 				}, {
 					--q(77093, {	-- The Shadowflame Axe
-					--	["provider"] = { "i", xx },	-- Fyr'alath the Dreamrender
+					--	["provider"] = { "i", 207728 },	-- Fyr'alath the Dreamrender
 					--}),
 					--q(77191, {	-- Handling It
 					--	["sourceQuests"] = { 77093 },	-- The Shadowflame Axe
@@ -790,6 +790,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				BossOnly(FYRAKK, {
 					ach(19350, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }}),	-- Ahead of the Curve: Fyrakk the Blazing
 					i(211375),	-- Everglowing Ember (QS!)
+					i(207728),	-- Fyr'alath the Dreamrender (QI)
 				}),
 			}),
 			Difficulty(HEROIC_RAID).AddGroupsWithUpgrades({
