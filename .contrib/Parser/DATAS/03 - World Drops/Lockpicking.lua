@@ -188,7 +188,7 @@ root(ROOTS.WorldDrops, {
 				["groups"] = {
 					i(7678,	{	-- Recipe: Thistle Tea
 						["timeline"] = { "added 10.1.7" },
-					}),	
+					}),
 				},
 				-- #endif
 			}),
@@ -248,7 +248,7 @@ root(ROOTS.WorldDrops, {
 				["groups"] = {
 					i(7678,	{	-- Recipe: Thistle Tea
 						["timeline"] = { "added 10.1.7" },
-					}),	
+					}),
 				},
 				-- #endif
 			}),
@@ -257,7 +257,7 @@ root(ROOTS.WorldDrops, {
 				["groups"] = {
 					i(7678,	{	-- Recipe: Thistle Tea
 						["timeline"] = { "added 10.1.7" },
-					}),	
+					}),
 				},
 				-- #endif
 			}),
@@ -301,10 +301,10 @@ root(ROOTS.WorldDrops, {
 			}),
 			i(190954, {	-- Serevite Lockbox
 				["timeline"] = { ADDED_10_0_2_LAUNCH },
-				["sym"] = {{"select","itemID",
-					-- add notable Item IDs here
-					-- 12345,	-- Item name
-				}},
+				-- ["sym"] = {{"select","itemID",
+				-- 	-- add notable Item IDs here, uncomment if adding any id's
+				-- 	-- 12345,	-- Item name
+				-- }},
 				-- do not list raw content unless lockbox is only confirmed source
 				-- ["groups"] = {
 				-- },
@@ -360,7 +360,7 @@ root(ROOTS.WorldDrops, {
 				["groups"] = {
 					i(7678,	{	-- Recipe: Thistle Tea
 						["timeline"] = { "added 10.1.7" },
-					}),	
+					}),
 				},
 				-- #endif
 			}),
