@@ -2634,6 +2634,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 680,	-- Mosh'Ogg Lord
 					-- #if AFTER 7.3.5
+					["description"] = "Drops from Mosh'Ogg Lords, which have three known spawns. Mosh'Ogg Butcher can spawn in its place.",
 					["coords"] = {
 						{ 69.2, 47.0, NORTHERN_STRANGLETHORN },
 						{ 67.0, 54.0, NORTHERN_STRANGLETHORN },
@@ -2644,6 +2645,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 677,	-- Venture Co. Tinkerer
 					-- #if AFTER 7.3.5
+					["description"] = "Drops from Venture Co. Tinkerer. Venture Co. Foremans, Venture Co. Surveyors, and Venture Co. Strip Miners very often spawns in its place.",
 					["coords"] = {
 						{ 53.8, 75.8, NORTHERN_STRANGLETHORN },
 						{ 53.6, 70.0, NORTHERN_STRANGLETHORN },
@@ -2681,6 +2683,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 723,	-- Mosh'Ogg Butcher
 					-- #if AFTER 7.3.5
+					["description"] = "Drops from Mosh'Ogg Butchers, which sometimes can spawn in place of one of the two Mosh'Ogg Lords at the given coordinates.",
 					["coords"] = {
 						{ 67.0, 54.0, NORTHERN_STRANGLETHORN },
 						{ 66.6, 53.4, NORTHERN_STRANGLETHORN },
@@ -2692,6 +2695,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 671,	-- Bloodscalp Headhunter
 					-- #if AFTER 7.3.5
+					["description"] = "Drops from Bloodscalp Headhunters, which shares its spawn with other Bloodscalp trolls in the Zuuldaia Ruins.",
 					["coords"] = {
 						{ 21.6, 24.6, NORTHERN_STRANGLETHORN },
 						{ 19.8, 24.8, NORTHERN_STRANGLETHORN },
@@ -2702,6 +2706,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 597,	-- Bloodscalp Berserker
 					-- #if AFTER 7.3.5
+					["description"] = "Drops from Bloodscalp Berserkers, which shares its spawn with other Bloodscalp trolls in the Zuuldaia Ruins.",
 					["coords"] = {
 						{ 21.6, 24.6, NORTHERN_STRANGLETHORN },
 						{ 19.8, 24.8, NORTHERN_STRANGLETHORN },
@@ -2747,6 +2752,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 701,	-- Bloodscalp Mystic
 					-- #if AFTER 7.3.5
+					["description"] = "Drops from Bloodscalp Mystics, which shares its spawn with other Bloodscalp trolls in the Ruins of Zul'Kunda.",
 					["coords"] = {
 						{ 29.2, 24.4, NORTHERN_STRANGLETHORN },
 						{ 25.8, 22.8, NORTHERN_STRANGLETHORN },
@@ -2769,6 +2775,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						781,	-- Skullsplitter Headhunter
 					},
 					-- #if AFTER 7.3.5
+					["description"] = "Drops from Skullsplitter Berserkers and Skullsplitter Headhunters. Skullsplitter Spiritchasers very often spawns in its place.",
 					["coords"] = {
 						{ 63.0, 72.8, NORTHERN_STRANGLETHORN },
 						{ 61.2, 75.6, NORTHERN_STRANGLETHORN },
@@ -2779,6 +2786,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 676,	-- Venture Co. Surveyor
 					-- #if AFTER 7.3.5
+					["description"] = "Drops from Venture Co. Surveyors. Venture Co. Foremans, Venture Co. Tinkerers, and Venture Co. Strip Miners very often spawn in its place.",
 					["coords"] = {
 						{ 53.8, 77.2, NORTHERN_STRANGLETHORN },
 						{ 53.4, 70.4, NORTHERN_STRANGLETHORN },
