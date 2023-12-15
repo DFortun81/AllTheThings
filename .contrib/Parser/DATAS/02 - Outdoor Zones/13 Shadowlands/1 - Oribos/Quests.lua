@@ -574,20 +574,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["lvl"] = { 50, 59 },
 				["timeline"] = { ADDED_9_1_5 },
 				["sym"] = {
-					{"select", "mapID", BASTION },{"pop"},
-					{"where", "headerID", ZONE_REWARDS },
+					{"select", "mapID", BASTION },
+					{"find", "headerID", ZONE_REWARDS },
 					{"finalize"},
 
-					{"select", "mapID", MALDRAXXUS },{"pop"},
-					{"where", "headerID", ZONE_REWARDS },
+					{"select", "mapID", MALDRAXXUS },
+					{"find", "headerID", ZONE_REWARDS },
 					{"finalize"},
 
-					{"select", "mapID", ARDENWEALD },{"pop"},
-					{"where", "headerID", ZONE_REWARDS },
+					{"select", "mapID", ARDENWEALD },
+					{"find", "headerID", ZONE_REWARDS },
 					{"finalize"},
 
-					{"select", "mapID", REVENDRETH },{"pop"},
-					{"where", "headerID", ZONE_REWARDS },
+					{"select", "mapID", REVENDRETH },
+					{"find", "headerID", ZONE_REWARDS },
 					{"finalize"},
 
 					{"merge"},

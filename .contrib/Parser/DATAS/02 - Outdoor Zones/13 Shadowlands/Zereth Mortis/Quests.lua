@@ -1202,8 +1202,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["g"] = {
 					i(191139, {	-- Tribute of the Enlightened Elders
 						["sym"] = {
-							{"select","mapID",ZERETH_MORTIS},{"pop"},
-							{"where","headerID",ZONE_REWARDS},{"pop"},
+							{"select","mapID",ZERETH_MORTIS},
+							{"find","headerID",ZONE_REWARDS},{"pop"},
 							{"not","itemID",190336},	-- Thrumming Powerstone
 						},
 						["g"] = {

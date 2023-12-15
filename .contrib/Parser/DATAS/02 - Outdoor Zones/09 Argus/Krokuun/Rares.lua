@@ -9,9 +9,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["isDaily"] = true,
 				["coord"] = { 45.0, 58.8, KROKUUN },
 				["sym"] = {
-					{"select","mapID",KROKUUN},{"pop"},	-- get Krokuun
-					{"where","headerID",SPECIAL},{"pop"},	-- get Special
-					{"where","filterID",PLATE},{"pop"},	-- get Plate
+					{"select","mapID",KROKUUN},		-- get Krokuun
+					{"find","headerID",SPECIAL},	-- get Special
+					{"find","filterID",PLATE},{"pop"},	-- get Plate
 				},
 				["g"] = {
 					i(153255),	-- Isolon Anchorite's Cudgel
@@ -30,9 +30,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["isDaily"] = true,
 				["coord"] = { 39.2, 59.4, KROKUUN },
 				["sym"] = {
-					{"select","mapID",KROKUUN},{"pop"},	-- get Krokuun
-					{"where","headerID",SPECIAL},{"pop"},	-- get Special
-					{"where","filterID",PLATE},{"pop"},	-- get Plate
+					{"select","mapID",KROKUUN},		-- get Krokuun
+					{"find","headerID",SPECIAL},	-- get Special
+					{"find","filterID",PLATE},{"pop"},	-- get Plate
 				},
 				["g"] = {
 					i(153299),	-- Militant Exarch's Shortsword
@@ -48,9 +48,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["isDaily"] = true,
 				["coord"] = { 38.6, 39.4, 833 },	-- Nath'raxas Spire
 				["sym"] = {
-					{"select","mapID",KROKUUN},{"pop"},	-- get Krokuun
-					{"where","headerID",SPECIAL},{"pop"},	-- get Special
-					{"where","filterID",PLATE},{"pop"},	-- get Plate
+					{"select","mapID",KROKUUN},		-- get Krokuun
+					{"find","headerID",SPECIAL},	-- get Special
+					{"find","filterID",PLATE},{"pop"},	-- get Plate
 				},
 				["g"] = {
 					i(153316),	-- Praetor's Ornamental Edge
@@ -94,9 +94,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["isDaily"] = true,
 				["coord"] = { 55.4, 80.4, KROKUUN },
 				["sym"] = {
-					{"select","mapID",KROKUUN},{"pop"},	-- get Krokuun
-					{"where","headerID",SPECIAL},{"pop"},	-- get Special
-					{"where","filterID",PLATE},{"pop"},	-- get Plate
+					{"select","mapID",KROKUUN},		-- get Krokuun
+					{"find","headerID",SPECIAL},	-- get Special
+					{"find","filterID",PLATE},{"pop"},	-- get Plate
 				},
 				["g"] = {
 					i(153329),	-- Mystic Wakener's Blade
@@ -112,9 +112,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["isDaily"] = true,
 				["coord"] = { 69.6, 56.8, KROKUUN },
 				["sym"] = {
-					{"select","mapID",KROKUUN},{"pop"},	-- get Krokuun
-					{"where","headerID",SPECIAL},{"pop"},	-- get Special
-					{"where","filterID",PLATE},{"pop"},	-- get Plate
+					{"select","mapID",KROKUUN},		-- get Krokuun
+					{"find","headerID",SPECIAL},	-- get Special
+					{"find","filterID",PLATE},{"pop"},	-- get Plate
 				},
 				["g"] = {
 					i(153263),	-- Enclave Aspirant's Cleaver

@@ -106,8 +106,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					["u"] = REMOVED_FROM_GAME,
 					["sym"] = {
 						{"select", "headerID", SEASON_CORRUPTED},	-- BFA Season 4
-						{"pop"},	-- Discard the header and acquire the children.
-						{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
+						{"find", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
 						{"pop"},	-- Discard the header and acquire the children.
 					},
 				})),

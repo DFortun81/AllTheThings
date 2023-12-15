@@ -2,6 +2,15 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local SANDWORN_RELIC = 190189;
+local function Sym_BrokerItem(...)
+	return {
+		{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
+		{"find", "headerID", ZONE_DROPS },		-- Select Zone Drops
+		{"pop"},								-- Discard the Header and acquire all of their children.
+		{"extract", "itemID"},					-- Only Items!
+		{"invtype", ... },
+	}
+end
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	m(ZERETH_MORTIS, {
 		n(VENDORS, {
@@ -22,34 +31,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						},
 					}),
 					i(190763, {	-- Broker's Belt
-						["sym"] = {
-							{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"extract", "itemID"},					-- Only Items!
-							{"invtype", "INVTYPE_WAIST" },
-						},
+						["sym"] = Sym_BrokerItem("INVTYPE_WAIST"),
 					}),
 					i(190762, {	-- Broker's Boots
-						["sym"] = {
-							{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"extract", "itemID"},					-- Only Items!
-							{"invtype", "INVTYPE_FEET" },
-						},
+						["sym"] = Sym_BrokerItem("INVTYPE_FEET"),
 					}),
 					i(190761, {	-- Broker's Bracers
-						["sym"] = {
-							{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"extract", "itemID"},					-- Only Items!
-							{"invtype", "INVTYPE_WRIST" },
-						},
+						["sym"] = Sym_BrokerItem("INVTYPE_WRIST"),
 					}),
 					i(191037, {	-- Broker's Braid
 						["sym"] = {
@@ -57,54 +45,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						},
 					}),
 					i(190760, {	-- Broker's Chestpiece
-						["sym"] = {
-							{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"extract", "itemID"},					-- Only Items!
-							{"invtype", "INVTYPE_CHEST", "INVTYPE_ROBE" },
-						},
+						["sym"] = Sym_BrokerItem("INVTYPE_CHEST", "INVTYPE_ROBE"),
 					}),
 					i(190759, {	-- Broker's Cloak
-						["sym"] = {
-							{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"extract", "itemID"},					-- Only Items!
-							{"invtype", "INVTYPE_CLOAK" },
-						},
+						["sym"] = Sym_BrokerItem("INVTYPE_CLOAK"),
 					}),
 					i(190758, {	-- Broker's Gloves
-						["sym"] = {
-							{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"extract", "itemID"},					-- Only Items!
-							{"invtype", "INVTYPE_HAND" },
-						},
+						["sym"] = Sym_BrokerItem("INVTYPE_HAND"),
 					}),
 					i(190757, {	-- Broker's Helm
-						["sym"] = {
-							{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"extract", "itemID"},					-- Only Items!
-							{"invtype", "INVTYPE_HEAD" },
-						},
+						["sym"] = Sym_BrokerItem("INVTYPE_HEAD"),
 					}),
 					i(190756, {	-- Broker's Legguards
-						["sym"] = {
-							{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"extract", "itemID"},					-- Only Items!
-							{"invtype", "INVTYPE_LEGS" },
-						},
+						["sym"] = Sym_BrokerItem("INVTYPE_LEGS"),
 					}),
 					i(190764, {	-- Broker's Ring
 						["sym"] = {
@@ -117,14 +70,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						},
 					}),
 					i(190755, {	-- Broker's Shoulders
-						["sym"] = {
-							{"select", "mapID", ZERETH_MORTIS },	-- Select Zereth Mortis
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"where", "headerID", ZONE_DROPS },		-- Select Zone Drops
-							{"pop"},								-- Discard the Header and acquire all of their children.
-							{"extract", "itemID"},					-- Only Items!
-							{"invtype", "INVTYPE_SHOULDER" },
-						},
+						["sym"] = Sym_BrokerItem("INVTYPE_SHOULDER"),
 					}),
 					i(190741, {	-- Broker's Weaponry
 						["sym"] = {
@@ -255,10 +201,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["coord"] = { 34.6, 64, ZERETH_MORTIS },
 				["sym"] = {
 					{"select", "instanceID", 1190},			-- Castle Nathria
-					{"pop"},								-- Discard the Instance Headers and acquire all of their children.
-					{"where", "headerID", LEGENDARIES},		-- Select only the LEGENDARIES Headers.
-					{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-					{"is","encounterID"},					-- Only Encounter Headers
+					{"find", "headerID", LEGENDARIES},		-- Select only the LEGENDARIES Headers.
+					{"extract","encounterID"},					-- Only Encounter Headers
 					{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
 				},
 			}),
@@ -282,8 +226,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						["questID"] = 70705,
 						["cost"] = { { "g", 25000000 } },	-- 2500g
 						["sym"] = {
-							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
-							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
+							{"select","tierID",SL_TIER},	-- SL Tier
+							{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
 						},
 					}),
 					i(190384),	-- Eternal Augment Rune
@@ -291,8 +235,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						["questID"] = 65694,
 						["cost"] = { { "g", 5000000 } },	-- 500g
 						["sym"] = {
-							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
-							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
+							{"select","tierID",SL_TIER},	-- SL Tier
+							{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
 						},
 					}),
 					i(187629, {	-- Heartlight Vombata (MOUNT!)

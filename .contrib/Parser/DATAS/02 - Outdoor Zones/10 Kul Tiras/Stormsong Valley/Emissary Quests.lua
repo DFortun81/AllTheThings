@@ -47,20 +47,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(165868, {	-- Storm's Wake Equipment Cache
 						["sym"] = {
 							{"select", "mapID", STORMSONG_VALLEY},
-							{"pop"},	-- Discard the Map Header and acquire the children.
-							{"where", "headerID", ZONE_REWARDS },
-							{"pop"},	-- Discard the Zone Rewards Header and acquire the children.
-							{"is", "itemID" },	-- Select the Items.
+							{"find", "headerID", ZONE_REWARDS },
+							{"extract", "itemID" },	-- Select the Items.
 							{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_CLOAK", },	-- Only include a couple of inventory types.
 						},
 					}),
 					i(165867, {	-- Kul Tiran Weapons Cache
 						["sym"] = {
 							{"select", "mapID", KUL_TIRAS},
-							{"pop"},	-- Discard the Map Header and acquire the children.
-							{"where", "headerID", ZONE_REWARDS },
-							{"pop"},	-- Discard the Zone Rewards Header and acquire the children.
-							{"is", "itemID" },	-- Select the Items.
+							{"find", "headerID", ZONE_REWARDS },
+							{"extract", "itemID" },	-- Select the Items.
 							{"invtype", "INVTYPE_2HWEAPON", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_HOLDABLE", "INVTYPE_RANGED", "INVTYPE_RANGEDRIGHT", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND" },	-- Only include a couple of inventory types.
 						},
 					}),

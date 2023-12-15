@@ -40,10 +40,10 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			}),
 			o_repeated({
 				["sym"] = {
-					{"select","mapID",KROKUUN},{"pop"},	-- get Krokuun
-					{"where","headerID",SPECIAL},{"pop"},	-- get Special
-					{"where","filterID",PLATE},{"pop"},	-- get Plate
-					{"where","filterID",WEAPONS},{"pop"},	-- get Weapons
+					{"select","mapID",KROKUUN},		-- get Krokuun
+					{"find","headerID",SPECIAL},	-- get Special
+					{"find","filterID",PLATE},		-- get Plate
+					{"find","headerID",WEAPONS},{"pop"},	-- get Weapons
 				},
 				["g"] = sharedData({["isDaily"] = true,},{
 					o(271849, {	-- Eredar War Supplies (very small circular spawn area west and a little south of Krokul Hovel (near Talestra the Vile)

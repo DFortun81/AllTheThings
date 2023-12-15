@@ -407,7 +407,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						["timeline"] = { ADDED_9_1_5 },
 						["sym"] = {
 							{"select", "itemID", 187187 },		-- Korthian Armaments
-							{"pop"},							-- Discard Header
+							{"pop"},							-- Discard Header (includes symlink of the item)
 							{"where", "headerID", WEAPONS },	-- Weapons only
 							{"pop"},							-- Discard Header
 						},

@@ -9,9 +9,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["isDaily"] = true,
 				["coord"] = { 73.6, 71.8, ANTORAN_WASTES },
 				["sym"] = {
-					{"select","mapID",ANTORAN_WASTES},{"pop"},	-- get Antoran Wastes
-					{"where","headerID",SPECIAL},{"pop"},	-- get Special
-					{"where","filterID",CLOTH},{"pop"},	-- get Plate
+					{"select","mapID",ANTORAN_WASTES},	-- get Antoran Wastes
+					{"find","headerID",SPECIAL},		-- get Special
+					{"find","filterID",CLOTH},{"pop"},	-- get Cloth
 				},
 				["g"] = {
 					i(153324),	-- Eredath Vigilant's Bastion
@@ -98,9 +98,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["isDaily"] = true,
 				["coord"] = { 57.6, 33.6, ANTORAN_WASTES },
 				["sym"] = {
-					{"select","mapID",KROKUUN},{"pop"},	-- get Krokuun
-					{"where","headerID",SPECIAL},{"pop"},	-- get Special
-					{"where","filterID",PLATE},{"pop"},	-- get Plate
+					{"select","mapID",KROKUUN},	-- get Krokuun
+					{"find","headerID",SPECIAL},	-- get Special
+					{"find","filterID",PLATE},{"pop"},	-- get Plate
 				},
 				["g"] = {
 					i(153327),	-- Mystic Wakener's Dagger
@@ -197,9 +197,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["isDaily"] = true,
 				["coord"] = { 55.6, 21.8, ANTORAN_WASTES },
 				["sym"] = {
-					{"select","mapID",ANTORAN_WASTES},{"pop"},	-- get Antoran Wastes content
-					{"where","headerID",SPECIAL},{"pop"},	-- get the Special header
-					{"where","filterID",CLOTH},{"pop"},	-- get the Cloth header
+					{"select","mapID",ANTORAN_WASTES},	-- get Antoran Wastes
+					{"find","headerID",SPECIAL},		-- get Special
+					{"find","filterID",CLOTH},{"pop"},	-- get Cloth
 				},
 				["g"] = {
 					i(153319),	-- Ardent Vindicator's Greatmace
@@ -226,9 +226,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["isDaily"] = true,
 				["coord"] = { 51.6, 54.6, ANTORAN_WASTES },
 				["sym"] = {
-					{"select","mapID",ANTORAN_WASTES},{"pop"},	-- get Antoran Wastes content
-					{"where","headerID",SPECIAL},{"pop"},	-- get the Special header
-					{"where","filterID",CLOTH},{"pop"},	-- get the Cloth header
+					{"select","mapID",ANTORAN_WASTES},	-- get Antoran Wastes
+					{"find","headerID",SPECIAL},		-- get Special
+					{"find","filterID",CLOTH},{"pop"},	-- get Cloth
 				},
 				["g"] = {
 					i(153312),	-- Praetor's Ornamental Greatsword

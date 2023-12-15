@@ -73,9 +73,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			}),
 			o_repeated({	-- Legion War Supplies
 				["sym"] = {
-					{"select","mapID",ANTORAN_WASTES},{"pop"},	-- get Antoran Wastes
-					{"where","headerID",SPECIAL},{"pop"},	-- get Special
-					{"where","filterID",CLOTH},{"pop"},	-- get Cloth
+					{"select","mapID",ANTORAN_WASTES},	-- get Antoran Wastes
+					{"find","headerID",SPECIAL},		-- get Special
+					{"find","filterID",CLOTH},{"pop"},	-- get Cloth
 				},
 				["g"] = {
 				-- Shared Rewards

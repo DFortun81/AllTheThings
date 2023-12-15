@@ -167,8 +167,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["questID"] = 65623,
 						["cost"] = 5000000,	-- 500g
 						["sym"] = {
-							{"select","tierID",SL_TIER},{"pop"},	-- SL Tier
-							{"where","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
+							{"select","tierID",SL_TIER},	-- SL Tier
+							{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)
 						},
 					}),
 					i(187869, {	-- Scouting Map: Into the Shadowlands (TOY!)

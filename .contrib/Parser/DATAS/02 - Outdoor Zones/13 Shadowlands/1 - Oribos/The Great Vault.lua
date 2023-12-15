@@ -4,27 +4,18 @@
 --[[
 local SymPvP = function(SeasonID)
 	SymLink = {
-		{"select", "tierID", SL_TIER},			-- Select Shadowlands
-		{"pop"},								-- Discard the Shadowlands Header and acquire all of their children.
-		{"where", "headerID", SeasonID},		-- Season
-		{"pop"},								-- Discard the Season Header and acquire all of their children.
-		{"where", "headerID", PVP_ASPIRANT},	-- Aspirant Gear
+		{"select", "headerID", SeasonID},		-- Select Season
+		{"find", "headerID", PVP_ASPIRANT},	-- Aspirant Gear
 		{"pop"},								-- Discard the Aspirant Header and acquire all of their children.
 		{"finalize"},							-- Push Everything to the Queue
 
-		{"select", "tierID", SL_TIER},			-- Select Shadowlands
-		{"pop"},								-- Discard the Shadowlands Header and acquire all of their children.
-		{"where", "headerID", SeasonID},		-- Season
-		{"pop"},								-- Discard the Season Header and acquire all of their children.
-		{"where", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
+		{"select", "headerID", SeasonID},		-- Select Season
+		{"find", "headerID", PVP_GLADIATOR},	-- Gladiator Gear
 		{"pop"},								-- Discard the Gladiator Header and acquire all of their children.
 		{"finalize"},							-- Push Everything to the Queue
 
-		{"select", "tierID", SL_TIER},			-- Select Shadowlands
-		{"pop"},								-- Discard the Shadowlands Header and acquire all of their children.
-		{"where", "headerID", SeasonID},		-- Season
-		{"pop"},								-- Discard the Season Header and acquire all of their children.
-		{"where", "headerID", PVP_ELITE},		-- Elite Gear
+		{"select", "headerID", SeasonID},		-- Select Shadowlands
+		{"find", "headerID", PVP_ELITE},		-- Elite Gear
 		{"pop"},								-- Discard the Elite Header and acquire all of their children.
 		{"finalize"},							-- Push Everything to the Queue
 

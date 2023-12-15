@@ -16,8 +16,7 @@ root(ROOTS.Zones, {
 									{"select", "itemID", 141592},	-- Technique: Codex of the Tranquil Mind [Rank 3] (RECIPE!)
 									{"finalize"},	-- Push the processed items on to the finalized stack and ignore further queries on them.
 									{"select", "mapID", VALSHARAH},
-									{"pop"},	-- Push all of the groups contained to the processing layer.
-									{"where", "headerID", ZONE_REWARDS },
+									{"find", "headerID", ZONE_REWARDS },
 									{"pop"},	-- Push all of the groups contained to the processing layer.
 								},
 								["groups"] = {

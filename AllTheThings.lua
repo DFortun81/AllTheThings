@@ -3685,6 +3685,37 @@ ResolveFunctions.sub = function(finalized, searchResults, o, cmd, sub, ...)
 	end
 	app.print("Could not find subroutine", sub);
 end;
+local HandleCommands = app.Debugging and function(finalized, searchResults, o, oSym)
+	local cmd, cmdFunc
+	local debug = true
+	for _,sym in ipairs(oSym) do
+		cmd = sym[1];
+		cmdFunc = ResolveFunctions[cmd];
+		-- app.PrintDebug("sym: '",cmd,"' for",o.hash,"with:",unpack(sym))
+		if cmdFunc then
+			cmdFunc(finalized, searchResults, o, unpack(sym));
+			if debug and #searchResults == 0 and cmd ~= "finalize" and cmd ~= "achievement_criteria" and cmd ~= "sub" then
+				app.PrintDebug(Colorize("Symlink command with no results for: "..(o.link or o.hash), app.Colors.ChatLinkError),"@",_,unpack(sym))
+				app.PrintTable(oSym)
+				debug = nil
+			end
+		else
+			app.print("Unknown symlink command",cmd);
+		end
+		-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"after '",cmd,"' for",o.hash,"with:",unpack(sym))
+	end
+end or function(finalized, searchResults, o, oSym)
+	local cmd, cmdFunc
+	for _,sym in ipairs(oSym) do
+		cmd = sym[1];
+		cmdFunc = ResolveFunctions[cmd];
+		if cmdFunc then
+			cmdFunc(finalized, searchResults, o, unpack(sym));
+		else
+			app.print("Unknown symlink command",cmd);
+		end
+	end
+end
 local ResolveCache = {};
 ResolveSymbolicLink = function(o)
 	local oSym = o.sym
@@ -3702,22 +3733,10 @@ ResolveSymbolicLink = function(o)
 	PruneFinalized = nil;
 	-- app.PrintDebug("Fresh Resolve:",oHash)
 	local searchResults, finalized = {}, {};
-	local cmd, cmdFunc;
-	for _,sym in ipairs(oSym) do
-		cmd = sym[1];
-		cmdFunc = ResolveFunctions[cmd];
-		-- app.PrintDebug("sym: '",cmd,"' for",oHash,"with:",unpack(sym))
-		if cmdFunc then
-			cmdFunc(finalized, searchResults, o, unpack(sym));
-		else
-			app.print("Unknown symlink command",cmd);
-		end
-		-- app.PrintDebug("Finalized",#finalized,"Results",#searchResults,"after '",cmd,"' for",oHash,"with:",unpack(sym))
-	end
+	HandleCommands(finalized, searchResults, o, oSym)
 
 	-- Verify the final result is finalized
-	cmdFunc = ResolveFunctions.finalize;
-	cmdFunc(finalized, searchResults);
+	ResolveFunctions.finalize(finalized, searchResults);
 	-- app.PrintDebug("Forced Finalize",oKey,oKey and o[oKey],#finalized)
 
 	-- If we had any finalized search results, then clone all the records, store the results, and return them
