@@ -1604,6 +1604,12 @@ profession(BLACKSMITHING, {
 					["name"] = "Imperial Plate Shoulders",
 					["recipeID"] = 16646,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, {
+					["name"] = "Mantle of the Second War",
+					["recipeID"] = 427061,
+				}),
+				-- #endif
 				{
 					["name"] = "Mithril Scale Shoulders",
 					["recipeID"] = 9966,

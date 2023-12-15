@@ -348,6 +348,10 @@ i(7994, 0);			-- Orcish War Leggings
 i(7988, 0);			-- Ornate Mithril Boots
 i(7986, 0);			-- Ornate Mithril Breastplate
 i(7987, 0);			-- Ornate Mithril Helm
+-- #if SEASON_OF_DISCOVERY
+-- SEASON OF DISCOVERY --
+i(210779, 427061);	-- Mantle of the Second War
+-- #endif
 
 -----------------
 -- PATCH 2.0.5 --

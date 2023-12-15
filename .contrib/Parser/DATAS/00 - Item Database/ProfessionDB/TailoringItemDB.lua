@@ -1,5 +1,13 @@
 local i = GetRecipeHelperForProfession(TAILORING);
 
+-----------------
+--   CLASSIC   --
+-----------------
+-- #if SEASON_OF_DISCOVERY
+-- SEASON OF DISCOVERY --
+i(211247, 428424);	-- Phoenix Bindings
+-- #endif
+
 ------------------
 -- PATCH 10.0.0 --
 ------------------

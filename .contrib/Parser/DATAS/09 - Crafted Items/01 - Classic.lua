@@ -301,7 +301,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22763)),	-- Ironvine Gloves
 			applyclassicphase(PHASE_FIVE, i(22195)),	-- Light Obsidian Belt
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(210779)),	-- Mantle of the Second War
+			applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(210773)),	-- Mantle of the Second War
 			-- #endif
 			i(7931),	-- Mithril Coif
 			i(7924),	-- Mithril Scale Bracers

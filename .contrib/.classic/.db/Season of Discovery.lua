@@ -13,6 +13,10 @@ SODItem(212590, MAIL);	-- Hoist Strap
 SODItem(211382, BAGS);	-- Small Courier Satchel
 SODItem(211384, BAGS);	-- Sturdy Courier Bag
 
+-- Crafted Items
+SODItem(210781, CLOTH);	-- Phoenix Bindings
+SODItem(210773, MAIL);	-- Mantle of the Second War
+
 local classHeader = function(classID, g)
 	return cl(classID, bubbleDown({ ["classes"] = { classID } }, g));
 end
