@@ -210,6 +210,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 				}),
 			}, {	-- RENOWN 20 --
+				q(78588, {	-- Dragon Isles Supplies
+					["provider"] = { "n", 208143 },	-- Keeper Amrymn
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+				}),
 				q(78373, {	-- The Dream Thanks You
 					["provider"] = { "n", 211962 },	-- Melsysra
 					["maps"] = { EMERALD_DREAM },	-- follow you around
