@@ -19915,8 +19915,8 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 	if not self.initialized then
 		-- cache some common functions
 		local C_TradeSkillUI = C_TradeSkillUI;
-		local C_TradeSkillUI_GetCategoryInfo, C_TradeSkillUI_GetRecipeInfo, C_TradeSkillUI_GetRecipeSchematic
-			= C_TradeSkillUI.GetCategoryInfo, C_TradeSkillUI.GetRecipeInfo, C_TradeSkillUI.GetRecipeSchematic;
+		local C_TradeSkillUI_GetCategoryInfo, C_TradeSkillUI_GetRecipeInfo, C_TradeSkillUI_GetRecipeSchematic, C_TradeSkillUI_GetTradeSkillLineForRecipe
+			= C_TradeSkillUI.GetCategoryInfo, C_TradeSkillUI.GetRecipeInfo, C_TradeSkillUI.GetRecipeSchematic, C_TradeSkillUI.GetTradeSkillLineForRecipe
 
 		self.initialized = true;
 		self.SkillsInit = {};
@@ -19940,12 +19940,19 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 		});
 
 		AllTheThingsAD.Reagents = nil;
+		local MissingRecipes = {}
 		-- Adds the pertinent information about a given recipeID to the reagentcache
 		local function CacheRecipeSchematic(recipeID)
 			-- TODO: this can be called successfilly without tradeskillUI open... potentially use function runner
 			local schematic = C_TradeSkillUI_GetRecipeSchematic(recipeID, false);
 			local craftedItemID = schematic.outputItemID;
 			if not craftedItemID then return end
+			if not app.SearchForObject("spellID",recipeID) then
+				local tradeSkillID, skillLineName, parentTradeSkillID = C_TradeSkillUI_GetTradeSkillLineForRecipe(recipeID)
+				local missing = app.TableConcat({"Missing Recipe:",recipeID,skillLineName,tradeSkillID,"=>",parentTradeSkillID}, nil, nil, " ")
+				-- app.PrintDebug(missing)
+				MissingRecipes[#MissingRecipes + 1] = missing
+			end
 			-- app.PrintDebug("Recipe",recipeID,"==>",craftedItemID)
 			-- Recipes now have Slots for available Regeants...
 			-- TODO: schematic.reagentSlotSchematics is often EMPTY on first query??
@@ -19953,9 +19960,6 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				-- Milling Recipes...
 				-- app.PrintDebug("EMPTY SCHEMATICS",recipeID)
 				return;
-			end
-			if not app.SearchForObject("spellID",recipeID) then
-				app.PrintDebug("Missing Recipe",recipeID,"Prof",self.lastTradeSkillID)
 			end
 			local reagentCache = GetDataMember("Reagents", app.ReagentsDB);
 			local itemRecipes, reagentCount, reagentItemID;
@@ -20014,6 +20018,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 			if not updates["Recipes"] then
 				-- app.PrintDebug("UpdateLearnedRecipes",self.lastTradeSkillID)
 				updates["Recipes"] = true;
+				wipe(MissingRecipes)
 				local learned, recipeID = {};
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				local acctSpells, charSpells = ATTAccountWideData.Spells, app.CurrentCharacter.Spells;
@@ -20072,6 +20077,14 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 					app:PlayFanfare();
 					app:TakeScreenShot("Recipes");
 					self.force = true;
+				end
+				-- In Debugging, pop a dialog of all found missing recipes
+				if app.Debugging then
+					if #MissingRecipes > 0 then
+						app:ShowPopupDialogWithMultiLineEditBox(app.TableConcat(MissingRecipes, nil, nil, "\n"), nil, "Missing Recipes")
+					else
+						app.PrintDebug("No Missing Recipes!")
+					end
 				end
 			end
 		end
