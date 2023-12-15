@@ -1670,13 +1670,14 @@ namespace ATT
                 criteriaTree = refCriteriaTree;
             }
 
+            bool inGameIgnored = criteriaTree.IsIgnoreFlags();
             bool incorporated = false;
             // CriteriaTree itself is linked to a Criteria
             if (criteriaTree.CriteriaID != 0 && TryGetTypeDBObject(criteriaTree.CriteriaID, out Criteria criteria) && criteria.IsUseful())
             {
                 long criteriaProviderItem = criteria.GetProviderItem();
                 // Don't incorporate ignore-flagged CriteriaTree whose Criteria is simply a provider Item (i.e. Old Crafty has 2 criteria both with same provider)
-                if (criteriaProviderItem > 0 && criteriaTree.IsIgnoreFlags())
+                if (criteriaProviderItem > 0 && inGameIgnored)
                 {
                     if (criteriaTree.Amount <= 1)
                     {
@@ -1756,10 +1757,11 @@ namespace ATT
                         }
                         Objects.Merge(data, "g", criteriaData);
                     }
+
                     // Achievements whose criteria is incorporated should no longer use achievement_criteria symlink
-                    if (CheckSingleSymlink(data, "achievement_criteria"))
+                    if (data.TryGetValue("sym", out List<object> sym))
                     {
-                        LogDebug($"INFO: Removed unnecessary 'achievement_criteria' sym: {achID}");
+                        LogDebug($"INFO: Removed unnecessary Achievement sym (has incorporated Criteria): {achID} [{ToJSON(sym)}]");
                         data.Remove("sym");
                     }
                 }
@@ -1768,6 +1770,13 @@ namespace ATT
             // CriteriaTree can be a parent, which means the children should be incorporated as criteria of the data
             if (TryGetTypeDBObjectChildren(criteriaTree, out List<CriteriaTree> childTrees))
             {
+                // Don't incorporate multiple Criteria from an ignored CriteriaTree
+                if (inGameIgnored)
+                {
+                    LogDebug($"Ignored Criteria under Achievement:{achID}");
+                    return false;
+                }
+
                 if (criteriaTree.IsAllianceOnlyFlags())
                 {
                     extraData = extraData ?? new Dictionary<string, object>();

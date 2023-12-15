@@ -8190,6 +8190,11 @@ local function default_name(t)
 				-- app.PrintDebug("criteria sq no name",t.achievementID,t.criteriaID,rawget(t,"name"))
 				return
 			end
+
+			-- criteria with spellID (TODO)
+
+			-- criteria fallback to base achievement name
+			name = "Criteria: "..select(2, GetAchievementInfo(achievementID))
 		end
 	end
 	app.PrintDebug("failed to retrieve criteria name",achievementID,t.criteriaID,name,t._default_name_retry)
