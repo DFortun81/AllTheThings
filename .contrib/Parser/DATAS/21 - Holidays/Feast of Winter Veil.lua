@@ -609,6 +609,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["provider"] = { "i", 191937 },	-- Falling Star Catcher (TOY!)
 			["timeline"] = { "added 10.0.2.47213" },
 		}),
+		ach(19077, {	-- Catch Me If You Can! (2023)
+			["provider"] = { "i", 208825 },	-- Junior Timekeeper's Racing Belt (TOY!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		ach(19130, {	-- Junior Racing Champion (2023)
+			["provider"] = { "i", 208825 },	-- Junior Timekeeper's Racing Belt (TOY!)
+			["timeline"] = { ADDED_10_2_0 },
+		}),
 	}),
 	-- #if AFTER 7.3.0.24727
 	filter(BATTLE_PETS, {
@@ -1485,6 +1493,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(191937),	-- Falling Star Catcher (TOY!)
 			},
 		})),
+		-- q(00000, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 } }, {	-- A Winter Veil Gift (2023)
+		-- 	["providers"] = {
+		-- 		{ "o", 187236 },	-- Winter Veil Gift
+		-- 		{ "i", 000000 },	-- Winter Veil Gift
+		-- 	},
+		-- 	["description"] = "Gift from 2023.",
+		-- 	["maps"] = { IRONFORGE, ORGRIMMAR },
+		-- 	["_drop"] = { "g" },
+		-- 	["lvl"] = 10,
+		-- 	["groups"] = {
+		-- 		i(208825),	-- Falling Star Catcher (TOY!)
+		-- 	},
+		-- })),
 		q(7022, {	-- Greatfather Winter is Here! (Alliance)
 			["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 			-- #if AFTER CATA
@@ -2169,6 +2190,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				}),
 				i(151344, {	-- Hearthstation (H) (TOY!)
 					["races"] = HORDE_ONLY,
+				}),
+				i(209859, {	-- Festive Trans-Dimensional Bird Whistle (TOY!)
+					["timeline"] = { ADDED_10_2_0 },
+				}),
+				-- Manuscripts
+				i(210432, {	-- Highland Drake: Winter Veil Armor
+					["timeline"] = ADDED_10_2_0,
 				}),
 				-- Illusions
 				i(128649, {	-- Illusion: Winter's Grasp (ILLUSION!)
