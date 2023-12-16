@@ -1,3 +1,4 @@
+if C_TransmogCollection then
 -- App locals
 local appName, app = ...;
 local L = app.L;
@@ -11,6 +12,7 @@ app:GetWindow("Illusions", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	IsDynamicCategory = true,
 	Commands = { "attillusions" },
 	OnInit = function(self, handlers)
 		self.data = {
@@ -58,3 +60,4 @@ app:GetWindow("Illusions", {
 		settings.Total = self.data.total;
 	end,
 });
+end
