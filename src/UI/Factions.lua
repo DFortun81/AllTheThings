@@ -10,6 +10,7 @@ app:GetWindow("Factions", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	IsDynamicCategory = true,
 	Commands = { "attfactions" },
 	OnInit = function(self, handlers)
 		self.data = app.CreateNPC(app.HeaderConstants.FACTIONS, {

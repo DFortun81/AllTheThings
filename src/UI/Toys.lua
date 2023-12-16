@@ -10,6 +10,7 @@ app:GetWindow("Toys", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	IsDynamicCategory = true,
 	Commands = { "atttoys" },
 	OnInit = function(self, handlers)
 		self.data = {

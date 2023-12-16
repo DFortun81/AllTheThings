@@ -11,6 +11,7 @@ app:GetWindow("Heirlooms", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	IsDynamicCategory = true,
 	Commands = { "attheirlooms" },
 	OnInit = function(self, handlers)
 		self.data = {

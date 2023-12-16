@@ -10,6 +10,7 @@ app:GetWindow("Mounts", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	IsDynamicCategory = true,
 	Commands = { "attmounts" },
 	OnInit = function(self, handlers)
 		self.data = {

@@ -2926,20 +2926,21 @@ function app:GetDataCache()
 
 		-- Now that we have all of the root data, cache it.
 		app.CacheFields(rootData);
-
-		-- The achievements window has a mix of dynamic and non-dynamic information.
-		local achievementDynamicCategory = app.CreateDynamicCategory("Achievements");
-		BuildGroups(achievementDynamicCategory.dynamicWindow.data);
-		tinsert(g, achievementDynamicCategory);
-
-		-- Dynamic Categories (Content generated and managed by a separate Window)
-		tinsert(g, app.CreateDynamicCategory("Battle Pets"));
-		tinsert(g, app.CreateDynamicCategory("Factions"));
-		tinsert(g, app.CreateDynamicCategory("Flight Paths"));
-		if C_Heirloom and app.GameBuildVersion >= 30000 then tinsert(g, app.CreateDynamicCategory("Heirlooms")); end
-		tinsert(g, app.CreateDynamicCategory("Mounts"));
-		tinsert(g, app.CreateDynamicCategory("Titles"));
-		tinsert(g, app.CreateDynamicCategory("Toys"));
+		
+		-- Dynamic Categories
+		local keys,sortedList = {},{};
+		for suffix,window in pairs(app.Windows) do
+			if window and window.IsDynamicCategory then
+				keys[suffix] = window;
+			end
+		end
+		for suffix,window in pairs(keys) do
+			tinsert(sortedList, suffix);
+		end
+		app.Sort(sortedList, app.SortDefaults.Text);
+		for i,suffix in ipairs(sortedList) do
+			tinsert(g, app.CreateDynamicCategory(suffix));
+		end
 
 		-- Track Deaths!
 		tinsert(g, app:CreateDeathClass());
@@ -12317,6 +12318,9 @@ function app:GetWindow(suffix, settings)
 			for i,command in ipairs(window.Commands) do
 				_G["SLASH_" .. commandRoot .. i] = "/" .. command;
 			end
+		end
+		if settings.IsDynamicCategory then
+			window.IsDynamicCategory = settings.IsDynamicCategory;
 		end
 		LoadSettingsForWindow(window);
 	end

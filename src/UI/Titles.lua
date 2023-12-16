@@ -10,6 +10,7 @@ app:GetWindow("Titles", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	IsDynamicCategory = true,
 	Commands = { "atttitles" },
 	OnInit = function(self, handlers)
 		self.data = {

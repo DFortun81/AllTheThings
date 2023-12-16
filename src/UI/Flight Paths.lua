@@ -10,6 +10,7 @@ app:GetWindow("Flight Paths", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	IsDynamicCategory = true,
 	Commands = { "attflightpaths", "attfps" },
 	OnInit = function(self, handlers)
 		self.data = {

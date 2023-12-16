@@ -79,6 +79,7 @@ app:GetWindow("Achievements", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	IsDynamicCategory = true,
 	Commands = { "attach", "attachievements" },
 	RootCommandIndex = 2,
 	OnInit = function(self, handlers)

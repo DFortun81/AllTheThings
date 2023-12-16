@@ -14,6 +14,7 @@ app:GetWindow("Battle Pets", {
 	parent = UIParent,
 	Silent = true,
 	AllowCompleteSound = true,
+	IsDynamicCategory = true,
 	Commands = {
 		"attpets",
 		"attbattlepets",
