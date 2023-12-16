@@ -60,6 +60,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64829 },	-- Finding Tahli
 					["provider"] = { "n", 181273 },	-- Tahli
 					["coord"] = { 63.9, 40.8, ZERETH_MORTIS },
+					["g"] = {
+						i(188798),	-- Stolen Artifact (QI!)
+					},
 				}),
 				q(64761, {	-- Core Competency
 					["sourceQuests"] = { 64745 },	-- Selfless Preservation
@@ -83,11 +86,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64762 },	-- Revival of the Fittest
 					["provider"] = { "n", 180610 },	-- Kodah
 					["coord"] = { 61.2, 37.6, ZERETH_MORTIS },
+					["g"] = {
+						i(189492),	-- Attunement Codex (QI!)
+					},
 				}),
 				q(64766, {	-- Access Request
 					["sourceQuests"] = { 64762 },	-- Revival of the Fittest
 					["provider"] = { "n", 180610 },	-- Kodah
 					["coord"] = { 61.2, 37.6, ZERETH_MORTIS },
+					["g"] = {
+						i(187628),	-- Restoration Matrix (QI!)
+					},
 				}),
 				q(64767, {	-- The Final Song
 					["sourceQuests"] = {
@@ -106,12 +115,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65420 },	-- Judgment Call
 					["provider"] = { "n", 181273 },	-- Tahli
 					["coord"] = { 61.5, 51.6, ZERETH_MORTIS },
+					["g"] = {
+						i(189499),	-- Protoform Catalyst (QI!)
+					},
 				}),
 				q(65427, {	-- A New Architect
 					["sourceQuests"] = { 65426 },	-- The Lost Component
 					["provider"] = { "n", 181135 },	-- Servitor Interface
 					["coord"] = { 70.2, 28.6, ZERETH_MORTIS },
 					["g"] = {
+						i(189501),	-- Protoform Tool (QI!)
 						i(189500),	-- Cervid Lattice
 					},
 				}),

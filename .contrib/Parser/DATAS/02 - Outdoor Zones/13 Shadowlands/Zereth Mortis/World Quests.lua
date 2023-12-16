@@ -12,6 +12,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 			q(65119, {	-- Automa Ops
 				["coord"] = { 56.8, 32.7, ZERETH_MORTIS },
+				["g"] = {
+					i(188137),	-- Targeting Relic (QI!)
+				},
 			}),
 			q(65117, {	-- Bad Samples
 				["coord"] = { 44.1, 30.8, ZERETH_MORTIS },
@@ -27,6 +30,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 			q(64960, {	-- Feed the Annelids
 				["coord"] = { 56.8, 31.9, ZERETH_MORTIS },
+				["g"] = {
+					i(187816),	-- Irresistible Goop (QI!)
+					i(187820),	-- Piece of Goop (QI!)
+				},
 			}),
 			q(65102, {	-- Fish Eyes
 				["coord"] = { 47.8, 64, ZERETH_MORTIS },

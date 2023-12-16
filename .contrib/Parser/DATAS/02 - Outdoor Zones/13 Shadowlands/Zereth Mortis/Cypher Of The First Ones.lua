@@ -108,11 +108,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64772 },	-- Broken Circle
 					["provider"] = { "n", 180919 },	-- Olea Novi
 					["coord"] = { 36.7, 37.7, ZERETH_MORTIS },
+					["g"] = {
+						i(187615),	-- Orb Fragment (QI!)
+					},
 				}),
 				q(65370, {	-- Gut Check
 					["sourceQuests"] = { 64772 },	-- Broken Circle
 					["provider"] = { "n", 181102 },	-- Olea Manu
 					["coord"] = { 38.2, 35.3, ZERETH_MORTIS },
+					["g"] = {
+						i(189450),	-- Crescendal (QI!)
+					},
 				}),
 				q(64775, {	-- Mawdified Behavior
 					["sourceQuests"] = {
@@ -122,6 +128,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 180984 },	-- Hanoa the Exile
 					["coord"] = { 39.5, 31.9, ZERETH_MORTIS },
+					["g"] = {
+						i(189493),	-- Black Steel Fragment (QI!)
+					},
 				}),
 				q(64739, {	-- Zovaal's Grasp
 					["sourceQuests"] = { 64775 },	-- Mawdified Behavior
@@ -142,6 +151,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64739 },	-- Zovaal's Grasp
 					["provider"] = { "n", 181174 },	-- Olea Pau
 					["coord"] = { 42.3, 31.5, ZERETH_MORTIS },
+					["g"] = {
+						i(187950),	-- Warped Flesh (QI!)
+					},
 				}),
 				q(65219, {	-- Jiro to Hero
 					["sourceQuests"] = {
@@ -168,6 +180,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64641 },	-- Mysterious Greenery
 					["provider"] = { "n", 179923 },	-- Koh Riva
 					["coord"] = { 60.5, 70.1, ZERETH_MORTIS },
+					["g"] = {
+						i(187131),	-- Automa Internals (QI!)
+					},
 				}),
 				q(64644, {	-- A Splash of the Eternal
 					["sourceQuests"] = {
@@ -176,6 +191,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 180702 },	-- Glimmercane
 					["coord"] = { 60.7, 69.8, ZERETH_MORTIS },
+					["g"] = {
+						i(187925),	-- Eternal Water (QI!)
+					},
 				}),
 				q(64645, {	-- Moment of Truth
 					["sourceQuests"] = { 64644 },	-- A Splash of the Eternal
@@ -191,6 +209,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64645 },	-- Moment of Truth
 					["provider"] = { "o", 375021 },	-- Perished Automa
 					["coord"] = { 29.3, 15.3, 2027 },
+					["g"] = {
+						i(187619),	-- Winding Seed (QI!)
+					},
 				}),
 				q(64648, {	-- Reap What We Have Sown
 					["sourceQuests"] = {

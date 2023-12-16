@@ -28,21 +28,34 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64945 },	-- Stangers in a Strange Land
 					["provider"] = { "n", 181561 },	-- Firim
 					["coord"] = { 28.9, 53.5, ZERETH_MORTIS },
+					["g"] = {
+						i(187845),	-- Quadrangular Object (QI!)
+						i(187846),	-- Triangular Object (QI!)
+					},
 				}),
 				q(64947, {	-- Give Me a Hand
 					["sourceQuests"] = { 65456 },	-- Long Lost Firim
 					["provider"] = { "n", 181561 },	-- Firim
 					["coord"] = { 28.9, 53.5, ZERETH_MORTIS },
+					["g"] = {
+						i(188954),	-- Disabled Automa Hand (QI!)
+					},
 				}),
 				q(64950, {	-- A Mutual Exchange
 					["sourceQuests"] = { 64947 },	-- Give Me a Hand
 					["provider"] = { "n", 184062 },	-- Firim
 					["coord"] = { 31.2, 51.3, ZERETH_MORTIS },
+					["g"] = {
+						i(188955),	-- Primordial Core (QI!)
+					},
 				}),
 				q(64949, {	-- For Research Purpose
 					["sourceQuests"] = { 64947 },	-- Give Me a Hand
 					["provider"] = { "n", 184062 },	-- Firim
 					["coord"] = { 31.2, 51.3, ZERETH_MORTIS },
+					["g"] = {
+						i(188956),	-- Intact Automa Fragments (QI!)
+					},
 				}),
 				q(64951, {	-- The Road to Haven
 					["sourceQuests"] = {
@@ -112,6 +125,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["provider"] = { "n", 178015 },	-- Elder Zoor
 					["coord"] = { 34.8, 65, ZERETH_MORTIS },
 					["g"] = {
+						i(190976),	-- Enlightened Incense (QI!)
 						i(190749),	-- Temporal Cryptic Grips
 						i(190744),	-- Temporal Enigmatic Footguards
 						i(190747),	-- Temporal Numerus Handguards
@@ -123,6 +137,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["provider"] = { "n", 178016 },	-- Elder Ara
 					["coord"] = { 34.8, 64.2, ZERETH_MORTIS },
 					["g"] = {
+						i(190975),	-- Latent Protein (QI!)
 						i(190750),	-- Recreative Cryptic Grips
 						i(190743),	-- Recreative Enigmatic Footguards
 						i(190746),	-- Recreative Numerus Handguards
@@ -321,6 +336,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64833 },	-- Forging Unity from Diversity
 					["provider"] = { "n", 183139 },	-- Elder Ara
 					["coord"] = { 56.2, 57.9, ZERETH_MORTIS },
+					["g"] = {
+						i(187730),	-- Conduction Remnant (QI!)
+						i(187731),	-- Conduction Remnant (QI!)
+						i(187732),	-- Conduction Remnant (QI!)
+					},
 				}),
 				q(64832, {	-- Reclaiming Provis Esper
 					["sourceQuests"] = { 64833 },	-- Forging Unity from Diversity
@@ -359,6 +379,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64969 },	-- In the Weeds
 					["provider"] = { "n", 181771 },	-- Feroz
 					["coord"] = { 48.1, 75.2, ZERETH_MORTIS },
+					["g"] = {
+						i(188276),	-- Energized Roots (QI!)
+					},
 				}),
 				q(64835, {	-- Pluck from the Vines
 					["sourceQuests"] = { 64969 },	-- In the Weeds
@@ -385,6 +408,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 184323 },	-- Feroz
 					["coord"] = { 47.7, 79.9, ZERETH_MORTIS },
+					["g"] = {
+						i(187835),	-- Replicating Essence (QI!)
+					},
 				}),
 				q(64841, {	-- Take Charge
 					["sourceQuests"] = {
@@ -667,6 +693,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64879 },	-- A Monumental Discovery
 					["provider"] = { "n", 177958 },	-- Firim
 					["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+					["g"] = {
+						i(187602),	-- Firim's Motivator (QI!)
+					},
 				}),
 				q(64733, {	-- Help From Beyond
 					["sourceQuests"] = { 64723 },	-- Restoration Porject
@@ -677,6 +706,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64733 },	-- Help From Beyond
 					["provider"] = { "n", 180928 },	-- Secutor Mevix
 					["coord"] = { 56.4, 31.2, ZERETH_MORTIS },
+					["g"] = {
+						i(187602),	-- Firim's Motivator (QI!)
+					},
 				}),
 				q(64706, {	-- A Matter Of Motivation
 					["sourceQuests"] = { 64733 },	-- Help From Beyond
@@ -687,6 +719,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64733 },	-- Help From Beyond
 					["provider"] = { "n", 180942 },	-- Saezurah
 					["coord"] = { 57.1, 31.1, ZERETH_MORTIS },
+					["g"] = {
+						i(187809),	-- Dominator's Key (QI!)
+					},
 				}),
 				q(64722, {	-- Knocking On Death's Door
 					["sourceQuests"] = {
@@ -825,19 +860,25 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65305 },	-- The Way Forward
 					["provider"] = { "n", 184486 },	-- Tamra
 					["coord"] = { 34.7, 66.3, ZERETH_MORTIS },
+					["g"] = {
+						i(187942),	-- Chromatic Rosid (QI!)
+					},
 				}),
 				q(65066, {	-- Flora Aroma
 					["sourceQuests"] = { 65064 },	-- Look Who I Found!
 					["provider"] = { "n", 182346 },	-- Tamra
 					["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
 					["g"] = {
-						i(189479),	-- Chromatic Rosid
+						i(189479),	-- Chromatic Rosid (QI!)
 					},
 				}),
 				q(65067, {	-- Broker Beaker
 					["sourceQuests"] = { 65064 },	-- Look Who I Found!
 					["provider"] = { "n", 182346 },	-- Tamra
 					["coord"] = { 49.2, 71.8, ZERETH_MORTIS },
+					["g"] = {
+						i(187940),	-- Component Beaker (QI!)
+					}
 				}),
 				q(65068, {	-- Cascades of Magnitude
 					["sourceQuests"] = {
@@ -881,11 +922,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64742 },	-- Traces of Tampering
 					["provider"] = { "n", 181003 },	-- Al'dalil
 					["coord"] = { 33.7, 59.8, ZERETH_MORTIS },
+					["g"] = {
+						i(187736),	-- Decloakifier (QI!)
+					},
 				}),
 				q(64743, {	-- Xy Are You Doing This?
 					["sourceQuests"] = { 64742 },	-- Traces of Tampering
 					["provider"] = { "n", 181003 },	-- Al'dalil
 					["coord"] = { 33.7, 59.8, ZERETH_MORTIS },
+					["g"] = {
+						i(187626),	-- Suspicious Papers (QI!)
+					},
 				}),
 				q(64758, {	-- Following the Leader
 					["sourceQuests"] = {
@@ -922,6 +969,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 65349 },	-- Lost Grace
 					["provider"] = { "n", 184537 },	-- Nadir
 					["coord"] = { 55, 50.3, ZERETH_MORTIS },
+					["g"] = {
+						i(188199),	-- Locrian Swale (QI!)
+					},
 				}),
 				q(65353, {	-- An Automa-free Diet
 					["sourceQuests"] = { 65349 },	-- Lost Grace
@@ -949,6 +999,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 180950 },	-- Avna
 					["coord"] = { 34.3, 65.9, ZERETH_MORTIS },
+					["g"] = {
+						i(190852),	-- Vespoid Honey (QI!)
+					},
 				}),
 				q(65725, {	-- The Burrowed Bufonid
 					["sourceQuests"] = { 65727 },	-- The Burrowed Bufonid
@@ -1016,6 +1069,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.6, ZERETH_MORTIS },
+				["g"] = {
+					i(190940),	-- Firim's Research Notes (QI!)
+				},
 			}),
 			q(65735, {	-- Wanted: Custos
 				["sourceQuests"] = { 64958 },	-- The Forces Gather
@@ -1027,6 +1083,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64958 },	-- The Forces Gather
 				["provider"] = { "n", 185713 },	-- Hadja
 				["coord"] = { 35.2, 65.7, ZERETH_MORTIS },
+				["g"] = {
+					i(190927),	-- Enlightened Provisions (QI!)
+				},
 			}),
 		}),
 		n(QUESTS, sharedData({ ["repeatable"] = true }, {
@@ -1056,11 +1115,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
+				["g"] = {
+					i(188738),	-- Strange Artifact (QI!)
+				},
 			}),
 			q(65268, {	-- Bzzzzt!
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
+				["g"] = {
+					i(188788),	-- Zephyreal Generator (QI!)
+				},
 			}),
 			q(64964, {	-- Choose Your Fighter
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
@@ -1078,7 +1143,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 				["g"] = {
-					i(188697),	-- Kinematic Micro-Life Recalibrator
+					i(188697),	-- Kinematic Micro-Life Recalibrator (QI!)
 					i(189436),	-- Schematic: Violent Poultrid
 				},
 			}),
@@ -1092,6 +1157,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+				["g"] = {
+					i(188121),	-- Warped Anima Sample (QI!)
+				},
 			}),
 			q(65255, {	-- Forcing the Cycle
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
@@ -1102,12 +1170,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+				["g"] = {
+					i(188230),	-- Catamelon Seed (QI!)
+				},
 			}),
 			q(64579, {	-- Hallow Efforts
 				["description"] = "Has Forge-tap for the achievement",
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+				["g"] = {
+					i(187519),	-- Remnant Neomotes (QI!)
+				},
 			}),
 			q(64592, {	-- Historic Protection
 				["description"] = "This Daily is available after researching Altonian Understanding",
@@ -1120,18 +1194,30 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+				["g"] = {
+					i(187782),	-- Eidolic Fragment (QI!)
+					i(187779),	-- Minor Enigmet (QI!)
+				},
 			}),
 			q(65325, {	-- Motes of Knowledge
 				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65431 },	-- Further Research: Aealic
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
+				["g"] = {
+					i(189439),	-- Compilation Nodule (QI!)
+					i(189438),	-- Composition Mote (QI!)
+				},
 			}),
 			q(65445, {	-- Necessary Resourcing
 				["description"] = "This Daily is available after researching Altonian Understanding",
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 184434 },	-- Mai Ber
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
+				["g"] = {
+					i(189535),	-- Neomote Residue (QI!)
+					i(189536),	-- Solidified Neomote (QI!)
+				},
 			}),
 			q(65362, {	-- Not of the Body
 				["description"] = "This Daily is available after researching Altonian Understanding",
@@ -1139,13 +1225,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["provider"] = { "n", 180289 },	-- Mai Soh
 				["coord"] = { 58.3, 50, ZERETH_MORTIS },
 				["g"] = {
-					i(189449),	-- Jiro Scan
+					i(189449),	-- Jiro Scan (QI!)
 				},
 			}),
 			q(65072, {	-- Not Safe For Work
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 180630 },	-- Elder Amir
 				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
+				["g"] = {
+					i(187944),	-- Progenitor Relic (QI!)
+				},
 			}),
 			q(65269, {	-- Obvious Plant
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
@@ -1156,19 +1245,25 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 181179 },	-- Elder Nirav
 				["coord"] = { 61.2, 51.5, ZERETH_MORTIS },
+				["g"] = {
+					i(189554),	-- Proto Wrangler Rope (QI!)
+				},
 			}),
 			q(64785, {	-- Overgrown Story
 				["description"] = "Has Containment Trap for the achievement",
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+				["g"] = {
+					i(187684),	-- Containment Trap (QI!)
+				},
 			}),
 			q(65142, {	-- Portal Play
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
 				["g"] = {
-					i(188170),	-- Portal Initiator
+					i(188170),	-- Portal Initiator (QI!)
 				},
 			}),
 			q(64977, {	-- Step Into the Ring
@@ -1181,17 +1276,26 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 65432 },	-- Further Research: Dealic
 				["provider"] = { "n", 184434 },	-- Mai Ber
 				["coord"] = { 58.4, 49.7, ZERETH_MORTIS },
+				["g"] = {
+					i(189449),	-- Jiro Scan (QI!)
+				},
 			}),
 			q(64854, {	-- Trappings of Success
 				["description"] = "Has Containment Trap for the achievement",
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 177958 },	-- Firim
 				["coord"] = { 34.2, 48.7, ZERETH_MORTIS },
+				["g"] = {
+					i(187684),	-- Containement Trap (QI!)
+				},
 			}),
 			q(65096, {	-- Your Death Or Mine
 				["sourceQuests"] = { 64230 },	-- Cyphers of the First Ones
 				["provider"] = { "n", 180630 },	-- Elder Amir
 				["coord"] = { 61.4, 51.5, ZERETH_MORTIS },
+				["g"] = {
+					i(187996),	-- Sacred Relic (QI!)
+				},
 			}),
 		})),
 		n(QUESTS, sharedData({ ["isWeekly"] = true }, {
