@@ -1100,14 +1100,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(211381),	-- Grotto Netherwing Drake: Violet Scales
 			i(207777),	-- Grotto Netherwing Drake: Yellow Scales
 		})),
-		header(HEADERS.Item, 194705, sharedData({	-- Highland Drake
-			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["timeline"] = { CREATED_10_2_0 },
-		}, {
-			i(210432),	-- Highland Drake: Winter Veil Armor
-		})),
 		header(HEADERS.Item, 194705, {	-- Highland Drake
 			i(197119),	-- Highland Drake: Helm (DM!)
+			i(210432),	-- Highland Drake: Winter Veil Armor (DM!)
 		}),
 		header(HEADERS.Item, 194034, {	-- Renewed Proto-Drake
 			i(210537),	-- Renewed Proto-Drake: Embodiment of Shadowflame (DM!)

@@ -2195,7 +2195,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					["timeline"] = { ADDED_10_2_0 },
 				}),
 				-- Manuscripts
-				i(210432, {	-- Highland Drake: Winter Veil Armor
+				i(210432, {	-- Highland Drake: Winter Veil Armor (DM!)
 					["timeline"] = ADDED_10_2_0,
 				}),
 				-- Illusions
