@@ -1199,8 +1199,6 @@ root(ROOTS.Unsorted, {
 				q(78558),	-- Sholazar Spree
 				q(78559),	-- Sholazar Spree - Advanced
 				q(78560),	-- Sholazar Spree - Reverse
-				q(78566),	--
-				q(78569),	--
 				q(78576),	--
 				q(78577),	--
 				q(78578),	--

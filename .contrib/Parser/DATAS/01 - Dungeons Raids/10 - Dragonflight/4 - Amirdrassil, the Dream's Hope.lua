@@ -908,9 +908,11 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDE
 		q(78317),	-- Smolderon
 		q(78318),	-- Tindral Sageswift, Seer of the Flame
 		q(78320),	-- Fyrakk the Blazing
-		--
-		q(78567),	-- both pop after Fyrakk HC kill on warrior so it is something related to bad luck protection
-		q(78568),	-- but one should be for Greater Ember of Fyr'alath (itemID 210871) (lockout per difficutly or separate one for item?)
+		--Fyr'alath the Dreamrender bad luck protection with Fyrakk Kill
+		q(78566),	-- Looking for raid
+		q(78567),	-- Normal
+		q(78568),	-- Heroic
+		q(78569),	-- Mythic
 		--
 		q(78423),	-- Account unlock quest (SpellID 425878) received after turning in (questID 78421)
 	}),
