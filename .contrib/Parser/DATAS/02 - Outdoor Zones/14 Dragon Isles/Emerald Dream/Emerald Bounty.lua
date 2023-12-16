@@ -112,7 +112,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["provider"] = { "n", 211265 },	-- Sylvia Whisperbloom
 					["coord"] = { 59.7, 16.9, EMERALD_DREAM },
 					["g"] = {
-						i(210052),	-- Ageless Blossoms (QI!)
+						o_repeated({
+							i(210052),	-- Ageless Blossoms (QI!)
+							o(410045),	-- Ageless Blossom
+							o(410046),	-- Ageless Blossom
+							o(410048),	-- Ageless Blossom
+						}),
 					},
 				}),
 				q(78206, {	-- Emerald Bounty
