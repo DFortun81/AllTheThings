@@ -1843,6 +1843,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 10,
+			["groups"] = {
+				i(17735),	-- The Feast of Winter Veil
+			},
 		}),
 		q(6964, {	-- The Reason for the Season (Horde)
 			["qg"] = 9550,	-- Furmund
@@ -1850,6 +1853,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = 10,
+			["groups"] = {
+				i(17735),	-- The Feast of Winter Veil
+			},
 		}),
 		q(7025, {	-- Treats for Greatfather Winter (Alliance)
 			["qg"] = 13444,	-- Greatfather Winter
