@@ -95,7 +95,6 @@ root(ROOTS.NeverImplemented, {
 						i(108243),	-- Peerless Draenic Steel Bulwark
 						i(108244),	-- Peerless Draenic Steel Bulwark
 						i(108234),	-- Peerless Draenic Steel Dagger
-						i(108235),	-- Peerless Draenic Steel Dagger
 						i(108237),	-- Peerless Draenic Steel Dagger
 						i(108162),	-- Peerless Draenic Steel Chestplate
 						i(108178),	-- Peerless Draenic Steel Chestplate
@@ -105,8 +104,6 @@ root(ROOTS.NeverImplemented, {
 						i(108210),	-- Peerless Draenic Steel Chestplate
 						i(108165),	-- Peerless Draenic Steel Helm
 						i(108181),	-- Peerless Draenic Steel Helm
-						i(108189),	-- Peerless Draenic Steel Helm
-						i(108197),	-- Peerless Draenic Steel Helm
 						i(108213),	-- Peerless Draenic Steel Helm
 						i(108221),	-- Peerless Draenic Steel Helm
 						i(108168),	-- Peerless Draenic Steel Girdle
@@ -118,7 +115,6 @@ root(ROOTS.NeverImplemented, {
 						i(108224),	-- Peerless Draenic Steel Girdle
 						i(108164),	-- Peerless Draenic Steel Guantlets
 						i(108188),	-- Peerless Draenic Steel Guantlets
-						i(108196),	-- Peerless Draenic Steel Guantlets
 						i(108204),	-- Peerless Draenic Steel Guantlets
 						i(108212),	-- Peerless Draenic Steel Guantlets
 						i(108220),	-- Peerless Draenic Steel Guantlets
@@ -131,7 +127,6 @@ root(ROOTS.NeverImplemented, {
 						i(108222),	-- Peerless Draenic Steel Legguards
 						i(108238),	-- Peerless Draenic Steel Mace
 						i(108239),	-- Peerless Draenic Steel Mace
-						i(108241),	-- Peerless Draenic Steel Mace
 						i(108167),	-- Peerless Draenic Steel Shoulders
 						i(108183),	-- Peerless Draenic Steel Shoulders
 						i(108191),	-- Peerless Draenic Steel Shoulders

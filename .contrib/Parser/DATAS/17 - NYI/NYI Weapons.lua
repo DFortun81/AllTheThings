@@ -42,7 +42,6 @@ root(ROOTS.NeverImplemented, {
 			tier(CLASSIC_TIER, {
 				i(24071),	-- Bland Dagger
 				i(17142),	-- Shard of the Defiler
-				i(2664),	-- Spinner Fang
 			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {

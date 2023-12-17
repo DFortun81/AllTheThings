@@ -348,7 +348,7 @@ TIER_TWELVE_HEROIC_GROUPS = {	-- Firelands [Tier 12] (Heroic)
 		i(71504, {	-- Flamewaker's Legguards
 			["cost"] = {
 				{ "i", 71052, 1 },	-- Flamewaker's Legguards
-				{ "i", 71685, 1 },	-- Leggings of the Fiery Protector
+				{ "i", 71685.05, 1 },	-- Leggings of the Fiery Protector
 			},
 		}),
 	}),

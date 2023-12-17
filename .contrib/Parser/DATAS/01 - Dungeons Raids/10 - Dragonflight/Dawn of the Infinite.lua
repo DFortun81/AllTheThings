@@ -84,6 +84,8 @@ local QUANTUM_GROUP = sharedData({
 		filter(PLATE, {
 			ig(121506),	-- Dreadsworn Crown					(NYI)
 			ig(114390),	-- Greathelm of Grievous Storms		(NYI)
+			ig(108189),	-- Peerless Draenic Steel Helm		(NYI)
+			ig(108197),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108205),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(114266),	-- Ruby Plate Greathelm				(NYI)
 
@@ -341,6 +343,7 @@ local QUANTUM_GROUP = sharedData({
 		filter(PLATE, {
 			i(114386),	-- Gauntlets of Grievous Storms		(NYI)
 			ig(108180),	-- Peerless Draenic Steel Guantlets	(NYI)
+			ig(108196),	-- Peerless Draenic Steel Guantlets	(NYI)
 			ig(114262),	-- Ruby Plate Gauntlets				(NYI)
 			ig(156752),	-- Skullbreaker Gauntlets			(NYI)
 
@@ -407,6 +410,9 @@ local QUANTUM_GROUP = sharedData({
 		filter(MAIL, {
 			ig(114393),	-- Element-Binder Legguards			(NYI)
 			ig(114269),	-- Leafscale Legguards				(NYI)
+			ig(147515, {	-- Hellblaze Invader's Greaves	(NYI)
+				["modID"] = 2, -- Heroic dungeon
+			}),
 			ig(121512),	-- Stormborn Leggings				(NYI)
 
 			ig(134681),	-- Greenhorn's Legguards			(Removed)
@@ -541,7 +547,9 @@ local QUANTUM_GROUP = sharedData({
 	i(208120, {	-- Quantum Knife
 		ig(147908),	-- 6.0 Weapon - Knife_1h_DraenorRaid_D_01 - Jade	(NYI)
 		ig(108150),	-- Hardened Draeneic Steel Dagger		(NYI)
+		ig(108235),	-- Peerless Draenic Steel Dagger		(NYI)
 		ig(108236),	-- Peerless Draenic Steel Dagger		(NYI)
+		ig(2664),	-- Spinner Fang							(NYI)
 		ig(3222),	-- Wicked Dagger						(NYI)
 		ig(2664),	--										(NYI/UNIQUE) 
 
@@ -578,6 +586,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(163930),	-- Kovork's Rattle						(NYI)
 		ig(107390),	-- Obliterator Firing Lever				(NYI)(Unique)
 		ig(108240),	-- Peerless Draenic Steel Mace			(NYI)
+		ig(108241),	-- Peerless Draenic Steel Mace			(NYI)
 		ig(115299),	-- Spectral Scepter						(NYI)
 		ig(115296),	-- Spectral Warmace						(NYI)
 

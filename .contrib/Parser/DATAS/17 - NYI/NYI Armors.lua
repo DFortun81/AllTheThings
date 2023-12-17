@@ -1107,7 +1107,6 @@ root(ROOTS.NeverImplemented, {
 				}),
 				tier(LEGION_TIER, 2.0, {
 					i(147058),	-- Chaos-Calming Wristguards
-					i(147515, {["modID"] = 2 }),	-- Hellblaze Invader's Greaves
 				}),
 				tier(LEGION_TIER, 2.5, {
 					i(140011),	-- Duskwatch Adjudicator's Pauldrons

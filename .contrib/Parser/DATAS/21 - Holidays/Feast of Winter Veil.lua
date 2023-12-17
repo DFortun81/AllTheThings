@@ -1777,7 +1777,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		q(7063, {	-- The Feast of Winter Veil (Alliance)
 			["providers"] = {
 				{ "n", 2916 },	-- Historian Karnik
-				{ "i", 17735 },	-- The Feast of Winter Veil
+				{ "i", 17735 },	-- The Feast of Winter Veil (QI!)
 			},
 			["sourceQuest"] = 7062,	-- The Reason for the Season (Alliance)
 			["coord"] = { 77.2, 11.8, IRONFORGE },
@@ -1788,7 +1788,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		q(7061, {	-- The Feast of Winter Veil (Horde)
 			["providers"] = {
 				{ "n", 13417 },	-- Sagorne Creststrider <Shaman Trainer>
-				{ "i", 17735 },	-- The Feast of Winter Veil
+				{ "i", 17735 },	-- The Feast of Winter Veil (QI!)
 			},
 			["sourceQuest"] = 6964,	-- The Reason for the Season (Horde)
 			["coord"] = { 38.6, 36.2, ORGRIMMAR },
@@ -1847,7 +1847,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["isYearly"] = true,
 			["lvl"] = 10,
 			["groups"] = {
-				i(17735),	-- The Feast of Winter Veil
+				i(17735),	-- The Feast of Winter Veil (QI!)
 			},
 		}),
 		q(6964, {	-- The Reason for the Season (Horde)
@@ -1857,7 +1857,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["isYearly"] = true,
 			["lvl"] = 10,
 			["groups"] = {
-				i(17735),	-- The Feast of Winter Veil
+				i(17735),	-- The Feast of Winter Veil (QI!)
 			},
 		}),
 		q(7025, {	-- Treats for Greatfather Winter (Alliance)
