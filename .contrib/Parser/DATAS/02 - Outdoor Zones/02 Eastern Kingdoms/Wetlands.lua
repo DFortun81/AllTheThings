@@ -1316,16 +1316,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 25,
 					["groups"] = {
 						objective(1, {	-- 0/1 Ados Fragment
-							["provider"] = { "i", 2658 },	-- Ados Fragment
+							["providers"] = {
+								{ "i", 2658 },	-- Ados Fragment
+								{ "o", 35252 },	-- Ancient Relic
+							},
 						}),
 						objective(2, {	-- 0/1 Modr Fragment
-							["provider"] = { "i", 2659 },	-- Modr Fragment
+							["providers"] = {
+								{ "i", 2659 },	-- Modr Fragment
+								{ "o", 334 },	-- Ancient Relic
+							},
 						}),
 						objective(3, {	-- 0/1 Golm Fragment
-							["provider"] = { "i", 2660 },	-- Golm Fragment
+							["providers"] = {
+								{ "i", 2660 },	-- Golm Fragment
+								{ "o", 333 },	-- Ancient Relic
+							},
 						}),
 						objective(4, {	-- 0/1 Neru Fragment
-							["provider"] = { "i", 2661 },	-- Neru Fragment
+							["providers"] = {
+								{ "i", 2661 },	-- Neru Fragment
+								{ "o", 331 },	-- Loose Soil
+							},
 						}),
 						i(2913, {	-- Silk Mantle of Gamn
 							["timeline"] = { "removed 4.0.3" },
