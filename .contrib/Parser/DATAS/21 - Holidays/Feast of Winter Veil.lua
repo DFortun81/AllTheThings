@@ -2034,6 +2034,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					["provider"] = { "i", 17662 },	-- Stolen Treats
 					["cr"] = 13602,	-- The Abominable Greench
 				}),
+				o(209497, {
+					["timeline"] = { "added 4.3.0.15005" },
+					["groups"] = {
+						i(17662),	-- Stolen Treats
+					},
+				}),
 				i(149503, {	-- Stolen Gift
 					["description"] = "This gift is granted to any player below max level. This gift doesn't drop any of the rare seasonal items; it's currently not worth it.",
 					["timeline"] = { "added 7.2.5.23910" },
