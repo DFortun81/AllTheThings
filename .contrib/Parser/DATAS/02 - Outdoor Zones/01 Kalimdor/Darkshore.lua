@@ -1613,7 +1613,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 15,
 					["groups"] = {
 						objective(1, {	-- Talisman of Corruption
-							["provider"] = { "i", 12355 },	-- Talisman of Corruption
+							["providers"] = {
+								{ "i",  12355 },	-- Talisman of Corruption
+								{ "o", 177624 },	-- Xabraxxis' Demon Bag
+							},
 							["coords"] = {
 								{ 52.30, 33.39, DARKSHORE },
 								{ 52.5, 33.5, DARKSHORE },
