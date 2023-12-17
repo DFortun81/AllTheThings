@@ -5810,6 +5810,7 @@ _.ObjectNames = {
 	[408860] = "Mimiron's Booster Part",
 	[408976] = "Ancient Tome",
 	[408980] = "Tyr's Legacy",
+	[408997] = "Turtle Egg",
 	[409012] = "Auction House Bill of Sale",
 	[409016] = "Void Storage Receipt",
 	[409017] = "Garden Supply Receipt",
