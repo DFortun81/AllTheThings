@@ -2110,7 +2110,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		}),
 		filter(COSMETIC, {
 			i(34086, {["timeline"] = {ADDED_2_3_0, REMOVED_7_3_2}}),	-- Winter Boots
-			i(151791, {["timeline"] = {REMOVED_7_3_2}}),	-- Winter Boots
+			i(151791, {["timeline"] = {ADDED_7_3_2}}),	-- Winter Boots
 		}),
 		filter(MISC, {
 			i(18251),	-- Core Armor Kit
