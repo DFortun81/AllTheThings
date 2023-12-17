@@ -722,7 +722,7 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 							displayID = AllowedDisplayID[displayInfos[i]]
 							if displayID then
 						model = self.Models[i];
-								model:SetDisplayInfo();
+								model:SetDisplayInfo(displayID);
 						model:SetCamDistanceScale(scale);
 						model:SetFacing(rotation);
 						model:SetPosition(0, (i % 2 == 0 and 0.5 or -0.5), 0);
@@ -736,7 +736,7 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 							displayID = AllowedDisplayID[displayInfos[i]]
 							if displayID then
 						model = self.Models[i];
-						model:SetDisplayInfo(displayInfos[i]);
+								model:SetDisplayInfo(displayID);
 						model:SetCamDistanceScale(scale);
 						model:SetFacing(rotation);
 						fi = math_floor(i / 2);
