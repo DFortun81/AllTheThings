@@ -1625,7 +1625,6 @@ root(ROOTS.Unsorted, {
 				i(201196),	-- Pretty Flower
 				i(201194),	-- Pumice Hand Chalk
 				i(192706),	-- Razor Quill
-				i(192718),	-- Rock-Hard Eggshell
 				i(192650),	-- Roomy Shell
 				i(201186),	-- Rope Bonds
 				i(192719),	-- Scaled Toes

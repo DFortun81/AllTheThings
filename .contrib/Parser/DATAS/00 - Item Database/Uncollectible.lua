@@ -635,6 +635,7 @@ i(192683);	-- Slimy Frog Eggs
 i(192685);	-- Battle-Hardened Fang
 i(192711);	-- Oily Liver
 i(192717);	-- Animated Splinter
+i(192718);	-- Rock-Hard Eggshell
 i(192729);	-- Unhinged Mandible
 i(192730);	-- Unstable Arcane Essence
 i(193384);	-- Crumbling Bone
