@@ -938,12 +938,12 @@ i(162320, 268879);	-- Versatile Navigation [Rank 3] (A)
 i(162726, 268879);	-- Versatile Navigation [Rank 3] (H)
 i(162319, 255131);	-- Torrent of Elements [Rank 3]
 -- NYI --
-i(0, 255106);		-- 9.0 Blacksmithing - Modified Crafting Reagent 03
-i(0, 255107);		-- 9.0 Blacksmithing - Modified Crafting Reagent 04
+--i(0, 255106);		-- 9.0 Blacksmithing - Modified Crafting Reagent 03
+--i(0, 255107);		-- 9.0 Blacksmithing - Modified Crafting Reagent 04
 i(0, 269720);		-- Honorable Combatant's Salutary Scepter [Rank 1]
 i(0, 269721);		-- Honorable Combatant's Salutary Scepter [Rank 2]
 i(0, 269722);		-- Honorable Combatant's Salutary Scepter [Rank 3]
-i(0, 255108);		-- REUSE ME (DNT)
+--i(0, 255108);		-- REUSE ME (DNT)
 i(0, 265107);		-- Talanji's Salutary Scepter [Rank 1]
 i(0, 265108);		-- Talanji's Salutary Scepter [Rank 2]
 i(0, 265109);		-- Talanji's Salutary Scepter [Rank 2]
