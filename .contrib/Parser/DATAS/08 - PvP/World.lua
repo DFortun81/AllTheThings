@@ -167,6 +167,22 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 				}),
 			}),
 		}),
+		n(QUESTS, {
+			q(71143, {	-- The Horde Slayer
+				["description"] = "If you die while on the quest, and are resurrected you will continue gaining credit.",
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					title(375),	-- <Name>, the Horde Slayer
+				},
+			}),
+			q(71144, {	-- The Alliance Slayer
+				["description"] = "If you die while on the quest, and are resurrected you will continue gaining credit.",
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					title(376),	-- <Name>, the Alliance Slayer
+				},
+			}),
+		})
 		n(REWARDS, {
 			currency(2123),	-- Bloody Tokens
 			i(201756),	-- Bulging Coin Purse

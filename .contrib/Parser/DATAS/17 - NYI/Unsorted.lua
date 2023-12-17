@@ -2726,8 +2726,6 @@ root(ROOTS.Unsorted, {
 				q(71086),	--
 				q(71087),	--
 				q(71088),	--
-				q(71143),	-- The Horde Slayer
-				q(71144),	-- The Alliance Slayer
 				q(71147),	-- Continued Waygate Exploration
 				-- 10.0.0.45335
 				q(70993),	--
