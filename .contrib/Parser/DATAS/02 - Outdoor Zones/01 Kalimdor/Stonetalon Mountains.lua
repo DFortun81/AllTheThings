@@ -627,7 +627,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 17,
 					["groups"] = {
 						objective(1, {	-- 0/1 Venture Co. Engineering Plans
-							["provider"] = { "i", 5718 },	-- Venture Co. Engineering Plans
+							["providers"] = {
+								{ "i", 5718 },	-- Venture Co. Engineering Plans
+								{ "o", 19602 },	-- Venture Co. Engineering Plans
+							},
 							["coord"] = { 66.1, 51.3, STONETALON_MOUNTAINS },
 						}),
 					},
@@ -647,7 +650,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 17,
 					["groups"] = {
 						objective(1, {	-- 0/1 Venture Co. Letters
-							["provider"] = { "i", 5717 },	-- Venture Co. Letters
+							["providers"] = {
+								{ "i", 5717 },	-- Venture Co. Letters
+								{ "o", 19603 },	-- Venture Co. Documents
+							},
 							["coord"] = { 74.4, 59.2, STONETALON_MOUNTAINS },
 						}),
 					},
