@@ -73,9 +73,17 @@ root(ROOTS.Zones, {
 						crit(39119, {	-- In Defiance of the Scourge
 							["sourceQuest"] = 13157,	-- The Crusaders' Pinnacle
 						}),
-						-- TODO: This is a nestes criteria tree of HQTs, so were can we get the name?
-						crit(9, {	-- Mord'rethar: The Death Gate
-							-- NOTE: this was automatically marked as complete for some reason
+						crit(39120, {	-- Mord'rethar: The Death Gate
+							["races"] = ALLIANCE_ONLY,
+						}),
+						crit(39121, {	-- Mord'rethar: The Death Gate
+							["races"] = ALLIANCE_ONLY,
+						}),
+						crit(39122, {	-- Mord'rethar: The Death Gate
+							["races"] = HORDE_ONLY,
+						}),
+						crit(39123, {	-- Mord'rethar: The Death Gate
+							["races"] = HORDE_ONLY,
 						}),
 						crit(39124, {	-- Aldur'thar: The Desolation Gate
 							["races"] = ALLIANCE_ONLY,
@@ -85,9 +93,17 @@ root(ROOTS.Zones, {
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 13367,	-- No Rest For The Wicked (H)
 						}),
-						-- TODO: This is a nestes criteria tree of HQTs, so were can we get the name?
-						crit(11, {	-- Corp'rethar: The Horror Gate
-							-- NOTE: this was automatically marked as complete for some reason
+						crit(39126, {	-- Corp'rethar: The Horror Gate
+							["races"] = ALLIANCE_ONLY,
+						}),
+						crit(39127, {	-- Corp'rethar: The Horror Gate
+							["races"] = ALLIANCE_ONLY,
+						}),
+						crit(39128, {	-- Corp'rethar: The Horror Gate
+							["races"] = HORDE_ONLY,
+						}),
+						crit(39129, {	-- Corp'rethar: The Horror Gate
+							["races"] = HORDE_ONLY,
 						}),
 						-- #endif
 					}),

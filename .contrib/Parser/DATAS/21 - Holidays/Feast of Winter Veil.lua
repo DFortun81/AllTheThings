@@ -466,6 +466,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["timeline"] = { "added 3.0.1" },
 			["maps"] = { IRONFORGE },
 			["races"] = ALLIANCE_ONLY,
+			["_noautomation"] = true,
 		}),
 		ach(259, {	-- Scrooge (H)
 			["providers"] = {
@@ -484,6 +485,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				THUNDER_BLUFF,
 			},
 			["races"] = HORDE_ONLY,
+			["_noautomation"] = true,
 		}),
 		ach(279, {	-- Simply Abominable
 			["sourceQuests"] = {
