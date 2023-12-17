@@ -631,6 +631,7 @@ i(192672);	-- Tattered Proto-Wing
 i(192673);	-- Torn Ear
 i(192674);	-- Unknown Titan Mechanism
 i(192675);	-- Winglet
+i(192683);	-- Slimy Frog Eggs
 i(192685);	-- Battle-Hardened Fang
 i(192711);	-- Oily Liver
 i(192717);	-- Animated Splinter

@@ -1640,7 +1640,6 @@ root(ROOTS.Unsorted, {
 				i(192669),	-- Sizeable Feather
 				i(201201),	-- Skull Pendant
 				i(192720),	-- Slender Twisting Horn
-				i(192683),	-- Slimy Frog Eggs
 				i(192633),	-- Slit-Shaped Pupil
 				i(201221),	-- Small Titan Mechanism
 				i(201179),	-- Snapped Tusk Tip
