@@ -517,6 +517,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		pvp(ach(252, {	-- With a Little Helper from My Friends
 			["provider"] = { "o", 180796 },	-- PX-238 Winter Wondervolt
 			["timeline"] = { "added 3.0.1" },
+			["_noautomation"] = true,
 		})),
 		ach(1705, {	-- Clockwork Rocket Bot (2007)
 			["provider"] = { "i", 34425 },	-- Clockwork Rocket Bot

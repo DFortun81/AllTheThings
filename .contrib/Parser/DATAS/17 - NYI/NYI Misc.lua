@@ -1033,6 +1033,7 @@ root(ROOTS.NeverImplemented, {
 				i(210439),	-- Speck of Mana
 				i(210440),	-- Splendid Blossom
 				i(210438),	-- Wisp Dust
+				i(210326),	-- Medal of Conquest
 				------ Insignia ------
 				i(210419),	-- Dream Wardens Insignia [Uncommon]
 				i(210420),	-- Dream Wardens Insignia [Rare]

@@ -1044,8 +1044,7 @@ root(ROOTS.Unsorted, {
 			i(212645),	-- PH Hornstrider Red
 		})),
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
-			i(211927),	-- Tattered Dreamleaf
-			i(212554),	-- Medal of Conquest
+			i(211927),	-- Tattered DreamleafS
 
 			i(211260),	-- Crimson Gladiator's Spear
 
