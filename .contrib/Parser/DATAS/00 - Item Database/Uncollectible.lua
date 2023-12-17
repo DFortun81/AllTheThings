@@ -652,6 +652,7 @@ i(201222);	-- Smooth Seashell
 i(201424);	-- Unusable Plant Matter
 i(201967);	-- Autographed Skull
 i(201968);	-- Enormous Grain of Salt
+i(201969);	-- Threatening Note
 i(201970);	-- Stolen Illidari Blindfold
 i(201971);	-- Threatening Note
 -- Wierd

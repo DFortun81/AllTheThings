@@ -29,7 +29,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["groups"] = {
 					i(210050),	-- Mysterious Seeds (QI!)
 				},
-			})
+			}),
+			o(409458, {	-- Lost Fishing Supplies
+				["coord"] = { 63.3, 85.1, EMERALD_DREAM },
+				["groups"] = {
+					i(209853),	-- Unstable Water Walking Potion
+				},
+			}),
 		}),
 	}),
 })));

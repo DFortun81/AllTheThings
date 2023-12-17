@@ -1019,7 +1019,6 @@ root(ROOTS.NeverImplemented, {
 				i(208690),	-- Roottwined Key
 				i(210726),	-- Ruby Flightstone
 				i(208606),	-- Somnagora's Heart
-				i(209853),	-- Unstable Water Walking Potion
 				i(208745),	-- Your Reward [DNT]
 				------ Trash ------
 				i(210445),	-- Ash Pouch

@@ -1658,7 +1658,6 @@ root(ROOTS.Unsorted, {
 				i(192725),	-- Thin Blubber
 				i(192696),	-- Third Head's Eye
 				i(201223),	-- Thorn Bracelet
-				i(201969),	-- Threatening Note
 				i(193447),	-- Thunder Thigh
 				i(192726),	-- Thunderhorn
 				i(192727),	-- Timeless Horns
