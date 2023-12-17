@@ -380,6 +380,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "removed 4.0.3" },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
+								objective(1, {	-- 0/7 Young Nightsaber
+									["provider"] = { "n", 2031 },	-- Young Nightsaber
+								}),
+								objective(2, {	-- 0/4 Young Thistle Boar
+									["provider"] = { "n", 1984 },	-- Young Thistle Boar
+								}),
 								i(5394),	-- Archery Training Gloves
 								i(11187),	-- Stemleaf Bracers
 							},
@@ -391,6 +397,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "removed 4.0.3" },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
+								objective(1, {	-- 0/7 Mangy Nightsaber
+									["provider"] = { "n", 2032 },	-- Mangy Nightsaber
+								}),
+								objective(2, {	-- 0/7 Thistle Boar
+									["provider"] = { "n", 1985 },	-- Thistle Boar
+								}),
 								i(5405),	-- Draped Cloak
 								i(6058),	-- Blackened Leather Belt
 							},
