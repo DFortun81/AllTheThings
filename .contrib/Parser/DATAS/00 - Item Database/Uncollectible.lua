@@ -614,6 +614,7 @@ i(192621);	-- Long-Toed Talon
 i(192622);	-- Massive Beast Eye
 i(192623);	-- Massive Proto-Dragon Claw
 i(192626);	-- Mound of Dust
+i(192628);	-- Phoenix Ash
 i(192629);	-- Primal Beast Claw
 i(192630);	-- Reef Carapace
 i(192632);	-- Sharp Bird Talon
@@ -627,6 +628,7 @@ i(192661);	-- Prehistoric Fin
 i(192662);	-- Pyretic Speck
 i(192664);	-- Serrated Pincer
 i(192666);	-- Severed Roots
+i(192669);	-- Sizeable Feather
 i(192672);	-- Tattered Proto-Wing
 i(192673);	-- Torn Ear
 i(192674);	-- Unknown Titan Mechanism

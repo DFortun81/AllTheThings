@@ -1617,7 +1617,6 @@ root(ROOTS.Unsorted, {
 				i(201219),	-- Parchment Cards
 				i(201171),	-- Perfectly Round Stone
 				i(192713),	-- Pharyngeal Jaw
-				i(192628),	-- Phoenix Ash
 				i(192715),	-- Phoenix Stone
 				i(201163),	-- Piece of Dragonkin Eggshell
 				i(201183),	-- Pouch of Salt
@@ -1636,7 +1635,6 @@ root(ROOTS.Unsorted, {
 				i(201207),	-- Shells in a Conch
 				i(201162),	-- Shiny Metal Scraps
 				i(192668),	-- Short Rib
-				i(192669),	-- Sizeable Feather
 				i(201201),	-- Skull Pendant
 				i(192720),	-- Slender Twisting Horn
 				i(192633),	-- Slit-Shaped Pupil
