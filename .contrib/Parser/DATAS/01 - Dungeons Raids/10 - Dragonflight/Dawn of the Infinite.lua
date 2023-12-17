@@ -543,6 +543,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(108150),	-- Hardened Draeneic Steel Dagger		(NYI)
 		ig(108236),	-- Peerless Draenic Steel Dagger		(NYI)
 		ig(3222),	-- Wicked Dagger						(NYI)
+		ig(2664),	--										(NYI/UNIQUE) 
 
 		ig(14151),	-- Chanting Blade						(Removed)
 		ig(134718),	-- Cold-Touched Shanker					(Removed)

@@ -52,6 +52,10 @@ root(ROOTS.Promotions, {
 				["description"] = "Amazon Prime Gaming reward from November 28th 2023 till December 26th 2023.",
 				["timeline"] = { "added 10.2.0.52188", "removed 10.2.0.99999" },
 			}),
+			--[[i(38313, {	-- 
+				["description"] = "Amazon Prime Gaming reward from November 28th 2023 till December 26th 2023.",
+				["timeline"] = { "added 10.2.0.52188", "removed 10.2.0.99999" },
+			}),--]]
 		},
 	}),
 });
