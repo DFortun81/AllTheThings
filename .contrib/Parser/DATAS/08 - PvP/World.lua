@@ -182,7 +182,7 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 					title(376),	-- <Name>, the Alliance Slayer
 				},
 			}),
-		})
+		}),
 		n(REWARDS, {
 			currency(2123),	-- Bloody Tokens
 			i(201756),	-- Bulging Coin Purse
