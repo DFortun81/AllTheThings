@@ -111,7 +111,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					-- #endif
 				})),
-				n(21643, {	-- Alurmi <Keepers of Time Quartermaster>
+				applyclassicphase(TBC_PHASE_ONE, n(21643, {	-- Alurmi <Keepers of Time Quartermaster>
 					["coord"] = { 40.0, 77.2, 74 },
 					["groups"] = {
 						i(29183),	-- Bindings of the Timewalker
@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 						i(31355),	-- Recipe: Flask of Supreme Power (RECIPE!)
 					},
-				}),
+				})),
 				n(155944, {	-- Otela <Time-Lost Baubles>
 					["coord"] = { 42.4, 71.6, 74 },
 					["timeline"] = { "added 8.2.0.30918" },
