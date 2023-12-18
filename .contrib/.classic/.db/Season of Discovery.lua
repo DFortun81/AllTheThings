@@ -545,7 +545,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(createHeader({	
 	}), {
 		["aqd"] = faction(2586, AZEROTH_COMMERCE_AUTHORITY_VENDORS),
 		["hqd"] = faction(2587, DUROTAR_SUPPLY_AND_LOGISTICS_VENDORS),
-		["OnInit"] = [[function(t) _.ResolveQuestData(t); local rep = t.factionID; for index,child in ipairs(t.g[1].g) do if child.minReputation then child.minReputation[1] = rep; end end return t; end]],
+		["OnInit"] = [[function(t) _.ResolveQuestData(t); local rep = t.factionID; for index,child in ipairs(t.g[1].g) do if child.maxReputation then child.maxReputation[1] = rep; end end return t; end]],
 		["groups"] = {
 			n(QUESTS, {
 				q(78612, {	-- A Full Shipment [iLvl 10 - Gathered]
