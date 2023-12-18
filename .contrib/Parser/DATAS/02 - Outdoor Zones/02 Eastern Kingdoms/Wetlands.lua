@@ -890,11 +890,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {
-						objective(1, {	-- 0/1 Flagongut's Fossil
-							["provider"] = { "i", 5234 },	-- Flagongut's Fossil
-							["coord"] = { 38.8, 52.2, WETLANDS },
-						}),
-						objective(2, {	-- 0/1 Stone of Relu
+						objective(1, {	-- 0/1 Stone of Relu
 							["provider"] = { "i", 5233 },	-- Stone of Relu
 							["crs"] = {
 								1020,	-- Mottled Raptor
@@ -902,6 +898,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								1021,	-- Mottled Screecher
 								1022,	-- Mottled Scytheclaw
 							},
+						}),
+						objective(2, {	-- 0/1 Flagongut's Fossil
+							["providers"] = {
+								{ "i", 5234 },	-- Flagongut's Fossil
+								{ "o", 9630 },	-- Flagongut's Fossil
+							},
+							["coord"] = { 38.8, 52.2, WETLANDS },
 						}),
 						i(5627, {	-- Relic Blade
 							["timeline"] = { "removed 4.0.3" },

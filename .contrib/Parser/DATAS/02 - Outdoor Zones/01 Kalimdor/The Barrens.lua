@@ -1631,6 +1631,40 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78287, {	-- Let Me Make You An Offer [A]
+					["providers"] = {
+						{ "n", 211653 },	-- Grizzby
+						{ "i", 211447 },	-- Arms Shipment
+					},
+					["sourceQuests"] = {
+						78265,	-- Fish Oil
+						78266,	-- Dark Iron Ordinance
+						78267,	-- Shredder Turbochargers
+					},
+					["coord"] = { 61.8, 39.4, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78288, {	-- Let Me Make You An Offer [H]
+					["providers"] = {
+						{ "n", 211653 },	-- Grizzby
+						{ "i", 211447 },	-- Arms Shipment
+					},
+					["sourceQuests"] = {
+						78265,	-- Fish Oil
+						78266,	-- Dark Iron Ordinance
+						78267,	-- Shredder Turbochargers
+					},
+					["coord"] = { 61.8, 39.4, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
+				})),
+				-- #endif
 				q(1060, {	-- Letter to Jin'Zil
 					["providers"] = {
 						{ "n", 3449 },	-- Darsok Swiftdagger
@@ -3874,9 +3908,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(211653, {	-- Grizzby
 					["sourceQuests"] = {
-						78265,	-- Fish Oil
-						78266,	-- Dark Iron Ordinance
-						78267,	-- Shredder Turbochargers
+						78287,	-- Let Me Make You An Offer [A]
+						78288,	-- Let Me Make You An Offer [h]
 					},
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
 					["lvl"] = 20,
