@@ -16,13 +16,13 @@ namespace ATT
         /// <param name="profession">The profession.</param>
         /// <param name="expansion">The expansion.</param>
         /// <returns></returns>
-        public async static Task<string> GetStringFromWoWHead(string profession, string expansion="classic")
+        public async static Task<string> GetStringFromWoWHead(string profession, string expansion="")
         {
 
             try
             {
                 HttpClient client = new();
-                return await client.GetStringAsync($"https://www.wowhead.com/{expansion}/spells/{profession}");
+                return await client.GetStringAsync($"https://www.wowhead.com/{expansion}spells/{profession}");
             }
             catch (Exception e)
             {
@@ -73,65 +73,69 @@ namespace ATT
                     recipeList.Add(objectData);
                 }
             }
-            recipeList.Sort((a, b) =>
-            {
-                a.TryGetValue("learnedAt", out object? learnedAtA);
-                b.TryGetValue("learnedAt", out object? learnedAtB);
-                if (learnedAtA != null)
-                {
-                    if (learnedAtB != null)
-                    {
-                        var diff = Convert.ToInt32(learnedAtA).CompareTo(Convert.ToInt32(learnedAtB));
-                        if (diff == 0)
-                        {
-                            if (a.TryGetValue("name", out object? nameObj) && nameObj is string nameA)
-                            {
-                                if (b.TryGetValue("name", out nameObj) && nameObj is string nameB) return nameA.CompareTo(nameB);
-                                return 1;
-                            }
-                            else
-                            {
-                                if (b.TryGetValue("name", out nameObj) && nameObj is string nameB) return 1;
-                            }
-                        }
-                        return diff;
-                    }
-                    return Convert.ToInt32(learnedAtA).CompareTo(0);
-                }
-                else
-                {
-                    if (learnedAtB != null) return Convert.ToInt32(learnedAtB).CompareTo(0);
 
-                    if (a.TryGetValue("name", out object? nameObj) && nameObj is string nameA)
+            if (recipeList.Any())
+            {
+                recipeList.Sort((a, b) =>
+                {
+                    a.TryGetValue("learnedAt", out object? learnedAtA);
+                    b.TryGetValue("learnedAt", out object? learnedAtB);
+                    if (learnedAtA != null)
                     {
-                        if (b.TryGetValue("name", out nameObj) && nameObj is string nameB) return nameA.CompareTo(nameB);
-                        return 1;
+                        if (learnedAtB != null)
+                        {
+                            var diff = Convert.ToInt32(learnedAtA).CompareTo(Convert.ToInt32(learnedAtB));
+                            if (diff == 0)
+                            {
+                                if (a.TryGetValue("name", out object? nameObj) && nameObj is string nameA)
+                                {
+                                    if (b.TryGetValue("name", out nameObj) && nameObj is string nameB) return nameA.CompareTo(nameB);
+                                    return 1;
+                                }
+                                else
+                                {
+                                    if (b.TryGetValue("name", out nameObj) && nameObj is string nameB) return 1;
+                                }
+                            }
+                            return diff;
+                        }
+                        return Convert.ToInt32(learnedAtA).CompareTo(0);
                     }
                     else
                     {
-                        if (b.TryGetValue("name", out nameObj) && nameObj is string nameB) return 1;
+                        if (learnedAtB != null) return Convert.ToInt32(learnedAtB).CompareTo(0);
+
+                        if (a.TryGetValue("name", out object? nameObj) && nameObj is string nameA)
+                        {
+                            if (b.TryGetValue("name", out nameObj) && nameObj is string nameB) return nameA.CompareTo(nameB);
+                            return 1;
+                        }
+                        else
+                        {
+                            if (b.TryGetValue("name", out nameObj) && nameObj is string nameB) return 1;
+                        }
+                    }
+                    return 0;
+                });
+
+                /*
+                var jsonString = Newtonsoft.Json.JsonConvert.SerializeObject(recipeList, Newtonsoft.Json.Formatting.Indented);
+                if (!Directory.Exists("json")) Directory.CreateDirectory("json");
+                File.WriteAllText($"json/{profession}.json", jsonString);
+                */
+
+                sb.AppendLine().Append("-- ").AppendLine(profession);
+                sb.AppendLine("for spellID,learnedAt in pairs({");
+                foreach (var recipe in recipeList)
+                {
+                    if (recipe.TryGetValue("learnedAt", out object? learnedAt))
+                    {
+                        sb.Append("\t[").Append(recipe["id"]).Append("] = ").Append(learnedAt)
+                            .Append(",\t-- ").Append(recipe["name"] ?? "??").AppendLine();
                     }
                 }
-                return 0;
-            });
-
-            /*
-            var jsonString = Newtonsoft.Json.JsonConvert.SerializeObject(recipeList, Newtonsoft.Json.Formatting.Indented);
-            if (!Directory.Exists("json")) Directory.CreateDirectory("json");
-            File.WriteAllText($"json/{profession}.json", jsonString);
-            */
-
-            sb.AppendLine().Append("-- ").AppendLine(profession);
-            sb.AppendLine("for spellID,learnedAt in pairs({");
-            foreach (var recipe in recipeList)
-            {
-                if (recipe.TryGetValue("learnedAt", out object? learnedAt))
-                {
-                    sb.Append("\t[").Append(recipe["id"]).Append("] = ").Append(learnedAt)
-                        .Append(",\t-- ").Append(recipe["name"] ?? "??").AppendLine();
-                }
+                sb.AppendLine("}) do recipeDB[spellID].learnedAt = learnedAt; end");
             }
-            sb.AppendLine("}) do recipeDB[spellID].learnedAt = learnedAt; end");
         }
     }
 }
