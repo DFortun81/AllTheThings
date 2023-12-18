@@ -2269,7 +2269,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{"merge"},	-- Subroutines are automatically finalized, so merge back for further processing
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
-						{"finalize"},	-- Push the Set items to the finalized list.
 					},
 				}),
 				n(44918, {	-- Drakma <Wind Rider Keeper>

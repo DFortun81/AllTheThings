@@ -5054,7 +5054,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"sub", "pvp_gear_base", CATA_TIER, SEASON_VICIOUS, PVP_GLADIATOR },{"merge"},	-- Vicious Gladiator: Season 9 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", NECK, FINGER, TRINKET },	-- Exclude Neck, Finger and Trinkets
-						{"finalize"},	-- Push the Set items to the finalized list.
 					},
 				}),
 				n(51255, {	-- Lieutenant Tristia Original CATA S9 ELITE VENDOR Alliance

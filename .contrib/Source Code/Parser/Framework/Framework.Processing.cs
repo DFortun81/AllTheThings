@@ -1154,6 +1154,13 @@ namespace ATT
             if (!data.TryGetValue("sym", out List<object> symObject))
                 return;
 
+            // empty sym
+            if (symObject.Count == 0)
+            {
+                LogWarn($"Empty 'sym'", data);
+                return;
+            }
+
             string previousType = null;
             // some logic to check for duplicate 'select' commands of the same type
             foreach (object cmdObj in symObject)
@@ -1196,6 +1203,14 @@ namespace ATT
                         previousType = null;
                     }
                 }
+            }
+
+            // Checks on the LAST sym command
+            symObject.Last().TryConvert(out List<object> lastCommand);
+            string lastCommandName = lastCommand[0].ToString();
+            if (lastCommandName == "merge" || lastCommandName == "finalize")
+            {
+                LogWarn($"'sym' never needs to end with 'merge' or 'finalize'", data);
             }
         }
 
@@ -1650,7 +1665,7 @@ namespace ATT
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="achID"></param>
         /// <param name="data"></param>
