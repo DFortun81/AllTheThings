@@ -281,10 +281,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
-						objective(1, {	-- 0/1 The Embalmer's Heart
-							["provider"] = { "i", 2382 },	-- The Embalmer's Heart
-							["coord"] = { 28.8, 31.2, DUSKWOOD },
-							["cr"] = 314,	-- Eliza <Bride of the Embalmer>
+						q(254, {	-- Digging Through the Dirt
+							["provider"] = { "o", 51708 },	-- Eliza's Grave Dirt
+							["coord"] = { 28.8, 30.8, DUSKWOOD },
+							["timeline"] = { "removed 4.0.3" },
+							["repeatable"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/1 The Embalmer's Heart
+									["questID"] = 253,	-- Bride of the Embalmer
+									["provider"] = { "i", 2382 },	-- The Embalmer's Heart
+									["cr"] = 314,	-- Eliza <Bride of the Embalmer>
+								}),
+							},
 						}),
 						i(3560, {	-- Mantle of Honor
 							["timeline"] = { "removed 4.0.3" },
@@ -402,18 +410,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 44.9, 67.4, DUSKWOOD },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(254, {	-- Digging Through the Dirt
-					["provider"] = { "o", 51708 },	-- Eliza's Grave Dirt
-					["altQuests"] = { 253 },	-- Bride of the Embalmer
-					-- #if BEFORE 4.0.3
-					["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Bride of the Embalmer\" in your quest log.",
-					-- #endif
-					["coord"] = { 28.8, 30.8, DUSKWOOD },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 20,
 				}),
 				q(93, {	-- Dusky Crab Cakes
 					["qg"] = 272,	-- Chef Grual
