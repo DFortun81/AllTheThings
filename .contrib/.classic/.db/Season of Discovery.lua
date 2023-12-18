@@ -59,6 +59,10 @@ local OnTooltipFor_ACA_SDL = [[function(t)
 		end
 	end
 end]];
+local OnUpdateFor_ACA_SDL = [[function(t) 
+	local season = C_Seasons and C_Seasons.GetActiveSeason() or 0;
+	t.minReputation = { t.factionID, (season == 2 and ]] .. HONORED .. [[) or (season == 3 and ]] .. REVERED .. [[) or ]] .. EXALTED .. [[; };
+end]];
 
 local AZEROTH_COMMERCE_AUTHORITY_VENDORS = {	-- Azeroth Commerce Authority
 	["crs"] = {
@@ -125,11 +129,13 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(createHeader({	
 	}), bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {
 	n(FACTIONS, {
 		faction(2586, {	-- Azeroth Commerce Authority
+			["OnUpdate"] = OnUpdateFor_ACA_SDL,
 			["OnTooltip"] = OnTooltipFor_ACA_SDL,
 			["maps"] = { DARNASSUS, IRONFORGE, STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		faction(2587, {	-- Durotar Supply and Logistics
+			["OnUpdate"] = OnUpdateFor_ACA_SDL,
 			["OnTooltip"] = OnTooltipFor_ACA_SDL,
 			["maps"] = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },
 			["races"] = HORDE_ONLY,
