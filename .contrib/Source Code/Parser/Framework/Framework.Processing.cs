@@ -1162,6 +1162,7 @@ namespace ATT
             }
 
             string previousType = null;
+            string previousCommand = null;
             // some logic to check for duplicate 'select' commands of the same type
             foreach (object cmdObj in symObject)
             {
@@ -1202,6 +1203,17 @@ namespace ATT
                     {
                         previousType = null;
                     }
+
+                    // 'sub' commands always finalize, so any following command which is dependent on existing results won't do anything
+                    if (previousCommand == "sub")
+                    {
+                        if (commandName != "merge" && commandName != "sub" && commandName != "select" && commandName != "fill")
+                        {
+                            LogWarn($"'sym' 'sub' command must be followed by a 'merge' if further actions (e.g. {commandName}) are being done to the results", data);
+                        }
+                    }
+
+                    previousCommand = commandName;
                 }
             }
 
