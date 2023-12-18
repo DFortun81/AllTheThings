@@ -835,7 +835,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { MONK },
 						}),
 						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, q(77617, {	-- Relics of the Light
+						applyclassicphase(SOD_PHASE_ONE, q(77617, {	-- Relics of the Light
 							["qg"] = 925,	-- Brother Sammuel <Paladin Trainer>
 							["coord"] = { 50.4, 42.0, ELWYNN_FOREST },
 							["timeline"] = { "removed 2.0.1" },
@@ -952,7 +952,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { HUNTER },
 						}),
 						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, q(77616, {	-- The Lost Rune
+						applyclassicphase(SOD_PHASE_ONE, q(77616, {	-- The Lost Rune
 							["qg"] = 911,	-- Llane Beshere <Warrior Trainer>
 							["coord"] = { 50.2, 42.2, ELWYNN_FOREST },
 							["timeline"] = { "removed 2.0.1" },
@@ -2221,7 +2221,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(203079, {	-- Wandering Swordsman
+				applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
 					["provider"] = { "o", 392029 },	-- Swordsman's Reward
 					["coords"] = {
 						{ 25.6, 69.6, ELWYNN_FOREST },
@@ -2281,7 +2281,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(204937, {	-- Adventurer's Spirit
+				applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
 					["provider"] = { "n", 204827 },	-- Adventurer's Remains
 					["coord"] = { 52.2, 84.65, ELWYNN_FOREST },
 					["timeline"] = { "removed 2.0.1" },
@@ -2312,7 +2312,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(204989, {	-- Wounded Adventurer
+				applyclassicphase(SOD_PHASE_ONE, n(204989, {	-- Wounded Adventurer
 					["coord"] = { 62.0, 47.32, ELWYNN_FOREST },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { PALADIN },
@@ -2564,7 +2564,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204809, {	-- Rune of Furious Thunder
+				applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
 					["coord"] = { 41.6, 78.8, ELWYNN_FOREST },
 					["classes"] = { WARRIOR },
 					["cr"] = 327,	-- Goldtooth
@@ -2572,7 +2572,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(403476),	-- Engrave Pants - Furious Thunder
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204478, {	-- Severed Gnoll Head
+				applyclassicphase(SOD_PHASE_ONE, i(204478, {	-- Severed Gnoll Head
 					["coord"] = { 50.15, 62.81, ELWYNN_FOREST },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },
@@ -2582,7 +2582,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						 97,	-- Riverpaw Runt
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204476, {	-- Severed Kobold Head
+				applyclassicphase(SOD_PHASE_ONE, i(204476, {	-- Severed Kobold Head
 					["coord"] = { 39.0, 85.24, ELWYNN_FOREST },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },
@@ -2592,7 +2592,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						475,	-- Kobold Tunneler
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204477, {	-- Severed Murloc Head
+				applyclassicphase(SOD_PHASE_ONE, i(204477, {	-- Severed Murloc Head
 					["coord"] = { 50.15, 62.81, ELWYNN_FOREST },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },

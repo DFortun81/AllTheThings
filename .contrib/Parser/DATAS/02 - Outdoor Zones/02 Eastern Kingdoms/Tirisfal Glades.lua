@@ -2358,7 +2358,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(207975, {	-- Severed Bat Head
+				applyclassicphase(SOD_PHASE_ONE, i(207975, {	-- Severed Bat Head
 					["coord"] = { 43.2, 53.0, TIRISFAL_GLADES },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },
@@ -2367,7 +2367,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1554,	-- Vampiric Duskbat
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204478, {	-- Severed Gnoll Head
+				applyclassicphase(SOD_PHASE_ONE, i(204478, {	-- Severed Gnoll Head
 					["coord"] = { 59.2, 36.2, TIRISFAL_GLADES },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },
@@ -2377,7 +2377,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1675,	-- Rot Hide Mongrel
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204477, {	-- Severed Murloc Head
+				applyclassicphase(SOD_PHASE_ONE, i(204477, {	-- Severed Murloc Head
 					["coord"] = { 35.2, 42.0, TIRISFAL_GLADES },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },

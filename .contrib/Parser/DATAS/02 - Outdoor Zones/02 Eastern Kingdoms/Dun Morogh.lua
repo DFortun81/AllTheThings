@@ -2713,7 +2713,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(203079, {	-- Wandering Swordsman
+				applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
 					["provider"] = { "o", 392029 },	-- Swordsman's Reward
 					["coord"] = { 53.8, 47.2, DUN_MOROGH },
 					["groups"] = {
@@ -2775,7 +2775,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(204937, {	-- Adventurer's Spirit
+				applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
 					["provider"] = { "n", 204827 },	-- Adventurer's Remains
 					["coord"] = { 43.0, 49.6, DUN_MOROGH },
 					["timeline"] = { "removed 2.0.1" },
@@ -2806,7 +2806,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(208802, {	-- Wounded Adventurer
+				applyclassicphase(SOD_PHASE_ONE, n(208802, {	-- Wounded Adventurer
 					["coord"] = { 25.6, 43.6, DUN_MOROGH },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { PALADIN },
@@ -3021,7 +3021,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208158, {	-- Pristine Trogg Heart
+				applyclassicphase(SOD_PHASE_ONE, i(208158, {	-- Pristine Trogg Heart
 					["coord"] = { 70.6, 59.2, DUN_MOROGH },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },
@@ -3043,7 +3043,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206169, {	-- Rune of Explosive Shot
+				applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
 					["coord"] = { 31.6, 40.0, DUN_MOROGH },
 					["classes"] = { HUNTER },
 					["cr"] = 208638,	-- Fyodi
@@ -3051,7 +3051,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(410123),	-- Engrave Gloves - Explosive Shot
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204809, {	-- Rune of Furious Thunder
+				applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
 					["coord"] = { 31.6, 40.0, DUN_MOROGH },
 					["classes"] = { WARRIOR },
 					["cr"] = 208638,	-- Fyodi
@@ -3059,7 +3059,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(403476),	-- Engrave Pants - Furious Thunder
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208159, {	-- Severed Troll Head
+				applyclassicphase(SOD_PHASE_ONE, i(208159, {	-- Severed Troll Head
 					["coord"] = { 26.6, 50.6, DUN_MOROGH },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },
@@ -3071,7 +3071,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1120,	-- Frostmane Troll
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208160, {	-- Severed Wendigo Paw
+				applyclassicphase(SOD_PHASE_ONE, i(208160, {	-- Severed Wendigo Paw
 					["coord"] = { 42.6, 55.0, DUN_MOROGH },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },

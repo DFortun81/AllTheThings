@@ -401,6 +401,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isDaily"] = true,
 					["groups"] = JEWELCRAFTING_AWARD_GROUPS,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78090, {	-- A Second Opinion
+					["providers"] = {
+						{ "n",   5492 },	-- Katherine the Pure <Paladin Trainer>
+						{ "i", 209748 },	-- Althalaxx Orb
+					},
+					["sourceQuest"] = 78089,	-- Advice From Stormwind
+					["coord"] = { 37.4, 32, STORMWIND_CITY },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN },
+				})),
+				-- #endif
 				q(27106, {	-- A Villain Unmasked
 					["provider"] = { "o", 205198 },	-- Pile of Explosives
 					["sourceQuest"] = 27092,	-- Cataclysm in the Catacombs
@@ -1025,6 +1037,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3" },
 					["races"] = { HUMAN, KULTIRAN },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78091, {	-- Earning Your Salt
+					["qg"] = 5495,	-- Ursula Deline <Warlock Trainer>
+					["sourceQuest"] = 78090,	-- A Second Opinion
+					["coord"] = { 26.2, 77.4, STORMWIND_CITY },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { REDRIDGE_MOUNTAINS },
+					["classes"] = { PALADIN },
+					["groups"] = {
+						objective(1, {	-- 0/14 Summoner's Salt
+							["provider"] = { "i", 209778 },	-- Summoner's Salt
+							["crs"] = {
+								4463,	-- Blackrock Summoner
+								435,	-- Blackrock Champion
+								615,	-- Blackrock Tracker
+								4464,	-- Blackrock Gladiator
+								4462,	-- Blackrock Hunter
+								4065,	-- Blackrock Sentry
+								436,	-- Blackrock Shadowcaster
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(25156, {	-- Elemental Goo
 					["qg"] = 50480,	-- Isabel Jones
 					["coord"] = { 63.8, 61.2, STORMWIND_CITY },
@@ -1559,6 +1595,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78092, {	-- It Must Be Destroyed
+					["providers"] = {
+						{ "n",   5495 },	-- Ursula Deline <Warlock Trainer>
+						{ "i", 209748 },	-- Althalaxx Orb
+						{ "o",   409311 },	-- Spear of Mannoroth
+					},
+					["sourceQuest"] = 78091,	-- Earning Your Salt
+					["coords"] = {
+						{ 26.2, 77.4, STORMWIND_CITY },
+						{ 89.5, 76.9, ASHENVALE },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN },
+					["groups"] = {
+						objective(1, {	-- 0/12 Mote of Mannoroth
+							["provider"] = { "i", 209779 },	-- Mote of Mannoroth
+							["crs"] = {
+								11697,	-- Mannoroc Lasher
+								6115,	-- Roaming Felguard
+								6073,	-- Searing Infernal
+								6071,	-- Legion Hound
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(2746, {	-- Items of Some Consequence
 					["qg"] = 7766,	-- Tyrion
 					["sourceQuest"] = 2745,	-- Infiltrating the Castle
@@ -2132,7 +2195,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(createHeader({	-- Speak to Brother Romulus
+				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Speak to Brother Romulus
 					readable = "Speak to Brother Romulus",
 					icon = "Interface\\CURSOR\\Speak",
 					text = {
@@ -3343,7 +3406,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(205864, {	-- Charred Note
+				applyclassicphase(SOD_PHASE_ONE, i(205864, {	-- Charred Note
 					["provider"] = { "o", 402215 },	-- Charred Note
 					["questID"] = 75940,	-- Charred Note HQT
 					["sourceQuest"] = 75939,	-- Brother Romulus HQT
@@ -3353,7 +3416,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(205897, {	-- Rune of Martyrdom
+				applyclassicphase(SOD_PHASE_ONE, i(205897, {	-- Rune of Martyrdom
 					["provider"] = { "n", 205153 },	-- Ada Gelhardt
 					["questID"] = 75969,	-- Ada Gelhardt HQT
 					["sourceQuest"] = 75940,	-- Charred Note HQT
@@ -3365,7 +3428,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(410015),	-- Engrave Chest - Seal of Martyrdom
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(205683, {	-- Rune of Rebuke
+				applyclassicphase(SOD_PHASE_ONE, i(205683, {	-- Rune of Rebuke
 					["provider"] = { "n", 203475 },	-- Liv Bradford
 					["questID"] = 75300,	-- Stuart Credit HQT
 					["coord"] = { 22.6, 64.7, STORMWIND_CITY },

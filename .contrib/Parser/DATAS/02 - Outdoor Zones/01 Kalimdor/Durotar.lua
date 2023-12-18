@@ -1575,7 +1575,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					-- #if SEASON_OF_DISCOVERY
 					n(ZONE_DROPS, {
-						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206169, {	-- Rune of Explosive Shot
+						applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
 							["coord"] = { 40.6, 67.7, DUROTAR },
 							["classes"] = { HUNTER },
 							["cr"] = 3281,	-- Sarkoth
@@ -1583,7 +1583,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								recipe(410123),	-- Engrave Gloves - Explosive Shot
 							},
 						})),
-						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204809, {	-- Rune of Furious Thunder
+						applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
 							["coord"] = { 40.6, 67.7, DUROTAR },
 							["classes"] = { WARRIOR },
 							["cr"] = 3281,	-- Sarkoth
@@ -3282,7 +3282,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(203079, {	-- Wandering Swordsman
+				applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
 					["provider"] = { "o", 392029 },	-- Swordsman's Reward
 					["coords"] = {
 						{ 37.0, 46.8, DUROTAR },
@@ -3340,7 +3340,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(204937, {	-- Adventurer's Spirit
+				applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
 					["provider"] = { "n", 204827 },	-- Adventurer's Remains
 					["coord"] = { 48.0, 79.6, DUROTAR },
 					["timeline"] = { "removed 2.0.1" },
@@ -3455,7 +3455,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(207062, {	-- Severed Centaur Head
+				applyclassicphase(SOD_PHASE_ONE, i(207062, {	-- Severed Centaur Head
 					["coord"] = { 51.2, 78.4, DUROTAR },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },
@@ -3464,7 +3464,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3120,	-- Kolkar Outrunner
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206995, {	-- Severed Harpy Head
+				applyclassicphase(SOD_PHASE_ONE, i(206995, {	-- Severed Harpy Head
 					["coord"] = { 48.6, 32.4, DUROTAR },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },
@@ -3475,7 +3475,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3118,	-- Dustwind Storm Witch
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206994, {	-- Severed Quilboar Head
+				applyclassicphase(SOD_PHASE_ONE, i(206994, {	-- Severed Quilboar Head
 					["coord"] = { 50.0, 49.6, DUROTAR },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },

@@ -1670,7 +1670,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, o(407850, {	-- Sunken Reliquary
+				applyclassicphase(SOD_PHASE_ONE, o(407850, {	-- Sunken Reliquary
 					["coord"] = { 36.8, 91.4, LOCH_MODAN },
 					["timeline"] = { "removed 2.0.1" },
 					["groups"] = {

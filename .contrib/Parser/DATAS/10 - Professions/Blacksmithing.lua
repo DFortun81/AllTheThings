@@ -1605,7 +1605,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 16646,
 				},
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, {
+				applyclassicphase(SOD_PHASE_ONE, {
 					["name"] = "Mantle of the Second War",
 					["recipeID"] = 427061,
 				}),

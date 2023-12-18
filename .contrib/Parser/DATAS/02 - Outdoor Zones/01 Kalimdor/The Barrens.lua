@@ -983,7 +983,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, q(78266, {	-- Dark Iron Ordinance
+				applyclassicphase(SOD_PHASE_ONE, q(78266, {	-- Dark Iron Ordinance
 					["qg"] = 211653,	-- Grizzby
 					["sourceQuest"] = 78284,	-- Grizzby HQT
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
@@ -1167,7 +1167,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, q(78265, {	-- Fish Oil
+				applyclassicphase(SOD_PHASE_ONE, q(78265, {	-- Fish Oil
 					["qg"] = 211653,	-- Grizzby
 					["sourceQuest"] = 78284,	-- Grizzby HQT
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
@@ -2365,7 +2365,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, q(78267, {	-- Shredder Turbochargers
+				applyclassicphase(SOD_PHASE_ONE, q(78267, {	-- Shredder Turbochargers
 					["qg"] = 211653,	-- Grizzby
 					["sourceQuest"] = 78284,	-- Grizzby HQT
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
@@ -2412,7 +2412,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(createHeader({	-- Speak to Grizzby
+				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Speak to Grizzby
 					readable = "Speak to Grizzby",
 					icon = "Interface\\CURSOR\\Speak",
 					text = {
@@ -3872,7 +3872,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(211653, {	-- Grizzby
+				applyclassicphase(SOD_PHASE_ONE, n(211653, {	-- Grizzby
 					["sourceQuests"] = {
 						78265,	-- Fish Oil
 						78266,	-- Dark Iron Ordinance

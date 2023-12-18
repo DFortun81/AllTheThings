@@ -1209,6 +1209,10 @@ _.ObjectNames = {
 	[397987] = "Kobold Stashbox",
 	[402215] = "Charred Note",
 	[407850] = "Sunken Reliquary",
+	[409289] = "Strange Orb",
+	[409311] = "Spear of Mannoroth",
+	[409315] = "Shattered Orb",
+	[411715] = "Bough of Altek",
 }
 _.ObjectIcons = {
 	[31] = "Interface/Icons/INV_Mount_AllianceLionG",
@@ -1977,6 +1981,8 @@ _.ObjectModels = {
 	[392029] = 196988,
 	[397987] = 196982,
 	[407850] = 200953,
+	[409289] = 201095,
+	[409311] = 201649,
 }
 
 -- Supported Locales
@@ -2476,6 +2482,8 @@ localize(_.ObjectNames, {
 	[397987] = "Lagertruhe der Kobolde",
 	[402215] = "Verkohlte Notiz",
 	[407850] = "Versunkener Reliquienschrein",
+	[409289] = "Seltsame Kugel",
+	[411715] = "Alteks Zweig",
 });
 end
 if simplifiedLocale == "es" then
@@ -3462,6 +3470,7 @@ localize(_.ObjectNames, {
 	[392029] = "Récompense de l’épéiste",
 	[397987] = "Boîte de rangement de Kobold",
 	[407850] = "Reliquaire englouti",
+	[409289] = "Orbe étrange",
 });
 end
 if simplifiedLocale == "it" then
@@ -5275,6 +5284,7 @@ localize(_.ObjectNames, {
 	[207724] = "Обломки кораблекрушения",
 	[392029] = "Награда мечника",
 	[397987] = "Тайник кобольдов",
+	[409289] = "Странная сфера",
 });
 end
 if simplifiedLocale == "zh" then

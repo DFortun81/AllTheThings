@@ -969,7 +969,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 					["recipeID"] = 17557
 				},
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, {
+				applyclassicphase(SOD_PHASE_ONE, {
 					["name"] = "Elixir of Coalesced Regret",
 					["recipeID"] = 426607
 				}),

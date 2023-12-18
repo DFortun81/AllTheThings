@@ -595,7 +595,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					i(5195),	-- Gold-flecked Gloves
 					-- #endif
 					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(210178)),	-- Schematic: Shredder Autosalvage Unit
+					applyclassicphase(SOD_PHASE_ONE, i(210178)),	-- Schematic: Shredder Autosalvage Unit
 					-- #endif
 				},
 			}),

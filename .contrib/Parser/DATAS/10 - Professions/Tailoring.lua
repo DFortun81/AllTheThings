@@ -1262,7 +1262,7 @@ profession(TAILORING, {
 					["recipeID"] = 3841
 				},
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, {
+				applyclassicphase(SOD_PHASE_ONE, {
 					["name"] = "Phoenix Bindings",
 					["recipeID"] = 428424
 				}),

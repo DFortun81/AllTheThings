@@ -89,7 +89,7 @@ local applyRuneReputationCosts = function(rune)
 	return rune;
 end
 
-root(ROOTS.SeasonOfDiscovery, applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(createHeader({	-- Season of Discovery
+root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Season of Discovery
 		readable = "Season of Discovery",
 		icon = "Interface\\Icons\\inv_misc_map_01",
 		text = {

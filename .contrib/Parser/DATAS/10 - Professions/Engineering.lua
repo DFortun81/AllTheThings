@@ -1415,7 +1415,7 @@ profession(ENGINEERING, {
 					["recipeID"] = 19567,
 				},
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, {
+				applyclassicphase(SOD_PHASE_ONE, {
 					["name"] = "Shredder Autosalvage Unit",
 					["recipeID"] = 424641,
 				}),

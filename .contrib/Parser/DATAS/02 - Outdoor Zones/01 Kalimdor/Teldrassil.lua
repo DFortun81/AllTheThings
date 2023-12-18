@@ -1791,7 +1791,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(203079, {	-- Wandering Swordsman
+				applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
 					["provider"] = { "o", 392029 },	-- Swordsman's Reward
 					["coords"] = {
 						{ 39.6, 37.6, TELDRASSIL },
@@ -1813,7 +1813,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(204937, {	-- Adventurer's Spirit
+				applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
 					["provider"] = { "n", 204827 },	-- Adventurer's Remains
 					["coord"] = { 33.6, 35.6, TELDRASSIL },
 					["timeline"] = { "removed 2.0.1" },
@@ -1907,7 +1907,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.4, 24.6, TELDRASSIL },
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206169, {	-- Rune of Explosive Shot
+				applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
 					["coord"] = { 45.6, 59.6, TELDRASSIL },
 					["classes"] = { HUNTER },
 					["cr"] = 7318,	-- Rageclaw
@@ -1915,7 +1915,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(410123),	-- Engrave Gloves - Explosive Shot
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208610, {	-- Severed Owl Head
+				applyclassicphase(SOD_PHASE_ONE, i(208610, {	-- Severed Owl Head
 					["coord"] = { 40.6, 53.6, TELDRASSIL },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },
@@ -1924,7 +1924,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1995,	-- Strigid Owl
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208612, {	-- Severed Spider Head
+				applyclassicphase(SOD_PHASE_ONE, i(208612, {	-- Severed Spider Head
 					["coord"] = { 59.8, 59.0, TELDRASSIL },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },
@@ -1933,7 +1933,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1999,	-- Webwood Venomfang
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208611, {	-- Severed Tiger Head
+				applyclassicphase(SOD_PHASE_ONE, i(208611, {	-- Severed Tiger Head
 					["coord"] = { 40.4, 60.0, TELDRASSIL },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },

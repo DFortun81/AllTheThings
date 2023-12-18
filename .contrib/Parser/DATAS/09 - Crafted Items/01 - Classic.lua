@@ -81,7 +81,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(8949),	-- Elixir of Agility
 			i(13453),	-- Elixir of Brute Force
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(210708)),	-- Elixir of Coelesced Regret
+			applyclassicphase(SOD_PHASE_ONE, i(210708)),	-- Elixir of Coelesced Regret
 			-- #endif
 			i(3389),	-- Elixir of Defense
 			i(9224),	-- Elixir of Demonslaying
@@ -301,7 +301,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22763)),	-- Ironvine Gloves
 			applyclassicphase(PHASE_FIVE, i(22195)),	-- Light Obsidian Belt
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(210773)),	-- Mantle of the Second War
+			applyclassicphase(SOD_PHASE_ONE, i(210773)),	-- Mantle of the Second War
 			-- #endif
 			i(7931),	-- Mithril Coif
 			i(7924),	-- Mithril Scale Bracers
@@ -1032,7 +1032,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(6712),	-- Practice Lock
 			i(15846),	-- Salt Shaker
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(210147)),	-- Shredder Autosalvage Unit
+			applyclassicphase(SOD_PHASE_ONE, i(210147)),	-- Shredder Autosalvage Unit
 			-- #endif
 			i(17716),	-- Snowmaster 9000 (TOY!)
 			applyclassicphase(TBC_PHASE_ONE, i(22728)),	-- Steam Tonk Controller
@@ -2353,7 +2353,7 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(206507, {["timeline"] = {ADDED_10_1_5}}),	-- Necrotic Gown
 			i(206582, {["timeline"] = {ADDED_10_1_5}}),	-- Peculiar Glacial Mantle
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(210781)),	-- Phoenix Bindings
+			applyclassicphase(SOD_PHASE_ONE, i(210781)),	-- Phoenix Bindings
 			-- #endif
 			i(206562, {["timeline"] = {ADDED_10_1_5}}),	-- Shroud of Forbidden Magic
 		}),

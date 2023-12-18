@@ -218,7 +218,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			pvp(n(PVP, {
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(createHeader({	-- Defeat a Lieutenant
+				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Defeat a Lieutenant
 					readable = "Defeat a Lieutenant",
 					icon = "Interface\\CURSOR\\Attack",
 					text = {
@@ -271,7 +271,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(createHeader({	-- Win the Battle
+				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Win the Battle
 					readable = "Win the Battle",
 					icon = [[~_.asset("Category_PvP")]],
 					text = {
@@ -366,6 +366,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78088, {	-- A Strange Artifact
+					["providers"] = {
+						{ "i", 209836 },	-- Althalaxx Orb
+						{ "n",   3663 },	-- Delgren the Purifier
+					},
+					["coord"] = { 26.2, 38.6, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { DARKSHORE },
+					["classes"] = { PALADIN },
+				})),
+				-- #endif
 				q(13919, {	-- A Trip to the Moonwell
 					["qg"] = 3894,	-- Pelturas Whitemoon
 					["sourceQuest"] = 26475,	-- Elune's Tear
@@ -373,6 +385,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78089, {	-- Advice From Stormwind
+					["providers"] = {
+						{ "n",   3663 },	-- Delgren the Purifier
+						{ "i", 209748 },	-- Althalaxx Orb
+					},
+					["sourceQuest"] = 78088,	-- A Strange Artifact
+					["coord"] = { 26.2, 38.6, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { STORMWIND_CITY },
+					["classes"] = { PALADIN },
+				})),
+				-- #endif
 				q(26457, {	-- Agents of Destruction
 					["qg"] = 17287,	-- Sentinel Luciel Starwhisper
 					["coord"] = { 84, 62.6, ASHENVALE },
@@ -645,7 +670,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, pvp(q(79098, {	-- Clear the Forest!
+				applyclassicphase(SOD_PHASE_ONE, pvp(q(79098, {	-- Clear the Forest!
 					["providers"] = {
 						{ "i", 211813 },	-- Silverwing Sentinel Charm
 						{ "n", 212969 },	-- Kazragore <Far Seer>
@@ -1869,7 +1894,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, pvp(q(79090, {	-- Repelling Invaders
+				applyclassicphase(SOD_PHASE_ONE, pvp(q(79090, {	-- Repelling Invaders
 					["providers"] = {
 						{ "i", 211814 },	-- Warsong Outrider Mark
 						{ "n", 212970 },	-- Felore Moonray <Priestess of the Moon>
@@ -1983,6 +2008,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78093, {	-- Return to Delgren
+					["providers"] = {
+						{ "o", 409315 },	-- Shattered Orb
+						{ "i", 209800 },	-- Orb Fragments
+					},
+					["sourceQuest"] = 78092,	-- It Must Be Destroyed
+					["coord"] = { 89.4, 77, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN },
+					["groups"] = {
+						recipe(410014, {	-- Engrave Chest - Divine Storm
+							["classes"] = { PALADIN },
+						}),
+					},
+				})),
+				-- #endif
 				q(26479, {	-- Return to Raene
 					["qg"] = 3916,	-- Raene Wolfrunner
 					["sourceQuest"] = 26478,	-- Playing Possum

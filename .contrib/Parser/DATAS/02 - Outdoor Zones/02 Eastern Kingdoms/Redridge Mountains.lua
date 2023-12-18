@@ -1324,7 +1324,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(214456, {	-- Dro'zem the Blasphemous
+				applyclassicphase(SOD_PHASE_ONE, n(214456, {	-- Dro'zem the Blasphemous
 					["coords"] = {
 						{ 34.8, 7.6, REDRIDGE_MOUNTAINS },
 						{ 63.6, 42.4, REDRIDGE_MOUNTAINS },
@@ -1373,7 +1373,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(214519, {	-- Incinerator Gar'im
+				applyclassicphase(SOD_PHASE_ONE, n(214519, {	-- Incinerator Gar'im
 					["coord"] = { 77.8, 86.2, REDRIDGE_MOUNTAINS },
 					["timeline"] = { "removed 2.0.1" },
 					["groups"] = {
@@ -1891,6 +1891,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(211530, {	-- Prophecy of a City Enthralled
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PRIEST },
+					["cr"] = 436,	-- Blackrock Shadowcaster
+					["groups"] = {
+						recipe(425213),	-- Engrave Pants - Power Word: Barrier
+					},
+				})),
+				-- #endif
 				i(2700, {	-- Recipe: Succulent Pork Ribs (RECIPE!)
 					["description"] = "Can drop from any mob in the zone.",
 				}),

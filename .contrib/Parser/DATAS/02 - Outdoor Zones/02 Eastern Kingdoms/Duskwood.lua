@@ -1998,7 +1998,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(210709, {	-- Recipe: Elixir of Coelesced Regret
+						applyclassicphase(SOD_PHASE_ONE, i(210709, {	-- Recipe: Elixir of Coelesced Regret
 							["isLimited"] = true,
 						})),
 						-- #endif
@@ -2258,7 +2258,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(211472, {	-- Libram of Banishment
+				applyclassicphase(SOD_PHASE_ONE, i(211472, {	-- Libram of Banishment
 					["coords"] = {
 						{ 22.8, 68.0, DUSKWOOD },
 						{ 50.8, 75.0, DUSKWOOD },

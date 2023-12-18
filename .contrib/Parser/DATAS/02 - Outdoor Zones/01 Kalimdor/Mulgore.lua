@@ -1634,7 +1634,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(203079, {	-- Wandering Swordsman
+				applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
 					["provider"] = { "o", 392029 },	-- Swordsman's Reward
 					["coords"] = {
 						{ 45.6, 36.4, MULGORE },
@@ -1679,7 +1679,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(204937, {	-- Adventurer's Spirit
+				applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
 					["provider"] = { "n", 204827 },	-- Adventurer's Remains
 					["coord"] = { 60.4, 33.6, MULGORE },
 					["timeline"] = { "removed 2.0.1" },
@@ -1763,7 +1763,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(ZONE_DROPS, {
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206169, {	-- Rune of Explosive Shot
+				applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
 					["coord"] = { 51.8, 20.0, MULGORE },
 					["classes"] = { HUNTER },
 					["cr"] = 3058,	-- Arra'chea
@@ -1771,7 +1771,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(410123),	-- Engrave Gloves - Explosive Shot
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204809, {	-- Rune of Furious Thunder
+				applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
 					["coords"] = {
 						{ 51.8, 20.0, MULGORE },
 						{ 30.8, 61.6, MULGORE },
@@ -1785,7 +1785,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(403476),	-- Engrave Pants - Furious Thunder
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(204478, {	-- Severed Gnoll Head
+				applyclassicphase(SOD_PHASE_ONE, i(204478, {	-- Severed Gnoll Head
 					["coord"] = { 53.6, 73.6, MULGORE },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },
@@ -1795,7 +1795,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2951,	-- Palemane Poacher
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206995, {	-- Severed Harpy Head
+				applyclassicphase(SOD_PHASE_ONE, i(206995, {	-- Severed Harpy Head
 					["coord"] = { 33.6, 42.0, MULGORE },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },
@@ -1805,7 +1805,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2965,	-- Windfury Matriarch
 					},
 				})),
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(206994, {	-- Severed Quilboar Head
+				applyclassicphase(SOD_PHASE_ONE, i(206994, {	-- Severed Quilboar Head
 					["coord"] = { 61.6, 22.4, MULGORE },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },

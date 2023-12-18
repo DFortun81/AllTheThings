@@ -3107,7 +3107,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(210709, {	-- Recipe: Elixir of Coelesced Regret
+						applyclassicphase(SOD_PHASE_ONE, i(210709, {	-- Recipe: Elixir of Coelesced Regret
 							["isLimited"] = true,
 						})),
 						-- #endif

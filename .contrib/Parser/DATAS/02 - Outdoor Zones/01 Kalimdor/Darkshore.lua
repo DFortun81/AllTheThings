@@ -2537,6 +2537,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209836, {	-- Althalaxx Orb
+					["provider"] = { "o", 409289 },	-- Strange Orb
+					["coord"] = { 56.2, 26.5, DARKSHORE },
+					["description"] = "Climb the tower in Darkshore, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210763, {	-- Bough of Altek
+					["provider"] = { "o", 411715 },	-- Bough of Altek
+					["coord"] = { 56.3, 26.4, DARKSHORE },
+					["description"] = "Climb the tower in Darkshore, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(33980, {	-- Apothecary Furrows
 					["coord"] = { 57.2, 33.8, DARKSHORE },

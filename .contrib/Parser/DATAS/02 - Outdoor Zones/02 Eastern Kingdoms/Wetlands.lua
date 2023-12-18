@@ -1444,7 +1444,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(RARES, {
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(211965, {	-- Carrodin
+				applyclassicphase(SOD_PHASE_ONE, n(211965, {	-- Carrodin
 					["coord"] = { 47.6, 64.6, WETLANDS },
 					["groups"] = {
 						i(211205, {	-- Rune of Aspect of the Lion

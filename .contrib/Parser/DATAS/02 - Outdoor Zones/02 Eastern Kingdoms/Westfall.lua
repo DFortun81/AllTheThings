@@ -1337,7 +1337,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, n(210537, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {	-- Undying Laborer
+				applyclassicphase(SOD_PHASE_ONE, n(210537, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {	-- Undying Laborer
 					["coord"] = { 31.8, 43.5, WESTFALL },
 					["groups"] = {
 						i(208849, {	-- Libram of Blessings
@@ -1645,7 +1645,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(PHASE_SIX_SEASONOFDISCOVERY, i(208851, {	-- Libram of Justice
+				applyclassicphase(SOD_PHASE_ONE, i(208851, {	-- Libram of Justice
 					["coord"] = { 69.8, 72.4, WESTFALL },
 					["description"] = "While this supposedly can drop from the Drones, don't bother. Go loot the chest in Loch Modan instead!",
 					["timeline"] = { "removed 2.0.1" },
