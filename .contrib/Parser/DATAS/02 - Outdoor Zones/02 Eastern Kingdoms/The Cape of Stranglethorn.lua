@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			pvp(o(179697, {	-- Arena Treasure Chest
-				["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
+				["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n00:00/12PM, 03:00/3AM, 06:00/6AM, 09:00/9AM,\n12:00/12AM, 15:00/3PM, 18:00/6PM, 21:00/9PM",
 				["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
 				["groups"] = {
 					ach(389, {	-- Gurubashi Arena Master
@@ -1930,6 +1930,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(1552, {	-- Scale Belly
 					["coord"] = { 67.8, 25.4, THE_CAPE_OF_STRANGLETHORN },
+					["description"] = "Found inside Crystalvein Mine.",
 					["groups"] = {
 						i(1604, {	-- Chromatic Sword
 							["timeline"] = { "removed 4.0.3", "added 7.3.5" },
