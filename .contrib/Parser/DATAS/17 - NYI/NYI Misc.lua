@@ -1021,7 +1021,6 @@ root(ROOTS.NeverImplemented, {
 				i(208606),	-- Somnagora's Heart
 				i(208745),	-- Your Reward [DNT]
 				------ Trash ------
-				i(210445),	-- Ash Pouch
 				i(210441),	-- Behemoth's Feather
 				i(210444),	-- Burning Flower
 				i(210450),	-- Flaming Orb

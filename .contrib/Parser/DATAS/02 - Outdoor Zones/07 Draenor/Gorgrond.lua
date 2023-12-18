@@ -423,8 +423,6 @@ root(ROOTS.Zones, {
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								35216,	-- Super Seeds
-								35214,	-- The Infested (TODO: verify if needed)
-								35213,	-- The Razorbloom
 								35215,	-- The Voice of Iyu
 							},
 						}),
@@ -598,8 +596,6 @@ root(ROOTS.Zones, {
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								35216,	-- Super Seeds
-								35214,	-- The Infested
-								35213,	-- The Razorbloom
 								35215,	-- The Voice of Iyu
 							},
 						}),

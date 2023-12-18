@@ -2206,6 +2206,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(151344, {	-- Hearthstation (H) (TOY!)
 					["races"] = HORDE_ONLY,
 				}),
+				i(191925, {	-- Falling Star Flinger (TOY!)
+					["timeline"] = { ADDED_10_2_0 }, -- Returned Christmas 2023
+				}),
 				i(209859, {	-- Festive Trans-Dimensional Bird Whistle (TOY!)
 					["timeline"] = { ADDED_10_2_0 },
 				}),

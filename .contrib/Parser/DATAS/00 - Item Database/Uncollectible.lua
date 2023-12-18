@@ -572,7 +572,6 @@ i(194685);	-- Dragonspring Water
 i(194537);	-- Fiddle with Draconium Fabric Cutters
 i(194538);	-- Fiddle with Khaz'gorite Fabric Cutters
 i(198390);	-- Milling
-i(201361);	-- Primal Inspiration
 i(194709);	-- Prospecting
 i(194973);	-- Reclaim Concoctions
 i(200768);	-- Assorted Salamanther Lures
@@ -581,6 +580,7 @@ i(200772);	-- Knowledge Discs
 i(200773);	-- Otherworldly Artifact
 i(200777);	-- Obsidian Shards
 i(200780);	-- Dragon Horns
+i(200802);	-- Signet of the Dragonflights
 i(200806);	-- Woodcarving Stone
 i(200820);	-- Dry Wood Log
 i(200822);	-- Jar of Ashes
@@ -595,6 +595,9 @@ i(200840);	-- Encyclopaedia Draeconica Set
 i(200848);	-- Decorative Bouquet
 i(200849);	-- Tear of the Dreamer
 i(200853);	-- How to Grow a Tree in 10 Days
+i(201361);	-- Primal Inspiration
+i(201466);	-- Mote of Dreams
+i(201467);	-- Emerald Bloom
 
 ------------------
 -- PATCH 10.0.2 --
@@ -640,6 +643,7 @@ i(192717);	-- Animated Splinter
 i(192718);	-- Rock-Hard Eggshell
 i(192729);	-- Unhinged Mandible
 i(192730);	-- Unstable Arcane Essence
+i(192746);	-- Curio of Yore
 i(193384);	-- Crumbling Bone
 i(193385);	-- Decaying Resin
 i(199206);	-- Shattered Adamant Scales
@@ -647,6 +651,8 @@ i(199476);	-- Singed Cloth Scraps
 i(200789);	-- Beckoning Kite
 i(200105);	-- Muck Covered Flotsam
 i(200106);	-- Slimy Old Boot
+i(201192);	-- Large Dragonbone Dice
+i(201193);	-- Dragon Tooth Shank
 i(201209);	-- Nibbled Fish Head
 i(201222);	-- Smooth Seashell
 i(201424);	-- Unusable Plant Matter
@@ -875,8 +881,7 @@ i(209034);	-- Half-Completed Invasion Plans (Dropped in Argus during Seeing Red 
 ------------------
 --- Trash ---
 i(210554);	-- Blazing Feather
-i(201467);	-- Emerald Bloom
 i(210451);	-- Imp Tail
-i(201466);	-- Mote of Dreams
+i(210445);	-- Ash Pouch
 i(210452);	-- Small Demon Horn
 i(211270);	-- Pristine Core Leather

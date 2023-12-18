@@ -1557,7 +1557,6 @@ root(ROOTS.Unsorted, {
 				i(201178),	-- Cracked Skull
 				i(192688),	-- Cracked Stone Bracers
 				i(201216),	-- Crumbled Elemental Spark
-				i(192746),	-- Curio of Yore
 				i(200532),	-- Damaged Qiraji Ring
 				i(201188),	-- Deceased Critter
 				i(200451),	-- Deep Sea Star
@@ -1565,7 +1564,6 @@ root(ROOTS.Unsorted, {
 				i(192698),	-- Depleted Titan Training Matrix
 				i(192652),	-- Discharged Thunderscale
 				i(192613),	-- Dragon Tooth
-				i(201193),	-- Dragon Tooth Shank
 				i(201197),	-- Dream Journal
 				i(192687),	-- Duck Bill
 				i(192689),	-- Eagle Eye
@@ -1595,7 +1593,6 @@ root(ROOTS.Unsorted, {
 				i(192659),	-- Impressive Mandible
 				i(201723),	-- Indecipherable Pages
 				i(201170),	-- Knucklebones
-				i(201192),	-- Large Dragonbone Dice
 				i(192620),	-- Large Tail Spikes
 				i(192708),	-- Magnificent Antler
 				i(201200),	-- Makeshift Totem
@@ -1979,7 +1976,6 @@ root(ROOTS.Unsorted, {
 				i(200775),	-- Self-Luminous Orb
 				i(200851),	-- Self-Trimming Bonsai
 				i(191849),	-- Serevite Angle Iron
-				i(200802),	-- Signet of the Dragonflights
 				i(200764),	-- Slimy Shinies
 				i(191412),	-- Small Expedition Pick
 				i(200621),	-- Soothing Incense
