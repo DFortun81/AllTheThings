@@ -10828,6 +10828,9 @@ local function RowOnEnter(self)
 		elseif reference.retries then
 			GameTooltip:AddLine("Failed to acquire information. This quest may have been removed from the game. " .. tostring(reference.retries), 1, 1, 1);
 		end
+		if reference.learnedAt and app.Settings:GetTooltipSetting("learnedAt") then
+			GameTooltip:AddDoubleLine("Learned At", tostring(reference.learnedAt));
+		end
 		if reference.lvl then
 			local minlvl, maxlvl;
 			if type(reference.lvl) == "table" then

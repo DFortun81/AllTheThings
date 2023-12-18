@@ -1548,6 +1548,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 731,	-- The Absent Minded Prospector (2/5)
 					["coord"] = { 37.4, 41.8, DARKSHORE },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["groups"] = {

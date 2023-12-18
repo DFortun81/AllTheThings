@@ -75,7 +75,7 @@ namespace ATT
             public static IDictionary<string, string[]> MergeObjectFields { get; } = new Dictionary<string, string[]>()
             {
                 {  "spellID" , new string[] { "type" } },
-                {  "recipeID" , new string[] { "requireSkill" } },
+                {  "recipeID" , new string[] { "requireSkill", "learnedAt" } },
                 {  "speciesID" , new string[] { "pb", "crs" } },
                 {  "instanceID" , new string[] { "isRaid" } },
                 {  "questID" , new string[] { "type", "sourceQuests", "altQuests", "isBreadcrumb" } },
@@ -1395,6 +1395,7 @@ end");
                         case "coords":
                         case "sym":
                         case "f":
+                        case "learnedAt":
                         case "filterForRWP":
                             itemData[pair.Key] = pair.Value;
                             break;
@@ -1531,6 +1532,7 @@ end");
                         case "b":
                         case "q":
                         case "f":
+                        case "learnedAt":
                         case "filterForRWP":
                         case "s":
                         case "g":

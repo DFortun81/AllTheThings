@@ -498,6 +498,7 @@ namespace ATT
                     case "inventoryType":
                     case "subclass":
                     case "q":
+                    case "learnedAt":
                         item[field] = Convert.ToInt64(value);
                         break;
 
@@ -829,6 +830,7 @@ namespace ATT
                     case "f":
                     case "filterForRWP":
                     case "rank":
+                    case "learnedAt":
                     case "ilvl":
                     case "lvl":
                     case "q":

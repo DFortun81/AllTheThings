@@ -954,6 +954,11 @@ namespace ATT
                         return "filterForRWP";
                     }
 
+                case "learnedAt":
+                    {
+                        return "learnedAt";
+                    }
+
                 case "ilvl":
                 case "iLvl":
                 case "ilevel":

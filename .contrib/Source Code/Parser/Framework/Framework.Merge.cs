@@ -172,6 +172,10 @@ namespace ATT
                                     if (recipeValuePair.Value is IDictionary<string, object> recipe)
                                     {
                                         recipe["recipeID"] = recipeValuePair.Key;
+                                        if (recipe.ContainsKey("learnedAt"))
+                                        {
+                                            Console.WriteLine();
+                                        }
                                         Objects.Merge(recipe);
                                     }
                                     else
