@@ -2444,7 +2444,6 @@ local ids = {
 	["itemID"] = "Item ID",
 	["itemLevel"] = "Item Level",
 	["itemString"] = "Item String",
-	["learnedAt"] = "Learned At",
 	["Lore"] = "Lore",
 	["mapID"] = "Map ID",
 	["modelID"] = "Model ID",
@@ -2475,7 +2474,7 @@ for _,id in pairs({"awp","rwp","achievementID","artID","creatureID","Coordinates
 	last = filter;
 end
 last = nil;
-for _,id in pairs({"itemID","itemLevel","itemString","learnedAt","Lore","mapID","modelID","objectID","Objectives","questID","QuestGivers","s","speciesID","spellID"}) do
+for _,id in pairs({"itemID","itemLevel","itemString","Lore","mapID","modelID","objectID","Objectives","questID","QuestGivers","s","speciesID","spellID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));

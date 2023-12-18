@@ -74,7 +74,7 @@ namespace ATT
             /// </summary>
             public static IDictionary<string, string[]> MergeObjectFields { get; } = new Dictionary<string, string[]>()
             {
-                {  "spellID" , new string[] { "type" } },
+                {  "spellID" , new string[] { "type", "learnedAt" } },
                 {  "recipeID" , new string[] { "requireSkill", "learnedAt" } },
                 {  "speciesID" , new string[] { "pb", "crs" } },
                 {  "instanceID" , new string[] { "isRaid" } },

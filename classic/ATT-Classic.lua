@@ -10828,9 +10828,6 @@ local function RowOnEnter(self)
 		elseif reference.retries then
 			GameTooltip:AddLine("Failed to acquire information. This quest may have been removed from the game. " .. tostring(reference.retries), 1, 1, 1);
 		end
-		if reference.learnedAt and app.Settings:GetTooltipSetting("learnedAt") then
-			GameTooltip:AddDoubleLine("Learned At", tostring(reference.learnedAt));
-		end
 		if reference.lvl then
 			local minlvl, maxlvl;
 			if type(reference.lvl) == "table" then
@@ -10848,7 +10845,13 @@ local function RowOnEnter(self)
 			end
 		end
 		if reference.b and app.Settings:GetTooltipSetting("binding") then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
-		if reference.requireSkill then GameTooltip:AddDoubleLine(L["REQUIRES"], GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or RETRIEVING_DATA); end
+		if reference.requireSkill then
+			local professionName = GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or RETRIEVING_DATA;
+			if reference.learnedAt then professionName = professionName .. " (" .. reference.learnedAt .. ")"; end
+			GameTooltip:AddDoubleLine(L["REQUIRES"], professionName);
+		elseif reference.learnedAt then
+			GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(reference.learnedAt));
+		end
 		if reference.f and reference.f > 0 and app.Settings:GetTooltipSetting("filterID") then
 			if reference.filterForRWP then
 				GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f]) .. " -> " .. tostring(L["FILTER_ID_TYPES"][reference.filterForRWP]));
