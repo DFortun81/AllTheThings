@@ -851,7 +851,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Abercrombie's Crate
-							["provider"] = { "i", 1349 },	-- Abercrombie's Crate
+							["providers"] = {
+								{ "i", 1349 },	-- Abercrombie's Crate
+								{ "o",  119 },	-- Abercrombie's Crate
+							},
 							["coord"] = { 33.5, 76.5, DUSKWOOD },
 						}),
 					},
