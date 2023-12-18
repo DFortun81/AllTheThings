@@ -1,4 +1,15 @@
-local i = GetRecipeHelperForProfession(ENGINEERING);
+local oi = GetRecipeHelperForProfession(ENGINEERING);
+local i = function(argument0, ...)
+	if type(argument0) == "number" then
+		oi(argument0, ...);
+	else
+		-- Ignore the first argument if it's the name of the item.
+		-- CRIEVE NOTE: Added this because I'm a lazy bastard that didn't want to senselessly copy+paste all the names into comments. :)
+		-- Someone with excel can probably easily convert it into the "proper" data format for these files.
+		oi(...);
+	end
+end
+
 local GNOMISH_ENGINEER = 20219;
 local GOBLIN_ENGINEER = 20222;
 
@@ -12,6 +23,88 @@ i(18653, 23078, nil, GOBLIN_ENGINEER);		-- Schematic: Goblin Jumper Cables XL
 i(11827, 15633);	-- Schematic: Lil' Smoky
 i(4413, 3959);	-- Schematic: Discombobulator Ray
 i(14639, 3952);	-- Schematic: Minor Recombobulator
+
+-- Crieve added this
+i("Mechanical Squirrel", 4408, 3928);
+i("Small Seaforium Charge", 4409, 3933);
+i("Shadow Goggles", 4410, 3940);
+i("Flame Deflector", 4411, 3944);
+i("Moonsight Rifle", 4412, 3954);
+i("Discombobulator Ray", 4413, 3959);
+i("Portable Bronze Mortar", 4414, 3960);
+i("Craftsman's Monocle", 4415, 3966);
+i("Goblin Land Mine", 4416, 3968);
+i("Large Seaforium Charge", 4417, 3972);
+i("Flash Bomb", 6672, 8243);
+i("EZ-Thro Dynamite", 6716, 8339);
+i("Gnomish Universal Remote", 7560, 9269);
+i("Goblin Jumper Cables", 7561, 9273);
+i("Gnomish Cloaking Device", 7742, 3971);
+i("Bright-Eye Goggles", 10601, 12587);
+i("Deadly Scope", 10602, 12597);
+i("Catseye Ultra Goggles", 10603, 12607);
+i("Mithril Heavy-bore Rifle", 10604, 12614);
+i("Spellpower Goggles Xtreme", 10605, 12615);
+i("Parachute Cloak", 10606, 12616);
+i("Deepdive Helmet", 10607, 12617);
+i("Sniper Scope", 10608, 12620);
+i("Mithril Mechanical Dragonling", 10609, 12624);
+i("Lil' Smoky", 11827, 15633, nil, true);
+i("Pet Bombling", 11828, 15628, nil, true);
+i("Ice Deflector", 13308, 3957);
+i("Lovingly Crafted Boomstick", 13309, 3939);
+i("Accurate Scope", 13310, 3979);
+i("Mechanical Dragonling", 13311, 3969);
+i("Minor Recombobulator", 14639, 3952);
+i("Thorium Grenade", 16041, 19790);
+i("Thorium Widget", 16042, 19791);
+i("Thorium Rifle", 16043, 19792);
+i("Lifelike Mechanical Toad", 16044, 19793);
+i("Spellpower Goggles Xtreme Plus", 16045, 19794);
+i("Masterwork Target Dummy", 16046, 19814);
+i("Thorium Tube", 16047, 19795);
+i("Dark Iron Rifle", 16048, 19796);
+i("Dark Iron Bomb", 16049, 19799);
+i("Delicate Arcanite Converter", 16050, 19815);
+i("Thorium Shells", 16051, 19800);
+i("Voice Amplification Modulator", 16052, 19819);
+i("Master Engineer's Goggles", 16053, 19825);
+i("Arcanite Dragonling", 16054, 19830);
+i("Arcane Bomb", 16055, 19831);
+i("Flawless Arcanite Rifle", 16056, 19833);
+i("Snowmaster 9000", 17720, 21940);
+i("Field Repair Bot 74A", 18235, 22704);
+i("Biznicks 247x128 Accurascope", 18290, 22793);
+i("Force Reactive Disk", 18291, 22797);
+i("Core Marksman Rifle", 18292, 22795);
+i("Red Firework", 18647, 23066);
+i("Green Firework", 18648, 23068);
+i("Blue Firework", 18649, 23067);
+i("EZ-Thro Dynamite II", 18650, 23069);
+i("Truesilver Transformer", 18651, 23071);
+i("Gyrofreeze Ice Reflector", 18652, 23077);
+i("Major Recombobulator", 18655, 23079);
+i("Powerful Seaforium Charge", 18656, 23080);
+i("Hyper-Radiant Flame Reflector", 18657, 23081);
+i("Ultra-Flash Shadow Reflector", 18658, 23082);
+i("Snake Burst Firework", 19027, 23507);
+i("Steam Tonk Controller", 22729, 28327);
+i("Bloodvine Goggles", 20000, 24356);
+i("Bloodvine Lens", 20001, 24357);
+i("Small Blue Rocket", 21724, 26416);
+i("Small Green Rocket", 21725, 26417);
+i("Small Red Rocket", 21726, 26418);
+i("Large Blue Rocket", 21727, 26420);
+i("Large Green Rocket", 21728, 26421);
+i("Large Red Rocket", 21729, 26422);
+i("Blue Rocket Cluster", 21730, 26423);
+i("Green Rocket Cluster", 21731, 26424);
+i("Red Rocket Cluster", 21732, 26425);
+i("Large Blue Rocket Cluster", 21733, 26426);
+i("Large Green Rocket Cluster", 21734, 26427);
+i("Large Red Rocket Cluster", 21735, 26428);
+i("Cluster Launcher", 21737, 26443);
+i("Firework Launcher", 21738, 26442);
 
 ------------------
 -- PATCH 10.0.0 --

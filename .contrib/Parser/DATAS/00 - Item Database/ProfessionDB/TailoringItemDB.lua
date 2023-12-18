@@ -1,12 +1,173 @@
-local i = GetRecipeHelperForProfession(TAILORING);
+local oi = GetRecipeHelperForProfession(TAILORING);
+local i = function(argument0, ...)
+	if type(argument0) == "number" then
+		oi(argument0, ...);
+	else
+		-- Ignore the first argument if it's the name of the item.
+		-- CRIEVE NOTE: Added this because I'm a lazy bastard that didn't want to senselessly copy+paste all the names into comments. :)
+		-- Someone with excel can probably easily convert it into the "proper" data format for these files.
+		oi(...);
+	end
+end
 
 -----------------
 --   CLASSIC   --
 -----------------
+-- Crieve added this stuff.
+i("Red Linen Robe", 2598, 2389);
+i("Gray Woolen Robe", 2601, 2403);
+i("Green Woolen Bag", 4292, 3758);
+i("Red Woolen Boots", 4345, 3847);
+i("Heavy Woolen Cloak", 4346, 3844);
+i("Reinforced Woolen Shoulders", 4347, 3849);
+i("Phoenix Gloves", 4348, 3868);
+i("Phoenix Pants", 4349, 3851);
+i("Spider Silk Slippers", 4350, 3856);
+i("Shadow Hood", 4351, 3858);
+i("Boots of the Enchanter", 4352, 3860);
+i("Spider Belt", 4353, 3863);
+i("Rich Purple Silk Shirt", 4354, 3872);
+i("Icy Cloak", 4355, 3862);
+i("Star Belt", 4356, 3864);
+i("Red Linen Bag", 5771, 6686);
+i("Red Woolen Bag", 5772, 6688);
+i("Robes of Arcana", 5773, 6692);
+i("Green Silk Pack", 5774, 6693);
+i("Black Silk Pack", 5775, 6695);
+i("Blue Linen Vest", 6270, 7630);
+i("Red Linen Vest", 6271, 7629);
+i("Blue Linen Robe", 6272, 7633);
+i("Blue Overalls", 6274, 7639);
+i("Greater Adept's Robe", 6275, 7643);
+i("Stylish Blue Shirt", 6390, 7892);
+i("Stylish Green Shirt", 6391, 7893);
+i("Dark Silk Shirt", 6401, 3870);
+i("Crimson Silk Shoulders", 7084, 8793);
+i("Azure Shoulders", 7085, 8795);
+i("Earthen Silk Belt", 7086, 8797);
+i("Crimson Silk Cloak", 7087, 8789);
+i("Crimson Silk Robe", 7088, 8802);
+i("Azure Silk Cloak", 7089, 8786);
+i("Green Silk Armor", 7090, 8784);
+i("Truefaith Gloves", 7091, 8782);
+i("Hands of Darkness", 7092, 8780);
+i("Azure Silk Gloves", 7114, 3854);
+i("Red Mageweave Vest", 10300, 12056);
+i("White Bandit Mask", 10301, 12059);
+i("Red Mageweave Pants", 10302, 12060);
+i("Orange Martial Shirt", 10311, 12064);
+i("Red Mageweave Gloves", 10312, 12066);
+i("Lavender Mageweave Shirt", 10314, 12075);
+i("Red Mageweave Shoulders", 10315, 12078);
+i("Colorful Kilt", 10316, 12047);
+i("Pink Mageweave Shirt", 10317, 12080);
+i("Admiral's Hat", 10318, 12081);
+i("Red Mageweave Headband", 10320, 12084);
+i("Tuxedo Shirt", 10321, 12085);
+i("Tuxedo Pants", 10323, 12089);
+i("White Wedding Dress", 10325, 12091);
+i("Tuxedo Jacket", 10326, 12093);
+i("Shadoweave Mask", 10463, 12086);
+i("Black Swashbuckler's Shirt", 10728, 3873);
+i("Frostweave Tunic", 14466, 18403);
+i("Frostweave Robe", 14467, 18404);
+i("Runecloth Bag", 14468, 18405);
+i("Runecloth Robe", 14469, 18406);
+i("Runecloth Tunic", 14470, 18407);
+i("Cindercloth Vest", 14471, 18408);
+i("Runecloth Cloak", 14472, 18409);
+i("Ghostweave Belt", 14473, 18410);
+i("Frostweave Gloves", 14474, 18411);
+i("Cindercloth Gloves", 14476, 18412);
+i("Ghostweave Gloves", 14477, 18413);
+i("Brightcloth Robe", 14478, 18414);
+i("Brightcloth Gloves", 14479, 18415);
+i("Ghostweave Vest", 14480, 18416);
+i("Runecloth Gloves", 14481, 18417);
+i("Cindercloth Cloak", 14482, 18418);
+i("Felcloth Pants", 14483, 18419);
+i("Brightcloth Cloak", 14484, 18420);
+i("Wizardweave Leggings", 14485, 18421);
+i("Cloak of Fire", 14486, 18422);
+i("Runecloth Boots", 14488, 18423);
+i("Frostweave Pants", 14489, 18424);
+i("Cindercloth Pants", 14490, 18434);
+i("Runecloth Pants", 14491, 18438);
+i("Felcloth Boots", 14492, 18437);
+i("Robe of Winter Night", 14493, 18436);
+i("Brightcloth Pants", 14494, 18439);
+i("Ghostweave Pants", 14495, 18441);
+i("Felcloth Hood", 14496, 18442);
+i("Mooncloth Leggings", 14497, 18440);
+i("Runecloth Headband", 14498, 18444);
+i("Mooncloth Bag", 14499, 18445);
+i("Wizardweave Robe", 14500, 18446);
+i("Mooncloth Vest", 14501, 18447);
+i("Runecloth Shoulders", 14504, 18449);
+i("Wizardweave Turban", 14505, 18450);
+i("Felcloth Robe", 14506, 18451);
+i("Mooncloth Shoulders", 14507, 18448);
+i("Felcloth Shoulders", 14508, 18453);
+i("Mooncloth Circlet", 14509, 18452);
+i("Bottomless Bag", 14510, 18455);
+i("Gloves of Spell Mastery", 14511, 18454);
+i("Truefaith Vestments", 14512, 18456);
+i("Robe of the Archmage", 14513, 18457);
+i("Robe of the Void", 14514, 18458);
+i("Mooncloth", 14526, 18560);
+i("Bright Yellow Shirt", 14627, 3869);
+i("Enchanter's Cowl", 14630, 3857);
+i("Flarecore Mantle", 17017, 20848);
+i("Flarecore Gloves", 17018, 20849);
+i("Flarecore Wraps", 18265, 22759);
+i("Core Felcloth Bag", 21371, 26087);
+i("Soul Pouch", 21358, 26085);
+i("Enchanted Mageweave Pouch", 22307, 27658);
+
+i("Belt of the Archmage", 18414, 22866);
+i("Felcloth Gloves", 18415, 22867);
+i("Inferno Gloves", 18416, 22868);
+i("Mooncloth Gloves", 18417, 22869);
+i("Cloak of Warding", 18418, 22870);
+i("Mooncloth Robe", 18487, 22902);
+
+i("Wisdom of the Timbermaw", 19215, 23662);
+i("Argent Boots", 19216, 23664);
+i("Argent Shoulders", 19217, 23665);
+i("Mantle of the Timbermaw", 19218, 23663);
+i("Flarecore Robe", 19219, 23666);
+i("Flarecore Leggings", 19220, 23667);
+
+i("Bloodvine Vest", 19764, 24091);
+i("Bloodvine Leggings", 19765, 24092);
+i("Bloodvine Boots", 19766, 24093);
+i("Runed Stygian Leggings", 20546, 24901);
+i("Runed Stygian Boots", 20547, 24903);
+i("Runed Stygian Belt", 20548, 24902);
+
+i("Enchanted Runecloth Bag", 22308, 27659);
+i("Big Bag of Enchantment", 22309, 27660);
+i("Cenarion Herb Bag", 22310, 27724);
+i("Satchel of Cenarius", 22312, 27725);
+
+i("Gaea's Embrace", 22683, 28210);
+i("Sylvan Shoulders", 22772, 28482);
+i("Sylvan Crown", 22773, 28481);
+i("Sylvan Vest", 22774, 28480);
+
+i(22684, 28205);	-- Glacial Gloves
+i(22685, 28208);	-- Glacial Cloak
+i(22686, 28207);	-- Glacial Vest
+i(22687, 28209);	-- Glacial Wrists
+i(17724, 21945);	-- Green Holiday Shirt
+i(21722, 26403);	-- Festival Dress
+i(21723, 26407);	-- Festival Suit
+
 -- #if SEASON_OF_DISCOVERY
 -- SEASON OF DISCOVERY --
 i(211247, 428424);	-- Phoenix Bindings
 -- #endif
+
 
 ------------------
 -- PATCH 10.0.0 --
