@@ -12,7 +12,7 @@ foreach (string profession in new string[] { "Alchemy", "Blacksmithing", "Enchan
 
 foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" })
 {
-    var pageString = Helper.GetStringFromWoWHead($"secondary-skills/{profession.ToLower().Replace(" ", "")}").Result;
+    var pageString = Helper.GetStringFromWoWHead($"secondary-skills/{profession.ToLower().Replace(" ", "-")}").Result;
     if (pageString == null) continue;
     Helper.Parse(pageString, sb, profession);
 }
