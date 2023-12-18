@@ -24,7 +24,6 @@ root(ROOTS.NeverImplemented, {
 				i(12104),	-- Brindlethorn Tunic
 				i(14550),	-- Bladebane Armguards
 				i(20524),	-- Shadowhide Leggings
-				i(21613),	-- Wormhide Boots
 				i(21614),	-- Wormhide Protector
 			}),
 			filter(MAIL, {

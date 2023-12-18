@@ -341,12 +341,19 @@ local QUANTUM_GROUP = sharedData({
 			ig(93088),	-- Swashbuckling Gauntlets			(MoP Scenario)
 		}),
 		filter(PLATE, {
-			i(114386),	-- Gauntlets of Grievous Storms		(NYI)
+			ig(114386),	-- Gauntlets of Grievous Storms		(NYI)
+			ig(108080),	-- Hardened Draenic Steel Guantlets	(NYI)
+			ig(108164),	-- Peerless Draenic Steel Guantlets	(NYI)
 			ig(108180),	-- Peerless Draenic Steel Guantlets	(NYI)
+			ig(108188),	-- Peerless Draenic Steel Guantlets	(NYI)
 			ig(108196),	-- Peerless Draenic Steel Guantlets	(NYI)
+			ig(108204),	-- Peerless Draenic Steel Guantlets	(NYI)
+			ig(108212),	-- Peerless Draenic Steel Guantlets	(NYI)
+			ig(108220),	-- Peerless Draenic Steel Guantlets	(NYI)
 			ig(114262),	-- Ruby Plate Gauntlets				(NYI)
 			ig(156752),	-- Skullbreaker Gauntlets			(NYI)
 
+			ig(20653),	-- Abyssal Plate Gauntlets			(Removed)
 			ig(134736),	-- Chillplate Gauntlets				(Removed)
 			ig(134683),	-- Front-Line Gauntlets				(Removed)
 			ig(134801),	-- Tempered Gauntlets				(Removed)
@@ -1307,7 +1314,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- q(77627),	-- when you learn everything from Quantum ?
 		q(77628),	-- when you learn everything from Quantum Headpiece (Leather / Druid)
 		-- q(77629),	-- when you learn everything from Quantum ?
-		-- q(77630),	-- when you learn everything from Quantum ?
+		q(77630),	-- when you learn everything from Quantum Gloves (Plate / Warrior)
 		-- q(77631),	-- when you learn everything from Quantum ?
 		-- q(77632),	-- when you learn everything from Quantum ?
 		-- q(77633),	-- when you learn everything from Quantum ?
