@@ -2284,12 +2284,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(990, {	-- Trek to Ashenvale
 					["qg"] = 3694,	-- Sentinel Selarin
-					["altQuests"] = { 991 },	-- Raene's Cleansing (1/11) [Vanilla] / Finding Teronis [CATA]
 					["sourceQuests"] = {
 						994,	-- Escape Through Force
 						995,	-- Escape Through Stealth
 					},
 					["coord"] = { 39.3, 43.5, DARKSHORE },
+					["description"] = "The quest giver appears after turning in Escape Through Stealth. It takes some time until she offers this quest. Maybe 30 to 60 seconds. After a while she runs away again and you have to wait for somebody else to trigger this event, if you missed accepting this quest.",
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
