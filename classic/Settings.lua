@@ -588,6 +588,10 @@ settings.UpdateMode = function(self)
 	else
 		app.GroupRequirementsFilter = app.NoFilter;
 	end
+	if self:Get("Filter:BySkillLevel") and not self:Get("DebugMode") then
+		local oldFilter = app.GroupRequirementsFilter;
+		app.GroupRequirementsFilter = function(...) return oldFilter(...) and app.FilterGroupsBySkillLevel(...); end
+	end
 	app:UnregisterEvent("GOSSIP_SHOW");
 	app:UnregisterEvent("TAXIMAP_OPENED");
 	if self:Get("Thing:FlightPaths") or self:Get("DebugMode") then
@@ -1674,6 +1678,25 @@ end);
 FilterThingsByLevelCheckBox:SetATTTooltip("Enable this setting if you only want to see content available to your current level character.");
 FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", ShowIncompleteThingsCheckBox, "BOTTOMLEFT", 0, -4);
 
+local FilterThingsBySkillLevelCheckBox = settings:CreateCheckBox("Filter Things By Skill Level",
+function(self)
+	self:SetChecked(settings:Get("Filter:BySkillLevel"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Filter:BySkillLevel", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshDataCompletely("FilterThingsBySkillLevelCheckBox");
+end);
+FilterThingsBySkillLevelCheckBox:SetATTTooltip("Enable this setting if you only want to see content available to the maximum possible skill level available to the game environment.");
+FilterThingsBySkillLevelCheckBox:SetPoint("TOPLEFT", FilterThingsByLevelCheckBox, "BOTTOMLEFT", 0, 4);
+
 local HideBoEItemsCheckBox = settings:CreateCheckBox("Hide BoE Items",
 function(self)
 	self:SetChecked(settings:Get("Hide:BoEs"));
@@ -1689,7 +1712,7 @@ function(self)
 	settings:SetHideBOEItems(self:GetChecked());
 end);
 HideBoEItemsCheckBox:SetATTTooltip("Enable this setting if you want to hide Bind on Equip items.\n\nThis setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.");
-HideBoEItemsCheckBox:SetPoint("TOPLEFT", FilterThingsByLevelCheckBox, "BOTTOMLEFT", 0, 4);
+HideBoEItemsCheckBox:SetPoint("TOPLEFT", FilterThingsBySkillLevelCheckBox, "BOTTOMLEFT", 0, 4);
 
 local IgnoreFiltersForBoEsCheckBox = settings:CreateCheckBox("Ignore Filters for BoEs",
 function(self)

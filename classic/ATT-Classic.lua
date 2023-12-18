@@ -9206,6 +9206,7 @@ end
 end)();
 
 -- Filtering
+app.MaximumSkillLevel = 99999;
 function app.Filter()
 	-- Meaning "Don't display."
 	return false;
@@ -9234,6 +9235,13 @@ function app.FilterGroupsByLevel(group)
         end
     end
     -- no level requirement on the group, have to include it
+    return true;
+end
+function app.FilterGroupsBySkillLevel(group)
+    if group.learnedAt then
+        return app.MaximumSkillLevel >= group.learnedAt;
+    end
+    -- no skill level requirement on the group, have to include it
     return true;
 end
 function app.FilterGroupsByCompletion(group)
@@ -14741,7 +14749,9 @@ app.events.VARIABLES_LOADED = function()
 		coroutine.yield();
 		
 		-- Check for Season of Discovery
-		getmetatable(ATTClassicSettings.Unobtainables).__index[1605] = C_Seasons and C_Seasons.GetActiveSeason() == 2;
+		local season = C_Seasons and C_Seasons.GetActiveSeason() or 0;
+		getmetatable(ATTClassicSettings.Unobtainables).__index[1605] = season == 2;
+		if season == 2 then app.MaximumSkillLevel = 150; end
 
 		-- Prepare the Sound Pack!
 		app.Audio:ReloadSoundPack();
