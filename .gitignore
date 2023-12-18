@@ -42,3 +42,4 @@ __pycache__
 /.vscode/settings.json
 .venv
 .contrib/Parser/*.txt
+.contrib/.source/Spell Learned At/bin/

@@ -1469,7 +1469,7 @@ local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill
 	return object;
 end
 
-local RecipeDBConditional = CreateDatabaseContainer("RecipeDB", {
+local recipeDBConditional = CreateDatabaseContainer("RecipeDB", {
 	__index = function(t, key)
 		key = tonumber(key);
 		local recipe = { };
@@ -1478,10 +1478,11 @@ local RecipeDBConditional = CreateDatabaseContainer("RecipeDB", {
 	end,
 });
 GetRecipeHelperForProfession = function(professionID)
-	recipeDB = RecipeDBConditional;
+	recipeDB = recipeDBConditional;
 	CurrentProfessionID = professionID;
 	return ItemRecipeHelper;
 end
+RecipeDBConditional = recipeDBConditional;
 
 
 --[[
