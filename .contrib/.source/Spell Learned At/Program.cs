@@ -2,20 +2,53 @@
 using ATT;
 using System.Text;
 
-StringBuilder sb = new StringBuilder().AppendLine("-- #if SEASON_OF_DISCOVERY").AppendLine("local recipeDB = RecipeDBConditional;");
+StringBuilder sb = new StringBuilder().AppendLine("-- #if ANYCLASSIC").AppendLine("local recipeDB = RecipeDBConditional;");
+
+// Classic Profession Data
 foreach (string profession in new string[] { "Alchemy", "Blacksmithing", "Enchanting", "Engineering", "Herbalism", "Leatherworking", "Mining", "Skinning", "Tailoring" })
 {
-    var pageString = Helper.GetStringFromWoWHead($"professions/{profession.ToLower().Replace(" ", "")}").Result;
+    var pageString = Helper.GetStringFromWoWHead($"professions/{profession.ToLower().Replace(" ", "")}", "classic").Result;
+    if (pageString == null) continue;
+    Helper.Parse(pageString, sb, profession);
+}
+foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" })
+{
+    var pageString = Helper.GetStringFromWoWHead($"secondary-skills/{profession.ToLower().Replace(" ", "-")}", "classic").Result;
     if (pageString == null) continue;
     Helper.Parse(pageString, sb, profession);
 }
 
-foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" })
+// TBC Profession Data
+sb.AppendLine().AppendLine("-- #if AFTER 2.0.0");
+foreach (string profession in new string[] { "Alchemy", "Blacksmithing", "Enchanting", "Engineering", "Herbalism", "Jewelcrafting", "Leatherworking", "Mining", "Skinning", "Tailoring" })
 {
-    var pageString = Helper.GetStringFromWoWHead($"secondary-skills/{profession.ToLower().Replace(" ", "-")}").Result;
+    var pageString = Helper.GetStringFromWoWHead($"professions/{profession.ToLower().Replace(" ", "")}", "tbc").Result;
     if (pageString == null) continue;
     Helper.Parse(pageString, sb, profession);
 }
+foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" })
+{
+    var pageString = Helper.GetStringFromWoWHead($"secondary-skills/{profession.ToLower().Replace(" ", "-")}", "tbc").Result;
+    if (pageString == null) continue;
+    Helper.Parse(pageString, sb, profession);
+}
+sb.AppendLine("-- #endif");
+
+// Wrath Profession Data
+sb.AppendLine().AppendLine("-- #if AFTER 3.0.0");
+foreach (string profession in new string[] { "Alchemy", "Blacksmithing", "Enchanting", "Engineering", "Herbalism", "Inscription", "Jewelcrafting", "Leatherworking", "Mining", "Skinning", "Tailoring" })
+{
+    var pageString = Helper.GetStringFromWoWHead($"professions/{profession.ToLower().Replace(" ", "")}", "wotlk").Result;
+    if (pageString == null) continue;
+    Helper.Parse(pageString, sb, profession);
+}
+foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" })
+{
+    var pageString = Helper.GetStringFromWoWHead($"secondary-skills/{profession.ToLower().Replace(" ", "-")}", "wotlk").Result;
+    if (pageString == null) continue;
+    Helper.Parse(pageString, sb, profession);
+}
+sb.AppendLine("-- #endif");
 
 Console.WriteLine(sb.ToString());
 if (!Directory.Exists("DATAS/00 - Item Database/ProfessionDB")) Directory.CreateDirectory("DATAS/00 - Item Database/ProfessionDB");

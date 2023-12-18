@@ -1,4 +1,4 @@
--- #if SEASON_OF_DISCOVERY
+-- #if ANYCLASSIC
 local recipeDB = RecipeDBConditional;
 
 -- Blacksmithing

@@ -1,6 +1,10 @@
 -- Original implementation ignored itemID 0.
 local i = GetRecipeHelperForProfession(FISHING);
 
+-- #if ANYCLASSIC
+i(16083, 7732).rank = 3;	-- Expert Fishing - The Bass and You
+-- #endif
+
 ------------------
 -- PATCH 10.0.0 --
 ------------------

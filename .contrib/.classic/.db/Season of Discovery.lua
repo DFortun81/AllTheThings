@@ -17,6 +17,14 @@ SODItem(211384, BAGS);	-- Sturdy Courier Bag
 SODItem(210781, CLOTH);	-- Phoenix Bindings
 SODItem(210773, MAIL);	-- Mantle of the Second War
 
+-- TODO: Mark these as unavailable in Phase 1
+-- spellID 3538 Blacksmithing (Rank 3)
+-- spellID 3564 Mining (Rank 3)
+-- spellID 7924 First Aid (Rank 3)
+-- spellID 7732 Fishing (Rank 3)
+-- spellID 3570 Herb Gathering (Rank 3)
+-- spellID 7413 Enchanting (Rank 3)
+
 local classHeader = function(classID, g)
 	return cl(classID, bubbleDown({ ["classes"] = { classID } }, g));
 end

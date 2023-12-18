@@ -14,14 +14,15 @@ namespace ATT
         /// Get the document from WoWHead.
         /// </summary>
         /// <param name="profession">The profession.</param>
+        /// <param name="expansion">The expansion.</param>
         /// <returns></returns>
-        public async static Task<string> GetStringFromWoWHead(string profession)
+        public async static Task<string> GetStringFromWoWHead(string profession, string expansion="classic")
         {
 
             try
             {
                 HttpClient client = new();
-                return await client.GetStringAsync($"https://www.wowhead.com/classic/spells/{profession}");
+                return await client.GetStringAsync($"https://www.wowhead.com/{expansion}/spells/{profession}");
             }
             catch (Exception e)
             {
@@ -33,6 +34,7 @@ namespace ATT
 
         private const string startString = "var listviewspells = ";
         private const string endString = "}];";
+        private static readonly Dictionary<long, Dictionary<string, object>> PersistentRecipeDB = new();
 
         public static void Parse(string pageString, StringBuilder sb, string profession)
         {
@@ -46,11 +48,28 @@ namespace ATT
             {
                 if (entry.TryGetValue("id", out object? idObj) && idObj is long id)
                 {
+                    long learnedAt = 0;
+                    if (entry.TryGetValue("learnedat", out object? learnedatObj))
+                    {
+                        long learnedAt2 = Convert.ToInt32(learnedatObj);
+                        if (learnedAt2 < 9999) learnedAt = learnedAt2;
+                    }
+
+                    // Does the recipe already exist in the persisted database?
+                    if (PersistentRecipeDB.TryGetValue(id, out Dictionary<string, object>? persistedRecipeData)
+                        && persistedRecipeData.TryGetValue("learnedAt", out learnedatObj))
+                    {
+                        // If it matches the persisted data, then just skip it.
+                        if (learnedAt == Convert.ToInt32(learnedatObj)) continue;
+                    }
+
                     var objectData = new Dictionary<string, object> { { "id", id } };
                     if (entry.TryGetValue("name", out object? nameObj)) objectData["name"] = nameObj;
-                    if (entry.TryGetValue("learnedat", out object? learnedatObj) && Convert.ToInt32(learnedatObj) < 9999) objectData["learnedAt"] = learnedatObj;
-                    else objectData["learnedAt"] = 0;
+                    objectData["learnedAt"] = learnedAt;
                     objectData["id"] = id;
+
+                    // Set or replace the persisted data and mark it as something updated with this version of the game.
+                    PersistentRecipeDB[id] = objectData;
                     recipeList.Add(objectData);
                 }
             }
@@ -103,12 +122,16 @@ namespace ATT
             */
 
             sb.AppendLine().Append("-- ").AppendLine(profession);
+            sb.AppendLine("for spellID,learnedAt in pairs({");
             foreach (var recipe in recipeList)
             {
-                sb.Append("recipeDB[").Append(recipe["id"]).Append(']');
-                if (recipe.TryGetValue("learnedAt", out object? learnedAt)) sb.Append(".learnedAt = ").Append(learnedAt);
-                sb.Append(";\t-- ").Append(recipe["name"] ?? "??").AppendLine();
+                if (recipe.TryGetValue("learnedAt", out object? learnedAt))
+                {
+                    sb.Append("\t[").Append(recipe["id"]).Append("] = ").Append(learnedAt)
+                        .Append(",\t-- ").Append(recipe["name"] ?? "??").AppendLine();
+                }
             }
+            sb.AppendLine("}) do recipeDB[spellID].learnedAt = learnedAt; end");
         }
     }
 }
