@@ -2787,6 +2787,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cost"] = { { "i", 22527, 30 } },	-- Core of Elements
 					-- #endif
 					["timeline"] = { "removed 4.0.3" },
+					["lvl"] = 55,
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(22523, {	-- Insignia of the Dawn

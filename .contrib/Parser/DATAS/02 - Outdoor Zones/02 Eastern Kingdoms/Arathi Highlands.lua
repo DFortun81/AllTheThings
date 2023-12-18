@@ -784,6 +784,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 652,	-- Breaking the Keystone
 					["coord"] = { 36.1, 57.9, ARATHI_HIGHLANDS },
 					["timeline"] = { "removed 4.0.3" },
+					["lvl"] = 30,
 				},
 				{	-- Myzrael's Tale [A & H]
 					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
