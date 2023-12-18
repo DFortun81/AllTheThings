@@ -1444,6 +1444,9 @@ local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill
 	requireSkill = requireSkill or CurrentProfessionID;
 	local originalRequireSkill = object.requireSkill;
 	if not originalRequireSkill then
+		if itemID ~= 0 then
+			recipeDB[recipeID].requireSkill = requireSkill;
+		end
 		object.requireSkill = requireSkill;
 	elseif originalRequireSkill ~= requireSkill then
 		-- Replace it, but also show a warning.
@@ -1451,6 +1454,7 @@ local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill
 			print("Recipe", recipeID, "requireSkill changed", originalRequireSkill, ">", requireSkill);
 		else
 			print("Item", itemID, "requireSkill changed", originalRequireSkill, ">", requireSkill);
+			recipeDB[recipeID].requireSkill = requireSkill;
 		end
 		object.requireSkill = requireSkill;
 	end
