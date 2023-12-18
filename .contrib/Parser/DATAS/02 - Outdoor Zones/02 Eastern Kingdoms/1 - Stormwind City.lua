@@ -4988,7 +4988,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 71.9, 55.6, STORMWIND_CITY },
 					-- #endif
 					["timeline"] = { "added 2.0.1" },	-- Prior to TBC, was just a Reagent Vendor.
-					["sym"] = {{"sub", "pvp_gear_base", CLASSIC_TIER, FACTION_HEADER_ALLIANCE, WEAPONS },{ "pop" }},	-- Grand Marshal Weapons
+					["sym"] = {
+						-- #IF ANYCLASSIC
+							{"sub", "pvp_gear_base", CLASSIC_TIER, FACTION_HEADER_ALLIANCE, WEAPONS },	-- Grand Marshal Weapons
+						-- #ELSE
+							{"select","tierID",CLASSIC_TIER},
+							{"find","headerID",FACTION_HEADER_ALLIANCE},
+							{"find","headerID",WEAPONS},	-- Grand Marshal Weapons
+						-- #ENDIF
+						{"pop"},
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				n(12783, {	-- Lieutenant Karter <War Mount Quartermaster> [WRATH+] / Lieutenant Karter <Mount Vendor>
@@ -5788,7 +5797,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 75.4, 67.0, STORMWIND_CITY },
 					["timeline"] = { "added 2.0.1" },	-- Prior to TBC, was just a Food Vendor.
 					["sym"] = {	-- Grand Marshal Armor
-						{"sub", "pvp_gear_base", CLASSIC_TIER, FACTION_HEADER_ALLIANCE },
+						-- #IF ANYCLASSIC
+							{"sub", "pvp_gear_base", CLASSIC_TIER, FACTION_HEADER_ALLIANCE },
+						-- #ELSE
+							{"select","tierID",CLASSIC_TIER},
+							{"find","headerID",FACTION_HEADER_ALLIANCE},
+						-- #ENDIF
 						{ "pop" },
 						{ "exclude", "headerID", WEAPONS },
 						-- #if BEFORE WRATH
