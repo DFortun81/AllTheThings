@@ -5307,8 +5307,8 @@ local function FillGroupsRecursiveAsync(group, FillData)
 	end
 	-- app.PrintDebug("FGRA",group.hash)
 
-	-- increment depth if things are being nested
 	local groups;
+	local ignoreSkip = group.sym or group.headerID or group.classID
 	-- Determine Cost/Crafted/Symlink groups
 	groups = ArrayAppend(groups,
 		DeterminePurchaseGroups(group, FillData),
@@ -5325,11 +5325,8 @@ local function FillGroupsRecursiveAsync(group, FillData)
 	if #groups > 0 then
 		BuildGroups(group);
 		app.DirectGroupUpdate(group);
-		-- mark this group as being filled since it actually received filled content (unless it's a basic header/class header)
-		if not (
-			group.headerID or
-			group.classID
-		) then
+		-- mark this group as being filled since it actually received filled content (unless it's ignored for being skipped)
+		if not ignoreSkip then
 			local groupHash = group.hash;
 			if groupHash then
 				-- app.PrintDebug("FG-Included",groupHash,#groups)
