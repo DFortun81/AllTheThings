@@ -684,18 +684,18 @@ do
 			return key
 		end
 	})
-GameTooltipModel.SetCreatureID = function(self, creatureID)
-	GameTooltipModel.HideAllModels(self);
-	if creatureID > 0 then
-		self.Model:SetUnit("none");
-		self.Model:SetCreature(creatureID);
+	GameTooltipModel.SetCreatureID = function(self, creatureID)
+		GameTooltipModel.HideAllModels(self);
+		if creatureID > 0 then
+			self.Model:SetUnit("none");
+			self.Model:SetCreature(creatureID);
 			local displayID = self.Model:GetDisplayInfo()
-		if not displayID then
-			Push(app, "SetCreatureID", function()
-				if self.lastModel == creatureID then
-					self:SetCreatureID(creatureID);
-				end
-			end);
+			if not displayID then
+				Push(app, "SetCreatureID", function()
+					if self.lastModel == creatureID then
+						self:SetCreatureID(creatureID);
+					end
+				end);
 				self:Hide()
 				return
 			end
@@ -703,124 +703,124 @@ GameTooltipModel.SetCreatureID = function(self, creatureID)
 				self.Model:SetUnit("none");
 				self:Hide()
 				return
+			end
 		end
+		self:Show();
 	end
-	self:Show();
-end
-GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
-	if displayInfos then
-		local count = #displayInfos;
+	GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
+		if displayInfos then
+			local count = #displayInfos;
 			local displayID, shown
-		if count > 0 then
-			local rotation = reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION;
-			local scale = reference.modelScale or 1;
-			if count > 1 then
-				count = math.min(count, MAX_CREATURES_PER_ENCOUNTER);
-				local ratio = count / MAX_CREATURES_PER_ENCOUNTER;
-				if count < 3 then
-					for i=1,count do
+			if count > 0 then
+				local rotation = reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION;
+				local scale = reference.modelScale or 1;
+				if count > 1 then
+					count = math.min(count, MAX_CREATURES_PER_ENCOUNTER);
+					local ratio = count / MAX_CREATURES_PER_ENCOUNTER;
+					if count < 3 then
+						for i=1,count do
 							displayID = AllowedDisplayID[displayInfos[i]]
 							if displayID then
-						model = self.Models[i];
+								model = self.Models[i];
 								model:SetDisplayInfo(displayID);
-						model:SetCamDistanceScale(scale);
-						model:SetFacing(rotation);
-						model:SetPosition(0, (i % 2 == 0 and 0.5 or -0.5), 0);
-						model:Show();
+								model:SetCamDistanceScale(scale);
+								model:SetFacing(rotation);
+								model:SetPosition(0, (i % 2 == 0 and 0.5 or -0.5), 0);
+								model:Show();
 								shown = true
 							end
+						end
+					else
+						scale = (1 + (ratio * 0.5)) * scale;
+						for i=1,count do
+							displayID = AllowedDisplayID[displayInfos[i]]
+							if displayID then
+								model = self.Models[i];
+								model:SetDisplayInfo(displayID);
+								model:SetCamDistanceScale(scale);
+								model:SetFacing(rotation);
+								fi = math_floor(i / 2);
+								model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - (ratio * 0.15));
+								model:Show();
+								shown = true
+							end
+						end
 					end
 				else
-					scale = (1 + (ratio * 0.5)) * scale;
-					for i=1,count do
-							displayID = AllowedDisplayID[displayInfos[i]]
-							if displayID then
-						model = self.Models[i];
-								model:SetDisplayInfo(displayID);
-						model:SetCamDistanceScale(scale);
-						model:SetFacing(rotation);
-						fi = math_floor(i / 2);
-						model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - (ratio * 0.15));
-						model:Show();
-								shown = true
-							end
-					end
-				end
-			else
 					displayID = AllowedDisplayID[displayInfos[1]]
 					if displayID then
-				self.Model:SetFacing(rotation);
-				self.Model:SetCamDistanceScale(scale);
+						self.Model:SetFacing(rotation);
+						self.Model:SetCamDistanceScale(scale);
 						self.Model:SetDisplayInfo(displayID);
 						app.PrintDebug("SetDisplayInfo",displayID)
-				self.Model:Show();
+						self.Model:Show();
 						shown = true
-			end
+					end
 				end
 				if shown then self:Show(); else self:Hide() end
 				return shown;
+			end
 		end
 	end
-end
--- Attempts to return the displayID for the data, or every displayID if 'all' is specified
+	-- Attempts to return the displayID for the data, or every displayID if 'all' is specified
 	GetDisplayID = function(data, all)
-	-- don't create a displayID for groups with a sourceID/itemID/difficultyID/mapID
-	if data.s or data.itemID or data.difficultyID or data.mapID then return; end
-	if all then
-		local displayInfo, _ = {};
-		-- specific displayID
-		_ = data.displayID;
-		if _ then tinsert(displayInfo, _); data.displayInfo = displayInfo; return displayInfo; end
+		-- don't create a displayID for groups with a sourceID/itemID/difficultyID/mapID
+		if data.s or data.itemID or data.difficultyID or data.mapID then return; end
+		if all then
+			local displayInfo, _ = {};
+			-- specific displayID
+			_ = data.displayID;
+			if _ then tinsert(displayInfo, _); data.displayInfo = displayInfo; return displayInfo; end
 
-		-- specific creatureID for displayID
+			-- specific creatureID for displayID
 			_ = AllowedDisplayID[data.creatureID and app.NPCDisplayIDFromID[data.creatureID]]
-		if _ then tinsert(displayInfo, _); data.displayInfo = displayInfo; return displayInfo; end
+			if _ then tinsert(displayInfo, _); data.displayInfo = displayInfo; return displayInfo; end
 
-		-- loop through "n" providers
-		if data.providers then
-			for k,v in pairs(data.providers) do
-				-- if one of the providers is an NPC, we should show its texture regardless of other providers
-				if v[1] == "n" then
+			-- loop through "n" providers
+			if data.providers then
+				for k,v in pairs(data.providers) do
+					-- if one of the providers is an NPC, we should show its texture regardless of other providers
+					if v[1] == "n" then
 						_ = AllowedDisplayID[v[2] and app.NPCDisplayIDFromID[v[2]]];
+						if _ then tinsert(displayInfo, _); end
+					end
+				end
+			end
+			if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
+
+			-- for quest givers
+			if data.qgs then
+				for k,v in pairs(data.qgs) do
+					_ = AllowedDisplayID[v and app.NPCDisplayIDFromID[v]];
 					if _ then tinsert(displayInfo, _); end
 				end
 			end
-		end
-		if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
-
-		-- for quest givers
-		if data.qgs then
-			for k,v in pairs(data.qgs) do
-					_ = AllowedDisplayID[v and app.NPCDisplayIDFromID[v]];
-				if _ then tinsert(displayInfo, _); end
-			end
-		end
-		if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
-	else
-		-- specific displayID
+			if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
+		else
+			-- specific displayID
 			local _ = data.displayID or data.fetchedDisplayID
-		if _ then return _; end
+			if _ then return _; end
 
-		-- specific creatureID for displayID
+			-- specific creatureID for displayID
 			_ = AllowedDisplayID[data.creatureID and app.NPCDisplayIDFromID[data.creatureID]]
-		if _ then data.fetchedDisplayID = _; return _; end
+			if _ then data.fetchedDisplayID = _; return _; end
 
-		-- loop through "n" providers
-		if data.providers then
-			for k,v in pairs(data.providers) do
-				-- if one of the providers is an NPC, we should show its texture regardless of other providers
-				if v[1] == "n" then
+			-- loop through "n" providers
+			if data.providers then
+				for k,v in pairs(data.providers) do
+					-- if one of the providers is an NPC, we should show its texture regardless of other providers
+					if v[1] == "n" then
 						_ = AllowedDisplayID[v[2] and app.NPCDisplayIDFromID[v[2]]]
-					if _ then data.fetchedDisplayID = _; return _; end
+						if _ then data.fetchedDisplayID = _; return _; end
+					end
 				end
 			end
-		end
 
-		-- for quest givers
-		if data.qgs then
-			for k,v in pairs(data.qgs) do
+			-- for quest givers
+			if data.qgs then
+				for k,v in pairs(data.qgs) do
 					_ = AllowedDisplayID[v and app.NPCDisplayIDFromID[v]]
-				if _ then data.fetchedDisplayID = _; return _; end
+					if _ then data.fetchedDisplayID = _; return _; end
 				end
 			end
 		end
