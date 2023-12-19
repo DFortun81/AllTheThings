@@ -1231,11 +1231,14 @@ local function BuildSourceTextForTSM(group, l)
 	return L["TITLE"];
 end
 -- Fields which are dynamic or pertain only to the specific ATT window and should never merge automatically
+-- Maybe build from /base.lua:DefaultFields since those always are able to be dynamic
 app.MergeSkipFields = {
 	-- true -> never
 	["expanded"] = true,
 	["indent"] = true,
 	["g"] = true,
+	["nmr"] = true,
+	["nmc"] = true,
 	["progress"] = true,
 	["total"] = true,
 	["visible"] = true,
@@ -1243,14 +1246,23 @@ app.MergeSkipFields = {
 	["rawlink"] = true,
 	["sourceIgnored"] = true,
 	["costTotal"] = true,
+	["costProgress"] = true,
+	["iconPath"] = true,
 	["costNested"] = true,
 	["hasUpgradeNested"] = true,
 	-- 1 -> only when cloning
 	["e"] = 1,
 	["u"] = 1,
+	["c"] = 1,
 	["up"] = 1,
-	["pvp"] = 1,
 	["pb"] = 1,
+	["pvp"] = 1,
+	["races"] = 1,
+	["isDaily"] = 1,
+	["isWeekly"] = 1,
+	["isMonthly"] = 1,
+	["isYearly"] = 1,
+	["OnUpdate"] = 1,
 	["requireSkill"] = 1,
 };
 -- Fields on a Thing which are specific to where the Thing is Sourced or displayed in a ATT window
@@ -4486,7 +4498,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 		-- replace the Source references with the cloned references
 		group = cloned;
 		-- Find or Create the root group for the search results, and capture the results which need to be nested instead
-		local root;
+		local root, filtered
 		local nested = {};
 		-- app.PrintDebug("Find Root for",paramA,paramB,"#group",group and #group);
 		-- check for Item groups in a special way to account for extra ID's
@@ -4503,17 +4515,24 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 								if app.RecursiveCharacterRequirementsFilter(o) then
 									-- app.PrintDebug("filtered root");
 									if root then
-										local otherRoot = root;
-										-- app.PrintDebug("replace root",otherRoot.key,otherRoot[otherRoot.key]);
-										root = o;
-										MergeProperties(root, otherRoot);
-										-- previous root content will be nested after
-										if otherRoot.g then
+										if filtered then
+											-- app.PrintDebug("merge root",o.key,o[o.key]);
+											-- app.PrintTable(o)
+											MergeProperties(root, o, filtered);
+											-- other root content will be nested after
+											MergeObjects(nested, o.g);
+										else
+											local otherRoot = root;
+											-- app.PrintDebug("replace root",otherRoot.key,otherRoot[otherRoot.key]);
+											root = o;
+											MergeProperties(root, otherRoot);
+											-- previous root content will be nested after
 											MergeObjects(nested, otherRoot.g);
 										end
 									else
 										root = o;
 									end
+									filtered = true
 								else
 									-- app.PrintDebug("unfiltered root",o.key,o[o.key],o.modItemID,paramB);
 									if root then MergeProperties(root, o, true);
@@ -4533,31 +4552,38 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 		else
 			for _,o in ipairs(group) do
 				-- If the obj "is" the root obj
-				-- print(o.key,o[o.key],o.modItemID,"=parent>",o.parent and o.parent.key,o.parent and o.parent.key and o.parent[o.parent.key]);
+				-- app.PrintDebug(o.key,o[o.key],o.modItemID,"=parent>",o.parent and o.parent.key,o.parent and o.parent.key and o.parent[o.parent.key],o.parent and o.parent.text);
 				if GroupMatchesParams(o, paramA, paramB) then
 					-- object meets filter criteria and is exactly what is being searched
 					if app.RecursiveCharacterRequirementsFilter(o) then
-						-- print("filtered root");
+						-- app.PrintDebug("filtered root");
 						if root then
-							local otherRoot = root;
-							-- print("replace root",otherRoot.key,otherRoot[otherRoot.key]);
-							root = o;
-							MergeProperties(root, otherRoot);
-							-- previous root content will be nested after
-							if otherRoot.g then
+							if filtered then
+								-- app.PrintDebug("merge root",o.key,o[o.key]);
+								-- app.PrintTable(o)
+								MergeProperties(root, o, filtered);
+								-- other root content will be nested after
+								MergeObjects(nested, o.g);
+							else
+								local otherRoot = root;
+								-- app.PrintDebug("replace root",otherRoot.key,otherRoot[otherRoot.key]);
+								root = o;
+								MergeProperties(root, otherRoot);
+								-- previous root content will be nested after
 								MergeObjects(nested, otherRoot.g);
 							end
 						else
 							root = o;
 						end
+						filtered = true
 					else
-						-- print("unfiltered root",o.key,o[o.key],o.modItemID,paramB);
+						-- app.PrintDebug("unfiltered root",o.key,o[o.key],o.modItemID,paramB);
 						if root then MergeProperties(root, o, true);
 						else root = o; end
 					end
 				else
 					-- Not the root, so it will be nested
-					-- print("nested")
+					-- app.PrintDebug("nested")
 					tinsert(nested, o);
 				end
 			end
@@ -12892,7 +12918,6 @@ local function CacheInfo(t, field)
 	local _t, id = cache.GetCached(t);
 	-- patch can be included in the id
 	local tierID = math_floor(id);
-	t.tierKey = tierID;
 	local info = L.TIER_DATA[tierID];
 	-- assign the cached values from locale
 	if info then
