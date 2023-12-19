@@ -2502,19 +2502,19 @@ MergeObject = function(g, t, index, newCreate)
 	end
 end
 NestObject = function(p, t, newCreate, index)
-	if p and t then
-		local g = p.g;
-		if g then
-			MergeObject(g, t, index, newCreate);
-		elseif newCreate then
-			p.g = { CreateObject(t) };
-		else
-			p.g = { t };
-		end
+	if not p or not t then return end
+	local g = p.g;
+	if g then
+		MergeObject(g, t, index, newCreate);
+	elseif newCreate then
+		p.g = { CreateObject(t) };
+	else
+		p.g = { t };
 	end
 end
 MergeObjects = function(g, g2, newCreate)
-	if g2 and #g2 > 25 then
+	if not g or not g2 then return end
+	if #g2 > 25 then
 		local hashTable,t = {};
 		for i,o in ipairs(g) do
 			local hash = o.hash;
