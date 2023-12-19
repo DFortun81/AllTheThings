@@ -17244,6 +17244,7 @@ local BaseFilterHeaderClone = app.BaseObjectFields({
 	["costCollectibles"] = app.EmptyFunction,
 	["hasUpgradeNested"] = app.EmptyFunction,
 	["costNested"] = app.EmptyFunction,
+	["SortInfo"] = app.EmptyFunction,
 	["g"] = app.EmptyFunction,
 	["visible"] = app.EmptyFunction,
 	-- ["back"] = function(t)
@@ -17923,6 +17924,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			"maxReputation",
 			"OnUpdate",
 			"OnTooltip",
+			"SortInfo",
 			"_CheckCollectible",
 			"_SettingsRefresh",
 			"_up",
