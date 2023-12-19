@@ -3349,6 +3349,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78297, {	-- You've Got Yourself A Deal [A]
+					["providers"] = {
+						{ "n",   8383 },	-- Master Wood
+						{ "i", 211448 },	-- Signed Procurement Contract
+					},
+					["sourceQuest"] = 78287,	-- Let Me Make You An Offer [A]
+					["coord"] = { 79.2, 47.6, STORMWIND_CITY },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { THE_BARRENS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
+					["groups"] = {
+						i(210210),	-- Grizzwerks Defense Industries Founder's Certificate
+					},
+				})),
+				-- #endif
 			}),
 			n(RARES, {
 				n(130828, {	-- Gordon MacKellar

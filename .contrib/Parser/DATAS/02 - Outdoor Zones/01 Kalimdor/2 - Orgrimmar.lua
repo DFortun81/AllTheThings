@@ -1753,6 +1753,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(35, 35, 15),
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78304, {	-- You've Got Yourself A Deal [H]
+					["providers"] = {
+						{ "n",   3408 },	-- Zel'mak <Warrior Trainer>
+						{ "i", 211448 },	-- Signed Procurement Contract
+					},
+					["sourceQuest"] = 78288,	-- Let Me Make You An Offer [H]
+					["coord"] = { 80.2, 29.6, ORGRIMMAR },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
+					["groups"] = {
+						i(210210),	-- Grizzwerks Defense Industries Founder's Certificate
+					},
+				})),
+				-- #endif
 				q(2379, {	-- Zando'zan
 					["qg"] = 3401,	-- Shenthul
 					-- #if AFTER TBC

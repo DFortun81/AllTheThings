@@ -3908,8 +3908,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(211653, {	-- Grizzby
 					["sourceQuests"] = {
-						78287,	-- Let Me Make You An Offer [A]
-						78288,	-- Let Me Make You An Offer [h]
+						78297,	-- You've Got Yourself A Deal [A]
+						78304,	-- You've Got Yourself A Deal [H]
 					},
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
 					["lvl"] = 20,

@@ -2154,6 +2154,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1143,	-- The Tower of Althalaxx (8/9)
 					["coord"] = { 55.0, 24.9, DARKSHORE },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 					["groups"] = {

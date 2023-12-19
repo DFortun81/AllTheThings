@@ -2653,7 +2653,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 66.7, 57, ASHENVALE },
 						}),
 						objective(2, {	-- Free the Highborne soul in Satyrnaar
-							["provider"] = { "o", 19901 },	-- Circle of Imprisonment
+							["provider"] = { "o", 20352 },	-- Circle of Imprisonment
 							["coord"] = { 81.6, 48.5, ASHENVALE },
 						}),
 					},
@@ -2663,6 +2663,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1140,	-- The Tower of Althalaxx (6/9)
 					["coord"] = { 26.2, 38.6, ASHENVALE },
 					["timeline"] = { "removed 4.0.3" },
+					["maps"] = { DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 				}),
