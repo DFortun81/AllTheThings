@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------
 -- Cache some collection states for account wide quests that arent actually --
--- Granted account wide or can only be completed once on the entire Account	--					
+-- granted account wide or can only be completed once on the entire Account	--					
 ------------------------------------------------------------------------------
 
 ---------------------------------------------
