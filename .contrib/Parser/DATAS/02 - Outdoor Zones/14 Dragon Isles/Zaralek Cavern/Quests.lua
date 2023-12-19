@@ -568,6 +568,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 76101 },	-- Tougher Down Under
 				["provider"] = { "n", 203404 },	-- Vaskarn
 				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
+				["timeline"] = { REMOVED_10_2_0 },
 				["g"] = {
 					i(202171),	-- Obsidian Flightstone
 				},
@@ -576,6 +577,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 72658 },	-- Flightstones
 				["provider"] = { "n", 203404 },	-- Vaskarn
 				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
+				["timeline"] = { REMOVED_10_2_0 },
 				["g"] = {
 					i(204728),	-- Friendship Censer
 					i(202171),	-- Obsidian Flightstone
@@ -585,6 +587,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["sourceQuests"] = { 75506 },	-- Shadowflame Crests
 				["provider"] = { "n", 203404 },	-- Vaskarn
 				["coord"] = { 56.2, 56.2, ZARALEK_CAVERN },
+				["timeline"] = { REMOVED_10_2_0 },
 				["_drop"] = { "g" },	-- Drop Crest
 				["g"] = {
 					i(202171),	-- Obsidian Flightstone

@@ -311,7 +311,7 @@ root(ROOTS.Zones, {
 					q(24929, {	-- Send a Message
 						["coord"] = { 56.5, 71.9, THE_LOST_ISLES },
 						["qg"] = 38647,	-- Izzy
-						["sourceQuest"] = 24925,	-- Free the Captives
+						["sourceQuest"] = 24924,	-- Oomlot Village
 						["groups"] = {
 							i(52956),	-- Oomlot Staff
 							i(52934),	-- Pygmy Cloak

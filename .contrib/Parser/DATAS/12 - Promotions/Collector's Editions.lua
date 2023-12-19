@@ -453,6 +453,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 				n(QUESTS, {
 					q(57686, {	-- The Eternal Traveler
 						["qg"] = 158635,	-- Xolartios <Eternal Traveler>
+						["timeline"] = { ADDED_8_3_7 },	-- Still availble to players that have the mount, able to share quest with others etc.
 						["description"] = "You need to purchase Shadowlands Heroic Edition to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
 						["groups"] = {
 							i(172075),	-- Eternal Traveler's Guise

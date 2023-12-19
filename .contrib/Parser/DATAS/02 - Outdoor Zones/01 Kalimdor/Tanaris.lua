@@ -3112,7 +3112,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25018, {	-- Andoren Will Know
 					["qg"] = 38849,	-- Megs Dreadshredder
 					["sourceQuests"] = {
-						25001,	-- Sandscraper
 						25014,	-- Sandscraper's Treasure
 					},
 					["coord"] = { 44.5, 52.6, TANARIS },

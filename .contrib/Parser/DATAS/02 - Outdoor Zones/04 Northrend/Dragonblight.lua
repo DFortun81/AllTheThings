@@ -911,7 +911,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 13.0, 49.3, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
 						["qg"] = 26181,	-- Emissary Brighthoof
-						["sourceQuest"] = 11979,	-- The Taunka and the Tauren
+						-- TODO: ShadowBrooks only one required need some reports though
+						["sourceQuests"] = {
+							11977,	-- A Tauren Among Taunka
+							11979,	-- The Taunka and the Tauren
+						},
 					}),
 					q(12167, {	-- Kill the Cultists
 						["coord"] = { 29.1, 55.6, DRAGONBLIGHT },

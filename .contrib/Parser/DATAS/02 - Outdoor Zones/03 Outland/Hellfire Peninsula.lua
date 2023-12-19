@@ -665,9 +665,11 @@ root(ROOTS.Zones, {
 							49862,	-- To Outland [Breadcrumb]
 							-- #endif
 							-- #if AFTER 9.0.1.36230
+							60120,	-- Burning Crusade: To Outland! (A)
 							60959,	-- Burning Crusade: Onward to Adventure in Outland [Alliance]
 							-- #endif
 						},
+						["sourceQuestNumRequired"] = 1,
 						["coord"] = { 87.3, 50.7, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),

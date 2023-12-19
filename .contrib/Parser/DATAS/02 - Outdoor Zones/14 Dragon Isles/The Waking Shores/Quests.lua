@@ -1057,7 +1057,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 76.4, 34.6, THE_WAKING_SHORES },
 			}),
 			q(66612, {	-- Crabtender's Quandry
-				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+				["sourceQuests"] = {
+					65439,	-- To the Dragon Isles! (H)
+					67700,	-- To the Dragon Isles! (A)
+				},
 				["provider"] = { "n", 196827 },	-- Crabtender Kad'irsza
 				["coord"] = { 59.7, 51.2, THE_WAKING_SHORES },
 			}),
@@ -1110,7 +1113,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			q(71141, {	-- Gills with Gall
-				["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+				["sourceQuests"] = {
+					65439,	-- To the Dragon Isles! (H)
+					67700,	-- To the Dragon Isles! (A)
+				},
 				["provider"] = { "n", 193304 },	-- Ru'Kroszk
 				["coord"] = { 59.7, 51.2, THE_WAKING_SHORES },
 			}),
