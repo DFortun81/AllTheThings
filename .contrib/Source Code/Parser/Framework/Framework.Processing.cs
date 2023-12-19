@@ -1795,7 +1795,7 @@ namespace ATT
             }
 
             // CriteriaTree can be a parent, which means the children should be incorporated as criteria of the data
-            if (TryGetTypeDBObjectChildren(criteriaTree, out List<CriteriaTree> childTrees))
+            if (criteriaTree.IsUseful() && TryGetTypeDBObjectChildren(criteriaTree, out List<CriteriaTree> childTrees))
             {
                 // Don't incorporate multiple Criteria from an ignored CriteriaTree
                 if (inGameIgnored)

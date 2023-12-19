@@ -28,6 +28,11 @@ namespace ATT.DB.Types
         public bool IsHordeOnlyFlags() =>
             (_flags & TypeFlags.Horde) == TypeFlags.Horde;
 
+        /// <summary>
+        /// Represents if this CriteriaTree is useful to process by way of indicating the sub-CriteriaTree are ALL (4) or ANY (8)
+        /// </summary>
+        public bool IsUseful() => Operator == 4 || Operator == 8;
+
         public IDictionary<string, object> AsData()
         {
             throw new NotImplementedException();
