@@ -2121,6 +2121,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(6274, {	-- Pattern: Blue Overalls
 							["isLimited"] = true,
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(215369)),	-- Pattern: Invoker's Cord
+						applyclassicphase(SOD_PHASE_ONE, i(215370)),	-- Pattern: Invoker's Mantle
+						-- #endif
 						i(10314, {	-- Pattern: Lavender Mageweave Shirt
 							["isLimited"] = true,
 						}),

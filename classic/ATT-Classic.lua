@@ -13662,7 +13662,7 @@ app:GetWindow("ItemFinder", {
 				progress = 0,
 				total = 0,
 				back = 1,
-				currentItemID = 60000,
+				currentItemID = 210765,
 				minimumItemID = 0,
 				g = {
 					{
@@ -13689,11 +13689,76 @@ app:GetWindow("ItemFinder", {
 								end
 							end
 						end
-						for count=#g,100 do
+						for count=#g,200 do
 							local i = header.currentItemID - 1;
 							if i > header.minimumItemID then
 								header.currentItemID = i;
 								tinsert(g, app.CreateItemHarvester(i, {
+									parent = header
+								}));
+							end
+						end
+						self:DelayedUpdate(true);
+						self.delayRemaining = 1;
+					end
+				end
+			};
+		end
+		self.data.progress = 0;
+		self.data.total = 0;
+		UpdateGroups(self.data, self.data.g);
+		UpdateWindow(self, ...);
+		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+	end
+});
+app:GetWindow("SpellFinder", {
+	parent = UIParent,
+	Silent = true,
+	HideFromSettings = true,
+	OnUpdate = function(self, ...)
+		if not self.initialized then
+			self.initialized = true;
+			self.data = {
+				text = "Spell Finder",
+				icon = app.asset("WindowIcon_RaidAssistant"),
+				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.",
+				visible = true,
+				expanded = true,
+				progress = 0,
+				total = 0,
+				back = 1,
+				currentID = 436524,
+				minimumID = 0,
+				g = {
+					{
+						text = "Update Now",
+						icon = app.asset("Button_Reroll"),
+						description = "Click this to update the listing.",
+						visible = true,
+						fails = 0,
+						OnClick = function(row, button)
+							self:Update(true);
+							return true;
+						end,
+						OnUpdate = app.AlwaysShowUpdate,
+					},
+				},
+				OnUpdate = function(header)
+					local g = header.g;
+					if g then
+						local count = #g;
+						if count > 0 then
+							for i=count,1,-1 do
+								if g[i].collected then
+									tremove(g, i);
+								end
+							end
+						end
+						for count=#g,5000 do
+							local i = header.currentID - 1;
+							if i > header.minimumID then
+								header.currentID = i;
+								tinsert(g, app.CreateSpell(i, {
 									parent = header
 								}));
 							end

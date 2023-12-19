@@ -2352,9 +2352,6 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			applyclassicphase(PHASE_SIX, i(22655, {["timeline"] = {REMOVED_3_0_2,ADDED_10_1_5}})),	-- Glacial Wrists
 			i(206507, {["timeline"] = {ADDED_10_1_5}}),	-- Necrotic Gown
 			i(206582, {["timeline"] = {ADDED_10_1_5}}),	-- Peculiar Glacial Mantle
-			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(210781)),	-- Phoenix Bindings
-			-- #endif
 			i(206562, {["timeline"] = {ADDED_10_1_5}}),	-- Shroud of Forbidden Magic
 		}),
 		category(230, {	-- Materials
@@ -2421,6 +2418,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(14112),	-- Felcloth Shoulders
 			i(16980),	-- Flarecore Mantle
 			i(7057),	-- Green Silken Shoulders
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_ONE, i(215365)),	-- Invoker's Mantle
+			-- #endif
 			applyclassicphase(PHASE_THREE, i(19050)),	-- Mantle of the Timbermaw
 			i(14139),	-- Mooncloth Shoulders
 			i(10029),	-- Red Mageweave Shoulders
@@ -2507,6 +2507,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		category(237, {	-- Bracers
 			i(18263),	-- Flarecore Wraps
 			i(4308),	-- Green Linen Bracers
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_ONE, i(210781)),	-- Phoenix Bindings
+			-- #endif
 		}),
 		category(239, {	-- Gloves
 			i(4319),	-- Azure Silk Gloves
@@ -2546,6 +2549,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(7055),	-- Crimson Silk Belt
 			i(7061),	-- Earthen Silk Belt
 			i(14143),	-- Ghostweave Belt
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_ONE, i(215366)),	-- Invoker's Cord
+			-- #endif
 			i(7026),	-- Linen Belt
 			i(13856),	-- Runecloth Belt
 			applyclassicphase(PHASE_FOUR, i(20539)),	-- Runed Stygian Belt

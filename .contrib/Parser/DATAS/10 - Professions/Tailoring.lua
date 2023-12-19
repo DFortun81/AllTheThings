@@ -978,6 +978,12 @@ profession(TAILORING, {
 					["name"] = "Green Silken Shoulders",
 					["recipeID"] = 8774
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, {
+					["name"] = "Invoker's Mantle",
+					["recipeID"] = 435848
+				}),
+				-- #endif
 				applyclassicphase(PHASE_THREE, {
 					["name"] = "Mantle of the Timbermaw",
 					["recipeID"] = 23663,
@@ -1293,6 +1299,12 @@ profession(TAILORING, {
 					["name"] = "Ghostweave Belt",
 					["recipeID"] = 18410
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, {
+					["name"] = "Invoker's Cord",
+					["recipeID"] = 435841
+				}),
+				-- #endif
 				{
 					["name"] = "Linen Belt",
 					["recipeID"] = 8776

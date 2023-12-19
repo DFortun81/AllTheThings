@@ -165,6 +165,8 @@ i(21723, 26407);	-- Festival Suit
 
 -- #if SEASON_OF_DISCOVERY
 -- SEASON OF DISCOVERY --
+i(215369, 435841);	-- Invoker's Cord
+i(215370, 435848);	-- Invoker's Mantle
 i(211247, 428424);	-- Phoenix Bindings
 -- #endif
 
