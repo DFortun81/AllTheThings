@@ -271,7 +271,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 25,
 					["groups"] = {
 						objective(1, {	-- 0/5 Alterac Granite
-							["provider"] = { "i", 4521 },	-- Alterac Granite
+							["providers"] = {
+								{ "i", 4521 },	-- Alterac Granite
+								{ "o", 2714 },	-- Alterac Granite
+							},
+							["coord"] = { 43.2, 27.9, HILLSBRAD_FOOTHILLS },
 						}),
 					},
 				}),
