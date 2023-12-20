@@ -139,7 +139,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(76027, {	-- Flapping and Screaming
 						["coord"] = { 54.6, 49.5, ZARALEK_CAVERN },
 						["g"] = {
-							i(205969),	-- Glowing Key
+							o(402578, {	-- Glowing Key
+								i(205969),	-- Glowing Key
+							}),
 						},
 					}),
 					q(76016, {  -- The Living Drill
