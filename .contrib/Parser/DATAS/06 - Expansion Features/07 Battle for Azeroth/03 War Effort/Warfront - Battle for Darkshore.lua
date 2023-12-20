@@ -864,6 +864,14 @@ root(ROOTS.ExpansionFeatures,
 									["sourceQuest"] = 53977,	-- The War Chest (A)
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 120,
+									["groups"] = {
+										o(310736, {	-- Ore Crate
+											["coord"] = { 57.2, 66.1, 1203 },
+											["groups"] = {
+												i(165659),	-- Freshly-Dug Ore (QI!)
+											},
+										}),
+									},
 								}),
 								q(54436, {	-- Wisp'd Into Shape
 									["provider"] = { "n", 145770 },	-- Thisalee Crow
@@ -899,7 +907,7 @@ root(ROOTS.ExpansionFeatures,
 								q(53974, {	-- Druids of Gloomtide
 									["provider"] = { "n", 145779 },	-- Celestine of the Harvest
 									["coord"] = { 51.8, 55.4, 1203 },
-									["sourceQuest"] = 53959,	-- Armor for Armies
+									["sourceQuest"] = 53957,	-- Darkshore Recuits (A)
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 120,
 								}),
