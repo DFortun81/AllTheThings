@@ -296,11 +296,14 @@ localize(L.HEADER_NAMES, {
 	[-1000267] = "Arsenals",
 	[-1000268] = "Sourceless",
 	[-1000269] = "Season of Discovery",
-	[-1000270] = "Monster Hunting",
-	[-1000271] = "Rune Engraving",
-	[-1000272] = "Waylaid Supplies",
-	[-1000273] = "Crafted",
-	[-1000274] = "Gathering",
+	[-1000270] = "Comprehension",
+	[-1000271] = "Tier 1",
+	[-1000272] = "Tier 2",
+	[-1000273] = "Monster Hunting",
+	[-1000274] = "Rune Engraving",
+	[-1000275] = "Waylaid Supplies",
+	[-1000276] = "Crafted",
+	[-1000277] = "Gathering",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000015] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -325,8 +328,8 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000260] = "This section is for miscellaneous promotions that took place in the real world or something to do with account management.",
 	[-1000268] = "This Category contains Things that probably exist in the game but no known source.",
 	[-1000269] = "This Season brings an initial level cap of 25 and a new level-25 endgame, including a 10-player Blackfathom Deeps raid with new mechanics, new and reimagined bosses to challenge player tactics and strategies, and fresh rewards.",
-	[-1000271] = "Rune Engraving is a new class system for Season of Discovery. It allows each class to tailor their gameplay experience by unlocking new unique abilities!",
-	[-1000272] = "Waylaid Supplies quest items drop from mobs of level 6 and above all over Azeroth. These quests request delivery of the Waylaid Supplies to an organization representative in return for a few silver, experience, and Reputation. Of course, there are items missing from the supply shipment, and you can supplement it for greater reputation rewards.",
+	[-1000274] = "Rune Engraving is a new class system for Season of Discovery. It allows each class to tailor their gameplay experience by unlocking new unique abilities!",
+	[-1000275] = "Waylaid Supplies quest items drop from mobs of level 6 and above all over Azeroth. These quests request delivery of the Waylaid Supplies to an organization representative in return for a few silver, experience, and Reputation. Of course, there are items missing from the supply shipment, and you can supplement it for greater reputation rewards.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -439,11 +442,14 @@ localize(L.HEADER_ICONS, {
 	[-1000267] = "Interface/Icons/inv_mace_1h_bastionquest_b_02",
 	[-1000268] = "Interface/Icons/inv_misc_questionmark",
 	[-1000269] = "Interface/Icons/inv_misc_map_01",
-	[-1000270] = "Interface/CURSOR/Attack",
-	[-1000271] = "Interface/Icons/trade_engraving",
-	[-1000272] = "Interface/Icons/inv_crate_03",
-	[-1000273] = "Interface/CURSOR/REPAIRNPC",
-	[-1000274] = "Interface/CURSOR/Mine",
+	[-1000270] = "Interface/ICONS/spell_holy_mindsooth",
+	[-1000271] = "Interface/ICONS/inv_scroll_01",
+	[-1000272] = "Interface/ICONS/inv_scroll_14",
+	[-1000273] = "Interface/CURSOR/Attack",
+	[-1000274] = "Interface/Icons/trade_engraving",
+	[-1000275] = "Interface/Icons/inv_crate_03",
+	[-1000276] = "Interface/CURSOR/REPAIRNPC",
+	[-1000277] = "Interface/CURSOR/Mine",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000196] = 201,
@@ -2018,16 +2024,17 @@ localize(L.HEADER_NAMES, {
 	[-1000231] = "Die Öffnung des Dunklen Portals",
 	[-1000232] = "Das Szepter der Sandstürme",
 	[-1000269] = "Saison der Entdeckungen",
-	[-1000270] = "Monsterjagd",
-	[-1000271] = "Runenschnitzen",
-	[-1000272] = "Weggelegte Vorräte",
+	[-1000270] = "Verständnis",
+	[-1000273] = "Monsterjagd",
+	[-1000274] = "Runenschnitzen",
+	[-1000275] = "Weggelegte Vorräte",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
 	[-1000040] = "Ein Waffenmeister ist ein NPC, der Charakteren die Möglichkeit bietet, bestimmte Waffenfertigkeiten zu erlernen, deren Verfügbarkeit von Waffenmeister zu Waffenmeister unterschiedlich ist. Alle Waffenfähigkeiten können auf Stufe 1 trainiert werden, mit Ausnahme von Stangenwaffen, für die Stufe 20 erforderlich ist.\n\nDas Training mit einem Waffenmeister wurde in Patch 4.0.1 obsolet, da nun alle klassengerechten Waffenfertigkeiten von jeder Klasse bei der Erstellung erlernt werden. Waffenmeister wurden kurz darauf aus dem Spiel entfernt.",
 	[-1000269] = "Diese Saison bringt eine anfängliche Levelobergrenze von 25 und ein neues Level-25-Endspiel, einschließlich eines Blackfathom Deeps-Raids für 10 Spieler mit neuen Mechaniken, neuen und neu gestalteten Bossen, die die Taktiken und Strategien der Spieler herausfordern, und neuen Belohnungen.",
-	[-1000271] = "Runengravur ist ein neues System, das kürzlich für Season of Discovery angekündigt wurde. Es ermöglicht jeder Klasse, ihr Spielerlebnis individuell anzupassen, indem sie neue einzigartige Fähigkeiten freischaltet!",
-	[-1000272] = "Questgegenstände für „Weggelegte Vorräte“ fallen von Mobs der Stufe 6 und höher in ganz Azeroth. Diese Quests erfordern die Lieferung der Waylaid-Vorräte an einen Vertreter der Organisation als Gegenleistung für ein paar Silbermünzen, Erfahrung und Ansehen. Natürlich fehlen in der Versorgungslieferung Gegenstände, und Sie können sie ergänzen, um höhere Reputationsbelohnungen zu erhalten.",
+	[-1000274] = "Runengravur ist ein neues System, das kürzlich für Season of Discovery angekündigt wurde. Es ermöglicht jeder Klasse, ihr Spielerlebnis individuell anzupassen, indem sie neue einzigartige Fähigkeiten freischaltet!",
+	[-1000275] = "Questgegenstände für „Weggelegte Vorräte“ fallen von Mobs der Stufe 6 und höher in ganz Azeroth. Diese Quests erfordern die Lieferung der Waylaid-Vorräte an einen Vertreter der Organisation als Gegenleistung für ein paar Silbermünzen, Erfahrung und Ansehen. Natürlich fehlen in der Versorgungslieferung Gegenstände, und Sie können sie ergänzen, um höhere Reputationsbelohnungen zu erhalten.",
 });
 localize(_.ObjectNames, {
 	[31] = "Alte Löwenstatue",
@@ -2514,15 +2521,16 @@ localize(L.HEADER_NAMES, {
 	[-1000231] = "La apertura del Portal Oscuro",
 	[-1000232] = "El cetro del Mar de Dunas",
 	[-1000269] = "Temporada de Descubrimiento",
-	[-1000270] = "Caza de Monstruos",
-	[-1000271] = "Grabado",
-	[-1000272] = "Suministros asaltados",
+	[-1000270] = "Comprensión",
+	[-1000273] = "Caza de Monstruos",
+	[-1000274] = "Grabado",
+	[-1000275] = "Suministros asaltados",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
 	[-1000269] = "Esta temporada trae un límite de nivel inicial de 25 y un nuevo final de nivel 25, que incluye una incursión de 10 jugadores en Blackfathom Deeps con nuevas mecánicas, jefes nuevos y reinventados para desafiar las tácticas y estrategias de los jugadores, y nuevas recompensas.",
-	[-1000271] = "El grabado es un nuevo sistema anunciado recientemente para Season of Discovery. ¡Permite que cada clase adapte su experiencia de juego desbloqueando nuevas habilidades únicas!",
-	[-1000272] = "Los objetos de misión de Suministros Waylaid caen de mobs de nivel 6 y, sobre todo, en Azeroth. Estas misiones requieren la entrega de suministros Waylaid a un representante de la organización a cambio de algo de plata, experiencia y reputación. Por supuesto, faltan elementos en el envío de suministros y puedes complementarlos para obtener mayores recompensas de reputación.",
+	[-1000274] = "El grabado es un nuevo sistema anunciado recientemente para Season of Discovery. ¡Permite que cada clase adapte su experiencia de juego desbloqueando nuevas habilidades únicas!",
+	[-1000275] = "Los objetos de misión de Suministros Waylaid caen de mobs de nivel 6 y, sobre todo, en Azeroth. Estas misiones requieren la entrega de suministros Waylaid a un representante de la organización a cambio de algo de plata, experiencia y reputación. Por supuesto, faltan elementos en el envío de suministros y puedes complementarlos para obtener mayores recompensas de reputación.",
 });
 localize(_.ObjectNames, {
 	[31] = "Estatua de león antigua",
@@ -3016,16 +3024,17 @@ localize(L.HEADER_NAMES, {
 	[-1000232] = "Le Sceptre des Sables changeants",
 	[-1000240] = "Edition Collector",
 	[-1000269] = "Saison de Découverte",
-	[-1000270] = "Chasse aux Monstres",
-	[-1000271] = "Gravure",
-	[-1000272] = "Fournitures isolées",
+	[-1000270] = "Compréhension",
+	[-1000273] = "Chasse aux Monstres",
+	[-1000274] = "Gravure",
+	[-1000275] = "Fournitures isolées",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
 	[-1000040] = "Un maître d'armes est un PNJ qui offre aux personnages la possibilité d'apprendre des compétences d'armes spécifiques, dont la disponibilité varie d'un maître d'armes à l'autre. Toutes les compétences d'armes peuvent être entraînées au niveau 1, à l'exception des armes d'hast qui nécessitent le niveau 20.\n\nL'entraînement avec un maître d'armes est devenu obsolète dans le patch 4.0.1, car toutes les compétences d'armes appropriées à la classe sont désormais apprises par chaque classe lors de sa création. Les maîtres d'armes ont été retirés du jeu peu de temps après.",
 	[-1000269] = "Cette saison apporte un niveau maximum initial de 25 et une nouvelle fin de partie de niveau 25, comprenant un raid Blackfathom Deeps à 10 joueurs avec de nouvelles mécaniques, des boss nouveaux et réinventés pour défier les tactiques et stratégies des joueurs, et de nouvelles récompenses.",
-	[-1000271] = "La gravure de runes est un nouveau système récemment annoncé pour Season of Discovery. Il permet à chaque classe d'adapter son expérience de jeu en débloquant de nouvelles capacités uniques!",
-	[-1000272] = "Les objets de quête Waylaid Supplies proviennent des foules de niveau 6 et surtout partout en Azeroth. Ces quêtes nécessitent la livraison des fournitures Waylaid à un représentant de l'organisation en échange de quelques pièces d'argent, d'expérience et de réputation. Bien sûr, il manque des articles dans la livraison de fournitures, et vous pouvez les compléter pour obtenir de plus grandes récompenses de réputation.",
+	[-1000274] = "La gravure de runes est un nouveau système récemment annoncé pour Season of Discovery. Il permet à chaque classe d'adapter son expérience de jeu en débloquant de nouvelles capacités uniques!",
+	[-1000275] = "Les objets de quête Waylaid Supplies proviennent des foules de niveau 6 et surtout partout en Azeroth. Ces quêtes nécessitent la livraison des fournitures Waylaid à un représentant de l'organisation en échange de quelques pièces d'argent, d'expérience et de réputation. Bien sûr, il manque des articles dans la livraison de fournitures, et vous pouvez les compléter pour obtenir de plus grandes récompenses de réputation.",
 });
 localize(_.ObjectNames, {
 	[31] = "Statue du vieux lion",
@@ -3506,14 +3515,15 @@ localize(L.HEADER_NAMES, {
 	[-1000231] = "L'apertura del Portale Oscuro",
 	[-1000232] = "Scettro delle Sabbie Mutevoli",
 	[-1000269] = "La Stagione delle Scoperte",
-	[-1000270] = "Caccia ai Mostri",
-	[-1000271] = "Rune Engraving",
-	[-1000272] = "Forniture Waylaid",
+	[-1000270] = "Comprensione",
+	[-1000273] = "Caccia ai Mostri",
+	[-1000274] = "Rune Engraving",
+	[-1000275] = "Forniture Waylaid",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000269] = "Questa stagione porta un limite di livello iniziale di 25 e un nuovo gioco finale di livello 25, incluso un raid di Blackfathom Deeps per 10 giocatori con nuove meccaniche, boss nuovi e reinventati per sfidare le tattiche e le strategie dei giocatori e nuove ricompense.",
-	[-1000271] = "L'incisione delle rune è un nuovo sistema recentemente annunciato per la Stagione delle Scoperte. Permette a ogni classe di personalizzare la propria esperienza di gioco sbloccando nuove abilità uniche!",
-	[-1000272] = "Gli oggetti della missione Waylaid Supplies vengono rilasciati dai mob di livello 6 e soprattutto su Azeroth. Queste missioni richiedono la consegna delle Forniture Waylaid a un rappresentante dell'organizzazione in cambio di argento, esperienza e reputazione. Naturalmente, ci sono degli articoli mancanti nella spedizione di rifornimenti e puoi integrarli per ottenere maggiori ricompense in termini di reputazione.",
+	[-1000274] = "L'incisione delle rune è un nuovo sistema recentemente annunciato per la Stagione delle Scoperte. Permette a ogni classe di personalizzare la propria esperienza di gioco sbloccando nuove abilità uniche!",
+	[-1000275] = "Gli oggetti della missione Waylaid Supplies vengono rilasciati dai mob di livello 6 e soprattutto su Azeroth. Queste missioni richiedono la consegna delle Forniture Waylaid a un rappresentante dell'organizzazione in cambio di argento, esperienza e reputazione. Naturalmente, ci sono degli articoli mancanti nella spedizione di rifornimenti e puoi integrarli per ottenere maggiori ricompense in termini di reputazione.",
 });
 localize(_.ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
@@ -3865,15 +3875,16 @@ localize(L.HEADER_NAMES, {
 	[-1000231] = "어둠의 문 열기",
 	[-1000232] = "흐르는 모래의 홀",
 	[-1000269] = "발견의 계절",
-	[-1000270] = "몬스터 사냥",
-	[-1000271] = "각인술",
-	[-1000272] = "웨이레이드 보급품",
+	[-1000270] = "이해력",
+	[-1000273] = "몬스터 사냥",
+	[-1000274] = "각인술",
+	[-1000275] = "웨이레이드 보급품",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "웨폰 마스터는 캐릭터에게 특정 무기 기술을 배울 수 있는 기회를 제공하는 NPC로, 사용 가능 여부는 웨폰 마스터마다 다릅니다. 모든 무기 기술은 레벨 20이 필요한 폴암을 제외하고 레벨 1에서 훈련할 수 있습니다.\n\n4.0.1 패치에서는 각 병과가 생성 시 모든 병과에 적합한 무기 숙련도를 배우게 되므로 무기 전문가와의 훈련은 더 이상 필요하지 않게 되었습니다. 무기 마스터는 곧 게임에서 제거되었습니다.",
 	[-1000269] = "이번 시즌에는 새로운 메커니즘이 포함된 10인 Blackfathom Deeps 레이드, 플레이어 전술과 전략에 도전할 수 있는 새롭고 재구성된 보스, 새로운 보상을 포함하여 초기 레벨 상한이 25이고 새로운 레벨 25 최종 게임이 제공됩니다.",
-	[-1000271] = "룬 각인은 최근 발견의 시즌에 발표된 새로운 시스템입니다. 이를 통해 각 클래스는 새로운 고유 능력을 잠금 해제하여 게임 플레이 경험을 맞춤화할 수 있습니다!",
-	[-1000272] = "길레이드 보급품 퀘스트 아이템은 아제로스 전역의 6레벨 이상의 몹에게서 드롭됩니다. 이 퀘스트는 약간의 은화, 경험치, 평판을 대가로 조직 대표에게 Waylaid 보급품을 전달하도록 요청합니다. 물론, 보급품 배송에 누락된 품목이 있으며, 이를 보완하여 더 큰 평판 보상을 받을 수 있습니다.",
+	[-1000274] = "룬 각인은 최근 발견의 시즌에 발표된 새로운 시스템입니다. 이를 통해 각 클래스는 새로운 고유 능력을 잠금 해제하여 게임 플레이 경험을 맞춤화할 수 있습니다!",
+	[-1000275] = "길레이드 보급품 퀘스트 아이템은 아제로스 전역의 6레벨 이상의 몹에게서 드롭됩니다. 이 퀘스트는 약간의 은화, 경험치, 평판을 대가로 조직 대표에게 Waylaid 보급품을 전달하도록 요청합니다. 물론, 보급품 배송에 누락된 품목이 있으며, 이를 보완하여 더 큰 평판 보상을 받을 수 있습니다.",
 });
 localize(_.ObjectNames, {
 	[31] = "오래된 사자상",
@@ -4341,15 +4352,16 @@ localize(L.HEADER_NAMES, {
 	[-1000231] = "A abertura do Portal Negro",
 	[-1000232] = "Cetro das Areias Cambiantes",
 	[-1000269] = "Temporada de Descoberta",
-	[-1000270] = "Caça aos Monstros",
-	[-1000271] = "Gravura",
-	[-1000272] = "Suprimentos emboscados",
+	[-1000270] = "Compreensão",
+	[-1000273] = "Caça aos Monstros",
+	[-1000274] = "Gravura",
+	[-1000275] = "Suprimentos emboscados",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Um mestre de armas é um NPC que oferece aos personagens a oportunidade de aprender habilidades específicas com armas, cuja disponibilidade varia de um mestre de armas para outro. Todas as habilidades com armas podem ser treinadas no nível 1, exceto as armas de haste, que exigem nível 20.\n\nO treinamento com um mestre de armas tornou-se obsoleto no Patch 4.0.1, já que todas as proficiências de armas apropriadas à classe agora são aprendidas por cada classe após a criação. Os mestres de armas foram removidos do jogo logo depois.",
 	[-1000269] = "Esta temporada traz um limite de nível inicial de 25 e um novo jogo final de nível 25, incluindo um ataque Blackfathom Deeps para 10 jogadores com novas mecânicas, chefes novos e reimaginados para desafiar as táticas e estratégias dos jogadores e novas recompensas.",
-	[-1000271] = "A gravação de runas é um novo sistema anunciado recentemente para a Temporada de Descobertas. Ele permite que cada classe personalize sua experiência de jogo, desbloqueando novas habilidades únicas!",
-	[-1000272] = "Itens de missão Waylaid Supplies são obtidos de mobs de nível 6 e acima de Azeroth. Essas missões exigem a entrega dos Suprimentos Waylaid a um representante da organização em troca de um pouco de prata, experiência e reputação. É claro que faltam itens na remessa de suprimentos e você pode complementá-los para obter maiores recompensas de reputação.",
+	[-1000274] = "A gravação de runas é um novo sistema anunciado recentemente para a Temporada de Descobertas. Ele permite que cada classe personalize sua experiência de jogo, desbloqueando novas habilidades únicas!",
+	[-1000275] = "Itens de missão Waylaid Supplies são obtidos de mobs de nível 6 e acima de Azeroth. Essas missões exigem a entrega dos Suprimentos Waylaid a um representante da organização em troca de um pouco de prata, experiência e reputação. É claro que faltam itens na remessa de suprimentos e você pode complementá-los para obter maiores recompensas de reputação.",
 });
 localize(_.ObjectNames, {
 	[31] = "Estátua de Leão Antiga",
@@ -4839,17 +4851,18 @@ localize(L.HEADER_NAMES, {
 	[-1000240] = "Коллекционное издание",
 	[-1000268] = "Без Источника",
 	[-1000269] = "Сезон открытий",
-	[-1000270] = "Охота на монстров",
-	[-1000271] = "Гравировка",
-	[-1000272] = "Подстерегающие припасы",
+	[-1000270] = "Понимание",
+	[-1000273] = "Охота на монстров",
+	[-1000274] = "Гравировка",
+	[-1000275] = "Подстерегающие припасы",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
 	[-1000033] = "Штучки, которые можно получить в награду с разного контента в родительской секции.\nОни собраны здесь, чтобы уменьшить количество источников, когда Штучка доступна из многих мест.",
 	[-1000040] = "Мастер оружия - это NPC, который предлагает персонажам возможность изучить определенные навыки обращения с оружием, доступность которых варьируется от одного мастера к другому. Все навыки обращения с оружием можно изучить на уровне 1, кроме древкового оружия, для которого требуется уровень 20.\n\nОбучение с мастером оружия стало устаревшим в патче 4.0.1, так как все соответствующие классу навыки владения оружием теперь изучаются каждым классом при создании. Вскоре после этого из игры были удалены мастера оружия.",
 	[-1000269] = "В этом сезоне начальный максимальный уровень равен 25, а также новый финал для 25-го уровня, включающий рейд в Непроглядную Пучину для 10 игроков с новой механикой, новыми и переосмысленными боссами, которые бросят вызов тактике и стратегии игроков, а также свежими наградами.",
-	[-1000271] = "Гравировка рун — это новая система, недавно анонсированная в сезоне «Открытие». Это позволяет каждому классу адаптировать свой игровой процесс, открывая новые уникальные способности!",
-	[-1000272] = "Квестовые предметы Waylaid Supplies падают с мобов 6-го уровня и выше по всему Азероту. Эти квесты требуют доставки Запасных припасов представителю организации в обмен на немного серебра, опыта и репутации. Конечно, в поставке припасов отсутствуют предметы, и вы можете дополнить их, чтобы получить больше репутации.",
+	[-1000274] = "Гравировка рун — это новая система, недавно анонсированная в сезоне «Открытие». Это позволяет каждому классу адаптировать свой игровой процесс, открывая новые уникальные способности!",
+	[-1000275] = "Квестовые предметы Waylaid Supplies падают с мобов 6-го уровня и выше по всему Азероту. Эти квесты требуют доставки Запасных припасов представителю организации в обмен на немного серебра, опыта и репутации. Конечно, в поставке припасов отсутствуют предметы, и вы можете дополнить их, чтобы получить больше репутации.",
 });
 localize(_.ObjectNames, {
 	[31] = "Статуя старого льва",
@@ -5355,17 +5368,18 @@ localize(L.HEADER_NAMES, {
 	[-1000259] = "可口可乐活动",
 	[-1000268] = "无来源",
 	[-1000269] = "发现季节",
-	[-1000270] = "怪物狩猎",
-	[-1000271] = "铭刻",
-	[-1000272] = "伏击补给品",
+	[-1000270] = "理解",
+	[-1000273] = "怪物狩猎",
+	[-1000274] = "铭刻",
+	[-1000275] = "伏击补给品",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
 	[-1000033] = "包含有奖励或可从包含部分中的其他内容获得的事物。\n在此处合并以减少来自许多可能重复来源。",
 	[-1000040] = "武器大师是一个 NPC，为角色提供学习特定武器技能的机会，不同武器大师的可用性各不相同。所有武器技能都可以在 1 级进行训练，长柄武器除外，需要 20 级。\n\n在补丁 4.0.1 中，武器大师的训练已经过时，因为现在每个班级在创建时都会学习所有适合班级的武器熟练程度。不久之后，武器大师就被从游戏中删除了。",
 	[-1000269] = "本赛季带来了 25 级的初始等级上限和新的 25 级终局游戏，包括 10 名玩家的 Blackfathom Deeps 突袭，其中包含新的机制、新的和重新设计的 Boss 来挑战玩家的战术和策略，以及新鲜的奖励。",
-	[-1000271] = "符文雕刻是最近在发现季节宣布的一个新系统。它允许每个班级通过解锁新的独特能力来定制他们的游戏体验！",
-	[-1000272] = "伏击补给品任务物品从艾泽拉斯 6 级及以上的小怪中掉落。这些任务要求将路障补给品交付给组织代表，以换取一些银币、经验和声望。当然，补给中也有缺少的物品，你可以补充以获得更大的声望奖励。",
+	[-1000274] = "符文雕刻是最近在发现季节宣布的一个新系统。它允许每个班级通过解锁新的独特能力来定制他们的游戏体验！",
+	[-1000275] = "伏击补给品任务物品从艾泽拉斯 6 级及以上的小怪中掉落。这些任务要求将路障补给品交付给组织代表，以换取一些银币、经验和声望。当然，补给中也有缺少的物品，你可以补充以获得更大的声望奖励。",
 });
 localize(_.ObjectNames, {
 	[31] = "陈旧的石狮子",
