@@ -676,8 +676,9 @@ do
 	local BlockedDisplayID = {
 		[11686] = 0,	-- empty blue thing
 		[27823] = 0,	-- empty blue thing
-		[56187] = 0,	-- generic bunny
 		[52318] = 0,	-- generic bunny
+		[56187] = 0,	-- generic bunny
+		[112684] = 0,	-- nothing
 	}
 	local AllowedDisplayID = setmetatable({},
 		{ __index = function(t, key)
@@ -759,7 +760,7 @@ do
 					end
 				end
 				if shown then self:Show(); else self:Hide() end
-				return shown;
+				return true;
 			end
 		end
 	end
