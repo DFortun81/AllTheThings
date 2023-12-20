@@ -593,8 +593,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 							["sym"] = {
 								{"sub", "legion_relinquished", {"INVTYPE_FINGER"} },	-- Rings Only!
 								{"select", "mapID", BROKEN_ISLES},
-								{"find", "headerID", WORLD_QUESTS },
-								{"find", "headerID", FINGER},	-- Select only the Finger Header
+								{"find", "headerID", FINGER},	-- Select only the Finger Headers
 								{"pop"},	-- Discard the item set Headers and acquire all of their children.
 							},
 						}),

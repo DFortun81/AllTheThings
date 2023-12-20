@@ -2073,7 +2073,8 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45798),	-- Heroic Celestial Planetarium Key
 							i(45878, {	-- Large Sack of Ulduar Spoils
 								["sym"] = {
-									{ "selectparent", 3 },	-- Select the difficulty header.
+									{ "select", "instanceID", 759 },	-- Ulduar
+									{ "find", "difficultyID", NORMAL_RAID },	-- Normal Raid
 									{ "find", "headerID", COMMON_BOSS_DROPS },	-- Select the "Common Boss Drops" header.
 									{ "pop" },	-- Get the Rewards.
 									{ "exclude", "itemID", 46027, 46348, 45038 },	-- Exclude the Enchanting Recipes & Fragment

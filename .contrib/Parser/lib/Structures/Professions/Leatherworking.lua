@@ -555,6 +555,7 @@ CATA_LEATHERWORKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"
 		r(99535, {["timeline"] = {ADDED_4_2_0}}),	-- Vicious Hide Cloak
 	}),
 	filter(MISC, {
+		r(163216, {["timeline"] = {ADDED_6_0_2}}),	-- Blackened Dragonscale
 		r(85068, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Charscale Leg Reinforcements
 		r(85067, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Dragonbone Leg Reinforcements
 		r(101600, {["timeline"] = {ADDED_4_2_0, REMOVED_6_0_2}}),	-- Drakehide Leg Reinforcements

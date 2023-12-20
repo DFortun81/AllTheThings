@@ -369,7 +369,9 @@ profession(FISHING, {
 			i(7188, {	-- Stormwind Guard Shield
 				["timeline"] = { "created 1.12.1.12941", "added 8.2.0" },
 			}),
-			i(7187),	-- VanCleef's Boots
+			i(7187, {	-- VanCleef's Boots
+				["requireSkill"] = IGNORED_VALUE,	-- not exclusive to fishing, listed under dented boots also
+			}),
 		}
 	}),
 	filter(MOUNTS, {
