@@ -7658,6 +7658,18 @@ local createCustomHeader = app.CreateClass("Header", "headerID", {
 		return true;
 	end,
 },
+"WithQuest", {
+	collectible = function(t)
+		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog_IsOnQuest(t.questID));
+	end,
+	collected = function(t)
+		return IsQuestFlaggedCompletedForObject(t);
+	end,
+	trackable = app.ReturnTrue,
+	saved = function(t)
+		return IsQuestFlaggedCompletedForObject(t) == 1;
+	end
+}, (function(t) return t.questID; end),
 "WithReputation", {
 	collectible = function(t)
 		if app.Settings.Collectibles.Reputations then
@@ -7922,6 +7934,21 @@ app.SpecializationSpellIDs = setmetatable({
 local BLACKSMITHING = ATTC.SkillIDToSpellID[164];
 local LEATHERWORKING = ATTC.SkillIDToSpellID[165];
 local TAILORING = ATTC.SkillIDToSpellID[197];
+app.OnUpdateForCrafter = function(t)
+	t.visible = nil;
+	t.collectible = nil;
+	if app.Settings:Get("DebugMode") or app.Settings:Get("AccountMode") then
+		return false;
+	else
+		local skills = app.CurrentCharacter.ActiveSkills;
+		if skills[BLACKSMITHING] or skills[LEATHERWORKING] or skills[TAILORING] then
+			return false;
+		end
+		t.collectible = false;
+		t.visible = false;
+		return true;
+	end
+end;
 app.OnUpdateForOmarionsHandbook = function(t)
 	t.visible = true;
 	t.collectible = nil;

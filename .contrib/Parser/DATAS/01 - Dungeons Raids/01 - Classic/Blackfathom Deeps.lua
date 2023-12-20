@@ -1017,6 +1017,16 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							},
 						}),
 					}),
+					n(PROFESSIONS, {
+						n(212159, {	-- Old Serra'kis <The Devoured>
+							--["questID"] = ,	-- Find Old Serra'kis
+							["sourceQuest"] = 78907,	-- Speak to the Dead
+							["OnUpdate"] = [[_.OnUpdateForCrafter]],
+							["groups"] = {
+								i(211419),	-- Handful of Shifting Scales
+							},
+						}),
+					}),
 					n(TREASURES, {
 						["description"] = "After dealing with Aku'mai, you can head back to Lady Sarevess' cave and delve deeper, now that the waterfall is gone. At the very end of the cave, you will be able to loot the recipes from a table.\n\nNOTE: Please send @Crieve the name of the object(s) you loot these from!",
 						["groups"] = {

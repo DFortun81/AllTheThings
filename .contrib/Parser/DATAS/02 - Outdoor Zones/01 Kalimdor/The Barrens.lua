@@ -2399,6 +2399,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78909, {	-- Shifting Scale Talisman
+					["qg"] = 214208,	-- N'ora Anyheart <Scholar of Exotic Fauna>
+					--["sourceQuest"] = ,	-- Find Old Serra'kis
+					["coord"] = { 62.0, 39.4, THE_BARRENS },
+					["description"] = "You need to loot the Handful of Shifting Scales before this quest will be displayed to you.",
+					["timeline"] = { "removed 2.0.1" },
+					["OnUpdate"] = [[_.OnUpdateForCrafter]],
+					["cost"] = {
+						{ "i", 10940, 40 },	-- Strange Dust
+						{ "i", 10939, 5 },	-- Greater Magic Essence
+						{ "i", 10978, 2 },	-- Small Glimmering Shard
+						{ "i", 211419, 1 },	-- Handful of Shifting Scales
+						{ "g", 50000 },		-- 5g
+					},
+					["groups"] = {
+						i(211420, {	-- Shifting Scale Talisman
+							["timeline"] = { "removed 2.0.1" },
+						}),
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, q(78267, {	-- Shredder Turbochargers
 					["qg"] = 211653,	-- Grizzby
 					["sourceQuest"] = 78284,	-- Grizzby HQT

@@ -2221,6 +2221,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Speak to the Dead
+					readable = "Speak to the Dead",
+					icon = "Interface\\CURSOR\\Speak",
+					text = {
+						en = "Speak to the Dead",
+						es = "Hablar con los Muertos",
+						de = "Sprich mit den Toten",
+						fr = "Parlez aux Morts",
+						it = "Parla con i Morti",
+						pt = "Fale com os Mortos",
+						ru = "Поговорите с мертвыми",
+						ko = "죽은 자와 대화",
+						cn = "与死者交谈",
+					},
+				}), {
+					["questID"] = 78907,	-- Dead Twilight Cultist HQT
+					["qg"] = 212334,	-- Dead Twilight Cultist
+					["coord"] = { 17.3, 26.7, ASHENVALE },
+					["cost"] = {{ "i", 210708, 1 }},	-- Elixir of Coalesced Regret
+					["timeline"] = { "removed 2.0.1" },
+					["OnUpdate"] = [[_.OnUpdateForCrafter]],
+				})),
+				-- #endif
 				q(13962, {	-- Stalemate
 					["qg"] = 34518,	-- Thagg
 					["sourceQuest"] = 13958,	-- Condition Critical!

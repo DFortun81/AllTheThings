@@ -12,6 +12,7 @@ SODItem(212589, LEATHER);	-- Courier Treads
 SODItem(212590, MAIL);	-- Hoist Strap
 SODItem(211382, BAGS);	-- Small Courier Satchel
 SODItem(211384, BAGS);	-- Sturdy Courier Bag
+SODItem(211420, TRINKET);	-- Shifting Scale Talisman
 
 -- Crafted Items
 SODItem(210795, CLOTH);	-- Extraplanar Spidersilk Boots
