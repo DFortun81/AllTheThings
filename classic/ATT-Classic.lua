@@ -7811,6 +7811,9 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 		return t.isRaid and ("|c" .. app.Colors.Raid .. t.name .. "|r") or t.name;
 	end,
 	["name"] = function(t)
+		return app.ObjectNames[t.objectID] or t.basename;
+	end,
+	["basename"] = function(t)
 		if t.providers then
 			for k,v in ipairs(t.providers) do
 				if v[2] > 0 then
@@ -7822,7 +7825,7 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 				end
 			end
 		end
-		return app.ObjectNames[t.objectID] or ("Object ID #" .. t.objectID);
+		return "Object ID #" .. t.objectID;
 	end,
 	["icon"] = function(t)
 		if t.providers then
