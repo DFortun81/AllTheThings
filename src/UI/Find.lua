@@ -5,7 +5,6 @@ local UpdateGroups = app.UpdateGroups;
 
 -- Local variables
 local HarvestedItemDatabase = {};
-local ItemHarvester = CreateFrame("GameTooltip", "ATTCItemHarvester", UIParent, "GameTooltipTemplate");
 local CreateItemHarvester = app.ExtendClass("Item", "ItemHarvester", "itemID", {
 	collectible = app.ReturnFalse,
 	collected = app.ReturnTrue,
@@ -70,8 +69,34 @@ local CreateItemHarvester = app.ExtendClass("Item", "ItemHarvester", "itemID", {
 	end,
 },function(t)
 	return #SearchForField("itemID", t.itemID) == 0;
-end,
-"WithTooltipHarvester", {
+end);
+local CreateSpellHarvester = app.ExtendClass("Spell", "SpellHarvester", "spellID", {
+	collectible = app.ReturnFalse,
+	collected = app.ReturnTrue,
+},
+"AsPending", {
+	collectible = app.ReturnTrue,
+	collected = app.ReturnFalse,
+	text = function(t)
+		local link = t.name;
+		if link and link ~= "" and link ~= " " then
+			return link;
+		end
+		
+		t.retries = (t.retries or 0) + 1;
+		if t.retries > 30 then
+			rawset(t, "collected", true);
+		end
+		return RETRIEVING_DATA;
+	end,
+},function(t)
+	return #SearchForField("spellID", t.spellID) == 0;
+end);
+
+-- Uncomment this section to also harvest tooltip data.
+--[[
+local ItemHarvester = CreateFrame("GameTooltip", "ATTCItemHarvester", UIParent, "GameTooltipTemplate");
+CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "itemID", {
 	text = function(t)
 		local link = t.link;
 		if link then
@@ -152,29 +177,8 @@ end,
 			return link;
 		end
 	end
-}, app.ReturnFalse);
-local CreateSpellHarvester = app.ExtendClass("Spell", "SpellHarvester", "spellID", {
-	collectible = app.ReturnFalse,
-	collected = app.ReturnTrue,
-},
-"AsPending", {
-	collectible = app.ReturnTrue,
-	collected = app.ReturnFalse,
-	text = function(t)
-		local link = t.name;
-		if link and link ~= "" and link ~= " " then
-			return link;
-		end
-		
-		t.retries = (t.retries or 0) + 1;
-		if t.retries > 30 then
-			rawset(t, "collected", true);
-		end
-		return RETRIEVING_DATA;
-	end,
-},function(t)
-	return #SearchForField("spellID", t.spellID) == 0;
-end);
+});
+]]--
 
 -- Implementation
 app:GetWindow("ItemFinder", {
