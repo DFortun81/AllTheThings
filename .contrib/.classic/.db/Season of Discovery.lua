@@ -23,6 +23,16 @@ SODItem(211423, LEATHER);	-- Void-Touched Leather Gloves
 SODItem(210773, MAIL);	-- Mantle of the Second War
 SODItem(210794, MAIL);	-- Shifting Silver Breastplate
 
+-- NYI
+SODItem(211445, BOWS);	-- Barbaric Recurve
+SODItem(211443, TWO_HANDED_SWORDS);	-- Blade of Rage
+SODItem(211444, CLOAKS);	-- Summoner's Cloak
+SODItem(211501, PLATE);	-- Chestguard of Might
+SODItem(211263, PLATE);	-- Judgement Chestguard
+SODItem(211940, POLEARMS);	-- Ecks'av's Tribal Guardian
+SODItem(211944, POLEARMS);	-- Tojara's Will
+SODItem(211941, POLEARMS);	-- Windwalker's Yari
+
 -- TODO: Mark these as unavailable in Phase 1
 -- spellID 3538 Blacksmithing (Rank 3)
 -- spellID 3564 Mining (Rank 3)
@@ -107,32 +117,33 @@ local applyRuneReputationCosts = function(rune)
 	return rune;
 end
 
-root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Season of Discovery
-		readable = "Season of Discovery",
-		icon = "Interface\\Icons\\inv_misc_map_01",
-		text = {
-			en = "Season of Discovery",
-			es = "Temporada de Descubrimiento",
-			de = "Saison der Entdeckungen",
-			fr = "Saison de Découverte",
-			it = "La Stagione delle Scoperte",
-			pt = "Temporada de Descoberta",
-			ru = "Сезон открытий",
-			ko = "발견의 계절",
-			cn = "发现季节",
-		},
-		description = {
-			en = "This Season brings an initial level cap of 25 and a new level-25 endgame, including a 10-player Blackfathom Deeps raid with new mechanics, new and reimagined bosses to challenge player tactics and strategies, and fresh rewards.",
-			es = "Esta temporada trae un límite de nivel inicial de 25 y un nuevo final de nivel 25, que incluye una incursión de 10 jugadores en Blackfathom Deeps con nuevas mecánicas, jefes nuevos y reinventados para desafiar las tácticas y estrategias de los jugadores, y nuevas recompensas.",
-			de = "Diese Saison bringt eine anfängliche Levelobergrenze von 25 und ein neues Level-25-Endspiel, einschließlich eines Blackfathom Deeps-Raids für 10 Spieler mit neuen Mechaniken, neuen und neu gestalteten Bossen, die die Taktiken und Strategien der Spieler herausfordern, und neuen Belohnungen.",
-			fr = "Cette saison apporte un niveau maximum initial de 25 et une nouvelle fin de partie de niveau 25, comprenant un raid Blackfathom Deeps à 10 joueurs avec de nouvelles mécaniques, des boss nouveaux et réinventés pour défier les tactiques et stratégies des joueurs, et de nouvelles récompenses.",
-			it = "Questa stagione porta un limite di livello iniziale di 25 e un nuovo gioco finale di livello 25, incluso un raid di Blackfathom Deeps per 10 giocatori con nuove meccaniche, boss nuovi e reinventati per sfidare le tattiche e le strategie dei giocatori e nuove ricompense.",
-			pt = "Esta temporada traz um limite de nível inicial de 25 e um novo jogo final de nível 25, incluindo um ataque Blackfathom Deeps para 10 jogadores com novas mecânicas, chefes novos e reimaginados para desafiar as táticas e estratégias dos jogadores e novas recompensas.",
-			ru = "В этом сезоне начальный максимальный уровень равен 25, а также новый финал для 25-го уровня, включающий рейд в Непроглядную Пучину для 10 игроков с новой механикой, новыми и переосмысленными боссами, которые бросят вызов тактике и стратегии игроков, а также свежими наградами.",
-			ko = "이번 시즌에는 새로운 메커니즘이 포함된 10인 Blackfathom Deeps 레이드, 플레이어 전술과 전략에 도전할 수 있는 새롭고 재구성된 보스, 새로운 보상을 포함하여 초기 레벨 상한이 25이고 새로운 레벨 25 최종 게임이 제공됩니다.",
-			cn = "本赛季带来了 25 级的初始等级上限和新的 25 级终局游戏，包括 10 名玩家的 Blackfathom Deeps 突袭，其中包含新的机制、新的和重新设计的 Boss 来挑战玩家的战术和策略，以及新鲜的奖励。",
-		},
-	}), bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {
+local SEASON_OF_DISCOVERY_HEADER = createHeader({	-- Season of Discovery
+	readable = "Season of Discovery",
+	icon = "Interface\\Icons\\inv_misc_map_01",
+	text = {
+		en = "Season of Discovery",
+		es = "Temporada de Descubrimiento",
+		de = "Saison der Entdeckungen",
+		fr = "Saison de Découverte",
+		it = "La Stagione delle Scoperte",
+		pt = "Temporada de Descoberta",
+		ru = "Сезон открытий",
+		ko = "발견의 계절",
+		cn = "发现季节",
+	},
+	description = {
+		en = "This Season brings an initial level cap of 25 and a new level-25 endgame, including a 10-player Blackfathom Deeps raid with new mechanics, new and reimagined bosses to challenge player tactics and strategies, and fresh rewards.",
+		es = "Esta temporada trae un límite de nivel inicial de 25 y un nuevo final de nivel 25, que incluye una incursión de 10 jugadores en Blackfathom Deeps con nuevas mecánicas, jefes nuevos y reinventados para desafiar las tácticas y estrategias de los jugadores, y nuevas recompensas.",
+		de = "Diese Saison bringt eine anfängliche Levelobergrenze von 25 und ein neues Level-25-Endspiel, einschließlich eines Blackfathom Deeps-Raids für 10 Spieler mit neuen Mechaniken, neuen und neu gestalteten Bossen, die die Taktiken und Strategien der Spieler herausfordern, und neuen Belohnungen.",
+		fr = "Cette saison apporte un niveau maximum initial de 25 et une nouvelle fin de partie de niveau 25, comprenant un raid Blackfathom Deeps à 10 joueurs avec de nouvelles mécaniques, des boss nouveaux et réinventés pour défier les tactiques et stratégies des joueurs, et de nouvelles récompenses.",
+		it = "Questa stagione porta un limite di livello iniziale di 25 e un nuovo gioco finale di livello 25, incluso un raid di Blackfathom Deeps per 10 giocatori con nuove meccaniche, boss nuovi e reinventati per sfidare le tattiche e le strategie dei giocatori e nuove ricompense.",
+		pt = "Esta temporada traz um limite de nível inicial de 25 e um novo jogo final de nível 25, incluindo um ataque Blackfathom Deeps para 10 jogadores com novas mecânicas, chefes novos e reimaginados para desafiar as táticas e estratégias dos jogadores e novas recompensas.",
+		ru = "В этом сезоне начальный максимальный уровень равен 25, а также новый финал для 25-го уровня, включающий рейд в Непроглядную Пучину для 10 игроков с новой механикой, новыми и переосмысленными боссами, которые бросят вызов тактике и стратегии игроков, а также свежими наградами.",
+		ko = "이번 시즌에는 새로운 메커니즘이 포함된 10인 Blackfathom Deeps 레이드, 플레이어 전술과 전략에 도전할 수 있는 새롭고 재구성된 보스, 새로운 보상을 포함하여 초기 레벨 상한이 25이고 새로운 레벨 25 최종 게임이 제공됩니다.",
+		cn = "本赛季带来了 25 级的初始等级上限和新的 25 级终局游戏，包括 10 名玩家的 Blackfathom Deeps 突袭，其中包含新的机制、新的和重新设计的 Boss 来挑战玩家的战术和策略，以及新鲜的奖励。",
+	},
+});
+root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCOVERY_HEADER, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {
 	n(FACTIONS, {
 		faction(2586, {	-- Azeroth Commerce Authority
 			["OnUpdate"] = OnUpdateFor_ACA_SDL,
@@ -947,4 +958,17 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(createHeader({	
 		},
 	}),
 }))));
+
+root(ROOTS.NeverImplemented, {
+	applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCOVERY_HEADER, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {
+		i(211445),	-- Barbaric Recurve
+		i(211443),	-- Blade of Rage
+		i(211444),	-- Summoner's Cloak
+		i(211501),	-- Chestguard of Might
+		i(211263),	-- Judgement Chestguard
+		i(211940),	-- Ecks'av's Tribal Guardian
+		i(211944),	-- Tojara's Will
+		i(211941),	-- Windwalker's Yari
+	}))),
+});
 -- #endif
