@@ -1568,6 +1568,12 @@ profession(TAILORING, {
 					["timeline"] = { "added 2.4.2.8301" },
 					["recipeID"] = 49677
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, {
+					["name"] = "Extraplanar Spidersilk Boots",
+					["recipeID"] = 429351
+				}),
+				-- #endif
 				{
 					["name"] = "Felcloth Boots",
 					["recipeID"] = 18437

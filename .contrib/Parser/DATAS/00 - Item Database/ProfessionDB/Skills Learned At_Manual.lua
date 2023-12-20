@@ -7,6 +7,7 @@ recipeDB[17041].learnedAt = 200;	-- Master Axesmith
 recipeDB[17040].learnedAt = 200;	-- Master Hammersmith
 recipeDB[17039].learnedAt = 200;	-- Master Swordsmith
 recipeDB[9787].learnedAt = 200;	-- Weaponsmith
+recipeDB[429348].learnedAt = 150;	-- Shifting Silver Breastplate
 
 -- Enchanting
 -- No changes needed.
@@ -22,6 +23,8 @@ recipeDB[20222].learnedAt = 200;	-- Goblin Engineer
 recipeDB[10656].learnedAt = 200;	-- Dragonscale Leatherworking
 recipeDB[10658].learnedAt = 200;	-- Elemental Leatherworking
 recipeDB[10660].learnedAt = 200;	-- Tribal Leatherworking
+recipeDB[429869].learnedAt = 150;	-- Void-Touched Leather Gauntlets
+recipeDB[429354].learnedAt = 150;	-- Void-Touched Leather Gloves
 
 -- Mining
 -- No changes needed.

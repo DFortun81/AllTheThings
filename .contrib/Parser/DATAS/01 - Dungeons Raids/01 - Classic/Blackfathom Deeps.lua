@@ -119,6 +119,7 @@ BFDItem(209668, FINGER_F);	-- Signet of the Twilight Lord
 BFDItem(211451, TRINKET_F);	-- Acolyte's Void Pearl
 BFDItem(211449, TRINKET_F);	-- Avenger's Void Pearl
 BFDItem(209681, TRINKET_F);	-- Black Murloc Egg
+BFDItem(209816, TRINKET_F);	-- Fetish of Mischief
 BFDItem(211450, TRINKET_F);	-- Invoker's Void Pearl
 BFDItem(209576, TRINKET_F);	-- Mind-Expanding Mushroom
 
@@ -1068,6 +1069,29 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(209823),	-- Signet of Beasts
 						},
 					}),
+					n(COMMON_BOSS_DROPS, {
+						["description"] = "The Twilight armor sets can drop from any of the last 4 bosses.",
+						["crs"] = {
+							204921,	-- Gelihast
+							207356,	-- Lorgus Jett
+							209678,	-- Twilight Lord Kelris
+							213334,	-- Aku'mai
+						},
+						["groups"] = {
+							i(211505),	-- Twilight Avenger's Helm
+							i(211504),	-- Twilight Avenger's Chain
+							i(211506),	-- Twilight Avenger's Boots
+							i(211507),	-- Twilight Elementalist's Cowl
+							i(211509),	-- Twilight Elementalist's Robe
+							i(211508),	-- Twilight Elementalist's Footpads
+							i(209683),	-- Twilight Invoker's Shawl
+							i(209671),	-- Twilight Invoker's Robes
+							i(209669),	-- Twilight Invoker's Shoes
+							i(211510),	-- Twilight Slayer's Cowl
+							i(211512),	-- Twilight Slayer's Tunic
+							i(211511),	-- Twilight Slayer's Footpads
+						},
+					}),
 					n(204921, {	-- Gelihast
 						["description"] = "Gelihast has a quite dangerous curse with Curse of Blackfathom, so you must have ways to decurse it off. The raid must avoid getting hit by Shadow Crash while the tanks taunt swap to prevent reaching high stacks of Shadow Strike. Healers can also dispel the random Fear he throws at people.\n\nThe big mechanic happens once the boss reaches 10% - March of the Murlocs will begin, spawning dozens of murlocs that players must dodge while the boss heals himself and throws more Shadow Crashes. Once fully healed, the fight starts again, with Gelihast summoning low-health Blackfathom Tendril that must be killed. Gelihast will heal himself to full twice with March of the Murlocs before finally dying.",
 						["groups"] = {
@@ -1076,23 +1100,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(209559),	-- Twilight Sage's Walking Stick
 							i(209573),	-- Wrathful Spire
 							i(209570),	-- Tome of Cavern Lore
-							i(211505),	-- Twilight Avenger's Helm
-							i(211507),	-- Twilight Elementalist's Cowl
-							i(209683),	-- Twilight Invoker's Shawl
-							i(211510),	-- Twilight Slayer's Cowl
 							i(209820),	-- Black Shroud Choker
 							i(209568),	-- Algae Gauntlets
 							i(209572),	-- Black Boiled Leathers
-							i(211504),	-- Twilight Avenger's Chain
-							i(211509),	-- Twilight Elementalist's Robe
-							i(209671),	-- Twilight Invoker's Robes
-							i(211512),	-- Twilight Slayer's Tunic
 							i(209569),	-- Murloc Hide Kneeboots
 							i(209670),	-- Skinwalkers
-							i(211506),	-- Twilight Avenger's Boots
-							i(211508),	-- Twilight Elementalist's Footpads
-							i(209669),	-- Twilight Invoker's Shoes
-							i(211511),	-- Twilight Slayer's Footpads
 							i(209821),	-- Ring of Shadowsight
 							i(209681),	-- Black Murloc Egg
 							i(211491),	-- Bottomless Murloc Skin Bag
@@ -1106,20 +1118,8 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(209560),	-- Hammer of Righteous Judgement
 							i(209818),	-- Sun-Touched Crescent
 							i(209682),	-- Sturdy Hood
-							i(211505),	-- Twilight Avenger's Helm
-							i(211507),	-- Twilight Elementalist's Cowl
-							i(209683),	-- Twilight Invoker's Shawl
-							i(211510),	-- Twilight Slayer's Cowl
 							i(209578),	-- Glowing Leather Bands
-							i(211504),	-- Twilight Avenger's Chain
-							i(211509),	-- Twilight Elementalist's Robe
-							i(209671),	-- Twilight Invoker's Robes
-							i(211512),	-- Twilight Slayer's Tunic
 							i(209581),	-- Silver Hand Sabatons
-							i(211506),	-- Twilight Avenger's Boots
-							i(211508),	-- Twilight Elementalist's Footpads
-							i(209669),	-- Twilight Invoker's Shoes
-							i(211511),	-- Twilight Slayer's Footpads
 							i(209575),	-- Carved Driftwood Icon
 							i(209574),	-- Discarded Tenets of the Silver Hand
 							i(209576),	-- Mind-Expanding Mushroom
@@ -1135,18 +1135,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(209673),	-- Glowing Fetish Amulet
 							i(209686),	-- Jagged Bone Necklace
 							i(209817),	-- Voidwalker Brooch
-							i(211505),	-- Twilight Avenger's Helm
-							i(211507),	-- Twilight Elementalist's Cowl
-							i(211510),	-- Twilight Slayer's Cowl
-							i(211504),	-- Twilight Avenger's Chain
-							i(211512),	-- Twilight Slayer's Tunic
 							i(209672),	-- Black Fingerless Gloves
 							i(211455),	-- Slick Fingerless Gloves
 							i(211457),	-- Twilight Defender's Girdle
 							i(209667),	-- Gaze Dreamer Leggings
-							i(211506),	-- Twilight Avenger's Boots
-							i(211511),	-- Twilight Slayer's Footpads
 							i(209668),	-- Signet of the Twilight Lord
+							i(209816),	-- Fetish of Mischief
 							i(211492),	-- Kelris's Satchel
 						},
 					}),
@@ -1162,16 +1156,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(209688),	-- Bael Modan Blunderbuss
 							i(209580),	-- Gusting Wind
 							i(209690),	-- Shadowscale Coif
-							i(211505),	-- Twilight Avenger's Helm
-							i(211510),	-- Twilight Slayer's Cowl
 							i(209692),	-- Sentinel Pauldrons
 							i(209687),	-- Hydra Hide Cuirass
 							i(209685),	-- Ancient Moss Cinch
 							i(209684),	-- Soul Leech Pants
 							i(209689),	-- Crabshell Waders
-							i(211508),	-- Twilight Elementalist's Footpads
-							i(209669),	-- Twilight Invoker's Shoes
-							i(211511),	-- Twilight Slayer's Footpads
 						},
 					}),
 				},

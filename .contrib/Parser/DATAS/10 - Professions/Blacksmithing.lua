@@ -1918,6 +1918,12 @@ profession(BLACKSMITHING, {
 					["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },
 					["recipeID"] = 16731,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, {
+					["name"] = "Shifting Silver Breastplate",
+					["recipeID"] = 429348
+				}),
+				-- #endif
 				{
 					["name"] = "Shining Silver Breastplate",
 					["recipeID"] = 2675,

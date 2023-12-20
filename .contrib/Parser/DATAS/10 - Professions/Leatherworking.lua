@@ -2335,6 +2335,16 @@ profession(LEATHERWORKING, {
 					["name"] = "Turtle Scale Gloves",
 					["recipeID"] = 10509,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, {
+					["name"] = "Void-Touched Leather Gauntlets",
+					["recipeID"] = 429869
+				}),
+				applyclassicphase(SOD_PHASE_ONE, {
+					["name"] = "Void-Touched Leather Gloves",
+					["recipeID"] = 429354
+				}),
+				-- #endif
 				{
 					["name"] = "Wicked Leather Gauntlets",
 					["recipeID"] = 19049,

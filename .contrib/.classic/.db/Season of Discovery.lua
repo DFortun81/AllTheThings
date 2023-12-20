@@ -14,8 +14,14 @@ SODItem(211382, BAGS);	-- Small Courier Satchel
 SODItem(211384, BAGS);	-- Sturdy Courier Bag
 
 -- Crafted Items
+SODItem(210795, CLOTH);	-- Extraplanar Spidersilk Boots
+SODItem(215366, CLOTH);	-- Invoker's Cord
+SODItem(215365, CLOTH);	-- Invoker's Mantle
 SODItem(210781, CLOTH);	-- Phoenix Bindings
+SODItem(211502, LEATHER);	-- Void-Touched Leather Gauntlets
+SODItem(211423, LEATHER);	-- Void-Touched Leather Gloves
 SODItem(210773, MAIL);	-- Mantle of the Second War
+SODItem(210794, MAIL);	-- Shifting Silver Breastplate
 
 -- TODO: Mark these as unavailable in Phase 1
 -- spellID 3538 Blacksmithing (Rank 3)

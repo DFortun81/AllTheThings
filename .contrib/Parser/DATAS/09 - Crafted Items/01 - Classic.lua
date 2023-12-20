@@ -339,6 +339,12 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(12612),	-- Runic Plate Helm
 			i(12614),	-- Runic Plate Leggings
 			i(12610),	-- Runic Plate Shoulders
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_ONE, i(210794, {	-- Shifting Silver Breastplate
+				["timeline"] = { "removed 2.0.1" },
+				["requireSkill"] = BLACKSMITHING,
+			})),
+			-- #endif
 			i(2870),	-- Shining Silver Breastplate
 			i(3482),	-- Silvered Bronze Boots
 			i(2869),	-- Silvered Bronze Breastplate
@@ -1946,6 +1952,16 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 				applyclassicphase(PHASE_THREE, i(19049)),	-- Timbermaw Brawlers
 				i(2314),	-- Toughened Leather Armor
 				i(4253),	-- Toughened Leather Gloves
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(211502, {	-- Void-Touched Leather Gauntlets
+					["timeline"] = { "removed 2.0.1" },
+					["requireSkill"] = LEATHERWORKING,
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(211423, {	-- Void-Touched Leather Gloves
+					["timeline"] = { "removed 2.0.1" },
+					["requireSkill"] = LEATHERWORKING,
+				})),
+				-- #endif
 				i(2311),	-- White Leather Jerkin
 				i(15085),	-- Wicked Leather Armor
 				i(15088),	-- Wicked Leather Belt
@@ -2419,7 +2435,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(16980),	-- Flarecore Mantle
 			i(7057),	-- Green Silken Shoulders
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(215365)),	-- Invoker's Mantle
+			applyclassicphase(SOD_PHASE_ONE, i(215365, {	-- Invoker's Mantle
+				["timeline"] = { "removed 2.0.1" },
+			})),
 			-- #endif
 			applyclassicphase(PHASE_THREE, i(19050)),	-- Mantle of the Timbermaw
 			i(14139),	-- Mooncloth Shoulders
@@ -2508,7 +2526,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(18263),	-- Flarecore Wraps
 			i(4308),	-- Green Linen Bracers
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(210781)),	-- Phoenix Bindings
+			applyclassicphase(SOD_PHASE_ONE, i(210781, {	-- Phoenix Bindings
+				["timeline"] = { "removed 2.0.1" },
+			})),
 			-- #endif
 		}),
 		category(239, {	-- Gloves
@@ -2550,7 +2570,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(7061),	-- Earthen Silk Belt
 			i(14143),	-- Ghostweave Belt
 			-- #if SEASON_OF_DISCOVERY
-			applyclassicphase(SOD_PHASE_ONE, i(215366)),	-- Invoker's Cord
+			applyclassicphase(SOD_PHASE_ONE, i(215366, {	-- Invoker's Cord
+				["timeline"] = { "removed 2.0.1" },
+			})),
 			-- #endif
 			i(7026),	-- Linen Belt
 			i(13856),	-- Runecloth Belt
@@ -2596,6 +2618,12 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			i(4325),	-- Boots of the Enchanter
 			i(10044),	-- Cindercloth Boots
 			i(6836),	-- Dress Shoes
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_ONE, i(210795, {	-- Extraplanar Spidersilk Boots
+				["timeline"] = { "removed 2.0.1" },
+				["requireSkill"] = TAILORING,
+			})),
+			-- #endif
 			i(14108),	-- Felcloth Boots
 			i(2569),	-- Linen Boots
 			i(15802),	-- Mooncloth Boots

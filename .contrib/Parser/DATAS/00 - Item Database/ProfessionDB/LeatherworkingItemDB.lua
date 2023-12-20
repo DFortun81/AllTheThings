@@ -340,6 +340,13 @@ i(22695, 0);		-- Polar Bracers
 i(22694, 0);		-- Polar Gloves
 i(22692, 0);		-- Polar Tunic
 
+-- #if SEASON_OF_DISCOVERY
+-- SEASON OF DISCOVERY --
+-- QUEST --
+i(0, 429869);	-- Void-Touched Leather Gauntlets
+i(0, 429354);	-- Void-Touched Leather Gloves
+-- #endif
+
 ------------------
 -- PATCH 2.0.5 --
 ------------------

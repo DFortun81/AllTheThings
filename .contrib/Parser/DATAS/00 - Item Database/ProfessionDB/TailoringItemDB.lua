@@ -165,6 +165,9 @@ i(21723, 26407);	-- Festival Suit
 
 -- #if SEASON_OF_DISCOVERY
 -- SEASON OF DISCOVERY --
+-- QUEST --
+i(0, 429351);	-- Extraplanar Spidersilk Boots
+-- ITEM --
 i(215369, 435841);	-- Invoker's Cord
 i(215370, 435848);	-- Invoker's Mantle
 i(211247, 428424);	-- Phoenix Bindings
