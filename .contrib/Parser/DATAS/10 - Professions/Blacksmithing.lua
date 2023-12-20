@@ -1394,6 +1394,12 @@ profession(BLACKSMITHING, {
 			["name"] = "Weapon Mods",
 			["categoryID"] = 216,
 			["groups"] = {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, {
+					["name"] = "Blackfathom Sharpening Stone",
+					["recipeID"] = 430397,
+				}),
+				-- #endif
 				{
 					["name"] = "Coarse Sharpening Stone",
 					["recipeID"] = 2665,

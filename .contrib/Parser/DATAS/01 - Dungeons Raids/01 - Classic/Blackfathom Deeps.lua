@@ -1017,6 +1017,40 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							},
 						}),
 					}),
+					n(TREASURES, {
+						["description"] = "After dealing with Aku'mai, you can head back to Lady Sarevess' cave and delve deeper, now that the waterfall is gone. At the very end of the cave, you will be able to loot the recipes from a table.\n\nNOTE: Please send @Crieve the name of the object(s) you loot these from!",
+						["groups"] = {
+							i(211849, {	-- Formula: Blackfathom Mana Oil
+								--["provider"] = { "o",  },	-- 
+							}),
+							i(211846, {	-- Blackfathom Sharpening Stone
+								--["provider"] = { "o",  },	-- 
+							}),
+						},
+					}),
+					n(COMMON_BOSS_DROPS, {
+						["description"] = "The Twilight armor sets can drop from any of the last 4 bosses.",
+						["crs"] = {
+							204921,	-- Gelihast
+							207356,	-- Lorgus Jett
+							209678,	-- Twilight Lord Kelris
+							213334,	-- Aku'mai
+						},
+						["groups"] = {
+							i(211505),	-- Twilight Avenger's Helm
+							i(211504),	-- Twilight Avenger's Chain
+							i(211506),	-- Twilight Avenger's Boots
+							i(211507),	-- Twilight Elementalist's Cowl
+							i(211509),	-- Twilight Elementalist's Robe
+							i(211508),	-- Twilight Elementalist's Footpads
+							i(209683),	-- Twilight Invoker's Shawl
+							i(209671),	-- Twilight Invoker's Robes
+							i(209669),	-- Twilight Invoker's Shoes
+							i(211510),	-- Twilight Slayer's Cowl
+							i(211512),	-- Twilight Slayer's Tunic
+							i(211511),	-- Twilight Slayer's Footpads
+						},
+					}),
 					n(202699, {	-- Baron Aquanis
 						["description"] = "Baron Aquanis sits stationary atop three broken platforms, and raid members must dodge his mechanics to avoid being thrown into the water and possibly aggroing extra enemies - Bubble Beam knocks enemies in front of him, and Depth Charge knocks back anyone close to the target! In addition to this, players must jump through platforms to avoid Torrential Downpour damage.",
 						["groups"] = {
@@ -1067,29 +1101,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							i(209566),	-- Leggings of the Faithful
 							i(209565),	-- Band of Deep Places
 							i(209823),	-- Signet of Beasts
-						},
-					}),
-					n(COMMON_BOSS_DROPS, {
-						["description"] = "The Twilight armor sets can drop from any of the last 4 bosses.",
-						["crs"] = {
-							204921,	-- Gelihast
-							207356,	-- Lorgus Jett
-							209678,	-- Twilight Lord Kelris
-							213334,	-- Aku'mai
-						},
-						["groups"] = {
-							i(211505),	-- Twilight Avenger's Helm
-							i(211504),	-- Twilight Avenger's Chain
-							i(211506),	-- Twilight Avenger's Boots
-							i(211507),	-- Twilight Elementalist's Cowl
-							i(211509),	-- Twilight Elementalist's Robe
-							i(211508),	-- Twilight Elementalist's Footpads
-							i(209683),	-- Twilight Invoker's Shawl
-							i(209671),	-- Twilight Invoker's Robes
-							i(209669),	-- Twilight Invoker's Shoes
-							i(211510),	-- Twilight Slayer's Cowl
-							i(211512),	-- Twilight Slayer's Tunic
-							i(211511),	-- Twilight Slayer's Footpads
 						},
 					}),
 					n(204921, {	-- Gelihast

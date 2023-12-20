@@ -1,12 +1,6 @@
 local i = GetRecipeHelperForProfession(ENCHANTING);
 
 -----------------
--- CLASSIC WOW --
------------------
--- TBC Classic --
-i(186683, 27927);	-- Stats
-
------------------
 -- PATCH 0.5.3 --
 -----------------
 -- TRAINER --
@@ -218,6 +212,19 @@ i(20732, 25081);	-- Greater Fire Resistance (5.0.4) (P5)
 i(20733, 25082);	-- Greater Nature Resistance (5.0.4) (P5)
 -- NYI --
 i(0, 22434);		-- Charged Scale of Onyxia
+
+-----------------
+-- CLASSIC WOW --
+-----------------
+-- #if SEASON_OF_DISCOVERY
+-- SEASON OF DISCOVERY --
+-- ITEM --
+i(211849, 430409);	-- Blackfathom Mana Oil
+-- #endif
+
+-- TBC Classic --
+i(186683, 27927);	-- Stats
+
 
 -----------------
 -- PATCH 2.0.5 --

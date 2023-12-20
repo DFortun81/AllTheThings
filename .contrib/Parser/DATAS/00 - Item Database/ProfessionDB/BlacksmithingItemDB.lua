@@ -354,6 +354,7 @@ i(7987, 0);			-- Ornate Mithril Helm
 -- QUEST --
 i(0, 429348);	-- Shifting Silver Breastplate
 -- ITEM --
+i(211846, 430397);	-- Blackfathom Sharpening Stone
 i(210779, 427061);	-- Mantle of the Second War
 -- #endif
 

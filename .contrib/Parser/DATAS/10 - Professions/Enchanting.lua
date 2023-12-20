@@ -882,15 +882,18 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		applyclassicphase(LEGION_PHASE_ONE, cat(706, sharedDataSelf({ ["timeline"] = { "added 7.0.3" } }, {	-- Illusions
 			r(217637),	-- Tome of Illusions: Azeroth
 		}))),
-		applyclassicphase(PHASE_FIVE, cat(699, {	-- Oils
-			r(25130, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Mana Oil
-			r(25129, {["timeline"]={"removed 4.0.3"}}),	-- Brilliant Wizard Oil
-			r(25127),	-- Lesser Mana Oil
-			r(25126),	-- Lesser Wizard Oil
-			r(25125),	-- Minor Mana Oil
-			r(25124),	-- Minor Wizard Oil
-			r(25128),	-- Wizard Oil
-		})),
+		cat(699, {	-- Oils
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_ONE, r(430409)),	-- Blackfathom Mana Oil
+			-- #endif
+			applyclassicphase(PHASE_FIVE, r(25130, {["timeline"]={"removed 4.0.3"}})),	-- Brilliant Mana Oil
+			applyclassicphase(PHASE_FIVE, r(25129, {["timeline"]={"removed 4.0.3"}})),	-- Brilliant Wizard Oil
+			applyclassicphase(PHASE_FIVE, r(25127)),	-- Lesser Mana Oil
+			applyclassicphase(PHASE_FIVE, r(25126)),	-- Lesser Wizard Oil
+			applyclassicphase(PHASE_FIVE, r(25125)),	-- Minor Mana Oil
+			applyclassicphase(PHASE_FIVE, r(25124)),	-- Minor Wizard Oil
+			applyclassicphase(PHASE_FIVE, r(25128)),	-- Wizard Oil
+		}),
 		cat(701, {	-- Reagents
 			r(17181),	-- Enchanted Leather
 			r(17180),	-- Enchanted Thorium Bar

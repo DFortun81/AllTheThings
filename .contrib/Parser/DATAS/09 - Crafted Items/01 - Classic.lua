@@ -389,6 +389,11 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 		filter(MISC, {
 			i(16206, {["timeline"] = {REMOVED_5_0_4}}),	-- Arcanite Rod
 			i(15872),	-- Arcanite Skeleton Key
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_ONE, i(211845, {	-- Blackfathom Sharpening Stone
+				["timeline"] = { "removed 2.0.1" },
+			})),
+			-- #endif
 			i(3478),	-- Coarse Grinding Stone
 			i(2863),	-- Coarse Sharpening Stone
 			i(3240),	-- Coarse Weightstone
@@ -819,6 +824,11 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			}),
 		})),
 		filter(MISC, {
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_ONE, i(211848, {	-- Blackfathom Mana Oil
+				["timeline"] = { "removed 2.0.1" },
+			})),
+			-- #endif
 			applyclassicphase(PHASE_FIVE, i(20748, {["timeline"] = {REMOVED_4_0_3}})),	-- Brilliant Mana Oil / 10.0.7: Expired Mana Oil
 			applyclassicphase(PHASE_FIVE, i(20749, {["timeline"] = {REMOVED_4_0_3}})),	-- Brilliant Wizard Oil / 10.0.7: Expired Wizard Oil
 			applyclassicphase(PHASE_FIVE, i(203862, {["timeline"] = {ADDED_10_0_7}})),	-- Brilliant Mana Oil
