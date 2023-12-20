@@ -675,6 +675,7 @@ do
 	-- returns the input key unless it's blocked by being set to 0
 	local BlockedDisplayID = {
 		[11686] = 0,	-- empty blue thing
+		[27823] = 0,	-- empty blue thing
 		[56187] = 0,	-- generic bunny
 		[52318] = 0,	-- generic bunny
 	}
