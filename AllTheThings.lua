@@ -17918,6 +17918,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			self:SetVisible(true);
 			self:Update();
 		end
+		-- local C_Map_GetMapChildrenInfo = C_Map.GetMapChildrenInfo;
 		local function IsNotComplete(group) return not app.IsComplete(group) and app.RecursiveGroupRequirementsFilter(group); end
 		local function CheckGroup(group, func)
 			if func(group) then
@@ -18026,18 +18027,48 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		local rootGroups, mapGroups = {}, {};
 		self.Rebuild = function(self)
 			-- app.PrintDebug("Rebuild",self.mapID);
-			local currentMaps = {};
+			local currentMaps, mapID = {}, self.mapID
 
-			-- Get all results for this map, without any results that have been cloned into Source Ignored groups
-			results = app.CleanInheritingGroups(SearchForField("mapID", self.mapID), "sourceIgnored");
+			-- Get all results for this map, without any results that have been cloned into Source Ignored groups or are under Unsorted
+			results = app.CleanInheritingGroups(SearchForField("mapID", mapID), "sourceIgnored");
 			-- app.PrintDebug("Rebuild#",#results);
 			if results and #results > 0 then
+				-- I tend to like this way of finding sub-maps, but it does mean we rely on Blizzard and get whatever maps they happen to claim
+				-- are children of a given map... sometimes has weird results like scenarios during quests being considered children in
+				-- other zones. Since it can give us special top-level maps (Anniversary AV) also as children of other top-level maps (Hillsbarad)
+				-- we would need to filter the results and add them properly into the results below via sub-groups if they are maps themselves
+				-- local submapinfos = ArrayAppend(C_Map_GetMapChildrenInfo(mapID, 5), C_Map_GetMapChildrenInfo(mapID, 6))
+				-- if submapinfos then
+					-- for _,mapInfo in ipairs(submapinfos) do
+						-- subresults = app.CleanInheritingGroups(SearchForField("mapID", mapInfo.mapID), "sourceIgnored")
+						-- app.PrintDebug("Adding Sub-Map Results:",mapInfo.mapID,mapInfo.mapType,#subresults)
+						-- results = ArrayAppend(results, subresults)
+					-- end
+				-- end
+				-- See if there are any sub-maps we should also include by way of the 'maps' field on the 'real' map for this id
+				local rootMap
+				for _,result in ipairs(results) do
+					if result.key == "mapID" and result.mapID == mapID then
+						rootMap = result
+						break;
+					end
+				end
+				if rootMap and rootMap.maps then
+					local subresults
+					for _,subMapID in ipairs(rootMap.maps) do
+						if subMapID ~= mapID then
+							subresults = app.CleanInheritingGroups(SearchForField("mapID", subMapID), "sourceIgnored")
+							-- app.PrintDebug("Adding Sub-Map Results:",subMapID,#subresults)
+							results = ArrayAppend(results, subresults)
+						end
+					end
+				end
 				-- Simplify the returned groups
 				groups = {};
 				wipe(rootGroups);
 				wipe(mapGroups);
-				header = app.CreateMap(self.mapID, { g = groups });
-				currentMaps[self.mapID] = true;
+				header = app.CreateMap(mapID, { g = groups });
+				currentMaps[mapID] = true;
 				isInInstance = IsInInstance();
 				headerKeys = isInInstance and subGroupInstanceKeys or subGroupKeys;
 				-- split search results by whether they represent the 'root' of the minilist or some other mapped content
@@ -18045,10 +18076,10 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					-- do not use any raw Source groups in the final list
 					group = CreateObject(group);
 					-- Instance/Map/Class/Header(of current map) groups are allowed as root of minilist
-					if (group.instanceID or (group.mapID and (group.key == "mapID" or (group.key == "headerID" and group.mapID == self.mapID))) or group.key == "classID")
+					if (group.instanceID or (group.mapID and (group.key == "mapID" or (group.key == "headerID" and group.mapID == mapID))) or group.key == "classID")
 						-- and actually match this minilist...
 						-- only if this group mapID matches the minilist mapID directly or by maps
-						and (group.mapID == self.mapID or (group.maps and contains(group.maps, self.mapID))) then
+						and (group.mapID == mapID or (group.maps and contains(group.maps, mapID))) then
 						tinsert(rootGroups, group);
 					else
 						tinsert(mapGroups, group);
@@ -18185,13 +18216,13 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						MergeProperties(header, headerGroups[1], true);
 						NestObjects(header, headerGroups[1].g);
 					else
-						app.PrintDebug("No root Map groups!",self.mapID)
+						app.PrintDebug("No root Map groups!",mapID)
 					end
 				end
 
 				header.u = nil;
 				header.e = nil;
-				header.mapID = self.mapID;
+				header.mapID = mapID;
 				header.visible = true;
 				setmetatable(header,
 					header.instanceID and app.BaseInstance
@@ -18282,7 +18313,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				self.ScrollBar:SetValue(1);
 			else
 				-- If we don't have any data cached for this mapID and it exists in game, report it to the chat window.
-				local mapID = self.mapID;
+				local mapID = mapID;
 				self.CurrentMaps = {[mapID]=true};
 				local mapInfo = C_Map_GetMapInfo(mapID);
 				if mapInfo then
@@ -18298,12 +18329,12 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 						end
 					end
 					-- only report for mapIDs which actually exist
-					print("No map found for this location ", app.GetMapName(self.mapID), " [", self.mapID, "]");
+					print("No map found for this location ", app.GetMapName(mapID), " [", mapID, "]");
 					print("Path: ", mapPath);
 					app.report();
 				end
-				self:SetData(app.CreateMap(self.mapID, {
-					["text"] = L["MINI_LIST"] .. " [" .. self.mapID .. "]",
+				self:SetData(app.CreateMap(mapID, {
+					["text"] = L["MINI_LIST"] .. " [" .. mapID .. "]",
 					["icon"] = "Interface\\Icons\\INV_Misc_Map06.blp",
 					["description"] = L["MINI_LIST_DESC"],
 					["visible"] = true,
