@@ -2864,6 +2864,7 @@ root(ROOTS.Zones, {
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_weapons_ensemble", MOP_TIER, SEASON_MALEVOLENT, PVP_GLADIATOR },
+										{"merge"},
 										{"exclude", "itemID",
 											84911,	-- Malevolent Gladiator's Barrier
 											84787,	-- Malevolent Gladiator's Battle Staff

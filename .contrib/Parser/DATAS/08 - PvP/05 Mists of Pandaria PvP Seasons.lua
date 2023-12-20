@@ -658,32 +658,35 @@ root(ROOTS.PVP, {
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["sym"] = {
 								{"sub", "pvp_weapons_ensemble", MOP_TIER, SEASON_MALEVOLENT, PVP_GLADIATOR },
-								{"exclude", "itemID", 84911 },	-- Malevolent Gladiator's Barrier
-								{"exclude", "itemID", 84787 },	-- Malevolent Gladiator's Battle Staff
-								{"exclude", "itemID", 84970 },	-- Malevolent Gladiator's Bonecracker
-								{"exclude", "itemID", 84785 },	-- Malevolent Gladiator's Bonegrinder
-								{"exclude", "itemID", 84965 },	-- Malevolent Gladiator's Cleaver
-								{"exclude", "itemID", 84791 },	-- Malevolent Gladiator's Decapitator
-								{"exclude", "itemID", 84866 },	-- Malevolent Gladiator's Endgame
-								{"exclude", "itemID", 84788 },	-- Malevolent Gladiator's Energy Staff
-								{"exclude", "itemID", 84971 },	-- Malevolent Gladiator's Gavel
-								{"exclude", "itemID", 84790 },	-- Malevolent Gladiator's Greatsword
-								{"exclude", "itemID", 84966 },	-- Malevolent Gladiator's Hacker
-								{"exclude", "itemID", 84896 },	-- Malevolent Gladiator's Longbow
-								{"exclude", "itemID", 84786 },	-- Malevolent Gladiator's Pike
-								{"exclude", "itemID", 84964 },	-- Malevolent Gladiator's Pummeler
-								{"exclude", "itemID", 84969 },	-- Malevolent Gladiator's Quickblade
-								{"exclude", "itemID", 84912 },	-- Malevolent Gladiator's Redoubt
-								{"exclude", "itemID", 84963 },	-- Malevolent Gladiator's Render
-								{"exclude", "itemID", 84867 },	-- Malevolent Gladiator's Reprieve
-								{"exclude", "itemID", 84900 },	-- Malevolent Gladiator's Rifle
-								{"exclude", "itemID", 84962 },	-- Malevolent Gladiator's Ripper
-								{"exclude", "itemID", 84967 },	-- Malevolent Gladiator's Shanker
-								{"exclude", "itemID", 84910 },	-- Malevolent Gladiator's Shield Wall
-								{"exclude", "itemID", 84968 },	-- Malevolent Gladiator's Slicer
-								{"exclude", "itemID", 84961 },	-- Malevolent Gladiator's Spellblade
-								{"exclude", "itemID", 84789 },	-- Malevolent Gladiator's Staff
-								{"exclude", "itemID", 84894 },	-- Malevolent Gladiator's Slasher
+								{"merge"},
+								{"exclude", "itemID",
+									84911,	-- Malevolent Gladiator's Barrier
+									84787,	-- Malevolent Gladiator's Battle Staff
+									84970,	-- Malevolent Gladiator's Bonecracker
+									84785,	-- Malevolent Gladiator's Bonegrinder
+									84965,	-- Malevolent Gladiator's Cleaver
+									84791,	-- Malevolent Gladiator's Decapitator
+									84866,	-- Malevolent Gladiator's Endgame
+									84788,	-- Malevolent Gladiator's Energy Staff
+									84971,	-- Malevolent Gladiator's Gavel
+									84790,	-- Malevolent Gladiator's Greatsword
+									84966,	-- Malevolent Gladiator's Hacker
+									84896,	-- Malevolent Gladiator's Longbow
+									84786,	-- Malevolent Gladiator's Pike
+									84964,	-- Malevolent Gladiator's Pummeler
+									84969,	-- Malevolent Gladiator's Quickblade
+									84912,	-- Malevolent Gladiator's Redoubt
+									84963,	-- Malevolent Gladiator's Render
+									84867,	-- Malevolent Gladiator's Reprieve
+									84900,	-- Malevolent Gladiator's Rifle
+									84962,	-- Malevolent Gladiator's Ripper
+									84967,	-- Malevolent Gladiator's Shanker
+									84910,	-- Malevolent Gladiator's Shield Wall
+									84968,	-- Malevolent Gladiator's Slicer
+									84961,	-- Malevolent Gladiator's Spellblade
+									84789,	-- Malevolent Gladiator's Staff
+									84894,	-- Malevolent Gladiator's Slasher
+								},
 							},
 							["g"] = {
 								-- S13 Tag

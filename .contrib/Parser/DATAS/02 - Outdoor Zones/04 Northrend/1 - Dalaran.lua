@@ -841,9 +841,9 @@ root(ROOTS.Zones, {
 							n(30885, {	-- Blazik Fireclaw <Hateful Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+] / Blazik Fireclaw <Water Vendor> [WRATH]
 								["coord"] = { 59.5, 57.9, NORTHREND_THE_UNDERBELLY },
 								-- #if AFTER LEGION
-								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PRE_SEASON_HATEFUL },{"merge"},{ "pop" }},	-- Hateful Gladiator's Set
 								-- #elseif AFTER CATA
-								["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },{ "pop" }},	-- Brutal Gladiator's Set [TODO: Specifically Just the Armor...]
+								["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Brutal Gladiator's Set [TODO: Specifically Just the Armor...]
 								-- #endif
 							}),
 							n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
@@ -875,7 +875,7 @@ root(ROOTS.Zones, {
 							}),
 							n(69321, {	-- Herwin Steampop <Deadly Gladiator>
 								["coord"] = { 59.4, 57.8, NORTHREND_THE_UNDERBELLY },
-								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Deadly Gladiator's Set
 								["timeline"] = { "added 5.2.0.16577" },
 							}),
 							n(29538, {	-- Hexil Garrot <Tools of the Trade>
@@ -913,7 +913,7 @@ root(ROOTS.Zones, {
 							}),
 							n(69318, {	-- Kylo Kelwin <Furious Gladiator>
 								["coord"] = { 59.0, 57.6, NORTHREND_THE_UNDERBELLY },
-								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_FURIOUS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Furious Gladiator's Set
 								["timeline"] = { "added 5.2.0.16577" },
 							}),
 							applyclassicphase(CATA_PHASE_THREE, n(54653, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
@@ -973,9 +973,9 @@ root(ROOTS.Zones, {
 							applyclassicphase(CATA_PHASE_ONE, n(40212, {	-- Trapjaw Rix <Savage Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+]
 								["coord"] = { 59.3, 57.3, NORTHREND_THE_UNDERBELLY },
 								-- #if AFTER LEGION
-								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR },{ "pop" }},	-- Savage Gladiator's Set
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_DEADLY, PVP_HONOR },{"merge"},{ "pop" }},	-- Savage Gladiator's Set
 								-- #elseif AFTER CATA
-								["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },{ "pop" }},	-- Brutal Gladiator's Set [TODO: Specifically Just the Weapons...]
+								["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Brutal Gladiator's Set [TODO: Specifically Just the Weapons...]
 								-- #endif
 								["timeline"] = { "added 4.0.3.13277" },
 							})),
@@ -1003,9 +1003,9 @@ root(ROOTS.Zones, {
 							n(69971, {	-- Xazi Smolderpipe <Wrathful Gladiator> [Legion?] / Xazi Smolderpipe <Conquest Quartermaster> [MOP?]
 								["coord"] = { 58.5, 58.3, NORTHREND_THE_UNDERBELLY },
 								-- #if AFTER LEGION
-								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR },{ "pop" }},	-- Wrathful Gladiator's Set
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_WRATHFUL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Wrathful Gladiator's Set
 								-- #else
-								["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },{ "pop" }},	-- Cataclysmic Gladiator's Set
+								["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Cataclysmic Gladiator's Set
 								-- #endif
 								["timeline"] = { "added 5.2.0.16577" },
 							}),
@@ -1040,9 +1040,9 @@ root(ROOTS.Zones, {
 							n(69973, {	-- Zom Bocom <Relentless Gladiator> [Legion?] / Zom Bocom <Honor Quartermaster> [MOP?]
 								["coord"] = { 59.0, 58.8, NORTHREND_THE_UNDERBELLY },
 								-- #if AFTER LEGION
-								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
+								["sym"] = {{"sub", "pvp_gear_base", WOTLK_TIER, SEASON_RELENTLESS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Relentless Gladiator's Set
 								-- #else
-								["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },{ "pop" }},	-- Ruthless Gladiator's Set
+								["sym"] = {{"sub", "pvp_gear_base", CATA_TIER, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Ruthless Gladiator's Set
 								-- #endif
 								["timeline"] = { "added 5.2.0.16577" },
 							}),

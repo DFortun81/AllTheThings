@@ -1406,7 +1406,7 @@ root(ROOTS.Zones, {
 					}),
 					n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>
 						["coord"] = { 33.2, 64.0, NETHERSTORM },
-						["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },{ "pop" }},	-- Brutal Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_BRUTAL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Brutal Gladiator's Set
 						["timeline"] = { "added 7.0.3.22260" },
 					}),
 					n(19536, {	-- Dealer Jadyan <Exotic Weapons>
@@ -1605,7 +1605,7 @@ root(ROOTS.Zones, {
 					})),
 					n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
-						["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR },{ "pop" }},	-- Merciless Gladiator's Set
+						["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Merciless Gladiator's Set
 						["timeline"] = { "added 7.0.3.22260" },
 					}),
 					n(21493, {	-- Kablamm Farflinger <Transportation Engineer>
@@ -1667,13 +1667,14 @@ root(ROOTS.Zones, {
 					n(54650, {	-- Kezzik the Striker <Gladiator and General's Gladiator> [Legion+] / Kezzik the Striker <Gladiator, Merciless, & Vengeful Gear>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["sym"] = {
-							{"sub", "pvp_gear_base", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR },	-- Gladiator's Set
-							{"exclude","itemID",28379},	-- Sergeant's Heavy Cape (A)
-							{"exclude","itemID",28378},	-- Sergeant's Heavy Cape (H)
+							{"sub", "pvp_gear_base", TBC_TIER, SEASON_GLADIATOR, PVP_GLADIATOR },{"merge"},	-- Gladiator's Set
+							{"exclude","itemID",
+								28379,	-- Sergeant's Heavy Cape (A)
+								28378},	-- Sergeant's Heavy Cape (H)
 							-- #if BEFORE LEGION
 							{ "finalize" },
-							{"sub", "pvp_gear_base", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR },{ "finalize" },	-- Merciless Gladiator's Set
-							{"sub", "pvp_gear_base", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR },{ "finalize" },	-- Vengeful Gladiator's Set
+							{"sub", "pvp_gear_base", TBC_TIER, SEASON_MERCILESS, PVP_GLADIATOR },	-- Merciless Gladiator's Set
+							{"sub", "pvp_gear_base", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR },	-- Vengeful Gladiator's Set
 							-- #else
 							{ "pop" },
 							-- #endif
@@ -1710,7 +1711,7 @@ root(ROOTS.Zones, {
 					})),
 					n(107610, {	-- Kitzie Crankshot <Vengeful and Vindicator's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
-						["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR },{"pop"}},	-- Vengeful Gladiator Set
+						["sym"] = {{"sub", "pvp_gear_base", TBC_TIER, SEASON_VENGEFUL, PVP_GLADIATOR },{"merge"},{"pop"}},	-- Vengeful Gladiator Set
 						["timeline"] = { "added 7.0.3.22260" },
 					}),
 					n(23396, {	-- Krixel Pinchwhistle <Classic Alliance Mail & Plate> / Krixel Pinchwhistle <Arena Vendor> [TBC]
