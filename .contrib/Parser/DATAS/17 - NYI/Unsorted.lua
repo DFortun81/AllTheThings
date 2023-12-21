@@ -1533,7 +1533,6 @@ root(ROOTS.Unsorted, {
 		})),
 		tier(DF_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
 			--- Might Appear In Game ---
-				i(193389),	-- Adamantine Core
 				i(201210),	-- Albino Feather
 				i(192604),	-- Ancient Lantern
 				i(201220),	-- Ancient Tool
@@ -1543,12 +1542,10 @@ root(ROOTS.Unsorted, {
 				i(193448),	-- Arcane Cell
 				i(201824),	-- Arcane Fluid
 				i(201823),	-- Arcane-Infused Webbing
-				i(201191),	-- Back Scratcher
 				i(201198),	-- Beaded Bracelet
 				i(201187),	-- Bent Lockpicks
 				i(201226),	-- Big Rock
 				i(201180),	-- Bone Necklace
-				i(201205),	-- Bone Toothpick
 				i(201211),	-- Bottled Ear Wax
 				i(201165),	-- Burnished Bauble
 				i(200533),	-- Bygone Idol
@@ -1558,12 +1555,9 @@ root(ROOTS.Unsorted, {
 				i(192688),	-- Cracked Stone Bracers
 				i(201216),	-- Crumbled Elemental Spark
 				i(200532),	-- Damaged Qiraji Ring
-				i(201188),	-- Deceased Critter
 				i(200451),	-- Deep Sea Star
 				i(193420),	-- Depleted Mana Stone
 				i(192698),	-- Depleted Titan Training Matrix
-				i(192652),	-- Discharged Thunderscale
-				i(192613),	-- Dragon Tooth
 				i(201197),	-- Dream Journal
 				i(192687),	-- Duck Bill
 				i(192689),	-- Eagle Eye
@@ -1574,14 +1568,11 @@ root(ROOTS.Unsorted, {
 				i(192693),	-- First Heads Horn
 				i(200937),	-- Flavorful Soup Bone
 				i(192697),	-- Fluffy Ear
-				i(201206),	-- Fresh Meat Lump
 				i(192700),	-- Frozen Dorsal Spike
 				i(192701),	-- Frozen Eye
 				i(192616),	-- Fung Eye
 				i(192702),	-- Giant's Heart
 				i(192707),	-- Gnawing Incisors
-				i(201190),	-- Goo Filled Flask
-				i(192656),	-- Half-Digested Fish
 				i(201227),	-- Half-Eaten Stone
 				i(201228),	-- Handful of Gravel
 				i(201173),	-- Handful of Teeth
@@ -1590,11 +1581,9 @@ root(ROOTS.Unsorted, {
 				i(192703),	-- Hide-Piercing Horn
 				i(192704),	-- Huge Flat Tooth
 				i(192705),	-- Imposing Tusk
-				i(192659),	-- Impressive Mandible
 				i(201723),	-- Indecipherable Pages
 				i(201170),	-- Knucklebones
 				i(192620),	-- Large Tail Spikes
-				i(192708),	-- Magnificent Antler
 				i(201200),	-- Makeshift Totem
 				i(192660),	-- Massive Hydra Claw
 				i(192709),	-- Membranous Wing
@@ -1607,9 +1596,6 @@ root(ROOTS.Unsorted, {
 				i(192645),	-- Obsidian Nugget
 				i(201214),	-- Olfactory Truffle
 				i(201176),	-- Ornate Bracelet
-				i(192712),	-- Otherworldly Essence
-				i(201203),	-- Painted Gnoll Band
-				i(201219),	-- Parchment Cards
 				i(201171),	-- Perfectly Round Stone
 				i(192713),	-- Pharyngeal Jaw
 				i(192715),	-- Phoenix Stone
@@ -1618,7 +1604,6 @@ root(ROOTS.Unsorted, {
 				i(192716),	-- Prehistoric Sediment
 				i(201196),	-- Pretty Flower
 				i(201194),	-- Pumice Hand Chalk
-				i(192706),	-- Razor Quill
 				i(192650),	-- Roomy Shell
 				i(201186),	-- Rope Bonds
 				i(192719),	-- Scaled Toes
@@ -1635,7 +1620,6 @@ root(ROOTS.Unsorted, {
 				i(192633),	-- Slit-Shaped Pupil
 				i(201221),	-- Small Titan Mechanism
 				i(201179),	-- Snapped Tusk Tip
-				i(193387),	-- Solar Battery
 				i(201213),	-- Sparkling Stone
 				i(201729),	-- Spiked Horseshoe
 				i(192670),	-- Splendid Feather
@@ -1643,10 +1627,8 @@ root(ROOTS.Unsorted, {
 				i(192721),	-- Splendid Horn
 				i(192722),	-- Splendid Whiskers
 				i(201813),	-- Spoiled Firewine
-				i(192723),	-- Springy Tongue
 				i(201202),	-- Squirrel Tail
 				i(201167),	-- Stone Calendar
-				i(192671),	-- Sublime Flower
 				i(200107),	-- Tarnished Engagement Ring
 				i(201224),	-- Tauren Horn
 				i(192724),	-- Terrifying Teeth
@@ -1655,9 +1637,7 @@ root(ROOTS.Unsorted, {
 				i(201223),	-- Thorn Bracelet
 				i(193447),	-- Thunder Thigh
 				i(192726),	-- Thunderhorn
-				i(192727),	-- Timeless Horns
 				i(193391),	-- Time-Worn Fang
-				i(201164),	-- Titan Runestone
 				i(201204),	-- Tooth Bracelet
 				i(192665),	-- Torn Dragon Wing
 				i(192728),	-- Undamaged Silk Gland
@@ -1819,7 +1799,6 @@ root(ROOTS.Unsorted, {
 				i(195455),	-- Argali Cheese
 				i(195459),	-- Argali Milk
 				i(198141),	-- Astral Essence
-				i(200613),	-- Aylaag Windstone Fragment
 				i(200817),	-- Azure Splinters
 				i(200766),	-- Bakar Fangs
 				i(192127),	-- Basilisk Eggs
@@ -1921,7 +1900,6 @@ root(ROOTS.Unsorted, {
 				i(200935),	-- Large Egg Shell
 				i(200778),	-- Lava Blowing for Dummies
 				i(200587),	-- Leatherbound Expedition Note
-				i(200596),	-- Letter from Thaelin Darkanvil
 				i(200698),	-- Ley Orb
 				i(200702),	-- Magenta Titian Extract
 				i(197850),	-- Mammoth Dumpling
@@ -1976,7 +1954,6 @@ root(ROOTS.Unsorted, {
 				i(200775),	-- Self-Luminous Orb
 				i(200851),	-- Self-Trimming Bonsai
 				i(191849),	-- Serevite Angle Iron
-				i(200764),	-- Slimy Shinies
 				i(191412),	-- Small Expedition Pick
 				i(200621),	-- Soothing Incense
 				i(199184),	-- Spellbound Bone Pipes
@@ -2001,7 +1978,6 @@ root(ROOTS.Unsorted, {
 				i(200594),	-- Thaelin's Second Favorite Comb
 				i(200705),	-- Thaldraszus Root
 				i(200803),	-- Through the Stained-Glass
-				i(198979),	-- Time Capsule Letter
 				i(199106),	-- Tiny Leviathan Bone
 				i(200833),	-- Titan Watcher Replica
 				i(200701),	-- Titian Extract
