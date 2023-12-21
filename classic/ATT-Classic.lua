@@ -1113,6 +1113,8 @@ local function MergeClone(g, o)
 	if u then clone.u = u; end
 	local e = GetRelativeValue(o, "e");
 	if e then clone.e = e; end
+	local lvl = GetRelativeValue(o, "lvl");
+	if lvl then clone.lvl = lvl; end
 	if not o.itemID or o.b == 1 then
 		local races = o.races;
 		if races then

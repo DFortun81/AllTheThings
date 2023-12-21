@@ -2980,7 +2980,7 @@ cacheRecipes(_.Professions);
 
 -- Item Recipe Database
 local itemrecipe = function(name, itemID, spellID, phase, timeline)
-	local o = { ["itemID"] = itemID, ["spellID"] = spellID };
+	local o = { ["itemID"] = itemID, ["f"] = 200, ["spellID"] = spellID };
 	if type(phase) == "string" then
 		timeline = phase;
 		phase = nil;
