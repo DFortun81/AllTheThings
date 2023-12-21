@@ -167,6 +167,8 @@ local TooltipSettingsBase = {
 		["SummarizeThings"] = true,
 		["Warn:Removed"] = true,
 		["creatures"] = true,
+		["awp"] = true,
+		["rwp"] = true,
 	},
 };
 local UnobtainableSettingsBase = {

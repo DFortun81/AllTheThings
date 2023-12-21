@@ -2114,12 +2114,14 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			awpGreaterThanRWP = rwp and awp >= rwp;
 			local awpString = GetAddedWithPatchString(awp, awpGreaterThanRWP);
 			if awpString then
-				tinsert(info, 1, { left = awpString, wrap = true, color = app.Colors.AddedWithPatch });
+				if app.Settings:GetTooltipSetting("awp") then
+					tinsert(info, 1, { left = awpString, wrap = true, color = app.Colors.AddedWithPatch });
+				end
 			else
 				awpGreaterThanRWP = true;
 			end
 		end
-		if rwp then
+		if rwp and app.Settings:GetTooltipSetting("rwp") then
 			tinsert(info, awpGreaterThanRWP and 1 or 2, { left = GetRemovedWithPatchString(rwp), wrap = true, color = app.Colors.RemovedWithPatch });
 		end
 
@@ -10954,7 +10956,7 @@ local function RowOnEnter(self)
 			local awp, rwp = GetRelativeValue(reference, "awp"), reference.rwp;
 			if rwp then
 				local rwpString = GetRemovedWithPatchString(rwp);
-				if not linesByText[rwpString] then
+				if not linesByText[rwpString] and app.Settings:GetTooltipSetting("rwp") then
 					local r,g,b = HexToRGB(app.Colors.RemovedWithPatch);
 					GameTooltip:AddLine(rwpString, r, g, b, 1);
 				end
@@ -10962,8 +10964,10 @@ local function RowOnEnter(self)
 			if awp and ((rwp or (reference.u and reference.u < 3)) or awp >= app.GameBuildVersion) then
 				local awpString = GetAddedWithPatchString(awp, awp and rwp and awp > rwp);
 				if awpString and not linesByText[awpString] then
-					local r,g,b = HexToRGB(app.Colors.AddedWithPatch);
-					GameTooltip:AddLine(awpString, r, g, b, 1);
+					if app.Settings:GetTooltipSetting("awp") then
+						local r,g,b = HexToRGB(app.Colors.AddedWithPatch);
+						GameTooltip:AddLine(awpString, r, g, b, 1);
+					end
 				end
 			end
 			if reference.questID and not reference.objectiveID then
