@@ -22,6 +22,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 						i(193787),	-- Mammoth-Trainer's Cape
 						i(193788),	-- Molten Magma Mantle
 						i(193789),	-- Fural's Blazing Faulds
+						i(201263),	-- Obsidian Journal (QI!)
+						i(201264),	-- Neltharion's Notes (QI!)
+						i(201266),	-- Research Tome (QI!)
 					},
 				}),
 			}),

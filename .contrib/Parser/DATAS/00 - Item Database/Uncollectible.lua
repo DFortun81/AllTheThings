@@ -648,6 +648,7 @@ i(192706);	-- Razor Quill
 i(192708);	-- Magnificent Antler
 i(192711);	-- Oily Liver
 i(192712);	-- Otherworldly Essence
+i(192715);	-- Phoenix Stone
 i(192717);	-- Animated Splinter
 i(192718);	-- Rock-Hard Eggshell
 i(192723);	-- Springy Tongue

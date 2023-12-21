@@ -289,9 +289,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["providers"] = {
 				{ "i", 21212 },	-- Fresh Holly
 				{ "i", 21213 },	-- Preserved Holly
+				{ "n", 23120 },	-- Sky Sergeant Vanderlip 
 			},
+			["sourceQuest"] = 11023,	-- Bomb them again!
 			["timeline"] = { "added 3.0.1" },
-			["maps"] = { BLADES_EDGE_MOUNTAINS },
+			["coord"] = { 27.6, 52.9, BLADES_EDGE_MOUNTAINS },
+			["_noautomation"] = true,
 		}),
 		ach(1689, {	-- He Knows If You've Been Naughty
 			["timeline"] = { "added 3.0.1" },

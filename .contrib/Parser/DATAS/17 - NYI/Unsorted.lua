@@ -1598,7 +1598,6 @@ root(ROOTS.Unsorted, {
 				i(201176),	-- Ornate Bracelet
 				i(201171),	-- Perfectly Round Stone
 				i(192713),	-- Pharyngeal Jaw
-				i(192715),	-- Phoenix Stone
 				i(201163),	-- Piece of Dragonkin Eggshell
 				i(201183),	-- Pouch of Salt
 				i(192716),	-- Prehistoric Sediment

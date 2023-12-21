@@ -356,13 +356,11 @@ root(ROOTS.NeverImplemented, {
 				i(192493),	-- Mote of Primal Energy
 				i(190191),	-- Muck-Covered Map
 				i(191840),	-- Mudfin Pouch
-				i(201264),	-- Neltharion's Notes
 				i(193625),	-- Neltharus Forge Crystal
 				i(199477),	-- Nokhud Armament
 				i(192783),	-- Nokhud Vanguard Orders
 				i(191683),	-- Obsidian Bickern
 				i(193627),	-- Obsidian Crafting Fork
-				i(201263),	-- Obsidian Journal
 				i(199174),	-- Ohn'ir Wind Chimes
 				i(200134),	-- Ohuna Mass-Binding Totem
 				i(198450),	-- Old Crabshell
@@ -411,7 +409,6 @@ root(ROOTS.NeverImplemented, {
 				i(191285),	-- Requisition Job: BLACKSMITH - Tent Stakes
 				i(191284),	-- Requisition Job: TAILOR - Tent Canvas Repairs
 				i(191283),	-- Requistion Job: Cold Weather Insulation
-				i(201266),	-- Research Tome
 				i(191199),	-- Restless Mote
 				i(198698),	-- Ridgewater Retreat Orders
 				i(191780),	-- Rigid Basilisk Hide
