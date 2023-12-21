@@ -220,6 +220,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}, {	-- RENOWN 9 --
 					}, {	-- RENOWN 10 --
 					}, {	-- RENOWN 11 --
+						i(200613, {	-- Aylaag Windstone Fragment
+							["cost"] = {
+								{ "c", DRAGON_SUPPLIES, 50 },
+							},
+						}),						
 						i(200457, {	-- Ohn'ahran Plainswalker Boots
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 150 },

@@ -624,11 +624,13 @@ i(192629);	-- Primal Beast Claw
 i(192630);	-- Reef Carapace
 i(192632);	-- Sharp Bird Talon
 i(192634);	-- Smashed Metal Scraps
+i(192645);	-- Obsidian Nugget
 i(192646);	-- Aqueous Speck
 i(192647);	-- Terrene Speck
 i(192651);	-- Damaged Core
 i(192652);	-- Discharged Thunderscale
 i(192653);	-- Floppy Molten Ear
+i(192655);	-- Chilling Spider Leg
 i(192656);	-- Half-Digested Fish
 i(192657);	-- Hardy Cloven Hoof
 i(192659);	-- Impressive Mandible
@@ -666,7 +668,6 @@ i(199476);	-- Singed Cloth Scraps
 i(200105);	-- Muck Covered Flotsam
 i(200106);	-- Slimy Old Boot
 i(200596);	-- Letter from Thaelin Darkanvil
-i(200613);	-- Aylaag Windstone Fragment
 i(200789);	-- Beckoning Kite
 i(201164);	-- Titan Runestone
 i(201192);	-- Large Dragonbone Dice

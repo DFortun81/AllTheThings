@@ -201,6 +201,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(71067, {	-- Whistling Rocks
 					["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 					["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(200613),	-- Aylaag Windstone Fragment
+					},
 				}),
 			}, {	-- RENOWN 12 --
 				q(71029, {	-- Hunting Tactics: Companion Training

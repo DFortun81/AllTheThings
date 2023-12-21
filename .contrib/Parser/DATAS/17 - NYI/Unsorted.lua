@@ -1550,7 +1550,6 @@ root(ROOTS.Unsorted, {
 				i(201165),	-- Burnished Bauble
 				i(200533),	-- Bygone Idol
 				i(192686),	-- Charred Carapace
-				i(192655),	-- Chilling Spider Leg
 				i(201178),	-- Cracked Skull
 				i(192688),	-- Cracked Stone Bracers
 				i(201216),	-- Crumbled Elemental Spark
@@ -1593,7 +1592,6 @@ root(ROOTS.Unsorted, {
 				i(192710),	-- Nearly Unbreakable Horn
 				i(201730),	-- Nokhud Centaur Spear
 				i(201731),	-- Nokhud Centaur Staff
-				i(192645),	-- Obsidian Nugget
 				i(201214),	-- Olfactory Truffle
 				i(201176),	-- Ornate Bracelet
 				i(201171),	-- Perfectly Round Stone
