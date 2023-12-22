@@ -301,7 +301,6 @@ i(22538, 27927);	-- Stats (6.0.2)
 i(22535, 27920);    -- Striking (6.0.2)
 -- #else
 i(0, 27920);    -- Striking (6.0.2)
-i(22535, 0);    -- Striking (6.0.2)
 -- #endif
 -- NYI --
 i(22564, 28021);	-- Arcane Dust
