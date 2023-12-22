@@ -60,7 +60,7 @@ namespace ATT
                                     if (itemValuePair.Value is IDictionary<string, object> item)
                                     {
                                         item["itemID"] = itemValuePair.Key;
-                                        Items.Merge(item);
+                                        Items.MergeFromDB(item);
                                     }
                                     else
                                     {
@@ -77,7 +77,7 @@ namespace ATT
                                 {
                                     if (o is IDictionary<string, object> item)
                                     {
-                                        Items.Merge(item);
+                                        Items.MergeFromDB(item);
                                     }
                                     else
                                     {
@@ -107,6 +107,7 @@ namespace ATT
                                     if (itemValuePair.Value is IDictionary<string, object> item)
                                     {
                                         item["itemID"] = itemValuePair.Key;
+                                        Objects.MergeFromDB("itemID", item);
                                         ConditionalItemData.Add(item);
                                     }
                                     else
@@ -124,6 +125,7 @@ namespace ATT
                                 {
                                     if (o is IDictionary<string, object> item)
                                     {
+                                        Objects.MergeFromDB("itemID", item);
                                         ConditionalItemData.Add(item);
                                     }
                                     else
@@ -172,7 +174,7 @@ namespace ATT
                                     if (recipeValuePair.Value is IDictionary<string, object> recipe)
                                     {
                                         recipe["recipeID"] = recipeValuePair.Key;
-                                        Objects.Merge(recipe);
+                                        Objects.MergeFromDB("recipeID", recipe);
                                     }
                                     else
                                     {
@@ -189,7 +191,7 @@ namespace ATT
                                 {
                                     if (o is IDictionary<string, object> recipe)
                                     {
-                                        Objects.Merge(recipe);
+                                        Objects.MergeFromDB("recipeID", recipe);
                                     }
                                     else
                                     {
@@ -963,13 +965,13 @@ namespace ATT
         /// Merge the data into the database.
         /// </summary>
         /// <param name="listing">The listing.</param>
-        public static void Merge(List<object> listing)
+        public static void MergeFromDB(List<object> listing)
         {
             foreach (var o in listing)
             {
                 if (o is IDictionary<string, object> entry)
                 {
-                    Items.Merge(entry);
+                    Items.MergeFromDB(entry);
                 }
             }
         }
@@ -986,13 +988,13 @@ namespace ATT
             // Are we dealing with an Items Database section?
             if (data.TryGetValue("items", out List<object> listing))
             {
-                Merge(listing);
+                MergeFromDB(listing);
             }
 
             // Are we dealing with a Mounts Database section?
             if (data.TryGetValue("mounts", out listing))
             {
-                Merge(listing);
+                MergeFromDB(listing);
             }
 
             // Are we dealing with a Quests Database section?

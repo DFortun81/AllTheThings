@@ -67,7 +67,7 @@ namespace ATT
             /// All of the Merged Objects (non-Items) that are in the database. This is used to ensure that various information is synced across all Sources of a given object as necessary
             /// Stored by key -> key-value -> object
             /// </summary>
-            public static IDictionary<string, Dictionary<object, IDictionary<string, object>>> MergedObjects { get; } = new Dictionary<string, Dictionary<object, IDictionary<string, object>>>();
+            public static IDictionary<string, Dictionary<object, IDictionary<string, object>>> SharedDataByPrimaryKey { get; } = new Dictionary<string, Dictionary<object, IDictionary<string, object>>>();
 
             /// <summary>
             /// The keys which should be merged based on a given merge object key
@@ -431,83 +431,104 @@ namespace ATT
             }
 
             /// <summary>
-            /// Merges dictionary data based on all keys from the common storage into the Source object
+            /// Merges information from the database object into shared object storage.
             /// </summary>
-            /// <param name="entry"></param>
-            internal static void Merge(IDictionary<string, object> data)
+            /// <param name="primaryKey">The primary key of the database module.</param>
+            /// <param name="databaseObject">The data to merge into shared storage.</param>
+            internal static void MergeFromDB(string primaryKey, IDictionary<string, object> databaseObject)
             {
-                foreach (string key in MergeObjectFields.Keys)
-                    Merge(key, data);
+                // does this data contain the key?
+                if (databaseObject.TryGetValue(primaryKey, out object keyValue))
+                {
+                    // get the container for objects of this key
+                    if (!SharedDataByPrimaryKey.TryGetValue(primaryKey, out Dictionary<object, IDictionary<string, object>> typeObjects))
+                    {
+                        typeObjects = new Dictionary<object, IDictionary<string, object>>();
+                        SharedDataByPrimaryKey.Add(primaryKey, typeObjects);
+                    }
+
+                    // get the specific merged object
+                    if (!typeObjects.TryGetValue(keyValue, out IDictionary<string, object> merged))
+                    {
+                        merged = new Dictionary<string, object>();
+                        typeObjects.Add(keyValue, merged);
+                    }
+
+                    foreach (var pair in databaseObject)
+                    {
+                        if (pair.Key == primaryKey) continue;
+                        merged[pair.Key] = pair.Value;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"ERROR: Primary Key missing from {primaryKey}: {MiniJSON.Json.Serialize(databaseObject)}");
+                }
             }
 
             /// <summary>
-            /// Merges data for a given object based on the key from the Source object into a common storage for that keyed-object
+            /// Merges whitelisted information from the non-database object into shared object storage.
             /// </summary>
-            /// <param name="v"></param>
-            /// <param name="data"></param>
-            internal static void Merge(string key, IDictionary<string, object> data)
+            /// <param name="objectData">The data to merge into shared storage.</param>
+            internal static void MergeFromObject(IDictionary<string, object> objectData)
             {
-                // only bother creating a merge container if the data contains a merging key
-                if (data.ContainsAnyKey(MergeObjectFields[key]))
+                foreach (var mergeObjectFieldPair in MergeObjectFields)
                 {
                     // does this data contain the key?
-                    if (data.TryGetValue(key, out object keyValue))
+                    if (objectData.TryGetValue(mergeObjectFieldPair.Key, out object keyValue))
                     {
-                        // get the container for objects of this key
-                        if (!MergedObjects.TryGetValue(key, out Dictionary<object, IDictionary<string, object>> typeObjects))
+                        // only bother creating a merge container if the data contains a merging key
+                        if (objectData.ContainsAnyKey(mergeObjectFieldPair.Value))
                         {
-                            typeObjects = new Dictionary<object, IDictionary<string, object>>();
-                            MergedObjects.Add(key, typeObjects);
+                            // get the container for objects of this key
+                            if (!SharedDataByPrimaryKey.TryGetValue(mergeObjectFieldPair.Key, out Dictionary<object, IDictionary<string, object>> typeObjects))
+                            {
+                                typeObjects = new Dictionary<object, IDictionary<string, object>>();
+                                SharedDataByPrimaryKey.Add(mergeObjectFieldPair.Key, typeObjects);
+                            }
+
+                            // get the specific merged object
+                            if (!typeObjects.TryGetValue(keyValue, out IDictionary<string, object> merged))
+                            {
+                                merged = new Dictionary<string, object>();
+                                typeObjects.Add(keyValue, merged);
+                            }
+
+                            //if (DebugMode)
+                            //    Trace.WriteLine($"Merge>{key}:{keyValue} = {ToJSON(data)}");
+
+                            // merge the allowed fields by the key into the merged object
+                            foreach (string field in mergeObjectFieldPair.Value)
+                            {
+                                if (objectData.TryGetValue(field, out object val))
+                                {
+                                    if ((field == "spellID" || field == "recipeID") && Convert.ToInt32(val) == 0) continue;
+                                    merged[field] = val;
+                                }
+                            }
                         }
-
-                        // get the specific merged object
-                        if (!typeObjects.TryGetValue(keyValue, out IDictionary<string, object> merged))
-                        {
-                            merged = new Dictionary<string, object>();
-                            typeObjects.Add(keyValue, merged);
-                        }
-
-                        //if (DebugMode)
-                        //    Trace.WriteLine($"Merge>{key}:{keyValue} = {ToJSON(data)}");
-
-                        // merge the allowed fields by the key into the merged object
-                        foreach (string field in MergeObjectFields[key])
-                            if (data.TryGetValue(field, out object val))
-                                merged[field] = val;
                     }
                 }
             }
 
             /// <summary>
-            /// Merges dictionary data based on all keys from the common storage into the Source object
+            /// Merges shared data from the database into the object.
             /// </summary>
-            /// <param name="entry"></param>
-            internal static void MergeInto(IDictionary<string, object> data)
+            /// <param name="objectData">The object data to merge shared data into.</param>
+            internal static void MergeSharedDataIntoObject(IDictionary<string, object> objectData)
             {
-                foreach (string key in MergeObjectFields.Keys)
-                    MergeInto(key, data);
-            }
-
-            /// <summary>
-            /// Merges dictionary data based on a specific key from the common storage into the Source object
-            /// </summary>
-            /// <param name="v"></param>
-            /// <param name="data"></param>
-            internal static void MergeInto(string key, IDictionary<string, object> data)
-            {
-                // does this data contain the key?
-                if (data.TryGetValue(key, out object keyValue))
+                foreach (var container in SharedDataByPrimaryKey)
                 {
-                    // get the container for objects of this key
-                    if (MergedObjects.TryGetValue(key, out Dictionary<object, IDictionary<string, object>> typeObjects))
+                    // does this data contain the key?
+                    if (objectData.TryGetValue(container.Key, out object keyValue))
                     {
                         // get the specific merged object
-                        if (typeObjects.TryGetValue(keyValue, out IDictionary<string, object> merged))
+                        if (container.Value.TryGetValue(keyValue, out IDictionary<string, object> commonData))
                         {
                             // merge the allowed fields by the key into the data object
-                            foreach (string field in MergeObjectFields[key])
-                                if (!data.ContainsKey(field) && merged.TryGetValue(field, out object val))
-                                    data[field] = val;
+                            foreach (var commonFieldPair in commonData)
+                                if (!objectData.ContainsKey(commonFieldPair.Key))
+                                    objectData[commonFieldPair.Key] = commonFieldPair.Value;
                         }
                     }
                 }
@@ -2458,7 +2479,7 @@ end");
                 if (!MergeItemData)
                 {
                     Items.MergeInto(data2);
-                    MergeInto(data2);
+                    MergeSharedDataIntoObject(data2);
                 }
 
                 // Find the Object Dictionary that matches the data.

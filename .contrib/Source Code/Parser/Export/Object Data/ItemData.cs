@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Text;
 
 namespace ATT
@@ -32,12 +33,32 @@ namespace ATT
                         fields.Remove("f");
                         return;
                     }
-                    else if (f == 100 && fields.Contains("spellID"))   // Mounts
+                    else
                     {
-                        WriteShortcut(builder, "mnt", "_.CreateMount");
-                        ExportField(builder, data, fields, "spellID");
-                        fields.Remove("f");
-                        return;
+                        if (data.TryGetValue("spellID", out object spellIDRef))   // Mounts
+                        {
+                            if (Convert.ToInt32(spellIDRef) > 0)
+                            {
+                                if (f == 100)   // Mounts
+                                {
+                                    WriteShortcut(builder, "mnt", "_.CreateMount");
+                                    ExportField(builder, data, fields, "spellID");
+                                    return;
+                                }
+                            }
+                            else
+                            {
+                                fields.Remove("spellID");
+                                fields.Remove("f");
+                            }
+                        }
+
+                        if (data.TryGetValue("recipeID", out spellIDRef) && Convert.ToInt32(spellIDRef) == 0)   // Recipes
+                        {
+                            fields.Remove("recipeID");
+                            fields.Remove("f");
+                            return;
+                        }
                     }
                 }
 

@@ -789,8 +789,8 @@ namespace ATT
             }
 
             // Merge all relevant Item Data into the global dictionaries after being validated
-            Items.Merge(data);
-            Objects.Merge(data);
+            Items.MergeFromObject(data);
+            Objects.MergeFromObject(data);
 
             // Mark this item as having a reference since it exists in a processed container
             Items.MarkItemAsReferenced(data);
@@ -828,7 +828,7 @@ namespace ATT
         {
             // Merge all relevant dictionary info into the data
             Items.MergeInto(data);
-            Objects.MergeInto(data);
+            Objects.MergeSharedDataIntoObject(data);
 
             // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated
             Objects.PostProcessMergeInto(data);
@@ -2916,6 +2916,7 @@ namespace ATT
                         case Objects.Filters.Toy:
                         case Objects.Filters.Quest:
                         case Objects.Filters.Recipe:
+                        case Objects.Filters.Mount:
                             return;
                     }
 

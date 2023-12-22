@@ -794,6 +794,33 @@ namespace ATT
                     }
                 }
             }
+
+
+            /// <summary>
+            /// Merge the data into the item database.
+            /// NOTE: Only data containing an itemID will merge.<para/>
+            /// Specify conditional merge to skip creating an ItemDB entry if it does not already exist
+            /// </summary>
+            /// <param name="data">The data to merge into the item database.</param>
+            public static void MergeFromDB(IDictionary<string, object> data, bool conditionalMerge = false)
+            {
+                // TODO: This is just Crieve trying to make it more clear where the source of this information is coming from.
+                // I'd like to (at some point) make all information from ItemDB always attribute and information from objects be limited to context.
+                Merge(data, conditionalMerge);
+            }
+
+            /// <summary>
+            /// Merge the data into the item database.
+            /// NOTE: Only data containing an itemID will merge.<para/>
+            /// Specify conditional merge to skip creating an ItemDB entry if it does not already exist
+            /// </summary>
+            /// <param name="data">The data to merge into the item database.</param>
+            public static void MergeFromObject(IDictionary<string, object> data, bool conditionalMerge = false)
+            {
+                // TODO: This is just Crieve trying to make it more clear where the source of this information is coming from.
+                // I'd like to (at some point) make all information from ItemDB always attribute and information from objects be limited to context.
+                Merge(data, conditionalMerge);
+            }
             #endregion
 
             #region Merge Into (for merging item data back into an object)
