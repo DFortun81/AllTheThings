@@ -1,25 +1,9 @@
 -- App locals
 local appName, app = ...;
-local SearchForField, SearchForFieldContainer
-	= app.SearchForField, app.SearchForFieldContainer;
+local AssignChildren, SearchForField, SearchForFieldContainer
+	= app.AssignChildren, app.SearchForField, app.SearchForFieldContainer;
 local GetRelativeValue = app.GetRelativeValue;
 local UpdateParentProgress = app.UpdateParentProgress;
-
--- Temporary
-local function BuildGroups(parent)
-	local g = parent.g;
-	if g then
-		-- Iterate through the groups
-		for i=1,#g,1 do
-			-- Set the group's parent
-			local group = g[i];
-			group.parent = parent;
-
-			-- Build the groups
-			BuildGroups(group);
-		end
-	end
-end
 
 -- Implementation
 app:GetWindow("Missing Quests", {
@@ -163,7 +147,7 @@ app:GetWindow("Missing Quests", {
 					end
 					parent.g = filteredData;
 				end
-				BuildGroups(data);
+				AssignChildren(data);
 				data.OnUpdate = nil;
 			end,
 		};

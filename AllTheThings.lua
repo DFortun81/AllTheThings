@@ -7,7 +7,7 @@
 local appName, app = ...;
 
 local L = app.L;
-local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
+local AssignChildren, GetRelativeField, GetRelativeValue = app.AssignChildren, app.GetRelativeField, app.GetRelativeValue;
 
 -- Binding Localizations
 BINDING_HEADER_ALLTHETHINGS = L["TITLE"]
@@ -1159,20 +1159,6 @@ app.GetProgressText = GetProgressTextDefault;
 app.GetProgressTextDefault = GetProgressTextDefault;
 app.GetProgressTextRemaining = GetProgressTextRemaining;
 
-local function BuildGroups(parent)
-	local g = parent.g;
-	if g then
-		-- Iterate through the groups
-		local group;
-		for i=1,#g,1 do
-			-- Set the group's parent
-			group = g[i];
-			group.parent = parent;
-			BuildGroups(group);
-		end
-	end
-end
-app.BuildGroups = BuildGroups
 local function BuildSourceTextColorized(group)
 	local line = {}
 	local cap = 100
@@ -3177,7 +3163,7 @@ if GetAchievementNumCriteria then
 					for _,c in ipairs(quests) do
 						-- criteria inherit their achievement data ONLY when the achievement data is actually referenced... this is required for proper caching
 						NestObject(c, criteriaObject);
-						BuildGroups(c);
+						AssignChildren(c);
 						CacheFields(criteriaObject);
 						app.DirectGroupUpdate(c);
 						criteriaObject = app.CreateAchievementCriteria(uniqueID, {["achievementID"] = achievementID}, true);
@@ -3196,7 +3182,7 @@ if GetAchievementNumCriteria then
 				if c then
 					-- criteria inherit their achievement data ONLY when the achievement data is actually referenced... this is required for proper caching
 					NestObject(c, criteriaObject);
-					BuildGroups(c);
+					AssignChildren(c);
 					CacheFields(criteriaObject);
 					app.DirectGroupUpdate(c);
 					-- app.PrintDebug("Add-Crit",achievementID,uniqueID,"=>",c.hash)
@@ -3861,7 +3847,7 @@ local function ResolveSymlinkGroupAsync(group)
 		-- newly added group data needs to be checked again for further content to fill, since it will not have been recursively checked
 		-- on the initial pass due to the async nature
 		app.FillGroups(group);
-		BuildGroups(group);
+		AssignChildren(group);
 		-- auto-expand the symlink group
 		ExpandGroupsRecursively(group, true);
 		app.DirectGroupUpdate(group);
@@ -4692,7 +4678,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 
 		-- Only need to build/update groups from the top level
 		if topLevelSearch then
-			BuildGroups(group);
+			AssignChildren(group);
 			app.TopLevelUpdateGroup(group);
 		end
 	-- delete sub-groups if there are none
@@ -5321,7 +5307,7 @@ local function FillGroupsRecursiveAsync(group, FillData)
 	-- Adding the groups normally based on available-source priority
 	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter);
 	if #groups > 0 then
-		BuildGroups(group);
+		AssignChildren(group);
 		app.DirectGroupUpdate(group);
 		-- mark this group as being filled since it actually received filled content (unless it's ignored for being skipped)
 		if not ignoreSkip then
@@ -6857,7 +6843,7 @@ app.RecreateObject = function(t)
 	-- fill the copied Item's symlink if any
 	FillSymLinks(obj);
 	-- Build the Item's groups if any
-	BuildGroups(obj);
+	AssignChildren(obj);
 	-- Update the group while ignoring some visibility functionality
 	obj.collectibleAsCost = false
 	obj.collectibleAsUpgrade = false
@@ -7770,7 +7756,7 @@ local function TryPopulateQuestRewards(questObject)
 		end
 	end
 
-	BuildGroups(questObject);
+	AssignChildren(questObject);
 	-- Update the group directly
 	app.DirectGroupUpdate(questObject);
 end
@@ -11188,7 +11174,7 @@ app.CacheHeirlooms = function()
 					for _,heirloom in ipairs(item.g) do
 						NestObject(token, heirloom, true);
 					end
-					BuildGroups(token);
+					AssignChildren(token);
 				end
 			end
 		end
@@ -11201,7 +11187,7 @@ app.CacheHeirlooms = function()
 					for _,heirloom in ipairs(item.g) do
 						NestObject(token, heirloom, true);
 					end
-					BuildGroups(token);
+					AssignChildren(token);
 				end
 			end
 		end
@@ -16225,7 +16211,7 @@ local function BuildData(self)
 	local data = self.data;
 	if data then
 		-- app.PrintDebug("Window:BuildData",self.Suffix,data.text)
-		BuildGroups(data);
+		AssignChildren(data);
 	end
 end
 local backdrop = {
@@ -17706,7 +17692,7 @@ customWindowUpdates["AuctionData"] = function(self)
 	self.data.total = 0;
 	self.data.indent = 0;
 	self.data.back = 1;
-	BuildGroups(self.data);
+	AssignChildren(self.data);
 	app.TopLevelUpdateGroup(self.data);
 	self.data.visible = true;
 	self:BaseUpdate(true);
@@ -17771,7 +17757,7 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 			}),
 		});
 		self:SetData(header);
-		BuildGroups(self.data);
+		AssignChildren(self.data);
 		self.rawData = {};
 		local function RefreshBounties()
 			if #self.data.g > 1 and app.Settings:GetTooltipSetting("Auto:BountyList") then
@@ -17866,7 +17852,7 @@ customWindowUpdates["CosmicInfuser"] = function(self, force)
 					end
 				end
 				NestObjects(self.data, allmapchains);
-				BuildGroups(self.data);
+				AssignChildren(self.data);
 				self:Update(true);
 			end
 		end
@@ -19450,7 +19436,7 @@ customWindowUpdates["Random"] = function(self)
 				for i=#self.data.options,1,-1 do
 					tinsert(self.data.g, 1, self.data.options[i]);
 				end
-				BuildGroups(self.data);
+				AssignChildren(self.data);
 				if not no then self:Update(); end
 			end
 			self.Reroll = function(self)
@@ -19467,7 +19453,7 @@ customWindowUpdates["Random"] = function(self)
 		self.data.progress = 0;
 		self.data.total = 0;
 		self.data.indent = 0;
-		BuildGroups(self.data);
+		AssignChildren(self.data);
 		self:BaseUpdate(true);
 	end
 end;
@@ -19621,7 +19607,7 @@ customWindowUpdates["Sync"] = function(self)
 								});
 							end
 							data.g = g;
-							BuildGroups(data);
+							AssignChildren(data);
 							return true;
 						end,
 					},
@@ -19687,7 +19673,7 @@ customWindowUpdates["Sync"] = function(self)
 									["OnUpdate"] = app.AlwaysShowUpdate,
 								});
 							end
-							BuildGroups(data);
+							AssignChildren(data);
 							return true;
 						end,
 					},
@@ -20194,7 +20180,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				app.BuildSearchResponse_IgnoreUnavailableRecipes = nil;
 				data.indent = 0;
 				data.visible = true;
-				BuildGroups(data);
+				AssignChildren(data);
 				updates["Data"] = data;
 				-- only expand the list if this is the first time it is being generated
 				self.ExpandInfo = { Expand = true };
@@ -20931,7 +20917,7 @@ app.LoadDebugger = function()
 					for i=#self.data.options,1,-1 do
 						tinsert(self.data.g, 1, self.data.options[i]);
 					end
-					BuildGroups(self.data);
+					AssignChildren(self.data);
 					AfterCombatCallback(self.Update, self, true);
 				end
 			end
@@ -20992,7 +20978,7 @@ app.LoadDebugger = function()
 									for i,info in ipairs(row.ref.data) do
 										NestObject(self.data, CreateObject(info));
 									end
-									BuildGroups(self.data);
+									AssignChildren(self.data);
 									AfterCombatCallback(self.Update, self, true);
 									return true;
 								end,
@@ -21002,7 +20988,7 @@ app.LoadDebugger = function()
 							for i=#self.data.options,1,-1 do
 								tinsert(self.data.g, 1, self.data.options[i]);
 							end
-							BuildGroups(self.data);
+							AssignChildren(self.data);
 							AfterCombatCallback(self.Update, self, true);
 							return true;
 						end,
@@ -21216,7 +21202,7 @@ app.LoadDebugger = function()
 						["g"] = rawGroups
 					};
 					NestObject(self.data, CreateObject(info));
-					BuildGroups(self.data);
+					AssignChildren(self.data);
 					AfterCombatCallback(self.Update, self, true);
 					-- trigger the delayed backup
 					DelayedCallback(self.BackupData, 15, self);
@@ -21352,7 +21338,7 @@ app.LoadDebugger = function()
 			InitDebuggerData();
 			-- Ensure the current Zone is added when the Window is initialized
 			AddObject();
-			BuildGroups(self.data);
+			AssignChildren(self.data);
 		end
 
 		-- Update the window and all of its row data
@@ -21572,7 +21558,7 @@ app.ProcessAuctionData = function()
 	app.Sort(window.data.g, function(a, b)
 		return (b.priority or 0) > (a.priority or 0);
 	end);
-	BuildGroups(window.data);
+	AssignChildren(window.data);
 	app.TopLevelUpdateGroup(window.data);
 	window:Show();
 	window:Update();

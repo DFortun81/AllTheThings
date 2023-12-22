@@ -1,29 +1,13 @@
 -- App locals
 local appName, app = ...;
 local containsValue = app.containsValue;
-local CloneReference, ExpandGroupsRecursively, GetRelativeField, GetRelativeValue, MergeObject, SearchForField
-	= app.CloneReference, app.ExpandGroupsRecursively, app.GetRelativeField, app.GetRelativeValue, app.MergeObject, app.SearchForField;
+local AssignChildren, CloneReference, ExpandGroupsRecursively, GetRelativeField, GetRelativeValue, MergeObject, SearchForField
+	= app.AssignChildren, app.CloneReference, app.ExpandGroupsRecursively, app.GetRelativeField, app.GetRelativeValue, app.MergeObject, app.SearchForField;
 
 -- Global locals
 local ipairs, pairs, tinsert, getmetatable, setmetatable, tostring =
 	  ipairs, pairs, tinsert, getmetatable, setmetatable, tostring;
 local C_Map_GetMapInfo, C_Map_GetAreaInfo = C_Map.GetMapInfo, C_Map.GetAreaInfo;
-	  
--- Temporary
-local function BuildGroups(parent)
-	local g = parent.g;
-	if g then
-		-- Iterate through the groups
-		for i=1,#g,1 do
-			-- Set the group's parent
-			local group = g[i];
-			group.parent = parent;
-
-			-- Build the groups
-			BuildGroups(group);
-		end
-	end
-end
 
 -- Local variables
 local RefreshLocation;
@@ -191,7 +175,7 @@ local CachedMapData = setmetatable({}, {
 			end
 
 			-- Check to see completion...
-			BuildGroups(results);
+			AssignChildren(results);
 			cachedMapData[mapID] = results;
 			return results;
 		else

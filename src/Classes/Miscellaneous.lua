@@ -7,7 +7,8 @@ local pairs, string_format
 	= pairs, string.format;
 
 -- App locals
-local NestObjects, BuildGroups, Colorize, CreateObject, NestObject, SearchForFieldContainer, SearchForObject
+local AssignChildren = app.AssignChildren;
+local NestObjects, Colorize, CreateObject, NestObject, SearchForFieldContainer, SearchForObject
 
 
 -- Miscellaneous API Implementation
@@ -17,7 +18,6 @@ app.Modules.Miscellaneous = api;
 api.OnLoad = function()
 	NestObject = app.NestObject
 	NestObjects = app.NestObjects
-	BuildGroups = app.BuildGroups
 	Colorize = app.Modules.Color.Colorize
 	CreateObject = app.__CreateObject
 	SearchForFieldContainer = app.SearchForFieldContainer
@@ -57,7 +57,7 @@ local DynamicCategory_Nested = function(self)
 	local groups = app:BuildSearchResponse(self.dynamic, self.dynamic_value, not self.dynamic_withsubgroups);
 	NestObjects(self, groups);
 	-- reset indents and such
-	BuildGroups(self);
+	AssignChildren(self);
 	-- delay-sort the top level groups
 	app.SortGroupDelayed(self, "name");
 	-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
@@ -143,7 +143,7 @@ local DynamicCategory_Simple = function(self)
 			NestObject(self, header);
 		end
 		-- reset indents and such
-		BuildGroups(self);
+		AssignChildren(self);
 		-- delay-sort the top level groups
 		app.SortGroupDelayed(self, "name");
 		-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled

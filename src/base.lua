@@ -65,6 +65,19 @@ app.PrintDebugPrior = function(...)
 end
 
 -- API Functions
+local function AssignChildren(parent)
+	local g = parent.g;
+	if g then
+		-- Iterate through the groups
+		local group;
+		for i=1,#g,1 do
+			-- Set the group's parent
+			group = g[i];
+			group.parent = parent;
+			AssignChildren(group);
+		end
+	end
+end
 local function AssignFieldValue(group, field, value)
 	if group then
 		group[field] = value;
@@ -112,6 +125,7 @@ local function GetRelativeValue(group, field)
 		return group[field] or GetRelativeValue(group.sourceParent or group.parent, field);
 	end
 end
+app.AssignChildren = AssignChildren;
 app.AssignFieldValue = AssignFieldValue;
 app.CloneArray = CloneArray;
 app.CloneDictionary = CloneDictionary;

@@ -6,7 +6,7 @@
 -- App locals
 local appName, app = ...;
 local contains, containsAny, containsValue = app.contains, app.containsAny, app.containsValue;
-local CloneArray, CloneDictionary, CloneReference = app.CloneArray, app.CloneDictionary, app.CloneReference;
+local AssignChildren, CloneArray, CloneDictionary, CloneReference = app.AssignChildren, app.CloneArray, app.CloneDictionary, app.CloneReference;
 local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
 local L = app.L;
 
@@ -747,20 +747,6 @@ local achievementTooltipText = {
 	[19426] = "DPG",	-- Defense Protocol Gamma: Trial of the Champion (A)
 	[19425] = "DPG",	-- Defense Protocol Gamma: Trial of the Champion (H)
 };
-local function BuildGroups(parent)
-	local g = parent.g;
-	if g then
-		-- Iterate through the groups
-		for i=1,#g,1 do
-			-- Set the group's parent
-			local group = g[i];
-			group.parent = parent;
-
-			-- Build the groups
-			BuildGroups(group);
-		end
-	end
-end
 local function BuildSourceText(group, l, skip)
 	if group then
 		local parent = group.parent;
@@ -2966,7 +2952,7 @@ function app:GetDataCache()
 		}));
 
 		-- Now assign the parent hierarchy for this cache.
-		BuildGroups(rootData);
+		AssignChildren(rootData);
 
 		-- Determine how many tierID instances could be found
 		local tierCounter = 0;
@@ -6782,7 +6768,7 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 						for _,heirloom in ipairs(item.g) do
 							NestObject(token, heirloom, true);
 						end
-						BuildGroups(token);
+						AssignChildren(token);
 					end
 				end
 			end
@@ -6795,7 +6781,7 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 						for _,heirloom in ipairs(item.g) do
 							NestObject(token, heirloom, true);
 						end
-						BuildGroups(token);
+						AssignChildren(token);
 					end
 				end
 			end
@@ -11901,7 +11887,7 @@ function app:GetWindow(suffix, settings)
 		-- Phase 1: Rebuild, which prepares the data for row data generation (first pass filters checking)
 		-- NOTE: You can return true from the rebuild function to call the default on your new group data.
 		window.DefaultRebuild = function(self)
-			BuildGroups(self.data);
+			AssignChildren(self.data);
 		end
 		local onRebuild = settings.OnRebuild;
 		if onRebuild then
@@ -12751,7 +12737,7 @@ local function OnInitForPopout(self, group)
 		end
 	end
 
-	BuildGroups(self.data);
+	AssignChildren(self.data);
 	UpdateGroups(self.data, self.data.g);
 end
 function app:CreateMiniListForGroup(group)
@@ -13202,7 +13188,7 @@ app:GetWindow("Debugger", {
 		self.data.index = 0;
 		self.data.back = 1;
 		self.data.indent = 0;
-		BuildGroups(self.data);
+		AssignChildren(self.data);
 		UpdateWindow(self, true);
 	end
 });
