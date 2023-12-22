@@ -2958,7 +2958,7 @@ profession(COOKING, {
 });
 
 -- Cooking Item Database
-local itemDB = root(ROOTS.ItemDB, {});
+local itemDB = ItemDBConditional;
 
 -- Recipe Cache (for Validation)
 local recipeCache, recipeCacheU = {}, {};

@@ -5400,7 +5400,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 applyclassicphase(WRATH_PHASE_ONE, root(ROOTS.Professions, prof(INSCRIPTION)));
 
 -- Inscription Item Database
-local itemDB = root(ROOTS.ItemDB, {});
+local itemDB = ItemDBConditional;
 
 -- Recipe Cache (for Validation)
 local recipeCache, recipeCacheU = {}, {};

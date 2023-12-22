@@ -75,7 +75,7 @@ profession(FIRST_AID, {
 });
 
 -- First Aid Recipes
-local itemDB = root(ROOTS.ItemDB, {});
+local itemDB = ItemDBConditional;
 local itemrecipe = function(itemID, spellID, timeline, classicphase)
 	local o = { ["itemID"] = itemID };
 	if spellID and spellID > 0 then

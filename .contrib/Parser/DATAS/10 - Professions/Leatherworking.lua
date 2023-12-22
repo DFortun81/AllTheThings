@@ -9042,7 +9042,7 @@ profession(LEATHERWORKING, {
 });
 
 -- Leatherworking Item Database
-local itemDB = root(ROOTS.ItemDB, {});
+local itemDB = ItemDBConditional;
 
 -- Recipe Cache (for Validation)
 local recipeCache, recipeCacheU = {}, {};

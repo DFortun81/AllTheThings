@@ -198,7 +198,7 @@ profession(ENGINEERING, {
 });
 
 -- Gnomish Engineering Recipes
-local itemDB = root(ROOTS.ItemDB, {});
+local itemDB = ItemDBConditional;
 local itemrecipe = function(itemID, spellID)
 	local o = { ["itemID"] = itemID, ["spellID"] = spellID };
 	itemDB[itemID] = o;
