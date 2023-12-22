@@ -7,7 +7,7 @@
 local appName, app = ...;
 
 local L = app.L;
-local GetRelativeValue = app.GetRelativeValue;
+local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
 
 -- Binding Localizations
 BINDING_HEADER_ALLTHETHINGS = L["TITLE"]
@@ -1794,11 +1794,6 @@ end
 local function GetRelativeFieldInSet(group, field, set)
 	if group then
 		return set[group[field]] or GetRelativeFieldInSet(group.sourceParent or group.parent, field, set);
-	end
-end
-local function GetRelativeField(group, field, value)
-	if group then
-		return group[field] == value or GetRelativeField(group.sourceParent or group.parent, field, value);
 	end
 end
 

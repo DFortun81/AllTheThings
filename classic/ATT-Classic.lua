@@ -7,7 +7,7 @@
 local appName, app = ...;
 local contains, containsAny, containsValue = app.contains, app.containsAny, app.containsValue;
 local CloneArray, CloneDictionary, CloneReference = app.CloneArray, app.CloneDictionary, app.CloneReference;
-local GetRelativeValue = app.GetRelativeValue;
+local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
 local L = app.L;
 
 -- Binding Localizations
@@ -927,11 +927,7 @@ local function GetRelativeMap(group, currentMapID)
 	end
 	return currentMapID;
 end
-local function GetRelativeField(group, field, value)
-	if group then
-		return group[field] == value or GetRelativeField(group.parent, field, value);
-	end
-end
+
 local function GetDeepestRelativeValue(group, field)
 	if group then
 		return GetDeepestRelativeValue(group.parent, field) or group[field];

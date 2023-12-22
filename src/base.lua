@@ -102,6 +102,11 @@ local function CloneReference(group)
 	end
 	return setmetatable(clone, { __index = group });
 end
+local function GetRelativeField(group, field, value)
+	if group then
+		return group[field] == value or GetRelativeField(group.sourceParent or group.parent, field, value);
+	end
+end
 local function GetRelativeValue(group, field)
 	if group then
 		return group[field] or GetRelativeValue(group.sourceParent or group.parent, field);
@@ -111,6 +116,7 @@ app.AssignFieldValue = AssignFieldValue;
 app.CloneArray = CloneArray;
 app.CloneDictionary = CloneDictionary;
 app.CloneReference = CloneReference;
+app.GetRelativeField = GetRelativeField;
 app.GetRelativeValue = GetRelativeValue;
 
 -- Declare Event Handlers
