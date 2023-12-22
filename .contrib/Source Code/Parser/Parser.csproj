@@ -86,6 +86,7 @@
     <Compile Include="Export\Object Data\HeirloomData.cs" />
     <Compile Include="Export\Object Data\ItemData.cs" />
     <Compile Include="Export\Object Data\ItemSourceData.cs" />
+    <Compile Include="Export\Object Data\RecipeData.cs" />
     <Compile Include="Export\Object Data\MountData.cs" />
     <Compile Include="Export\Object Data\NPCData.cs" />
     <Compile Include="Export\Object Data\ObjectData.cs" />

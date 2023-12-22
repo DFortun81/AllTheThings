@@ -4,6 +4,7 @@ using NLua;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 
 namespace ATT
 {
@@ -174,7 +175,9 @@ namespace ATT
                                     if (recipeValuePair.Value is IDictionary<string, object> recipe)
                                     {
                                         recipe["recipeID"] = recipeValuePair.Key;
+                                        recipe["spellID"] = recipeValuePair.Key;
                                         Objects.MergeFromDB("recipeID", recipe);
+                                        Objects.MergeFromDB("spellID", recipe);    // This is super dumb, but it fixes situations like /att spellid:101508. Since its key is a spellID, not a recipeID, it doesn't find it.
                                     }
                                     else
                                     {
@@ -191,7 +194,13 @@ namespace ATT
                                 {
                                     if (o is IDictionary<string, object> recipe)
                                     {
-                                        Objects.MergeFromDB("recipeID", recipe);
+                                        if (recipe.TryGetValue("recipeID", out object recipeID) || recipe.TryGetValue("spellID", out recipeID))
+                                        {
+                                            recipe["recipeID"] = recipeID;
+                                            recipe["spellID"] = recipeID;
+                                            Objects.MergeFromDB("recipeID", recipe);
+                                            Objects.MergeFromDB("spellID", recipe);    // This is super dumb, but it fixes situations like /att spellid:101508. Since its key is a spellID, not a recipeID, it doesn't find it.
+                                        }
                                     }
                                     else
                                     {

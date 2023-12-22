@@ -565,6 +565,10 @@ namespace ATT
             if (!CheckTimeline(data))
                 return false;
 
+            // Merge all relevant Item Data into the global dictionaries after being validated
+            Items.MergeFromObject(data);
+            Objects.MergeFromObject(data);
+
             Validate_General(data);
 
             Validate_npc(data);
@@ -788,9 +792,6 @@ namespace ATT
                 CaptureForSOURCED(data, value.Key, value.Value);
             }
 
-            // Merge all relevant Item Data into the global dictionaries after being validated
-            Items.MergeFromObject(data);
-            Objects.MergeFromObject(data);
 
             // Mark this item as having a reference since it exists in a processed container
             Items.MarkItemAsReferenced(data);
