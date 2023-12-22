@@ -27,7 +27,7 @@ src\Modules\Events.lua
 src\Modules\RetrievingData.lua
 db\TBC\ExplorationDB.lua
 db\TBC\LocalizationDB.lua
-classic\Presets.lua
+db\Presets.lua
 src\Cache.lua
 lib\Audio.lua
 src\Classes\Filter Types.lua

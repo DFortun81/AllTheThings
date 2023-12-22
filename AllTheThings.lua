@@ -69,22 +69,6 @@ local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResult
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local TryColorizeName = app.TryColorizeName;
 
--- Add a Feader & Filter debugger
-setmetatable(app.FilterConstants, {
-	__index = function(t, key)
-		print("MISSING FilterConstant:", key);
-		rawset(t, key, -9999999999);
-		return -9999999999;
-	end
-});
-setmetatable(app.HeaderConstants, {
-	__index = function(t, key)
-		print("MISSING HeaderConstant:", key);
-		rawset(t, key, -9999999999);
-		return -9999999999;
-	end
-});
-
 -- Print/Debug/Testing Functions
 app.print = function(...)
 	print(L["TITLE"], ...);
