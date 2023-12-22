@@ -66,8 +66,18 @@ end
 CategoryDB = CreateDatabaseContainer("CategoryDB");
 FilterDB = CreateDatabaseContainer("FilterDB");
 FlightPathDB = CreateDatabaseContainer("FlightPathDB");
+-- ItemDBConditional contains a bunch of micro object modifications, but since we're using it everywhere, it is losing the item data due to what is known as "data chomping" with how we are using it.
+ItemDBConditional = CreateDatabaseContainer("ItemDBConditional", {
+	__index = function(t, key)
+		key = tonumber(key);
+		local item = { itemID = key };
+		rawset(t, key, item);
+		return item;
+	end,
+});
 ObjectDB = CreateDatabaseContainer("ObjectDB");
 RecipeDB = CreateDatabaseContainer("RecipeDB");
+RecipeDBConditional = RecipeDB;
 --[[
 -- Proof of Concept:
 -- If you assign new partial data to the object, it'll retain its previous data instead of discarding it.

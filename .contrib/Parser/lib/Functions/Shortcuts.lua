@@ -1395,24 +1395,14 @@ CRIEVES_SUPER_COOL_HEADER = createHeader({
 end)();
 
 do
--- ItemDBConditional contains a bunch of micro object modifications, but since we're using it everywhere, it is losing the item data due to what is known as "data chomping" with how we are using it.
-local itemDBConditional = CreateDatabaseContainer("ItemDBConditional", {
-	__index = function(t, key)
-		key = tonumber(key);
-		local item = { itemID = key };
-		rawset(t, key, item);
-		return item;
-	end,
-});
-ItemDBConditional = itemDBConditional;
-
-local CurrentProfessionID, recipeDB = ALCHEMY;
+local itemDBConditional = ItemDBConditional;
+local CurrentProfessionID = ALCHEMY;
 local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill)
 	-- Cache the object.
 	local object;
 	if itemID == 0 then
 		-- The RecipeDB table isn't setup to always return a value.
-		object = recipeDB[recipeID];
+		object = RecipeDB[recipeID];
 	else
 		-- Cache the object as an item
 		object = itemDBConditional[itemID];
@@ -1445,7 +1435,7 @@ local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill
 	local originalRequireSkill = object.requireSkill;
 	if not originalRequireSkill then
 		if itemID ~= 0 then
-			recipeDB[recipeID].requireSkill = requireSkill;
+			RecipeDB[recipeID].requireSkill = requireSkill;
 		end
 		object.requireSkill = requireSkill;
 	elseif originalRequireSkill ~= requireSkill then
@@ -1454,7 +1444,7 @@ local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill
 			print("Recipe", recipeID, "requireSkill changed", originalRequireSkill, ">", requireSkill);
 		else
 			print("Item", itemID, "requireSkill changed", originalRequireSkill, ">", requireSkill);
-			recipeDB[recipeID].requireSkill = requireSkill;
+			RecipeDB[recipeID].requireSkill = requireSkill;
 		end
 		object.requireSkill = requireSkill;
 	end
@@ -1472,21 +1462,10 @@ local ItemRecipeHelper = function(itemID, recipeID, unobtainStatus, requireSkill
 	end
 	return object;
 end
-
-local recipeDBConditional = CreateDatabaseContainer("RecipeDB", {
-	__index = function(t, key)
-		key = tonumber(key);
-		local recipe = { };
-		rawset(t, key, recipe);
-		return recipe;
-	end,
-});
 GetRecipeHelperForProfession = function(professionID)
-	recipeDB = recipeDBConditional;
 	CurrentProfessionID = professionID;
 	return ItemRecipeHelper;
 end
-RecipeDBConditional = recipeDBConditional;
 
 
 --[[
