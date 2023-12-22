@@ -1160,7 +1160,9 @@ local function ReapplyExpand(g, g2)
 		end
 	end
 end
+app.ExpandGroupsRecursively = ExpandGroupsRecursively;
 app.MergeClone = MergeClone;
+app.MergeObject = MergeObject;
 
 local ResolveSymbolicLink;
 (function()
@@ -9973,7 +9975,7 @@ function AllTheThings_MinimapButtonOnClick(self, button)
 		-- Left Button
 		if IsShiftKeyDown() then
 			app.RefreshCollections();
-		elseif IsAltKeyDown() or IsControlKeyDown() then
+		elseif app.ToggleMiniListForCurrentZone and (IsAltKeyDown() or IsControlKeyDown()) then
 			app.ToggleMiniListForCurrentZone();
 		else
 			app.ToggleMainList();
@@ -10481,7 +10483,6 @@ local function StopMovingOrSizing(self)
 	if self.isMoving then
 		self:StopMovingOrSizing();
 		self.isMoving = false;
-		self:RecordSettings();
 	end
 end
 local function StartMovingOrSizing(self)
@@ -10499,6 +10500,7 @@ local function StartMovingOrSizing(self)
 					self:Refresh();
 					coroutine.yield();
 				end
+				self:RecordSettings();
 			end);
 		else
 			self:StartMoving();
@@ -11319,6 +11321,9 @@ end
 
 -- Window Creation
 app.Windows = {};
+local doNothing = function()
+	-- Do nothing
+end;
 local defaultNoEntriesRow = {
 	text = "No data was found.",
 	preview = app.asset("Discord_2_128"),
@@ -11326,6 +11331,8 @@ local defaultNoEntriesRow = {
 };
 local AllWindowSettings;
 local function ApplySettingsForWindow(self, windowSettings)
+	local oldRecordSettings = self.RecordSettings;
+	self.RecordSettings = doNothing;
 	if windowSettings.scale then self:SetScale(windowSettings.scale); end
 	if windowSettings.movable then
 		self:ClearAllPoints();
@@ -11341,8 +11348,18 @@ local function ApplySettingsForWindow(self, windowSettings)
 	self:SetMovable(windowSettings.movable);
 	self:SetResizable(windowSettings.resizable);
 	self:SetVisible(windowSettings.visible);
+	if windowSettings.backdrop then
+		self:SetBackdrop(windowSettings.backdrop);
+	end
+	if windowSettings.backdropColor then
+		self:SetBackdropColor(unpack(windowSettings.backdropColor));
+	end
+	if windowSettings.borderColor then
+		self:SetBackdropBorderColor(unpack(windowSettings.borderColor));
+	end
+	self.RecordSettings = oldRecordSettings;
 end
-local function BuildSettingsForWindow(self, windowSettings)
+local function BuildSettingsForWindow(self, windowSettings, isForDefaults)
 	local scale = self:GetScale();
 	if scale then
 		windowSettings.scale = scale;
@@ -11364,6 +11381,15 @@ local function BuildSettingsForWindow(self, windowSettings)
 	windowSettings.visible = not not self:IsVisible();
 	windowSettings.movable = not not self:IsMovable();
 	windowSettings.resizable = not not self:IsResizable();
+	if isForDefaults then
+		windowSettings.backdrop = backdrop;
+		windowSettings.backdropColor = { 0, 0, 0, 1 };
+		windowSettings.borderColor = { 1, 1, 1, 1 };
+	else
+		windowSettings.backdrop = self:GetBackdrop();
+		windowSettings.backdropColor = { self:GetBackdropColor() };
+		windowSettings.borderColor = { self:GetBackdropBorderColor() };
+	end
 end
 local function ClearSettingsForWindow(self)
 	if not AllWindowSettings then return; end
@@ -11506,10 +11532,6 @@ local function UpdateWindow(self, force, trigger)
 		return true;
 	end
 end
-local function UpdateWindowColor(self, suffix)
-	self:SetBackdropBorderColor(1, 1, 1, 1);
-	self:SetBackdropColor(0, 0, 0, 1);
-end
 if app.Debugging then
 function app:RedrawWindows(source)
 	app:StartATTCoroutine("RedrawWindows", function()
@@ -11569,11 +11591,6 @@ function app:UpdateWindows(source, force, trigger)
 		end
 	end
 end
-end
-function app:UpdateWindowColors()
-	for suffix, window in pairs(app.Windows) do
-		UpdateWindowColor(window, suffix);
-	end
 end
 
 local refreshDataCooldown = 5;
@@ -11807,13 +11824,13 @@ function app:GetWindow(suffix, settings)
 		end
 
 		-- Whether or not to debug things
-		local debugging = settings.Debugging;--app.Debugging and window.Suffix == "Prime";
+		local debugging = settings.Debugging;
 
 		-- Load / Save, which allows windows to keep track of key pieces of information.
 		window.ClearSettings = ClearSettingsForWindow;
 		if not settings.IgnoreSettings then
 			local defaults = {};
-			BuildSettingsForWindow(window, defaults);
+			BuildSettingsForWindow(window, defaults, true);
 			if settings.Defaults then
 				for key,value in pairs(settings.Defaults) do
 					defaults[key] = value;
@@ -11844,9 +11861,6 @@ function app:GetWindow(suffix, settings)
 				end
 			end
 		else
-			local doNothing = function()
-				-- Do nothing
-			end;
 			window.Load = settings.OnLoad or doNothing;
 			window.RecordSettings = doNothing;
 			window.Save = settings.OnSave or doNothing;
@@ -12107,7 +12121,6 @@ function app:GetWindow(suffix, settings)
 		container:SetPoint("TOPLEFT", window, "TOPLEFT", 2, -6);
 		container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
 		window.Container = container;
-		UpdateWindowColor(window, suffix);
 		container.rows = {};
 		container:Show();
 
@@ -12222,10 +12235,26 @@ function app:GetWindow(suffix, settings)
 				_G["SLASH_" .. commandRoot .. i] = "/" .. command;
 			end
 		end
-		if settings.IsDynamicCategory then
-			window.IsDynamicCategory = settings.IsDynamicCategory;
-		end
+		window.IsDynamicCategory = settings.IsDynamicCategory;
+		window.IsTopLevel = settings.IsTopLevel;
 		LoadSettingsForWindow(window);
+		
+		-- Replace some functions.
+		local oldSetBackdropColor = window.SetBackdropColor;
+		window.SetBackdropColor = function(self, ...)
+			oldSetBackdropColor(self, ...);
+			self:RecordSettings();
+		end
+		local oldSetBackdropBorderColor = window.SetBackdropBorderColor;
+		window.SetBackdropBorderColor = function(self, ...)
+			oldSetBackdropBorderColor(self, ...);
+			self:RecordSettings();
+		end
+		local oldStopMovingOrSizing = window.StopMovingOrSizing;
+		window.StopMovingOrSizing = function(self, ...)
+			oldStopMovingOrSizing(self, ...);
+			self:RecordSettings();
+		end
 	end
 	return window;
 end
@@ -12852,6 +12881,7 @@ app:GetWindow("Prime", {
 	Silent = true,
 	AllowCompleteSound = true,
 	SettingsName = "Main List",
+	IsTopLevel = true,
 	Defaults = {
 		["y"] = 20,
 		["x"] = 0,
@@ -12907,270 +12937,7 @@ app:GetWindow("Prime", {
 
 
 
-local function RefreshLocationCoroutine()
-	-- Wait a second, will ya? The position detection is BAD.
-	for i=1,30,1 do coroutine.yield(); end
 
-	-- Acquire the new map ID.
-	local mapID = app.GetCurrentMapID();
-	while not mapID do
-		coroutine.yield();
-		mapID = app.GetCurrentMapID();
-	end
-	app.CurrentMapID = mapID;
-	local window = app:GetWindow("CurrentInstance");
-	if window then window:SetMapID(mapID); end
-end
-local function SortForMiniList(a,b)
-	-- If either object doesn't exist
-	if a then
-		if not b then
-			return true;
-		end
-	elseif b then
-		return false;
-	else
-		-- neither a or b exists, equality returns false
-		return false;
-	end
-
-	if a.isRaid then
-		if not b.isRaid then
-			return true;
-		end
-	elseif b.isRaid then
-		return false;
-	elseif b.maps or b.mapID then
-		if not (a.maps or a.mapID) then
-			return true;
-		end
-	elseif a.maps then
-		return false;
-	end
-
-	-- Any two similar-type groups with text
-	return tostring(a.name or a.text) < tostring(b.name or b.text);
-end
-local function RefreshLocation()
-	app:StartATTCoroutine("RefreshLocation", RefreshLocationCoroutine);
-end
-
-local CachedMapData = setmetatable({}, {
-	__index = function(cachedMapData, mapID)
-		local results = SearchForField("mapID", mapID);
-		if #results > 0 then
-			-- Simplify the returned groups
-			local groups = {};
-			local headers = setmetatable({}, {
-				__index = function(t, headerID)
-					for i=1,#groups,1 do
-						local o = groups[i];
-						if o.headerID == headerID then
-							if not o.g then o.g = {}; end
-							t[headerID] = o;
-							return o;
-						end
-					end
-
-					local o = app.CreateNPC(headerID);
-					tinsert(groups, o);
-					t[headerID] = o;
-					o.g = {};
-					return o;
-				end
-			});
-			local function MergeIntoHeader(headerID, o)
-				MergeObject(headers[headerID].g, o);
-			end
-
-			local header = {};
-			header.mapID = mapID;
-			header.g = groups;
-			for i, group in ipairs(results) do
-				local clone = {};
-				for key,value in pairs(group) do
-					if key == "maps" then
-						local maps = {};
-						for i,mapID in ipairs(value) do
-							tinsert(maps, mapID);
-						end
-						clone[key] = maps;
-					elseif key == "g" then
-						local g = {};
-						for i,o in ipairs(value) do
-							o = CloneReference(o);
-							ExpandGroupsRecursively(o, false);
-							tinsert(g, o);
-						end
-						clone[key] = g;
-					else
-						clone[key] = value;
-					end
-				end
-				local c = GetRelativeValue(group, "c");
-				if c then clone.c = c; end
-				local r = GetRelativeValue(group, "r");
-				if r then clone.r = r; end
-				local lvl = GetRelativeValue(group, "lvl");
-				if lvl then clone.lvl = lvl; end
-				setmetatable(clone, getmetatable(group));
-
-				local key = group.key;
-				if (key == "mapID" or key == "instanceID") or ((key == "headerID" or key == "npcID") and (group.maps and (mapID < 0 and contains(group.maps, mapID)))) then
-					header.key = key;
-					header[key] = group[key];
-					MergeObject({header}, clone);
-				elseif key == "criteriaID" then
-					clone.achievementID = group.achievementID;
-					MergeIntoHeader(app.HeaderConstants.ACHIEVEMENTS, clone);
-				elseif key == "achievementID" then
-					MergeIntoHeader(app.HeaderConstants.ACHIEVEMENTS, clone);
-				elseif key == "questID" then
-					MergeIntoHeader(app.HeaderConstants.QUESTS, clone);
-				elseif key == "factionID" then
-					MergeIntoHeader(app.HeaderConstants.FACTIONS, clone);
-				elseif key == "explorationID" then
-					MergeIntoHeader(app.HeaderConstants.EXPLORATION, clone);
-				elseif key == "flightPathID" then
-					MergeIntoHeader(app.HeaderConstants.FLIGHT_PATHS, clone);
-				elseif key == "itemID" or key == "spellID" then
-					if GetRelativeField(group, "headerID", app.HeaderConstants.ZONE_DROPS) then
-						MergeIntoHeader(app.HeaderConstants.ZONE_DROPS, clone);
-					else
-						local requireSkill = GetRelativeValue(group, "requireSkill");
-						if requireSkill then
-							MergeObject(groups, app.CreateProfession(requireSkill, { g = { clone } }));
-						else
-							local headerID = GetRelativeValue(group, "headerID");
-							if headerID then
-								MergeIntoHeader(headerID, clone);
-							else
-								MergeObject(groups, clone);
-							end
-						end
-					end
-				elseif key == "headerID" then
-					MergeObject(groups, clone);
-				else
-					local headerID = GetRelativeValue(group, "headerID");
-					if headerID then
-						MergeIntoHeader(headerID, clone);
-					else
-						MergeObject(groups, clone);
-					end
-				end
-			end
-
-			-- Swap out the map data for the header.
-			results = ((results.classID and app.CreateCharacterClass) or (header.key == "instanceID" and app.CreateInstance) or app.CreateMap)(header[header.key], header);
-			ExpandGroupsRecursively(results, true);
-			results.visible = true;
-			results.expanded = true;
-			results.mapID = mapID;
-			results.back = 1;
-			results.indent = 0;
-
-			local difficultyID = (IsInInstance() and select(3, GetInstanceInfo())) or (EJ_GetDifficulty and EJ_GetDifficulty()) or 0;
-			if difficultyID ~= 0 then
-				for _,row in ipairs(header.g) do
-					if row.difficultyID or row.difficulties then
-						if (row.difficultyID or -1) == difficultyID or (row.difficulties and containsValue(row.difficulties, difficultyID)) then
-							if not row.expanded then ExpandGroupsRecursively(row, true, true); expanded = true; end
-						elseif row.expanded then
-							ExpandGroupsRecursively(row, false, true);
-						end
-					end
-				end
-			end
-
-			-- Sort the list, but not for instances.
-			if not results.instanceID then
-				app.Sort(groups, SortForMiniList);
-			end
-
-			-- Check to see completion...
-			BuildGroups(results);
-			cachedMapData[mapID] = results;
-			return results;
-		else
-			-- If we don't have any map data on this area, report it to the chat window.
-			print("No map found for this location ", app.GetMapName(mapID), " [", mapID, "]");
-
-			local mapInfo = C_Map_GetMapInfo(mapID);
-			if mapInfo then
-				local mapPath = mapInfo.name or ("Map ID #" .. mapID);
-				mapID = mapInfo.parentMapID;
-				while mapID do
-					mapInfo = C_Map_GetMapInfo(mapID);
-					if mapInfo then
-						mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " > " .. mapPath;
-						mapID = mapInfo.parentMapID;
-					else
-						break;
-					end
-				end
-				print("Path: ", mapPath);
-			end
-			print("Please report this to the ATT Discord! Thanks! ", app.Version);
-		end
-	end
-});
-app:GetWindow("CurrentInstance", {
-	parent = UIParent,
-	Silent = true,
-	AllowCompleteSound = true,
-	SettingsName = "Mini List",
-	Defaults = {
-		["y"] = 0,
-		["x"] = 0,
-		["scale"] = 0.7,
-		["width"] = 360,
-		["height"] = 176,
-		["visible"] = true,
-		["point"] = "BOTTOMRIGHT",
-		["relativePoint"] = "BOTTOMRIGHT",
-	},
-	Commands = {
-		"attmini",
-		"attminilist",
-	},
-	OnInit = function(self, handlers)
-		app.ToggleMiniListForCurrentZone = function() self:Toggle(); end;
-
-		local delayedUpdate = function()
-			self:DelayedUpdate(true);
-		end;
-		handlers.QUEST_TURNED_IN = delayedUpdate;
-		handlers.QUEST_LOG_UPDATE = delayedUpdate;
-		handlers.ZONE_CHANGED = RefreshLocation;
-		handlers.ZONE_CHANGED_INDOORS = RefreshLocation;
-		handlers.ZONE_CHANGED_NEW_AREA = RefreshLocation;
-		handlers.PLAYER_DIFFICULTY_CHANGED = function()
-			wipe(CachedMapData);
-			self:Rebuild();
-		end
-		self.SetMapID = function(self, mapID)
-			if mapID ~= self.mapID then
-				self.mapID = mapID;
-				self:Rebuild();
-			end
-		end
-	end,
-	OnLoad = function(self, settings)
-		self:RegisterEvent("ZONE_CHANGED");
-		self:RegisterEvent("ZONE_CHANGED_INDOORS");
-		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
-		pcall(self.RegisterEvent, self, "PLAYER_DIFFICULTY_CHANGED");
-		self:SetMapID(settings.mapID or app.CurrentMapID or app.GetCurrentMapID());
-		RefreshLocation();
-	end,
-	OnSave = function(self, settings)
-		settings.mapID = self.mapID;
-	end,
-	OnRebuild = function(self)
-		self.data = CachedMapData[self.mapID];
-	end,
-});
 
 
 -- Uncomment this section if you need to enable Debugger:
@@ -14198,7 +13965,6 @@ app.events.ADDON_LOADED = function(addonName)
 		end
 		_G["AllTheThingsAD"] = AllTheThingsAD;
 	end
-	app:UpdateWindowColors();
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
 		type = "launcher",
 		icon = app.asset("logo_32x32"),
@@ -14608,6 +14374,14 @@ app.events.VARIABLES_LOADED = function()
 		if not windowSettings then
 			windowSettings = {};
 			savedVariables.Windows = windowSettings;
+		end
+		
+		-- Rename the old mini list settings container.
+		local oldMiniListData = windowSettings.CurrentInstance;
+		if oldMiniListData then
+			print("Found old Mini List Data settings");
+			windowSettings.CurrentInstance = nil;
+			windowSettings.MiniList = oldMiniListData;
 		end
 		LoadSettingsForWindows(windowSettings);
 

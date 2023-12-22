@@ -51,6 +51,7 @@ src\UI\Hidden Achievement Triggers.lua
 src\UI\Hidden Quest Triggers.lua
 src\UI\Illusions.lua
 src\UI\Maps.lua
+src\UI\Mini List.lua
 src\UI\Missing Quests.lua
 src\UI\Mounts.lua
 src\UI\Never Implemented.lua

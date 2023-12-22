@@ -2846,18 +2846,21 @@ end
 local doNothing = function() end;
 local WindowManager = {
 	OnRefresh = function(self)
-		local keys,sortedList = {},{};
+		local keys,sortedList,topKeys = {},{},{};
 		for suffix,window in pairs(app.Windows) do
-			keys[suffix] = window;
+			if window.IsTopLevel then
+				tinsert(topKeys, suffix);
+			else
+				keys[suffix] = window;
+			end
 		end
-		keys.Prime = nil;
-		keys.CurrentInstance = nil;
 		for suffix,window in pairs(keys) do
 			tinsert(sortedList, suffix);
 		end
 		app.Sort(sortedList, app.SortDefaults.Text);
-		tinsert(sortedList, 1, "CurrentInstance");
-		tinsert(sortedList, 1, "Prime");
+		for i,suffix in ipairs(topKeys) do
+			tinsert(sortedList, 1, suffix);
+		end
 		local j = 1;
 		for i,suffix in ipairs(sortedList) do
 			local window = app.Windows[suffix];
