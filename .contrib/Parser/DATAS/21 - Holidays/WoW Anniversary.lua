@@ -1218,7 +1218,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 	n(WOW_ANNIVERSARY_FIFTEEN, bubbleDownSelf({ ["timeline"] = { "added 8.2.5.31958" } },{
 		m(1537, {	-- Alterac Valley
 			["icon"] = 236711,	-- Alterac Valley
-			["maps"] = { HILLSBRAD_FOOTHILLS },
 			["groups"] = {
 				ach(13928, {	-- Alterac Valley of Olde (A)
 					["races"] = ALLIANCE_ONLY,

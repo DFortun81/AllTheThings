@@ -7584,8 +7584,10 @@ app.BaseQuest = app.BaseObjectFields(questFields, "BaseQuest");
 -- These are Items rewarded by WQs which are treated as currency
 -- other Items which are 'costs' will not be excluded by the "WorldQuestsList:Currencies" setting
 local WorldQuestCurrencyItems = {
+	[208067] = true,	-- Plump Dreamseed
 	[190189] = true,	-- Sandworn Relic
 	[163036] = true,	-- Polished Pet Charms
+	[151568] = true,	-- Primal Sargerite
 	[116415] = true,	-- Shiny Pet Charms
 };
 -- Will attempt to populate the rewards of the quest object into itself or request itself to be loaded
