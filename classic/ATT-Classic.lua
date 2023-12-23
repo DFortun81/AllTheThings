@@ -36,8 +36,8 @@ BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L["REROLL_RANDOM"]
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
 local C_DateAndTime_GetServerTimeLocal
 	= C_DateAndTime.GetServerTimeLocal;
-local ipairs, pairs, rawset, rawget, pcall, tinsert, tremove, sformat
-	= ipairs, pairs, rawset, rawget, pcall, tinsert, tremove, string.format;
+local ipairs, pairs, rawset, rawget, pcall, tinsert, tremove, math_floor, sformat
+	= ipairs, pairs, rawset, rawget, pcall, tinsert, tremove, math.floor, string.format;
 local C_Map_GetMapInfo, C_Map_GetAreaInfo = C_Map.GetMapInfo, C_Map.GetAreaInfo;
 local C_Map_GetPlayerMapPosition = C_Map.GetPlayerMapPosition;
 local GetAchievementInfo = _G["GetAchievementInfo"];
@@ -308,7 +308,7 @@ for i=1,MAX_CREATURES_PER_ENCOUNTER do
 	model:SetCamDistanceScale(1.7);
 	model:SetDisplayInfo(987);
 	model:SetFacing(MODELFRAME_DEFAULT_ROTATION);
-	fi = math.floor(i / 2);
+	fi = math_floor(i / 2);
 	model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - 0.3);
 	if model.SetDepth then
 		model:SetDepth(i);
@@ -363,7 +363,7 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 						model:SetDisplayInfo(displayInfos[i]);
 						model:SetCamDistanceScale(scale);
 						model:SetFacing(rotation);
-						fi = math.floor(i / 2);
+						fi = math_floor(i / 2);
 						model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - (ratio * 0.15));
 						model:Show();
 					end
@@ -643,13 +643,13 @@ local function GetAddedWithPatchString(awp, addedBack)
 		end
 		if addedBack then formatString = formatString .. "_BACK"; end
 		return sformat(L[formatString .. "_WITH_PATCH_FORMAT"],
-		math.floor(awp / 10000) .. "." .. (math.floor(awp / 100) % 10) .. "." .. (awp % 10));
+		math_floor(awp / 10000) .. "." .. (math_floor(awp / 100) % 10) .. "." .. (awp % 10));
 	end
 end
 local function GetRemovedWithPatchString(rwp)
 	if rwp then
 		rwp = tonumber(rwp);
-		return sformat(L.REMOVED_WITH_PATCH_FORMAT, math.floor(rwp / 10000) .. "." .. (math.floor(rwp / 100) % 10) .. "." .. (rwp % 10));
+		return sformat(L.REMOVED_WITH_PATCH_FORMAT, math_floor(rwp / 10000) .. "." .. (math_floor(rwp / 100) % 10) .. "." .. (rwp % 10));
 	end
 end
 app.GetProgressText = GetProgressTextDefault;
@@ -7016,7 +7016,7 @@ local simplifyExplorationData = function()
 		for i,coord in ipairs(coords) do
 			local mapID = coord[3];
 			if mapID then
-				local x, y = math.floor(coord[1] * 100), math.floor(coord[2] * 100);
+				local x, y = math_floor(coord[1] * 100), math_floor(coord[2] * 100);
 				local hash = x .. ":" .. y;
 				local mapData = allMapData[mapID];
 				if not mapData then
@@ -7620,8 +7620,8 @@ local AlternateDataTypes = {
 		return { text = GetCategoryInfo(id) };
 	end,
 	["crit"] = function(id)
-		local ach = math.floor(id);
-		local crit = math.floor(100 * (id - ach) + 0.005);
+		local ach = math_floor(id);
+		local crit = math_floor(100 * (id - ach) + 0.005);
 		return { text = GetAchievementCriteriaInfo(ach, crit) };
 	end,
 	["d"] = function(id)
@@ -7629,8 +7629,8 @@ local AlternateDataTypes = {
 		return { text = name, icon = textureFilename };
 	end,
 	["df"] = function(id)
-		local aid = math.floor(id);
-		local hid = math.floor(10000 * (id - aid) + 0.005);
+		local aid = math_floor(id);
+		local hid = math_floor(10000 * (id - aid) + 0.005);
 		id = app.FactionID == Enum.FlightPathFaction.Alliance and tonumber(aid) or tonumber(hid);
 		local name, _, _, _, _, _, _, _, _, _, textureFilename = GetLFGDungeonInfo(id);
 		return { text = name, icon = textureFilename };
@@ -8025,8 +8025,8 @@ local criteriaFuncs = {
     end,
     ["factionID"] = function(v)
 		-- v = factionID.standingRequiredToLock
-		local factionID = math.floor(v + 0.00001);
-		local lockStanding = math.floor((v - factionID) * 10 + 0.00001);
+		local factionID = math_floor(v + 0.00001);
+		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
         local standing = select(3, GetFactionInfoByID(factionID)) or 4;
 		--app.print("Check Faction", factionID,  "Standing (", standing, ") is locked @ (", lockStanding, ")");
 		return standing >= lockStanding;
@@ -8672,7 +8672,6 @@ end)();
 
 -- Tier Lib
 (function()
-	local math_floor = math.floor;
 	local baseTier = {
 		__index = function(t, key)
 			if key == "key" then
@@ -9550,7 +9549,7 @@ end });
 local function AddTomTomWaypointCache(coord, group)
 	local mapID = coord[3];
 	if mapID then
-		__TomTomWaypointCache[mapID][math.floor(coord[1] * 10)][math.floor(coord[2] * 10)][group.key .. ":" .. group[group.key]] = group;
+		__TomTomWaypointCache[mapID][math_floor(coord[1] * 10)][math_floor(coord[2] * 10)][group.key .. ":" .. group[group.key]] = group;
 	else
 		print("Missing mapID for", group.text, coord[1], coord[2], mapID);
 	end
@@ -9642,7 +9641,7 @@ local function AddTomTomWaypoint(group)
 									if count > 1 and group.coords and #group.coords == count then
 										for i=count,1,-1 do
 											local coord = group.coords[i];
-											if coord[3] == mapID and math.floor(coord[1] * 10) == x and math.floor(coord[2] * 10) == y then
+											if coord[3] == mapID and math_floor(coord[1] * 10) == x and math_floor(coord[2] * 10) == y then
 												creatureID = group.qgs[i];
 												break;
 											end
@@ -9659,7 +9658,7 @@ local function AddTomTomWaypoint(group)
 									if count > 1 and group.coords and #group.coords == count then
 										for i=count,1,-1 do
 											local coord = group.coords[i];
-											if coord[3] == mapID and math.floor(coord[1] * 10) == x and math.floor(coord[2] * 10) == y then
+											if coord[3] == mapID and math_floor(coord[1] * 10) == x and math_floor(coord[2] * 10) == y then
 												creatureID = group.crs[i];
 												break;
 											end
@@ -9888,7 +9887,7 @@ local function CreateMinimapButton()
 			x = math.max(-width, math.min(cos*(math.sqrt(2*(width)^2)-rounding), width))
 			y = math.max(-height, math.min(sin*(math.sqrt(2*(height)^2)-rounding), height))
 		end
-		self:SetPoint("CENTER", "Minimap", "CENTER", -math.floor(x), math.floor(y));
+		self:SetPoint("CENTER", "Minimap", "CENTER", -math_floor(x), math_floor(y));
 	end
 	local update = function(self)
 		local w, x = GetCursorPosition();
@@ -10635,7 +10634,7 @@ local function RowOnEnter(self)
 					str = "";
 				end
 				GameTooltip:AddDoubleLine(j == 0 and "Coordinates" or " ",
-					str.. GetNumberWithZeros(math.floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math.floor(y * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
+					str.. GetNumberWithZeros(math_floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math_floor(y * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
 				j = j + 1;
 				if j > 8 then
 					break;
@@ -10644,8 +10643,8 @@ local function RowOnEnter(self)
 		end
 		if reference.coord and app.Settings:GetTooltipSetting("Coordinates") then
 			GameTooltip:AddDoubleLine("Coordinate",
-				GetNumberWithZeros(math.floor(reference.coord[1] * 10) * 0.1, 1) .. ", " ..
-				GetNumberWithZeros(math.floor(reference.coord[2] * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
+				GetNumberWithZeros(math_floor(reference.coord[1] * 10) * 0.1, 1) .. ", " ..
+				GetNumberWithZeros(math_floor(reference.coord[2] * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
 		end
 		if reference.providers then
 			local counter = 0;
