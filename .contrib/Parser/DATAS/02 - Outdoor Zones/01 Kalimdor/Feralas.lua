@@ -1597,7 +1597,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i",   9266 },	-- Woodpaw Battle Plans
 					},
 					["sourceQuest"] = 2902,	-- Woodpaw Investigation
-					["coord"] = { 71.6, 55.9, FELWOOD },
+					["coord"] = { 71.6, 55.9, FERALAS },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 39,
