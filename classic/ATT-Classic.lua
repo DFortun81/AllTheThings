@@ -2983,80 +2983,145 @@ function app:GetDataCache()
 end
 
 -- Tooltip Functions
-local AUTHOR = {
-	["Player-76-0895E23B"] = true,		-- Crieve-Sargeras
-	["Player-4372-0000390A"] = true,	-- Crieve-Atiesh
-	["Player-5813-01CEF978"] = true,	-- Crieve-Wild Growth (SOD)
+local PLAYER_TOOLTIPS = {
+	["Player-4647-031D0890"] = function(self, target)
+		local leftSide = _G[self:GetName() .. "TextLeft1"];
+		if leftSide then leftSide:SetText("|cff665a2c" .. UnitName(target) .. " the Time-Loser|r"); end
+		local rightSide = _G[self:GetName() .. "TextRight2"];
+		if rightSide then rightSide:SetText(GetCollectionIcon(0)); end
+		self:AddLine("This scumbag abused an auto-invite addon to steal the Time-Lost Proto Drake from a person that had them on their friends list. ATT has deemed this unacceptable behaviour and will forever stain this player's reputation so long as they remain on the server.", 0.4, 0.8, 1, true);
+	end,
 };
-local EXTERMINATOR = {
-	["Player-4372-00B131BB"] = true,	-- Aivet
-	["Player-4372-004A0418"] = true,	-- Jubilee
-	["Player-4372-00273DCA"] = true,	-- Havadin
-	["Player-4372-00DED426"] = true,	-- Krieve
-	["Player-4372-00862D32"] = true,	-- Aethbric
-	["Player-4372-0128B376"] = true,	-- Alizewsaur
-	["Player-4372-012A730E"] = true,	-- Allysandra
-	["Player-4372-00FE5CE7"] = true,	-- Amiera
-	["Player-4372-0073B95B"] = true,	-- Amyralynn
-	["Player-4372-0087049A"] = true,	-- Asandra
-	["Player-4372-003159A9"] = true,	-- Astromarus
-	["Player-4372-006A97BA"] = true,	-- Azwel
-	["Player-4372-0014521D"] = true,	-- Bombeon
-	["Player-4372-00E86132"] = true,	-- Borlemont
-	["Player-4372-010B9178"] = true,	-- Braven
-	["Player-4372-0063664F"] = true,	-- Brittbrat
-	["Player-4372-001BA8B1"] = true,	-- Darkirontank
-	["Player-4372-0100DF23"] = true,	-- Dizplaced
-	["Player-4372-01230376"] = true,	-- Drixxtwo
-	["Player-4372-002719C4"] = true,	-- Drunkninja
-	["Player-4372-0124174F"] = true,	-- Dubsteve
-	["Player-4372-00BD6CC7"] = true,	-- Enthira
-	["Player-4372-00A3A0FD"] = true,	-- Fairplay
-	["Player-4372-0046DDA0"] = true,	-- Firasia
-	["Player-4372-004A7A3F"] = true,	-- Fortress
-	["Player-4372-00CF7821"] = true,	-- Glas
-	["Player-4372-00E7DEC4"] = true,	-- Gnubs
-	["Player-4372-0108DCC1"] = true,	-- Grotesque
-	["Player-4372-00E8CC3C"] = true,	-- Hairyplodder
-	["Player-4372-00D38E94"] = true,	-- Havachant
-	["Player-4372-00312AD9"] = true,	-- Hewn
-	["Player-4372-0046F7E8"] = true,	-- Holochops
-	["Player-4372-007AF4B7"] = true,	-- Intothefray
-	["Player-4372-01125B10"] = true,	-- Jonaya
-	["Player-4372-011C1FE9"] = true,	-- Katalysm
-	["Player-4372-00EBCC07"] = true,	-- Lilithann
-	["Player-4372-0075A187"] = true,	-- Loknido
-	["Player-4372-01390D2A"] = true,	-- Manamontanna
-	["Player-4372-00FE5DA2"] = true,	-- Mimico
-	["Player-4372-00D7B345"] = true,	-- Narom
-	["Player-4372-01353958"] = true,	-- Naromot
-	["Player-4372-01294037"] = true,	-- Necrid
-	["Player-4372-00793732"] = true,	-- Nirv
-	["Player-4372-01250D6D"] = true,	-- Pewpeu
-	["Player-4372-0008B144"] = true,	-- Pixl
-	["Player-4372-00C2F945"] = true,	-- Rooni
-	["Player-4372-0058A418"] = true,	-- Saitosan [Druid]
-	["Player-4372-0123A5BE"] = true,	-- Sheisskopf
-	["Player-4372-00F82168"] = true,	-- Semiha
-	["Player-4372-001F92DA"] = true,	-- Shadrac
-	["Player-4372-00732218"] = true,	-- Solow
-	["Player-4372-01091DE4"] = true,	-- Tacolock
-	["Player-4372-00451B8E"] = true,	-- Tinybit
-	["Player-4372-00E5AE25"] = true,	-- Villeinia
-	["Player-4372-0066A25C"] = true,	-- Viran
-	["Player-4372-00D96703"] = true,	-- Worfin
-};
-local GOLD_TYCOON = {
-	["Player-4372-004A0418"] = true,	-- Jubilee
-	["Player-4372-00273DCA"] = true,	-- Havadin
-	["Player-4372-0068D548"] = true,	-- Headphones
-	["Player-4372-00F2D620"] = true,	-- Notloknido
-	["Player-4372-00FF84F0"] = true,	-- Saitosan [Priest]
-};
-local SCARAB_LORD = {
-	["Player-4372-000B3C4D"] = true,	-- Congelatore
-	["Player-4372-00A64EA0"] = true,	-- Macpayn
-};
+
+-- AUTHOR GUIDs
+local tooltipFunction = function(self, target)
+	local leftSide = _G[self:GetName() .. "TextLeft1"];
+	if leftSide then
+		leftSide:SetText("|c" .. app.Colors.Raid .. UnitName(target) .. " the Completionist|r");
+	end
+	local rightSide = _G[self:GetName() .. "TextRight2"];
+	leftSide = _G[self:GetName() .. "TextLeft2"];
+	if leftSide and rightSide then
+		leftSide:SetText(L["TITLE"]);
+		leftSide:Show();
+		rightSide:SetText("Author");
+		rightSide:Show();
+	else
+		self:AddDoubleLine(L["TITLE"], "Author");
+	end
+end
+for i,guid in ipairs({
+	"Player-76-0895E23B",	-- Crieve-Sargeras
+	"Player-4372-0000390A",	-- Crieve-Atiesh
+	"Player-5813-01CEF978",	-- Crieve-Wild Growth (SOD)
+}) do
+	PLAYER_TOOLTIPS[guid] = tooltipFunction;
+end
+
+-- EXTERMINATOR GUIDs
+tooltipFunction = function(self, target)
+	local leftSide = _G[self:GetName() .. "TextLeft1"];
+	if leftSide then leftSide:SetText("|cffa335ee" .. UnitName(target) .. " the Exterminator|r"); end
+end
+for i,guid in ipairs({
+	"Player-4372-00B131BB",	-- Aivet
+	"Player-4372-004A0418",	-- Jubilee
+	"Player-4372-00273DCA",	-- Havadin
+	"Player-4372-00DED426",	-- Krieve
+	"Player-4372-00862D32",	-- Aethbric
+	"Player-4372-0128B376",	-- Alizewsaur
+	"Player-4372-012A730E",	-- Allysandra
+	"Player-4372-00FE5CE7",	-- Amiera
+	"Player-4372-0073B95B",	-- Amyralynn
+	"Player-4372-0087049A",	-- Asandra
+	"Player-4372-003159A9",	-- Astromarus
+	"Player-4372-006A97BA",	-- Azwel
+	"Player-4372-0014521D",	-- Bombeon
+	"Player-4372-00E86132",	-- Borlemont
+	"Player-4372-010B9178",	-- Braven
+	"Player-4372-0063664F",	-- Brittbrat
+	"Player-4372-001BA8B1",	-- Darkirontank
+	"Player-4372-0100DF23",	-- Dizplaced
+	"Player-4372-01230376",	-- Drixxtwo
+	"Player-4372-002719C4",	-- Drunkninja
+	"Player-4372-0124174F",	-- Dubsteve
+	"Player-4372-00BD6CC7",	-- Enthira
+	"Player-4372-00A3A0FD",	-- Fairplay
+	"Player-4372-0046DDA0",	-- Firasia
+	"Player-4372-004A7A3F",	-- Fortress
+	"Player-4372-00CF7821",	-- Glas
+	"Player-4372-00E7DEC4",	-- Gnubs
+	"Player-4372-0108DCC1",	-- Grotesque
+	"Player-4372-00E8CC3C",	-- Hairyplodder
+	"Player-4372-00D38E94",	-- Havachant
+	"Player-4372-00312AD9",	-- Hewn
+	"Player-4372-0046F7E8",	-- Holochops
+	"Player-4372-007AF4B7",	-- Intothefray
+	"Player-4372-01125B10",	-- Jonaya
+	"Player-4372-011C1FE9",	-- Katalysm
+	"Player-4372-00EBCC07",	-- Lilithann
+	"Player-4372-0075A187",	-- Loknido
+	"Player-4372-01390D2A",	-- Manamontanna
+	"Player-4372-00FE5DA2",	-- Mimico
+	"Player-4372-00D7B345",	-- Narom
+	"Player-4372-01353958",	-- Naromot
+	"Player-4372-01294037",	-- Necrid
+	"Player-4372-00793732",	-- Nirv
+	"Player-4372-01250D6D",	-- Pewpeu
+	"Player-4372-0008B144",	-- Pixl
+	"Player-4372-00C2F945",	-- Rooni
+	"Player-4372-0058A418",	-- Saitosan Druid]
+	"Player-4372-0123A5BE",	-- Sheisskopf
+	"Player-4372-00F82168",	-- Semiha
+	"Player-4372-001F92DA",	-- Shadrac
+	"Player-4372-00732218",	-- Solow
+	"Player-4372-01091DE4",	-- Tacolock
+	"Player-4372-00451B8E",	-- Tinybit
+	"Player-4372-00E5AE25",	-- Villeinia
+	"Player-4372-0066A25C",	-- Viran
+	"Player-4372-00D96703",	-- Worfin
+}) do
+	PLAYER_TOOLTIPS[guid] = tooltipFunction;
+end
+
+-- GOLD_TYCOON GUIDs
+tooltipFunction = function(self, target)
+	local leftSide = _G[self:GetName() .. "TextLeft1"];
+	if leftSide then leftSide:SetText("|c" .. app.Colors.Raid .. "Gold Tycoon " .. UnitName(target) .. "|r"); end
+end
+for i,guid in ipairs({
+	"Player-4372-004A0418",	-- Jubilee
+	"Player-4372-00273DCA",	-- Havadin
+	"Player-4372-0068D548",	-- Headphones
+	"Player-4372-00F2D620",	-- Notloknido
+	"Player-4372-00FF84F0",	-- Saitosan Priest
+}) do
+	PLAYER_TOOLTIPS[guid] = tooltipFunction;
+end
+
+-- SCARAB_LORD GUIDs
+tooltipFunction = function(self, target)
+	local leftSide = _G[self:GetName() .. "TextLeft1"];
+	if leftSide then leftSide:SetText("|c" .. app.Colors.Raid .. "Scarab Lord " .. UnitName(target) .. "|r"); end
+end
+for i,guid in ipairs({
+	"Player-4372-000B3C4D",	-- Congelatore
+	"Player-4372-00A64EA0",	-- Macpayn
+}) do
+	PLAYER_TOOLTIPS[guid] = tooltipFunction;
+end
+
+-- THE_HUGGLER GUIDs
+tooltipFunction = function(self, target)
+	local leftSide = _G[self:GetName() .. "TextLeft1"];
+	if leftSide then leftSide:SetText("|cffF58CBA" .. UnitName(target) .. " the Huggler|r"); end
+end
+for i,guid in ipairs({
+	"Player-4372-00006B41",	-- Tahiti-Atiesh
+}) do
+	PLAYER_TOOLTIPS[guid] = tooltipFunction;
+end
+
 local function AttachTooltipRawSearchResults(self, lineNumber, group)
 	if group then
 		-- If nothing was put into the tooltip initially, mark the text of the source.
@@ -3150,40 +3215,8 @@ local function AttachTooltip(self)
 						local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid);
 						-- print(guid, type, npcID);
 						if type == "Player" then
-							if AUTHOR[guid] then
-								local leftSide = _G[self:GetName() .. "TextLeft1"];
-								if leftSide then
-									leftSide:SetText("|c" .. app.Colors.Raid .. UnitName(target) .. " the Completionist|r");
-								end
-								local rightSide = _G[self:GetName() .. "TextRight2"];
-								leftSide = _G[self:GetName() .. "TextLeft2"];
-								if leftSide and rightSide then
-									leftSide:SetText(L["TITLE"]);
-									leftSide:Show();
-									rightSide:SetText("Author");
-									rightSide:Show();
-								else
-									self:AddDoubleLine(L["TITLE"], "Author");
-								end
-							elseif SCARAB_LORD[guid] then
-								local leftSide = _G[self:GetName() .. "TextLeft1"];
-								if leftSide then leftSide:SetText("|c" .. app.Colors.Raid .. "Scarab Lord " .. UnitName(target) .. "|r"); end
-							elseif GOLD_TYCOON[guid] then
-								local leftSide = _G[self:GetName() .. "TextLeft1"];
-								if leftSide then leftSide:SetText("|c" .. app.Colors.Raid .. "Gold Tycoon " .. UnitName(target) .. "|r"); end
-							elseif EXTERMINATOR[guid] then
-								local leftSide = _G[self:GetName() .. "TextLeft1"];
-								if leftSide then leftSide:SetText("|cffa335ee" .. UnitName(target) .. " the Exterminator|r"); end
-							elseif guid == "Player-4372-00006B41" then
-								local leftSide = _G[self:GetName() .. "TextLeft1"];
-								if leftSide then leftSide:SetText("|cffF58CBA" .. UnitName(target) .. " the Huggler|r"); end
-							elseif guid == "Player-4647-031D0890" then
-								local leftSide = _G[self:GetName() .. "TextLeft1"];
-								if leftSide then leftSide:SetText("|cff665a2c" .. UnitName(target) .. " the Time-Loser|r"); end
-								local rightSide = _G[self:GetName() .. "TextRight2"];
-								if rightSide then rightSide:SetText(GetCollectionIcon(0)); end
-								self:AddLine("This scumbag abused an auto-invite addon to steal the Time-Lost Proto Drake from a person that had them on their friends list. ATT has deemed this unacceptable behaviour and will forever stain this player's reputation so long as they remain on the server.", 0.4, 0.8, 1, true);
-							end
+							local method = PLAYER_TOOLTIPS[guid];
+							if method then method(self, target); end
 						elseif type == "Creature" or type == "Vehicle" then
 							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npcID)); end
 							AttachTooltipSearchResults(self, 1, "creatureID:" .. npcID, SearchForField, "creatureID", tonumber(npcID));
