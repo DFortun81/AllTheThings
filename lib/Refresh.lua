@@ -397,6 +397,11 @@ local function RefreshCollections()
 		refresh();
 		coroutine.yield();
 	end
+	
+	-- Execute the OnRefreshCollections handlers.
+	for i,handler in ipairs(app.EventHandlers.OnRefreshCollections) do
+		handler();
+	end
 
 	app:RecalculateAccountWideData();
 	coroutine.yield();

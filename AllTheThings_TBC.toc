@@ -65,5 +65,6 @@ src\UI\Soft Reserves.lua
 src\UI\Sync.lua
 src\UI\Titles.lua
 src\UI\Toys.lua
+src\UI\Tradeskills.lua
 src\UI\Unsorted.lua
 src\Root.lua

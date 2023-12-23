@@ -137,6 +137,7 @@ app.GetRelativeValue = GetRelativeValue;
 app.EventHandlers = {
 	OnRecalculate = {},
 	OnReady = {},
+	OnRefreshCollections = {},
 };
 
 -- Cache information about the player.
