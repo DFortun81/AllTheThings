@@ -992,23 +992,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 10,
 				}),
-				q(1789, {	-- The Symbol of Life
-					["qg"] = 6179,	-- Tiza Battleforge
-					-- #if BEFORE 4.0.3
-					["description"] = "This quest is repeatable, but can only be completed while you have the quest \"The Tome of Divinity\" (Quest #1783) in your quest log.",
-					-- #endif
-					["coord"] = { 27.4, 12, IRONFORGE },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = { DWARF },
-					["classes"] = { PALADIN },
-					["repeatable"] = true,
-					["lvl"] = 12,
-					-- #if BEFORE 4.0.3
-					["groups"] = {
-						i(6866),	-- Symbol of Life
-					},
-					-- #endif
-				}),
 				q(2997, {	-- The Tome of Divinity [Dun Morogh]
 					["qg"] = 1232,	-- Azar Stronghammer <Paladin Trainer>
 					["coord"] = { 47.6, 52, DUN_MOROGH },
@@ -1101,16 +1084,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 				}),
 				q(1783, {	-- The Tome of Divinity (6/8)
-					["providers"] = {
-						{ "n", 6178 },	-- Muiredon Battleforge
-						{ "i", 6866 },	-- Symbol of Life
-					},
+					["qg"] = 6178,	-- Muiredon Battleforge
 					["sourceQuest"] = 1779,	-- The Tome of Divinity (5/8)
 					["coord"] = { 23.6, 8.6, IRONFORGE },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
+					["groups"] = {
+						q(1789, {	-- The Symbol of Life
+							["qg"] = 6179,	-- Tiza Battleforge
+							["coord"] = { 27.4, 12, IRONFORGE },
+							["timeline"] = { "removed 4.0.3" },
+							["repeatable"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/1 Symbol of Life
+									["questID"] = 1783,	-- The Tome of Divinity (5/8)
+									["provider"] = { "i", 6866 },	-- Symbol of Life
+								}),
+							},
+						}),
+					},
 				}),
 				q(1784, {	-- The Tome of Divinity (7/8)
 					["qg"] = 6177,	-- Narm Faulk

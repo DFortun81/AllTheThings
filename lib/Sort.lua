@@ -15,7 +15,7 @@ local ipairs, pairs, tostring, type, string_lower, table_sort, pcall
 
 -- Sorting Logic
 local sortA, sortB;
-local calculateAccessibility = function(source)
+local function calculateAccessibility(source)
 	local score = 0;
 	if source.nmr then
 		score = score + 10;
@@ -41,7 +41,25 @@ local calculateAccessibility = function(source)
 	end
 	return score;
 end
-local defaultComparison = function(a,b)
+local function calculateSourceQuestDepth(group, text)
+	if group.sourceQuestDepth then return group.sourceQuestDepth; end
+	if group.sourceQuests then
+		local maxDepth, results, depth = 0;
+		for i,sourceQuestID in ipairs(group.sourceQuests) do
+			results = app.SearchForField("questID", sourceQuestID);
+			if results and #results > 0 then
+				depth = calculateSourceQuestDepth(results[1]) + 1;
+			else
+				depth = 1;
+			end
+			if maxDepth < depth then maxDepth = depth; end
+		end
+		group.sourceQuestDepth = maxDepth;
+		return maxDepth;
+	end
+	return 0;
+end
+local function defaultComparison(a,b)
 	-- If either object doesn't exist
 	if a then
 		if not b then
@@ -284,9 +302,12 @@ app.SortDefaults = setmetatable({
 			return false;
 		end
 		-- Any two similar-type groups with text
-		a = string_lower(tostring(a.text));
-		b = string_lower(tostring(b.text));
-		return a < b;
+		sortA = string_lower(tostring(a.text));
+		sortB = string_lower(tostring(b.text));
+		if sortA == sortB and sortA then
+			return calculateSourceQuestDepth(a, sortA) < calculateSourceQuestDepth(b, sortB);
+		end
+		return sortA < sortB;
 	end,
 	text = function(a, b)
 		-- If either object doesn't exist
@@ -378,10 +399,14 @@ local function SortGroup(group, sortType)
 		-- either sort visible groups or by conditional
         if group.visible then
 			-- app.PrintDebug("sorting",group.key,group.key and group[group.key],"by",sortType)
-			if app.Sort(group.g, app.SortDefaults[sortType]) then
+			local status,err = app.Sort(group.g, app.SortDefaults[sortType]);
+			if status then
 				-- Setting this to false instead of nil causes the field to also
 				-- ignore inherited settings, such as from its base class.
-				if group.SortType then group.SortType = false; end
+				if group.SortType and not group.PersistSortType then group.SortType = false; end
+			else
+				-- Uncomment this to debug errors in your sort functions
+				--print("Error in sort", err);
 			end
 		end
 	end

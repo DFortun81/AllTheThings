@@ -2732,25 +2732,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 8.3.0" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(1790, {	-- The Symbol of Life
-					["qg"] = 6171,	-- Duthorian Rall
-					["description"] = "This quest is repeatable, but can only be completed while you have the quest \"The Tome of Divinity\" (Quest #1786) in your quest log.",
-					-- #if AFTER WRATH
-					["coord"] = { 50.5, 47.5, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
-					-- #endif
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = { HUMAN },
-					["classes"] = { PALADIN },
-					["repeatable"] = true,
-					["lvl"] = 12,
-					["groups"] = {
-						i(6866, {	-- Symbol of Life
-							["timeline"] = { "removed 4.0.3" },
-						}),
-					},
-				}),
 				q(2998, {	-- The Tome of Divinity (1a/10)
 					["qg"] = 927,	-- Brother Wilhelm
 					["altQuests"] = {
@@ -2865,10 +2846,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 				}),
 				q(1786, {	-- The Tome of Divinity (8/10)
-					["providers"] = {
-						{ "n", 6173 },	-- Gazin Tenorm
-						{ "i", 6866 },	-- Symbol of Life
-					},
+					["qg"] = 6173,	-- Gazin Tenorm
 					["sourceQuest"] = 1781,	-- The Tome of Divinity (7/10)
 					-- #if AFTER WRATH
 					["coord"] = { 49.5, 44.9, STORMWIND_CITY },
@@ -2879,6 +2857,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
+					["groups"] = {
+						q(1790, {	-- The Symbol of Life
+							["qg"] = 6171,	-- Duthorian Rall
+							-- #if AFTER WRATH
+							["coord"] = { 50.5, 47.5, STORMWIND_CITY },
+							-- #else
+							["coord"] = { 39.8, 30.8, STORMWIND_CITY },
+							-- #endif
+							["timeline"] = { "removed 4.0.3" },
+							["repeatable"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/1 Symbol of Life
+									["questID"] = 1786,	-- The Tome of Divinity (8/10)
+									["provider"] = { "i", 6866 },	-- Symbol of Life
+								}),
+							},
+						}),
+					},
 				}),
 				q(1787, {	-- The Tome of Divinity (9/10)
 					["qg"] = 6172,	-- Henze Faulk

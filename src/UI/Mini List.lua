@@ -62,14 +62,12 @@ local CachedMapData = setmetatable({}, {
 						local o = groups[i];
 						if o.headerID == headerID then
 							if not o.g then o.g = {}; end
-							o.SortType = SortTypeByHeaderID[headerID];
 							t[headerID] = o;
 							return o;
 						end
 					end
 
 					local o = app.CreateNPC(headerID);
-					o.SortType = SortTypeByHeaderID[headerID];
 					tinsert(groups, o);
 					t[headerID] = o;
 					o.g = {};
@@ -180,6 +178,12 @@ local CachedMapData = setmetatable({}, {
 							ExpandGroupsRecursively(row, false, true);
 						end
 					end
+				end
+			end
+			
+			for i,o in ipairs(header.g) do
+				if o.key == "headerID" then
+					o.SortType = SortTypeByHeaderID[o.headerID];
 				end
 			end
 
