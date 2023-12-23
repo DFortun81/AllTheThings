@@ -1036,7 +1036,7 @@ app:GetWindow("Synchronization", {
 								parent = data,
 							});
 						else
-							app.SortGroupDelayed(data, "textAndLvl");
+							data.SortType = "textAndLvl";
 						end
 						return app.AlwaysShowUpdate(data);
 					end,

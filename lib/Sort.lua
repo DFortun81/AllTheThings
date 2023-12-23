@@ -103,6 +103,51 @@ local defaultComparison = function(a,b)
 	bcomp = string_lower(tostring(b.name));
 	return acomp < bcomp;
 end
+local function GetGroupSortValue(group)
+	-- sub-groups on top
+	-- >= 1
+	if group.g then
+		local total = group.total;
+		if total then
+			local progress = group.progress;
+			-- completed groups at the very top, ordered by their own total
+			if total == progress then
+				-- 3 <= p
+				return 2 + total;
+			-- partially completed next
+			elseif progress and progress > 0 then
+				-- 1 < p <= 2
+				return 1 + (progress / total);
+			-- no completion, ordered by their own total in reverse
+			-- 0 < p <= 1
+			else
+				return (1 / total);
+			end
+		end
+	-- collectibles next
+	-- >= 0
+	elseif group.collectible then
+		-- = 0.5
+		if group.collected then
+			return 0.5;
+		else
+			-- 0 <= p < 0.5
+			return (group.sortProgress or 0) / 2;
+		end
+	-- trackables next
+	-- -1 <= p <= -0.5
+	elseif group.trackable then
+		if group.saved then
+			return -0.5;
+		else
+			return -1;
+		end
+	-- remaining last
+	-- = -2
+	else
+		return -2;
+	end
+end
 app.SortDefaults = setmetatable({
 	Accessibility = function(a, b)
 		return calculateAccessibility(a) <= calculateAccessibility(b);
@@ -254,6 +299,9 @@ app.SortDefaults = setmetatable({
 			return true;
 		end
 	end,
+	progress = function(a, b)
+		return GetGroupSortValue(a) > GetGroupSortValue(b);
+	end,
 }, {
 	__index = function(t, sortType)
 		if type(sortType) == "function" then
@@ -292,54 +340,6 @@ end
 app.Sort = function(t, compare, nested)
 	return pcall(Sort, t, compare, nested);
 end
-local function GetGroupSortValue(group)
-	-- sub-groups on top
-	-- >= 1
-	if group.g then
-		local total = group.total;
-		if total then
-			local progress = group.progress;
-			-- completed groups at the very top, ordered by their own total
-			if total == progress then
-				-- 3 <= p
-				return 2 + total;
-			-- partially completed next
-			elseif progress and progress > 0 then
-				-- 1 < p <= 2
-				return 1 + (progress / total);
-			-- no completion, ordered by their own total in reverse
-			-- 0 < p <= 1
-			else
-				return (1 / total);
-			end
-		end
-	-- collectibles next
-	-- >= 0
-	elseif group.collectible then
-		-- = 0.5
-		if group.collected then
-			return 0.5;
-		else
-			-- 0 <= p < 0.5
-			return (group.sortProgress or 0) / 2;
-		end
-	-- trackables next
-	-- -1 <= p <= -0.5
-	elseif group.trackable then
-		if group.saved then
-			return -0.5;
-		else
-			return -1;
-		end
-	-- remaining last
-	-- = -2
-	else
-		return -2;
-	end
-end
-app.SortDefaults.progress = function(a, b)
-	return GetGroupSortValue(a) > GetGroupSortValue(b);
-end;
 -- Sorts a group using the provided sortType, whether to recurse through nested groups, and whether sorting should only take place given the group having a conditional field
 local function SortGroup(group, sortType)
 	--print("SortGroup", group.parent and group.parent.text, group.text, sortType);
@@ -350,13 +350,9 @@ local function SortGroup(group, sortType)
 			if app.Sort(group.g, app.SortDefaults[sortType]) then
 				-- Setting this to false instead of nil causes the field to also
 				-- ignore inherited settings, such as from its base class.
-				group.SortType = false;
+				if group.SortType then group.SortType = false; end
 			end
 		end
 	end
 end
 app.SortGroup = SortGroup;
-app.SortGroupDelayed = function(group, sortType)
-	-- app.PrintDebug("Delayed Sort defined for",group.text)
-	group.SortType = sortType;
-end

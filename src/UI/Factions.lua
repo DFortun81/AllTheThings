@@ -38,7 +38,7 @@ app:GetWindow("Factions", {
 							tinsert(g, faction);
 						end
 					end
-					app.SortGroupDelayed(data, "Name");
+					data.SortType = "Name";
 				end
 			end
 		});

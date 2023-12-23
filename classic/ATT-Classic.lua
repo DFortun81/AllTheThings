@@ -7255,7 +7255,7 @@ local onMapUpdate = function(t)
 		end
 	end
 	if explorationHeader and explorationHeader.g then
-		app.SortGroupDelayed(explorationHeader, "text");
+		explorationHeader.SortType = "text";
 	end
 	rawset(t, "OnUpdate", nil);
 	--app:StartATTCoroutine("Simplifying Exploration Data", simplifyExplorationData);
@@ -7363,7 +7363,7 @@ app.CreateMap = function(id, t)
 			end
 		end
 		if explorationHeader and explorationHeader.g then
-			app.SortGroupDelayed(explorationHeader, "text");
+			explorationHeader.SortType = "text";
 		end
 		if not rawget(t, "OnUpdate") then
 			t.OnUpdate = onMapUpdate;

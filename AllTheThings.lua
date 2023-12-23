@@ -16472,7 +16472,7 @@ function app:GetDataCache()
 	if app.Categories.Holidays then
 		db = app.CreateNPC(app.HeaderConstants.HOLIDAYS, app.Categories.Holidays);
 		db.isHolidayCategory = true;
-		app.SortGroupDelayed(db, "EventStart");
+		db.SortType = "EventStart";
 		tinsert(g, db);
 	end
 
@@ -18206,11 +18206,11 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 
 				-- sort top level by name if not in an instance
 				if not GetRelativeValue(header, "instanceID") then
-					app.SortGroupDelayed(header, "Global");
+					header.SortType = "Global";
 					if header.g then
 						for i,o in ipairs(header.g) do
 							if o.key == "headerID" then
-								app.SortGroupDelayed(o, "Name");
+								o.SortType = "Name";
 							end
 						end
 					end
@@ -19597,7 +19597,7 @@ customWindowUpdates["Sync"] = function(self)
 									["OnUpdate"] = app.AlwaysShowUpdate,
 								});
 							else
-								app.SortGroupDelayed(data, "textAndLvl");
+								data.SortType = "textAndLvl";
 							end
 							data.g = g;
 							AssignChildren(data);

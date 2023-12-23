@@ -41,7 +41,7 @@ app:GetWindow("Illusions", {
 						end
 					end
 					if #g > 0 then
-						app.SortGroupDelayed(data, "Name");
+						data.SortType = "Name";
 					else
 						tinsert(g, { OnUpdate = app.AlwaysShowUpdate, parent = data, text = "No illusions found." });
 					end

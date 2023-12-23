@@ -61,10 +61,10 @@ app:GetWindow("Titles", {
 							headers[header.headerID] = nil;
 							tremove(g, i);
 						else
-							app.SortGroupDelayed(header, "Name");
+							header.SortType = "Name";
 						end
 					end
-					app.SortGroupDelayed(data, "Name");
+					data.SortType = "Name";
 				end
 			end
 		};

@@ -48,7 +48,7 @@ app:GetWindow("Flight Paths", {
 							tinsert(g, fp);
 						end
 					end
-					app.SortGroupDelayed(data, "Name");
+					data.SortType = "Name";
 				end
 			end
 		};
