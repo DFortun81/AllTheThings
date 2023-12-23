@@ -6,7 +6,7 @@
 -- App locals
 local appName, app = ...;
 local contains, containsAny, containsValue = app.contains, app.containsAny, app.containsValue;
-local AssignChildren, CloneArray, CloneDictionary, CloneReference = app.AssignChildren, app.CloneArray, app.CloneDictionary, app.CloneReference;
+local AssignChildren, CloneArray, CloneDictionary, CloneClassInstance, CloneReference = app.AssignChildren, app.CloneArray, app.CloneDictionary, app.CloneClassInstance, app.CloneReference;
 local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
 local L = app.L;
 
@@ -974,79 +974,6 @@ local function GetHash(t)
 	--app.PrintDebug("No hash for object:", hash, t.text);
 	return hash;
 end
-local function CreateObject(t)
-	local s = {};
-	if t[1] then
-		-- array
-		for i,o in ipairs(t) do
-			tinsert(s, CreateObject(o));
-		end
-		return s;
-	else
-		for k,v in pairs(t) do
-			rawset(s, k, v);
-		end
-		if t.g then
-			s.g = {};
-			for i,o in ipairs(t.g) do
-				tinsert(s.g, CreateObject(o));
-			end
-		end
-
-		local meta = getmetatable(t);
-		if meta then
-			setmetatable(s, meta);
-			return s;
-		else
-			t = s;
-			if t.mapID then
-				t = app.CreateMap(t.mapID, t);
-			elseif t.currencyID then
-				t = app.CreateCurrencyClass(t.currencyID, t);
-			elseif t.achID then
-				t = app.CreateAchievement(t.achID, t);
-			elseif t.achievementID then
-				t = app.CreateAchievement(t.achievementID, t);
-			elseif t.objectID then
-				t = app.CreateObject(t.objectID, t);
-			elseif t.professionID then
-				t = app.CreateProfession(t.professionID, t);
-			elseif t.categoryID then
-				t = app.CreateCategory(t.categoryID, t);
-			elseif t.illusionID then
-				t = app.CreateIllusion(t.illusionID, t);
-			elseif t.recipeID then
-				t = app.CreateRecipe(t.recipeID, t);
-			elseif t.spellID then
-				if t.f == app.FilterConstants.RECIPES then
-					t = app.CreateRecipe(t.spellID, t);
-				else
-					t = app.CreateSpell(t.spellID, t);
-				end
-			elseif t.itemID then
-				if t.toyID then
-					t = app.CreateToy(t.itemID, t);
-				else
-					t = app.CreateItem(t.itemID, t);
-				end
-			elseif t.classID then
-				t = app.CreateCharacterClass(t.classID, t);
-			elseif t.npcID or t.creatureID then
-				t = app.CreateNPC(t.npcID or t.creatureID, t);
-			elseif t.headerID then
-				t = app.CreateNPC(t.headerID, t);	-- For now.
-			elseif t.questID then
-				t = app.CreateQuest(t.questID, t);
-			elseif t.factionID then
-				t = app.CreateFaction(t.factionID, t);
-			else
-				t = setmetatable({}, { __index = t });
-			end
-			t.visible = true;
-			return t;
-		end
-	end
-end
 
 local MergeObject;
 local function MergeObjects(g, g2)
@@ -1105,7 +1032,7 @@ MergeObject = function(g, t, index)
 	return t;
 end
 local function MergeClone(g, o)
-	local clone = CreateObject(o);
+	local clone = CloneClassInstance(o);
 	local u = GetRelativeValue(o, "u");
 	if u then clone.u = u; end
 	local e = GetRelativeValue(o, "e");
@@ -1868,7 +1795,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							for i,o in ipairs(searchResults) do
 								if not o.itemID and o.cost then
 									-- Reagent for something that crafts a thing required for something else.
-									MergeClone(group, { ["itemID"] = craftedItemID, ["count"] = count, ["g"] = { CreateObject(o) } });
+									MergeClone(group, { ["itemID"] = craftedItemID, ["count"] = count, ["g"] = { CloneClassInstance(o) } });
 								end
 							end
 						end
@@ -1999,7 +1926,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					else
 						for j=#symbolicLink,1,-1 do
-							symbolicLink[j] = CreateObject(symbolicLink[j]);
+							symbolicLink[j] = CloneClassInstance(symbolicLink[j]);
 						end
 						group.g = symbolicLink;
 					end
@@ -2015,13 +1942,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							end
 						else
 							for j=#symbolicLink,1,-1 do
-								symbolicLink[j] = CreateObject(symbolicLink[j]);
+								symbolicLink[j] = CloneClassInstance(symbolicLink[j]);
 							end
 							o.g = symbolicLink;
 						end
 					end
 				end
-				group = CreateObject({ [paramA] = paramB });
+				group = CloneClassInstance({ [paramA] = paramB, key = paramA });
 				group.g = merged;
 			end
 		end
@@ -2057,7 +1984,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				for i,o in ipairs(costResults) do
 					if o.key == "instanceID" or ((o.key == "difficultyID" or o.key == "mapID" or o.key == "headerID") and (o.parent and GetRelativeValue(o.parent, "instanceID"))) then
 						if app.Settings.Collectibles.Quests then
-							local d = CreateObject(o);
+							local d = CloneClassInstance(o);
 							d.sourceParent = o.parent;
 							d.collectible = true;
 							d.collected = GetItemCount(paramB, true) > 0;
@@ -2534,7 +2461,7 @@ local function SearchForLink(link)
 		if id then
 			cache = SearchForField(kind, id);
 			if #cache == 0 then
-				local obj = CreateObject({
+				local obj = CloneClassInstance({
 					key = kind, [kind] = id,
 					hash = kind .. ":" .. id,
 				});
@@ -4864,10 +4791,7 @@ end)();
 
 -- Category Lib
 (function()
-local defaultIcon = "Interface/ICONS/INV_Misc_Gear_02";
-if app.GameBuildVersion > 60001 then
-	defaultIcon = "Interface/ICONS/INV_Garrison_Blueprints1";
-end
+local defaultIcon = app.GameBuildVersion > 60001 and "Interface/ICONS/INV_Garrison_Blueprints1" or "Interface/ICONS/INV_Misc_Gear_02";
 app.CreateCategory = app.CreateClass("Category", "categoryID", {
 	["text"] = function(t)
 		return AllTheThingsAD.LocalizedCategoryNames[t.categoryID] or ("Unknown Category #" .. t.categoryID);
@@ -7571,7 +7495,7 @@ local createNPC = app.CreateClass("NPC", "npcID", {
 		return NPCNameFromID[t.npcID] or RETRIEVING_DATA;
 	end,
 	["icon"] = function(t)
-		return (t.parent and t.parent.headerID == app.HeaderConstants.VENDORS and "Interface\\Icons\\INV_Misc_Coin_01")
+		return (t.parent and t.parent.headerID and t.parent.headerID == app.HeaderConstants.VENDORS and "Interface\\Icons\\INV_Misc_Coin_01")
 			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
 	end,
 	["title"] = function(t)
@@ -7733,7 +7657,7 @@ app.CreateHeader = app.CreateClass("AutomaticHeader", "autoID", {
 				t.result = cache[1];
 				return cache[1];
 			else
-				cache = CreateObject({[typ] = t.autoID});
+				cache = CloneClassInstance({[typ] = t.autoID,key = typ});
 				t.result = cache;
 				return cache;
 			end
@@ -12222,7 +12146,7 @@ local function OnInitForPopout(self, group)
 				local resolved = ResolveSymbolicLink(group);
 				if resolved then
 					for i=#resolved,1,-1 do
-						resolved[i] = CreateObject(resolved[i]);
+						resolved[i] = CloneClassInstance(resolved[i]);
 					end
 					mainQuest.g = resolved;
 				end
@@ -12401,7 +12325,7 @@ local function OnInitForPopout(self, group)
 			local resolved = ResolveSymbolicLink(group);
 			if resolved then
 				for i=#resolved,1,-1 do
-					resolved[i] = CreateObject(resolved[i]);
+					resolved[i] = CloneClassInstance(resolved[i]);
 				end
 				self.data.g = resolved;
 			end
@@ -12730,7 +12654,7 @@ function app:CreateMiniListFromSource(key, id, sourcePath)
 		local t = {};
 		app:BuildFlatSearchResponse(app:GetDataCache().g, key, id, t);
 		if t and #t > 0 then
-			local ref = #t == 1 and t[1] or CreateObject({ hash = key .. id, key = key, [key] = id, g = t });
+			local ref = #t == 1 and t[1] or CloneClassInstance({ hash = key .. id, key = key, [key] = id, g = t });
 			if ref then
 				app:CreateMiniListForGroup(ref);
 				return;
@@ -12900,7 +12824,7 @@ app:GetWindow("Debugger", {
 					app.SetDataMember("Debugger", nil);
 				end
 				self.rawData = ATTClassicDebugData;
-				self.data.g = CreateObject(self.rawData);
+				self.data.g = CloneClassInstance(self.rawData);
 				for i=#self.data.options,1,-1 do
 					tinsert(self.data.g, 1, self.data.options[i]);
 				end

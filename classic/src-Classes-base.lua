@@ -3,8 +3,8 @@
 local appName, app = ...;
 
 -- Global locals
-local type, pairs, tonumber, setmetatable, rawget, tinsert
-	= type, pairs, tonumber, setmetatable, rawget, tinsert;
+local type, ipairs, pairs, tonumber, setmetatable, rawget, tinsert
+	= type, ipairs, pairs, tonumber, setmetatable, rawget, tinsert;
 
 -- App locals
 local GetRelativeValue = app.GetRelativeValue;
@@ -157,6 +157,62 @@ end
 app.BaseObjectFields = BaseObjectFields;
 app.BaseClass = BaseObjectFields(nil, "BaseClass");
 
+-- Create a dictionary of classes by their classKey, for reference in generic object contructors.
+local classesByKey = setmetatable({}, {
+	__newindex = function(t, key, value)
+		if rawget(t, key) then
+			return;
+		end
+		rawset(t, key, value);
+	end,
+});
+local function CreateClassInstance(key, id, t)
+	if key == "creatureID" then
+		key = "npcID";
+		if t then
+			t.creatureID = nil;
+			t.npcID = id;
+		end
+	end
+	local classConstructor = classesByKey[key];
+	if classConstructor then return classConstructor(id, t); end
+	print("CreateClassInstance::Failed to Find Class Constructor for", key, id);
+	return t;
+end
+local function CloneClassInstance(object)
+	local clone = {};
+	if object[1] then
+		-- Create an Array of Clones
+		for i,o in ipairs(object) do
+			tinsert(clone, CloneClassInstance(o));
+		end
+		return clone;
+	else
+		-- Clone the object.
+		for k,v in pairs(object) do
+			rawset(clone, k, v);
+		end
+		if object.g then
+			clone.g = {};
+			for i,o in ipairs(object.g) do
+				o = CloneClassInstance(o);
+				tinsert(clone.g, o);
+				o.parent = clone;
+			end
+		end
+
+		local meta = getmetatable(object);
+		if meta then
+			setmetatable(clone, meta);
+			return clone;
+		else
+			return CreateClassInstance(object.key, object[object.key], clone);
+		end
+	end
+end
+app.CloneClassInstance = CloneClassInstance;
+app.CreateClassInstance = CreateClassInstance;
+
 app.CreateClass = function(className, classKey, fields, ...)
 	-- Validate arguments
 	if not className then
@@ -217,7 +273,7 @@ app.CreateClass = function(className, classKey, fields, ...)
 		total = #conditionals;
 		fields.conditionals = conditionals;
 		local Class = BaseObjectFields(fields, className);
-		return function(id, t)
+		local classConstructor = function(id, t)
 			t = constructor(id, t, classKey);
 			for i=1,total,2 do
 				if conditionals[i](t) then
@@ -225,12 +281,16 @@ app.CreateClass = function(className, classKey, fields, ...)
 				end
 			end
 			return setmetatable(t, Class);
-		end, Class;
+		end;
+		classesByKey[classKey] = classConstructor;
+		return classConstructor, Class;
 	else
 		local Class = BaseObjectFields(fields, className);
-		return function(id, t)
+		local classConstructor = function(id, t)
 			return setmetatable(constructor(id, t, classKey), Class);
-		end, Class;
+		end;
+		classesByKey[classKey] = classConstructor;
+		return classConstructor, Class;
 	end
 end
 app.ExtendClass = function(baseClassName, className, classKey, fields, ...)

@@ -7,7 +7,7 @@
 local appName, app = ...;
 
 local L = app.L;
-local AssignChildren, GetRelativeField, GetRelativeValue = app.AssignChildren, app.GetRelativeField, app.GetRelativeValue;
+local AssignChildren, CloneClassInstance, GetRelativeField, GetRelativeValue = app.AssignChildren, app.CloneClassInstance, app.GetRelativeField, app.GetRelativeValue;
 
 -- Binding Localizations
 BINDING_HEADER_ALLTHETHINGS = L["TITLE"]
