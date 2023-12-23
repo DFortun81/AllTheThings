@@ -2419,166 +2419,165 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 		}))),
 		applyevent(EVENTS.NORTHREND_CUP, n(NORTHREND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 			n(ACHIEVEMENTS, {
-				-- TODO: Uncomment when quests are done
-				-- ach(19674, {	-- Northrend: Bronze
-				-- 	-- Meta Achievement
-				-- 	["sym"] = {{"meta_achievement",
-				-- 		19582,	-- Blackriver Burble: Bronze
-				-- 		19627,	-- Citadel Sortie: Bronze
-				-- 		19665,	-- Coldarra Climb: Bronze
-				-- 		19609,	-- Crystalsong Crisis: Bronze
-				-- 		19618,	-- Dragonblight Dragon Flight: Bronze
-				-- 		19647,	-- Geothermal Jaunt: Bronze
-				-- 		19656,	-- Gundrak Fast Track: Bronze
-				-- 		19600,	-- Makers Marathon: Bronze
-				-- 		19636,	-- Sholazar Spree: Bronze
-				-- 		19591,	-- Zul'Drak Zephyr: Bronze
-				-- 	}},
-				-- }),
-				-- ach(19675, {	-- Northrend: Silver
-				-- 	-- Meta Achievement
-				-- 	["sym"] = {{"meta_achievement",
-				-- 		19583,	-- Blackriver Burble: Silver
-				-- 		19628,	-- Citadel Sortie: Silver
-				-- 		19666,	-- Coldarra Climb: Silver
-				-- 		19610,	-- Crystalsong Crisis: Silver
-				-- 		19619,	-- Dragonblight Dragon Flight: Silver
-				-- 		19648,	-- Geothermal Jaunt: Silver
-				-- 		19657,	-- Gundrak Fast Track: Silver
-				-- 		19601,	-- Makers Marathon: Silver
-				-- 		19637,	-- Sholazar Spree: Silver
-				-- 		19592,	-- Zul'Drak Zephyr: Silver
-				-- 	}},
-				-- }),
-				-- ach(19676, {	-- Northrend: Gold
-				-- 	-- Meta Achievement
-				-- 	["sym"] = {{"meta_achievement",
-				-- 		19584,	-- Blackriver Burble: Gold
-				-- 		19629,	-- Citadel Sortie: Gold
-				-- 		19667,	-- Coldarra Climb: Gold
-				-- 		19611,	-- Crystalsong Crisis: Gold
-				-- 		19620,	-- Dragonblight Dragon Flight: Gold
-				-- 		19649,	-- Geothermal Jaunt: Gold
-				-- 		19658,	-- Gundrak Fast Track: Gold
-				-- 		19602,	-- Makers Marathon: Gold
-				-- 		19638,	-- Sholazar Spree: Gold
-				-- 		19593,	-- Zul'Drak Zephyr: Gold
-				-- 	}},
-				-- }),
-				-- ach(19677, {	-- Northrend Advanced: Bronze
-				-- 	-- Meta Achievement
-				-- 	["sym"] = {{"meta_achievement",
-				-- 		19585,	-- Blackriver Burble Advanced: Bronze
-				-- 		19630,	-- Citadel Sortie Advanced: Bronze
-				-- 		19668,	-- Coldarra Climb Advanced: Bronze
-				-- 		19612,	-- Crystalsong Crisis Advanced: Bronze
-				-- 		19621,	-- Dragonblight Dragon Flight Advanced: Bronze
-				-- 		19650,	-- Geothermal Jaunt Advanced: Bronze
-				-- 		19659,	-- Gundrak Fast Track Advanced: Bronze
-				-- 		19603,	-- Makers Marathon Advanced: Bronze
-				-- 		19639,	-- Sholazar Spree Advanced: Bronze
-				-- 		19594,	-- Zul'Drak Zephyr Advanced: Bronze
-				-- 	}},
-				-- }),
-				-- ach(19679, {	-- Northrend Advanced: Silver
-				-- 	-- Meta Achievement
-				-- 	["sym"] = {{"meta_achievement",
-				-- 		19586,	-- Blackriver Burble Advanced: Silver
-				-- 		19631,	-- Citadel Sortie Advanced: Silver
-				-- 		19669,	-- Coldarra Climb Advanced: Silver
-				-- 		19613,	-- Crystalsong Crisis Advanced: Silver
-				-- 		19622,	-- Dragonblight Dragon Flight Advanced: Silver
-				-- 		19651,	-- Geothermal Jaunt Advanced: Silver
-				-- 		19660,	-- Gundrak Fast Track Advanced: Silver
-				-- 		19604,	-- Makers Marathon Advanced: Silver
-				-- 		19640,	-- Sholazar Spree Advanced: Silver
-				-- 		19595,	-- Zul'Drak Zephyr Advanced: Silver
-				-- 	}},
-				-- }),
-				-- ach(19681, {	-- Northrend Advanced: Gold
-				-- 	-- Meta Achievement
-				-- 	["sym"] = {{"meta_achievement",
-				-- 		19587,	-- Blackriver Burble Advanced: Gold
-				-- 		19631,	-- Citadel Sortie Advanced: Gold
-				-- 		19670,	-- Coldarra Climb Advanced: Gold
-				-- 		19614,	-- Crystalsong Crisis Advanced: Gold
-				-- 		19623,	-- Dragonblight Dragon Flight Advanced: Gold
-				-- 		19652,	-- Geothermal Jaunt Advanced: Gold
-				-- 		19661,	-- Gundrak Fast Track Advanced: Gold
-				-- 		19605,	-- Makers Marathon Advanced: Gold
-				-- 		19641,	-- Sholazar Spree Advanced: Gold
-				-- 		19596,	-- Zul'Drak Zephyr Advanced: Gold
-				-- 	}},
-				-- }),
-				-- ach(19682, {	-- Northrend Reverse: Bronze
-				-- 	-- Meta Achievement
-				-- 	["sym"] = {{"meta_achievement",
-				-- 		19588,	-- Blackriver Burble Reverse: Bronze
-				-- 		19633,	-- Citadel Sortie Reverse: Bronze
-				-- 		19671,	-- Coldarra Climb Reverse: Bronze
-				-- 		19615,	-- Crystalsong Crisis Reverse: Bronze
-				-- 		19624,	-- Dragonblight Dragon Flight Reverse: Bronze
-				-- 		19653,	-- Geothermal Jaunt Reverse: Bronze
-				-- 		19662,	-- Gundrak Fast Track Reverse: Bronze
-				-- 		19606,	-- Makers Marathon Reverse: Bronze
-				-- 		19642,	-- Sholazar Spree Reverse: Bronze
-				-- 		19597,	-- Zul'Drak Zephyr Reverse: Bronze
-				-- 	}},
-				-- }),
-				-- ach(19683, {	-- Northrend Reverse: Silver
-				-- 	-- Meta Achievement
-				-- 	["sym"] = {{"meta_achievement",
-				-- 		19589,	-- Blackriver Burble Reverse: Silver
-				-- 		19634,	-- Citadel Sortie Reverse: Silver
-				-- 		19672,	-- Coldarra Climb Reverse: Silver
-				-- 		19616,	-- Crystalsong Crisis Reverse: Silver
-				-- 		19625,	-- Dragonblight Dragon Flight Reverse: Silver
-				-- 		19654,	-- Geothermal Jaunt Reverse: Silver
-				-- 		19663,	-- Gundrak Fast Track Reverse: Silver
-				-- 		19607,	-- Makers Marathon Reverse: Silver
-				-- 		19643,	-- Sholazar Spree Reverse: Silver
-				-- 		19598,	-- Zul'Drak Zephyr Reverse: Silver
-				-- 	}},
-				-- }),
-				-- ach(19684, {	-- Northrend Reverse: Gold
-				-- 	-- Meta Achievement
-				-- 	["sym"] = {{"meta_achievement",
-				-- 		19590,	-- Blackriver Burble Reverse: Gold
-				-- 		19635,	-- Citadel Sortie Reverse: Gold
-				-- 		19673,	-- Coldarra Climb Reverse: Gold
-				-- 		19617,	-- Crystalsong Crisis Reverse: Gold
-				-- 		19626,	-- Dragonblight Dragon Flight Reverse: Gold
-				-- 		19655,	-- Geothermal Jaunt Reverse: Gold
-				-- 		19664,	-- Gundrak Fast Track Reverse: Gold
-				-- 		19608,	-- Makers Marathon Reverse: Gold
-				-- 		19644,	-- Sholazar Spree Reverse: Gold
-				-- 		19599,	-- Zul'Drak Zephyr Reverse: Gold
-				-- 	}},
-				-- }),
-				-- ach(19721, {	-- Northrend Racing Completionist
-				-- 	-- Meta Achievement
-				-- 	["sym"] = {{"meta_achievement",
-				-- 		19674,	-- Northrend: Bronze
-				-- 		19677,	-- Northrend Advanced: Bronze
-				-- 		19682,	-- Northrend Reverse: Bronze
-				-- 	}},
-				-- }),
-				-- ach(19722, {	-- Northrend Racing Completionist: Silver
-				-- 	-- Meta Achievement
-				-- 	["sym"] = {{"meta_achievement",
-				-- 		19675,	-- Northrend: Silver
-				-- 		19679,	-- Northrend Advanced: Silver
-				-- 		19683,	-- Northrend Reverse: Silver
-				-- 	}},
-				-- }),
-				-- ach(19723, {	-- Northrend Racing Completionist: Gold
-				-- 	-- Meta Achievement
-				-- 	["sym"] = {{"meta_achievement",
-				-- 		19676,	-- Northrend: Gold
-				-- 		19681,	-- Northrend Advanced: Gold
-				-- 		19684,	-- Northrend Reverse: Gold
-				-- 	}},
-				-- }),
+				ach(19674, {	-- Northrend: Bronze
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						19582,	-- Blackriver Burble: Bronze
+						19627,	-- Citadel Sortie: Bronze
+						19665,	-- Coldarra Climb: Bronze
+						19609,	-- Crystalsong Crisis: Bronze
+						19618,	-- Dragonblight Dragon Flight: Bronze
+						19647,	-- Geothermal Jaunt: Bronze
+						19656,	-- Gundrak Fast Track: Bronze
+						19600,	-- Makers Marathon: Bronze
+						19636,	-- Sholazar Spree: Bronze
+						19591,	-- Zul'Drak Zephyr: Bronze
+					}},
+				}),
+				ach(19675, {	-- Northrend: Silver
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						19583,	-- Blackriver Burble: Silver
+						19628,	-- Citadel Sortie: Silver
+						19666,	-- Coldarra Climb: Silver
+						19610,	-- Crystalsong Crisis: Silver
+						19619,	-- Dragonblight Dragon Flight: Silver
+						19648,	-- Geothermal Jaunt: Silver
+						19657,	-- Gundrak Fast Track: Silver
+						19601,	-- Makers Marathon: Silver
+						19637,	-- Sholazar Spree: Silver
+						19592,	-- Zul'Drak Zephyr: Silver
+					}},
+				}),
+				ach(19676, {	-- Northrend: Gold
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						19584,	-- Blackriver Burble: Gold
+						19629,	-- Citadel Sortie: Gold
+						19667,	-- Coldarra Climb: Gold
+						19611,	-- Crystalsong Crisis: Gold
+						19620,	-- Dragonblight Dragon Flight: Gold
+						19649,	-- Geothermal Jaunt: Gold
+						19658,	-- Gundrak Fast Track: Gold
+						19602,	-- Makers Marathon: Gold
+						19638,	-- Sholazar Spree: Gold
+						19593,	-- Zul'Drak Zephyr: Gold
+					}},
+				}),
+				ach(19677, {	-- Northrend Advanced: Bronze
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						19585,	-- Blackriver Burble Advanced: Bronze
+						19630,	-- Citadel Sortie Advanced: Bronze
+						19668,	-- Coldarra Climb Advanced: Bronze
+						19612,	-- Crystalsong Crisis Advanced: Bronze
+						19621,	-- Dragonblight Dragon Flight Advanced: Bronze
+						19650,	-- Geothermal Jaunt Advanced: Bronze
+						19659,	-- Gundrak Fast Track Advanced: Bronze
+						19603,	-- Makers Marathon Advanced: Bronze
+						19639,	-- Sholazar Spree Advanced: Bronze
+						19594,	-- Zul'Drak Zephyr Advanced: Bronze
+					}},
+				}),
+				ach(19679, {	-- Northrend Advanced: Silver
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						19586,	-- Blackriver Burble Advanced: Silver
+						19631,	-- Citadel Sortie Advanced: Silver
+						19669,	-- Coldarra Climb Advanced: Silver
+						19613,	-- Crystalsong Crisis Advanced: Silver
+						19622,	-- Dragonblight Dragon Flight Advanced: Silver
+						19651,	-- Geothermal Jaunt Advanced: Silver
+						19660,	-- Gundrak Fast Track Advanced: Silver
+						19604,	-- Makers Marathon Advanced: Silver
+						19640,	-- Sholazar Spree Advanced: Silver
+						19595,	-- Zul'Drak Zephyr Advanced: Silver
+					}},
+				}),
+				ach(19681, {	-- Northrend Advanced: Gold
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						19587,	-- Blackriver Burble Advanced: Gold
+						19631,	-- Citadel Sortie Advanced: Gold
+						19670,	-- Coldarra Climb Advanced: Gold
+						19614,	-- Crystalsong Crisis Advanced: Gold
+						19623,	-- Dragonblight Dragon Flight Advanced: Gold
+						19652,	-- Geothermal Jaunt Advanced: Gold
+						19661,	-- Gundrak Fast Track Advanced: Gold
+						19605,	-- Makers Marathon Advanced: Gold
+						19641,	-- Sholazar Spree Advanced: Gold
+						19596,	-- Zul'Drak Zephyr Advanced: Gold
+					}},
+				}),
+				ach(19682, {	-- Northrend Reverse: Bronze
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						19588,	-- Blackriver Burble Reverse: Bronze
+						19633,	-- Citadel Sortie Reverse: Bronze
+						19671,	-- Coldarra Climb Reverse: Bronze
+						19615,	-- Crystalsong Crisis Reverse: Bronze
+						19624,	-- Dragonblight Dragon Flight Reverse: Bronze
+						19653,	-- Geothermal Jaunt Reverse: Bronze
+						19662,	-- Gundrak Fast Track Reverse: Bronze
+						19606,	-- Makers Marathon Reverse: Bronze
+						19642,	-- Sholazar Spree Reverse: Bronze
+						19597,	-- Zul'Drak Zephyr Reverse: Bronze
+					}},
+				}),
+				ach(19683, {	-- Northrend Reverse: Silver
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						19589,	-- Blackriver Burble Reverse: Silver
+						19634,	-- Citadel Sortie Reverse: Silver
+						19672,	-- Coldarra Climb Reverse: Silver
+						19616,	-- Crystalsong Crisis Reverse: Silver
+						19625,	-- Dragonblight Dragon Flight Reverse: Silver
+						19654,	-- Geothermal Jaunt Reverse: Silver
+						19663,	-- Gundrak Fast Track Reverse: Silver
+						19607,	-- Makers Marathon Reverse: Silver
+						19643,	-- Sholazar Spree Reverse: Silver
+						19598,	-- Zul'Drak Zephyr Reverse: Silver
+					}},
+				}),
+				ach(19684, {	-- Northrend Reverse: Gold
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						19590,	-- Blackriver Burble Reverse: Gold
+						19635,	-- Citadel Sortie Reverse: Gold
+						19673,	-- Coldarra Climb Reverse: Gold
+						19617,	-- Crystalsong Crisis Reverse: Gold
+						19626,	-- Dragonblight Dragon Flight Reverse: Gold
+						19655,	-- Geothermal Jaunt Reverse: Gold
+						19664,	-- Gundrak Fast Track Reverse: Gold
+						19608,	-- Makers Marathon Reverse: Gold
+						19644,	-- Sholazar Spree Reverse: Gold
+						19599,	-- Zul'Drak Zephyr Reverse: Gold
+					}},
+				}),
+				ach(19721, {	-- Northrend Racing Completionist
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						19674,	-- Northrend: Bronze
+						19677,	-- Northrend Advanced: Bronze
+						19682,	-- Northrend Reverse: Bronze
+					}},
+				}),
+				ach(19722, {	-- Northrend Racing Completionist: Silver
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						19675,	-- Northrend: Silver
+						19679,	-- Northrend Advanced: Silver
+						19683,	-- Northrend Reverse: Silver
+					}},
+				}),
+				ach(19723, {	-- Northrend Racing Completionist: Gold
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						19676,	-- Northrend: Gold
+						19681,	-- Northrend Advanced: Gold
+						19684,	-- Northrend Reverse: Gold
+					}},
+				}),
 			}),
 			n(QUESTS, {
 				-- TODO: Intro quests
@@ -2607,277 +2606,277 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				-- 		currency(RIDERS_OF_AZEROTH_BADGE),
 				-- 	},
 				-- }),
-				-- TODO: QuestIDs, proivder ID, coord
-				-- dragonridingrace(, {	-- Blackriver Burble
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19582),	-- Blackriver Burble: Bronze
-				-- 		ach(19583),	-- Blackriver Burble: Silver
-				-- 		ach(19584),	-- Blackriver Burble: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Blackriver Burble - Advanced
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19585),	-- Blackriver Burble Advanced: Bronze
-				-- 		ach(19586),	-- Blackriver Burble Advanced: Silver
-				-- 		ach(19587),	-- Blackriver Burble Advanced: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Blackriver Burble - Reverse
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19588),	-- Blackriver Burble Reverse: Bronze
-				-- 		ach(19589),	-- Blackriver Burble Reverse: Silver
-				-- 		ach(19590),	-- Blackriver Burble Reverse: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Citadel Sortie
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19627),	-- Citadel Sortie: Bronze
-				-- 		ach(19628),	-- Citadel Sortie: Silver
-				-- 		ach(19629),	-- Citadel Sortie: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Citadel Sortie - Advanced
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19630),	-- Citadel Sortie Advanced: Bronze
-				-- 		ach(19631),	-- Citadel Sortie Advanced: Silver
-				-- 		ach(19631),	-- Citadel Sortie Advanced: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Citadel Sortie - Reverse
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19633),	-- Citadel Sortie Reverse: Bronze
-				-- 		ach(19634),	-- Citadel Sortie Reverse: Silver
-				-- 		ach(19635),	-- Citadel Sortie Reverse: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Coldarra Climb
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19665),	-- Coldarra Climb: Bronze
-				-- 		ach(19666),	-- Coldarra Climb: Silver
-				-- 		ach(19667),	-- Coldarra Climb: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Coldarra Climb - Advanced
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19668),	-- Coldarra Climb Advanced: Bronze
-				-- 		ach(19669),	-- Coldarra Climb Advanced: Silver
-				-- 		ach(19670),	-- Coldarra Climb Advanced: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Coldarra Climb - Reverse
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19671),	-- Coldarra Climb Reverse: Bronze
-				-- 		ach(19672),	-- Coldarra Climb Reverse: Silver
-				-- 		ach(19673),	-- Coldarra Climb Reverse: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Crystalsong Crisis
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19609),	-- Crystalsong Crisis: Bronze
-				-- 		ach(19610),	-- Crystalsong Crisis: Silver
-				-- 		ach(19611),	-- Crystalsong Crisis: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Crystalsong Crisis - Advanced
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19612),	-- Crystalsong Crisis Advanced: Bronze
-				-- 		ach(19613),	-- Crystalsong Crisis Advanced: Silver
-				-- 		ach(19614),	-- Crystalsong Crisis Advanced: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Crystalsong Crisis - Reverse
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19615),	-- Crystalsong Crisis Reverse: Bronze
-				-- 		ach(19616),	-- Crystalsong Crisis Reverse: Silver
-				-- 		ach(19617),	-- Crystalsong Crisis Reverse: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Dragonblight Dragon Flight
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19618),	-- Dragonblight Dragon Flight: Bronze
-				-- 		ach(19619),	-- Dragonblight Dragon Flight: Silver
-				-- 		ach(19620),	-- Dragonblight Dragon Flight: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Dragonblight Dragon Flight - Advanced
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19621),	-- Dragonblight Dragon Flight Advanced: Bronze
-				-- 		ach(19622),	-- Dragonblight Dragon Flight Advanced: Silver
-				-- 		ach(19623),	-- Dragonblight Dragon Flight Advanced: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Dragonblight Dragon Flight - Reverse
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19624),	-- Dragonblight Dragon Flight Reverse: Bronze
-				-- 		ach(19625),	-- Dragonblight Dragon Flight Reverse: Silver
-				-- 		ach(19626),	-- Dragonblight Dragon Flight Reverse: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Geothermal Jaunt
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19647),	-- Geothermal Jaunt: Bronze
-				-- 		ach(19648),	-- Geothermal Jaunt: Silver
-				-- 		ach(19649),	-- Geothermal Jaunt: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Geothermal Jaunt - Advanced
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19650),	-- Geothermal Jaunt Advanced: Bronze
-				-- 		ach(19651),	-- Geothermal Jaunt Advanced: Silver
-				-- 		ach(19652),	-- Geothermal Jaunt Advanced: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Geothermal Jaunt - Reverse
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19653),	-- Geothermal Jaunt Reverse: Bronze
-				-- 		ach(19654),	-- Geothermal Jaunt Reverse: Silver
-				-- 		ach(19655),	-- Geothermal Jaunt Reverse: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Gundrak Fast Track
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19656),	-- Gundrak Fast Track: Bronze
-				-- 		ach(19657),	-- Gundrak Fast Track: Silver
-				-- 		ach(19658),	-- Gundrak Fast Track: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Gundrak Fast Track - Advanced
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19659),	-- Gundrak Fast Track Advanced: Bronze
-				-- 		ach(19660),	-- Gundrak Fast Track Advanced: Silver
-				-- 		ach(19661),	-- Gundrak Fast Track Advanced: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Gundrak Fast Track - Reverse
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19662),	-- Gundrak Fast Track Reverse: Bronze
-				-- 		ach(19663),	-- Gundrak Fast Track Reverse: Silver
-				-- 		ach(19664),	-- Gundrak Fast Track Reverse: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Makers Marathon
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19600),	-- Makers Marathon: Bronze
-				-- 		ach(19601),	-- Makers Marathon: Silver
-				-- 		ach(19602),	-- Makers Marathon: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Makers Marathon - Advanced
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19603),	-- Makers Marathon Advanced: Bronze
-				-- 		ach(19604),	-- Makers Marathon Advanced: Silver
-				-- 		ach(19605),	-- Makers Marathon Advanced: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Makers Marathon - Reverse
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19606),	-- Makers Marathon Reverse: Bronze
-				-- 		ach(19607),	-- Makers Marathon Reverse: Silver
-				-- 		ach(19608),	-- Makers Marathon Reverse: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Sholazar Spree
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19636),	-- Sholazar Spree: Bronze
-				-- 		ach(19637),	-- Sholazar Spree: Silver
-				-- 		ach(19638),	-- Sholazar Spree: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Sholazar Spree - Advanced
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19639),	-- Sholazar Spree Advanced: Bronze
-				-- 		ach(19640),	-- Sholazar Spree Advanced: Silver
-				-- 		ach(19641),	-- Sholazar Spree Advanced: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Sholazar Spree - Reverse
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19642),	-- Sholazar Spree Reverse: Bronze
-				-- 		ach(19643),	-- Sholazar Spree Reverse: Silver
-				-- 		ach(19644),	-- Sholazar Spree Reverse: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Zul'Drak Zephyr
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19591),	-- Zul'Drak Zephyr: Bronze
-				-- 		ach(19592),	-- Zul'Drak Zephyr: Silver
-				-- 		ach(19593),	-- Zul'Drak Zephyr: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Zul'Drak Zephyr - Advanced
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19594),	-- Zul'Drak Zephyr Advanced: Bronze
-				-- 		ach(19595),	-- Zul'Drak Zephyr Advanced: Silver
-				-- 		ach(19596),	-- Zul'Drak Zephyr Advanced: Gold
-				-- 	},
-				-- }),
-				-- dragonridingrace(, {	-- Zul'Drak Zephyr - Reverse
-				-- 	--["provider"] = { "n",  },	-- Bronze Timekeeper
-				-- 	--["coord"] = {  },
-				-- 	["g"] = {
-				-- 		ach(19597),	-- Zul'Drak Zephyr Reverse: Bronze
-				-- 		ach(19598),	-- Zul'Drak Zephyr Reverse: Silver
-				-- 		ach(19599),	-- Zul'Drak Zephyr Reverse: Gold
-				-- 	},
-				-- }),
+				-- TODO: Proivder ID, coords
+				dragonridingrace(78334, {	-- Blackriver Burble
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19582),	-- Blackriver Burble: Bronze
+						ach(19583),	-- Blackriver Burble: Silver
+						ach(19584),	-- Blackriver Burble: Gold
+					},
+				}),
+				dragonridingrace(78335, {	-- Blackriver Burble - Advanced
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19585),	-- Blackriver Burble Advanced: Bronze
+						ach(19586),	-- Blackriver Burble Advanced: Silver
+						ach(19587),	-- Blackriver Burble Advanced: Gold
+					},
+				}),
+				dragonridingrace(78336, {	-- Blackriver Burble - Reverse
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19588),	-- Blackriver Burble Reverse: Bronze
+						ach(19589),	-- Blackriver Burble Reverse: Silver
+						ach(19590),	-- Blackriver Burble Reverse: Gold
+					},
+				}),
+				dragonridingrace(78499, {	-- Citadel Sortie
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19627),	-- Citadel Sortie: Bronze
+						ach(19628),	-- Citadel Sortie: Silver
+						ach(19629),	-- Citadel Sortie: Gold
+					},
+				}),
+				dragonridingrace(78500, {	-- Citadel Sortie - Advanced
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19630),	-- Citadel Sortie Advanced: Bronze
+						ach(19631),	-- Citadel Sortie Advanced: Silver
+						ach(19631),	-- Citadel Sortie Advanced: Gold
+					},
+				}),
+				dragonridingrace(78501, {	-- Citadel Sortie - Reverse
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19633),	-- Citadel Sortie Reverse: Bronze
+						ach(19634),	-- Citadel Sortie Reverse: Silver
+						ach(19635),	-- Citadel Sortie Reverse: Gold
+					},
+				}),
+				dragonridingrace(79272, {	-- Coldarra Climb
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19665),	-- Coldarra Climb: Bronze
+						ach(19666),	-- Coldarra Climb: Silver
+						ach(19667),	-- Coldarra Climb: Gold
+					},
+				}),
+				dragonridingrace(79273, {	-- Coldarra Climb - Advanced
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19668),	-- Coldarra Climb Advanced: Bronze
+						ach(19669),	-- Coldarra Climb Advanced: Silver
+						ach(19670),	-- Coldarra Climb Advanced: Gold
+					},
+				}),
+				dragonridingrace(79274, {	-- Coldarra Climb - Reverse
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19671),	-- Coldarra Climb Reverse: Bronze
+						ach(19672),	-- Coldarra Climb Reverse: Silver
+						ach(19673),	-- Coldarra Climb Reverse: Gold
+					},
+				}),
+				dragonridingrace(78441, {	-- Crystalsong Crisis
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19609),	-- Crystalsong Crisis: Bronze
+						ach(19610),	-- Crystalsong Crisis: Silver
+						ach(19611),	-- Crystalsong Crisis: Gold
+					},
+				}),
+				dragonridingrace(78442, {	-- Crystalsong Crisis - Advanced
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19612),	-- Crystalsong Crisis Advanced: Bronze
+						ach(19613),	-- Crystalsong Crisis Advanced: Silver
+						ach(19614),	-- Crystalsong Crisis Advanced: Gold
+					},
+				}),
+				dragonridingrace(78443, {	-- Crystalsong Crisis - Reverse
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19615),	-- Crystalsong Crisis Reverse: Bronze
+						ach(19616),	-- Crystalsong Crisis Reverse: Silver
+						ach(19617),	-- Crystalsong Crisis Reverse: Gold
+					},
+				}),
+				dragonridingrace(78454, {	-- Dragonblight Dragon Flight
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19618),	-- Dragonblight Dragon Flight: Bronze
+						ach(19619),	-- Dragonblight Dragon Flight: Silver
+						ach(19620),	-- Dragonblight Dragon Flight: Gold
+					},
+				}),
+				dragonridingrace(78455, {	-- Dragonblight Dragon Flight - Advanced
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19621),	-- Dragonblight Dragon Flight Advanced: Bronze
+						ach(19622),	-- Dragonblight Dragon Flight Advanced: Silver
+						ach(19623),	-- Dragonblight Dragon Flight Advanced: Gold
+					},
+				}),
+				dragonridingrace(78456, {	-- Dragonblight Dragon Flight - Reverse
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19624),	-- Dragonblight Dragon Flight Reverse: Bronze
+						ach(19625),	-- Dragonblight Dragon Flight Reverse: Silver
+						ach(19626),	-- Dragonblight Dragon Flight Reverse: Gold
+					},
+				}),
+				dragonridingrace(78608, {	-- Geothermal Jaunt
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19647),	-- Geothermal Jaunt: Bronze
+						ach(19648),	-- Geothermal Jaunt: Silver
+						ach(19649),	-- Geothermal Jaunt: Gold
+					},
+				}),
+				dragonridingrace(78609, {	-- Geothermal Jaunt - Advanced
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19650),	-- Geothermal Jaunt Advanced: Bronze
+						ach(19651),	-- Geothermal Jaunt Advanced: Silver
+						ach(19652),	-- Geothermal Jaunt Advanced: Gold
+					},
+				}),
+				dragonridingrace(78610, {	-- Geothermal Jaunt - Reverse
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19653),	-- Geothermal Jaunt Reverse: Bronze
+						ach(19654),	-- Geothermal Jaunt Reverse: Silver
+						ach(19655),	-- Geothermal Jaunt Reverse: Gold
+					},
+				}),
+				dragonridingrace(79268, {	-- Gundrak Fast Track
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19656),	-- Gundrak Fast Track: Bronze
+						ach(19657),	-- Gundrak Fast Track: Silver
+						ach(19658),	-- Gundrak Fast Track: Gold
+					},
+				}),
+				dragonridingrace(79269, {	-- Gundrak Fast Track - Advanced
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19659),	-- Gundrak Fast Track Advanced: Bronze
+						ach(19660),	-- Gundrak Fast Track Advanced: Silver
+						ach(19661),	-- Gundrak Fast Track Advanced: Gold
+					},
+				}),
+				dragonridingrace(79270, {	-- Gundrak Fast Track - Reverse
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19662),	-- Gundrak Fast Track Reverse: Bronze
+						ach(19663),	-- Gundrak Fast Track Reverse: Silver
+						ach(19664),	-- Gundrak Fast Track Reverse: Gold
+					},
+				}),
+				dragonridingrace(78389, {	-- Makers Marathon
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19600),	-- Makers Marathon: Bronze
+						ach(19601),	-- Makers Marathon: Silver
+						ach(19602),	-- Makers Marathon: Gold
+					},
+				}),
+				dragonridingrace(78390, {	-- Makers Marathon - Advanced
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19603),	-- Makers Marathon Advanced: Bronze
+						ach(19604),	-- Makers Marathon Advanced: Silver
+						ach(19605),	-- Makers Marathon Advanced: Gold
+					},
+				}),
+				dragonridingrace(78391, {	-- Makers Marathon - Reverse
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19606),	-- Makers Marathon Reverse: Bronze
+						ach(19607),	-- Makers Marathon Reverse: Silver
+						ach(19608),	-- Makers Marathon Reverse: Gold
+					},
+				}),
+				dragonridingrace(78558, {	-- Sholazar Spree
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19636),	-- Sholazar Spree: Bronze
+						ach(19637),	-- Sholazar Spree: Silver
+						ach(19638),	-- Sholazar Spree: Gold
+					},
+				}),
+				dragonridingrace(78559, {	-- Sholazar Spree - Advanced
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19639),	-- Sholazar Spree Advanced: Bronze
+						ach(19640),	-- Sholazar Spree Advanced: Silver
+						ach(19641),	-- Sholazar Spree Advanced: Gold
+					},
+				}),
+				dragonridingrace(78560, {	-- Sholazar Spree - Reverse
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19642),	-- Sholazar Spree Reverse: Bronze
+						ach(19643),	-- Sholazar Spree Reverse: Silver
+						ach(19644),	-- Sholazar Spree Reverse: Gold
+					},
+				}),
+				dragonridingrace(78346, {	-- Zul'Drak Zephyr
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19591),	-- Zul'Drak Zephyr: Bronze
+						ach(19592),	-- Zul'Drak Zephyr: Silver
+						ach(19593),	-- Zul'Drak Zephyr: Gold
+					},
+				}),
+				dragonridingrace(78347, {	-- Zul'Drak Zephyr - Advanced
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19594),	-- Zul'Drak Zephyr Advanced: Bronze
+						ach(19595),	-- Zul'Drak Zephyr Advanced: Silver
+						ach(19596),	-- Zul'Drak Zephyr Advanced: Gold
+					},
+				}),
+				dragonridingrace(78349, {	-- Zul'Drak Zephyr - Reverse
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19597),	-- Zul'Drak Zephyr Reverse: Bronze
+						ach(19598),	-- Zul'Drak Zephyr Reverse: Silver
+						ach(19599),	-- Zul'Drak Zephyr Reverse: Gold
+					},
+				}),
 			}),
 			n(VENDORS, {
 				n(206744, {	-- Maztha <Riders of Azeroth>
