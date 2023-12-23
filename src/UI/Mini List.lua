@@ -152,6 +152,9 @@ local CachedMapData = setmetatable({}, {
 					local headerID = GetRelativeValue(group, "headerID");
 					if headerID then
 						MergeIntoHeader(headerID, clone);
+						if group.parent and group.parent.isRaid then
+							headers[headerID].isRaid = true;
+						end
 					else
 						MergeObject(groups, clone);
 					end
