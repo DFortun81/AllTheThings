@@ -574,6 +574,7 @@ i(194538);	-- Fiddle with Khaz'gorite Fabric Cutters
 i(194709);	-- Prospecting
 i(194973);	-- Reclaim Concoctions
 i(198390);	-- Milling
+i(200685);	-- Enchanted Compass
 i(200764);	-- Slimy Shinies
 i(200768);	-- Assorted Salamanther Lures
 i(200769);	-- Ceramic Shards

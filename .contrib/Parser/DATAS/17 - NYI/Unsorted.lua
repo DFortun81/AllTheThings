@@ -1848,7 +1848,6 @@ root(ROOTS.Unsorted, {
 				i(201327),	-- Emerald Dreamtime
 				i(195572),	-- Empty Elixir
 				i(197854),	-- Enchanted Argali Tenderloin
-				i(200685),	-- Enchanted Compass
 				i(200767),	-- Energized Crystal
 				i(200818),	-- Eternal Flame
 				i(200929),	-- Everglow Nectar
