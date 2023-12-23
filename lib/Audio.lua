@@ -143,26 +143,7 @@ function api:PlayReportSound()
 end
 
 -- Deprecated functions (they will still work for now)
-function app:PlayCompleteSound()
-	PlayAudio("COMPLETE", "Celebrate");
-end
-function app:PlayDeathSound()
-	PlayAudio("DEATH", "PlayDeathSound");
-end
-function app:PlayFanfare()
-	PlayAudio("FANFARE", "Celebrate");
-end
-function app:PlayRareFindSound()
-	PlayAudio("RAREFIND", "Celebrate");
-end
-function app:PlayRemoveSound()
-	PlayAudio("REMOVE", "Warn:Removed");
-end
-function app:PlayReportSound()
-	if app.Settings:GetTooltipSetting("Warn:Removed") or app.Settings:GetTooltipSetting("Celebrate") then
-		PlayAudio("REPORT");
-	end
-end
+-- Crieve NOTE: Not sure if that comment above also applies to the following functions too.
 
 -- Accepts various 'type' values to insert a Sound into the respective table
 function app.AddSound(tableName, sound)

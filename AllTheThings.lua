@@ -1970,7 +1970,7 @@ PrintQuestInfo = function(questID, new, info)
 		local chatMsg;
 		if not questRef or questRef._missing then
 			-- Play a sound when a reportable error is found, if any sound setting is enabled
-			app:PlayReportSound();
+			app.Audio:PlayReportSound();
 			-- Linkify the output
 			local popupID = "quest-" .. questID .. questChange;
 			chatMsg = app:Linkify(questID .. " (Not in ATT " .. app.Version .. ")", app.Colors.ChatLinkError, "dialog:" .. popupID);
@@ -1981,7 +1981,7 @@ PrintQuestInfo = function(questID, new, info)
 			-- give a chat output if the user has just interacted with a quest flagged as NYI
 			if GetRelativeField(questRef, "u", 1) then
 				-- Play a sound when a reportable error is found, if any sound setting is enabled
-				app:PlayReportSound();
+				app.Audio:PlayReportSound();
 				-- Linkify the output
 				local popupID = "quest-" .. questID .. questChange;
 				chatMsg = app:Linkify(questID .. " [NYI] ATT " .. app.Version, app.Colors.ChatLinkError, "dialog:" .. popupID);
@@ -2215,7 +2215,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 			)
 		then
 			-- Play a sound when a reportable error is found, if any sound setting is enabled
-			app:PlayReportSound();
+			app.Audio:PlayReportSound();
 
 			local popupID = "quest-filter-" .. id;
 			local checks = {
@@ -7760,7 +7760,7 @@ local function PrintBreadcrumbWarning(title, questID, group)
 		group.text,
 		app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)))
 
-	app:PlayRemoveSound()
+	app.Audio:PlayRemoveSound()
 end
 -- Will print a warning message and play a warning sound if the given QuestID being completed will prevent being able to complete a breadcrumb
 -- (as far as ATT is capable of knowing)
@@ -8974,7 +8974,7 @@ app.events.NEW_PET_ADDED = function(petID)
 	if speciesID and C_PetJournal_GetNumCollectedInfo(speciesID) > 0 and not rawget(CollectedSpeciesHelper, speciesID) then
 		CollectedSpeciesHelper[speciesID] = 1;
 		UpdateRawID("speciesID", speciesID);
-		app:PlayFanfare();
+		app.Audio:PlayFanfare();
 		app:TakeScreenShot("BattlePets");
 		wipe(searchCache);
 	end
@@ -8988,7 +8988,7 @@ app.events.PET_JOURNAL_PET_DELETED = function(petID)
 		-- app.PrintDebug("Pet Missing",speciesID);
 		CollectedSpeciesHelper[speciesID] = nil;
 		UpdateRawID("speciesID", speciesID);
-		app:PlayRemoveSound();
+		app.Audio:PlayRemoveSound();
 	end
 end
 
@@ -9375,7 +9375,7 @@ app.CreateDeathClass = function()
 end
 app:RegisterEvent("PLAYER_DEAD");
 app.events.PLAYER_DEAD = function()
-	app:PlayDeathSound();
+	app.Audio:PlayDeathSound();
 end
 end)();
 
@@ -11923,7 +11923,7 @@ local RefreshMounts = function(newMountID)
 	end
 	UpdateRawIDs("spellID", newMounts);
 	if newMounts and #newMounts > 0 then
-		app:PlayRareFindSound();
+		app.Audio:PlayRareFindSound();
 		app:TakeScreenShot("Mounts");
 	end
 end
@@ -13491,9 +13491,9 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 				print(format(L["ITEM_ID_ADDED_MISSING"], link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
 
 				-- Play a sound when a reportable error is found, if any sound setting is enabled
-				app:PlayReportSound();
+				app.Audio:PlayReportSound();
 			end
-			Callback(app.PlayFanfare);
+			Callback(app.Audio.PlayFanfare);
 			Callback(app.TakeScreenShot, "Transmog");
 		end
 
@@ -13540,9 +13540,9 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 				print(format(L[newAppearancesLearned > 0 and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"], link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, newAppearancesLearned));
 
 				-- Play a sound when a reportable error is found, if any sound setting is enabled
-				app:PlayReportSound();
+				app.Audio:PlayReportSound();
 			end
-			Callback(app.PlayFanfare);
+			Callback(app.Audio.PlayFanfare);
 			Callback(app.TakeScreenShot, "Transmog");
 		end
 
@@ -16146,7 +16146,7 @@ local function UpdateWindow(self, force, got)
 						tinsert(self.rowData, data);
 					end
 					if self.missingData then
-						if got and visible then app:PlayCompleteSound(); end
+						if got and visible then app.Audio:PlayCompleteSound(); end
 						self.missingData = nil;
 					end
 					-- only add this info row if there is actually nothing visible in the list
@@ -20136,7 +20136,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				-- app.PrintDebug("Done. learned",#learned)
 				UpdateRawIDs("spellID", learned);
 				if #learned > 0 then
-					app:PlayFanfare();
+					app.Audio:PlayFanfare();
 					app:TakeScreenShot("Recipes");
 					self.force = true;
 				end
@@ -20292,7 +20292,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 						app.CurrentCharacter.Spells[spellID] = 1;
 						UpdateRawID("spellID",spellID);
 						if not previousState or not app.Settings.AccountWide.Recipes then
-							app:PlayFanfare();
+							app.Audio:PlayFanfare();
 							app:TakeScreenShot("Recipes");
 							if app.Settings:GetTooltipSetting("Report:Collected") then
 								local link = app:Linkify(spellID, app.Colors.ChatLink, "search:spellID:"..spellID);
@@ -22592,7 +22592,7 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	if itemID then
 		app.RefreshQuestInfo();
 		UpdateRawID("itemID", itemID);
-		app:PlayFanfare();
+		app.Audio:PlayFanfare();
 		app:TakeScreenShot("Heirlooms");
 		wipe(searchCache);
 
@@ -22730,7 +22730,7 @@ app.events.TOYS_UPDATED = function(itemID, new)
 	if itemID and not ATTAccountWideData.Toys[itemID] and PlayerHasToy(itemID) then
 		ATTAccountWideData.Toys[itemID] = 1;
 		UpdateRawID("itemID", itemID);
-		app:PlayFanfare();
+		app.Audio:PlayFanfare();
 		app:TakeScreenShot("Toys");
 		wipe(searchCache);
 
@@ -22798,7 +22798,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 
 		-- Refresh the Data and Cry!
 		UpdateRawIDs("s", unlearnedSourceIDs);
-		Callback(app.PlayRemoveSound);
+		Callback(app.Audio.PlayRemoveSound);
 		wipe(searchCache);
 		SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t0");
 	end

@@ -154,9 +154,9 @@ local function PendingCollectionCoroutine()
 
 		-- Check if there was a mount.
 		if allTypes[app.FilterConstants.MOUNTS] then
-			app:PlayRareFindSound();
+			app.Audio:PlayRareFindSound();
 		else
-			app:PlayFanfare();
+			app.Audio:PlayFanfare();
 		end
 	end
 
@@ -170,7 +170,7 @@ local function PendingCollectionCoroutine()
 	end
 	if any then
 		wipe(pendingRemovals);
-		app:PlayRemoveSound();
+		app.Audio:PlayRemoveSound();
 	end
 end
 local function AddToCollection(group)
@@ -5605,7 +5605,7 @@ if GetStatistic and GetStatistic(60) then
 		return OnUpdateForDeathTrackerLib;
 	end
 	app.events.PLAYER_DEAD = function()
-		app:PlayDeathSound();
+		app.Audio:PlayDeathSound();
 	end
 else
 	-- Oh boy, we have to track it ourselves!
@@ -5625,7 +5625,7 @@ else
 	app.events.PLAYER_DEAD = function()
 		ATTAccountWideData.Deaths = ATTAccountWideData.Deaths + 1;
 		app.CurrentCharacter.Deaths = app.CurrentCharacter.Deaths + 1;
-		app:PlayDeathSound();
+		app.Audio:PlayDeathSound();
 		app:RefreshDataQuietly("PLAYER_DEAD");
 	end
 end
@@ -11438,7 +11438,7 @@ local function UpdateWindow(self, force, trigger)
 					--print("UNSETTING MISSING DATA", trigger, self.AllowCompleteSound);
 					if trigger and self.AllowCompleteSound then
 						--print("PLAY COMPLETE SOUND", self.data.text);
-						app:PlayCompleteSound();
+						app.Audio:PlayCompleteSound();
 					end
 				end
 				if not self.ignoreNoEntries then
