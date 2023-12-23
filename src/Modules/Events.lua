@@ -143,6 +143,9 @@ local CustomEventHelpers = {
 	[1271] = { 559,562,587,643,1056,1263 },	-- EVENTS.TIMEWALKING
 	[133701] = { 1395, 1400, 1407, 1429, 1430, 1431 },	-- EVENTS.DRAGONRIDING_CUP
 };
+local SortByStart = function(a, b)
+	return a.start < b.start;
+end;
 setmetatable(EventInformation, { __index = function(t, id)
 	-- app.PrintDebug("EventInformation.__index",id)
 	local info = (SessionEventCache or GetEventCache())[id];
@@ -163,9 +166,7 @@ setmetatable(EventInformation, { __index = function(t, id)
 				end
 			end
 			if #times > 0 then
-				app.Sort(times, function(a, b)
-					return a.start < b.start;
-				end);
+				app.Sort(times, SortByStart);
 				info = { name = times[1].name, icon = times[1].icon, times = times };
 				t[id] = info;
 				return info;

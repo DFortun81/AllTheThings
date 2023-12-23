@@ -7255,7 +7255,7 @@ local onMapUpdate = function(t)
 		end
 	end
 	if explorationHeader and explorationHeader.g then
-		app.Sort(explorationHeader.g, app.SortDefaults.Text);
+		app.SortGroupDelayed(explorationHeader, "text");
 	end
 	rawset(t, "OnUpdate", nil);
 	--app:StartATTCoroutine("Simplifying Exploration Data", simplifyExplorationData);
@@ -7363,7 +7363,7 @@ app.CreateMap = function(id, t)
 			end
 		end
 		if explorationHeader and explorationHeader.g then
-			app.Sort(explorationHeader.g, app.SortDefaults.Text);
+			app.SortGroupDelayed(explorationHeader, "text");
 		end
 		if not rawget(t, "OnUpdate") then
 			t.OnUpdate = onMapUpdate;
@@ -11308,6 +11308,11 @@ local function ProcessGroup(data, object)
 	if app.VisibilityFilter(object) then
 		data[#data + 1] = object;
 		if object.g and object.expanded then
+			-- Delayed sort operation for this group prior to being shown
+			local sortInfo = object.SortInfo;
+			if sortInfo then
+				app.SortGroup(object, sortInfo[1], sortInfo[2], sortInfo[3], sortInfo[4]);
+			end
 			for i=1,#object.g,1 do
 				ProcessGroup(data, object.g[i]);
 			end

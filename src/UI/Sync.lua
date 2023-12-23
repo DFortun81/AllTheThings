@@ -1015,6 +1015,8 @@ app:GetWindow("Synchronization", {
 										OnClick = OnClickForCharacter,
 										OnTooltip = OnTooltipForCharacter,
 										OnUpdate = app.AlwaysShowUpdate,
+										name = characterData.name,
+										lvl = characterData.lvl,
 										trackable = true,
 										visible = true,
 										parent = data,
@@ -1034,7 +1036,7 @@ app:GetWindow("Synchronization", {
 								parent = data,
 							});
 						else
-							app.Sort(g, app.SortDefaults.Text);
+							app.SortGroupDelayed(data, "textAndLvl");
 						end
 						return app.AlwaysShowUpdate(data);
 					end,

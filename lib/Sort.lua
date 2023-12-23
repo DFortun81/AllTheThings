@@ -14,6 +14,7 @@ local ipairs, pairs, tostring, type, string_lower, table_sort, pcall
 -- Module locals
 
 -- Sorting Logic
+local sortA, sortB;
 local calculateAccessibility = function(source)
 	local score = 0;
 	if source.nmr then
@@ -39,9 +40,6 @@ local calculateAccessibility = function(source)
 		end
 	end
 	return score;
-end
-local sortByAccessibility = function(a, b)
-	return calculateAccessibility(a) <= calculateAccessibility(b);
 end
 local defaultComparison = function(a,b)
 	-- If either object doesn't exist
@@ -105,124 +103,181 @@ local defaultComparison = function(a,b)
 	bcomp = string_lower(tostring(b.name));
 	return acomp < bcomp;
 end
-local defaultTextComparison = function(a,b)
-	-- If either object doesn't exist
-	if a then
-		if not b then
-			return true;
-		end
-	elseif b then
-		return false;
-	else
-		-- neither a or b exists, equality returns false
-		return false;
-	end
-	-- Any two similar-type groups with text
-	a = string_lower(tostring(a));
-	b = string_lower(tostring(b));
-	return a < b;
-end
-local defaultNameComparison = function(a,b)
-	-- If either object doesn't exist
-	if a then
-		if not b then
-			return true;
-		end
-	elseif b then
-		return false;
-	else
-		-- neither a or b exists, equality returns false
-		return false;
-	end
-	-- Any two similar-type groups with text
-	a = string_lower(tostring(a.name));
-	b = string_lower(tostring(b.name));
-	return a < b;
-end
-local defaultValueComparison = function(a,b)
-	-- If either object doesn't exist
-	if a then
-		if not b then
-			return true;
-		end
-	elseif b then
-		return false;
-	else
-		-- neither a or b exists, equality returns false
-		return false;
-	end
-	return a < b;
-end
-local defaultHierarchyComparison = function(a,b)
-	-- If either object doesn't exist
-	if a then
-		if not b then
-			return true;
-		end
-	elseif b then
-		return false;
-	else
-		-- neither a or b exists, equality returns false
-		return false;
-	end
-	local acomp, bcomp;
-	acomp = a.g and #a.g or 0;
-	bcomp = b.g and #b.g or 0;
-	return acomp < bcomp;
-end
-local defaultTotalComparison = function(a,b)
-	-- If either object doesn't exist
-	if a then
-		if not b then
-			return true;
-		end
-	elseif b then
-		return false;
-	else
-		-- neither a or b exists, equality returns false
-		return false;
-	end
-	local acomp, bcomp;
-	acomp = a.total or 0;
-	bcomp = b.total or 0;
-	return acomp < bcomp;
-end
-local defaultEventStartComparison = function(a,b)
-	-- If either object doesn't exist
-	if a then
-		if not b then
-			return true;
-		end
-	elseif b then
-		return false;
-	else
-		-- neither a or b exists, equality returns false
-		return false;
-	end
-	local acomp, bcomp;
-	acomp = a.nextEvent;
-	acomp = acomp and acomp.start or 0;
-	bcomp = b.nextEvent;
-	bcomp = bcomp and bcomp.start or 0;
-	return acomp < bcomp;
-end
-app.SortDefaults = {
-	Accessibility = sortByAccessibility,
+app.SortDefaults = setmetatable({
+	Accessibility = function(a, b)
+		return calculateAccessibility(a) <= calculateAccessibility(b);
+	end,
 	Global = defaultComparison,
-	Text = defaultTextComparison,
-	Name = defaultNameComparison,
-	Value = defaultValueComparison,
+	Text = function(a,b)
+		-- If either object doesn't exist
+		if a then
+			if not b then
+				return true;
+			end
+		elseif b then
+			return false;
+		else
+			-- neither a or b exists, equality returns false
+			return false;
+		end
+		-- Any two similar-type groups with text
+		a = string_lower(tostring(a));
+		b = string_lower(tostring(b));
+		return a < b;
+	end,
+	Name = function(a,b)
+		-- If either object doesn't exist
+		if a then
+			if not b then
+				return true;
+			end
+		elseif b then
+			return false;
+		else
+			-- neither a or b exists, equality returns false
+			return false;
+		end
+		-- Any two similar-type groups with text
+		a = string_lower(tostring(a.name));
+		b = string_lower(tostring(b.name));
+		return a < b;
+	end,
+	Value = function(a,b)
+		-- If either object doesn't exist
+		if a then
+			if not b then
+				return true;
+			end
+		elseif b then
+			return false;
+		else
+			-- neither a or b exists, equality returns false
+			return false;
+		end
+		return a < b;
+	end,
 	-- Sorts objects first by whether they do not have sub-groups [.g] defined
-	Hierarchy = defaultHierarchyComparison,
+	Hierarchy = function(a,b)
+		-- If either object doesn't exist
+		if a then
+			if not b then
+				return true;
+			end
+		elseif b then
+			return false;
+		else
+			-- neither a or b exists, equality returns false
+			return false;
+		end
+		local acomp, bcomp;
+		acomp = a.g and #a.g or 0;
+		bcomp = b.g and #b.g or 0;
+		return acomp < bcomp;
+	end,
 	-- Sorts objects first by how many total collectibles they contain
-	Total = defaultTotalComparison,
+	Total = function(a,b)
+		-- If either object doesn't exist
+		if a then
+			if not b then
+				return true;
+			end
+		elseif b then
+			return false;
+		else
+			-- neither a or b exists, equality returns false
+			return false;
+		end
+		local acomp, bcomp;
+		acomp = a.total or 0;
+		bcomp = b.total or 0;
+		return acomp < bcomp;
+	end,
 	-- Sorts objects first by their nextEvent.Start
-	EventStart = defaultEventStartComparison,
-};
+	EventStart = function(a,b)
+		-- If either object doesn't exist
+		if a then
+			if not b then
+				return true;
+			end
+		elseif b then
+			return false;
+		else
+			-- neither a or b exists, equality returns false
+			return false;
+		end
+		local acomp, bcomp;
+		acomp = a.nextEvent;
+		acomp = acomp and acomp.start or 0;
+		bcomp = b.nextEvent;
+		bcomp = bcomp and bcomp.start or 0;
+		return acomp < bcomp;
+	end,
+	name = defaultComparison,
+	text = function(a, b)
+		-- If either object doesn't exist
+		if a then
+			if not b then
+				return true;
+			end
+		elseif b then
+			return false;
+		else
+			-- neither a or b exists, equality returns false
+			return false;
+		end
+		-- Any two similar-type groups with text
+		a = string_lower(tostring(a.text));
+		b = string_lower(tostring(b.text));
+		return a < b;
+	end,
+	textAndLvl = function(a, b)
+		-- If either object doesn't exist
+		if a then
+			if not b then
+				return true;
+			end
+		elseif b then
+			return false;
+		else
+			-- neither a or b exists, equality returns false
+			return false;
+		end
+		sortA = a.lvl or 0;
+		sortB = b.lvl or 0;
+		if sortA < sortB then
+			return false;
+		elseif sortA == sortB then
+			-- Any two similar-type groups with text
+			a = string_lower(tostring(a.name or a.text));
+			b = string_lower(tostring(b.name or b.text));
+			return a < b;
+		else
+			return true;
+		end
+	end,
+}, {
+	__index = function(t, sortType)
+		local method = function(a, b)
+			-- If either object doesn't exist
+			if a then
+				if not b then
+					return true;
+				end
+			elseif b then
+				return false;
+			else
+				-- neither a or b exists, equality returns false
+				return false;
+			end
+			return a[sortType] < b[sortType];
+		end;
+		rawset(t, sortType, method);
+		return method;
+	end,
+});
 local function Sort(t, compare, nested)
 	if t then
-		if not compare then compare = defaultComparison; end
-		table_sort(t, compare);
+		table_sort(t, compare or defaultComparison);
 		if nested then
 			for i=#t,1,-1 do
 				Sort(t[i].g, compare, nested);
@@ -233,7 +288,7 @@ end
 -- Safely-sorts a table using a provided comparison function and whether to propogate to nested groups
 -- Wrapping in a pcall since sometimes the sorted values are able to change while being within the sort method. This causes the 'invalid sort order function' error
 app.Sort = function(t, compare, nested)
-	pcall(Sort, t, compare, nested);
+	return pcall(Sort, t, compare, nested);
 end
 local function GetGroupSortValue(group)
 	-- sub-groups on top
@@ -280,33 +335,21 @@ local function GetGroupSortValue(group)
 		return -2;
 	end
 end
+app.SortDefaults.progress = function(a, b)
+	return GetGroupSortValue(a) > GetGroupSortValue(b);
+end;
 -- Sorts a group using the provided sortType, whether to recurse through nested groups, and whether sorting should only take place given the group having a conditional field
 local function SortGroup(group, sortType, row, recur, conditionField)
+	--print("SortGroup", group.parent and group.parent.text, group.text, sortType, recur, conditionField);
 	if group.g then
 		-- either sort visible groups or by conditional
         if (not conditionField and group.visible) or (conditionField and group[conditionField]) then
 			-- app.PrintDebug("sorting",group.key,group.key and group[group.key],"by",sortType,"recur",recur,"condition",conditionField)
-			if sortType == "name" then
-				app.Sort(group.g);
-			elseif sortType == "progress" then
-				local progA, progB;
-				app.Sort(group.g, function(a, b)
-					progA = GetGroupSortValue(a);
-					progB = GetGroupSortValue(b);
-					return progA > progB;
-				end);
-			else
-				local sortA, sortB;
-				local sortFunc = app.SortDefaults[sortType] or
-					(sortType and function(a, b)
-						sortA = a and tostring(a[sortType]);
-						sortB = b and tostring(b[sortType]);
-						return sortA < sortB;
-					end) or nil;
-				app.Sort(group.g, sortFunc);
+			if app.Sort(group.g, app.SortDefaults[sortType]) then
+				-- Setting this to false instead of nil causes the SortInfo to get also
+				-- ignore inherited SortInfo settings, such as from its base class.
+				group.SortInfo = false;	-- since this group was sorted without errors, clear any SortInfo which may have caused it
 			end
-			-- since this group was sorted, clear any SortInfo which may have caused it
-			group.SortInfo = nil;
 		end
 		-- TODO: Add more sort types?
 		if recur then

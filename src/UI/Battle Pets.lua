@@ -34,6 +34,7 @@ app:GetWindow("Battle Pets", {
 					local petTypes = {};
 					for _,petTypeID in ipairs({9,8,5,2,7,3,1,6,10,4}) do
 						local petType = app.CreatePetType(petTypeID, { g = {} });
+						app.SortGroupDelayed(petType, "Name");
 						petTypes[petTypeID] = petType;
 						petType.parent = data;
 						tinsert(g, petType);
@@ -105,7 +106,7 @@ app:GetWindow("Battle Pets", {
 							end
 						end
 					end
-					app.Sort(g, app.SortDefaults.Name, true);
+					app.SortGroupDelayed(data, "Name");
 				end
 			end
 		};

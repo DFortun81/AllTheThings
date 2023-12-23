@@ -48,9 +48,11 @@ app:GetWindow("Mounts", {
 						if header.g and #header.g < 1 and header.headerID and header.key == "headerID" then
 							headers[header.headerID] = nil;
 							tremove(g, i);
+						else
+							app.SortGroupDelayed(header, "Name");
 						end
 					end
-					app.Sort(g, app.SortDefaults.Name, true);
+					app.SortGroupDelayed(data, "Name");
 				end
 			end
 		};
