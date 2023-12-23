@@ -257,6 +257,37 @@ app.SortDefaults = setmetatable({
 		bcomp = bcomp and bcomp.start or 0;
 		return acomp < bcomp;
 	end,
+	ClassicQuestOrder = function(a,b)
+		-- If either object doesn't exist
+		if a then
+			if not b then
+				return true;
+			end
+		elseif b then
+			return false;
+		else
+			-- neither a or b exists, equality returns false
+			return false;
+		end
+		if a.isRaid then
+			if not b.isRaid then
+				return true;
+			end
+		elseif b.isRaid then
+			return false;
+		end
+		if a.isBreadcrumb then
+			if not b.isBreadcrumb then
+				return true;
+			end
+		elseif b.isBreadcrumb then
+			return false;
+		end
+		-- Any two similar-type groups with text
+		a = string_lower(tostring(a.text));
+		b = string_lower(tostring(b.text));
+		return a < b;
+	end,
 	text = function(a, b)
 		-- If either object doesn't exist
 		if a then

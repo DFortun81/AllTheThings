@@ -10,6 +10,15 @@ local ipairs, pairs, tinsert, getmetatable, setmetatable, tostring =
 local C_Map_GetMapInfo, C_Map_GetAreaInfo = C_Map.GetMapInfo, C_Map.GetAreaInfo;
 
 -- Local variables
+local SortTypeByHeaderID = setmetatable({
+	[app.HeaderConstants.QUESTS] = "ClassicQuestOrder",
+}, {
+	__index = function(t, key)
+		local method = "text";
+		rawset(t, key, method);
+		return method;
+	end,
+});
 local RefreshLocation;
 local function SortForMiniList(a,b)
 	-- If either object doesn't exist
@@ -53,12 +62,14 @@ local CachedMapData = setmetatable({}, {
 						local o = groups[i];
 						if o.headerID == headerID then
 							if not o.g then o.g = {}; end
+							o.SortType = SortTypeByHeaderID[headerID];
 							t[headerID] = o;
 							return o;
 						end
 					end
 
 					local o = app.CreateNPC(headerID);
+					o.SortType = SortTypeByHeaderID[headerID];
 					tinsert(groups, o);
 					t[headerID] = o;
 					o.g = {};
