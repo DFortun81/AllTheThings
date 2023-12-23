@@ -8897,7 +8897,7 @@ local PetIDSpeciesIDHelper = setmetatable({}, {
 		return speciesID;
 	end
 });
-app.RefreshFunctions.RefreshCollectedBattlePets = function()
+tinsert(app.EventHandlers.OnRefreshCollections, function()	-- RefreshCollectedBattlePets
 	-- app.PrintDebug("RCBP")
 	wipe(CollectedSpeciesHelper);
 	local petID, speciesID;
@@ -8910,7 +8910,7 @@ app.RefreshFunctions.RefreshCollectedBattlePets = function()
 		petID = CollectedSpeciesHelper[speciesID]
 	end
 	-- app.PrintDebug("RCBP-Done")
-end
+end)
 local fields = {
 	["key"] = function(t)
 		return "speciesID";

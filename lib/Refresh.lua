@@ -14,7 +14,6 @@ local C_MountJournal_GetMountInfoByID, C_MountJournal_GetMountIDs, PlayerHasToy,
 
 -- App locals
 local StartCoroutine = app.StartCoroutine;
-app.RefreshFunctions = {};
 
 local function CacheAccountWideCompleteViaAchievement(accountWideData)
 	-- Cache some collection states for account wide quests that aren't actually granted account wide and can be flagged using an achievementID. (Allied Races)
@@ -391,12 +390,6 @@ local function RefreshCollections()
 	coroutine.yield();
 	FixWrongAccountWideQuests(ATTAccountWideData);
 	coroutine.yield();
-
-	-- Run any defined independent Refresh functions
-	for _,refresh in pairs(app.RefreshFunctions) do
-		refresh();
-		coroutine.yield();
-	end
 	
 	-- Execute the OnRefreshCollections handlers.
 	for i,handler in ipairs(app.EventHandlers.OnRefreshCollections) do
