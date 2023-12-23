@@ -838,7 +838,38 @@ local function GetDisplayID(data)
 		return app.NPCDisplayIDFromID[data.qgs[1]];
 	end
 end
-
+local function GetIconFromProviders(group)
+	if group.providers then
+		local icon;
+		for k,v in ipairs(group.providers) do
+			if v[2] > 0 then
+				if v[1] == "o" then
+					icon = app.ObjectIcons[v[2]];
+				elseif v[1] == "i" then
+					icon = select(5, GetItemInfoInstant(v[2]));
+				end
+				if icon then return icon; end
+			end
+		end
+	end
+end
+local function GetNameFromProviders(group)
+	if group.providers then
+		local name;
+		for k,v in ipairs(group.providers) do
+			if v[2] > 0 then
+				if v[1] == "o" then
+					name = app.ObjectNames[v[2]];
+				elseif v[1] == "i" then
+					name = GetItemInfo(v[2]);
+				elseif v[1] == "n" then
+					name = app.NPCNameFromID[v[2]];
+				end
+				if name then return name; end
+			end
+		end
+	end
+end
 
 local function GetBestMapForGroup(group, currentMapID)
 	if group then
@@ -4009,18 +4040,8 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 		if name then return name; end
 		local data = L.ACHIEVEMENT_DATA[t.achievementID];
 		if data and data[2] then return data[2]; end
-		if t.providers then
-			for k,v in ipairs(t.providers) do
-				if v[2] > 0 then
-					if v[1] == "o" then
-						return app.ObjectNames[v[2]];
-					elseif v[1] == "i" then
-						return GetItemInfo(v[2]);
-					end
-				end
-			end
-		end
-		if t.spellID then return GetSpellInfo(t.spellID); end
+		return GetNameFromProviders(t)
+			or (t.spellID and GetSpellInfo(t.spellID));
 	end
 	fields.link = function(t)
 		return GetAchievementLink(t.achievementID);
@@ -4030,20 +4051,9 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 		if name then return name; end
 		local data = L.ACHIEVEMENT_DATA[t.achievementID];
 		if data and data[3] then return data[3]; end
-		if t.providers then
-			for k,v in ipairs(t.providers) do
-				if v[2] > 0 then
-					if v[1] == "o" then
-						local icon = app.ObjectIcons[v[2]];
-						if icon then return icon; end
-					elseif v[1] == "i" then
-						return select(5, GetItemInfoInstant(v[2])) or "Interface\\Worldmap\\Gear_64Grey";
-					end
-				end
-			end
-		end
-		if t.spellID then return select(3, GetSpellInfo(t.spellID)); end
-		return t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
+		return GetIconFromProviders(t)
+			or (t.spellID and select(3, GetSpellInfo(t.spellID)))
+			or t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
 	end
 	fields.parentCategoryID = function(t)
 		local data = GetAchievementCategory(t.achievementID);
@@ -4157,24 +4167,8 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 			if achievementID then
 				local criteriaID = t.criteriaID;
 				if criteriaID then
-					local name = t.GetInfo(achievementID, criteriaID, true);
+					local name = t.GetInfo(achievementID, criteriaID, true) or GetNameFromProviders(t);
 					if not IsRetrieving(name) then return name; end
-
-					local providers = t.providers;
-					if providers then
-						for k,v in ipairs(providers) do
-							if v[2] > 0 then
-								if v[1] == "o" then
-									return app.ObjectNames[v[2]];
-								elseif v[1] == "i" then
-									return GetItemInfo(v[2]);
-								elseif v[1] == "n" then
-									return app.NPCNameFromID[v[2]];
-								end
-							end
-						end
-					end
-
 					local sourceQuests = t.sourceQuests;
 					if sourceQuests then
 						for k,id in ipairs(sourceQuests) do
@@ -4186,22 +4180,8 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 			end
 		end,
 		["icon"] = function(t)
-			if t.providers then
-				for k,v in ipairs(t.providers) do
-					if v[2] > 0 then
-						if v[1] == "o" then
-							local icon = app.ObjectIcons[v[2]];
-							if icon then return icon; end
-						elseif v[1] == "i" then
-							return select(5, GetItemInfoInstant(v[2])) or "Interface\\Icons\\INV_Misc_Bag_10";
-						end
-					end
-				end
-			end
-			local achievementID = t.achievementID;
-			if achievementID then
-				return select(10, GetAchievementInfo(achievementID));
-			end
+			return GetIconFromProviders(t)
+				or (t.achievementID and select(10, GetAchievementInfo(t.achievementID)));
 		end,
 		["model"] = function(t)
 			if t.providers then
@@ -4343,41 +4323,19 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 else
 	-- Achievements are NOT in. We can't use the API.
 	fields.text = function(t)
-		return "|cffffff00[" .. (t.name or RETRIEVING_DATA) .. "]|r";
+		return "|cffffff00[" .. t.name .. "]|r";
 	end
 	fields.name = function(t)
 		local data = L.ACHIEVEMENT_DATA[t.achievementID];
 		if data and data[2] then return data[2]; end
-		if t.providers then
-			for k,v in ipairs(t.providers) do
-				if v[2] > 0 then
-					if v[1] == "o" then
-						return app.ObjectNames[v[2]];
-					elseif v[1] == "i" then
-						return GetItemInfo(v[2]);
-					end
-				end
-			end
-		end
-		if t.spellID then return GetSpellInfo(t.spellID); end
+		return GetNameFromProviders(t) or (t.spellID or GetSpellInfo(t.spellID)) or RETRIEVING_DATA;
 	end
 	fields.icon = function(t)
 		local data = L.ACHIEVEMENT_DATA[t.achievementID];
 		if data and data[3] then return data[3]; end
-		if t.providers then
-			for k,v in ipairs(t.providers) do
-				if v[2] > 0 then
-					if v[1] == "o" then
-						local icon = app.ObjectIcons[v[2]];
-						if icon then return icon; end
-					elseif v[1] == "i" then
-						return select(5, GetItemInfoInstant(v[2])) or "Interface\\Worldmap\\Gear_64Grey";
-					end
-				end
-			end
-		end
-		if t.spellID then return select(3, GetSpellInfo(t.spellID)); end
-		return t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
+		return GetIconFromProviders(t)
+			or (t.spellID and select(3, GetSpellInfo(t.spellID)))
+			or t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
 	end
 	fields.parentCategoryID = function(t)
 		local data = L.ACHIEVEMENT_DATA[t.achievementID];
@@ -7820,33 +7778,10 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 		return app.ObjectNames[t.objectID] or t.basename;
 	end,
 	["basename"] = function(t)
-		if t.providers then
-			for k,v in ipairs(t.providers) do
-				if v[2] > 0 then
-					if v[1] == "o" then
-						return app.ObjectNames[v[2]] or RETRIEVING_DATA;
-					elseif v[1] == "i" then
-						return GetItemInfo(v[2]) or RETRIEVING_DATA;
-					end
-				end
-			end
-		end
-		return "Object ID #" .. t.objectID;
+		return GetNameFromProviders(t) or ("Object ID #" .. t.objectID);
 	end,
 	["icon"] = function(t)
-		if t.providers then
-			for k,v in ipairs(t.providers) do
-				if v[2] > 0 then
-					if v[1] == "o" then
-						local icon = app.ObjectIcons[v[2]];
-						if icon then return icon; end
-					elseif v[1] == "i" then
-						return select(5, GetItemInfoInstant(v[2])) or "Interface\\Icons\\INV_Misc_Bag_10";
-					end
-				end
-			end
-		end
-		return app.ObjectIcons[t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
+		return app.ObjectIcons[t.objectID] or GetIconFromProviders(t) or "Interface\\Icons\\INV_Misc_Bag_10";
 	end,
 	["model"] = function(t)
 		return app.ObjectModels[t.objectID];
@@ -8212,25 +8147,8 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		return QuestTitleFromID[t.questID] or (t.npcID and app.NPCNameFromID[t.npcID]) or RETRIEVING_DATA;
 	end,
 	["icon"] = function(t)
-		if t.providers then
-			for k,v in ipairs(t.providers) do
-				if v[2] > 0 then
-					if v[1] == "o" then
-						local icon = app.ObjectIcons[v[2]];
-						if icon then return icon; end
-					elseif v[1] == "i" then
-						return select(5, GetItemInfoInstant(v[2])) or "Interface\\Icons\\INV_Misc_Book_09";
-					end
-				end
-			end
-		end
-		if t.isWorldQuest then
-			return app.asset("Interface_WorldQuest");
-		elseif t.repeatable then
-			return app.asset("Interface_Questd");
-		else
-			return app.asset("Interface_Quest");
-		end
+		return GetIconFromProviders(t)
+			or app.asset((t.isWorldQuest and "Interface_WorldQuest") or (t.repeatable and "Interface_Questd") or "Interface_Quest");
 	end,
 	["model"] = function(t)
 		if t.providers then
@@ -8399,41 +8317,18 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 			local objectives = C_QuestLog_GetQuestObjectives(questID);
 			if objectives then
 				local objective = objectives[t.objectiveID];
-				if objective then
-					return objective.text;
-				end
+				if objective then return objective.text; end
 			end
-			if t.providers then
-				for k,v in ipairs(t.providers) do
-					if v[2] > 0 then
-						if v[1] == "o" then
-							return app.ObjectNames[v[2]] or RETRIEVING_DATA;
-						elseif v[1] == "i" then
-							return GetItemInfo(v[2]) or RETRIEVING_DATA;
-						end
-					end
-				end
-			end
-			if t.spellID then return GetSpellInfo(t.spellID); end
-			return RETRIEVING_DATA;
+			return GetNameFromProviders(t)
+				or (t.spellID and GetSpellInfo(t.spellID))
+				or RETRIEVING_DATA;
 		end
 		return "INVALID: Must be relative to a Quest Object.";
 	end,
 	["icon"] = function(t)
-		if t.providers then
-			for k,v in ipairs(t.providers) do
-				if v[2] > 0 then
-					if v[1] == "o" then
-						local icon = app.ObjectIcons[v[2]];
-						if icon then return icon; end
-					elseif v[1] == "i" then
-						return select(5, GetItemInfoInstant(v[2])) or "Interface\\Worldmap\\Gear_64Grey";
-					end
-				end
-			end
-		end
-		if t.spellID then return select(3, GetSpellInfo(t.spellID)); end
-		return t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
+		return GetIconFromProviders(t)
+			or (t.spellID and select(3, GetSpellInfo(t.spellID)))
+			or t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
 	end,
 	["model"] = function(t)
 		if t.providers then
