@@ -14835,10 +14835,18 @@ local function RowOnClick(self, button)
 			elseif IsShiftKeyDown() then
 				if app.Settings:GetTooltipSetting("Sort:Progress") then
 					app.print("Sorting selection by total progress...");
-					StartCoroutine("Sorting", function() app.SortGroup(reference, "progress", self, false) end);
+					StartCoroutine("Sorting", function()
+						app.SortGroup(reference, "progress");
+						app.print("Finished Sorting.");
+						window:Update();
+					end);
 				else
 					app.print("Sorting selection alphabetically...");
-					StartCoroutine("Sorting", function() app.SortGroup(reference, "name", self, false) end);
+					StartCoroutine("Sorting", function()
+						app.SortGroup(reference, "name");
+						app.print("Finished Sorting.");
+						window:Update();
+					end);
 				end
 			else
 				if self.index > 0 then
@@ -16091,10 +16099,8 @@ local function ProcessGroup(data, object)
 		tinsert(data, object);
 		if object.g and object.expanded then
 			-- Delayed sort operation for this group prior to being shown
-			local sortInfo = object.SortInfo;
-			if sortInfo then
-				app.SortGroup(object, sortInfo[1], sortInfo[2], sortInfo[3], sortInfo[4]);
-			end
+			local sortType = object.SortType;
+			if sortType then app.SortGroup(object, sortType); end
 			for _,group in ipairs(object.g) do
 				ProcessGroup(data, group);
 			end
@@ -18205,7 +18211,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					app.SortGroup(header, "name");
 				end
 				-- and conditionally sort the entire list (sort groups which contain 'mapped' content)
-				app.SortGroup(header, "name", nil, true, "sort");
+				app.SortGroup(header, "name", true, "sort");
 
 				local expanded;
 				-- if enabled, minimize rows based on difficulty

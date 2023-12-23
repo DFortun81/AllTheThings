@@ -339,33 +339,29 @@ app.SortDefaults.progress = function(a, b)
 	return GetGroupSortValue(a) > GetGroupSortValue(b);
 end;
 -- Sorts a group using the provided sortType, whether to recurse through nested groups, and whether sorting should only take place given the group having a conditional field
-local function SortGroup(group, sortType, row, recur, conditionField)
+local function SortGroup(group, sortType, recur, conditionField)
 	--print("SortGroup", group.parent and group.parent.text, group.text, sortType, recur, conditionField);
 	if group.g then
 		-- either sort visible groups or by conditional
         if (not conditionField and group.visible) or (conditionField and group[conditionField]) then
 			-- app.PrintDebug("sorting",group.key,group.key and group[group.key],"by",sortType,"recur",recur,"condition",conditionField)
 			if app.Sort(group.g, app.SortDefaults[sortType]) then
-				-- Setting this to false instead of nil causes the SortInfo to get also
-				-- ignore inherited SortInfo settings, such as from its base class.
-				group.SortInfo = false;	-- since this group was sorted without errors, clear any SortInfo which may have caused it
+				-- Setting this to false instead of nil causes the field to also
+				-- ignore inherited settings, such as from its base class.
+				group.SortType = false;
 			end
 		end
 		-- TODO: Add more sort types?
 		if recur then
 			for _,o in ipairs(group.g) do
-				SortGroup(o, sortType, nil, recur, conditionField);
+				SortGroup(o, sortType, recur, conditionField);
 			end
 		end
-	end
-	if row then
-		row:GetParent():GetParent():Update();
-		app.print("Finished Sorting.");
 	end
 end
 app.SortGroup = SortGroup;
 -- Allows defining SortGroup data which is only executed when the group is actually expanded
-app.SortGroupDelayed = function(group, sortType, row, recur, conditionField)
+app.SortGroupDelayed = function(group, sortType)
 	-- app.PrintDebug("Delayed Sort defined for",group.text)
-	group.SortInfo = { sortType, row, recur, conditionField };
+	group.SortType = sortType;
 end

@@ -10376,10 +10376,18 @@ local function RowOnClick(self, button)
 			if button == "RightButton" then
 				if app.Settings:GetTooltipSetting("Sort:Progress") then
 					app.print("Sorting selection by total progress...");
-					app:StartATTCoroutine("Sorting", function() app.SortGroup(reference, "progress", self, false) end);
+					app:StartATTCoroutine("Sorting", function()
+						app.SortGroup(reference, "progress");
+						self:GetParent():GetParent():Update();
+						app.print("Finished Sorting.");
+					end);
 				else
 					app.print("Sorting selection alphabetically...");
-					app:StartATTCoroutine("Sorting", function() app.SortGroup(reference, "name", self, false) end);
+					app:StartATTCoroutine("Sorting", function()
+						app.SortGroup(reference, "name");
+						self:GetParent():GetParent():Update();
+						app.print("Finished Sorting.");
+					end);
 				end
 				return true;
 			end
@@ -11309,10 +11317,8 @@ local function ProcessGroup(data, object)
 		data[#data + 1] = object;
 		if object.g and object.expanded then
 			-- Delayed sort operation for this group prior to being shown
-			local sortInfo = object.SortInfo;
-			if sortInfo then
-				app.SortGroup(object, sortInfo[1], sortInfo[2], sortInfo[3], sortInfo[4]);
-			end
+			local sortType = object.SortType;
+			if sortType then app.SortGroup(object, sortType); end
 			for i=1,#object.g,1 do
 				ProcessGroup(data, object.g[i]);
 			end
