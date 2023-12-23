@@ -134,11 +134,17 @@ app.GetRelativeField = GetRelativeField;
 app.GetRelativeValue = GetRelativeValue;
 
 -- Declare Event Handlers
-app.EventHandlers = {
-	OnRecalculate = {},
+app.EventHandlers = setmetatable({
 	OnReady = {},
+	OnRecalculate = {},
 	OnRefreshCollections = {},
-};
+}, {
+	__index = function(t, key)
+		local item = {};
+		rawset(t, key, item);
+		return item;
+	end,
+});
 
 -- Cache information about the player.
 app.Gender = UnitSex("player");
