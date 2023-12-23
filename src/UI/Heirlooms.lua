@@ -42,7 +42,7 @@ app:GetWindow("Heirlooms", {
 						end
 					end
 					if #g > 0 then
-						data.SortType = "Name";
+						data.SortType = "name";
 					else
 						tinsert(g, { OnUpdate = app.AlwaysShowUpdate, parent = data, text = "No heirlooms found." });
 					end

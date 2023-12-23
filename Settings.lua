@@ -4405,7 +4405,7 @@ profileSelector.OnRefresh = function()
 		end
 	end
 	-- sort the profiles
-	app.Sort(settingProfileItems, app.SortDefaults.Text)
+	app.Sort(settingProfileItems, app.SortDefaults.Strings)
 
 	local profileCount, existingBoxes, lastProfileSelect = 0, profileSelector.ATT and profileSelector.ATT.CB_Count or 0
 

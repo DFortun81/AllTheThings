@@ -38,7 +38,7 @@ app:GetWindow("Factions", {
 							tinsert(g, faction);
 						end
 					end
-					data.SortType = "Name";
+					data.SortType = "name";
 				end
 			end
 		});

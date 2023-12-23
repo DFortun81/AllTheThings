@@ -167,11 +167,9 @@ local function GetGroupSortValue(group)
 	end
 end
 app.SortDefaults = setmetatable({
-	Accessibility = function(a, b)
-		return calculateAccessibility(a) <= calculateAccessibility(b);
-	end,
+	-- Naming Convention: Capital = Special Sort Function, lowercase = field on an object
 	Global = defaultComparison,
-	Text = function(a,b)
+	Strings = function(a,b)
 		-- If either object doesn't exist
 		if a then
 			if not b then
@@ -188,7 +186,7 @@ app.SortDefaults = setmetatable({
 		b = string_lower(tostring(b));
 		return a < b;
 	end,
-	Name = function(a,b)
+	Values = function(a,b)
 		-- If either object doesn't exist
 		if a then
 			if not b then
@@ -200,24 +198,10 @@ app.SortDefaults = setmetatable({
 			-- neither a or b exists, equality returns false
 			return false;
 		end
-		-- Any two similar-type groups with text
-		a = string_lower(tostring(a.name));
-		b = string_lower(tostring(b.name));
 		return a < b;
 	end,
-	Value = function(a,b)
-		-- If either object doesn't exist
-		if a then
-			if not b then
-				return true;
-			end
-		elseif b then
-			return false;
-		else
-			-- neither a or b exists, equality returns false
-			return false;
-		end
-		return a < b;
+	Accessibility = function(a, b)
+		return calculateAccessibility(a) <= calculateAccessibility(b);
 	end,
 	-- Sorts objects first by whether they do not have sub-groups [.g] defined
 	Hierarchy = function(a,b)
@@ -308,6 +292,23 @@ app.SortDefaults = setmetatable({
 			return calculateSourceQuestDepth(a, sortA) < calculateSourceQuestDepth(b, sortB);
 		end
 		return sortA < sortB;
+	end,
+	name = function(a,b)
+		-- If either object doesn't exist
+		if a then
+			if not b then
+				return true;
+			end
+		elseif b then
+			return false;
+		else
+			-- neither a or b exists, equality returns false
+			return false;
+		end
+		-- Any two similar-type groups with text
+		a = string_lower(tostring(a.name));
+		b = string_lower(tostring(b.name));
+		return a < b;
 	end,
 	text = function(a, b)
 		-- If either object doesn't exist

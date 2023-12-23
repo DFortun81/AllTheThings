@@ -2857,7 +2857,7 @@ local WindowManager = {
 		for suffix,window in pairs(keys) do
 			tinsert(sortedList, suffix);
 		end
-		app.Sort(sortedList, app.SortDefaults.Text);
+		app.Sort(sortedList, app.SortDefaults.Strings);
 		for i,suffix in ipairs(topKeys) do
 			tinsert(sortedList, 1, suffix);
 		end

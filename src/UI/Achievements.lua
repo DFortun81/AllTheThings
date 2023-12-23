@@ -71,7 +71,7 @@ local function achievementSort(a, b)
 	elseif b.rank then
 		return false;
 	end
-	return app.SortDefaults.Name(a, b);
+	return app.SortDefaults.name(a, b);
 end;
 
 -- Implementation

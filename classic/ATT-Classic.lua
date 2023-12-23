@@ -2383,7 +2383,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 			if #knownBy > 0 and kind then
-				app.Sort(knownBy, app.SortDefaults.Name);
+				app.Sort(knownBy, app.SortDefaults.name);
 				local desc = kind;
 				for i,character in ipairs(knownBy) do
 					if i > 1 then desc = desc .. ", "; end
@@ -2941,7 +2941,7 @@ function app:GetDataCache()
 		for suffix,window in pairs(keys) do
 			tinsert(sortedList, suffix);
 		end
-		app.Sort(sortedList, app.SortDefaults.Text);
+		app.Sort(sortedList, app.SortDefaults.Strings);
 		for i,suffix in ipairs(sortedList) do
 			tinsert(g, app.CreateDynamicCategory(suffix));
 		end

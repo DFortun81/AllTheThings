@@ -34,10 +34,10 @@ app:GetWindow("Toys", {
 							headers[header.headerID] = nil;
 							tremove(g, i);
 						else
-							header.SortType = "Name";
+							header.SortType = "name";
 						end
 					end
-					data.SortType = "Name";
+					data.SortType = "name";
 				end
 			end
 		};

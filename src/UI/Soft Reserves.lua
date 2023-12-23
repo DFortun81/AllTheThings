@@ -957,7 +957,7 @@ SoftReserveWindow = app:GetWindow("SoftReserves", {
 							local any = false;
 							for rankIndex = 1, numRanks, 1 do
 								if #g[rankIndex].g > 0 then
-									app.Sort(g[rankIndex].g, app.SortDefaults.Text);
+									app.Sort(g[rankIndex].g, app.SortDefaults.Strings);
 									any = true;
 								end
 							end

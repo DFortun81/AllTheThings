@@ -1855,7 +1855,7 @@ local function FilterSpecs(specs)
 				tremove(specs, i);
 			end
 		end
-		app.Sort(specs, app.SortDefaults.Value);
+		app.Sort(specs, app.SortDefaults.Values);
 	end
 end
 GetFixedItemSpecInfo = function(itemID)
@@ -1878,7 +1878,7 @@ GetFixedItemSpecInfo = function(itemID)
 					end
 				end
 			end
-			app.Sort(specs, app.SortDefaults.Value);
+			app.Sort(specs, app.SortDefaults.Values);
 		else
 			FilterSpecs(specs);
 		end
@@ -4435,7 +4435,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 			local listing = {};
 			local maximum = app.Settings:GetTooltipSetting("Locations");
 			local count = 0;
-			app.Sort(temp, app.SortDefaults.Text);
+			app.Sort(temp, app.SortDefaults.Strings);
 			for _,j in ipairs(temp) do
 				if not contains(listing, j) then
 					count = count + 1;
@@ -4891,7 +4891,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				end
 			end
 			if #knownBy > 0 then
-				app.Sort(knownBy, app.SortDefaults.Name);
+				app.Sort(knownBy, app.SortDefaults.name);
 				local desc = L["KNOWN_BY"] .. app.TableConcat(knownBy, "text", "??", ", ");
 				tinsert(info, { left = string_gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
 			end
@@ -4910,7 +4910,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				end
 			end
 			if #knownBy > 0 then
-				app.Sort(knownBy, app.SortDefaults.Name);
+				app.Sort(knownBy, app.SortDefaults.name);
 				local desc = sformat(L["QUEST_ONCE_PER_ACCOUNT_FORMAT"],app.TableConcat(knownBy, "text", "??", ", "));
 				tinsert(info, { left = string_gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = app.Colors.TooltipDescription });
 			end
@@ -17106,7 +17106,7 @@ function app:GetDataCache()
 		elseif b.achievementCategoryID then
 			return false;
 		end
-		return app.SortDefaults.Name(a, b);
+		return app.SortDefaults.name(a, b);
 	end;
 	achievementsCategory.OnUpdate = function(self)
 		local categories = {};
@@ -18210,7 +18210,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 					if header.g then
 						for i,o in ipairs(header.g) do
 							if o.key == "headerID" then
-								o.SortType = "Name";
+								o.SortType = "name";
 							end
 						end
 					end
@@ -19818,7 +19818,7 @@ customWindowUpdates["list"] = function(self, force, got)
 				end
 			end
 			-- app.PrintDebug("CacheFields",#CacheFields)
-			app.Sort(CacheFields, app.SortDefaults.Value);
+			app.Sort(CacheFields, app.SortDefaults.Values);
 			-- app.PrintDebug("CacheFields:Sorted")
 		end
 
