@@ -373,7 +373,7 @@ app.CreateClass = function(className, classKey, fields, ...)
 				end
 			end
 			return setmetatable(t, Class);
-		end, Class;
+		end;
 		classesByKey[classKey] = classConstructor;
 		return classConstructor, Class;
 	else
