@@ -1,6 +1,6 @@
 -- App locals
 local appName, app = ...;
-local containsValue = app.containsValue;
+local contains, containsValue = app.contains, app.containsValue;
 local AssignChildren, CloneReference, ExpandGroupsRecursively, GetRelativeField, GetRelativeValue, MergeObject, SearchForField
 	= app.AssignChildren, app.CloneReference, app.ExpandGroupsRecursively, app.GetRelativeField, app.GetRelativeValue, app.MergeObject, app.SearchForField;
 
