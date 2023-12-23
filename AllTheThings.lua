@@ -17914,7 +17914,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			BaseVisualHeaderClone.__class[field] = app.EmptyFunction
 		end
 		for _,field in ipairs({
-			"sort",
 			"collectible",
 			"sourceParent",
 			"customCollect",
@@ -17937,7 +17936,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		end
 		-- Wraps a given object such that it can act as a filtered Header of the base group
 		local CreateWrapVisualHeader = function(base, groups)
-			return Wrap(setmetatable(constructor(nil, {sort = true, g=groups or {}}, "WrapVisualHeader"), BaseVisualHeaderClone), base);
+			return Wrap(setmetatable(constructor(nil, {g=groups or {}}, "WrapVisualHeader"), BaseVisualHeaderClone), base);
 		end
 		-- Returns the consolidated data format for the next header level
 		-- Headers are forced not collectible, and will have their content sorted, and can be copied from the existing Source header
@@ -17946,7 +17945,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			if header then
 				return CreateWrapVisualHeader(header, {group})
 			else
-				return { g = { group }, ["sort"] = true, ["collectible"] = false, };
+				return { g = { group }, ["collectible"] = false, };
 			end
 		end
 		-- set of keys for headers which can be nested in the minilist automatically, but not confined to a direct top header
@@ -18138,7 +18137,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 							group = app.CreateFilter(101, CreateHeaderData(group));
 						end
 						-- otherwise the group itself will be the topHeader in the minilist, and its content will be sorted since it may be merging with an existing group
-						group.sort = true;
 						nested = true;
 					end
 
@@ -18208,10 +18206,15 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 
 				-- sort top level by name if not in an instance
 				if not GetRelativeValue(header, "instanceID") then
-					app.SortGroup(header, "name");
+					app.SortGroupDelayed(header, "Global");
+					if header.g then
+						for i,o in ipairs(header.g) do
+							if o.key == "headerID" then
+								app.SortGroupDelayed(o, "Name");
+							end
+						end
+					end
 				end
-				-- and conditionally sort the entire list (sort groups which contain 'mapped' content)
-				app.SortGroup(header, "name", true, "sort");
 
 				local expanded;
 				-- if enabled, minimize rows based on difficulty
@@ -19570,8 +19573,6 @@ customWindowUpdates["Sync"] = function(self)
 						['g'] = {},
 						["OnClick"] = OnClick_IgnoreRightButton,
 						['OnUpdate'] = function(data)
-							-- this forces a sort after the population update pass using the app.SortDefaults.Name sort function
-							app.SortGroupDelayed(data, "Name");
 							local g = {};
 							for guid,character in pairs(ATTCharacterData) do
 								if character then
@@ -19580,6 +19581,8 @@ customWindowUpdates["Sync"] = function(self)
 										['OnClick'] = OnRightButtonDeleteCharacter,
 										['OnTooltip'] = OnTooltipForCharacter,
 										["BaseOnUpdate"] = app.AlwaysShowUpdate,
+										name = character.name,
+										lvl = character.lvl,
 										['visible'] = true,
 									}));
 								end
@@ -19593,6 +19596,8 @@ customWindowUpdates["Sync"] = function(self)
 									["OnClick"] = OnClick_IgnoreRightButton,
 									["OnUpdate"] = app.AlwaysShowUpdate,
 								});
+							else
+								app.SortGroupDelayed(data, "textAndLvl");
 							end
 							data.g = g;
 							AssignChildren(data);

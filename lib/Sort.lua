@@ -212,7 +212,6 @@ app.SortDefaults = setmetatable({
 		bcomp = bcomp and bcomp.start or 0;
 		return acomp < bcomp;
 	end,
-	name = defaultComparison,
 	text = function(a, b)
 		-- If either object doesn't exist
 		if a then
@@ -257,6 +256,9 @@ app.SortDefaults = setmetatable({
 	end,
 }, {
 	__index = function(t, sortType)
+		if type(sortType) == "function" then
+			return sortType;
+		end
 		local method = function(a, b)
 			-- If either object doesn't exist
 			if a then
@@ -339,28 +341,21 @@ app.SortDefaults.progress = function(a, b)
 	return GetGroupSortValue(a) > GetGroupSortValue(b);
 end;
 -- Sorts a group using the provided sortType, whether to recurse through nested groups, and whether sorting should only take place given the group having a conditional field
-local function SortGroup(group, sortType, recur, conditionField)
-	--print("SortGroup", group.parent and group.parent.text, group.text, sortType, recur, conditionField);
+local function SortGroup(group, sortType)
+	--print("SortGroup", group.parent and group.parent.text, group.text, sortType);
 	if group.g then
 		-- either sort visible groups or by conditional
-        if (not conditionField and group.visible) or (conditionField and group[conditionField]) then
-			-- app.PrintDebug("sorting",group.key,group.key and group[group.key],"by",sortType,"recur",recur,"condition",conditionField)
+        if group.visible then
+			-- app.PrintDebug("sorting",group.key,group.key and group[group.key],"by",sortType)
 			if app.Sort(group.g, app.SortDefaults[sortType]) then
 				-- Setting this to false instead of nil causes the field to also
 				-- ignore inherited settings, such as from its base class.
 				group.SortType = false;
 			end
 		end
-		-- TODO: Add more sort types?
-		if recur then
-			for _,o in ipairs(group.g) do
-				SortGroup(o, sortType, recur, conditionField);
-			end
-		end
 	end
 end
 app.SortGroup = SortGroup;
--- Allows defining SortGroup data which is only executed when the group is actually expanded
 app.SortGroupDelayed = function(group, sortType)
 	-- app.PrintDebug("Delayed Sort defined for",group.text)
 	group.SortType = sortType;

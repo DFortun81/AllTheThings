@@ -59,7 +59,7 @@ local DynamicCategory_Nested = function(self)
 	-- reset indents and such
 	AssignChildren(self);
 	-- delay-sort the top level groups
-	app.SortGroupDelayed(self, "name");
+	app.SortGroupDelayed(self, "Global");
 	-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
 	app.DynamicRunner.Run(DynamicDataCache.CacheFields, self);
 	-- run a direct update on itself after being populated
@@ -139,13 +139,13 @@ local DynamicCategory_Simple = function(self)
 		-- sort all of the Things by name in each top header and put it under the dynamic group
 		for _,header in pairs(topHeaders) do
 			-- delay-sort the groups in each categorized header
-			app.SortGroupDelayed(header, "name");
+			app.SortGroupDelayed(header, "Global");
 			NestObject(self, header);
 		end
 		-- reset indents and such
 		AssignChildren(self);
 		-- delay-sort the top level groups
-		app.SortGroupDelayed(self, "name");
+		app.SortGroupDelayed(self, "Global");
 		-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
 		app.DynamicRunner.Run(DynamicDataCache.CacheFields, self);
 		-- run a direct update on itself after being populated
@@ -209,7 +209,7 @@ local function NestDynamicValueCategories(group)
 		NestObject(group, FillDynamicCategory(cat, field, id));
 	end
 	-- Make sure the Dynamic Category group is sorted when opened since order isn't guaranteed by the table
-	app.SortGroupDelayed(group, "name");
+	app.SortGroupDelayed(group, "Global");
 	return group
 end
 
