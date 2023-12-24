@@ -84,6 +84,7 @@ local QUANTUM_GROUP = sharedData({
 		filter(PLATE, {
 			ig(121506),	-- Dreadsworn Crown					(NYI)
 			ig(114390),	-- Greathelm of Grievous Storms		(NYI)
+			ig(108165),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108189),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108197),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108205),	-- Peerless Draenic Steel Helm		(NYI)
@@ -291,7 +292,9 @@ local QUANTUM_GROUP = sharedData({
 		filter(CLOTH, {
 			ig(114259),	-- Firefly Gloves					(NYI)
 			ig(114383),	-- Gloves of Hooded Nightmares		(NYI)
+			ig(189904),	-- Meticulous Architect's Mitts		(NYI)
 
+			ig(20655),	-- Abyssal Cloth Handwraps			(Removed)
 			ig(134669),	-- Auxiliary's Handwraps			(Removed)
 			ig(134786),	-- Entrenched Handwraps				(Removed)
 			ig(134723),	-- Icyweave Gloves					(Removed)
@@ -464,6 +467,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 	}),
 	i(208111, {	-- Quantum Axe			(One-Handed)
+		ig(134755),	-- Covert Hatchet						(NYI)
 		ig(5255),	-- Quilboar Tomahawk					(NYI)
 		ig(134586),	-- Vanguard Hatchet						(NYI)
 
@@ -514,6 +518,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(134717),	-- Cold-Touched Decapitator				(NYI)
 		ig(108046),	-- Draenic Steel War Axe				(NYI)
 		ig(189996),	-- Elegantly Balanced Axe				(NYI)(Unique)
+		ig(108226),	-- Peerless Draenic Steel War Axe		(NYI)
 		ig(108227),	-- Peerless Draenic Steel War Axe		(NYI)
 		ig(108228),	-- Peerless Draenic Steel War Axe		(NYI)
 		ig(108229), -- Peerless Draenic Steel War Axe		(NYI)
@@ -553,6 +558,7 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208120, {	-- Quantum Knife
 		ig(147908),	-- 6.0 Weapon - Knife_1h_DraenorRaid_D_01 - Jade	(NYI)
+		ig(108054),	-- Draenic Steel Dagger					(NYI)
 		ig(108150),	-- Hardened Draeneic Steel Dagger		(NYI)
 		ig(108235),	-- Peerless Draenic Steel Dagger		(NYI)
 		ig(108236),	-- Peerless Draenic Steel Dagger		(NYI)
@@ -654,7 +660,9 @@ local QUANTUM_GROUP = sharedData({
 		ig(6679),	-- Armor Piercer						(Removed)
 		ig(134721),	-- Cold-Touched Staff 					(Removed)
 		ig(1388),	-- Crooked Staff						(Removed)
+		ig(119409),	-- Icebound Bloodmaul Spire				(Removed)
 		ig(2280),	-- Kam's Walking Stick					(Removed)
+		ig(22335),	-- Lord Valthalak's Staff of Command	(Removed)
 		ig(134674),	-- Recruit's Battle Staff				(Removed)
 		ig(134619),	-- Scorching Staff						(Removed)
 		ig(134790),	-- Seasoned Staff						(Removed)

@@ -451,7 +451,6 @@ root(ROOTS.NeverImplemented, {
 			i(80983),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
 			i(115292),	-- Spectral Axe
 			i(117010),	-- Forester's Axe	(Never added in Game)
-			i(134755),	-- Covert Hatchet
 			i(182562),	-- NPE Weapon 1H Axe AGI
 			i(182577),	-- NPE Weapon 1H Axe AGI 2
 			-- ItemID/Retrieving

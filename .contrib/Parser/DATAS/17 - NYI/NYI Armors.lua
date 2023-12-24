@@ -1661,7 +1661,6 @@ root(ROOTS.NeverImplemented, {
 					i(190281),	-- Enlightened Researcher's Wraps
 					i(190249),	-- Enlightened Researcher's Wristbands
 					--
-					i(189904),	-- Meticulous Architect's Mitts
 
 					i(188110),	-- Cypher Attunement Chestpiece
 					i(188109),	-- Cypher Attunement Feet
