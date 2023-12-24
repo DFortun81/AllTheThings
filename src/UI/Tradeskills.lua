@@ -26,17 +26,17 @@ local function RefreshSkills()
 				local spellID = app.SpellNameToSpellID[skillName];
 				if spellID then
 					local spellName = GetSpellInfo(spellID);
-					for skillID,s in pairs(app.SkillIDToSpellID) do
-						if GetSpellInfo(s) == spellName then
-							spellID = s;
+					for skillID,sp in pairs(app.SkillIDToSpellID) do
+						if GetSpellInfo(sp) == spellName then
+							spellID = sp;
 							break;
 						end
 					end
 					activeSkills[spellID] = { skillRank, skillMaxRank };
 				else
-					for skillID,s in pairs(app.SkillIDToSpellID) do
-						if GetSpellInfo(s) == skillName then
-							spellID = s;
+					for skillID,sp in pairs(app.SkillIDToSpellID) do
+						if GetSpellInfo(sp) == skillName then
+							spellID = sp;
 							break;
 						end
 					end
@@ -499,16 +499,16 @@ app:GetWindow("Tradeskills", {
 						local oldSetVisible = f.SetVisible;
 						local oldShow = f.Show;
 						local oldHide = f.Hide;
-						f.SetVisible = function(s, visible)
-							oldSetVisible(s, visible);
+						f.SetVisible = function(frame, visible)
+							oldSetVisible(frame, visible);
 							self:SetTSMCraftingVisible(visible);
 						end
-						f.Hide = function(s)
-							oldHide(s);
+						f.Hide = function(frame)
+							oldHide(frame);
 							self:SetTSMCraftingVisible(false);
 						end
-						f.Show = function(s)
-							oldShow(s);
+						f.Show = function(frame)
+							oldShow(frame);
 							self:SetTSMCraftingVisible(true);
 						end
 						if self.gettinMadAtDumbNamingConventions then
@@ -540,23 +540,23 @@ app:GetWindow("Tradeskills", {
 				local oldSetVisible = f.SetVisible;
 				local oldShow = f.Show;
 				local oldHide = f.Hide;
-				f.SetVisible = function(s, visible)
-					oldSetVisible(s, visible);
+				f.SetVisible = function(frame, visible)
+					oldSetVisible(frame, visible);
 					self:SetTSMCraftingVisible(visible);
 				end
-				f.Hide = function(s)
-					oldHide(s);
+				f.Hide = function(frame)
+					oldHide(frame);
 					self:SetTSMCraftingVisible(false);
 				end
-				f.Show = function(s)
-					oldShow(s);
+				f.Show = function(frame)
+					oldShow(frame);
 					self:SetTSMCraftingVisible(true);
 				end
 				if f.queueBtn then
 					local setScript = f.queueBtn.SetScript;
-					f.queueBtn.SetScript = function(s, e, callback)
+					f.queueBtn.SetScript = function(frame, e, callback)
 						if e == "OnClick" then
-							setScript(s, e, function(...)
+							setScript(frame, e, function(...)
 								if callback then callback(...); end
 
 								local thing = self.TSMCraftingVisible;
@@ -564,7 +564,7 @@ app:GetWindow("Tradeskills", {
 								self:SetTSMCraftingVisible(thing);
 							end);
 						else
-							setScript(s, e, callback);
+							setScript(frame, e, callback);
 						end
 					end
 					f.queueBtn:SetScript("OnClick", f.queueBtn:GetScript("OnClick"));

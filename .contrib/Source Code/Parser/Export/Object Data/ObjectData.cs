@@ -243,9 +243,9 @@ namespace ATT
                     // Additionally, there must be an itemID for the modID to be present.
                     if (ignoreBonus || ignoreSource || Convert.ToInt64(objRef) < 1 || !data.ContainsKey("itemID")) fields.Remove("modID");
                 }
-                if (data.ContainsKey("s"))
+                if (data.ContainsKey("sourceID"))
                 {
-                    if (ignoreSource) fields.Remove("s");
+                    if (ignoreSource) fields.Remove("sourceID");
                 }
                 if (data.TryGetValue("f", out objRef))
                 {

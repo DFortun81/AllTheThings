@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 								{"select", "questID", 52781 },	-- HQT for the phase of Arathi
 								{"find", "headerID", COMMON_BOSS_DROPS},	-- Find the Common Boss Drop Header.
 								{"find", "headerID", FACTION_HEADER_ALLIANCE},	-- Select the Faction Header.
-								{"extract","s"},	-- Extract Sources
+								{"extract","sourceID"},	-- Extract Sources
 								{"modID", 53},	-- Apply specific modID
 							},
 						}),

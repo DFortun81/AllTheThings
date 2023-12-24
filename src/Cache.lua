@@ -290,8 +290,8 @@ local fieldConverters = {
 	["rwp"] = function(group, value)
 		CacheField(group, "rwp", value);
 	end,
-	["s"] = function(group, value)
-		CacheField(group, "s", value);
+	["sourceID"] = function(group, value)
+		CacheField(group, "sourceID", value);
 	end,
 	["speciesID"] = function(group, value)
 		CacheField(group, "speciesID", value);
@@ -759,7 +759,7 @@ end
 -- NOTE: Do not use this function when the results are being passed into an Update afterward
 -- or if ATT data has not been loaded yet
 local function SearchForSourceIDQuickly(sourceID)
-	if sourceID then return SearchForField("s", sourceID)[1]; end
+	if sourceID then return SearchForField("sourceID", sourceID)[1]; end
 end
 
 -- Search a group for objects whose hash matches a hash found in hashes and append it to table t.

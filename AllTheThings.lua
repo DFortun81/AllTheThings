@@ -330,15 +330,15 @@ end
 local function GetMoneyString(amount)
 	if amount > 0 then
 		local formatted
-		local g,s,c = math_floor(amount / 100 / 100), math_floor((amount / 100) % 100), math_floor(amount % 100)
-		if g > 0 then
-			formatted = formatNumericWithCommas(g) .. "|TInterface\\MONEYFRAME\\UI-GoldIcon:0|t"
+		local gold,silver,copper = math_floor(amount / 100 / 100), math_floor((amount / 100) % 100), math_floor(amount % 100)
+		if gold > 0 then
+			formatted = formatNumericWithCommas(gold) .. "|TInterface\\MONEYFRAME\\UI-GoldIcon:0|t"
 		end
-		if s > 0 then
-			formatted = (formatted or "") .. s .. "|TInterface\\MONEYFRAME\\UI-SilverIcon:0|t"
+		if silver > 0 then
+			formatted = (formatted or "") .. silver .. "|TInterface\\MONEYFRAME\\UI-SilverIcon:0|t"
 		end
-		if c > 0 then
-			formatted = (formatted or "") .. c .. "|TInterface\\MONEYFRAME\\UI-CopperIcon:0|t"
+		if copper > 0 then
+			formatted = (formatted or "") .. copper .. "|TInterface\\MONEYFRAME\\UI-CopperIcon:0|t"
 		end
 		return formatted
 	end
@@ -581,9 +581,9 @@ app.RefreshTradeSkillCache = function()
 			-- app.PrintDebug("KnownProfession",j,GetProfessionInfo(j));
 			local specializations = GetTradeSkillSpecialization(prof);
 			if specializations ~= nil then
-				for _,s in pairs(specializations) do
-					if s and app.IsSpellKnownHelper(s) then
-						cache[s] = true;
+				for _,spellID in pairs(specializations) do
+					if spellID and app.IsSpellKnownHelper(spellID) then
+						cache[spellID] = true;
 					end
 				end
 			end
@@ -752,7 +752,7 @@ do
 	-- Attempts to return the displayID for the data, or every displayID if 'all' is specified
 	GetDisplayID = function(data, all)
 		-- don't create a displayID for groups with a sourceID/itemID/difficultyID/mapID
-		if data.s or data.itemID or data.difficultyID or data.mapID then return; end
+		if data.sourceID or data.itemID or data.difficultyID or data.mapID then return; end
 		if all then
 			local displayInfo, _ = {};
 			-- specific displayID
@@ -844,9 +844,9 @@ GameTooltipModel.TrySetModel = function(self, reference)
 			self:Show();
 		end
 
-		if reference.s and reference.artifactID then
+		if reference.sourceID and reference.artifactID then
 			-- TODO: would be cool if this showed for all sourceID's, but it seems to be random which items show a model from the visualID
-			local sourceInfo = C_TransmogCollection_GetSourceInfo(reference.s);
+			local sourceInfo = C_TransmogCollection_GetSourceInfo(reference.sourceID);
 			if sourceInfo and sourceInfo.visualID then
 				self.Model:SetCamDistanceScale(0.8);
 				self.Model:SetItemAppearance(sourceInfo.visualID);
@@ -1384,42 +1384,42 @@ local function CreateObject(t, rootOnly)
 
 	-- already an object, so need to create a new instance of the same data
 	if t.key then
-		local s = {};
-		-- app.PrintDebug("CreateObject from key via merge",t.key,t[t.key], t, s);
-		MergeProperties(s, t, nil, true);
+		local result = {};
+		-- app.PrintDebug("CreateObject from key via merge",t.key,t[t.key], t, result);
+		MergeProperties(result, t, nil, true);
 		-- include the raw g since it will be replaced at the end with new objects
-		s.g = t.g;
-		t = s;
-		-- app.PrintDebug("Merge done",s.key,s[s.key], t, s);
+		result.g = t.g;
+		t = result;
+		-- app.PrintDebug("Merge done",result.key,result[result.key], t, result);
 	-- is it an array of raw datas which needs to be turned into an array of usable objects
 	elseif t[1] then
-		local s = {};
+		local result = {};
 		-- array
 		-- app.PrintDebug("CreateObject on array",#t);
 		for i,o in ipairs(t) do
-			s[i] = CreateObject(o, rootOnly);
+			result[i] = CreateObject(o, rootOnly);
 		end
-		return s;
+		return result;
 	-- use the highest-priority piece of data which exists in the table to turn it into an object
 	else
 		local meta = getmetatable(t);
 		if meta then
-			local s = {};
+			local result = {};
 			for k,v in pairs(t) do
-				rawset(s, k, v);
+				rawset(result, k, v);
 			end
 			if t.g then
-				s.g = {};
+				result.g = {};
 				for i,o in ipairs(t.g) do
-					tinsert(s.g, CreateObject(o));
+					tinsert(result.g, CreateObject(o));
 				end
 			end
-			setmetatable(s, meta);
-			return s;
+			setmetatable(result, meta);
+			return result;
 		elseif t.mapID then
 			t = app.CreateMap(t.mapID, t);
-		elseif t.s then
-			t = app.CreateItemSource(t.s, t.itemID, t);
+		elseif t.sourceID then
+			t = app.CreateItemSource(t.sourceID, t.itemID, t);
 		elseif t.encounterID then
 			t = app.CreateEncounter(t.encounterID, t);
 		elseif t.instanceID then
@@ -1488,11 +1488,11 @@ local function CreateObject(t, rootOnly)
 			if rootOnly then
 				-- shallow copy the root table only, since using t as a metatable will allow .g to exist still on the table
 				-- app.PrintDebug("rootOnly copy of",t.text)
-				local s = {};
+				local result = {};
 				for k,v in pairs(t) do
-					s[k] = v;
+					result[k] = v;
 				end
-				t = s;
+				t = result;
 			else
 				-- app.PrintDebug("metatable copy of",t.text)
 				t = setmetatable({}, { __index = t });
@@ -2664,8 +2664,8 @@ local ResolveSymbolicLink;
 -- This should only be used on a cloned group so the source group is not contaminated
 local function FillSymLinks(group, recursive)
 	if recursive and group.g then
-		for _,s in ipairs(group.g) do
-			FillSymLinks(s, recursive);
+		for _,obj in ipairs(group.g) do
+			FillSymLinks(obj, recursive);
 		end
 	end
 	if group.sym then
@@ -2787,8 +2787,8 @@ local ResolveFunctions = {
 		if okey then
 			local okeyval = o[okey];
 			if okeyval then
-				for _,s in ipairs(SearchForField(okey, okeyval)) do
-					ArrayAppend(searchResults, s.g);
+				for _,result in ipairs(SearchForField(okey, okeyval)) do
+					ArrayAppend(searchResults, result.g);
 				end
 			end
 		end
@@ -2830,17 +2830,17 @@ local ResolveFunctions = {
 		end
 		wipe(searchResults);
 		if orig then
-			for _,s in ipairs(orig) do
+			for _,obj in ipairs(orig) do
 				-- insert raw & symlinked Things from this group
-				ArrayAppend(searchResults, s.g, ResolveSymbolicLink(s));
+				ArrayAppend(searchResults, obj.g, ResolveSymbolicLink(obj));
 			end
 		end
 	end,
 	-- Instruction to include only search results where a key value is a value
 	["where"] = function(finalized, searchResults, o, cmd, field, value)
 		for k=#searchResults,1,-1 do
-			local s = searchResults[k];
-			if not s[field] or s[field] ~= value then
+			local result = searchResults[k];
+			if not result[field] or result[field] ~= value then
 				tremove(searchResults, k);
 			end
 		end
@@ -2852,8 +2852,8 @@ local ResolveFunctions = {
 			hash[value] = true;
 		end
 		for k=#searchResults,1,-1 do
-			local s = searchResults[k];
-			if not s[field] or not hash[s[field]] then
+			local result = searchResults[k];
+			if not result[field] or not hash[result[field]] then
 				tremove(searchResults, k);
 			end
 		end
@@ -2888,10 +2888,10 @@ local ResolveFunctions = {
 		end
 		wipe(searchResults);
 		if orig then
-			local s, g;
+			local result, g;
 			for k=#orig,1,-1 do
-				s = orig[k];
-				g = s.g;
+				result = orig[k];
+				g = result.g;
 				if g and index <= #g then
 					tinsert(searchResults, g[index]);
 				end
@@ -2905,12 +2905,12 @@ local ResolveFunctions = {
 			app.print("'",cmd,"' had empty value set")
 			return;
 		end
-		local s, value;
+		local result, value;
 		for k=#searchResults,1,-1 do
-			s = searchResults[k];
+			result = searchResults[k];
 			for i=1,vals do
 				value = select(i, ...);
-				if s[field] == value then
+				if result[field] == value then
 					tremove(searchResults, k);
 					break;
 				end
@@ -2920,15 +2920,13 @@ local ResolveFunctions = {
 	-- Instruction to include only search results where a key exists
 	["is"] = function(finalized, searchResults, o, cmd, field)
 		for k=#searchResults,1,-1 do
-			local s = searchResults[k];
-			if not s[field] then tremove(searchResults, k); end
+			if not searchResults[k][field] then tremove(searchResults, k); end
 		end
 	end,
 	-- Instruction to include only search results where a key doesn't exist
 	["isnt"] = function(finalized, searchResults, o, cmd, field)
 		for k=#searchResults,1,-1 do
-			local s = searchResults[k];
-			if s[field] then tremove(searchResults, k); end
+			if searchResults[k][field] then tremove(searchResults, k); end
 		end
 	end,
 	-- Instruction to include only search results where a key value/table contains a value
@@ -2938,10 +2936,10 @@ local ResolveFunctions = {
 			app.print("'",cmd,"' had empty value set")
 			return;
 		end
-		local s, kval;
+		local result, kval;
 		for k=#searchResults,1,-1 do
-			s = searchResults[k];
-			kval = s[field];
+			result = searchResults[k];
+			kval = result[field];
 			-- key doesn't exist at all on the result
 			if not kval then
 				tremove(searchResults, k);
@@ -2972,10 +2970,10 @@ local ResolveFunctions = {
 			app.print("'",cmd,"' had empty value set")
 			return;
 		end
-		local s, kval;
+		local result, kval;
 		for k=#searchResults,1,-1 do
-			s = searchResults[k];
-			kval = s[field];
+			result = searchResults[k];
+			kval = result[field];
 			-- key exists
 			if kval then
 				local match;
@@ -2987,8 +2985,8 @@ local ResolveFunctions = {
 				end
 				if match then
 					-- TEMP logic to allow Ensembles to continue working until they get fixed again...
-					if field == "itemID" and s.g and kval == o[field] then
-						ArrayAppend(searchResults, s.g);
+					if field == "itemID" and result.g and kval == o[field] then
+						ArrayAppend(searchResults, result.g);
 					end
 					tremove(searchResults, k);
 				end
@@ -3002,10 +3000,10 @@ local ResolveFunctions = {
 			app.print("'",cmd,"' had empty value set")
 			return;
 		end
-		local s, invtype, itemID;
+		local result, invtype, itemID;
 		for k=#searchResults,1,-1 do
-			s = searchResults[k];
-			itemID = s.itemID;
+			result = searchResults[k];
+			itemID = result.itemID;
 			if itemID then
 				invtype = select(4, GetItemInfoInstant(itemID));
 				local match;
@@ -3080,10 +3078,10 @@ local ResolveFunctions = {
 		for i=#types,1,-1 do
 			types[i] = _G["RELIC_SLOT_TYPE_" .. types[i]];
 		end
-		local s, itemID;
+		local result, itemID;
 		for k=#searchResults,1,-1 do
-			s = searchResults[k];
-			itemID = s.itemID;
+			result = searchResults[k];
+			itemID = result.itemID;
 			if itemID and IsArtifactRelicItem(itemID) and contains(types, select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID))) then
 				-- We're good.
 			else
@@ -3103,18 +3101,18 @@ local ResolveFunctions = {
 	["whereMyModID"] = function(finalized, searchResults, o)
 		local modID = o.modID
 		for k=#searchResults,1,-1 do
-			local s = searchResults[k];
-			if not s.modID or s.modID ~= modID then
+			local result = searchResults[k];
+			if not result.modID or result.modID ~= modID then
 				tremove(searchResults, k);
 			end
 		end
 	end,
 	-- Instruction to include only search results where an item is a relic (Not used currently)
 	-- ["isrelic"] = function(finalized, searchResults)
-	-- 	local s, itemID;
+	-- 	local result, itemID;
 	-- 	for k=#searchResults,1,-1 do
-	-- 		s = searchResults[k];
-	-- 		itemID = s.itemID;
+	-- 		result = searchResults[k];
+	-- 		itemID = result.itemID;
 	-- 		if not itemID or not IsArtifactRelicItem(itemID) then
 	-- 			tremove(searchResults, k);
 	-- 		end
@@ -3234,7 +3232,7 @@ local SubroutineCache = {
 		select(finalized, searchResults, o, "select", "headerID", headerID1);	-- Select the Season header
 		find(finalized, searchResults, o, "find", "headerID", headerID2);	-- Select the Set header
 		find(finalized, searchResults, o, "find", "classID", classID);		-- Select the class header
-		extract(finalized, searchResults, o, "extract", "s");	-- Extract all Items with a SourceID
+		extract(finalized, searchResults, o, "extract", "sourceID");	-- Extract all Items with a SourceID
 	end,
 	["pvp_set_faction_ensemble"] = function(finalized, searchResults, o, cmd, _, headerID1, headerID2, headerID3, classID)
 		local select, find, extract = ResolveFunctions.select, ResolveFunctions.find, ResolveFunctions.extract
@@ -3242,7 +3240,7 @@ local SubroutineCache = {
 		find(finalized, searchResults, o, "find", "headerID", headerID2);	-- Select the Faction header
 		find(finalized, searchResults, o, "find", "headerID", headerID3);	-- Select the Set header
 		find(finalized, searchResults, o, "find", "classID", classID);		-- Select the class header
-		extract(finalized, searchResults, o, "extract", "s");	-- Extract all Items with a SourceID
+		extract(finalized, searchResults, o, "extract", "sourceID");	-- Extract all Items with a SourceID
 	end,
 	-- Weapons
 	["pvp_weapons_ensemble"] = function(finalized, searchResults, o, cmd, _, headerID1, headerID2)
@@ -3250,7 +3248,7 @@ local SubroutineCache = {
 		select(finalized, searchResults, o, "select", "headerID", headerID1);	-- Select the Season header
 		find(finalized, searchResults, o, "find", "headerID", headerID2);	-- Select the Set header
 		find(finalized, searchResults, o, "find", "headerID", app.HeaderConstants.WEAPONS);	-- Select the "Weapons" header.
-		extract(finalized, searchResults, o, "extract", "s");	-- Extract all Items with a SourceID
+		extract(finalized, searchResults, o, "extract", "sourceID");	-- Extract all Items with a SourceID
 	end,
 	["pvp_weapons_faction_ensemble"] = function(finalized, searchResults, o, cmd, _, headerID1, headerID2, headerID3)
 		local select, find, extract = ResolveFunctions.select, ResolveFunctions.find, ResolveFunctions.extract
@@ -3258,7 +3256,7 @@ local SubroutineCache = {
 		find(finalized, searchResults, o, "find", "headerID", headerID2);	-- Select the Faction header
 		find(finalized, searchResults, o, "find", "headerID", headerID3);	-- Select the Set header
 		find(finalized, searchResults, o, "find", "headerID", app.HeaderConstants.WEAPONS);	-- Select the "Weapons" header.
-		extract(finalized, searchResults, o, "extract", "s");	-- Extract all Items with a SourceID
+		extract(finalized, searchResults, o, "extract", "sourceID");	-- Extract all Items with a SourceID
 	end,
 	-- Common Northrend/Cataclysm Recipes Vendor
 	["common_recipes_vendor"] = function(finalized, searchResults, o, cmd, npcID)
@@ -3765,44 +3763,44 @@ ResolveSymbolicLink = function(o)
 		local sHash;
 		if FinalizeModID then
 			-- app.PrintDebug("Applying FinalizeModID",FinalizeModID)
-			for _,s in ipairs(cloned) do
-				if s.itemID then
-					s.modID = FinalizeModID;
+			for _,clone in ipairs(cloned) do
+				if clone.itemID then
+					clone.modID = FinalizeModID;
 				end
 				-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
-				s.sourceParent = nil;
-				s.parent = nil;
+				clone.sourceParent = nil;
+				clone.parent = nil;
 				if PruneFinalized then
 					for _,field in ipairs(PruneFinalized) do
-						s[field] = nil
+						clone[field] = nil
 					end
 				end
 				-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
-				sHash = s.hash;
+				sHash = clone.hash;
 				if sHash and sHash == oHash then
 					app.print("Symlink group pulled itself into finalized results!",oHash,o.key,o.modItemID,o.link or o.text,FinalizeModID)
-					s.sym = nil;
+					clone.sym = nil;
 				else
-					FillSymLinks(s);
+					FillSymLinks(clone);
 				end
 			end
 		else
-			for _,s in ipairs(cloned) do
+			for _,clone in ipairs(cloned) do
 				-- in symlinking a Thing to another Source, we are effectively declaring that it is Sourced within this Source, for the specific scope
-				s.sourceParent = nil;
-				s.parent = nil;
+				clone.sourceParent = nil;
+				clone.parent = nil;
 				if PruneFinalized then
 					for _,field in ipairs(PruneFinalized) do
-						s[field] = nil
+						clone[field] = nil
 					end
 				end
 				-- if somehow the symlink pulls in the same item as used as the source of the symlink, notify in chat and clear any symlink on it
-				sHash = s.hash;
+				sHash = clone.hash;
 				if sHash and sHash == oHash then
 					app.print("Symlink group pulled itself into finalized results!",oHash,o.key,o.modItemID,o.link or o.text)
-					s.sym = nil;
+					clone.sym = nil;
 				else
-					FillSymLinks(s);
+					FillSymLinks(clone);
 				end
 			end
 		end
@@ -4115,7 +4113,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 			local sourceGroup;
 			for i,j in ipairs(group.g or group) do
 				-- app.PrintDebug("sourceGroup?",j.key,j.key and j[j.key],j.modItemID)
-				if sourceID and GroupMatchesParams(j, "s", sourceID) then
+				if sourceID and GroupMatchesParams(j, "sourceID", sourceID) then
 					-- app.PrintDebug("sourceID match",sourceID)
 					if sourceGroup then MergeProperties(sourceGroup, j)
 					else sourceGroup = CreateObject(j); end
@@ -4135,7 +4133,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 			if sourceGroup.key then
 				-- Acquire the SourceID if it hadn't been determined yet.
 				if not sourceID and sourceGroup.link then
-					sourceID = GetSourceID(sourceGroup.link) or sourceGroup.s;
+					sourceID = GetSourceID(sourceGroup.link) or sourceGroup.sourceID;
 				end
 			else
 				sourceGroup.missing = true;
@@ -4177,7 +4175,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 											tinsert(info, { left = text .. link .. (useItemIDs and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
 										end
 									else
-										local otherATTSource = app.SearchForObject("s", otherSourceID, "field");
+										local otherATTSource = app.SearchForObject("sourceID", otherSourceID, "field");
 										if otherATTSource then
 											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
 											if (sourceGroup.f == otherATTSource.f or sourceGroup.f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
@@ -4237,7 +4235,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 											tinsert(info, { left = text .. link .. (useItemIDs and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
 										end
 									else
-										local otherATTSource = app.SearchForObject("s", otherSourceID, "field");
+										local otherATTSource = app.SearchForObject("sourceID", otherSourceID, "field");
 										if otherATTSource then
 											-- Show information about the appearance:
 											local failText = "";
@@ -4567,7 +4565,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 		-- Ensure the param values are consistent with the new root object values (basically only affects creatureID)
 		paramA, paramB = root.key, root[root.key];
 		-- Special Case for itemID, need to use the modItemID for accuracy in item matching
-		if paramA == "itemID" or paramA == "s" then
+		if paramA == "itemID" or paramA == "sourceID" then
 			paramB = root.modItemID or paramB;
 			-- if our item root has a bonusID, then we will rely on upgrade module to provide any upgrade
 			-- raw groups with 'up' will never be sourced with a bonusID
@@ -4707,7 +4705,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 			tinsert(info, awpGreaterThanRWP and 1 or 2, { left = GetRemovedWithPatchString(rwp), wrap = true, color = app.Colors.RemovedWithPatch });
 		end
 
-		if group.u and (not group.crs or group.itemID or group.s) then
+		if group.u and (not group.crs or group.itemID or group.sourceID) then
 			-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
 			if group.u == 1 and app.RecursiveFirstParentWithFieldValue(group, "_missing", true) then
 				tinsert(info, { left = L["UNSORTED_DESC"], wrap = true, color = app.Colors.ChatLinkError });
@@ -5413,7 +5411,7 @@ app.ThingKeys = {
 	["creatureID"] = true,
 	["currencyID"] = true,
 	["itemID"] = true,
-	["s"] = true,
+	["sourceID"] = true,
 	["speciesID"] = true,
 	["recipeID"] = true,
 	["spellID"] = true,
@@ -6050,8 +6048,8 @@ local function SearchForLink(link)
 				local sourceID = select(3, GetItemInfo(link)) ~= 6 and GetSourceID(link);
 				if sourceID then
 					-- Search for the Source ID. (an appearance)
-					_ = SearchForField("s", sourceID);
-					-- app.PrintDebug("SEARCHING FOR ITEM LINK WITH S", link, itemID, sourceID, _ and #_);
+					_ = SearchForField("sourceID", sourceID);
+					-- app.PrintDebug("SEARCHING FOR ITEM LINK WITH SOURCE", link, itemID, sourceID, _ and #_);
 					return _;
 				else
 					-- Search for the Item ID. (an item without an appearance)
@@ -6088,8 +6086,8 @@ local function SearchForLink(link)
 		-- app.PrintDebug("SEARCH FOR FIELD",kind,id)
 		if kind == "itemid" or kind == "i" then
 			return SearchForField("itemID", id);
-		elseif kind == "sourceid" or kind == "s" then
-			return SearchForField("s", id);
+		elseif kind == "sourceid" or kind == "source" or kind == "s" then
+			return SearchForField("sourceID", id);
 		elseif kind == "questid" or kind == "quest" or kind == "q" then
 			return SearchForField("questID", id);
 		elseif kind == "creatureid" or kind == "npcid" or kind == "n" then
@@ -6678,7 +6676,7 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 		if not canMog then return; end
 		local factionRaces = app.Modules.FactionData.FACTION_RACES;
 		for _,sourceID in ipairs(visualIDs) do
-			-- app.PrintDebug("visualID",knownSource.visualID,"s",sourceID,"known:",acctSources[sourceID)]
+			-- app.PrintDebug("visualID",knownSource.visualID,"sourceID",sourceID,"known:",acctSources[sourceID)]
 			-- If it is not currently marked collected on the account
 			if not acctSources[sourceID] then
 				-- for current character only, all we care is that the knownItem is not exclusive to another
@@ -6734,9 +6732,9 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 										or checkSource.categoryID == 4 --[[CHEST: Robe vs Armor]]
 										or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[checkSource.invType])
 								then
-									-- app.PrintDebug("Unique Collected s:",sourceID);
+									-- app.PrintDebug("Unique Collected sourceID:",sourceID);
 									acctSources[sourceID] = 2;
-								-- else print("sources share visual and filters but different equips",item.s,sourceID)
+								-- else print("sources share visual and filters but different equips",item.sourceID,sourceID)
 								end
 							end
 						end
@@ -6771,7 +6769,7 @@ local function RefreshAppearanceSources()
 	if not app.MaxSourceID then
 		-- app.PrintDebug("Initial Session Refresh")
 		local maxSourceID = 0;
-		for id,_ in pairs(SearchForFieldContainer("s")) do
+		for id,_ in pairs(SearchForFieldContainer("sourceID")) do
 			-- track the max sourceID so we can evaluate sources not in ATT as well
 			if id > maxSourceID then maxSourceID = id; end
 		end
@@ -6780,10 +6778,10 @@ local function RefreshAppearanceSources()
 	end
 	-- Then evaluate all SourceIDs under the maximum which are known explicitly
 	-- app.PrintDebug("Completionist Refresh")
-	for s=1,app.MaxSourceID do
+	for sourceID=1,app.MaxSourceID do
 		-- don't need to check for existing value... everything is cleared beforehand
-		if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
-			collectedSources[s] = 1;
+		if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
+			collectedSources[sourceID] = 1;
 		end
 	end
 	-- app.PrintDebug("Completionist Refresh done")
@@ -6792,19 +6790,19 @@ local function RefreshAppearanceSources()
 		-- app.PrintDebug("Unique Refresh")
 		local currentCharacterOnly = app.Settings:Get("MainOnly");
 		local ItemSourceFilter = app.ItemSourceFilter;
-		for s=1,app.MaxSourceID do
+		for sourceID=1,app.MaxSourceID do
 			-- for each known source
-			if collectedSources[s] == 1 then
+			if collectedSources[sourceID] == 1 then
 				-- collect shared visual sources
-				MarkUniqueCollectedSourcesBySource(s, currentCharacterOnly);
+				MarkUniqueCollectedSourcesBySource(sourceID, currentCharacterOnly);
 			elseif brokenUniqueSources then
 				-- special reverse-check-logic for unknown SourceID's whose VisualID does not return the SourceID from C_TransmogCollection_GetAllAppearanceSources(VisualID)
 				-- and haven't already been marked as unique-collected
-				if brokenUniqueSources[s] and not collectedSources[s] then
-					local sInfo = C_TransmogCollection_GetSourceInfo(s);
+				if brokenUniqueSources[sourceID] and not collectedSources[sourceID] then
+					local sInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 					if ItemSourceFilter(sInfo) then
-						-- app.PrintDebug("Fixed Unique SourceID Collected",s)
-						collectedSources[s] = 2;
+						-- app.PrintDebug("Fixed Unique SourceID Collected",sourceID)
+						collectedSources[sourceID] = 2;
 					end
 				end
 			end
@@ -7357,7 +7355,7 @@ local questFields = {
 			local type, id = strsplit(":", t.type);
 			local name, icon = app.GetAutomaticHeaderData(id, type);
 			t.name = name;
-			if type == "s" then
+			if type == "s" then	-- spell
 				t.icon = icon;
 			elseif type == "n" then
 				t.displayID = icon
@@ -8719,20 +8717,20 @@ local fields = {
 		return modItemID;
 	end,
 	-- probably never used ever, but just in case an artifact somehow misses it's appearance...
-	["s"] = function(t)
-		local s = t.silentLink;
-		if s then
-			s = GetSourceID(s);
-			-- print("Artifact Source",s,t.silentLink)
-			if s and s > 0 then
-				t.s = s;
+	["sourceID"] = function(t)
+		local sourceID = t.silentLink;
+		if sourceID then
+			sourceID = GetSourceID(sourceID);
+			-- print("Artifact Source",sourceID,t.silentLink)
+			if sourceID and sourceID > 0 then
+				t.sourceID = sourceID;
 				app.SaveHarvestSource(t)
-				app.PrintDebug("SourceID Update",t.silentLink,t.modItemID,"=>",s);
-				if ATTAccountWideData.Sources[s] ~= 1 and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
-					-- print("Saved Known Source",s)
-					ATTAccountWideData.Sources[s] = 1;
+				app.PrintDebug("SourceID Update",t.silentLink,t.modItemID,"=>",sourceID);
+				if ATTAccountWideData.Sources[sourceID] ~= 1 and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
+					-- print("Saved Known Source",sourceID)
+					ATTAccountWideData.Sources[sourceID] = 1;
 				end
-				return s;
+				return sourceID;
 			end
 		end
 	end,
@@ -10446,10 +10444,10 @@ local function HandleItemRetries(t)
 	local retries = _t.retries;
 	if retries then
 		if retries > app.MaximumItemInfoRetries then
-			local itemName = L["ITEM_NAMES"][id] or (t.s and L["S_NAMES"] and L["S_NAMES"][t.s]) or "Item #" .. tostring(id) .. "*";
+			local itemName = L["ITEM_NAMES"][id] or (t.sourceID and L["S_NAMES"] and L["S_NAMES"][t.sourceID]) or "Item #" .. tostring(id) .. "*";
 			_t.title = L["FAILED_ITEM_INFO"];
 			_t.link = nil;
-			_t.s = nil;
+			_t.sourceID = nil;
 			-- print("itemRetriesMax",itemName,t.retries)
 			-- save the "name" field in the source group to prevent further requests to the cache
 			t.name = itemName;
@@ -10522,10 +10520,10 @@ local function default_link(t)
 		-- save this link so it doesn't need to be built again
 		t.rawlink = itemLink;
 		return RawSetItemInfoFromLink(t, itemLink);
-	-- elseif t.s then
-		-- local s = t.s;
+	-- elseif t.sourceID then
+		-- local sourceID = t.sourceID;
 		-- This is supposed to be an Item but instead is a raw Source... likely doesn't exist
-		-- local link = "|cffff80ff|Htransmogappearance:" .. s .. "|h[Source " .. s .. "]|h|r";
+		-- local link = "|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r";
 		-- This is weird...
 	end
 	return UNKNOWN;
@@ -10673,7 +10671,7 @@ local itemFields = {
 		end
 	end,
 	["collectedAsTransmog"] = function(t)
-		return ATTAccountWideData.Sources[t.s];
+		return ATTAccountWideData.Sources[t.sourceID];
 	end,
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompleted(t.questID);
@@ -10685,10 +10683,10 @@ local itemFields = {
 		local link = t.link or t.rawlink or t.silentLink;
 		-- app.PrintDebug("AsItemSource.link",link)
 		if not link then return end
-		local s = GetSourceID(link)
-		if s then
-			-- app.PrintDebug("AsItemSource",s)
-			return app.CreateItemSource(s, t.itemID, t);
+		local sourceID = GetSourceID(link)
+		if sourceID then
+			-- app.PrintDebug("AsItemSource",sourceID)
+			return app.CreateItemSource(sourceID, t.itemID, t);
 		end
 		-- app.PrintDebug("AsItemSource:nil",t.modItemID)
 	end,
@@ -10758,7 +10756,7 @@ local BaseCostItem = app.BaseObjectFields(fields_BaseCostItem, "BaseCostItem");
 -- Appearance Lib (Item Source)
 -- TODO: if PL filter is ever a thing investigate https://wowpedia.fandom.com/wiki/API_C_TransmogCollection.PlayerCanCollectSource
 local fields = RawCloneData(itemFields, {
-	["key"] = function(t) return "s"; end,
+	["key"] = function(t) return "sourceID"; end,
 	["collectible"] = itemFields.collectibleAsTransmog;
 	["collected"] = itemFields.collectedAsTransmog;
 	-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
@@ -10776,13 +10774,13 @@ local fields = RawCloneData(itemFields, {
 });
 local BaseItemSource = app.BaseObjectFields(fields, "BaseItemSource");
 app.CreateItemSource = function(sourceID, itemID, t)
-	t = setmetatable(constructor(sourceID, t, "s"), BaseItemSource);
+	t = setmetatable(constructor(sourceID, t, "sourceID"), BaseItemSource);
 	t.itemID = itemID;
 	return t;
 end
 app.CreateItem = function(id, t)
 	if t then
-		if t.s then
+		if t.sourceID then
 			return setmetatable(constructor(id, t, "itemID"), BaseItemSource);
 		elseif t.factionID then
 			return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithFactionID);
@@ -10976,7 +10974,7 @@ fields.collectible = function(t)
 		-- Heirloom Token for a Reputation
 		if t.factionID and app.Settings.Collectibles.Reputations then return true; end
 		-- Heirloom Appearance
-		if t.s and app.Settings.Collectibles.Transmog then return true; end
+		if t.sourceID and app.Settings.Collectibles.Transmog then return true; end
 		-- Otherwise the Heirloom Item itself is not inherently collectible
 	end
 fields.collected = function(t)
@@ -10993,7 +10991,7 @@ fields.collected = function(t)
 				end
 			end
 		end
-		if t.s and ATTAccountWideData.Sources[t.s] then return 1; end
+		if t.sourceID and ATTAccountWideData.Sources[t.sourceID] then return 1; end
 		if t.itemID and C_Heirloom_PlayerHasHeirloom(t.itemID) then return 1; end
 		if t.itemID then return 1; end
 	end
@@ -11301,8 +11299,8 @@ itemTooltipHarvesterFields.text = function(t)
 							if string.find(text, "Classes: ") then
 								local classes = {};
 								local _,list = strsplit(":", text);
-								for i,s in ipairs({strsplit(",", list)}) do
-									tinsert(classes, app.ClassDB[strtrim(s)]);
+								for i,className in ipairs({strsplit(",", list)}) do
+									tinsert(classes, app.ClassDB[strtrim(className)]);
 								end
 								if #classes > 0 then
 									t.info.classes = classes;
@@ -11312,10 +11310,10 @@ itemTooltipHarvesterFields.text = function(t)
 								local raceNames = {strsplit(",", list)};
 								if raceNames then
 									local races = {};
-									for _,s in ipairs(raceNames) do
-										local race = app.RaceDB[strtrim(s)];
+									for _,raceName in ipairs(raceNames) do
+										local race = app.RaceDB[strtrim(raceName)];
 										if not race then
-											print("Unknown Race",t.info.itemID,strtrim(s))
+											print("Unknown Race",t.info.itemID,strtrim(raceName))
 										elseif type(race) == "number" then
 											tinsert(races, race);
 										else -- Pandaren
@@ -11505,9 +11503,9 @@ app.ImportRawLink = function(group, rawlink, ignoreSource)
 			group.modItemID = nil;
 			if not ignoreSource then
 				-- does this link also have a sourceID?
-				local s = GetSourceID(rawlink);
-				-- app.PrintDebug("IRL:s",rawlink,s)
-				if s then group.s = s; end
+				local sourceID = GetSourceID(rawlink);
+				-- app.PrintDebug("IRL:sourceID",rawlink,sourceID)
+				if sourceID then group.sourceID = sourceID; end
 				-- if app.Debugging then app.PrintTable(group) end
 			end
 			-- app.PrintDebug("IRL=",rawlink,group.itemID,group.modID,group.bonusID,"=>",group.modItemID);
@@ -11516,26 +11514,26 @@ app.ImportRawLink = function(group, rawlink, ignoreSource)
 end
 -- Allows generating and capturing the specific ItemString which represents the SourceID of a group, if possible
 app.GenerateGroupLinkUsingSourceID = function(group)
-	local s = group and group.s;
-	if not s then return; end
+	local sourceID = group and group.sourceID;
+	if not sourceID then return; end
 
-	local link = app.DetermineItemLink(s);
+	local link = app.DetermineItemLink(sourceID);
 	if not link then return; end
-	-- app.PrintDebug("GGLUS",s,link)
+	-- app.PrintDebug("GGLUS",sourceID,link)
 
 	app.ImportRawLink(group, link, true);
 
-	local sourceGroup = app.SearchForObject("s", s, "key");
+	local sourceGroup = app.SearchForObject("sourceID", sourceID, "key");
 	if not sourceGroup then
 		app.SaveHarvestSource(group);
 	end
 end
 -- Adds necessary SourceID information for Item data into the Harvest variable
 app.SaveHarvestSource = function(data)
-	local s, itemID = data.s, data.modItemID;
-	if s and itemID then
-		-- app.PrintDebug("Harvest:s",itemID,"=>",s)
-		AllTheThingsHarvestItems[itemID] = s;
+	local sourceID, itemID = data.sourceID, data.modItemID;
+	if sourceID and itemID then
+		-- app.PrintDebug("Harvest:sourceID",itemID,"=>",sourceID)
+		AllTheThingsHarvestItems[itemID] = sourceID;
 	end
 end
 -- Returns the depth at which a given Item matches the provided modItemID
@@ -13350,7 +13348,7 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 		-- Search ATT for the related sources.
 		-- Show the collection message.
 		if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
-			local searchResults = SearchForField("s", sourceID);
+			local searchResults = SearchForField("sourceID", sourceID);
 			if #searchResults > 0 then
 				local firstMatch = searchResults[1];
 				print(format(L["ITEM_ID_ADDED"], firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
@@ -13371,7 +13369,7 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 		end
 
 		-- Update the groups for the sourceID results
-		UpdateRawID("s", sourceID);
+		UpdateRawID("sourceID", sourceID);
 	end
 end
 function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
@@ -13398,7 +13396,7 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 		-- Show the collection message if learning this Source actually contributed as a new Unique appearance
 		if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
 			-- Search for the item that actually was unlocked.
-			local searchResults = SearchForField("s", sourceID);
+			local searchResults = SearchForField("sourceID", sourceID);
 			if #searchResults > 0 then
 				local firstMatch = searchResults[1];
 				print(format(L[newAppearancesLearned > 0 and "ITEM_ID_ADDED_SHARED" or "ITEM_ID_ADDED"],
@@ -13420,7 +13418,7 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 		end
 
 		-- Update the groups for the sourceIDs
-		UpdateRawIDs("s", unlockedSourceIDs);
+		UpdateRawIDs("sourceID", unlockedSourceIDs);
 	end
 end
 function app.UniqueModeItemCollectionHelper(sourceID, oldState)
@@ -13706,8 +13704,8 @@ local function CreateMinimapButton()
 	local update = function(self)
 		local w, x = GetCursorPosition();
 		local y, z = Minimap:GetLeft(), Minimap:GetBottom();
-		local s = UIParent:GetScale();
-		w = y - w / s + 70; x = x / s - z - 70;
+		local scale = UIParent:GetScale();
+		w = y - w / scale + 70; x = x / scale - z - 70;
 		SetDataMember("Position", math.deg(math.atan2(x, w)));
 		self:Raise();
 		self:update();
@@ -13808,25 +13806,25 @@ function app:CreateMiniListForGroup(group)
 		end
 		-- popping out something without a source, try to determine it on-the-fly using same logic as harvester
 		-- TODO: modify parser to include known sources for unsorted before commenting this back in
-		-- if not group.s or group.s == 0 then
-		-- 	local s, dressable = GetSourceID(group.text, group.itemID);
-		-- 	if dressable and s and s > 0 then
-		-- 		app.report("Item",group.itemID,group.modID,"is missing SourceID",s);
-		-- 		group.s = s;
+		-- if not group.sourceID or group.sourceID == 0 then
+		-- 	local sourceID, dressable = GetSourceID(group.text, group.itemID);
+		-- 	if dressable and sourceID and sourceID > 0 then
+		-- 		app.report("Item",group.itemID,group.modID,"is missing SourceID",sourceID);
+		-- 		group.sourceID = sourceID;
 		-- 	end
 		-- end
 		-- Create groups showing Appearance information
-		if group.s then
+		if group.sourceID then
 			-- print(group.__type)
 			-- app.PrintGroup(group)
 			-- source without an item, try to generate the valid item link for it
 			if not group.itemID and not group.artifactID then
-				app.ImportRawLink(group, app.DetermineItemLink(group.s));
+				app.ImportRawLink(group, app.DetermineItemLink(group.sourceID));
 				-- if we found a Item link, save it into ATTHarvestItems for ease of use (don't need to add Item, parse, Havrest, add harvest, parse)
 				app.SaveHarvestSource(group);
 			end
 			-- Attempt to get information about the source ID.
-			local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
+			local sourceInfo = C_TransmogCollection_GetSourceInfo(group.sourceID);
 			if sourceInfo then
 				-- print("Source Info on popout")
 				-- app.PrintTable(sourceInfo)
@@ -13835,8 +13833,8 @@ function app:CreateMiniListForGroup(group)
 				-- Go through all of the shared appearances and see if we've "unlocked" any of them.
 				for _,otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 					-- If this isn't the source we already did work on and we haven't already completed it
-					if otherSourceID ~= group.s then
-						local shared = app.SearchForMergedObject("s", otherSourceID);
+					if otherSourceID ~= group.sourceID then
+						local shared = app.SearchForMergedObject("sourceID", otherSourceID);
 						if shared then
 							shared = CreateObject(shared, true);
 							shared.hideText = true;
@@ -13891,12 +13889,12 @@ function app:CreateMiniListForGroup(group)
 				local sources = GetAllSourceIDs(data.setID);
 				if #sources > 0 then allSets[data.setID] = sources; end
 				for j,sourceID in ipairs(sources) do
-					local s = sourceSets[sourceID];
-					if not s then
-						s = {};
-						sourceSets[sourceID] = s;
+					local sourceSet = sourceSets[sourceID];
+					if not sourceSet then
+						sourceSet = {};
+						sourceSets[sourceID] = sourceSet;
 					end
-					s[data.setID] = 1;
+					sourceSet[data.setID] = 1;
 				end
 				local variants = GetVariantSets(data.setID);
 				if type(variants) == "table" then
@@ -13904,23 +13902,23 @@ function app:CreateMiniListForGroup(group)
 						local sources = GetAllSourceIDs(data.setID);
 						if #sources > 0 then allSets[data.setID] = sources; end
 						for k, sourceID in ipairs(sources) do
-							local s = sourceSets[sourceID];
-							if not s then
-								s = {};
-								sourceSets[sourceID] = s;
+							local sourceSet = sourceSets[sourceID];
+							if not sourceSet then
+								sourceSet = {};
+								sourceSets[sourceID] = sourceSet;
 							end
-							s[data.setID] = 1;
+							sourceSet[data.setID] = 1;
 						end
 					end
 				end
 			end
-			local data, g = sourceSets[group.s];
+			local data, g = sourceSets[group.sourceID];
 			if data then
 				for setID,value in pairs(data) do
 					g = {};
 					setID = tonumber(setID);
 					for _,sourceID in ipairs(allSets[setID]) do
-						local search = app.SearchForMergedObject("s", sourceID);
+						local search = app.SearchForMergedObject("sourceID", sourceID);
 						if search then
 							search = CreateObject(search, true);
 							search.hideText = true;
@@ -14670,13 +14668,13 @@ local IsTracking, StartTracking, StopTracking
 	= C_ContentTracking.IsTracking, C_ContentTracking.StartTracking, C_ContentTracking.StopTracking
 app.AddContentTracking = function(group)
 	-- if this group is currently tracked
-	local s, mountID, achievementID = group.s, group.mountJournalID, group.achievementID
-	local type = s and 0
+	local sourceID, mountID, achievementID = group.sourceID, group.mountJournalID, group.achievementID
+	local type = sourceID and 0
 				or mountID and 1
 				or achievementID and 2
 				or nil
 	if type then
-		local id = type == 0 and s
+		local id = type == 0 and sourceID
 				or type == 1 and mountID
 				or type == 2 and achievementID
 		if IsTracking(type,id) then
@@ -16489,18 +16487,18 @@ function app:GetDataCache()
 		if sets then
 			local gearSets = {};
 			for index = 1,#sets do
-				local s = sets[index];
-				if s then
+				local gearSet = sets[index];
+				if gearSet then
 					local sources = {};
-					tinsert(gearSets, setmetatable({ ["setID"] = s.setID, ["uiOrder"] = s.uiOrder, ["g"] = sources }, app.BaseGearSet));
-					for sourceID, value in pairs(C_TransmogSets.GetAllSourceIDs(s.setID)) do
+					tinsert(gearSets, setmetatable({ ["setID"] = gearSet.setID, ["uiOrder"] = gearSet.uiOrder, ["g"] = sources }, app.BaseGearSet));
+					for sourceID, value in pairs(C_TransmogSets.GetAllSourceIDs(gearSet.setID)) do
 						local _, appearanceID = C_TransmogCollection_GetAppearanceSourceInfo(sourceID);
 						if appearanceID then
 							for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(appearanceID)) do
-								tinsert(sources, setmetatable({ s = otherSourceID }, app.BaseGearSource));
+								tinsert(sources, setmetatable({ sourceID = otherSourceID }, app.BaseGearSource));
 							end
 						else
-							tinsert(sources, setmetatable({ s = sourceID }, app.BaseGearSource));
+							tinsert(sources, setmetatable({ sourceID = sourceID }, app.BaseGearSource));
 						end
 					end
 					app.Sort(sources, SortGearSetSources);
@@ -18832,8 +18830,8 @@ customWindowUpdates["RaidAssistant"] = function(self)
 		app.RaidDifficulty = GetRaidDifficultyID() or 14;
 		self.Spec = GetLootSpecialization();
 		if not self.Spec or self.Spec == 0 then
-			local s = GetSpecialization();
-			if s then self.Spec = GetSpecializationInfo(s); end
+			local spec = GetSpecialization();
+			if spec then self.Spec = GetSpecializationInfo(spec); end
 		end
 
 		-- Update the window and all of its row data
@@ -19566,18 +19564,18 @@ customWindowUpdates["list"] = function(self, force, got)
 	if not self.initialized then
 		self.VerifyGroupSourceID = function(data)
 			if data._VerifyGroupSourceID then return; end
-			local link, source = data.link or data.silentLink, data.s;
+			local link, source = data.link or data.silentLink, data.sourceID;
 			if not link then return; end
 			-- If it doesn't, the source ID will need to be harvested.
-			local s, success = GetSourceID(link);
-			-- app.PrintDebug("SourceIDs",link,data.modItemID,source,s,success)
+			local sourceID, success = GetSourceID(link);
+			-- app.PrintDebug("SourceIDs",link,data.modItemID,source,sourceID,success)
 			data._VerifyGroupSourceID = true;
-			if s and s > 0 then
+			if sourceID and sourceID > 0 then
 				-- only save the source if it is different than what we already have, or being forced
-				if not source or source < 1 or source ~= s then
-					app.print("SourceID Update",link,data.modItemID,source,"=>",s);
+				if not source or source < 1 or source ~= sourceID then
+					app.print("SourceID Update",link,data.modItemID,source,"=>",sourceID);
 					-- print(GetItemInfo(text))
-					data.s = s;
+					data.sourceID = sourceID;
 					app.SaveHarvestSource(data);
 				end
 			elseif success then
@@ -19648,8 +19646,8 @@ customWindowUpdates["list"] = function(self, force, got)
 		local CacheFields, ItemHarvester;
 
 		-- manual type adjustments to match internal use (due to lowercase keys with non-lowercase cache keys >_<)
-		if dataType == "source" then
-			dataType = "s";
+		if dataType == "s" or dataType == "source" then
+			dataType = "source";
 		elseif dataType == "achievementcategory" then
 			dataType = "achievementCategory";
 		elseif dataType == "azeriteessence" then
@@ -19696,9 +19694,7 @@ customWindowUpdates["list"] = function(self, force, got)
 		end
 
 		-- add the ID
-		if dataType ~= "s" then
-			dataType = dataType.."ID";
-		end
+		dataType = dataType.."ID";
 
 		local ForceVisibleFields = {
 			visible = true,
@@ -20200,16 +20196,16 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 						local oldSetVisible = f.SetVisible;
 						local oldShow = f.Show;
 						local oldHide = f.Hide;
-						f.SetVisible = function(s, visible)
-							oldSetVisible(s, visible);
+						f.SetVisible = function(frame, visible)
+							oldSetVisible(frame, visible);
 							self:SetTSMCraftingVisible(visible);
 						end
-						f.Hide = function(s)
-							oldHide(s);
+						f.Hide = function(frame)
+							oldHide(frame);
 							self:SetTSMCraftingVisible(false);
 						end
-						f.Show = function(s)
-							oldShow(s);
+						f.Show = function(frame)
+							oldShow(frame);
 							self:SetTSMCraftingVisible(true);
 						end
 						if self.gettinMadAtDumbNamingConventions then
@@ -20238,23 +20234,23 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 				local oldSetVisible = f.SetVisible;
 				local oldShow = f.Show;
 				local oldHide = f.Hide;
-				f.SetVisible = function(s, visible)
-					oldSetVisible(s, visible);
+				f.SetVisible = function(frame, visible)
+					oldSetVisible(frame, visible);
 					self:SetTSMCraftingVisible(visible);
 				end
-				f.Hide = function(s)
-					oldHide(s);
+				f.Hide = function(frame)
+					oldHide(frame);
 					self:SetTSMCraftingVisible(false);
 				end
-				f.Show = function(s)
-					oldShow(s);
+				f.Show = function(frame)
+					oldShow(frame);
 					self:SetTSMCraftingVisible(true);
 				end
 				if f.queueBtn then
 					local setScript = f.queueBtn.SetScript;
-					f.queueBtn.SetScript = function(s, e, callback)
+					f.queueBtn.SetScript = function(frame, e, callback)
 						if e == "OnClick" then
-							setScript(s, e, function(...)
+							setScript(frame, e, function(...)
 								if callback then callback(...); end
 
 								local thing = self.TSMCraftingVisible;
@@ -20262,7 +20258,7 @@ customWindowUpdates["Tradeskills"] = function(self, force, got)
 								self:SetTSMCraftingVisible(thing);
 							end);
 						else
-							setScript(s, e, callback);
+							setScript(frame, e, callback);
 						end
 					end
 					f.queueBtn:SetScript("OnClick", f.queueBtn:GetScript("OnClick"));
@@ -21165,8 +21161,8 @@ app.LoadDebugger = function()
 							itemID = GetItemInfoInstant(loot);
 							if itemID then
 								source = { GetLootSourceInfo(i) };
-								for s=1,#source,2 do
-									type, zero, server_id, instance_id, zone_uid, id, spawn_uid = strsplit("-",source[s]);
+								for j=1,#source,2 do
+									type, zero, server_id, instance_id, zone_uid, id, spawn_uid = strsplit("-",source[j]);
 									-- TODO: test this with Item containers
 									app.PrintDebug("Add Loot",itemID,"from",type,id)
 									info = { [(type == "GameObject") and "objectID" or "npcID"] = tonumber(id), ["g"] = { { ["itemID"] = itemID, ["rawlink"] = loot } } };
@@ -21309,11 +21305,11 @@ app.ProcessAuctionData = function()
 		searchResultsByKey.spellID = nil;
 	end
 
-	if searchResultsByKey.s then
+	if searchResultsByKey.sourceID then
 		local filteredItems = {};
-		local cachedS = searchResultsByKey.s;
-		searchResultsByKey.s = {};
-		for sourceID,entry in pairs(cachedS) do
+		local cachedSourceIDs = searchResultsByKey.sourceID;
+		searchResultsByKey.sourceID = {};
+		for sourceID,entry in pairs(cachedSourceIDs) do
 			filterID = entry.filterID or entry.f;
 			if filterID then
 				local filterData = filteredItems[entry.f];
@@ -21321,7 +21317,7 @@ app.ProcessAuctionData = function()
 					filterData = app.CreateFilter(filterID);
 					filterData.g = {};
 					filteredItems[filterID] = filterData;
-					tinsert(searchResultsByKey.s, filterData);
+					tinsert(searchResultsByKey.sourceID, filterData);
 				end
 				tinsert(filterData.g, entry);
 			end
@@ -21368,7 +21364,7 @@ app.ProcessAuctionData = function()
 			["description"] = L["ITEMS_FOR_ACHIEVEMENTS_DESC"],
 			["priority"] = 1,
 		}),
-		["s"] = {			-- Appearances
+		["sourceID"] = {	-- Appearances
 			["text"] = "Appearances",
 			["icon"] = "INTERFACE/ICONS/INV_SWORD_06",
 			["description"] = L["ALL_APPEARANCES_DESC"],
@@ -22679,7 +22675,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		end
 
 		-- Refresh the Data and Cry!
-		UpdateRawIDs("s", unlearnedSourceIDs);
+		UpdateRawIDs("sourceID", unlearnedSourceIDs);
 		Callback(app.Audio.PlayRemoveSound);
 		wipe(searchCache);
 		SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t0");

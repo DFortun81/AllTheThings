@@ -487,7 +487,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1392 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -496,7 +496,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1392 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -505,7 +505,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1392 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -587,7 +587,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1372 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -596,7 +596,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1372 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -605,7 +605,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1372 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -661,7 +661,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -670,7 +670,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -679,7 +679,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -750,7 +750,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1447 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -759,7 +759,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -768,7 +768,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -803,7 +803,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1395 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -812,7 +812,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -821,7 +821,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 3 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -994,7 +994,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1392 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -1003,7 +1003,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1392 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -1012,7 +1012,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1392 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -1094,7 +1094,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1372 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -1103,7 +1103,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1372 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -1112,7 +1112,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1372 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -1168,7 +1168,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -1177,7 +1177,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -1186,7 +1186,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -1257,7 +1257,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1447 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -1266,7 +1266,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -1275,7 +1275,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -1310,7 +1310,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1395 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -1319,7 +1319,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -1328,7 +1328,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 5 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -1489,7 +1489,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1392 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -1498,7 +1498,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1392 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -1507,7 +1507,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1392 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -1592,7 +1592,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1372 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -1601,7 +1601,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1372 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -1610,7 +1610,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1372 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -1668,7 +1668,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -1677,7 +1677,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -1686,7 +1686,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -1760,7 +1760,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1447 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -1769,7 +1769,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -1778,7 +1778,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),
@@ -1814,7 +1814,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1395 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEMONHUNTER, PALADIN, PRIEST, WARLOCK },	-- only keep items for these classes
 						},
 					})),
@@ -1823,7 +1823,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", HUNTER, MONK, SHAMAN, WARRIOR },	-- only keep items for these classes
 						},
 					})),
@@ -1832,7 +1832,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_2_0 }
 							{ "select", "encounterID", 1427 },	-- This encounter
 							{ "pop" },							-- pop the encounter Headers
 							{ "where", "modID", 6 },			-- only keep this difficulty
-							{ "is", "s" },						-- only items with a sourceID
+							{ "is", "sourceID" },						-- only items with a sourceID
 							{ "contains", "c", DEATHKNIGHT, DRUID, MAGE, ROGUE },	-- only keep items for these classes
 						},
 					})),

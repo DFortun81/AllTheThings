@@ -169,19 +169,19 @@ end
 local function PushSoftReserves(method, target)
 	local reserves = app.GetDataMember("SoftReserves");
 	if reserves then
-		local count, length, msg, s = 7, 0, "!\tsrml";
+		local count, length, msg, cmd = 7, 0, "!\tsrml";
 		if not method then method = GetGroupType(); end
 		for gu,reserve in pairs(reserves) do
 			if gu and IsGUIDInGroup(gu) then
-				s = "\t" .. gu .. "\t" .. reserve[1];
-				length = string.len(s);
+				cmd = "\t" .. gu .. "\t" .. reserve[1];
+				length = string.len(cmd);
 				if count + length >= 255 then
 					C_ChatInfo.SendAddonMessage("ATTC", msg, method, target);
 					count = 7;
 					msg = "!\tsrml";
 				else
 					count = count + length;
-					msg = msg .. s;
+					msg = msg .. cmd;
 				end
 			end
 		end
@@ -887,18 +887,18 @@ SoftReserveWindow = app:GetWindow("SoftReserves", {
 				visible = true,
 				priority = 8,
 				OnClick = function(row, button)
-					local s, count = "", 0;
+					local message, count = "", 0;
 					for i,o in ipairs(self.data.g) do
 						if o.guid then
 							if count > 0 then
-								s = s .. "\n";
+								message = message .. "\n";
 							end
-							s = s .. o.guid .. "\\t" .. (o.itemID or 0) .. "\\t" .. (o.persistence or 0) .. "\\t" .. o.name .. "\\t" .. o.itemName;
+							message = message .. o.guid .. "\\t" .. (o.itemID or 0) .. "\\t" .. (o.persistence or 0) .. "\\t" .. o.name .. "\\t" .. o.itemName;
 							count = count + 1;
 						end
 					end
 					
-					app:ShowPopupDialogWithMultiLineEditBox(s);
+					app:ShowPopupDialogWithMultiLineEditBox(message);
 					return true;
 				end,
 				OnUpdate = function(data)

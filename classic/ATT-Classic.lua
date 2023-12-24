@@ -382,7 +382,7 @@ end
 -- Attempts to return the displayID for the data, or every displayID if 'all' is specified
 local function GetDisplayID(data, all)
 	-- don't create a displayID for groups with a sourceID/itemID/difficultyID/mapID
-	if data.s or data.itemID or data.difficultyID or data.mapID then return; end
+	if data.sourceID or data.itemID or data.difficultyID or data.mapID then return; end
 	if all then
 		local displayInfo, _ = {};
 		-- specific displayID
@@ -1158,11 +1158,11 @@ ResolveSymbolicLink = function(o)
 				for i=3,#sym do
 					local cache = SearchForField(field, sym[i]);
 					if #cache > 0 then
-						for k,s in ipairs(cache) do
-							local ref = ResolveSymbolicLink(s);
+						for k,result in ipairs(cache) do
+							local ref = ResolveSymbolicLink(result);
 							if ref then
-								if s.g then
-									for i,m in ipairs(s.g) do
+								if result.g then
+									for i,m in ipairs(result.g) do
 										tinsert(searchResults, m);
 									end
 								end
@@ -1170,7 +1170,7 @@ ResolveSymbolicLink = function(o)
 									tinsert(searchResults, m);
 								end
 							else
-								tinsert(searchResults, s);
+								tinsert(searchResults, result);
 							end
 						end
 					elseif field == "itemID" then
@@ -1223,12 +1223,12 @@ ResolveSymbolicLink = function(o)
 				local cache = SearchForField(o.key, o[o.key]);
 				if #cache > 0 then
 					o.symbolizing = true;
-					for k,s in ipairs(cache) do
-						if not s.symbolizing then
-							local ref = ResolveSymbolicLink(s);
+					for k,result in ipairs(cache) do
+						if not result.symbolizing then
+							local ref = ResolveSymbolicLink(result);
 							if ref then
-								if s.g then
-									for i,m in ipairs(s.g) do
+								if result.g then
+									for i,m in ipairs(result.g) do
 										tinsert(searchResults, m);
 									end
 								end
@@ -1236,7 +1236,7 @@ ResolveSymbolicLink = function(o)
 									tinsert(searchResults, m);
 								end
 							else
-								tinsert(searchResults, s);
+								tinsert(searchResults, result);
 							end
 						end
 					end
@@ -1248,9 +1248,9 @@ ResolveSymbolicLink = function(o)
 				-- Instruction to "pop" all of the group values up one level.
 				local orig = searchResults;
 				searchResults = {};
-				for k,s in ipairs(orig) do
-					if s.g then
-						for l,t in ipairs(s.g) do
+				for k,result in ipairs(orig) do
+					if result.g then
+						for l,t in ipairs(result.g) do
 							tinsert(searchResults, t);
 						end
 					end
@@ -1259,8 +1259,8 @@ ResolveSymbolicLink = function(o)
 				-- Instruction to include only search results where a key value is a value
 				local key, value = sym[2], sym[3];
 				for k=#searchResults,1,-1 do
-					local s = searchResults[k];
-					if not s[key] or s[key] ~= value then
+					local result = searchResults[k];
+					if not result[key] or result[key] ~= value then
 						tremove(searchResults, k);
 					end
 				end
@@ -1270,9 +1270,9 @@ ResolveSymbolicLink = function(o)
 				local orig = searchResults;
 				searchResults = {};
 				for k=#orig,1,-1 do
-					local s = orig[k];
-					if s.g and index <= #s.g then
-						tinsert(searchResults, s.g[index]);
+					local result = orig[k];
+					if result.g and index <= #result.g then
+						tinsert(searchResults, result.g[index]);
 					end
 				end
 			elseif cmd == "not" then
@@ -1283,10 +1283,10 @@ ResolveSymbolicLink = function(o)
 						dict[sym[k] ] = sym[k + 1];
 					end
 					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
+						local result = searchResults[k];
 						local matched = true;
 						for key,value in pairs(dict) do
-							if not s[key] or s[key] ~= value then
+							if not result[key] or result[key] ~= value then
 								matched = false;
 								break;
 							end
@@ -1298,8 +1298,8 @@ ResolveSymbolicLink = function(o)
 				else
 					local key, value = sym[2], sym[3];
 					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
-						if s[key] and s[key] == value then
+						local result = searchResults[k];
+						if result[key] and result[key] == value then
 							tremove(searchResults, k);
 						end
 					end
@@ -1308,15 +1308,13 @@ ResolveSymbolicLink = function(o)
 				-- Instruction to include only search results where a key exists
 				local key = sym[2];
 				for k=#searchResults,1,-1 do
-					local s = searchResults[k];
-					if not s[key] then tremove(searchResults, k); end
+					if not searchResults[k][key] then tremove(searchResults, k); end
 				end
 			elseif cmd == "isnt" then
 				-- Instruction to include only search results where a key doesn't exist
 				local key = sym[2];
 				for k=#searchResults,1,-1 do
-					local s = searchResults[k];
-					if s[key] then tremove(searchResults, k); end
+					if searchResults[k][key] then tremove(searchResults, k); end
 				end
 			elseif cmd == "contains" then
 				-- Instruction to include only search results where a key value contains a value.
@@ -1326,8 +1324,8 @@ ResolveSymbolicLink = function(o)
 				tremove(clone, 1);
 				if #clone > 0 then
 					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
-						if not s[key] or not contains(clone, s[key]) then
+						local result = searchResults[k];
+						if not result[key] or not contains(clone, result[key]) then
 							tremove(searchResults, k);
 						end
 					end
@@ -1340,22 +1338,22 @@ ResolveSymbolicLink = function(o)
 				tremove(clone, 1);
 				if #clone > 0 then
 					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
-						if s[key] and contains(clone, s[key]) then
+						local result = searchResults[k];
+						if result[key] and contains(clone, result[key]) then
 							tremove(searchResults, k);
 						end
 					end
 				end
 			elseif cmd == "finalize" then
 				-- Instruction to finalize the current search results and prevent additional queries from affecting this selection.
-				for k,s in ipairs(searchResults) do
-					tinsert(finalized, s);
+				for k,result in ipairs(searchResults) do
+					tinsert(finalized, result);
 				end
 				wipe(searchResults);
 			elseif cmd == "merge" then
 				-- Instruction to take all of the finalized and non-finalized search results and merge them back in to the processing queue.
-				for k,s in ipairs(searchResults) do
-					tinsert(finalized, s);
+				for k,result in ipairs(searchResults) do
+					tinsert(finalized, result);
 				end
 				searchResults = finalized;
 				finalized = {};
@@ -1370,8 +1368,8 @@ ResolveSymbolicLink = function(o)
 				tremove(types, 1);
 				if #types > 0 then
 					for k=#searchResults,1,-1 do
-						local s = searchResults[k];
-						if s.itemID and not contains(types, select(4, GetItemInfoInstant(s.itemID))) then
+						local result = searchResults[k];
+						if result.itemID and not contains(types, select(4, GetItemInfoInstant(result.itemID))) then
 							tremove(searchResults, k);
 						end
 					end
@@ -1386,8 +1384,8 @@ ResolveSymbolicLink = function(o)
 					if commands then
 						local results = ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o}));
 						if results then
-							for k,s in ipairs(results) do
-								tinsert(searchResults, s);
+							for k,result in ipairs(results) do
+								tinsert(searchResults, result);
 							end
 						end
 					end
@@ -1408,8 +1406,8 @@ ResolveSymbolicLink = function(o)
 						if commands then
 							local results = ResolveSymbolicLink(setmetatable({sym=commands}, {__index=o}));
 							if results then
-								for k,s in ipairs(results) do
-									tinsert(searchResults, s);
+								for k,result in ipairs(results) do
+									tinsert(searchResults, result);
 								end
 							end
 						end
@@ -1456,17 +1454,17 @@ ResolveSymbolicLink = function(o)
 				for i=2,#sym do
 					local cache = SearchForField("achievementID", sym[i]);
 					if #cache > 0 then
-						for k,s in ipairs(cache) do
-							local ref = ResolveSymbolicLink(s);
+						for k,result in ipairs(cache) do
+							local ref = ResolveSymbolicLink(result);
 							if ref then
-								local cs = CloneReference(s);
+								local cs = CloneReference(result);
 								if not cs.g then cs.g = {}; end
 								for i,m in ipairs(ref) do
 									tinsert(cs.g, m);
 								end
 								tinsert(searchResults, cs);
 							else
-								tinsert(searchResults, s);
+								tinsert(searchResults, result);
 							end
 						end
 					else
@@ -1475,16 +1473,16 @@ ResolveSymbolicLink = function(o)
 				end
                 -- Remove any Criteria groups associated with those achievements
                 for k=#searchResults,1,-1 do
-                    local s = searchResults[k];
-                    if s.criteriaID then tremove(searchResults, k); end
+                    local result = searchResults[k];
+                    if result.criteriaID then tremove(searchResults, k); end
                 end
 			end
 		end
 
 		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
 		if #searchResults > 0 then
-			for k,s in ipairs(searchResults) do
-				tinsert(finalized, s);
+			for k,result in ipairs(searchResults) do
+				tinsert(finalized, result);
 			end
 		end
 
@@ -7167,12 +7165,12 @@ end;
 app.SortExplorationDB = function()
 	local e,t=ATTC.ExplorationDB,{};
 	for mapID,areas in pairs(e) do
-		local s = {};
-		t[mapID] = s;
+		local mapData = {};
+		t[mapID] = mapData;
 		for i,areaID in ipairs(areas) do
-			tinsert(s, { areaID, C_Map_GetAreaInfo(areaID) });
+			tinsert(mapData, { areaID, C_Map_GetAreaInfo(areaID) });
 		end
-		app.Sort(s, function(a, b)
+		app.Sort(mapData, function(a, b)
 			return a[2] < b[2];
 		end);
 	end
@@ -8888,7 +8886,7 @@ app.CreateVignette = function(id, t)
 end
 app.CreateItemSource = function(sourceID, itemID, t)
 	t = app.CreateItem(itemID, t);
-	t.s = sourceID;
+	t.sourceID = sourceID;
 	return t;
 end
 end)();
@@ -9872,8 +9870,8 @@ local function CreateMinimapButton()
 	local update = function(self)
 		local w, x = GetCursorPosition();
 		local y, z = Minimap:GetLeft(), Minimap:GetBottom();
-		local s = UIParent:GetScale();
-		w = y - w / s + 70; x = x / s - z - 70;
+		local scale = UIParent:GetScale();
+		w = y - w / scale + 70; x = x / scale - z - 70;
 		SetDataMember("Position", math.deg(math.atan2(x, w)));
 		self:Raise();
 		self:update();
@@ -10567,7 +10565,7 @@ local function RowOnEnter(self)
 		end
 		if reference.illusionID and app.Settings:GetTooltipSetting("illusionID") then GameTooltip:AddDoubleLine(L["ILLUSION_ID"], tostring(reference.illusionID)); end
 		if reference.objectID and app.Settings:GetTooltipSetting("objectID") then GameTooltip:AddDoubleLine(L["OBJECT_ID"], tostring(reference.objectID)); end
-		if reference.s and app.Settings:GetTooltipSetting("s") then GameTooltip:AddDoubleLine(L["SOURCE_ID"], tostring(reference.s)); end
+		if reference.sourceID and app.Settings:GetTooltipSetting("sourceID") then GameTooltip:AddDoubleLine(L["SOURCE_ID"], tostring(reference.sourceID)); end
 		if reference.speciesID and app.Settings:GetTooltipSetting("speciesID") then GameTooltip:AddDoubleLine(L["SPECIES_ID"], tostring(reference.speciesID)); end
 		if reference.spellID then
 			if app.Settings:GetTooltipSetting("spellID") then GameTooltip:AddDoubleLine(L["SPELL_ID"], tostring(reference.spellID) .. " (" .. (app.GetSpellName(reference.spellID, reference.rank) or "??") .. ")"); end

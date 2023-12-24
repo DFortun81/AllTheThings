@@ -3,11 +3,11 @@
 -----------------------------------------------
 local HK_OnUpdate = [[function(t) t:SetAchievementCollected(t.achievementID, GetPVPLifetimeStats() >= t.rank); end]];
 local HK_OnTooltip = [[function(t)
-	local s = "Get " .. t.rank .. " honorable kill" .. (t.rank == 1 and "" or "s") .. ".";
+	local summary = "Get " .. t.rank .. " honorable kill" .. (t.rank == 1 and "" or "s") .. ".";
 	if not t.collected then
-		GameTooltip:AddDoubleLine(s, select(1, GetPVPLifetimeStats()) .. " / " .. t.rank, 1, 1, 1);
+		GameTooltip:AddDoubleLine(summary, select(1, GetPVPLifetimeStats()) .. " / " .. t.rank, 1, 1, 1);
 	else
-		GameTooltip:AddLine(s);
+		GameTooltip:AddLine(summary);
 	end
 end]];
 local THE_CONQUEROR_OnUpdate = [[function(t)

@@ -162,9 +162,6 @@ local DefaultFields = {
 	["progress"] = returnZero,
     ["total"] = returnZero,
 	-- we like to use different field names in different places
-	["sourceID"] = function(t)
-		return t.s
-	end,
 	["filterID"] = function(t)
 		return t.f
 	end,

@@ -6,7 +6,7 @@ local function GenerateRewardsSymlinkForModID(factionHeader, modID)
 		{"select", "questID", 52781 },	-- HQT for the phase of Arathi
 		{"find", "headerID", COMMON_BOSS_DROPS},	-- Find the Common Boss Drop Header.
 		{"find", "headerID", factionHeader},	-- Select the Faction Header.
-		{"extract","s"},	-- Extract Sources
+		{"extract","sourceID"},	-- Extract Sources
 		{"modID", modID},	-- Apply specific modID
 	};
 end

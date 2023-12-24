@@ -393,7 +393,7 @@ local function FilterItemSourceUnique(sourceInfo, allSources)
 										or app.SlotByInventoryType[knownSource.invType] == app.SlotByInventoryType[sourceInfo.invType])
 								then
 									return true;
-								-- else print("sources share visual and filters but different equips",item.s,sourceID)
+								-- else print("sources share visual and filters but different equips",item.sourceID,sourceID)
 								end
 							end
 						end

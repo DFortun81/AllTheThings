@@ -28,14 +28,14 @@ local function SetStackCo()
 	StackCo = c_create(function()
 		while true do
 			-- app.PrintDebug("StackCo:Call",#Stack)
-			local f, p, s, c;
+			local f, p, status, err;
 			for i=#Stack,1,-1 do
 				f, p = Stack[i], StackParams[i];
 				-- app.PrintDebug("StackCo:Run",i,f,p)
-				s, c = pcall(f, p);
+				status, err = pcall(f, p);
 				-- Function call has an error or it is not continuing, remove it from the Stack
-				if not s or not c then
-					if not s then app.PrintDebug("StackError:",i,f,p,c) end
+				if not status or not err then
+					if not status then app.PrintDebug("StackError:",i,f,p,err) end
 					-- app.PrintDebug("StackCo:Remove",i)
 					tremove(Stack, i);
 					tremove(StackParams, i);

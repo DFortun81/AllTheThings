@@ -6,7 +6,7 @@ local function Sym_PvPSeasonRankSlots(SEASON, RANK, ...)
 	return {
 		{"sub", "pvp_gear_base", LEGION_TIER, SEASON, RANK },
 		{"merge"},
-		{"extract","s"},	-- Only Sources
+		{"extract","sourceID"},	-- Only Sources
 		{"invtype", ... },
 	}
 end

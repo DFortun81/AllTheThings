@@ -24,7 +24,7 @@ namespace ATT
                 // verify that no source is included for items which should explicitly ignoreSource
                 if (data.TryGetValue("ignoreSource", out bool ig) && ig)
                 {
-                    data.Remove("s");
+                    data.Remove("sourceID");
                     data.Remove("modIDs");
                     data.Remove("modID");
                     data.Remove("bonusIDs");
@@ -676,18 +676,18 @@ namespace ATT
             }
             if (data.TryGetValue("flightPathID", out long flightPathID)) FLIGHTPATHS_WITH_REFERENCES[flightPathID] = true;
             if (data.TryGetValue("objectID", out tempId)) ProcessObjectInstance(data, tempId);
-            if (data.TryGetValue("artifactID", out tempId) && !data.ContainsKey("s") && Objects.ArtifactSources.TryGetValue(tempId, out Dictionary<string, long> sources))
+            if (data.TryGetValue("artifactID", out tempId) && !data.ContainsKey("sourceID") && Objects.ArtifactSources.TryGetValue(tempId, out Dictionary<string, long> sources))
             {
                 // off-hand artifact source
                 if (data.ContainsKey("isOffHand"))
                 {
                     if (sources.TryGetValue("offHand", out long s))
-                        data["s"] = s;
+                        data["sourceID"] = s;
                 }
                 else
                 {
                     if (sources.TryGetValue("mainHand", out long s))
-                        data["s"] = s;
+                        data["sourceID"] = s;
                 }
             }
 
@@ -731,11 +731,11 @@ namespace ATT
                 }
             }
 
-            if (data.TryGetValue("s", out f))
+            if (data.TryGetValue("sourceID", out f))
             {
                 if (f < 1 || CURRENT_RELEASE_VERSION < ADDED_TRANSMOG_VERSION)
                 {
-                    data.Remove("s");
+                    data.Remove("sourceID");
                 }
             }
 

@@ -161,17 +161,17 @@ app:GetWindow("Removed With Patch Drops", {
 				visible = true,
 				priority = 6,
 				OnClick = function(row, button)
-					local data, s, count = {}, "", 0;
+					local data, message, count = {}, "", 0;
 					Export(self.data.g, data);
 					for i,str in ipairs(data) do
 						if count > 0 then
-							s = s .. "\n";
+							message = message .. "\n";
 						end
-						s = s .. str;
+						message = message .. str;
 						count = count + 1;
 					end
 					
-					app:ShowPopupDialogWithMultiLineEditBox(s);
+					app:ShowPopupDialogWithMultiLineEditBox(message);
 					return true;
 				end,
 				OnUpdate = app.ReturnTrue,

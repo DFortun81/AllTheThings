@@ -181,8 +181,8 @@ end
 local function AttachTooltipSearchResults(self, lineNumber, search, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",search,...)
 	app.SetSkipPurchases(1);
-	local s, group = pcall(GetCachedSearchResults, search, method, ...)
-	if s then
+	local status, group = pcall(GetCachedSearchResults, search, method, ...)
+	if status then
 		AttachTooltipRawSearchResults(self, lineNumber, group)
 	else
 		app.PrintDebug("pcall tooltip failed",group)

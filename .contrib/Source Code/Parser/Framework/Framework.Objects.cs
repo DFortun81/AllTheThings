@@ -1421,7 +1421,7 @@ end");
                             itemData[pair.Key] = pair.Value;
                             break;
 
-                        case "s":
+                        case "sourceID":
                             {
                                 long modID = 1;
                                 if (data.TryGetValue("modID", out object modIDRef)) modID = Convert.ToInt64(modIDRef);
@@ -1549,13 +1549,13 @@ end");
                         case "criteriaID":
                         case "displayID":   // This is now dynamic!
                         case "modelID":   // This is now dynamic!
+                        case "sourceID":
                         case "ilvl":
                         case "b":
                         case "q":
                         case "f":
                         case "learnedAt":
                         case "filterForRWP":
-                        case "s":
                         case "g":
                         case "collectible":
                         case "hideText":

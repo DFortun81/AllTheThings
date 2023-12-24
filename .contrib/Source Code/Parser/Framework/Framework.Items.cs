@@ -418,6 +418,7 @@ namespace ATT
                     // Blacklisted Fields.
                     case "g":
                     case "link":
+                    case "sourceID":
                     case "bonusID":
                     case "modID":
                     case "rank":
@@ -437,7 +438,6 @@ namespace ATT
                     //case "ignoreBonus":
                     case "displayID":
                     case "sourceText":
-                    case "s":
                     case "cr":
                     case "crs":
                     case "qg":
@@ -848,6 +848,7 @@ namespace ATT
                     case "illusionID":
                     case "recipeID":
                     case "petTypeID":
+                    case "sourceID":
                     case "speciesID":
                     case "spellID":
                     case "factionID":
@@ -879,7 +880,6 @@ namespace ATT
                     case "raceID":
                     case "conduitID":
                     case "customCollect":
-                    case "s":
                     case "type":
                         data[field] = value;
                         break;
@@ -1041,12 +1041,12 @@ namespace ATT
 #pragma warning disable CS0162 // Unreachable code detected
                     if (DoSpammyDebugLogging) LogDebug($"INFO: Item:{sourceIDKey} ==> s:{sourceID}");
 #pragma warning restore CS0162 // Unreachable code detected
-                    data["s"] = sourceID;
+                    data["sourceID"] = sourceID;
                     return;
                 }
 
                 // quite spammmmmy, only enable if needed
-                if (DoSpammyDebugLogging && !data.ContainsKey("s"))
+                if (DoSpammyDebugLogging && !data.ContainsKey("sourceID"))
                     LogDebug($"INFO: Failed to match SourceID for Item {sourceIDKey}");
             }
 

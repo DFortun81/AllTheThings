@@ -23,8 +23,8 @@ CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "
 							if string.find(text, "Classes: ") then
 								local classes = {};
 								local _,list = strsplit(":", text);
-								for i,s in ipairs({strsplit(",", list)}) do
-									tinsert(classes, app.ClassDB[strtrim(s)]);
+								for i,className in ipairs({strsplit(",", list)}) do
+									tinsert(classes, app.ClassDB[strtrim(className)]);
 								end
 								if #classes > 0 then
 									t.info.classes = classes;
@@ -32,8 +32,8 @@ CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "
 							elseif string.find(text, "Races: ") then
 								local races = {};
 								local _,list = strsplit(":", text);
-								for i,s in ipairs({strsplit(",", list)}) do
-									tinsert(races, app.RaceDB[strtrim(s)]);
+								for i,raceName in ipairs({strsplit(",", list)}) do
+									tinsert(races, app.RaceDB[strtrim(raceName)]);
 								end
 								if #races > 0 then
 									t.info.races = races;

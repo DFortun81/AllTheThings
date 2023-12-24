@@ -910,7 +910,7 @@ namespace ATT
                 case "s":
                 case "sourceID":
                     {
-                        return "s";
+                        return "sourceID";
                     }
                 /*
                 case "dr":

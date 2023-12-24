@@ -183,8 +183,8 @@ local function ValidateMessage(msg)
 	if type(msg) == "table" then
 		if #msg < 1 then return false; end
 		local str = msg[1];
-		for i,s in ipairs(msg) do
-			str = str .. "," .. s;
+		for i,cmd in ipairs(msg) do
+			str = str .. "," .. cmd;
 		end
 		return str;
 	end

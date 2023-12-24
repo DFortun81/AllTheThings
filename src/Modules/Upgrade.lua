@@ -266,7 +266,7 @@ local function HasUpgrade(t)
 
 	-- upgrade has to actually be different than the source item
 	local uphash = up.hash;
-	if uphash and uphash == t.hash or up.s == t.s then
+	if uphash and uphash == t.hash or up.sourceID == t.sourceID then
 		-- app.PrintDebug("HU:upgrade is same",t.hash,t.modItemID,"=+>",up.__type,uphash,up.modItemID)
 		-- t.isUpgraded = true;
 		return;
@@ -335,7 +335,7 @@ api.NextUpgrade = function(t)
 
 	-- upgrade has to actually be different than the source item
 	local uphash = up.hash;
-	if uphash and uphash == t.hash or up.s == t.s then
+	if uphash and uphash == t.hash or up.sourceID == t.sourceID then
 		-- app.PrintDebug("NU:upgrade is same",uphash,up.modItemID)
 		-- t.isUpgraded = true;
 		return;
