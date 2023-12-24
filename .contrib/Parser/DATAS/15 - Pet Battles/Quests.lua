@@ -834,7 +834,10 @@ root(ROOTS.PetBattles, petbattle({
 	},{
 		q(70647, {	-- Oh Where, Oh Where Can He Be?
 			["description"] = "Account-Wide Quest.",
-			["sourceQuests"] = { 66244 },	-- To Valdrakken
+			["sourceQuests"] = {
+				66244,	-- To Valdrakken
+				DF_ACCOUNT_CAMPAIGN_QUEST,
+			},
 			["provider"] = { "n", 185563 },	-- Jyhanna
 			["coord"] = { 10.4, 58.3, VALDRAKKEN },
 			["g"] = {
