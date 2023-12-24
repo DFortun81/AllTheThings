@@ -124,14 +124,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_THREE, {
 			n(VENDORS, {
 				n(23159, {	-- Okuno <Ashtongue Deathsworn Quartermaster>
 					i(32429),	-- Pattern: Boots of Shackled Souls (RECIPE!)
-					i(32430, {	-- Pattern: Bracers of Shackled Souls (RECIPE!)
-						r(40000, {	-- Bracers of Shackled Souls
-							["timeline"] = { ADDED_2_1_0, REMOVED_4_0_3 },
-						}),
-						r(52733, {	-- Bracers of Shackled Souls
-							["timeline"] = { ADDED_4_0_3 },
-						}),
-					}),
+					i(32430),	-- Pattern: Bracers of Shackled Souls (RECIPE!)
 					i(32431),	-- Pattern: Greaves of Shackled Souls (RECIPE!)
 					i(32447),	-- Pattern: Night's End
 					i(32436),	-- Pattern: Redeemed Soul Cinch (RECIPE!)
