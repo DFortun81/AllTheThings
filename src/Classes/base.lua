@@ -257,16 +257,29 @@ local classesByKey = setmetatable({}, {
 	end,
 });
 local function CreateClassInstance(key, id, t)
-	if key == "creatureID" then
-		key = "npcID";
-		if t then
-			t.creatureID = nil;
-			t.npcID = id;
+	if key then
+		if key == "creatureID" then
+			key = "npcID";
+			if t then
+				t.creatureID = nil;
+				t.npcID = id;
+			end
+		end
+		local classConstructor = classesByKey[key];
+		if classConstructor then return classConstructor(id, t); end
+	elseif not key then
+		local classConstructor;
+		for key,value in pairs(t) do
+			classConstructor = classesByKey[key];
+			if classConstructor then return classConstructor(value, t); end
 		end
 	end
-	local classConstructor = classesByKey[key];
-	if classConstructor then return classConstructor(id, t); end
+	--[[
 	print("CreateClassInstance::Failed to Find Class Constructor for", key, id);
+	for key,value in pairs(t) do
+		print(" ", key, value);
+	end
+	]]--
 	return t;
 end
 local function CloneClassInstance(object)

@@ -3,96 +3,6 @@ local appName, app = ...;
 local SearchForField = app.SearchForField;
 local UpdateGroups = app.UpdateGroups;
 
--- Local variables
-local HarvestedItemDatabase = {};
-local CreateItemHarvester = app.ExtendClass("Item", "ItemHarvester", "itemID", {
-	collectible = app.ReturnFalse,
-	collected = app.ReturnTrue,
-},
-"AsPending", {
-	collectible = app.ReturnTrue,
-	collected = app.ReturnFalse,
-	text = function(t)
-		local link = t.link;
-		if link then
-			local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
-			itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent
-				= GetItemInfo(link);
-			if itemName then
-				local spellName, spellID;
-				if classID == "Recipe" or classID == "Mount" then
-					spellName, spellID = GetItemSpell(t.itemID);
-					if spellName == "Learning" then spellID = nil; end	-- RIP.
-				end
-				--setmetatable(t, t.conditions[2]);
-				local info = {
-					["name"] = itemName,
-					["itemID"] = t.itemID,
-					["equippable"] = itemEquipLoc and itemEquipLoc ~= "" and true or false,
-					["class"] = classID,
-					["subclass"] = subclassID,
-					["inventoryType"] = C_Item.GetItemInventoryTypeByID(t.itemID),
-					["b"] = bindType,
-					["q"] = itemQuality,
-					["iLvl"] = itemLevel,
-					["spellID"] = spellID,
-				};
-				if itemMinLevel and itemMinLevel > 1 then
-					info.lvl = itemMinLevel;
-				end
-				if info.inventoryType == 0 then
-					info.inventoryType = nil;
-				end
-				if info.b and info.b ~= 1 then
-					info.b = nil;
-				end
-				if info.q and info.q < 1 then
-					info.q = nil;
-				end
-				if info.iLvl and info.iLvl < 2 then
-					info.iLvl = nil;
-				end
-				t.itemType = itemType;
-				t.itemSubType = itemSubType;
-				t.info = info;
-				t.retries = nil;
-				HarvestedItemDatabase[t.itemID] = info;
-				AllTheThingsAD.HarvestedItemDatabase = HarvestedItemDatabase;
-				return link;
-			end
-		end
-		
-		t.retries = (t.retries or 0) + 1;
-		if t.retries > 30 then
-			rawset(t, "collected", true);
-		end
-	end,
-},function(t)
-	return #SearchForField("itemID", t.itemID) == 0;
-end);
-local CreateSpellHarvester = app.ExtendClass("Spell", "SpellHarvester", "spellID", {
-	collectible = app.ReturnFalse,
-	collected = app.ReturnTrue,
-},
-"AsPending", {
-	collectible = app.ReturnTrue,
-	collected = app.ReturnFalse,
-	text = function(t)
-		local link = t.name;
-		if link and link ~= "" and link ~= " " then
-			return link;
-		end
-		
-		t.retries = (t.retries or 0) + 1;
-		if t.retries > 30 then
-			rawset(t, "collected", true);
-		end
-		return RETRIEVING_DATA;
-	end,
-},function(t)
-	return #SearchForField("spellID", t.spellID) == 0;
-end);
-
 -- Uncomment this section to also harvest tooltip data.
 --[[
 local ItemHarvester = CreateFrame("GameTooltip", "ATTCItemHarvester", UIParent, "GameTooltipTemplate");
@@ -188,6 +98,73 @@ app:GetWindow("ItemFinder", {
 	Commands = { "attfinditems" },
 	OnRebuild = function(self, ...)
 		if not self.data then
+			local HarvestedItemDatabase = {};
+			local CreateItemHarvester = app.ExtendClass("Item", "ItemHarvester", "itemID", {
+				collectible = app.ReturnFalse,
+				collected = app.ReturnTrue,
+			},
+			"AsPending", {
+				collectible = app.ReturnTrue,
+				collected = app.ReturnFalse,
+				text = function(t)
+					local link = t.link;
+					if link then
+						local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
+						itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent
+							= GetItemInfo(link);
+						if itemName then
+							local spellName, spellID;
+							if classID == "Recipe" or classID == "Mount" then
+								spellName, spellID = GetItemSpell(t.itemID);
+								if spellName == "Learning" then spellID = nil; end	-- RIP.
+							end
+							--setmetatable(t, t.conditions[2]);
+							local info = {
+								["name"] = itemName,
+								["itemID"] = t.itemID,
+								["equippable"] = itemEquipLoc and itemEquipLoc ~= "" and true or false,
+								["class"] = classID,
+								["subclass"] = subclassID,
+								["inventoryType"] = C_Item.GetItemInventoryTypeByID(t.itemID),
+								["b"] = bindType,
+								["q"] = itemQuality,
+								["iLvl"] = itemLevel,
+								["spellID"] = spellID,
+							};
+							if itemMinLevel and itemMinLevel > 1 then
+								info.lvl = itemMinLevel;
+							end
+							if info.inventoryType == 0 then
+								info.inventoryType = nil;
+							end
+							if info.b and info.b ~= 1 then
+								info.b = nil;
+							end
+							if info.q and info.q < 1 then
+								info.q = nil;
+							end
+							if info.iLvl and info.iLvl < 2 then
+								info.iLvl = nil;
+							end
+							t.itemType = itemType;
+							t.itemSubType = itemSubType;
+							t.info = info;
+							t.retries = nil;
+							HarvestedItemDatabase[t.itemID] = info;
+							AllTheThingsAD.HarvestedItemDatabase = HarvestedItemDatabase;
+							return link;
+						end
+					end
+					
+					t.retries = (t.retries or 0) + 1;
+					if t.retries > 30 then
+						rawset(t, "collected", true);
+					end
+				end,
+			},
+			function(t)
+				return #SearchForField("itemID", t.itemID) == 0;
+			end);
 			self.data = {
 				text = "Item Finder",
 				icon = app.asset("WindowIcon_RaidAssistant"),
@@ -244,6 +221,29 @@ app:GetWindow("SpellFinder", {
 	Commands = { "attfindspells" },
 	OnRebuild = function(self, ...)
 		if not self.data then
+			local CreateSpellHarvester = app.ExtendClass("Spell", "SpellHarvester", "spellID", {
+				collectible = app.ReturnFalse,
+				collected = app.ReturnTrue,
+			},
+			"AsPending", {
+				collectible = app.ReturnTrue,
+				collected = app.ReturnFalse,
+				text = function(t)
+					local link = t.name;
+					if link and link ~= "" and link ~= " " then
+						return link;
+					end
+					
+					t.retries = (t.retries or 0) + 1;
+					if t.retries > 30 then
+						rawset(t, "collected", true);
+					end
+					return RETRIEVING_DATA;
+				end,
+			},
+			function(t)
+				return #SearchForField("spellID", t.spellID) == 0;
+			end);
 			self.data = {
 				text = "Spell Finder",
 				icon = app.asset("WindowIcon_RaidAssistant"),
