@@ -1603,7 +1603,6 @@ root(ROOTS.Unsorted, {
 				i(201194),	-- Pumice Hand Chalk
 				i(192650),	-- Roomy Shell
 				i(201186),	-- Rope Bonds
-				i(192719),	-- Scaled Toes
 				i(192663),	-- Scaly Wing
 				i(192694),	-- Second Head's Fang
 				i(201208),	-- Seer's Crystal

@@ -654,6 +654,7 @@ i(192712);	-- Otherworldly Essence
 i(192715);	-- Phoenix Stone
 i(192717);	-- Animated Splinter
 i(192718);	-- Rock-Hard Eggshell
+i(192719);	-- Scaled Toes
 i(192723);	-- Springy Tongue
 i(192727);	-- Timeless Horns
 i(192729);	-- Unhinged Mandible

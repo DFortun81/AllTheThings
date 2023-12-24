@@ -996,7 +996,7 @@ root(ROOTS.ExpansionFeatures,
 								q(54661, {	-- Echolocation
 									["provider"] = { "n", 145554 },	-- Base Cap'n Crankshot
 									["coord"] = { 49.6, 35.0, 1203 },
-									["sourceQuest"] = 54660,	-- Throwing Blight
+									-- ["sourceQuest"] = 54660,	-- Throwing Blight
 									["races"] = HORDE_ONLY,
 									["lvl"] = 120,
 									["g"] = {

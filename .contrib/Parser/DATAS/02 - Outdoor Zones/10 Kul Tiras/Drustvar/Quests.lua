@@ -994,7 +994,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 131579 },	-- Captive Villager
 				["coord"] = { 26.1, 66.4, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
-				["sourceQuests"] = { 49896 },	-- To Falconhurst
+				["sourceQuests"] = { 50001 },	-- Breaking Hag
+				["isBreadcrumb"] = true,	-- Quest is not obtainable after a certain point in the quest chain
 			}),
 			q(48476, {	-- Split Party
 				["provider"] = { "n", 126225 },	-- Aaron Cresterly
