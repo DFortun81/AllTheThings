@@ -10626,9 +10626,6 @@ local itemFields = {
 		-- raw repeatable quests can't really be tracked since they immediately unflag
 		return not rawget(t, "repeatable");
 	end,
-	["collectibleAsAchievement"] = function(t)
-		return app.Settings.Collectibles.Achievements;
-	end,
 	["costCollectibles"] = function(t)
 		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 	end,
@@ -10638,9 +10635,6 @@ local itemFields = {
 	end,
 	["collectibleAsFaction"] = function(t)
 		return app.Settings.Collectibles.Reputations;
-	end,
-	["collectibleAsFactionOrQuest"] = function(t)
-		return app.Settings.Collectibles.Reputations or t.collectibleAsQuest;
 	end,
 	["collectibleAsTransmog"] = function(t)
 		return app.Settings.Collectibles.Transmog;
@@ -10678,9 +10672,6 @@ local itemFields = {
 			end
 		end
 	end,
-	["collectedAsFactionOrQuest"] = function(t)
-		return t.collectedAsFaction or t.collectedAsQuest;
-	end,
 	["collectedAsTransmog"] = function(t)
 		return ATTAccountWideData.Sources[t.s];
 	end,
@@ -10708,30 +10699,12 @@ itemFields.collectibleAsUpgrade = app.Modules.Upgrade.CollectibleAsUpgrade;
 app.BaseItem = app.BaseObjectFields(itemFields, "BaseItem");
 
 local fields = RawCloneData(itemFields);
-fields.collectible = itemFields.collectibleAsAchievement;
-fields.collected = itemFields.collectedAsAchievement;
-app.BaseItemWithAchievementID = app.BaseObjectFields(fields, "BaseItemWithAchievementID");
-
-local fields = RawCloneData(itemFields);
-fields.collectible = itemFields.collectibleAsFaction;
-fields.collected = itemFields.collectedAsFaction;
-app.BaseItemWithFactionID = app.BaseObjectFields(fields, "BaseItemWithFactionID");
-
-local fields = RawCloneData(itemFields);
 fields.collectible = itemFields.collectibleAsQuest;
 fields.collected = itemFields.collectedAsQuest;
 fields.trackable = itemFields.trackableAsQuest;
 fields.saved = itemFields.savedAsQuest;
 fields.locked = itemFields.lockedAsQuest;
 app.BaseItemWithQuestID = app.BaseObjectFields(fields, "BaseItemWithQuestID");
-
-local fields = RawCloneData(itemFields);
-fields.collectible = itemFields.collectibleAsFactionOrQuest;
-fields.collected = itemFields.collectedAsFactionOrQuest;
-fields.trackable = itemFields.trackableAsQuest;
-fields.saved = itemFields.savedAsQuest;
-fields.locked = itemFields.lockedAsQuest;
-app.BaseItemWithQuestIDAndFactionID = app.BaseObjectFields(fields, "BaseItemWithQuestIDAndFactionID");
 
 local fields = RawCloneData(itemFields);
 fields.collectible = function(t)
@@ -10812,16 +10785,9 @@ app.CreateItem = function(id, t)
 		if t.s then
 			return setmetatable(constructor(id, t, "itemID"), BaseItemSource);
 		elseif t.factionID then
-			if t.questID then
-				return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithQuestIDAndFactionID);
-			else
-				return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithFactionID);
-			end
+			return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithFactionID);
 		elseif t.questID then
 			return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithQuestID);
-		elseif t.achID then
-			t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-			return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithAchievementID);
 		end
 	end
 	return setmetatable(constructor(id, t, "itemID"), app.BaseItem);
@@ -12063,15 +12029,6 @@ local npcFields = {
 	["iconAsDefault"] = function(t)
 		return (t.parent and t.parent.headerID == app.HeaderConstants.VENDORS and "Interface\\Icons\\INV_Misc_Coin_01")
 			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
-	end,
-	["nameAsAchievement"] = function(t)
-		return app.NPCNameFromID[t.npcID] or select(2, GetAchievementInfo(t.achievementID));
-	end,
-	["iconAsAchievement"] = function(t)
-		return select(10, GetAchievementInfo(t.achievementID)) or t.iconAsDefault;
-	end,
-	["linkAsAchievement"] = function(t)
-		return GetAchievementLink(t.achievementID);
 	end,
 	-- questID is sometimes a faction-based questID for a single NPC (i.e. BFA Warfront Rares), thanks Blizzard
 	["questID"] = function(t)
