@@ -1019,7 +1019,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 					n(PROFESSIONS, {
 						n(212159, {	-- Old Serra'kis <The Devoured>
-							--["questID"] = ,	-- Find Old Serra'kis
 							["sourceQuest"] = 78907,	-- Speak to the Dead
 							["OnUpdate"] = [[_.OnUpdateForCrafter]],
 							["groups"] = {
@@ -1027,7 +1026,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							},
 						}),
 						o(411358, {	-- Artisan's Chest
-							--["questID"] = 78907,	-- Dead Twilight Cultist HQT
 							["provider"] = { "i", 211420 },	-- Shifting Scale Talisman
 							["sourceQuest"] = 78909,	-- Shifting Scale Talisman
 							["timeline"] = { "removed 2.0.1" },
@@ -1038,13 +1036,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					}),
 					n(TREASURES, {
-						["description"] = "After dealing with Aku'mai, you can head back to Lady Sarevess' cave and delve deeper, now that the waterfall is gone. At the very end of the cave, you will be able to loot the recipes from a table.\n\nNOTE: Please send @Crieve the name of the object(s) you loot these from!",
+						["description"] = "After dealing with Aku'mai, you can head back to Lady Sarevess' cave and delve deeper, now that the waterfall is gone. At the very end of the cave, you will be able to loot the recipes from a table.",
 						["groups"] = {
 							i(211849, {	-- Formula: Blackfathom Mana Oil
-								--["provider"] = { "o",  },	-- 
+								["provider"] = { "o", 415614 },	-- Mysterious Formulae
 							}),
 							i(211846, {	-- Blackfathom Sharpening Stone
-								--["provider"] = { "o",  },	-- 
+								["provider"] = { "o", 415614 },	-- Mysterious Formulae
 							}),
 						},
 					}),

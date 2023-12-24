@@ -1228,6 +1228,7 @@ _.ObjectNames = {
 	[409315] = "Shattered Orb",
 	[411358] = "Artisan's Chest",
 	[411715] = "Bough of Altek",
+	[415614] = "Mysterious Formulae",
 }
 _.ObjectIcons = {
 	[31] = "Interface/Icons/INV_Mount_AllianceLionG",
@@ -2003,6 +2004,7 @@ _.ObjectModels = {
 	[409289] = 201095,
 	[409311] = 201649,
 	[411358] = 196987,
+	[415614] = 198455,
 }
 
 -- Supported Locales
@@ -3002,6 +3004,7 @@ localize(_.ObjectNames, {
 	[181672] = "Efigie del Hombre de Mimbre",
 	[207724] = "Restos de naufragio",
 	[392029] = "Recompensa del espadachín",
+	[415614] = "Fórmulas misteriosas",
 });
 end
 if simplifiedLocale == "fr" then
@@ -3514,6 +3517,7 @@ localize(_.ObjectNames, {
 	[407850] = "Reliquaire englouti",
 	[409289] = "Orbe étrange",
 	[411358] = "Coffre d’artisan",
+	[415614] = "Formules mystérieuses",
 });
 end
 if simplifiedLocale == "it" then
@@ -5353,6 +5357,7 @@ localize(_.ObjectNames, {
 	[397987] = "Тайник кобольдов",
 	[409289] = "Странная сфера",
 	[411358] = "Сундук мастера",
+	[415614] = "Таинственные формулы",
 });
 end
 if simplifiedLocale == "zh" then
