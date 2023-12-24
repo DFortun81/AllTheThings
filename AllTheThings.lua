@@ -12376,16 +12376,7 @@ local objectFields = {
 	["model"] = function(t)
 		return app.ObjectModels[t.objectID];
 	end,
-
-	["nameAsAchievement"] = function(t)
-		return app.NPCNameFromID[t.npcID] or select(2, GetAchievementInfo(t.achievementID));
-	end,
-	["iconAsAchievement"] = function(t)
-		return select(10, GetAchievementInfo(t.achievementID)) or t.iconAsDefault;
-	end,
-	["linkAsAchievement"] = function(t)
-		return GetAchievementLink(t.achievementID);
-	end,
+	
 	["collectibleAsQuest"] = app.CollectibleAsQuest,
 	["collectedAsQuest"] = IsQuestFlaggedCompletedForObject,
 	["savedAsQuest"] = function(t)
@@ -12460,11 +12451,6 @@ local objectFields = {
 app.BaseObject = app.BaseObjectFields(objectFields, "BaseObject");
 
 local fields = RawCloneData(objectFields);
-fields.icon = objectFields.iconAsAchievement;
---fields.link = objectFields.linkAsAchievement;
-app.BaseObjectWithAchievement = app.BaseObjectFields(fields, "BaseObjectWithAchievement");
-
-local fields = RawCloneData(objectFields);
 fields.altcollected = objectFields.altcollectedAsQuest;
 fields.collectible = objectFields.collectibleAsQuest;
 fields.collected = objectFields.collectedAsQuest;
@@ -12473,32 +12459,9 @@ fields.repeatable = objectFields.repeatableAsQuest;
 fields.saved = objectFields.savedAsQuest;
 fields.locked = objectFields.lockedAsQuest;
 app.BaseObjectWithQuest = app.BaseObjectFields(fields, "BaseObjectWithQuest");
-
-local fields = RawCloneData(objectFields);
-fields.icon = objectFields.iconAsAchievement;
---fields.link = objectFields.linkAsAchievement;
-fields.altcollected = objectFields.altcollectedAsQuest;
-fields.collectible = objectFields.collectibleAsQuest;
-fields.collected = objectFields.collectedAsQuest;
-fields.trackable = objectFields.trackableAsQuest;
-fields.repeatable = objectFields.repeatableAsQuest;
-fields.saved = objectFields.savedAsQuest;
-fields.locked = objectFields.lockedAsQuest;
-app.BaseObjectWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseObjectWithAchievementAndQuest");
 app.CreateObject = function(id, t)
-	if t then
-		if t.achID then
-			t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-			if t.questID then
-				return setmetatable(constructor(id, t, "objectID"), app.BaseObjectWithAchievementAndQuest);
-			else
-				return setmetatable(constructor(id, t, "objectID"), app.BaseObjectWithAchievement);
-			end
-		else
-			if t.questID then
-				return setmetatable(constructor(id, t, "objectID"), app.BaseObjectWithQuest);
-			end
-		end
+	if t and t.questID then
+		return setmetatable(constructor(id, t, "objectID"), app.BaseObjectWithQuest);
 	end
 	return setmetatable(constructor(id, t, "objectID"), app.BaseObject);
 end
