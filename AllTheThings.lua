@@ -12142,11 +12142,6 @@ npcFields.icon = npcFields.iconAsDefault;
 app.BaseNPC = app.BaseObjectFields(npcFields, "BaseNPC");
 
 local fields = RawCloneData(npcFields);
-fields.icon = npcFields.iconAsAchievement;
---fields.link = npcFields.linkAsAchievement;	-- Go to Broken Shore -> Command Center ->
-app.BaseNPCWithAchievement = app.BaseObjectFields(fields, "BaseNPCWithAchievement");
-
-local fields = RawCloneData(npcFields);
 fields.altcollected = npcFields.altcollectedAsQuest;
 fields.collectible = npcFields.collectibleAsQuest;
 fields.collected = npcFields.collectedAsQuest;
@@ -12155,17 +12150,68 @@ fields.repeatable = npcFields.repeatableAsQuest;
 fields.saved = fields.savedAsQuest;
 app.BaseNPCWithQuest = app.BaseObjectFields(fields, "BaseNPCWithQuest");
 
-local fields = RawCloneData(npcFields);
-fields.icon = npcFields.iconAsAchievement;
---fields.link = npcFields.linkAsAchievement;
-fields.altcollected = npcFields.altcollectedAsQuest;
-fields.collectible = npcFields.collectibleAsQuest;
-fields.collected = npcFields.collectedAsQuest;
-fields.trackable = npcFields.trackableAsQuest;
-fields.repeatable = npcFields.repeatableAsQuest;
-fields.saved = fields.savedAsQuest;
-app.BaseNPCWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseNPCWithAchievementAndQuest");
 
+-- Header Lib
+local headerFields = {
+	["key"] = function(t)
+		return "headerID";
+	end,
+	["name"] = function(t)
+		return L["HEADER_NAMES"][t.headerID];
+	end,
+	["icon"] = function(t)
+		return L["HEADER_ICONS"][t.headerID];
+	end,
+	["description"] = function(t)
+		return L["HEADER_DESCRIPTIONS"][t.headerID];
+	end,
+	["lore"] = function(t)
+		return L["HEADER_LORE"][t.headerID];
+	end,
+	["savedAsQuest"] = function(t)
+		return IsQuestFlaggedCompleted(t.questID);
+	end,
+};
+app.BaseHeader = app.BaseObjectFields(headerFields, "BaseHeader");
+
+local fields = RawCloneData(headerFields);
+fields.saved = headerFields.savedAsQuest;
+fields.trackable = app.ReturnTrue;
+app.BaseHeaderWithQuest = app.BaseObjectFields(fields, "BaseHeaderWithQuest");
+
+-- Event Lib (using the Events Module!)
+local fields = RawCloneData(headerFields, app.Modules.Events.Fields);
+app.BaseHeaderWithEvent = app.BaseObjectFields(fields, "BaseHeaderWithEvent");
+app.CreateNPC = function(id, t)
+	if t then
+		if id < 1 then
+			if t.questID then
+				return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithQuest);
+			elseif L.HEADER_EVENTS[id] then
+				return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithEvent);
+			else
+				return setmetatable(constructor(id, t, "headerID"), app.BaseHeader);
+			end
+		else
+			if t.questID or t.questIDA then
+				return setmetatable(constructor(id, t, "npcID"), app.BaseNPCWithQuest);
+			else
+				return setmetatable(constructor(id, t, "npcID"), app.BaseNPC);
+			end
+		end
+	elseif id > 1 then
+		return setmetatable(constructor(id, t, "npcID"), app.BaseNPC);
+	else
+		return setmetatable(constructor(id, t, "headerID"), app.BaseHeader);
+	end
+end
+
+
+
+
+
+
+-- Automatic Headers
 local HeaderTypeAbbreviations = {
 	["a"] = "achievementID",
 	["c"] = "classID",
@@ -12236,58 +12282,6 @@ local function CacheInfo(t, field)
 	if field then return _t[field]; end
 end
 
--- Header Lib
-local headerFields = {
-	["key"] = function(t)
-		return "headerID";
-	end,
-	["name"] = function(t)
-		return L["HEADER_NAMES"][t.headerID];
-	end,
-	["icon"] = function(t)
-		return L["HEADER_ICONS"][t.headerID];
-	end,
-	["description"] = function(t)
-		return L["HEADER_DESCRIPTIONS"][t.headerID];
-	end,
-	["lore"] = function(t)
-		return L["HEADER_LORE"][t.headerID];
-	end,
-	["nameAsAchievement"] = function(t)
-		return L["HEADER_NAMES"][t.headerID] or select(2, GetAchievementInfo(t.achievementID));
-	end,
-	["iconAsAchievement"] = function(t)
-		return L["HEADER_ICONS"][t.headerID] or select(10, GetAchievementInfo(t.achievementID));
-	end,
-	["linkAsAchievement"] = function(t)
-		return GetAchievementLink(t.achievementID);
-	end,
-	["savedAsQuest"] = function(t)
-		return IsQuestFlaggedCompleted(t.questID);
-	end,
-};
-app.BaseHeader = app.BaseObjectFields(headerFields, "BaseHeader");
-local fields = RawCloneData(headerFields);
-fields.name = headerFields.nameAsAchievement;
-fields.icon = headerFields.iconAsAchievement;
---fields.link = headerFields.linkAsAchievement;
-app.BaseHeaderWithAchievement = app.BaseObjectFields(fields, "BaseHeaderWithAchievement");
-local fields = RawCloneData(headerFields);
-fields.saved = headerFields.savedAsQuest;
-fields.trackable = app.ReturnTrue;
-app.BaseHeaderWithQuest = app.BaseObjectFields(fields, "BaseHeaderWithQuest");
-local fields = RawCloneData(headerFields);
-fields.name = headerFields.nameAsAchievement;
-fields.icon = headerFields.iconAsAchievement;
---fields.link = headerFields.linkAsAchievement;
-fields.saved = headerFields.savedAsQuest;
-fields.trackable = app.ReturnTrue;
-app.BaseHeaderWithAchievementAndQuest = app.BaseObjectFields(fields, "BaseHeaderWithAchievementAndQuest");
-
--- Event Lib (using the Events Module!)
-local fields = RawCloneData(headerFields, app.Modules.Events.Fields);
-app.BaseHeaderWithEvent = app.BaseObjectFields(fields, "BaseHeaderWithEvent");
-
 -- Automatic Type Header
 local fields = RawCloneData(headerFields, {
 	["headerCode"] = function(t)
@@ -12317,47 +12311,6 @@ app.CreateHeader = function(id, t)
 		return setmetatable(constructor(id, t, "headerID"), app.BaseAutomaticHeaderWithQuest);
 	end
 	return setmetatable(constructor(id, t, "headerID"), app.BaseAutomaticHeader);
-end
-app.CreateNPC = function(id, t)
-	if t then
-		if id < 1 then
-			if t.achID then
-				t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-				if t.questID then
-					return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithAchievementAndQuest);
-				else
-					return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithAchievement);
-				end
-			else
-				if t.questID then
-					return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithQuest);
-				elseif L.HEADER_EVENTS[id] then
-					return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithEvent);
-				else
-					return setmetatable(constructor(id, t, "headerID"), app.BaseHeader);
-				end
-			end
-		else
-			if t.achID then
-				t.achievementID = app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-				if t.questID then
-					return setmetatable(constructor(id, t, "npcID"), app.BaseNPCWithAchievementAndQuest);
-				else
-					return setmetatable(constructor(id, t, "npcID"), app.BaseNPCWithAchievement);
-				end
-			else
-				if t.questID or t.questIDA then
-					return setmetatable(constructor(id, t, "npcID"), app.BaseNPCWithQuest);
-				else
-					return setmetatable(constructor(id, t, "npcID"), app.BaseNPC);
-				end
-			end
-		end
-	elseif id > 1 then
-		return setmetatable(constructor(id, t, "npcID"), app.BaseNPC);
-	else
-		return setmetatable(constructor(id, t, "headerID"), app.BaseHeader);
-	end
 end
 end)();
 
