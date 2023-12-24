@@ -63,6 +63,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(204293),	-- Greenberry
 					i(199208),	-- Grungle
 					i(199102),	-- Hunk o' Blubber
+					i(199207),	-- Iceback Sculpin
 					i(204287),	-- Island Crab Jerky
 					i(204295),	-- Juicy Bushfruit
 					i(199213),	-- Lakkamuk Blenny
@@ -83,6 +84,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(199832),	-- Smoked Seaviper
 					i(204281),	-- Thousandbite Piranha Collar
 					i(204291),	-- Thrice-Charred Mammoth Ribs
+					i(199106),	-- Tiny Leviathan Bone
 					i(199835),	-- Torga's Braid
 				}),
 			},

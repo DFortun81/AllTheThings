@@ -1203,17 +1203,11 @@ root(ROOTS.Unsorted, {
 				q(78578),	--
 				-- 10.2.0.51297
 				-- 10.2.0.51425
-				q(78606),	--
 				q(78608),	-- Geothermal Jaunt
 				q(78609),	-- Geothermal Jaunt - Advanced
 				q(78610),	-- Geothermal Jaunt - Reverse
 				q(78617),	--
-				q(78622),	--
-				q(78623),	--
 				q(78644),	--
-				q(78660),	--
-				q(78677),	--
-				q(78678),	--
 				-- 10.2.0.51521
 				q(78711),	--
 				q(78712),	--
@@ -1566,7 +1560,6 @@ root(ROOTS.Unsorted, {
 				i(201174),	-- Fantastic Jewel
 				i(192693),	-- First Heads Horn
 				i(200937),	-- Flavorful Soup Bone
-				i(192697),	-- Fluffy Ear
 				i(192700),	-- Frozen Dorsal Spike
 				i(192701),	-- Frozen Eye
 				i(192616),	-- Fung Eye
@@ -1603,7 +1596,6 @@ root(ROOTS.Unsorted, {
 				i(201194),	-- Pumice Hand Chalk
 				i(192650),	-- Roomy Shell
 				i(201186),	-- Rope Bonds
-				i(192663),	-- Scaly Wing
 				i(192694),	-- Second Head's Fang
 				i(201208),	-- Seer's Crystal
 				i(192690),	-- Serrated Limb
@@ -1813,7 +1805,6 @@ root(ROOTS.Unsorted, {
 				i(200590),	-- Carefully Rolled Message
 				i(198688),	-- Catnip Leaf
 				i(200821),	-- Celsius 232
-				i(200691),	-- Claw Thistle Barbs
 				i(200811),	-- Congealed Sap Droplet
 				i(200814),	-- Congealing Shard
 				i(198832),	-- Conjured Blubbery Muffin
@@ -1879,7 +1870,6 @@ root(ROOTS.Unsorted, {
 				i(200845),	-- Heavily Deformed Mace
 				i(200784),	-- Hunting Trophies
 				i(200589),	-- Hydro Life Seed
-				i(199207),	-- Iceback Sculpin
 				i(200776),	-- Igneous Rock Sculpture
 				i(199646),	-- Imbu Tuskarr Bandages
 				i(199343),	-- Immaculate Sac of Swog Treasures
@@ -1973,7 +1963,6 @@ root(ROOTS.Unsorted, {
 				i(200594),	-- Thaelin's Second Favorite Comb
 				i(200705),	-- Thaldraszus Root
 				i(200803),	-- Through the Stained-Glass
-				i(199106),	-- Tiny Leviathan Bone
 				i(200833),	-- Titan Watcher Replica
 				i(200701),	-- Titian Extract
 				i(201727),	-- To My Staunchest Allies
@@ -1988,7 +1977,6 @@ root(ROOTS.Unsorted, {
 				i(201438),	-- Weary Sands
 				i(200827),	-- Weathered Sculpture
 				i(191426),	-- Whelmed Duckling
-				i(200222),	-- White Bell Pigment
 				i(198486),	-- Windscale Rider
 				i(200623),	-- Wind-Grown Grass
 				i(200696),	-- Winter Berries

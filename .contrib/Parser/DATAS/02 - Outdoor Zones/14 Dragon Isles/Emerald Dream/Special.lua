@@ -18,6 +18,39 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			--i(209867),	-- Thornspeaker Ritual Knife need to be used on Liliuna (crs: 210981, 210982, 210983) @ 57.0, 49.0, EMERALD_DREAM to summon tammable beast
 			--i(209868),	-- Thornspeaker Ritual Knife need to be used on Astera (crs: 210988, 210989, 210990) @ 36.0, 61.0, EMERALD_DREAM to summon tammable beast
 			--
+			header(HEADERS.Item, 210961, bubbleDownSelf({ ["classes"] = { DEMONHUNTER }}, {	-- Alara'shinu
+				["description"] = "Follow coords attached to steps to obtain warglaive",
+				["g"] = {
+					n(213029, {	-- Landeron Felfury
+						["name"] = "Step 1. Talk to this npc",
+						["questID"] = 78606,
+						["coord"] = { 50.5, 61.0, EMERALD_DREAM },
+					}),
+					n(213114, {	-- Memory of Landeron Felfury
+						["name"] = "Step 2. Watch RP located in cave at Broken Shore",
+						["questID"] = 78622,
+						["coord"] = { 71.6, 41.5, BROKEN_SHORE },
+					}),
+					n(213186, {	-- Memory of Landeron Felfury
+						["name"] = "Step 3. Watch RP located in Temple of Elune in Val'sharah",
+						["questID"] = 78623,
+						["coord"] = { 51.2, 56.8, VALSHARAH },
+					}),
+					n(213308, {	-- Warglaive
+						["name"] = "Step 4. Wait when deer bring warglaive and interact with it",
+						["questID"] = 78677,
+						["coord"] = { 51.1, 57.1, VALSHARAH },
+					}),
+					n(213381, {	-- Warglaive
+						["name"] = "Step 5. Interact with warglaive again and loot Alara'shinu",
+						["questID"] = 78678,
+						["coord"] = { 51.1, 57.1, VALSHARAH },
+						["g"] = {
+							i(210961),	-- Alara'shinu
+						},
+					}),
+				},
+			})),
 			header(HEADERS.Item, 210535, {	-- Mark of the Slumbering Somnowl
 				i(210565, {	-- Soft Somnowl Feather
 					["description"] = "Use Hibernate on Somnowls then interact with them.",
@@ -124,3 +157,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
+	m(EMERALD_DREAM, {
+		q(78660),	-- server side script for deer that bring warglaive (spellID 427482) (I miss npcID .-.)
+	}),
+}));

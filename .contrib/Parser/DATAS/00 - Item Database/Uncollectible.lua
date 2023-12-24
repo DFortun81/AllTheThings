@@ -637,8 +637,10 @@ i(192657);	-- Hardy Cloven Hoof
 i(192659);	-- Impressive Mandible
 i(192661);	-- Prehistoric Fin
 i(192662);	-- Pyretic Speck
+i(192663);	-- Scaly Wing
 i(192664);	-- Serrated Pincer
 i(192666);	-- Severed Roots
+i(192697);	-- Fluffy Ear
 i(192669);	-- Sizeable Feather
 i(192671);	-- Sublime Flower
 i(192672);	-- Tattered Proto-Wing
