@@ -2401,9 +2401,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78909, {	-- Shifting Scale Talisman
 					["qg"] = 214208,	-- N'ora Anyheart <Scholar of Exotic Fauna>
-					--["sourceQuest"] = ,	-- Find Old Serra'kis
+					["sourceQuest"] = 78908,	--  Speak to N'ora
 					["coord"] = { 62.0, 39.4, THE_BARRENS },
-					["description"] = "You need to loot the Handful of Shifting Scales before this quest will be displayed to you.",
 					["timeline"] = { "removed 2.0.1" },
 					["OnUpdate"] = [[_.OnUpdateForCrafter]],
 					["cost"] = {
@@ -2485,6 +2484,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 211653,	-- Grizzby
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
 					["timeline"] = { "removed 2.0.1" },
+					["lvl"] = 20,
+				})),
+				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Speak to N'ora
+					readable = "Speak to N'ora",
+					icon = "Interface\\CURSOR\\Speak",
+					text = {
+						en = "Speak to N'ora",
+						es = "Habla con el N'ora",
+						de = "Sprich mit N'ora",
+						fr = "Parlez à N'ora",
+						it = "Parla con N'ora",
+						pt = "Fale com o N'ora",
+						ru = "Поговорите с Н'ора",
+						ko = "노라와 대화",
+						cn = "与奈奥拉谈",
+					},
+				}), {
+					["providers"] = {
+						{ "i", 211419 },	-- Handful of Shifting Scales
+						{ "n", 214208 },	-- N'ora Anyheart <Scholar of Exotic Fauna>
+					},
+					["questID"] = 78908,	-- N'ora HQT
+					["coord"] = { 62.0, 39.4, THE_BARRENS },
+					["description"] = "You need to loot the Handful of Shifting Scales before this quest will be displayed to you.",
+					["timeline"] = { "removed 2.0.1" },
+					["OnUpdate"] = [[_.OnUpdateForCrafter]],
 					["lvl"] = 20,
 				})),
 				-- #endif
