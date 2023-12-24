@@ -6422,26 +6422,6 @@ app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
 		return collectedAsRWP(t);
 	end,
 }, isCollectibleRWP,
-"WithFactionAndQuest", {
-	collectible = function(t)
-		return t.collectibleAsCost or collectibleAsQuest(t) or app.Settings.Collectibles.Reputations;
-	end,
-	collected = function(t)
-		if t.collectedAsCost == false then
-			return 0;
-		end
-		if not IsQuestFlaggedCompletedForObject(t) then
-			return 0;
-		end
-		-- This is used by reputation tokens. (turn in items)
-		if app.CurrentCharacter.Factions[t.factionID] then return 1; end
-		if app.Settings.AccountWide.Reputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
-	end,
-	trackable = app.ReturnTrue,
-	saved = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
-	end
-}, (function(t) return t.factionID and t.questID; end),
 "WithQuest", {
 	collectible = function(t)
 		return t.collectibleAsCost or collectibleAsQuest(t);
