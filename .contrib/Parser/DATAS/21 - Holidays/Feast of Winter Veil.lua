@@ -2500,6 +2500,9 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(64628, {	-- Triggered when learning the additional things for the Rockin' Rollin' Toy (spellID 358761)
 			["timeline"] = { ADDED_9_1_5 },
 		}),
+		q(78130, {	-- Looting Festive Trans-Dimensional Bird Whistle [209859]
+			["timeline"] = { ADDED_10_2_0 },
+		}),
 		q(78445, {	-- Looting Highland Drake: Winter Veil Armor [210432]
 			["timeline"] = { ADDED_10_2_0 },
 		}),
