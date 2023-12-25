@@ -514,9 +514,12 @@ i(32745, 41157);	-- Shoulderpads of Renewed Life
 i(32749, 41162);	-- Shoulders of Lightning Reflexes
 i(32746, 41158);	-- Swiftstrike Bracers
 i(32747, 41160);	-- Swiftstrike Shoulders
+-- #if AFTER WRATH
+i(32430, 52733);	-- Bracers of Shackled Souls
+-- #else
+i(32430, 40000);	-- Bracers of Shackled Souls
+-- #endif
 i(32432, 40002);	-- Waistguard of Shackled Souls
---- SPECIAL ---
-i(0, 40000);		-- Bracers of Shackled Souls [REMOVED: 4.0.3, See New Version]
 
 ------------------
 -- PATCH 2.2.0 --
@@ -848,8 +851,6 @@ i(67056, 78452);	-- Vicious Wyrmhide Gloves
 i(67086, 78480);	-- Vicious Wyrmhide Helm
 i(67085, 78479);	-- Vicious Wyrmhide Legs
 i(67074, 78464);	-- Vicious Wyrmhide Shoulders
---- SPECIAL ---
-i(0, 52733);	-- Bracers of Shackled Souls
 --- NYI ---
 i(66999, 0);	-- Darkbrand Bracers
 i(67000, 0);	-- Darkbrand Gloves

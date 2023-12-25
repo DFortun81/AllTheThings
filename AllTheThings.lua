@@ -2276,86 +2276,6 @@ local IsQuestFlaggedCompletedForObject = function(t, questIDKey)
 	if not app.MODE_DEBUG_OR_ACCOUNT and not app.IsInPartySync and not app.Settings.Collectibles.QuestsLocked and t.altcollected then
 		return 2;
 	end
-	-- If the quest is repeatable, then check other things to determine if it has ever been completed
-	if t.repeatable and app.Settings:GetTooltipSetting("RepeatableFirstTime") then
-		if app.CurrentCharacter.Quests[questID] then
-			return 1;
-		end
-		-- can an alt quest of a repeatable quest be permanent?
-		-- if not considering account-mode, consider the quest completed once if any altquest was also completed
-		if not app.MODE_DEBUG_OR_ACCOUNT and t.altQuests then
-			-- If the quest has an altQuest which was completed on this character, return shared completed
-			for i,altQuestID in ipairs(t.altQuests) do
-				-- any altQuest completed on this character, return shared completion
-				if app.CurrentCharacter.Quests[altQuestID] then
-					return 2;
-				end
-			end
-		end
-		if Grail then
-			-- Import previously completed repeatable quest from Grail addon data
-			if Grail:HasQuestEverBeenCompleted(questID) then
-				ATTAccountWideData.Quests[questID] = 1;
-				app.CurrentCharacter.Quests[questID] = 1;
-				return 1;
-			end
-			-- if not considering account-mode tracking, consider the quest completed once if any altquest was also completed
-			if not app.MODE_DEBUG_OR_ACCOUNT and t.altQuests then
-				-- If the quest has an altQuest which was completed on this character, return shared completed
-				local isCollected;
-				for i,altQuestID in ipairs(t.altQuests) do
-					-- any altQuest completed on this character, return shared completion
-					if Grail:HasQuestEverBeenCompleted(altQuestID) then
-						ATTAccountWideData.Quests[altQuestID] = 1;
-						app.CurrentCharacter.Quests[altQuestID] = 1;
-						isCollected = 2;
-					end
-				end
-				if isCollected then return isCollected; end
-			end
-		end
-		if WorldQuestTrackerAddon then
-			-- Import previously completed repeatable quest from WorldQuestTracker addon data
-			local wqt_questDoneHistory = WorldQuestTrackerAddon.db.profile.history.quest
-			local wqt_global = wqt_questDoneHistory.global
-			local wqt_local = wqt_questDoneHistory.character[app.GUID]
-
-			if wqt_local and wqt_local[questID] and wqt_local[questID] > 0 then
-				ATTAccountWideData.Quests[questID] = 1;
-				app.CurrentCharacter.Quests[questID] = 1;
-				return 1;
-			end
-
-			-- only consider altquest completion if not on account-mode
-			if wqt_local and not app.MODE_DEBUG_OR_ACCOUNT and t.altQuests then
-				local isCollected;
-				for i,altQuestID in ipairs(t.altQuests) do
-					-- any altQuest completed on this character, return shared completion
-					if wqt_local[altQuestID] and wqt_local[altQuestID] > 0 then
-						ATTAccountWideData.Quests[altQuestID] = 1;
-						app.CurrentCharacter.Quests[altQuestID] = 1;
-						isCollected = 2;
-					end
-				end
-				if isCollected then return isCollected; end
-			end
-
-			-- quest completed on any character, return shared completion
-			if wqt_global and wqt_global[questID] and wqt_global[questID] > 0 then
-				ATTAccountWideData.Quests[questID] = 1;
-				-- only return as completed if tracking account wide
-				if app.Settings.AccountWide.Quests then
-					return 2;
-				end
-			end
-		end
-		-- quest completed on any character and tracking account-wide, return shared completion regardless of account-mode
-		if app.Settings.AccountWide.Quests then
-			if ATTAccountWideData.Quests[questID] then
-				return 2;
-			end
-		end
-	end
 	if not t.repeatable and app.Settings.AccountWide.Quests then
 		-- any character has completed this specific quest, return shared completion
 		if ATTAccountWideData.Quests[questID] then
@@ -6962,13 +6882,7 @@ app.CollectibleAsQuest = function(t)
 	-- must have a questID associated
 	questID
 	-- must not be repeatable
-	and (not t.repeatable or
-		-- unless considering repeatable quests as collectible
-		(app.Settings:GetTooltipSetting("Repeatable")
-			-- and the quest is actually able to remain in a 'completed' state
-			and (not rawget(t, "repeatable")
-				-- or is only being collected on first completion
-				or app.Settings:GetTooltipSetting("RepeatableFirstTime"))))
+	and not t.repeatable
 	and
 	(
 		(	-- Regular Quests

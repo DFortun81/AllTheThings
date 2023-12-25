@@ -85,8 +85,6 @@ local GeneralSettingsBase = {
 		["MainOnly"] = false,
 		["DebugMode"] = false,
 		["FactionMode"] = false,
-		["Repeatable"] = false,
-		["RepeatableFirstTime"] = false,
 		["AccountWide:Achievements"] = true,
 		["AccountWide:AzeriteEssences"] = true,
 		-- ["AccountWide:BattlePets"] = true,
@@ -1630,6 +1628,16 @@ end
 local textModeExplain = child:CreateTextLabel(L["MODE_EXPLAIN_LABEL"])
 textModeExplain:SetPoint("TOPLEFT", headerMode, "BOTTOMLEFT", 0, -4)
 
+local checkboxDebugMode = child:CreateCheckBox(L["DEBUG_MODE"],
+function(self)
+	self:SetChecked(settings:Get("DebugMode"))
+end,
+function(self)
+	settings:SetDebugMode(self:GetChecked())
+end)
+checkboxDebugMode:SetATTTooltip(L["DEBUG_MODE_TOOLTIP"])
+checkboxDebugMode:SetPoint("TOPLEFT", textModeExplain, "BOTTOMLEFT", -2, -2)
+
 local checkboxAccountMode = child:CreateCheckBox(L["ACCOUNT_MODE"],
 function(self)
 	self:SetChecked(settings:Get("AccountMode"))
@@ -1645,7 +1653,7 @@ function(self)
 	settings:SetAccountMode(self:GetChecked())
 end)
 checkboxAccountMode:SetATTTooltip(L["ACCOUNT_MODE_TOOLTIP"])
-checkboxAccountMode:SetPoint("TOPLEFT", textModeExplain, "BOTTOMLEFT", -2, -2)
+checkboxAccountMode:AlignBelow(checkboxDebugMode)
 
 local checkboxFactionMode = child:CreateCheckBox(L["FACTION_MODE"],
 function(self)
@@ -1680,8 +1688,26 @@ function(self)
 	settings:Set("Skip:AutoRefresh", self:GetChecked())
 end)
 checkboxSkipAutoRefresh:SetATTTooltip(L["SKIP_AUTO_REFRESH_TOOLTIP"])
-checkboxSkipAutoRefresh:SetPoint("TOPLEFT", checkboxAccountMode, 320, 0)
+checkboxSkipAutoRefresh:SetPoint("TOPLEFT", checkboxDebugMode, 320, 0)
 settings.checkboxSkipAutoRefresh = checkboxSkipAutoRefresh	-- So the Refresh function can find it
+
+local checkboxShowAllTrackableThings = child:CreateCheckBox(L["SHOW_INCOMPLETE_THINGS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:Get("Show:TrackableThings"))
+	if settings:Get("DebugMode") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:Set("Show:TrackableThings", self:GetChecked())
+	settings:UpdateMode(1)
+end)
+checkboxShowAllTrackableThings:SetATTTooltip(L["SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP"])
+checkboxShowAllTrackableThings:AlignBelow(checkboxSkipAutoRefresh)
 
 -- Column 1
 local headerAccountThings = child:CreateHeaderLabel(L["ACCOUNT_THINGS_LABEL"])
@@ -1906,75 +1932,6 @@ child:CreateForcedAccountWideCheckbox()
 local checkboxDrakewatcherManuscripts =
 child:CreateTrackingCheckbox("DRAKEWATCHERMANUSCRIPTS", "DrakewatcherManuscripts")
 	:AlignAfter(accwideCheckboxDrakewatcherManuscripts)
-
-local headerAdditionalResources = child:CreateHeaderLabel(L["EXTRA_THINGS_LABEL"])
-headerAdditionalResources:SetPoint("LEFT", headerMode, 0, 0)
-headerAdditionalResources:SetPoint("TOP", checkboxDrakewatcherManuscripts, "BOTTOM", 0, -10)
-
-local checkboxCollectRepeatableQuests = child:CreateCheckBox(L["SHOW_REPEATABLE_THINGS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Repeatable"))
-	if not settings:Get("Thing:Quests") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Repeatable", self:GetChecked())
-	settings:UpdateMode(1)
-end)
-checkboxCollectRepeatableQuests:SetATTTooltip(L["SHOW_REPEATABLE_THINGS_CHECKBOX_TOOLTIP"])
-checkboxCollectRepeatableQuests:SetPoint("TOPLEFT", headerAdditionalResources, "BOTTOMLEFT", -2, 0)
-
-local checkboxCollectRepeatableQuestsFirstTimeOnly = child:CreateCheckBox(L["FIRST_TIME_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("RepeatableFirstTime"))
-	if not settings:Get("Thing:Quests") or not settings:GetTooltipSetting("Repeatable") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("RepeatableFirstTime", self:GetChecked())
-	settings:UpdateMode(1)
-end)
-checkboxCollectRepeatableQuestsFirstTimeOnly:SetATTTooltip(L["FIRST_TIME_CHECKBOX_TOOLTIP"])
-checkboxCollectRepeatableQuestsFirstTimeOnly:AlignBelow(checkboxCollectRepeatableQuests, 1)
-
-local checkboxShowAllTrackableThings = child:CreateCheckBox(L["SHOW_INCOMPLETE_THINGS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:Get("Show:TrackableThings"))
-	if settings:Get("DebugMode") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:Set("Show:TrackableThings", self:GetChecked())
-	settings:UpdateMode(1)
-end)
-checkboxShowAllTrackableThings:SetATTTooltip(L["SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP"])
-checkboxShowAllTrackableThings:AlignBelow(checkboxCollectRepeatableQuestsFirstTimeOnly, -1)
-
-
-local checkboxDebugMode = child:CreateCheckBox(L["DEBUG_MODE"],
-function(self)
-	self:SetChecked(settings:Get("DebugMode"))
-end,
-function(self)
-	settings:SetDebugMode(self:GetChecked())
-end)
-checkboxDebugMode:SetATTTooltip(L["DEBUG_MODE_TOOLTIP"])
-checkboxDebugMode:AlignBelow(checkboxShowAllTrackableThings)
 
 -- Column 2
 local headerGeneralContent = child:CreateHeaderLabel(L["GENERAL_CONTENT"])
