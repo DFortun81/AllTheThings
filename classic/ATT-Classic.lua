@@ -8657,17 +8657,6 @@ local function RefreshCollections()
 	app:StartATTCoroutine("RefreshingCollections", function()
 		while InCombatLockdown() do coroutine.yield(); end
 		app.print("Refreshing collection...");
-		app.events.QUEST_LOG_UPDATE();
-		coroutine.yield();
-
-		-- Harvest Illusion Collections
-		if C_TransmogCollection and C_TransmogCollection.GetIllusions then
-			local collectedIllusions = ATTAccountWideData.Illusions;
-			for _,illusion in ipairs(C_TransmogCollection.GetIllusions()) do
-				if illusion.isCollected then collectedIllusions[illusion.sourceID] = 1; end
-			end
-			coroutine.yield();
-		end
 
 		-- Refresh Toys
 		local collected;

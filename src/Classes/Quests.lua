@@ -1393,6 +1393,7 @@ app:RegisterEvent("QUEST_LOG_UPDATE");
 app:RegisterEvent("QUEST_REMOVED");
 app:RegisterEvent("QUEST_TURNED_IN");
 app:RegisterEvent("QUEST_WATCH_UPDATE");
+tinsert(app.EventHandlers.OnRefreshCollections, app.events.QUEST_LOG_UPDATE);
 
 
 

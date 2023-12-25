@@ -41,6 +41,18 @@ if C_TransmogCollection then
 			return "[Illusion: " .. t.illusionID .. " (Unsupported)]";
 		end
 	end
+	
+	local C_TransmogCollection_GetIllusions = C_TransmogCollection.GetIllusions;
+	if C_TransmogCollection_GetIllusions then
+		-- Add Harvest Illusion Collections to the OnRefreshCollections handler.
+		tinsert(app.EventHandlers.OnRefreshCollections, function()
+			local collectedIllusions = ATTAccountWideData.Illusions;
+			for _,illusion in ipairs(C_TransmogCollection_GetIllusions()) do
+				if illusion.isCollected then collectedIllusions[illusion.sourceID] = 1; end
+			end
+			coroutine.yield();
+		end);
+	end
 end
 app.CreateIllusion = app.CreateClass("Illusion", "illusionID", illusionFields,
 "WithItem", {
