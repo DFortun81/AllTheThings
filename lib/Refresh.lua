@@ -277,9 +277,8 @@ local function RefreshCollections()
 	-- for the first auto-refresh, don't actually print to chat since some users don't like that auto-chat on login
 	local print = app.__FirstRefresh and app.EmptyFunction or app.print;
 	app.__FirstRefresh = nil;
-
-	print(app.L["REFRESHING_COLLECTION"]);
 	while InCombatLockdown() do coroutine.yield(); end
+	print(app.L["REFRESHING_COLLECTION"]);
 
 	-- Harvest Title Collections
 	local acctTitles, charTitles, charGuid = ATTAccountWideData.Titles, {}, app.GUID;

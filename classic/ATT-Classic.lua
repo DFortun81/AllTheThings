@@ -6744,6 +6744,16 @@ if C_ToyBox and app.GameBuildVersion >= 30000 then
 	tinsert(app.EventHandlers.OnReady, function()
 		app:RegisterEvent("TOYS_UPDATED");
 	end);
+	tinsert(app.EventHandlers.OnRefreshCollections, function()
+		-- Refresh Toys
+		local collected;
+		for id,t in pairs(app.SearchForFieldContainer("toyID")) do
+			if #t > 0 then
+				collected = t[1].collected;	-- Run the collected field's code.
+			end
+		end
+		coroutine.yield();
+	end);
 end
 app.CreateToy = app.CreateClass("Toy", "toyID", fields);
 end)();
@@ -8657,16 +8667,7 @@ local function RefreshCollections()
 	app:StartATTCoroutine("RefreshingCollections", function()
 		while InCombatLockdown() do coroutine.yield(); end
 		app.print("Refreshing collection...");
-
-		-- Refresh Toys
-		local collected;
-		for id,t in pairs(app.SearchForFieldContainer("toyID")) do
-			if #t > 0 then
-				collected = t[1].collected;	-- Run the collected field's code.
-			end
-		end
-		coroutine.yield();
-
+		
 		-- Execute the OnRefreshCollections handlers.
 		for i,handler in ipairs(app.EventHandlers.OnRefreshCollections) do
 			handler();
