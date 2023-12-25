@@ -11,7 +11,6 @@ local GetPVPLifetimeStats =
 -- Protected Variables
 local Collectible = true;
 local ALLIANCE_FACTION_ID = Enum.FlightPathFaction.Alliance;
-local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 
 -- PVP Rank Class
 local Create, Class = app.CreateClass("PVPRank", "pvpRankID", {

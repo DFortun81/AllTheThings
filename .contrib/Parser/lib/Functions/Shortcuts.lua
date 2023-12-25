@@ -1077,6 +1077,11 @@ title_gendered = function(id_m, id_f, t)				-- Create a TITLE Object which is 't
 end
 v = function(id, t)										-- Create a VIGNETTE Object
 	t.type = "vignetteID";
+	if t.cr or t.creatureID or t.qg or t.qgs then
+		error("Vignetts don't use cr, creatureID, qg, or qgs!", id);
+	elseif not t.crs then
+		error("Vignettes must supply a crs list!", id);
+	end
 	return struct("questID", id, t);
 end
 

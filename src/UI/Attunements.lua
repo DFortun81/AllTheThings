@@ -4,7 +4,6 @@ local CloneReference = app.CloneReference;
 
 -- Global locals
 local tinsert = tinsert;
-local ALLIANCE_FACTION_ID = Enum.FlightPathFaction.Alliance;
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 
 -- Module locals

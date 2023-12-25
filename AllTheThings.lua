@@ -1142,6 +1142,7 @@ end
 app.GetProgressText = GetProgressTextDefault;
 app.GetProgressTextDefault = GetProgressTextDefault;
 app.GetProgressTextRemaining = GetProgressTextRemaining;
+app.GetCompletionIcon = GetCompletionIcon;
 
 local function BuildSourceTextColorized(group)
 	local line = {}

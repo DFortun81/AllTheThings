@@ -11360,7 +11360,7 @@ local refreshDataCooldown = 5;
 local refreshFromTrigger;
 local currentlyRefreshingData = false;
 local function RefreshData(source, trigger)
-	wipe(searchCache);
+	wipe(app.searchCache);
 	refreshDataCooldown = 5;
 	if trigger then
 		--print("REFRESH_DATA", source, trigger);
@@ -11402,7 +11402,7 @@ local function RefreshData(source, trigger)
 			SendGuildMessage(msg);
 			app.lastProgressUpdateMessage = msg;
 		end
-		wipe(searchCache);
+		wipe(app.searchCache);
 		currentlyRefreshingData = nil;
 	end);
 end
@@ -13372,6 +13372,11 @@ end
 app.events.VARIABLES_LOADED = function()
 	app:StartATTCoroutine("Startup", function()
 		coroutine.yield();
+		
+		-- Execute the OnStartup handlers.
+		for i,handler in ipairs(app.EventHandlers.OnStartup) do
+			handler();
+		end
 		
 		-- Check for Season of Discovery
 		local season = C_Seasons and C_Seasons.GetActiveSeason() or 0;
