@@ -122,6 +122,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(FACTIONS, {
 				faction(1133, {	-- Bilgewater Cartel
 					["timeline"] = { ADDED_4_0_3 },
+					["races"] = HORDE_ONLY,
 				}),
 				faction(530, {	-- Darkspear Trolls
 					-- #if AFTER WRATH
@@ -136,6 +137,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				faction(1352, {	-- Huojin Pandaren
 					["timeline"] = { ADDED_5_0_4 },
+					["races"] = HORDE_ONLY,
 				}),
 				faction(FACTION_ORGRIMMAR, {
 					-- #if AFTER WRATH

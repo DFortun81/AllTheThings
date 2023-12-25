@@ -616,6 +616,7 @@ i(192610);	-- Beady Woodland Eye
 i(192611);	-- Bottled Torrent
 i(192613);	-- Dragon Tooth
 i(192614);	-- Elemental Ooze
+i(192616);	-- Fung Eye
 i(192617);	-- Hound Paw
 i(192618);	-- Ice Chunks
 i(192619);	-- Impressive Tail Fin

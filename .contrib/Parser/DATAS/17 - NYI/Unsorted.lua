@@ -1559,7 +1559,6 @@ root(ROOTS.Unsorted, {
 				i(200937),	-- Flavorful Soup Bone
 				i(192700),	-- Frozen Dorsal Spike
 				i(192701),	-- Frozen Eye
-				i(192616),	-- Fung Eye
 				i(192702),	-- Giant's Heart
 				i(192707),	-- Gnawing Incisors
 				i(201227),	-- Half-Eaten Stone
