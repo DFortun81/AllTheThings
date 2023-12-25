@@ -101,31 +101,44 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 				pet(2658),	-- Chitterspine Deepstalker (PET!)
 				pet(2659),	-- Trench Slug (PET!)
 			})),
+			d(ALL_DIFFICULTIES_RAID, {
+				e(2347, {	-- Blackwater Behemoth
+					["crs"] = { 150653 },	-- Blackwater Behemoth
+					["g"] = {
+						i(169360),	-- Mindlost Bloodfrenzy (PET!)
+					},
+				}),
+				e(2353, {	-- Radiance of Azshara
+					["crs"] = { 152364 },	-- Radiance of Azshara
+					["g"] = {
+						i(170163),	-- Technique: Glyph of the Dark Depths (RECIPE!)
+					},
+				}),
+				e(2354, {	-- Lady Ashvane
+					["crs"] = { 152236 },	-- Lady Ashvane
+					["g"] = {
+						i(169358),	-- Lightless Ambusher (PET!)
+					},
+				}),		
+				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
+					["crs"] = { 150859 },	-- Za'qul, Harbinger of Ny'alotha
+					["g"] = {	
+						i(169362),	-- Nameless Octopode (PET!)
+					},
+				}),			
+				e(2361, {	-- Queen Azshara
+					["crs"] = { 152910 },	-- Queen Azshara
+					["g"] = {
+						i(169694),	-- Aqueous Reliquary
+						i(169348),	-- Zanj'ir Poker (PET!)
+					},
+				}),
+			}),
 			n(COMMON_BOSS_DROPS, {
 				i(169329),	-- Eternal Ornament
 				i(168625),	-- Vantus Rune Technique: The Eternal Palace [Rank 1] (RECIPE!)
 				i(168626),	-- Vantus Rune Technique: The Eternal Palace [Rank 2] (RECIPE!)
 				i(168627),	-- Vantus Rune Technique: The Eternal Palace [Rank 3] (RECIPE!)
-			}),
-			n(DROPS, {
-				i(169694, {	-- Aqueous Reliquary
-					["crs"] = { 152910 },	-- Queen Azshara
-				}),
-				i(169358, {	-- Lightless Ambusher (PET!)
-					["crs"] = { 152236 },	-- Lady Ashvane
-				}),
-				i(169360, {	-- Mindlost Bloodfrenzy (PET!)
-					["crs"] = { 150653 },	-- Blackwater Behemoth
-				}),
-				i(169362, {	-- Nameless Octopode (PET!)
-					["crs"] = { 150859 },	-- Za'qul, Harbinger of Ny'alotha
-				}),
-				i(169348, {	-- Zanj'ir Poker (PET!)
-					["crs"] = { 152910 },	-- Queen Azshara
-				}),
-				i(170163, {	-- Technique: Glyph of the Dark Depths (RECIPE!)
-					["crs"] = { 152364 },	-- Radiance of Azshara
-				}),
 			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = {
