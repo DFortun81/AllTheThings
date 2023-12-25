@@ -619,6 +619,7 @@ i(192614);	-- Elemental Ooze
 i(192617);	-- Hound Paw
 i(192618);	-- Ice Chunks
 i(192619);	-- Impressive Tail Fin
+i(192620);	-- Large Tail Spikes
 i(192621);	-- Long-Toed Talon
 i(192622);	-- Massive Beast Eye
 i(192623);	-- Massive Proto-Dragon Claw
@@ -661,6 +662,7 @@ i(192717);	-- Animated Splinter
 i(192718);	-- Rock-Hard Eggshell
 i(192719);	-- Scaled Toes
 i(192723);	-- Springy Tongue
+i(192726);	-- Thunderhorn
 i(192727);	-- Timeless Horns
 i(192729);	-- Unhinged Mandible
 i(192730);	-- Unstable Arcane Essence

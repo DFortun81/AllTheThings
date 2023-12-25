@@ -1574,7 +1574,6 @@ root(ROOTS.Unsorted, {
 				i(192705),	-- Imposing Tusk
 				i(201723),	-- Indecipherable Pages
 				i(201170),	-- Knucklebones
-				i(192620),	-- Large Tail Spikes
 				i(201200),	-- Makeshift Totem
 				i(192660),	-- Massive Hydra Claw
 				i(192709),	-- Membranous Wing
@@ -1623,7 +1622,6 @@ root(ROOTS.Unsorted, {
 				i(192696),	-- Third Head's Eye
 				i(201223),	-- Thorn Bracelet
 				i(193447),	-- Thunder Thigh
-				i(192726),	-- Thunderhorn
 				i(193391),	-- Time-Worn Fang
 				i(201204),	-- Tooth Bracelet
 				i(192665),	-- Torn Dragon Wing
