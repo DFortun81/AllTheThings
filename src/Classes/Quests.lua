@@ -1397,6 +1397,10 @@ app:RegisterEvent("QUEST_WATCH_UPDATE");
 
 
 
+
+
+
+
 -- Retail Modifications
 if app.GameBuildVersion > 50000 then
 -- CRIEVE NOTE: I don't fully understand why this exists and would like to kill this.
@@ -1495,14 +1499,10 @@ local function RefreshQuestCompletionState(questID)
 	if #DirtyQuests > 0 then
 		app.UpdateRawIDs("questID", DirtyQuests);
 	end
-	-- re-register the criteria update event
-	app:RegisterEvent("CRITERIA_UPDATE");
 	-- app.PrintDebugPrior("RefreshedQuestCompletionState")
 end
 app.RefreshQuestInfo = function(questID)
 	-- app.PrintDebug("RefreshQuestInfo",questID)
-	-- unregister criteria update until the quest refresh actually completes
-	app:UnregisterEvent("CRITERIA_UPDATE");
 	if questID then
 		RefreshQuestCompletionState(questID);
 	else
@@ -1933,43 +1933,6 @@ app.events.QUEST_ACCEPTED = function(questID)
 		app:RefreshWindows();
 	end
 end
-
-app.events.BOSS_KILL = function(id, name, ...)
-	-- print("BOSS_KILL")
-	app.RefreshQuestInfo();
-	-- This is so that when you kill a boss, you can trigger
-	-- an automatic update of your saved instance cache.
-	-- (It does lag a little, but you can disable this if you want.)
-	-- Waiting until the LOOT_CLOSED occurs will prevent the failed Auto Loot bug.
-	-- print("BOSS_KILL", id, name, ...);
-	app:UnregisterEvent("LOOT_CLOSED");
-	app:RegisterEvent("LOOT_CLOSED");
-end
-app.events.LOOT_CLOSED = function()
-	-- Once the loot window closes after killing a boss, THEN trigger the update.
-	app:UnregisterEvent("LOOT_CLOSED");
-	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
-	app:RegisterEvent("UPDATE_INSTANCE_INFO");
-	RequestRaidInfo();
-end
-
-
--- This is probably not necessary.
-app.events.CRITERIA_UPDATE = function(...)
-	-- app.PrintDebug("CRITERIA_UPDATE",...)
-	-- sometimes triggers many times at once but RefreshQuestInfo unhooks CRITERIA_UPDATE until quest refresh completes
-	app.RefreshQuestInfo();
-end
-app.events.LOOT_OPENED = function()
-	-- print("LOOT_OPENED")
-	-- When the player loots something, trigger a refresh of quest info (for treasures/rares/etc.)
-	-- Since quest refresh is 1/sec max and not during combat, it should be fine
-	app.RefreshQuestInfo();
-end
-tinsert(app.EventHandlers.OnStartup, function()
-	app:RegisterEvent("CRITERIA_UPDATE");
-	app:RegisterEvent("LOOT_OPENED");
-end);
 else
 	-- Classic Implementation
 	app.RefreshQuestInfo = function(questID)

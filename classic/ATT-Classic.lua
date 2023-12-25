@@ -8846,6 +8846,7 @@ app.events.UPDATE_INSTANCE_INFO = function()
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	app:StartATTCoroutine("RefreshSaves", RefreshSaves);
 end
+tinsert(app.EventHandlers.OnStartup, app.events.UPDATE_INSTANCE_INFO);
 
 -- TomTom Support
 local __TomTomWaypointCacheIndexY = { __index = function(t, y)
@@ -12514,7 +12515,6 @@ app.events.VARIABLES_LOADED = function()
 		-- Cache some things
 		app.CurrentMapID = app.GetCurrentMapID();
 		
-		app.events.UPDATE_INSTANCE_INFO();
 		C_ChatInfo.RegisterAddonMessagePrefix("ATTC");
 
 		-- Setup the Saved Variables if they aren't already.
