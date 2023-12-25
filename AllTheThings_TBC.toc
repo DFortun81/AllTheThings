@@ -22,7 +22,6 @@ lib\Colors.lua
 lib\Sort.lua
 lib\Table.lua
 classic\locales.lua
-classic\src-Classes-base.lua
 src\Modules\Events.lua
 src\Modules\RetrievingData.lua
 db\TBC\ExplorationDB.lua
@@ -30,6 +29,7 @@ db\TBC\LocalizationDB.lua
 db\Presets.lua
 src\Cache.lua
 lib\Audio.lua
+classic\src-Classes-base.lua
 src\Classes\Filter Types.lua
 src\Classes\Illusions.lua
 src\Classes\PVP Ranks.lua
