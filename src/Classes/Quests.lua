@@ -1383,19 +1383,6 @@ app.events.QUEST_TURNED_IN = function(questID)
 				MostRecentQuestTurnIns[6] = nil;
 			end
 		end
-		
-		-- From Classic:
-		local quest = SearchForField("questID", questID);
-		if #quest > 0 and not quest[1].repeatable then
-			CompletedQuests[questID] = true;
-			for questID,completed in pairs(DirtyQuests) do
-				app.QuestCompletionHelper(tonumber(questID));
-			end
-			wipe(DirtyQuests);
-		end
-		app:RefreshDataQuietly("QUEST_TURNED_IN", true);
-		
-		-- From Retail:
 		app.RefreshQuestInfo(questID);
 	end
 end
@@ -1983,6 +1970,19 @@ tinsert(app.EventHandlers.OnStartup, function()
 	app:RegisterEvent("CRITERIA_UPDATE");
 	app:RegisterEvent("LOOT_OPENED");
 end);
+else
+	-- Classic Implementation
+	app.RefreshQuestInfo = function(questID)
+		local quest = SearchForField("questID", questID);
+		if #quest > 0 and not quest[1].repeatable then
+			CompletedQuests[questID] = true;
+			for questID,completed in pairs(DirtyQuests) do
+				app.QuestCompletionHelper(tonumber(questID));
+			end
+			wipe(DirtyQuests);
+		end
+		app:RefreshDataQuietly("QUEST_TURNED_IN", true);
+	end
 end
 
 -- Event Handlers
