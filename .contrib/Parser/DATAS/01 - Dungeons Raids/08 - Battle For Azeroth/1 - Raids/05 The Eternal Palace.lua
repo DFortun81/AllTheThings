@@ -111,6 +111,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 				e(2353, {	-- Radiance of Azshara
 					["crs"] = { 152364 },	-- Radiance of Azshara
 					["g"] = {
+						i(169694),	-- Aqueous Reliquary
 						i(170163),	-- Technique: Glyph of the Dark Depths (RECIPE!)
 					},
 				}),
@@ -119,7 +120,16 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 					["g"] = {
 						i(169358),	-- Lightless Ambusher (PET!)
 					},
-				}),		
+				}),	
+				e(2359, {	-- The Queen's Court
+					["crs"] = {
+						152852,	-- Pashmar the Fanatical
+						152853,	-- Silivaz the Zealous
+					},
+					["g"] = {
+						i(169694),	-- Aqueous Reliquary
+					},
+				}),
 				e(2349, {	-- Za'qul, Harbinger of Ny'alotha
 					["crs"] = { 150859 },	-- Za'qul, Harbinger of Ny'alotha
 					["g"] = {	
@@ -209,7 +219,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 					e(2353, {	-- Radiance of Azshara
 						["crs"] = { 152364 },	-- Radiance of Azshara
 						["g"] = {
-							i(169694),	-- Aqueous Reliquary
 							i(168478),	-- Monstrosity's Shipbreaker
 							i(168475),	-- Bulwark of the Seaborn Avatar
 							i(168336),	-- Handmaiden's Cowl of Sacrifice
@@ -273,7 +282,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 							152853,	-- Silivaz the Zealous
 						},
 						["g"] = {
-							i(169694),	-- Aqueous Reliquary
 							i(168892),	-- Court Dagger of Sentencing
 							i(168898),	-- Pashmar's Finial
 							i(168896),	-- Stormtamer's Orb
@@ -389,7 +397,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 					["crs"] = { 152364 },	-- Radiance of Azshara
 					["g"] = {
 						ach(13767),	-- Fun Run
-						i(169694),	-- Aqueous Reliquary
 						i(168478),	-- Monstrosity's Shipbreaker
 						i(168475),	-- Bulwark of the Seaborn Avatar
 						i(168336),	-- Handmaiden's Cowl of Sacrifice
@@ -454,7 +461,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 					},
 					["g"] = {
 						ach(13633),	-- If It Please the Court
-						i(169694),	-- Aqueous Reliquary
 						i(168892),	-- Court Dagger of Sentencing
 						i(168898),	-- Pashmar's Finial
 						i(168896),	-- Stormtamer's Orb
@@ -566,7 +572,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 				e(2353, {	-- Radiance of Azshara
 					["crs"] = { 152364 },	-- Radiance of Azshara
 					["g"] = {
-						i(169694),	-- Aqueous Reliquary
 						i(168478),	-- Monstrosity's Shipbreaker
 						i(168475),	-- Bulwark of the Seaborn Avatar
 						i(168336),	-- Handmaiden's Cowl of Sacrifice
@@ -628,7 +633,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 						152853,	-- Silivaz the Zealous
 					},
 					["g"] = {
-						i(169694),	-- Aqueous Reliquary
 						i(168892),	-- Court Dagger of Sentencing
 						i(168898),	-- Pashmar's Finial
 						i(168896),	-- Stormtamer's Orb
@@ -745,7 +749,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 					["crs"] = { 152364 },	-- Radiance of Azshara
 					["g"] = {
 						ach(13727),	-- Mythic: Radiance of Azshara
-						i(169694),	-- Aqueous Reliquary
 						i(168478),	-- Monstrosity's Shipbreaker
 						i(168475),	-- Bulwark of the Seaborn Avatar
 						i(168336),	-- Handmaiden's Cowl of Sacrifice
@@ -810,7 +813,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 					},
 					["g"] = {
 						ach(13731),	-- Mythic:The Queen's Court
-						i(169694),	-- Aqueous Reliquary
 						i(168892),	-- Court Dagger of Sentencing
 						i(168898),	-- Pashmar's Finial
 						i(168896),	-- Stormtamer's Orb
