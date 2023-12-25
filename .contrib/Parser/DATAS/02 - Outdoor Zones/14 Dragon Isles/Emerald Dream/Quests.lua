@@ -493,7 +493,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 				q(77780, {	-- A Blossom Witnessed
-					["sourceQuests"] = { 76402 },	-- Amirdrassil, the Dream's Hope: Fyrakk
+					["sourceQuests"] = { 76401 },	-- Echo of the Firelands
+					-- also requires kill of Fyrakk
 					["provider"] = { "n", 211634 },	-- Tyrande Whisperwind
 					["coord"] = { 27.5, 31.4, EMERALD_DREAM },
 				}),

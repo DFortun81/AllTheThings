@@ -504,7 +504,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				q(74521, {	-- A Flame, Extinguished
 					["sourceQuests"] = { 72930 },	-- Stopping Sarkareth
-					-- also Requires kill of Sarkareth
+					-- also requires kill of Sarkareth
 					["provider"] = { "n", 201727 },	-- Ebyssian
 					["coord"] = { 48.0, 11.8, ZARALEK_CAVERN },
 				}),
