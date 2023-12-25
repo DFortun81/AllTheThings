@@ -1360,12 +1360,26 @@ root(ROOTS.Zones, {
 						["coord"] = { 32.5, 42.9, ICECROWN },
 						["qg"] = 30232,	-- The Bone Witch
 						["sourceQuest"] = 12999,	-- The Bone Witch
+						["groups"] = {
+							i(43090),	-- Fate Rune of Baneful Intent
+							i(43094),	-- Fate Rune of Night Invicibility
+							i(43134),	-- Fate Rune of Primal Energy
+							i(43135),	-- Fate Rune of Fleet Feet
+							i(43141),	-- Fate Rune of Unsurpassed Vigor
+						},
 					}),
 					q(13093, {	-- Reading the Bones (repeatable)
 						["coord"] = { 32.5, 42.9, ICECROWN },
 						["qg"] = 30232,	-- The Bone Witch
 						["repeatable"] = true,
 						["sourceQuest"] = 13092,	-- Reading the Bones
+						["sym"] = {{"select","itemID",
+							43090,	-- Fate Rune of Baneful Intent
+							43094,	-- Fate Rune of Night Invicibility
+							43134,	-- Fate Rune of Primal Energy
+							43135,	-- Fate Rune of Fleet Feet
+							43141,	-- Fate Rune of Unsurpassed Vigor
+						}},
 					}),
 					q(13321, {	-- Retest Now (A)
 						["races"] = ALLIANCE_ONLY,

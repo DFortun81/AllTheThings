@@ -40,13 +40,15 @@ i(0, 7769);			-- CLASSIC: Imbue Bracers - Minor Wisdom OLD
 i(0, 7855);			-- CLASSIC: Imbue Chest - Absorb
 i(0, 7853);			-- CLASSIC: Imbue Chest - Lesser Spirit
 i(0, 7448);			-- CLASSIC: Imbue Chest - Lesser Absorb
-i(0, 7865);			-- CLASSIC: Imbue Cloak - Lesser Protection
 i(0, 7439);			-- CLASSIC: Imbue Cloak - Minor Resistance
-i(0, 7434);			-- CLASSIC: Imbue Weapon - Beastslayer
 i(6343, 7451);		-- CLASSIC: Imbue Chest - Minor Spirit
 i(6376, 7863);		-- Formula: Enchant Boots - Minor Stamina
 i(6222, 0);			-- Formula: Imbue Chest - Minor Spirit
 i(6345, 0);			-- Formula: Imbue Cloak - Protection
+-- #if BEFORE TBC
+i(0, 7434);			-- CLASSIC: Imbue Weapon - Beastslayer
+i(0, 7865);			-- CLASSIC: Imbue Cloak - Lesser Protection
+-- #end
 
 -----------------
 -- PATCH 0.9.0 --
