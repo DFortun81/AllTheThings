@@ -14669,6 +14669,11 @@ function app:GetWindow(suffix, parent, onUpdate)
 	end
 	return window;
 end
+app.events.QUEST_REMOVED = function(questID)
+	-- app.PrintDebug("QUEST_REMOVED",questID)
+	-- Make sure windows refresh incase any show the removed quest
+	app:RefreshWindows();
+end
 end)();
 
 do	-- Main Data

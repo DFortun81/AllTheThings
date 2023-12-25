@@ -1898,11 +1898,7 @@ app.events.QUEST_LOG_UPDATE = function()
 	-- app.PrintDebug("QUEST_LOG_UPDATE")
 	app.RefreshQuestInfo();
 end
-app.events.QUEST_REMOVED = function(questID)
-	-- app.PrintDebug("QUEST_REMOVED",questID)
-	-- Make sure windows refresh incase any show the removed quest
-	app:RefreshWindows();
-end
+
 app.events.QUEST_ACCEPTED = function(questID)
 	-- app.PrintDebug("QUEST_ACCEPTED",questID)
 	if questID then
