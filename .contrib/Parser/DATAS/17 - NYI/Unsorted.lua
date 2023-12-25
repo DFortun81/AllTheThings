@@ -1818,7 +1818,6 @@ root(ROOTS.Unsorted, {
 				i(192769),	-- Cracked Spear
 				i(197853),	-- Critter Kebab
 				i(191422),	-- Crystal Magical Lockpick
-				i(197856),	-- Cup o' Wakeup
 				i(192182),	-- Decay to Elements
 				i(200799),	-- Decaying Pelt Bolt
 				i(198541),	-- Depleted Violet Vapors
@@ -1865,7 +1864,6 @@ root(ROOTS.Unsorted, {
 				i(200704),	-- Gratona Seed
 				i(196583),	-- Greenberry Toast
 				i(200607),	-- Half-Eaten Banana
-				i(197848),	-- Hearty Squash Stew
 				i(200845),	-- Heavily Deformed Mace
 				i(200784),	-- Hunting Trophies
 				i(200589),	-- Hydro Life Seed
@@ -1882,7 +1880,6 @@ root(ROOTS.Unsorted, {
 				i(196182),	-- Journal Entry
 				i(198840),	-- Kalecite Cluster
 				i(200935),	-- Large Egg Shell
-				i(200778),	-- Lava Blowing for Dummies
 				i(200587),	-- Leatherbound Expedition Note
 				i(200698),	-- Ley Orb
 				i(200702),	-- Magenta Titian Extract
@@ -1928,7 +1925,6 @@ root(ROOTS.Unsorted, {
 				i(191861),	-- Rocdrop Carapace
 				i(191864),	-- Rocdrop Pudgepart
 				i(200796),	-- Rotting Wood Totem
-				i(197858),	-- Salt-Baked Scalebelly
 				i(201379),	-- Scalewatch Cage Key
 				i(200619),	-- Scaralesh's Special
 				i(194887),	-- Scrap Trap
@@ -1950,12 +1946,10 @@ root(ROOTS.Unsorted, {
 				i(191413),	-- Sturdy Expedition Pick
 				i(192130),	-- Sundered Flame Weapon Mold
 				i(195464),	-- Sweetened Broadhoof Milk
-				i(197857),	-- Swog Slurp
 				i(196582),	-- Syrup-Drenched Toast
 				i(200639),	-- Talisman of Ohn'ahra
 				i(200637),	-- Talisman of the Maruuk
 				i(198842),	-- Tallstrider Feather
-				i(200792),	-- Taxidermied Catch
 				i(194886),	-- Tazenrath's Torn Wing
 				i(201436),	-- Temporally-Locked Sands
 				i(200693),	-- Terata Leaves
@@ -1970,7 +1964,6 @@ root(ROOTS.Unsorted, {
 				i(198453),	-- Unstable Azerite Grenade
 				i(200951),	-- Valdrakken Critter Snacks
 				i(200703),	-- Vine Flower Fibers
-				i(200819),	-- Volatile Sparks
 				i(200870),	-- Vorquin Essence
 				i(194688),	-- Vorquin Filet
 				i(201438),	-- Weary Sands

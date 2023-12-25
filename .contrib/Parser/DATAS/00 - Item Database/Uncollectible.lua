@@ -581,9 +581,12 @@ i(200769);	-- Ceramic Shards
 i(200772);	-- Knowledge Discs
 i(200773);	-- Otherworldly Artifact
 i(200777);	-- Obsidian Shards
+i(200778);	-- Lava Blowing for Dummies
 i(200780);	-- Dragon Horns
+i(200792);	-- Taxidermied Catch
 i(200802);	-- Signet of the Dragonflights
 i(200806);	-- Woodcarving Stone
+i(200819);	-- Volatile Sparks
 i(200820);	-- Dry Wood Log
 i(200822);	-- Jar of Ashes
 i(200825);	-- Assorted Debris

@@ -54,6 +54,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(198047),	-- Kul Tiran Red
 				},
 			}),
+			n(187399, {	-- Maribeth <Innkeeper>
+				["coord"] = { 47.7, 83.2, THE_WAKING_SHORES },
+				["g"] = {
+					i(197848),	-- Hearty Squash Stew
+					i(197856),	-- Cup o' Wakeup
+					i(197857),	-- Swog Slurp
+					i(197858),	-- Salt-Baked Scalebelly
+				},
+			}),
 			n(191135, {	-- Yries Lightfingers
 				["coord"] = { 26.4, 55.4, THE_WAKING_SHORES },
 				["g"] = {
