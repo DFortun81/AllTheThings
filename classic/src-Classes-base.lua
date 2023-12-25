@@ -115,7 +115,7 @@ local DefaultFields = {
 	end,
 	-- Whether or not something is repeatable.
 	["repeatable"] = function(t)
-		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
+		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly;
 	end,
 	["costProgress"] = returnZero,
     ["costTotal"] = returnZero,

@@ -10504,7 +10504,7 @@ local npcFields = {
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 	["repeatableAsQuest"] = function(t)
-		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
+		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly;
 	end,
 	["altcollectedAsQuest"] = function(t)
 		if t.altQuests then
@@ -10732,7 +10732,7 @@ local objectFields = {
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 	["repeatableAsQuest"] = function(t)
-		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
+		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly;
 	end,
 	["altcollectedAsQuest"] = function(t)
 		if t.altQuests then
