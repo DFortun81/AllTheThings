@@ -45,7 +45,6 @@ root(ROOTS.NeverImplemented, {
 				tier(DF_TIER, {
 					-- 10.0.0
 					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
-						r(384311),	-- Bronze Fireflight
 						r(382581),	-- Opening
 						r(382352),	-- Perfectly Calibrated Lenses
 						r(382360),	-- Tinker Removal Kit

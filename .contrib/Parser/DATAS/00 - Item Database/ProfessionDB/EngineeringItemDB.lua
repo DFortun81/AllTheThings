@@ -211,7 +211,6 @@ i(0, 387246);	-- Zapthrottle Soul Inhaler
 -- QUEST --
 i(0, 377983);	-- Heart in a Bottle
 -- NYI --
-i(0, 384311);	-- Bronze Fireflight
 i(0, 382581);	-- Opening
 i(0, 382352);	-- Perfectly Calibrated Lenses
 i(0, 382360);	-- Tinker Removal Kit
@@ -224,7 +223,7 @@ i(199292, 382406);	-- Convincingly Realistic Jumper Cables
 i(199291, 382405);	-- Draconic Gunshoes
 i(199277, 0);	-- Battle-Ready Binoculars
 i(199279, 0);	-- Bottomless Stonecrust Ore Satchel
-i(199296, 0);	-- Bronze Fireflight
+i(199296, 384314);	-- Bronze Fireflight
 i(199250, 0);	-- Calibrated Safety Switch
 i(199294, 0);	-- Atomic Recalibrator
 i(199266, 0);	-- Centralized Precipitation Emitter
