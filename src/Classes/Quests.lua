@@ -99,11 +99,9 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 	app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 		-- app.PrintDebug("QUEST_DATA_LOAD_RESULT",questID,success)
 		QuestsRequested[questID] = nil;
+		
 		-- Store the Quest title if successful, regardless of already being cached
-		if success then
-			-- trigger a slight delayed refresh to visible ATT windows since a quest name was now populated
-			app:RefreshWindows();
-		else
+		if not success then
 			-- this quest name cannot be populated by the server
 			-- app.PrintDebug("No Server QuestData",questID)
 			rawset(QuestRetries, questID, 121);
@@ -1330,31 +1328,41 @@ app.events.CRITERIA_UPDATE = softRefresh;
 app.events.QUEST_REMOVED = softRefresh;
 app.events.QUEST_WATCH_UPDATE = softRefresh;
 app.events.QUEST_ACCEPTED = function(questLogIndex, questID)
-	if not questID then questID = questLogIndex; end
-	if questID then rawset(QuestNameFromID, questID, nil); end
-	if app.Settings.Collectibles.Quests or app.Settings.Collectibles.QuestsLocked then
-		local nextQuests = SearchForField("nextQuests", questID);
-		if #nextQuests > 0 then
-			app:StartATTCoroutine("CheckNextQuests::" .. questID, function()
-				for _,group in pairs(nextQuests) do
-					if not group.collected and app.RecursiveCharacterRequirementsFilter(group) and app.RecursiveUnobtainableFilter(group) then
-						coroutine.yield();
-						while not group.text do
+	if not questID then questID = questLogIndex; end	-- NOTE: In Classic there's an extra parameter.
+	softRefresh();
+	if questID then
+		-- app.PrintDebug("QUEST_ACCEPTED",questID)
+		rawset(QuestNameFromID, questID, nil);
+		PrintQuestInfo(questID, true);
+		
+		-- Check if this quest is a nextQuest of a non-collected breadcrumb (users may care to get the breadcrumb before it becomes locked, simply due to tracking quests as well)
+		if app.Settings.Collectibles.Quests or app.Settings.Collectibles.QuestsLocked then
+			local nextQuests = SearchForField("nextQuests", questID);
+			if #nextQuests > 0 then
+				app:StartATTCoroutine("CheckNextQuests::" .. questID, function()
+					for _,group in pairs(nextQuests) do
+						if not group.collected and app.RecursiveCharacterRequirementsFilter(group) and app.RecursiveUnobtainableFilter(group) then
 							coroutine.yield();
+							while not group.text do
+								coroutine.yield();
+							end
+							
+							app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
+								QuestNameFromID[questID], app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
+								group.text, app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)))
+							app.Audio:PlayRemoveSound()
 						end
-						
-						app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
-							title, app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
-							group.text, app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)))
-						app.Audio:PlayRemoveSound();
 					end
-				end
-			end);
+				end);
+			end
 		end
 	end
-	softRefresh();
 end
 app.events.QUEST_LOG_UPDATE = function()
+	-- Retail:
+	--app.RefreshQuestInfo();
+	
+	-- Classic:
 	app:UnregisterEvent("QUEST_LOG_UPDATE");
 	if C_QuestLog_GetAllCompletedQuestIDs then
 		local completedQuests = C_QuestLog_GetAllCompletedQuestIDs();
@@ -1890,45 +1898,6 @@ end
 -- Will attempt to queue populating the rewards of the quest object into itself or request itself to be loaded
 app.TryPopulateQuestRewards = function(questObject)
 	app.FunctionRunner.Run(TryPopulateQuestRewards, questObject);
-end
-
-
-
-app.events.QUEST_LOG_UPDATE = function()
-	-- app.PrintDebug("QUEST_LOG_UPDATE")
-	app.RefreshQuestInfo();
-end
-
-app.events.QUEST_ACCEPTED = function(questID)
-	-- app.PrintDebug("QUEST_ACCEPTED",questID)
-	if questID then
-		PrintQuestInfo(questID, true);
-		-- Check if this quest is a nextQuest of a non-collected breadcrumb (users may care to get the breadcrumb before it becomes locked, simply due to tracking quests as well)
-		if app.Settings.Collectibles.Quests or app.Settings.Collectibles.QuestsLocked then
-			local nextQuests = SearchForField("nextQuests", questID);
-			if #nextQuests > 0 then
-				app:StartATTCoroutine("CheckNextQuests::" .. questID, function()
-					for _,group in pairs(nextQuests) do
-						if not group.collected and app.RecursiveCharacterRequirementsFilter(group) and app.RecursiveUnobtainableFilter(group) then
-							coroutine.yield();
-							while not group.text do
-								coroutine.yield();
-							end
-							
-							app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
-								QuestNameFromID[questID],
-								app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
-								group.text,
-								app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)))
-							app.Audio:PlayRemoveSound()
-						end
-					end
-				end);
-			end
-		end
-		-- Make sure windows refresh incase any show the picked up quest
-		app:RefreshWindows();
-	end
 end
 else
 	-- Classic Implementation

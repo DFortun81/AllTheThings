@@ -14662,17 +14662,30 @@ function app:GetWindow(suffix, parent, onUpdate)
 			-- app.PrintDebug("StopProcessing",suffix)
 			-- window.CloseButton:SetNormalTexture(closeTexture);
 		end
+		
+		-- Setup the Event Handlers
+		local handlers = {};
+		window:SetScript("OnEvent", function(self, e, ...)
+			local handler = handlers[e];
+			if handler then
+				handler(self, ...);
+			else
+				self:Update();
+			end
+		end);
+		local refreshWindow = function() window:Refresh(); end;
+		handlers.QUEST_DATA_LOAD_RESULT = refreshWindow;
+		handlers.QUEST_ACCEPTED = refreshWindow;
+		handlers.QUEST_REMOVED = refreshWindow;
+		window:RegisterEvent("QUEST_ACCEPTED");
+		window:RegisterEvent("QUEST_DATA_LOAD_RESULT");
+		window:RegisterEvent("QUEST_REMOVED");
 
 		-- Ensure the window updates itself when opened for the first time
 		window.HasPendingUpdate = true;
 		window:Update();
 	end
 	return window;
-end
-app.events.QUEST_REMOVED = function(questID)
-	-- app.PrintDebug("QUEST_REMOVED",questID)
-	-- Make sure windows refresh incase any show the removed quest
-	app:RefreshWindows();
 end
 end)();
 
