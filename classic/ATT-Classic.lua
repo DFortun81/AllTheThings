@@ -5923,7 +5923,8 @@ local arrOfNodes = {
 	2149,	-- Ohn'ahran Plains [The Nokhud Offensive] (has FPs inside)
 	2175,	-- Zaralek Cavern
 };
-app.CacheFlightPathData = function()
+tinsert(app.EventHandlers.OnReady, function()
+	-- Cache Flight Path Data once the addon is ready.
 	local newNodes, anyNew = {}, false;
 	for i,mapID in ipairs(arrOfNodes) do
 		local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
@@ -5946,7 +5947,7 @@ app.CacheFlightPathData = function()
 		end
 		SetDataMember("NewFlightPathData", newNodes);
 	end
-end
+end);
 app.CacheFlightPathDataForMap = function(mapID, nodes)
 	local count = 0;
 	local temp = {};
@@ -13104,13 +13105,10 @@ SlashCmdList["ATTWHO"] = function(cmd)
 end
 
 -- Game Events that trigger computation updates.
-app.events.PLAYER_LEVEL_UP = function(newLevel)
-	app.Level = newLevel;
-	app:RefreshDataCompletely("PLAYER_LEVEL_UP");
-end
 
 -- Startup Event
 app:RegisterEvent("ADDON_LOADED");
+app:RegisterEvent("PLAYER_LEVEL_UP");
 app:RegisterEvent("VARIABLES_LOADED");
 app.events.ADDON_LOADED = function(addonName)
 	-- Only execute for this addon.
@@ -13369,6 +13367,14 @@ app.events.ADDON_LOADED = function(addonName)
 	-- Tooltip Settings
 	app.Settings:Initialize();
 end
+app.events.PLAYER_LEVEL_UP = function(newLevel)
+	app.Level = newLevel;
+	
+	-- Execute the OnPlayerLevelUp handlers.
+	for i,handler in ipairs(app.EventHandlers.OnPlayerLevelUp) do
+		handler();
+	end
+end
 app.events.VARIABLES_LOADED = function()
 	app:StartATTCoroutine("Startup", function()
 		coroutine.yield();
@@ -13424,9 +13430,6 @@ app.events.VARIABLES_LOADED = function()
 			windowSettings.MiniList = oldMiniListData;
 		end
 		LoadSettingsForWindows(windowSettings);
-
-		-- Now that all the windows are loaded, cache flight paths!
-		app.CacheFlightPathData();
 
 		-- Execute the OnReady handlers.
 		for i,handler in ipairs(app.EventHandlers.OnReady) do

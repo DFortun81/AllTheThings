@@ -583,9 +583,7 @@ settings.UpdateMode = function(self)
 	else
 		app.PvPFilter = app.NoFilter;
 	end
-	app:UnregisterEvent("PLAYER_LEVEL_UP");
 	if self:Get("Filter:ByLevel") and not self:Get("DebugMode") then
-		app:RegisterEvent("PLAYER_LEVEL_UP");
 		app.GroupRequirementsFilter = app.FilterGroupsByLevel;
 	else
 		app.GroupRequirementsFilter = app.NoFilter;
@@ -601,6 +599,12 @@ settings.UpdateMode = function(self)
 		app:RegisterEvent("TAXIMAP_OPENED");
 	end
 end
+
+tinsert(app.EventHandlers.OnPlayerLevelUp, function()
+	if settings:Get("Filter:ByLevel") then
+		app:RefreshDataCompletely("PLAYER_LEVEL_UP");
+	end
+end);
 
 -- The ALL THE THINGS Epic Logo!
 local f = settings:CreateTexture(nil, "ARTWORK");
