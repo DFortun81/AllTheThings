@@ -24,6 +24,9 @@ local L = {
 	["REQUIRES_PVP"] = "|CFF00FFDEThis may require participation in PvP.|r";
 	["PLEASE_REPORT_MESSAGE"] = "Please report this to the ATT Discord in #retail-errors! Thanks!";
 	["REPORT_TIP"] = "\n("..CTRL_KEY_TEXT.."+C to copy multiline report to your clipboard)";
+	["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"] = "Quest '%s' %s will prevent collection of Breadcrumb Quest '%s' %s";
+	["REPORT_INACCURATE_QUEST"] = "Wrong Quest Info! (Click to Report)";
+	["ITEM_GIVES_REP"] = "Provides Reputation with '";
 
 	-- Binding Localizations
 	["TOGGLE_ACCOUNT_MODE"] = "Toggle Account Mode";
