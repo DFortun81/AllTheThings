@@ -29,15 +29,6 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(105810),	-- Buc-Zakai Burning Hood			(Ordos)
 			ig(105808),	-- Damien's Ice-Vein Mask			(Ordos)
-
-			ig(93106),	-- Brewfather Cowl					(MoP Scenario)
-			ig(89493),	-- Brewmoon Cowl					(MoP Scenario)
-			ig(92871),	-- Bubblebrew Cowl					(MoP Scenario)
-			ig(92868),	-- Cordwoven Cowl					(MoP Scenario)
-			ig(89490),	-- Firewool Cowl					(MoP Scenario)
-			ig(98230),	-- Heartlander's Cowl				(MoP Scenario)
-			ig(98195),	-- Jinyu Seer's Cowl				(MoP Scenario)
-			ig(93071),	-- Yak Wool Cowl					(MoP Scenario)
 		}),
 		filter(LEATHER, {
 			ig(114264),	-- Bloodthorn Hood					(NYI)
@@ -50,15 +41,6 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(105806),	-- Circlet of the Panser			(Ordos)
 			ig(105803),	-- Stickney's Grey-Shade Hood		(Ordos)
-
-			ig(98205),	-- Ale-Boiled Hood					(MoP Scenario)
-			ig(89471),	-- Forgotten Hood					(MoP Scenario)
-			ig(89480),	-- Hozen-Crafted Hood				(MoP Scenario)
-			ig(92849),	-- Hozen-Speed Hood					(MoP Scenario)
-			ig(93081),	-- Hozen-Stitched Hood				(MoP Scenario)
-			ig(92858),	-- Jinyu-Polished Hood				(MoP Scenario)
-			ig(93052),	-- Mogubreaker Hood					(MoP Scenario)
-			ig(98176),	-- Tidesplitter Hood				(MoP Scenario)
 		}),
 		filter(MAIL, {
 			ig(114389), -- Element-Binder Helm				(NYI)
@@ -66,20 +48,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(121508),	-- Stormborn Crown					(NYI)
 
 			ig(134624),	-- Firebrand Helm					(Removed)
-			ig(134680),	-- Greenhorn's Helm					(Removed)
 			ig(134798),	-- Ironbranded Ringmail Helm		(Removed)
 
 			ig(105809),	-- Crest of Burning Deeds			(Ordos)
 			ig(105811),	-- Olivia's Graceful Gaze			(Ordos)
-
-			ig(92842),	-- Danio-Scale Helm					(MoP Scenario)
-			ig(92833),	-- Earthstriker Helm				(MoP Scenario)
-			ig(98213),	-- Mountaineer's Helm				(MoP Scenario)
-			ig(98184),	-- Perpetual Static Helm			(MoP Scenario)
-			ig(89464),	-- Scarshell Helm					(MoP Scenario)
-			ig(89455),	-- Stormbrew Helm					(MoP Scenario)
-			ig(93060),	-- Stormshaper Helm					(MoP Scenario)
-			ig(93089),	-- Swashbuckling Helm				(MoP Scenario)
 		}),
 		filter(PLATE, {
 			ig(121506),	-- Dreadsworn Crown					(NYI)
@@ -97,16 +69,6 @@ local QUANTUM_GROUP = sharedData({
 			ig(105804),	-- Aladya's Spiritfire Greathelm	(Ordos)
 			ig(105805),	-- Dominik's Casque of Raging Flame	(Ordos)
 			ig(105807),	-- Magdalena's Murderous Crown		(Ordos)
-
-			ig(92818),	-- Bladesnap Helm					(MoP Scenario)
-			ig(98242),	-- Doubtcrusher Helm				(MoP Scenario)
-			ig(89440),	-- Greenstone Helm					(MoP Scenario)
-			ig(92825),	-- Jinyu-Forged Helm				(MoP Scenario)
-			ig(98221),	-- Lightning Pillar Helm			(MoP Scenario)
-			ig(93118),	-- Lightning Rod Helm				(MoP Scenario)
-			ig(89447),	-- Mogu-Wrought Helm				(MoP Scenario)
-			ig(98253),	-- Thunder Bastion Helm				(MoP Scenario)
-			ig(93097),	-- Yaungolian Helm					(MoP Scenario)
 		}),
 	}),
 	i(208062, {	-- Quantum Shoulders
@@ -120,15 +82,6 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(105795),	-- Bo He Me's Deathwind Mantle		(Ordos)
 			ig(105797),	-- Shay-Nii's Popping Shoulderpads	(Ordos)
-
-			ig(93108),	-- Brewfather Shoulderpads			(MoP Scenario)
-			ig(89498),	-- Brewmoon Shoulderpads			(MoP Scenario)
-			ig(92876),	-- Bubblebrew Shoulderpads			(MoP Scenario)
-			ig(92863),	-- Cordwoven Shoulderpads			(MoP Scenario)
-			ig(89485),	-- Firewool Shoulderpads			(MoP Scenario)
-			ig(98232),	-- Heartlander's Shoulderpads		(MoP Scenario)
-			ig(98197),	-- Jinyu Seer's Shoulderpads		(MoP Scenario)
-			ig(93073),	-- Yak Wool Shoulderpads			(MoP Scenario)
 		}),
 		filter(LEATHER, {
 			ig(114272),	-- Bloodthorn Spaulders				(NYI)
@@ -141,36 +94,17 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(105798),	-- Flame Healer's Shoulderguards	(Ordos)
 			ig(105801),	-- Spaulders of Dominating Dreams	(Ordos)
-
-			ig(98207),	-- Ale-Boiled Shoulders				(MoP Scenario)
-			ig(89469),	-- Forgotten Shoulders				(MoP Scenario)
-			ig(89482),	-- Hozen-Crafted Shoulders			(MoP Scenario)
-			ig(92847),	-- Hozen-Speed Shoulders			(MoP Scenario)
-			ig(93083),	-- Hozen-Stitched Shoulders			(MoP Scenario)
-			ig(92860),	-- Jinyu-Polished Shoulders			(MoP Scenario)
-			ig(93054),	-- Mogubreaker Shoulders			(MoP Scenario)
-			ig(98178),	-- Tidesplitter Shoulders			(MoP Scenario)
 		}),
 		filter(MAIL, {
 			ig(18320),	-- Demonheart Spaulders				(NYI)
 			ig(114273),	-- Leafscale Spaulders				(NYI)
 
 			ig(134734),	-- Frigidlink Spaulders				(Removed)
-			ig(134682),	-- Greenhorn's Spaulders			(Removed)
 			ig(134765),	-- Overgrown Shoulderguards			(Removed)
 			ig(134706),	-- Surging Spaulders				(Removed)
 
 			ig(105800),	-- Firearrow Shoulderpads			(Ordos)
 			ig(105799),	-- Fleshsmoke Chain Shoulders		(Ordos)
-
-			ig(92844),	-- Danio-Scale Spaulders			(MoP Scenario)
-			ig(92831),	-- Earthstriker Spaulders			(MoP Scenario)
-			ig(98215),	-- Mountaineer's Spaulders			(MoP Scenario)
-			ig(98186),	-- Perpetual Static Spaulders		(MoP Scenario)
-			ig(89466),	-- Scarshell Spaulders				(MoP Scenario)
-			ig(89453),	-- Stormbrew Spaulders				(MoP Scenario)
-			ig(93062),	-- Stormshaper Spaulders			(MoP Scenario)
-			ig(93091),	-- Swashbuckling Spaulders			(MoP Scenario)
 		}),
 		filter(PLATE, {
 			ig(108215),	-- Peerless Draenic Steel Shoulders	(NYI)
@@ -185,16 +119,6 @@ local QUANTUM_GROUP = sharedData({
 			ig(105796),	-- Rossi's Rosin-Soaked Shoulderplates(Ordos)
 			ig(105794),	-- Starry Spaulders of Durability	(Ordos)
 			ig(105802),	-- Yaungol Deathcult Shoulderguards	(Ordos)
-
-			ig(92816),	-- Bladesnap Pauldrons				(MoP Scenario)
-			ig(98244),	-- Doubtcrusher Pauldrons			(MoP Scenario)
-			ig(89438),	-- Greenstone Pauldrons				(MoP Scenario)
-			ig(92827),	-- Jinyu-Forged Pauldrons			(MoP Scenario)
-			ig(98223),	-- Lightning Pillar Pauldrons		(MoP Scenario)
-			ig(93120),	-- Lightning Rod Pauldrons			(MoP Scenario)
-			ig(89449),	-- Mogu-Wrought Pauldrons			(MoP Scenario)
-			ig(98255),	-- Thunder Bastion Pauldrons		(MoP Scenario)
-			ig(93099),	-- Yaungolian Pauldrons				(MoP Scenario)
 		}),
 	}),
 	i(208064, {	-- Quantum Chestpiece
@@ -210,15 +134,6 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(105774),	-- Catia's Flowing Robes			(Ordos)
 			ig(105773),	-- Ulmaas' Robes of Crushing Magma	(Ordos)
-
-			ig(93103),	-- Brewfather Robe					(MoP Scenario)
-			ig(89496),	-- Brewmoon Robe					(MoP Scenario)
-			ig(92874),	-- Bubblebrew Robe					(MoP Scenario)
-			ig(92865),	-- Cordwoven Robe					(MoP Scenario)
-			ig(89487),	-- Firewool Robe					(MoP Scenario)
-			ig(98227),	-- Heartlander's Robe				(MoP Scenario)
-			ig(98192),	-- Jinyu Seer's Robe				(MoP Scenario)
-			ig(93068),	-- Yak Wool Robe					(MoP Scenario)
 		}),
 		filter(LEATHER, {
 			ig(114251),	-- Bloodthorn Chestguard 			(NYI)
@@ -233,15 +148,6 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(105768),	-- Pamela's Muuscat Wrap			(Ordos)
 			ig(105770),	-- Zoo-Per's Superior Chestguard	(Ordos)
-
-			ig(98202),	-- Ale-Boiled Jerkin				(MoP Scenario)
-			ig(89470),	-- Forgotten Jerkin					(MoP Scenario)
-			ig(89481),	-- Hozen-Crafted Jerkin				(MoP Scenario)
-			ig(92848),	-- Hozen-Speed Jerkin				(MoP Scenario)
-			ig(93078),	-- Hozen-Stitched Jerkin			(MoP Scenario)
-			ig(92859),	-- Jinyu-Polished Jerkin			(MoP Scenario)
-			ig(93049),	-- Mogubreaker Jerkin				(MoP Scenario)
-			ig(98173),	-- Tidesplitter Jerkin				(MoP Scenario)
 		}),
 		filter(MAIL, {
 			ig(114315),	-- Chestguard of Meditative Focus	(NYI)
@@ -253,15 +159,6 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(105771),	-- Chestguard of Pyrrhic Immolation	(Ordos)
 			ig(105772),	-- Moonhee's Mean Vest				(Ordos)
-
-			ig(92845),	-- Danio-Scale Vest					(MoP Scenario)
-			ig(92830),	-- Earthstriker Vest				(MoP Scenario)
-			ig(98210),	-- Mountaineer's Vest				(MoP Scenario)
-			ig(98181),	-- Perpetual Static Vest			(MoP Scenario)
-			ig(89467),	-- Scarshell Vest					(MoP Scenario)
-			ig(89452),	-- Stormbrew Vest					(MoP Scenario)
-			ig(93057),	-- Stormshaper Vest					(MoP Scenario)
-			ig(93086),	-- Swashbuckling Vest				(MoP Scenario)
 		}),
 		filter(PLATE, {
 			ig(108078),	-- Hardened Draenic Steel Chestplate(NYI)
@@ -276,16 +173,6 @@ local QUANTUM_GROUP = sharedData({
 			ig(105775),	-- Gleaming Eye Spellplate			(Ordos)
 			ig(105767),	-- Hoodrych's Bloodied Chestplate	(Ordos)
 			ig(105769),	-- Omegal's Crushing Carapace		(Ordos)
-
-			ig(92821),	-- Bladesnap Breastplate			(MoP Scenario)
-			ig(98239),	-- Doubtcrusher Breastplate			(MoP Scenario)
-			ig(89443),	-- Greenstone Breastplate			(MoP Scenario)
-			ig(92822),	-- Jinyu-Forged Breastplate			(MoP Scenario)
-			ig(98218),	-- Lightning Pillar Breastplate		(MoP Scenario)
-			ig(93115),	-- Lightning Rod Breastplate		(MoP Scenario)
-			ig(89444),	-- Mogu-Wrought Breastplate			(MoP Scenario)
-			ig(98250),	-- Thunder Bastion Breastplate		(MoP Scenario)
-			ig(93094),	-- Yaungolian Breastplate			(MoP Scenario)
 		}),
 	}),
 	i(208063, {	-- Quantum Gloves
@@ -298,15 +185,6 @@ local QUANTUM_GROUP = sharedData({
 			ig(134669),	-- Auxiliary's Handwraps			(Removed)
 			ig(134786),	-- Entrenched Handwraps				(Removed)
 			ig(134723),	-- Icyweave Gloves					(Removed)
-
-			ig(93105),	-- Brewfather Handwraps				(MoP Scenario)
-			ig(89494),	-- Brewmoon Handwraps				(MoP Scenario)
-			ig(92872),	-- Bubblebrew Handwraps				(MoP Scenario)
-			ig(92867),	-- Cordwoven Handwraps				(MoP Scenario)
-			ig(89489),	-- Firewool Handwraps				(MoP Scenario)
-			ig(98229),	-- Heartlander's Handwraps			(MoP Scenario)
-			ig(98194),	-- Jinyu Seer's Handwraps			(MoP Scenario)
-			ig(93070),	-- Yak Wool Handwraps				(MoP Scenario)
 		}),
 		filter(LEATHER, {
 			ig(114260),	-- Bloodthorn Gauntlets				(NYI)
@@ -315,15 +193,6 @@ local QUANTUM_GROUP = sharedData({
 			ig(134730),	-- Frosthide Gloves					(Removed)
 			ig(134675),	-- Rookie's Gloves					(Removed)
 			ig(134793),	-- Ruinous Gloves					(Removed)
-
-			ig(98204),	-- Ale-Boiled Gloves				(MoP Scenario)
-			ig(89472),	-- Forgotten Gloves					(MoP Scenario)
-			ig(89479),	-- Hozen-Crafted Gloves				(MoP Scenario)
-			ig(92850),	-- Hozen-Speed Gloves				(MoP Scenario)
-			ig(93080),	-- Hozen-Stitched Gloves			(MoP Scenario)
-			ig(92857),	-- Jinyu-Polished Gloves			(MoP Scenario)
-			ig(93051),	-- Mogubreaker Gloves				(MoP Scenario)
-			ig(98175),	-- Tidesplitter Gloves				(MoP Scenario)
 		}),
 		filter(MAIL, {
 			ig(114385),	-- Element-Binder Gauntlets			(NYI)
@@ -331,17 +200,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(4012),	-- Sterling Chain Gloves			(NYI)
 
 			ig(134733),	-- Frigidlink Gauntlets				(Removed)
-			ig(134679),	-- Greenhorn's Gauntlets			(Removed)
 			ig(134797),	-- Ironbranded Gauntlets			(Removed)
-
-			ig(92840),	-- Danio-Scale Gauntlets			(MoP Scenario)
-			ig(92835),	-- Earthstriker Gauntlets			(MoP Scenario)
-			ig(98212),	-- Mountaineer's Gauntlets			(MoP Scenario)
-			ig(98183),	-- Perpetual Static Gauntlets		(MoP Scenario)
-			ig(89462),	-- Scarshell Gauntlets				(MoP Scenario)
-			ig(89457),	-- Stormbrew Gauntlets				(MoP Scenario)
-			ig(93059),	-- Stormshaper Gauntlets			(MoP Scenario)
-			ig(93088),	-- Swashbuckling Gauntlets			(MoP Scenario)
 		}),
 		filter(PLATE, {
 			ig(114386),	-- Gauntlets of Grievous Storms		(NYI)
@@ -360,16 +219,6 @@ local QUANTUM_GROUP = sharedData({
 			ig(134736),	-- Chillplate Gauntlets				(Removed)
 			ig(134683),	-- Front-Line Gauntlets				(Removed)
 			ig(134801),	-- Tempered Gauntlets				(Removed)
-
-			ig(92820),	-- Bladesnap Gauntlets				(MoP Scenario)
-			ig(98241),	-- Doubtcrusher Gauntlets			(MoP Scenario)
-			ig(89442),	-- Greenstone Gauntlets				(MoP Scenario)
-			ig(92823),	-- Jinyu-Forged Gauntlets			(MoP Scenario)
-			ig(98220),	-- Lightning Pillar Gauntlets		(MoP Scenario)
-			ig(93117),	-- Lightning Rod Gauntlets			(MoP Scenario)
-			ig(89445),	-- Mogu-Wrought Gauntlets			(MoP Scenario)
-			ig(93096),	-- Yaungolian Gauntlets				(MoP Scenario)
-			ig(98252),	-- Thunder Bastion Gauntlets		(MoP Scenario)
 		}),
 	}),
 	i(208065, {	-- Quantum Legs
@@ -385,15 +234,6 @@ local QUANTUM_GROUP = sharedData({
 			ig(134752),	-- Veiled Leggings					(Removed)
 
 			ig(105757),	-- Shipley's Shady Silks			(Ordos)
-
-			ig(93107),	-- Brewfather Leggings				(MoP Scenario)
-			ig(89495),	-- Brewmoon Leggings				(MoP Scenario)
-			ig(92873),	-- Bubblebrew Leggings				(MoP Scenario)
-			ig(92866),	-- Cordwoven Leggings				(MoP Scenario)
-			ig(89488),	-- Firewool Leggings				(MoP Scenario)
-			ig(98231),	-- Heartlander's Leggings			(MoP Scenario)
-			ig(98196),	-- Jinyu Seer's Leggings			(MoP Scenario)
-			ig(93072),	-- Yak Wool Leggings				(MoP Scenario)
 		}),
 		filter(LEATHER, {
 			ig(114268),	-- Bloodthorn Legguards 			(NYI)
@@ -407,15 +247,6 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(105758),	-- Arielle's Ancient Legwraps		(Ordos)
 			ig(105760),	-- Hamlet's Wind-Whipped Leggings	(Ordos)
-
-			ig(98206),	-- Ale-Boiled Britches				(MoP Scenario)
-			ig(89473),	-- Forgotten Britches				(MoP Scenario)
-			ig(89478),	-- Hozen-Crafted Britches			(MoP Scenario)
-			ig(92851),	-- Hozen-Speed Britches				(MoP Scenario)
-			ig(93082),	-- Hozen-Stitched Britches			(MoP Scenario)
-			ig(92856),	-- Jinyu-Polished Britches			(MoP Scenario)
-			ig(93053),	-- Mogubreaker Britches				(MoP Scenario)
-			ig(98177),	-- Tidesplitter Britches			(MoP Scenario)
 		}),
 		filter(MAIL, {
 			ig(114393),	-- Element-Binder Legguards			(NYI)
@@ -431,15 +262,6 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(105754),	-- Desirae's Dashing Leggings		(Ordos)
 			ig(105755),	-- Moshne's Keen Kilt				(Ordos)
-
-			ig(92843),	-- Danio-Scale Legguards			(MoP Scenario)
-			ig(92832),	-- Earthstriker Legguards			(MoP Scenario)
-			ig(98214),	-- Mountaineer's Legguards			(MoP Scenario)
-			ig(98185),	-- Perpetual Static Legguards		(MoP Scenario)
-			ig(89465),	-- Scarshell Legguards				(MoP Scenario)
-			ig(89454),	-- Stormbrew Legguards				(MoP Scenario)
-			ig(93061),	-- Stormshaper Legguards			(MoP Scenario)
-			ig(93090),	-- Swashbuckling Legguards			(MoP Scenario)
 		}),
 		filter(PLATE, {
 			ig(121510),	-- Dreadsworn Legguards				(NYI)
@@ -454,16 +276,6 @@ local QUANTUM_GROUP = sharedData({
 			ig(105759),	-- Magmaplates of Jian Wu Xi Feng	(Ordos)
 			ig(105761),	-- Partik's Purified Legplates		(Ordos)
 			ig(105756),	-- Poxleitner's Leggings of Lights	(Ordos)
-
-			ig(92817),	-- Bladesnap Legplates				(MoP Scenario)
-			ig(98243),	-- Doubtcrusher Legplates			(MoP Scenario)
-			ig(89439),	-- Greenstone Legplates				(MoP Scenario)
-			ig(92826),	-- Jinyu-Forged Legplates			(MoP Scenario)
-			ig(98222),	-- Lightning Pillar Legplates		(MoP Scenario)
-			ig(93119),	-- Lightning Rod Legplates			(MoP Scenario)
-			ig(89448),	-- Mogu-Wrought Legplates			(MoP Scenario)
-			ig(93098),	-- Yaungolian Legplates				(MoP Scenario)
-			ig(98254),	-- Thunder Bastion Legplates		(MoP Scenario)
 		}),
 	}),
 	i(208111, {	-- Quantum Axe			(One-Handed)
@@ -479,40 +291,24 @@ local QUANTUM_GROUP = sharedData({
 		ig(134805),	-- Seasoned Hacker						(Removed)
 		ig(134578),	-- Vanguard Cleaver						(Removed)
 		ig(134604),	-- Vanguard Hacker						(Removed)
-
-		ig(98278),	-- Immaculate Pandaren Axe				(MoP Scenario)
-		ig(98279),	-- Immaculate Pandaren Axe				(MoP Scenario)
-		ig(98318),	-- Immaculate Pandaren Axe				(MoP Scenario)
-		ig(93140),	-- Scavenged Pandaren Axe				(MoP Scenario)
-		ig(93142),	-- Scavenged Pandaren Axe				(MoP Scenario)
 	}),
 	i(208117, {	-- Quantum Bow
-		ig(134665),	-- Recruit's Longbow					(Removed)
 		ig(134608),	-- Scorching Longbow					(Removed)
 	}),
 	i(208118, {	-- Quantum Crossbow
 		ig(134778),	-- Seasoned Crossbow					(Removed)
 		ig(134580),	-- Vanguard Heavy Crossbow				(Removed)
-
-		ig(98267),	-- Immaculate Pandaren Crossbow			(MoP Scenario)
-		ig(93135),	-- Scavenged Pandaren Crossbow			(MoP Scenario)
 	}),
 	i(208119, {	-- Quantum Firearm
 		ig(134720),	-- Cold-Touched Rifle					(Removed)
 		ig(134749),	-- Covert Rifle							(Removed)
 		ig(56376),	-- Thundercall							(Removed)
-
-		ig(98269),	-- Immaculate Pandaren Gun				(MoP Scenario)
-		ig(93134),	-- Scavenged Pandaren Gun				(MoP Scenario)
 	}),
 	i(208125, {	-- Quantum Focus
 		ig(18316),	-- Obsidian Bauble						(NYI)
 
 		ig(134727),	-- Cold-Touched Endgame					(Removed)
 		ig(13371),	-- Father Flame							(Removed)
-
-		ig(98324),	-- Immaculate Pandaren Cane				(MoP Scenario)
-		ig(98325),	-- Immaculate Pandaren Rod				(MoP Scenario)
 	}),
 	i(208113, {	-- Quantum Greataxe		(Two-Handed)
 		ig(134717),	-- Cold-Touched Decapitator				(NYI)
@@ -530,31 +326,19 @@ local QUANTUM_GROUP = sharedData({
 		ig(23171),	-- The Axe of Severing					(Removed)
 		ig(134577),	-- Vanguard Decapitator					(Removed)
 
-		ig(98265),	-- Immaculate Pandaren Broadaxe			(MoP Scenario)
-		ig(98314),	-- Immaculate Pandaren Broadaxe			(MoP Scenario)
-		ig(93130),	-- Scavenged Pandaren Broadaxe			(MoP Scenario)
-
 		ig(39769),	-- Arcanite Ripper						(BMAH)(Unique)
 		ig(44924),	-- Sun Lute								(BMAH)(Unique)
 
 		ig(9425),	-- Pendumlum of Doom					(Very Rare BoE)(Unique)
 	}),
 	i(208114, {	-- Quantum Greathammer	(Two-Handed)(Mace)
-		ig(98263),	-- Immaculate Pandaren Hammer			(MoP Scenario)
-		ig(98313),	-- Immaculate Pandaren Hammer			(MoP Scenario)
-		ig(93128),	-- Scavenged Pandaren Hammer			(MoP Scenario)
 	}),
 	i(208112, {	-- Quantum Greatsword	(Two-Handed)
 		ig(134746),	-- Covert Greatsword					(Removed)
 		ig(186410, {	-- Jaithys, the Prison Blade		(Removed)
 			["modID"] = 6, -- Mythic raid
 		}),
-		ig(134664),	-- Recruit's Greatsword					(Removed)
 		ig(134606),	-- Scorching Greatsword					(Removed)
-
-		ig(98262),	-- Immaculate Pandaren Greatsword		(MoP Scenario)
-		ig(98312),	-- Immaculate Pandaren Greatsword		(MoP Scenario)
-		ig(93127),	-- Scavenged Pandaren Greatsword		(MoP Scenario)
 	}),
 	i(208120, {	-- Quantum Knife
 		ig(147908),	-- 6.0 Weapon - Knife_1h_DraenorRaid_D_01 - Jade	(NYI)
@@ -570,27 +354,14 @@ local QUANTUM_GROUP = sharedData({
 		ig(134718),	-- Cold-Touched Shanker					(Removed)
 		ig(134748),	-- Covert Shanker						(Removed)
 		ig(37597),	-- Direbrew's Shanker [Level 70]		(Removed)
-		ig(134666),	-- Recruit's Shanker					(Removed)
 		ig(134610),	-- Scorching Shanker					(Removed)
 		ig(134779),	-- Seasoned Shanker						(Removed)
 		ig(134581),	-- Vanguard Shanker						(Removed)
-
-		ig(98275),	-- Immaculate Pandaren Dagger			(MoP Scenario)
-		ig(98270),	-- Immaculate Pandaren Spellblade		(MoP Scenario)
-		ig(98321),	-- Immaculate Pandaren Spellblade		(MoP Scenario)
-		ig(93138),	-- Scavenged Pandaren Dagger			(MoP Scenario)
-		ig(93131),	-- Scavenged Pandaren Spellblade		(MoP Scenario)
 	}),
 	i(208121, {	-- Quantum Knuckles
 		ig(134719),	-- Cold-Touched Ripper					(Removed)
 		ig(2942),	-- Iron Knuckles						(Removed)
 		ig(134780),	-- Seasoned Ripper						(Removed)
-
-		ig(98277),	-- Immaculate Pandaren Knuckles			(MoP Scenario)
-		ig(98280),	-- Immaculate Pandaren Knuckles			(MoP Scenario)
-		ig(98317),	-- Immaculate Pandaren Knuckles			(MoP Scenario)
-		ig(93139),	-- Scavenged Pandaren Knuckles			(MoP Scenario)
-		ig(93143),	-- Scavenged Pandaren Knuckles			(MoP Scenario)
 	}),
 	i(208110, {	-- Quantum Mace			(One-Handed)
 		ig(166405),	-- Blindside							(NYI)
@@ -607,34 +378,18 @@ local QUANTUM_GROUP = sharedData({
 		ig(134756),	-- Covert Gavel							(Removed)
 		ig(2816),	-- Death Speaker Scepter				(Removed)
 		ig(6196),	-- Noboru's Cudgel						(Removed)
-		ig(134673),	-- Recruit's Gavel						(Removed)
-		ig(134667),	-- Recruit's Pummeler					(Removed)
 		ig(134618),	-- Scorching Gavel						(Removed)
 		ig(134611),	-- Scorching Pummeler					(Removed)
 		ig(134789),	-- Seasoned Gavel						(Removed)
 		ig(134781),	-- Seasoned Pummeler					(Removed)
 		ig(134588),	-- Vanguard Gavel						(Removed)
-
-		ig(98271),	-- Immaculate Pandaren Mace				(MoP Scenario)
-		ig(98274),	-- Immaculate Pandaren Mace				(MoP Scenario)
-		ig(98276),	-- Immaculate Pandaren Scepter			(MoP Scenario)
-		ig(93137),	-- Scavenged Pandaren Mace				(MoP Scenario)
-		ig(93144),	-- Scavenged Pandaren Mace				(MoP Scenario)
-		ig(93132),	-- Scavenged Pandaren Scepter			(MoP Scenario)
 	}),
 	i(208116, {	-- Quantum Polearm
 		ig(115297),	-- Spectral Polearm 					(NYI)
 
 		ig(134750),	-- Covert Pike							(Removed)
-		ig(134668),	-- Recruit's Pike						(Removed)
 		ig(134612),	-- Scorching Pike						(Removed)
 		ig(134782),	-- Seasoned Pike						(Removed)
-
-		ig(98260),	-- Immaculate Pandaren Spear			(MoP Scenario)
-		ig(98266),	-- Immaculate Pandaren Spear			(MoP Scenario)
-		ig(98315),	-- Immaculate Pandaren Spear			(MoP Scenario)
-		ig(93125),	-- Scavenged Pandaren Spear				(MoP Scenario)
-		ig(93141),	-- Scavenged Pandaren Spear				(MoP Scenario)
 	}),
 	i(208126, {	-- Quantum Shield
 		ig(18303),	-- Nimble Buckler						(NYI)
@@ -645,14 +400,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(134774),	-- Covert Barrier 						(Removed)
 		ig(134757),	-- Covert Reprieve 						(Removed)
 		ig(22336),	-- Draconian Aegis of the Legion		(Removed)
-		ig(134687),	-- Recruit's Barrier 					(Removed)
 		ig(134632),	-- Scorching Redoubt 					(Removed)
 		ig(134803),	-- Seasoned Redoubt 					(Removed)
 		ig(134603),	-- Vanguard Redoubt 					(Removed)
 		ig(134589),	-- Vanguard Reprieve 					(Removed)
-
-		ig(98322),	-- Immaculate Pandaren Shield			(MoP Scenario)
-		ig(98323),	-- Immaculate Pandaren Protector		(MoP Scenario)
 	}),
 	i(208115, {	-- Quantum Staff
 		ig(115298),	-- Spectral Spire 						(NYI)
@@ -663,16 +414,9 @@ local QUANTUM_GROUP = sharedData({
 		ig(119409),	-- Icebound Bloodmaul Spire				(Removed)
 		ig(2280),	-- Kam's Walking Stick					(Removed)
 		ig(22335),	-- Lord Valthalak's Staff of Command	(Removed)
-		ig(134674),	-- Recruit's Battle Staff				(Removed)
 		ig(134619),	-- Scorching Staff						(Removed)
 		ig(134790),	-- Seasoned Staff						(Removed)
 		ig(134582),	-- Vanguard Staff						(Removed)
-
-		ig(98261),	-- Immaculate Pandaren Staff			(MoP Scenario)
-		ig(98264),	-- Immaculate Pandaren Staff			(MoP Scenario)
-		ig(98319),	-- Immaculate Pandaren Staff			(MoP Scenario)
-		ig(93126),	-- Scavenged Pandaren Staff				(MoP Scenario)
-		ig(93129),	-- Scavenged Pandaren Staff				(MoP Scenario)
 	}),
 	i(208109, {	-- Quantum Sword		(One-Handed)
 		ig(134613),	-- Scorching Quickblade					(NYI)
@@ -682,24 +426,13 @@ local QUANTUM_GROUP = sharedData({
 		ig(134725),	-- Cold-Touched Mageblade 				(Removed)
 		ig(134726),	-- Cold-Touched Sword 					(Removed)
 		ig(134758),	-- Covert Mageblade 					(Removed)
-		ig(134688),	-- Recruit's Slicer 					(Removed)
 		ig(134783),	-- Seasoned Quickblade 					(Removed)
-
-		ig(98272),	-- Immaculate Pandaren Sword			(MoP Scenario)
-		ig(98273),	-- Immaculate Pandaren Sword			(MoP Scenario)
-		ig(98316),	-- Immaculate Pandaren Sword			(MoP Scenario)
-		ig(93136),	-- Scavenged Pandaren Sword				(MoP Scenario)
-		ig(93145),	-- Scavenged Pandaren Sword				(MoP Scenario)
 	}),
 	i(208122, {	-- Quantum Warglaives
 	}),
 	i(208123, {	-- Quantum Wand
 		ig(134728),	-- Cold-Touched Wand					(Removed)
 		ig(134590),	--Vanguard Baton of Light				(Removed)
-
-		ig(98268),	-- Immaculate Pandaren Wand				(MoP Scenario)
-		ig(98320),	-- Immaculate Pandaren Wand				(MoP Scenario)
-		ig(93133),	-- Scavenged Pandaren Wand				(MoP Scenario)
 	}),
 	i(208216, {	-- Reins of the Quantum Courser
 		["description"] = "Turns into one (1) unlearned Dungeon Mount from before Dragonflight.",
@@ -715,7 +448,6 @@ local QUANTUM_GROUP = sharedData({
 			159921,	-- Mummified Raptor Skull
 			44151,	-- Reins of the Blue Proto-Drake
 			63040,	-- Reins of the Drake of the North Wind
-			133543,	-- Reins of the Infinite Timereaver
 			32768,	-- Reins of the Raven Lord
 			63043,	-- Reins of the Vitreous Stone Drake
 			159842,	-- Sharkbait's Favorite Crackers
@@ -725,6 +457,9 @@ local QUANTUM_GROUP = sharedData({
 		},
 		{"prune","u","e"}	-- prune any unobtainable/event statuses from the selected monuts
 		},-- Raid (Maybe in future)--	78919, -- Experiment 12-B--	71665, -- Flametalon of Alysrazor--	77069, -- Life-Binder's Handmaiden--	45693, -- Mimiron's Head--	77067, -- Reins of the Blazing Drake
+		["g"] = {
+			i(133543),	-- Reins of the Infinite Timereaver
+		},
 	}),
 });
 local HeroicPlus = {HEROIC_DUNGEON,MYTHIC_DUNGEON};
