@@ -2423,7 +2423,8 @@ namespace ATT
                 foreach (var entry in timeline)
                 {
                     var commandSplit = Convert.ToString(entry).Split(' ');
-                    var version = commandSplit[1].Split('.').ConvertVersion().ConvertToGameVersion();
+                    var longVersion = commandSplit[1].Split('.').ConvertVersion();
+                    var version = longVersion.ConvertToGameVersion();
                     switch (commandSplit[0])
                     {
                         // Note: Adding command options here requires adjusting the filter Regex for 'timeline' entries during MergeStringArrayData
@@ -2464,7 +2465,7 @@ namespace ATT
                             }
                         case "deleted":
                             {
-                                if (index == lastIndex && CURRENT_SHORT_RELEASE_VERSION >= version)
+                                if (index == lastIndex && CURRENT_RELEASE_VERSION >= longVersion)
                                 {
                                     // We don't want things that got deleted to be in the addon.
                                     // NOTE: If it's not the last entry, that means it might have been readded later?
@@ -2480,7 +2481,7 @@ namespace ATT
                             }
                         case "removed":
                             {
-                                if (CURRENT_SHORT_RELEASE_VERSION >= version) removed = 2;
+                                if (CURRENT_RELEASE_VERSION >= longVersion) removed = 2;
                                 else
                                 {
                                     // Mark the first patch this was removed on. (the upcoming patch)
