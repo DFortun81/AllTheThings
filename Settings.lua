@@ -728,6 +728,12 @@ settings.Refresh = function(self)
 end
 end
 
+tinsert(app.EventHandlers.OnPlayerLevelUp, function()
+	if settings:Get("Filter:ByLevel") then
+		settings:Refresh();
+	end
+end);
+
 -- Applies a basic backdrop color to a given frame
 -- r/g/b expected in 1-255 range
 settings.ApplyBackdropColor = function(frame, r, g, b, a)
@@ -1417,9 +1423,7 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		filterSet.PetBattles(true)
 	end
-	app:UnregisterEvent("PLAYER_LEVEL_UP")
 	if self:Get("Filter:ByLevel") and not self:Get("DebugMode") then
-		app:RegisterEvent("PLAYER_LEVEL_UP")
 		filterSet.Level(true)
 	else
 		filterSet.Level()

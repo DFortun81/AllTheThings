@@ -21852,6 +21852,7 @@ app.InitDataCoroutine = function()
 	app:RegisterEvent("TOYS_UPDATED");
 	app:RegisterEvent("LOOT_OPENED");
 	app:RegisterEvent("QUEST_DATA_LOAD_RESULT");
+	app:RegisterEvent("PLAYER_LEVEL_UP");
 	app:RegisterEvent("SKILL_LINES_CHANGED");
 	app:RegisterEvent("TOOLTIP_DATA_UPDATE");
 	app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED");
@@ -22342,9 +22343,12 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 end
 app.events.PLAYER_LEVEL_UP = function(newLevel)
 	-- print("PLAYER_LEVEL_UP")
-	app.RefreshQuestInfo();
 	app.Level = newLevel;
-	app.Settings:Refresh();
+	
+	-- Execute the OnPlayerLevelUp handlers.
+	for i,handler in ipairs(app.EventHandlers.OnPlayerLevelUp) do
+		handler();
+	end
 end
 app.events.BOSS_KILL = function(id, name, ...)
 	-- print("BOSS_KILL")
