@@ -111,9 +111,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			}, {	-- RENOWN 2 --
-				q(78579, {	-- Dragon Isles Supplies (TODO: alts only?)
+				q(78579, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+					["DisablePartySync"] = true,
 				}),
 			}, {	-- RENOWN 3 --
 				q(78385, {	-- Small Dreamseeds
@@ -130,10 +131,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 211962 },	-- Melsysra
 					["maps"] = { EMERALD_DREAM },	-- follow you around
 				}),
-				-- if quest above was done at least once / alts only
 				q(78580, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+					["DisablePartySync"] = true,
 				}),
 			}, {	-- RENOWN 6 --
 			}, {	-- RENOWN 7 --
@@ -142,10 +143,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 				}),
-				-- alts only
 				q(78581, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+					["DisablePartySync"] = true,
 				}),
 			}, {	-- RENOWN 9 --
 				q(78387, {	-- Plump Dreamseeds
@@ -164,6 +165,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(78582, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+					["DisablePartySync"] = true,
 				}),
 			}, {	-- RENOWN 12 --
 				q(78364, {	-- Drake's Dreaming Crest
@@ -173,6 +175,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(78583, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+					["DisablePartySync"] = true,
 				}),
 			}, {	-- RENOWN 13 --
 			}, {	-- RENOWN 14 --
@@ -184,11 +187,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(78584, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+					["DisablePartySync"] = true,
 				}),
 			}, {	-- RENOWN 16 --
 				q(78585, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+					["DisablePartySync"] = true,
 				}),
 			}, {	-- RENOWN 17 --
 				q(78388, {	-- Gigantic Dreamseeds
@@ -198,11 +203,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(78586, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+					["DisablePartySync"] = true,
 				}),
 			}, {	-- RENOWN 18 --
 				q(78587, {	-- Dragon Isles Supplies
 					["provider"] = { "n", 208143 },	-- Keeper Amrymn
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+					["DisablePartySync"] = true,
 				}),
 			}, {	-- RENOWN 19 --
 				q(78372, {	-- Drake's Dreaming Crest
@@ -210,10 +217,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 				}),
 			}, {	-- RENOWN 20 --
-				q(78588, {	-- Dragon Isles Supplies
-					["provider"] = { "n", 208143 },	-- Keeper Amrymn
-					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
-				}),
 				q(78373, {	-- The Dream Thanks You
 					["provider"] = { "n", 211962 },	-- Melsysra
 					["maps"] = { EMERALD_DREAM },	-- follow you around
@@ -231,6 +234,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(210992, {	-- Overflowing Dream Warden Trove
 						}),
 					},
+				}),
+				q(78588, {	-- Dragon Isles Supplies
+					["provider"] = { "n", 208143 },	-- Keeper Amrymn
+					["coord"] = { 50.2, 61.6, EMERALD_DREAM },
+					["DisablePartySync"] = true,
 				}),
 			},
 		})),
