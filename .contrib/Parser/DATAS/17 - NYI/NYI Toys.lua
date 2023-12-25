@@ -149,8 +149,6 @@ root(ROOTS.NeverImplemented, {
 			-- 10.2.0
 			tier(DF_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 				i(211424),	-- Dreaming Banner of the Aspects (TOY!)
-				i(208825),	-- Junior Timekeeper's Racing Belt (TOY!) [Winter Veil?]
-				i(210656),	-- Winter Veil Socks (TOY!) [Winter Veil?]
 				i(208087),	-- Unknown (TOY!)
 			})),
 		}),

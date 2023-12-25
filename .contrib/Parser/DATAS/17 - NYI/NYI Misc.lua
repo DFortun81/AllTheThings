@@ -1037,9 +1037,6 @@ root(ROOTS.NeverImplemented, {
 				i(210420),	-- Dream Wardens Insignia [Rare]
 				------ Equipment Chest ------
 				i(210595),	-- Dreaming Equipment Chest
-				------ Winter Veil ------
-				i(210657),	-- Gently Shaken Gift
-				i(209871),	-- Winter Veil Gift
 			})),
 		}),
 	}),

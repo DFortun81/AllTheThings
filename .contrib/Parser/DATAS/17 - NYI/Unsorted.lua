@@ -1149,7 +1149,6 @@ root(ROOTS.Unsorted, {
 				q(78067),	--
 				q(78087),	--
 				q(78096),	-- PTR:A Silver Lining
-				q(78131),	-- A Winter Veil Gift
 				q(78209),	--
 				q(78216),	--
 				q(78217),	--
@@ -1192,7 +1191,6 @@ root(ROOTS.Unsorted, {
 				q(78499),	-- Citadel Sortie
 				q(78500),	-- Citadel Sortie - Advanced
 				q(78501),	-- Citadel Sortie - Reverse
-				q(78504),	-- A Gently Shaken Gift
 				q(78554),	--
 				q(78558),	-- Sholazar Spree
 				q(78559),	-- Sholazar Spree - Advanced

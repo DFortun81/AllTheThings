@@ -617,11 +617,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 		}),
 		ach(19077, {	-- Catch Me If You Can! (2023)
 			["provider"] = { "i", 208825 },	-- Junior Timekeeper's Racing Belt (TOY!)
-			["timeline"] = { ADDED_10_2_0 },
+			["timeline"] = { "added 10.2.0.52649" },
 		}),
 		ach(19130, {	-- Junior Racing Champion (2023)
 			["provider"] = { "i", 208825 },	-- Junior Timekeeper's Racing Belt (TOY!)
-			["timeline"] = { ADDED_10_2_0 },
+			["timeline"] = { "added 10.2.0.52649" },
 		}),
 	}),
 	-- #if AFTER 7.3.0.24727
@@ -1173,6 +1173,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(191925),	-- Falling Star Flinger (TOY!)
 			},
 		})),
+		q(78504, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52649", "removed 10.2.0.99999" } }, {	-- A Gently Shaken Gift (2023)
+			["providers"] = {
+				{ "o", 180746 },	-- Gently Shaken Gift
+				{ "i", 210657 },	-- Gently Shaken Gift
+			},
+			["description"] = "Gift from 2023.",
+			["maps"] = { IRONFORGE, ORGRIMMAR },
+			["_drop"] = { "g" },
+			["groups"] = {
+				i(210656),	-- Winter Veil Socks (TOY!)
+			},
+		})),
 		q(8769, {	-- A Ticking Present
 			["providers"] = {
 				{ "o", 180748 },	-- Ticking Present
@@ -1508,19 +1520,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				i(191937),	-- Falling Star Catcher (TOY!)
 			},
 		})),
-		-- q(00000, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 } }, {	-- A Winter Veil Gift (2023)
-		-- 	["providers"] = {
-		-- 		{ "o", 187236 },	-- Winter Veil Gift
-		-- 		{ "i", 000000 },	-- Winter Veil Gift
-		-- 	},
-		-- 	["description"] = "Gift from 2023.",
-		-- 	["maps"] = { IRONFORGE, ORGRIMMAR },
-		-- 	["_drop"] = { "g" },
-		-- 	["lvl"] = 10,
-		-- 	["groups"] = {
-		-- 		i(208825),	-- Falling Star Catcher (TOY!)
-		-- 	},
-		-- })),
+		q(78131, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52649", "removed 10.2.0.99999" } }, {	-- A Winter Veil Gift (2023)
+			["providers"] = {
+				{ "o", 187236 },	-- Winter Veil Gift
+				{ "i", 209871 },	-- Winter Veil Gift
+			},
+			["description"] = "Gift from 2023.",
+			["maps"] = { IRONFORGE, ORGRIMMAR },
+			["_drop"] = { "g" },
+			["lvl"] = 10,
+			["groups"] = {
+				i(208825),	-- Junior Timekeeper's Racing Belt (TOY!)
+			},
+		})),
 		q(7022, {	-- Greatfather Winter is Here! (Alliance)
 			["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 			-- #if AFTER CATA
