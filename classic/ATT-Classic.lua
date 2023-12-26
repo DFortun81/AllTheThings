@@ -8918,7 +8918,7 @@ end
 function AllTheThings_MinimapButtonOnEnter(self, button)
 	GameTooltip:SetOwner(type(self) ~= "string" and self or button, "ANCHOR_LEFT");
 	GameTooltip:ClearLines();
-
+	
 	local reference = app:GetDataCache();
 	if reference then
 		GameTooltipIcon:SetSize(72,72);
@@ -8932,7 +8932,7 @@ function AllTheThings_MinimapButtonOnEnter(self, button)
 			GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
 		end
 		GameTooltipIcon:Show();
-
+		
 		local left, right = strsplit(DESCRIPTION_SEPARATOR, reference.title);
 		GameTooltip:AddDoubleLine(reference.text, reference.progressText, 1, 1, 1);
 		GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
@@ -8944,7 +8944,7 @@ function AllTheThings_MinimapButtonOnEnter(self, button)
 			GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
 		end
 	else
-		GameTooltip:AddDoubleLine(L["TITLE"], "Click to load addon.", 1, 1, 1);
+		GameTooltip:AddDoubleLine(L["TITLE"], L["MAIN_LIST_REQUIRES_REFRESH"], 1, 1, 1);
 		GameTooltipIcon:Hide();
 	end
 	GameTooltip:AddLine(L["MINIMAP_MOUSEOVER_TEXT"], 1, 1, 1);
@@ -8977,7 +8977,7 @@ local function CreateMinimapButton()
 
 	-- Create the Button Texture
 	local oldtexture = button:CreateTexture(nil, "BACKGROUND");
-	oldtexture:SetPoint("CENTER", 0, 0);
+	oldtexture:SetPoint("CENTER", 1, 0);
 	oldtexture:SetTexture(app.asset("logo_tiny"));
 	oldtexture:SetSize(21, 21);
 	button.oldtexture = oldtexture;

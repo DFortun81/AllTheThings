@@ -11840,14 +11840,16 @@ app.RefreshCustomCollectibility = function()
 end
 end	-- Custom Collectibility
 
+-- Minimap Button
 function AllTheThings_MinimapButtonOnClick(self, button)
 	if button == "RightButton" then
+		-- Right Button opens the Options menu.
 		app.Settings:Open();
 	else
 		-- Left Button
 		if IsShiftKeyDown() then
 			app.RefreshCollections();
-		elseif IsAltKeyDown() or IsControlKeyDown() then
+		elseif app.ToggleMiniListForCurrentZone and (IsAltKeyDown() or IsControlKeyDown()) then
 			app.ToggleMiniListForCurrentZone();
 		else
 			app.ToggleMainList();
@@ -11859,21 +11861,28 @@ function AllTheThings_MinimapButtonOnEnter(self, button)
 	GameTooltip:ClearLines();
 	local reference = app:GetDataCache();
 	if reference then
-		local left, right = strsplit(DESCRIPTION_SEPARATOR, reference.title);
-		GameTooltip:AddDoubleLine(reference.text, reference.progressText, 1, 1, 1);
-		GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
-		GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
 		GameTooltipIcon:SetSize(72,72);
 		GameTooltipIcon:ClearAllPoints();
 		GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
 		GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
-		local texcoord = reference.previewtexcoord or reference.texcoord;
+		local texcoord = reference.texcoord;
 		if texcoord then
 			GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
 		else
 			GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
 		end
 		GameTooltipIcon:Show();
+		
+		local left, right = strsplit(DESCRIPTION_SEPARATOR, reference.title);
+		GameTooltip:AddDoubleLine(reference.text, reference.progressText, 1, 1, 1);
+		GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
+
+		local prime = app:GetWindow("Prime");
+		if prime and prime.forceFullDataRefresh then
+			GameTooltip:AddDoubleLine("Updates Paused", L["MAIN_LIST_REQUIRES_REFRESH"], 1, 0.4, 0.4);
+		else
+			GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
+		end
 	else
 		GameTooltip:AddDoubleLine(L["TITLE"], L["MAIN_LIST_REQUIRES_REFRESH"], 1, 1, 1);
 		GameTooltipIcon:Hide();
