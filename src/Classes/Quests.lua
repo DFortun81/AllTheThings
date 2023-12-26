@@ -1151,7 +1151,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	
 	
 	--["locked"] = LockedAsQuest,	-- This might not be necessary, we have this in SetupLockCriteria and AsBreadcrumb
-	--[[
+	-- These are Retail fields that aren't used in Classic... yet?
 	["missingSourceQuests"] = function(t)
 		if t.sourceQuests and #t.sourceQuests > 0 then
 			local includeBreadcrumbs = app.Settings:Get("Thing:QuestsLocked");
@@ -1208,7 +1208,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 			return (#sourceQuests - missing) < sqreq;
 		end
 	end,
-	]]--
 },
 "WithReputation", {
 	collectible = function(t)
