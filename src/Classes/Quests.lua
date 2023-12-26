@@ -3,7 +3,7 @@ local app = select(2, ...);
 local L = app.L;
 
 -- App locals
-local GetRelativeField, SearchForField = app.GetRelativeField, app.SearchForField;
+local AssignChildren, GetRelativeField, SearchForField = app.AssignChildren, app.GetRelativeField, app.SearchForField;
 
 -- Temporary (this is gonna move)
 local function Colorize(str, color)
@@ -73,13 +73,7 @@ end });
 local C_QuestLog_RequestLoadQuestByID = C_QuestLog.RequestLoadQuestByID;
 if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA_LOAD_RESULT") then
 	local QuestsRequested = {};
-	local QuestsToPopulate = setmetatable({}, {
-		__index = function(t, questID)
-			local container = {};
-			rawset(t, questID, container);
-			return container;
-		end,
-	});
+	local QuestsToPopulate = {};
 	
 	-- Checks if we need to request Quest data from the Server, and returns whether the request is pending
 	-- Passing in the data will cause the data to have quest rewards populated once the data is retrieved
@@ -88,7 +82,7 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 		if not QuestsRequested[questID] then
 			QuestsRequested[questID] = true;
 			-- app.PrintDebug("RequestLoadQuestByID",questID,"Data:",data)
-			if questObjectRef then tinsert(QuestsToPopulate[questID], questObjectRef); end
+			if questObjectRef then QuestsToPopulate[questID] = questObjectRef; end
 			
 			-- there's some limit to quest data checking that causes d/c... not entirely sure what or how much
 			app.FunctionRunner.SetPerFrame(10);
@@ -108,12 +102,10 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 		end
 		
 		-- see if this Quest is awaiting Reward population & Updates
-		local container = QuestsToPopulate[questID];
-		if container then
+		local questObject = QuestsToPopulate[questID];
+		if questObject then
 			rawset(QuestsToPopulate, questID, nil);
-			for i,questObject in ipairs(container) do
-				app.TryPopulateQuestRewards(questObject);
-			end
+			app.TryPopulateQuestRewards(questObject);
 		end
 	end
 	
@@ -1797,7 +1789,7 @@ if app.GameBuildVersion > 50000 then
 						app.ImportRawLink(item, link);
 						if item.itemID then
 							-- search will either match through bonusID, modID, or itemID in that priority
-							local search = SearchForLink(link);
+							local search = app.SearchForLink(link);
 							-- block the group from being collectible as a cost if the option is not enabled for various 'currency' items
 							if skipCollectibleCurrencies and WorldQuestCurrencyItems[item.itemID] then
 								item.collectibleAsCost = false;
@@ -1923,7 +1915,7 @@ if app.GameBuildVersion > 50000 then
 			end
 
 			-- Resolve all symbolic links now that the quest contains items
-			FillSymLinks(questObject, true);
+			app.FillSymLinks(questObject, true);
 
 			-- Special logic for Torn Invitation... maybe can clean up sometime
 			if questObject.g and #questObject.g > 0 then
@@ -1944,10 +1936,7 @@ if app.GameBuildVersion > 50000 then
 			app.DirectGroupUpdate(questObject);
 		end
 	end
-	-- Will attempt to queue populating the rewards of the quest object into itself or request itself to be loaded
-	app.TryPopulateQuestRewards = function(questObject)
-		app.FunctionRunner.Run(TryPopulateQuestRewards, questObject);
-	end
+	app.TryPopulateQuestRewards = TryPopulateQuestRewards;
 end
 
 -- Event Handlers

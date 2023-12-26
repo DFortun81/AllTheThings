@@ -2233,6 +2233,7 @@ local function FillSymLinks(group, recursive)
 	-- if app.Debugging == group then app.Debugging = nil; end
 	return group;
 end
+app.FillSymLinks = FillSymLinks;
 
 -- Symlink Lib
 do
@@ -6011,7 +6012,7 @@ local function GetPopulatedQuestObject(questID)
 	-- cannot do anything on a missing object or questID
 	if not questID then return; end
 	-- either want to duplicate the existing data for this quest, or create new data for a missing quest
-	local questObject = CreateObject(app.SearchForObject("questID", questID, "field") or { questID = questID, _missing = true }, true);
+	local questObject = CreateObject(app.SearchForObject("questID", questID, "field") or { key = "questID", questID = questID, _missing = true }, true);
 	-- Try populating quest rewards
 	app.TryPopulateQuestRewards(questObject);
 	return questObject;

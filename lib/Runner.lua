@@ -39,6 +39,7 @@ local function SetStackCo()
 					-- app.PrintDebug("StackCo:Remove",i)
 					tremove(Stack, i);
 					tremove(StackParams, i);
+					if err then print(err); end
 				end
 			end
 			-- app.PrintDebug("StackCo:Done",f,p)
@@ -61,6 +62,7 @@ local function RunStack()
 	RunningStack = nil;
 	local ok, err = pcall(c_resume, StackCo);
 	if not ok then
+		print(err);
 		app.PrintDebug("RunStack:Error:",err)
 		if app.Debugging then
 			local instanceTrace = debugstack(StackCo, err);
@@ -220,10 +222,12 @@ local function CreateRunner(name)
 				params = ParameterBucketQueue[RunIndex];
 				if params then
 					-- app.PrintDebug("FRC.Run.N."..name,RunIndex,unpack(params))
-					pcall(func, unpack(params));
+					local ok, err = pcall(func, unpack(params));
+					if not ok then print(err); end
 				else
 					-- app.PrintDebug("FRC.Run.1."..name,RunIndex,ParameterSingleQueue[RunIndex])
-					pcall(func, ParameterSingleQueue[RunIndex]);
+					local ok, err = pcall(func, ParameterSingleQueue[RunIndex]);
+					if not ok then print(err); end
 				end
 				-- app.PrintDebug("FRC.Done."..name,RunIndex)
 				if perFrame <= 0 then
