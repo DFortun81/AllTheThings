@@ -1468,7 +1468,6 @@ app.CreateVignette = app.ExtendClass("Quest", "Vignette", "vignetteID", {
 });
 app.AddQuestObjectivesToTooltip = function(tooltip, reference)
 	local objectified = false;
-	print("AddQuestObjectivesToTooltip");
 	local questLogIndex = GetQuestLogIndexByID(reference.questID);
 	if questLogIndex then
 		local lore, objective = GetQuestLogQuestText(questLogIndex);
