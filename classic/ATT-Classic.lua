@@ -2500,6 +2500,19 @@ local function SearchForMissingItemNames(group)
 	end
 	return arr;
 end
+local function SearchForSourcePath(g, hashes, level, count)
+	if g then
+		local hash = hashes[level];
+		if hash then
+			for i,o in ipairs(g) do
+				if (o.hash or o.name or o.text) == hash then
+					if level == count then return o; end
+					return SearchForSourcePath(o.g, hashes, level + 1, count);
+				end
+			end
+		end
+	end
+end
 local function UpdateSearchResults(searchResults)
 	if searchResults and #searchResults > 0 then
 		-- Attempt to cleanly refresh the data.
@@ -8854,44 +8867,14 @@ local function AddTomTomWaypoint(group)
 
 						local first = root[1];
 						if first then
-							local opt = { from = "ATT", persistent = false };
-							opt.title = first.text or RETRIEVING_DATA;
-							local displayID = GetDisplayID(first);
-							if displayID then
-								opt.minimap_displayID = displayID;
-								opt.worldmap_displayID = displayID;
-							end
-							if first.icon then
-								opt.minimap_icon = first.icon;
-								opt.worldmap_icon = first.icon;
-							end
-
-							if TomTom.DefaultCallbacks then
-								local callbacks = TomTom:DefaultCallbacks();
-								callbacks.minimap.tooltip_update = nil;
-								callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
-									tooltip:ClearLines();
-									for i,o in ipairs(root) do
-										local line = tooltip:NumLines() + 1;
-										tooltip:AddLine(o.text);
-										if o.title and not o.explorationID then tooltip:AddLine(o.title); end
-										local key = o.key;
-										if key == "objectiveID" then
-											if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
-										elseif key == "criteriaID" then
-											tooltip:AddDoubleLine(L.CRITERIA_FOR, GetAchievementLink(group.achievementID));
-										else
-											if key == "npcID" then key = "creatureID"; end
-											AttachTooltipSearchResults(tooltip, 1, key .. ":" .. o[o.key], SearchForField, key, o[o.key], line);
-										end
-									end
-									tooltip:Show();
-								end
-								callbacks.world.tooltip_update = nil;
-								callbacks.world.tooltip_show = callbacks.minimap.tooltip_show;
-								opt.callbacks = callbacks;
-							end
-							TomTom:AddWaypoint(mapID, xnormal, y / 1000, opt);
+							local sourcePath = BuildSourceTextForDynamicPath(first);
+							for i=2,#root,1 do sourcePath = sourcePath .. ";" .. BuildSourceTextForDynamicPath(root[i]); end
+							TomTom:AddWaypoint(mapID, xnormal, y / 1000, {
+								from = "ATT",
+								persistent = true,
+								sourcePath = sourcePath,
+								title = (first.text or RETRIEVING_DATA)
+							});
 						end
 					end
 				end
@@ -8905,6 +8888,93 @@ local function AddTomTomWaypoint(group)
 		app.print("You must have TomTom installed to plot coordinates.");
 	end
 end
+tinsert(app.EventHandlers.OnReady, function()
+	local tomTom = TomTom;
+	if tomTom then
+		local oldAddWaypoint = tomTom.AddWaypoint;
+		tomTom.AddWaypoint = function(self, m, x, y, opts)
+			if opts.from == "ATT" and opts.sourcePath then
+				local sourceString = opts.sourcePath;
+				if sourceString then
+					local root = {};
+					local sourceStrings = { strsplit(";", sourceString) };
+					for i,sourcePath in ipairs(sourceStrings) do
+						local hashes = { strsplit(">", sourcePath) };
+						local ref = SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
+						if ref then
+							tinsert(root, ref);
+						else
+							hashes = { strsplit("ID", sourcePath) };
+							if #hashes == 3 then
+								ref = app.CreateClassInstance(hashes[1] .. "ID", tonumber(hashes[3]));
+								if ref then tinsert(root, ref); end
+							end
+						end
+					end
+					if #root > 0 then
+						local first = root[1];
+						if IsRetrieving(opts.title) then
+							opts.title = first.text or RETRIEVING_DATA;
+						end
+						local displayID = GetDisplayID(first);
+						if displayID then
+							opts.minimap_displayID = displayID;
+							opts.worldmap_displayID = displayID;
+						end
+						if first.icon then
+							opts.minimap_icon = first.icon;
+							opts.worldmap_icon = first.icon;
+						end
+						local callbacks = TomTom:DefaultCallbacks();
+						callbacks.minimap.tooltip_update = nil;
+						callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
+							tooltip:ClearLines();
+							for i,o in ipairs(root) do
+								local line = tooltip:NumLines() + 1;
+								tooltip:AddLine(o.text);
+								if o.title and not o.explorationID then tooltip:AddLine(o.title); end
+								local key = o.key;
+								if key == "objectiveID" then
+									if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
+								elseif key == "criteriaID" then
+									tooltip:AddDoubleLine(L.CRITERIA_FOR, GetAchievementLink(group.achievementID));
+								else
+									if key == "npcID" then key = "creatureID"; end
+									AttachTooltipSearchResults(tooltip, 1, key .. ":" .. o[o.key], SearchForField, key, o[o.key], line);
+								end
+							end
+							tooltip:Show();
+						end
+						callbacks.world.tooltip_update = nil;
+						callbacks.world.tooltip_show = callbacks.minimap.tooltip_show;
+						opts.callbacks = callbacks;
+					else
+						print("Failed to rebuild TomTom Waypoint", waypointUID);
+					end
+				end
+			end
+			oldAddWaypoint(self, m, x, y, opts);
+		end
+		
+		local function AreAnyATTWaypointsPersisted()
+			-- If there are any persisted waypoints, recover their tooltips
+			local waypointsByMapID = tomTom.waypoints;
+			if not waypointsByMapID then return false; end
+			
+			local any = false;
+			for mapID,waypointsByMap in pairs(waypointsByMapID) do
+				for waypointUID,waypoint in pairs(waypointsByMap) do
+					if waypoint.from == "ATT" then
+						return true;
+					end
+				end
+			end
+			return false;
+		end
+		if AreAnyATTWaypointsPersisted() then tomTom:ReloadWaypoints(); end
+	end
+end);
+
 
 -- Minimap Button
 function AllTheThings_MinimapButtonOnClick(self, button)
@@ -11771,19 +11841,6 @@ function app:CreateMiniListForGroup(group)
 	end
 	return popout;
 end
-local function SearchForSourcePath(g, hashes, level, count)
-	if g then
-		local hash = hashes[level];
-		if hash then
-			for i,o in ipairs(g) do
-				if (o.hash or o.name or o.text) == hash then
-					if level == count then return o; end
-					return SearchForSourcePath(o.g, hashes, level + 1, count);
-				end
-			end
-		end
-	end
-end
 function app:CreateMiniListFromSource(key, id, sourcePath)
 	-- If we provided the original source path, then we can find the exact element to popout.
 	if sourcePath then
@@ -12390,7 +12447,7 @@ app.events.VARIABLES_LOADED = function()
 		for i,handler in ipairs(app.EventHandlers.OnReady) do
 			handler();
 		end
-
+		
 		-- Mark that we're ready now!
 		app.IsReady = true;
 	end);
