@@ -19082,7 +19082,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				end
 
 				-- Heroic Deeds
-				if self.includePermanent and not (IsQuestFlaggedCompleted[32900] or IsQuestFlaggedCompleted[32901]) then
+				if self.includePermanent and not (IsQuestFlaggedCompleted(32900) or IsQuestFlaggedCompleted(32901)) then
 					local mapObject = app.CreateMapWithStyle(424);
 					NestObject(mapObject, GetPopulatedQuestObject(app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901));
 					MergeObject(temp, mapObject);
