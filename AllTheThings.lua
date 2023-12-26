@@ -10735,113 +10735,6 @@ app.CreateHeader = function(id, t)
 end
 end)();
 
--- Object Lib (as in "World Object")
-(function()
-local objectFields = {
-	["key"] = function(t)
-		return "objectID";
-	end,
-	["name"] = function(t)
-		return app.ObjectNames[t.objectID] or ("Object ID #" .. t.objectID);
-	end,
-	["icon"] = function(t)
-		return app.ObjectIcons[t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
-	end,
-	["model"] = function(t)
-		return app.ObjectModels[t.objectID];
-	end,
-	
-	["collectibleAsQuest"] = app.CollectibleAsQuest,
-	["collectedAsQuest"] = function(t)
-		return IsQuestFlaggedCompletedForObject(t);
-	end,
-	["savedAsQuest"] = function(t)
-		return IsQuestFlaggedCompleted(t.questID);
-	end,
-	["trackableAsQuest"] = app.ReturnTrue,
-	["repeatableAsQuest"] = function(t)
-		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly;
-	end,
-	["altcollectedAsQuest"] = function(t)
-		if t.altQuests then
-			for i,questID in ipairs(t.altQuests) do
-				if IsQuestFlaggedCompleted(questID) then
-					t.altcollected = questID;
-					return questID;
-				end
-			end
-		end
-	end,
-	["indicatorIcon"] = function(t)
-		if app.CurrentVignettes["objectID"][t.objectID] then
-			return app.asset("Category_Secrets");
-		end
-	end,
-
-	-- Generic fields (potentially replaced by specific object types)
-	["trackable"] = function(t)
-		-- only used for generic objects with no other way of being considered trackable
-		if not t.g then return; end
-		for _,group in ipairs(t.g) do
-			if group.objectID and group.trackable then return true; end
-		end
-	end,
-	["repeatable"] = function(t)
-		-- only used for generic objects with no other way of being tracked as repeatable
-		if not t.g then return; end
-		for _,group in ipairs(t.g) do
-			if group.objectID and group.repeatable then return true; end
-		end
-		-- every contained sub-object is not repeatable, so the repeated object should also be marked as not repeatable
-	end,
-	["saved"] = function(t)
-		-- only used for generic objects with no other way of being tracked as saved
-		if not t.g then return; end
-		local anySaved;
-		for _,group in ipairs(t.g) do
-			if group.objectID then
-				if group.saved then
-					anySaved = true;
-				else
-					return;
-				end
-			end
-		end
-		-- every contained sub-object is already saved, so the repeated object should also be marked as saved
-		return anySaved;
-	end,
-	["coords"] = function(t)
-		-- only used for generic objects with no other way of being tracked as saved
-		if not t.g then return; end
-		local unsavedCoords = {};
-		for _,group in ipairs(t.g) do
-			-- show collected coords of all sub-objects which are not saved
-			if group.objectID and group.coords and not group.saved then
-				ArrayAppend(unsavedCoords, group.coords);
-			end
-		end
-		return unsavedCoords;
-	end,
-};
-app.BaseObject = app.BaseObjectFields(objectFields, "BaseObject");
-
-local fields = RawCloneData(objectFields);
-fields.altcollected = objectFields.altcollectedAsQuest;
-fields.collectible = objectFields.collectibleAsQuest;
-fields.collected = objectFields.collectedAsQuest;
-fields.trackable = objectFields.trackableAsQuest;
-fields.repeatable = objectFields.repeatableAsQuest;
-fields.saved = objectFields.savedAsQuest;
-fields.locked = app.LockedAsQuest;
-app.BaseObjectWithQuest = app.BaseObjectFields(fields, "BaseObjectWithQuest");
-app.CreateObject = function(id, t)
-	if t and t.questID then
-		return setmetatable(constructor(id, t, "objectID"), app.BaseObjectWithQuest);
-	end
-	return setmetatable(constructor(id, t, "objectID"), app.BaseObject);
-end
-end)();
-
 -- Profession Lib
 (function()
 app.SkillIDToSpellID = {
@@ -13921,7 +13814,7 @@ RowOnEnter = function (self)
 		if reference.timeRemaining then
 			GameTooltip:AddLine(app.GetColoredTimeRemaining(reference.timeRemaining));
 		end
-
+		
 		-- Calculate Best Drop Percentage. (Legacy Loot Mode)
 		if reference.itemID and not reference.speciesID and not reference.spellID and app.Settings:GetTooltipSetting("DropChances") then
 			local numSpecializations = GetNumSpecializations();

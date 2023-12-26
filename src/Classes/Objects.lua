@@ -4,6 +4,7 @@ do
 local app = select(2, ...);
 
 -- App locals
+local ArrayAppend = app.ArrayAppend;
 local IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompletedForObject;
 
 -- Global locals
@@ -27,6 +28,45 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 		return app.ObjectModels[t.objectID];
 	end,
 },
+"AsGenericObjectContainer", {
+	trackable = app.ReturnTrue,
+	repeatable = function(t)
+		for _,group in ipairs(t.g) do
+			if group.objectID and group.repeatable then return true; end
+		end
+	end,
+	["saved"] = function(t)
+		local anySaved;
+		for _,group in ipairs(t.g) do
+			if group.objectID then
+				if group.saved then
+					anySaved = true;
+				else
+					return;
+				end
+			end
+		end
+		-- every contained sub-object is already saved, so the repeated object should also be marked as saved
+		return anySaved;
+	end,
+	["coords"] = function(t)
+		local unsavedCoords = {};
+		for _,group in ipairs(t.g) do
+			-- show collected coords of all sub-objects which are not saved
+			if group.objectID and group.coords and not group.saved then
+				ArrayAppend(unsavedCoords, group.coords);
+			end
+		end
+		return unsavedCoords;
+	end,
+}, 
+function(t)
+	-- Check for a relative object with a questID.
+	if not t.g then return; end
+	for _,group in ipairs(t.g) do
+		if group.objectID and group.questID then return true; end
+	end
+end,
 "WithQuest", {
 	collectible = function(t)
 		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog_IsOnQuest(t.questID));

@@ -3658,6 +3658,7 @@ local ids = {
 	["mapID"] = L["MAP_ID"],
 	["modID"] = "Mod ID",
 	["objectID"] = L["OBJECT_ID"],
+	["__type"] = "Object Type",
 	["Objectives"] = "Objectives",
 	["questID"] = "Quest ID",
 	["QuestGivers"] = "Quest Givers",
