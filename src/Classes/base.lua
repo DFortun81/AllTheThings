@@ -284,7 +284,7 @@ local function CloneClassInstance(object, ignoreChildren)
 	if object[1] then
 		-- Create an Array of Clones
 		for i,o in ipairs(object) do
-			tinsert(clone, CloneClassInstance(o));
+			tinsert(clone, CloneClassInstance(o, ignoreChildren));
 		end
 		return clone;
 	else

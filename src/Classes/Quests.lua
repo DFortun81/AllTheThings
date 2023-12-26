@@ -1835,7 +1835,7 @@ if app.GameBuildVersion > 50000 then
 					-- app.PrintDebug("TryPopulateQuestRewards_currencies:found",questID,currencyID,questObject.missingCurr)
 
 					currencyID = tonumber(currencyID);
-					local item = { ["currencyID"] = currencyID };
+					local item = app.CreateCurrencyClass(currencyID);
 					-- block the group from being collectible as a cost if the option is not enabled
 					if skipCollectibleCurrencies then
 						item.collectibleAsCost = false;
