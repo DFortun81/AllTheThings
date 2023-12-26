@@ -1725,3 +1725,8 @@ i(210774, 427041);	-- Ochre Dreamtalon
 i(211087, 428067);	-- Shadowflame Hellbike
 i(210059, 424476);	-- Winter Night Dreamsaber
 i(210140, 0);		-- [PH] Black-Furred Bakar
+
+------------------
+-- PATCH 10.2.5 --
+------------------
+i(192796, 374204);	-- Explorer's Stonehide Packbeast

@@ -1,0 +1,157 @@
+-------------------------------------------------------------------
+--      E X P A N S I O N   F E A T U R E S    M O D U L E       --
+-------------------------------------------------------------------
+AZEROTHIAN_ARCHIVES = createHeader({
+	readable = "Azerothian Archives",
+	icon = "Interface\\Icons\\trade_archaeology",
+	text = {
+		en = [[~GetSpellInfo(419242)]],
+	},
+});
+
+root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
+	n(AZEROTHIAN_ARCHIVES, {
+		["maps"] = {
+			THALDRASZUS,
+		},
+		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(19790, {	-- The Archives Called, You Answered
+					["sym"] = {{"meta_achievement",
+						19685,	-- Tenured Archivist
+						19786,	-- When a Rock is Just a Rock
+						19791,	-- Goggle Wobble
+						19787,	-- Clued In
+						19789,	-- Relic Rescuer
+						19788,	-- Tome Comber
+						19793,	-- Finally At Rest
+						19792,	-- Just One More Thing
+					}},
+					["g"] = {
+						title(536),	-- Isles Archivist
+					},
+				}),
+				ach(19787),	-- Clued in
+				ach(19793, {	-- Finally At Rest
+					["g"] = {
+						i(213134),	-- Hap'he (PET!)
+					},
+				}),
+				ach(19791),	-- Goggle Wobble
+				ach(19792, {	-- Just One More Thing
+					["g"] = {
+						i(213133),	-- Reese (PET!)
+					},
+				}),
+				ach(19789),	-- Relic Rescuer
+				ach(19788),	-- Tome Comber
+				ach(19786),	-- When a Rock is Just a Rock
+			}),
+			n(FACTIONS, {
+				faction(FACTION_AZEROTHIAN_ARCHIVES, {
+					ach(19685, {	-- Tenured Archiviest
+						["minReputation"] = { FACTION_AZEROTHIAN_ARCHIVES, 5 },
+					}),
+				}),
+			}),
+			n(QUESTS, {
+				q(79226, {	-- The Big Dig: Traitor's Rest
+					["coord"] = { 61.6, 31.3, THALDRASZUS },
+					["isWeekly"] = true,
+					["provider"] = { "n", 112802 },	-- Eadweard Dalyngrigge
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+						currency(2819),	-- Archivist Knowledge
+					},
+				}),
+			}),
+			n(VENDORS, {
+				n(209192, {	-- Provisioner Aristta
+					["coord"] = { 61.4, 31.4, THALDRASZUS },
+					["g"] = {
+						i(213536, {	-- Priceless Artifact
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 1000 } },
+						}),
+						i(212635, {	-- Historian's Utility Belt
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } },
+						}),
+						i(212634, {	-- Historian's Fingerless Gloves
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } },
+						}),
+						i(212637, {	-- Historian's Striders
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } },
+						}),
+						i(212636, {	-- Historian's Trousers
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 7000 } },
+						}),
+						i(212633, {	-- Historian's Fitted Vest
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 7000 } },
+						}),
+						i(213276, {	-- Archivist's Magnifying Mace
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
+						}),
+						i(213275, {	-- Archivist's Rockpuller
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
+						}),
+						i(213274, {	-- Archivist's Pathfinder
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
+						}),
+						i(212870, {	-- Archivist's Stone Chisel
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
+						}),
+						i(208459, {	-- Archivist's Improvised Cudgetl
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
+						}),
+						i(208458, {	-- Archivist's Extravagant Lantern
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
+						}),
+						i(212941, {	-- Archivist's "Light Touch"
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
+						}),
+						i(208457, {	-- Archivist's Spelunking Torch
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
+						}),
+						i(208455, {	-- Archivist's Sturdy Hook
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
+						}),
+						i(208454, {	-- Archivist's Mining Pick
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
+						}),
+						i(208453, {	-- Archivist's Super Scooper
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
+						}),
+						i(208450, {	-- Coiled Archivist's Rope
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
+						}),
+						i(208547, {	-- Archivist's Reading Spectacles
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 12000 } },
+						}),
+						i(208546, {	-- Archivist's Rose-Tinted Glasses
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 12000 } },
+						}),
+						i(208456, {	-- Archivist's Elegant Bag
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 15000 } },
+						}),
+						i(212794, {	-- Historian's Hefty Habersack
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 15000 } },
+						}),
+						i(208452, {	-- Historian's Dapper Cap
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 15000 } },
+						}),
+						i(192796, {	-- Explorer's Stonehide Packbeast
+							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 20000 } },
+						}),
+					},
+				}),
+			}),
+		},
+	}),
+})));
+
+root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, {
+	n(AZEROTHIAN_ARCHIVES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+		q(79616),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434198)
+		q(79664),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434203)
+		q(79670),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434928)
+	})),
+}));
