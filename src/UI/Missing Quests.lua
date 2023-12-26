@@ -3,7 +3,6 @@ local appName, app = ...;
 local AssignChildren, SearchForField, SearchForFieldContainer
 	= app.AssignChildren, app.SearchForField, app.SearchForFieldContainer;
 local GetRelativeValue = app.GetRelativeValue;
-local UpdateParentProgress = app.UpdateParentProgress;
 
 -- Implementation
 app:GetWindow("Missing Quests", {

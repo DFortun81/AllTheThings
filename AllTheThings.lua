@@ -1413,6 +1413,7 @@ local function MergeProperties(g, t, noReplace, clone)
 		end
 	end
 end
+app.MergeProperties = MergeProperties;
 -- The base logic for turning a Table of data into an 'object' that provides dynamic information concerning the type of object which was identified
 -- based on the priority of possible key values
 local function CreateObject(t, rootOnly)
@@ -1827,6 +1828,7 @@ local function GetGroupItemIDWithModID(t, rawItemID, rawModID, rawBonusID)
 	end
 	return i;
 end
+app.GetGroupItemIDWithModID = GetGroupItemIDWithModID;
 -- Returns the ItemID, ModID, BonusID of the provided ModItemID
 -- Ex. 12345.05		=> 12345, 5
 -- Ex. 87654.23		=> 87654, 23
@@ -1868,7 +1870,7 @@ local function GroupMatchesParams(group, key, value, ignoreModID)
 		if group.npcID == value then return true; end
 	end
 end
-
+app.GroupMatchesParams = GroupMatchesParams;
 -- Returns proper, class-filtered specs for a given itemID
 local GetFixedItemSpecInfo
 -- Returns a string containing the spec icons, followed by their respective names if desired
@@ -13441,7 +13443,7 @@ RowOnEnter = function (self)
 		if toggleAttachTooltips then app.Settings:SetTooltipSetting("Enabled", true) end
 		local link = reference.link or reference.silentLink;
 		local _, linkAdded;
-		if link then
+		if link and reference.key ~= "questID" then
 			-- app.PrintDebug("OnRowEnter-SetDirectlink",link);
 			-- Safely attempt setting the tooltip link from the data
 			_, linkAdded = pcall(GameTooltip.SetHyperlink, GameTooltip, link);
@@ -13474,8 +13476,8 @@ RowOnEnter = function (self)
 				AttachTooltipSearchResults(GameTooltip, 1, "speciesID:" .. reference.speciesID, SearchForField, "speciesID", reference.speciesID);
 			elseif reference.titleID then
 				AttachTooltipSearchResults(GameTooltip, 1, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID);
-			elseif refQuestID then
-				AttachTooltipSearchResults(GameTooltip, 1, "quest:"..refQuestID, SearchForField, "questID", refQuestID);
+			--elseif refQuestID then
+				--AttachTooltipSearchResults(GameTooltip, 1, "quest:"..refQuestID, SearchForField, "questID", refQuestID);
 			elseif reference.flightPathID then
 				AttachTooltipSearchResults(GameTooltip, 1, "fp:"..reference.flightPathID, SearchForField, "flightPathID", reference.flightPathID);
 			elseif reference.achievementID then
@@ -13631,6 +13633,9 @@ RowOnEnter = function (self)
 			if additionaLine then
 				GameTooltip:AddDoubleLine(" ", additionaLine, 1, 1, 1, 1, 1, 1);
 			end
+		end
+		if reference.questID and not reference.objectiveID then
+			app.AddQuestObjectivesToTooltip(GameTooltip, reference);
 		end
 		if reference.providers then
 			local first = true;
@@ -20905,7 +20910,6 @@ end
 app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	-- print("HEIRLOOMS_UPDATED",itemID,kind)
 	if itemID then
-		app.RefreshQuestInfo();
 		UpdateRawID("itemID", itemID);
 		app.Audio:PlayFanfare();
 		app:TakeScreenShot("Heirlooms");

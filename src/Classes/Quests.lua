@@ -632,7 +632,7 @@ app.CheckQuestInfo = function(questID, isTest)
 end
 
 -- Query Completed Quests
-local QueryCompletedQuests;
+local QueryCompletedQuests, RefreshQuestInfo;
 -- TODO: Refactor this to make these two functions more or less do the same thing.
 if app.GameBuildVersion > 100000 then
 	local MAX = 999999;
@@ -711,7 +711,7 @@ if app.GameBuildVersion > 100000 then
 		-- app.PrintDebugPrior("RefreshedQuestCompletionState")
 	end
 	local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback;
-	app.RefreshQuestInfo = function(questID)
+	RefreshQuestInfo = function(questID)
 		-- app.PrintDebug("RefreshQuestInfo",questID)
 		if questID then
 			RefreshQuestCompletionState(questID);
@@ -719,7 +719,7 @@ if app.GameBuildVersion > 100000 then
 			AfterCombatOrDelayedCallback(RefreshQuestCompletionState, 1);
 		end
 	end
-	tinsert(app.EventHandlers.OnPlayerLevelUp, app.RefreshQuestInfo);
+	tinsert(app.EventHandlers.OnPlayerLevelUp, RefreshQuestInfo);
 else
 	QueryCompletedQuests = function()
 		-- Mark all previously completed quests.
@@ -735,7 +735,44 @@ else
 		end
 		wipe(DirtyQuests);
 	end
-	app.RefreshQuestInfo = function(questID)
+	local function QuestCompletionHelper(questID)
+		-- Search ATT for the related quests.
+		local searchResults = SearchForField("questID", questID);
+		if #searchResults > 0 then
+			-- Only increase progress for Quests as Collectible users.
+			if app.Settings.Collectibles.Quests then
+				-- Attempt to cleanly refresh the data.
+				for i,result in ipairs(searchResults) do
+					if result.visible and result.parent and result.parent.total then
+						result.marked = true;
+					end
+				end
+				for i,result in ipairs(searchResults) do
+					if result.marked then
+						result.marked = nil;
+						if result.total then
+							-- This is an item that has a relative set of groups
+							app.UpdateParentProgress(result);
+
+							-- If this is NOT a group...
+							if not result.g and result.collectible then
+								-- If we've collected the item, use the "Show Collected Items" filter.
+								result.visible = app.CollectedItemVisibilityFilter(result);
+							end
+						else
+							app.UpdateParentProgress(result.parent);
+
+							if result.collectible then
+								-- If we've collected the item, use the "Show Collected Items" filter.
+								result.visible = app.CollectedItemVisibilityFilter(result);
+							end
+						end
+					end
+				end
+			end
+		end
+	end
+	RefreshQuestInfo = function(questID)
 		if questID then
 			local quest = SearchForField("questID", questID);
 			if #quest > 0 and not quest[1].repeatable then
@@ -757,7 +794,7 @@ else
 		
 		local any = false;
 		for questID,completed in pairs(DirtyQuests) do
-			app.QuestCompletionHelper(tonumber(questID));
+			QuestCompletionHelper(tonumber(questID));
 			any = true;
 		end
 		if any then
@@ -1431,6 +1468,7 @@ app.CreateVignette = app.ExtendClass("Quest", "Vignette", "vignetteID", {
 });
 app.AddQuestObjectivesToTooltip = function(tooltip, reference)
 	local objectified = false;
+	print("AddQuestObjectivesToTooltip");
 	local questLogIndex = GetQuestLogIndexByID(reference.questID);
 	if questLogIndex then
 		local lore, objective = GetQuestLogQuestText(questLogIndex);
@@ -1501,7 +1539,7 @@ app.events.QUEST_ACCEPTED = function(questLogIndex, questID)
 end
 app.events.QUEST_LOG_UPDATE = function()
 	app:UnregisterEvent("QUEST_LOG_UPDATE");
-	app.RefreshQuestInfo();
+	RefreshQuestInfo();
 end
 app.events.QUEST_TURNED_IN = function(questID)
 	if questID then
@@ -1514,7 +1552,7 @@ app.events.QUEST_TURNED_IN = function(questID)
 				MostRecentQuestTurnIns[6] = nil;
 			end
 		end
-		app.RefreshQuestInfo(questID);
+		RefreshQuestInfo(questID);
 	end
 end
 app:RegisterEvent("BAG_NEW_ITEMS_UPDATED");
@@ -1537,8 +1575,8 @@ tinsert(app.EventHandlers.OnRefreshCollections, app.events.QUEST_LOG_UPDATE);
 if app.GameBuildVersion > 50000 then
 	local _reportedBadQuestSequence;
 	local BackTraceChecks = {};
-	-- Traces backwards in the sequence for 'questID' via parent relationships within 'parents' to see if 'checkQuestID' is reached and returns true if so
 	local function BackTraceForSelf(parents, questID, checkQuestID)
+		-- Traces backwards in the sequence for 'questID' via parent relationships within 'parents' to see if 'checkQuestID' is reached and returns true if so
 		-- app.PrintDebug("Backtrace",questID)
 		wipe(BackTraceChecks);
 		local next = parents[questID];
@@ -1592,7 +1630,7 @@ if app.GameBuildVersion > 50000 then
 			end
 
 			-- Save this questRef (depth doesn't change the ref so only clone it once)
-			questRef = CreateObject(questRef, true);
+			questRef = app.CloneClassInstance(questRef, true);
 
 			-- force collectible for normally un-collectible but trackable things to make sure it shows in list if the quest needs to be completed to progess
 			-- unless a quest is specifically set to be non-collectible directly
@@ -1619,10 +1657,10 @@ if app.GameBuildVersion > 50000 then
 						-- print("Quest Item Provider",p[1], id);
 						local pRef = app.SearchForObject("itemID", id, "field");
 						if pRef then
-							NestObject(questRef, pRef, true, 1);
+							app.NestObject(questRef, pRef, true, 1);
 						else
 							pRef = app.CreateItem(id);
-							NestObject(questRef, pRef, nil, 1);
+							app.NestObject(questRef, pRef, nil, 1);
 						end
 						-- Make sure to always show the Quest starting item
 						pRef.OnUpdate = app.AlwaysShowUpdate;
@@ -1630,7 +1668,7 @@ if app.GameBuildVersion > 50000 then
 						if pRef.sourceQuests then
 							if not questRef.sourceQuests then questRef.sourceQuests = {}; end
 							-- app.PrintDebug("Add Provider SQs to Quest")
-							ArrayAppend(questRef.sourceQuests, pRef.sourceQuests);
+							app.ArrayAppend(questRef.sourceQuests, pRef.sourceQuests);
 						end
 					end
 				end
@@ -1700,7 +1738,7 @@ if app.GameBuildVersion > 50000 then
 
 		-- Perform a pass along the parents table to move clone references into the appropriate parent quest references
 		for qID,pID in pairs(parents) do
-			NestObject(refs[pID], refs[qID]);
+			app.NestObject(refs[pID], refs[qID]);
 		end
 	end
 
@@ -1768,7 +1806,7 @@ if app.GameBuildVersion > 50000 then
 							end
 							if search then
 								-- find the specific item which the link represents (not sure all of this is necessary with improved search)
-								local exactItemID = GetGroupItemIDWithModID(item);
+								local exactItemID = app.GetGroupItemIDWithModID(item);
 								local subItems = {};
 								local refinedMatches = app.GroupBestMatchingItems(search, exactItemID);
 								if refinedMatches then
@@ -1776,23 +1814,23 @@ if app.GameBuildVersion > 50000 then
 									for depth=3,1,-1 do
 										if refinedMatches[depth] then
 											for _,o in ipairs(refinedMatches[depth]) do
-												MergeProperties(item, o, true);
-												NestObjects(item, o.g);	-- no clone since item is cloned later
+												app.MergeProperties(item, o, true);
+												app.NestObjects(item, o.g);	-- no clone since item is cloned later
 											end
 										end
 									end
 									-- any matches with depth 0 will be nested
 									if refinedMatches[0] then
-										ArrayAppend(subItems, refinedMatches[0]);	-- no clone since item is cloned later
+										app.ArrayAppend(subItems, refinedMatches[0]);	-- no clone since item is cloned later
 									end
 								end
 								-- then pull in any other sub-items which were not the item itself
-								NestObjects(item, subItems);	-- no clone since item is cloned later
+								app.NestObjects(item, subItems);	-- no clone since item is cloned later
 							end
 
 							-- don't let cached groups pollute potentially inaccurate raw Data
 							item.link = nil;
-							NestObject(questObject, item, true);
+							app.NestObject(questObject, item, true);
 						end
 					end
 				end
@@ -1815,14 +1853,14 @@ if app.GameBuildVersion > 50000 then
 					cachedCurrency = SearchForField("currencyID", currencyID);
 					for _,data in ipairs(cachedCurrency) do
 						-- cache record is the item itself
-						if GroupMatchesParams(data, "currencyID", currencyID) then
-							MergeProperties(item, data);
+						if app.GroupMatchesParams(data, "currencyID", currencyID) then
+							app.MergeProperties(item, data);
 						-- cache record is associated with the item
 						else
-							NestObject(item, data);	-- no clone since item is cloned later
+							app.NestObject(item, data);	-- no clone since item is cloned later
 						end
 					end
-					NestObject(questObject, item, true);
+					app.NestObject(questObject, item, true);
 				end
 			end
 
@@ -1849,7 +1887,7 @@ if app.GameBuildVersion > 50000 then
 				for _,data in ipairs(cachedQuests) do
 					-- only merge into the quest object properties from an object in cache with this questID
 					if data.questID and data.questID == questID then
-						MergeProperties(questObject, data, true);
+						app.MergeProperties(questObject, data, true);
 						-- need to exclusively copy cached values for certain fields since normal merge logic will not copy them
 						-- ref: quest 49675/58703
 						if data.e then questObject.e = data.e; end
@@ -1864,7 +1902,7 @@ if app.GameBuildVersion > 50000 then
 								-- cached items need to merge with corresponding API item based on simple itemID
 								elseif apiItems[o.itemID] then
 									-- app.PrintDebug("nested-merged",o.hash)
-									MergeProperties(apiItems[o.itemID], o, true);
+									app.MergeProperties(apiItems[o.itemID], o, true);
 								--  if it is not a WQ or is a 'raid' (world boss)
 								elseif questObject.isRaid or not questObject.isWorldQuest then
 									-- otherwise just get nested
@@ -1883,7 +1921,7 @@ if app.GameBuildVersion > 50000 then
 				for _,item in pairs(apiItems) do
 					item.sourceParent = nil;
 				end
-				NestObjects(questObject, nonItemNested, true);
+				app.NestObjects(questObject, nonItemNested, true);
 			end
 
 			-- Resolve all symbolic links now that the quest contains items
@@ -1896,7 +1934,7 @@ if app.GameBuildVersion > 50000 then
 						for k,o in ipairs(item.g) do
 							if o.itemID == 140495 then	-- Torn Invitation
 								local searchResults = SearchForField("questID", 44058);	-- Volpin the Elusive
-								NestObjects(o, searchResults, true);
+								app.NestObjects(o, searchResults, true);
 							end
 						end
 					end

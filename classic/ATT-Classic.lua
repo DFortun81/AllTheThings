@@ -8624,43 +8624,6 @@ function app.GetNumberOfItemsUntilNextPercentage(progress, total)
 		end
 	end
 end
-function app.QuestCompletionHelper(questID)
-	-- Search ATT for the related quests.
-	local searchResults = SearchForField("questID", questID);
-	if #searchResults > 0 then
-		-- Only increase progress for Quests as Collectible users.
-		if app.Settings.Collectibles.Quests then
-			-- Attempt to cleanly refresh the data.
-			for i,result in ipairs(searchResults) do
-				if result.visible and result.parent and result.parent.total then
-					result.marked = true;
-				end
-			end
-			for i,result in ipairs(searchResults) do
-				if result.marked then
-					result.marked = nil;
-					if result.total then
-						-- This is an item that has a relative set of groups
-						UpdateParentProgress(result);
-
-						-- If this is NOT a group...
-						if not result.g and result.collectible then
-							-- If we've collected the item, use the "Show Collected Items" filter.
-							result.visible = app.CollectedItemVisibilityFilter(result);
-						end
-					else
-						UpdateParentProgress(result.parent);
-
-						if result.collectible then
-							-- If we've collected the item, use the "Show Collected Items" filter.
-							result.visible = app.CollectedItemVisibilityFilter(result);
-						end
-					end
-				end
-			end
-		end
-	end
-end
 
 -- Refresh certain kinds of data.
 local function RefreshCollections()
