@@ -253,7 +253,7 @@ app:GetWindow("Auctions", {
 						end,
 						OnUpdate = function(data)
 							data.visible = true;
-							if app.Settings:Get("DebugMode") then
+							if app.MODE_DEBUG then
 								-- Novaplane made me do it
 								data.trackable = true;
 								data.saved = true;
@@ -272,11 +272,11 @@ app:GetWindow("Auctions", {
 							app.Settings:ToggleAccountMode();
 						end,
 						OnUpdate = function(data)
-							if app.Settings:Get("DebugMode") then
+							if app.MODE_DEBUG then
 								data.visible = false;
 							else
 								data.visible = true;
-								if app.Settings:Get("AccountMode") then
+								if app.MODE_ACCOUNT then
 									data.trackable = true;
 									data.saved = true;
 								else
@@ -295,7 +295,7 @@ app:GetWindow("Auctions", {
 							app.Settings:ToggleFactionMode();
 						end,
 						OnUpdate = function(data)
-							if app.Settings:Get("DebugMode") or not app.Settings:Get("AccountMode") then
+							if app.MODE_DEBUG or not app.MODE_ACCOUNT then
 								data.visible = false;
 							else
 								data.visible = true;

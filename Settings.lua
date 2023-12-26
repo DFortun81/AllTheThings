@@ -1320,6 +1320,8 @@ settings.UpdateMode = function(self, doRefresh)
 		end
 	end
 	if self:Get("DebugMode") then
+		app.MODE_ACCOUNT = nil;
+		app.MODE_DEBUG = true;
 		filterSet.Group()
 		filterSet.Unobtainable()
 		filterSet.Visible(true)
@@ -1336,9 +1338,8 @@ settings.UpdateMode = function(self, doRefresh)
 		filterSet.Trackable()
 
 		settings:SetThingTracking("Debug")
-		app.MODE_ACCOUNT = nil
-		app.MODE_DEBUG = true
 	else
+		app.MODE_DEBUG = nil;
 		filterSet.Visible(true)
 		filterSet.Group(true)
 		filterSet.DefaultGroup(true)
@@ -1356,12 +1357,12 @@ settings.UpdateMode = function(self, doRefresh)
 		end
 
 		if self:Get("AccountMode") then
+			app.MODE_ACCOUNT = true;
 			filterSet.FilterID()
 			filterSet.Class()
 			filterSet.RequireSkill()
 			filterSet.MinReputation()
 			filterSet.CustomCollect()
-			app.MODE_ACCOUNT = true
 			if self:Get("FactionMode") then
 				filterSet.Race(true, true)
 			else
@@ -1371,6 +1372,7 @@ settings.UpdateMode = function(self, doRefresh)
 			-- Force Account-Wide with Account Mode otherwise you get really dumb situations
 			settings:SetThingTracking("Account")
 		else
+			app.MODE_ACCOUNT = nil;
 			filterSet.FilterID(true)
 			filterSet.Class(true)
 			filterSet.Race(true)
@@ -1379,7 +1381,6 @@ settings.UpdateMode = function(self, doRefresh)
 			filterSet.CustomCollect(true)
 
 			settings:SetThingTracking()
-			app.MODE_ACCOUNT = nil
 		end
 
 		if self:Get("Show:OnlyActiveEvents") then
@@ -1387,8 +1388,6 @@ settings.UpdateMode = function(self, doRefresh)
 		else
 			filterSet.Event()
 		end
-
-		app.MODE_DEBUG = nil
 	end
 	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT
 	if self:Get("Show:CompletedGroups") then

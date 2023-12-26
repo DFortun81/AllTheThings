@@ -161,7 +161,7 @@ app:GetWindow("Missing Quests", {
 	end,
 	OnUpdate = function(self, ...)
 		-- Force Debug Mode
-		local debugMode = app.Settings:Get("DebugMode");
+		local debugMode = app.MODE_DEBUG;
 		if not debugMode then
 			ATTClassicSettings.General.DebugMode = true;
 			app.Settings:UpdateMode();

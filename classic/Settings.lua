@@ -93,9 +93,9 @@ local GeneralSettingsBase = {
 		["AccountWide:Titles"] = false,
 		["AccountWide:Toys"] = true,
 		["Hide:PvP"] = false,
+		["DeathTracker"] = app.GameBuildVersion < 40000,
 		["Thing:Achievements"] = true,
 		["Thing:BattlePets"] = true,
-		["Thing:Deaths"] = true,
 		["Thing:Exploration"] = true,
 		["Thing:FlightPaths"] = true,
 		["Thing:Heirlooms"] = true,
@@ -285,7 +285,7 @@ settings.GetModeString = function(self)
 		local thingCount = 0;
 		local totalThingCount = 0;
 		local excludes = {
-			["Thing:Deaths"] = true,
+			["DeathTracker"] = true,
 			["Thing:RWP"] = true,
 		};
 		if not (C_TransmogCollection and C_TransmogCollection.GetIllusions) then
@@ -480,6 +480,8 @@ settings.ToggleSourceLocations = function(self)
 end
 settings.UpdateMode = function(self)
 	if self:Get("DebugMode") then
+		app.MODE_ACCOUNT = nil;
+		app.MODE_DEBUG = true
 		app.GroupFilter = app.NoFilter;
 		app.VisibilityFilter = app.NoFilter;
 
@@ -503,6 +505,7 @@ settings.UpdateMode = function(self)
 		-- Modules
 		app.Modules.PVPRanks.SetCollectible(true);
 	else
+		app.MODE_DEBUG = nil;
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		app.GroupFilter = app.FilterItemClass;
 
@@ -520,6 +523,7 @@ settings.UpdateMode = function(self)
 		app.Modules.PVPRanks.SetCollectible(self:Get("Thing:PVPRanks"));
 
 		if self:Get("AccountMode") then
+			app.MODE_ACCOUNT = true;
 			app.ItemTypeFilter = app.NoFilter;
 			app.ClassRequirementFilter = app.NoFilter;
 			app.RequiredSkillFilter = app.NoFilter;
@@ -530,6 +534,7 @@ settings.UpdateMode = function(self)
 				app.RaceRequirementFilter = app.NoFilter;
 			end
 		else
+			app.MODE_ACCOUNT = nil;
 			app.ItemTypeFilter = app.FilterItemClass_RequireItemFilter;
 			app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
 			app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
@@ -950,7 +955,7 @@ BattlePetsAccountWideCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "TOPLEFT",
 
 local DeathsCheckBox = settings:CreateCheckBox("Deaths / Soul Fragments",
 function(self)
-	self:SetChecked(settings:Get("Thing:Deaths"));
+	self:SetChecked(settings:Get("DeathTracker"));
 	if settings:Get("DebugMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -960,7 +965,7 @@ function(self)
 	end
 end,
 function(self)
-	settings:Set("Thing:Deaths", self:GetChecked());
+	settings:Set("DeathTracker", self:GetChecked());
 	settings:UpdateMode();
 	app:RefreshDataCompletely("DeathsCheckBox");
 end);
@@ -974,7 +979,7 @@ DeathsCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "BOTTOMLEFT", 0, 4);
 local DeathsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Deaths"));
-	if settings:Get("DebugMode") or not settings:Get("Thing:Deaths") then
+	if settings:Get("DebugMode") or not settings:Get("DeathTracker") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else

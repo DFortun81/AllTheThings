@@ -1565,12 +1565,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 
 				local regroup = {};
-				if app.Settings:Get("DebugMode") then
+				if app.MODE_DEBUG then
 					for i,j in ipairs(group) do
 						tinsert(regroup, j);
 					end
 				else
-					if app.Settings:Get("AccountMode") then
+					if app.MODE_ACCOUNT then
 						for i,j in ipairs(group) do
 							if app.RecursiveUnobtainableFilter(j) then
 								if j.questID and j.itemID then
@@ -1666,7 +1666,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		elseif paramA == "titleID" then
 			-- Don't do anything
 			local regroup = {};
-			if app.Settings:Get("AccountMode") then
+			if app.MODE_ACCOUNT then
 				for i,j in ipairs(group) do
 					if app.RecursiveUnobtainableFilter(j) then
 						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
@@ -1816,7 +1816,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 			end
-			if (#temp < 1 and not (paramA == "creatureID")) or app.Settings:Get("DebugMode") then
+			if (#temp < 1 and not (paramA == "creatureID")) or app.MODE_DEBUG then
 				for i,data in ipairs(unfiltered) do
 					tinsert(temp, data);
 				end
@@ -2180,7 +2180,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 				if app.Settings:GetTooltipSetting("Show:SpellRanks") then
-					if app.Settings:Get("AccountMode") or app.Settings:Get("DebugMode") then
+					if app.MODE_ACCOUNT or app.MODE_DEBUG then
 						-- Show all characters
 					else
 						-- Show only the current character
@@ -2855,7 +2855,7 @@ function app:GetDataCache()
 			nmr = false,
 			OnUpdate = function(self)
 				self.lvl = app.Level;
-				if app.Settings:Get("DebugMode") then
+				if app.MODE_DEBUG then
 					self.collectible = true;
 				else
 					self.collectible = false;
@@ -3725,7 +3725,7 @@ local commonAchievementHandlers = {
 end,
 ["DEDICATED_10M_OnUpdate"] = function(t)
 	rawset(t, "collectible", nil);
-	if app.Settings:Get("DebugMode") or app.Settings:Get("AccountMode") then
+	if app.MODE_DEBUG or app.MODE_ACCOUNT then
 		return false;
 	elseif IsInGroup() and GetNumGroupMembers() >= 9 then
 		rawset(t, "collectible", false);
@@ -3734,7 +3734,7 @@ end,
 end,
 ["DEDICATED_25M_OnUpdate"] = function(t)
 	rawset(t, "collectible", nil);
-	if app.Settings:Get("DebugMode") or app.Settings:Get("AccountMode") then
+	if app.MODE_DEBUG or app.MODE_ACCOUNT then
 		return false;
 	elseif IsInGroup() and GetNumGroupMembers() >= 21 then
 		rawset(t, "collectible", false);
@@ -5421,102 +5421,6 @@ end
 end
 end)();
 
--- Death Tracker Lib
-(function()
-local fields = {
-	["text"] = function(t)
-		return "Total Deaths";
-	end,
-	["icon"] = function(t)
-		return app.asset("Category_Deaths");
-	end,
-	["hash"] = function(t)
-		return "deathtracker";
-	end,
-	["progress"] = function(t)
-		return math.min(t.total, app.Settings.AccountWide.Deaths and ATTAccountWideData.Deaths or app.CurrentCharacter.Deaths);
-	end,
-	["OnTooltip"] = function(t)
-		local c = {};
-		for _,character in pairs(ATTCharacterData) do
-			if character and character.Deaths and character.Deaths > 0 then
-				tinsert(c, character);
-			end
-		end
-		if #c > 0 then
-			GameTooltip:AddLine(" ");
-			GameTooltip:AddLine("Deaths Per Character:");
-			app.Sort(c, function(a, b)
-				return a.Deaths > b.Deaths;
-			end);
-			for i,character in ipairs(c) do
-				GameTooltip:AddDoubleLine("  " .. string.gsub(character.text, "-" .. GetRealmName(), ""), character.Deaths, 1, 1, 1);
-			end
-		end
-	end,
-};
-if C_GameRules and C_GameRules.IsHardcoreActive() then
-	fields.description = function(t)
-		return "The ATT Gods must be sated. Go forth and attempt to level, mortal!\n\n 'Live! Die! Try Again!'\n";
-	end;
-	fields.total = function(t) return 1; end
-else
-	fields.description = function(t)
-		return "The ATT Gods must be sated. Go forth and attempt to level, mortal!\n\n 'Live! Die! Live Again!'\n";
-	end;
-	fields.total = function(t) return 1000; end
-end
-if GetStatistic and GetStatistic(60) then
-	-- Statistics are available, this means we can get the actual statistic from the server's database.
-	local OnUpdateForDeathTrackerLib = function(t)
-		if app.Settings:Get("Thing:Deaths") then
-			local stat = GetStatistic(60) or "0";
-			if stat == "--" then stat = "0"; end
-			local deaths = tonumber(stat);
-			if deaths > 0 and deaths > app.CurrentCharacter.Deaths then
-				ATTAccountWideData.Deaths = ATTAccountWideData.Deaths + (deaths - app.CurrentCharacter.Deaths);
-				app.CurrentCharacter.Deaths = deaths;
-			end
-			t.parent.progress = t.parent.progress + t.progress;
-			t.parent.total = t.parent.total + t.total;
-			t.visible = app.GroupVisibilityFilter(t);
-		else
-			t.visible = false;
-		end
-		return true;
-	end
-	fields.OnUpdate = function(t)
-		return OnUpdateForDeathTrackerLib;
-	end
-	app.events.PLAYER_DEAD = function()
-		app.Audio:PlayDeathSound();
-	end
-else
-	-- Oh boy, we have to track it ourselves!
-	local OnUpdateForDeathTrackerLib = function(t)
-		if app.Settings:Get("Thing:Deaths") then
-			t.parent.progress = t.parent.progress + t.progress;
-			t.parent.total = t.parent.total + t.total;
-			t.visible = app.GroupVisibilityFilter(t);
-		else
-			t.visible = false;
-		end
-		return true;
-	end
-	fields.OnUpdate = function(t)
-		return OnUpdateForDeathTrackerLib;
-	end
-	app.events.PLAYER_DEAD = function()
-		ATTAccountWideData.Deaths = ATTAccountWideData.Deaths + 1;
-		app.CurrentCharacter.Deaths = app.CurrentCharacter.Deaths + 1;
-		app.Audio:PlayDeathSound();
-		app:RefreshDataQuietly("PLAYER_DEAD");
-	end
-end
-app:RegisterEvent("PLAYER_DEAD");
-app.CreateDeathClass = app.CreateClass("DeathsTracker", "deaths", fields);
-end)();
-
 -- Difficulty Lib
 local GetDifficultyInfo = GetDifficultyInfo;
 (function()
@@ -5850,7 +5754,7 @@ local fields = {
 fields.collected = fields.saved;
 app.CreateFaction = app.CreateClass("Faction", "factionID", fields);
 app.OnUpdateReputationRequired = function(t)
-	if app.Settings:Get("DebugMode") or app.Settings:Get("AccountMode") then
+	if app.MODE_DEBUG or app.MODE_ACCOUNT then
 		t.visible = true;
 		return false;
 	else
@@ -7736,7 +7640,7 @@ local TAILORING = ATTC.SkillIDToSpellID[197];
 app.OnUpdateForCrafter = function(t)
 	t.visible = nil;
 	t.collectible = nil;
-	if app.Settings:Get("DebugMode") or app.Settings:Get("AccountMode") then
+	if app.MODE_DEBUG or app.MODE_ACCOUNT then
 		return false;
 	else
 		local skills = app.CurrentCharacter.ActiveSkills;
@@ -7751,7 +7655,7 @@ end;
 app.OnUpdateForOmarionsHandbook = function(t)
 	t.visible = true;
 	t.collectible = nil;
-	if app.Settings:Get("DebugMode") or app.Settings:Get("AccountMode") or IsQuestFlaggedCompleted(9233) or C_QuestLog_IsOnQuest(9233) then
+	if app.MODE_DEBUG or app.MODE_ACCOUNT or IsQuestFlaggedCompleted(9233) or C_QuestLog_IsOnQuest(9233) then
 		return false;
 	else
 		for spellID,skills in pairs(app.CurrentCharacter.ActiveSkills) do
@@ -8051,7 +7955,7 @@ local function StylizePlayerTitle(title, style, me)
 	end
 end
 local OnUpdateForSpecificGender = function(t)
-	if not (app.Settings:Get("AccountMode") or app.Settings:Get("DebugMode") or t.playerGender == UnitSex("player")) then
+	if not (app.MODE_ACCOUNT or app.MODE_DEBUG or t.playerGender == UnitSex("player")) then
 		t.visible = false;
 		return true;
 	elseif t.parent.titleIDs then
@@ -8061,7 +7965,7 @@ local OnUpdateForSpecificGender = function(t)
 	end
 end
 local OnUpdateForGenderedTitle = function(t)
-	if not (app.Settings:Get("AccountMode") or app.Settings:Get("DebugMode")) then
+	if not (app.MODE_ACCOUNT or app.MODE_DEBUG) then
 		t.progress = nil;
 		t.total = nil;
 		t.g = nil;
@@ -8542,10 +8446,10 @@ UpdateGroup = function(parent, group)
 					end
 				elseif ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
 					visible = true;
-				elseif app.Settings:Get("DebugMode") then
+				elseif app.MODE_DEBUG then
 					visible = true;
 				end
-			elseif app.Settings:Get("DebugMode") then
+			elseif app.MODE_DEBUG then
 				visible = true;
 			else
 				visible = false;
@@ -10231,7 +10135,7 @@ local function RowOnEnter(self)
 		end
 
 		-- Show Quest Prereqs
-		local isDebugMode = app.Settings:Get("DebugMode");
+		local isDebugMode = app.MODE_DEBUG;
 		if reference.sourceQuests and (isDebugMode or not reference.saved) then
 			local currentMapID, prereqs, bc = app.CurrentMapID, {}, {};
 			for i,sourceQuestID in ipairs(reference.sourceQuests) do

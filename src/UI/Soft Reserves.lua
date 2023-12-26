@@ -937,7 +937,7 @@ SoftReserveWindow = app:GetWindow("SoftReserves", {
 							});
 						end
 						
-						local debugMode = app.Settings:Get("DebugMode");
+						local debugMode = app.MODE_DEBUG;
 						local count = GetNumGuildMembers();
 						if count > 0 then
 							for guildIndex = 1, count, 1 do
