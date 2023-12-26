@@ -1417,10 +1417,11 @@ app.MergeProperties = MergeProperties;
 -- The base logic for turning a Table of data into an 'object' that provides dynamic information concerning the type of object which was identified
 -- based on the priority of possible key values
 local function CreateObject(t, rootOnly)
-	local object = app.CloneClassInstance(t, rootOnly);
-	if object and getmetatable(object) then return object; end
+	-- Commented this part out because there aren't enough class definitions exposed to the logic yet
+	-- Retail class design is still wildin' and doesn't use the CreateClass functionality
+	--local object = app.CloneClassInstance(t, rootOnly);
+	--if object and getmetatable(object) then return object; end
 	if not t then return {}; end
-
 	-- already an object, so need to create a new instance of the same data
 	if t.key then
 		local result = {};
