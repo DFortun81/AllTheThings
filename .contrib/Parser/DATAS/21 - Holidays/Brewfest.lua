@@ -44,7 +44,7 @@ local BREWFEST_TOKEN_COST = function(cost)
 end
 -- #endif
 local BREWFEST_RIDING_RAMS_ONUPDATE = [[function(t)
-	if not (C_QuestLog.IsQuestFlaggedCompleted(t.sourceQuests[1])) then
+	if not (_.IsQuestFlaggedCompleted(t.sourceQuests[1])) then
 -- #if NOT ANYCLASSIC
 		t.description = "You are unable to purchase the rams from the vendor because you did not complete the 'Brewfest Riding Rams' quest back in 2007. :(";
 		for i,item in ipairs(t.g) do
@@ -108,26 +108,26 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t)
 	local link = item.link or RETRIEVING_DATA;
 	GameTooltip:AddLine(" ");
 	GameTooltip:AddLine("One-Time Quests:");
-	local coren = C_QuestLog.IsQuestFlaggedCompleted(12491);
+	local coren = _.IsQuestFlaggedCompleted(12491);
 	GameTooltip:AddDoubleLine(" " .. icon .. " 40 for Direbrew's Dire Brew", _.L[coren and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"]);
 
 	-- #if AFTER WRATH
-	local pink = C_QuestLog.IsQuestFlaggedCompleted(_.FactionID == Enum.FlightPathFaction.Horde and 11120 or 11118);
+	local pink = _.IsQuestFlaggedCompleted(_.FactionID == Enum.FlightPathFaction.Horde and 11120 or 11118);
 	GameTooltip:AddDoubleLine(" " .. icon .. " 40 for Pink Elekks On Parade", _.L[pink and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"]);
 	-- #endif
 
-	local chucked = C_QuestLog.IsQuestFlaggedCompleted(12022);
+	local chucked = _.IsQuestFlaggedCompleted(12022);
 	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for Chug and Chuck", _.L[chucked and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"]);
 
-	local back = C_QuestLog.IsQuestFlaggedCompleted(11122);
+	local back = _.IsQuestFlaggedCompleted(11122);
 	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for There And Back Again", _.L[back and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"]);
 
 	GameTooltip:AddLine(" ");
 	GameTooltip:AddLine("Daily Quests:");
-	local barked = C_QuestLog.IsQuestFlaggedCompleted(11293);
+	local barked = _.IsQuestFlaggedCompleted(11293);
 	GameTooltip:AddDoubleLine(" " .. icon .. " 15 for Brewfest Barking", _.L[barked and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
 
-	local invasion = C_QuestLog.IsQuestFlaggedCompleted(_.FactionID == Enum.FlightPathFaction.Horde and 12192 or 12020);
+	local invasion = _.IsQuestFlaggedCompleted(_.FactionID == Enum.FlightPathFaction.Horde and 12192 or 12020);
 	GameTooltip:AddDoubleLine(" " .. icon .. " 10 for Dark Iron Invasion", _.L[invasion and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"]);
 	GameTooltip:AddLine(" " .. icon .. " 0-22 for Ram Racing Dialog** (every 18 hours)");
 	GameTooltip:AddLine("** Log out in a rested location and it will be reset after 8 hours.");
@@ -1218,7 +1218,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #IF ANYCLASSIC
 				-- #if AFTER WRATH
 				["OnUpdate"] = [[function(t)
-					if not (C_QuestLog.IsQuestFlaggedCompleted(t.questID) or C_QuestLog.IsQuestFlaggedCompleted(t.altQuests[1])) then
+					if not (_.IsQuestFlaggedCompleted(t.questID) or _.IsQuestFlaggedCompleted(t.altQuests[1])) then
 						if ATTAccountWideData.Achievements[2796] then
 							t.collected = 2;
 							t.OnUpdate = nil;
@@ -1254,7 +1254,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #IF ANYCLASSIC
 				-- #if AFTER WRATH
 				["OnUpdate"] = [[function(t)
-					if not (C_QuestLog.IsQuestFlaggedCompleted(t.questID) or C_QuestLog.IsQuestFlaggedCompleted(t.altQuests[1])) then
+					if not (_.IsQuestFlaggedCompleted(t.questID) or _.IsQuestFlaggedCompleted(t.altQuests[1])) then
 						if ATTAccountWideData.Achievements[2796] then
 							t.collected = 2;
 							t.OnUpdate = nil;

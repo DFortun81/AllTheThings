@@ -7,8 +7,8 @@ local _, app = ...;
 -- Encapsulates the functionality required to perform refreshes of a User's current Character and Account collection
 
 -- Global locals
-local wipe, math_max, tonumber, InCombatLockdown, coroutine, type, select, C_TransmogCollection_GetIllusions, GetNumTitles, pcall, IsTitleKnown, ipairs, pairs =
-	  wipe, math.max, tonumber, InCombatLockdown, coroutine, type, select, C_TransmogCollection.GetIllusions, GetNumTitles, pcall, IsTitleKnown, ipairs, pairs;
+local wipe, math_max, tonumber, InCombatLockdown, coroutine, type, select, GetNumTitles, pcall, IsTitleKnown, ipairs, pairs =
+	  wipe, math.max, tonumber, InCombatLockdown, coroutine, type, select, GetNumTitles, pcall, IsTitleKnown, ipairs, pairs;
 local C_MountJournal_GetMountInfoByID, C_MountJournal_GetMountIDs, PlayerHasToy, C_LegendaryCrafting_GetRuneforgePowerInfo, GetAchievementInfo, C_TransmogCollection_GetSourceInfo =
 	  C_MountJournal.GetMountInfoByID, C_MountJournal.GetMountIDs, PlayerHasToy, C_LegendaryCrafting.GetRuneforgePowerInfo, GetAchievementInfo, C_TransmogCollection.GetSourceInfo;
 
@@ -277,16 +277,8 @@ local function RefreshCollections()
 	-- for the first auto-refresh, don't actually print to chat since some users don't like that auto-chat on login
 	local print = app.__FirstRefresh and app.EmptyFunction or app.print;
 	app.__FirstRefresh = nil;
-
-	print(app.L["REFRESHING_COLLECTION"]);
 	while InCombatLockdown() do coroutine.yield(); end
-
-	-- Harvest Illusion Collections
-	local collectedIllusions = ATTAccountWideData.Illusions;
-	for _,illusion in ipairs(C_TransmogCollection_GetIllusions()) do
-		if illusion.isCollected then collectedIllusions[illusion.sourceID] = 1; end
-	end
-	coroutine.yield();
+	print(app.L["REFRESHING_COLLECTION"]);
 
 	-- Harvest Title Collections
 	local acctTitles, charTitles, charGuid = ATTAccountWideData.Titles, {}, app.GUID;

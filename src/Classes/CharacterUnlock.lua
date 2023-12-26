@@ -55,7 +55,7 @@ api.OnLoad = function()
 		saved = SavedAsSpell,
 		characterUnlock = app.ReturnTrue,
 	})
-	local CreateCharacterUnlockQuest = app.ExtendClass("BaseQuest", "BaseCharacterUnlockQuest", "questID", {
+	local CreateCharacterUnlockQuest = app.ExtendClass("Quest", "BaseCharacterUnlockQuest", "questID", {
 		collectible = Collectible,
 		collected = CollectedAsQuest,
 		trackable = app.ReturnTrue,

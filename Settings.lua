@@ -172,6 +172,7 @@ local TooltipSettingsBase = {
 		["Lore"] = true,
 		["MainListScale"] = 1,
 		["MiniListScale"] = 1,
+		["Objectives"] = true,
 		["Precision"] = 2,
 		["PlayDeathSound"] = false,
 		["Progress"] = true,
@@ -205,6 +206,8 @@ local TooltipSettingsBase = {
 		["CompletedBy"] = true,
 		["Updates:AdHoc"] = true,
 		["creatures"] = true,
+		["awp"] = true,
+		["rwp"] = true,
 	},
 }
 
@@ -3628,6 +3631,7 @@ headerAdditionalInformation:SetPoint("TOP", checkboxUseClassColorForBorder, "BOT
 local ids = {
 	["achievementID"] = L["ACHIEVEMENT_ID"],
 	["achievementCategoryID"] = L["ACHIEVEMENT_CATEGORY_ID"],
+	["awp"] = "Added With Patch",
 	["artifactID"] = L["ARTIFACT_ID"],
 	["azeriteEssenceID"] = L["AZERITE_ESSENCE_ID"],
 	["b"] = "Binding",
@@ -3654,8 +3658,11 @@ local ids = {
 	["mapID"] = L["MAP_ID"],
 	["modID"] = "Mod ID",
 	["objectID"] = L["OBJECT_ID"],
+	["__type"] = "Object Type",
+	["Objectives"] = "Objectives",
 	["questID"] = "Quest ID",
 	["QuestGivers"] = "Quest Givers",
+	["rwp"] = "Removed With Patch",
 	["runeforgePowerID"] = "Runeforge Power ID",
 	["setID"] = L["SET_ID"],
 	["sourceID"] = L["SOURCE_ID"],

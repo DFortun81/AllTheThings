@@ -115,7 +115,7 @@ local DefaultFields = {
 	end,
 	-- Whether or not something is repeatable.
 	["repeatable"] = function(t)
-		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
+		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly;
 	end,
 	["costProgress"] = returnZero,
     ["costTotal"] = returnZero,
@@ -192,12 +192,12 @@ local function CreateClassInstance(key, id, t)
 	]]--
 	return t;
 end
-local function CloneClassInstance(object)
+local function CloneClassInstance(object, ignoreChildren)
 	local clone = {};
 	if object[1] then
 		-- Create an Array of Clones
 		for i,o in ipairs(object) do
-			tinsert(clone, CloneClassInstance(o));
+			tinsert(clone, CloneClassInstance(o, ignoreChildren));
 		end
 		return clone;
 	else
@@ -206,11 +206,15 @@ local function CloneClassInstance(object)
 			rawset(clone, k, v);
 		end
 		if object.g then
-			clone.g = {};
-			for i,o in ipairs(object.g) do
-				o = CloneClassInstance(o);
-				tinsert(clone.g, o);
-				o.parent = clone;
+			if ignoreChildren then
+				clone.g = nil;
+			else
+				clone.g = {};
+				for i,o in ipairs(object.g) do
+					o = CloneClassInstance(o);
+					tinsert(clone.g, o);
+					o.parent = clone;
+				end
 			end
 		end
 
