@@ -149,7 +149,7 @@ end
 
 -- TODO: Get rid of this after retail supports SetCollected
 local MarkQuestComplete;
-if app.GameBuildVersion > 100000 then
+if app.IsRetail then
 	MarkQuestComplete = function(questID)
 		ATTAccountWideData.Quests[questID] = 1;
 		app.CurrentCharacter.Quests[questID] = 1;
@@ -162,6 +162,7 @@ end
 
 -- Quest Completion Lib
 local DirtyQuests, PrintQuestInfo = {};
+local CollectibleAsQuest, IsQuestFlaggedCompletedForObject;
 local IgnoreErrorQuests = setmetatable({
 	[1476]=1,	-- Hearts of the Pure (Horde Pre-req for the Undercity Succubus Binding quest)
 	[1474]=1,	-- The Binding (Succubus) [Undercity]
@@ -292,52 +293,115 @@ local CompletedQuests = setmetatable({}, {
 local function IsQuestFlaggedCompleted(questID)
 	return questID and CompletedQuests[questID];
 end
-local function IsQuestFlaggedCompletedForObject(t)
-	local questID = t.questID;
-	if questID then
-		if IsQuestFlaggedCompleted(questID) then return 1; end
-		if app.Settings.AccountWide.Quests and not t.repeatable then
-			if ATTAccountWideData.Quests[questID] then
-				return 2;
-			end
-		end
-	end
-	local altQuests = t.altQuests;
-	if altQuests then
-		for i,questID in ipairs(altQuests) do
-			if IsQuestFlaggedCompleted(questID) then
-				return 2;
-			end
-		end
-		if app.Settings.AccountWide.Quests then
-			for i,questID in ipairs(altQuests) do
+if app.IsRetail then
+	IsQuestFlaggedCompletedForObject = function(t)
+		local questID = t.questID;
+		if questID then
+			if IsQuestFlaggedCompleted(questID) then return 1; end
+			if app.Settings.AccountWide.Quests and not t.repeatable then
 				if ATTAccountWideData.Quests[questID] then
 					return 2;
 				end
 			end
 		end
+		-- account-mode: any character is viable to complete the quest, so alt quest completion shouldn't count for this quest
+		-- this quest cannot be obtained if any altQuest is completed on this character and not tracking as account mode
+		-- If the quest has an altQuest which was completed on this character and this character is not in Party Sync nor tracking Locked Quests, return shared completed
+		if not app.MODE_DEBUG_OR_ACCOUNT and not IsPartySyncActive and not app.Settings.Collectibles.QuestsLocked and t.altcollected then
+			return 2;
+		end
 	end
-end
---[[
--- CRIEVE NOTE: I don't fully understand why this exists and would like to kill this.
-IsQuestFlaggedCompletedForObject = function(t)
-	local questID = t.questID;
-	if questID then
-		if IsQuestFlaggedCompleted(questID) then return 1; end
-		if app.Settings.AccountWide.Quests and not t.repeatable then
-			if ATTAccountWideData.Quests[questID] then
-				return 2;
+	CollectibleAsQuest = function(t)
+		-- consolidated representation of whether a Thing can be collectible via QuestID
+		local questID = t.questID;
+		return
+		-- must have a questID associated
+		questID
+		-- must not be repeatable
+		and not t.repeatable
+		and
+		(
+			(	-- Regular Quests
+				app.Settings.Collectibles.Quests
+				and
+				(
+					(
+						(
+							-- debug/account mode
+							app.MODE_DEBUG_OR_ACCOUNT
+							-- or able to access quest on current character
+							or not t.locked
+						)
+						and
+						(
+							-- collectible by any character
+							app.Settings.AccountWide.Quests
+							-- or not OTQ or is OTQ not yet known to be completed by any character, or is OTQ completed by this character
+							or (not ATTAccountWideData.OneTimeQuests[questID] or ATTAccountWideData.OneTimeQuests[questID] == app.GUID)
+						)
+					)
+					-- If it is an item/cost and associated to an active quest.
+					-- TODO: add t.requiredForQuestID
+					or (not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog_IsOnQuest(questID))
+				)
+			)
+			or
+			(	-- Locked Quests
+				app.Settings.Collectibles.QuestsLocked
+				and
+				(
+					-- not able to access quest on current character
+					t.locked
+					and
+					(
+						-- debug/account mode
+						app.MODE_DEBUG_OR_ACCOUNT
+						or
+						-- available in party sync
+						not t.DisablePartySync
+					)
+				)
+			)
+		)
+	end
+else
+	IsQuestFlaggedCompletedForObject = function(t)
+		local questID = t.questID;
+		if questID then
+			if IsQuestFlaggedCompleted(questID) then return 1; end
+			if app.Settings.AccountWide.Quests and not t.repeatable then
+				if ATTAccountWideData.Quests[questID] then
+					return 2;
+				end
+			end
+		end
+		local altQuests = t.altQuests;
+		if altQuests then
+			for i,questID in ipairs(altQuests) do
+				if IsQuestFlaggedCompleted(questID) then
+					return 2;
+				end
+			end
+			if app.Settings.AccountWide.Quests then
+				for i,questID in ipairs(altQuests) do
+					if ATTAccountWideData.Quests[questID] then
+						return 2;
+					end
+				end
 			end
 		end
 	end
-	-- account-mode: any character is viable to complete the quest, so alt quest completion shouldn't count for this quest
-	-- this quest cannot be obtained if any altQuest is completed on this character and not tracking as account mode
-	-- If the quest has an altQuest which was completed on this character and this character is not in Party Sync nor tracking Locked Quests, return shared completed
-	if not app.MODE_DEBUG_OR_ACCOUNT and not IsPartySyncActive and not app.Settings.Collectibles.QuestsLocked and t.altcollected then
-		return 2;
+	CollectibleAsQuest = function(t)
+		if app.Settings.Collectibles.Quests then
+			if C_QuestLog_IsOnQuest(t.questID) then
+				return true;
+			end
+			if t.locked then return app.Settings.AccountWide.Quests; end
+			return not t.repeatable and not t.isBreadcrumb;
+		end
 	end
 end
-]]--
+
 local function IsQuestSaved(questID)
 	-- NOTE: If Party Sync is supported, this will be replaced!
 	return IsQuestFlaggedCompleted(questID);
@@ -481,7 +545,7 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 		end
 		tinsert(info, "skills"..(app.TableConcat(skills) or ""));
 	end
-	if app.GameBuildVersion > 100000 then	-- Dragonflight Only
+	if app.GameBuildVersion >= 100000 then	-- Only include this after Dragonflight
 		local acctUnlocks = {
 			IsQuestFlaggedCompleted(72366) and "DF_CA" or "N",	-- Dragonflight Campaign Complete
 			IsQuestFlaggedCompleted(75658) and "DF_ZC" or "N",	-- Dragonflight Zaralek Caverns Complete
@@ -626,7 +690,7 @@ end
 -- Query Completed Quests
 local QueryCompletedQuests, RefreshQuestInfo;
 -- TODO: Refactor this to make these two functions more or less do the same thing.
-if app.GameBuildVersion > 100000 then
+if app.IsRetail then
 	local MAX = 999999;
 	local CompleteQuestSequence = {};
 	QueryCompletedQuests = function()
@@ -982,59 +1046,6 @@ local function LockedAsQuest(t)	-- TODO: Review and refactor
 end
 app.LockedAsQuest = LockedAsQuest;	-- TODO: Review and refactor
 app.QuestLockCriteriaFunctions = criteriaFuncs;	-- TODO: Review and refactor
-app.CollectibleAsQuest = function(t)	-- TODO: Review and refactor
-	-- consolidated representation of whether a Thing can be collectible via QuestID
-	local questID = t.questID;
-	return
-	-- must have a questID associated
-	questID
-	-- must not be repeatable
-	and not t.repeatable
-	and
-	(
-		(	-- Regular Quests
-			app.Settings.Collectibles.Quests
-			and
-			(
-				(
-					(
-						-- debug/account mode
-						app.MODE_DEBUG_OR_ACCOUNT
-						-- or able to access quest on current character
-						or not t.locked
-					)
-					and
-					(
-						-- collectible by any character
-						app.Settings.AccountWide.Quests
-						-- or not OTQ or is OTQ not yet known to be completed by any character, or is OTQ completed by this character
-						or (not ATTAccountWideData.OneTimeQuests[questID] or ATTAccountWideData.OneTimeQuests[questID] == app.GUID)
-					)
-				)
-				-- If it is an item/cost and associated to an active quest.
-				-- TODO: add t.requiredForQuestID
-				or (not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog_IsOnQuest(questID))
-			)
-		)
-		or
-		(	-- Locked Quests
-			app.Settings.Collectibles.QuestsLocked
-			and
-			(
-				-- not able to access quest on current character
-				t.locked
-				and
-				(
-					-- debug/account mode
-					app.MODE_DEBUG_OR_ACCOUNT
-					or
-					-- available in party sync
-					not t.DisablePartySync
-				)
-			)
-		)
-	)
-end
 
 -- Party Sync Support
 local IsPartySyncActive = false;
@@ -1084,7 +1095,7 @@ end
 
 -- Quest Lib (From Classic)
 local createQuest = app.CreateClass("Quest", "questID", {
-	["text"] = app.GameBuildVersion < 100000 and function(t)
+	["text"] = app.IsClassic and function(t)
 		if t.repeatable then return "|cff0070DD" .. t.name .. "|r"; end
 		return t.name;
 	end,
@@ -1110,21 +1121,8 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	["silentLink"] = function(t)
 		if t.questID then return GetQuestLink(t.questID) or ("[" .. t.name .. " (".. t.questID .. ")]"); end
 	end,
-	["collectible"] = function(t)
-		if app.Settings.Collectibles.Quests then
-			if C_QuestLog_IsOnQuest(t.questID) then
-				return true;
-			end
-			if t.locked then return app.Settings.AccountWide.Quests; end
-			return not t.repeatable and not t.isBreadcrumb;
-		end
-	end,
-	["collected"] = function(t)
-		if C_QuestLog_IsOnQuest(t.questID) then
-			return false;
-		end
-		return IsQuestFlaggedCompletedForObject(t);
-	end,
+	["collectible"] = CollectibleAsQuest,
+	["collected"] = IsQuestFlaggedCompletedForObject,
 	["altcollected"] = function(t)
 		local altQuests = t.altQuests;
 		if altQuests then
@@ -1255,7 +1253,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	end
 end),
 "AsBreadcrumb", {
-	text = app.GameBuildVersion < 100000 and function(t)
+	text = app.IsClassic and function(t)
 		return "|cffcbc3e3" .. t.name .. "|r";
 	end,
 	collectible = function(t)
@@ -1562,7 +1560,7 @@ tinsert(app.EventHandlers.OnRefreshCollections, app.events.QUEST_LOG_UPDATE);
 
 
 -- Retail Modifications
-if app.GameBuildVersion > 50000 then
+if app.IsRetail then
 	local _reportedBadQuestSequence;
 	local BackTraceChecks = {};
 	local function BackTraceForSelf(parents, questID, checkQuestID)
@@ -1944,6 +1942,7 @@ tinsert(app.EventHandlers.OnRecalculate, QueryCompletedQuests);
 tinsert(app.EventHandlers.OnStartup, QueryCompletedQuests);
 
 -- External API
+app.CollectibleAsQuest = CollectibleAsQuest;
 app.GetQuestIndicator = GetQuestIndicator;
 app.GetQuestName = function(questID)
 	return QuestNameFromID[questID];
