@@ -13275,7 +13275,7 @@ RowOnEnter = function (self)
 		if toggleAttachTooltips then app.Settings:SetTooltipSetting("Enabled", true) end
 		local link = reference.link or reference.silentLink;
 		local _, linkAdded;
-		if link and reference.key ~= "questID" then
+		if link and (reference.key ~= "questID" or reference.itemID) then
 			-- app.PrintDebug("OnRowEnter-SetDirectlink",link);
 			-- Safely attempt setting the tooltip link from the data
 			_, linkAdded = pcall(GameTooltip.SetHyperlink, GameTooltip, link);
