@@ -1954,6 +1954,7 @@ end
 local NPCNameFromID, NPCTitlesFromID = {},{};
 local C_TooltipInfo_GetHyperlink = C_TooltipInfo and C_TooltipInfo.GetHyperlink;
 local IsRetrievingData = app.Modules.RetrievingData.IsRetrievingData;
+local blacklisted = { [sformat(TOOLTIP_UNIT_LEVEL, "??")] = true, };
 if C_TooltipInfo_GetHyperlink then
 	setmetatable(NPCNameFromID, { __index = function(t, id)
 		id = tonumber(id);
@@ -1962,7 +1963,10 @@ if C_TooltipInfo_GetHyperlink then
 			if tooltipData then
 				local title = tooltipData.lines[1].leftText;
 				if title and #tooltipData.lines > 2 then
-					NPCTitlesFromID[id] = tooltipData.lines[2].leftText;
+					local leftText = tooltipData.lines[2].leftText;
+					if leftText and not blacklisted[leftText] then
+						NPCTitlesFromID[id] = leftText;
+					end
 				end
 				if not IsRetrievingData(title) then
 					t[id] = title;
@@ -1981,7 +1985,10 @@ else
 			ATTCNPCHarvester:SetHyperlink(sformat("unit:Creature-0-0-0-0-%d-0000000000",id))
 			local title = ATTCNPCHarvesterTextLeft1:GetText();
 			if title and ATTCNPCHarvester:NumLines() > 2 then
-				NPCTitlesFromID[id] = ATTCNPCHarvesterTextLeft2:GetText();
+				local leftText = ATTCNPCHarvesterTextLeft2:GetText();
+				if leftText and not blacklisted[leftText] then
+					NPCTitlesFromID[id] = leftText;
+				end
 			end
 			ATTCNPCHarvester:Hide();
 			if not IsRetrievingData(title) then

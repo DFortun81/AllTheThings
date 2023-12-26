@@ -7293,6 +7293,7 @@ app.NPCDisplayIDFromID = NPCDisplayIDFromID;
 
 -- NPC & Title Name Harvesting Lib (https://us.battle.net/forums/en/wow/topic/20758497390?page=1#post-4, Thanks Gello!)
 local NPCNameFromID, NPCTitlesFromID = {},{};
+local blacklisted = { [sformat(TOOLTIP_UNIT_LEVEL, "??")] = true, };
 local C_TooltipInfo_GetHyperlink = C_TooltipInfo and C_TooltipInfo.GetHyperlink;
 if C_TooltipInfo_GetHyperlink then
 	setmetatable(NPCNameFromID, { __index = function(t, id)
@@ -7301,7 +7302,10 @@ if C_TooltipInfo_GetHyperlink then
 			if tooltipData then
 				local title = tooltipData.lines[1].leftText;
 				if title and #tooltipData.lines > 2 then
-					NPCTitlesFromID[id] = tooltipData.lines[2].leftText;
+					local leftText = tooltipData.lines[2].leftText;
+					if leftText and not blacklisted[leftText] then
+						NPCTitlesFromID[id] = leftText;
+					end
 				end
 				if title and title ~= RETRIEVING_DATA then
 					t[id] = title;
@@ -7320,7 +7324,10 @@ else
 			ATTCNPCHarvester:SetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id))
 			local title = ATTCNPCHarvesterTextLeft1:GetText();
 			if title and ATTCNPCHarvester:NumLines() > 2 then
-				NPCTitlesFromID[id] = ATTCNPCHarvesterTextLeft2:GetText();
+				local leftText = ATTCNPCHarvesterTextLeft2:GetText();
+				if leftText and not blacklisted[leftText] then
+					NPCTitlesFromID[id] = leftText;
+				end
 			end
 			ATTCNPCHarvester:Hide();
 			if title and title ~= RETRIEVING_DATA then
