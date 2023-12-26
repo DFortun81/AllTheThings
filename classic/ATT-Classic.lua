@@ -8874,7 +8874,7 @@ local function AddTomTomWaypoint(group)
 								persistent = true,
 								sourcePath = sourcePath,
 								title = (first.text or RETRIEVING_DATA)
-							});
+							}, root);
 						end
 					end
 				end
@@ -8892,22 +8892,24 @@ tinsert(app.EventHandlers.OnReady, function()
 	local tomTom = TomTom;
 	if tomTom then
 		local oldAddWaypoint = tomTom.AddWaypoint;
-		tomTom.AddWaypoint = function(self, m, x, y, opts)
+		tomTom.AddWaypoint = function(self, m, x, y, opts, root)
 			if opts.from == "ATT" and opts.sourcePath then
 				local sourceString = opts.sourcePath;
 				if sourceString then
-					local root = {};
-					local sourceStrings = { strsplit(";", sourceString) };
-					for i,sourcePath in ipairs(sourceStrings) do
-						local hashes = { strsplit(">", sourcePath) };
-						local ref = SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
-						if ref then
-							tinsert(root, ref);
-						else
-							hashes = { strsplit("ID", sourcePath) };
-							if #hashes == 3 then
-								ref = app.CreateClassInstance(hashes[1] .. "ID", tonumber(hashes[3]));
-								if ref then tinsert(root, ref); end
+					if not root then
+						root = {};
+						local sourceStrings = { strsplit(";", sourceString) };
+						for i,sourcePath in ipairs(sourceStrings) do
+							local hashes = { strsplit(">", sourcePath) };
+							local ref = SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
+							if ref then
+								tinsert(root, ref);
+							else
+								hashes = { strsplit("ID", sourcePath) };
+								if #hashes == 3 then
+									ref = app.CreateClassInstance(hashes[1] .. "ID", tonumber(hashes[3]));
+									if ref then tinsert(root, ref); end
+								end
 							end
 						end
 					end
@@ -8937,7 +8939,7 @@ tinsert(app.EventHandlers.OnReady, function()
 								if key == "objectiveID" then
 									if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
 								elseif key == "criteriaID" then
-									tooltip:AddDoubleLine(L.CRITERIA_FOR, GetAchievementLink(group.achievementID));
+									tooltip:AddDoubleLine(L.CRITERIA_FOR, GetAchievementLink(o.achievementID));
 								else
 									if key == "npcID" then key = "creatureID"; end
 									AttachTooltipSearchResults(tooltip, 1, key .. ":" .. o[o.key], SearchForField, key, o[o.key], line);

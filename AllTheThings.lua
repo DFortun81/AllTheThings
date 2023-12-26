@@ -1229,6 +1229,14 @@ local function BuildSourceTextForChat(group, l)
 	end
 	return "ATT";
 end
+local function BuildSourceTextForDynamicPath(group)
+	local parent = group.parent;
+	if parent then
+		return BuildSourceTextForDynamicPath(parent) .. ">" .. (group.hash or group.name or group.text);
+	else
+		return group.hash or group.name or group.text;
+	end
+end
 local function BuildSourceTextForTSM(group, l)
 	if group.sourceParent or group.parent then
 		if l < 1 or not group.text then
@@ -5714,6 +5722,19 @@ local function SearchForMissingItemNames(group)
 	end
 	return arr;
 end
+local function SearchForSourcePath(g, hashes, level, count)
+	if g then
+		local hash = hashes[level];
+		if hash then
+			for i,o in ipairs(g) do
+				if (o.hash or o.name or o.text) == hash then
+					if level == count then return o; end
+					return SearchForSourcePath(o.g, hashes, level + 1, count);
+				end
+			end
+		end
+	end
+end
 app.SearchForLink = SearchForLink;
 
 
@@ -5819,44 +5840,14 @@ local function PlotCachedCoords()
 
 					local first = root[1];
 					if first then
-						local opt = { from = "ATT", persistent = false };
-						opt.title = first.text or RETRIEVING_DATA;
-						local displayID = GetDisplayID(first);
-						if displayID then
-							opt.minimap_displayID = displayID;
-							opt.worldmap_displayID = displayID;
-						end
-						if first.icon then
-							opt.minimap_icon = first.icon;
-							opt.worldmap_icon = first.icon;
-						end
-
-						if TomTom.DefaultCallbacks then
-							local callbacks = TomTom:DefaultCallbacks();
-							callbacks.minimap.tooltip_update = nil;
-							callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
-								tooltip:ClearLines();
-								for i,o in ipairs(root) do
-									local lineNumber = tooltip:NumLines() + 1;
-									tooltip:AddLine(o.text);
-									if o.title and not o.explorationID then tooltip:AddLine(o.title); end
-									local key = o.key;
-									if key == "objectiveID" then
-										if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
-									elseif key == "criteriaID" then
-										tooltip:AddLine("Criteria for " .. GetAchievementLink(o.achievementID));
-									else
-										if key == "npcID" then key = "creatureID"; end
-										AttachTooltipSearchResults(tooltip, lineNumber, key .. ":" .. o[o.key], SearchForField, key, o[o.key]);
-									end
-								end
-								tooltip:Show();
-							end
-							callbacks.world.tooltip_update = nil;
-							callbacks.world.tooltip_show = callbacks.minimap.tooltip_show;
-							opt.callbacks = callbacks;
-						end
-						TomTom:AddWaypoint(mapID, xnormal, y / 1000, opt);
+						local sourcePath = BuildSourceTextForDynamicPath(first);
+						for i=2,#root,1 do sourcePath = sourcePath .. ";" .. BuildSourceTextForDynamicPath(root[i]); end
+						TomTom:AddWaypoint(mapID, xnormal, y / 1000, {
+							from = "ATT",
+							persistent = true,
+							sourcePath = sourcePath,
+							title = (first.text or RETRIEVING_DATA)
+						}, root);
 					end
 				end
 			end
@@ -6015,6 +6006,94 @@ AddTomTomWaypoint = function(group)
 	-- actually send the coords now that every coord has been cached
 	app.WaypointRunner.OnEnd(PlotCachedCoords);
 end
+tinsert(app.EventHandlers.OnReady, function()
+	local tomTom = TomTom;
+	if tomTom then
+		local oldAddWaypoint = tomTom.AddWaypoint;
+		tomTom.AddWaypoint = function(self, m, x, y, opts, root)
+			if opts.from == "ATT" and opts.sourcePath then
+				local sourceString = opts.sourcePath;
+				if sourceString then
+					if not root then
+						root = {};
+						local sourceStrings = { strsplit(";", sourceString) };
+						for i,sourcePath in ipairs(sourceStrings) do
+							local hashes = { strsplit(">", sourcePath) };
+							local ref = SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
+							if ref then
+								tinsert(root, ref);
+							else
+								hashes = { strsplit("ID", sourcePath) };
+								if #hashes == 3 then
+									ref = CreateObject({ [hashes[1] .. "ID"] = tonumber(hashes[3])});
+									if ref then tinsert(root, ref); end
+								end
+							end
+						end
+					end
+					if #root > 0 then
+						local first = root[1];
+						if IsRetrieving(opts.title) then
+							opts.title = first.text or RETRIEVING_DATA;
+						end
+						local displayID = GetDisplayID(first);
+						if displayID then
+							opts.minimap_displayID = displayID;
+							opts.worldmap_displayID = displayID;
+						end
+						if first.icon then
+							opts.minimap_icon = first.icon;
+							opts.worldmap_icon = first.icon;
+						end
+						local callbacks = TomTom:DefaultCallbacks();
+						callbacks.minimap.tooltip_update = nil;
+						callbacks.minimap.tooltip_show = function(event, tooltip, uid, dist)
+							tooltip:ClearLines();
+							for i,o in ipairs(root) do
+								local line = tooltip:NumLines() + 1;
+								tooltip:AddLine(o.text);
+								if o.title and not o.explorationID then tooltip:AddLine(o.title); end
+								local key = o.key;
+								if key == "objectiveID" then
+									if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
+								elseif key == "criteriaID" then
+									tooltip:AddDoubleLine(L.CRITERIA_FOR, GetAchievementLink(group.achievementID));
+								else
+									if key == "npcID" then key = "creatureID"; end
+									AttachTooltipSearchResults(tooltip, line, key .. ":" .. o[o.key], SearchForField, key, o[o.key], line);
+								end
+							end
+							tooltip:Show();
+						end
+						callbacks.world.tooltip_update = nil;
+						callbacks.world.tooltip_show = callbacks.minimap.tooltip_show;
+						opts.callbacks = callbacks;
+					else
+						print("Failed to rebuild TomTom Waypoint", waypointUID);
+					end
+				end
+			end
+			oldAddWaypoint(self, m, x, y, opts);
+		end
+		
+		local function AreAnyATTWaypointsPersisted()
+			-- If there are any persisted waypoints, recover their tooltips
+			local waypointsByMapID = tomTom.waypoints;
+			if not waypointsByMapID then return false; end
+			
+			local any = false;
+			for mapID,waypointsByMap in pairs(waypointsByMapID) do
+				for waypointUID,waypoint in pairs(waypointsByMap) do
+					if waypoint.from == "ATT" then
+						return true;
+					end
+				end
+			end
+			return false;
+		end
+		if AreAnyATTWaypointsPersisted() then tomTom:ReloadWaypoints(); end
+	end
+end);
 end	-- Map Information Lib
 
 -- Returns an Object based on a QuestID a lot of Quest information for displaying in a row
@@ -12046,10 +12125,7 @@ function app:CreateMiniListForGroup(group)
 	local key = group.key;
 
 	-- Pop Out Functionality! :O
-	local suffix = BuildSourceTextForChat(group, 1)
-		-- this portion is to ensure that custom slash command popouts have a unique name based on the stand-alone group (no parent)
-		.. " > " .. (group.text or "") .. (key or "NO_KEY") .. (key and group[key] or "NO_KEY_VAL")
-		..(app.RecursiveFirstParentWithFieldValue(group, "dynamic") or "");
+	local suffix = BuildSourceTextForDynamicPath(group);
 	local popout = app.Windows[suffix];
 	local showing = not popout or not popout:IsVisible();
 	-- force data to be re-collected if this is a quest chain since its logic is affected by settings
