@@ -158,7 +158,6 @@ app.FunctionRunner = app.CreateRunner("default");
 app.DynamicRunner = app.CreateRunner("dynamic");
 app.UpdateRunner = app.CreateRunner("update");
 app.FillRunner = app.CreateRunner("fill");
-app.WaypointRunner = app.CreateRunner("waypoint");
 -- Whether ATT should ignore saving data experienced during the play session
 app.IgnoreDataCaching = function()
 	-- This function currently returns false on Tournament realms. Very good. >_<
@@ -5741,6 +5740,7 @@ app.SearchForLink = SearchForLink;
 -- Map Information Lib
 do
 local C_SuperTrack = C_SuperTrack;
+local WaypointRunner = app.CreateRunner("waypoint");
 local __TomTomWaypointCacheIndexY = { __index = function(t, y)
 	local o = {};
 	t[y] = o;
@@ -5984,9 +5984,9 @@ local function AddTomTomAlternateDirectResults(group, depth)
 			-- queue searches for 2 layers of groups
 			local e = app.EmptyTable;
 			for _,o in ipairs(group.g or e) do
-				app.WaypointRunner.Run(AddTomTomSearchResultWaypoints, o);
+				WaypointRunner.Run(AddTomTomSearchResultWaypoints, o);
 				for _,p in ipairs(o.g or e) do
-					app.WaypointRunner.Run(AddTomTomSearchResultWaypoints, p);
+					WaypointRunner.Run(AddTomTomSearchResultWaypoints, p);
 				end
 			end
 		end
@@ -5998,13 +5998,13 @@ AddTomTomWaypoint = function(group)
 	__TomTomWaypointCount = 0;
 	__PlottedGroup = group;
 	-- attempt to cache all coords
-	app.WaypointRunner.Run(AddNestedTomTomWaypoints, group, 0);
-	app.WaypointRunner.Run(AddTomTomParentChainWaypoint, group, 0);
-	app.WaypointRunner.Run(AddTomTomAlternateDirectResults, group, 0);
+	WaypointRunner.Run(AddNestedTomTomWaypoints, group, 0);
+	WaypointRunner.Run(AddTomTomParentChainWaypoint, group, 0);
+	WaypointRunner.Run(AddTomTomAlternateDirectResults, group, 0);
 	-- TODO: if still no coords (Achievement Criteria with Providers/Cost)
 	-- further Search Providers/Cost/crs/etc to find coords
 	-- actually send the coords now that every coord has been cached
-	app.WaypointRunner.OnEnd(PlotCachedCoords);
+	WaypointRunner.OnEnd(PlotCachedCoords);
 end
 tinsert(app.EventHandlers.OnReady, function()
 	local tomTom = TomTom;
