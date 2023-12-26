@@ -5819,7 +5819,7 @@ local function PlotCachedCoords()
 
 					local first = root[1];
 					if first then
-						local opt = { from = "ATT" };
+						local opt = { from = "ATT", persistent = false };
 						opt.title = first.text or RETRIEVING_DATA;
 						local displayID = GetDisplayID(first);
 						if displayID then
