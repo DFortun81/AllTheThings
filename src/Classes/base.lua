@@ -279,7 +279,7 @@ local function CreateClassInstance(key, id, t)
 	]]--
 	return t;
 end
-local function CloneClassInstance(object)
+local function CloneClassInstance(object, ignoreChildren)
 	local clone = {};
 	if object[1] then
 		-- Create an Array of Clones
@@ -293,11 +293,15 @@ local function CloneClassInstance(object)
 			rawset(clone, k, v);
 		end
 		if object.g then
-			clone.g = {};
-			for i,o in ipairs(object.g) do
-				o = CloneClassInstance(o);
-				tinsert(clone.g, o);
-				o.parent = clone;
+			if ignoreChildren then
+				clone.g = nil;
+			else
+				clone.g = {};
+				for i,o in ipairs(object.g) do
+					o = CloneClassInstance(o);
+					tinsert(clone.g, o);
+					o.parent = clone;
+				end
 			end
 		end
 
