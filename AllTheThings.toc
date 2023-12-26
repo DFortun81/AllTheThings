@@ -51,6 +51,7 @@ db\ReagentsDB.lua
 src\Classes\base.lua
 src\Classes\Quests.lua
 src\Classes\Objects.lua
+src\Classes\Category.lua
 src\Classes\Deaths.lua
 src\Classes\Filter Types.lua
 src\Classes\Illusions.lua

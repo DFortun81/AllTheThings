@@ -7487,18 +7487,6 @@ app.CreatePetType = function(id, t)
 end
 end	-- Battle Pet Lib
 
--- Category Lib
-(function()
-app.CreateCategory = app.CreateClass("Category", "categoryID", {
-	["text"] = function(t)
-		return AllTheThingsAD.LocalizedCategoryNames[t.categoryID] or ("Unknown Category #" .. t.categoryID);
-	end,
-	["icon"] = function(t)
-		return app.CategoryIcons[t.categoryID] or "Interface/ICONS/INV_Garrison_Blueprints1";
-	end,
-});
-end)();
-
 -- Character Class Lib
 (function()
 local class_id_cache = {};
