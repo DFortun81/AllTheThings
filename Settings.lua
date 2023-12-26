@@ -1847,9 +1847,9 @@ end
 
 local accwideCheckboxAchievements =
 child:CreateAccountWideCheckbox("ACHIEVEMENTS", "Achievements")
-	:AlignBelow(headerGeneralThings, -0.25)
 child:CreateTrackingCheckbox("ACHIEVEMENTS", "Achievements")
 	:AlignAfter(accwideCheckboxAchievements)
+accwideCheckboxAchievements:SetPoint("TOPLEFT", headerGeneralThings, "BOTTOMLEFT", -2, 0)
 
 local accwideCheckboxCharacterUnlocks =
 child:CreateAccountWideCheckbox("CHARACTERUNLOCKS", "CharacterUnlocks")
@@ -1910,9 +1910,9 @@ end
 
 local accwideCheckboxMusicRollsAndSelfieFilters =
 child:CreateAccountWideCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
-	:AlignBelow(headerExpansionThings, -0.25)
 child:CreateTrackingCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
 	:AlignAfter(accwideCheckboxMusicRollsAndSelfieFilters)
+accwideCheckboxMusicRollsAndSelfieFilters:SetPoint("TOPLEFT", headerExpansionThings, "BOTTOMLEFT", -2, 0)
 
 local accwideCheckboxAzeriteEssences =
 child:CreateAccountWideCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
