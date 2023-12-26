@@ -2180,7 +2180,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 				if app.Settings:GetTooltipSetting("Show:SpellRanks") then
-					if app.MODE_ACCOUNT or app.MODE_DEBUG then
+					if app.MODE_DEBUG_OR_ACCOUNT then
 						-- Show all characters
 					else
 						-- Show only the current character
@@ -3725,7 +3725,7 @@ local commonAchievementHandlers = {
 end,
 ["DEDICATED_10M_OnUpdate"] = function(t)
 	rawset(t, "collectible", nil);
-	if app.MODE_DEBUG or app.MODE_ACCOUNT then
+	if app.MODE_DEBUG_OR_ACCOUNT then
 		return false;
 	elseif IsInGroup() and GetNumGroupMembers() >= 9 then
 		rawset(t, "collectible", false);
@@ -3734,7 +3734,7 @@ end,
 end,
 ["DEDICATED_25M_OnUpdate"] = function(t)
 	rawset(t, "collectible", nil);
-	if app.MODE_DEBUG or app.MODE_ACCOUNT then
+	if app.MODE_DEBUG_OR_ACCOUNT then
 		return false;
 	elseif IsInGroup() and GetNumGroupMembers() >= 21 then
 		rawset(t, "collectible", false);
@@ -5738,7 +5738,7 @@ local fields = {
 fields.collected = fields.saved;
 app.CreateFaction = app.CreateClass("Faction", "factionID", fields);
 app.OnUpdateReputationRequired = function(t)
-	if app.MODE_DEBUG or app.MODE_ACCOUNT then
+	if app.MODE_DEBUG_OR_ACCOUNT then
 		t.visible = true;
 		return false;
 	else
@@ -7624,7 +7624,7 @@ local TAILORING = ATTC.SkillIDToSpellID[197];
 app.OnUpdateForCrafter = function(t)
 	t.visible = nil;
 	t.collectible = nil;
-	if app.MODE_DEBUG or app.MODE_ACCOUNT then
+	if app.MODE_DEBUG_OR_ACCOUNT then
 		return false;
 	else
 		local skills = app.CurrentCharacter.ActiveSkills;
@@ -7639,7 +7639,7 @@ end;
 app.OnUpdateForOmarionsHandbook = function(t)
 	t.visible = true;
 	t.collectible = nil;
-	if app.MODE_DEBUG or app.MODE_ACCOUNT or IsQuestFlaggedCompleted(9233) or C_QuestLog_IsOnQuest(9233) then
+	if app.MODE_DEBUG_OR_ACCOUNT or IsQuestFlaggedCompleted(9233) or C_QuestLog_IsOnQuest(9233) then
 		return false;
 	else
 		for spellID,skills in pairs(app.CurrentCharacter.ActiveSkills) do
@@ -7939,7 +7939,7 @@ local function StylizePlayerTitle(title, style, me)
 	end
 end
 local OnUpdateForSpecificGender = function(t)
-	if not (app.MODE_ACCOUNT or app.MODE_DEBUG or t.playerGender == UnitSex("player")) then
+	if not (app.MODE_DEBUG_OR_ACCOUNT or t.playerGender == UnitSex("player")) then
 		t.visible = false;
 		return true;
 	elseif t.parent.titleIDs then
@@ -7949,7 +7949,7 @@ local OnUpdateForSpecificGender = function(t)
 	end
 end
 local OnUpdateForGenderedTitle = function(t)
-	if not (app.MODE_ACCOUNT or app.MODE_DEBUG) then
+	if not app.MODE_DEBUG_OR_ACCOUNT then
 		t.progress = nil;
 		t.total = nil;
 		t.g = nil;

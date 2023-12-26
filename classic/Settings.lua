@@ -541,6 +541,7 @@ settings.UpdateMode = function(self)
 			app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
 			app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
 		end
+		app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT
 
 		if self:Get("Show:OnlyActiveEvents") then
 			app.RequireEventFilter = app.Modules.Events.FilterIsEventActive;

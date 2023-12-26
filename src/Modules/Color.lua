@@ -59,7 +59,7 @@ app.TryColorizeName = function(group, name)
 	elseif group.locked or group.isBreadcrumb then
 		return Colorize(name, colors.Locked);
 		-- if people REALLY only want to see colors in account/debug then we can comment this in
-	elseif app.Settings:GetTooltipSetting("UseMoreColors") --and (app.MODE_ACCOUNT or app.MODE_DEBUG)
+	elseif app.Settings:GetTooltipSetting("UseMoreColors") --and (app.MODE_DEBUG_OR_ACCOUNT)
 	then
 		-- class color
 		if group.classID then
