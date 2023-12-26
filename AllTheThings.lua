@@ -14511,9 +14511,11 @@ function app:GetWindow(suffix, parent, onUpdate)
 			end
 		end);
 		local refreshWindow = function() window:Refresh(); end;
+		handlers.ACHIEVEMENT_EARNED = refreshWindow;
 		handlers.QUEST_DATA_LOAD_RESULT = refreshWindow;
 		handlers.QUEST_ACCEPTED = refreshWindow;
 		handlers.QUEST_REMOVED = refreshWindow;
+		window:RegisterEvent("ACHIEVEMENT_EARNED");
 		window:RegisterEvent("QUEST_ACCEPTED");
 		window:RegisterEvent("QUEST_DATA_LOAD_RESULT");
 		window:RegisterEvent("QUEST_REMOVED");
