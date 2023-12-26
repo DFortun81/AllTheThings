@@ -1417,6 +1417,8 @@ app.MergeProperties = MergeProperties;
 -- The base logic for turning a Table of data into an 'object' that provides dynamic information concerning the type of object which was identified
 -- based on the priority of possible key values
 local function CreateObject(t, rootOnly)
+	local object = app.CloneClassInstance(t, rootOnly);
+	if object and getmetatable(object) then return object; end
 	if not t then return {}; end
 
 	-- already an object, so need to create a new instance of the same data
@@ -7747,6 +7749,9 @@ local fields_BaseCostCurrency = {
 	["costCollectibles"] = app.EmptyFunction,
 	["collectibleAsCost"] = app.EmptyFunction,
 	["costsCount"] = app.EmptyFunction,
+	["key"] = function()
+		return "currencyID";
+	end
 };
 local BaseCostCurrency = app.BaseObjectFields(fields_BaseCostCurrency, "BaseCostCurrency");
 
@@ -12210,11 +12215,12 @@ function app:CreateMiniListForGroup(group)
 	-- 		app.PrintDebug("Found",bestResult and bestResult.hash,group,bestResult)
 	-- 	end
 	-- end
+	local key = group.key;
 
 	-- Pop Out Functionality! :O
 	local suffix = BuildSourceTextForChat(group, 1)
 		-- this portion is to ensure that custom slash command popouts have a unique name based on the stand-alone group (no parent)
-		.. " > " .. (group.text or "") .. (group.key or "NO_KEY") .. (group.key and group[group.key] or "NO_KEY_VAL")
+		.. " > " .. (group.text or "") .. (key or "NO_KEY") .. (key and group[key] or "NO_KEY_VAL")
 		..(app.RecursiveFirstParentWithFieldValue(group, "dynamic") or "");
 	local popout = app.Windows[suffix];
 	local showing = not popout or not popout:IsVisible();
@@ -12225,10 +12231,14 @@ function app:CreateMiniListForGroup(group)
 		popout = app:GetWindow(suffix);
 		-- make a search for this group if it is an item/currency/achievement and not already a container for things
 		if not group.g and not group.criteriaID and (group.itemID or group.currencyID or group.achievementID) then
-			local cmd = group.link or group.key .. ":" .. group[group.key];
+			local cmd = group.link or key .. ":" .. group[key];
 			app.SetSkipPurchases(2);
 			group = GetCachedSearchResults(cmd, SearchForLink, cmd);
 			app.SetSkipPurchases(0);
+			if not group.key and key then
+				group.key = key;	-- Dunno what causes this in GetCachedSearchResults, but assigning this before calling to the new CreateObject function fixes currency popouts for currencies that aren't in the addon. /att currencyid:1533
+				-- CreateMiniListForGroup missing key response, will likely fail to Create a Class Instance!
+			end
 		end
 
 		-- clone/search initially so as to not let popout operations modify the source data
