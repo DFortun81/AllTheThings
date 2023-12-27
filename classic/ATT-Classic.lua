@@ -8833,8 +8833,8 @@ tinsert(app.EventHandlers.OnReady, function()
 	local tomTom = TomTom;
 	if tomTom then
 		local oldAddWaypoint = tomTom.AddWaypoint;
-		tomTom.AddWaypoint = function(self, m, x, y, opts, root)
-			if opts.from == "ATT" and opts.sourcePath then
+		tomTom.AddWaypoint = function(self, m, x, y, opts, root, ...)
+			if opts and (opts.from == "ATT" and opts.sourcePath) then
 				local sourceString = opts.sourcePath;
 				if sourceString then
 					if not root then
@@ -8896,7 +8896,7 @@ tinsert(app.EventHandlers.OnReady, function()
 					end
 				end
 			end
-			oldAddWaypoint(self, m, x, y, opts);
+			return oldAddWaypoint(self, m, x, y, opts, root, ...);
 		end
 		
 		local function AreAnyATTWaypointsPersisted()
