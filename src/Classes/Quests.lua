@@ -6,11 +6,7 @@ local L = app.L;
 local AssignChildren, GetRelativeField, SearchForField =
 	app.AssignChildren, app.GetRelativeField, app.SearchForField;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
-
--- Temporary (this is gonna move)
-local function Colorize(str, color)
-	return "|c" .. color .. str .. "|r";
-end
+local Colorize = app.Modules.Color.Colorize;
 
 -- Global locals
 local ipairs, pairs, rawset, rawget, tinsert, math_floor, RETRIEVING_DATA, wipe, select, tonumber, sformat

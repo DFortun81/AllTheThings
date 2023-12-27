@@ -518,48 +518,11 @@ end
 
 
 -- Color Lib
-local CS = CreateFrame("ColorSelect", nil, app.frame);
-local function Colorize(str, color)
-	return "|c" .. color .. str .. "|r";
-end
-local function HexToRGB(hex)
-	return tonumber("0x"..hex:sub(3,4)) / 255, tonumber("0x"..hex:sub(5,6)) / 255, tonumber("0x"..hex:sub(7,8)) / 255;
-end
-local function RGBToHex(r, g, b)
-	return sformat("ff%02x%02x%02x",
-		r <= 255 and r >= 0 and r or 0,
-		g <= 255 and g >= 0 and g or 0,
-		b <= 255 and b >= 0 and b or 0);
-end
-local function ConvertColorRgbToHsv(r, g, b)
-  CS:SetColorRGB(r, g, b);
-  local h,s,v = CS:GetColorHSV()
-  return {h=h,s=s,v=v}
-end
-local red, green = ConvertColorRgbToHsv(1,0,0), ConvertColorRgbToHsv(0,1,0);
-local progress_colors = setmetatable({ [1] = app.Colors.Completed }, {
-	__index = function(t, p)
-		local h;
-		p = tonumber(p);
-		if abs(red.h - green.h) > 180 then
-			local angle = (360 - abs(red.h - green.h)) * p;
-			if red.h < green.h then
-				h = floor(red.h - angle);
-				if h < 0 then h = 360 + h end
-			else
-				h = floor(red.h + angle);
-				if h > 360 then h = h - 360 end
-			end
-		else
-			h = floor(red.h-(red.h-green.h)*p)
-		end
-		CS:SetColorHSV(h, red.s-(red.s-green.s)*p, red.v-(red.v-green.v)*p);
-		local r,g,b = CS:GetColorRGB();
-		local color = RGBToHex(r * 255, g * 255, b * 255);
-		rawset(t, p, color);
-		return color;
-	end
-});
+local GetProgressColor = app.Modules.Color.GetProgressColor;
+local Colorize = app.Modules.Color.Colorize;
+local HexToARGB = app.Modules.Color.HexToARGB;
+local RGBToHex = app.Modules.Color.RGBToHex;
+
 local function GetNumberWithZeros(number, desiredLength)
 	if desiredLength > 0 then
 		local str = tostring(number);
@@ -589,9 +552,6 @@ local function GetProgressTextDefault(progress, total)
 end
 local function GetProgressTextRemaining(progress, total)
 	return tostring(total - progress);
-end
-local function GetProgressColor(p)
-	return progress_colors[p];
 end
 local function GetProgressColorText(progress, total)
 	if total and total > 0 then
@@ -655,7 +615,6 @@ app.GetProgressText = GetProgressTextDefault;
 app.GetProgressTextDefault = GetProgressTextDefault;
 app.GetProgressTextRemaining = GetProgressTextRemaining;
 app.GetProgressColorText = GetProgressColorText;
-CS:Hide();
 
 
 -- Source ID Harvesting Lib
@@ -2320,7 +2279,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 
 			for i,item in ipairs(uniques) do
-				if item.color then item.r, item.g, item.b = HexToRGB(item.color); end
+				if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
 			end
 			group.tooltipInfo = uniques;
 		end
@@ -5590,7 +5549,7 @@ app.ColorizeStandingText = function(standingID, text)
 		return Colorize(text, standing.color);
 	else
 		local rgb = FACTION_BAR_COLORS[standingID];
-		return Colorize(text, RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
+		return Colorize(text, RGBToHex(rgb.r, rgb.g, rgb.b));
 	end
 end
 app.GetFactionIDByName = function(name)
@@ -7637,10 +7596,10 @@ end)();
 -- Recipe & Spell Lib
 (function()
 local craftColors = {
-	RGBToHex(64,192,64),
-	RGBToHex(255,255,0),
-	RGBToHex(255,128,64),
-	[0]=RGBToHex(128, 128, 128),
+	RGBToHex(0.25,0.75,0.25),
+	RGBToHex(1,1,0),
+	RGBToHex(1,0.5,0.25),
+	[0]=RGBToHex(0.5, 0.5, 0.5),
 };
 local CraftTypeIDToColor = function(craftTypeID)
 	return craftColors[craftTypeID];
@@ -9860,14 +9819,14 @@ local function RowOnEnter(self)
 			if reference.lore and app.Settings:GetTooltipSetting("Lore") then
 				local lore = reference.lore;
 				if not linesByText[lore] then
-					local r,g,b = HexToRGB(app.Colors.TooltipLore);
+					local _,r,g,b = HexToARGB(app.Colors.TooltipLore);
 					GameTooltip:AddLine(lore, r, g, b, 1);
 				end
 			end
 			local description = reference.description;
 			if description and app.Settings:GetTooltipSetting("Descriptions") then
 				if not linesByText[description] then
-					local r,g,b = HexToRGB(app.Colors.TooltipDescription);
+					local _,r,g,b = HexToARGB(app.Colors.TooltipDescription);
 					GameTooltip:AddLine(description, r, g, b, 1);
 				end
 				if reference.maps then
@@ -9884,7 +9843,7 @@ local function RowOnEnter(self)
 						description = description .. name;
 					end
 					GameTooltip:AddLine(" ", 1, 1, 1, 1);
-					local r,g,b = HexToRGB(app.Colors.TooltipDescription);
+					local _,r,g,b = HexToARGB(app.Colors.TooltipDescription);
 					GameTooltip:AddLine(description, r, g, b, 1);
 				end
 			elseif reference.maps then
@@ -9900,13 +9859,13 @@ local function RowOnEnter(self)
 					if i > 1 then description = description .. ", "; end
 					description = description .. name;
 				end
-				local r,g,b = HexToRGB(app.Colors.TooltipDescription);
+				local _,r,g,b = HexToARGB(app.Colors.TooltipDescription);
 				GameTooltip:AddLine(description, r, g, b, 1);
 			end
 			if reference.nextEvent then
 				local timeStrings = app.Modules.Events.GetEventTimeStrings(reference.nextEvent);
 				if timeStrings then
-					local r,g,b = HexToRGB(app.Colors.TooltipDescription);
+					local _,r,g,b = HexToARGB(app.Colors.TooltipDescription);
 					for i,timeString in ipairs(timeStrings) do
 						local left, right = strsplit(DESCRIPTION_SEPARATOR, timeString);
 						if right then
@@ -9921,7 +9880,7 @@ local function RowOnEnter(self)
 			if rwp then
 				local rwpString = GetRemovedWithPatchString(rwp);
 				if not linesByText[rwpString] and app.Settings:GetTooltipSetting("rwp") then
-					local r,g,b = HexToRGB(app.Colors.RemovedWithPatch);
+					local _,r,g,b = HexToARGB(app.Colors.RemovedWithPatch);
 					GameTooltip:AddLine(rwpString, r, g, b, 1);
 				end
 			end
@@ -9929,7 +9888,7 @@ local function RowOnEnter(self)
 				local awpString = GetAddedWithPatchString(awp, awp and rwp and awp > rwp);
 				if awpString and not linesByText[awpString] then
 					if app.Settings:GetTooltipSetting("awp") then
-						local r,g,b = HexToRGB(app.Colors.AddedWithPatch);
+						local _,r,g,b = HexToARGB(app.Colors.AddedWithPatch);
 						GameTooltip:AddLine(awpString, r, g, b, 1);
 					end
 				end
@@ -10463,7 +10422,7 @@ local function UpdateWindow(self, force, trigger)
 
 				-- Check to see if the data changed.
 				if self.data ~= data then
-					print(self.Suffix, app.Colorize("DATA CHANGED!", RGBToHex(255, 120, 120)));
+					print(self.Suffix, Colorize("DATA CHANGED!", RGBToHex(1, 0.4, 0.4)));
 					return;
 				end
 			else

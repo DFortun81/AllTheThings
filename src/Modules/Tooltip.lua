@@ -146,9 +146,9 @@ local function AttachTooltipRawSearchResults(self, lineNumber, group)
 				self:AddDoubleLine(left or " ", right);
 			elseif entry.r then
 				if entry.wrap then
-					self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255, 1);
+					self:AddLine(left, entry.r, entry.g, entry.b, 1);
 				else
-					self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255);
+					self:AddLine(left, entry.r, entry.g, entry.b);
 				end
 			else
 				if entry.wrap then

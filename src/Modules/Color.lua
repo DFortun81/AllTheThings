@@ -11,8 +11,8 @@ local _, app = ...;
 -- Encapsulates the functionality for handling and interacting with colors in the addon, which are typically represented in Text
 
 -- Global locals
-local rawget, ipairs, pairs, abs, floor, RAID_CLASS_COLORS, SecondsToTime, sformat, tonumber, select, BONUS_OBJECTIVE_TIME_LEFT
-	= rawget, ipairs, pairs, abs, floor, RAID_CLASS_COLORS, SecondsToTime, string.format, tonumber, select, BONUS_OBJECTIVE_TIME_LEFT;
+local rawget, ipairs, pairs, abs, floor, max, min, RAID_CLASS_COLORS, SecondsToTime, sformat, tonumber, select, BONUS_OBJECTIVE_TIME_LEFT
+	= rawget, ipairs, pairs, abs, floor, max, min, RAID_CLASS_COLORS, SecondsToTime, string.format, tonumber, select, BONUS_OBJECTIVE_TIME_LEFT;
 local Alliance, Horde = Enum.FlightPathFaction.Alliance, Enum.FlightPathFaction.Horde;
 
 -- App locals
@@ -24,23 +24,23 @@ local CS = CreateFrame("ColorSelect", nil, app.frame);
 CS:Hide();
 
 -- Module locals
-
+-- This returns values between 0 and 1, not 0 and 255!
 local function HexToARGB(hex)
-	return tonumber("0x"..hex:sub(1,2)), tonumber("0x"..hex:sub(3,4)), tonumber("0x"..hex:sub(5,6)), tonumber("0x"..hex:sub(7,8));
-end
-local function HexToRGB(hex)
-	return tonumber("0x"..hex:sub(1,2)) / 255, tonumber("0x"..hex:sub(3,4)) / 255, tonumber("0x"..hex:sub(5,6)) / 255;
+	return tonumber("0x"..hex:sub(1,2)) / 255, tonumber("0x"..hex:sub(3,4)) / 255, tonumber("0x"..hex:sub(5,6)) / 255, tonumber("0x"..hex:sub(7,8)) / 255;
 end
 -- Color AARRGGBB values used throughout ATT
 local colors = app.Colors;
 local Colorize = function(str, color)
 	return "|c"..color..str.."|r";
 end
+local function RGBComponentConversion(c)
+	return min(255, max(0, (c or 0) * 255));
+end
 local RGBToHex = function(r, g, b)
-	return sformat("ff%02x%02x%02x",
-		r <= 255 and r >= 0 and r or 0,
-		g <= 255 and g >= 0 and g or 0,
-		b <= 255 and b >= 0 and b or 0);
+	return sformat("ff%02x%02x%02x", 
+		RGBComponentConversion(r),
+		RGBComponentConversion(g),
+		RGBComponentConversion(b));
 end
 -- Attempts to determine the colorized text for a given Group
 app.TryColorizeName = function(group, name)
@@ -146,7 +146,7 @@ local progress_colors = setmetatable({[1] = colors.Completed}, {
 		end
 		CS:SetColorHSV(h, red.s-(red.s-green.s)*p, red.v-(red.v-green.v)*p);
 		local r,g,b = CS:GetColorRGB();
-		local color = RGBToHex(r * 255, g * 255, b * 255);
+		local color = RGBToHex(r, g, b);
 		t[p] = color;
 		return color;
 	end

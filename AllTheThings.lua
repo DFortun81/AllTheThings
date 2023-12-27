@@ -7207,7 +7207,7 @@ local fields = {
 		return t.variantText;
 	end,
 	["variantText"] = function(t)
-		local text = ColorizeRGB("Variant " .. t.artifactinfo[4], t.artifactinfo[9] * 255, t.artifactinfo[10] * 255, t.artifactinfo[11] * 255);
+		local text = ColorizeRGB("Variant " .. t.artifactinfo[4], t.artifactinfo[9], t.artifactinfo[10], t.artifactinfo[11]);
 		t.variantText = text;
 		return text;
 	end,
@@ -8101,7 +8101,7 @@ local function ColorizeStandingText(standingID, text)
 		return Colorize(text, standing.color);
 	else
 		local rgb = FACTION_BAR_COLORS[standingID];
-		return ColorizeRGB(text, rgb.r * 255, rgb.g * 255, rgb.b * 255);
+		return ColorizeRGB(text, rgb.r, rgb.g, rgb.b);
 	end
 end
 -- Returns StandingText or Requested Standing colorzing the 'Standing' text for the Faction, or otherwise the provided 'textOverride'
@@ -13667,13 +13667,13 @@ RowOnEnter = function (self)
 			local awp, rwp = GetRelativeValue(reference, "awp"), reference.rwp;
 			if rwp then
 				local _,r,g,b = HexToARGB(app.Colors.RemovedWithPatch);
-				GameTooltip:AddLine(GetRemovedWithPatchString(rwp), r / 255, g / 255, b / 255, 1);
+				GameTooltip:AddLine(GetRemovedWithPatchString(rwp), r, g, b, 1);
 			end
 			if awp and ((rwp or (reference.u and reference.u < 3)) or awp >= app.GameBuildVersion) then
 				local awpString = GetAddedWithPatchString(awp, rwp and awp > rwp);
 				if awpString then
 					local _,r,g,b = HexToARGB(app.Colors.AddedWithPatch);
-					GameTooltip:AddLine(awpString, r / 255, g / 255, b / 255, 1);
+					GameTooltip:AddLine(awpString, r, g, b, 1);
 				end
 			end
 			-- an item used for a faction which is repeatable
