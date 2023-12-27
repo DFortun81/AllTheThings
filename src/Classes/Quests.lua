@@ -11,8 +11,8 @@ local function Colorize(str, color)
 end
 
 -- Global locals
-local ipairs, pairs, rawset, rawget, tinsert, math_floor, RETRIEVING_DATA, sformat
-	= ipairs, pairs, rawset, rawget, tinsert, math.floor, RETRIEVING_DATA, string.format;
+local ipairs, pairs, rawset, rawget, tinsert, math_floor, RETRIEVING_DATA, wipe, sformat
+	= ipairs, pairs, rawset, rawget, tinsert, math.floor, RETRIEVING_DATA, wipe, string.format;
 local C_QuestLog_GetAllCompletedQuestIDs, C_QuestLog_GetQuestObjectives = C_QuestLog.GetAllCompletedQuestIDs, C_QuestLog.GetQuestObjectives;
 local GetQuestLogIndexByID = C_QuestLog.GetLogIndexForQuestID or GetQuestLogIndexByID;
 local C_QuestLog_IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted;
@@ -74,7 +74,7 @@ local C_QuestLog_RequestLoadQuestByID = C_QuestLog.RequestLoadQuestByID;
 if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA_LOAD_RESULT") then
 	local QuestsRequested = {};
 	local QuestsToPopulate = {};
-	
+
 	-- Checks if we need to request Quest data from the Server, and returns whether the request is pending
 	-- Passing in the data will cause the data to have quest rewards populated once the data is retrieved
 	RequestLoadQuestByID = function(questID, questObjectRef)
@@ -83,24 +83,24 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 			QuestsRequested[questID] = true;
 			-- app.PrintDebug("RequestLoadQuestByID",questID,"Data:",data)
 			if questObjectRef then QuestsToPopulate[questID] = questObjectRef; end
-			
+
 			-- there's some limit to quest data checking that causes d/c... not entirely sure what or how much
 			app.FunctionRunner.SetPerFrame(10);
 			app.FunctionRunner.Run(C_QuestLog_RequestLoadQuestByID, questID);
 		end
 	end
-	
+
 	app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 		-- app.PrintDebug("QUEST_DATA_LOAD_RESULT",questID,success)
 		QuestsRequested[questID] = nil;
-		
+
 		-- Store the Quest title if successful, regardless of already being cached
 		if not success then
 			-- this quest name cannot be populated by the server
 			-- app.PrintDebug("No Server QuestData",questID)
 			rawset(QuestRetries, questID, 121);
 		end
-		
+
 		-- see if this Quest is awaiting Reward population & Updates
 		local questObject = QuestsToPopulate[questID];
 		if questObject then
@@ -108,7 +108,7 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 			app.TryPopulateQuestRewards(questObject);
 		end
 	end
-	
+
 else
 	RequestLoadQuestByID = function(questID)
 		-- Function not available in this environment. :(
@@ -505,7 +505,7 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 			tinsert(info, k..":"..tostring(v))
 		end
 	end
-	
+
 	if C_Covenants then	-- Covenants and Renown
 		local covInfo = "cov:";
 		local covID = C_Covenants.GetActiveCovenantID();
@@ -533,7 +533,7 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 		end
 		tinsert(info, covInfo);
 	end
-	
+
 	if app.CurrentCharacter.Professions and #app.CurrentCharacter.Professions > 0 then
 		local skills = {};
 		for profID,known in pairs(app.CurrentCharacter.Professions) do
@@ -554,17 +554,17 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 	end
 	tinsert(info, "sq:"..GenerateSourceQuestString(questRef or id));
 	tinsert(info, "lq:"..(app.TableConcat(MostRecentQuestTurnIns, nil, nil, "<") or ""));
-	
+
 	local mapID = app.CurrentMapID;
 	tinsert(info, mapID and ("mapID:"..mapID.." ("..C_Map_GetMapInfo(mapID).name..")") or "mapID:??");
-	
+
 	local position, coord = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
 	if position then
 		local x,y = position:GetXY();
 		coord = (math_floor(x * 1000) / 10) .. ", " .. (math_floor(y * 1000) / 10);
 	end
 	tinsert(info, coord and ("coord:"..coord) or "coord:??");
-	
+
 	tinsert(info, "ver:"..app.Version);
 	tinsert(info, "```");	-- discord fancy box end
 	return info;
@@ -575,8 +575,8 @@ PrintQuestInfo = function(questID, new)
 	if not (app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests")) then
 		return;
 	end
-	
-	local text;
+
+	local text, questRef
 	local questChange = (new == true and "accepted") or (new == false and "unflagged") or "completed";
 	local searchResults = SearchForField("questID", questID);
 	if #searchResults > 0 then
@@ -587,26 +587,31 @@ PrintQuestInfo = function(questID, new)
 				if searchResult.nmc then nmc = true; end
 				if GetRelativeField(searchResult, "u", 1) then nyi = true; end
 				if GetRelativeField(searchResult, "_hqt", 1) then hqt = true; end
+				questRef = searchResult
 			end
 		end
-		
+		if not questRef then
+			app.PrintDebug("Failed to check quest info for", questID)
+			questRef = searchResults[1]
+		end
+
 		-- if user is allowing reporting of Sourced quests (true = don't report Sourced)
 		if not nyi and app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
 			return true;
 		end
-		
+
 		text = (QuestNameFromID[questID] or RETRIEVING_DATA) .. " (" .. questID .. ")";
 		if nmc then text = text .. "[C]"; end
 		if nmr then text = text .. "[R]"; end
 		if nmc or nmr or nyi or hqt then
 			app.FunctionRunner.Run(app.CheckInaccurateQuestInfo, questRef, questChange);
 		end
-		
+
 		-- give a chat output if the user has just interacted with a quest flagged as NYI
 		if nyi then
 			-- Play a sound when a reportable error is found, if any sound setting is enabled
 			app.Audio:PlayReportSound();
-			
+
 			-- Linkify the output
 			local popupID = "quest-" .. questID .. questChange;
 			app:SetupReportDialog(popupID, "NYI Quest: " .. questID,
@@ -614,7 +619,7 @@ PrintQuestInfo = function(questID, new)
 			);
 			print(app:Linkify(text .. " [NYI] ATT " .. app.Version, app.Colors.ChatLinkError, "dialog:" .. popupID));
 		end
-		
+
 		-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
 		-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet sourced
 		-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticable of being incorrectly sourced
@@ -626,10 +631,10 @@ PrintQuestInfo = function(questID, new)
 		print("Quest", questChange, text, GetQuestFrequency(questID) or "");
 	else
 		text = (QuestNameFromID[questID] or RETRIEVING_DATA) .. " (" .. questID .. ")";
-		
+
 		-- Play a sound when a reportable error is found, if any sound setting is enabled
 		app.Audio:PlayReportSound();
-		
+
 		-- Linkify the output
 		local popupID = "quest-" .. questID .. questChange;
 		app:SetupReportDialog(popupID, "Missing Quest: " .. questID,
@@ -749,7 +754,7 @@ if app.IsRetail then
 			app.Settings:SetTooltipSetting("Report:CompletedQuests", oldReportSetting);
 		end
 	end
-	
+
 	local function RefreshQuestCompletionState(questID)
 		-- app.PrintDebug("RefreshQuestCompletionState",questID)
 		if questID then
@@ -847,7 +852,7 @@ else
 				GetQuestsCompleted(CompletedQuests);
 			end
 		end
-		
+
 		local any = false;
 		for questID,completed in pairs(DirtyQuests) do
 			QuestCompletionHelper(tonumber(questID));
@@ -920,7 +925,7 @@ local criteriaFuncs = {
     ["text_achID"] = function(achievementID)
         return select(2, GetAchievementInfo(achievementID));
     end,
-	
+
     ["lvl"] = function(lvl)
         return app.Level >= lvl;
     end,
@@ -928,13 +933,13 @@ local criteriaFuncs = {
     ["text_lvl"] = function(lvl)
         return lvl;
     end,
-	
+
     ["questID"] = IsQuestSaved,
 	["label_questID"] = L.LOCK_CRITERIA_QUEST_LABEL or "Completed Quest",
     ["text_questID"] = function(questID)
         return sformat("[%d] %s", questID, QuestNameFromID[questID] or RETRIEVING_DATA);
     end,
-	
+
     ["spellID"] = function(spellID)
         return app.CurrentCharacter.Spells[spellID] or app.CurrentCharacter.ActiveSkills[spellID];
     end,
@@ -942,7 +947,7 @@ local criteriaFuncs = {
     ["text_spellID"] = function(spellID)
         return app.GetSpellName(spellID);
     end,
-	
+
     ["factionID"] = function(v)
 		-- v = factionID.standingRequiredToLock
 		local factionID = math_floor(v + 0.00001);
@@ -1062,12 +1067,12 @@ if IsQuestReplayable then
 		return IsQuestFlaggedCompleted(questID);
 	end;
 	criteriaFuncs.questID = IsQuestSaved;
-	
+
 	-- Causes a group to remain visible if it is replayable, regardless of collection status
 	OnUpdateForPartySyncedQuest = function(data)
 		data.visible = IsQuestReplayable(data.questID) or app.CollectedItemVisibilityFilter(data);
 	end
-	
+
 	-- Detect state changes
 	local function LeavePartySync()
 		if IsPartySyncActive then
@@ -1138,8 +1143,8 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	["saved"] = function(t)
 		return IsQuestSaved(t.questID);
 	end,
-	
-	
+
+
 	--["locked"] = LockedAsQuest,	-- This might not be necessary, we have this in SetupLockCriteria and AsBreadcrumb
 	-- These are Retail fields that aren't used in Classic... yet?
 	["missingSourceQuests"] = function(t)
@@ -1437,7 +1442,7 @@ app.CreateVignette = app.ExtendClass("Quest", "Vignette", "vignetteID", {
 				end
 			end
 			if retry then return; end
-			
+
 			local text = "";
 			app.Sort(names, app.SortDefaults.Strings);
 			for i,name in ipairs(names) do
@@ -1501,7 +1506,7 @@ app.events.QUEST_ACCEPTED = function(questLogIndex, questID)
 		-- app.PrintDebug("QUEST_ACCEPTED",questID)
 		rawset(QuestNameFromID, questID, nil);
 		PrintQuestInfo(questID, true);
-		
+
 		-- Check if this quest is a nextQuest of a non-collected breadcrumb (users may care to get the breadcrumb before it becomes locked, simply due to tracking quests as well)
 		if app.Settings.Collectibles.Quests or app.Settings.Collectibles.QuestsLocked then
 			local nextQuests = SearchForField("nextQuests", questID);
@@ -1513,7 +1518,7 @@ app.events.QUEST_ACCEPTED = function(questLogIndex, questID)
 							while not group.text do
 								coroutine.yield();
 							end
-							
+
 							app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
 								QuestNameFromID[questID], app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
 								group.text, app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)))
@@ -1735,7 +1740,7 @@ if app.IsRetail then
 	-- Quest Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
 	local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
 
-		  
+
 	-- These are Items rewarded by WQs which are treated as currency
 	-- other Items which are 'costs' will not be excluded by the "WorldQuestsList:Currencies" setting
 	local WorldQuestCurrencyItems = {
