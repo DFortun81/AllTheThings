@@ -25,6 +25,8 @@ lib\Audio.lua
 lib\Refresh.lua
 lib\Sort.lua
 lib\Table.lua
+
+# Load localization modules
 locales\en.lua
 locales\es.lua
 locales\de.lua
@@ -34,7 +36,11 @@ locales\ko.lua
 locales\pt.lua
 locales\ru.lua
 locales\cn.lua
+
+# Search Cache
 src\Cache.lua
+
+# Helper Modules
 src\Modules\RetrievingData.lua
 src\Modules\FactionData.lua
 src\Modules\Color.lua
@@ -43,11 +49,15 @@ src\Modules\Events.lua
 src\Modules\Filter.lua
 src\Modules\Tooltip.lua
 src\Modules\Upgrade.lua
+
+# Expansion specific localization files
 db\Dragonflight\ExplorationDB.lua
 db\Dragonflight\LocalizationDB.lua
 db\Dragonflight\en_auto.lua
 db\Presets.lua
 db\ReagentsDB.lua
+
+# Load object class templates
 src\Classes\base.lua
 src\Classes\CharacterClass.lua
 src\Classes\Quests.lua
@@ -59,6 +69,48 @@ src\Classes\Illusions.lua
 src\Classes\Miscellaneous.lua
 src\Classes\PVP Ranks.lua
 src\Classes\CharacterUnlock.lua
+
+# Load primary addon source files
 Settings.lua
 AllTheThings.lua
+
+# Load expansion specific category database.
 db\Dragonflight\Categories.lua
+
+# Window Definitions
+# src\UI\Achievements.lua
+# src\UI\Attunements.lua
+# src\UI\Auctions.lua
+# src\UI\Battle Pets.lua
+# src\UI\Breadcrumbs.lua
+# src\UI\Dailies.lua
+# src\UI\Exploration.lua
+# src\UI\Factions.lua
+# src\UI\Find.lua
+# src\UI\Flight Paths.lua
+# src\UI\Heirlooms.lua
+# src\UI\Hidden Achievement Triggers.lua
+# src\UI\Hidden Quest Triggers.lua
+# src\UI\Illusions.lua
+# src\UI\Maps.lua
+# src\UI\Mini List.lua
+# src\UI\Missing Quests.lua
+# src\UI\Mounts.lua
+# src\UI\Never Implemented.lua
+# src\UI\Objects.lua
+# src\UI\Quests.lua
+# src\UI\Raid Assistant.lua
+# src\UI\Random.lua
+# src\UI\Removed From Game.lua
+# src\UI\Removed With Patch Drops.lua
+# src\UI\Removed With Patch Loot.lua
+# src\UI\Soft Reserves.lua
+# src\UI\Sync.lua
+# src\UI\Titles.lua
+# src\UI\Toys.lua
+# src\UI\Tradeskills.lua
+# src\UI\Unsorted.lua
+
+# Finally, prepare the Data Cache
+# Not used in Retail?
+# src\Root.lua

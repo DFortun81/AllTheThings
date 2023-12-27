@@ -18,19 +18,51 @@ lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
 db\RaceDB.lua
 src\base.lua
+# lib\Callback.lua
 lib\Colors.lua
+# lib\Runner.lua
+# lib\Audio.lua
+# lib\Refresh.lua
 lib\Sort.lua
 lib\Table.lua
+
+# Load localization modules
+# locales\en.lua
+# locales\es.lua
+# locales\de.lua
+# locales\fr.lua
+# locales\it.lua
+# locales\ko.lua
+# locales\pt.lua
+# locales\ru.lua
+# locales\cn.lua
 classic\locales.lua
+
+# Search Cache
+# src\Cache.lua
+
+# Helper Modules
 src\Modules\RetrievingData.lua
 src\Modules\FactionData.lua
 src\Modules\Color.lua
+# src\Modules\Costs.lua
 src\Modules\Events.lua
+# src\Modules\Filter.lua
+# src\Modules\Tooltip.lua
+# src\Modules\Upgrade.lua
+
+# Expansion specific localization files
 db\Wrath\ExplorationDB.lua
 db\Wrath\LocalizationDB.lua
+# db\Wrath\en_auto.lua
+# db\Wrath\ReagentsDB.lua
 db\Presets.lua
+
+# Investigate why this was moved here instead of up there.
 src\Cache.lua
 lib\Audio.lua
+
+# Load object class templates
 src\Classes\base.lua
 src\Classes\CharacterClass.lua
 src\Classes\Quests.lua
@@ -39,10 +71,20 @@ src\Classes\Category.lua
 src\Classes\Deaths.lua
 src\Classes\Filter Types.lua
 src\Classes\Illusions.lua
+# src\Classes\Miscellaneous.lua
 src\Classes\PVP Ranks.lua
+# src\Classes\CharacterUnlock.lua
+
+# Load primary addon source files
+# Settings.lua
+# AllTheThings.lua
 classic\Settings.lua
 classic\ATT-Classic.lua
+
+# Load expansion specific category database.
 db\Wrath\Categories.lua
+
+# Window Definitions
 src\UI\Achievements.lua
 src\UI\Attunements.lua
 src\UI\Auctions.lua
@@ -75,4 +117,6 @@ src\UI\Titles.lua
 src\UI\Toys.lua
 src\UI\Tradeskills.lua
 src\UI\Unsorted.lua
+
+# Finally, prepare the Data Cache
 src\Root.lua

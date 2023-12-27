@@ -1,5 +1,3 @@
-
-
 -- Filter Module
 local _, app = ...;
 
