@@ -60,6 +60,7 @@ if GetSpecializationInfoByID then
 			classID = key,
 			colorStr = app.Colors.SourceIgnored,
 			text = Colorize(UNKNOWN, app.Colors.SourceIgnored),
+			isValid = false,
 			c = { key },
 		};
 		info.icontext = "|T" .. info.icon .. ":0|t " .. info.text;
@@ -81,6 +82,7 @@ else
 				classID = specID,
 				colorStr = app.Colors.SourceIgnored,
 				text = Colorize(UNKNOWN, app.Colors.SourceIgnored),
+				isValid = false,
 			};
 			info.icontext = "|T" .. info.icon .. ":0|t " .. info.text;
 		end
@@ -96,6 +98,7 @@ local ClassInfoMetatableAfterCache = { __index = function(t, key)
 		classID = 0,
 		colorStr = app.Colors.SourceIgnored,
 		text = Colorize(UNKNOWN, app.Colors.SourceIgnored),
+		isValid = false,
 	};
 	info.icontext = "|T" .. info.icon .. ":0|t " .. info.text;
 	rawset(t, key, info);
@@ -114,6 +117,7 @@ local ClassInfoMetatable = { __index = function(t, key)
 				classID = classID,
 				colorStr = colorStr,
 				text = Colorize(info.className, colorStr),
+				isValid = not not colors,
 				c = { classID },
 			};
 			info.icontext = "|T" .. info.icon .. ":0|t " .. info.text;

@@ -13528,10 +13528,14 @@ RowOnEnter = function (self)
 			end
 		end
 		if reference.c and app.Settings:GetTooltipSetting("ClassRequirements") then
-			local str = "";
+			local str,first = "",true;
 			for i,cl in ipairs(reference.c) do
-				if i > 1 then str = str .. ", "; end
-				str = str .. app.ClassInfoByID[cl].icontext;
+				local info = app.ClassInfoByID[cl];
+				if info.isValid then
+					if first then first = false;
+					else str = str .. ", "; end
+					str = str .. info.icontext;
+				end
 			end
 			GameTooltip:AddDoubleLine(L["CLASSES_CHECKBOX"], str);
 		end
