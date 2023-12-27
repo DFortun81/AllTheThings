@@ -10375,10 +10375,12 @@ local function ApplySettingsForWindow(self, windowSettings)
 		self:SetBackdrop(windowSettings.backdrop);
 	end
 	if windowSettings.backdropColor then
-		self:SetBackdropColor(unpack(windowSettings.backdropColor));
+		local r, g, b, a = unpack(windowSettings.backdropColor);
+		self:SetBackdropColor(r or 0, g or 0, b or 0, a or 1);
 	end
 	if windowSettings.borderColor then
-		self:SetBackdropBorderColor(unpack(windowSettings.borderColor));
+		local r, g, b, a = unpack(windowSettings.borderColor);
+		self:SetBackdropBorderColor(r or 0, g or 0, b or 0, a or 1);
 	end
 	self.RecordSettings = oldRecordSettings;
 end
@@ -10410,8 +10412,10 @@ local function BuildSettingsForWindow(self, windowSettings, isForDefaults)
 		windowSettings.borderColor = { 1, 1, 1, 1 };
 	else
 		windowSettings.backdrop = self:GetBackdrop();
-		windowSettings.backdropColor = { self:GetBackdropColor() };
-		windowSettings.borderColor = { self:GetBackdropBorderColor() };
+		local r, g, b, a = self:GetBackdropColor();
+		windowSettings.backdropColor = { r or 0, g or 0, b or 0, a or 1 };
+		r, g, b, a = self:GetBackdropBorderColor();
+		windowSettings.borderColor = { r or 0, g or 0, b or 0, a or 1 };
 	end
 end
 local function ClearSettingsForWindow(self)
