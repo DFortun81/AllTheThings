@@ -162,17 +162,14 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			}),
 			n(FLIGHT_PATHS, {
 				fp(1994, {	-- Vindicaar, Antoran Wastes
-					["description"] = "Vindicaar, Antoran Wastes",
 					["creatureID"] = 125514,	-- Navigation Console
 					["coord"] = { 32.3, 56.4, THE_VINDICAAR_ANTORAN_WASTES_LOWER },
 				}),
 				fp(1944, {	-- Vindicaar, Krokuun
-					["description"] = "Vindicaar, Krokuun",
 					["creatureID"] = 123139,	-- Navigation Console
 					["coord"] = { 42.5, 22.8, THE_VINDICAAR_KROKUUN_UPPER },
 				}),
 				fp(1977, {	-- Vindicaar, Eredath
-					["description"] = "Vindicaar, Eredath",
 					["creatureID"] = 125461,	-- Navigation Console
 					["coord"] = { 62.7, 49.1, THE_VINDICAAR_EREDATH_UPPER },
 				}),
