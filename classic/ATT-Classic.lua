@@ -1829,7 +1829,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if not listingByText[text] then
 						listingByText[text] = data;
 						tinsert(listing, 1, data);
-						if string.find(text, RETRIEVING_DATA) then working = true; end
+						if IsRetrieving(text) then working = true; end
 					end
 				end
 				local count, splitCounts, splitCount = 0, { };
@@ -7261,7 +7261,7 @@ if C_TooltipInfo_GetHyperlink then
 						NPCTitlesFromID[id] = leftText;
 					end
 				end
-				if title and title ~= RETRIEVING_DATA then
+				if not IsRetrieving(title) then
 					t[id] = title;
 					return title;
 				end
@@ -7284,7 +7284,7 @@ else
 				end
 			end
 			ATTCNPCHarvester:Hide();
-			if title and title ~= RETRIEVING_DATA then
+			if not IsRetrieving(title) then
 				t[id] = title;
 				return title;
 			end
@@ -7669,7 +7669,7 @@ app.GetSpellName = function(spellID, rank)
 	else
 		spellName = GetSpellInfo(spellID);
 	end
-	if spellName and spellName ~= "" and spellName ~= RETRIEVING_DATA then
+	if not IsRetrieving(spellName) then
 		if not rawget(app.SpellNameToSpellID, spellName) then
 			rawset(app.SpellNameToSpellID, spellName, spellID);
 			if not rawget(SpellIDToSpellName, spellID) then

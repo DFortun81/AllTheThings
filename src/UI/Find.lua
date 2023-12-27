@@ -2,6 +2,7 @@
 local appName, app = ...;
 local SearchForField = app.SearchForField;
 local UpdateGroups = app.UpdateGroups;
+local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 
 -- Uncomment this section to also harvest tooltip data.
 --[[
@@ -13,7 +14,8 @@ CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "
 			ItemHarvester:SetOwner(UIParent,"ANCHOR_NONE")
 			ItemHarvester:SetHyperlink(link);
 			local lineCount = ItemHarvester:NumLines();
-			if ATTCItemHarvesterTextLeft1:GetText() and ATTCItemHarvesterTextLeft1:GetText() ~= RETRIEVING_DATA and lineCount > 0 then
+			local str = ATTCItemHarvesterTextLeft1:GetText();
+			if not IsRetrieving(str) and lineCount > 0 then
 				local requirements = {};
 				for index=2,lineCount,1 do
 					local line = _G["ATTCItemHarvesterTextLeft" .. index] or _G["ATTCItemHarvesterText" .. index];

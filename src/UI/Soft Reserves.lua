@@ -12,6 +12,7 @@ local GetLootMethod, GetRealmName, UnitName, UnitGUID, UnitInRaid, UnitInParty =
 local strsplit, strsub, tinsert, tremove = strsplit, strsub, tinsert, tremove;
 
 -- App locals
+local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetRelativeValue = app.GetRelativeValue;
 
 -- Helper Functions
@@ -216,7 +217,7 @@ local function QuerySoftReserve(guid, cmd, target)
 			for i,g in ipairs(group) do
 				if g.itemID then
 					local link = g.link;
-					if not link or link == RETRIEVING_DATA or strsub(link, 1, 4) == "item" then
+					if IsRetrieving(link) or strsub(link, 1, 4) == "item" then
 						link = "item:" .. g.itemID;
 					end
 					local sr = {};
@@ -260,7 +261,7 @@ local function QuerySoftReserve(guid, cmd, target)
 				for i,g in ipairs(group) do
 					if g.itemID then
 						local link = g.link;
-						if not link or link == RETRIEVING_DATA or strsub(link, 1, 4) == "item" then
+						if IsRetrieving(link) or strsub(link, 1, 4) == "item" then
 							link = "item:" .. g.itemID;
 						end
 						SendGUIDWhisper("You have " .. link .. " Soft Reserved.", guid);

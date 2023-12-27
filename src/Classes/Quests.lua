@@ -3,7 +3,9 @@ local app = select(2, ...);
 local L = app.L;
 
 -- App locals
-local AssignChildren, GetRelativeField, SearchForField = app.AssignChildren, app.GetRelativeField, app.SearchForField;
+local AssignChildren, GetRelativeField, SearchForField =
+	app.AssignChildren, app.GetRelativeField, app.SearchForField;
+local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 
 -- Temporary (this is gonna move)
 local function Colorize(str, color)
@@ -52,11 +54,7 @@ local QuestRetries = setmetatable({}, { __index = function(t, questID)
 end });
 local QuestNameFromID = setmetatable(L.QUEST_NAMES or {}, { __index = function(t, questID)
 	local title = GetTitleForQuestID(questID);
-	if title and title ~= RETRIEVING_DATA and title ~= "" then
-		rawset(QuestRetries, questID, nil);
-		rawset(t, questID, title);
-		return title;
-	else
+	if IsRetrieving(title) then
 		local retries = QuestRetries[questID];
 		if retries > 120 then
 			title = "Quest #" .. questID .. "*";
@@ -66,6 +64,10 @@ local QuestNameFromID = setmetatable(L.QUEST_NAMES or {}, { __index = function(t
 		else
 			rawset(QuestRetries, questID, retries + 1);
 		end
+	else
+		rawset(QuestRetries, questID, nil);
+		rawset(t, questID, title);
+		return title;
 	end
 end });
 
