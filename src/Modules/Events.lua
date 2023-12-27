@@ -64,7 +64,7 @@ local SessionEventCache;
 local function GetEventCache()
 	-- app.PrintDebug("GetEventCache")
 	local now = C_DateAndTime_GetServerTimeLocal();
-	local cache = AllTheThingsSavedVariables.EventCache;
+	local cache = SessionEventCache or AllTheThingsSavedVariables.EventCache;
 	if cache and (cache.lease or 0) > now then
 		-- If our cache is still leased, then simply return it.
 		-- app.PrintDebug("GetEventCache.lease")
