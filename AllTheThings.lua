@@ -44,7 +44,6 @@ local EJ_GetEncounterInfo = _G["EJ_GetEncounterInfo"];
 local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
 local GetAchievementInfo = _G["GetAchievementInfo"];
 local GetAchievementLink = _G["GetAchievementLink"];
-local GetClassInfo = _G["GetClassInfo"];
 local GetDifficultyInfo = _G["GetDifficultyInfo"];
 local GetFactionInfoByID = _G["GetFactionInfoByID"];
 local GetItemInfo = _G["GetItemInfo"];
@@ -3843,7 +3842,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 												-- failText = failText .. "Class Locked";
 												for i,classID in ipairs(otherATTSource.c) do
 													if i > 1 then failText = failText .. ", "; end
-													failText = failText .. (GetClassInfo(classID) or "???");
+													failText = failText .. (app.ClassInfoByID[classID].name or "???");
 												end
 											elseif otherATTSource.nmr then
 												-- This is NOT for your race. Therefore, no credit for you!
@@ -4342,8 +4341,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 
 					-- If this entry has a specific Class requirement and is not itself a 'Class' header, tack that on as well
 					if entry.c and entry.key ~= "classID" and #entry.c == 1 then
-						local class = GetClassInfo(entry.c[1]);
-						left = left .. " [" .. TryColorizeName(entry, class) .. "]";
+						left = left .. " [" .. TryColorizeName(entry, app.ClassInfoByID[entry.c[1]].name) .. "]";
 					end
 					if entry.icon then item.prefix = item.prefix .. "|T" .. entry.icon .. ":0|t "; end
 
@@ -5312,7 +5310,7 @@ local function ProcessIncomingChunk(sender, uid, index, chunk)
 		if data[8] ~= "" and data[8] ~= " " then character.raceID = tonumber(data[8]); end
 		character.lastPlayed = tonumber(data[9]);
 		character.Deaths = tonumber(data[10]);
-		if character.classID then character.class = C_CreatureInfo.GetClassInfo(character.classID).classFile; end
+		if character.classID then character.class = app.ClassInfoByID[character.classID].file; end
 		if character.raceID then character.race = C_CreatureInfo_GetRaceInfo(character.raceID).clientFileString; end
 		for i=11,#data,1 do
 			local piece = splittoarray("/", data[i]);
@@ -7633,7 +7631,7 @@ local unitFields = {
 			if guid == unit or character.name == unit then
 				if character.classID then
 					t.classID = character.classID;
-					t.class = C_CreatureInfo.GetClassInfo(character.classID).className;
+					t.class = app.ClassInfoByID[character.classID].name;
 				end
 				if character.raceID then
 					t.raceID = character.raceID;
@@ -13530,17 +13528,10 @@ RowOnEnter = function (self)
 			end
 		end
 		if reference.c and app.Settings:GetTooltipSetting("ClassRequirements") then
-			local str,colors = "",app.Settings:GetTooltipSetting("UseMoreColors");
-			local classInfo, classColor;
+			local str = "";
 			for i,cl in ipairs(reference.c) do
 				if i > 1 then str = str .. ", "; end
-				classInfo = C_CreatureInfo.GetClassInfo(cl);
-				classColor = RAID_CLASS_COLORS[select(2, GetClassInfo(cl))];
-				if colors and classColor then
-					str = str .. Colorize(classInfo and classInfo.className or UNKNOWN, classColor.colorStr);
-				else
-					str = str .. (classInfo and classInfo.className or UNKNOWN);
-				end
+				str = str .. app.ClassInfoByID[cl].icontext;
 			end
 			GameTooltip:AddDoubleLine(L["CLASSES_CHECKBOX"], str);
 		end

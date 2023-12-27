@@ -9984,11 +9984,8 @@ local function RowOnEnter(self)
 		if reference.c and app.Settings:GetTooltipSetting("ClassRequirements") then
 			local str = "";
 			for i,cl in ipairs(reference.c) do
-				local info = C_CreatureInfo.GetClassInfo(cl);
-				if info then
-					if i > 1 then str = str .. ", "; end
-					str = str .. info.className;
-				end
+				if i > 1 then str = str .. ", "; end
+				str = str .. app.ClassInfoByID[cl].icontext;
 			end
 			GameTooltip:AddDoubleLine("Classes", str);
 		end

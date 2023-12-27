@@ -11,8 +11,8 @@ local _, app = ...;
 -- Encapsulates the functionality for handling and interacting with colors in the addon, which are typically represented in Text
 
 -- Global locals
-local rawget, ipairs, pairs, abs, floor, RAID_CLASS_COLORS, SecondsToTime, sformat, tonumber, select, GetClassInfo, BONUS_OBJECTIVE_TIME_LEFT
-	= rawget, ipairs, pairs, abs, floor, RAID_CLASS_COLORS, SecondsToTime, string.format, tonumber, select, GetClassInfo, BONUS_OBJECTIVE_TIME_LEFT;
+local rawget, ipairs, pairs, abs, floor, RAID_CLASS_COLORS, SecondsToTime, sformat, tonumber, select, BONUS_OBJECTIVE_TIME_LEFT
+	= rawget, ipairs, pairs, abs, floor, RAID_CLASS_COLORS, SecondsToTime, string.format, tonumber, select, BONUS_OBJECTIVE_TIME_LEFT;
 local Alliance, Horde = Enum.FlightPathFaction.Alliance, Enum.FlightPathFaction.Horde;
 
 -- App locals
@@ -63,9 +63,9 @@ app.TryColorizeName = function(group, name)
 	then
 		-- class color
 		if group.classID then
-			return Colorize(name, RAID_CLASS_COLORS[select(2, GetClassInfo(group.classID))].colorStr);
+			return Colorize(name, app.ClassInfoByID[group.classID].colorStr);
 		elseif group.c and #group.c == 1 then
-			return Colorize(name, RAID_CLASS_COLORS[select(2, GetClassInfo(group.c[1]))].colorStr);
+			return Colorize(name, app.ClassInfoByID[group.c[1]].colorStr);
 		-- faction colors
 		elseif group.r then
 			-- red for Horde
