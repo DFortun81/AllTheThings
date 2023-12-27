@@ -118,60 +118,69 @@ local DefaultFields = {
 	["repeatable"] = function(t)
 		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly;
 	end,
-	-- modItemID doesn't exist for Items which NEVER use a modID or bonusID (illusions, music rolls, mounts, etc.)
-	["modItemID"] = function(t)
-		return t.itemID;
-	end,
-	-- whether something is considered 'missing' by seeing if it can search for itself
-	["_missing"] = function(t)
-		local key = t.key;
-		-- only process this logic for real 'Things' in the game
-		if not app.ThingKeys[key] then return; end
-		-- quest 76250
-		-- item with modID, so key is itemID, t[key] is 13544
-		-- SFO uses 'modItemID' to verify 'itemID' search result object accuracy, thus '13544' never matches the expected '13544.01'
-		-- so we need to know to search by 'itemID' but using the 'modItemID' here for base itemID lookups of missing
-		-- i.e. if searching 13544, we allow 13544.01 to count as a non-missing representation of the search... makes sense?
-		local val = key == "itemID" and t.modItemID or t[key];
-		local o = app.SearchForObject(key, val, "field") or (val == t.itemID and app.SearchForObject(key, val));
-		local missing = true;
-		while o do
-			missing = rawget(o, "_missing");
-			o = not missing and (o.sourceParent or o.parent) or nil;
-		end
-		t._missing = missing or false;
-		return missing;
-	end,
-	["nmc"] = function(t)
-		local c = t.c;
-		local nmc = c and not containsValue(c, app.ClassIndex) or false;
-		-- app.PrintDebug("base.nmc",t.__type,nmc)
-		t.nmc = nmc;
-		return nmc;
-	end,
-	["nmr"] = function(t)
-		local races = t.races;
-		local r = t.r;
-		local nmr = (r and r ~= app.FactionID) or (races and not containsValue(races, app.RaceIndex)) or false;
-		-- app.PrintDebug("base.nmr",t.__type,nmr)
-		t.nmr = nmr;
-		return nmr;
-	end,
 	["costProgress"] = returnZero,
     ["costTotal"] = returnZero,
 	["progress"] = returnZero,
     ["total"] = returnZero,
-	-- we like to use different field names in different places
-	["filterID"] = function(t)
-		return t.f
-	end,
-	["iconPath"] = function(t)
-		return rawget(t, "icon")
-	end,
-	["creatureID"] = function(t)	-- TODO: Do something about this, it's silly.
-		return t.npcID;
-	end,
 };
+
+if app.IsRetail then
+	-- Crieve doesn't see these fields being included as necessary,
+	-- future research project is to look into seeing if this is something we want to keep or put somewhere else. (such as a function)
+	for fieldName,fieldMethod in pairs({
+		-- modItemID doesn't exist for Items which NEVER use a modID or bonusID (illusions, music rolls, mounts, etc.)
+		["modItemID"] = function(t)
+			return t.itemID;
+		end,
+		-- whether something is considered 'missing' by seeing if it can search for itself
+		["_missing"] = function(t)
+			local key = t.key;
+			-- only process this logic for real 'Things' in the game
+			if not app.ThingKeys[key] then return; end
+			-- quest 76250
+			-- item with modID, so key is itemID, t[key] is 13544
+			-- SFO uses 'modItemID' to verify 'itemID' search result object accuracy, thus '13544' never matches the expected '13544.01'
+			-- so we need to know to search by 'itemID' but using the 'modItemID' here for base itemID lookups of missing
+			-- i.e. if searching 13544, we allow 13544.01 to count as a non-missing representation of the search... makes sense?
+			local val = key == "itemID" and t.modItemID or t[key];
+			local o = app.SearchForObject(key, val, "field") or (val == t.itemID and app.SearchForObject(key, val));
+			local missing = true;
+			while o do
+				missing = rawget(o, "_missing");
+				o = not missing and (o.sourceParent or o.parent) or nil;
+			end
+			t._missing = missing or false;
+			return missing;
+		end,
+		["nmc"] = function(t)
+			local c = t.c;
+			local nmc = c and not containsValue(c, app.ClassIndex) or false;
+			-- app.PrintDebug("base.nmc",t.__type,nmc)
+			t.nmc = nmc;
+			return nmc;
+		end,
+		["nmr"] = function(t)
+			local races = t.races;
+			local r = t.r;
+			local nmr = (r and r ~= app.FactionID) or (races and not containsValue(races, app.RaceIndex)) or false;
+			-- app.PrintDebug("base.nmr",t.__type,nmr)
+			t.nmr = nmr;
+			return nmr;
+		end,
+		-- we like to use different field names in different places
+		["filterID"] = function(t)
+			return t.f
+		end,
+		["iconPath"] = function(t)
+			return rawget(t, "icon")
+		end,
+		["creatureID"] = function(t)	-- TODO: Do something about this, it's silly.
+			return t.npcID;
+		end,
+	}) do
+		DefaultFields[fieldName] = fieldMethod;
+	end
+end
 
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 local classDefinitions, _cache = {};
@@ -184,22 +193,16 @@ local BaseObjectFields = not app.__perf and function(fields, className)
 		print("A Class Name must be declared when using BaseObjectFields");
 	end
 	local class = { __type = function() return className; end };
-	if not classDefinitions[className] then
-		classDefinitions[className] = class;
-	else
-		print("A Class has already been defined with that name!", className);
-	end
+	for key,method in pairs(DefaultFields) do class[key] = method; end
 	if fields then
 		for key,method in pairs(fields) do
 			class[key] = method;
 		end
 	end
-
-	-- Inject the default fields into the class
-	for key,method in pairs(DefaultFields) do
-		if not class[key] then
-			class[key] = method;
-		end
+	if not classDefinitions[className] then
+		classDefinitions[className] = class;
+	else
+		print("A Class has already been defined with that name!", className);
 	end
 	return {
 		__class = class,
@@ -215,23 +218,18 @@ or function(fields, className)
 		print("A Class Name must be declared when using BaseObjectFields");
 	end
 	local class = { __type = function() return className; end };
-	if not classDefinitions[className] then
-		classDefinitions[className] = class;
-	else
-		print("A Class has already been defined with that name!", className);
-	end
+	for key,method in pairs(DefaultFields) do class[key] = method; end
 	if fields then
 		for key,method in pairs(fields) do
 			class[key] = method;
 		end
 	end
-
-	-- Inject the default fields into the class
-	for key,method in pairs(DefaultFields) do
-		if not class[key] then
-			class[key] = method;
-		end
+	if not classDefinitions[className] then
+		classDefinitions[className] = class;
+	else
+		print("A Class has already been defined with that name!", className);
 	end
+	
 	app.__perf.CaptureTable(class, className)
 	return {
 		__class = class,
@@ -244,7 +242,6 @@ or function(fields, className)
 		end
 	}
 end
-
 app.BaseObjectFields = BaseObjectFields;
 app.BaseClass = BaseObjectFields(nil, "BaseClass");
 

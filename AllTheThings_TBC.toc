@@ -31,7 +31,7 @@ db\TBC\LocalizationDB.lua
 db\Presets.lua
 src\Cache.lua
 lib\Audio.lua
-classic\src-Classes-base.lua
+src\Classes\base.lua
 src\Classes\CharacterClass.lua
 src\Classes\Quests.lua
 src\Classes\Objects.lua
