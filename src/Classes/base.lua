@@ -193,16 +193,22 @@ local BaseObjectFields = not app.__perf and function(fields, className)
 		print("A Class Name must be declared when using BaseObjectFields");
 	end
 	local class = { __type = function() return className; end };
-	for key,method in pairs(DefaultFields) do class[key] = method; end
+	if not classDefinitions[className] then
+		classDefinitions[className] = class;
+	else
+		print("A Class has already been defined with that name!", className);
+	end
 	if fields then
 		for key,method in pairs(fields) do
 			class[key] = method;
 		end
 	end
-	if not classDefinitions[className] then
-		classDefinitions[className] = class;
-	else
-		print("A Class has already been defined with that name!", className);
+
+	-- Inject the default fields into the class
+	for key,method in pairs(DefaultFields) do
+		if not class[key] then
+			class[key] = method;
+		end
 	end
 	return {
 		__class = class,
@@ -218,18 +224,23 @@ or function(fields, className)
 		print("A Class Name must be declared when using BaseObjectFields");
 	end
 	local class = { __type = function() return className; end };
-	for key,method in pairs(DefaultFields) do class[key] = method; end
-	if fields then
-		for key,method in pairs(fields) do
-			class[key] = method;
-		end
-	end
 	if not classDefinitions[className] then
 		classDefinitions[className] = class;
 	else
 		print("A Class has already been defined with that name!", className);
 	end
-	
+	if fields then
+		for key,method in pairs(fields) do
+			class[key] = method;
+		end
+	end
+
+	-- Inject the default fields into the class
+	for key,method in pairs(DefaultFields) do
+		if not class[key] then
+			class[key] = method;
+		end
+	end
 	app.__perf.CaptureTable(class, className)
 	return {
 		__class = class,
