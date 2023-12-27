@@ -7576,108 +7576,13 @@ end	-- Battle Pet Lib
 
 -- Character Class Lib
 (function()
-local class_id_cache = {};
-for i=1,GetNumClasses() do
-	class_id_cache[select(2, GetClassInfo(i))] = i;
-end
-local classIcons = {
-	[1] = app.asset("ClassIcon_Warrior"),
-	[2] = app.asset("ClassIcon_Paladin"),
-	[3] = app.asset("ClassIcon_Hunter"),
-	[4] = app.asset("ClassIcon_Rogue"),
-	[5] = app.asset("ClassIcon_Priest"),
-	[6] = app.asset("ClassIcon_DeathKnight"),
-	[7] = app.asset("ClassIcon_Shaman"),
-	[8] = app.asset("ClassIcon_Mage"),
-	[9] = app.asset("ClassIcon_Warlock"),
-	[10] = app.asset("ClassIcon_Monk"),
-	[11] = app.asset("ClassIcon_Druid"),
-	[12] = app.asset("ClassIcon_DemonHunter"),
-	[13] = app.asset("ClassIcon_Evoker"),
-};
-local GetClassIDFromClassFile = function(classFile)
-	for i,icon in pairs(classIcons) do
-		local info = C_CreatureInfo.GetClassInfo(i);
-		if info and info.classFile == classFile then
-			return i;
-		end
-	end
-end
-app.ClassDB = setmetatable({}, { __index = function(t, className)
-	for i,_ in pairs(classIcons) do
-		local info = C_CreatureInfo.GetClassInfo(i);
-		if info and info.className == className then
-			t[className] = i;
-			return i;
-		end
-	end
-end });
-local cache = app.CreateCache("classID");
-local function CacheInfo(t, field)
-	local _t, id = cache.GetCached(t);
-	-- specc can be included in the id
-	local classID = math_floor(id);
-	t.classKey = classID;
-	local specc_decimal = 1000 * (id - classID);
-	local specc = math_floor(specc_decimal + 0.00001);
-	if specc > 0 then
-		local _, name, _, icon = GetSpecializationInfoForSpecID(specc);
-		_t.name = name;
-		_t.icon = icon;
-	else
-		local name = GetClassInfo(t.classID);
-		_t.name = name;
-		_t.icon = classIcons[t.classID];
-	end
-	if field then return _t[field]; end
-end
-local fields = {
-	["key"] = function(t)
-		return "classID";
-	end,
-	["text"] = function(t)
-		local text = t.name;
-		if t.mapID then
-			text = app.GetMapName(t.mapID) .. " (" .. text .. ")";
-		elseif t.maps then
-			text = app.GetMapName(t.maps[1]) .. " (" .. text .. ")";
-		end
-		return Colorize(text, t.classColorCode);
-	end,
-	["name"] = function(t)
-		return cache.GetCachedField(t, "name", CacheInfo);
-	end,
-	["icon"] = function(t)
-		return cache.GetCachedField(t, "icon", CacheInfo);
-	end,
-	["c"] = function(t)
-		local c = { math_floor(t.classID) };
-		t.c = c;
-		return c;
-	end,
-	["nmc"] = function(t)
-		return math_floor(t.classID) ~= app.ClassIndex;
-	end,
-	["classColors"] = function(t)
-		return RAID_CLASS_COLORS[select(2, GetClassInfo(math_floor(t.classID)))];
-	end,
-	["classColorCode"] = function(t)
-		local colors = t.classColors;
-		return colors and colors.colorStr or app.Colors.SourceIgnored;
-	end,
-};
-app.BaseCharacterClass = app.BaseObjectFields(fields, "BaseCharacterClass");
-app.CreateCharacterClass = function(id, t)
-	return setmetatable(constructor(id, t, "classID"), app.BaseCharacterClass);
-end
-
 -- Unit Lib
 local unitFields = {
 	["key"] = function(t)
 		return "unit";
 	end,
 	["icon"] = function(t)
-		if t.classID then return classIcons[t.classID]; end
+		if t.classID then return app.ClassInfoByID[t.classID].icon; end
 	end,
 	["text"] = function(t)
 		-- name is already colorized, so don't re-colorize via BaseObjectDefaults.text
@@ -9769,7 +9674,7 @@ itemTooltipHarvesterFields.text = function(t)
 								local classes = {};
 								local _,list = strsplit(":", text);
 								for i,className in ipairs({strsplit(",", list)}) do
-									tinsert(classes, app.ClassDB[strtrim(className)]);
+									tinsert(classes, app.ClassInfoByClassName[strtrim(className)].classID);
 								end
 								if #classes > 0 then
 									t.info.classes = classes;
@@ -16468,7 +16373,7 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 				header.visible = true;
 				setmetatable(header,
 					header.instanceID and app.BaseInstance
-					or header.classID and app.BaseCharacterClass
+					or (header.classID and { __index = app.CreateCharacterClass(header.classID) })
 					or header.achID and app.BaseMapWithAchievementID or app.BaseMap);
 
 				-- Swap out the map data for the header.

@@ -3,8 +3,8 @@
 local appName, app = ...;
 
 -- Global locals
-local type, ipairs, pairs, tonumber, setmetatable, rawget, tinsert
-	= type, ipairs, pairs, tonumber, setmetatable, rawget, tinsert;
+local type, ipairs, pairs, tonumber, setmetatable, rawget, tinsert, unpack
+	= type, ipairs, pairs, tonumber, setmetatable, rawget, tinsert, unpack;
 
 -- App locals
 local GetRelativeValue = app.GetRelativeValue;
@@ -309,6 +309,50 @@ app.CreateClass = function(className, classKey, fields, ...)
 		classesByKey[classKey] = classConstructor;
 		return classConstructor, Class;
 	end
+end
+app.CreateClassFromArray = function(arr)
+	return app.CreateClass(unpack(arr));
+end
+app.CreateClassWithInfo = function(className, classKey, classInfo, fields)
+	-- Validate arguments
+	if not className then
+		print("A Class Name must be declared when using CreateClassWithInfo");
+	end
+	if not classKey then
+		print("A Class Key must be declared when using CreateClassWithInfo");
+	end
+	if not fields then
+		print("Fields must be declared when using CreateClassWithInfo");
+	end
+	if not classInfo then
+		print("ClassInfo must be declared when using CreateClassWithInfo");
+	end
+	
+	-- Ensure that a key and _type field exists!
+	local class = {
+		__type = function() return className; end,
+		key = function() return classKey; end
+	};
+	for key,method in pairs(DefaultFields) do class[key] = method; end
+	for key,method in pairs(fields) do class[key] = method; end
+	if not classDefinitions[className] then
+		classDefinitions[className] = class;
+	else
+		print("A Class has already been defined with that name!", className);
+	end
+	
+	local classConstructor = function(id, t)
+		if t then
+			if not t.g and t[1] then
+				t = { g=t };
+			end
+		else
+			t = {};
+		end
+		return setmetatable(t, { __index = classInfo[id] });
+	end;
+	classesByKey[classKey] = classConstructor;
+	return classConstructor;
 end
 app.ExtendClass = function(baseClassName, className, classKey, fields, ...)
 	local baseClass = classDefinitions[baseClassName];

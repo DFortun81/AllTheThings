@@ -24,7 +24,7 @@ CreateItemHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "
 								local classes = {};
 								local _,list = strsplit(":", text);
 								for i,className in ipairs({strsplit(",", list)}) do
-									tinsert(classes, app.ClassDB[strtrim(className)]);
+									tinsert(classes, app.ClassInfoByClassName[strtrim(className)].classID);
 								end
 								if #classes > 0 then
 									t.info.classes = classes;

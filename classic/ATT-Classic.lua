@@ -4771,67 +4771,8 @@ end
 app.CreateAchievementCategory = app.CreateClass("AchievementCategory", "achievementCategoryID", categoryFields);
 end)();
 
--- Character Class Lib
+-- Character Unit Lib
 (function()
-local classIcons = {
-	[1] = app.asset("ClassIcon_Warrior"),
-	[2] = app.asset("ClassIcon_Paladin"),
-	[3] = app.asset("ClassIcon_Hunter"),
-	[4] = app.asset("ClassIcon_Rogue"),
-	[5] = app.asset("ClassIcon_Priest"),
-	[6] = app.asset("ClassIcon_DeathKnight"),
-	[7] = app.asset("ClassIcon_Shaman"),
-	[8] = app.asset("ClassIcon_Mage"),
-	[9] = app.asset("ClassIcon_Warlock"),
-	[10] = app.asset("ClassIcon_Monk"),
-	[11] = app.asset("ClassIcon_Druid"),
-	[12] = app.asset("ClassIcon_DemonHunter"),
-};
-local GetClassIDFromClassFile = function(classFile)
-	for i,icon in pairs(classIcons) do
-		local info = C_CreatureInfo.GetClassInfo(i);
-		if info and info.classFile == classFile then
-			return i;
-		end
-	end
-end
-app.ClassDB = setmetatable({}, { __index = function(t, className)
-	for i,_ in pairs(classIcons) do
-		local info = C_CreatureInfo.GetClassInfo(i);
-		if info and info.className == className then
-			rawset(t, className, i);
-			return i;
-		end
-	end
-end });
-
-app.CreateCharacterClass, app.BaseCharacterClass = app.CreateClass("CharacterClass", "classID", {
-	["text"] = function(t)
-		local text = "|c" .. t.classColors.colorStr .. t.name .. "|r";
-		rawset(t, "text", text);
-		return text;
-	end,
-	["icon"] = function(t)
-		return classIcons[t.classID];
-	end,
-	["name"] = function(t)
-		return C_CreatureInfo.GetClassInfo(t.classID).className;
-	end,
-	["c"] = function(t)
-		local c = { t.classID };
-		rawset(t, "c", c);
-		return c;
-	end,
-	["nmc"] = function(t)
-		return t.classID ~= app.ClassIndex;
-	end,
-	["classColors"] = function(t)
-		return RAID_CLASS_COLORS[C_CreatureInfo.GetClassInfo(t.classID).classFile];
-	end,
-	["ignoreSourceLookup"] = function(t)
-		return true;
-	end,
-});
 app.CreateUnit = app.CreateClass("Unit", "unit", {
 	["text"] = function(t)
 		return t.classText;
@@ -4845,8 +4786,8 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 				rawset(t, "lvl", character.lvl);
 				if character.classID then
 					rawset(t, "classID", character.classID);
-					rawset(t, "classes", { character.classID });
-					local classInfo = C_CreatureInfo.GetClassInfo(character.classID);
+					rawset(t, "c", { character.classID });
+					local classInfo = app.ClassInfoByID[character.classID];
 					if classInfo then
 						rawset(t, "className", classInfo.className);
 						rawset(t, "classFile", classInfo.classFile);
@@ -4865,7 +4806,7 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 			-- It's a GUID.
 			guid = unit;
 			className, classFile, raceName, raceFile, raceID, name = GetPlayerInfoByGUID(guid);
-			classID = GetClassIDFromClassFile(classFile);
+			classID = ClassInfoByClassFile[classFile].classID;
 		else
 			name = UnitName(unit);
 			if name then
@@ -4898,7 +4839,7 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 	end,
 	["icon"] = function(t)
 		local classID = rawget(t.info, "classID");
-		if classID then return classIcons[classID]; end
+		if classID then return app.ClassInfoByID[classID].icon; end
 	end,
 	["guid"] = function(t)
 		local guid = rawget(t.info, "guid");
