@@ -175,6 +175,10 @@ local DefaultFields = {
 
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 local classDefinitions, _cache = {};
+local call = function(class, key, t)
+	_cache = rawget(class, key);
+	if _cache then return _cache(t) end
+end
 local BaseObjectFields = not app.__perf and function(fields, className)
 	if not className then
 		print("A Class Name must be declared when using BaseObjectFields");
@@ -438,7 +442,12 @@ app.CreateClassWithInfo = function(className, classKey, classInfo, fields)
 		else
 			t = {};
 		end
-		return setmetatable(t, { __index = classInfo[id] });
+		local info = classInfo[id];
+		return setmetatable(t, {
+			__index = function(t, key)
+				return info[key] or call(class, key, t);
+			end,
+		});
 	end;
 	classesByKey[classKey] = classConstructor;
 	return classConstructor;
