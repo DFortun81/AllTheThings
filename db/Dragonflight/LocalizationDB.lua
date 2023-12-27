@@ -973,7 +973,7 @@ localize(L.HEADER_ICONS, {
 	[-1000306] = "Interface/Icons/inv_weapon_rifle_01",
 	[-1000307] = "Interface/Icons/inv_hammer_32",
 	[-1000308] = _.asset("Holiday_Day_of_the_Dead"),
-	[-1000309] = _.asset("Holiday_RaceCupFlag"),
+	[-1000309] = _.asset("Holiday_RaceCup"),
 	[-1000311] = _.asset("Holiday_EastCup"),
 	[-1000312] = _.asset("Holiday_KalCup"),
 	[-1000314] = _.asset("Holiday_DraeCup"),

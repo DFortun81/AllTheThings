@@ -4,7 +4,7 @@
 DRAGONRIDING_CUP_ROOT = createHeader({
 	readable = "Dragonriding Cup",
 	constant = "DRAGONRIDING_CUP_HEADER",
-	icon = [[~_.asset("Holiday_RaceCupFlag")]],
+	icon = [[~_.asset("Holiday_RaceCup")]],
 	eventID = EVENTS.DRAGONRIDING_CUP,
 	text = {
 		en = "Dragonriding Cup",
