@@ -12980,8 +12980,7 @@ local function RowOnClick(self, button)
 		local window = self:GetParent():GetParent();
 		-- All non-Shift Right Clicks open a mini list or the settings.
 		if button == "RightButton" then
-			-- Plot waypoints, not from window header unless a popout window
-			if IsAltKeyDown() and (self.index > 0 or window.ExpireTime) then
+			if IsAltKeyDown() then
 				AddTomTomWaypoint(reference);
 			elseif IsShiftKeyDown() then
 				if app.Settings:GetTooltipSetting("Sort:Progress") then
