@@ -11,8 +11,8 @@ local function Colorize(str, color)
 end
 
 -- Global locals
-local ipairs, pairs, rawset, rawget, tinsert, math_floor, RETRIEVING_DATA, wipe, sformat
-	= ipairs, pairs, rawset, rawget, tinsert, math.floor, RETRIEVING_DATA, wipe, string.format;
+local ipairs, pairs, rawset, rawget, tinsert, math_floor, RETRIEVING_DATA, wipe, select, tonumber, sformat
+	= ipairs, pairs, rawset, rawget, tinsert, math.floor, RETRIEVING_DATA, wipe, select, tonumber, string.format;
 local C_QuestLog_GetAllCompletedQuestIDs, C_QuestLog_GetQuestObjectives = C_QuestLog.GetAllCompletedQuestIDs, C_QuestLog.GetQuestObjectives;
 local GetQuestLogIndexByID = C_QuestLog.GetLogIndexForQuestID or GetQuestLogIndexByID;
 local C_QuestLog_IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted;
@@ -693,12 +693,13 @@ app.CheckQuestInfo = function(questID, isTest)
 end
 
 -- Query Completed Quests
-local QueryCompletedQuests, RefreshQuestInfo;
--- TODO: Refactor this to make these two functions more or less do the same thing.
+-- Used externally to indicate to the quest lib that a quest refresh should be performed
+-- Optional param: questID
+local RefreshQuestInfo;
 if app.IsRetail then
 	local MAX = 999999;
 	local CompleteQuestSequence = {};
-	QueryCompletedQuests = function()
+	local QueryCompletedQuests = function()
 		wipe(DirtyQuests);
 		local freshCompletes = C_QuestLog_GetAllCompletedQuestIDs();
 		-- sometimes Blizz pretends that 0 Quests are completed. How silly of them!
@@ -780,9 +781,13 @@ if app.IsRetail then
 			AfterCombatOrDelayedCallback(RefreshQuestCompletionState, 1);
 		end
 	end
+
+	-- Retail Event Handlers
+	tinsert(app.EventHandlers.OnRecalculate, RefreshQuestInfo);
+	tinsert(app.EventHandlers.OnStartup, RefreshQuestInfo);
 	tinsert(app.EventHandlers.OnPlayerLevelUp, RefreshQuestInfo);
 else
-	QueryCompletedQuests = function()
+	local QueryCompletedQuests = function()
 		-- Mark all previously completed quests.
 		if C_QuestLog_GetAllCompletedQuestIDs then
 			local completedQuests = C_QuestLog_GetAllCompletedQuestIDs();
@@ -864,6 +869,10 @@ else
 			app:RefreshDataQuietly("RefreshQuestInfo", true);
 		end
 	end
+
+	-- Classic Event Handlers
+	tinsert(app.EventHandlers.OnRecalculate, QueryCompletedQuests);
+	tinsert(app.EventHandlers.OnStartup, QueryCompletedQuests);
 end
 
 -- World Quest Support Lib
@@ -1941,10 +1950,6 @@ if app.IsRetail then
 	end
 	app.TryPopulateQuestRewards = TryPopulateQuestRewards;
 end
-
--- Event Handlers
-tinsert(app.EventHandlers.OnRecalculate, QueryCompletedQuests);
-tinsert(app.EventHandlers.OnStartup, QueryCompletedQuests);
 
 -- External API
 app.CollectibleAsQuest = CollectibleAsQuest;
