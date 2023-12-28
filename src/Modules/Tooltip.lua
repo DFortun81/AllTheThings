@@ -123,7 +123,7 @@ local HookableTooltips = {
 local function ClearTooltip(self)
 	-- app.PrintDebug("Clear Tooltip",self:GetName());
 	self.AllTheThingsProcessing = nil;
-	self.AttachComplete = nil;
+	self.ATTAttachComplete = nil;
 	self.MiscFieldsComplete = nil;
 	self.UpdateTooltip = nil;
 end
@@ -181,7 +181,7 @@ local function AttachTooltipRawSearchResults(self, lineNumber, group)
 		end
 	end
 
-	self.AttachComplete = not group.working;
+	self.ATTAttachComplete = not group.working;
 end
 local function AttachTooltipSearchResults(self, lineNumber, search, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",search,...)

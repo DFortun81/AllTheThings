@@ -13246,9 +13246,9 @@ RowOnEnter = function (self)
 			-- app.PrintDebug("OnRowEnter-GameTooltip:SetOwner");
 			GameTooltip:SetOwner(self, tooltipAnchor);
 		else
-			-- app.PrintDebug("RowOnEnter-IsRefreshing",GameTooltip.AttachComplete,GameTooltip.MiscFieldsComplete,GameTooltip:NumLines());
+			-- app.PrintDebug("RowOnEnter-IsRefreshing",GameTooltip.ATTAttachComplete,GameTooltip.MiscFieldsComplete,GameTooltip:NumLines());
 			-- complete tooltip already exists and hasn't been cleared elsewhere, don't touch it
-			if GameTooltip.AttachComplete and GameTooltip.MiscFieldsComplete and GameTooltip:NumLines() > 0 then
+			if GameTooltip.ATTAttachComplete and GameTooltip.MiscFieldsComplete and GameTooltip:NumLines() > 0 then
 				-- app.PrintDebug("RowOnEnter, complete");
 				return;
 			end
@@ -13280,10 +13280,10 @@ RowOnEnter = function (self)
 		end
 
 		-- Determine search results to add if nothing was added from being searched
-		-- AttachComplete will be true or false if ATT has processed the tooltip/search results already
+		-- ATTAttachComplete will be true or false if ATT has processed the tooltip/search results already
 		-- nil means no search results were attached, so we can manually add it below
 		local refQuestID = reference.questID;
-		if doSearch or GameTooltip.AttachComplete == nil then
+		if doSearch or GameTooltip.ATTAttachComplete == nil then
 			if reference.creatureID or reference.encounterID or reference.objectID then
 				-- rows with these fields should not include the extra search info
 			elseif reference.currencyID then
@@ -13641,7 +13641,7 @@ RowOnEnter = function (self)
 		-- end
 
 		-- Additional information (search will insert this information if found in search)
-		if GameTooltip.AttachComplete == nil then
+		if GameTooltip.ATTAttachComplete == nil then
 			-- Lore
 			if reference.lore and app.Settings:GetTooltipSetting("Lore") then
 				GameTooltip:AddLine(reference.lore, 0.4, 0.8, 1, 1);
@@ -13709,7 +13709,7 @@ RowOnEnter = function (self)
 			app.AddAdditionalIDsTooltipLines(GameTooltip, reference)
 
 			-- Tooltip for something which was not attached via search, so mark it as complete here
-			GameTooltip.AttachComplete = true;
+			GameTooltip.ATTAttachComplete = true;
 		end
 
 		-- Has a symlink for additonal information
@@ -20551,7 +20551,7 @@ app.events.TOOLTIP_DATA_UPDATE = function(...)
 	if GameTooltip and GameTooltip:IsVisible() then
 		-- app.PrintDebug("Auto-refresh tooltip")
 		-- Make sure the tooltip will try to re-attach the data if it's from an ATT row
-		GameTooltip.AttachComplete = nil;
+		GameTooltip.ATTAttachComplete = nil;
 		GameTooltip:Show();
 	end
 end
