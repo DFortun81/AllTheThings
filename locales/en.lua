@@ -863,15 +863,6 @@ local L = {
 		[CLASS.." %> "] = "",
 	};
 
-	-- Custom Icons for Factions (seems to be no automatic Faction-Icon associations in-game)
-	["FACTION_ID_ICONS"] = {
-		-- Examples --
-		-- [FACTION_ID] = "PATH//TO//ICON",	-- Faction Name
-		-- [FACTION_ID] = ICON_ID			-- Faction Name
-
-		[1168] = 461821,	-- Guild
-	};
-
 	-- These need to be localized manually.
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
 	-- https://www.wowhead.com/icons

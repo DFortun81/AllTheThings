@@ -3,6 +3,7 @@
 -------------------------------------------
 root(ROOTS.Character, n(FACTION_HEADER_GUILD, {
 	faction(1168, {	-- Your Guild (Faction) <Guild Vendor>
+		["icon"] = 461821,	-- Inv_guild_standard_horde_c
 		["coords"] = {
 			{ 48.4, 75.5, ORGRIMMAR },	-- Goram
 			{ 69.8, 43.7, UNDERCITY },	-- Kim Horn
