@@ -16,8 +16,8 @@ local GetQuestLogIndexByID = C_QuestLog.GetLogIndexForQuestID or GetQuestLogInde
 local C_QuestLog_IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted;
 local C_QuestLog_ReadyForTurnIn = C_QuestLog.ReadyForTurnIn or IsQuestComplete;
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
-local GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo, GetSpellInfo =
-	  GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo, GetSpellInfo;
+local GetFactionInfoByID, GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo, GetSpellInfo =
+	  GetFactionInfoByID, GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo, GetSpellInfo;
 local ALLIANCE_FACTION_ID = Enum.FlightPathFaction.Alliance;
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 
@@ -391,7 +391,7 @@ else
 	end
 	CollectibleAsQuest = function(t)
 		if app.Settings.Collectibles.Quests then
-			if C_QuestLog_IsOnQuest(t.questID) then
+			if not t.isWorldQuest and C_QuestLog_IsOnQuest(t.questID) then
 				return true;
 			end
 			if t.locked then return app.Settings.AccountWide.Quests; end
@@ -1267,42 +1267,29 @@ local createQuest = app.CreateClass("Quest", "questID", {
 "WithReputation", {
 	collectible = function(t)
 		if app.Settings.Collectibles.Quests then
-			if not t.isWorldQuest and C_QuestLog_IsOnQuest(t.questID) then
-				return true;
-			end
-			if t.locked then return app.Settings.AccountWide.Quests; end
-			if t.maxReputation and app.Settings.Collectibles.Reputations then
-				return true;
-			end
-			return not t.repeatable and not t.isBreadcrumb;
+			return app.Settings.Collectibles.Reputations or CollectibleAsQuest(t);
 		end
 	end,
 	collected = function(t)
-		if not t.isWorldQuest and C_QuestLog_IsOnQuest(t.questID) then
-			return false;
-		end
 		local flag = IsQuestFlaggedCompletedForObject(t);
-		if flag then
-			return flag;
+		if flag then return flag; end
+		local maxReputation = t.maxReputation;
+		if (select(6, GetFactionInfoByID(maxReputation[1])) or 0) >= maxReputation[2] then
+			return t.repeatable and 1 or 2;
 		end
-		if t.maxReputation then
-			if (select(6, GetFactionInfoByID(t.maxReputation[1])) or 0) >= t.maxReputation[2] then
-				return t.repeatable and 1 or 2;
-			end
-			if app.Settings.AccountWide.Reputations then
-				local searchResults = SearchForField("factionID", t.maxReputation[1]);
-				if #searchResults > 0 then
-					for i,searchResult in ipairs(searchResults) do
-						if searchResult.key == "factionID" and searchResult.collected then
-							return 2;
-						end
+		if app.Settings.AccountWide.Reputations then
+			local searchResults = SearchForField("factionID", maxReputation[1]);
+			if #searchResults > 0 then
+				for i,searchResult in ipairs(searchResults) do
+					if searchResult.key == "factionID" and searchResult.collected then
+						return 2;
 					end
 				end
 			end
 		end
 	end,
 	description = function(t)
-		if app.Settings.Collectibles.Reputations and t.maxReputation then
+		if app.Settings.Collectibles.Reputations then
 			local factionID = t.maxReputation[1];
 			return L.ITEM_GIVES_REP .. (select(1, GetFactionInfoByID(factionID)) or ("Faction #" .. tostring(factionID))) .. "'";
 		end
