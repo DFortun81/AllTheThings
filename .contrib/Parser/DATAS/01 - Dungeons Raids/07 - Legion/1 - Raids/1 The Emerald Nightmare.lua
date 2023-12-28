@@ -57,6 +57,69 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["description"] = "Once you defeat Xavius these will spawn in the room after him."
 				}),
 			})),
+			d(ALL_DIFFICULTIES_RAID, {
+				["crs"] = { 111246 },	-- Archmage Timear
+				["groups"] = {
+					e(1703, {	-- Nythendra
+						["crs"] = { 102672 },	-- Nythendra
+						["g"] = {
+							i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1] (RECIPE!)
+							i(137748),	-- Vantus Rune Technique: Nythendra [Rank 2] (RECIPE!)
+						},
+					}),
+					e(1744, {	-- Elerethe Renferal
+						["crs"] = { 106087 },	-- Elerethe Renferal
+						["g"] = {
+							i(128611),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 3] (RECIPE!)
+							i(139640),	-- Vantus Rune Technique: Elerethe Renferal [Rank 1] (RECIPE!)
+							i(137752),	-- Vantus Rune Technique: Elerethe Renferal [Rank 2] (RECIPE!)
+						},
+					}),
+					e(1667, {	-- Ursoc
+						["crs"] = { 100497 },	--	Ursoc
+						["g"] = {
+							i(141917),	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 3] (RECIPE!)
+							i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1] (RECIPE!)
+							i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2] (RECIPE!)
+						},
+					}),
+					e(1738, {	-- Il'gynoth, Heart of Corruption
+						["crs"] = { 105393 },	--	Il'gynoth, Heart of Corruption
+						["g"] = {
+							i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1] (RECIPE!)
+							i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2] (RECIPE!)
+						},
+					}),
+					e(1704, {	-- Dragons of Nightmare
+						["crs"] = {
+							102679,	-- Ysondre
+							102681,	-- Taerar
+							102682,	-- Lethon
+							102683,	-- Emeriss
+						},
+						["g"] = {
+							i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1] (RECIPE!)
+							i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2] (RECIPE!)
+						},
+					}),
+					e(1750, {	-- Cenarius
+						["crs"] = { 104636 },	--	Cenarius
+						["g"] = {
+							i(127934),	-- Recipe: Spirit Cauldron [Rank 2] (RECIPE!)
+							i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1] (RECIPE!)
+							i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2] (RECIPE!)
+						},
+					}),
+					e(1726, {	-- Xavius
+						["crs"] = { 103769 },	--	Xavius
+						["g"] = {
+							i(128612),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 3] (RECIPE!)
+							i(139639),	-- Vantus Rune Technique: Xavius [Rank 1] (RECIPE!)
+							i(137751),	-- Vantus Rune Technique: Xavius [Rank 2] (RECIPE!)
+						},
+					}),
+				},
+			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
 				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
@@ -71,8 +134,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				}),
 				header(HEADERS.Achievement, 10818, {	-- Darkbough
 					cr(102672, e(1703, {	-- Nythendra
-						i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1] (RECIPE!)
-						i(137748),	-- Vantus Rune Technique: Nythendra [Rank 2] (RECIPE!)
 						i(139214),	-- Greyed Dragonscale Coif
 						i(139191),	-- Ancient Dreamwoven Mantle
 						i(139224),	-- Insect-Etched Chestplate
@@ -90,9 +151,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(136820),	-- Nythendra's Heart
 					})),
 					cr(106087, e(1744, {	-- Elerethe Renferal
-						i(128611),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 3] (RECIPE!)
-						i(139640),	-- Vantus Rune Technique: Elerethe Renferal [Rank 1] (RECIPE!)
-						i(137752),	-- Vantus Rune Technique: Elerethe Renferal [Rank 2] (RECIPE!)
 						i(139204),	-- Mask of Multitudinous Eyes
 						i(139229),	-- Venom-Fanged Barbute
 						i(138221),	-- Gossamer-Spun Greatcloak
@@ -110,8 +168,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						i(137008),	-- Stormfury Diamond
 					})),
 					cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
-						i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1] (RECIPE!)
-						i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2] (RECIPE!)
 						i(139569, {	-- Claw of N'Zoth
 							-- ["sourceQuest"] = , TODO
 						}),
@@ -136,9 +192,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				}),
 				header(HEADERS.Achievement, 10819, {	-- Tormented Guardians
 					cr(100497, e(1667, {	-- Ursoc
-						i(141917),	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 3] (RECIPE!)
-						i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1] (RECIPE!)
-						i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2] (RECIPE!)
 						i(139557, {	-- Last Breath of the Forest
 							-- ["sourceQuest"] = , TODO
 						}),
@@ -170,8 +223,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 							102683,	-- Emeriss
 						},
 						["g"] = {
-							i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1] (RECIPE!)
-							i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2] (RECIPE!)
 							i(139562, {	-- Breath of the Undying Serpent
 									-- ["sourceQuest"] = , TODO
 							}),
@@ -194,9 +245,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						},
 					}),
 					cr(104636, e(1750, {	-- Cenarius
-						i(127934),	-- Recipe: Spirit Cauldron [Rank 2] (RECIPE!)
-						i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1] (RECIPE!)
-						i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2] (RECIPE!)
 						i(139231),	-- Crown of Steely Brambles
 						i(139192),	-- Mantle of Perpetual Bloom
 						i(139218),	-- Thorny Bramblemail Pauldrons
@@ -215,9 +263,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				}),
 				header(HEADERS.Achievement, 10820, {	-- Rift of Aln
 					cr(103769, e(1726, {	-- Xavius <Nightmare Lord>
-						i(128612),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 3] (RECIPE!)
-						i(139639),	-- Vantus Rune Technique: Xavius [Rank 1] (RECIPE!)
-						i(137751),	-- Vantus Rune Technique: Xavius [Rank 2] (RECIPE!)
 						i(138827),	-- Illusion: Nightmare (ILLUSION!)
 						i(139189),	-- Hood of Darkened Visions
 						i(139332),	-- Blackened Portalstone Necklace
@@ -266,8 +311,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					ach(10555, {	-- Buggy Fight
 						["crs"] = { 105097 },	-- Glow Bug
 					}),
-					i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1] (RECIPE!)
-					i(137748),	-- Vantus Rune Technique: Nythendra [Rank 2] (RECIPE!)
 					i(139214),	-- Greyed Dragonscale Coif
 					i(139191),	-- Ancient Dreamwoven Mantle
 					i(139224),	-- Insect-Etched Chestplate
@@ -293,8 +336,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 							105383,	-- Corruptor Tentacle
 						},
 					}),
-					i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1] (RECIPE!)
-					i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2] (RECIPE!)
 					i(139569, {	-- Claw of N'Zoth
 						-- ["sourceQuest"] = , TODO
 					}),
@@ -320,9 +361,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					ach(10771, {	-- Webbing Crashers
 						["crs"] = { 112078 },	-- Pulsing Egg Sac
 					}),
-					i(128611),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 3] (RECIPE!)
-					i(139640),	-- Vantus Rune Technique: Elerethe Renferal [Rank 1] (RECIPE!)
-					i(137752),	-- Vantus Rune Technique: Elerethe Renferal [Rank 2] (RECIPE!)
 					i(139204),	-- Mask of Multitudinous Eyes
 					i(139229),	-- Venom-Fanged Barbute
 					i(138221),	-- Gossamer-Spun Greatcloak
@@ -343,9 +381,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					ach(10753, {	-- Scare Bear
 						["crs"] = { 111263 },	-- Tur Ragepaw
 					}),
-					i(141917),	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 3] (RECIPE!)
-					i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1] (RECIPE!)
-					i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2] (RECIPE!)
 					i(139557, {	-- Last Breath of the Forest
 						-- ["sourceQuest"] = , TODO
 					}),
@@ -378,8 +413,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(10663),	-- Imagined Dragons World Tour
-						i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1] (RECIPE!)
-						i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2] (RECIPE!)
 						i(139562, {	-- Breath of the Undying Serpent
 							-- ["sourceQuest"] = , TODO
 						}),
@@ -416,9 +449,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 							["crs"] = { 105494 },	-- Rotten Drake
 						}),
 					}),
-					i(127934),	-- Recipe: Spirit Cauldron [Rank 2] (RECIPE!)
-					i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1] (RECIPE!)
-					i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2] (RECIPE!)
 					i(139231),	-- Crown of Steely Brambles
 					i(139192),	-- Mantle of Perpetual Bloom
 					i(139218),	-- Thorny Bramblemail Pauldrons
@@ -436,9 +466,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				})),
 				cr(103769, e(1726, {	-- Xavius <Nightmare Lord>
 					ach(10755),	-- I Attack the Darkness
-					i(128612),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 3] (RECIPE!)
-					i(139639),	-- Vantus Rune Technique: Xavius [Rank 1] (RECIPE!)
-					i(137751),	-- Vantus Rune Technique: Xavius [Rank 2] (RECIPE!)
 					i(138827),	-- Illusion: Nightmare (ILLUSION!)
 					i(139189),	-- Hood of Darkened Visions
 					i(139332),	-- Blackened Portalstone Necklace
@@ -480,8 +507,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(141695),	-- Tarnished Dreamkeeper's Gauntlets
 				}),
 				cr(102672, e(1703, {	-- Nythendra
-					i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1] (RECIPE!)
-					i(137748),	-- Vantus Rune Technique: Nythendra [Rank 2] (RECIPE!)
 					i(139214),	-- Greyed Dragonscale Coif
 					i(139191),	-- Ancient Dreamwoven Mantle
 					i(139224),	-- Insect-Etched Chestplate
@@ -499,8 +524,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(136820),	-- Nythendra's Heart
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
-					i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1] (RECIPE!)
-					i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2] (RECIPE!)
 					i(139569, {	-- Claw of N'Zoth
 						-- ["sourceQuest"] = , TODO
 					}),
@@ -523,9 +546,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(139256),	-- Sloshing Core of Hatred
 				})),
 				cr(106087, e(1744, {	-- Elerethe Renferal
-					i(128611),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 3] (RECIPE!)
-					i(139640),	-- Vantus Rune Technique: Elerethe Renferal [Rank 1] (RECIPE!)
-					i(137752),	-- Vantus Rune Technique: Elerethe Renferal [Rank 2] (RECIPE!)
 					i(139204),	-- Mask of Multitudinous Eyes
 					i(139229),	-- Venom-Fanged Barbute
 					i(138221),	-- Gossamer-Spun Greatcloak
@@ -543,9 +563,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					i(137008),	-- Stormfury Diamond
 				})),
 				cr(100497, e(1667, {	-- Ursoc
-					i(141917),	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 3] (RECIPE!)
-					i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1] (RECIPE!)
-					i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2] (RECIPE!)
 					i(139557, {	-- Last Breath of the Forest
 						-- ["sourceQuest"] = , TODO
 					}),
@@ -577,8 +594,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 						102683,	-- Emeriss
 					},
 					["g"] = {
-						i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1] (RECIPE!)
-						i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2] (RECIPE!)
 						i(139562, {	-- Breath of the Undying Serpent
 							-- ["sourceQuest"] = , TODO
 						}),
@@ -601,9 +616,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 				}),
 				cr(104636, e(1750, {	-- Cenarius
-					i(127934),	-- Recipe: Spirit Cauldron [Rank 2] (RECIPE!)
-					i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1] (RECIPE!)
-					i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2] (RECIPE!)
 					i(139231),	-- Crown of Steely Brambles
 					i(139192),	-- Mantle of Perpetual Bloom
 					i(139218),	-- Thorny Bramblemail Pauldrons
@@ -623,9 +635,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					ach(11194, {	-- Ahead of the Curve: Xavius
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					i(128612),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 3] (RECIPE!)
-					i(139639),	-- Vantus Rune Technique: Xavius [Rank 1] (RECIPE!)
-					i(137751),	-- Vantus Rune Technique: Xavius [Rank 2] (RECIPE!)
 					i(138827),	-- Illusion: Nightmare (ILLUSION!)
 					i(139189),	-- Hood of Darkened Visions
 					i(139332),	-- Blackened Portalstone Necklace
@@ -668,8 +677,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				}),
 				cr(102672, e(1703, {	-- Nythendra
 					ach(10821),	-- Mythic: Nythendra
-					i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1] (RECIPE!)
-					i(137748),	-- Vantus Rune Technique: Nythendra [Rank 2] (RECIPE!)
 					i(139214),	-- Greyed Dragonscale Coif
 					i(139191),	-- Ancient Dreamwoven Mantle
 					i(139224),	-- Insect-Etched Chestplate
@@ -688,8 +695,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
 					ach(10823),	-- Mythic: Il'gynoth
-					i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1] (RECIPE!)
-					i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2] (RECIPE!)
 					i(139569, {	-- Claw of N'Zoth
 						-- ["sourceQuest"] = , TODO
 					}),
@@ -713,9 +718,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				})),
 				cr(106087, e(1744, {	-- Elerethe Renferal
 					ach(10822),	-- Mythic: Elerethe Renferal
-					i(128611),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 3] (RECIPE!)
-					i(139640),	-- Vantus Rune Technique: Elerethe Renferal [Rank 1] (RECIPE!)
-					i(137752),	-- Vantus Rune Technique: Elerethe Renferal [Rank 2] (RECIPE!)
 					i(139204),	-- Mask of Multitudinous Eyes
 					i(139229),	-- Venom-Fanged Barbute
 					i(138221),	-- Gossamer-Spun Greatcloak
@@ -734,9 +736,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				})),
 				cr(100497, e(1667, {	-- Ursoc
 					ach(10824),	-- Mythic: Ursoc
-					i(141917),	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 3] (RECIPE!)
-					i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1] (RECIPE!)
-					i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2] (RECIPE!)
 					i(139557, {	-- Last Breath of the Forest
 						-- ["sourceQuest"] = , TODO
 					}),
@@ -769,8 +768,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					},
 					["g"] = {
 						ach(10825),	-- Mythic: Dragons of Nightmare
-						i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1] (RECIPE!)
-						i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2] (RECIPE!)
 						i(139562, {	-- Breath of the Undying Serpent
 							-- ["sourceQuest"] = , TODO
 						}),
@@ -794,9 +791,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				}),
 				cr(104636, e(1750, {	-- Cenarius
 					ach(10826),	-- Mythic: Cenarius
-					i(127934),	-- Recipe: Spirit Cauldron [Rank 2] (RECIPE!)
-					i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1] (RECIPE!)
-					i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2] (RECIPE!)
 					i(139231),	-- Crown of Steely Brambles
 					i(139192),	-- Mantle of Perpetual Bloom
 					i(139218),	-- Thorny Bramblemail Pauldrons
@@ -826,9 +820,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					ach(10827, {	-- Mythic: Xavius
 						title(341),	-- The Dreamer
 					}),
-					i(128612),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 3] (RECIPE!)
-					i(139639),	-- Vantus Rune Technique: Xavius [Rank 1] (RECIPE!)
-					i(137751),	-- Vantus Rune Technique: Xavius [Rank 2] (RECIPE!)
 					i(138827),	-- Illusion: Nightmare (ILLUSION!)
 					i(139189),	-- Hood of Darkened Visions
 					i(139332),	-- Blackened Portalstone Necklace
