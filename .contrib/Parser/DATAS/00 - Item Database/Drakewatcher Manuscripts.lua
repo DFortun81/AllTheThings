@@ -419,7 +419,7 @@ i(207777, 77148);	-- Grotto Netherwing Drake: Yellow Scales
 i(210537, 78453);	-- Renewed Proto-Drake: Embodiment of Shadowflame
 i(210536, 78451);	-- Renewed Proto-Drake: Embodiment of the Blazing
 i(203340, 73831);	-- Winding Slitherdrake: Cluster Jaw Horns
-i(210064, 72371);	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator
+i(210064, 78216);	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator
 i(203344, 73835);	-- Winding Slitherdrake: Single Jaw Horn
 i(203315, 73803);	-- Winding Slitherdrake: Small Spiked Crest
 i(203332, 73821);	-- Winding Slitherdrake: Spiked Horns

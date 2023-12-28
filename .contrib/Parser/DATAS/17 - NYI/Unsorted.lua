@@ -1150,7 +1150,6 @@ root(ROOTS.Unsorted, {
 				q(78087),	--
 				q(78096),	-- PTR:A Silver Lining
 				q(78209),	--
-				q(78216),	--
 				q(78217),	--
 				q(78218),	--
 				q(78247),	--
@@ -1559,7 +1558,6 @@ root(ROOTS.Unsorted, {
 				i(200937),	-- Flavorful Soup Bone
 				i(192700),	-- Frozen Dorsal Spike
 				i(192701),	-- Frozen Eye
-				i(192702),	-- Giant's Heart
 				i(192707),	-- Gnawing Incisors
 				i(201227),	-- Half-Eaten Stone
 				i(201228),	-- Handful of Gravel
@@ -1614,7 +1612,6 @@ root(ROOTS.Unsorted, {
 				i(201167),	-- Stone Calendar
 				i(200107),	-- Tarnished Engagement Ring
 				i(201224),	-- Tauren Horn
-				i(192724),	-- Terrifying Teeth
 				i(192725),	-- Thin Blubber
 				i(192696),	-- Third Head's Eye
 				i(201223),	-- Thorn Bracelet

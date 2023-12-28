@@ -654,6 +654,7 @@ i(192674);	-- Unknown Titan Mechanism
 i(192675);	-- Winglet
 i(192683);	-- Slimy Frog Eggs
 i(192685);	-- Battle-Hardened Fang
+i(192702);	-- Giant's Heart
 i(192706);	-- Razor Quill
 i(192708);	-- Magnificent Antler
 i(192711);	-- Oily Liver
@@ -663,6 +664,7 @@ i(192717);	-- Animated Splinter
 i(192718);	-- Rock-Hard Eggshell
 i(192719);	-- Scaled Toes
 i(192723);	-- Springy Tongue
+i(192724);	-- Terrifying Teeth
 i(192726);	-- Thunderhorn
 i(192727);	-- Timeless Horns
 i(192729);	-- Unhinged Mandible

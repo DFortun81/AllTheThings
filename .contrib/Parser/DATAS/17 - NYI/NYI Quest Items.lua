@@ -203,7 +203,6 @@ root(ROOTS.NeverImplemented, {
 				i(198511),	-- Building Materials
 				i(190965),	-- Bundle of Duck Feathers
 				i(193051),	-- Bundle of Totems
-				i(197928),	-- Captivating Cap
 				i(191668),	-- Carved Stone Whale
 				i(194032),	-- Chaos Ysemerald
 				i(192561),	-- Chrono-Stabilizer

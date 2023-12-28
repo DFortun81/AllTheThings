@@ -499,7 +499,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			q(58674, {	-- A Gathering of Champions
 				["sourceQuests"] = {
 					58631,	-- Into Dreams
-					58632,	-- Ny'alotha, the Waking City: The Corruptor's End
 				},
 				["provider"] = { "n", 135614 },	-- Master Mathias Shaw
 				["coord"] = { 70.4, 27.0, BORALUS },

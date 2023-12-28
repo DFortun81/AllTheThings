@@ -82,7 +82,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["timeline"] = { ADDED_10_0_7 },
 				})),
 				q(70057, {	-- Thieving Tarasek
-					["coord"] = { 56.2, 68.7, THALDRASZUS }
+					["coord"] = { 56.2, 68.7, THALDRASZUS },
+					["groups"] = {
+						i(197928),	-- Captivating Cap
+					},
 				}),
 				petbattle(q(71180, {	-- You Have to Start Somewhere
 					["coord"] = { 56.3, 49.2, THALDRASZUS }

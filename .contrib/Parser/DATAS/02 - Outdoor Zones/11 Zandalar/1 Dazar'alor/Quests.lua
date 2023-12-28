@@ -335,7 +335,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			q(58672, {	-- A Gathering of Champions
 				["sourceQuests"] = {
 					58631,	-- Into Dreams
-					58632,	-- Ny'alotha, the Waking City: The Corruptor's End
 				},
 				["coord"] = { 55.9, 30.3, THE_GREAT_SEAL },
 				["provider"] = { "n", 161458 },	-- Valeera Sanguinar

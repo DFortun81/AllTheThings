@@ -726,7 +726,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(197100),	-- Highland Drake: Crested Brow (DM!)
 			i(197128),	-- Highland Drake: Curled Back Horns (DM!)
 			i(197116),	-- Highland Drake: Ears (DM!)
-			pvp(i(201792)),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
+			pvp(i(201792, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }})),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
 			i(197098),	-- Highland Drake: Finned Back (DM!)
 			i(197106),	-- Highland Drake: Finned Head (DM!)
 			i(197090),	-- Highland Drake: Gold and Black Armor (DM!)

@@ -937,7 +937,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(26515, {	-- Ongo'longo's Revenge (A)
 					["qg"] = 43157,	-- Doran Steelwing
 					["sourceQuests"] = {
-						26498,	-- Death to the Vilebranch (A)
 						26518,	-- Heads Up (A)
 					},
 					["coord"] = { 63.8, 59.8, THE_HINTERLANDS },
