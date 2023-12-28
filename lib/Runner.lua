@@ -13,6 +13,14 @@ local wipe, math_max, tonumber, unpack, coroutine, type, select, tremove, tinser
 local c_create, c_yield, c_resume, c_status
 	= coroutine.create, coroutine.yield, coroutine.resume, coroutine.status;
 
+local function PrintError(err, source, co)
+	print(source,":Error:",err)
+	if co and app.Debugging then
+		local instanceTrace = debugstack(co);
+		print(instanceTrace)
+	end
+end
+
 local Stack = {};
 local StackParams = {};
 -- Tracks whether the Stack has already been requested to begin running
@@ -35,11 +43,10 @@ local function SetStackCo()
 				status, err = pcall(f, p);
 				-- Function call has an error or it is not continuing, remove it from the Stack
 				if not status or not err then
-					if not status then app.PrintDebug("StackError:",i,f,p,err) end
+					if not status then PrintError(err, "StackCo", StackCo) end
 					-- app.PrintDebug("StackCo:Remove",i)
 					tremove(Stack, i);
 					tremove(StackParams, i);
-					if err then print(err); end
 				end
 			end
 			-- app.PrintDebug("StackCo:Done",f,p)
@@ -61,14 +68,7 @@ local function RunStack()
 	if c_status(StackCo) == "dead" then SetStackCo() end
 	RunningStack = nil;
 	local ok, err = pcall(c_resume, StackCo);
-	if not ok then
-		print(err);
-		app.PrintDebug("RunStack:Error:",err)
-		if app.Debugging then
-			local instanceTrace = debugstack(StackCo, err);
-			print(instanceTrace)
-		end
-	end
+	if not ok then PrintError(err, "RunStack", StackCo) end
 end
 QueueStack = function()
 	-- app.PrintDebug("QueueStackStatus:",RunningStack and "REPEAT" or "FIRST",c_status(StackCo))
@@ -143,19 +143,7 @@ local PushQueue = setmetatable({}, {
 						-- app.PrintDebug("PUSH.Run.Yielded",co)
 						return true;
 					end
-				else
-					app.PrintDebug("PUSH.Run.Error",co)
-					-- Throw the error. Returning nothing is the same as canceling the work.
-					-- local instanceTrace = debugstack(instance);
-					if app.Debugging then
-						local instanceTrace = debugstack(co, err);
-						print(instanceTrace)
-					end
-					-- error(err,2);
-					-- print(debugstack(instance));
-					-- print(err);
-					-- app.report();
-				end
+				else PrintError(err, "PUSH.Run", co) end
 			end
 			-- After the pusher is done running the coroutine, it can return itself to the cache
 			-- app.PrintDebug("PUSH:Return",pushfunc,"=>",#_PushQueue + 1)
@@ -223,11 +211,11 @@ local function CreateRunner(name)
 				if params then
 					-- app.PrintDebug("FRC.Run.N."..name,RunIndex,unpack(params))
 					local ok, err = pcall(func, unpack(params));
-					if not ok then print(err); end
+					if not ok then PrintError(err, "Run."..Name) end
 				else
 					-- app.PrintDebug("FRC.Run.1."..name,RunIndex,ParameterSingleQueue[RunIndex])
 					local ok, err = pcall(func, ParameterSingleQueue[RunIndex]);
-					if not ok then print(err); end
+					if not ok then PrintError(err, "Run."..Name) end
 				end
 				-- app.PrintDebug("FRC.Done."..name,RunIndex)
 				if perFrame <= 0 then
@@ -263,18 +251,7 @@ local function CreateRunner(name)
 				-- app.PrintDebug("Stack.Run.Yielded",Name)
 				return true;	-- This means more work is required.
 			end
-		else
-			app.PrintDebug("Stack.Run.Error",Name)
-			-- Throw the error. Returning nothing is the same as canceling the work.
-			if app.Debugging then
-				local instanceTrace = debugstack(RunnerCoroutine);
-				print(instanceTrace)
-			end
-			error(err,2);
-			-- print(debugstack(instance));
-			-- print(err);
-			-- app.report();
-		end
+		else PrintError(err, Name, RunnerCoroutine) end
 	end
 
 	-- Provides a utility which will process a given number of functions each frame in a Queue
