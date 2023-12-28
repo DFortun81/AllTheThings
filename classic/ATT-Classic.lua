@@ -3037,7 +3037,10 @@ local function AttachTooltipRawSearchResults(self, lineNumber, group)
 		for i=self:NumLines(),1,-1 do
 			line = _G[leftname..i]:GetText() or "";
 			o = _G[rightname..i];
-			if o then line = line .. "|" .. o:GetText(); end
+			if o then
+				o = o:GetText();
+				if o then line = line .. "|" .. o; end
+			end
 			hashes[line] = true;
 		end
 		
@@ -3061,7 +3064,7 @@ local function AttachTooltipRawSearchResults(self, lineNumber, group)
 					end
 				else
 					if entry.wrap then
-						self:AddLine(left, 1, 1, 1, 1);
+						self:AddLine(left, nil, nil, nil, 1);
 					else
 						self:AddLine(left);
 					end
