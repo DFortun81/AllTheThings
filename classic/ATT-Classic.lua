@@ -3028,6 +3028,8 @@ local function AttachTooltipRawSearchResults(self, lineNumber, group)
 		self:AddDoubleLine(group.text, " ", 1, 1, 1, 1);
 	end
 	
+	-- app.PrintDebug("Tooltip lines before search results",group.hash,group.tooltipInfo and #group.tooltipInfo)
+	-- if app.Debugging then app.PrintTable(group.tooltipInfo) end
 	-- If there was info text generated for this search result, then display that first.
 	if group.tooltipInfo and #group.tooltipInfo > 0 then
 		-- Prevent any text from being written more than once to the tooltip.
@@ -3045,7 +3047,7 @@ local function AttachTooltipRawSearchResults(self, lineNumber, group)
 		end
 		
 		local left, right;
-		for i,entry in ipairs(group.tooltipInfo) do
+		for _,entry in ipairs(group.tooltipInfo) do
 			left, right = (entry.left or " "), entry.right;
 			o = right and (left .. "|" .. right) or left;
 			if not hashes[o] then
@@ -3072,7 +3074,7 @@ local function AttachTooltipRawSearchResults(self, lineNumber, group)
 			end
 		end
 	end
-	
+
 	-- If the user has Show Collection Progress turned on.
 	if group.encounterID then
 		self:Show();
@@ -3088,6 +3090,8 @@ local function AttachTooltipRawSearchResults(self, lineNumber, group)
 			rightSide:Show();
 		end
 	end
+
+	self.ATTAttachComplete = not group.working;
 end
 local function AttachTooltipSearchResults(self, lineNumber, search, method, ...)
 	AttachTooltipRawSearchResults(self, lineNumber, GetCachedSearchResults(search, method, ...));

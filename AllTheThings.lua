@@ -12136,24 +12136,18 @@ function app:CreateMiniListForGroup(group)
 				end
 				local appearanceGroup;
 				if #g > 0 then
-					appearanceGroup = {
-						["text"] = L["SHARED_APPEARANCES_LABEL"],
-						["description"] = L["SHARED_APPEARANCES_LABEL_DESC"],
-						["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
+					appearanceGroup = app.CreateNPC(app.HeaderConstants.SHARED_APPEARANCES, {
+						["OnUpdate"] = app.AlwaysShowUpdate,
+						["sourceIgnored"] = true,
+						["skipFill"] = true,
 						["g"] = g,
-						["OnUpdate"] = app.AlwaysShowUpdate,
-						["skipFill"] = true,
-						["sourceIgnored"] = true,
-					};
+					});
 				else
-					appearanceGroup = {
-						["text"] = L["UNIQUE_APPEARANCE_LABEL"],
-						["description"] = L["UNIQUE_APPEARANCE_LABEL_DESC"],
-						["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO.blp",
+					appearanceGroup = app.CreateNPC(app.HeaderConstants.UNIQUE_APPEARANCE, {
 						["OnUpdate"] = app.AlwaysShowUpdate,
-						["skipFill"] = true,
 						["sourceIgnored"] = true,
-					};
+						["skipFill"] = true,
+					});
 				end
 				-- add the group showing the Appearance information for this popout
 				if group.g then tinsert(group.g, appearanceGroup)
