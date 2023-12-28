@@ -6068,7 +6068,8 @@ tinsert(app.EventHandlers.OnReady, function()
 						callbacks.world.tooltip_show = callbacks.minimap.tooltip_show;
 						opts.callbacks = callbacks;
 					else
-						print("Failed to rebuild TomTom Waypoint", waypointUID);
+						--print("Failed to rebuild TomTom Waypoint", waypointUID);
+						return;
 					end
 				end
 			end
