@@ -677,6 +677,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				BossOnly(FYRAKK, {
 					i(210871),	-- Greater Ember of Fyr'alath (There are multiple versions?)
 					i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing (DM!)
+					i(206448),	-- Fyr'alath the Dreamrender
 				}),
 			}),
 			Difficulty(LFR_RAID).AddGroupsWithUpgrades({
