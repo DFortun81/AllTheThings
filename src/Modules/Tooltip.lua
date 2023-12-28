@@ -144,44 +144,27 @@ local function AttachTooltipRawSearchResults(self, lineNumber, group)
 	if tooltipInfo and #tooltipInfo > 0 then
 		-- app.PrintDebug("Tooltip lines before search results",group.hash,tooltipInfo and #tooltipInfo)
 		-- if app.Debugging then app.PrintTable(tooltipInfo) end
-		-- Prevent any text from being written more than once to the tooltip.
-		local leftname = self:GetName() .. "TextLeft";
-		local rightname = self:GetName() .. "TextRight";
-		local hashes, line, o = {};
-		for i=self:NumLines(),1,-1 do
-			line = _G[leftname..i]:GetText() or "";
-			o = _G[rightname..i];
-			if o then
-				o = o:GetText();
-				if o then line = line .. "|" .. o; end
-			end
-			hashes[line] = true;
-		end
-		
 		local left, right;
 		for _,entry in ipairs(tooltipInfo) do
 			left, right = (entry.left or " "), entry.right;
 			o = right and (left .. "|" .. right) or left;
-			if not hashes[o] then
-				hashes[o] = true;
-				if right then
-					if entry.r then
-						self:AddDoubleLine(left, right, entry.r, entry.g, entry.b, entry.r, entry.g, entry.b);
-					else
-						self:AddDoubleLine(left, right);
-					end
-				elseif entry.r then
-					if entry.wrap then
-						self:AddLine(left, entry.r, entry.g, entry.b, 1);
-					else
-						self:AddLine(left, entry.r, entry.g, entry.b);
-					end
+			if right then
+				if entry.r then
+					self:AddDoubleLine(left, right, entry.r, entry.g, entry.b, entry.r, entry.g, entry.b);
 				else
-					if entry.wrap then
-						self:AddLine(left, nil, nil, nil, 1);
-					else
-						self:AddLine(left);
-					end
+					self:AddDoubleLine(left, right);
+				end
+			elseif entry.r then
+				if entry.wrap then
+					self:AddLine(left, entry.r, entry.g, entry.b, 1);
+				else
+					self:AddLine(left, entry.r, entry.g, entry.b);
+				end
+			else
+				if entry.wrap then
+					self:AddLine(left, nil, nil, nil, 1);
+				else
+					self:AddLine(left);
 				end
 			end
 		end
