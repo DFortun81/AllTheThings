@@ -1267,7 +1267,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 "WithReputation", {
 	collectible = function(t)
 		if app.Settings.Collectibles.Quests then
-			if C_QuestLog_IsOnQuest(t.questID) then
+			if not t.isWorldQuest and C_QuestLog_IsOnQuest(t.questID) then
 				return true;
 			end
 			if t.locked then return app.Settings.AccountWide.Quests; end
@@ -1278,7 +1278,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		end
 	end,
 	collected = function(t)
-		if C_QuestLog_IsOnQuest(t.questID) then
+		if not t.isWorldQuest and C_QuestLog_IsOnQuest(t.questID) then
 			return false;
 		end
 		local flag = IsQuestFlaggedCompletedForObject(t);
