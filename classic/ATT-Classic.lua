@@ -9,6 +9,7 @@ local contains, containsAny, containsValue = app.contains, app.containsAny, app.
 local AssignChildren, CloneArray, CloneDictionary, CloneClassInstance, CloneReference = app.AssignChildren, app.CloneArray, app.CloneDictionary, app.CloneClassInstance, app.CloneReference;
 local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
 local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject, IsQuestReadyForTurnIn = app.IsQuestFlaggedCompleted, app.IsQuestFlaggedCompletedForObject, app.IsQuestReadyForTurnIn;
+local ClassInfoByClassFile = app.ClassInfoByClassFile;
 local L = app.L;
 
 -- Binding Localizations
@@ -4754,16 +4755,14 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 				rawset(t, "lvl", character.lvl);
 				if character.classID then
 					rawset(t, "classID", character.classID);
-					rawset(t, "c", { character.classID });
 					local classInfo = app.ClassInfoByID[character.classID];
 					if classInfo then
-						rawset(t, "className", classInfo.className);
-						rawset(t, "classFile", classInfo.classFile);
+						rawset(t, "className", classInfo.name);
+						rawset(t, "classFile", classInfo.file);
 					end
 				end
 				if character.raceID then
 					rawset(t, "raceID", character.raceID);
-					rawset(t, "races", { character.raceID });
 					rawset(t, "race", C_CreatureInfo.GetRaceInfo(character.raceID).raceName);
 				end
 				return t;
@@ -4774,7 +4773,7 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 			-- It's a GUID.
 			guid = unit;
 			className, classFile, raceName, raceFile, raceID, name = GetPlayerInfoByGUID(guid);
-			classID = ClassInfoByClassFile[classFile].classID;
+			if classFile then classID = ClassInfoByClassFile[classFile].classID; end
 		else
 			name = UnitName(unit);
 			if name then
@@ -4796,7 +4795,6 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 			end
 			if raceID then
 				rawset(t, "raceID", raceID);
-				rawset(t, "races", { raceID });
 				rawset(t, "race", C_CreatureInfo.GetRaceInfo(raceID).raceName);
 			end
 		end
@@ -4834,7 +4832,7 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 	["classText"] = function(t)
 		local classFile = t.classFile;
 		if classFile then return "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. t.name .. "|r"; end
-		return t.name;
+		return t.name or RETRIEVING_DATA;
 	end,
 	["tooltipText"] = function(t)
 		local text = t.text;
