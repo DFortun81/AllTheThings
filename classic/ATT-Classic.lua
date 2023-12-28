@@ -2332,24 +2332,22 @@ local function SearchForLink(link)
 			if itemID then
 				-- Ensure that the itemID and suffixID are properly formatted.
 				itemID = tonumber(itemID) or 0;
-				if itemID > 0 then
-					if suffixID and suffixID ~= "" then
-						suffixID = tonumber(suffixID) or 0;
-						if suffixID > 0 then
-							-- Record the Suffix as valid for this itemID.
-							local suffixes = GetDataSubMember("ValidSuffixesPerItemID", itemID);
-							if not suffixes then
-								suffixes = {};
-								GetDataSubMember("ValidSuffixesPerItemID", itemID, suffixes);
-							end
-							if not suffixes[suffixID] then
-								suffixes[suffixID] = 1;
-								app.ClearItemCache();
-							end
+				if suffixID and suffixID ~= "" then
+					suffixID = tonumber(suffixID) or 0;
+					if suffixID > 0 then
+						-- Record the Suffix as valid for this itemID.
+						local suffixes = GetDataSubMember("ValidSuffixesPerItemID", itemID);
+						if not suffixes then
+							suffixes = {};
+							GetDataSubMember("ValidSuffixesPerItemID", itemID, suffixes);
+						end
+						if not suffixes[suffixID] then
+							suffixes[suffixID] = 1;
+							app.ClearItemCache();
 						end
 					end
-					return SearchForField("itemID", itemID), "itemID", itemID;
 				end
+				return SearchForField("itemID", itemID), "itemID", itemID;
 			end
 		end
 	else

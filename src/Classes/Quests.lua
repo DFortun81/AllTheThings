@@ -921,6 +921,59 @@ else
 	IsWorldQuest = app.ReturnFalse;
 end
 
+-- Breadcrumb Checking
+local CheckFollowupQuests;
+if app.IsRetail then
+	CheckFollowupQuests = function(questID)
+		-- Check if this quest is a nextQuest of a non-collected breadcrumb (users may care to get the breadcrumb before it becomes locked, simply due to tracking quests as well)
+		if app.Settings.Collectibles.Quests or app.Settings.Collectibles.QuestsLocked then
+			local nextQuests = SearchForField("nextQuests", questID);
+			if #nextQuests > 0 then
+				app:StartATTCoroutine("CheckNextQuests::" .. questID, function()
+					for _,group in pairs(nextQuests) do
+						if not group.collected and app.RecursiveCharacterRequirementsFilter(group) and app.RecursiveUnobtainableFilter(group) then
+							coroutine.yield();
+							while not group.text do
+								coroutine.yield();
+							end
+
+							app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
+								QuestNameFromID[questID], app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
+								group.text, app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)))
+							app.Audio:PlayRemoveSound()
+						end
+					end
+				end);
+			end
+		end
+	end
+else
+	-- TODO: Once Classic supports the new filter system, discard this.
+	CheckFollowupQuests = function(questID)
+		-- Check if this quest is a nextQuest of a non-collected breadcrumb (users may care to get the breadcrumb before it becomes locked, simply due to tracking quests as well)
+		if app.Settings.Collectibles.Quests or app.Settings.Collectibles.QuestsLocked then
+			local nextQuests = SearchForField("nextQuests", questID);
+			if #nextQuests > 0 then
+				app:StartATTCoroutine("CheckNextQuests::" .. questID, function()
+					for _,group in pairs(nextQuests) do
+						if not group.collected and app.RecursiveClassAndRaceFilter(group) and app.RecursiveUnobtainableFilter(group) then
+							coroutine.yield();
+							while not group.text do
+								coroutine.yield();
+							end
+
+							app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
+								QuestNameFromID[questID], app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
+								group.text, app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)))
+							app.Audio:PlayRemoveSound()
+						end
+					end
+				end);
+			end
+		end
+	end
+end
+
 -- Lock Criteria for Complex Quest Locking
 local criteriaFuncs = {
 	-- TODO: When Achievements get moved to their own file, add these to app.QuestLockCriteriaFunctions in that file.
@@ -1513,28 +1566,7 @@ app.events.QUEST_ACCEPTED = function(questLogIndex, questID)
 		-- app.PrintDebug("QUEST_ACCEPTED",questID)
 		rawset(QuestNameFromID, questID, nil);
 		PrintQuestInfo(questID, true);
-
-		-- Check if this quest is a nextQuest of a non-collected breadcrumb (users may care to get the breadcrumb before it becomes locked, simply due to tracking quests as well)
-		if app.Settings.Collectibles.Quests or app.Settings.Collectibles.QuestsLocked then
-			local nextQuests = SearchForField("nextQuests", questID);
-			if #nextQuests > 0 then
-				app:StartATTCoroutine("CheckNextQuests::" .. questID, function()
-					for _,group in pairs(nextQuests) do
-						if not group.collected and app.RecursiveCharacterRequirementsFilter(group) and app.RecursiveUnobtainableFilter(group) then
-							coroutine.yield();
-							while not group.text do
-								coroutine.yield();
-							end
-
-							app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
-								QuestNameFromID[questID], app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
-								group.text, app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)))
-							app.Audio:PlayRemoveSound()
-						end
-					end
-				end);
-			end
-		end
+		CheckFollowupQuests(questID);
 	end
 end
 app.events.QUEST_LOG_UPDATE = function()
