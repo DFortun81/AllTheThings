@@ -3022,63 +3022,67 @@ for i,guid in ipairs({
 end
 
 local function AttachTooltipRawSearchResults(self, lineNumber, group)
-	if group then
-		-- If nothing was put into the tooltip initially, mark the text of the source.
-		if self:NumLines() == 0 then
-			self:AddDoubleLine(group.name or group.text, " ", 1, 1, 1, 1);
+	if not group then return end
+	-- If nothing was put into the tooltip initially, mark the text of the source.
+	if self:NumLines() == 0 then
+		self:AddDoubleLine(group.text, " ", 1, 1, 1, 1);
+	end
+	
+	-- If there was info text generated for this search result, then display that first.
+	if group.tooltipInfo and #group.tooltipInfo > 0 then
+		-- Prevent any text from being written more than once to the tooltip.
+		local leftname = self:GetName() .. "TextLeft";
+		local rightname = self:GetName() .. "TextRight";
+		local hashes, line, o = {};
+		for i=self:NumLines(),1,-1 do
+			line = _G[leftname..i]:GetText() or "";
+			o = _G[rightname..i];
+			if o then line = line .. "|" .. o:GetText(); end
+			hashes[line] = true;
 		end
 		
-		-- If there was info text generated for this search result, then display that first.
-		if group.tooltipInfo and #group.tooltipInfo > 0 then
-			local left, right, o;
-			local leftname = self:GetName() .. "TextLeft";
-			local rightname = self:GetName() .. "TextRight";
-			for i,entry in ipairs(group.tooltipInfo) do
-				local found = false;
-				left = entry.left or " ";
-				for i=self:NumLines(),1,-1 do
-					if _G[leftname..i]:GetText() == left then
-						o = _G[rightname..i];
-						if o and o:GetText() == entry.right then
-							found = true;
-							break;
-						end
-					end
-				end
-				if not found then
-					right = entry.right;
-					if right then
-						if entry.r then
-							self:AddDoubleLine(left, right, entry.r, entry.g, entry.b, entry.r, entry.g, entry.b);
-						else
-							self:AddDoubleLine(left, right);
-						end
-					elseif entry.r then
-						if entry.wrap then
-							self:AddLine(left, entry.r, entry.g, entry.b, 1);
-						else
-							self:AddLine(left, entry.r, entry.g, entry.b);
-						end
+		local left, right;
+		for i,entry in ipairs(group.tooltipInfo) do
+			left, right = (entry.left or " "), entry.right;
+			o = right and (left .. "|" .. right) or left;
+			if not hashes[o] then
+				hashes[o] = true;
+				if right then
+					if entry.r then
+						self:AddDoubleLine(left, right, entry.r, entry.g, entry.b, entry.r, entry.g, entry.b);
 					else
-						if entry.wrap then
-							self:AddLine(left, 1, 1, 1, 1);
-						else
-							self:AddLine(left);
-						end
+						self:AddDoubleLine(left, right);
+					end
+				elseif entry.r then
+					if entry.wrap then
+						self:AddLine(left, entry.r, entry.g, entry.b, 1);
+					else
+						self:AddLine(left, entry.r, entry.g, entry.b);
+					end
+				else
+					if entry.wrap then
+						self:AddLine(left, 1, 1, 1, 1);
+					else
+						self:AddLine(left);
 					end
 				end
 			end
 		end
-
-		-- If the user has Show Collection Progress turned on.
-		if group.encounterID then
-			self:Show();
-		elseif group.collectionText and self:NumLines() > 0 then
-			local rightSide = _G[self:GetName() .. "TextRight" .. (lineNumber or 1)];
-			if rightSide then
+	end
+	
+	-- If the user has Show Collection Progress turned on.
+	if group.encounterID then
+		self:Show();
+	elseif group.collectionText and self:NumLines() > 0 then
+		local rightSide = _G[self:GetName() .. "TextRight" .. (lineNumber or 1)];
+		if rightSide then
+			if self.CloseButton then
+				-- dont think the region for the rightText can be modified within the tooltip, so pad instead
+				rightSide:SetText(group.collectionText .. "     ");
+			else
 				rightSide:SetText(group.collectionText);
-				rightSide:Show();
 			end
+			rightSide:Show();
 		end
 	end
 end
