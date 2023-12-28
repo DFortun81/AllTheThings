@@ -895,6 +895,17 @@ local function GetDeepestRelativeValue(group, field)
 	end
 end
 
+app.DoModuleEvent = function(eventName)
+	-- See if any Modules have the event function defined, and call them now
+	local func
+	for _,module in pairs(app.Modules) do
+		func = module[eventName]
+		if func and type(func) == "function" then
+			func(ATTAccountWideData)
+		end
+	end
+end
+
 -- Search Caching
 local searchCache = {};
 app.searchCache = searchCache;
@@ -12317,6 +12328,9 @@ end
 app.events.VARIABLES_LOADED = function()
 	app:StartATTCoroutine("Startup", function()
 		coroutine.yield();
+
+		-- See if any Modules have 'OnStartup' functions defined, and call them now
+		app.DoModuleEvent("OnStartup")
 		
 		-- Execute the OnStartup handlers.
 		for i,handler in ipairs(app.EventHandlers.OnStartup) do
@@ -12364,5 +12378,11 @@ app.events.VARIABLES_LOADED = function()
 		
 		-- Mark that we're ready now!
 		app.IsReady = true;
+		
+		-- See if any Modules have 'OnReady' functions defined, and call them now
+		app.DoModuleEvent("OnReady");
 	end);
 end
+
+-- See if any Modules have 'OnLoad' functions defined, and call them now
+app.DoModuleEvent("OnLoad")
