@@ -31,6 +31,11 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(66896),	-- Stonecore Belt
 					},
 				}),
+				q(28799, {	-- Might of the Earthen
+					["provider"] = { "o", 207407 },	-- Broken Pillar
+					["requireSkill"] = ARCHAEOLOGY,
+					["isRepeatable"] = true,
+				}),
 			}),
 			n(ZONE_DROPS, {
 				i(55822, {	-- Heavy Geode Mace

@@ -34,6 +34,11 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 								i(69598),	-- Robes of Dissention
 							},
 						}),
+						q(29261, {	-- Zul'Aman Voodoo
+							["provider"] = { "o", 208549 },	-- Voodoo Pile
+							["requireSkill"] = ARCHAEOLOGY,
+							["isRepeatable"] = true,
+						}),
 					}),
 					n(TREASURES, {
 						o(181665, {	-- Burial Chest

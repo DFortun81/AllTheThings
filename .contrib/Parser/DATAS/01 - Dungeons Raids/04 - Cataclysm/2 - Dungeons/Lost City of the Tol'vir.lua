@@ -32,6 +32,11 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(66909),	-- Ramkahen Front Boots
 					},
 				}),
+				q(28801, {	-- Tol'vir Hieroglyphics
+					["provider"] = { "o", 207409 },	-- Tol'vir Grave
+					["requireSkill"] = ARCHAEOLOGY,
+					["isRepeatable"] = true,
+				}),
 			}),
 			n(ZONE_DROPS, {
 				i(55881, {	-- Impetuous Query

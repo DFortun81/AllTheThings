@@ -39,6 +39,11 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(66901),	-- Greaves of Orsis
 					},
 				}),
+				q(28800, {	-- Whispers of the Djinn
+					["provider"] = { "o", 207408 },	-- Magical Brazier
+					["requireSkill"] = ARCHAEOLOGY,
+					["isRepeatable"] = true,
+				}),
 			}),
 			n(ZONE_DROPS, {
 				d(NORMAL_DUNGEON, {

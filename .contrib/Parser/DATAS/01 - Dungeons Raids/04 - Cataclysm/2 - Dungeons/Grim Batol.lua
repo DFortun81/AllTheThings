@@ -20,6 +20,11 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					i(66938),	-- Tooranu's Spaulders
 				}),
 				q(28852),	-- Soften them Up
+				q(28803, {	-- Vengeance of the Wildhammer
+					["provider"] = { "o", 207411 },	-- Dwarven Bone Pile
+					["requireSkill"] = ARCHAEOLOGY,
+					["isRepeatable"] = true,
+				}),
 			}),
 			n(ZONE_DROPS, {
 				["crs"] = {

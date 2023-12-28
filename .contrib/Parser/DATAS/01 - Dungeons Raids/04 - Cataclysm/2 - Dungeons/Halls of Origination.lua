@@ -27,6 +27,11 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(66915),	-- Treasure Hunter's Gloves
 					},
 				}),
+				q(28802, {	-- Map of the Architects
+					["provider"] = { "o", 207410 },	-- Large Stone Obelisk
+					["requireSkill"] = ARCHAEOLOGY,
+					["isRepeatable"] = true,
+				}),
 			}),
 			n(ZONE_DROPS, {
 				i(56109),	-- Book of Origination

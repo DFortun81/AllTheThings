@@ -45,6 +45,11 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(65658),	-- Stonespeaker's Belt
 					},
 				}),
+				q(28798, {	-- Waters of Elune
+					["provider"] = { "o", 207406 },	-- Strange Fountain
+					["requireSkill"] = ARCHAEOLOGY,
+					["isRepeatable"] = true,
+				}),
 			}),
 			n(ZONE_DROPS, {
 				["crs"] = {
