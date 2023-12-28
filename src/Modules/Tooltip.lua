@@ -134,6 +134,11 @@ end
 -- Tooltip Functions
 local function AttachTooltipRawSearchResults(self, lineNumber, group)
 	if not group then return end
+	-- If nothing was put into the tooltip initially, mark the text of the source.
+	if self:NumLines() == 0 then
+		self:AddDoubleLine(group.text, " ", 1, 1, 1, 1);
+	end
+	
 	-- app.PrintDebug("Tooltip lines before search results",group.hash,group.tooltipInfo and #group.tooltipInfo)
 	-- if app.Debugging then app.PrintTable(group.tooltipInfo) end
 	-- If there was info text generated for this search result, then display that first.
