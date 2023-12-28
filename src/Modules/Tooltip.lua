@@ -138,7 +138,7 @@ local function AttachTooltipRawSearchResults(self, lineNumber, group)
 	if self:NumLines() == 0 then
 		self:AddDoubleLine(group.text, " ", 1, 1, 1, 1);
 	end
-	
+
 	-- If there was info text generated for this search result, then display that first.
 	local tooltipInfo = group.tooltipInfo;
 	if tooltipInfo and #tooltipInfo > 0 then
@@ -147,7 +147,6 @@ local function AttachTooltipRawSearchResults(self, lineNumber, group)
 		local left, right;
 		for _,entry in ipairs(tooltipInfo) do
 			left, right = (entry.left or " "), entry.right;
-			o = right and (left .. "|" .. right) or left;
 			if right then
 				if entry.r then
 					self:AddDoubleLine(left, right, entry.r, entry.g, entry.b, entry.r, entry.g, entry.b);
