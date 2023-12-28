@@ -140,7 +140,7 @@ root(ROOTS.PetBattles, {
 				ach(13278),	-- Not Quite Dead Yet
 			},
 		}),
-		pvp(ach(12290, {	-- Family Brawler
+		pvp(petbattle(ach(12290, {	-- Family Brawler
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {
 				{"meta_achievement",
@@ -168,7 +168,7 @@ root(ROOTS.PetBattles, {
 				ach(12287),	-- Dragonkin Brawler
 				ach(12289),	-- Humanoid Brawler
 			},
-		})),
+		}))),
 		petbattle(ach(6608, {		-- Family Reunion
 			crit(19750),		-- Humanoid
 			crit(19751),		-- Dragonkin
