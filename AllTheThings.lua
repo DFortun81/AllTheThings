@@ -1692,11 +1692,15 @@ app.DetermineItemLink = function(sourceID)
 	local checkID, found = GetSourceID(link);
 	if found and checkID == sourceID then return link; end
 
+	-- Only try to manually scan for a sourceID if we are Debugging (save regular users from unnecessary lookups)
+	if not app.Debugging then return end
+
+
 	-- Check ModIDs
 	-- bonusID 3524 seems to imply "use ModID to determine SourceID" since without it, everything with ModID resolves as the base SourceID from links
 	itemFormat = "item:"..itemID..":::::::::::%d:1:3524";
 	-- /dump AllTheThings.GetSourceID("item:188859:::::::::::5:1:3524")
-	for m=1,99,1 do
+	for m=1,129,1 do
 		link = sformat(itemFormat, m);
 		checkID, found = GetSourceID(link);
 		-- app.PrintDebug(link,checkID,found)
@@ -9136,8 +9140,8 @@ local fields = RawCloneData(itemFields, {
 		-- async generation of the proper Item Link
 		-- itemID is set when Link is determined, so rawset in the group prior so that additional async calls are skipped
 		t.__autolink = true;
-		-- app.FunctionRunner.Run(app.GenerateGroupLinkUsingSourceID, t);
-		app.GenerateGroupLinkUsingSourceID(t);
+		app.FunctionRunner.Run(app.GenerateGroupLinkUsingSourceID, t);
+		-- app.GenerateGroupLinkUsingSourceID(t);
 		-- if a value was set within this logic, return it here. weird logic sequencing was previously able to generate the itemID while
 		-- caching the modItemID, leading to a 0 itemID return, and caching the item information into a 0-itemID cache record
 		return rawget(t, "itemID")
@@ -9887,6 +9891,7 @@ app.ImportRawLink = function(group, rawlink, ignoreSource)
 end
 -- Allows generating and capturing the specific ItemString which represents the SourceID of a group, if possible
 app.GenerateGroupLinkUsingSourceID = function(group)
+	app.DirectGroupRefresh(group)
 	local sourceID = group and group.sourceID;
 	if not sourceID then return; end
 
