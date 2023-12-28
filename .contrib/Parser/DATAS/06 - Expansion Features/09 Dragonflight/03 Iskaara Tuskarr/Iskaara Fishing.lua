@@ -236,6 +236,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(72791),	-- Contribute Supplies: Khaz'gorite Wire
 			})),
 			prof(TUSKARR_FISHING_GEAR, sharedData({
+				-- If you want to touch this specific file, check with contributor chat before.
 				["requireSkill"] = FISHING,	-- Minimum 25, but it shows in the tooltip
 			},{
 				["crs"] = { 195935 },
@@ -260,7 +261,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					})),
 					-- These "Recipes" show as learned, but when you have learned them, they dissapear causing ATT to think you no longer have them learned.
 					-- Commented out spellID due to odd use case where players who completed the upgrades/crafting and could no longer open the crafting window can't re-cache. 
-
 					i(199847, {	-- Braided Seavine Harpoon Rope
 						--["spellID"] = 388251,	-- Braided Seavine Harpoon Rope
 						["questID"] = 70799,	-- Triggered after crafting 'Braided Seavine Harpoon Rope'
