@@ -654,6 +654,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
+					["groups"] = {
+						i(69999, {	-- Moat Monster Feeding Kit
+							i(69995),	-- Bloated Frog
+							i(69998),	-- Alliance Decoy Kit
+						}),
+					},
 				}),
 				q(38346, {	-- Numismatics
 					["qg"] = 6566,	-- Estelle Gendry
