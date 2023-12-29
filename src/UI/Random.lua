@@ -4,156 +4,116 @@ local contains, CloneReference, searchCache =
 	app.contains, app.CloneReference, app.searchCache;
 
 -- Global locals
-local ipairs, tinsert, pairs, wipe
-	= ipairs, tinsert, pairs, wipe;
+local ipairs, tinsert, math_max, pairs, unpack, wipe
+	= ipairs, tinsert, math.max, pairs, unpack, wipe;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 
 -- Helper Functions
--- TODO: Move these to the public API.
-local function SearchRecursively(group, field, temp)
-	if group.visible and not group.saved then
-		if group.g then
-			for i, subgroup in ipairs(group.g) do
-				SearchRecursively(subgroup, field, temp);
-			end
+local function GenerateWeightedTable(data)
+	local weightedTable, totalWeight = {}, 0;
+	if data then
+		for i,o in ipairs(data) do
+			local weight, total, progress = 1, o.total, o.progress;
+			if total and progress then weight = math_max(total - progress, 1); end
+			tinsert(weightedTable, { value=o, weight=weight });
+			totalWeight = totalWeight + weight;
 		end
-		if group[field] then tinsert(temp, group); end
 	end
+	return { weightedTable, totalWeight };
 end
-local function SearchRecursivelyForEverything(group, temp)
-	if group.visible and not group.saved then
-		if group.g then
-			for i, subgroup in ipairs(group.g) do
-				SearchRecursivelyForEverything(subgroup, temp);
-			end
-		end
-		tinsert(temp, group);
-	end
-end
-local function SearchRecursivelyForValue(group, field, value, temp)
-	if group.visible and not group.saved then
-		if group.g then
-			for i, subgroup in ipairs(group.g) do
-				SearchRecursivelyForValue(subgroup, field, value, temp);
-			end
-		end
-		if group[field] and group[field] == value then tinsert(temp, group); end
-	end
+local function Search(field, g)
+	local results = {};
+	app:BuildFlatSearchFilteredResponse(g or app:GetDataCache().g, function(t) return t[field]; end, results);
+	return results;
 end
 
 -- Local Functions
 local SearchFilter;
 local excludedZones = {
-	947,	-- Cosmic
-	1414,	-- Kalimdor
-	1415,	-- Eastern Kingdoms
-	101,	-- Outland
-	113,	-- Northrend
-	424,	-- Pandaria
-	572,	-- Draenor
-	619,	-- Broken Isles
+	[12] = 1,	-- Kalimdor
+	[13] = 1, 	-- Eastern Kingdoms
+	[101] = 1,	-- Outland
+	[113] = 1,	-- Northrend
+	[424] = 1,	-- Pandaria
+	[948] = 1,	-- The Maelstrom
+	[572] = 1,	-- Draenor
+	[619] = 1,	-- Broken Isles
+	[905] = 1,	-- Argus
+	[876] = 1,	-- Kul'Tiras
+	[875] = 1,	-- Zandalar
+	[947] = 1,	-- Cosmic (Classic)
+	[1414] = 1,	-- Kalimdor (Classic)
+	[1415] = 1,	-- Eastern Kingdoms (Classic)
+	[1945] = 1,	-- Outland (Classic)
 };
+local everythingFilter = function(t)
+	return (t.collectible and not t.collected) and not (t.mapID and excludedZones[t.mapID]) and not t.tierID;
+end;
+local zoneFilter = function(t)
+	return t.mapID and (not (t.saved or (t.collectible and t.collected)) and (t.total and t.progress < t.total)) and not excludedZones[t.mapID];
+end;
 local searchMethods = {
-	ATT = function(self)
-		if searchCache["randomatt"] then
-			return searchCache["randomatt"];
-		else
-			local searchResults = {};
-			for i, subgroup in ipairs(app:GetDataCache().g) do
-				SearchRecursivelyForEverything(subgroup, searchResults);
-			end
-			searchCache["randomatt"] = searchResults;
-			return searchResults;
-		end
-	end,
-	Item = function(self)
-		if searchCache["randomitem"] then
-			return searchCache["randomitem"];
-		else
-			local searchResults, dict, temp = {}, {} , {};
-			SearchRecursively(app:GetDataCache(), "itemID", searchResults);
-			for i,o in pairs(searchResults) do
-				if not (o.saved or o.collected) and o.collectible then
-					tinsert(temp, o);
+	ATT = function(self, cache)
+		for i,o in pairs(app:GetDataCache().g) do
+			if o.g then
+				local results = {};
+				app:BuildFlatSearchFilteredResponse(o.g, everythingFilter, results);
+				for i,o in ipairs(results) do
+					local saved = o.saved;
+					if not o.locked and ((o.collectible and not o.collected) or (not o.saved and o.total and o.progress < o.total)) then
+						if app.RecursiveCharacterRequirementsFilter(o) and app.RecursiveGroupRequirementsFilter(o) then
+							tinsert(cache, o);
+						end
+					end
 				end
 			end
-			searchCache["randomitem"] = temp;
-			return temp;
 		end
 	end,
-	Quest = function(self)
-		if searchCache["randomquest"] then
-			return searchCache["randomquest"];
-		else
-			local searchResults, dict, temp = {}, {} , {};
-			SearchRecursively(app:GetDataCache(), "questID", searchResults);
-			for i,o in pairs(searchResults) do
-				if not (o.saved or o.collected) and o.collectible then
-					tinsert(temp, o);
+	Item = function(self, cache)
+		for i,o in ipairs(Search("itemID")) do
+			if not o.collected and o.collectible then
+				if app.RecursiveCharacterRequirementsFilter(o) and app.RecursiveGroupRequirementsFilter(o) then
+					tinsert(cache, o);
 				end
 			end
-			searchCache["randomquest"] = temp;
-			return temp;
 		end
 	end,
-	Instance = function(self)
-		if searchCache["randominstance"] then
-			return searchCache["randominstance"];
-		else
-			local searchResults, dict, temp = {}, {} , {};
-			SearchRecursively(app:GetDataCache(), "mapID", searchResults);
-			for i,o in pairs(searchResults) do
-				if not (o.saved or o.collected) and (((o.total or 0) - (o.progress or 0)) > 0) and not C_Map_GetMapInfo(o.mapID) then
-					tinsert(temp, o);
+	Quest = function(self, cache)
+		for i,o in ipairs(Search("questID")) do
+			local saved = o.saved;
+			if not o.locked and ((o.collectible and not o.collected) or (not o.saved and o.total and o.progress < o.total)) then
+				if app.RecursiveCharacterRequirementsFilter(o) and app.RecursiveGroupRequirementsFilter(o) then
+					tinsert(cache, o);
 				end
 			end
-			searchCache["randominstance"] = temp;
-			return temp;
 		end
 	end,
-	Dungeon = function(self)
-		if searchCache["randomdungeon"] then
-			return searchCache["randomdungeon"];
-		else
-			local searchResults, dict, temp = {}, {} , {};
-			SearchRecursively(app:GetDataCache(), "mapID", searchResults);
-			for i,o in pairs(searchResults) do
-				if not (o.saved or o.collected) and not o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0) and not C_Map_GetMapInfo(o.mapID) then
-					tinsert(temp, o);
-				end
+	Instance = function(self, cache)
+		for i,o in ipairs(Search("mapID", app.Categories.Instances)) do
+			if not (o.saved or (o.collectible and o.collected)) and (o.total and o.progress < o.total) then
+				tinsert(cache, o);
 			end
-			searchCache["randomdungeon"] = temp;
-			return temp;
 		end
 	end,
-	Raid = function(self)
-		if searchCache["randomraid"] then
-			return searchCache["randomraid"];
-		else
-			local searchResults, dict, temp = {}, {} , {};
-			SearchRecursively(app:GetDataCache(), "mapID", searchResults);
-			for i,o in pairs(searchResults) do
-				if not (o.saved or o.collected) and o.isRaid and (((o.total or 0) - (o.progress or 0)) > 0) then
-					tinsert(temp, o);
-				end
+	Dungeon = function(self, cache)
+		for i,o in ipairs(Search("mapID", app.Categories.Instances)) do
+			if not o.isRaid and (not (o.saved or (o.collectible and o.collected)) and (o.total and o.progress < o.total)) then
+				tinsert(cache, o);
 			end
-			searchCache["randomraid"] = temp;
-			return temp;
 		end
 	end,
-	Zone = function(self)
-		if searchCache["randomzone"] then
-			return searchCache["randomzone"];
-		else
-			local searchResults, dict, temp = {}, {} , {};
-			SearchRecursively(app:GetDataCache(), "mapID", searchResults);
-			for i,o in pairs(searchResults) do
-				if not (o.saved or o.collected) and (((o.total or 0) - (o.progress or 0)) > 0) and not contains(excludedZones, o.mapID) then
-					tinsert(temp, o);
-				end
+	Raid = function(self, cache)
+		for i,o in ipairs(Search("mapID", app.Categories.Instances)) do
+			if o.isRaid and (not (o.saved or (o.collectible and o.collected)) and (o.total and o.progress < o.total)) then
+				tinsert(cache, o);
 			end
-			searchCache["randomzone"] = temp;
-			return temp;
+		end
+	end,
+	Zone = function(self, cache)
+		for categoryName,category in pairs(app.Categories) do
+			if categoryName ~= "Instances" then
+				app:BuildFlatSearchFilteredResponse(category, zoneFilter, cache);
+			end
 		end
 	end
 };
@@ -168,31 +128,34 @@ local function Reroll(self)
 	end
 	if SearchFilter then
 		-- Call to our method and build a list to draw from
-		local temp = searchMethods[SearchFilter](self) or {};
-		local totalWeight = 0;
-		for i,o in ipairs(temp) do
-			totalWeight = totalWeight + ((o.total or 1) - (o.progress or 0));
+		local cachekey = "SEARCH::" .. SearchFilter;
+		local cache = searchCache[cachekey];
+		if not cache then
+			cache = {};
+			searchMethods[SearchFilter](self, cache);
+			cache = GenerateWeightedTable(cache);
+			searchCache[cachekey] = cache;
 		end
-		if totalWeight > 0 and #temp > 0 then
-			local weight, selected = math.random(totalWeight), nil;
-			totalWeight = 0;
-			for i,o in ipairs(temp) do
-				totalWeight = totalWeight + ((o.total or 1) - (o.progress or 0));
-				if weight <= totalWeight then
-					selected = o;
+		local weightedTable, totalWeight = unpack(cache);
+		if totalWeight > 0 then
+			local selected = weightedTable[#weightedTable].data;
+			totalWeight = math.random(totalWeight);
+			for i,o in ipairs(weightedTable) do
+				totalWeight = totalWeight - o.weight;
+				if totalWeight <= 0 then
+					selected = o.value;
 					break;
 				end
 			end
-			if not selected then selected = temp[#temp - 1]; end
 			if selected then
 				local o = CloneReference(selected);
 				o.parent = data;
 				tinsert(data.g, o);
 			else
-				app.print("There was nothing to randomly select from.");
+				app.print("Nothing was selected.");
 			end
 		else
-			app.print("There was nothing to randomly select from.");
+			app.print("Source list was empty. Please check to see if anything matches your query.");
 		end
 		self:Rebuild();
 	end
@@ -339,16 +302,12 @@ app:GetWindow("Random", {
 		self.data = self.defaultHeader;
 		Reroll(self);
 	end,
-	OnUpdate = function(self, ...)
+	--OnUpdate = function(self, ...)
 		-- Update the groups without forcing Debug Mode.
-		local visibilityFilter = app.Modules.Filter.Get.Visible();
-		app.Modules.Filter.Set.Visible();
-		
-		local groupFilter = app.GroupFilter;
-		app.GroupFilter = app.ReturnTrue;
-		self:DefaultUpdate(...);
-		app.GroupFilter = groupFilter;
-		app.Modules.Filter.Set.Visible(visibilityFilter);
-		return false;
-	end
+		--local visibilityFilter = app.Modules.Filter.Get.Visible();
+		--app.Modules.Filter.Set.Visible(true);
+		--self:DefaultUpdate(...);
+		--app.Modules.Filter.Set.Visible(visibilityFilter);
+		--return false;
+	--end
 });

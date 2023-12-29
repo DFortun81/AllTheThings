@@ -2662,7 +2662,7 @@ function app:GetDataCache()
 			tinsert(g, {
 				text = GROUP_FINDER,
 				icon = app.asset("Category_D&R"),
-				g = app.Categories.Instances
+				g = app.Categories.Instances,
 			});
 		end
 
@@ -2672,7 +2672,7 @@ function app:GetDataCache()
 				mapID = 947,
 				text = BUG_CATEGORY2,
 				icon = app.asset("Category_Zones"),
-				g = app.Categories.Zones
+				g = app.Categories.Zones,
 			});
 		end
 
