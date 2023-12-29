@@ -8130,9 +8130,6 @@ else
 	end
 end
 
--- Default Filter Settings (changed in ADDON_LOADED and in the Options Menu)
-app.ShowIncompleteThings = app.ReturnFalse;
-
 -- Processing Functions (Coroutines)
 UpdateGroup = function(parent, group)
 	local visible = false;
@@ -8188,11 +8185,9 @@ UpdateGroup = function(parent, group)
 					else
 						visible = true;
 					end
-				elseif group.trackable then
+				elseif app.ShowTrackableThings(group) and not group.saved then
 					-- If this group is trackable, then we should show it.
-					if app.ShowTrackableThings(group) and not group.saved then
-						visible = true;
-					end
+					visible = true;
 				elseif ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
 					visible = true;
 				elseif app.MODE_DEBUG then

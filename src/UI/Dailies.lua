@@ -28,10 +28,10 @@ app:GetWindow("Dailies", {
 	end,
 	OnUpdate = function(self, ...)
 		-- Update the groups without forcing Debug Mode.
-		local incompleteFilter = app.ShowIncompleteThings;
-		app.ShowIncompleteThings = app.ReturnTrue;
+		local state = app.Modules.Filter.Get.Trackable();
+		app.Modules.Filter.Set.Trackable(true);
 		self:DefaultUpdate(...);
-		app.ShowIncompleteThings = incompleteFilter;
+		app.Modules.Filter.Set.Trackable(state);
 		return false;
 	end
 });
