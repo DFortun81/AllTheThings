@@ -9,7 +9,6 @@ app:GetWindow("Never Implemented", {
 	OnLoad = function(self, settings)
 		local g = app.Categories.NeverImplemented;
 		if g then
-			app.Categories.NeverImplemented = nil;
 			local nyiData = app.CacheFields({
 				text = "Never Implemented",
 				icon = app.asset("Interface_Tchest"),

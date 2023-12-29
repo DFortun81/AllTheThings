@@ -10,7 +10,6 @@ app:GetWindow("Hiddent Achievement Triggers", {
 	OnLoad = function(self, settings)
 		local hat = app.Categories.HiddenAchievementTriggers;
 		if hat then
-			app.Categories.HiddenAchievementTriggers = nil;
 			self.hqtData = app.CacheFields({
 				text = "Hidden Achievement Triggers",
 				icon = app.asset("Category_Achievements"),

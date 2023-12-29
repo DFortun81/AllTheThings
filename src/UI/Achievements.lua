@@ -195,7 +195,6 @@ app:GetWindow("Achievements", {
 			end
 		});
 		app.CacheFields(self.data);
-		app.Categories.Achievements = nil;
 		if not (GetCategoryInfo and GetCategoryInfo(92) ~= "") then
 			self.data.description = "This section isn't a thing until Wrath, but by popular demand and my own insanity, I've added this section so you can track your progress for at least one of the big ticket achievements if you have the stomach for it.";
 		end

@@ -39,7 +39,6 @@ app:GetWindow("Unsorted", {
 					g = unsorted,
 				};
 				tinsert(unsorted, self.achievementHeader);
-				app.Categories.Unsorted = nil;
 				return true;
 			end
 		end

@@ -10,7 +10,6 @@ app:GetWindow("Hiddent Quest Triggers", {
 	OnLoad = function(self, settings)
 		local hqt = app.Categories.HiddenQuestTriggers;
 		if hqt then
-			app.Categories.HiddenQuestTriggers = nil;
 			self.hqtData = app.CacheFields({
 				text = "Hidden Quest Triggers",
 				icon = app.asset("Interface_Quest"),
