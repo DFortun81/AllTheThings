@@ -34,10 +34,10 @@ app:GetWindow("Removed From Game", {
 	end,
 	OnUpdate = function(self, ...)
 		-- Update the groups without the Removed From Game filter turned on.
-		local oldFilter = ATTClassicSettings.Unobtainables[2];
-		ATTClassicSettings.Unobtainables[2] = true;
+		local oldFilter = ATTClassicSettings.Unobtainable[2];
+		ATTClassicSettings.Unobtainable[2] = true;
 		self:DefaultUpdate(...);
-		ATTClassicSettings.Unobtainables[2] = oldFilter;
+		ATTClassicSettings.Unobtainable[2] = oldFilter;
 		return false;
 	end
 });

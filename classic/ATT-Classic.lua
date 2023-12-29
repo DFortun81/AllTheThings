@@ -1458,7 +1458,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 						right = L["NOT_COLLECTED_ICON"];
 					end
 				elseif group.trackable then
-					if app.Settings:Get("Show:IncompleteThings") then
+					if app.Settings:Get("Show:TrackableThings") then
 						if group.saved then
 							if app.Settings:Get("Show:CollectedThings") then
 								right = L["COMPLETE_ICON"];
@@ -1578,7 +1578,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					else
 						for i,j in ipairs(group) do
-							if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+							if app.RecursiveCharacterRequirementsFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
 								if j.questID and j.itemID then
 									if not j.saved then
 										-- Only show the item on the tooltip if the quest is active and incomplete or the item is a provider.
@@ -1645,7 +1645,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			else
 				for i,j in ipairs(group) do
-					if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) then
+					if app.RecursiveCharacterRequirementsFilter(j) and app.RecursiveUnobtainableFilter(j) then
 						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
 					end
 				end
@@ -1778,7 +1778,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if j.rwp then right = right .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][2] .. ":0|t"; end
 					if j.e then right = right .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][4] .. ":0|t"; end
 
-					if not app.RecursiveClassAndRaceFilter(j.parent) then
+					if not app.RecursiveCharacterRequirementsFilter(j.parent) then
 						tinsert(unfiltered, { text, right .. "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
 					elseif not app.RecursiveUnobtainableFilter(j.parent) then
 						tinsert(unfiltered, { text, right .. "|TInterface\\FriendsFrame\\StatusIcon-DnD:0|t" });
@@ -2662,7 +2662,7 @@ function app:GetDataCache()
 			tinsert(g, {
 				text = GROUP_FINDER,
 				icon = app.asset("Category_D&R"),
-				g = app.Categories.Instances
+				g = app.Categories.Instances,
 			});
 		end
 
@@ -2672,7 +2672,7 @@ function app:GetDataCache()
 				mapID = 947,
 				text = BUG_CATEGORY2,
 				icon = app.asset("Category_Zones"),
-				g = app.Categories.Zones
+				g = app.Categories.Zones,
 			});
 		end
 
@@ -4265,15 +4265,18 @@ else
 		local quests = t.quests;
 		if quests and #quests > 0 then
 			local p = 0;
-			if app.FilterItemClass_RequireRaces(t) then
+			local groupFilter = app.Modules.Filter.Get.Group();
+			if not groupFilter then app.Modules.Filter.Set.Group(true); end
+			if app.Modules.Filter.Filters.Race(t) then
 				for i,o in ipairs(quests) do
-					if app.FilterItemClass(o) then
+					if app.GroupFilter(o) then
 						if o.collected == 1 then
 							p = p + 1;
 						end
 					end
 				end
 			end
+			if not groupFilter then app.Modules.Filter.Set.Group(); end
 			t.p = p;
 			t:SetAchievementCollected(t.achievementID, p >= t.rank);
 		else
@@ -4426,7 +4429,7 @@ else
 			end
 			local collected = true;
 			for i,o in ipairs(t.areas) do
-				if o.collected ~= 1 and app.FilterItemClass_UnobtainableItem(o) then
+				if o.collected ~= 1 and app.RecursiveUnobtainableFilter(o) then
 					collected = false;
 					break;
 				end
@@ -4560,7 +4563,7 @@ else
 			end
 			local collected = true;
 			for i,faction in ipairs(t.achievements) do
-				if not faction.collected and app.FilterItemClass_UnobtainableItem(faction) then
+				if not faction.collected and app.RecursiveUnobtainableFilter(faction) then
 					collected = false;
 					break;
 				end
@@ -4863,7 +4866,7 @@ app.CreateQuestUnit = app.ExtendClass("Unit", "QuestUnit", "unit", {
 		return t.saved;
 	end,
 	["OnClick"] = function(t)
-		return app.NoFilter;
+		return app.ReturnTrue;
 	end,
 	["OnUpdate"] = function(t)
 		return app.AlwaysShowUpdateWithoutReturn;
@@ -5209,7 +5212,7 @@ local CurrencyCollectedAsCost = setmetatable({}, { __index = function(t, id)
 	if #results > 0 then
 		local count = GetCurrencyCount(id);
 		for _,ref in pairs(results) do
-			if ref.currencyID ~= id and app.RecursiveDefaultClassAndRaceFilter(ref) then
+			if ref.currencyID ~= id and app.RecursiveDefaultCharacterRequirementsFilter(ref) then
 				if ref.collectible and ref.collected ~= 1 then
 					if ref.cost then
 						for k,v in ipairs(ref.cost) do
@@ -6152,7 +6155,7 @@ local collectedAsRWP = function(t)
 				local searchResults = SearchForField("itemID", id);
 				if #searchResults > 0 then
 					for i,o in ipairs(searchResults) do
-						if ((o.key == "questID" and o.saved) or (o.parent and o.parent.key == "questID" and o.parent.saved)) and app.RecursiveDefaultClassAndRaceFilter(o) then
+						if ((o.key == "questID" and o.saved) or (o.parent and o.parent.key == "questID" and o.parent.saved)) and app.RecursiveDefaultCharacterRequirementsFilter(o) then
 							return app.SetCollected(t, "RWP", id, true);
 						end
 					end
@@ -8067,85 +8070,6 @@ end
 end)();
 
 -- Filtering
-app.MaximumSkillLevel = 99999;
-function app.Filter()
-	-- Meaning "Don't display."
-	return false;
-end
-function app.NoFilter()
-	-- Meaning "Display as expected."
-	return true;
-end
-function app.FilterGroupsByLevel(group)
-	-- after 9.0, transition to a req lvl range, either min, or min + max
-    if group.lvl then
-        local minlvl, maxlvl;
-        if type(group.lvl) == "table" then
-            minlvl = group.lvl[1];
-            maxlvl = group.lvl[2];
-        else
-            minlvl = group.lvl;
-        end
-
-        if maxlvl then
-            -- min and max provided
-            return app.Level >= minlvl and app.Level <= maxlvl;
-        elseif minlvl then
-            -- only min provided
-            return app.Level >= minlvl;
-        end
-    end
-    -- no level requirement on the group, have to include it
-    return true;
-end
-function app.FilterGroupsBySkillLevel(group)
-    if group.learnedAt then
-        return app.MaximumSkillLevel >= group.learnedAt;
-    end
-    -- no skill level requirement on the group, have to include it
-    return true;
-end
-function app.FilterGroupsByCompletion(group)
-	return group.progress < group.total;
-end
-function app.FilterItemBind(item)
-	return item.b == 2 or item.b == 3; -- BoE
-end
-function app.FilterItemClass(item)
-	if app.UnobtainableItemFilter(item) and app.RequireEventFilter(item) and app.PvPFilter(item) then
-		if app.ItemBindFilter(item) then return true; end
-		return app.ItemTypeFilter(item)
-			and app.RequireBindingFilter(item)
-			and app.RequiredSkillFilter(item)
-			and app.ClassRequirementFilter(item)
-			and app.RaceRequirementFilter(item)
-			and app.RequireFactionFilter(item);
-	end
-end
-function app.FilterItemPvP(item)
-	if item.pvp then
-		return false;
-	else
-		return true;
-	end
-end
-function app.FilterItemClass_RequireClasses(item)
-	return not item.nmc;
-end
-function app.FilterItemClass_RequireItemFilter(item)
-	if item.f then
-		if app.Settings:GetFilter(item.f) then
-			return true;
-		else
-			return false;
-		end
-	else
-		return true;
-	end
-end
-function app.FilterItemClass_RequireRaces(item)
-	return not item.nmr;
-end
 if app.GameBuildVersion > 11403 then
 	function app.FilterItemClass_RequireRacesCurrentFaction(item)
 		if item.nmr then
@@ -8205,113 +8129,13 @@ else
 		end
 	end
 end
-function app.FilterItemClass_RequireBinding(item)
-	if item.b and (item.b == 2 or item.b == 3) then
-		return false;
-	else
-		return true;
-	end
-end
-function app.FilterItemClass_RequiredSkill(item)
-	local requireSkill = item.requireSkill;
-	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or item.b == 1) then
-		requireSkill = app.SkillIDToSpellID[requireSkill];
-		return requireSkill and app.CurrentCharacter.ActiveSkills[requireSkill];
-	else
-		return true;
-	end
-end
-function app.FilterItemClass_RequireFaction(item)
-	if item.minReputation and app.IsFactionExclusive(item.minReputation[1]) then
-		if item.minReputation[2] > (select(6, GetFactionInfoByID(item.minReputation[1])) or 0) then
-			return false;
-		else
-			return true;
-		end
-	else
-		return true;
-	end
-end
-function app.FilterItemClass_UnobtainableItem(item)
-	if item.u and not app.Settings:GetUnobtainableFilter(item.u) then
-		return false;
-	else
-		return true;
-	end
-end
-function app.FilterItemTrackable(group)
-	return group.trackable;
-end
-function app.ObjectVisibilityFilter(group)
-	return group.visible;
-end
-
--- Default Filter Settings (changed in ADDON_LOADED and in the Options Menu)
-app.VisibilityFilter = app.ObjectVisibilityFilter;
-app.GroupFilter = app.FilterItemClass;
-app.GroupRequirementsFilter = app.NoFilter;
-app.GroupVisibilityFilter = app.NoFilter;
-app.ItemBindFilter = app.FilterItemBind;
-app.ItemTypeFilter = app.NoFilter;
-app.PvPFilter = app.NoFilter;
-app.CollectedItemVisibilityFilter = app.NoFilter;
-app.ClassRequirementFilter = app.NoFilter;
-app.RaceRequirementFilter = app.NoFilter;
-app.RequireBindingFilter = app.NoFilter;
-app.RequireEventFilter = app.Modules.Events.FilterIsEventActive;
-app.RequiredSkillFilter = app.NoFilter;
-app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
-app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
-app.ShowIncompleteThings = app.Filter;
-
--- Recursive Checks
-app.RecursiveGroupRequirementsFilter = function(group)
-	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
-		if group.parent then return app.RecursiveGroupRequirementsFilter(group.parent); end
-		return true;
-	end
-	return false;
-end
-app.RecursiveClassAndRaceFilter = function(group)
-	if app.ClassRequirementFilter(group) and app.RaceRequirementFilter(group) then
-		if group.parent then return app.RecursiveClassAndRaceFilter(group.parent); end
-		return true;
-	end
-	return false;
-end
-app.RecursiveDefaultClassAndRaceFilter = function(group)
-	if app.FilterItemClass_RequireClasses(group) and app.FilterItemClass_RequireRaces(group) then
-		if group.parent then return app.RecursiveDefaultClassAndRaceFilter(group.parent); end
-		return true;
-	end
-	return false;
-end
-app.RecursiveUnobtainableFilter = function(group)
-	if app.UnobtainableItemFilter(group) and app.RequireEventFilter(group) then
-		if group.parent then return app.RecursiveUnobtainableFilter(group.parent); end
-		return true;
-	end
-	return false;
-end
-app.RecursiveIsDescendantOfParentWithValue = function(group, field, value)
-	if group then
-		if group[field] and group[field] == value then
-			return true
-		else
-			if group.parent then
-				return app.RecursiveIsDescendantOfParentWithValue(group.parent, field, value)
-			end
-		end
-	end
-	return false;
-end
 
 -- Processing Functions (Coroutines)
 UpdateGroup = function(parent, group)
 	local visible = false;
 
 	-- Determine if this user can enter the instance or acquire the item.
-	if app.GroupRequirementsFilter(group) then
+	if app.GroupFilter(group) then
 		-- Check if this is a group
 		if group.g then
 			-- If this item is collectible, then mark it as such.
@@ -8329,7 +8153,7 @@ UpdateGroup = function(parent, group)
 			visible = UpdateGroups(group, group.g);
 
 			-- If the 'can equip' filter says true
-			if app.GroupFilter(group) and app.ClassRequirementFilter(group) and app.RaceRequirementFilter(group) then
+			if app.GroupFilter(group) then
 				-- Increment the parent group's totals.
 				parent.total = (parent.total or 0) + group.total;
 				parent.progress = (parent.progress or 0) + group.progress;
@@ -8337,7 +8161,7 @@ UpdateGroup = function(parent, group)
 				-- If this group is trackable, then we should show it.
 				if group.total > 0 and app.GroupVisibilityFilter(group) then
 					visible = true;
-				elseif app.ShowIncompleteThings(group) and not group.saved then
+				elseif app.ShowTrackableThings(group) and not group.saved then
 					visible = true;
 				elseif ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
 					visible = true;
@@ -8361,11 +8185,9 @@ UpdateGroup = function(parent, group)
 					else
 						visible = true;
 					end
-				elseif group.trackable then
+				elseif app.ShowTrackableThings(group) and not group.saved then
 					-- If this group is trackable, then we should show it.
-					if app.ShowIncompleteThings(group) and not group.saved then
-						visible = true;
-					end
+					visible = true;
 				elseif ((group.itemID and group.f) or group.sym) and app.Settings.Collectibles.Loot then
 					visible = true;
 				elseif app.MODE_DEBUG then
@@ -8421,7 +8243,7 @@ local function UpdateParentProgress(group)
 			-- If this group is trackable, then we should show it.
 			if app.GroupVisibilityFilter(group) then
 				group.visible = true;
-			elseif app.ShowIncompleteThings(group) then
+			elseif app.ShowTrackableThings(group) then
 				group.visible = not group.saved;
 			else
 				group.visible = false;
@@ -10127,7 +9949,7 @@ local function RowOnEnter(self)
 						local bestMatch = nil;
 						for j,sq in ipairs(sqs) do
 							if sq.questID == sourceQuestID and not sq.objectiveID then
-								if isDebugMode or (app.RecursiveClassAndRaceFilter(sq) and not IsQuestFlaggedCompleted(sourceQuestID)) then
+								if isDebugMode or (app.RecursiveCharacterRequirementsFilter(sq) and not IsQuestFlaggedCompleted(sourceQuestID)) then
 									if sq.sourceQuests then
 										-- Always prefer the source quest with additional source quest data.
 										bestMatch = sq;
@@ -11247,13 +11069,15 @@ function app:BuildSearchFilteredResponse(groups, filter)
 	if groups then
 		local t;
 		for i,group in ipairs(groups) do
-			local response = app:BuildSearchFilteredResponse(group.g, filter);
-			if response then
-				if not t then t = {}; end
-				tinsert(t, setmetatable({g=response}, { __index = group }));
-			elseif filter(group) then
+			if filter(group) then
 				if not t then t = {}; end
 				tinsert(t, CloneReference(group));
+			else
+				local response = app:BuildSearchFilteredResponse(group.g, filter);
+				if response then
+					if not t then t = {}; end
+					tinsert(t, setmetatable({g=response}, { __index = group }));
+				end
 			end
 		end
 		return t;
@@ -11263,15 +11087,15 @@ function app:BuildSearchResponse(groups, field, value)
 	if groups then
 		local t;
 		for i,group in ipairs(groups) do
-			local response = app:BuildSearchResponse(group.g, field, value);
-			if response then
+			local v = group[field];
+			if v and (v == value or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
 				if not t then t = {}; end
-				tinsert(t, setmetatable({g=response}, { __index = group }));
+				tinsert(t, CloneReference(group));
 			else
-				local v = group[field];
-				if v and (v == value or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
+				local response = app:BuildSearchResponse(group.g, field, value);
+				if response then
 					if not t then t = {}; end
-					tinsert(t, CloneReference(group));
+					tinsert(t, setmetatable({g=response}, { __index = group }));
 				end
 			end
 		end
@@ -11282,13 +11106,15 @@ function app:BuildSearchResponseForField(groups, field)
 	if groups then
 		local t;
 		for i,group in ipairs(groups) do
-			local response = app:BuildSearchResponseForField(group.g, field);
-			if response then
-				if not t then t = {}; end
-				tinsert(t, setmetatable({g=response}, { __index = group }));
-			elseif group[field] then
+			if group[field] then
 				if not t then t = {}; end
 				tinsert(t, CloneReference(group));
+			else
+				local response = app:BuildSearchResponseForField(group.g, field);
+				if response then
+					if not t then t = {}; end
+					tinsert(t, setmetatable({g=response}, { __index = group }));
+				end
 			end
 		end
 		return t;
@@ -11361,7 +11187,7 @@ local function OnInitForPopout(self, group)
 									sq = sq.parent;
 								end
 								if app.GroupFilter(sq) then
-									if app.RecursiveClassAndRaceFilter(sq) and questID == sourceQuestID then
+									if app.RecursiveCharacterRequirementsFilter(sq) and questID == sourceQuestID then
 										if not found or (not found.sourceQuests and sq.sourceQuests) then
 											found = sq;
 										end
@@ -12339,7 +12165,7 @@ app.events.VARIABLES_LOADED = function()
 		
 		-- Check for Season of Discovery
 		local season = C_Seasons and C_Seasons.GetActiveSeason() or 0;
-		getmetatable(ATTClassicSettings.Unobtainables).__index[1605] = season == 2;
+		getmetatable(ATTClassicSettings.Unobtainable).__index[1605] = season == 2;
 		if season == 2 then app.MaximumSkillLevel = 150; end
 
 		-- Prepare the Sound Pack!
