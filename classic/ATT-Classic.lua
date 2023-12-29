@@ -11069,13 +11069,15 @@ function app:BuildSearchFilteredResponse(groups, filter)
 	if groups then
 		local t;
 		for i,group in ipairs(groups) do
-			local response = app:BuildSearchFilteredResponse(group.g, filter);
-			if response then
-				if not t then t = {}; end
-				tinsert(t, setmetatable({g=response}, { __index = group }));
-			elseif filter(group) then
+			if filter(group) then
 				if not t then t = {}; end
 				tinsert(t, CloneReference(group));
+			else
+				local response = app:BuildSearchFilteredResponse(group.g, filter);
+				if response then
+					if not t then t = {}; end
+					tinsert(t, setmetatable({g=response}, { __index = group }));
+				end
 			end
 		end
 		return t;
@@ -11085,15 +11087,15 @@ function app:BuildSearchResponse(groups, field, value)
 	if groups then
 		local t;
 		for i,group in ipairs(groups) do
-			local response = app:BuildSearchResponse(group.g, field, value);
-			if response then
+			local v = group[field];
+			if v and (v == value or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
 				if not t then t = {}; end
-				tinsert(t, setmetatable({g=response}, { __index = group }));
+				tinsert(t, CloneReference(group));
 			else
-				local v = group[field];
-				if v and (v == value or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
+				local response = app:BuildSearchResponse(group.g, field, value);
+				if response then
 					if not t then t = {}; end
-					tinsert(t, CloneReference(group));
+					tinsert(t, setmetatable({g=response}, { __index = group }));
 				end
 			end
 		end
@@ -11104,13 +11106,15 @@ function app:BuildSearchResponseForField(groups, field)
 	if groups then
 		local t;
 		for i,group in ipairs(groups) do
-			local response = app:BuildSearchResponseForField(group.g, field);
-			if response then
-				if not t then t = {}; end
-				tinsert(t, setmetatable({g=response}, { __index = group }));
-			elseif group[field] then
+			if group[field] then
 				if not t then t = {}; end
 				tinsert(t, CloneReference(group));
+			else
+				local response = app:BuildSearchResponseForField(group.g, field);
+				if response then
+					if not t then t = {}; end
+					tinsert(t, setmetatable({g=response}, { __index = group }));
+				end
 			end
 		end
 		return t;
