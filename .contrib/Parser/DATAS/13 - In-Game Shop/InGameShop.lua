@@ -428,7 +428,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { "added 10.1.0.49444", "removed 10.1.0.49801" },	-- Removed from store May 31
 		}),
 		i(200925,	-- Ensemble: Solemn Watchman's Garb
-			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, "removed 10.1.7.51886" } }, {
 			i(190091),	-- Fanciful Corsage
 			i(190728),	-- Gothic Corsage
 			i(190694),	-- Solemn Watchman's Belt
@@ -450,7 +450,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			i(208409),	-- High Scholar's Slippers
 		})),
 		i(210079, -- Sky-Captain's Masquerade Attire
-			bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52301", "removed 10.2.0.99999" } }, {	-- Removed Jan 1st, 2024
+			bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52301", "removed 10.2.0.52649" } }, {	-- Removed Jan 1st, 2024
 			i(210073),	-- Sky-Captain's Masquerade Boots
 			i(210076),	-- Sky-Captain's Masquerade Cape
 			i(210074),	-- Sky-Captain's Masquerade Coat
