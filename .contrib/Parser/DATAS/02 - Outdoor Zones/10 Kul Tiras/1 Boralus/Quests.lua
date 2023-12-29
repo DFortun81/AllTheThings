@@ -6,7 +6,7 @@ local ASPIRANTS_EQUIPMENT_CACHE = i(167744, {	-- Aspirant's Equipment Cache
 		{ "sub", "pvp_gear_base", BFA_TIER, SEASON_CORRUPTED, PVP_ASPIRANT },{"merge"},	-- BFA header > Season 4 header > Aspirant gear header
 		{ "pop" },	-- discard Aspirant / Combatant Gear header
 		{ "pop" },	-- discard item type headers
-		{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+		{ "modID", 47 },	-- blue.  still the wrong iLvl because i can't also apply 2, but it looks better
 	},
 })
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					["isWeekly"] = true,
 					["g"] = {
 						i(167100, {	-- Alliance Champion's Cache
-							["modID"] = 53,	-- ilvl 415
+							["modID"] = 53,	-- iLvl 415
 							["sym"] = {
 								{"select", "questID", 52781 },	-- HQT for the phase of Arathi
 								{"find", "headerID", COMMON_BOSS_DROPS},	-- Find the Common Boss Drop Header.

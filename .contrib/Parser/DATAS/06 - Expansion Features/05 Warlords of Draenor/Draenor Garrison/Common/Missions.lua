@@ -264,7 +264,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114110, {	-- Turbulent Armament
-							--["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
+							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
 								["g"] = {
 									i(115319),	-- Turbulent Axe
 									i(115322),	-- Turbulent Dagger
@@ -277,7 +277,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114078, {	-- Turbulent Choker
-							--["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
+							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
 								["g"] = {
 									i(114477),	-- Arcane Master's Chain
 									i(114476),	-- Beastminder Cabochon
@@ -287,7 +287,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114075, {	-- Turbulent Spaulders
-							--["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
+							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
 								["g"] = {
 									i(114456),	-- Firelash Mantle
 									i(114457),	-- Spireflame Spaulders
@@ -296,7 +296,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114070, {	-- Turbulent Robes
-							--["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
+							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
 								["g"] = {
 									i(114439),	-- Firelash Robes
 									i(114436),	-- Spireflame Chestguard
@@ -305,7 +305,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114069, {	-- Turbulent Bracers
-							--["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
+							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
 								["g"] = {
 									i(114432),	-- Firelash Bracers
 									i(114433),	-- Spireflame Bracers
@@ -314,7 +314,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114071, {	-- Turbulent Treads
-							--["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
+							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
 								["g"] = {
 									i(114440),	-- Firelash Sandls
 									i(114441),	-- Spireflame Boots
@@ -323,7 +323,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114080, {	-- Turbulent Trinket
-							--["description"] = "You must have level 100 active followers that are upgraded to 615 ilvl in order to get missions that reward Turbulent tokens.",
+							--["description"] = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
 								["g"] = {
 									i(114491),	-- Turbulent Emblem
 									i(114489),	-- Turbulent Focusing Crystal
@@ -333,7 +333,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114112, {	-- Grandiose Armament
-							--["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
+							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
 								["g"] = {
 									i(115327),	-- Grandiose Axe
 									i(115330),	-- Grandiose Dagger
@@ -346,7 +346,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114086, {	-- Grandiose Choker
-							--["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
+							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
 								["g"] = {
 									i(114538),	-- Bleak Temple Choker
 									i(114539),	-- Dreamsleep Locket
@@ -356,7 +356,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114085, {	-- Grandiose Spaulders
-							--["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
+							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
 								["g"] = {
 									i(114520),	-- Crazed Bomber's Shoulderguard
 									i(114517),	-- Mantle of Volatile Ice
@@ -365,7 +365,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114083, {	-- Grandiose Robes
-							--["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
+							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
 								["g"] = {
 									i(114497),	-- Chestguard of Determined Resolve
 									i(114499),	-- Crazed Bomber's Breastplate
@@ -374,7 +374,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114082, {	-- Grandiose Bracers
-							--["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
+							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
 								["g"] = {
 									i(114494),	-- Bracers of Determined Resolve
 									i(114493),	-- Bracers of Volatile Ice
@@ -383,7 +383,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114084, {	-- Grandiose Treads
-							--["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
+							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
 								["g"] = {
 									i(114502),	-- Boots of Determined Resolve
 									i(114504),	-- Crazed Bomber's Greaves
@@ -392,7 +392,7 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							i(114087, {	-- Grandiose Trinket
-							--["description"] = "You must have level 100 active followers that are upgraded to 630 ilvl in order to get missions that reward Grandiose tokens.",
+							--["description"] = "You must have level 100 active followers that are upgraded to 630 iLvl in order to get missions that reward Grandiose tokens.",
 								["g"] = {
 									i(114552),	-- Grandiose Carnage
 									i(114549),	-- Grandiose Plans

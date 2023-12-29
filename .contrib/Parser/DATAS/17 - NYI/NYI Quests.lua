@@ -3630,7 +3630,6 @@ root(ROOTS.NeverImplemented, {
 					["g"] = {
 						i(150733, { -- Scroll of Town Portal
 							["b"] = 1,
-							["ilvl"] = 45,
 							["q"] = 1,
 							["spellID"] = 259731,
 						}),
@@ -3701,7 +3700,6 @@ root(ROOTS.NeverImplemented, {
 						i(158709, { -- Refurbished Shredder
 							["b"] = 1,
 							["filterID"] = TOYS,
-							["ilvl"] = 30,
 							["q"] = 3,
 						}),
 					},
@@ -3713,7 +3711,6 @@ root(ROOTS.NeverImplemented, {
 					["g"] = {
 						i(151557, { -- Champion's Strongbox
 							["b"] = 1,
-							["ilvl"] = 100,
 							["q"] = 2,
 						}),
 					},
@@ -3762,7 +3759,6 @@ root(ROOTS.NeverImplemented, {
 					["g"] = {
 						i(151557, { -- Champion's Strongbox
 							["b"] = 1,
-							["ilvl"] = 100,
 							["q"] = 2,
 						}),
 					},
@@ -3777,7 +3773,6 @@ root(ROOTS.NeverImplemented, {
 					["g"] = {
 						i(160054, { -- War-Torn Satchel of Cooperation
 							["b"] = 1,
-							["ilvl"] = 30,
 							["q"] = 3,
 						}),
 					},
@@ -3789,7 +3784,6 @@ root(ROOTS.NeverImplemented, {
 					["g"] = {
 						i(160219, { -- Scroll of Town Portal
 							["b"] = 1,
-							["ilvl"] = 45,
 							["q"] = 1,
 							["spellID"] = 278212,
 						}),
@@ -5324,7 +5318,6 @@ root(ROOTS.NeverImplemented, {
 					["g"] = {
 						i(170077, { -- Gleaming Ashmaul Strongbox
 							["b"] = 1,
-							["ilvl"] = 72,
 							["q"] = 4,
 						}),
 					},
@@ -5336,7 +5329,6 @@ root(ROOTS.NeverImplemented, {
 					["g"] = {
 						i(170077, { -- Gleaming Ashmaul Strongbox
 							["b"] = 1,
-							["ilvl"] = 72,
 							["q"] = 4,
 						}),
 					},

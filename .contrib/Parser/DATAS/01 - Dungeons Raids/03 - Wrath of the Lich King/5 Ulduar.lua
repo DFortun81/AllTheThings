@@ -2225,7 +2225,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							i(45134),	-- Plated Leggings of Ruination
 							i(45135),	-- Boots of Fiery Resolution
 							i(45297),	-- Shimmering Seal
-							i(45296, {	-- Twirling Blades (10 Man, ilvl 232)
+							i(45296, {	-- Twirling Blades (10 Man, iLvl 232)
 								["timeline"] = { "removed 5.0.4" },
 							}),
 						}),

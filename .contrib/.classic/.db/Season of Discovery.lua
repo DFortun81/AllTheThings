@@ -59,7 +59,7 @@ local OnTooltipFor_ACA_SDL = [[function(t)
 			repPerTurnIn = isHuman and 110 or 100;
 			x, n = math.ceil((]] .. FRIENDLY .. [[ - reputation) / repPerTurnIn), math.ceil(]] .. FRIENDLY .. [[ / repPerTurnIn);
 			GameTooltip:AddDoubleLine("A Waylaid Shipment [iLvl 10]", (n - x) .. " / " .. n .. " (" .. x .. ")", 1, 1, 1);
-			GameTooltip:AddLine("PROTIP: Save higher ilvl Supply Shipments until later!", 1, 0.1, 0.1);
+			GameTooltip:AddLine("PROTIP: Save higher iLvl Supply Shipments until later!", 1, 0.1, 0.1);
 		elseif reputation < ]] .. HONORED .. [[ then
 			repPerTurnIn = isHuman and 880 or 880;
 			x, n = math.ceil((]] .. HONORED .. [[ - reputation) / repPerTurnIn), math.ceil(]] .. HONORED .. [[ / repPerTurnIn);

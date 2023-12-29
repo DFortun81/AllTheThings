@@ -147,42 +147,42 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						["description"] = "You can only receive each tier of gear rewards once per week.  Ex. Completing multiple 5 mask runs rewards the next lower tier reward each time.  After all tier rewards are looted for the week no more gear is given.",
 						["g"] = {
 							o(9999891,	{	-- Main Objective Only(420)
-								["description"] = "Rewards ilvl 420 loot.",
+								["description"] = "Rewards iLvl 420 loot.",
 								["questID"] = 57841,
 								["isWeekly"] = true,
 							}),
 							o(9999892,	{	-- Main Objective + 2 bonus
-								["description"] = "Rewards ilvl 430 loot.",
+								["description"] = "Rewards iLvl 430 loot.",
 								["questID"] = 57845,
 								["isWeekly"] = true,
 							}),
 							o(9999893,	{	-- Full Clear
-								["description"] = "Rewards ilvl 445 loot.",
+								["description"] = "Rewards iLvl 445 loot.",
 								["questID"] = 57842,
 								["isWeekly"] = true,
 							}),
 							o(9999894,	{	-- Full Clear + 1 Mask
-								["description"] = "Rewards ilvl 450 loot.",
+								["description"] = "Rewards iLvl 450 loot.",
 								["questID"] = 57846,
 								["isWeekly"] = true,
 							}),
 							o(9999895,	{	-- Full Clear + 2 Masks
-								["description"] = "Rewards ilvl 455 loot.",
+								["description"] = "Rewards iLvl 455 loot.",
 								["questID"] = 57843,
 								["isWeekly"] = true,
 							}),
 							o(9999896,	{	-- Full Clear + 3 Masks
-								["description"] = "Rewards ilvl 460 loot.",
+								["description"] = "Rewards iLvl 460 loot.",
 								["questID"] = 57847,
 								["isWeekly"] = true,
 							}),
 							o(9999897,	{	-- Full Clear + 4 Masks
-								["description"] = "Rewards ilvl 465 loot.",
+								["description"] = "Rewards iLvl 465 loot.",
 								["questID"] = 57844,
 								["isWeekly"] = true,
 							}),
 							o(9999898,	{	-- Full Clear + 5 Masks
-								["description"] = "Rewards ilvl 470 loot.",
+								["description"] = "Rewards iLvl 470 loot.",
 								["questID"] = 57848,
 								["isWeekly"] = true,
 							}),

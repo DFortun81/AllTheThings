@@ -3,7 +3,7 @@
 -----------------------------------------------
 
 root(ROOTS.PVP, pvp(n(-4191, bubbleDownSelf({["u"] = REMOVED_FROM_GAME }, {	-- Tournament Gear
-	["description"] = "These items were available during Warlords of Draenor, but only served as an ilvl booster for players participating in War Games for fun. They could not be transmogged nor used for any purpose other than War Games.",
+	["description"] = "These items were available during Warlords of Draenor, but only served as an iLvl booster for players participating in War Games for fun. They could not be transmogged nor used for any purpose other than War Games.",
 	["groups"] = {
 		i(117714),	-- Tournament Gladiator's Choker of Cruelty
 		i(117915),	-- Tournament Gladiator's Choker of Cruelty
