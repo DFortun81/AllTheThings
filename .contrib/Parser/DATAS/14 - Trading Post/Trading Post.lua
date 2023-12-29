@@ -3,8 +3,7 @@
 -------------------------------------
 local TRADERS_TENDER = 2032;
 MONTHLY_REWARD = createHeader({
-	readable = "Rewards",
-	constant = "REWARDS",
+	readable = "Monthly Reward",
 	icon = [[~_.asset("Interface_Rewards")]],
 	text = {
 		en = [[~QUEST_REWARDS]],
