@@ -273,6 +273,7 @@ local CompletedQuests = setmetatable({}, {
 			t[questID] = true;
 			return true;
 		end
+		return false;
 	end,
 	__newindex = function (t, questID, state)
 		if questID then

@@ -11748,7 +11748,7 @@ local CCFuncs = {
 	end,
 	["SL_SKIP"] = function()
 		-- Threads content becomes unavailable when a player reaches max level
-		if UnitLevel("player") >= 70 then return false end;
+		if UnitLevel("player") >= 70 then return false end
 		-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
 		return IsQuestFlaggedCompleted(62713);
 	end,
