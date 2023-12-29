@@ -1058,9 +1058,7 @@ SoftReserveWindow = app:GetWindow("SoftReserves", {
 	OnUpdate = function(self, ...)
 		-- Update the groups without forcing Debug Mode.
 		local visibilityFilter = app.Modules.Filter.Get.Visible();
-		app.Modules.Filter.Set.Visible();
-		
-		
+		app.Modules.Filter.Set.Visible(true);
 		local groupFilter = app.GroupFilter;
 		app.GroupFilter = app.ReturnTrue;
 		self:DefaultUpdate(...);
