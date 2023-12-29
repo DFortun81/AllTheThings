@@ -57,74 +57,70 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["description"] = "Once you defeat Xavius these will spawn in the room after him."
 				}),
 			})),
-			d(ALL_DIFFICULTIES_RAID, {
+			-- To merge tooltip
+			d(ALL_DIFFICULTIES_RAID, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
-				["groups"] = {
-					header(HEADERS.Achievement, 10818, {	-- Darkbough
-						e(1703, {	-- Nythendra
-							["crs"] = { 102672 },	-- Nythendra
-							["g"] = {
-								i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1] (RECIPE!)
-								i(137748),	-- Vantus Rune Technique: Nythendra [Rank 2] (RECIPE!)
-							},
-						}),
-						e(1744, {	-- Elerethe Renferal
-							["crs"] = { 106087 },	-- Elerethe Renferal
-							["g"] = {
-								i(128611),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 3] (RECIPE!)
-								i(139640),	-- Vantus Rune Technique: Elerethe Renferal [Rank 1] (RECIPE!)
-								i(137752),	-- Vantus Rune Technique: Elerethe Renferal [Rank 2] (RECIPE!)
-							},
-						}),
-						e(1738, {	-- Il'gynoth, Heart of Corruption
-							["crs"] = { 105393 },	--	Il'gynoth, Heart of Corruption
-							["g"] = {
-								i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1] (RECIPE!)
-								i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2] (RECIPE!)
-							},
-						}),
-					}),
-					header(HEADERS.Achievement, 10819, {	-- Tormented Guardians
-						e(1667, {	-- Ursoc
-							["crs"] = { 100497 },	--	Ursoc
-							["g"] = {
-								i(141917),	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 3] (RECIPE!)
-								i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1] (RECIPE!)
-								i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2] (RECIPE!)
-							},
-						}),
-						e(1704, {	-- Dragons of Nightmare
-							["crs"] = {
-								102679,	-- Ysondre
-								102681,	-- Taerar
-								102682,	-- Lethon
-								102683,	-- Emeriss
-							},
-							["g"] = {
-								i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1] (RECIPE!)
-								i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2] (RECIPE!)
-							},
-						}),
-						e(1750, {	-- Cenarius
-							["crs"] = { 104636 },	--	Cenarius
-							["g"] = {
-								i(127934),	-- Recipe: Spirit Cauldron [Rank 2] (RECIPE!)
-								i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1] (RECIPE!)
-								i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2] (RECIPE!)
-							},
-						}),
-					}),
-					header(HEADERS.Achievement, 10820, {	-- Rift of Aln
-						e(1726, {	-- Xavius
-							["crs"] = { 103769 },	--	Xavius
-							["g"] = {
-								i(128612),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 3] (RECIPE!)
-								i(139639),	-- Vantus Rune Technique: Xavius [Rank 1] (RECIPE!)
-								i(137751),	-- Vantus Rune Technique: Xavius [Rank 2] (RECIPE!)
-							},
-						}),
-					}),
-				},
+				["coord"] = { 63.7, 55.0, LEGION_DALARAN },
+			}),
+			d(ALL_DIFFICULTIES_RAID, {
+				e(1703, {	-- Nythendra
+					["crs"] = { 102672 },	-- Nythendra
+					["g"] = {
+						i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1] (RECIPE!)
+						i(137748),	-- Vantus Rune Technique: Nythendra [Rank 2] (RECIPE!)
+					},
+				}),
+				e(1744, {	-- Elerethe Renferal
+					["crs"] = { 106087 },	-- Elerethe Renferal
+					["g"] = {
+						i(128611),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 3] (RECIPE!)
+						i(139640),	-- Vantus Rune Technique: Elerethe Renferal [Rank 1] (RECIPE!)
+						i(137752),	-- Vantus Rune Technique: Elerethe Renferal [Rank 2] (RECIPE!)
+					},
+				}),
+				e(1738, {	-- Il'gynoth, Heart of Corruption
+					["crs"] = { 105393 },	--	Il'gynoth, Heart of Corruption
+					["g"] = {
+						i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1] (RECIPE!)
+						i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2] (RECIPE!)
+					},
+				}),
+				e(1667, {	-- Ursoc
+					["crs"] = { 100497 },	--	Ursoc
+					["g"] = {
+						i(141917),	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 3] (RECIPE!)
+						i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1] (RECIPE!)
+						i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2] (RECIPE!)
+					},
+				}),
+				e(1704, {	-- Dragons of Nightmare
+					["crs"] = {
+						102679,	-- Ysondre
+						102681,	-- Taerar
+						102682,	-- Lethon
+						102683,	-- Emeriss
+					},
+					["g"] = {
+						i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1] (RECIPE!)
+						i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2] (RECIPE!)
+					},
+				}),
+				e(1750, {	-- Cenarius
+					["crs"] = { 104636 },	--	Cenarius
+					["g"] = {
+						i(127934),	-- Recipe: Spirit Cauldron [Rank 2] (RECIPE!)
+						i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1] (RECIPE!)
+						i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2] (RECIPE!)
+					},
+				}),
+				e(1726, {	-- Xavius
+					["crs"] = { 103769 },	--	Xavius
+					["g"] = {
+						i(128612),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 3] (RECIPE!)
+						i(139639),	-- Vantus Rune Technique: Xavius [Rank 1] (RECIPE!)
+						i(137751),	-- Vantus Rune Technique: Xavius [Rank 2] (RECIPE!)
+					},
+				}),
 			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = { 111246 },	-- Archmage Timear
