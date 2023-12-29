@@ -1,7 +1,7 @@
 ----------------------------------------------
 --   P E T    B A T T L E    M O D U L E    --
 ----------------------------------------------
-root(ROOTS.PetBattles, {
+root(ROOTS.PetBattles, petbattle({
 	n(ACHIEVEMENTS, {
 		ach(6570, {	-- All Growns Up! (Lvl 25)
 			ach(6569),	-- Old Timer (Lvl 20)
@@ -13,7 +13,7 @@ root(ROOTS.PetBattles, {
 		ach(6610, {	-- All Pets Allowed (Lvl 25)
 			ach(6609),	-- No Favorites (Lvl 10)
 		}),
-		petbattle(ach(7465)),		-- An Uncommon Find
+		ach(7465),		-- An Uncommon Find
 		ach(6622,  {	-- Big City Pet Brawler
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {
@@ -35,7 +35,7 @@ root(ROOTS.PetBattles, {
 			crit(19851),	-- Undercity
 			crit(19852),	-- Silvermoon City
 		}),
-		petbattle(ach(6611, {		-- Continental Tamer
+		ach(6611, {		-- Continental Tamer
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				6614,	-- Outland Tamer
@@ -44,8 +44,8 @@ root(ROOTS.PetBattles, {
 				6613,	-- Eastern Kingdoms Tamer
 				6616,	-- Pandaria Tamer
 			}},
-		})),
-		petbattle(ach(8397, {		-- Crazy for Cats (need to add locations to comments for future use - wowhead did not link)
+		}),
+		ach(8397, {		-- Crazy for Cats (need to add locations to comments for future use - wowhead did not link)
 			title_gendered(252, 240),	-- the Crazy Cat Man / the Crazy Cat Lady
 			--title(240),	-- %s the Crazy Cat Lady
 			--title(252),	-- %s the Crazy Cat Man
@@ -75,7 +75,7 @@ root(ROOTS.PetBattles, {
 			crit(23594),		-- White Kitten
 			crit(23595),		-- Winterspring Cub
 			crit(23600),		-- Xu-Fu, Cub of Xuen
-		})),
+		}),
 		pvp(ach(8301,  {	-- Deadly Pet Brawler (1000)
 			title(227),	-- Trainer
 			ach(8300, {	-- Brutal Pet Brawler (250)
@@ -84,7 +84,7 @@ root(ROOTS.PetBattles, {
 			ach(8298),	-- Vengeful Pet Brawler (50)
 			ach(8297),	-- Merciless Pet Brawler (10)
 		})),
-		petbattle(ach(6613, {		-- Eastern Kingdoms Tamer
+		ach(6613, {		-- Eastern Kingdoms Tamer
 			crit(21419),		-- Arathi Highlands
 			crit(21421),		-- Badlands
 			crit(21422),		-- Blasted Lands
@@ -109,8 +109,8 @@ root(ROOTS.PetBattles, {
 			crit(21446),		-- Western Plaguelands
 			crit(21384),		-- Westfall
 			crit(21447),		-- Wetlands
-		})),
-		petbattle(ach(8080)),		-- Fabled Pandaren Tamer
+		}),
+		ach(8080),		-- Fabled Pandaren Tamer
 		ach(13279, {	-- Family Battler
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {
@@ -140,7 +140,7 @@ root(ROOTS.PetBattles, {
 				ach(13278),	-- Not Quite Dead Yet
 			},
 		}),
-		pvp(petbattle(ach(12290, {	-- Family Brawler
+		pvp(ach(12290, {	-- Family Brawler
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {
 				{"meta_achievement",
@@ -168,8 +168,8 @@ root(ROOTS.PetBattles, {
 				ach(12287),	-- Dragonkin Brawler
 				ach(12289),	-- Humanoid Brawler
 			},
-		}))),
-		petbattle(ach(6608, {		-- Family Reunion
+		})),
+		ach(6608, {		-- Family Reunion
 			crit(19750),		-- Humanoid
 			crit(19751),		-- Dragonkin
 			crit(19752),		-- Undead
@@ -180,11 +180,11 @@ root(ROOTS.PetBattles, {
 			crit(19757),		-- Beast
 			crit(19758),		-- Aquatic
 			crit(19759),		-- Mechanical
-		})),
-		petbattle(ach(7908, {		-- I Choose You
+		}),
+		ach(7908, {		-- I Choose You
 			i(92744),	-- Heavy Sack of Gold
-		})),
-		petbattle(ach(6612, {		-- Kalimdor Tamer
+		}),
+		ach(6612, {		-- Kalimdor Tamer
 			crit(21448),		-- Ashenvale
 			crit(21449),		-- Azshara
 			crit(21450),		-- Azuremyst Isle
@@ -206,7 +206,7 @@ root(ROOTS.PetBattles, {
 			crit(21487),		-- Uldum
 			crit(21466),		-- Un'Goro Crater
 			crit(21467),		-- Winterspring
-		})),
+		}),
 		ach(6592, {    -- Legendary Pet Battler (5000)
 			ach(6591),    -- Grand Master Pet Battler (1000)
 			ach(6462),    -- Master Pet Battler (250)
@@ -220,7 +220,7 @@ root(ROOTS.PetBattles, {
 			ach(6595),    -- Pet Brawler (10)
 		})),
 		pvp(ach(6620)),	-- No Time To Heal
-		petbattle(ach(6615, {		-- Northrend Tamer
+		ach(6615, {		-- Northrend Tamer
 			crit(21477),		-- Borean Tundra
 			crit(21478),		-- Crystalsong Forest
 			crit(21479),		-- Dragonblight
@@ -230,8 +230,8 @@ root(ROOTS.PetBattles, {
 			crit(21483),		-- Sholazar Basin
 			crit(21484),		-- The Storm Peaks
 			crit(21485),		-- Zul'Drak
-		})),
-		petbattle(ach(6614, {		-- Outland Tamer
+		}),
+		ach(6614, {		-- Outland Tamer
 			crit(21468),		-- Blade's Edge Mountains
 			crit(21469),		-- Hellfire Peninsula
 			crit(21470),		-- Nagrand
@@ -239,19 +239,19 @@ root(ROOTS.PetBattles, {
 			crit(21472),		-- Shadowmoon Valley
 			crit(21471),		-- Terokkar Forest
 			crit(21476),		-- Zangarmarsh
-		})),
+		}),
 		ach(9070),	-- Overstuffed
-		petbattle(ach(7936)),		-- Pandaren Spirit Tamer
+		ach(7936),		-- Pandaren Spirit Tamer
 		ach(12927),		-- Polished Pet Charmer
 		ach(6582, {	-- Pro Pet Mob (75)
 			i(88147),	-- Singing Cricket (PET!)
 			ach(6581),	-- Pro Pet Crew (30)
 			ach(6578),	-- Pro Pet Group (15)
 		}),
-		petbattle(ach(7464, {		-- Quality & Quantity (50)
+		ach(7464, {		-- Quality & Quantity (50)
 			ach(7463),		-- High Quality (10)
 			ach(7462),		-- A Rare Catch (1)
-		})),
+		}),
 		ach(6583, {	-- Rookie Pet Mob (75)
 			ach(6580),	-- Rookie Pet Crew (30)
 			ach(6579),	-- Rookie Pet Group (15)
@@ -269,17 +269,17 @@ root(ROOTS.PetBattles, {
 			crit(19843),	-- Mechanical
 			crit(19844),	-- Undead
 		}),
-		petbattle(ach(6571)),		-- That Was Close!
-		petbattle(ach(8348,  {	-- The Longest Day
+		ach(6571),		-- That Was Close!
+		ach(8348,  {	-- The Longest Day
 		--	i(98715),	-- Marked Flawless Battle-Stone
 			["sym"] = {{ "achievement_criteria" }},
-		})),
-		petbattle(ach(7521,  {	-- Time to Open a Pet Store [400)
+		}),
+		ach(7521,  {	-- Time to Open a Pet Store [400)
 			i(89686),	-- Jade Tentacle (PET!)
 			ach(6600),	-- Ultimate Trainer [300)
 			ach(7483),	-- Battle Master [200)
 			ach(7482),	-- Trainer Extraordinaire [100)
-		})),
+		}),
 		ach(6619, {	-- Win Streak (25)
 			ach(6618),	-- On A Roll (10)
 		}),
@@ -354,58 +354,58 @@ root(ROOTS.PetBattles, {
 			ach(6559),	-- Traveling Pet Mauler (30)
 			ach(6558),	-- Local Pet Mauler (10)
 		}),
-		petbattle(ach(7436, {		-- Zen Pet Hunter (200)
+		ach(7436, {		-- Zen Pet Hunter (200)
 			ach(6557),		-- Master Pet Hunter (100)
 			ach(6556, {		-- Going to Need More Traps (50)
 				pa(77),			-- Strong Trap
 			}),
 			ach(6555),		-- Building a Team (25)
 			ach(6554),		-- He's Mine! (10)
-		})),
-		petbattle(ach(15644, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0, "removed 10.0.2.47120" } }, {	-- Good Things Come in Small Packages (2000)
+		}),
+		ach(15644, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0, "removed 10.0.2.47120" } }, {	-- Good Things Come in Small Packages (2000)
 			i(191946),	-- Mister Muskoxeles (PET!)
-		}))),
-		petbattle(ach(15643,  bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- What Can I Say? They Love Me. (1750)
+		})),
+		ach(15643,  bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- What Can I Say? They Love Me. (1750)
 			i(191932),	-- Violet Violence (PET!)
-		}))),
-		petbattle(ach(15642,  bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- Proven Pet Parent (1500)
+		})),
+		ach(15642,  bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- Proven Pet Parent (1500)
 			i(191936),	-- Secretive Frogduck (PET!)
-		}))),
-		petbattle(ach(15641,  bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- Many More Mini Minions (1250)
+		})),
+		ach(15641,  bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- Many More Mini Minions (1250)
 			i(191941),	-- Crystalline Mini-Monster (PET!)
-		}))),
-		petbattle(ach(12958, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {	-- Master of Minions (1000)
+		})),
+		ach(12958, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {	-- Master of Minions (1000)
 			i(163218),		-- Hearthy (PET!)
-		}))),
-		petbattle(ach(12992, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {	-- Pet Emporium (800)
+		})),
+		ach(12992, bubbleDownSelf({ ["timeline"] = { "added 8.0.1" } }, {	-- Pet Emporium (800)
 			i(163220),		-- Rooter (PET!)
-		}))),
-		petbattle(ach(9643, bubbleDownSelf({ ["timeline"] = { "added 6.0.1" } }, {	-- So. Many. Pets. (600)
+		})),
+		ach(9643, bubbleDownSelf({ ["timeline"] = { "added 6.0.1" } }, {	-- So. Many. Pets. (600)
 			i(118577),		-- Stormwing (PET!)
-		}))),
-		petbattle(ach(7501, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {		-- That's a Lot of Pet Food (400)
+		})),
+		ach(7501, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {		-- That's a Lot of Pet Food (400)
 			i(89736),		-- Venus (PET!)
-		}))),
-		petbattle(ach(7500, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {		-- Going to Need More Leashes(250)
+		})),
+		ach(7500, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {		-- Going to Need More Leashes(250)
 			i(85578),		-- Feral Vermling (PET!)
-		}))),
-		petbattle(ach(5875, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {		-- Littlest Pet Shop (150)
+		})),
+		ach(5875, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {		-- Littlest Pet Shop (150)
 			i(54810),		-- Celestial Dragon (PET!)
-		}))),
-		petbattle(ach(5877, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {		-- Menagerie (125)
+		})),
+		ach(5877, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {		-- Menagerie (125)
 			i(71387),		-- Brilliant Kaliri (PET!)
-		}))),
-		petbattle(ach(5876, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {		-- Petting Zoo (100)
+		})),
+		ach(5876, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {		-- Petting Zoo (100)
 			i(71140),		-- Nuts (PET!)
-		}))),
-		petbattle(ach(2516, bubbleDownSelf({ ["timeline"] = { ADDED_3_1_0 } }, {		-- Lil' Game Hunter (75)
+		})),
+		ach(2516, bubbleDownSelf({ ["timeline"] = { ADDED_3_1_0 } }, {		-- Lil' Game Hunter (75)
 			i(44841),		-- Little Fawn (PET!)
-		}))),
-		petbattle(ach(1250, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {		-- Shop Smart, Shop Pet...Smart (50)
+		})),
+		ach(1250, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {		-- Shop Smart, Shop Pet...Smart (50)
 			i(40653),		-- Stinker (PET!)
-		}))),
-		petbattle(ach(1248, {["timeline"] = { "added 3.0.2" }})),		-- Plethora of Pets (25)
-		petbattle(ach(15, {["timeline"] = { "added 3.0.2" }})),		-- Plenty of Pets (15)
-		petbattle(ach(1017, {["timeline"] = { "added 3.0.2" }})),		-- Can I Keep Him? (1)
+		})),
+		ach(1248, {["timeline"] = { "added 3.0.2" }}),		-- Plethora of Pets (25)
+		ach(15, {["timeline"] = { "added 3.0.2" }}),		-- Plenty of Pets (15)
+		ach(1017, {["timeline"] = { "added 3.0.2" }}),		-- Can I Keep Him? (1)
 	}),
-});
+}));
