@@ -181,6 +181,18 @@ namespace ATT
                 Framework.CurrentParseStage = ParseStage.PreProcessingSetup;
                 try
                 {
+                    // CustomHeaderIDsByKey
+                    // Try to grab the contents of the global variable "HeaderAssignments".
+                    var HeaderAssignments = lua.GetTable("HeaderAssignments");
+                    if (HeaderAssignments != null)
+                    {
+                        var assignments = Framework.ParseAsDictionary<string>(HeaderAssignments);
+                        foreach (var pair in assignments)
+                        {
+                            Framework.CustomHeaderIDsByKey[pair.Key] = Convert.ToInt64(pair.Value);
+                        }
+                    }
+
                     // Try to grab the contents of the global variable "CustomHeaders".
                     var customHeaders = lua.GetTable("CustomHeaders");
                     if (customHeaders != null)

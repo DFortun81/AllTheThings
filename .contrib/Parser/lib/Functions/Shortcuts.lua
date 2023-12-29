@@ -1181,7 +1181,14 @@ un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable w
 
 -- Create a Header. Returns a UNIQUE ID, starting at 0.
 (function()
-local customHeaders,nextHeaderID = {},-1000000;	-- TODO: Change this to 0.
+if not NextHeaderID then
+	-- Once we've eliminated all of the old style NPC IDs, we can change this value and
+	-- delete the Dynamic Header IDs file to reassign easier to manage header IDs.
+	NextHeaderID = -1000000; -- TODO: Change this to 0. (when the above task is done)
+	HeaderAssignments = {};
+end
+local customHeaders = {};
+local customHeadersByReadable, customHeadersByConstant = {}, {};
 CustomHeaders = customHeaders;	-- This is global, so that it can be found by Parser!
 local concatKeyPairs = function(t)
 	local keys = {};
@@ -1215,6 +1222,18 @@ createHeader = function(data)
 	elseif not (data.text and (type(data.text) == "string" or (type(data.text) == "table" and data.text.en))) then
 		print("INVALID HEADER", data.readable, data.text);
 	else
+		if data.constant then
+			if customHeadersByConstant[data.constant] then
+				error("ERROR: HEADER CONSTANT " .. data.constant .. " ALREADY ASSIGNED TO " .. customHeadersByConstant[data.constant].text.en .. ". Please double check that the header definitions are unique or reuse the same header.");
+			else
+				customHeadersByConstant[data.constant] = data;
+			end
+		end
+		if customHeadersByReadable[data.readable] then
+			error("ERROR: HEADER READABLE " .. data.readable .. " ALREADY ASSIGNED TO " .. customHeadersByReadable[data.readable].text.en .. ". Please double check that the header definitions are unique or reuse the same header.");
+		else
+			customHeadersByReadable[data.readable] = data;
+		end
 		if data.eventSchedule then
 			local schedule = "{";
 			local currentDate = os.date("*t");
@@ -1373,10 +1392,18 @@ createHeader = function(data)
 			end
 			data.eventSchedule = schedule .. "\n}";
 		end
-
-		local headerID = nextHeaderID;
+		
+		-- Try to find the headerID assignment from the readable table.
+		local headerID = HeaderAssignments[data.readable];
+		if not headerID then
+			headerID = NextHeaderID;
+			NextHeaderID = NextHeaderID - 1;
+		end
+		if customHeaders[headerID] then
+			error("ERROR: HEADER ID " .. headerID .. " ALREADY ASSIGNED TO " .. customHeaders[headerID].readable .. ", but attempting to assign to " .. data.readable .. ". Please double check that the header definitions are different");
+			return;
+		end
 		customHeaders[headerID] = data;
-		nextHeaderID = nextHeaderID - 1;
 		data.filepath = CurrentSubFileName or CurrentFileName;
 		--print("HEADER", headerID .. ":", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
 		return headerID;
