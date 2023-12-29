@@ -433,6 +433,9 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["g"] = {
+					i(194450),	-- Fluffy Fur (QI!)
+				},
 			}),
 			q(66899, {	-- Fuzzy Legs
 				["description"] = "Requires 25 Skill.",

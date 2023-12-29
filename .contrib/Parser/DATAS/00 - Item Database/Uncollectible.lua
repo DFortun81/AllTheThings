@@ -578,11 +578,13 @@ i(200685);	-- Enchanted Compass
 i(200764);	-- Slimy Shinies
 i(200768);	-- Assorted Salamanther Lures
 i(200769);	-- Ceramic Shards
+i(200770);	-- A Brief History of Azeroth
 i(200772);	-- Knowledge Discs
 i(200773);	-- Otherworldly Artifact
 i(200777);	-- Obsidian Shards
 i(200778);	-- Lava Blowing for Dummies
 i(200780);	-- Dragon Horns
+i(200783);	-- Adorned Ohunan Jess
 i(200792);	-- Taxidermied Catch
 i(200802);	-- Signet of the Dragonflights
 i(200806);	-- Woodcarving Stone
@@ -677,6 +679,7 @@ i(193389);	-- Adamantine Core
 i(198979);	-- Time Capsule Letter
 i(199206);	-- Shattered Adamant Scales
 i(199476);	-- Singed Cloth Scraps
+i(200451);	-- Deep Sea Star
 i(200105);	-- Muck Covered Flotsam
 i(200106);	-- Slimy Old Boot
 i(200596);	-- Letter from Thaelin Darkanvil
@@ -837,7 +840,6 @@ i(204437);	-- Drakeforged Armaments
 i(204694);	-- Greater Flamesight Rune
 i(204713);	-- Sundered Flame Expedition Notes
 i(204792);	-- Nightlight Conkerbell Sample
-i(204794);	-- Whelkshell Crystals
 i(204801);	-- Gelcap Spores
 i(204803);	-- Echoed Lurker Flesh
 i(204817);	-- Underlight Cocoon Fibers

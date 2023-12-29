@@ -3923,6 +3923,9 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["g"] = {
+					i(201835),	-- Draconic Scroll (QI!)
+				},
 			}),
 			q(66943, {	-- Wood for Writing
 				["description"] = "Requires 25 Skill.",

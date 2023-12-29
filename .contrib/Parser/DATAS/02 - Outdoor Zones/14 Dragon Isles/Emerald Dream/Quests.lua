@@ -523,7 +523,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["sourceQuests"] = { 77329 },	-- Auspicious Gathering (TODO: may be required finishing 76213 in addition?)
 					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind
 					["races"] = { NIGHTELF },
-					["coord"] = { 50.8, 61.4, 2239 },	-- Amirdrassil
+					["coord"] = { 50.8, 61.4, AMIRDRASSIL },
 					["g"] = {
 						i(209604, {	-- Ensemble: Raiment of Amirdrassi
 							i(209591),	-- Wristbands of Chosen Renewal
@@ -540,7 +540,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				q(77200, {	-- Offerings for the Well
 					["sourceQuests"] = { 77329 },	-- Auspicious Gathering
 					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind
-					["coord"] = { 50.8, 61.4, 2239 },	-- Amirdrassil
+					["coord"] = { 50.8, 61.4, AMIRDRASSIL },
 					["g"] = {
 						i(208230),	-- Anaya's Pendant (QI!)
 						i(208232),	-- Singed Darnassian Tabard (QI!)
@@ -551,17 +551,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				q(76280, {	-- New Moon
 					["sourceQuests"] = { 77200 },	-- Offerings for the Well
 					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind
-					["coord"] = { 50.8, 61.4, 2239 },	-- Amirdrassil
+					["coord"] = { 50.8, 61.4, AMIRDRASSIL },
 				}),
 				q(76281, {	-- Something Worth Celebrating
 					["sourceQuests"] = { 76280 },	-- New Moon
 					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind
-					["coord"] = { 50.8, 61.5, 2239 },	-- Amirdrassil
+					["coord"] = { 50.8, 61.5, AMIRDRASSIL },
 				}),
 				q(76282, {	-- A Disquieting Feeling
 					["sourceQuests"] = { 76280 },	-- New Moon (TODO: 76281 is required for phase?)
 					["provider"] = { "n", 209042 },	-- Kalecgos
-					["coord"] = { 54.2, 57.9, 2239 },	-- Amirdrassil
+					["coord"] = { 54.2, 57.9, AMIRDRASSIL },
 					["g"] = {
 						i(209316),	-- Goat's Milk in a Skull Mug (QI!)
 						i(209318),	-- Dalaran Dazzler (QI!)
@@ -580,12 +580,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				q(77781, {	-- A Different Enthusiasm
 					["sourceQuests"] = { 76280 },	-- New Moon (TODO: 76281 is required for phase?)
 					["provider"] = { "n", 206849 },	-- Merithra of the Dream
-					["coord"] = { 54.2, 57.9, 2239 },	-- Amirdrassil
+					["coord"] = { 54.2, 57.9, AMIRDRASSIL },
 				}),
 				q(76283, {	-- Andu-falah-dor
 					["sourceQuests"] = { 76281 },	-- New Moon (TOD): 76282 & 77781 also required?)
 					["provider"] = { "n", 206849 },	-- Merithra of the Dream
-					["coord"] = { 54.2, 57.9, 2239 },	-- Amirdrassil
+					["coord"] = { 54.2, 57.9, AMIRDRASSIL },
 					["g"] = {
 						i(210920),	-- Gift of Amirdrassil [2.5k Dream Warden rep]
 					},

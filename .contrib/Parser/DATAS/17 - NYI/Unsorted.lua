@@ -1544,7 +1544,6 @@ root(ROOTS.Unsorted, {
 				i(192688),	-- Cracked Stone Bracers
 				i(201216),	-- Crumbled Elemental Spark
 				i(200532),	-- Damaged Qiraji Ring
-				i(200451),	-- Deep Sea Star
 				i(193420),	-- Depleted Mana Stone
 				i(192698),	-- Depleted Titan Training Matrix
 				i(201197),	-- Dream Journal
@@ -1766,14 +1765,11 @@ root(ROOTS.Unsorted, {
 				i(194719),	-- [DEPRECATED]Illusionary Coin
 				i(194706),	-- [DEPRECATED]Illusionary Key
 				i(192600),	-- [DNT][PH] Meat
-				i(200770),	-- A Brief History of Azeroth
 				i(200264),	-- A Steamy Romance Novel: The Lusty Draconian Mage
 				i(200282),	-- A Steamy Romance Novel: The Lusty Draconian Mage
 				i(196584),	-- Acorn Milk
-				i(200783),	-- Adorned Ohunan Jess
 				i(191667),	-- Aged Key
 				i(200804),	-- Ancestor's Scales
-				i(199105),	-- Ancheevy
 				i(194689),	-- Anchovy Crisps
 				i(195455),	-- Argali Cheese
 				i(195459),	-- Argali Milk
@@ -1837,7 +1833,6 @@ root(ROOTS.Unsorted, {
 				i(200805),	-- Fallen Watcher Remains
 				i(200476),	-- Fallingwater Overlook VIP Entry Pass
 				i(199185),	-- Fanciful Strings
-				i(200695),	-- Fangtooth Petals
 				i(195460),	-- Fermented Musken Milk
 				i(198674),	-- Filled Life Pools Vial
 				i(201427),	-- Fleeting Sands
@@ -1881,7 +1876,6 @@ root(ROOTS.Unsorted, {
 				i(194677),	-- Marvelous Mood Ring
 				i(200588),	-- Meaty Stem
 				i(192054),	-- Medallion of a Fallen Friend
-				i(200699),	-- Milkweed Fibers
 				i(198666),	-- Milky Snapflower
 				i(194682),	-- Mother's Gift
 				i(194707),	-- Myridian Report
@@ -1955,7 +1949,6 @@ root(ROOTS.Unsorted, {
 				i(200812),	-- Unmelting Crystalline Structure
 				i(198453),	-- Unstable Azerite Grenade
 				i(200951),	-- Valdrakken Critter Snacks
-				i(200703),	-- Vine Flower Fibers
 				i(200870),	-- Vorquin Essence
 				i(194688),	-- Vorquin Filet
 				i(201438),	-- Weary Sands

@@ -278,7 +278,6 @@ root(ROOTS.NeverImplemented, {
 				i(191788),	-- Field Sampling Tool
 				i(193624),	-- Fireproof Gear
 				i(193856),	-- Flowery's Rake
-				i(194450),	-- Fluffy Fur
 				i(192079),	-- Fossil Fragments
 				i(192480),	-- Fragmented Record Rubbing
 				i(191671),	-- Fragmented Tuskarr Effigy
@@ -536,7 +535,6 @@ root(ROOTS.NeverImplemented, {
 				--- Might Appear In Game ---
 				i(199178),	-- Bronze Horn Flower
 				i(191309),	-- Crystal Flakes
-				i(201835),	-- Draconic Scroll
 				i(199179),	-- Dragon Foil
 				i(199180),	-- Dragon's Blood Berry
 				i(201819),	-- Earthen Sample

@@ -47,6 +47,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				filter(REAGENTS, {
 					i(204292),	-- "Volcano" Duck
+					i(199105),	-- Ancheevy
 					i(199212),	-- Clubfish
 					i(204299),	-- Dark Thaldraszian Cocoa Powder
 					i(204286),	-- Deepsquid Ink

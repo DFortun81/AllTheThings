@@ -354,6 +354,9 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["provider"] = { "n", 203516 },	-- Kayann
 				["coord"] = { 36.5, 62.5, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
+				["g"] = {
+					i(204794),	-- Whelkshell Crystals (QI!)
+				},
 			}),
 			q(75602, {	-- Chips off the Old Crystal Block
 				["provider"] = { "n", 203516 },	-- Kayann
