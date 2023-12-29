@@ -277,8 +277,12 @@ local function RefreshCollections()
 	-- for the first auto-refresh, don't actually print to chat since some users don't like that auto-chat on login
 	local print = app.__FirstRefresh and app.EmptyFunction or app.print;
 	app.__FirstRefresh = nil;
+	if InCombatLockdown() then
+		print(app.L.REFRESHING_COLLECTION,"(",COMBAT,")");
+	else
+		print(app.L.REFRESHING_COLLECTION);
+	end
 	while InCombatLockdown() do coroutine.yield(); end
-	print(app.L["REFRESHING_COLLECTION"]);
 
 	-- Harvest Title Collections
 	local acctTitles, charTitles, charGuid = ATTAccountWideData.Titles, {}, app.GUID;
@@ -382,7 +386,7 @@ local function RefreshCollections()
 	coroutine.yield();
 	FixWrongAccountWideQuests(ATTAccountWideData);
 	coroutine.yield();
-	
+
 	-- Execute the OnRefreshCollections handlers.
 	for i,handler in ipairs(app.EventHandlers.OnRefreshCollections) do
 		handler();
@@ -408,7 +412,7 @@ local function RefreshCollections()
 	while app.Processing_RefreshData do coroutine.yield(); end
 
 	-- Report success once refresh is done
-	print(app.L["DONE_REFRESHING"]);
+	print(app.L.DONE_REFRESHING);
 end
 app.RefreshCollections = function()
 	StartCoroutine("RefreshingCollections", RefreshCollections);
