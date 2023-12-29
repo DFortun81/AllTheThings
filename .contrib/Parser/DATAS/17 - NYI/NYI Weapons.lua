@@ -146,11 +146,6 @@ root(ROOTS.NeverImplemented, {
 				i(17733),	-- Fist of Stone
 				i(16792),	-- Giant Club
 			}),
-			tier(BFA_TIER, {
-				tier(BFA_TIER, 0.1, {
-					i(161118),	-- Marrow Shatter
-				}),
-			}),
 			tier(DF_TIER, {
 				tier(DF_TIER, 0.01, {
 					i(189688),	-- 10.0 Dungeon Template - Mace1H - Agi - Weapon
@@ -981,15 +976,6 @@ root(ROOTS.NeverImplemented, {
 		tier(SL_TIER, {
 			inst(1193, {	-- Sanctum of Domination
 				i(181374),	-- Sylvanas Shadowlands Bow
-				i(186414, {	-- Rae'shalare, Death's Whisper (LFR)
-					["bonusID"] = 451,
-				}),
-				i(186414, {	-- Rae'shalare, Death's Whisper (Heroic)
-					["bonusID"] = 1,
-				}),
-				i(186414, {	-- Rae'shalare, Death's Whisper (Mythic)
-					["bonusID"] = 450,
-				}),
 			}),
 			i(182350),	-- Ardenweald Raid Mace STR
 			i(180152),	-- Drust 2H Axe

@@ -1844,6 +1844,362 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				})),
 			}))),
+			pvp(header(HEADERS.Achievement, SEASON_VERDANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {
+				--[[
+				n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {	-- "Tier Slots"
+					cl(DEATHKNIGHT, {
+						i(207203),	-- Casket of the Risen Nightmare
+						i(207199),	-- Greaves of the Risen Nightmare
+						i(207200),	-- Piercing Gaze of the Risen Nightmare
+						i(207198),	-- Skewers of the Risen Nightmare
+						i(207201),	-- Thorns of the Risen Nightmare
+					}),
+					cl(DEMONHUNTER, {
+						i(207266),	-- Screaming Torchfiend's Binding
+						i(207262),	-- Screaming Torchfiend's Blazewraps
+						i(207263),	-- Screaming Torchfiend's Burning Scowl
+						i(207264),	-- Screaming Torchfiend's Grasp
+						i(207261),	-- Screaming Torchfiend's Horned Memento
+					}),
+					cl(DRUID, {
+						i(207254),	-- Benevolent Embersage's Casque
+						i(207253),	-- Benevolent Embersage's Leggings
+						i(207257),	-- Benevolent Embersage's Robe
+						i(207255),	-- Benevolent Embersage's Talons
+						i(207252),	-- Benevolent Embersage's Wisdom
+					}),
+					cl(EVOKER, {
+						i(207226),	-- Weyrnkeeper's Timeless Breeches
+						i(207228),	-- Weyrnkeeper's Timeless Clawguards
+						i(207227),	-- Weyrnkeeper's Timeless Dracoif
+						i(207230),	-- Weyrnkeeper's Timeless Raiment
+						i(207225),	-- Weyrnkeeper's Timeless Sandbrace
+					}),
+					cl(HUNTER, {
+						i(207216),	-- Blazing Dreamstalker's Finest Hunt
+						i(207218),	-- Blazing Dreamstalker's Flamewaker Horns
+						i(207221),	-- Blazing Dreamstalker's Scaled Hauberk
+						i(207217),	-- Blazing Dreamstalker's Shellgreaves
+						i(207219),	-- Blazing Dreamstalker's Skinners
+					}),
+					cl(MAGE, {
+						i(207290),	-- Wayward Chronomancer's Chronocap
+						i(207291),	-- Wayward Chronomancer's Gloves
+						i(207288),	-- Wayward Chronomancer's Metronomes
+						i(207289),	-- Wayward Chronomancer's Pantaloons
+						i(207293),	-- Wayward Chronomancer's Patchwork
+					}),
+					cl(MONK, {
+						i(207243),	-- Mystic Heron's Hopeful Effigy
+						i(207244),	-- Mystic Heron's Waders
+						i(207245),	-- Mystic Heron's Hatsuburi
+						i(207246),	-- Mystic Heron's Glovebills
+						i(207248),	-- Mystic Heron's Burdens
+					}),
+					cl(PALADIN, {
+						i(207189),	-- Zealous Pyreknight's Ailettes
+						i(207191),	-- Zealous Pyreknight's Barbute
+						i(207190),	-- Zealous Pyreknight's Cuisses
+						i(207192),	-- Zealous Pyreknight's Jeweled Gauntlets
+						i(207194),	-- Zealous Pyreknight's Warplate
+					}),
+					cl(PRIEST, {
+						i(207284),	-- Cassock of Lunar Communion
+						i(207281),	-- Crest of Lunar Communion
+						i(207280),	-- Leggings of Lunar Communion
+						i(207282),	-- Touch of Lunar Communion
+						i(207279),	-- Shoulderguardians of Lunar Communion
+					}),
+					cl(ROGUE, {
+						i(207234),	-- Lucid Shadewalker's Bladed Spaulders
+						i(207235),	-- Lucid Shadewalker's Chausses
+						i(207237),	-- Lucid Shadewalker's Clawgrips
+						i(207239),	-- Lucid Shadewalker's Cuirass
+						i(207236),	-- Lucid Shadewalker's Deathmask
+					}),
+					cl(SHAMAN, {
+						i(207207),	-- Greatwolf Outcast's Companions
+						i(207208),	-- Greatwolf Outcast's Fur-Lined Kilt
+						i(207210),	-- Greatwolf Outcast's Grips
+						i(207212),	-- Greatwolf Outcast's Harness
+						i(207209),	-- Greatwolf Outcast's Jaws
+					}),
+					cl(WARLOCK, {
+						i(207273),	-- Devout Ashdevil's Claws
+						i(207272),	-- Devout Ashdevil's Grimhorns
+						i(207270),	-- Devout Ashdevil's Hatespikes
+						i(207275),	-- Devout Ashdevil's Razorhide
+						i(207271),	-- Devout Ashdevil's Tights
+					}),
+					cl(WARRIOR, {
+						i(207183),	-- Molten Vanguard's Crushers
+						i(207182),	-- Molten Vanguard's Domeplate
+						i(207185),	-- Molten Vanguard's Plackart
+						i(207180),	-- Molten Vanguard's Shouldervents
+						i(207181),	-- Molten Vanguard's Steel Tassets
+					}),
+				})),
+				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 7479 }, {	-- "Off Slots"
+					cl(DEATHKNIGHT, {
+						i(207202),	-- Graveboots of the Risen Nightmare
+						i(207197),	-- Seal of the Risen Nightmare
+						i(207195),	-- Shroud of the Risen Nightmare
+						i(207196),	-- Vambraces of the Risen Nightmare
+					}),
+					cl(DEMONHUNTER, {
+						i(207259),	-- Screaming Torchfiend's Armlets
+						i(207260),	-- Screaming Torchfiend's Clasp
+						i(207265),	-- Screaming Torchfiend's Clutches
+						i(207258),	-- Screaming Torchfiend's Shawl
+					}),
+					cl(DRUID, {
+						i(207249),	-- Benevolent Embersage's Featherdrape
+						i(207256),	-- Benevolent Embersage's Lined Boots
+						i(207251),	-- Benevolent Embersage's Sagacious Sash
+						i(207250),	-- Benevolent Embersage's Wristwraps
+					}),
+					cl(EVOKER, {
+						i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
+						i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
+						i(207229),	-- Weyrnkeeper's Timeless Treads
+						i(207223),	-- Weyrnkeeper's Timeless Wristlets
+					}),
+					cl(HUNTER, {
+						i(207214),	-- Blazing Dreamstalker's Bracers
+						i(207215),	-- Blazing Dreamstalker's Spined Girdle
+						i(207213),	-- Blazing Dreamstalker's Staghide
+						i(207220),	-- Blazing Dreamstalker's Striders
+					}),
+					cl(MAGE, {
+						i(207286),	-- Wayward Chronomancer's Cuffs
+						i(207285),	-- Wayward Chronomancer's Stole
+						i(207292),	-- Wayward Chronomancer's Strapped Boots
+						i(207287),	-- Wayward Chronomancer's Synchronous Belt
+					}),
+					cl(MONK, {
+						i(207242),	-- Mystic Heron's Belt
+						i(207240),	-- Mystic Heron's Feathered Mantle
+						i(207241),	-- Mystic Heron's Fisticuffs
+						i(207247),	-- Mystic Heron's Tabi
+					}),
+					cl(PALADIN, {
+						i(207186),	-- Zealous Pyreknight's Banner
+						i(207193),	-- Zealous Pyreknight's Dreamstompers
+						i(207188),	-- Zealous Pyreknight's Emblem
+						i(207187),	-- Zealous Pyreknight's Flameguards
+					}),
+					cl(PRIEST, {
+						i(207278),	-- Cincture of Lunar Communion
+						i(207276),	-- Cloak of Lunar Communion
+						i(207283),	-- Poulaines of Lunar Communion
+						i(207277),	-- Wristwraps of Lunar Communion
+					}),
+					cl(ROGUE, {
+						i(207233),	-- Lucid Shadewalker's Baldric
+						i(207232),	-- Lucid Shadewalker's Bracers
+						i(207231),	-- Lucid Shadewalker's Cape
+						i(207238),	-- Lucid Shadewalker's Sollerets
+					}),
+					cl(SHAMAN, {
+						i(207204),	-- Greatwolf Outcast's Chainweave
+						i(207211),	-- Greatwolf Outcast's Footpads
+						i(207206),	-- Greatwolf Outcast's Sigil Belt
+						i(207205),	-- Greatwolf Outcast's Wristguards
+					}),
+					cl(WARLOCK, {
+						i(207268),	-- Devout Ashdevil's Bracelets
+						i(207269),	-- Devout Ashdevil's Fanged Sash
+						i(207267),	-- Devout Ashdevil's Fiendcloak
+						i(207274),	-- Devout Ashdevil's Slippers
+					}),
+					cl(WARRIOR, {
+						i(207179),	-- Molten Vanguard's Chains
+						i(207184),	-- Molten Vanguard's Greatboots
+						i(207177),	-- Molten Vanguard's Manacles
+						i(207176),	-- Molten Vanguard's Thermal Cape
+					}),
+				})),
+				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {	-- "Tier Slots"
+					["description"] = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
+					["groups"] = {
+						cl(DEATHKNIGHT, {
+							i(207203),	-- Casket of the Risen Nightmare
+							i(207199),	-- Greaves of the Risen Nightmare
+							i(207200),	-- Piercing Gaze of the Risen Nightmare
+							i(207198),	-- Skewers of the Risen Nightmare
+							i(207201),	-- Thorns of the Risen Nightmare
+						}),
+						cl(DEMONHUNTER, {
+							i(207266),	-- Screaming Torchfiend's Binding
+							i(207262),	-- Screaming Torchfiend's Blazewraps
+							i(207263),	-- Screaming Torchfiend's Burning Scowl
+							i(207264),	-- Screaming Torchfiend's Grasp
+							i(207261),	-- Screaming Torchfiend's Horned Memento
+						}),
+						cl(DRUID, {
+							i(207254),	-- Benevolent Embersage's Casque
+							i(207253),	-- Benevolent Embersage's Leggings
+							i(207257),	-- Benevolent Embersage's Robe
+							i(207255),	-- Benevolent Embersage's Talons
+							i(207252),	-- Benevolent Embersage's Wisdom
+						}),
+						cl(EVOKER, {
+							i(207226),	-- Weyrnkeeper's Timeless Breeches
+							i(207228),	-- Weyrnkeeper's Timeless Clawguards
+							i(207227),	-- Weyrnkeeper's Timeless Dracoif
+							i(207230),	-- Weyrnkeeper's Timeless Raiment
+							i(207225),	-- Weyrnkeeper's Timeless Sandbrace
+						}),
+						cl(HUNTER, {
+							i(207216),	-- Blazing Dreamstalker's Finest Hunt
+							i(207218),	-- Blazing Dreamstalker's Flamewaker Horns
+							i(207221),	-- Blazing Dreamstalker's Scaled Hauberk
+							i(207217),	-- Blazing Dreamstalker's Shellgreaves
+							i(207219),	-- Blazing Dreamstalker's Skinners
+						}),
+						cl(MAGE, {
+							i(207290),	-- Wayward Chronomancer's Chronocap
+							i(207291),	-- Wayward Chronomancer's Gloves
+							i(207288),	-- Wayward Chronomancer's Metronomes
+							i(207289),	-- Wayward Chronomancer's Pantaloons
+							i(207293),	-- Wayward Chronomancer's Patchwork
+						}),
+						cl(MONK, {
+							i(207243),	-- Mystic Heron's Hopeful Effigy
+							i(207244),	-- Mystic Heron's Waders
+							i(207245),	-- Mystic Heron's Hatsuburi
+							i(207246),	-- Mystic Heron's Glovebills
+							i(207248),	-- Mystic Heron's Burdens
+						}),
+						cl(PALADIN, {
+							i(207189),	-- Zealous Pyreknight's Ailettes
+							i(207191),	-- Zealous Pyreknight's Barbute
+							i(207190),	-- Zealous Pyreknight's Cuisses
+							i(207192),	-- Zealous Pyreknight's Jeweled Gauntlets
+							i(207194),	-- Zealous Pyreknight's Warplate
+						}),
+						cl(PRIEST, {
+							i(207284),	-- Cassock of Lunar Communion
+							i(207281),	-- Crest of Lunar Communion
+							i(207280),	-- Leggings of Lunar Communion
+							i(207282),	-- Touch of Lunar Communion
+							i(207279),	-- Shoulderguardians of Lunar Communion
+						}),
+						cl(ROGUE, {
+							i(207234),	-- Lucid Shadewalker's Bladed Spaulders
+							i(207235),	-- Lucid Shadewalker's Chausses
+							i(207237),	-- Lucid Shadewalker's Clawgrips
+							i(207239),	-- Lucid Shadewalker's Cuirass
+							i(207236),	-- Lucid Shadewalker's Deathmask
+						}),
+						cl(SHAMAN, {
+							i(207207),	-- Greatwolf Outcast's Companions
+							i(207208),	-- Greatwolf Outcast's Fur-Lined Kilt
+							i(207210),	-- Greatwolf Outcast's Grips
+							i(207212),	-- Greatwolf Outcast's Harness
+							i(207209),	-- Greatwolf Outcast's Jaws
+						}),
+						cl(WARLOCK, {
+							i(207273),	-- Devout Ashdevil's Claws
+							i(207272),	-- Devout Ashdevil's Grimhorns
+							i(207270),	-- Devout Ashdevil's Hatespikes
+							i(207275),	-- Devout Ashdevil's Razorhide
+							i(207271),	-- Devout Ashdevil's Tights
+						}),
+						cl(WARRIOR, {
+							i(207183),	-- Molten Vanguard's Crushers
+							i(207182),	-- Molten Vanguard's Domeplate
+							i(207185),	-- Molten Vanguard's Plackart
+							i(207180),	-- Molten Vanguard's Shouldervents
+							i(207181),	-- Molten Vanguard's Steel Tassets
+						}),
+					},
+				})),
+				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {	-- "Off Slots"
+					["description"] = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
+					["groups"] = {
+						cl(DEATHKNIGHT, {
+							i(207202),	-- Graveboots of the Risen Nightmare
+							i(207197),	-- Seal of the Risen Nightmare
+							i(207195),	-- Shroud of the Risen Nightmare
+							i(207196),	-- Vambraces of the Risen Nightmare
+						}),
+						cl(DEMONHUNTER, {
+							i(207259),	-- Screaming Torchfiend's Armlets
+							i(207260),	-- Screaming Torchfiend's Clasp
+							i(207265),	-- Screaming Torchfiend's Clutches
+							i(207258),	-- Screaming Torchfiend's Shawl
+						}),
+						cl(DRUID, {
+							i(207249),	-- Benevolent Embersage's Featherdrape
+							i(207256),	-- Benevolent Embersage's Lined Boots
+							i(207251),	-- Benevolent Embersage's Sagacious Sash
+							i(207250),	-- Benevolent Embersage's Wristwraps
+						}),
+						cl(EVOKER, {
+							i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
+							i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
+							i(207229),	-- Weyrnkeeper's Timeless Treads
+							i(207223),	-- Weyrnkeeper's Timeless Wristlets
+						}),
+						cl(HUNTER, {
+							i(207214),	-- Blazing Dreamstalker's Bracers
+							i(207215),	-- Blazing Dreamstalker's Spined Girdle
+							i(207213),	-- Blazing Dreamstalker's Staghide
+							i(207220),	-- Blazing Dreamstalker's Striders
+						}),
+						cl(MAGE, {
+							i(207286),	-- Wayward Chronomancer's Cuffs
+							i(207285),	-- Wayward Chronomancer's Stole
+							i(207292),	-- Wayward Chronomancer's Strapped Boots
+							i(207287),	-- Wayward Chronomancer's Synchronous Belt
+						}),
+						cl(MONK, {
+							i(207242),	-- Mystic Heron's Belt
+							i(207240),	-- Mystic Heron's Feathered Mantle
+							i(207241),	-- Mystic Heron's Fisticuffs
+							i(207247),	-- Mystic Heron's Tabi
+						}),
+						cl(PALADIN, {
+							i(207186),	-- Zealous Pyreknight's Banner
+							i(207193),	-- Zealous Pyreknight's Dreamstompers
+							i(207188),	-- Zealous Pyreknight's Emblem
+							i(207187),	-- Zealous Pyreknight's Flameguards
+						}),
+						cl(PRIEST, {
+							i(207278),	-- Cincture of Lunar Communion
+							i(207276),	-- Cloak of Lunar Communion
+							i(207283),	-- Poulaines of Lunar Communion
+							i(207277),	-- Wristwraps of Lunar Communion
+						}),
+						cl(ROGUE, {
+							i(207233),	-- Lucid Shadewalker's Baldric
+							i(207232),	-- Lucid Shadewalker's Bracers
+							i(207231),	-- Lucid Shadewalker's Cape
+							i(207238),	-- Lucid Shadewalker's Sollerets
+						}),
+						cl(SHAMAN, {
+							i(207204),	-- Greatwolf Outcast's Chainweave
+							i(207211),	-- Greatwolf Outcast's Footpads
+							i(207206),	-- Greatwolf Outcast's Sigil Belt
+							i(207205),	-- Greatwolf Outcast's Wristguards
+						}),
+						cl(WARLOCK, {
+							i(207268),	-- Devout Ashdevil's Bracelets
+							i(207269),	-- Devout Ashdevil's Fanged Sash
+							i(207267),	-- Devout Ashdevil's Fiendcloak
+							i(207274),	-- Devout Ashdevil's Slippers
+						}),
+						cl(WARRIOR, {
+							i(207179),	-- Molten Vanguard's Chains
+							i(207184),	-- Molten Vanguard's Greatboots
+							i(207177),	-- Molten Vanguard's Manacles
+							i(207176),	-- Molten Vanguard's Thermal Cape
+						}),
+					},
+				})),
+				--]]
+			}))),
 			n(QUESTS, {
 				q(72360, {	-- Reviving the Machine
 					["provider"] = { "n", 191369 },	-- Watcher Koranos

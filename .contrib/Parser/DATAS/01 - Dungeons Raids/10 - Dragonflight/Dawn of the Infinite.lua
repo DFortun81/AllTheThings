@@ -293,6 +293,16 @@ local QUANTUM_GROUP = sharedData({
 		ig(134604),	-- Vanguard Hacker						(Removed)
 	}),
 	i(208117, {	-- Quantum Bow
+		ig(186414, {	-- Rae'shalare, Death's Whisper (LFR)	(NYI)
+			["bonusID"] = 451,
+		}),
+		ig(186414, {	-- Rae'shalare, Death's Whisper (Heroic)	(NYI)
+			["bonusID"] = 1,
+		}),
+		ig(186414, {	-- Rae'shalare, Death's Whisper (Mythic)	(NYI)
+			["bonusID"] = 450,
+		}),
+
 		ig(134608),	-- Scorching Longbow					(Removed)
 	}),
 	i(208118, {	-- Quantum Crossbow
@@ -368,6 +378,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(108058),	-- Draenic Steel Mace					(NYI)
 		ig(174228),	-- Gavel of the Oasis					(NYI)
 		ig(163930),	-- Kovork's Rattle						(NYI)
+		ig(161118),	-- Marrow Shatter						(NYI)
 		ig(107390),	-- Obliterator Firing Lever				(NYI)(Unique)
 		ig(108240),	-- Peerless Draenic Steel Mace			(NYI)
 		ig(108241),	-- Peerless Draenic Steel Mace			(NYI)
@@ -421,6 +432,7 @@ local QUANTUM_GROUP = sharedData({
 	i(208109, {	-- Quantum Sword		(One-Handed)
 		ig(134613),	-- Scorching Quickblade					(NYI)
 		ig(166364),	-- Song of the Fallen					(NYI)
+		ig(155074),	-- Toll Enforcer						(NYI)
 
 		ig(19110),	-- Cold Forged Blade 					(Removed)
 		ig(134725),	-- Cold-Touched Mageblade 				(Removed)
