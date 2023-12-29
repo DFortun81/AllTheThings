@@ -43,6 +43,12 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["provider"] = { "i", 153541 },	-- Tottle
 			["timeline"] = { "added 7.3.5.25937", "removed 10.1.7" },	-- Removed Sep 17th, 2023
 		}),
+		ach(14283, {	-- Heroic Edition: Ensorcelled Everwyrm
+			["timeline"] = { "added 10.2.0.52301" },
+		}),
+		ach(17314,	{	-- Heroic Edition: Tangled Dreamweaver
+			["timeline"] = { "added 10.2.0.52301" },
+		}),
 		ach(19029, {	-- Lil' Maggz
 			["timeline"] = { "added 10.1.7.51313", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
 		}),
@@ -71,6 +77,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		i(97989, {	-- Enchanted Fey Dragon (MOUNT!)
 			["timeline"] = { "added 5.3.0.16758" },
+		}),
+		mount(307932, {	-- Ensorcelled Everwyrm (MOUNT!)
+			["timeline"] = { "added 10.2.0.52301" },
 		}),
 		--Maybe later in the Shop
 		--[[mount(315132, {	-- Gargantuan Grrloc (MOUNT!)
@@ -142,6 +151,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		--[[mount(381529, {	-- Telix the Stormhorn (MOUNT!)
 			["timeline"] = { "added 10.0.0.46366" },
 		}),--]]
+		mount(359843, {	-- Tangled Dreamweaver (MOUNT!)
+			["timeline"] = { "added 10.2.0.52301" },
+		}),
 		i(160589, {	-- The Dreadwake (MOUNT!)
 			["timeline"] = { "added 8.0.1.27602", "removed 10.1.7" },	-- Removed Sep 17th, 2023
 		}),
@@ -171,6 +183,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	filter(BATTLE_PETS, {
 		i(106240, {	-- Alterac Brew-Pup (PET!)
 			["timeline"] = { "added 5.4.1.17481" },
+		}),
+		pet(2779, {	-- Anima Wyrmling (PET!)
+			["timeline"] = { "added 10.2.0.52301" },
 		}),
 		i(118516, {	-- Argi (PET!)
 			["timeline"] = { "added 6.0.1.18711" },
@@ -249,6 +264,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(68619, {	-- Moonkin Hatchling [H] (PET!)
 			["timeline"] = { "added 4.0.3.13286", "removed 8.3.0" },
 			["races"] = HORDE_ONLY,
+		}),
+		pet(3175, {	-- Murkastrasza (PET!)
+			["timeline"] = { "added 10.2.0.52301" },
 		}),
 		i(128426, {	-- Nibbles (PET!)
 			["timeline"] = { "added 6.2.2.20395", "removed 10.1.7.51886" },	-- removed on Oct 31, 2023
@@ -461,11 +479,17 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	-- #endif
 	-- #if AFTER 8.1.5.29737
 	filter(TOYS, {
+		i(172179, {	-- Eternal Traveler's Hearthstone (TOY!)
+			["timeline"] = { "added 10.2.0.52301" },
+		}),
 		i(166778, {	-- Horde's Might Firework (TOY!)
 			["timeline"] = { "added 8.1.5.29737", "removed 10.1.0" },	-- 17th April 2023
 		}),
 		i(166777, {	-- Lion's Pride Firework (TOY!)
 			["timeline"] = { "added 8.1.5.29737", "removed 10.1.0" },	-- 17th April 2023
+		}),
+		i(193588, {	-- Timewalker's Hearthstone (TOY!)
+			["timeline"] = { "added 10.2.0.52301" },
 		}),
 		i(166779, {	-- Transmorpher Beacon (TOY!)
 			["timeline"] = { "added 8.1.5.29737" },
