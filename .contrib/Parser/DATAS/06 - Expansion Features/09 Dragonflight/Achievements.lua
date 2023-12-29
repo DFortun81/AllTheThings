@@ -694,7 +694,312 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}},
 			["g"] = {
 				i(210468, {	-- Emerald Blossom Dreamstone
-					-- Special Transmog here..
+					d(LFR_RAID, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
+						cl(DEATHKNIGHT, {	-- HEAD, SHOULDERS
+							i(207200),	-- Piercing Gaze of the Risen Nightmare
+							i(207198),	-- Skewers of the Risen Nightmare
+						}),
+						cl(DEMONHUNTER, {	-- SHOULDERS
+							i(207261),	-- Screaming Torchfiend's Horned Memento
+						}),
+						cl(DRUID, {		-- SHOULDERS
+							i(207252),	-- Benevolent Embersage's Wisdom
+						}),
+						cl(EVOKER, {	-- HEAD
+							i(207227),	-- Weyrnkeeper's Timeless Dracoif
+						}),
+						cl(HUNTER, {	-- SHOULDERS
+							i(207216),	-- Blazing Dreamstalker's Finest Hunt
+						}),
+						cl(MAGE, {		-- HEAD, SHOULDERS, WAIST
+							i(207290),	-- Wayward Chronomancer's Chronocap
+							i(207288),	-- Wayward Chronomancer's Metronomes
+							i(207287),	-- Wayward Chronomancer's Synchronous Belt
+						}),
+						cl(MONK, {		-- SHOULDERS
+							i(207243),	-- Mystic Heron's Hopeful Effigy
+						}),
+						cl(PALADIN, {	-- SHOULDERS
+							i(207189),	-- Zealous Pyreknight's Ailettes
+						}),
+						cl(PRIEST, {	-- HEAD, SHOULDERS
+							i(207281),	-- Crest of Lunar Communion
+							i(207279),	-- Shoulderguardians of Lunar Communion
+						}),
+						cl(ROGUE, {		-- HEAD, SHOULDERS
+							i(207234),	-- Lucid Shadewalker's Bladed Spaulders
+							i(207236),	-- Lucid Shadewalker's Deathmask
+						}),
+						cl(SHAMAN, {	-- HEAD, SHOULDERS
+							i(207207),	-- Greatwolf Outcast's Companions
+							i(207209),	-- Greatwolf Outcast's Jaws
+						}),
+						cl(WARLOCK, {	-- HEAD, SHOULDERS
+							i(207272),	-- Devout Ashdevil's Grimhorns
+							i(207270),	-- Devout Ashdevil's Hatespikes
+						}),
+						cl(WARRIOR, {	-- HEAD, SHOULDERS, CHEST, WAIST
+							i(207179),	-- Molten Vanguard's Chains
+							i(207182),	-- Molten Vanguard's Domeplate
+							i(207185),	-- Molten Vanguard's Plackart
+							i(207180),	-- Molten Vanguard's Shouldervents
+						}),
+					})),
+					d(NORMAL_RAID, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
+						cl(DEATHKNIGHT, {	-- HEAD, SHOULDERS
+							i(207200),	-- Piercing Gaze of the Risen Nightmare
+							i(207198),	-- Skewers of the Risen Nightmare
+						}),
+						cl(DEMONHUNTER, {	-- SHOULDERS
+							i(207261),	-- Screaming Torchfiend's Horned Memento
+						}),
+						cl(DRUID, {		-- SHOULDERS
+							i(207252),	-- Benevolent Embersage's Wisdom
+						}),
+						cl(EVOKER, {	-- HEAD
+							i(207227),	-- Weyrnkeeper's Timeless Dracoif
+						}),
+						cl(HUNTER, {	-- SHOULDERS
+							i(207216),	-- Blazing Dreamstalker's Finest Hunt
+						}),
+						cl(MAGE, {		-- HEAD, SHOULDERS, WAIST
+							i(207290),	-- Wayward Chronomancer's Chronocap
+							i(207288),	-- Wayward Chronomancer's Metronomes
+							i(207287),	-- Wayward Chronomancer's Synchronous Belt
+						}),
+						cl(MONK, {		-- SHOULDERS
+							i(207243),	-- Mystic Heron's Hopeful Effigy
+						}),
+						cl(PALADIN, {	-- SHOULDERS
+							i(207189),	-- Zealous Pyreknight's Ailettes
+						}),
+						cl(PRIEST, {	-- HEAD, SHOULDERS
+							i(207281),	-- Crest of Lunar Communion
+							i(207279),	-- Shoulderguardians of Lunar Communion
+						}),
+						cl(ROGUE, {		-- HEAD, SHOULDERS
+							i(207234),	-- Lucid Shadewalker's Bladed Spaulders
+							i(207236),	-- Lucid Shadewalker's Deathmask
+						}),
+						cl(SHAMAN, {	-- HEAD, SHOULDERS
+							i(207207),	-- Greatwolf Outcast's Companions
+							i(207209),	-- Greatwolf Outcast's Jaws
+						}),
+						cl(WARLOCK, {	-- HEAD, SHOULDERS
+							i(207272),	-- Devout Ashdevil's Grimhorns
+							i(207270),	-- Devout Ashdevil's Hatespikes
+						}),
+						cl(WARRIOR, {	-- HEAD, SHOULDERS, CHEST, WAIST
+							i(207179),	-- Molten Vanguard's Chains
+							i(207182),	-- Molten Vanguard's Domeplate
+							i(207185),	-- Molten Vanguard's Plackart
+							i(207180),	-- Molten Vanguard's Shouldervents
+						}),
+					})),
+					d(HEROIC_RAID, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
+						cl(DEATHKNIGHT, {	-- HEAD, SHOULDERS
+							i(207200),	-- Piercing Gaze of the Risen Nightmare
+							i(207198),	-- Skewers of the Risen Nightmare
+						}),
+						cl(DEMONHUNTER, {	-- SHOULDERS
+							i(207261),	-- Screaming Torchfiend's Horned Memento
+						}),
+						cl(DRUID, {		-- SHOULDERS
+							i(207252),	-- Benevolent Embersage's Wisdom
+						}),
+						cl(EVOKER, {	-- HEAD
+							i(207227),	-- Weyrnkeeper's Timeless Dracoif
+						}),
+						cl(HUNTER, {	-- SHOULDERS
+							i(207216),	-- Blazing Dreamstalker's Finest Hunt
+						}),
+						cl(MAGE, {		-- HEAD, SHOULDERS, WAIST
+							i(207290),	-- Wayward Chronomancer's Chronocap
+							i(207288),	-- Wayward Chronomancer's Metronomes
+							i(207287),	-- Wayward Chronomancer's Synchronous Belt
+						}),
+						cl(MONK, {		-- SHOULDERS
+							i(207243),	-- Mystic Heron's Hopeful Effigy
+						}),
+						cl(PALADIN, {	-- SHOULDERS
+							i(207189),	-- Zealous Pyreknight's Ailettes
+						}),
+						cl(PRIEST, {	-- HEAD, SHOULDERS
+							i(207281),	-- Crest of Lunar Communion
+							i(207279),	-- Shoulderguardians of Lunar Communion
+						}),
+						cl(ROGUE, {		-- HEAD, SHOULDERS
+							i(207234),	-- Lucid Shadewalker's Bladed Spaulders
+							i(207236),	-- Lucid Shadewalker's Deathmask
+						}),
+						cl(SHAMAN, {	-- HEAD, SHOULDERS
+							i(207207),	-- Greatwolf Outcast's Companions
+							i(207209),	-- Greatwolf Outcast's Jaws
+						}),
+						cl(WARLOCK, {	-- HEAD, SHOULDERS
+							i(207272),	-- Devout Ashdevil's Grimhorns
+							i(207270),	-- Devout Ashdevil's Hatespikes
+						}),
+						cl(WARRIOR, {	-- HEAD, SHOULDERS, CHEST, WAIST
+							i(207179),	-- Molten Vanguard's Chains
+							i(207182),	-- Molten Vanguard's Domeplate
+							i(207185),	-- Molten Vanguard's Plackart
+							i(207180),	-- Molten Vanguard's Shouldervents
+						}),
+					})),
+					d(MYTHIC_RAID, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
+						cl(DEATHKNIGHT, {	-- HEAD, SHOULDERS
+							i(207200),	-- Piercing Gaze of the Risen Nightmare
+							i(207198),	-- Skewers of the Risen Nightmare
+						}),
+						cl(DEMONHUNTER, {	-- SHOULDERS
+							i(207261),	-- Screaming Torchfiend's Horned Memento
+						}),
+						cl(DRUID, {		-- SHOULDERS
+							i(207252),	-- Benevolent Embersage's Wisdom
+						}),
+						cl(EVOKER, {	-- HEAD
+							i(207227),	-- Weyrnkeeper's Timeless Dracoif
+						}),
+						cl(HUNTER, {	-- SHOULDERS
+							i(207216),	-- Blazing Dreamstalker's Finest Hunt
+						}),
+						cl(MAGE, {		-- HEAD, SHOULDERS, WAIST
+							i(207290),	-- Wayward Chronomancer's Chronocap
+							i(207288),	-- Wayward Chronomancer's Metronomes
+							i(207287),	-- Wayward Chronomancer's Synchronous Belt
+						}),
+						cl(MONK, {		-- SHOULDERS
+							i(207243),	-- Mystic Heron's Hopeful Effigy
+						}),
+						cl(PALADIN, {	-- SHOULDERS
+							i(207189),	-- Zealous Pyreknight's Ailettes
+						}),
+						cl(PRIEST, {	-- HEAD, SHOULDERS
+							i(207281),	-- Crest of Lunar Communion
+							i(207279),	-- Shoulderguardians of Lunar Communion
+						}),
+						cl(ROGUE, {		-- HEAD, SHOULDERS
+							i(207234),	-- Lucid Shadewalker's Bladed Spaulders
+							i(207236),	-- Lucid Shadewalker's Deathmask
+						}),
+						cl(SHAMAN, {	-- HEAD, SHOULDERS
+							i(207207),	-- Greatwolf Outcast's Companions
+							i(207209),	-- Greatwolf Outcast's Jaws
+						}),
+						cl(WARLOCK, {	-- HEAD, SHOULDERS
+							i(207272),	-- Devout Ashdevil's Grimhorns
+							i(207270),	-- Devout Ashdevil's Hatespikes
+						}),
+						cl(WARRIOR, {	-- HEAD, SHOULDERS, CHEST, WAIST
+							i(207179),	-- Molten Vanguard's Chains
+							i(207182),	-- Molten Vanguard's Domeplate
+							i(207185),	-- Molten Vanguard's Plackart
+							i(207180),	-- Molten Vanguard's Shouldervents
+						}),
+					})),
+					n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
+						cl(DEATHKNIGHT, {	-- HEAD, SHOULDERS
+							i(207200),	-- Piercing Gaze of the Risen Nightmare
+							i(207198),	-- Skewers of the Risen Nightmare
+						}),
+						cl(DEMONHUNTER, {	-- SHOULDERS
+							i(207261),	-- Screaming Torchfiend's Horned Memento
+						}),
+						cl(DRUID, {		-- SHOULDERS
+							i(207252),	-- Benevolent Embersage's Wisdom
+						}),
+						cl(EVOKER, {	-- HEAD
+							i(207227),	-- Weyrnkeeper's Timeless Dracoif
+						}),
+						cl(HUNTER, {	-- SHOULDERS
+							i(207216),	-- Blazing Dreamstalker's Finest Hunt
+						}),
+						cl(MAGE, {		-- HEAD, SHOULDERS, WAIST
+							i(207290),	-- Wayward Chronomancer's Chronocap
+							i(207288),	-- Wayward Chronomancer's Metronomes
+							i(207287),	-- Wayward Chronomancer's Synchronous Belt
+						}),
+						cl(MONK, {		-- SHOULDERS
+							i(207243),	-- Mystic Heron's Hopeful Effigy
+						}),
+						cl(PALADIN, {	-- SHOULDERS
+							i(207189),	-- Zealous Pyreknight's Ailettes
+						}),
+						cl(PRIEST, {	-- HEAD, SHOULDERS
+							i(207281),	-- Crest of Lunar Communion
+							i(207279),	-- Shoulderguardians of Lunar Communion
+						}),
+						cl(ROGUE, {		-- HEAD, SHOULDERS
+							i(207234),	-- Lucid Shadewalker's Bladed Spaulders
+							i(207236),	-- Lucid Shadewalker's Deathmask
+						}),
+						cl(SHAMAN, {	-- HEAD, SHOULDERS
+							i(207207),	-- Greatwolf Outcast's Companions
+							i(207209),	-- Greatwolf Outcast's Jaws
+						}),
+						cl(WARLOCK, {	-- HEAD, SHOULDERS
+							i(207272),	-- Devout Ashdevil's Grimhorns
+							i(207270),	-- Devout Ashdevil's Hatespikes
+						}),
+						cl(WARRIOR, {	-- HEAD, SHOULDERS, CHEST, WAIST
+							i(207179),	-- Molten Vanguard's Chains
+							i(207182),	-- Molten Vanguard's Domeplate
+							i(207185),	-- Molten Vanguard's Plackart
+							i(207180),	-- Molten Vanguard's Shouldervents
+						}),
+					})),
+					n(PVP_ELITE, bubbleDown({ ["bonusID"] = 8107 }, {
+						cl(DEATHKNIGHT, {	-- HEAD, SHOULDERS
+							i(207200),	-- Piercing Gaze of the Risen Nightmare
+							i(207198),	-- Skewers of the Risen Nightmare
+						}),
+						cl(DEMONHUNTER, {	-- SHOULDERS
+							i(207261),	-- Screaming Torchfiend's Horned Memento
+						}),
+						cl(DRUID, {		-- SHOULDERS
+							i(207252),	-- Benevolent Embersage's Wisdom
+						}),
+						cl(EVOKER, {	-- HEAD
+							i(207227),	-- Weyrnkeeper's Timeless Dracoif
+						}),
+						cl(HUNTER, {	-- SHOULDERS
+							i(207216),	-- Blazing Dreamstalker's Finest Hunt
+						}),
+						cl(MAGE, {		-- HEAD, SHOULDERS, WAIST
+							i(207290),	-- Wayward Chronomancer's Chronocap
+							i(207288),	-- Wayward Chronomancer's Metronomes
+							i(207287),	-- Wayward Chronomancer's Synchronous Belt
+						}),
+						cl(MONK, {		-- SHOULDERS
+							i(207243),	-- Mystic Heron's Hopeful Effigy
+						}),
+						cl(PALADIN, {	-- SHOULDERS
+							i(207189),	-- Zealous Pyreknight's Ailettes
+						}),
+						cl(PRIEST, {	-- HEAD, SHOULDERS
+							i(207281),	-- Crest of Lunar Communion
+							i(207279),	-- Shoulderguardians of Lunar Communion
+						}),
+						cl(ROGUE, {		-- HEAD, SHOULDERS
+							i(207234),	-- Lucid Shadewalker's Bladed Spaulders
+							i(207236),	-- Lucid Shadewalker's Deathmask
+						}),
+						cl(SHAMAN, {	-- HEAD, SHOULDERS
+							i(207207),	-- Greatwolf Outcast's Companions
+							i(207209),	-- Greatwolf Outcast's Jaws
+						}),
+						cl(WARLOCK, {	-- HEAD, SHOULDERS
+							i(207272),	-- Devout Ashdevil's Grimhorns
+							i(207270),	-- Devout Ashdevil's Hatespikes
+						}),
+						cl(WARRIOR, {	-- HEAD, SHOULDERS, CHEST, WAIST
+							i(207179),	-- Molten Vanguard's Chains
+							i(207182),	-- Molten Vanguard's Domeplate
+							i(207185),	-- Molten Vanguard's Plackart
+							i(207180),	-- Molten Vanguard's Shouldervents
+						}),
+					})),
 				}),
 			},
 		})),

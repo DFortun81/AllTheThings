@@ -74,6 +74,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(206367, {	-- Cracked Trophy of Strife
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 					}),
+					i(202023),	-- Spark of Life (QI!)
 				},
 			}, {
 				q(72647, {	-- Sparks of Life: Ohn'ahran Plains

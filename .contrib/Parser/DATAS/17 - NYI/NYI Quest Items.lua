@@ -550,7 +550,6 @@ root(ROOTS.NeverImplemented, {
 				i(191084),	-- Reptilian Eggshell
 				i(201793),	-- Resplendent Gemstone
 				i(202013),	-- Ruby Recipe Journal VIII
-				i(202023),	-- Spark of Life
 				i(201828),	-- Spiked Leaves
 				i(201816),	-- Springy Horns
 				i(201826),	-- Tempest Armaments
