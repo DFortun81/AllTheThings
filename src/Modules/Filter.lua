@@ -211,10 +211,18 @@ end);
 
 -- RequireSkill -- FilterItemClass_RequiredSkill
 DefineToggleFilter("RequireSkill", CharacterFilters,
-function(item)
+app.IsRetail and function(item)
 	local requireSkill = item.requireSkill;
 	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or FilterBind(item)) then
 		return app.CurrentCharacter.Professions[requireSkill];
+	else
+		return true;
+	end
+end or function(item)
+	local requireSkill = item.requireSkill;
+	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or FilterBind(item)) then
+		requireSkill = app.SkillIDToSpellID[requireSkill];
+		return requireSkill and app.CurrentCharacter.ActiveSkills[requireSkill];
 	else
 		return true;
 	end
@@ -456,6 +464,19 @@ api.Set.ItemSource = function(useUnique, useMainOnly)
 end
 end
 
+-- SkillLevel -- FilterGroupsBySkillLevel
+app.MaximumSkillLevel = 99999;
+DefineToggleFilter("SkillLevel", CharacterFilters,
+function(item)
+	if group.learnedAt then
+        return app.MaximumSkillLevel >= group.learnedAt;
+    end
+    -- no skill level requirement on the group, have to include it
+    return true;
+end);
+-- we actually don't "really" care to have level filter in the RawCharacterFilters... just causes more inaccurate quest reports since level req on every expac changes all the time
+RawCharacterFilters["SkillLevel"] = nil;
+
 -- Trackable
 -- Whether this group can be 'tracked'
 local function FilterTrackable(group)	-- FilterItemTrackable
@@ -558,10 +579,22 @@ app.CurrentCharacterFilters = CurrentCharacterFilters
 
 -- TODO: adjust these function names
 -- Used as the general Group filter during updates
+api.Filters.Group = function()
+	return SettingsFilters;
+end
+api.Get.Group = function()
+	return app.GroupFilter == SettingsFilters;
+end
 api.Set.Group = function(active)
 	app.GroupFilter = active and SettingsFilters or NoFilter;
 end
 -- Used to show completed Groups
+api.Filters.CompletedGroups = function()
+	return FilterCompletion;
+end
+api.Get.CompletedGroups = function()
+	return app.GroupVisibilityFilter == FilterCompletion;
+end
 api.Set.CompletedGroups = function(active)
 	app.GroupVisibilityFilter = active and FilterCompletion or NoFilter;
 end
@@ -616,6 +649,15 @@ local function RecursiveCharacterRequirementsFilter(group)
 	return true;
 end
 app.RecursiveCharacterRequirementsFilter = RecursiveCharacterRequirementsFilter;
+local function RecursiveDefaultCharacterRequirementsFilter(group)
+	local defaultClassFilter, defaultRaceFilter = api.Filters.Class, api.Filters.Race;
+	while group do
+		if not (defaultClassFilter(group) and defaultRaceFilter(group)) then return; end
+		group = group.sourceParent or group.parent;
+	end
+	return true;
+end
+app.RecursiveDefaultCharacterRequirementsFilter = RecursiveDefaultCharacterRequirementsFilter;
 -- Returns the first encountered group tracing upwards in parent hierarchy which has a value for the provided field.
 -- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
 local function RecursiveFirstParentWithField(group, field, followSource)

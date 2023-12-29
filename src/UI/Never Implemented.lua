@@ -34,10 +34,10 @@ app:GetWindow("Never Implemented", {
 	end,
 	OnUpdate = function(self, ...)
 		-- Update the groups without forcing Debug Mode.
-		local UnobtainableItemFilter = app.UnobtainableItemFilter;
-		app.UnobtainableItemFilter = app.NoFilter;
+		local state = app.Modules.Filter.Get.Unobtainable();
+		app.Modules.Filter.Set.Unobtainable();
 		self:DefaultUpdate(...);
-		app.UnobtainableItemFilter = UnobtainableItemFilter;
+		app.Modules.Filter.Set.Unobtainable(state);
 		return false;
 	end
 });

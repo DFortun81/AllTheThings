@@ -195,12 +195,14 @@ local OnClickForTab = function(self)
 		end
 	end
 end;
+local RawSettings;
 settings.Initialize = function(self)
 	PanelTemplates_SetNumTabs(self, #self.Tabs);
 
 	local global_ATTClassicSettings = _G["ATTClassicSettings"];
 	if global_ATTClassicSettings then ATTClassicSettings = global_ATTClassicSettings; end
 	_G["ATTClassicSettings"] = ATTClassicSettings;
+	RawSettings = ATTClassicSettings;
 
 	local global_ATTClassicSettingsPerCharacter = _G["ATTClassicSettingsPerCharacter"];
 	if global_ATTClassicSettingsPerCharacter then ATTClassicSettingsPerCharacter = global_ATTClassicSettingsPerCharacter; end
@@ -209,10 +211,16 @@ settings.Initialize = function(self)
 	-- Assign the default settings
 	if not ATTClassicSettings.General then ATTClassicSettings.General = {}; end
 	if not ATTClassicSettings.Tooltips then ATTClassicSettings.Tooltips = {}; end
-	if not ATTClassicSettings.Unobtainables then ATTClassicSettings.Unobtainables = {}; end
+	if not ATTClassicSettings.Unobtainable then
+		if ATTClassicSettings.Unobtainables then
+			ATTClassicSettings.Unobtainable = ATTClassicSettings.Unobtainables;
+		else
+			ATTClassicSettings.Unobtainable = {};
+		end
+	end
 	setmetatable(ATTClassicSettings.General, GeneralSettingsBase);
 	setmetatable(ATTClassicSettings.Tooltips, TooltipSettingsBase);
-	setmetatable(ATTClassicSettings.Unobtainables, UnobtainableSettingsBase);
+	setmetatable(ATTClassicSettings.Unobtainable, UnobtainableSettingsBase);
 
 	-- Assign the preset filters for your character class as the default states
 	if not ATTClassicSettingsPerCharacter.Filters then ATTClassicSettingsPerCharacter.Filters = {}; end
@@ -263,6 +271,12 @@ settings.GetFilterForRWPBase = function(self, filterID)
 end
 settings.GetFilterForRWP = function(self, filterID)
 	return ATTClassicSettingsPerCharacter.RWPFilters[filterID];
+end
+settings.GetRawFilters = function(self)
+	return ATTClassicSettingsPerCharacter.Filters;
+end
+settings.GetRawSettings = function(self, name)
+	return RawSettings[name];
 end
 settings.GetModeString = function(self)
 	local mode = "Mode";
@@ -341,8 +355,11 @@ end
 settings.GetTooltipSetting = function(self, setting)
 	return ATTClassicSettings.Tooltips[setting];
 end
+settings.GetValue = function(self, container, setting)
+	return RawSettings[container][setting]
+end
 settings.GetUnobtainableFilter = function(self, u)
-	return ATTClassicSettings.Unobtainables[u];
+	return ATTClassicSettings.Unobtainable[u];
 end
 settings.Set = function(self, setting, value)
 	ATTClassicSettings.General[setting] = value;
@@ -359,7 +376,7 @@ settings.SetTooltipSetting = function(self, setting, value)
 	self:Refresh();
 end
 settings.SetUnobtainableFilter = function(self, u, value)
-	ATTClassicSettings.Unobtainables[u] = value;
+	ATTClassicSettings.Unobtainable[u] = value;
 	self:Refresh();
 	app:RefreshDataCompletely("SetUnobtainableFilter");
 end
@@ -454,11 +471,7 @@ settings.ToggleCollectedThings = function(self)
 end
 settings.SetHideBOEItems = function(self, checked)
 	self:Set("Hide:BoEs", checked);
-	if checked then
-		app.RequireBindingFilter = app.FilterItemClass_RequireBinding;
-	else
-		app.RequireBindingFilter = app.NoFilter;
-	end
+	self:UpdateMode();
 	app:RefreshDataCompletely("SetHideBOEItems");
 end
 settings.ToggleBOEItems = function(self)
@@ -479,19 +492,31 @@ settings.ToggleSourceLocations = function(self)
 	self:SetSourceLocations(not self:GetTooltipSetting("SourceLocations"));
 end
 settings.UpdateMode = function(self)
+	local filterSet = app.Modules.Filter.Set;
 	if self:Get("DebugMode") then
 		app.MODE_ACCOUNT = nil;
 		app.MODE_DEBUG = true
-		app.GroupFilter = app.NoFilter;
-		app.VisibilityFilter = app.NoFilter;
+		
+		filterSet.Group()
+		filterSet.Unobtainable()
+		filterSet.Visible(true)
+		filterSet.FilterID()
+		filterSet.Class()
+		filterSet.Race()
+		filterSet.RequireSkill()
+		filterSet.Event()
+		filterSet.MinReputation()
+		filterSet.CustomCollect()
+		-- Default filter fallback in Debug mode is based on Show Completed toggles so that uncollectible/completed content can still be hidden in Debug if desired
+		filterSet.DefaultGroup(not self:Get("Show:CompletedGroups"))
+		filterSet.DefaultThing(not self:Get("Show:CollectedThings"))
+		filterSet.Trackable()
 
-		app.ItemTypeFilter = app.NoFilter;
-		app.ClassRequirementFilter = app.NoFilter;
-		app.RaceRequirementFilter = app.NoFilter;
-		app.RequiredSkillFilter = app.NoFilter;
-		app.RequireFactionFilter = app.NoFilter;
-		app.RequireEventFilter = app.NoFilter;
-
+		--settings:SetThingTracking("Debug")
+		
+		
+		
+		-- Old Filters
 		local accountWideSettings = self.AccountWide;
 		for key,value in pairs(accountWideSettings) do
 			accountWideSettings[key] = true;
@@ -506,9 +531,25 @@ settings.UpdateMode = function(self)
 		app.Modules.PVPRanks.SetCollectible(true);
 	else
 		app.MODE_DEBUG = nil;
-		app.VisibilityFilter = app.ObjectVisibilityFilter;
-		app.GroupFilter = app.FilterItemClass;
-
+		filterSet.Visible(true)
+		filterSet.Group(true)
+		filterSet.DefaultGroup(true)
+		filterSet.DefaultThing(true)
+		-- specifically hiding something
+		if true--[[settings:GetValue("Unobtainable", "DoFiltering")]] then
+			filterSet.Unobtainable(true)
+		else
+			filterSet.Unobtainable()
+		end
+		if self:Get("Show:TrackableThings") then
+			filterSet.Trackable(true)
+		else
+			filterSet.Trackable()
+		end
+		
+		
+		
+		-- Old Filters
 		local accountWideSettings = self.AccountWide;
 		for key,value in pairs(accountWideSettings) do
 			accountWideSettings[key] = self:Get("AccountWide:" .. key);
@@ -524,31 +565,38 @@ settings.UpdateMode = function(self)
 
 		if self:Get("AccountMode") then
 			app.MODE_ACCOUNT = true;
-			app.ItemTypeFilter = app.NoFilter;
-			app.ClassRequirementFilter = app.NoFilter;
-			app.RequiredSkillFilter = app.NoFilter;
-			app.RequireFactionFilter = app.NoFilter;
+			filterSet.FilterID()
+			filterSet.Class()
+			filterSet.RequireSkill()
+			filterSet.MinReputation()
+			filterSet.CustomCollect()
 			if self:Get("FactionMode") then
-				app.RaceRequirementFilter = app.FilterItemClass_RequireRacesCurrentFaction;
+				filterSet.Race(true, true)
 			else
-				app.RaceRequirementFilter = app.NoFilter;
+				filterSet.Race()
 			end
+
+			-- Force Account-Wide with Account Mode otherwise you get really dumb situations
+			--settings:SetThingTracking("Account")
 		else
 			app.MODE_ACCOUNT = nil;
-			app.ItemTypeFilter = app.FilterItemClass_RequireItemFilter;
-			app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
-			app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
-			app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
-			app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
+			filterSet.FilterID(true)
+			filterSet.Class(true)
+			filterSet.Race(true)
+			filterSet.RequireSkill(true)
+			filterSet.MinReputation(true)
+			filterSet.CustomCollect(true)
+
+			--settings:SetThingTracking()
 		end
-		app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT
 
 		if self:Get("Show:OnlyActiveEvents") then
-			app.RequireEventFilter = app.Modules.Events.FilterIsEventActive;
+			filterSet.Event(true)
 		else
-			app.RequireEventFilter = app.NoFilter;
+			filterSet.Event()
 		end
 	end
+	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;
 
 	local filters = ATTClassicSettingsPerCharacter.Filters;
 	for filterID,state in pairs({
@@ -559,44 +607,58 @@ settings.UpdateMode = function(self)
 	}) do
 		filters[filterID] = state;
 	end
+	
 	if self:Get("Show:CompletedGroups") or self:Get("DebugMode") then
-		app.GroupVisibilityFilter = app.NoFilter;
+		filterSet.CompletedGroups()
 	else
-		app.GroupVisibilityFilter = app.FilterGroupsByCompletion;
+		filterSet.CompletedGroups(true)
 	end
 	if self:Get("Show:CollectedThings") or self:Get("DebugMode") then
-		app.CollectedItemVisibilityFilter = app.NoFilter;
+		filterSet.CompletedThings()
 	else
-		app.CollectedItemVisibilityFilter = app.Filter;
+		filterSet.CompletedThings(true)
 	end
-	if self:Get("Show:IncompleteThings") then
-		app.ShowIncompleteThings = app.FilterItemTrackable;
+	
+	--[[
+	-- This isn't here?
+	if self.AccountWide.Achievements then
+		app.AchievementFilter = 4
 	else
-		app.ShowIncompleteThings = app.Filter;
+		app.AchievementFilter = 13
 	end
+	]]--
+	
+	
 	if self:Get("Filter:BoEs") then
-		app.ItemBindFilter = app.FilterItemBind;
+		filterSet.ItemUnbound(true)
 	else
-		app.ItemBindFilter = app.Filter;
+		filterSet.ItemUnbound()
 	end
 	if self:Get("Hide:BoEs") then
-		app.RequireBindingFilter = app.FilterItemClass_RequireBinding;
+		filterSet.Bound(true)
 	else
-		app.RequireBindingFilter = app.NoFilter;
+		filterSet.Bound()
 	end
 	if self:Get("Hide:PvP") then
-		app.PvPFilter = app.FilterItemPvP;
+		filterSet.PvP(true)
 	else
-		app.PvPFilter = app.NoFilter;
+		filterSet.PvP()
+	end
+	if self:Get("Show:PetBattles") then
+		filterSet.PetBattles()
+	else
+		filterSet.PetBattles(true)
 	end
 	if self:Get("Filter:ByLevel") and not self:Get("DebugMode") then
-		app.GroupRequirementsFilter = app.FilterGroupsByLevel;
+		filterSet.Level(true)
 	else
-		app.GroupRequirementsFilter = app.NoFilter;
+		filterSet.Level()
 	end
+	
 	if self:Get("Filter:BySkillLevel") and not self:Get("DebugMode") then
-		local oldFilter = app.GroupRequirementsFilter;
-		app.GroupRequirementsFilter = function(...) return oldFilter(...) and app.FilterGroupsBySkillLevel(...); end
+		filterSet.SkillLevel(true)
+	else
+		filterSet.SkillLevel()
 	end
 	app:UnregisterEvent("GOSSIP_SHOW");
 	app:UnregisterEvent("TAXIMAP_OPENED");
@@ -1652,9 +1714,9 @@ end);
 ShowCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
 ShowCollectedThingsCheckBox:SetPoint("TOPLEFT", ShowCompletedGroupsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowIncompleteThingsCheckBox = settings:CreateCheckBox("Show Incomplete Things",
+local ShowTrackableThingsCheckBox = settings:CreateCheckBox("Show Trackable Things",
 function(self)
-	self:SetChecked(settings:Get("Show:IncompleteThings"));
+	self:SetChecked(settings:Get("Show:TrackableThings"));
 	if settings:Get("DebugMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -1664,12 +1726,12 @@ function(self)
 	end
 end,
 function(self)
-	settings:Set("Show:IncompleteThings", self:GetChecked());
+	settings:Set("Show:TrackableThings", self:GetChecked());
 	settings:UpdateMode();
-	app:RefreshDataQuietly("ShowIncompleteThingsCheckBox");
+	app:RefreshDataQuietly("ShowTrackableThingsCheckBox");
 end);
-ShowIncompleteThingsCheckBox:SetATTTooltip("Enable this option if you want to see items, objects, NPCs, and headers associated with incomplete quests that don't necessarily have anything you can collect as a result of completing them.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.");
-ShowIncompleteThingsCheckBox:SetPoint("TOPLEFT", ShowCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowTrackableThingsCheckBox:SetATTTooltip("Enable this option if you want to see items, objects, NPCs, and headers associated with trackable quests that don't necessarily have anything you can collect as a result of completing them.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.");
+ShowTrackableThingsCheckBox:SetPoint("TOPLEFT", ShowCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local FilterThingsByLevelCheckBox = settings:CreateCheckBox("Filter Things By Level",
 function(self)
@@ -1688,7 +1750,7 @@ function(self)
 	app:RefreshDataCompletely("FilterThingsByLevelCheckBox");
 end);
 FilterThingsByLevelCheckBox:SetATTTooltip("Enable this setting if you only want to see content available to your current level character.");
-FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", ShowIncompleteThingsCheckBox, "BOTTOMLEFT", 0, -4);
+FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", ShowTrackableThingsCheckBox, "BOTTOMLEFT", 0, -4);
 
 local FilterThingsBySkillLevelCheckBox = settings:CreateCheckBox("Filter Things By Skill Level",
 function(self)

@@ -956,7 +956,7 @@ else
 			if #nextQuests > 0 then
 				app:StartATTCoroutine("CheckNextQuests::" .. questID, function()
 					for _,group in pairs(nextQuests) do
-						if not group.collected and app.RecursiveClassAndRaceFilter(group) and app.RecursiveUnobtainableFilter(group) then
+						if not group.collected and app.RecursiveCharacterRequirementsFilter(group) and app.RecursiveUnobtainableFilter(group) then
 							coroutine.yield();
 							while not group.text do
 								coroutine.yield();

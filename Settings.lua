@@ -210,6 +210,13 @@ local TooltipSettingsBase = {
 		["rwp"] = true,
 	},
 }
+local UnobtainableSettingsBase = {
+	__index = {
+		[1] = false,	-- Never Implemented
+		[2] = false,	-- Removed From Game
+		[3] = false,	-- Blizzard Balance
+	},
+};
 
 local RawSettings
 settings.Initialize = function(self)
@@ -224,6 +231,7 @@ settings.Initialize = function(self)
 		if not RawSettings.Unobtainable then RawSettings.Unobtainable = {} end
 		setmetatable(RawSettings.General, GeneralSettingsBase)
 		setmetatable(RawSettings.Tooltips, TooltipSettingsBase)
+		setmetatable(RawSettings.Unobtainable, UnobtainableSettingsBase)
 	end
 
 	-- Assign the preset filters for your character class as the default states

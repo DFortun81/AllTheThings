@@ -341,14 +341,14 @@ app:GetWindow("Random", {
 	end,
 	OnUpdate = function(self, ...)
 		-- Update the groups without forcing Debug Mode.
-		local visibilityFilter, groupFilter, GroupRequirementsFilter = app.VisibilityFilter, app.GroupFilter, app.GroupRequirementsFilter;
-		app.GroupRequirementsFilter = app.NoFilter;
-		app.GroupFilter = app.NoFilter;
-		app.VisibilityFilter = app.ObjectVisibilityFilter;
+		local visibilityFilter = app.Modules.Filter.Get.Visible();
+		app.Modules.Filter.Set.Visible();
+		
+		local groupFilter = app.GroupFilter;
+		app.GroupFilter = app.ReturnTrue;
 		self:DefaultUpdate(...);
-		app.GroupRequirementsFilter = GroupRequirementsFilter;
 		app.GroupFilter = groupFilter;
-		app.VisibilityFilter = visibilityFilter;
+		app.Modules.Filter.Set.Visible(visibilityFilter);
 		return false;
 	end
 });
