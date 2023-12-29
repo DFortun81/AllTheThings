@@ -20765,20 +20765,6 @@ end
 app.events.PLAYER_DIFFICULTY_CHANGED = function()
 	wipe(searchCache);
 end
-app.events.PLAYER_REGEN_ENABLED = function()
-	app:UnregisterEvent("PLAYER_REGEN_ENABLED");
-	-- print("PLAYER_REGEN_ENABLED:Begin")
-	local callbacks = app.__combatcallbacks;
-	if callbacks and #callbacks > 0 then
-		local i = #callbacks;
-		for c=i,1,-1 do
-			-- print("PLAYER_REGEN_ENABLED:",c)
-			callbacks[c]();
-			callbacks[c] = nil;
-		end
-	end
-	-- print("PLAYER_REGEN_ENABLED:End")
-end
 app.events.TOYS_UPDATED = function(itemID, new)
 	if itemID and not ATTAccountWideData.Toys[itemID] and PlayerHasToy(itemID) then
 		ATTAccountWideData.Toys[itemID] = 1;
