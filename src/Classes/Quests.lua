@@ -782,7 +782,9 @@ if app.IsRetail then
 	end
 	
 	app:RegisterEvent("LOOT_OPENED");
-	app.events.LOOT_OPENED = RefreshQuestInfo;
+	app.events.LOOT_OPENED = function()
+		RefreshQuestInfo();
+	end
 	
 	-- Retail Event Handlers
 	tinsert(app.EventHandlers.OnRecalculate, RefreshQuestInfo);
