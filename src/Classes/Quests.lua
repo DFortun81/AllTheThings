@@ -1106,7 +1106,7 @@ local function LockedAsQuest(t)	-- TODO: Review and refactor
 			return true;
 		end
 	end
-	-- rawset means that this will persist as a non-locked quest until reload, so quests that become locked while playing will not immediately update
+	-- means that this will persist as a non-locked quest until reload, so quests that become locked while playing will not immediately update
 	-- maybe can revise that somehow without also having this entire logic be calculated billions of times when nothing changes....
 	t.locked = false;
 end
@@ -1164,9 +1164,9 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	["text"] = app.IsClassic and function(t)
 		if t.repeatable then return "|cff0070DD" .. t.name .. "|r"; end
 		return t.name;
-	end,
+	end or nil,
 	["name"] = function(t)
-		return QuestNameFromID[t.questID] or RETRIEVING_DATA;
+		return QuestNameFromID[t.questID];
 	end,
 	["icon"] = function(t)
 		return app.GetIconFromProviders(t)
@@ -1308,7 +1308,7 @@ end),
 "AsBreadcrumb", {
 	text = app.IsClassic and function(t)
 		return "|cffcbc3e3" .. t.name .. "|r";
-	end,
+	end or nil,
 	collectible = function(t)
 		if app.Settings.Collectibles.Quests then
 			if C_QuestLog_IsOnQuest(t.questID) or IsQuestFlaggedCompletedForObject(t) then
