@@ -8412,7 +8412,7 @@ local function HandleItemRetries(t)
 	local retries = _t.retries;
 	if retries then
 		if retries > app.MaximumItemInfoRetries then
-			local itemName = L["ITEM_NAMES"][id] or (t.sourceID and L["S_NAMES"] and L["S_NAMES"][t.sourceID]) or "Item #" .. tostring(id) .. "*";
+			local itemName = L["ITEM_NAMES"][id] or (t.sourceID and L["SOURCE_NAMES"] and L["SOURCE_NAMES"][t.sourceID]) or "Item #" .. tostring(id) .. "*";
 			_t.title = L["FAILED_ITEM_INFO"];
 			_t.link = nil;
 			_t.sourceID = nil;
