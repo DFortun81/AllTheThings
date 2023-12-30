@@ -4,6 +4,7 @@
 -- TODO: revise for performance improvements/structure... this is basically copy-paste from Retail ATT
 
 local _, app = ...;
+local L = app.L;
 
 -- Global locals
 local pairs, type, ipairs, string_format, select, strtrim, math_min
@@ -201,6 +202,7 @@ app.GetCurrentFactionStandingText = function(factionID, requestedStanding, textO
 	end
 	return ColorizeStandingText(standing, textOverride or friendStandingText or _G["FACTION_STANDING_LABEL" .. standing] or UNKNOWN);
 end
+-- This is ONLY used by the ItemHarvester to try and find related Faction from an Item tooltip
 app.GetFactionStandingThresholdFromString = function(replevel)
 	replevel = strtrim(replevel);
 	for standing=1,8,1 do
@@ -209,6 +211,7 @@ app.GetFactionStandingThresholdFromString = function(replevel)
 		end
 	end
 end
+
 local cache = app.CreateCache("factionID");
 local function CacheInfo(t, field)
 	local _t, id = cache.GetCached(t);
@@ -221,7 +224,7 @@ local function CacheInfo(t, field)
 	if lore then
 		_t.lore = lore;
 	elseif not name then
-		_t.description = app.L["FACTION_SPECIFIC_REP"];
+		_t.description = L["FACTION_SPECIFIC_REP"];
 	end
 	if friendshipName then
 		t.isFriend = true;

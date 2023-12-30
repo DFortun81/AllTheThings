@@ -14,7 +14,7 @@ local c_create, c_yield, c_resume, c_status
 	= coroutine.create, coroutine.yield, coroutine.resume, coroutine.status;
 
 local function PrintError(err, source, co)
-	print(source,":Error:",err)
+	print("ERROR:",source,":",err)
 	if co and app.Debugging then
 		local instanceTrace = debugstack(co);
 		print(instanceTrace)

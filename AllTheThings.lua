@@ -6079,12 +6079,12 @@ tinsert(app.EventHandlers.OnReady, function()
 			end
 			return oldAddWaypoint(self, m, x, y, opts, root, ...);
 		end
-		
+
 		local function AreAnyATTWaypointsPersisted()
 			-- If there are any persisted waypoints, recover their tooltips
 			local waypointsByMapID = tomTom.waypoints;
 			if not waypointsByMapID then return false; end
-			
+
 			local any = false;
 			for mapID,waypointsByMap in pairs(waypointsByMapID) do
 				for waypointUID,waypoint in pairs(waypointsByMap) do
@@ -11467,7 +11467,7 @@ function AllTheThings_MinimapButtonOnEnter(self, button)
 			GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
 		end
 		GameTooltipIcon:Show();
-		
+
 		local left, right = strsplit(DESCRIPTION_SEPARATOR, reference.title);
 		GameTooltip:AddDoubleLine(reference.text, reference.progressText, 1, 1, 1);
 		GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
@@ -13323,7 +13323,7 @@ RowOnEnter = function (self)
 		if reference.timeRemaining then
 			GameTooltip:AddLine(app.GetColoredTimeRemaining(reference.timeRemaining));
 		end
-		
+
 		-- Calculate Best Drop Percentage. (Legacy Loot Mode)
 		if reference.itemID and not reference.speciesID and not reference.spellID and app.Settings:GetTooltipSetting("DropChances") then
 			local numSpecializations = GetNumSpecializations();
@@ -14080,7 +14080,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 			-- app.PrintDebug("StopProcessing",suffix)
 			-- window.CloseButton:SetNormalTexture(closeTexture);
 		end
-		
+
 		-- Setup the Event Handlers
 		local handlers = {};
 		window:SetScript("OnEvent", function(self, e, ...)
@@ -14945,7 +14945,7 @@ local function RefreshData()
 	-- Send an Update to the Windows to Rebuild their Row Data
 	if app.refreshDataForce then
 		app.refreshDataForce = nil;
-		
+
 		-- Execute the OnRecalculate handlers.
 		for i,handler in ipairs(app.EventHandlers.OnRecalculate) do
 			handler();
@@ -18856,7 +18856,7 @@ app.LoadDebugger = function()
 					end
 				end
 			end
-			
+
 			-- Setup Event Handlers and register for events
 			self:SetScript("OnEvent", function(self, e, ...)
 				app.PrintDebug(e, ...);
@@ -19618,6 +19618,11 @@ app.Startup = function()
 	app:RegisterEvent("PET_BATTLE_OPENING_START")
 	app:RegisterEvent("PET_BATTLE_CLOSE")
 
+	-- Execute the OnStartup handlers.
+	for i,handler in ipairs(app.EventHandlers.OnStartup) do
+		handler();
+	end
+
 	-- See if any Modules have 'OnStartup' functions defined, and call them now
 	app.DoModuleEvent("OnStartup")
 
@@ -19765,11 +19770,6 @@ app.InitDataCoroutine = function()
 
 	-- Perform Heirloom caching/upgrade generation
 	app.CacheHeirlooms();
-	
-	-- Execute the OnStartup handlers.
-	for i,handler in ipairs(app.EventHandlers.OnStartup) do
-		handler();
-	end
 
 	-- Update character known professions
 	app.RefreshTradeSkillCache();
@@ -19779,7 +19779,7 @@ app.InitDataCoroutine = function()
 	for questID,completion in pairs(currentQuestsCache) do
 		if completion == 2 then currentQuestsCache[questID] = nil; end
 	end
-	
+
 	-- Trigger symlink population runner for Achievements to handle
 	-- the generation of 'achievement_criteria' into the Main list
 	PrePopulateAchievementSymlinks()
@@ -19810,11 +19810,6 @@ app.InitDataCoroutine = function()
 	-- now that the addon is ready, make sure the minilist is updated to the current location if necessary
 	DelayedCallback(app.LocationTrigger, 3);
 
-	-- Execute the OnReady handlers.
-	for i,handler in ipairs(app.EventHandlers.OnReady) do
-		handler();
-	end
-	
 	app:RegisterEvent("HEIRLOOMS_UPDATED");
 	app:RegisterEvent("ARTIFACT_UPDATE");
 	app:RegisterEvent("TOYS_UPDATED");
@@ -19828,6 +19823,11 @@ app.InitDataCoroutine = function()
 	-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
 	app.IsReady = true;
 	-- app.PrintDebug("ATT is Ready!");
+
+	-- Execute the OnReady handlers.
+	for i,handler in ipairs(app.EventHandlers.OnReady) do
+		handler();
+	end
 
 	-- See if any Modules have 'OnReady' functions defined, and call them now
 	app.DoModuleEvent("OnReady")
@@ -20310,7 +20310,7 @@ end
 app.events.PLAYER_LEVEL_UP = function(newLevel)
 	-- print("PLAYER_LEVEL_UP")
 	app.Level = newLevel;
-	
+
 	-- Execute the OnPlayerLevelUp handlers.
 	for i,handler in ipairs(app.EventHandlers.OnPlayerLevelUp) do
 		handler();
