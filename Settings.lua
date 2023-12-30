@@ -509,7 +509,7 @@ settings.GetRawSettings = function(self, name)
 end
 settings.GetModeString = function(self)
 	local mode = L["MODE"]
-	if settings:Get("Thing:Transmog") or settings:Get("DebugMode") then
+	if settings:Get("Thing:Transmog") or app.MODE_DEBUG then
 		if self:Get("Completionist") then
 			mode = L["TITLE_COMPLETIONIST"] .. mode
 		else
@@ -1501,7 +1501,7 @@ child.CreateTrackingCheckbox = function(frame, localeKey, thing, parentThing)
 	local cb = frame:CreateCheckBox(name,
 		function(self)
 			self:SetChecked(settings:Get(trackingOption))
-			if settings:Get("DebugMode") or (parentTrackingOption and not settings:Get(parentTrackingOption)) then
+			if app.MODE_DEBUG or (parentTrackingOption and not settings:Get(parentTrackingOption)) then
 				self:Disable()
 				self:SetAlpha(0.4)
 			else
@@ -1644,7 +1644,7 @@ textModeExplain:SetPoint("TOPLEFT", headerMode, "BOTTOMLEFT", 0, -4)
 
 local checkboxDebugMode = child:CreateCheckBox(L["DEBUG_MODE"],
 function(self)
-	self:SetChecked(settings:Get("DebugMode"))
+	self:SetChecked(app.MODE_DEBUG)
 end,
 function(self)
 	settings:SetDebugMode(self:GetChecked())
@@ -1654,8 +1654,8 @@ checkboxDebugMode:SetPoint("TOPLEFT", textModeExplain, "BOTTOMLEFT", -2, -2)
 
 local checkboxAccountMode = child:CreateCheckBox(L["ACCOUNT_MODE"],
 function(self)
-	self:SetChecked(settings:Get("AccountMode"))
-	if settings:Get("DebugMode") then
+	self:SetChecked(app.MODE_ACCOUNT)
+	if app.MODE_DEBUG then
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
@@ -1680,7 +1680,7 @@ function(self)
 		self.Text:SetText(app.ccColors.Default..self.Text:GetText())
 	end
 	self:SetChecked(settings:Get("FactionMode"))
-	if settings:Get("DebugMode") or not settings:Get("AccountMode") then
+	if app.MODE_DEBUG or not app.MODE_ACCOUNT then
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
@@ -1708,7 +1708,7 @@ settings.checkboxSkipAutoRefresh = checkboxSkipAutoRefresh	-- So the Refresh fun
 local checkboxShowAllTrackableThings = child:CreateCheckBox(L["SHOW_INCOMPLETE_THINGS_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Show:TrackableThings"))
-	if settings:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
@@ -1728,7 +1728,7 @@ local headerAccountThings = child:CreateHeaderLabel(L["ACCOUNT_THINGS_LABEL"])
 headerAccountThings:SetPoint("LEFT", headerMode, 0, 0)
 headerAccountThings:SetPoint("TOP", checkboxAccountMode, "BOTTOM", 0, -10)
 headerAccountThings.OnRefresh = function(self)
-	if settings:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		self:SetAlpha(0.4)
 	else
 		self:SetAlpha(1)
@@ -1741,7 +1741,7 @@ accwideCheckboxTransmog:SetPoint("TOPLEFT", headerAccountThings, "BOTTOMLEFT", -
 local checkboxTransmog = child:CreateCheckBox(L["TMOG_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Thing:Transmog"))
-	if settings:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
@@ -1762,7 +1762,7 @@ checkboxTransmog:AlignAfter(accwideCheckboxTransmog)
 local checkboxSources = child:CreateCheckBox(L["COMPLETIONIST_MODE"],
 function(self)
 	self:SetChecked(settings:Get("Completionist"))
-	if not settings:Get("Thing:Transmog") and not settings:Get("DebugMode") then
+	if not settings:Get("Thing:Transmog") and not app.MODE_DEBUG then
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
@@ -1782,7 +1782,7 @@ function(self)
 	local rPerc, gPerc, bPerc = GetClassColor(classFilename)
 	self.Text:SetTextColor(rPerc, gPerc, bPerc, 1)
 	self:SetChecked(settings:Get("MainOnly"))
-	if settings:Get("Completionist") or settings:Get("AccountMode") or settings:Get("DebugMode") then
+	if settings:Get("Completionist") or app.MODE_ACCOUNT or app.MODE_DEBUG then
 		self:SetChecked(false)
 		self:Disable()
 		self:SetAlpha(0.4)
@@ -1835,7 +1835,7 @@ local headerGeneralThings = child:CreateHeaderLabel(L["GENERAL_THINGS_LABEL"])
 headerGeneralThings:SetPoint("LEFT", headerMode, 0, 0)
 headerGeneralThings:SetPoint("TOP", accwideCheckboxToys, "BOTTOM", 0, -10)
 headerGeneralThings.OnRefresh = function(self)
-	if settings:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		self:SetAlpha(0.4)
 	else
 		self:SetAlpha(1)
@@ -1909,7 +1909,7 @@ local headerExpansionThings = child:CreateHeaderLabel(L["EXPANSION_THINGS_LABEL"
 headerExpansionThings:SetPoint("LEFT", headerMode, 0, 0)
 headerExpansionThings:SetPoint("TOP", checkboxTitles, "BOTTOM", 0, -10)
 headerExpansionThings.OnRefresh = function(self)
-	if settings:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		self:SetAlpha(0.4)
 	else
 		self:SetAlpha(1)
@@ -1951,7 +1951,7 @@ child:CreateTrackingCheckbox("DRAKEWATCHERMANUSCRIPTS", "DrakewatcherManuscripts
 local headerGeneralContent = child:CreateHeaderLabel(L["GENERAL_CONTENT"])
 headerGeneralContent:SetPoint("TOPLEFT", headerAccountThings, 320, 0)
 headerGeneralContent.OnRefresh = function(self)
-	if settings:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		self:SetAlpha(0.4)
 	else
 		self:SetAlpha(1)
@@ -1961,7 +1961,7 @@ end
 local checkboxShowUnboundItems = child:CreateCheckBox(L["SHOW_BOE_CHECKBOX"],
 function(self)
 	self:SetChecked(not settings:Get("Hide:BoEs"))	-- Inversed, so enabled = show
-	if settings:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
@@ -1978,7 +1978,7 @@ checkboxShowUnboundItems:SetPoint("TOPLEFT", headerGeneralContent, "BOTTOMLEFT",
 local checkboxIgnoreUnboundFilters = child:CreateCheckBox(L["IGNORE_FILTERS_FOR_BOES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Filter:BoEs"))
-	if settings:Get("Hide:BoEs") or settings:Get("AccountMode") or settings:Get("DebugMode") then
+	if settings:Get("Hide:BoEs") or app.MODE_ACCOUNT or app.MODE_DEBUG then
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
@@ -1996,7 +1996,7 @@ checkboxIgnoreUnboundFilters:AlignBelow(checkboxShowUnboundItems, 1)
 local checkboxNoLevelFilter = child:CreateCheckBox(L["FILTER_THINGS_BY_LEVEL_CHECKBOX"],
 function(self)
 	self:SetChecked(not settings:Get("Filter:ByLevel"))	-- Inversed, so enabled = show
-	if settings:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
@@ -2014,7 +2014,7 @@ checkboxNoLevelFilter:AlignBelow(checkboxIgnoreUnboundFilters, -1)
 local checkboxNoSeasonalFilter = child:CreateCheckBox(L["SHOW_ALL_SEASONAL"],
 	function(self)
 		self:SetChecked(not settings:Get("Show:OnlyActiveEvents"))	-- Inversed, so enabled = show
-		if settings:Get("DebugMode") then
+		if app.MODE_DEBUG then
 			self:Disable()
 			self:SetAlpha(0.4)
 		else
@@ -2033,7 +2033,7 @@ checkboxNoSeasonalFilter:AlignBelow(checkboxNoLevelFilter)
 local checkboxShowPetBattles = child:CreateCheckBox(L["SHOW_PET_BATTLES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Show:PetBattles"))
-	if settings:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
@@ -2051,7 +2051,7 @@ checkboxShowPetBattles:AlignBelow(checkboxNoSeasonalFilter)
 local checkboxShowPvP = child:CreateCheckBox(L["SHOW_PVP_CHECKBOX"],
 function(self)
 	self:SetChecked(not settings:Get("Hide:PvP"))	-- Inversed, so enabled = show
-	if settings:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
@@ -2070,7 +2070,7 @@ local headerAutomatedContent = child:CreateHeaderLabel(L["CUSTOM_FILTERS_LABEL"]
 headerAutomatedContent:SetPoint("TOP", checkboxShowPvP, "BOTTOM", 0, -10)
 headerAutomatedContent:SetPoint("LEFT", headerGeneralContent, 0, 0)
 headerAutomatedContent.OnRefresh = function(self)
-	if settings:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		self:SetAlpha(0.4)
 	else
 		self:SetAlpha(1)
@@ -2081,7 +2081,7 @@ local textAutomatedContentExplain = child:CreateTextLabel(L["CUSTOM_FILTERS_EXPL
 textAutomatedContentExplain:SetPoint("TOPLEFT", headerAutomatedContent, "BOTTOMLEFT", 0, -4)
 textAutomatedContentExplain:SetWidth(320)
 textAutomatedContentExplain.OnRefresh = function(self)
-	if settings:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		self:SetAlpha(0.4)
 	else
 		self:SetAlpha(1)
@@ -2174,7 +2174,7 @@ end
 local headerUnobtainableContent = child:CreateHeaderLabel(L["UNOBTAINABLE_LABEL"])
 headerUnobtainableContent:SetPoint("TOPLEFT", ccCheckbox, "BOTTOMLEFT", 0, -10)	-- Place under the last Automated Content checkbox
 headerUnobtainableContent.OnRefresh = function(self)
-	if settings:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		self:SetAlpha(0.4)
 	else
 		self:SetAlpha(1)
@@ -2195,7 +2195,7 @@ local checkboxShowAllUnobtainable = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
 		end
 		self:SetChecked(not anyFiltered)
 		settings:SetValue("Unobtainable", "DoFiltering", anyFiltered)
-		if settings:Get("DebugMode") then
+		if app.MODE_DEBUG then
 			self:Disable()
 			self:SetAlpha(0.4)
 		else
@@ -2225,7 +2225,7 @@ function(self)
 		end
 	end
 	self:SetChecked(not anyFiltered)
-	if settings:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
@@ -2252,7 +2252,7 @@ for k,v in pairs(unobtainables) do
 		local filter = child:CreateCheckBox(v[3],
 		function(self)
 			self:SetChecked(settings:GetValue("Unobtainable", k))
-			if settings:Get("DebugMode") then
+			if app.MODE_DEBUG then
 				self:Disable()
 				self:SetAlpha(0.4)
 			else
@@ -2287,7 +2287,7 @@ function(self)
 		end
 	end
 	self:SetChecked(not anyFiltered)
-	if settings:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
@@ -2314,7 +2314,7 @@ for k,v in pairs(unobtainables) do
 		local filter = child:CreateCheckBox(v[3],
 		function(self)
 			self:SetChecked(settings:GetValue("Unobtainable", k))
-			if settings:Get("DebugMode") then
+			if app.MODE_DEBUG then
 				self:Disable()
 				self:SetAlpha(0.4)
 			else
@@ -2343,7 +2343,7 @@ local headerWeaponsAndArmor = child:CreateHeaderLabel(L["ITEM_FILTER_LABEL"])
 headerWeaponsAndArmor:SetPoint("LEFT", headerMode, 0, 0)
 headerWeaponsAndArmor:SetPoint("TOP", last, "BOTTOM", 0, -10)	-- Place under the last Unobtainable Content checkbox
 headerWeaponsAndArmor.OnRefresh = function(self)
-	if settings:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		self:SetAlpha(0.4)
 	else
 		self:SetAlpha(1)
@@ -2353,7 +2353,7 @@ end
 local textWeaponsAndArmorExplain = child:CreateTextLabel(L["ITEM_EXPLAIN_LABEL"])
 textWeaponsAndArmorExplain:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 0, -4)
 textWeaponsAndArmorExplain.OnRefresh = function(self)
-	if settings:Get("DebugMode") then
+	if app.MODE_DEBUG then
 		self:SetAlpha(0.4)
 	else
 		self:SetAlpha(1)
