@@ -19,30 +19,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			--i(209868),	-- Thornspeaker Ritual Knife need to be used on Astera (crs: 210988, 210989, 210990) @ 36.0, 61.0, EMERALD_DREAM to summon tammable beast
 			--
 			header(HEADERS.Item, 210961, bubbleDownSelf({ ["classes"] = { DEMONHUNTER }}, {	-- Alara'shinu
-				["description"] = "Follow coords attached to steps to obtain warglaive",
+				["description"] = "Follow coords attached to steps to obtain warglaive".,
 				["g"] = {
 					n(213029, {	-- Landeron Felfury
-						["name"] = "Step 1. Talk to this npc",
+						["name"] = "Step 1. Talk to this npc.",
 						["questID"] = 78606,
 						["coord"] = { 50.5, 61.0, EMERALD_DREAM },
 					}),
 					n(213114, {	-- Memory of Landeron Felfury
-						["name"] = "Step 2. Watch RP located in cave at Broken Shore",
+						["name"] = "Step 2. Watch RP located in cave at Broken Shore.",
 						["questID"] = 78622,
 						["coord"] = { 71.6, 41.5, BROKEN_SHORE },
 					}),
 					n(213186, {	-- Memory of Landeron Felfury
-						["name"] = "Step 3. Watch RP located in Temple of Elune in Val'sharah",
+						["name"] = "Step 3. Watch RP located in Temple of Elune in Val'sharah.",
 						["questID"] = 78623,
 						["coord"] = { 51.2, 56.8, VALSHARAH },
 					}),
 					n(213308, {	-- Warglaive
-						["name"] = "Step 4. Wait when deer bring warglaive and interact with it",
+						["name"] = "Step 4. Wait when deer bring warglaive and interact with it.",
 						["questID"] = 78677,
 						["coord"] = { 51.1, 57.1, VALSHARAH },
 					}),
 					n(213381, {	-- Warglaive
-						["name"] = "Step 5. Interact with warglaive again and loot Alara'shinu",
+						["name"] = "Step 5. Interact with warglaive again and loot Alara'shinu.",
 						["questID"] = 78678,
 						["coord"] = { 51.1, 57.1, VALSHARAH },
 						["g"] = {
@@ -52,21 +52,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			})),
 			header(HEADERS.Item, 210535, {	-- Mark of the Slumbering Somnowl
-				i(210565, {	-- Soft Somnowl Feather
-					["description"] = "Use Hibernate on Somnowls then interact with them.",
-				}),
-				i(210566, {	-- Somnowl Feather Strand
-					["cost"] = {
-						{ "i", 210565, 5 },	-- 5x Soft Somnowl Feather
-						{ "i", 4291, 1 },	-- 1x Silken Thread
-					},
-				}),
-				i(210535, {	-- Mark of the Slumbering Somnowl (CI!)
-					["cost"] = {
-						{ "i", 210566, 1 },	-- 1x Somnowl Feather Strand
-						{ "i", 194864, 3 },	-- 3x Runed Writhebark
-					},
-				}),
+				["description"] = "This is crafted using Somnowl Feather Strand and a Quality 3 Runed Writhebark.\n\nTo create the Somnowl Feather Strand, you will need to collect 5 x Soft Somnowl Feathers and bind them together using a Silken Thread (Auction House Vendor Item).\n\nTo collect the Soft Somnowl Feathers you will need to find Somnowls in the Emerald Dream sub-zone and cast Hibernate on them.\nOnce they are sleeping you can click on them to channel a short cast of Carefully Pilfering Feathers to pluck a feather.\nAfter you gather a feather, the Somnowl will get the debuff Recently Plucked, which prevents you from plucking the same Somnowl again within the next 5 minutes.",
+				["groups"] = {
+					i(210565, {	-- Soft Somnowl Feather
+					}),
+					i(210566, {	-- Somnowl Feather Strand
+						["cost"] = {
+							{ "i", 210565, 5 },	-- 5x Soft Somnowl Feather
+							{ "i", 4291, 1 },	-- 1x Silken Thread
+						},
+					}),
+					i(210535, {	-- Mark of the Slumbering Somnowl (CI!)
+						["cost"] = {
+							{ "i", 210566, 1 },	-- 1x Somnowl Feather Strand
+							{ "i", 194864, 3 },	-- 3x Runed Writhebark
+						},
+					}),
+				},
 			}),
 			header(HEADERS.Item, 210728, bubbleDownSelf({ ["classes"] = { DRUID }}, {	-- Moon-Blessed Claw
 				o(412995, {	-- Small Box of Vials
