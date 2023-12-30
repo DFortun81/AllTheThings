@@ -123,14 +123,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 			}),
-			n(COMMON_BOSS_DROPS, sharedData({ ["isWeekly"] = true }, {
+			n(207554, {		-- Verlann Timbercrush
 				["description"] = "Spawns at the end of the Superbloom Event.\nThe Event always starts on the hour.",
 				["coord"] = { 43.8, 71.8, EMERALD_DREAM },
-				["crs"] = {
-					-- if they add variable end bosses put their npcID here
-					-- if they have unqiue drops we can split it somehow
-					207554, -- Veriann Timbercrush
-				},
+				["isWeekly"] = true },
 				["groups"] = {
 					-- Cosmetic
 					i(210663),	-- Circlet of the Mother Tree
@@ -146,9 +142,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)	(Only Timbercrush)
 					i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)	(Only Timbercrush)
 				},
-				-- Looks like this was temp on PTR only
-				-- n(207543, { -- Marikke
-				-- }),
 			})),
 			n(REWARDS, {
 				i(211414, {	-- Blossoming Dreamtrove
