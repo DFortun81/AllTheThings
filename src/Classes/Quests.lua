@@ -1265,7 +1265,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		end
 	end,
 },
-"WithReputation", {
+app.IsClassic and "WithReputation" or false, {
 	collectible = function(t)
 		if app.Settings.Collectibles.Quests then
 			return app.Settings.Collectibles.Reputations or CollectibleAsQuest(t);

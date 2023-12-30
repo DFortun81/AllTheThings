@@ -365,27 +365,30 @@ app.CreateClass = function(className, classKey, fields, ...)
 	if total > 0 then
 		local conditionals = {};
 		for i=1,total,3 do
-			local class = args[i + 1];
-			tinsert(conditionals, args[i + 2]);
-			if class then
-				for key,method in pairs(fields) do
-					if not rawget(class, key) then
-						class[key] = method;
+			local subclassName = args[i];
+			if subclassName then
+				local class = args[i + 1];
+				tinsert(conditionals, args[i + 2]);
+				if class then
+					for key,method in pairs(fields) do
+						if not rawget(class, key) then
+							class[key] = method;
+						end
 					end
-				end
-				if class.collectibleAsCost then
-					local simpleclass = {};
-					for key,method in pairs(class) do
-						simpleclass[key] = method;
+					if class.collectibleAsCost then
+						local simpleclass = {};
+						for key,method in pairs(class) do
+							simpleclass[key] = method;
+						end
+						simpleclass.collectibleAsCost = app.ReturnFalse;
+						simpleclass.collectedAsCost = nil;
+						local simplemeta = BaseObjectFields(simpleclass, "Simple" .. className .. subclassName);
+						class.simplemeta = function(t) return simplemeta; end;
 					end
-					simpleclass.collectibleAsCost = app.ReturnFalse;
-					simpleclass.collectedAsCost = nil;
-					local simplemeta = BaseObjectFields(simpleclass, "Simple" .. className .. args[i]);
-					class.simplemeta = function(t) return simplemeta; end;
+					tinsert(conditionals, BaseObjectFields(class, className .. subclassName));
+				else
+					tinsert(conditionals, {});
 				end
-				tinsert(conditionals, BaseObjectFields(class, className .. args[i]));
-			else
-				tinsert(conditionals, {});
 			end
 		end
 		total = #conditionals;
