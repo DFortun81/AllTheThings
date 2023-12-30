@@ -467,7 +467,7 @@ end
 -- SkillLevel -- FilterGroupsBySkillLevel
 app.MaximumSkillLevel = 99999;
 DefineToggleFilter("SkillLevel", CharacterFilters,
-function(item)
+function(group)
 	if group.learnedAt then
         return app.MaximumSkillLevel >= group.learnedAt;
     end
