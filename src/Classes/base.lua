@@ -428,7 +428,7 @@ app.CreateClassWithInfo = function(className, classKey, classInfo, fields)
 	if not classInfo then
 		print("ClassInfo must be declared when using CreateClassWithInfo");
 	end
-	
+
 	-- Ensure that a key and _type field exists!
 	local class = {
 		__type = function() return className; end,
@@ -441,7 +441,7 @@ app.CreateClassWithInfo = function(className, classKey, classInfo, fields)
 	else
 		print("A Class has already been defined with that name!", className);
 	end
-	
+
 	local classConstructor = function(id, t)
 		if t then
 			if not t.g and t[1] then
@@ -515,6 +515,57 @@ app.WrapObject = function(object, baseObject)
 			return objectMetaIndex[key] or baseObject[key];
 		end
 	});
+end
+
+-- Create a local cache table which can be used by a Type class of a Thing to easily store shared
+-- information based on a unique key field for any Thing object of that Type
+app.CreateCache = function(idField)
+	local cache, _t, v = {};
+	cache.GetCached = function(t)
+		local id = t[idField];
+		if id then
+			_t = cache[id];
+			if not _t then
+				_t = {};
+				cache[id] = _t;
+			end
+			return _t, id;
+		end
+		app.PrintDebug("CACHE_MISS",idField,t.__type,t.hash)
+		app.PrintTable(t)
+	end;
+	cache.GetCachedField = function(t, field, default_function)
+		--[[ -- Debug Prints
+		local _t, id = cache.GetCached(t);
+		app.PrintDebug("GetCachedField",t.hash,id,field,_t[field]);
+		--]]
+		_t = cache.GetCached(t);
+		if _t then
+			-- set a default provided cache value if any default function was provided and evalutes to a value
+			v = _t[field];
+			if not v and default_function then
+				local defVal = default_function(t, field);
+				if defVal then
+					v = defVal;
+					_t[field] = v;
+				end
+			end
+			return v;
+		end
+	end;
+	cache.SetCachedField = function(t, field, value)
+		--[[ Debug Prints
+		local _t, id = cache.GetCached(t);
+		if _t[field] then
+			print("SetCachedField",id,field,"Old",t[field],"New",value);
+		else
+			print("SetCachedField",id,field,"New",value);
+		end
+		--]]
+		_t = cache.GetCached(t);
+		if _t then _t[field] = value; end
+	end;
+	return cache;
 end
 
 --[[
