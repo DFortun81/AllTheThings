@@ -573,6 +573,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 10,
 					["groups"] = {
 						i(67414),	-- Bag of Shiny Things
+						i(69956),	-- Blind Cavefish
 					},
 				}),
 				q(1195, {	-- The Sacred Flame (1/3)
@@ -901,7 +902,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = {{"select","itemID",
 						16059,	-- Common Brown Shirt
 						3428,	-- Common Grey Shirt
-						16060,	-- Common White Shirt	
+						16060,	-- Common White Shirt
 						837,	-- Heavy Weave Armor
 						3589,	-- Heavy Weave Belt
 						3590,	-- Heavy Weave Bracers
