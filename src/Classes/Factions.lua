@@ -12,6 +12,7 @@ local pairs, type, ipairs, string_format, select, strtrim, math_min
 -- App locals
 local AssignChildren = app.AssignChildren;
 local ATTAccountWideData
+local DESCRIPTION_SEPARATOR = "`";-- temporary
 
 -- Module locals
 local GetProgressColor = app.Modules.Color.GetProgressColor;
