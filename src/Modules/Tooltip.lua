@@ -113,6 +113,7 @@ local HookableTooltips = {
 	["RSMapItemToolTip"]=1,
 	-- Townlong Yak addons seem to use alternate, automatically appended tooltips now...
 	["NotGameTooltip"]=1,
+	["NotGameTooltip1"]=1,
 	["NotGameTooltip0"]=1,
 	["NotGameTooltip01"]=1,
 	["NotGameTooltip012"]=1,
