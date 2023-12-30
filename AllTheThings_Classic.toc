@@ -21,7 +21,7 @@ src\base.lua
 lib\Callback.lua
 lib\Colors.lua
 # lib\Runner.lua
-# lib\Audio.lua
+lib\Audio.lua
 # lib\Refresh.lua
 lib\Sort.lua
 lib\Table.lua
@@ -39,7 +39,7 @@ lib\Table.lua
 classic\locales.lua
 
 # Search Cache
-# src\Cache.lua
+src\Cache.lua
 
 # Helper Modules
 src\Modules\RetrievingData.lua
@@ -57,10 +57,6 @@ db\Classic\LocalizationDB.lua
 # db\Classic\en_auto.lua
 # db\Classic\ReagentsDB.lua
 db\Presets.lua
-
-# Investigate why this was moved here instead of up there.
-src\Cache.lua
-lib\Audio.lua
 
 # Load object class templates
 src\Classes\base.lua
