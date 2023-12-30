@@ -694,8 +694,9 @@ end
 -- Query Completed Quests
 -- Used externally to indicate to the quest lib that a quest refresh should be performed
 -- Optional param: questID
-local RefreshQuestInfo;
+local RefreshAllQuestInfo, RefreshQuestInfo;
 if app.IsRetail then
+	local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback;
 	local MAX = 999999;
 	local CompleteQuestSequence = {};
 	local QueryCompletedQuests = function()
@@ -771,26 +772,26 @@ if app.IsRetail then
 		end
 		-- app.PrintDebugPrior("RefreshedQuestCompletionState")
 	end
-	local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback;
+	RefreshAllQuestInfo = function()
+		AfterCombatOrDelayedCallback(RefreshQuestCompletionState, 1);
+	end
 	RefreshQuestInfo = function(questID)
 		-- app.PrintDebug("RefreshQuestInfo",questID)
 		if questID then
 			RefreshQuestCompletionState(questID);
 		else
-			AfterCombatOrDelayedCallback(RefreshQuestCompletionState, 1);
+			RefreshAllQuestInfo();
 		end
 	end
 	
-	app:RegisterEvent("LOOT_OPENED");
-	app.events.LOOT_OPENED = function()
-		RefreshQuestInfo();
-	end
-	
 	-- Retail Event Handlers
-	tinsert(app.EventHandlers.OnRecalculate, RefreshQuestInfo);
-	tinsert(app.EventHandlers.OnStartup, RefreshQuestInfo);
-	tinsert(app.EventHandlers.OnPlayerLevelUp, RefreshQuestInfo);
+	app:RegisterEvent("LOOT_OPENED");
+	app.events.LOOT_OPENED = RefreshAllQuestInfo;
+	tinsert(app.EventHandlers.OnRecalculate, RefreshAllQuestInfo);
+	tinsert(app.EventHandlers.OnStartup, RefreshAllQuestInfo);
+	tinsert(app.EventHandlers.OnPlayerLevelUp, RefreshAllQuestInfo);
 else
+	local GetQuestsCompleted = GetQuestsCompleted;
 	local QueryCompletedQuests = function()
 		-- Mark all previously completed quests.
 		if C_QuestLog_GetAllCompletedQuestIDs then
