@@ -9072,6 +9072,11 @@ itemFields.collectibleAsUpgrade = app.Modules.Upgrade.CollectibleAsUpgrade;
 app.BaseItem = app.BaseObjectFields(itemFields, "BaseItem");
 
 local fields = RawCloneData(itemFields);
+fields.collectible = itemFields.collectibleAsFaction;
+fields.collected = itemFields.collectedAsFaction;
+app.BaseItemWithFactionID = app.BaseObjectFields(fields, "BaseItemWithFactionID");
+
+local fields = RawCloneData(itemFields);
 fields.collectible = itemFields.collectibleAsQuest;
 fields.collected = itemFields.collectedAsQuest;
 fields.trackable = itemFields.trackableAsQuest;
