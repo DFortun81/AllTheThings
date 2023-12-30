@@ -1791,7 +1791,7 @@ HideBoEItemsCheckBox:SetPoint("TOPLEFT", FilterThingsBySkillLevelCheckBox, "BOTT
 local IgnoreFiltersForBoEsCheckBox = settings:CreateCheckBox("Ignore Filters for BoEs",
 function(self)
 	self:SetChecked(settings:Get("Filter:BoEs"));
-	if settings:Get("DebugMode") or self:Get("AccountMode") then
+	if settings:Get("DebugMode") or settings:Get("AccountMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
