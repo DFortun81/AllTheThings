@@ -578,7 +578,6 @@ root(ROOTS.Unsorted, {
 			i(72120),	-- Mist-Touched Leather
 			i(141624),	-- Love Potion No. 13
 			i(163186),	-- Fiery Hearthsteed
-			i(192796),	-- Explorer's Stonehide Packbeast
 			i(199547),	-- Spine-Reinforced Spaulders
 			i(199549),	-- Depth Delver's Spaulders
 			i(199856),	-- Rustic Tuskarr Trader's Pack
@@ -590,19 +589,9 @@ root(ROOTS.Unsorted, {
 			i(203431),	-- Ensemble: Burden of Unrelenting Justice
 			i(205455),	-- Telescope Lens
 			i(207460),	-- Dreadsquall Eggshell Fragment
-			i(208084),	-- Technoscryers
 			i(208201),	-- Paper Scraps
 			i(208202),	-- Neltharion Agent Instructions
-			i(208450),	-- Coiled Explorer's Rope
 			i(208451),	-- Archivist's Buckled Cap
-			i(208452),	-- Adventurer's Buckled Hat
-			i(208453),	-- Explorer's Super Scooper
-			i(208454),	-- Explorer's Mining Pick
-			i(208455),	-- Explorer's Sturdy Hook
-			i(208456),	-- Explorer's Hefty Pack
-			i(208457),	-- Explorer's Spelunking Torch
-			i(208458),	-- Explorer's Extravagant Lantern
-			i(208459),	-- Explorer's Improvised Cudgel
 			i(208470),	-- Greenstone Breastplate
 			i(208471),	-- Sentinel's Chestpiece
 			i(208472),	-- Greenstone Gauntlets
@@ -1029,11 +1018,6 @@ root(ROOTS.Unsorted, {
 			i(212630),	-- Reins of the Majestic Azure Peafowl
 			i(212631),	-- Reins of the Brilliant Sunburst Peafowl
 			i(212632),	-- Reins of the Starry Twilight Peafowl
-			i(212633),	-- [PH] Explorer Chest
-			i(212634),	-- [PH] Explorer Gloves
-			i(212635),	-- [PH] Explorer Waist
-			i(212636),	-- [PH] Explorers Pants
-			i(212637),	-- [PH] Explorer Boots
 			i(212638),	-- [PH] Unearthed Chest
 			i(212639),	-- [PH] Unearthed Gloves
 			i(212640),	-- [PH] Unearthed Waist

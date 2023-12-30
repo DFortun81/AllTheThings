@@ -262,18 +262,11 @@ root(ROOTS.NeverImplemented, {
 
 			-- 10.1.7
 			tier(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
-				i(208546),	-- Explorer's Rose-Tinted Glasses [Recruit a Friend?]
-				i(208547),	-- Explorer's Reading Spectacles [Recruit a Friend?]
 				i(209053),	-- Green Brewfest Bulwark [Brewfest]
 			})),
 
 			-- 10.2.0
 			tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
-					------ Darnassian Questline? ------
-				i(210415),	-- Darnassian Moonsilver Spaulders
-				i(210418),	-- Darnassian Cloak
-				i(210424),	-- Darnassian Tabard
-
 					------ Trading Post ------
 				n(SETS, {
 					------ Wastewander Tracker ------

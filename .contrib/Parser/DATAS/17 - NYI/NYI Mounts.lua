@@ -777,9 +777,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(192792, {	-- PH Thunder Lizard Green (MOUNT!)
 				-- ["modelID"] = ,
 			}),
-			i(192796, {	-- PH Thunder Lizard Light (MOUNT!)
-				-- ["modelID"] = ,
-			}),
 			-- Without MountID Attached
 			i(194106, {	-- Highland Drake (MOUNT!)
 				--["modelID"] = ,

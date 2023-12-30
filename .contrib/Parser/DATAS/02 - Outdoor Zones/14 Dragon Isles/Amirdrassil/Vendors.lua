@@ -14,10 +14,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 }, 
 					i(210424, {	-- Darnassian Tabard
 						["cost"] = { { "c", DRAGON_SUPPLIES, 250 } },
 					}),
-					i(210418, {	-- Darnassian Cloak
+					i(210418, {	-- Darnassian Cloak (COSMETIC!)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 250 } },
 					}),
-					i(210415, {	-- Darnassian Moonsilver Spaulders
+					i(210415, {	-- Darnassian Moonsilver Spaulders (COSMETIC!)
 						["cost"] = { { "c", DRAGON_SUPPLIES, 250 } },
 					}),
 				},

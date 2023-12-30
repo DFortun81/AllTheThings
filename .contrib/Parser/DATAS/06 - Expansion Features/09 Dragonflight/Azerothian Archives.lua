@@ -55,6 +55,27 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(QUESTS, {
+				q(77325, {	-- To the Archives!
+					["provider"] = { "o", 405593 },	-- Azerothian Archives!
+					["coord"] = { 46.6, 47.5, VALDRAKKEN },
+				}),
+				q(77267, {	-- Excavation 101
+					["sourceQuests"] = { 77325 },	-- To the Archives!
+					["provider"] = { "n", 208614 },	-- Roska Rocktooth
+					["coord"] = { 61.5, 31.1, THALDRASZUS },
+					["g"] = {
+						i(210956),	-- Archivist's Fire Totem (QI!)
+					},
+				}),
+				q(77231, {	-- Technoscrying 101
+					["sourceQuests"] = { 77325 },	-- To the Archives!
+					["provider"] = { "n", 208355 },	-- Zenata
+					["coord"] = { 61.6, 31.1, THALDRASZUS },
+					["g"] = {
+						i(208084),	-- Technoscryers (QI!)
+					},
+				}),
+				-- both quest above unlocked after 77325 cannot be completed as 31/12
 				q(79226, {	-- The Big Dig: Traitor's Rest
 					["coord"] = { 61.6, 31.3, THALDRASZUS },
 					["isWeekly"] = true,
@@ -72,73 +93,73 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(213536, {	-- Priceless Artifact
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 1000 } },
 						}),
-						i(212635, {	-- Historian's Utility Belt
+						i(212635, {	-- Historian's Utility Belt (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } },
 						}),
-						i(212634, {	-- Historian's Fingerless Gloves
+						i(212634, {	-- Historian's Fingerless Gloves (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } },
 						}),
-						i(212637, {	-- Historian's Striders
+						i(212637, {	-- Historian's Striders (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 5000 } },
 						}),
-						i(212636, {	-- Historian's Trousers
+						i(212636, {	-- Historian's Trousers (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 7000 } },
 						}),
-						i(212633, {	-- Historian's Fitted Vest
+						i(212633, {	-- Historian's Fitted Vest (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 7000 } },
 						}),
-						i(213276, {	-- Archivist's Magnifying Mace
+						i(213276, {	-- Archivist's Magnifying Mace (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(213275, {	-- Archivist's Rockpuller
+						i(213275, {	-- Archivist's Rockpuller (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(213274, {	-- Archivist's Pathfinder
+						i(213274, {	-- Archivist's Pathfinder (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(212870, {	-- Archivist's Stone Chisel
+						i(212870, {	-- Archivist's Stone Chisel (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(208459, {	-- Archivist's Improvised Cudgetl
+						i(208459, {	-- Archivist's Improvised Cudgetl (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(208458, {	-- Archivist's Extravagant Lantern
+						i(208458, {	-- Archivist's Extravagant Lantern (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(212941, {	-- Archivist's "Light Touch"
+						i(212941, {	-- Archivist's "Light Touch" (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(208457, {	-- Archivist's Spelunking Torch
+						i(208457, {	-- Archivist's Spelunking Torch (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(208455, {	-- Archivist's Sturdy Hook
+						i(208455, {	-- Archivist's Sturdy Hook (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(208454, {	-- Archivist's Mining Pick
+						i(208454, {	-- Archivist's Mining Pick (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(208453, {	-- Archivist's Super Scooper
+						i(208453, {	-- Archivist's Super Scooper (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(208450, {	-- Coiled Archivist's Rope
+						i(208450, {	-- Coiled Archivist's Rope (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 10000 } },
 						}),
-						i(208547, {	-- Archivist's Reading Spectacles
+						i(208547, {	-- Archivist's Reading Spectacles (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 12000 } },
 						}),
-						i(208546, {	-- Archivist's Rose-Tinted Glasses
+						i(208546, {	-- Archivist's Rose-Tinted Glasses (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 12000 } },
 						}),
-						i(208456, {	-- Archivist's Elegant Bag
+						i(208456, {	-- Archivist's Elegant Bag (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 15000 } },
 						}),
-						i(212794, {	-- Historian's Hefty Habersack
+						i(212794, {	-- Historian's Hefty Habersack (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 15000 } },
 						}),
-						i(208452, {	-- Historian's Dapper Cap
+						i(208452, {	-- Historian's Dapper Cap (COSMETIC!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 15000 } },
 						}),
-						i(192796, {	-- Explorer's Stonehide Packbeast
+						i(192796, {	-- Explorer's Stonehide Packbeast (MOUNT!)
 							["cost"] = { { "c", MYSTERIOUS_FRAGMENT, 20000 } },
 						}),
 					},
