@@ -52,6 +52,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 						i(193785),	-- Forgestorm
 						i(193783),	-- Irontorch Igniter
 						i(193781),	-- Lavabearer Legwraps
+						i(194508),	-- Plans: Alvin the Anvil (RECIPE!)
 					},
 				}),
 				e(2494, {	-- Magmatusk

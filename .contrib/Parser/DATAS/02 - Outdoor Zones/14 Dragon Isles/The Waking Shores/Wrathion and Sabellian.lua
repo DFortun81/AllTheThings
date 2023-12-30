@@ -457,6 +457,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["questID"] = 74052,
 					["isDaily"] = true,
 					["g"] = {
+						i(194508),	-- Plans: Alvin the Anvil (RECIPE!)
 						i(194503),	-- Plans: Black Dragon Touched Hammer (RECIPE!)
 					},
 				}),
@@ -521,7 +522,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				n(188625, {	-- Lorena Belle
 					["coord"] = { 25.2, 55.8, THE_WAKING_SHORES },
-					["g"] = bubbleDownRep(FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, {
+					["g"] = bubbleDownRep(FACTION_WRATHION, {
 						{		-- Acquaintance --
 						}, {	-- Cohort --
 							i(200707, {	-- Armoire of Endless Cloaks (TOY!)
@@ -691,7 +692,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				n(188623, {	-- Samia Inkling
 					["coord"] = { 24.7, 56.8, THE_WAKING_SHORES },
-					["g"] = bubbleDownRep(FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, {
+					["g"] = bubbleDownRep(FACTION_SABELLIAN, {
 						{		-- Acquaintance --
 						}, {	-- Cohort --
 							i(200952, {	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
@@ -892,10 +893,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				i(202173, {	-- Magmote
 					["description"] = "Drops from mobs around the Obsidian Citadel after obtaining The Worldbreaker title.",
 				}),
-				i(194508, {	-- Plans: Alvin the Anvil (RECIPE!)
-					["description"] = "Drops Around Obsidian Citadel from Powerful Blacksmiths.",
-					["crs"] = { 187598 },	-- Rohzor Forgesmash
-				}),
 				i(194481, {	-- Plans: Obsidian Seared Crusher (RECIPE!)
 					["description"] = "Drops Around Obsidian Citadel.",
 				}),
@@ -918,7 +915,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				i(191255, {	-- Greater Obsidian Key
-					["description"] = "This Item will be deleted immediately if leaving the area!",
+					["description"] = "Leaving the area will delete this Item!",
 					["cost"] = {
 						{"i",191251,30},	-- 30x Key Fragment
 						{"i",193201, 3},	-- 3x Key Framing
