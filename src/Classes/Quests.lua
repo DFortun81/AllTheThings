@@ -1162,7 +1162,7 @@ end
 -- Quest Lib (From Classic)
 local createQuest = app.CreateClass("Quest", "questID", {
 	["text"] = app.IsClassic and function(t)
-		if t.repeatable then return "|cff0070DD" .. t.name .. "|r"; end
+		if t.repeatable then return "|cff0070DD" .. (t.name or RETRIEVING_DATA) .. "|r"; end
 		return t.name;
 	end or nil,
 	["name"] = function(t)
@@ -1307,7 +1307,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 end),
 "AsBreadcrumb", {
 	text = app.IsClassic and function(t)
-		return "|cffcbc3e3" .. t.name .. "|r";
+		return "|cffcbc3e3" .. (t.name or RETRIEVING_DATA) .. "|r";
 	end or nil,
 	collectible = function(t)
 		if app.Settings.Collectibles.Quests then
