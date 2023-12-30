@@ -780,7 +780,10 @@ if app.IsRetail then
 			AfterCombatOrDelayedCallback(RefreshQuestCompletionState, 1);
 		end
 	end
-
+	
+	app:RegisterEvent("LOOT_OPENED");
+	app.events.LOOT_OPENED = RefreshQuestInfo;
+	
 	-- Retail Event Handlers
 	tinsert(app.EventHandlers.OnRecalculate, RefreshQuestInfo);
 	tinsert(app.EventHandlers.OnStartup, RefreshQuestInfo);
