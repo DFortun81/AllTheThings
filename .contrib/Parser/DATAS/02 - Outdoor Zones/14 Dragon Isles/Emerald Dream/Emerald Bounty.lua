@@ -159,43 +159,45 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 			}),
 			n(REWARDS, {
-				i(210219, {	-- Gigantic Dreamy Bounty
-					["provider"] = {"i", 208047, 1},	-- Gigantic Dreamseed
-					["sym"] = {
-						{"select", "npcID", 211265 },	-- Sylvia Whisperbloom
-						{"pop"},
-						{"where", "filterID", MOUNTS },
-						-- include possible blue seed loots (very likely so far that everything is available in higher tiers from lower)
-						{"select","itemID",210218},	-- Plump Dreamy Bounty
-						{"pop"},
-					},
-				}),
-				i(210218, {	-- Plump Dreamy Bounty
-					["provider"] = {"i", 208067, 1},	-- Plump Dreamseed
-					["sym"] = {
-						{"select", "npcID", 211265 },	-- Sylvia Whisperbloom
-						{"pop"},
-						{"where", "filterID", BATTLE_PETS },
-						{"pop"},
-					},
-					["g"] = {
-						i(210059),	-- Reins of the Winter Night Dreamsaber (MOUNT!) / should be from any dreamseed (according to blue post)
-						i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!)
-						i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back (DM!) / also was looted from purple
-						i(207772),	-- Grotto Netherwing Drake: Long Horns (DM!)
-						i(207769),	-- Grotto Netherwing Drake: Outcast Pattern (DM!)
-						i(210241),	-- Recipe: Dreamwalker's Healing Potion (RECIPE!)
-						i(210242),	-- Recipe: Slumbering Peacebloom Tea (RECIPE!)
-						i(210490),	-- Technique: Vantus Rune: Amirdrassil, the Dream's Hope (RECIPE!)
-						i(211065),	-- Technique: Mark of the Auric Dreamstag (RECIPE!)
-						--[Mark of the Boreal Dreamtalon] from blue bag
-						--[Mark of the Snowy Umbraclaw] from blue bag
-					},
-				}),
-				i(210217, {	-- Small Dreamy Bounty
-					["provider"] = {"i", 208066, 1},	-- Small Dreamseed
-					-- Dont Think we should symlink this?
-				}),
+				["groups"] = {
+					i(210219, {	-- Gigantic Dreamy Bounty
+						["provider"] = {"i", 208047, 1},	-- Gigantic Dreamseed
+						["sym"] = {
+							{"select", "npcID", 211265 },	-- Sylvia Whisperbloom
+							{"pop"},
+							{"where", "filterID", MOUNTS },
+							-- include possible blue seed loots (very likely so far that everything is available in higher tiers from lower)
+							{"select","itemID",210218},	-- Plump Dreamy Bounty
+							{"pop"},
+						},
+					}),
+					i(210218, {	-- Plump Dreamy Bounty
+						["provider"] = {"i", 208067, 1},	-- Plump Dreamseed
+						["sym"] = {
+							{"select", "npcID", 211265 },	-- Sylvia Whisperbloom
+							{"pop"},
+							{"where", "filterID", BATTLE_PETS },
+							{"pop"},
+						},
+						["g"] = {
+							i(210059),	-- Reins of the Winter Night Dreamsaber (MOUNT!) / should be from any dreamseed (according to blue post)
+							i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!)
+							i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back (DM!) / also was looted from purple
+							i(207772),	-- Grotto Netherwing Drake: Long Horns (DM!)
+							i(207769),	-- Grotto Netherwing Drake: Outcast Pattern (DM!)
+							i(210241),	-- Recipe: Dreamwalker's Healing Potion (RECIPE!)
+							i(210242),	-- Recipe: Slumbering Peacebloom Tea (RECIPE!)
+							i(210490),	-- Technique: Vantus Rune: Amirdrassil, the Dream's Hope (RECIPE!)
+							i(211065),	-- Technique: Mark of the Auric Dreamstag (RECIPE!)
+							--[Mark of the Boreal Dreamtalon] from blue bag
+							--[Mark of the Snowy Umbraclaw] from blue bag
+						},
+					}),
+					i(210217, {	-- Small Dreamy Bounty
+						["provider"] = {"i", 208066, 1},	-- Small Dreamseed
+						-- Dont Think we should symlink this?
+					}),
+				},
 			}),
 			n(VENDORS, {
 				n(211265, {	-- Sylvia Whisperbloom

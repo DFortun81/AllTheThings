@@ -25,7 +25,10 @@ local EncounterToCRS = {
 	[LARODAR] = { 208445 },	-- Larodar, Keeper of the Flame
 	[NYMUE] = { 206172 },	-- Nymue <Weaver of the Cycle>
 	[SMOLDERON] = { 200927 },	-- Smolderon <The Firelord>
-	[TINDRAL] = { 210601 },	-- Tindral Sageswift <Seer of Flame>
+	[TINDRAL] = { 
+		210601, 	-- Tindral Sageswift <Seer of Flame>
+		209090,		-- Tindral Sageswift <Seer of Flame> (You fight this ID)
+	},
 	[FYRAKK] = { 204931 },	-- Fyrakk <The Blazing>
 };
 

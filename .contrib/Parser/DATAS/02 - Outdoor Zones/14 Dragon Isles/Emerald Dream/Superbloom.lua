@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			n(207554, {		-- Verlann Timbercrush
 				["description"] = "Spawns at the end of the Superbloom Event.\nThe Event always starts on the hour.",
 				["coord"] = { 43.8, 71.8, EMERALD_DREAM },
-				["isWeekly"] = true },
+				["isWeekly"] = true,
 				["groups"] = {
 					-- Cosmetic
 					i(210663),	-- Circlet of the Mother Tree
@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210493),	-- Technique: Grotto Netherwing Drake: Spiked Jaw (RECIPE!)	(Only Timbercrush)
 					i(210491),	-- Technique: Winding Slitherdrake: Hairy Chin (RECIPE!)	(Only Timbercrush)
 				},
-			})),
+			}),
 			n(REWARDS, {
 				i(211414, {	-- Blossoming Dreamtrove
 					["description"] = "Granted for achieving 8000 points at the Superbloom Event.\nThe Event always starts on the hour.",

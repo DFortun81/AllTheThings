@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			--i(209868),	-- Thornspeaker Ritual Knife need to be used on Astera (crs: 210988, 210989, 210990) @ 36.0, 61.0, EMERALD_DREAM to summon tammable beast
 			--
 			header(HEADERS.Item, 210961, bubbleDownSelf({ ["classes"] = { DEMONHUNTER }}, {	-- Alara'shinu
-				["description"] = "Follow coords attached to steps to obtain warglaive".,
+				["description"] = "Follow coords attached to steps to obtain warglaive.",
 				["g"] = {
 					n(213029, {	-- Landeron Felfury
 						["name"] = "Step 1. Talk to this npc.",
