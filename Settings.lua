@@ -1978,7 +1978,7 @@ checkboxShowUnboundItems:SetPoint("TOPLEFT", headerGeneralContent, "BOTTOMLEFT",
 local checkboxIgnoreUnboundFilters = child:CreateCheckBox(L["IGNORE_FILTERS_FOR_BOES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:Get("Filter:BoEs"))
-	if settings:Get("Hide:BoEs") or settings:Get("DebugMode") then
+	if settings:Get("Hide:BoEs") or settings:Get("AccountMode") or settings:Get("DebugMode") then
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
