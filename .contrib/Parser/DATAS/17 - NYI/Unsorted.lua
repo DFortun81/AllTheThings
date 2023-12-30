@@ -1830,7 +1830,6 @@ root(ROOTS.Unsorted, {
 				i(194716),	-- Evorian Report
 				i(192476),	-- Expedition Bullwhip
 				i(197851),	-- Extra Crispy Mutton
-				i(200805),	-- Fallen Watcher Remains
 				i(200476),	-- Fallingwater Overlook VIP Entry Pass
 				i(199185),	-- Fanciful Strings
 				i(195460),	-- Fermented Musken Milk

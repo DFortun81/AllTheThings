@@ -710,12 +710,18 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 48.7, 86.8, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
 			["sourceQuest"] = 54969,	-- Descent
+			["groups"] = {
+				o(322066),	-- Ley Line Accumulator
+			},
 		}),
 		q(55092, {	-- Disruption of Power
 			["provider"] = { "n", 150196 },	-- First Arcanist Thalyssra
 			["coord"] = { 41.9, 80.6, NAZJATAR },
 			["races"] = HORDE_ONLY,
 			["sourceQuest"] = 54021,	-- The First Arcanist
+			["groups"] = {
+				o(322066),	-- Ley Line Accumulator
+			},
 		}),
 		q(56236, {	-- Down But Not Out
 			["provider"] = { "n", 151848 },	-- Lor'themar Theron

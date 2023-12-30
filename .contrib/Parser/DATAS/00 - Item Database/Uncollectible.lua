@@ -587,6 +587,7 @@ i(200780);	-- Dragon Horns
 i(200783);	-- Adorned Ohunan Jess
 i(200792);	-- Taxidermied Catch
 i(200802);	-- Signet of the Dragonflights
+i(200805);	-- Fallen Watcher Remains
 i(200806);	-- Woodcarving Stone
 i(200819);	-- Volatile Sparks
 i(200820);	-- Dry Wood Log
