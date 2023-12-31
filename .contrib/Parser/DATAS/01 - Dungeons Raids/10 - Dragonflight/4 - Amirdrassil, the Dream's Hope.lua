@@ -684,6 +684,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				}),
 			}),
 			Difficulty(LFR_RAID).AddGroupsWithUpgrades({
+				ZoneDrops({
+				}),
 				CommonBossDrops({
 					currency(WHELPLINGS_DREAMING_CREST, {
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
@@ -746,6 +748,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				}),
 			}),
 			Difficulty(NORMAL_RAID).AddGroupsWithUpgrades({
+				CommonBossDrops({
+					currency(DRAKES_DREAMING_CREST, {
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
+					}),
+				}),
 				n(QUESTS, {
 					q(78600, {	-- Amirdrassil, the Dream's Hope: Up in Smoke (N)
 						["provider"] = { "n", 210016 },	-- Tyrande Whisperwind
@@ -755,9 +762,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					}),
 				}),
 				ZoneDrops({
-				--	currency(DRAKES_DREAMING_CREST, {
-				--		["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
-				--	}),
 				}),
 				Boss(GNARLROOT),
 				Boss(IGIRA),
@@ -798,6 +802,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				}),
 			}),
 			Difficulty(HEROIC_RAID).AddGroupsWithUpgrades({
+				CommonBossDrops({
+					currency(WYRMS_DREAMING_CREST, {
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
+					}),
+				}),
 				n(QUESTS, {
 					q(78601, {	-- Amirdrassil, the Dream's Hope: Up in Smoke (H)
 						["provider"] = { "n", 210016 },	-- Tyrande Whisperwind
@@ -807,9 +816,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					}),
 				}),
 				ZoneDrops({
-				--	currency(WYRMS_DREAMING_CREST, {
-				--		["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
-				--	}),
 				}),
 				Boss(GNARLROOT),
 				Boss(IGIRA),
@@ -827,6 +833,11 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				}),
 			}),
 			Difficulty(MYTHIC_RAID).AddGroups({
+				CommonBossDrops({
+					currency(ASPECTS_DREAMING_CREST, {
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
+					}),
+				}),
 				n(QUESTS, {
 					q(78602, {	-- Amirdrassil, the Dream's Hope: Up in Smoke (M)
 						["provider"] = { "n", 210016 },	-- Tyrande Whisperwind
@@ -836,9 +847,6 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					}),
 				}),
 				ZoneDrops({
-				--	currency(ASPECTS_DREAMING_CREST, {
-				--		["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
-				--	}),
 				}),
 				n(ZONE_DROPS, sharedData({	-- First 2 week BoP version drops
 					["timeline"] = { ADDED_10_2_0, "removed 10.2.5" },
