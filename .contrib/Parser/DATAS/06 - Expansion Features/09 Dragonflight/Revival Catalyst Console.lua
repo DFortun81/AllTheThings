@@ -1845,7 +1845,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				})),
 			}))),
 			pvp(header(HEADERS.Achievement, SEASON_VERDANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {
-				--[[
 				n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {	-- "Tier Slots"
 					cl(DEATHKNIGHT, {
 						i(207203),	-- Casket of the Risen Nightmare
@@ -1939,7 +1938,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(207181),	-- Molten Vanguard's Steel Tassets
 					}),
 				})),
-				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 7479 }, {	-- "Off Slots"
+				n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {	-- "Off Slots"
 					cl(DEATHKNIGHT, {
 						i(207202),	-- Graveboots of the Risen Nightmare
 						i(207197),	-- Seal of the Risen Nightmare
@@ -2198,7 +2197,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						}),
 					},
 				})),
-				--]]
 			}))),
 			n(QUESTS, {
 				q(72360, {	-- Reviving the Machine

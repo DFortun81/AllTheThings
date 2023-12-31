@@ -603,6 +603,7 @@ localize(L.HEADER_NAMES, {
 	[-1000366] = "A Greedy Emissary",
 	[-1000367] = QUEST_REWARDS,
 	[-1000368] = GetDifficultyInfo(24),
+	[-1000369] = "Year 2024",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -1018,6 +1019,7 @@ localize(L.HEADER_ICONS, {
 	[-1000366] = "Interface/Icons/inv_misc_bag_horadricsatchel",
 	[-1000367] = _.asset("Interface_Rewards"),
 	[-1000368] = _.asset("Difficulty_Timewalking"),
+	[-1000369] = "Interface/Icons/inv_misc_missilesmall_green",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
