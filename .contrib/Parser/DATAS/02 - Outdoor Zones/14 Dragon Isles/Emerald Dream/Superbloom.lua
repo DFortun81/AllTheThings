@@ -176,14 +176,14 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 			q(78502),	-- pop with delay after new rare was killed and event 'end' / 'Sprouting Dreamtrove'?
 			q(78553),	-- pop if you loot any seed from Veriann Timbercrush (daily/weekly?)
 			--q(78554),	-- on 2nd kill with rare state of event - was looted small dreamseed
-			q(79082, {["repeatable"]=true}),	-- 'The Superbloom'
-			q(78866),	-- 'Superbloom: Step 2'
-			q(78867),	-- 'Superbloom: Step 3'
-			q(78868),	-- 'Superbloom: Step 4'
-			q(78869),	-- 'Superbloom: Step 6'
-			q(78870),	-- 'Superbloom: Step 7'
-			q(78871),	-- 'Superbloom: Step 8'
-			q(78892),	-- 'Superbloom: Step 9'
+			q(79082, {["repeatable"]=true}),	-- 'The Superbloom Event'
+			q(78866),	-- 'Superbloom: Step 2 Right Path'
+			q(78867),	-- 'Superbloom: Step 3 Right Path'
+			q(78868),	-- 'Superbloom: Step 4 Right Path'
+			q(78869),	-- 'Superbloom: Step 2 Left Path'
+			q(78870),	-- 'Superbloom: Step 3 Left Path'
+			q(78871),	-- 'Superbloom: Step 4 Left Path'
+			q(78892),	-- 'Superbloom: Final Step'
 			-- spells for achievement Fruit of the Bloom ach(19310)
 			q(78751),	-- Arachnid Annihilation (spellID 428203)
 			q(78487),	-- Basket of Explosive Acorns (spellID 424568)
