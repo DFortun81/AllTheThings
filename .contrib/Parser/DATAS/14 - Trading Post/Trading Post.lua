@@ -1262,6 +1262,189 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 	}),
+	n(YEAR2024, {
+		--[[n(JANUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52301" } }, {
+			n(MONTHLY_REWARD, {
+				pet(3255),	-- Buttercup (PET!)
+			}),
+			filter(BATTLE_PETS, {
+				i(190607, {	-- Garrlok (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 750}},
+				}),
+				i(210870, {	-- Mitzy (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
+			}),
+			filter(MOUNTS, {
+				i(210919, {	-- Crimson Glimmerfur (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
+			}),
+			filter(COSMETIC, {
+				i(211257, {	-- Arsenal Stormriders Stormhammers
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+					["classes"] = { DEATHKNIGHT, DRUID, EVOKER, MONK, ROGUE, PRIEST, PALADIN, SHAMAN, WARRIOR, ROGUE },
+					["g"] = {
+						i(211255),	-- Regal Stormhammer
+						i(211256),	-- Thundering Stormhammer
+					},
+				}),
+				i(208699, {	-- Battle Magisters Regalia
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+					["classes"] = MAGE,
+					["g"] = {
+						i(208695),	-- Battle Magister's Belt
+						i(208694),	-- Battle Magister's Epaulets
+						i(208693),	-- Battle Magister's Orbs
+					},
+				}),
+				i(208700, {	-- Battle Magisters Enchantments
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+					["classes"] = MAGE,
+					["g"] = {
+						i(208698),	-- Battle Magister's Scepter
+						i(208696),	-- Battle Magister's Scimitar
+						i(208697),	-- Battle Magister's Shard
+					},
+				}),
+				i(210869, {	-- Blademasters Azure Stones
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(211268, {	-- Blademasters Thundering Greatsword
+					["cost"] = {{"c", TRADERS_TENDER, 225}},
+				}),
+				i(210843, {	-- Candied Blade
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
+				i(190430, {	-- Chipped Gladius
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(211267, {	-- Classic Snowy Tabard
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190203, {	-- Craftsman Timber Mallet
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(211070, {	-- Crimson Treads of the Kaluak
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(208039, { -- Ember Court Soiree Gloves
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(210883, {	-- Ensemble: Scarlet Zealots Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 550}},
+					["groups"] = {
+						i(190444),	-- Scarlet Zealots Cassock
+						i(190427),	-- Scarlet Zealots Cloak
+						i(207029),	-- Scarlet Zealots Heater Shield
+					},
+				}),
+				i(190851, { -- Ensemble: Vagabonds Crimson Threads
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+						i(190827), -- Vagabonds Crimson Cape
+						i(190828), -- Vagabonds Crimson Hood
+					},
+				}),
+				i(190922, { -- Ensemble: Vagabond's Snowy Threads
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+						i(190882), -- Vagabond's Snowy Cape
+						i(190884), -- Vagabond's Snowy Hood
+					},
+				}),
+				i(190850, { -- Ensemble: Wanderers Crimson Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+						i(190825), -- Wanderer's Crimson Cloak
+						i(190826), -- Wanderer's Crimson Scarf
+					},
+				}),
+				i(190921, { -- Ensemble: Wanderer's Snowy Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+						i(190883), -- Wanderer's Snowy Cloak
+						i(190885), -- Wanderer's Snowy Scarf
+					},
+				}),
+				i(211130, {	-- Errant Crusaders Helm
+					["cost"] = {{"c", TRADERS_TENDER, 225}},
+				}),
+				i(190886, { -- Fine White Evening Gloves
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190874, {	-- Glittering Fel Gavel
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(208729, {	-- Imminence of Krag'wa's Executor
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+					["classes"] = SHAMAN,
+					["g"] = {
+						i(208712),	-- Headdress of Krag'wa's Executor
+						i(208713),	-- Idols of Krag'wa's Executor
+						i(208714),	-- Vines of Krag'wa's Executor
+					},
+				}),
+				i(208727, {	-- Hornstrider Hunters Camouflage
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+					["classes"] = HUNTER,
+					["g"] = {
+						i(208719),	-- Hornstrider Hunter's Ammunition
+						i(208718),	-- Hornstrider Hunter's Beak
+						i(208720),	-- Hornstrider Hunter's Crest
+					},
+				}),
+				i(208728, {	-- Hornstrider Hunters Preference
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+					["classes"] = HUNTER,
+					["g"] = {
+						i(208723),	-- Hornstrider Hunter's Harpooner
+						i(208722),	-- Hornstrider Hunter's Pride
+						i(208721),	-- Hornstrider Hunter's Serrator
+					},
+				}),
+				i(190685, {	-- Lost Crusaders Azure Battleaxe
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(208725, {	-- Scales of the Silver Hoarder
+					["cost"] = {{"c", TRADERS_TENDER, 450}},
+					["classes"] = EVOKER,
+					["g"] = {
+						i(208706),	-- Horns of the Silver Hoarder
+						i(208708),	-- Sash of the Silver Hoarder
+						i(208707),	-- Shoulderguards of the Silver Hoarder
+					},
+				}),
+				i(208730, {	-- Tools of Kragwas Executor
+					["cost"] = {{"c", TRADERS_TENDER, 750}},
+					["classes"] = SHAMAN,
+					["g"] = {
+						i(208716),	-- Hatchet of Krag'wa's Executor
+						i(208715),	-- Safeguard of Krag'wa's Executor
+						i(208717),	-- Talons of Krag'wa's Executor
+					},
+				}),
+				i(210844, {	-- Traders Crimson Sarong
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(210846, {	-- Traders Lively Sarong
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(208726, {	-- Treasure of the Silver Hoarder
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+					["classes"] = EVOKER,
+					["g"] = {
+						i(208710),	-- Flames of the Silver Hoarder
+						i(208709),	-- Flight of the Silver Hoarder
+						i(208711),	-- Saber of the Silver Hoarder
+					},
+				}),
+				i(211258, {	-- Wildhammer Scouts Headgear
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+			}),
+		})),--]]
+	}),
 }));
 root(ROOTS.HiddenQuestTriggers, {
 	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {	-- Is this tagged with NEVER_IMPLEMENTED incorrectly?
