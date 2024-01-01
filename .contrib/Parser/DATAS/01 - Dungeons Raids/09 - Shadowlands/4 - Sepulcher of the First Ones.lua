@@ -896,7 +896,10 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 				header(HEADERS.Achievement, 15418, {	-- The Grand Design
 					boss(THE_JAILER),
 				}),
+				-- #if AFTER 10.0.2
 				o(375368, {	-- Creation Catalyst Console
+					["description"] = "The catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
+					["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
 					["g"] = bubbleDown({ ["modID"] = 4 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = SymRaid(DEATHKNIGHT, 4),
@@ -1007,7 +1010,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 							},
 						}),
 					}),
-				}),					
+				}),
+				-- #endif
 			})),
 			d(NORMAL_PLUS_RAID, {
 				bossNoLoot(VIGILANT_GUARDIAN, {
@@ -1065,8 +1069,11 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 				boss(LORDS_OF_DREAD),
 				boss(RYGELON),
 				boss(THE_JAILER),
+				-- #if AFTER 10.0.2
 				o(375368, {	-- Creation Catalyst Console
-					["g"] = bubbleDown({ ["modID"] = 5 }, {
+					["description"] = "The catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
+					["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
+					["g"] = bubbleDown({ ["modID"] = 3 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = SymRaid(DEATHKNIGHT, 3),
 							["g"] = {
@@ -1176,7 +1183,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 							},
 						}),
 					}),
-				}),		
+				}),	
+				-- #endif
 			}),
 			d(HEROIC_PLUS_RAID, {
 				n(QUESTS, {
@@ -1230,7 +1238,10 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 				boss(LORDS_OF_DREAD),
 				boss(RYGELON),
 				boss(THE_JAILER),
+				-- #if AFTER 10.0.2
 				o(375368, {	-- Creation Catalyst Console
+					["description"] = "The catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
+					["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
 					["g"] = bubbleDown({ ["modID"] = 5 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = SymRaid(DEATHKNIGHT, 5),
@@ -1342,6 +1353,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 						}),
 					}),
 				}),
+				-- #endif
 			}),
 			d(MYTHIC_RAID, {
 				n(QUESTS, {
@@ -1406,7 +1418,10 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 					}),
 					ach(15471),	-- Cutting Edge: The Jailer
 				})),
+				-- #if AFTER 10.0.2
 				o(375368, {	-- Creation Catalyst Console
+					["description"] = "The catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
+					["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
 					["g"] = bubbleDown({ ["modID"] = 6 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = SymRaid(DEATHKNIGHT, 6),
@@ -1517,7 +1532,8 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 							},
 						}),
 					}),
-				}),	
+				}),
+				-- #endif
 			}),
 		},
 	}),

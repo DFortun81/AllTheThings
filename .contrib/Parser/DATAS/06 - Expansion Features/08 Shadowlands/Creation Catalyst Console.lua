@@ -58,7 +58,7 @@ end
 
 root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added 9.2.0" } }, {
 	o(375368, {	-- Creation Catalyst Console
-		["description"] = "Help us gather information of what is/isnt available via doing reports in ATT discord. Especially the alternative sets and if the pvp transmog is available somewhere else",
+	--	["description"] = "Help us gather information of what is/isnt available via doing reports in ATT discord. Especially the alternative sets and if the pvp transmog is available somewhere else",
 		["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
 		["modelScale"] = 3,
 		["sourceQuests"] = { 64842 },	-- Flora Frenzy
@@ -177,6 +177,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 				})),
 			}),
+			-- #if BEFORE 10.0.2
 			d(NORMAL_RAID, {
 				["description"] = "Items between 252 and 262 item level will take the Normal appearance.\nSeason 4 (speculated): between item level 278 and 288.",
 				["g"] = bubbleDown({ ["modID"] = 3 }, {
@@ -516,6 +517,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { "added
 					}),
 				}),
 			}),
+			-- #endif
 			pvp(n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_0 } }, {
 				["description"] = "This is theorized to be available from PvP gear.",
 				["g"] = bubbleDown({ ["bonusID"] = 7897 }, {
