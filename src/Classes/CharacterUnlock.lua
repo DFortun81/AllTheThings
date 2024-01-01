@@ -27,7 +27,7 @@ local function SavedAsQuest(t)
 	return IsQuestFlaggedCompleted(t.questID)
 end
 local function SavedAsSpell(t)
-	return t.spellID and IsSpellKnownHelper(t.spellID)
+	return IsSpellKnownHelper(t.spellID)
 end
 
 api.OnStartup = function(ATTAccountWideData)
@@ -79,13 +79,16 @@ api.OnLoad = function()
 	end
 	-- Defines a Class type which provides some character-based collectible by spelID
 	app.CreateCharacterUnlockSpell = function(id, t)
-		if id then
+		if id and id > 0 then
 			if t and t.itemID then
 				return CreateCharacterUnlockSpellItem(id, t)
 			end
 			return CreateCharacterUnlockSpell(id, t)
-		else
-			return setmetatable({text="ERROR: CreateCharacterUnlockSpell missing spellID"},app.BaseClass);
+		elseif t.itemID then
+			return app.CreateItem(t.itemID, t);
+		elseif t then
+			t.text = "INVALID SPELL UNLOCK";
+			return setmetatable(t, app.BaseClass);
 		end
 	end
 end

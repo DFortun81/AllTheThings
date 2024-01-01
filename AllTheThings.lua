@@ -7371,15 +7371,19 @@ local function default_link(t)
 end
 local CollectedSpeciesHelper = setmetatable({}, {
 	__index = function(t, key)
-		local num = C_PetJournal_GetNumCollectedInfo(key);
-		if not num then
-			app.PrintDebug("SpeciesID " .. key .. " was not found.");
-		elseif num > 0 then
-			t[key] = 1;
-			if PerCharacterSpecies[key] then
-				ATTAccountWideData.BattlePets[key] = 1
+		if key > 0 then
+			local num = C_PetJournal_GetNumCollectedInfo(key);
+			if not num then
+				app.PrintDebug("SpeciesID " .. key .. " was not found.");
+			elseif num > 0 then
+				t[key] = 1;
+				if PerCharacterSpecies[key] then
+					ATTAccountWideData.BattlePets[key] = 1
+				end
+				return 1;
 			end
-			return 1;
+		else
+			return 0;
 		end
 	end
 });
