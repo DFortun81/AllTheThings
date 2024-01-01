@@ -1246,9 +1246,6 @@ root(ROOTS.NeverImplemented, {
 				i(193587, {	-- Time-Lost Duck (PET!)
 					["modelID"] = 106635,
 				}),
-				i(193429, {	-- Time-Lost Salamanther (PET!)
-					["modelID"] = 106624,
-				}),
 				i(193620, {	-- Time-Lost Slyvern (PET!)
 					["modelID"] = 106661,
 				}),

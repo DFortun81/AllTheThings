@@ -792,9 +792,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 				["modelID"] = 105766,
 			}),
 			-- With MountID Attached
-			i(190767, {	-- Armored Golden Pterrordax (MOUNT!)
-				["modelID"] = 105477,
-			}),
 			i(190539, {	-- Coral-Stalker Waveray (MOUNT!)
 				["modelID"] = 105400,
 			}),
@@ -851,9 +848,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			}),
 			i(211084, {	-- Golden Regal Scarab (MOUNT!) [Trading Post?]
 				["modelID"] = 114740,
-			}),
-			i(211074, {	-- Jeweled Copper Scarab (MOUNT!) [Trading Post?]
-				["modelID"] = 114739,
 			}),
 			i(211086, {	-- Jeweled Jade Scarab (MOUNT!) [Trading Post?]
 				["modelID"] = 114744,

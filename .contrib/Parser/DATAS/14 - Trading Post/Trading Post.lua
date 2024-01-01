@@ -1735,19 +1735,6 @@ root(ROOTS.NeverImplemented, {
 			tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 					------ Trading Post ------
 				n(SETS, {
-					------ Wastewander Tracker ------
-					i(211122),	-- Ensemble: Wastewander Tracker's Kit
-					i(211121),	-- Wastewander Tracker's Bindings
-					i(211117),	-- Wastewander Tracker's Boots
-					i(211115),	-- Wastewander Tracker's Breastplate
-					i(211120),	-- Wastewander Tracker's Cinch
-					i(211164),	-- Wastewander Tracker's Cloak
-					i(211119),	-- Wastewander Tracker's Dowser
-					i(211116),	-- Wastewander Tracker's Grips
-					i(211118),	-- Wastewander Tracker's Pants
-					i(211113),	-- Wastewander Tracker's Rebreather
-					i(211114),	-- Wastewander Tracker's Spaulders
-
 					------ Unrelenting Justice ------
 					i(211093),	-- Belt of Unrelenting Justice
 					i(211092),	-- Bracers of Unrelenting Justice
@@ -1765,14 +1752,12 @@ root(ROOTS.NeverImplemented, {
 					i(210067),	-- Sky-Captain's Formal Coat
 					i(210065),	-- Sky-Captain's Formal Hat
 					i(210068),	-- Sky-Captain's Formal Pants
-
 				}),
 				n(ARMOR, {
 					------ Sarong ------
 					i(210861),	-- Trader's Aquatic Sarong
 					i(210849),	-- Trader's Azure Sarong
 					i(210854),	-- Trader's Camo Sarong
-					i(210857),	-- Trader's Carrot Sarong
 					i(210852),	-- Trader's Cloudy Sarong
 					i(210853),	-- Trader's Deep Sarong
 					i(210856),	-- Trader's Faded Sarong
@@ -1789,22 +1774,16 @@ root(ROOTS.NeverImplemented, {
 					------ Stones ------
 					i(210865),	-- Blademaster's Crimson Stones
 					i(210867),	-- Blademaster's Lively Stones
-					i(210866),	-- Blademaster's Suntouched Stones
 					i(210868),	-- Blademaster's Violet Stones
 
 					------ Armor ------
 					i(211069),	-- Azure Treads of the Kalu'ak
-					i(211002),	-- Golden Mobile Timepiece
-					i(211066),	-- Gossamer Desert Gown
 					i(211071),	-- Lively Treads of the Kalu'ak
 					i(211294),	-- Marauder King's Body Carver
 					i(211259),	-- Regal Gryphon Rider's Headgear
 					i(211145),	-- Royal Witch Doctor's Trophies
 					i(210999),	-- Ruby Faced Mobile Timepiece
-					i(211129),	-- Sand-Swept Soiree Gloves
 					i(211001),	-- Sapphire Faced Mobile Timepiece
-					i(211068),	-- Sepia Treads of the Kalu'ak
-					i(211137),	-- Witch Doctor's Fetish Frame
 					i(211295),	-- Wrathful Crusader's Helm
 				}),
 				n(WEAPONS, {
@@ -1813,21 +1792,16 @@ root(ROOTS.NeverImplemented, {
 					i(211299),	-- Gleaming Whispering Temple Blade
 					i(211300),	-- Arsenal: Whispering Temple Blades
 					------ Axe ------
-					i(211064),	-- Dwarven Crown Splitter
 					i(211097),	-- Gilded Crown Splitter
 					------ Gun ------
 					i(211096),	-- Gold-Plated Witchhunter's Carbine
-					i(211072),	-- Time Marshal's Carbine
 					------ Shield ------
-					i(211098),	-- Copper Scarab Bulwark
 					i(211099),	-- Gilded Scarab Bulwark
 					i(211159),	-- Royal Witch Doctor's Guard
-					i(211158),	-- Witch Doctor's Fetish Guard
 				}),
 			})),
 		}),
 		filter(MOUNTS, {
-			i(190767),	-- Armored Golden Pterrordax (MOUNT!)
 			mount(369480),	-- Cerulean Marsh Hopper (MOUNT!)
 			i(190539),	-- Coral-Stalker Waveray (MOUNT!)
 			i(137615),	-- Molten Flarecore (MOUNT!)

@@ -293,7 +293,6 @@ root(ROOTS.NeverImplemented, {
 					i(210861),	-- Trader's Aquatic Sarong
 					i(210849),	-- Trader's Azure Sarong
 					i(210854),	-- Trader's Camo Sarong
-					i(210857),	-- Trader's Carrot Sarong
 					i(210852),	-- Trader's Cloudy Sarong
 					i(210853),	-- Trader's Deep Sarong
 					i(210856),	-- Trader's Faded Sarong
@@ -310,22 +309,16 @@ root(ROOTS.NeverImplemented, {
 					------ Stones ------
 					i(210865),	-- Blademaster's Crimson Stones
 					i(210867),	-- Blademaster's Lively Stones
-					i(210866),	-- Blademaster's Suntouched Stones
 					i(210868),	-- Blademaster's Violet Stones
 
 					------ Armor ------
 					i(211069),	-- Azure Treads of the Kalu'ak
-					i(211002),	-- Golden Mobile Timepiece
-					i(211066),	-- Gossamer Desert Gown
 					i(211071),	-- Lively Treads of the Kalu'ak
 					i(211294),	-- Marauder King's Body Carver
 					i(211259),	-- Regal Gryphon Rider's Headgear
 					i(211145),	-- Royal Witch Doctor's Trophies
 					i(210999),	-- Ruby Faced Mobile Timepiece
-					i(211129),	-- Sand-Swept Soiree Gloves
 					i(211001),	-- Sapphire Faced Mobile Timepiece
-					i(211068),	-- Sepia Treads of the Kalu'ak
-					i(211137),	-- Witch Doctor's Fetish Frame
 					i(211295),	-- Wrathful Crusader's Helm
 				}),
 				n(WEAPONS, {
@@ -334,16 +327,12 @@ root(ROOTS.NeverImplemented, {
 					i(211299),	-- Gleaming Whispering Temple Blade
 					i(211300),	-- Arsenal: Whispering Temple Blades
 					------ Axe ------
-					i(211064),	-- Dwarven Crown Splitter
 					i(211097),	-- Gilded Crown Splitter
 					------ Gun ------
 					i(211096),	-- Gold-Plated Witchhunter's Carbine
-					i(211072),	-- Time Marshal's Carbine
 					------ Shield ------
-					i(211098),	-- Copper Scarab Bulwark
 					i(211099),	-- Gilded Scarab Bulwark
 					i(211159),	-- Royal Witch Doctor's Guard
-					i(211158),	-- Witch Doctor's Fetish Guard
 				}),
 			})),
 			
