@@ -1168,11 +1168,11 @@ end
 -- Quest Lib (From Classic)
 local createQuest = app.CreateClass("Quest", "questID", {
 	["text"] = app.IsClassic and function(t)
-		if t.repeatable then return "|cff0070DD" .. (t.name or RETRIEVING_DATA) .. "|r"; end
+		if t.repeatable then return "|cff0070DD" .. t.name .. "|r"; end
 		return t.name;
 	end or nil,
 	["name"] = function(t)
-		return QuestNameFromID[t.questID];
+		return QuestNameFromID[t.questID] or RETRIEVING_DATA;
 	end,
 	["icon"] = function(t)
 		return app.GetIconFromProviders(t)
@@ -1313,7 +1313,7 @@ app.IsClassic and "WithReputation" or false, {
 end),
 "AsBreadcrumb", {
 	text = app.IsClassic and function(t)
-		return "|cffcbc3e3" .. (t.name or RETRIEVING_DATA) .. "|r";
+		return "|cffcbc3e3" .. t.name .. "|r";
 	end or nil,
 	collectible = function(t)
 		if app.Settings.Collectibles.Quests then
@@ -1504,7 +1504,6 @@ app.CreateVignette = app.ExtendClass("Quest", "Vignette", "vignetteID", {
 				text = text .. name;
 			end
 			t.name = text;
-			print(text);
 			return text;
 		else
 			return "Invalid Vignette #" .. t.vignetteID;
