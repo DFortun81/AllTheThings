@@ -6559,6 +6559,27 @@ root(ROOTS.NeverImplemented, {
 				i(207968),	-- 10.1.5 Time Rifts - Plate Infinite Sets - Capture Media
 			})),
 
+			-- 10.1.7
+			tier(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
+				n(DREAMSURGE, bubbleDown({ ["bonusID"] = 6895 }, {
+					filter(CLOTH, {
+						i(209408),	-- Dreambound Crown
+						i(209380),	-- Dreambound Shoulderpads
+					}),
+					filter(LEATHER, {
+						i(209402),	-- Dreambound Cowl
+					}),
+					filter(MAIL, {
+						i(209395),	-- Dreambound Coif
+						i(209393),	-- Dreambound Shoulderguards
+					}),
+					filter(PLATE, {
+						i(209390),	-- Dreambound Faceplate
+						i(209385),	-- Dreambound Mantle
+					}),
+				})),
+			})),
+
 			-- 10.2.0
 			tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				header(HEADERS.Item, 210468, {	-- Emerald Blossom Dreamstone
