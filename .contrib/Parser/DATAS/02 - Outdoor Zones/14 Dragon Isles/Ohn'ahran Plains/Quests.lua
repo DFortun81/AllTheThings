@@ -500,7 +500,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			header(HEADERS.AchCriteria, 16405.03, {	-- Lilac Ramble
 				q(65899, {	-- Find Theramus
-					["sourceQuests"] = { 70220 },	-- Shady Sanctuary
+					["sourceQuests"] = {
+						66676,	-- Sneaking In
+						DF_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["provider"] = { "n", 186303 },	-- Celina Crunchyleaves
 					["coord"] = { 25.1, 56.9, OHNAHRAN_PLAINS },
 				}),

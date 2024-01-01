@@ -1883,7 +1883,6 @@ root(ROOTS.Unsorted, {
 				i(192545),	-- Primal Flame Fragment
 				i(194750),	-- Professional Equipment
 				i(201726),	-- Progress Report: Uldorus
-				i(200771),	-- Projected Starmap
 				i(198452),	-- Prototype F
 				i(201428),	-- Quicksilver Sands
 				i(194695),	-- Ramloaf

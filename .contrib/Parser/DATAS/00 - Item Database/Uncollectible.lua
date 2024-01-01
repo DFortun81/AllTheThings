@@ -579,6 +579,7 @@ i(200764);	-- Slimy Shinies
 i(200768);	-- Assorted Salamanther Lures
 i(200769);	-- Ceramic Shards
 i(200770);	-- A Brief History of Azeroth
+i(200771);	-- Projected Starmap
 i(200772);	-- Knowledge Discs
 i(200773);	-- Otherworldly Artifact
 i(200777);	-- Obsidian Shards
