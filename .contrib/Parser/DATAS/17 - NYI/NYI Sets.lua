@@ -7435,6 +7435,283 @@ root(ROOTS.NeverImplemented, {
 					})),
 				}),
 				n(PVP, {
+					n(PVP_GLADIATOR, bubbleDownSelf({ ["bonusID"] = 6898 }, {
+						n(CLASSES, {
+							cl(DEATHKNIGHT, {
+								i(209275),	-- Verdant Gladiator's Cloak
+								i(209276),	-- Verdant Gladiator's Drape
+								i(209277),	-- Verdant Gladiator's Shawl
+								i(209259),	-- Verdant Gladiator's Plate Chestguard
+								i(209260),	-- Verdant Gladiator's Plate Chestplate
+								i(209263),	-- Verdant Gladiator's Plate Gauntlets
+								i(209271),	-- Verdant Gladiator's Plate Girdle
+								i(209272),	-- Verdant Gladiator's Plate Greatbelt
+								i(209264),	-- Verdant Gladiator's Plate Handguards
+								i(209265),	-- Verdant Gladiator's Plate Helm
+								i(209266),	-- Verdant Gladiator's Plate Helmet
+								i(209267),	-- Verdant Gladiator's Plate Legguards
+								i(209270),	-- Verdant Gladiator's Plate Pauldrons
+								i(209269),	-- Verdant Gladiator's Plate Shoulders
+								i(209262),	-- Verdant Gladiator's Plate Stompers
+								i(209274),	-- Verdant Gladiator's Plate Vambraces
+								i(209261),	-- Verdant Gladiator's Plate Warboots
+								i(209268),	-- Verdant Gladiator's Plate Wargreaves
+								i(209273),	-- Verdant Gladiator's Plate Wristguards
+							}),
+							cl(DEMONHUNTER, {
+								i(209161),	-- Verdant Gladiator's Cloak
+								i(209162),	-- Verdant Gladiator's Drape
+								i(209157),	-- Verdant Gladiator's Leather Belt
+								i(209147),	-- Verdant Gladiator's Leather Boots
+								i(209153),	-- Verdant Gladiator's Leather Breeches
+								i(209149),	-- Verdant Gladiator's Leather Gloves
+								i(209150),	-- Verdant Gladiator's Leather Grips
+								i(209151),	-- Verdant Gladiator's Leather Helm
+								i(209146),	-- Verdant Gladiator's Leather Jerkin
+								i(209154),	-- Verdant Gladiator's Leather Legwraps
+								i(209152),	-- Verdant Gladiator's Leather Mask
+								i(209156),	-- Verdant Gladiator's Leather Shoulderpads
+								i(209155),	-- Verdant Gladiator's Leather Spaulders
+								i(209158),	-- Verdant Gladiator's Leather Strap
+								i(209148),	-- Verdant Gladiator's Leather Treads
+								i(209145),	-- Verdant Gladiator's Leather Vest
+								i(209160),	-- Verdant Gladiator's Leather Wristguards
+								i(209159),	-- Verdant Gladiator's Leather Wristwraps
+								i(209163),	-- Verdant Gladiator's Shawl
+							}),
+							cl(DRUID, {
+								i(209142),	-- Verdant Gladiator's Cloak
+								i(209143),	-- Verdant Gladiator's Drape
+								i(209138),	-- Verdant Gladiator's Leather Belt
+								i(209128),	-- Verdant Gladiator's Leather Boots
+								i(209134),	-- Verdant Gladiator's Leather Breeches
+								i(209130),	-- Verdant Gladiator's Leather Gloves
+								i(209131),	-- Verdant Gladiator's Leather Grips
+								i(209132),	-- Verdant Gladiator's Leather Helm
+								i(209127),	-- Verdant Gladiator's Leather Jerkin
+								i(209135),	-- Verdant Gladiator's Leather Legwraps
+								i(209133),	-- Verdant Gladiator's Leather Mask
+								i(209137),	-- Verdant Gladiator's Leather Shoulderpads
+								i(209136),	-- Verdant Gladiator's Leather Spaulders
+								i(209139),	-- Verdant Gladiator's Leather Strap
+								i(209129),	-- Verdant Gladiator's Leather Treads
+								i(209126),	-- Verdant Gladiator's Leather Vest
+								i(209141),	-- Verdant Gladiator's Leather Wristguards
+								i(209140),	-- Verdant Gladiator's Leather Wristwraps
+								i(209144),	-- Verdant Gladiator's Shawl
+							}),
+							cl(EVOKER, {
+								i(209218),	-- Verdant Gladiator's Cloak
+								i(209219),	-- Verdant Gladiator's Drape
+								i(209220),	-- Verdant Gladiator's Shawl
+								i(209214),	-- Verdant Gladiator's Chain Belt
+								i(209205),	-- Verdant Gladiator's Chain Boots
+								i(209217),	-- Verdant Gladiator's Chain Bracers
+								i(209211),	-- Verdant Gladiator's Chain Breeches
+								i(209209),	-- Verdant Gladiator's Chain Faceguard
+								i(209206),	-- Verdant Gladiator's Chain Gauntlets
+								i(209215),	-- Verdant Gladiator's Chain Girdle
+								i(209207),	-- Verdant Gladiator's Chain Handguards
+								i(209208),	-- Verdant Gladiator's Chain Helm
+								i(209210),	-- Verdant Gladiator's Chain Leggings
+								i(209212),	-- Verdant Gladiator's Chain Monnion
+								i(209202),	-- Verdant Gladiator's Chain Robe
+								i(209204),	-- Verdant Gladiator's Chain Sabatons
+								i(209213),	-- Verdant Gladiator's Chain Shoulderguard
+								i(209203),	-- Verdant Gladiator's Chain Vestments
+								i(209216),	-- Verdant Gladiator's Chain Wristguards
+							}),
+							cl(HUNTER, {
+								i(209233),	-- Verdant Gladiator's Chain Belt
+								i(209224),	-- Verdant Gladiator's Chain Boots
+								i(209236),	-- Verdant Gladiator's Chain Bracers
+								i(209230),	-- Verdant Gladiator's Chain Breeches
+								i(209228),	-- Verdant Gladiator's Chain Faceguard
+								i(209225),	-- Verdant Gladiator's Chain Gauntlets
+								i(209234),	-- Verdant Gladiator's Chain Girdle
+								i(209226),	-- Verdant Gladiator's Chain Handguards
+								i(209227),	-- Verdant Gladiator's Chain Helm
+								i(209229),	-- Verdant Gladiator's Chain Leggings
+								i(209231),	-- Verdant Gladiator's Chain Monnion
+								i(209223),	-- Verdant Gladiator's Chain Sabatons
+								i(209232),	-- Verdant Gladiator's Chain Shoulderguard
+								i(209222),	-- Verdant Gladiator's Chain Tunic
+								i(209221),	-- Verdant Gladiator's Chain Vest
+								i(209235),	-- Verdant Gladiator's Chain Wristguards
+								i(209237),	-- Verdant Gladiator's Cloak
+								i(209238),	-- Verdant Gladiator's Drape
+								i(209239),	-- Verdant Gladiator's Shawl
+							}),
+							cl(MAGE, {
+								i(209085),	-- Verdant Gladiator's Cloak
+								i(209086),	-- Verdant Gladiator's Drape
+								i(209087),	-- Verdant Gladiator's Shawl
+								i(209080),	-- Verdant Gladiator's Silk Amice
+								i(209084),	-- Verdant Gladiator's Silk Armbands
+								i(209082),	-- Verdant Gladiator's Silk Belt
+								i(209070),	-- Verdant Gladiator's Silk Blouse
+								i(209076),	-- Verdant Gladiator's Silk Cap
+								i(209081),	-- Verdant Gladiator's Silk Cord
+								i(209073),	-- Verdant Gladiator's Silk Gloves
+								i(209074),	-- Verdant Gladiator's Silk Handwraps
+								i(209075),	-- Verdant Gladiator's Silk Hat
+								i(209077),	-- Verdant Gladiator's Silk Leggings
+								i(209079),	-- Verdant Gladiator's Silk Mantle
+								i(209071),	-- Verdant Gladiator's Silk Slippers
+								i(209072),	-- Verdant Gladiator's Silk Treads
+								i(209078),	-- Verdant Gladiator's Silk Trousers
+								i(209069),	-- Verdant Gladiator's Silk Tunic
+								i(209083),	-- Verdant Gladiator's Silk Wristwraps
+							}),
+							cl(MONK, {
+								i(209180),	-- Verdant Gladiator's Cloak
+								i(209181),	-- Verdant Gladiator's Drape
+								i(209176),	-- Verdant Gladiator's Leather Belt
+								i(209166),	-- Verdant Gladiator's Leather Boots
+								i(209172),	-- Verdant Gladiator's Leather Breeches
+								i(209168),	-- Verdant Gladiator's Leather Gloves
+								i(209169),	-- Verdant Gladiator's Leather Grips
+								i(209170),	-- Verdant Gladiator's Leather Helm
+								i(209165),	-- Verdant Gladiator's Leather Jerkin
+								i(209173),	-- Verdant Gladiator's Leather Legwraps
+								i(209171),	-- Verdant Gladiator's Leather Mask
+								i(209175),	-- Verdant Gladiator's Leather Shoulderpads
+								i(209174),	-- Verdant Gladiator's Leather Spaulders
+								i(209177),	-- Verdant Gladiator's Leather Strap
+								i(209167),	-- Verdant Gladiator's Leather Treads
+								i(209164),	-- Verdant Gladiator's Leather Vest
+								i(209179),	-- Verdant Gladiator's Leather Wristguards
+								i(209178),	-- Verdant Gladiator's Leather Wristwraps
+								i(209182),	-- Verdant Gladiator's Shawl
+							}),
+							cl(PALADIN, {
+								i(209294),	-- Verdant Gladiator's Cloak
+								i(209295),	-- Verdant Gladiator's Drape
+								i(209278),	-- Verdant Gladiator's Plate Chestguard
+								i(209279),	-- Verdant Gladiator's Plate Chestplate
+								i(209282),	-- Verdant Gladiator's Plate Gauntlets
+								i(209290),	-- Verdant Gladiator's Plate Girdle
+								i(209291),	-- Verdant Gladiator's Plate Greatbelt
+								i(209283),	-- Verdant Gladiator's Plate Handguards
+								i(209284),	-- Verdant Gladiator's Plate Helm
+								i(209285),	-- Verdant Gladiator's Plate Helmet
+								i(209286),	-- Verdant Gladiator's Plate Legguards
+								i(209289),	-- Verdant Gladiator's Plate Pauldrons
+								i(209288),	-- Verdant Gladiator's Plate Shoulders
+								i(209281),	-- Verdant Gladiator's Plate Stompers
+								i(209287),	-- Verdant Gladiator's Plate Tasses
+								i(209293),	-- Verdant Gladiator's Plate Vambraces
+								i(209280),	-- Verdant Gladiator's Plate Warboots
+								i(209292),	-- Verdant Gladiator's Plate Wristguards
+								i(209296),	-- Verdant Gladiator's Shawl
+							}),
+							cl(PRIEST, {
+								i(209104),	-- Verdant Gladiator's Cloak
+								i(209105),	-- Verdant Gladiator's Drape
+								i(209106),	-- Verdant Gladiator's Shawl
+								i(209099),	-- Verdant Gladiator's Silk Amice
+								i(209103),	-- Verdant Gladiator's Silk Armbands
+								i(209101),	-- Verdant Gladiator's Silk Belt
+								i(209089),	-- Verdant Gladiator's Silk Blouse
+								i(209100),	-- Verdant Gladiator's Silk Cord
+								i(209092),	-- Verdant Gladiator's Silk Gloves
+								i(209095),	-- Verdant Gladiator's Silk Guise
+								i(209093),	-- Verdant Gladiator's Silk Handwraps
+								i(209094),	-- Verdant Gladiator's Silk Hood
+								i(209096),	-- Verdant Gladiator's Silk Leggings
+								i(209098),	-- Verdant Gladiator's Silk Mantle
+								i(209090),	-- Verdant Gladiator's Silk Slippers
+								i(209091),	-- Verdant Gladiator's Silk Treads
+								i(209097),	-- Verdant Gladiator's Silk Trousers
+								i(209088),	-- Verdant Gladiator's Silk Tunic
+								i(209102),	-- Verdant Gladiator's Silk Wristwraps
+							}),
+							cl(ROGUE, {
+								i(209199),	-- Verdant Gladiator's Cloak
+								i(209200),	-- Verdant Gladiator's Drape
+								i(209195),	-- Verdant Gladiator's Leather Belt
+								i(209185),	-- Verdant Gladiator's Leather Boots
+								i(209191),	-- Verdant Gladiator's Leather Breeches
+								i(209187),	-- Verdant Gladiator's Leather Gloves
+								i(209188),	-- Verdant Gladiator's Leather Grips
+								i(209189),	-- Verdant Gladiator's Leather Helm
+								i(209184),	-- Verdant Gladiator's Leather Jerkin
+								i(209192),	-- Verdant Gladiator's Leather Legwraps
+								i(209190),	-- Verdant Gladiator's Leather Mask
+								i(209194),	-- Verdant Gladiator's Leather Shoulderpads
+								i(209193),	-- Verdant Gladiator's Leather Spaulders
+								i(209196),	-- Verdant Gladiator's Leather Strap
+								i(209186),	-- Verdant Gladiator's Leather Treads
+								i(209183),	-- Verdant Gladiator's Leather Vest
+								i(209198),	-- Verdant Gladiator's Leather Wristguards
+								i(209197),	-- Verdant Gladiator's Leather Wristwraps
+								i(209201),	-- Verdant Gladiator's Shawl
+							}),
+							cl(SHAMAN, {
+								i(209252),	-- Verdant Gladiator's Chain Belt
+								i(209243),	-- Verdant Gladiator's Chain Boots
+								i(209255),	-- Verdant Gladiator's Chain Bracers
+								i(209249),	-- Verdant Gladiator's Chain Breeches
+								i(209247),	-- Verdant Gladiator's Chain Faceguard
+								i(209244),	-- Verdant Gladiator's Chain Gauntlets
+								i(209253),	-- Verdant Gladiator's Chain Girdle
+								i(209245),	-- Verdant Gladiator's Chain Handguards
+								i(209246),	-- Verdant Gladiator's Chain Helm
+								i(209248),	-- Verdant Gladiator's Chain Leggings
+								i(209250),	-- Verdant Gladiator's Chain Monnion
+								i(209242),	-- Verdant Gladiator's Chain Sabatons
+								i(209251),	-- Verdant Gladiator's Chain Shoulderguard
+								i(209241),	-- Verdant Gladiator's Chain Tunic
+								i(209240),	-- Verdant Gladiator's Chain Vest
+								i(209254),	-- Verdant Gladiator's Chain Wristguards
+								i(209256),	-- Verdant Gladiator's Cloak
+								i(209257),	-- Verdant Gladiator's Drape
+								i(209258),	-- Verdant Gladiator's Shawl
+							}),
+							cl(WARLOCK, {
+								i(209123),	-- Verdant Gladiator's Cloak
+								i(209124),	-- Verdant Gladiator's Drape
+								i(209125),	-- Verdant Gladiator's Shawl
+								i(209118),	-- Verdant Gladiator's Silk Amice
+								i(209122),	-- Verdant Gladiator's Silk Armbands
+								i(209120),	-- Verdant Gladiator's Silk Belt
+								i(209119),	-- Verdant Gladiator's Silk Cord
+								i(209111),	-- Verdant Gladiator's Silk Gloves
+								i(209114),	-- Verdant Gladiator's Silk Guise
+								i(209112),	-- Verdant Gladiator's Silk Handwraps
+								i(209113),	-- Verdant Gladiator's Silk Hood
+								i(209115),	-- Verdant Gladiator's Silk Leggings
+								i(209117),	-- Verdant Gladiator's Silk Mantle
+								i(209107),	-- Verdant Gladiator's Silk Robe
+								i(209109),	-- Verdant Gladiator's Silk Slippers
+								i(209110),	-- Verdant Gladiator's Silk Treads
+								i(209116),	-- Verdant Gladiator's Silk Trousers
+								i(209108),	-- Verdant Gladiator's Silk Vestments
+								i(209121),	-- Verdant Gladiator's Silk Wristwraps
+							}),
+							cl(WARRIOR, {
+								i(209313),	-- Verdant Gladiator's Cloak
+								i(209314),	-- Verdant Gladiator's Drape
+								i(209297),	-- Verdant Gladiator's Plate Chestguard
+								i(209298),	-- Verdant Gladiator's Plate Chestplate
+								i(209301),	-- Verdant Gladiator's Plate Gauntlets
+								i(209309),	-- Verdant Gladiator's Plate Girdle
+								i(209310),	-- Verdant Gladiator's Plate Greatbelt
+								i(209302),	-- Verdant Gladiator's Plate Handguards
+								i(209303),	-- Verdant Gladiator's Plate Helm
+								i(209304),	-- Verdant Gladiator's Plate Helmet
+								i(209305),	-- Verdant Gladiator's Plate Legguards
+								i(209308),	-- Verdant Gladiator's Plate Pauldrons
+								i(209307),	-- Verdant Gladiator's Plate Shoulders
+								i(209300),	-- Verdant Gladiator's Plate Stompers
+								i(209312),	-- Verdant Gladiator's Plate Vambraces
+								i(209299),	-- Verdant Gladiator's Plate Warboots
+								i(209306),	-- Verdant Gladiator's Plate Wargreaves
+								i(209311),	-- Verdant Gladiator's Plate Wristguards
+								i(209315),	-- Verdant Gladiator's Shawl
+							}),
+						}),
+					})),
 					n(PVP_ELITE, bubbleDownSelf({ ["bonusID"] = 8107 }, {
 						n(CLASSES, {
 							cl(DEATHKNIGHT, {
