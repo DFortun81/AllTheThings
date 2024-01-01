@@ -604,6 +604,8 @@ localize(L.HEADER_NAMES, {
 	[-1000367] = QUEST_REWARDS,
 	[-1000368] = GetDifficultyInfo(24),
 	[-1000369] = "Year 2024",
+	[-1000373] = "New Character",
+	[-1000374] = "Allied Races",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -1020,6 +1022,8 @@ localize(L.HEADER_ICONS, {
 	[-1000367] = _.asset("Interface_Rewards"),
 	[-1000368] = _.asset("Difficulty_Timewalking"),
 	[-1000369] = "Interface/Icons/inv_misc_missilesmall_green",
+	[-1000373] = "1530081",
+	[-1000374] = "Interface/Icons/FactionChange",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
@@ -1094,9 +1098,9 @@ _.Modules.Events.SetEventInformation(514, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=21,["weekday"]=6,["year"]=2014},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=5,["weekday"]=2,["year"]=2015})
 });
 _.Modules.Events.SetEventInformation(590, {
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=4,["year"]=2022},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=4,["year"]=2022}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=5,["year"]=2023},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=5,["year"]=2023}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=7,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=7,["year"]=2024})
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=7,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=7,["year"]=2024}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=1,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=1,["year"]=2025})
 });
 
 -- Filter Database Module
@@ -10542,6 +10546,8 @@ localize(L.HEADER_NAMES, {
 	[-1000352] = "Klan Aylaag",
 	[-1000365] = "20. Geburtstag von Diablo",
 	[-1000366] = "Ein gieriger Abgesandter",
+	[-1000373] = "Neuer Charakter",
+	[-1000374] = "Verbündete Völker",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -13944,6 +13950,8 @@ localize(L.HEADER_NAMES, {
 	[-1000351] = "Espejo roto",
 	[-1000352] = "Clan Aylaag",
 	[-1000366] = "Un Emisario Codicioso",
+	[-1000373] = "Nueva personaje",
+	[-1000374] = "Razas aliadas",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -17304,6 +17312,8 @@ localize(L.HEADER_NAMES, {
 	[-1000362] = "Tour du monde d’Uuna",
 	[-1000365] = "20e anniversaire de Diablo",
 	[-1000366] = "Émissaire cupide",
+	[-1000373] = "Nouveau personnage",
+	[-1000374] = "Races alliées",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon.",
@@ -20679,6 +20689,8 @@ localize(L.HEADER_NAMES, {
 	[-1000351] = "Specchio Rotto",
 	[-1000352] = "Clan Aylaag",
 	[-1000366] = "Un emissario avido",
+	[-1000373] = "Nuovo personaggio",
+	[-1000374] = "Razze Alleate",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -23854,6 +23866,8 @@ localize(L.HEADER_NAMES, {
 	[-1000351] = "깨진 거울",
 	[-1000352] = "아일라그 부족",
 	[-1000366] = "탐욕의 사절",
+	[-1000373] = "새로운 캐릭터",
+	[-1000374] = "동맹 종족",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -26938,6 +26952,8 @@ localize(L.HEADER_NAMES, {
 	[-1000351] = "Espelho Quebrado",
 	[-1000352] = "Clã Aylaag",
 	[-1000366] = "Um Emissário Ganancioso",
+	[-1000373] = "Novo personagem",
+	[-1000374] = "Raças Aliadas",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -30331,6 +30347,8 @@ localize(L.HEADER_NAMES, {
 	[-1000364] = "События Diablo",
 	[-1000365] = "20-ая годовщина Diablo",
 	[-1000366] = "Алчный посланец",
+	[-1000373] = "Новый персонаж",
+	[-1000374] = "Союзные расы",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Эти предметы можно получить в награду Заданий эмиссаров или из припасов.",
@@ -33842,6 +33860,8 @@ localize(L.HEADER_NAMES, {
 	[-1000362] = "尤娜的世界旅行",
 	[-1000365] = "暗黑破坏神20周年庆",
 	[-1000366] = "贪婪的特使",
+	[-1000373] = "新角色",
+	[-1000374] = "同盟种族",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "这些物品可以通过做使者任务或获得巅峰宝箱来获得。",

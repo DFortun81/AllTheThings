@@ -6,6 +6,7 @@ HeaderAssignments = {
 	["Adventures"] = -1000085,
 	["All Roles"] = -1000145,
 	["Alliance"] = -1000093,
+	["Allied Races"] = -1000374,
 	["Amazon Prime Gaming"] = -1000242,
 	["Anima Conductor"] = -1000086,
 	["April"] = -1000152,
@@ -375,4 +376,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000374;
+NextHeaderID = -1000375;

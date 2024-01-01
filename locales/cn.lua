@@ -683,7 +683,6 @@ for key,value in pairs({
 		[-242] = "无评级",												-- Unrated
 		[-243] = "赏金任务",											-- Bounty
 	-- Allied Races
-		[-254] = "同盟种族",												-- Allied Races
 		[-255] = "传承护甲",											-- Heritage
 	-- Outposts in Draenor
 		[-361] = GetSpellInfo(182108).." 塔",						-- Artillery Tower

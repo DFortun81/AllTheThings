@@ -652,7 +652,6 @@ do a[key] = value; end
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Allied Races
-		[-254] = "Razze Alleate",									-- Allied Races
 		[-255] = "Armatura Retaggio",								-- Heritage
 	-- 5.3
 		[-398] = "Campo di battaglia: le Savane",					-- Battlefield: Barrens

@@ -655,7 +655,6 @@ for key,value in pairs({
 	-- Fishing
 		[-217] = "Appâts",											-- Lures (for Fishing)
 	-- Allied Races
-		[-254] = "Races alliées",									-- Allied Races
 		[-255] = "Armure ancestrale",								-- Heritage
 	-- BFA Outposts
 		[-397] = "Avant-postes",									-- Outposts

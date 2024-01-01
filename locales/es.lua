@@ -656,7 +656,6 @@ end
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Allied Races
-		[-254] = "Razas aliadas",									-- Allied Races
 		[-255] = "Armadura dinástica",								-- Heritage
 	-- 5.3
 		[-398] = "Campo de batalla: Los Baldíos",					-- Battlefield: Barrens

@@ -650,7 +650,6 @@ for key,value in pairs({
 		[-242] = "Нерейтинговые",									-- Unrated
 		[-243] = "Премия",											-- Bounty
 	-- Allied Races
-		[-254] = "Союзные расы",									-- Allied Races
 		[-255] = "Традиционные доспехи",							-- Heritage
 	-- Outposts in Draenor
 		[-361] = "Артиллерийная башня",								-- Artillery Tower

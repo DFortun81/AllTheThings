@@ -660,7 +660,6 @@ for key,value in pairs({
 		[-242] = "Ungewertet",										-- Unrated
 		[-243] = "Preisgeld",										-- Bounty
 	-- Allied Races
-		[-254] = "Verbündete Völker",								-- Allied Races
 		[-255] = "Traditionsrüstung",								-- Heritage
 	-- BFA Outposts
 		[-397] = "Außenposten",										-- Outposts

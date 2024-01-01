@@ -905,7 +905,6 @@ local L = {
 	-- War Campaign
 		[-253] = "Interface\\Icons\\ui_horde_honorboundmedal",								-- Horde War Campaign
 	-- Allied Races
-		[-254] = "Interface\\Icons\\FactionChange",											-- Allied Races
 		[-255] = "Interface\\Icons\\vas_guildfactionchange",								-- Heritage
 	-- Garrison Missons
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000",						-- Missions
@@ -1097,7 +1096,6 @@ local L = {
 	-- War Campaign
 		[-253] = C_Map.GetAreaInfo(9664),										-- War Campaign - Horde
 	-- Allied Races
-		[-254] = "Allied Races",												-- Allied Races, do not replace with CHARACTER_CREATE_MORE_RACES, it's nil
 		[-255] = "Heritage",													-- Heritage
 	-- Garrison Missions
 		[-299] = GARRISON_MISSIONS,												-- Missions
