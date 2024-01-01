@@ -241,7 +241,7 @@ app:GetWindow("RaidAssistant", {
 					OnClick = function(row, button)
 						if IsAltKeyDown() then
 							row.ref.saved = not row.ref.saved;
-							self:Update();
+							self:Update(true);
 						else
 							ResetInstances();
 						end
