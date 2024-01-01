@@ -737,6 +737,7 @@ localize(L.HEADER_NAMES, {
 	[-1000287] = select(2,GetAchievementInfo(5512)),
 	[-1000288] = select(2,GetAchievementInfo(5863)),
 	[-1000289] = select(2,GetAchievementInfo(6131)),
+	[-1000373] = "New Character",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -938,6 +939,7 @@ localize(L.HEADER_ICONS, {
 	[-1000287] = "Interface/Icons/inv_misc_celebrationcake_01",
 	[-1000288] = "Interface/Icons/inv_misc_celebrationcake_01",
 	[-1000289] = "Interface/Icons/inv_misc_celebrationcake_01",
+	[-1000373] = "1530081",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -4216,6 +4218,7 @@ localize(L.HEADER_NAMES, {
 	[-1000227] = "Anglerwettbewerb im Schlingendorntal",
 	[-1000235] = "Die Öffnung des Dunklen Portals",
 	[-1000236] = "Das Szepter der Sandstürme",
+	[-1000373] = "Neuer Charakter",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -5163,6 +5166,7 @@ localize(L.HEADER_NAMES, {
 	[-1000227] = "Gran espectáculo de pesca de Tuercespina",
 	[-1000235] = "La apertura del Portal Oscuro",
 	[-1000236] = "El cetro del Mar de Dunas",
+	[-1000373] = "Nueva personaje",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -6132,6 +6136,7 @@ localize(L.HEADER_NAMES, {
 	[-1000236] = "Le Sceptre des Sables changeants",
 	[-1000244] = "Edition Collector",
 	[-1000247] = "Édition BC Classic Deluxe",
+	[-1000373] = "Nouveau personnage",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -7080,6 +7085,7 @@ localize(L.HEADER_NAMES, {
 	[-1000227] = "Gara di Pesca a Rovotorto",
 	[-1000235] = "L'apertura del Portale Oscuro",
 	[-1000236] = "Scettro delle Sabbie Mutevoli",
+	[-1000373] = "Nuovo personaggio",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -8041,6 +8047,7 @@ localize(L.HEADER_NAMES, {
 	[-1000227] = "가시덤불 골짜기 낚시왕 선발대회",
 	[-1000235] = "어둠의 문 열기",
 	[-1000236] = "흐르는 모래의 홀",
+	[-1000373] = "새로운 캐릭터",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -8964,6 +8971,7 @@ localize(L.HEADER_NAMES, {
 	[-1000227] = "Festerê de Pesca da Selva do Espinhaço",
 	[-1000235] = "A abertura do Portal Negro",
 	[-1000236] = "Cetro das Areias Cambiantes",
+	[-1000373] = "Novo personagem",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -9929,6 +9937,7 @@ localize(L.HEADER_NAMES, {
 	[-1000244] = "Коллекционное издание",
 	[-1000272] = "Без Источника",
 	[-1000284] = "Годовщина WoW",
+	[-1000373] = "Новый персонаж",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -10927,6 +10936,7 @@ localize(L.HEADER_NAMES, {
 	[-1000256] = "星际争霸II：自由之翼",
 	[-1000263] = "可口可乐活动",
 	[-1000272] = "无来源",
+	[-1000373] = "新角色",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",

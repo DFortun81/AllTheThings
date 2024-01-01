@@ -1610,8 +1610,14 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 		}),
 		i(53, {	-- Neophyte's Shirt
-			["description"] = "Former Starter Shirt for Dwarf Priests.",
+			-- #if BEFORE 4.0.3
+			-- #if AFTER 2.0.1
+			["description"] = "Former Starter Shirt for Priests. (Also available from Old Hillsbrad)",
+			-- #else
+			["description"] = "Former Starter Shirt for Priests.",
+			-- #endif
 			["timeline"] = { "removed 4.0.3" },
+			-- #endif
 		}),
 		i(154, {	-- Primitive Mantle
 			["description"] = "Former Starter Shirt for Orc & Tauren Shamans",
