@@ -849,7 +849,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				ZoneDrops({
 				}),
 				n(ZONE_DROPS, sharedData({	-- First 2 week BoP version drops
-					["timeline"] = { ADDED_10_2_0, "removed 10.2.5" },
+					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 },
 				},{
 					i(210548),	-- Daydreamer's Glimmering Ring [BoP]
 					i(210542),	-- Insurgent Flame Warboots [BoP]
