@@ -135,7 +135,7 @@ namespace ATT
                 FUNCTION_SHORTCUTS["handlers"] = "_.CommonAchievementHandlers";
             }
             var keys = FUNCTION_SHORTCUTS.Keys.ToList();
-            keys.Sort(StringComparer.InvariantCulture);
+            keys.Sort(Framework.Compare);
 
             int count = 0;
             var builder2 = new StringBuilder("local ");

@@ -69,7 +69,7 @@ namespace ATT
                 // Export Fields
                 int fieldCount = 0;
                 var keys = data.Keys.ToList();
-                keys.Sort();
+                keys.Sort(Framework.Compare);
                 foreach (var key in keys)
                 {
                     // If this is NOT the first field, append a comma.
@@ -113,7 +113,7 @@ namespace ATT
                 // Export Fields
                 int fieldCount = 0;
                 var keys = data.Keys.ToList();
-                keys.Sort(StringComparer.InvariantCulture);
+                keys.Sort(Framework.Compare);
                 foreach (var key in keys)
                 {
                     // If this is NOT the first field, append a comma.
@@ -153,7 +153,7 @@ namespace ATT
             }
             // Cache the fields
             var fields = data.Keys.ToList();
-            fields.Sort(StringComparer.InvariantCulture);
+            fields.Sort(Framework.Compare);
 
             // Check if the body has OnInit, if so, rip it out and append it before the constructor
             var hasOnInit = data.TryGetValue("OnInit", out object OnInitRef);

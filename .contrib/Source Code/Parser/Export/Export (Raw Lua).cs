@@ -86,7 +86,7 @@ namespace ATT
                     break;
                 }
             }
-            keys.Sort();
+            keys.Sort(Framework.Compare);
             // TODO: is converting everything to string really necessary??
             foreach (var key in keys) data2[key.ToString()] = data[key];
 
@@ -121,38 +121,32 @@ namespace ATT
 
             // Export Fields
             int fieldCount = 0;
-            foreach (var pair in data2)
+            foreach (var key in keys)
             {
                 // If this is NOT the first field, move to the next line
                 if (fieldCount++ > 0 && IncludeRawNewlines) builder.AppendLine();
 
-
-                // special things
-                switch (pair.Key)
+                // r is used for the 'faction races' collection
+                if (key.ToString() == "r")
                 {
-                    // r is used for the 'faction races' collection
-                    case "r":
-                        try
-                        {
-                            // Always follow each piece of data with a comma for consistency
-                            builder.Append(',');
-                            long dataVal = Convert.ToInt64(pair.Value);
-                            string factionRaces = dataVal == 1 ? "HORDE_ONLY" : "ALLIANCE_ONLY";
+                    // Always follow each piece of data with a comma for consistency
+                    try
+                    {
+                        builder.Append(',');
+                        long dataVal = Convert.ToInt64(data[key]);
+                        string factionRaces = dataVal == 1 ? "HORDE_ONLY" : "ALLIANCE_ONLY";
 
-                            // Append the Sub-Indent and the Field Name
-                            builder.Append(subindent).Append("[");
-                            ExportRawLua(builder, "races", subindent);
-                            builder.Append("] = ").Append(factionRaces);
-                        }
-                        catch
-                        {
-                            ExportRawLuaKeyValue(builder, pair.Key, pair.Value, subindent);
-                        }
-                        break;
-                    default:
-                        ExportRawLuaKeyValue(builder, pair.Key, pair.Value, subindent);
-                        break;
+                        // Append the Sub-Indent and the Field Name
+                        builder.Append(subindent).Append("[");
+                        ExportRawLua(builder, "races", subindent);
+                        builder.Append("] = ").Append(factionRaces);
+                    }
+                    catch
+                    {
+                        ExportRawLuaKeyValue(builder, key, data[key], subindent);
+                    }
                 }
+                else ExportRawLuaKeyValue(builder, key, data[key], subindent);
 
                 // Always follow each piece of data with a comma for consistency
                 builder.Append(',');
