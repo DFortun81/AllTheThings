@@ -1813,7 +1813,6 @@ root(ROOTS.Unsorted, {
 				i(194716),	-- Evorian Report
 				i(192476),	-- Expedition Bullwhip
 				i(197851),	-- Extra Crispy Mutton
-				i(200476),	-- Fallingwater Overlook VIP Entry Pass
 				i(199185),	-- Fanciful Strings
 				i(195460),	-- Fermented Musken Milk
 				i(198674),	-- Filled Life Pools Vial
@@ -1905,7 +1904,6 @@ root(ROOTS.Unsorted, {
 				i(200621),	-- Soothing Incense
 				i(199184),	-- Spellbound Bone Pipes
 				i(194686),	-- Spicy Musken Drummies
-				i(200477),	-- Stack of VIP Passes
 				i(200304),	-- Stored Dracthyr Rations
 				i(195465),	-- Stormwing Egg Breakfast
 				i(200787),	-- Strong Exotic Spices

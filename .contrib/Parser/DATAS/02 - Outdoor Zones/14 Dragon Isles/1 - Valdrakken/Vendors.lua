@@ -42,6 +42,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(188152),	-- Gateway Control Shard
 				},
 			}),
+			n(197080, {	-- Cadrestrasz <Fallingwater Host>
+				["coord"] = { 39.87, 86.48, VALDRAKKEN },
+				["g"] = {
+					i(200476),	-- Fallingwater Overlook VIP Entry Pass
+					i(200477),	-- Stack of VIP Passes
+				},
+			}),
 			n(199605, {	-- Evantkis <Token Exchange>
 				["coord"] = { 58.6, 57.6, VALDRAKKEN },
 				["g"] = {
@@ -184,7 +191,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["cost"] = 750000000, -- 75,000g
 					}),
 				}),
-			}),		
+			}),
 			n(187783, {	-- Pakak
 				["coord"] = { 43.8, 75.0, VALDRAKKEN },
 				["g"] = {
