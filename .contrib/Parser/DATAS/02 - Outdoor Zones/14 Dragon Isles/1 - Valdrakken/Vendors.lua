@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(189644, {	-- Ms. Xiulan <Madam Goya's Assistant>
 				["coord"] = { 19.0, 50.2, VALDRAKKEN },
-				["g"] = bubbleDown({ ["timeline"] = { "added 10.2.52649" } }, {
+				["g"] = bubbleDown({ ["timeline"] = { "added 10.2.0.52649" } }, {
 					i(211300, { -- Arsenal: Whispering Temple Blades
 						["cost"] = 2000000000, -- 200,000g
 						["groups"] = {
