@@ -1609,6 +1609,10 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["description"] = "Former Starter Shirt for Blood Elf Rogues.",
 			["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 		}),
+		i(53, {	-- Neophyte's Shirt
+			["description"] = "Former Starter Shirt for Dwarf Priests.",
+			["timeline"] = { "removed 4.0.3" },
+		}),
 		i(154, {	-- Primitive Mantle
 			["description"] = "Former Starter Shirt for Orc & Tauren Shamans",
 			["timeline"] = { "removed 4.0.3" },
@@ -1669,7 +1673,12 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			-- #if BEFORE 10.1.7
 			["description"] = "Former Starter Weapon for Orc, Troll & Worgen Rogues as well as Dwarf, Orc, Tauren & Troll Hunters.",
 			-- #endif
+			-- #if ANYCLASSIC
+			-- CRIEVE NOTE: This was not available in Wrath Classic.
+			["timeline"] = { "added 1.11.0", "removed 3.0.1" },
+			-- #else
 			["timeline"] = { "added 1.11.0", "removed 7.3.5" },
+			-- #endif
 		}),
 		i(52532, {	-- Worn Wood Chopper
 		--	["classes"] = { HUNTER },
