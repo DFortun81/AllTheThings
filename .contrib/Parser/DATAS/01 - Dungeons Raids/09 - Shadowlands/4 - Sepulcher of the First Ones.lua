@@ -309,6 +309,51 @@ local function boss(id, t)
 	return encounter
 end
 
+------ Catalyst Functions ------
+local TierList, SymLink, SymLinKPvP;
+local SymRaid = function(ClassID, ModID)
+	if ClassID == DEATHKNIGHT or ClassID == WARLOCK or ClassID == DEMONHUNTER then
+		TierList = {"select", "itemID",
+			191010,	-- Dreadful Chest Module
+			191014,	-- Dreadful Hand Module
+			191005,	-- Dreadful Helm Module
+			191018,	-- Dreadful Leg Module
+			191006,	-- Dreadful Shoulder Module
+		}
+	elseif ClassID == HUNTER or ClassID == MAGE or ClassID == DRUID then
+		TierList = {"select", "itemID",
+			191011,	-- Mystic Chest Module
+			191015,	-- Mystic Hand Module
+			191002,	-- Mystic Helm Module
+			191019,	-- Mystic Leg Module
+			191007,	-- Mystic Shoulder Module
+		}
+	elseif ClassID == PALADIN or ClassID == PRIEST or ClassID == SHAMAN then
+		TierList = {"select", "itemID",
+			191012,	-- Venerated Chest Module
+			191016,	-- Venerated Hand Module
+			191003,	-- Venerated Helm Module
+			191020,	-- Venerated Leg Module
+			191008,	-- Venerated Shoulder Module
+		}
+	else
+		TierList = {"select", "itemID",
+			191013,	-- Zenith Chest Module
+			191017,	-- Zenith Hand Module
+			191004,	-- Zenith Helm Module
+			191021,	-- Zenith Leg Module
+			191009,	-- Zenith Shoulder Module
+		}
+	end
+	SymLink = {
+		TierList,
+		{"pop"},
+		{"where", "modID", ModID },
+		{"contains", "c", ClassID },
+	}
+	return SymLink
+end
+
 root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 	inst(1195, {	-- Sepulcher of the First Ones
 		["isRaid"] = true,
@@ -851,6 +896,120 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } 
 				header(HEADERS.Achievement, 15418, {	-- The Grand Design
 					boss(THE_JAILER),
 				}),
+				o(375368, {	-- Creation Catalyst Console
+				--	["description"] = "Help us gather information of what is/isnt available via doing reports in ATT discord. Especially the alternative sets and if the pvp transmog is available somewhere else",
+					["g"] = bubbleDown({ ["modID"] = 4 },
+							sharedData({["cost"] = {{"i",190189,2070}}},{	-- 2070 Sandworn Relic, Full set cost from Vendor
+								cl(DEATHKNIGHT, {
+									["sym"] = SymRaid(DEATHKNIGHT, 4),
+									["g"] = {
+										i(188873),	-- Cloak of the First Eidolon
+										i(188870),	-- Girdle of the First Eidolon
+										i(188865),	-- Greaves of the First Eidolon
+										i(188869),	-- Vambraces of the First Eidolon
+									},
+								}),
+								cl(DEMONHUNTER, {
+									["sym"] = SymRaid(DEMONHUNTER, 4),
+									["g"] = {
+										i(188897),	-- Mercurial Punisher's Belt
+										i(188899),	-- Mercurial Punisher's Boots
+										i(188900),	-- Mercurial Punisher's Mantle
+										i(188895),	-- Mercurial Punisher's Wristguards
+									},
+								}),
+								cl(DRUID, {
+									["sym"] = SymRaid(DRUID, 4),
+									["g"] = {
+										i(188850),	-- Bracers of the Fixed Stars
+										i(188852),	-- Cincture of the Fixed Stars
+										i(188854),	-- Footwraps of the Fixed Stars
+										i(188871),	-- Wrap of the Fixed Stars
+									},
+								}),
+								cl(HUNTER, {
+									["sym"] = SymRaid(HUNTER, 4),
+									["g"] = {
+										i(188872),	-- Godstalker's Camouflage
+										i(188857),	-- Godstalker's Fauld
+										i(188862),	-- Godstalker's Sabatons
+										i(188855),	-- Godstalker's Wristwraps
+									},
+								}),
+								cl(MAGE, {
+									["sym"] = SymRaid(MAGE, 4),
+									["g"] = {
+										i(188840),	-- Erudite Occultist's Bracers
+										i(188841),	-- Erudite Occultist's Cord
+										i(188846),	-- Erudite Occultist's Shroud
+										i(188838),	-- Erudite Occultist's Treads
+									},
+								}),
+								cl(MONK, {
+									["sym"] = SymRaid(MONK, 4),
+									["g"] = {
+										i(188913),	-- Demigaunts of the Grand Upwelling
+										i(188918),	-- Drape of the Grand Upwelling
+										i(188917),	-- Footwraps of the Grand Upwelling
+										i(188915),	-- Waistwrap of the Grand Upwelling
+									},
+								}),
+								cl(PALADIN, {
+									["sym"] = SymRaid(PALADIN, 4),
+									["g"] = {
+										i(188936),	-- Luminous Chevalier's Drape
+										i(188935),	-- Luminous Chevalier's Girdle
+										i(188930),	-- Luminous Chevalier's Spurs
+										i(188934),	-- Luminous Chevalier's Vambraces
+									},
+								}),
+								cl(PRIEST, {
+									["sym"] = SymRaid(PRIEST, 4),
+									["g"] = {
+										i(188876),	-- Bracelets of the Empyrean
+										i(188882),	-- Drape of the Empyrean
+										i(188877),	-- Sash of the Empyrean
+										i(188874),	-- Slippers of the Empyrean
+									},
+								}),
+								cl(ROGUE, {
+									["sym"] = SymRaid(ROGUE, 4),
+									["g"] = {
+										i(188906),	-- Soulblade Baldric
+										i(188909),	-- Soulblade Cloak
+										i(188908),	-- Soulblade Footpads
+										i(188904),	-- Soulblade Wristguard
+									},
+								}),
+								cl(SHAMAN, {
+									["sym"] = SymRaid(SHAMAN, 4),
+									["g"] = {
+										i(188921),	-- Theurgic Starspeaker's Belt
+										i(188919),	-- Theurgic Starspeaker's Bracers
+										i(188926),	-- Theurgic Starspeaker's Sabatons
+										i(188927),	-- Theurgic Starspeaker's Shawl
+									},
+								}),
+								cl(WARLOCK, {
+									["sym"] = SymRaid(WARLOCK, 4),
+									["g"] = {
+										i(188885),	-- Bangles of the Demon Star
+										i(188883),	-- Boots of the Demon Star
+										i(188891),	-- Cape of the Demon Star
+										i(188886),	-- Waistwrap of the Demon Star
+									},
+								}),
+								cl(WARRIOR, {
+									["sym"] = SymRaid(WARRIOR, 4),
+									["g"] = {
+										i(188945),	-- Favor of the Infinite Infantry
+										i(188944),	-- Greatbelt of the Infinite Infantry
+										i(188939),	-- March of the Infinite Infantry
+										i(188943),	-- Vambraces of the Infinite Infantry
+									},
+								}),
+					})),
+				}),					
 			})),
 			d(NORMAL_PLUS_RAID, {
 				bossNoLoot(VIGILANT_GUARDIAN, {
