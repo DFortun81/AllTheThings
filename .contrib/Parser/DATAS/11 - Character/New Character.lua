@@ -367,9 +367,15 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { DRAENEI },
 				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 },
 			}),
+			i(6126, {	-- Trapper's Boots [Orc]
+				["timeline"] = { "removed 4.0.3.13287" }
+			}),
 			i(6137, {	-- Thug Pants
 				--["races"] = { ORC, TAUREN, TROLL },
 				["timeline"] = { REMOVED_9_1_5 },
+			}),
+			i(6127, {	-- Trapper's Boots [Orc]
+				["timeline"] = { "removed 4.0.3.13287" }
 			}),
 			i(6138, {	-- Trapper's Boots
 				--["races"] = { ORC, TAUREN, TROLL },
@@ -735,6 +741,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(44, {	-- Squire's Pants
 				--["races"] = { HUMAN, DWARF },
 				["timeline"] = { REMOVED_9_1_5 }
+			}),
+			i(6118, {	-- Squire's Pants [Dwarf]
+				["timeline"] = { "removed 4.0.3" }
 			}),
 			i(23477, {	-- Squire's Pants
 				--["races"] = { DRAENEI },
