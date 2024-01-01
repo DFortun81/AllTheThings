@@ -82,10 +82,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			["timeline"] = { ADDED_10_2_0 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
-		q(76113, {	-- Report to the Trading Post -- Jan 2024
-			["timeline"] = { ADDED_10_2_0 },
-			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
-		}),
 	}),
 	n(YEAR2023, {
 		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, "removed 10.0.5.48317" } }, {
