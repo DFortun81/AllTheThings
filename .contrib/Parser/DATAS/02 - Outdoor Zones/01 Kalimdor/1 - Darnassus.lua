@@ -608,7 +608,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coords"] = {
 						{ 39.2, 81, DARNASSUS },
-						{ 55.6, 56.8, DARNASSUS },
+						{ 55.6, 56.8, TELDRASSIL },
 						{ 47.2, 52.2, DUN_MOROGH },
 						{ 43.4, 65.6, ELWYNN_FOREST },
 						{ 24.6, 9.2, IRONFORGE },
