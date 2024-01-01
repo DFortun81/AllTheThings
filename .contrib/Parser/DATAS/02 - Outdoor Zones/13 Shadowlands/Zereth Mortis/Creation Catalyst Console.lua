@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { "added 9.2.0" } }
 				d(LFR_RAID, {
 				--	["description"] = "Season 3: Items of 249 item level or lower will take the LFR appearance.\nSeason 4: 275 item level or lower.",
 				--	["description"] = "Season 4: Items of 275 item level or lower will take the LFR appearance.",
-					["description"] = "The Creation Catalyst is a system that lets you convert Non-set items into your class' Transmog Set.\nItems of 275 item level or lower will take the LFR appearance.\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
+					["description"] = "The Creation Catalyst is a system that lets you convert Non-set items into your class' Transmog Set.\nDungeon, Sandworn & Sepulcher LFR Items will grant LFR appearances.\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
 					["g"] = bubbleDown({ ["modID"] = 4 },
 							sharedData({["cost"] = {{"i",190189,2070}}},{	-- 2070 Sandworn Relic, Full set cost from Vendor
 						cl(DEATHKNIGHT, {
