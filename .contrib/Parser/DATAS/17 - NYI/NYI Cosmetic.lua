@@ -269,18 +269,6 @@ root(ROOTS.NeverImplemented, {
 			tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 					------ Trading Post ------
 				n(SETS, {
-					------ Wastewander Tracker ------
-					i(211122),	-- Ensemble: Wastewander Tracker's Kit
-					i(211121),	-- Wastewander Tracker's Bindings
-					i(211117),	-- Wastewander Tracker's Boots
-					i(211115),	-- Wastewander Tracker's Breastplate
-					i(211120),	-- Wastewander Tracker's Cinch
-					i(211164),	-- Wastewander Tracker's Cloak
-					i(211119),	-- Wastewander Tracker's Dowser
-					i(211116),	-- Wastewander Tracker's Grips
-					i(211118),	-- Wastewander Tracker's Pants
-					i(211113),	-- Wastewander Tracker's Rebreather
-					i(211114),	-- Wastewander Tracker's Spaulders
 
 					------ Unrelenting Justice ------
 					i(211093),	-- Belt of Unrelenting Justice

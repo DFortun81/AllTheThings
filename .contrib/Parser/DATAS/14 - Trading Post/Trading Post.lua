@@ -1080,7 +1080,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52301" } }, {
+		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52301", "removed 10.2.0.52649"} } }, {
 			n(MONTHLY_REWARD, {
 				pet(3255),	-- Buttercup (PET!)
 			}),
@@ -1263,187 +1263,126 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		})),
 	}),
 	n(YEAR2024, {
-		--[[n(JANUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52301" } }, {
+		n(JANUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52649"} }, {
 			n(MONTHLY_REWARD, {
-				pet(3255),	-- Buttercup (PET!)
+				i(211002),	-- Golden Mobile Timepiece
 			}),
 			filter(BATTLE_PETS, {
-				i(190607, {	-- Garrlok (PET!)
-					["cost"] = {{"c", TRADERS_TENDER, 750}},
-				}),
-				i(210870, {	-- Mitzy (PET!)
+				i(193429, {	-- Time-Lost Salamanther
 					["cost"] = {{"c", TRADERS_TENDER, 600}},
 				}),
 			}),
 			filter(MOUNTS, {
-				i(210919, {	-- Crimson Glimmerfur (MOUNT!)
-					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				i(190767, {	-- Armored Golden Pterrordax
+					["cost"] = {{"c", TRADERS_TENDER, 800}},
+				}),
+				i(211074, {	-- Copper Resonating Crystal
+					["cost"] = {{"c", TRADERS_TENDER, 800}},
 				}),
 			}),
 			filter(COSMETIC, {
-				i(211257, {	-- Arsenal Stormriders Stormhammers
-					["cost"] = {{"c", TRADERS_TENDER, 400}},
-					["classes"] = { DEATHKNIGHT, DRUID, EVOKER, MONK, ROGUE, PRIEST, PALADIN, SHAMAN, WARRIOR, ROGUE },
-					["g"] = {
-						i(211255),	-- Regal Stormhammer
-						i(211256),	-- Thundering Stormhammer
-					},
-				}),
-				i(208699, {	-- Battle Magisters Regalia
-					["cost"] = {{"c", TRADERS_TENDER, 450}},
-					["classes"] = MAGE,
-					["g"] = {
-						i(208695),	-- Battle Magister's Belt
-						i(208694),	-- Battle Magister's Epaulets
-						i(208693),	-- Battle Magister's Orbs
-					},
-				}),
-				i(208700, {	-- Battle Magisters Enchantments
-					["cost"] = {{"c", TRADERS_TENDER, 500}},
-					["classes"] = MAGE,
-					["g"] = {
-						i(208698),	-- Battle Magister's Scepter
-						i(208696),	-- Battle Magister's Scimitar
-						i(208697),	-- Battle Magister's Shard
-					},
-				}),
-				i(210869, {	-- Blademasters Azure Stones
-					["cost"] = {{"c", TRADERS_TENDER, 200}},
-				}),
-				i(211268, {	-- Blademasters Thundering Greatsword
-					["cost"] = {{"c", TRADERS_TENDER, 225}},
-				}),
-				i(210843, {	-- Candied Blade
-					["cost"] = {{"c", TRADERS_TENDER, 600}},
-				}),
-				i(190430, {	-- Chipped Gladius
-					["cost"] = {{"c", TRADERS_TENDER, 50}},
-				}),
-				i(211267, {	-- Classic Snowy Tabard
-					["cost"] = {{"c", TRADERS_TENDER, 100}},
-				}),
-				i(190203, {	-- Craftsman Timber Mallet
-					["cost"] = {{"c", TRADERS_TENDER, 50}},
-				}),
-				i(211070, {	-- Crimson Treads of the Kaluak
-					["cost"] = {{"c", TRADERS_TENDER, 50}},
-				}),
-				i(208039, { -- Ember Court Soiree Gloves
-					["cost"] = {{"c", TRADERS_TENDER, 100}},
-				}),
-				i(210883, {	-- Ensemble: Scarlet Zealots Trappings
+				i(190447, {	-- Soulburner Bardiche
 					["cost"] = {{"c", TRADERS_TENDER, 550}},
+				}),
+				i(190671, {	-- Tabard of Wild Might
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190693, {	-- Ancestral Stonehoof Totem
+					["cost"] = {{"c", TRADERS_TENDER, 250}},
+				}),
+				i(190712, {	-- Ancestral Skychaser Totem
+					["cost"] = {{"c", TRADERS_TENDER, 250}},
+				}),
+				i(190767, {	-- Armored Golden Pterrordax
+					["cost"] = {{"c", TRADERS_TENDER, AMOUNT}},
+				}),
+				i(190854, {	-- Heavily Stitched Wallet
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+				}),
+				i(190887, {	-- Highlord's Ceremonial Drape
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(190892, {	-- Orange Sleeved Shirt
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(200925, {	-- Ensemble: Solemn Watchman's Garb
+					["cost"] = {{"c", TRADERS_TENDER, 650}},
 					["groups"] = {
-						i(190444),	-- Scarlet Zealots Cassock
-						i(190427),	-- Scarlet Zealots Cloak
-						i(207029),	-- Scarlet Zealots Heater Shield
+						i(190091),	-- Fanciful Corsage
+						i(190728),	-- Gothic Corsage
+						i(190694),	-- Solemn Watchman's Belt
+						i(190695),	-- Solemn Watchman's Boots
+						i(190872),	-- Solemn Watchman's Cuirass
+						i(190152),	-- Solemn Watchman's Gauntlets
+						i(190901),	-- Solemn Watchman's Helm
+						i(190896),	-- Solemn Watchman's Spaulders
+						i(190845),	-- Solemn Watchman's Trousers
 					},
 				}),
-				i(190851, { -- Ensemble: Vagabonds Crimson Threads
+				i(206321, {	-- Ensemble: Vagabonds Sunny Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
-					["g"] = {
-						i(190827), -- Vagabonds Crimson Cape
-						i(190828), -- Vagabonds Crimson Hood
+					["groups"] = {
+						i(206277),	-- Vagabond's Sunny Cape
+						i(206288),	-- Vagabond's Sunny Hood
 					},
 				}),
-				i(190922, { -- Ensemble: Vagabond's Snowy Threads
+				i(206332, {	-- Ensemble: Wanderers Sunny Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
-					["g"] = {
-						i(190882), -- Vagabond's Snowy Cape
-						i(190884), -- Vagabond's Snowy Hood
+					["groups"] = {
+						i(206310),	-- Wanderer's Sunny Cloak
+						i(206300),	-- Wanderer's Sunny Scarf
 					},
 				}),
-				i(190850, { -- Ensemble: Wanderers Crimson Trappings
-					["cost"] = {{"c", TRADERS_TENDER, 100}},
-					["g"] = {
-						i(190825), -- Wanderer's Crimson Cloak
-						i(190826), -- Wanderer's Crimson Scarf
-					},
+				i(208147, {	-- Yellow Tweed Cap
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
 				}),
-				i(190921, { -- Ensemble: Wanderer's Snowy Trappings
-					["cost"] = {{"c", TRADERS_TENDER, 100}},
-					["g"] = {
-						i(190883), -- Wanderer's Snowy Cloak
-						i(190885), -- Wanderer's Snowy Scarf
-					},
-				}),
-				i(211130, {	-- Errant Crusaders Helm
-					["cost"] = {{"c", TRADERS_TENDER, 225}},
-				}),
-				i(190886, { -- Fine White Evening Gloves
+				i(210857, {	-- Trader's Carrot Sarong
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
-				i(190874, {	-- Glittering Fel Gavel
+				i(210866, {	-- Blademaster's Suntouched Stones
 					["cost"] = {{"c", TRADERS_TENDER, 200}},
 				}),
-				i(208729, {	-- Imminence of Krag'wa's Executor
+				i(211064, {	-- Dwarven Crown Splitter
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
-					["classes"] = SHAMAN,
-					["g"] = {
-						i(208712),	-- Headdress of Krag'wa's Executor
-						i(208713),	-- Idols of Krag'wa's Executor
-						i(208714),	-- Vines of Krag'wa's Executor
-					},
 				}),
-				i(208727, {	-- Hornstrider Hunters Camouflage
-					["cost"] = {{"c", TRADERS_TENDER, 450}},
-					["classes"] = HUNTER,
-					["g"] = {
-						i(208719),	-- Hornstrider Hunter's Ammunition
-						i(208718),	-- Hornstrider Hunter's Beak
-						i(208720),	-- Hornstrider Hunter's Crest
-					},
+				i(211066, {	-- Gossamer Desert Gown
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
-				i(208728, {	-- Hornstrider Hunters Preference
+				i(211068, {	-- Sepia Treads of the Kalu'ak
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(211072, {	-- Time Marshal's Carbine
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
-					["classes"] = HUNTER,
-					["g"] = {
-						i(208723),	-- Hornstrider Hunter's Harpooner
-						i(208722),	-- Hornstrider Hunter's Pride
-						i(208721),	-- Hornstrider Hunter's Serrator
+				}),
+				i(211098, {	-- Copper Scarab Bulwark
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+				}),
+				i(211122, {	-- Ensemble: Wastewander Tracker's Kit
+					["cost"] = {{"c", TRADERS_TENDER, 850}},
+					["groups"] = {
+						i(211121),	-- Wastewander Tracker's Bindings
+						i(211117),	-- Wastewander Tracker's Boots
+						i(211115),	-- Wastewander Tracker's Breastplate
+						i(211120),	-- Wastewander Tracker's Cinch
+						i(211164),	-- Wastewander Tracker's Cloak
+						i(211119),	-- Wastewander Tracker's Dowser
+						i(211116),	-- Wastewander Tracker's Grips
+						i(211118),	-- Wastewander Tracker's Pants
+						i(211113),	-- Wastewander Tracker's Rebreather
+						i(211114),	-- Wastewander Tracker's Spaulders
 					},
 				}),
-				i(190685, {	-- Lost Crusaders Azure Battleaxe
-					["cost"] = {{"c", TRADERS_TENDER, 200}},
-				}),
-				i(208725, {	-- Scales of the Silver Hoarder
-					["cost"] = {{"c", TRADERS_TENDER, 450}},
-					["classes"] = EVOKER,
-					["g"] = {
-						i(208706),	-- Horns of the Silver Hoarder
-						i(208708),	-- Sash of the Silver Hoarder
-						i(208707),	-- Shoulderguards of the Silver Hoarder
-					},
-				}),
-				i(208730, {	-- Tools of Kragwas Executor
-					["cost"] = {{"c", TRADERS_TENDER, 750}},
-					["classes"] = SHAMAN,
-					["g"] = {
-						i(208716),	-- Hatchet of Krag'wa's Executor
-						i(208715),	-- Safeguard of Krag'wa's Executor
-						i(208717),	-- Talons of Krag'wa's Executor
-					},
-				}),
-				i(210844, {	-- Traders Crimson Sarong
+				i(211129, {	-- Sand-Swept Soiree Gloves
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
-				i(210846, {	-- Traders Lively Sarong
-					["cost"] = {{"c", TRADERS_TENDER, 100}},
-				}),
-				i(208726, {	-- Treasure of the Silver Hoarder
+				i(211137, {	-- Witch Doctor's Fetish Frame
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
-					["classes"] = EVOKER,
-					["g"] = {
-						i(208710),	-- Flames of the Silver Hoarder
-						i(208709),	-- Flight of the Silver Hoarder
-						i(208711),	-- Saber of the Silver Hoarder
-					},
 				}),
-				i(211258, {	-- Wildhammer Scouts Headgear
-					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				i(211158, {	-- Witch Doctor's Fetish Guard
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
 				}),
 			}),
-		})),--]]
+		})),
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, {
