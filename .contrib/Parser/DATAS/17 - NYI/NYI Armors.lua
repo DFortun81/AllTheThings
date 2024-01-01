@@ -1097,7 +1097,6 @@ root(ROOTS.NeverImplemented, {
 				}),
 				tier(LEGION_TIER, 2.0, {
 					i(147036),	-- Fel-Stippled Legguards
-					i(147516, {["modID"] = 2 }),	-- Legion Stalker's Hood
 				}),
 			}),
 			filter(MAIL, {

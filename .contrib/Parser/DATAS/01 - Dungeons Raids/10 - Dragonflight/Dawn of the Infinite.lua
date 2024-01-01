@@ -33,6 +33,9 @@ local QUANTUM_GROUP = sharedData({
 		filter(LEATHER, {
 			ig(114264),	-- Bloodthorn Hood					(NYI)
 			ig(114388),	-- Hood of Falling Leaves			(NYI)
+			ig(147516, {	-- Legion Stalker's Hood		(NYI)
+				["modID"] = 2, -- Heroic dungeon
+			}),
 			ig(121509),	-- Runesworn Crown		 			(NYI)
 
 			ig(134621),	-- Incendiary Helm 					(Removed)
@@ -56,6 +59,7 @@ local QUANTUM_GROUP = sharedData({
 		filter(PLATE, {
 			ig(121506),	-- Dreadsworn Crown					(NYI)
 			ig(114390),	-- Greathelm of Grievous Storms		(NYI)
+			ig(108081),	-- Hardened Draenic Steel Helm		(NYI)
 			ig(108165),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108189),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108197),	-- Peerless Draenic Steel Helm		(NYI)
@@ -267,6 +271,8 @@ local QUANTUM_GROUP = sharedData({
 			ig(121510),	-- Dreadsworn Legguards				(NYI)
 			ig(108082),	-- Hardened Draenic Steel Legguards	(NYI)
 			ig(114394),	-- Legplates of Grievous Storms		(NYI)
+			ig(108214),	-- Peerless Draenic Steel Legguards	(NYI)
+			ig(108222),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(114270),	-- Ruby Plate Legplates				(NYI)
 
 			ig(134768),	-- Concealment Legplates			(Removed)
@@ -380,6 +386,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(163930),	-- Kovork's Rattle						(NYI)
 		ig(161118),	-- Marrow Shatter						(NYI)
 		ig(107390),	-- Obliterator Firing Lever				(NYI)(Unique)
+		ig(108238),	-- Peerless Draenic Steel Mace			(NYI)
 		ig(108240),	-- Peerless Draenic Steel Mace			(NYI)
 		ig(108241),	-- Peerless Draenic Steel Mace			(NYI)
 		ig(115299),	-- Spectral Scepter						(NYI)
