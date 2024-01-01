@@ -129,7 +129,7 @@ else
 		local questLogIndex = GetQuestLogIndexByID(questID);
 		if questLogIndex and questLogIndex > 0 then
 			local frequency = select(7, GetQuestLogTitle(questLogIndex))
-			if frequency then return (frequency == 1 and "(D)") or (frequency == 2 and "(W)") or ""; end
+			if frequency then return (frequency == 2 and "(D)") or (frequency == 3 and "(W)") or ""; end
 		end
 		return "";
 	end
