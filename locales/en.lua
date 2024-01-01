@@ -894,8 +894,6 @@ local L = {
 		[-160] = 236567,																	-- Level 60 Class Trial
 	-- PvP
 		[-216] = "Interface\\Icons\\ability_rogue_combatreadiness",							-- Prestige
-	-- Fishing
-		[-217] = "Interface\\Icons\\INV_Fishing_Lure_Worm",									-- Lures (for Fishing)
 	-- War Campaign
 		[-236] = "Interface\\Icons\\ui_alliance_7legionmedal",								-- Alliance War Campaign
 	-- PvP
@@ -1085,8 +1083,6 @@ local L = {
 		[-160] = string.format(SPELLBOOK_AVAILABLE_AT, 60).." "..CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,	-- Level 60 Class Trial
 	-- PvP
 		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
-	-- Fishing
-		[-217] = "Lures",														-- Lures (for Fishing)
 	-- War Campaign
 		[-236] = C_Map.GetAreaInfo(9663),										-- War Campaign - Alliance
 	-- PvP

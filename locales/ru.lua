@@ -644,8 +644,6 @@ local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Garrison
 		[-152] = "Гарнизонная кампания",							-- Garrison Campaign
-	-- Fishing
-		[-217] = "Наживки",											-- Lures (for Fishing)
 	-- PvP
 		[-242] = "Нерейтинговые",									-- Unrated
 		[-243] = "Премия",											-- Bounty

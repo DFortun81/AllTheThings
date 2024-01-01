@@ -652,8 +652,6 @@ do a[key] = value; end
 
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Fishing
-		[-217] = "Appâts",											-- Lures (for Fishing)
 	-- Allied Races
 		[-255] = "Armure ancestrale",								-- Heritage
 	-- BFA Outposts

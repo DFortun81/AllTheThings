@@ -91,6 +91,7 @@ _.CategoryNames = {
 	[1010] = "Boots",
 	[1011] = "Cloaks",
 	[1012] = "Nets",
+	[1022] = "Lures",
 	[1026] = "Inks",
 	[1235] = "Follower Equipment",
 	[1242] = "Conversions",
@@ -182,6 +183,7 @@ _.CategoryIcons = {
 	[1009] = "Interface/Icons/inv_pants_06",
 	[1010] = "Interface/Icons/INV_Boots_01",
 	[1011] = "Interface/Icons/INV_Misc_Cape_18",
+	[1022] = "Interface/Icons/INV_Fishing_Lure_Worm",
 	[1026] = "Interface/Icons/inv_inscription_inkpurple01",
 	[1298] = "Interface/Icons/INV_Potion_41",
 	[1300] = "Interface/Icons/Spell_Fire_Volcano",
@@ -10471,6 +10473,9 @@ _.ObjectModels = {
 -- Supported Locales
 local simplifiedLocale = string.sub(GetLocale(),1,2);
 if simplifiedLocale == "de" then
+localize(_.CategoryNames, {
+	[1022] = "Köder",
+});
 localize(L.HEADER_NAMES, {
 	[-1000008] = "Klassenprozess",
 	[-1000010] = "Gemeinsame Bossbeute",
@@ -13895,6 +13900,9 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "es" then
+localize(_.CategoryNames, {
+	[1022] = "Señuelos",
+});
 localize(L.HEADER_NAMES, {
 	[-1000008] = "Prueba de Clase",
 	[-1000087] = "Asaltos de las Curias",
@@ -17208,6 +17216,9 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "fr" then
+localize(_.CategoryNames, {
+	[1022] = "Appâts",
+});
 localize(L.HEADER_NAMES, {
 	[-1000000] = "Est",
 	[-1000001] = "Nord",
@@ -20646,6 +20657,9 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "it" then
+localize(_.CategoryNames, {
+	[1022] = "Esche",
+});
 localize(L.HEADER_NAMES, {
 	[-1000008] = "Prova di Classe",
 	[-1000087] = "Assalti delle Congreghe",
@@ -23816,6 +23830,7 @@ localize(_.CategoryNames, {
 	[1009] = "다리",
 	[1010] = "발",
 	[1011] = "등",
+	[1022] = "미끼",
 	[1296] = "전투 물약",
 	[1298] = "영약",
 	[1299] = "선택적 시약",
@@ -26897,6 +26912,9 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "pt" then
+localize(_.CategoryNames, {
+	[1022] = "Iscas",
+});
 localize(L.HEADER_NAMES, {
 	[-1000008] = "Teste de Classe",
 	[-1000087] = "Ataques Pactos",
@@ -30190,6 +30208,9 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "ru" then
+localize(_.CategoryNames, {
+	[1022] = "Наживки",
+});
 localize(L.HEADER_NAMES, {
 	[-1000000] = "Восток",
 	[-1000001] = "Север",
@@ -33726,6 +33747,9 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "zh" then
+localize(_.CategoryNames, {
+	[1022] = "鱼竿",
+});
 localize(L.HEADER_NAMES, {
 	[-1000000] = "东部",
 	[-1000001] = "北部",

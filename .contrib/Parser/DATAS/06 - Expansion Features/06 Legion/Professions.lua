@@ -762,7 +762,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 			}),
 			ach(10597),		-- Legion Aquaculture
 			ach(10594),		-- Legion Fisherman
-			n(-217,   {	-- Lures
+			category(1022,   {	-- Lures
 				i(133715, {	-- Ancient Vrykul Ring
 					["description"] = "This item will give you a buff that will allow you to see and fish from Oodelfjisk schools.",
 					["maps"] = { STORMHEIM },

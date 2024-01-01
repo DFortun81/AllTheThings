@@ -4460,8 +4460,17 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 	},
 	[1022] = {
 		readable = "Lures",
+		icon = "Interface/Icons/INV_Fishing_Lure_Worm",
 		text = {
 			en = "Lures",
+			es = "Señuelos",
+			de = "Köder",
+			fr = "Appâts",
+			it = "Esche",
+			pt = "Iscas",
+			ru = "Наживки",
+			ko = "미끼",
+			cn = "鱼竿",
 		},
 	},
 	[1023] = {
