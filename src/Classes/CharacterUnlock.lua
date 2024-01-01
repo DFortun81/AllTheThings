@@ -27,7 +27,7 @@ local function SavedAsQuest(t)
 	return IsQuestFlaggedCompleted(t.questID)
 end
 local function SavedAsSpell(t)
-	return IsSpellKnownHelper(t.spellID)
+	return t.spellID and IsSpellKnownHelper(t.spellID)
 end
 
 api.OnStartup = function(ATTAccountWideData)
