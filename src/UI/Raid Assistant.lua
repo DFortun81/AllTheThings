@@ -28,6 +28,7 @@ local CloseGroupFinder = function()
 end
 
 -- Module locals
+local AutoReset = false;
 local InviteCharacterName = "LET ME IN, LET ME INNNNN";
 -- NOTE: This should be moved to a common api file.
 local function SortByTextAndPriority(a, b)
@@ -143,7 +144,7 @@ app:GetWindow("RaidAssistant", {
 			return IsInInstance() or C_Scenario_IsInScenario();
 		end;
 		self.TryResetInstance = function()
-			while isBusy() do
+			while isBusy() and AutoReset do
 				coroutine.yield();
 			end
 			ResetInstances();
@@ -154,11 +155,13 @@ app:GetWindow("RaidAssistant", {
 			self:Update(true);
 		end;
 		handlers.GROUP_ROSTER_UPDATE = updateWithTrigger;
+		handlers.ZONE_CHANGED = updateWithTrigger;
 		handlers.ZONE_CHANGED_NEW_AREA = updateWithTrigger;
 		handlers.ACTIVE_TALENT_GROUP_CHANGED = updateWithTrigger;
 		handlers.PLAYER_DIFFICULTY_CHANGED = updateWithTrigger;
 		handlers.PLAYER_LOOT_SPEC_UPDATED = updateWithTrigger;
 		self:RegisterEvent("CHAT_MSG_SYSTEM");
+		self:RegisterEvent("ZONE_CHANGED");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 		self:RegisterEvent("GROUP_ROSTER_UPDATE");
 		
@@ -181,6 +184,12 @@ app:GetWindow("RaidAssistant", {
 		if C_Scenario_IsInScenario then
 			self:RegisterEvent("SCENARIO_UPDATE");
 		end
+	end,
+	OnLoad = function(self, settings)
+		AutoReset = settings.AutoReset;
+	end,
+	OnSave = function(self, settings)
+		settings.AutoReset = AutoReset;
 	end,
 	OnRebuild = function(self, ...)
 		if not self.data then
@@ -240,7 +249,7 @@ app:GetWindow("RaidAssistant", {
 					priority = 16,
 					OnClick = function(row, button)
 						if IsAltKeyDown() then
-							row.ref.saved = not row.ref.saved;
+							AutoReset = not AutoReset;
 							self:Update(true);
 						else
 							ResetInstances();
@@ -248,8 +257,9 @@ app:GetWindow("RaidAssistant", {
 						return true;
 					end,
 					OnUpdate = function(data)
+						data.saved = AutoReset;
 						data.visible = not IsInGroup() or UnitIsGroupLeader("player", "raid");
-						if data.visible and data.saved then
+						if data.visible and AutoReset then
 							self:StartATTCoroutine("TryResetInstance", self.TryResetInstance);
 						end
 						return true;
