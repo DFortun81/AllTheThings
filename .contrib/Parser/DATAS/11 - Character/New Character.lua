@@ -1098,6 +1098,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				--["races"] = { GOBLIN },
 				["timeline"] = { "added 4.0.3.13287" }
 			}),
+			i(153, {	-- Primitive Kilt
+				["timeline"] = { "removed 4.0.3.13287" }
+			}),
 			i(52539, {	-- Primal Pants
 				--["races"] = { DWARF },
 				["timeline"] = { "added 4.0.3.13287", REMOVED_9_1_5 }
