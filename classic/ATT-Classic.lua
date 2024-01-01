@@ -378,7 +378,6 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 		end
 	end
 end
--- Attempts to return the displayID for the data, or every displayID if 'all' is specified
 local function GetDisplayID(data, all)
 	-- don't create a displayID for groups with a sourceID/itemID/difficultyID/mapID
 	if data.sourceID or data.itemID or data.difficultyID or data.mapID then return; end
@@ -445,12 +444,33 @@ GameTooltipModel.TrySetModel = function(self, reference)
 	GameTooltipModel.HideAllModels(self);
 	if app.Settings:GetTooltipSetting("Models") then
 		self.lastModel = reference;
-		local displayInfos = reference.displayInfo or GetDisplayID(reference, true);
+		local displayInfos = reference.displayInfo;-- or GetDisplayID(reference, true);
 		if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfos) then
 			return true;
 		end
+		
+		local creatureID = reference.creatureID;
+		if reference.providers then
+			for k,v in pairs(reference.providers) do
+				-- if one of the providers is an NPC, we should show its texture regardless of other providers
+				if v[1] == "n" then
+					creatureID = v[2];
+				end
+			end
+		end
+		if reference.qgs then
+			for k,v in pairs(reference.qgs) do
+				creatureID = v;
+			end
+		end
 
-		if reference.displayID then
+		if creatureID and creatureID > 0 then
+			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
+			self.Model:SetCamDistanceScale(reference.modelScale or 1);
+			self:SetCreatureID(creatureID);
+			self.Model:Show();
+			return true;
+		elseif reference.displayID then
 			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
 			self.Model:SetCamDistanceScale(reference.modelScale or 1);
 			self.Model:SetDisplayInfo(reference.displayID);
@@ -479,12 +499,6 @@ GameTooltipModel.TrySetModel = function(self, reference)
 			self.Model:SetModel(modelID);
 			self.Model:Show();
 			self:Show();
-			return true;
-		elseif reference.creatureID and reference.creatureID > 0 then
-			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self:SetCreatureID(reference.creatureID);
-			self.Model:Show();
 			return true;
 		end
 		if reference.atlas then
