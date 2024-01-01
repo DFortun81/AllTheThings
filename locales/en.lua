@@ -12,6 +12,8 @@
 
 local name, app = ...;
 
+-- Global locals
+local GetAchievementInfo, select, sformat = GetAchievementInfo, select, string.format;
 -- Globals
 CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER = "Class Trial";
 CHARACTER_UPGRADE_CHARACTER_LIST_LABEL = "Character Boost";
@@ -1057,8 +1059,8 @@ local L = {
 	};
 	["HEADER_NAMES"] = {
 	-- Class Trial
-		[-137] = string.format(SPELLBOOK_AVAILABLE_AT, 90),						-- Level 90
-		[-138] = string.format(SPELLBOOK_AVAILABLE_AT, 100),					-- Level 100
+		[-137] = sformat(SPELLBOOK_AVAILABLE_AT, 90),						-- Level 90
+		[-138] = sformat(SPELLBOOK_AVAILABLE_AT, 100),					-- Level 100
 	-- WoD Dungeons(Fake npcid)
 		[-140] = select(2, GetAchievementInfo(9039)),							-- Auchindoun
 		[-141] = select(2, GetAchievementInfo(9037)),							-- Bloodmaul Slag Mines
@@ -1069,18 +1071,18 @@ local L = {
 		[-146] = select(2, GetAchievementInfo(9044)),							-- The Everbloom
 		[-147] = select(2, GetAchievementInfo(9042)),							-- Upper Blackrock Spire
 	-- Class Trial
-		[-148] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." "..CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,	-- Level 50 Class Trial
-		[-149] = string.format(SPELLBOOK_AVAILABLE_AT, 110),					-- Level 110
-		[-150] = string.format(SPELLBOOK_AVAILABLE_AT, 120),					-- Level 120
+		[-148] = sformat(SPELLBOOK_AVAILABLE_AT, 50).." "..CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,	-- Level 50 Class Trial
+		[-149] = sformat(SPELLBOOK_AVAILABLE_AT, 110),					-- Level 110
+		[-150] = sformat(SPELLBOOK_AVAILABLE_AT, 120),					-- Level 120
 	-- Garrison
 		[-152] = "Garrison Campaign",											-- Garrison Campaign
 		[-153] = CAPACITANCE_WORK_ORDERS,										-- Work Orders
 	-- Class Trial
-		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48
-		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." "..CHARACTER_UPGRADE_CHARACTER_LIST_LABEL,	-- Level 50 Character Boost
-		[-156] = string.format(SPELLBOOK_AVAILABLE_AT, 60).." "..CHARACTER_UPGRADE_CHARACTER_LIST_LABEL,	-- Level 60 Character Boost
+		[-154] = sformat(SPELLBOOK_AVAILABLE_AT, 48),						-- Level 48
+		[-155] = sformat(SPELLBOOK_AVAILABLE_AT, 50).." "..CHARACTER_UPGRADE_CHARACTER_LIST_LABEL,	-- Level 50 Character Boost
+		[-156] = sformat(SPELLBOOK_AVAILABLE_AT, 60).." "..CHARACTER_UPGRADE_CHARACTER_LIST_LABEL,	-- Level 60 Character Boost
 	-- Class Trial
-		[-160] = string.format(SPELLBOOK_AVAILABLE_AT, 60).." "..CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,	-- Level 60 Class Trial
+		[-160] = sformat(SPELLBOOK_AVAILABLE_AT, 60).." "..CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,	-- Level 60 Class Trial
 	-- PvP
 		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
 	-- War Campaign
@@ -1174,17 +1176,17 @@ local L = {
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
 		[-902] = COVENANT_SANCTUM_TAB_RENOWN,									-- Renown
 		[-905] = GetSpellInfo(280630),											-- Command Table
-		[-916] = string.format(COVENANT_SANCTUM_TIER, 1),						-- Tier 1
-		[-917] = string.format(COVENANT_SANCTUM_TIER, 2),						-- Tier 2
-		[-918] = string.format(COVENANT_SANCTUM_TIER, 3),						-- Tier 3
+		[-916] = sformat(COVENANT_SANCTUM_TIER, 1),						-- Tier 1
+		[-917] = sformat(COVENANT_SANCTUM_TIER, 2),						-- Tier 2
+		[-918] = sformat(COVENANT_SANCTUM_TIER, 3),						-- Tier 3
 		[-979] = "Broker Ve'ken & Broker Ve'nott",								-- Broker Ve'ken & Broker Ve'nott
 		[-981] = GetSpellInfo(348869),											-- Conduits
 		-- SL Maldraxxus/Necrolord
 		[-920] = GetSpellInfo(321078),											-- Necrolord
 		[-923] = COVENANT_SANCTUM_FEATURE_NECROLORDS,							-- Abomination Factory
 		[-924] = "Transport Network",											-- Transport Network
-		[-925] = string.format(COVENANT_SANCTUM_TIER, 4),						-- Tier 4
-		[-926] = string.format(COVENANT_SANCTUM_TIER, 5),						-- Tier 5
+		[-925] = sformat(COVENANT_SANCTUM_TIER, 4),						-- Tier 4
+		[-926] = sformat(COVENANT_SANCTUM_TIER, 5),						-- Tier 5
 		-- SL Ardenweald/Night Fae
 		[-929] = GetSpellInfo(321077),											-- Night Fae
 		[-930] = COVENANT_SANCTUM_FEATURE_NIGHT_FAE,							-- Queen's Conservatory
