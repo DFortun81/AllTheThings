@@ -1080,7 +1080,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52301", "removed 10.2.0.52649"} } }, {
+		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52301", "removed 10.2.0.52649"} }, {
 			n(MONTHLY_REWARD, {
 				pet(3255),	-- Buttercup (PET!)
 			}),
@@ -1292,9 +1292,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(190712, {	-- Ancestral Skychaser Totem
 					["cost"] = {{"c", TRADERS_TENDER, 250}},
-				}),
-				i(190767, {	-- Armored Golden Pterrordax
-					["cost"] = {{"c", TRADERS_TENDER, AMOUNT}},
 				}),
 				i(190854, {	-- Heavily Stitched Wallet
 					["cost"] = {{"c", TRADERS_TENDER, 400}},
