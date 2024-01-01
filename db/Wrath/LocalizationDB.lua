@@ -812,9 +812,9 @@ localize(L.EVENT_REMAPPING, {
 
 -- Programmatic Event Scheduling
 _.Modules.Events.SetEventInformation(590, {
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=4,["year"]=2022},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=4,["year"]=2022}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=5,["year"]=2023},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=5,["year"]=2023}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=7,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=7,["year"]=2024})
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=7,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=7,["year"]=2024}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=1,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=1,["year"]=2025})
 });
 
 -- Filter Database Module
