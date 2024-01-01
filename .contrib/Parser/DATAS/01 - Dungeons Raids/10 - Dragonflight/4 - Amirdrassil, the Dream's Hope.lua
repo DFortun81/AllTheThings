@@ -633,6 +633,15 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 							}),
 						},
 					}),
+					q(78473, {	-- The Power of Dreams, Lost
+						["description"] = "This quest allows a player to recover their Incandescent Essence if it was deleted.",
+						["provider"] = { "n", 210039 },	-- Merithra
+						["sourceQuest"] = 78429,	-- The Power of Dreams, Awoken
+						["repeatable"] = true,
+						["groups"] = {
+							i(210494),	-- Incandescent Essence
+						},
+					}),
 				}),
 				BossOnly(GNARLROOT, {
 					i(210170),	-- Design: Dreamtender's Charm (RECIPE!)
