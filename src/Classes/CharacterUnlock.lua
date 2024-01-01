@@ -79,9 +79,13 @@ api.OnLoad = function()
 	end
 	-- Defines a Class type which provides some character-based collectible by spelID
 	app.CreateCharacterUnlockSpell = function(id, t)
-		if t and t.itemID then
-			return CreateCharacterUnlockSpellItem(id, t)
+		if id then
+			if t and t.itemID then
+				return CreateCharacterUnlockSpellItem(id, t)
+			end
+			return CreateCharacterUnlockSpell(id, t)
+		else
+			return setmetatable({text="ERROR: CreateCharacterUnlockSpell missing spellID"},app.BaseClass);
 		end
-		return CreateCharacterUnlockSpell(id, t)
 	end
 end
