@@ -60,39 +60,121 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3_LAUNCH },
 		}),
 		ach(5180),	-- Breaking The Sound Barrier
-		ach(7380),	-- Double Agent
-		ach(7382),	-- Dynamic Duo
+		ach(7380, {	-- Double Agent
+			["timeline"] = { "added 5.0.4" },
+		}),
+		ach(7382, {	-- Dynamic Duo
+			["timeline"] = { "added 5.0.4" },
+		}),
 		ach(889),	-- Fast and Furious
-		ach(1176),	-- Got My Mind On My Money (100)
-		ach(1177),	-- Got My Mind On My Money (1,000)
-		ach(1178),	-- Got My Mind On My Money (5,000)
-		ach(1180),	-- Got My Mind On My Money (10,000)
-		ach(1181),	-- Got My Mind On My Money (25,000)
-		ach(5455),	-- Got My Mind On My Money (50,000)
-		ach(5456),	-- Got My Mind On My Money (100,000)
-		ach(6753),	-- Got My Mind On My Money (200,000)
-		ach(891),	-- Giddy Up!
-		ach(890),	-- Into The Wild Blue Yonder (Expert)
+		ach(1176, {	-- Got My Mind On My Money [100g]
+			["timeline"] = { "added 3.0.1" },
+			["rank"] = 100,
+		}),
+		ach(1177, {	-- Got My Mind On My Money [1000g]
+			["timeline"] = { "added 3.0.1" },
+			["rank"] = 1000,
+		}),
+		ach(1178, {	-- Got My Mind On My Money [5000g]
+			["timeline"] = { "added 3.0.1" },
+			["rank"] = 5000,
+		}),
+		ach(1180, {	-- Got My Mind On My Money [10000g]
+			["timeline"] = { "added 3.0.1" },
+			["rank"] = 10000,
+		}),
+		ach(1181, {	-- Got My Mind On My Money [25000g]
+			["timeline"] = { "added 3.0.1" },
+			["rank"] = 25000,
+		}),
+		ach(5455, {	-- Got My Mind On My Money [50000g]
+			["timeline"] = { "added 4.0.3" },
+			["rank"] = 50000,
+		}),
+		ach(5456, {	-- Got My Mind On My Money [100000g]
+			["timeline"] = { "added 4.0.3" },
+			["rank"] = 100000,
+		}),
+		ach(6753, {	-- Got My Mind On My Money [200000g]
+			["timeline"] = { "added 5.0.4" },
+			["rank"] = 200000,
+		}),
+		ach(891, {	-- Giddy Up!
+			-- #if AFTER TBC
+			["spellID"] = 33388,	-- Apprentice Riding
+			["rank"] = 1,
+			-- #else
+			["description"] = "Learn any of the riding skills.",
+			["OnClick"] = [[_.CommonAchievementHandlers.KNOW_SPELLS_OnClick]],
+			["OnTooltip"] = [[_.CommonAchievementHandlers.KNOW_SPELLS_OnTooltip]],
+			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.KNOW_SPELLS_ANY_OnUpdate(t, 824, 18995, 10907, 826, 10861, 828, 10906, 825); end]],
+			--[[
+				824,	-- Horse Riding
+				18995,	-- Kodo Riding
+				10907,	-- Mechanostrider Piloting
+				826,	-- Ram Riding
+				10861,	-- Raptor Riding
+				828,	-- Tiger Riding
+				10906,	-- Undead Horsemanship
+				825,	-- Wolf Riding
+			]]--
+			-- #endif
+		}),
+		applyclassicphase(TBC_PHASE_ONE, ach(890, {	-- Into the Wild Blue Yonder
+			["spellID"] = 34090,	-- Expert Riding
+			["timeline"] = { "added 2.0.1" },
+			["rank"] = 3,
+		})),
 		ach(15805, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),	-- Level 70
 		ach(14783, {["timeline"] = { ADDED_9_0_1 }}),	-- Level 60
 		ach(14782, {["timeline"] = { ADDED_9_0_1 }}),	-- Level 50
 		ach(14884, {["timeline"] = { ADDED_9_0_1 }}),	-- Level 45
-		ach(9),	-- Level 40
-		ach(8),	-- Level 30
-		ach(7),	-- Level 20
-		ach(6),	-- Level 10
-		ach(7384),	-- Quintessential Quintet
-		ach(621),	-- Represent
-		ach(546),	-- Safe Deposit
-		ach(545),	-- Shave and a Haircut
-		ach(1020),	-- Ten Tabards
-		ach(7383),	-- Terrific Trio
-		ach(5755),	-- Thirty Tabards
-		ach(1021, {	-- Twenty-Five Tabards
-			i(40643),	-- Tabard of the Achiever
+		
+		applyclassicphase(WRATH_PHASE_ONE, ach(705, {	-- Master of Arms
+			["timeline"] = { "added 3.0.1", "removed 4.0.1" },
+		})),
+		ach(7384, {	-- Quintessential Quintet
+			["timeline"] = { "added 5.0.4" },
 		}),
+		ach(621, {	-- Represent [TODO]
+			["timeline"] = { "added 3.0.1" },
+			["rank"] = 1,
+		}),
+		ach(546, {	-- Safe Deposit
+			-- #if BEFORE TBC
+			["description"] = "Buy 6 additional bank slots.",
+			["OnUpdate"] = [[function(t) t:SetAchievementCollected(t.achievementID, GetNumBankSlots() >= 6); end]],
+			-- #elseif BEFORE WRATH
+			["description"] = "Buy 7 additional bank slots.",
+			["OnUpdate"] = [[function(t) t:SetAchievementCollected(t.achievementID, GetNumBankSlots() >= 7); end]],
+			-- #endif
+		}),
+		ach(545, {	-- Shave and a Haircut
+			["timeline"] = { "added 3.0.1" },
+			["maps"] = { STORMWIND_CITY, ORGRIMMAR, NORTHREND_DALARAN },
+		}),
+		ach(1020, {	-- Ten Tabards [TODO]
+			["timeline"] = { "added 3.0.1" },
+			["rank"] = 10,
+		}),
+		ach(7383, {	-- Terrific Trio
+			["timeline"] = { "added 5.0.4" },
+		}),
+		applyclassicphase(WRATH_PHASE_ONE, ach(1187, {	-- The Keymaster
+			["timeline"] = { "added 3.0.1", "deleted 4.0.3" },
+		})),
+		ach(5755, {	-- Thirty Tabards
+			["timeline"] = { "added 4.1.0" },
+			["rank"] = 30,
+		}),
+		ach(1021, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Twenty-Five Tabards
+			["rank"] = 25,
+			["groups"] = {
+				i(40643),	-- Tabard of the Achiever
+			},
+		})),
 	}),
-	cl(DEATHKNIGHT, {
+	cl(DEATHKNIGHT, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" }, }, {
 		i(34652),	-- Archerus Knight's Hood
 		i(34655),	-- Archerus Knight's Pauldrons
 		i(34659),	-- Archerus Knight's Shroud
@@ -106,8 +188,8 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		i(34658),	-- Plague Band
 		i(38147),	-- Corrupted Band
 		i(38145),	-- Deathweave Bag
-	}),
-	cl(DEMONHUNTER, {
+	})),
+	cl(DEMONHUNTER, bubbleDownSelf({ ["timeline"] = { "added 7.0.1" }, }, {
 		i(112458),	-- Illidari Warglaive
 		i(129181),	-- Illidari Warglaive
 		i(112450),	-- Illidari Blindfold
@@ -126,7 +208,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		i(123960),	-- Charm of Demonic
 		i(123958),	-- Demon Hide Satchel
 		title(344)	-- Illidari <Name>
-	}),
+	})),
 	cl(DRUID, {
 		n(ARMOR, {
 			i(187778, {	-- Druid's Footwear
@@ -182,7 +264,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(35),	-- Bent Staff
 			i(3661),	-- Handcrafted Staff
 		}),
-		n(ALLIED_RACES, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
 			i(157666),	-- Wildshifter Tunic
 			i(157673),	-- Wildshifter Bracers
 			i(157668),	-- Wildshifter Grips
@@ -190,9 +272,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157670),	-- Wildshifter Leggings
 			i(157667),	-- Wildshifter Treads
 			i(157619),	-- Spire of Astral Force
-		}),
+		})),
 	}),
-	cl(EVOKER, {
+	cl(EVOKER, bubbleDownSelf({ ["timeline"] = { "added 10.0.0" }, }, {
 		i(188814),	-- Emerald Winglord's Amulet
 		i(188824),	-- Emerald Winglord's Boots
 		i(188823),	-- Emerald Winglord's Bracers
@@ -206,7 +288,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		i(188812),	-- Emerald Winglord's Ring
 		i(188817),	-- Claw-Carved Figurine
 		i(188213),	-- Large Green Bag
-	}),
+	})),
 	cl(HUNTER, {
 		n(ARMOR, {
 			i(49569, {	-- Gilnean Trapper's Boots
@@ -331,7 +413,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { "added 4.0.1.13082", REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 		}),
-		n(ALLIED_RACES, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
 			i(157674),	-- Heartbonded Vest
 			i(157681),	-- Heartbonded Bracers
 			i(157676),	-- Heartbonded Gauntlets
@@ -340,9 +422,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157675),	-- Heartbonded Greaves
 			i(157649),	-- Goldstring Recurve
 			i(157622),	-- Silverscope Longrifle
-		}),
+		})),
 	}),
-	cl(MONK, {
+	cl(MONK, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
 		i(157690),	-- Ascetic's Vest
 		i(157697),	-- Ascetic's Cuffs
 		i(157692),	-- Ascetic's Handguards
@@ -353,7 +435,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		i(157627, {	-- Sword of Searing Winds
 			["u"] = REMOVED_FROM_GAME,	-- this appears to have been replaced with the staff in SL prepatch
 		}),
-	}),
+	})),
 	cl(MAGE, {
 		n(ARMOR, {
 			i(55, {	-- Apprentice's Boots
@@ -516,7 +598,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(35),	-- Bent Staff
 			i(3661),	-- Handcrafted Staff
 		}),
-		n(ALLIED_RACES, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
 			i(157686),	-- Spellsculptor's Robe
 			i(157689),	-- Spellsculptor's Wristwraps
 			i(157683),	-- Spellsculptor's Handwraps
@@ -524,7 +606,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157685),	-- Spellsculptor's Leggings
 			i(157682),	-- Spellsculptor's Sandals
 			i(157651),	-- Staff of Elemental Shaping
-		}),
+		})),
 	}),
 	cl(PALADIN, {
 		filter(MOUNTS, {
@@ -559,19 +641,40 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { "added 4.0.3" }
 			}),
 			mount(34767, {	-- Thalassian Charger (MOUNT!)
-				["description"] = "|cFF40bf40Received on reaching Level 10 as a Blood Elf Paladin.|r",
+				-- #if AFTER 9.0.1
+				["description"] = "|cFF40bf40Received on reaching Level 17 as a Blood Elf Paladin.|r",
+				["lvl"] = 17,
+				-- #elseif AFTER 3.2.0
+				["lvl"] = 40,
+				-- #else
+				["lvl"] = 60,
+				-- #endif
 				["races"] = { BLOODELF },
 				["classes"] = { PALADIN },
 				["timeline"] = { "added 2.0.1" }
 			}),
 			mount(34769, {	-- Thalassian Warhorse (MOUNT!)
+				-- #if AFTER 9.0.1
 				["description"] = "|cFF40bf40Received on reaching Level 10 as a Blood Elf Paladin.|r",
+				["lvl"] = 10,
+				-- #elseif AFTER 3.2.0
+				["lvl"] = 20,
+				-- #else
+				["lvl"] = 40,
+				-- #endif
 				["races"] = { BLOODELF },
 				["classes"] = { PALADIN },
 				["timeline"] = { "added 2.0.1" }
 			}),
 			mount(13819, {	-- Warhorse (MOUNT!)
+				-- #if AFTER 9.0.1
 				["description"] = "|cFF40bf40Received on reaching Level 10 as a Human or Dwarf Paladin.|r",
+				["lvl"] = 10,
+				-- #elseif AFTER 3.2.0
+				["lvl"] = 20,
+				-- #else
+				["lvl"] = 40,
+				-- #endif
 				["races"] = { HUMAN, DWARF },
 				["classes"] = { PALADIN },
 			}),
@@ -653,7 +756,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(36),	-- Worn Mace
 			i(2362),	-- Worn Wooden Shield
 		}),
-		n(ALLIED_RACES, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
 			i(157698),	-- Lightsoul Battleplate
 			i(157705),	-- Lightsoul Vambraces
 			i(157700),	-- Lightsoul Gauntlets
@@ -662,16 +765,18 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157699),	-- Lightsoul Sabatons
 			i(157631),	-- Maul of Smiting
 			mount(290608, {	-- Crusader's Direhorn (MOUNT!)
+				["timeline"] = { "added 8.1.5" },
 				["races"] = { ZANDALARI },
 			}),
 			mount(270562, {	-- Darkforge Ram (MOUNT!)
+				["timeline"] = { "added 8.0.1" },
 				["races"] = { DARKIRON },
 			}),
 			mount(363613, {	-- Lightforged Ruinstrider (MOUNT!)
-				["races"] = { LIGHTFORGED },
 				["timeline"] = { ADDED_9_1_5 },
+				["races"] = { LIGHTFORGED },
 			}),
-		}),
+		})),
 	}),
 	cl(PRIEST, {
 		n(ARMOR, {
@@ -826,7 +931,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { "added 2.0.1.6180", REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
 			}),
 		}),
-		n(ALLIED_RACES, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
 			i(157710),	-- Curate's Robe
 			i(157713),	-- Curate's Bindings
 			i(157707),	-- Curate's Gloves
@@ -834,7 +939,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157709),	-- Curate's Pants
 			i(157706),	-- Curate's Boots
 			i(157632),	-- Staff of Interwoven Power
-		}),
+		})),
 	}),
 	cl(ROGUE, {
 		n(ARMOR, {
@@ -973,7 +1078,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["timeline"] = { "added 3.3.0.10571" }
 			}),
 		}),
-		n(ALLIED_RACES, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
 			i(157714),	-- Nimblefinger Jerkin
 			i(157721),	-- Nimblefinger Bindings
 			i(157716),	-- Nimblefinger Gloves
@@ -981,7 +1086,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157718),	-- Nimblefinger Britches
 			i(157715),	-- Nimblefinger Boots
 			i(157636),	-- Serrated Poinard
-		}),
+		})),
 	}),
 	cl(SHAMAN, {
 		n(ARMOR, {
@@ -1054,7 +1159,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(36),		-- Worn Mace
 			i(2362),	-- Worn Wooden Shield
 		}),
-		n(ALLIED_RACES, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
 			i(157722),	-- Totem-Caller Tunic
 			i(157729),	-- Totem-Caller Armbands
 			i(157724),	-- Totem-Caller Gloves
@@ -1063,12 +1168,19 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157723),	-- Totem-Caller Boots
 			i(157638),	-- Lightning-Binder's Claws
 			i(157655),	-- Lightning-Binder's Bulwark
-		}),
+		})),
 	}),
 	cl(WARLOCK, {
 		filter(MOUNTS, {
 			mount(5784, {	-- Felsteed (MOUNT!)
+				-- #if AFTER 9.0.1
 				["description"] = "|cFF40bf40Received on reaching Level 10 as a Warlock.|r",
+				["lvl"] = 10,
+				-- #elseif AFTER 3.2.0
+				["lvl"] = 20,
+				-- #else
+				["lvl"] = 40,
+				-- #endif
 				["classes"] = { WARLOCK },
 			}),
 		}),
@@ -1082,128 +1194,131 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 		})),
 		n(QUESTS, {
-			q(65425, {	-- Whatever You Sayaad (A)
-				["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
-				["provider"] = { "n", 184600 },	-- Warlock Minion
-				["coord"] = { 79.5, 69.8, STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
-			}),
-			q(65424, {	-- Whatever You Sayaad (H)
-				["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
-				["provider"] = { "n", 184600 },	-- Warlock Minion
-				["coord"] = { 74.6, 47.4, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
-			}),
-			q(76427, {	-- A Dark Summons (H)
-				["provider"] = { "i", 208227 },	-- Mysterious Letter (QI!)
-				["races"] = HORDE_ONLY,
-				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 },
-				["isBreadcrumb"] = true,	-- need to confirm
-			}),
-			q(76430, {	-- Beingning Impositions (H)
-				["provider"] = { "n", 207051 },	-- Assistant Phineas
-				-- ["coord"] = { X, Y, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
-				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 },
-			}),
-			q(76410, {	-- A Dark Summons (A)
-				["provider"] = { "i", 208226 },	-- Mysterious Letter (QI!)
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 },
-				["isBreadcrumb"] = true,	-- need to confirm
-			}),
-			q(75538, {	-- Beginning Impositions (A)
-				["sourceQuests"] = { 76410 },	-- A Dark Summons (?)
-				["provider"] = { "n", 204198 },	-- Assistant Phineas
-				["coord"] = { 43.6, 79.3, STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 },
-			}),
-			q(75539, {	-- Some Wicked Things This Way Come
-				["sourceQuests"] = {
-					75538,	-- Beginning Impositions (A)
-					76430,	-- Beingning Impositions (H)
-				},
-				["sourceQuestNumRequired"] = 1,
-				["provider"] = { "n", 203968 },	-- Madam Shadow
-				["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
-				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 },
-			}),
-			q(75540, {	-- Hermetic Insurance
-				["sourceQuests"] = { 75539 },	-- Some Wicked Things This Way Come
-				["provider"] = { "n", 203968 },	-- Madam Shadow
-				["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
-				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 },
-			}),
-			q(75541, {	-- Those Who Hesitate
-				["sourceQuests"] = { 75540 },	-- Hermetic Insurance
-				["provider"] = { "n", 203968 },	-- Madam Shadow
-				["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
-				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 },
-			}),
-			q(76155, {	-- A Wolf Among Sheep
-				["sourceQuests"] = { 75541 },	-- Those Who Hesitate
-				["provider"] = { "n", 205276 },	-- Initiate Oman
-				["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
-				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 },
-				["g"] = {
-					i(206160),	-- Madam Shadow's Grimoire (QI!)
-					spell(412234),	-- Madam Shadow's Soulstone
-				},
-			}),
-			q(75542, {	-- Curses & Cultists
-				["sourceQuests"] = { 76155 },	-- A Wolf Among Sheep
-				["provider"] = { "n", 203968 },	-- Madam Shadow
-				["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
-				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 },
-			}),
-			q(75639, {	-- Fel Suspicions
-				["sourceQuests"] = { 75542 },	-- Curses & Cultists
-				["provider"] = { "n", 205433 },	-- Initiate Oman
-				["coord"] = { 58.9, 63.1, DARKMOON_ISLAND },
-				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 },
-			}),
-			q(75543, {	-- Last Rites By Accident
-				["sourceQuests"] = { 75639 },	-- Fel Suspicions
-				["provider"] = { "o", 402609 },	-- Demonic Gateway
-				["coord"] = { 59.7, 62.2, DARKMOON_ISLAND },
-				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 },
-			}),
-			q(75544, {	-- When Revenge Burns Green
-				["sourceQuests"] = { 75543 },	-- Last Rites By Accident
-				["provider"] = { "n", 205575 },	-- Initiate Oman
-				["coord"] = { 8.4, 36.0, BURNING_STEPPES },
-				["classes"] = { WARLOCK },
-				["timeline"] = { ADDED_10_1_5 },
-				["g"] = {
-					spell(417884),	-- Fiendish Imps
-				},
-			}),
-			q(76163, {	-- A Lighter Shade of Fel
-				["sourceQuests"] = { 75544 },	-- When Revenge Burns Green
-				["provider"] = { "i", 206681 },	-- Letter from Oman (QI!)
-				["classes"] = { WARLOCK },
-				["description"] = "You get this quest in your mailbox next weekly reset after finishing 'When Revenge Burns Green'",
-				["timeline"] = { ADDED_10_1_5 },
-				["g"] = {
-					i(207101),	-- Glyph of Banehollow's Soulstone
-				},
-			}),
+			["timeline"] = { ADDED_9_2_0 },
+			["groups"] = {
+				q(65425, {	-- Whatever You Sayaad (A)
+					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
+					["provider"] = { "n", 184600 },	-- Warlock Minion
+					["coord"] = { 79.5, 69.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+					["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
+				}),
+				q(65424, {	-- Whatever You Sayaad (H)
+					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
+					["provider"] = { "n", 184600 },	-- Warlock Minion
+					["coord"] = { 74.6, 47.4, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARLOCK },
+					["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
+				}),
+				q(76427, {	-- A Dark Summons (H)
+					["provider"] = { "i", 208227 },	-- Mysterious Letter (QI!)
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARLOCK },
+					["timeline"] = { ADDED_10_1_5 },
+					["isBreadcrumb"] = true,	-- need to confirm
+				}),
+				q(76430, {	-- Beingning Impositions (H)
+					["provider"] = { "n", 207051 },	-- Assistant Phineas
+					-- ["coord"] = { X, Y, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARLOCK },
+					["timeline"] = { ADDED_10_1_5 },
+				}),
+				q(76410, {	-- A Dark Summons (A)
+					["provider"] = { "i", 208226 },	-- Mysterious Letter (QI!)
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+					["timeline"] = { ADDED_10_1_5 },
+					["isBreadcrumb"] = true,	-- need to confirm
+				}),
+				q(75538, {	-- Beginning Impositions (A)
+					["sourceQuests"] = { 76410 },	-- A Dark Summons (?)
+					["provider"] = { "n", 204198 },	-- Assistant Phineas
+					["coord"] = { 43.6, 79.3, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+					["timeline"] = { ADDED_10_1_5 },
+				}),
+				q(75539, {	-- Some Wicked Things This Way Come
+					["sourceQuests"] = {
+						75538,	-- Beginning Impositions (A)
+						76430,	-- Beingning Impositions (H)
+					},
+					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 203968 },	-- Madam Shadow
+					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
+					["classes"] = { WARLOCK },
+					["timeline"] = { ADDED_10_1_5 },
+				}),
+				q(75540, {	-- Hermetic Insurance
+					["sourceQuests"] = { 75539 },	-- Some Wicked Things This Way Come
+					["provider"] = { "n", 203968 },	-- Madam Shadow
+					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
+					["classes"] = { WARLOCK },
+					["timeline"] = { ADDED_10_1_5 },
+				}),
+				q(75541, {	-- Those Who Hesitate
+					["sourceQuests"] = { 75540 },	-- Hermetic Insurance
+					["provider"] = { "n", 203968 },	-- Madam Shadow
+					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
+					["classes"] = { WARLOCK },
+					["timeline"] = { ADDED_10_1_5 },
+				}),
+				q(76155, {	-- A Wolf Among Sheep
+					["sourceQuests"] = { 75541 },	-- Those Who Hesitate
+					["provider"] = { "n", 205276 },	-- Initiate Oman
+					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
+					["classes"] = { WARLOCK },
+					["timeline"] = { ADDED_10_1_5 },
+					["g"] = {
+						i(206160),	-- Madam Shadow's Grimoire (QI!)
+						spell(412234),	-- Madam Shadow's Soulstone
+					},
+				}),
+				q(75542, {	-- Curses & Cultists
+					["sourceQuests"] = { 76155 },	-- A Wolf Among Sheep
+					["provider"] = { "n", 203968 },	-- Madam Shadow
+					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
+					["classes"] = { WARLOCK },
+					["timeline"] = { ADDED_10_1_5 },
+				}),
+				q(75639, {	-- Fel Suspicions
+					["sourceQuests"] = { 75542 },	-- Curses & Cultists
+					["provider"] = { "n", 205433 },	-- Initiate Oman
+					["coord"] = { 58.9, 63.1, DARKMOON_ISLAND },
+					["classes"] = { WARLOCK },
+					["timeline"] = { ADDED_10_1_5 },
+				}),
+				q(75543, {	-- Last Rites By Accident
+					["sourceQuests"] = { 75639 },	-- Fel Suspicions
+					["provider"] = { "o", 402609 },	-- Demonic Gateway
+					["coord"] = { 59.7, 62.2, DARKMOON_ISLAND },
+					["classes"] = { WARLOCK },
+					["timeline"] = { ADDED_10_1_5 },
+				}),
+				q(75544, {	-- When Revenge Burns Green
+					["sourceQuests"] = { 75543 },	-- Last Rites By Accident
+					["provider"] = { "n", 205575 },	-- Initiate Oman
+					["coord"] = { 8.4, 36.0, BURNING_STEPPES },
+					["classes"] = { WARLOCK },
+					["timeline"] = { ADDED_10_1_5 },
+					["g"] = {
+						spell(417884),	-- Fiendish Imps
+					},
+				}),
+				q(76163, {	-- A Lighter Shade of Fel
+					["sourceQuests"] = { 75544 },	-- When Revenge Burns Green
+					["provider"] = { "i", 206681 },	-- Letter from Oman (QI!)
+					["classes"] = { WARLOCK },
+					["description"] = "You get this quest in your mailbox next weekly reset after finishing 'When Revenge Burns Green'",
+					["timeline"] = { ADDED_10_1_5 },
+					["g"] = {
+						i(207101),	-- Glyph of Banehollow's Soulstone
+					},
+				}),
+			},
 		}),
 		n(ARMOR, {
 			i(1396, {	-- Acolyte's Pants
@@ -1289,7 +1404,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			i(35),		-- Bent Staff
 		}),
-		n(ALLIED_RACES, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
 			i(157734),	-- Felburner's Robe
 			i(157737),	-- Felburner's Wristwraps
 			i(157731),	-- Felburner's Handwraps
@@ -1297,7 +1412,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157733),	-- Felburner's Leggings
 			i(157730),	-- Felburner's Sandals
 			i(157652),	-- Shadow-Binder's Spire
-		}),
+		})),
 	}),
 	cl(WARRIOR, {
 		n(ARMOR, {
@@ -1428,7 +1543,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(25),	-- Worn Shortsword
 			i(2362),	-- Worn Wooden Shield
 		}),
-		n(ALLIED_RACES, {
+		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
 			i(157738),	-- Warsinger's Breastplate
 			i(157745),	-- Warsinger's Vambraces
 			i(157740),	-- Warsinger's Gauntlets
@@ -1436,8 +1551,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157742),	-- Warsinger's Legplates
 			i(157739),	-- Warsinger's Sabatons
 			i(157643),	-- Helm-Hewer Greataxe
-		}),
+		})),
 	}),
+	-- #if AFTER 4.0.3
 	filter(CLOAKS, {
 		i(52940, {	-- Candy's Cloak
 			["races"] = { GOBLIN },
@@ -1450,7 +1566,8 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { "added 4.0.3", "removed 7.0.1" },
 		}),
 	}),
-	filter(ILLUSIONS, {
+	-- #endif
+	filter(ILLUSIONS, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" }, }, {
 		ill(5387),	-- Agility (ILLUSION!)
 		ill(5861),	-- Beastslayer (ILLUSION!)
 		ill(5393),	-- Crusader (ILLUSION!)
@@ -1458,7 +1575,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		ill(5360),	-- Hide Weapon Enchant (ILLUSION!)
 		ill(5389),	-- Striking (ILLUSION!)
 		ill(5862),	-- Titanguard (ILLUSION!)
-	}),
+	})),
 	filter(SHIRTS, {
 		i(6125, {	-- Brawler's Harness
 			["description"] = "Former Starter Shirt for Orc, Troll, Tauren & Undead Warriors",

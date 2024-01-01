@@ -1,102 +1,18 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-local INSANE_IN_THE_MEMBRANE_OnInit = [[function(t)
-	t.CacheFactions = function(t)
-		local factions = t.factions;
-		if not factions then
-			factions = {};
-			for i,factionID in ipairs({
-				87,
-				21,
-				577,
-				369,
-				470,
-				909,
-				349,
-				809,
-			}) do
-				local f = _.SearchForField("factionID", factionID);
-				if f and #f > 0 then
-					tinsert(factions, f and f[1] or _.CreateFaction(factionID));
-				else
-					return;
-				end
-			end
-			local bloodsail = _.CreateFaction(87);
-			bloodsail.minReputation = { 87, ]] .. HONORED .. [[ };
-			bloodsail.OnTooltip = factions[1].OnTooltip;
-			bloodsail.collectible = false;
-			factions[1] = bloodsail;
-			t.factions = factions;
-		end
-		return factions;
-	end
-	t.OnPopout = function(t)
-		local clone = _.CloneReference(t);
-		clone.sourceParent = t.parent;
-		local factions = t:CacheFactions();
-		if factions then
-			local g = clone.g;
-			if g then
-				for i,o in ipairs(factions) do
-					tinsert(g, o);
-				end
-			else
-				clone.g = _.CloneArray(factions);
-			end
-		end
-		return clone;
-	end
-	return t;
-end]];
-local INSANE_IN_THE_MEMBRANE_OnUpdate = [[function(t)
-	if t.collectible then
-		local fs = t:CacheFactions();
-		if not fs then return; end
-		local collected = true;
-		for i,f in ipairs(fs) do
-			if f.saved ~= 1 then
-				collected = false;
-				break;
-			end
-		end
-		t:SetAchievementCollected(t.achievementID, collected);
-	end
-end]];
-local INSANE_IN_THE_MEMBRANE_OnTooltip = [[function(t)
-	local fs = t:CacheFactions();
-	if not fs then return; end
-	GameTooltip:AddLine(" ");
-	for i,f in ipairs(fs) do
-		GameTooltip:AddDoubleLine(" |T" .. f.icon .. ":0|t " .. f.text, _.L[f.saved == 1 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
-	end
-end]];
 root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, bubbleDown({ ["timeline"] = { "added 3.0.1" } }, {
 	n(ACHIEVEMENTS, {
-		ach(2097, {	-- Get to the Choppa! (Engineering)
+		applyclassicphase(WRATH_PHASE_ONE, ach(2097, {	-- Get to the Choppa! (Engineering)
 			["providers"] = {
 				{ "i", 44413 },	-- Mekgineer's Chopper
-				{ "i", 41508 },	-- Mechano-Hog
+				{ "i", 41508 },	-- Mechano-hog
 			},
-		}),
-		-- #if NOT ANYCLASSIC
-		applyclassicphase(PHASE_THREE, ach(2336, {	-- Insane in the Membrane
+			["timeline"] = { "added 3.0.1" },
 			-- #if ANYCLASSIC
-			["OnInit"] = INSANE_IN_THE_MEMBRANE_OnInit,
-			["OnTooltip"] = INSANE_IN_THE_MEMBRANE_OnTooltip,
-			-- #if BEFORE WRATH
-			["OnUpdate"] = INSANE_IN_THE_MEMBRANE_OnUpdate,
+			["f"] = 100,
 			-- #endif
-			["description"] = "Insane in the Membrane is a Feat of Strength that rewards the title <The Insane>. This feat requires you to become honored with the Bloodsail Buccaneers and exalted with the Steamwheedle Cartel (Booty Bay, Everlook, Gadgetzan, Ratchet), Ravenholdt, Darkmoon Faire, and the Shen'dralar. After Cataclysm it does not require that all of these reputation levels be reached at the same time, however, prior to that you must have them all at the same time. Raising reputation with these factions is typically very difficult, time-consuming, and costly.",
-			-- #endif
-			["groups"] = {
-				title(112, {	-- the Insane
-					["timeline"] = { "added 3.0.1" },
-				}),
-			},
 		})),
-		-- #endif
 		ach(4496),	-- It's Over Nine Thousand!
 		ach(1244, {	-- Well Read
 			crit(3762, {	-- Aegwynn and the Dragon Hunt

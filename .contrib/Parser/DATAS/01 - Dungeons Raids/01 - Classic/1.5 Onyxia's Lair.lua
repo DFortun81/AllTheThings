@@ -228,6 +228,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 								{ "i", 18724, 1 },	-- Enchanted Black Dragon Sinew
 							},
 							["groups"] = {
+								ach(11296, {	-- The Ancient Keeper
+									["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
+									["classes"] = { HUNTER },
+								}),
 								i(18713),	-- Rhok'delar, Longbow of the Ancient Keepers
 							},
 						}),

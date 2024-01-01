@@ -2617,6 +2617,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { PRIEST },
 					["lvl"] = 60,
 					["groups"] = {
+						ach(11297, {	-- The Balance of Light and Shadow
+							["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
+							["classes"] = { PRIEST },
+						}),
 						i(18609, {	-- Anathema
 							["timeline"] = { "removed 4.0.3" },
 						}),

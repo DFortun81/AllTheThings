@@ -85,36 +85,46 @@ root(ROOTS.Zones, {
 		ach(31, {		-- A Simple Re-Quest
 			["timeline"] = { ADDED_3_0_2 },
 		}),
-		ach(948,   {	-- Ambassador of the Alliance
+		applyclassicphase(PHASE_ONE, achWithReps(948, {	-- Ambassador of the Alliance
+			69, 54, 47, 72,		-- Exalted Darnassus, Gnomeregan, Ironforge, Stormwind City
+			-- #if AFTER TBC
+			930,	-- Exalted Exodar
+			-- #endif
+			-- #if AFTER CATA
+			1134,	-- Exalted Gilnaes
+			-- #endif
+		}, {
+			-- #if BEFORE TBC
+			["description"] = "Earn exalted reputation with 4 home cities.",
+			-- #elseif BEFORE WRATH
+			["description"] = "Earn exalted reputation with 5 home cities.",
+			-- #endif
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
-				title(98),		-- Ambassador <Name>
-				crit(5328),		-- Exalted Darnassus
-				crit(5332),		-- Exalted Exodar
-				-- #if AFTER CATA
-				crit(16826),	-- Exalted Gilneas
-				-- #endif
-				crit(5329),		-- Exalted Gnomeregan Exiles
-				crit(5330),		-- Exalted Ironforge
-				crit(5331),		-- Exalted Stormwind
-			},
-		}),
-		ach(762,   {	-- Ambassador of the Horde
+			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
+				title(98),	-- Ambassador %
+			}),
+		})),
+		applyclassicphase(PHASE_ONE, achWithReps(762, {	-- Ambassador of the Horde
+			530, 76, 81, 68,	-- Exalted Darkspear Trolls, Orgrimmar, Thunder Bluff, Undercity
+			-- #if AFTER TBC
+			911,	-- Exalted Silvermoon City
+			-- #endif
+			-- #if AFTER CATA
+			1133,	-- Exalted Bilgewater Cartel
+			-- #endif
+		}, {
+			-- #if BEFORE TBC
+			["description"] = "Earn exalted reputation with 4 home cities.",
+			-- #elseif BEFORE WRATH
+			["description"] = "Earn exalted reputation with 5 home cities.",
+			-- #endif
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = HORDE_ONLY,
-			["g"] = {
-				title(98),		-- Ambassador <Name>
-				-- #if AFTER CATA
-				crit(16825),	-- Exalted Bilgewater Cartel
-				-- #endif
-				crit(5313),		-- Exalted Darkspear Trolls
-				crit(5314),		-- Exalted Orgrimmar
-				crit(5317),		-- Exalted Silvermoon City
-				crit(5315),		-- Exalted Thunder Bluff
-				crit(5316),		-- Exalted Undercity
-			},
-		}),
+			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
+				title(98),	-- Ambassador %
+			}),
+		})),
 		petbattle(ach(9069, bubbleDownSelf({ ["timeline"] = { "added 6.0.1.18471" }, }, {	-- An Awfully Big Adventure
 			["provider"] = { "i", 113216 },	-- Elekk Plushie
 			["groups"] = {
@@ -457,10 +467,6 @@ root(ROOTS.Zones, {
 			crit(9363),	-- Gold Beetle (Halls of Stone, Badlands, Tanaris, Halls of Lightning)
 			crit(9368),	-- Rat (Ashenvale, Dire Maul, The Lost Isles, Gilneas, Loch Modan, The Deadmines, Stormwind City, Arathi Highlands, Darkshore, Nagrand, Terokkar Forest, Scholomance, Tirisfal Glades, Howling Fjord, The Cape of Stranglethorn, The Culling of Stratholme, Azshara, Desolace, Gilneas City, Maraudon, Sunken Temple and The Hinterlands)
 		}),
-		ach(522, {	-- Somebody Likes Me
-			["_noautomation"] = true,
-		}),
-		ach(1832),	-- Tastes Like Chicken
 		petbattle(ach(6607,  {	-- Taming Azeroth
 			["sym"] = {{"meta_achievement",
 				6604,	-- Taming Outland
@@ -511,24 +517,34 @@ root(ROOTS.Zones, {
 		ach(1182, {		-- The Bread Winner
 			["timeline"] = { ADDED_3_0_2 },
 		}),
-		ach(942,   {	-- The Diplomat (A)
+		applyclassicphase(TBC_PHASE_ONE, achWithReps(942, { 978, 970, 576 }, {	-- The Diplomat
+			-- #if BEFORE WRATH
+			["description"] = "Raise your reputation level from unfriendly to exalted with Timbermaw Hold, Sporeggar and the Kurenai.",
+			-- #endif
+			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
 			["races"] = ALLIANCE_ONLY,
-			["g"] = {
-				title(48),		-- <Name> the Diplomat
-				crit(2011),		-- Exalted with Timbermaw Hold
-				crit(5337),		-- Exalted with the Kurenai
-				crit(4757),		-- Exalted with the Sporeggar
-			},
-		}),
-		ach(943,   {	-- The Diplomat (H)
+			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
+				-- #if AFTER CATA
+				title(79),	-- % the Diplomat
+				-- #else
+				title(48),	-- % the Diplomat
+				-- #endif
+			}),
+		})),
+		applyclassicphase(TBC_PHASE_ONE, achWithReps(943, { 941, 970, 576 }, {	-- The Diplomat
+			-- #if BEFORE WRATH
+			["description"] = "Raise your reputation level from unfriendly to exalted with Timbermaw Hold, Sporeggar and the Mag'har.",
+			-- #endif
+			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
 			["races"] = HORDE_ONLY,
-			["g"] = {
-				title(48),		-- <Name> the Diplomat
-				crit(2011),		-- Exalted with Timbermaw Hold
-				crit(5321),		-- Exalted with the Mag'har
-				crit(4757),		-- Exalted with the Sporeggar
-			},
-		}),
+			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
+				-- #if AFTER CATA
+				title(79),	-- % the Diplomat
+				-- #else
+				title(48),	-- % the Diplomat
+				-- #endif
+			}),
+		})),
 		ach(4958, {		-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
 			crit(5798),		-- Ring of Blood in Nagrand
 			crit(5799),		-- Amphitheater of Anguish in Zul'Drak

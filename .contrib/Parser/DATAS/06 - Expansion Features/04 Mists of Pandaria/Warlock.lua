@@ -112,10 +112,15 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED
 						496,	-- The Black Temple (Chamber of Command)
 						497,	-- The Black Temple (Temple Summit)
 					},
-					["g"] = {
-						ach(9016, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0, REMOVED_6_0_2 } }, { -- Breaker of the Black Harvest
-							title(256),	-- of the Black Harvest
-						})),
+					["groups"] = {
+						ach(9016, {		-- Breaker of the Black Harvest
+							["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
+							["groups"] = {
+								title(256, {	-- <Name> of the Black Harvest
+									["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3_LAUNCH },
+								}),
+							},
+						}),
 					},
 				}),
 			}),

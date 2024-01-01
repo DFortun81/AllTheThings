@@ -2751,7 +2751,17 @@ function app:GetDataCache()
 				g = app.Categories.ExpansionFeatures
 			});
 		end
-
+		
+		-- Character
+		if app.Categories.Character then
+			db = {};
+			db.g = app.Categories.Character;
+			db.text = CHARACTER;
+			db.name = db.text;
+			db.icon = app.asset("Category_ItemSets");
+			tinsert(g, db);
+		end
+		
 		-- In-Game Store
 		if app.Categories.InGameShop then
 			tinsert(g, app.CreateNPC(app.HeaderConstants.IN_GAME_SHOP, {

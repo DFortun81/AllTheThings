@@ -892,8 +892,6 @@ local L = {
 		[-156] = 236567,																	-- Level 60 Character Boost
 	-- Class Trial
 		[-160] = 236567,																	-- Level 60 Class Trial
-	-- New Characters
-		[-211] = 1530081,																	-- New Character
 	-- PvP
 		[-216] = "Interface\\Icons\\ability_rogue_combatreadiness",							-- Prestige
 	-- Fishing
@@ -1086,8 +1084,6 @@ local L = {
 		[-156] = string.format(SPELLBOOK_AVAILABLE_AT, 60).." "..CHARACTER_UPGRADE_CHARACTER_LIST_LABEL,	-- Level 60 Character Boost
 	-- Class Trial
 		[-160] = string.format(SPELLBOOK_AVAILABLE_AT, 60).." "..CHARACTER_TYPE_FRAME_TRIAL_BOOST_CHARACTER,	-- Level 60 Class Trial
-	-- Item Sets
-		[-211] = NEW.." "..CHARACTER,											-- New Character
 	-- PvP
 		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
 	-- Fishing

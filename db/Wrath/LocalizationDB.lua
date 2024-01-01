@@ -600,6 +600,7 @@ localize(L.HEADER_NAMES, {
 	[-1000284] = "WoW's Anniversary",
 	[-1000285] = select(2,GetAchievementInfo(2398)),
 	[-1000286] = select(2,GetAchievementInfo(4400)),
+	[-1000373] = "New Character",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -782,6 +783,7 @@ localize(L.HEADER_ICONS, {
 	[-1000284] = "Interface/Icons/inv_misc_celebrationcake_01",
 	[-1000285] = "Interface/Icons/inv_misc_celebrationcake_01",
 	[-1000286] = "Interface/Icons/inv_misc_celebrationcake_01",
+	[-1000373] = "1530081",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -3559,6 +3561,7 @@ localize(L.HEADER_NAMES, {
 	[-1000227] = "Anglerwettbewerb im Schlingendorntal",
 	[-1000235] = "Die Öffnung des Dunklen Portals",
 	[-1000236] = "Das Szepter der Sandstürme",
+	[-1000373] = "Neuer Charakter",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -4378,6 +4381,7 @@ localize(L.HEADER_NAMES, {
 	[-1000227] = "Gran espectáculo de pesca de Tuercespina",
 	[-1000235] = "La apertura del Portal Oscuro",
 	[-1000236] = "El cetro del Mar de Dunas",
+	[-1000373] = "Nueva personaje",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
@@ -5221,6 +5225,7 @@ localize(L.HEADER_NAMES, {
 	[-1000236] = "Le Sceptre des Sables changeants",
 	[-1000244] = "Edition Collector",
 	[-1000247] = "Édition BC Classic Deluxe",
+	[-1000373] = "Nouveau personnage",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -6043,6 +6048,7 @@ localize(L.HEADER_NAMES, {
 	[-1000227] = "Gara di Pesca a Rovotorto",
 	[-1000235] = "L'apertura del Portale Oscuro",
 	[-1000236] = "Scettro delle Sabbie Mutevoli",
+	[-1000373] = "Nuovo personaggio",
 });
 localize(_.ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
@@ -6825,6 +6831,7 @@ localize(L.HEADER_NAMES, {
 	[-1000227] = "가시덤불 골짜기 낚시왕 선발대회",
 	[-1000235] = "어둠의 문 열기",
 	[-1000236] = "흐르는 모래의 홀",
+	[-1000373] = "새로운 캐릭터",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "웨폰 마스터는 캐릭터에게 특정 무기 기술을 배울 수 있는 기회를 제공하는 NPC로, 사용 가능 여부는 웨폰 마스터마다 다릅니다. 모든 무기 기술은 레벨 20이 필요한 폴암을 제외하고 레벨 1에서 훈련할 수 있습니다.\n\n4.0.1 패치에서는 각 병과가 생성 시 모든 병과에 적합한 무기 숙련도를 배우게 되므로 무기 전문가와의 훈련은 더 이상 필요하지 않게 되었습니다. 무기 마스터는 곧 게임에서 제거되었습니다.",
@@ -7625,6 +7632,7 @@ localize(L.HEADER_NAMES, {
 	[-1000227] = "Festerê de Pesca da Selva do Espinhaço",
 	[-1000235] = "A abertura do Portal Negro",
 	[-1000236] = "Cetro das Areias Cambiantes",
+	[-1000373] = "Novo personagem",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Um mestre de armas é um NPC que oferece aos personagens a oportunidade de aprender habilidades específicas com armas, cuja disponibilidade varia de um mestre de armas para outro. Todas as habilidades com armas podem ser treinadas no nível 1, exceto as armas de haste, que exigem nível 20.\n\nO treinamento com um mestre de armas tornou-se obsoleto no Patch 4.0.1, já que todas as proficiências de armas apropriadas à classe agora são aprendidas por cada classe após a criação. Os mestres de armas foram removidos do jogo logo depois.",
@@ -8464,6 +8472,7 @@ localize(L.HEADER_NAMES, {
 	[-1000244] = "Коллекционное издание",
 	[-1000272] = "Без Источника",
 	[-1000284] = "Годовщина WoW",
+	[-1000373] = "Новый персонаж",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -9331,6 +9340,7 @@ localize(L.HEADER_NAMES, {
 	[-1000256] = "星际争霸II：自由之翼",
 	[-1000263] = "可口可乐活动",
 	[-1000272] = "无来源",
+	[-1000373] = "新角色",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",

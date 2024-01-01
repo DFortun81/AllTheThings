@@ -1,80 +1,8 @@
 --------------------------------------------------
 --    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
-local INSANE_IN_THE_MEMBRANE_OnInit = [[function(t)
-	t.CacheFactions = function(t)
-		local factions = t.factions;
-		if not factions then
-			factions = {};
-			for i,factionID in ipairs({
-				87,
-				21,
-				577,
-				369,
-				470,
-				909,
-				349,
-				809,
-			}) do
-				local f = _.SearchForField("factionID", factionID);
-				if f and #f > 0 then
-					tinsert(factions, f and f[1] or _.CreateFaction(factionID));
-				else
-					return;
-				end
-			end
-			local bloodsail = _.CreateFaction(87);
-			bloodsail.minReputation = { 87, ]] .. HONORED .. [[ };
-			bloodsail.OnTooltip = factions[1].OnTooltip;
-			bloodsail.collectible = false;
-			factions[1] = bloodsail;
-			t.factions = factions;
-		end
-		return factions;
-	end
-	t.OnPopout = function(t)
-		local clone = _.CloneReference(t);
-		clone.sourceParent = t.parent;
-		local factions = t:CacheFactions();
-		if factions then
-			local g = clone.g;
-			if g then
-				for i,o in ipairs(factions) do
-					tinsert(g, o);
-				end
-			else
-				clone.g = _.CloneArray(factions);
-			end
-		end
-		return clone;
-	end
-	return t;
-end]];
-local INSANE_IN_THE_MEMBRANE_OnUpdate = [[function(t)
-	if t.collectible then
-		local fs = t:CacheFactions();
-		if not fs then return; end
-		local collected = true;
-		for i,f in ipairs(fs) do
-			if f.saved ~= 1 then
-				collected = false;
-				break;
-			end
-		end
-		t:SetAchievementCollected(t.achievementID, collected);
-	end
-end]];
-local INSANE_IN_THE_MEMBRANE_OnTooltip = [[function(t)
-	local fs = t:CacheFactions();
-	if not fs then return; end
-	GameTooltip:AddLine(" ");
-	for i,f in ipairs(fs) do
-		GameTooltip:AddDoubleLine(" |T" .. f.icon .. ":0|t " .. f.text, _.L[f.saved == 1 and "COLLECTED_ICON" or "NOT_COLLECTED_ICON"], 1, 1, 1);
-	end
-end]];
 root("Achievements", {
 	achcat(ACHIEVEMENT_CATEGORY_CHARACTER, {
-		-- Armored Brown Bear, located in Dalaran.
 		applyclassicphase(CATA_PHASE_ONE, ach(5180, {	-- Breaking the Sound Barrier
 			["spellID"] = 90265,	-- Master Riding
 			["timeline"] = { "added 4.0.1" },
@@ -89,14 +17,6 @@ root("Achievements", {
 			["f"] = 101,
 			["rank"] = 1,
 		}),
-		-- #if BEFORE 4.0.1
-		applyclassicphase(WRATH_PHASE_ONE, ach(16, {	-- Did Somebody Order a Knuckle Sandwich?
-			["timeline"] = { "added 3.0.1", "removed 4.0.1" },
-		})),
-		-- #endif
-		ach(2716, {	-- Dual Talent Specialization
-			["timeline"] = { "added 3.0.1" },
-		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(556, {	-- Epic
 			["timeline"] = { "added 3.0.1" },
 		})),
@@ -106,145 +26,12 @@ root("Achievements", {
 			["rank"] = 2,
 		}),
 		-- #endif
-		ach(2142, {	-- Filling Up The Barn
-			["OnClick"] = [[_.CommonAchievementHandlers.MOUNTS_OnClick]],
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.MOUNTS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.MOUNTS_OnUpdate]],
-			-- #endif
-			["rank"] = 25,
-			["f"] = 100,
-		}),
-		-- Friend or Fowl? Located in Howling Fjord.
-		applyclassicphase(WRATH_PHASE_ONE, ach(2097, {	-- Get to the Choppa!
-			["providers"] = {
-				{ "i", 44413 },	-- Mekgineer's Chopper
-				{ "i", 41508 },	-- Mechano-hog
-			},
-			["timeline"] = { "added 3.0.1" },
-			["f"] = 100,
-		})),
-		ach(891, {	-- Giddy Up!
-			-- #if AFTER TBC
-			["spellID"] = 33388,	-- Apprentice Riding
-			["rank"] = 1,
-			-- #else
-			["description"] = "Learn any of the riding skills.",
-			["OnClick"] = [[_.CommonAchievementHandlers.KNOW_SPELLS_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.KNOW_SPELLS_OnTooltip]],
-			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.KNOW_SPELLS_ANY_OnUpdate(t, 824, 18995, 10907, 826, 10861, 828, 10906, 825); end]],
-			--[[
-				824,	-- Horse Riding
-				18995,	-- Kodo Riding
-				10907,	-- Mechanostrider Piloting
-				826,	-- Ram Riding
-				10861,	-- Raptor Riding
-				828,	-- Tiger Riding
-				10906,	-- Undead Horsemanship
-				825,	-- Wolf Riding
-			]]--
-			-- #endif
-		}),
-		ach(1176, {	-- Got My Mind On My Money [100g]
-			["timeline"] = { "added 3.0.1" },
-			["rank"] = 100,
-		}),
-		ach(1177, {	-- Got My Mind On My Money [1000g]
-			["timeline"] = { "added 3.0.1" },
-			["rank"] = 1000,
-		}),
-		ach(1178, {	-- Got My Mind On My Money [5000g]
-			["timeline"] = { "added 3.0.1" },
-			["rank"] = 5000,
-		}),
-		ach(1180, {	-- Got My Mind On My Money [10000g]
-			["timeline"] = { "added 3.0.1" },
-			["rank"] = 10000,
-		}),
-		ach(1181, {	-- Got My Mind On My Money [25000g]
-			["timeline"] = { "added 3.0.1" },
-			["rank"] = 25000,
-		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(558, {	-- Greedy
 			["timeline"] = { "added 3.0.1" },
-		})),
-		-- Higher Learning, located in Dalaran.
-		applyclassicphase(TBC_PHASE_ONE, ach(890, {	-- Into the Wild Blue Yonder
-			["spellID"] = 34090,	-- Expert Riding
-			["timeline"] = { "added 2.0.1" },
-			["rank"] = 3,
 		})),
 		ach(1833, {	-- It's Happy Hour Somewhere
 			["timeline"] = { "added 3.0.1" },
 		}),
-		applyclassicphase(TBC_PHASE_ONE, ach(2143, {	-- Leading the Cavalry
-			["OnClick"] = [[_.CommonAchievementHandlers.MOUNTS_OnClick]],
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.MOUNTS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.MOUNTS_OnUpdate]],
-			-- #endif
-			["timeline"] = { "added 2.0.1" },
-			["rank"] = 50,
-			["f"] = 100,
-			["groups"] = {
-				applyclassicphase(WRATH_PHASE_ONE, i(44178)),	-- Reins of the Albino Drake
-			},
-		})),
-		ach(6, {	-- Level 10
-			["lvl"] = 10,
-			-- #if BEFORE WRATH
-			["OnUpdate"] = [[_.CommonAchievementHandlers.LEVEL_OnUpdate]],
-			-- #endif
-		}),
-		ach(7, {	-- Level 20
-			["lvl"] = 20,
-			-- #if BEFORE WRATH
-			["OnUpdate"] = [[_.CommonAchievementHandlers.LEVEL_OnUpdate]],
-			-- #endif
-		}),
-		ach(8, {	-- Level 30
-			["lvl"] = 30,
-			-- #if BEFORE WRATH
-			["OnUpdate"] = [[_.CommonAchievementHandlers.LEVEL_OnUpdate]],
-			-- #endif
-		}),
-		ach(9, {	-- Level 40
-			["lvl"] = 40,
-			-- #if BEFORE WRATH
-			["OnUpdate"] = [[_.CommonAchievementHandlers.LEVEL_OnUpdate]],
-			-- #endif
-		}),
-		ach(10, {	-- Level 50
-			["lvl"] = 50,
-			-- #if BEFORE WRATH
-			["OnUpdate"] = [[_.CommonAchievementHandlers.LEVEL_OnUpdate]],
-			-- #endif
-		}),
-		ach(11, {	-- Level 60
-			["lvl"] = 60,
-			-- #if BEFORE WRATH
-			["OnUpdate"] = [[_.CommonAchievementHandlers.LEVEL_OnUpdate]],
-			-- #endif
-		}),
-		applyclassicphase(TBC_PHASE_ONE, ach(12, {	-- Level 70
-			["timeline"] = { "added 2.0.1" },
-			["lvl"] = 70,
-			-- #if BEFORE WRATH
-			["OnUpdate"] = [[_.CommonAchievementHandlers.LEVEL_OnUpdate]],
-			-- #endif
-		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(13, {	-- Level 80
-			["timeline"] = { "added 3.0.1" },
-			["lvl"] = 80,
-			-- #if BEFORE WRATH
-			["OnUpdate"] = [[_.CommonAchievementHandlers.LEVEL_OnUpdate]],
-			-- #endif
-			["groups"] = {
-				i(41426, {	-- Magically Wrapped Gift
-					i(41427),	-- Dalaran Firework
-				}),
-			},
-		})),
 		applyclassicphase(WRATH_PHASE_ONE, ach(2516, {	-- Lil' Game Hunter
 			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
 			-- #if BEFORE WRATH
@@ -257,40 +44,6 @@ root("Achievements", {
 			["groups"] = {
 				applyclassicphase(WRATH_PHASE_ONE, i(44841)),	-- Little Fawn's Salt Lick
 			},
-		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(705, {	-- Master of Arms
-			["timeline"] = { "added 3.0.1" },
-		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(2536, {	-- Mountain o' Mounts [A]
-			["OnClick"] = [[_.CommonAchievementHandlers.MOUNTS_OnClick]],
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.MOUNTS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.MOUNTS_OnUpdate]],
-			-- #endif
-			["timeline"] = { "added 3.0.1" },
-			["races"] = ALLIANCE_ONLY,
-			["rank"] = 100,
-			["f"] = 100,
-			["groups"] = {
-				applyclassicphase(WRATH_PHASE_ONE, i(44843)),	-- Blue Dragonhawk Mount
-			},
-		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(2537, {	-- Mountain o' Mounts [H]
-			["OnClick"] = [[_.CommonAchievementHandlers.MOUNTS_OnClick]],
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.MOUNTS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.MOUNTS_OnUpdate]],
-			-- #endif
-			["timeline"] = { "added 3.0.1" },
-			["races"] = HORDE_ONLY,
-			["rank"] = 100,
-			["f"] = 100,
-			["groups"] = {
-				applyclassicphase(WRATH_PHASE_ONE, i(44842)),	-- Red Dragonhawk Mount
-			},
-		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(559, {	-- Needy
-			["timeline"] = { "added 3.0.1" },
 		})),
 		applyclassicphase(WRATH_PHASE_ONE, ach(2556, {	-- Pest Control
 			["timeline"] = { "added 3.0.1" },
@@ -313,24 +66,6 @@ root("Achievements", {
 			["f"] = 101,
 			["rank"] = 25,
 		}),
-		ach(621, {	-- Represent [TODO]
-			["timeline"] = { "added 3.0.1" },
-			["rank"] = 1,
-		}),
-		-- Ring of the Kirin Tor, located in Dalaran.
-		ach(546, {	-- Safe Deposit
-			-- #if BEFORE TBC
-			["description"] = "Buy 6 additional bank slots.",
-			["OnUpdate"] = [[function(t) t:SetAchievementCollected(t.achievementID, GetNumBankSlots() >= 6); end]],
-			-- #elseif BEFORE WRATH
-			["description"] = "Buy 7 additional bank slots.",
-			["OnUpdate"] = [[function(t) t:SetAchievementCollected(t.achievementID, GetNumBankSlots() >= 7); end]],
-			-- #endif
-		}),
-		ach(545, {	-- Shave and a Haircut
-			["timeline"] = { "added 3.0.1" },
-			["maps"] = { STORMWIND_CITY, ORGRIMMAR, NORTHREND_DALARAN },
-		}),
 		applyclassicphase(TBC_PHASE_ONE, ach(1250, {	-- Shop Smart, Shop Pet...Smart
 			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
 			-- #if BEFORE WRATH
@@ -343,43 +78,9 @@ root("Achievements", {
 				applyclassicphase(WRATH_PHASE_ONE, i(40653)),	-- Reeking Pet Carrier
 			},
 		})),
-		ach(2141, {	-- Stable Keeper
-			["OnClick"] = [[_.CommonAchievementHandlers.MOUNTS_OnClick]],
-			-- #if BEFORE WRATH
-			["OnTooltip"] = [[_.CommonAchievementHandlers.MOUNTS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.MOUNTS_OnUpdate]],
-			-- #endif
-			["rank"] = 10,
-			["f"] = 100,
-		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(557, {	-- Superior
 			["timeline"] = { "added 3.0.1" },
 		})),
-		ach(1832, {	-- Tastes Like Chicken
-			["timeline"] = { "added 3.0.1" },
-		}),
-		ach(1020, {	-- Ten Tabards [TODO]
-			["timeline"] = { "added 3.0.1" },
-			["rank"] = 10,
-		}),
-		applyclassicphase(WRATH_PHASE_ONE, ach(1187, {	-- The Keymaster
-			["timeline"] = { "added 3.0.1", "removed 4.0.3" },
-		})),
-		applyclassicphase(TBC_PHASE_ONE, ach(892, {	-- The Right Stuff
-			["spellID"] = 34091,	-- Artisan Riding
-			["timeline"] = { "added 2.0.1" },
-			["rank"] = 4,
-		})),
-		--ach(1206),	-- To All The Squirrels I've Loved Before
-		--ach(2557),	-- To All The Squirrels Who Shared My Life
-		-- Traveler's Tundra Mammoth, located in Dalaran.
-		ach(1021, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Twenty-Five Tabards [TODO]
-			["rank"] = 25,
-			["groups"] = {
-				i(40643),	-- Tabard of the Achiever
-			},
-		})),
-		-- Wooly Mammoth, located in Dalaran.
 	}),
 	achcat(ACHIEVEMENT_CATEGORY_QUESTS, {
 		achcat(ACHIEVEMENT_CATEGORY_EASTERN_KINGDOMS_QUESTS),
@@ -1641,136 +1342,6 @@ root("Achievements", {
 			["rank"] = 6,
 		}),
 	}),
-	achcat(ACHIEVEMENT_CATEGORY_REPUTATION, {
-		ach(522, {	-- Somebody Likes Me
-			["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-			["rank"] = 1,
-		}),
-		ach(523, {	-- 5 Exalted Reputations
-			["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-			["rank"] = 5,
-		}),
-		ach(524, {	-- 10 Exalted Reputations
-			["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-			["rank"] = 10,
-		}),
-		ach(521, {	-- 15 Exalted Reputations
-			["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-			["rank"] = 15,
-		}),
-		ach(520, {	-- 20 Exalted Reputations
-			["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-			["rank"] = 20,
-		}),
-		applyclassicphase(TBC_PHASE_ONE, ach(519, {	-- 25 Exalted Reputations
-			["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-			["rank"] = 25,
-		})),
-		applyclassicphase(TBC_PHASE_ONE, ach(518, {	-- 30 Exalted Reputations
-			["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-			["rank"] = 30,
-		})),
-		applyclassicphase(TBC_PHASE_TWO, ach(1014, {	-- 35 Exalted Reputations
-			["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-			["rank"] = 35,
-		})),
-		applyclassicphase(TBC_PHASE_FIVE, ach(1015, {	-- 40 Exalted Reputations
-			["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
-			["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
-			["OnUpdate"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnUpdate]],
-			["rank"] = 40,
-			-- #if AFTER 3.0.1
-			["groups"] = {
-				title(46),		-- <Name> the Exalted
-			},
-			-- #endif
-		})),
-		applyclassicphase(PHASE_ONE, achWithReps(948, {
-			69, 54, 47, 72,
-			-- #if AFTER TBC
-			930,
-			-- #endif
-		}, {	-- Ambassador of the Alliance
-			-- #if BEFORE TBC
-			["description"] = "Earn exalted reputation with 4 home cities.",
-			-- #elseif BEFORE WRATH
-			["description"] = "Earn exalted reputation with 5 home cities.",
-			-- #endif
-			["races"] = ALLIANCE_ONLY,
-			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
-				-- #if AFTER CATA
-				title(130),	-- Ambassador %
-				-- #else
-				title(98),	-- Ambassador %
-				-- #endif
-			}),
-		})),
-		applyclassicphase(PHASE_ONE, achWithReps(762, {	-- Ambassador of the Horde
-			530, 76, 81, 68,
-			-- #if AFTER TBC
-			911,
-			-- #endif
-		}, {
-			-- #if BEFORE TBC
-			["description"] = "Earn exalted reputation with 4 home cities.",
-			-- #elseif BEFORE WRATH
-			["description"] = "Earn exalted reputation with 5 home cities.",
-			-- #endif
-			["races"] = HORDE_ONLY,
-			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
-				-- #if AFTER CATA
-				title(130),	-- Ambassador %
-				-- #else
-				title(98),	-- Ambassador %
-				-- #endif
-			}),
-		})),
-		applyclassicphase(TBC_PHASE_ONE, achWithReps(942, { 978, 970, 576 }, {	-- The Diplomat
-			-- #if BEFORE WRATH
-			["description"] = "Raise your reputation level from unfriendly to exalted with Timbermaw Hold, Sporeggar and the Kurenai.",
-			-- #endif
-			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
-			["races"] = ALLIANCE_ONLY,
-			["groups"] = {
-				-- #if AFTER CATA
-				title(79),	-- % the Diplomat
-				-- #else
-				title(48),	-- % the Diplomat
-				-- #endif
-			},
-		})),
-		applyclassicphase(TBC_PHASE_ONE, achWithReps(943, { 941, 970, 576 }, {	-- The Diplomat
-			-- #if BEFORE WRATH
-			["description"] = "Raise your reputation level from unfriendly to exalted with Timbermaw Hold, Sporeggar and the Mag'har.",
-			-- #endif
-			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
-			["races"] = HORDE_ONLY,
-			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
-				-- #if AFTER CATA
-				title(79),	-- % the Diplomat
-				-- #else
-				title(48),	-- % the Diplomat
-				-- #endif
-			}),
-		})),
-	}),
-	achcat(ACHIEVEMENT_CATEGORY_WORLD_EVENTS),
 	-- #if AFTER 4.2.0
 	achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		petbattle(ach(5875, {	-- Littlest Pet Shop (150)
@@ -1782,64 +1353,6 @@ root("Achievements", {
 			},
 		})),
 	}),
-	achcat(ACHIEVEMENT_CATEGORY_COLLECTIONS),
-	achcat(ACHIEVEMENT_CATEGORY_EXPANSION_FEATURES),
-	-- #endif
-	achcat(ACHIEVEMENT_CATEGORY_FEATS_OF_STRENGTH, {
-		ach(2358, {	-- Charger
-			-- #if BEFORE 3.0.1
-			["sourceQuests"] = {
-				7647,	-- Judgment and Redemption
-				-- #if AFTER TBC
-				9737,	-- True Masters of the Light
-				-- #endif
-			},
-			-- #endif
-			["classes"] = { PALADIN },
-			["f"] = 100,
-		}),
-		-- #if AFTER 4.0.1
-		applyclassicphase(WRATH_PHASE_ONE, ach(92, {	-- Did Somebody Order a Knuckle Sandwich?
-			["timeline"] = { "added 3.0.1", "removed 4.0.1" },
-		})),
-		-- #endif
-		applyclassicphase(PHASE_THREE, ach(2336, {	-- Insane in the Membrane
-			-- #if ANYCLASSIC
-			["OnInit"] = INSANE_IN_THE_MEMBRANE_OnInit,
-			["OnTooltip"] = INSANE_IN_THE_MEMBRANE_OnTooltip,
-			-- #if BEFORE WRATH
-			["OnUpdate"] = INSANE_IN_THE_MEMBRANE_OnUpdate,
-			-- #endif
-			["description"] = "Insane in the Membrane is a Feat of Strength that rewards the title <The Insane>. This feat requires you to become honored with the Bloodsail Buccaneers and exalted with the Steamwheedle Cartel (Booty Bay, Everlook, Gadgetzan, Ratchet), Ravenholdt, Darkmoon Faire, and the Shen'dralar. After Cataclysm it does not require that all of these reputation levels be reached at the same time, however, prior to that you must have them all at the same time. Raising reputation with these factions is typically very difficult, time-consuming, and costly.",
-			-- #endif
-			["groups"] = {
-				title(112, {	-- the Insane
-					["timeline"] = { "added 3.0.1" },
-				}),
-			},
-		})),
-		applyclassicphase(PHASE_ONE, ach(879, {	-- Old School Ride
-			["providers"] = {
-				{ "i", 13328 },	-- Black Ram
-				{ "i", 13329 },	-- Frost Ram
-				{ "i", 13327 },	-- Icy Blue Mechanostrider Mod A
-				{ "i", 13326 },	-- White Mechanostrider Mod B
-				{ "i", 12354 },	-- Palomino Bridle
-				{ "i", 12353 },	-- White Stallion Bridle
-				{ "i", 12302 },	-- Reins of the Ancient Frostsaber
-				{ "i", 12303 },	-- Reins of the Nightsaber
-				{ "i", 12351 },	-- Horn of the Arctic Wolf
-				{ "i", 12330 },	-- Horn of the Red Wolf
-				{ "i", 15292 },	-- Green Kodo
-				{ "i", 15293 },	-- Teal Kodo
-				{ "i", 13317 },	-- Whistle of the Ivory Raptor
-				{ "i", 8586 },	-- Whistle of the Mottled Red Raptor
-			},
-			["timeline"] = { "removed 1.4.0" },
-		})),
-	}),
-	-- #if AFTER 4.1.0
-	achcat(ACHIEVEMENT_CATEGORY_LEGACY),
 	-- #endif
 });
 

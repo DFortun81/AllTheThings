@@ -61,6 +61,10 @@
 -- #IMPORT: 08 - PvP\\03 Wrath of the Lich King PvP Seasons.lua
 -- #IMPORT: 08 - PvP\\04 Cataclysm PvP Seasons.lua
 
+-- Character
+-- #IMPORT: 11 - Character\\Achievements.lua
+-- #IMPORT: 11 - Character\\New Character.lua
+
 -- NYI
 -- #IMPORT: 17 - NYI\\
 
