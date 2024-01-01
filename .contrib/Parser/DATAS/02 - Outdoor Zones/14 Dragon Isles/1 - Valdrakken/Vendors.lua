@@ -144,6 +144,47 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				},
 			}),
+			n(189644, {	-- Ms. Xiulan <Madam Goya's Assistant>
+				["coord"] = { 19.0, 50.2, VALDRAKKEN },
+				["g"] = bubbleDown({ ["timeline"] = { "added 10.2.52649" } }, {
+					i(211300, { -- Arsenal: Whispering Temple Blades
+						["cost"] = 2000000000, -- 200,000g
+						["groups"] = {
+							i(211299, { -- Gleaming Whispering Temple Blade
+							}),
+							i(211298, { -- Whispering Temple Blade
+							}),
+						},
+					}),
+					i(211097, { -- Gilded Crown Splitter
+						["cost"] = 900000000, -- 90,000g
+					}),
+					i(211099, { -- Gilded Scarab Bulwark
+						["cost"] = 1000000000, -- 100,000g
+					}),
+					i(211084, { -- Gold Resonating Crystal
+						["cost"] = 12000000000,	-- 1,200,000g
+					}),
+					i(211096, { -- Gold-Plated Witchhunter's Carbine
+						["cost"] = 1000000000, -- 100,000g
+					}),
+					i(211294, { -- Marauder King's Body Carver
+						["cost"] = 1000000000, -- 100,000g
+					}),
+					i(211145, { -- Royal Witch Doctor's Trophies
+						["cost"] = 800000000, -- 80,000g
+					}),
+					i(211159, { -- Royal Witch Doctor's Guard
+						["cost"] = 800000000, -- 80,000g
+					}),
+					i(211259, { -- Regal Gryphon Rider's Headgear
+						["cost"] = 750000000, -- 75,000g
+					}),
+					i(211295, { -- Wrathful Crusader's Helm
+						["cost"] = 750000000, -- 75,000g
+					}),
+				}),
+			}),		
 			n(187783, {	-- Pakak
 				["coord"] = { 43.8, 75.0, VALDRAKKEN },
 				["g"] = {
