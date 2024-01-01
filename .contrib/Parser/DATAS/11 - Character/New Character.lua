@@ -937,7 +937,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(35),	-- Bent Staff
 			i(3661),	-- Handcrafted Staff
 			i(20981, {	-- Neophyte's Mace
-				["timeline"] = { "added 2.0.1.6180", REMOVED_9_0_1 }	-- TODO: I am not sure when this got removed.
+				["timeline"] = { "added 2.0.1.6180", "removed 3.0.1" }
 			}),
 		}),
 		n(ALLIED_RACES, bubbleDownSelf({ ["timeline"] = { "added 7.3.5" }, }, {
