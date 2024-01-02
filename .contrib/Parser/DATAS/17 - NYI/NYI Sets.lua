@@ -6069,7 +6069,7 @@ root(ROOTS.NeverImplemented, {
 						}),
 					})),
 				}),
-				n(PVP, {
+				header(HEADERS.Achievement, SEASON_OBSIDIAN, {
 					-- [High Item]
 					n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {
 						cl(DEATHKNIGHT, {
@@ -7455,7 +7455,7 @@ root(ROOTS.NeverImplemented, {
 						}),
 					})),
 				}),
-				n(PVP, {
+				header(HEADERS.Achievement, SEASON_VERDANT, {
 					n(PVP_GLADIATOR, bubbleDownSelf({ ["bonusID"] = 6898 }, {
 						n(CLASSES, {
 							cl(DEATHKNIGHT, {

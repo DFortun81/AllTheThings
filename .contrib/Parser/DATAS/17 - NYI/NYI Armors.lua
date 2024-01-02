@@ -2314,6 +2314,28 @@ root(ROOTS.NeverImplemented, {
 					i(200710),	-- Ashjra'kamas
 					i(200708),	-- Polymorphic Cloak of Absorption
 				})),
+
+				-- 10.2.0
+				tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+					header(HEADERS.LFGDungeon, 2502, {	-- Amirdrassil, the Dream's Hope
+						d(LFR_RAID, {
+							i(207160, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Inflammable Drapeleaf [LFR]
+							i(207161, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Mantle of Blazing Sacrifice [LFR]
+						}),
+						d(NORMAL_RAID, {
+							i(207160, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Inflammable Drapeleaf [Normal]
+							i(207161, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Mantle of Blazing Sacrifice [Normal]
+						}),
+						d(HEROIC_RAID, {
+							i(207160, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Inflammable Drapeleaf [Heroic]
+							i(207161, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Mantle of Blazing Sacrifice [Heroic]
+						}),
+						d(MYTHIC_RAID, {
+							i(207160, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Inflammable Drapeleaf [Mythic]
+							i(207161, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Mantle of Blazing Sacrifice [Mythic]
+						}),
+					}),
+				})),
 			}),
 			cl(DRUID, {
 				-- 10.0.0
@@ -2373,6 +2395,68 @@ root(ROOTS.NeverImplemented, {
 					i(188960),	-- 10.0 Zone Uncommon Template <Descriptor> Vestment
 					i(188966),	-- 10.0 Zone Uncommon Template <Descriptor> Wristwraps
 				})),
+
+				-- 10.2.0
+				tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+					header(HEADERS.LFGDungeon, 2502, {	-- Amirdrassil, the Dream's Hope
+						d(LFR_RAID, {
+							i(207124, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Blooming Redeemer's Sash [LFR]
+							i(207118, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Elder's Volcanic Wrap [LFR]
+							i(210204, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Fading Flame Wristbands [LFR]
+							i(207123, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Lifewoven Slippers [LFR]
+							i(207116, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Lost Scholar's Timely Hat [LFR]
+							i(207122, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Lost Scholar's Belted Treads [LFR]
+							i(208431, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Lost Scholar's Temporal Shoulderdials [LFR]
+							i(207117, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Requiem Rootmantle [LFR]
+							i(207115, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Twisting Shadow Claws [LFR]
+							i(207119, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Urctos's Hibernal Dial [LFR]
+							i(207121, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Vesture of the Smoldering Serpent [LFR]
+							i(208430, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Whispering Fanged Cord [LFR]
+						}),
+						d(NORMAL_RAID, {
+							i(207124, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Blooming Redeemer's Sash [Normal]
+							i(207118, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Elder's Volcanic Wrap [Normal]
+							i(210204, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Fading Flame Wristbands [Normal]
+							i(207123, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Lifewoven Slippers [Normal]
+							i(207116, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Lost Scholar's Timely Hat [Normal]
+							i(207122, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Lost Scholar's Belted Treads [Normal]
+							i(208431, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Lost Scholar's Temporal Shoulderdials [Normal]
+							i(207117, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Requiem Rootmantle [Normal]
+							i(207115, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Twisting Shadow Claws [Normal]
+							i(207119, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Urctos's Hibernal Dial [Normal]
+							i(207121, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Vesture of the Smoldering Serpent [Normal]
+							i(208430, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Whispering Fanged Cord [Normal]
+						}),
+						d(HEROIC_RAID, {
+							i(207124, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Blooming Redeemer's Sash [Heroic]
+							i(207118, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Elder's Volcanic Wrap [Heroic]
+							i(210204, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Fading Flame Wristbands [Heroic]
+							i(207123, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Lifewoven Slippers [Heroic]
+							i(207116, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Lost Scholar's Timely Hat [Heroic]
+							i(207122, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Lost Scholar's Belted Treads [Heroic]
+							i(208431, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Lost Scholar's Temporal Shoulderdials [Heroic]
+							i(207117, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Requiem Rootmantle [Heroic]
+							i(207115, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Twisting Shadow Claws [Heroic]
+							i(207119, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Urctos's Hibernal Dial [Heroic]
+							i(207121, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Vesture of the Smoldering Serpent [Heroic]
+							i(208430, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Whispering Fanged Cord [Heroic]
+						}),
+						d(MYTHIC_RAID, {
+							i(207124, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Blooming Redeemer's Sash [Mythic]
+							i(207118, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Elder's Volcanic Wrap [Mythic]
+							i(210204, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Fading Flame Wristbands [Mythic]
+							i(207123, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Lifewoven Slippers [Mythic]
+							i(207116, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Lost Scholar's Timely Hat [Mythic]
+							i(207122, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Lost Scholar's Belted Treads [Mythic]
+							i(208431, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Lost Scholar's Temporal Shoulderdials [Mythic]
+							i(207117, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Requiem Rootmantle [Mythic]
+							i(207115, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Twisting Shadow Claws [Mythic]
+							i(207119, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Urctos's Hibernal Dial [Mythic]
+							i(207121, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Vesture of the Smoldering Serpent [Mythic]
+							i(208430, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Whispering Fanged Cord [Mythic]
+						}),
+					}),
+				})),
 			}),
 			filter(LEATHER, {
 				-- 10.0.0
@@ -2422,54 +2506,64 @@ root(ROOTS.NeverImplemented, {
 
 				-- 10.2.0
 				tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
-					-- LFR Amirdrassil, the Dream's Hope
-					i(207131, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Bloody Dragonhide Belt [LFR]
-					i(207130, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Flamewaker's Grips [LFR]
-					i(207132, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Frenzied Incarnate Legwraps [LFR]
-					i(207128, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Primordial Serpent's Bindings [LFR]
-					i(207133, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Silent Tormentor's Hood [LFR]
-					i(207134, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Tasseted Emberwalkers [LFR]
-					i(207126, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Twisted Blossom Stompers [LFR]
-					i(208432, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Vengeful Bladebeak Girdle [LFR]
-					i(210206, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Verdant Sanctuary Bands [LFR]
-					i(208420, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Visage of the Devouring Flame [LFR]
-
-					-- Normal Amirdrassil, the Dream's Hope
-					i(207131, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Bloody Dragonhide Belt [Normal]
-					i(207130, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Flamewaker's Grips [Normal]
-					i(207132, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Frenzied Incarnate Legwraps [Normal]
-					i(207128, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Primordial Serpent's Bindings [Normal]
-					i(207133, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Silent Tormentor's Hood [Normal]
-					i(207134, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Tasseted Emberwalkers [Normal]
-					i(207126, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Twisted Blossom Stompers [Normal]
-					i(208432, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Vengeful Bladebeak Girdle [Normal]
-					i(210206, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Verdant Sanctuary Bands [Normal]
-					i(208420, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Visage of the Devouring Flame [Normal]
-
-					-- Heroic Amirdrassil, the Dream's Hope
-					i(207131, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Bloody Dragonhide Belt [Heroic]
-					i(207130, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Flamewaker's Grips [Heroic]
-					i(207132, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Frenzied Incarnate Legwraps [Heroic]
-					i(207128, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Primordial Serpent's Bindings [Heroic]
-					i(207133, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Silent Tormentor's Hood [Heroic]
-					i(207134, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Tasseted Emberwalkers [Heroic]
-					i(207126, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Twisted Blossom Stompers [Heroic]
-					i(208432, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Vengeful Bladebeak Girdle [Heroic]
-					i(210206, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Verdant Sanctuary Bands [Heroic]
-					i(208420, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Visage of the Devouring Flame [Heroic]
-
-					-- Mythic Amirdrassil, the Dream's Hope
-					i(207131, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Bloody Dragonhide Belt [Mythic]
-					i(207130, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Flamewaker's Grips [Mythic]
-					i(207132, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Frenzied Incarnate Legwraps [Mythic]
-					i(207128, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Primordial Serpent's Bindings [Mythic]
-					i(207133, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Silent Tormentor's Hood [Mythic]
-					i(207134, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Tasseted Emberwalkers [Mythic]
-					i(207126, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Twisted Blossom Stompers [Mythic]
-					i(208432, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Vengeful Bladebeak Girdle [Mythic]
-					i(210206, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Verdant Sanctuary Bands [Mythic]
-					i(208420, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Visage of the Devouring Flame [Mythic]
-
+					header(HEADERS.LFGDungeon, 2502, {	-- Amirdrassil, the Dream's Hope
+						d(LFR_RAID, {
+							i(207131, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Bloody Dragonhide Belt [LFR]
+							i(207135, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Eternal Sentinel's Cord [LFR]
+							i(207130, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Flamewaker's Grips [LFR]
+							i(207132, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Frenzied Incarnate Legwraps [LFR]
+							i(207128, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Primordial Serpent's Bindings [LFR]
+							i(207133, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Silent Tormentor's Hood [LFR]
+							i(207127, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Strigine Epaulets [LFR]
+							i(207134, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Tasseted Emberwalkers [LFR]
+							i(207126, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Twisted Blossom Stompers [LFR]
+							i(208432, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Vengeful Bladebeak Girdle [LFR]
+							i(210206, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Verdant Sanctuary Bands [LFR]
+							i(208420, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Visage of the Devouring Flame [LFR]
+						}),
+						d(NORMAL_RAID, {
+							i(207131, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Bloody Dragonhide Belt [Normal]
+							i(207135, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Eternal Sentinel's Cord [Normal]
+							i(207130, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Flamewaker's Grips [Normal]
+							i(207132, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Frenzied Incarnate Legwraps [Normal]
+							i(207128, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Primordial Serpent's Bindings [Normal]
+							i(207133, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Silent Tormentor's Hood [Normal]
+							i(207127, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Strigine Epaulets [Normal]
+							i(207134, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Tasseted Emberwalkers [Normal]
+							i(207126, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Twisted Blossom Stompers [Normal]
+							i(208432, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Vengeful Bladebeak Girdle [Normal]
+							i(210206, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Verdant Sanctuary Bands [Normal]
+							i(208420, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Visage of the Devouring Flame [Normal]
+						}),
+						d(HEROIC_RAID, {
+							i(207131, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Bloody Dragonhide Belt [Heroic]
+							i(207135, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Eternal Sentinel's Cord [Heroic]
+							i(207130, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Flamewaker's Grips [Heroic]
+							i(207132, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Frenzied Incarnate Legwraps [Heroic]
+							i(207128, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Primordial Serpent's Bindings [Heroic]
+							i(207133, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Silent Tormentor's Hood [Heroic]
+							i(207127, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Strigine Epaulets [Heroic]
+							i(207134, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Tasseted Emberwalkers [Heroic]
+							i(207126, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Twisted Blossom Stompers [Heroic]
+							i(208432, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Vengeful Bladebeak Girdle [Heroic]
+							i(210206, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Verdant Sanctuary Bands [Heroic]
+							i(208420, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Visage of the Devouring Flame [Heroic]
+						}),
+						d(MYTHIC_RAID, {
+							i(207131, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Bloody Dragonhide Belt [Mythic]
+							i(207135, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Eternal Sentinel's Cord [Mythic]
+							i(207130, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Flamewaker's Grips [Mythic]
+							i(207132, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Frenzied Incarnate Legwraps [Mythic]
+							i(207128, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Primordial Serpent's Bindings [Mythic]
+							i(207133, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Silent Tormentor's Hood [Mythic]
+							i(207127, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Strigine Epaulets [Mythic]
+							i(207134, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Tasseted Emberwalkers [Mythic]
+							i(207126, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Twisted Blossom Stompers [Mythic]
+							i(208432, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Vengeful Bladebeak Girdle [Mythic]
+							i(210206, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Verdant Sanctuary Bands [Mythic]
+							i(208420, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Visage of the Devouring Flame [Mythic]
+						}),
+					}),
 				})),
 			}),
 			filter(MAIL, {
@@ -2516,6 +2610,94 @@ root(ROOTS.NeverImplemented, {
 					i(188978),	-- 10.0 Zone Uncommon Template <Descriptor> Shoulderguards
 					i(188974),	-- 10.0 Zone Uncommon Template <Descriptor> Striders
 					i(191934),	-- TEMP Event Stream TEMP - No Buckle Fleshscale Belt
+				})),
+
+				-- 10.2.0
+				tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+					header(HEADERS.LFGDungeon, 2502, {	-- Amirdrassil, the Dream's Hope
+						d(LFR_RAID, {
+							i(207138, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Aerwynn's Ritual Sarong [LFR]
+							i(207142, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Ancient Haubark [LFR]
+							i(207145, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Boots of the Molten Hoard [LFR]
+							i(207139, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Cleats of the Savage Claw [LFR]
+							i(207140, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Drakestalker's Trophy Pauldrons [LFR]
+							i(207137, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Flameseer's Winged Grasps [LFR]
+							i(207144, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Forlorn Leaf Clasp [LFR]
+							i(207146, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Jeweled Sash of the Viper [LFR]
+							i(208428, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Mantle of Slumbering Sands [LFR]
+							i(208434, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Sentinel's Gilded Poulaines [LFR]
+							i(207141, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Snake Eater's Cowl [LFR]
+							i(207143, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Twisted Flamecuffs [LFR]
+							i(210203, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Wellspring Wristlets [LFR]
+						}),
+						d(NORMAL_RAID, {
+							i(207138, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Aerwynn's Ritual Sarong [Normal]
+							i(207142, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Ancient Haubark [Normal]
+							i(207145, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Boots of the Molten Hoard [Normal]
+							i(207139, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Cleats of the Savage Claw [Normal]
+							i(207140, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Drakestalker's Trophy Pauldrons [Normal]
+							i(207137, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Flameseer's Winged Grasps [Normal]
+							i(207144, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Forlorn Leaf Clasp [Normal]
+							i(207146, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Jeweled Sash of the Viper [Normal]
+							i(208428, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Mantle of Slumbering Sands [Normal]
+							i(208434, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Sentinel's Gilded Poulaines [Normal]
+							i(207141, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Snake Eater's Cowl [Normal]
+							i(207143, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Twisted Flamecuffs [Normal]
+							i(210203, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Wellspring Wristlets [Normal]
+						}),
+						d(HEROIC_RAID, {
+							i(207138, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Aerwynn's Ritual Sarong [Heroic]
+							i(207142, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Ancient Haubark [Heroic]
+							i(207145, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Boots of the Molten Hoard [Heroic]
+							i(207139, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Cleats of the Savage Claw [Heroic]
+							i(207140, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Drakestalker's Trophy Pauldrons [Heroic]
+							i(207137, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Flameseer's Winged Grasps [Heroic]
+							i(207144, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Forlorn Leaf Clasp [Heroic]
+							i(207146, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Jeweled Sash of the Viper [Heroic]
+							i(208428, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Mantle of Slumbering Sands [Heroic]
+							i(208434, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Sentinel's Gilded Poulaines [Heroic]
+							i(207141, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Snake Eater's Cowl [Heroic]
+							i(207143, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Twisted Flamecuffs [Heroic]
+							i(210203, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Wellspring Wristlets [Heroic]
+						}),
+						d(MYTHIC_RAID, {
+							i(207138, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Aerwynn's Ritual Sarong [Mythic]
+							i(207142, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Ancient Haubark [Mythic]
+							i(207145, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Boots of the Molten Hoard [Mythic]
+							i(207139, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Cleats of the Savage Claw [Mythic]
+							i(207140, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Drakestalker's Trophy Pauldrons [Mythic]
+							i(207137, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Flameseer's Winged Grasps [Mythic]
+							i(207144, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Forlorn Leaf Clasp [Mythic]
+							i(207146, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Jeweled Sash of the Viper [Mythic]
+							i(208428, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Mantle of Slumbering Sands [Mythic]
+							i(208434, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Sentinel's Gilded Poulaines [Mythic]
+							i(207141, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Snake Eater's Cowl [Mythic]
+							i(207143, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Twisted Flamecuffs [Mythic]
+							i(210203, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Wellspring Wristlets [Mythic]
+						}),
+					}),
+					header(HEADERS.Achievement, SEASON_VERDANT, {
+						n(PVP_GLADIATOR, {
+							i(207142, { ["bonusID"] = 6898 }),	-- Ancient Haubark [Gladiator]
+							i(207142, { ["bonusID"] = 7479 }),	-- Ancient Haubark [Gladiator]
+							i(207137, { ["bonusID"] = 6898 }),	-- Flameseer's Winged Grasps [Gladiator]
+							i(207137, { ["bonusID"] = 7479 }),	-- Flameseer's Winged Grasps [Gladiator]
+							i(208428, { ["bonusID"] = 6898 }),	-- Mantle of Slumbering Sands [Gladiator]
+							i(208428, { ["bonusID"] = 7479 }),	-- Mantle of Slumbering Sands [Gladiator]
+							i(207143, { ["bonusID"] = 6898 }),	-- Twisted Flamecuffs [Gladiator]
+							i(207143, { ["bonusID"] = 7479 }),	-- Twisted Flamecuffs [Gladiator]
+						}),
+						n(PVP_ELITE, {
+							i(207142, { ["bonusID"] = 7532 }),	-- Ancient Haubark [Elite]
+							i(207142, { ["bonusID"] = 8107 }),	-- Ancient Haubark [Elite]
+							i(207137, { ["bonusID"] = 7532 }),	-- Flameseer's Winged Grasps [Elite]
+							i(207137, { ["bonusID"] = 8107 }),	-- Flameseer's Winged Grasps [Elite]
+							i(208428, { ["bonusID"] = 7532 }),	-- Mantle of Slumbering Sands [Elite]
+							i(208428, { ["bonusID"] = 8107 }),	-- Mantle of Slumbering Sands [Elite]
+							i(207143, { ["bonusID"] = 7532 }),	-- Twisted Flamecuffs [Elite]
+							i(207143, { ["bonusID"] = 8107 }),	-- Twisted Flamecuffs [Elite]
+						}),
+					}),
 				})),
 			}),
 			filter(PLATE, {
@@ -2573,6 +2755,86 @@ root(ROOTS.NeverImplemented, {
 					i(200737),	-- Pauldrons of Infinite Darkness
 					i(200230),	-- Terrorclaw Shoulderplates
 					i(195467),	-- zzOld(DNT) Test Belt of Molten Metallic Awesomeness
+				})),
+
+				-- 10.2.0
+				tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+					header(HEADERS.LFGDungeon, 2502, {	-- Amirdrassil, the Dream's Hope
+						d(LFR_RAID, {
+							i(207150, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Agonizing Manacles [LFR]
+							i(207154, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Carapace of the Unbending Flame [LFR]
+							i(207155, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Eldermoss Gauntlets [LFR]
+							i(207151, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Emerald Guardian's Casque [LFR]
+							i(207156, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Fused Obsidian Sabatons [LFR]
+							i(208427, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Insurgent Flame Warboots [LFR]
+							i(207148, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Lavaforged Sollerets [LFR]
+							i(208426, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Mask of the Unbidden Grim [LFR]
+							i(207149, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Phlegethic Girdle [LFR]
+							i(207153, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Seared Ironwood Greaves [LFR]
+							i(207157, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Smoldering Chevalier's Greatbelt [LFR]
+							i(210205, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Vigilant Protector's Bracers [LFR]
+							i(207152, { ["bonusID"] = 6894, ["modID"] = 0, }),	-- Volcanic Spelunker's Vents [LFR]
+						}),
+						d(NORMAL_RAID, {
+							i(207150, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Agonizing Manacles [Normal]
+							i(207154, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Carapace of the Unbending Flame [Normal]
+							i(207155, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Eldermoss Gauntlets [Normal]
+							i(207151, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Emerald Guardian's Casque [Normal]
+							i(207156, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Fused Obsidian Sabatons [Normal]
+							i(208427, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Insurgent Flame Warboots [Normal]
+							i(207148, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Lavaforged Sollerets [Normal]
+							i(208426, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Mask of the Unbidden Grim [Normal]
+							i(207149, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Phlegethic Girdle [Normal]
+							i(207153, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Seared Ironwood Greaves [Normal]
+							i(207157, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Smoldering Chevalier's Greatbelt [Normal]
+							i(210205, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Vigilant Protector's Bracers [Normal]
+							i(207152, { ["bonusID"] = 6895, ["modID"] = 0, }),	-- Volcanic Spelunker's Vents [Normal]
+						}),
+						d(HEROIC_RAID, {
+							i(207150, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Agonizing Manacles [Heroic]
+							i(207154, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Carapace of the Unbending Flame [Heroic]
+							i(207155, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Eldermoss Gauntlets [Heroic]
+							i(207151, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Emerald Guardian's Casque [Heroic]
+							i(207156, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Fused Obsidian Sabatons [Heroic]
+							i(208427, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Insurgent Flame Warboots [Heroic]
+							i(207148, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Lavaforged Sollerets [Heroic]
+							i(208426, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Mask of the Unbidden Grim [Heroic]
+							i(207149, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Phlegethic Girdle [Heroic]
+							i(207153, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Seared Ironwood Greaves [Heroic]
+							i(207157, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Smoldering Chevalier's Greatbelt [Heroic]
+							i(210205, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Vigilant Protector's Bracers [Heroic]
+							i(207152, { ["bonusID"] = 6896, ["modID"] = 0, }),	-- Volcanic Spelunker's Vents [Heroic]
+						}),
+						d(MYTHIC_RAID, {
+							i(207150, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Agonizing Manacles [Mythic]
+							i(207154, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Carapace of the Unbending Flame [Mythic]
+							i(207155, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Eldermoss Gauntlets [Mythic]
+							i(207151, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Emerald Guardian's Casque [Mythic]
+							i(207156, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Fused Obsidian Sabatons [Mythic]
+							i(208427, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Insurgent Flame Warboots [Mythic]
+							i(207148, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Lavaforged Sollerets [Mythic]
+							i(208426, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Mask of the Unbidden Grim [Mythic]
+							i(207149, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Phlegethic Girdle [Mythic]
+							i(207153, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Seared Ironwood Greaves [Mythic]
+							i(207157, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Smoldering Chevalier's Greatbelt [Mythic]
+							i(210205, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Vigilant Protector's Bracers [Mythic]
+							i(207152, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Volcanic Spelunker's Vents [Mythic]
+						}),
+					}),
+					header(HEADERS.Achievement, SEASON_VERDANT, {
+						n(PVP_GLADIATOR, {
+							i(208427, { ["bonusID"] = 6898 }),	-- Insurgent Flame Warboots [Gladiator]
+							i(208427, { ["bonusID"] = 7479 }),	-- Insurgent Flame Warboots [Gladiator]
+							i(208426, { ["bonusID"] = 6898 }),	-- Mask of the Unbidden Grim [Gladiator]
+							i(208426, { ["bonusID"] = 7479 }),	-- Mask of the Unbidden Grim [Gladiator]
+						}),
+						n(PVP_ELITE, {
+							i(208427, { ["bonusID"] = 7532 }),	-- Insurgent Flame Warboots [Elite]
+							i(208427, { ["bonusID"] = 8107 }),	-- Insurgent Flame Warboots [Elite]
+							i(208426, { ["bonusID"] = 7532 }),	-- Mask of the Unbidden Grim [Elite]
+							i(208426, { ["bonusID"] = 8107 }),	-- Mask of the Unbidden Grim [Elite]
+						}),
+					}),
 				})),
 			}),
 			filter(COSMETIC, {
