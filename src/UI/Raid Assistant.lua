@@ -30,6 +30,9 @@ end
 -- Module locals
 local AutoReset = false;
 local InviteCharacterName = "LET ME IN, LET ME INNNNN";
+local isBusy = not C_Scenario_IsInScenario and IsInInstance or function()
+	return IsInInstance() or C_Scenario_IsInScenario();
+end;
 -- NOTE: This should be moved to a common api file.
 local function SortByTextAndPriority(a, b)
 	if b.priority > a.priority then
@@ -140,28 +143,19 @@ app:GetWindow("RaidAssistant", {
 	Commands = { "attra" },
 	OnInit = function(self, handlers)
 		self.ignoreNoEntries = true;
-		local isBusy = not C_Scenario_IsInScenario and IsInInstance or function()
-			return IsInInstance() or C_Scenario_IsInScenario();
-		end;
-		self.TryResetInstance = function()
-			while isBusy() and AutoReset do
-				coroutine.yield();
-			end
-			ResetInstances();
-		end
 		
 		-- Setup Event Handlers and register for events
 		local updateWithTrigger = function()
 			self:Update(true);
 		end;
 		handlers.GROUP_ROSTER_UPDATE = updateWithTrigger;
-		handlers.ZONE_CHANGED = updateWithTrigger;
+		handlers.UPDATE_INSTANCE_INFO = updateWithTrigger;
 		handlers.ZONE_CHANGED_NEW_AREA = updateWithTrigger;
 		handlers.ACTIVE_TALENT_GROUP_CHANGED = updateWithTrigger;
 		handlers.PLAYER_DIFFICULTY_CHANGED = updateWithTrigger;
 		handlers.PLAYER_LOOT_SPEC_UPDATED = updateWithTrigger;
 		self:RegisterEvent("CHAT_MSG_SYSTEM");
-		self:RegisterEvent("ZONE_CHANGED");
+		self:RegisterEvent("UPDATE_INSTANCE_INFO");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 		self:RegisterEvent("GROUP_ROSTER_UPDATE");
 		
@@ -259,8 +253,8 @@ app:GetWindow("RaidAssistant", {
 					OnUpdate = function(data)
 						data.saved = AutoReset;
 						data.visible = not IsInGroup() or UnitIsGroupLeader("player", "raid");
-						if data.visible and AutoReset then
-							self:StartATTCoroutine("TryResetInstance", self.TryResetInstance);
+						if data.visible and AutoReset and not isBusy() then
+							ResetInstances();
 						end
 						return true;
 					end,
