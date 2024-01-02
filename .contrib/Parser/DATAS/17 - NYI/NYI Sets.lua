@@ -6583,7 +6583,7 @@ root(ROOTS.NeverImplemented, {
 			-- 10.2.0
 			tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				header(HEADERS.Item, 210468, {	-- Emerald Blossom Dreamstone
-				-- Actual items awarded by Emerald Blossom Dreamstone are commented out here
+					-- Actual items awarded by Emerald Blossom Dreamstone are commented out here
 					d(LFR_RAID, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 						cl(DEATHKNIGHT, {
 							i(207203), -- Casket of the Risen Nightmare

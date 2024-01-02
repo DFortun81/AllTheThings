@@ -2419,6 +2419,58 @@ root(ROOTS.NeverImplemented, {
 					i(188967),	-- 10.0 Zone Uncommon Template <Descriptor> Treads
 					i(188989),	-- 10.0 Zone Uncommon Template <Descriptor> Tunic
 				})),
+
+				-- 10.2.0
+				tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+					-- LFR Amirdrassil, the Dream's Hope
+					i(207131, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Bloody Dragonhide Belt [LFR]
+					i(207130, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Flamewaker's Grips [LFR]
+					i(207132, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Frenzied Incarnate Legwraps [LFR]
+					i(207128, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Primordial Serpent's Bindings [LFR]
+					i(207133, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Silent Tormentor's Hood [LFR]
+					i(207134, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Tasseted Emberwalkers [LFR]
+					i(207126, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Twisted Blossom Stompers [LFR]
+					i(208432, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Vengeful Bladebeak Girdle [LFR]
+					i(210206, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Verdant Sanctuary Bands [LFR]
+					i(208420, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, })), -- Visage of the Devouring Flame [LFR]
+
+					-- Normal Amirdrassil, the Dream's Hope
+					i(207131, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Bloody Dragonhide Belt [Normal]
+					i(207130, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Flamewaker's Grips [Normal]
+					i(207132, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Frenzied Incarnate Legwraps [Normal]
+					i(207128, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Primordial Serpent's Bindings [Normal]
+					i(207133, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Silent Tormentor's Hood [Normal]
+					i(207134, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Tasseted Emberwalkers [Normal]
+					i(207126, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Twisted Blossom Stompers [Normal]
+					i(208432, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Vengeful Bladebeak Girdle [Normal]
+					i(210206, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Verdant Sanctuary Bands [Normal]
+					i(208420, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, })), -- Visage of the Devouring Flame [Normal]
+
+					-- Heroic Amirdrassil, the Dream's Hope
+					i(207131, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Bloody Dragonhide Belt [Heroic]
+					i(207130, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Flamewaker's Grips [Heroic]
+					i(207132, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Frenzied Incarnate Legwraps [Heroic]
+					i(207128, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Primordial Serpent's Bindings [Heroic]
+					i(207133, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Silent Tormentor's Hood [Heroic]
+					i(207134, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Tasseted Emberwalkers [Heroic]
+					i(207126, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Twisted Blossom Stompers [Heroic]
+					i(208432, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Vengeful Bladebeak Girdle [Heroic]
+					i(210206, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Verdant Sanctuary Bands [Heroic]
+					i(208420, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, })), -- Visage of the Devouring Flame [Heroic]
+
+					-- Mythic Amirdrassil, the Dream's Hope
+					i(207131, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Bloody Dragonhide Belt [Mythic]
+					i(207130, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Flamewaker's Grips [Mythic]
+					i(207132, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Frenzied Incarnate Legwraps [Mythic]
+					i(207128, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Primordial Serpent's Bindings [Mythic]
+					i(207133, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Silent Tormentor's Hood [Mythic]
+					i(207134, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Tasseted Emberwalkers [Mythic]
+					i(207126, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Twisted Blossom Stompers [Mythic]
+					i(208432, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Vengeful Bladebeak Girdle [Mythic]
+					i(210206, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Verdant Sanctuary Bands [Mythic]
+					i(208420, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, })), -- Visage of the Devouring Flame [Mythic]
+
+				})),
 			}),
 			filter(MAIL, {
 				-- 10.0.0
