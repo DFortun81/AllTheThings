@@ -49,10 +49,17 @@ namespace ATT
                 ProcessContainer(container);
             }
 
+            // Capture Conditional DB data into the global DBs, and then merge that data into the respective Objects
             CurrentParseStage = ParseStage.ConditionalData;
             AdditionalProcessing();
 
-            // Merge the Item Data into the Containers again, this time syncing Item data into nested Item groups
+            ProcessingFunction = DataConditionalMerge;
+            foreach (var container in Objects.AllContainers)
+            {
+                ProcessContainer(container);
+            }
+
+            // Incorporate external or other DB information into the Objects
             CurrentParseStage = ParseStage.Incorporation;
             ProcessingFunction = DataIncorporation;
             foreach (var container in Objects.AllContainers)
@@ -60,7 +67,7 @@ namespace ATT
                 ProcessContainer(container);
             }
 
-            // Merge the Item Data into the Containers again, this time syncing Item data into nested Item groups
+            // Final pass to clean up and consolidate final information within Objects
             CurrentParseStage = ParseStage.Consolidation;
             Validator.OnlyClean = true;
             ProcessingFunction = DataConsolidation;
@@ -565,10 +572,6 @@ namespace ATT
             if (!CheckTimeline(data))
                 return false;
 
-            // Merge all relevant Item Data into the global dictionaries after being validated
-            Items.MergeFromObject(data);
-            Objects.MergeFromObject(data);
-
             Validate_General(data);
 
             Validate_npc(data);
@@ -787,14 +790,33 @@ namespace ATT
                 {
                     validatedField.Validate();
                 }
-
-                // capture the data for sourced groups (i.e. contains the field)
-                CaptureForSOURCED(data, value.Key, value.Value);
             }
-
 
             // Mark this item as having a reference since it exists in a processed container
             Items.MarkItemAsReferenced(data);
+
+            // Merge all relevant Data into the global dictionaries after being validated
+            // TODO: This will be removed eventually. Global content needs to have a Global DB source
+            Items.MergeFromObject(data);
+            Objects.MergeFromObject(data);
+
+            return true;
+        }
+
+        /// <summary>
+        /// Logic which incoporates conditional DB data into Objects and captures the extent of SOURCED fields for each Object
+        /// </summary>
+        private static bool DataConditionalMerge(IDictionary<string, object> data)
+        {
+            // Merge all relevant dictionary info into the data
+            Items.MergeInto(data);
+            Objects.MergeSharedDataIntoObject(data);
+
+            foreach (KeyValuePair<string, object> value in data)
+            {
+                // capture the data for sourced groups (i.e. contains the field)
+                CaptureForSOURCED(data, value.Key, value.Value);
+            }
 
             return true;
         }
@@ -827,9 +849,9 @@ namespace ATT
         /// <param name="data"></param>
         private static bool DataConsolidation(IDictionary<string, object> data)
         {
-            // Merge all relevant dictionary info into the data
-            Items.MergeInto(data);
-            Objects.MergeSharedDataIntoObject(data);
+            // eariler in the processing we may realize that data is not useful, and can mark it to be removed
+            if (data.ContainsKey("_remove"))
+                return false;
 
             // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated
             Objects.PostProcessMergeInto(data);
@@ -1644,8 +1666,25 @@ namespace ATT
             long spellID = criteriaData.GetSpellID();
             if (spellID > 0)
             {
-                // TODO: adjust?
-                //Objects.Merge(data, "spellID", spellID);
+                //if (!TryGetSOURCED("recipeID", spellID, out _))
+                //{
+                //    LogDebugWarn($"Spell {spellID} linked to Criteria {achID}:{criteriaID}, but it's an Unsourced Spell. Not nesting Criteria.");
+                //    if (criteriaData.IsIgnoreFlags())
+                //    {
+                //        IEnumerable<string> usefulKeys = data.Keys.Except(IndeterminateCriteriaDataFields).Except(s => s.EndsWith("ID"));
+                //        if (!usefulKeys.Any())
+                //        {
+                //            // mark this criteria to be removed since it is hidden in-game and doesn't correspond to or contain any useful ATT data at this time
+                //            LogDebugWarn($"Criteria {achID}:{criteriaID} removed since it doesn't correspond to useful ATT data");
+                //            data["_remove"] = true;
+                //        }
+                //    }
+                //}
+                //else
+                //{
+                //LogDebug($"INFO: Added _spells to Criteria {achID}:{criteriaID} with SpellID: {spellID}");
+                //Objects.Merge(data, "_spells", spellID);
+                //}
             }
 
             long achievementID = criteriaData.GetRequiredAchievement();
@@ -2054,6 +2093,12 @@ namespace ATT
                 DuplicateDataIntoGroups(data, objects, "objectID");
                 cloned = true;
             }
+            if (data.TryGetValue("_spells", out object spells))
+            {
+                DuplicateDataIntoGroups(data, spells, "spellID");
+                DuplicateDataIntoGroups(data, spells, "recipeID");
+                cloned = true;
+            }
             if (data.TryGetValue("_achievements", out object achievements))
             {
                 DuplicateDataIntoGroups(data, achievements, "achID");
@@ -2146,6 +2191,20 @@ namespace ATT
                         Objects.Merge(data, "sourceQuests", questList);
                         cloned = false;
                     }
+                }
+                // if the Criteria attempts to clone into a Spell which isn't Sourced then don't remove it and add to 'providers'
+                if (data.TryGetValue("_spells", out List<object> spellObjs))
+                {
+                    foreach (long id in spellObjs.AsTypedEnumerable<long>())
+                    {
+                        if (!SOURCED["spellID"].ContainsKey(id) && !SOURCED["recipeID"].ContainsKey(id))
+                        {
+                            // remove the creatures which are not sourced from being reported as failed to merge
+                            LogDebugWarn($"Criteria not nested to Unsourced Spell/Recipe {id}. Consider Sourcing Spell/Recipe");
+                            Objects.TrackPostProcessMergeKey("spellID", id);
+                        }
+                    }
+                    cloned = false;
                 }
             }
 

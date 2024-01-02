@@ -187,6 +187,8 @@ namespace ATT
             { "npcID", new Dictionary<long, List<IDictionary<string, object>>>() },
             { "objectID", new Dictionary<long, List<IDictionary<string, object>>>() },
             { "questID", new Dictionary<long, List<IDictionary<string, object>>>() },
+            { "recipeID", new Dictionary<long, List<IDictionary<string, object>>>() },
+            { "spellID", new Dictionary<long, List<IDictionary<string, object>>>() },
         };
 
         // TODO: clean all these separate collections into the above
@@ -540,6 +542,17 @@ namespace ATT
                 "isYearly",
                 "repeatable"
             } }
+        };
+
+        /// <summary>
+        /// Fields which do not help determine information about a Criteria object
+        /// </summary>
+        private static readonly string[] IndeterminateCriteriaDataFields = new[]
+        {
+            "id",
+            "timeline",
+            "awp",
+            "rwp"
         };
 
         public static bool HasConfig()

@@ -658,6 +658,8 @@ local function RecursiveDefaultCharacterRequirementsFilter(group)
 	return true;
 end
 app.RecursiveDefaultCharacterRequirementsFilter = RecursiveDefaultCharacterRequirementsFilter;
+
+-- TODO: These are not related to Filtering... move to base.lua or other
 -- Returns the first encountered group tracing upwards in parent hierarchy which has a value for the provided field.
 -- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
 local function RecursiveFirstParentWithField(group, field, followSource)

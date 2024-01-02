@@ -166,58 +166,7 @@ namespace ATT
                         }
                         break;
                     case "RecipeDB":
-                        {
-                            // The format of the RecipeDB is a dictionary of RecipeID -> Values.
-                            if (pair.Value is Dictionary<long, object> recipeDB)
-                            {
-                                foreach (var recipeValuePair in recipeDB)
-                                {
-                                    if (recipeValuePair.Value is IDictionary<string, object> recipe)
-                                    {
-                                        recipe["recipeID"] = recipeValuePair.Key;
-                                        recipe["spellID"] = recipeValuePair.Key;
-                                        Objects.MergeFromDB("recipeID", recipe);
-                                        Objects.MergeFromDB("spellID", recipe);    // This is super dumb, but it fixes situations like /att spellid:101508. Since its key is a spellID, not a recipeID, it doesn't find it.
-                                    }
-                                    else
-                                    {
-                                        LogError("RecipeDB not in the correct format!");
-                                        Log(CurrentFileName);
-                                        Log(ToJSON(recipeValuePair.Value));
-                                        Console.ReadLine();
-                                    }
-                                }
-                            }
-                            else if (pair.Value is List<object> recipes)
-                            {
-                                foreach (var o in recipes)
-                                {
-                                    if (o is IDictionary<string, object> recipe)
-                                    {
-                                        if (recipe.TryGetValue("recipeID", out object recipeID) || recipe.TryGetValue("spellID", out recipeID))
-                                        {
-                                            recipe["recipeID"] = recipeID;
-                                            recipe["spellID"] = recipeID;
-                                            Objects.MergeFromDB("recipeID", recipe);
-                                            Objects.MergeFromDB("spellID", recipe);    // This is super dumb, but it fixes situations like /att spellid:101508. Since its key is a spellID, not a recipeID, it doesn't find it.
-                                        }
-                                    }
-                                    else
-                                    {
-                                        LogError("RecipeDB not in the correct format!");
-                                        Log(CurrentFileName);
-                                        Log(ToJSON(o));
-                                        Console.ReadLine();
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                LogError("RecipeDB not in the correct format!");
-                                Log(CurrentFileName);
-                                Console.ReadLine();
-                            }
-                        }
+                        MergeRecipeDB(pair.Value);
                         break;
                     case "ItemMountDB":
                         {
@@ -1089,6 +1038,63 @@ namespace ATT
                         else ACHIEVEMENTS[achID] = info;
                     }
                 }
+            }
+        }
+
+        /// <summary>
+        /// Merges some enumerable set of data, where each piece is an <see cref="IDictionary"/> containing an 'spellID'/'recipeID'[long] key value
+        /// </summary>
+        public static void MergeRecipeDB(object data)
+        {
+            // The format of the RecipeDB is a dictionary of RecipeID -> Values.
+            if (data is Dictionary<long, object> recipeDB)
+            {
+                foreach (var recipeValuePair in recipeDB)
+                {
+                    if (recipeValuePair.Value is IDictionary<string, object> recipe)
+                    {
+                        recipe["recipeID"] = recipeValuePair.Key;
+                        recipe["spellID"] = recipeValuePair.Key;
+                        Objects.MergeFromDB("recipeID", recipe);
+                        Objects.MergeFromDB("spellID", recipe);    // This is super dumb, but it fixes situations like /att spellid:101508. Since its key is a spellID, not a recipeID, it doesn't find it.
+                    }
+                    else
+                    {
+                        LogError("RecipeDB not in the correct format!");
+                        Log(CurrentFileName);
+                        Log(ToJSON(recipeValuePair.Value));
+                        Console.ReadLine();
+                    }
+                }
+            }
+            else if (data is List<object> recipes)
+            {
+                foreach (var o in recipes)
+                {
+                    if (o is IDictionary<string, object> recipe)
+                    {
+                        if (recipe.TryGetValue("recipeID", out object recipeID) || recipe.TryGetValue("spellID", out recipeID))
+                        {
+                            recipe["recipeID"] = recipeID;
+                            recipe["spellID"] = recipeID;
+                            Objects.MergeFromDB("recipeID", recipe);
+                            Objects.MergeFromDB("spellID", recipe);    // This is super dumb, but it fixes situations like /att spellid:101508. Since its key is a spellID, not a recipeID, it doesn't find it.
+                        }
+                    }
+                    else
+                    {
+                        LogError("RecipeDB not in the correct format!");
+                        Log(CurrentFileName);
+                        Log(ToJSON(o));
+                        Console.ReadLine();
+                    }
+                }
+            }
+            else
+            {
+                LogError("RecipeDB not in the correct format!");
+                Log(CurrentFileName);
+                Console.ReadLine();
             }
         }
     }

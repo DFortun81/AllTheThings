@@ -817,6 +817,25 @@ namespace ATT
             /// <param name="data">The data to merge into the item database.</param>
             public static void MergeFromObject(IDictionary<string, object> data, bool conditionalMerge = false)
             {
+                //if (DebugMode)
+                //{
+                //    var item = GetNull(data);
+                //    if (item == null)
+                //    {
+                //        LogDebugWarn($"Item merge data:", data);
+                //    }
+                //    else
+                //    {
+                //        var newData = new Dictionary<string, object>(data);
+                //        foreach(var kvp in item)
+                //        {
+                //            if (newData.TryGetValue(kvp.Key, out object val) || val != kvp.Value)
+                //            {
+                //                newData.
+                //            }
+                //        }
+                //    }
+                //}
                 // TODO: This is just Crieve trying to make it more clear where the source of this information is coming from.
                 // I'd like to (at some point) make all information from ItemDB always attribute and information from objects be limited to context.
                 Merge(data, conditionalMerge);

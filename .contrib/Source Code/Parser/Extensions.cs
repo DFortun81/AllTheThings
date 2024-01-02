@@ -494,5 +494,20 @@ namespace ATT
             }
             return copy.Count == 0;
         }
+
+        /// <summary>
+        /// Returns strings from a <paramref name="set"/> except those which match the <paramref name="predicate"/>
+        /// </summary>
+        public static IEnumerable<string> Except(this IEnumerable<string> set, Func<string, bool> predicate)
+        {
+            if (set == null)
+            {
+                yield break;
+            }
+
+            foreach (string str in set)
+                if (!predicate(str))
+                    yield return str;
+        }
     }
 }
