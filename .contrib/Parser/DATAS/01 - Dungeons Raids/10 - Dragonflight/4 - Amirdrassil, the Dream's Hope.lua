@@ -15,11 +15,15 @@ local FYRAKK = 2519;
 ------ EncounterToCRS ------
 local EncounterToCRS = {
 	[GNARLROOT] = { 209333 },	-- Gnarlroot
-	[IGIRA] = { 206689 },	-- Igira the Cruel <Zaqali Elder>
+	[IGIRA] = { 
+		206689, 	-- Igira the Cruel <Zaqali Elder>
+		200926, 	-- Igira the Cruel <Zaqali Elder>
+	},
 	[VOLCOROSS] = { 208478 },	-- Volcoross
 	[COUNCIL_OF_DREAMS] = {
 		208365,	-- Aerwynn <Council of Dreams>
 		208956,	-- Pip <Council of Dreams>
+		208367,	-- Pip <Council of Dreams>
 		208363,	-- Urctos <Council of Dreams>
 	},
 	[LARODAR] = { 208445 },	-- Larodar, Keeper of the Flame

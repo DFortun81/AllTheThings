@@ -30,10 +30,16 @@ local EncounterToCRS = {
 		199659,	-- Warlord Kagni
 	},
 	[RASHOK] = { 201320 },	-- Rashok, the Elder
-	[ZSKARN] = { 202637 },	-- Zskarn <the Vigilant Steward>
+	[ZSKARN] = { 
+		202637,	-- Zskarn <the Vigilant Steward>
+		202375, -- Zskarn <the Vigilant Steward>	
+	},
 	[MAGMORAX] = { 201579 },	-- Magmorax
 	[NELTHARION] = { 203133, 201668 },	-- Echo of Neltharion
-	[SARKARETH] = { 203284 },	-- Scalecommander Sarkareth
+	[SARKARETH] = { 
+		203284,		-- Scalecommander Sarkareth
+		201754,		-- Scalecommander Sarkareth
+	},
 };
 
 ------ EnconterToLoot ------
