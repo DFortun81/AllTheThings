@@ -3306,6 +3306,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 34.2, 48.2, HILLSBRAD_FOOTHILLS },
 					},
 					-- #elseif AFTER 10.1.7
+					["description"] = "This items only drops from Risen Hillsbrad Farmers, which becomes unavailable to Horde players after completing the Sludge Fields questline due to phasing.\nPhasing can be circumvented with Party Sync, using an Horde alt that haven't reached the quest progress trigger for this phasing, or using an Alliance alt.",
 					["cr"] = 47859,	-- Risen Hillsbrad Farmer
 					["coords"] = {
 						{ 37.4, 64.2, HILLSBRAD_FOOTHILLS },

@@ -2786,7 +2786,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 7.3.5" },
 					["cr"] = 676,	-- Venture Co. Surveyor
 					-- #if AFTER 7.3.5
-					["description"] = "Drops from Venture Co. Surveyors. Venture Co. Foremans, Venture Co. Tinkerers, and Venture Co. Strip Miners very often spawn in its place.",
+					["description"] = "Drops from Venture Co. Surveyors. Venture Co. Foremans, Venture Co. Tinkerers, and Venture Co. Strip Miners very often spawns in its place.",
 					["coords"] = {
 						{ 53.8, 77.2, NORTHERN_STRANGLETHORN },
 						{ 53.4, 70.4, NORTHERN_STRANGLETHORN },
