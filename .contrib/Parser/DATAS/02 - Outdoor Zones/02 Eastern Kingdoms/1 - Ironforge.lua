@@ -1022,6 +1022,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1645, {	-- The Tome of Divinity (1a/8)
 					["qg"] = 6179,	-- Tiza Battleforge
 					["sourceQuests"] = {
+						2997,	-- The Tome of Divinity [Dun Morogh]
 						2999,	-- The Tome of Divinity [Ironforge]
 						3000,	-- The Tome of Divinity [Stormwind City]
 					},
