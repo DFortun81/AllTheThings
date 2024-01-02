@@ -2255,10 +2255,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 70.4, 17.6, AZSHARA },
 					},
 					-- #elseif AFTER 10.1.7
-					["crs"] = {
-						37002,	-- Cliff Crasher
-						8761,	-- Mosshoof Courser
-					},
+					-- Zonedrop, can drop from any mob now
 					["coords"] = {
 						{ 48.4, 79.8, AZSHARA },
 						{ 34.4, 40.6, AZSHARA },
