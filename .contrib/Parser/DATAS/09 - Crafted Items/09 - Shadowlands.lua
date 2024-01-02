@@ -103,9 +103,7 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 			i(187741, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark IV
 			i(173384, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark of the Chained Isle
 			i(187742, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark of the First Ones
-			i(171441, {	-- Laestrite Skeleton Key
-				["spellID"] = 0,	-- it's absorbing the spellID from the recipe and showing up as collected/uncollected based on that
-			}),
+			i(171441),	-- Laestrite Skeleton Key
 			i(183942),	-- Novice Crafter's Mark
 			i(171436),	-- Porous Sharpening Stone
 			i(171438),	-- Porous Weightstone

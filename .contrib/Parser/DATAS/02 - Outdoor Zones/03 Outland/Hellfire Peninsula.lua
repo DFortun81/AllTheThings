@@ -70,7 +70,7 @@ local VENDOR_GEMS = {
 local FELANNIA_JOHAN_GROUPS = {};
 -- #if AFTER WRATH
 -- All of these were removed and the associated recipes are now available through trainers now.
-bubbleDown({ ["spellID"] = 0, ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS);
+bubbleDown({ ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS);
 -- #endif
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {

@@ -1234,9 +1234,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(9214, {	-- Grimoire of Inferno
 						["timeline"] = { "removed 4.0.1", "added 10.1.7" },	-- 07.09.2023 ATT DISCORD
 						["classes"] = { WARLOCK },
-						-- #if AFTER 4.0.1
-						["spellID"] = 0,
-						-- #else
+						-- #if BEFORE 4.0.1
 						["spellID"] = 1122,	-- Inferno
 						-- #endif
 					}),
@@ -1638,9 +1636,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					applyclassicphase(PHASE_SIX, i(24102, {	-- Manual of Eviscerate IX
 						["timeline"] = { "removed 4.0.1" },
 						["cr"] = 10318,	-- Blackhand Assassin <Blackhand Legion>
-						-- #if AFTER 4.0.1
-						["spellID"] = 0,	-- Removed completely.
-						-- #else
+						-- #if BEFORE 4.0.1
 						["spellID"] = 31016,	-- Eviscerate IX
 						["classes"] = { ROGUE },
 						["rank"] = 9,
@@ -1692,9 +1688,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						}),
 						applyclassicphase(PHASE_SIX, i(23320, {	-- Tablet of Flame Shock VI
 							["timeline"] = { "removed 4.0.1" },
-							-- #if AFTER 4.0.1
-							["spellID"] = 0,	-- Removed completely.
-							-- #else
+							-- #if BEFORE 4.0.1
 							["spellID"] = 29228,	-- Flame Shock VI
 							["classes"] = { SHAMAN },
 							["rank"] = 6,
@@ -1873,9 +1867,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["groups"] = {
 						applyclassicphase(PHASE_SIX, i(24101, {	-- Book of Ferocious Bite V
 							["timeline"] = { "removed 4.0.1" },
-							-- #if AFTER 4.0.1
-							["spellID"] = 0,	-- Removed completely.
-							-- #else
+							-- #if BEFORE 4.0.1
 							["spellID"] = 31018,	-- Ferocious Bite V
 							["classes"] = { DRUID },
 							["rank"] = 5,

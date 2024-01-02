@@ -92,8 +92,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["spellID"] = 42736,	-- Flask of Chromatic Wonder
 							["requireSkill"] = ALCHEMY,
 							["f"] = RECIPES,
-							-- #else
-							["spellID"] = 0,
 							-- #endif
 							["timeline"] = { "removed 5.0.1.20000" },
 						})),

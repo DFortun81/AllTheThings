@@ -580,7 +580,7 @@ root(ROOTS.NeverImplemented, {
 				i(204351),	-- Animated Crystal Shard
 				i(204349),	-- Bigger Wrench
 				i(204637),	-- Boulder Chunk
-				i(204325, {["spellID"] = 0 }),	-- Crude Key Fragment
+				i(204325),	-- Crude Key Fragment
 				i(204711),	-- Crystal Focus
 				i(204331),	-- Djaradin Pillar Shard
 				i(204347),	-- Pool Contaminant

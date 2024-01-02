@@ -25,7 +25,6 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, bubbleD
 			i(52494),	-- Design: Jeweler's Ruby Monocle
 			i(52495),	-- Design: Jeweler's Sapphire Monocle
 			i(52497, {	-- Design: Jeweler's Sapphire Monocle
-				["spellID"] = 0,	-- This is now available via 52495, need to delink the old plans from the recipe
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(52377),	-- Design: Keen Hessonite

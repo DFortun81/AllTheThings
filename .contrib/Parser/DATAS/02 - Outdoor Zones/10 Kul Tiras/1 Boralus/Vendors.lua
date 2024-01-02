@@ -303,8 +303,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(168025, {	-- Book of Schematics: Ub3r-Spanner
-						["sourceQuests"] = { 53949 },	-- The Ub3r-Spanner
-						["spellID"] = 0,
+						["sourceQuests"] = { 53949 },	-- The Ub3r-Spanner (A)
 						["f"] = MISC,
 					}),
 				},

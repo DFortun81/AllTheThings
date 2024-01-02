@@ -472,8 +472,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["timeline"] = REMOVED_WITH_WRATH,
 						-- #if BEFORE WRATH
 						["recipeID"] = 19801,	-- Tranquilizing Shot
-						-- #else
-						["spellID"] = 0,
 						-- #endif
 					}),
 				},
