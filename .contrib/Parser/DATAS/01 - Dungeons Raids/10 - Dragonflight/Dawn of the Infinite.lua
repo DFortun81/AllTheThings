@@ -261,6 +261,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(121512),	-- Stormborn Leggings				(NYI)
 
 			ig(134681),	-- Greenhorn's Legguards			(Removed)
+			ig(23665),	-- Leggings of Elemental Fury		(Removed)
 			ig(134764),	-- Overgrown Kilt					(Removed)
 			ig(134705),	-- Surging Chain Leggings			(Removed)
 
