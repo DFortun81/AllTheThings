@@ -770,6 +770,7 @@ if app.IsRetail then
 		if #DirtyQuests > 0 then
 			app.UpdateRawIDs("questID", DirtyQuests);
 		end
+		app:RegisterEvent("QUEST_LOG_UPDATE");
 		-- app.PrintDebugPrior("RefreshedQuestCompletionState")
 	end
 	RefreshAllQuestInfo = function()
@@ -777,6 +778,7 @@ if app.IsRetail then
 	end
 	RefreshQuestInfo = function(questID)
 		-- app.PrintDebug("RefreshQuestInfo",questID)
+		app:UnregisterEvent("QUEST_LOG_UPDATE");
 		if questID then
 			RefreshQuestCompletionState(questID);
 		else
@@ -873,6 +875,9 @@ else
 			wipe(app.searchCache);
 			app:RefreshDataQuietly("RefreshQuestInfo", true);
 		end
+	end
+	RefreshAllQuestInfo = function()
+		RefreshQuestInfo();
 	end
 
 	-- Classic Event Handlers
@@ -1563,8 +1568,7 @@ app.events.QUEST_ACCEPTED = function(questLogIndex, questID)
 	end
 end
 app.events.QUEST_LOG_UPDATE = function()
-	app:UnregisterEvent("QUEST_LOG_UPDATE");
-	RefreshQuestInfo();
+	RefreshAllQuestInfo();
 end
 app.events.QUEST_TURNED_IN = function(questID)
 	if questID then
