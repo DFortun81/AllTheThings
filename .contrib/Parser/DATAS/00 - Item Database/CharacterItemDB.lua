@@ -2,25 +2,24 @@
 local Items = ItemDBConditional;
 local Recipes = RecipeDB;
 local iq = function(itemID, questID, classID, raceID)
-	if itemID ~= 0 then
-		local item = {
-			type = "characterUnlockQuestID",
-		}
-		if questID then
-			item.questID = questID;
-		end
-		if classID then
-			item.classes = { classID };
-		end
-		if raceID then
-			item.races = { raceID };
-		end
-		Items[itemID] = item;
+	if not itemID or itemID < 1 then
+		error("'characterUnlockQuestID' without a valid itemID is not currently supported")
 	end
+	local item = {
+		type = "characterUnlockQuestID",
+		questID = questID and questID > 0 and questID or nil,
+	}
+	if classID then
+		item.classes = { classID };
+	end
+	if raceID then
+		item.races = { raceID };
+	end
+	Items[itemID] = item;
 end
 local is = function(itemID, spellID, classID, raceID)
 	local item = {
-		spellID = spellID,
+		spellID = spellID and spellID > 0 and spellID or nil,
 		type = "characterUnlockSpellID",
 	}
 	if classID then
@@ -29,7 +28,7 @@ local is = function(itemID, spellID, classID, raceID)
 	if raceID then
 		item.races = { raceID };
 	end
-	if itemID ~= 0 then
+	if itemID and itemID > 0 then
 		Items[itemID] = item;
 	else
 		Recipes[spellID] = item;
@@ -148,7 +147,7 @@ is(136971, 211010, SHAMAN);			-- Tome of Hex: Snake
 -----------------
 is(147580, 242155, HUNTER);			-- Tome of the Hybrid Beast
 -- NYI --
-is(147770, 0, HUNTER);				-- Tome of the PTR Beast
+is(147770, nil, HUNTER);				-- Tome of the PTR Beast
 
 -----------------
 -- PATCH 8.0.1 --
