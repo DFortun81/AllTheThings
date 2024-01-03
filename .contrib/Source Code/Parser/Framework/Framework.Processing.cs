@@ -812,6 +812,10 @@ namespace ATT
             Items.MergeInto(data);
             Objects.MergeSharedDataIntoObject(data);
 
+            // Currently, this merges in data from actual Recipes to other non-Recipe Items which are linked to the same SpellID
+            // i.e. /att i:200037 causing them to magically become Recipes!
+            // Luckily, we don't overwrite existing fields, so we can strip out fields based on Filter types afterwards...
+
             foreach (KeyValuePair<string, object> value in data)
             {
                 // capture the data for sourced groups (i.e. contains the field)
@@ -2374,6 +2378,22 @@ namespace ATT
 
                     data["type"] = "characterUnlockQuestID";
                     LogWarn($"Add to CharacterItemDB.lua or convert to proper Quest with 'provider': iq({itemID}, {questID});					-- {name}");
+                }
+
+                // Items with recipeID must have a requireSkill and proper filter, if a different filter is present, then clear the recipeID and requireSkill
+                if (data.TryGetValue("f", out long f))
+                {
+                    Objects.Filters filter = (Objects.Filters)f;
+                    if (filter != Objects.Filters.Recipe)
+                    {
+                        if (data.TryGetValue("recipeID", out long recipeID))
+                        {
+                            Items.TryGetName(data, out string name);
+                            LogDebug($"INFO: Removing invalid Recipe {recipeID} data from Item '{name}' due to Filter {filter}", data);
+                            data.Remove("requireSkill");
+                            data.Remove("recipeID");
+                        }
+                    }
                 }
             }
         }
