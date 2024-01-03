@@ -11645,20 +11645,28 @@ function app:CreateMiniListForGroup(group)
 	-- app.PrintDebug("Popout for",suffix,"showing?",showing)
 	if not popout then
 		popout = app:GetWindow(suffix);
+
+		-- clone/search initially so as to not let popout operations modify the source data
+		group = CreateObject(group);
+
 		-- make a search for this group if it is an item/currency/achievement and not already a container for things
 		if not group.g and not group.criteriaID and (group.itemID or group.currencyID or group.achievementID) then
 			local cmd = group.link or key .. ":" .. group[key];
 			app.SetSkipPurchases(2);
-			group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+			local groupSearch = GetCachedSearchResults(cmd, SearchForLink, cmd);
 			app.SetSkipPurchases(0);
-			if not group.key and key then
-				group.key = key;	-- Dunno what causes this in GetCachedSearchResults, but assigning this before calling to the new CreateObject function fixes currency popouts for currencies that aren't in the addon. /att currencyid:1533
-				-- CreateMiniListForGroup missing key response, will likely fail to Create a Class Instance!
-			end
+			-- Sometimes we want a specific Thing (/att i:147770)
+			-- but since it is keyed by a different ID (spell 242155)
+			-- this re-search replaces with an alternate item (147580)
+			-- so instead we should only merge properties from the re-search to ensure initial data isn't replaced due to alternate data matching
+			MergeProperties(group, groupSearch, true)
+			-- This isn't needed for the example noted anymore...
+			-- if not group.key and key then
+			-- 	group.key = key;	-- Dunno what causes this in GetCachedSearchResults, but assigning this before calling to the new CreateObject function fixes currency popouts for currencies that aren't in the addon. /att currencyid:1533
+			-- 	-- CreateMiniListForGroup missing key response, will likely fail to Create a Class Instance!
+			-- end
 		end
 
-		-- clone/search initially so as to not let popout operations modify the source data
-		group = CreateObject(group);
 		-- Insert the data group into the Raw Data table.
 		popout:SetData(group);
 
