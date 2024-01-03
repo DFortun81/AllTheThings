@@ -69,6 +69,12 @@ local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResult
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local TryColorizeName = app.TryColorizeName;
 
+-- Color Lib
+local GetProgressColor = app.Modules.Color.GetProgressColor;
+local Colorize = app.Modules.Color.Colorize;
+local ColorizeRGB = app.Modules.Color.ColorizeRGB;
+local HexToARGB = app.Modules.Color.HexToARGB;
+
 -- Print/Debug/Testing Functions
 app.print = function(...)
 	print(L["TITLE"], ...);
@@ -342,9 +348,6 @@ local function GetMoneyString(amount)
 		return formatted
 	end
 	return amount
-end
-app.GetPatchString = function(patch)
-	return math_floor(patch / 10000) .. "." .. (math_floor(patch / 100) % 10) .. "." .. (patch % 10)
 end
 
 do -- TradeSkill Functionality
@@ -936,13 +939,6 @@ function app:TakeScreenShot(type)
 		Screenshot();
 	end
 end
-
--- Color Lib
-local GetProgressColor = app.Modules.Color.GetProgressColor;
-local Colorize = app.Modules.Color.Colorize;
-local ColorizeRGB = app.Modules.Color.ColorizeRGB;
-local HexToARGB = app.Modules.Color.HexToARGB;
-
 local function GetNumberWithZeros(number, desiredLength)
 	if desiredLength > 0 then
 		local str = tostring(number);
@@ -1154,25 +1150,26 @@ local function GetProgressTextForTooltip(data, iconOnly)
 
 	return app.TableConcat(text, nil, "", " ");
 end
-local function GetAddedWithPatchString(awp, addedBack)
-		awp = tonumber(awp);
-	if awp then
-		local formatString = "ADDED";
-		if app.GameBuildVersion == awp then
-			formatString = "WAS_" .. formatString;
-		elseif app.GameBuildVersion > awp then
-			return nil;	-- Don't want to show this at the moment, let's add a configuration first!
-		end
-		if addedBack then formatString = formatString .. "_BACK"; end
-		return sformat(L[formatString .. "_WITH_PATCH_FORMAT"], app.GetPatchString(awp));
-	end
-end
-local function GetRemovedWithPatchString(rwp)
-	rwp = tonumber(rwp);
-	if rwp then
-		return sformat(L["REMOVED_WITH_PATCH_FORMAT"], app.GetPatchString(rwp));
-	end
-end
+-- replaced by Additional Information toggles
+-- local function GetAddedWithPatchString(awp, addedBack)
+-- 		awp = tonumber(awp);
+-- 	if awp then
+-- 		local formatString = "ADDED";
+-- 		if app.GameBuildVersion == awp then
+-- 			formatString = "WAS_" .. formatString;
+-- 		elseif app.GameBuildVersion > awp then
+-- 			return nil;	-- Don't want to show this at the moment, let's add a configuration first!
+-- 		end
+-- 		if addedBack then formatString = formatString .. "_BACK"; end
+-- 		return sformat(L[formatString .. "_WITH_PATCH_FORMAT"], app.GetPatchString(awp));
+-- 	end
+-- end
+-- local function GetRemovedWithPatchString(rwp)
+-- 	rwp = tonumber(rwp);
+-- 	if rwp then
+-- 		return sformat(L["REMOVED_WITH_PATCH_FORMAT"], app.GetPatchString(rwp));
+-- 	end
+-- end
 app.GetProgressText = GetProgressTextDefault;
 app.GetProgressTextDefault = GetProgressTextDefault;
 app.GetProgressTextRemaining = GetProgressTextRemaining;
@@ -3440,6 +3437,10 @@ end	-- Symlink Lib
 -- Search Results Lib
 local GetCachedSearchResults;
 do
+local function GetPatchString(patch, color)
+	patch = tonumber(patch)
+	return patch and Colorize(math_floor(patch / 10000) .. "." .. (math_floor(patch / 100) % 10) .. "." .. (patch % 10), color)
+end
 local conversions = app.Settings.AdditionalIDValueConversions
 -- add a value conversion for sourceID to include a checkmark/x
 conversions.sourceID = function(sourceID)
@@ -3454,13 +3455,15 @@ conversions.questID = function(questID, group)
 	end
 	return questID
 end
+conversions.awp = function(val) return GetPatchString(val, app.Colors.AddedWithPatch) end
+conversions.rwp = function(val) return GetPatchString(val, app.Colors.RemovedWithPatch) end
 app.AddAdditionalIDsTooltipLines = function(infoOrTooltip, group)
 	local val, convfunc
-	local idLocales, conv = app.Settings.AdditionalIDs, app.Settings.AdditionalIDValueConversions
+	local idLocales, conv, recur = app.Settings.AdditionalIDs, app.Settings.AdditionalIDValueConversions, app.Settings.AdditionalIDRecursive
 	local isTooltip = infoOrTooltip.AddLine and true
 	if isTooltip then
 		for _,id in ipairs(app.Settings.ActiveAdditionalIDs) do
-			val = group[id]
+			val = group[id] or recur[id] and GetRelativeValue(group, id)
 			if val then
 				convfunc = conv[id]
 				infoOrTooltip:AddDoubleLine(idLocales[id], convfunc and convfunc(val, group) or val)
@@ -3468,7 +3471,7 @@ app.AddAdditionalIDsTooltipLines = function(infoOrTooltip, group)
 		end
 	else
 		for _,id in ipairs(app.Settings.ActiveAdditionalIDs) do
-			val = group[id]
+			val = group[id] or recur[id] and GetRelativeValue(group, id)
 			if val then
 				convfunc = conv[id]
 				tinsert(infoOrTooltip, { left = idLocales[id], right = convfunc and convfunc(val, group) or val });
@@ -4268,20 +4271,21 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 			end
 		end
 
-		local awp, rwp = GetRelativeValue(group, "awp"), group.rwp;
-		local awpGreaterThanRWP = true;
-		if awp and ((rwp or (group.u and group.u < 3)) or awp >= app.GameBuildVersion) then
-			awpGreaterThanRWP = rwp and awp >= rwp;
-			local awpString = GetAddedWithPatchString(awp, awpGreaterThanRWP);
-			if awpString then
-				tinsert(info, 1, { left = awpString, wrap = true, color = app.Colors.AddedWithPatch });
-			else
-				awpGreaterThanRWP = true;
-			end
-		end
-		if rwp then
-			tinsert(info, awpGreaterThanRWP and 1 or 2, { left = GetRemovedWithPatchString(rwp), wrap = true, color = app.Colors.RemovedWithPatch });
-		end
+		-- replaced by Additional Information toggles
+		-- local awp, rwp = GetRelativeValue(group, "awp"), group.rwp;
+		-- local awpGreaterThanRWP = true;
+		-- if awp and ((rwp or (group.u and group.u < 3)) or awp >= app.GameBuildVersion) then
+		-- 	awpGreaterThanRWP = rwp and awp >= rwp;
+		-- 	local awpString = GetAddedWithPatchString(awp, awpGreaterThanRWP);
+		-- 	if awpString then
+		-- 		tinsert(info, 1, { left = awpString, wrap = true, color = app.Colors.AddedWithPatch });
+		-- 	else
+		-- 		awpGreaterThanRWP = true;
+		-- 	end
+		-- end
+		-- if rwp then
+		-- 	tinsert(info, awpGreaterThanRWP and 1 or 2, { left = GetRemovedWithPatchString(rwp), wrap = true, color = app.Colors.RemovedWithPatch });
+		-- end
 
 		if group.u and (not group.crs or group.itemID or group.sourceID) then
 			-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
@@ -13274,18 +13278,19 @@ RowOnEnter = function (self)
 				end
 			end
 
-			local awp, rwp = GetRelativeValue(reference, "awp"), reference.rwp;
-			if rwp then
-				local _,r,g,b = HexToARGB(app.Colors.RemovedWithPatch);
-				GameTooltip:AddLine(GetRemovedWithPatchString(rwp), r, g, b, 1);
-			end
-			if awp and ((rwp or (reference.u and reference.u < 3)) or awp >= app.GameBuildVersion) then
-				local awpString = GetAddedWithPatchString(awp, rwp and awp > rwp);
-				if awpString then
-					local _,r,g,b = HexToARGB(app.Colors.AddedWithPatch);
-					GameTooltip:AddLine(awpString, r, g, b, 1);
-				end
-			end
+			-- replaced by Additional Information toggles
+			-- local awp, rwp = GetRelativeValue(reference, "awp"), reference.rwp;
+			-- if rwp then
+			-- 	local _,r,g,b = HexToARGB(app.Colors.RemovedWithPatch);
+			-- 	GameTooltip:AddLine(GetRemovedWithPatchString(rwp), r, g, b, 1);
+			-- end
+			-- if awp and ((rwp or (reference.u and reference.u < 3)) or awp >= app.GameBuildVersion) then
+			-- 	local awpString = GetAddedWithPatchString(awp, rwp and awp > rwp);
+			-- 	if awpString then
+			-- 		local _,r,g,b = HexToARGB(app.Colors.AddedWithPatch);
+			-- 		GameTooltip:AddLine(awpString, r, g, b, 1);
+			-- 	end
+			-- end
 			-- an item used for a faction which is repeatable
 			if reference.itemID and reference.factionID and reference.repeatable then
 				GameTooltip:AddLine(L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(reference.factionID)) or ("Faction #" .. tostring(reference.factionID))) .. "'", 0.4, 0.8, 1, 1, true);

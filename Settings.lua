@@ -3704,7 +3704,12 @@ settings.AdditionalIDValueConversions = {
 	end,
 	b = function(val)
 		return (val == 1 and "BoP") or (val == 2 and "BoA") or nil
-	end
+	end,
+}
+-- Some additional data we want to show the field value if any recursive parent includes the field
+settings.AdditionalIDRecursive = {
+	awp = true,
+	rwp = true,
 }
 local last = nil
 local split1 = math.ceil(#idsArray / 3)
