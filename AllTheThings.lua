@@ -3972,7 +3972,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
 		local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
 		local FilterUnobtainable, FilterCharacter, FirstParent
-			= app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.RecursiveFirstParentWithField
+			= app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
 		local abbrevs = L["ABBREVIATIONS"];
 		for _,j in ipairs(group.g or group) do
 			parent = j.parent;
@@ -4289,7 +4289,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 
 		if group.u and (not group.crs or group.itemID or group.sourceID) then
 			-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
-			if group.u == 1 and app.RecursiveFirstParentWithFieldValue(group, "_missing", true) then
+			if group.u == 1 and app.GetRelativeValue(group, "_missing") then
 				tinsert(info, { left = L["UNSORTED_DESC"], wrap = true, color = app.Colors.ChatLinkError });
 			else
 				tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][group.u][2], wrap = true });
@@ -4341,7 +4341,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				local left, right;
 				tinsert(info, { left = L["CONTAINS"] });
 				local item, entry;
-				local RecursiveParentField, SearchForObject = app.RecursiveFirstParentWithFieldValue, app.SearchForObject;
+				local RecursiveParentField, SearchForObject = app.GetRelativeValue, app.SearchForObject;
 				for i=1,#entries do
 					item = entries[i];
 					entry = item.group;
@@ -4895,7 +4895,7 @@ end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
 app.FillGroups = function(group)
 	-- Check if this group is inside a Window or not
-	local groupWindow = app.RecursiveFirstDirectParentWithField(group, "window");
+	local groupWindow = app.GetRelativeRawWithField(group, "window");
 	-- Setup the FillData for this fill operation
 	local FillData = {
 		Included = {},
@@ -11202,7 +11202,7 @@ local function DirectGroupUpdate(group, got)
 		AdjustParentProgress(group, progChange, totalChange);
 	end
 	-- After completing the Direct Update, setup a soft-update on the affected Window, if any
-	local window = app.RecursiveFirstDirectParentWithField(group, "window");
+	local window = app.GetRelativeRawWithField(group, "window");
 	if window then
 		-- app.PrintDebug("DGU:Update",group.hash,">",window.Suffix,window.Update,window.isQuestChain)
 		DelayedCallback(window.Update, DGUDelay, window, window.isQuestChain, got);
@@ -11211,7 +11211,7 @@ end
 app.DirectGroupUpdate = DirectGroupUpdate;
 -- Trigger a soft-Update of the window containing the specific group, regardless of Filtering/Visibility of the group
 local function DirectGroupRefresh(group)
-	local window = app.RecursiveFirstDirectParentWithField(group, "window");
+	local window = app.GetRelativeRawWithField(group, "window");
 	if window then
 		-- app.PrintDebug("DGR:Refresh",group.hash,">",window.Suffix,window.Refresh)
 		DelayedCallback(window.Update, DGUDelay, window);

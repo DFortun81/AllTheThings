@@ -659,31 +659,6 @@ local function RecursiveDefaultCharacterRequirementsFilter(group)
 end
 app.RecursiveDefaultCharacterRequirementsFilter = RecursiveDefaultCharacterRequirementsFilter;
 
--- TODO: These are not related to Filtering... move to base.lua or other
--- Returns the first encountered group tracing upwards in parent hierarchy which has a value for the provided field.
--- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
-local function RecursiveFirstParentWithField(group, field, followSource)
-	if group then
-		return (group[field] and group) or RecursiveFirstParentWithField(followSource and group.sourceParent or group.parent, field);
-	end
-end
-app.RecursiveFirstParentWithField = RecursiveFirstParentWithField;
--- Returns the first encountered group's value tracing upwards in parent hierarchy which has a value for the provided field.
--- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
-local function RecursiveFirstParentWithFieldValue(group, field, followSource)
-	if group then
-		return group[field] or RecursiveFirstParentWithFieldValue(followSource and group.sourceParent or group.parent, field);
-	end
-end
-app.RecursiveFirstParentWithFieldValue = RecursiveFirstParentWithFieldValue;
--- Returns the first encountered group tracing upwards in direct parent hierarchy which has a value for the provided field
-local function RecursiveFirstDirectParentWithField(group, field)
-	if group then
-		return group[field] or RecursiveFirstDirectParentWithField(rawget(group, "parent"), field);
-	end
-end
-app.RecursiveFirstDirectParentWithField = RecursiveFirstDirectParentWithField;
-
 -- Caching Helpers
 local function CacheSettingsData()
 	CollectibleHeirlooms = app.Settings.Collectibles.Heirlooms;

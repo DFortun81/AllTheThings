@@ -3,6 +3,7 @@
 --------------------------------------------------------------------------------
 --            Copyright 2017-2023 Dylan Fortune (Crieve-Sargeras)             --
 --------------------------------------------------------------------------------
+local rawget, ipairs, pairs, tinsert, setmetatable = rawget, ipairs, pairs, tinsert, setmetatable
 -- This is a hidden frame that intercepts all of the event notifications that we have registered for.
 local appName, app = ...;
 app.EmptyTable = setmetatable({}, { __newindex = function() end });
@@ -122,11 +123,28 @@ local function GetRelativeField(group, field, value)
 		return group[field] == value or GetRelativeField(group.sourceParent or group.parent, field, value);
 	end
 end
+-- Returns the first encountered group's value tracing upwards in parent hierarchy which has a value for the provided field
+-- Prioritizes sourceParent before parent
 local function GetRelativeValue(group, field)
 	if group then
 		return group[field] or GetRelativeValue(group.sourceParent or group.parent, field);
 	end
 end
+-- Returns the first encountered group tracing upwards in parent hierarchy which has a value for the provided field.
+-- Specify 'followSource' to prioritize the Source Parent of a group over the direct Parent
+local function GetRelativeGroup(group, field, followSource)
+	if group then
+		return (group[field] and group) or GetRelativeGroup(followSource and group.sourceParent or group.parent, field);
+	end
+end
+app.GetRelativeGroup = GetRelativeGroup;
+-- Returns the first encountered group tracing upwards in direct parent hierarchy which has a value for the provided field
+local function GetRelativeRawWithField(group, field)
+	if group then
+		return group[field] or GetRelativeRawWithField(rawget(group, "parent"), field);
+	end
+end
+app.GetRelativeRawWithField = GetRelativeRawWithField;
 app.AssignChildren = AssignChildren;
 app.AssignFieldValue = AssignFieldValue;
 app.CloneArray = CloneArray;
