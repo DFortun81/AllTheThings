@@ -30,13 +30,13 @@ local EncounterToCRS = {
 		199659,	-- Warlord Kagni
 	},
 	[RASHOK] = { 201320 },	-- Rashok, the Elder
-	[ZSKARN] = { 
+	[ZSKARN] = {
 		202637,	-- Zskarn <the Vigilant Steward>
-		202375, -- Zskarn <the Vigilant Steward>	
+		202375, -- Zskarn <the Vigilant Steward>
 	},
 	[MAGMORAX] = { 201579 },	-- Magmorax
 	[NELTHARION] = { 203133, 201668 },	-- Echo of Neltharion
-	[SARKARETH] = { 
+	[SARKARETH] = {
 		203284,		-- Scalecommander Sarkareth
 		201754,		-- Scalecommander Sarkareth
 	},
@@ -271,12 +271,6 @@ local ZoneDropLoot = {
 local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, ZoneDropLoot)
 local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
-
-InstanceHelper.UpgradeMapping = {
-	[LFR_RAID] = 3,
-	[NORMAL_RAID] = 5,
-	[HEROIC_RAID] = 6,
-}
 
 root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	inst(1208, {	-- Aberrus, the Shadowed Crucible
@@ -543,7 +537,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					i(206955),	-- Highland Drake: Embodiment of the Hellforged (DM!)
 				}),
 			}),
-			Difficulty(LFR_RAID).AddGroupsWithUpgrades({
+			Difficulty(LFR_RAID).AddGroups({
 				ZoneDrops({
 					i(204075, {	-- Whelping's Shadowflame Crest Fragment
 						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
@@ -634,7 +628,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 					ach(17877),	-- We'll Never See That Again, Surely
 				}),
 			}),
-			Difficulty(NORMAL_RAID).AddGroupsWithUpgrades({
+			Difficulty(NORMAL_RAID).AddGroups({
 				n(QUESTS, {
 					q(76083, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (N)
 						["provider"] = { "n", 201574 },	-- Wrathion
@@ -676,7 +670,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 				BossOnly(NELTHARION),
 				BossOnly(SARKARETH),
 			}),
-			Difficulty(HEROIC_RAID).AddGroupsWithUpgrades({
+			Difficulty(HEROIC_RAID).AddGroups({
 				n(QUESTS, {
 					q(76085, {	-- Aberrus, the Shadowed Crucible: Echoes of the Earth-Warder (H)
 						["provider"] = { "n", 201574 },	-- Wrathion

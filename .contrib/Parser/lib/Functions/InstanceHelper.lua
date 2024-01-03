@@ -37,7 +37,7 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 	end
 	local function WithUpgrades(groups)
 		if not groups then return end
-		if not helper.UpgradeMapping then error("To use 'AddGroupsWithUpgrades', define InstanceHelper.UpgradeMapping = { [DifficultyID] = ModID.BonusID }") end
+		if not helper.UpgradeMapping then error("To use 'WithUpgrades', define InstanceHelper.UpgradeMapping = { [DifficultyID] = ModID.BonusID }") end
 		local up = helper.UpgradeMapping[CurrentDifficultyID]
 		if not up then error("Missing 'UpgradeMapping' for ",CurrentDifficultyID) end
 		for _,o in ipairs(groups) do
@@ -57,9 +57,9 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 	end
 	local function ZoneDrops(groups)
 		if groups then
-			return n(ZONE_DROPS, { groups = appendGroups(zonedrops, groups)})
+			return n(ZONE_DROPS, { groups = appendGroups(clone(zonedrops), groups)})
 		end
-		return n(ZONE_DROPS, zonedrops)
+		return n(ZONE_DROPS, clone(zonedrops))
 	end
 	local helperMeta = {
 		__index = function(t, key)
