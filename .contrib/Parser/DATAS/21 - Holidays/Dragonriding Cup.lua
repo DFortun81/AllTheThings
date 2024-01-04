@@ -80,7 +80,7 @@ NORTHREND_CUP_HEADER = createHeader({
 OUTLAND_CUP_HEADER = createHeader({
 	readable = "Outland Cup",
 	constant = "OUTLAND_CUP_HEADER",
-	icon = [[~_.asset("Holiday_DraeCup")]],
+	icon = [[~_.asset("Holiday_OutCup")]],
 	eventID = EVENTS.OUTLAND_CUP,
 	--[[
 	eventSchedule = {

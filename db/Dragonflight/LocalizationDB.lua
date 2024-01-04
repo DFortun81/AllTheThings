@@ -882,7 +882,7 @@ localize(L.HEADER_ICONS, {
 	[-1000208] = _.asset("Holiday_RaceCup"),
 	[-1000210] = _.asset("Holiday_EastCup"),
 	[-1000211] = _.asset("Holiday_KalCup"),
-	[-1000213] = _.asset("Holiday_DraeCup"),
+	[-1000213] = _.asset("Holiday_OutCup"),
 	[-1000215] = _.asset("Holiday_winter_veil"),
 	[-1000216] = _.asset("Holiday_Tshirt"),
 	[-1000217] = _.asset("Holiday_hallows_end"),
