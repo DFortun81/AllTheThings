@@ -432,9 +432,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							["provider"] = { "n", 208800 },	-- Travard
 							["coord"] = { 60.4, 58.7, THALDRASZUS },
 							["groups"] = {
-								i(208550),	-- Dragon Isles Drakes: White Scales [Tyr Part 4]
+								i(208550),	-- Dragon Isles Drakes: White Scales (DM!)
 								ach(18958, {	-- Of the Tyr's Guard
-									title(516),	-- Of the Tyr's Guard
+									title(516),	-- <Name> Of the Tyr's Guard
 								}),
 							},
 						}),
