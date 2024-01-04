@@ -191,7 +191,7 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 	})),
 })));
 
-root(ROOTS.PVP, pvp(n(-10058, {	-- World
+root(ROOTS.HiddenQuestTriggers, {
 	tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		q(72376),	-- looting first War Crate of the day
 		q(72377, {	-- looting first War Crate of the day
@@ -203,4 +203,4 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 			["isDaily"] = true,
 		}),
 	})),
-})));
+});
