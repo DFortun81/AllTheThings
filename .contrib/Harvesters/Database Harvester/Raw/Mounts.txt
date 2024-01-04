@@ -301,6 +301,9 @@
 34769@@@Thalassian Warhorse
 55164@@@Swift Spectral Gryphon
 55531@@@Mechano-Hog
+3.4.3.52237
+416158@@@Nightmarish Emerald Drake
+423869@@@Avatar of Flame
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild

@@ -212,6 +212,10 @@
 196534@@@Hoplet
 3.4.3.51470
 213605@@@Arfus
+3.4.3.52237
+181485@@@Flurky
+200900@@@Glub
+211025@@@Lil' Wrathion
 5.0.3.15882
 7395@@@Undercity Cockroach
 14143@@@Ar'lia
