@@ -27,7 +27,13 @@ local function SavedAsQuest(t)
 	return IsQuestFlaggedCompleted(t.questID)
 end
 local function SavedAsSpell(t)
-	return IsSpellKnownHelper(t.spellID)
+	local spellID = t.spellID;
+	if app.CurrentCharacter.Spells[spellID] then return true; end
+	if IsSpellKnownHelper(spellID) then
+		app.CurrentCharacter.Spells[spellID] = 1;
+		AccountWideData.Spells[spellID] = 1;
+		return true;
+	end
 end
 
 api.OnStartup = function(ATTAccountWideData)
