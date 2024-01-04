@@ -91,6 +91,7 @@ _.CategoryNames = {
 	[1010] = "Boots",
 	[1011] = "Cloaks",
 	[1012] = "Nets",
+	[1022] = "Lures",
 	[1026] = "Inks",
 	[1235] = "Follower Equipment",
 	[1242] = "Conversions",
@@ -182,6 +183,7 @@ _.CategoryIcons = {
 	[1009] = "Interface/Icons/inv_pants_06",
 	[1010] = "Interface/Icons/INV_Boots_01",
 	[1011] = "Interface/Icons/INV_Misc_Cape_18",
+	[1022] = "Interface/Icons/INV_Fishing_Lure_Worm",
 	[1026] = "Interface/Icons/inv_inscription_inkpurple01",
 	[1298] = "Interface/Icons/INV_Potion_41",
 	[1300] = "Interface/Icons/Spell_Fire_Volcano",
@@ -233,6 +235,7 @@ _.HeaderConstants = {
 	MARCH_OF_THE_TADPOLES_HEADER = -1000222,
 	MIDSUMMER_FIRE_FESTIVAL_HEADER = -1000223,
 	NOBLEGARDEN_HEADER = -1000224,
+	NORTHREND_CUP_HEADER = -1000212,
 	OUTLAND_CUP_HEADER = -1000213,
 	PET_BATTLE = -1000029,
 	PILGRIMS_BOUNTY_HEADER = -1000225,
@@ -406,6 +409,7 @@ localize(L.HEADER_NAMES, {
 	[-1000146] = "DPS",
 	[-1000147] = "Healers",
 	[-1000148] = "Tanks",
+	[-1000149] = MONTH_JANUARY,
 	[-1000150] = MONTH_FEBRUARY,
 	[-1000151] = MONTH_MARCH,
 	[-1000152] = MONTH_APRIL,
@@ -458,6 +462,7 @@ localize(L.HEADER_NAMES, {
 	[-1000208] = "Dragonriding Cup",
 	[-1000210] = "Eastern Kingdoms Cup",
 	[-1000211] = "Kalimdor Cup",
+	[-1000212] = "Northrend Cup",
 	[-1000213] = "Outland Cup",
 	[-1000215] = GetSpellInfo(21953),
 	[-1000216] = "Free T-Shirt Day",
@@ -593,6 +598,7 @@ localize(L.HEADER_NAMES, {
 	[-1000355] = "Dragonriding Racing",
 	[-1000356] = GetSpellInfo(388945),
 	[-1000357] = "Dream Infusion",
+	[-1000358] = GetSpellInfo(419242),
 	[-1000359] = "Dreamsurge",
 	[-1000360] = "Secrets of Azeroth",
 	[-1000361] = "Community Clues",
@@ -603,6 +609,9 @@ localize(L.HEADER_NAMES, {
 	[-1000366] = "A Greedy Emissary",
 	[-1000367] = QUEST_REWARDS,
 	[-1000368] = GetDifficultyInfo(24),
+	[-1000369] = "Year 2024",
+	[-1000373] = "New Character",
+	[-1000374] = "Allied Races",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -823,6 +832,7 @@ localize(L.HEADER_ICONS, {
 	[-1000146] = "Interface/Icons/Spell_fire_firebolt02",
 	[-1000147] = "Interface/Icons/spell_nature_healingwavegreater",
 	[-1000148] = "Interface/Icons/ability_warrior_shieldwall",
+	[-1000149] = "Interface/Icons/inv_ammo_snowball",
 	[-1000150] = _.asset("Holiday_Lunar"),
 	[-1000151] = "Interface/Icons/ability_ardenweald_paladin_spring",
 	[-1000152] = _.asset("Holiday_noblegarden"),
@@ -875,6 +885,7 @@ localize(L.HEADER_ICONS, {
 	[-1000208] = _.asset("Holiday_RaceCup"),
 	[-1000210] = _.asset("Holiday_EastCup"),
 	[-1000211] = _.asset("Holiday_KalCup"),
+	[-1000212] = _.asset("Holiday_NorthCup"),
 	[-1000213] = _.asset("Holiday_OutCup"),
 	[-1000215] = _.asset("Holiday_winter_veil"),
 	[-1000216] = _.asset("Holiday_Tshirt"),
@@ -1008,6 +1019,7 @@ localize(L.HEADER_ICONS, {
 	[-1000355] = "Interface/Icons/ability_evoker_masterygiantkiller",
 	[-1000356] = "Interface/Icons/inv_artifact_dragonscales",
 	[-1000357] = "1394953",
+	[-1000358] = "Interface/Icons/trade_archaeology",
 	[-1000359] = "Interface/Icons/Ability_xavius_dreamsimulacrum",
 	[-1000360] = _.asset("Holiday_SecretsAz"),
 	[-1000361] = _.asset("Holiday_SecretsAz"),
@@ -1018,6 +1030,9 @@ localize(L.HEADER_ICONS, {
 	[-1000366] = "Interface/Icons/inv_misc_bag_horadricsatchel",
 	[-1000367] = _.asset("Interface_Rewards"),
 	[-1000368] = _.asset("Difficulty_Timewalking"),
+	[-1000369] = "Interface/Icons/inv_misc_missilesmall_green",
+	[-1000373] = "1530081",
+	[-1000374] = "Interface/Icons/FactionChange",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
@@ -1027,6 +1042,7 @@ localize(L.HEADER_EVENTS, {
 	[-1000208] = 133701,
 	[-1000210] = 1400,
 	[-1000211] = 1395,
+	[-1000212] = 1429,
 	[-1000213] = 1407,
 	[-1000215] = 141,
 	[-1000216] = 1053,
@@ -1092,9 +1108,9 @@ _.Modules.Events.SetEventInformation(514, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=21,["weekday"]=6,["year"]=2014},{["hour"]=0,["minute"]=0,["month"]=1,["monthDay"]=5,["weekday"]=2,["year"]=2015})
 });
 _.Modules.Events.SetEventInformation(590, {
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=4,["year"]=2022},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=4,["year"]=2022}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=5,["year"]=2023},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=5,["year"]=2023}),
-	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=7,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=7,["year"]=2024})
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=7,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=7,["year"]=2024}),
+	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=1,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=1,["year"]=2025})
 });
 
 -- Filter Database Module
@@ -5805,6 +5821,7 @@ _.ObjectNames = {
 	[405585] = "Rumble Foil Bag",
 	[405586] = "Rumble Foil Bag",
 	[405587] = "Rumble Foil Bag",
+	[405593] = "Azerothian Archives!",
 	[405958] = "Sealed Kaldorei Scroll",
 	[407691] = "Dusty Red Pellets",
 	[407692] = "Igneous Flux",
@@ -5901,6 +5918,17 @@ _.ObjectNames = {
 	[413784] = "Self-Baking Herb Based Cookies",
 	[413787] = "The Tragedy of Erinethria",
 	[414169] = "Mysterious Seeds",
+	[421179] = "Kaldorei Bedroll",
+	[421180] = "Kaldorei Backpack",
+	[421181] = "Kaldorei Dagger",
+	[421182] = "Kaldorei Horn",
+	[421183] = "Kaldorei Bag",
+	[421184] = "Kaldorei Shield",
+	[421185] = "Kaldorei Spear",
+	[421186] = "Kaldorei Spyglass",
+	[421338] = "Kaldorei Bag",
+	[421339] = "Kaldorei Horn",
+	[421555] = "Kaldorei Moon Bow",
 	[9000000] = "Wind Sculpted Stone",
 	[9000001] = "Ancient Incense Brazier",
 	[9000002] = "Ancient Incense Brazier",
@@ -10367,6 +10395,7 @@ _.ObjectModels = {
 	[405585] = 4070769,
 	[405586] = 4070769,
 	[405587] = 4070769,
+	[405593] = 4317329,
 	[405958] = 1124091,
 	[407691] = 84494,
 	[407692] = 77402,
@@ -10460,11 +10489,16 @@ _.ObjectModels = {
 	[413774] = 1124086,
 	[413784] = 200904,
 	[414169] = 902296,
+	[421179] = 4756260,
+	[421555] = 2133380,
 }
 
 -- Supported Locales
 local simplifiedLocale = string.sub(GetLocale(),1,2);
 if simplifiedLocale == "de" then
+localize(_.CategoryNames, {
+	[1022] = "Köder",
+});
 localize(L.HEADER_NAMES, {
 	[-1000008] = "Klassenprozess",
 	[-1000010] = "Gemeinsame Bossbeute",
@@ -10540,6 +10574,8 @@ localize(L.HEADER_NAMES, {
 	[-1000352] = "Klan Aylaag",
 	[-1000365] = "20. Geburtstag von Diablo",
 	[-1000366] = "Ein gieriger Abgesandter",
+	[-1000373] = "Neuer Charakter",
+	[-1000374] = "Verbündete Völker",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -13887,6 +13923,9 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "es" then
+localize(_.CategoryNames, {
+	[1022] = "Señuelos",
+});
 localize(L.HEADER_NAMES, {
 	[-1000008] = "Prueba de Clase",
 	[-1000087] = "Asaltos de las Curias",
@@ -13942,6 +13981,8 @@ localize(L.HEADER_NAMES, {
 	[-1000351] = "Espejo roto",
 	[-1000352] = "Clan Aylaag",
 	[-1000366] = "Un Emisario Codicioso",
+	[-1000373] = "Nueva personaje",
+	[-1000374] = "Razas aliadas",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -17198,6 +17239,9 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "fr" then
+localize(_.CategoryNames, {
+	[1022] = "Appâts",
+});
 localize(L.HEADER_NAMES, {
 	[-1000000] = "Est",
 	[-1000001] = "Nord",
@@ -17302,6 +17346,8 @@ localize(L.HEADER_NAMES, {
 	[-1000362] = "Tour du monde d’Uuna",
 	[-1000365] = "20e anniversaire de Diablo",
 	[-1000366] = "Émissaire cupide",
+	[-1000373] = "Nouveau personnage",
+	[-1000374] = "Races alliées",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon.",
@@ -20634,6 +20680,9 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "it" then
+localize(_.CategoryNames, {
+	[1022] = "Esche",
+});
 localize(L.HEADER_NAMES, {
 	[-1000008] = "Prova di Classe",
 	[-1000087] = "Assalti delle Congreghe",
@@ -20677,6 +20726,8 @@ localize(L.HEADER_NAMES, {
 	[-1000351] = "Specchio Rotto",
 	[-1000352] = "Clan Aylaag",
 	[-1000366] = "Un emissario avido",
+	[-1000373] = "Nuovo personaggio",
+	[-1000374] = "Razze Alleate",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -23802,6 +23853,7 @@ localize(_.CategoryNames, {
 	[1009] = "다리",
 	[1010] = "발",
 	[1011] = "등",
+	[1022] = "미끼",
 	[1296] = "전투 물약",
 	[1298] = "영약",
 	[1299] = "선택적 시약",
@@ -23852,6 +23904,8 @@ localize(L.HEADER_NAMES, {
 	[-1000351] = "깨진 거울",
 	[-1000352] = "아일라그 부족",
 	[-1000366] = "탐욕의 사절",
+	[-1000373] = "새로운 캐릭터",
+	[-1000374] = "동맹 종족",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -26881,6 +26935,9 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "pt" then
+localize(_.CategoryNames, {
+	[1022] = "Iscas",
+});
 localize(L.HEADER_NAMES, {
 	[-1000008] = "Teste de Classe",
 	[-1000087] = "Ataques Pactos",
@@ -26936,6 +26993,8 @@ localize(L.HEADER_NAMES, {
 	[-1000351] = "Espelho Quebrado",
 	[-1000352] = "Clã Aylaag",
 	[-1000366] = "Um Emissário Ganancioso",
+	[-1000373] = "Novo personagem",
+	[-1000374] = "Raças Aliadas",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -30172,6 +30231,9 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "ru" then
+localize(_.CategoryNames, {
+	[1022] = "Наживки",
+});
 localize(L.HEADER_NAMES, {
 	[-1000000] = "Восток",
 	[-1000001] = "Север",
@@ -30252,6 +30314,7 @@ localize(L.HEADER_NAMES, {
 	[-1000208] = "Кубок полётов на драконе",
 	[-1000210] = "Кубок Восточных королевств",
 	[-1000211] = "Кубок Калимдора",
+	[-1000212] = "Кубок Нордскола",
 	[-1000213] = "Кубок Запределья",
 	[-1000216] = "День бесплатных футболок",
 	[-1000218] = "Неделя урожая",
@@ -30329,6 +30392,8 @@ localize(L.HEADER_NAMES, {
 	[-1000364] = "События Diablo",
 	[-1000365] = "20-ая годовщина Diablo",
 	[-1000366] = "Алчный посланец",
+	[-1000373] = "Новый персонаж",
+	[-1000374] = "Союзные расы",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Эти предметы можно получить в награду Заданий эмиссаров или из припасов.",
@@ -33706,6 +33771,9 @@ localize(_.ObjectNames, {
 });
 end
 if simplifiedLocale == "zh" then
+localize(_.CategoryNames, {
+	[1022] = "鱼竿",
+});
 localize(L.HEADER_NAMES, {
 	[-1000000] = "东部",
 	[-1000001] = "北部",
@@ -33840,6 +33908,8 @@ localize(L.HEADER_NAMES, {
 	[-1000362] = "尤娜的世界旅行",
 	[-1000365] = "暗黑破坏神20周年庆",
 	[-1000366] = "贪婪的特使",
+	[-1000373] = "新角色",
+	[-1000374] = "同盟种族",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "这些物品可以通过做使者任务或获得巅峰宝箱来获得。",
