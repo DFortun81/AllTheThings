@@ -311,6 +311,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 							["classes"] = { WARLOCK },
 						}),
 						mount(23161, {	-- Dreadsteed (MOUNT!)
+							["providers"] = {
+								{ "n", 14502 },	-- Xorothian Dreadsteed
+								{ "n", 14504 },	-- Dreadsteed Spirit
+							},
 							["classes"] = { WARLOCK },
 						}),
 					},
@@ -962,7 +966,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["lvl"] = lvlsquish(39, 39, 15),
 				}),
 				q(7877, {	-- The Treasure of the Shen'dralar
-					["qg"] = 14358,	-- Shen'dralar Ancient
+					["providers"] = {
+						{ "n",  14358 },	-- Shen'dralar Ancient
+						{ "o", 179517 },	-- Treasure of the Shen'dralar
+					},
 					["sourceQuest"] = 7461,	-- The Madness Within
 					["maps"] = { 236 },	-- Capital Gardens
 					["timeline"] = { "removed 4.0.3" },
@@ -980,7 +987,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					},
 				}),
 				q(27111, {	-- The Treasure of the Shen'dralar
-					["qg"] = 14358,	-- Shen'dralar Ancient
+					["providers"] = {
+						{ "n",  14358 },	-- Shen'dralar Ancient
+						{ "o", 179517 },	-- Treasure of the Shen'dralar
+					},
 					["sourceQuest"] = 27110,	-- The Madness Within
 					["maps"] = { 236 },	-- Capital Gardens
 					["timeline"] = { "added 4.0.3" },
