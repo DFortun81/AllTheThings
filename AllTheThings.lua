@@ -14249,7 +14249,7 @@ function app:GetDataCache()
 		db.lvl = 10;
 		db.text = GetCategoryInfo(15301);
 		db.name = db.text;
-		db.description = "These expansion features are new systems or ideas by blizzard which are spread over multiple zones. For the ease of access & for the sake of reducing numbers, these are tagged as expansion features.\nIf an expansion feature is limited to 1 zone, it will continue being listed only under their respective zone.";
+		db.description = "These expansion features are new systems or ideas by Blizzard which are spread over multiple zones. For the ease of access & for the sake of reducing numbers, these are tagged as expansion features.\nIf an expansion feature is limited to 1 zone, it will continue being listed only under its respective zone.";
 		db.icon = app.asset("Category_ExpansionFeatures");
 		tinsert(g, db);
 	end
