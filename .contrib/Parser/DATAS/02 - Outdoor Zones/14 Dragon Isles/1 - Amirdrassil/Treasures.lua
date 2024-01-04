@@ -12,8 +12,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 				},
 			}),
 			o(421183, {	-- Kaldorei Bag
-				["coord"] = { 25.4, 61.2, AMIRDRASSIL },
-				["questID"] = 79126,
+				["coord"] = { 55.33, 64.28, AMIRDRASSIL },
+				["questID"] = 79472,
 				["g"] = {
 					i(213010),	-- Blue Kaldorei Pouch
 				},
