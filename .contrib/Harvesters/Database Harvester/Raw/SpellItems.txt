@@ -2227,6 +2227,8 @@
 7099@@@Blackfathom Mana Oil
 1.15.0.52302
 7141@@@Wild Strikes
+1.15.0.52610
+6891@@@Heart of the Lion
 2.0.0.6080
 13@@@Sharpened (+3 Damage)
 14@@@Sharpened (+4 Damage)
