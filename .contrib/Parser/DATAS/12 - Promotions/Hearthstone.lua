@@ -29,6 +29,13 @@ HEARTHSTONE_MERCENARIES_MODE = createHeader({
 		en = "Complete the Mercenaries Mode tutorial in Hearthstone and send your party on a mission in order to receive this reward.",
 	},
 });
+HEARTHSTONE_10TH_ANNIVERSARY = createHeader({
+	readable = "Hearthstone's 10th Anniversary",
+	icon = "Interface\\Icons\\Inv_misc_rune_01",
+	text = {
+		en = "Hearthstone's 10th Anniversary",
+	},
+});
 root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	n(HEARTHSTONE, {
 		["timeline"] = { "added 5.3.0.16825" },
@@ -42,6 +49,21 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		["groups"] = {
 			mount(356488),	-- Sarge's Tale (MOUNT!)
 			ach(15323),	-- Sarge's Tale
+		},
+	}),
+	n(HEARTHSTONE_10TH_ANNIVERSARY, {
+		-- Work in progress
+		["timeline"] = { ADDED_10_2_5 },
+		["groups"] = {
+			q(79184, {	-- It's Hearthstone's Anniversary!
+				["provider"] = { "i", 212154 },	-- Hearthstone Invitation Letter
+			}),
+			i(212154),	-- Hearthstone Invitation Letter
+			i(163186),	-- Fiery Hearthsteed (MOUNT!)
+			ach(19866),	-- Hearthstoned: Fiery Edition
+			ach(20033, {	-- Hearthstone Beginner
+				i(211946),	-- Hearthstone Game Table
+			}),
 		},
 	}),
 }));

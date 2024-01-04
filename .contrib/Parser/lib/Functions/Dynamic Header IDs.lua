@@ -156,6 +156,7 @@ HeaderAssignments = {
 	["Healers"] = -1000147,
 	["Hearthstone"] = -1000260,
 	["Hearthstone Mercenaries"] = -1000261,
+	["Hearthstone's 10th Anniversary"] = -1000375,
 	["Heirloom"] = -1000102,
 	["Heirlooms"] = -1000103,
 	["Heroes of the Storm"] = -1000262,
@@ -377,4 +378,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000375;
+NextHeaderID = -1000376;

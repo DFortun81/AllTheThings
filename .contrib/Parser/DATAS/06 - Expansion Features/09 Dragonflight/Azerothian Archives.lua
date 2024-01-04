@@ -83,6 +83,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["g"] = {
 						currency(2657),	-- Mysterious Fragment
 						currency(2819),	-- Archivist Knowledge
+						i(213175),	-- Dusty Djaradin Tome
+						i(213185),	-- Dusty Centaur Tome
+						i(213186),	-- Dusty Niffen Tome
+						i(213187),	-- Dusty Drakonid Tome
+						i(213188),	-- Dusty Dracthyr Tome
 					},
 				}),
 			}),

@@ -577,7 +577,6 @@ root(ROOTS.Unsorted, {
 			i(34258),	-- Lovely Fireworks
 			i(72120),	-- Mist-Touched Leather
 			i(141624),	-- Love Potion No. 13
-			i(163186),	-- Fiery Hearthsteed
 			i(199547),	-- Spine-Reinforced Spaulders
 			i(199549),	-- Depth Delver's Spaulders
 			i(199856),	-- Rustic Tuskarr Trader's Pack
@@ -586,7 +585,6 @@ root(ROOTS.Unsorted, {
 			i(199859),	-- Burgundy Tuskarr Trader's Pack
 			i(199883),	-- Tuskarr Sharktooth Bolt-Thrower
 			i(202247),	-- Technoscryers
-			i(203431),	-- Ensemble: Burden of Unrelenting Justice
 			i(205455),	-- Telescope Lens
 			i(207460),	-- Dreadsquall Eggshell Fragment
 			i(208201),	-- Paper Scraps
@@ -853,24 +851,13 @@ root(ROOTS.Unsorted, {
 			i(211812),	-- Renewed Proto-Drake: Love Armor
 			i(211864),	-- Exquisite Love Boat
 			i(211868),	-- Winding Slitherdrake: Lunar Festival Armor
-			i(211877),	-- Drake Racer's Scarf
-			i(211881),	-- Outlandish Drake Racer's Helmet
-			i(211882),	-- Outlandish Drake Racer's Shoulderpads
-			i(211883),	-- Outlandish Drake Racer's Jersey
-			i(211884),	-- Outlandish Drake Racer's Handwraps
-			i(211885),	-- Outlandish Drake Racer's Belt
-			i(211886),	-- Outlandish Drake Racer's Leggings
-			i(211887),	-- Outlandish Drake Racer's Boots
-			i(211888),	-- Outlandish Drake Racer's Scarf
 			i(211922),	-- Bouquet of Flowers
 			i(211923),	-- Sealed Letter
 			i(211926),	-- Riders of Azeroth Tabard
 			i(211928),	-- Ruby Riders of Azeroth Tabard
-			i(211946),	-- Hearthstone Game Table
 			i(211949),	-- Durumu's Glass Pupil
 			i(211965),	-- Hearthstone Wild Card
 			i(211976),	-- Pink Brightbursts
-			i(212154),	-- Hearthstone Invitation Letter
 			i(212155),	-- Hearthstone Invitation Letter
 			i(212156),	-- Hearthstone Invitation Letter
 			i(212157),	-- An Invitation
@@ -970,7 +957,6 @@ root(ROOTS.Unsorted, {
 			i(212488),	-- Copy of Kirin Tor Monthly (May Issue)
 			i(212489),	-- Copy of a Damaged Apprentice Journal
 			i(212500),	-- Delicate Silk Parasol
-			i(212518),	-- Manuscript of Endless Possibility
 			i(212522),	-- Compass Rose
 			i(212523),	-- Delicate Jade Parasol
 			i(212524),	-- Delicate Crimson Parasol
@@ -990,8 +976,6 @@ root(ROOTS.Unsorted, {
 			i(212577),	-- Arsenal: Quel'Serrar Skyborn Blades
 			i(212578),	-- Quel'Serrar Skyborn Radiant Blade
 			i(212579),	-- Quel'Serrar Skyborn Blade
-			i(212591),	-- Mantle of Unrelenting Justice
-			i(212592),	-- Treads of Unrelenting Justice
 			i(212599),	-- Noble Flying Carpet
 			i(212606),	-- Sarge
 			i(212607),	-- Reno's Lucky Hat
@@ -1031,16 +1015,6 @@ root(ROOTS.Unsorted, {
 			i(205221),	-- Simple Pottery Fragment
 			i(205222),	-- Wooden Caravan Spoke
 			i(205223),	-- Ornamented Centaur Axe
-			i(208450),	-- Coiled Archivist's Rope
-			i(208452),	-- Historian's Dapper Cap
-			i(208453),	-- Archivist's Super Scooper
-			i(208454),	-- Archivist's Mining Pick
-			i(208455),	-- Archivist's Sturdy Hook
-			i(208456),	-- Archivist's Elegant Bag
-			i(208457),	-- Archivist's Spelunking Torch
-			i(208458),	-- Archivist's Extravagant Lantern
-			i(208459),	-- Archivist's Improvised Cudgel
-			i(208546),	-- Archivist's Rose-Tinted Glasses
 			i(212337),	-- Stone of the Hearth
 			i(212369),	-- Battlefield Lover's Bow
 			i(212378),	-- Twilight Witch's Gothic Scepter
@@ -1052,11 +1026,6 @@ root(ROOTS.Unsorted, {
 			i(212577),	-- Arsenal: Skyborn Blades
 			i(212578),	-- Radiant Skyborn Blade
 			i(212579),	-- Skyborn Blade
-			i(212633),	-- Historian's Fitted Vest
-			i(212634),	-- Historian's Fingerless Gloves
-			i(212635),	-- Historian's Trusty Satchel
-			i(212636),	-- Historian's Trousers
-			i(212637),	-- Historian's Striders
 			i(212638),	-- Excavator's Work Shirt
 			i(212639),	-- Excavator's Glovelettes
 			i(212640),	-- Excavator's Utility Belt
@@ -1123,11 +1092,8 @@ root(ROOTS.Unsorted, {
 			i(212790),	-- Codex of Classic Conjurations
 			i(212791),	-- Beetriz
 			i(212793),	-- Excavator's Pack of Findings
-			i(212794),	-- Historian's Hefty Habersack
-			i(212870),	-- Archivist's Stone Chisel
 			i(212920),	-- Savage Blue Battle Turtle
 			i(212940),	-- Ensemble: Spring Reveler's Collection
-			i(212941),	-- Archivist's "Light Touch"
 			i(212976),	-- Duck Carving
 			i(212977),	-- Drakonid Sign Placard
 			i(212978),	-- Dragon Painter's Palette
@@ -1143,17 +1109,7 @@ root(ROOTS.Unsorted, {
 			i(212991),	-- Grimoire of the Dire Observer
 			i(212993),	-- Grimoire of the Plagued Observer
 			i(212995),	-- Grimoire of the Whispering Observer
-			i(213003),	-- Blue Kaldorei Bedroll
 			i(213004),	-- Violet Kaldorei Backpack
-			i(213005),	-- Blue Kaldorei Backpack
-			i(213006),	-- Night Elven Horn
-			i(213007),	-- Night Elven Signal
-			i(213008),	-- Kaldorei Bow Carver
-			i(213009),	-- Violet Kaldorei Pouch
-			i(213010),	-- Blue Kaldorei Pouch
-			i(213011),	-- Night Elven Shield
-			i(213012),	-- Night Elven Spear
-			i(213013),	-- Kaldorei Sentinel's Spyglass
 			i(213014),	-- Grimoire of the Xorothian Darkglare
 			i(213015),	-- Grimoire of the Eredathian Darkglare
 			i(213016),	-- Grimoire of the Abyssal Darkglare
@@ -1166,7 +1122,6 @@ root(ROOTS.Unsorted, {
 			i(190873),	-- Warhammer of Hubris
 			i(190890),	-- Chipped Warblade
 			i(190895),	-- Lost Crusader's Amethyst Battleaxe
-			i(208547),	-- Archivist's Reading Spectacles
 			i(210435),	-- Archivist's Water Totem
 			i(210778),	-- Archivist's Wind Totem
 			i(210834),	-- Archivist's Earth Totem
@@ -1228,8 +1183,6 @@ root(ROOTS.Unsorted, {
 			i(213091),	-- Memo from Apothecary Hummel
 			i(213106),	-- Gladiator's Serrated Greatsword
 			i(213107),	-- Gladiator's Ragged Greatsword
-			i(213133),	-- Reese
-			i(213134),	-- Hap'he
 			i(213145),	-- Dark Ranger General's Hood
 			i(213146),	-- Dark Ranger General's Breastplate
 			i(213147),	-- Dark Ranger General's Gloves
@@ -1242,10 +1195,8 @@ root(ROOTS.Unsorted, {
 			i(213154),	-- Dark Ranger General's Cloak
 			i(213155),	-- Dark Ranger General's Quiver
 			i(213158),	-- Ensemble: Dark Ranger General's Kit
-			i(213160),	-- Night Elven Bow
 			i(213161),	-- Titan Thunderbow
 			i(213162),	-- Blessed Bow of the Windseeker
-			i(213175),	-- Dusty Djaradin Tome
 			i(213176),	-- Preserved Isles Tome
 			i(213177),	-- Immaculate Tome
 			i(213179),	-- Cracked Draconic Tooth
@@ -1254,10 +1205,6 @@ root(ROOTS.Unsorted, {
 			i(213182),	-- Worry Stone
 			i(213183),	-- Makeshift Beaded Bracelet
 			i(213184),	-- Rock with Chewed Gum
-			i(213185),	-- Dusty Centaur Tome
-			i(213186),	-- Dusty Niffen Tome
-			i(213187),	-- Dusty Drakonid Tome
-			i(213188),	-- Dusty Dracthyr Tome
 			i(213189),	-- Preserved Dragonkin Tome
 			i(213190),	-- Preserved Djaradin Tome
 			i(213192),	-- Scratched-Out List of Names
@@ -1280,9 +1227,6 @@ root(ROOTS.Unsorted, {
 			i(213214),	-- Woven Lavareed Basket
 			i(213215),	-- Carved Votive Stone
 			i(213216),	-- Strip of Notched Leather
-			i(213274),	-- Archivist's Pathfinder
-			i(213275),	-- Archivist's Rockpuller
-			i(213276),	-- Archivist's Magnifying Mace
 			i(213277),	-- Smudged Snippet of Poetry
 			i(213357),	-- Crystal Scrying Bowl
 			i(213358),	-- Indelicately Excavated Skull
@@ -1308,10 +1252,8 @@ root(ROOTS.Unsorted, {
 			i(213388),	-- Faded Centaur Painting
 			i(213389),	-- Ancient Centaur Diary
 			i(212382),	-- Fluorescent Splitblade
-			i(212635),	-- Historian's Utility Belt
 			i(212640),	-- Excavator's Trusty Satchel
 			i(213429),	-- Meticulous Archivist's Appendix
-			i(213536),	-- Priceless Artifact
 			i(213556),	-- Hoplet
 		})),
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
@@ -1321,7 +1263,6 @@ root(ROOTS.Unsorted, {
 
 			i(208878),	-- Adventurer's Footlocker
 			--
-			i(203431),	-- Ensemble: Burden of Unrelenting Justice
 			i(206448),	-- Fyr'alath the Dreamrender
 			i(208578),	-- Concentrated Sophic Vellum
 			i(208581),	-- Radiant Fleck of Ash
@@ -1359,8 +1300,6 @@ root(ROOTS.Unsorted, {
 			i(210255),	-- Alydrus' Research Notes
 			i(210321),	-- The Reforging of the Tyr's Guard
 			i(210918),	-- Adaptive Cooling Salve
-			i(212591),	-- Mantle of Unrelenting Justice
-			i(212592),	-- Treads of Unrelenting Justice
 			i(207728),	-- Fyr'alath the Dreamrender
 			i(208576),	-- Thriving Restoration Mote
 			i(210222),	-- Resolved Element

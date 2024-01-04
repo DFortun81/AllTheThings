@@ -612,6 +612,7 @@ localize(L.HEADER_NAMES, {
 	[-1000369] = "Year 2024",
 	[-1000373] = "New Character",
 	[-1000374] = "Allied Races",
+	[-1000375] = "Hearthstone's 10th Anniversary",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -1033,6 +1034,7 @@ localize(L.HEADER_ICONS, {
 	[-1000369] = "Interface/Icons/inv_misc_missilesmall_green",
 	[-1000373] = "1530081",
 	[-1000374] = "Interface/Icons/FactionChange",
+	[-1000375] = "Interface/Icons/Inv_misc_rune_01",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
@@ -1283,7 +1285,6 @@ _.FlightPathNames = {
 	[11] = "Undercity, Tirisfal",
 	[12] = "Darkshire, Duskwood",
 	[13] = "Tarren Mill, Hillsbrad",
-	[14] = "Southshore, Hillsbrad",
 	[15] = "Eastern Plaguelands",
 	[16] = "Refuge Pointe, Arathi",
 	[17] = "Hammerfall, Arathi",

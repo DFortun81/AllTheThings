@@ -269,17 +269,6 @@ root(ROOTS.NeverImplemented, {
 			tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 					------ Trading Post ------
 				n(SETS, {
-
-					------ Unrelenting Justice ------
-					i(211093),	-- Belt of Unrelenting Justice
-					i(211092),	-- Bracers of Unrelenting Justice
-					i(211095),	-- Cloak of Unrelenting Justice
-					i(211088),	-- Gloves of Unrelenting Justice
-					i(211090),	-- Helm of Unrelenting Justice
-					i(211094),	-- Leggings of Unrelenting Justice
-					--i(190494),	-- Treads of Unrelenting Justice [Reused Darkmoon Harlequin's Shoes?]
-					i(211091),	-- Tunic of Unrelenting Justice
-
 					------ Sky-Captain ------
 					i(210078),	-- Sky-Captain's Formal Attire
 					i(210066),	-- Sky-Captain's Formal Boots
@@ -335,7 +324,7 @@ root(ROOTS.NeverImplemented, {
 					i(211159),	-- Royal Witch Doctor's Guard
 				}),
 			})),
-			
+
 		}),
 	}),
 });
