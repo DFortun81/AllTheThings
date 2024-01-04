@@ -80,7 +80,6 @@ i(197143, 69344);	-- Highland Drake: Green Scales
 i(197131, 69332);	-- Highland Drake: Hairy Cheek
 i(197122, 69323);	-- Highland Drake: Heavy Horns
 i(197147, 69348);	-- Highland Drake: Heavy Scales
-i(197119, 69320);	-- Highland Drake: Helm
 i(197126, 69327);	-- Highland Drake: Hooked Horns
 i(197152, 69353);	-- Highland Drake: Hooked Tail
 i(197139, 69340);	-- Highland Drake: Large Spotted Pattern
@@ -136,7 +135,6 @@ i(197346, 69547);	-- Renewed Proto-Drake: Gold and Black Armor
 i(197351, 69552);	-- Renewed Proto-Drake: Gold and Red Armor
 i(197381, 69582);	-- Renewed Proto-Drake: Gradient Horns
 i(197367, 69568);	-- Renewed Proto-Drake: Gray Hair
-i(197371, 69572);	-- Renewed Proto-Drake: Green Hair
 i(197389, 66720);	-- Renewed Proto-Drake: Green Scales
 i(197356, 69557);	-- Renewed Proto-Drake: Hairy Back
 i(197359, 69560);	-- Renewed Proto-Drake: Hairy Brow
@@ -305,17 +303,13 @@ i(203310, 73798);	-- Winding Slitherdrake: Grand Chin Thorn
 i(203299, 73787);	-- Winding Slitherdrake: Green and Bronze Armor
 i(203352, 73843);	-- Winding Slitherdrake: Green Scales
 i(203308, 73796);	-- Winding Slitherdrake: Hairy Brow
-i(203311, 73799);	-- Winding Slitherdrake: Hairy Chin
 i(203318, 73806);	-- Winding Slitherdrake: Hairy Crest
-i(203343, 73834);	-- Winding Slitherdrake: Hairy Jaw
 i(203362, 73854);	-- Winding Slitherdrake: Hairy Tail
 i(203365, 73857);	-- Winding Slitherdrake: Hairy Throat
-i(203329, 73817);	-- Winding Slitherdrake: Heavy Horns
 i(205341, 75743);	-- Winding Slitherdrake: Heavy Scales
 i(203326, 73814);	-- Winding Slitherdrake: Helm
 i(203339, 73830);	-- Winding Slitherdrake: Impaler Horns
 i(203316, 73804);	-- Winding Slitherdrake: Large Finned Crest
-i(203360, 73852);	-- Winding Slitherdrake: Large Finned Tail
 i(203363, 73855);	-- Winding Slitherdrake: Large Finned Throat
 i(203347, 73838);	-- Winding Slitherdrake: Large Spiked Nose
 i(203301, 73789);	-- Winding Slitherdrake: Light Blue and Copper Armor
@@ -329,13 +323,10 @@ i(203325, 73813);	-- Winding Slitherdrake: Red Hair
 i(203353, 73844);	-- Winding Slitherdrake: Red Scales
 i(203327, 73815);	-- Winding Slitherdrake: Tan Horns
 i(203342, 73833);	-- Winding Slitherdrake: Triple Jaw Horns
-i(203333, 73822);	-- Winding Slitherdrake: Short Horns
-i(203344, 73835);	-- Winding Slitherdrake: Single Jaw Horn
 i(203317, 73805);	-- Winding Slitherdrake: Small Finned Crest
 i(203358, 73850);	-- Winding Slitherdrake: Small Finned Tail
 i(203364, 73856);	-- Winding Slitherdrake: Small Finned Throat
 i(203313, 73801);	-- Winding Slitherdrake: Spiked Chin
-i(203357, 73849);	-- Winding Slitherdrake: Spiked Tail
 i(203345, 73836);	-- Winding Slitherdrake: Split Jaw Horns
 i(203330, 73818);	-- Winding Slitherdrake: Swept Horns
 i(203324, 73812);	-- Winding Slitherdrake: White Hair
@@ -416,13 +407,21 @@ i(207766, 77137);	-- Grotto Netherwing Drake: Triple Spiked Crest
 i(211381, 78878);	-- Grotto Netherwing Drake: Violet Scales
 i(207768, 77139);	-- Grotto Netherwing Drake: Volatile Pattern
 i(207777, 77148);	-- Grotto Netherwing Drake: Yellow Scales
+i(197119, 69320);	-- Highland Drake: Helm
 i(210537, 78453);	-- Renewed Proto-Drake: Embodiment of Shadowflame
 i(210536, 78451);	-- Renewed Proto-Drake: Embodiment of the Blazing
+i(197371, 69572);	-- Renewed Proto-Drake: Green Hair
 i(203340, 73831);	-- Winding Slitherdrake: Cluster Jaw Horns
-i(210064, 78216);	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator
+i(210064, 72371);	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator
+i(203311, 73799);	-- Winding Slitherdrake: Hairy Chin
+i(203343, 73834);	-- Winding Slitherdrake: Hairy Jaw
+i(203329, 73817);	-- Winding Slitherdrake: Heavy Horns
+i(203360, 73852);	-- Winding Slitherdrake: Large Finned Tail
+i(203333, 73822);	-- Winding Slitherdrake: Short Horns
 i(203344, 73835);	-- Winding Slitherdrake: Single Jaw Horn
 i(203315, 73803);	-- Winding Slitherdrake: Small Spiked Crest
 i(203332, 73821);	-- Winding Slitherdrake: Spiked Horns
+i(203357, 73849);	-- Winding Slitherdrake: Spiked Tail
 i(203337, 73827);	-- Winding Slitherdrake: Thorn Horns
 -- Special -- [Blizzard Combined all 5 Above into one item.. That gives 5 QuestIDs.. Hijacking One for tracking]
 i(208550, 69214);	-- Dragon Isles Drakes: White Scales [Tyr Part 4]
