@@ -13495,3 +13495,26 @@
 19721@@@Northrend Racing Completionist
 19722@@@Northrend Racing Completionist: Silver
 19723@@@Northrend Racing Completionist: Gold
+10.2.5.52432
+17349@@@Warcraft Rumble Minis, Tauren's New Look
+17351@@@Warcraft Rumble Minis, Murloc's New Look
+19600@@@Makers' Marathon: Bronze
+19601@@@Makers' Marathon: Silver
+19602@@@Makers' Marathon: Gold
+19603@@@Makers' Marathon Advanced: Bronze
+19604@@@Makers' Marathon Advanced: Silver
+19605@@@Makers' Marathon Advanced: Gold
+19606@@@Makers' Marathon Reverse: Bronze
+19607@@@Makers' Marathon Reverse: Silver
+19608@@@Makers' Marathon Reverse: Gold
+19685@@@Tenured Archivist
+19724@@@Hearthstone Card Collection
+19784@@@Hearthstone Game Wins
+19786@@@When a Rock is Just a Rock
+19787@@@Clued In
+19788@@@Tome Comber
+19789@@@Relic Rescuer
+19790@@@The Archives Called, You Answered
+19791@@@Goggle Wobble
+19792@@@Just One More Thing
+19793@@@Finally At Rest

@@ -2678,3 +2678,5 @@
 2903@@@Verdant Landing, The Emerald Dream
 2904@@@Eye of Ysera, The Emerald Dream
 2905@@@Wellspring Overlook, The Emerald Dream
+10.2.5.52432
+2915@@@Bel'ameth, Amirdrassil
