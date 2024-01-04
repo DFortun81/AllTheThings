@@ -1,10 +1,4 @@
 5.0.3.15890
-r(124694),	-- Way of the Grill
-r(125584),	-- Way of the Wok
-r(125586),	-- Way of the Pot
-r(125587),	-- Way of the Steamer
-r(125588),	-- Way of the Oven
-r(125589),	-- Way of the Brew
 r(125889),	-- Apprentice Cookbook
 r(125898),	-- Journeyman Cookbook
 6.0.1.18179

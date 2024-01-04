@@ -207,6 +207,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			ach(12497, {	-- Drust Do It.
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
+					title(378),	-- Inquisitor <Name>
 					crit(40168),	-- The Final Effigy
 					crit(40169),	-- The Burden of Proof
 					crit(40170),	-- An Airtight Alibi

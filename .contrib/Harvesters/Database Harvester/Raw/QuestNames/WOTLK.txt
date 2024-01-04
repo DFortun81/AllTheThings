@@ -784,3 +784,40 @@
 79097@@@--
 79098@@@--
 79099@@@--
+79482@@@--
+79483@@@--
+79484@@@--
+79485@@@--
+79486@@@--
+79487@@@--
+79492@@@--
+79495@@@--
+79501@@@--
+79502@@@--
+79637@@@--
+74940@@@Flurky
+74941@@@Flurky
+75491@@@Glub
+75492@@@Glub
+77167@@@--
+77168@@@--
+78135@@@--
+78136@@@A New Beginning
+78137@@@A New Beginning
+78138@@@--
+78139@@@--
+78140@@@Tools for Survival
+78151@@@Tools for Survival
+78157@@@Combat Training
+78158@@@Combat Training
+78164@@@Talented
+78166@@@To Northrend
+78167@@@Talented
+78168@@@To Northrend
+78219@@@A New Beginning
+78220@@@Tools for Survival
+78221@@@Combat Training
+78222@@@Talented
+78223@@@--
+78224@@@Talented
+78225@@@To Northrend

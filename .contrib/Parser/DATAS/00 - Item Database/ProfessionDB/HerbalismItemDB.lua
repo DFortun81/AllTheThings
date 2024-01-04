@@ -141,8 +141,9 @@ i(0, 252417);	-- Winter's Kiss [Rank 3]
 -----------------
 --- TRAINER ---
 i(0, 298142);	-- Zin'anthid [Rank 1]
+--- ITEM ---
+i(169611, 298143);	-- Zin'anthid [Rank 2]
 --- QUESTS ---
-i(0, 298143);	-- Zin'anthid [Rank 2]
 i(0, 298144);	-- Zin'anthid [Rank 3]
 
 -----------------

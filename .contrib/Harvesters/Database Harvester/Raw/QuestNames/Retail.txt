@@ -2594,3 +2594,84 @@
 76279@@@--
 78086@@@--
 79332@@@--
+79482@@@--
+79483@@@--
+79484@@@--
+79485@@@--
+79486@@@--
+79487@@@--
+79492@@@--
+79495@@@--
+79501@@@--
+79502@@@--
+79637@@@--
+74940@@@--
+74941@@@--
+75491@@@--
+75492@@@--
+77167@@@--
+77168@@@--
+78135@@@--
+78136@@@--
+78137@@@--
+78138@@@--
+78139@@@--
+78140@@@--
+78151@@@--
+78157@@@--
+78158@@@--
+78164@@@--
+78166@@@--
+78167@@@--
+78168@@@--
+78219@@@--
+78220@@@--
+78221@@@--
+78222@@@--
+78223@@@--
+78224@@@--
+78225@@@--
+77093@@@The Shadowflame Axe
+77191@@@Handling It
+77192@@@An Axe Tempered
+77193@@@The Power of Temptation
+77791@@@Handling It: Symbiotic Glowspore Grip
+77833@@@Handling It: Concentrated Sophic Vellum
+77835@@@Handling It: Rune of Shadowbinding
+77838@@@Tattered Dreamleaf
+77886@@@Handling It: Shadowed Dreamleaf
+77980@@@--
+77993@@@--
+78001@@@[DEPRECATED] 10.2 Enchanting
+78002@@@To The Test: Concentrated Sophic Vellum
+78003@@@Handling It: Taut Tethercoil
+78004@@@--
+78009@@@--
+78010@@@--
+78011@@@--
+78012@@@--
+78013@@@--
+78122@@@--
+78153@@@Handling It: Prototype Rune
+78154@@@To the Test: Rune of Shadowbinding
+78155@@@Handling It: Radiant Fleck of Ash
+78156@@@Handling It: Radiant Vellum
+78159@@@Handling It: Glowspore Grip
+78160@@@To the Test: Symbiotic Glowspore Grip
+78655@@@Adaptive Cooling Salve
+78956@@@--
+78957@@@--
+78958@@@--
+78959@@@--
+78960@@@--
+78961@@@--
+78962@@@--
+78963@@@--
+78964@@@--
+78965@@@--
+78966@@@--
+78967@@@--
+78968@@@--
+78969@@@--
+78970@@@--
+78971@@@--

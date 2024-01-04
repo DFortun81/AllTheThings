@@ -9,7 +9,6 @@ r(2337),	-- Lesser Healing Potion
 r(3101),	-- Alchemy
 r(3170),	-- Weak Troll's Blood Elixir \\ Weak Troll's Blood Potion
 r(3171),	-- Elixir of Wisdom
-r(3172),	-- Minor Magic Resistance Potion
 r(3173),	-- Lesser Mana Potion
 r(3176),	-- Strong Troll's Blood Elixir \\ Strong Troll's Blood Potion
 r(3177),	-- Elixir of Defense
@@ -30,7 +29,6 @@ r(11448),	-- Greater Mana Potion
 r(11449),	-- Elixir of Agility
 r(11450),	-- Elixir of Greater Defense
 r(11451),	-- Oil of Immolation
-r(11453),	-- Magic Resistance Potion
 r(11457),	-- Superior Healing Potion
 r(11460),	-- Elixir of Detect Undead
 r(11461),	-- Arcane Elixir
@@ -81,6 +79,7 @@ r(41500),	-- Cauldron of Major Fire Protection
 r(41501),	-- Cauldron of Major Frost Protection
 r(41502),	-- Cauldron of Major Nature Protection
 r(41503),	-- Cauldron of Major Shadow Protection
+r(45061),	-- Mad Alchemist's Potion
 3.0.1.8622
 r(51304),	-- Alchemy
 r(53771),	-- Transmute: Eternal Life to Shadow
@@ -199,6 +198,12 @@ r(94162),	-- Flask of Flowing Water
 r(96252),	-- Volatile Alchemist Stone
 r(96253),	-- Quicksilver Alchemist Stone
 r(96254),	-- Vibrant Alchemist Stone
+r(101823),	--
+r(101824),	--
+r(101825),	--
+r(101826),	--
+r(101827),	--
+r(101828),	--
 5.0.3.15890
 r(105206),	-- Alchemy
 r(114751),	-- Alchemist's Rejuvenation
@@ -237,14 +242,24 @@ r(114786),	-- Alchemist's Flask
 r(130326),	-- Riddle of Steel
 6.0.1.18179
 r(136197),	-- Zen Alchemist Stone
+r(156562),	-- UNUSED
+r(156565),	-- UNUSED
 r(156566),	-- UNUSED
 r(156567),	-- Draenor Armor Flask
+r(156570),	-- UNUSED
+r(156573),	-- UNUSED
 r(156574),	-- UNUSED
 r(156575),	-- UNUSED
 r(156583),	-- UNUSED
 r(156586),	-- Alchemist's Cauldron
+r(156588),	-- Alchemical Catalyst - Fireweed
+r(156589),	-- Alchemical Catalyst - Flytrap
+r(156590),	-- Alchemical Catalyst - Starflower
+r(156592),	-- Alchemical Catalyst - Orchid
+r(156593),	-- Alchemical Catalyst - Lotus
 r(156606),	-- Alchemy
 7.3.0.24473
+r(162403),	-- Transmorphic Tincture
 r(168042),	-- Alchemical Catalyst
 r(195095),	-- Alchemy
 r(213250),	-- Transmute: Skins to Ore
@@ -318,7 +333,6 @@ r(279166),	-- Battle Potion of Stamina
 r(279168),	-- Battle Potion of Strength
 r(279169),	-- Battle Potion of Strength
 8.1.0.27985
-r(286547),	-- Transmute: Herbs to Anchors
 r(286630),	-- Sanguinated Dilution \\ Breath to Sanguicell
 r(286921),	-- Tidal Alchemist Stone
 r(286922),	-- Spirited Alchemist Stone
@@ -360,6 +374,8 @@ r(298854),	-- Greater Flask of the Undertow
 r(298862),	-- Greater Mystical Cauldron
 r(298863),	-- Greater Mystical Cauldron
 r(298995),	-- Abyssal Alchemist Stone
+r(298996),	-- Crushing Alchemist Stone
+r(298997),	-- Ascended Alchemist Stone
 r(300749),	-- Potion of Unbridled Fury
 r(300750),	-- Potion of Unbridled Fury
 r(300752),	-- Potion of Wild Mending
@@ -392,8 +408,6 @@ Missing in AlchemyItemDB.lua
 r(11454),	-- Inlaid Mithril Cylinder
 1.13.0.28211
 r(24266),	-- Gurubashi Mojo Madness
-1.15.0.52124
-r(426607),	-- Elixir of Coalesced Regret
 6.0.1.18179
 r(156588),	-- Alchemical Catalyst - Fireweed
 r(156589),	-- Alchemical Catalyst - Flytrap

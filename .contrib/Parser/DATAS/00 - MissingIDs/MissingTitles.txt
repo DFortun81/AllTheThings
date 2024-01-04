@@ -1,4 +1,6 @@
+3.0.1.8874
+title(48),	-- %s the Diplomat
 3.4.1.47966
 title(210),	-- Battlemaster %s
-10.2.5.52206
-title(536),	-- %s, Isles Archivist
+10.2.0.52301
+title(518),	-- %s, Honorary Historian

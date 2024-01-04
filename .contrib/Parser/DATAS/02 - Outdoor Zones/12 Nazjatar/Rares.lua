@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 						["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 					}),
 				}),
-				i(169611),	-- Recipe: Zin'anthid (Rank 2)
+				i(169611),	-- Recipe: Zin'anthid [Rank 2]
 			},
 		}),
 		n(152464, {	-- Caverndark Terror

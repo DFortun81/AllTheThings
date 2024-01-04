@@ -7,6 +7,8 @@ i(212500),	-- Delicate Silk Parasol
 i(212523),	-- Delicate Jade Parasol
 i(212524),	-- Delicate Crimson Parasol
 i(212525),	-- Delicate Ebony Parasol
+10.2.5.52330
+i(212337),	-- Stone of the Hearth \\ Stone of the Hearth (Needs Icon)
 
 
 
@@ -22,3 +24,5 @@ i(212500),	-- Delicate Silk Parasol
 i(212523),	-- Delicate Jade Parasol
 i(212524),	-- Delicate Crimson Parasol
 i(212525),	-- Delicate Ebony Parasol
+10.2.5.52330
+i(212337),	-- Stone of the Hearth \\ Stone of the Hearth (Needs Icon)

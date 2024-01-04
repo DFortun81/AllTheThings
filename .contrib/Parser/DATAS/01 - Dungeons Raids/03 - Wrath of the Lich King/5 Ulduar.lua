@@ -1122,6 +1122,22 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						revampAch(2906),	-- Unbroken (25 player)
 						revampAch(2976),	-- Who Needs Bloodlust? (25 player)
 						revampAch(2952),	-- With Open Arms (25 player)
+						ach(3259, {	-- Realm First! Celestial Defender
+							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+							["g"] = {
+								title(125, {	-- <Name> the Celestial Defender
+									["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+								}),
+							},
+						}),
+						ach(3117, {	-- Realm First! Death's Demise
+							["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+							["g"] = {
+								title(124, {	-- <Name>, Death's Demise
+								["timeline"] = { ADDED_3_1_0, REMOVED_3_2_0 },
+								}),
+							},
+						}),
 					}),
 					-- #else
 					n(ACHIEVEMENTS, {

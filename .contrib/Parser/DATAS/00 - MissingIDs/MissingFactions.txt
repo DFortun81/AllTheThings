@@ -84,6 +84,7 @@ faction(111),	-- Quilboar, Deathshead
 faction(128),	-- Enemy
 faction(148),	-- Ambient
 faction(168),	-- Nethergarde Caravan
+faction(169),	-- Steamwheedle Cartel \\ AAAReuseme
 faction(189),	-- Alliance Generic
 faction(209),	-- Nethergarde
 0.5.5.3494
@@ -404,9 +405,7 @@ faction(1370),	-- Friendly, Force Reaction 7
 6.0.1.18179
 faction(1371),	-- Paw'don Village
 faction(1372),	-- Honeydew Village
-faction(1374),	-- Brawl'gar Arena (Season 1) \\ Brawl'gar Arena
 faction(1416),	-- Akama's Trust
-faction(1419),	-- Bizmo's Brawlpub (Season 1) \\ Bizmo's Brawlpub
 faction(1433),	-- Monster, Enforced Neutral For Force Reaction
 faction(1440),	-- Darkspear Rebellion
 faction(1443),	-- Kor'kron
@@ -432,8 +431,6 @@ faction(1674),	-- Draenor Spores
 faction(1679),	-- Operation: Aardvark
 faction(1680),	-- Highmaul
 faction(1687),	-- Gorgrond Goren
-faction(1690),	-- Brawl'gar Arena (Season 2)
-faction(1691),	-- Bizmo's Brawlpub (Season 2)
 faction(1712),	-- GarInvasion_IronHorde
 faction(1713),	-- GarInvasion_ShadowCouncil
 faction(1714),	-- GarInvasion_Ogres
@@ -472,8 +469,6 @@ faction(1953),	-- Nightmare
 faction(1962),	-- Nightborne Civilian
 faction(1984),	-- The First Responders
 faction(1989),	-- Moon Guard
-faction(2010),	-- Brawl'gar Arena (Season 3) \\ Brawl'gar Arena
-faction(2011),	-- Bizmo's Brawlpub (Season 3) \\ Bizmo's Brawlpub
 faction(2012),	-- Nightborne Rebels
 faction(2040),	-- Talon's Vengeance
 faction(2063),	-- Arne Test - Paragon Reputation Stormwind
@@ -543,17 +538,8 @@ faction(2384),	-- 7th Legion (Paragon)
 faction(2385),	-- The Honorbound (Paragon)
 faction(2386),	-- Champions of Azeroth (Paragon)
 faction(2387),	-- Tortollan Seekers (Paragon)
-8.1.5.28938
-faction(2371),	-- Bizmo's Brawlpub
-faction(2372),	-- Brawl'gar Arena
 8.2.0.30080
 faction(2374),	-- The Unshackled (Paragon) \\ Unshackled (Paragon)
-faction(2375),	-- Hunter Akana
-faction(2376),	-- Farseer Ori
-faction(2377),	-- Bladesman Inowari
-faction(2388),	-- Poen Gillbrack
-faction(2389),	-- Neri Sharpfin
-faction(2390),	-- Vim Brineheart
 faction(2392),	-- Rustbolt Resistance (Paragon)
 faction(2394),	-- Hermit Crabs
 faction(2396),	-- Honeyback Drone \\ Tidebreak Guardian \\ Drone
@@ -630,5 +616,3 @@ faction(2565),	-- Loamm Niffen (Paragon)
 faction(2576),	-- Druids of the Flame
 10.2.0.51239
 faction(2575),	-- Dream Wardens (Paragon)
-10.2.5.52206
-faction(2615),	-- Azerothian Archives
