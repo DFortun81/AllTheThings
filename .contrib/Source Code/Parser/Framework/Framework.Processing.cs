@@ -1691,8 +1691,8 @@ namespace ATT
                     //}
                     //else
                     //{
-                    //LogDebug($"INFO: Added _spells to visible Criteria {achID}:{criteriaID} with SpellID: {spellID}");
-                    //Objects.Merge(data, "_spells", new List<object> { spellID });
+                    LogDebug($"INFO: Added _spells to visible Criteria {achID}:{criteriaID} with SpellID: {spellID}");
+                    Objects.Merge(data, "_spells", new List<object> { spellID });
                     //}
                 }
             }
