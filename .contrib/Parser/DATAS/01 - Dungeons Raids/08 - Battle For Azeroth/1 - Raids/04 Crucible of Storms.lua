@@ -23,29 +23,17 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 				}),
 				ach(13420),	-- Crucible of Storms Guild Run
 			}),
-			n(COMMON_BOSS_DROPS, {	-- To merge Tooltip
-				header(HEADERS.Achievement, 13414, {	-- Crucible of Storms
+			n(COMMON_BOSS_DROPS, {	
 					["crs"] = {
-						177193,	-- Kiku
-						177208,	-- Eppu
+						144754,	-- Fa'thuul the Feared
+						144755,	-- Zaxasj the Speaker
+						145371,	-- Uu'nat, Harbinger of the Void
 					},
-					["coords"] = {
-						{ 74.0, 13.4, BORALUS },	-- Kiku
-						{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
+					["g"] = {
+						i(165735),	-- Vantus Rune Technique: Crucible of Storms [Rank 1] (RECIPE!)
+						i(165736),	-- Vantus Rune Technique: Crucible of Storms [Rank 2] (RECIPE!)
+						i(165737),	-- Vantus Rune Technique: Crucible of Storms [Rank 3] (RECIPE!)
 					},
-				}),
-			}),
-			n(COMMON_BOSS_DROPS, {
-				["crs"] = {
-					144754,	-- Fa'thuul the Feared
-					144755,	-- Zaxasj the Speaker
-					145371,	-- Uu'nat, Harbinger of the Void
-				},
-				["g"] = {
-					i(165735),	-- Vantus Rune Technique: Crucible of Storms [Rank 1] (RECIPE!)
-					i(165736),	-- Vantus Rune Technique: Crucible of Storms [Rank 2] (RECIPE!)
-					i(165737),	-- Vantus Rune Technique: Crucible of Storms [Rank 3] (RECIPE!)
-				},
 			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = {
