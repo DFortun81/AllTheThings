@@ -2213,7 +2213,7 @@ namespace ATT
                     foreach (long id in spellObjs.AsTypedEnumerable<long>())
                     {
                         if (
-                            !SOURCED["spellID"].ContainsKey(id) &&
+                            //!SOURCED["spellID"].ContainsKey(id) &&
                             !SOURCED["recipeID"].ContainsKey(id))
                         {
                             IEnumerable<string> usefulKeys = data.Keys.Except(IndeterminateCriteriaDataFields).Except(s => s.EndsWith("ID"));
@@ -2230,6 +2230,7 @@ namespace ATT
                                 LogDebugWarn($"Criteria not nested to Unsourced Spell/Recipe {id}. Consider Sourcing Spell/Recipe");
                             }
                             Objects.TrackPostProcessMergeKey("spellID", id);
+                            Objects.TrackPostProcessMergeKey("recipeID", id);
                             cloned = false;
                         }
                     }
