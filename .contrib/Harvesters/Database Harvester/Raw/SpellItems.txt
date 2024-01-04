@@ -2225,6 +2225,8 @@
 7059@@@Internal
 7098@@@Hit +2%
 7099@@@Blackfathom Mana Oil
+1.15.0.52302
+7141@@@Wild Strikes
 2.0.0.6080
 13@@@Sharpened (+3 Damage)
 14@@@Sharpened (+4 Damage)
