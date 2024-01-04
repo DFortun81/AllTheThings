@@ -1670,25 +1670,31 @@ namespace ATT
             long spellID = criteriaData.GetSpellID();
             if (spellID > 0)
             {
-                //if (!TryGetSOURCED("recipeID", spellID, out _))
-                //{
-                //    LogDebugWarn($"Spell {spellID} linked to Criteria {achID}:{criteriaID}, but it's an Unsourced Spell. Not nesting Criteria.");
-                //    if (criteriaData.IsIgnoreFlags())
-                //    {
-                //        IEnumerable<string> usefulKeys = data.Keys.Except(IndeterminateCriteriaDataFields).Except(s => s.EndsWith("ID"));
-                //        if (!usefulKeys.Any())
-                //        {
-                //            // mark this criteria to be removed since it is hidden in-game and doesn't correspond to or contain any useful ATT data at this time
-                //            LogDebugWarn($"Criteria {achID}:{criteriaID} removed since it doesn't correspond to useful ATT data");
-                //            data["_remove"] = true;
-                //        }
-                //    }
-                //}
-                //else
-                //{
-                //LogDebug($"INFO: Added _spells to Criteria {achID}:{criteriaID} with SpellID: {spellID}");
-                //Objects.Merge(data, "_spells", spellID);
-                //}
+                // Only try to nest actually visible Criteria under a Spell
+                if (!data.ContainsKey("_ignored"))
+                {
+                    //if (!TryGetSOURCED("recipeID", spellID, out _)
+                    //    //&& !TryGetSOURCED("spellID", spellID, out _)
+                    //    )
+                    //{
+                    //    LogDebugWarn($"Spell {spellID} linked to Criteria {achID}:{criteriaID}, but it's an Unsourced Spell. Not nesting Criteria.");
+                    //    if (criteriaData.IsIgnoreFlags())
+                    //    {
+                    //        IEnumerable<string> usefulKeys = data.Keys.Except(IndeterminateCriteriaDataFields).Except(s => s.EndsWith("ID"));
+                    //        if (!usefulKeys.Any())
+                    //        {
+                    //            // mark this criteria to be removed since it is hidden in-game and doesn't correspond to or contain any useful ATT data at this time
+                    //            LogDebugWarn($"Criteria {achID}:{criteriaID} removed since it doesn't correspond to useful ATT data");
+                    //            data["_remove"] = true;
+                    //        }
+                    //    }
+                    //}
+                    //else
+                    //{
+                    //LogDebug($"INFO: Added _spells to visible Criteria {achID}:{criteriaID} with SpellID: {spellID}");
+                    //Objects.Merge(data, "_spells", new List<object> { spellID });
+                    //}
+                }
             }
 
             long achievementID = criteriaData.GetRequiredAchievement();
@@ -1817,6 +1823,11 @@ namespace ATT
                     // otherwise the criteria index may be split into multiple criteriaUID, and we just merge them all into the achievement
                     else
                     {
+                        if (inGameIgnored)
+                        {
+                            criteriaData["_ignored"] = true;
+                        }
+
                         incorporated = true;
                         if (data.TryGetValue("timeline", out object timeline))
                         {
@@ -2057,7 +2068,7 @@ namespace ATT
         private static bool Incorporate_DataCloning(IDictionary<string, object> data)
         {
             bool cloned = false;
-
+            long criteriaID;
             if (data.TryGetValue("_quests", out object quests))
             {
                 // don't duplicate achievements in this way
@@ -2074,7 +2085,7 @@ namespace ATT
             if (data.TryGetValue("_items", out object items))
             {
                 // don't duplicate achievements in this way
-                if (data.TryGetValue("criteriaID", out long criteriaID))
+                if (data.TryGetValue("criteriaID", out criteriaID))
                 {
                     data.TryGetValue("achID", out long achID);
                     LogError($"Do not use '_items' on Criteria ({achID}:{criteriaID}). Use 'provider' instead when an Item grants credit for an Achievement Criteria.");
@@ -2099,7 +2110,7 @@ namespace ATT
             }
             if (data.TryGetValue("_spells", out object spells))
             {
-                DuplicateDataIntoGroups(data, spells, "spellID");
+                //DuplicateDataIntoGroups(data, spells, "spellID");
                 DuplicateDataIntoGroups(data, spells, "recipeID");
                 cloned = true;
             }
@@ -2128,7 +2139,7 @@ namespace ATT
             }
 
             // specifically Achievement Criteria that is cloned to another location in the addon should not be maintained where it was cloned from
-            if (cloned && data.ContainsKey("criteriaID"))
+            if (cloned && data.TryGetValue("criteriaID", out criteriaID))
             {
                 // if the Criteria attempts to clone into an NPC which isn't Sourced, then don't remove it and add to 'providers'
                 if (data.TryGetValue("_npcs", out List<object> npcObjs))
@@ -2201,15 +2212,34 @@ namespace ATT
                 {
                     foreach (long id in spellObjs.AsTypedEnumerable<long>())
                     {
-                        if (!SOURCED["spellID"].ContainsKey(id) && !SOURCED["recipeID"].ContainsKey(id))
+                        if (
+                            !SOURCED["spellID"].ContainsKey(id) &&
+                            !SOURCED["recipeID"].ContainsKey(id))
                         {
-                            // remove the creatures which are not sourced from being reported as failed to merge
-                            LogDebugWarn($"Criteria not nested to Unsourced Spell/Recipe {id}. Consider Sourcing Spell/Recipe");
+                            IEnumerable<string> usefulKeys = data.Keys.Except(IndeterminateCriteriaDataFields).Except(s => s.EndsWith("ID"));
+                            if (!usefulKeys.Any())
+                            {
+                                data.TryGetValue("achID", out long achID);
+                                // mark this criteria to be removed since it is not nested in-game and doesn't correspond to or contain any useful ATT data at this time
+                                LogDebugWarn($"Criteria {achID}:{criteriaID} removed since it doesn't correspond to useful ATT data");
+                                data["_remove"] = true;
+                            }
+                            else
+                            {
+                                // remove the spells which are not sourced from being reported as failed to merge
+                                LogDebugWarn($"Criteria not nested to Unsourced Spell/Recipe {id}. Consider Sourcing Spell/Recipe");
+                            }
                             Objects.TrackPostProcessMergeKey("spellID", id);
+                            cloned = false;
                         }
                     }
-                    cloned = false;
                 }
+            }
+
+            // Un-cloned data which is marked as ignored should allow itself to be removed from the list
+            if (!cloned && data.ContainsKey("_ignored"))
+            {
+                return true;
             }
 
             return cloned;

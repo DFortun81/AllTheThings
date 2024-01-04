@@ -294,36 +294,39 @@ namespace ATT
             }
             else if (jsonObj is ICollection<object> list)
             {
-                if (_list == null)
-                {
-                    _list = list.Select(o => new CustomConfigurationNode(o)).ToList();
-                }
-                else
-                {
-                    int i = 0;
-                    int max = _list.Count - 1;
-                    foreach (object listObj in list)
-                    {
-                        var config = i <= max ? _list[i] : null;
-                        if (config == null || config._val != null)
-                        {
-                            if (listObj is IDictionary<string, object>)
-                            {
-                                throw new InvalidDataException("Cannot merge JSON types within Config Array data");
-                            }
-                            _list.Add(new CustomConfigurationNode(listObj));
-                        }
-                        else if (listObj is IDictionary<string, object> && config._dict != null)
-                        {
-                            config.ApplyData(listObj);
-                        }
-                        else
-                        {
-                            throw new InvalidDataException("Cannot merge JSON types within Config Array data");
-                        }
-                        i++;
-                    }
-                }
+                // Simpler to just replace the keyed value entirely and let sub-configs re-define the entire list...
+                // Otherwise we have no way to override a list-based value in the configs
+                _list = list.Select(o => new CustomConfigurationNode(o)).ToList();
+                //if (_list == null)
+                //{
+                //    _list = list.Select(o => new CustomConfigurationNode(o)).ToList();
+                //}
+                //else
+                //{
+                //    int i = 0;
+                //    int max = _list.Count - 1;
+                //    foreach (object listObj in list)
+                //    {
+                //        var config = i <= max ? _list[i] : null;
+                //        if (config == null || config._val != null)
+                //        {
+                //            if (listObj is IDictionary<string, object>)
+                //            {
+                //                throw new InvalidDataException("Cannot merge JSON types within Config Array data");
+                //            }
+                //            _list.Add(new CustomConfigurationNode(listObj));
+                //        }
+                //        else if (listObj is IDictionary<string, object> && config._dict != null)
+                //        {
+                //            config.ApplyData(listObj);
+                //        }
+                //        else
+                //        {
+                //            throw new InvalidDataException("Cannot merge JSON types within Config Array data");
+                //        }
+                //        i++;
+                //    }
+                //}
             }
             else
             {
