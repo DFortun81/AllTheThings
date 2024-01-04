@@ -47,6 +47,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(MAIL, {
 			ig(114389), -- Element-Binder Helm				(NYI)
+			ig(18304),	-- Greenroot Mail					(NYI Unique)
 			ig(114265),	-- Leafscale Helm					(NYI)
 			ig(121508),	-- Stormborn Crown					(NYI)
 
@@ -67,7 +68,6 @@ local QUANTUM_GROUP = sharedData({
 			ig(114266),	-- Ruby Plate Greathelm				(NYI)
 
 			ig(134630),	-- Firescored Helm					(Removed)
-			ig(134684),	-- Front-Line Helm					(Removed)
 			ig(134802),	-- Tempered Helm					(Removed)
 
 			ig(105804),	-- Aladya's Spiritfire Greathelm	(Ordos)
@@ -117,7 +117,6 @@ local QUANTUM_GROUP = sharedData({
 			ig(134737),	-- Chillplate Shoulders				(Removed)
 			ig(134769),	-- Concealment Shoulderplates		(Removed)
 			ig(134713),	-- Crushing Pauldrons				(Removed)
-			ig(134686),	-- Front-Line Shoulders				(Removed)
 			ig(103785),	-- Tusks of Mannoroth Heroic		(Removed)
 
 			ig(105796),	-- Rossi's Rosin-Soaked Shoulderplates(Ordos)
@@ -221,7 +220,6 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(20653),	-- Abyssal Plate Gauntlets			(Removed)
 			ig(134736),	-- Chillplate Gauntlets				(Removed)
-			ig(134683),	-- Front-Line Gauntlets				(Removed)
 			ig(134801),	-- Tempered Gauntlets				(Removed)
 		}),
 	}),
@@ -278,7 +276,6 @@ local QUANTUM_GROUP = sharedData({
 
 			ig(134768),	-- Concealment Legplates			(Removed)
 			ig(134712),	-- Crushing Legguards				(Removed)
-			ig(134685),	-- Front-Line Greaves				(Removed)
 
 			ig(105759),	-- Magmaplates of Jian Wu Xi Feng	(Ordos)
 			ig(105761),	-- Partik's Purified Legplates		(Ordos)

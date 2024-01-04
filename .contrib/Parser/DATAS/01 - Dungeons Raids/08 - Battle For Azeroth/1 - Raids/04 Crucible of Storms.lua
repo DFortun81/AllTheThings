@@ -24,14 +24,16 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.1.0"
 				ach(13420),	-- Crucible of Storms Guild Run
 			}),
 			n(COMMON_BOSS_DROPS, {	-- To merge Tooltip
-				["crs"] = {
-					177193,	-- Kiku
-					177208,	-- Eppu
-				},
-				["coords"] = {
-					{ 74.0, 13.4, BORALUS },	-- Kiku
-					{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
-				},
+				header(HEADERS.Achievement, 13414, {	-- Crucible of Storms
+					["crs"] = {
+						177193,	-- Kiku
+						177208,	-- Eppu
+					},
+					["coords"] = {
+						{ 74.0, 13.4, BORALUS },	-- Kiku
+						{ 68.0, 33.6, THE_GREAT_SEAL },	-- Eppu
+					},
+				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
