@@ -274,6 +274,27 @@ def create_missing_recipes() -> None:
             missing_path_dict[profession].unlink()
     return
 
+def get_existing_ids_item(thing) -> list[str]:
+    """WORK IN PROGRESS Get the IDs of a thing from Categories.lua."""
+    id_path = Path("..", "..", "..", ".contrib", "Debugging", "AllItems.lua")
+    uncol_path = Path(DATAS_FOLDER, "00 - Item Database", "Uncollectible.lua")
+    existing_ids = list[str]()
+    with open(id_path, encoding="utf8") as id_file:
+        for line in id_file:
+            words = line.split(',')
+            for word in words:
+                if any(prefix in word for prefix in thing.existing_prefixes()):
+                    thing_id = re.sub("[^\\d^.]", "", word)
+                    existing_ids.append(thing_id + "\n")
+    with open(uncol_path, encoding="utf8") as id_file:
+        for line in id_file:
+            words = line.split(';')
+            for word in words:
+                if any(prefix in word for prefix in thing.existing_prefixes()):
+                    thing_id = re.sub("[^\\d^.]", "", word)
+                    existing_ids.append(thing_id + "\n")
+    return existing_ids
+
 
 def create_missing_file(thing: type[Thing]) -> None:
     """Create a missing file for a thing using difference between Categories.lua, raw file and exclusions."""
@@ -293,6 +314,7 @@ def create_missing_file(thing: type[Thing]) -> None:
         difference_db = None
         difference = sorted(
             set(raw_ids) - set(get_existing_ids(thing)) - set(excluded_ids),
+            # set(raw_ids) - set(get_existing_ids_item(thing)) - set(excluded_ids),
             key=raw_ids.index,
         )
         if (difference := remove_empty_builds(difference)):
@@ -530,8 +552,9 @@ def create_missing_files() -> None:
     things: list[type[Thing]] = Thing.__subclasses__()
     for thing in things:
         if thing != Items:
-            print(thing)
+            print('Missing File: ', thing)
             create_missing_file(thing)
+            print('Post Process: ', thing)
             post_process(thing)
 
 
@@ -554,11 +577,10 @@ def give_name_item() -> None:
         missing_file.writelines(lines)
 
 
-"""Step 1: Load New CSVs inside of Latests/dbfilesclient. """
-"""Step 2: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
-# add_latest_data("10.2.5.52206")
-"""Step 3: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
-"""Step 4: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
+"""Step 1: Run add_latest_data(build: str) (You have to uncomment) with the build as a string ex. add_latest_data("10.0.2.43010"). """
+# add_latest_data("10.2.5.52646")
+"""Step 2: If new SkillLines have has been added they need to be sorted manually. Ex. Language:Furbolg is not a real profession so it has to be added into Exclusion/SkillLines.txt. If its an interesting SkillLine it can be added to Exclusion/SkillLineOther.txt. If its a new profession just let it be"""
+"""Step 3: Run sort_raw_file_recipes() (you have to uncomment it) this will sort raw recipes into respective profession."""
 # sort_raw_file_recipes()
-"""Step 5: Run create_missing_files() and (you have to uncomment it)"""
+"""Step 4: Run create_missing_files() and (you have to uncomment it)"""
 # create_missing_files()

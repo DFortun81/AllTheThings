@@ -387,7 +387,7 @@ class Items(Thing):
 
     @staticmethod
     def existing_prefixes() -> tuple[str, ...]:
-        return "i(", "itemID"
+        return "i(", "itemID", '"i"'
 
     @staticmethod
     def new_prefix() -> str:
