@@ -1026,6 +1026,293 @@ root(ROOTS.Unsorted, {
 			i(212643),	-- Golden Egg Heirloom
 			i(212644),	-- The Tavern's Belt
 			i(212645),	-- PH Hornstrider Red
+			--
+			i(67108),	-- Lord Godfrey's Old Spectacles
+			i(205221),	-- Simple Pottery Fragment
+			i(205222),	-- Wooden Caravan Spoke
+			i(205223),	-- Ornamented Centaur Axe
+			i(208450),	-- Coiled Archivist's Rope
+			i(208452),	-- Historian's Dapper Cap
+			i(208453),	-- Archivist's Super Scooper
+			i(208454),	-- Archivist's Mining Pick
+			i(208455),	-- Archivist's Sturdy Hook
+			i(208456),	-- Archivist's Elegant Bag
+			i(208457),	-- Archivist's Spelunking Torch
+			i(208458),	-- Archivist's Extravagant Lantern
+			i(208459),	-- Archivist's Improvised Cudgel
+			i(208546),	-- Archivist's Rose-Tinted Glasses
+			i(212337),	-- Stone of the Hearth
+			i(212369),	-- Battlefield Lover's Bow
+			i(212378),	-- Twilight Witch's Gothic Scepter
+			i(212379),	-- Love Witch's Rosy Stave
+			i(212380),	-- Twilight Witch's Gothic Stave
+			i(212530),	-- Corroded Augari Defender
+			i(212545),	-- Crown of the White Rose
+			i(212576),	-- Blackrock Executioner
+			i(212577),	-- Arsenal: Skyborn Blades
+			i(212578),	-- Radiant Skyborn Blade
+			i(212579),	-- Skyborn Blade
+			i(212633),	-- Historian's Fitted Vest
+			i(212634),	-- Historian's Fingerless Gloves
+			i(212635),	-- Historian's Trusty Satchel
+			i(212636),	-- Historian's Trousers
+			i(212637),	-- Historian's Striders
+			i(212638),	-- Excavator's Work Shirt
+			i(212639),	-- Excavator's Glovelettes
+			i(212640),	-- Excavator's Utility Belt
+			i(212641),	-- Excavator's Rugged Pants
+			i(212642),	-- Excavator's Boots
+			i(212644),	-- Taverner's Belt
+			i(212645),	-- Clayscale Hornstrider
+			i(212646),	-- Chipped Armor Plate
+			i(212647),	-- Leather Bakar-Sized Shoe
+			i(212648),	-- Fishbone Needle
+			i(212649),	-- Quilted Tent Scrap
+			i(212650),	-- Pot of Tattooing Ink
+			i(212687),	-- Crude Toy Ducky
+			i(212688),	-- Salt-dried Roots
+			i(212692),	-- Excavator's Dusky Fedora
+			i(212698),	-- Spring Reveler's Turquoise Attire
+			i(212699),	-- Spring Reveler's Turquoise Belt
+			i(212700),	-- Nelle
+			i(212701),	-- Spring Reveler's Turquoise Boots
+			i(212702),	-- Spring Reveler's Lavender Attire
+			i(212703),	-- Spring Reveler's Lanvender Belt
+			i(212704),	-- Spring Reveler's Lavender Boots
+			i(212705),	-- Spring Reveler's Cornsilk Attire
+			i(212706),	-- Spring Reveler's Cornsilk Belt
+			i(212707),	-- Spring Reveler's Cornsilk Boots
+			i(212708),	-- Spring Reveler's Dandelion Attire
+			i(212709),	-- Spring Reveler's Dandelion Belt
+			i(212710),	-- Spring Reveler's Dandelion Boots
+			i(212711),	-- Spring Reveler's Turquoise Dress
+			i(212712),	-- Spring Reveler's Lavender Dress
+			i(212713),	-- Spring Reveler's Cornsilk Dress
+			i(212714),	-- Spring Reveler's Dandelion Dress
+			i(212715),	-- Spring Reveler's Turquoise Sun Hat
+			i(212716),	-- Spring Reveler's Lavender Sun Hat
+			i(212717),	-- Spring Reveler's Cornsilk Sun Hat
+			i(212718),	-- Spring Reveler's Dandelion Sun Hat
+			i(212722),	-- Buggsy
+			i(212750),	-- Grimoire of the Ancient Observer
+			i(212761),	-- Pouch of Coins
+			i(212762),	-- Tarnished Horn Signet
+			i(212763),	-- Spoiled Honeywine
+			i(212764),	-- Fishing Net Fragment
+			i(212765),	-- Fish Bones
+			i(212766),	-- Pottery Fragment
+			i(212767),	-- Broken Beaker
+			i(212768),	-- Niffen-Sized Dagger
+			i(212769),	-- Tattered Wanted Poster
+			i(212770),	-- Smashed Pottery
+			i(212771),	-- Charred Snail Shells
+			i(212772),	-- False Silver Coin
+			i(212773),	-- Rusted Locket
+			i(212774),	-- Sharpened Shalewing Bones
+			i(212778),	-- Grimoire of the Vile Tyrant
+			i(212779),	-- Grimoire of the Bloodrage Tyrant
+			i(212780),	-- Grimoire of the Felbrute Tyrant
+			i(212782),	-- Poorly Preserved Relic
+			i(212783),	-- Grimoire of the Netherwalk Tyrant
+			i(212784),	-- Destroyed Relic
+			i(212785),	-- Helm of the Stout
+			i(212786),	-- Lovely Duckling
+			i(212787),	-- Gloves of the Violet Gala
+			i(212788),	-- Gossamer Emerald Gown
+			i(212789),	-- Champion's Jade Cleaver
+			i(212790),	-- Codex of Classic Conjurations
+			i(212791),	-- Beetriz
+			i(212793),	-- Excavator's Pack of Findings
+			i(212794),	-- Historian's Hefty Habersack
+			i(212870),	-- Archivist's Stone Chisel
+			i(212920),	-- Savage Blue Battle Turtle
+			i(212940),	-- Ensemble: Spring Reveler's Collection
+			i(212941),	-- Archivist's "Light Touch"
+			i(212976),	-- Duck Carving
+			i(212977),	-- Drakonid Sign Placard
+			i(212978),	-- Dragon Painter's Palette
+			i(212981),	-- Violet Kaldorei Bedroll
+			i(212983),	-- Grimoire of the Blasted Observer
+			i(212984),	-- Grimoire of the Zealous Observer
+			i(212985),	-- Spring Reveler's Turquoise Pants
+			i(212986),	-- Spring Reveler's Lavender Pants
+			i(212987),	-- Spring Reveler's Cornsilk Pants
+			i(212988),	-- Spring Reveler's Dandelion Pants
+			i(212989),	-- Grimoire of the Mana-Gorged Observer
+			i(212990),	-- Classic Violet Tabard
+			i(212991),	-- Grimoire of the Dire Observer
+			i(212993),	-- Grimoire of the Plagued Observer
+			i(212995),	-- Grimoire of the Whispering Observer
+			i(213003),	-- Blue Kaldorei Bedroll
+			i(213004),	-- Violet Kaldorei Backpack
+			i(213005),	-- Blue Kaldorei Backpack
+			i(213006),	-- Night Elven Horn
+			i(213007),	-- Night Elven Signal
+			i(213008),	-- Kaldorei Bow Carver
+			i(213009),	-- Violet Kaldorei Pouch
+			i(213010),	-- Blue Kaldorei Pouch
+			i(213011),	-- Night Elven Shield
+			i(213012),	-- Night Elven Spear
+			i(213013),	-- Kaldorei Sentinel's Spyglass
+			i(213014),	-- Grimoire of the Xorothian Darkglare
+			i(213015),	-- Grimoire of the Eredathian Darkglare
+			i(213016),	-- Grimoire of the Abyssal Darkglare
+			i(213017),	-- Grimoire of the Riftsmolder Darkglare
+			i(190670),	-- Sanguine Bouquet
+			i(190805),	-- Deforester's Hatchet
+			i(190819),	-- Emerald Guardian's Longbow
+			i(190857),	-- Gilded Emerald Longcloak
+			i(190859),	-- Apprentice's Twisted Crook
+			i(190873),	-- Warhammer of Hubris
+			i(190890),	-- Chipped Warblade
+			i(190895),	-- Lost Crusader's Amethyst Battleaxe
+			i(208547),	-- Archivist's Reading Spectacles
+			i(210435),	-- Archivist's Water Totem
+			i(210778),	-- Archivist's Wind Totem
+			i(210834),	-- Archivist's Earth Totem
+			i(210956),	-- Archivist's Fire Totem
+			i(211264),	-- Rose of Romance
+			i(211266),	-- Archivist's Fire Totem
+			i(211351),	-- Rose of Friendship
+			i(211360),	-- Rose of Purity
+			i(211361),	-- Rose of Joy
+			i(211362),	-- Rose of Independence
+			i(211363),	-- Rose of Dreams Fulfilled
+			i(211364),	-- Rose of Tragedy
+			i(212608),	-- Duck Potion
+			i(212766),	-- Amphora Fragment
+			i(212940),	-- Ensemble: Spring Reveler's Lavender Collection
+			i(212976),	-- Drakonid Duck Carving
+			i(213020),	-- Ancient Drakonid Shovel
+			i(213021),	-- Corked Drakonid Vial
+			i(213022),	-- Drakonid Blacksmith Hammer
+			i(213023),	-- Oil-Drenched Djaradin Torch
+			i(213024),	-- Bloody Djaradin Mug
+			i(213025),	-- Ancient Djaradin Bolt
+			i(213026),	-- Massive Drakonid Brush
+			i(213027),	-- Chipped Drakonid Cup
+			i(213028),	-- Cracked Drafting Compass
+			i(213029),	-- Bent Drakonid Fork
+			i(213030),	-- Rusty Garden Shears
+			i(213031),	-- Misshapen Drakonid Goblet
+			i(213032),	-- Warped Drakonid Jar
+			i(213033),	-- Brittle Blacksmith Tongs
+			i(213034),	-- Cracked Drakonid Bowl
+			i(213035),	-- Crusty Dracthyr Brush
+			i(213037),	-- Jagged Garden Trowel
+			i(213038),	-- Cracked Magnifying Glass
+			i(213039),	-- Thin Drakonid Spoon
+			i(213040),	-- Tarnished Djaradin Amulet
+			i(213041),	-- Desiccated Djaradin Scroll
+			i(213042),	-- Deteriorated Djaradin Banner
+			i(213043),	-- Brittle Djaradin Leather
+			i(213044),	-- Frayed Fang Amulet
+			i(213045),	-- Snapped Djaradin Necklace
+			i(213062),	-- Paradise's Golden Axe
+			i(213063),	-- Paradise's Ruby Axe
+			i(213064),	-- Paradise's Violet Axe
+			i(213065),	-- Lavish Floral Edge
+			i(213066),	-- Rosy Floral Edge
+			i(213067),	-- Violet Floral Edge
+			i(213068),	-- Lavish Floral Stalk
+			i(213069),	-- Rosy Floral Stalk
+			i(213070),	-- Pristine Floral Stalk
+			i(213071),	-- Sunny Floral Staff
+			i(213072),	-- Ruby Floral Staff
+			i(213073),	-- Faded Floral Staff
+			i(213075),	-- Sunny Bow-quet
+			i(213076),	-- Orchid Bow-quet
+			i(213077),	-- Lavender Bow-quet
+			i(213078),	-- Assassin's Bandolier
+			i(213084),	-- Ensemble: Spring Reveler's Lavender Apparel
+			i(213091),	-- Memo from Apothecary Hummel
+			i(213106),	-- Gladiator's Serrated Greatsword
+			i(213107),	-- Gladiator's Ragged Greatsword
+			i(213133),	-- Reese
+			i(213134),	-- Hap'he
+			i(213145),	-- Dark Ranger General's Hood
+			i(213146),	-- Dark Ranger General's Breastplate
+			i(213147),	-- Dark Ranger General's Gloves
+			i(213148),	-- Dark Ranger General's Spaulders
+			i(213149),	-- Dark Ranger General's Cinch
+			i(213150),	-- Dark Ranger General's Boots
+			i(213151),	-- Dark Ranger General's Chestguard
+			i(213152),	-- Dark Ranger General's Leggings
+			i(213153),	-- Dark Ranger General's Bracers
+			i(213154),	-- Dark Ranger General's Cloak
+			i(213155),	-- Dark Ranger General's Quiver
+			i(213158),	-- Ensemble: Dark Ranger General's Kit
+			i(213160),	-- Night Elven Bow
+			i(213161),	-- Titan Thunderbow
+			i(213162),	-- Blessed Bow of the Windseeker
+			i(213175),	-- Dusty Djaradin Tome
+			i(213176),	-- Preserved Isles Tome
+			i(213177),	-- Immaculate Tome
+			i(213179),	-- Cracked Draconic Tooth
+			i(213180),	-- Crumpled Map
+			i(213181),	-- A Tiny Dragon Goblet
+			i(213182),	-- Worry Stone
+			i(213183),	-- Makeshift Beaded Bracelet
+			i(213184),	-- Rock with Chewed Gum
+			i(213185),	-- Dusty Centaur Tome
+			i(213186),	-- Dusty Niffen Tome
+			i(213187),	-- Dusty Drakonid Tome
+			i(213188),	-- Dusty Dracthyr Tome
+			i(213189),	-- Preserved Dragonkin Tome
+			i(213190),	-- Preserved Djaradin Tome
+			i(213192),	-- Scratched-Out List of Names
+			i(213194),	-- Petrified Rations
+			i(213195),	-- Charred Doodle
+			i(213196),	-- Pressed Flower
+			i(213200),	-- Book of Horoscopes
+			i(213201),	-- Discarded Waterfowl Bones
+			i(213202),	-- A Tiny Explorer's Hat
+			i(213203),	-- Velvet Nightcap
+			i(213204),	-- Ruby-Studded Locket
+			i(213205),	-- Mad Scribblings
+			i(213206),	-- Charred Letter
+			i(213207),	-- A Tiny Ear Warmer
+			i(213208),	-- Pot of Pickled Ancheevies
+			i(213210),	-- Bloodied Banner Scrap
+			i(213211),	-- Petrified Flower Petals
+			i(213212),	-- Whalebone Knife
+			i(213213),	-- Dried Cave Fungus
+			i(213214),	-- Woven Lavareed Basket
+			i(213215),	-- Carved Votive Stone
+			i(213216),	-- Strip of Notched Leather
+			i(213274),	-- Archivist's Pathfinder
+			i(213275),	-- Archivist's Rockpuller
+			i(213276),	-- Archivist's Magnifying Mace
+			i(213277),	-- Smudged Snippet of Poetry
+			i(213357),	-- Crystal Scrying Bowl
+			i(213358),	-- Indelicately Excavated Skull
+			i(213359),	-- Cracked Drakonid Staff
+			i(213360),	-- Discarded Drakonid Amulet
+			i(213361),	-- Disquieting Children's Toy
+			i(213362),	-- Ancient Drakonid Candy
+			i(213363),	-- Molted Eye Skin
+			i(213364),	-- Empty Vial of Perfume
+			i(213365),	-- Carved Cave Crystal
+			i(213366),	-- Strip of Niffen Headwear
+			i(213367),	-- Discarded Claw Prototype
+			i(213368),	-- Scratch-and-Sniff Stone
+			i(213374),	-- Niffen Noseplug
+			i(213375),	-- Satchel of Buried Valuables
+			i(213377),	-- Mutliated Storybook
+			i(213380),	-- Unidentifiable Equine Fossil
+			i(213382),	-- Partial Centaur Hunting Map
+			i(213384),	-- Horsehair Doll
+			i(213385),	-- Stiff Brush
+			i(213386),	-- Unearthed Stone Arrowhead
+			i(213387),	-- Primitive Centaur Carving
+			i(213388),	-- Faded Centaur Painting
+			i(213389),	-- Ancient Centaur Diary
+			i(212382),	-- Fluorescent Splitblade
+			i(212635),	-- Historian's Utility Belt
+			i(212640),	-- Excavator's Trusty Satchel
+			i(213429),	-- Meticulous Archivist's Appendix
+			i(213536),	-- Priceless Artifact
+			i(213556),	-- Hoplet
 		})),
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			i(211927),	-- Tattered DreamleafS
@@ -1033,6 +1320,61 @@ root(ROOTS.Unsorted, {
 			i(211260),	-- Crimson Gladiator's Spear
 
 			i(208878),	-- Adventurer's Footlocker
+			--
+			i(203431),	-- Ensemble: Burden of Unrelenting Justice
+			i(206448),	-- Fyr'alath the Dreamrender
+			i(208578),	-- Concentrated Sophic Vellum
+			i(208581),	-- Radiant Fleck of Ash
+			i(208592),	-- Rune of Shadowbinding
+			i(208597),	-- Eadweard's Notes
+			i(208781),	-- Symbiotic Glowspore Grip
+			i(208782),	-- Symbiotic Glowspore Grip
+			i(208826),	-- Letter from Valunei
+			i(208839),	-- Rune of Adaptive Binding
+			i(208840),	-- Concentrated Sophic Vellum
+			i(208846),	-- Restored Dreamleaf
+			i(208887),	-- Erdan's Notes
+			i(209348),	-- Lydiara's Notes
+			i(209349),	-- Lydiara's Notes on Rune Reagents
+			i(209350),	-- Shalasar's Notes on Sophic Magics
+			i(209351),	-- Erden's Dreamleaf Grip
+			i(209352),	-- Prototype Binding Rune
+			i(209996),	-- Tethercoil Rune
+			i(209998),	-- Lydiara's Binding Rune
+			i(209999),	-- Lydiara's Rune of Shadowbinding
+			i(210001),	-- Prototype Order Vellum
+			i(210002),	-- Ashen Dowsing Rod
+			i(210003),	-- Shalasar's Sophic Vellum
+			i(210009),	-- Prototype Dreamleaf Grip
+			i(210010),	-- Erden's Notes on Symbiotic Spores
+			i(210011),	-- Shalasar's Notes on Sophic Magic
+			i(210012),	-- Erden's Symbiotic Glowspore Grip
+			i(210027),	-- Extracted Ashen Dust
+			i(210028),	-- Extracted Ashen Dust
+			i(210048),	-- Shalasar's Sophic Vellum
+			i(210199),	-- Tattered Dreamleaf
+			i(210207),	-- Empowered Restorative Symbiote
+			i(210223),	-- Unstable Element
+			i(210240),	-- Stabilized Element
+			i(210255),	-- Alydrus' Research Notes
+			i(210321),	-- The Reforging of the Tyr's Guard
+			i(210918),	-- Adaptive Cooling Salve
+			i(212591),	-- Mantle of Unrelenting Justice
+			i(212592),	-- Treads of Unrelenting Justice
+			i(207728),	-- Fyr'alath the Dreamrender
+			i(208576),	-- Thriving Restoration Mote
+			i(210222),	-- Resolved Element
+			i(190875),	-- Chilled Touch of the Condemned
+			i(190925),	-- Buttercup
+			i(210780),	-- Lesser Ember of Fyr'alath
+			i(210871),	-- Greater Ember of Fyr'alath
+			i(190887),	-- Highlord's Ceremonial Drape
+			i(190892),	-- Orange-Sleeved Shirt
+			i(213541),	-- Whelpling's Bountiful Chest
+			i(190671),	-- Tabard of Wild Might
+			i(190854),	-- Heavily Stitched Wallet
+			i(213580),	-- Heart-Lesion Helm
+			i(213581),	-- Heart-Lesion Helm
 			filter(MISC, {
 				------ Tame Hunter Pets ------
 				-- Check if These pop any QuestIDs we can source them properly
