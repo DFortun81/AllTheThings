@@ -20832,6 +20832,24 @@
 214346@@@Skylord Omnuron
 214347@@@Thisalee Crow
 214349@@@Tyrande Whisperwind
+10.2.0.52301
+206107@@@Eadweard Dalyngrigge
+208278@@@Wrathion
+208279@@@Scalecommander Emberthal
+208426@@@Scalecommander Emberthal
+208832@@@Eternus
+209601@@@Eadweard's Notes
+211660@@@Talthis
+211662@@@Valunei
+211664@@@Elisande
+212244@@@Hadwin
+212246@@@Nolaki
+212247@@@Travard
+212427@@@Eternus
+212554@@@Chromie
+212568@@@Keeper Tyr
+212580@@@Alexstrasza the Life-Binder
+214158@@@Nozdormu
 10.2.5.52206
 204728@@@Thieving Dreadsquall
 204730@@@Ruby Observer

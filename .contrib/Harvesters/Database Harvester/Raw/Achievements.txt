@@ -13381,6 +13381,12 @@
 18931@@@Storm Rider: Gold
 19027@@@Heroic Edition: Algarian Stormrider
 19030@@@Squally
+10.2.0.52301
+18861@@@<Hidden> ACCOUNT: Renown Campaign Complete - Tyr 4
+18933@@@<Hidden> 10.2 Tyr Campaign - Ch 04 - Mail Quest Push - Valunei's Letter (AAO)
+18958@@@Of the Tyr's Guard
+19391@@@[DNT] Hidden - Fyr'alath - Heroic/Mythic Marker
+19450@@@Fyr'alath the Dreamrender
 10.2.5.52206
 19400@@@Support Your Local Artisans
 19508@@@Love Language Expert
