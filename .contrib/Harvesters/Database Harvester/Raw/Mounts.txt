@@ -1765,3 +1765,6 @@
 432455@@@Noble Flying Carpet
 432558@@@Majestic Azure Peafowl
 432610@@@PH Red Hornstrider
+10.2.5.52330
+432610@@@Clayscale Hornstrider
+433281@@@Savage Blue Battle Turtle
