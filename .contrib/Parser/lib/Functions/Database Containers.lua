@@ -77,6 +77,7 @@ ItemDBConditional = CreateDatabaseContainer("ItemDBConditional", {
 });
 ObjectDB = CreateDatabaseContainer("ObjectDB");
 RecipeDB = CreateDatabaseContainer("RecipeDB");
+SpellDB = CreateDatabaseContainer("SpellDB");
 RecipeDBConditional = RecipeDB;
 --[[
 -- Proof of Concept:

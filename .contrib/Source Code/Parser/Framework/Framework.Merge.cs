@@ -4,7 +4,6 @@ using NLua;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 
 namespace ATT
 {
@@ -167,6 +166,9 @@ namespace ATT
                         break;
                     case "RecipeDB":
                         MergeRecipeDB(pair.Value);
+                        break;
+                    case "SpellDB":
+                        MergeSpellDB(pair.Value);
                         break;
                     case "ItemMountDB":
                         {
@@ -1044,57 +1046,72 @@ namespace ATT
         /// <summary>
         /// Merges some enumerable set of data, where each piece is an <see cref="IDictionary"/> containing an 'spellID'/'recipeID'[long] key value
         /// </summary>
-        public static void MergeRecipeDB(object data)
+        public static void MergeRecipeDB(object rawDb)
         {
-            // The format of the RecipeDB is a dictionary of RecipeID -> Values.
-            if (data is Dictionary<long, object> recipeDB)
+            DBMerge(rawDb, "recipeID");
+        }
+
+        /// <summary>
+        /// Merges some enumerable set of data, where each piece is an <see cref="IDictionary"/> containing an 'spellID'[long] key value
+        /// </summary>
+        public static void MergeSpellDB(object rawDb)
+        {
+            DBMerge(rawDb, "spellID");
+        }
+
+        private static void DBMerge(object rawDb, string keyID)
+        {
+            // The format of a typical DB is a dictionary of ID -> Values.
+            if (rawDb is Dictionary<long, object> db)
             {
-                foreach (var recipeValuePair in recipeDB)
-                {
-                    if (recipeValuePair.Value is IDictionary<string, object> recipe)
-                    {
-                        recipe["recipeID"] = recipeValuePair.Key;
-                        recipe["spellID"] = recipeValuePair.Key;
-                        Objects.MergeFromDB("recipeID", recipe);
-                        Objects.MergeFromDB("spellID", recipe);    // This is super dumb, but it fixes situations like /att spellid:101508. Since its key is a spellID, not a recipeID, it doesn't find it.
-                    }
-                    else
-                    {
-                        LogError("RecipeDB not in the correct format!");
-                        Log(CurrentFileName);
-                        Log(ToJSON(recipeValuePair.Value));
-                        Console.ReadLine();
-                    }
-                }
+                DBMerge(db, keyID);
             }
-            else if (data is List<object> recipes)
+            // We also support a raw List of objects which are Dictionaries.
+            else if (rawDb is List<object> dbList)
             {
-                foreach (var o in recipes)
-                {
-                    if (o is IDictionary<string, object> recipe)
-                    {
-                        if (recipe.TryGetValue("recipeID", out object recipeID) || recipe.TryGetValue("spellID", out recipeID))
-                        {
-                            recipe["recipeID"] = recipeID;
-                            recipe["spellID"] = recipeID;
-                            Objects.MergeFromDB("recipeID", recipe);
-                            Objects.MergeFromDB("spellID", recipe);    // This is super dumb, but it fixes situations like /att spellid:101508. Since its key is a spellID, not a recipeID, it doesn't find it.
-                        }
-                    }
-                    else
-                    {
-                        LogError("RecipeDB not in the correct format!");
-                        Log(CurrentFileName);
-                        Log(ToJSON(o));
-                        Console.ReadLine();
-                    }
-                }
+                DBMerge(dbList, keyID);
             }
             else
             {
-                LogError("RecipeDB not in the correct format!");
-                Log(CurrentFileName);
+                LogError($"DB:{CurrentFileName} not in the correct format!");
                 Console.ReadLine();
+            }
+        }
+
+        private static void DBMerge(Dictionary<long, object> db, string keyID)
+        {
+            foreach (var dbEntry in db)
+            {
+                if (dbEntry.Value is IDictionary<string, object> data)
+                {
+                    data[keyID] = dbEntry.Key;
+                    Objects.MergeFromDB(keyID, data);
+                }
+                else
+                {
+                    LogError($"DB:{CurrentFileName} not in the correct format!", dbEntry.Value);
+                    Console.ReadLine();
+                }
+            }
+        }
+
+        private static void DBMerge(List<object> dbList, string keyID)
+        {
+            foreach (var o in dbList)
+            {
+                if (o is IDictionary<string, object> data)
+                {
+                    if (data.TryGetValue(keyID, out long id))
+                    {
+                        data[keyID] = id;
+                        Objects.MergeFromDB(keyID, data);
+                    }
+                }
+                else
+                {
+                    LogError($"DB:{CurrentFileName} not in the correct format!", o);
+                    Console.ReadLine();
+                }
             }
         }
     }
