@@ -9728,6 +9728,15 @@ local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
 local C_MountJournal_GetMountIDs = C_MountJournal.GetMountIDs;
 local GetSpellInfo = GetSpellInfo;
 local GetSpellLink = GetSpellLink;
+
+local PerCharacterMountSpells = {
+	[75207] = 1,	-- Vashj'ir Seahorse
+	[148970] = 1,	-- Felsteed (Green)
+	[148972] = 1,	-- Dreadsteed (Green)
+	[241857] = 1,	-- Druid Lunarwing
+	[231437] = 1,	-- Druid Lunarwing (Owl)
+}
+
 local SpellIDToMountID = setmetatable({}, { __index = function(t, id)
 	local allMountIDs = C_MountJournal_GetMountIDs();
 	if allMountIDs and #allMountIDs > 0 then
@@ -9831,9 +9840,12 @@ local mountFields = {
 	end,
 	["collectibleAsCost"] = app.CollectibleAsCost,
 	["collected"] = function(t)
-		if ATTAccountWideData.Spells[t.spellID] then return 1; end
-		if app.IsSpellKnownHelper(t.spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
-			ATTAccountWideData.Spells[t.spellID] = 1;
+		local spellID = t.spellID;
+		if ATTAccountWideData.Spells[spellID] then return 1; end
+		if app.IsSpellKnownHelper(spellID) or (t.questID and IsQuestFlaggedCompleted(t.questID)) then
+			ATTAccountWideData.Spells[spellID] = 1;
+			-- need to persist certain mounts in character table as well since it is otherwise lost on account recalculate
+			if PerCharacterMountSpells[spellID] then app.CurrentCharacter.Spells[spellID] = 1; end
 			return 1;
 		end
 	end,
