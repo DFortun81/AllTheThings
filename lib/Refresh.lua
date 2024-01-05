@@ -284,17 +284,6 @@ local function RefreshCollections()
 	end
 	while InCombatLockdown() do coroutine.yield(); end
 
-	-- Harvest Title Collections
-	local acctTitles, charTitles, charGuid = ATTAccountWideData.Titles, {}, app.GUID;
-	for i=1,GetNumTitles(),1 do
-		if IsTitleKnown(i) then
-			if not acctTitles[i] then print("Added Title",app:Linkify(i,app.Colors.ChatLink,"search:titleID:"..i)) end
-			charTitles[i] = 1;
-		end
-	end
-	currentCharacter.Titles = charTitles;
-	coroutine.yield();
-
 	-- Refresh Mounts / Pets
 	local acctSpells, charSpells = ATTAccountWideData.Spells, currentCharacter.Spells;
 	for _,mountID in ipairs(C_MountJournal_GetMountIDs()) do
@@ -390,6 +379,7 @@ local function RefreshCollections()
 	-- Execute the OnRefreshCollections handlers.
 	for i,handler in ipairs(app.EventHandlers.OnRefreshCollections) do
 		handler();
+		coroutine.yield();
 	end
 
 	app:RecalculateAccountWideData();
