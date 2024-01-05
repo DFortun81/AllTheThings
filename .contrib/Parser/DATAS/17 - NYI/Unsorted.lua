@@ -1309,7 +1309,6 @@ root(ROOTS.Unsorted, {
 			i(210871),	-- Greater Ember of Fyr'alath
 			i(190887),	-- Highlord's Ceremonial Drape
 			i(190892),	-- Orange-Sleeved Shirt
-			i(213541),	-- Whelpling's Bountiful Chest
 			i(190671),	-- Tabard of Wild Might
 			i(190854),	-- Heavily Stitched Wallet
 			i(213580),	-- Heart-Lesion Helm

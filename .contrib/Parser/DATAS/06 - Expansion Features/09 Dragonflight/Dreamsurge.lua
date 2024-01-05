@@ -351,6 +351,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(209360),	-- Dreambound Staff
 						i(209359),	-- Dreambound Warglaive
 					}),
+					i(213541),	-- Whelpling's Bountiful Chest
 					i(209831),	-- Wyrm's Bountiful Chest
 				}),
 			}),
