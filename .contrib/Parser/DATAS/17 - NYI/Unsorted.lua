@@ -2061,7 +2061,6 @@ root(ROOTS.Unsorted, {
 				i(198832),	-- Conjured Blubbery Muffin
 				i(198833),	-- Conjured Celebratory Cake
 				i(198831),	-- Conjured Snow in a Cone
-				i(198830),	-- Conjured Tasty Hatchling's Treat
 				i(200967),	-- Conquest
 				i(200950),	-- Consortium Packaging String
 				i(200774),	-- Contained Void Sample

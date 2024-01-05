@@ -587,6 +587,7 @@ i(194886);	-- Tazenrath's Torn Wing
 i(194973);	-- Reclaim Concoctions
 i(195572);	-- Empty Elixir
 i(198390);	-- Milling
+i(198830);	-- Conjured Tasty Hatchling's Treat
 i(200685);	-- Enchanted Compass
 i(200764);	-- Slimy Shinies
 i(200768);	-- Assorted Salamanther Lures
