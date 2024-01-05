@@ -524,11 +524,7 @@ root(ROOTS.Zones, {
 			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
-				-- #if AFTER CATA
-				title(79),	-- % the Diplomat
-				-- #else
 				title(48),	-- % the Diplomat
-				-- #endif
 			}),
 		})),
 		applyclassicphase(TBC_PHASE_ONE, achWithReps(943, { 941, 970, 576 }, {	-- The Diplomat
@@ -538,11 +534,7 @@ root(ROOTS.Zones, {
 			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
 			["races"] = HORDE_ONLY,
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
-				-- #if AFTER CATA
-				title(79),	-- % the Diplomat
-				-- #else
 				title(48),	-- % the Diplomat
-				-- #endif
 			}),
 		})),
 		ach(4958, {		-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood

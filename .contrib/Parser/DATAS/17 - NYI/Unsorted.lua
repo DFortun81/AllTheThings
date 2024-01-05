@@ -2066,7 +2066,6 @@ root(ROOTS.Unsorted, {
 				i(200950),	-- Consortium Packaging String
 				i(200774),	-- Contained Void Sample
 				i(200248),	-- Cooked Book
-				i(194721),	-- Cracked Hourglass
 				i(192769),	-- Cracked Spear
 				i(197853),	-- Critter Kebab
 				i(191422),	-- Crystal Magical Lockpick
@@ -2079,14 +2078,12 @@ root(ROOTS.Unsorted, {
 				i(198440),	-- Discounted Meat
 				i(194692),	-- Distilled Fish Juice
 				i(200262),	-- Do-It-Yourself Part Building Kit
-				i(200305),	-- Dracthyr Water Rations
 				i(191287),	-- Dragonscale Expedition Crate
 				i(200850),	-- Dream-Infused Seed
 				i(200554),	-- Dropcap Head
 				i(201722),	-- Edicts of the Prime Designate, Volume 742
 				i(194678),	-- Elemental Crystal
 				i(201327),	-- Emerald Dreamtime
-				i(195572),	-- Empty Elixir
 				i(197854),	-- Enchanted Argali Tenderloin
 				i(200767),	-- Energized Crystal
 				i(200818),	-- Eternal Flame
@@ -2185,7 +2182,6 @@ root(ROOTS.Unsorted, {
 				i(200621),	-- Soothing Incense
 				i(199184),	-- Spellbound Bone Pipes
 				i(194686),	-- Spicy Musken Drummies
-				i(200304),	-- Stored Dracthyr Rations
 				i(195465),	-- Stormwing Egg Breakfast
 				i(200787),	-- Strong Exotic Spices
 				i(199074),	-- Studies of Arcane Magic
@@ -2196,7 +2192,6 @@ root(ROOTS.Unsorted, {
 				i(200639),	-- Talisman of Ohn'ahra
 				i(200637),	-- Talisman of the Maruuk
 				i(198842),	-- Tallstrider Feather
-				i(194886),	-- Tazenrath's Torn Wing
 				i(201436),	-- Temporally-Locked Sands
 				i(200693),	-- Terata Leaves
 				i(200594),	-- Thaelin's Second Favorite Comb
@@ -2219,7 +2214,6 @@ root(ROOTS.Unsorted, {
 				i(200696),	-- Winter Berries
 				i(200810),	-- Wooden Stonegrabber Figurine
 				i(200807),	-- Wooden Ursine Figure
-				i(194742),	-- Worn Book
 				i(194889),	-- XD-57 "Bullseye" Guided Rocket Kit
 				i(187523),	-- Your Reward [DNT]
 				i(191045),	-- Yu's Bloodied Journal Entry

@@ -567,12 +567,25 @@ i(202065);	-- Static Sand
 ------------------
 --- Vendor (White) ---
 i(194685);	-- Dragonspring Water
+i(200304);	-- Stored Dracthyr Rations
+i(200305);	-- Dracthyr Water Rations
 
 --- Trash ---
+i(193860);	-- Snapped Wand
+i(193849);	-- Emptied Satchel
+i(194035);	-- Glittering Diamonds
+i(194036);	-- Exquisite Necklace
+i(194038);	-- Gilded Blade
+i(194071);	-- Gold Ring
+i(194083);	-- Crushed Stone
 i(194537);	-- Fiddle with Draconium Fabric Cutters
 i(194538);	-- Fiddle with Khaz'gorite Fabric Cutters
 i(194709);	-- Prospecting
+i(194721);	-- Cracked Hourglass
+i(194742);	-- Worn Book
+i(194886);	-- Tazenrath's Torn Wing
 i(194973);	-- Reclaim Concoctions
+i(195572);	-- Empty Elixir
 i(198390);	-- Milling
 i(200685);	-- Enchanted Compass
 i(200764);	-- Slimy Shinies

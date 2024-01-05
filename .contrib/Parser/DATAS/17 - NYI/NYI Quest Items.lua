@@ -219,18 +219,15 @@ root(ROOTS.NeverImplemented, {
 				i(191938),	-- Congealing Essence
 				i(200529),	-- Constructed Arcana
 				i(193404),	-- Core of Aqueous Corruption
-				i(187853),	-- Crate of Warscales
 				i(189974),	-- Creekborne's Core
 				i(191317),	-- Crude Tarasek Key
 				i(194515),	-- Crumbling Event Planner
-				i(194083),	-- Crushed Stone
 				i(194053),	-- Crystal Quill
 				i(194971),	-- Crystalized Draconium
 				i(193403),	-- Crystalline Focus
 				i(194901),	-- Curved Horns
 				i(193402),	-- Decatriarch's Fetish
 				i(191086),	-- Decayed Flower
-				i(187855),	-- Decayed Rations
 				i(200561),	-- Deepwater Lure
 				i(200124),	-- Disoriented Wishtail
 				i(194899),	-- Dispelling Wand
@@ -254,7 +251,6 @@ root(ROOTS.NeverImplemented, {
 				i(192478),	-- Elemental Focus
 				i(194428),	-- Elemental Soul Cage NYI
 				i(192558),	-- Emerald Tear
-				i(193849),	-- Emptied Satchel
 				i(191117),	-- Enchanted Claws
 				i(193867),	-- Enchanted Relics
 				i(193858),	-- Enchanted Tools
@@ -265,7 +261,6 @@ root(ROOTS.NeverImplemented, {
 				i(200119),	-- Everblazing Fireheart
 				i(192496),	-- Exhumed Hunter's Spear
 				i(193839),	-- Explosive Ash
-				i(194036),	-- Exquisite Necklace
 				i(194564),	-- Extra-Delicious Riverbeast Meat
 				i(191120),	-- Extra-shiny Gorloc Scale
 				i(191902),	-- Fallen Defender's Ring
@@ -292,14 +287,11 @@ root(ROOTS.NeverImplemented, {
 				i(192547),	-- Garden Seed
 				i(194449),	-- Giant Core
 				i(191115),	-- Giant Temporal Mote
-				i(194038),	-- Gilded Blade
 				i(198345),	-- Glass Bead
 				i(194324),	-- Gleamfish
 				i(194552),	-- Glimmering Ramblekelp Bulb
-				i(194035),	-- Glittering Diamonds
 				i(189126),	-- Gnoll "Lances"
 				i(194328),	-- Gnoll-Worn Cloth
-				i(194071),	-- Gold Ring
 				i(194427),	-- Gorloc Mucus
 				i(191088),	-- Gorloc Scrimshaw
 				i(200667),	-- Grim Morsel
@@ -312,10 +304,6 @@ root(ROOTS.NeverImplemented, {
 				i(193405),	-- Headteacher's Ledger
 				i(193416),	-- Holographic Distributor
 				i(191908),	-- Horn of Scorxia
-				i(191752),	-- Horn Signet
-				i(191732),	-- Horn Signet of Katrinasa
-				i(191731),	-- Horn Signet of Rethenash
-				i(191730),	-- Horn Signet of Tenezeth
 				i(198795),	-- Hornstrider Scale
 				i(193395),	-- Hourglass of Shifting Sands
 				i(198516),	-- Hudson's Final Drawing
@@ -403,7 +391,6 @@ root(ROOTS.NeverImplemented, {
 				i(194696),	-- Recycled Crawler Mine
 				i(191538),	-- Relic Fragment
 				i(191463),	-- Reliquary Pillow
-				i(191733),	-- Report: Infestation
 				i(191285),	-- Requisition Job: BLACKSMITH - Tent Stakes
 				i(191284),	-- Requisition Job: TAILOR - Tent Canvas Repairs
 				i(191283),	-- Requistion Job: Cold Weather Insulation
@@ -434,7 +421,6 @@ root(ROOTS.NeverImplemented, {
 				i(198091),	-- Slightly Used Recrafted Armor
 				i(193206),	-- Slyvern Talon
 				i(189183),	-- Smelly Ooze
-				i(193860),	-- Snapped Wand
 				i(198818),	-- Sneaky Mud Mask
 				i(191245),	-- Sockeye Salmon
 				i(198343),	-- Soft Ruby Feather
@@ -443,7 +429,6 @@ root(ROOTS.NeverImplemented, {
 				i(193396),	-- Spellbound Musken-Hide Satchel
 				i(194551),	-- Spicy Lava Spice
 				i(194509),	-- Springborn Core
-				i(187852),	-- Stack of Weapons
 				i(192752),	-- Staff Headpiece
 				i(188959),	-- Sticky Gnoll Key
 				i(191719),	-- Sticky Key
@@ -495,8 +480,6 @@ root(ROOTS.NeverImplemented, {
 				i(198443),	-- Titan Temple Relic
 				i(200123),	-- Torrential Lily
 				i(199199),	-- Tough Moose Flank
-				i(187948),	-- Toxin Gland
-				i(195044),	-- Try Again
 				i(194424),	-- Tusk Marrow
 				i(192188),	-- Tuskarr Fishing Gear
 				i(193859),	-- Twice-Burnt Potato
