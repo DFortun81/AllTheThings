@@ -3,7 +3,7 @@
 --------------------------------------------
 STRANGLETHORN_FISHING_EXTRAVAGANZA_HEADER = createHeader({
 	readable = "Stranglethorn Fishing Extravaganza",
-	icon = _.asset("Holiday_STV_Fishing"),
+	icon = [[_.asset("Holiday_STV_Fishing")]],
 	eventID = EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA,
 	text = {
 		en = "Stranglethorn Fishing Extravaganza",
