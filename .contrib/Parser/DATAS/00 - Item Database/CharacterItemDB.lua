@@ -1,6 +1,10 @@
 -- This file will combine itemIDs for customization and questIDs so they dont have to be in the source files
 local Items = ItemDBConditional;
+-- #IF ANYCLASSIC
+local Spells = RecipeDB;
+-- #ELSE
 local Spells = SpellDB;
+-- #ENDIF
 local iq = function(itemID, questID, classID, raceID)
 	if not itemID or itemID < 1 then
 		error("'characterUnlockQuestID' without a valid itemID is not currently supported")
