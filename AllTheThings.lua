@@ -55,6 +55,7 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
+app.DESCRIPTION_SEPARATOR = DESCRIPTION_SEPARATOR
 local rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove, string_lower,
 		string_match, sformat, string_gsub, strsplit, GetTimePreciseSec, type, math_floor
 	= rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove, string.lower,
