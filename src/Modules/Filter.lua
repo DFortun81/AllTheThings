@@ -130,17 +130,21 @@ end);
 
 -- MinReputation
 local ExclusiveFactions = {
-	932,	-- The Aldor
-	934,	-- The Scryers
-	1104,	-- Frenzyheart Tribe
-	1105,	-- The Oracles
-}
+	[932]=1,	-- The Aldor
+	[934]=1,	-- The Scryers
+	[1104]=1,	-- Frenzyheart Tribe
+	[1105]=1,	-- The Oracles
+};
 DefineToggleFilter("MinReputation", CharacterFilters,
 function(item)
 	local minReputation = item.minReputation;
-	if minReputation and ExclusiveFactions[minReputation[1]] then
-		if minReputation[2] > (select(6, GetFactionInfoByID(minReputation[1])) or 0) then
-			return false;
+	if minReputation then
+		if ExclusiveFactions[minReputation[1]] then
+			if minReputation[2] > (select(6, GetFactionInfoByID(minReputation[1])) or 0) then
+				return false;
+			else
+				return true;
+			end
 		else
 			return true;
 		end
