@@ -27,6 +27,7 @@ local COOKING_AWARD_GROUPS = {
 local FISHING_AWARD_GROUPS = {
 	i(67414, {	-- Bag of Shiny Things
 		["timeline"] = { "added 4.0.1.12984" },
+		["sym"] = {{"fill"}},
 	}),
 };
 local JEWELCRAFTING_AWARD_GROUPS = {
@@ -438,7 +439,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = FISHING_AWARD_GROUPS,
+					["groups"] = appendAllGroups({
+							i(58949),	-- Stag Eye
+						},FISHING_AWARD_GROUPS),
 				}),
 				q(7832, {	-- Additional Runecloth [Darkspear Trolls]
 					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>

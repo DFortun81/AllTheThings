@@ -26,6 +26,7 @@ local COOKING_AWARD_GROUPS = {
 local FISHING_AWARD_GROUPS = {
 	i(67414, {	-- Bag of Shiny Things
 		["timeline"] = { "added 4.0.1.12984" },
+		["sym"] = {{"fill"}},
 	}),
 };
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
@@ -1824,7 +1825,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = {{"select","itemID",
 						16059,	-- Common Brown Shirt
 						3428,	-- Common Gray Shirt
-						16060,	-- Common White Shirt	
+						16060,	-- Common White Shirt
 						837,    -- Heavy Weave Armor
 						3589,    -- Heavy Weave Belt
 						3590,    -- Heavy Weave Bracers

@@ -69,7 +69,7 @@ appendGroups = function(...)
 		return groups;
 	end
 end
--- Appends together multiple arrays of groups. This way multiple portions of a single group can be created separately and joined together for one final 'groups' container
+-- Appends together multiple arrays of groups (into the first provided group). This way multiple portions of a single group can be created separately and joined together for one final 'groups' container
 appendAllGroups = function(g, ...)
 	local arrs = select("#", ...);
 	if arrs > 0 then
@@ -1392,7 +1392,7 @@ createHeader = function(data)
 			end
 			data.eventSchedule = schedule .. "\n}";
 		end
-		
+
 		-- Try to find the headerID assignment from the readable table.
 		local headerID = HeaderAssignments[data.readable];
 		if not headerID then

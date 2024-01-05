@@ -570,6 +570,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
+					["groups"] = {
+						i(69907),	-- Corpse Worm
+					},
 				}),
 				q(29332, {	-- Lily, Oh Lily
 					["qg"] = 4552,	-- Eunice Burch

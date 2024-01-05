@@ -26,6 +26,7 @@ local COOKING_AWARD_GROUPS = {
 local FISHING_AWARD_GROUPS = {
 	i(67414, {	-- Bag of Shiny Things
 		["timeline"] = { "added 4.0.1.12984" },
+		["sym"] = {{"fill"}},
 	}),
 };
 local JEWELCRAFTING_AWARD_GROUPS = {
