@@ -427,7 +427,7 @@ for key,value in pairs({
 	[-1000289] = _.asset("Holiday_Pilgrim"),
 	[-1000290] = _.asset("Holiday_Pirate"),
 	[-1000291] = "Interface/Icons/calendar_secretsofazerothstart",
-	[-1000292] = "Interface/Icons/inv_misc_fish_06",
+	[-1000292] = _.asset("Holiday_STV_Fishing"),
 	[-1000293] = _.asset("Holiday_GnomeRun"),
 	[-1000295] = _.asset("Difficulty_Timewalking"),
 	[-1000296] = _.asset("Holiday_Trialofstyle"),
