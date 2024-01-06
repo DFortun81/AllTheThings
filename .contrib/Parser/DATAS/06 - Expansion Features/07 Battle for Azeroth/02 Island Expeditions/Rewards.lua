@@ -701,6 +701,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 					i(166501, {	-- Soggy Page
 						["description"] = "|CFFFF0000Turn in to Collector Kojo in Stormsong Valley (Alliance) or Zuldazar (Horde) for Tortollan Seekers rep.|r",
 					}),
+					i(173736),	-- Layered Information Kernel of E-steam
+					i(174521),	-- Transferable Kernel of E-steam
 					i(163470),	-- Ancient Crypt Key
 					i(163478),	-- Battered Twilight Scale
 					i(163472),	-- Bloodwake Drinking Horn

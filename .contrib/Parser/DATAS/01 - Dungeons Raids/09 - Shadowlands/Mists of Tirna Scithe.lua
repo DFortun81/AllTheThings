@@ -131,6 +131,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 						ach(14413),	-- Mythic: Mists of Tirna Scithe
 						ach(14382),	-- Mythic: Mists of Tirna Scithe Guild Run
 						ach(14375),	-- Hunger for Knowledge
+						i(183623),	-- Spinemaw Gormling
 					},
 				}),
 			}),
