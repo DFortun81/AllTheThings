@@ -68,11 +68,11 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 						},
 					}),
 					q(11130, {	-- Oooh, Shinies!
-						["qg"] = 19227,	-- Griftah (Shattrath)
-						["coord"] = { 65.6, 68.8, SHATTRATH_CITY },
-						["cost"] = {
-							{ "i", 33010, 1 },	-- Griftah's Note
+						["providers"] = {
+							{ "n", 19227 },	-- Griftah
+							{ "i", 33010 },	-- Griftah's Note
 						},
+						["coord"] = { 65.6, 68.8, SHATTRATH_CITY },
 						["isBreadcrumb"] = true,
 						-- #if BEFORE CATA
 						["lvl"] = 70,
@@ -102,7 +102,10 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_FOUR, {
 						-- #endif
 						["groups"] = {
 							objective(1, {	-- 0/1 Budd's Map of Zul'Aman
-								["provider"] = { "i", 33013 },	-- Budd's Map of Zul'Aman
+								["providers"] = {
+									{ "i",  33013 },	-- Budd's Map of Zul'Aman
+									{ "o", 186733 },	-- The Map of Zul'Aman
+								},
 								["description"] = "Right side before bear boss.",
 							}),
 							i(34067),	-- Tattered Hexcloth Sack
