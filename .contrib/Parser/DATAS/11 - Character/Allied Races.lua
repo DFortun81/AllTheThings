@@ -600,6 +600,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["provider"] = { "n", 160232 },	-- Christy Punchcog
 				["coord"] = { 73.1, 33.4, MECHAGON },
 				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(172511),	-- Neural Accelerator (QI!)
+					i(173026),	-- Omni Electromagnetic Amplifier (QI!)
+					i(173028),	-- Flux Energized Servos (QI!)
+				},
 			}),
 			q(57492, {	-- Him?
 				["sourceQuests"] = { 57491 },	-- Better... Stronger... Less Dead
@@ -618,6 +623,9 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["provider"] = { "n", 160232 },	-- Christy Punchcog
 				["coord"] = { 73.5, 31.8, MECHAGON },
 				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(173302),	-- Spark Reactor (QI!)
+				},
 			}),
 			q(57496, {	-- Ascension
 				["sourceQuests"] = { 57494 },	-- A Strong Heart
