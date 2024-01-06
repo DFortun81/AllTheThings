@@ -1223,6 +1223,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77584, {	-- Hunt for the Rune
+							["qg"] = 3154,	-- Jen'shan <Hunter Trainer>
+							["coord"] = { 42.8, 69.2, DUROTAR },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { HUNTER },
+							["races"] = { ORC },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Chimera Shot
+									["provider"] = { "i", 206168 },	-- Rune of the Chimera
+									["cr"] = 3124,	-- Scorpid Worker
+								}),
+								recipe(410121),	-- Engrave Gloves - Chimera Shot
+								i(2125),	-- Cracked Leather Gloves
+							},
+						})),
+						-- #endif
 						q(25172, {	-- Invaders In Our Home
 							["qg"] = 3143,	-- Gornek
 							["sourceQuest"] = 25126,	-- Cutting Teeth
@@ -1309,6 +1327,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "removed 4.0.3" },
 							["races"] = HORDE_ONLY,
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77590, {	-- Rugged Terrain
+							["qg"] = 3154,	-- Jen'shan <Hunter Trainer>
+							["coord"] = { 42.8, 69.2, DUROTAR },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { HUNTER },
+							["races"] = { TROLL },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Chimera Shot
+									["provider"] = { "i", 206168 },	-- Rune of the Chimera
+									["cr"] = 3124,	-- Scorpid Worker
+								}),
+								recipe(410121),	-- Engrave Gloves - Chimera Shot
+								i(2125),	-- Cracked Leather Gloves
+							},
+						})),
+						-- #endif
 						q(3089, {	-- Rune-Inscribed Parchment
 							["providers"] = {
 								{ "n", 3143 },	-- Gornek
@@ -1330,18 +1366,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "removed 7.0.3" },
 							["races"] = { TROLL },
 							["classes"] = { SHAMAN },
-						}),
-						q(31157, {	-- Tiger Palm
-							["qg"] = 63296,	-- Gato
-							["coord"] = { 42.6, 68.4, VALLEY_OF_TRIALS },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
-							["races"] = { ORC },
-							["classes"] = { MONK },
-							["groups"] = {
-								i(87265, {	-- Tiger Palm Wraps
-									["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
-								}),
-							},
 						}),
 						q(25129, {	-- Sarkoth
 							["qg"] = 3287,	-- Hana'zua
@@ -1500,6 +1524,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 										{ "o", 178087 },	-- Thazz'ril's Pick
 									},
 									["coord"] = { 43.8, 53.8, DUROTAR },
+								}),
+							},
+						}),
+						q(31157, {	-- Tiger Palm
+							["qg"] = 63296,	-- Gato
+							["coord"] = { 42.6, 68.4, VALLEY_OF_TRIALS },
+							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["races"] = { ORC },
+							["classes"] = { MONK },
+							["groups"] = {
+								i(87265, {	-- Tiger Palm Wraps
+									["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
 								}),
 							},
 						}),

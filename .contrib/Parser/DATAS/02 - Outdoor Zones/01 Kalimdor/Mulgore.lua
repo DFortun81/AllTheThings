@@ -47,6 +47,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77649, {	-- A Hunter's Strength
+							["qg"] = 3061,	-- Lanka Farshot <Hunter Trainer>
+							["coord"] = { 44.2, 75.8, MULGORE },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { HUNTER },
+							["races"] = { TAUREN },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Chimera Shot
+									["provider"] = { "i", 206168 },	-- Rune of the Chimera
+									["coord"] = { 62.6, 79.8, MULGORE },
+									["cr"] = 2954,	-- Bristleback Battleboar
+								}),
+								recipe(410121),	-- Engrave Gloves - Chimera Shot
+								i(2125),	-- Cracked Leather Gloves
+							},
+						})),
+						-- #endif
 						q(24857, {	-- Attack on Camp Narache
 							["providers"] = {
 								{ "o", 3076 },	-- Dirt-stained Map

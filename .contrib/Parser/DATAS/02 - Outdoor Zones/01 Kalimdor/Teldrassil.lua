@@ -66,6 +66,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77568, {	-- A Hunter's Strength
+							["qg"] = 3596,	-- Ayanna Everstride <Hunter Trainer>
+							["coord"] = { 58.6, 40.6, TELDRASSIL },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { HUNTER },
+							["races"] = { NIGHTELF },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Chimera Shot
+									["provider"] = { "i", 206168 },	-- Rune of the Chimera
+									["coord"] = { 56.8, 26.6, TELDRASSIL },
+									["cr"] = 1994,	-- Githyiss the Vile
+								}),
+								recipe(410121),	-- Engrave Gloves - Chimera Shot
+								i(2125),	-- Cracked Leather Gloves
+							},
+						})),
+						-- #endif
 						q(31168, {	-- Calligraphed Sigil
 							["providers"] = {
 								{ "n", 2077 },	-- Melithar Staghelm

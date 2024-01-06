@@ -710,6 +710,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(2125),	-- Cracked Leather Gloves
 							},
 						})),
+						applyclassicphase(SOD_PHASE_ONE, q(77660, {	-- Trek Through the Caves
+							["qg"] = 895,	-- Thorgas Grimson <Hunter Trainer>
+							["coord"] = { 29, 67.4, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { HUNTER },
+							["races"] = { DWARF },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Chimera Shot
+									["providers"] = {
+										{ "o", 405628 },	-- Frostmane Loot Cache
+										{ "i", 206168 },	-- Rune of the Chimera
+									},
+									["coord"] = { 30.8, 80.1, DUN_MOROGH },
+								}),
+								recipe(410121),	-- Engrave Gloves - Chimera Shot
+								i(2125),	-- Cracked Leather Gloves
+							},
+						})),
 						-- #endif
 						q(24489, {	-- Trolling for Information
 							["qg"] = 1354,	-- Apprentice Soren
