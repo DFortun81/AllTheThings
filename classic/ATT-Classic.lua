@@ -53,8 +53,8 @@ local GetItemInfoInstant = _G["GetItemInfoInstant"];
 local GetItemCount = _G["GetItemCount"];
 local C_ToyBox, PlayerHasToy = _G["C_ToyBox"], _G["PlayerHasToy"];
 local InCombatLockdown = _G["InCombatLockdown"];
-local GetSpellInfo, IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown, IsTitleKnown =
-	  GetSpellInfo, IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown, IsTitleKnown;
+local GetSpellInfo, IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown =
+	  GetSpellInfo, IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown;
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 
@@ -247,18 +247,6 @@ app.SetDataMember = SetDataMember;
 app.GetDataMember = GetDataMember;
 app.SetDataSubMember = SetDataSubMember;
 app.GetDataSubMember = GetDataSubMember;
-app.SetAccountCollected = function()
-	app.print("SetCollected not initialized yet...");
-end;
-app.SetAccountCollectedForSubType = function()
-	app.print("SetCollectedForSubType not initialized yet...");
-end
-app.SetCollected = function()
-	app.print("SetCollected not initialized yet...");
-end;
-app.SetCollectedForSubType = function()
-	app.print("SetCollectedForSubType not initialized yet...");
-end
 
 local backdrop = {
 	bgFile = "Interface/Tooltips/UI-Tooltip-Background",
@@ -7882,167 +7870,6 @@ end)();
 	end
 end)();
 
--- Title Lib
-(function()
-local function StylizePlayerTitle(title, style, me)
-	if title then
-		if style == 0 then
-			-- Prefix
-			return title .. me;
-		elseif style == 1 then
-			-- Player Name First
-			return me .. title;
-		elseif style == 2 then
-			-- Player Name First (with space)
-			return me .. " " .. title;
-		elseif style == 3 then
-			-- Comma Separated
-			return me .. ", " .. title;
-		end
-	else
-		return title or "??";
-	end
-end
-local OnUpdateForSpecificGender = function(t)
-	if not (app.MODE_DEBUG_OR_ACCOUNT or t.playerGender == UnitSex("player")) then
-		t.visible = false;
-		return true;
-	elseif t.parent.titleIDs then
-		UpdateGroup(t.parent, t);
-		t.visible = false;
-		return true;
-	end
-end
-local OnUpdateForGenderedTitle = function(t)
-	if not app.MODE_DEBUG_OR_ACCOUNT then
-		t.progress = nil;
-		t.total = nil;
-		t.g = nil;
-	else
-		if not t.titleObjects then
-			local titleObjects = {};
-			for index,titleID in ipairs(t.titleIDs) do
-				local titleObject = app.CreateTitle(titleID, { ["playerGender"] = index == 1 and 2 or 3, ["OnUpdate"] = OnUpdateForSpecificGender });
-				titleObject.parent = t;
-				tinsert(titleObjects, titleObject);
-			end
-			t.titleObjects = titleObjects;
-		end
-		local g = {};
-		for index,titleObject in ipairs(t.titleObjects) do
-			if titleObject.titleID ~= t.titleID then tinsert(g, titleObject); end
-		end
-		if #g > 0 then t.g = g; end
-	end
-end
-app.CreateTitle = app.CreateClass("Title", "titleID", {
-	["icon"] = function(t)
-		return "Interface\\Icons\\INV_Misc_Horn_01";
-	end,
-	["description"] = function(t)
-		return L["TITLES_DESC"];
-	end,
-	["text"] = function(t)
-		return "|c" .. app.Colors.Account .. (t.name or RETRIEVING_DATA) .. "|r";
-	end,
-	["name"] = function(t)
-		return StylizePlayerTitle(t.titleName, t.style, UnitName("player"));
-	end,
-	["playerGender"] = function(t)
-		return UnitSex("player");
-	end,
-	["titleName"] = function(t)
-		return GetTitleName(t.titleID);
-	end,
-	["title"] = function(t)
-		return StylizePlayerTitle(t.titleName, t.style, "("..CALENDAR_PLAYER_NAME..")");
-	end,
-	["style"] = function(t)
-		local name = t.titleName;
-		if name then
-			local first = string.sub(name, 1, 1);
-			if first == " " then
-				-- Suffix
-				first = string.sub(name, 2, 2);
-				if first == string.upper(first) then
-					-- Comma Separated
-					return 3;
-				end
-
-				-- Player Name First
-				return 1;
-			else
-				local last = string.sub(name, -1);
-				if last == " " then
-					-- Prefix
-					return 0;
-				end
-
-				-- Suffix
-				if first == string.lower(first) then
-					-- Player Name First with a space
-					return 2;
-				end
-
-				-- Comma Separated
-				return 3;
-			end
-		end
-
-		return 1;	-- Player Name First
-	end,
-	["collectible"] = function(t)
-		return app.Settings.Collectibles.Titles;
-	end,
-	["trackable"] = app.ReturnTrue,
-	["collected"] = function(t)
-		local titleID = t.titleID;
-		return app.SetCollected(t, "Titles", titleID, IsTitleKnown(titleID));
-	end,
-	["saved"] = function(t)
-		return IsTitleKnown(t.titleID);
-	end,
-	["OnUpdateForSpecificGender"] = function(t)
-		return OnUpdateForSpecificGender;
-	end,
-},
-"WithGender", {
-	collected = function(t)
-		local ids, acctTitles, charTitles = t.titleIDs, ATTAccountWideData.Titles, app.CurrentCharacter.Titles;
-		local m, f = ids[1], ids[2];
-		local alreadyHaveOne = charTitles[m] or charTitles[f];
-		local collectedM = app.SetCollected(nil, "Titles", m, IsTitleKnown(m));
-		local collectedF = app.SetCollected(nil, "Titles", f, IsTitleKnown(f));
-		if collectedM == 1 or collectedF == 1 then
-			if not alreadyHaveOne then AddToCollection(t); end
-			return 1;
-		elseif collectedM == 2 or collectedF == 2 then
-			return 2;
-		end
-	end,
-	description = function(t)
-		return "This title changes its state whenever your character changes its gender identity. This is particularly common in Brunnhildar Village in Storm Peaks or by means of using an Engineering teleport. In account mode you will need to have multiple characters with representation of both gender types.";
-	end,
-	saved = function(t)
-		local ids = t.titleIDs;
-		return IsTitleKnown(ids[1]) or IsTitleKnown(ids[2]);
-	end,
-	title = function(t)
-		local ids, acctTitles = t.titleIDs, ATTAccountWideData.Titles;
-		local m, f = ids[1], ids[2];
-		local player = "("..CALENDAR_PLAYER_NAME..")";
-		return "  " .. StylizePlayerTitle(GetTitleName(m), t.style, player).. "\n  " .. StylizePlayerTitle(GetTitleName(f), t.style, player)
-			.. DESCRIPTION_SEPARATOR .. GetCollectionIcon(acctTitles[m]) .. "\n" .. GetCollectionIcon(acctTitles[f]);
-	end,
-	titleID = function(t)
-		return t.playerGender == 2 and t.titleIDs[1] or t.titleIDs[2];
-	end,
-	OnUpdate = function(t)
-		return OnUpdateForGenderedTitle;
-	end
-}, (function(t) return t.titleIDs; end));
-end)();
-
 -- Unsupported Libs
 (function()
 -- Neither of these are supported at this time.
@@ -10283,15 +10110,6 @@ local function UpdateWindow(self, force, trigger)
 			--local lastUpdate = GetTimePreciseSec();
 			if not (data.OnUpdate and data:OnUpdate()) then
 				UpdateGroups(data, data.g);
-
-				-- Check to see if the data changed.
-				if self.data ~= data then
-					print(self.Suffix, Colorize("DATA CHANGED!", RGBToHex(1, 0.4, 0.4)));
-					return;
-				end
-			else
-				print(self.Suffix, "Returned true!!! Skipping the rest of this UpdateWindows call");
-				return;
 			end
 			self.forceFullDataRefresh = nil;
 			--print("UpdateGroups RESULT", (GetTimePreciseSec() - lastUpdate) * 10000);
@@ -10525,17 +10343,13 @@ local BuildCategory = function(self, headers, searchResults, inst)
 		end
 	end
 	local count = #sources;
-	if count == 0 then return nil; end
-	if count == 1 then
-		for key,value in pairs(sources[1]) do
-			inst[key] = value;
-		end
-	elseif count > 1 then
+	if count == 0 then return inst; end
+	if count > 1 then
 		-- Find the most accessible version of the thing.
 		app.Sort(sources, app.SortDefaults.Accessibility);
-		for key,value in pairs(sources[1]) do
-			inst[key] = value;
-		end
+	end
+	for key,value in pairs(sources[1]) do
+		inst[key] = value;
 	end
 
 	-- Determine the type of header to put the thing into.

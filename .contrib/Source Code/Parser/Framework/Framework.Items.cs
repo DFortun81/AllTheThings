@@ -422,6 +422,7 @@ namespace ATT
                     case "bonusID":
                     case "modID":
                     case "rank":
+                    case "gender":
                     case "artifactID":
                     case "visualID":
                     case "itemID":
@@ -624,7 +625,6 @@ namespace ATT
                     case "sourceQuests":
                     case "altAchievements":
                     case "altQuests":
-                    case "titleIDs":
                         {
                             Objects.MergeIntegerArrayData(item, field, value);
                             break;
@@ -877,6 +877,7 @@ namespace ATT
                     case "f":
                     case "filterForRWP":
                     case "rank":
+                    case "gender":
                     case "learnedAt":
                     case "ilvl":
                     case "lvl":

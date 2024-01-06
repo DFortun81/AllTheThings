@@ -326,11 +326,6 @@ local fieldConverters = {
 			cacheCreatureID(group, value[i]);
 		end
 	end,
-	["titleIDs"] = function(group, value)
-		for i=1,#value,1 do
-			CacheField(group, "titleID", value[i]);
-		end
-	end,
 	["maps"] = function(group, value)
 		for i=1,#value,1 do
 			cacheMapID(group, value[i]);

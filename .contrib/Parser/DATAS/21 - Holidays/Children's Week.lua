@@ -133,9 +133,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["timeline"] = { "added 3.0.1" },
 			["groups"] = {
-				title_gendered(105, 104),	-- Patron / Matron
-				--title(104),	-- Matron %s
-				--title(105),	-- Patron %s
+				--title_gendered(105, 104),	-- Patron / Matron
+				title_female(104),	-- Matron %s
+				title_male(105),	-- Patron %s
 			},
 		}),
 		ach(1792, {	-- Aw, Isn't It Cute?

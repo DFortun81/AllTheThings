@@ -46,9 +46,9 @@ root(ROOTS.PetBattles, petbattle({
 			}},
 		}),
 		ach(8397, {		-- Crazy for Cats (need to add locations to comments for future use - wowhead did not link)
-			title_gendered(252, 240),	-- the Crazy Cat Man / the Crazy Cat Lady
-			--title(240),	-- %s the Crazy Cat Lady
-			--title(252),	-- %s the Crazy Cat Man
+			--title_gendered(252, 240),	-- the Crazy Cat Man / the Crazy Cat Lady
+			title_female(240),	-- %s the Crazy Cat Lady
+			title_male(252),	-- %s the Crazy Cat Man
 			crit(23577),		-- Black Tabby Cat
 			crit(23578),		-- Bombay Cat
 			crit(29725),		-- Brightpaw

@@ -28,18 +28,7 @@ app:GetWindow("Titles", {
 					for i,matches in pairs(app.SearchForFieldContainer("titleID")) do
 						local titleID = tonumber(i);
 						if not titles[titleID] then
-							local titleIDs = matches[1].titleIDs;
-							if titleIDs then
-								for index,j in ipairs(titleIDs) do
-									if not titles[j] then
-										local titleObject = app.CreateTitle(j, { ["playerGender"] = index == 1 and 2 or 3 });
-										titles[j] = self.BuildCategory(data, headers, matches, titleObject);
-										titleObject.OnUpdate = titleObject.OnUpdateForSpecificGender;
-									end
-								end
-							else
-								titles[titleID] = self.BuildCategory(data, headers, matches, app.CreateTitle(titleID));
-							end
+							titles[titleID] = self.BuildCategory(data, headers, matches, app.CreateTitle(titleID));
 						end
 					end
 					local honorTitlesHeaderID = app.HeaderConstants.HONOR_TITLES;

@@ -19,11 +19,17 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				i(186476,  {	-- Sinfall Gravewing (MOUNT!)
 					["description"] = "Requires Renown 45.",
 				}),
+				--[[
 				title_gendered(429, 430, {	-- Count / Countess (TITLE!)
 					["description"] = "Requires Renown 40.",
 				}),
-				--title(429),	-- Count %s
-				--title(430),	-- Countess %s
+				]]--
+				title_male(429, {	-- Count %s
+					["description"] = "Requires Renown 40.",
+				}),
+				title_female(430, {	-- Countess %s
+					["description"] = "Requires Renown 40.",
+				}),
 				title(444, {	-- Sin Eater (TITLE!)
 					["description"] = "Requires Renown 80.",
 				}),

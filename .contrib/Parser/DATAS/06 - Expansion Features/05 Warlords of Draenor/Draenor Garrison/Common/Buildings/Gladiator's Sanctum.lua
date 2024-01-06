@@ -14,7 +14,9 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, {
 						},
 					}),
 					ach(9725, {	-- The Last of Us
-						title_gendered(302, 303),	-- Lord of War / Lady of War
+						--title_gendered(302, 303),	-- Lord of War / Lady of War
+						title_male(302),	-- Lord of War
+						title_female(303),	-- Lady of War
 					}),
 					ach(9738, {	-- Warlord of Draenor (Alliance) achievements used instead of criteria as criteria are behaving strangely with debug mode on
 						["races"] = ALLIANCE_ONLY,

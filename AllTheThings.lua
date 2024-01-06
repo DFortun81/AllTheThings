@@ -10929,6 +10929,7 @@ local function UpdateGroup(group, parent)
 
 	-- if debug then print("UpdateGroup.Done",group.progress,group.total,group.visible,group.__type) end
 	-- debug = nil
+	return group.visible;
 end
 UpdateGroups = function(parent, g)
 	if g then
@@ -19314,6 +19315,100 @@ app.SetupProfiles = function()
 	app.Settings:Initialize();
 end
 
+
+local pendingCollection, pendingRemovals, retrievingCollection, pendingCollectionCooldown = {},{},{},0;
+local function PendingCollectionCoroutine()
+	while not app.IsReady do coroutine.yield(); end
+	while pendingCollectionCooldown > 0 do
+		pendingCollectionCooldown = pendingCollectionCooldown - 1;
+		coroutine.yield();
+
+		-- If any of the collection objects is retrieving data, try again.
+		local anyRetrieving = false;
+		for hash,thing in pairs(retrievingCollection) do
+			local retries = thing[1];
+			if retries > 0 then
+				retries = retries - 1;
+				thing[1] = retries;
+				if IsRetrieving(thing[2].text) then
+					retrievingCollection[hash] = nil;
+					anyRetrieving = true;
+				end
+			end
+		end
+		if anyRetrieving then
+			pendingCollectionCooldown = pendingCollectionCooldown + 1;
+		end
+	end
+
+	-- Report new things to your collection!
+	local any,allTypes = false,{};
+	local reportCollected = app.Settings:GetTooltipSetting("Report:Collected");
+	for hash,t in pairs(pendingCollection) do
+		local f = t.f;
+		if f then allTypes[f] = true; end
+		if reportCollected then
+			print((t.text or RETRIEVING_DATA) .. " was added to your collection!");
+		end
+		any = true;
+	end
+	if any then
+		wipe(pendingCollection);
+
+		-- Check if there was a mount.
+		if allTypes[app.FilterConstants.MOUNTS] then
+			app.Audio:PlayRareFindSound();
+		else
+			app.Audio:PlayFanfare();
+		end
+	end
+
+	-- Report removed things from your collection...
+	any = false;
+	for hash,t in pairs(pendingRemovals) do
+		if reportCollected then
+			print((t.text or RETRIEVING_DATA) .. " was removed from your collection!");
+		end
+		any = true;
+	end
+	if any then
+		wipe(pendingRemovals);
+		app.Audio:PlayRemoveSound();
+	end
+end
+local function AddToCollection(group)
+	if not group then return; end
+	local hash = group.hash;
+	if IsRetrieving(group.text) then
+		retrievingCollection[hash] = { 5, group };
+	end
+
+	-- Do not add the item to the pending list if it was already in it.
+	if pendingRemovals[hash] then
+		pendingRemovals[hash] = nil;
+	else
+		pendingCollection[hash] = group;
+		pendingCollectionCooldown = 10;
+		app:StartATTCoroutine("Pending Collection", PendingCollectionCoroutine);
+	end
+end
+local function RemoveFromCollection(group)
+	if not group then return; end
+	local hash = group.hash;
+	if IsRetrieving(group.text) then
+		retrievingCollection[hash] = { 5, group };
+	end
+
+	-- Do not add the item to the pending list if it was already in it.
+	if pendingCollection[hash] then
+		pendingCollection[hash] = nil;
+	else
+		pendingRemovals[hash] = group;
+		pendingCollectionCooldown = 10;
+		app:StartATTCoroutine("Pending Collection", PendingCollectionCoroutine);
+	end
+end
+
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()
 	-- app.PrintMemoryUsage("Startup")
@@ -19413,6 +19508,129 @@ app.Startup = function()
 	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
 	if not accountWideData.RuneforgeLegendaries then accountWideData.RuneforgeLegendaries = {}; end
 	if not accountWideData.Conduits then accountWideData.Conduits = {}; end
+	
+	-- Account Wide Settings
+	local accountWideSettings = app.Settings.AccountWide;
+	local function SetAccountCollected(t, field, id, collected)
+		local container = accountWideData[field];
+		local oldstate = container[id];
+		if collected then
+			if not oldstate then
+				local now = time();
+				timeStamps[field] = now;
+				currentCharacter.lastPlayed = now;
+				AddToCollection(t);
+				container[id] = 1;
+			end
+			return 1;
+		elseif oldstate then
+			local now = time();
+			timeStamps[field] = now;
+			currentCharacter.lastPlayed = now;
+			RemoveFromCollection(t);
+			container[id] = nil;
+		end
+	end
+	local function SetAccountCollectedForSubType(t, field, subtype, id, collected)
+		local container = accountWideData[field];
+		local oldstate = container[id];
+		if collected then
+			if not oldstate then
+				local now = time();
+				timeStamps[field] = now;
+				currentCharacter.lastPlayed = now;
+				AddToCollection(t);
+				container[id] = 1;
+			end
+			return 1;
+		elseif oldstate then
+			local now = time();
+			timeStamps[field] = now;
+			currentCharacter.lastPlayed = now;
+			RemoveFromCollection(t);
+			container[id] = nil;
+		end
+	end
+	local function SetCollected(t, field, id, collected)
+		local container = currentCharacter[field];
+		local oldstate = container[id];
+		if collected then
+			if not oldstate then
+				if t and not (accountWideSettings[field] and accountWideData[field][id]) then
+					--print("SetCollected", field, id, accountWideSettings[field], accountWideData[field][id]);
+					AddToCollection(t);
+				end
+				container[id] = 1;
+				accountWideData[field][id] = 1;
+				local now = time();
+				timeStamps[field] = now;
+				currentCharacter.lastPlayed = now;
+			else
+				accountWideData[field][id] = 1;
+			end
+			return 1;
+		elseif oldstate then
+			container[id] = nil;
+			local now = time();
+			timeStamps[field] = now;
+			currentCharacter.lastPlayed = now;
+			for guid,other in pairs(characterData) do
+				local otherContainer = other[field];
+				if otherContainer and otherContainer[id] then
+					accountWideData[field][id] = 1;
+					return accountWideSettings[field] and 2;
+				end
+			end
+			if accountWideData[field][id] then
+				RemoveFromCollection(t);
+				accountWideData[field][id] = nil;
+			end
+		elseif accountWideSettings[field] and accountWideData[field][id] then
+			return 2;
+		end
+	end
+	local function SetCollectedForSubType(t, field, subtype, id, collected)
+		local container = currentCharacter[field];
+		local oldstate = container[id];
+		if collected then
+			if not oldstate then
+				if t and not (accountWideSettings[subtype] and accountWideData[field][id]) then
+					--print("SetCollectedForSubType", field, subtype, id, accountWideSettings[subtype], accountWideData[field][id]);
+					AddToCollection(t);
+				end
+				container[id] = 1;
+				accountWideData[field][id] = 1;
+				local now = time();
+				timeStamps[field] = now;
+				currentCharacter.lastPlayed = now;
+			else
+				accountWideData[field][id] = 1;
+			end
+			return 1;
+		elseif oldstate then
+			container[id] = nil;
+			local now = time();
+			timeStamps[field] = now;
+			currentCharacter.lastPlayed = now;
+			for guid,other in pairs(characterData) do
+				local otherContainer = other[field];
+				if otherContainer and otherContainer[id] then
+					accountWideData[field][id] = 1;
+					return accountWideSettings[subtype] and 2;
+				end
+			end
+			if accountWideData[field][id] then
+				RemoveFromCollection(t);
+				accountWideData[field][id] = nil;
+			end
+		elseif accountWideSettings[subtype] and accountWideData[field][id] then
+			return 2;
+		end
+	end
+	app.SetAccountCollected = SetAccountCollected;
+	app.SetAccountCollectedForSubType = SetAccountCollectedForSubType;
+	app.SetCollected = SetCollected;
+	app.SetCollectedForSubType = SetCollectedForSubType;
 
 	-- Update the total account wide death counter.
 	local deaths = 0;

@@ -753,7 +753,7 @@ localize(L.HEADER_ICONS, {
 	[-1000224] = _.asset("Holiday_noblegarden"),
 	[-1000225] = _.asset("Holiday_Pilgrim"),
 	[-1000226] = _.asset("Holiday_Pirate"),
-	[-1000227] = "Interface/Icons/inv_misc_fish_06",
+	[-1000227] = _.asset("Holiday_STV_Fishing"),
 	[-1000231] = "Interface/Icons/achievement_reputation_argentchampion",
 	[-1000232] = _.asset("Expansion_CATA"),
 	[-1000233] = "Interface/Icons/inv_misc_tournaments_symbol_gnome",

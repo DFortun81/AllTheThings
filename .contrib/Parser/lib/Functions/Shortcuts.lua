@@ -1067,13 +1067,15 @@ end
 title = function(id, t)									-- Create a TITLE Object
 	return struct("titleID", id, t);
 end
-title_gendered = function(id_m, id_f, t)				-- Create a TITLE Object which is 'the same' but changes the wording based on gender
-	if t then
-		t.titleIDs = { id_m, id_f };
-	else
-		t = { ["titleIDs"]={ id_m, id_f }};
-	end
-	return struct("titleID", id_m * id_f * 100, t);		-- Arbitrary titleID from the combination of both titleID's
+title_female = function(id, t)							-- Create a TITLE Object for Female Characters
+	t = struct("titleID", id, t);
+	t.gender = 3;
+	return t;
+end
+title_male = function(id, t)							-- Create a TITLE Object for Male Characters
+	t = struct("titleID", id, t);
+	t.gender = 2;
+	return t;
 end
 v = function(id, t)										-- Create a VIGNETTE Object
 	t.type = "vignetteID";

@@ -1446,6 +1446,7 @@ end");
                         case "bonusID":
                         case "modID":
                         case "rank":
+                        case "gender":
                         case "creatureID":
                         case "criteriaID":
                         case "ilvl":
@@ -1544,6 +1545,7 @@ end");
                         case "npcID":
                         case "modID":
                         case "rank":
+                        case "gender":
                         case "creatureID":
                         case "criteriaID":
                         case "displayID":   // This is now dynamic!
@@ -1659,8 +1661,8 @@ end");
                     }
                 }
 
-                // Sort the old list to ensure that the order is consistent, but not for titleIDs/difficulties
-                if (field != "titleIDs" && field != "difficulties" && field != "zone-text-areas")
+                // Sort the old list to ensure that the order is consistent, but not for difficulties
+                if (field != "difficulties" && field != "zone-text-areas")
                     oldList.Sort();
 
                 if (oldList.Count == 0)
@@ -1876,6 +1878,7 @@ end");
                     case "u":
                     case "b":
                     case "rank":
+                    case "gender":
                     case "ilvl":
                     case "q":
                     case "e":
@@ -1970,7 +1973,6 @@ end");
                     case "maps":
                     case "qgs":
                     case "crs":
-                    case "titleIDs":
                     case "zone-text-areas":
                     case "_quests":
                     case "_npcs":

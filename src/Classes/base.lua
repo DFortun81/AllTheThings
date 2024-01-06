@@ -266,7 +266,6 @@ local classesByKey = setmetatable({}, {
 	end,
 });
 local ignoredFields = {
-	titleObjects = true,
 	g = true,
 };
 local function CreateClassInstance(key, id, t)
@@ -611,3 +610,17 @@ for i,instance in ipairs({
 	instance.OnTest(instance);
 end
 ]]--
+
+-- Collected helper functions.
+app.SetAccountCollected = function()
+	app.print("SetCollected not initialized yet...");
+end;
+app.SetAccountCollectedForSubType = function()
+	app.print("SetCollectedForSubType not initialized yet...");
+end
+app.SetCollected = function()
+	app.print("SetCollected not initialized yet...");
+end;
+app.SetCollectedForSubType = function()
+	app.print("SetCollectedForSubType not initialized yet...");
+end
