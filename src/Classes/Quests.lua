@@ -3,8 +3,8 @@ local app = select(2, ...);
 local L = app.L;
 
 -- App locals
-local AssignChildren, GetRelativeField, SearchForField =
-	app.AssignChildren, app.GetRelativeField, app.SearchForField;
+local AssignChildren, GetRelativeField, GetRelativeValue, SearchForField =
+	app.AssignChildren, app.GetRelativeField, app.GetRelativeValue, app.SearchForField;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local Colorize = app.Modules.Color.Colorize;
 
@@ -578,18 +578,18 @@ PrintQuestInfo = function(questID, new)
 	local questChange = (new == true and "accepted") or (new == false and "unflagged") or "completed";
 	local searchResults = SearchForField("questID", questID);
 	if #searchResults > 0 then
-		local nmr, nmc, nyi, hqt = false, false, false, false;
+		local nmr, nmc, nyi, hqt
 		for i,searchResult in ipairs(searchResults) do
 			if searchResult.key == "questID" then
-				if searchResult.nmr then nmr = true; end
-				if searchResult.nmc then nmc = true; end
-				if GetRelativeField(searchResult, "u", 1) then nyi = true; end
-				if GetRelativeField(searchResult, "_hqt", 1) then hqt = true; end
+				nmr = nmr or searchResult.nmr
+				nmc = nmc or searchResult.nmc
+				nyi = nyi or GetRelativeField(searchResult, "u", 1)
+				hqt = hqt or GetRelativeValue(searchResult, "_hqt")
 				questRef = searchResult
 			end
 		end
 		if not questRef then
-			app.PrintDebug("Failed to check quest info for", questID)
+			app.PrintDebug(Colorize("Failed to check quest info for: "..(questID or "???"), app.Colors.ChatLinkError))
 			questRef = searchResults[1]
 		end
 
@@ -598,7 +598,12 @@ PrintQuestInfo = function(questID, new)
 			return true;
 		end
 
-		text = (QuestNameFromID[questID] or RETRIEVING_DATA) .. " (" .. questID .. ")";
+		-- don't worry about names if we know it's HQT
+		if hqt then
+			text = questID
+		else
+			text = (QuestNameFromID[questID] or UNKNOWN) .. " (" .. questID .. ")"
+		end
 		if nmc then text = text .. "[C]"; end
 		if nmr then text = text .. "[R]"; end
 		-- only check to report when accepting a quest, quests flag complete all the time without being filtered
@@ -691,9 +696,6 @@ app.CheckQuestInfo = function(questID, isTest)
 	app.CheckInaccurateQuestInfo(app.SearchForObject("questID",questID), "test-show", isTest)
 end
 
--- Query Completed Quests
--- Used externally to indicate to the quest lib that a quest refresh should be performed
--- Optional param: questID
 local RefreshAllQuestInfo, RefreshQuestInfo;
 if app.IsRetail then
 	local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback;
