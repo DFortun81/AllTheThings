@@ -6,7 +6,6 @@ local contains, CloneReference, searchCache =
 -- Global locals
 local ipairs, tinsert, math_max, pairs, unpack, wipe
 	= ipairs, tinsert, math.max, pairs, unpack, wipe;
-local C_Map_GetMapInfo = C_Map.GetMapInfo;
 
 -- Helper Functions
 local function GenerateWeightedTable(data)

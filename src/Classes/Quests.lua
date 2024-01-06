@@ -464,7 +464,6 @@ local function ResolveQuestData(t)
 end
 
 -- Quest Debugging and Reporting
-local C_Map_GetMapInfo = C_Map.GetMapInfo;
 local function GenerateSourceQuestString(quest)
 	-- Generate a simple sourcequest completion string for a questRef
 	if quest then
@@ -555,7 +554,7 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 	tinsert(info, "lq:"..(app.TableConcat(MostRecentQuestTurnIns, nil, nil, "<") or ""));
 
 	local mapID = app.CurrentMapID;
-	tinsert(info, mapID and ("mapID:"..mapID.." ("..C_Map_GetMapInfo(mapID).name..")") or "mapID:??");
+	tinsert(info, mapID and ("mapID:"..mapID.." ("..(app.GetMapName(mapID) or "??")..")") or "mapID:??");
 
 	local position, coord = mapID and C_Map.GetPlayerMapPosition(mapID, "player");
 	if position then

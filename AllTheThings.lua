@@ -4397,8 +4397,8 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 								else
 									local mapsConcat, names, name = {}, {};
 									for i=1,count,1 do
-										name = C_Map_GetMapInfo(id[i]).name;
-										if not names[name] then
+										name = app.GetMapName(id[i]);
+										if name and not names[name] then
 											names[name] = true;
 											tinsert(mapsConcat, name);
 										end
@@ -8009,9 +8009,7 @@ app.events.TAXIMAP_OPENED = function()
 	local mapID = GetTaxiMapID();
 	if app.Debugging then
 		if not contains(FlightPathMapIDs, mapID) then
-			local info = C_Map_GetMapInfo(mapID);
-			local mapName = info and info.name or UNKNOWN;
-			app.print("Missing FlightPath Map:",mapName,mapID)
+			app.print("Missing FlightPath Map:",app.GetMapName(mapID) or UNKNOWN,mapID)
 		end
 	end
 	local userLocale = AllTheThingsAD.UserLocale;

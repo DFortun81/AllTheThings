@@ -4,7 +4,6 @@ local appName, app = ...;
 -- Global locals
 local ipairs, tinsert, pairs
 	= ipairs, tinsert, pairs;
-local C_Map_GetMapInfo = C_Map.GetMapInfo;
 
 -- Module locals
 local checkIcons, checkModels = true, true;

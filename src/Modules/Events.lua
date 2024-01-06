@@ -331,8 +331,7 @@ local function GetEventTimeStrings(nextEvent)
 		if nextEvent.remappedID then
 			local mapID = RemappedEventToMapID[nextEvent.remappedID];
 			if mapID then
-				local info = C_Map.GetMapInfo(mapID) or app.EmptyTable;
-				tinsert(schedule, "Where:`" .. (info.name or ("Map ID #" .. mapID)));
+				tinsert(schedule, "Where:`" .. (app.GetMapName(mapID) or ("Map ID #" .. mapID)));
 			end
 		end
 		return schedule;
