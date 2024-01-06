@@ -1,6 +1,7 @@
 
 -- Title Class
 local _, app = ...
+local L = app.L;
 
 -- Globals
 local string_sub, string_upper, string_lower =
@@ -14,7 +15,7 @@ local GetTitleName, UnitName, CALENDAR_PLAYER_NAME, IsTitleKnown, GetNumTitles =
 local GetProgressColor = app.Modules.Color.GetProgressColor;
 
 -- App
-local AccountWideData, L
+local AccountWideData
 
 -- Title API Implementation
 -- Access via AllTheThings.Modules.Title
@@ -22,7 +23,6 @@ local api = {}
 app.Modules.Title = api
 api.OnStartup = function(ATTAccountWideData)
 	AccountWideData = ATTAccountWideData
-	L = app.L
 end
 
 local function StylizePlayerTitle(title, style, me)
