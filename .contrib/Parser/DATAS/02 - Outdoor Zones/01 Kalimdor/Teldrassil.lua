@@ -313,6 +313,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["races"] = { NIGHTELF },
 							["classes"] = { PRIEST },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77574, {	-- Meditation on Elune
+							["qg"] = 3595,	-- Shanda <Priest Trainer>
+							["coord"] = { 59.2, 40.4, TELDRASSIL },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { PRIEST },
+							["races"] = { NIGHTELF },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
+									["provider"] = { "i", 205951 },	-- Memory of a Troubled Acolyte
+									--["coord"] = { , TELDRASSIL },	-- TODO: Find the coordinate for the closest moonwell.
+									["description"] = "Kneel (/kneel) in the Moonwell to gain a Meditation buff, then use the Rune to complete the quest.",
+								}),
+								recipe(402862),	-- Engrave Gloves - Penance
+								i(711),	-- Tattered Cloth Gloves
+							},
+						})),
+						-- #endif
 						q(28730, {	-- Precious Waters
 							["qg"] = 49479,	-- Dentaria Silverglade
 							["sourceQuest"] = 28729,	-- Teldrassil: Crown onf Azeroth

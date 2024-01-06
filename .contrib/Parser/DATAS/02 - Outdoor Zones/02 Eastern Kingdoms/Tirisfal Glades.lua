@@ -166,6 +166,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77670, {	-- Meditation on Undeath
+							["qg"] = 2123,	-- Dark Cleric Duesten <Priest Trainer>
+							["coord"] = { 31, 66, TIRISFAL_GLADES },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { PRIEST },
+							["races"] = { UNDEAD },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
+									["provider"] = { "i", 205951 },	-- Memory of a Troubled Acolyte
+									["description"] = "Kneel (/kneel) at a Graveyard to gain a Meditation buff, then use the Rune to complete the quest.",
+								}),
+								recipe(402862),	-- Engrave Gloves - Penance
+								i(711),	-- Tattered Cloth Gloves
+							},
+						})),
+						-- #endif
 						q(380, {	-- Night Web's Hollow
 							["qg"] = 1570,	-- Executor Arren
 							["sourceQuest"] = 376,	-- The Damned

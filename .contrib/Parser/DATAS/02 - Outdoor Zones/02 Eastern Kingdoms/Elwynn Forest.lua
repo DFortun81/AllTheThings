@@ -802,6 +802,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { HUMAN },
 							["classes"] = { MAGE },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77619, {	-- Meditation on the Light
+							["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
+							["coord"] = { 49.8, 39.6, ELWYNN_FOREST },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { PRIEST },
+							["races"] = { HUMAN },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
+									["provider"] = { "i", 205951 },	-- Memory of a Troubled Acolyte
+									["coord"] = { 48.2, 30.2, ELWYNN_FOREST },
+									["description"] = "Kneel (/kneel) inside Northshire Abbey to gain a Meditation buff, then use the Rune to complete the quest.",
+									["cr"] = 80,	-- Kobold Laborer
+								}),
+								recipe(402862),	-- Engrave Gloves - Penance
+								i(711),	-- Tattered Cloth Gloves
+							},
+						})),
+						-- #endif
 						q(3903, {	-- Milly Osworth
 							["qg"] = 823,	-- Deputy Willem
 							["sourceQuest"] = 18,	-- Brotherhood of Thieves

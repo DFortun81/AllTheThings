@@ -1666,6 +1666,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77642, {	-- Wisdom of the Loa
+							["qg"] = 3707,	-- Ken'jai <Priest Trainer>
+							["coord"] = { 42.4, 68.8, DUROTAR },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { PRIEST },
+							["races"] = { TROLL },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
+									["provider"] = { "i", 205951 },	-- Memory of a Troubled Acolyte
+									["description"] = "Kneel (/kneel) at the Loa Altar to gain a Meditation buff, then use the Rune to complete the quest.",
+									["coord"] = { 55.4, 72.6, DUROTAR },
+								}),
+								recipe(402862),	-- Engrave Gloves - Penance
+								i(711),	-- Tattered Cloth Gloves
+							},
+						})),
+						-- #endif
 						q(25152, {	-- Your Place In The World
 							["qg"] = 10176,	-- Kaltunk
 							["coords"] = {

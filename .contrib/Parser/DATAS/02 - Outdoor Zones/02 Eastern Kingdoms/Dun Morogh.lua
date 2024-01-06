@@ -474,6 +474,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77661, {	-- Meditation on the Light
+							["qg"] = 837,	-- Branstock Khalder <Priest Trainer>
+							["coord"] = { 28.6, 66.4, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { PRIEST },
+							["races"] = { DWARF },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Penance
+									["providers"] = {
+										{ "i", 205951 },	-- Memory of a Troubled Acolyte
+										{ "n", 208565 },	-- Altar of the Light
+									},
+									["coord"] = { 28.8, 66.6, DUN_MOROGH },
+									["description"] = "Kneel (/kneel) at the Altar of the Light to gain a Meditation buff, then use the Rune to complete the quest.",
+								}),
+								recipe(402862),	-- Engrave Gloves - Penance
+								i(711),	-- Tattered Cloth Gloves
+							},
+						})),
+						-- #endif
 						q(24492, {	-- Pack Your Bags
 							["qg"] = 37113,	-- Milo Geartwinge
 							["sourceQuest"] = 24491,	-- Follow that Gyro-Copter!
@@ -809,6 +831,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PRIEST },
 						}),
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					n(TREASURES, {
+						applyclassicphase(SOD_PHASE_ONE, o(405633, {	-- Rockjaw Footlocker
+							["coord"] = { 26.8, 72.6, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(205951, {	-- Memory of a Troubled Acolyte
+									["classes"] = { PRIEST },
+								}),
+								i(205230, {	-- Rune of Haunting
+									["classes"] = { WARLOCK },
+								}),
+								i(203751, {	-- Spell Notes: CALE ENCI
+									["classes"] = { MAGE },
+								}),
+							},
+						})),
+					}),
+					-- #endif
 					n(ZONE_DROPS, {
 						-- #if BEFORE 10.1.7
 						-- Added to Gnolls in Elwynn Forest via Pickpocket (not trolling)
