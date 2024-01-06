@@ -1149,7 +1149,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["sourceQuests"] = {
 				24804,	-- Uncommon Scents (A)
+				-- #if AFTER DF
 				72735,	-- Still Into Perfume (A)
+				-- #endif
 			},
 			["coord"] = { 61.6, 75.2, STORMWIND_CITY },
 			["timeline"] = { "added 3.3.0" },
@@ -1159,7 +1161,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuests"] = {
 				24805,	-- Uncommon Scents (H)
+				-- #if AFTER DF
 				72736,	-- Still Into Perfume (H)
+				-- #endif
 			},
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { "added 3.3.0" },

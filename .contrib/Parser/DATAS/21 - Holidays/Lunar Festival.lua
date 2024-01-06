@@ -389,8 +389,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				8873,	-- The Lunar Festival (H)
 				8874,	-- The Lunar Festival (H)
 				8875,	-- The Lunar Festival (H)
+				-- #if AFTER DF
 				73169,	-- The Lunar Festival (A)
 				73170,	-- The Lunar Festival (H)
+				-- #endif
 			},
 			["maps"] = {
 				ELWYNN_FOREST,

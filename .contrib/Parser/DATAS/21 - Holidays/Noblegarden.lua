@@ -505,7 +505,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["qg"] = 32799,	-- Spring Collector
 			["sourceQuests"] = {
 				13484,	-- Spring Gathers (A)
+				-- #if AFTER DF
 				74120,	-- A Spring Awakening (A)
+				-- #endif
 			},
 			["coords"] = {
 				-- #if AFTER CATA
@@ -536,7 +538,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["qg"] = 32798,	-- Spring Gatherer
 			["sourceQuests"] = {
 				13483,	-- Spring Gathers (H)
+				-- #if AFTER DF
 				74875,	-- A Spring Awakening (H)
+				-- #endif
 			},
 			["coords"] = {
 				-- #if AFTER CATA
