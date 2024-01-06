@@ -57,9 +57,23 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		["groups"] = {
 			q(79184, {	-- It's Hearthstone's Anniversary!
 				["provider"] = { "i", 212154 },	-- Hearthstone Invitation Letter
+				["groups"] = {
+					i(212157),   -- An Invitation
+				},
 			}),
-			i(212154),	-- Hearthstone Invitation Letter
+			i(212335),   -- Collector's Carryall (BAG)
+			--i(),	-- Compass Rose (MOUNT!)
+			i(212338),   -- DNT Hearthstone Loot Hat (Needs Art)
 			i(163186),	-- Fiery Hearthsteed (MOUNT!)
+			i(212154),   -- Hearthstone Invitation Letter
+			i(211965),   -- Hearthstone Wild Card
+			--pets(),	-- Sarge (PET!))
+			i(212337),   -- Stone of the Hearth (TOY!)
+			i(212532),   -- Reno's Hat
+			i(212607),   -- Reno's Lucky Hat
+			i(212644),   -- Taverner's Belt
+			i(212336),   -- The Tavern's Tabard
+
 			ach(19866),	-- Hearthstoned: Fiery Edition
 			ach(20033, {	-- Hearthstone Beginner
 				i(211946),	-- Hearthstone Game Table
