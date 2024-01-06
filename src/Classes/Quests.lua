@@ -774,27 +774,30 @@ if app.IsRetail then
 		if #DirtyQuests > 0 then
 			app.UpdateRawIDs("questID", DirtyQuests);
 		end
+
 		app:RegisterEvent("QUEST_LOG_UPDATE");
 		-- app.PrintDebugPrior("RefreshedQuestCompletionState")
 	end
 	RefreshAllQuestInfo = function()
+		app:UnregisterEvent("QUEST_LOG_UPDATE");
 		AfterCombatOrDelayedCallback(RefreshQuestCompletionState, 1);
 	end
 	RefreshQuestInfo = function(questID)
-		-- app.PrintDebug("RefreshQuestInfo",questID)
 		app:UnregisterEvent("QUEST_LOG_UPDATE");
+		-- app.PrintDebug("RefreshQuestInfo",questID)
 		if questID then
 			RefreshQuestCompletionState(questID);
 		else
 			RefreshAllQuestInfo();
 		end
 	end
-	
+
 	-- Retail Event Handlers
 	app:RegisterEvent("LOOT_OPENED");
 	app.events.LOOT_OPENED = RefreshAllQuestInfo;
+	-- We don't want any reporting/updating of completed quests when ATT starts... simply capture all completed quests
+	tinsert(app.EventHandlers.OnStartup, QueryCompletedQuests);
 	tinsert(app.EventHandlers.OnRecalculate, RefreshAllQuestInfo);
-	tinsert(app.EventHandlers.OnStartup, RefreshAllQuestInfo);
 	tinsert(app.EventHandlers.OnPlayerLevelUp, RefreshAllQuestInfo);
 else
 	local GetQuestsCompleted = GetQuestsCompleted;
@@ -1129,7 +1132,6 @@ app.LockedAsQuest = LockedAsQuest;	-- TODO: Review and refactor
 app.QuestLockCriteriaFunctions = criteriaFuncs;	-- TODO: Review and refactor
 
 -- Party Sync Support
-local IsPartySyncActive = false;
 local IsQuestReplayable, OnUpdateForPartySyncedQuest = C_QuestLog.IsQuestReplayable;
 if IsQuestReplayable then
 	-- Provide support for Party Sync'd Quests here
@@ -1372,6 +1374,7 @@ end),
 		return GetQuestTimeLeftMinutes(t.questID);
 	end,
 }, (function(t) return (t.isWorldQuest or IsWorldQuest(t)); end));
+
 app.CreateQuest = createQuest;
 app.CreateQuestWithFactionData = function(t)
 	ResolveQuestData(t);
@@ -1572,6 +1575,7 @@ app.events.QUEST_ACCEPTED = function(questLogIndex, questID)
 	end
 end
 app.events.QUEST_LOG_UPDATE = function()
+	-- app.PrintDebug("QUEST_LOG_UPDATE")
 	RefreshAllQuestInfo();
 end
 app.events.QUEST_TURNED_IN = function(questID)
@@ -1595,7 +1599,7 @@ app:RegisterEvent("QUEST_LOG_UPDATE");
 app:RegisterEvent("QUEST_REMOVED");
 app:RegisterEvent("QUEST_TURNED_IN");
 app:RegisterEvent("QUEST_WATCH_UPDATE");
-tinsert(app.EventHandlers.OnRefreshCollections, app.events.QUEST_LOG_UPDATE);
+tinsert(app.EventHandlers.OnRefreshCollections, RefreshAllQuestInfo);
 
 
 
