@@ -10847,7 +10847,7 @@ local function SetThingVisibility(parent, group)
 		parent.forceShow = forceShowParent;
 	end
 end
-local function UpdateGroup(parent, group)
+local function UpdateGroup(group, parent)
 	group.visible = nil;
 	group.costNested = nil;
 	group.hasUpgradeNested = nil;
@@ -10930,20 +10930,19 @@ local function UpdateGroup(parent, group)
 	-- if debug then print("UpdateGroup.Done",group.progress,group.total,group.visible,group.__type) end
 	-- debug = nil
 end
-app.UpdateGroup = UpdateGroup;
 UpdateGroups = function(parent, g)
 	if g then
 		for _,group in ipairs(g) do
 			if group.OnUpdate then
-				if not group:OnUpdate(UpdateGroup, parent) then
-					UpdateGroup(parent, group);
+				if not group:OnUpdate(parent, UpdateGroup) then
+					UpdateGroup(group, parent);
 				elseif group.visible then
 					group.total = nil;
 					group.progress = nil;
 					UpdateGroups(group, group.g);
 				end
 			else
-				UpdateGroup(parent, group);
+				UpdateGroup(group, parent);
 			end
 		end
 	end
@@ -10981,15 +10980,15 @@ local function TopLevelUpdateGroup(group)
 		group.forceShow = true;
 	end
 	if group.OnUpdate then
-		if not group:OnUpdate() then
-			UpdateGroup(nil, group);
+		if not group:OnUpdate(nil, UpdateGroup) then
+			UpdateGroup(group);
 		elseif group.visible then
 			group.total = nil;
 			group.progress = nil;
 			UpdateGroups(group, group.g);
 		end
 	else
-		UpdateGroup(nil, group);
+		UpdateGroup(group);
 	end
 	-- app.PrintDebugPrior("TLUG",group.hash)
 end

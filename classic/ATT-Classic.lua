@@ -95,7 +95,7 @@ local HORDE_ONLY = {
 };
 
 -- Helper Functions
-local UpdateGroup, UpdateGroups;
+local UpdateGroups;
 local constructor = function(id, t, typeID)
 	if t then
 		if not t.g and t[1] then
@@ -8155,7 +8155,7 @@ else
 end
 
 -- Processing Functions (Coroutines)
-UpdateGroup = function(parent, group)
+local function UpdateGroup(group, parent)
 	local visible = false;
 
 	-- Determine if this user can enter the instance or acquire the item.
@@ -8236,17 +8236,17 @@ UpdateGroups = function(parent, g)
 			local group = g[i];
 			if group.OnUpdate then
 				--local lastUpdate = GetTimePreciseSec();
-				local result = group:OnUpdate(UpdateGroup, parent);
+				local result = group:OnUpdate(parent, UpdateGroup);
 				--local duration = (GetTimePreciseSec() - lastUpdate) * 10000;
 				--if duration > 10 then print(group.text, "OnUpdate: ", duration); end
 				if not result then
-					if UpdateGroup(parent, group) then
+					if UpdateGroup(group, parent) then
 						visible = true;
 					end
 				elseif group.visible then
 					visible = true;
 				end
-			elseif UpdateGroup(parent, group) then
+			elseif UpdateGroup(group, parent) then
 				visible = true;
 			end
 		end
