@@ -10935,7 +10935,7 @@ UpdateGroups = function(parent, g)
 	if g then
 		for _,group in ipairs(g) do
 			if group.OnUpdate then
-				if not group:OnUpdate() then
+				if not group:OnUpdate(UpdateGroup, parent) then
 					UpdateGroup(parent, group);
 				elseif group.visible then
 					group.total = nil;

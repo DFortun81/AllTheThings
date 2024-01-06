@@ -12,8 +12,8 @@ local pairs, type, ipairs, string_format, select, strtrim, math_min
 
 -- App locals
 local AssignChildren = app.AssignChildren;
+local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local ATTAccountWideData
-local DESCRIPTION_SEPARATOR
 
 -- Module locals
 local GetProgressColor = app.Modules.Color.GetProgressColor;
@@ -32,7 +32,6 @@ local api = {};
 app.Modules.Faction = api;
 api.OnStartup = function(AccountData)
 	ATTAccountWideData = AccountData
-	DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR
 end
 
 -- 10.0 Blizz does some weird stuff with Friendship functions now, so let's try to wrap the functionality to work with what we expected before... at least for now

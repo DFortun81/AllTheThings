@@ -59,12 +59,12 @@ local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 
 -- App & Module locals
+local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local SearchForField, SearchForFieldContainer
 	= app.SearchForField, app.SearchForFieldContainer;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 
 -- Local Variables
-local DESCRIPTION_SEPARATOR = "`";
 local ALLIANCE_ONLY = {
 	1,
 	3,
@@ -8236,7 +8236,7 @@ UpdateGroups = function(parent, g)
 			local group = g[i];
 			if group.OnUpdate then
 				--local lastUpdate = GetTimePreciseSec();
-				local result = group:OnUpdate(group);
+				local result = group:OnUpdate(UpdateGroup, parent);
 				--local duration = (GetTimePreciseSec() - lastUpdate) * 10000;
 				--if duration > 10 then print(group.text, "OnUpdate: ", duration); end
 				if not result then
