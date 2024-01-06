@@ -494,6 +494,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77657, {	-- Relics of the Light
+							["qg"] = 926,	-- Bromos Grummner <Paladin Trainer>
+							["coord"] = { 28.8, 68.2, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { PALADIN },
+							["races"] = { DWARF },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Crusader Strike
+									["provider"] = { "i", 205420 },	-- Libram of Judgement
+									["cr"] = 706,	-- Frostmane Troll Whelp
+								}),
+								recipe(410002),	-- Engrave Gloves - Crusader Strike
+								i(2385),	-- Tarnished Chain Gloves
+							},
+						})),
+						-- #endif
 						q(3364, {	-- Scalding Mornbrew Delivery
 							["providers"] = {
 								{ "n", 12738 },	-- Nori Pridedrift
