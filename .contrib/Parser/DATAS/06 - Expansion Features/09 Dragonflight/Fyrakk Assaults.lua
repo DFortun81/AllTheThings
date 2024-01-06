@@ -43,6 +43,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["isBreadcrumb"] = true,
 				}),
 				q(75888, {	-- Suffusion Camp
+					["sourceQuest"] = 75887,	-- Fyrakk's Forces
 					["providers"] = {
 						{ "n", 201648 },	-- Somnikus
 						{ "n", 203520 },	-- Stellagosa

@@ -569,6 +569,10 @@ i(202065);	-- Static Sand
 i(194685);	-- Dragonspring Water
 i(200304);	-- Stored Dracthyr Rations
 i(200305);	-- Dracthyr Water Rations
+i(201427);	-- Fleeting Sands
+i(201428);	-- Quicksilver Sands
+i(201436);	-- Temporally-Locked Sands
+i(201438);	-- Weary Sands
 
 --- Trash ---
 i(193860);	-- Snapped Wand

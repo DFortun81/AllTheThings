@@ -1408,8 +1408,6 @@ root(ROOTS.Unsorted, {
 				q(77991),	--
 				q(77992),	--
 				q(77995),	--
-				q(78040),	-- The Outland Cup Begins
-				q(78047),	-- The Outland Cup Circuit
 				q(78067),	--
 				q(78087),	--
 				q(78096),	-- PTR:A Silver Lining
@@ -1482,7 +1480,6 @@ root(ROOTS.Unsorted, {
 				q(78825),	--
 				q(78829),	--
 				-- 10.2.0.51601
-				q(78840),	--
 				q(78891),	--
 				q(78899),	--
 				q(78906),	--
@@ -2090,7 +2087,6 @@ root(ROOTS.Unsorted, {
 				i(199185),	-- Fanciful Strings
 				i(195460),	-- Fermented Musken Milk
 				i(198674),	-- Filled Life Pools Vial
-				i(201427),	-- Fleeting Sands
 				i(200846),	-- Fletching-less Arrows
 				i(200622),	-- Focusing Incense
 				i(195458),	-- Forager's Stew
@@ -2156,7 +2152,6 @@ root(ROOTS.Unsorted, {
 				i(194750),	-- Professional Equipment
 				i(201726),	-- Progress Report: Uldorus
 				i(198452),	-- Prototype F
-				i(201428),	-- Quicksilver Sands
 				i(194695),	-- Ramloaf
 				i(200765),	-- Reed Sculpture
 				i(191856),	-- Reinforced Hooked Line
@@ -2188,7 +2183,6 @@ root(ROOTS.Unsorted, {
 				i(200639),	-- Talisman of Ohn'ahra
 				i(200637),	-- Talisman of the Maruuk
 				i(198842),	-- Tallstrider Feather
-				i(201436),	-- Temporally-Locked Sands
 				i(200693),	-- Terata Leaves
 				i(200594),	-- Thaelin's Second Favorite Comb
 				i(200705),	-- Thaldraszus Root
@@ -2202,7 +2196,6 @@ root(ROOTS.Unsorted, {
 				i(200951),	-- Valdrakken Critter Snacks
 				i(200870),	-- Vorquin Essence
 				i(194688),	-- Vorquin Filet
-				i(201438),	-- Weary Sands
 				i(200827),	-- Weathered Sculpture
 				i(191426),	-- Whelmed Duckling
 				i(198486),	-- Windscale Rider
@@ -2749,7 +2742,6 @@ root(ROOTS.Unsorted, {
 				q(69906),	--
 				q(69907),	--
 				q(69908),	--
-				q(69913),	-- Towers of Earthen Power
 				q(69917),	--
 				q(69920),	--
 				q(69945),	--

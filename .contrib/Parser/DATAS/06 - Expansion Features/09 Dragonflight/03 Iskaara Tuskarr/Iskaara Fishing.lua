@@ -294,7 +294,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 					i(199694, {	-- Flying Fish Bone Charm
 						--["spellID"] = 387827,	-- Flying Fish Bone Charm
-						["questID"] = 67139,	-- Triggered after crafting 'Flying Fish Bone Charm'
+						["questID"] = 75642,	-- Triggered after crafting 'Flying Fish Bone Charm'
 						["cost"] = {
 							{ "i", 200075, 1 },	-- 1x Flying Fish Bones
 						},
@@ -562,5 +562,6 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(72825),	-- First weekly completion of 'Catch and Release: Cerulean Spinefish' (70202)
 		q(72824),	-- First weekly completion of 'Catch and Release: Temporal Dragonhead' (70203)
 		q(72823),	-- First weekly completion of 'Catch and Release: Islefin Dorado' (70935)
+		q(67139),	-- Was tied to Flying Fish Charms but not the spellID causing issues for players
 	}),
 }));

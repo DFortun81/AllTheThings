@@ -435,7 +435,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["isBreadcrumb"] = true,	-- Probably?
 				}),
 				q(66468, {	-- What Once Was Ours
-					-- ["sourceQuests"] = { 66252 },	-- Reporting In (inaccurate)
+					["sourceQuests"] = { 71179 },	-- Look to the Overlook
 					["provider"] = { "n", 189174 },	-- Commander Thadezus
 					["coord"] = { 52.7, 67.3, THALDRASZUS },
 					["g"] ={

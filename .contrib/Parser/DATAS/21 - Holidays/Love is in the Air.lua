@@ -1147,14 +1147,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		}),
 		q(24655, {	-- Something Stinks (A)
 			["qg"] = 38066,	-- Inspector Snip Snagglebolt
-			["sourceQuest"] = 24804,	-- Uncommon Scents (A)
+			["sourceQuests"] = {
+				24804,	-- Uncommon Scents (A)
+				72735,	-- Still Into Perfume (A)
+			},
 			["coord"] = { 61.6, 75.2, STORMWIND_CITY },
 			["timeline"] = { "added 3.3.0" },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(24536, {	-- Something Stinks (H)
 			["qg"] = 37172,	-- Detective Snap Snagglebolt
-			["sourceQuest"] = 24805,	-- Uncommon Scents (H)
+			["sourceQuests"] = {
+				24805,	-- Uncommon Scents (H)
+				72736,	-- Still Into Perfume (H)
+			},
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { "added 3.3.0" },
 			["races"] = HORDE_ONLY,
