@@ -601,7 +601,8 @@ PrintQuestInfo = function(questID, new)
 		text = (QuestNameFromID[questID] or RETRIEVING_DATA) .. " (" .. questID .. ")";
 		if nmc then text = text .. "[C]"; end
 		if nmr then text = text .. "[R]"; end
-		if nmc or nmr or nyi or hqt then
+		-- only check to report when accepting a quest, quests flag complete all the time without being filtered
+		if new == true then
 			app.FunctionRunner.Run(app.CheckInaccurateQuestInfo, questRef, questChange);
 		end
 
