@@ -76,10 +76,9 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 	local QuestsRequested = {};
 	local QuestsToPopulate = {};
 
-	local QuestUtils_GetQuestName = QuestUtils_GetQuestName
 	local QuestNameFromServer = setmetatable({}, { __index = function(t, id)
 		if id then
-			local name = QuestUtils_GetQuestName(id);
+			local name = GetTitleForQuestID(id);
 			if not IsRetrieving(name) then
 				t[id] = name;
 				return name;
