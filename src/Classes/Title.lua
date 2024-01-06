@@ -144,13 +144,12 @@ app.CreateTitle = app.CreateClass("Title", "titleID", {
 	end
 });
 
+-- Title Refresh
 if app.IsRetail then
 -- NOTE: Not sure if this is necessary for Classic.
-
--- Title Refresh
 tinsert(app.EventHandlers.OnRefreshCollections, function()
 	-- app.PrintDebug("Refresh:Titles")
-	local acctTitles, charTitles, charGuid = AccountWideData.Titles, {}, app.GUID;
+	local acctTitles, charTitles = AccountWideData.Titles, {};
 	for i=1,GetNumTitles(),1 do
 		if IsTitleKnown(i) then
 			if not acctTitles[i] then
