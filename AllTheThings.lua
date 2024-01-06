@@ -19486,7 +19486,20 @@ app.Startup = function()
 	-- not needed, account-wide by blizzard
 	currentCharacter.RuneforgeLegendaries = nil;
 	if not currentCharacter.Conduits then currentCharacter.Conduits = {}; end
-	currentCharacter.lastPlayed = time();
+	
+	-- Update timestamps.
+	local now = time();
+	local timeStamps = currentCharacter.TimeStamps;
+	if not timeStamps then
+		timeStamps = {};
+		currentCharacter.TimeStamps = timeStamps;
+	end
+	for key,value in pairs(currentCharacter) do
+		if type(value) == "table" and not timeStamps[key] then
+			timeStamps[key] = now;
+		end
+	end
+	currentCharacter.lastPlayed = now;
 	app.CurrentCharacter = currentCharacter;
 
 	-- Account Wide Data Storage
