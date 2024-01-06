@@ -48,24 +48,27 @@ local QuestRetries = setmetatable({}, { __index = function(t, questID)
 	rawset(t, questID, 0);
 	return 0;
 end });
-local QuestNameFromID = setmetatable(L.QUEST_NAMES or {}, { __index = function(t, questID)
-	local title = GetTitleForQuestID(questID);
-	if IsRetrieving(title) then
-		local retries = QuestRetries[questID];
-		if retries > 120 then
-			title = "Quest #" .. questID .. "*";
+local QuestNameFromID
+if app.IsClassic then
+	QuestNameFromID = setmetatable(L.QUEST_NAMES or {}, { __index = function(t, questID)
+		local title = GetTitleForQuestID(questID);
+		if IsRetrieving(title) then
+			local retries = QuestRetries[questID];
+			if retries > 120 then
+				title = "Quest #" .. questID .. "*";
+				rawset(QuestRetries, questID, nil);
+				rawset(t, questID, title);
+				return title;
+			else
+				rawset(QuestRetries, questID, retries + 1);
+			end
+		else
 			rawset(QuestRetries, questID, nil);
 			rawset(t, questID, title);
 			return title;
-		else
-			rawset(QuestRetries, questID, retries + 1);
 		end
-	else
-		rawset(QuestRetries, questID, nil);
-		rawset(t, questID, title);
-		return title;
-	end
-end });
+	end });
+end
 
 -- If the Request Load Quest function is available...
 local C_QuestLog_RequestLoadQuestByID = C_QuestLog.RequestLoadQuestByID;
@@ -73,13 +76,36 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 	local QuestsRequested = {};
 	local QuestsToPopulate = {};
 
+	local QuestUtils_GetQuestName = QuestUtils_GetQuestName
+	local QuestNameFromServer = setmetatable({}, { __index = function(t, id)
+		if id then
+			local name = QuestUtils_GetQuestName(id);
+			if not IsRetrieving(name) then
+				t[id] = name;
+				return name;
+			end
+
+			RequestLoadQuestByID(id);
+		end
+	end});
+	local QuestNameDefault = setmetatable({}, { __index = function(t, id)
+		if id and rawget(QuestNameFromServer, id) ~= nil then
+			local name = "Quest #"..id.."*";
+			t[id] = name;
+			return name;
+		end
+	end});
+	QuestNameFromID = setmetatable(L.QUEST_NAMES or {}, { __index = function(t, id)
+		return QuestNameFromServer[id] or QuestNameDefault[id]
+	end});
+
 	-- Checks if we need to request Quest data from the Server, and returns whether the request is pending
 	-- Passing in the data will cause the data to have quest rewards populated once the data is retrieved
 	RequestLoadQuestByID = function(questID, questObjectRef)
 		-- only allow requests once per frame until received
 		if not QuestsRequested[questID] then
 			QuestsRequested[questID] = true;
-			-- app.PrintDebug("RequestLoadQuestByID",questID,"Data:",data)
+			-- app.PrintDebug("RequestLoadQuestByID",questID,"Data:",questObjectRef)
 			if questObjectRef then QuestsToPopulate[questID] = questObjectRef; end
 
 			-- there's some limit to quest data checking that causes d/c... not entirely sure what or how much
@@ -88,21 +114,26 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 		end
 	end
 
+	-- This event seems to fire synchronously from C_QuestLog.RequestLoadQuestByID if we already have the data
 	app.events.QUEST_DATA_LOAD_RESULT = function(questID, success)
 		-- app.PrintDebug("QUEST_DATA_LOAD_RESULT",questID,success)
 		QuestsRequested[questID] = nil;
 
 		-- Store the Quest title if successful, regardless of already being cached
-		if not success then
+		if success then
+			-- TODO: adjust to not call for repeated quest events
+			-- trigger a slight delayed refresh to visible ATT windows since a quest name was now populated
+			-- app:RefreshWindows();
+		else
 			-- this quest name cannot be populated by the server
 			-- app.PrintDebug("No Server QuestData",questID)
-			rawset(QuestRetries, questID, 121);
+			QuestNameFromServer[questID] = false;
 		end
 
 		-- see if this Quest is awaiting Reward population & Updates
 		local questObject = QuestsToPopulate[questID];
 		if questObject then
-			rawset(QuestsToPopulate, questID, nil);
+			QuestsToPopulate[questID] = nil;
 			app.TryPopulateQuestRewards(questObject);
 		end
 	end
