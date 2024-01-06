@@ -868,6 +868,44 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["groups"] = {
 					n(QUESTS, {
 						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77582, {	-- A Trial of Fitness [Orc]
+							["qg"] = 3153,	-- Frang <Warrior Trainer>
+							["coord"] = { 42.8, 69.4, DUROTAR },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARRIOR },
+							["races"] = { ORC },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
+									["providers"] = {
+										{ "i", 204806 },	-- Rune of Victory Rush
+										{ "o", 404911 },	-- Hidden Cache
+									},
+									["coord"] = { 43.2, 69.6, DUROTAR },
+								}),
+								recipe(403470),	-- Engrave Gloves - Victory Rush
+								i(2385),	-- Tarnished Chain Gloves
+							},
+						})),
+						applyclassicphase(SOD_PHASE_ONE, q(77588, {	-- A Trial of Fitness [Troll]
+							["qg"] = 3153,	-- Frang <Warrior Trainer>
+							["coord"] = { 42.8, 69.4, DUROTAR },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARRIOR },
+							["races"] = { TROLL },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
+									["providers"] = {
+										{ "i", 204806 },	-- Rune of Victory Rush
+										{ "o", 404911 },	-- Hidden Cache
+									},
+									["coord"] = { 43.2, 69.6, DUROTAR },
+								}),
+								recipe(403470),	-- Engrave Gloves - Victory Rush
+								i(2385),	-- Tarnished Chain Gloves
+							},
+						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77583, {	-- Atop the Cliffs [Orc]
 							["qg"] = 3155,	-- Rwag <Rogue Trainer>
 							["coord"] = { 41.2, 68.0, DUROTAR },

@@ -638,6 +638,42 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77655, {	-- The Lost Rune [Dwarf]
+							["qg"] = 912,	-- Thran Khorman <Warrior Trainer>
+							["coord"] = { 28.8, 67.2, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARRIOR },
+							["races"] = { DWARF },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
+									["provider"] = { "i", 204806 },	-- Rune of Victory Rush
+									["cr"] = 706,	-- Frostmane Troll Whelp
+									-- TODO: Confirm if drops from Troll Whelps.
+								}),
+								recipe(403470),	-- Engrave Gloves - Victory Rush
+								i(2385),	-- Tarnished Chain Gloves
+							},
+						})),
+						applyclassicphase(SOD_PHASE_ONE, q(77656, {	-- The Lost Rune [Gnome]
+							["qg"] = 912,	-- Thran Khorman <Warrior Trainer>
+							["coord"] = { 28.8, 67.2, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARRIOR },
+							["races"] = { GNOME },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
+									["provider"] = { "i", 204806 },	-- Rune of Victory Rush
+									["cr"] = 706,	-- Frostmane Troll Whelp
+									-- TODO: Confirm if drops from Troll Whelps.
+								}),
+								recipe(403470),	-- Engrave Gloves - Victory Rush
+								i(2385),	-- Tarnished Chain Gloves
+							},
+						})),
+						-- #endif
 						q(24528, {	-- The Power of the Light
 							["qg"] = 926,	-- Bromos Grummner
 							["sourceQuest"] = 3107,	-- Consecrated Rune

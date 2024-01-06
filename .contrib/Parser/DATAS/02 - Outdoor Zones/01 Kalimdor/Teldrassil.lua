@@ -84,6 +84,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(2125),	-- Cracked Leather Gloves
 							},
 						})),
+						applyclassicphase(SOD_PHASE_ONE, q(77575, {	-- Amidst the Shadowed Webs
+							["qg"] = 3593,	-- Alyissia <Warrior Trainer>
+							["coord"] = { 59.6, 38.4, TELDRASSIL },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARRIOR },
+							["races"] = { NIGHTELF },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
+									["provider"] = { "i", 204806 },	-- Rune of Victory Rush
+									["coord"] = { 56.8, 31.6, TELDRASSIL },
+									["cr"] = 1986,	-- Webwood Spider
+								}),
+								recipe(403470),	-- Engrave Gloves - Victory Rush
+								i(2385),	-- Tarnished Chain Gloves
+							},
+						})),
 						-- #endif
 						q(31168, {	-- Calligraphed Sigil
 							["providers"] = {

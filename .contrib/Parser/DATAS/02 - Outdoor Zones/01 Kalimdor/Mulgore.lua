@@ -230,6 +230,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["races"] = { TAUREN },
 							["classes"] = { PRIEST },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77651, {	-- Into the Brambles
+							["qg"] = 3059,	-- Harutt Thunderhorn <Warrior Trainer>
+							["coord"] = { 44, 76, MULGORE },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARRIOR },
+							["races"] = { TAUREN },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
+									["providers"] = {
+										{ "i", 204806 },	-- Rune of Victory Rush
+										{ "o", 403102 },	-- Bristleback Loot Cache
+									},
+									["coord"] = { 61.6, 76.0, MULGORE },
+								}),
+								recipe(403470),	-- Engrave Gloves - Victory Rush
+								i(2385),	-- Tarnished Chain Gloves
+							},
+						})),
+						-- #endif
 						q(24861, {	-- Last Rites, First Rites
 							["qg"] = 2981,	-- Chief Hawkwind
 							["sourceQuest"] = 14460,	-- Rite of Honor

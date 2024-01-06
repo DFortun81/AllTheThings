@@ -418,6 +418,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = HORDE_ONLY,
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77668, {	-- The Lost Rune
+							["qg"] = 2119,	-- Dannal Stern <Warrior Trainer>
+							["coord"] = { 32.6, 65.6, TIRISFAL_GLADES },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARRIOR },
+							["races"] = { UNDEAD },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
+									["providers"] = {
+										{ "i", 204806 },	-- Rune of Victory Rush
+										{ "o", 406736 },	-- Lost Stash
+									},
+									["coord"] = { 24.7, 59.4, TIRISFAL_GLADES },
+								}),
+								recipe(403470),	-- Engrave Gloves - Victory Rush
+								i(2385),	-- Tarnished Chain Gloves
+							},
+						})),
+						-- #endif
 						q(364, {	-- The Mindless Ones
 							["qg"] = 1569,	-- Shadow Priest Sarvis
 							["sourceQuest"] = 363,	-- Rude Awakening
