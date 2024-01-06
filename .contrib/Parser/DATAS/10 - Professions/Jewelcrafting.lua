@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
+-- #if AFTER TBC
 local JEWELCRAFTING_KNOWLEDGE = 2029;
 root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = JEWELCRAFTING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
@@ -582,7 +583,6 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 })));
 
 -- #if ANYCLASSIC
--- #if AFTER TBC
 local REMOVED_WITH_CATA = "removed 4.0.1";
 applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 	tier(CLASSIC_TIER, {
@@ -6152,7 +6152,6 @@ local itemrecipe = function(name, itemID, spellID, spellIDAfterCata, timeline)
 	return Items[itemID];
 end
 
--- #if AFTER TBC
 -- Recipes introduced with Burning Crusade
 itemrecipe("Design: Amulet of Flowing Life", 35202, 46126);
 itemrecipe("Design: Amulet of the Moon", 20854, 25339);
@@ -6401,7 +6400,6 @@ itemrecipe({"Design: Sparkling Azure Moonstone [TBC]", "Design: Sparkling Azure 
 itemrecipe({"Design: Teardrop Blood Garnet [TBC]", "Design: Brilliant Blood Garnet [CATA+]"}, 23130, 28903, 28903, REMOVED_WITH_CATA);
 itemrecipe({"Design: Thick Lionseye [TBC]", "Design: Subtle Lionseye [CATA+]"}, 35261, 39723, 39713, REMOVED_WITH_CATA);
 itemrecipe({"Design: Glowing Shadow Draenite [TBC]", "Design: Timeless Shadow Draenite [CATA+]"}, 23144, 28925, 28925, REMOVED_WITH_CATA);
--- #endif
 
 -- #if AFTER WRATH
 -- Recipes introduced with Wrath of the Lich King
