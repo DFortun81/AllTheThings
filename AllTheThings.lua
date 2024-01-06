@@ -10176,34 +10176,32 @@ local HeaderTypeAbbreviations = {
 -- Alternate functions to attach data into a table based on an id for a given type code
 local AlternateDataTypes = {
 	["ac"] = function(id)
-		local name = GetCategoryInfo(id);
-		return name;
+		return { name = GetCategoryInfo(id) };
 	end,
 	["crit"] = function(id)
 		local ach = math_floor(id);
 		local crit = math_floor(100 * (id - ach) + 0.005);
-		local name = GetAchievementCriteriaInfo(ach, crit);
-		return name;
+		return { name = GetAchievementCriteriaInfo(ach, crit) };
 	end,
 	["d"] = function(id)
 		local name, _, _, _, _, _, _, _, _, _, textureFilename = GetLFGDungeonInfo(id);
-		return name, textureFilename;
+		return { name = name, icon = textureFilename };
 	end,
 	["df"] = function(id)
 		local aid = math_floor(id);
 		local hid = math_floor(10000 * (id - aid) + 0.005);
 		id = app.FactionID == Enum.FlightPathFaction.Alliance and tonumber(aid) or tonumber(hid);
 		local name, _, _, _, _, _, _, _, _, _, textureFilename = GetLFGDungeonInfo(id);
-		return name, textureFilename;
+		return { name = name, icon = textureFilename };
 	end,
 	["n"] = function(id)
-		return app.NPCNameFromID[tonumber(id)], app.NPCDisplayIDFromID[tonumber(id)];
+		return { name = app.NPCNameFromID[tonumber(id)], displayID = app.NPCDisplayIDFromID[tonumber(id)] };
 	end,
 	["o"] = function(id)
-		return app.ObjectNames[tonumber(id)] or ("Object ID #"..id);
+		return { name = app.ObjectNames[tonumber(id)] or ("Object ID #"..id), icon = app.ObjectIcons[tonumber(id)] };
 	end,
 	["_G"] = function(id)
-		return _G[id];
+		return { name = _G[id] };
 	end,
 };
 -- Returns the 'name' and 'icon' values to use for a given id/type automatic name lookup
@@ -10213,11 +10211,12 @@ local function GetAutomaticHeaderData(id, type)
 		return altFunc(id);
 	end
 	local typeID = HeaderTypeAbbreviations[type] or type;
-	local obj = app.SearchForObject(typeID, id, "key") or CreateObject({[typeID]=id});
+	local obj = app.SearchForObject(typeID, id, "key") or CreateObject({[typeID]=id,key=typeID});
 	if obj then
+		print("GetAutomaticHeaderData", id, typeID, obj.text, obj.key, obj[obj.key]);
 		-- app.PrintDebug("Automatic Header",obj.name or obj.link)
 		local name = obj.name or obj.link;
-		return not IsRetrieving(name) and name or nil, obj.icon;
+		return { name = not IsRetrieving(name) and name or nil, icon = obj.icon };
 	end
 	app.print("Failed finding object/function for automatic header",type,id);
 end
@@ -10229,9 +10228,10 @@ local function CacheInfo(t, field)
 	if not type then return; end
 	local id = t.headerID;
 	local _t = cache.GetCached(t);
-	local name, icon = GetAutomaticHeaderData(id, type);
-	_t.name = name;
-	_t.icon = icon;
+	local data = GetAutomaticHeaderData(id, type);
+	for key,value in pairs(data) do
+		_t[key] = value;
+	end
 	if field then return _t[field]; end
 end
 
@@ -10249,6 +10249,9 @@ local fields = RawCloneData(headerFields, {
 	end,
 	["icon"] = function(t)
 		return cache.GetCachedField(t, "icon", CacheInfo) or 4555017;
+	end,
+	["displayID"] = function(t)
+		return cache.GetCachedField(t, "displayID", CacheInfo);
 	end,
 });
 fields.description = nil;
