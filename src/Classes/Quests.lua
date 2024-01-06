@@ -293,6 +293,7 @@ local CompletedQuests = setmetatable({}, {
 local function IsQuestFlaggedCompleted(questID)
 	return questID and CompletedQuests[questID];
 end
+local IsPartySyncActive = false;
 if app.IsRetail then
 	IsQuestFlaggedCompletedForObject = function(t)
 		local questID = t.questID;
