@@ -302,6 +302,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "added 4.0.3.13277" },
 							["races"] = ALLIANCE_ONLY,
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77573, {	-- Second-Story Work
+							["qg"] = 3594,	-- Frahun Shadewhisper <Rogue Trainer>
+							["coord"] = { 59.6, 38.6, TELDRASSIL },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { ROGUE },
+							["races"] = { NIGHTELF },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Shadowstrike
+									["providers"] = {
+										{ "o", 406006 },	-- Idol
+										{ "i", 204795 },	-- Rune of Shadowstrike
+									},
+									["coord"] = { 59.7, 42.6, TELDRASSIL },
+								}),
+								recipe(400105),	-- Engrave Gloves - Shadowstrike
+								i(2125),	-- Cracked Leather Gloves
+							},
+						})),
+						-- #endif
 						q(28728, {	-- Signs of Things to Come
 							["qg"] = 49480,	-- Tarindrella
 							["sourceQuest"] = 28727,	-- Vile Touch

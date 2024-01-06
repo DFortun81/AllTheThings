@@ -840,7 +840,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 50.4, 42.0, ELWYNN_FOREST },
 							["timeline"] = { "removed 2.0.1" },
 							["classes"] = { PALADIN },
-							["races"] = ALLIANCE_ONLY,
+							["races"] = { HUMAN },
 							["lvl"] = 2,
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Crusader Strike
@@ -957,7 +957,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 50.2, 42.2, ELWYNN_FOREST },
 							["timeline"] = { "removed 2.0.1" },
 							["classes"] = { WARRIOR },
-							["races"] = ALLIANCE_ONLY,
+							["races"] = { HUMAN },
 							["lvl"] = 2,
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
@@ -1181,6 +1181,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77618, {	-- Thrice Stolen
+							["qg"] = 915,	-- Jorik Kerridan <Rogue Trainer>
+							["coord"] = { 50.6, 40.0, ELWYNN_FOREST },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { ROGUE },
+							["races"] = { HUMAN },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Shadowstrike
+									["providers"] = {
+										{ "o", 387477 },	-- Defias Stashbox
+										{ "i", 204795 },	-- Rune of Shadowstrike
+									},
+									["coord"] = { 52.6, 51.8, ELWYNN_FOREST },
+								}),
+								recipe(400105),	-- Engrave Gloves - Shadowstrike
+								i(2125),	-- Cracked Leather Gloves
+							},
+						})),
+						-- #endif
 						q(33, {	-- Wolves Across the Border
 							["qg"] = 196,	-- Eagan Peltskinner
 							["sourceQuest"] = 5261,	-- Eagan Peltskinner

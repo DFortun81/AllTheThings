@@ -867,6 +867,46 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["maps"] = { 2 },	-- Burning Blade Coven
 				["groups"] = {
 					n(QUESTS, {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77583, {	-- Atop the Cliffs [Orc]
+							["qg"] = 3155,	-- Rwag <Rogue Trainer>
+							["coord"] = { 41.2, 68.0, DUROTAR },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { ROGUE },
+							["races"] = { ORC },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Shadowstrike
+									["providers"] = {
+										{ "o", 404911 },	-- Hidden Cache
+										{ "i", 204795 },	-- Rune of Shadowstrike
+									},
+									["coord"] = { 43.2, 69.6, DUROTAR },
+								}),
+								recipe(400105),	-- Engrave Gloves - Shadowstrike
+								i(2125),	-- Cracked Leather Gloves
+							},
+						})),
+						applyclassicphase(SOD_PHASE_ONE, q(77592, {	-- Atop the Cliffs [Troll]
+							["qg"] = 3155,	-- Rwag <Rogue Trainer>
+							["coord"] = { 41.2, 68.0, DUROTAR },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { ROGUE },
+							["races"] = { TROLL },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Shadowstrike
+									["providers"] = {
+										{ "o", 404911 },	-- Hidden Cache
+										{ "i", 204795 },	-- Rune of Shadowstrike
+									},
+									["coord"] = { 43.2, 69.6, DUROTAR },
+								}),
+								recipe(400105),	-- Engrave Gloves - Shadowstrike
+								i(2125),	-- Cracked Leather Gloves
+							},
+						})),
+						-- #endif
 						q(25130, {	-- Back to the Den
 							["qg"] = 3287,	-- Hana'zua
 							["sourceQuest"] = 25129,	-- Sarkoth

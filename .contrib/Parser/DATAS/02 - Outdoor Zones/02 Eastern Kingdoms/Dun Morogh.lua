@@ -671,6 +671,46 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(961),	-- Healing Herb
 							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77658, {	-- Thrice Stolen [Dwarf]
+							["qg"] = 916,	-- Solm Hargrin <Rogue Trainer>
+							["coord"] = { 28.4, 67.6, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { ROGUE },
+							["races"] = { DWARF },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Shadowstrike
+									["providers"] = {
+										{ "o", 405628 },	-- Frostmane Loot Cache
+										{ "i", 204795 },	-- Rune of Shadowstrike
+									},
+									["coord"] = { 30.8, 80.1, DUN_MOROGH },
+								}),
+								recipe(400105),	-- Engrave Gloves - Shadowstrike
+								i(2125),	-- Cracked Leather Gloves
+							},
+						})),
+						applyclassicphase(SOD_PHASE_ONE, q(77659, {	-- Thrice Stolen [Gnome]
+							["qg"] = 916,	-- Solm Hargrin <Rogue Trainer>
+							["coord"] = { 28.4, 67.6, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { ROGUE },
+							["races"] = { DWARF },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Shadowstrike
+									["providers"] = {
+										{ "o", 405628 },	-- Frostmane Loot Cache
+										{ "i", 204795 },	-- Rune of Shadowstrike
+									},
+									["coord"] = { 30.8, 80.1, DUN_MOROGH },
+								}),
+								recipe(400105),	-- Engrave Gloves - Shadowstrike
+								i(2125),	-- Cracked Leather Gloves
+							},
+						})),
+						-- #endif
 						q(24489, {	-- Trolling for Information
 							["qg"] = 1354,	-- Apprentice Soren
 							["sourceQuest"] = 24487,	-- Whitebeard Needs Ye

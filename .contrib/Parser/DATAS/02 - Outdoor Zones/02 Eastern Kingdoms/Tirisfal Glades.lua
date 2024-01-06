@@ -480,6 +480,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								-- #endif
 							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77669, {	-- The Scarlet Rune
+							["qg"] = 2122,	-- David Trias <Rogue Trainer>
+							["coord"] = { 32.6, 65.6, TIRISFAL_GLADES },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { ROGUE },
+							["races"] = { UNDEAD },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Shadowstrike
+									["provider"] = { "i", 204795 },	-- Rune of Shadowstrike
+									["coord"] = { 38.2, 68.4, TIRISFAL_GLADES },
+									["cr"] = 1506,	-- Scarlet Convert
+								}),
+								recipe(400105),	-- Engrave Gloves - Shadowstrike
+								i(2125),	-- Cracked Leather Gloves
+							},
+						})),
+						-- #endif
 						q(28608, {	-- The Shadow Grave
 							["qg"] = 1568,	-- Undertaker Mordo
 							["sourceQuest"] = 24959,	-- Fresh out of the Grave
