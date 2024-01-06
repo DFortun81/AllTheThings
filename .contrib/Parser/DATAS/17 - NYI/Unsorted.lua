@@ -1849,7 +1849,6 @@ root(ROOTS.Unsorted, {
 				i(192716),	-- Prehistoric Sediment
 				i(201196),	-- Pretty Flower
 				i(201194),	-- Pumice Hand Chalk
-				i(192650),	-- Roomy Shell
 				i(201186),	-- Rope Bonds
 				i(192694),	-- Second Head's Fang
 				i(201208),	-- Seer's Crystal
@@ -1865,7 +1864,6 @@ root(ROOTS.Unsorted, {
 				i(201179),	-- Snapped Tusk Tip
 				i(201213),	-- Sparkling Stone
 				i(201729),	-- Spiked Horseshoe
-				i(192670),	-- Splendid Feather
 				i(201199),	-- Splendid Feather Necklace
 				i(192721),	-- Splendid Horn
 				i(192722),	-- Splendid Whiskers

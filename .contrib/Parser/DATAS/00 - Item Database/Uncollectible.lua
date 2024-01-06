@@ -651,6 +651,7 @@ i(192634);	-- Smashed Metal Scraps
 i(192645);	-- Obsidian Nugget
 i(192646);	-- Aqueous Speck
 i(192647);	-- Terrene Speck
+i(192650);	-- Roomy Shell
 i(192651);	-- Damaged Core
 i(192652);	-- Discharged Thunderscale
 i(192653);	-- Floppy Molten Ear
@@ -665,6 +666,7 @@ i(192664);	-- Serrated Pincer
 i(192666);	-- Severed Roots
 i(192697);	-- Fluffy Ear
 i(192669);	-- Sizeable Feather
+i(192670);	-- Splendid Feather
 i(192671);	-- Sublime Flower
 i(192672);	-- Tattered Proto-Wing
 i(192673);	-- Torn Ear

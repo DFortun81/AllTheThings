@@ -227,7 +227,6 @@ root(ROOTS.NeverImplemented, {
 				i(193403),	-- Crystalline Focus
 				i(194901),	-- Curved Horns
 				i(193402),	-- Decatriarch's Fetish
-				i(191086),	-- Decayed Flower
 				i(200561),	-- Deepwater Lure
 				i(200124),	-- Disoriented Wishtail
 				i(194899),	-- Dispelling Wand
@@ -306,7 +305,6 @@ root(ROOTS.NeverImplemented, {
 				i(191908),	-- Horn of Scorxia
 				i(198795),	-- Hornstrider Scale
 				i(193395),	-- Hourglass of Shifting Sands
-				i(198516),	-- Hudson's Final Drawing
 				i(192189),	-- Hunting Game Calls
 				i(200672),	-- Iceforged Gateway Stone
 				i(194451),	-- Icy Excrement
@@ -384,7 +382,6 @@ root(ROOTS.NeverImplemented, {
 				i(193267),	-- Pristine Hide
 				i(193260),	-- Prized Jewel
 				i(194818),	-- Proto-Drake Wrangler Rope
-				i(191568),	-- Pulsating Thorn
 				i(198812),	-- Rae'ana Alchemy Kit
 				i(198530),	-- Raw Zandali Chilis
 				i(199907),	-- Rebel Plans
@@ -451,14 +448,10 @@ root(ROOTS.NeverImplemented, {
 				i(199201),	-- Tender Vorquin Meat
 				i(191665),	-- Testing Kit
 				i(195392),	-- Thaldraszian Acorn Extract
-				i(198513),	-- The Academy
-				i(198515),	-- The Fire Labs
-				i(198512),	-- The Great Halls
 				i(192755),	-- The Lord of the Wings
 				i(192756),	-- The Red and the Black Flights
 				i(198480),	-- The Resplendent Pools
 				i(192753),	-- The Scales of Wrath
-				i(198514),	-- The Sealed Vault
 				i(198482),	-- The Spiral of the Kurgans
 				i(192745),	-- The Titanic Comedy
 				i(199176),	-- Thick Bear Fur
@@ -522,7 +515,6 @@ root(ROOTS.NeverImplemented, {
 				i(199180),	-- Dragon's Blood Berry
 				i(201819),	-- Earthen Sample
 				i(198701),	-- Inert Vessel
-				i(201874),	-- Injured Cub
 				i(200129),	-- Kolgar's Pack
 				i(200109),	-- Medicative Potion
 				i(193375),	-- Nelthazan Artifact Fragments

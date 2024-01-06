@@ -1453,6 +1453,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 70169 },	-- Even Trees Need Friends
 				["provider"] = { "n", 194425 },	-- Ranpiata
 				["coord"] = { 7.8, 53.4, THE_AZURE_SPAN },
+				["groups"] = {
+					i(198512),	-- The Great Halls (QI!)
+					i(198513),	-- The Academy (QI!)
+					i(198514),	-- The Sealed Vault (QI!)
+					i(198515),	-- The Fire Labs (QI!)
+				},
 			}),
 			q(70171, {	-- Happy Little Accidents
 				["sourceQuests"] = { 70170 },	-- Beat the Demons Out of It
@@ -1460,6 +1466,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 7.9, 53.3, THE_AZURE_SPAN },
 				["g"] = {
 					i(198474),	-- Artist's Easel (TOY!)
+					i(198516),	-- Hudson's Final Drawing (QI!)
 				},
 			}),
 			------ Captain Haab ------

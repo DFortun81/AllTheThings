@@ -540,6 +540,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65902 },	-- Food or Floof
 					["provider"] = { "n", 186303 },	-- Celina Crunchyleaves
 					["coord"] = { 24.4, 63.0, OHNAHRAN_PLAINS },
+					["groups"] = {
+						i(191086),	-- Decayed Flower (QI!)
+						i(191568),	-- Pulsating Thorn (QI!)
+						i(201874),	-- Injured Cub (QI!)
+					},
 				}),
 				q(65904, {	-- Enough Is Enough
 					["sourceQuests"] = {
