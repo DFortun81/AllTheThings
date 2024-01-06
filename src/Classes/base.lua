@@ -265,6 +265,10 @@ local classesByKey = setmetatable({}, {
 		rawset(t, key, value);
 	end,
 });
+local ignoredFields = {
+	titleObjects = true,
+	g = true,
+};
 local function CreateClassInstance(key, id, t)
 	if key then
 		if key == "creatureID" then
@@ -302,18 +306,16 @@ local function CloneClassInstance(object, ignoreChildren)
 	else
 		-- Clone the object.
 		for k,v in pairs(object) do
-			rawset(clone, k, v);
+			if not ignoredFields[k] then
+				rawset(clone, k, v);
+			end
 		end
-		if object.g then
-			if ignoreChildren then
-				clone.g = nil;
-			else
-				clone.g = {};
-				for i,o in ipairs(object.g) do
-					o = CloneClassInstance(o);
-					tinsert(clone.g, o);
-					o.parent = clone;
-				end
+		if object.g and not ignoreChildren then
+			clone.g = {};
+			for i,o in ipairs(object.g) do
+				o = CloneClassInstance(o);
+				tinsert(clone.g, o);
+				o.parent = clone;
 			end
 		end
 
