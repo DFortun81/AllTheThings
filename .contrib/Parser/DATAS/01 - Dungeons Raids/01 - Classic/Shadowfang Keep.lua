@@ -1914,6 +1914,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209872, {	-- Dragonslayer's Helm
+					["provider"] = { "o", 409758 },	-- Discarded Helm
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+				})),
+				-- #endif
 				n(3872, {	-- Deathsworn Captain
 					["description"] = "This is a rare that is not always present.",
 					["groups"] = {
@@ -1949,12 +1956,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
-				o(205476, {	-- Book of Lost Souls
+				i(60873, {	-- Book of Lost Souls
+					["provider"] = { "o", 205476 },	-- Book of Lost Souls
 					["description"] = "This item in located on a chair in Lord Walden's room.",
 					["timeline"] = { "added 4.0.3" },
-					["groups"] = {
-						i(60873),	-- Book of Lost Souls
-					},
 				}),
 				n(4274, {	-- Fenrus the Devourer
 					["timeline"] = { "removed 4.0.3" },

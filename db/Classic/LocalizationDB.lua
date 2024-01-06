@@ -1237,6 +1237,8 @@ _.ObjectNames = {
 	[409289] = "Strange Orb",
 	[409311] = "Spear of Mannoroth",
 	[409315] = "Shattered Orb",
+	[409754] = "Wall-Mounted Shield",
+	[409758] = "Discarded Helm",
 	[411358] = "Artisan's Chest",
 	[411715] = "Bough of Altek",
 	[415614] = "Mysterious Formulae",
@@ -2542,6 +2544,8 @@ localize(_.ObjectNames, {
 	[406736] = "Verlorene Kiste",
 	[407850] = "Versunkener Reliquienschrein",
 	[409289] = "Seltsame Kugel",
+	[409754] = "Aufgehängter Schild",
+	[409758] = "Weggeworfener Helm",
 	[411358] = "Handwerkertruhe",
 	[411715] = "Alteks Zweig",
 });
@@ -3044,6 +3048,7 @@ localize(_.ObjectNames, {
 	[405633] = "Baúl Comepiedras",
 	[406006] = "Ídolo",
 	[406736] = "Alijo perdido",
+	[409758] = "Yelmo desechado",
 	[415614] = "Fórmulas misteriosas",
 });
 end
@@ -3565,6 +3570,8 @@ localize(_.ObjectNames, {
 	[406736] = "Planque perdue",
 	[407850] = "Reliquaire englouti",
 	[409289] = "Orbe étrange",
+	[409754] = "Bouclier mural",
+	[409758] = "Heaume abandonné",
 	[411358] = "Coffre d’artisan",
 	[415614] = "Formules mystérieuses",
 });
@@ -4416,6 +4423,7 @@ localize(_.ObjectNames, {
 	[405633] = "바위턱 사물함",
 	[406006] = "우상",
 	[406736] = "잃어버린 은닉처",
+	[409758] = "버려진 투구",
 });
 end
 if simplifiedLocale == "pt" then

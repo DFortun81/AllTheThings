@@ -1484,6 +1484,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209873, {	-- Dragonslayer's Shield
+					["provider"] = { "o", 409754 },	-- Wall-Mounted Shield
+					["coord"] = { 69.8, 55.8, REDRIDGE_MOUNTAINS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(777, {	-- Amy Davenport <Tradeswoman>
 					-- #if AFTER CATA

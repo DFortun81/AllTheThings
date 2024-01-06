@@ -1688,6 +1688,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(3180, {	-- Dark Iron Entrepreneur <Speciality Goods>
 					["coord"] = { 46.6, 18.2, WETLANDS },
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(209874, {	-- Dragonslayer's Lance
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARRIOR },
+							["cost"] = 7500,	-- 75s
+						})),
+						-- #endif
 						i(4824, {	-- Blurred Axe
 							["isLimited"] = true,
 						}),

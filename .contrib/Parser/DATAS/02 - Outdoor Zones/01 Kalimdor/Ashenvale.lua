@@ -929,6 +929,64 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78144, {	-- Alonso the Dragonslayer
+					["qg"] = 210995,	-- Alonso <Knight Errant>
+					["sourceQuests"] = {
+						78132,	-- Dragonslayer's Helm
+						78134,	-- Dragonslayer's Lance
+						78133,	-- Dragonslayer's Shield
+					},
+					["coord"] = { 43.4, 70.4, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["groups"] = {
+						--[[
+						-- TODO: This might actually just be a follow the npc thing, he slays this little dragon.
+						-- and calls you his squire and asks you to watch. Haven't done this quest yet myself.
+						objective(1, {	-- Slay the Green Dragon Whelp?
+							["provider"] = { "n", 211042 },	-- Green Dragon Whelp
+						}),
+						]]--
+						i(210015, {	-- Rune of Raging Blow
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425444),	-- Engrave Chest - Raging Blow
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78132, {	-- Dragonslayer's Helm
+					["providers"] = {
+						{ "i", 209872 },	-- Dragonslayer's Helm
+						{ "n", 210995 },	-- Alonso <Knight Errant>
+					},
+					["coord"] = { 43.4, 70.4, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { SHADOWFANG_KEEP },
+					["classes"] = { WARRIOR },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78134, {	-- Dragonslayer's Lance
+					["providers"] = {
+						{ "i", 209874 },	-- Dragonslayer's Lance
+						{ "n", 210995 },	-- Alonso <Knight Errant>
+					},
+					["coord"] = { 43.4, 70.4, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { WETLANDS },
+					["classes"] = { WARRIOR },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78133, {	-- Dragonslayer's Shield
+					["providers"] = {
+						{ "i", 209873 },	-- Dragonslayer's Shield
+						{ "n", 210995 },	-- Alonso <Knight Errant>
+					},
+					["coord"] = { 43.4, 70.4, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { REDRIDGE_MOUNTAINS },
+					["classes"] = { WARRIOR },
+				})),
+				-- #endif
 				q(26476, {	-- Dryad Delivery
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["sourceQuest"] = 26475,	-- Elune's Tear
