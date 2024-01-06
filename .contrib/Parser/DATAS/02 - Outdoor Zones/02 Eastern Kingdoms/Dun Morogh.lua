@@ -604,6 +604,42 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { DWARF, NIGHTELF },
 							["classes"] = { WARRIOR },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77667, {	-- Spell Research
+							["providers"] = {
+								{ "n", 944 },	-- Marryk Nurribit <Mage Trainer>
+								{ "i", 211809 },	-- Comprehension Primer
+							},
+							["coord"] = { 28.6, 66.4, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { MAGE },
+							["races"] = { GNOME },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Ice Lance
+									["provider"] = { "i", 203751 },	-- Spell Notes: CALE ENCI
+								}),
+								recipe(401760),	-- Engrave Gloves - Ice Lance
+								i(211779),	-- Comprehension Charm
+								i(711),	-- Tattered Cloth Gloves
+							},
+						})),
+						applyclassicphase(SOD_PHASE_ONE, q(77666, {	-- Stolen Power
+							["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
+							["coord"] = { 28.6, 66.2, DUN_MOROGH },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARLOCK },
+							["races"] = { GNOME },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Haunt
+									["provider"] = { "i", 205230 },	-- Rune of Haunting
+								}),
+								recipe(403919),	-- Engrave Gloves - Haunt
+								i(711),	-- Tattered Cloth Gloves
+							},
+						})),
+						-- #endif
 						q(2160, {	-- Supplies to Tannok
 							["providers"] = {
 								{ "n", 6782 },	-- Hands Springsprocket

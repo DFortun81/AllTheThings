@@ -944,6 +944,43 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(11192),	-- Outfitter Gloves
 							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77620, {	-- Spell Research
+							["providers"] = {
+								{ "n", 198 },	-- Khelden Bremen <Mage Trainer>
+								{ "i", 211809 },	-- Comprehension Primer
+							},
+							["coord"] = { 49.6, 39.4, ELWYNN_FOREST },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { MAGE },
+							["races"] = { HUMAN },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Ice Lance
+									["provider"] = { "i", 203751 },	-- Spell Notes: CALE ENCI
+									["cr"] = 38,	-- Defias Thug
+								}),
+								recipe(401760),	-- Engrave Gloves - Ice Lance
+								i(211779),	-- Comprehension Charm
+								i(711),	-- Tattered Cloth Gloves
+							},
+						})),
+						applyclassicphase(SOD_PHASE_ONE, q(77621, {	-- Stolen Power
+							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
+							["coord"] = { 49.8, 42.6, ELWYNN_FOREST },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARLOCK },
+							["races"] = { HUMAN },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Haunt
+									["provider"] = { "i", 205230 },	-- Rune of Haunting
+								}),
+								recipe(403919),	-- Engrave Gloves - Haunt
+								i(711),	-- Tattered Cloth Gloves
+							},
+						})),
+						-- #endif
 						q(3105, {	-- Tainted Letter
 							["providers"] = {
 								{ "n", 197 },	-- Marshal McBride
@@ -1211,11 +1248,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["lvl"] = 2,
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Shadowstrike
-									["providers"] = {
-										{ "o", 387477 },	-- Defias Stashbox
-										{ "i", 204795 },	-- Rune of Shadowstrike
-									},
-									["coord"] = { 52.6, 51.8, ELWYNN_FOREST },
+									["provider"] = { "i", 204795 },	-- Rune of Shadowstrike
 								}),
 								recipe(400105),	-- Engrave Gloves - Shadowstrike
 								i(2125),	-- Cracked Leather Gloves
@@ -1259,6 +1292,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						}),
+					}),
+					-- #endif
+					-- #if SEASON_OF_DISCOVERY
+					n(TREASURES, {
+						applyclassicphase(SOD_PHASE_ONE, o(387477, {	-- Defias Stashbox
+							["coord"] = { 52.6, 51.8, ELWYNN_FOREST },
+							["timeline"] = { "removed 2.0.1" },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(205230, {	-- Rune of Haunting
+									["classes"] = { WARLOCK },
+								}),
+								i(204795, {	-- Rune of Shadowstrike
+									["classes"] = { ROGUE },
+								}),
+							},
+						})),
 					}),
 					-- #endif
 					-- #if BEFORE 10.1.7

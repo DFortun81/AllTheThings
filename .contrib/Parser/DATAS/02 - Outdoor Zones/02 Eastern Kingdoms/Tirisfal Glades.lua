@@ -371,6 +371,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { UNDEAD },
 							["classes"] = { WARRIOR },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77671, {	-- Spell Research
+							["providers"] = {
+								{ "n", 2124 },	-- Isabella <Mage Trainer>
+								{ "i", 211809 },	-- Comprehension Primer
+							},
+							["coord"] = { 30.8, 66, TIRISFAL_GLADES },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { MAGE },
+							["races"] = { UNDEAD },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Ice Lance
+									["provider"] = { "i", 203751 },	-- Spell Notes: CALE ENCI
+									["coord"] = { 38.2, 68.4, TIRISFAL_GLADES },
+									["cr"] = 1507,	-- Scarlet Initiate
+								}),
+								recipe(401760),	-- Engrave Gloves - Ice Lance
+								i(211779),	-- Comprehension Charm
+								i(711),	-- Tattered Cloth Gloves
+							},
+						})),
+						-- #endif
 						q(3099, {	-- Tainted Scroll
 							["providers"] = {
 								{ "n", 1569 },	-- Shadow Priest Sarvis
@@ -437,7 +460,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = HORDE_ONLY,
 						}),
 						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_ONE, q(77668, {	-- The Lost Rune
+						applyclassicphase(SOD_PHASE_ONE, q(77672, {	-- The Lost Rune [Warlock]
+							["qg"] = 2126,	-- Maximillion <Warlock Trainer>
+							["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARLOCK },
+							["races"] = { UNDEAD },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Haunt
+									["provider"] = { "i", 205230 },	-- Rune of Haunting
+								}),
+								recipe(403919),	-- Engrave Gloves - Haunt
+								i(711),	-- Tattered Cloth Gloves
+							},
+						})),
+						applyclassicphase(SOD_PHASE_ONE, q(77668, {	-- The Lost Rune [Warrior]
 							["qg"] = 2119,	-- Dannal Stern <Warrior Trainer>
 							["coord"] = { 32.6, 65.6, TIRISFAL_GLADES },
 							["timeline"] = { "removed 2.0.1" },
@@ -446,11 +484,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["lvl"] = 2,
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
-									["providers"] = {
-										{ "i", 204806 },	-- Rune of Victory Rush
-										{ "o", 406736 },	-- Lost Stash
-									},
-									["coord"] = { 24.7, 59.4, TIRISFAL_GLADES },
+									["provider"] = { "i", 204806 },	-- Rune of Victory Rush
 								}),
 								recipe(403470),	-- Engrave Gloves - Victory Rush
 								i(2385),	-- Tarnished Chain Gloves
@@ -606,6 +640,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["timeline"] = { "added 5.1.0.16309" },
 						}),
+					}),
+					-- #endif
+					-- #if SEASON_OF_DISCOVERY
+					n(TREASURES, {
+						applyclassicphase(SOD_PHASE_ONE, o(406736, {	-- Lost Stash
+							["coord"] = { 24.7, 59.4, TIRISFAL_GLADES },
+							["timeline"] = { "removed 2.0.1" },
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(205230, {	-- Rune of Haunting
+									["classes"] = { WARLOCK },
+								}),
+								i(204806, {	-- Rune of Victory Rush
+									["classes"] = { WARRIOR },
+								}),
+							},
+						})),
 					}),
 					-- #endif
 					n(ZONE_DROPS, {

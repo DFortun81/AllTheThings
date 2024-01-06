@@ -1474,6 +1474,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["races"] = { TROLL },
 							["classes"] = { WARRIOR },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77643, {	-- Spell Research
+							["providers"] = {
+								{ "n", 5884 },	-- Mai'ah <Mage Trainer>
+								{ "i", 211809 },	-- Comprehension Primer
+							},
+							["coord"] = { 42.4, 69, DUROTAR },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { MAGE },
+							["races"] = { TROLL },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Ice Lance
+									["provider"] = { "i", 203751 },	-- Spell Notes: CALE ENCI
+								}),
+								recipe(401760),	-- Engrave Gloves - Ice Lance
+								i(211779),	-- Comprehension Charm
+								i(711),	-- Tattered Cloth Gloves
+							},
+						})),
+						-- #endif
 						q(25127, {	-- Sting of the Scorpid
 							["qg"] = 3143,	-- Gornek
 							["sourceQuest"] = 25172,	-- Invaders In Our Home
@@ -1523,6 +1544,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77586, {	-- Stolen Power
+							["qg"] = 3156,	-- Nartok <Warlock Trainer>
+							["coord"] = { 40.6, 68.4, DUROTAR },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARLOCK },
+							["races"] = { ORC },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Haunt
+									["provider"] = { "i", 205230 },	-- Rune of Haunting
+								}),
+								recipe(403919),	-- Engrave Gloves - Haunt
+								i(711),	-- Tattered Cloth Gloves
+							},
+						})),
+						-- #endif
 						q(3090, {	-- Tainted Parchment
 							["providers"] = {
 								{ "n", 3143 },	-- Gornek
@@ -1707,6 +1745,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					}),
 					-- #if SEASON_OF_DISCOVERY
+					n(TREASURES, {
+						applyclassicphase(SOD_PHASE_ONE, o(404695, {	-- Waterlogged Stashbox
+							["coord"] = { 43.0, 54.5, DUROTAR },
+							["timeline"] = { "removed 2.0.1" },
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(205230, {	-- Rune of Haunting
+									["classes"] = { WARLOCK },
+								}),
+								i(203751, {	-- Spell Notes: CALE ENCI
+									["classes"] = { MAGE },
+								}),
+							},
+						})),
+					}),
 					n(ZONE_DROPS, {
 						applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
 							["coord"] = { 40.6, 67.7, DUROTAR },
