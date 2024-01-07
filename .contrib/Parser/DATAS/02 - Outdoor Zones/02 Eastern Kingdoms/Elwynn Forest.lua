@@ -2669,6 +2669,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["crs"] = {
 						327,	-- Goldtooth
 						100,	-- Gruff Swiftbite
+						448,	-- Hogger
 					},
 					["groups"] = {
 						recipe(403476),	-- Engrave Pants - Furious Thunder
@@ -2702,6 +2703,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						285,	-- Murloc
 						 46,	-- Murloc Forager
 						735,	-- Murloc Streamrunner
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203753, {	-- Spell Notes: RING SEFF OSTROF
+					["coord"] = { 26.6, 89.8, ELWYNN_FOREST },
+					["classes"] = { MAGE },
+					["cr"] = 448,	-- Hogger
+					["groups"] = {
+						recipe(401765),	-- Engrave Chest - Fingers of Frost
 					},
 				})),
 				-- #endif

@@ -1761,20 +1761,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 					}),
 					n(ZONE_DROPS, {
-						-- #if SEASON_OF_DISCOVERY
-						applyclassicphase(SOD_PHASE_ONE, i(205940, {	-- Memory of a Dark Purpose
-							["coord"] = { 59.2, 56.8, DUROTAR },
-							["classes"] = { PRIEST },
-							["races"] = HORDE_ONLY,
-							["crs"] = {
-								3128,	-- Kul Tiras Sailor
-								3129,	-- Kul Tiras Marine
-							},
-							["groups"] = {
-								recipe(425216),	-- Engrave Chest - Void Plague
-							},
-						})),
 						applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
+							["description"] = "This can also drop from any of the rare mobs in the zone.",
 							["coord"] = { 40.6, 67.7, DUROTAR },
 							["classes"] = { HUNTER },
 							["cr"] = 3281,	-- Sarkoth
@@ -1783,7 +1771,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						})),
 						applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
-							["description"] = "The rune he drops can also drop from any of the rare mobs in the zone.",
+							["description"] = "This can also drop from any of the rare mobs in the zone.",
 							["coord"] = { 40.6, 67.7, DUROTAR },
 							["classes"] = { WARRIOR },
 							["cr"] = 3281,	-- Sarkoth
@@ -3655,6 +3643,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(205940, {	-- Memory of a Dark Purpose
+					["coord"] = { 59.2, 56.8, DUROTAR },
+					["classes"] = { PRIEST },
+					["races"] = HORDE_ONLY,
+					["crs"] = {
+						3128,	-- Kul Tiras Sailor
+						3129,	-- Kul Tiras Marine
+					},
+					["groups"] = {
+						recipe(425216),	-- Engrave Chest - Void Plague
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207062, {	-- Severed Centaur Head
 					["coord"] = { 51.2, 78.4, DUROTAR },
 					["timeline"] = { "removed 2.0.1" },
@@ -3684,6 +3684,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3111,	-- Razormane Quilboar
 						3114,	-- Razormane Battleguard
 						3113,	-- Razormane Dustrunner
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203753, {	-- Spell Notes: RING SEFF OSTROF
+					["description"] = "This can also drop from any of the rare mobs in the zone.",
+					["coord"] = { 67.6, 87.8, DUROTAR },
+					["classes"] = { MAGE },
+					["cr"] = 3205,	-- Zalazane
+					["groups"] = {
+						recipe(401765),	-- Engrave Chest - Fingers of Frost
 					},
 				})),
 				-- #endif
