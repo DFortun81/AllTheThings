@@ -103,7 +103,28 @@ app:GetWindow("Missing Quests", {
 				app.Sort(MissingQuestsFromATT, app.SortDefaults.Values);
 				for _,id in ipairs(MissingQuestsFromATT) do
 					local quest = app.CreateQuest(id);
-					quest.description = "@Crieve: This has not been sourced in ATT yet!";
+					local description = "@Crieve: This has not been sourced in ATT yet!";
+					local questieData = QuestieDB.GetQuest(id);
+					if questieData then
+						for key,value in pairs(questieData) do
+							description = description .. "\n  " .. key .. ": ";
+							if type(value) == "table" then
+								for k,v in pairs(value) do
+									description = description .. "\n    " .. k .. ": ";
+									if type(v) == "table" then
+										for i,c in pairs(v) do
+											description = description .. "\n      " .. i .. ": " .. tostring(c);
+										end
+									else
+										description = description .. tostring(v);
+									end
+								end
+							else
+								description = description .. tostring(value);
+							end
+						end
+					end
+					quest.description = description;
 					quest.parent = parent;
 					tinsert(g, quest);
 				end
