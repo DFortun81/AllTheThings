@@ -2267,6 +2267,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, o(404941, {	-- Relic Coffer
+					["coord"] = { 52.5, 25.8, TIRISFAL_GLADES },
+					["timeline"] = { "removed 2.0.1" },
+					["groups"] = {
+						i(203993, {	-- Rune of Slaughter
+							["classes"] = { ROGUE },
+							["groups"] = {
+								recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
+							},
+						}),
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(2118, {	-- Abigail Shiel <Trade Supplies>
 					-- #if AFTER CATA

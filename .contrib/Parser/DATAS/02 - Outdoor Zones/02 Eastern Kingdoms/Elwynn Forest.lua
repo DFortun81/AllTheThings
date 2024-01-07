@@ -2403,6 +2403,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, o(387466, {	-- Rusty Lockbox
+					["coord"] = { 46.2, 62.1, ELWYNN_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["groups"] = {
+						i(203993, {	-- Rune of Slaughter
+							["classes"] = { ROGUE },
+							["groups"] = {
+								recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
+							},
+						}),
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, n(204989, {	-- Wounded Adventurer
 					["coord"] = { 62.0, 47.32, ELWYNN_FOREST },
 					["timeline"] = { "removed 2.0.1" },

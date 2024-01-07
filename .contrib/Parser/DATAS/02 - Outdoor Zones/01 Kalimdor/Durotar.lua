@@ -3559,6 +3559,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, o(387466, {	-- Rusty Lockbox
+					["coord"] = { 53.8, 27.2, DUROTAR },
+					["timeline"] = { "removed 2.0.1" },
+					["groups"] = {
+						i(203993, {	-- Rune of Slaughter
+							["classes"] = { ROGUE },
+							["groups"] = {
+								recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
+							},
+						}),
+					},
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {
