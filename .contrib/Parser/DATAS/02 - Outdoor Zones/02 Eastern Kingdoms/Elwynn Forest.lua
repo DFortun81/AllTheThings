@@ -2204,6 +2204,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(202060, {	-- Frozen Murloc
+					["coord"] = { 77.0, 51.8, ELWYNN_FOREST },
+					["classes"] = { MAGE, WARLOCK },
+					["groups"] = {
+						i(205228, {	-- Rune of Chaos Bolt
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403925),	-- Engrave Gloves - Chaos Bolt
+							},
+						}),
+						i(203748, {	-- Spell Notes: Burnout
+							["classes"] = { MAGE },
+							["groups"] = {
+								recipe(401759),	-- Engrave Chest - Burnout
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(50926, {	-- Grizzled Ben
 					["coord"] = { 27.2, 67.5, ELWYNN_FOREST },
 					["timeline"] = { "added 5.1.0.16309" },

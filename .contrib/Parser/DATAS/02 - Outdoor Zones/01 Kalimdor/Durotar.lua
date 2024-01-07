@@ -3455,6 +3455,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 53.0, 7.2, DUROTAR },
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(208275, {	-- Frozen Makrura
+					["coord"] = { 58.6, 45.6, DUROTAR },
+					["classes"] = { MAGE, SHAMAN, WARLOCK },
+					["groups"] = {
+						i(205228, {	-- Rune of Chaos Bolt
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403925),	-- Engrave Gloves - Chaos Bolt
+							},
+						}),
+						i(203748, {	-- Spell Notes: Burnout
+							["classes"] = { MAGE },
+							["groups"] = {
+								recipe(401759),	-- Engrave Chest - Burnout
+							},
+						}),
+						i(206388, {	-- Sulfurous Icon
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(425344),	-- Engrave Gloves - Molten Blast
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(5826, {	-- Geolord Mottle
 					["coords"] = {
 						{ 43.6, 40.8, DUROTAR },

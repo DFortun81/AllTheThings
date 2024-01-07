@@ -2810,6 +2810,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(208752, {	-- Frozen Trogg
+					["coord"] = { 69.2, 58.2, DUN_MOROGH },
+					["classes"] = { MAGE, WARLOCK },
+					["groups"] = {
+						i(205228, {	-- Rune of Chaos Bolt
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403925),	-- Engrave Gloves - Chaos Bolt
+							},
+						}),
+						i(203748, {	-- Spell Notes: Burnout
+							["classes"] = { MAGE },
+							["groups"] = {
+								recipe(401759),	-- Engrave Chest - Burnout
+							},
+						}),
+					},
+				})),
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208638, {	-- Fyodi
 					["description"] = "The runes he drops can also drop from any of the rare mobs in the zone.",
 					["coord"] = { 31.6, 40.0, DUN_MOROGH },

@@ -2123,6 +2123,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(202060, {	-- Frozen Murloc
+					["coord"] = { 66.2, 40.0, TIRISFAL_GLADES },
+					["classes"] = { MAGE, WARLOCK },
+					["groups"] = {
+						i(205228, {	-- Rune of Chaos Bolt
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403925),	-- Engrave Gloves - Chaos Bolt
+							},
+						}),
+						i(203748, {	-- Spell Notes: Burnout
+							["classes"] = { MAGE },
+							["groups"] = {
+								recipe(401759),	-- Engrave Chest - Burnout
+							},
+						}),
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, n(208196, {	-- Gillgar
 					["coord"] = { 27.2, 46.4, TIRISFAL_GLADES },
 					["classes"] = { PRIEST, MAGE, WARRIOR },
