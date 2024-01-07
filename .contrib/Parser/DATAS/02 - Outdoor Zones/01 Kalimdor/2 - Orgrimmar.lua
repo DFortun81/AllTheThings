@@ -3585,7 +3585,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This NPC is only visible if you have not yet unlocked the allied race Highmountain Tauren.",
 					-- #endif
 					["coord"] = { 41.0, 79.8, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984", "removed 7.3.5.25961" },
+					["timeline"] = { "added 4.0.1.12984" },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
@@ -4841,7 +4841,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				n(3314, {	-- Urtharo <Weapon Merchant>
 					-- #if AFTER CATA
-					["coord"] = { 46.6, 73.8, ORGRIMMAR },
+					["coord"] = { 46.6, 73.1, ORGRIMMAR },
 					-- #else
 					["coord"] = { 47.4, 68.6, ORGRIMMAR },
 					-- #endif
