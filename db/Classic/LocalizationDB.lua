@@ -1250,6 +1250,8 @@ _.ObjectNames = {
 	[409315] = "Shattered Orb",
 	[409754] = "Wall-Mounted Shield",
 	[409758] = "Discarded Helm",
+	[411328] = "Slumbering Bones",
+	[411348] = "Dusty Coffer",
 	[411358] = "Artisan's Chest",
 	[411715] = "Bough of Altek",
 	[415614] = "Mysterious Formulae",
@@ -2043,6 +2045,7 @@ _.ObjectModels = {
 	[408802] = 189097,
 	[409289] = 201095,
 	[409311] = 201649,
+	[411348] = 200953,
 	[411358] = 196987,
 	[415614] = 198455,
 }
@@ -2574,6 +2577,8 @@ localize(_.ObjectNames, {
 	[409289] = "Seltsame Kugel",
 	[409754] = "Aufgehängter Schild",
 	[409758] = "Weggeworfener Helm",
+	[411328] = "Schlummernde Knochen",
+	[411348] = "Staubige Truhe",
 	[411358] = "Handwerkertruhe",
 	[411715] = "Alteks Zweig",
 });
@@ -3619,6 +3624,8 @@ localize(_.ObjectNames, {
 	[409289] = "Orbe étrange",
 	[409754] = "Bouclier mural",
 	[409758] = "Heaume abandonné",
+	[411328] = "Os endormis",
+	[411348] = "Coffre poussiéreux",
 	[411358] = "Coffre d’artisan",
 	[415614] = "Formules mystérieuses",
 });
@@ -5509,6 +5516,8 @@ localize(_.ObjectNames, {
 	[408799] = "Идол Глубин",
 	[408802] = "Корявый гарпун",
 	[409289] = "Странная сфера",
+	[411328] = "Спящие кости",
+	[411348] = "Пыльный сундук",
 	[411358] = "Сундук мастера",
 	[415614] = "Таинственные формулы",
 });

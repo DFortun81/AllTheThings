@@ -1744,6 +1744,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(RARES, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(212261, {	-- Awakened Lich
+					["providers"] = {
+						{ "i", 210568 },	-- Decrepit Phylactery
+						{ "o", 411328 },	-- Slumbering Bones
+					},
+					["coord"] = { 18.0, 38.6, DUSKWOOD },
+					["groups"] = {
+						i(210569, {	-- Rune of Flagellation
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(403480),	-- Engrave Chest - Flagellation
+							},
+						}),
+						i(211514, {	-- Spell Notes: Mass Regeneration
+							["classes"] = { MAGE },
+							["groups"] = {
+								recipe(415939),	-- Engrave Pants - Mass Regeneration
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(45785, {	-- Carved One
 					["coords"] = {	-- pats in a circle, coords not exhaustive
 						{ 48.4, 70.4, DUSKWOOD },
@@ -1928,6 +1951,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(210568, {	-- Decrepit Phylactery
+					["provider"] = { "o", 411348 },	-- Dusty Coffer
+					["description"] = "Go into the northeastern crypt (23.6, 35.0), head down, and take a left into the first big room (approximately 26.0, 30.9).",
+					["coord"] = { 26.0, 31.0, DUSKWOOD },
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(228, {	-- Avette Fellwood <Bowyer>
 					["coord"] = { 73.2, 44.8, DUSKWOOD },
