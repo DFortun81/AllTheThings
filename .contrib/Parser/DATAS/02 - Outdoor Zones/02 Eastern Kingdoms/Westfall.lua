@@ -1261,6 +1261,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210501, {	-- Harvest Reaper Prototype
+					["coords"] = {
+						{ 50.6, 18.8, WESTFALL },
+						{ 52.8, 33.8, WESTFALL },
+						{ 45.6, 39.0, WESTFALL },
+						{ 35.6, 52.2, WESTFALL },
+						{ 61.4, 58.8, WESTFALL },
+					},
+					["classes"] = { MAGE, WARLOCK },
+					["groups"] = {
+						i(208750, {	-- Rune of Channeling
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403932),	-- Engrave Chest - Master Channeler
+							},
+						}),
+						i(208799, {	-- Spell Notes: Living Bomb
+							["classes"] = { MAGE },
+							["groups"] = {
+								recipe(415936),	-- Engrave Gloves - Living Bomb
+							},
+						}),
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, n(210487, {	-- Horror of the Deep
 					["providers"] = {
 						{ "o", 408799 },	-- Idol of the Deep

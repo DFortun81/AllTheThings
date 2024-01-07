@@ -1898,6 +1898,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1192,	-- Elder Mountain Boar
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208854, {	-- Chewed Spell Notes
+					["coords"] = {
+						{ 29.8, 84.6, LOCH_MODAN },
+						{ 36.6, 84.4, LOCH_MODAN },
+						{ 49.0, 21.6, LOCH_MODAN },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { MAGE },
+					["cr"] = 1166,  -- Stonesplinter Seer
+				})),
+				-- #endif
 				i(769, {	-- Chunk of Boar Meat
 					["coord"] = { 37.0, 34.4, LOCH_MODAN },
 					["crs"] = {

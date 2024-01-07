@@ -362,11 +362,21 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				}),
 				i(203745, {	-- Spell Notes: Ice Lance
 					["cost"] = {
-						{ "i", 211779, 1 },	-- Comprehension Charm
+						{ "i", 211809, 1 },	-- Comprehension Primer
 						{ "i", 203751, 1 },	-- Spell Notes: CALE ENCI
 					},
 					["groups"] = {
 						recipe(401760),	-- Engrave Gloves - Ice Lance
+					},
+				}),
+				i(208799, {	-- Spell Notes: Living Bomb
+					["cost"] = {
+						{ "i", 211779, 1 },	-- Comprehension Charm
+						{ "i", 208854, 1 },	-- Chewed Spell Notes
+						{ "i", 209028, 1 },	-- Spell Notes: BIVOLG NIMB
+					},
+					["groups"] = {
+						recipe(415936),	-- Engrave Gloves - Living Bomb
 					},
 				}),
 				i(208753, {	-- Spell Notes: Regeneration

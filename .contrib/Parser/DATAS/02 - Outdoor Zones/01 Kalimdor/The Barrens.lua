@@ -3949,6 +3949,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 407566 },	-- Goblin Tome
 					["coord"] = { 62.7, 36.3, THE_BARRENS },
 				})),
+				applyclassicphase(SOD_PHASE_ONE, o(407510, {	-- Etched Carving
+					["provider"] = { "o", 407505 },	-- Etched Carving
+					["description"] = "Stand on the green dot and read the inscription to activate the hidden path. Blink from green dot to green dot without taking any steps or losing the Path of no Steps debuff.\n\nOnce you've reached the last green dot, you'll see another large carving. Blink to it and quickly read the inscription before the buff falls off to earn the Rune.",
+					["coord"] = { 45.5, 80.0, THE_BARRENS },
+					["classes"] = { MAGE },
+					["groups"] = {
+						i(208799, {	-- Spell Notes: Living Bomb
+							["classes"] = { MAGE },
+							["groups"] = {
+								recipe(415936),	-- Engrave Gloves - Living Bomb
+							},
+						}),
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208739, {	-- Horde Warbanner
 					["provider"] = { "o", 407289 },	-- Horde Warbanner
 					["coord"] = { 52.2, 31.1, THE_BARRENS },

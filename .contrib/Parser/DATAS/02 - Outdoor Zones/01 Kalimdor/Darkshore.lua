@@ -2478,9 +2478,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(209028, {	-- Spell Notes: BIVOLG NIMB
 							["classes"] = { MAGE },
-							["groups"] = {
-								recipe(415936),	-- Engrave Gloves - Living Bomb
-							},
 						}),
 					},
 				})),
