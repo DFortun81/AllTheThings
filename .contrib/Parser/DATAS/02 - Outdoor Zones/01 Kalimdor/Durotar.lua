@@ -1761,6 +1761,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 					}),
 					n(ZONE_DROPS, {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(205940, {	-- Memory of a Dark Purpose
+							["coord"] = { 59.2, 56.8, DUROTAR },
+							["classes"] = { PRIEST },
+							["races"] = HORDE_ONLY,
+							["crs"] = {
+								3128,	-- Kul Tiras Sailor
+								3129,	-- Kul Tiras Marine
+							},
+							["groups"] = {
+								recipe(425216),	-- Engrave Chest - Void Plague
+							},
+						})),
 						applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
 							["coord"] = { 40.6, 67.7, DUROTAR },
 							["classes"] = { HUNTER },

@@ -3221,6 +3221,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.6, 49.0, DUN_MOROGH },
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(205940, {	-- Memory of a Dark Purpose
+					["coord"] = { 26.0, 41.8, DUN_MOROGH },
+					["classes"] = { PRIEST },
+					["cr"] = 1211,	-- Leper Gnome
+					["groups"] = {
+						recipe(425216),	-- Engrave Chest - Void Plague
+					},
+				})),
+				-- #endif
 				i(2898, {	-- Mountaineer Chestpiece
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["cr"] = 1196,	-- Ice Claw Bear
