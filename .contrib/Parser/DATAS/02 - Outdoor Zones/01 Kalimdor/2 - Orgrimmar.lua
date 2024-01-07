@@ -3586,7 +3586,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if AFTER 7.3.5.25961
 					["description"] = "This NPC is only visible if you have not yet unlocked the allied race Highmountain Tauren.",
 					["OnUpdate"] = [[function(t,parent,defaultUpdate)
-						if defaultUpdate(t,parent) and not ATTAccountWideData.Achievements[12452] then
+						if _.MODE_DEBUG or (defaultUpdate(t,parent) and not ATTAccountWideData.Achievements[12452]) then
 							t.visible = true;
 						else
 							t.visible = false;
