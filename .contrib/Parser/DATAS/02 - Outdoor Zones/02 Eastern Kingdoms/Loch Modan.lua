@@ -1568,6 +1568,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210107, {	-- Kackle
+					["coord"] = { 55.0, 55.4, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(208777, {	-- Rune of the Sniper
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(416091),	-- Engrave Pants - Sniper Training
+							},
+						}),
+					},
+				})),
+				-- #endif
 				-- #if BEFORE 4.0.3
 				n(2476, {  -- Large Loch Crocolisk / Gosh-Haldir [CATA+]
 					["coords"] = {
@@ -1998,6 +2013,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1222,  -- Dark Iron Sapper
 				}),
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208847, {	-- Skull-Shaped Geode
+					["coord"] = { 33.2, 73.8, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						1164,	-- Stonesplinter Bonesnapper
+						1162,	-- Stonesplinter Scout
+						1161,	-- Stonesplinter Trogg
+					},
+					["groups"] = {
+						i(208778, {	-- Rune of Quick Strike
+							["provider"] = { "i", 208848 },	-- Cracked Skull-Shaped Geode
+							["description"] = "Use the Skull-Shaped Geode on a Skullthumper to crack it and find this rune within.",
+							["classes"] = { WARRIOR },
+							["cr"] = 1163,	-- Stonesplinter Skullthumper
+							["groups"] = {
+								recipe(425443),	-- Engrave Gloves - Quick Strike
+							},
+						}),
+					},
+				})),
 				-- #endif
 				i(2265, {	-- Stonesplinter Axe
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023

@@ -2506,6 +2506,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.0, 35.4, DARKSHORE },
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210482, {	-- Paxnozz
+					["coord"] = { 48.8, 15.6, DARKSHORE },
+					["cost"] = {{ "i", 209047, 1 }},	-- Gnarled Harpoon
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR, HUNTER },
+					["groups"] = {
+						i(208777, {	-- Rune of the Sniper
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(416091),	-- Engrave Pants - Sniper Training
+							},
+						}),
+						i(208778, {	-- Rune of Quick Strike
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425443),	-- Engrave Gloves - Quick Strike
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(2175, {	-- Shadowclaw
 					-- #if AFTER CATA
 					["coords"] = {
@@ -2553,6 +2575,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Climb the tower in Darkshore, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARLOCK },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209047, {	-- Gnarled Harpoon
+					["provider"] = { "o", 408802 },	-- Gnarled Harpoon
+					["coords"] = {
+						{ 44.1, 20.8, DARKSHORE },
+						{ 47.3, 15.3, DARKSHORE },
+						{ 49.2, 16.2, DARKSHORE },
+						{ 48.3, 18.0, DARKSHORE },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR, HUNTER },
 				})),
 			}),
 			-- #endif

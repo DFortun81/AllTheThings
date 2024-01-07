@@ -1216,6 +1216,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210549, {	-- Defias Scout
+					["coords"] = {
+						{ 51.0, 47.0, WESTFALL },
+						{ 51.6, 55.6, WESTFALL },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(208777, {	-- Rune of the Sniper
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(416091),	-- Engrave Pants - Sniper Training
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(573, {	-- Foe Reaper 4000
 					-- #if AFTER CATA
 					["coords"] = {
@@ -1392,6 +1410,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, o(408799, {	-- Idol of the Deep
+					["coord"] = { 26.0, 69.5, WESTFALL },
+					["cost"] = {{ "i", 209045, 1 }},	-- Soul of the Sea
+					["classes"] = { WARRIOR, WARLOCK },
+					["cr"] = 210487,	-- Horror of the Deep
+					["groups"] = {
+						i(208778, {	-- Rune of Quick Strike
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425443),	-- Engrave Gloves - Quick Strike
+							},
+						}),
+						i(208744, {	-- Rune of Shadowbolts
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
+							},
+						}),
+					},
+				})),
+			}),
+			-- #endif
 			-- #if AFTER 9.0.2
 			n(TREASURES, {
 				o(357515, sharedDataSelf({ ["timeline"] = { ADDED_9_0_2 } }, {	-- Sack of Oats
@@ -1807,6 +1849,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209045, {	-- Soul of the Sea
+					["provider"] = { "i", 209420 },	-- Gillsbane
+					["description"] = "This will only drop if you have Gillsbane equipped and haven't completed your Quick Strike rune yet.",
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["coords"] = {
+						-- various common map locations where 'crs' may be found
+						{ 28.8, 72.8, WESTFALL },
+						{ 33.0, 83.6, WESTFALL },
+						{ 34.6, 85.4, WESTFALL },
+						{ 44.2, 9.6, WESTFALL },
+						{ 50.8, 10.6, WESTFALL },
+						{ 53.6, 11.6, WESTFALL },
+						{ 55.8, 8.0, WESTFALL },
+						{ 56.0, 9.8, WESTFALL },
+						{ 56.6, 9.2, WESTFALL },
+					},
+					["crs"] = {
+						126,	-- Murloc Coastrunner
+						458,	-- Murloc Hunter
+						456,	-- Murloc Minor Oracle
+						513,	-- Murloc Netter
+						517,	-- Murloc Oracle
+						515,	-- Murloc Raider
+						127,	-- Murloc Tidehunter
+						171,	-- Murloc Warrior
+						391,	-- Old Murk-Eye
+						519,	-- Slark
+					},
+				})),
+				-- #endif
 				-- #if BEFORE 10.1.7
 				i(1933, {	-- Staff of Conjuring
 					-- Moved to Brainwashed Noble in 10.1.7

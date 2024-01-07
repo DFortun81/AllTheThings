@@ -1788,6 +1788,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { WARRIOR },
 					["cr"] = 212598,	-- Recke Grinnes
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208778, {	-- Rune of Quick Strike
+					["provider"] = { "i", 210696 },	-- Rot Bane
+					["coord"] = { 66.2, 31.0, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						1943,	-- Raging Rot Hide
+						1944,	-- Rot Hide Bruiser
+						1939,	-- Rot Hide Brute
+						1940,	-- Rot Hide Plague Weaver
+						1942,	-- Rot Hide Savage
+					},
+					["groups"] = {
+						recipe(425443),	-- Engrave Gloves - Quick Strike
+					},
+				})),
 				-- #endif
 			}),
 		},

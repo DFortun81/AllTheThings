@@ -3561,6 +3561,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209797, {	-- Bruuz
+					["coord"] = { 64.8, 39.8, THE_BARRENS },
+					["cost"] = {{ "i", 208773, 1 }},	-- Fishing Harpoon
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR, HUNTER },
+					["groups"] = {
+						i(208777, {	-- Rune of the Sniper
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(416091),	-- Engrave Pants - Sniper Training
+							},
+						}),
+						i(208778, {	-- Rune of Quick Strike
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425443),	-- Engrave Gloves - Quick Strike
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(5851, {	-- Captain Gerogg Hammertoe <Bael'dun Captain of the Guard>
 					-- #if AFTER CATA
 					["coord"] = { 49.8, 89.6, SOUTHERN_BARRENS },
@@ -4113,6 +4135,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.8, 38.2, THE_BARRENS },
 					-- #endif
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(208773, {	-- Fishing Harpoon
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARRIOR, HUNTER },
+							["cost"] = 526,	-- 5s 26c
+						})),
+						-- #endif
 						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 					},
