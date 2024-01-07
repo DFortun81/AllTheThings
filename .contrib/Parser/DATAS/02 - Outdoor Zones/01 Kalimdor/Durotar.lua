@@ -3540,6 +3540,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, n(208180, {	-- Razormane Poacher
+					["provider"] = { "n", 208179 },	-- Rustling Bush
+					["description"] = "Cast Hunter's Mark on the bush to spawn the rare.",
+					["coord"] = { 40.6, 52.0, DUROTAR },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(206155, {	-- Rune of Marksmanship
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410113),	-- Engrave Chest - Master Marksman
+							},
+						}),
+					},
+				})),
 				-- #endif
 				-- #if AFTER 4.0.3
 				n(5809, {	-- Sergeant Curtis

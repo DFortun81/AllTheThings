@@ -1741,6 +1741,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(205700, {	-- Venture Co. Poacher
+					["provider"] = { "n", 205692 },	-- Rustling Bush
+					["description"] = "Cast Hunter's Mark on the bush to spawn the rare.",
+					["coord"] = { 59.0, 54.6, MULGORE },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(206155, {	-- Rune of Marksmanship
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410113),	-- Engrave Chest - Master Marksman
+							},
+						}),
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
 					["provider"] = { "o", 392029 },	-- Swordsman's Reward
 					["coords"] = {

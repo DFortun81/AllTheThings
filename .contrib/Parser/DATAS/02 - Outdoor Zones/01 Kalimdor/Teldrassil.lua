@@ -1838,6 +1838,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209812, {	-- Fallenroot Poacher
+					["provider"] = { "n", 209811 },	-- Rustling Bush
+					["description"] = "Cast Hunter's Mark on the bush to spawn the rare.",
+					["coord"] = { 46.6, 46.4, TELDRASSIL },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(206155, {	-- Rune of Marksmanship
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410113),	-- Engrave Chest - Master Marksman
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(14431, {	-- Fury Shelda
 					-- #if AFTER CATA
 					["coords"] = {

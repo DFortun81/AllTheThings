@@ -2942,6 +2942,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(208180, {	-- Razormane Poacher
+					["provider"] = { "n", 208975 },	-- Rustling Bush
+					["description"] = "Cast Hunter's Mark on the bush to spawn the rare.",
+					["coord"] = { 28.8, 49.6, DUN_MOROGH },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(206155, {	-- Rune of Marksmanship
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410113),	-- Engrave Chest - Master Marksman
+							},
+						}),
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
 					-- TODO: Try to get an objectID for this.
 					--["provider"] = { "o",  },	-- Summoning Circle
