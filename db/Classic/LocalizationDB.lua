@@ -1280,7 +1280,9 @@ _.ObjectNames = {
 	[411328] = "Slumbering Bones",
 	[411348] = "Dusty Coffer",
 	[411358] = "Artisan's Chest",
+	[411710] = "Demonic Reliquary",
 	[411715] = "Bough of Altek",
+	[412224] = "Dark Ritual Stone",
 	[414658] = "Rubble",
 	[414713] = "Storage Locker",
 	[415614] = "Mysterious Formulae",
@@ -2100,6 +2102,8 @@ _.ObjectModels = {
 	[410299] = 198039,
 	[411348] = 200953,
 	[411358] = 196987,
+	[411710] = 196976,
+	[412224] = 201097,
 	[414658] = 189478,
 	[414713] = 196976,
 	[415614] = 198455,
@@ -2662,7 +2666,9 @@ localize(_.ObjectNames, {
 	[411328] = "Schlummernde Knochen",
 	[411348] = "Staubige Truhe",
 	[411358] = "Handwerkertruhe",
+	[411710] = "Dämonisches Reliquiar",
 	[411715] = "Alteks Zweig",
+	[412224] = "Dunkler Ritualstein",
 	[414658] = "Geröll",
 });
 end
@@ -3760,6 +3766,7 @@ localize(_.ObjectNames, {
 	[411328] = "Os endormis",
 	[411348] = "Coffre poussiéreux",
 	[411358] = "Coffre d’artisan",
+	[412224] = "Pierre de rituel des ténèbres",
 	[415614] = "Formules mystérieuses",
 });
 end
@@ -4640,6 +4647,7 @@ localize(_.ObjectNames, {
 	[409711] = "두루마리",
 	[409731] = "두루마리",
 	[409758] = "버려진 투구",
+	[412224] = "암흑 의식용 돌",
 });
 end
 if simplifiedLocale == "pt" then

@@ -1431,6 +1431,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78684, {	-- Mysterious Traveler
+					["qg"] = 213444,	-- Mysterious Traveler
+					["sourceQuest"] = 78681,	-- The Conjuring
+					["coord"] = { 79.0, 80.2, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { THE_BARRENS },
+					["classes"] = { WARLOCK },
+					["lvl"] = 20,
+				})),
+				-- #endif
 				q(13602, {	-- Naga of the Strand
 					["qg"] = 3845,	-- Shindrell Swiftfire
 					["coord"] = { 18.2, 20.4, ASHENVALE },

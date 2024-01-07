@@ -2585,13 +2585,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { PALADIN },
 				})),
-				applyclassicphase(SOD_PHASE_ONE, i(210763, {	-- Bough of Altek
-					["provider"] = { "o", 411715 },	-- Bough of Altek
-					["coord"] = { 56.3, 26.4, DARKSHORE },
-					["description"] = "Climb the tower in Darkshore, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
-					["timeline"] = { "removed 2.0.1" },
-					["classes"] = { WARLOCK },
-				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209047, {	-- Gnarled Harpoon
 					["provider"] = { "o", 408802 },	-- Gnarled Harpoon
 					["coords"] = {

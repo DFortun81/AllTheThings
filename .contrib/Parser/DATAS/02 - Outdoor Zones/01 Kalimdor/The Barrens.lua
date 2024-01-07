@@ -2020,6 +2020,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78702, {	-- Raszel Ander
+					["qg"] = 6247,	-- Doan Karhan
+					["sourceQuest"] = 78684,	-- Mysterious Traveler
+					["coord"] = { 49.2, 57.2, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["lvl"] = 20,
+					["groups"] = {
+						i(210980, {	-- Rune of Metamorphosis
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403938),	-- Engrave Gloves - Metamorphosis
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(5046, {	-- Razorhide
 					["qg"] = 3430,	-- Mangletooth
 					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
@@ -2173,6 +2191,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(5341),	-- Spore-Covered Tunic
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78680, {	-- Rumors Abound
+					["qg"] = 6247,	-- Doan Karhan
+					["sourceQuest"] = 1740,	-- The Orb of Soran'ruk
+					["coord"] = { 49.2, 57.2, THE_BARRENS },
+					["description"] = "Climb each of the towers, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { REDRIDGE_MOUNTAINS, DARKSHORE },
+					["classes"] = { WARLOCK },
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/1 Orb of Des
+							["providers"] = {
+								{ "i", 210765 },	-- Orb of Des
+								{ "o", 411710 },	-- Orb of Des
+							},
+							["coord"] = { 80.2, 49.5, REDRIDGE_MOUNTAINS },
+						}),
+						objective(2, {	-- 0/1 Bough of Altek
+							["providers"] = {
+								{ "i", 210763 },	-- Bough of Altek
+								{ "o", 411715 },	-- Bough of Altek
+							},
+							["coord"] = { 56.3, 26.4, DARKSHORE },
+						}),
+					},
+				})),
+				-- #endif
 				q(894, {	-- Samophlange (1/4)
 					["providers"] = {
 						{ "n", 3442 },	-- Sputtervalve
@@ -2842,6 +2888,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78681, {	-- The Conjuring
+					["providers"] = {
+						{ "n",   6247 },	-- Doan Karhan
+						{ "o", 412224 },	-- Dark Ritual Stone
+					},
+					["sourceQuest"] = 78680,	-- Rumors Abound
+					["description"] = "After obtaining the blood, interact with the altar near the obelisk dedicated to Grommash Hellscream to begin a ritual, summoning a few waves of demons that must be defeated using Drain Soul while standing inside the purple rune on the ground. Defeat the final Searing Infernal this way to cause the Mysterious Traveler to appear.",
+					["coords"] = {
+						{ 49.2, 57.2, THE_BARRENS },
+						{ 79.0, 80.3, ASHENVALE },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/10 Blood of the Legion
+							["provider"] = { "i", 210966 },	-- Blood of the Legion
+							["coord"] = { 84.2, 71.6, ASHENVALE },
+							["crs"] = {
+								11697,	-- Mannoroc Lasher
+								6115,	-- Felguard
+								6073,	-- Searing Infernal
+								6071,	-- Legion Hound
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(872, {	-- The Disruption Ends / The Far Watch Offensive [CATA+]
 					-- #if AFTER CATA
 					["qg"] = 3337,	-- Kargal Battlescar
