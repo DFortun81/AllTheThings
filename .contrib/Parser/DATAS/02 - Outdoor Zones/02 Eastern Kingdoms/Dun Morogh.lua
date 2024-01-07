@@ -2166,8 +2166,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Fang of Vagash
 							["provider"] = { "i", 3627 },	-- Fang of Vagash
-							["cr"] = 1388,	-- Vagash
 							["coord"] = { 62.65, 46.08, DUN_MOROGH },
+							["cr"] = 1388,	-- Vagash
 						}),
 						i(10549),	-- Rancher's Trousers
 						i(2817),	-- Soft Leather Tunic / Hard Leather Tunic [CATA+]
@@ -2809,6 +2809,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(208638, {	-- Fyodi
+					["description"] = "The runes he drops can also drop from any of the rare mobs in the zone.",
+					["coord"] = { 31.6, 40.0, DUN_MOROGH },
+					["classes"] = { HUNTER, MAGE, WARRIOR },
+					["groups"] = {
+						i(206169, {	-- Rune of Explosive Shot
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410123),	-- Engrave Gloves - Explosive Shot
+							},
+						}),
+						i(204809, {	-- Rune of Furious Thunder
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(403476),	-- Engrave Pants - Furious Thunder
+							},
+						}),
+						i(203753, {	-- Spell Notes: RING SEFF OSTROF
+							["classes"] = { MAGE },
+							["groups"] = {
+								recipe(401765),	-- Engrave Chest - Fingers of Frost
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(8503, {	-- Gibblewilt
 					-- #if AFTER CATA
 					["coord"] = { 40.8, 45.2, NEW_TINKERTOWN },
@@ -3234,22 +3261,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
-					["coord"] = { 31.6, 40.0, DUN_MOROGH },
-					["classes"] = { HUNTER },
-					["cr"] = 208638,	-- Fyodi
-					["groups"] = {
-						recipe(410123),	-- Engrave Gloves - Explosive Shot
-					},
-				})),
-				applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
-					["coord"] = { 31.6, 40.0, DUN_MOROGH },
-					["classes"] = { WARRIOR },
-					["cr"] = 208638,	-- Fyodi
-					["groups"] = {
-						recipe(403476),	-- Engrave Pants - Furious Thunder
-					},
-				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208159, {	-- Severed Troll Head
 					["coord"] = { 26.6, 50.6, DUN_MOROGH },
 					["timeline"] = { "removed 2.0.1" },

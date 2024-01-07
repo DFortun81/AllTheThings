@@ -2655,10 +2655,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(205940, {	-- Memory of a Dark Purpose
+					["coord"] = { 41.6, 78.8, ELWYNN_FOREST },
+					["classes"] = { PRIEST },
+					["cr"] = 327,	-- Goldtooth
+					["groups"] = {
+						recipe(425216),	-- Engrave Chest - Void Plague
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
 					["coord"] = { 41.6, 78.8, ELWYNN_FOREST },
 					["classes"] = { WARRIOR },
-					["cr"] = 327,	-- Goldtooth
+					["crs"] = {
+						327,	-- Goldtooth
+						100,	-- Gruff Swiftbite
+					},
 					["groups"] = {
 						recipe(403476),	-- Engrave Pants - Furious Thunder
 					},

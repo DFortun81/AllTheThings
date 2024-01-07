@@ -1770,6 +1770,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						})),
 						applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
+							["description"] = "The rune he drops can also drop from any of the rare mobs in the zone.",
 							["coord"] = { 40.6, 67.7, DUROTAR },
 							["classes"] = { WARRIOR },
 							["cr"] = 3281,	-- Sarkoth

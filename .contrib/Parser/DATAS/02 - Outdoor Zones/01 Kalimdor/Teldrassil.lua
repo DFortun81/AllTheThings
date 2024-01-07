@@ -1947,6 +1947,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, o(407734, {	-- Gnarlpine Cache
+					["coord"] = { 45.0, 61.4, TELDRASSIL },
+					["timeline"] = { "removed 2.0.1" },
+					["groups"] = {
+						i(205940, {	-- Memory of a Dark Purpose
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(425216),	-- Engrave Chest - Void Plague
+							},
+						}),
+						i(204809, {	-- Rune of Furious Thunder
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(403476),	-- Engrave Pants - Furious Thunder
+							},
+						}),
+						i(203993, {	-- Rune of Slaughter
+							["classes"] = { ROGUE },
+							["groups"] = {
+								recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
+							},
+						}),
+					},
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {

@@ -1803,6 +1803,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(ZONE_DROPS, {
+				applyclassicphase(SOD_PHASE_ONE, i(205995, {	-- Prairie Dog Musk
+					["coords"] = {
+						{ 53.6, 72.6, MULGORE },
+						{ 31.2, 62.2, MULGORE },
+						{ 48.2, 74.0, MULGORE },
+						{ 30.8, 61.6, MULGORE },
+					},
+					["classes"] = { HUNTER },
+					["crs"] = {
+						2951,	-- Palemane Poacher
+						2950,	-- Palemane Skinner
+						2949,	-- Palemane Tanner
+						207515,	-- Lurkmane
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
 					["coord"] = { 51.8, 20.0, MULGORE },
 					["classes"] = { HUNTER },
@@ -1812,15 +1827,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
-					["coords"] = {
-						{ 51.8, 20.0, MULGORE },
-						{ 30.8, 61.6, MULGORE },
-					},
+					["description"] = "The rune he drops can also drop from any of the rare mobs in the zone.",
+					["coord"] = { 30.8, 61.6, MULGORE },
 					["classes"] = { WARRIOR },
-					["crs"] = {
-						3058,	-- Arra'chea
-						207515,	-- Lurkmane
-					},
+					["cr"] = 207515,	-- Lurkmane
 					["groups"] = {
 						recipe(403476),	-- Engrave Pants - Furious Thunder
 					},
