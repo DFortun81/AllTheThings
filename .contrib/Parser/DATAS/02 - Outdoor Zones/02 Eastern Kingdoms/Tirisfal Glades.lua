@@ -2266,17 +2266,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
-				applyclassicphase(SOD_PHASE_ONE, o(404941, {	-- Relic Coffer
+				applyclassicphase(SOD_PHASE_ONE, i(203993, {	-- Rune of Slaughter
+					["provider"] = { "o", 404941 },	-- Relic Coffer
 					["coord"] = { 52.5, 25.8, TIRISFAL_GLADES },
 					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
 					["groups"] = {
-						i(203993, {	-- Rune of Slaughter
-							["classes"] = { ROGUE },
-							["groups"] = {
-								recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
-							},
-						}),
+						recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
 					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208185, {	-- The Apothecary's Metaphysical Primer
+					["provider"] = { "o", 405879 },	-- Apothecary Society Primer
+					["coord"] = { 59.5, 52.3, TIRISFAL_GLADES },
 				})),
 			}),
 			-- #endif

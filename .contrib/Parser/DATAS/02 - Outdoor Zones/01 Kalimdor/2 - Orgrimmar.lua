@@ -1849,6 +1849,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(207972, {	-- The Lessons of Ta'zo
+					["provider"] = { "o", 405149 },	-- Mural of Ta'zo
+					["coord"] = { 38.7, 78.4, ORGRIMMAR },
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(149806, {	-- A. Shady
 					["coord"] = { 76.7, 35.6, ORGRIMMAR },

@@ -1710,6 +1710,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208860, {	-- Rumi of Gnomeregan: The Collected Works
+					["provider"] = { "o", 408014 },	-- Gnomish Tome
+					["coord"] = { 35.6, 48.9, LOCH_MODAN },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209850, {	-- Runes of the Sorcerer-Kings
+					["provider"] = { "o", 409731 },	-- Scrolls
+					["coord"] = { 77.5, 14.1, LOCH_MODAN },
+				})),
 				applyclassicphase(SOD_PHASE_ONE, o(407850, {	-- Sunken Reliquary
 					["coord"] = { 36.8, 91.4, LOCH_MODAN },
 					["timeline"] = { "removed 2.0.1" },

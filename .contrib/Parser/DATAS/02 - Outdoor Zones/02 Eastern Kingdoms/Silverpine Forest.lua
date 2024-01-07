@@ -1588,6 +1588,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(210177, {	-- Ataeric: On Arcane Curiosities
+					["provider"] = { "o", 410299 },	-- Arcane Secrets
+					["coord"] = { 43.4, 41.2, SILVERPINE_FOREST },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209844, {	-- The Dalaran Digest, Vol. 23
+					["provider"] = { "o", 409501 },	-- Dalaran Digest
+					["coord"] = { 63.5, 63.1, SILVERPINE_FOREST },
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(3552, {	-- Alexandre Lefevre <Leather Armor Merchant>
 					-- #if AFTER CATA

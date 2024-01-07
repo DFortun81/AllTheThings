@@ -1436,6 +1436,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER 9.0.2
 			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209845, {	-- Bewitchments and Glamours
+					["provider"] = { "o", 409562 },	-- Spellbook
+					["coord"] = { 45.4, 70.5, WESTFALL },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208860, {	-- Rumi of Gnomeregan: The Collected Works
+					["provider"] = { "o", 408014 },	-- Gnomish Tome
+					["coord"] = { 52.7, 53.8, WESTFALL },
+				})),
 				o(357515, sharedDataSelf({ ["timeline"] = { ADDED_9_0_2 } }, {	-- Sack of Oats
 					["coords"] = {
 						{ 43.1, 37.3, WESTFALL },

@@ -2403,6 +2403,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203755, {	-- Archmage Theocritus's Research Journal
+					["provider"] = { "o", 386759 },	-- Library Book
+					["coord"] = { 65.4, 70.1, ELWYNN_FOREST },
+				})),
 				applyclassicphase(SOD_PHASE_ONE, o(387466, {	-- Rusty Lockbox
 					["coord"] = { 46.2, 62.1, ELWYNN_FOREST },
 					["timeline"] = { "removed 2.0.1" },

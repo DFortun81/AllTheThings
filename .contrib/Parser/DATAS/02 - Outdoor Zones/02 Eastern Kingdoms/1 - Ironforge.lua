@@ -1228,6 +1228,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(203754, {	-- Archmage Antonidas: The Unabridged Autobiography
+					["provider"] = { "o", 386691 },	-- Library Book
+					["coord"] = { 75.7, 10.5, IRONFORGE },
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(5152, {	-- Bingus
 					["coord"] = { 23.2, 17.6, IRONFORGE },

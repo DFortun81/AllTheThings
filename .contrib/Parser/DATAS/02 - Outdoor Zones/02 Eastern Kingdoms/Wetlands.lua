@@ -1671,6 +1671,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209848, {	-- Goaz Scrolls
+					["provider"] = { "o", 409717 },	-- Scrolls
+					["coord"] = { 33.6, 47.9, WETLANDS },
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(1441, {	-- Brak Durnad <Weaponsmith>
 					["coord"] = { 11.5, 59.6, WETLANDS },

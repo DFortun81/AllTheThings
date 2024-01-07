@@ -1953,6 +1953,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209849, {	-- Crimes Against Anatomy
+					["provider"] = { "o", 409735 },	-- Spellbook
+					["coord"] = { 16.7, 28.5, DUSKWOOD },
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210568, {	-- Decrepit Phylactery
 					["provider"] = { "o", 411348 },	-- Dusty Coffer
 					["description"] = "Go into the northeastern crypt (23.6, 35.0), head down, and take a left into the first big room (approximately 26.0, 30.9).",

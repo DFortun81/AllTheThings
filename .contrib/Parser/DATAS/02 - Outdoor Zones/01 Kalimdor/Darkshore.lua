@@ -2606,6 +2606,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR, HUNTER },
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209843, {	-- Nar'thalas Almanac, Vol. 74
+					["provider"] = { "o", 409496 },	-- Scrolls
+					["coord"] = { 59.6, 22.2, DARKSHORE },
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {

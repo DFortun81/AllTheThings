@@ -3941,23 +3941,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209847, {	-- Arcanic Systems Manual
+					["provider"] = { "o", 409700 },	-- Manual
+					["coord"] = { 56.3, 8.8, THE_BARRENS },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208800, {	-- Baxtan: On Destructive Magics
+					["provider"] = { "o", 407566 },	-- Goblin Tome
+					["coord"] = { 62.7, 36.3, THE_BARRENS },
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208739, {	-- Horde Warbanner
 					["provider"] = { "o", 407289 },	-- Horde Warbanner
 					["coord"] = { 52.2, 31.1, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 				})),
-				applyclassicphase(SOD_PHASE_ONE, o(407312, {	-- Hungry Idol
-					["provider"] = { "i", 208743 },	-- Soul of Greed
+				applyclassicphase(SOD_PHASE_ONE, i(208744, {	-- Rune of Shadowbolts
+					["providers"] = {
+						{ "i", 208743 },	-- Soul of Greed
+						{ "o", 407312 },	-- Hungry Idol
+					},
 					["coord"] = { 57.08, 9.73, THE_BARRENS },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARLOCK },
 					["groups"] = {
-						i(208744, {	-- Rune of Shadowbolts
-							["classes"] = { WARLOCK },
-							["groups"] = {
-								recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
-							},
-						}),
+						recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
 					},
 				})),
 			}),

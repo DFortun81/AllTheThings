@@ -2094,6 +2094,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 5.2.0.16650" },
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209851, {	-- Fury of the Land
+					["provider"] = { "o", 409711 },	-- Scrolls
+					["coord"] = { 74.4, 85.7, STONETALON_MOUNTAINS },
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(9549, {	-- Borand <Bowyer>
 					-- #if AFTER CATA
