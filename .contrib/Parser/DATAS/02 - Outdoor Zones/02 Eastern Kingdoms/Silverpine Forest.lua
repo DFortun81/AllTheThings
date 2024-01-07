@@ -1780,6 +1780,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(210696, {	-- Rot Bane
+					["description"] = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
+					["coord"] = { 66.2, 31.0, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["cr"] = 212598,	-- Recke Grinnes
+				})),
+				-- #endif
 			}),
 		},
 	}),

@@ -1608,6 +1608,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1405, {	-- Foamspittle Staff
 					["cr"] = 517,	-- Murloc Oracle
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209420, {	-- Gillsbane
+					["description"] = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["coords"] = {
+						{ 48.6, 21.8, WESTFALL },
+						{ 47.6, 39.2, WESTFALL },
+						{ 36.6, 74.4, WESTFALL },
+						{ 37.6, 55.4, WESTFALL },
+						{ 44.6, 67.6, WESTFALL },
+						{ 51.6, 75.2, WESTFALL },
+					},
+					["crs"] = {
+						504,	-- Defias Trapper
+						 95,	-- Defias Smuggler
+						449,	-- Defias Knuckleduster
+						590,	-- Defias Looter
+						589,	-- Defias Pillager
+						121,	-- Defias Pathstalker
+					},
+				})),
+				-- #endif
 				-- #if BEFORE 4.0.3
 				i(723, {	-- Goretusk Liver
 					["crs"] = {

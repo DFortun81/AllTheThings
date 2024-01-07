@@ -24,6 +24,10 @@ SODItem(211423, LEATHER);	-- Void-Touched Leather Gloves
 SODItem(210773, MAIL);	-- Mantle of the Second War
 SODItem(210794, MAIL);	-- Shifting Silver Breastplate
 
+-- Quest Items for Runes
+SODItem(209420, ONE_HANDED_MACES);	-- Gillsbane
+SODItem(210696, ONE_HANDED_SWORDS);	-- Rot Bane
+
 -- NYI
 SODItem(211445, BOWS);	-- Barbaric Recurve
 SODItem(211443, TWO_HANDED_SWORDS);	-- Blade of Rage
