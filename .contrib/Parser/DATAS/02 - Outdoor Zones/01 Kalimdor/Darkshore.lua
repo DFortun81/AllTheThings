@@ -2466,6 +2466,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.0, 61.2, DARKSHORE },
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210451, {	-- Lady Sedorax
+					["coord"] = { 55.6, 36.6, DARKSHORE },
+					["groups"] = {
+						i(208741, {	-- Rune of Endless Rage
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(403489),	-- Engrave Gloves - Endless Rage
+							},
+						}),
+						i(209028, {	-- Spell Notes: BIVOLG NIMB
+							["classes"] = { MAGE },
+							["groups"] = {
+								recipe(415936),	-- Engrave Gloves - Living Bomb
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(7016, {	-- Lady Vespira
 					-- #if AFTER CATA
 					["coords"] = {

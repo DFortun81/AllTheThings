@@ -1846,6 +1846,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208843, {	-- Battle Totem
+					["timeline"] = { "removed 2.0.1" },
+					["coords"] = {
+						{ 79.6, 16.0, LOCH_MODAN },
+						{ 76.6, 16.0, LOCH_MODAN },
+					},
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						1180,	-- Mo'grosh Brute
+						1179,	-- Mo'grosh Enforcer
+						1183,	-- Mo'grosh Mystic
+						1178,	-- Mo'grosh Ogre
+						1181,	-- Mo'grosh Shaman
+					},
+				})),
+				-- #endif
 				-- #if ANYCLASSIC
 				i(3173, {	-- Bear Meat
 					["coord"] = { 29.2, 53.0, LOCH_MODAN },
@@ -2023,6 +2040,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208741, {	-- Rune of Endless Rage
+					["provider"] = { "i", 208843 },	-- Battle Totem
+					["description"] = "You can challenge him to a duel (as to not fight his adds) with a Battle Totem.",
+					["coords"] = {
+						{ 55.2, 68.2, LOCH_MODAN },
+						{ 66.0, 37.8, LOCH_MODAN },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["cr"] = 2478,  -- Haren Swifthoof <Horde Runner>
+					["groups"] = {
+						recipe(403489),	-- Engrave Gloves - Endless Rage
+					},
+				})),
+				-- #endif
 				-- #if BEFORE 4.0.3
 				-- Moved to Searing Gorge in 10.1.7
 				i(2274, {	-- Sapper's Gloves

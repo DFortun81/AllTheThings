@@ -1811,6 +1811,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1391, {	-- Riverpaw Mystic Staff
 					["cr"] = 453,	-- Riverpaw Mystic
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208741, {	-- Rune of Endless Rage
+					["description"] = "This can also drop from any of the rare mobs in the zone.",
+					["coord"] = { 34.4, 84.6, WESTFALL },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["cr"] = 391,	-- Old Murk-Eye
+					["groups"] = {
+						recipe(403489),	-- Engrave Gloves - Endless Rage
+					},
+				})),
+				-- #endif
 				i(832, {	-- Silver Defias Belt
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3

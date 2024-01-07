@@ -1478,6 +1478,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(211146, {	-- Lost Adventurer
+					["provider"] = { "n", 210802 },	-- Webbed Victim
+					["coord"] = { 34.8, 7.8, SILVERPINE_FOREST },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(208741, {	-- Rune of Endless Rage
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(403489),	-- Engrave Gloves - Endless Rage
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(51037, {	-- Lost Gilnean Wardog
 					["coord"] = { 59.0, 42.0, SILVERPINE_FOREST },
 					["timeline"] = { "added 5.2.0.16650" },

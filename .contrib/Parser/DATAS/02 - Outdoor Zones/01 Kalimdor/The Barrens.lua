@@ -3733,6 +3733,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.0, 33.6, THE_BARRENS },
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209607, {	-- Lieutenant Stonebrew
+					["providers"] = {
+						{ "i", 208739 },	-- Horde Warbanner
+						{ "o", 407291 },	-- Alliance Warbanner
+					},
+					["coord"] = { 62.6, 56.2, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(208741, {	-- Rune of Endless Rage
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(403489),	-- Engrave Gloves - Endless Rage
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(5848, {	-- Malgin Barleybrew <Bael'dun Morale Officer>
 					-- #if AFTER CATA
 					["coord"] = { 47.4, 85.8, SOUTHERN_BARRENS },
@@ -3923,6 +3941,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(208739, {	-- Horde Warbanner
+					["provider"] = { "o", 407289 },	-- Horde Warbanner
+					["coord"] = { 52.2, 31.1, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+				})),
 				applyclassicphase(SOD_PHASE_ONE, o(407312, {	-- Hungry Idol
 					["provider"] = { "i", 208743 },	-- Soul of Greed
 					["coord"] = { 57.08, 9.73, THE_BARRENS },
