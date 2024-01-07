@@ -1790,6 +1790,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				n(3291, {	-- Greishan Ironstove <Traveling Merchant>
+					["coords"] = {
+						{ 23.0, 70.4, LOCH_MODAN },
+						{ 27.6, 65.8, LOCH_MODAN },
+						{ 30.6, 58.0, LOCH_MODAN },
+						{ 34.6, 47.2, LOCH_MODAN },
+						{ 26.6, 22.6, LOCH_MODAN },
+					},
+					["groups"] = {
+						applyclassicphase(SOD_PHASE_ONE, i(208833, {	-- Malevolent Pie
+							["classes"] = { WARLOCK },
+							["cost"] = 526,	-- 5s 26c
+							["groups"] = {
+								i(208750, {	-- Rune of Channeling
+									["classes"] = { WARLOCK },
+									["groups"] = {
+										recipe(403932),	-- Engrave Chest - Master Channeler
+									},
+								}),
+							},
+						})),
+					},
+				}),
+				-- #endif
 				n(167, {	-- Morhan Coppertongue <Metalsmith>
 					["coord"] = { 34.0, 46.6, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,

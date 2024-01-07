@@ -2702,6 +2702,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 2337,	-- Dark Strand Voidcaller
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208750, {	-- Rune of Channeling
+					["coord"] = { 57.0, 26.4, DARKSHORE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["cr"] = 2336,	-- Dark Strand Fanatic
+					["groups"] = {
+						recipe(403932),	-- Engrave Chest - Master Channeler
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208744, {	-- Rune of Shadowbolts
 					["coords"] = {
 						{ 57.6, 26.0, DARKSHORE },

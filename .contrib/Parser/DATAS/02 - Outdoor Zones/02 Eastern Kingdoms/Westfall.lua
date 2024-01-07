@@ -1262,6 +1262,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(210501, {	-- Harvest Reaper Prototype
+					["provider"] = { "i", 209057 },	-- Prototype Engine
 					["coords"] = {
 						{ 50.6, 18.8, WESTFALL },
 						{ 52.8, 33.8, WESTFALL },
@@ -1683,6 +1684,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209058, {	-- Elemental Core
+					["coords"] = {
+						{ 40.8, 22.0, WESTFALL },
+						{ 35.8, 34.4, WESTFALL },
+						{ 33.8, 49.4, WESTFALL },
+						{ 34.6, 68.6, WESTFALL },
+						{ 38.8, 61.4, WESTFALL },
+						{ 42.6, 59.2, WESTFALL },
+						{ 46.8, 48.6, WESTFALL },
+						{ 43.0, 42.2, WESTFALL },
+						{ 54.6, 41.0, WESTFALL },
+						{ 61.6, 36.0, WESTFALL },
+						{ 63.6, 51.4, WESTFALL },
+						{ 68.8, 74.0, WESTFALL },
+					},
+					["cr"] = 832,	-- Dust Devil
+				})),
+				-- #endif
 				i(1405, {	-- Foamspittle Staff
 					["cr"] = 517,	-- Murloc Oracle
 				}),
@@ -1828,6 +1848,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 450,	-- Defias Renegade Mage
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209057, {	-- Prototype Engine
+					["cost"] = {
+						{ "i", 209056, 1 },	-- Spare Reaper Parts
+						{ "i", 209056, 1 },	-- Spare Reaper Parts
+					},
+				})),
+				-- #endif
 				-- #if AFTER 4.0.3
 				i(2698, {	-- Recipe: Cooked Crab Claw (RECIPE!)
 					["description"] = "Can drop from any mob in the zone, would recommend farming the murlocs in the north.",
@@ -1926,6 +1954,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						171,	-- Murloc Warrior
 						391,	-- Old Murk-Eye
 						519,	-- Slark
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209056, {	-- Spare Reaper Parts
+					["coords"] = {
+						{ 59.0, 18.2, WESTFALL },
+						{ 54.4, 25.6, WESTFALL },
+						{ 50.0, 22.6, WESTFALL },
+						{ 54.6, 34.6, WESTFALL },
+						{ 45.8, 36.0, WESTFALL },
+						{ 39.2, 52.0, WESTFALL },
+						{ 47.6, 67.6, WESTFALL },
+						{ 63.6, 60.2, WESTFALL },
+					},
+					["crs"] = {
+						480,	-- Rusty Harvest Golem
+						114,	-- Harvest Watcher
+						 36,	-- Harvest Golem
+						115,	-- Harvest Reaper
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA

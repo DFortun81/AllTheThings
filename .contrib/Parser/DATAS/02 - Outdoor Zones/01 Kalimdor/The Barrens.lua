@@ -3968,6 +3968,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.2, 31.1, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208750, {	-- Rune of Channeling
+					["provider"] = { "o", 407347 },	-- Altar of Thorns
+					["description"] = "Channel Health Funnel to 0 health while standing on the Altar of Thorns. You will be healed to full and granted the Rune.",
+					["coord"] = { 58.2, 26.7, THE_BARRENS },
+					["classes"] = { WARLOCK },
+					["groups"] = {
+						recipe(403932),	-- Engrave Chest - Master Channeler
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208744, {	-- Rune of Shadowbolts
 					["providers"] = {
 						{ "i", 208743 },	-- Soul of Greed

@@ -1563,6 +1563,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(212763, {	-- Sadistic Fiend
+					["description"] = "Cast Curse of Recklessness on him.",
+					["coord"] = { 58.2, 45.2, SILVERPINE_FOREST },
+					["groups"] = {
+						i(208750, {	-- Rune of Channeling
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403932),	-- Engrave Chest - Master Channeler
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(1948, {	-- Snarlmane
 					["coord"] = { 66.2, 25.0, SILVERPINE_FOREST },
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
