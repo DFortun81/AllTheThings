@@ -1450,10 +1450,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, n(211965, {	-- Carrodin
 					["coord"] = { 47.6, 64.6, WETLANDS },
 					["groups"] = {
-						i(211205, {	-- Rune of Aspect of the Lion
+						i(211205, {	-- Rune of Heart of the Lion
 							["classes"] = { HUNTER },
 							["groups"] = {
-								recipe(410115),	-- Engrave Chest - Aspect of the Lion
+								recipe(410115),	-- Engrave Chest - Heart of the Lion
 							},
 						}),
 						i(210573, {	-- Rune of Consuming Rage

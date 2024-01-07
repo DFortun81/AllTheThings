@@ -830,8 +830,8 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(424718),	-- Engrave Pants - Starsurge
 		}),
 		classHeader(HUNTER, {
-			recipe(410115),	-- Engrave Chest - Aspect of the Lion
 			recipe(425759),	-- Engrave Chest - Cobra Strikes
+			recipe(410115),	-- Engrave Chest - Heart of the Lion
 			recipe(410122),	-- Engrave Chest - Lone Wolf
 			recipe(410113),	-- Engrave Chest - Master Marksman
 			recipe(410110),	-- Engrave Gloves - Beast Mastery
