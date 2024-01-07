@@ -957,8 +957,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["lvl"] = 2,
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Ice Lance
-									["provider"] = { "i", 203751 },	-- Spell Notes: CALE ENCI
-									["cr"] = 38,	-- Defias Thug
+									["provider"] = { "i", 203745 },	-- Spell Notes: Ice Lance
 								}),
 								recipe(401760),	-- Engrave Gloves - Ice Lance
 								i(211779),	-- Comprehension Charm
@@ -1329,6 +1328,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							-- #endif
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(203751, {	-- Spell Notes: CALE ENCI
+							["classes"] = { MAGE },
+							["cr"] = 38,	-- Defias Thug
+						})),
+						-- #endif
 					}),
 					-- #endif
 				},

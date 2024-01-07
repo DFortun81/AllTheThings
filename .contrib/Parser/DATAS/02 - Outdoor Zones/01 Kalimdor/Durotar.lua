@@ -1487,7 +1487,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["lvl"] = 2,
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Ice Lance
-									["provider"] = { "i", 203751 },	-- Spell Notes: CALE ENCI
+									["provider"] = { "i", 203745 },	-- Spell Notes: Ice Lance
 								}),
 								recipe(401760),	-- Engrave Gloves - Ice Lance
 								i(211779),	-- Comprehension Charm

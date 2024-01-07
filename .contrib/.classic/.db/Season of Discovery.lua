@@ -360,6 +360,15 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						recipe(401765),	-- Engrave Chest - Fingers of Frost
 					},
 				}),
+				i(203745, {	-- Spell Notes: Ice Lance
+					["cost"] = {
+						{ "i", 211779, 1 },	-- Comprehension Charm
+						{ "i", 203751, 1 },	-- Spell Notes: CALE ENCI
+					},
+					["groups"] = {
+						recipe(401760),	-- Engrave Gloves - Ice Lance
+					},
+				}),
 				i(208753, {	-- Spell Notes: Regeneration
 					["cost"] = {
 						{ "i", 211779, 1 },	-- Comprehension Charm

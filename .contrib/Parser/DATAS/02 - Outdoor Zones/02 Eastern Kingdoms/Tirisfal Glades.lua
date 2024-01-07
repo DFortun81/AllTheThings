@@ -384,9 +384,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["lvl"] = 2,
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Ice Lance
-									["provider"] = { "i", 203751 },	-- Spell Notes: CALE ENCI
-									["coord"] = { 38.2, 68.4, TIRISFAL_GLADES },
-									["cr"] = 1507,	-- Scarlet Initiate
+									["provider"] = { "i", 203745 },	-- Spell Notes: Ice Lance
 								}),
 								recipe(401760),	-- Engrave Gloves - Ice Lance
 								i(211779),	-- Comprehension Charm
@@ -715,6 +713,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 37.4, 68.0, TIRISFAL_GLADES },
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
+						-- #endif
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(203751, {	-- Spell Notes: CALE ENCI
+							["coord"] = { 38.2, 68.4, TIRISFAL_GLADES },
+							["classes"] = { MAGE },
+							["cr"] = 1507,	-- Scarlet Initiate
+						})),
 						-- #endif
 						i(2754, {	-- Tarnished Bastard Sword
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
