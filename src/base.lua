@@ -208,7 +208,7 @@ frame.Suffix = "ATTFRAME";
 if app.DebuggingEvents then
 frame:SetScript("OnEvent", function(self, e, ...)
 	app.PrintDebug(e,...);
-	(events[e] or print)(...);
+	(events[e] or print)("UNHANDLED EVENT:",e);
 	app.PrintDebugPrior(e);
 end);
 else

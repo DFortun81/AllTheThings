@@ -1618,6 +1618,7 @@ app.events.BAG_NEW_ITEMS_UPDATED = softRefresh;
 if app.IsClassic then
 	-- Way too spammy to be used without a Callback or combat protection
 	app.events.CRITERIA_UPDATE = softRefresh;
+	app:RegisterEvent("CRITERIA_UPDATE");
 end
 app.events.QUEST_REMOVED = softRefresh;
 app.events.QUEST_WATCH_UPDATE = softRefresh;
@@ -1650,7 +1651,6 @@ app.events.QUEST_TURNED_IN = function(questID)
 	end
 end
 app:RegisterEvent("BAG_NEW_ITEMS_UPDATED");
-app:RegisterEvent("CRITERIA_UPDATE");
 app:RegisterEvent("QUEST_ACCEPTED");
 app:RegisterEvent("QUEST_LOG_UPDATE");
 app:RegisterEvent("QUEST_REMOVED");
