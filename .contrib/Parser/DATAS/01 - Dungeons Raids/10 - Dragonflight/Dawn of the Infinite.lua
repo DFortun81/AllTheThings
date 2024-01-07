@@ -1082,11 +1082,11 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(77610),	-- when you learn everything from Quantum Wand
 		-- q(77611),	-- when you learn everything from Quantum ?
 		-- q(77622),	-- when you learn everything from Quantum ?
-		-- q(77623),	-- when you learn everything from Quantum ?
+		q(77623),	-- when you learn everything from Quantum Legs (Mail / Hunter)
 		q(77624),	-- when you learn everything from Quantum Legs (Leather / Druid)
 		-- q(77625),	-- when you learn everything from Quantum ?
 		-- q(77626),	-- when you learn everything from Quantum ?
-		-- q(77627),	-- when you learn everything from Quantum ?
+		q(77627),	-- when you learn everything from Quantum Headpiece (Mail / Hunter)
 		q(77628),	-- when you learn everything from Quantum Headpiece (Leather / Druid)
 		-- q(77629),	-- when you learn everything from Quantum ?
 		q(77630),	-- when you learn everything from Quantum Gloves (Plate / Warrior)
@@ -1094,7 +1094,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- q(77632),	-- when you learn everything from Quantum ?
 		-- q(77633),	-- when you learn everything from Quantum ?
 		-- q(77634),	-- when you learn everything from Quantum ?
-		-- q(77635),	-- when you learn everything from Quantum ?
+		q(77635),	-- when you learn everything from Quantum Chestpiece (Mail / Hunter)
 		q(77636),	-- when you learn everything from Quantum Chestpiece (Leather / Druid)
 		-- q(77637),	-- when you learn everything from Quantum ?
 		-- q(77638),	-- when you learn everything from Quantum ?
