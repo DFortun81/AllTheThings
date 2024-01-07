@@ -3552,9 +3552,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					]]--
 					["description"] = "Cast Arcane Explosion in the correct order next to the Arcane Shard. South to North.",
 					["coords"] = {
-						{ 13, 24.8, DARKSHORE },	-- Southern Crystal
-						{ 14, 19.8, DARKSHORE },	-- Middle Crystal
-						{ 13.5, 15.8, DARKSHORE },	-- Northern Crystal
+						{ 13, 24.8, ASHENVALE },	-- Southern Crystal
+						{ 14, 19.8, ASHENVALE },	-- Middle Crystal
+						{ 13.5, 15.8, ASHENVALE },	-- Northern Crystal
 					},
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { MAGE },
