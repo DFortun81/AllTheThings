@@ -1750,6 +1750,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, o(404352, {	-- Artifact Storage
+					["provider"] = { "i", 206975 },	-- Artifact Storage Key
+					["coord"] = { 31.6, 49.5, MULGORE },
+					["timeline"] = { "removed 2.0.1" },
+					["groups"] = {
+						i(206388, {	-- Sulfurous Icon
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(425344),	-- Engrave Gloves - Molten Blast
+							},
+						}),
+					},
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {
@@ -1803,6 +1816,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(ZONE_DROPS, {
+				applyclassicphase(SOD_PHASE_ONE, i(206975, {	-- Artifact Storage Key
+					["coord"] = { 33.8, 49.8, MULGORE },
+					["timeline"] = { "removed 2.0.1" },
+					["crs"] = {
+						2990,	-- Bael'dun Appraiser
+						2989,	-- Bael'dun Digger
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205995, {	-- Prairie Dog Musk
 					["coords"] = {
 						{ 53.6, 72.6, MULGORE },

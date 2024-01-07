@@ -1458,7 +1458,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if AFTER 9.0.2
+			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
 				applyclassicphase(SOD_PHASE_ONE, i(209845, {	-- Bewitchments and Glamours
 					["provider"] = { "o", 409562 },	-- Spellbook
@@ -1468,6 +1468,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 408014 },	-- Gnomish Tome
 					["coord"] = { 52.7, 53.8, WESTFALL },
 				})),
+			}),
+			-- #endif
+			-- #if AFTER 9.0.2
+			n(TREASURES, {
 				o(357515, sharedDataSelf({ ["timeline"] = { ADDED_9_0_2 } }, {	-- Sack of Oats
 					["coords"] = {
 						{ 43.1, 37.3, WESTFALL },
