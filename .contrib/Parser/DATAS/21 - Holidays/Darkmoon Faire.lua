@@ -1159,12 +1159,34 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
 				["cost"] = { { "i", 2309, 3 } },	-- Embossed Leather Boots
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.5.0", "added 2.0.1", "removed 4.3.0" },
+				-- #else
 				["timeline"] = { "removed 4.3.0" },
+				-- #endif
 				["repeatable"] = true,
 				["groups"] = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			-- CRIEVE NOTE: I don't know what the difference is.
+			-- Might be reputation maximums? The rep awarded is the same.
+			q(79595, {	-- Carnival Boots [Tier 1]
+				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
+				["coords"] = {
+					{ 43.5, 71.1, ELWYNN_FOREST },
+					{ 36.2, 35.2, MULGORE },
+				},
+				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
+				["cost"] = { { "i", 2309, 3 } },	-- Embossed Leather Boots
+				["timeline"] = { "removed 2.0.1" },
+				["repeatable"] = true,
+				["groups"] = {
+					TATTERED_DARKMOON_PRIZE_TICKET,
+				},
+			}),
+			-- #endif
 			q(7882, {	-- Carnival Jerkins [Tier 2]
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
 				-- #if AFTER 4.3.0
@@ -1181,12 +1203,35 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["cost"] = { { "i", 2314, 3 } },	-- Toughened Leather Armor
 				["lvl"] = 10,
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.5.0", "added 2.0.1", "removed 4.3.0" },
+				-- #else
 				["timeline"] = { "removed 4.3.0" },
+				-- #endif
 				["repeatable"] = true,
 				["groups"] = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			-- CRIEVE NOTE: I don't know what the difference is.
+			-- Might be reputation maximums? The rep awarded is the same.
+			q(79592, {	-- Carnival Jerkins [Tier 2]
+				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
+				["coords"] = {
+					{ 43.5, 71.1, ELWYNN_FOREST },
+					{ 36.2, 35.2, MULGORE },
+				},
+				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
+				["cost"] = { { "i", 2314, 3 } },	-- Toughened Leather Armor
+				["timeline"] = { "removed 2.0.1" },
+				["repeatable"] = true,
+				["lvl"] = 10,
+				["groups"] = {
+					TATTERED_DARKMOON_PRIZE_TICKET,
+				},
+			}),
+			-- #endif
 			q(7889, {	-- Coarse Weightstone [Tier 1]
 				["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
 				-- #if AFTER 4.3.0
@@ -1202,12 +1247,34 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
 				["cost"] = { { "i", 3240, 10 } },	-- Coarse Weightstone
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.5.0", "added 2.0.1", "removed 4.3.0" },
+				-- #else
 				["timeline"] = { "removed 4.3.0" },
+				-- #endif
 				["repeatable"] = true,
 				["groups"] = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			-- CRIEVE NOTE: I don't know what the difference is.
+			-- Might be reputation maximums? The rep awarded is the same.
+			q(79593, {	-- Coarse Weightstone [Tier 1]
+				["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
+				["coords"] = {
+					{ 40.5, 69.9, ELWYNN_FOREST },
+					{ 37.8, 39.8, MULGORE },
+				},
+				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
+				["cost"] = { { "i", 3240, 10 } },	-- Coarse Weightstone
+				["timeline"] = { "removed 2.0.1" },
+				["repeatable"] = true,
+				["groups"] = {
+					TATTERED_DARKMOON_PRIZE_TICKET,
+				},
+			}),
+			-- #endif
 			q(7894, {	-- Copper Modulator [Tier 1]
 				["qg"] = 14841,  -- Rinling
 				-- #if AFTER 4.3.0
@@ -1223,12 +1290,34 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
 				["cost"] = { { "i", 4363, 5 } },	-- Copper Modulator
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.5.0", "added 2.0.1", "removed 4.3.0" },
+				-- #else
 				["timeline"] = { "removed 4.3.0" },
+				-- #endif
 				["repeatable"] = true,
 				["groups"] = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			-- CRIEVE NOTE: I don't know what the difference is.
+			-- Might be reputation maximums? The rep awarded is the same.
+			q(79594, {	-- Copper Modulator [Tier 1]
+				["qg"] = 14841,  -- Rinling
+				["coords"] = {
+					{ 41.7, 70.7, ELWYNN_FOREST },
+					{ 37.1, 37.2, MULGORE },
+				},
+				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
+				["cost"] = { { "i", 4363, 5 } },	-- Copper Modulator
+				["timeline"] = { "removed 2.0.1" },
+				["repeatable"] = true,
+				["groups"] = {
+					TATTERED_DARKMOON_PRIZE_TICKET,
+				},
+			}),
+			-- #endif
 			q(7884, {	-- Crocolisk Boy and the Bearded Murloc [Tier 4]
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
 				-- #if AFTER 4.3.0
@@ -1837,12 +1926,35 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["cost"] = { { "i", 3486, 7 } },	-- Heavy Grinding Stone
 				["lvl"] = 10,
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.5.0", "added 2.0.1", "removed 4.3.0" },
+				-- #else
 				["timeline"] = { "removed 4.3.0" },
+				-- #endif
 				["repeatable"] = true,
 				["groups"] = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			-- CRIEVE NOTE: I don't know what the difference is.
+			-- Might be reputation maximums? The rep awarded is the same.
+			q(79590, {	-- Heavy Grinding Stone [Tier 2]
+				["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
+				["coords"] = {
+					{ 40.5, 69.9, ELWYNN_FOREST },
+					{ 37.8, 39.8, MULGORE },
+				},
+				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
+				["cost"] = { { "i", 3486, 7 } },	-- Heavy Grinding Stone
+				["timeline"] = { "removed 2.0.1" },
+				["repeatable"] = true,
+				["lvl"] = 10,
+				["groups"] = {
+					TATTERED_DARKMOON_PRIZE_TICKET,
+				},
+			}),
+			-- #endif
 			q(29514, {	-- Herbs for Healing
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
 				["coord"] = { 55.0, 71.6, DARKMOON_ISLAND },
@@ -2258,12 +2370,34 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
 				["cost"] = { { "i", 5134, 5 } },	-- Small Furry Paw
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.5.0", "added 2.0.1", "removed 4.3.0" },
+				-- #else
 				["timeline"] = { "removed 4.3.0" },
+				-- #endif
 				["repeatable"] = true,
 				["groups"] = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			-- CRIEVE NOTE: I don't know what the difference is.
+			-- Might be reputation maximums? The rep awarded is the same.
+			q(79588, {	-- Small Furry Paws [Tier 1]
+				["qg"] = 14829,	-- Yebb Neblegear
+				["coords"] = {
+					{ 40.2, 69.7, ELWYNN_FOREST },
+					{ 37.5, 39.6, MULGORE },
+				},
+				["maxReputation"] = TIER_ONE_MAX_REPUTATION,
+				["cost"] = { { "i", 5134, 5 } },	-- Small Furry Paw
+				["timeline"] = { "removed 2.0.1" },
+				["repeatable"] = true,
+				["groups"] = {
+					TATTERED_DARKMOON_PRIZE_TICKET,
+				},
+			}),
+			-- #endif
 			q(7901, {	-- Soft Bushy Tails [Tier 3]
 				["qg"] = 14829,	-- Yebb Neblegear
 				-- #if AFTER 4.3.0
@@ -2582,12 +2716,35 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["cost"] = { { "i", 11407, 5 } },	-- Torn Bear Pelt
 				["lvl"] = 10,
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.5.0", "added 2.0.1", "removed 4.3.0" },
+				-- #else
 				["timeline"] = { "removed 4.3.0" },
+				-- #endif
 				["repeatable"] = true,
 				["groups"] = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			-- CRIEVE NOTE: I don't know what the difference is.
+			-- Might be reputation maximums? The rep awarded is the same.
+			q(79589, {	-- Torn Bear Pelts [Tier 2]
+				["qg"] = 14829,	-- Yebb Neblegear
+				["coords"] = {
+					{ 40.2, 69.7, ELWYNN_FOREST },
+					{ 37.5, 39.6, MULGORE },
+				},
+				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
+				["cost"] = { { "i", 11407, 5 } },	-- Torn Bear Pelt
+				["timeline"] = { "removed 2.0.1" },
+				["repeatable"] = true,
+				["lvl"] = 10,
+				["groups"] = {
+					TATTERED_DARKMOON_PRIZE_TICKET,
+				},
+			}),
+			-- #endif
 			q(7902, {	-- Vibrant Plumes [Tier 4]
 				["qg"] = 14829,	-- Yebb Neblegear
 				-- #if AFTER 4.3.0
@@ -2626,12 +2783,35 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["cost"] = { { "i", 4375, 7 } },	-- Whirring Bronze Gizmo
 				["lvl"] = 10,
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.5.0", "added 2.0.1", "removed 4.3.0" },
+				-- #else
 				["timeline"] = { "removed 4.3.0" },
+				-- #endif
 				["repeatable"] = true,
 				["groups"] = {
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			-- CRIEVE NOTE: I don't know what the difference is.
+			-- Might be reputation maximums? The rep awarded is the same.
+			q(79591, {	-- Whirring Bronze Gizmo [Tier 2]
+				["qg"] = 14829,	-- Yebb Neblegear
+				["coords"] = {
+					{ 40.2, 69.7, ELWYNN_FOREST },
+					{ 37.5, 39.6, MULGORE },
+				},
+				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
+				["cost"] = { { "i", 4375, 7 } },	-- Whirring Bronze Gizmo
+				["timeline"] = { "removed 2.0.1" },
+				["repeatable"] = true,
+				["lvl"] = 10,
+				["groups"] = {
+					TATTERED_DARKMOON_PRIZE_TICKET,
+				},
+			}),
+			-- #endif
 			q(29515, {	-- Writing the Future
 				["qg"] = 14822,	-- Sayge
 				["coord"] = { 53.2, 75.8, DARKMOON_ISLAND },
