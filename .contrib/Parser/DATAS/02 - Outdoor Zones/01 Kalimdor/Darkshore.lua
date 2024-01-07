@@ -2681,6 +2681,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2337,	-- Dark Strand Voidcaller
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208744, {	-- Rune of Shadowbolts
+					["coords"] = {
+						{ 57.6, 26.0, DARKSHORE },
+						{ 52.6, 33.8, DARKSHORE },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						3662,	-- Delmanis the Hated
+						10373,	-- Xabraxxis
+					},
+					["groups"] = {
+						recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
+					},
+				})),
+				-- #endif
 				-- #if BEFORE 4.0.3
 				i(5568, {	-- Smooth Pebble
 					["timeline"] = { "deleted 4.0.1" },

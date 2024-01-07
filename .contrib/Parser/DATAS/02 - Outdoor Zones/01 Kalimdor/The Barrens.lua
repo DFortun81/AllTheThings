@@ -3921,6 +3921,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, o(407312, {	-- Hungry Idol
+					["provider"] = { "i", 208743 },	-- Soul of Greed
+					["coord"] = { 57.08, 9.73, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["groups"] = {
+						i(208744, {	-- Rune of Shadowbolts
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
+							},
+						}),
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(3495, {	-- Gagsprocket <Engineering Goods>
 					-- #if AFTER CATA
@@ -4472,6 +4490,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(6661, {	-- Recipe: Savory Deviate Delight (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208743, {	-- Soul of Greed
+					["description"] = "Use Drain Soul on him.",
+					["coord"] = { 56.2, 8.6, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["cr"] = 3445,	-- Supervisor Lugwizzle
+				})),
+				-- #endif
 			}),
 		},
 	}),

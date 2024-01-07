@@ -1552,6 +1552,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(212753, {	-- Tortured Soul
+					["provider"] = { "i", 210713 },	-- Tortured Soul
+					["coord"] = { 59.4, 70.8, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["groups"] = {
+						i(208744, {	-- Rune of Shadowbolts
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(47023, {	-- Thule Ravenclaw
 					["coord"] = { 50.2, 60.0, SILVERPINE_FOREST },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1802,6 +1818,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						recipe(425443),	-- Engrave Gloves - Quick Strike
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210713, {	-- Tortured Soul
+					["description"] = "Use Life Tap in a safe area to summon the Tortured Soul.",
+					["coord"] = { 59.4, 70.8, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						1974,	-- Ravenclaw Drudger
+						1973,	-- Ravenclaw Guardian
 					},
 				})),
 				-- #endif

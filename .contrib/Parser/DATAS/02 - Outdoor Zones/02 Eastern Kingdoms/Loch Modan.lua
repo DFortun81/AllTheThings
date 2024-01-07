@@ -1545,6 +1545,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209958, {	-- Graix
+					["provider"] = { "n", 209954 },	-- Demonic Remains
+					["coord"] = { 72.6, 68.8, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["groups"] = {
+						i(208744, {	-- Rune of Shadowbolts
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(45398, {	-- Grizlak <Associate Troggwhacker>
 					["coord"] = { 35.6, 15.6, LOCH_MODAN },
 					["timeline"] = { "added 4.0.3.13277" },
