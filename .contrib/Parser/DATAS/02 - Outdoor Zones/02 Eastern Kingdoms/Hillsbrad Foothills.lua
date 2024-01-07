@@ -3085,6 +3085,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(211487, {	-- Demolition Explosives
+							["cost"] = 10000,
+						})),
+						-- #endif
 						i(4829, {	-- Dreamer's Belt
 							["isLimited"] = true,
 						}),
@@ -3123,6 +3128,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, o(414658, {	-- Rubble
+					["coord"] = { 79.7, 40.9, HILLSBRAD_FOOTHILLS },
+					["cost"] = {{ "i", 211487, 1 }},	-- Demolition Explosives
+					["groups"] = {
+						applyclassicphase(SOD_PHASE_ONE, i(211476, {	-- Rune of Fires Wake
+							["provider"] = { "o", 414713 },	-- Storage Locker
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403937),	-- Engrave Chest - Lake of Fire
+							},
+						})),
+					},
+				})),
+			}),
+			-- #endif
 			n(ZONE_DROPS, {
 				-- #if AFTER CATA
 				i(3711, {	-- Belamoore's Research Journal

@@ -1280,6 +1280,8 @@ _.ObjectNames = {
 	[411348] = "Dusty Coffer",
 	[411358] = "Artisan's Chest",
 	[411715] = "Bough of Altek",
+	[414658] = "Rubble",
+	[414713] = "Storage Locker",
 	[415614] = "Mysterious Formulae",
 }
 _.ObjectIcons = {
@@ -2096,6 +2098,8 @@ _.ObjectModels = {
 	[410299] = 198039,
 	[411348] = 200953,
 	[411358] = 196987,
+	[414658] = 189478,
+	[414713] = 196976,
 	[415614] = 198455,
 }
 
@@ -2656,6 +2660,7 @@ localize(_.ObjectNames, {
 	[411348] = "Staubige Truhe",
 	[411358] = "Handwerkertruhe",
 	[411715] = "Alteks Zweig",
+	[414658] = "Geröll",
 });
 end
 if simplifiedLocale == "es" then
