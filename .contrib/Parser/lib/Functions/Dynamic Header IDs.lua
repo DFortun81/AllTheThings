@@ -47,6 +47,7 @@ HeaderAssignments = {
 	["Brutal Gladiator"] = -1000130,
 	["Buildings"] = -1000091,
 	["Burden of Eternity"] = -1000308,
+	["Burly Brawl"] = -1000376,
 	["Cache of Madness"] = -1000190,
 	["Call of the Scarab"] = -1000199,
 	["Capital Gardens"] = -1000175,
@@ -378,4 +379,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000376;
+NextHeaderID = -1000377;

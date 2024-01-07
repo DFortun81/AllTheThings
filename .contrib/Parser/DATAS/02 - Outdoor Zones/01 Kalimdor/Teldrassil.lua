@@ -673,6 +673,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(BURLY_BRAWL, {
+					["questID"] = 75300,	-- Burly Brawl HQT	-- TODO: Confirm if this is the same HQT.
+					["qgs"] = {
+						6736,	-- Innkeeper Keldamyr <Innkeeper>
+						209872,	-- Syllart
+					},
+					["coord"] = { 55.6, 59.8, TELDRASSIL },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN, WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(204716, {	-- Rune of Frenzied Assault
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425447),	-- Engrave Pants - Frenzied Assault
+							},
+						}),
+						i(205683, {	-- Rune of Rebuke
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(425621),	-- Engrave Pants - Rebuke
+							},
+						}),
+					},
+				})),
+				-- #endif
 				-- #if BEFORE CATA
 				q(929, {	-- Crown of the Earth (3/6) / Teldrassil: The Refusal of the Aspects
 					["qg"] = 3515,	-- Corithras Moonrage

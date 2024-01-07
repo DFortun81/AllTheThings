@@ -1,0 +1,26 @@
+BURLY_BRAWL = createHeader({	-- Burly Brawl
+	readable = "Burly Brawl",
+	icon = "Interface\\CURSOR\\Attack",
+	text = {
+		en = "Burly Brawl",
+		es = "Pelea Corpulenta",
+		de = "Gewaltige Schlägerei",
+		fr = "Bagarre Musclée",
+		it = "Rissa Corpulenta",
+		pt = "Briga Corpulenta",
+		ru = "Крепкая драка",
+		ko = "건장한 난투",
+		cn = "魁梧斗殴",
+	},
+	description = {
+		en = "Only the person who gets the final hit on the drunk will get credit, regardless of who tapped the target first. There is no group credit for this.",
+		es = "Sólo la persona que dé el golpe final al borracho obtendrá crédito, independientemente de quién haya tocado el objetivo primero. No hay crédito grupal por esto.",
+		de = "Nur die Person, die den letzten Treffer beim Betrunkenen erzielt, erhält Anerkennung, unabhängig davon, wer zuerst auf das Ziel getippt hat. Hierfür gibt es keine Gruppengutschrift.",
+		fr = "Seule la personne qui porte le coup final sur l'ivrogne obtiendra un crédit, peu importe qui a touché la cible en premier. Il n'y a pas de crédit de groupe pour cela.",
+		it = "Solo la persona che ottiene il colpo finale sull'ubriaco riceverà il credito, indipendentemente da chi ha toccato per primo il bersaglio. Non è previsto alcun credito collettivo per questo.",
+		pt = "Somente a pessoa que acertar o golpe final no bêbado receberá o crédito, independentemente de quem bateu primeiro no alvo. Não há crédito de grupo para isso.",
+		ru = "Зачет получит только тот, кто нанесет последний удар по пьяному, независимо от того, кто первым нанес удар по цели. Для этого не существует группового кредита.",
+		ko = "누가 먼저 목표물을 두드렸는지에 상관없이 술에 취한 사람에게 마지막 타격을 가한 사람만 크레딧을 받습니다. 이에 대한 그룹 크레딧은 없습니다.",
+		cn = "无论谁先击中目标，只有最终击中醉汉的人才会获得荣誉。对此没有团体信用。",
+	},
+});

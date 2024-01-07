@@ -799,6 +799,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(BURLY_BRAWL, {
+					["questID"] = 75300,	-- Burly Brawl HQT
+					["qgs"] = {
+						203475,	-- Liv Bradford <Bartender>
+						203478,	-- Stuart
+					},
+					["coord"] = { 22.6, 64.7, STORMWIND_CITY },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN, WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(204716, {	-- Rune of Frenzied Assault
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425447),	-- Engrave Pants - Frenzied Assault
+							},
+						}),
+						i(205683, {	-- Rune of Rebuke
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(425621),	-- Engrave Pants - Rebuke
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(1705, {	-- Burning Blood
 					["qg"] = 1416,	-- Grimand Elmore
 					["sourceQuest"] = 1700,	-- Grimand Elmore
@@ -3440,17 +3467,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						recipe(410015),	-- Engrave Chest - Seal of Martyrdom
-					},
-				})),
-				applyclassicphase(SOD_PHASE_ONE, i(205683, {	-- Rune of Rebuke
-					["provider"] = { "n", 203475 },	-- Liv Bradford
-					["questID"] = 75300,	-- Stuart Credit HQT
-					["coord"] = { 22.6, 64.7, STORMWIND_CITY },
-					["timeline"] = { "removed 2.0.1" },
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						recipe(425621),	-- Engrave Pants - Rebuke
 					},
 				})),
 			}),

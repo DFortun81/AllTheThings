@@ -1179,6 +1179,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(BURLY_BRAWL, {
+					["questID"] = 75300,	-- Burly Brawl HQT	-- TODO: Confirm if this is the same HQT.
+					["qgs"] = {
+						208920,	-- Penny Hawkins <Bartender>
+						208919,	-- Blueheart
+					},
+					["coord"] = { 61.8, 52.0, TIRISFAL_GLADES },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(204716, {	-- Rune of Frenzied Assault
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425447),	-- Engrave Pants - Frenzied Assault
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(431, {	-- Candles of Beckoning
 					["provider"] = { "o", 1586 },	-- Crate of Candles
 					["coord"] = { 68.1, 42, TIRISFAL_GLADES },

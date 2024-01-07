@@ -616,6 +616,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(BURLY_BRAWL, {
+					["questID"] = 75300,	-- Burly Brawl HQT	-- TODO: Confirm if this is the same HQT.
+					["qgs"] = {
+						3399,	-- Zamja <Cooking Trainer>
+						208023,	-- Gru'ark
+					},
+					["coord"] = { 57.6, 53.6, ORGRIMMAR },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(204716, {	-- Rune of Frenzied Assault
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425447),	-- Engrave Pants - Frenzied Assault
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(60961, {	-- Burning Crusade: Onward to Adventure in Outland
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["sourceQuest"] = 60123,	-- Burning Crusade: To Outland!

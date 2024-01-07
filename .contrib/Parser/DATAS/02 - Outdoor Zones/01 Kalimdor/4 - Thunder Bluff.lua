@@ -226,6 +226,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(BURLY_BRAWL, {
+					["questID"] = 75300,	-- Burly Brawl HQT	-- TODO: Confirm if this is the same HQT.
+					["qgs"] = {
+						207743,	-- Netali Proudwind <General Goods>
+						207754,	-- Mooart
+					},
+					["coord"] = { 28.8, 19.2, THUNDER_BLUFF },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(204716, {	-- Rune of Frenzied Assault
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425447),	-- Engrave Pants - Frenzied Assault
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(1844, {	-- Chimaeric Horn
 					["qg"] = 6410,	-- Orm Stonehoof
 					["sourceQuest"] = 1840,	-- Orm Stonehoof and the Brutal Helm
