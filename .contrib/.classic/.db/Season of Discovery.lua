@@ -523,7 +523,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						{ 37.8, 80.2, STORMWIND_CITY },
 						{ 73.6, 33, UNDERCITY },
 					},
-					["maps"] = {  },
 					["groups"] = {
 						recipe(425170),	-- Engrave Pants - Icy Veins
 					},
