@@ -2034,6 +2034,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.4, 24.6, TELDRASSIL },
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
+					["coord"] = { 51.6, 51.6, TELDRASSIL },
+					["classes"] = { PRIEST },
+					["cr"] = 2038,	-- Lord Melenas
+					["groups"] = {
+						recipe(402854),	-- Engrave Pants - Shared Pain
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
 					["coord"] = { 45.6, 59.6, TELDRASSIL },
 					["classes"] = { HUNTER },

@@ -3655,6 +3655,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(425216),	-- Engrave Chest - Void Plague
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
+					["description"] = "This can also drop from any of the rare mobs in the zone.",
+					["coord"] = { 67.6, 87.8, DUROTAR },
+					["classes"] = { PRIEST },
+					["cr"] = 3205,	-- Zalazane
+					["groups"] = {
+						recipe(402854),	-- Engrave Pants - Shared Pain
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207062, {	-- Severed Centaur Head
 					["coord"] = { 51.2, 78.4, DUROTAR },
 					["timeline"] = { "removed 2.0.1" },

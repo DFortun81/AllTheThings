@@ -2663,6 +2663,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(425216),	-- Engrave Chest - Void Plague
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
+					["description"] = "This can also drop from any of the rare mobs in the zone.",
+					["coords"] = {
+						{ 41.6, 79.2, ELWYNN_FOREST },
+						{ 63.6, 55.4, ELWYNN_FOREST },
+					},
+					["classes"] = { PRIEST },
+					["cr"] = 40,	-- Kobold Miner
+					["groups"] = {
+						recipe(402854),	-- Engrave Pants - Shared Pain
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
 					["coord"] = { 41.6, 78.8, ELWYNN_FOREST },
 					["classes"] = { WARRIOR },

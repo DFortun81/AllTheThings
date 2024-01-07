@@ -3230,6 +3230,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(425216),	-- Engrave Chest - Void Plague
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
+					["description"] = "This can also drop from any of the rare mobs in the zone.",
+					["coord"] = { 78.6, 62.0, DUN_MOROGH },
+					["classes"] = { PRIEST },
+					["cr"] = 6124,	-- Captain Beld <Dark Iron Captain>
+					["groups"] = {
+						recipe(402854),	-- Engrave Pants - Shared Pain
+					},
+				})),
 				-- #endif
 				i(2898, {	-- Mountaineer Chestpiece
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023

@@ -2501,6 +2501,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },
 					["cr"] = 1665,	-- Captain Melrache
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
+					["coords"] = {
+						{ 40.6, 51.8, TIRISFAL_GLADES },
+						{ 36.8, 51.6, TIRISFAL_GLADES },
+					},
+					["classes"] = { PRIEST },
+					["crs"] = {
+						1934,	-- Tirisfal Farmer
+						1935,	-- Tirisfal Farmhand
+					},
+					["groups"] = {
+						recipe(402854),	-- Engrave Pants - Shared Pain
+					},
+				})),
+				-- #endif
 				i(3332, {	-- Perrine's Boots
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["cr"] = 1662,	-- Captain Perrine
