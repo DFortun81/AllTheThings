@@ -2617,6 +2617,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(204906, {	-- Gnoll Blood
+					["coords"] = {
+						{ 68.2, 38.2, ELWYNN_FOREST },
+						{ 27.0, 88.6, ELWYNN_FOREST },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						 97,	-- Riverpaw Runt
+						478,	-- Riverpaw Outrunner
+					},
+				})),
+				-- #endif
 				i(1307, {	-- Gold Pickup Schedule
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
@@ -2734,6 +2748,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(402854),	-- Engrave Pants - Shared Pain
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(204905, {	-- Ominous Tome
+					["coords"] = {
+						{ 71.0, 80.6, ELWYNN_FOREST },
+						{ 62.6, 54.2, ELWYNN_FOREST },
+						{ 74.0, 51.8, ELWYNN_FOREST },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						881,	-- Surena Caledon
+						476,	-- Kobold Geomancer
+						474,	-- Defias Rogue Wizard
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
 					["coord"] = { 41.6, 78.8, ELWYNN_FOREST },
 					["classes"] = { WARRIOR },
@@ -2831,6 +2859,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					--]]
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(204907, {	-- Wolf Jawbone
+					["coords"] = {
+						{ 48.4, 39.0, ELWYNN_FOREST },
+						{ 41.6, 58.6, ELWYNN_FOREST },
+						{ 30.2, 72.6, ELWYNN_FOREST },
+						{ 62.0, 67.2, ELWYNN_FOREST },
+						{ 73.5, 63.6, ELWYNN_FOREST },
+						{ 80.6, 83.2, ELWYNN_FOREST },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						299,	-- Young Wolf
+						525,	-- Mangy Wolf
+						1922,	-- Gray Forest Wolf
+						 69,	-- Timber Wolf
+						118,	-- Prowler
+					},
+				})),
+				-- #endif
 			}),
 		},
 	}),

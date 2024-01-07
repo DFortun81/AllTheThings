@@ -2828,8 +2828,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
-				-- #endif
-				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(208638, {	-- Fyodi
 					["description"] = "The runes he drops can also drop from any of the rare mobs in the zone.",
 					["coord"] = { 31.6, 40.0, DUN_MOROGH },
@@ -2928,6 +2926,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
+					-- TODO: Try to get an objectID for this.
+					--["provider"] = { "o",  },	-- Summoning Circle
+					["coord"] = { 42.2, 35.6, DUN_MOROGH },
+					["cost"] = {
+						{ "i", 208139, 1 },	-- Ominous Tome
+						{ "i", 208140, 1 },	-- Wendigo Blood
+						{ "i", 204907, 1 },	-- Wolf Jawbone
+					},
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(204912, {	-- Rune of Grace
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(425477),	-- Engrave Pants - Demonic Grace
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(1132, {	-- Timber
 					-- #if AFTER CATA
 					["coord"] = { 67.8, 37.4, NEW_TINKERTOWN },
@@ -3287,6 +3306,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208139, {	-- Ominous Tome
+					["coords"] = {
+						{ 23.2, 53.6, DUN_MOROGH },
+						{ 42.4, 35.8, DUN_MOROGH },
+						{ 42.0, 44.6, DUN_MOROGH },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						1124,	-- Frostmane Shadowcaster
+						1397,	-- Frostmane Seer
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208158, {	-- Pristine Trogg Heart
 					["coord"] = { 70.6, 59.2, DUN_MOROGH },
 					["timeline"] = { "removed 2.0.1" },
@@ -3395,6 +3427,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 41121,	-- Frostmane Seer
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208160, {	-- Wendigo Blood
+					["coord"] = { 42.6, 55.0, DUN_MOROGH },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						1135,	-- Wendigo
+						1134,	-- Young Wendigo
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(204907, {	-- Wolf Jawbone
+					["coords"] = {
+						{ 27.6, 77.0, DUN_MOROGH },
+						{ 34.8, 43.6, DUN_MOROGH },
+						{ 50.0, 49.4, DUN_MOROGH },
+						{ 45.6, 44.0, DUN_MOROGH },
+						{ 44.4, 47.6, DUN_MOROGH },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						704,	-- Ragged Timber Wolf
+						705,	-- Ragged Young Wolf
+						1131,	-- Winter Wolf
+						1133,	-- Starving Winter Wolf
+						1138,	-- Snow Tracker Wolf
+					},
+				})),
+				-- #endif
 			}),
 		},
 	}),

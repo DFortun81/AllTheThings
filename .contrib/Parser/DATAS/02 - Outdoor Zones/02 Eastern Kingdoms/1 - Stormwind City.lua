@@ -3434,6 +3434,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
+					-- TODO: Try to get an objectID for this.
+					--["provider"] = { "o",  },	-- Summoning Circle
+					["coord"] = { 25.8, 76.2, STORMWIND_CITY },
+					["cost"] = {
+						{ "i", 204905, 1 },	-- Ominous Tome
+						{ "i", 204906, 1 },	-- Gnoll Blood
+						{ "i", 204907, 1 },	-- Wolf Jawbone
+					},
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(204912, {	-- Rune of Grace
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(425477),	-- Engrave Pants - Demonic Grace
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(112958, {	-- Soulare of Andorhal
 					["description"] = "Emote |cFFFFFFFF/tired|r at him to get the toy.  Horde players can do this, too!",
 					["coord"] = { 38.2, 64.6, STORMWIND_CITY },

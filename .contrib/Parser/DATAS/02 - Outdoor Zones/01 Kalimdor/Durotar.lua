@@ -3532,6 +3532,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
+					-- TODO: Try to get an objectID for this.
+					--["provider"] = { "o",  },	-- Summoning Circle
+					["coord"] = { 67.6, 87.8, DUROTAR },
+					["cost"] = {
+						{ "i", 207731, 1 },	-- Ominous Tome
+						{ "i", 207732, 1 },	-- Makrura Leg
+						{ "i", 207733, 1 },	-- Kul Tiran Skull
+					},
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(204912, {	-- Rune of Grace
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(425477),	-- Engrave Pants - Demonic Grace
+							},
+						}),
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
 					["provider"] = { "o", 392029 },	-- Swordsman's Reward
 					["coords"] = {
@@ -3717,6 +3736,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(207733, {	-- Kul Tiran Skull
+					["coord"] = { 57.6, 55.4, DUROTAR },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						3128,	-- Kul Tiras Sailor
+						3129,	-- Kul Tiras Marine
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(207732, {	-- Makrura Leg
+					["coords"] = {
+						{ 53.8, 84.6, DUROTAR },
+						{ 60.8, 74.8, DUROTAR },
+						{ 61.6, 45.0, DUROTAR },
+						{ 64.4, 92.4, DUROTAR },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						3103,	-- Makrura Clacker
+						3104,	-- Makrura Shellhide
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205940, {	-- Memory of a Dark Purpose
 					["coord"] = { 59.2, 56.8, DUROTAR },
 					["classes"] = { PRIEST },
@@ -3736,6 +3778,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 3205,	-- Zalazane
 					["groups"] = {
 						recipe(402854),	-- Engrave Pants - Shared Pain
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(207731, {	-- Ominous Tome
+					["coord"] = { 67.4, 83.6, DUROTAR },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						3206,	-- Voodoo Troll
+						3207,	-- Hexed Troll
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207062, {	-- Severed Centaur Head

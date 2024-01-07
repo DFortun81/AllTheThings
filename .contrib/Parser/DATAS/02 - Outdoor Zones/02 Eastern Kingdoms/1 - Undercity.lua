@@ -1128,6 +1128,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = COOKING_AWARD_GROUPS,
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(RARES, {
+				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
+					-- TODO: Try to get an objectID for this.
+					--["provider"] = { "o",  },	-- Summoning Circle
+					["coord"] = { 24.1, 41.6, UNDERCITY },
+					["cost"] = {
+						{ "i", 207974, 1 },	-- Ominous Tome
+						{ "i", 204906, 1 },	-- Gnoll Blood
+						{ "i", 207973, 1 },	-- Hound Jawbone
+					},
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(204912, {	-- Rune of Grace
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(425477),	-- Engrave Pants - Demonic Grace
+							},
+						}),
+					},
+				})),
+			}),
+			-- #endif
 			-- #if AFTER 6.1.0.19480
 			n(TREASURES, {
 				o(240623, {	-- Sylvanas' Strongbox

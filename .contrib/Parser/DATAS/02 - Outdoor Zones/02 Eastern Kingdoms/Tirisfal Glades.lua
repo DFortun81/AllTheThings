@@ -2535,6 +2535,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 34.4, 49.0, TIRISFAL_GLADES },
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(204906, {	-- Gnoll Blood
+					["coords"] = {
+						{ 59.4, 33.6, TIRISFAL_GLADES },
+						{ 56.2, 44.8, TIRISFAL_GLADES },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						1675,	-- Rot Hide Mongrel
+						1941,	-- Rot Hide Graverobber
+						1674,	-- Rot Hide Gnoll
+					},
+				})),
+				-- #endif
 				i(3321, {	-- Gray Fur Booties
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["cr"] = 1549,	-- Ravenous Darkhound
@@ -2548,6 +2563,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 86.0, 46.2, TIRISFAL_GLADES },
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(207973, {	-- Hound Jawbone
+					["coords"] = {
+						{ 44.8, 48.4, TIRISFAL_GLADES },
+						{ 55.4, 65.4, TIRISFAL_GLADES },
+						{ 85.0, 46.4, TIRISFAL_GLADES },
+					},
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						1548,	-- Cursed Darkhound
+						1547,	-- Decrepit Darkhound
+						1549,	-- Ravenous Darkhound
+					},
+				})),
+				-- #endif
 				i(3331, {	-- Melrache's Cape
 					-- #if BEFORE CATA
 					["description"] = "The NPC dropping this is friendly to the alliance.",
@@ -2570,6 +2600,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						recipe(402854),	-- Engrave Pants - Shared Pain
 					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(207974, {	-- Ominous Tome
+					["coord"] = { 46.8, 35.0, TIRISFAL_GLADES },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["cr"] = 1522,	-- Darkeye Bonecaster
 				})),
 				-- #endif
 				i(3332, {	-- Perrine's Boots
