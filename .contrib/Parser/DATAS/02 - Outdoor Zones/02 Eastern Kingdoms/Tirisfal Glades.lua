@@ -2117,6 +2117,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(208196, {	-- Gillgar
+					["coord"] = { 27.2, 46.4, TIRISFAL_GLADES },
+					["classes"] = { PRIEST, MAGE, WARRIOR },
+					["groups"] = {
+						i(205940, {	-- Memory of a Dark Purpose
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(425216),	-- Engrave Chest - Void Plague
+							},
+						}),
+						i(204809, {	-- Rune of Furious Thunder
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(403476),	-- Engrave Pants - Furious Thunder
+							},
+						}),
+						i(203753, {	-- Spell Notes: RING SEFF OSTROF
+							["classes"] = { MAGE },
+							["groups"] = {
+								recipe(401765),	-- Engrave Chest - Fingers of Frost
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(50930, {	-- Hibernus the Sleeper
 					["coord"] = { 47.6, 70.2, TIRISFAL_GLADES },
 					["timeline"] = { "added 5.1.0.16309" },

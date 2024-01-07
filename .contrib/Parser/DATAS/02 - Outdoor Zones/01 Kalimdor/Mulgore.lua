@@ -1819,6 +1819,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
+					["description"] = "This can also drop from any of the rare mobs in the zone.",
 					["coord"] = { 51.8, 20.0, MULGORE },
 					["classes"] = { HUNTER },
 					["cr"] = 3058,	-- Arra'chea
@@ -1827,7 +1828,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
-					["description"] = "The rune he drops can also drop from any of the rare mobs in the zone.",
+					["description"] = "This can also drop from any of the rare mobs in the zone.",
 					["coord"] = { 30.8, 61.6, MULGORE },
 					["classes"] = { WARRIOR },
 					["cr"] = 207515,	-- Lurkmane
