@@ -100,7 +100,7 @@ app:GetWindow("Missing Quests", {
 				
 				-- Build a summary for ATT
 				local parent, g = data.options[1], {};
-				app.Sort(MissingQuestsFromATT, app.SortDefaults.Number);
+				app.Sort(MissingQuestsFromATT, app.SortDefaults.Values);
 				for _,id in ipairs(MissingQuestsFromATT) do
 					local quest = app.CreateQuest(id);
 					quest.description = "@Crieve: This has not been sourced in ATT yet!";
@@ -111,7 +111,7 @@ app:GetWindow("Missing Quests", {
 				
 				-- Build a summary for Questie
 				local parent, g = data.options[2], {};
-				app.Sort(MissingQuestsFromQuestie, app.SortDefaults.Number);
+				app.Sort(MissingQuestsFromQuestie, app.SortDefaults.Values);
 				for _,id in ipairs(MissingQuestsFromQuestie) do
 					local quest, questData = app.CreateQuest(id), {};
 					for i,o in pairs(SearchForField("questID", id)) do
