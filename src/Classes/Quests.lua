@@ -175,21 +175,11 @@ if not C_QuestLog_IsComplete then
 	end
 end
 
--- TODO: Get rid of this after retail supports SetCollected
-local MarkQuestComplete;
-if app.IsRetail then
-	MarkQuestComplete = function(questID)
-		ATTAccountWideData.Quests[questID] = 1;
-		app.CurrentCharacter.Quests[questID] = 1;
-	end
-else
-	MarkQuestComplete = function(questID)
-		app.SetCollected(nil, "Quests", questID, true);
-	end
-end
 
 -- Quest Completion Lib
-local DirtyQuests, PrintQuestInfo = {};
+local PrintQuestInfo
+-- DirtyQuests became a table instead of an array like before, so it broke a lot of things... I'll make one for each version to keep it working
+local ClassicDirtyQuests, RetailDirtyQuests = {}, {}
 local CollectibleAsQuest, IsQuestFlaggedCompletedForObject;
 local IgnoreErrorQuests = setmetatable({
 	-- Why are all these set to be ignored for reporting?
@@ -297,25 +287,54 @@ local IgnoreErrorQuests = setmetatable({
 		return t[key];
 	end
 });
+local BatchRefresh
+-- We can't track unflagged quests with a single meta-table unless we double-assign keys... that's a bit silly
+-- when we can have the original method of using 'CompletedQuests' as a pass-thru to the Raw data
+local RetailRawQuests = {};
 local CompletedQuests = setmetatable({}, {
-	__index = function(t, questID)
+	__index = app.IsClassic and function(t, questID)
 		if C_QuestLog_IsQuestFlaggedCompleted(questID) then
-			DirtyQuests[questID] = true;
 			t[questID] = true;
 			return true;
 		end
 		return false;
+	end
+	-- Retail
+	or function(t, questID)
+		if RetailRawQuests[questID] then return true end
+		if C_QuestLog_IsQuestFlaggedCompleted(questID) then
+			RetailRawQuests[questID] = true;
+			return true;
+		end
+		return false;
 	end,
-	__newindex = function (t, questID, state)
+	__newindex = app.IsClassic and function(t, questID, state)
 		if questID then
 			rawset(t, questID, state);
-			rawset(DirtyQuests, questID, true);
+			rawset(ClassicDirtyQuests, questID, true);
 			if state then
-				MarkQuestComplete(questID);	-- TODO: Make this the same
-				--app.SetCollected(nil, "Quests", questID, true);
+				app.SetCollected(nil, "Quests", questID, true);
 				PrintQuestInfo(questID);
 			else
 				PrintQuestInfo(questID, false);
+			end
+		end
+	end
+	-- Retail
+	or function(t, questID, state)
+		if questID then
+			RetailDirtyQuests[#RetailDirtyQuests + 1] = questID
+			if state then
+				RetailRawQuests[questID] = state;
+				PrintQuestInfo(questID);
+			else
+				RetailRawQuests[questID] = nil;
+				PrintQuestInfo(questID, false);
+			end
+			-- Way too much overhead to assume this should be done every time a key is changed
+			if not BatchRefresh then
+				app.SetCollected(nil, "Quests", questID, state)
+				app.UpdateRawID("questID", questID)
 			end
 		end
 	end
@@ -329,10 +348,8 @@ if app.IsRetail then
 		local questID = t.questID;
 		if questID then
 			if IsQuestFlaggedCompleted(questID) then return 1; end
-			if app.Settings.AccountWide.Quests and not t.repeatable then
-				if ATTAccountWideData.Quests[questID] then
-					return 2;
-				end
+			if not t.repeatable then
+				return app.IsAccountCached("Quests", questID)
 			end
 		end
 		-- account-mode: any character is viable to complete the quest, so alt quest completion shouldn't count for this quest
@@ -732,9 +749,10 @@ local RefreshAllQuestInfo, RefreshQuestInfo;
 if app.IsRetail then
 	local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback;
 	local MAX = 999999;
+	local UnflaggedQuests = {}
 	local CompleteQuestSequence = {};
 	local QueryCompletedQuests = function()
-		wipe(DirtyQuests);
+		BatchRefresh = true
 		local freshCompletes = C_QuestLog_GetAllCompletedQuestIDs();
 		-- sometimes Blizz pretends that 0 Quests are completed. How silly of them!
 		if not freshCompletes or #freshCompletes == 0 then
@@ -771,7 +789,8 @@ if app.IsRetail then
 			else
 				if c < n then
 					-- unflagged quest
-					CompletedQuests[c] = false;
+					CompletedQuests[c] = nil;
+					UnflaggedQuests[c] = true
 					Ci = Ci + 1;
 					c = CompleteQuestSequence[Ci] or MAX;
 				else
@@ -788,21 +807,25 @@ if app.IsRetail then
 		if manyQuests then
 			app.Settings:SetTooltipSetting("Report:CompletedQuests", oldReportSetting);
 		end
+		BatchRefresh = nil
 	end
 
 	local function RefreshQuestCompletionState(questID)
 		-- app.PrintDebug("RefreshQuestCompletionState",questID)
+		wipe(RetailDirtyQuests);
 		if questID then
-			wipe(DirtyQuests);
 			questID = tonumber(questID);
 			CompletedQuests[questID] = true;
 		else
+			-- Batch processing will ignore all the per-instance collection etc. built into CompletedQuests
+			-- because that is a huge overhead. Instead capture the values and assign them all at once
 			QueryCompletedQuests();
-		end
-
-		-- update if any quests were even changed to ensure visible changes occur
-		if #DirtyQuests > 0 then
-			app.UpdateRawIDs("questID", DirtyQuests);
+			if #RetailDirtyQuests > 0 then
+				app.SetBatchCached("Quests", CompletedQuests, 1)
+				app.SetBatchCached("Quests", UnflaggedQuests)
+				wipe(UnflaggedQuests)
+				app.UpdateRawIDs("questID", RetailDirtyQuests);
+			end
 		end
 
 		app:RegisterEvent("QUEST_LOG_UPDATE");
@@ -843,7 +866,7 @@ else
 		else
 			GetQuestsCompleted(CompletedQuests);
 		end
-		wipe(DirtyQuests);
+		wipe(ClassicDirtyQuests);
 	end
 	local function QuestCompletionHelper(questID)
 		-- Search ATT for the related quests.
@@ -903,15 +926,16 @@ else
 		end
 
 		local any = false;
-		for questID,completed in pairs(DirtyQuests) do
+		for questID,completed in pairs(ClassicDirtyQuests) do
 			QuestCompletionHelper(tonumber(questID));
 			any = true;
 		end
 		if any then
-			wipe(DirtyQuests);
+			wipe(ClassicDirtyQuests);
 			wipe(app.searchCache);
 			app:RefreshDataQuietly("RefreshQuestInfo", true);
 		end
+		app:RegisterEvent("QUEST_LOG_UPDATE");
 	end
 	RefreshAllQuestInfo = function()
 		RefreshQuestInfo();
