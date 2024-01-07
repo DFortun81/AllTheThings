@@ -2436,6 +2436,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_ONE, n(WILD_POLYMORPH, {
+				["classes"] = { MAGE },
+				["races"] = HORDE_ONLY,
+				["groups"] = {
+					i(203749, {	-- Spell Notes: Enlightenment
+						["cost"] = {{ "i", 208183, 6 }},	-- Apothecary Notes
+						["classes"] = { MAGE },
+						["groups"] = {
+							recipe(415942),	-- Engrave Chest - Enlightenment
+						},
+					}),
+					i(208183, {	-- Apothecary Notes
+						["cr"] = 208712,	-- Odd Melon
+					}),
+				},
+			})),
+			-- #endif
 			n(ZONE_DROPS, {
 				i(2839, {	-- A Letter to Yvette
 					["timeline"] = { "removed 4.0.3" },

@@ -2566,6 +2566,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_ONE, n(WILD_POLYMORPH, {
+				["classes"] = { MAGE },
+				["races"] = ALLIANCE_ONLY,
+				["groups"] = {
+					i(203749, {	-- Spell Notes: Enlightenment
+						["cost"] = {{ "i", 204864, 6 }},	-- Azora Apprentice Notes
+						["classes"] = { MAGE },
+						["groups"] = {
+							recipe(415942),	-- Engrave Chest - Enlightenment
+						},
+					}),
+					i(204864, {	-- Azora Apprentice Notes
+						["cr"] = 202093,	-- Polymorphed Apprentice
+					}),
+				},
+			})),
+			-- #endif
 			n(ZONE_DROPS, {
 				-- #if ANYCLASSIC
 				i(769, {	-- Chunk of Boar Meat

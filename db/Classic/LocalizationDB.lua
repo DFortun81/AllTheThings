@@ -308,6 +308,7 @@ localize(L.HEADER_NAMES, {
 	[-1000281] = "Gathering",
 	[-1000373] = "New Character",
 	[-1000376] = "Burly Brawl",
+	[-1000377] = "Wild Polymorph",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000015] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -335,6 +336,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000278] = "Rune Engraving is a new class system for Season of Discovery. It allows each class to tailor their gameplay experience by unlocking new unique abilities!",
 	[-1000279] = "Waylaid Supplies quest items drop from mobs of level 6 and above all over Azeroth. These quests request delivery of the Waylaid Supplies to an organization representative in return for a few silver, experience, and Reputation. Of course, there are items missing from the supply shipment, and you can supplement it for greater reputation rewards.",
 	[-1000376] = "Only the person who gets the final hit on the drunk will get credit, regardless of who tapped the target first. There is no group credit for this.",
+	[-1000377] = "Cast Polymorph on critters afflicted by Wild Polymorph to turn them back into apprentices. Each one will give you a note. Collect 6 notes to learn the rune.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -459,6 +461,7 @@ localize(L.HEADER_ICONS, {
 	[-1000281] = "Interface/CURSOR/Mine",
 	[-1000373] = "1530081",
 	[-1000376] = "Interface/CURSOR/Attack",
+	[-1000377] = "Interface/ICONS/Spell_Nature_Polymorph",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -2127,6 +2130,7 @@ localize(L.HEADER_NAMES, {
 	[-1000279] = "Weggelegte Vorräte",
 	[-1000373] = "Neuer Charakter",
 	[-1000376] = "Gewaltige Schlägerei",
+	[-1000377] = "Wilder Polymorph",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -2135,6 +2139,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000278] = "Runengravur ist ein neues System, das kürzlich für Season of Discovery angekündigt wurde. Es ermöglicht jeder Klasse, ihr Spielerlebnis individuell anzupassen, indem sie neue einzigartige Fähigkeiten freischaltet!",
 	[-1000279] = "Questgegenstände für „Weggelegte Vorräte“ fallen von Mobs der Stufe 6 und höher in ganz Azeroth. Diese Quests erfordern die Lieferung der Waylaid-Vorräte an einen Vertreter der Organisation als Gegenleistung für ein paar Silbermünzen, Erfahrung und Ansehen. Natürlich fehlen in der Versorgungslieferung Gegenstände, und Sie können sie ergänzen, um höhere Reputationsbelohnungen zu erhalten.",
 	[-1000376] = "Nur die Person, die den letzten Treffer beim Betrunkenen erzielt, erhält Anerkennung, unabhängig davon, wer zuerst auf das Ziel getippt hat. Hierfür gibt es keine Gruppengutschrift.",
+	[-1000377] = "Wirke „Polymorph“ auf Lebewesen, die von „Wilder Polymorph“ betroffen sind, um sie wieder in Lehrlinge zu verwandeln. Jeder wird Ihnen eine Notiz geben. Sammle 6 Notizen, um die Rune zu lernen.",
 });
 localize(_.ObjectNames, {
 	[31] = "Alte Löwenstatue",
@@ -2673,6 +2678,7 @@ localize(L.HEADER_NAMES, {
 	[-1000279] = "Suministros asaltados",
 	[-1000373] = "Nueva personaje",
 	[-1000376] = "Pelea Corpulenta",
+	[-1000377] = "Polimorfo Salvaje",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
@@ -2680,6 +2686,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000278] = "El grabado es un nuevo sistema anunciado recientemente para Season of Discovery. ¡Permite que cada clase adapte su experiencia de juego desbloqueando nuevas habilidades únicas!",
 	[-1000279] = "Los objetos de misión de Suministros Waylaid caen de mobs de nivel 6 y, sobre todo, en Azeroth. Estas misiones requieren la entrega de suministros Waylaid a un representante de la organización a cambio de algo de plata, experiencia y reputación. Por supuesto, faltan elementos en el envío de suministros y puedes complementarlos para obtener mayores recompensas de reputación.",
 	[-1000376] = "Sólo la persona que dé el golpe final al borracho obtendrá crédito, independientemente de quién haya tocado el objetivo primero. No hay crédito grupal por esto.",
+	[-1000377] = "Lanza Polymorph sobre criaturas afectadas por Wild Polymorph para convertirlas nuevamente en aprendices. Cada uno te dará una nota. Recoge 6 notas para aprender la runa.",
 });
 localize(_.ObjectNames, {
 	[31] = "Estatua de león antigua",
@@ -3216,6 +3223,7 @@ localize(L.HEADER_NAMES, {
 	[-1000279] = "Fournitures isolées",
 	[-1000373] = "Nouveau personnage",
 	[-1000376] = "Bagarre Musclée",
+	[-1000377] = "Polymorphe Sauvage",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -3224,6 +3232,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000278] = "La gravure de runes est un nouveau système récemment annoncé pour Season of Discovery. Il permet à chaque classe d'adapter son expérience de jeu en débloquant de nouvelles capacités uniques!",
 	[-1000279] = "Les objets de quête Waylaid Supplies proviennent des foules de niveau 6 et surtout partout en Azeroth. Ces quêtes nécessitent la livraison des fournitures Waylaid à un représentant de l'organisation en échange de quelques pièces d'argent, d'expérience et de réputation. Bien sûr, il manque des articles dans la livraison de fournitures, et vous pouvez les compléter pour obtenir de plus grandes récompenses de réputation.",
 	[-1000376] = "Seule la personne qui porte le coup final sur l'ivrogne obtiendra un crédit, peu importe qui a touché la cible en premier. Il n'y a pas de crédit de groupe pour cela.",
+	[-1000377] = "Lancez Polymorph sur les créatures affectées par Wild Polymorph pour les transformer en apprentis. Chacun vous donnera une note. Collectez 6 notes pour apprendre la rune.",
 });
 localize(_.ObjectNames, {
 	[31] = "Statue du vieux lion",
@@ -3757,12 +3766,14 @@ localize(L.HEADER_NAMES, {
 	[-1000279] = "Forniture Waylaid",
 	[-1000373] = "Nuovo personaggio",
 	[-1000376] = "Rissa Corpulenta",
+	[-1000377] = "Polimorfo Selvaggio",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000273] = "Questa stagione porta un limite di livello iniziale di 25 e un nuovo gioco finale di livello 25, incluso un raid di Blackfathom Deeps per 10 giocatori con nuove meccaniche, boss nuovi e reinventati per sfidare le tattiche e le strategie dei giocatori e nuove ricompense.",
 	[-1000278] = "L'incisione delle rune è un nuovo sistema recentemente annunciato per la Stagione delle Scoperte. Permette a ogni classe di personalizzare la propria esperienza di gioco sbloccando nuove abilità uniche!",
 	[-1000279] = "Gli oggetti della missione Waylaid Supplies vengono rilasciati dai mob di livello 6 e soprattutto su Azeroth. Queste missioni richiedono la consegna delle Forniture Waylaid a un rappresentante dell'organizzazione in cambio di argento, esperienza e reputazione. Naturalmente, ci sono degli articoli mancanti nella spedizione di rifornimenti e puoi integrarli per ottenere maggiori ricompense in termini di reputazione.",
 	[-1000376] = "Solo la persona che ottiene il colpo finale sull'ubriaco riceverà il credito, indipendentemente da chi ha toccato per primo il bersaglio. Non è previsto alcun credito collettivo per questo.",
+	[-1000377] = "Lancia Polymorph sulle creature affette da Wild Polymorph per trasformarle di nuovo in apprendisti. Ognuno ti darà una nota. Raccogli 6 note per imparare la runa.",
 });
 localize(_.ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
@@ -4126,6 +4137,7 @@ localize(L.HEADER_NAMES, {
 	[-1000279] = "웨이레이드 보급품",
 	[-1000373] = "새로운 캐릭터",
 	[-1000376] = "건장한 난투",
+	[-1000377] = "야생 변이",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "웨폰 마스터는 캐릭터에게 특정 무기 기술을 배울 수 있는 기회를 제공하는 NPC로, 사용 가능 여부는 웨폰 마스터마다 다릅니다. 모든 무기 기술은 레벨 20이 필요한 폴암을 제외하고 레벨 1에서 훈련할 수 있습니다.\n\n4.0.1 패치에서는 각 병과가 생성 시 모든 병과에 적합한 무기 숙련도를 배우게 되므로 무기 전문가와의 훈련은 더 이상 필요하지 않게 되었습니다. 무기 마스터는 곧 게임에서 제거되었습니다.",
@@ -4133,6 +4145,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000278] = "룬 각인은 최근 발견의 시즌에 발표된 새로운 시스템입니다. 이를 통해 각 클래스는 새로운 고유 능력을 잠금 해제하여 게임 플레이 경험을 맞춤화할 수 있습니다!",
 	[-1000279] = "길레이드 보급품 퀘스트 아이템은 아제로스 전역의 6레벨 이상의 몹에게서 드롭됩니다. 이 퀘스트는 약간의 은화, 경험치, 평판을 대가로 조직 대표에게 Waylaid 보급품을 전달하도록 요청합니다. 물론, 보급품 배송에 누락된 품목이 있으며, 이를 보완하여 더 큰 평판 보상을 받을 수 있습니다.",
 	[-1000376] = "누가 먼저 목표물을 두드렸는지에 상관없이 술에 취한 사람에게 마지막 타격을 가한 사람만 크레딧을 받습니다. 이에 대한 그룹 크레딧은 없습니다.",
+	[-1000377] = "야생 변이에 걸린 동물에게 변이를 시전하여 그들을 다시 견습생으로 되돌리세요. 각자가 당신에게 메모를 줄 것입니다. 노트 6개를 모아 룬을 배워보세요.",
 });
 localize(_.ObjectNames, {
 	[31] = "오래된 사자상",
@@ -4633,6 +4646,7 @@ localize(L.HEADER_NAMES, {
 	[-1000279] = "Suprimentos emboscados",
 	[-1000373] = "Novo personagem",
 	[-1000376] = "Briga Corpulenta",
+	[-1000377] = "Polimorfo Selvagem",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Um mestre de armas é um NPC que oferece aos personagens a oportunidade de aprender habilidades específicas com armas, cuja disponibilidade varia de um mestre de armas para outro. Todas as habilidades com armas podem ser treinadas no nível 1, exceto as armas de haste, que exigem nível 20.\n\nO treinamento com um mestre de armas tornou-se obsoleto no Patch 4.0.1, já que todas as proficiências de armas apropriadas à classe agora são aprendidas por cada classe após a criação. Os mestres de armas foram removidos do jogo logo depois.",
@@ -4640,6 +4654,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000278] = "A gravação de runas é um novo sistema anunciado recentemente para a Temporada de Descobertas. Ele permite que cada classe personalize sua experiência de jogo, desbloqueando novas habilidades únicas!",
 	[-1000279] = "Itens de missão Waylaid Supplies são obtidos de mobs de nível 6 e acima de Azeroth. Essas missões exigem a entrega dos Suprimentos Waylaid a um representante da organização em troca de um pouco de prata, experiência e reputação. É claro que faltam itens na remessa de suprimentos e você pode complementá-los para obter maiores recompensas de reputação.",
 	[-1000376] = "Somente a pessoa que acertar o golpe final no bêbado receberá o crédito, independentemente de quem bateu primeiro no alvo. Não há crédito de grupo para isso.",
+	[-1000377] = "Lance Polymorph em criaturas afetadas por Wild Polymorph para transformá-las novamente em aprendizes. Cada um lhe dará uma nota. Colete 6 notas para aprender a runa.",
 });
 localize(_.ObjectNames, {
 	[31] = "Estátua de Leão Antiga",
@@ -5151,6 +5166,7 @@ localize(L.HEADER_NAMES, {
 	[-1000279] = "Подстерегающие припасы",
 	[-1000373] = "Новый персонаж",
 	[-1000376] = "Крепкая драка",
+	[-1000377] = "Дикий полиморф",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -5160,6 +5176,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000278] = "Гравировка рун — это новая система, недавно анонсированная в сезоне «Открытие». Это позволяет каждому классу адаптировать свой игровой процесс, открывая новые уникальные способности!",
 	[-1000279] = "Квестовые предметы Waylaid Supplies падают с мобов 6-го уровня и выше по всему Азероту. Эти квесты требуют доставки Запасных припасов представителю организации в обмен на немного серебра, опыта и репутации. Конечно, в поставке припасов отсутствуют предметы, и вы можете дополнить их, чтобы получить больше репутации.",
 	[-1000376] = "Зачет получит только тот, кто нанесет последний удар по пьяному, независимо от того, кто первым нанес удар по цели. Для этого не существует группового кредита.",
+	[-1000377] = "Примените «Превращение» к существам, пораженным «Диким превращением», чтобы снова превратить их в учеников. Каждый даст вам записку. Соберите 6 нот, чтобы выучить руну.",
 });
 localize(_.ObjectNames, {
 	[31] = "Статуя старого льва",
@@ -5713,6 +5730,7 @@ localize(L.HEADER_NAMES, {
 	[-1000279] = "伏击补给品",
 	[-1000373] = "新角色",
 	[-1000376] = "魁梧斗殴",
+	[-1000377] = "野生多晶型物",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
@@ -5722,6 +5740,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000278] = "符文雕刻是最近在发现季节宣布的一个新系统。它允许每个班级通过解锁新的独特能力来定制他们的游戏体验！",
 	[-1000279] = "伏击补给品任务物品从艾泽拉斯 6 级及以上的小怪中掉落。这些任务要求将路障补给品交付给组织代表，以换取一些银币、经验和声望。当然，补给中也有缺少的物品，你可以补充以获得更大的声望奖励。",
 	[-1000376] = "无论谁先击中目标，只有最终击中醉汉的人才会获得荣誉。对此没有团体信用。",
+	[-1000377] = "对受到野生变形术影响的小动物施放变形术，将它们变回学徒。每个人都会给你一张纸条。收集 6 个笔记来学习符文。",
 });
 localize(_.ObjectNames, {
 	[31] = "陈旧的石狮子",
