@@ -369,46 +369,35 @@ if app.IsRetail then
 		and not t.repeatable
 		and
 		(
-			(	-- Regular Quests
-				app.Settings.Collectibles.Quests
-				and
+			-- Regular Quests
+			app.Settings.Collectibles.Quests
+			and
+			(
 				(
-					(
-						(
-							-- debug/account mode
-							app.MODE_DEBUG_OR_ACCOUNT
-							-- or able to access quest on current character
-							or not t.locked
-						)
-						and
-						(
-							-- collectible by any character
-							app.Settings.AccountWide.Quests
-							-- or not OTQ or is OTQ not yet known to be completed by any character, or is OTQ completed by this character
-							or (not ATTAccountWideData.OneTimeQuests[questID] or ATTAccountWideData.OneTimeQuests[questID] == app.GUID)
-						)
-					)
-					-- If it is an item/cost and associated to an active quest.
-					-- TODO: add t.requiredForQuestID
-					or (not t.isWorldQuest and (t.cost or t.itemID) and C_QuestLog_IsOnQuest(questID))
-				)
-			)
-			or
-			(	-- Locked Quests
-				app.Settings.Collectibles.QuestsLocked
-				and
-				(
-					-- not able to access quest on current character
-					t.locked
-					and
 					(
 						-- debug/account mode
 						app.MODE_DEBUG_OR_ACCOUNT
-						or
-						-- available in party sync
-						not t.DisablePartySync
+					)
+					and
+					(
+						-- collectible by any character
+						app.Settings.AccountWide.Quests
+						-- or not OTQ or is OTQ not yet known to be completed by any character, or is OTQ completed by this character
+						or (not ATTAccountWideData.OneTimeQuests[questID] or ATTAccountWideData.OneTimeQuests[questID] == app.GUID)
 					)
 				)
+				-- If it is an item/cost and associated to an active quest.
+				-- TODO: add t.requiredForQuestID
+				or
+				(
+					not t.isWorldQuest
+					and
+					(
+						t.cost
+						or
+						t.itemID
+					)
+					and C_QuestLog_IsOnQuest(questID))
 			)
 		)
 	end
@@ -1047,6 +1036,8 @@ else
 	end
 end
 
+-- Set of questIDs which have a lock status cached. This is cleared during 'softRefresh' (i.e. any potential quest state change)
+local LockedQuestCache = {}
 -- Lock Criteria for Complex Quest Locking
 local criteriaFuncs = {
 	-- TODO: When Achievements get moved to their own file, add these to app.QuestLockCriteriaFunctions in that file.
@@ -1098,9 +1089,9 @@ local criteriaFuncs = {
         return sformat(L.LOCK_CRITERIA_FACTION_FORMAT or "%s with %s (Current: %s)", app.GetCurrentFactionStandingText(factionID, lockStanding), name, app.GetCurrentFactionStandingText(factionID));
     end,
 };
-local OnUpdateForLockCriteria = function(t)
+local function IsGroupLocked(t)
 	local lockCriteria = t.lc;
-	if lockCriteria and not t.locked then
+	if lockCriteria then
 		local criteriaRequired = lockCriteria[1];
 		local critKey, critFunc, nonQuestLock;
 		for i=2,#lockCriteria,2 do
@@ -1113,77 +1104,45 @@ local OnUpdateForLockCriteria = function(t)
 					end
 					criteriaRequired = criteriaRequired - 1;
 					if criteriaRequired <= 0 then
-						t.locked = true;
+						-- app.PrintDebug("Locked:",app:Linkify(t.questID, app.Colors.ChatLink, "search:questID:" .. t.questID),"=>",critKey,lockCriteria[i + 1])
+						LockedQuestCache[t.questID] = true
 						-- if this was locked due to something other than a Quest specifically, indicate it cannot be done in Party Sync
 						if nonQuestLock then
 							-- app.PrintDebug("Automatic DisablePartySync", app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
 							t.DisablePartySync = true;
 						end
-						break;
+						return true;
 					end
 				end
 			else
 				app.print("Unknown 'lockCriteria' key:", critKey, lockCriteria[i + 1]);
 			end
 		end
-	else
-		t.OnUpdate = nil;
 	end
 end
-local function IsGroupLocked(t)	-- TODO: Review and refactor
-	local lockCriteria = t.lc;
-	if lockCriteria then
-		local criteriaRequired = lockCriteria[1];
-		local critKey, critFunc, nonQuestLock;
-		local i, limit = 2, #lockCriteria;
-		while i < limit do
-			critKey = lockCriteria[i];
-			critFunc = criteriaFuncs[critKey];
-			i = i + 1;
-			if critFunc then
-				if critFunc(lockCriteria[i]) then
-					criteriaRequired = criteriaRequired - 1;
-					if not nonQuestLock and critKey ~= "questID" and critKey ~= "lvl" then
-						nonQuestLock = true;
-					end
-				end
-			else
-				app.print("Unknown 'lockCriteria' key:",critKey,lockCriteria[i]);
-			end
-			-- enough criteria met to consider this quest locked
-			if criteriaRequired <= 0 then
-				-- we can rawset this since there's no real way for a player to 'remove' this lock during a session
-				-- and this does not come into play during party sync
-				t.locked = true;
-				-- if this was locked due to something other than a Quest/Level specifically, indicate it cannot be done in Party Sync
-				if nonQuestLock then
-					-- app.PrintDebug("Automatic DisablePartySync", app:Linkify(t.hash, app.Colors.ChatLink, "search:"..t.key..":"..t[t.key]))
-					t.DisablePartySync = true;
-				end
-				-- app.PrintDebug("Locked", app:Linkify(t.hash, app.Colors.ChatLink, "search:"..t.key..":"..t[t.key]))
-				return true;
-			end
-			i = i + 1;
-		end
-	end
-end
-local function LockedAsQuest(t)	-- TODO: Review and refactor
+local function LockedAsQuest(t)
 	local questID = t.questID;
 	if not IsQuestFlaggedCompleted(questID) then
+		-- already cached a locked status
+		local cached = LockedQuestCache[questID]
+		if cached ~= nil then return cached end
 		-- generic locked functionality based on lockCriteria
 		if IsGroupLocked(t) then return true; end
 		-- if an alt-quest is completed, then this quest is locked
 		if t.altcollected then
-			t.locked = t.altcollected;
+			LockedQuestCache[questID] = true
 			return true;
 		end
+		LockedQuestCache[questID] = false
+		-- app.PrintDebug("Locked:false",app:Linkify(t.questID, app.Colors.ChatLink, "search:questID:" .. t.questID))
+		return false
+	else
+		-- completed quests can be permanently ignored for locked logic handling
+		t.locked = false
 	end
-	-- means that this will persist as a non-locked quest until reload, so quests that become locked while playing will not immediately update
-	-- maybe can revise that somehow without also having this entire logic be calculated billions of times when nothing changes....
-	t.locked = false;
 end
-app.LockedAsQuest = LockedAsQuest;	-- TODO: Review and refactor
-app.QuestLockCriteriaFunctions = criteriaFuncs;	-- TODO: Review and refactor
+app.LockedAsQuest = LockedAsQuest;
+app.QuestLockCriteriaFunctions = criteriaFuncs;
 
 -- Party Sync Support
 local IsQuestReplayable, OnUpdateForPartySyncedQuest = C_QuestLog.IsQuestReplayable;
@@ -1276,8 +1235,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		return IsQuestSaved(t.questID);
 	end,
 
-
-	--["locked"] = LockedAsQuest,	-- This might not be necessary, we have this in SetupLockCriteria and AsBreadcrumb
 	-- These are Retail fields that aren't used in Classic... yet?
 	["missingSourceQuests"] = function(t)
 		if t.sourceQuests and #t.sourceQuests > 0 then
@@ -1367,15 +1324,26 @@ app.IsClassic and "WithReputation" or false, {
 		end
 	end,
 }, (function(t) return t.maxReputation; end),
-"SetupLockCriteria", {}, (function(t)
-	if t.lc then
-		if t.OnUpdate then
-			print("BRUH ON UPDATE WITH LOCK CRITERIA QUEST ID #", t.questID);
-		else
-			t.OnUpdate = OnUpdateForLockCriteria;
-		end
-	end
-end),
+-- Retail: Locked Quest support
+not app.IsClassic and "WithLockCriteria" or false, {
+	collectible = function(t)
+		return app.Settings.Collectibles.QuestsLocked
+			and
+			(
+				-- not able to access quest on current character
+				t.locked
+				and
+				(
+					-- debug/account mode
+					app.MODE_DEBUG_OR_ACCOUNT
+					or
+					-- available in party sync
+					not t.DisablePartySync
+				)
+			)
+	end,
+	locked = LockedAsQuest,
+}, (function(t) return t.lc; end),
 "AsBreadcrumb", {
 	text = app.IsClassic and function(t)
 		return "|cffcbc3e3" .. t.name .. "|r";
@@ -1613,6 +1581,7 @@ end
 -- Game Events that trigger visual updates, but no computation updates.
 local softRefresh = function()
 	wipe(app.searchCache);
+	wipe(LockedQuestCache)
 end;
 app.events.BAG_NEW_ITEMS_UPDATED = softRefresh;
 if app.IsClassic then
