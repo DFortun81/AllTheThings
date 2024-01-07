@@ -3707,6 +3707,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3113,	-- Razormane Dustrunner
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203752, {	-- Spell Notes: MILEGIN VALF
+					["coords"] = {
+						{ 53.0, 27.6, DUROTAR },
+						{ 53.8, 9.6, DUROTAR },
+						{ 42.8, 26.4, DUROTAR },
+					},
+					["classes"] = { MAGE },
+					["crs"] = {
+						3196,	-- Burning Blade Neophyte
+						3195,	-- Burning Blade Thug
+						3197,	-- Burning Blade Fanatic
+						3198,	-- Burning Blade Apprentice
+						3199,	-- Burning Blade Cultist
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(203753, {	-- Spell Notes: RING SEFF OSTROF
 					["description"] = "This can also drop from any of the rare mobs in the zone.",
 					["coord"] = { 67.6, 87.8, DUROTAR },

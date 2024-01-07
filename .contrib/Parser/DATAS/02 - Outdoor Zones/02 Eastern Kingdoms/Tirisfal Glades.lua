@@ -2586,6 +2586,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 75.0, 61.6, TIRISFAL_GLADES },
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(203752, {	-- Spell Notes: MILEGIN VALF
+					["coords"] = {
+						{ 34.0, 47.8, TIRISFAL_GLADES },
+						{ 51.6, 68.8, TIRISFAL_GLADES },
+						{ 80.0, 54.4, TIRISFAL_GLADES },
+					},
+					["classes"] = { MAGE },
+					["crs"] = {
+						1535,	-- Scarlet Warrior
+						1536,	-- Scarlet Missionary
+						1537,	-- Scarlet Zealot
+					},
+				})),
+				-- #endif
 				i(3328, {	-- Spider Web Robe
 					["coord"] = { 86.6, 53.8, TIRISFAL_GLADES },
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord

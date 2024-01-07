@@ -379,6 +379,15 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						recipe(415936),	-- Engrave Gloves - Living Bomb
 					},
 				}),
+				i(203746, {	-- Spell Notes: Living Flame
+					["cost"] = {
+						{ "i", 211779, 1 },	-- Comprehension Charm
+						{ "i", 203752, 1 },	-- Spell Notes: MILEGIN VALF
+					},
+					["groups"] = {
+						recipe(401768),	-- Engrave Pants - Living Flame
+					},
+				}),
 				i(208753, {	-- Spell Notes: Regeneration
 					["cost"] = {
 						{ "i", 211779, 1 },	-- Comprehension Charm

@@ -2738,6 +2738,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						735,	-- Murloc Streamrunner
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203752, {	-- Spell Notes: MILEGIN VALF
+					["coord"] = { 62.6, 54.2, ELWYNN_FOREST },
+					["classes"] = { MAGE },
+					["cr"] = 476,	-- Kobold Geomancer
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(203753, {	-- Spell Notes: RING SEFF OSTROF
 					["coord"] = { 26.6, 89.8, ELWYNN_FOREST },
 					["classes"] = { MAGE },
