@@ -3539,6 +3539,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(211691, {	-- Spell Notes: Arcane Blast
+					--[[
+					-- TODO: Find the objectIDs and if there are any questIDs.
+					["providers"] = {
+						{ "o",  },	-- Arcane Shard
+						{ "o",  },	-- Arcane Shard
+						{ "o",  },	-- Arcane Shard
+					},
+					]]--
+					["description"] = "Cast Arcane Explosion in the correct order next to the Arcane Shard. South to North.",
+					["coords"] = {
+						{ 13, 24.8, DARKSHORE },	-- Southern Crystal
+						{ 14, 19.8, DARKSHORE },	-- Middle Crystal
+						{ 13.5, 15.8, DARKSHORE },	-- Northern Crystal
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { MAGE },
+					["groups"] = {
+						recipe(401757),	-- Engrave Gloves - Arcane Blast
+					},
+				})),
+			}),
+			-- #endif
 			n(ZONE_DROPS, {
 				i(23777, {	-- Diabolical Plans [Alliance]
 					["timeline"] = { "added 2.0.1.6180" },
@@ -3589,6 +3614,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3919,	-- Withered Ancient
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(211777, {	-- Naga Manuscript
+					["coords"] = {
+						{ 7.2, 13.2, DARKSHORE },
+						{ 14.0, 26.6, DARKSHORE },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { MAGE },
+					["crs"] = {
+						3715,	-- Wrathtail Sea Witch
+						3717,	-- Wrathtail Sorceress
+					},
+				})),
+				-- #endif
 			}),
 		},
 	}),
