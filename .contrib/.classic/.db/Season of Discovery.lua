@@ -943,6 +943,84 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(403476),	-- Engrave Pants - Furious Thunder
 		}),
 	}),
+	n(createHeader({	-- Soul Brokers
+		readable = "SOD - Soul Brokers",
+		icon = "Interface\\ICONS\\spell_shadow_lifedrain02",
+		text = {
+			en = "Soul Brokers",
+			es = "Corredores de Almas",
+			de = "Seelenvermittler",
+			fr = "Courtiers D'âmes",
+			it = "Broker Dell'anima",
+			pt = "Corretores de Almas",
+			ru = "Душевные брокеры",
+			ko = "소울 브로커",
+			cn = "灵魂经纪人",
+		},
+	}), {
+		["aqd"] = {
+			["crs"] = {
+				209002,	-- Gaklik Voidtwist <Soul Broker>
+				204256,	-- Damien Kane <Soul Broker>
+			},
+			["coords"] = {
+				{ 47.2, 53.6, DUN_MOROGH },
+				{ 44.0, 66.2, ELWYNN_FOREST },
+			},
+		},
+		["hqd"] = {
+			["crs"] = {
+				208226,	-- Darmak Bloodhowl <Soul Broker>
+				208682,	-- Denton Bleakway <Soul Broker>
+			},
+			["coords"] = {
+				{ 54.6, 41.6, DUROTAR },
+				{ 84.0, 26.0, UNDERCITY },
+			},
+			["maps"] = { TIRISFAL_GLADES },
+		},
+		["OnInit"] = [[function(t) _.ResolveQuestData(t); return t; end]],
+		["classes"] = { WARLOCK },
+		["groups"] = {
+			i(205022, {	-- Rune of Soul Siphon
+				["cost"] = {
+					{ "i", 205020, 1 },	-- Pure Soul Shard
+					{ "i", 205019, 1 },	-- Tainted Soul Shard
+				},
+				["classes"] = { WARLOCK },
+				["groups"] = {
+					recipe(403920),	-- Engrave Chest - Soul Siphon
+				},
+			}),
+			i(205020, {	-- Pure Soul Shard
+				["description"] = "Casting Drain Soul on any critter will reward you with this.",
+			}),
+			i(205019, {	-- Tainted Soul Shard
+				["description"] = "Casting Drain Soul on any of the named mobs listed below will reward you with this. (does not need to be your tag!)",
+				["aqd"] = {
+					["coords"] = {
+						{ 27.0, 92.8, ELWYNN_FOREST },
+						{ 27.8, 57.4, DUN_MOROGH },
+					},
+					["crs"] = {
+						448,	-- Hogger
+						6113,	-- Vejrek
+					},
+				},
+				["hqd"] = {
+					["coords"] = {
+						{ 42.6, 26.4, DUROTAR },
+						{ 58.6, 31.6, TIRISFAL_GLADES },
+					},
+					["crs"] = {
+						3203,	-- Fizzle Darkstorm
+						1753,	-- Maggot Eye
+					},
+				},
+				["OnInit"] = [[function(t) _.ResolveQuestData(t); return t; end]],
+			}),
+		},
+	}),
 	n(createHeader({	-- Waylaid Supplies
 		readable = "Waylaid Supplies",
 		icon = "Interface\\Icons\\inv_crate_03",

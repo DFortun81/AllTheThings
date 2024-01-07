@@ -265,6 +265,7 @@ HeaderAssignments = {
 	["Siege on Dragonbane Keep"] = -1000356,
 	["Silithid Royalty"] = -1000167,
 	["Silithus (The Wound)"] = -1000194,
+	["SOD - Soul Brokers"] = -1000378,
 	["SOD - Wild Polymorph"] = -1000377,
 	["Soulshape Forms"] = -1000090,
 	["Sourceless"] = -1000272,
@@ -380,4 +381,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000378;
+NextHeaderID = -1000379;
