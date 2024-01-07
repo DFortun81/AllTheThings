@@ -77,7 +77,7 @@ app:GetWindow("Missing Quests", {
 					end
 				end
 				for id,_ in pairs(QuestieDB.QuestPointers) do
-					if not MissingQuestsFromATTDict[id] and #SearchForField("questID", id) == 0 then
+					if id < 90000 and not MissingQuestsFromATTDict[id] and #SearchForField("questID", id) == 0 then
 						MissingQuestsFromATTDict[id] = true;
 						tinsert(MissingQuestsFromATT, id);
 					end
