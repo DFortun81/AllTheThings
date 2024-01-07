@@ -308,7 +308,6 @@ i(147209);	-- Legendary Wardenscale Supplies
 i(186157);	-- Lodestaff
 i(168280);	-- Lost Scale of the Scarlet Broodmother
 i(147582);	-- Mark of the Sentinax
-i(79269);	-- Marsh Lily
 i(146680);	-- Melandrus' Star-Touched Bracers
 i(122618);	-- Misprinted Draenic Coin
 i(169238);	-- Modified Radio Receiver
