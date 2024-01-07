@@ -365,7 +365,6 @@ root(ROOTS.NeverImplemented, {
 		i(178673),	-- Sinful Aspirant's Weapon - Offhand
 		filter(BOWS, {
 			-- Load In Game
-			i(115294),	-- Spectral Longbow
 			i(182563),	-- NPE Weapon Bow
 			i(182563, {	-- NPE Weapon Bow
 				["bonusID"] = 6895,

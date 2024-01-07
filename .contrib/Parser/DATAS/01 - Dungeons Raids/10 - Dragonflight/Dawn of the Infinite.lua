@@ -102,15 +102,18 @@ local QUANTUM_GROUP = sharedData({
 		filter(MAIL, {
 			ig(18320),	-- Demonheart Spaulders				(NYI)
 			ig(114273),	-- Leafscale Spaulders				(NYI)
+			ig(4014),	-- Sterling Chain Shoulderpads		(NYI)
 
 			ig(134734),	-- Frigidlink Spaulders				(Removed)
 			ig(134765),	-- Overgrown Shoulderguards			(Removed)
 			ig(134706),	-- Surging Spaulders				(Removed)
+			ig(19111),	-- Winteraxe Epaulets				(Removed)
 
 			ig(105800),	-- Firearrow Shoulderpads			(Ordos)
 			ig(105799),	-- Fleshsmoke Chain Shoulders		(Ordos)
 		}),
 		filter(PLATE, {
+			ig(108083),	-- Hardened Draenic Steel Shoulders	(NYI)
 			ig(108215),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(114274),	-- Ruby Plate Shoulderguard			(NYI)
 
@@ -157,6 +160,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(114252), -- Leafscale Chestguard				(NYI)
 
 			ig(134732),	-- Frigidlink Armor					(Removed)
+			ig(2273),	-- Guerrilla Armor					(Removed)
 			ig(134795),	-- Ironbranded Chainmail			(Removed)
 			ig(134763),	-- Overgrown Armor					(Removed)
 
@@ -164,8 +168,11 @@ local QUANTUM_GROUP = sharedData({
 			ig(105772),	-- Moonhee's Mean Vest				(Ordos)
 		}),
 		filter(PLATE, {
-			ig(108078),	-- Hardened Draenic Steel Chestplate(NYI)
-			ig(108218),	-- Peerless Draeneic Steel Chest	(NYI)
+			ig(108078),	-- Hardened Draenic Steel Chestplate	(NYI)
+			ig(108186),	-- Peerless Draenic Steel Chestplate	(NYI)
+			ig(108202),	-- Peerless Draenic Steel Chestplate	(NYI)
+			ig(108210),	-- Peerless Draenic Steel Chestplate	(NYI)
+			ig(108218),	-- Peerless Draenic Steel Chestplate	(NYI)
 			ig(114253),	-- Ruby Plate Breastplate			(NYI)
 			ig(114316),	-- Salt-Scorched Breastplate		(NYI)
 
@@ -256,6 +263,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(147515, {	-- Hellblaze Invader's Greaves	(NYI)
 				["modID"] = 2, -- Heroic dungeon
 			}),
+			ig(4013),	-- Sterling Chain Pants				(NYI)
 			ig(121512),	-- Stormborn Leggings				(NYI)
 
 			ig(134681),	-- Greenhorn's Legguards			(Removed)
@@ -306,6 +314,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(186414, {	-- Rae'shalare, Death's Whisper (Mythic)	(NYI)
 			["bonusID"] = 450,
 		}),
+		ig(115294),	-- Spectral Longbow						(NYI)
 
 		ig(134608),	-- Scorching Longbow					(Removed)
 	}),
@@ -314,6 +323,8 @@ local QUANTUM_GROUP = sharedData({
 		ig(134580),	-- Vanguard Heavy Crossbow				(Removed)
 	}),
 	i(208119, {	-- Quantum Firearm
+		i(110591),	-- Flintlocke's Blasthammer				(NYI)
+
 		ig(134720),	-- Cold-Touched Rifle					(Removed)
 		ig(134749),	-- Covert Rifle							(Removed)
 		ig(56376),	-- Thundercall							(Removed)
@@ -349,6 +360,9 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208112, {	-- Quantum Greatsword	(Two-Handed)
 		ig(134746),	-- Covert Greatsword					(Removed)
+		ig(186410, {	-- Jaithys, the Prison Blade		(Removed)
+			["modID"] = 2, -- Heroic raid
+		}),
 		ig(186410, {	-- Jaithys, the Prison Blade		(Removed)
 			["modID"] = 6, -- Mythic raid
 		}),
@@ -403,6 +417,7 @@ local QUANTUM_GROUP = sharedData({
 	i(208116, {	-- Quantum Polearm
 		ig(115297),	-- Spectral Polearm 					(NYI)
 
+		ig(6679),	-- Armor Piercer						(Removed)
 		ig(134750),	-- Covert Pike							(Removed)
 		ig(134612),	-- Scorching Pike						(Removed)
 		ig(134782),	-- Seasoned Pike						(Removed)
@@ -411,6 +426,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(18303),	-- Nimble Buckler						(NYI)
 		ig(108242),	-- Peerless Draenic Steel Bulwark		(NYI)
 		ig(108245),	-- Peerless Draenic Steel Bulwark		(NYI)
+		ig(3991),	-- Plated Buckler						(NYI)
 
 		ig(134741),	-- Cold-Touched Barrier 				(Removed)
 		ig(134774),	-- Covert Barrier 						(Removed)
@@ -424,7 +440,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208115, {	-- Quantum Staff
 		ig(115298),	-- Spectral Spire 						(NYI)
 
-		ig(6679),	-- Armor Piercer						(Removed)
 		ig(134721),	-- Cold-Touched Staff 					(Removed)
 		ig(1388),	-- Crooked Staff						(Removed)
 		ig(119409),	-- Icebound Bloodmaul Spire				(Removed)
@@ -1055,10 +1070,10 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- q(77598),	-- when you learn everything from Quantum ?
 		-- q(77599),	-- when you learn everything from Quantum ?
 		q(77600),	-- when you learn everything from Quantum Greathammer (Two-Handed)(Mace)
-		-- q(77601),	-- when you learn everything from Quantum ?
+		q(77601),	-- when you learn everything from Quantum Staff
 		-- q(77602),	-- when you learn everything from Quantum ?
 		-- q(77603),	-- when you learn everything from Quantum ?
-		-- q(77604),	-- when you learn everything from Quantum ?
+		q(77604),	-- when you learn everything from Quantum Crossbow
 		-- q(77605),	-- when you learn everything from Quantum ?
 		-- q(77606),	-- when you learn everything from Quantum ?
 		q(77607),	-- when you learn everything from Quantum Knuckles

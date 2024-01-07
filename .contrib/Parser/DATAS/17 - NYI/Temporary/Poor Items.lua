@@ -144,7 +144,6 @@ root(ROOTS.NeverImplemented, {
 						i(2647),	-- Deprecated Loose Chain Shoulderpads
 						i(3226),	-- Deprecated Watchman Pauldrons
 						i(1736),	-- Deprecated Worn Mail Shoulderpads
-						i(4014),	-- Sterling Chain Shoulderpads
 					}),
 					n(CHEST, {
 						i(4015),	-- Sterling Chain Armor
@@ -167,7 +166,6 @@ root(ROOTS.NeverImplemented, {
 						i(3232),	-- Deprecated Drake-scale Leggings
 						i(4761),	-- Deprecated Pearled Chain Pants
 						i(3050),	-- Deprecated Winter Mail Leggings
-						i(4013),	-- Sterling Chain Pants
 					}),
 					n(FEET, {
 						i(3054),	-- Deprecated Winter Mail Boots
@@ -617,7 +615,6 @@ root(ROOTS.NeverImplemented, {
 					i(12995),	-- Monster - Shield, Wall Metal Red
 					i(12980),	-- Monster - Shield, Wall Metal Silver
 					i(3988),	-- Plate Wall Shield
-					i(3991),	-- Plated Buckler
 				}),
 				filter(STAVES, {
 					i(1948),	-- Deprecated Large Broom

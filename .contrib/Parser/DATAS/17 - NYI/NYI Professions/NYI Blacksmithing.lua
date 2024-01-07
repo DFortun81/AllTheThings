@@ -85,7 +85,6 @@ root(ROOTS.NeverImplemented, {
 						i(108158),	-- Hardened Draenic Steel Bulwark
 						i(108084),	-- Hardened Draenic Steel Girdle
 						i(108154),	-- Hardened Draenic Steel Mace
-						i(108083),	-- Hardened Draenic Steel Shoulders
 						i(108142),	-- Hardened Draenic Steel War Axe
 						i(108079),	-- Hardened Draenic Steel Warboots
 						i(108085),	-- Hardened Draenic Steel Wristwraps
@@ -95,10 +94,7 @@ root(ROOTS.NeverImplemented, {
 						i(108237),	-- Peerless Draenic Steel Dagger
 						i(108162),	-- Peerless Draenic Steel Chestplate
 						i(108178),	-- Peerless Draenic Steel Chestplate
-						i(108186),	-- Peerless Draenic Steel Chestplate
 						i(108194),	-- Peerless Draenic Steel Chestplate
-						i(108202),	-- Peerless Draenic Steel Chestplate
-						i(108210),	-- Peerless Draenic Steel Chestplate
 						i(108181),	-- Peerless Draenic Steel Helm
 						i(108213),	-- Peerless Draenic Steel Helm
 						i(108221),	-- Peerless Draenic Steel Helm
