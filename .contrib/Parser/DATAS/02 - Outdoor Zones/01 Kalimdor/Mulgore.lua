@@ -1679,6 +1679,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(205382, {	-- Mokwa
+					["description"] = "You can tame him and you still get the rune!",
+					["coord"] = { 36, 57, MULGORE },
+					["cost"] = {{ "i", 205961, 1 }},	-- Mulgore Bird Meat
+					["groups"] = {
+						i(205979, {	-- Rune of Flanking
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(425762),	-- Engrave Pants - Flanking Strike
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(5785, {	-- Sister Hatelash
 					-- #if AFTER CATA
 					["coords"] = {
@@ -1874,6 +1889,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["crs"] = {
 						2990,	-- Bael'dun Appraiser
 						2989,	-- Bael'dun Digger
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205961, {	-- Mulgore Bird Meat
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["crs"] = {
+						2956,	-- Adult Plainstrider
+						2969,	-- Wiry Swoop
+						2970,	-- Swoop
+						2957,	-- Elder Plainstrider
+						2971,	-- Taloned Swoop
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205995, {	-- Prairie Dog Musk

@@ -3526,6 +3526,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 43.8, 50.0, DUROTAR },
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(208124, {	-- Raluk
+					["description"] = "You can tame him and you still get the rune!",
+					["coord"] = { 69.1, 71.5, DUROTAR },
+					["cost"] = {{ "i", 207590, 1 }},	-- Durotar Pig Meat
+					["groups"] = {
+						i(205979, {	-- Rune of Flanking
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(425762),	-- Engrave Pants - Flanking Strike
+							},
+						}),
+					},
+				})),
+				-- #endif
 				-- #if AFTER 4.0.3
 				n(5809, {	-- Sergeant Curtis
 					["coord"] = { 59.6, 58.8, DUROTAR },
@@ -3736,6 +3751,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(207590, {	-- Durotar Pig Meat
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["crs"] = {
+						3099,	-- Dire Mottled Boar
+						3100,	-- Elder Mottled Boar
+						3225,	-- Corrupted Mottled Boar
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207733, {	-- Kul Tiran Skull
 					["coord"] = { 57.6, 55.4, DUROTAR },
 					["timeline"] = { "removed 2.0.1" },

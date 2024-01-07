@@ -1874,6 +1874,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209928, {	-- Mowgh
+					["description"] = "You can tame him and you still get the rune!",
+					["coord"] = { 48.3, 31.4, TELDRASSIL },
+					["cost"] = {{ "i", 208608, 1 }},	-- Teldrassil Bird Meat
+					["groups"] = {
+						i(205979, {	-- Rune of Flanking
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(425762),	-- Engrave Pants - Flanking Strike
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(14432, {	-- Threggil
 					-- #if AFTER CATA
 					["coord"] = { 53.0, 44.6, TELDRASSIL },
@@ -2091,6 +2106,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["crs"] = {
 						2042,	-- Nightsaber
 						2043,	-- Nightsaber Stalker
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208608, {	-- Teldrassil Bird Meat
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["crs"] = {
+						1995,	-- Strigid Owl
+						1997,	-- Strigid Hunter
+						1996,	-- Strigid Screecher
 					},
 				})),
 				-- #endif

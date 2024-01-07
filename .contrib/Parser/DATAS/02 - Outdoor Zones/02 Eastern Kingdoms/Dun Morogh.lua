@@ -2912,6 +2912,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(208812, {	-- Jorul
+					["description"] = "You can tame him and you still get the rune!",
+					["coord"] = { 37.78, 42.55, DUN_MOROGH },
+					["cost"] = {{ "i", 208192, 1 }},	-- Dun Morogh Pig Meat
+					["groups"] = {
+						i(205979, {	-- Rune of Flanking
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(425762),	-- Engrave Pants - Flanking Strike
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(1271, {	-- Old Icebeard
 					-- #if AFTER 10.1.7
 					["coord"] = { 31.4, 27.2, 29 },	-- Grizzled Den
@@ -3187,6 +3202,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(2886),	-- Crag Boar Rib
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208192, {	-- Dun Morogh Pig Meat
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["crs"] = {
+						208638,	-- Fyodi
+						1125,	-- Crag Boar
+						1126,	-- Large Crag Boar
+						1127,	-- Elder Crag Boar
+						1689,	-- Scarred Crag Boar
+					},
+				})),
+				-- #endif
 				i(2067, {	-- Frostbit Staff
 					["cr"] = 1117,	-- Rockjaw Bonesnapper
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
