@@ -2182,6 +2182,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { "added 5.1.0.16309" },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(204503, {	-- Dead Acolyte
+					["coord"] = { 56.6, 57.6, ELWYNN_FOREST },
+					["classes"] = { WARLOCK },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(205364, {	-- Acolyte's Knapsack
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								i(205184),	-- Acolyte's Note
+								i(205181),	-- Unidentified Artifact
+							},
+						}),
+						i(205183, {	-- Fel-Powered Artifact
+							["description"] = "Bring the Unidentified Artifact back to the warlock trainer in the zone to receive the Powerless Artifact and then come back to acquire this item.\n\nBring it to Gakin in Stormwind City to receive the rune.",
+							["cost"] = {{ "i", 205182, 1 }},	-- Powerless Artifact
+							["classes"] = { WARLOCK },
+						}),
+					},
+				})),
+				-- #endif
 				n(472, {	-- Fedfennel
 					-- #if AFTER CATA
 					["coords"] = {
@@ -2565,6 +2586,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(18778),	-- Swift White Steed (MOUNT!)
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				n(906, {	-- Maximillian Crowe <Warlock Trainer>
+					["coord"] = { 44.4, 66.0, ELWYNN_FOREST },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						applyclassicphase(SOD_PHASE_ONE, i(205182, {	-- Powerless Artifact
+							["cost"] = {{ "i", 205181, 1 }},	-- Unidentified Artifact
+							["classes"] = { WARLOCK },
+						})),
+					},
+				}),
+				-- #endif
 				n(1198, {	-- Rallic Finn <Bowyer>
 					["coord"] = { 83.2, 66.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,

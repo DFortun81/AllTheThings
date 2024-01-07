@@ -4730,6 +4730,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				n(6122, {	-- Gakin the Darkbinder
+					["coord"] = { 25.6, 77.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						applyclassicphase(SOD_PHASE_ONE, i(205215, {	-- Rune of Tactics
+							["cost"] = {{ "i", 205183, 1 }},	-- Fel-Powered Artifact
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(416009),	-- Engrave Chest - Demonic Tactics
+							},
+						})),
+					},
+				}),
+				-- #endif
 				n(1333, {	-- Gerik Koen <Two Handed Weapon Merchant>
 					["coord"] = { 73.2, 57.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,

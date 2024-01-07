@@ -2067,6 +2067,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { "added 5.2.0.16650" },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(208927, {	-- Dead Acolyte
+					["coord"] = { 76.6, 44.8, TIRISFAL_GLADES },
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(208223, {	-- Acolyte's Knapsack
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								i(208224),	-- Acolyte's Note
+								i(205181),	-- Unidentified Artifact
+							},
+						}),
+						i(205183, {	-- Fel-Powered Artifact
+							["description"] = "Bring the Unidentified Artifact back to the warlock trainer in the zone to receive the Powerless Artifact and then come back to acquire this item.\n\nBring it to Carendin Halgar in Undercity to receive the rune.",
+							["cost"] = {{ "i", 205182, 1 }},	-- Powerless Artifact
+							["classes"] = { WARLOCK },
+						}),
+					},
+				})),
+				-- #endif
 				n(1911, {	-- Deeb
 					-- #if AFTER CATA
 					["coord"] = { 72.6, 25.8, TIRISFAL_GLADES },
@@ -2416,6 +2437,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				n(2127, {	-- Rupert Boch <Warlock Trainer>
+					["coord"] = { 61.6, 52.4, TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						applyclassicphase(SOD_PHASE_ONE, i(205182, {	-- Powerless Artifact
+							["cost"] = {{ "i", 205181, 1 }},	-- Unidentified Artifact
+							["classes"] = { WARLOCK },
+						})),
+					},
+				}),
+				-- #endif
 				n(12943, {	-- Werg Thickblade <Leatherworking Supplies>
 					-- #if AFTER CATA
 					["coord"] = { 83.2, 69.4, TIRISFAL_GLADES },

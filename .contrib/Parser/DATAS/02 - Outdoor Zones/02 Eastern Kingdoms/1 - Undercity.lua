@@ -1247,6 +1247,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				n(5675, {	-- Carendin Halgar
+					["coord"] = { 85.0, 25.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						applyclassicphase(SOD_PHASE_ONE, i(205215, {	-- Rune of Tactics
+							["cost"] = {{ "i", 205183, 1 }},	-- Fel-Powered Artifact
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(416009),	-- Engrave Chest - Demonic Tactics
+							},
+						})),
+					},
+				}),
+				-- #endif
 				n(4569, {	-- Charles Seaton <Blade Merchant>
 					["coord"] = { 77.0, 50.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
