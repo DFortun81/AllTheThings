@@ -360,6 +360,15 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					recipe(401765),	-- Engrave Chest - Fingers of Frost
 				},
 			}),
+			i(208753, {	-- Spell Notes: Regeneration
+				["cost"] = {
+					{ "i", 211779, 1 },	-- Comprehension Charm
+					{ "i", 208754, 1 },	-- Spell Notes: TENGI RONEERA
+				},
+				["groups"] = {
+					recipe(401767),	-- Engrave Chest - Regeneration
+				},
+			}),
 		},
 	}),
 	n(createHeader({	-- Monster Hunting

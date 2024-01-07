@@ -1892,6 +1892,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						519,	-- Slark
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA
+					["coord"] = { 53.0, 78.8, WESTFALL },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { MAGE },
+					["cr"] = 450,	-- Defias Renegade Mage
+				})),
 				-- #endif
 				-- #if BEFORE 10.1.7
 				i(1933, {	-- Staff of Conjuring

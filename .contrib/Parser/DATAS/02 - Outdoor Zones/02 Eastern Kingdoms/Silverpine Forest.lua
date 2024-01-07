@@ -1835,6 +1835,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(425443),	-- Engrave Gloves - Quick Strike
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA
+					["coord"] = { 50.8, 61.6, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { MAGE },
+					["races"] = HORDE_ONLY,
+					["cr"] = 1867,	-- Dalaran Apprentice
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210713, {	-- Tortured Soul
 					["description"] = "Use Life Tap in a safe area to summon the Tortured Soul.",
 					["coord"] = { 59.4, 70.8, SILVERPINE_FOREST },

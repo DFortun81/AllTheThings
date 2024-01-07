@@ -3962,6 +3962,42 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 			}),
 			-- #endif
+			n(TREASURES, {
+				o(3642, {	-- Kolkars' Booty
+					-- #if SEASON_OF_DISCOVERY
+					["providers"] = {
+						{ "o", 152618 },	-- Kolkars' Booty
+						{ "o", 152608 },	-- Kolkars' Booty
+					},
+					-- #endif
+					["description"] = "Contains random low level greens.",
+					["coords"] = {
+						{ 43.0, 23.5, THE_BARRENS },
+						{ 52.8, 41.8, THE_BARRENS },
+						{ 44.3, 37.7, THE_BARRENS },
+					},
+					["cost"] = {{ "i", 5020, 1 }},	-- Kolkar Booty Key
+					-- #if SEASON_OF_DISCOVERY
+					["groups"] = {
+						applyclassicphase(SOD_PHASE_ONE, i(208689, {	-- Ferocious Idol
+							["classes"] = { DRUID },
+							["groups"] = {
+								recipe(410023),	-- Engrave Pants - Savage Roar
+							},
+						})),
+						applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA
+							["classes"] = { MAGE },
+						})),
+						applyclassicphase(SOD_PHASE_ONE, i(206382, {	-- Tempest Icon
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(410097),	-- Engrave Gloves - Water Shield
+							},
+						})),
+					},
+					-- #endif
+				}),
+			}),
 			n(VENDORS, {
 				n(3495, {	-- Gagsprocket <Engineering Goods>
 					-- #if AFTER CATA
@@ -4458,6 +4494,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(5051, {	-- Dig Rat
 					["coord"] = { 48.8, 84.8, THE_BARRENS },
 					["cr"] = 3444,	-- Dig Rat
+				}),
+				i(5020, {	-- Kolkar Booty Key
+					["coords"] = {
+						{ 44.4, 23.6, THE_BARRENS },
+						{ 47.4, 41.8, THE_BARRENS },
+						{ 53.6, 40.0, THE_BARRENS },
+					},
+					["crs"] = {
+						3272,	-- Kolkar Wrangler
+						3273,	-- Kolkar Stormer
+						3394,	-- Barak Kodobane
+					},
 				}),
 				i(5093, {	-- Razormane Backstabber
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
