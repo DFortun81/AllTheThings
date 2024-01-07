@@ -3712,9 +3712,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 67.6, 87.8, DUROTAR },
 					["classes"] = { MAGE },
 					["cr"] = 3205,	-- Zalazane
-					["groups"] = {
-						recipe(401765),	-- Engrave Chest - Fingers of Frost
-					},
 				})),
 				-- #endif
 			}),

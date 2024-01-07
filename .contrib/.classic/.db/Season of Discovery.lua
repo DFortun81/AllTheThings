@@ -270,95 +270,95 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 		--["cost"] = {{ "i", 211779, 1 }},	-- Comprehension Charm
 		["classes"] = { MAGE },
 		["groups"] = {
-			n(REWARDS, {
-				n(createHeader({	-- Tier 1
-					readable = "Tier 1",
-					icon = "Interface\\ICONS\\inv_scroll_01",
-					text = {
-						en = "Tier 1",
-						--[[
-						es = "",
-						de = "",
-						fr = "",
-						it = "",
-						pt = "",
-						ru = "",
-						ko = "",
-						cn = "",
-						]]--
-					},
-				}), {
-					["cost"] = {
-						{ "i", 211779, 1 },	-- Comprehension Charm
-						{ "i", 211785, 1 },	-- Scroll: CWAL
-						{ "i", 211786, 1 },	-- Scroll: CHAP BALK WELLES
-						{ "i", 211787, 1 },	-- Scroll: LOWER PING WHOMEVER
-						{ "i", 211780, 1 },	-- Scroll: KWYJIBO
-					},
-					["groups"] = {
-						i(3012),	-- Scroll of Agility
-						i( 955),	-- Scroll of Intellect
-						i(3013),	-- Scroll of Protection
-						i(1181),	-- Scroll of Spirit
-						i(1180),	-- Scroll of Stamina
-						i( 954),	-- Scroll of Strength
-						i(211800, {	-- Scroll of Reintegration
-							["description"] = "Consumed on use.",
-							["classes"] = { MAGE },
-						}),
-					},
-				}),
-				n(createHeader({	-- Tier 2
-					readable = "Tier 2",
-					icon = "Interface\\ICONS\\inv_scroll_14",
-					text = {
-						en = "Tier 2",
-						--[[
-						es = "",
-						de = "",
-						fr = "",
-						it = "",
-						pt = "",
-						ru = "",
-						ko = "",
-						cn = "",
-						]]--
-					},
-				}), {
-					["cost"] = {
-						{ "i", 211779, 1 },	-- Comprehension Charm
-						{ "i", 211854, 1 },	-- Scroll: OMIT KESA
-						{ "i", 211853, 1 },	-- Scroll: VOCE WELL
-						{ "i", 211784, 1 },	-- Scroll: WUBBA WUBBA
-						{ "i", 211855, 1 },	-- Scroll: STHENIC LUNATE
-					},
-					["groups"] = {
-						i(211800, {	-- Scroll of Reintegration
-							["description"] = "Consumed on use.",
-							["classes"] = { MAGE },
-						}),
-						i(1712),	-- Scroll of Spirit II
-						i(1478),	-- Scroll of Protection II
-						i(211954, {	-- Scroll of Arcane Accuracy I
-							["classes"] = { MAGE },
-						}),
-						i(211953, {	-- Scroll of Arcane Recovery I
-							["classes"] = { MAGE },
-						}),
-						i(211957, {	-- Scroll of Arcane Power I
-							["classes"] = { MAGE },
-						}),
-						i(211955, {	-- Scroll of Arcane Protection - Fire I
-							["classes"] = { MAGE },
-						}),
-						i(211956, {	-- Scroll of Arcane Protection - Frost I
-							["classes"] = { MAGE },
-						}),
-					},
-				}),
+			n(createHeader({	-- Tier 1
+				readable = "Comprehension - Tier 1",
+				icon = "Interface\\ICONS\\inv_scroll_01",
+				text = {
+					en = "Tier 1",
+					es = "Nivel 1",
+					de = "Stufe 1",
+					fr = "Étage 1",
+					it = "Livello 1",
+					pt = "Nível 1",
+					ru = "Уровень 1",
+					ko = "층 1",
+					cn = "等级 2",
+				},
+			}), {
+				["cost"] = {
+					{ "i", 211779, 1 },	-- Comprehension Charm
+					{ "i", 211785, 1 },	-- Scroll: CWAL
+					{ "i", 211786, 1 },	-- Scroll: CHAP BALK WELLES
+					{ "i", 211787, 1 },	-- Scroll: LOWER PING WHOMEVER
+					{ "i", 211780, 1 },	-- Scroll: KWYJIBO
+				},
+				["groups"] = {
+					i(3012),	-- Scroll of Agility
+					i( 955),	-- Scroll of Intellect
+					i(3013),	-- Scroll of Protection
+					i(1181),	-- Scroll of Spirit
+					i(1180),	-- Scroll of Stamina
+					i( 954),	-- Scroll of Strength
+					i(211800, {	-- Scroll of Reintegration
+						["description"] = "Consumed on use.",
+						["classes"] = { MAGE },
+					}),
+				},
 			}),
-			n(QUESTS, {
-				
+			n(createHeader({	-- Tier 2
+				readable = "Comprehension - Tier 2",
+				icon = "Interface\\ICONS\\inv_scroll_14",
+				text = {
+					en = "Tier 2",
+					es = "Nivel 2",
+					de = "Stufe 2",
+					fr = "Étage 2",
+					it = "Livello 2",
+					pt = "Nível 2",
+					ru = "Уровень 2",
+					ko = "층 2",
+					cn = "等级 2",
+				},
+			}), {
+				["cost"] = {
+					{ "i", 211779, 1 },	-- Comprehension Charm
+					{ "i", 211854, 1 },	-- Scroll: OMIT KESA
+					{ "i", 211853, 1 },	-- Scroll: VOCE WELL
+					{ "i", 211784, 1 },	-- Scroll: WUBBA WUBBA
+					{ "i", 211855, 1 },	-- Scroll: STHENIC LUNATE
+				},
+				["groups"] = {
+					i(211800, {	-- Scroll of Reintegration
+						["description"] = "Consumed on use.",
+						["classes"] = { MAGE },
+					}),
+					i(1712),	-- Scroll of Spirit II
+					i(1478),	-- Scroll of Protection II
+					i(211954, {	-- Scroll of Arcane Accuracy I
+						["classes"] = { MAGE },
+					}),
+					i(211953, {	-- Scroll of Arcane Recovery I
+						["classes"] = { MAGE },
+					}),
+					i(211957, {	-- Scroll of Arcane Power I
+						["classes"] = { MAGE },
+					}),
+					i(211955, {	-- Scroll of Arcane Protection - Fire I
+						["classes"] = { MAGE },
+					}),
+					i(211956, {	-- Scroll of Arcane Protection - Frost I
+						["classes"] = { MAGE },
+					}),
+				},
+			}),
+			i(203747, {	-- Spell Notes: Fingers of Frost
+				["cost"] = {
+					{ "i", 211779, 1 },	-- Comprehension Charm
+					{ "i", 203753, 1 },	-- Spell Notes: RING SEFF OSTROF
+				},
+				["groups"] = {
+					recipe(401765),	-- Engrave Chest - Fingers of Frost
+				},
 			}),
 		},
 	}),

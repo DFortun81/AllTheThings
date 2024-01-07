@@ -2733,9 +2733,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 26.6, 89.8, ELWYNN_FOREST },
 					["classes"] = { MAGE },
 					["cr"] = 448,	-- Hogger
-					["groups"] = {
-						recipe(401765),	-- Engrave Chest - Fingers of Frost
-					},
 				})),
 				-- #endif
 				i(781, {	-- Stone Gnoll Hammer

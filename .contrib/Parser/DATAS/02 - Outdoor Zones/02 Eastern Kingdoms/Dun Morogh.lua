@@ -2829,9 +2829,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(203753, {	-- Spell Notes: RING SEFF OSTROF
 							["classes"] = { MAGE },
-							["groups"] = {
-								recipe(401765),	-- Engrave Chest - Fingers of Frost
-							},
 						}),
 					},
 				})),
