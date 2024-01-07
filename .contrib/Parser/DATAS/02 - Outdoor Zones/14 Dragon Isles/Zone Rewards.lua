@@ -14,6 +14,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		i(200691),	-- Claw Thistle Barbs
 		i(200700),	-- Cuppressa Berries
 		i(200695),	-- Fangtooth Petals
+		i(200555),	-- Inferno Seeds
 		i(200699),	-- Milkweed Fibers
 		i(200690),	-- Ritherem Petals
 		i(200694),	-- River Bell Bulbs

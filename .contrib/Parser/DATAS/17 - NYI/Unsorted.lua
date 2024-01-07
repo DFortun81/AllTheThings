@@ -1799,7 +1799,6 @@ root(ROOTS.Unsorted, {
 				i(200533),	-- Bygone Idol
 				i(192686),	-- Charred Carapace
 				i(201178),	-- Cracked Skull
-				i(192688),	-- Cracked Stone Bracers
 				i(201216),	-- Crumbled Elemental Spark
 				i(200532),	-- Damaged Qiraji Ring
 				i(193420),	-- Depleted Mana Stone
@@ -1853,7 +1852,6 @@ root(ROOTS.Unsorted, {
 				i(201162),	-- Shiny Metal Scraps
 				i(192668),	-- Short Rib
 				i(201201),	-- Skull Pendant
-				i(192720),	-- Slender Twisting Horn
 				i(192633),	-- Slit-Shaped Pupil
 				i(201221),	-- Small Titan Mechanism
 				i(201179),	-- Snapped Tusk Tip
@@ -2108,7 +2106,6 @@ root(ROOTS.Unsorted, {
 				i(199343),	-- Immaculate Sac of Swog Treasures
 				i(199187),	-- Impossible Sheet Music
 				i(194693),	-- Improvised Sushi
-				i(200555),	-- Inferno Seeds
 				i(200620),	-- Inflaming Incense
 				i(200830),	-- Instantly Drying Clay
 				i(191244),	-- I.P.F. Mark 15
@@ -2199,7 +2196,6 @@ root(ROOTS.Unsorted, {
 				i(198486),	-- Windscale Rider
 				i(200623),	-- Wind-Grown Grass
 				i(200696),	-- Winter Berries
-				i(200810),	-- Wooden Stonegrabber Figurine
 				i(200807),	-- Wooden Ursine Figure
 				i(194889),	-- XD-57 "Bullseye" Guided Rocket Kit
 				i(187523),	-- Your Reward [DNT]
