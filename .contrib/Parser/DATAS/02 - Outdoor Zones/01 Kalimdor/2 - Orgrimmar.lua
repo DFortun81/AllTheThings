@@ -3581,11 +3581,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(45558, {	-- Lizna Goldweaver <Tailoring Supplies> (removed 7.3.5? when embassy took over)
-					-- #if AFTER 7.3.5.25961
-					["description"] = "This NPC is only visible if you have not yet unlocked the allied race Highmountain Tauren.",
-					-- #endif
 					["coord"] = { 41.0, 79.8, ORGRIMMAR },
 					["timeline"] = { "added 4.0.1.12984" },
+					-- #if AFTER 7.3.5.25961
+					["description"] = "This NPC is only visible if you have not yet unlocked the allied race Highmountain Tauren.",
+					["OnUpdate"] = [[function(t,parent,defaultUpdate)
+						if defaultUpdate(t,parent) and not ATTAccountWideData.Achievements[12452] then
+							t.visible = true;
+						else
+							t.visible = false;
+						end
+						return true;
+					end]],
+					-- #endif
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
