@@ -2688,6 +2688,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.8, 50.6, HILLSBRAD_FOOTHILLS },
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(211951, {	-- Koartul
+					["coord"] = { 61.0, 32.8, HILLSBRAD_FOOTHILLS },
+					["cost"] = {{ "i", 210410, 1 }},	-- Freshwater Snapper Bait
+					["groups"] = {
+						i(210596, {	-- Rune of Cobra Strikes
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(425759),	-- Engrave Chest - Cobra Strikes
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(14277, {	-- Lady Zephris
 					-- #if AFTER CATA
 					["coord"] = { 54.6, 76.6, HILLSBRAD_FOOTHILLS },
@@ -3087,7 +3101,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(211487, {	-- Demolition Explosives
-							["cost"] = 10000,
+							["classes"] = { WARLOCK },
+							["cost"] = 10000,	-- 1g
+						})),
+						applyclassicphase(SOD_PHASE_ONE, i(210410, {	-- Freshwater Snapper Bait
+							["classes"] = { HUNTER },
+							["cost"] = 2000,	-- 20s
 						})),
 						-- #endif
 						i(4829, {	-- Dreamer's Belt
