@@ -64,6 +64,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["maps"] = {
 					1968,	-- TG107_Floor
 				},
+				["g"] = {
+					i(186732),	-- The Box of Many Things (QI!)
+				},
 			}),
 			q(62719, {	-- The Final Pieces
 				["sourceQuests"] = { 60272 },    -- The Weak Link
@@ -106,6 +109,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 164937 },	-- Runecarver
 				["coord"] = { 50.3, 60.4, 1912 },	-- The Runecarver's Oubliette
 				["timeline"] = { ADDED_9_1_0 },
+				["g"] = {
+					i(186732),	-- The Box of Many Things (QI!)
+				},
 			}),
 
 		--	Champion Unlocks

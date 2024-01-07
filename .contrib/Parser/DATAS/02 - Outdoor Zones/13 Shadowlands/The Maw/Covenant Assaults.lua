@@ -174,6 +174,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 42.8, 44.8, THE_MAW },
 				["isWeekly"] = true,
 				["g"] = {
+					i(185720),	-- Draka's Battlehorn (QI!)
 					i(185993, {	-- Ascended War Chest
 						["sym"] = {
 							{"select","itemID",187410},	-- Death's Advance Battlefield Drape
@@ -191,6 +192,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63827, {	-- Encouraging Words
 							["provider"] = { "n", 177900 },	-- Xandria
 							["coord"] = { 42.7, 44.7, THE_MAW },
+							["g"] = {
+								i(185775),	-- Codex of Renewed Vigor (QI!)
+							},
 						}),
 						q(63843, {	-- Heart and Soul
 							["provider"] = { "n", 177226 },	-- Artemede
@@ -220,6 +224,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["provider"] = { "n", 178091 },	-- Vulca
 							["coord"] = { 43.1, 44.3, THE_MAW },
 							["g"] = {
+								i(185839),	-- Soulsteel Ember (QI!)
 								ach(15041, {	-- The Zovaal Shuffle
 									["coords"] = {
 										{ 41.8, 42.2, THE_MAW },
@@ -297,6 +302,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["coord"] = { 33.8, 54.8, THE_MAW },
 				["isWeekly"] = true,
 				["g"] = {
+					i(185720),	-- Draka's Battlehorn (QI!)
 					i(185992, {	-- War Chest of the Undying Army
 						["sym"] = {
 							{"select","itemID",187410},	-- Death's Advance Battlefield Drape
@@ -320,6 +326,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63753, {	-- Centurions March!
 							["sourceQuests"] = { 63772 },	-- Waiting in the Wings
 							["coord"] = { 37.0, 63.5, THE_MAW },
+							["g"] = {
+								i(185733),	-- Anima Mote (QI!)
+							},
 						}),
 						q(63594, {	-- Clearing the Walls
 							["sourceQuests"] = { 63545 },	-- Putting A Plan Together
@@ -332,7 +341,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["provider"] = { "n", 177076 },	-- Margrave Sin'dane
 							["coord"] = { 33.6, 54.9, THE_MAW },
 							["g"] = {
-								i(184876),	-- Cohesion Crystal
+								i(184876),	-- Cohesion Crystal (QI!)
 							},
 						}),
 						q(63664, {	-- Get to the Point
@@ -352,6 +361,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["sourceQuests"] = { 63772 },	-- Waiting in the Wings
 							["provider"] = { "n", 177175 },	-- Mikanikos
 							["coord"] = { 37.0, 63.5, THE_MAW },
+							["g"] = {
+								i(185685),	-- Automaton Bolts (QI!)
+							},
 						}),
 						q(63669, {	-- Somebody Feed Kevin
 							["provider"] = { "n", 163295 },	-- Plague Deviser Marileth
@@ -360,6 +372,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(59004, {	-- Splash Damage
 							["provider"] = { "n", 163295 },	-- Plague Deviser Marileth
 							["coord"] = { 32.9, 56.8, THE_MAW },
+							["g"] = {
+								i(185729),	-- Anima Charged Rune (QI!)
+							},
 						}),
 						q(63772, {	-- Waiting in the Wings
 							["provider"] = { "n", 177072 },	-- Baroness Draka
@@ -512,6 +527,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63951, {	-- A Shady Place
 							["provider"] = { "n", 178890 },	-- Margrave Sin'dane
 							["coord"] = { 22.5, 43.2, THE_MAW },
+							["g"] = {
+								i(187012),	-- Unbalanced Riftstone (QI!)
+							},
 						}),
 						q(63968, {	-- Clean Out the Crucible
 							["provider"] = { "n", 178828 },	-- Lord Herne
@@ -561,6 +579,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63969, {	-- Looming Darkness
 							["provider"] = { "n", 178828 },	-- Lord Herne
 							["coord"] = { 22.4, 43.3, THE_MAW },
+							["g"] = {
+								i(186310),	-- Dark Marrow (QI!)
+								i(186309),	-- Mawsworn Missive Scrap (QI!)
+								i(186300),	-- Mawsworn Ritual Book (QI!)
+							},
 						}),
 						q(63970, {	-- No Soul Left Behind
 							["provider"] = { "n", 178884 },	-- Thiernax
@@ -569,14 +592,23 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63971, {	-- Snail Stomping
 							["provider"] = { "n", 178885 },	-- Lady Moonberry
 							["coord"] = { 22.7, 43.7, THE_MAW },
+							["g"] = {
+								i(186199),	-- Lady Moonberry's Wand (QI!)
+							},
 						}),
 						q(63974, {	-- That's Going to Sting
 							["provider"] = { "n", 179065 },	-- Niya
 							["coord"] = { 22.2, 43.6, THE_MAW },
+							["g"] = {
+								i(186569),	-- Angry Needler Nest (QI!)
+							},
 						}),
 						q(63945, {	-- The Soul Blade
 							["provider"] = { "n", 178690 },	-- Bonesmith Heirmir
 							["coord"] = { 22.2, 43.5, THE_MAW },
+							["g"] = {
+								i(186097),	-- Heirmir's Runeblade (QI!)
+							},
 						}),
 					})),
 					header(HEADERS.Spell, 354778, {	-- The Rift
@@ -785,18 +817,32 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63842, {	-- That's a Good Trick
 							["provider"] = { "n", 178172 },	-- Lady Moonberry
 							["coord"] = { 29.9, 17.1, THE_MAW },
+							["g"] = {
+								i(186102),	-- Lady Moonberry's Wand (QI!)
+							},
 						}),
 						q(63841, {	-- The Skyhunt
 							["provider"] = { "n", 178180 },	-- Hunt-Captain Korayn
 							["coord"] = { 29.3, 18.1, THE_MAW },
+							["g"] = {
+								i(185949),	-- Korayn's Spear (QI!)
+							},
 						}),
 						q(63840, {	-- They Grow Up So Quickly
 							["provider"] = { "n", 178179 },	-- Niya
 							["coord"] = { 29.5, 18.0, THE_MAW },
+							["g"] = {
+								i(186089),	-- Niya's Staff (QI!)
+							},
 						}),
 						q(63834, {	-- Weapons of the Tremaculum
 							["provider"] = { "n", 178066 },	-- General Draven
 							["coord"] = { 30.0, 17.1, THE_MAW },
+							["g"] = {
+								i(185912),	-- Ghastly Crown (QI!)
+								i(185911),	-- Mawsworn Weapon (QI!)
+								i(185913),	-- Shade Eyes (QI!)
+							},
 						}),
 						q(63835, {	-- Wrath of the Party Herald
 							["provider"] = { "n", 178078 },	-- The Curator
