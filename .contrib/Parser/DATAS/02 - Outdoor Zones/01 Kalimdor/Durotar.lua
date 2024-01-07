@@ -1278,6 +1278,36 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(2125),	-- Cracked Leather Gloves
 							},
 						})),
+						applyclassicphase(SOD_PHASE_ONE, q(77585, {	-- Icons of Power [Orc]
+							["qg"] = 3157,	-- Shikrik <Shaman Trainer>
+							["coord"] = { 42.4, 69, DUROTAR },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { SHAMAN },
+							["races"] = { ORC },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Chest - Overload
+									["provider"] = { "i", 206381 },	-- Dyadic Icon
+								}),
+								recipe(410094),	-- Engrave Chest - Overload
+								i(2127),	-- Cracked Leather Vest
+							},
+						})),
+						applyclassicphase(SOD_PHASE_ONE, q(77587, {	-- Icons of Power [Troll]
+							["qg"] = 3157,	-- Shikrik <Shaman Trainer>
+							["coord"] = { 42.4, 69, DUROTAR },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { SHAMAN },
+							["races"] = { TROLL },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Chest - Overload
+									["provider"] = { "i", 206381 },	-- Dyadic Icon
+								}),
+								recipe(410094),	-- Engrave Chest - Overload
+								i(2127),	-- Cracked Leather Vest
+							},
+						})),
 						-- #endif
 						q(25172, {	-- Invaders In Our Home
 							["qg"] = 3143,	-- Gornek
@@ -1761,6 +1791,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})),
 					}),
 					n(ZONE_DROPS, {
+						applyclassicphase(SOD_PHASE_ONE, i(206381, {	-- Dyadic Icon
+							["coord"] = { 40.8, 64.0, DUROTAR },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { SHAMAN },
+							["cr"] = 3124,	-- Scorpid Worker
+						})),
 						applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
 							["description"] = "This can also drop from any of the rare mobs in the zone.",
 							["coord"] = { 40.6, 67.7, DUROTAR },

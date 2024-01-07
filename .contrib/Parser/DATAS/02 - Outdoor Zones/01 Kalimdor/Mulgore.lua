@@ -231,6 +231,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["classes"] = { PRIEST },
 						}),
 						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77652, {	-- Icons of Power
+							["qg"] = 3062,	-- Meela Dawnstrider <Shaman Trainer>
+							["coord"] = { 45, 76, MULGORE },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { SHAMAN },
+							["races"] = { TAUREN },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Chest - Overload
+									["provider"] = { "i", 206381 },	-- Dyadic Icon
+								}),
+								recipe(410094),	-- Engrave Chest - Overload
+								i(2127),	-- Cracked Leather Vest
+							},
+						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77651, {	-- Into the Brambles
 							["qg"] = 3059,	-- Harutt Thunderhorn <Warrior Trainer>
 							["coord"] = { 44, 76, MULGORE },
@@ -240,11 +255,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["lvl"] = 2,
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
-									["providers"] = {
-										{ "i", 204806 },	-- Rune of Victory Rush
-										{ "o", 403102 },	-- Bristleback Loot Cache
-									},
-									["coord"] = { 61.6, 76.0, MULGORE },
+									["provider"] = { "i", 204806 },	-- Rune of Victory Rush
 								}),
 								recipe(403470),	-- Engrave Gloves - Victory Rush
 								i(2385),	-- Tarnished Chain Gloves
@@ -276,6 +287,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77648, {	-- Relics of the Tauren
+							["qg"] = 3060,	-- Gart Mistrunner <Druid Trainer>
+							["coord"] = { 45.0, 76.0, MULGORE },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { DRUID },
+							["races"] = { TAUREN },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Chest - Fury of Stormrage
+									["provider"] = { "i", 208414 },	-- Lunar Idol
+								}),
+								recipe(410061),	-- Engrave Chest - Fury of Stormrage
+								i(2127),	-- Cracked Leather Vest
+							},
+						})),
+						-- #endif
 						q(14456, {	-- Rite of Courage
 							["qg"] = 36694,	-- Adana Thunderhorn
 							["sourceQuest"] = 14458,	-- Go To Adana
@@ -573,6 +601,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["classes"] = { DRUID },
 						}),
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					n(TREASURES, {
+						applyclassicphase(SOD_PHASE_ONE, o(403102, {	-- Bristleback Loot Cache
+							["coord"] = { 61.6, 76.0, MULGORE },
+							["timeline"] = { "removed 2.0.1" },
+							["groups"] = {
+								i(208414, {	-- Lunar Idol
+									["classes"] = { DRUID },
+								}),
+								i(204806, {	-- Rune of Victory Rush
+									["classes"] = { WARRIOR },
+								}),
+							},
+						})),
+					}),
+					-- #endif
 					n(ZONE_DROPS, {
 						i(1388, {	-- Crooked Staff
 							["timeline"] = { "removed 4.0.3" },
@@ -585,6 +629,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 2952,	-- Bristleback Quilboar
 							-- #endif
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(206381, {	-- Dyadic Icon
+							["coord"] = { 63.8, 81.0, MULGORE },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { SHAMAN },
+							["cr"] = 2953,	-- Bristleback Shaman
+						})),
+						-- #endif
 						i(4951, {	-- Squealer's Belt
 							["timeline"] = { "removed 4.0.3" },
 							["cr"] = 3229,	-- "Squealer" Thornmantle

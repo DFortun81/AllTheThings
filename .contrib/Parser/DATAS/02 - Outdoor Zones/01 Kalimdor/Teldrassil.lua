@@ -358,6 +358,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["races"] = ALLIANCE_ONLY,
 						}),
 						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77571, {	-- Relics of the Kaldorei
+							["qg"] = 3597,	-- Mardant Strongoak <Druid Trainer>
+							["coord"] = { 58.6, 40.4, TELDRASSIL },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { DRUID },
+							["races"] = { NIGHTELF },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Chest - Fury of Stormrage
+									["provider"] = { "i", 208414 },	-- Lunar Idol
+									["cr"] = 1989,	-- Grellkin
+								}),
+								recipe(410061),	-- Engrave Chest - Fury of Stormrage
+								i(2127),	-- Cracked Leather Vest
+							},
+						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77573, {	-- Second-Story Work
 							["qg"] = 3594,	-- Frahun Shadewhisper <Rogue Trainer>
 							["coord"] = { 59.6, 38.6, TELDRASSIL },
