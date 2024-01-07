@@ -1260,6 +1260,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210487, {	-- Horror of the Deep
+					["providers"] = {
+						{ "o", 408799 },	-- Idol of the Deep
+						{ "i", 209045 },	-- Soul of the Sea
+					},
+					["coord"] = { 26.0, 69.5, WESTFALL },
+					["classes"] = { WARRIOR, WARLOCK },
+					["groups"] = {
+						i(208778, {	-- Rune of Quick Strike
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425443),	-- Engrave Gloves - Quick Strike
+							},
+						}),
+						i(208744, {	-- Rune of Shadowbolts
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(572, {	-- Leprithus
 					-- #if AFTER CATA
 					["coord"] = { 41.7, 29.3, WESTFALL },
@@ -1410,30 +1434,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			n(TREASURES, {
-				applyclassicphase(SOD_PHASE_ONE, o(408799, {	-- Idol of the Deep
-					["coord"] = { 26.0, 69.5, WESTFALL },
-					["cost"] = {{ "i", 209045, 1 }},	-- Soul of the Sea
-					["classes"] = { WARRIOR, WARLOCK },
-					["cr"] = 210487,	-- Horror of the Deep
-					["groups"] = {
-						i(208778, {	-- Rune of Quick Strike
-							["classes"] = { WARRIOR },
-							["groups"] = {
-								recipe(425443),	-- Engrave Gloves - Quick Strike
-							},
-						}),
-						i(208744, {	-- Rune of Shadowbolts
-							["classes"] = { WARLOCK },
-							["groups"] = {
-								recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
-							},
-						}),
-					},
-				})),
-			}),
-			-- #endif
 			-- #if AFTER 9.0.2
 			n(TREASURES, {
 				o(357515, sharedDataSelf({ ["timeline"] = { ADDED_9_0_2 } }, {	-- Sack of Oats
