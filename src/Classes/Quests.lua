@@ -1615,7 +1615,10 @@ local softRefresh = function()
 	wipe(app.searchCache);
 end;
 app.events.BAG_NEW_ITEMS_UPDATED = softRefresh;
-app.events.CRITERIA_UPDATE = softRefresh;
+if app.IsClassic then
+	-- Way too spammy to be used without a Callback or combat protection
+	app.events.CRITERIA_UPDATE = softRefresh;
+end
 app.events.QUEST_REMOVED = softRefresh;
 app.events.QUEST_WATCH_UPDATE = softRefresh;
 app.events.QUEST_ACCEPTED = function(questLogIndex, questID)
