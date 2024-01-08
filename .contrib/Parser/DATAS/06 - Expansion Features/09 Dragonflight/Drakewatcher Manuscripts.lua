@@ -962,7 +962,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203314),	-- Winding Slitherdrake: Curved Chin Horn (DM!)
 			i(203335),	-- Winding Slitherdrake: Curved Horns (DM!)
 			i(203320),	-- Winding Slitherdrake: Ears (DM!)
-			pvp(i(205865)),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator (DM!)
+			pvp(i(205865, {["timeline"] = { REMOVED_10_2_0 }})),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator (DM!)
 			i(203361),	-- Winding Slitherdrake: Finned Tip Tail (DM!)
 			i(203310),	-- Winding Slitherdrake: Grand Chin Thorn (DM!)
 			i(203299),	-- Winding Slitherdrake: Green and Bronze Armor (DM!)
