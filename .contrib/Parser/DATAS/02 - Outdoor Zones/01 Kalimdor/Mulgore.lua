@@ -1922,6 +1922,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2989,	-- Bael'dun Digger
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(206954, {	-- Idol of Ursine Rage
+					["coord"] = { 53.2, 29.6, MULGORE },
+					["classes"] = { DRUID },
+					["crs"] = {
+						2979,	-- Venture Co. Supervisor
+						3232,	-- Bristleback Interloper
+						2964,	-- Windfury Sorceress
+						2971,	-- Taloned Swoop
+						2960,	-- Prairie Wolf Alpha
+						3566,	-- Flatland Prowler
+						2965,	-- Windfury Matriarch
+					},
+					["groups"] = {
+						recipe(410025),	-- Engrave Gloves - Mangle
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205961, {	-- Mulgore Bird Meat
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { HUNTER },

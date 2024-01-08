@@ -2178,6 +2178,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.4, 24.6, TELDRASSIL },
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(206954, {	-- Idol of Ursine Rage
+					["coord"] = { 45.6, 59.6, TELDRASSIL },
+					["classes"] = { DRUID },
+					["cr"] = 7318,	-- Rageclaw
+					["groups"] = {
+						recipe(410025),	-- Engrave Gloves - Mangle
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205945, {	-- Memory of an Imprisoned Savior
 					["coord"] = { 51.6, 51.6, TELDRASSIL },
 					["classes"] = { PRIEST },
