@@ -1919,6 +1919,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							3112,	-- Razormane Scout
 						},
 					})),
+					applyclassicphase(SOD_PHASE_ONE, i(207098, {	-- Note from Ba'so
+						["coord"] = { 53.0, 27.6, DUROTAR },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							3196,	-- Burning Blade Neophyte
+							3195,	-- Burning Blade Thug
+							3199,	-- Burning Blade Cultist
+							3197,	-- Burning Blade Fanatic
+							3198,	-- Burning Blade Apprentice
+						},
+					})),
 					applyclassicphase(SOD_PHASE_ONE, i(207108, {	-- Top-Left Map Piece
 						["coord"] = { 53.0, 27.6, DUROTAR },
 						["timeline"] = { "removed 2.0.1" },
@@ -3749,6 +3761,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #endif
 			n(VENDORS, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(208036, {	-- Ba'so
+					["coord"] = { 52.0, 58.4, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(203990, {	-- Rune of Mutilation
+							["cost"] = {{ "i", 207098, 1 }},	-- Note from Ba'so
+							["classes"] = { ROGUE },
+							["groups"] = {
+								recipe(400094),	-- Engrave Gloves - Mutilate
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(3881, {	-- Grimtak
 					-- #if AFTER CATA
 					["coord"] = { 50.8, 42.8, DUROTAR },

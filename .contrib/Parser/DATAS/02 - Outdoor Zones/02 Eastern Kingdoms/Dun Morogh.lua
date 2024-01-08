@@ -1513,6 +1513,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			spell(921, {	-- Pickpocketing
 				["classes"] = { ROGUE },
 				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(208205, {	-- Blackrat's Note
+						["coord"] = { 78.2, 59.8, DUN_MOROGH },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cr"] = 6123,	-- Dark Iron Spy
+					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208220, {	-- Dun Morogh Treasure Map
 						["timeline"] = { "removed 2.0.1" },
 						["classes"] = { ROGUE },
@@ -3180,6 +3186,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			n(VENDORS, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(208886, {	-- Blackrat
+					["coord"] = { 57.2, 45.2, DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(203990, {	-- Rune of Mutilation
+							["cost"] = {{ "i", 208205, 1 }},	-- Blackrat's Note
+							["classes"] = { ROGUE },
+							["groups"] = {
+								recipe(400094),	-- Engrave Gloves - Mutilate
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(8508, {	-- Gretta Ganter <Fisherman Supplies>
 					-- #if AFTER CATA
 					["coord"] = { 51.6, 50.0, NEW_TINKERTOWN },

@@ -2194,6 +2194,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(410123),	-- Engrave Gloves - Explosive Shot
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203990, {	-- Rune of Mutilation
+					["coord"] = { 51.6, 51.6, TELDRASSIL },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["cr"] = 2038,	-- Lord Melenas
+					["groups"] = {
+						recipe(400094),	-- Engrave Gloves - Mutilate
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208610, {	-- Severed Owl Head
 					["coord"] = { 40.6, 53.6, TELDRASSIL },
 					["timeline"] = { "removed 2.0.1" },

@@ -1413,6 +1413,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			spell(921, {	-- Pickpocketing
 				["classes"] = { ROGUE },
 				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(203723, {	-- Cutty's Note
+						["coords"] = {
+							{ 57.4, 48.6, ELWYNN_FOREST },
+							{ 71.0, 80.6, ELWYNN_FOREST },
+						},
+						["timeline"] = { "removed 2.0.1" },
+						["maps"] = { NORTHSHIRE_VALLEY },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							103,	-- Garrick Padfoot
+							473,	-- Morgan the Collector
+						},
+					})),
 					applyclassicphase(SOD_PHASE_ONE, i(203750, {	-- Elwynn Treasure Map
 						["timeline"] = { "removed 2.0.1" },
 						["classes"] = { ROGUE },
@@ -2600,6 +2613,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(1939),	-- Skin of Sweet Rum
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(201854, {	-- Cutty
+					["coord"] = { 49.8, 52.0, ELWYNN_FOREST },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(203990, {	-- Rune of Mutilation
+							["cost"] = {{ "i", 203723, 1 }},	-- Cutty's Note
+							["classes"] = { ROGUE },
+							["groups"] = {
+								recipe(400094),	-- Engrave Gloves - Mutilate
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(6367, {	-- Donni Anthania <Crazy Cat Lady>
 					["coord"] = { 44.2, 53.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,

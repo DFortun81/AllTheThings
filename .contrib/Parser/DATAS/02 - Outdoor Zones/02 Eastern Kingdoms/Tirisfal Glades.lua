@@ -886,6 +886,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			spell(921, {	-- Pickpocketing
 				["classes"] = { ROGUE },
 				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(208085, {	-- Scarlet Lieutenant Signet Ring
+						["coords"] = {
+							{ 51.8, 67.4, TIRISFAL_GLADES },
+							{ 79, 26, TIRISFAL_GLADES },
+						},
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							1662,	-- Captain Perrine
+							1665,	-- Captain Melrache
+						},
+					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208034, {	-- Tirisfal Treasure Map
 						["timeline"] = { "removed 2.0.1" },
 						["classes"] = { ROGUE },
@@ -2498,6 +2510,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				n(2310, {	-- Jamie Nore
+					["coord"] = { 60.8, 50.4, TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						applyclassicphase(SOD_PHASE_ONE, i(203990, {	-- Rune of Mutilation
+							["cost"] = {{ "i", 208086, 1 }},	-- Forged Scarlet Memorandum
+							["classes"] = { ROGUE },
+							["groups"] = {
+								recipe(400094),	-- Engrave Gloves - Mutilate
+							},
+						})),
+					},
+				}),
+				-- #endif
 				n(3550, {	-- Martine Tramblay <Fishing Supplies>
 					["coord"] = { 65.8, 59.6, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
