@@ -2183,6 +2183,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DEMONHUNTER },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78194, {	-- Secrets of Elune (1/2)
+					["qg"] = 11397,	-- Nara Meideros <Priest Trainer>
+					["coord"] = { 20.8, 50.2, STORMWIND_CITY },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { DUSKWOOD },
+					["classes"] = { PRIEST },
+					["races"] = { DWARF, HUMAN },
+					["lvl"] = 17,
+					["groups"] = {
+						objective(1, {	-- 0/10 Dire Wolf Paw
+							["provider"] = { "i", 210053 },	-- Dire Wolf Paw
+							["coord"] = { 67.2, 27.2, DUSKWOOD },
+							["crs"] = {
+								565,	-- Rabid Dire Wolf
+								213,	-- Starving Dire Wolf
+								628,	-- Black Ravager
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78195, {	-- Secrets of Elune (2/2)
+					["providers"] = {
+						{ "n", 11397 },	-- Nara Meideros <Priest Trainer>
+						--{ "i",  },	-- 
+					},
+					["sourceQuest"] = 78194,	-- Secrets of Elune (1/2)
+					["coord"] = { 20.8, 50.2, STORMWIND_CITY },
+					["description"] = "Completing this quest will allow you to meditate in the same manner as the night elves.",
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { DARKSHORE },
+					["classes"] = { PRIEST },
+					["races"] = { DWARF, HUMAN },
+					["lvl"] = 17,
+					["groups"] = {
+						recipe(424036, {	-- Secrets of Elune
+							["classes"] = { PRIEST },
+						}),
+					},
+				})),
+				-- #endif
 				q(393, {	-- Shadow of the Past
 					["providers"] = {
 						{ "n", 1646 },	-- Baros Alexston <City Architect>

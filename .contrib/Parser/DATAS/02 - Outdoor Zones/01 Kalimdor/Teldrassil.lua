@@ -678,6 +678,72 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(208605, {	-- Teldrassil Treasure Map
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cost"] = {
+							{ "i", 208604, 1 },	-- Bottom-Left Map Piece
+							{ "i", 208603, 1 },	-- Bottom-Right Map Piece
+							{ "i", 208602, 1 },	-- Top-Left Map Piece
+							{ "i", 208601, 1 },	-- Top-Right Map Piece
+						},
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208604, {	-- Bottom-Left Map Piece
+						["coord"] = { 52.6, 49.6, TELDRASSIL },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							2005,	-- Vicious Grell
+							2002,	-- Rascal Sprite
+							2004,	-- Dark Sprite
+							2003,	-- Shadow Sprite
+						},
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208603, {	-- Bottom-Right Map Piece
+						["coord"] = { 36.8, 37.6, TELDRASSIL },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							2019,	-- Bloodfeather Fury
+							2021,	-- Bloodfeather Matriarch
+							2015,	-- Bloodfeather Harpy
+							2020,	-- Bloodfeather Wind Witch
+							2018,	-- Bloodfeather Sorceress
+							2017,	-- Bloodfeather Rogue
+						},
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208602, {	-- Top-Left Map Piece
+						["coord"] = { 46.6, 52.4, TELDRASSIL },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							2010,	-- Gnarlpine Defender
+							2152,	-- Gnarlpine Ambusher
+							2009,	-- Gnarlpine Shaman
+							2011,	-- Gnarlpine Augur
+							2013,	-- Gnarlpine Avenger
+							2012,	-- Gnarlpine Pathfinder
+						},
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208601, {	-- Top-Right Map Piece
+						["coord"] = { 60.0, 64.4, TELDRASSIL },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							2022,	-- Timberling
+							2027,	-- Timberling Trampler
+							2029,	-- Timberling Mire Beast
+							2030,	-- Elder Timberling
+							2025,	-- Timberling Bark Ripper
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(475, {	-- A Troubling Breeze
 					["qg"] = 2078,	-- Athridas Bearmantle
@@ -2016,6 +2082,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
 							},
 						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
+					["provider"] = { "o", 386675 },	-- Buried Treasure
+					["coord"] = { 55.3, 90.8, TELDRASSIL },
+					["cost"] = {{ "i", 208605, 1 }},	-- Teldrassil Treasure Map
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400095),	-- Engrave Chest - Quick Draw
 					},
 				})),
 			}),

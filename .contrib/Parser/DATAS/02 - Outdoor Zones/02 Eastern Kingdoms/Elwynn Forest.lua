@@ -1409,6 +1409,56 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(203750, {	-- Elwynn Treasure Map
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cost"] = {
+							{ "i", 203787, 1 },	-- Bottom-Left Map Piece
+							{ "i", 203786, 1 },	-- Bottom-Right Map Piece
+							{ "i", 203785, 1 },	-- Top-Left Map Piece
+							{ "i", 203784, 1 },	-- Top-Right Map Piece
+						},
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(203787, {	-- Bottom-Left Map Piece
+						["coord"] = { 26.2, 88.6, ELWYNN_FOREST },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cr"] = 478,	-- Riverpaw Outrunner
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(203786, {	-- Bottom-Right Map Piece
+						["coord"] = { 79.2, 57.4, ELWYNN_FOREST },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cr"] = 46,	-- Murloc Forager
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(203785, {	-- Top-Left Map Piece
+						["coord"] = { 68.8, 78.6, ELWYNN_FOREST },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							6866,	-- Defias Bodyguard
+							116,	-- Defias Bandit
+							 38,	-- Defias Thug
+							474,	-- Defias Rogue Wizard
+						},
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(203784, {	-- Top-Right Map Piece
+						["coord"] = { 39.3, 80.4, ELWYNN_FOREST },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							 40,	-- Kobold Miner
+							475,	-- Kobold Tunneler
+							257,	-- Kobold Worker
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(5545, {	-- A Bundle of Trouble
 					["qg"] = 10616,	-- Supervisor Raelen
@@ -2453,16 +2503,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 386759 },	-- Library Book
 					["coord"] = { 65.4, 70.1, ELWYNN_FOREST },
 				})),
-				applyclassicphase(SOD_PHASE_ONE, o(387466, {	-- Rusty Lockbox
+				applyclassicphase(SOD_PHASE_ONE, i(203993, {	-- Rune of Slaughter
+					["provider"] = { "o", 387466 },	-- Rusty Lockbox
 					["coord"] = { 46.2, 62.1, ELWYNN_FOREST },
 					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
 					["groups"] = {
-						i(203993, {	-- Rune of Slaughter
-							["classes"] = { ROGUE },
-							["groups"] = {
-								recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
-							},
-						}),
+						recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
+					["provider"] = { "o", 386675 },	-- Buried Treasure
+					["coord"] = { 80.3, 79.1, ELWYNN_FOREST },
+					["cost"] = {{ "i", 203750, 1 }},	-- Elwynn Treasure Map
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400095),	-- Engrave Chest - Quick Draw
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, n(204989, {	-- Wounded Adventurer

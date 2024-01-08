@@ -882,6 +882,65 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(208034, {	-- Tirisfal Treasure Map
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cost"] = {
+							{ "i", 208038, 1 },	-- Bottom-Left Map Piece
+							{ "i", 208037, 1 },	-- Bottom-Right Map Piece
+							{ "i", 208036, 1 },	-- Top-Left Map Piece
+							{ "i", 208035, 1 },	-- Top-Right Map Piece
+						},
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208038, {	-- Bottom-Left Map Piece
+						["coord"] = { 56.6, 44.4, TIRISFAL_GLADES },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							1941,	-- Rot Hide Graverobber
+							1675,	-- Rot Hide Mongrel
+							1674,	-- Rot Hide Gnoll
+						},
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208037, {	-- Bottom-Right Map Piece
+						["coord"] = { 35.8, 43.4, TIRISFAL_GLADES },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							1545,	-- Vile Fin Muckdweller
+							1543,	-- Vile Fin Puddlejumper
+							1544,	-- Vile Fin Minor Oracle
+						},
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208036, {	-- Top-Left Map Piece
+						["coord"] = { 37.4, 49.2, TIRISFAL_GLADES },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							1935,	-- Tirisfal Farmhand
+							1934,	-- Tirisfal Farmer
+						},
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208035, {	-- Top-Right Map Piece
+						["coord"] = { 32.8, 50.4, TIRISFAL_GLADES },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							1535,	-- Scarlet Warrior
+							1536,	-- Scarlet Missionary
+							1538,	-- Scarlet Friar
+							1540,	-- Scarlet Vanguard
+							1537,	-- Scarlet Zealot
+							1539,	-- Scarlet Neophyte
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(25046, {	-- A Daughter's Embrace
 					["qg"] = 13158,	-- Lieutenant Sanders
@@ -2317,6 +2376,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
+					["provider"] = { "o", 386675 },	-- Buried Treasure
+					["coord"] = { 52.9, 54.0, TIRISFAL_GLADES },
+					["cost"] = {{ "i", 208034, 1 }},	-- Tirisfal Treasure Map
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400095),	-- Engrave Chest - Quick Draw
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208185, {	-- The Apothecary's Metaphysical Primer

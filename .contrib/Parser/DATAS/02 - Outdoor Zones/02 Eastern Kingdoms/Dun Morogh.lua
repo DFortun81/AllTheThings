@@ -1509,6 +1509,61 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(208220, {	-- Dun Morogh Treasure Map
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cost"] = {
+							{ "i", 208219, 1 },	-- Bottom-Left Map Piece
+							{ "i", 208218, 1 },	-- Bottom-Right Map Piece
+							{ "i", 208215, 1 },	-- Top-Left Map Piece
+							{ "i", 208213, 1 },	-- Top-Right Map Piece
+						},
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208219, {	-- Bottom-Left Map Piece
+						["coord"] = { 78.2, 59.8, DUN_MOROGH },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cr"] = 6123,	-- Dark Iron Spy
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208218, {	-- Bottom-Right Map Piece
+						["coord"] = { 26.0, 41.8, DUN_MOROGH },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cr"] = 1211,	-- Leper Gnome
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208215, {	-- Top-Left Map Piece
+						["coord"] = { 69.8, 59.0, DUN_MOROGH },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							1116,	-- Rockjaw Ambusher
+							1718,	-- Rockjaw Raider
+							724,	-- Burly Rockjaw Trogg
+							707,	-- Rockjaw Trogg
+							1115,	-- Rockjaw Skullthumper
+						},
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208213, {	-- Top-Right Map Piece
+						["coord"] = { 23.4, 53.8, DUN_MOROGH },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							1124,	-- Frostmane Shadowcaster
+							1122,	-- Frostmane Hideskinner
+							946,	-- Frostmane Novice
+							1397,	-- Frostmane Seer
+							706,	-- Frostmane Troll Whelp
+							1123,	-- Frostmane Headhunter
+							1121,	-- Frostmane Snowstrider
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(319, {	-- A Favor for Evershine
 					["qg"] = 1374,	-- Rejold Barleybrew
@@ -3089,16 +3144,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
-				applyclassicphase(SOD_PHASE_ONE, o(387466, {	-- Rusty Lockbox
+				applyclassicphase(SOD_PHASE_ONE, i(203993, {	-- Rune of Slaughter
+					["provider"] = { "o", 387466 },	-- Rusty Lockbox
 					["coord"] = { 47.0, 52.0, DUN_MOROGH },
 					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
 					["groups"] = {
-						i(203993, {	-- Rune of Slaughter
-							["classes"] = { ROGUE },
-							["groups"] = {
-								recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
-							},
-						}),
+						recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
+					["provider"] = { "o", 386675 },	-- Buried Treasure
+					["coord"] = { 46.96, 43.73, DUN_MOROGH },
+					["cost"] = {{ "i", 208220, 1 }},	-- Dun Morogh Treasure Map
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400095),	-- Engrave Chest - Quick Draw
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, n(208802, {	-- Wounded Adventurer
