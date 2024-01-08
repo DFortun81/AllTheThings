@@ -3834,6 +3834,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209524, {	-- Patrolling Cheetah
+					["description"] = "Drop a trap in its path to remove its speed buff.",
+					["coord"] = { 44.4, 55.4, THE_BARRENS },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(208701, {	-- Rune of Beast Mastery
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410110),	-- Engrave Gloves - Beast Mastery
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(3470, {	-- Rathorian
 					-- #if AFTER CATA
 					["coord"] = { 41.6, 39.6, NORTHERN_BARRENS },

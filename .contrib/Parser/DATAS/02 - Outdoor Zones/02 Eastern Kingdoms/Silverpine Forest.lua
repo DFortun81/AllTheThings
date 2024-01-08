@@ -1467,6 +1467,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(211736, {	-- Grizzled Protector
+					["description"] = "Kill Ferocious Grizzled Bears until the protector appears.",
+					["classes"] = { HUNTER },
+					["crs"] = { 1778 },	-- Ferocious Grizzled Bear
+					["groups"] = {
+						i(208701, {	-- Rune of Beast Mastery
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410110),	-- Engrave Gloves - Beast Mastery
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(50330, {	-- Kree
 					["coord"] = { 60.8, 6.4, SILVERPINE_FOREST },
 					["timeline"] = { "added 5.1.0.16309" },

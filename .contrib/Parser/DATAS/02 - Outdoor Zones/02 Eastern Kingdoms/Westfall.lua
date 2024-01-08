@@ -1365,6 +1365,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210533, {	-- Silverspur
+					["coord"] = { 32.8, 35.9, WESTFALL },
+					["cost"] = {{ "i", 209059, 1 }},	-- Goretusk Haunch
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(208701, {	-- Rune of Beast Mastery
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410110),	-- Engrave Gloves - Beast Mastery
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(519, {	-- Slark
 					-- #if AFTER CATA
 					["coords"] = {
@@ -1726,6 +1741,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						590,	-- Defias Looter
 						589,	-- Defias Pillager
 						121,	-- Defias Pathstalker
+					},
+				})),
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209059, {	-- Goretusk Haunch
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["crs"] = {
+						454,	-- Young Goretusk
+						157,	-- Goretusk
 					},
 				})),
 				-- #endif

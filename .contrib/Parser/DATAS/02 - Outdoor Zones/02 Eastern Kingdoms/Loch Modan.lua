@@ -1714,6 +1714,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 408014 },	-- Gnomish Tome
 					["coord"] = { 35.6, 48.9, LOCH_MODAN },
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208701, {	-- Rune of Beast Mastery
+					["provider"] = { "o", 407918 },	-- Empty Trophy Display
+					["coord"] = { 83.6, 65.5, LOCH_MODAN },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						recipe(410110),	-- Engrave Gloves - Beast Mastery
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209850, {	-- Runes of the Sorcerer-Kings
 					["provider"] = { "o", 409731 },	-- Scrolls
 					["coord"] = { 77.5, 14.1, LOCH_MODAN },

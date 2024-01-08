@@ -2600,6 +2600,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 409496 },	-- Scrolls
 					["coord"] = { 59.6, 22.2, DARKSHORE },
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208701, {	-- Rune of Beast Mastery
+					["providers"] = {
+						{ "n",   2234 },	-- Young Reef Crawler
+						{ "i", 209027 },	-- Crab Treats
+					},
+					["description"] = "Use Crab Treats on a young reef crawler to receive this rune.",
+					["coord"] = { 36.4, 54.2, DARKSHORE },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						recipe(410110),	-- Engrave Gloves - Beast Mastery
+					},
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {
@@ -2680,6 +2692,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2165,	-- Grizzled Thistle Bear
 					},
 				}),
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209027, {	-- Crab Treats
+					["coord"] = { 39.8, 54.6, DARKSHORE },
+					["classes"] = { HUNTER },
+					["crs"] = {
+						2167,	-- Blackwood Pathfinder
+						2324,	-- Blackwood Windtalker
+						2171,	-- Blackwood Shaman
+						2168,	-- Blackwood Warrior
+						2169,	-- Blackwood Totemic
+						2170,	-- Blackwood Ursa
+					},
+				})),
 				-- #endif
 				i(5332, {	-- Glowing Cat Figurine
 					["cr"] = 3619,	-- Ghost Saber
