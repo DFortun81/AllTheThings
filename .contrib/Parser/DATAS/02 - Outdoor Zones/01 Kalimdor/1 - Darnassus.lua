@@ -574,6 +574,43 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78192, {	-- Secrets of the Light (1/2)
+					["qg"] = 211188,	-- Maethra Slagheart
+					["coord"] = { 38.2, 89.2, DARNASSUS },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { ASHENVALE },
+					["classes"] = { PRIEST },
+					["races"] = { NIGHTELF },
+					["lvl"] = 17,
+					["groups"] = {
+						objective(1, {	-- 0/7 Forsaken Herbalist slain
+							["provider"] = { "n", 3733 },	-- Forsaken Herbalist
+							["coord"] = { 32.0, 21.8, ASHENVALE },
+						}),
+						objective(2, {	-- 0/9 Forsaken Seeker slain
+							["provider"] = { "n", 3732 },	-- Forsaken Seeker
+							["coord"] = { 31.6, 23.8, ASHENVALE },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78193, {	-- Secrets of the Light (2/2)
+					["qg"] = 211188,	-- Maethra Slagheart
+					["sourceQuest"] = 78192,	-- Secrets of the Light (1/2)
+					["coord"] = { 38.2, 89.2, DARNASSUS },
+					["description"] = "Completing this quest will allow you to meditate in the same manner as the humans and dwarves.",
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { STORMWIND_CITY },
+					["classes"] = { PRIEST },
+					["races"] = { NIGHTELF },
+					["lvl"] = 17,
+					["groups"] = {
+						recipe(424035, {	-- Secrets of the Light
+							["classes"] = { PRIEST },
+						}),
+					},
+				})),
+				-- #endif
 				q(1692, {	-- Smith Mathiel
 					["providers"] = {
 						{ "n", 4088 },	-- Elanaria

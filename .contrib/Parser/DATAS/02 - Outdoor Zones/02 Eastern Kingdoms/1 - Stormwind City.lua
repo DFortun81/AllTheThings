@@ -2205,10 +2205,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, q(78195, {	-- Secrets of Elune (2/2)
-					["providers"] = {
-						{ "n", 11397 },	-- Nara Meideros <Priest Trainer>
-						--{ "i",  },	-- 
-					},
+					["qg"] = 11397,	-- Nara Meideros <Priest Trainer>
 					["sourceQuest"] = 78194,	-- Secrets of Elune (1/2)
 					["coord"] = { 20.8, 50.2, STORMWIND_CITY },
 					["description"] = "Completing this quest will allow you to meditate in the same manner as the night elves.",
