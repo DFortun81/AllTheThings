@@ -1185,6 +1185,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(RARES, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210483, {	-- Aggressive Squashling
+					["coords"] = {
+						{ 43.8, 33.4, WESTFALL },
+						{ 50.4, 19.8, WESTFALL },
+					},
+					["cost"] = {
+						{ "i", 209041, 1 },	-- Magic Pumpkin Seeds
+						{ "i", 209043, 1 },	-- Fertile Soil Sample
+						{ "i", 209042, 1 },	-- Fishy Bonemeal
+					},
+					["classes"] = { DRUID },
+					["groups"] = {
+						i(208687, {	-- Rune of Lacerate
+							["classes"] = { DRUID },
+							["groups"] = {
+								recipe(416049),	-- Engrave Gloves - Lacerate
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(520, {	-- Brack
 					-- #if AFTER CATA
 					["coord"] = { 28.8, 72.8, WESTFALL },
@@ -1739,6 +1761,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(410023),	-- Engrave Pants - Savage Roar
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209043, {	-- Fertile Soil Sample
+					["coord"] = { 45.6, 20.4, WESTFALL },
+					["classes"] = { DRUID },
+					["cr"] = 1236,	-- Kobold Digger
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209042, {	-- Fishy Bonemeal
+					["coord"] = { 50.0, 11.8, WESTFALL },
+					["classes"] = { DRUID },
+					["crs"] = {
+						831,	-- Sea Crawler
+						830,	-- Sand Crawler
+						1216,	-- Shore Crawler
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209420, {	-- Gillsbane
 					["description"] = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
 					["timeline"] = { "removed 2.0.1" },
@@ -1841,6 +1877,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209041, {	-- Magic Pumpkin Seeds
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { DRUID },
+					["coords"] = {
+						{ 48.6, 21.8, WESTFALL },
+						{ 47.6, 39.2, WESTFALL },
+						{ 36.6, 74.4, WESTFALL },
+						{ 37.6, 55.4, WESTFALL },
+						{ 44.6, 67.6, WESTFALL },
+						{ 51.6, 75.2, WESTFALL },
+					},
+					["crs"] = {
+						504,	-- Defias Trapper
+						 95,	-- Defias Smuggler
+						449,	-- Defias Knuckleduster
+						590,	-- Defias Looter
+						589,	-- Defias Pillager
+						121,	-- Defias Pathstalker
+					},
+				})),
+				-- #endif
 				i(732, {	-- Okra
 					["crs"] = {
 						573,	-- Foe Reaper 4000

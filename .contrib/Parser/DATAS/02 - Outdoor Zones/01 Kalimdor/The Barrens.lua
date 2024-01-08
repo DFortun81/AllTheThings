@@ -4031,6 +4031,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(208682, {	-- Abandoned Snapjaw Egg
+					["provider"] = { "o", 407117 },	-- Abandoned Snapjaw Nest
+					["coord"] = { 44, 22, THE_BARRENS },
+					["classes"] = { DRUID },
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209847, {	-- Arcanic Systems Manual
 					["provider"] = { "o", 409700 },	-- Manual
 					["coord"] = { 56.3, 8.8, THE_BARRENS },
@@ -4065,6 +4070,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { WARLOCK },
 					["groups"] = {
 						recipe(403932),	-- Engrave Chest - Master Channeler
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208687, {	-- Rune of Lacerate
+					["providers"] = {
+						{ "i", 208682 },	-- Abandoned Snapjaw Egg
+						{ "o", 407120 },	-- Empty Snapjaw Nest
+						{ "n", 209511 },	-- Oasis Snapjaw Hatchling
+					},
+					["description"] = "Bring the Abandoned Snapjaw Egg to an empty nest and interact with the hatchling afterward.",
+					["coord"] = { 48, 40, THE_BARRENS },
+					["classes"] = { DRUID },
+					["groups"] = {
+						recipe(416049),	-- Engrave Gloves - Lacerate
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208744, {	-- Rune of Shadowbolts

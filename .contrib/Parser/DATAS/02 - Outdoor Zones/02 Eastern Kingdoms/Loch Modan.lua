@@ -1738,6 +1738,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(410110),	-- Engrave Gloves - Beast Mastery
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208687, {	-- Rune of Lacerate
+					["providers"] = {
+						{ "n",   1224 },	-- Young Threshadon
+						{ "i", 208855 },	-- Rainbow Fin Albacore Chum
+					},
+					["description"] = "Use Rainbow Fin Albacore Chum on a young threshadon to receive this rune.",
+					["coord"] = { 44.8, 39.2, LOCH_MODAN },
+					["classes"] = { DRUID },
+					["groups"] = {
+						recipe(416049),	-- Engrave Gloves - Lacerate
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209850, {	-- Runes of the Sorcerer-Kings
 					["provider"] = { "o", 409731 },	-- Scrolls
 					["coord"] = { 77.5, 14.1, LOCH_MODAN },
@@ -1809,6 +1821,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 40.4, 39.4, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(208855, {	-- Rainbow Fin Albacore Chum
+							["classes"] = { DRUID },
+							["cost"] = 526,	-- 5s 26c
+						})),
+						-- #endif
 						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 						i(6329),	-- Recipe: Loch Frenzy Delight (RECIPE!)
 						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
