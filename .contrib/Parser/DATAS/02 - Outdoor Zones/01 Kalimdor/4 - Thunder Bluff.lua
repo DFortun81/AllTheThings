@@ -526,6 +526,78 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(67414),	-- Bag of Shiny Things
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(76156, {	-- Stalk With The Earthmother (1/3)
+					["providers"] = {
+						{ "n", 205729 },	-- Boarton Shadetotem <Rogue Trainer?>
+						{ "i", 206159 },	-- Venture Co Disguise
+					},
+					["coord"] = { 39.6, 65.6, THUNDER_BLUFF },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { MULGORE },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 6,
+					["groups"] = {
+						objective(1, {	-- 0/5 Seaforium Mining Charge
+							["providers"] = {
+								{ "i", 206157 },	-- Seaforium Mining Charge
+								{ "o", 403041 },	-- Blasting Supplies
+							},
+							["coord"] = { 61, 47, MULGORE },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(76160, {	-- Stalk With The Earthmother (2/3)
+					["qg"] = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
+					["sourceQuest"] = 76156,	-- Stalk With The Earthmother (1/3)
+					["coord"] = { 39.6, 65.6, THUNDER_BLUFF },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { MULGORE },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 6,
+					["groups"] = {
+						objective(1, {	-- 0/1 Pine Salve
+							["providers"] = {
+								{ "i", 206175 },	-- Pine Salve
+								{ "o", 403105 },	-- Windfury Cone
+							},
+							["cost"] = {
+								{ "i", 206176, 1 },	-- Mortar and Pestle
+								{ "i", 206170, 8 },	-- Windfury Cone
+							},
+							["coord"] = { 53.48, 9.37, MULGORE },
+						}),
+						i(206177),	-- Pine Nut Butter
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(76240, {	-- Stalk With The Earthmother (3/3)
+					["qg"] = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
+					["sourceQuest"] = 76160,	-- Stalk With The Earthmother (2/3)
+					["coord"] = { 39.6, 65.6, THUNDER_BLUFF },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 6,
+					["groups"] = {
+						objective(1, {	-- 0/1 Fish Chunks
+							["providers"] = {
+								{ "i", 206345 },	-- Fish Chunks
+								{ "i", 206344 },	-- Knife Set
+							},
+							["cost"] = {{ "i", 6291, 1 }},	-- Raw Brilliant Smallfish
+							["coord"] = { 53.48, 9.37, THUNDER_BLUFF },
+						}),
+						recipe(674, {	-- Dual Wield
+							["classes"] = { SHAMAN },
+						}),
+						recipe(410104, {	-- Engrave Gloves - Lava Lash
+							["classes"] = { SHAMAN },
+						}),
+					},
+				})),
+				-- #endif
 				q(1131, {	-- Steelsnap
 					["qg"] = 3441,	-- Melor Stonehoof
 					["sourceQuest"] = 1130,	-- Melor Sends Word
