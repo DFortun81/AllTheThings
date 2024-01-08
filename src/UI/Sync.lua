@@ -627,7 +627,6 @@ MESSAGE_HANDLERS.check = function(self, sender, content, responses)
 	local battleTag, isResponding = content[2], content[3];
 	if not battleTag then return false; end
 	if not LinkedCharacters[battleTag] then
-		app.print("ERROR WITH SYNC: BattleTag '" .. battleTag .. "' not linked!");
 		return false;
 	else
 		-- White list any future communications with this sender for the rest of the session.
@@ -671,7 +670,6 @@ MESSAGE_HANDLERS.link = function(self, sender, content, responses)
 	local battleTag = content[2];
 	if not battleTag then return false; end
 	if not LinkedCharacters[battleTag] then
-		app.print("ERROR WITH SYNC: BattleTag '" .. battleTag .. "' not linked!");
 		return false;
 	else
 		-- White list any future communications with this sender for the rest of the session.
