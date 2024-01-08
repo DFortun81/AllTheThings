@@ -132,11 +132,11 @@ root(ROOTS.Promotions, {
 			}),
 			mount(419567, {	-- Ginormous Grrloc (MOUNT!)
 				["description"] = "Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 8, 2024.",
-				["timeline"] = { "added 10.1.7.51886", "removed 10.2.5.99999" },
+				["timeline"] = { "added 10.1.7.51886", "removed 10.2.5.52610" },
 			}),
 			mount(400976, {	-- Gleaming Moonbeast (MOUNT!)
 				["description"] = "Obtained if you set up a 12-Month WoW Subscription. Promotion valid through January 8, 2024.",
-				["timeline"] = { "added 10.1.7.51886", "removed 10.2.5.99999" },
+				["timeline"] = { "added 10.1.7.51886", "removed 10.2.5.52610" },
 			}),
 			-- Season 3
 			pet(2623, {	-- Dottie (PET!)
