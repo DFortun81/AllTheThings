@@ -1679,7 +1679,6 @@ root(ROOTS.Unsorted, {
 				-- 10.1.0.49741
 				q(72943),	--
 				q(75054),	--
-				q(75388),	-- The Azure Vaults
 				q(75391),	-- Epilogue Scene (DNT) (spellID 406790)
 				--10.1.0.49890
 				q(75059),	--
