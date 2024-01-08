@@ -2075,6 +2075,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(5206, {	-- Bogling Root
 					["cr"] = 3569,	-- Bogling
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208607, {	-- Deer Musk
+					["coords"] = {
+						{ 45.8, 58.2, TELDRASSIL },
+						{ 39.8, 80.4, TELDRASSIL },
+						{ 42.4, 79.2, TELDRASSIL },
+						{ 47.2, 52.8, TELDRASSIL },
+						{ 38.4, 80.8, TELDRASSIL },
+					},
+					["classes"] = { HUNTER },
+					["crs"] = {
+						2011,	-- Gnarlpine Augur
+						2012,	-- Gnarlpine Pathfinder
+						2152,	-- Gnarlpine Ambusher
+						2014,	-- Gnarlpine Totemic
+						2013,	-- Gnarlpine Avenger
+						2010,	-- Gnarlpine Defender
+						2009,	-- Gnarlpine Shaman
+					},
+				})),
+				-- #endif
 				i(7094, {	-- Driftwood Branch
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					["cr"] = 2030,	-- Elder Timberling

@@ -3164,6 +3164,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(208711, {	-- Toby
+					["description"] = "Use the musk and tame a Rabbit and then bring it to Toby.",
+					["coord"] = { 63.6, 50.2, DUN_MOROGH },
+					["cost"] = {{ "i", 208180, 1 }},	-- Rabbit Musk
+					["crs"] = { 721 },	-- Rabbit
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(206032, {	-- Rune of Carve
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(425758),	-- Engrave Gloves - Carve
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(1261, {	-- Veron Amberstill <Ram Breeder>
 					-- #if AFTER CATA
 					["coord"] = { 70.6, 48.9, DUN_MOROGH },
@@ -3369,6 +3386,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1116,	-- Rockjaw Ambusher
 						1117,	-- Rockjaw Bonesnapper
 						1115,	-- Rockjaw Skullthumper
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208180, {	-- Rabbit Musk
+					["coords"] = {
+						{ 70.8, 56.0, DUN_MOROGH },
+						{ 68.8, 58.2, DUN_MOROGH },
+						{ 80.4, 57.2, DUN_MOROGH },
+					},
+					["classes"] = { HUNTER },
+					["crs"] = {
+						1115,	-- Rockjaw Skullthumper
+						1117,	-- Rockjaw Bonesnapper
+						1118,	-- Rockjaw Backbreaker
+						1116,	-- Rockjaw Ambusher
 					},
 				})),
 				-- #endif

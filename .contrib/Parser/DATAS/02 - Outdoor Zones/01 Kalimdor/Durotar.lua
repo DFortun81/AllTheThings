@@ -3718,6 +3718,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(208184, {	-- Razzil <Snake Charmer>
+					["description"] = "Use the pheromone and tame an adder and then bring it to Razzil.",
+					["coord"] = { 52.2, 44.0, DUROTAR },
+					["cost"] = {{ "i", 207631, 1 }},	-- Adder Pheromone
+					["crs"] = { 3300 },	-- Adder
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(206032, {	-- Rune of Carve
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(425758),	-- Engrave Gloves - Carve
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(5942, {	-- Zansoa <Fishing Supplies>
 					-- #if AFTER CATA
 					["coord"] = { 57.4, 77.0, DUROTAR },
@@ -3751,6 +3768,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if ANYCLASSIC
 			n(ZONE_DROPS, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(207631, {	-- Adder Pheromone
+					["coords"] = {
+						{ 43.2, 40.4, DUROTAR },
+						{ 39.6, 52.6, DUROTAR },
+						{ 50.6, 49.6, DUROTAR },
+						{ 38.6, 55.0, DUROTAR },
+					},
+					["classes"] = { HUNTER },
+					["crs"] = {
+						3114,	-- Razormane Battleguard
+						3111,	-- Razormane Quilboar
+						3113,	-- Razormane Dustrunner
+						3112,	-- Razormane Scout
+						5824,	-- Captain Flat Tusk <Captain of the Battleguard>
+						5826,	-- Geolord Mottle
+					},
+				})),
+				-- #endif
 				i(4882, {	-- Benedict's Key
 					["cr"] = 3192,	-- Lieutenant Benedict
 					["coord"] = { 59.6, 58.2, DUROTAR },

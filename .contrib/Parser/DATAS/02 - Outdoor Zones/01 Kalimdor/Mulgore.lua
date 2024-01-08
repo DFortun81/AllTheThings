@@ -1883,6 +1883,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(205635, {	-- Takoda Sunmane <Naturalist>
+					["description"] = "Use the musk and tame a prairie dog and then bring it to Takoda.",
+					["coord"] = { 46.2, 60.6, MULGORE },
+					["cost"] = {{ "i", 205995, 1 }},	-- Prairie Dog Musk
+					["crs"] = { 2620 },	-- Prairie Dog
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(206032, {	-- Rune of Carve
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(425758),	-- Engrave Gloves - Carve
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(3081, {	-- Wunna Darkmane <Trade Goods>
 					-- #if AFTER CATA
 					["coord"] = { 46.4, 57.8, MULGORE },
