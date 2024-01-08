@@ -1677,6 +1677,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 409717 },	-- Scrolls
 					["coord"] = { 33.6, 47.9, WETLANDS },
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210500, {	-- Rune of the Stars
+					["providers"] = {
+						{ "n", 212209 },	-- Vodyanoi
+						{ "i", 210499 },	-- Marshroom
+					},
+					["coord"] = { 31, 18, WETLANDS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { DRUID },
+					["groups"] = {
+						recipe(424718),	-- Engrave Pants - Starsurge
+					},
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {
@@ -1754,6 +1766,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(212186, {	-- Grugimdern
+					["coord"] = { 36.8, 15.2, WETLANDS },
+					["classes"] = { DRUID },
+					["groups"] = {
+						i(210499),	-- Marshroom
+					},
+				})),
+				-- #endif
 				n(1454, {	-- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
 					-- #if AFTER CATA
 					["coord"] = { 10.0, 59.0, WETLANDS },
