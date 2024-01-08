@@ -1901,6 +1901,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1973,	-- Ravenclaw Guardian
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210195, {	-- Unbalanced Idol
+					["coord"] = { 52.8, 27.4, SILVERPINE_FOREST },
+					["description"] = "Moon: Cast Moonfire a lot.\nEmerald Dream: Cast Healing Touch (Rank 1) a lot.\nWild: Shapeshift a lot.",
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { DRUID },
+					["crs"] = {
+						1769,	-- Moonrage Whitescalp
+						1770,	-- Moonrage Darkrunner
+					},
+					["groups"] = {
+						recipe(416049),	-- Engrave Gloves - Lacerate
+					},
+				})),
 				-- #endif
 			}),
 		},
