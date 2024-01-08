@@ -2416,6 +2416,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 412,	-- Stitches <Gift from the Embalmer>
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(210043, {	-- Symbol of the Second Owl
+					["coord"] = { 65.2, 27.8, DUSKWOOD },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { DRUID },
+					["cr"] = 211200,	-- Agon
+				})),
+				-- #endif
 				i(899, {	-- Venom Web Fang
 					["cr"] = 217,	-- Venom Web Spider
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023

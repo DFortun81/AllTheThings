@@ -3573,6 +3573,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(401757),	-- Engrave Gloves - Arcane Blast
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210044, {	-- Symbol of the First Owl
+					["providers"] = {
+						{ "o", 410020 },	-- Owl Statue
+						{ "n", 211269 },	-- Summoned Wisp
+					},
+					["description"] = "Channel on the statue to summon a wisp. Wisp will move for a few seconds, then 3 waves of 2 adds (level 23/25) will spawn one after another. Protect the wisp using bear form and you'll receive the symbol in your inventory.",
+					["coord"] = { 87, 43.2, ASHENVALE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { DRUID },
+				})),
 			}),
 			-- #endif
 			n(ZONE_DROPS, {

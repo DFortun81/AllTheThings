@@ -3172,6 +3172,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210026, {	-- Symbol of the Third Owl
+					["providers"] = {
+						{ "o", 409942 },	-- Twin Owl Statue (West)
+						{ "o", 409949 },	-- Twin Owl Statue (East)
+					},
+					["description"] = "Use Aquatic Form (or a swim speed potion) to click the statues one after another. Start at the eastern statue and swim to the western statue as the western statue's island can be climbed from the east, making it a direct line from eastern to western.",
+					["coords"] = {
+						{ 36.91, 76.14, HILLSBRAD_FOOTHILLS },
+						{ 54.43, 82.01, HILLSBRAD_FOOTHILLS },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { DRUID },
+				})),
 			}),
 			-- #endif
 			n(ZONE_DROPS, {
