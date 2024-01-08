@@ -1424,14 +1424,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(208849, {	-- Libram of Blessings
 							["classes"] = { PALADIN },
-							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								recipe(425618),	-- Engrave Chest - Horn of Lordaeron
 							},
 						}),
 						i(205905, {	-- Memory of a Devout Champion
 							["classes"] = { PRIEST },
-							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								recipe(425215),	-- Engrave Chest - Twisted Faith
 							},

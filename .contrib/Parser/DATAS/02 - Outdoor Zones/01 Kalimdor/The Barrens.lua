@@ -4626,6 +4626,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3394,	-- Barak Kodobane
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208765, {	-- Helping Hand (Closed)
+					["provider"] = { "i", 208766 },	-- Helping Hand (Open)
+					["description"] = "The hand will open when you ressurect another player.",
+					["coord"] = { 55.6, 27.2, THE_BARRENS },
+					["classes"] = { PRIEST },
+					["crs"] = {
+						3268,	-- Razormane Thornweaver
+						3267,	-- Razormane Water Seeker
+						3266,	-- Razormane Defender
+						3265,	-- Razormane Hunter
+					},
+					["groups"] = {
+						i(205905, {	-- Memory of a Devout Champion
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(425215),	-- Engrave Chest - Twisted Faith
+							},
+						}),
+					},
+				})),
+				-- #endif
 				i(5093, {	-- Razormane Backstabber
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 					-- #if BEFORE 4.0.3

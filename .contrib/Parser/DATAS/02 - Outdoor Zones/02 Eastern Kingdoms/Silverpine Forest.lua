@@ -1624,6 +1624,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 50.2, 60.0, SILVERPINE_FOREST },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(212809, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {	-- Wailing Spirit
+					["coord"] = { 60.2, 74.4, SILVERPINE_FOREST },
+					["groups"] = {
+						i(205905, {	-- Memory of a Devout Champion
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(425215),	-- Engrave Chest - Twisted Faith
+							},
+						}),
+					},
+				}))),
+				-- #endif
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
