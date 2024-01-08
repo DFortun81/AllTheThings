@@ -1295,6 +1295,7 @@ _.ObjectNames = {
 	[411715] = "Bough of Altek",
 	[412224] = "Dark Ritual Stone",
 	[414658] = "Rubble",
+	[414663] = "Shatterspear Idol",
 	[414713] = "Storage Locker",
 	[415614] = "Mysterious Formulae",
 }
@@ -2125,6 +2126,7 @@ _.ObjectModels = {
 	[411710] = 196976,
 	[412224] = 201097,
 	[414658] = 189478,
+	[414663] = 190354,
 	[414713] = 196976,
 	[415614] = 198455,
 }
@@ -2697,6 +2699,7 @@ localize(_.ObjectNames, {
 	[411715] = "Alteks Zweig",
 	[412224] = "Dunkler Ritualstein",
 	[414658] = "Geröll",
+	[414663] = "Götze der Shatterspear",
 });
 end
 if simplifiedLocale == "es" then
@@ -3809,6 +3812,7 @@ localize(_.ObjectNames, {
 	[411348] = "Coffre poussiéreux",
 	[411358] = "Coffre d’artisan",
 	[412224] = "Pierre de rituel des ténèbres",
+	[414663] = "Idole Briselance",
 	[415614] = "Formules mystérieuses",
 });
 end
@@ -5775,6 +5779,7 @@ localize(_.ObjectNames, {
 	[411328] = "Спящие кости",
 	[411348] = "Пыльный сундук",
 	[411358] = "Сундук мастера",
+	[414663] = "Идол Пронзающего Копья",
 	[415614] = "Таинственные формулы",
 });
 end

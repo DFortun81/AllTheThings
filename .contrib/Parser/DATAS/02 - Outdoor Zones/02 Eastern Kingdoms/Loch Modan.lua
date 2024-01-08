@@ -1709,6 +1709,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(410023),	-- Engrave Pants - Savage Roar
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205905, {	-- Memory of a Devout Champion
+					["coord"] = { 36.6, 20.8, LOCH_MODAN },
+					["cost"] = {{ "i", 208823, 1 }},	-- Offering Coin
+					["classes"] = { PRIEST },
+					["groups"] = {
+						recipe(425215),	-- Engrave Chest - Twisted Faith
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, o(407983, {	-- Pile of Stolen Books
 					["coord"] = { 54.2, 27.0, LOCH_MODAN },
 					["timeline"] = { "removed 2.0.1" },
@@ -2026,6 +2034,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208823, {	-- Offering Coin
+					["timeline"] = { "removed 2.0.1" },
+					["coords"] = {
+						{ 35.6, 20.0, LOCH_MODAN },
+						{ 35.8, 27.4, LOCH_MODAN },
+					},
+					["classes"] = { PRIEST },
+					["crs"] = {
+						1175,	-- Tunnel Rat Digger
+						1174,	-- Tunnel Rat Geomancer
+						1177,	-- Tunnel Rat Surveyor
+					},
+				})),
+				-- #endif
 				i(4949, {	-- Orcish Cleaver
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3

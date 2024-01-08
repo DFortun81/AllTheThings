@@ -2596,6 +2596,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR, HUNTER },
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205905, {	-- Memory of a Devout Champion
+					["providers"] = {
+						{ "o", 414663 },	-- Shatterspear Idol
+						{ "i", 211482 },	-- Shatterspear Offering
+					},
+					["coord"] = { 59.2, 22.6, DARKSHORE },
+					["classes"] = { PRIEST },
+					["groups"] = {
+						recipe(425215),	-- Engrave Chest - Twisted Faith
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209843, {	-- Nar'thalas Almanac, Vol. 74
 					["provider"] = { "o", 409496 },	-- Scrolls
 					["coord"] = { 59.6, 22.2, DARKSHORE },
@@ -2751,6 +2762,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(211482, {	-- Shatterspear Offering
+					["coord"] = { 58.8, 20.6, DARKSHORE },
+					["classes"] = { PRIEST },
+					["crs"] = {
+						2181,	-- Stormscale Myrmidon
+						2182,	-- Stormscale Sorceress
+						2183,	-- Stormscale Warrior
 					},
 				})),
 				-- #endif
