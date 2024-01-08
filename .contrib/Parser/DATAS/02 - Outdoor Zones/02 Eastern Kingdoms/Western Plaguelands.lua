@@ -2417,24 +2417,41 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 5.2.0.16650" },
 				}),
 			}),
-			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
-				o(403535, {	-- The Deed to Andorhal
-					["description"] = "Located by the town hall in Andorhal, on a wall to the right of where Rattlegore spawns.",
-					["sourceQuests"] = { 76250 },	-- Spectral Essence
-					["coord"] = { 43.6, 69.3, WESTERN_PLAGUELANDS },
-					["groups"] = {
-						i(206362),	-- The Deed to Andorhal
-					},
-				}),
-				o(403532, {	-- Bucket of Fountain Water
+			-- #if AFTER 10.1.5
+			n(TREASURES, {
+				i(206359, {	-- Caer Darrow Fountain Water
+					["provider"] = { "o", 403532 },	-- Bucket of Fountain Water
+					["sourceQuest"] = 76250,	-- Spectral Essence
 					["description"] = "Located by the water fountain in Caer Darrow.",
-					["sourceQuests"] = { 76250 },	-- Spectral Essence
 					["coord"] = { 68.8, 78.9, WESTERN_PLAGUELANDS },
-					["groups"] = {
-						i(206359),	-- Caer Darrow Fountain Water
-					},
+					["timeline"] = { ADDED_10_1_5 },
 				}),
-			})),
+				i(206362, {	-- The Deed to Andorhal
+					["provider"] = { "o", 403535 },	-- The Deed to Andorhal
+					["sourceQuest"] = 76250,	-- Spectral Essence
+					["description"] = "Located by the town hall in Andorhal, on a wall to the right of where Rattlegore spawns.",
+					["coord"] = { 43.6, 69.3, WESTERN_PLAGUELANDS },
+					["timeline"] = { ADDED_10_1_5 },
+				}),
+			}),
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(210322, {	-- Rune of Venom
+					["provider"] = { "o", 410847 },	-- Rusty Safe
+					["coord"] = { 59.4, 84.6, WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 210329, 1 },	-- Hillsbrad Treasure Map
+						{ "i", 210323, 1 },	-- Safe Combination
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400095),	-- Engrave Chest - Quick Draw
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(11056, {	-- Alchemist Arbington
 					["coord"] = { 42.6, 83.8, WESTERN_PLAGUELANDS },

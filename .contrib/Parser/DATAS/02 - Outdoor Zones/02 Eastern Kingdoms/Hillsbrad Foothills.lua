@@ -2885,6 +2885,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 80.0, 39.0, HILLSBRAD_FOOTHILLS },
 					-- #endif
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(210330, {	-- Hot Tip
+							["classes"] = { ROGUE },
+							["cost"] = 7500,	-- 75s
+							["groups"] = {
+								i(210329),	-- Hillsbrad Treasure Map
+								i(210323),	-- Safe Combination
+							},
+						})),
+						-- #endif
 						i(4795, {	-- Bear Bracers
 							["isLimited"] = true,
 						}),
