@@ -1722,6 +1722,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 517,	-- Murloc Oracle
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208689, {	-- Ferocious Idol
+					["classes"] = { DRUID },
+					["crs"] = {
+						452,	-- Riverpaw Bandit
+						124,	-- Riverpaw Brute
+						117,	-- Riverpaw Gnoll
+						501,	-- Riverpaw Herbalist
+						1426,	-- Riverpaw Miner
+						123,	-- Riverpaw Mongrel
+						453,	-- Riverpaw Mystic
+						125,	-- Riverpaw Overseer
+						500,	-- Riverpaw Scout
+						1065,	-- Riverpaw Shaman
+						98,		-- Riverpaw Taskmaster
+					},
+					["groups"] = {
+						recipe(410023),	-- Engrave Pants - Savage Roar
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209420, {	-- Gillsbane
 					["description"] = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
 					["timeline"] = { "removed 2.0.1" },
@@ -1743,8 +1762,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						121,	-- Defias Pathstalker
 					},
 				})),
-				-- #endif
-				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(209059, {	-- Goretusk Haunch
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { HUNTER },

@@ -2706,6 +2706,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2170,	-- Blackwood Ursa
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208689, {	-- Ferocious Idol
+					["coord"] = { 51.4, 38, DARKSHORE },
+					["classes"] = { DRUID },
+					["cr"] = 6788,	-- Den Mother
+					["groups"] = {
+						recipe(410023),	-- Engrave Pants - Savage Roar
+					},
+				})),
 				-- #endif
 				i(5332, {	-- Glowing Cat Figurine
 					["cr"] = 3619,	-- Ghost Saber

@@ -1701,6 +1701,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(208689, {	-- Ferocious Idol
+					["provider"] = { "o", 408004 },	-- Tangled Blight Pile
+					["coord"] = { 71.8, 21.6, LOCH_MODAN },
+					["classes"] = { DRUID },
+					["groups"] = {
+						recipe(410023),	-- Engrave Pants - Savage Roar
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, o(407983, {	-- Pile of Stolen Books
 					["coord"] = { 54.2, 27.0, LOCH_MODAN },
 					["timeline"] = { "removed 2.0.1" },
