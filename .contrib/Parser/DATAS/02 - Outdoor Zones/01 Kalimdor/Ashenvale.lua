@@ -3626,6 +3626,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209840, {	-- Gnarled Wand of Wild Magic
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["cost"] = {
+						{ "i", 209841, 1 },	-- Wild Magic Essence
+						{ "i", 11288, 1 },	-- Greater Magic Wand
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(211777, {	-- Naga Manuscript
 					["coords"] = {
 						{ 7.2, 13.2, DARKSHORE },
@@ -3636,6 +3644,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["crs"] = {
 						3715,	-- Wrathtail Sea Witch
 						3717,	-- Wrathtail Sorceress
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209841, {	-- Wild Magic Essence
+					["coords"] = {
+						{ 33.6, 38.8, ASHENVALE },
+						{ 54.6, 63.0, ASHENVALE },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["crs"] = {
+						3748,	-- Foulweald Shaman
+						3750,	-- Foulweald Totemic
+						3924,	-- Thistlefur Shaman
+						3922,	-- Thistlefur Totemic
 					},
 				})),
 				-- #endif

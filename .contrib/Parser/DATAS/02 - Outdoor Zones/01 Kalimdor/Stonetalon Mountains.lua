@@ -1890,6 +1890,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78114, {	-- Wild Wyvern Wrangling
+					["qg"] = 210845,	-- Jixo Madrocket <Amateur Daredevil>
+					["coord"] = { 59.2, 62.4, STONETALON_MOUNTAINS },
+					["cost"] = {	-- You don't need to be on the quest to get these drops
+						{ "i", 209838, 1 },	-- Hypnotic Crystal
+						{ "i", 209840, 1 },	-- Gnarled Wand of Wild Magic
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { ASHENVALE, WAILING_CAVERNS },
+					["classes"] = { HUNTER },
+					["lvl"] = 15,
+				})),
+				-- #endif
 				q(25646, {	-- Windshear Mine Cleanup
 					["qg"] = 40973,	-- Sentinal Heliana
 					["sourceQuest"] = 25640,	-- Bombs Away: Windshear Mine
@@ -1939,6 +1953,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78121, {	-- Wrangling a Wild Wyvern
+					["qg"] = 210845,	-- Jixo Madrocket <Amateur Daredevil>
+					["sourceQuest"] = 78114,	-- Wild Wyvern Wrangling
+					["coord"] = { 59.2, 62.4, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["lvl"] = 15,
+					["groups"] = {
+						i(209852, {	-- Rune of Kill Command
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410111),	-- Engrave Pants - Kill Command
+							},
+						}),
+						i(209819, {	-- Wyvern Taming Wand
+							["classes"] = { HUNTER },
+						}),
+					},
+				})),
+				-- #endif
 				q(1483, {	-- Ziz Fizziks
 					["qg"] = 3442,	-- Sputtervalve
 					["coord"] = { 62.98, 37.21, THE_BARRENS },

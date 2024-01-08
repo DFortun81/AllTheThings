@@ -403,6 +403,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					ach(5039, {	-- Wailing Caverns Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_ONE, i(209838, {	-- Hypnotic Crystal
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { HUNTER },
+					})),
+					-- #endif
 					i(10441),	-- Glowing Shard
 					i(6461),	-- Slime-Encrusted Pads
 					i(6627),	-- Mutant Breastplate
