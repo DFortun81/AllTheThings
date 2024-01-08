@@ -2768,15 +2768,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(7895, {	-- Whirring Bronze Gizmo [Tier 2]
-				["qg"] = 14829,	-- Yebb Neblegear
+				["qg"] = 14841,	-- Rinling
 				-- #if AFTER 4.3.0
-				["coord"] = { 51.6, 81.8, DARKMOON_ISLAND },
+				["coord"] = { 49.4, 60.8, DARKMOON_ISLAND },
 				-- #else
 				["coords"] = {
-					{ 40.2, 69.7, ELWYNN_FOREST },
-					{ 37.5, 39.6, MULGORE },
+					{ 41.6, 70.6, ELWYNN_FOREST },
+					{ 37, 37.4, MULGORE },
 					-- #if AFTER TBC
-					{ 34.3, 35.7, TEROKKAR_FOREST },
+					{ 34, 34.8, TEROKKAR_FOREST },
 					-- #endif
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
@@ -2797,10 +2797,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			-- CRIEVE NOTE: I don't know what the difference is.
 			-- Might be reputation maximums? The rep awarded is the same.
 			q(79591, {	-- Whirring Bronze Gizmo [Tier 2]
-				["qg"] = 14829,	-- Yebb Neblegear
+				["qg"] = 14841,	-- Rinling
 				["coords"] = {
-					{ 40.2, 69.7, ELWYNN_FOREST },
-					{ 37.5, 39.6, MULGORE },
+					{ 41.6, 70.6, ELWYNN_FOREST },
+					{ 37, 37.4, MULGORE },
 				},
 				["maxReputation"] = TIER_TWO_MAX_REPUTATION,
 				["cost"] = { { "i", 4375, 7 } },	-- Whirring Bronze Gizmo
