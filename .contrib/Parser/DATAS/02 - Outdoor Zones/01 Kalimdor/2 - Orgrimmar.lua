@@ -1297,6 +1297,51 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78196, {	-- Secrets of Undeath (1/2)
+					["qg"] = 211229,	-- Dietrich Praice
+					["coord"] = { 35.6, 87.8, ORGRIMMAR },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { ASHENVALE },
+					["classes"] = { PRIEST },
+					["races"] = { TROLL },
+					["lvl"] = 18,
+					["groups"] = {
+						objective(1, {	-- 0/12 Shadeleaf
+							["provider"] = { "i", 210045 },	-- Shadeleaf
+							["coord"] = { 69.6, 63.0, ASHENVALE },
+							["crs"] = {
+								3782,	-- Shadethicket Stone Mover
+								3784,	-- Shadethicket Bark Ripper
+								3783,	-- Shadethicket Raincaller
+								3781,	-- Shadethicket Wood Shaper
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78197, {	-- Secrets of Undeath (2/2)
+					["providers"] = {
+						{ "n", 211229 },	-- Dietrich Praice
+						{ "n",   6491 },	-- Spirit Healer
+						{ "i", 210056 },	-- Tincture of Waking Death
+					},
+					["sourceQuest"] = 78196,	-- Secrets of Undeath (1/2)
+					["coords"] = {
+						{ 35.6, 87.8, ORGRIMMAR },
+						{ 56.2, 49.4, TIRISFAL_GLADES },
+					},
+					["description"] = "Completing this quest will allow you to meditate in the same manner as the undead.",
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PRIEST },
+					["races"] = { TROLL },
+					["lvl"] = 18,
+					["groups"] = {
+						recipe(424041, {	-- Secrets of Undeath
+							["classes"] = { PRIEST },
+						}),
+					},
+				})),
+				-- #endif
 				q(5680, {	-- Shadowguard [Undercity]
 					["qgs"] = {
 						6018,	-- Ur'kyo <Priest Trainer>

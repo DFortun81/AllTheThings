@@ -757,6 +757,48 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78198, {	-- Secrets of the Loa (1/2)
+					["qg"] = 211225,	-- Baj'ura
+					["coord"] = { 47.2, 19.6, UNDERCITY },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["lvl"] = 18,
+					["groups"] = {
+						objective(1, {	-- 0/14 Hillsbrad Human Bones
+							["provider"] = { "i", 210055 },	-- Hillsbrad Human Bones
+							["coord"] = { 34.4, 40.8, HILLSBRAD_FOOTHILLS },
+							["crs"] = {
+								2360,	-- Hillsbrad Farmhand
+								2266,	-- Hillsbrad Farmer
+								2267,	-- Hillsbrad Peasant
+								2268,	-- Hillsbrad Footman
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78199, {	-- Secrets of the Loa (2/2)
+					["providers"] = {
+						{ "n", 211225 },	-- Baj'ura
+						{ "i", 210080 },	-- Voodoo Offering
+					},
+					["sourceQuest"] = 78198,	-- Secrets of the Loa (1/2)
+					["coord"] = { 47.2, 19.6, UNDERCITY },
+					["description"] = "Completing this quest will allow you to meditate in the same manner as the trolls.",
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { DUROTAR },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["lvl"] = 18,
+					["groups"] = {
+						recipe(424037, {	-- Secrets of the Loa
+							["classes"] = { PRIEST },
+						}),
+					},
+				})),
+				-- #endif
 				q(3568, {	-- Seeping Corruption (1/3)
 					["qg"] = 10136,	-- Chemist Fuely
 					["coord"] = { 47.6, 73.0, UNDERCITY },
