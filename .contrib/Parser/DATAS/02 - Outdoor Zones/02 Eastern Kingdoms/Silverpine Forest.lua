@@ -1904,6 +1904,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["cr"] = 1867,	-- Dalaran Apprentice
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(206382, {	-- Tempest Icon
+					["coord"] = { 58.6, 44.8, SILVERPINE_FOREST },
+					["classes"] = { SHAMAN },
+					["cr"] = 1972,	-- Grimson the Pale
+					["groups"] = {
+						recipe(410097),	-- Engrave Gloves - Water Shield
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210713, {	-- Tortured Soul
 					["description"] = "Use Life Tap in a safe area to summon the Tortured Soul.",
 					["coord"] = { 59.4, 70.8, SILVERPINE_FOREST },

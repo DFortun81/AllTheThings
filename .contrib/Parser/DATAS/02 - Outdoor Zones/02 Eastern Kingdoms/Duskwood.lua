@@ -1994,6 +1994,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 19.9, 45.5, DUSKWOOD },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(424988),	-- Engrave Gloves - Shiv
+					},
 				})),
 			}),
 			-- #endif
