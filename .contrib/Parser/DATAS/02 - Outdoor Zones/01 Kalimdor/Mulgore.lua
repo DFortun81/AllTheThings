@@ -1860,6 +1860,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(206989, {	-- Rune of the Sun
+					["providers"] = {
+						{ "n", 207577 },	-- Lunar Stone
+						{ "o", 404433 },	-- Lunar Chest
+					},
+					["description"] = "Cast Moonfire on each of the Lunar Stones to spawn the Lunar Chest nearby.",
+					["coord"] = { 35.7, 69.6, MULGORE },
+					["classes"] = { DRUID },
+					["groups"] = {
+						recipe(416044),	-- Engrave Gloves - Sunfire
+					},
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {

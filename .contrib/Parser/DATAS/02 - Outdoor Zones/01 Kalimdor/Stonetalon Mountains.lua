@@ -2277,6 +2277,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(6840, {	-- Galvanized Horn
 					["cr"] = 6167,	-- Chimaera Matriarch
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(210534, {	-- Idol of the Wild
+					["coord"] = { 80.6, 90.0, STONETALON_MOUNTAINS },
+					["classes"] = { DRUID },
+					["crs"] = {
+						11911,	-- Grimtotem Mercenary
+						11910,	-- Grimtotem Ruffian
+						11913,	-- Grimtotem Sorcerer
+						11912,	-- Grimtotem Brute
+					},
+					["groups"] = {
+						recipe(410021),	-- Engrave Chest - Wild Strikes
+					},
+				})),
+				-- #endif
 			}),
 		},
 	}),
