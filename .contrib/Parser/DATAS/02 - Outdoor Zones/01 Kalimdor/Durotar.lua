@@ -3739,6 +3739,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(206386, {	-- Galvanic Icon
+					--["provider"] = { "o",  },	-- TODO: I don't have the objectID for this. It's called "Galvanic Icon" just like the item.
+					["description"] = "These are random spawn totems on the ground; listen for the lightning cast sound to help you pinpoint the location.",
+					["coords"] = {
+						{ 38.01, 35.53, DUROTAR },
+						{ 53.36, 50.48, DUROTAR },
+						{ 51.78, 56.39, DUROTAR },
+						{ 36.95, 45.53, DUROTAR },
+						{ 56.53, 28.37, DUROTAR },
+						{ 39.43, 50.06, DUROTAR },
+						{ 54.07, 55.82, DUROTAR },
+						{ 36.3, 9.8, DUROTAR },
+						{ 37.5, 52.5, DUROTAR },
+						{ 41.65, 55.98, DUROTAR },
+						{ 37.99, 60.04, DUROTAR },
+					},
+					["classes"] = { SHAMAN },
+					["groups"] = {
+						recipe(410098),	-- Engrave Chest - Shield Mastery
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(203993, {	-- Rune of Slaughter
 					["provider"] = { "o", 387466 },	-- Rusty Lockbox
 					["coord"] = { 53.8, 27.2, DUROTAR },

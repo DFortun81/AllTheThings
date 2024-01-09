@@ -2447,7 +2447,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { ROGUE },
 					["groups"] = {
-						recipe(400095),	-- Engrave Chest - Quick Draw
+						recipe(400102),	-- Engrave Pants - Envenom
 					},
 				})),
 			}),

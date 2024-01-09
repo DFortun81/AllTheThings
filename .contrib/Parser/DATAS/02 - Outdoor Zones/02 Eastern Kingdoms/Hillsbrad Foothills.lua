@@ -3322,6 +3322,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(206387, {	-- Kajaric Icon
+					["coords"] = { 65.6, 60.4, HILLSBRAD_FOOTHILLS },
+					["classes"] = { SHAMAN },
+					["cr"] = 2373,	-- Mudsnout Shaman
+					["groups"] = {
+						recipe(410095),	-- Engrave Gloves - Lava Burst
+					},
+				})),
+				-- #endif
 				-- #if BEFORE CATA
 				i(4589, {	-- Long Elegant Feather
 					["crs"] = {

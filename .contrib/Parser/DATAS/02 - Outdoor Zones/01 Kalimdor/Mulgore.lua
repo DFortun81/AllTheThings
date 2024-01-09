@@ -1860,6 +1860,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(206386, {	-- Galvanic Icon
+					--["provider"] = { "o",  },	-- TODO: I don't have the objectID for this. It's called "Galvanic Icon" just like the item.
+					["description"] = "These are random spawn totems on the ground; listen for the lightning cast sound to help you pinpoint the location.",
+					["coords"] = {
+						{ 54.07, 55.82, MULGORE },
+						{ 36.3, 9.8, MULGORE },
+						{ 37.5, 52.5, MULGORE },
+						{ 41.65, 55.98, MULGORE },
+						{ 38.0, 60.0, MULGORE },
+					},
+					["classes"] = { SHAMAN },
+					["groups"] = {
+						recipe(410098),	-- Engrave Chest - Shield Mastery
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206989, {	-- Rune of the Sun
 					["providers"] = {
 						{ "n", 207577 },	-- Lunar Stone

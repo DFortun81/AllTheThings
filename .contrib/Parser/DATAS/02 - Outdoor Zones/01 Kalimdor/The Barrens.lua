@@ -3685,10 +3685,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(209742, {	-- Desert Mirage
-					["description"] = "Cast Dispel on it.",
+					["description"] = "Cast Dispel or Purge on it.",
 					["coord"] = { 55.0, 35.4, THE_BARRENS },
-					["classes"] = { PRIEST },
+					["classes"] = { PRIEST, SHAMAN },
 					["groups"] = {
+						i(208758, {	-- Earthen Rune
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(410107),	-- Engrave Pants - Way of Earth
+							},
+						}),
 						i(205932, {	-- Prophecy of a King's Demise
 							["timeline"] = { "removed 2.0.1" },
 							["classes"] = { PRIEST },

@@ -1435,6 +1435,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(211875, {	-- Decayed Elemental
+					["provider"] = { "i", 210253 },	-- Rot Totem
+					["coord"] = { 46.0, 22.2, SILVERPINE_FOREST },
+					["classes"] = { SHAMAN },
+					["groups"] = {
+						i(208758, {	-- Earthen Rune
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(410107),	-- Engrave Pants - Way of Earth
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(47012, {	-- Effritus
 					["coord"] = { 47.0, 69.4, SILVERPINE_FOREST },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1899,6 +1915,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { WARRIOR },
 					["cr"] = 212598,	-- Recke Grinnes
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210253, {	-- Rot Totem
+					["coord"] = { 45.6, 22.6, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { SHAMAN },
+					["cr"] = 1773,	-- Rot Hide Mystic
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208778, {	-- Rune of Quick Strike
 					["provider"] = { "i", 210696 },	-- Rot Bane
