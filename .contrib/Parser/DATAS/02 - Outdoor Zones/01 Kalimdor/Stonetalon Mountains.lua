@@ -176,6 +176,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(210187, {	-- Venture Co. Work Order
+						["coord"] = { 67.2, 52.2, STONETALON_MOUNTAINS },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							3988,	-- Venture Co. Operator
+							4070,	-- Venture Co. Builder
+							3992,	-- Venture Co. Engineer
+							3993,	-- Venture Co. Machine Smith
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(1071, {	-- A Gnome's Respite
 					["qg"] = 4077,	-- Gaxim Rustfizzle
@@ -925,6 +943,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78270, {	-- Goblin Lockpicks
+					["qg"] = 4086,	-- Veenix <Venture Co. Merchant>
+					["coord"] = { 58.2, 51.6, STONETALON_MOUNTAINS },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { SILVERPINE_FOREST, SHADOWFANG_KEEP },
+					["classes"] = { ROGUE },
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/1 Venture Co. Work Order
+							["provider"] = { "i", 210187 },	-- Venture Co. Work Order
+						}),
+						i(210186, {	-- Breaching Charge
+							["description"] = "Use this on the door that's normally opened by the NPC after defeating the first boss.",
+						}),
+					},
+				})),
+				-- #endif
 				q(25847, {	-- Grimtotem Supremacy
 					["qg"] = 11858,	-- Grundig Darkcloud
 					["sourceQuest"] = 25846,	-- Grundig Darkcloud, Chieftain of the Grimtotem

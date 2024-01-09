@@ -23,6 +23,26 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 		},
 		["lvl"] = lvlsquish(14, 14, 8),
 		["groups"] = {
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["description"] = "The rare mobs only spawn if a Rogue enters the instance alone while on the quest The Horn of Xelthos.",
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(210212, {	-- Brother's Half-Key
+						["description"] = "Found shortly after baron silverlaine.\nHead up the stairs behind the boss, and take a right, gefell should be in a room up the stairs around the corner.",
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cr"] = 211764,	-- Gefell
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(210213, {	-- Sister's Half-Key
+						["description"] = "Just after the Kitchen in baron silverlaine's room.",
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cr"] = 211765,	-- Gemela
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(27355, {	-- A Boon for the Powerful
 					["sourceQuest"] = 27272,	-- Demisette Sends Word [CATA] / A Message From Evelyn Thorn [SL+]
@@ -756,6 +776,49 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78261, {	-- The Horn of Xelthos (1/2)
+					["providers"] = {
+						{ "o", 410369 },	-- Dead Drop
+						{ "i", 210186 },	-- Breaching Charge
+					},
+					["coord"] = { 47.1, 71.1, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/1 Horn of Xelthos
+							["providers"] = {
+								{ "i", 210183 },	-- Horn of Xelthos
+								{ "o", 410528 },	-- Ornamented Chest
+								{ "i", 210209 },	-- Twin Key
+							},
+							["description"] = "Once you've gotten both of the half keys from pick pocketing the npcs, combine them and bring the twin key to the ornamented chest in the stables.",
+							["cost"] = {
+								{ "i", 210212, 1 },	-- Brother's Half-Key
+								{ "i", 210213, 1 },	-- Sister's Half-Key
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78307, {	-- The Horn of Xelthos (2/2)
+					["provider"] = { "o", 410369 },	-- Dead Drop
+					["sourceQuest"] = 78261,	-- The Horn of Xelthos (1/2)
+					["description"] = "15 minutes or so after you turn in the first part of the Horn of Xelthos, you'll receive another mail from C and be able to loot the rune from the dead drop outside of SFK.",
+					["coord"] = { 47.1, 71.1, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["lvl"] = 20,
+					["groups"] = {
+						i(203994, {	-- Rune of Deadly Brew
+							["classes"] = { ROGUE },
+							["groups"] = {
+								recipe(400080),	-- Engrave Chest - Deadly Brew
+							},
+						}),
+					},
+				})),
+				-- #endif
 				-- #if AFTER SHADOWLANDS
 				q(27281, {	-- Gormok Ogrefist [SL+] / Grezz Ragefist [CATA]
 					["qgs"] = {

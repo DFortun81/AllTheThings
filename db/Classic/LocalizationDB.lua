@@ -1292,6 +1292,8 @@ _.ObjectNames = {
 	[409949] = "Twin Owl Statue",
 	[410020] = "Owl Statue",
 	[410299] = "Arcane Secrets",
+	[410369] = "Dead Drop",
+	[410528] = "Ornamented Chest",
 	[410847] = "Rusty Safe",
 	[411328] = "Slumbering Bones",
 	[411348] = "Dusty Coffer",
@@ -2130,6 +2132,8 @@ _.ObjectModels = {
 	[409949] = 201662,
 	[410020] = 201662,
 	[410299] = 198039,
+	[410369] = 196989,
+	[410528] = 196987,
 	[410847] = 203020,
 	[411348] = 200953,
 	[411358] = 196987,
@@ -2707,6 +2711,8 @@ localize(_.ObjectNames, {
 	[409758] = "Weggeworfener Helm",
 	[409949] = "Zwillingseulenstatue",
 	[410299] = "Arkane Geheimnisse",
+	[410369] = "Toter Briefkasten",
+	[410528] = "Verzierte Truhe",
 	[411328] = "Schlummernde Knochen",
 	[411348] = "Staubige Truhe",
 	[411358] = "Handwerkertruhe",
@@ -3257,6 +3263,7 @@ localize(_.ObjectNames, {
 	[409758] = "Yelmo desechado",
 	[409949] = "Estatua de búho gemelo",
 	[410299] = "Secretos Arcanos",
+	[410369] = "Escondite secreto",
 	[415614] = "Fórmulas misteriosas",
 });
 end
@@ -3831,6 +3838,7 @@ localize(_.ObjectNames, {
 	[409942] = "Statue de chouettes jumelles",
 	[410020] = "Statue de chouette",
 	[410299] = "Secrets arcaniques",
+	[410369] = "Piquet boîte morte",
 	[410847] = "Coffre rouillé",
 	[411328] = "Os endormis",
 	[411348] = "Coffre poussiéreux",
@@ -4726,6 +4734,8 @@ localize(_.ObjectNames, {
 	[409731] = "두루마리",
 	[409758] = "버려진 투구",
 	[409949] = "쌍둥이 올빼미 조각상",
+	[410369] = "비밀 접선 지점",
+	[410528] = "장식된 상자",
 	[410847] = "녹슨 금고",
 	[412224] = "암흑 의식용 돌",
 });
@@ -6324,5 +6334,6 @@ localize(_.ObjectNames, {
 	[407566] = "地精魔典",
 	[408799] = "深渊神像",
 	[409692] = "卷轴",
+	[410369] = "秘密投放点",
 });
 end
