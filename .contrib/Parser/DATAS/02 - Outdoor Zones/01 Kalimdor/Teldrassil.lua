@@ -2248,6 +2248,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(402854),	-- Engrave Pants - Shared Pain
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205947, {	-- Prophecy of a Desecrated Citadel
+					["coord"] = { 52.6, 49.6, TELDRASSIL },
+					["classes"] = { PRIEST },
+					["crs"] = {
+						2005,	-- Vicious Grell
+						2002,	-- Rascal Sprite
+						2004,	-- Dark Sprite
+						2003,	-- Shadow Sprite
+					},
+					["groups"] = {
+						recipe(402852),	-- Engrave Pants - Homunculi
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
 					["coord"] = { 45.6, 59.6, TELDRASSIL },
 					["classes"] = { HUNTER },

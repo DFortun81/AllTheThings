@@ -1903,6 +1903,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(211530, {	-- Prophecy of a City Enthralled
+					["coord"] = { 67.4, 56.0, REDRIDGE_MOUNTAINS },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { PRIEST },
 					["cr"] = 436,	-- Blackrock Shadowcaster

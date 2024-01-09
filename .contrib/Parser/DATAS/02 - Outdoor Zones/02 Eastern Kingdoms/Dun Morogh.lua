@@ -3471,6 +3471,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1115,	-- Rockjaw Skullthumper
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205947, {	-- Prophecy of a Desecrated Citadel
+					["coords"] = {
+						{ 23.2, 53.6, DUN_MOROGH },
+						{ 42.4, 35.8, DUN_MOROGH },
+						{ 42.0, 44.6, DUN_MOROGH },
+					},
+					["classes"] = { PRIEST },
+					["crs"] = {
+						1124,	-- Frostmane Shadowcaster
+						1397,	-- Frostmane Seer
+					},
+					["groups"] = {
+						recipe(402852),	-- Engrave Pants - Homunculi
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208180, {	-- Rabbit Musk
 					["coords"] = {
 						{ 70.8, 56.0, DUN_MOROGH },

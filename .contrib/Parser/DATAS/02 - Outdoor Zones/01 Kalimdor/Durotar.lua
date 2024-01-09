@@ -3955,6 +3955,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3207,	-- Hexed Troll
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205947, {	-- Prophecy of a Desecrated Citadel
+					["coords"] = {
+						{ 43.0, 39.4, DUROTAR },
+						{ 52.0, 21.6, DUROTAR },
+						{ 67.2, 85.6, DUROTAR },
+					},
+					["classes"] = { PRIEST },
+					["crs"] = {
+						3113,	-- Razormane Dustrunner
+						3118,	-- Dustwind Storm Witch
+						3206,	-- Voodoo Troll
+						3207,	-- Hexed Troll
+					},
+					["groups"] = {
+						recipe(402852),	-- Engrave Pants - Homunculi
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207062, {	-- Severed Centaur Head
 					["coord"] = { 51.2, 78.4, DUROTAR },
 					["timeline"] = { "removed 2.0.1" },

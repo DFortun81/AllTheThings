@@ -3644,6 +3644,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 11288, 1 },	-- Greater Magic Wand
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(211534, {	-- Primal Insight
+					["coords"] = {
+						{ 37.6, 35.4, ASHENVALE },
+						{ 32.4, 42.2, ASHENVALE },
+						{ 54.6, 63.0, ASHENVALE },
+					},
+					["classes"] = { PRIEST },
+					["crs"] = {
+						3924,	-- Thistlefur Shaman
+						3922,	-- Thistlefur Totemic
+						3750,	-- Foulweald Totemic
+					},
+					["groups"] = {
+						i(211531, {	-- Prophecy of Seven Visitors
+							["description"] = "Go north to the entrance of the cave. Don't go in the cave, instead climb up the big tree to the left and you'll see the dreamcatchers hanging in the branches.",
+							["coords"] = {
+								{ 38, 29, ASHENVALE },
+								{ 38, 26, ASHENVALE },
+							},
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(415997),	-- Engrave Chest - Strength of Soul
+							},
+						}),
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(211777, {	-- Naga Manuscript
 					["coords"] = {
 						{ 7.2, 13.2, DARKSHORE },

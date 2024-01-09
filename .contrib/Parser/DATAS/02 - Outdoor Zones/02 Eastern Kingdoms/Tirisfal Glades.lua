@@ -892,7 +892,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{ 53.0, 28.8, TIRISFAL_GLADES },
 							{ 46.0, 30.6, TIRISFAL_GLADES },
 							{ 52.8, 56.8, TIRISFAL_GLADES },
-							{ , TIRISFAL_GLADES },
 						},
 						["timeline"] = { "removed 2.0.1" },
 						["classes"] = { ROGUE },
@@ -2781,6 +2780,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1662,	-- Captain Perrine
 					["coord"] = { 51.6, 67.6, TIRISFAL_GLADES },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(205947, {	-- Prophecy of a Desecrated Citadel
+					["coords"] = {
+						{ 34.0, 47.8, TIRISFAL_GLADES },
+						{ 51.6, 68.8, TIRISFAL_GLADES },
+						{ 80.0, 54.4, TIRISFAL_GLADES },
+					},
+					["classes"] = { PRIEST },
+					["crs"] = {
+						1535,	-- Scarlet Warrior
+						1536,	-- Scarlet Missionary
+						1537,	-- Scarlet Zealot
+					},
+					["groups"] = {
+						recipe(402852),	-- Engrave Pants - Homunculi
+					},
+				})),
+				-- #endif
 				-- #if AFTER 10.1.7
 				i(3260, {	-- Scarlet Initiate Robes
 					["cr"] = 1539,	-- Scarlet Neophyte

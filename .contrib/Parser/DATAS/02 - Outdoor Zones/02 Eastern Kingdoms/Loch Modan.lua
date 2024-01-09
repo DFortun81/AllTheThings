@@ -1749,6 +1749,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
+					["provider"] = { "n", 209908 },	-- Heretic Idol
+					["description"] = "/kneel at the statue for the rune.",
+					["coord"] = { 71.8, 27.6, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PRIEST },
+					["groups"] = {
+						recipe(402849),	-- Engrave Gloves - Shadow Word - Death
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208860, {	-- Rumi of Gnomeregan: The Collected Works
 					["provider"] = { "o", 408014 },	-- Gnomish Tome
 					["coord"] = { 35.6, 48.9, LOCH_MODAN },

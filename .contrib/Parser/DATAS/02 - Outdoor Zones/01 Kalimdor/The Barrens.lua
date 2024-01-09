@@ -3683,6 +3683,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209742, {	-- Desert Mirage
+					["description"] = "Cast Dispel on it.",
+					["coord"] = { 55.0, 35.4, THE_BARRENS },
+					["classes"] = { PRIEST },
+					["groups"] = {
+						i(205932, {	-- Prophecy of a King's Demise
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(402849),	-- Engrave Gloves - Shadow Word - Death
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(5849, {	-- Digger Flameforge <Excavation Specialist>
 					-- #if AFTER CATA
 					["coord"] = { 47.8, 88.2, SOUTHERN_BARRENS },

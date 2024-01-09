@@ -2880,6 +2880,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						474,	-- Defias Rogue Wizard
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205947, {	-- Prophecy of a Desecrated Citadel
+					["coord"] = { 74.0, 51.8, ELWYNN_FOREST },
+					["classes"] = { PRIEST },
+					["cr"] = 474,	-- Defias Rogue Wizard
+					["groups"] = {
+						recipe(402852),	-- Engrave Pants - Homunculi
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
 					["coord"] = { 41.6, 78.8, ELWYNN_FOREST },
 					["classes"] = { WARRIOR },

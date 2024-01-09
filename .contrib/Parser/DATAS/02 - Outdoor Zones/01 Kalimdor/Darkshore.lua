@@ -2611,6 +2611,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 409496 },	-- Scrolls
 					["coord"] = { 59.6, 22.2, DARKSHORE },
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
+					["provider"] = { "o", 414646 },	-- Remnant
+					["coord"] = { 30.4, 48.0, DARKSHORE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PRIEST },
+					["groups"] = {
+						recipe(402849),	-- Engrave Gloves - Shadow Word - Death
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208701, {	-- Rune of Beast Mastery
 					["providers"] = {
 						{ "n",   2234 },	-- Young Reef Crawler

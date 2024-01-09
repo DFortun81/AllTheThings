@@ -1370,6 +1370,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Spawns at BOTH the northern and west-most southern spawn points at approximately 20:00/8 PM server time. If you are quick, you could probably snag both.",
 					-- #endif
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(402849),	-- Engrave Gloves - Shadow Word - Death
+							},
+						})),
+						-- #endif
 						i(1387, {	-- Ghoulfang
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),

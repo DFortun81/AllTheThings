@@ -2197,6 +2197,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(211528, {	-- Dark Insight
+					["coords"] = {
+						{ 22.8, 68.0, DUSKWOOD },
+						{ 50.8, 75.0, DUSKWOOD },
+					},
+					["classes"] = { PRIEST },
+					["crs"] = {
+						910,	-- Defias Enchanter
+						909,	-- Defias Night Blade
+						215,	-- Defias Night Runner
+					},
+					["groups"] = {
+						i(211490, {	-- Prophecy of a Thousand Lights
+							["coord"] = { 90, 30, DUSKWOOD },
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(402859),	-- Engrave Gloves - Circle of Healing
+							},
+						}),
+					},
+				})),
+				-- #endif
 				i(2232, {	-- Dark Runner Boots
 					["cr"] = 205,	-- Nightbane Dark Runner
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
