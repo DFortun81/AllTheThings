@@ -128,6 +128,21 @@ function(item)
 	end
 end);
 
+-- UnavailablePersonalLoot
+DefineToggleFilter("UnavailablePersonalLoot", AccountFilters,
+function(item)
+
+	if not item.sourceID
+		or not item.sourceParent
+		or not item.sourceParent.questID then
+		return true;
+	end
+
+	local specs = app.GetFixedItemSpecInfo(item.itemID);
+
+	return specs and #specs > 0;
+end);
+
 -- MinReputation
 local ExclusiveFactions = {
 	[932]=1,	-- The Aldor

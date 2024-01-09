@@ -1954,6 +1954,7 @@ GetSpecsString = function(specs, includeNames, trim)
 	return app.TableConcat(icons);
 end
 end
+app.GetFixedItemSpecInfo = GetFixedItemSpecInfo;
 
 
 -- NPC & Title Name Harvesting Lib (https://us.battle.net/forums/en/wow/topic/20758497390?page=1#post-4, Thanks Gello!)
