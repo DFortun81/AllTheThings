@@ -135,6 +135,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 						},
 					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
+						["coords"] = {
+							{ 51.0, 47.0, WESTFALL },
+							{ 51.6, 55.6, WESTFALL },
+						},
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cr"] = 210549,	-- Defias Scout
+						["groups"] = {
+							recipe(424984),	-- Engrave Gloves - Saber Slash
+						},
+					})),
 				},
 			}),
 			-- #endif
@@ -1270,6 +1282,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 51.0, 47.0, WESTFALL },
 						{ 51.6, 55.6, WESTFALL },
 					},
+					["description"] = "Hunters need to use Hunter's Mark.",
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { HUNTER },
 					["groups"] = {

@@ -4131,6 +4131,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(416049),	-- Engrave Gloves - Lacerate
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
+					--["provider"] = { "o",  },	-- TODO: I couldn't find the objectID or name of the object.
+					["description"] = "Head to Northwatch Hold. As you pass the main gate look to your left, you'll see a stable with a chest on the roof. Go up and around to the right and jump down onto the wall behind the stable. Once there you can jump to the roof and loot the chest for the Rune. You need lockpicking (80) to open this chest.",
+					--["coord"] = { , THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(424984),	-- Engrave Gloves - Saber Slash
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208744, {	-- Rune of Shadowbolts
 					["providers"] = {
 						{ "i", 208743 },	-- Soul of Greed

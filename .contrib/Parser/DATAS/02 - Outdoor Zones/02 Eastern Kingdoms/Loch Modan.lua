@@ -1783,6 +1783,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(416049),	-- Engrave Gloves - Lacerate
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
+					["provider"] = { "o", 407731 },	-- Stonemason's Toolbox
+					["coord"] = { 46.5, 12.7, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(424984),	-- Engrave Gloves - Saber Slash
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209850, {	-- Runes of the Sorcerer-Kings
 					["provider"] = { "o", 409731 },	-- Scrolls
 					["coord"] = { 77.5, 14.1, LOCH_MODAN },

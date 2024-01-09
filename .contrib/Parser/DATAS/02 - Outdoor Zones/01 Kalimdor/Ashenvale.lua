@@ -1016,6 +1016,64 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78506, {	-- Elemental Distress
+					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+					["sourceQuest"] = 78920,	-- Baron Aquanis (H)
+					["coord"] = { 11.6, 34.2, ASHENVALE },
+					["maps"] = { STONETALON_MOUNTAINS },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
+					["groups"] = {
+						objective(1, {	-- 0/1 Mote of Seismic Rage
+							["provider"] = { "i", 210668 },	-- Mote of Seismic Rage
+							["coord"] = { 33.2, 69.8, STONETALON_MOUNTAINS },
+							["crs"] = {
+								4034,	-- Enraged Stone Spirit
+								4035,	-- Furious Stone Spirit
+							},
+						}),
+						objective(2, {	-- 0/1 Mote of Infernal Rage
+							["provider"] = { "i", 210667 },	-- Mote of Infernal Rage
+							["coord"] = { 32.6, 67.7, STONETALON_MOUNTAINS },
+							["crs"] = {
+								4038,	-- Burning Destroyer
+								4037,	-- Burning Ravager
+								4036,	-- Rogue Flame Spirit
+							},
+						}),
+						objective(3, {	-- 0/1 Mote of Torrential Rage
+							["provider"] = { "i", 210665 },	-- Mote of Torrential Rage
+							["coord"] = { 49.6, 71.2, ASHENVALE },
+							["cr"] = 3917,	-- Befouled Water Elemental
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78537, {	-- Elixir of Insight (1/2)
+					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+					["sourceQuest"] = 78506,	-- Elemental Distress
+					["coord"] = { 11.6, 34.2, ASHENVALE },
+					["cost"] = {
+						{ "i", 5996, 1 },	-- Elixir of Water Breathing
+						{ "i", 3383, 1 },	-- Elixir of Wisdom
+					},
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78561, {	-- Elixir of Insight (2/2)
+					["providers"] = {
+						{ "n",  12736 },	-- Je'neu Sancrea <The Earthen Ring>
+						{ "i", 210712 },	-- Elixir of Insight
+					},
+					["sourceQuest"] = 78537,	-- Elixir of Insight (1/2)
+					["coord"] = { 11.6, 34.2, ASHENVALE },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
+				})),
+				-- #endif
 				q(26475, {	-- Elune's Tear
 					["qg"] = 3894,	-- Pelturas Whitemoon
 					["sourceQuest"] = 26474,	-- Orendil's Cure
@@ -1192,6 +1250,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78575, {	-- Hirzek
+					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+					["sourceQuest"] = 78561,	-- Elixir of Insight (2/2)
+					["coord"] = { 11.6, 34.2, ASHENVALE },
+					["maps"] = { THE_BARRENS },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
+					["groups"] = {
+						objective(1, {	-- 0/1 Hirzek's Staff
+							["provider"] = { "i", 210724 },	-- Hirzek's Staff
+						}),
+						objective(2, {	-- 0/1 Hirzek slain
+							["provider"] = { "n", 212694 },	-- Hirzek
+							["coord"] = { 43.6, 78.8, THE_BARRENS },
+						}),
+						i(210746, {	-- Rune of Earth Shield
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(410101),	-- Engrave Pants - Earth Shield
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(13880, {	-- Hot Lava
 					["qg"] = 34290,	-- Core
 					["sourceQuests"] = {

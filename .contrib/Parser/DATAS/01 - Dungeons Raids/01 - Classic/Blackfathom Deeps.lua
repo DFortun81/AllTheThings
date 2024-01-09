@@ -872,13 +872,20 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							},
 						}),
 						q(78920, {	-- Baron Aquanis (H)
-							["provider"] = { "i", 211454 },	-- Strange Water Globe
-							["maps"] = { ASHENVALE },
+							["providers"] = {
+								{ "i", 211454 },	-- Strange Water Globe
+								{ "n",  12736 },	-- Je'neu Sancrea <The Earthen Ring>
+							},
+							["coord"] = { 11.6, 34.2, ASHENVALE },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 25,
 							["groups"] = {
-								i(16886),	-- Outlaw Sabre
-								i(16887),	-- Witch's Finger
+								i(16886, {	-- Outlaw Sabre
+									["timeline"] = { "removed 2.0.1" },
+								}),
+								i(16887, {	-- Witch's Finger
+									["timeline"] = { "removed 2.0.1" },
+								}),
 							},
 						}),
 						q(78921, {	-- Blackfathom Villainy (A)

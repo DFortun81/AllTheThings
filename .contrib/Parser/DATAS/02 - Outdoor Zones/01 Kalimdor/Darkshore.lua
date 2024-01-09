@@ -2644,6 +2644,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(400099),	-- Engrave Pants - Blade Dance
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
+					["provider"] = { "o", 414624 },	-- Lighthouse Stash
+					["coord"] = { 32.8, 37.1, DARKSHORE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(424984),	-- Engrave Gloves - Saber Slash
+					},
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {

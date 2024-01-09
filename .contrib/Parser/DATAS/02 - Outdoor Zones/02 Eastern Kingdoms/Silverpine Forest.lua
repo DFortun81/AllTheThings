@@ -1653,6 +1653,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(402849),	-- Engrave Gloves - Shadow Word - Death
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
+					["provider"] = { "o", 409131 },	-- Rusty Chest
+					["description"] = "You will need to use Sprint to make the jump to the platform.",
+					["coord"] = { 45.2, 67.2, SILVERPINE_FOREST },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(424984),	-- Engrave Gloves - Saber Slash
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209844, {	-- The Dalaran Digest, Vol. 23
 					["provider"] = { "o", 409501 },	-- Dalaran Digest
 					["coord"] = { 63.5, 63.1, SILVERPINE_FOREST },
