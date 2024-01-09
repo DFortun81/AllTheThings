@@ -240,6 +240,7 @@ root(ROOTS.NeverImplemented, {
 				
 				-- Got these from Questie
 				q(1, { ["name"] = "The \"Chow\" Quest (123)aa", }),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
+				q(8411, { ["name"] = "Mastering the Elements", }),
 				q(7788, { ["name"] = "Vanquish the Invaders!", }),
 				q(7871, { ["name"] = "Vanquish the Invaders!", }),
 				q(7872, { ["name"] = "Vanquish the Invaders!", }),

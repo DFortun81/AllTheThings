@@ -363,6 +363,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 30.4, 49.2, THOUSAND_NEEDLES },
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
+				q(1531, {	-- Call of Air [Orgrimmar]
+					["qg"] = 5892,	-- Searn Firewarder
+					["coord"] = { 37.8, 37.4, ORGRIMMAR },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+					["groups"] = {
+						i(5178, {	-- Air Totem
+							["description"] = "You must keep this in your bags forever.",
+						}),
+					},
+				}),
+				q(1532, {	-- Call of Air [Thunder Bluff]
+					["qg"] = 5906,	-- Xanis Flameweaver
+					["coord"] = { 25.2, 21, THUNDER_BLUFF },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+					["groups"] = {
+						i(5178, {	-- Air Totem
+							["description"] = "You must keep this in your bags forever.",
+						}),
+					},
+				}),
 				q(25672, {	-- Carcass Collection
 					["qg"] = 41060,	-- Ajamon Ghostcaller
 					["sourceQuest"] = 25661,	-- With a Little Help...
