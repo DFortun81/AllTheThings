@@ -597,7 +597,209 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
+				--  Weekly Raid Quests
+				q(24874, {	-- Blood Quickening [10]
+					["qg"] = 38551,	-- Alrin the Agile
+					["timeline"] = { "removed 4.0.1" },
+					["isWeekly"] = true,
+					["lvl"] = 80,
+					["groups"] = {
+						objective(1, {	-- Minchar Rescued
+							["provider"] = { "n", 38558 },	-- Infiltrator Minchar
+						}),
+						i(52006),	-- Sack of Frosty Treasures
+					},
+				}),
+				q(24879, {	-- Blood Quickening [25]
+					["qg"] = 38551,	-- Alrin the Agile
+					["timeline"] = { "removed 4.0.1" },
+					["isWeekly"] = true,
+					["lvl"] = 80,
+					["groups"] = {
+						objective(1, {	-- Minchar Rescued
+							["provider"] = { "n", 38558 },	-- Infiltrator Minchar
+						}),
+						i(52006),	-- Sack of Frosty Treasures
+					},
+				}),
+				q(24869, {	-- Deprogramming [10]
+					["qg"] = 38471,	-- Infiltrator Minchar
+					["timeline"] = { "removed 4.0.1" },
+					["isWeekly"] = true,
+					["lvl"] = 80,
+					["groups"] = {
+						objective(1, {	-- Rescue Darnavan
+							["provider"] = { "n", 38485 },	-- Darnavan
+						}),
+						i(52006),	-- Sack of Frosty Treasures
+					},
+				}),
+				q(24875, {	-- Deprogramming [25]
+					["qg"] = 38471,	-- Infiltrator Minchar
+					["timeline"] = { "removed 4.0.1" },
+					["isWeekly"] = true,
+					["lvl"] = 80,
+					["groups"] = {
+						objective(1, {	-- Rescue Darnavan
+							["provider"] = { "n", 38485 },	-- Darnavan
+						}),
+						i(52006),	-- Sack of Frosty Treasures
+					},
+				}),
+				q(24873, {	-- Residue Rendezvous [10]
+					["qg"] = 38501,	-- Alchemist Adrianna
+					["timeline"] = { "removed 4.0.1" },
+					["isWeekly"] = true,
+					["lvl"] = 80,
+					["groups"] = {
+						objective(1, {	-- Return with two strains of Blight.
+							["providers"] = {
+								{ "n", 36626 },	-- Festergut
+								{ "n", 36627 },	-- Rotface
+							},
+						}),
+						i(52006),	-- Sack of Frosty Treasures
+					},
+				}),
+				q(24878, {	-- Residue Rendezvous[25]
+					["qg"] = 38501,	-- Alchemist Adrianna
+					["timeline"] = { "removed 4.0.1" },
+					["isWeekly"] = true,
+					["lvl"] = 80,
+					["groups"] = {
+						objective(1, {	-- Return with two strains of Blight.
+							["providers"] = {
+								{ "n", 36626 },	-- Festergut
+								{ "n", 36627 },	-- Rotface
+							},
+						}),
+						i(52006),	-- Sack of Frosty Treasures
+					},
+				}),
+				q(24872, {	-- Respite for a Tormented Soul [10]
+					["qg"] = 38589,	-- Valithria Dreamwalker
+					["timeline"] = { "removed 4.0.1" },
+					["isWeekly"] = true,
+					["lvl"] = 80,
+					["groups"] = {
+						objective(1, {	-- 0/1 Crystalline Essence of Sindragosa
+							["providers"] = {
+								{ "i", 51026 },	-- Crystalline Essence of Sindragosa
+								{ "i", 50851 },	-- Pulsing Life Crystal
+							},
+							["cr"] = 36853,	-- Sindragosa
+						}),
+						i(52006),	-- Sack of Frosty Treasures
+					},
+				}),
+				q(24880, {	-- Respite for a Tormented Soul [25]
+					["qg"] = 38589,	-- Valithria Dreamwalker
+					["timeline"] = { "removed 4.0.1" },
+					["isWeekly"] = true,
+					["lvl"] = 80,
+					["groups"] = {
+						objective(1, {	-- 0/1 Crystalline Essence of Sindragosa
+							["providers"] = {
+								{ "i", 51027 },	-- Crystalline Essence of Sindragosa
+								{ "i", 50851 },	-- Pulsing Life Crystal
+							},
+							["cr"] = 36853,	-- Sindragosa
+						}),
+						i(52006),	-- Sack of Frosty Treasures
+					},
+				}),
+				q(24871, {	-- Securing the Ramparts [10] (A)
+					["qg"] = 38492,	-- Skybreaker Lieutenant
+					["timeline"] = { "removed 4.0.1" },
+					["isWeekly"] = true,
+					["lvl"] = 80,
+					["groups"] = {
+						objective(1, {	-- 0/1 Rotting Frost Giant slain
+							["provider"] = { "n", 38490 },	-- Rotting Frost Giant
+						}),
+						i(52006),	-- Sack of Frosty Treasures
+					},
+				}),
+				q(24876, {	-- Securing the Ramparts [25] (A)
+					["qg"] = 38492,	-- Skybreaker Lieutenant
+					["timeline"] = { "removed 4.0.1" },
+					["isWeekly"] = true,
+					["lvl"] = 80,
+					["groups"] = {
+						objective(1, {	-- 0/1 Rotting Frost Giant slain
+							["provider"] = { "n", 38494 },	-- Rotting Frost Giant
+						}),
+						i(52006),	-- Sack of Frosty Treasures
+					},
+				}),
+				q(24870, {	-- Securing the Ramparts [10] (H)
+					["qg"] = 38491,	-- Kor'kron Lieutenant
+					["timeline"] = { "removed 4.0.1" },
+					["isWeekly"] = true,
+					["lvl"] = 80,
+					["groups"] = {
+						objective(1, {	-- 0/1 Rotting Frost Giant slain
+							["provider"] = { "n", 38490 },	-- Rotting Frost Giant
+						}),
+						i(52006),	-- Sack of Frosty Treasures
+					},
+				}),
+				q(24877, {	-- Securing the Ramparts [25] (H)
+					["qg"] = 38491,	-- Kor'kron Lieutenant
+					["timeline"] = { "removed 4.0.1" },
+					["isWeekly"] = true,
+					["lvl"] = 80,
+					["groups"] = {
+						objective(1, {	-- 0/1 Rotting Frost Giant slain
+							["provider"] = { "n", 38494 },	-- Rotting Frost Giant
+						}),
+						i(52006),	-- Sack of Frosty Treasures
+					},
+				}),
 			}),
+			-- #if BEFORE 4.0.1
+			n(REWARDS, {
+				["sourceQuests"] = {
+					24874,	-- Blood Quickening [10]
+					24879,	-- Blood Quickening [25]
+					24869,	-- Deprogramming [10]
+					24875,	-- Deprogramming [25]
+					24873,	-- Residue Rendezvous [10]
+					24878,	-- Residue Rendezvous [25]
+					24872,	-- Respite for a Tormented Soul [10]
+					24880,	-- Respite for a Tormented Soul [25]
+					24871,	-- Securing the Ramparts [10] (A)
+					24876,	-- Securing the Ramparts [25] (A)
+					24870,	-- Securing the Ramparts [10] (H)
+					24877,	-- Securing the Ramparts [25] (H)
+				},
+				["description"] = "Rewarded for completing the Weekly Raid quests.",
+				["groups"] = {
+					i(52006, {	-- Sack of Frosty Treasures
+						["timeline"] = { "removed 4.0.1" },
+						["sym"] = {
+							{
+								"select", "itemID",
+								50452,	-- Wodin's Lucky Necklace
+								50020,	-- Raging Behemoth's Shoulderplates
+								50449,	-- Stiffened Corpse Shoulderpads
+								50001,	-- Ikfirus's Sack of Wonder
+								49994,	-- The Lady's Brittle Bracers
+								50015,	-- Belt of the Blood Nova
+								50447,	-- Harbinger's Bone Band
+								50453,	-- Ring of Rotting Sinew
+								36931,	-- Ametrine
+								36919,	-- Cardinal Ruby
+								36934,	-- Eye of Zul
+								36928,	-- Dreadstone
+								36922,	-- King's Amber
+								36925,	-- Majestic Zircon
+							}
+						},
+					}),
+				},
+			}),
+			-- #endif
 			n(VENDORS, {
 				cl(DEATHKNIGHT, {
 					["cr"] = 38316,	-- Ormus the Penitent <Death Knight Armor>
