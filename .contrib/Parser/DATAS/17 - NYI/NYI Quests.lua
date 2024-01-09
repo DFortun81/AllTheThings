@@ -237,6 +237,86 @@ root(ROOTS.NeverImplemented, {
 				i(20946, { ["name"] = "Tactical Task Briefing III", }),	-- Silithus
 				i(21246, { ["name"] = "Combat Task Briefing I", }),	-- Silithus
 				i(21247, { ["name"] = "Combat Task Briefing II", }),	-- Silithus
+				
+				-- Got these from Questie
+				q(1, { ["name"] = "The \"Chow\" Quest (123)aa", }),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
+				q(7788, { ["name"] = "Vanquish the Invaders!", }),
+				q(7871, { ["name"] = "Vanquish the Invaders!", }),
+				q(7872, { ["name"] = "Vanquish the Invaders!", }),
+				q(7873, { ["name"] = "Vanquish the Invaders!", }),
+				q(8290, { ["name"] = "Vanquish the Invaders!", }),
+				q(8291, { ["name"] = "Vanquish the Invaders!", }),
+				
+				-- Retired PVP Battleground Quests
+				-- Warsong Gulch
+				q(8293),	-- Mark of Honor [lvl 60]
+				q(7922),	-- Mark of Honor [lvl 50]
+				q(7923),	-- Mark of Honor [lvl 40]
+				q(7924),	-- Mark of Honor [lvl 30]
+				q(7925),	-- Mark of Honor [lvl 20]
+				q(8296),	-- Mark of Honor [lvl 10]
+				q(8567, { ["name"] = "Past Victories in Warsong Gulch", }),
+				q(8568, { ["name"] = "Past Victories in Warsong Gulch", }),
+				q(8569, { ["name"] = "Past Efforts in Warsong Gulch", }),
+				q(8570, { ["name"] = "Past Efforts in Warsong Gulch", }),
+				q(7789, { ["name"] = "Quell the Silverwing Usurpers", }),
+				q(7874, { ["name"] = "Quell the Silverwing Usurpers", }),
+				q(7875, { ["name"] = "Quell the Silverwing Usurpers", }),
+				q(7876, { ["name"] = "Quell the Silverwing Usurpers", }),
+				q(8294, { ["name"] = "Quell the Silverwing Usurpers", }),
+				q(8295, { ["name"] = "Quell the Silverwing Usurpers", }),
+				q(8266),	-- Ribbons of Sacrifice
+				q(8267),	-- Ribbons of Sacrifice
+				q(8268),	-- Ribbons of Sacrifice
+				q(8269),	-- Ribbons of Sacrifice
+				q(8002),	-- Silverwing Sentinels <NYI> <TXT>
+				i(19213),	-- Silverwing Talisman of Merit
+				q(8292),	-- Talismans of Merit [lvl 60]
+				q(7886),	-- Talismans of Merit [lvl 50]
+				q(7888),	-- Talismans of Merit [lvl 40]
+				q(7887),	-- Talismans of Merit [lvl 30]
+				q(7921),	-- Talismans of Merit [lvl 20]
+				q(8289),	-- Talismans of Merit [lvl 10]
+				i(20256),	-- Warsong Gulch Ribbon of Sacrifice
+				i(19322),	-- Warsong Mark of Honor
+				q(8001),	-- Warsong Outriders <NYI> <TXT>
+				
+				-- Arathi Basin
+				i(19725),	-- Arathi Resource Crate
+				q(8158),	-- More Resource Crates [lvl 20] (A)
+				q(8165),	-- More Resource Crates [lvl 20] (H)
+				q(8159),	-- More Resource Crates [lvl 30] (A)
+				q(8164),	-- More Resource Crates [lvl 30] (H)
+				q(8157),	-- More Resource Crates [lvl 40] (A)
+				q(8163),	-- More Resource Crates [lvl 40] (H)
+				q(8081),	-- More Resource Crates [lvl 50] (A)
+				q(8124),	-- More Resource Crates [lvl 50] (H)
+				q(8298),	-- More Resource Crates [lvl 60] (A)
+				q(8300),	-- More Resource Crates [lvl 60] (H)
+				q(8565),	-- Past Victories in Arathi
+				q(8566),	-- Past Victories in Arathi
+				q(8080, { ["name"] = "Arathi Basin Resources!", }),
+				q(8081, { ["name"] = "More Resource Crates", }),
+				q(8124, { ["name"] = "More Resource Crates", }),
+				q(8157, { ["name"] = "More Resource Crates", }),
+				q(8158, { ["name"] = "More Resource Crates", }),
+				q(8159, { ["name"] = "More Resource Crates", }),
+				q(8163, { ["name"] = "More Resource Crates", }),
+				q(8164, { ["name"] = "More Resource Crates", }),
+				q(8165, { ["name"] = "More Resource Crates", }),
+				q(8298, { ["name"] = "More Resource Crates", }),
+				q(8300, { ["name"] = "More Resource Crates", }),
+				q(8565, { ["name"] = "Past Victories in Arathi", }),
+				q(8566, { ["name"] = "Past Victories in Arathi", }),
+				q(8123, { ["name"] = "Cut Arathor Supply Lines", }),
+				q(8160, { ["name"] = "Cut Arathor Supply Lines", }),
+				q(8161, { ["name"] = "Cut Arathor Supply Lines", }),
+				q(8162, { ["name"] = "Cut Arathor Supply Lines", }),
+				q(8299, { ["name"] = "Cut Arathor Supply Lines", }),
+				q(8154, { ["name"] = "Arathi Basin Resources!", }),
+				q(8155, { ["name"] = "Arathi Basin Resources!", }),
+				q(8156, { ["name"] = "Arathi Basin Resources!", }),
+				q(8297, { ["name"] = "Arathi Basin Resources!", }),
 			}),
 		}),
 		tier(TBC_TIER, {

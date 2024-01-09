@@ -454,8 +454,6 @@ root(ROOTS.Unsorted, {
 			i(169724),	-- Notorious Gladiator's Bonegrinder (H)	-- I collected it somehow -Darkal
 		})),
 		n(QUESTS, {	-- These are/were completable
-			-- Classic
-			q(1),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
 			-- 4.0.3
 			-- 5.0.1
 			q(30549),	-- [DNT] Rearm, Reuse, Recycle TRACKER

@@ -2236,6 +2236,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(79077, {	-- Sharing the Faith
+					["qg"] = 1212,	-- Bishop Farthing
+					["coord"] = { 39.2, 28, STORMWIND_CITY },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { ELWYNN_FOREST },
+					["races"] = { DWARF, HUMAN },
+					["lvl"] = 5,
+					["groups"] = {
+						objective(1, {	-- Pray over the Supplicant
+							["provider"] = { "n", 215062 },	-- Supplicant
+							["description"] = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
+						}),
+					},
+				})),
+				-- #endif
 				q(2206, {	-- Snatch and Grab
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
 					["sourceQuest"] = 2205,	-- Seek out SI:7

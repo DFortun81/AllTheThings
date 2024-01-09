@@ -242,6 +242,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78277, {	-- A Token of Gratitude
+					["qg"] = 1498,	-- Bethor Iceshard
+					["sourceQuest"] = 491,	-- Wand to Bethor
+					["coord"] = { 84.2, 17.4, UNDERCITY },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { MAGE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 12,
+					["groups"] = {
+						recipe(415936, {	-- Engrave Gloves - Living Bomb
+							["classes"] = { MAGE },
+						}),
+					},
+				})),
+				-- #endif
 				q(7819, {	-- Additional Runecloth [Undercity]
 					["qg"] = 14729,	-- Ralston Farnsley
 					["sourceQuest"] = 7818,	-- A Donation of Runecloth
@@ -854,6 +870,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(79080, {	-- Sharing the Faith
+					["qg"] = 4607,	-- Father Lankester <Priest Trainer>
+					["coord"] = { 49.6, 15.6, UNDERCITY },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { TIRISFAL_GLADES },
+					["races"] = { UNDEAD },
+					["lvl"] = 5,
+					["groups"] = {
+						objective(1, {	-- Pray over the Supplicant
+							["provider"] = { "n", 215098 },	-- Supplicant
+							["description"] = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
+						}),
+					},
+				})),
+				-- #endif
 				q(1881, {	-- Speak with Anastasia
 					["qg"] = 2128,	-- Cain Firesong <Mage Trainer>
 					["altQuests"] = { 1883 },	-- Speak with Un'thuwa
@@ -1991,6 +2023,3 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		},
 	}),
 }));
-
-
---- \{[\s]*"select",[\s]*"itemID",[\s]*([\d]+)[\s]*\},[ ]*[\s]*--

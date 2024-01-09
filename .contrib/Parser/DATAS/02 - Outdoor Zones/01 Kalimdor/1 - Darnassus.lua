@@ -610,6 +610,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, q(79078, {	-- Sharing the Faith
+					["qg"] = 4092,	-- Lariia <Priest Trainer>
+					["coord"] = { 40, 87.4, DARNASSUS },
+					["timeline"] = { "removed 2.0.1" },
+					["races"] = { NIGHTELF },
+					["lvl"] = 5,
+					["groups"] = {
+						objective(1, {	-- Pray over the Supplicant
+							["provider"] = { "n", 215095 },	-- Supplicant
+							["description"] = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
+						}),
+					},
+				})),
 				-- #endif
 				q(1692, {	-- Smith Mathiel
 					["providers"] = {

@@ -1370,6 +1370,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(79079, {	-- Sharing the Faith
+					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
+					["coord"] = { 35.6, 87.6, ORGRIMMAR },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { DUROTAR },
+					["races"] = { TROLL },
+					["lvl"] = 5,
+					["groups"] = {
+						objective(1, {	-- Pray over the Supplicant
+							["provider"] = { "n", 215096 },	-- Supplicant
+							["description"] = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
+						}),
+					},
+				})),
+				-- #endif
 				q(1943, {	-- Speak with Deino
 					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
 					["coord"] = { 85, 10.2, UNDERCITY },
