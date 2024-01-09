@@ -99,6 +99,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(208838, {	-- Dark Iron Lockbox
+						["coord"] = { 56.6, 14.0, LOCH_MODAN },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							1222,	-- Dark Iron Sapper
+							1169,	-- Dark Iron Insurgent
+						},
+						["groups"] = {
+							i(208771, {	-- Rune of Blade Dance
+								["classes"] = { ROGUE },
+								["groups"] = {
+									recipe(400099),	-- Engrave Pants - Blade Dance
+								},
+							}),
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(250, {	-- A Dark Threat Looms (1/7)
 					["qg"] = 1093,	-- Chief Engineer Hinderweir VII

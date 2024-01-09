@@ -2623,6 +2623,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						recipe(410110),	-- Engrave Gloves - Beast Mastery
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208771, {	-- Rune of Blade Dance
+					["providers"] = {
+						{ "o", 414532 },	-- Clliffspring Chest (mispelled?!)
+						{ "i", 211471 },	-- Cliffspring Key
+					},
+					["coord"] = { 56.3, 34.9, DARKSHORE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400099),	-- Engrave Pants - Blade Dance
+					},
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {
@@ -2705,6 +2717,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(211471, {	-- Cliffspring Key
+					["coord"] = { 55.8, 34.2, DARKSHORE },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						2179,	-- Stormscale Wave Rider
+						2180,	-- Stormscale Siren
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209027, {	-- Crab Treats
 					["coord"] = { 39.8, 54.6, DARKSHORE },
 					["classes"] = { HUNTER },

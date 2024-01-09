@@ -121,6 +121,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Drops from fishing in the Sludge Fen.",
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(208768, {	-- Buccaneer's Matchbox
+						["coord"] = { 63.6, 49.2, THE_BARRENS },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							3384,	-- Southsea Privateer
+							3383,	-- Southsea Cutthroat
+							3381,	-- Southsea Brigand
+							3382,	-- Southsea Cannoneer
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(1153, {	-- A New Ore Sample
 					["qg"] = 3433,	-- Tatternack Steelforge
@@ -4062,6 +4079,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 407289 },	-- Horde Warbanner
 					["coord"] = { 52.2, 31.1, THE_BARRENS },
 					["races"] = HORDE_ONLY,
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208771, {	-- Rune of Blade Dance
+					["providers"] = {
+						{ "o", 407454 },	-- Gunpowder Keg
+						{ "i", 208768 },	-- Buccaneer's Matchbox
+						{ "o", 407453 },	-- Southsea Loot Stash
+					},
+					["coord"] = { 62, 45, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400099),	-- Engrave Pants - Blade Dance
+					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208750, {	-- Rune of Channeling
 					["provider"] = { "o", 407347 },	-- Altar of Thorns

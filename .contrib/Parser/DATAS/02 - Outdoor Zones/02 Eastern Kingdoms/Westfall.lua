@@ -112,6 +112,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(209031, {	-- Discreet Envelope
+						["coord"] = { 48.6, 48.6, WESTFALL },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							 95,	-- Defias Smuggler
+							504,	-- Defias Trapper
+							590,	-- Defias Looter
+							121,	-- Defias Pathstalker
+							589,	-- Defias Pillager
+						},
+						["groups"] = {
+							i(209030, {	-- Equipment Stash Key
+								["classes"] = { ROGUE },
+							}),
+							i(209029, {	-- Message from Emily
+								["classes"] = { ROGUE },
+							}),
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(6181, {	-- A Swift Message
 					["qg"] = 491,	-- Quartermaster Lewis
@@ -1503,6 +1529,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(208860, {	-- Rumi of Gnomeregan: The Collected Works
 					["provider"] = { "o", 408014 },	-- Gnomish Tome
 					["coord"] = { 52.7, 53.8, WESTFALL },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208771, {	-- Rune of Blade Dance
+					["providers"] = {
+						{ "o", 408718 },	-- Equipment Stash
+						{ "i", 209030 },	-- Equipment Stash Key
+					},
+					["coord"] = { 40.80, 80.24, WESTFALL },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400099),	-- Engrave Pants - Blade Dance
+					},
 				})),
 			}),
 			-- #endif
