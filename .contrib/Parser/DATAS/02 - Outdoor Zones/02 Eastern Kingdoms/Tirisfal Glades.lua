@@ -886,6 +886,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			spell(921, {	-- Pickpocketing
 				["classes"] = { ROGUE },
 				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(208005, {	-- Agamand Relic Coffer Key
+						["coords"] = {
+							{ 58.8, 38.2, TIRISFAL_GLADES },
+							{ 53.0, 28.8, TIRISFAL_GLADES },
+							{ 46.0, 30.6, TIRISFAL_GLADES },
+							{ 52.8, 56.8, TIRISFAL_GLADES },
+							{ , TIRISFAL_GLADES },
+						},
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							1674,	-- Rot Hide Gnoll
+							1534,	-- Wailing Ancestor
+							1523,	-- Cracked Skull Soldier
+							1522,	-- Darkeye Bonecaster
+							1526,	-- Ravaged Corpse
+						},
+					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208085, {	-- Scarlet Lieutenant Signet Ring
 						["coords"] = {
 							{ 51.8, 67.4, TIRISFAL_GLADES },
@@ -2413,6 +2431,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(203993, {	-- Rune of Slaughter
 					["provider"] = { "o", 404941 },	-- Relic Coffer
+					["cost"] = {{ "i", 208005, 1 }},	-- Agamand Relic Coffer Key
 					["coord"] = { 52.5, 25.8, TIRISFAL_GLADES },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { ROGUE },
