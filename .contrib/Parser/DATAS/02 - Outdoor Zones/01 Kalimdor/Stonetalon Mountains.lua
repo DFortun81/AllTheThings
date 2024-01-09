@@ -2087,6 +2087,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(212837, {	-- Primordial Anomaly
+					["coord"] = { 29.6, 72.0, STONETALON_MOUNTAINS },
+					["groups"] = {
+						i(210811, {	-- Rune of Primordial Fury
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(425343),	-- Engrave Pants - Shamanistic Rage
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(50343, {	-- Quall
 					["coords"] = {
 						{ 60.0, 63.4, STONETALON_MOUNTAINS },
