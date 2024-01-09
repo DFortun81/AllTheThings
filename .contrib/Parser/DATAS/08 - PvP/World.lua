@@ -3,7 +3,7 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(n(-10058, {	-- World
 	tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
-		n(-243,	{	-- Bounty (for later). Contains every aspirant gear as well
+		n(BOUNTY, {	-- Bounty (for later). Contains every aspirant gear as well
 			i(163825),	-- Plundered Supplies
 			i(170539),	-- Plunderer Supplies (Nazjartar and maybe Mechagnom)
 		}),
@@ -46,7 +46,7 @@ root(ROOTS.PVP, pvp(n(-10058, {	-- World
 		}),
 	})),
 	tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2 } }, {
-		n(-243,	{	-- Bounty (for later). Contains every aspirant gear as well
+		n(BOUNTY, {	-- Bounty (for later). Contains every aspirant gear as well
 			i(184810),	-- Plundered Supplies [Shadowlands-Maldraxxus-(Ore)]
 		}),
 	})),

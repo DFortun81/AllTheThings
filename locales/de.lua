@@ -118,7 +118,6 @@ local ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. ITEM_UPGRADE_DISCO
 	L.HIDDEN_QUEST_TRIGGERS = "Versteckte Quest Auslöser";
 	L.HIDDEN_QUEST_TRIGGERS_DESC = "Dies sind Quests, deren Auslösung anhand bestimmter Kriterien manuell festgelegt wurde und die vor allem Intern vom Spiel zu Nachverfolgungszwecken verwendet werden.";
 	L.UNSORTED_DESC_2 = "Gegenstände hier existieren im Spiel und können für Spieler verfügbar sein, wurden aber noch nicht an den richtigen Ort in ATT gebracht.";
-	--TODO: L.BOUNTY_DESC = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below.";
 	L.OPEN_AUTOMATICALLY = "Automatisch öffnen";
 	--TODO: L.OPEN_AUTOMATICALLY_DESC = "If you aren't a Blizzard Developer, it might be a good idea to uncheck this. This was done to force Blizzard to fix and/or acknowledge these bugs.";
 	--TODO: L.OGOM_THE_MANGLER_DESC = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r";
@@ -656,7 +655,6 @@ for key,value in pairs({
 		[-152] = "Garnisonskampagne",								-- Garrison Campaign
 	-- PvP
 		[-242] = "Ungewertet",										-- Unrated
-		[-243] = "Preisgeld",										-- Bounty
 	-- Allied Races
 		[-255] = "Traditionsrüstung",								-- Heritage
 	-- BFA Outposts

@@ -254,6 +254,7 @@ _.HeaderConstants = {
 	THOUSAND_BOAT_BASH_HEADER = -1000229,
 	TREASURES = -1000038,
 	TRIAL_OF_STYLE_HEADER = -1000230,
+	UI_BOUNTY_WINDOW = -1000380,
 	UNIQUE_APPEARANCE = -1000163,
 	VENDORS = -1000039,
 	WAR_EFFORT = -1000076,
@@ -609,6 +610,8 @@ localize(L.HEADER_NAMES, {
 	[-1000369] = "Year 2024",
 	[-1000373] = "New Character",
 	[-1000374] = "Allied Races",
+	[-1000379] = "Bounty",
+	[-1000380] = "Bounty",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -682,6 +685,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000362] = "Congrats on making it this far!  Now it's time to take your favorite li'l ghost on a world tour.",
 	[-1000367] = "This is rewarded for filling the Travel Points Progress Bar in the month.",
 	[-1000368] = "Timewalking difficulties needlessly create new Source IDs for items despite having the exact same name, appearance, and display in the Collections Tab.\n\nA plea to the Blizzard Devs: Please clean up the Source ID database and have your Timewalking / Titanforged item variants use the same Source ID as their base assuming the appearances and names are exactly the same. Not only will this make your database much cleaner, but it will also make Completionists excited for rather than dreading the introduction of more Timewalking content.\n\n - Crieve, the Very Bitter Account Completionist that had 99% Ulduar completion and now only has 64% because your team duplicated the Source IDs rather than reuse the existing one.",
+	[-1000380] = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1028,6 +1032,8 @@ localize(L.HEADER_ICONS, {
 	[-1000369] = "Interface/Icons/inv_misc_missilesmall_green",
 	[-1000373] = "1530081",
 	[-1000374] = "Interface/Icons/FactionChange",
+	[-1000379] = "Interface/Icons/Inv_bountyhunting",
+	[-1000380] = "Interface/Icons/Inv_bountyhunting",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
@@ -10569,11 +10575,14 @@ localize(L.HEADER_NAMES, {
 	[-1000366] = "Ein gieriger Abgesandter",
 	[-1000373] = "Neuer Charakter",
 	[-1000374] = "Verbündete Völker",
+	[-1000379] = "Kopfgeld",
+	[-1000380] = "Kopfgeld",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
 	[-1000162] = "Die Gegenstände in dieser Liste teilen ihre Vorlage mit dem oben genannten Gegenstand. Im Modus für Einzigartige Vorlagen kann diese Liste Ihnen helfen zu verstehen, warum ein bestimmter Gegenstand als gesammelt markiert ist, oder ob nicht.",
 	[-1000163] = "Dieser Gegenstand hat eine einzigartige Vorlage. Ihr müsst diesen Gegenstand erhalten, um die Vorlage eurer Sammlung hinzuzufügen.",
+	[-1000380] = "Diese Liste enthält nicht erhältliche Gegenstände, die von ATT Discord als Fehler gemeldet wurden, die Blizzard noch beheben muss.\n\nHINWEIS: Alle Filter werden aus Sichtbarkeitsgründen in dieser Liste ignoriert. In dieser Liste sind nur Gegenstände enthalten, die aufgrund von Fahrlässigkeit aus dem Spiel entfernt wurden, und nicht ein riesiger feuerspeiender Drache.\n\nAn Blizzard-Entwickler: Bitte beheben Sie die unten aufgeführten Gegenstände und Begegnungen.",
 });
 localize(L.FILTER_ID_TYPES, {
 	[11] = "Artefakte",
@@ -13983,10 +13992,13 @@ localize(L.HEADER_NAMES, {
 	[-1000366] = "Un Emisario Codicioso",
 	[-1000373] = "Nueva personaje",
 	[-1000374] = "Razas aliadas",
+	[-1000379] = "Prima",
+	[-1000380] = "Prima",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
 	[-1000163] = "Este artículo tiene una apariencia única. Debes recolectar este artículo específicamente para ganar la apariencia.",
+	[-1000380] = "Esta lista contiene elementos inalcanzables que ATT Discord ha informado como errores que Blizzard aún no ha solucionado.\n\nNOTA: Todos los filtros se ignoran en esta lista para mayor visibilidad. En esta lista solo están presentes los elementos eliminados del juego debido a negligencia y no a un gigantesco dragón que escupe fuego.\n\nA los desarrolladores de Blizzard: arreglen los elementos y encuentros que se enumeran a continuación.",
 });
 localize(L.FILTER_ID_TYPES, {
 	[60] = "Cámara SELFI",
@@ -17355,6 +17367,8 @@ localize(L.HEADER_NAMES, {
 	[-1000366] = "Émissaire cupide",
 	[-1000373] = "Nouveau personnage",
 	[-1000374] = "Races alliées",
+	[-1000379] = "Prime",
+	[-1000380] = "Prime",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon.",
@@ -17364,6 +17378,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000045] = "Ces objets peuvent provenir de coffres au trésor répétitifs, Criquet à souhait, de quêtes mondiales ou des missions de la table de commandement.",
 	[-1000162] = "Les éléments de cette liste sont des apparences partagées pour l'élément ci-dessus. En mode Apparence unique, cette liste peut vous aider à comprendre pourquoi ou pourquoi un élément spécifique serait marqué Collecté.",
 	[-1000163] = "Cet article a une apparence unique. Vous devez collecter cet objet spécifiquement pour gagner l’apparence.",
+	[-1000380] = "Cette liste contient des éléments impossibles à obtenir que ATT Discord a signalés comme des bogues que Blizzard n'a pas encore corrigés.\n\nREMARQUE : Tous les filtres sont ignorés dans cette liste pour des raisons de visibilité. Seuls les éléments retirés du jeu en raison d'une négligence plutôt que d'un gigantesque dragon cracheur de feu sont présents sur cette liste.\n\nAux développeurs de Blizzard : veuillez corriger les éléments et les rencontres répertoriés ci-dessous.",
 });
 localize(L.HEADER_LORE, {
 	[-1000308] = "Les objets suivants peuvent être créés en utilisant un Fardeau de l'éternité sur un jeton de Cache d'armure du Temps figé pour une double dose de RNG inutile.",
@@ -20742,10 +20757,13 @@ localize(L.HEADER_NAMES, {
 	[-1000366] = "Un emissario avido",
 	[-1000373] = "Nuovo personaggio",
 	[-1000374] = "Razze Alleate",
+	[-1000379] = "Premio",
+	[-1000380] = "Premio",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
 	[-1000163] = "Questo oggetto ha un aspetto unico. Devi raccogliere questo oggetto appositamente per guadagnare l'aspetto.",
+	[-1000380] = "Questo elenco contiene elementi non ottenibili che ATT Discord ha segnalato come bug che Blizzard deve ancora correggere.\n\nNOTA: tutti i filtri vengono ignorati in questo elenco per motivi di visibilità. In questo elenco sono presenti solo gli oggetti rimossi dal gioco a causa di negligenza e non un gigantesco drago sputafuoco.\n\nAgli sviluppatori Blizzard: correggete gli oggetti e gli incontri elencati di seguito.",
 });
 localize(L.FILTER_ID_TYPES, {
 	[60] = "Fotocamera S.E.L.F.I.E.",
@@ -23927,10 +23945,13 @@ localize(L.HEADER_NAMES, {
 	[-1000366] = "탐욕의 사절",
 	[-1000373] = "새로운 캐릭터",
 	[-1000374] = "동맹 종족",
+	[-1000379] = "하사품",
+	[-1000380] = "하사품",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
 	[-1000163] = "이 아이템은 독특한 외형을 가지고 있습니다. 외형을 획득하려면 이 아이템을 특별히 수집해야 합니다.",
+	[-1000380] = "이 목록에는 ATT Discord에서 Blizzard가 아직 수정하지 않은 버그로 보고한 얻을 수 없는 항목이 포함되어 있습니다.\n\n참고: 가시성을 위해 이 목록 내에서 모든 필터는 무시됩니다. 거대한 불을 뿜는 용이 아닌 부주의로 인해 게임에서 제거된 아이템만 이 목록에 있습니다.\n\n블리자드 개발자 여러분께: 아래 나열된 아이템과 만남을 수정해 주세요.",
 });
 localize(L.FILTER_ID_TYPES, {
 	[60] = "\"셀카\" 사진기",
@@ -27022,10 +27043,13 @@ localize(L.HEADER_NAMES, {
 	[-1000366] = "Um Emissário Ganancioso",
 	[-1000373] = "Novo personagem",
 	[-1000374] = "Raças Aliadas",
+	[-1000379] = "Recompensa",
+	[-1000380] = "Recompensa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
 	[-1000163] = "Este item tem uma aparência única. Você deve coletar este item especificamente para ganhar a aparência.",
+	[-1000380] = "Esta lista contém itens inacessíveis que o ATT Discord relatou como bugs que a Blizzard ainda não corrigiu.\n\nNOTA: Todos os filtros são ignorados nesta lista para visibilidade. Apenas itens removidos do jogo por negligência, em vez de um gigantesco dragão cuspidor de fogo, estão presentes nesta lista.\n\nPara os desenvolvedores da Blizzard: Corrijam os itens e encontros listados abaixo.",
 });
 localize(L.FILTER_ID_TYPES, {
 	[60] = "Câmera de S.E.L.F.I.E.",
@@ -30427,6 +30451,8 @@ localize(L.HEADER_NAMES, {
 	[-1000366] = "Алчный посланец",
 	[-1000373] = "Новый персонаж",
 	[-1000374] = "Союзные расы",
+	[-1000379] = "Премия",
+	[-1000380] = "Премия",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Эти предметы можно получить в награду Заданий эмиссаров или из припасов.",
@@ -30438,6 +30464,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Предметы из данного списка - общие облики для предмета выше. Для Режима Уникальных Обликов, этот список может помочь Вам разобраться, почему определённый предмт отмечен как Получен или нет.",
 	[-1000163] = "Этот предмет имеет Уникальный Облик. Вы должны получить именно этот предмет для открытия Облика.",
 	[-1000368] = "Путешествия во времени без надобности создают новые ID Источников для предметов, несмотря на то, что они имеют те же имена, облики и отображение в Коллекции.\n\nУбедительная просьба разработчикам Blizzard: Пожалуйста, почистите базу данных ID Источников и сделайте варианты предметов из Путешествий во времени/Кованные титанами с тем же ID Источника, что и оригинал, поскольку названия и облики абсолютно идентичны. Не только сделает вашу базу данных чище, но и позволит Собирателям относиться к новым Путешествиям во времени с воодушевлением, нежели с раздражением.\n\n - Crieve, Очень Огорченный Собиратель, у которого теперь всего лишь 64% выполнение Ульдуара, когда было 99%, потому что ваша команда продублировала ID Источников вместо использования уже имеющихся.",
+	[-1000380] = "Этот список содержит Недоступные предметы, что Дискорд ATT сообщил как ошибки, которые Blizzard ещё не исправили.\n\nВНИМАНИЕ: Все фильтры игнорируются в данном списке для видимости. Только предметы, удалённые из игры из-за халатности, но не из-за гигантского огнедышащего дракона, перечислены в данном списке.\n\nК разработчикам Blizzard: Пожалуйста, почините предметы и события, перечисленные ниже.",
 });
 localize(L.HEADER_LORE, {
 	[-1000308] = "Эти предметы могут быть созданы при помощи Бремя вечности и Вневременного токена для двойной дозы бессмысленного рандома.",
@@ -33950,6 +33977,8 @@ localize(L.HEADER_NAMES, {
 	[-1000366] = "贪婪的特使",
 	[-1000373] = "新角色",
 	[-1000374] = "同盟种族",
+	[-1000379] = "赏金任务",
+	[-1000380] = "赏金任务",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "这些物品可以通过做使者任务或获得巅峰宝箱来获得。",
@@ -33961,6 +33990,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "此列表中的物品是以下物品的共享外观。在唯一外观模式下，此列表可帮助了解特定物品被标记为已收藏的原因。",
 	[-1000163] = "此列表中的物品是独特外观。你必须专门收藏这个物品以获得外观。",
 	[-1000368] = "时光难度为物品创建新的源 ID，尽管它们的名称、外观和在收藏选项卡中的显示完全相同。\n\n向暴雪开发部提出请求：请清理源码数据库让时光/泰坦造物物品使用相同的源码作为基础，前提是外观和名称完全相同。这不仅会让数据库变得更加干净，而且会让完成者们对更多的时光内容的感到兴奋而不是恐惧。\n\n - Crieve，非常苦逼的战网完成度，本来有99%的奥杜尔完成度，现在只有64%，因为暴雪团队复制了源码，而不是重复使用现有的源码。",
+	[-1000380] = "此列表包含 ATT Discord 报告的无法获取的物品，这些物品是暴雪尚未修复的错误。\n\n注意：在此列表中忽略所有过滤器以获得可见性。此列表中仅显示因疏忽而从游戏中移除的物品。\n\n致暴雪开发者：请修复下面列出的物品和事件。",
 });
 localize(L.HEADER_LORE, {
 	[-1000308] = "以下物品可以通过在永恒护甲代币上使用不朽之责获得双倍无意随机生成来创建。",

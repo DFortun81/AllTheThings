@@ -660,6 +660,7 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 						-- #if NOT ANYCLASSIC
 						["lockCriteria"] = { 1, "factionID", 942.6 },	-- Cenarion Expedition, Honred
+						-- #endif
 						["groups"] = {
 							i(24402, {	-- Package of Identified Plants
 								i(24407),	-- Uncatalogued Species

@@ -15315,9 +15315,7 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 				self:BaseUpdate(true, got);
 			end,
 		});
-		local header = app.CreateNPC(-243, {	-- Bounty
-			['icon'] = "Interface\\Icons\\INV_BountyHunting.blp",
-			["description"] = L["BOUNTY_DESC"],
+		local header = app.CreateNPC(app.HeaderConstants.UI_BOUNTY_WINDOW, {
 			['visible'] = true,
 			["g"] = {
 				autoOpen,
@@ -15334,30 +15332,14 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 				}),
 			}),
 			app.CreateNPC(app.HeaderConstants.ZONE_DROPS, {
-				app.CreateItem(1388, {	-- Crooked Staff
-					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
-				}),
-				app.CreateItem(3330, {	-- Dargol's Hauberk
-					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
-				}),
-				app.CreateItem(2109, {	-- Frostmane Chain Vest
-					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
-				}),
-				app.CreateItem(778, {	-- Kobold Excavation Pick
-					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
-				}),
-				app.CreateItem(1462, {	-- Ring of the Shadow
-					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
-				}),
-				app.CreateItem(6180, {	-- Slarkskin
-					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
-				}),
-				app.CreateItem(4951, {	-- Squeeler's Belt
-					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
-				}),
-				app.CreateItem(1404, {	-- Tidal Charm
-					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
-				}),
+				["description"] = "These items were likely not readded with 10.1.7 or their source is currently unknown.",
+				["g"] = {
+					app.CreateItemSource(85, 778),	-- Kobold Excavation Pick
+					app.CreateItemSource(2280, 6180),	-- Slarkskin
+					app.CreateItemSource(1932, 4951),	-- Squeeler's Belt
+					app.CreateItem(1462),	-- Ring of the Shadow
+					app.CreateItem(1404),	-- Tidal Charm
+				},
 			}),
 		});
 		self:SetData(header);

@@ -120,7 +120,6 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 	L.HIDDEN_QUEST_TRIGGERS = "隐藏任务触发";
 	L.HIDDEN_QUEST_TRIGGERS_DESC = "这些任务是根据特定的标准手动确定触发的任务，主要用于游戏内部的追踪目的";
 	L.UNSORTED_DESC_2 = "这里的物品存在于游戏中，玩家可能会获得，但 ATT 还没有找到准确位置";
-	L.BOUNTY_DESC = "此列表包含 ATT Discord 报告的无法获取的物品，这些物品是暴雪尚未修复的错误。\n\n注意：在此列表中忽略所有过滤器以获得可见性。此列表中仅显示因疏忽而从游戏中移除的物品。\n\n致暴雪开发者：请修复下面列出的物品和事件。";
 	L.OPEN_AUTOMATICALLY = "自动开启";
 	L.OPEN_AUTOMATICALLY_DESC = "如果你不是暴雪开发者，最好是取消勾选此项。这样做是为了迫使暴雪修复和/或承认这些错误。";
 	L.OGOM_THE_MANGLER_DESC = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r";
@@ -679,7 +678,6 @@ for key,value in pairs({
 		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."（直升）",	-- Level 50 (Boost)
 	-- PvP
 		[-242] = "无评级",												-- Unrated
-		[-243] = "赏金任务",											-- Bounty
 	-- Allied Races
 		[-255] = "传承护甲",											-- Heritage
 	-- Outposts in Draenor
