@@ -445,6 +445,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(2358, {	-- Horns of Nez'ra
+					["qg"] = 7009,	-- Arantir <The Hand of Chaos>
+					["coord"] = { 28.4, 52.4, REDRIDGE_MOUNTAINS },
+					["timeline"] = { "added 3.0.1", "removed 4.0.3" },
+					["classes"] = { ROGUE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 16,
+					["groups"] = {
+						objective(1, {	-- 0/1 Horns of Nez'ra
+							["provider"] = { "i", 7906 },	-- Horns of Nez'ra
+							["coord"] = { 41.0, 38.8, REDRIDGE_MOUNTAINS },
+							["crs"] = {
+								485,	-- Blackrock Outrunner
+								440,	-- Blackrock Grunt
+								4065,	-- Blackrock Sentry
+								615,	-- Blackrock Tracker
+								437,	-- Blackrock Renegade
+							},
+						}),
+						i(7676),	-- Thistle Tea
+					},
+				}),
 				q(126, {	-- Howling in the Hills
 					["qg"] = 415,	-- Verner Osgood
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
