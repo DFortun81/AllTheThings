@@ -3528,6 +3528,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(410015),	-- Engrave Chest - Seal of Martyrdom
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
+					["provider"] = { "o", 386777 },	-- Dusty Chest
+					["description"] = "Looting the chest will spawn 2 muggers. Beware!",
+					["coord"] = { 61.9, 29.3, STORMWIND_CITY },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400081),	-- Engrave Pants - Between the Eyes
+					},
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {

@@ -898,6 +898,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							1665,	-- Captain Melrache
 						},
 					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208007, {	-- Shipwreck Cache Key
+						["coord"] = { 35.8, 43.4, TIRISFAL_GLADES },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							1545,	-- Vile Fin Muckdweller
+							1543,	-- Vile Fin Puddlejumper
+							1544,	-- Vile Fin Minor Oracle
+						},
+					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208034, {	-- Tirisfal Treasure Map
 						["timeline"] = { "removed 2.0.1" },
 						["classes"] = { ROGUE },
@@ -2381,13 +2391,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
-				applyclassicphase(SOD_PHASE_ONE, i(203993, {	-- Rune of Slaughter
-					["provider"] = { "o", 404941 },	-- Relic Coffer
-					["coord"] = { 52.5, 25.8, TIRISFAL_GLADES },
+				applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
+					["provider"] = { "o", 405201 },	-- Shipwreck Cache
+					["cost"] = {{ "i", 208007, 1 }},	-- Shipwreck Cache Key
+					["coord"] = { 66.7, 24.6, TIRISFAL_GLADES },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { ROGUE },
 					["groups"] = {
-						recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
+						recipe(400081),	-- Engrave Pants - Between the Eyes
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
@@ -2398,6 +2409,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400095),	-- Engrave Chest - Quick Draw
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(203993, {	-- Rune of Slaughter
+					["provider"] = { "o", 404941 },	-- Relic Coffer
+					["coord"] = { 52.5, 25.8, TIRISFAL_GLADES },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(424992),	-- Engrave Chest - Slaughter from the Shadows
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208185, {	-- The Apothecary's Metaphysical Primer

@@ -1234,6 +1234,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 386691 },	-- Library Book
 					["coord"] = { 75.7, 10.5, IRONFORGE },
 				})),
+				applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
+					["provider"] = { "o", 405946 },	-- Dusty Chest
+					["description"] = "Looting the chest will spawn 2 muggers. Beware!",
+					["coord"] = { 51.9, 12.8, IRONFORGE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400081),	-- Engrave Pants - Between the Eyes
+					},
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {

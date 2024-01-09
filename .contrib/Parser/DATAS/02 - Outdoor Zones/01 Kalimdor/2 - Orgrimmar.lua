@@ -1896,6 +1896,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
+					["provider"] = { "o", 404830 },	-- Dusty Chest
+					["coord"] = { 55.9, 44.7, ORGRIMMAR },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400081),	-- Engrave Pants - Between the Eyes
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(207972, {	-- The Lessons of Ta'zo
 					["provider"] = { "o", 405149 },	-- Mural of Ta'zo
 					["coord"] = { 38.7, 78.4, ORGRIMMAR },

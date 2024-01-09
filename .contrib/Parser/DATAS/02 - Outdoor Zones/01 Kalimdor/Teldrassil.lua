@@ -682,6 +682,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			spell(921, {	-- Pickpocketing
 				["classes"] = { ROGUE },
 				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(208749, {	-- Gnarlpine Stash Key
+						["coord"] = { 41.6, 77.6, TELDRASSIL },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							2011,	-- Gnarlpine Augur
+							2013,	-- Gnarlpine Avenger
+							2012,	-- Gnarlpine Pathfinder
+						},
+					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208605, {	-- Teldrassil Treasure Map
 						["timeline"] = { "removed 2.0.1" },
 						["classes"] = { ROGUE },
@@ -2102,16 +2112,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
-				applyclassicphase(SOD_PHASE_ONE, i(206989, {	-- Rune of the Sun
-					["providers"] = {
-						{ "n", 207577 },	-- Lunar Stone
-						{ "o", 404433 },	-- Lunar Chest
-					},
-					["description"] = "Cast Moonfire on each of the Lunar Stones to spawn the Lunar Chest nearby.",
-					["coord"] = { 52.8, 78.8, TELDRASSIL },
-					["classes"] = { DRUID },
+				applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
+					["provider"] = { "o", 407352 },	-- Gnarlpine Stash
+					["cost"] = {{ "i", 208749, 1 }},	-- Gnarlpine Stash Key
+					["coord"] = { 37.9, 82.5, TELDRASSIL },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
 					["groups"] = {
-						recipe(416044),	-- Engrave Gloves - Sunfire
+						recipe(400081),	-- Engrave Pants - Between the Eyes
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(203991, {	-- Rune of Quick Draw
@@ -2122,6 +2130,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400095),	-- Engrave Chest - Quick Draw
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(206989, {	-- Rune of the Sun
+					["providers"] = {
+						{ "n", 207577 },	-- Lunar Stone
+						{ "o", 404433 },	-- Lunar Chest
+					},
+					["description"] = "Cast Moonfire on each of the Lunar Stones to spawn the Lunar Chest nearby.",
+					["coord"] = { 52.8, 78.8, TELDRASSIL },
+					["classes"] = { DRUID },
+					["groups"] = {
+						recipe(416044),	-- Engrave Gloves - Sunfire
 					},
 				})),
 			}),
