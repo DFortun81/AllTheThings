@@ -106,6 +106,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(210250, {	-- Engraved Gold Ring
+						["coord"] = { 23.3, 72.8, DUSKWOOD },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							215,	-- Defias Night Runner
+							909,	-- Defias Night Blade
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(26720, {	-- A Curse We Cannot Lift
 					["qg"] = 43730,	-- Oliver Harris
@@ -1961,6 +1977,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 411348 },	-- Dusty Coffer
 					["description"] = "Go into the northeastern crypt (23.6, 35.0), head down, and take a left into the first big room (approximately 26.0, 30.9).",
 					["coord"] = { 26.0, 31.0, DUSKWOOD },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210251, {	-- Engraved Silver Ring
+					--["provider"] = { "o",  },	-- Small Chest at Tranquil Gardens Cemetery South of Darkshire (TODO: Find ObjectID)
+					["coord"] = { 81, 71, DUSKWOOD },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210252, {	-- Rune of Shiving
+					["providers"] = {
+						--{ "o",  },	-- TODO: Find ObjectID
+						{ "i", 210250 },	-- Engraved Gold Ring
+						{ "i", 210251 },	-- Engraved Silver Ring
+					},
+					["description"] = "With both rings, /kneel in front of the statue in the middle of Raven Hill Cemetary.",
+					["coord"] = { 19.9, 45.5, DUSKWOOD },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
 				})),
 			}),
 			-- #endif
