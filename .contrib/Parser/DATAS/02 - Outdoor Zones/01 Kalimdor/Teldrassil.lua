@@ -1987,6 +1987,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(206245, {	-- Unleashed Nature Spirit
+					["providers"] = {
+						{ "n", 206248 },	-- Wooden Effigy
+						{ "i", 208760 },	-- Glade Crown
+					},
+					["coord"] = { 66.8, 58.0, TELDRASSIL },
+					["cost"] = { { "i", 208609, 3 }},	-- Glade Flower
+					["groups"] = {
+						i(206963, {	-- Rune of Natural Potential
+							["classes"] = { DRUID },
+							["groups"] = {
+								recipe(416050),	-- Engrave Chest - Living Seed
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(14428, {	-- Uruson
 					-- #if AFTER CATA
 					["coord"] = { 65.6, 51.8, TELDRASSIL },
@@ -2178,6 +2196,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.4, 24.6, TELDRASSIL },
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208609, {	-- Glade Flower
+					["provider"] = { "o", 407247 },	-- Glade Flower
+					["description"] = "These are scattered throughout the zone.",
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206954, {	-- Idol of Ursine Rage
 					["coord"] = { 45.6, 59.6, TELDRASSIL },
 					["classes"] = { DRUID },

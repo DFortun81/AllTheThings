@@ -1755,6 +1755,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, n(206245, {	-- Unleashed Nature Spirit
+					["providers"] = {
+						{ "n", 206248 },	-- Wooden Effigy
+						{ "i", 206466 },	-- Prairie Crown
+					},
+					["coord"] = { 37.8, 49.6, MULGORE },
+					["cost"] = { { "i", 206469, 3 }},	-- Prairie Flower
+					["groups"] = {
+						i(206963, {	-- Rune of Natural Potential
+							["classes"] = { DRUID },
+							["groups"] = {
+								recipe(416050),	-- Engrave Chest - Living Seed
+							},
+						}),
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
 					["provider"] = { "o", 392029 },	-- Swordsman's Reward
 					["coords"] = {
@@ -1963,6 +1979,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2949,	-- Palemane Tanner
 						207515,	-- Lurkmane
 					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(206469, {	-- Prairie Flower
+					["provider"] = { "o", 403718 },	-- Prairie Flower
+					["description"] = "These are scattered throughout the zone.",
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
 					["description"] = "This can also drop from any of the rare mobs in the zone.",
