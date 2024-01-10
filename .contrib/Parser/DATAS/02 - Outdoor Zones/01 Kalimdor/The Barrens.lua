@@ -4139,7 +4139,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
-					--["provider"] = { "o",  },	-- TODO: I couldn't find the objectID or name of the object.
+					["provider"] = { "o", 407457 },	-- Stable Hand's Trunk
 					["description"] = "Head to Northwatch Hold. As you pass the main gate look to your left, you'll see a stable with a chest on the roof. Go up and around to the right and jump down onto the wall behind the stable. Once there you can jump to the roof and loot the chest for the Rune. You need lockpicking (80) to open this chest.",
 					--["coord"] = { , THE_BARRENS },
 					["timeline"] = { "removed 2.0.1" },
