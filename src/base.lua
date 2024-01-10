@@ -8,6 +8,8 @@ local rawget, ipairs, pairs, tinsert, setmetatable = rawget, ipairs, pairs, tins
 local appName, app = ...;
 app.EmptyTable = setmetatable({}, { __newindex = function() end });
 
+local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetadata
+
 -- Generate the version identifier.
 app.Version = GetAddOnMetadata(appName, "Version");
 if string.match(app.Version, "version") then
