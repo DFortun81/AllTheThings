@@ -134,7 +134,8 @@ function(item)
 
 	if not item.sourceID
 		or not item.sourceParent
-		or not item.sourceParent.questID then
+		or not item.sourceParent.questID
+		or not item.sourceParent.key == "questID" then
 		return true;
 	end
 
