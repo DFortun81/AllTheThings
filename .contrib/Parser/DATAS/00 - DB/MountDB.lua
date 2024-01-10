@@ -1687,6 +1687,7 @@ i(203727, 0);		-- Gleaming Moonbeast's Reins
 -- PATCH 10.2.0 --
 ------------------
 i(210061, 424484);	-- Anu'relos, Flame's Guidance
+i(0, 418286);		-- Auspicious Arborwyrm (MOUNT!)
 i(209947, 423871);	-- Blossoming Dreamstag
 i(210831, 427222);	-- Delugen
 i(210058, 424479);	-- Evening Sun Dreamsaber
