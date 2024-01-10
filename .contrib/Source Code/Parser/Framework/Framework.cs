@@ -384,6 +384,65 @@ namespace ATT
             }
         }
 
+        /// <summary>
+        /// Try to colorize the values in the localization table should the color key exist.
+        /// </summary>
+        /// <param name="dict">The dictionary to check for color.</param>
+        /// <param name="key">The localization key to check for color.</param>
+        public static void TryColorizeDictionary(IDictionary<string, object> dict)
+        {
+            if (dict.TryGetValue("color", out string colorString))
+            {
+                dict.Remove("color");
+                var keys = dict.Keys.ToList();
+                if (colorString.Contains("."))  // _. / app.
+                {
+                    if (colorString.StartsWith("~")) colorString = colorString.Substring(1);    // Rip out the squiggle, it's not needed here as we're replacing it below.
+                    if (colorString.Contains("ccColors")) colorString = $"~{colorString}..";   // _.ccColors
+                    else colorString = $"~\"|c\"..{colorString}..";   // _.Colors
+                }
+                else
+                {
+                    if (colorString.Length < 8) colorString = colorString.PadLeft(8, 'f');
+                    colorString = $"|c{colorString}";
+                }
+                foreach (var localeKey in keys)
+                {
+                    var localeString = dict[localeKey].ToString();
+                    if (localeString.StartsWith("~"))
+                    {
+                        localeString = localeString.Substring(1);
+                        if (colorString.StartsWith("~"))
+                        {
+                            dict[localeKey] = $"{colorString}{localeString}..\"|r\"";
+                        }
+                        else dict[localeKey] = $"~\"{colorString}\"..{localeString}..\"|r\"";
+                    }
+                    else
+                    {
+                        if (colorString.StartsWith("~"))
+                        {
+                            dict[localeKey] = $"{colorString}\"{localeString}|r\"";
+                        }
+                        else dict[localeKey] = $"{colorString}{localeString}|r";
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Try to colorize the values in the localization table should the color key exist.
+        /// </summary>
+        /// <param name="header">The header to check for color.</param>
+        /// <param name="key">The localization key to check for color.</param>
+        public static void TryColorizeDictionaryKey(IDictionary<string, object> header, string key)
+        {
+            if (header.TryGetValue(key, out object dictRef) && dictRef is Dictionary<string, object> dict)
+            {
+                TryColorizeDictionary(dict);
+            }
+        }
+
         private static HashSet<string> _autoLocalizeTypes;
         private static bool AutoLocalizeType(string type)
         {
@@ -2386,6 +2445,7 @@ namespace ATT
                                             ["en"] = value
                                         };
                                     }
+                                    TryColorizeDictionary(localeData);
                                     foreach (var locale in localeData)
                                     {
                                         if (!localizationForText.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
@@ -2404,6 +2464,7 @@ namespace ATT
                                             ["en"] = value
                                         };
                                     }
+                                    TryColorizeDictionary(localeData);
                                     foreach (var locale in localeData)
                                     {
                                         if (!localizationForDescriptions.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
@@ -2422,6 +2483,7 @@ namespace ATT
                                             ["en"] = value
                                         };
                                     }
+                                    TryColorizeDictionary(localeData);
                                     foreach (var locale in localeData)
                                     {
                                         if (!localizationForLore.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
