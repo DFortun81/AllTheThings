@@ -1426,6 +1426,29 @@ CRIEVES_SUPER_COOL_HEADER = createHeader({
 	},
 });
 ]]--
+local temporaryHeaderAssignments = {};
+translate = function(data, key)
+	if not data then
+		print("INVALID TRANSLATION: You must pass data into the translate function.");
+	else
+		if type(data) == "number" then
+			if key then data = data .. ":" .. key; end
+			return "~H:" .. data;
+		else
+			if not data.en then
+				print("INVALID TRANSLATION (missing 'en')", data.en or (type(data.text) == "table" and data.text) or data);
+			else
+				-- We want to reuse this headerID for things that use the same translation data.
+				local headerID = temporaryHeaderAssignments[data.en];
+				if not headerID then
+					headerID = createHeader({ readable = data.en, temporary = true, text = data });
+					temporaryHeaderAssignments[data.en] = headerID;
+				end
+				return "~H:" .. headerID;
+			end
+		end
+	end
+end
 end)();
 
 do

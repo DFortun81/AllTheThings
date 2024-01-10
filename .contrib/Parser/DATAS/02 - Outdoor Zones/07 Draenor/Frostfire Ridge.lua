@@ -1539,6 +1539,18 @@ root(ROOTS.Zones, {
 							{ 84.4, 48.0, FROSTFIRE_RIDGE },
 							{ 86.6, 48.6, FROSTFIRE_RIDGE },
 						},
+						["description"] = translate({
+							color = "FF0000";
+							en = "Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.",
+							es = "Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.",
+							de = "Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.",
+							fr = "Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.",
+							it = "Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.",
+							pt = "Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.",
+							ru = "Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.",
+							ko = "약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.",
+							cn = "绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。",
+						}),
 						["u"] = 45,	-- Broken Loot
 						["g"] = {
 							un(45, i(119366)),	-- Ogom's Manacles

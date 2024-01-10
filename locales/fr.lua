@@ -119,7 +119,6 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 	--TODO: L.UNSORTED_DESC_2 = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT";
 	L.OPEN_AUTOMATICALLY = "Ouvrir automatiquement";
 	L.OPEN_AUTOMATICALLY_DESC = "Si vous n’êtes pas un développeur de chez Blizzard, il peut être judicieux de décocher cela. Ceci a été fait pour forcer Blizzard à corriger et / ou reconnaître ces bugs.";
-	--TODO: L.OGOM_THE_MANGLER_DESC = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r";
 	L.DIFF_COMPLETED_1 = "Vous avez tout collecté dans cette difficulté. Changez pour ";
 	L.DIFF_COMPLETED_2 = " au lieu de cela.";
 	L.MINI_LIST = "Mini Liste";

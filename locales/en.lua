@@ -127,7 +127,6 @@ local L = {
 	["UNSORTED_DESC_2"] = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT";
 	["OPEN_AUTOMATICALLY"] = "Open Automatically";
 	["OPEN_AUTOMATICALLY_DESC"] = "If you aren't a Blizzard Developer, it might be a good idea to uncheck this. This was done to force Blizzard to fix and/or acknowledge these bugs.";
-	["OGOM_THE_MANGLER_DESC"] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r";
 	["DIFF_COMPLETED_1"] = "You have collected everything from this difficulty. Switch to ";
 	["DIFF_COMPLETED_2"] = " instead.";
 	["MINI_LIST"] = "Mini List";

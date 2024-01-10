@@ -348,7 +348,7 @@ namespace ATT
                             MarkCustomHeaderAsRequired(constant);
                         }
                     }
-                    if (header.TryGetValue("readable", out value))
+                    if (header.TryGetValue("readable", out value) && !header.ContainsKey("temporary"))
                     {
                         CustomHeaderIDsByKey[value.ToString()] = pair.Key;
                     }

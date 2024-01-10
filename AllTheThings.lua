@@ -15322,10 +15322,12 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 			},
 		});
 		-- add bounty content
+		-- TODO: This window pulls its data manually, there should be a key for bounty.
+		-- Update this when we merge over Classic's extended window logic.
+		-- NOTE: Everything we want is current marked with a u value of 45, so why not just pull that in? :)
 		NestObjects(header, {
 			app.CreateNPC(app.HeaderConstants.RARES, {
 				app.CreateNPC(87622, {	-- Ogom the Mangler
-					['description'] = L["OGOM_THE_MANGLER_DESC"],
 					['g'] = {
 						app.CreateItemSource(67041, 119366),
 					},

@@ -122,7 +122,6 @@ local ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. ITEM_UPGRADE_DIS
 	L.UNSORTED_DESC_2 = "这里的物品存在于游戏中，玩家可能会获得，但 ATT 还没有找到准确位置";
 	L.OPEN_AUTOMATICALLY = "自动开启";
 	L.OPEN_AUTOMATICALLY_DESC = "如果你不是暴雪开发者，最好是取消勾选此项。这样做是为了迫使暴雪修复和/或承认这些错误。";
-	L.OGOM_THE_MANGLER_DESC = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r";
 	L.DIFF_COMPLETED_1 = "你已经收藏了这个难度的所有物品。切换到 ";
 	L.DIFF_COMPLETED_2 = " 来代替。";
 	L.MINI_LIST = "小列表";
