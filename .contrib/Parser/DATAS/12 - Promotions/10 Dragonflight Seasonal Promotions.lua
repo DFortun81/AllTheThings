@@ -151,6 +151,14 @@ root(ROOTS.Promotions, {
 				["description"] = "Mythic Dungeon International: DF Season 3\n\nThe Mythic Dungeon International (MDI) returns with its global competitions for its 8th year, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Dreaming Banner of the Aspects to use in-game!\nSign-ups close 29 January 2024 1PM PDT and The Proving Grounds are on 31st January 1PM PDT - 5 February (US) 1PM PDT.\n\nhttps://raider.io/events/mdi-dragonflight-season-3/info",
 				["timeline"] = { "added 10.2.5", "removed 10.2.6" },
 			}),
+			mount(418286, {	-- Auspicious Arborwyrm (MOUNT!)
+				["description"] = "Obtained if you set up a 6-Month WoW Subscription.",
+				["timeline"] = { "added 10.2.0.52649" },
+			}),
+			i(67097, {	-- Grim Campfire (TOY!)
+				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between January 16, 10:00 a.m. & January 23, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { "added 10.2.5", "removed 10.2.5.99999" },
+			}),
 		},
 	}),
 });
