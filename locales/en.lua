@@ -844,7 +844,7 @@ local L = {
 		["Zaralek Cavern Racing Completionist: Gold > "] = "",
 		
 		["WoW's Anniversary %> "] = "",
-		["Dragonriding Cup %> "] = "",
+--		["Dragonriding Cup %> "] = "",
 		[BLACK_MARKET_AUCTION_HOUSE] = "BMAH",
 		["Emissary Quests"] = "Emissary",
 		["Item Sets"] = WARDROBE_SETS,
