@@ -18,6 +18,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		i(200699),	-- Milkweed Fibers
 		i(200690),	-- Ritherem Petals
 		i(200694),	-- River Bell Bulbs
+		i(200693),	-- Terata Leaves
 		i(200703),	-- Vine Flower Fibers
 		i(200222),	-- White Bell Pigment
 		--

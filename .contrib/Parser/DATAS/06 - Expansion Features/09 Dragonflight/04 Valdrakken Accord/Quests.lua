@@ -608,6 +608,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 66178 },	-- A Day in the Groves
 					["provider"] = { "n", 187525 },	-- Merithra
 					["coord"] = { 33.2, 51.7, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(192547),	-- Garden Seed (QI!)
+					},
 				}),
 				q(66180, {	-- Wake the Ancients
 					["sourceQuests"] = { 66178 },	-- A Day in the Groves
@@ -709,6 +712,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 66189 },	-- Step Into the Life
 					["provider"] = { "n", 187646 },	-- Ysera
 					["coord"] = { 18.7, 51.8, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(193221),	-- Volatile Frostfire (QI!)
+					},
 				}),
 				q(66635, {	-- Reunited, Once Again
 					["sourceQuests"] = {

@@ -306,11 +306,17 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["g"] = {
+					i(194449),	-- Giant Core (QI!)
+				},
 			}),
 			q(72428, {	-- Hornswog Hoarders
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["g"] = {
+					i(201829),	-- Pungent Gem (QI!)
+				},
 			}),
 			q(70593, {	-- Jewelcrafting Services Requested
 				["description"] = "Requires 25 Skill.",
@@ -321,11 +327,17 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["g"] = {
+					i(192125),	-- 'Mundane' Gem (QI!)
+				},
 			}),
 			q(66949, {	-- Trinket Bandits
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["g"] = {
+					i(194443),	-- Stolen Trinket (QI!)
+				},
 			}),
 
 			-- Requires 45 Skill

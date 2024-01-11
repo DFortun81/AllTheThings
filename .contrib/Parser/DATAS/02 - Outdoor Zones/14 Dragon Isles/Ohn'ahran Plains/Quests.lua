@@ -76,6 +76,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65803 },	-- Toward the City
 					["provider"] = { "n", 185882 },	-- Scout Tomul
 					["coord"] = { 75.7, 31.7, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(191100),	-- Fresh Game Meat (QI!)
+					},
 				}),
 				q(70185, {	-- Mysterious Beast
 					["sourceQuests"] = { 65803 },	-- Toward the City
@@ -84,6 +87,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["g"] = {
 						i(197674),	-- Drakefire Shield
 						i(197675),	-- Code of the Maruuk
+						i(198517),	-- Pelt of Konkhular (QI!)
 					},
 				}),
 				q(65940, {	-- By Broken Road
@@ -213,6 +217,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66025 },	-- The Nokhud Threat
 					["provider"] = { "n", 181198 },	-- Khanam Matra Sarest
 					["coord"] = { 60.0, 37.5, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(192472),	-- Khanam Matra's Message (QI!) [book]
+					},
 				}),
 				q(66222, {	-- The Calm Before the Storm
 					["sourceQuests"] = { 66201 },	-- Hooves of War
@@ -239,6 +246,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66254 },	-- Pessimistic Mystic
 					["provider"] = { "n", 186290 },	-- Initiate Boku
 					["coord"] = { 36.8, 57.2, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(198652),	-- Boku's Belongings (QI!)
+						i(198655),	-- Boku's Totem (QI!)
+					},
 				}),
 				q(70195, {	-- Taken By Storm
 					["sourceQuests"] = { 66224 },	-- Mystic Mystery
@@ -247,6 +258,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["g"] = {
 						i(197643),	-- Nokhud Reaver Crushers
 						i(197644),	-- Ohn'ir Initiate Gloves
+						i(198698),	-- Ridgewater Retreat Orders (QI!) [book]
 						i(197645),	-- Shikaar Scout Grips
 						i(197642),	-- Teerai Watcher Gloves
 					},
@@ -255,6 +267,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66224 },	-- Mystic Mystery
 					["provider"] = { "n", 195316 },	-- Tigari Khan
 					["coord"] = { 49.4, 63.1, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(193051),	-- Bundle of Totems (QI!)
+					},
 				}),
 				q(66236, {	-- Catching Wind
 					["sourceQuests"] = {
@@ -528,6 +543,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 185726 },	-- Felina Starrunner
 					["coord"] = { 24.4, 63.1, OHNAHRAN_PLAINS },
 					["g"] = {
+						i(191085),	-- Perfectly Tender Turtle Meat (QI!)
+						i(191084),	-- Reptilian Eggshell (QI!)
+						i(191083),	-- Sourbloom (QI!)
 						i(192098),	-- Herbed Turtle Meat
 					},
 				}),
@@ -634,6 +652,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "n", 190164 },	-- Elder Nazuun
 						["coord"] = { 41.6, 56.7, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(193207),	-- Shadespinner's Web (QI!)
+							i(193206),	-- Slyvern Talon (QI!)
+							i(193202),	-- Thunderspine Scale (QI!)
+						},
 					}),
 					q(66834, {	-- Rellen, the Learned
 						["sourceQuests"] = { 66687 },	-- Land of the Apex
@@ -680,6 +703,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 39.1, 66.0, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(193257),	-- Clump of Sacred Soil (QI!)
+						i(191901),	-- Intact Skull (QI!)
 					},
 				}),
 				q(69936, {	-- Zambul, Head Vandal
@@ -791,6 +815,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 195239 },	-- Windsage Kven
 					["coord"] = { 62.1, 36.4, OHNAHRAN_PLAINS },
 					["isBreadcrumb"] = true,
+					["g"] = {
+						i(199174),	-- Ohn'ir Wind Chimes (QI!)
+					},
 				}),
 				q(65890, {	-- The Nelthazan Ruins
 					["sourceQuests"] = { 70337 },	-- Emberwatch
@@ -802,6 +829,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65890 },	-- The Nelthazan Ruins
 					["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
 					["coord"] = { 64.0, 18.3, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(193375),	-- Nelthazan Artifact Fragments (QI!)
+					},
 				}),
 				q(65891, {	-- Tools of the Trade
 					["sourceQuests"] = { 65890 },	-- The Nelthazan Ruins
@@ -822,6 +852,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 62.1, 16.3, OHNAHRAN_PLAINS },
 					["classes"] = { EVOKER },
 					["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
+					["g"] = {
+						i(193376, {	-- Adenedal's Tidy Purse (QI!)
+							i(198351),	-- Ancient Mana Gem (QI!)
+						}),
+					},
 				}),
 				q(65898, {	-- Proto Problems
 					["sourceQuests"] = { 65895 },	-- Competing Company
@@ -1229,6 +1264,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 65783 },	-- Welcome at Our Fire
 				["provider"] = { "n", 194904 },	-- Muqur Rain-Touched
 				["coord"] = { 84.5, 25.3, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(198795),	-- Hornstrider Scale (QI!)
+					i(198792),	-- Ottuk Heart (QI!)
+					i(198793),	-- Rockfang Femur (QI!)
+					i(198794),	-- Vulture Gizzard (QI!)
+				},
 			}),
 			q(66226, {	-- Emotional Support Companions
 				["provider"] = { "n", 187796 },	-- Initiate Kittileg
@@ -1249,6 +1290,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "o", 381701 },	-- WANTED: Mara'nar the Thunderous
 				["coord"] = { 39.6, 56.4, OHNAHRAN_PLAINS },
+				["g"] = {
+					i(200270),	-- Mara'nar's Thunderous Plate (QI!)
+				},
 			}),
 			q(70985, {	-- The Lonely Scout
 				["sourceQuests"] = { 70220 },	-- Shady Sanctuary

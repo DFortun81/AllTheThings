@@ -157,94 +157,42 @@ root(ROOTS.NeverImplemented, {
 				i(198820),	-- [DNT] The Book of Knowledge
 				i(191923),	-- [DNT] Worn Key
 				i(192477),	-- [PH] Primalist Keystone
-				i(198348),	-- "Custom High-Quality Gear: Better Business with Personal Orders!"
-				i(198346),	-- "Order Anything Crafters Make!"
-				i(198347),	-- "Public Orders: Fast and Made For You!"
-				i(192125),	-- 'Mundane' Gem
-				i(191121),	-- Abalone-Inlaid Key
-				i(193376),	-- Adenedal's Tidy Purse
-				i(194516),	-- Aged Journal
+				i(191121),	-- Abalone-Inlaid Key				
 				i(193414),	-- Aged Shamanic Dagger
-				i(200473),	-- Agitated Fragment
 				i(191924),	-- Alvi's Spyglass
-				i(198351),	-- Ancient Mana Gem
-				i(197860),	-- Ancient Scrap of Draconic Wisdom
-				i(194514),	-- Antiquated Guest List
 				i(187854),	-- Arcane Key
-				i(191979),	-- Arcane Stepping Stone
-				i(198336),	-- Arcane-Infused Quill
-				i(199704),	-- Artifact Fragment
 				i(199692),	-- Artifact Locator
-				i(195386),	-- Ayanga's Horn
-				i(191954),	-- Bag of Helpful Goods
 				i(192767),	-- Bag of Ore
 				i(191106),	-- Bakra's Paw
-				i(194332),	-- Bark Parchment
 				i(191847),	-- Basilisk Egg
-				i(194546),	-- Baskilan Report
 				i(189586),	-- Beacon Purifier
 				i(191670),	-- Beaded Feather Band
 				i(192750),	-- Black Iron Javelin
-				i(191684),	-- Blacksteel Tongs
 				i(193401),	-- Bloodstained Musken-hide Greatbelt
 				i(191124),	-- Bloody Key
 				i(191243),	-- Blue Dragon Relic
-				i(200674),	-- Bluebill Meat
-				i(189899),	-- Bluefeather Egg
-				i(191646),	-- Blue-Tailed Minnow
-				i(198652),	-- Boku's Belongings
 				i(192507),	-- Boku's Empowerment Totems
-				i(198655),	-- Boku's Totem
-				i(198484),	-- Brackenhide's Decay
-				i(194556),	-- Breezehunter Egg
-				i(194512),	-- Broken Arcane Device
 				i(191090),	-- Broken Lock
-				i(194517),	-- Broken Texts
-				i(198511),	-- Building Materials
 				i(190965),	-- Bundle of Duck Feathers
-				i(193051),	-- Bundle of Totems
 				i(191668),	-- Carved Stone Whale
 				i(194032),	-- Chaos Ysemerald
 				i(192561),	-- Chrono-Stabilizer
 				i(193411),	-- Cinderbound Pendant
-				i(191659),	-- Cindershard Coal
-				i(192548),	-- Cindershard Coal
-				i(191138),	-- Clinging Gustbloom Sample
 				i(199301),	-- Clopper's Clambering Gear
 				i(199302),	-- Clopper's Compass
 				i(199303),	-- Clopper's Knapsack
-				i(192758),	-- Coil of Heavy Rope
-				i(194550),	-- Coldsnap Sagittate
-				i(194513),	-- Collection of Tomes
 				i(191938),	-- Congealing Essence
 				i(200529),	-- Constructed Arcana
 				i(193404),	-- Core of Aqueous Corruption
-				i(189974),	-- Creekborne's Core
-				i(191317),	-- Crude Tarasek Key
-				i(194515),	-- Crumbling Event Planner
-				i(194053),	-- Crystal Quill
-				i(194971),	-- Crystalized Draconium
 				i(193403),	-- Crystalline Focus
-				i(194901),	-- Curved Horns
 				i(193402),	-- Decatriarch's Fetish
-				i(200561),	-- Deepwater Lure
-				i(200124),	-- Disoriented Wishtail
-				i(194899),	-- Dispelling Wand
 				i(191853),	-- Draconic Crystal
 				i(192194),	-- Draconic Tools
-				i(191848),	-- Draconium Angle Iron
-				i(192754),	-- Dracuixote
-				i(199917),	-- Dragon Bone Fragment
-				i(191686),	-- Dragonclaw Punch
-				i(198448),	-- Dragonscale Expedition Supplies
-				i(197983),	-- Drakmoss Clump
+				i(191848),	-- Draconium Angle Iron (profession?)
 				i(193417),	-- Dreamwisp of Entangled Memories
 				i(190960),	-- Duck Tail Feathers
 				i(191104),	-- Durgun's Paw
 				i(193049),	-- Earth Key [DNT/UNUSED]
-				i(200200),	-- Earthbound Primordial Core
-				i(200671),	-- Earthen Gateway Stone
-				i(194544),	-- Earth-Warder's Flame Blade
 				i(194687),	-- Echo of Duty
 				i(192454),	-- Elemental Essence
 				i(192478),	-- Elemental Focus
@@ -262,103 +210,30 @@ root(ROOTS.NeverImplemented, {
 				i(193839),	-- Explosive Ash
 				i(194564),	-- Extra-Delicious Riverbeast Meat
 				i(191120),	-- Extra-shiny Gorloc Scale
-				i(191902),	-- Fallen Defender's Ring
-				i(200087),	-- Fallingwater Mote
-				i(200478),	-- Far-Flung Fragment
-				i(191178),	-- Feather-Plucker 3300 Bolts
-				i(191177),	-- Feather-Plucker 3300 Exhaust Pipe
-				i(189453),	-- Feather-Plucker 3300 Gasket
-				i(191176),	-- Feather-Plucker 3300 Gears
 				i(191788),	-- Field Sampling Tool
-				i(193624),	-- Fireproof Gear
 				i(193856),	-- Flowery's Rake
 				i(192079),	-- Fossil Fragments
-				i(192480),	-- Fragmented Record Rubbing
 				i(191671),	-- Fragmented Tuskarr Effigy
-				i(200140),	-- Fragments of Fangfall
-				i(191839),	-- Fragrant Bloom
-				i(191100),	-- Fresh Game Meat
-				i(191782),	-- Fresh Proto-Dragon Wings
-				i(200220),	-- Frozen Tail Darter
-				i(194747),	-- Frozen Venom Gland
-				i(191107),	-- Funerary Offering
-				i(193865),	-- Fuzzy Legs
-				i(192547),	-- Garden Seed
-				i(194449),	-- Giant Core
 				i(191115),	-- Giant Temporal Mote
-				i(198345),	-- Glass Bead
-				i(194324),	-- Gleamfish
-				i(194552),	-- Glimmering Ramblekelp Bulb
-				i(189126),	-- Gnoll "Lances"
-				i(194328),	-- Gnoll-Worn Cloth
-				i(194427),	-- Gorloc Mucus
 				i(191088),	-- Gorloc Scrimshaw
-				i(200667),	-- Grim Morsel
 				i(191673),	-- Grinning Dolphin Fetish
-				i(200646),	-- Gruff Fisher's Net
-				i(194743),	-- Gulchak's Pointer
-				i(200480),	-- Half Swallowed Sliver
-				i(189751),	-- Hatchling Feather
 				i(190174),	-- Haunch of Salamander Meat
 				i(193405),	-- Headteacher's Ledger
 				i(193416),	-- Holographic Distributor
-				i(191908),	-- Horn of Scorxia
-				i(198795),	-- Hornstrider Scale
 				i(193395),	-- Hourglass of Shifting Sands
-				i(192189),	-- Hunting Game Calls
-				i(200672),	-- Iceforged Gateway Stone
-				i(194451),	-- Icy Excrement
-				i(199822),	-- Impressive Dragon Skull
-				i(192126),	-- Intact Dracthyr Weapon
-				i(191901),	-- Intact Skull
 				i(192123),	-- Job Description
-				i(191118),	-- Kargpaw's Totem
 				i(191105),	-- Kerwal's Paw
-				i(192472),	-- Khanam Matra's Message
 				i(193397),	-- Kyrakka's Fangs
-				i(194435),	-- Large Tool
-				i(194744),	-- Lava-Charred Flesh
 				i(200873),	-- Leftover Bread
-				i(194431),	-- Ley Crystal
-				i(200162),	-- Lost Tuskarr Kite
-				i(193864),	-- Magma Core
-				i(192759),	-- Magmasworn Spear
-				i(200471),	-- Magnetized Splinter
 				i(200548),	-- Maldra's Manacles Key
-				i(200270),	-- Mara'nar's Thunderous Plate
 				i(191672),	-- Mark of the Provider
-				i(193212),	-- Marmoni Rescue Pack
 				i(191702),	-- Matilda's Favorite Fishing Rod
-				i(191111),	-- Meat Curing Salts
-				i(193483),	-- Medallion of the Ancestors
-				i(193043),	-- Missing Ward Pieces
-				i(200670),	-- Misttouched Gateway Stone
 				i(200544),	-- Mistvale Map: Illegible
-				i(194900),	-- Miva's Dispelling Wand
-				i(191278),	-- Molten Binding Rings
-				i(194030),	-- Moose Flank
-				i(192493),	-- Mote of Primal Energy
 				i(190191),	-- Muck-Covered Map
-				i(191840),	-- Mudfin Pouch
-				i(193625),	-- Neltharus Forge Crystal
-				i(199477),	-- Nokhud Armament
 				i(192783),	-- Nokhud Vanguard Orders
-				i(191683),	-- Obsidian Bickern
-				i(193627),	-- Obsidian Crafting Fork
-				i(199174),	-- Ohn'ir Wind Chimes
-				i(200134),	-- Ohuna Mass-Binding Totem
 				i(198450),	-- Old Crabshell
-				i(191091),	-- On'tuq Hide Scraps
-				i(191092),	-- On'tuq Tusk
-				i(192546),	-- Orb of Primal Flames
-				i(192524),	-- Orb of Primal Gales
-				i(192562),	-- Orb of Primal Waves
 				i(190964),	-- Ornate Chest Key
-				i(194519),	-- Osoria's Assistance
-				i(198792),	-- Ottuk Heart
 				i(191947),	-- Parachutes
-				i(194321),	-- Peacock Feather
-				i(198517),	-- Pelt of Konkhular
 				i(189362),	-- Pheromone Gland
 				i(191246),	-- Pieces of Firewood
 				i(194425),	-- Plains Boar Ribs
@@ -368,140 +243,51 @@ root(ROOTS.NeverImplemented, {
 				i(193048),	-- Portal Spike
 				i(191247),	-- Potential Relics
 				i(191281),	-- Pound of Blubbery Flesh
-				i(193626),	-- Precision Pennyweight
-				i(194336),	-- Precision Scale Hammer
 				i(199633),	-- Prepfoot Cell Key
-				i(192757),	-- Pride and Protodrakes
-				i(190386),	-- Primal Earthen Core
-				i(194548),	-- Primal Molten Core
-				i(189565),	-- Primal Proto-Whelp Scale
-				i(198398),	-- Primal Proto-Whelp Scale
-				i(194437),	-- Primal Ritual
-				i(192808),	-- Primalist Orders
 				i(193412),	-- Primal-Infused Dragon Egg
 				i(193267),	-- Pristine Hide
 				i(193260),	-- Prized Jewel
-				i(194818),	-- Proto-Drake Wrangler Rope
 				i(198812),	-- Rae'ana Alchemy Kit
-				i(198530),	-- Raw Zandali Chilis
 				i(199907),	-- Rebel Plans
-				i(194696),	-- Recycled Crawler Mine
 				i(191538),	-- Relic Fragment
 				i(191463),	-- Reliquary Pillow
 				i(191285),	-- Requisition Job: BLACKSMITH - Tent Stakes
 				i(191284),	-- Requisition Job: TAILOR - Tent Canvas Repairs
 				i(191283),	-- Requistion Job: Cold Weather Insulation
-				i(191199),	-- Restless Mote
-				i(198698),	-- Ridgewater Retreat Orders
-				i(191780),	-- Rigid Basilisk Hide
-				i(192603),	-- River Whelk
-				i(198793),	-- Rockfang Femur
-				i(194103),	-- Rotting Sample
-				i(200179),	-- Ruby Lifeband
-				i(200273),	-- Saboteur's Map
-				i(194448),	-- Salvaged Hide
-				i(200514),	-- Salve-Soaked Bandages
-				i(194554),	-- Savory Deviant Dealfish
-				i(198344),	-- Scrap of Fabric
-				i(189979),	-- Screechflight Staff
-				i(189981),	-- Screechflight Talon
 				i(189750),	-- Screechflight Totem Fragment
-				i(194520),	-- Scroll of Timewalker Knowledge
-				i(193207),	-- Shadespinner's Web
 				i(193266),	-- Sharp Tooth
 				i(191116),	-- Shiny Gorloc Scale
-				i(195468),	-- Shiverweb Silk
 				i(190972),	-- Shiverweb Silk DEPRECATED
 				i(190974),	-- Silk Slasher
 				i(193415),	-- Sindragosa's Records
-				i(192190),	-- Skinning Tools
-				i(198091),	-- Slightly Used Recrafted Armor
-				i(193206),	-- Slyvern Talon
-				i(189183),	-- Smelly Ooze
-				i(198818),	-- Sneaky Mud Mask
 				i(191245),	-- Sockeye Salmon
-				i(198343),	-- Soft Ruby Feather
-				i(191083),	-- Sourbloom
-				i(191269),	-- South Hold Garrison Signet
 				i(193396),	-- Spellbound Musken-Hide Satchel
-				i(194551),	-- Spicy Lava Spice
-				i(194509),	-- Springborn Core
 				i(192752),	-- Staff Headpiece
-				i(188959),	-- Sticky Gnoll Key
 				i(191719),	-- Sticky Key
-				i(198349),	-- Stolen Dragonscale Supplies
-				i(193836),	-- Stolen Tools
-				i(194443),	-- Stolen Trinket
 				i(194565),	-- Stone Ponoliak Figure
-				i(200125),	-- Stoneheart's Stone Heart
 				i(191093),	-- Sturdy Bones
 				i(192124),	-- Sulfurus Residue
-				i(191265),	-- Sundered Flames Expedition Orders
 				i(191956),	-- Suspicious Vial
-				i(200530),	-- Sweet Steamed Meat
-				i(200474),	-- Tarasek Pillaged Piece
-				i(192602),	-- Temporal Collector
 				i(191112),	-- Temporal Mote
-				i(192809),	-- Temporal Residue
-				i(200122),	-- Temporal Spyglass
 				i(199200),	-- Tender Vorquin Meat
 				i(199201),	-- Tender Vorquin Meat
 				i(191665),	-- Testing Kit
 				i(195392),	-- Thaldraszian Acorn Extract
-				i(192755),	-- The Lord of the Wings
-				i(192756),	-- The Red and the Black Flights
-				i(198480),	-- The Resplendent Pools
-				i(192753),	-- The Scales of Wrath
-				i(198482),	-- The Spiral of the Kurgans
-				i(192745),	-- The Titanic Comedy
-				i(199176),	-- Thick Bear Fur
-				i(193220),	-- Thick Bear Pelt
-				i(193202),	-- Thunderspine Scale
-				i(198430),	-- Time Capsule
-				i(191113),	-- Timewalker Staff
 				i(192482),	-- Timewalker Staff
 				i(192551),	-- Timewalker Staff
-				i(198410),	-- Timewalker Staff
-				i(194553),	-- Time-Blasted Trufflette
 				i(193409),	-- Time-Lost Curio
-				i(198597),	-- Time-Lost Possession
 				i(198649),	-- Time-Lost Possession
-				i(198564),	-- Time-Lost Relic
 				i(198601),	-- Time-Lost Relic
 				i(198602),	-- Time-Lost Relic
 				i(197952),	-- Titan Disc
-				i(198443),	-- Titan Temple Relic
-				i(200123),	-- Torrential Lily
 				i(199199),	-- Tough Moose Flank
-				i(194424),	-- Tusk Marrow
 				i(192188),	-- Tuskarr Fishing Gear
 				i(193859),	-- Twice-Burnt Potato
-				i(190769),	-- Unstable Arcana
-				i(194559),	-- Vazallia Report
-				i(198797),	-- Vial of Mineral Water
 				i(192421),	-- Vial Questgiver
-				i(199064),	-- Vitrified Sand
-				i(193221),	-- Volatile Frostfire
-				i(193219),	-- Vorquin Meat
-				i(198794),	-- Vulture Gizzard
-				i(200117),	-- Watcher's Golden Girdle
-				i(194033),	-- Waterlogged Card
-				i(191473),	-- Watery Essence
-				i(191549),	-- Water-Infused Shell
 				i(192453),	-- Waywatcher Spyglass
-				i(191852),	-- Waywatcher Supplies
 				i(191703),	-- Weirdly Huge Gorloc Eye
 				i(194105),	-- Whelpling Formula
-				i(200110),	-- Whispering Fragments
-				i(200067),	-- Whispering Shard
-				i(200149),	-- Wild Argali Wool
-				i(194555),	-- Wild Leapmaize
 				i(192805),	-- Wildlife Sample
-				i(194452),	-- Windtossed Feather
-				i(191546),	-- Wind-Infused Shell
-				i(190612),	-- Worldbreaker Cell Key
-				i(191057),	-- Worldbreaker Weapons
-				i(194561),	-- Zepharion Report
 			})),
 
 			-- 10.0.2
@@ -509,32 +295,8 @@ root(ROOTS.NeverImplemented, {
 				i(199798),	-- Makko's Journal - Page Seven
 
 				--- Might Appear In Game ---
-				i(199178),	-- Bronze Horn Flower
-				i(191309),	-- Crystal Flakes
-				i(199179),	-- Dragon Foil
-				i(199180),	-- Dragon's Blood Berry
-				i(201819),	-- Earthen Sample
-				i(198701),	-- Inert Vessel
-				i(200129),	-- Kolgar's Pack
-				i(200109),	-- Medicative Potion
-				i(193375),	-- Nelthazan Artifact Fragments
-				i(201925),	-- Obsidian Genealogy
-				i(202001),	-- Passing Renascence
-				i(201825),	-- Pointy Pincer
-				i(201829),	-- Pungent Gem
-				i(191084),	-- Reptilian Eggshell
-				i(201793),	-- Resplendent Gemstone
-				i(202013),	-- Ruby Recipe Journal VIII
-				i(201828),	-- Spiked Leaves
-				i(201816),	-- Springy Horns
-				i(201826),	-- Tempest Armaments
+				i(202001),	-- Passing Renascence (catalyst s1 item for charge)
 				i(191857),	-- Warmwater Riverfish
-				i(201822),	-- Waterproof Hide
-			})),
-
-			-- 10.0.5
-			tier(DF_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
-				i(203598),	-- Makko's Journal Cover
 			})),
 
 			-- 10.0.7

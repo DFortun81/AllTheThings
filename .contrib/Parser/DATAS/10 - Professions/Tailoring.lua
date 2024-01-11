@@ -441,11 +441,17 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["g"] = {
+					i(193865),	-- Fuzzy Legs (QI!)
+				},
 			}),
 			q(72410, {	-- Pincers and Needles
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["g"] = {
+					i(201825),	-- Pointy Pincer (QI!)
+				},
 			}),
 			q(70595, {	-- Tailoring Services Requested
 				["description"] = "Requires 25 Skill.",
@@ -456,6 +462,9 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["g"] = {
+					i(194328),	-- Gnoll-Worn Cloth (QI!)
+				},
 			}),
 
 			-- Requires 45 Skill

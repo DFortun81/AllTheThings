@@ -2032,7 +2032,6 @@ root(ROOTS.Unsorted, {
 				i(200782),	-- Bejeweled Horseshoes
 				i(199186),	-- Bewitched Wood
 				i(200697),	-- Blightshroom
-				i(198668),	-- Blooming Shallowlily
 				i(198442),	-- Bogthwottle's Shrinky-Do
 				i(192560),	-- Bossy Storm Stuff
 				i(200798),	-- Bottled Diseased Parasites
@@ -2119,7 +2118,6 @@ root(ROOTS.Unsorted, {
 				i(194677),	-- Marvelous Mood Ring
 				i(200588),	-- Meaty Stem
 				i(192054),	-- Medallion of a Fallen Friend
-				i(198666),	-- Milky Snapflower
 				i(194682),	-- Mother's Gift
 				i(194707),	-- Myridian Report
 				i(186159),	-- Mythic Keystone
@@ -2140,7 +2138,6 @@ root(ROOTS.Unsorted, {
 				i(200121),	-- Potion of Beginner's Luck
 				i(194718),	-- Premium Salamander Feed
 				i(200606),	-- Previously Owned Map
-				i(192545),	-- Primal Flame Fragment
 				i(194750),	-- Professional Equipment
 				i(201726),	-- Progress Report: Uldorus
 				i(198452),	-- Prototype F
@@ -2175,7 +2172,6 @@ root(ROOTS.Unsorted, {
 				i(200639),	-- Talisman of Ohn'ahra
 				i(200637),	-- Talisman of the Maruuk
 				i(198842),	-- Tallstrider Feather
-				i(200693),	-- Terata Leaves
 				i(200594),	-- Thaelin's Second Favorite Comb
 				i(200705),	-- Thaldraszus Root
 				i(200803),	-- Through the Stained-Glass

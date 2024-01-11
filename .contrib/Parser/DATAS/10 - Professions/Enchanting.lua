@@ -498,6 +498,9 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["g"] = {
+					i(194053),	-- Crystal Quill (QI!)
+				},
 			}),
 			q(66900, {	-- Enchanted Relics
 				["description"] = "Requires 25 Skill.",
@@ -508,11 +511,17 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["g"] = {
+					i(193624),	-- Fireproof Gear (QI!)
+				},
 			}),
 			q(72423, {	-- Weathering the Storm
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["g"] = {
+					i(201826),	-- Tempest Armaments (QI!)
+				},
 			}),
 
 			------ Requires 45 Skill ------

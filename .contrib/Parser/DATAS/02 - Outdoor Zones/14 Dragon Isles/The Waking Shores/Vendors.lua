@@ -70,6 +70,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(194884),	-- Annoy-o-Tron Gang
 					i(194679),	-- BOOM-O-MATIC 90000
 					i(194890),	-- GG-117 Micro-Jetpack
+					i(194696),	-- Recycled Crawler Mine
 					i(194961),	-- Stolen Rocket Hop
 					i(199326, {	-- Chip (PET!)
 						["cost"] = {

@@ -67,6 +67,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 190180 },	-- Guardian Velomir
 					["coord"] = { 37.6, 83.1, THALDRASZUS },
+					["g"] = {
+						i(191269),	-- South Hold Garrison Signet (QI!)
+					},
 				}),
 				q(66247, {	-- Slightly Used Weapons
 					["sourceQuests"] = {
@@ -76,6 +79,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 190458 },	-- Dead Magmasworn Rockcleaver
 					["coord"] = { 37.9, 83.3, THALDRASZUS },
 					["g"] = {
+						i(192759),	-- Magmasworn Spear (QI!)
 						i(195219),	-- Magmasworn Spearhead
 					},
 				}),
@@ -86,6 +90,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "o", 377114 },	-- Coil of Heavy Rope
 					["coord"] = { 38.6, 83.4, THALDRASZUS },
+					["g"] = {
+						i(192758),	-- Coil of Heavy Rope (QI!)
+					},
 				}),
 				q(66249, {	-- Clear the Sky
 					["sourceQuests"] = {
@@ -136,7 +143,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 187098 },	-- Slaszerathel
 					["coord"] = { 55.0, 75.6, THALDRASZUS },
 					["g"] = {
-						i(198408),	-- Timewalker Notes
+						i(198408),	-- Timewalker Notes (QI!)
+						i(198410),	-- Timewalker Staff (QI!)
 					},
 				}),
 				q(66082, {	-- Time in a Bottle
@@ -153,6 +161,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(195209),	-- Junior Timewarder Greaves
 						i(195206),	-- Junior Timewarder Leggings
 						i(195208),	-- Junior Timewarder Scales
+						i(192602),	-- Temporal Collector (QI!)
 					},
 				}),
 				q(66083, {	-- Feels Like the First Time
@@ -169,6 +178,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 57.5, 78.8, THALDRASZUS },
 					["g"] = {
 						i(195212),	-- Causality Band
+						i(192809),	-- Temporal Residue (QI!)
 					},
 				}),
 				q(66085, {	-- If We Could Turn Back Time
@@ -184,6 +194,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 190929 },	-- Aeonormu
 					["coord"] = { 57.5, 78.9, THALDRASZUS },
 					["g"] = {
+						i(194520),	-- Scroll of Timewalker Knowledge (QI!)
 						i(195194),	-- Time Walkers
 						i(195195),	-- Time Walkers
 						i(195196),	-- Time Walkers
@@ -224,6 +235,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65935 },	-- Catching Up to Chromie
 					["provider"] = { "n", 186711 },	-- Chromie
 					["coord"] = { 59.6, 81.7, THALDRASZUS },
+					["g"] = {
+						i(191113),	-- Timewalker Staff (QI!)
+					},
 				}),
 				q(65938, {	-- The Once and Future Team
 					["sourceQuests"] = {
@@ -447,11 +461,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66468 },	-- What Once Was Ours
 					["provider"] = { "n", 189188 },	-- Sharnax
 					["coord"] = { 54.4, 65.2, THALDRASZUS },
+					["g"] = {
+						i(192808),	-- Primalist Orders (QI!)
+					},
 				}),
 				q(66470, {	-- The Forward Push
 					["sourceQuests"] = { 66468 },	-- What Once Was Ours
 					["provider"] = { "n", 189188 },	-- Sharnax
 					["coord"] = { 54.4, 65.2, THALDRASZUS },
+					["g"] = {
+						i(200671),	-- Earthen Gateway Stone (QI!)
+						i(200672),	-- Iceforged Gateway Stone (QI!)
+						i(200670),	-- Misttouched Gateway Stone (QI!)
+					},
 				}),
 				q(66473, {	-- The Land Awakens
 					["sourceQuests"] = {
@@ -493,6 +515,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 191753 },	-- Waywatcher Alvi
 					["coord"] = { 54.7, 69.5, THALDRASZUS },
+					["g"] = {
+						i(191405),	-- Alvi's "Ledger" [book]
+						i(191317),	-- Crude Tarasek Key (QI!)
+					},
 				}),
 				q(66100, {	-- Supplying in Weight
 					["sourceQuests"] = {
@@ -502,7 +528,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 191753 },	-- Waywatcher Alvi
 					["coord"] = { 54.7, 69.5, THALDRASZUS },
 					["g"] = {
-						i(191405),	-- Alvi's "Ledger"
+						i(191852),	-- Waywatcher Supplies (QI!)
 					},
 				}),
 				q(66456, {	-- A Poisonous Palette
@@ -602,6 +628,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 184591 },	-- Segallia
 					["coord"] = { 50.0, 69.8, THALDRASZUS },
+					["g"] = {
+						i(191178),	-- Feather-Plucker 3300 Bolts (QI!)
+						i(191177),	-- Feather-Plucker 3300 Exhaust Pipe (QI!)
+						i(189453),	-- Feather-Plucker 3300 Gasket (QI!)
+						i(191176),	-- Feather-Plucker 3300 Gears (QI!)
+					},
 				}),
 				q(65475, {	-- Rollling in the Screech
 					["sourceQuests"] = {
@@ -620,6 +652,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
 					["coord"] = { 50.0, 69.8, THALDRASZUS },
+					["g"] = {
+						i(189974),	-- Creekborne's Core (QI!)
+						i(189979),	-- Screechflight Staff (QI!)
+						i(189981),	-- Screechflight Talon (QI!)
+					},
 				}),
 				q(65374, {	-- It's Plucking Time
 					["sourceQuests"] = {
@@ -631,7 +668,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 184591 },	-- Segallia
 					["coord"] = { 50.0, 69.8, THALDRASZUS },
 					["g"] = {
-						i(189454),	-- Feather-Plucker 3300
+						i(189454),	-- Feather-Plucker 3300 (QI!)
+						i(189751),	-- Hatchling Feather (QI!)
 					},
 				}),
 				q(65287, {	-- Separating the Yolk
@@ -643,6 +681,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
 					["coord"] = { 50.0, 69.8, THALDRASZUS },
+					["g"] = {
+						i(189899),	-- Bluefeather Egg (QI!)
+					},
 				}),
 				q(65778, {	-- Screechflight Potluck
 					["sourceQuests"] = {
@@ -696,6 +737,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66278 },	-- One Drakonid's Junk
 					["provider"] = { "n", 187300 },	-- Gryrmpech
 					["coord"] = { 37.9, 75.4, THALDRASZUS },
+					["g"] = {
+						i(191473),	-- Watery Essence (QI!)
+					},
 				}),
 				q(66137, {	-- Lashing Out
 					["sourceQuests"] = { 66278 },	-- One Drakonid's Junk
@@ -774,6 +818,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 189045 },	-- Mara
 					["coord"] = { 49.6, 58.8, THALDRASZUS },
+					["g"] = {
+						i(193043),	-- Missing Ward Pieces (QI!)
+					},
 				}),
 				q(65920, {	-- For the Ward!
 					["sourceQuests"] = {
@@ -865,6 +912,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66252 },	-- Reporting In
 					["provider"] = { "n", 189842 },	-- Captain Drine
 					["coord"] = { 56.0, 40.0, VALDRAKKEN },
+					["g"] = {
+						i(200273),	-- Saboteur's Map (QI!)
+					},
 				}),
 				q(70837, {	-- Follow the Clues
 					["sourceQuests"] = { 71024 },	-- Chaos and Commotion
@@ -904,6 +954,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 70850 },	-- Maldra's in Hot Water
 					["provider"] = { "n", 196562 },	-- Maldra Flametongue
 					["coord"] = { 42.7, 78.8, THALDRASZUS },
+					["g"] = {
+						i(200087),	-- Fallingwater Mote (QI!)
+					},
 				}),
 				q(70874, {	-- To Breach a Fire Wall
 					["sourceQuests"] = { 70873 },	-- Chasing Waterfalls
@@ -1063,6 +1116,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 38.6, 46.4, THALDRASZUS },
 					["g"] = {
 						i(200872),	-- Living Mud Mask (PET!)
+						i(198818),	-- Sneaky Mud Mask (QI!)
 					},
 				}),
 			}),
@@ -1148,10 +1202,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 65962 },	-- The Never-Final Countdown
 				["provider"] = { "n", 192543 },	-- Archivist Arenial
 				["coord"] = { 60.3, 81.9, THALDRASZUS },
+				["g"] = {
+					i(199064),	-- Vitrified Sand (QI!)
+				},
 			}),
 			q(66929, {	-- Gotta Collect Them All
 				["provider"] = { "n", 191414 },	-- Yumadormu
 				["coord"] = { 59.7, 43.6, THALDRASZUS },
+				["g"] = {
+					i(194033),	-- Waterlogged Card (QI!)
+				},
 			}),
 			q(67167, {	-- It's Time To Duel!
 				["sourceQuests"] = { 66929 },	-- Gotta Collect Them All

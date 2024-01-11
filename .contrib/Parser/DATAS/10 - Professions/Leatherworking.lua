@@ -1049,6 +1049,9 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.8, 63.6, VALDRAKKEN },
+				["g"] = {
+					i(191780),	-- Rigid Basilisk Hide (QI!)
+				},
 			}),
 			q(70594, {	-- Leatherworking Services Requested
 				["description"] = "Requires 25 Skill.",
@@ -1059,16 +1062,25 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["g"] = {
+					i(194448),	-- Salvaged Hide (QI!)
+				},
 			}),
 			q(72407, {	-- Soaked in Success
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["g"] = {
+					i(201822),	-- Waterproof Hide (QI!)
+				},
 			}),
 			q(66364, {	-- To Fly a Kite
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
+				["g"] = {
+					i(191782),	-- Fresh Proto-Dragon Wings (QI!)
+				},
 			}),
 
 			-- Requires 45 Skill

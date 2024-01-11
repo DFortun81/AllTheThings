@@ -14,12 +14,18 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 47.0, 83.5, THE_WAKING_SHORES },
 					["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["isWeekly"] = true,
+					["g"] = {
+						i(200124),	-- Disoriented Wishtail (QI!)
+					},
 				}),
 				q(71001, {	-- Wanted: Earthbound Primordial Core
 					["provider"] = { "o", 381661 },	-- Archivists' Request
 					["coord"] = { 46.7, 82.9, THE_WAKING_SHORES },
 					["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["isWeekly"] = true,
+					["g"] = {
+						i(200200),	-- Earthbound Primordial Core (QI!)
+					},
 				}),
 				q(70975, {	-- Wanted: Everblazing Fireheart
 					--["provider"] = { "o", },	-- Archivists' Request
@@ -32,6 +38,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 49.0, 82.7, THE_WAKING_SHORES },
 					["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["isWeekly"] = true,
+					["g"] = {
+						i(200140),	-- Fragments of Fangfall (QI!)
+					},
 				}),
 				q(70995, {	-- Wanted: Fenistrasza's Skull
 					["provider"] = { "o", 381664 },	-- Archivists' Request
@@ -39,48 +48,72 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["cost"] = {{ "i", 200143, 1 }},	--1xFenistrasza's Skull
 					["isWeekly"] = true,
+					["g"] = {
+						i(200143),	-- Fenistrasza's Skull (QI!)
+					},
 				}),
 				q(70992, {	-- Wanted: Lost Tuskaar Kite
 					["provider"] = { "o", 381650 },	-- Archivists' Request
 					["coord"] = { 48.0, 82.2, THE_WAKING_SHORES },
 					["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["isWeekly"] = true,
+					["g"] = {
+						i(200162),	-- Lost Tuskarr Kite (QI!)
+					},
 				}),
 				q(71004, {	-- Wanted: Ohuna Mass-Binding Totem
 					["provider"] = { "o", 381667 },	-- Archivists' Request
 					["coord"] = { 47.1, 82.8, THE_WAKING_SHORES },
 					["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["isWeekly"] = true,
+					["g"] = {
+						i(200134),	-- Ohuna Mass-Binding Totem (QI!)
+					},
 				}),
 				q(71008, {	-- Wanted: Stoneheart's Stone Heart
 					["provider"] = { "o", 381670 },	-- Archivists' Request
 					["coord"] = { 47.8, 82.2, THE_WAKING_SHORES },
 					["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["isWeekly"] = true,
+					["g"] = {
+						i(200125),	-- Stoneheart's Stone Heart (QI!)
+					},
 				}),
 				q(71010, {	-- Wanted: Temporal Spyglass
 					["provider"] = { "o", 381671 },	-- Archivists' Request
 					["coord"] = { 48.0, 83.7, THE_WAKING_SHORES },
 					["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["isWeekly"] = true,
+					["g"] = {
+						i(200122),	-- Temporal Spyglass (QI!)
+					},
 				}),
 				q(71011, {	-- Wanted: Torrential Lily
 					["provider"] = { "o", 381672 },	-- Archivists' Request
 					["coord"] = { 48.0, 82.1, THE_WAKING_SHORES },
 					["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["isWeekly"] = true,
+					["g"] = {
+						i(200123),	-- Torrential Lily (QI!)
+					},
 				}),
 				q(70965, {	-- Wanted: Watcher's Golden Girdle
 					["provider"] = { "o", 381579 },	-- Archivists' Request
 					["coord"] = { 47.5, 83.6, THE_WAKING_SHORES },
 					["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["isWeekly"] = true,
+					["g"] = {
+						i(200117),	-- Watcher's Golden Girdle (QI!)
+					},
 				}),
 				q(70997, {	-- Wanted: Ruby Lifeband
 					["provider"] = { "o", 381662 },	-- Archivist's Request
 					["coord"] = { 47.9, 82.5, THE_WAKING_SHORES },
 					["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["isWeekly"] = true,
+					["g"] = {
+						i(200179),	-- Ruby Lifeband (QI!)
+					},
 				}),
 			}, {	-- RENOWN 2 --
 				q(70822, {	-- Lost Expedition Scouts
@@ -336,19 +369,27 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "i", 199790 },	-- Makko's Journal Cover
 					["coord"] = { 44, 66, OHNAHRAN_PLAINS },
 					["g"] = {
-						i(200295),	-- Makko's Complete Journal
-						i(199792),	-- Makko's Journal - Page One
-						i(199793),	-- Makko's Journal - Page Two
-						i(199794),	-- Makko's Journal - Page Three
-						i(199795),	-- Makko's Journal - Page Four
-						i(199796),	-- Makko's Journal - Page Five
-						i(199797),	-- Makko's Journal - Page Six
+						i(203598),	-- Makko's Journal Cover (QI!)
+						i(200295),	-- Makko's Complete Journal (QI!) [book]
+						i(199792),	-- Makko's Journal - Page One (QI!)
+						i(199793),	-- Makko's Journal - Page Two (QI!)
+						i(199794),	-- Makko's Journal - Page Three (QI!)
+						i(199795),	-- Makko's Journal - Page Four (QI!)
+						i(199796),	-- Makko's Journal - Page Five (QI!)
+						i(199797),	-- Makko's Journal - Page Six (QI!)
 					},
 				}),
 				q(70503, {	-- The Vigilance of Tyr
 					["sourceQuests"] = { 70784 },	-- The Abandoned Outpost
 					["provider"] = { "n", 193350 },	-- Naleidea Rivergleam
 					["coord"] = { 53.9, 50.7, THE_AZURE_SPAN },
+					["g"] = {
+						i(200473),	-- Agitated Fragment (QI!)
+						i(200478),	-- Far-Flung Fragment (QI!)
+						i(200480),	-- Half Swallowed Sliver (QI!)
+						i(200471),	-- Magnetized Splinter (QI!)
+						i(200474),	-- Tarasek Pillaged Piece (QI!)
+					},
 				}),
 				q(66814, {	-- The Judgement of Tyr
 					["sourceQuests"] = { 70785 },	-- The City of the Dead

@@ -169,6 +169,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 191194 },	-- Weaponsmith Mida
 					["isWeekly"] = true,
 					["g"] = {
+						i(194971),	-- Crystalized Draconium (QI!)
 						i(194963),	-- Plans: Black Dragon Seared Alloy (RECIPE!)
 					},
 				}),
@@ -197,6 +198,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 191014 },	-- Becca Black
 					["coord"] = { 26.5, 62.5, THE_WAKING_SHORES },
 					["isDaily"] = true,
+					["g"] = {
+						i(193625),	-- Neltharus Forge Crystal (QI!)
+						i(193627),	-- Obsidian Crafting Fork (QI!)
+						i(193626),	-- Precision Pennyweight (QI!)
+					},
 				}),
 				q(69926, {	-- Becca Black and the Seven Gnomes
 					["sourceQuest"] = 66419,	-- Allegiance To One
@@ -214,12 +220,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 190899 },	-- Talonstalker Kavia
 					["coord"] = { 26.6, 62.5, THE_WAKING_SHORES },
 					["isDaily"] = true,
+					["g"] = {
+						i(191057),	-- Worldbreaker Weapons (QI!)
+					},
 				}),
 				q(67051, {	-- Dragon Eyes
 					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 191193 },	-- Exadria
 					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
+					["g"] = {
+						i(194546),	-- Baskilan Report (QI!)
+						i(194559),	-- Vazallia Report (QI!)
+						i(194561),	-- Zepharion Report (QI!)
+					},
 				}),
 				q(67099, {	-- Dragon Eyes
 					["sourceQuest"] = 66419,	-- Allegiance To One
@@ -238,6 +252,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 188179 },	-- Stoker Volrax
 					["coord"] = { 24.8,60.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
+					["g"] = {
+						i(191659),	-- Cindershard Coal (QI!)
+					},
 				}),
 				q(69983, {	-- Flamecarved Bone
 					["sourceQuest"] = 66419,	-- Allegiance To One
@@ -271,12 +288,20 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 191193 },	-- Exadria
 					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
+					["g"] = {
+						i(194519),	-- Osoria's Assistance (QI!)
+					},
 				}),
 				q(66445, {	-- Honor Our Fallen
 					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 191193 },	-- Exadria
 					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
+					["g"] = {
+						i(194544),	-- Earth-Warder's Flame Blade (QI!)
+						i(191902),	-- Fallen Defender's Ring (QI!)
+						i(191908),	-- Horn of Scorxia (QI!)
+					},
 				}),
 				q(66882, {	-- Lost Battlepack
 					["sourceQuest"] = 66419,	-- Allegiance To One
@@ -335,18 +360,31 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 188179 },	-- Stoker Volrax
 					["coord"] = { 24.8,60.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
+					["g"] = {
+						i(191684),	-- Blacksteel Tongs (QI!)
+						i(191686),	-- Dragonclaw Punch (QI!)
+						i(191683),	-- Obsidian Bickern (QI!)
+						i(194336),	-- Precision Scale Hammer (QI!)
+					},
 				}),
 				q(72456, {	-- Tomes Of Trust
 					["sourceQuest"] = 66419,	-- Allegiance To One
 					-- TODO: Possibly this requires HQT 64277 to unlock rather than the quest above
 					["provider"] = { "n", 188344 },	-- Chydrass
 					["coord"] = { 25, 56.1, THE_WAKING_SHORES },
+					["g"] = {
+						i(201925),	-- Obsidian Genealogy (QI!)
+					},
 				}),
 				q(67142, {	-- Wyrm Food
 					["sourceQuest"] = 66419,	-- Allegiance To One
 					["provider"] = { "n", 196518 },	-- Voraxian
 					["coord"] = { 27.6,56.7, THE_WAKING_SHORES },
 					["isWeekly"] = true,
+					["g"] = {
+						i(194743),	-- Gulchak's Pointer (QI!)
+						i(194744),	-- Lava-Charred Flesh (QI!)
+					},
 				}),
 				n(BONUS_OBJECTIVES, {
 					q(66901, {	-- Breaking the World

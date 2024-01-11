@@ -3913,11 +3913,17 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["g"] = {
+					i(194451),	-- Icy Excrement (QI!)
+				},
 			}),
 			q(66944, {	-- Peacock Pigments
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["g"] = {
+					i(194321),	-- Peacock Feather (QI!)
+				},
 			}),
 			q(72438, {	-- Tarasek Intentions
 				["description"] = "Requires 25 Skill.",
@@ -3931,6 +3937,9 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["g"] = {
+					i(194332),	-- Bark Parchment (QI!)
+				},
 			}),
 
 			------ Requires 45 Skill ------

@@ -364,21 +364,33 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+				["g"] = {
+					i(201828),	-- Spiked Leaves (QI!)
+				},
 			}),
 			q(66937, {	-- Decaying News
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["g"] = {
+					i(194103),	-- Rotting Sample (QI!)
+				},
 			}),
 			q(66940, {	-- Elixir Experiment
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+				["g"] = {
+					i(194427),	-- Gorloc Mucus (QI!)
+				},
 			}),
 			q(66938, {	-- Mammoth Marrow
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+				["g"] = {
+					i(194424),	-- Tusk Marrow (QI!)
+				},
 			}),
 
 			------ Requires 45 Skill ------

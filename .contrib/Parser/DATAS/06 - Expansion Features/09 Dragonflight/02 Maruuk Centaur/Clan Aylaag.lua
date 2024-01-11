@@ -47,12 +47,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
 					["coord"] = { 70.7, 63.6, OHNAHRAN_PLAINS },
 					["g"] = {
-						i(200153),	-- Aylaag Skinning Shear
+						i(200153),	-- Aylaag Skinning Shear (QI!)
+						i(200149),	-- Wild Argali Wool (QI!)
 					},
 				}),
 				q(67034, {	-- Of Wind and Water
 					["provider"] = { "n", 185867 },	-- Barnak of the Reeds
 					["coord"] = { 70.9, 62.6, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(194509),	-- Springborn Core (QI!)
+						i(194452),	-- Windtossed Feather (QI!)
+					},
 				}),
 				q(70352, {	-- Scaling Ever Higher
 					["provider"] = { "n", 185881 },	-- Toluiqi
@@ -62,6 +67,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(65798, {	-- An Opportunistic Approach
 					["provider"] = { "n", 185853 },	-- Hadari Khan
 					["coord"] = { 55.8, 51.8, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(199477),	-- Nokhud Armament (QI!)
+					},
 				}),
 				q(70701, {	-- Bakar Dream of Lost Argali
 					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
@@ -77,6 +85,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(71241, {	-- Duck, Duck, Trap
 					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
 					["coord"] = { 55.6, 52.5, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(200674),	-- Bluebill Meat (QI!)
+					},
 				}),
 				q(70210, {	-- Tradition Not Forgotten
 					["provider"] = { "n", 185867 },	-- Barnak of the Reeds
@@ -85,11 +96,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(67605, {	-- Thundering Plains
 					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
 					["coord"] = { 55.6, 52.5, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(195386),	-- Ayanga's Horn (QI!)
+					},
 				}),
 				------ Aylaag Outpost ------
 				q(66711, {	-- Delicay in the Dark
 					["provider"] = { "n", 185853 },	-- Hadari Khan
 					["coord"] = { 71.4, 31.0, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(192603),	-- River Whelk (QI!)
+					},
 				}),
 				q(66698, {	-- Counting Argali
 					["provider"] = { "n", 185870 },	-- Huntmaster Malkik
@@ -110,6 +127,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(65789, {	-- Where Rivers Sleep
 					["provider"] = { "n", 185867 },	-- Barnak of the Reeds
 					["coord"] = { 71.4, 31.0, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(191839),	-- Fragrant Bloom (QI!)
+						i(191840),	-- Mudfin Pouch (QI!)
+					},
 				}),
 			})),
 			n(REWARDS, {
