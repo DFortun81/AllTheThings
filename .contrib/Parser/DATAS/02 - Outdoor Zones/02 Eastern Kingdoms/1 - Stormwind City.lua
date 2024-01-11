@@ -92,6 +92,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				faction(1353, {	-- Tushui Pandaren
 					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 			n(FLIGHT_PATHS, {
@@ -5823,6 +5824,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(53991, {	-- Quincy Cutler <Owner and Proprietor>
 					["timeline"] = { "added 4.2.0.14313" },
 					["coord"] = { 64.0, 46.2, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(44679),	-- Red Wine Glass
 						i(44678),	-- Wine Glass
