@@ -139,6 +139,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 62966 },	-- Finding a Witness
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
+					["g"] = {
+						i(184242),	-- Burnt Totem (QI!)
+					},
 				}),
 				q(60146, {	-- Torment Chamber: Thrall
 					["sourceQuests"] = { 62969 },	-- Lest the Trail Go Cold

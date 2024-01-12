@@ -239,6 +239,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57912 },	-- Baron of the Chosen
 					["provider"] = { "n", 159894 },	-- Baron Vyraz
 					["coord"] = { 39.2, 55.9, MALDRAXXUS },
+					["g"] = {
+						i(179923),	-- Attack Battlehorn (QI!)
+					},
 				}),
 				q(57976, {	-- Lead By Example
 					["sourceQuests"] = { 57912 },	-- Baron of the Chosen
@@ -259,6 +262,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 169226 },	-- Secutor Mevix
 					["coord"] = { 39.4, 46.7, MALDRAXXUS },
 					["g"] = {
+						i(179923),	-- Attack Battlehorn (QI!)
 						i(175763),	-- Salvaged Mercenary's Drape
 					},
 				}),
@@ -342,6 +346,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59130 },	-- The House of Plagues
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 56.4, 57.2, MALDRAXXUS },
+					["g"] = {
+						i(173368),	-- Bloated Venom Sac (QI!)
+					},
 				}),
 				q(58016, {	-- Spores Galore
 					["sourceQuests"] = { 59130 },	-- The House of Plagues
@@ -802,6 +809,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(57245, {	-- Ani-Matter Animator
 				["provider"] = { "n", 157076 },	-- Synder Sixfold
 				["coord"] = { 26.3, 42.7, MALDRAXXUS },
+				["g"] = {
+					i(175827),	-- Ani-Matter Orb (QI!)
+				},
 			}),
 			q(57301, {	-- Callous Concoctions
 				["sourceQuests"] = { 58431 },	-- Pool of Potions

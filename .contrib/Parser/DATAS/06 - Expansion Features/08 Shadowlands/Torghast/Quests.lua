@@ -38,6 +38,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 60270 },	-- A Damned Pact
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
+					["g"] = {
+						i(181324),	-- Anima Supricifer (QI!)
+					},
 				}),
 				q(60272, {	-- The Weak Link
 					["sourceQuests"] = { 60271 },	-- A Grave Chance

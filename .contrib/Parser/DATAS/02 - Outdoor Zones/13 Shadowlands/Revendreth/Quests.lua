@@ -238,6 +238,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 168217 },	-- The Accuser
 					["coord"] = { 43.2, 73.8, REVENDRETH },
 					["g"] = {
+						i(178873),	-- Concentrated Anima Vial (QI!)
 						i(177648),	-- Honed Dredglaive
 						i(177651),	-- Nimble Hopebreaker's Rapier
 						i(177652),	-- Splinterball Morningstar

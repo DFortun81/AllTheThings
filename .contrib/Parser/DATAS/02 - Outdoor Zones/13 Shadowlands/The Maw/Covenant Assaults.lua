@@ -351,11 +351,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63625, {	-- Here's an Axe, Get to Work!
 							["provider"] = { "n", 177072 },	-- Baroness Draka
 							["coord"] = { 33.8, 54.8, THE_MAW },
+							["g"] = {
+								i(184513),	-- Containment Orb (QI!)
+							},
 						}),
 						q(63621, {	-- Pulling His Chain
 							["sourceQuests"] = { 63772 },	-- Waiting in the Wings
 							["provider"] = { "n", 177226 },	-- Artemede
 							["coord"] = { 37.0, 63.3, THE_MAW },
+							["g"] = {
+								i(184513),	-- Containment Orb (QI!)
+							},
 						}),
 						q(63545, {	-- Putting A Plan Together
 							["sourceQuests"] = { 63772 },	-- Waiting in the Wings
@@ -363,6 +369,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["coord"] = { 37.0, 63.5, THE_MAW },
 							["g"] = {
 								i(185685),	-- Automaton Bolts (QI!)
+								i(184513),	-- Containment Orb (QI!)
 							},
 						}),
 						q(63669, {	-- Somebody Feed Kevin
@@ -379,6 +386,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						q(63772, {	-- Waiting in the Wings
 							["provider"] = { "n", 177072 },	-- Baroness Draka
 							["coord"] = { 33.8, 54.8, THE_MAW },
+							["g"] = {
+								i(184513),	-- Containment Orb (QI!)
+							},
 						}),
 						q(63773, {	-- You and What Army
 							["provider"] = { "n", 177072 },	-- Baroness Draka

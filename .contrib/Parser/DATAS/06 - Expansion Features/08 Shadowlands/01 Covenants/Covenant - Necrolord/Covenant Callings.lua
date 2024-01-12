@@ -95,6 +95,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					["provider"] = { "n", 167207 },	-- Sabbath Nightshade
 					["coord"] = { 43.2, 47.8, SEAT_OF_THE_PRIMUS },
 					["g"] = {
+						i(184561),	-- Anima Embers (QI!)
 						i(181732),	-- Tribute of the Ambitious
 					},
 				}),
