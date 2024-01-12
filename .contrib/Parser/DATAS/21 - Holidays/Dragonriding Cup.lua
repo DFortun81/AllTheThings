@@ -1762,7 +1762,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				}),
 			}),
 		}))),
-		applyevent(EVENTS.OUTLAND_CUP, n(OUTLAND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, "removed 10.2.5" } }, {						-- Outland Cup
+		applyevent(EVENTS.OUTLAND_CUP, n(OUTLAND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5, "removed 10.2.5.99999" } }, {						-- Outland Cup
 			n(ACHIEVEMENTS, {
 				ach(19092, {	-- Outland: Bronze
 					-- Meta Achievement
