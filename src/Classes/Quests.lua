@@ -635,18 +635,26 @@ PrintQuestInfo = function(questID, new)
 	local searchResults = SearchForField("questID", questID);
 	if #searchResults > 0 then
 		local nmr, nmc, nyi, hqt
-		for i,searchResult in ipairs(searchResults) do
-			if searchResult.key == "questID" then
-				nmr = nmr or searchResult.nmr
-				nmc = nmc or searchResult.nmc
-				nyi = nyi or GetRelativeField(searchResult, "u", 1)
-				hqt = hqt or GetRelativeValue(searchResult, "_hqt")
-				questRef = searchResult
-			end
-		end
-		if not questRef then
-			app.PrintDebug(Colorize("Failed to check quest info for: "..(questID or "???"), app.Colors.ChatLinkError))
+		if #searchResults == 1 then
 			questRef = searchResults[1]
+			nmr = questRef.nmr
+			nmc = questRef.nmc
+			nyi = GetRelativeField(questRef, "u", 1)
+			hqt = GetRelativeValue(questRef, "_hqt")
+		else
+			for i,searchResult in ipairs(searchResults) do
+				if searchResult.key == "questID" then
+					nmr = nmr or searchResult.nmr
+					nmc = nmc or searchResult.nmc
+					nyi = nyi or GetRelativeField(searchResult, "u", 1)
+					hqt = hqt or GetRelativeValue(searchResult, "_hqt")
+					questRef = searchResult
+				end
+			end
+			if not questRef then
+				app.PrintDebug(Colorize("Failed to check quest info for: "..(questID or "???"), app.Colors.ChatLinkError))
+				questRef = searchResults[1]
+			end
 		end
 
 		-- if user is allowing reporting of Sourced quests (true = don't report Sourced)
@@ -658,7 +666,8 @@ PrintQuestInfo = function(questID, new)
 		if hqt then
 			text = questID
 		else
-			text = (QuestNameFromID[questID] or UNKNOWN) .. " (" .. questID .. ")"
+			-- Quest can be linked to all sorts of things...
+			text = (QuestNameFromID[questID] or (questRef and questRef.name) or UNKNOWN) .. " (" .. questID .. ")"
 		end
 		if nmc then text = text .. "[C]"; end
 		if nmr then text = text .. "[R]"; end
