@@ -433,6 +433,30 @@ else
 	end
 end
 
+local function CollectibleAsLocked(t, locked)
+	return
+	-- not able to access quest on current character
+	(locked or t.locked)
+	and
+	(
+		-- Collecting Locked Quests
+		app.Settings.Collectibles.QuestsLocked
+		and
+		(
+			-- debug/account mode
+			app.MODE_DEBUG_OR_ACCOUNT
+			or
+			-- available in party sync
+			not t.DisablePartySync
+		)
+	)
+end
+local function CollectibleAsQuestOrAsLocked(t)
+	local locked = t.locked
+	return (not locked and CollectibleAsQuest(t))
+		or CollectibleAsLocked(t, locked);
+end
+
 local function IsQuestSaved(questID)
 	-- NOTE: If Party Sync is supported, this will be replaced!
 	return IsQuestFlaggedCompleted(questID);
@@ -1116,10 +1140,10 @@ local function IsGroupLocked(t)
 end
 local function LockedAsQuest(t)
 	local questID = t.questID;
+	-- already cached a locked status
+	local cached = LockedQuestCache[questID]
+	if cached ~= nil then return cached end
 	if not IsQuestFlaggedCompleted(questID) then
-		-- already cached a locked status
-		local cached = LockedQuestCache[questID]
-		if cached ~= nil then return cached end
 		-- generic locked functionality based on lockCriteria
 		if IsGroupLocked(t) then return true; end
 		-- if an alt-quest is completed, then this quest is locked
@@ -1127,8 +1151,41 @@ local function LockedAsQuest(t)
 			LockedQuestCache[questID] = true
 			return true;
 		end
+		-- app.PrintDebug("Locked:false",app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
 		LockedQuestCache[questID] = false
-		-- app.PrintDebug("Locked:false",app:Linkify(t.questID, app.Colors.ChatLink, "search:questID:" .. t.questID))
+		return false
+	else
+		-- completed quests can be permanently ignored for locked logic handling
+		t.locked = false
+	end
+end
+local function LockedAsBreadcrumb(t)
+	local questID = t.questID;
+	-- already cached a locked status
+	local cached = LockedQuestCache[questID]
+	if cached ~= nil then return cached end
+	if not IsQuestFlaggedCompleted(questID) then
+		local nextQuests = t.nextQuests;
+		if nextQuests then
+			local nq
+			for _,nqID in ipairs(nextQuests) do
+				if IsQuestFlaggedCompleted(nqID) then
+					-- app.PrintDebug("Locked Breadcrumb from",nqID,app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
+					LockedQuestCache[questID] = true
+					return true;
+				else
+					-- this questID may not even be available to pick up, so try to find a Thing with this questID to determine if the object is complete
+					nq = Search("questID", nqID, "field");
+					if nq and (nq.altcollected or nq.locked) then
+						-- app.PrintDebug("Locked Breadcrumb from",nq.hash,app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
+						LockedQuestCache[questID] = true
+						return true;
+					end
+				end
+			end
+		end
+		-- app.PrintDebug("Available Breadcrumb",app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
+		LockedQuestCache[questID] = false
 		return false
 	else
 		-- completed quests can be permanently ignored for locked logic handling
@@ -1318,31 +1375,26 @@ app.IsClassic and "WithReputation" or false, {
 		end
 	end,
 }, (function(t) return t.maxReputation; end),
+-- Retail: Breadcrumb w/ Locked Quest support
+not app.IsClassic and "AsBreadcrumbWithLockCriteria" or false, {
+	collectible = CollectibleAsQuestOrAsLocked,
+	locked = function(t)
+		if LockedAsQuest(t) or LockedAsBreadcrumb(t) then
+			return true
+		end
+	end,
+}, (function(t) return t.lc and t.isBreadcrumb; end),
 -- Retail: Locked Quest support
 not app.IsClassic and "WithLockCriteria" or false, {
-	collectible = function(t)
-		return app.Settings.Collectibles.QuestsLocked
-			and
-			(
-				-- not able to access quest on current character
-				t.locked
-				and
-				(
-					-- debug/account mode
-					app.MODE_DEBUG_OR_ACCOUNT
-					or
-					-- available in party sync
-					not t.DisablePartySync
-				)
-			)
-	end,
+	collectible = CollectibleAsQuestOrAsLocked,
 	locked = LockedAsQuest,
 }, (function(t) return t.lc; end),
+-- Both: Breadcrumbs
 "AsBreadcrumb", {
 	text = app.IsClassic and function(t)
 		return "|cffcbc3e3" .. t.name .. "|r";
 	end or nil,
-	collectible = function(t)
+	collectible = app.IsClassic and function(t)
 		if app.Settings.Collectibles.Quests then
 			if C_QuestLog_IsOnQuest(t.questID) or IsQuestFlaggedCompletedForObject(t) then
 				return true;
@@ -1357,28 +1409,11 @@ not app.IsClassic and "WithLockCriteria" or false, {
 			end
 		end
 		return false;
-	end,
-	locked = function(t)
-		local nextQuests = t.nextQuests;
-		if nextQuests then
-			for _,questID in ipairs(nextQuests) do
-				if IsQuestFlaggedCompleted(questID) then
-					t.locked = questID;
-					return questID;
-				else
-					-- this questID may not even be available to pick up, so try to find an object with this questID to determine if the object is complete
-					for i,quest in ipairs(app.SearchForField("questID", questID)) do
-						if quest.saved then
-							-- app.PrintDebug("Locked Quest", app:Linkify(t.hash, app.Colors.ChatLink, "search:"..t.key..":"..t[t.key]))
-							t.locked = questID;
-							return questID;
-						end
-					end
-				end
-			end
-		end
-	end,
+	-- Retail: Breadcrumbs are just regular quests, or they can be locked and you still want to collect them (via Party Sync)... because why not?
+	end or CollectibleAsQuestOrAsLocked,
+	locked = LockedAsBreadcrumb,
 }, (function(t) return t.isBreadcrumb; end),
+-- Both: World Quests
 "AsWorldQuest", {
 	["icon"] = function(t)
 		return app.GetIconFromProviders(t) or GetWorldQuestIcon(t);
