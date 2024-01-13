@@ -1004,26 +1004,35 @@ end
 -- Breadcrumb Checking
 local CheckFollowupQuests;
 if app.IsRetail then
+	-- Will print a warning message and play a warning sound if the given QuestID being completed will prevent being able to complete a breadcrumb
+	-- (as far as ATT is capable of knowing)
+	local function PrintBreadcrumbWarning(accepted, bc)
+		local acceptText, bcText = accepted.text, bc.text
+		if IsRetrieving(acceptText) or IsRetrieving(bcText) then
+			app.FunctionRunner.Run(PrintBreadcrumbWarning, accepted, bc)
+			return
+		end
+
+		local acceptQuestID, bcQuestID = accepted.questID, bc.questID
+		app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
+			acceptText,
+			app:Linkify(acceptQuestID, app.Colors.ChatLink, "search:questID:"..acceptQuestID),
+			bcText,
+			app:Linkify(bcQuestID, app.Colors.Locked, "search:questID:"..bcQuestID)))
+		app.Audio:PlayRemoveSound()
+	end
+
 	CheckFollowupQuests = function(questID)
-		-- Check if this quest is a nextQuest of a non-collected breadcrumb (users may care to get the breadcrumb before it becomes locked, simply due to tracking quests as well)
-		if app.Settings.Collectibles.Quests or app.Settings.Collectibles.QuestsLocked then
+		if questID then
 			local nextQuests = SearchForField("nextQuests", questID);
 			if #nextQuests > 0 then
-				app:StartATTCoroutine("CheckNextQuests::" .. questID, function()
-					for _,group in pairs(nextQuests) do
-						if not group.collected and app.RecursiveCharacterRequirementsFilter(group) and app.RecursiveUnobtainableFilter(group) then
-							coroutine.yield();
-							while not group.text do
-								coroutine.yield();
-							end
-
-							app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
-								QuestNameFromID[questID], app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
-								group.text, app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)))
-							app.Audio:PlayRemoveSound()
-						end
+				-- should never use CreateQuest since it would mean we have sourceQuests linked to a QuestID which isn't cached
+				local accepted = Search("questID", questID) or app.CreateQuest(questID)
+				for _,bc in pairs(nextQuests) do
+					if not bc.collected and app.RecursiveCharacterRequirementsFilter(bc) and app.RecursiveUnobtainableFilter(bc) then
+						app.FunctionRunner.Run(PrintBreadcrumbWarning, accepted, bc)
 					end
-				end);
+				end
 			end
 		end
 	end
