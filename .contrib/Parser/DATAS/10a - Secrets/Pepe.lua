@@ -218,5 +218,23 @@ root(ROOTS.Secrets, n(86470, {	-- Pepe
 			["timeline"] = { "added 9.1.0" },
 			["customCollect"] = "SL_COV_NFA",
 		}),
+		i(213181, {	-- A Tiny Dragon Goblet
+			-- ["provider"] = { "o",  },	-- 
+			["questID"] = 79547,
+			["coord"] = { 50.5, 52.9, VALDRAKKEN },
+			["timeline"] = { "ADDED_10_2_5" },
+		}),
+		i(213202, {	-- A Tiny Explorer's Hat
+			-- ["provider"] = { "o",  },	-- 
+			["questID"] = 79550,
+			["coord"] = { 47.3, 82.7, THE_WAKING_SHORES },
+			["timeline"] = { "ADDED_10_2_5" },
+		}),
+		i(213207, {	-- A Tiny Ear Warmer
+			-- ["provider"] = { "o",  },	-- 
+			["questID"] = 79551,
+			["coord"] = { 50.5, 52.9, THE_AZURE_SPAN },
+			["timeline"] = { "ADDED_10_2_5" },
+		}),
 	},
 }));

@@ -1199,7 +1199,6 @@ root(ROOTS.Unsorted, {
 			i(213177),	-- Immaculate Tome
 			i(213179),	-- Cracked Draconic Tooth
 			i(213180),	-- Crumpled Map
-			i(213181),	-- A Tiny Dragon Goblet
 			i(213182),	-- Worry Stone
 			i(213183),	-- Makeshift Beaded Bracelet
 			i(213184),	-- Rock with Chewed Gum
@@ -1211,12 +1210,10 @@ root(ROOTS.Unsorted, {
 			i(213196),	-- Pressed Flower
 			i(213200),	-- Book of Horoscopes
 			i(213201),	-- Discarded Waterfowl Bones
-			i(213202),	-- A Tiny Explorer's Hat
 			i(213203),	-- Velvet Nightcap
 			i(213204),	-- Ruby-Studded Locket
 			i(213205),	-- Mad Scribblings
 			i(213206),	-- Charred Letter
-			i(213207),	-- A Tiny Ear Warmer
 			i(213208),	-- Pot of Pickled Ancheevies
 			i(213210),	-- Bloodied Banner Scrap
 			i(213211),	-- Petrified Flower Petals
