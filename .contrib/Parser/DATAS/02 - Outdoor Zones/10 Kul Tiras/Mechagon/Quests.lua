@@ -826,6 +826,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 				["sourceQuest"] = 55736,	-- Welcome to the Resistance
 			}),
 			q(56740, {	-- S.P.A.R.E. Crates
+				["description"] = "Quest is available if you have 250 Spare Parts in your bag",
 				["provider"] = { "n", 152295 },	-- Pascal
 				["coord"] = { 71.2, 32.3, MECHAGON },
 				["sourceQuest"] = 55101,	-- Junkyard Tinkering and You
