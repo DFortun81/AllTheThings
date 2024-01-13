@@ -1018,7 +1018,7 @@ if app.IsRetail then
 			acceptText,
 			app:Linkify(acceptQuestID, app.Colors.ChatLink, "search:questID:"..acceptQuestID),
 			bcText,
-			app:Linkify(bcQuestID, app.Colors.Breadcrumb, "search:questID:"..bcQuestID)))
+			app:Linkify(bcQuestID, app.Colors.ChatLink, "search:questID:"..bcQuestID)))
 		app.Audio:PlayRemoveSound()
 	end
 
@@ -1053,7 +1053,7 @@ else
 
 							app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
 								QuestNameFromID[questID], app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
-								group.text, app:Linkify(group.questID, app.Colors.Breadcrumb, "search:questID:"..group.questID)))
+								group.text, app:Linkify(group.questID, app.Colors.ChatLink, "search:questID:"..group.questID)))
 							app.Audio:PlayRemoveSound()
 						end
 					end
