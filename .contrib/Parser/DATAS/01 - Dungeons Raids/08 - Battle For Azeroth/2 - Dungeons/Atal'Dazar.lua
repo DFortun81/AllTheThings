@@ -41,7 +41,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					["lvl"] = 120,
 				}),
 			}),
-			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {
+			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 } }, {
 				i(211402),	-- Coif of the Court Spider
 				i(211405),	-- Loa Betrayer's Vestments
 				i(211401),	-- Secret Spinner's Miter

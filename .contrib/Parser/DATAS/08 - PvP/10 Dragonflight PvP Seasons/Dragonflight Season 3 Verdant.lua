@@ -5,7 +5,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 	header(HEADERS.Achievement, SEASON_VERDANT, {
 		["icon"] = "Interface\\Icons\\inv_serpentmountgladiator_green",
 		["g"] = {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {
+			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 } }, {
 				ach(19140, {	-- Verdant Combatant [A]
 					["races"] = ALLIANCE_ONLY,
 					["collectible"] = false,
@@ -58,7 +58,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				-- Fashion
 				ach(19276),	-- Verdant Vogue
 			})),
-			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {
+			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 } }, {
 				i(210070, {	-- Vicious Moonbeast [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -66,7 +66,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["races"] = HORDE_ONLY,
 				}),
 			})),
-			filter(TITLES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }, ["collectible"] = false }, {
+			filter(TITLES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 }, ["collectible"] = false }, {
 				title(78),	-- Combatant <Name>
 				title(32),	-- Challenger <Name>
 				title(31),	-- Rival <Name>
@@ -88,7 +88,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				-- Solo
 				title(491),	-- Legend <Name>
 			})),
-			n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {
+			n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 } }, {
 				n(199601, {	-- Seltherex
 					["coord"] = { 44.7, 37.0, VALDRAKKEN },
 					["g"] = {
@@ -409,7 +409,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 			})),
-			n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {
+			n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 } }, {
 				n(199599, {	-- Calderax
 					["coord"] = { 44.3, 36.6, VALDRAKKEN },
 					["g"] = {
@@ -1297,7 +1297,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 			})),
-			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }, ["bonusID"] = 7532 }, {
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 }, ["bonusID"] = 7532 }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(209275),	-- Verdant Gladiator's Cloak

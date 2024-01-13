@@ -1844,7 +1844,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				})),
 			}))),
-			pvp(header(HEADERS.Achievement, SEASON_VERDANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {
+			pvp(header(HEADERS.Achievement, SEASON_VERDANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 } }, {
 				n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {	-- "Tier Slots"
 					cl(DEATHKNIGHT, {
 						i(207203),	-- Casket of the Risen Nightmare

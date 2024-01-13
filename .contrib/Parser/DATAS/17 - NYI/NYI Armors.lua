@@ -27,8 +27,6 @@ root(ROOTS.NeverImplemented, {
 				i(21614),	-- Wormhide Protector
 			}),
 			filter(MAIL, {
-				i(18304),	-- Greenroot Mail
-				--
 				i(12105),	-- Pridemail Leggings
 				i(13090),	-- Breastplate of the Chosen
 				i(12615),	-- Savage Mail Tunic
@@ -97,7 +95,6 @@ root(ROOTS.NeverImplemented, {
 					i(23433),	-- Blood Robes
 					i(23434),	-- Robes of the Shard
 					i(25793),	-- Curate's Footwraps
-					i(34107),	-- Tattered Shoulderpads
 					--
 					i(26015),	-- Anchorite Neophyte's Cuffs
 					i(27720),	-- Robes of the Aldor
@@ -1795,7 +1792,7 @@ root(ROOTS.NeverImplemented, {
 					i(190262),	-- Transcendent Vagabond's Waistguard
 					i(190296),	-- Transcendent Vagabond's Wristguards
 					--
-					i(189943),	-- Greaves of Cosmic Designs
+
 					--
 					i(190616, {	-- Controlled Sequence Clasp
 						["bonusID"] = 451

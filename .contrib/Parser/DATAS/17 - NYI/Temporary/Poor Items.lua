@@ -28,7 +28,6 @@ root(ROOTS.NeverImplemented, {
 						i(1432),	-- Deprecated Patchwork Cloth Shoulderpads
 						i(4685),	-- Deprecated Runic Cloth Shoulderpads
 						i(3221),	-- Deprecated Sage Mantle
-						i(3958),	-- Mesh Mantle
 						i(4855),	-- Unused Cloth Shoulder A01 Gray
 						i(4856),	-- Unused Cloth Shoulder A02 Yellow
 						i(4857),	-- Unused Cloth Shoulder B01 Silver
@@ -614,7 +613,6 @@ root(ROOTS.NeverImplemented, {
 					i(12981),	-- Monster - Shield, Wall Metal Gold
 					i(12995),	-- Monster - Shield, Wall Metal Red
 					i(12980),	-- Monster - Shield, Wall Metal Silver
-					i(3988),	-- Plate Wall Shield
 				}),
 				filter(STAVES, {
 					i(1948),	-- Deprecated Large Broom

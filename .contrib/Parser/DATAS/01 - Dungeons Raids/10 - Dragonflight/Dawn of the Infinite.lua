@@ -25,6 +25,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(134670),	-- Auxiliary's Cowl					(Removed)
 			ig(134787),	-- Entrenched Cowl					(Removed)
 			ig(19105),	-- Frost Runed Headdress			(Removed)
+			ig(10782),	-- Hakkari Shroud					(Removed)
 			ig(134615),	-- Inflammatory Hood				(Removed)
 
 			ig(105810),	-- Buc-Zakai Burning Hood			(Ordos)
@@ -65,6 +66,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(108189),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108197),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108205),	-- Peerless Draenic Steel Helm		(NYI)
+			ig(108181),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(114266),	-- Ruby Plate Greathelm				(NYI)
 
 			ig(134630),	-- Firescored Helm					(Removed)
@@ -78,6 +80,8 @@ local QUANTUM_GROUP = sharedData({
 	i(208062, {	-- Quantum Shoulders
 		filter(CLOTH, {
 			ig(114271),	-- Firefly Mantle					(NYI)
+			ig(3958),	-- Mesh Mantle						(NYI)
+			ig(34107),	-- Tattered Shoulderpads			(NYI)
 
 			ig(134672),	-- Auxiliary's Amice				(Removed)
 			ig(134696),	-- Cascading Amice					(Removed)
@@ -222,8 +226,14 @@ local QUANTUM_GROUP = sharedData({
 			ig(108204),	-- Peerless Draenic Steel Guantlets	(NYI)
 			ig(108212),	-- Peerless Draenic Steel Guantlets	(NYI)
 			ig(108220),	-- Peerless Draenic Steel Guantlets	(NYI)
+			ig(113219, {	-- Romy's Reliable Grips		(NYI)
+				["modID"] = 4,	-- should be soruceID 62173
+			}),
 			ig(114262),	-- Ruby Plate Gauntlets				(NYI)
 			ig(156752),	-- Skullbreaker Gauntlets			(NYI)
+			ig(113229, {	-- Zoid's Molten Gauntlets		(NYI)
+				["modID"] = 4, -- should be sourceID 62197
+			}),
 
 			ig(20653),	-- Abyssal Plate Gauntlets			(Removed)
 			ig(134736),	-- Chillplate Gauntlets				(Removed)
@@ -259,6 +269,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(MAIL, {
 			ig(114393),	-- Element-Binder Legguards			(NYI)
+			ig(189943),	-- Greaves of Cosmic Designs		(NYI)
 			ig(114269),	-- Leafscale Legguards				(NYI)
 			ig(147515, {	-- Hellblaze Invader's Greaves	(NYI)
 				["modID"] = 2, -- Heroic dungeon
@@ -280,6 +291,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(114394),	-- Legplates of Grievous Storms		(NYI)
 			ig(108214),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(108222),	-- Peerless Draenic Steel Legguards	(NYI)
+			ig(108206),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(114270),	-- Ruby Plate Legplates				(NYI)
 
 			ig(134768),	-- Concealment Legplates			(Removed)
@@ -353,8 +365,6 @@ local QUANTUM_GROUP = sharedData({
 
 		ig(39769),	-- Arcanite Ripper						(BMAH)(Unique)
 		ig(44924),	-- Sun Lute								(BMAH)(Unique)
-
-		ig(9425),	-- Pendumlum of Doom					(Very Rare BoE)(Unique)
 	}),
 	i(208114, {	-- Quantum Greathammer	(Two-Handed)(Mace)
 	}),
@@ -374,14 +384,18 @@ local QUANTUM_GROUP = sharedData({
 		ig(108150),	-- Hardened Draeneic Steel Dagger		(NYI)
 		ig(108235),	-- Peerless Draenic Steel Dagger		(NYI)
 		ig(108236),	-- Peerless Draenic Steel Dagger		(NYI)
+		ig(108234),	-- Peerless Draenic Steel Dagger		(NYI)
+		ig(115295),	-- Spectral Dagger						(NYI)
 		ig(2664),	-- Spinner Fang							(NYI)
 		ig(3222),	-- Wicked Dagger						(NYI)
-		ig(2664),	--										(NYI/UNIQUE) 
+		ig(2664),	--										(NYI/UNIQUE)
 
 		ig(14151),	-- Chanting Blade						(Removed)
 		ig(134718),	-- Cold-Touched Shanker					(Removed)
 		ig(134748),	-- Covert Shanker						(Removed)
 		ig(37597),	-- Direbrew's Shanker [Level 70]		(Removed)
+		ig(66540),	-- Miniature Winter Veil Tree			(Removed)
+		ig(2941),	-- Prison Shank							(Removed)
 		ig(134610),	-- Scorching Shanker					(Removed)
 		ig(134779),	-- Seasoned Shanker						(Removed)
 		ig(134581),	-- Vanguard Shanker						(Removed)
@@ -401,6 +415,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(108238),	-- Peerless Draenic Steel Mace			(NYI)
 		ig(108240),	-- Peerless Draenic Steel Mace			(NYI)
 		ig(108241),	-- Peerless Draenic Steel Mace			(NYI)
+		ig(108239),	-- Peerless Draenic Steel Mace			(NYI)
 		ig(115299),	-- Spectral Scepter						(NYI)
 		ig(115296),	-- Spectral Warmace						(NYI)
 
@@ -412,6 +427,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(134611),	-- Scorching Pummeler					(Removed)
 		ig(134789),	-- Seasoned Gavel						(Removed)
 		ig(134781),	-- Seasoned Pummeler					(Removed)
+		ig(22322),	-- The Jaw Breaker						(Removed)
 		ig(134588),	-- Vanguard Gavel						(Removed)
 	}),
 	i(208116, {	-- Quantum Polearm
@@ -423,9 +439,12 @@ local QUANTUM_GROUP = sharedData({
 		ig(134782),	-- Seasoned Pike						(Removed)
 	}),
 	i(208126, {	-- Quantum Shield
+		ig(108062),	-- Draenic Steel Bulwark				(NYI)
+		ig(108158),	-- Hardened Draenic Steel Bulwark		(NYI)
 		ig(18303),	-- Nimble Buckler						(NYI)
 		ig(108242),	-- Peerless Draenic Steel Bulwark		(NYI)
 		ig(108245),	-- Peerless Draenic Steel Bulwark		(NYI)
+		ig(3988),	-- Plate Wall Shield					(NYI)
 		ig(3991),	-- Plated Buckler						(NYI)
 
 		ig(134741),	-- Cold-Touched Barrier 				(Removed)
@@ -458,6 +477,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(134725),	-- Cold-Touched Mageblade 				(Removed)
 		ig(134726),	-- Cold-Touched Sword 					(Removed)
 		ig(134758),	-- Covert Mageblade 					(Removed)
+		ig(14145),	-- Cursed Felblade						(Removed)
 		ig(134783),	-- Seasoned Quickblade 					(Removed)
 	}),
 	i(208122, {	-- Quantum Warglaives

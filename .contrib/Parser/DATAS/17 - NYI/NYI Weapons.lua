@@ -384,7 +384,6 @@ root(ROOTS.NeverImplemented, {
 		filter(DAGGERS, {
 			-- Load In Game
 			i(62329),	-- Dire Slasher (never added)
-			i(115295),	-- Spectral Dagger
 			i(115446),	-- Brianium Dagger
 			i(182564),	-- NPE Weapon Dagger AGI
 			i(182573),	-- NPE Weapon Dagger AGI 2

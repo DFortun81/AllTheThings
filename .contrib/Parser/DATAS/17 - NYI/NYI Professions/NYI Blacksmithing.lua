@@ -63,7 +63,6 @@ root(ROOTS.NeverImplemented, {
 					-- 6.0.2
 					tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 						i(108422),	-- Blackrock Crucible
-						i(108062),	-- Draenic Steel Bulwark
 						i(107968),	-- Draenic Steel Chestplate
 						i(107976),	-- Draenic Steel Chestplate
 						i(107971),	-- Draenic Steel Helm
@@ -82,7 +81,6 @@ root(ROOTS.NeverImplemented, {
 						i(107983),	-- Draenic Steel Wristwraps
 						i(116653),	-- Unstable Greater Steelforged Essence
 						i(116650),	-- Unstable Greater Truesteel Essence
-						i(108158),	-- Hardened Draenic Steel Bulwark
 						i(108084),	-- Hardened Draenic Steel Girdle
 						i(108154),	-- Hardened Draenic Steel Mace
 						i(108142),	-- Hardened Draenic Steel War Axe
@@ -90,12 +88,10 @@ root(ROOTS.NeverImplemented, {
 						i(108085),	-- Hardened Draenic Steel Wristwraps
 						i(108243),	-- Peerless Draenic Steel Bulwark
 						i(108244),	-- Peerless Draenic Steel Bulwark
-						i(108234),	-- Peerless Draenic Steel Dagger
 						i(108237),	-- Peerless Draenic Steel Dagger
 						i(108162),	-- Peerless Draenic Steel Chestplate
 						i(108178),	-- Peerless Draenic Steel Chestplate
 						i(108194),	-- Peerless Draenic Steel Chestplate
-						i(108181),	-- Peerless Draenic Steel Helm
 						i(108213),	-- Peerless Draenic Steel Helm
 						i(108221),	-- Peerless Draenic Steel Helm
 						i(108168),	-- Peerless Draenic Steel Girdle
@@ -109,8 +105,6 @@ root(ROOTS.NeverImplemented, {
 						i(108182),	-- Peerless Draenic Steel Legguards
 						i(108190),	-- Peerless Draenic Steel Legguards
 						i(108198),	-- Peerless Draenic Steel Legguards
-						i(108206),	-- Peerless Draenic Steel Legguards
-						i(108239),	-- Peerless Draenic Steel Mace
 						i(108167),	-- Peerless Draenic Steel Shoulders
 						i(108183),	-- Peerless Draenic Steel Shoulders
 						i(108191),	-- Peerless Draenic Steel Shoulders

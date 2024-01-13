@@ -60,7 +60,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["lvl"] = 110,
 				}),
 			}),
-			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {
+			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 } }, {
 				i(211513),	-- Howling Echoes
 				i(211470),	-- Ravencrest's Wrath
 			})),
