@@ -400,7 +400,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 					["groups"] = {
 						objective(1, {	-- 0/1 Araj's Phylactery Shard
-							["provider"] = { "i", 17114 },	-- Araj's Phylactery Shard
+							["providers"] = {
+								{ "i",  17114 },	-- Araj's Phylactery Shard
+								{ "o", 177241 },	-- Araj's Phylactery
+							},
 							["coord"] = { 45.6, 69.2, WESTERN_PLAGUELANDS },
 							["cr"] = 1852,	-- Araj the Summoner
 						}),
