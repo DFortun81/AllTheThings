@@ -13409,7 +13409,7 @@ RowOnEnter = function (self)
 		-- Show Breadcrumb information
 		local lockedWarning;
 		if reference.isBreadcrumb then
-			GameTooltip:AddLine(sformat("|c%s%s|r", app.Colors.Locked, L["THIS_IS_BREADCRUMB"]));
+			GameTooltip:AddLine(sformat("|c%s%s|r", app.Colors.Breadcrumb, L["THIS_IS_BREADCRUMB"]));
 			if reference.nextQuests then
 				local isBreadcrumbAvailable = true;
 				local nextq, nq = {};
@@ -19486,7 +19486,7 @@ app.Startup = function()
 	-- not needed, account-wide by blizzard
 	currentCharacter.RuneforgeLegendaries = nil;
 	if not currentCharacter.Conduits then currentCharacter.Conduits = {}; end
-	
+
 	-- Update timestamps.
 	local now = time();
 	local timeStamps = currentCharacter.TimeStamps;

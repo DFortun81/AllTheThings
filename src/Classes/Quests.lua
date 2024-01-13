@@ -1018,7 +1018,7 @@ if app.IsRetail then
 			acceptText,
 			app:Linkify(acceptQuestID, app.Colors.ChatLink, "search:questID:"..acceptQuestID),
 			bcText,
-			app:Linkify(bcQuestID, app.Colors.Locked, "search:questID:"..bcQuestID)))
+			app:Linkify(bcQuestID, app.Colors.Breadcrumb, "search:questID:"..bcQuestID)))
 		app.Audio:PlayRemoveSound()
 	end
 
@@ -1053,7 +1053,7 @@ else
 
 							app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
 								QuestNameFromID[questID], app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
-								group.text, app:Linkify(group.questID, app.Colors.Locked, "search:questID:"..group.questID)))
+								group.text, app:Linkify(group.questID, app.Colors.Breadcrumb, "search:questID:"..group.questID)))
 							app.Audio:PlayRemoveSound()
 						end
 					end
@@ -1386,6 +1386,9 @@ app.IsClassic and "WithReputation" or false, {
 }, (function(t) return t.maxReputation; end),
 -- Retail: Breadcrumb w/ Locked Quest support
 not app.IsClassic and "AsBreadcrumbWithLockCriteria" or false, {
+	text = function(t)
+		return t.locked and Colorize(t.name, app.Colors.Locked) or Colorize(t.name, app.Colors.Breadcrumb)
+	end,
 	collectible = CollectibleAsQuestOrAsLocked,
 	locked = function(t)
 		if LockedAsQuest(t) or LockedAsBreadcrumb(t) then
@@ -1402,7 +1405,9 @@ not app.IsClassic and "WithLockCriteria" or false, {
 "AsBreadcrumb", {
 	text = app.IsClassic and function(t)
 		return "|cffcbc3e3" .. t.name .. "|r";
-	end or nil,
+	end or function(t)
+		return Colorize(t.name, app.Colors.Breadcrumb)
+	end,
 	collectible = app.IsClassic and function(t)
 		if app.Settings.Collectibles.Quests then
 			if C_QuestLog_IsOnQuest(t.questID) or IsQuestFlaggedCompletedForObject(t) then

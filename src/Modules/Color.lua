@@ -37,7 +37,7 @@ local function RGBComponentConversion(c)
 	return min(255, max(0, (c or 0) * 255));
 end
 local RGBToHex = function(r, g, b)
-	return sformat("ff%02x%02x%02x", 
+	return sformat("ff%02x%02x%02x",
 		RGBComponentConversion(r),
 		RGBComponentConversion(g),
 		RGBComponentConversion(b));
@@ -55,10 +55,13 @@ app.TryColorizeName = function(group, name)
 	-- faction rep status
 	elseif group.factionID and group.standing then
 		return app.GetCurrentFactionStandingText(group.factionID, group.standing, name);
-	-- locked/breadcrumb things
-	elseif group.locked or group.isBreadcrumb then
+	-- locked things
+	elseif group.locked then
 		return Colorize(name, colors.Locked);
-		-- if people REALLY only want to see colors in account/debug then we can comment this in
+	-- breadcrumbs (should always be covered within Quest lib)
+	-- elseif group.isBreadcrumb then
+	-- 	return Colorize(name, colors.Breadcrumb);
+	-- if people REALLY only want to see colors in account/debug then we can comment this in
 	elseif app.Settings:GetTooltipSetting("UseMoreColors") --and (app.MODE_DEBUG_OR_ACCOUNT)
 	then
 		-- class color
