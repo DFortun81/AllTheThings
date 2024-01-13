@@ -232,7 +232,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(12230, {	-- Felwood Slime Sample
+							-- #if AFTER WRATH
+							["description"] = "Bring at least 15 of these back with you to the Undercity for testing.",
+							-- #else
 							["description"] = "Bring at least 30 of these back with you to the Undercity for testing.",
+							-- #endif
 							["crs"] = {
 								7086,	-- Cursed Ooze
 								7092,	-- Tainted Ooze
