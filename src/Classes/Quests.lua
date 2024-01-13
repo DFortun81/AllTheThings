@@ -1212,6 +1212,30 @@ local function LockedAsBreadcrumb(t)
 end
 app.LockedAsQuest = LockedAsQuest;
 app.QuestLockCriteriaFunctions = criteriaFuncs;
+local function QuestWithReputationDescription(t)
+	if app.Settings.Collectibles.Reputations then
+		local factionID = t.maxReputation[1];
+		return L.ITEM_GIVES_REP .. (select(1, GetFactionInfoByID(factionID)) or ("Faction #" .. tostring(factionID))) .. "'";
+	end
+end
+local function QuestWithReputationCollectibleAsCost(t)
+	-- TODO: maybe some better way to cache this result for the quest
+	-- If Collectible by providing reputation towards a Faction with which the character is below the rep-granting Standing
+	-- and the Faction itself is Collectible & Not Collected
+	-- and the Quest is not completed and not locked from being completed
+	if app.Settings.Collectibles.Reputations and not t.saved and not t.locked then
+		local factionID = t.maxReputation[1];
+		local factionRef = Search("factionID", factionID, "key");
+		if factionRef and not factionRef.collected then
+			-- compare the actual standing against the current standing rather than raw vaules (friendships are variable)
+			local maxStanding = app.GetReputationStanding(t.maxReputation);
+			if maxStanding > factionRef.standing then
+				-- app.PrintDebug("Quest",t.questID,"collectible for Faction",factionID,factionRef.text,factionRef.isFriend)
+				return true;
+			end
+		end
+	end
+end
 
 -- Party Sync Support
 local IsQuestReplayable, OnUpdateForPartySyncedQuest = C_QuestLog.IsQuestReplayable;
@@ -1362,13 +1386,23 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		end
 	end,
 },
-app.IsClassic and "WithReputation" or false, {
-	collectible = function(t)
+-- Retail: Some Reputation-linked Quests are also able to be Locked
+not app.IsClassic and "WithReputationWithLockCriteria" or false, {
+	description = QuestWithReputationDescription,
+	-- Retail: Quests which have a maxrepuation can be considered a Cost for the respective Faction
+	collectibleAsCost = not app.IsClassic and QuestWithReputationCollectibleAsCost or nil,
+	locked = LockedAsQuest,
+}, (function(t) return t.maxReputation and t.lc; end),
+"WithReputation", {
+	-- Classic: Quests which give Reputation are always collectible if tracking Quests & Reputations
+	collectible = app.IsClassic and function(t)
 		if app.Settings.Collectibles.Quests then
 			return app.Settings.Collectibles.Reputations or CollectibleAsQuest(t);
 		end
-	end,
-	collected = function(t)
+	end or nil,
+	-- Classic: Quests which give Reputation are considered collected if tracking Reputations
+	-- and the corresponding Faction is not collected. Even if the Quest itself is not complete.
+	collected = app.IsClassic and function(t)
 		local flag = IsQuestFlaggedCompletedForObject(t);
 		if flag then return flag; end
 		local maxReputation = t.maxReputation;
@@ -1385,13 +1419,10 @@ app.IsClassic and "WithReputation" or false, {
 				end
 			end
 		end
-	end,
-	description = function(t)
-		if app.Settings.Collectibles.Reputations then
-			local factionID = t.maxReputation[1];
-			return L.ITEM_GIVES_REP .. (select(1, GetFactionInfoByID(factionID)) or ("Faction #" .. tostring(factionID))) .. "'";
-		end
-	end,
+	end or nil,
+	description = QuestWithReputationDescription,
+	-- Retail: Quests which have a maxrepuation can be considered a Cost for the respective Faction
+	collectibleAsCost = not app.IsClassic and QuestWithReputationCollectibleAsCost or nil,
 }, (function(t) return t.maxReputation; end),
 -- Retail: Breadcrumb w/ Locked Quest support
 not app.IsClassic and "AsBreadcrumbWithLockCriteria" or false, {
