@@ -844,15 +844,15 @@ if app.IsRetail then
 			end
 		end
 
-		app:RegisterEvent("QUEST_LOG_UPDATE");
+		app:RegisterEvent("CRITERIA_UPDATE");
 		-- app.PrintDebugPrior("RefreshedQuestCompletionState")
 	end
 	RefreshAllQuestInfo = function()
-		app:UnregisterEvent("QUEST_LOG_UPDATE");
+		app:UnregisterEvent("CRITERIA_UPDATE");
 		AfterCombatOrDelayedCallback(RefreshQuestCompletionState, 1);
 	end
 	RefreshQuestInfo = function(questID)
-		app:UnregisterEvent("QUEST_LOG_UPDATE");
+		app:UnregisterEvent("CRITERIA_UPDATE");
 		-- app.PrintDebug("RefreshQuestInfo",questID)
 		if questID then
 			RefreshQuestCompletionState(questID);
@@ -1638,8 +1638,21 @@ end;
 app.events.BAG_NEW_ITEMS_UPDATED = softRefresh;
 if app.IsClassic then
 	-- Way too spammy to be used without a Callback or combat protection
-	app.events.CRITERIA_UPDATE = softRefresh;
 	app:RegisterEvent("CRITERIA_UPDATE");
+	app.events.CRITERIA_UPDATE = softRefresh;
+	-- This triggers in many situations where nothing actually changes... (like opening Quest Log)
+	app:RegisterEvent("QUEST_LOG_UPDATE");
+	app.events.QUEST_LOG_UPDATE = function()
+		-- app.PrintDebug("QUEST_LOG_UPDATE")
+		RefreshAllQuestInfo();
+	end
+else
+	-- In Retail, this has a cooldown and OOC protection, plus it actually allows accurate
+	-- triggering of quest status changes without user action.
+	-- Additionally, RefreshAllQuestInfo is extremely efficient for Retail and characters with 25,000 completed
+	-- quests should not notice any FPS stutters even up to 120 FPS
+	app:RegisterEvent("CRITERIA_UPDATE");
+	app.events.CRITERIA_UPDATE = RefreshAllQuestInfo;
 end
 app.events.QUEST_REMOVED = softRefresh;
 app.events.QUEST_WATCH_UPDATE = softRefresh;
@@ -1652,10 +1665,6 @@ app.events.QUEST_ACCEPTED = function(questLogIndex, questID)
 		PrintQuestInfo(questID, true);
 		CheckFollowupQuests(questID);
 	end
-end
-app.events.QUEST_LOG_UPDATE = function()
-	-- app.PrintDebug("QUEST_LOG_UPDATE")
-	RefreshAllQuestInfo();
 end
 app.events.QUEST_TURNED_IN = function(questID)
 	if questID then
@@ -1673,7 +1682,6 @@ app.events.QUEST_TURNED_IN = function(questID)
 end
 app:RegisterEvent("BAG_NEW_ITEMS_UPDATED");
 app:RegisterEvent("QUEST_ACCEPTED");
-app:RegisterEvent("QUEST_LOG_UPDATE");
 app:RegisterEvent("QUEST_REMOVED");
 app:RegisterEvent("QUEST_TURNED_IN");
 app:RegisterEvent("QUEST_WATCH_UPDATE");
