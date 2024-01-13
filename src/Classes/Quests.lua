@@ -7,6 +7,7 @@ local AssignChildren, GetRelativeField, GetRelativeValue, SearchForField =
 	app.AssignChildren, app.GetRelativeField, app.GetRelativeValue, app.SearchForField;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local Colorize = app.Modules.Color.Colorize;
+local Search = app.SearchForObject
 
 -- Global locals
 local ipairs, pairs, rawset, rawget, tinsert, math_floor, RETRIEVING_DATA, wipe, select, tonumber, sformat
@@ -374,17 +375,10 @@ if app.IsRetail then
 			and
 			(
 				(
-					(
-						-- debug/account mode
-						app.MODE_DEBUG_OR_ACCOUNT
-					)
-					and
-					(
 						-- collectible by any character
 						app.Settings.AccountWide.Quests
 						-- or not OTQ or is OTQ not yet known to be completed by any character, or is OTQ completed by this character
 						or (not ATTAccountWideData.OneTimeQuests[questID] or ATTAccountWideData.OneTimeQuests[questID] == app.GUID)
-					)
 				)
 				-- If it is an item/cost and associated to an active quest.
 				-- TODO: add t.requiredForQuestID
@@ -506,7 +500,7 @@ local function GenerateSourceQuestString(quest)
 	-- Generate a simple sourcequest completion string for a questRef
 	if quest then
 		if type(quest) == "string" or type(quest) == "number" then
-			quest = app.SearchForObject("questID",tonumber(quest),"field");
+			quest = Search("questID",tonumber(quest),"field");
 		end
 	end
 	if quest then
@@ -731,7 +725,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 	end
 end
 app.CheckQuestInfo = function(questID, isTest)
-	app.CheckInaccurateQuestInfo(app.SearchForObject("questID",questID), "test-show", isTest)
+	app.CheckInaccurateQuestInfo(Search("questID",questID), "test-show", isTest)
 end
 
 local RefreshAllQuestInfo, RefreshQuestInfo;
@@ -1247,7 +1241,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 						return true;
 					-- otherwise incomplete breadcrumbs will not prevent picking up a quest if they are ignored
 					else
-						sq = app.SearchForObject("questID", sourceQuestID, "field");
+						sq = Search("questID", sourceQuestID, "field");
 						if sq and not sq.isBreadcrumb and not (sq.locked or sq.altcollected) then
 							return true;
 						end
@@ -1267,7 +1261,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 			wipe(prereqs);
 			for _,sourceQuestID in ipairs(sourceQuests) do
 				if not IsQuestFlaggedCompleted(sourceQuestID) then
-					sq = app.SearchForObject("questID", sourceQuestID, "field");
+					sq = Search("questID", sourceQuestID, "field");
 					if sq then
 						F = app.CurrentCharacterFilters(sq);
 						O = C_QuestLog_IsOnQuest(sourceQuestID);
@@ -1686,7 +1680,7 @@ if app.IsRetail then
 				-- app.PrintDebug("Not in Backtrace",questID)
 			end
 		else
-			questRef = app.SearchForObject("questID",questID,"field");
+			questRef = Search("questID",questID,"field");
 			if not questRef then
 				app.report("Failed to find Source Quest",questID)
 				return;
@@ -1718,7 +1712,7 @@ if app.IsRetail then
 					if p[1] == "i" then
 						id = p[2];
 						-- print("Quest Item Provider",p[1], id);
-						local pRef = app.SearchForObject("itemID", id, "field");
+						local pRef = Search("itemID", id, "field");
 						if pRef then
 							app.NestObject(questRef, pRef, true, 1);
 						else
@@ -1783,7 +1777,7 @@ if app.IsRetail then
 
 		-- Map out the relative positions of the entire quest sequence based on depth from the root quest
 		-- Find the quest being added
-		local questRef = questID > 0 and app.SearchForObject("questID",questID) or app.EmptyTable;
+		local questRef = questID > 0 and Search("questID",questID) or app.EmptyTable;
 		-- Traverse recursive quests via 'sourceQuests'
 		local sqs = questRef.sourceQuests or questChainRoot.sourceQuests;
 		if not sqs then return; end
