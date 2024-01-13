@@ -85,7 +85,7 @@ local RIDERS_OF_AZEROTH_BADGE = 2588;
 root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT, {
 	["timeline"] = { ADDED_10_1_5 },
 	["groups"] = {
-		applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7, "removed 10.1.7" } }, {	-- Eastern Kingdom Cup
+		applyevent(EVENTS.EASTERN_KINGDOMS_CUP, n(EASTERN_KINGDOMS_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Eastern Kingdom Cup
 			n(ACHIEVEMENTS, {
 				ach(18566, {	-- Eastern Kingdoms: Bronze
 				-- Meta Achievement
@@ -750,7 +750,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				}),
 			}),
 		}))),
-		applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, "removed 10.1.5" } }, {					-- Kalimdor Cup
+		applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {					-- Kalimdor Cup
 			-- Returns Jan 9th 2025 (11.1.0?)
 			n(ACHIEVEMENTS, {
 				ach(17712, {	-- Kalimdor: Bronze
@@ -1762,7 +1762,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				}),
 			}),
 		}))),
-		applyevent(EVENTS.OUTLAND_CUP, n(OUTLAND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5, "removed 10.2.5.99999" } }, {						-- Outland Cup
+		applyevent(EVENTS.OUTLAND_CUP, n(OUTLAND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {						-- Outland Cup
 			n(ACHIEVEMENTS, {
 				ach(19092, {	-- Outland: Bronze
 					-- Meta Achievement
@@ -2383,7 +2383,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				})),
 			}),
 		}))),
-		applyevent(EVENTS.NORTHREND_CUP, n(NORTHREND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+		applyevent(EVENTS.NORTHREND_CUP, n(NORTHREND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5, ADDED_10_2_6 } }, {					-- Northrend Cup
 			n(ACHIEVEMENTS, {
 				ach(19674, {	-- Northrend: Bronze
 					-- Meta Achievement
@@ -2857,6 +2857,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 			currency(RIDERS_OF_AZEROTH_BADGE, {
 				["description"] = "For each achievement in the Dragonriding Cup, players earn one badge, with up to 15 badges possible for completing a race across its five types, each featuring bronze, silver, and gold variations.",
 			}),
-		}),		
+		}),
 	},
 })));
