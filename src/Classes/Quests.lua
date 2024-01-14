@@ -784,7 +784,7 @@ if app.IsRetail then
 			RefreshAllQuestInfo();
 		end
 	end
-	
+
 	-- Retail Event Handlers
 	app:RegisterEvent("LOOT_OPENED");
 	app.events.LOOT_OPENED = RefreshAllQuestInfo;
@@ -1627,7 +1627,9 @@ if app.IsRetail then
 		-- Compare current depth to existing depth in 'depths' if the current parent of the questID is already in filters
 		local prevDepth = depths[questID];
 		local currentParent = parents[questID];
-		if prevDepth and prevDepth >= currentDepth and inFilters[currentParent] then
+		-- app.PrintDebug("MSQR",questID,currentParent,prevDepth,"=>",parentQuestID,currentDepth)
+		-- Ignore repeating MSQR logic for the same parent/quest if the filterability of the two possible parents is not different
+		if prevDepth and prevDepth >= currentDepth and (inFilters[currentParent] == inFilters[parentQuestID]) then
 			-- app.PrintDebug("Ignore Depth Quest",questID,"@",currentDepth,"Previous",prevDepth)
 			return;
 		end
@@ -1709,16 +1711,12 @@ if app.IsRetail then
 		depths[questID] = currentDepth;
 		-- Save the parentQuestID for this questID, but only if this quest has no parent yet, or specifically meets character filters for a different parent
 		if not currentParent then
+			-- app.PrintDebug("New Current Parent",questID,"=>",parentQuestID)
 			parents[questID] = parentQuestID;
-		elseif currentParent ~= parentQuestID and not inFilters[currentParent] then
-			-- app.PrintDebug("Check Current Parent Filter",questID,"=>",currentParent)
-			if app.CurrentCharacterFilters(refs[parentQuestID]) then
-				-- app.PrintDebug("New Filter Parent",questID,"=>",parentQuestID)
-				parents[questID] = parentQuestID;
-				inFilters[parentQuestID] = true;
-			-- else
-			-- 	app.PrintDebug("New Parent, Filtered",questID,"=>",parentQuestID)
-			end
+		-- Quest is re-assigned to another in-filter parent because the current parent does not meet the character filters
+		elseif currentParent ~= parentQuestID and not inFilters[currentParent] and inFilters[parentQuestID] then
+			-- app.PrintDebug("New Filtered Parent",questID,"=>",parentQuestID,"--",currentParent)
+			parents[questID] = parentQuestID;
 		end
 
 		-- Traverse recursive quests via 'sourceQuests'
@@ -1743,8 +1741,18 @@ if app.IsRetail then
 		local depths = {[questID] = 9999};
 		local parents = {};
 		local refs = {[questID] = questChainRoot};
-		-- represents quests that had to be confirmed for current character filters already
-		local inFilters = {};
+		-- represents quests that had to be confirmed for current character filters
+		local inFilters = setmetatable({}, { __index = function(t, key)
+			local keyRef = refs[key]
+			if not keyRef then
+				-- app.PrintDebug("inFilters check for",key,"which had no ref?")
+				return false
+			end
+			local filtered = app.CurrentCharacterFilters(refs[key]) or false
+			-- app.PrintDebug("inFilters__index",key,filtered)
+			t[key] = filtered
+			return filtered
+		end})
 
 		-- Map out the relative positions of the entire quest sequence based on depth from the root quest
 		-- Find the quest being added
