@@ -395,11 +395,11 @@ app.Sort = function(t, compare, nested)
 end
 -- Sorts a group using the provided sortType, whether to recurse through nested groups, and whether sorting should only take place given the group having a conditional field
 local function SortGroup(group, sortType)
-	--print("SortGroup", group.parent and group.parent.text, group.text, sortType);
+	-- app.PrintDebug("SortGroup", group.parent and group.parent.text, group.text, sortType);
 	if group.g then
 		-- either sort visible groups or by conditional
         if group.visible then
-			-- app.PrintDebug("sorting",group.key,group.key and group[group.key],"by",sortType)
+			-- app.PrintDebug("sorting",group.hash,"by",sortType)
 			local status,err = app.Sort(group.g, app.SortDefaults[sortType]);
 			if status then
 				-- Setting this to false instead of nil causes the field to also
@@ -407,7 +407,7 @@ local function SortGroup(group, sortType)
 				if group.SortType and not group.PersistSortType then group.SortType = false; end
 			else
 				-- Uncomment this to debug errors in your sort functions
-				--print("Error in sort", err);
+				-- app.PrintDebug("Error in sort", err);
 			end
 		end
 	end
