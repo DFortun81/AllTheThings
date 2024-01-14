@@ -148,12 +148,21 @@ root(ROOTS.Character, n(GEAR_UPDATE, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 				i(153773),	-- Springrain Spear
 				i(153771),	-- Springrain Helm
 				i(153794),	-- Springrain Choker
-				-- No shoulder
+				-- No shoulder until 10.2.0
+				-- #if AFTER 10.2.0
+				i(153774),	-- Springrain Pauldrons
+				-- #endif
 				i(153793),	-- Springrain Cloak of Durability
 				i(153768),	-- Springrain Vest
-				-- No wrist
+				-- No wrist until 10.2.0
+				-- #if AFTER 10.2.0
+				i(153776),	-- Springrain Cuffs
+				-- #endif
 				i(153770),	-- Springrain Handguards
-				-- No waist
+				-- No waist until 10.2.0
+				-- #if AFTER 10.2.0
+				i(153775),	-- Springrain Cord
+				-- #endif
 				i(153772),	-- Springrain Legguards
 				i(153769),	-- Springrain Footpads
 				i(153797),	-- Springrain Band of Durability
@@ -425,7 +434,8 @@ root(ROOTS.Character, n(GEAR_UPDATE, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 		cl(PRIEST, {
 			-- No Adventurer's Footlocker
 			cl(PRIEST, DISCIPLINE, {
-				i(153919),	-- Communal Wand
+				i(153919, {["timeline"] = REMOVED_10_2_0}),	-- Communal Wand
+				i(153934, {["timeline"] = ADDED_10_2_0}),	-- Communal Staff
 				i(153923),	-- Communal Hood
 				i(153925),	-- Communal Necklace
 				i(153931),	-- Communal Shoulderpads
@@ -442,7 +452,8 @@ root(ROOTS.Character, n(GEAR_UPDATE, bubbleDownSelf({ ["timeline"] = { ADDED_10_
 				i(153930),	-- Communal Stone of Wisdom
 			}),
 			cl(PRIEST, HOLY, {
-				i(153919),	-- Communal Wand
+				i(153919, {["timeline"] = REMOVED_10_2_0}),	-- Communal Wand
+				i(153934, {["timeline"] = ADDED_10_2_0}),	-- Communal Staff
 				i(153923),	-- Communal Hood
 				i(153925),	-- Communal Necklace
 				i(153931),	-- Communal Shoulderpads
