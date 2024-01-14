@@ -28,6 +28,9 @@ local DefaultQuestIcon = app.asset("Interface_Quest");
 local DefaultWorldQuestIcon = app.asset("Interface_WorldQuest");
 local RepeatableQuestIcon = app.asset("Interface_Questd");
 
+-- Module locals
+local OneTimeQuests
+
 -- Quest Name Lib
 local RequestLoadQuestByID;
 local GetTitleForQuestID, GetQuestTimeLeftMinutes;
@@ -300,7 +303,7 @@ local CompletedQuests = setmetatable({}, {
 		end
 		return false;
 	end
-	-- Retail
+	-- Retail __index
 	or function(t, questID)
 		if RetailRawQuests[questID] then return true end
 		if C_QuestLog_IsQuestFlaggedCompleted(questID) then
@@ -321,7 +324,7 @@ local CompletedQuests = setmetatable({}, {
 			end
 		end
 	end
-	-- Retail
+	-- Retail __newindex
 	or function(t, questID, state)
 		if questID then
 			RetailDirtyQuests[#RetailDirtyQuests + 1] = questID
@@ -378,7 +381,7 @@ if app.IsRetail then
 						-- collectible by any character
 						app.Settings.AccountWide.Quests
 						-- or not OTQ or is OTQ not yet known to be completed by any character, or is OTQ completed by this character
-						or (not ATTAccountWideData.OneTimeQuests[questID] or ATTAccountWideData.OneTimeQuests[questID] == app.GUID)
+						or (not OneTimeQuests[questID] or OneTimeQuests[questID] == app.GUID)
 				)
 				-- If it is an item/cost and associated to an active quest.
 				-- TODO: add t.requiredForQuestID
@@ -467,7 +470,7 @@ local function GetQuestIndicator(t)	-- TODO: This was not used in Classic.
 		if C_QuestLog_IsOnQuest(questID) then
 			return app.asset((C_QuestLog_ReadyForTurnIn(questID) and "Interface_Questin") or "Interface_Questin_grey");
 		-- TODO: This is not how I want this handled. (Use a subclass!)
-		--elseif ATTAccountWideData.OneTimeQuests[questID] then
+		--elseif OneTimeQuests[questID] then
 		--	return "Interface_Quest_Arrow";
 		end
 	end
@@ -744,15 +747,15 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 
 			local popupID = "quest-filter-" .. id;
 			local checks = {
-				["Filter"] = filter and true or false,
-				["InGame"] = inGame and true or false,
-				["Incomplete"] = incomplete and true or false,
-				["PreReq"] = metPrereq and true or false,
+				Filter = filter and true or false,
+				InGame = inGame and true or false,
+				Incomplete = incomplete and true or false,
+				PreReq = metPrereq and true or false,
 			};
 			if app:SetupReportDialog(popupID, "Inaccurate Quest Info: " .. id,
 				BuildDiscordQuestInfoTable(id, "inaccurate-quest", questChange, questRef, checks))
 			then
-				app.print(app:Linkify(L["REPORT_INACCURATE_QUEST"], app.Colors.ChatLinkError, "dialog:" .. popupID));
+				app.print(app:Linkify(L.REPORT_INACCURATE_QUEST, app.Colors.ChatLinkError, "dialog:" .. popupID));
 			end
 		end
 	end
@@ -1023,7 +1026,7 @@ if app.IsRetail then
 		end
 
 		local acceptQuestID, bcQuestID = accepted.questID, bc.questID
-		app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
+		app.print(sformat(L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT,
 			acceptText,
 			app:Linkify(acceptQuestID, app.Colors.ChatLink, "search:questID:"..acceptQuestID),
 			bcText,
@@ -1060,7 +1063,7 @@ else
 								coroutine.yield();
 							end
 
-							app.print(sformat(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"],
+							app.print(sformat(L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT,
 								QuestNameFromID[questID], app:Linkify(questID, app.Colors.ChatLink, "search:questID:"..questID),
 								group.text, app:Linkify(group.questID, app.Colors.ChatLink, "search:questID:"..group.questID)))
 							app.Audio:PlayRemoveSound()
@@ -1078,37 +1081,37 @@ local LockedQuestCache = {}
 local criteriaFuncs = {
 	-- TODO: When Achievements get moved to their own file, add these to app.QuestLockCriteriaFunctions in that file.
 	-- The achievement functions would be cached more efficiently in that file and be able to version properly.
-    ["achID"] = function(achievementID)
+    achID = function(achievementID)
         return app.CurrentCharacter.Achievements[achievementID];
     end,
-	["label_achID"] = ACHIEVEMENT_UNLOCKED or "Achievement Earned",
-    ["text_achID"] = function(achievementID)
+	label_achID = ACHIEVEMENT_UNLOCKED or "Achievement Earned",
+    text_achID = function(achievementID)
         return select(2, GetAchievementInfo(achievementID));
     end,
 
-    ["lvl"] = function(lvl)
+    lvl = function(lvl)
         return app.Level >= lvl;
     end,
-	["label_lvl"] = L.LOCK_CRITERIA_LEVEL_LABEL or "Player Level",
-    ["text_lvl"] = function(lvl)
+	label_lvl = L.LOCK_CRITERIA_LEVEL_LABEL or "Player Level",
+    text_lvl = function(lvl)
         return lvl;
     end,
 
-    ["questID"] = IsQuestSaved,
-	["label_questID"] = L.LOCK_CRITERIA_QUEST_LABEL or "Completed Quest",
-    ["text_questID"] = function(questID)
+    questID = IsQuestSaved,
+	label_questID = L.LOCK_CRITERIA_QUEST_LABEL or "Completed Quest",
+    text_questID = function(questID)
         return sformat("[%d] %s", questID, QuestNameFromID[questID] or RETRIEVING_DATA);
     end,
 
-    ["spellID"] = function(spellID)
+    spellID = function(spellID)
         return app.CurrentCharacter.Spells[spellID] or app.CurrentCharacter.ActiveSkills[spellID];
     end,
-	["label_spellID"] = L.LOCK_CRITERIA_SPELL_LABEL or "Learned Spell/Mount/Recipe",
-    ["text_spellID"] = function(spellID)
+	label_spellID = L.LOCK_CRITERIA_SPELL_LABEL or "Learned Spell/Mount/Recipe",
+    text_spellID = function(spellID)
         return app.GetSpellName(spellID);
     end,
 
-    ["factionID"] = function(v)
+    factionID = function(v)
 		-- v = factionID.standingRequiredToLock
 		local factionID = math_floor(v + 0.00001);
 		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
@@ -1116,8 +1119,8 @@ local criteriaFuncs = {
 		-- app.PrintDebug(sformat("Check Faction %s Standing (%d) is locked @ (%d)", factionID, standing, lockStanding))
 		return standing >= lockStanding;
     end,
-	["label_factionID"] = L.LOCK_CRITERIA_FACTION_LABEL or "Faction Reputation",
-    ["text_factionID"] = function(v)
+	label_factionID = L.LOCK_CRITERIA_FACTION_LABEL or "Faction Reputation",
+    text_factionID = function(v)
 		-- v = factionID.standingRequiredToLock
 		local factionID = math_floor(v + 0.00001);
 		local lockStanding = math_floor((v - factionID) * 10 + 0.00001);
@@ -1284,19 +1287,19 @@ end
 
 -- Quest Lib (From Classic)
 local createQuest = app.CreateClass("Quest", "questID", {
-	["text"] = app.IsClassic and function(t)
+	text = app.IsClassic and function(t)
 		if t.repeatable then return "|cff0070DD" .. t.name .. "|r"; end
 		return t.name;
 	end or nil,
-	["name"] = function(t)
+	name = function(t)
 		return QuestNameFromID[t.questID] or RETRIEVING_DATA;
 	end,
-	["icon"] = function(t)
+	icon = function(t)
 		return app.GetIconFromProviders(t)
 			or (t.repeatable and RepeatableQuestIcon)
 			or DefaultQuestIcon;
 	end,
-	["model"] = function(t)
+	model = function(t)
 		if t.providers then
 			for k,v in ipairs(t.providers) do
 				if v[2] > 0 then
@@ -1307,12 +1310,12 @@ local createQuest = app.CreateClass("Quest", "questID", {
 			end
 		end
 	end,
-	["silentLink"] = function(t)
+	silentLink = function(t)
 		if t.questID then return GetQuestLink(t.questID) or ("[" .. t.name .. " (".. t.questID .. ")]"); end
 	end,
-	["collectible"] = CollectibleAsQuest,
-	["collected"] = IsQuestFlaggedCompletedForObject,
-	["altcollected"] = function(t)
+	collectible = CollectibleAsQuest,
+	collected = IsQuestFlaggedCompletedForObject,
+	altcollected = function(t)
 		local altQuests = t.altQuests;
 		if altQuests then
 			for _,questID in ipairs(altQuests) do
@@ -1323,13 +1326,13 @@ local createQuest = app.CreateClass("Quest", "questID", {
 			end
 		end
 	end,
-	["trackable"] = app.ReturnTrue,
-	["saved"] = function(t)
+	trackable = app.ReturnTrue,
+	saved = function(t)
 		return IsQuestSaved(t.questID);
 	end,
 
 	-- These are Retail fields that aren't used in Classic... yet?
-	["missingSourceQuests"] = function(t)
+	missingSourceQuests = function(t)
 		if t.sourceQuests and #t.sourceQuests > 0 then
 			local includeBreadcrumbs = app.Settings:Get("Thing:QuestsLocked");
 			local sq;
@@ -1349,7 +1352,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 			end
 		end
 	end,
-	["missingReqs"] = function(t)
+	missingReqs = function(t)
 		local sourceQuests = t.sourceQuests;
 		if sourceQuests and #sourceQuests > 0 then
 			local sq, O, B, L, A, F;
@@ -1385,6 +1388,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 			return (#sourceQuests - missing) < sqreq;
 		end
 	end,
+	indicatorIcon = GetQuestIndicator,
 },
 -- Retail: Some Reputation-linked Quests are also able to be Locked
 not app.IsClassic and "WithReputationWithLockCriteria" or false, {
@@ -1469,13 +1473,13 @@ not app.IsClassic and "WithLockCriteria" or false, {
 }, (function(t) return t.isBreadcrumb; end),
 -- Both: World Quests
 "AsWorldQuest", {
-	["icon"] = function(t)
+	icon = function(t)
 		return app.GetIconFromProviders(t) or GetWorldQuestIcon(t);
 	end,
-	["repeatable"] = function(t)
+	repeatable = function(t)
 		return true;
 	end,
-	["timeRemaining"] = function(t)
+	timeRemaining = function(t)
 		return GetQuestTimeLeftMinutes(t.questID);
 	end,
 }, (function(t) return (t.isWorldQuest or IsWorldQuest(t)); end));
@@ -1486,10 +1490,10 @@ app.CreateQuestWithFactionData = function(t)
 	return createQuest(t.questID, t);
 end
 app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
-	["text"] = function(t)
+	text = function(t)
 		return t.name;
 	end,
-	["name"] = function(t)
+	name = function(t)
 		local questID = t.questID;
 		if questID then
 			local objectives = C_QuestLog_GetQuestObjectives(questID);
@@ -1503,12 +1507,12 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 		end
 		return "INVALID: Must be relative to a Quest Object.";
 	end,
-	["icon"] = function(t)
+	icon = function(t)
 		return app.GetIconFromProviders(t)
 			or (t.spellID and select(3, GetSpellInfo(t.spellID)))
 			or t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
 	end,
-	["model"] = function(t)
+	model = function(t)
 		if t.providers then
 			for k,v in ipairs(t.providers) do
 				if v[2] > 0 then
@@ -1519,28 +1523,28 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 			end
 		end
 	end,
-	["hash"] = function(t)
+	hash = function(t)
 		return "ob:" .. t.objectiveID .. ":" .. (t.questID or 0);
 	end,
-	["objectiveID"] = function(t)
+	objectiveID = function(t)
 		return 1;
 	end,
-	["questID"] = function(t)
+	questID = function(t)
 		return t.parent.questID;
 	end,
-	["collectible"] = function(t)
+	collectible = function(t)
 		if not t.questID then
 			return false;
 		end
 		return app.Settings.Collectibles.Quests and C_QuestLog_IsOnQuest(t.questID);
 	end,
-	["trackable"] = function(t)
+	trackable = function(t)
 		if not t.questID then
 			return false;
 		end
 		return C_QuestLog_IsOnQuest(t.questID);
 	end,
-	["collected"] = function(t)
+	collected = function(t)
 		-- If the parent is collected, return immediately.
 		local collected = t.parent.collected;
 		if collected then return collected; end
@@ -1559,7 +1563,7 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 			end
 		end
 	end,
-	["saved"] = function(t)
+	saved = function(t)
 		-- If the parent is saved, return immediately.
 		local saved = t.parent.saved;
 		if saved then return saved; end
@@ -1576,7 +1580,7 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 			end
 		end
 	end,
-	["objectiveCost"] = function(t)
+	objectiveCost = function(t)
 		-- This is only used to calculate how many things are required for an objective when its using a provider.
 		local questID = t.questID;
 		if questID then
@@ -1597,10 +1601,10 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 	end
 });
 app.CreateVignette = app.ExtendClass("Quest", "Vignette", "vignetteID", {
-	["questID"] = function(t)
+	questID = function(t)
 		return t.vignetteID;
 	end,
-	["name"] = function(t)
+	name = function(t)
 		local crs = t.crs;
 		if crs then
 			local names, name, retry = {};
@@ -1626,7 +1630,7 @@ app.CreateVignette = app.ExtendClass("Quest", "Vignette", "vignetteID", {
 			return "Invalid Vignette #" .. t.vignetteID;
 		end
 	end,
-	["icon"] = function(t)
+	icon = function(t)
 		return "Interface\\Icons\\INV_Misc_Head_Dragon_Black";
 	end,
 });
@@ -2104,6 +2108,11 @@ if app.IsRetail then
 end
 
 -- External API
+local api = {};
+app.Modules.Quests = api;
+api.OnStartup = function(AccountData)
+	OneTimeQuests = AccountData.OneTimeQuests
+end
 app.CollectibleAsQuest = CollectibleAsQuest;
 app.GetQuestIndicator = GetQuestIndicator;
 app.GetQuestName = function(questID)
