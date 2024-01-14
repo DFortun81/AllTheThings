@@ -1329,7 +1329,10 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		end
 	end,
 	silentLink = function(t)
-		if t.questID then return GetQuestLink(t.questID) or ("[" .. t.name .. " (".. t.questID .. ")]"); end
+		if t.questID then return GetQuestLink(t.questID) or (
+			app.Settings:GetTooltipSetting("QuestReplacement") and ("[" .. t.name .. " (".. t.questID .. ")]")
+				or "quest:"..t.questID)
+		end
 	end,
 	collectible = CollectibleAsQuest,
 	collected = IsQuestFlaggedCompletedForObject,
