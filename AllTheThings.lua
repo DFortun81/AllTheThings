@@ -1756,18 +1756,19 @@ local function GetUnobtainableTexture(group)
 end
 -- Returns an applicable Indicator Icon Texture for the specific group if one can be determined
 app.GetIndicatorIcon = function(group)
-	-- If group is quest and is currently accepted or saved...
-	local questID = group.questID;
-	if questID and C_QuestLog_IsOnQuest(questID) then
-		return app.asset(app.IsQuestReadyForTurnIn(questID) and "Interface_Questin" or "Interface_Questin_grey");
-	elseif group.saved then
+	-- Use the group's own indicator if defined
+	local groupIndicator = group.indicatorIcon
+	if groupIndicator then return groupIndicator end
+
+	-- Otherwise use some common logic
+	if group.saved then
 		if group.parent and group.parent.locks or group.repeatable then
 			return app.asset("known");
 		else
 			return app.asset("known_green");
 		end
 	end
-	return group.indicatorIcon or GetUnobtainableTexture(group);
+	return GetUnobtainableTexture(group);
 end
 local function SetIndicatorIcon(self, data)
 	local texture = app.GetIndicatorIcon(data);
