@@ -193,6 +193,7 @@ local QUANTUM_GROUP = sharedData({
 		filter(CLOTH, {
 			ig(114259),	-- Firefly Gloves					(NYI)
 			ig(114383),	-- Gloves of Hooded Nightmares		(NYI)
+			ig(3956),	-- Mesh Gloves
 			ig(189904),	-- Meticulous Architect's Mitts		(NYI)
 
 			ig(20655),	-- Abyssal Cloth Handwraps			(Removed)
@@ -394,6 +395,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(134718),	-- Cold-Touched Shanker					(Removed)
 		ig(134748),	-- Covert Shanker						(Removed)
 		ig(37597),	-- Direbrew's Shanker [Level 70]		(Removed)
+		ig(49120),	-- Direbrew's Bloody Shanker [Level 80]	(Removed)
 		ig(66540),	-- Miniature Winter Veil Tree			(Removed)
 		ig(2941),	-- Prison Shank							(Removed)
 		ig(134610),	-- Scorching Shanker					(Removed)

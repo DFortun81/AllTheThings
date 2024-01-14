@@ -46,7 +46,6 @@ root(ROOTS.NeverImplemented, {
 					}),
 					n(HANDS, {
 						i(2573),	-- Deprecated Forest Silk Gloves
-						i(3956),	-- Mesh Gloves
 					}),
 					n(WAIST, {
 						i(3952),	-- Mesh Belt
