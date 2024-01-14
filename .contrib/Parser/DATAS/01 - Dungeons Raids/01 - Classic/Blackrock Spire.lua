@@ -1840,7 +1840,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							["timeline"] = { "removed 6.0.2" },
 						}),
 						i(12588, {	-- Bonespike Shoulder
-							["timeline"] = { "removed 6.0.2" },
+							-- #if AFTER 2.0.1
+							["description"] = "This item was appears to have been removed with TBC. Please @Crieve if you get it to drop.",
+							["isBounty"] = true,
+							-- #endif
+							["timeline"] = { "removed 2.0.1" },
 						}),
 						i(16733, {	-- Spaulders of Valor
 							["timeline"] = { "removed 4.0.3" },
