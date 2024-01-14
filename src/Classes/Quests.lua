@@ -1461,16 +1461,14 @@ not app.IsClassic and "AsBreadcrumbWithLockCriteria" or false, {
 		end
 	end,
 }, (function(t) return t.lc and t.isBreadcrumb; end),
--- Retail: Locked Quest support
-not app.IsClassic and "WithLockCriteria" or false, {
+-- Both: Locked Quest support
+"WithLockCriteria", {
 	collectible = CollectibleAsQuestOrAsLocked,
 	locked = LockedAsQuest,
 }, (function(t) return t.lc; end),
 -- Both: Breadcrumbs
 "AsBreadcrumb", {
-	text = app.IsClassic and function(t)
-		return "|cffcbc3e3" .. t.name .. "|r";
-	end or function(t)
+	text = function(t)
 		return Colorize(t.name, app.Colors.Breadcrumb)
 	end,
 	collectible = app.IsClassic and function(t)

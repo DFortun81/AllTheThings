@@ -72,6 +72,33 @@ settings:SetScript("OnShow", function(self)
 end);
 
 -- Settings Class
+local Things = {
+	"Achievements",
+	"AzeriteEssences",
+	"BattlePets",
+	"CharacterUnlocks",
+	"Conduits",
+	"Deaths",
+	"DrakewatcherManuscripts",
+	"Exploration",
+	"FlightPaths",
+	"Followers",
+	"Heirlooms",
+	"HeirloomUpgrades",
+	"Illusions",
+	"Mounts",
+	"MusicRollsAndSelfieFilters",
+	"Quests",
+	"QuestsLocked",
+	"PVPRanks",
+	"Recipes",
+	"Reputations",
+	"RuneforgeLegendaries",
+	"RWP",
+	"Titles",
+	"Toys",
+	"Transmog",
+}
 local GeneralSettingsBase = {
 	__index = {
 		["AccountMode"] = false,
@@ -104,6 +131,7 @@ local GeneralSettingsBase = {
 		["Thing:Mounts"] = true,
 		--["Thing:PVPRanks"] = false,
 		["Thing:Quests"] = true,
+		["Thing:QuestsLocked"] = false,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
 		--["Thing:RWP"] = false,
@@ -479,6 +507,25 @@ end
 settings.ToggleSourceLocations = function(self)
 	self:SetSourceLocations(not self:GetTooltipSetting("SourceLocations"));
 end
+-- Setup tracking for all Things based on the Settings value, or whether it is forcibly tracked or forced AccountWide
+settings.SetThingTracking = function(self, force)
+	if force == "Debug" then
+		for _,thing in ipairs(Things) do
+			self.AccountWide[thing] = true
+			self.Collectibles[thing] = true
+		end
+	elseif force == "Account" then
+		for _,thing in ipairs(Things) do
+			self.AccountWide[thing] = true
+			self.Collectibles[thing] = self:Get("Thing:"..thing)
+		end
+	else
+		for _,thing in ipairs(Things) do
+			self.AccountWide[thing] = self:Get("AccountWide:"..thing)
+			self.Collectibles[thing] = self:Get("Thing:"..thing)
+		end
+	end
+end
 settings.UpdateMode = function(self, doRefresh)
 	local filterSet = app.Modules.Filter.Set;
 	if self:Get("DebugMode") then
@@ -501,10 +548,6 @@ settings.UpdateMode = function(self, doRefresh)
 		filterSet.Trackable()
 
 		--settings:SetThingTracking("Debug")
-		
-		
-		
-		-- Old Filters
 		local accountWideSettings = self.AccountWide;
 		for key,value in pairs(accountWideSettings) do
 			accountWideSettings[key] = true;
@@ -534,22 +577,6 @@ settings.UpdateMode = function(self, doRefresh)
 		else
 			filterSet.Trackable()
 		end
-		
-		
-		
-		-- Old Filters
-		local accountWideSettings = self.AccountWide;
-		for key,value in pairs(accountWideSettings) do
-			accountWideSettings[key] = self:Get("AccountWide:" .. key);
-		end
-
-		local collectibleSettings = self.Collectibles;
-		for key,value in pairs(collectibleSettings) do
-			collectibleSettings[key] = self:Get("Thing:" .. key);
-		end
-
-		-- Modules
-		app.Modules.PVPRanks.SetCollectible(self:Get("Thing:PVPRanks"));
 
 		if self:Get("AccountMode") then
 			app.MODE_ACCOUNT = true;
@@ -565,7 +592,7 @@ settings.UpdateMode = function(self, doRefresh)
 			end
 
 			-- Force Account-Wide with Account Mode otherwise you get really dumb situations
-			--settings:SetThingTracking("Account")
+			settings:SetThingTracking("Account")
 		else
 			app.MODE_ACCOUNT = nil;
 			filterSet.FilterID(true)
@@ -575,8 +602,22 @@ settings.UpdateMode = function(self, doRefresh)
 			filterSet.MinReputation(true)
 			filterSet.CustomCollect(true)
 
-			--settings:SetThingTracking()
+			settings:SetThingTracking()
 		end
+		
+		-- Old Filters
+		local accountWideSettings = self.AccountWide;
+		for key,value in pairs(accountWideSettings) do
+			accountWideSettings[key] = self:Get("AccountWide:" .. key);
+		end
+
+		local collectibleSettings = self.Collectibles;
+		for key,value in pairs(collectibleSettings) do
+			collectibleSettings[key] = self:Get("Thing:" .. key);
+		end
+
+		-- Modules
+		app.Modules.PVPRanks.SetCollectible(self:Get("Thing:PVPRanks"));
 
 		if self:Get("Show:OnlyActiveEvents") then
 			filterSet.Event(true)
