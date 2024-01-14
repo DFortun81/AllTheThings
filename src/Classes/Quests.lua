@@ -466,14 +466,18 @@ local function IsQuestSaved(questID)
 	-- NOTE: If Party Sync is supported, this will be replaced!
 	return IsQuestFlaggedCompleted(questID);
 end
-local function GetQuestIndicator(t)	-- TODO: This was not used in Classic.
+local function GetQuestIndicator(t)
 	local questID = t.questID;
 	if questID then
 		if C_QuestLog_IsOnQuest(questID) then
 			return app.asset((C_QuestLog_ReadyForTurnIn(questID) and "Interface_Questin") or "Interface_Questin_grey");
-		-- TODO: This is not how I want this handled. (Use a subclass!)
-		--elseif OneTimeQuests[questID] then
-		--	return "Interface_Quest_Arrow";
+		-- This is not how I want this handled. (Use a subclass!)
+		-- One Time Quests aren't really a good sub-class candidate.
+		-- they're any other type of Quest sub-class, but with an additional constraint
+		-- I really don't want to duplicate every Quest class with a OTQ indicator variant.
+		-- I don't see anyway to utilize the current base Class functionality to handle this requirement
+		elseif OneTimeQuests[questID] then
+			return app.asset("Interface_Quest_Arrow");
 		end
 	end
 end
