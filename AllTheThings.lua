@@ -10209,7 +10209,7 @@ local function GetAutomaticHeaderData(id, type)
 		return altFunc(id);
 	end
 	local typeID = HeaderTypeAbbreviations[type] or type;
-	local obj = app.SearchForObject(typeID, id, "key") or CreateObject({[typeID]=id,key=typeID});
+	local obj = app.SearchForObject(typeID, id, "key") or CreateObject({[typeID]=id});
 	if obj then
 		-- app.PrintDebug("GetAutomaticHeaderData", id, typeID, obj.text, obj.key, obj[obj.key]);
 		-- app.PrintDebug("Automatic Header",obj.name or obj.link)
@@ -19481,7 +19481,7 @@ app.Startup = function()
 	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
 	if not accountWideData.RuneforgeLegendaries then accountWideData.RuneforgeLegendaries = {}; end
 	if not accountWideData.Conduits then accountWideData.Conduits = {}; end
-	
+
 	-- Account Wide Settings
 	local accountWideSettings = app.Settings.AccountWide;
 	local function SetAccountCollected(t, field, id, collected)
