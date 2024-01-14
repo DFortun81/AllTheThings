@@ -2035,7 +2035,6 @@ root(ROOTS.Unsorted, {
 				i(200824),	-- Bottled Lightning
 				i(200791),	-- Braided Ottuk Hair Fishing Line
 				i(196540),	-- Broadhoof Tail Poutine
-				i(200834),	-- Can You Smell It?
 				i(200590),	-- Carefully Rolled Message
 				i(198688),	-- Catnip Leaf
 				i(200821),	-- Celsius 232

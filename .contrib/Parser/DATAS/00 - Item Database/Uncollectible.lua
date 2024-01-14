@@ -611,6 +611,7 @@ i(200822);	-- Jar of Ashes
 i(200825);	-- Assorted Debris
 i(200826);	-- Stored Humid Air
 i(200828);	-- Pocketed Clouds
+i(200834);	-- Can You Smell It?
 i(200835);	-- Sand Pouch
 i(200837);	-- So You Think You Can Rune?
 i(200838);	-- Insignia of the Kirin Tor
