@@ -1511,6 +1511,31 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							i(171588, {	-- Westfall Saber
 								["races"] = ALLIANCE_ONLY,
 							}),
+							-- Heigan
+							i(171618),	-- Amulet of Autopsy			*14.01.2024
+							i(171515),	-- Bindings of the Decrepit
+							i(171509),	-- Breastplate of Tormented Rage
+							i(171516),	-- Chestguard of Bitter Charms
+							i(171514),	-- Cryptfiend's Bite
+							i(171619),	-- Cuffs of Dark Shadows
+							i(171617),	-- Demise
+							i(171521),	-- Eruption-Scarred Boots
+							i(171522),	-- Gloves of the Dancing Bear
+							i(171518),	-- Heigan's Putrid Vestments
+							i(171519),	-- Helm of Pilgrimage
+							i(171512),	-- Iron-Spring Jumpers
+							i(171508),	-- Leggings of Colossal Strides
+							i(171510),	-- Legguards of the Apostle
+							i(171623),	-- Necrogenic Belt
+							i(171624),	-- Preceptor's Bindings
+							i(171622),	-- Ring of Holy Cleansing		*14.01.2024
+							i(171625),	-- Saltarello Shoes
+							i(171520),	-- Serene Echoes
+							i(171621),	-- Shoulderplates of Bloodshed
+							i(171626),	-- Staff of the Plague Beast
+							i(171511),	-- Stalk-Skin Belt
+							i(171517),	-- The Undeath Carrier
+							i(171620),	-- Tunic of the Lost Pack
 							-- Lich King
 							i(171571),	-- Archus, Greatstaff of Antonidas
 							i(171569),	-- Bloodsurge, Kel'Thuzad's Blade of Agony
@@ -1530,18 +1555,13 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							i(171575),	-- Valius, Gavel of the Lightbringer
 							i(171573),	-- Warmace of Menethil
 							i(171579),	-- Windrunner's Heartseeker
-
 							-- Possible Ulduar Zonedrop TW Items (from killing Yogg Quest)
 							-- Confirmed
-							i(156466),	-- Bracers of Righteous Reformation
-							i(156468),	-- Cloak of the Dormant Blaze
-							i(156251),	-- Shroud of Alteration
-							i(156253),	-- Shoulders of Misfortune
-							
-							-- Heigan
-							i(171618),	-- Amulet of Autopsy
-
-							--[[  Possibly
+							i(156466),	-- Bracers of Righteous Reformation	*14.01.2024
+							i(156468),	-- Cloak of the Dormant Blaze		*14.01.2024
+							i(156251),	-- Shroud of Alteration				*14.01.2024
+							i(156253),	-- Shoulders of Misfortune			*14.01.2024
+							-- Very Likely
 							i(156461),	-- Adamant Handguards
 							i(156255),	-- Belt of the Sleeper
 							i(156470),	-- Bloodcrush Cudgel
@@ -1555,33 +1575,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							i(156254),	-- Leggings of the Tortured Earth
 							i(156460),	-- Mimiron's Repeater
 							i(156469),	-- Pillar of Fortitude
-							--]]
-							--[[ Heigan
-							Only saw 1 Heigan Loot, but technically all should drop.
-							i(171515),	-- Bindings of the Decrepit
-							i(171509),	-- Breastplate of Tormented Rage
-							i(171516),	-- Chestguard of Bitter Charms
-							i(171514),	-- Cryptfiend's Bite
-							i(171619),	-- Cuffs of Dark Shadows
-							i(171617),	-- Demise
-							i(171521),	-- Eruption-Scarred Boots
-							i(171522),	-- Gloves of the Dancing Bear
-							i(171518),	-- Heigan's Putrid Vestments
-							i(171519),	-- Helm of Pilgrimage
-							i(171512),	-- Iron-Spring Jumpers
-							i(171508),	-- Leggings of Colossal Strides
-							i(171510),	-- Legguards of the Apostle
-							i(171623),	-- Necrogenic Belt
-							i(171624),	-- Preceptor's Bindings
-							i(171622),	-- Ring of Holy Cleansing
-							i(171625),	-- Saltarello Shoes
-							i(171520),	-- Serene Echoes
-							i(171621),	-- Shoulderplates of Bloodshed
-							i(171626),	-- Staff of the Plague Beast
-							i(171511),	-- Stalk-Skin Belt
-							i(171517),	-- The Undeath Carrier
-							i(171620),	--- Tunic of the Lost Pack
-							--]]
 						},
 					})),
 				},
