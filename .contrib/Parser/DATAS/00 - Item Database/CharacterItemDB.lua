@@ -241,7 +241,6 @@ iq(185353, 63643);					-- Rune Codex Page: Binding
 -- PATCH 9.1.0 --
 -----------------
 iq(186727, 62679);					-- Seal Breaker Key
-iq(186190, 64003);					-- Etherwyrm Cage Key
 iq(186453, 64061);					-- Vault Anima Tracker
 iq(186722, 64027);					-- Treatise: The Study of Anima and Harnessing Every Drop
 iq(186721, 64366);					-- Treatise: Relics Abound in the Shadowlands

@@ -9,6 +9,7 @@ app.Colors = {
 	ATT = "ffb4b4ff",
 	Raid = "ffff8000",
 	SourceIgnored = "ffd15517",
+	Breadcrumb = "ffcbc3e3",
 	Locked = "ff7f40bf",
 	LockedWarning = "ffd15517",
 	Horde = "ffcc6666",

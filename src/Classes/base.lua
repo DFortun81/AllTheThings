@@ -128,6 +128,12 @@ if app.IsRetail then
 	-- Crieve doesn't see these fields being included as necessary,
 	-- future research project is to look into seeing if this is something we want to keep or put somewhere else. (such as a function)
 	for fieldName,fieldMethod in pairs({
+		-- Default text should be a valid link or name
+		-- In Retail, text can be colored and can be based on a variety of possible fields
+		-- trying to individually maintain variable coloring in every object class is quite absurd
+		["text"] = function(t)
+			return t.link or app.TryColorizeName(t);
+		end,
 		-- modItemID doesn't exist for Items which NEVER use a modID or bonusID (illusions, music rolls, mounts, etc.)
 		["modItemID"] = function(t)
 			return t.itemID;

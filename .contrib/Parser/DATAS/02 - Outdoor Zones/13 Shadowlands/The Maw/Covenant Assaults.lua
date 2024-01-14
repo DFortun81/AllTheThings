@@ -631,7 +631,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							}),
 							n(TREASURES, {
 								i(186190, {	-- Etherwyrm Cage Key
-									["questID"] = 64003,	-- tracking quest triggered when looting key
 									["crs"] = { 179030 },	-- Elusive Keybinder
 									["coord"] = { 19.1, 43.6, THE_MAW },
 									["isDaily"] = true,
@@ -915,4 +914,6 @@ root(ROOTS.HiddenQuestTriggers, {
 
 	-- Stolen Anima Vessels
 	q(64575),	-- After anima vessel, in Maw (rifted)
+
+	q(64003, {isDaily = true}),	-- looting Etherwyrm Cage Key (186190)
 });

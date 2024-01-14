@@ -274,6 +274,7 @@ local function RefreshCollections()
 	-- account-data is a global
 	local ATTAccountWideData = ATTAccountWideData;
 	local currentCharacter = app.CurrentCharacter;
+	local charGuid = app.GUID;
 	-- for the first auto-refresh, don't actually print to chat since some users don't like that auto-chat on login
 	local print = app.__FirstRefresh and app.EmptyFunction or app.print;
 	app.__FirstRefresh = nil;

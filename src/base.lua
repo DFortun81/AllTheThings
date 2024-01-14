@@ -203,17 +203,26 @@ app.RaceID = raceID;
 app.Race = race;
 
 -- Create an Event Processor.
-local events = {};
+local events = setmetatable({}, {
+	-- undefined event handler
+	__index = function(t, key)
+		local unhandledEventFunction = function(...)
+			print("UNHANDLED EVENT",key,...)
+		end
+		t[key] = unhandledEventFunction
+		return unhandledEventFunction
+	end
+});
 local frame = CreateFrame("FRAME", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate");
 frame.Suffix = "ATTFRAME";
 if app.DebuggingEvents then
 frame:SetScript("OnEvent", function(self, e, ...)
 	app.PrintDebug(e,...);
-	(events[e] or print)(...);
+	events[e](...);
 	app.PrintDebugPrior(e);
 end);
 else
-frame:SetScript("OnEvent", function(self, e, ...) (events[e] or print)(...); end);
+frame:SetScript("OnEvent", function(self, e, ...) events[e](...); end);
 end
 frame:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
 frame:SetSize(1, 1);

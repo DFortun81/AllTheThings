@@ -52,6 +52,7 @@ local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local PlayerHasToy = _G["PlayerHasToy"];
 local InCombatLockdown = _G["InCombatLockdown"];
+local print = print
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove, string_lower,
@@ -1433,6 +1434,10 @@ local function CreateObject(t, rootOnly)
 		-- include the raw g since it will be replaced at the end with new objects
 		result.g = t.g;
 		t = result;
+		if not getmetatable(t) then
+			app.PrintDebug(Colorize("Bad CreateObject (key without metatable) used:",app.Colors.ChatLinkError))
+			app.PrintTable(t)
+		end
 		-- app.PrintDebug("Merge done",result.key,result[result.key], t, result);
 	-- is it an array of raw datas which needs to be turned into an array of usable objects
 	elseif t[1] then
@@ -1459,7 +1464,8 @@ local function CreateObject(t, rootOnly)
 			end
 			setmetatable(result, meta);
 			return result;
-		elseif t.mapID then
+		end
+		if t.mapID then
 			t = app.CreateMap(t.mapID, t);
 		elseif t.sourceID then
 			t = app.CreateItemSource(t.sourceID, t.itemID, t);
@@ -1755,18 +1761,19 @@ local function GetUnobtainableTexture(group)
 end
 -- Returns an applicable Indicator Icon Texture for the specific group if one can be determined
 app.GetIndicatorIcon = function(group)
-	-- If group is quest and is currently accepted or saved...
-	local questID = group.questID;
-	if questID and C_QuestLog_IsOnQuest(questID) then
-		return app.asset(app.IsQuestReadyForTurnIn(questID) and "Interface_Questin" or "Interface_Questin_grey");
-	elseif group.saved then
+	-- Use the group's own indicator if defined
+	local groupIndicator = group.indicatorIcon
+	if groupIndicator then return groupIndicator end
+
+	-- Otherwise use some common logic
+	if group.saved then
 		if group.parent and group.parent.locks or group.repeatable then
 			return app.asset("known");
 		else
 			return app.asset("known_green");
 		end
 	end
-	return group.indicatorIcon or GetUnobtainableTexture(group);
+	return GetUnobtainableTexture(group);
 end
 local function SetIndicatorIcon(self, data)
 	local texture = app.GetIndicatorIcon(data);
@@ -5606,6 +5613,7 @@ local function UpdateRawID(field, id)
 		UpdateSearchResults(app.SearchForFieldInAllCaches(field, id));
 	end
 end
+app.UpdateRawID = UpdateRawID;
 -- Pulls all cached fields for the field/ids and passes the results into UpdateSearchResults
 local function UpdateRawIDs(field, ids)
 	-- app.PrintDebug("UpdateRawIDs",field,ids and #ids)
@@ -6108,7 +6116,7 @@ local function GetPopulatedQuestObject(questID)
 	-- cannot do anything on a missing object or questID
 	if not questID then return; end
 	-- either want to duplicate the existing data for this quest, or create new data for a missing quest
-	local questObject = CreateObject(app.SearchForObject("questID", questID, "field") or { key = "questID", questID = questID, _missing = true }, true);
+	local questObject = CreateObject(app.SearchForObject("questID", questID, "field") or { questID = questID, _missing = true }, true);
 	-- Try populating quest rewards
 	app.TryPopulateQuestRewards(questObject);
 	return questObject;
@@ -12702,7 +12710,7 @@ RowOnEnter = function (self)
 		if toggleAttachTooltips then app.Settings:SetTooltipSetting("Enabled", true) end
 		local link = reference.link or reference.silentLink;
 		local _, linkAdded;
-		if link and (reference.key ~= "questID" or reference.itemID) then
+		if link and (reference.key ~= "questID" or reference.itemID or not app.Settings:GetTooltipSetting("QuestReplacement")) then
 			-- app.PrintDebug("OnRowEnter-SetDirectlink",link);
 			-- Safely attempt setting the tooltip link from the data
 			_, linkAdded = pcall(GameTooltip.SetHyperlink, GameTooltip, link);
@@ -12893,7 +12901,7 @@ RowOnEnter = function (self)
 				GameTooltip:AddDoubleLine(" ", additionaLine, 1, 1, 1, 1, 1, 1);
 			end
 		end
-		if reference.questID and not reference.objectiveID then
+		if reference.questID and not reference.objectiveID and app.Settings:GetTooltipSetting("QuestReplacement") then
 			app.AddQuestObjectivesToTooltip(GameTooltip, reference);
 		end
 		if reference.providers then
@@ -13407,7 +13415,7 @@ RowOnEnter = function (self)
 		-- Show Breadcrumb information
 		local lockedWarning;
 		if reference.isBreadcrumb then
-			GameTooltip:AddLine(sformat("|c%s%s|r", app.Colors.Locked, L["THIS_IS_BREADCRUMB"]));
+			GameTooltip:AddLine(sformat("|c%s%s|r", app.Colors.Breadcrumb, L["THIS_IS_BREADCRUMB"]));
 			if reference.nextQuests then
 				local isBreadcrumbAvailable = true;
 				local nextq, nq = {};
@@ -19305,6 +19313,7 @@ local pendingCollection, pendingRemovals, retrievingCollection, pendingCollectio
 local function PendingCollectionCoroutine()
 	while not app.IsReady do coroutine.yield(); end
 	while pendingCollectionCooldown > 0 do
+		-- app.PrintDebug("PCC",pendingCollectionCooldown)
 		pendingCollectionCooldown = pendingCollectionCooldown - 1;
 		coroutine.yield();
 
@@ -19333,7 +19342,7 @@ local function PendingCollectionCoroutine()
 		local f = t.f;
 		if f then allTypes[f] = true; end
 		if reportCollected then
-			print((t.text or RETRIEVING_DATA) .. " was added to your collection!");
+			print(sformat(L.ITEM_ID_ADDED, (t.text or UNKNOWN), t[t.key] or "???"));
 		end
 		any = true;
 	end
@@ -19352,7 +19361,7 @@ local function PendingCollectionCoroutine()
 	any = false;
 	for hash,t in pairs(pendingRemovals) do
 		if reportCollected then
-			print((t.text or RETRIEVING_DATA) .. " was removed from your collection!");
+			print(sformat(L.ITEM_ID_REMOVED, (t.text or UNKNOWN), t[t.key] or "???"));
 		end
 		any = true;
 	end
@@ -19368,13 +19377,13 @@ local function AddToCollection(group)
 		retrievingCollection[hash] = { 5, group };
 	end
 
-	-- Do not add the item to the pending list if it was already in it.
 	if pendingRemovals[hash] then
 		pendingRemovals[hash] = nil;
-	else
+	-- Do not add the item to the pending list if it was already in it.
+	elseif not pendingCollection[hash] then
 		pendingCollection[hash] = group;
 		pendingCollectionCooldown = 10;
-		app:StartATTCoroutine("Pending Collection", PendingCollectionCoroutine);
+		StartCoroutine("Pending Collection", PendingCollectionCoroutine);
 	end
 end
 local function RemoveFromCollection(group)
@@ -19384,13 +19393,13 @@ local function RemoveFromCollection(group)
 		retrievingCollection[hash] = { 5, group };
 	end
 
-	-- Do not add the item to the pending list if it was already in it.
 	if pendingCollection[hash] then
 		pendingCollection[hash] = nil;
-	else
+	-- Do not add the item to the pending list if it was already in it.
+	elseif not pendingRemovals[hash] then
 		pendingRemovals[hash] = group;
 		pendingCollectionCooldown = 10;
-		app:StartATTCoroutine("Pending Collection", PendingCollectionCoroutine);
+		StartCoroutine("Pending Collection", PendingCollectionCoroutine);
 	end
 end
 
@@ -19455,7 +19464,20 @@ app.Startup = function()
 	-- not needed, account-wide by blizzard
 	currentCharacter.RuneforgeLegendaries = nil;
 	if not currentCharacter.Conduits then currentCharacter.Conduits = {}; end
-	currentCharacter.lastPlayed = time();
+
+	-- Update timestamps.
+	local now = time();
+	local timeStamps = currentCharacter.TimeStamps;
+	if not timeStamps then
+		timeStamps = {};
+		currentCharacter.TimeStamps = timeStamps;
+	end
+	for key,value in pairs(currentCharacter) do
+		if type(value) == "table" and not timeStamps[key] then
+			timeStamps[key] = now;
+		end
+	end
+	currentCharacter.lastPlayed = now;
 	app.CurrentCharacter = currentCharacter;
 
 	-- Account Wide Data Storage
@@ -19484,69 +19506,79 @@ app.Startup = function()
 
 	-- Account Wide Settings
 	local accountWideSettings = app.Settings.AccountWide;
+	-- Returns the cached status for this Account for a given field ID
+	local function IsAccountCached(field, id)
+		return accountWideSettings[field] and accountWideData[field][id] and 2 or nil
+	end
+	-- Returns the cached status for this Character for a given field ID
+	local function IsCached(field, id)
+		return currentCharacter[field][id] or nil
+	end
+	-- Allows directly saving a cached state for a table of ids for a given field at the Account level
+	-- Note: This does not include reporting of collected things. It should be used in situations where this is not desired (onstartup refresh, etc.)
+	local function SetBatchAccountCached(field, ids, state)
+		-- app.PrintDebug("SBC:A",field,state)
+		local container = accountWideData[field]
+		for id,_ in pairs(ids) do
+			container[id] = state
+		end
+	end
+	-- Allows directly saving a cached state for a table of ids for a given field.
+	-- Note: This does not include reporting of collected things. It should be used in situations where this is not desired (onstartup refresh, etc.)
+	local function SetBatchCached(field, ids, state)
+		-- app.PrintDebug("SBC",field,state)
+		local container = currentCharacter[field]
+		for id,_ in pairs(ids) do
+			container[id] = state
+		end
+	end
 	local function SetAccountCollected(t, field, id, collected)
+		-- app.PrintDebug("SC:A",t and t.hash,field,id,collected)
 		local container = accountWideData[field];
 		local oldstate = container[id];
 		if collected then
 			if not oldstate then
-				local now = time();
-				timeStamps[field] = now;
-				currentCharacter.lastPlayed = now;
 				AddToCollection(t);
 				container[id] = 1;
 			end
 			return 1;
 		elseif oldstate then
-			local now = time();
-			timeStamps[field] = now;
-			currentCharacter.lastPlayed = now;
 			RemoveFromCollection(t);
 			container[id] = nil;
 		end
 	end
 	local function SetAccountCollectedForSubType(t, field, subtype, id, collected)
+		-- app.PrintDebug("SCS:A",t and t.hash,field,subtype,id,collected)
 		local container = accountWideData[field];
 		local oldstate = container[id];
 		if collected then
 			if not oldstate then
-				local now = time();
-				timeStamps[field] = now;
-				currentCharacter.lastPlayed = now;
 				AddToCollection(t);
 				container[id] = 1;
 			end
 			return 1;
 		elseif oldstate then
-			local now = time();
-			timeStamps[field] = now;
-			currentCharacter.lastPlayed = now;
 			RemoveFromCollection(t);
 			container[id] = nil;
 		end
 	end
 	local function SetCollected(t, field, id, collected)
+		-- app.PrintDebug("SC",t and t.hash,field,id,collected)
 		local container = currentCharacter[field];
 		local oldstate = container[id];
 		if collected then
 			if not oldstate then
-				if t and not (accountWideSettings[field] and accountWideData[field][id]) then
-					--print("SetCollected", field, id, accountWideSettings[field], accountWideData[field][id]);
+				if t and accountWideSettings[field] and not accountWideData[field][id] then
 					AddToCollection(t);
 				end
 				container[id] = 1;
 				accountWideData[field][id] = 1;
-				local now = time();
-				timeStamps[field] = now;
-				currentCharacter.lastPlayed = now;
 			else
 				accountWideData[field][id] = 1;
 			end
 			return 1;
 		elseif oldstate then
 			container[id] = nil;
-			local now = time();
-			timeStamps[field] = now;
-			currentCharacter.lastPlayed = now;
 			for guid,other in pairs(characterData) do
 				local otherContainer = other[field];
 				if otherContainer and otherContainer[id] then
@@ -19558,33 +19590,26 @@ app.Startup = function()
 				RemoveFromCollection(t);
 				accountWideData[field][id] = nil;
 			end
-		elseif accountWideSettings[field] and accountWideData[field][id] then
-			return 2;
 		end
+		return accountWideData[field][id] and 2 or nil
 	end
 	local function SetCollectedForSubType(t, field, subtype, id, collected)
+		-- app.PrintDebug("SCS",t and t.hash,field,subtype,id,collected)
 		local container = currentCharacter[field];
 		local oldstate = container[id];
 		if collected then
 			if not oldstate then
-				if t and not (accountWideSettings[subtype] and accountWideData[field][id]) then
-					--print("SetCollectedForSubType", field, subtype, id, accountWideSettings[subtype], accountWideData[field][id]);
+				if t and accountWideSettings[subtype] and not accountWideData[field][id] then
 					AddToCollection(t);
 				end
 				container[id] = 1;
 				accountWideData[field][id] = 1;
-				local now = time();
-				timeStamps[field] = now;
-				currentCharacter.lastPlayed = now;
 			else
 				accountWideData[field][id] = 1;
 			end
 			return 1;
 		elseif oldstate then
 			container[id] = nil;
-			local now = time();
-			timeStamps[field] = now;
-			currentCharacter.lastPlayed = now;
 			for guid,other in pairs(characterData) do
 				local otherContainer = other[field];
 				if otherContainer and otherContainer[id] then
@@ -19596,14 +19621,17 @@ app.Startup = function()
 				RemoveFromCollection(t);
 				accountWideData[field][id] = nil;
 			end
-		elseif accountWideSettings[subtype] and accountWideData[field][id] then
-			return 2;
 		end
+		return accountWideData[subtype][id] and 2 or nil
 	end
 	app.SetAccountCollected = SetAccountCollected;
 	app.SetAccountCollectedForSubType = SetAccountCollectedForSubType;
 	app.SetCollected = SetCollected;
 	app.SetCollectedForSubType = SetCollectedForSubType;
+	app.IsCached = IsCached
+	app.IsAccountCached = IsAccountCached
+	app.SetBatchAccountCached = SetBatchAccountCached
+	app.SetBatchCached = SetBatchCached
 
 	-- Update the total account wide death counter.
 	local deaths = 0;
