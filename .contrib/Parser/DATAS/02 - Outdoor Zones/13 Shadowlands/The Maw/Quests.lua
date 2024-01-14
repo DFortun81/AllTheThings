@@ -241,11 +241,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60287 },	-- Rule 1: Have an Escape Plan
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
+					["g"] = {
+						i(184314),	-- Broker Device (QI!)
+					},
 				}),
 				q(60289, {	-- Rule 3: Trust is Earned
 					["sourceQuests"] = { 61355 },	-- Rule 2: Keep a Low Profile
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
+					["g"] = {
+						i(184284),	-- Bloodhoof Warmace (QI!)
+					},
 				}),
 				q(62837, {	-- Hopeful News
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
@@ -320,6 +326,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(63050, {	-- Acquisition: Blazing Ingots
 				["provider"] = { "o", 364932 },	-- Blazing Ingot
 				["coord"] = { 39.0, 39.9, THE_MAW },
+				["g"] = {
+					i(184556),	-- Blazing Ingot (QI!)
+				},
 			}),
 			q(63031, {	-- Acquisition: Crystallized Stygia
 				["provider"] = { "o", 364899 },	-- Crystallized Stygia
@@ -447,6 +456,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60646, {	-- Misery Business
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.9, 41.7, THE_MAW },
+				["g"] = {
+					i(180129),	-- Anima Equalizer (QI!)
+				},
 			}),
 			q(63708, {	-- Phantasmagoria
 				["provider"] = { "i", 185756 },	-- Warped Phantasma
@@ -476,7 +488,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(64124),	-- triggered when killing Naelcrotix, WotJ boss - weirdly this triggered for me but not carb, first WotJ for both of us for the week
 	q(64123),	-- triggered when killing Zograthos, WotJ boss
 	q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (questID 60287) (spellID 345141)
-	
+
 	-- these seem shared... ? some sort of incremental counter?
 	q(64692),	-- triggered when killing Manifestation of Pain / Zul'gath the Flayer
 	q(64693),	-- triggered when killing Manifestation of Pain

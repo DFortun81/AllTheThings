@@ -191,6 +191,11 @@ root(ROOTS.Instances, tier(MOP_TIER, {
 						i(5640),	-- Recipe: Rage Potion (RECIPE!)
 					},
 				}),
+				n(73614, {	-- Tinkmaster Overspark <Alliance Supplies>
+					["description"] = "Vendor spawns in after opening gate after the Malkorok Boss fight in Kor'kron Barracks.",
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select","npcID",90866},{"pop"}},	-- Tinkmaster Overspark <Chief Architect of Gnomish Engineering>
+				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
 				un(REMOVED_FROM_GAME, i(87208)),	-- Sigil of Power

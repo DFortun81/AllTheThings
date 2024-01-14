@@ -365,7 +365,6 @@ root(ROOTS.NeverImplemented, {
 		i(178673),	-- Sinful Aspirant's Weapon - Offhand
 		filter(BOWS, {
 			-- Load In Game
-			i(115294),	-- Spectral Longbow
 			i(182563),	-- NPE Weapon Bow
 			i(182563, {	-- NPE Weapon Bow
 				["bonusID"] = 6895,
@@ -385,7 +384,6 @@ root(ROOTS.NeverImplemented, {
 		filter(DAGGERS, {
 			-- Load In Game
 			i(62329),	-- Dire Slasher (never added)
-			i(115295),	-- Spectral Dagger
 			i(115446),	-- Brianium Dagger
 			i(182564),	-- NPE Weapon Dagger AGI
 			i(182573),	-- NPE Weapon Dagger AGI 2

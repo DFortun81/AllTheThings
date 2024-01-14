@@ -82,7 +82,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["requireSkill"] = FISHING,
 			}),
 			q(61667),	-- Forged in Secret
-			q(61189),	-- Further Gelatinous Research
+			q(61189, {	-- Further Gelatinous Research
+				["g"] = {
+					i(180876),	-- Aqueous Material Accumulator (QI!)
+				},
+			}),
 			q(58221),	-- Gettin' Even
 			q(61545, {	-- Herbalism: Engorged Marrowroot
 				["requireSkill"] = HERBALISM,

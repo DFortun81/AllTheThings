@@ -49,6 +49,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				})),
 				q(70074, {	-- Plunder the Sundered
 					["coord"] = { 46.2, 65.2, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(198448),	-- Dragonscale Expedition Supplies (QI!)
+					},
 				}),
 				q(70646, {	-- Pressure Valve
 					["coord"] = { 79.2, 76.1, OHNAHRAN_PLAINS },

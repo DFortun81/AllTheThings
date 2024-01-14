@@ -1128,7 +1128,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/1 Secret Plans: Fiery Flux
-							["provider"] = { "i", 18922 },	-- Secret Plans: Fiery Flux
+							["providers"] = {
+								{ "i",  18922 },	-- Secret Plans: Fiery Flux
+								{ "o", 179826 },	-- Secret Plans: Fiery Flux
+							},
 							["coord"] = { 40.6, 35.7, SEARING_GORGE },
 						}),
 					},

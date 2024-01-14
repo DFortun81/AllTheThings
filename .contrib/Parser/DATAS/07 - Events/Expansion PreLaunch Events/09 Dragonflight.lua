@@ -49,6 +49,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["coord"] = { 23.0, 56.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
+					i(192493),	-- Mote of Primal Energy (QI!)
 					i(199109),	-- Primal Stormling (PET!)
 					i(199211),	-- Primeval Essence
 				},
@@ -59,6 +60,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["coord"] = { 55.9, 12.6, DUROTAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
+					i(192493),	-- Mote of Primal Energy (QI!)
 					i(199109),	-- Primal Stormling (PET!)
 					i(199211),	-- Primeval Essence
 				},
@@ -77,12 +79,15 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 					i(199211),	-- Primeval Essence
 				},
 			}),
-			q(70049, {	-- Calming the Storms [H]
+			q(70049, {	-- Calming the Storms [A]
 				["sourceQuest"] = 70048,	-- A Primal Threat [A]
 				["qg"] = 193450,	-- Archmage Khadgar
 				["coord"] = { 23.0, 56.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
+				["g"] = {
+					i(192493),	-- Mote of Primal Energy (QI!)
+				},
 			}),
 			q(69925, {	-- Calming the Storms [H]
 				["sourceQuest"] = 69923,	-- A Primal Threat [H]
@@ -90,6 +95,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["coord"] = { 55.9, 12.6, DUROTAR },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
+				["g"] = {
+					i(192493),	-- Mote of Primal Energy (QI!)
+				},
 			}),
 		}),
 		n(VENDORS, {

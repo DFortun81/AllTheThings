@@ -15,7 +15,7 @@ local FYRAKK = 2519;
 ------ EncounterToCRS ------
 local EncounterToCRS = {
 	[GNARLROOT] = { 209333 },	-- Gnarlroot
-	[IGIRA] = { 
+	[IGIRA] = {
 		206689, 	-- Igira the Cruel <Zaqali Elder>
 		200926, 	-- Igira the Cruel <Zaqali Elder>
 	},
@@ -29,7 +29,7 @@ local EncounterToCRS = {
 	[LARODAR] = { 208445 },	-- Larodar, Keeper of the Flame
 	[NYMUE] = { 206172 },	-- Nymue <Weaver of the Cycle>
 	[SMOLDERON] = { 200927 },	-- Smolderon <The Firelord>
-	[TINDRAL] = { 
+	[TINDRAL] = {
 		210601, 	-- Tindral Sageswift <Seer of Flame>
 		209090,		-- Tindral Sageswift <Seer of Flame> (You fight this ID)
 	},
@@ -301,7 +301,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					--	["provider"] = { "n", xx },	-- xx
 					--	["coord"] = { x, y, map },
 					--	["cost"] = {
-					--		{ "i", 208577, 1 },	-- 1x Symbiotic Glowspore Grip 
+					--		{ "i", 208577, 1 },	-- 1x Symbiotic Glowspore Grip
 					--		{ "i", 208592, 1 },	-- 1x Rune of Shadowbinding
 					--		{ "i", 208578, 1 },	-- 1x Concentrated Sophic Vellum
 					--	},
@@ -315,7 +315,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					--	["provider"] = { "i", 208781 },	-- Symbiotic Glowspore Grip
 					--	["coord"] = { x, y, OHNAHRAN_PLAINS },
 					--	["g"] = {
-					--		i(),	-- 
+					--		i(),	--
 					--	},
 					--}),
 					--q(77886,	{	-- Handling It: Shadowed Dreamleaf
@@ -369,7 +369,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					--	["sourceQuests"] = { 77191 },	-- Handling It
 					--	["provider"] = { "n", xx },	-- Lydiara Whisperfeather
 					--	["coord"] = { x, y, THE_AZURE_SPAN },
-					--}),					
+					--}),
 					--q(78003,	{	-- Handling It: Taut Tethercoil
 					--	["sourceQuests"] = { 77835 },	-- Handling It: Rune of Shadowbinding
 					--	["provider"] = { "n", xx },	-- Lydiara Whisperfeather
@@ -408,7 +408,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					--	["sourceQuests"] = { 77191 },	-- Handling It
 					--	["provider"] = { "n", xx },	-- Shalasar Glimmerdusk
 					--	["coord"] = { x, y, OHNAHRAN_PLAINS },
-					--}),					
+					--}),
 					--q(78155,	{	-- Handling It: Radiant Fleck of Ash
 					--	["sourceQuests"] = { 77833 },	-- Handling It: Concentrated Sophic Vellum
 					--	["provider"] = { "n", xx },	-- Shalasar Glimmerdusk
@@ -701,7 +701,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				}),
 				CommonBossDrops({
 					currency(WHELPLINGS_DREAMING_CREST, {
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
 					}),
 				}),
 				header(HEADERS.Achievement, 19344, {	-- Incarnate's Wake
@@ -763,7 +763,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 			Difficulty(NORMAL_RAID).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(DRAKES_DREAMING_CREST, {
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
 					}),
 				}),
 				n(QUESTS, {
@@ -809,7 +809,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				BossOnly(SMOLDERON),
 				BossOnly(TINDRAL),
 				BossOnly(FYRAKK, {
-					ach(19350, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }}),	-- Ahead of the Curve: Fyrakk the Blazing
+					ach(19350, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 }}),	-- Ahead of the Curve: Fyrakk the Blazing
 					i(211375),	-- Everglowing Ember (QS!)
 					i(207728),	-- Fyr'alath the Dreamrender (QI)
 				}),
@@ -817,7 +817,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 			Difficulty(HEROIC_RAID).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(WYRMS_DREAMING_CREST, {
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
 					}),
 				}),
 				n(QUESTS, {
@@ -848,7 +848,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 			Difficulty(MYTHIC_RAID).AddGroups({
 				CommonBossDrops({
 					currency(ASPECTS_DREAMING_CREST, {
-						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
 					}),
 				}),
 				n(QUESTS, {
@@ -902,8 +902,8 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					ach(19343, {	-- Mythic: Fyrakk the Blazing
 						title(530),	-- <Name> the Blazing
 					}),
-					ach(19351, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 }}),	-- Cutting Edge: Fyrakk the Blazing
-					ach(19392, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {	-- Hall of Fame: Fyrakk the Blazing
+					ach(19351, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 }}),	-- Cutting Edge: Fyrakk the Blazing
+					ach(19392, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 } }, {	-- Hall of Fame: Fyrakk the Blazing
 						title(528),	-- <Name>, Famed Slayer of Fyrakk
 					})),
 					ach(19389),	-- Mythic: Fyrakk the Blazing Guild Run

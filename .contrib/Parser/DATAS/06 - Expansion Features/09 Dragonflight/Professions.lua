@@ -146,6 +146,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					{ 71.7, 81.2, OHNAHRAN_PLAINS },
 				},
 				["g"] = {
+					i(197860),	-- Ancient Scrap of Draconic Wisdom (QI!)
 					i(191784),	-- Dragon Shard of Knowledge
 				},
 			}),
@@ -187,6 +188,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					{ 72.0, 81.1, OHNAHRAN_PLAINS },
 				},
 				["g"] = {
+					i(198348),	-- "Custom High-Quality Gear: Better Business with Personal Orders!" (QI!)
+					i(198346),	-- "Order Anything Crafters Make!" (QI!)
+					i(198347),	-- "Public Orders: Fast and Made For You!" (QI!)
 					i(191234),	-- Alchemist's Sturdy Mixing Rod
 					i(198225),	-- Draconium Fisherfriend
 					i(191233),	-- Chef's Smooth Rolling Pin
@@ -199,11 +203,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					{ 35.4, 58.8, VALDRAKKEN },
 				},
 				["g"] = {
-					i(198048),	-- Titan Training Matrix I
 					i(201343),	-- Bag of Cloth Armor Reagents
 					i(201352),	-- Bag of Leather Reagents
 					i(201353),	-- Bag of Mail Armor Reagents
 					i(201354),	-- Bag of Plate Armor Reagents
+					i(198091),	-- Slightly Used Recrafted Armor (QI!)
+					i(198048),	-- Titan Training Matrix I
 				},
 			}),
 			q(70221, {	-- Show Your Mettle

@@ -69,6 +69,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					q(74292, {	-- Deephollow Mysteries
 						["coord"] = { 60.9, 53.8, ZARALEK_CAVERN },
 						["g"] = {
+							i(203391),	-- Dented Dwarven Pocketwatch (QI!)
+							i(205797),	-- Filthy Bundle (QI!)
+							i(203388),	-- Gunky Insignia (QI!)
+							i(203387),	-- Oddly Familiar Training Weapon (QI!)
+							i(203392),	-- Old Mirror Shard (QI!)
+							i(204329),	-- Petrified Spider Leg (QI!)
+							i(203389),	-- Shiny Rock (QI!)
 							i(204326),	-- Strange Artifact (QI!)
 						},
 					}),

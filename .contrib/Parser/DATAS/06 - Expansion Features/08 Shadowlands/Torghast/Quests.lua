@@ -38,6 +38,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 60270 },	-- A Damned Pact
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
+					["g"] = {
+						i(181324),	-- Anima Supricifer (QI!)
+					},
 				}),
 				q(60272, {	-- The Weak Link
 					["sourceQuests"] = { 60271 },	-- A Grave Chance
@@ -45,24 +48,20 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 			}),
-
-
-
-
 			q(62700, {	-- Ashes of the Tower
 				["sourceQuests"] = { 60272 },	-- The Weak Link
 				["provider"] = { "n", 164937 },	-- Runecarver
 				["coord"] = { 50.6, 57.2, 1912 },
 			}),
-
-
-
 			q(64210, {	-- The Box of Many Things
 				["sourceQuests"] = { 64557 },	-- In Darkness, Found
 				["provider"] = { "n", 179598 },	-- Ve'nish
 				["coord"] = { 42.9, 68.2, 1967 },	-- TG106_Floor (scenario)
 				["maps"] = {
 					1968,	-- TG107_Floor
+				},
+				["g"] = {
+					i(186732),	-- The Box of Many Things (QI!)
 				},
 			}),
 			q(62719, {	-- The Final Pieces
@@ -106,6 +105,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["provider"] = { "n", 164937 },	-- Runecarver
 				["coord"] = { 50.3, 60.4, 1912 },	-- The Runecarver's Oubliette
 				["timeline"] = { ADDED_9_1_0 },
+				["g"] = {
+					i(186732),	-- The Box of Many Things (QI!)
+				},
 			}),
 
 		--	Champion Unlocks

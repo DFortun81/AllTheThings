@@ -69,6 +69,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		mount(367875, {	-- Armored Siege Kodo (MOUNT!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
+		mount(418286, {	-- Auspicious Arborwyrm (MOUNT!)
+			["timeline"] = { "added 10.2.0" },
+		}),
 		i(54811, {	-- Celestial Steed (MOUNT!)
 			["timeline"] = { "added 3.3.3.11723", "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
 		}),

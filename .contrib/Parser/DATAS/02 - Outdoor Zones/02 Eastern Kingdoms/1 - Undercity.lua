@@ -232,7 +232,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(12230, {	-- Felwood Slime Sample
+							-- #if AFTER WRATH
+							["description"] = "Bring at least 15 of these back with you to the Undercity for testing.",
+							-- #else
 							["description"] = "Bring at least 30 of these back with you to the Undercity for testing.",
+							-- #endif
 							["crs"] = {
 								7086,	-- Cursed Ooze
 								7092,	-- Tainted Ooze
@@ -242,6 +246,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78277, {	-- A Token of Gratitude
+					["qg"] = 1498,	-- Bethor Iceshard
+					["sourceQuest"] = 491,	-- Wand to Bethor
+					["coord"] = { 84.2, 17.4, UNDERCITY },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { MAGE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 12,
+					["groups"] = {
+						recipe(415936, {	-- Engrave Gloves - Living Bomb
+							["classes"] = { MAGE },
+						}),
+					},
+				})),
+				-- #endif
 				q(7819, {	-- Additional Runecloth [Undercity]
 					["qg"] = 14729,	-- Ralston Farnsley
 					["sourceQuest"] = 7818,	-- A Donation of Runecloth
@@ -757,6 +777,48 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78198, {	-- Secrets of the Loa (1/2)
+					["qg"] = 211225,	-- Baj'ura
+					["coord"] = { 47.2, 19.6, UNDERCITY },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["lvl"] = 18,
+					["groups"] = {
+						objective(1, {	-- 0/14 Hillsbrad Human Bones
+							["provider"] = { "i", 210055 },	-- Hillsbrad Human Bones
+							["coord"] = { 34.4, 40.8, HILLSBRAD_FOOTHILLS },
+							["crs"] = {
+								2360,	-- Hillsbrad Farmhand
+								2266,	-- Hillsbrad Farmer
+								2267,	-- Hillsbrad Peasant
+								2268,	-- Hillsbrad Footman
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78199, {	-- Secrets of the Loa (2/2)
+					["providers"] = {
+						{ "n", 211225 },	-- Baj'ura
+						{ "i", 210080 },	-- Voodoo Offering
+					},
+					["sourceQuest"] = 78198,	-- Secrets of the Loa (1/2)
+					["coord"] = { 47.2, 19.6, UNDERCITY },
+					["description"] = "Completing this quest will allow you to meditate in the same manner as the trolls.",
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { DUROTAR },
+					["classes"] = { PRIEST },
+					["races"] = { UNDEAD },
+					["lvl"] = 18,
+					["groups"] = {
+						recipe(424037, {	-- Secrets of the Loa
+							["classes"] = { PRIEST },
+						}),
+					},
+				})),
+				-- #endif
 				q(3568, {	-- Seeping Corruption (1/3)
 					["qg"] = 10136,	-- Chemist Fuely
 					["coord"] = { 47.6, 73.0, UNDERCITY },
@@ -812,6 +874,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(79080, {	-- Sharing the Faith
+					["qg"] = 4607,	-- Father Lankester <Priest Trainer>
+					["coord"] = { 49.6, 15.6, UNDERCITY },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { TIRISFAL_GLADES },
+					["races"] = { UNDEAD },
+					["lvl"] = 5,
+					["groups"] = {
+						objective(1, {	-- Pray over the Supplicant
+							["provider"] = { "n", 215098 },	-- Supplicant
+							["description"] = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
+						}),
+					},
+				})),
+				-- #endif
 				q(1881, {	-- Speak with Anastasia
 					["qg"] = 2128,	-- Cain Firesong <Mage Trainer>
 					["altQuests"] = { 1883 },	-- Speak with Un'thuwa
@@ -1128,6 +1206,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = COOKING_AWARD_GROUPS,
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(RARES, {
+				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
+					-- TODO: Try to get an objectID for this.
+					--["provider"] = { "o",  },	-- Summoning Circle
+					["coord"] = { 24.1, 41.6, UNDERCITY },
+					["cost"] = {
+						{ "i", 207974, 1 },	-- Ominous Tome
+						{ "i", 204906, 1 },	-- Gnoll Blood
+						{ "i", 207973, 1 },	-- Hound Jawbone
+					},
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(204912, {	-- Rune of Grace
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(425477),	-- Engrave Pants - Demonic Grace
+							},
+						}),
+					},
+				})),
+			}),
+			-- #endif
 			-- #if AFTER 6.1.0.19480
 			n(TREASURES, {
 				o(240623, {	-- Sylvanas' Strongbox
@@ -1224,6 +1325,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				n(5675, {	-- Carendin Halgar
+					["coord"] = { 85.0, 25.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						applyclassicphase(SOD_PHASE_ONE, i(205215, {	-- Rune of Tactics
+							["cost"] = {{ "i", 205183, 1 }},	-- Fel-Powered Artifact
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(416009),	-- Engrave Chest - Demonic Tactics
+							},
+						})),
+					},
+				}),
+				-- #endif
 				n(4569, {	-- Charles Seaton <Blade Merchant>
 					["coord"] = { 77.0, 50.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -1911,6 +2027,3 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		},
 	}),
 }));
-
-
---- \{[\s]*"select",[\s]*"itemID",[\s]*([\d]+)[\s]*\},[ ]*[\s]*--

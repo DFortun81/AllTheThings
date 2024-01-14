@@ -584,6 +584,8 @@ namespace ATT
             Validate_LocationData(data);
             Validate_Quest(data);
 
+            Validate_LocalizableData(data);
+
             // If this item has an "unobtainable" flag on it, meaning for a different phase of content.
             if (data.TryGetValue("u", out long phase))
             {
@@ -1059,6 +1061,35 @@ namespace ATT
                         kvp.Value[id] = sources = new List<IDictionary<string, object>>();
                     }
                     sources.Add(data);
+                }
+            }
+        }
+
+        private static void Validate_LocalizableData(IDictionary<string, object> data)
+        {
+            Validate_LocalizableData(data, "name");
+            Validate_LocalizableData(data, "title");
+            Validate_LocalizableData(data, "description");
+            Validate_LocalizableData(data, "lore");
+        }
+        private static void Validate_LocalizableData(IDictionary<string, object> data, string key)
+        {
+            if (data.TryGetValue(key, out string text) && text.StartsWith("~H:"))
+            {
+                var split = text.Split(':');
+                var headerID = Convert.ToInt64(split[1]);
+                MarkCustomHeaderAsRequired(headerID);
+                switch(split.Length > 2 ? split[2].ToLower() : "text")
+                {
+                    case "description":
+                        data[key] = $"~_.L.HEADER_DESCRIPTIONS[{headerID}]";
+                        break;
+                    case "lore":
+                        data[key] = $"~_.L.HEADER_LORE[{headerID}]";
+                        break;
+                    default:
+                        data[key] = $"~_.L.HEADER_NAMES[{headerID}]";
+                        break;
                 }
             }
         }

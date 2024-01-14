@@ -243,6 +243,14 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209846, {	-- Secrets of the Dreamers
+					["provider"] = { "o", 409692 },	-- Scrolls
+					["coord"] = { 52.83, 54.70, THE_BARRENS },
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(5783, {	-- Kalldan Felmoon <Specialist Leatherworking Supplies>
 					["coord"] = { 45.9, 35.7, THE_BARRENS },
@@ -395,6 +403,12 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					ach(5039, {	-- Wailing Caverns Guild Run
 						["timeline"] = { "added 4.0.3" },
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_ONE, i(209838, {	-- Hypnotic Crystal
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { HUNTER },
+					})),
+					-- #endif
 					i(10441),	-- Glowing Shard
 					i(6461),	-- Slime-Encrusted Pads
 					i(6627),	-- Mutant Breastplate

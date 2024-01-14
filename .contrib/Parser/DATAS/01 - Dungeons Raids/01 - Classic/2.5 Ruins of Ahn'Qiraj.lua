@@ -818,11 +818,25 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					i(21479),	-- Gauntlets of the Immovable
 					i(21484),	-- Helm of Regrowth
 					i(21480),	-- Scaled Silithid Gauntlets
-					i(21481),	-- Boots of the Desert Protector
+					i(21481, {	-- Boots of the Desert Protector
+						-- #if BEFORE 2.0.1
+						-- Originally a faction specific drop for Paladins.
+						["races"] = ALLIANCE_ONLY,
+						-- #endif
+					}),
 					i(21482, {	-- Boots of the Fiery Sands
+						-- #if BEFORE 10.1.
+						["description"] = "This item was originally a Horde exclusive drop for Shamans during vanilla. Sometime after TBC Prepatch, this item disappeared from the loot table. Please @Crieve if you get it to drop.",
+						-- #if AFTER 2.0.1
+						["isBounty"] = true,
+						-- #else
+						["races"] = HORDE_ONLY,
+						-- #endif
+						-- #endif
 						["timeline"] = {
 							"added 1.13.0.28211",
-							"removed 4.2.2.28211",
+							"removed 2.0.1",	-- Classic WoWHead shows 0 new drops in WotLK since Classic. (902 recorded drops in both versions, which goes to show that this item no longer exists on the drop table)
+							--"removed 4.2.2.28211",
 							"added 10.1.7",
 						},
 					}),

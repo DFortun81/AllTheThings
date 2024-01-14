@@ -1450,10 +1450,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, n(211965, {	-- Carrodin
 					["coord"] = { 47.6, 64.6, WETLANDS },
 					["groups"] = {
-						i(211205, {	-- Rune of Aspect of the Lion
+						i(211205, {	-- Rune of Heart of the Lion
 							["classes"] = { HUNTER },
 							["groups"] = {
-								recipe(410115),	-- Engrave Chest - Aspect of the Lion
+								recipe(410115),	-- Engrave Chest - Heart of the Lion
 							},
 						}),
 						i(210573, {	-- Rune of Consuming Rage
@@ -1671,6 +1671,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209848, {	-- Goaz Scrolls
+					["provider"] = { "o", 409717 },	-- Scrolls
+					["coord"] = { 33.6, 47.9, WETLANDS },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210500, {	-- Rune of the Stars
+					["providers"] = {
+						{ "n", 212209 },	-- Vodyanoi
+						{ "i", 210499 },	-- Marshroom
+					},
+					["coord"] = { 31, 18, WETLANDS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { DRUID },
+					["groups"] = {
+						recipe(424718),	-- Engrave Pants - Starsurge
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(1441, {	-- Brak Durnad <Weaponsmith>
 					["coord"] = { 11.5, 59.6, WETLANDS },
@@ -1688,6 +1708,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(3180, {	-- Dark Iron Entrepreneur <Speciality Goods>
 					["coord"] = { 46.6, 18.2, WETLANDS },
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(209874, {	-- Dragonslayer's Lance
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARRIOR },
+							["cost"] = 7500,	-- 75s
+						})),
+						-- #endif
 						i(4824, {	-- Blurred Axe
 							["isLimited"] = true,
 						}),
@@ -1739,6 +1766,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(212186, {	-- Grugimdern
+					["coord"] = { 36.8, 15.2, WETLANDS },
+					["classes"] = { DRUID },
+					["groups"] = {
+						i(210499),	-- Marshroom
+					},
+				})),
+				-- #endif
 				n(1454, {	-- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
 					-- #if AFTER CATA
 					["coord"] = { 10.0, 59.0, WETLANDS },

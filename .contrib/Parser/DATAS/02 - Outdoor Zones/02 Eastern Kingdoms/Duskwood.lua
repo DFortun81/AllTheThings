@@ -106,6 +106,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(210250, {	-- Engraved Gold Ring
+						["coord"] = { 23.3, 72.8, DUSKWOOD },
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							215,	-- Defias Night Runner
+							909,	-- Defias Night Blade
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(26720, {	-- A Curse We Cannot Lift
 					["qg"] = 43730,	-- Oliver Harris
@@ -1744,6 +1760,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(RARES, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(212261, {	-- Awakened Lich
+					["providers"] = {
+						{ "i", 210568 },	-- Decrepit Phylactery
+						{ "o", 411328 },	-- Slumbering Bones
+					},
+					["coord"] = { 18.0, 38.6, DUSKWOOD },
+					["groups"] = {
+						i(210569, {	-- Rune of Flagellation
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(403480),	-- Engrave Chest - Flagellation
+							},
+						}),
+						i(211514, {	-- Spell Notes: Mass Regeneration
+							["classes"] = { MAGE },
+							["groups"] = {
+								recipe(415939),	-- Engrave Pants - Mass Regeneration
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(45785, {	-- Carved One
 					["coords"] = {	-- pats in a circle, coords not exhaustive
 						{ 48.4, 70.4, DUSKWOOD },
@@ -1928,6 +1967,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209849, {	-- Crimes Against Anatomy
+					["provider"] = { "o", 409735 },	-- Spellbook
+					["coord"] = { 16.7, 28.5, DUSKWOOD },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210568, {	-- Decrepit Phylactery
+					["provider"] = { "o", 411348 },	-- Dusty Coffer
+					["description"] = "Go into the northeastern crypt (23.6, 35.0), head down, and take a left into the first big room (approximately 26.0, 30.9).",
+					["coord"] = { 26.0, 31.0, DUSKWOOD },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210251, {	-- Engraved Silver Ring
+					--["provider"] = { "o",  },	-- Small Chest at Tranquil Gardens Cemetery South of Darkshire (TODO: Find ObjectID)
+					["coord"] = { 81, 71, DUSKWOOD },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(210252, {	-- Rune of Shiving
+					["providers"] = {
+						--{ "o",  },	-- TODO: Find ObjectID
+						{ "i", 210250 },	-- Engraved Gold Ring
+						{ "i", 210251 },	-- Engraved Silver Ring
+					},
+					["description"] = "With both rings, /kneel in front of the statue in the middle of Raven Hill Cemetary.",
+					["coord"] = { 19.9, 45.5, DUSKWOOD },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(424988),	-- Engrave Gloves - Shiv
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(228, {	-- Avette Fellwood <Bowyer>
 					["coord"] = { 73.2, 44.8, DUSKWOOD },
@@ -2125,6 +2197,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(211528, {	-- Dark Insight
+					["coords"] = {
+						{ 22.8, 68.0, DUSKWOOD },
+						{ 50.8, 75.0, DUSKWOOD },
+					},
+					["classes"] = { PRIEST },
+					["crs"] = {
+						910,	-- Defias Enchanter
+						909,	-- Defias Night Blade
+						215,	-- Defias Night Runner
+					},
+					["groups"] = {
+						i(211490, {	-- Prophecy of a Thousand Lights
+							["coord"] = { 90, 30, DUSKWOOD },
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(402859),	-- Engrave Gloves - Circle of Healing
+							},
+						}),
+					},
+				})),
+				-- #endif
 				i(2232, {	-- Dark Runner Boots
 					["cr"] = 205,	-- Nightbane Dark Runner
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
@@ -2379,6 +2474,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 412,	-- Stitches <Gift from the Embalmer>
 				}),
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(210043, {	-- Symbol of the Second Owl
+					["coord"] = { 65.2, 27.8, DUSKWOOD },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { DRUID },
+					["cr"] = 211200,	-- Agon
+				})),
 				-- #endif
 				i(899, {	-- Venom Web Fang
 					["cr"] = 217,	-- Venom Web Spider

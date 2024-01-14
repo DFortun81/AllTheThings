@@ -24,6 +24,10 @@ SODItem(211423, LEATHER);	-- Void-Touched Leather Gloves
 SODItem(210773, MAIL);	-- Mantle of the Second War
 SODItem(210794, MAIL);	-- Shifting Silver Breastplate
 
+-- Quest Items for Runes
+SODItem(209420, ONE_HANDED_MACES);	-- Gillsbane
+SODItem(210696, ONE_HANDED_SWORDS);	-- Rot Bane
+
 -- NYI
 SODItem(211445, BOWS);	-- Barbaric Recurve
 SODItem(211443, TWO_HANDED_SWORDS);	-- Blade of Rage
@@ -263,25 +267,22 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			cn = "理解",
 		},
 	}), {
-		--["cost"] = {{ "i", 211779, 1 }},	-- Comprehension Charm
 		["classes"] = { MAGE },
 		["groups"] = {
 			n(REWARDS, {
 				n(createHeader({	-- Tier 1
-					readable = "Tier 1",
+					readable = "Comprehension - Tier 1",
 					icon = "Interface\\ICONS\\inv_scroll_01",
 					text = {
 						en = "Tier 1",
-						--[[
-						es = "",
-						de = "",
-						fr = "",
-						it = "",
-						pt = "",
-						ru = "",
-						ko = "",
-						cn = "",
-						]]--
+						es = "Nivel 1",
+						de = "Stufe 1",
+						fr = "Étage 1",
+						it = "Livello 1",
+						pt = "Nível 1",
+						ru = "Уровень 1",
+						ko = "층 1",
+						cn = "等级 2",
 					},
 				}), {
 					["cost"] = {
@@ -305,20 +306,18 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					},
 				}),
 				n(createHeader({	-- Tier 2
-					readable = "Tier 2",
+					readable = "Comprehension - Tier 2",
 					icon = "Interface\\ICONS\\inv_scroll_14",
 					text = {
 						en = "Tier 2",
-						--[[
-						es = "",
-						de = "",
-						fr = "",
-						it = "",
-						pt = "",
-						ru = "",
-						ko = "",
-						cn = "",
-						]]--
+						es = "Nivel 2",
+						de = "Stufe 2",
+						fr = "Étage 2",
+						it = "Livello 2",
+						pt = "Nível 2",
+						ru = "Уровень 2",
+						ko = "층 2",
+						cn = "等级 2",
 					},
 				}), {
 					["cost"] = {
@@ -352,9 +351,308 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						}),
 					},
 				}),
+				i(203747, {	-- Spell Notes: Fingers of Frost
+					["cost"] = {
+						{ "i", 211779, 1 },	-- Comprehension Charm
+						{ "i", 203753, 1 },	-- Spell Notes: RING SEFF OSTROF
+					},
+					["groups"] = {
+						recipe(401765),	-- Engrave Chest - Fingers of Frost
+					},
+				}),
+				i(203745, {	-- Spell Notes: Ice Lance
+					["cost"] = {
+						{ "i", 211809, 1 },	-- Comprehension Primer
+						{ "i", 203751, 1 },	-- Spell Notes: CALE ENCI
+					},
+					["groups"] = {
+						recipe(401760),	-- Engrave Gloves - Ice Lance
+					},
+				}),
+				i(208799, {	-- Spell Notes: Living Bomb
+					["cost"] = {
+						{ "i", 211779, 1 },	-- Comprehension Charm
+						{ "i", 208854, 1 },	-- Chewed Spell Notes
+						{ "i", 209028, 1 },	-- Spell Notes: BIVOLG NIMB
+					},
+					["groups"] = {
+						recipe(415936),	-- Engrave Gloves - Living Bomb
+					},
+				}),
+				i(203746, {	-- Spell Notes: Living Flame
+					["cost"] = {
+						{ "i", 211779, 1 },	-- Comprehension Charm
+						{ "i", 203752, 1 },	-- Spell Notes: MILEGIN VALF
+					},
+					["groups"] = {
+						recipe(401768),	-- Engrave Pants - Living Flame
+					},
+				}),
+				i(208753, {	-- Spell Notes: Regeneration
+					["cost"] = {
+						{ "i", 211779, 1 },	-- Comprehension Charm
+						{ "i", 208754, 1 },	-- Spell Notes: TENGI RONEERA
+					},
+					["groups"] = {
+						recipe(401767),	-- Engrave Chest - Regeneration
+					},
+				}),
 			}),
 			n(QUESTS, {
-				
+				q(78145, {	-- Arcanic Systems Manual
+					["providers"] = {
+						{ "i", 209847 },	-- Arcanic Systems Manual
+						{ "n", 211033 },	-- Garion Wendell <Librarian>
+						{ "n", 211022 },	-- Owen Thadd <Librarian>
+					},
+					["coords"] = {
+						{ 37.8, 80.2, STORMWIND_CITY },
+						{ 73.6, 33, UNDERCITY },
+					},
+					["maps"] = { THE_BARRENS },
+					["groups"] = {
+						i(211779),	-- Comprehension Charm
+					},
+				}),
+				q(79091, {	-- Archmage Antonidas: The Unabridged Autobiography
+					["providers"] = {
+						{ "i", 203754 },	-- Archmage Antonidas: The Unabridged Autobiography
+						{ "n", 211033 },	-- Garion Wendell <Librarian>
+					},
+					["coord"] = { 37.8, 80.2, STORMWIND_CITY },
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(211779),	-- Comprehension Charm
+					},
+				}),
+				q(79092, {	-- Archmage Theocritus's Research Journal
+					["providers"] = {
+						{ "i", 203755 },	-- Archmage Theocritus's Research Journal
+						{ "n", 211033 },	-- Garion Wendell <Librarian>
+					},
+					["coord"] = { 37.8, 80.2, STORMWIND_CITY },
+					["maps"] = { ELWYNN_FOREST },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(211779),	-- Comprehension Charm
+					},
+				}),
+				q(79096, {	-- Ataeric: On Arcane Curiosities
+					["providers"] = {
+						{ "i", 210177 },	-- Ataeric: On Arcane Curiosities
+						{ "n", 211022 },	-- Owen Thadd <Librarian>
+					},
+					["coord"] = { 73.6, 33, UNDERCITY },
+					["maps"] = { SILVERPINE_FOREST },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(211779),	-- Comprehension Charm
+					},
+				}),
+				q(79097, {	-- Baxtan: On Destructive Magics
+					["providers"] = {
+						{ "i", 208800 },	-- Baxtan: On Destructive Magics
+						{ "n", 211033 },	-- Garion Wendell <Librarian>
+						{ "n", 211022 },	-- Owen Thadd <Librarian>
+					},
+					["coords"] = {
+						{ 37.8, 80.2, STORMWIND_CITY },
+						{ 73.6, 33, UNDERCITY },
+					},
+					["maps"] = { THE_BARRENS },
+					["groups"] = {
+						i(211779),	-- Comprehension Charm
+					},
+				}),
+				q(78142, {	-- Bewitchments and Glamours
+					["providers"] = {
+						{ "i", 209845 },	-- Bewitchments and Glamours
+						{ "n", 211033 },	-- Garion Wendell <Librarian>
+						{ "n", 211022 },	-- Owen Thadd <Librarian>
+					},
+					["coords"] = {
+						{ 37.8, 80.2, STORMWIND_CITY },
+						{ 73.6, 33, UNDERCITY },
+					},
+					["maps"] = { WESTFALL },
+					["groups"] = {
+						i(211779),	-- Comprehension Charm
+					},
+				}),
+				q(78147, {	-- Crimes Against Anatomy
+					["providers"] = {
+						{ "i", 209849 },	-- Crimes Against Anatomy
+						{ "n", 211033 },	-- Garion Wendell <Librarian>
+						{ "n", 211022 },	-- Owen Thadd <Librarian>
+					},
+					["coords"] = {
+						{ 37.8, 80.2, STORMWIND_CITY },
+						{ 73.6, 33, UNDERCITY },
+					},
+					["maps"] = { DUSKWOOD },
+					["groups"] = {
+						i(211779),	-- Comprehension Charm
+					},
+				}),
+				q(78150, {	-- Friend of the Library
+					["providers"] = {
+						{ "n", 211033 },	-- Garion Wendell <Librarian>
+						{ "n", 211022 },	-- Owen Thadd <Librarian>
+					},
+					["sourceQuests"] = {
+						78145,	-- Arcanic Systems Manual
+						79091,	-- Archmage Antonidas: The Unabridged Autobiography
+						79092,	-- Archmage Theocritus's Research Journal
+						79096,	-- Ataeric: On Arcane Curiosities
+						79097,	-- Baxtan: On Destructive Magics
+						78142,	-- Bewitchments and Glamours
+						78147,	-- Crimes Against Anatomy
+						78149,	-- Fury of the Land
+						78146,	-- Goaz Scrolls
+						78124,	-- Nar'thalas Almanac
+						79093,	-- Rumi of Gnomeregan: The Collected Works
+						78148,	-- Runes of the Sorceror-Kings
+						78143,	-- Secrets of the Dreamers
+						79095,	-- The Apothecary's Metaphysical Primer
+						78127,	-- The Dalaran Digest
+						79094,	-- The Lessons of Ta'zo
+					},
+					["sourceQuestNumRequired"] = 10,
+					["coords"] = {
+						{ 37.8, 80.2, STORMWIND_CITY },
+						{ 73.6, 33, UNDERCITY },
+					},
+					["groups"] = {
+						recipe(425170),	-- Engrave Pants - Icy Veins
+					},
+				}),
+				q(78149, {	-- Fury of the Land
+					["providers"] = {
+						{ "i", 209851 },	-- Fury of the Land
+						{ "n", 211033 },	-- Garion Wendell <Librarian>
+						{ "n", 211022 },	-- Owen Thadd <Librarian>
+					},
+					["coords"] = {
+						{ 37.8, 80.2, STORMWIND_CITY },
+						{ 73.6, 33, UNDERCITY },
+					},
+					["maps"] = { STONETALON_MOUNTAINS },
+					["groups"] = {
+						i(211779),	-- Comprehension Charm
+					},
+				}),
+				q(78146, {	-- Goaz Scrolls
+					["providers"] = {
+						{ "i", 209848 },	-- Goaz Scrolls
+						{ "n", 211033 },	-- Garion Wendell <Librarian>
+						{ "n", 211022 },	-- Owen Thadd <Librarian>
+					},
+					["coords"] = {
+						{ 37.8, 80.2, STORMWIND_CITY },
+						{ 73.6, 33, UNDERCITY },
+					},
+					["maps"] = { WETLANDS },
+					["groups"] = {
+						i(211779),	-- Comprehension Charm
+					},
+				}),
+				q(78124, {	-- Nar'thalas Almanac
+					["providers"] = {
+						{ "i", 209843 },	-- Nar'thalas Almanac, Vol. 74
+						{ "n", 211033 },	-- Garion Wendell <Librarian>
+						{ "n", 211022 },	-- Owen Thadd <Librarian>
+					},
+					["coords"] = {
+						{ 37.8, 80.2, STORMWIND_CITY },
+						{ 73.6, 33, UNDERCITY },
+					},
+					["maps"] = { DARKSHORE },
+					["groups"] = {
+						i(211779),	-- Comprehension Charm
+					},
+				}),
+				q(79093, {	-- Rumi of Gnomeregan: The Collected Works
+					["providers"] = {
+						{ "i", 208860 },	-- Rumi of Gnomeregan: The Collected Works
+						{ "n", 211033 },	-- Garion Wendell <Librarian>
+					},
+					["coord"] = { 37.8, 80.2, STORMWIND_CITY },
+					["maps"] = { WESTFALL, LOCH_MODAN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(211779),	-- Comprehension Charm
+					},
+				}),
+				q(78148, {	-- Runes of the Sorceror-Kings
+					["providers"] = {
+						{ "i", 209850 },	-- Runes of the Sorcerer-Kings
+						{ "n", 211033 },	-- Garion Wendell <Librarian>
+						{ "n", 211022 },	-- Owen Thadd <Librarian>
+					},
+					["coords"] = {
+						{ 37.8, 80.2, STORMWIND_CITY },
+						{ 73.6, 33, UNDERCITY },
+					},
+					["maps"] = { LOCH_MODAN },
+					["groups"] = {
+						i(211779),	-- Comprehension Charm
+					},
+				}),
+				q(78143, {	-- Secrets of the Dreamers
+					["providers"] = {
+						{ "i", 209846 },	-- Secrets of the Dreamers
+						{ "n", 211033 },	-- Garion Wendell <Librarian>
+						{ "n", 211022 },	-- Owen Thadd <Librarian>
+					},
+					["coords"] = {
+						{ 37.8, 80.2, STORMWIND_CITY },
+						{ 73.6, 33, UNDERCITY },
+					},
+					["maps"] = { WAILING_CAVERNS },
+					["groups"] = {
+						i(211779),	-- Comprehension Charm
+					},
+				}),
+				q(79095, {	-- The Apothecary's Metaphysical Primer
+					["providers"] = {
+						{ "i", 208185 },	-- The Apothecary's Metaphysical Primer
+						{ "n", 211022 },	-- Owen Thadd <Librarian>
+					},
+					["coord"] = { 73.6, 33, UNDERCITY },
+					["maps"] = { TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(211779),	-- Comprehension Charm
+					},
+				}),
+				q(78127, {	-- The Dalaran Digest
+					["providers"] = {
+						{ "i", 209844 },	-- The Dalaran Digest, Vol. 23
+						{ "n", 211033 },	-- Garion Wendell <Librarian>
+						{ "n", 211022 },	-- Owen Thadd <Librarian>
+					},
+					["coords"] = {
+						{ 37.8, 80.2, STORMWIND_CITY },
+						{ 73.6, 33, UNDERCITY },
+					},
+					["maps"] = { SILVERPINE_FOREST },
+					["groups"] = {
+						i(211779),	-- Comprehension Charm
+					},
+				}),
+				q(79094, {	-- The Lessons of Ta'zo
+					["providers"] = {
+						{ "i", 207972 },	-- The Lessons of Ta'zo
+						{ "n", 211022 },	-- Owen Thadd <Librarian>
+					},
+					["coord"] = { 73.6, 33, UNDERCITY },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(211779),	-- Comprehension Charm
+					},
+				}),
 			}),
 		},
 	}),
@@ -532,8 +830,8 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(424718),	-- Engrave Pants - Starsurge
 		}),
 		classHeader(HUNTER, {
-			recipe(410115),	-- Engrave Chest - Aspect of the Lion
 			recipe(425759),	-- Engrave Chest - Cobra Strikes
+			recipe(410115),	-- Engrave Chest - Heart of the Lion
 			recipe(410122),	-- Engrave Chest - Lone Wolf
 			recipe(410113),	-- Engrave Chest - Master Marksman
 			recipe(410110),	-- Engrave Gloves - Beast Mastery
@@ -644,6 +942,84 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(425447),	-- Engrave Pants - Frenzied Assault
 			recipe(403476),	-- Engrave Pants - Furious Thunder
 		}),
+	}),
+	n(createHeader({	-- Soul Brokers
+		readable = "SOD - Soul Brokers",
+		icon = "Interface\\ICONS\\spell_shadow_lifedrain02",
+		text = {
+			en = "Soul Brokers",
+			es = "Corredores de Almas",
+			de = "Seelenvermittler",
+			fr = "Courtiers D'âmes",
+			it = "Broker Dell'anima",
+			pt = "Corretores de Almas",
+			ru = "Душевные брокеры",
+			ko = "소울 브로커",
+			cn = "灵魂经纪人",
+		},
+	}), {
+		["aqd"] = {
+			["crs"] = {
+				209002,	-- Gaklik Voidtwist <Soul Broker>
+				204256,	-- Damien Kane <Soul Broker>
+			},
+			["coords"] = {
+				{ 47.2, 53.6, DUN_MOROGH },
+				{ 44.0, 66.2, ELWYNN_FOREST },
+			},
+		},
+		["hqd"] = {
+			["crs"] = {
+				208226,	-- Darmak Bloodhowl <Soul Broker>
+				208682,	-- Denton Bleakway <Soul Broker>
+			},
+			["coords"] = {
+				{ 54.6, 41.6, DUROTAR },
+				{ 84.0, 26.0, UNDERCITY },
+			},
+			["maps"] = { TIRISFAL_GLADES },
+		},
+		["OnInit"] = [[function(t) _.ResolveQuestData(t); return t; end]],
+		["classes"] = { WARLOCK },
+		["groups"] = {
+			i(205022, {	-- Rune of Soul Siphon
+				["cost"] = {
+					{ "i", 205020, 1 },	-- Pure Soul Shard
+					{ "i", 205019, 1 },	-- Tainted Soul Shard
+				},
+				["classes"] = { WARLOCK },
+				["groups"] = {
+					recipe(403920),	-- Engrave Chest - Soul Siphon
+				},
+			}),
+			i(205020, {	-- Pure Soul Shard
+				["description"] = "Casting Drain Soul on any critter will reward you with this.",
+			}),
+			i(205019, {	-- Tainted Soul Shard
+				["description"] = "Casting Drain Soul on any of the named mobs listed below will reward you with this. (does not need to be your tag!)",
+				["aqd"] = {
+					["coords"] = {
+						{ 27.0, 92.8, ELWYNN_FOREST },
+						{ 27.8, 57.4, DUN_MOROGH },
+					},
+					["crs"] = {
+						448,	-- Hogger
+						6113,	-- Vejrek
+					},
+				},
+				["hqd"] = {
+					["coords"] = {
+						{ 42.6, 26.4, DUROTAR },
+						{ 58.6, 31.6, TIRISFAL_GLADES },
+					},
+					["crs"] = {
+						3203,	-- Fizzle Darkstorm
+						1753,	-- Maggot Eye
+					},
+				},
+				["OnInit"] = [[function(t) _.ResolveQuestData(t); return t; end]],
+			}),
+		},
 	}),
 	n(createHeader({	-- Waylaid Supplies
 		readable = "Waylaid Supplies",

@@ -2466,6 +2466,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.0, 61.2, DARKSHORE },
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210451, {	-- Lady Sedorax
+					["coord"] = { 55.6, 36.6, DARKSHORE },
+					["groups"] = {
+						i(208741, {	-- Rune of Endless Rage
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(403489),	-- Engrave Gloves - Endless Rage
+							},
+						}),
+						i(209028, {	-- Spell Notes: BIVOLG NIMB
+							["classes"] = { MAGE },
+						}),
+					},
+				})),
+				-- #endif
 				n(7016, {	-- Lady Vespira
 					-- #if AFTER CATA
 					["coords"] = {
@@ -2506,6 +2522,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.0, 35.4, DARKSHORE },
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210482, {	-- Paxnozz
+					["coord"] = { 48.8, 15.6, DARKSHORE },
+					["cost"] = {{ "i", 209047, 1 }},	-- Gnarled Harpoon
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR, HUNTER },
+					["groups"] = {
+						i(208777, {	-- Rune of the Sniper
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(416091),	-- Engrave Pants - Sniper Training
+							},
+						}),
+						i(208778, {	-- Rune of Quick Strike
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425443),	-- Engrave Gloves - Quick Strike
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(2175, {	-- Shadowclaw
 					-- #if AFTER CATA
 					["coords"] = {
@@ -2547,12 +2585,73 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { PALADIN },
 				})),
-				applyclassicphase(SOD_PHASE_ONE, i(210763, {	-- Bough of Altek
-					["provider"] = { "o", 411715 },	-- Bough of Altek
-					["coord"] = { 56.3, 26.4, DARKSHORE },
-					["description"] = "Climb the tower in Darkshore, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
+				applyclassicphase(SOD_PHASE_ONE, i(209047, {	-- Gnarled Harpoon
+					["provider"] = { "o", 408802 },	-- Gnarled Harpoon
+					["coords"] = {
+						{ 44.1, 20.8, DARKSHORE },
+						{ 47.3, 15.3, DARKSHORE },
+						{ 49.2, 16.2, DARKSHORE },
+						{ 48.3, 18.0, DARKSHORE },
+					},
 					["timeline"] = { "removed 2.0.1" },
-					["classes"] = { WARLOCK },
+					["classes"] = { WARRIOR, HUNTER },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205905, {	-- Memory of a Devout Champion
+					["providers"] = {
+						{ "o", 414663 },	-- Shatterspear Idol
+						{ "i", 211482 },	-- Shatterspear Offering
+					},
+					["coord"] = { 59.2, 22.6, DARKSHORE },
+					["classes"] = { PRIEST },
+					["groups"] = {
+						recipe(425215),	-- Engrave Chest - Twisted Faith
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209843, {	-- Nar'thalas Almanac, Vol. 74
+					["provider"] = { "o", 409496 },	-- Scrolls
+					["coord"] = { 59.6, 22.2, DARKSHORE },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
+					["provider"] = { "o", 414646 },	-- Remnant
+					["coord"] = { 30.4, 48.0, DARKSHORE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PRIEST },
+					["groups"] = {
+						recipe(402849),	-- Engrave Gloves - Shadow Word - Death
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208701, {	-- Rune of Beast Mastery
+					["providers"] = {
+						{ "n",   2234 },	-- Young Reef Crawler
+						{ "i", 209027 },	-- Crab Treats
+					},
+					["description"] = "Use Crab Treats on a young reef crawler to receive this rune.",
+					["coord"] = { 36.4, 54.2, DARKSHORE },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						recipe(410110),	-- Engrave Gloves - Beast Mastery
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208771, {	-- Rune of Blade Dance
+					["providers"] = {
+						{ "o", 414532 },	-- Clliffspring Chest (mispelled?!)
+						{ "i", 211471 },	-- Cliffspring Key
+					},
+					["coord"] = { 56.3, 34.9, DARKSHORE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400099),	-- Engrave Pants - Blade Dance
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
+					["provider"] = { "o", 414624 },	-- Lighthouse Stash
+					["coord"] = { 32.8, 37.1, DARKSHORE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(424984),	-- Engrave Gloves - Saber Slash
+					},
 				})),
 			}),
 			-- #endif
@@ -2635,6 +2734,36 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(211471, {	-- Cliffspring Key
+					["coord"] = { 55.8, 34.2, DARKSHORE },
+					["classes"] = { ROGUE },
+					["crs"] = {
+						2179,	-- Stormscale Wave Rider
+						2180,	-- Stormscale Siren
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209027, {	-- Crab Treats
+					["coord"] = { 39.8, 54.6, DARKSHORE },
+					["classes"] = { HUNTER },
+					["crs"] = {
+						2167,	-- Blackwood Pathfinder
+						2324,	-- Blackwood Windtalker
+						2171,	-- Blackwood Shaman
+						2168,	-- Blackwood Warrior
+						2169,	-- Blackwood Totemic
+						2170,	-- Blackwood Ursa
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208689, {	-- Ferocious Idol
+					["coord"] = { 51.4, 38, DARKSHORE },
+					["classes"] = { DRUID },
+					["cr"] = 6788,	-- Den Mother
+					["groups"] = {
+						recipe(410023),	-- Engrave Pants - Savage Roar
+					},
+				})),
+				-- #endif
 				i(5332, {	-- Glowing Cat Figurine
 					["cr"] = 3619,	-- Ghost Saber
 				}),
@@ -2648,6 +2777,41 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 2337,	-- Dark Strand Voidcaller
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208750, {	-- Rune of Channeling
+					["coord"] = { 57.0, 26.4, DARKSHORE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["cr"] = 2336,	-- Dark Strand Fanatic
+					["groups"] = {
+						recipe(403932),	-- Engrave Chest - Master Channeler
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208744, {	-- Rune of Shadowbolts
+					["coords"] = {
+						{ 57.6, 26.0, DARKSHORE },
+						{ 52.6, 33.8, DARKSHORE },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["crs"] = {
+						3662,	-- Delmanis the Hated
+						10373,	-- Xabraxxis
+					},
+					["groups"] = {
+						recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(211482, {	-- Shatterspear Offering
+					["coord"] = { 58.8, 20.6, DARKSHORE },
+					["classes"] = { PRIEST },
+					["crs"] = {
+						2181,	-- Stormscale Myrmidon
+						2182,	-- Stormscale Sorceress
+						2183,	-- Stormscale Warrior
+					},
+				})),
+				-- #endif
 				-- #if BEFORE 4.0.3
 				i(5568, {	-- Smooth Pebble
 					["timeline"] = { "deleted 4.0.1" },

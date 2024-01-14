@@ -35,6 +35,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 62.4, 50.5, THE_WAKING_SHORES },
 					["g"] = {
 						ach(16624),	-- Which Knot Was It Again?
+						i(191138),	-- Clinging Gustbloom Sample (QI!)
 					},
 				}),
 			}),

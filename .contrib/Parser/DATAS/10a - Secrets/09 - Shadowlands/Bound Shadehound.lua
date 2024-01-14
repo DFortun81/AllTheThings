@@ -110,7 +110,7 @@ root(ROOTS.Secrets, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_5 } },
 				["provider"] = { "i", 185475 },	-- Feral Shadehound
 				["g"] = {
 					i(184168),	-- Bound Shadehound (MOUNT!)
-					i(185616),	-- Summon Feral Shadehound
+					i(185616),	-- Summon Feral Shadehound (QI!)
 				},
 			}),
 		},

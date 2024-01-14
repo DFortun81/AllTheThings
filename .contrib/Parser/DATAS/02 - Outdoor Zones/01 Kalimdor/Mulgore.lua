@@ -231,6 +231,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["classes"] = { PRIEST },
 						}),
 						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77652, {	-- Icons of Power
+							["qg"] = 3062,	-- Meela Dawnstrider <Shaman Trainer>
+							["coord"] = { 45, 76, MULGORE },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { SHAMAN },
+							["races"] = { TAUREN },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Chest - Overload
+									["provider"] = { "i", 206381 },	-- Dyadic Icon
+								}),
+								recipe(410094),	-- Engrave Chest - Overload
+								i(2127),	-- Cracked Leather Vest
+							},
+						})),
 						applyclassicphase(SOD_PHASE_ONE, q(77651, {	-- Into the Brambles
 							["qg"] = 3059,	-- Harutt Thunderhorn <Warrior Trainer>
 							["coord"] = { 44, 76, MULGORE },
@@ -240,11 +255,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["lvl"] = 2,
 							["groups"] = {
 								objective(1, {	-- 0/1 Learn Spell: Engrave Gloves - Victory Rush
-									["providers"] = {
-										{ "i", 204806 },	-- Rune of Victory Rush
-										{ "o", 403102 },	-- Bristleback Loot Cache
-									},
-									["coord"] = { 61.6, 76.0, MULGORE },
+									["provider"] = { "i", 204806 },	-- Rune of Victory Rush
 								}),
 								recipe(403470),	-- Engrave Gloves - Victory Rush
 								i(2385),	-- Tarnished Chain Gloves
@@ -276,6 +287,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								}),
 							},
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, q(77648, {	-- Relics of the Tauren
+							["qg"] = 3060,	-- Gart Mistrunner <Druid Trainer>
+							["coord"] = { 45.0, 76.0, MULGORE },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { DRUID },
+							["races"] = { TAUREN },
+							["lvl"] = 2,
+							["groups"] = {
+								objective(1, {	-- 0/1 Learn Spell: Engrave Chest - Fury of Stormrage
+									["provider"] = { "i", 208414 },	-- Lunar Idol
+								}),
+								recipe(410061),	-- Engrave Chest - Fury of Stormrage
+								i(2127),	-- Cracked Leather Vest
+							},
+						})),
+						-- #endif
 						q(14456, {	-- Rite of Courage
 							["qg"] = 36694,	-- Adana Thunderhorn
 							["sourceQuest"] = 14458,	-- Go To Adana
@@ -573,6 +601,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["classes"] = { DRUID },
 						}),
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					n(TREASURES, {
+						applyclassicphase(SOD_PHASE_ONE, o(403102, {	-- Bristleback Loot Cache
+							["coord"] = { 61.6, 76.0, MULGORE },
+							["timeline"] = { "removed 2.0.1" },
+							["groups"] = {
+								i(208414, {	-- Lunar Idol
+									["classes"] = { DRUID },
+								}),
+								i(204806, {	-- Rune of Victory Rush
+									["classes"] = { WARRIOR },
+								}),
+							},
+						})),
+					}),
+					-- #endif
 					n(ZONE_DROPS, {
 						i(1388, {	-- Crooked Staff
 							["timeline"] = { "removed 4.0.3" },
@@ -585,8 +629,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 2952,	-- Bristleback Quilboar
 							-- #endif
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(206381, {	-- Dyadic Icon
+							["coord"] = { 63.8, 81.0, MULGORE },
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { SHAMAN },
+							["cr"] = 2953,	-- Bristleback Shaman
+						})),
+						-- #endif
 						i(4951, {	-- Squealer's Belt
 							["timeline"] = { "removed 4.0.3" },
+							-- #if AFTER 10.1.7
+							["isBounty"] = true,
+							-- #endif
 							["cr"] = 3229,	-- "Squealer" Thornmantle
 						}),
 					}),
@@ -1627,6 +1682,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(205382, {	-- Mokwa
+					["description"] = "You can tame him and you still get the rune!",
+					["coord"] = { 36, 57, MULGORE },
+					["cost"] = {{ "i", 205961, 1 }},	-- Mulgore Bird Meat
+					["groups"] = {
+						i(205979, {	-- Rune of Flanking
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(425762),	-- Engrave Pants - Flanking Strike
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(5785, {	-- Sister Hatelash
 					-- #if AFTER CATA
 					["coords"] = {
@@ -1674,6 +1744,36 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(205700, {	-- Venture Co. Poacher
+					["provider"] = { "n", 205692 },	-- Rustling Bush
+					["description"] = "Cast Hunter's Mark on the bush to spawn the rare.",
+					["coord"] = { 59.0, 54.6, MULGORE },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(206155, {	-- Rune of Marksmanship
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410113),	-- Engrave Chest - Master Marksman
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, n(206245, {	-- Unleashed Nature Spirit
+					["providers"] = {
+						{ "n", 206248 },	-- Wooden Effigy
+						{ "i", 206466 },	-- Prairie Crown
+					},
+					["coord"] = { 37.8, 49.6, MULGORE },
+					["cost"] = { { "i", 206469, 3 }},	-- Prairie Flower
+					["groups"] = {
+						i(206963, {	-- Rune of Natural Potential
+							["classes"] = { DRUID },
+							["groups"] = {
+								recipe(416050),	-- Engrave Chest - Living Seed
+							},
+						}),
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, n(203079, {	-- Wandering Swordsman
 					["provider"] = { "o", 392029 },	-- Swordsman's Reward
 					["coords"] = {
@@ -1750,6 +1850,46 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
+				applyclassicphase(SOD_PHASE_ONE, o(404352, {	-- Artifact Storage
+					["provider"] = { "i", 206975 },	-- Artifact Storage Key
+					["coord"] = { 31.6, 49.5, MULGORE },
+					["timeline"] = { "removed 2.0.1" },
+					["groups"] = {
+						i(206388, {	-- Sulfurous Icon
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(425344),	-- Engrave Gloves - Molten Blast
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(206386, {	-- Galvanic Icon
+					--["provider"] = { "o",  },	-- TODO: I don't have the objectID for this. It's called "Galvanic Icon" just like the item.
+					["description"] = "These are random spawn totems on the ground; listen for the lightning cast sound to help you pinpoint the location.",
+					["coords"] = {
+						{ 54.07, 55.82, MULGORE },
+						{ 36.3, 9.8, MULGORE },
+						{ 37.5, 52.5, MULGORE },
+						{ 41.65, 55.98, MULGORE },
+						{ 38.0, 60.0, MULGORE },
+					},
+					["classes"] = { SHAMAN },
+					["groups"] = {
+						recipe(410098),	-- Engrave Chest - Shield Mastery
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(206989, {	-- Rune of the Sun
+					["providers"] = {
+						{ "n", 207577 },	-- Lunar Stone
+						{ "o", 404433 },	-- Lunar Chest
+					},
+					["description"] = "Cast Moonfire on each of the Lunar Stones to spawn the Lunar Chest nearby.",
+					["coord"] = { 35.7, 69.6, MULGORE },
+					["classes"] = { DRUID },
+					["groups"] = {
+						recipe(416044),	-- Engrave Gloves - Sunfire
+					},
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {
@@ -1789,6 +1929,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(205635, {	-- Takoda Sunmane <Naturalist>
+					["description"] = "Use the musk and tame a prairie dog and then bring it to Takoda.",
+					["coord"] = { 46.2, 60.6, MULGORE },
+					["cost"] = {{ "i", 205995, 1 }},	-- Prairie Dog Musk
+					["crs"] = { 2620 },	-- Prairie Dog
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(206032, {	-- Rune of Carve
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(425758),	-- Engrave Gloves - Carve
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(3081, {	-- Wunna Darkmane <Trade Goods>
 					-- #if AFTER CATA
 					["coord"] = { 46.4, 57.8, MULGORE },
@@ -1803,7 +1960,62 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(ZONE_DROPS, {
+				applyclassicphase(SOD_PHASE_ONE, i(206975, {	-- Artifact Storage Key
+					["coord"] = { 33.8, 49.8, MULGORE },
+					["timeline"] = { "removed 2.0.1" },
+					["crs"] = {
+						2990,	-- Bael'dun Appraiser
+						2989,	-- Bael'dun Digger
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(206954, {	-- Idol of Ursine Rage
+					["coord"] = { 53.2, 29.6, MULGORE },
+					["classes"] = { DRUID },
+					["crs"] = {
+						2979,	-- Venture Co. Supervisor
+						3232,	-- Bristleback Interloper
+						2964,	-- Windfury Sorceress
+						2971,	-- Taloned Swoop
+						2960,	-- Prairie Wolf Alpha
+						3566,	-- Flatland Prowler
+						2965,	-- Windfury Matriarch
+					},
+					["groups"] = {
+						recipe(410025),	-- Engrave Gloves - Mangle
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205961, {	-- Mulgore Bird Meat
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["crs"] = {
+						2956,	-- Adult Plainstrider
+						2969,	-- Wiry Swoop
+						2970,	-- Swoop
+						2957,	-- Elder Plainstrider
+						2971,	-- Taloned Swoop
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205995, {	-- Prairie Dog Musk
+					["coords"] = {
+						{ 53.6, 72.6, MULGORE },
+						{ 31.2, 62.2, MULGORE },
+						{ 48.2, 74.0, MULGORE },
+						{ 30.8, 61.6, MULGORE },
+					},
+					["classes"] = { HUNTER },
+					["crs"] = {
+						2951,	-- Palemane Poacher
+						2950,	-- Palemane Skinner
+						2949,	-- Palemane Tanner
+						207515,	-- Lurkmane
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(206469, {	-- Prairie Flower
+					["provider"] = { "o", 403718 },	-- Prairie Flower
+					["description"] = "These are scattered throughout the zone.",
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(206169, {	-- Rune of Explosive Shot
+					["description"] = "This can also drop from any of the rare mobs in the zone.",
 					["coord"] = { 51.8, 20.0, MULGORE },
 					["classes"] = { HUNTER },
 					["cr"] = 3058,	-- Arra'chea
@@ -1812,15 +2024,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(204809, {	-- Rune of Furious Thunder
-					["coords"] = {
-						{ 51.8, 20.0, MULGORE },
-						{ 30.8, 61.6, MULGORE },
-					},
+					["description"] = "This can also drop from any of the rare mobs in the zone.",
+					["coord"] = { 30.8, 61.6, MULGORE },
 					["classes"] = { WARRIOR },
-					["crs"] = {
-						3058,	-- Arra'chea
-						207515,	-- Lurkmane
-					},
+					["cr"] = 207515,	-- Lurkmane
 					["groups"] = {
 						recipe(403476),	-- Engrave Pants - Furious Thunder
 					},

@@ -3,11 +3,6 @@
 --------------------------------------------------
 root("Achievements", {
 	achcat(ACHIEVEMENT_CATEGORY_CHARACTER, {
-		applyclassicphase(CATA_PHASE_ONE, ach(5180, {	-- Breaking the Sound Barrier
-			["spellID"] = 90265,	-- Master Riding
-			["timeline"] = { "added 4.0.1" },
-			["rank"] = 5,
-		})),
 		ach(1017, {	-- Can I Keep Him?
 			["OnClick"] = [[_.CommonAchievementHandlers.COMPANIONS_OnClick]],
 			-- #if BEFORE WRATH
@@ -17,18 +12,6 @@ root("Achievements", {
 			["f"] = 101,
 			["rank"] = 1,
 		}),
-		applyclassicphase(WRATH_PHASE_ONE, ach(556, {	-- Epic
-			["timeline"] = { "added 3.0.1" },
-		})),
-		-- #if AFTER TBC
-		ach(889, {	-- Fast and Furious
-			["spellID"] = 33391,	-- Journeyman Riding
-			["rank"] = 2,
-		}),
-		-- #endif
-		applyclassicphase(WRATH_PHASE_ONE, ach(558, {	-- Greedy
-			["timeline"] = { "added 3.0.1" },
-		})),
 		ach(1833, {	-- It's Happy Hour Somewhere
 			["timeline"] = { "added 3.0.1" },
 		}),
@@ -77,9 +60,6 @@ root("Achievements", {
 			["groups"] = {
 				applyclassicphase(WRATH_PHASE_ONE, i(40653)),	-- Reeking Pet Carrier
 			},
-		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(557, {	-- Superior
-			["timeline"] = { "added 3.0.1" },
 		})),
 	}),
 	achcat(ACHIEVEMENT_CATEGORY_QUESTS, {

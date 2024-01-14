@@ -214,6 +214,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 58842 },	-- The Curator
 				["provider"] = { "n", 161056 },	-- Guard Captain Elizabeta
 				["coord"] = { 65.9, 32.2, REVENDRETH },
+				["g"] = {
+					i(174040),	-- Chains of Regret (QI!)
+				},
 			}),
 			q(62856, {	-- Building Your Renown
 				["sourceQuests"] = { 59323 },	-- Anima Awakening
@@ -307,6 +310,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				},
 				["provider"] = { "n", 171147 },	-- General Draven
 				["coord"] = { 24.3, 29.7, BASTION },
+				["g"] = {
+					i(180605),	-- Crown of the Harvesters (QI!)
+				},
 			}),
 			q(57772, {	-- Fangs and Minds
 				["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
@@ -718,10 +724,11 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 171175 },	-- General Draven
 				["coord"] = { 21.0, 22.8, BASTION },
 				["g"] = {
+					i(180604),	-- Crown of the Harvesters (QI!)
+					i(180905),	-- Dread Sentinel's Ebony Greatboots
+					i(180908),	-- Ebony Death Shroud Boots
 					i(180907),	-- Fearstalker's Ebony Sabatons
 					i(180906),	-- Soulbreaker's Ebony Slippers
-					i(180908),	-- Ebony Death Shroud Boots
-					i(180905),	-- Dread Sentinel's Ebony Greatboots
 				},
 			}),
 			q(61492, {	-- The Princeguard

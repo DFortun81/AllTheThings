@@ -29,49 +29,6 @@ root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 		},
 	}),
 	
-	-- Retired PVP Battleground Quests
-	-- Warsong Gulch
-	q(8293),	-- Mark of Honor [lvl 60]
-	q(7922),	-- Mark of Honor [lvl 50]
-	q(7923),	-- Mark of Honor [lvl 40]
-	q(7924),	-- Mark of Honor [lvl 30]
-	q(7925),	-- Mark of Honor [lvl 20]
-	q(8296),	-- Mark of Honor [lvl 10]
-	q(8569),	-- Past Efforts in Warsong Gulch
-	q(8570),	-- Past Efforts in Warsong Gulch
-	q(8567),	-- Past Victories in Warsong Gulch
-	q(8568),	-- Past Victories in Warsong Gulch
-	q(8266),	-- Ribbons of Sacrifice
-	q(8267),	-- Ribbons of Sacrifice
-	q(8268),	-- Ribbons of Sacrifice
-	q(8269),	-- Ribbons of Sacrifice
-	q(8002),	-- Silverwing Sentinels <NYI> <TXT>
-	i(19213),	-- Silverwing Talisman of Merit
-	q(8292),	-- Talismans of Merit [lvl 60]
-	q(7886),	-- Talismans of Merit [lvl 50]
-	q(7888),	-- Talismans of Merit [lvl 40]
-	q(7887),	-- Talismans of Merit [lvl 30]
-	q(7921),	-- Talismans of Merit [lvl 20]
-	q(8289),	-- Talismans of Merit [lvl 10]
-	i(20256),	-- Warsong Gulch Ribbon of Sacrifice
-	i(19322),	-- Warsong Mark of Honor
-	q(8001),	-- Warsong Outriders <NYI> <TXT>
-	
-	-- Arathi Basin
-	i(19725),	-- Arathi Resource Crate
-	q(8158),	-- More Resource Crates [lvl 20] (A)
-	q(8165),	-- More Resource Crates [lvl 20] (H)
-	q(8159),	-- More Resource Crates [lvl 30] (A)
-	q(8164),	-- More Resource Crates [lvl 30] (H)
-	q(8157),	-- More Resource Crates [lvl 40] (A)
-	q(8163),	-- More Resource Crates [lvl 40] (H)
-	q(8081),	-- More Resource Crates [lvl 50] (A)
-	q(8124),	-- More Resource Crates [lvl 50] (H)
-	q(8298),	-- More Resource Crates [lvl 60] (A)
-	q(8300),	-- More Resource Crates [lvl 60] (H)
-	q(8565),	-- Past Victories in Arathi
-	q(8566),	-- Past Victories in Arathi
-	
 	-- Shirts
 	i(6130),	-- Trapper's Shirt (deprecated)
 	

@@ -16,6 +16,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(198475),	-- Broken Banding
 				},
 			}),
+			o(381071, {	-- Box of Rocks
+				["description"] = "Can almost be anywhere in the zone, wont show up via treasure tracking.",
+				["g"] = {
+					i(199216),	-- A Box of Rocks
+				},
+			}),
 			o(381065, {	-- Broken Waygate
 				["description"] = "In a cave.",
 				["coord"] = { 34.7, 45.8, THE_WAKING_SHORES },

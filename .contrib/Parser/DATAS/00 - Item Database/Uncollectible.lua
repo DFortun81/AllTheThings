@@ -308,7 +308,6 @@ i(147209);	-- Legendary Wardenscale Supplies
 i(186157);	-- Lodestaff
 i(168280);	-- Lost Scale of the Scarlet Broodmother
 i(147582);	-- Mark of the Sentinax
-i(79269);	-- Marsh Lily
 i(146680);	-- Melandrus' Star-Touched Bracers
 i(122618);	-- Misprinted Draenic Coin
 i(169238);	-- Modified Radio Receiver
@@ -605,12 +604,14 @@ i(200792);	-- Taxidermied Catch
 i(200802);	-- Signet of the Dragonflights
 i(200805);	-- Fallen Watcher Remains
 i(200806);	-- Woodcarving Stone
+i(200810);	-- Wooden Stonegrabber Figurine
 i(200819);	-- Volatile Sparks
 i(200820);	-- Dry Wood Log
 i(200822);	-- Jar of Ashes
 i(200825);	-- Assorted Debris
 i(200826);	-- Stored Humid Air
 i(200828);	-- Pocketed Clouds
+i(200834);	-- Can You Smell It?
 i(200835);	-- Sand Pouch
 i(200837);	-- So You Think You Can Rune?
 i(200838);	-- Insignia of the Kirin Tor
@@ -675,6 +676,7 @@ i(192674);	-- Unknown Titan Mechanism
 i(192675);	-- Winglet
 i(192683);	-- Slimy Frog Eggs
 i(192685);	-- Battle-Hardened Fang
+i(192688);	-- Cracked Stone Bracers
 i(192702);	-- Giant's Heart
 i(192706);	-- Razor Quill
 i(192708);	-- Magnificent Antler
@@ -684,6 +686,7 @@ i(192715);	-- Phoenix Stone
 i(192717);	-- Animated Splinter
 i(192718);	-- Rock-Hard Eggshell
 i(192719);	-- Scaled Toes
+i(192720);	-- Slender Twisting Horn
 i(192723);	-- Springy Tongue
 i(192724);	-- Terrifying Teeth
 i(192726);	-- Thunderhorn
@@ -829,11 +832,6 @@ i(202868);	-- Mender's Signal
 i(202873);	-- Drooping Mushroom Cutting
 i(203012);	-- Viridian Heartcrystal
 i(203385);	-- Flamesight Rune
-i(203387);	-- Oddly Familiar Training Weapon
-i(203388);	-- Gunky Insignia
-i(203389);	-- Shiny Rock
-i(203391);	-- Dented Dwarven Pocketwatch
-i(203392);	-- Old Mirror Shard
 i(203393);	-- Spongy Loamshroom
 i(203394);	-- Elementally Charged Orb
 i(203396);	-- Displayed Armor Piece
@@ -852,7 +850,6 @@ i(204070);	-- Magma Crystal
 i(204085);	-- Zaqali Dragonslayer's Spear
 i(204088);	-- Quartzite Spore Bile
 i(204273);	-- Stolen Supplies
-i(204329);	-- Petrified Spider Leg
 i(204433);	-- Everburning Fireshard
 i(204435);	-- Obsidian Tablet
 i(204437);	-- Drakeforged Armaments
@@ -865,7 +862,6 @@ i(204817);	-- Underlight Cocoon Fibers
 i(205169);	-- Glimmer Mushroom
 i(205179);	-- Glimmerfish Scale
 i(205217);	-- Sharpbeak's Feed
-i(205797);	-- Filthy Bundle
 
 --- Trash ---
 i(201166);	-- Gilded Hilt

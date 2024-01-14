@@ -574,6 +574,56 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78192, {	-- Secrets of the Light (1/2)
+					["qg"] = 211188,	-- Maethra Slagheart
+					["coord"] = { 38.2, 89.2, DARNASSUS },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { ASHENVALE },
+					["classes"] = { PRIEST },
+					["races"] = { NIGHTELF },
+					["lvl"] = 17,
+					["groups"] = {
+						objective(1, {	-- 0/7 Forsaken Herbalist slain
+							["provider"] = { "n", 3733 },	-- Forsaken Herbalist
+							["coord"] = { 32.0, 21.8, ASHENVALE },
+						}),
+						objective(2, {	-- 0/9 Forsaken Seeker slain
+							["provider"] = { "n", 3732 },	-- Forsaken Seeker
+							["coord"] = { 31.6, 23.8, ASHENVALE },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78193, {	-- Secrets of the Light (2/2)
+					["qg"] = 211188,	-- Maethra Slagheart
+					["sourceQuest"] = 78192,	-- Secrets of the Light (1/2)
+					["coord"] = { 38.2, 89.2, DARNASSUS },
+					["description"] = "Completing this quest will allow you to meditate in the same manner as the humans and dwarves.",
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { STORMWIND_CITY },
+					["classes"] = { PRIEST },
+					["races"] = { NIGHTELF },
+					["lvl"] = 17,
+					["groups"] = {
+						recipe(424035, {	-- Secrets of the Light
+							["classes"] = { PRIEST },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(79078, {	-- Sharing the Faith
+					["qg"] = 4092,	-- Lariia <Priest Trainer>
+					["coord"] = { 40, 87.4, DARNASSUS },
+					["timeline"] = { "removed 2.0.1" },
+					["races"] = { NIGHTELF },
+					["lvl"] = 5,
+					["groups"] = {
+						objective(1, {	-- Pray over the Supplicant
+							["provider"] = { "n", 215095 },	-- Supplicant
+							["description"] = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
+						}),
+					},
+				})),
+				-- #endif
 				q(1692, {	-- Smith Mathiel
 					["providers"] = {
 						{ "n", 4088 },	-- Elanaria
@@ -1455,6 +1505,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						2026,    -- Rock Hammer
 					}},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209948, {	-- Relaeron <Caretaker>
+					["description"] = "Use the musk and tame a Deer and then bring it to Relaeron.",
+					["coord"] = { 39.8, 9.2, DARNASSUS },
+					["cost"] = {{ "i", 208607, 1 }},	-- Deer Musk
+					["maps"] = { TELDRASSIL },
+					["crs"] = { 883 },	-- Deer
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(206032, {	-- Rune of Carve
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(425758),	-- Engrave Gloves - Carve
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(4225, {	-- Saenorion <Leatherworking Supplies>
 					-- #if AFTER CATA
 					["coord"] = { 60.0, 37.2, DARNASSUS },

@@ -112,6 +112,44 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(209031, {	-- Discreet Envelope
+						["coord"] = { 48.6, 48.6, WESTFALL },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							 95,	-- Defias Smuggler
+							504,	-- Defias Trapper
+							590,	-- Defias Looter
+							121,	-- Defias Pathstalker
+							589,	-- Defias Pillager
+						},
+						["groups"] = {
+							i(209030, {	-- Equipment Stash Key
+								["classes"] = { ROGUE },
+							}),
+							i(209029, {	-- Message from Emily
+								["classes"] = { ROGUE },
+							}),
+						},
+					})),
+					applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
+						["coords"] = {
+							{ 51.0, 47.0, WESTFALL },
+							{ 51.6, 55.6, WESTFALL },
+						},
+						["timeline"] = { "removed 2.0.1" },
+						["classes"] = { ROGUE },
+						["cr"] = 210549,	-- Defias Scout
+						["groups"] = {
+							recipe(424984),	-- Engrave Gloves - Saber Slash
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(6181, {	-- A Swift Message
 					["qg"] = 491,	-- Quartermaster Lewis
@@ -1185,6 +1223,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(RARES, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210483, {	-- Aggressive Squashling
+					["coords"] = {
+						{ 43.8, 33.4, WESTFALL },
+						{ 50.4, 19.8, WESTFALL },
+					},
+					["cost"] = {
+						{ "i", 209041, 1 },	-- Magic Pumpkin Seeds
+						{ "i", 209043, 1 },	-- Fertile Soil Sample
+						{ "i", 209042, 1 },	-- Fishy Bonemeal
+					},
+					["classes"] = { DRUID },
+					["groups"] = {
+						i(208687, {	-- Rune of Lacerate
+							["classes"] = { DRUID },
+							["groups"] = {
+								recipe(416049),	-- Engrave Gloves - Lacerate
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(520, {	-- Brack
 					-- #if AFTER CATA
 					["coord"] = { 28.8, 72.8, WESTFALL },
@@ -1216,6 +1276,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210549, {	-- Defias Scout
+					["coords"] = {
+						{ 51.0, 47.0, WESTFALL },
+						{ 51.6, 55.6, WESTFALL },
+					},
+					["description"] = "Hunters need to use Hunter's Mark.",
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(208777, {	-- Rune of the Sniper
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(416091),	-- Engrave Pants - Sniper Training
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(573, {	-- Foe Reaper 4000
 					-- #if AFTER CATA
 					["coords"] = {
@@ -1242,6 +1321,55 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210501, {	-- Harvest Reaper Prototype
+					["provider"] = { "i", 209057 },	-- Prototype Engine
+					["coords"] = {
+						{ 50.6, 18.8, WESTFALL },
+						{ 52.8, 33.8, WESTFALL },
+						{ 45.6, 39.0, WESTFALL },
+						{ 35.6, 52.2, WESTFALL },
+						{ 61.4, 58.8, WESTFALL },
+					},
+					["classes"] = { MAGE, WARLOCK },
+					["groups"] = {
+						i(208750, {	-- Rune of Channeling
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403932),	-- Engrave Chest - Master Channeler
+							},
+						}),
+						i(208799, {	-- Spell Notes: Living Bomb
+							["classes"] = { MAGE },
+							["groups"] = {
+								recipe(415936),	-- Engrave Gloves - Living Bomb
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, n(210487, {	-- Horror of the Deep
+					["providers"] = {
+						{ "o", 408799 },	-- Idol of the Deep
+						{ "i", 209045 },	-- Soul of the Sea
+					},
+					["coord"] = { 26.0, 69.5, WESTFALL },
+					["classes"] = { WARRIOR, WARLOCK },
+					["groups"] = {
+						i(208778, {	-- Rune of Quick Strike
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425443),	-- Engrave Gloves - Quick Strike
+							},
+						}),
+						i(208744, {	-- Rune of Shadowbolts
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(572, {	-- Leprithus
 					-- #if AFTER CATA
 					["coord"] = { 41.7, 29.3, WESTFALL },
@@ -1255,6 +1383,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Spawns at BOTH the northern and west-most southern spawn points at approximately 20:00/8 PM server time. If you are quick, you could probably snag both.",
 					-- #endif
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(402849),	-- Engrave Gloves - Shadow Word - Death
+							},
+						})),
+						-- #endif
 						i(1387, {	-- Ghoulfang
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
@@ -1298,6 +1435,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210533, {	-- Silverspur
+					["coord"] = { 32.8, 35.9, WESTFALL },
+					["cost"] = {{ "i", 209059, 1 }},	-- Goretusk Haunch
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(208701, {	-- Rune of Beast Mastery
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410110),	-- Engrave Gloves - Beast Mastery
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(519, {	-- Slark
 					-- #if AFTER CATA
 					["coords"] = {
@@ -1333,6 +1485,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(6180, {	-- Slarkskin
 							["timeline"] = { "removed 4.0.3" },	-- Not yet confirmed!
 							-- ["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							-- #if AFTER 10.1.7
+							["isBounty"] = true,
+							-- #endif
 						}),
 					},
 				}),
@@ -1342,14 +1497,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(208849, {	-- Libram of Blessings
 							["classes"] = { PALADIN },
-							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								recipe(425618),	-- Engrave Chest - Horn of Lordaeron
 							},
 						}),
 						i(205905, {	-- Memory of a Devout Champion
 							["classes"] = { PRIEST },
-							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								recipe(425215),	-- Engrave Chest - Twisted Faith
 							},
@@ -1392,6 +1545,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209845, {	-- Bewitchments and Glamours
+					["provider"] = { "o", 409562 },	-- Spellbook
+					["coord"] = { 45.4, 70.5, WESTFALL },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208860, {	-- Rumi of Gnomeregan: The Collected Works
+					["provider"] = { "o", 408014 },	-- Gnomish Tome
+					["coord"] = { 52.7, 53.8, WESTFALL },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208771, {	-- Rune of Blade Dance
+					["providers"] = {
+						{ "o", 408718 },	-- Equipment Stash
+						{ "i", 209030 },	-- Equipment Stash Key
+					},
+					["coord"] = { 40.80, 80.24, WESTFALL },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400099),	-- Engrave Pants - Blade Dance
+					},
+				})),
+			}),
+			-- #endif
 			-- #if AFTER 9.0.2
 			n(TREASURES, {
 				o(357515, sharedDataSelf({ ["timeline"] = { ADDED_9_0_2 } }, {	-- Sack of Oats
@@ -1605,9 +1781,92 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209058, {	-- Elemental Core
+					["coords"] = {
+						{ 40.8, 22.0, WESTFALL },
+						{ 35.8, 34.4, WESTFALL },
+						{ 33.8, 49.4, WESTFALL },
+						{ 34.6, 68.6, WESTFALL },
+						{ 38.8, 61.4, WESTFALL },
+						{ 42.6, 59.2, WESTFALL },
+						{ 46.8, 48.6, WESTFALL },
+						{ 43.0, 42.2, WESTFALL },
+						{ 54.6, 41.0, WESTFALL },
+						{ 61.6, 36.0, WESTFALL },
+						{ 63.6, 51.4, WESTFALL },
+						{ 68.8, 74.0, WESTFALL },
+					},
+					["cr"] = 832,	-- Dust Devil
+				})),
+				-- #endif
 				i(1405, {	-- Foamspittle Staff
 					["cr"] = 517,	-- Murloc Oracle
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208689, {	-- Ferocious Idol
+					["classes"] = { DRUID },
+					["crs"] = {
+						452,	-- Riverpaw Bandit
+						124,	-- Riverpaw Brute
+						117,	-- Riverpaw Gnoll
+						501,	-- Riverpaw Herbalist
+						1426,	-- Riverpaw Miner
+						123,	-- Riverpaw Mongrel
+						453,	-- Riverpaw Mystic
+						125,	-- Riverpaw Overseer
+						500,	-- Riverpaw Scout
+						1065,	-- Riverpaw Shaman
+						98,		-- Riverpaw Taskmaster
+					},
+					["groups"] = {
+						recipe(410023),	-- Engrave Pants - Savage Roar
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209043, {	-- Fertile Soil Sample
+					["coord"] = { 45.6, 20.4, WESTFALL },
+					["classes"] = { DRUID },
+					["cr"] = 1236,	-- Kobold Digger
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209042, {	-- Fishy Bonemeal
+					["coord"] = { 50.0, 11.8, WESTFALL },
+					["classes"] = { DRUID },
+					["crs"] = {
+						831,	-- Sea Crawler
+						830,	-- Sand Crawler
+						1216,	-- Shore Crawler
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209420, {	-- Gillsbane
+					["description"] = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["coords"] = {
+						{ 48.6, 21.8, WESTFALL },
+						{ 47.6, 39.2, WESTFALL },
+						{ 36.6, 74.4, WESTFALL },
+						{ 37.6, 55.4, WESTFALL },
+						{ 44.6, 67.6, WESTFALL },
+						{ 51.6, 75.2, WESTFALL },
+					},
+					["crs"] = {
+						504,	-- Defias Trapper
+						 95,	-- Defias Smuggler
+						449,	-- Defias Knuckleduster
+						590,	-- Defias Looter
+						589,	-- Defias Pillager
+						121,	-- Defias Pathstalker
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209059, {	-- Goretusk Haunch
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["crs"] = {
+						454,	-- Young Goretusk
+						157,	-- Goretusk
+					},
+				})),
+				-- #endif
 				-- #if BEFORE 4.0.3
 				i(723, {	-- Goretusk Liver
 					["crs"] = {
@@ -1680,6 +1939,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209041, {	-- Magic Pumpkin Seeds
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { DRUID },
+					["coords"] = {
+						{ 48.6, 21.8, WESTFALL },
+						{ 47.6, 39.2, WESTFALL },
+						{ 36.6, 74.4, WESTFALL },
+						{ 37.6, 55.4, WESTFALL },
+						{ 44.6, 67.6, WESTFALL },
+						{ 51.6, 75.2, WESTFALL },
+					},
+					["crs"] = {
+						504,	-- Defias Trapper
+						 95,	-- Defias Smuggler
+						449,	-- Defias Knuckleduster
+						590,	-- Defias Looter
+						589,	-- Defias Pillager
+						121,	-- Defias Pathstalker
+					},
+				})),
+				-- #endif
 				i(732, {	-- Okra
 					["crs"] = {
 						573,	-- Foe Reaper 4000
@@ -1727,6 +2008,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 450,	-- Defias Renegade Mage
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209057, {	-- Prototype Engine
+					["cost"] = {
+						{ "i", 209056, 1 },	-- Spare Reaper Parts
+						{ "i", 209056, 1 },	-- Spare Reaper Parts
+					},
+				})),
+				-- #endif
 				-- #if AFTER 4.0.3
 				i(2698, {	-- Recipe: Cooked Crab Claw (RECIPE!)
 					["description"] = "Can drop from any mob in the zone, would recommend farming the murlocs in the north.",
@@ -1746,6 +2035,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1391, {	-- Riverpaw Mystic Staff
 					["cr"] = 453,	-- Riverpaw Mystic
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208741, {	-- Rune of Endless Rage
+					["description"] = "This can also drop from any of the rare mobs in the zone.",
+					["coord"] = { 34.4, 84.6, WESTFALL },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["cr"] = 391,	-- Old Murk-Eye
+					["groups"] = {
+						recipe(403489),	-- Engrave Gloves - Endless Rage
+					},
+				})),
+				-- #endif
 				i(832, {	-- Silver Defias Belt
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
@@ -1784,6 +2085,62 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(209045, {	-- Soul of the Sea
+					["provider"] = { "i", 209420 },	-- Gillsbane
+					["description"] = "This will only drop if you have Gillsbane equipped and haven't completed your Quick Strike rune yet.",
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["coords"] = {
+						-- various common map locations where 'crs' may be found
+						{ 28.8, 72.8, WESTFALL },
+						{ 33.0, 83.6, WESTFALL },
+						{ 34.6, 85.4, WESTFALL },
+						{ 44.2, 9.6, WESTFALL },
+						{ 50.8, 10.6, WESTFALL },
+						{ 53.6, 11.6, WESTFALL },
+						{ 55.8, 8.0, WESTFALL },
+						{ 56.0, 9.8, WESTFALL },
+						{ 56.6, 9.2, WESTFALL },
+					},
+					["crs"] = {
+						126,	-- Murloc Coastrunner
+						458,	-- Murloc Hunter
+						456,	-- Murloc Minor Oracle
+						513,	-- Murloc Netter
+						517,	-- Murloc Oracle
+						515,	-- Murloc Raider
+						127,	-- Murloc Tidehunter
+						171,	-- Murloc Warrior
+						391,	-- Old Murk-Eye
+						519,	-- Slark
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209056, {	-- Spare Reaper Parts
+					["coords"] = {
+						{ 59.0, 18.2, WESTFALL },
+						{ 54.4, 25.6, WESTFALL },
+						{ 50.0, 22.6, WESTFALL },
+						{ 54.6, 34.6, WESTFALL },
+						{ 45.8, 36.0, WESTFALL },
+						{ 39.2, 52.0, WESTFALL },
+						{ 47.6, 67.6, WESTFALL },
+						{ 63.6, 60.2, WESTFALL },
+					},
+					["crs"] = {
+						480,	-- Rusty Harvest Golem
+						114,	-- Harvest Watcher
+						 36,	-- Harvest Golem
+						115,	-- Harvest Reaper
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA
+					["coord"] = { 53.0, 78.8, WESTFALL },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { MAGE },
+					["cr"] = 450,	-- Defias Renegade Mage
+				})),
+				-- #endif
 				-- #if BEFORE 10.1.7
 				i(1933, {	-- Staff of Conjuring
 					-- Moved to Brainwashed Noble in 10.1.7

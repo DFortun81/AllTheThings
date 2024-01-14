@@ -16,12 +16,6 @@ BROKEN_ISLES_CUP_HEADER = createHeader({
 	constant = "BROKEN_ISLES_HEADER",
  	icon = [[~_.asset("Holiday_BrokenCup")]],
 	eventID = EVENTS.BROKEN_ISLES_CUP,
-	--[[
-	eventSchedule = {
-		0, -- Likely Recurring, not yet tho
-		2024, 10, 10, 10, 0,	-- 10/10 at 10:00 AM	-- US DATES
-		2024, 23, 10, 10, 0,		-- 10/24 at 10:00 AM	-- US DATES
-	},--]]
 	text = {
 		en = "Broken Isles Cup",
 		ru = "Кубок Расколотых островов",
@@ -32,12 +26,6 @@ EASTERN_KINGDOMS_CUP_HEADER = createHeader({
 	constant = "EASTERN_KINGDOMS_CUP_HEADER",
 	icon = [[~_.asset("Holiday_EastCup")]],
 	eventID = EVENTS.EASTERN_KINGDOMS_CUP,
-	--[[
-	eventSchedule = {
-		0, -- Likely Recurring, not yet tho
-		10, 4, 10, 0,	-- 10/04 at 10:00 AM	-- US DATES
-		10, 17, 10, 0,	-- 10/17 at 10:00 AM	-- US DATES
-	},--]]
 	text = {
 		en = "Eastern Kingdoms Cup",
 		de = "Der Pokal der Östlichen Königreiche",
@@ -49,12 +37,6 @@ KALIMDOR_CUP_HEADER = createHeader({
 	constant = "KALIMDOR_CUP_HEADER",
 	icon = [[~_.asset("Holiday_KalCup")]],
 	eventID = EVENTS.KALIMDOR_CUP,
-	--[[
-	eventSchedule = {
-		0, -- Likely Recurring, not yet tho
-		8, 15, 10, 0,	-- 08/15 at 10:00 AM	-- US DATES
-		9, 4, 10, 0,		-- 09/04 at 10:00 AM	-- US DATES
-	},--]]
 	text = {
 		en = "Kalimdor Cup",
 		de = "Kalimdorpokal",
@@ -66,12 +48,6 @@ NORTHREND_CUP_HEADER = createHeader({
 	constant = "NORTHREND_CUP_HEADER",
 	icon = [[~_.asset("Holiday_NorthCup")]],
 	eventID = EVENTS.NORTHREND_CUP,
-	--[[
-	eventSchedule = {
-		0, -- Likely Recurring, not yet tho
-		2024, 4, 11, 10, 0,	-- 4/11 at 10:00 AM		-- US DATES
-		2024, 4, 24, 10, 0,	-- 4/24 at 10:00 AM		-- US DATES
-	},--]]
 	text = {
 		en = "Northrend Cup",
 		ru = "Кубок Нордскола",
@@ -82,12 +58,6 @@ OUTLAND_CUP_HEADER = createHeader({
 	constant = "OUTLAND_CUP_HEADER",
 	icon = [[~_.asset("Holiday_OutCup")]],
 	eventID = EVENTS.OUTLAND_CUP,
-	--[[
-	eventSchedule = {
-		0, -- Likely Recurring, not yet tho
-		2024, 1, 11, 10, 0,	-- 1/11 at 10:00 AM		-- US DATES
-		2024, 1, 24, 10, 0,	-- 1/24 at 10:00 AM		-- US DATES
-	},--]]
 	text = {
 		en = "Outland Cup",
 		ru = "Кубок Запределья",
@@ -98,12 +68,6 @@ PANDARIA_CUP_HEADER = createHeader({
 	constant = "PANDARIA_CUP_HEADER",
 	icon = [[~_.asset("Holiday_PandaCup")]],
 	eventID = EVENTS.PANDARIA_CUP,
-	--[[
-	eventSchedule = {
-		0, -- Likely Recurring, not yet tho
-		2024, 7, 11, 10, 0,	-- 7/11 at 10:00 AM
-		2024, 7, 24, 10, 0,	-- 7/24 at 10:00 AM
-	},--]]
 	text = {
 		en = "Pandaria Cup",
 		ru = "Кубок Пандарии",
@@ -787,6 +751,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 			}),
 		}))),
 		applyevent(EVENTS.KALIMDOR_CUP, n(KALIMDOR_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {					-- Kalimdor Cup
+			-- Returns Jan 9th 2025 (11.1.0?)
 			n(ACHIEVEMENTS, {
 				ach(17712, {	-- Kalimdor: Bronze
 					-- Meta Achievement
@@ -1005,6 +970,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 			}),
+			-- Todo: Add Shared Data: Repeatable for all the quests
 			n(QUESTS, {
 				q(76429, {	-- The Kalimdor Cup Begins
 					["provider"] = { "n", 199261 },	-- Holiday Enthusiast
@@ -1796,7 +1762,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				}),
 			}),
 		}))),
-		applyevent(EVENTS.OUTLAND_CUP, n(OUTLAND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {						-- Outland Cup
+		applyevent(EVENTS.OUTLAND_CUP, n(OUTLAND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {						-- Outland Cup
 			n(ACHIEVEMENTS, {
 				ach(19092, {	-- Outland: Bronze
 					-- Meta Achievement
@@ -2417,7 +2383,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				})),
 			}),
 		}))),
-		applyevent(EVENTS.NORTHREND_CUP, n(NORTHREND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+		applyevent(EVENTS.NORTHREND_CUP, n(NORTHREND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5, ADDED_10_2_6 } }, {					-- Northrend Cup
 			n(ACHIEVEMENTS, {
 				ach(19674, {	-- Northrend: Bronze
 					-- Meta Achievement
@@ -2887,9 +2853,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				}),
 			}),
 		}))),
-		n(REWARDS, {
+		n(ACHIEVEMENTS, {
 			currency(RIDERS_OF_AZEROTH_BADGE, {
-				["description"] = "Gain one badge for each achievement.",
+				["description"] = "For each achievement in the Dragonriding Cup, players earn one badge, with up to 15 badges possible for completing a race across its five types, each featuring bronze, silver, and gold variations.",
 			}),
 		}),
 	},

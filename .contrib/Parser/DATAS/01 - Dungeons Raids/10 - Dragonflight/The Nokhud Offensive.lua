@@ -40,6 +40,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					["provider"] = { "n", 190164 },	-- Elder Nazuun
 					["coord"] = { 41.6, 56.7, OHNAHRAN_PLAINS },
 					["g"] = {
+						i(193483),	-- Medallion of the Ancestors (QI!)
 						i(200251),	-- Medallion of the Ancestors
 					},
 				}),

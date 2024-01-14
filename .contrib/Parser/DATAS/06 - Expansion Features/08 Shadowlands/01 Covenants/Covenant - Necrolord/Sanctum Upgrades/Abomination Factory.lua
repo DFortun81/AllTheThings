@@ -475,6 +475,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.1, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178554),	-- Call Chordy (QI!)
+											i(174101),	-- Valuable Salvage (QI!)
+										},
 									}),
 									q(62213, {    -- A Brokered Deal
 										["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
@@ -484,6 +488,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 										["maps"] = {
 											1717,	-- Chill's Reach
+										},
+										["g"] = {
+											i(178678),	-- Call Atticus (QI!)
 										},
 									}),
 									q(59042, {	-- A Good Heart
@@ -522,6 +529,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										},
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178679),	-- Call Marz (QI!)
+										},
 									}),
 									q(62256, {    -- Asset Extraction
 										["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
@@ -529,6 +539,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.3, 68.3, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178678),	-- Call Atticus (QI!)
+										},
 									}),
 									q(60049, {	-- At Your Service
 										["sourceQuests"] = { 58727 },	-- A Place To Call Home
@@ -575,6 +588,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.3, 68.1, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178599),	-- Call Flytrap (QI!)
+										},
 									}),
 									q(61522, {	-- Corpse Run
 										["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
@@ -582,6 +598,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.3, 68.1, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178599),	-- Call Flytrap (QI!)
+										},
 									}),
 									q(61523, {	-- Corpse Run
 										["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
@@ -589,6 +608,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.3, 68.1, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178599),	-- Call Flytrap (QI!)
+										},
 									}),
 									q(60765, {    -- Cure For All Ills
 										["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
@@ -599,6 +621,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.1, 68.1, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178680),	-- Call Roseboil (QI!)
+										},
 									}),
 									q(62217, {	-- Field Training
 										["sourceQuests"] = { 57611 },	-- Construct Body: Marz
@@ -609,6 +634,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.2, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178679),	-- Call Marz (QI!)
+										},
 									}),
 									q(58668, {	-- Find The Way
 										["sourceQuests"] = { 58665 },	-- Rebellious Souls
@@ -624,6 +652,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.1, 68.1, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178680),	-- Call Roseboil (QI!)
+										},
 									}),
 									q(58680, {	-- Loose Threads
 										["sourceQuests"] = { 58668 },	-- Find The Way
@@ -646,6 +677,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.1, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178554),	-- Call Chordy (QI!)
+											i(174101),	-- Valuable Salvage (QI!)
+										},
 									}),
 									q(58677, {	-- Skin in the Game
 										["sourceQuests"] = { 58668 },	-- Find The Way
@@ -658,6 +693,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.1, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178554),	-- Call Chordy (QI!)
+											i(174101),	-- Valuable Salvage (QI!)
+										},
 									}),
 									q(60264, {    -- Soul Survivor
 										["sourceQuests"] = { 59747 },    -- A Lost Soul
@@ -675,6 +714,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.3, 68.3, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178678),	-- Call Atticus (QI!)
+										},
 									}),
 									q(58670, {	-- The Slaughter Daughter
 										["sourceQuests"] = { 59042 },	-- A Good Heart
@@ -687,6 +729,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.1, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178554),	-- Call Chordy (QI!)
+											i(174101),	-- Valuable Salvage (QI!)
+										},
 									}),
 									q(62216, {	-- Training Program
 										["sourceQuests"] = { 57611 },	-- Construct Body: Marz
@@ -697,6 +743,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.2, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178679),	-- Call Marz (QI!)
+										},
 									}),
 									q(58686, {	-- Weapon of Mass Construction
 										["sourceQuests"] = {
@@ -829,6 +878,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.9, 67.8, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183043),	-- Call Toothpick (QI!)
+										},
 									}),
 									q(59615, {	-- Every Dog Has Its Day
 										["description"] = "Kill Soul Harvester Anka at 70.1, 40.8 to obtain the Soul Harvester Key, which opens the cage and makes the quest available.  The key will only drop if you have tier 2 or higher Abomination Table.",
@@ -845,6 +897,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.8, 68.8, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(182474),	-- Call Sabrina (QI!)
+										},
 									}),
 									q(60230, {	-- More the Merrier
 										["sourceQuests"] = { 60041 },	-- Build-A-Bomination
@@ -860,6 +915,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.9, 67.8, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183043),	-- Call Toothpick (QI!)
+										},
 									}),
 									q(62294, {	-- One Lich's Trash...
 										["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
@@ -870,6 +928,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.4, 68.2, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183142),	-- Call Professor (QI!)
+											i(183398),	-- Intriguing Ancient Relic (QI!)
+										},
 									}),
 									q(61996, {	-- Say The Magic Words
 										["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
@@ -880,6 +942,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.8, 68.8, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(182474),	-- Call Sabrina (QI!)
+										},
 									}),
 									q(58515, {	-- Scrounging for Scrolls
 										["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
@@ -890,6 +955,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.4, 68.2, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183142),	-- Call Professor (QI!)
+											i(175275),	-- Scroll of the Path (QI!)
+										},
 									}),
 									q(60283, {	-- Specter Of War: Visectus
 										["provider"] = { "n", 161668 },	-- Summoner Gerard
@@ -905,6 +974,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.8, 68.8, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(182474),	-- Call Sabrina (QI!)
+											i(182957),	-- Inquisitor's Crypt Key (QI!)
+										},
 									}),
 									q(58525, {	-- The Two Sides of History
 										["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
@@ -915,6 +988,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.4, 68.2, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183142),	-- Call Professor (QI!)
+										},
 									}),
 								}),
 								i(184354, {	-- Soul Harvester Key
@@ -997,6 +1073,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.4, 67.9, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183127),	-- Call Guillotine (QI!)
+										},
 									}),
 									q(56470, {	-- Give A Dog A Bone
 										["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
@@ -1014,6 +1093,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.4, 67.9, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183138),	-- Chosen Razorstone (QI!)
+											i(183127),	-- Call Guillotine (QI!)
+										},
 									}),
 									q(60340, {	-- Hands on Approach
 										["sourceQuests"] = { 58416 },	-- Construct Body: Guillotine
@@ -1024,6 +1107,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.4, 67.9, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(178788),	-- Anima Traces (QI!)
+											i(183127),	-- Call Guillotine (QI!)
+										},
 									}),
 									q(62407, {	-- Herbicidal Tendencies
 										["sourceQuests"] = { 57608 },	-- Construct Body: Gas Bag
@@ -1034,6 +1121,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.2, 68.0, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183719),	-- Rotbloom Petal (QI!)
+											i(183133),	-- Call Gas Bag (QI!)
+										},
 									}),
 									q(58992, {	-- Pie Not?
 										["sourceQuests"] = { 60216 },	-- Construct Body: Mama Tomalin
@@ -1051,6 +1142,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.2, 68.0, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(175843),	-- Pox Nodules (QI!)
+											i(183133),	-- Call Gas Bag (QI!)
+										},
 									}),
 									q(61635, {	-- Troubled Souls
 										["sourceQuests"] = { 60230 },	-- More the Merrier
@@ -1120,6 +1215,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 55.5, 68.4, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(182959),	-- Call Iron Phillip (QI!)
+										},
 									}),
 									q(58379, {	-- Construct Part: Indomitable Hide
 										["sourceQuests"] = { 60048 },	-- Stitching Time
@@ -1143,6 +1241,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["coord"] = { 54.8, 68.7, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
+										["g"] = {
+											i(183186),	-- Purified Nectar (QI!)
+											i(183128),	-- Call Naxx (QI!)
+										},
 									}),
 									q(61638, {	-- Iron Solution
 										["sourceQuests"] = { 61635 },	-- Troubled Souls

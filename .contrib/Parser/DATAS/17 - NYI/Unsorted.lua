@@ -454,8 +454,6 @@ root(ROOTS.Unsorted, {
 			i(169724),	-- Notorious Gladiator's Bonegrinder (H)	-- I collected it somehow -Darkal
 		})),
 		n(QUESTS, {	-- These are/were completable
-			-- Classic
-			q(1),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
 			-- 4.0.3
 			-- 5.0.1
 			q(30549),	-- [DNT] Rearm, Reuse, Recycle TRACKER
@@ -1201,7 +1199,6 @@ root(ROOTS.Unsorted, {
 			i(213177),	-- Immaculate Tome
 			i(213179),	-- Cracked Draconic Tooth
 			i(213180),	-- Crumpled Map
-			i(213181),	-- A Tiny Dragon Goblet
 			i(213182),	-- Worry Stone
 			i(213183),	-- Makeshift Beaded Bracelet
 			i(213184),	-- Rock with Chewed Gum
@@ -1213,12 +1210,10 @@ root(ROOTS.Unsorted, {
 			i(213196),	-- Pressed Flower
 			i(213200),	-- Book of Horoscopes
 			i(213201),	-- Discarded Waterfowl Bones
-			i(213202),	-- A Tiny Explorer's Hat
 			i(213203),	-- Velvet Nightcap
 			i(213204),	-- Ruby-Studded Locket
 			i(213205),	-- Mad Scribblings
 			i(213206),	-- Charred Letter
-			i(213207),	-- A Tiny Ear Warmer
 			i(213208),	-- Pot of Pickled Ancheevies
 			i(213210),	-- Bloodied Banner Scrap
 			i(213211),	-- Petrified Flower Petals
@@ -1519,10 +1514,8 @@ root(ROOTS.Unsorted, {
 				q(77596),	--
 				q(77598),	--
 				q(77599),	--
-				q(77601),	--
 				q(77602),	--
 				q(77603),	--
-				q(77604),	--
 				q(77605),	--
 				q(77606),	--
 				q(77608),	--
@@ -1681,7 +1674,6 @@ root(ROOTS.Unsorted, {
 				-- 10.1.0.49741
 				q(72943),	--
 				q(75054),	--
-				q(75388),	-- The Azure Vaults
 				q(75391),	-- Epilogue Scene (DNT) (spellID 406790)
 				--10.1.0.49890
 				q(75059),	--
@@ -1801,7 +1793,6 @@ root(ROOTS.Unsorted, {
 				i(200533),	-- Bygone Idol
 				i(192686),	-- Charred Carapace
 				i(201178),	-- Cracked Skull
-				i(192688),	-- Cracked Stone Bracers
 				i(201216),	-- Crumbled Elemental Spark
 				i(200532),	-- Damaged Qiraji Ring
 				i(193420),	-- Depleted Mana Stone
@@ -1855,7 +1846,6 @@ root(ROOTS.Unsorted, {
 				i(201162),	-- Shiny Metal Scraps
 				i(192668),	-- Short Rib
 				i(201201),	-- Skull Pendant
-				i(192720),	-- Slender Twisting Horn
 				i(192633),	-- Slit-Shaped Pupil
 				i(201221),	-- Small Titan Mechanism
 				i(201179),	-- Snapped Tusk Tip
@@ -2039,14 +2029,12 @@ root(ROOTS.Unsorted, {
 				i(200782),	-- Bejeweled Horseshoes
 				i(199186),	-- Bewitched Wood
 				i(200697),	-- Blightshroom
-				i(198668),	-- Blooming Shallowlily
 				i(198442),	-- Bogthwottle's Shrinky-Do
 				i(192560),	-- Bossy Storm Stuff
 				i(200798),	-- Bottled Diseased Parasites
 				i(200824),	-- Bottled Lightning
 				i(200791),	-- Braided Ottuk Hair Fishing Line
 				i(196540),	-- Broadhoof Tail Poutine
-				i(200834),	-- Can You Smell It?
 				i(200590),	-- Carefully Rolled Message
 				i(198688),	-- Catnip Leaf
 				i(200821),	-- Celsius 232
@@ -2110,7 +2098,6 @@ root(ROOTS.Unsorted, {
 				i(199343),	-- Immaculate Sac of Swog Treasures
 				i(199187),	-- Impossible Sheet Music
 				i(194693),	-- Improvised Sushi
-				i(200555),	-- Inferno Seeds
 				i(200620),	-- Inflaming Incense
 				i(200830),	-- Instantly Drying Clay
 				i(191244),	-- I.P.F. Mark 15
@@ -2127,7 +2114,6 @@ root(ROOTS.Unsorted, {
 				i(194677),	-- Marvelous Mood Ring
 				i(200588),	-- Meaty Stem
 				i(192054),	-- Medallion of a Fallen Friend
-				i(198666),	-- Milky Snapflower
 				i(194682),	-- Mother's Gift
 				i(194707),	-- Myridian Report
 				i(186159),	-- Mythic Keystone
@@ -2148,7 +2134,6 @@ root(ROOTS.Unsorted, {
 				i(200121),	-- Potion of Beginner's Luck
 				i(194718),	-- Premium Salamander Feed
 				i(200606),	-- Previously Owned Map
-				i(192545),	-- Primal Flame Fragment
 				i(194750),	-- Professional Equipment
 				i(201726),	-- Progress Report: Uldorus
 				i(198452),	-- Prototype F
@@ -2183,7 +2168,6 @@ root(ROOTS.Unsorted, {
 				i(200639),	-- Talisman of Ohn'ahra
 				i(200637),	-- Talisman of the Maruuk
 				i(198842),	-- Tallstrider Feather
-				i(200693),	-- Terata Leaves
 				i(200594),	-- Thaelin's Second Favorite Comb
 				i(200705),	-- Thaldraszus Root
 				i(200803),	-- Through the Stained-Glass
@@ -2201,7 +2185,6 @@ root(ROOTS.Unsorted, {
 				i(198486),	-- Windscale Rider
 				i(200623),	-- Wind-Grown Grass
 				i(200696),	-- Winter Berries
-				i(200810),	-- Wooden Stonegrabber Figurine
 				i(200807),	-- Wooden Ursine Figure
 				i(194889),	-- XD-57 "Bullseye" Guided Rocket Kit
 				i(187523),	-- Your Reward [DNT]

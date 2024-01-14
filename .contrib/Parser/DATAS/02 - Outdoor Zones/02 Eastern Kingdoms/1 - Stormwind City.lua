@@ -92,6 +92,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				faction(1353, {	-- Tushui Pandaren
 					["timeline"] = { ADDED_5_0_4 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 			n(FLIGHT_PATHS, {
@@ -799,6 +800,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(BURLY_BRAWL, {
+					["questID"] = 75300,	-- Burly Brawl HQT
+					["qgs"] = {
+						203475,	-- Liv Bradford <Bartender>
+						203478,	-- Stuart
+					},
+					["coord"] = { 22.6, 64.7, STORMWIND_CITY },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN, WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(204716, {	-- Rune of Frenzied Assault
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425447),	-- Engrave Pants - Frenzied Assault
+							},
+						}),
+						i(205683, {	-- Rune of Rebuke
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(425621),	-- Engrave Pants - Rebuke
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(1705, {	-- Burning Blood
 					["qg"] = 1416,	-- Grimand Elmore
 					["sourceQuest"] = 1700,	-- Grimand Elmore
@@ -2156,6 +2184,44 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DEMONHUNTER },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78194, {	-- Secrets of Elune (1/2)
+					["qg"] = 11397,	-- Nara Meideros <Priest Trainer>
+					["coord"] = { 20.8, 50.2, STORMWIND_CITY },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { DUSKWOOD },
+					["classes"] = { PRIEST },
+					["races"] = { DWARF, HUMAN },
+					["lvl"] = 17,
+					["groups"] = {
+						objective(1, {	-- 0/10 Dire Wolf Paw
+							["provider"] = { "i", 210053 },	-- Dire Wolf Paw
+							["coord"] = { 67.2, 27.2, DUSKWOOD },
+							["crs"] = {
+								565,	-- Rabid Dire Wolf
+								213,	-- Starving Dire Wolf
+								628,	-- Black Ravager
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78195, {	-- Secrets of Elune (2/2)
+					["qg"] = 11397,	-- Nara Meideros <Priest Trainer>
+					["sourceQuest"] = 78194,	-- Secrets of Elune (1/2)
+					["coord"] = { 20.8, 50.2, STORMWIND_CITY },
+					["description"] = "Completing this quest will allow you to meditate in the same manner as the night elves.",
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { DARKSHORE },
+					["classes"] = { PRIEST },
+					["races"] = { DWARF, HUMAN },
+					["lvl"] = 17,
+					["groups"] = {
+						recipe(424036, {	-- Secrets of Elune
+							["classes"] = { PRIEST },
+						}),
+					},
+				})),
+				-- #endif
 				q(393, {	-- Shadow of the Past
 					["providers"] = {
 						{ "n", 1646 },	-- Baros Alexston <City Architect>
@@ -2171,6 +2237,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(79077, {	-- Sharing the Faith
+					["qg"] = 1212,	-- Bishop Farthing
+					["coord"] = { 39.2, 28, STORMWIND_CITY },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { ELWYNN_FOREST },
+					["races"] = { DWARF, HUMAN },
+					["lvl"] = 5,
+					["groups"] = {
+						objective(1, {	-- Pray over the Supplicant
+							["provider"] = { "n", 215062 },	-- Supplicant
+							["description"] = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
+						}),
+					},
+				})),
+				-- #endif
 				q(2206, {	-- Snatch and Grab
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
 					["sourceQuest"] = 2205,	-- Seek out SI:7
@@ -3407,6 +3489,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(204070, {	-- Soboz
+					-- TODO: Try to get an objectID for this.
+					--["provider"] = { "o",  },	-- Summoning Circle
+					["coord"] = { 25.8, 76.2, STORMWIND_CITY },
+					["cost"] = {
+						{ "i", 204905, 1 },	-- Ominous Tome
+						{ "i", 204906, 1 },	-- Gnoll Blood
+						{ "i", 204907, 1 },	-- Wolf Jawbone
+					},
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(204912, {	-- Rune of Grace
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(425477),	-- Engrave Pants - Demonic Grace
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(112958, {	-- Soulare of Andorhal
 					["description"] = "Emote |cFFFFFFFF/tired|r at him to get the toy.  Horde players can do this, too!",
 					["coord"] = { 38.2, 64.6, STORMWIND_CITY },
@@ -3442,15 +3545,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(410015),	-- Engrave Chest - Seal of Martyrdom
 					},
 				})),
-				applyclassicphase(SOD_PHASE_ONE, i(205683, {	-- Rune of Rebuke
-					["provider"] = { "n", 203475 },	-- Liv Bradford
-					["questID"] = 75300,	-- Stuart Credit HQT
-					["coord"] = { 22.6, 64.7, STORMWIND_CITY },
+				applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
+					["provider"] = { "o", 386777 },	-- Dusty Chest
+					["description"] = "Looting the chest will spawn 2 muggers. Beware!",
+					["coord"] = { 61.9, 29.3, STORMWIND_CITY },
 					["timeline"] = { "removed 2.0.1" },
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
 					["groups"] = {
-						recipe(425621),	-- Engrave Pants - Rebuke
+						recipe(400081),	-- Engrave Pants - Between the Eyes
 					},
 				})),
 			}),
@@ -4693,6 +4795,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				n(6122, {	-- Gakin the Darkbinder
+					["coord"] = { 25.6, 77.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						applyclassicphase(SOD_PHASE_ONE, i(205215, {	-- Rune of Tactics
+							["cost"] = {{ "i", 205183, 1 }},	-- Fel-Powered Artifact
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(416009),	-- Engrave Chest - Demonic Tactics
+							},
+						})),
+					},
+				}),
+				-- #endif
 				n(1333, {	-- Gerik Koen <Two Handed Weapon Merchant>
 					["coord"] = { 73.2, 57.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -5707,6 +5824,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(53991, {	-- Quincy Cutler <Owner and Proprietor>
 					["timeline"] = { "added 4.2.0.14313" },
 					["coord"] = { 64.0, 46.2, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(44679),	-- Red Wine Glass
 						i(44678),	-- Wine Glass

@@ -99,6 +99,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, {
 					["provider"] = { "n", 158553 },	-- Flutterby
 					["coord"] = { 33.9, 43.5, ARDENWEALD },
 					["g"] = {
+						i(184561),	-- Anima Embers (QI!)
 						i(181476),	-- Tribute of the Wild Hunt
 					},
 				}),

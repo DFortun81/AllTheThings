@@ -13,24 +13,24 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		ach(14797, {	-- Epic [Shadowlands]
 			["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_1_5 },
 		}),
-		ach(12547, {	-- Epic [Battle For Azeorth]
+		applyclassicphase(BFA_PHASE_ONE, ach(12547, {	-- Epic [Battle For Azeorth]
 			["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_2_LAUNCH },
-		}),
-		ach(10765, {	-- Brokenly Epic [Legion]
+		})),
+		applyclassicphase(LEGION_PHASE_ONE, ach(10765, {	-- Brokenly Epic [Legion]
 			["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
-		}),
-		ach(9708, {	-- Savagely Epic [Warlords Of Draenor]
+		})),
+		applyclassicphase(WOD_PHASE_ONE, ach(9708, {	-- Savagely Epic [Warlords Of Draenor]
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
-		}),
-		ach(6349, {	-- Mystically Epic [Mists of Pandaria]
+		})),
+		applyclassicphase(MOP_PHASE_ONE, ach(6349, {	-- Mystically Epic [Mists of Pandaria]
 			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_3_LAUNCH },
-		}),
-		ach(5372, {	-- Cataclysmically Epic [Cataclysm]
+		})),
+		applyclassicphase(CATA_PHASE_ONE, ach(5372, {	-- Cataclysmically Epic [Cataclysm]
 			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
-		}),
-		ach(556, {	-- Epic
+		})),
+		applyclassicphase(WRATH_PHASE_ONE, ach(556, {	-- Epic
 			["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3_LAUNCH },
-		}),
+		})),
 		------ Superior ------
 		ach(18976, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Draconically Superior
 			["sym"] = {{"achievement_criteria"}},
@@ -41,32 +41,41 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		ach(14796, {	-- Superior [Shadowlands]
 			["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_1_5 },
 		}),
-		ach(12546, {	-- Superior [Battle For Azeorth]
+		applyclassicphase(BFA_PHASE_ONE, ach(12546, {	-- Superior [Battle For Azeorth]
 			["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_9_0_2_LAUNCH },
-		}),
-		ach(10764, {	-- Brokenly Superior [Legion]
+		})),
+		applyclassicphase(LEGION_PHASE_ONE, ach(10764, {	-- Brokenly Superior [Legion]
 			["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
-		}),
-		ach(9707, {	-- Savagely Superior [Warlords Of Draenor]
+		})),
+		applyclassicphase(WOD_PHASE_ONE, ach(9707, {	-- Savagely Superior [Warlords Of Draenor]
 			["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
-		}),
-		ach(6348, {	-- Mystically Superior [Mists of Pandaria]
+		})),
+		applyclassicphase(MOP_PHASE_ONE, ach(6348, {	-- Mystically Superior [Mists of Pandaria]
 			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_3_LAUNCH },
-		}),
-		ach(5373, {	-- Cataclysmically Superior [Cataclysm]
+		})),
+		applyclassicphase(CATA_PHASE_ONE, ach(5373, {	-- Cataclysmically Superior [Cataclysm]
 			["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
-		}),
-		ach(557, {	-- Superior
+		})),
+		applyclassicphase(WRATH_PHASE_ONE, ach(557, {	-- Superior
 			["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3_LAUNCH },
-		}),
-		ach(5180),	-- Breaking The Sound Barrier
+		})),
+		applyclassicphase(CATA_PHASE_ONE, ach(5180, {	-- Breaking the Sound Barrier
+			["spellID"] = 90265,	-- Master Riding
+			["timeline"] = { "added 4.0.1" },
+			["rank"] = 5,
+		})),
 		ach(7380, {	-- Double Agent
 			["timeline"] = { "added 5.0.4" },
 		}),
 		ach(7382, {	-- Dynamic Duo
 			["timeline"] = { "added 5.0.4" },
 		}),
-		ach(889),	-- Fast and Furious
+		-- #if AFTER TBC
+		ach(889, {	-- Fast and Furious
+			["spellID"] = 33391,	-- Journeyman Riding
+			["rank"] = 2,
+		}),
+		-- #endif
 		ach(1176, {	-- Got My Mind On My Money [100g]
 			["timeline"] = { "added 3.0.1" },
 			["rank"] = 100,

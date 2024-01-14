@@ -170,6 +170,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(71191, {	-- Net Worth
 					["provider"] = { "n", 197700 },	-- Gruff Fisher
 					["coord"] = { 58.6, 34.4, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(200646),	-- Gruff Fisher's Net (QI!)
+					},
 				}),
 				q(72069, {	-- Subglacial Refill
 					["provider"] = { "n", 197700 },	-- Gruff Fisher
@@ -179,6 +182,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(71193, {	-- Underwater Menace
 					["provider"] = { "n", 197597 },	-- Cautious Fisher
 					["coord"] = { 57.2, 65.3, THALDRASZUS },
+					["g"] = {
+						i(200667),	-- Grim Morsel (QI!)
+					},
 				}),
 				q(72074, {	-- Highland Habitat
 					["provider"] = { "n", 197597 },	-- Cautious Fisher

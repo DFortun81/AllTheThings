@@ -455,6 +455,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(BURLY_BRAWL, {
+					["questID"] = 75300,	-- Burly Brawl HQT	-- TODO: Confirm if this is the same HQT.
+					["qgs"] = {
+						5570,	-- Bruuk Barleybeard <Bartender>
+						209004,	-- Bruart
+					},
+					["coord"] = { 72.2, 76.6, IRONFORGE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PALADIN, WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(204716, {	-- Rune of Frenzied Assault
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425447),	-- Engrave Pants - Frenzied Assault
+							},
+						}),
+						i(205683, {	-- Rune of Rebuke
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(425621),	-- Engrave Pants - Rebuke
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(29355, {	-- Can't Get Enough Spice Bread
 					["qg"] = 5159,	-- Daryl Riknussun
 					["coord"] = { 60.1, 36.4, IRONFORGE },
@@ -1199,6 +1226,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+			}),
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(203754, {	-- Archmage Antonidas: The Unabridged Autobiography
+					["provider"] = { "o", 386691 },	-- Library Book
+					["coord"] = { 75.7, 10.5, IRONFORGE },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
+					["provider"] = { "o", 405946 },	-- Dusty Chest
+					["description"] = "Looting the chest will spawn 2 muggers. Beware!",
+					["coord"] = { 51.9, 12.8, IRONFORGE },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400081),	-- Engrave Pants - Between the Eyes
+					},
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {

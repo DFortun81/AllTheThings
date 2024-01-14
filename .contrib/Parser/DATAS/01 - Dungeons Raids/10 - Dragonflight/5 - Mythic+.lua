@@ -34,19 +34,19 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 		}),
 		currency(WHELPLINGS_DREAMING_CREST, {
 		--	["description"] = "Drops in M+ 2-5.",	-- Blizzard added description
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
 		}),
 		currency(DRAKES_DREAMING_CREST, {
 		--	["description"] = "Drops in M+ 6-10",	-- Blizzard added description
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
 		}),
 		currency(WYRMS_DREAMING_CREST, {
 		--	["description"] = "Drops in M+ 11-15",	-- Blizzard added description
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
 		}),
 		currency(ASPECTS_DREAMING_CREST, {
 		--	["description"] = "Drops in M+ 16+",	-- Blizzard added description
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
 		}),
 		header(HEADERS.Achievement, SEASON_THUNDERING, bubbleDownSelf({
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }
@@ -130,7 +130,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 			}),
 		})),
 		header(HEADERS.Achievement, SEASON_DREAMING, bubbleDownSelf({
-			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 },
+			["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6 },
 		},{
 			ach(19009),		-- Dragonflight Keystone Explorer: Season Three
 			ach(19010, {	-- Dragonflight Keystone Conqueror: Season Three

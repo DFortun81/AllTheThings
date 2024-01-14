@@ -364,8 +364,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(62, 62, 10),
 						-- #if NOT ANYCLASSIC
-						-- TODO: Investigate if this is necessary, we have maxReputation.
-						["lockCriteria"] = { 1, "factionID", 970.5 },	-- Sporeggar, Friendly StandingID
+						["lockCriteria"] = { 1, "factionID", 970.5 },	-- Sporeggar, Friendly
 						-- #endif
 					}),
 					q(50131, {	-- An Outside Perspective
@@ -381,8 +380,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(62, 62, 10),
 						-- #if NOT ANYCLASSIC
-						-- TODO: Investigate if this is necessary, we have maxReputation already.
-						["lockCriteria"] = { 1, "factionID", 970.4 },	-- Sporeggar, Neutral StandingID
+						["lockCriteria"] = { 1, "factionID", 970.4 },	-- Sporeggar, Neutral
 						-- #endif
 					}),
 					q(9788, {	-- A Damp, Dark Place
@@ -525,6 +523,9 @@ root(ROOTS.Zones, {
 						["cost"] = { { "i", 24368, 1 } },	-- Coilfang Armaments
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(67, 67, 20),
+						-- #if NOT ANYCLASSIC
+						["lockCriteria"] = { 1, "factionID", 942.8 },	-- Cenarion Expedition, Exalted
+						-- #endif
 					}),
 					q(10104, {	-- Concerns About Tuurem
 						["qg"] = 18008,	-- Ikuti
@@ -634,6 +635,9 @@ root(ROOTS.Zones, {
 						["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
 						["cost"] = { { "i", 24245, 10 } },	-- Glowcap
 						["lvl"] = lvlsquish(62, 62, 10),
+						-- #if NOT ANYCLASSIC
+						["lockCriteria"] = { 1, "factionID", 970.5 },	-- Sporeggar, Friendly
+						-- #endif
 					}),
 					q(9816, {	-- Have You Ever Seen One of These?
 						["qg"] = 18014,	-- Witch Doctor Tor'gash
@@ -654,6 +658,9 @@ root(ROOTS.Zones, {
 						["maxReputation"] = { 942, HONORED },	-- Cenarion Expedition, Honored.
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(60, 60, 10),
+						-- #if NOT ANYCLASSIC
+						["lockCriteria"] = { 1, "factionID", 942.6 },	-- Cenarion Expedition, Honred
+						-- #endif
 						["groups"] = {
 							i(24402, {	-- Package of Identified Plants
 								i(24407),	-- Uncatalogued Species
@@ -793,6 +800,9 @@ root(ROOTS.Zones, {
 						["cost"] = { { "i", 24449, 6 } },	-- Fertile Spore
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(62, 62, 10),
+						-- #if NOT ANYCLASSIC
+						["lockCriteria"] = { 1, "factionID", 970.8 },	-- Sporeggar, Exalted
+						-- #endif
 					}),
 					q(9809, {	-- More Glowcaps
 						["qg"] = 17924,	-- Mshii'fn
@@ -802,6 +812,9 @@ root(ROOTS.Zones, {
 						["cost"] = { { "i", 24245, 10 } },	-- Glowcap
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(62, 62, 10),
+						-- #if NOT ANYCLASSIC
+						["lockCriteria"] = { 1, "factionID", 970.5 },	-- Sporeggar, Friendly
+						-- #endif
 					}),
 					q(9742, {	-- More Spore Sacs
 						["qg"] = 17923,	-- Fahssn
@@ -810,6 +823,9 @@ root(ROOTS.Zones, {
 						["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(61, 61, 10),
+						-- #if NOT ANYCLASSIC
+						["lockCriteria"] = { 1, "factionID", 970.5 },	-- Sporeggar, Friendly
+						-- #endif
 					}),
 					q(9744, {	-- More Tendrils!
 						["qg"] = 17923,	-- Fahssn
@@ -819,6 +835,9 @@ root(ROOTS.Zones, {
 						["cost"] = { { "i", 24291, 6 } },	-- Bog Lord Tendril
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(61, 61, 10),
+						-- #if NOT ANYCLASSIC
+						["lockCriteria"] = { 1, "factionID", 970.5 },	-- Sporeggar, Friendly
+						-- #endif
 					}),
 					q(9834, {	-- Natural Armor
 						["qg"] = 18010,	-- Maktu
@@ -882,6 +901,9 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(62, 62, 10),
+						-- #if NOT ANYCLASSIC
+						["lockCriteria"] = { 1, "factionID", 970.8 },	-- Sporeggar, Exalted
+						-- #endif
 					}),
 					q(9701, {	-- Observing the Sporelings
 						["qg"] = 17831,	-- Watcher Leesa'oh
@@ -1215,6 +1237,9 @@ root(ROOTS.Zones, {
 						["maxReputation"] = { 942, HONORED },	-- Cenarion Expedition, Honored.
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(60, 60, 10),
+						-- #if NOT ANYCLASSIC
+						["lockCriteria"] = { 1, "factionID", 942.5 },	-- Cenarion Expedition, Honored
+						-- #endif
 					}),
 					q(9901, {	-- Unfinished Business
 						["qg"] = 18295,	-- Prospector Conall

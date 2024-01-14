@@ -25,6 +25,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(134670),	-- Auxiliary's Cowl					(Removed)
 			ig(134787),	-- Entrenched Cowl					(Removed)
 			ig(19105),	-- Frost Runed Headdress			(Removed)
+			ig(10782),	-- Hakkari Shroud					(Removed)
 			ig(134615),	-- Inflammatory Hood				(Removed)
 
 			ig(105810),	-- Buc-Zakai Burning Hood			(Ordos)
@@ -65,6 +66,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(108189),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108197),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108205),	-- Peerless Draenic Steel Helm		(NYI)
+			ig(108181),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(114266),	-- Ruby Plate Greathelm				(NYI)
 
 			ig(134630),	-- Firescored Helm					(Removed)
@@ -78,6 +80,8 @@ local QUANTUM_GROUP = sharedData({
 	i(208062, {	-- Quantum Shoulders
 		filter(CLOTH, {
 			ig(114271),	-- Firefly Mantle					(NYI)
+			ig(3958),	-- Mesh Mantle						(NYI)
+			ig(34107),	-- Tattered Shoulderpads			(NYI)
 
 			ig(134672),	-- Auxiliary's Amice				(Removed)
 			ig(134696),	-- Cascading Amice					(Removed)
@@ -102,15 +106,18 @@ local QUANTUM_GROUP = sharedData({
 		filter(MAIL, {
 			ig(18320),	-- Demonheart Spaulders				(NYI)
 			ig(114273),	-- Leafscale Spaulders				(NYI)
+			ig(4014),	-- Sterling Chain Shoulderpads		(NYI)
 
 			ig(134734),	-- Frigidlink Spaulders				(Removed)
 			ig(134765),	-- Overgrown Shoulderguards			(Removed)
 			ig(134706),	-- Surging Spaulders				(Removed)
+			ig(19111),	-- Winteraxe Epaulets				(Removed)
 
 			ig(105800),	-- Firearrow Shoulderpads			(Ordos)
 			ig(105799),	-- Fleshsmoke Chain Shoulders		(Ordos)
 		}),
 		filter(PLATE, {
+			ig(108083),	-- Hardened Draenic Steel Shoulders	(NYI)
 			ig(108215),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(114274),	-- Ruby Plate Shoulderguard			(NYI)
 
@@ -157,6 +164,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(114252), -- Leafscale Chestguard				(NYI)
 
 			ig(134732),	-- Frigidlink Armor					(Removed)
+			ig(2273),	-- Guerrilla Armor					(Removed)
 			ig(134795),	-- Ironbranded Chainmail			(Removed)
 			ig(134763),	-- Overgrown Armor					(Removed)
 
@@ -164,8 +172,11 @@ local QUANTUM_GROUP = sharedData({
 			ig(105772),	-- Moonhee's Mean Vest				(Ordos)
 		}),
 		filter(PLATE, {
-			ig(108078),	-- Hardened Draenic Steel Chestplate(NYI)
-			ig(108218),	-- Peerless Draeneic Steel Chest	(NYI)
+			ig(108078),	-- Hardened Draenic Steel Chestplate	(NYI)
+			ig(108186),	-- Peerless Draenic Steel Chestplate	(NYI)
+			ig(108202),	-- Peerless Draenic Steel Chestplate	(NYI)
+			ig(108210),	-- Peerless Draenic Steel Chestplate	(NYI)
+			ig(108218),	-- Peerless Draenic Steel Chestplate	(NYI)
 			ig(114253),	-- Ruby Plate Breastplate			(NYI)
 			ig(114316),	-- Salt-Scorched Breastplate		(NYI)
 
@@ -215,8 +226,14 @@ local QUANTUM_GROUP = sharedData({
 			ig(108204),	-- Peerless Draenic Steel Guantlets	(NYI)
 			ig(108212),	-- Peerless Draenic Steel Guantlets	(NYI)
 			ig(108220),	-- Peerless Draenic Steel Guantlets	(NYI)
+			ig(113219, {	-- Romy's Reliable Grips		(NYI)
+				["modID"] = 4,	-- should be soruceID 62173
+			}),
 			ig(114262),	-- Ruby Plate Gauntlets				(NYI)
 			ig(156752),	-- Skullbreaker Gauntlets			(NYI)
+			ig(113229, {	-- Zoid's Molten Gauntlets		(NYI)
+				["modID"] = 4, -- should be sourceID 62197
+			}),
 
 			ig(20653),	-- Abyssal Plate Gauntlets			(Removed)
 			ig(134736),	-- Chillplate Gauntlets				(Removed)
@@ -252,10 +269,12 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(MAIL, {
 			ig(114393),	-- Element-Binder Legguards			(NYI)
+			ig(189943),	-- Greaves of Cosmic Designs		(NYI)
 			ig(114269),	-- Leafscale Legguards				(NYI)
 			ig(147515, {	-- Hellblaze Invader's Greaves	(NYI)
 				["modID"] = 2, -- Heroic dungeon
 			}),
+			ig(4013),	-- Sterling Chain Pants				(NYI)
 			ig(121512),	-- Stormborn Leggings				(NYI)
 
 			ig(134681),	-- Greenhorn's Legguards			(Removed)
@@ -272,6 +291,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(114394),	-- Legplates of Grievous Storms		(NYI)
 			ig(108214),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(108222),	-- Peerless Draenic Steel Legguards	(NYI)
+			ig(108206),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(114270),	-- Ruby Plate Legplates				(NYI)
 
 			ig(134768),	-- Concealment Legplates			(Removed)
@@ -306,6 +326,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(186414, {	-- Rae'shalare, Death's Whisper (Mythic)	(NYI)
 			["bonusID"] = 450,
 		}),
+		ig(115294),	-- Spectral Longbow						(NYI)
 
 		ig(134608),	-- Scorching Longbow					(Removed)
 	}),
@@ -314,6 +335,8 @@ local QUANTUM_GROUP = sharedData({
 		ig(134580),	-- Vanguard Heavy Crossbow				(Removed)
 	}),
 	i(208119, {	-- Quantum Firearm
+		i(110591),	-- Flintlocke's Blasthammer				(NYI)
+
 		ig(134720),	-- Cold-Touched Rifle					(Removed)
 		ig(134749),	-- Covert Rifle							(Removed)
 		ig(56376),	-- Thundercall							(Removed)
@@ -342,13 +365,14 @@ local QUANTUM_GROUP = sharedData({
 
 		ig(39769),	-- Arcanite Ripper						(BMAH)(Unique)
 		ig(44924),	-- Sun Lute								(BMAH)(Unique)
-
-		ig(9425),	-- Pendumlum of Doom					(Very Rare BoE)(Unique)
 	}),
 	i(208114, {	-- Quantum Greathammer	(Two-Handed)(Mace)
 	}),
 	i(208112, {	-- Quantum Greatsword	(Two-Handed)
 		ig(134746),	-- Covert Greatsword					(Removed)
+		ig(186410, {	-- Jaithys, the Prison Blade		(Removed)
+			["modID"] = 2, -- Heroic raid
+		}),
 		ig(186410, {	-- Jaithys, the Prison Blade		(Removed)
 			["modID"] = 6, -- Mythic raid
 		}),
@@ -360,14 +384,18 @@ local QUANTUM_GROUP = sharedData({
 		ig(108150),	-- Hardened Draeneic Steel Dagger		(NYI)
 		ig(108235),	-- Peerless Draenic Steel Dagger		(NYI)
 		ig(108236),	-- Peerless Draenic Steel Dagger		(NYI)
+		ig(108234),	-- Peerless Draenic Steel Dagger		(NYI)
+		ig(115295),	-- Spectral Dagger						(NYI)
 		ig(2664),	-- Spinner Fang							(NYI)
 		ig(3222),	-- Wicked Dagger						(NYI)
-		ig(2664),	--										(NYI/UNIQUE) 
+		ig(2664),	--										(NYI/UNIQUE)
 
 		ig(14151),	-- Chanting Blade						(Removed)
 		ig(134718),	-- Cold-Touched Shanker					(Removed)
 		ig(134748),	-- Covert Shanker						(Removed)
 		ig(37597),	-- Direbrew's Shanker [Level 70]		(Removed)
+		ig(66540),	-- Miniature Winter Veil Tree			(Removed)
+		ig(2941),	-- Prison Shank							(Removed)
 		ig(134610),	-- Scorching Shanker					(Removed)
 		ig(134779),	-- Seasoned Shanker						(Removed)
 		ig(134581),	-- Vanguard Shanker						(Removed)
@@ -387,6 +415,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(108238),	-- Peerless Draenic Steel Mace			(NYI)
 		ig(108240),	-- Peerless Draenic Steel Mace			(NYI)
 		ig(108241),	-- Peerless Draenic Steel Mace			(NYI)
+		ig(108239),	-- Peerless Draenic Steel Mace			(NYI)
 		ig(115299),	-- Spectral Scepter						(NYI)
 		ig(115296),	-- Spectral Warmace						(NYI)
 
@@ -398,19 +427,25 @@ local QUANTUM_GROUP = sharedData({
 		ig(134611),	-- Scorching Pummeler					(Removed)
 		ig(134789),	-- Seasoned Gavel						(Removed)
 		ig(134781),	-- Seasoned Pummeler					(Removed)
+		ig(22322),	-- The Jaw Breaker						(Removed)
 		ig(134588),	-- Vanguard Gavel						(Removed)
 	}),
 	i(208116, {	-- Quantum Polearm
 		ig(115297),	-- Spectral Polearm 					(NYI)
 
+		ig(6679),	-- Armor Piercer						(Removed)
 		ig(134750),	-- Covert Pike							(Removed)
 		ig(134612),	-- Scorching Pike						(Removed)
 		ig(134782),	-- Seasoned Pike						(Removed)
 	}),
 	i(208126, {	-- Quantum Shield
+		ig(108062),	-- Draenic Steel Bulwark				(NYI)
+		ig(108158),	-- Hardened Draenic Steel Bulwark		(NYI)
 		ig(18303),	-- Nimble Buckler						(NYI)
 		ig(108242),	-- Peerless Draenic Steel Bulwark		(NYI)
 		ig(108245),	-- Peerless Draenic Steel Bulwark		(NYI)
+		ig(3988),	-- Plate Wall Shield					(NYI)
+		ig(3991),	-- Plated Buckler						(NYI)
 
 		ig(134741),	-- Cold-Touched Barrier 				(Removed)
 		ig(134774),	-- Covert Barrier 						(Removed)
@@ -424,7 +459,6 @@ local QUANTUM_GROUP = sharedData({
 	i(208115, {	-- Quantum Staff
 		ig(115298),	-- Spectral Spire 						(NYI)
 
-		ig(6679),	-- Armor Piercer						(Removed)
 		ig(134721),	-- Cold-Touched Staff 					(Removed)
 		ig(1388),	-- Crooked Staff						(Removed)
 		ig(119409),	-- Icebound Bloodmaul Spire				(Removed)
@@ -443,6 +477,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(134725),	-- Cold-Touched Mageblade 				(Removed)
 		ig(134726),	-- Cold-Touched Sword 					(Removed)
 		ig(134758),	-- Covert Mageblade 					(Removed)
+		ig(14145),	-- Cursed Felblade						(Removed)
 		ig(134783),	-- Seasoned Quickblade 					(Removed)
 	}),
 	i(208122, {	-- Quantum Warglaives
@@ -1055,10 +1090,10 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- q(77598),	-- when you learn everything from Quantum ?
 		-- q(77599),	-- when you learn everything from Quantum ?
 		q(77600),	-- when you learn everything from Quantum Greathammer (Two-Handed)(Mace)
-		-- q(77601),	-- when you learn everything from Quantum ?
+		q(77601),	-- when you learn everything from Quantum Staff
 		-- q(77602),	-- when you learn everything from Quantum ?
 		-- q(77603),	-- when you learn everything from Quantum ?
-		-- q(77604),	-- when you learn everything from Quantum ?
+		q(77604),	-- when you learn everything from Quantum Crossbow
 		-- q(77605),	-- when you learn everything from Quantum ?
 		-- q(77606),	-- when you learn everything from Quantum ?
 		q(77607),	-- when you learn everything from Quantum Knuckles
@@ -1067,11 +1102,11 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(77610),	-- when you learn everything from Quantum Wand
 		-- q(77611),	-- when you learn everything from Quantum ?
 		-- q(77622),	-- when you learn everything from Quantum ?
-		-- q(77623),	-- when you learn everything from Quantum ?
+		q(77623),	-- when you learn everything from Quantum Legs (Mail / Hunter)
 		q(77624),	-- when you learn everything from Quantum Legs (Leather / Druid)
 		-- q(77625),	-- when you learn everything from Quantum ?
 		-- q(77626),	-- when you learn everything from Quantum ?
-		-- q(77627),	-- when you learn everything from Quantum ?
+		q(77627),	-- when you learn everything from Quantum Headpiece (Mail / Hunter)
 		q(77628),	-- when you learn everything from Quantum Headpiece (Leather / Druid)
 		-- q(77629),	-- when you learn everything from Quantum ?
 		q(77630),	-- when you learn everything from Quantum Gloves (Plate / Warrior)
@@ -1079,7 +1114,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- q(77632),	-- when you learn everything from Quantum ?
 		-- q(77633),	-- when you learn everything from Quantum ?
 		-- q(77634),	-- when you learn everything from Quantum ?
-		-- q(77635),	-- when you learn everything from Quantum ?
+		q(77635),	-- when you learn everything from Quantum Chestpiece (Mail / Hunter)
 		q(77636),	-- when you learn everything from Quantum Chestpiece (Leather / Druid)
 		-- q(77637),	-- when you learn everything from Quantum ?
 		-- q(77638),	-- when you learn everything from Quantum ?

@@ -99,6 +99,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(208838, {	-- Dark Iron Lockbox
+						["coord"] = { 56.6, 14.0, LOCH_MODAN },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							1222,	-- Dark Iron Sapper
+							1169,	-- Dark Iron Insurgent
+						},
+						["groups"] = {
+							i(208771, {	-- Rune of Blade Dance
+								["classes"] = { ROGUE },
+								["groups"] = {
+									recipe(400099),	-- Engrave Pants - Blade Dance
+								},
+							}),
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(250, {	-- A Dark Threat Looms (1/7)
 					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
@@ -1545,6 +1568,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209958, {	-- Graix
+					["provider"] = { "n", 209954 },	-- Demonic Remains
+					["coord"] = { 72.6, 68.8, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["groups"] = {
+						i(208744, {	-- Rune of Shadowbolts
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(45398, {	-- Grizlak <Associate Troggwhacker>
 					["coord"] = { 35.6, 15.6, LOCH_MODAN },
 					["timeline"] = { "added 4.0.3.13277" },
@@ -1568,6 +1607,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(210107, {	-- Kackle
+					["coord"] = { 55.0, 55.4, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(208777, {	-- Rune of the Sniper
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(416091),	-- Engrave Pants - Sniper Training
+							},
+						}),
+					},
+				})),
+				-- #endif
 				-- #if BEFORE 4.0.3
 				n(2476, {  -- Large Loch Crocolisk / Gosh-Haldir [CATA+]
 					["coords"] = {
@@ -1670,6 +1724,78 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(208689, {	-- Ferocious Idol
+					["provider"] = { "o", 408004 },	-- Tangled Blight Pile
+					["coord"] = { 71.8, 21.6, LOCH_MODAN },
+					["classes"] = { DRUID },
+					["groups"] = {
+						recipe(410023),	-- Engrave Pants - Savage Roar
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205905, {	-- Memory of a Devout Champion
+					["coord"] = { 36.6, 20.8, LOCH_MODAN },
+					["cost"] = {{ "i", 208823, 1 }},	-- Offering Coin
+					["classes"] = { PRIEST },
+					["groups"] = {
+						recipe(425215),	-- Engrave Chest - Twisted Faith
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, o(407983, {	-- Pile of Stolen Books
+					["coord"] = { 54.2, 27.0, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["groups"] = {
+						i(208754, {	-- Spell Notes: TENGI RONEERA
+							["classes"] = { MAGE },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
+					["provider"] = { "n", 209908 },	-- Heretic Idol
+					["description"] = "/kneel at the statue for the rune.",
+					["coord"] = { 71.8, 27.6, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PRIEST },
+					["groups"] = {
+						recipe(402849),	-- Engrave Gloves - Shadow Word - Death
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208860, {	-- Rumi of Gnomeregan: The Collected Works
+					["provider"] = { "o", 408014 },	-- Gnomish Tome
+					["coord"] = { 35.6, 48.9, LOCH_MODAN },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208701, {	-- Rune of Beast Mastery
+					["provider"] = { "o", 407918 },	-- Empty Trophy Display
+					["coord"] = { 83.6, 65.5, LOCH_MODAN },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						recipe(410110),	-- Engrave Gloves - Beast Mastery
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208687, {	-- Rune of Lacerate
+					["providers"] = {
+						{ "n",   1224 },	-- Young Threshadon
+						{ "i", 208855 },	-- Rainbow Fin Albacore Chum
+					},
+					["description"] = "Use Rainbow Fin Albacore Chum on a young threshadon to receive this rune.",
+					["coord"] = { 44.8, 39.2, LOCH_MODAN },
+					["classes"] = { DRUID },
+					["groups"] = {
+						recipe(416049),	-- Engrave Gloves - Lacerate
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
+					["provider"] = { "o", 407731 },	-- Stonemason's Toolbox
+					["coord"] = { 46.5, 12.7, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(424984),	-- Engrave Gloves - Saber Slash
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209850, {	-- Runes of the Sorcerer-Kings
+					["provider"] = { "o", 409731 },	-- Scrolls
+					["coord"] = { 77.5, 14.1, LOCH_MODAN },
+				})),
 				applyclassicphase(SOD_PHASE_ONE, o(407850, {	-- Sunken Reliquary
 					["coord"] = { 36.8, 91.4, LOCH_MODAN },
 					["timeline"] = { "removed 2.0.1" },
@@ -1737,11 +1863,42 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 40.4, 39.4, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(208855, {	-- Rainbow Fin Albacore Chum
+							["classes"] = { DRUID },
+							["cost"] = 526,	-- 5s 26c
+						})),
+						-- #endif
 						i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 						i(6329),	-- Recipe: Loch Frenzy Delight (RECIPE!)
 						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				n(3291, {	-- Greishan Ironstove <Traveling Merchant>
+					["coords"] = {
+						{ 23.0, 70.4, LOCH_MODAN },
+						{ 27.6, 65.8, LOCH_MODAN },
+						{ 30.6, 58.0, LOCH_MODAN },
+						{ 34.6, 47.2, LOCH_MODAN },
+						{ 26.6, 22.6, LOCH_MODAN },
+					},
+					["groups"] = {
+						applyclassicphase(SOD_PHASE_ONE, i(208833, {	-- Malevolent Pie
+							["classes"] = { WARLOCK },
+							["cost"] = 526,	-- 5s 26c
+							["groups"] = {
+								i(208750, {	-- Rune of Channeling
+									["classes"] = { WARLOCK },
+									["groups"] = {
+										recipe(403932),	-- Engrave Chest - Master Channeler
+									},
+								}),
+							},
+						})),
+					},
+				}),
+				-- #endif
 				n(167, {	-- Morhan Coppertongue <Metalsmith>
 					["coord"] = { 34.0, 46.6, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
@@ -1815,6 +1972,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208843, {	-- Battle Totem
+					["timeline"] = { "removed 2.0.1" },
+					["coords"] = {
+						{ 79.6, 16.0, LOCH_MODAN },
+						{ 76.6, 16.0, LOCH_MODAN },
+					},
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						1180,	-- Mo'grosh Brute
+						1179,	-- Mo'grosh Enforcer
+						1183,	-- Mo'grosh Mystic
+						1178,	-- Mo'grosh Ogre
+						1181,	-- Mo'grosh Shaman
+					},
+				})),
+				-- #endif
 				-- #if ANYCLASSIC
 				i(3173, {	-- Bear Meat
 					["coord"] = { 29.2, 53.0, LOCH_MODAN },
@@ -1833,6 +2007,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1192,	-- Elder Mountain Boar
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208854, {	-- Chewed Spell Notes
+					["coords"] = {
+						{ 29.8, 84.6, LOCH_MODAN },
+						{ 36.6, 84.4, LOCH_MODAN },
+						{ 49.0, 21.6, LOCH_MODAN },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { MAGE },
+					["cr"] = 1166,  -- Stonesplinter Seer
+				})),
+				-- #endif
 				i(769, {	-- Chunk of Boar Meat
 					["coord"] = { 37.0, 34.4, LOCH_MODAN },
 					["crs"] = {
@@ -1908,6 +2094,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208823, {	-- Offering Coin
+					["timeline"] = { "removed 2.0.1" },
+					["coords"] = {
+						{ 35.6, 20.0, LOCH_MODAN },
+						{ 35.8, 27.4, LOCH_MODAN },
+					},
+					["classes"] = { PRIEST },
+					["crs"] = {
+						1175,	-- Tunnel Rat Digger
+						1174,	-- Tunnel Rat Geomancer
+						1177,	-- Tunnel Rat Surveyor
+					},
+				})),
+				-- #endif
 				i(4949, {	-- Orcish Cleaver
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
@@ -1992,12 +2193,53 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208741, {	-- Rune of Endless Rage
+					["provider"] = { "i", 208843 },	-- Battle Totem
+					["description"] = "You can challenge him to a duel (as to not fight his adds) with a Battle Totem.",
+					["coords"] = {
+						{ 55.2, 68.2, LOCH_MODAN },
+						{ 66.0, 37.8, LOCH_MODAN },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["cr"] = 2478,  -- Haren Swifthoof <Horde Runner>
+					["groups"] = {
+						recipe(403489),	-- Engrave Gloves - Endless Rage
+					},
+				})),
+				-- #endif
 				-- #if BEFORE 4.0.3
 				-- Moved to Searing Gorge in 10.1.7
 				i(2274, {	-- Sapper's Gloves
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 1222,  -- Dark Iron Sapper
 				}),
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208847, {	-- Skull-Shaped Geode
+					["coord"] = { 33.2, 73.8, LOCH_MODAN },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						1164,	-- Stonesplinter Bonesnapper
+						1162,	-- Stonesplinter Scout
+						1161,	-- Stonesplinter Trogg
+					},
+					["groups"] = {
+						i(208778, {	-- Rune of Quick Strike
+							["provider"] = { "i", 208848 },	-- Cracked Skull-Shaped Geode
+							["description"] = "Use the Skull-Shaped Geode on a Skullthumper to crack it and find this rune within.",
+							["classes"] = { WARRIOR },
+							["cr"] = 1163,	-- Stonesplinter Skullthumper
+							["groups"] = {
+								recipe(425443),	-- Engrave Gloves - Quick Strike
+							},
+						}),
+					},
+				})),
 				-- #endif
 				i(2265, {	-- Stonesplinter Axe
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023

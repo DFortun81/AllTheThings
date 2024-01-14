@@ -272,6 +272,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			-- #endif
 		},
 		-- #endif
+		["timeline"] = { ADDED_3_1_0, REMOVED_4_0_3 },
 		["classes"] = { PALADIN },
 		["f"] = 100,
 	}),

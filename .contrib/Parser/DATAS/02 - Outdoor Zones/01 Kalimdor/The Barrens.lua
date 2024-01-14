@@ -121,6 +121,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Drops from fishing in the Sludge Fen.",
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			spell(921, {	-- Pickpocketing
+				["classes"] = { ROGUE },
+				["groups"] = {
+					applyclassicphase(SOD_PHASE_ONE, i(208768, {	-- Buccaneer's Matchbox
+						["coord"] = { 63.6, 49.2, THE_BARRENS },
+						["classes"] = { ROGUE },
+						["crs"] = {
+							3384,	-- Southsea Privateer
+							3383,	-- Southsea Cutthroat
+							3381,	-- Southsea Brigand
+							3382,	-- Southsea Cannoneer
+						},
+					})),
+				},
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(1153, {	-- A New Ore Sample
 					["qg"] = 3433,	-- Tatternack Steelforge
@@ -2020,6 +2037,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78702, {	-- Raszel Ander
+					["qg"] = 6247,	-- Doan Karhan
+					["sourceQuest"] = 78684,	-- Mysterious Traveler
+					["coord"] = { 49.2, 57.2, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["lvl"] = 20,
+					["groups"] = {
+						i(210980, {	-- Rune of Metamorphosis
+							["classes"] = { WARLOCK },
+							["groups"] = {
+								recipe(403938),	-- Engrave Gloves - Metamorphosis
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(5046, {	-- Razorhide
 					["qg"] = 3430,	-- Mangletooth
 					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
@@ -2173,6 +2208,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(5341),	-- Spore-Covered Tunic
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78680, {	-- Rumors Abound
+					["qg"] = 6247,	-- Doan Karhan
+					["sourceQuest"] = 1740,	-- The Orb of Soran'ruk
+					["coord"] = { 49.2, 57.2, THE_BARRENS },
+					["description"] = "Climb each of the towers, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { REDRIDGE_MOUNTAINS, DARKSHORE },
+					["classes"] = { WARLOCK },
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/1 Orb of Des
+							["providers"] = {
+								{ "i", 210765 },	-- Orb of Des
+								{ "o", 411710 },	-- Orb of Des
+							},
+							["coord"] = { 80.2, 49.5, REDRIDGE_MOUNTAINS },
+						}),
+						objective(2, {	-- 0/1 Bough of Altek
+							["providers"] = {
+								{ "i", 210763 },	-- Bough of Altek
+								{ "o", 411715 },	-- Bough of Altek
+							},
+							["coord"] = { 56.3, 26.4, DARKSHORE },
+						}),
+					},
+				})),
+				-- #endif
 				q(894, {	-- Samophlange (1/4)
 					["providers"] = {
 						{ "n", 3442 },	-- Sputtervalve
@@ -2842,6 +2905,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78681, {	-- The Conjuring
+					["providers"] = {
+						{ "n",   6247 },	-- Doan Karhan
+						{ "o", 412224 },	-- Dark Ritual Stone
+					},
+					["sourceQuest"] = 78680,	-- Rumors Abound
+					["description"] = "After obtaining the blood, interact with the altar near the obelisk dedicated to Grommash Hellscream to begin a ritual, summoning a few waves of demons that must be defeated using Drain Soul while standing inside the purple rune on the ground. Defeat the final Searing Infernal this way to cause the Mysterious Traveler to appear.",
+					["coords"] = {
+						{ 49.2, 57.2, THE_BARRENS },
+						{ 79.0, 80.3, ASHENVALE },
+					},
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/10 Blood of the Legion
+							["provider"] = { "i", 210966 },	-- Blood of the Legion
+							["coord"] = { 84.2, 71.6, ASHENVALE },
+							["crs"] = {
+								11697,	-- Mannoroc Lasher
+								6115,	-- Felguard
+								6073,	-- Searing Infernal
+								6071,	-- Legion Hound
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(872, {	-- The Disruption Ends / The Far Watch Offensive [CATA+]
 					-- #if AFTER CATA
 					["qg"] = 3337,	-- Kargal Battlescar
@@ -3561,6 +3653,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209797, {	-- Bruuz
+					["coord"] = { 64.8, 39.8, THE_BARRENS },
+					["cost"] = {{ "i", 208773, 1 }},	-- Fishing Harpoon
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR, HUNTER },
+					["groups"] = {
+						i(208777, {	-- Rune of the Sniper
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(416091),	-- Engrave Pants - Sniper Training
+							},
+						}),
+						i(208778, {	-- Rune of Quick Strike
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425443),	-- Engrave Gloves - Quick Strike
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(5851, {	-- Captain Gerogg Hammertoe <Bael'dun Captain of the Guard>
 					-- #if AFTER CATA
 					["coord"] = { 49.8, 89.6, SOUTHERN_BARRENS },
@@ -3569,6 +3683,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209742, {	-- Desert Mirage
+					["description"] = "Cast Dispel or Purge on it.",
+					["coord"] = { 55.0, 35.4, THE_BARRENS },
+					["classes"] = { PRIEST, SHAMAN },
+					["groups"] = {
+						i(208758, {	-- Earthen Rune
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(410107),	-- Engrave Pants - Way of Earth
+							},
+						}),
+						i(205932, {	-- Prophecy of a King's Demise
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(402849),	-- Engrave Gloves - Shadow Word - Death
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(5849, {	-- Digger Flameforge <Excavation Specialist>
 					-- #if AFTER CATA
 					["coord"] = { 47.8, 88.2, SOUTHERN_BARRENS },
@@ -3711,6 +3848,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.0, 33.6, THE_BARRENS },
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209607, {	-- Lieutenant Stonebrew
+					["providers"] = {
+						{ "i", 208739 },	-- Horde Warbanner
+						{ "o", 407291 },	-- Alliance Warbanner
+					},
+					["coord"] = { 62.6, 56.2, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(208741, {	-- Rune of Endless Rage
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(403489),	-- Engrave Gloves - Endless Rage
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(5848, {	-- Malgin Barleybrew <Bael'dun Morale Officer>
 					-- #if AFTER CATA
 					["coord"] = { 47.4, 85.8, SOUTHERN_BARRENS },
@@ -3719,6 +3874,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(209524, {	-- Patrolling Cheetah
+					["description"] = "Drop a trap in its path to remove its speed buff.",
+					["coord"] = { 44.4, 55.4, THE_BARRENS },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						i(208701, {	-- Rune of Beast Mastery
+							["classes"] = { HUNTER },
+							["groups"] = {
+								recipe(410110),	-- Engrave Gloves - Beast Mastery
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(3470, {	-- Rathorian
 					-- #if AFTER CATA
 					["coord"] = { 41.6, 39.6, NORTHERN_BARRENS },
@@ -3897,6 +4067,135 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(5425),	-- RuneChain Girdle [7.0.3+] / Runescale Girdle
 						i(5426),	-- Serpent's Kiss
 					},
+				}),
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(208682, {	-- Abandoned Snapjaw Egg
+					["provider"] = { "o", 407117 },	-- Abandoned Snapjaw Nest
+					["coord"] = { 44, 22, THE_BARRENS },
+					["classes"] = { DRUID },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(209847, {	-- Arcanic Systems Manual
+					["provider"] = { "o", 409700 },	-- Manual
+					["coord"] = { 56.3, 8.8, THE_BARRENS },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208800, {	-- Baxtan: On Destructive Magics
+					["provider"] = { "o", 407566 },	-- Goblin Tome
+					["coord"] = { 62.7, 36.3, THE_BARRENS },
+				})),
+				applyclassicphase(SOD_PHASE_ONE, o(407510, {	-- Etched Carving
+					["provider"] = { "o", 407505 },	-- Etched Carving
+					["description"] = "Stand on the green dot and read the inscription to activate the hidden path. Blink from green dot to green dot without taking any steps or losing the Path of no Steps debuff.\n\nOnce you've reached the last green dot, you'll see another large carving. Blink to it and quickly read the inscription before the buff falls off to earn the Rune.",
+					["coord"] = { 45.5, 80.0, THE_BARRENS },
+					["classes"] = { MAGE },
+					["groups"] = {
+						i(208799, {	-- Spell Notes: Living Bomb
+							["classes"] = { MAGE },
+							["groups"] = {
+								recipe(415936),	-- Engrave Gloves - Living Bomb
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208739, {	-- Horde Warbanner
+					["provider"] = { "o", 407289 },	-- Horde Warbanner
+					["coord"] = { 52.2, 31.1, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208771, {	-- Rune of Blade Dance
+					["providers"] = {
+						{ "o", 407454 },	-- Gunpowder Keg
+						{ "i", 208768 },	-- Buccaneer's Matchbox
+						{ "o", 407453 },	-- Southsea Loot Stash
+					},
+					["coord"] = { 62, 45, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400099),	-- Engrave Pants - Blade Dance
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208750, {	-- Rune of Channeling
+					["provider"] = { "o", 407347 },	-- Altar of Thorns
+					["description"] = "Channel Health Funnel to 0 health while standing on the Altar of Thorns. You will be healed to full and granted the Rune.",
+					["coord"] = { 58.2, 26.7, THE_BARRENS },
+					["classes"] = { WARLOCK },
+					["groups"] = {
+						recipe(403932),	-- Engrave Chest - Master Channeler
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208687, {	-- Rune of Lacerate
+					["providers"] = {
+						{ "i", 208682 },	-- Abandoned Snapjaw Egg
+						{ "o", 407120 },	-- Empty Snapjaw Nest
+						{ "n", 209511 },	-- Oasis Snapjaw Hatchling
+					},
+					["description"] = "Bring the Abandoned Snapjaw Egg to an empty nest and interact with the hatchling afterward.",
+					["coord"] = { 48, 40, THE_BARRENS },
+					["classes"] = { DRUID },
+					["groups"] = {
+						recipe(416049),	-- Engrave Gloves - Lacerate
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
+					["provider"] = { "o", 407457 },	-- Stable Hand's Trunk
+					["description"] = "Head to Northwatch Hold. As you pass the main gate look to your left, you'll see a stable with a chest on the roof. Go up and around to the right and jump down onto the wall behind the stable. Once there you can jump to the roof and loot the chest for the Rune. You need lockpicking (80) to open this chest.",
+					--["coord"] = { , THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(424984),	-- Engrave Gloves - Saber Slash
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(208744, {	-- Rune of Shadowbolts
+					["providers"] = {
+						{ "i", 208743 },	-- Soul of Greed
+						{ "o", 407312 },	-- Hungry Idol
+					},
+					["coord"] = { 57.08, 9.73, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["groups"] = {
+						recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
+					},
+				})),
+			}),
+			-- #endif
+			n(TREASURES, {
+				o(3642, {	-- Kolkars' Booty
+					-- #if SEASON_OF_DISCOVERY
+					["providers"] = {
+						{ "o", 152618 },	-- Kolkars' Booty
+						{ "o", 152608 },	-- Kolkars' Booty
+					},
+					-- #endif
+					["description"] = "Contains random low level greens.",
+					["coords"] = {
+						{ 43.0, 23.5, THE_BARRENS },
+						{ 52.8, 41.8, THE_BARRENS },
+						{ 44.3, 37.7, THE_BARRENS },
+					},
+					["cost"] = {{ "i", 5020, 1 }},	-- Kolkar Booty Key
+					-- #if SEASON_OF_DISCOVERY
+					["groups"] = {
+						applyclassicphase(SOD_PHASE_ONE, i(208689, {	-- Ferocious Idol
+							["classes"] = { DRUID },
+							["groups"] = {
+								recipe(410023),	-- Engrave Pants - Savage Roar
+							},
+						})),
+						applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA
+							["classes"] = { MAGE },
+						})),
+						applyclassicphase(SOD_PHASE_ONE, i(206382, {	-- Tempest Icon
+							["classes"] = { SHAMAN },
+							["groups"] = {
+								recipe(410097),	-- Engrave Gloves - Water Shield
+							},
+						})),
+					},
+					-- #endif
 				}),
 			}),
 			n(VENDORS, {
@@ -4113,6 +4412,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.8, 38.2, THE_BARRENS },
 					-- #endif
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_ONE, i(208773, {	-- Fishing Harpoon
+							["timeline"] = { "removed 2.0.1" },
+							["classes"] = { WARRIOR, HUNTER },
+							["cost"] = 526,	-- 5s 26c
+						})),
+						-- #endif
 						i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 						i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 					},
@@ -4389,6 +4695,40 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 48.8, 84.8, THE_BARRENS },
 					["cr"] = 3444,	-- Dig Rat
 				}),
+				i(5020, {	-- Kolkar Booty Key
+					["coords"] = {
+						{ 44.4, 23.6, THE_BARRENS },
+						{ 47.4, 41.8, THE_BARRENS },
+						{ 53.6, 40.0, THE_BARRENS },
+					},
+					["crs"] = {
+						3272,	-- Kolkar Wrangler
+						3273,	-- Kolkar Stormer
+						3394,	-- Barak Kodobane
+					},
+				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208765, {	-- Helping Hand (Closed)
+					["provider"] = { "i", 208766 },	-- Helping Hand (Open)
+					["description"] = "The hand will open when you ressurect another player.",
+					["coord"] = { 55.6, 27.2, THE_BARRENS },
+					["classes"] = { PRIEST },
+					["crs"] = {
+						3268,	-- Razormane Thornweaver
+						3267,	-- Razormane Water Seeker
+						3266,	-- Razormane Defender
+						3265,	-- Razormane Hunter
+					},
+					["groups"] = {
+						i(205905, {	-- Memory of a Devout Champion
+							["classes"] = { PRIEST },
+							["groups"] = {
+								recipe(425215),	-- Engrave Chest - Twisted Faith
+							},
+						}),
+					},
+				})),
+				-- #endif
 				i(5093, {	-- Razormane Backstabber
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
 					-- #if BEFORE 4.0.3
@@ -4443,6 +4783,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(6661, {	-- Recipe: Savory Deviate Delight (RECIPE!)
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, i(208743, {	-- Soul of Greed
+					["description"] = "Use Drain Soul on him.",
+					["coord"] = { 56.2, 8.6, THE_BARRENS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARLOCK },
+					["cr"] = 3445,	-- Supervisor Lugwizzle
+				})),
+				-- #endif
 			}),
 		},
 	}),

@@ -957,6 +957,9 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
+				["g"] = {
+					i(194437),	-- Primal Ritual (QI!)
+				},
 			}),
 			q(70591, {	-- Engineering Services Requested
 				["description"] = "Requires 25 Skill.",
@@ -972,11 +975,17 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["g"] = {
+					i(201816),	-- Springy Horns (QI!)
+				},
 			}),
 			q(66890, {	-- Stolen Tools
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
+				["g"] = {
+					i(193836),	-- Stolen Tools (QI!)
+				},
 			}),
 
 			------ Requires 45 Skill ------

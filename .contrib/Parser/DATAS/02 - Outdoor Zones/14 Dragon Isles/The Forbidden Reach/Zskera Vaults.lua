@@ -995,6 +995,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 								i(193908),	-- Kobaldt (PET!)
 							},
 						}),
+						o(390559, {	-- Box of Rocks
+							["questID"] = 75152,
+							["g"] = {
+								i(199216),	-- A Box of Rocks
+							},
+						}),
 						o(386454, {	-- Chest of Ice
 							["coord"] = { 28.3, 55.6, THE_FORBIDDEN_REACH },
 							["questID"] = 74420,

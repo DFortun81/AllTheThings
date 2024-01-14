@@ -70,6 +70,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["g"] = {
 							i(200759),	-- Aruunem Berrytart
 							i(200885),	-- Cinna-Cinderbloom Tea
+							i(194550),	-- Coldsnap Sagittate (QI!)
 							i(200886),	-- Lemon Silverleaf Tea
 						},
 					}),
@@ -88,6 +89,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(200887),	-- Charred Porter
 							i(200888),	-- Coal-Fired Rib Rack
 							i(200889),	-- Highly Spiced Haunch
+							i(194551),	-- Spicy Lava Spice (QI!)
 						},
 					}),
 					------ Day 3 ------
@@ -104,6 +106,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["g"] = {
 							i(200892),	-- Dragonfruit Punch
 							i(200891),	-- Druidic Dreamsalad
+							i(194552),	-- Glimmering Ramblekelp Bulb (QI!)
 							i(200890),	-- Stonetalon Bloom Skewer
 						},
 					}),
@@ -120,8 +123,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 60.2, 82.2, THALDRASZUS },
 						["g"] = {
 							i(200893),	-- Azsunian Poached Lobster
-							i(200894),	-- Rare Vintage Arcwine
 							i(200895),	-- Fine Taladorian Cheese Platter
+							i(200894),	-- Rare Vintage Arcwine
+							i(194553),	-- Time-Blasted Trufflette (QI!)
 						},
 					}),
 					------ Day 5 ------
@@ -137,8 +141,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 7.4, 44.2, THE_AZURE_SPAN },
 						["g"] = {
 							i(200896),	-- Captain's Caramelized Catfish
-							i(200897),	-- Venrik's Goat Milk
 							i(200898),	-- Mantis Shrimp Cocktail
+							i(194554),	-- Savory Deviant Dealfish (QI!)
+							i(200897),	-- Venrik's Goat Milk
 						},
 					}),
 					------ Day 6 ------
@@ -153,9 +158,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 189400 },	-- Meliane Enorath
 						["coord"] = { 65.2, 58.0, THE_WAKING_SHORES },
 						["g"] = {
-							i(200899),	-- Seared Sea Mist Noodles
 							i(200900),	-- Fried Emperor Wraps
+							i(200899),	-- Seared Sea Mist Noodles
 							i(200901),	-- Roquefort-Stuffed Peppers
+							i(194555),	-- Wild Leapmaize (QI!)
 						},
 					}),
 					------ Day 7 ------
@@ -170,6 +176,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 196161 },	-- Ilana
 						["coord"] = { 85.8, 35.2, OHNAHRAN_PLAINS },
 						["g"] = {
+							i(194556),	-- Breezehunter Egg (QI!)
 							i(200902),	-- Ravenberry Panacotta Delight
 							i(200903),	-- Moira's Choice Espresso
 							i(200904),	-- Picante Pomfruit Cake
@@ -183,6 +190,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["altQuests"] = { 72258 },	-- Daily Lockout
 						["g"] = {
 							i(198132),	-- Recipe: Hoard of Draconic Delicacies (RECIPE!)
+							i(202013),	-- Ruby Recipe Journal VIII (QI!)
 						},
 					}),
 				},

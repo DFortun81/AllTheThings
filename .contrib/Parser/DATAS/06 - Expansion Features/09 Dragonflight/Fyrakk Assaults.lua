@@ -81,6 +81,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				q(74569, {	-- Deny Them Resources
 					["provider"] = { "n", 201860 },	-- Khanam Matra Sarest
 					["coord"] = { 75.6, 69.9, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(204699),	-- Suffused Ingots (QI!)
+					},
 				}),
 				q(74775, {	-- Disciple of Fyrakk: Kretchenwrath
 					["provider"] = { "i", 204071 },	-- Head of Kretchenwrath

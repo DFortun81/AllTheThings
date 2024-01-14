@@ -15323,49 +15323,33 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 				self:BaseUpdate(true, got);
 			end,
 		});
-		local header = app.CreateNPC(-243, {	-- Bounty
-			['icon'] = "Interface\\Icons\\INV_BountyHunting.blp",
-			["description"] = L["BOUNTY_DESC"],
+		local header = app.CreateNPC(app.HeaderConstants.UI_BOUNTY_WINDOW, {
 			['visible'] = true,
 			["g"] = {
 				autoOpen,
 			},
 		});
 		-- add bounty content
+		-- TODO: This window pulls its data manually, there should be a key for bounty.
+		-- Update this when we merge over Classic's extended window logic.
+		-- NOTE: Everything we want is current marked with a u value of 45, so why not just pull that in? :)
 		NestObjects(header, {
 			app.CreateNPC(app.HeaderConstants.RARES, {
 				app.CreateNPC(87622, {	-- Ogom the Mangler
-					['description'] = L["OGOM_THE_MANGLER_DESC"],
 					['g'] = {
 						app.CreateItemSource(67041, 119366),
 					},
 				}),
 			}),
 			app.CreateNPC(app.HeaderConstants.ZONE_DROPS, {
-				app.CreateItem(1388, {	-- Crooked Staff
-					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
-				}),
-				app.CreateItem(3330, {	-- Dargol's Hauberk
-					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
-				}),
-				app.CreateItem(2109, {	-- Frostmane Chain Vest
-					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
-				}),
-				app.CreateItem(778, {	-- Kobold Excavation Pick
-					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
-				}),
-				app.CreateItem(1462, {	-- Ring of the Shadow
-					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
-				}),
-				app.CreateItem(6180, {	-- Slarkskin
-					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
-				}),
-				app.CreateItem(4951, {	-- Squeeler's Belt
-					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
-				}),
-				app.CreateItem(1404, {	-- Tidal Charm
-					["description"] = "This item was likely not readded with 10.1.7 or its source is currently unknown.",
-				}),
+				["description"] = "These items were likely not readded with 10.1.7 or their source is currently unknown.",
+				["g"] = {
+					app.CreateItemSource(85, 778),	-- Kobold Excavation Pick
+					app.CreateItemSource(2280, 6180),	-- Slarkskin
+					app.CreateItemSource(1932, 4951),	-- Squeeler's Belt
+					app.CreateItem(1462),	-- Ring of the Shadow
+					app.CreateItem(1404),	-- Tidal Charm
+				},
 			}),
 		});
 		self:SetData(header);
@@ -19422,18 +19406,6 @@ end
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()
 	-- app.PrintMemoryUsage("Startup")
-	local v = C_AddOns.GetAddOnMetadata(appName, "Version");
-	-- if placeholder exists as the Version tag, then assume we are not on the Release version
-	if string_match(v, "version") then
-		app.Version = "[Git]";
-		-- adjust the Setting screen version display since it was already set from metadata
-		if app.Settings.version then
-			app.Settings.version:SetText("[Git]");
-		end
-	else
-		app.Version = "" .. v;
-	end
-
 	AllTheThingsAD = LocalizeGlobalIfAllowed("AllTheThingsAD", true);	-- For account-wide data.
 	-- Cache the Localized Category Data
 	AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });

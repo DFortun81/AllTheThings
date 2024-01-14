@@ -172,7 +172,7 @@ app:GetWindow("Objects", {
 			for objectID,o in pairs(app.SearchForFieldContainer("objectID")) do
 				tinsert(objectIDs, tonumber(objectID));
 			end
-			app.Sort(objectIDs, app.SortDefaults.Number);
+			app.Sort(objectIDs, app.SortDefaults.Values);
 			
 			-- Now iterate through those ids and create objects for them.
 			for _,objectID in ipairs(objectIDs) do

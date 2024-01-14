@@ -77,7 +77,7 @@ app:GetWindow("Missing Quests", {
 					end
 				end
 				for id,_ in pairs(QuestieDB.QuestPointers) do
-					if not MissingQuestsFromATTDict[id] and #SearchForField("questID", id) == 0 then
+					if id < 90000 and not MissingQuestsFromATTDict[id] and #SearchForField("questID", id) == 0 then
 						MissingQuestsFromATTDict[id] = true;
 						tinsert(MissingQuestsFromATT, id);
 					end
@@ -100,10 +100,31 @@ app:GetWindow("Missing Quests", {
 				
 				-- Build a summary for ATT
 				local parent, g = data.options[1], {};
-				app.Sort(MissingQuestsFromATT, app.SortDefaults.Number);
+				app.Sort(MissingQuestsFromATT, app.SortDefaults.Values);
 				for _,id in ipairs(MissingQuestsFromATT) do
 					local quest = app.CreateQuest(id);
-					quest.description = "@Crieve: This has not been sourced in ATT yet!";
+					local description = "@Crieve: This has not been sourced in ATT yet!";
+					local questieData = QuestieDB.GetQuest(id);
+					if questieData then
+						for key,value in pairs(questieData) do
+							description = description .. "\n  " .. key .. ": ";
+							if type(value) == "table" then
+								for k,v in pairs(value) do
+									description = description .. "\n    " .. k .. ": ";
+									if type(v) == "table" then
+										for i,c in pairs(v) do
+											description = description .. "\n      " .. i .. ": " .. tostring(c);
+										end
+									else
+										description = description .. tostring(v);
+									end
+								end
+							else
+								description = description .. tostring(value);
+							end
+						end
+					end
+					quest.description = description;
 					quest.parent = parent;
 					tinsert(g, quest);
 				end
@@ -111,7 +132,7 @@ app:GetWindow("Missing Quests", {
 				
 				-- Build a summary for Questie
 				local parent, g = data.options[2], {};
-				app.Sort(MissingQuestsFromQuestie, app.SortDefaults.Number);
+				app.Sort(MissingQuestsFromQuestie, app.SortDefaults.Values);
 				for _,id in ipairs(MissingQuestsFromQuestie) do
 					local quest, questData = app.CreateQuest(id), {};
 					for i,o in pairs(SearchForField("questID", id)) do

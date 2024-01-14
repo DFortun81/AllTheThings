@@ -118,6 +118,67 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
+				q(9551, {	-- Call of Air (1/4) [The Exodar]
+					["qg"] = 17219,	-- Sulaa <Shaman Trainer>
+					["coord"] = { 32.6, 24.2, THE_EXODAR },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["isBreadcrumb"] = true,
+					["lvl"] = 30,
+				}),
+				q(9547, {	-- Call of Air (1/4) [Ironforge]
+					["qg"] = 23127,	-- Farseer Javad <Shaman Trainer>
+					["coord"] = { 55.2, 29.6, IRONFORGE },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["isBreadcrumb"] = true,
+					["lvl"] = 30,
+				}),
+				q(10491, {	-- Call of Air (1/4) [Stormwind City]
+					["qg"] = 20407,	-- Farseer Umbrua <Shaman Trainer>
+					["coord"] = { 61.8, 83.8, STORMWIND_CITY },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["isBreadcrumb"] = true,
+					["lvl"] = 30,
+				}),
+				q(9552, {	-- Call of Air (2/4)
+					["qg"] = 17204,	-- Farseer Nobundo <Shaman Trainer>
+					["sourceQuests"] = {
+						9551,	-- Call of Air (1/4) [The Exodar]
+						9547,	-- Call of Air (1/4) [Ironforge]
+						10491,	-- Call of Air (1/4) [Stormwind City]
+					},
+					["coord"] = { 31, 27.8, THE_EXODAR },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["maps"] = { AZUREMYST_ISLE },
+					["races"] = { DRAENEI },
+					["lvl"] = 30,
+				}),
+				q(9553, {	-- Call of Air (3/4)
+					["qg"] = 17431,	-- Velaada
+					["sourceQuest"] = 9552,	-- Call of Air (2/4)
+					["coord"] = { 24.8, 35.8, AZUREMYST_ISLE },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["lvl"] = 30,
+				}),
+				q(9554, {	-- Call of Air (4/4)
+					["providers"] = {
+						{ "n", 17435 },	-- Susurrus
+						{ "i", 23843 },	-- Whorl of Air
+					},
+					["sourceQuest"] = 9553,	-- Call of Air (3/4)
+					["coord"] = { 22.4, 32.6, AZUREMYST_ISLE },
+					["timeline"] = { "added 2.0.1", "removed 4.0.3" },
+					["races"] = { DRAENEI },
+					["lvl"] = 30,
+					["groups"] = {
+						i(5178, {	-- Air Totem
+							["description"] = "You must keep this in your bags forever.",
+						}),
+					},
+				}),
 				q(9605, {	-- Hippogryph Master Stephanos
 					["qg"] = 16768,	-- Nurguni
 					["sourceQuest"] = 9604,	-- On the Wings of a Hippogryph

@@ -1734,6 +1734,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(1404, {	-- Tidal Charm
 							["timeline"] = { "removed 4.0.3" },
+							-- #if AFTER 10.1.7
+							["isBounty"] = true,
+							-- #endif
 						}),
 					},
 				}),

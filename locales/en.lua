@@ -125,10 +125,8 @@ local L = {
 	["HIDDEN_QUEST_TRIGGERS"] = "Hidden Quest Triggers";
 	["HIDDEN_QUEST_TRIGGERS_DESC"] = "These are Quests which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
 	["UNSORTED_DESC_2"] = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT";
-	["BOUNTY_DESC"] = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below.";
 	["OPEN_AUTOMATICALLY"] = "Open Automatically";
 	["OPEN_AUTOMATICALLY_DESC"] = "If you aren't a Blizzard Developer, it might be a good idea to uncheck this. This was done to force Blizzard to fix and/or acknowledge these bugs.";
-	["OGOM_THE_MANGLER_DESC"] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r";
 	["DIFF_COMPLETED_1"] = "You have collected everything from this difficulty. Switch to ";
 	["DIFF_COMPLETED_2"] = " instead.";
 	["MINI_LIST"] = "Mini List";
@@ -848,7 +846,7 @@ local L = {
 		["Zaralek Cavern Racing Completionist: Gold > "] = "",
 
 		["WoW's Anniversary %> "] = "",
-		["Dragonriding Cup %> "] = "",
+--		["Dragonriding Cup %> "] = "",
 		[BLACK_MARKET_AUCTION_HOUSE] = "BMAH",
 		["Emissary Quests"] = "Emissary",
 		["Item Sets"] = WARDROBE_SETS,
@@ -903,7 +901,6 @@ local L = {
 	-- PvP
 		[-240] = "Interface\\Icons\\Achievement_rankedpvp_06",								-- Rated
 		[-242] = "Interface\\Icons\\Achievement_BG_KillXEnemies_GeneralsRoom",				-- Unrated
-		[-243] = "Interface\\Icons\\ability_hunter_markedfordeath",							-- Bounty
 	-- War Campaign
 		[-253] = "Interface\\Icons\\ui_horde_honorboundmedal",								-- Horde War Campaign
 	-- Allied Races
@@ -1092,7 +1089,6 @@ local L = {
 	-- PvP
 		[-240] = PVP_TAB_CONQUEST,												-- Rated
 		[-242] = "Unrated",														-- Unrated
-		[-243] = "Bounty",														-- Bounty
 	-- War Campaign
 		[-253] = C_Map.GetAreaInfo(9664),										-- War Campaign - Horde
 	-- Allied Races

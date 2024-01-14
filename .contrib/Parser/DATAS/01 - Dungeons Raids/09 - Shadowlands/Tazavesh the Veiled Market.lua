@@ -70,6 +70,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
 					["provider"] = { "n", 178908 },	-- Al'dalil
 					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+					["g"] = {
+						i(186182),	-- Cartel So Shipping Manifest (QI!)
+					},
 				}),
 				q(63980, {	-- Seeking Smugglers
 					["sourceQuests"] = {
@@ -93,6 +96,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 					["sourceQuests"] = { 63983 },	-- Dead Drop
 					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
 					["coord"] = { 32.5, 32.4, BASTION },
+					["g"] = {
+						i(186696),	-- Ta Coin of Favors (QI!)
+					},
 				}),
 				q(63985, {	-- The Veiled Market
 					["sourceQuests"] = { 63984 },	-- Coins for the Ferryman

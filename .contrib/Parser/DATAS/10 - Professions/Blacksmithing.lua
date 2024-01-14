@@ -848,16 +848,25 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+				["g"] = {
+					i(193864),	-- Magma Core (QI!)
+				},
 			}),
 			q(72398, {	-- Rock and Stone
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+				["g"] = {
+					i(201819),	-- Earthen Sample (QI!)
+				},
 			}),
 			q(66941, {	-- Tremendous Tools
 				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
+				["g"] = {
+					i(194435),	-- Large Tool (QI!)
+				},
 			}),
 
 			------ Requires 45 Skill ------
@@ -865,6 +874,9 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.8, 63.6, VALDRAKKEN },
+				["g"] = {
+					i(192126),	-- Intact Dracthyr Weapon (QI!)
+				},
 			}),
 			q(70234, {	-- All this Hammering
 				["description"] = "Requires 45 Skill.",

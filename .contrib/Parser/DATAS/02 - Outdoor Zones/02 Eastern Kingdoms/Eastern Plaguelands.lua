@@ -3464,6 +3464,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(46022, {	-- Beezil Linkspanner
 					["sourceQuest"] = 27449,	-- Honor and Strength
 					["coord"] = { 73.8, 52.4, EASTERN_PLAGUELANDS },
+					["timeline"] = { "added 4.0.3" },
 				}),
 				n(12941, {	-- Jase Farlane <Trade Supplies>
 					-- #if AFTER CATA

@@ -604,6 +604,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78229, {	-- Trial of The Owls
+					["qg"] = 12042,	-- Loganaar <Druid Trainer>
+					["coord"] = { 52.4, 40.4, MOONGLADE },
+					["timeline"] = { "removed 2.0.1" },
+					["cost"] = {
+						{ "i", 210044, 1 },	-- Symbol of the First Owl
+						{ "i", 210043, 1 },	-- Symbol of the Second Owl
+						{ "i", 210026, 1 },	-- Symbol of the Third Owl
+					},
+					["classes"] = { DRUID },
+					["groups"] = {
+						i(210137, {	-- Rune of Wild Growth
+							["classes"] = { DRUID },
+							["groups"] = {
+								recipe(410028),	-- Engrave Gloves - Wild Growth
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(272, {	-- Trial of the Sea Lion [A]
 					["qg"] = 11799,	-- Tajarri
 					["sourceQuest"] = 29,	-- Trial of the Lake [A]

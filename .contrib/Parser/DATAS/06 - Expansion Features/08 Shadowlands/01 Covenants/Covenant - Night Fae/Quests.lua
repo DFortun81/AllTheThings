@@ -596,6 +596,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["provider"] = { "n", 170705 },	-- Ara'lon
 				["coord"] = { 41.1, 31.6, ARDENWEALD },
 				["g"] = {
+					i(180606),	-- Ara'lon's Report (QI!)
 					i(175603),	-- Faewoven Cuffs
 					i(179772),	-- Oakheart Bracers
 					i(179894),	-- Queensguard Vambraces
@@ -662,6 +663,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 61703 },	-- Nox Root
 				["provider"] = { "o", 357726 },	-- Broken Spear
 				["coord"] = { 33.8, 54.4, ARDENWEALD },
+				["g"] = {
+					i(182966),	-- Broken Spear (QI!)
+				},
 			}),
 			q(61711, {	-- Ritual of Purification
 				["sourceQuests"] = {

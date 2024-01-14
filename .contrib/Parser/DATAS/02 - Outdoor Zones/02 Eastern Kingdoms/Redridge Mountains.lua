@@ -445,6 +445,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(2358, {	-- Horns of Nez'ra
+					["qg"] = 7009,	-- Arantir <The Hand of Chaos>
+					["coord"] = { 28.4, 52.4, REDRIDGE_MOUNTAINS },
+					["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3" },
+					["classes"] = { ROGUE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 16,
+					["groups"] = {
+						objective(1, {	-- 0/1 Horns of Nez'ra
+							["provider"] = { "i", 7906 },	-- Horns of Nez'ra
+							["coord"] = { 41.0, 38.8, REDRIDGE_MOUNTAINS },
+							["crs"] = {
+								485,	-- Blackrock Outrunner
+								440,	-- Blackrock Grunt
+								4065,	-- Blackrock Sentry
+								615,	-- Blackrock Tracker
+								437,	-- Blackrock Renegade
+							},
+						}),
+						i(7676),	-- Thistle Tea
+					},
+				}),
 				q(126, {	-- Howling in the Hills
 					["qg"] = 415,	-- Verner Osgood
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
@@ -1484,6 +1506,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(209873, {	-- Dragonslayer's Shield
+					["provider"] = { "o", 409754 },	-- Wall-Mounted Shield
+					["coord"] = { 69.8, 55.8, REDRIDGE_MOUNTAINS },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(777, {	-- Amy Davenport <Tradeswoman>
 					-- #if AFTER CATA
@@ -1893,6 +1925,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(211530, {	-- Prophecy of a City Enthralled
+					["coord"] = { 67.4, 56.0, REDRIDGE_MOUNTAINS },
 					["timeline"] = { "removed 2.0.1" },
 					["classes"] = { PRIEST },
 					["cr"] = 436,	-- Blackrock Shadowcaster
@@ -1924,6 +1957,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1462, {	-- Ring of the Shadow
 					["timeline"] = { "removed 4.0.3" },
+					-- #if AFTER 10.1.7
+					["isBounty"] = true,
+					-- #endif
 					["cr"] = 429,	-- Shadowhide Darkweaver
 					["coords"] = {
 						{ 70.4, 40.6, REDRIDGE_MOUNTAINS },

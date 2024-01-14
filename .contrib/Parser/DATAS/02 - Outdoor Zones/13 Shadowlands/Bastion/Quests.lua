@@ -342,11 +342,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58976 },	-- Chasing a Memory
 					["provider"] = { "n", 167034 },	-- Mikanikos
 					["coord"] = { 54.7, 64.1, BASTION },
+					["g"] = {
+						i(178092),	-- Battered Scroll (QI!)
+					},
 				}),
 				q(58799, {	-- The Prime's Directive
 					["sourceQuests"] = { 58976 },	-- Chasing a Memory
 					["provider"] = { "n", 167034 },	-- Mikanikos
 					["coord"] = { 54.7, 64.1, BASTION },
+					["g"] = {
+						i(178094),	-- Centurion Core (QI!)
+					},
 				}),
 				q(58800, {	-- The Mnemonic Locus
 					["sourceQuests"] = {
@@ -384,6 +390,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58979 },	-- I MADE You!
 					["provider"] = { "n", 167035 },	-- Locus-Keeper Mnemis
 					["coord"] = { 57.2, 55.2, BASTION },
+					["g"] = {
+						i(178146),	-- Carved Kyrian Idol (QI!)
+						i(178145),	-- Ceremonial Offering (QI!)
+					},
 				}),
 				q(58843, {	-- The Vault of the Archon
 					["sourceQuests"] = { 58980 },	-- Mnemis, At Your Service

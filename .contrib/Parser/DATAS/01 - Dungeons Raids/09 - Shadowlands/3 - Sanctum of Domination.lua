@@ -681,6 +681,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 				n(QUESTS, {
 					q(64597, {	-- Sanctum of Domination - Damned If You Don't [N]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
+						["g"] = {
+							i(187529),	-- Phylactery Shard (QI!)
+						},
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -905,6 +908,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 				n(QUESTS, {
 					q(64598, {	-- Sanctum of Domination - Damned If You Don't [H]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
+						["g"] = {
+							i(187530),	-- Phylactery Shard (QI!)
+						},
 					}),
 				}),
 				n(ZONE_DROPS, {
@@ -1119,6 +1125,9 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 				n(QUESTS, {
 					q(64599, {	-- Sanctum of Domination - Damned If You Don't [M]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
+						["g"] = {
+							i(187531),	-- Phylactery Shard (QI!)
+						},
 					}),
 				}),
 				n(ZONE_DROPS, {

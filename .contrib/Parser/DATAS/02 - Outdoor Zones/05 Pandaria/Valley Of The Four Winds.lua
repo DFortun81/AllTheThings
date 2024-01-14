@@ -2166,6 +2166,12 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(TREASURES, {
+					o(210582,	{	-- Dark Soil
+						["coord"] = { 52.8, 48.1, VALLEY_OF_THE_FOUR_WINDS },
+						["groups"] = {
+							i(79269),	-- Marsh Lily (QI!)
+						},
+					}),
 					o(210565,	{	-- Dark Soil
 						["description"] = "Can be found around the Tillers area",
 						["g"] = {
@@ -2173,6 +2179,7 @@ root(ROOTS.Zones, {
 							i(79266),	-- Jade Cat
 							i(79267),	-- Lovely Apple
 							i(79268),	-- Marsh Lily
+							i(79269),	-- Marsh Lily (QI!)
 							i(79264),	-- Ruby Shard
 						},
 					}),

@@ -616,6 +616,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(BURLY_BRAWL, {
+					["questID"] = 75300,	-- Burly Brawl HQT	-- TODO: Confirm if this is the same HQT.
+					["qgs"] = {
+						3399,	-- Zamja <Cooking Trainer>
+						208023,	-- Gru'ark
+					},
+					["coord"] = { 57.6, 53.6, ORGRIMMAR },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { WARRIOR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(204716, {	-- Rune of Frenzied Assault
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(425447),	-- Engrave Pants - Frenzied Assault
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(60961, {	-- Burning Crusade: Onward to Adventure in Outland
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["sourceQuest"] = 60123,	-- Burning Crusade: To Outland!
@@ -1276,6 +1297,51 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(78196, {	-- Secrets of Undeath (1/2)
+					["qg"] = 211229,	-- Dietrich Praice
+					["coord"] = { 35.6, 87.8, ORGRIMMAR },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { ASHENVALE },
+					["classes"] = { PRIEST },
+					["races"] = { TROLL },
+					["lvl"] = 18,
+					["groups"] = {
+						objective(1, {	-- 0/12 Shadeleaf
+							["provider"] = { "i", 210045 },	-- Shadeleaf
+							["coord"] = { 69.6, 63.0, ASHENVALE },
+							["crs"] = {
+								3782,	-- Shadethicket Stone Mover
+								3784,	-- Shadethicket Bark Ripper
+								3783,	-- Shadethicket Raincaller
+								3781,	-- Shadethicket Wood Shaper
+							},
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, q(78197, {	-- Secrets of Undeath (2/2)
+					["providers"] = {
+						{ "n", 211229 },	-- Dietrich Praice
+						{ "n",   6491 },	-- Spirit Healer
+						{ "i", 210056 },	-- Tincture of Waking Death
+					},
+					["sourceQuest"] = 78196,	-- Secrets of Undeath (1/2)
+					["coords"] = {
+						{ 35.6, 87.8, ORGRIMMAR },
+						{ 56.2, 49.4, TIRISFAL_GLADES },
+					},
+					["description"] = "Completing this quest will allow you to meditate in the same manner as the undead.",
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PRIEST },
+					["races"] = { TROLL },
+					["lvl"] = 18,
+					["groups"] = {
+						recipe(424041, {	-- Secrets of Undeath
+							["classes"] = { PRIEST },
+						}),
+					},
+				})),
+				-- #endif
 				q(5680, {	-- Shadowguard [Undercity]
 					["qgs"] = {
 						6018,	-- Ur'kyo <Priest Trainer>
@@ -1304,6 +1370,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, q(79079, {	-- Sharing the Faith
+					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
+					["coord"] = { 35.6, 87.6, ORGRIMMAR },
+					["timeline"] = { "removed 2.0.1" },
+					["maps"] = { DUROTAR },
+					["races"] = { TROLL },
+					["lvl"] = 5,
+					["groups"] = {
+						objective(1, {	-- Pray over the Supplicant
+							["provider"] = { "n", 215096 },	-- Supplicant
+							["description"] = "You must first have your Meditation buff and then use /pray on the kneeling Supplicant.",
+						}),
+					},
+				})),
+				-- #endif
 				q(1943, {	-- Speak with Deino
 					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
 					["coord"] = { 85, 10.2, UNDERCITY },
@@ -1826,6 +1908,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+			}),
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_ONE, i(204174, {	-- Rune of Precision
+					["provider"] = { "o", 404830 },	-- Dusty Chest
+					["coord"] = { 55.9, 44.7, ORGRIMMAR },
+					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						recipe(400081),	-- Engrave Pants - Between the Eyes
+					},
+				})),
+				applyclassicphase(SOD_PHASE_ONE, i(207972, {	-- The Lessons of Ta'zo
+					["provider"] = { "o", 405149 },	-- Mural of Ta'zo
+					["coord"] = { 38.7, 78.4, ORGRIMMAR },
+				})),
 			}),
 			-- #endif
 			n(VENDORS, {
@@ -3560,11 +3659,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(45558, {	-- Lizna Goldweaver <Tailoring Supplies> (removed 7.3.5? when embassy took over)
+					["coord"] = { 41.0, 79.8, ORGRIMMAR },
+					["timeline"] = { "added 4.0.1.12984" },
 					-- #if AFTER 7.3.5.25961
 					["description"] = "This NPC is only visible if you have not yet unlocked the allied race Highmountain Tauren.",
+					["OnUpdate"] = [[function(t,parent,defaultUpdate)
+						if _.MODE_DEBUG or (defaultUpdate(t,parent) and not ATTAccountWideData.Achievements[12452]) then
+							t.visible = true;
+						else
+							t.visible = false;
+						end
+						return true;
+					end]],
 					-- #endif
-					["coord"] = { 41.0, 79.8, ORGRIMMAR },
-					["timeline"] = { "added 4.0.1.12984", "removed 7.3.5.25961" },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3364},	-- Borya <Tailoring Supplies>
@@ -4820,7 +4927,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				n(3314, {	-- Urtharo <Weapon Merchant>
 					-- #if AFTER CATA
-					["coord"] = { 46.6, 73.8, ORGRIMMAR },
+					["coord"] = { 46.6, 73.1, ORGRIMMAR },
 					-- #else
 					["coord"] = { 47.4, 68.6, ORGRIMMAR },
 					-- #endif

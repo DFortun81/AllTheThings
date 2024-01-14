@@ -501,6 +501,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["sourceQuests"] = { 51353 },	-- Cave of Ai'twen
 				["provider"] = { "o", 290138 },	-- Bot Buster Bomb
 				["coord"] = { 37.8, 28.5, STORMSONG_VALLEY },
+				["groups"] = {
+					o(286954, {	-- Bot Buster Bomb
+						i(160397),	-- Bot Buster Bomb (QI!)
+					}),
+				},
 			}),
 			q(51712, {	-- Eye for an Eye
 				["sourceQuests"] = {
@@ -571,6 +576,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["sourceQuests"] = { 51353 },	-- Cave of Ai'twen
 				["provider"] = { "n", 137453 },	-- Loroja
 				["coord"] = { 35.7, 31.2, STORMSONG_VALLEY },
+				["groups"] = {
+					o(289317, {	-- Seaweed
+						i(160055),	-- Seaweed (QI!)
+					}),
+				},
 			}),
 			q(50386, {	-- Flush Them Out
 				["sourceQuests"] = { 50417 },	-- Ruin Has Come
@@ -1265,6 +1275,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				},
 				["provider"] = { "n", 135794 },	-- Scrollsage Nola
 				["coord"] = { 40.6, 45.5, STORMSONG_VALLEY },
+				["groups"] = {
+					o(288609, {	-- Tortollan Chest
+						i(160270),	-- Scroll of Graceful Breaths (QI!)
+					}),
+					o(290127, {	-- Tortollan Chest
+						i(160327),	-- Scroll of Harmonious Fins (QI!)
+					}),
+					o(290128, {	-- Tortollan Chest
+						i(160329),	-- Scroll of Endless Tides (QI!)
+					}),
+				},
 			}),
 			q(50368, {	-- Terror of the Kraul
 				["sourceQuests"] = {
