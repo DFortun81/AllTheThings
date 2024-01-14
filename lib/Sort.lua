@@ -380,7 +380,7 @@ app.SortDefaults = setmetatable({
 });
 local function Sort(t, compare, nested)
 	if t then
-		table_sort(t, compare or defaultComparison);
+		table_sort(t, compare);
 		if nested then
 			for i=#t,1,-1 do
 				Sort(t[i].g, compare, nested);
@@ -391,7 +391,7 @@ end
 -- Safely-sorts a table using a provided comparison function and whether to propogate to nested groups
 -- Wrapping in a pcall since sometimes the sorted values are able to change while being within the sort method. This causes the 'invalid sort order function' error
 app.Sort = function(t, compare, nested)
-	return pcall(Sort, t, compare, nested);
+	return pcall(Sort, t, compare or defaultComparison, nested);
 end
 -- Sorts a group using the provided sortType, whether to recurse through nested groups, and whether sorting should only take place given the group having a conditional field
 local function SortGroup(group, sortType)
