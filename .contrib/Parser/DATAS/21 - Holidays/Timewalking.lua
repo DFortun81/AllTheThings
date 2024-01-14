@@ -1531,18 +1531,21 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							i(171573),	-- Warmace of Menethil
 							i(171579),	-- Windrunner's Heartseeker
 
-							-- Possible WOTLK TW Items (from killing Yogg Quest)
+							-- Possible Ulduar Zonedrop TW Items (from killing Yogg Quest)
 							-- Confirmed
 							i(156466),	-- Bracers of Righteous Reformation
+							i(156468),	-- Cloak of the Dormant Blaze
 							i(156251),	-- Shroud of Alteration
 							i(156253),	-- Shoulders of Misfortune
+							
+							-- Heigan
+							i(171618),	-- Amulet of Autopsy
 
 							--[[  Possibly
 							i(156461),	-- Adamant Handguards
 							i(156255),	-- Belt of the Sleeper
 							i(156470),	-- Bloodcrush Cudgel
 							i(156467),	-- Boots of Unsettled Prey
-							i(156468),	-- Cloak of the Dormant Blaze
 							i(156257),	-- Daschal's Bite
 							i(156462),	-- Drape of the Spellweaver
 							i(156463),	-- Golemheart Longbow
@@ -1553,10 +1556,8 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							i(156460),	-- Mimiron's Repeater
 							i(156469),	-- Pillar of Fortitude
 							--]]
-
 							--[[ Heigan
-							I didnt see any Heigan Loot, but technically it should drop.
-							i(171618),	-- Amulet of Autopsy
+							Only saw 1 Heigan Loot, but technically all should drop.
 							i(171515),	-- Bindings of the Decrepit
 							i(171509),	-- Breastplate of Tormented Rage
 							i(171516),	-- Chestguard of Bitter Charms
