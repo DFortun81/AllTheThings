@@ -1580,7 +1580,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							i(171626),	-- Staff of the Plague Beast
 							i(171511),	-- Stalk-Skin Belt
 							i(171517),	-- The Undeath Carrier
-							i(171620),	-- Tunic of the Lost Pack
+							i(171620),	--- Tunic of the Lost Pack
 							--]]
 						},
 					})),
