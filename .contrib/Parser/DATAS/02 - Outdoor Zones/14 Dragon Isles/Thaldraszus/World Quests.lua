@@ -61,6 +61,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				})),
 				q(71156, {	-- Rebel Concerns
 					["coord"] = { 46.2, 52.2, THALDRASZUS },
+					["groups"] = {
+						i(201379),	-- Scalewatch Cage Key (QI!)
+					},
 				}),
 				q(70066, {	-- Reclaiming the Hold
 					["coord"] = { 58.8, 57.1, THALDRASZUS },

@@ -2027,124 +2027,51 @@ root(ROOTS.Unsorted, {
 				i(200262),	-- Do-It-Yourself Part Building Kit
 				i(191287),	-- Dragonscale Expedition Crate
 				i(194678),	-- Elemental Crystal
-				i(200767),	-- Energized Crystal
-				i(200818),	-- Eternal Flame
-				i(200929),	-- Everglow Nectar
 				i(194716),	-- Evorian Report
 				i(192476),	-- Expedition Bullwhip
-				i(197851),	-- Extra Crispy Mutton
 				i(199185),	-- Fanciful Strings
 				i(195460),	-- Fermented Musken Milk
 				i(198674),	-- Filled Life Pools Vial
-				i(200846),	-- Fletching-less Arrows
-				i(200622),	-- Focusing Incense
-				i(195458),	-- Forager's Stew
 				i(200847),	-- Frail Shield
 				i(195466),	-- Frenzy and Chips
-				i(192089),	-- Fresh Vorquin Carcass
-				i(195462),	-- Fried Hornstrider Wings
 				i(198479),	-- Gale Rider
-				i(200692),	-- Gift of the Grove
-				i(197852),	-- Goat Brisket
-				i(200221),	-- Gorloc Crystals
-				i(197847),	-- Gorloc Fin Soup
-				i(200704),	-- Gratona Seed
-				i(196583),	-- Greenberry Toast
 				i(200607),	-- Half-Eaten Banana
 				i(200845),	-- Heavily Deformed Mace
-				i(200784),	-- Hunting Trophies
-				i(200589),	-- Hydro Life Seed
-				i(200776),	-- Igneous Rock Sculpture
-				i(199646),	-- Imbu Tuskarr Bandages
 				i(199343),	-- Immaculate Sac of Swog Treasures
 				i(199187),	-- Impossible Sheet Music
-				i(194693),	-- Improvised Sushi
-				i(200620),	-- Inflaming Incense
-				i(200830),	-- Instantly Drying Clay
 				i(191244),	-- I.P.F. Mark 15
-				i(194680),	-- Jerky Surprise
 				i(196182),	-- Journal Entry
 				i(198840),	-- Kalecite Cluster
 				i(200935),	-- Large Egg Shell
-				i(200587),	-- Leatherbound Expedition Note
-				i(200698),	-- Ley Orb
-				i(200702),	-- Magenta Titian Extract
-				i(197850),	-- Mammoth Dumpling
-				i(195457),	-- Mammoth Jerky
-				i(200680),	-- Maruukai Mule
 				i(194677),	-- Marvelous Mood Ring
-				i(200588),	-- Meaty Stem
-				i(192054),	-- Medallion of a Fallen Friend
-				i(194682),	-- Mother's Gift
 				i(194707),	-- Myridian Report
 				i(186159),	-- Mythic Keystone
-				i(200099),	-- M.R.E.
 				i(200948),	-- Obsidian Hunting Hook
-				i(200595),	-- Odorous Parchment
-				i(200681),	-- Ohn Lite
 				i(191032),	-- Oily Fat
-				i(198456),	-- Oliveye Fry
-				i(200831),	-- Opalescent Figure
 				i(192181),	-- Order to Elements
 				i(200844),	-- Overly Bent Bow
-				i(200553),	-- Panthis Nectar
 				i(200829),	-- Pareidolic Image
 				i(191787),	-- Partially Digested Hand
-				i(195456),	-- Plains Flatbread
-				i(196585),	-- Plainswheat Pretzel
 				i(200121),	-- Potion of Beginner's Luck
 				i(194718),	-- Premium Salamander Feed
 				i(200606),	-- Previously Owned Map
 				i(194750),	-- Professional Equipment
-				i(198452),	-- Prototype F
-				i(194695),	-- Ramloaf
-				i(200765),	-- Reed Sculpture
 				i(191856),	-- Reinforced Hooked Line
-				i(200781),	-- Rejuvenating Ashes
-				i(200797),	-- Repulsive Perfume
 				i(191861),	-- Rocdrop Carapace
 				i(191864),	-- Rocdrop Pudgepart
-				i(200796),	-- Rotting Wood Totem
-				i(201379),	-- Scalewatch Cage Key
-				i(200619),	-- Scaralesh's Special
-				i(194887),	-- Scrap Trap
-				i(200593),	-- Sealed Expedition Note
-				i(195463),	-- Seasoned Mudstomper Belly
-				i(200775),	-- Self-Luminous Orb
-				i(200851),	-- Self-Trimming Bonsai
 				i(191849),	-- Serevite Angle Iron
 				i(191412),	-- Small Expedition Pick
-				i(200621),	-- Soothing Incense
 				i(199184),	-- Spellbound Bone Pipes
 				i(194686),	-- Spicy Musken Drummies
 				i(195465),	-- Stormwing Egg Breakfast
-				i(200787),	-- Strong Exotic Spices
 				i(199074),	-- Studies of Arcane Magic
 				i(191413),	-- Sturdy Expedition Pick
 				i(192130),	-- Sundered Flame Weapon Mold
 				i(195464),	-- Sweetened Broadhoof Milk
-				i(196582),	-- Syrup-Drenched Toast
-				i(200639),	-- Talisman of Ohn'ahra
-				i(200637),	-- Talisman of the Maruuk
 				i(198842),	-- Tallstrider Feather
-				i(200594),	-- Thaelin's Second Favorite Comb
-				i(200705),	-- Thaldraszus Root
-				i(200803),	-- Through the Stained-Glass
-				i(200833),	-- Titan Watcher Replica
-				i(200701),	-- Titian Extract
-				i(200809),	-- Trinket-Packed Collar
-				i(200812),	-- Unmelting Crystalline Structure
-				i(198453),	-- Unstable Azerite Grenade
 				i(200951),	-- Valdrakken Critter Snacks
 				i(200870),	-- Vorquin Essence
-				i(194688),	-- Vorquin Filet
-				i(200827),	-- Weathered Sculpture
 				i(191426),	-- Whelmed Duckling
-				i(198486),	-- Windscale Rider
-				i(200623),	-- Wind-Grown Grass
-				i(200696),	-- Winter Berries
-				i(200807),	-- Wooden Ursine Figure
-				i(194889),	-- XD-57 "Bullseye" Guided Rocket Kit
 				i(187523),	-- Your Reward [DNT]
 				i(191045),	-- Yu's Bloodied Journal Entry
 				i(194713),	-- Zepharion Report
