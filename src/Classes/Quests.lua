@@ -329,8 +329,10 @@ local CompletedQuests = setmetatable({}, {
 		if questID then
 			RetailDirtyQuests[#RetailDirtyQuests + 1] = questID
 			if state then
-				RetailRawQuests[questID] = state;
-				PrintQuestInfo(questID);
+				if not RetailRawQuests[questID] then
+					RetailRawQuests[questID] = state;
+					PrintQuestInfo(questID);
+				end
 			else
 				RetailRawQuests[questID] = nil;
 				PrintQuestInfo(questID, false);
