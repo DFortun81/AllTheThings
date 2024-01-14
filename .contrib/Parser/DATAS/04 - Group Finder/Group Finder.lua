@@ -346,12 +346,18 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113712),	-- Ravaged Leather Pants		— 01/18/22
 				i(113768),	-- Ravaged Leather Slippers*
 				i(113706),	-- Ravaged Leather Wristguards*	— 01/18/22
-				i(113774),	-- Sparkmail Boots
-				i(113703),	-- Sparkmail Bracers
+				i(113774, {	-- Sparkmail Boots
+					["timeline"] = { "removed 7.3.5" },	-- Maybe never added
+				}),
+				i(113703, {	-- Sparkmail Bracers
+					["timeline"] = { "removed 7.3.5" },	-- Maybe never added
+				}),
 				i(113717),	-- Sparkmail Chestguard			- Confirmed by Dani#8000 on Discord on October 20, 2020
 				i(113723),	-- Sparkmail Gauntlets			- Confirmed by Cytosine#2527 on Discord on November 16, 2020
 				i(113699),	-- Sparkmail Headguard
-				i(113697),	-- Sparkmail Helm
+				i(113697, {	-- Sparkmail Helm
+					["timeline"] = { "removed 7.3.5" },	-- Maybe never added
+				}),
 				i(113775),	-- Sparkmail Sabatons			— Confirmed by Shorty on Discord on August 20, 2020
 				i(113704),	-- Sparkmail Wristguards
 				i(113711),	-- Sparkmail Legguards*
