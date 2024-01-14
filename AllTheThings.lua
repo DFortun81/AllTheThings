@@ -1434,6 +1434,10 @@ local function CreateObject(t, rootOnly)
 		-- include the raw g since it will be replaced at the end with new objects
 		result.g = t.g;
 		t = result;
+		if not getmetatable(t) then
+			app.PrintDebug(Colorize("Bad CreateObject (key without metatable) used:",app.Colors.ChatLinkError))
+			app.PrintTable(t)
+		end
 		-- app.PrintDebug("Merge done",result.key,result[result.key], t, result);
 	-- is it an array of raw datas which needs to be turned into an array of usable objects
 	elseif t[1] then
@@ -1460,7 +1464,8 @@ local function CreateObject(t, rootOnly)
 			end
 			setmetatable(result, meta);
 			return result;
-		elseif t.mapID then
+		end
+		if t.mapID then
 			t = app.CreateMap(t.mapID, t);
 		elseif t.sourceID then
 			t = app.CreateItemSource(t.sourceID, t.itemID, t);
@@ -6111,7 +6116,7 @@ local function GetPopulatedQuestObject(questID)
 	-- cannot do anything on a missing object or questID
 	if not questID then return; end
 	-- either want to duplicate the existing data for this quest, or create new data for a missing quest
-	local questObject = CreateObject(app.SearchForObject("questID", questID, "field") or { key = "questID", questID = questID, _missing = true }, true);
+	local questObject = CreateObject(app.SearchForObject("questID", questID, "field") or { questID = questID, _missing = true }, true);
 	-- Try populating quest rewards
 	app.TryPopulateQuestRewards(questObject);
 	return questObject;
