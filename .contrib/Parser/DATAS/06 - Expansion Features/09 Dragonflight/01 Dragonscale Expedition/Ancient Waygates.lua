@@ -259,6 +259,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					-- Temporary lockCriteria before Blizzard fix this (71146 got unflag for anyone who did it before 75444 when patch 10.0.7 went live)
 					["lockCriteria"] = { 1, "questID", 75444 },	-- Continued Waygate Exploration
+					["groups"]= {
+						i(200590),	-- Carefully Rolled Message (QI!)
+					},
 				}),
 				------ RENOWN 11 ------
 				q(75444, {	-- Waygate Exploration: The Forbidden Reach

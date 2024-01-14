@@ -2013,58 +2013,24 @@ root(ROOTS.Unsorted, {
 				i(194719),	-- [DEPRECATED]Illusionary Coin
 				i(194706),	-- [DEPRECATED]Illusionary Key
 				i(192600),	-- [DNT][PH] Meat
-				i(200264),	-- A Steamy Romance Novel: The Lusty Draconian Mage
 				i(200282),	-- A Steamy Romance Novel: The Lusty Draconian Mage
-				i(196584),	-- Acorn Milk
 				i(191667),	-- Aged Key
-				i(200804),	-- Ancestor's Scales
-				i(194689),	-- Anchovy Crisps
-				i(195455),	-- Argali Cheese
-				i(195459),	-- Argali Milk
 				i(198141),	-- Astral Essence
-				i(200817),	-- Azure Splinters
-				i(200766),	-- Bakar Fangs
 				i(192127),	-- Basilisk Eggs
-				i(191069),	-- Beacon of the Black Prince
-				i(200782),	-- Bejeweled Horseshoes
-				i(199186),	-- Bewitched Wood
-				i(200697),	-- Blightshroom
-				i(198442),	-- Bogthwottle's Shrinky-Do
+				i(191069),	-- Beacon of the Black Prince (QI!)
+				i(199186),	-- zzOldBewitched Wood
 				i(192560),	-- Bossy Storm Stuff
-				i(200798),	-- Bottled Diseased Parasites
 				i(200824),	-- Bottled Lightning
-				i(200791),	-- Braided Ottuk Hair Fishing Line
-				i(196540),	-- Broadhoof Tail Poutine
-				i(200590),	-- Carefully Rolled Message
-				i(198688),	-- Catnip Leaf
-				i(200821),	-- Celsius 232
-				i(200811),	-- Congealed Sap Droplet
-				i(200814),	-- Congealing Shard
-				i(198832),	-- Conjured Blubbery Muffin
-				i(198833),	-- Conjured Celebratory Cake
-				i(198831),	-- Conjured Snow in a Cone
 				i(200967),	-- Conquest
 				i(200950),	-- Consortium Packaging String
-				i(200774),	-- Contained Void Sample
-				i(200248),	-- Cooked Book
-				i(192769),	-- Cracked Spear
-				i(197853),	-- Critter Kebab
 				i(191422),	-- Crystal Magical Lockpick
 				i(192182),	-- Decay to Elements
-				i(200799),	-- Decaying Pelt Bolt
 				i(198541),	-- Depleted Violet Vapors
-				i(200815),	-- Deposited
 				i(191059),	-- Dilapidated Parchment: Top Half
 				i(200592),	-- Dirty Old Satchel
-				i(198440),	-- Discounted Meat
-				i(194692),	-- Distilled Fish Juice
 				i(200262),	-- Do-It-Yourself Part Building Kit
 				i(191287),	-- Dragonscale Expedition Crate
-				i(200850),	-- Dream-Infused Seed
-				i(200554),	-- Dropcap Head
-				i(201722),	-- Edicts of the Prime Designate, Volume 742
 				i(194678),	-- Elemental Crystal
-				i(201327),	-- Emerald Dreamtime
 				i(197854),	-- Enchanted Argali Tenderloin
 				i(200767),	-- Energized Crystal
 				i(200818),	-- Eternal Flame
@@ -2135,7 +2101,6 @@ root(ROOTS.Unsorted, {
 				i(194718),	-- Premium Salamander Feed
 				i(200606),	-- Previously Owned Map
 				i(194750),	-- Professional Equipment
-				i(201726),	-- Progress Report: Uldorus
 				i(198452),	-- Prototype F
 				i(194695),	-- Ramloaf
 				i(200765),	-- Reed Sculpture
@@ -2173,7 +2138,6 @@ root(ROOTS.Unsorted, {
 				i(200803),	-- Through the Stained-Glass
 				i(200833),	-- Titan Watcher Replica
 				i(200701),	-- Titian Extract
-				i(201727),	-- To My Staunchest Allies
 				i(200809),	-- Trinket-Packed Collar
 				i(200812),	-- Unmelting Crystalline Structure
 				i(198453),	-- Unstable Azerite Grenade

@@ -12,6 +12,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(197769),	-- Tasty Hatchling's Treat
 				},
 			}),
+			o(381691, {
+				["coord"] = { 47.7, 15.4, VALDRAKKEN },
+				["groups"] = {
+					i(200264),	-- A Steamy Romance Novel: The Lusty Draconian Mage
+				},
+			}),
 		}),
 	}),
 })));

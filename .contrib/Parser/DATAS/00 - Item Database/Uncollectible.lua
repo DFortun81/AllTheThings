@@ -563,14 +563,30 @@ i(202065);	-- Static Sand
 ------------------
 --- Vendor (White) ---
 i(194685);	-- Dragonspring Water
+i(194689);	-- Anchovy Crisps
+i(194692);	-- Distilled Fish Juice
+i(195455);	-- Argali Cheese
+i(195459);	-- Argali Milk
+i(196540);	-- Broadhoof Tail Poutine
+i(196584);	-- Acorn Milk
+i(197853);	-- Critter Kebab
+i(198442);	-- Bogthwottle's Shrinky-Do
 i(200304);	-- Stored Dracthyr Rations
 i(200305);	-- Dracthyr Water Rations
+i(201327);	-- Emerald Dreamtime
 i(201427);	-- Fleeting Sands
 i(201428);	-- Quicksilver Sands
 i(201436);	-- Temporally-Locked Sands
 i(201438);	-- Weary Sands
-
+--- White Consumables Character Created ---
+i(198831);	-- Conjured Snow in a Cone
+i(198832);	-- Conjured Blubbery Muffin
+i(198833);	-- Conjured Celebratory Cake
+--- Dragon Isle Supplies Items ---
+i(200554);	-- Dropcap Head
+i(200697);	-- Blightshroom
 --- Trash ---
+i(192769);	-- Cracked Spear
 i(193860);	-- Snapped Wand
 i(193849);	-- Emptied Satchel
 i(194035);	-- Glittering Diamonds
@@ -587,26 +603,41 @@ i(194886);	-- Tazenrath's Torn Wing
 i(194973);	-- Reclaim Concoctions
 i(195572);	-- Empty Elixir
 i(198390);	-- Milling
+i(198440);	-- Discounted Meat
+i(198688);	-- Catnip Leaf
 i(198830);	-- Conjured Tasty Hatchling's Treat
+i(200248);	-- Cooked Book
 i(200685);	-- Enchanted Compass
 i(200764);	-- Slimy Shinies
+i(200766);	-- Bakar Fangs
 i(200768);	-- Assorted Salamanther Lures
 i(200769);	-- Ceramic Shards
 i(200770);	-- A Brief History of Azeroth
 i(200771);	-- Projected Starmap
 i(200772);	-- Knowledge Discs
 i(200773);	-- Otherworldly Artifact
+i(200774);	-- Contained Void Sample
 i(200777);	-- Obsidian Shards
 i(200778);	-- Lava Blowing for Dummies
 i(200780);	-- Dragon Horns
+i(200782);	-- Bejeweled Horseshoes
 i(200783);	-- Adorned Ohunan Jess
+i(200791);	-- Braided Ottuk Hair Fishing Line
 i(200792);	-- Taxidermied Catch
+i(200798);	-- Bottled Diseased Parasites
+i(200799);	-- Decaying Pelt Bolt
 i(200802);	-- Signet of the Dragonflights
+i(200804);	-- Ancestor's Scales
 i(200805);	-- Fallen Watcher Remains
 i(200806);	-- Woodcarving Stone
 i(200810);	-- Wooden Stonegrabber Figurine
+i(200811);	-- Congealed Sap Droplet
+i(200814);	-- Congealing Shard
+i(200815);	-- Deposited
+i(200817);	-- Azure Splinters
 i(200819);	-- Volatile Sparks
 i(200820);	-- Dry Wood Log
+i(200821);	-- Celsius 232
 i(200822);	-- Jar of Ashes
 i(200825);	-- Assorted Debris
 i(200826);	-- Stored Humid Air
@@ -619,6 +650,7 @@ i(200839);	-- Magical Cleaning Broom
 i(200840);	-- Encyclopaedia Draeconica Set
 i(200848);	-- Decorative Bouquet
 i(200849);	-- Tear of the Dreamer
+i(200850);	-- Dream-Infused Seed
 i(200853);	-- How to Grow a Tree in 10 Days
 i(201361);	-- Primal Inspiration
 i(201466);	-- Mote of Dreams
