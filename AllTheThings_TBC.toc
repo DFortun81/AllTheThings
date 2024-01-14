@@ -86,6 +86,7 @@ src\UI\Achievements.lua
 src\UI\Attunements.lua
 src\UI\Auctions.lua
 src\UI\Battle Pets.lua
+src\UI\Bounty.lua
 src\UI\Breadcrumbs.lua
 src\UI\Dailies.lua
 src\UI\Exploration.lua

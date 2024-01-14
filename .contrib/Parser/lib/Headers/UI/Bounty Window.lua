@@ -1,9 +1,7 @@
 UI_BOUNTY_WINDOW = createHeader({
 	readable = "UI - Bounty",
-	constant = "UI_BOUNTY_WINDOW",
-	-- #if NOT ANYCLASSIC
+	constant = "UI_BOUNTY_WINDOW",	-- This dynamic category is for isBounty marked things.
 	export = true,
-	-- #endif
 	-- #if AFTER 8.0.1
 	icon = "Interface\\Icons\\Inv_bountyhunting",
 	-- #else

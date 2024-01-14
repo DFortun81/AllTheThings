@@ -1081,6 +1081,10 @@ namespace ATT
                         return "rank";
                     }
 
+                case "isBounty":
+                    {
+                        return "isBounty";
+                    }
                 case "isRepeatable":
                 case "repeatable":
                     {

@@ -1586,9 +1586,12 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["timeline"] = { "removed 4.0.3" },
 					}),
 					i(12337),	-- Gemstone of Bloodaxe
-					i(13148, {	-- Chillpike [CRIEVE NOTE: This item seems to have disappeared with TBC Classic.]
-						-- #if ANYCLASSIC
+					i(13148, {	-- Chillpike
+						-- #if BEFORE 10.1.7
 						["description"] = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
+						-- #if AFTER 2.0.1
+						["isBounty"] = true,
+						-- #endif
 						-- #endif
 						["timeline"] = { "removed 2.0.1", "added 10.1.7" },
 					}),

@@ -639,6 +639,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 						i(4951, {	-- Squealer's Belt
 							["timeline"] = { "removed 4.0.3" },
+							-- #if AFTER 10.1.7
+							["isBounty"] = true,
+							-- #endif
 							["cr"] = 3229,	-- "Squealer" Thornmantle
 						}),
 					}),

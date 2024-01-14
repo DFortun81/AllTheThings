@@ -2783,6 +2783,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(778, {	-- Kobold Excavation Pick
 					["timeline"] = { "removed 4.0.3" },
+					-- #if AFTER 10.1.7
+					["isBounty"] = true,
+					-- #endif
 					["cr"] = 476,	-- Kobold Geomancer
 					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3

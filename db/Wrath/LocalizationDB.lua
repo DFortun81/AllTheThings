@@ -449,6 +449,7 @@ _.HeaderConstants = {
 	SPECIAL = -1000037,
 	TIER_ZERO_POINT_FIVE_SETS = -1000165,
 	TREASURES = -1000038,
+	UI_BOUNTY_WINDOW = -1000380,
 	VENDORS = -1000039,
 	WEAPONS = -1000073,
 	WORLD_BOSSES = -1000042,
@@ -601,6 +602,7 @@ localize(L.HEADER_NAMES, {
 	[-1000285] = select(2,GetAchievementInfo(2398)),
 	[-1000286] = select(2,GetAchievementInfo(4400)),
 	[-1000373] = "New Character",
+	[-1000380] = "Bounty",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -630,6 +632,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000266] = "This is a Battlegrounds-based event that coincides with the beginning of the Summer Olympic games. The only time this was celebrated was in 2008 to correspond to the Beijing Olympics, and although there appeared to be the intention to repeat this event, it never returned.",
 	[-1000272] = "This Category contains Things that probably exist in the game but no known source.",
 	[-1000284] = "This is a yearly recurring event that occurs between the beginning of November and the end of the year.",
+	[-1000380] = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -784,6 +787,7 @@ localize(L.HEADER_ICONS, {
 	[-1000285] = "Interface/Icons/inv_misc_celebrationcake_01",
 	[-1000286] = "Interface/Icons/inv_misc_celebrationcake_01",
 	[-1000373] = "1530081",
+	[-1000380] = "Interface/Icons/ability_hunter_markedfordeath",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -3570,10 +3574,12 @@ localize(L.HEADER_NAMES, {
 	[-1000235] = "Die Öffnung des Dunklen Portals",
 	[-1000236] = "Das Szepter der Sandstürme",
 	[-1000373] = "Neuer Charakter",
+	[-1000380] = "Kopfgeld",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
 	[-1000040] = "Ein Waffenmeister ist ein NPC, der Charakteren die Möglichkeit bietet, bestimmte Waffenfertigkeiten zu erlernen, deren Verfügbarkeit von Waffenmeister zu Waffenmeister unterschiedlich ist. Alle Waffenfähigkeiten können auf Stufe 1 trainiert werden, mit Ausnahme von Stangenwaffen, für die Stufe 20 erforderlich ist.\n\nDas Training mit einem Waffenmeister wurde in Patch 4.0.1 obsolet, da nun alle klassengerechten Waffenfertigkeiten von jeder Klasse bei der Erstellung erlernt werden. Waffenmeister wurden kurz darauf aus dem Spiel entfernt.",
+	[-1000380] = "Diese Liste enthält nicht erhältliche Gegenstände, die von ATT Discord als Fehler gemeldet wurden, die Blizzard noch beheben muss.\n\nHINWEIS: Alle Filter werden aus Sichtbarkeitsgründen in dieser Liste ignoriert. In dieser Liste sind nur Gegenstände enthalten, die aufgrund von Fahrlässigkeit aus dem Spiel entfernt wurden, und nicht ein riesiger feuerspeiender Drache.\n\nAn Blizzard-Entwickler: Bitte beheben Sie die unten aufgeführten Gegenstände und Begegnungen.",
 });
 localize(_.ObjectNames, {
 	[31] = "Alte Löwenstatue",
@@ -4394,9 +4400,11 @@ localize(L.HEADER_NAMES, {
 	[-1000235] = "La apertura del Portal Oscuro",
 	[-1000236] = "El cetro del Mar de Dunas",
 	[-1000373] = "Nueva personaje",
+	[-1000380] = "Prima",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
+	[-1000380] = "Esta lista contiene elementos inalcanzables que ATT Discord ha informado como errores que Blizzard aún no ha solucionado.\n\nNOTA: Todos los filtros se ignoran en esta lista para mayor visibilidad. En esta lista solo están presentes los elementos eliminados del juego debido a negligencia y no a un gigantesco dragón que escupe fuego.\n\nA los desarrolladores de Blizzard: arreglen los elementos y encuentros que se enumeran a continuación.",
 });
 localize(_.ObjectNames, {
 	[31] = "Estatua de león antigua",
@@ -5242,10 +5250,12 @@ localize(L.HEADER_NAMES, {
 	[-1000244] = "Edition Collector",
 	[-1000247] = "Édition BC Classic Deluxe",
 	[-1000373] = "Nouveau personnage",
+	[-1000380] = "Prime",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
 	[-1000040] = "Un maître d'armes est un PNJ qui offre aux personnages la possibilité d'apprendre des compétences d'armes spécifiques, dont la disponibilité varie d'un maître d'armes à l'autre. Toutes les compétences d'armes peuvent être entraînées au niveau 1, à l'exception des armes d'hast qui nécessitent le niveau 20.\n\nL'entraînement avec un maître d'armes est devenu obsolète dans le patch 4.0.1, car toutes les compétences d'armes appropriées à la classe sont désormais apprises par chaque classe lors de sa création. Les maîtres d'armes ont été retirés du jeu peu de temps après.",
+	[-1000380] = "Cette liste contient des éléments impossibles à obtenir que ATT Discord a signalés comme des bogues que Blizzard n'a pas encore corrigés.\n\nREMARQUE : Tous les filtres sont ignorés dans cette liste pour des raisons de visibilité. Seuls les éléments retirés du jeu en raison d'une négligence plutôt que d'un gigantesque dragon cracheur de feu sont présents sur cette liste.\n\nAux développeurs de Blizzard : veuillez corriger les éléments et les rencontres répertoriés ci-dessous.",
 });
 localize(_.ObjectNames, {
 	[31] = "Statue du vieux lion",
@@ -6069,6 +6079,10 @@ localize(L.HEADER_NAMES, {
 	[-1000235] = "L'apertura del Portale Oscuro",
 	[-1000236] = "Scettro delle Sabbie Mutevoli",
 	[-1000373] = "Nuovo personaggio",
+	[-1000380] = "Premio",
+});
+localize(L.HEADER_DESCRIPTIONS, {
+	[-1000380] = "Questo elenco contiene elementi non ottenibili che ATT Discord ha segnalato come bug che Blizzard deve ancora correggere.\n\nNOTA: tutti i filtri vengono ignorati in questo elenco per motivi di visibilità. In questo elenco sono presenti solo gli oggetti rimossi dal gioco a causa di negligenza e non un gigantesco drago sputafuoco.\n\nAgli sviluppatori Blizzard: correggete gli oggetti e gli incontri elencati di seguito.",
 });
 localize(_.ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
@@ -6854,9 +6868,11 @@ localize(L.HEADER_NAMES, {
 	[-1000235] = "어둠의 문 열기",
 	[-1000236] = "흐르는 모래의 홀",
 	[-1000373] = "새로운 캐릭터",
+	[-1000380] = "하사품",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "웨폰 마스터는 캐릭터에게 특정 무기 기술을 배울 수 있는 기회를 제공하는 NPC로, 사용 가능 여부는 웨폰 마스터마다 다릅니다. 모든 무기 기술은 레벨 20이 필요한 폴암을 제외하고 레벨 1에서 훈련할 수 있습니다.\n\n4.0.1 패치에서는 각 병과가 생성 시 모든 병과에 적합한 무기 숙련도를 배우게 되므로 무기 전문가와의 훈련은 더 이상 필요하지 않게 되었습니다. 무기 마스터는 곧 게임에서 제거되었습니다.",
+	[-1000380] = "이 목록에는 ATT Discord에서 Blizzard가 아직 수정하지 않은 버그로 보고한 얻을 수 없는 항목이 포함되어 있습니다.\n\n참고: 가시성을 위해 이 목록 내에서 모든 필터는 무시됩니다. 거대한 불을 뿜는 용이 아닌 부주의로 인해 게임에서 제거된 아이템만 이 목록에 있습니다.\n\n블리자드 개발자 여러분께: 아래 나열된 아이템과 만남을 수정해 주세요.",
 });
 localize(_.ObjectNames, {
 	[31] = "오래된 사자상",
@@ -7658,9 +7674,11 @@ localize(L.HEADER_NAMES, {
 	[-1000235] = "A abertura do Portal Negro",
 	[-1000236] = "Cetro das Areias Cambiantes",
 	[-1000373] = "Novo personagem",
+	[-1000380] = "Recompensa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Um mestre de armas é um NPC que oferece aos personagens a oportunidade de aprender habilidades específicas com armas, cuja disponibilidade varia de um mestre de armas para outro. Todas as habilidades com armas podem ser treinadas no nível 1, exceto as armas de haste, que exigem nível 20.\n\nO treinamento com um mestre de armas tornou-se obsoleto no Patch 4.0.1, já que todas as proficiências de armas apropriadas à classe agora são aprendidas por cada classe após a criação. Os mestres de armas foram removidos do jogo logo depois.",
+	[-1000380] = "Esta lista contém itens inacessíveis que o ATT Discord relatou como bugs que a Blizzard ainda não corrigiu.\n\nNOTA: Todos os filtros são ignorados nesta lista para visibilidade. Apenas itens removidos do jogo por negligência, em vez de um gigantesco dragão cuspidor de fogo, estão presentes nesta lista.\n\nPara os desenvolvedores da Blizzard: Corrijam os itens e encontros listados abaixo.",
 });
 localize(_.ObjectNames, {
 	[31] = "Estátua de Leão Antiga",
@@ -8501,11 +8519,13 @@ localize(L.HEADER_NAMES, {
 	[-1000272] = "Без Источника",
 	[-1000284] = "Годовщина WoW",
 	[-1000373] = "Новый персонаж",
+	[-1000380] = "Премия",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
 	[-1000033] = "Штучки, которые можно получить в награду с разного контента в родительской секции.\nОни собраны здесь, чтобы уменьшить количество источников, когда Штучка доступна из многих мест.",
 	[-1000040] = "Мастер оружия - это NPC, который предлагает персонажам возможность изучить определенные навыки обращения с оружием, доступность которых варьируется от одного мастера к другому. Все навыки обращения с оружием можно изучить на уровне 1, кроме древкового оружия, для которого требуется уровень 20.\n\nОбучение с мастером оружия стало устаревшим в патче 4.0.1, так как все соответствующие классу навыки владения оружием теперь изучаются каждым классом при создании. Вскоре после этого из игры были удалены мастера оружия.",
+	[-1000380] = "Этот список содержит Недоступные предметы, что Дискорд ATT сообщил как ошибки, которые Blizzard ещё не исправили.\n\nВНИМАНИЕ: Все фильтры игнорируются в данном списке для видимости. Только предметы, удалённые из игры из-за халатности, но не из-за гигантского огнедышащего дракона, перечислены в данном списке.\n\nК разработчикам Blizzard: Пожалуйста, почините предметы и события, перечисленные ниже.",
 });
 localize(_.ObjectNames, {
 	[31] = "Статуя старого льва",
@@ -9373,11 +9393,13 @@ localize(L.HEADER_NAMES, {
 	[-1000263] = "可口可乐活动",
 	[-1000272] = "无来源",
 	[-1000373] = "新角色",
+	[-1000380] = "赏金任务",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
 	[-1000033] = "包含有奖励或可从包含部分中的其他内容获得的事物。\n在此处合并以减少来自许多可能重复来源。",
 	[-1000040] = "武器大师是一个 NPC，为角色提供学习特定武器技能的机会，不同武器大师的可用性各不相同。所有武器技能都可以在 1 级进行训练，长柄武器除外，需要 20 级。\n\n在补丁 4.0.1 中，武器大师的训练已经过时，因为现在每个班级在创建时都会学习所有适合班级的武器熟练程度。不久之后，武器大师就被从游戏中删除了。",
+	[-1000380] = "此列表包含 ATT Discord 报告的无法获取的物品，这些物品是暴雪尚未修复的错误。\n\n注意：在此列表中忽略所有过滤器以获得可见性。此列表中仅显示因疏忽而从游戏中移除的物品。\n\n致暴雪开发者：请修复下面列出的物品和事件。",
 });
 localize(_.ObjectNames, {
 	[31] = "陈旧的石狮子",

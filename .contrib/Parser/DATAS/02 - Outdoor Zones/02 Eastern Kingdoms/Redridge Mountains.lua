@@ -1957,6 +1957,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(1462, {	-- Ring of the Shadow
 					["timeline"] = { "removed 4.0.3" },
+					-- #if AFTER 10.1.7
+					["isBounty"] = true,
+					-- #endif
 					["cr"] = 429,	-- Shadowhide Darkweaver
 					["coords"] = {
 						{ 70.4, 40.6, REDRIDGE_MOUNTAINS },

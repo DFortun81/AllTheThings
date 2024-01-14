@@ -825,9 +825,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 						-- #endif
 					}),
 					i(21482, {	-- Boots of the Fiery Sands
-						-- #if BEFORE 10.1.7
+						-- #if BEFORE 10.1.
 						["description"] = "This item was originally a Horde exclusive drop for Shamans during vanilla. Sometime after TBC Prepatch, this item disappeared from the loot table. Please @Crieve if you get it to drop.",
-						-- #if BEFORE 2.0.1
+						-- #if AFTER 2.0.1
+						["isBounty"] = true,
+						-- #else
 						["races"] = HORDE_ONLY,
 						-- #endif
 						-- #endif

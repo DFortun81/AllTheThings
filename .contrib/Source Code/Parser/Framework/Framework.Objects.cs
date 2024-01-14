@@ -1498,6 +1498,7 @@ end");
                         case "altQuestID":
                         case "altQuests":
                         case "sourceQuests":
+                        case "isBounty":
                         case "isLimited":
                         case "isDaily":
                         case "isWeekly":
@@ -1769,6 +1770,7 @@ end");
                     case "pb":
                     case "isBreadcrumb":
                     case "DisablePartySync":
+                    case "isBounty":
                     case "isLimited":
                     case "isDaily":
                     case "isWeekly":

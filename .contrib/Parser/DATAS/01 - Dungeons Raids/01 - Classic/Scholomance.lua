@@ -906,6 +906,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		i(14543, {	-- Darkshade Gloves
 			-- #if AFTER 2.0.1
 			["description"] = "This item was appears to have been forgotten about. Please @Crieve if you get it to drop.",
+			["isBounty"] = true,
 			-- #endif
 			["timeline"] = { "removed 2.0.1" },
 		}),

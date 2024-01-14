@@ -468,6 +468,7 @@ namespace ATT
                     case "collectible":
                     case "equippable":
                     case "repeatable":
+                    case "isBounty":
                     case "isLimited":
                     case "isDaily":
                     case "isWeekly":
