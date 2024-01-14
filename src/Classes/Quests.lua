@@ -1314,8 +1314,12 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	end,
 	icon = function(t)
 		return app.GetIconFromProviders(t)
+			or (t.isWorldQuest and GetWorldQuestIcon(t))
 			or (t.repeatable and RepeatableQuestIcon)
 			or DefaultQuestIcon;
+	end,
+	repeatable = function(t)
+		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest
 	end,
 	model = function(t)
 		if t.providers then
@@ -1350,6 +1354,9 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	trackable = app.ReturnTrue,
 	saved = function(t)
 		return IsQuestSaved(t.questID);
+	end,
+	timeRemaining = function(t)
+		return t.isWorldQuest and GetQuestTimeLeftMinutes(t.questID) or nil;
 	end,
 
 	-- These are Retail fields that aren't used in Classic... yet?
@@ -1489,9 +1496,10 @@ not app.IsClassic and "AsBreadcrumbWithLockCriteria" or false, {
 	-- Retail: Breadcrumbs are just regular quests, or they can be locked and you still want to collect them (via Party Sync)... because why not?
 	end or CollectibleAsQuestOrAsLocked,
 	locked = LockedAsBreadcrumb,
-}, (function(t) return t.isBreadcrumb; end),
--- Both: World Quests
-"AsWorldQuest", {
+}, (function(t) return t.isBreadcrumb; end)
+-- Both: World Quests (Baked back into Quest for now since multiple types can be WorldQuests)
+--[[
+,"AsWorldQuest", {
 	icon = function(t)
 		return app.GetIconFromProviders(t) or GetWorldQuestIcon(t);
 	end,
@@ -1501,7 +1509,9 @@ not app.IsClassic and "AsBreadcrumbWithLockCriteria" or false, {
 	timeRemaining = function(t)
 		return GetQuestTimeLeftMinutes(t.questID);
 	end,
-}, (function(t) return (t.isWorldQuest or IsWorldQuest(t)); end));
+}, (function(t) return (t.isWorldQuest or IsWorldQuest(t)); end)
+--]]
+);
 
 app.CreateQuest = createQuest;
 app.CreateQuestWithFactionData = function(t)
