@@ -47,6 +47,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(200871),	-- Steamed Scarab Steak
 				},
 			}),
+			n(203769, {	-- Bartender Bob
+				["coord"] = { 52.2, 81.6, THALDRASZUS },
+				["groups"] = {
+					i(206521),	-- Single Black Coffee (QI!)
+				},
+			}),
 		}),
 	}),
 })));

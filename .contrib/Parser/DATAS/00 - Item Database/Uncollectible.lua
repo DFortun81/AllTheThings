@@ -565,11 +565,13 @@ i(202065);	-- Static Sand
 i(194685);	-- Dragonspring Water
 i(194689);	-- Anchovy Crisps
 i(194692);	-- Distilled Fish Juice
+i(194694);	-- Seasoned Hornswog Steak
 i(195455);	-- Argali Cheese
 i(195459);	-- Argali Milk
 i(196540);	-- Broadhoof Tail Poutine
 i(196584);	-- Acorn Milk
 i(197853);	-- Critter Kebab
+i(197854);	-- Enchanted Argali Tenderloin
 i(198442);	-- Bogthwottle's Shrinky-Do
 i(200304);	-- Stored Dracthyr Rations
 i(200305);	-- Dracthyr Water Rations
@@ -723,6 +725,7 @@ i(192723);	-- Springy Tongue
 i(192724);	-- Terrifying Teeth
 i(192726);	-- Thunderhorn
 i(192727);	-- Timeless Horns
+i(192728);	-- Undamaged Silk Gland
 i(192729);	-- Unhinged Mandible
 i(192730);	-- Unstable Arcane Essence
 i(192746);	-- Curio of Yore

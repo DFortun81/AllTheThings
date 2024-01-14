@@ -1502,9 +1502,6 @@ root(ROOTS.Unsorted, {
 			}),
 		})),
 		tier(DF_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
-			n(QUEST_ITEMS, {
-				i(206521),	-- Single Black Coffee
-			}),
 			n(QUESTS, {
 				--10.1.5.49516
 				q(76267),	--
@@ -1866,7 +1863,6 @@ root(ROOTS.Unsorted, {
 				i(193391),	-- Time-Worn Fang
 				i(201204),	-- Tooth Bracelet
 				i(192665),	-- Torn Dragon Wing
-				i(192728),	-- Undamaged Silk Gland
 				i(201168),	-- Untainted Scales
 				i(192731),	-- Venomous Fang
 				i(201177),	-- Wooden Eagle Statue
@@ -2031,7 +2027,6 @@ root(ROOTS.Unsorted, {
 				i(200262),	-- Do-It-Yourself Part Building Kit
 				i(191287),	-- Dragonscale Expedition Crate
 				i(194678),	-- Elemental Crystal
-				i(197854),	-- Enchanted Argali Tenderloin
 				i(200767),	-- Energized Crystal
 				i(200818),	-- Eternal Flame
 				i(200929),	-- Everglow Nectar
@@ -2114,7 +2109,6 @@ root(ROOTS.Unsorted, {
 				i(200619),	-- Scaralesh's Special
 				i(194887),	-- Scrap Trap
 				i(200593),	-- Sealed Expedition Note
-				i(194694),	-- Seasoned Hornswog Steak
 				i(195463),	-- Seasoned Mudstomper Belly
 				i(200775),	-- Self-Luminous Orb
 				i(200851),	-- Self-Trimming Bonsai
