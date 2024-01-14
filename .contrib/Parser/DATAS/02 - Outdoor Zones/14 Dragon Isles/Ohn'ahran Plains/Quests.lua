@@ -805,6 +805,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 186649 },	-- Khasar
 					["coord"] = { 83.4, 32.3, OHNAHRAN_PLAINS },
 					["g"] = {
+						i(192054),	-- Medallion of a Fallen Friend (QI!)
 						i(197668),	-- Roscha's Band of Remembrance
 					},
 				}),

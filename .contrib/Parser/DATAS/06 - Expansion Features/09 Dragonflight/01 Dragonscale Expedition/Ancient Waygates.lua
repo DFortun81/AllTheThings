@@ -115,6 +115,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					["groups"] = {
+						i(200587),	-- Leatherbound Expedition Note (QI!)
+					},
 				}),
 				q(71138, {	-- Waygate: Rusza'thar Reach
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 8 },	-- Dragonscale Expedition Renown 8
@@ -286,6 +289,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					["groups"] = {
+						i(200593),	-- Sealed Expedition Note (QI!)
+					},
 				}),
 				------ RENOWN 17 ------
 				q(71149, {	-- Continued Waygate Exploration
@@ -296,6 +302,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					["groups"] = {
+						i(200594),	-- Thaelin's Second Favorite Comb
+					},
 				}),
 				------ RENOWN 20 ------
 				q(71150, {	-- Continued Waygate Exploration
@@ -306,6 +315,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
+					["groups"] = {
+						i(200595),	-- Odorous Parchment (QI!)
+					},
 				}),
 				------ RENOWN 23 ------
 				q(71151, {	-- Continued Waygate Exploration

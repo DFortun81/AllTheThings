@@ -562,32 +562,78 @@ i(202065);	-- Static Sand
 -- PATCH 10.0.0 --
 ------------------
 --- Vendor (White) ---
+i(194680);	-- Jerky Surprise
+i(194682);	-- Mother's Gift
 i(194685);	-- Dragonspring Water
+i(194688);	-- Vorquin Filet
 i(194689);	-- Anchovy Crisps
 i(194692);	-- Distilled Fish Juice
+i(194693);	-- Improvised Sushi
 i(194694);	-- Seasoned Hornswog Steak
+i(194695);	-- Ramloaf
+i(194887);	-- Scrap Trap
+i(194889);	-- XD-57 "Bullseye" Guided Rocket Kit
 i(195455);	-- Argali Cheese
+i(195456);	-- Plains Flatbread
+i(195457);	-- Mammoth Jerky
+i(195458);	-- Forager's Stew
 i(195459);	-- Argali Milk
+i(195462);	-- Fried Hornstrider Wings
+i(195463);	-- Seasoned Mudstomper Belly
 i(196540);	-- Broadhoof Tail Poutine
+i(196582);	-- Syrup-Drenched Toast
+i(196583);	-- Greenberry Toast
 i(196584);	-- Acorn Milk
+i(196585);	-- Plainswheat Pretzel
+i(197847);	-- Gorloc Fin Soup
+i(197850);	-- Mammoth Dumpling
+i(197851);	-- Extra Crispy Mutton
+i(197852);	-- Goat Brisket
 i(197853);	-- Critter Kebab
 i(197854);	-- Enchanted Argali Tenderloin
 i(198442);	-- Bogthwottle's Shrinky-Do
+i(198452);	-- Prototype F
+i(198453);	-- Unstable Azerite Grenade
+i(198486);	-- Windscale Rider
+i(200099);	-- M.R.E.
 i(200304);	-- Stored Dracthyr Rations
 i(200305);	-- Dracthyr Water Rations
+i(200619);	-- Scaralesh's Special
+i(200680);	-- Maruukai Mule
+i(200681);	-- Ohn Lite
 i(201327);	-- Emerald Dreamtime
 i(201427);	-- Fleeting Sands
 i(201428);	-- Quicksilver Sands
 i(201436);	-- Temporally-Locked Sands
 i(201438);	-- Weary Sands
+--- Vendor (Trash) ---
+i(200620);	-- Inflaming Incense
+i(200621);	-- Soothing Incense
+i(200622);	-- Focusing Incense
+i(200623);	-- Wind-Grown Grass
+i(200637);	-- Talisman of the Maruuk
+i(200639);	-- Talisman of Ohn'ahra
 --- White Consumables Character Created ---
 i(198831);	-- Conjured Snow in a Cone
 i(198832);	-- Conjured Blubbery Muffin
 i(198833);	-- Conjured Celebratory Cake
 --- Dragon Isle Supplies Items ---
+i(200221);	-- Gorloc Crystals
+i(200553);	-- Panthis Nectar
 i(200554);	-- Dropcap Head
+i(200588);	-- Meaty Stem
+i(200589);	-- Hydro Life Seed
+i(200692);	-- Gift of the Grove
+i(200696);	-- Winter Berries
 i(200697);	-- Blightshroom
+i(200698);	-- Ley Orb
+i(200701);	-- Titian Extract
+i(200702);	-- Magenta Titian Extract
+i(200704);	-- Gratona Seed
+i(200705);	-- Thaldraszus Root
+i(200929);	-- Everglow Nectar
 --- Trash ---
+i(192089);	-- Fresh Vorquin Carcass
 i(192769);	-- Cracked Spear
 i(193860);	-- Snapped Wand
 i(193849);	-- Emptied Satchel
@@ -606,12 +652,16 @@ i(194973);	-- Reclaim Concoctions
 i(195572);	-- Empty Elixir
 i(198390);	-- Milling
 i(198440);	-- Discounted Meat
+i(198456);	-- Oliveye Fry
 i(198688);	-- Catnip Leaf
 i(198830);	-- Conjured Tasty Hatchling's Treat
+i(199646);	-- Imbu Tuskarr Bandages
 i(200248);	-- Cooked Book
 i(200685);	-- Enchanted Compass
 i(200764);	-- Slimy Shinies
+i(200765);	-- Reed Sculpture
 i(200766);	-- Bakar Fangs
+i(200767);	-- Energized Crystal
 i(200768);	-- Assorted Salamanther Lures
 i(200769);	-- Ceramic Shards
 i(200770);	-- A Brief History of Azeroth
@@ -619,40 +669,57 @@ i(200771);	-- Projected Starmap
 i(200772);	-- Knowledge Discs
 i(200773);	-- Otherworldly Artifact
 i(200774);	-- Contained Void Sample
+i(200776);	-- Igneous Rock Sculpture
 i(200777);	-- Obsidian Shards
 i(200778);	-- Lava Blowing for Dummies
 i(200780);	-- Dragon Horns
+i(200781);	-- Rejuvenating Ashes
 i(200782);	-- Bejeweled Horseshoes
 i(200783);	-- Adorned Ohunan Jess
+i(200784);	-- Hunting Trophies
+i(200787);	-- Strong Exotic Spices
 i(200791);	-- Braided Ottuk Hair Fishing Line
 i(200792);	-- Taxidermied Catch
+i(200796);	-- Rotting Wood Totem
+i(200797);	-- Repulsive Perfume
 i(200798);	-- Bottled Diseased Parasites
 i(200799);	-- Decaying Pelt Bolt
 i(200802);	-- Signet of the Dragonflights
+i(200803);	-- Through the Stained-Glass
 i(200804);	-- Ancestor's Scales
 i(200805);	-- Fallen Watcher Remains
 i(200806);	-- Woodcarving Stone
+i(200807);	-- Wooden Ursine Figure
+i(200809);	-- Trinket-Packed Collar
 i(200810);	-- Wooden Stonegrabber Figurine
 i(200811);	-- Congealed Sap Droplet
+i(200812);	-- Unmelting Crystalline Structure
 i(200814);	-- Congealing Shard
 i(200815);	-- Deposited
 i(200817);	-- Azure Splinters
+i(200818);	-- Eternal Flame
 i(200819);	-- Volatile Sparks
 i(200820);	-- Dry Wood Log
 i(200821);	-- Celsius 232
 i(200822);	-- Jar of Ashes
 i(200825);	-- Assorted Debris
 i(200826);	-- Stored Humid Air
+i(200827);	-- Weathered Sculpture
 i(200828);	-- Pocketed Clouds
+i(200830);	-- Instantly Drying Clay
+i(200831);	-- Opalescent Figure
+i(200833);	-- Titan Watcher Replica
 i(200834);	-- Can You Smell It?
 i(200835);	-- Sand Pouch
 i(200837);	-- So You Think You Can Rune?
 i(200838);	-- Insignia of the Kirin Tor
 i(200839);	-- Magical Cleaning Broom
 i(200840);	-- Encyclopaedia Draeconica Set
+i(200846);	-- Fletching-less Arrows
 i(200848);	-- Decorative Bouquet
 i(200849);	-- Tear of the Dreamer
 i(200850);	-- Dream-Infused Seed
+i(200851);	-- Self-Trimming Bonsai
 i(200853);	-- How to Grow a Tree in 10 Days
 i(201361);	-- Primal Inspiration
 i(201466);	-- Mote of Dreams
