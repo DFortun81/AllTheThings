@@ -244,7 +244,9 @@ root(ROOTS.BlackMarket, bubbleDown({ ["u"] = BLACK_MARKET, },{
 		i(48126),	-- Razzashi Hatchling (PET!)
 		i(34492),	-- Rocket Chicken (PET!)
 		i(45606),	-- Sen'jin Fetish (PET!)
-		i(69992),	-- Shimmering Wyrmling (PET!)
+		i(69992, {	-- Shimmering Wyrmling (PET!)
+			["description"] = "Can also be bought from the Wrath of the Lich King Argent Tournament Vendor.\n\nBlizzard made 3 different Items which all learn the same pet.",
+		}),
 		i(94152),	-- Son of Animus (PET!)
 		i(38050),	-- Ethereal Soul-Trader (PET!)
 		i(49343),	-- Spectral Tiger Cub (PET!)

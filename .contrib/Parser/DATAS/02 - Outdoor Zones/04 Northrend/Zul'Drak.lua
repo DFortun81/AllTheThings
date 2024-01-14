@@ -414,7 +414,7 @@ root(ROOTS.Zones, {
 						["altQuests"] = { 12713 },	-- Betrayal
 						["sourceQuest"] = 12649,	-- Suit Up!
 						["coord"] = { 19.8, 75.4, ZULDRAK },
-						["description"] = "Must be on |cFFFFD700Suit Up!|r to see this quest.\n\nWARNING: Once you complete |cFFFFD700Betrayal|r this quest will become unavailable forever!",
+						["description"] = "Must be on |cFFFFD700Suit Up!|r or |cFFFFD700Dressing Down|r to see this quest.\n\nWARNING: Once you complete |cFFFFD700Betrayal|r this quest will become unavailable forever!",
 						["groups"] = {
 							i(39812),	-- Soiled Trousers
 							i(39876),	-- Aged Abomination Tripe
