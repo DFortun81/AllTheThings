@@ -376,8 +376,8 @@ app.CreateClass = function(className, classKey, fields, ...)
 		for i=1,total,3 do
 			local subclassName = args[i];
 			if subclassName then
-				local class = args[i + 1];
 				local conditional = args[i + 2];
+				local class = args[i + 1];
 				if class then
 					for key,method in pairs(fields) do
 						if not rawget(class, key) then
@@ -395,8 +395,20 @@ app.CreateClass = function(className, classKey, fields, ...)
 						local simplemeta = BaseObjectFields(simpleclass, "Simple" .. className .. subclassName);
 						class.simplemeta = function(t) return simplemeta; end;
 					end
-					local a,b;
 					local subclass = BaseObjectFields(class, className .. subclassName);
+					local variants = class.variants;
+					if variants then
+						local subbase = function(t, key) return subclass.__index; end
+						for j,variant in ipairs(variants) do
+							for key,method in pairs(class) do
+								if not rawget(variant, key) then
+									variant[key] = method;
+								end
+							end
+							variant.base = subbase;
+						end
+					end
+					local a,b;
 					tinsert(conditionals, function(t)
 						a,b = conditional(t);
 						if a then
