@@ -377,7 +377,7 @@ app.CreateClass = function(className, classKey, fields, ...)
 			local subclassName = args[i];
 			if subclassName then
 				local class = args[i + 1];
-				tinsert(conditionals, args[i + 2]);
+				local conditional = args[i + 2];
 				if class then
 					for key,method in pairs(fields) do
 						if not rawget(class, key) then
@@ -395,9 +395,18 @@ app.CreateClass = function(className, classKey, fields, ...)
 						local simplemeta = BaseObjectFields(simpleclass, "Simple" .. className .. subclassName);
 						class.simplemeta = function(t) return simplemeta; end;
 					end
-					tinsert(conditionals, BaseObjectFields(class, className .. subclassName));
+					local a,b;
+					local subclass = BaseObjectFields(class, className .. subclassName);
+					tinsert(conditionals, function(t)
+						a,b = conditional(t);
+						if a then
+							if b then return true; end
+							setmetatable(t, subclass);
+							return true;
+						end
+					end);
 				else
-					tinsert(conditionals, {});
+					tinsert(conditionals, conditional);
 				end
 			end
 		end
@@ -406,9 +415,9 @@ app.CreateClass = function(className, classKey, fields, ...)
 		Class = BaseObjectFields(fields, className);
 		local classConstructor = function(id, t)
 			t = constructor(id, t, classKey);
-			for i=1,total,2 do
+			for i=1,total,1 do
 				if conditionals[i](t) then
-					return setmetatable(t, conditionals[i + 1]);
+					return t;
 				end
 			end
 			return setmetatable(t, Class);
