@@ -411,7 +411,7 @@ app.CreateClass = function(className, classKey, fields, ...)
 					end
 					local a,b;
 					tinsert(conditionals, function(t)
-						a,b = conditional(t, subclass);
+						a,b = conditional(t, variants);
 						if a then
 							if b then return true; end
 							setmetatable(t, subclass);
@@ -635,14 +635,44 @@ local fieldsWithFeeling = {
 		end
 	end
 };
+local fieldsWithWorldQuest = {
+	Test = function(t)
+		return "AsWorldQuest";
+	end,
+	OnTest = function()
+		return function(t)
+			print(t.name .. " (" .. t.__type .. "): I'm a subvariant!");
+		end
+	end,
+	variants = {
+		AndReputation = {
+			Test = function(t)
+				return "AndReputation";
+			end,
+		},
+	},
+};
+local WorldQuestConditional = function(t, variants)
+	if t.isWorldQuest then
+		if t.maxReputation then
+			setmetatable(t, variants.AndReputation);
+			return true, true;
+		end
+		return true;
+	end
+end;
 app.CreateExample = app.CreateClass("Example", "exampleID", fields,
 	"WithArgs", fieldsWithArgs, (function(t) return t.args; end),
-	"WithFeeling", fieldsWithFeeling, (function(t) return t.feeling; end));
+	"WithFeeling", fieldsWithFeeling, (function(t) return t.feeling; end),
+	"WithWorldQuest", fieldsWithWorldQuest, WorldQuestConditional);
 
 for i,instance in ipairs({
 	app.CreateExample(1),
 	app.CreateExample(2, { name = "Alligator Loki", args = "I'm a Crocodile!" }),
 	app.CreateExample(3, { name = "Sylvie", feeling = "Pretty Neat" }),
+	app.CreateExample(4, { name = "World Quest Loki", isWorldQuest = true }),
+	app.CreateExample(5, { name = "WQ Reputation Loki", isWorldQuest = true, maxReputation = true }),
+	app.CreateExample(5, { name = "Reputation Loki", maxReputation = true }),
 }) do
 	instance.OnTest(instance);
 end
