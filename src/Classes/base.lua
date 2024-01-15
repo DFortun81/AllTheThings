@@ -410,7 +410,7 @@ app.CreateClass = function(className, classKey, fields, ...)
 					end
 					local a,b;
 					tinsert(conditionals, function(t)
-						a,b = conditional(t);
+						a,b = conditional(t, subclass);
 						if a then
 							if b then return true; end
 							setmetatable(t, subclass);
