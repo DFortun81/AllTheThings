@@ -1344,8 +1344,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(12335),	-- Gemstone of Smolderthorn
 					i(12582),	-- Keris of Zul'Serak
 					i(13175, {	-- Voone's Twitchbow [CRIEVE NOTE: This item seems to have disappeared with TBC Classic.]
-						-- #if ANYCLASSIC
-						["description"] = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
+						-- #if BEFORE 10.1.7
+						-- #if AFTER 2.0.1
+						["description"] = "This item was appears to have been forgotten about. Please @Crieve if you get it to drop.",
+						["isBounty"] = true,
+						-- #endif
 						-- #endif
 						["timeline"] = { "removed 2.0.1", "added 10.1.7" },
 					}),
