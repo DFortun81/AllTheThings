@@ -25,33 +25,34 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 	tier(LEGION_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18839, {	-- Broken Isles Mining Techniques
-				crit(61523, {	-- Empyrium Deposit
-					["sourceQuests"] = { 48036 },	-- Precision Perfected
-				}),
-				crit(61524, {	-- Empyrium Seam
-					["sourceQuests"] = { 48039 },	-- Balancing the Break
-				}),
-				crit(61516, {	-- Leystone Deposit
-					["sourceQuests"] = { 38792 },	-- Rethu's Lesson
-				}),
-				crit(61517, {	-- Leystone Seam
-					["sourceQuests"] = { 38793 },	-- Rethu's Experience
-				}),
-				crit(61518, {	-- Living Leystone
-					["sourceQuests"] = { 38794 },	-- Rethu's Sacrifice
-				}),
-				crit(61519, {	-- Felslate Deposit
-					["sourceQuests"] = { 38803 },	-- Rin'thissa
-				}),
-				crit(61520, {	-- Felslate Seam
-					["sourceQuests"] = { 38804 },	-- Lyrelle
-				}),
-				crit(61521, {	-- Living Felslate
-					["sourceQuests"] = { 38805 },	-- Ondri
-				}),
-				crit(61522, {	-- Infernal Brimstone
-					["sourceQuests"] = { 39830 },	-- Hellfire Citadel: Hellfire and Brimstone
-				}),
+				-- Parser handles this automatically more cleanly now [the criteria are from learning the Recipes themselves]
+				-- crit(61523, {	-- Empyrium Deposit
+				-- 	["sourceQuests"] = { 48036 },	-- Precision Perfected
+				-- }),
+				-- crit(61524, {	-- Empyrium Seam
+				-- 	["sourceQuests"] = { 48039 },	-- Balancing the Break
+				-- }),
+				-- crit(61516, {	-- Leystone Deposit
+				-- 	["sourceQuests"] = { 38792 },	-- Rethu's Lesson
+				-- }),
+				-- crit(61517, {	-- Leystone Seam
+				-- 	["sourceQuests"] = { 38793 },	-- Rethu's Experience
+				-- }),
+				-- crit(61518, {	-- Living Leystone
+				-- 	["sourceQuests"] = { 38794 },	-- Rethu's Sacrifice
+				-- }),
+				-- crit(61519, {	-- Felslate Deposit
+				-- 	["sourceQuests"] = { 38803 },	-- Rin'thissa
+				-- }),
+				-- crit(61520, {	-- Felslate Seam
+				-- 	["sourceQuests"] = { 38804 },	-- Lyrelle
+				-- }),
+				-- crit(61521, {	-- Living Felslate
+				-- 	["sourceQuests"] = { 38805 },	-- Ondri
+				-- }),
+				-- crit(61522, {	-- Infernal Brimstone
+				-- 	["sourceQuests"] = { 39830 },	-- Hellfire Citadel: Hellfire and Brimstone
+				-- }),
 			}),
 		})),
 		header(HEADERS.Spell, 247850, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Empyrium Deposit [Rank 3]
