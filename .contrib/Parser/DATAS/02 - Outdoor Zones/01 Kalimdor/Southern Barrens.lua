@@ -847,7 +847,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Heartswood
-							["provider"] = { "i", 6912 },	-- Heartswood
+							["providers"] = {
+								{ "i", 6912 },	-- Heartswood
+								{ "o", 93192 },	-- Heartswood
+							},
 							["coord"] = { 31, 31, ASHENVALE },
 						}),
 					},

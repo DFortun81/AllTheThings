@@ -1388,7 +1388,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Heartswood
-							["provider"] = { "i", 6912 },	-- Heartswood
+							["providers"] = {
+								{ "i", 6912 },	-- Heartswood
+								{ "o", 93192 },	-- Heartswood
+							},
 							["coord"] = { 31, 31, ASHENVALE },
 						}),
 					},
@@ -2868,12 +2871,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4964, {	-- The Completed Orb of Dar'Orahil
 					["qg"] = 6266,	-- Menara Voidrender
-					["altQuests"] = { 4975 },	-- The Completed Orb of Noh'Orahil
 					["sourceQuests"] = {
 						4976,	-- Returning the Cleansed Orb
 						4962,	-- Shard of a Felhound
 					},
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
+					["lockCriteria"] = { 1, "questID", 4975 },	-- The Completed Orb of Noh'Orahil (mutually exclusive)
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { WARLOCK },
 					["lvl"] = 35,
@@ -2888,12 +2891,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4975, {	-- The Completed Orb of Noh'Orahil
 					["qg"] = 6266,	-- Menara Voidrender
-					["altQuests"] = { 4964 },	-- The Completed Orb of Dar'Orahil
 					["sourceQuests"] = {
 						4976,	-- Returning the Cleansed Orb
 						4963,	-- Shard of an Infernal
 					},
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
+					["lockCriteria"] = { 1, "questID", 4964 },	-- The Completed Orb of Dar'Orahil (mutually exclusive)
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { WARLOCK },
 					["lvl"] = 35,
