@@ -1,7 +1,7 @@
 -- App locals
 local appName, app = ...;
-local AssignChildren, SearchForField, SearchForFieldContainer
-	= app.AssignChildren, app.SearchForField, app.SearchForFieldContainer;
+local SearchForField, SearchForFieldContainer
+	= app.SearchForField, app.SearchForFieldContainer;
 local GetRelativeValue = app.GetRelativeValue;
 
 -- Implementation
@@ -167,7 +167,7 @@ app:GetWindow("Missing Quests", {
 					end
 					parent.g = filteredData;
 				end
-				AssignChildren(data);
+				self:AssignChildren();
 				data.OnUpdate = nil;
 			end,
 		};

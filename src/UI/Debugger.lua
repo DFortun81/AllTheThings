@@ -265,7 +265,7 @@ app:GetWindow("Debugger", {
 		self.data.index = 0;
 		self.data.back = 1;
 		self.data.indent = 0;
-		AssignChildren(self.data);
+		self:AssignChildren();
 		UpdateWindow(self, true);
 	end
 });

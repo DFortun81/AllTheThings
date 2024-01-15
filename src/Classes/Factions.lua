@@ -11,7 +11,6 @@ local pairs, type, ipairs, string_format, select, strtrim, math_min
 	= pairs, type, ipairs, string.format, select, strtrim, math.min
 
 -- App locals
-local AssignChildren = app.AssignChildren;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local ATTAccountWideData
 
