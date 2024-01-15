@@ -742,7 +742,7 @@ do
 						self.Model:SetFacing(rotation);
 						self.Model:SetCamDistanceScale(scale);
 						self.Model:SetDisplayInfo(displayID);
-						app.PrintDebug("SetDisplayInfo",displayID)
+						-- app.PrintDebug("SetDisplayInfo",displayID)
 						self.Model:Show();
 						shown = true
 					end
@@ -1263,6 +1263,11 @@ app.MergeSkipFields = {
 	["iconPath"] = true,
 	["costNested"] = true,
 	["hasUpgradeNested"] = true,
+	-- fields added to a group from GetCachedSearchResults
+	["tooltipInfo"] = true,
+	["working"] = true,
+	-- update cached info
+	["TLUG"] = true,
 	-- 1 -> only when cloning
 	["e"] = 1,
 	["u"] = 1,
