@@ -399,13 +399,14 @@ app.CreateClass = function(className, classKey, fields, ...)
 					local variants = class.variants;
 					if variants then
 						local subbase = function(t, key) return subclass.__index; end
-						for j,variant in ipairs(variants) do
+						for variantName,variant in pairs(variants) do
 							for key,method in pairs(class) do
 								if not rawget(variant, key) then
 									variant[key] = method;
 								end
 							end
 							variant.base = subbase;
+							variants[variantName] = BaseObjectFields(variant, className .. subclassName .. variantName);
 						end
 					end
 					local a,b;
