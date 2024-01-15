@@ -13,7 +13,7 @@ root(ROOTS.Secrets, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			},
 			["groups"] = {
 				i(206040, {	-- Mote of Nasz'uro (PET!)
-					["description"] = "You need to collect all the motes to receive this pet.",
+					["description"] = "You need to collect all 15 motes to receive this pet. Requires Quest Tracking to see the motes' Location.",
 				}),
 			},
 		}),
