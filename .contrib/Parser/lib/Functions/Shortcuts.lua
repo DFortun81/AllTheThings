@@ -1451,6 +1451,25 @@ translate = function(data, key)
 end
 end)();
 
+-- Create a Custom Object. Returns a UNIQUE ID, starting at 100000000.
+(function()
+local nextCustomObjectID = 100000000;
+createCustomObject = function(data)
+	if not data then
+		print("INVALID OBJECT: You must pass data into the createCustomObject function.");
+	elseif not data.readable then
+		print("INVALID OBJECT (missing 'readable')", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
+	elseif not (data.text and (type(data.text) == "string" or (type(data.text) == "table" and data.text.en))) then
+		print("INVALID OBJECT", data.readable, data.text);
+	else
+		local objectID = nextCustomObjectID;
+		ObjectDB[objectID] = data;
+		nextCustomObjectID = objectID + 1;
+		return objectID;
+	end
+end
+end)();
+
 do
 local itemDBConditional = ItemDBConditional;
 local CurrentProfessionID = ALCHEMY;

@@ -4,7 +4,9 @@ using ATT.FieldTypes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using static ATT.Export;
+using static ATT.Framework;
 
 namespace ATT
 {
@@ -680,7 +682,7 @@ namespace ATT
                 }
             }
             if (data.TryGetValue("flightPathID", out long flightPathID)) FLIGHTPATHS_WITH_REFERENCES[flightPathID] = true;
-            if (data.TryGetValue("objectID", out tempId)) ProcessObjectInstance(data, tempId);
+            if (data.TryGetValue("objectID", out tempId)) OBJECTS_WITH_REFERENCES[tempId] = true;
             if (data.TryGetValue("artifactID", out tempId) && !data.ContainsKey("sourceID") && Objects.ArtifactSources.TryGetValue(tempId, out Dictionary<string, long> sources))
             {
                 // off-hand artifact source
@@ -2344,7 +2346,7 @@ namespace ATT
                         MarkCustomHeaderAsRequired((long)pID);
                         break;
                     case "o":
-                        ProcessObjectInstance(data, (long)pID);
+                        OBJECTS_WITH_REFERENCES[(long)pID] = true;
                         break;
                     case "a":
                         break;
@@ -2854,113 +2856,6 @@ namespace ATT
                         Console.ReadLine();
                     }
                 }
-            }
-        }
-
-        /// <summary>
-        /// Process the Object Instance.
-        /// </summary>
-        /// <param name="data">The Object data.</param>
-        /// <param name="objectID">The Object ID.</param>
-        private static void ProcessObjectInstance(IDictionary<string, object> data, long objectID)
-        {
-            OBJECTS_WITH_REFERENCES[objectID] = true;
-            if (!ObjectDB.TryGetValue(objectID, out Dictionary<string, object> objectData))
-            {
-                objectData = new Dictionary<string, object>();
-                LogWarn($"OBJECT MISSING FOR {objectID}!", data);
-                if (data.TryGetValue("icon", out string icon))
-                {
-                    if (!objectData.ContainsKey("icon"))
-                    {
-                        // Assign the icon and then inform the engineer.
-                        objectData["icon"] = icon.Replace("\\", "/");
-                        LogWarn($"OBJECT ICON MISSING FOR {objectID} : ASSIGNED {icon} FROM SOURCE.");
-                        if (!DebugMode)
-                        {
-                            Log("Activating Debug Mode! (Press Enter to continue...)");
-                            Log("Update ObjectDB.lua from the Debugging folder.");
-                            DebugMode = true;
-                            Console.ReadLine();
-                        }
-                    }
-                    else
-                    {
-                        LogDebug($"OBJECT ICON ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
-                    }
-                }
-                else
-                {
-                    // Ignore that the icon is missing... for now.
-                }
-                if (data.TryGetValue("model", out object model))
-                {
-                    if (!objectData.ContainsKey("model"))
-                    {
-                        // Assign the model and then inform the engineer.
-                        objectData["model"] = model;
-                        LogWarn($"OBJECT MODEL MISSING FOR {objectID} : ASSIGNED {model} FROM SOURCE.");
-                        if (!DebugMode)
-                        {
-                            Log("Activating Debug Mode! (Press Enter to continue...)");
-                            Log("Update ObjectDB.lua from the Debugging folder.");
-                            DebugMode = true;
-                            Console.ReadLine();
-                        }
-                    }
-                    else
-                    {
-                        LogDebug($"OBJECT MODEL ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
-                    }
-                }
-                else
-                {
-                    // Ignore that the model is missing... for now.
-                }
-                if (data.TryGetValue("name", out string name))
-                {
-                    if (!objectData.ContainsKey("readable"))
-                    {
-                        // Assign the readable and then inform the engineer.
-                        objectData["readable"] = name;
-                        LogWarn($"OBJECT READABLE MISSING FOR {objectID} : ASSIGNED {name} FROM SOURCE.");
-                        if (!DebugMode)
-                        {
-                            Log("Activating Debug Mode! (Press Enter to continue...)");
-                            Log("Update ObjectDB.lua from the Debugging folder.");
-                            DebugMode = true;
-                            Console.ReadLine();
-                        }
-                    }
-                    else
-                    {
-                        LogDebug($"OBJECT READABLE ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
-                    }
-
-                    if (!objectData.ContainsKey("text"))
-                    {
-                        // Assign the text and then inform the engineer.
-                        objectData["text"] = new Dictionary<string, object> { { "en", name } };
-                        LogWarn($"OBJECT TEXT MISSING FOR {objectID} : ASSIGNED {name} FROM SOURCE.");
-                        if (!DebugMode)
-                        {
-                            Log("Activating Debug Mode! (Press Enter to continue...)");
-                            Log("Update ObjectDB.lua from the Debugging folder.");
-                            DebugMode = true;
-                            Console.ReadLine();
-                        }
-                    }
-                    else
-                    {
-                        LogDebug($"OBJECT TEXT ALREADY IN DATABASE FOR {objectID}: You can probably delete it from the source file.");
-                    }
-                }
-                else
-                {
-                    // Ignore that the readable is missing... for now.
-                }
-
-                if (objectData.Any()) ObjectDB[objectID] = objectData;
             }
         }
 

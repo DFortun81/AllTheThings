@@ -2155,6 +2155,9 @@ _.ObjectNames = {
 	[202083] = "Razormaw Matriarch's Nest",
 	[202180] = "Gunship Armory",
 	[207724] = "Shipwreck Debris",
+	[375544] = "Wooden Figurine",
+	[100000000] = "Archaeologist's Cart",
+	[100000001] = "Unlit Torch",
 }
 _.ObjectIcons = {
 	[31] = "Interface/Icons/INV_Mount_AllianceLionG",
@@ -2732,6 +2735,7 @@ _.ObjectIcons = {
 	[202082] = "Interface/Icons/INV_Pet_PinkMurlocEgg",
 	[202083] = "Interface/Icons/INV_Pet_PinkMurlocEgg",
 	[202180] = "Interface/FriendsFrame/PlusManz-Horde",
+	[100000001] = "135434",
 }
 _.ObjectModels = {
 	[31] = 189908,
@@ -3546,6 +3550,8 @@ _.ObjectModels = {
 	[202083] = 199226,
 	[202180] = 341746,
 	[207724] = 219411,
+	[375544] = 201094,
+	[100000001] = 201129,
 }
 
 -- Supported Locales
@@ -4384,6 +4390,8 @@ localize(_.ObjectNames, {
 	[202083] = "Nest der Scharfzahnmatriarchin",
 	[202180] = "Truhe des Kanonenboots",
 	[207724] = "Schiffswracktrümmer",
+	[375544] = "Holzstatuette",
+	[100000001] = "Nicht angezündete Fackel",
 });
 end
 if simplifiedLocale == "es" then
@@ -5204,6 +5212,8 @@ localize(_.ObjectNames, {
 	[202083] = "Nido de matriarca Tajobuche",
 	[202180] = "Arsenal de la nave de guerra",
 	[207724] = "Restos de naufragio",
+	[375544] = "Figurilla de madera",
+	[100000001] = "Antorcha apagada",
 });
 end
 if simplifiedLocale == "fr" then
@@ -6066,6 +6076,8 @@ localize(_.ObjectNames, {
 	[202083] = "Œuf de matriarche tranchegueule",
 	[202180] = "Armurerie de la canonnière",
 	[207724] = "Débris d’épave",
+	[375544] = "Figurine en bois",
+	[100000001] = "Torche éteinte",
 });
 end
 if simplifiedLocale == "it" then
@@ -7661,6 +7673,7 @@ localize(_.ObjectNames, {
 	[202083] = "무쇠턱 우두머리랩터의 둥지",
 	[202180] = "비행포격선 장비함",
 	[207724] = "난파선 파편",
+	[100000001] = "불을 붙이지 않은 횃불",
 });
 end
 if simplifiedLocale == "pt" then
@@ -8466,6 +8479,8 @@ localize(_.ObjectNames, {
 	[202083] = "Ninho da Matriarca Rasgaqueixo",
 	[202180] = "Arsenal da Belonave",
 	[207724] = "Destroços do Naufrágio",
+	[375544] = "Estatueta de Madeira",
+	[100000001] = "Tocha Apagada",
 });
 end
 if simplifiedLocale == "ru" then
@@ -9344,6 +9359,8 @@ localize(_.ObjectNames, {
 	[202083] = "Гнездо острозуба-матриарха",
 	[202180] = "Оружейная боевого корабля",
 	[207724] = "Обломки кораблекрушения",
+	[375544] = "Деревянная статуэтка",
+	[100000001] = "Незажженный факел",
 });
 end
 if simplifiedLocale == "zh" then
@@ -10179,5 +10196,6 @@ localize(_.ObjectNames, {
 	[202082] = "暴掠龙女王的卵",
 	[202083] = "刺喉雌龙的卵",
 	[207724] = "船只残骸",
+	[100000001] = "未点燃的火把",
 });
 end

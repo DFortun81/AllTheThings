@@ -3345,8 +3345,53 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 20,
 					["groups"] = {
 						objective(1, {	-- 0/1 Wooden Figurine
-							["provider"] = { "i", 190309 },	-- Wooden Figurine
+							["providers"] = {
+								{ "i", 190309 },	-- Wooden Figurine
+								{ "o", 375544 },	-- Wooden Figurine
+								{ "o", createCustomObject({	-- Archaeologist's Cart [Couldn't find the proper objectID, so I faked it.]
+									readable = "Archaeologist's Cart",
+									text = {
+										en = "Archaeologist's Cart",
+										-- TODO: Find the proper translation so it appears on the tooltip.
+										--[[es = "",
+										de = "",
+										fr = "",
+										it = "",
+										pt = "",
+										ru = "",
+										ko = "",
+										cn = "",]]--
+									},
+								}) },
+							},
 							["coord"] = { 26, 22, ASHENVALE },
+							["cost"] = {{ "i", 190308, 1 }},	-- Burning Torch
+						}),
+						i(190308, {	-- 0/1 Burning Torch
+							["providers"] = {
+								{ "i", 190307 },	-- Unlit Torch
+								{ "o", createCustomObject({	-- Unlit Torch [Couldn't find the proper objectID, so I faked it.]
+									readable = "Unlit Torch",
+									model = 201129,
+									icon = 135434,
+									text = {
+										en = "Unlit Torch",
+										es = "Antorcha apagada",
+										de = "Nicht angezündete Fackel",
+										fr = "Torche éteinte",
+										it = "Unlit Torch",
+										pt = "Tocha Apagada",
+										ru = "Незажженный факел",
+										ko = "불을 붙이지 않은 횃불",
+										cn = "未点燃的火把",
+									},
+								}) },
+							},
+							["coords"] = {
+								{ 26.79, 22.42, ASHENVALE },
+								{ 15, 31, ASHENVALE },
+							},
+							["description"] = "You can light the torch using a campfire. If you don't have the cooking skill (or mats), you can go to the campfire near Talen at 15,31. Once lit, toss the torch on to the Archaeologist's Cart.",
 						}),
 					},
 				}),
