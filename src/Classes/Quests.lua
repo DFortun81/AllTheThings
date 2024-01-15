@@ -383,8 +383,6 @@ if app.IsRetail then
 		return
 		-- must have a questID associated
 		questID
-		-- must not be repeatable
-		and not t.repeatable
 		and
 		(
 			-- Regular Quests
@@ -392,12 +390,17 @@ if app.IsRetail then
 			and
 			(
 				(
+					-- must not be repeatable
+					not t.repeatable
+					and
+					(
 						-- collectible by any character
 						app.Settings.AccountWide.Quests
 						-- or not OTQ or is OTQ not yet known to be completed by any character, or is OTQ completed by this character
 						or (not OneTimeQuests[questID] or OneTimeQuests[questID] == app.GUID)
+					)
 				)
-				-- If it is an item/cost and associated to an active quest.
+				-- If it is an active quest with an associated item/cost
 				-- TODO: add t.requiredForQuestID
 				or
 				(

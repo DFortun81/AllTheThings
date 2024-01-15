@@ -534,7 +534,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 			q(56174, {	-- Other Interests
 				["provider"] = { "n", 152575 },	-- Steelsage Gao
 				["coord"] = { 73.6, 34.3, MECHAGON },
+				["maps"] = { NAZJATAR },
 				["isDaily"] = true,
+				["cost"] = {{"i",167903,5}},	-- Disintegrating Sand Sculpture
 			}),
 			q(56746, {	-- Our Direct Line
 				["description"] = "Quest is offered once you have completed |cFFFFD700Other Interests|r dailies three times.",

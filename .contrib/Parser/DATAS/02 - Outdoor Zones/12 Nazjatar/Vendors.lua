@@ -321,6 +321,30 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				}),
 			},
 		}),
+		n(151953, {	-- Hurlgrl
+		-- TODO: Can't use faction-data in non-quest objects...
+		-- ["allianceQuestData"] = {
+		-- 	["sourceQuest"] = 55983,	-- A Safer Place (A)
+		-- 	["coords"] = {
+		-- 		{ 38.6, 54.6, NAZJATAR },
+		-- 	},
+		-- },
+		-- ["hordeQuestData"] = {
+		-- 	["sourceQuest"] = 55530,	-- A Safer Place (H)
+		-- 	["coords"] = {
+		-- 		{ 47.8, 63.0, NAZJATAR },
+		-- 	},
+		-- },
+			["coords"] = {
+				{ 38.6, 54.6, NAZJATAR },
+				{ 47.8, 63.0, NAZJATAR },
+			},
+			["groups"] = {
+				i(167915, {	-- Sweet Sea Vegetable
+					["cost"] = 10000,	-- 1g
+				}),
+			},
+		}),
 		n(145838, {	-- Marshal Frazer <Gladiator Quartermaster>
 			["coord"] = { 38.0, 55.3, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
@@ -330,7 +354,52 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			--	i(163975),	-- Sir Snips -- Listed under PvP w/ CRS
 			},
 		}),
+		n(151950, {	-- Mrrglrlr
+			-- TODO: Can't use faction-data in non-quest objects...
+			-- ["allianceQuestData"] = {
+			-- 	["sourceQuest"] = 55983,	-- A Safer Place (A)
+			-- 	["coords"] = {
+			-- 		{ 39.0, 53.8, NAZJATAR },
+			-- 	},
+			-- },
+			-- ["hordeQuestData"] = {
+			-- 	["sourceQuest"] = 55530,	-- A Safer Place (H)
+			-- 	["coords"] = {
+			-- 		{ 48.6, 62.4, NAZJATAR },
+			-- 	},
+			-- },
+			["sourceQuests"] = {
+				55983,	-- A Safer Place (A)
+				55530,	-- A Safer Place (H)
+			},
+			["coords"] = {
+				{ 39.0, 53.8, NAZJATAR },	-- Alliance
+				{ 48.6, 62.4, NAZJATAR },	-- Horde
+			},
+			["groups"] = {
+				i(167903, {	-- Disintegrating Sand Sculpture
+					["cost"] = {{"i",167915,4}},	-- Sweet Sea Vegetable
+				}),
+			},
+		}),
 		n(152084, {	-- Mrrl
+			-- TODO: Can't use faction-data in non-quest objects...
+			-- ["allianceQuestData"] = {
+			-- 	["sourceQuest"] = 55983,	-- A Safer Place (A)
+			-- 	["coords"] = {
+			-- 		{ 39.1, 54.4, NAZJATAR },	-- Alliance
+			-- 	},
+			-- },
+			-- ["hordeQuestData"] = {
+			-- 	["sourceQuest"] = 55530,	-- A Safer Place (H)
+			-- 	["coords"] = {
+			-- 		{ 47.0, 61.5, NAZJATAR },	-- Horde
+			-- 	},
+			-- },
+			["sourceQuests"] = {
+				55983,	-- A Safer Place (A)
+				55530,	-- A Safer Place (H)
+			},
 			["coords"] = {
 				{ 39.1, 54.4, NAZJATAR },	-- Alliance
 				{ 47.0, 61.5, NAZJATAR },	-- Horde
