@@ -2563,6 +2563,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(11768, {	-- Incendic Bracers
 							-- #if BEFORE 10.1.7
 							-- #if AFTER 2.0.1
+							["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
 							["isBounty"] = true,
 							-- #endif
 							-- #endif
@@ -2775,7 +2776,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						i(11743, {	-- Rockfist
 							-- #if BEFORE 10.1.7
 							-- #if AFTER 2.0.1
-							["description"] = "This item was appears to have been forgotten about. Please @Crieve if you get it to drop.",
+							["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
 							["isBounty"] = true,
 							-- #endif
 							-- #endif
