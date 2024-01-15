@@ -13932,6 +13932,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		end
 
 		-- Setup the Event Handlers
+		-- TODO: review how necessary this actually is in Retail
 		local handlers = {};
 		window:SetScript("OnEvent", function(self, e, ...)
 			local handler = handlers[e];
@@ -13941,7 +13942,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 				self:Update();
 			end
 		end);
-		local refreshWindow = function() window:Refresh(); end;
+		local refreshWindow = function() DelayedCallback(window.Refresh, 0.25, window) end;
 		handlers.ACHIEVEMENT_EARNED = refreshWindow;
 		handlers.QUEST_DATA_LOAD_RESULT = refreshWindow;
 		handlers.QUEST_ACCEPTED = refreshWindow;
