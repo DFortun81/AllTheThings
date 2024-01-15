@@ -152,8 +152,10 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				["difficulties"] = { 8, MYTHIC_DUNGEON },
 				["lvl"] = 120,
 				["g"] = {
+					n(135451, {	-- Filthy Bucket
+						i(158698),	-- Discarded Cell Key
+					}),
 					n(135448, {	-- Gol'than the Malodorous
-						["crs"] = { 135451 },	-- Filthy Bucket
 						["provider"] = { "i", 158698 },	-- Discarded Cell Key
 						["g"] = {
 							i(160704),	--  Filthy Slime (PET!)
