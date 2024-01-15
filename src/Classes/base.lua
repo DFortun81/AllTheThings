@@ -371,6 +371,8 @@ app.CreateClass = function(className, classKey, fields, ...)
 	local total = #args;
 	if total > 0 then
 		local conditionals = {};
+		local Class;
+		local base = function(t, key) return Class.__index; end
 		for i=1,total,3 do
 			local subclassName = args[i];
 			if subclassName then
@@ -382,6 +384,7 @@ app.CreateClass = function(className, classKey, fields, ...)
 							class[key] = method;
 						end
 					end
+					class.base = base;
 					if class.collectibleAsCost then
 						local simpleclass = {};
 						for key,method in pairs(class) do
@@ -400,7 +403,7 @@ app.CreateClass = function(className, classKey, fields, ...)
 		end
 		total = #conditionals;
 		fields.conditionals = conditionals;
-		local Class = BaseObjectFields(fields, className);
+		Class = BaseObjectFields(fields, className);
 		local classConstructor = function(id, t)
 			t = constructor(id, t, classKey);
 			for i=1,total,2 do
@@ -584,6 +587,9 @@ local fields = {
 	["name"] = function(t)
 		return "Loki";
 	end,
+	MyField = function(t)
+		return "MyField";
+	end,
 	["OnTest"] = function()
 		return function(t)
 			print(t.name .. " (" .. t.__type .. "): I'm a god!");
@@ -591,9 +597,12 @@ local fields = {
 	end,
 };
 local fieldsWithArgs = {
+	MyField = function(t)
+		return "MyOverriddenField";
+	end,
 	OnTest = function()
 		return function(t)
-			print(t.name .. " (" .. t.__type .. "): I'm a variant!");
+			print(t.name .. " (" .. t.__type .. "): I'm a variant!", t.MyField, t.base(t, "MyField"));
 		end
 	end
 };
