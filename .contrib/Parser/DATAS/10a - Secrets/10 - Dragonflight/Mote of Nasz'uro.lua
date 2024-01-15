@@ -4,9 +4,18 @@
 root(ROOTS.Secrets, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	header(HEADERS.Item, 206040, {	-- Mote of Nasz'uro
 		n(REWARDS, {
-			i(206040, {	-- Mote of Nasz'uro (PET!)
-				["description"] = "You need to collect all the motes to receive this pet.",
-			}),
+			["maps"] = { 
+				OHNAHRAN_PLAINS,
+				THALDRASZUS,
+				THE_AZURE_SPAN,
+				THE_FORBIDDEN_REACH,
+				THE_WAKING_SHORES,
+			},
+			["groups"] = {
+				i(206040, {	-- Mote of Nasz'uro (PET!)
+					["description"] = "You need to collect all the motes to receive this pet.",
+				}),
+			},
 		}),
 		n(TREASURES, sharedData({
 			["nomerge"] = true,
