@@ -1021,20 +1021,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				q(1716, {	-- Devourer of Souls [Stormwind City]
-					["qg"] = 6122,	-- Gakin the Darkbinder
-					["sourceQuest"] = 1717,	-- Gakin's Summons (Succubus)
-					-- #if AFTER WRATH
-					["coord"] = { 39.2, 85.2, STORMWIND_CITY },
-					-- #else
-					["coord"] = { 25.4, 78.4, STORMWIND_CITY },
-					-- #endif
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = { HUMAN, GNOME },
-					["classes"] = { WARLOCK },
-					["isBreadcrumb"] = true,
-					["lvl"] = 20,
-				}),
 				q(26420, {	-- Diggin' For Worms
 					["qg"] = 5494,	-- Catherine Leland
 					["coord"] = { 55.0, 69.6, STORMWIND_CITY },

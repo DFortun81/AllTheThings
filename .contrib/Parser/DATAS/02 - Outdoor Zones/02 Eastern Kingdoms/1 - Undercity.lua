@@ -333,6 +333,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
+				q(1507, {	-- Devourer of Souls [Orgrimmar]
+					["qg"] = 5875,	-- Dan'rul Bloodeye
+					["altQuests"] = { 1472 },	-- Devourer of Souls [Undercity]
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["lvl"] = 20,
+				}),
 				q(1472, {	-- Devourer of Souls [Undercity]
 					["qg"] = 5675,	-- Carendin Halgar
 					["altQuests"] = { 1507 },	-- Devourer of Souls [Orgrimmar]

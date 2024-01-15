@@ -766,15 +766,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 				}),
-				q(1507, {	-- Devourer of Souls [Orgrimmar]
-					["qg"] = 5875,	-- Dan'rul Bloodeye
-					["altQuests"] = { 1472 },	-- Devourer of Souls [Undercity]
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = { ORC, UNDEAD },
-					["classes"] = { WARLOCK },
-					["isBreadcrumb"] = true,
-					["lvl"] = 20,
-				}),
 				q(49855, {	-- Disaster at Mount Hyjal
 					["qg"] = 45244,	-- Farseer Krogar
 					["sourceQuest"] = 28805,	-- The Eye of the Storm

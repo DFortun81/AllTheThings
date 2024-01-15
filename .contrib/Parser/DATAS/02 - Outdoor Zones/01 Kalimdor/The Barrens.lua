@@ -1036,6 +1036,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				q(1716, {	-- Devourer of Souls [Stormwind City]
+					["qg"] = 6122,	-- Gakin the Darkbinder
+					["sourceQuest"] = 1717,	-- Gakin's Summons (Succubus)
+					-- #if AFTER WRATH
+					["coord"] = { 39.2, 85.2, STORMWIND_CITY },
+					-- #else
+					["coord"] = { 25.4, 78.4, STORMWIND_CITY },
+					-- #endif
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["lvl"] = 20,
+				}),
 				q(862, {	-- Dig Rat Stew
 					["qg"] = 3443,	-- Grub
 					["coord"] = { 55.31, 31.79, THE_BARRENS },

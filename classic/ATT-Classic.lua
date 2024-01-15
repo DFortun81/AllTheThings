@@ -11704,13 +11704,10 @@ SlashCmdList["ATTRAID"] = function(cmd)
 	C_ChatInfo.SendAddonMessage("ATTC", "?", "RAID");
 end
 SLASH_ATTYELL1 = "/attyell";
-SLASH_ATTYELL2 = "/attrohduh";
 SlashCmdList["ATTYELL"] = function(cmd)
 	C_ChatInfo.SendAddonMessage("ATTC", "?", "YELL");
 end
 SLASH_ATTWHO1 = "/attu";
-SLASH_ATTWHO2 = "/attyou";
-SLASH_ATTWHO3 = "/attwho";
 SlashCmdList["ATTWHO"] = function(cmd)
 	local name,server = UnitName("target");
 	if name then
