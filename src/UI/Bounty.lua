@@ -14,23 +14,26 @@ app:GetWindow("Bounty", {
 	OnRebuild = function(self, ...)
 		if not self.data then
 			self.data = app.CreateNPC(app.HeaderConstants.UI_BOUNTY_WINDOW, {
-				visible = true, 
+				visible = true,
 				expanded = true,
 				back = 1,
 				indent = 0,
 				g = { },
-				OnUpdate = function(data)
-					local g = data.g;
+				OnUpdate = function(t)
+					local g = t.g;
 					if #g < 1 then
 						local results = app:BuildSearchResponseForField(app:GetDataCache().g, "isBounty");
 						if #results > 0 then
 							for i,result in ipairs(results) do
 								tinsert(g, result);
 							end
+							t.OnUpdate = nil;
+							self:AssignChildren();
+							self:ExpandData(true);
 						end
 					end
 				end,
-			})
+			});
 		end
 	end,
 	OnUpdate = function(self, ...)

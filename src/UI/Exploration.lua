@@ -16,11 +16,13 @@ app:GetWindow("Exploration", {
 				visible = true, 
 				expanded = true,
 				back = 1,
-				OnUpdate = function(data)
+				OnUpdate = function(t)
 					local g = app:BuildSearchResponseForField(app:GetDataCache().g, "explorationID");
 					if g and #g > 0 then
-						data.g = g;
-						data.OnUpdate = nil;
+						t.g = g;
+						t.OnUpdate = nil;
+						self:AssignChildren();
+						self:ExpandData(true);
 					end
 				end
 			};

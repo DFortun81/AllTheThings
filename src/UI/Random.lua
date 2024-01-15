@@ -156,7 +156,9 @@ local function Reroll(self)
 		else
 			app.print("Source list was empty. Please check to see if anything matches your query.");
 		end
-		self:Rebuild();
+		self:AssignChildren();
+		self:ExpandData(true);
+		self:Update();
 	end
 end
 local function SetSearchFilter(self, filter)

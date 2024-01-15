@@ -238,6 +238,7 @@ app:GetWindow("Removed With Patch Drops", {
 						for i,result in ipairs(results) do
 							tinsert(g, result);
 						end
+						self:AssignChildren();
 					end
 					if self.oldG then ReapplyExpand(self.oldG, results); end
 					self.oldG = results;

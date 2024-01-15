@@ -10514,6 +10514,12 @@ function app:GetWindow(suffix, settings)
 		window.DefaultRebuild = function(self)
 			AssignChildren(self.data);
 		end
+		window.AssignChildren = function(self)
+			AssignChildren(self.data);
+		end
+		window.ExpandData = function(self, expanded)
+			ExpandGroupsRecursively(self.data, expanded, true);
+		end
 		local onRebuild = settings.OnRebuild;
 		if onRebuild then
 			if debugging then

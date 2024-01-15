@@ -22,14 +22,17 @@ app:GetWindow("Breadcrumbs", {
 				back = 1,
 				indent = 0,
 				g = { },
-				OnUpdate = function(data)
-					local g = data.g;
+				OnUpdate = function(t)
+					local g = t.g;
 					if #g < 1 then
 						local results = app:BuildSearchResponseForField(app:GetDataCache().g, "isBreadcrumb");
 						if #results > 0 then
 							for i,result in ipairs(results) do
 								tinsert(g, result);
 							end
+							t.OnUpdate = nil;
+							self:AssignChildren();
+							self:ExpandData(true);
 						end
 					end
 				end,
