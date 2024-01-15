@@ -649,6 +649,11 @@ local fieldsWithWorldQuest = {
 			Test = function(t)
 				return "AndReputation";
 			end,
+			OnTest = function()
+				return function(t)
+					print(t.name .. " (" .. t.__type .. "): I'm a subvariant with reputation!");
+				end
+			end,
 		},
 	},
 };
