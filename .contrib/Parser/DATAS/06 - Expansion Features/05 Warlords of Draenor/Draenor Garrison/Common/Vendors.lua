@@ -681,13 +681,13 @@ root(ROOTS.ExpansionFeatures,
 								i(111983),	-- Storehouse, Level 3
 							},
 						}),
-						ach(9477, {	-- Savage Friends
+						h(ach(9477, {	-- Savage Friends
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["_noautomation"] = true,
 							["g"] = {
 								i(111987),	-- Trading Post, Level 3
 							},
-						}),
+						})),
 						ach(9129, {	-- Filling the Ranks
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["g"] = {
@@ -1162,13 +1162,13 @@ root(ROOTS.ExpansionFeatures,
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
-						ach(9478, {	-- Savage Friends
+						a(ach(9478, {	-- Savage Friends
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							["_noautomation"] = true,
 							["g"] = {
 								i(111987),	-- Trading Post, Level 3
 							},
-						}),
+						})),
 					},
 				}),
 				n(95470, {	-- Trader Araanda <Local Supplies>

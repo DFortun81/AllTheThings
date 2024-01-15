@@ -1741,7 +1741,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 45.2, 87.8, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						ach(5320),	-- King of the Mountain (Alliance)
+						a(ach(5320)),	-- King of the Mountain (Alliance)
 						i(63708),	-- Overly Intelligent Robe
 						i(63707),	-- Shaw's Finest Leggings
 						i(63706),	-- Coulton's Crushers
@@ -1754,7 +1754,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 45.3, 87.9, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						ach(5321),	-- King of the Mountain (Horde)
+						h(ach(5321)),	-- King of the Mountain (Horde)
 						i(63704),	-- Overly Intelligent Robes
 						i(63703),	-- Garona's Finest Leggings
 						i(63702),	-- Coulton's Crushers

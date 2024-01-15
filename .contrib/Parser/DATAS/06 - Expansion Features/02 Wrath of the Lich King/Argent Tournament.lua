@@ -239,251 +239,249 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					},
 				})),
 				ach(2772),	-- Tilted!
-				n(FACTION_HEADER_ALLIANCE, {
+				n(FACTION_HEADER_ALLIANCE, sharedDataSelf({
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						ach(2817, {	-- Exalted Argent Champion of the Alliance
-							-- Meta Achievement should symlink the contained Achievements from Source
-							["sym"] = {{"meta_achievement",
-								947,	-- The Argent Crusade
-								2760,	-- Exalted Champion of Darnassus
-								2762,	-- Exalted Champion of Gnomeregan
-								2763,	-- Exalted Champion of Ironforge
-								2764,	-- Exalted Champion of Stormwind
-								2761,	-- Exalted Champion of the Exodar
-							}},
-							["groups"] = {
-								title(123),	-- Crusader
-							},
+				},{
+					ach(2817, {	-- Exalted Argent Champion of the Alliance
+						-- Meta Achievement should symlink the contained Achievements from Source
+						["sym"] = {{"meta_achievement",
+							947,	-- The Argent Crusade
+							2760,	-- Exalted Champion of Darnassus
+							2762,	-- Exalted Champion of Gnomeregan
+							2763,	-- Exalted Champion of Ironforge
+							2764,	-- Exalted Champion of Stormwind
+							2761,	-- Exalted Champion of the Exodar
+						}},
+						["groups"] = {
+							title(123),	-- Crusader
+						},
+					}),
+					ach(2770, {	-- Exalted Champion of the Alliance
+						-- Meta Achievement should symlink the contained Achievements from Source
+						["sym"] = {{"meta_achievement",
+							2760,	-- Exalted Champion of Darnassus
+							2762,	-- Exalted Champion of Gnomeregan
+							2763,	-- Exalted Champion of Ironforge
+							2764,	-- Exalted Champion of Stormwind
+							2761,	-- Exalted Champion of the Exodar
+						}},
+					}),
+					ach(2782, {	-- Champion of the Alliance
+						["sym"] = {{"meta_achievement",
+							2777,	-- Champion of Darnassus
+							2779,	-- Champion of Gnomeregan
+							2780,	-- Champion of Ironforge
+							2781,	-- Champion of Stormwind
+							2778,	-- Champion of the Exodar
+						}},
+					}),
+					ach(2777, {	-- Champion of Darnassus
+						["sourceQuest"] = 13735,	-- A Champion Rises (A) (Darnassus)
+					}),
+					ach(2779, {	-- Champion of Gnomeregan
+						["sourceQuest"] = 13733,	-- A Champion Rises (A) (Gnomeregan)
+					}),
+					ach(2780, {	-- Champion of Ironforge
+						["sourceQuest"] = 13732,	-- A Champion Rises (A) (Ironforge)
+					}),
+					ach(2781, {	-- Champion of Stormwind
+						["sourceQuest"] = 13702,	-- A Champion Rises (A) (Stormwind City)
+					}),
+					ach(2778, {	-- Champion of the Exodar
+						["sourceQuest"] = 13734,	-- A Champion Rises (A) (The Exodar)
+					}),
+					ach(2760, {	-- Exalted Champion of Darnassus
+						crit(5328, {	-- Exalted with Darnassus
+							["_factions"] = { 69 },
 						}),
-						ach(2770, {	-- Exalted Champion of the Alliance
-							-- Meta Achievement should symlink the contained Achievements from Source
-							["sym"] = {{"meta_achievement",
-								2760,	-- Exalted Champion of Darnassus
-								2762,	-- Exalted Champion of Gnomeregan
-								2763,	-- Exalted Champion of Ironforge
-								2764,	-- Exalted Champion of Stormwind
-								2761,	-- Exalted Champion of the Exodar
-							}},
+						-- #if ANYCLASSIC
+						crit(9773, {	-- Champion of Darnassus
+							["_achievements"] = { 2777 },
 						}),
-						ach(2782, {	-- Champion of the Alliance
-							["sym"] = {{"meta_achievement",
-								2777,	-- Champion of Darnassus
-								2779,	-- Champion of Gnomeregan
-								2780,	-- Champion of Ironforge
-								2781,	-- Champion of Stormwind
-								2778,	-- Champion of the Exodar
-							}},
+						-- #else
+						crit(11320, {	-- Champion of Darnassus
+							["_achievements"] = { 2777 },
 						}),
-						ach(2777, {	-- Champion of Darnassus
-							["sourceQuest"] = 13735,	-- A Champion Rises (A) (Darnassus)
+						-- #endif
+						title(114),	-- of Darnassus
+					}),
+					ach(2761, {	-- Exalted Champion of the Exodar
+						crit(5332, {	-- Exalted with Exodar
+							["_factions"] = { 930 },
 						}),
-						ach(2779, {	-- Champion of Gnomeregan
-							["sourceQuest"] = 13733,	-- A Champion Rises (A) (Gnomeregan)
+						-- #if ANYCLASSIC
+						crit(9774, {	-- Champion of Exodar
+							["_achievements"] = { 2778 },
 						}),
-						ach(2780, {	-- Champion of Ironforge
-							["sourceQuest"] = 13732,	-- A Champion Rises (A) (Ironforge)
+						-- #else
+						crit(11321, {	-- Champion of Exodar
+							["_achievements"] = { 2778 },
 						}),
-						ach(2781, {	-- Champion of Stormwind
-							["sourceQuest"] = 13702,	-- A Champion Rises (A) (Stormwind City)
+						-- #endif
+						title(113),	-- of the Exodar
+					}),
+					ach(2762, {	-- Exalted Champion of Gnomeregan
+						crit(5329, {	-- Exalted with Gnomeregan
+							["_factions"] = { 54 },
 						}),
-						ach(2778, {	-- Champion of the Exodar
-							["sourceQuest"] = 13734,	-- A Champion Rises (A) (The Exodar)
+						-- #if ANYCLASSIC
+						crit(9775, {	-- Champion of Gnomeregan
+							["_achievements"] = { 2779 },
 						}),
-						ach(2760, {	-- Exalted Champion of Darnassus
-							crit(5328, {	-- Exalted with Darnassus
-								["_factions"] = { 69 },
-							}),
-							-- #if ANYCLASSIC
-							crit(9773, {	-- Champion of Darnassus
-								["_achievements"] = { 2777 },
-							}),
-							-- #else
-							crit(11320, {	-- Champion of Darnassus
-								["_achievements"] = { 2777 },
-							}),
-							-- #endif
-							title(114),	-- of Darnassus
+						-- #else
+						crit(11322, {	-- Champion of Gnomeregan
+							["_achievements"] = { 2779 },
 						}),
-						ach(2761, {	-- Exalted Champion of the Exodar
-							crit(5332, {	-- Exalted with Exodar
-								["_factions"] = { 930 },
-							}),
-							-- #if ANYCLASSIC
-							crit(9774, {	-- Champion of Exodar
-								["_achievements"] = { 2778 },
-							}),
-							-- #else
-							crit(11321, {	-- Champion of Exodar
-								["_achievements"] = { 2778 },
-							}),
-							-- #endif
-							title(113),	-- of the Exodar
+						-- #endif
+						title(81),	-- of Gnomeregan
+					}),
+					ach(2764, {	-- Exalted Champion of Stormwind
+						crit(5331, {	-- Exalted with Stormwind
+							["_factions"] = { 72 },
 						}),
-						ach(2762, {	-- Exalted Champion of Gnomeregan
-							crit(5329, {	-- Exalted with Gnomeregan
-								["_factions"] = { 54 },
-							}),
-							-- #if ANYCLASSIC
-							crit(9775, {	-- Champion of Gnomeregan
-								["_achievements"] = { 2779 },
-							}),
-							-- #else
-							crit(11322, {	-- Champion of Gnomeregan
-								["_achievements"] = { 2779 },
-							}),
-							-- #endif
-							title(81),	-- of Gnomeregan
+						-- #if ANYCLASSIC
+						crit(9777, {	-- Champion of Stormwind
+							["_achievements"] = { 2781 },
 						}),
-						ach(2764, {	-- Exalted Champion of Stormwind
-							crit(5331, {	-- Exalted with Stormwind
-								["_factions"] = { 72 },
-							}),
-							-- #if ANYCLASSIC
-							crit(9777, {	-- Champion of Stormwind
-								["_achievements"] = { 2781 },
-							}),
-							-- #else
-							crit(11324, {	-- Champion of Stormwind
-								["_achievements"] = { 2781 },
-							}),
-							-- #endif
-							title(116),	-- of Stormwind
+						-- #else
+						crit(11324, {	-- Champion of Stormwind
+							["_achievements"] = { 2781 },
 						}),
-						ach(2763, {	-- Exalted Champion of Ironforge
-							crit(5330, {	-- Exalted with Ironforge
-								["_factions"] = { 47 },
-							}),
-							-- #if ANYCLASSIC
-							crit(9776, {	-- Champion of Ironforge
-								["_achievements"] = { 2780 },
-							}),
-							-- #else
-							crit(11323, {	-- Champion of Ironforge
-								["_achievements"] = { 2780 },
-							}),
-							-- #endif
-							title(115),	-- of Ironforge
+						-- #endif
+						title(116),	-- of Stormwind
+					}),
+					ach(2763, {	-- Exalted Champion of Ironforge
+						crit(5330, {	-- Exalted with Ironforge
+							["_factions"] = { 47 },
 						}),
-					},
-				}),
-				n(FACTION_HEADER_HORDE, {
+						-- #if ANYCLASSIC
+						crit(9776, {	-- Champion of Ironforge
+							["_achievements"] = { 2780 },
+						}),
+						-- #else
+						crit(11323, {	-- Champion of Ironforge
+							["_achievements"] = { 2780 },
+						}),
+						-- #endif
+						title(115),	-- of Ironforge
+					}),
+				})),
+				n(FACTION_HEADER_HORDE, sharedDataSelf({
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						ach(2816, {	-- Exalted Argent Champion of the Horde
-							-- Meta Achievement should symlink the contained Achievements from Source
-							["sym"] = {{"meta_achievement",
-								947,	-- The Argent Crusade
-								2765,	-- Exalted Champion of Orgrimmar
-								2766,	-- Exalted Champion of Sen'jin
-								2767,	-- Exalted Champion of Silvermoon City
-								2769,	-- Exalted Champion of the Undercity
-								2768,	-- Exalted Champion of Thunder Bluff
-							}},
-							["groups"] = {
-								title(123),	-- Crusader
-							},
+				},{
+					ach(2816, {	-- Exalted Argent Champion of the Horde
+						-- Meta Achievement should symlink the contained Achievements from Source
+						["sym"] = {{"meta_achievement",
+							947,	-- The Argent Crusade
+							2765,	-- Exalted Champion of Orgrimmar
+							2766,	-- Exalted Champion of Sen'jin
+							2767,	-- Exalted Champion of Silvermoon City
+							2769,	-- Exalted Champion of the Undercity
+							2768,	-- Exalted Champion of Thunder Bluff
+						}},
+						["groups"] = {
+							title(123),	-- Crusader
+						},
+					}),
+					ach(2771, {	-- Exalted Champion of the Horde
+						-- Meta Achievement should symlink the contained Achievements from Source
+						["sym"] = {{"meta_achievement",
+							2765,	-- Exalted Champion of Orgrimmar
+							2766,	-- Exalted Champion of Sen'jin
+							2767,	-- Exalted Champion of Silvermoon City
+							2769,	-- Exalted Champion of the Undercity
+							2768,	-- Exalted Champion of Thunder Bluff
+						}},
+					}),
+					ach(2788, {	-- Champion of the Horde
+						-- Meta Achievement should symlink the contained Achievements from Source
+						["sym"] = {{"meta_achievement",
+							2783,	-- Champion of Orgrimmar
+							2784,	-- Champion of Sen'jin
+							2785,	-- Champion of Silvermoon City
+							2787,	-- Champion of the Undercity
+							2786,	-- Champion of Thunder Bluff
+						}},
+					}),
+					ach(2783, {	-- Champion of Orgrimmar
+						["sourceQuest"] = 13736,	-- A Champion Rises (H) (Orgrimmar)
+					}),
+					ach(2784, {	-- Champion of Sen'jin
+						["sourceQuest"] = 13737,	-- A Champion Rises (H) (Darkspear Trolls)
+					}),
+					ach(2785, {	-- Champion of Silvermoon City
+						["sourceQuest"] = 13740,	-- A Champion Rises (H) (Silvermoon City)
+					}),
+					ach(2787, {	-- Champion of the Undercity
+						["sourceQuest"] = 13739,	-- A Champion Rises (H) (Undercity)
+					}),
+					ach(2786, {	-- Champion of Thunder Bluff
+						["sourceQuest"] = 13738,	-- A Champion Rises (H) (Thunder Bluff)
+					}),
+					ach(2765, {	-- Exalted Champion of Orgrimmar
+						crit(5314, {	-- Exalted with Orgrimmar
+							["_factions"] = { 76 },
 						}),
-						ach(2771, {	-- Exalted Champion of the Horde
-							-- Meta Achievement should symlink the contained Achievements from Source
-							["sym"] = {{"meta_achievement",
-								2765,	-- Exalted Champion of Orgrimmar
-								2766,	-- Exalted Champion of Sen'jin
-								2767,	-- Exalted Champion of Silvermoon City
-								2769,	-- Exalted Champion of the Undercity
-								2768,	-- Exalted Champion of Thunder Bluff
-							}},
+						crit(9783, {	-- Champion of Orgrimmar
+							["_achievements"] = { 2783 },
 						}),
-						ach(2788, {	-- Champion of the Horde
-							-- Meta Achievement should symlink the contained Achievements from Source
-							["sym"] = {{"meta_achievement",
-								2783,	-- Champion of Orgrimmar
-								2784,	-- Champion of Sen'jin
-								2785,	-- Champion of Silvermoon City
-								2787,	-- Champion of the Undercity
-								2786,	-- Champion of Thunder Bluff
-							}},
+						title(117),	-- of Orgrimmar
+					}),
+					ach(2766, {	-- Exalted Champion of Sen'jin
+						crit(5313, {	-- Exalted with Darkspear Trolls
+							["_factions"] = { 530 },
 						}),
-						ach(2783, {	-- Champion of Orgrimmar
-							["sourceQuest"] = 13736,	-- A Champion Rises (H) (Orgrimmar)
+						-- #if ANYCLASSIC
+						crit(9784, {	-- Champion of Sen'jin
+							["_achievements"] = { 2784 },
 						}),
-						ach(2784, {	-- Champion of Sen'jin
-							["sourceQuest"] = 13737,	-- A Champion Rises (H) (Darkspear Trolls)
+						-- #else
+						crit(11326, {	-- Champion of Sen'jin
+							["_achievements"] = { 2784 },
 						}),
-						ach(2785, {	-- Champion of Silvermoon City
-							["sourceQuest"] = 13740,	-- A Champion Rises (H) (Silvermoon City)
+						-- #endif
+						title(118),	-- of Sen'jin
+					}),
+					ach(2767, {	-- Exalted Champion of Silvermoon City
+						crit(5317, {	-- Exalted with Silvermoon City
+							["_factions"] = { 911 },
 						}),
-						ach(2787, {	-- Champion of the Undercity
-							["sourceQuest"] = 13739,	-- A Champion Rises (H) (Undercity)
+						crit(9785, {	-- Champion of Silvermoon City
+							["_achievements"] = { 2785 },
 						}),
-						ach(2786, {	-- Champion of Thunder Bluff
-							["sourceQuest"] = 13738,	-- A Champion Rises (H) (Thunder Bluff)
+						title(119),	-- of Silvermoon
+					}),
+					ach(2769, {	-- Exalted Champion of the Undercity
+						crit(5316, {	-- Exalted with Undercity
+							["_factions"] = { 68 },
 						}),
-						ach(2765, {	-- Exalted Champion of Orgrimmar
-							crit(5314, {	-- Exalted with Orgrimmar
-								["_factions"] = { 76 },
-							}),
-							crit(9783, {	-- Champion of Orgrimmar
-								["_achievements"] = { 2783 },
-							}),
-							title(117),	-- of Orgrimmar
+						-- #if ANYCLASSIC
+						crit(9787, {	-- Champion of the Undercity
+							["_achievements"] = { 2787 },
 						}),
-						ach(2766, {	-- Exalted Champion of Sen'jin
-							crit(5313, {	-- Exalted with Darkspear Trolls
-								["_factions"] = { 530 },
-							}),
-							-- #if ANYCLASSIC
-							crit(9784, {	-- Champion of Sen'jin
-								["_achievements"] = { 2784 },
-							}),
-							-- #else
-							crit(11326, {	-- Champion of Sen'jin
-								["_achievements"] = { 2784 },
-							}),
-							-- #endif
-							title(118),	-- of Sen'jin
+						-- #else
+						crit(11329, {	-- Champion of the Undercity
+							["_achievements"] = { 2787 },
 						}),
-						ach(2767, {	-- Exalted Champion of Silvermoon City
-							crit(5317, {	-- Exalted with Silvermoon City
-								["_factions"] = { 911 },
-							}),
-							crit(9785, {	-- Champion of Silvermoon City
-								["_achievements"] = { 2785 },
-							}),
-							title(119),	-- of Silvermoon
+						-- #endif
+						title(121),	-- of the Undercity
+					}),
+					ach(2768, {	-- Exalted Champion of Thunder Bluff
+						crit(5315, {	-- Exalted with Thunder Bluff
+							["_factions"] = { 81 },
 						}),
-						ach(2769, {	-- Exalted Champion of the Undercity
-							crit(5316, {	-- Exalted with Undercity
-								["_factions"] = { 68 },
-							}),
-							-- #if ANYCLASSIC
-							crit(9787, {	-- Champion of the Undercity
-								["_achievements"] = { 2787 },
-							}),
-							-- #else
-							crit(11329, {	-- Champion of the Undercity
-								["_achievements"] = { 2787 },
-							}),
-							-- #endif
-							title(121),	-- of the Undercity
+						-- #if ANYCLASSIC
+						crit(9786, {	-- Champion of Thunder Bluff
+							["_achievements"] = { 2786 },
 						}),
-						ach(2768, {	-- Exalted Champion of Thunder Bluff
-							crit(5315, {	-- Exalted with Thunder Bluff
-								["_factions"] = { 81 },
-							}),
-							-- #if ANYCLASSIC
-							crit(9786, {	-- Champion of Thunder Bluff
-								["_achievements"] = { 2786 },
-							}),
-							-- #else
-							crit(11328, {	-- Champion of Thunder Bluff
-								["_achievements"] = { 2786 },
-							}),
-							-- #endif
-							title(120),	-- of Thunder Bluff
+						-- #else
+						crit(11328, {	-- Champion of Thunder Bluff
+							["_achievements"] = { 2786 },
 						}),
-					},
-				}),
+						-- #endif
+						title(120),	-- of Thunder Bluff
+					}),
+				})),
 			}),
 			n(FLIGHT_PATHS, {
 				fp(340, {	-- Argent Tournament Grounds, Icecrown
@@ -875,7 +873,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						CHAMPIONS_SEAL,
 					},
 				}),
-				
+
 				applyclassicphase(WRATH_PHASE_FOUR, q(20439, {	-- A Meeting With The Magister
 					["qg"] = 36669,	-- Arcanist Tybalin
 					["sourceQuest"] = 20438,	-- A Suitable Disguise (A)
@@ -915,7 +913,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 					},
 				})),
-				
+
 				q(13689, {	-- A Valiant Of Darnassus
 					["qg"] = 33625,	-- Arcanist Taelis
 					["sourceQuest"] = 13679,	-- The Aspirant's Challenge (A)
@@ -1139,7 +1137,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						VALIANTS_SEAL,
 					},
 				}),
-				
+
 				applyclassicphase(WRATH_PHASE_FOUR, q(24796, {	-- A Victory For The Silver Covenant (A)
 					["providers"] = {
 						{ "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
@@ -1211,7 +1209,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 					["races"] = { BLOODELF },
 					["_drop"] = { "g" },
 				})),
-				
+
 				q(13669, {	-- A Worthy Weapon (A) (The Silver Covenant, Aspirant)
 					["qg"] = 33625,	-- Arcanist Taelis
 					["sourceQuests"] = {
@@ -1541,7 +1539,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						CHAMPIONS_PURSE,
 					},
 				}),
-				
+
 				applyclassicphase(WRATH_PHASE_FOUR, q(24451, {	-- An Audience With The Arcanist
 					["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
 					["sourceQuest"] = 24556,	-- A Suitable Disguise (H)
@@ -1555,7 +1553,7 @@ root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO
 						}),
 					},
 				})),
-				
+
 				q(13855, {	-- At The Enemy's Gates (A) (Darnassus, Valiant)
 					["providers"] = {
 						{ "n", 33654 },	-- Airae Starseeker

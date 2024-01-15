@@ -54,20 +54,20 @@ root(ROOTS.Zones, {
 									["races"] = HORDE_ONLY,
 								}),
 								h(ach(7929, {	-- Dominance Offensive Campaign
-									crit(22438),			-- Domination Point
-									crit(22439),			-- The Voice of the Gods
-									crit(22440),			-- The Horde Is Family
-									crit(22441),			-- Blood For Blood (Ancient Guardians)
-									crit(22442),			-- Blood For Blood (Bloodlines)
-									crit(22443),			-- Blood For Blood (The Korune)
-									crit(22448),			-- The Korune
-									crit(22449),			-- Pride
-									crit(22450),			-- Rise of the Blood Elves
-									crit(22451),			-- Secrets of the Past
-									crit(22452),			-- The Divine Bell
-									crit(22453),			-- The Darnassus Operation
-									crit(22539),			-- The Purge of Dalaran
-									crit(22454),			-- Breath of Darkest Shadow
+									crit(22438),	-- Domination Point
+									crit(22439),	-- The Voice of the Gods
+									crit(22440),	-- The Horde Is Family
+									crit(22441),	-- Blood For Blood (Ancient Guardians)
+									crit(22442),	-- Blood For Blood (Bloodlines)
+									crit(22443),	-- Blood For Blood (The Korune)
+									crit(22448),	-- The Korune
+									crit(22449),	-- Pride
+									crit(22450),	-- Rise of the Blood Elves
+									crit(22451),	-- Secrets of the Past
+									crit(22452),	-- The Divine Bell
+									crit(22453),	-- The Darnassus Operation
+									crit(22539),	-- The Purge of Dalaran
+									crit(22454),	-- Breath of Darkest Shadow
 								})),
 								ach(7932, {	-- I'm In Your Base, Killing Your Dudes
 									crit(22456, {	-- Champion of Arms slain
@@ -769,22 +769,22 @@ root(ROOTS.Zones, {
 								ach(8205, {		-- Operation: Shieldwall
 									["races"] = ALLIANCE_ONLY,
 								}),
-								ach(7928, {	-- Operation: Shieldwall Campaign [Not entered to Pandaria Outdoor Zones files, these criteria are spread over not only the Pandaria zones but also Classic]
-									crit(22424),		-- Lion's Landing
-									crit(22425),		-- The Man With a Thousand Faces
-									crit(22426),		-- The Voice of the Gods
-									crit(22427),		-- Jaina's Hope
-									crit(22428),		-- The Korune
-									crit(22430),		-- The Korune
-									crit(22431),		-- Heart of the Alliance
-									crit(22432),		-- Secrets of the Past
-									crit(22434),		-- The Divine Bell
-									crit(22538),		-- The Purge of Dalaran
-									crit(22433),		-- An Ancient Ally
-									crit(22436),		-- In Search of Harmony
-									crit(22735),		-- In Search of Harmony
-									crit(22437),		-- Breath of Darkest Shadow
-								}),
+								a(ach(7928, {	-- Operation: Shieldwall Campaign [Not entered to Pandaria Outdoor Zones files, these criteria are spread over not only the Pandaria zones but also Classic]
+									crit(22424),	-- Lion's Landing
+									crit(22425),	-- The Man With a Thousand Faces
+									crit(22426),	-- The Voice of the Gods
+									crit(22427),	-- Jaina's Hope
+									crit(22428),	-- The Korune
+									crit(22430),	-- The Korune
+									crit(22431),	-- Heart of the Alliance
+									crit(22432),	-- Secrets of the Past
+									crit(22434),	-- The Divine Bell
+									crit(22538),	-- The Purge of Dalaran
+									crit(22433),	-- An Ancient Ally
+									crit(22436),	-- In Search of Harmony
+									crit(22735),	-- In Search of Harmony
+									crit(22437),	-- Breath of Darkest Shadow
+								})),
 							}),
 							n(QUESTS, {
 								q(32172, {	-- A Colossal Victory
