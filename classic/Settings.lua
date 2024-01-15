@@ -131,7 +131,7 @@ local GeneralSettingsBase = {
 		["Thing:Mounts"] = true,
 		--["Thing:PVPRanks"] = false,
 		["Thing:Quests"] = true,
-		["Thing:QuestsLocked"] = true,
+		["Thing:QuestsLocked"] = false,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
 		--["Thing:RWP"] = false,
@@ -328,6 +328,7 @@ settings.GetModeString = function(self)
 		local totalThingCount = 0;
 		local excludes = {
 			["DeathTracker"] = true,
+			["Thing:QuestsLocked"] = true,
 			["Thing:RWP"] = true,
 		};
 		if not (C_TransmogCollection and C_TransmogCollection.GetIllusions) then
@@ -1428,6 +1429,39 @@ QuestsCheckBox.OnTooltip = function(t)
 	GameTooltip:AddDoubleLine("Total Quests", t.total);
 end
 QuestsCheckBox:SetPoint("TOPLEFT", MountsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local QuestsLockedCheckBox = settings:CreateCheckBox("+Locked",
+function(self)
+	self:SetChecked(settings:Get("Thing:QuestsLocked"));
+	if app.MODE_DEBUG then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:QuestsLocked", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+QuestsLockedCheckBox:SetATTTooltip("Enable this option to show quests that are locked.");
+QuestsLockedCheckBox.OnTooltip = function(t)
+	GameTooltip:AddLine(" ");
+	local total = 0;
+	local container = app.SearchForFieldContainer("questID");
+	for i,o in pairs(container) do
+		local locked = false;
+		for j,quest in ipairs(o) do
+			if quest.locked then
+				total = total + 1;
+				break;
+			end
+		end
+	end
+	GameTooltip:AddDoubleLine("Total Locked Quests", total);
+end
+QuestsLockedCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "TOPLEFT", 110, 0);
 
 local QuestsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
