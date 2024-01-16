@@ -80,7 +80,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["lvl"] = 24,
 					["groups"] = {
 						objective(1, {	-- 0/12 Essential Artificial
-							["provider"] = { "i", 9278 },	-- Essential Artificial
+							["providers"] = {
+								{ "i",   9278 },	-- Essential Artificial
+								{ "o", 142344 },	-- Essential Artificial
+							},
+							["description"] = "These are scattered throughout the instance. They are loud mechanical mailboxes.",
 						}),
 					},
 				}),
@@ -701,12 +705,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["timeline"] = { "removed 4.0.3" },
 					}),
 					-- #endif
-				},
-			}),
-			o(142344, {	-- Artificial Extrapolator
-				["description"] = "These are scattered throughout the instance. They are loud mechanical mailboxes.",
-				["groups"] = {
-					i(9278),	-- Essential Artificial
 				},
 			}),
 			e(419, {	-- Grubbis
