@@ -697,7 +697,7 @@ PrintQuestInfo = function(questID, new)
 		if nmr then text = text .. "[R]"; end
 		-- only check to report when accepting a quest, quests flag complete all the time without being filtered
 		if new == true then
-			app.FunctionRunner.Run(app.CheckInaccurateQuestInfo, questRef, questChange);
+			app.CheckInaccurateQuestInfo(questRef, questChange);
 		end
 
 		-- give a chat output if the user has just interacted with a quest flagged as NYI
