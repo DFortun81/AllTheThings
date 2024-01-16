@@ -58,7 +58,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								GIEGER,
 							}),
 							n(TREASURES, {
-								o(355035, {	-- Treasure: House of the Chosen -- TODO: proper objectID
+								o(355035, {	-- Chosen Runecoffer [Treasure: House of the Chosen]
 									["description"] = "Becomes accessible when selecting the Anima Conduit to 'The House of the Chosen'\nRequires clicking the 3 Runes in the area to unlock",
 									["questID"] = 61647,
 									["isDaily"] = true,
