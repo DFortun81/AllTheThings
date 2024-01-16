@@ -759,7 +759,6 @@ MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] 
 		r(124569, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Draconic Leg Reinforcements [Rank 1]
 		r(124566, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Draconic Leg Reinforcements [Rank 2]
 		r(124561),	-- Draconic Leg Reinforcements [Rank 3]
-		r(124627),	-- Exotic Leather
 		r(124551, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Fur Lining - Agility [Rank 3]
 		r(124552, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Fur Lining - Intellect [Rank 3]
 		r(124553, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Fur Lining - Stamina [Rank 3]
@@ -769,6 +768,7 @@ MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] 
 		r(124565, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Heavy Leg Reinforcements [Rank 2]
 		r(124563),	-- Heavy Leg Reinforcements [Rank 3]
 		r(131865, {["timeline"] = {ADDED_5_2_0}}),	-- Magnificent Hide
+		r(124627),	-- Mist-Touched Leather
 		r(124567, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Primal Leg Reinforcements [Rank 1]
 		r(124564, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Primal Leg Reinforcements [Rank 2]
 		r(124559),	-- Primal Leg Reinforcements [Rank 3]

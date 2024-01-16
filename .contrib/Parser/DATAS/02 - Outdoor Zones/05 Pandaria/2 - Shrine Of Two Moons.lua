@@ -487,10 +487,10 @@ root(ROOTS.Zones, m(PANDARIA, {
 					},{
 						i(72094),	-- Black Trillium Ore
 						i(74247),	-- Ethereal Shard
-						i(72120),	-- Exotic Leather
 						i(72092),	-- Ghost Iron Ore
 						i(72238),	-- Golden Lotus
 						i(72093),	-- Kyparite
+						i(72120),	-- Mist-Touched Leather
 						i(74250),	-- Mysterious Essence
 						-- i(89610),	-- Pandaria Herbs (non-specific content)
 						i(79101),	-- Prismatic Scale

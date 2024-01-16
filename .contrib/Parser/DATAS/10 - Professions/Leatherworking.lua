@@ -5117,7 +5117,7 @@ profession(LEATHERWORKING, {
 					["recipeID"] = 146923,
 				},
 				{
-					["name"] = "Exotic Leather",
+					["name"] = "Mist-Touched Leather",
 					["recipeID"] = 124627,
 				},
 				{

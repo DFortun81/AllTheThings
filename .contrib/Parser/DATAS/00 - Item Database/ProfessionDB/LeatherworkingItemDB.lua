@@ -918,8 +918,8 @@ i(72027, 10564);	-- Tough Scorpid Shoulders [New Version]
 -- PATCH 5.0.4 --
 ------------------
 -- LATER --
-i(0, 124627);	-- Exotic Leather [TODO: CHECK THIS]
-i(0, 102366);		-- Exotic Leather
+i(0, 124627);	-- Mist-Touched Leather [TODO: CHECK THIS]
+i(0, 102366);		-- Mist-Touched Leather
 --- TRAINER ---
 i(0, 110423);		-- Leatherworking (Zen Master) [REMOVED: 8.0.1]
 i(0, 124126);		-- Brutal Leg Armor

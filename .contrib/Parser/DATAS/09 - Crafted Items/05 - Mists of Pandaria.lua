@@ -682,7 +682,7 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 				},
 			})),
 			spell(140040, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Magnificence of Leather
-				["cost"] = {{ "i", 72120, 20 }},	-- 20x Exotic Leather
+				["cost"] = {{ "i", 72120, 20 }},	-- 20x Mist-Touched Leather
 				["g"] = {
 					r(137832),	-- Crafted Dreadful Gladiator's Armwraps of Accuracy
 					r(137845),	-- Crafted Dreadful Gladiator's Armwraps of Alacrity

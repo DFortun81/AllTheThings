@@ -157,7 +157,7 @@ root(ROOTS.NeverImplemented, {
 				i(198820),	-- [DNT] The Book of Knowledge
 				i(191923),	-- [DNT] Worn Key
 				i(192477),	-- [PH] Primalist Keystone
-				i(191121),	-- Abalone-Inlaid Key				
+				i(191121),	-- Abalone-Inlaid Key
 				i(193414),	-- Aged Shamanic Dagger
 				i(191924),	-- Alvi's Spyglass
 				i(187854),	-- Arcane Key
@@ -350,13 +350,13 @@ root(ROOTS.NeverImplemented, {
 
 			-- 10.1.7
 			tier(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
-				i(205223),	-- Ancient Centaur Axe
-				i(205221),	-- Ancient Pottery Fragment
-				i(205222),	-- Ancient Wooden Spoke
 				i(208736),	-- Apprentice Astrologist Homework
 				i(208733),	-- Dragonhorn Flute
 				i(208737),	-- Hole-Punched Bakar Tooth
+				i(205223),	-- Ornamented Centaur Axe
+				i(205221),	-- Simple Pottery Fragment
 				i(208734),	-- Waterlogged Ledger
+				i(205222),	-- Wooden Caravan Spoke
 			})),
 
 			-- 10.2.0

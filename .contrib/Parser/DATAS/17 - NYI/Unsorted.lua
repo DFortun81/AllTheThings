@@ -571,23 +571,19 @@ root(ROOTS.Unsorted, {
 	}),
 	tier(DF_TIER, {
 		tier(DF_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+			-- Renames
 			i(21815),	-- Wrinkled Love Token
 			i(34258),	-- Lovely Fireworks
-			i(72120),	-- Mist-Touched Leather
 			i(141624),	-- Love Potion No. 13
-			i(199547),	-- Spine-Reinforced Spaulders
-			i(199549),	-- Depth Delver's Spaulders
-			i(199856),	-- Rustic Tuskarr Trader's Pack
-			i(199857),	-- Tan Tuskarr Trader's Pack
-			i(199858),	-- Dark Tuskarr Trader's Pack
-			i(199859),	-- Burgundy Tuskarr Trader's Pack
-			i(199883),	-- Tuskarr Sharktooth Bolt-Thrower
+			-- Azerothian Archives
 			i(202247),	-- Technoscryers
 			i(205455),	-- Telescope Lens
 			i(207460),	-- Dreadsquall Eggshell Fragment
 			i(208201),	-- Paper Scraps
 			i(208202),	-- Neltharion Agent Instructions
 			i(208451),	-- Archivist's Buckled Cap
+			i(212371),	-- Azerothian Archivist Initiation Token
+			-- Timerunning Pandamonium
 			i(208470),	-- Greenstone Breastplate
 			i(208471),	-- Sentinel's Chestpiece
 			i(208472),	-- Greenstone Gauntlets
@@ -734,24 +730,12 @@ root(ROOTS.Unsorted, {
 			i(210641),	-- Dawn Watcher's Spear
 			i(210642),	-- Timerunner's Greatsword
 			i(210643),	-- Mistspinner's Channel
-			i(210658),	-- Discarded Perfume Bottle
 			i(210681),	-- Timerunner's Topaz
-			i(210688),	-- Manufacturing Oil
-			i(210695),	-- Delightful Chocolate Sample
 			i(210714),	-- Timerunner's Sapphire
 			i(210715),	-- Timerunner's Amethyst
 			i(210716),	-- Timerunner's Opal
 			i(210717),	-- Timerunner's Ruby
 			i(210718),	-- Ephemeral Fractured Ruby
-			i(210719),	-- Grizzly Hills Flower
-			i(210720),	-- Delicate Flower
-			i(210721),	-- Fanciful Flower
-			i(210743),	-- Borrowed Camera
-			i(210819),	-- Chocolate-Covered Cherries
-			i(210821),	-- Berry Chocolate Tart
-			i(210841),	-- Buttered Oysters
-			i(210842),	-- Fresh Fig
-			i(210855),	-- Trader's Brick Sarong
 			i(210884),	-- Timerunner's Breastplate
 			i(210885),	-- Timerunner's Gauntlets
 			i(210886),	-- Timerunner's Warboots
@@ -784,14 +768,6 @@ root(ROOTS.Unsorted, {
 			i(210913),	-- Timerunner's Armplates
 			i(210914),	-- Timerunner's Bands
 			i(210915),	-- Timerunner's Bracers
-			i(210926),	-- Me, Myself, and Chocolate Package
-			i(210927),	-- Fruity Cocktail Flight
-			i(210928),	-- Healthy Body Package
-			i(210929),	-- Comfort Food Package
-			i(210965),	-- Single-Use Bouquet
-			i(210973),	-- Heartseeker Mana Ray
-			i(210974),	-- Eyes For You Only
-			i(210975),	-- Date Simulation Modulator
 			i(210982),	-- Draught of Power
 			i(210983),	-- Draught of Stamina
 			i(210984),	-- Draught of Critical Strike
@@ -830,6 +806,24 @@ root(ROOTS.Unsorted, {
 			i(211345),	-- Knick of Time
 			i(211346),	-- Gigantifier
 			i(211347),	-- Scarab's Shell
+			i(211388),	-- Timerunner's Starter Kit
+			-- Holidays? Love in the Air
+			i(210658),	-- Discarded Perfume Bottle
+			i(210688),	-- Manufacturing Oil
+			i(210695),	-- Delightful Chocolate Sample
+			i(210719),	-- Grizzly Hills Flower
+			i(210720),	-- Delicate Flower
+			i(210721),	-- Fanciful Flower
+			i(210743),	-- Borrowed Camera
+			i(210819),	-- Chocolate-Covered Cherries
+			i(210821),	-- Berry Chocolate Tart
+			i(210841),	-- Buttered Oysters
+			i(210842),	-- Fresh Fig
+			i(210926),	-- Me, Myself, and Chocolate Package
+			i(210927),	-- Fruity Cocktail Flight
+			i(210928),	-- Healthy Body Package
+			i(210929),	-- Comfort Food Package
+			i(210965),	-- Single-Use Bouquet
 			i(211352),	-- Eternal Yellow Rose
 			i(211354),	-- Eternal White Rose
 			i(211355),	-- Eternal Pink Rose
@@ -837,25 +831,203 @@ root(ROOTS.Unsorted, {
 			i(211358),	-- Eternal Blue Rose
 			i(211359),	-- Eternal Black Rose
 			i(211383),	-- Luvkip
-			i(211388),	-- Timerunner's Starter Kit
 			i(211429),	-- Bundle of Love Tokens
 			i(211430),	-- Bundle of Love Tokens
-			i(211432),	-- Teele
-			i(211486),	-- Winding Slitherdrake
 			i(211778),	-- O.D.I.E.'s Remote Control
 			i(211781),	-- O.D.I.E.'s Remote Control
 			i(211782),	-- Note from Zikky
 			i(211810),	-- Chocolate-Covered Crunchies
-			i(211812),	-- Renewed Proto-Drake: Love Armor
-			i(211864),	-- Exquisite Love Boat
-			i(211868),	-- Winding Slitherdrake: Lunar Festival Armor
 			i(211922),	-- Bouquet of Flowers
 			i(211923),	-- Sealed Letter
+			i(211976),	-- Pink Brightbursts
+			i(213091),	-- Memo from Apothecary Hummel
+			-- Trading Post
+			i(210855),	-- Trader's Brick Sarong
+			i(212372),	-- Magenta Masquerade Gloves
+			i(212373),	-- Gossamer Magenta Gown
+			i(212374),	-- Classic Rosy Tabard
+			i(212375),	-- Lovely Rosy Longbow
+			i(212376),	-- Lovely Gothic Longbow
+			i(212377),	-- Love Witch's Rosy Wand
+			i(212378),	-- Twilight Witch's Gothic Scepter
+			i(212379),	-- Love Witch's Rosy Stave
+			i(212380),	-- Twilight Witch's Gothic Stave
+			i(212381),	-- Love's Bulwark
+			i(212382),	-- Flourescent Splitblade
+			i(212530),	-- Corroded Augari Defender
+			i(212532),	-- Reno's Hat
+			i(212542),	-- Flowing Aquatic Gloves
+			i(212543),	-- Gossamer Teal Gown
+			i(212544),	-- Classic Aquatic Tabard
+			i(212545),	-- Crown of the White Rose
+			i(212555),	-- Guise of the Royal Masquerade
+			i(212556),	-- Guise of the Shining Masquerade
+			i(212572),	-- Dueler's Rosy Shoulder Cape
+			i(212573),	-- Dueler's Cloudy Shoulder Cape
+			i(212574),	-- Dueler's Aquatic Shoulder Cape
+			i(212576),	-- Blackrock Executioner
+			i(212577),	-- Arsenal: Skyborn Blades
+			i(212578),	-- Radiant Skyborn Blade
+			i(212579),	-- Skyborn Blade
+			i(212607),	-- Reno's Lucky Hat
+			i(212610),	-- Wings of the Emerald Monarch
+			i(212611),	-- Wings of the Tourmaline Monarch
+			i(212612),	-- Wings of the Amethyst Monarch
+			i(212613),	-- Wings of the Amber Monarch
+			i(212614),	-- Dueler's Sunny Shoulder Cape
+			i(212615),	-- Dueler's Snowy Shoulder Cape
+			i(212616),	-- Dueler's Violet Shoulder Cape
+			i(212617),	-- Dueler's Crimson Shoulder Cape
+			i(212618),	-- Dueler's Plum Shoulder Cape
+			i(212619),	-- Dueler's Carrot Shoulder Cape
+			i(212620),	-- Dueler's Faded Shoulder Cape
+			i(212621),	-- Dueler's Lively Shoulder Cape
+			i(212622),	-- Dueler's Camo Shoulder Cape
+			i(212623),	-- Dueler's Brick Shoulder Cape
+			i(212624),	-- Dueler's Deep Shoulder Cape
+			i(212625),	-- Dueler's Grassy Shoulder Cape
+			i(212626),	-- Dueler's Sepia Shoulder Cape
+			i(212627),	-- Dueler's Azure Shoulder Cape
+			i(212628),	-- Dueler's Midnight Shoulder Cape
+			i(212638),	-- Excavator's Work Shirt
+			i(212639),	-- Excavator's Glovelettes
+			i(212640),	-- Excavator's Utility Belt
+			i(212641),	-- Excavator's Rugged Pants
+			i(212642),	-- Excavator's Boots
+			i(212644),	-- Taverner's Belt
+			i(212692),	-- Excavator's Dusky Fedora
+			i(212698),	-- Spring Reveler's Turquoise Attire
+			i(212699),	-- Spring Reveler's Turquoise Belt
+			i(212701),	-- Spring Reveler's Turquoise Boots
+			i(212702),	-- Spring Reveler's Lavender Attire
+			i(212703),	-- Spring Reveler's Lavender Belt
+			i(212704),	-- Spring Reveler's Lavender Boots
+			i(212705),	-- Spring Reveler's Cornsilk Attire
+			i(212706),	-- Spring Reveler's Cornsilk Belt
+			i(212707),	-- Spring Reveler's Cornsilk Boots
+			i(212708),	-- Spring Reveler's Dandelion Attire
+			i(212709),	-- Spring Reveler's Dandelion Belt
+			i(212710),	-- Spring Reveler's Dandelion Boots
+			i(212711),	-- Spring Reveler's Turquoise Dress
+			i(212712),	-- Spring Reveler's Lavender Dress
+			i(212713),	-- Spring Reveler's Cornsilk Dress
+			i(212714),	-- Spring Reveler's Dandelion Dress
+			i(212715),	-- Spring Reveler's Turquoise Sun Hat
+			i(212716),	-- Spring Reveler's Lavender Sun Hat
+			i(212717),	-- Spring Reveler's Cornsilk Sun Hat
+			i(212718),	-- Spring Reveler's Dandelion Sun Hat
+			i(212787),	-- Gloves of the Violet Gala
+			i(212788),	-- Gossamer Emerald Gown
+			i(212789),	-- Champion's Jade Cleaver
+			i(212790),	-- Codex of Classic Conjurations
+
+			i(212793),	-- Excavator's Pack of Findings
+
+			i(212940),	-- Ensemble: Spring Reveler's Lavender Collection
+			i(212985),	-- Spring Reveler's Turquoise Pants
+			i(212986),	-- Spring Reveler's Lavender Pants
+			i(212987),	-- Spring Reveler's Cornsilk Pants
+			i(212988),	-- Spring Reveler's Dandelion Pants
+			i(212990),	-- Classic Violet Tabard
+			i(190670),	-- Sanguine Bouquet
+			i(190805),	-- Deforester's Hatchet
+			i(190819),	-- Emerald Guardian's Longbow
+			i(190857),	-- Gilded Emerald Longcloak
+			i(190859),	-- Apprentice's Twisted Crook
+			i(190873),	-- Warhammer of Hubris
+			i(190890),	-- Chipped Warblade
+			i(190895),	-- Lost Crusader's Amethyst Battleaxe
+			i(213062),	-- Paradise's Golden Axe
+			i(213063),	-- Paradise's Ruby Axe
+			i(213064),	-- Paradise's Violet Axe
+			i(213065),	-- Lavish Floral Edge
+			i(213066),	-- Rosy Floral Edge
+			i(213067),	-- Violet Floral Edge
+			i(213068),	-- Lavish Floral Stalk
+			i(213069),	-- Rosy Floral Stalk
+			i(213070),	-- Pristine Floral Stalk
+			i(213071),	-- Sunny Floral Staff
+			i(213072),	-- Ruby Floral Staff
+			i(213073),	-- Faded Floral Staff
+			i(213075),	-- Sunny Bow-quet
+			i(213076),	-- Orchid Bow-quet
+			i(213077),	-- Lavender Bow-quet
+			i(213078),	-- Assassin's Bandolier
+			i(213084),	-- Ensemble: Spring Reveler's Lavender Apparel
+			i(213145),	-- Dark Ranger General's Hood
+			i(213146),	-- Dark Ranger General's Breastplate
+			i(213147),	-- Dark Ranger General's Gloves
+			i(213148),	-- Dark Ranger General's Spaulders
+			i(213149),	-- Dark Ranger General's Cinch
+			i(213150),	-- Dark Ranger General's Boots
+			i(213151),	-- Dark Ranger General's Chestguard
+			i(213152),	-- Dark Ranger General's Leggings
+			i(213153),	-- Dark Ranger General's Bracers
+			i(213154),	-- Dark Ranger General's Cloak
+			i(213155),	-- Dark Ranger General's Quiver
+			i(213158),	-- Ensemble: Dark Ranger General's Kit
+			i(213161),	-- Titan Thunderbow
+			i(213162),	-- Blessed Bow of the Windseeker
+			i(214214),	-- Gleaming Gloves of Unrelenting Justice
+			i(214223),	-- Gleaming Helm of Unrelenting Justice
+			i(214224),	-- Gleaming Tunic of Unrelenting Justice
+			i(214225),	-- Gleaming Bracers of Unrelenting Justice
+			i(214226),	-- Gleaming Belt of Unrelenting Justice
+			i(214227),	-- Gleaming Leggings of Unrelenting Justice
+			i(214228),	-- Gleaming Cloak of Unrelenting Justice
+			i(214229),	-- Gleaming Mantle of Unrelenting Justice
+			i(214230),	-- Gleaming Treads of Unrelenting Justice
+			i(214231),	-- Moonlit Gloves of Unrelenting Justice
+			i(214232),	-- Moonlit Helm of Unrelenting Justice
+			i(214233),	-- Moonlit Tunic of Unrelenting Justice
+			i(214234),	-- Moonlit Bracers of Unrelenting Justice
+			i(214235),	-- Moonlit Belt of Unrelenting Justice
+			i(214236),	-- Moonlit Leggings of Unrelenting Justice
+			i(214237),	-- Moonlit Cloak of Unrelenting Justice
+			i(214238),	-- Moonlit Mantle of Unrelenting Justice
+			i(214239),	-- Moonlit Treads of Unrelenting Justice
+			i(214240),	-- Ensemble: Gleaming Burden of Unrelenting Justice
+			i(214241),	-- Ensemble: Moonlit Burden of Unrelenting Justice
+			-- Mount
+			i(210973),	-- Heartseeker Mana Ray (love)
+			i(211486),	-- Winding Slitherdrake
+			i(212227),	-- Reins of the Fur-endship Fox
+			i(212228),	-- Reins of the Soaring Sky Fox
+			i(212229),	-- Reins of the Twilight Sky Prowler
+			i(212522),	-- Compass Rose (hs)
+			i(212599),	-- Noble Flying Carpet
+			i(212630),	-- Reins of the Majestic Azure Peafowl
+			i(212631),	-- Reins of the Brilliant Sunburst Peafowl
+			i(212632),	-- Reins of the Starry Twilight Peafowl
+			i(212645),	-- Clayscale Hornstrider
+			i(212920),	-- Savage Blue Battle Turtle
+			-- Toy
+			i(210974),	-- Eyes For You Only (love)
+			i(210975),	-- Date Simulation Modulator (love)
+			i(211864),	-- Exquisite Love Boat (love)
+			i(212337),	-- Stone of the Hearth (hs)
+			i(212369),	-- Battlefield Lover's Bow
+			i(212500),	-- Delicate Silk Parasol
+			i(212523),	-- Delicate Jade Parasol
+			i(212524),	-- Delicate Crimson Parasol
+			i(212525),	-- Delicate Ebony Parasol
+			-- Pet
+			i(211432),	-- Teele
+			i(212606),	-- Sarge
+			i(212700),	-- Nelle
+			i(212722),	-- Buggsy
+			i(212786),	-- Lovely Duckling
+			i(212791),	-- Beetriz
+			i(213556),	-- Hoplet
+			i(208446),	-- Fyrn
+			-- DM
+			i(211812),	-- Renewed Proto-Drake: Love Armor
+			i(211868),	-- Winding Slitherdrake: Lunar Festival Armor
+			-- Cup
 			i(211926),	-- Riders of Azeroth Tabard
 			i(211928),	-- Ruby Riders of Azeroth Tabard
-			i(211949),	-- Durumu's Glass Pupil
+			-- Hearthstone
 			i(211965),	-- Hearthstone Wild Card
-			i(211976),	-- Pink Brightbursts
 			i(212155),	-- Hearthstone Invitation Letter
 			i(212156),	-- Hearthstone Invitation Letter
 			i(212157),	-- An Invitation
@@ -903,26 +1075,18 @@ root(ROOTS.Unsorted, {
 			i(212220),	-- Ensemble: Love Witch's Attire
 			i(212221),	-- Ensemble: Sky Witch's Attire
 			i(212222),	-- Ensemble: Twilight Witch's Attire
-			i(212227),	-- Reins of the Fur-endship Fox
-			i(212228),	-- Reins of the Soaring Sky Fox
-			i(212229),	-- Reins of the Twilight Sky Prowler
 			i(212335),	-- Collector's Carryall
 			i(212336),	-- The Tavern's Tabard
-			i(212337),	-- Stone of the Hearth (Needs Icon)
 			i(212338),	-- DNT - Hearthstone - Loot - Hat (Needs Art)
-			i(212369),	-- Heart-Shaped Back
-			i(212371),	-- Azerothian Archivist Initiation Token
-			i(212372),	-- Magenta Masquerade Gloves
-			i(212373),	-- Gossamer Magenta Gown
-			i(212374),	-- Classic Rosy Tabard
-			i(212375),	-- Lovely Rosy Longbow
-			i(212376),	-- Lovely Gothic Longbow
-			i(212377),	-- Love Witch's Rosy Wand
-			i(212378),	-- Love Witch's Gothic Wand
-			i(212379),	-- Love Witch's Rosy Staff
-			i(212380),	-- Love Witch's Gothic Staff
-			i(212381),	-- Love's Bulwark
-			i(212382),	-- Flourescent Splitblade
+			-- Warlock
+			i(211949),	-- Durumu's Glass Pupil
+
+
+
+
+
+
+			-- Misc
 			i(212459),	-- Copy of The Old Wizard's Almanac
 			i(212460),	-- Copy of Excerpts from the Journal of Archmage Vargoth
 			i(212461),	-- Copy of Kirin Tor Monthly (March Issue)
@@ -954,83 +1118,17 @@ root(ROOTS.Unsorted, {
 			i(212487),	-- Copy of On the Virtues of Magic
 			i(212488),	-- Copy of Kirin Tor Monthly (May Issue)
 			i(212489),	-- Copy of a Damaged Apprentice Journal
-			i(212500),	-- Delicate Silk Parasol
-			i(212522),	-- Compass Rose
-			i(212523),	-- Delicate Jade Parasol
-			i(212524),	-- Delicate Crimson Parasol
-			i(212525),	-- Delicate Ebony Parasol
-			i(212530),	-- Teal Bulwark
-			i(212532),	-- Reno's Hat
-			i(212542),	-- Flowing Aquatic Gloves
-			i(212543),	-- Gossamer Teal Gown
-			i(212544),	-- Classic Aquatic Tabard
-			i(212545),	-- Rosy Heart Crown
-			i(212555),	-- Guise of the Royal Masquerade
-			i(212556),	-- Guise of the Shining Masquerade
-			i(212572),	-- Dueler's Rosy Shoulder Cape
-			i(212573),	-- Dueler's Cloudy Shoulder Cape
-			i(212574),	-- Dueler's Aquatic Shoulder Cape
-			i(212576),	-- Champion's Violet Cleaver
-			i(212577),	-- Arsenal: Quel'Serrar Skyborn Blades
-			i(212578),	-- Quel'Serrar Skyborn Radiant Blade
-			i(212579),	-- Quel'Serrar Skyborn Blade
-			i(212599),	-- Noble Flying Carpet
-			i(212606),	-- Sarge
-			i(212607),	-- Reno's Lucky Hat
-			i(212608),	-- Potion [DNT]
-			i(212610),	-- Wings of the Emerald Monarch
-			i(212611),	-- Wings of the Tourmaline Monarch
-			i(212612),	-- Wings of the Amethyst Monarch
-			i(212613),	-- Wings of the Amber Monarch
-			i(212614),	-- Dueler's Sunny Shoulder Cape
-			i(212615),	-- Dueler's Snowy Shoulder Cape
-			i(212616),	-- Dueler's Violet Shoulder Cape
-			i(212617),	-- Dueler's Crimson Shoulder Cape
-			i(212618),	-- Dueler's Plum Shoulder Cape
-			i(212619),	-- Dueler's Carrot Shoulder Cape
-			i(212620),	-- Dueler's Faded Shoulder Cape
-			i(212621),	-- Dueler's Lively Shoulder Cape
-			i(212622),	-- Dueler's Camo Shoulder Cape
-			i(212623),	-- Dueler's Brick Shoulder Cape
-			i(212624),	-- Dueler's Deep Shoulder Cape
-			i(212625),	-- Dueler's Grassy Shoulder Cape
-			i(212626),	-- Dueler's Sepia Shoulder Cape
-			i(212627),	-- Dueler's Azure Shoulder Cape
-			i(212628),	-- Dueler's Midnight Shoulder Cape
-			i(212630),	-- Reins of the Majestic Azure Peafowl
-			i(212631),	-- Reins of the Brilliant Sunburst Peafowl
-			i(212632),	-- Reins of the Starry Twilight Peafowl
-			i(212638),	-- [PH] Unearthed Chest
-			i(212639),	-- [PH] Unearthed Gloves
-			i(212640),	-- [PH] Unearthed Waist
-			i(212641),	-- [PH] Unearthed Pants
-			i(212642),	-- [PH] Unearthed Boots
-			i(212643),	-- Golden Egg Heirloom
-			i(212644),	-- The Tavern's Belt
-			i(212645),	-- PH Hornstrider Red
 			--
-			i(67108),	-- Lord Godfrey's Old Spectacles
-			i(205221),	-- Simple Pottery Fragment
-			i(205222),	-- Wooden Caravan Spoke
-			i(205223),	-- Ornamented Centaur Axe
-			i(212337),	-- Stone of the Hearth
-			i(212369),	-- Battlefield Lover's Bow
-			i(212378),	-- Twilight Witch's Gothic Scepter
-			i(212379),	-- Love Witch's Rosy Stave
-			i(212380),	-- Twilight Witch's Gothic Stave
-			i(212530),	-- Corroded Augari Defender
-			i(212545),	-- Crown of the White Rose
-			i(212576),	-- Blackrock Executioner
-			i(212577),	-- Arsenal: Skyborn Blades
-			i(212578),	-- Radiant Skyborn Blade
-			i(212579),	-- Skyborn Blade
-			i(212638),	-- Excavator's Work Shirt
-			i(212639),	-- Excavator's Glovelettes
-			i(212640),	-- Excavator's Utility Belt
-			i(212641),	-- Excavator's Rugged Pants
-			i(212642),	-- Excavator's Boots
-			i(212644),	-- Taverner's Belt
-			i(212645),	-- Clayscale Hornstrider
+
+			i(212608),	-- Duck Potion
+
+
+
+
+
+			i(212643),	-- Golden Egg Heirloom
+
+			-- Misc
 			i(212646),	-- Chipped Armor Plate
 			i(212647),	-- Leather Bakar-Sized Shoe
 			i(212648),	-- Fishbone Needle
@@ -1038,35 +1136,13 @@ root(ROOTS.Unsorted, {
 			i(212650),	-- Pot of Tattooing Ink
 			i(212687),	-- Crude Toy Ducky
 			i(212688),	-- Salt-dried Roots
-			i(212692),	-- Excavator's Dusky Fedora
-			i(212698),	-- Spring Reveler's Turquoise Attire
-			i(212699),	-- Spring Reveler's Turquoise Belt
-			i(212700),	-- Nelle
-			i(212701),	-- Spring Reveler's Turquoise Boots
-			i(212702),	-- Spring Reveler's Lavender Attire
-			i(212703),	-- Spring Reveler's Lanvender Belt
-			i(212704),	-- Spring Reveler's Lavender Boots
-			i(212705),	-- Spring Reveler's Cornsilk Attire
-			i(212706),	-- Spring Reveler's Cornsilk Belt
-			i(212707),	-- Spring Reveler's Cornsilk Boots
-			i(212708),	-- Spring Reveler's Dandelion Attire
-			i(212709),	-- Spring Reveler's Dandelion Belt
-			i(212710),	-- Spring Reveler's Dandelion Boots
-			i(212711),	-- Spring Reveler's Turquoise Dress
-			i(212712),	-- Spring Reveler's Lavender Dress
-			i(212713),	-- Spring Reveler's Cornsilk Dress
-			i(212714),	-- Spring Reveler's Dandelion Dress
-			i(212715),	-- Spring Reveler's Turquoise Sun Hat
-			i(212716),	-- Spring Reveler's Lavender Sun Hat
-			i(212717),	-- Spring Reveler's Cornsilk Sun Hat
-			i(212718),	-- Spring Reveler's Dandelion Sun Hat
-			i(212722),	-- Buggsy
+
 			i(212761),	-- Pouch of Coins
 			i(212762),	-- Tarnished Horn Signet
 			i(212763),	-- Spoiled Honeywine
 			i(212764),	-- Fishing Net Fragment
 			i(212765),	-- Fish Bones
-			i(212766),	-- Pottery Fragment
+			i(212766),	-- Amphora Fragment
 			i(212767),	-- Broken Beaker
 			i(212768),	-- Niffen-Sized Dagger
 			i(212769),	-- Tattered Wanted Poster
@@ -1078,49 +1154,11 @@ root(ROOTS.Unsorted, {
 			i(212782),	-- Poorly Preserved Relic
 			i(212784),	-- Destroyed Relic
 			i(212785),	-- Helm of the Stout
-			i(212786),	-- Lovely Duckling
-			i(212787),	-- Gloves of the Violet Gala
-			i(212788),	-- Gossamer Emerald Gown
-			i(212789),	-- Champion's Jade Cleaver
-			i(212790),	-- Codex of Classic Conjurations
-			i(212791),	-- Beetriz
-			i(212793),	-- Excavator's Pack of Findings
-			i(212920),	-- Savage Blue Battle Turtle
-			i(212940),	-- Ensemble: Spring Reveler's Collection
-			i(212976),	-- Duck Carving
+
+
+			i(212976),	-- Drakonid Duck Carving
 			i(212977),	-- Drakonid Sign Placard
 			i(212978),	-- Dragon Painter's Palette
-			i(212981),	-- Violet Kaldorei Bedroll
-			i(212985),	-- Spring Reveler's Turquoise Pants
-			i(212986),	-- Spring Reveler's Lavender Pants
-			i(212987),	-- Spring Reveler's Cornsilk Pants
-			i(212988),	-- Spring Reveler's Dandelion Pants
-			i(212990),	-- Classic Violet Tabard
-			i(213004),	-- Violet Kaldorei Backpack
-			i(190670),	-- Sanguine Bouquet
-			i(190805),	-- Deforester's Hatchet
-			i(190819),	-- Emerald Guardian's Longbow
-			i(190857),	-- Gilded Emerald Longcloak
-			i(190859),	-- Apprentice's Twisted Crook
-			i(190873),	-- Warhammer of Hubris
-			i(190890),	-- Chipped Warblade
-			i(190895),	-- Lost Crusader's Amethyst Battleaxe
-			i(210435),	-- Archivist's Water Totem
-			i(210778),	-- Archivist's Wind Totem
-			i(210834),	-- Archivist's Earth Totem
-			i(210956),	-- Archivist's Fire Totem
-			i(211264),	-- Rose of Romance
-			i(211266),	-- Archivist's Fire Totem
-			i(211351),	-- Rose of Friendship
-			i(211360),	-- Rose of Purity
-			i(211361),	-- Rose of Joy
-			i(211362),	-- Rose of Independence
-			i(211363),	-- Rose of Dreams Fulfilled
-			i(211364),	-- Rose of Tragedy
-			i(212608),	-- Duck Potion
-			i(212766),	-- Amphora Fragment
-			i(212940),	-- Ensemble: Spring Reveler's Lavender Collection
-			i(212976),	-- Drakonid Duck Carving
 			i(213020),	-- Ancient Drakonid Shovel
 			i(213021),	-- Corked Drakonid Vial
 			i(213022),	-- Drakonid Blacksmith Hammer
@@ -1146,40 +1184,6 @@ root(ROOTS.Unsorted, {
 			i(213043),	-- Brittle Djaradin Leather
 			i(213044),	-- Frayed Fang Amulet
 			i(213045),	-- Snapped Djaradin Necklace
-			i(213062),	-- Paradise's Golden Axe
-			i(213063),	-- Paradise's Ruby Axe
-			i(213064),	-- Paradise's Violet Axe
-			i(213065),	-- Lavish Floral Edge
-			i(213066),	-- Rosy Floral Edge
-			i(213067),	-- Violet Floral Edge
-			i(213068),	-- Lavish Floral Stalk
-			i(213069),	-- Rosy Floral Stalk
-			i(213070),	-- Pristine Floral Stalk
-			i(213071),	-- Sunny Floral Staff
-			i(213072),	-- Ruby Floral Staff
-			i(213073),	-- Faded Floral Staff
-			i(213075),	-- Sunny Bow-quet
-			i(213076),	-- Orchid Bow-quet
-			i(213077),	-- Lavender Bow-quet
-			i(213078),	-- Assassin's Bandolier
-			i(213084),	-- Ensemble: Spring Reveler's Lavender Apparel
-			i(213091),	-- Memo from Apothecary Hummel
-			i(213106),	-- Gladiator's Serrated Greatsword
-			i(213107),	-- Gladiator's Ragged Greatsword
-			i(213145),	-- Dark Ranger General's Hood
-			i(213146),	-- Dark Ranger General's Breastplate
-			i(213147),	-- Dark Ranger General's Gloves
-			i(213148),	-- Dark Ranger General's Spaulders
-			i(213149),	-- Dark Ranger General's Cinch
-			i(213150),	-- Dark Ranger General's Boots
-			i(213151),	-- Dark Ranger General's Chestguard
-			i(213152),	-- Dark Ranger General's Leggings
-			i(213153),	-- Dark Ranger General's Bracers
-			i(213154),	-- Dark Ranger General's Cloak
-			i(213155),	-- Dark Ranger General's Quiver
-			i(213158),	-- Ensemble: Dark Ranger General's Kit
-			i(213161),	-- Titan Thunderbow
-			i(213162),	-- Blessed Bow of the Windseeker
 			i(213176),	-- Preserved Isles Tome
 			i(213177),	-- Immaculate Tome
 			i(213179),	-- Cracked Draconic Tooth
@@ -1234,31 +1238,39 @@ root(ROOTS.Unsorted, {
 			i(212382),	-- Fluorescent Splitblade
 			i(212640),	-- Excavator's Trusty Satchel
 			i(213429),	-- Meticulous Archivist's Appendix
-			i(213556),	-- Hoplet
-			--
-			i(208446),	-- Fyrn
-			i(212703),	-- Spring Reveler's Lavender Belt
-			i(214214),	-- Gleaming Gloves of Unrelenting Justice
-			i(214223),	-- Gleaming Helm of Unrelenting Justice
-			i(214224),	-- Gleaming Tunic of Unrelenting Justice
-			i(214225),	-- Gleaming Bracers of Unrelenting Justice
-			i(214226),	-- Gleaming Belt of Unrelenting Justice
-			i(214227),	-- Gleaming Leggings of Unrelenting Justice
-			i(214228),	-- Gleaming Cloak of Unrelenting Justice
-			i(214229),	-- Gleaming Mantle of Unrelenting Justice
-			i(214230),	-- Gleaming Treads of Unrelenting Justice
-			i(214231),	-- Moonlit Gloves of Unrelenting Justice
-			i(214232),	-- Moonlit Helm of Unrelenting Justice
-			i(214233),	-- Moonlit Tunic of Unrelenting Justice
-			i(214234),	-- Moonlit Bracers of Unrelenting Justice
-			i(214235),	-- Moonlit Belt of Unrelenting Justice
-			i(214236),	-- Moonlit Leggings of Unrelenting Justice
-			i(214237),	-- Moonlit Cloak of Unrelenting Justice
-			i(214238),	-- Moonlit Mantle of Unrelenting Justice
-			i(214239),	-- Moonlit Treads of Unrelenting Justice
-			i(214240),	-- Ensemble: Gleaming Burden of Unrelenting Justice
-			i(214241),	-- Ensemble: Moonlit Burden of Unrelenting Justice
+
+			-- Archive
+			i(210435),	-- Archivist's Water Totem
+			i(210778),	-- Archivist's Wind Totem
+			i(210834),	-- Archivist's Earth Totem
+			i(210956),	-- Archivist's Fire Totem
+			i(211266),	-- Archivist's Fire Totem
 			i(215160),	-- The Big Dig Rig
+
+			i(211264),	-- Rose of Romance
+			i(211351),	-- Rose of Friendship
+			i(211360),	-- Rose of Purity
+			i(211361),	-- Rose of Joy
+			i(211362),	-- Rose of Independence
+			i(211363),	-- Rose of Dreams Fulfilled
+			i(211364),	-- Rose of Tragedy
+
+
+
+
+
+			i(213106),	-- Gladiator's Serrated Greatsword
+			i(213107),	-- Gladiator's Ragged Greatsword
+
+
+
+
+
+
+
+			-- Quest
+			i(213004),	-- Violet Kaldorei Backpack
+			i(212981),	-- Violet Kaldorei Bedroll
 		})),
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			i(211927),	-- Tattered DreamleafS

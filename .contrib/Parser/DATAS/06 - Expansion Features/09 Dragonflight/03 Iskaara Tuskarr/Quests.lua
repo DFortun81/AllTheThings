@@ -510,7 +510,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(199881),	-- Tuskarr Fisherman's Harpoon
 						i(199880),	-- Tuskarr Leviathan's Hook
 						i(199882),	-- Tuskarr Mystic's Stave
-						i(199883),	-- Tuskarr Sharktooth Bolthrower
+						i(199883),	-- Tuskarr Sharktooth Bolt-Thrower
 						i(199878),	-- Tuskarr Timber Splitter
 					},
 				}),
