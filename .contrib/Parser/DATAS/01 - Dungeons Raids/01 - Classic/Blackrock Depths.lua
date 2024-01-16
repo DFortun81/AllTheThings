@@ -192,7 +192,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["lvl"] = 48,
 				}),
 				q(3802, {	-- Dark Iron Legacy (2/2)
-					["qg"] = 8888,	-- Franclorn Forgewright
+					["providers"] = {
+						{ "n",   8888 },	-- Franclorn Forgewright
+						{ "o", 164689 },	-- Monument of Franclorn Forgewright
+					},
 					["sourceQuest"] = 3801,	-- Dark Iron Legacy (1/2)
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { BLACKROCK_MOUNTAIN },
@@ -200,6 +203,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Ironfel
 							["provider"] = { "i", 10999 },	-- Ironfel
+							["cr"] = 9056,	-- Fineous Darkvire <Chief Architect>
 						}),
 						i(11000, {	-- Shadowforge Key
 							["timeline"] = { "deleted 4.0.3" },
@@ -2578,7 +2582,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				e(376, {	-- Fineous Darkvire <Chief Architect>
 					["creatureID"] = 9056,
 					["groups"] = {
-						i(10999),	-- Ironfel
 						i(11840),	-- Master Builder's Shirt
 						i(11839),	-- Chief Architect's Monocle
 						applyclassicphase(PHASE_FIVE, i(22223)),	-- Foreman's Head Protector
