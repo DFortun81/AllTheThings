@@ -4,6 +4,13 @@ local i = function(itemID, questID)
 	Items[itemID] = { ["questID"] = questID, ["type"] = "characterUnlockQuestID" };
 end
 
+------------------
+-- PATCH 10.2.5 --
+------------------
+i(213207, 79551);	-- A Tiny Ear Warmer
+i(213202, 79550);	-- A Tiny Explorer's Hat
+i(213181, 79547);	-- A Tiny Dragon Goblet
+
 -----------------
 -- PATCH 9.1.0 --
 -----------------
