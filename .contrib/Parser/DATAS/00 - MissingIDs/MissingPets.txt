@@ -1,7 +1,3 @@
-6.0.1.18179
-pet(1395),	-- Lil' Leftovers
-9.0.1.35432
-pet(3044),	-- Spinemaw Gormling \\ Spinemaw Larva
 10.2.5.52206
 pet(4402),	-- Teele
 pet(4406),	-- Sarge
@@ -12,6 +8,8 @@ pet(4409),	-- Lovely Duckling \\ [DNT] Pink Duckling
 pet(4410),	-- Beetriz
 10.2.5.52554
 pet(4421),	-- Hoplet
+10.2.5.52902
+pet(4264),	-- Fyrn
 
 
 
@@ -28,3 +26,5 @@ pet(4409),	-- Lovely Duckling \\ [DNT] Pink Duckling
 pet(4410),	-- Beetriz
 10.2.5.52554
 pet(4421),	-- Hoplet
+10.2.5.52902
+pet(4264),	-- Fyrn

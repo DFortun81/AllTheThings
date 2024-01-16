@@ -36,7 +36,6 @@ r(163230),	-- Nether Dragonscales
 r(163231),	-- Cobra Scales
 r(163232),	-- Wind Scales
 r(171713),	-- Burnished Leather
-r(173416),	-- Small Football
 r(196383),	-- Stonehide Leather Vamp
 r(196387),	-- Shaved Felhide
 r(196388),	-- Tanned Fel Leather

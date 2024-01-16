@@ -4,11 +4,8 @@ q(615),	-- The Captain's Cutlass	 CLASSIC:The Captain's Cutlass	 TBC:The Captain
 q(618),	-- Facing Negolash	 CLASSIC:Facing Negolash	 TBC:Facing Negolash	 WOTLK:Facing Negolash
 q(620),	-- The Monogrammed Sash	 CLASSIC:The Monogrammed Sash	 TBC:The Monogrammed Sash	 WOTLK:The Monogrammed Sash
 q(934),	-- Crown of the Earth	 CLASSIC:Crown of the Earth	 TBC:Crown of the Earth	 WOTLK:Crown of the Earth
-q(1531),	-- Call of Air	 CLASSIC:Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(1532),	-- Call of Air	 CLASSIC:Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
 q(2000),	-- Rokar Bladeshadow	 CLASSIC:Rokar Bladeshadow	 TBC:Rokar Bladeshadow	 WOTLK:Rokar Bladeshadow
 q(2018),	-- Rokar's Test	 CLASSIC:Rokar's Test
-q(2358),	-- Horns of Nez'ra	 CLASSIC:Horns of Nez'ra	 WOTLK:Horns of Nez'ra
 q(5101),	-- Lee's Ultimate Test Quest... of Doom!	 CLASSIC:Lee's Ultimate Test Quest... of Doom!	 TBC:Lee's Ultimate Test Quest... of Doom!	 WOTLK:Lee's Ultimate Test Quest... of Doom!
 q(5628),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home
 q(5629),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home
@@ -44,31 +41,6 @@ q(7487),	-- Attunement to the Core	 CLASSIC:Attunement to the Core	 TBC:Attuneme
 q(7521),	-- Thunderaan the Windseeker	 CLASSIC:Thunderaan the Windseeker
 q(7522),	-- Examine the Vessel	 CLASSIC:Examine the Vessel
 q(7561),	-- Rise, Thunderfury!	 CLASSIC:Rise, Thunderfury!
-q(7788),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!
-q(7789),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(7871),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!
-q(7872),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!
-q(7873),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!
-q(7874),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(7875),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(7876),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(8080),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!
-q(8123),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
-q(8154),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!
-q(8155),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!
-q(8156),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!
-q(8160),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
-q(8161),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
-q(8162),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
-q(8266),	-- Ribbons of Sacrifice	 CLASSIC:Ribbons of Sacrifice	 TBC:Ribbons of Sacrifice	 WOTLK:Ribbons of Sacrifice
-q(8268),	-- Ribbons of Sacrifice	 CLASSIC:Ribbons of Sacrifice	 TBC:Ribbons of Sacrifice	 WOTLK:Ribbons of Sacrifice
-q(8290),	-- Vanquish the Invaders	 CLASSIC:Vanquish the Invaders	 TBC:Vanquish the Invaders	 WOTLK:Vanquish the Invaders
-q(8291),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!
-q(8294),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(8295),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers
-q(8297),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!
-q(8299),	-- Cut Arathor Supply Lines	 CLASSIC:Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
-q(8411),	-- [DEPRECATED] Mastering the Elements	 CLASSIC:Mastering the Elements	 TBC:Mastering the Elements	 WOTLK:Mastering the Elements
 q(8530),	-- The Alliance Needs Singed Corestones!	 CLASSIC:The Alliance Needs Singed Corestones!	 TBC:The Alliance Needs Singed Corestones!	 WOTLK:The Alliance Needs Singed Corestones!
 q(8617),	-- The Horde Needs Singed Corestones!	 CLASSIC:The Horde Needs Singed Corestones!	 TBC:The Horde Needs Singed Corestones!	 WOTLK:The Horde Needs Singed Corestones!
 q(8869),	-- Sweet Serenity	 CLASSIC:Sweet Serenity	 TBC:Sweet Serenity	 WOTLK:Sweet Serenity
@@ -281,12 +253,10 @@ q(79502),	--
 q(79637),	--
 2.5.1.38043
 q(8344),	-- Windows to the Source	 TBC:Windows to the Source	 WOTLK:Windows to the Source
-q(9168),	-- Heart of Deatholme	 TBC:Heart of Deatholme	 WOTLK:Heart of Deatholme
 q(9347),	-- Voidwalkers Gone Wild	 TBC:Voidwalkers Gone Wild	 WOTLK:Voidwalkers Gone Wild
 q(9348),	-- Ravager Roundup	 TBC:Ravager Roundup	 WOTLK:Ravager Roundup
 q(9350),	-- A Peon's Work is Never Done	 TBC:A Peon's Work is Never Done	 WOTLK:A Peon's Work is Never Done
 q(9354),	-- Searching for New Materials	 TBC:Searching for New Materials	 WOTLK:Searching for New Materials
-q(9357),	-- Report to Aeldon Sunbrand	 TBC:Report to Aeldon Sunbrand	 WOTLK:Report to Aeldon Sunbrand
 q(9379),	-- Fortifying the Felhunter	 TBC:Fortifying the Felhunter	 WOTLK:Fortifying the Felhunter
 q(9432),	-- Travel to Astranaar	 TBC:Travel to Astranaar	 WOTLK:Travel to Astranaar
 q(9460),	-- Combining Forces	 TBC:Combining Forces	 WOTLK:Combining Forces
@@ -296,12 +266,6 @@ q(9486),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast
 q(9497),	-- Emblem of the Fel Horde	 TBC:Emblem of the Fel Horde	 WOTLK:Emblem of the Fel Horde
 q(9532),	-- Find Keltus Darkleaf	 TBC:Find Keltus Darkleaf	 WOTLK:Find Keltus Darkleaf
 q(9546),	-- Fulfilling a Promise
-q(9547),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(9551),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(9552),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(9553),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(9554),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
-q(9568),	-- On the Offensive	 TBC:On the Offensive	 WOTLK:On the Offensive
 q(9617),	-- Seek the Farstriders	 TBC:Seek the Farstriders	 WOTLK:Seek the Farstriders
 q(9618),	-- Return the Reports	 TBC:Return the Reports	 WOTLK:Return the Reports
 q(9712),	-- The Thalassian Warhorse	 TBC:The Thalassian Warhorse	 WOTLK:The Thalassian Warhorse
@@ -312,16 +276,12 @@ q(10080),	-- Forge Camps of the Legion	 TBC:Forge Camps of the Legion	 WOTLK:For
 q(10083),	-- The Legion's Plans	 TBC:The Legion's Plans	 WOTLK:The Legion's Plans
 q(10217),	-- Fossil Fuel
 q(10219),	-- Walk the Dog
-q(10260),	-- Netherologist Coppernickels	 TBC:Netherologist Coppernickels	 WOTLK:Netherologist Coppernickels
-q(10292),	-- More Power!	 TBC:More Power!	 WOTLK:More Power!
 q(10364),	-- Caedmos	 TBC:Caedmos	 WOTLK:Caedmos
 q(10376),	-- Symbol of Hope	 WOTLK:Symbol of Hope
 q(10377),	-- Nothing to Fear	 TBC:Nothing to Fear	 WOTLK:Nothing to Fear
 q(10378),	-- Consume Magic	 WOTLK:Consume Magic
 q(10379),	-- Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness
 q(10383),	-- This is a Breadcrumb!	 TBC:This is a Breadcrumb!	 WOTLK:This is a Breadcrumb!
-q(10404),	-- Against the Legion	 TBC:Against the Legion	 WOTLK:Against the Legion
-q(10491),	-- Call of Air	 TBC:Call of Air	 WOTLK:Call of Air
 q(10529),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path
 q(10530),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path
 q(10532),	-- Cut Arathor Supply Lines	 TBC:Cut Arathor Supply Lines	 WOTLK:Cut Arathor Supply Lines
@@ -333,7 +293,6 @@ q(10631),	-- Back In Business	 TBC:Back In Business	 WOTLK:Back In Business
 q(10779),	-- The Hunter's Path	 TBC:The Hunter's Path	 WOTLK:The Hunter's Path
 q(10789),	-- Return to Carendin Halgar	 TBC:Return to Carendin Halgar	 WOTLK:Return to Carendin Halgar
 q(10790),	-- Return to Mordak Darkfist	 TBC:Return to Gan'rul Bloodeye	 WOTLK:Return to Gan'rul Bloodeye
-q(10844),	-- Forge Camp: Anger	 TBC:Forge Camp: Anger	 WOTLK:Forge Camp: Anger
 q(10931),	-- Return to the Exodar	 TBC:Return to the Exodar	 WOTLK:Return to the Exodar
 q(10932),	-- Return to the Exodar	 TBC:Return to the Exodar	 WOTLK:Return to the Exodar
 q(10933),	-- Return to Silvermoon	 TBC:Return to Silvermoon	 WOTLK:Return to Silvermoon
@@ -515,18 +474,6 @@ q(24427),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley
 q(24508),	-- Temp Quest Record	 WOTLK:Temp Quest Record
 q(24509),	-- Temp Quest Record	 WOTLK:Temp Quest Record
 q(24746),	-- REUSE	 WOTLK:REUSE
-q(24869),	-- Deprogramming	 WOTLK:Deprogramming
-q(24870),	-- Securing the Ramparts	 WOTLK:Securing the Ramparts
-q(24871),	-- Securing the Ramparts	 WOTLK:Securing the Ramparts
-q(24872),	-- Respite for a Tormented Soul	 WOTLK:Respite for a Tormented Soul
-q(24873),	-- Residue Rendezvous	 WOTLK:Residue Rendezvous
-q(24874),	-- Blood Quickening	 WOTLK:Blood Quickening
-q(24875),	-- Deprogramming	 WOTLK:Deprogramming
-q(24876),	-- Securing the Ramparts	 WOTLK:Securing the Ramparts
-q(24877),	-- Securing the Ramparts	 WOTLK:Securing the Ramparts
-q(24878),	-- Residue Rendezvous	 WOTLK:Residue Rendezvous
-q(24879),	-- Blood Quickening	 WOTLK:Blood Quickening
-q(24880),	-- Respite for a Tormented Soul	 WOTLK:Respite for a Tormented Soul
 q(25286),	-- Words for Delivery
 3.4.0.44729
 q(70349),	--
@@ -1670,6 +1617,8 @@ q(49764),	--
 q(52781),	--
 8.1.5.29418
 q(55631),	--
+10.1.0.48537
+q(75642),	--
 10.2.0.51239
 q(78216),	--
 10.2.0.52301
@@ -1690,7 +1639,6 @@ q(78003),	-- Handling It: Taut Tethercoil
 q(78004),	--
 q(78009),	--
 q(78010),	--
-q(78011),	--
 q(78012),	--
 q(78013),	--
 q(78122),	--
@@ -1805,6 +1753,7 @@ q(79088),	--
 q(79104),	--
 q(79112),	--
 q(79125),	--
+q(79126),	--
 q(79130),	--
 q(79131),	--
 q(79132),	--
@@ -1817,7 +1766,6 @@ q(79143),	--
 q(79144),	--
 q(79155),	--
 q(79178),	--
-q(79184),	--
 q(79186),	--
 q(79189),	--
 q(79207),	--
@@ -1836,11 +1784,6 @@ q(79331),	--
 10.2.5.52330
 q(79350),	--
 q(79353),	--
-q(79359),	--
-q(79373),	--
-q(79374),	--
-q(79375),	--
-q(79376),	--
 q(79378),	--
 q(79384),	--
 q(79385),	--
@@ -1883,24 +1826,13 @@ q(79429),	--
 q(79430),	--
 q(79431),	--
 q(79441),	--
-q(79443),	--
-q(79444),	--
-q(79446),	--
-q(79447),	--
-q(79449),	--
-q(79450),	--
 q(79451),	--
 q(79452),	--
-q(79455),	--
-q(79456),	--
-q(79457),	--
-q(79458),	--
 q(79459),	--
 q(79460),	--
 10.2.5.52432
 q(79467),	--
 q(79468),	--
-q(79472),	--
 q(79517),	--
 q(79537),	--
 q(79558),	--
@@ -1949,3 +1881,12 @@ q(79676),	--
 q(79684),	--
 q(79693),	--
 q(79694),	--
+10.2.5.52902
+q(79708),	--
+q(79709),	--
+q(79992),	--
+q(79994),	--
+q(79995),	--
+q(79996),	--
+q(79997),	--
+q(80080),	--
