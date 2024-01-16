@@ -955,12 +955,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(25385, {	-- Save the Wee Animals
 					["qg"] = 39930,	-- Mylune
 					["coord"] = { 19.2, 37.8, MOUNT_HYJAL },
-					["sourceQuest"] = 25584,	-- The Return of the Ancients
+					["sourceQuest"] = 25578,	-- Return to Nordrassil
 				}),
 				q(25656, {	-- Scrambling for Eggs
 					["qg"] = 41006,	-- Thisalee Crow
 					["coord"] = { 42.1, 45.4, MOUNT_HYJAL },
-					["sourceQuest"] = 25584,	-- The Return of the Ancients
+					["sourceQuest"] = 25578,	-- Return to Nordrassil
 				}),
 				q(25554, {	-- Secrets of the Flame
 					["qg"] = 40773,	-- Cenarius
