@@ -1818,6 +1818,7 @@ _.ObjectNames = {
 	[85563] = "Dead-tooth's Strongbox",
 	[91138] = "Jordan's Hammer",
 	[92420] = "Bailor's Ore",
+	[93192] = "Heartswood",
 	[103821] = "Doan's Strongbox",
 	[104564] = "Bingles's Toolbucket",
 	[104569] = "Bingles's Toolbucket",
@@ -1884,6 +1885,7 @@ _.ObjectNames = {
 	[152622] = "Azsharite Formation",
 	[153123] = "Kim'jael's Equipment",
 	[153239] = "Wildkin Feather",
+	[153556] = "Thaurissan Relic",
 	[154357] = "Glinting Mud",
 	[156561] = "Wanted Poster",
 	[157936] = "Un'Goro Dirt Pile",
@@ -2588,6 +2590,9 @@ _.ObjectNames = {
 	[307277] = "Old Jug",
 	[307307] = "Broken Barrel",
 	[307330] = "Captain's Footlocker",
+	[375544] = "Wooden Figurine",
+	[100000000] = "Archaeologist's Cart",
+	[100000001] = "Unlit Torch",
 }
 _.ObjectIcons = {
 	[31] = "Interface/Icons/INV_Mount_AllianceLionG",
@@ -3263,6 +3268,7 @@ _.ObjectIcons = {
 	[307277] = "Interface/Icons/inv_drink_11",
 	[307307] = "Interface/Icons/inv_cask_03",
 	[307330] = "Interface/Icons/inv_misc_crate01",
+	[100000001] = "135434",
 }
 _.ObjectModels = {
 	[31] = 189908,
@@ -3441,6 +3447,7 @@ _.ObjectModels = {
 	[85563] = 197617,
 	[91138] = 198648,
 	[92420] = 198168,
+	[93192] = 203691,
 	[103821] = 196976,
 	[104564] = 197640,
 	[104569] = 197641,
@@ -3506,6 +3513,7 @@ _.ObjectModels = {
 	[152622] = 190809,
 	[153123] = 198165,
 	[153239] = 199706,
+	[153556] = 201094,
 	[154357] = 204112,
 	[156561] = 199421,
 	[157936] = 204112,
@@ -4196,6 +4204,8 @@ _.ObjectModels = {
 	[307277] = 189821,
 	[307307] = 199567,
 	[307330] = 198238,
+	[375544] = 201094,
+	[100000001] = 201129,
 }
 
 -- Supported Locales
@@ -4416,6 +4426,7 @@ localize(_.ObjectNames, {
 	[85563] = "Stumpfzahns Geldkassette",
 	[91138] = "Jordans Hammer",
 	[92420] = "Bailors Erz",
+	[93192] = "Herzholz",
 	[103821] = "Doans Geldkassette",
 	[104564] = "Bingles’ Werkzeugeimer",
 	[104569] = "Bingles’ Werkzeugeimer",
@@ -4479,6 +4490,7 @@ localize(_.ObjectNames, {
 	[152622] = "Azsharitformation",
 	[153123] = "Kim'jaels Ausrüstung",
 	[153239] = "Wildekinfeder",
+	[153556] = "Relikt von Thaurissan",
 	[154357] = "Glitzernder Matsch",
 	[156561] = "Steckbrief",
 	[157936] = "Erdhaufen von Un'Goro",
@@ -5160,6 +5172,8 @@ localize(_.ObjectNames, {
 	[307277] = "Alter Henkelkrug",
 	[307307] = "Zerbrochenes Fass",
 	[307330] = "Schließkiste des Kapitäns",
+	[375544] = "Holzstatuette",
+	[100000001] = "Nicht angezündete Fackel",
 });
 end
 if simplifiedLocale == "es" then
@@ -5365,6 +5379,7 @@ localize(_.ObjectNames, {
 	[85563] = "Caja fuerte de Dentomuerto",
 	[91138] = "Martillo de Jordan",
 	[92420] = "Mena de Bailor",
+	[93192] = "Duramen",
 	[103821] = "Caja fuerte de Doan",
 	[104564] = "Cubo de herramientas de Bingles",
 	[104569] = "Cubo de herramientas de Bingles",
@@ -5429,6 +5444,7 @@ localize(_.ObjectNames, {
 	[152622] = "Formación de azsharita",
 	[153123] = "Equipo de Kim'jael",
 	[153239] = "Pluma de lechúcico salvaje",
+	[153556] = "Reliquia Thaurissan",
 	[154357] = "Barro centelleante",
 	[156561] = "Cartel de Se busca",
 	[157936] = "Montón de porquería de Un'Goro",
@@ -6103,6 +6119,8 @@ localize(_.ObjectNames, {
 	[307277] = "Vieja jarra",
 	[307307] = "Barrica rota",
 	[307330] = "Baúl del Capitán",
+	[375544] = "Figurilla de madera",
+	[100000001] = "Antorcha apagada",
 });
 end
 if simplifiedLocale == "fr" then
@@ -6341,6 +6359,7 @@ localize(_.ObjectNames, {
 	[85563] = "Coffre de Dent-Morte",
 	[91138] = "Marteau de Jordan",
 	[92420] = "Minerai de Bailor",
+	[93192] = "Cœur du bois",
 	[103821] = "Coffre de Doan",
 	[104564] = "Seau d'outils de Bingles",
 	[104569] = "Seau d'outils de Bingles",
@@ -6405,6 +6424,7 @@ localize(_.ObjectNames, {
 	[152622] = "Formation d'azsharite",
 	[153123] = "Equipement de Kim'jael",
 	[153239] = "Plume d'Indomptable",
+	[153556] = "Relique de Thaurissan",
 	[154357] = "Boue luisante",
 	[156561] = "Avis de recherche",
 	[157936] = "Tas de poussière d'Un'Goro",
@@ -7089,6 +7109,8 @@ localize(_.ObjectNames, {
 	[307277] = "Vieille cruche",
 	[307307] = "Tonneau cassé",
 	[307330] = "Cantine du capitaine",
+	[375544] = "Figurine en bois",
+	[100000001] = "Torche éteinte",
 });
 end
 if simplifiedLocale == "it" then
@@ -8260,6 +8282,7 @@ localize(_.ObjectNames, {
 	[85563] = "썩은니의 금고",
 	[91138] = "조던의 망치",
 	[92420] = "베일러의 광석",
+	[93192] = "사랑나무",
 	[103821] = "도안의 금고",
 	[104564] = "빙글스의 공구통",
 	[104569] = "빙글스의 공구통",
@@ -8983,6 +9006,7 @@ localize(_.ObjectNames, {
 	[307277] = "낡은 단지",
 	[307307] = "부서진 통",
 	[307330] = "선장의 사물함",
+	[100000001] = "불을 붙이지 않은 횃불",
 });
 end
 if simplifiedLocale == "pt" then
@@ -9187,6 +9211,7 @@ localize(_.ObjectNames, {
 	[85563] = "Caixa-forte do Dente-podre",
 	[91138] = "Martelo de Jardel",
 	[92420] = "Minério do Bailor",
+	[93192] = "Palocórdio",
 	[103821] = "Caixa-forte de Doan",
 	[104564] = "Balde de Ferramentas do Bingles",
 	[104569] = "Balde de Ferramentas do Bingles",
@@ -9910,6 +9935,8 @@ localize(_.ObjectNames, {
 	[210216] = "Destroços do Naufrágio",
 	[307277] = "Velho Garrafão",
 	[307307] = "Barril Quebrado",
+	[375544] = "Estatueta de Madeira",
+	[100000001] = "Tocha Apagada",
 });
 end
 if simplifiedLocale == "ru" then
@@ -10163,6 +10190,7 @@ localize(_.ObjectNames, {
 	[85563] = "Сейф Мертвозуба",
 	[91138] = "Молот Джордана",
 	[92420] = "Руда Бэйлора",
+	[93192] = "Сердцедрево",
 	[103821] = "Сейф Доана",
 	[104564] = "Ведро с инструментами Бинглза",
 	[104569] = "Ведро с инструментами Бинглза",
@@ -10227,6 +10255,7 @@ localize(_.ObjectNames, {
 	[152622] = "Отложение азшарита",
 	[153123] = "Оборудование Ким'джаеля",
 	[153239] = "Перо дикого совуха",
+	[153556] = "Мощи Тауриссана",
 	[154357] = "Блестящая грязь",
 	[156561] = "Плакат \"Разыскивается\"",
 	[157936] = "Куча земли Ун'Горо",
@@ -10916,6 +10945,8 @@ localize(_.ObjectNames, {
 	[307277] = "Старый кувшин",
 	[307307] = "Разбитая бочка",
 	[307330] = "Сундучок капитана",
+	[375544] = "Деревянная статуэтка",
+	[100000001] = "Незажженный факел",
 });
 end
 if simplifiedLocale == "zh" then
@@ -11161,6 +11192,7 @@ localize(_.ObjectNames, {
 	[85563] = "蛀牙杰克的箱子",
 	[91138] = "乔丹的铁锤",
 	[92420] = "白洛尔的矿石",
+	[93192] = "同心树",
 	[103821] = "杜安的保险箱",
 	[104564] = "宾格斯的工具箱",
 	[104569] = "宾格斯的工具箱",
@@ -11875,5 +11907,6 @@ localize(_.ObjectNames, {
 	[307277] = "旧酒壶",
 	[307307] = "破损的桶",
 	[307330] = "船长的手提箱",
+	[100000001] = "未点燃的火把",
 });
 end

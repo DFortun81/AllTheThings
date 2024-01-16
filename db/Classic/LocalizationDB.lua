@@ -185,6 +185,7 @@ _.HeaderConstants = {
 	SPECIAL = -1000037,
 	TIER_ZERO_POINT_FIVE_SETS = -1000165,
 	TREASURES = -1000038,
+	UI_BOUNTY_WINDOW = -1000380,
 	VENDORS = -1000039,
 	WEAPONS = -1000073,
 	WORLD_BOSSES = -1000042,
@@ -310,6 +311,7 @@ localize(L.HEADER_NAMES, {
 	[-1000376] = "Burly Brawl",
 	[-1000377] = "Wild Polymorph",
 	[-1000378] = "Soul Brokers",
+	[-1000380] = "Bounty",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000015] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -338,6 +340,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000279] = "Waylaid Supplies quest items drop from mobs of level 6 and above all over Azeroth. These quests request delivery of the Waylaid Supplies to an organization representative in return for a few silver, experience, and Reputation. Of course, there are items missing from the supply shipment, and you can supplement it for greater reputation rewards.",
 	[-1000376] = "Only the person who gets the final hit on the drunk will get credit, regardless of who tapped the target first. There is no group credit for this.",
 	[-1000377] = "Cast Polymorph on critters afflicted by Wild Polymorph to turn them back into apprentices. Each one will give you a note. Collect 6 notes to learn the rune.",
+	[-1000380] = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -464,6 +467,7 @@ localize(L.HEADER_ICONS, {
 	[-1000376] = "Interface/CURSOR/Attack",
 	[-1000377] = "Interface/ICONS/Spell_Nature_Polymorph",
 	[-1000378] = "Interface/ICONS/spell_shadow_lifedrain02",
+	[-1000380] = "Interface/Icons/ability_hunter_markedfordeath",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -936,6 +940,7 @@ _.ObjectNames = {
 	[85563] = "Dead-tooth's Strongbox",
 	[91138] = "Jordan's Hammer",
 	[92420] = "Bailor's Ore",
+	[93192] = "Heartswood",
 	[103821] = "Doan's Strongbox",
 	[104564] = "Bingles's Toolbucket",
 	[104569] = "Bingles's Toolbucket",
@@ -1009,6 +1014,7 @@ _.ObjectNames = {
 	[152622] = "Azsharite Formation",
 	[153123] = "Kim'jael's Equipment",
 	[153239] = "Wildkin Feather",
+	[153556] = "Thaurissan Relic",
 	[154357] = "Glinting Mud",
 	[156561] = "Wanted Poster",
 	[157936] = "Un'Goro Dirt Pile",
@@ -1184,6 +1190,7 @@ _.ObjectNames = {
 	[179565] = "Dusty Reliquary",
 	[179644] = "Imprisoned Doomguard",
 	[179697] = "Arena Treasure Chest",
+	[179826] = "Secret Plans: Fiery Flux",
 	[179827] = "Wanted/Missing/Lost & Found",
 	[179828] = "Dark Iron Pillow",
 	[179832] = "Pillaclencher's Ornate Pillow",
@@ -1233,6 +1240,7 @@ _.ObjectNames = {
 	[181598] = "Silithyst Geyser",
 	[181672] = "Wickerman Effigy",
 	[207724] = "Shipwreck Debris",
+	[375544] = "Wooden Figurine",
 	[386675] = "Buried Treasure",
 	[386691] = "Library Book",
 	[386759] = "Library Book",
@@ -1320,6 +1328,8 @@ _.ObjectNames = {
 	[414663] = "Shatterspear Idol",
 	[414713] = "Storage Locker",
 	[415614] = "Mysterious Formulae",
+	[100000000] = "Archaeologist's Cart",
+	[100000001] = "Unlit Torch",
 }
 _.ObjectIcons = {
 	[31] = "Interface/Icons/INV_Mount_AllianceLionG",
@@ -1627,6 +1637,7 @@ _.ObjectIcons = {
 	[181597] = "Interface/Icons/spell_holiday_tow_spicecloud",
 	[181598] = "Interface/Icons/spell_holiday_tow_spicecloud",
 	[181672] = "Interface/Icons/INV_Misc_Statue_08",
+	[100000001] = "135434",
 }
 _.ObjectModels = {
 	[31] = 189908,
@@ -1803,6 +1814,7 @@ _.ObjectModels = {
 	[85563] = 197617,
 	[91138] = 198648,
 	[92420] = 198168,
+	[93192] = 203691,
 	[103821] = 196976,
 	[104564] = 197640,
 	[104569] = 197641,
@@ -1875,6 +1887,7 @@ _.ObjectModels = {
 	[152622] = 190809,
 	[153123] = 198165,
 	[153239] = 199706,
+	[153556] = 201094,
 	[154357] = 204112,
 	[156561] = 199421,
 	[157936] = 204112,
@@ -2045,6 +2058,7 @@ _.ObjectModels = {
 	[179565] = 200953,
 	[179644] = 202443,
 	[179697] = 219372,
+	[179826] = 198451,
 	[179827] = 199473,
 	[179828] = 190895,
 	[179832] = 190595,
@@ -2093,6 +2107,7 @@ _.ObjectModels = {
 	[181598] = 200154,
 	[181672] = 199787,
 	[207724] = 219411,
+	[375544] = 201094,
 	[386675] = 196988,
 	[386691] = 198017,
 	[386759] = 198036,
@@ -2173,6 +2188,7 @@ _.ObjectModels = {
 	[414663] = 190354,
 	[414713] = 196976,
 	[415614] = 198455,
+	[100000001] = 201129,
 }
 
 -- Supported Locales
@@ -2212,6 +2228,7 @@ localize(L.HEADER_NAMES, {
 	[-1000376] = "Gewaltige Schlägerei",
 	[-1000377] = "Wilder Polymorph",
 	[-1000378] = "Seelenvermittler",
+	[-1000380] = "Kopfgeld",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -2221,6 +2238,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000279] = "Questgegenstände für „Weggelegte Vorräte“ fallen von Mobs der Stufe 6 und höher in ganz Azeroth. Diese Quests erfordern die Lieferung der Waylaid-Vorräte an einen Vertreter der Organisation als Gegenleistung für ein paar Silbermünzen, Erfahrung und Ansehen. Natürlich fehlen in der Versorgungslieferung Gegenstände, und Sie können sie ergänzen, um höhere Reputationsbelohnungen zu erhalten.",
 	[-1000376] = "Nur die Person, die den letzten Treffer beim Betrunkenen erzielt, erhält Anerkennung, unabhängig davon, wer zuerst auf das Ziel getippt hat. Hierfür gibt es keine Gruppengutschrift.",
 	[-1000377] = "Wirke „Polymorph“ auf Lebewesen, die von „Wilder Polymorph“ betroffen sind, um sie wieder in Lehrlinge zu verwandeln. Jeder wird Ihnen eine Notiz geben. Sammle 6 Notizen, um die Rune zu lernen.",
+	[-1000380] = "Diese Liste enthält nicht erhältliche Gegenstände, die von ATT Discord als Fehler gemeldet wurden, die Blizzard noch beheben muss.\n\nHINWEIS: Alle Filter werden aus Sichtbarkeitsgründen in dieser Liste ignoriert. In dieser Liste sind nur Gegenstände enthalten, die aufgrund von Fahrlässigkeit aus dem Spiel entfernt wurden, und nicht ein riesiger feuerspeiender Drache.\n\nAn Blizzard-Entwickler: Bitte beheben Sie die unten aufgeführten Gegenstände und Begegnungen.",
 });
 localize(_.ObjectNames, {
 	[31] = "Alte Löwenstatue",
@@ -2396,6 +2414,7 @@ localize(_.ObjectNames, {
 	[85563] = "Stumpfzahns Geldkassette",
 	[91138] = "Jordans Hammer",
 	[92420] = "Bailors Erz",
+	[93192] = "Herzholz",
 	[103821] = "Doans Geldkassette",
 	[104564] = "Bingles’ Werkzeugeimer",
 	[104569] = "Bingles’ Werkzeugeimer",
@@ -2467,6 +2486,7 @@ localize(_.ObjectNames, {
 	[152622] = "Azsharitformation",
 	[153123] = "Kim'jaels Ausrüstung",
 	[153239] = "Wildekinfeder",
+	[153556] = "Relikt von Thaurissan",
 	[154357] = "Glitzernder Matsch",
 	[156561] = "Steckbrief",
 	[157936] = "Erdhaufen von Un'Goro",
@@ -2638,6 +2658,7 @@ localize(_.ObjectNames, {
 	[179564] = "Tribut der Gordok",
 	[179565] = "Staubiger Reliquienschrein",
 	[179697] = "Arenaschatztruhe",
+	[179826] = "Geheimpläne: Feuriger Fluxus",
 	[179827] = "Gesucht/Vermisst/Verloren & Gefunden",
 	[179828] = "Dunkeleisenkissen",
 	[179832] = "Verziertes Kissen von Kissenquetscher",
@@ -2687,6 +2708,7 @@ localize(_.ObjectNames, {
 	[181598] = "Silithystgeysir",
 	[181672] = "Weidenmann",
 	[207724] = "Schiffswracktrümmer",
+	[375544] = "Holzstatuette",
 	[386675] = "Vergrabener Schatz",
 	[386691] = "Bibliotheksbuch",
 	[386759] = "Bibliotheksbuch",
@@ -2762,6 +2784,7 @@ localize(_.ObjectNames, {
 	[414646] = "Überreste",
 	[414658] = "Geröll",
 	[414663] = "Götze der Shatterspear",
+	[100000001] = "Nicht angezündete Fackel",
 });
 end
 if simplifiedLocale == "es" then
@@ -2792,6 +2815,7 @@ localize(L.HEADER_NAMES, {
 	[-1000376] = "Pelea Corpulenta",
 	[-1000377] = "Polimorfo Salvaje",
 	[-1000378] = "Corredores de Almas",
+	[-1000380] = "Prima",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
@@ -2800,6 +2824,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000279] = "Los objetos de misión de Suministros Waylaid caen de mobs de nivel 6 y, sobre todo, en Azeroth. Estas misiones requieren la entrega de suministros Waylaid a un representante de la organización a cambio de algo de plata, experiencia y reputación. Por supuesto, faltan elementos en el envío de suministros y puedes complementarlos para obtener mayores recompensas de reputación.",
 	[-1000376] = "Sólo la persona que dé el golpe final al borracho obtendrá crédito, independientemente de quién haya tocado el objetivo primero. No hay crédito grupal por esto.",
 	[-1000377] = "Lanza Polymorph sobre criaturas afectadas por Wild Polymorph para convertirlas nuevamente en aprendices. Cada uno te dará una nota. Recoge 6 notas para aprender la runa.",
+	[-1000380] = "Esta lista contiene elementos inalcanzables que ATT Discord ha informado como errores que Blizzard aún no ha solucionado.\n\nNOTA: Todos los filtros se ignoran en esta lista para mayor visibilidad. En esta lista solo están presentes los elementos eliminados del juego debido a negligencia y no a un gigantesco dragón que escupe fuego.\n\nA los desarrolladores de Blizzard: arreglen los elementos y encuentros que se enumeran a continuación.",
 });
 localize(_.ObjectNames, {
 	[31] = "Estatua de león antigua",
@@ -2975,6 +3000,7 @@ localize(_.ObjectNames, {
 	[85563] = "Caja fuerte de Dentomuerto",
 	[91138] = "Martillo de Jordan",
 	[92420] = "Mena de Bailor",
+	[93192] = "Duramen",
 	[103821] = "Caja fuerte de Doan",
 	[104564] = "Cubo de herramientas de Bingles",
 	[104569] = "Cubo de herramientas de Bingles",
@@ -3047,6 +3073,7 @@ localize(_.ObjectNames, {
 	[152622] = "Formación de azsharita",
 	[153123] = "Equipo de Kim'jael",
 	[153239] = "Pluma de lechúcico salvaje",
+	[153556] = "Reliquia Thaurissan",
 	[154357] = "Barro centelleante",
 	[156561] = "Cartel de Se busca",
 	[157936] = "Montón de porquería de Un'Goro",
@@ -3216,6 +3243,7 @@ localize(_.ObjectNames, {
 	[179564] = "Tributo a Gordok",
 	[179565] = "Relicario polvoriento",
 	[179697] = "Arqueta de la arena",
+	[179826] = "Diseños secretos: flujo ígneo",
 	[179827] = "Se busca/Desaparecido/Objetos perdidos",
 	[179828] = "Almohada Hierro Negro",
 	[179832] = "Almohada ornamentada de Pilaprieta",
@@ -3263,6 +3291,7 @@ localize(_.ObjectNames, {
 	[181598] = "Géiser de silitista",
 	[181672] = "Efigie del Hombre de Mimbre",
 	[207724] = "Restos de naufragio",
+	[375544] = "Figurilla de madera",
 	[386675] = "Tesoro enterrado",
 	[386759] = "Libro de la biblioteca",
 	[386777] = "Cofre cubierto de polvo",
@@ -3314,6 +3343,7 @@ localize(_.ObjectNames, {
 	[414624] = "Alijo del faro",
 	[414646] = "Resto",
 	[415614] = "Fórmulas misteriosas",
+	[100000001] = "Antorcha apagada",
 });
 end
 if simplifiedLocale == "fr" then
@@ -3359,6 +3389,7 @@ localize(L.HEADER_NAMES, {
 	[-1000376] = "Bagarre Musclée",
 	[-1000377] = "Polymorphe Sauvage",
 	[-1000378] = "Courtiers D'âmes",
+	[-1000380] = "Prime",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -3368,6 +3399,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000279] = "Les objets de quête Waylaid Supplies proviennent des foules de niveau 6 et surtout partout en Azeroth. Ces quêtes nécessitent la livraison des fournitures Waylaid à un représentant de l'organisation en échange de quelques pièces d'argent, d'expérience et de réputation. Bien sûr, il manque des articles dans la livraison de fournitures, et vous pouvez les compléter pour obtenir de plus grandes récompenses de réputation.",
 	[-1000376] = "Seule la personne qui porte le coup final sur l'ivrogne obtiendra un crédit, peu importe qui a touché la cible en premier. Il n'y a pas de crédit de groupe pour cela.",
 	[-1000377] = "Lancez Polymorph sur les créatures affectées par Wild Polymorph pour les transformer en apprentis. Chacun vous donnera une note. Collectez 6 notes pour apprendre la rune.",
+	[-1000380] = "Cette liste contient des éléments impossibles à obtenir que ATT Discord a signalés comme des bogues que Blizzard n'a pas encore corrigés.\n\nREMARQUE : Tous les filtres sont ignorés dans cette liste pour des raisons de visibilité. Seuls les éléments retirés du jeu en raison d'une négligence plutôt que d'un gigantesque dragon cracheur de feu sont présents sur cette liste.\n\nAux développeurs de Blizzard : veuillez corriger les éléments et les rencontres répertoriés ci-dessous.",
 });
 localize(_.ObjectNames, {
 	[31] = "Statue du vieux lion",
@@ -3543,6 +3575,7 @@ localize(_.ObjectNames, {
 	[85563] = "Coffre de Dent-Morte",
 	[91138] = "Marteau de Jordan",
 	[92420] = "Minerai de Bailor",
+	[93192] = "Cœur du bois",
 	[103821] = "Coffre de Doan",
 	[104564] = "Seau d'outils de Bingles",
 	[104569] = "Seau d'outils de Bingles",
@@ -3615,6 +3648,7 @@ localize(_.ObjectNames, {
 	[152622] = "Formation d'azsharite",
 	[153123] = "Equipement de Kim'jael",
 	[153239] = "Plume d'Indomptable",
+	[153556] = "Relique de Thaurissan",
 	[154357] = "Boue luisante",
 	[156561] = "Avis de recherche",
 	[157936] = "Tas de poussière d'Un'Goro",
@@ -3784,6 +3818,7 @@ localize(_.ObjectNames, {
 	[179564] = "Tribut des Gordok",
 	[179565] = "Reliquaire poussiéreux",
 	[179697] = "Coffre au trésor de l'arène",
+	[179826] = "Plans secrets : Flux embrasé",
 	[179827] = "Avis de recherche / Disparu / Trouvé & Perdu",
 	[179828] = "Oreiller sombrefer",
 	[179832] = "Oreiller brodé de Pincetaie",
@@ -3833,6 +3868,7 @@ localize(_.ObjectNames, {
 	[181598] = "Geyser de silithyste",
 	[181672] = "Effigie de l'homme d'osier",
 	[207724] = "Débris d’épave",
+	[375544] = "Figurine en bois",
 	[386675] = "Trésor enfoui",
 	[386691] = "Livre de la bibliothèque",
 	[386759] = "Livre de la bibliothèque",
@@ -3907,6 +3943,7 @@ localize(_.ObjectNames, {
 	[414646] = "Vestige",
 	[414663] = "Idole Briselance",
 	[415614] = "Formules mystérieuses",
+	[100000001] = "Torche éteinte",
 });
 end
 if simplifiedLocale == "it" then
@@ -3934,6 +3971,7 @@ localize(L.HEADER_NAMES, {
 	[-1000376] = "Rissa Corpulenta",
 	[-1000377] = "Polimorfo Selvaggio",
 	[-1000378] = "Broker Dell'anima",
+	[-1000380] = "Premio",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000273] = "Questa stagione porta un limite di livello iniziale di 25 e un nuovo gioco finale di livello 25, incluso un raid di Blackfathom Deeps per 10 giocatori con nuove meccaniche, boss nuovi e reinventati per sfidare le tattiche e le strategie dei giocatori e nuove ricompense.",
@@ -3941,6 +3979,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000279] = "Gli oggetti della missione Waylaid Supplies vengono rilasciati dai mob di livello 6 e soprattutto su Azeroth. Queste missioni richiedono la consegna delle Forniture Waylaid a un rappresentante dell'organizzazione in cambio di argento, esperienza e reputazione. Naturalmente, ci sono degli articoli mancanti nella spedizione di rifornimenti e puoi integrarli per ottenere maggiori ricompense in termini di reputazione.",
 	[-1000376] = "Solo la persona che ottiene il colpo finale sull'ubriaco riceverà il credito, indipendentemente da chi ha toccato per primo il bersaglio. Non è previsto alcun credito collettivo per questo.",
 	[-1000377] = "Lancia Polymorph sulle creature affette da Wild Polymorph per trasformarle di nuovo in apprendisti. Ognuno ti darà una nota. Raccogli 6 note per imparare la runa.",
+	[-1000380] = "Questo elenco contiene elementi non ottenibili che ATT Discord ha segnalato come bug che Blizzard deve ancora correggere.\n\nNOTA: tutti i filtri vengono ignorati in questo elenco per motivi di visibilità. In questo elenco sono presenti solo gli oggetti rimossi dal gioco a causa di negligenza e non un gigantesco drago sputafuoco.\n\nAgli sviluppatori Blizzard: correggete gli oggetti e gli incontri elencati di seguito.",
 });
 localize(_.ObjectNames, {
 	[31] = "Vecchia Statua di Leone",
@@ -4306,6 +4345,7 @@ localize(L.HEADER_NAMES, {
 	[-1000376] = "건장한 난투",
 	[-1000377] = "야생 변이",
 	[-1000378] = "소울 브로커",
+	[-1000380] = "하사품",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "웨폰 마스터는 캐릭터에게 특정 무기 기술을 배울 수 있는 기회를 제공하는 NPC로, 사용 가능 여부는 웨폰 마스터마다 다릅니다. 모든 무기 기술은 레벨 20이 필요한 폴암을 제외하고 레벨 1에서 훈련할 수 있습니다.\n\n4.0.1 패치에서는 각 병과가 생성 시 모든 병과에 적합한 무기 숙련도를 배우게 되므로 무기 전문가와의 훈련은 더 이상 필요하지 않게 되었습니다. 무기 마스터는 곧 게임에서 제거되었습니다.",
@@ -4314,6 +4354,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000279] = "길레이드 보급품 퀘스트 아이템은 아제로스 전역의 6레벨 이상의 몹에게서 드롭됩니다. 이 퀘스트는 약간의 은화, 경험치, 평판을 대가로 조직 대표에게 Waylaid 보급품을 전달하도록 요청합니다. 물론, 보급품 배송에 누락된 품목이 있으며, 이를 보완하여 더 큰 평판 보상을 받을 수 있습니다.",
 	[-1000376] = "누가 먼저 목표물을 두드렸는지에 상관없이 술에 취한 사람에게 마지막 타격을 가한 사람만 크레딧을 받습니다. 이에 대한 그룹 크레딧은 없습니다.",
 	[-1000377] = "야생 변이에 걸린 동물에게 변이를 시전하여 그들을 다시 견습생으로 되돌리세요. 각자가 당신에게 메모를 줄 것입니다. 노트 6개를 모아 룬을 배워보세요.",
+	[-1000380] = "이 목록에는 ATT Discord에서 Blizzard가 아직 수정하지 않은 버그로 보고한 얻을 수 없는 항목이 포함되어 있습니다.\n\n참고: 가시성을 위해 이 목록 내에서 모든 필터는 무시됩니다. 거대한 불을 뿜는 용이 아닌 부주의로 인해 게임에서 제거된 아이템만 이 목록에 있습니다.\n\n블리자드 개발자 여러분께: 아래 나열된 아이템과 만남을 수정해 주세요.",
 });
 localize(_.ObjectNames, {
 	[31] = "오래된 사자상",
@@ -4489,6 +4530,7 @@ localize(_.ObjectNames, {
 	[85563] = "썩은니의 금고",
 	[91138] = "조던의 망치",
 	[92420] = "베일러의 광석",
+	[93192] = "사랑나무",
 	[103821] = "도안의 금고",
 	[104564] = "빙글스의 공구통",
 	[104569] = "빙글스의 공구통",
@@ -4804,6 +4846,7 @@ localize(_.ObjectNames, {
 	[412224] = "암흑 의식용 돌",
 	[414532] = "폭포수 보관함",
 	[414624] = "등대 은닉함",
+	[100000001] = "불을 붙이지 않은 횃불",
 });
 end
 if simplifiedLocale == "pt" then
@@ -4834,6 +4877,7 @@ localize(L.HEADER_NAMES, {
 	[-1000376] = "Briga Corpulenta",
 	[-1000377] = "Polimorfo Selvagem",
 	[-1000378] = "Corretores de Almas",
+	[-1000380] = "Recompensa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Um mestre de armas é um NPC que oferece aos personagens a oportunidade de aprender habilidades específicas com armas, cuja disponibilidade varia de um mestre de armas para outro. Todas as habilidades com armas podem ser treinadas no nível 1, exceto as armas de haste, que exigem nível 20.\n\nO treinamento com um mestre de armas tornou-se obsoleto no Patch 4.0.1, já que todas as proficiências de armas apropriadas à classe agora são aprendidas por cada classe após a criação. Os mestres de armas foram removidos do jogo logo depois.",
@@ -4842,6 +4886,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000279] = "Itens de missão Waylaid Supplies são obtidos de mobs de nível 6 e acima de Azeroth. Essas missões exigem a entrega dos Suprimentos Waylaid a um representante da organização em troca de um pouco de prata, experiência e reputação. É claro que faltam itens na remessa de suprimentos e você pode complementá-los para obter maiores recompensas de reputação.",
 	[-1000376] = "Somente a pessoa que acertar o golpe final no bêbado receberá o crédito, independentemente de quem bateu primeiro no alvo. Não há crédito de grupo para isso.",
 	[-1000377] = "Lance Polymorph em criaturas afetadas por Wild Polymorph para transformá-las novamente em aprendizes. Cada um lhe dará uma nota. Colete 6 notas para aprender a runa.",
+	[-1000380] = "Esta lista contém itens inacessíveis que o ATT Discord relatou como bugs que a Blizzard ainda não corrigiu.\n\nNOTA: Todos os filtros são ignorados nesta lista para visibilidade. Apenas itens removidos do jogo por negligência, em vez de um gigantesco dragão cuspidor de fogo, estão presentes nesta lista.\n\nPara os desenvolvedores da Blizzard: Corrijam os itens e encontros listados abaixo.",
 });
 localize(_.ObjectNames, {
 	[31] = "Estátua de Leão Antiga",
@@ -5016,6 +5061,7 @@ localize(_.ObjectNames, {
 	[85563] = "Caixa-forte do Dente-podre",
 	[91138] = "Martelo de Jardel",
 	[92420] = "Minério do Bailor",
+	[93192] = "Palocórdio",
 	[103821] = "Caixa-forte de Doan",
 	[104564] = "Balde de Ferramentas do Bingles",
 	[104569] = "Balde de Ferramentas do Bingles",
@@ -5291,6 +5337,7 @@ localize(_.ObjectNames, {
 	[181598] = "Gêiser Silitista",
 	[181672] = "Efígie do Homem de Palha",
 	[207724] = "Destroços do Naufrágio",
+	[375544] = "Estatueta de Madeira",
 	[387466] = "Cofre Enferrujado",
 	[387477] = "Estoque dos Défias",
 	[397987] = "Estoque dos Kobolds",
@@ -5301,6 +5348,7 @@ localize(_.ObjectNames, {
 	[406006] = "Ídolo",
 	[406736] = "Estoque Perdido",
 	[408014] = "Tomo Gnômico",
+	[100000001] = "Tocha Apagada",
 });
 end
 if simplifiedLocale == "ru" then
@@ -5355,6 +5403,7 @@ localize(L.HEADER_NAMES, {
 	[-1000376] = "Крепкая драка",
 	[-1000377] = "Дикий полиморф",
 	[-1000378] = "Душевные брокеры",
+	[-1000380] = "Премия",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -5365,6 +5414,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000279] = "Квестовые предметы Waylaid Supplies падают с мобов 6-го уровня и выше по всему Азероту. Эти квесты требуют доставки Запасных припасов представителю организации в обмен на немного серебра, опыта и репутации. Конечно, в поставке припасов отсутствуют предметы, и вы можете дополнить их, чтобы получить больше репутации.",
 	[-1000376] = "Зачет получит только тот, кто нанесет последний удар по пьяному, независимо от того, кто первым нанес удар по цели. Для этого не существует группового кредита.",
 	[-1000377] = "Примените «Превращение» к существам, пораженным «Диким превращением», чтобы снова превратить их в учеников. Каждый даст вам записку. Соберите 6 нот, чтобы выучить руну.",
+	[-1000380] = "Этот список содержит Недоступные предметы, что Дискорд ATT сообщил как ошибки, которые Blizzard ещё не исправили.\n\nВНИМАНИЕ: Все фильтры игнорируются в данном списке для видимости. Только предметы, удалённые из игры из-за халатности, но не из-за гигантского огнедышащего дракона, перечислены в данном списке.\n\nК разработчикам Blizzard: Пожалуйста, почините предметы и события, перечисленные ниже.",
 });
 localize(_.ObjectNames, {
 	[31] = "Статуя старого льва",
@@ -5540,6 +5590,7 @@ localize(_.ObjectNames, {
 	[85563] = "Сейф Мертвозуба",
 	[91138] = "Молот Джордана",
 	[92420] = "Руда Бэйлора",
+	[93192] = "Сердцедрево",
 	[103821] = "Сейф Доана",
 	[104564] = "Ведро с инструментами Бинглза",
 	[104569] = "Ведро с инструментами Бинглза",
@@ -5612,6 +5663,7 @@ localize(_.ObjectNames, {
 	[152622] = "Отложение азшарита",
 	[153123] = "Оборудование Ким'джаеля",
 	[153239] = "Перо дикого совуха",
+	[153556] = "Мощи Тауриссана",
 	[154357] = "Блестящая грязь",
 	[156561] = "Плакат \"Разыскивается\"",
 	[157936] = "Куча земли Ун'Горо",
@@ -5784,6 +5836,7 @@ localize(_.ObjectNames, {
 	[179565] = "Пыльный реликварий",
 	[179644] = "Плененный страж ужаса",
 	[179697] = "Сундук с сокровищами арены",
+	[179826] = "Секретный рецепт: огненный плавень",
 	[179827] = "Розыск/Пропал без вести/Найден",
 	[179828] = "Подушка дворфа из клана Черного Железа",
 	[179832] = "Вышитая подушка Крепких Тисков",
@@ -5833,6 +5886,7 @@ localize(_.ObjectNames, {
 	[181598] = "Гейзер силитиста",
 	[181672] = "Фигурка Плетеного человека",
 	[207724] = "Обломки кораблекрушения",
+	[375544] = "Деревянная статуэтка",
 	[386675] = "Зарытое сокровище",
 	[386691] = "Книга из библиотеки",
 	[386759] = "Книга из библиотеки",
@@ -5897,6 +5951,7 @@ localize(_.ObjectNames, {
 	[414624] = "Тайник в маяке",
 	[414663] = "Идол Пронзающего Копья",
 	[415614] = "Таинственные формулы",
+	[100000001] = "Незажженный факел",
 });
 end
 if simplifiedLocale == "zh" then
@@ -5947,6 +6002,7 @@ localize(L.HEADER_NAMES, {
 	[-1000376] = "魁梧斗殴",
 	[-1000377] = "野生多晶型物",
 	[-1000378] = "灵魂经纪人",
+	[-1000380] = "赏金任务",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
@@ -5957,6 +6013,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000279] = "伏击补给品任务物品从艾泽拉斯 6 级及以上的小怪中掉落。这些任务要求将路障补给品交付给组织代表，以换取一些银币、经验和声望。当然，补给中也有缺少的物品，你可以补充以获得更大的声望奖励。",
 	[-1000376] = "无论谁先击中目标，只有最终击中醉汉的人才会获得荣誉。对此没有团体信用。",
 	[-1000377] = "对受到野生变形术影响的小动物施放变形术，将它们变回学徒。每个人都会给你一张纸条。收集 6 个笔记来学习符文。",
+	[-1000380] = "此列表包含 ATT Discord 报告的无法获取的物品，这些物品是暴雪尚未修复的错误。\n\n注意：在此列表中忽略所有过滤器以获得可见性。此列表中仅显示因疏忽而从游戏中移除的物品。\n\n致暴雪开发者：请修复下面列出的物品和事件。",
 });
 localize(_.ObjectNames, {
 	[31] = "陈旧的石狮子",
@@ -6126,6 +6183,7 @@ localize(_.ObjectNames, {
 	[85563] = "蛀牙杰克的箱子",
 	[91138] = "乔丹的铁锤",
 	[92420] = "白洛尔的矿石",
+	[93192] = "同心树",
 	[103821] = "杜安的保险箱",
 	[104564] = "宾格斯的工具箱",
 	[104569] = "宾格斯的工具箱",
@@ -6415,5 +6473,6 @@ localize(_.ObjectNames, {
 	[409692] = "卷轴",
 	[410369] = "秘密投放点",
 	[414624] = "灯塔藏匿物",
+	[100000001] = "未点燃的火把",
 });
 end

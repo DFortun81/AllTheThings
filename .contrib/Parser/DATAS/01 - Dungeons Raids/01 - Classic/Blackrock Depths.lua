@@ -1519,6 +1519,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["groups"] = {
+						objective(1, {	-- 0/12 Information Recovered
+							["provider"] = { "o", 153556 },	-- Thaurissan Relic
+						}),
 						i(12102, {	-- Ring of the Aristocrat
 							["timeline"] = { "removed 4.0.3" },
 						}),
