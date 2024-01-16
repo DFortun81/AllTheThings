@@ -1770,3 +1770,5 @@
 433281@@@Savage Blue Battle Turtle
 10.2.5.52554
 278966@@@Fiery Hearthsteed
+10.2.5.52902
+418286@@@Auspicious Arborwyrm

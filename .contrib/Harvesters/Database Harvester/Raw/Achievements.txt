@@ -13521,3 +13521,5 @@
 10.2.5.52554
 19866@@@Hearthstoned: Fiery Edition
 20033@@@Hearthstone Beginner
+10.2.5.52902
+19031@@@Fyrn
