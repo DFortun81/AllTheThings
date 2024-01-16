@@ -8979,8 +8979,6 @@ fields.collected = function(t)
 			end
 		end
 		if t.sourceID and ATTAccountWideData.Sources[t.sourceID] then return 1; end
-		if t.itemID and C_Heirloom_PlayerHasHeirloom(t.itemID) then return 1; end
-		if t.itemID then return 1; end
 	end
 fields.saved = function(t)
 		return t.collected == 1;
@@ -12427,7 +12425,7 @@ app.AddContentTracking = function(group)
 		end
 		return true
 	end
-	end
+end
 end
 local RowOnEnter, RowOnLeave;
 local function RowOnClick(self, button)
