@@ -733,13 +733,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(3261, {	-- Webbed Cloak
 							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-							["coords"] = { 
+							["coords"] = {
 								{ 23.8, 58.4, TIRISFAL_GLADES },
 								{ 86.2, 53.4, TIRISFAL_GLADES },
 							},
 							["crs"] = {
 								1688,	-- Night Web Matriarch
-								1555,	-- Vicious Night Web Spiders 
+								1555,	-- Vicious Night Web Spiders
 							},
 						}),
 						i(3263, {	-- Webbed Pants
@@ -763,6 +763,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["coord"] = { 48, 56.3, SCARLET_MONASTERY_ENTRANCE },
 					}),
 				}),
+				n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+					--o(xxxxx, {	-- Carved Eye
+						["coord"] = { 40.5, 53.6, SCARLET_MONASTERY_ENTRANCE },
+						["g"] = {
+							i(212984),	-- Grimoire of the Zealous Observer (CI!)
+						},
+					--}),
+				})),
 				n(ZONE_DROPS, {
 					["icon"] = "Interface\\Icons\\inv_helmet_52",
 					["crs"] = {
@@ -2872,7 +2880,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(4263, {	-- Standard Issue Shield
-					["coords"] = { 
+					["coords"] = {
 						{ 79.6, 26.8, TIRISFAL_GLADES },
 						{ 78.8, 33.0, TIRISFAL_GLADES },
 						{ 78.4, 36.8, TIRISFAL_GLADES },

@@ -202,6 +202,9 @@ root(ROOTS.Instances, { tier(LEGION_TIER, {
 					}),
 				}),
 				cr(122313, e(1979, {	-- Zuraal the Ascended
+					i(213015, {	-- Grimoire of the Eredathian Darkglare (CI!)
+						["timeline"] = { ADDED_10_2_5 },
+					}),
 					i(151312),	-- Ampoule of Pure Void
 					i(151315),	-- Bracers of Dark Binding
 					i(151329),	-- Breastplate of the Dark Touch
@@ -276,6 +279,9 @@ root(ROOTS.Instances, { tier(LEGION_TIER, {
 				cr(122313, e(1979, {	-- Zuraal the Ascended
 					ach(12004, {	-- Welcome the Void
 						["crs"] = { 126283 },	-- Urjad
+					}),
+					i(213015, {	-- Grimoire of the Eredathian Darkglare (CI!)
+						["timeline"] = { ADDED_10_2_5 },
 					}),
 					i(151312),	-- Ampoule of Pure Void
 					i(151315),	-- Bracers of Dark Binding

@@ -838,6 +838,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							i(139764, {	-- Gloves of the Black Harvest
 								["cost"] = 5000000,	-- 500g
 							}),
+							i(212783, {	-- Grimoire of the Netherwalk Tyrant (CI!)
+								["cost"] = 50000000,	-- 5000g
+								["timeline"] = { ADDED_10_2_5 },
+							}),
 							i(139766, {	-- Leggings of the Black Harvest
 								["cost"] = 5000000,	-- 500g
 							}),

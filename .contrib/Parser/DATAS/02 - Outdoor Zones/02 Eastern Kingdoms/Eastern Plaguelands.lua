@@ -3426,6 +3426,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+				--o(xxxxx, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Carved Eye
+					--["coord"] = { 28.6, 13.4, EASTERN_PLAGUELANDS },
+					--["g"] = {
+						i(212993),	-- Grimoire of the Plagued Observer (CI!)
+					--},
+				--})),
 				o(403536, {	-- The Road Ahead
 					["description"] = "Located by Corrin's Crossing in the Eastern Plaguelands, by the building that used to be the inn. The painting is on the first floor, by the wall beside the stairs leading to the second floor.",
 					["sourceQuests"] = { 76250 },	-- Spectral Essence

@@ -109,6 +109,14 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["lvl"] = 110,
 				}),
 			}),
+			n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+				n(118930, {	-- Ixallon the Soulbreaker
+					["description"] = "Last Mob before Kil'Jaeden",
+					["g"] = {
+						i(212779),	-- Grimoire of the Bloodrage Tyrant (CI!)
+					},
+				}),
+			})),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					-- * confirmed in HEROIC MODE (jic they somehow vary in each difficulty)
@@ -208,6 +216,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					e(1861, {	-- Mistress Sassz'ine
 						["creatureID"] = 115767,	-- Mistress Sassz'ine
 						["g"] = {
+							i(213016, {	-- Grimoire of the Abyssal Darkglare (CI!)
+								["timeline"] = { ADDED_10_2_5 },
+							}),
 							i(143643),	-- Abyss Worm (MOUNT!)
 							i(147049),	-- Azure Squallshaper's Helm
 							i(146990),	-- Hundred-Fathom Veil
@@ -573,6 +584,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
 						ach(11676),	-- Five Course Seafood Buffet
+						i(213016, {	-- Grimoire of the Abyssal Darkglare (CI!)
+							["timeline"] = { ADDED_10_2_5 },
+						}),
 						i(143643),	-- Abyss Worm (MOUNT!)
 						i(147049),	-- Azure Squallshaper's Helm
 						i(146990),	-- Hundred-Fathom Veil
@@ -865,6 +879,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1861, {	-- Mistress Sassz'ine
 					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
+						i(213016, {	-- Grimoire of the Abyssal Darkglare (CI!)
+							["timeline"] = { ADDED_10_2_5 },
+						}),
 						i(143643),	-- Abyss Worm (MOUNT!)
 						i(147049),	-- Azure Squallshaper's Helm
 						i(146990),	-- Hundred-Fathom Veil
@@ -1159,6 +1176,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
 						ach(11776),	-- Mythic: Mistress Sassz'ine
+						i(213016, {	-- Grimoire of the Abyssal Darkglare (CI!)
+							["timeline"] = { ADDED_10_2_5 },
+						}),
 						i(143643),	-- Abyss Worm (MOUNT!)
 						i(147049),	-- Azure Squallshaper's Helm
 						i(146990),	-- Hundred-Fathom Veil

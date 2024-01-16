@@ -291,6 +291,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					e(1985, {	-- Portal Keeper Hasabel
 						["crs"] = { 122104 },	-- Portal Keeper Hasabel
 						["g"] = {
+							i(213014, {	-- Grimoire of the Xorothian Darkglare (CI!)
+								["timeline"] = { ADDED_10_2_5 },
+							}),
 							i(151748),	-- Pattern: Lightweave Breeches (Rank 3)
 							i(152001),	-- Nexus Conductor's Headgear
 							i(151965),	-- Vulcanarcore Pendant
@@ -645,6 +648,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["crs"] = { 122104 },	-- Portal Keeper Hasabel
 					["g"] = {
 						ach(11928),	-- Portal Combat
+						i(213014, {	-- Grimoire of the Xorothian Darkglare (CI!)
+							["timeline"] = { ADDED_10_2_5 },
+						}),
 						i(151748),	-- Pattern: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
 						i(151965),	-- Vulcanarcore Pendant
@@ -997,6 +1003,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1985, {	-- Portal Keeper Hasabel
 					["crs"] = { 122104 },	-- Portal Keeper Hasabel
 					["g"] = {
+						i(213014, {	-- Grimoire of the Xorothian Darkglare (CI!)
+							["timeline"] = { ADDED_10_2_5 },
+						}),
 						i(151748),	-- Pattern: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
 						i(151965),	-- Vulcanarcore Pendant
@@ -1348,6 +1357,9 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["crs"] = { 122104 },	-- Portal Keeper Hasabel
 					["g"] = {
 						ach(11995),	-- Mythic: Portal Keeper Hasabel
+						i(213014, {	-- Grimoire of the Xorothian Darkglare (CI!)
+							["timeline"] = { ADDED_10_2_5 },
+						}),
 						i(151748),	-- Pattern: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
 						i(151965),	-- Vulcanarcore Pendant

@@ -58,6 +58,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "added 5.2.0.16634" },
 						}),
 					}),
+					n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+						--o(xxxxx, {	-- Carved Eye
+							["coord"] = { 43.0, 9.2, AHNQIRAJ_THE_FALLEN_KINGDOM },
+							["g"] = {
+								i(212995),	-- Grimoire of the Whispering Observer (CI!)
+							},
+						--}),
+					})),
 				},
 			}),
 			-- #endif

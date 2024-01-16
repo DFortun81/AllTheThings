@@ -449,3 +449,22 @@ iq(210728, 78521, DRUID);	-- Moon-Blessed Claw
 iq(210727, 78518, DRUID);	-- Pollenfused Bristlebruin Fur Sample
 iq(210753, 78516, DRUID);	-- Scale of the Prismatic Whiskerfish
 iq(211314, 78842, HUNTER);	-- Cinder of Companionship
+
+------------------
+-- PATCH 10.2.5 --
+------------------
+iq(213016, 79457, WARLOCK);			-- Grimoire of the Abyssal Darkglare
+iq(212750, 79359, WARLOCK);			-- Grimoire of the Ancient Observer
+iq(212983, 79443, WARLOCK);			-- Grimoire of the Blasted Observer
+iq(212779, 79374, WARLOCK);			-- Grimoire of the Bloodrage Tyrant
+iq(212991, 79447, WARLOCK);			-- Grimoire of the Dire Observer
+iq(213015, 79456, WARLOCK);			-- Grimoire of the Eredathian Darkglare
+iq(212780, 79375, WARLOCK);			-- Grimoire of the Felbrute Tyrant
+iq(212989, 79446, WARLOCK);			-- Grimoire of the Mana-Gorged Observer
+iq(212783, 79376, WARLOCK);			-- Grimoire of the Netherwalk Tyrant
+iq(212993, 79449, WARLOCK);			-- Grimoire of the Plagued Observer
+iq(213017, 79458, WARLOCK);			-- Grimoire of the Riftsmolder Darkglare
+iq(212778, 79373, WARLOCK);			-- Grimoire of the Vile Tyrant
+iq(212995, 79450, WARLOCK);			-- Grimoire of the Whispering Observer
+iq(213014, 79455, WARLOCK);			-- Grimoire of the Xorothian Darkglare
+iq(212984, 79444, WARLOCK);			-- Grimoire of the Zealous Observer

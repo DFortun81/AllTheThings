@@ -175,6 +175,10 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = { ADDED_5_2_0 }
 					["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
 					["crs"] = { 68220 },	-- Gastropod
 				}),
+				i(212750, {	-- Grimoire of the Ancient Observer (CI!)
+					["description"] = "Guide TBW...",
+					["timeline"] = { ADDED_10_2_5 },
+				}),
 				i(94125, {	-- Living Sandling (PET!)
 					["crs"] = { 69944 },	-- Sand Elemental
 				}),

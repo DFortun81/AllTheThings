@@ -132,6 +132,14 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					i(152903),	-- Biletooth Gnasher (MOUNT!)
 				},
 			}),
+			n(126196, {	-- Radix
+				["coord"]  = { 72.5, 67.5, ANTORAN_WASTES },
+				["g"] = {
+					i(212778, {	-- Grimoire of the Vile Tyrant (CI!)
+						["timeline"] = { ADDED_10_2_5 },
+					}),
+				},
+			}),
 			n(127706, {	-- Rezira the Seer
 				["description"] = "In order to reach this rare you must use the Observer's Locus Resonator, purchaseable from Orix the All-Seer, use someone else's portal, or use an item like Falling Flame with a Goblin Glider to help you land in the correct place.",
 				["questID"] = 48971,

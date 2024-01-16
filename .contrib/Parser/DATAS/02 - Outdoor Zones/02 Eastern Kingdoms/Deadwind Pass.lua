@@ -78,6 +78,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
+			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+				--o(xxxxx, {	-- Carved Eye
+					["coord"] = { 43.9, 72.8, DEADWIND_PASS },
+					["g"] = {
+						i(212989),	-- Grimoire of the Mana-Gorged Observer (CI!)
+					},
+				--}),
+			})),
 			-- #if AFTER TBC
 			n(VENDORS, {
 				applyclassicphase(TBC_PHASE_ONE, n(18255, {  -- Mage Darius

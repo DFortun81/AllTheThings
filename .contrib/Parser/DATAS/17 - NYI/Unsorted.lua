@@ -1061,7 +1061,6 @@ root(ROOTS.Unsorted, {
 			i(212717),	-- Spring Reveler's Cornsilk Sun Hat
 			i(212718),	-- Spring Reveler's Dandelion Sun Hat
 			i(212722),	-- Buggsy
-			i(212750),	-- Grimoire of the Ancient Observer
 			i(212761),	-- Pouch of Coins
 			i(212762),	-- Tarnished Horn Signet
 			i(212763),	-- Spoiled Honeywine
@@ -1076,11 +1075,7 @@ root(ROOTS.Unsorted, {
 			i(212772),	-- False Silver Coin
 			i(212773),	-- Rusted Locket
 			i(212774),	-- Sharpened Shalewing Bones
-			i(212778),	-- Grimoire of the Vile Tyrant
-			i(212779),	-- Grimoire of the Bloodrage Tyrant
-			i(212780),	-- Grimoire of the Felbrute Tyrant
 			i(212782),	-- Poorly Preserved Relic
-			i(212783),	-- Grimoire of the Netherwalk Tyrant
 			i(212784),	-- Destroyed Relic
 			i(212785),	-- Helm of the Stout
 			i(212786),	-- Lovely Duckling
@@ -1096,22 +1091,12 @@ root(ROOTS.Unsorted, {
 			i(212977),	-- Drakonid Sign Placard
 			i(212978),	-- Dragon Painter's Palette
 			i(212981),	-- Violet Kaldorei Bedroll
-			i(212983),	-- Grimoire of the Blasted Observer
-			i(212984),	-- Grimoire of the Zealous Observer
 			i(212985),	-- Spring Reveler's Turquoise Pants
 			i(212986),	-- Spring Reveler's Lavender Pants
 			i(212987),	-- Spring Reveler's Cornsilk Pants
 			i(212988),	-- Spring Reveler's Dandelion Pants
-			i(212989),	-- Grimoire of the Mana-Gorged Observer
 			i(212990),	-- Classic Violet Tabard
-			i(212991),	-- Grimoire of the Dire Observer
-			i(212993),	-- Grimoire of the Plagued Observer
-			i(212995),	-- Grimoire of the Whispering Observer
 			i(213004),	-- Violet Kaldorei Backpack
-			i(213014),	-- Grimoire of the Xorothian Darkglare
-			i(213015),	-- Grimoire of the Eredathian Darkglare
-			i(213016),	-- Grimoire of the Abyssal Darkglare
-			i(213017),	-- Grimoire of the Riftsmolder Darkglare
 			i(190670),	-- Sanguine Bouquet
 			i(190805),	-- Deforester's Hatchet
 			i(190819),	-- Emerald Guardian's Longbow
