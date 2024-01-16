@@ -198,6 +198,14 @@ local function AttachTooltipSearchResults(self, lineNumber, search, method, ...)
 end
 local function AttachTooltip(self, ttdata)
 
+	-- Debugging without ATT exclusions
+	-- local ttType, ttId = ttdata and ttdata.type;
+	-- if ttType then
+	-- 	ttId = ttdata.id;
+	-- 	app.PrintDebug("TT Type",ttType,ttId)
+	-- 	-- app.PrintTable(ttdata)
+	-- end
+
 	if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
 
 	-- Does the tooltip have an owner?
@@ -267,7 +275,6 @@ local function AttachTooltip(self, ttdata)
 	local ttType, ttId = ttdata and ttdata.type;
 	if ttType then
 		ttId = ttdata.id;
-		-- app.PrintDebug("TT Type",ttType,ttId)
 	end
 
 	local link, target, spellID, id, _;
