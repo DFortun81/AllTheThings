@@ -5080,7 +5080,7 @@ app.BuildSourceParent = function(group)
 		local SearchForObject = app.SearchForObject;
 		local parents, parentKey, parent;
 		-- collect all possible parent groups for all instances of this Thing
-		for _,thing in pairs(things) do
+		for _,thing in ipairs(things) do
 			if thing.hash == groupHash or isAchievement then
 				parent = thing.parent;
 				while parent do
@@ -5173,7 +5173,7 @@ app.BuildSourceParent = function(group)
 		-- Raw Criteria inherently are not directly cached and will not find themselves, so instead
 		-- show their containing Achievement as the Source
 		-- re-popping this Achievement will do normal Sources for all the Criteria and be useful
-		if groupKey == "criteriaID" and #things == 0 then
+		if groupKey == "criteriaID" then
 			local achID = group.achievementID;
 			parent = app.SearchForObject("achievementID", achID) or { achievementID = achID };
 			-- app.PrintDebug("add achievement for empty criteria",achID)
@@ -11471,7 +11471,6 @@ function app:CreateMiniListForGroup(group)
 	-- 		app.PrintDebug("Found",bestResult and bestResult.hash,group,bestResult)
 	-- 	end
 	-- end
-	local key = group.key;
 
 	-- Pop Out Functionality! :O
 	local suffix = BuildSourceTextForDynamicPath(group);
@@ -11483,36 +11482,51 @@ function app:CreateMiniListForGroup(group)
 	if not popout then
 		popout = app:GetWindow(suffix);
 
-		-- clone/search initially so as to not let popout operations modify the source data
-		group = CreateObject(group);
+		-- app.PrintDebug("group")
+		-- app.PrintTable(group)
 
-		-- make a search for this group if it is an item/currency/achievement and not already a container for things
-		if not group.g and not group.criteriaID and (group.itemID or group.currencyID or group.achievementID) then
-			local cmd = group.link or key .. ":" .. group[key];
-			app.SetSkipPurchases(2);
-			local groupSearch = GetCachedSearchResults(cmd, SearchForLink, cmd);
-			app.SetSkipPurchases(0);
-			-- Sometimes we want a specific Thing (/att i:147770)
-			-- but since it is keyed by a different ID (spell 242155)
-			-- this re-search replaces with an alternate item (147580)
-			-- so instead we should only merge properties from the re-search to ensure initial data isn't replaced due to alternate data matching
-			MergeProperties(group, groupSearch, true)
-			-- This isn't needed for the example noted anymore...
-			-- if not group.key and key then
-			-- 	group.key = key;	-- Dunno what causes this in GetCachedSearchResults, but assigning this before calling to the new CreateObject function fixes currency popouts for currencies that aren't in the addon. /att currencyid:1533
-			-- 	-- CreateMiniListForGroup missing key response, will likely fail to Create a Class Instance!
-			-- end
+		-- being a search result means it has already received certain processing
+		if not group.isBaseSearchResult then
+			-- clone/search initially so as to not let popout operations modify the source data
+			group = CreateObject(group);
+
+			-- app.PrintDebug("clone")
+			-- app.PrintTable(group)
+
+			-- make a search for this group if it is an item/currency/achievement and not already a container for things
+			local key = group.key;
+			if not group.g and not group.criteriaID and app.ThingKeys[key] then
+				local cmd = group.link or key .. ":" .. group[key];
+				app.SetSkipPurchases(2);
+				local groupSearch = GetCachedSearchResults(cmd, SearchForLink, cmd);
+				app.SetSkipPurchases(0);
+
+				-- app.PrintDebug("search")
+				-- app.PrintTable(groupSearch)
+				-- Sometimes we want a specific Thing (/att i:147770)
+				-- but since it is keyed by a different ID (spell 242155)
+				-- this re-search replaces with an alternate item (147580)
+				-- so instead we should only merge properties from the re-search to ensure initial data isn't replaced due to alternate data matching
+				MergeProperties(group, groupSearch, true)
+				-- g is not merged automatically
+				group.g = groupSearch.g
+				-- This isn't needed for the example noted anymore...
+				-- if not group.key and key then
+				-- 	group.key = key;	-- Dunno what causes this in GetCachedSearchResults, but assigning this before calling to the new CreateObject function fixes currency popouts for currencies that aren't in the addon. /att currencyid:1533
+				-- 	-- CreateMiniListForGroup missing key response, will likely fail to Create a Class Instance!
+				-- end
+
+				-- app.PrintDebug("merge")
+				-- app.PrintTable(group)
+			else
+				app.SetSkipPurchases(2);
+				app.FillGroups(group);
+				app.SetSkipPurchases(0);
+			end
 		end
 
 		-- Insert the data group into the Raw Data table.
 		popout:SetData(group);
-
-		-- being a search result means it has already received certain processing
-		if not group.isBaseSearchResult then
-			app.SetSkipPurchases(2);
-			app.FillGroups(group);
-			app.SetSkipPurchases(0);
-		end
 		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
 		-- if not group.isBaseSearchResult then
 		--	-- make a search for this group if it is an item/currency and not already a container for things
