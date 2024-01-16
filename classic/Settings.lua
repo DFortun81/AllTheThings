@@ -211,13 +211,13 @@ local OnClickForTab = function(self)
 	local parent = self:GetParent();
 	--PanelTemplates_SetTab(parent, id);
 	-- print("CLICKED TAB", id, self:GetText());
-	for i,tab in ipairs(parent.Tabs) do
+	for i,child in ipairs(parent.Tabs) do
 		if i == id then
-			for j,o in ipairs(tab.objects) do
+			for j,o in ipairs(child.objects) do
 				o:Show();
 			end
 		else
-			for j,o in ipairs(tab.objects) do
+			for j,o in ipairs(child.objects) do
 				o:Hide();
 			end
 		end
@@ -412,9 +412,9 @@ settings.SetPersonal = function(self, setting, value)
 	self:Refresh();
 end
 settings.Refresh = function(self)
-	for i,tab in ipairs(self.Tabs) do
-		if tab.OnRefresh then tab:OnRefresh(); end
-		for j,o in ipairs(tab.objects) do
+	for i,child in ipairs(self.Tabs) do
+		if child.OnRefresh then child:OnRefresh(); end
+		for j,o in ipairs(child.objects) do
 			if o.OnRefresh then o:OnRefresh(); end
 		end
 	end
@@ -429,17 +429,17 @@ settings.CreateCheckBox = function(self, text, OnRefresh, OnClick)
 end
 settings.CreateTab = function(self, text)
 	local id = #self.Tabs + 1;
-	local tab = CreateFrame('Button', self:GetName() .. '-Tab' .. id, self, 'OptionsFrameTabButtonTemplate');
-	if id > 1 then tab:SetPoint("TOPLEFT", self.Tabs[id - 1], "TOPRIGHT", 0, 0); end
-	tinsert(self.Tabs, tab);
-	self.MostRecentTab = tab;
-	tab.objects = {};
-	tab:SetID(id);
-	tab:SetText(text);
-	self.TabsByName[text] = tab;
-	--PanelTemplates_TabResize(tab, 0);
-	tab:SetScript('OnClick', OnClickForTab);
-	return tab;
+	local child = CreateFrame('Button', self:GetName() .. '-Tab' .. id, self, 'OptionsFrameTabButtonTemplate');
+	if id > 1 then child:SetPoint("TOPLEFT", self.Tabs[id - 1], "TOPRIGHT", 0, 0); end
+	tinsert(self.Tabs, child);
+	self.MostRecentTab = child;
+	child.objects = {};
+	child:SetID(id);
+	child:SetText(text);
+	self.TabsByName[text] = child;
+	--PanelTemplates_TabResize(child, 0);
+	child:SetScript('OnClick', OnClickForTab);
+	return child;
 end
 settings.ShowCopyPasteDialog = function(self)
 	app:ShowPopupDialogWithEditBox("Ctrl+A, Ctrl+C to Copy to your Clipboard.", self.copypasta or self:GetText(), nil, 10);
@@ -804,8 +804,8 @@ end;
 ------------------------------------------
 local line;
 (function()
-local tab = settings:CreateTab("General");
-tab:SetPoint("TOPLEFT", settings.logo, "BOTTOMRIGHT", 16, 0);
+local child = settings:CreateTab("General");
+child:SetPoint("TOPLEFT", settings.logo, "BOTTOMRIGHT", 16, 0);
 line = settings:CreateTexture(nil, "ARTWORK");
 line:SetPoint("LEFT", settings, "LEFT", 4, 0);
 line:SetPoint("RIGHT", settings, "RIGHT", -4, 0);
@@ -822,7 +822,7 @@ ModeLabel.OnRefresh = function(self)
 	self:SetText(settings:GetModeString());
 end;
 
-local DebugModeCheckBox = settings:CreateCheckBox("|C" .. app.Colors.Completed .. "Debug Mode|r (Show Everything)",
+local DebugModeCheckBox = settings:CreateCheckBox(app.ccColors.Red .. "Debug Mode|r (Show Everything)",
 function(self)
 	self:SetChecked(app.MODE_DEBUG);
 end,
@@ -832,7 +832,7 @@ end);
 DebugModeCheckBox:SetATTTooltip("Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.");
 DebugModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -8);
 
-local AccountModeCheckBox = settings:CreateCheckBox("|Cff00ab00Account Mode|r",
+local AccountModeCheckBox = settings:CreateCheckBox(app.ccColors.Account.."Account Mode|r",
 function(self)
 	self:SetChecked(app.MODE_ACCOUNT);
 	if app.MODE_DEBUG then
@@ -848,9 +848,18 @@ function(self)
 end);
 AccountModeCheckBox:SetATTTooltip("Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.");
 AccountModeCheckBox:SetPoint("TOPLEFT", DebugModeCheckBox, "BOTTOMLEFT", 0, 4);
+AccountModeCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 
 local FactionModeCheckBox = settings:CreateCheckBox("Only Current Faction",
 function(self)
+	local englishFaction = UnitFactionGroup("player")
+	if englishFaction == "Alliance" then
+		self.Text:SetText(app.ccColors.Alliance..self.Text:GetText())
+	elseif englishFaction == "Horde" then
+		self.Text:SetText(app.ccColors.Horde..self.Text:GetText())
+	else
+		self.Text:SetText(app.ccColors.Default..self.Text:GetText())
+	end
 	self:SetChecked(settings:Get("FactionMode"));
 	if app.MODE_DEBUG or not app.MODE_ACCOUNT then
 		self:Disable();
@@ -865,6 +874,23 @@ function(self)
 end);
 FactionModeCheckBox:SetATTTooltip(L["FACTION_MODE_TOOLTIP"]);
 FactionModeCheckBox:SetPoint("TOPLEFT", AccountModeCheckBox, "TOPLEFT", 140, 0);
+
+local LootCheckBox = settings:CreateCheckBox("Loot Mode",
+function(self)
+	self:SetChecked(settings:Get("Thing:Loot"));
+	if app.MODE_DEBUG then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetLootMode(self:GetChecked());
+end);
+LootCheckBox:SetATTTooltip("Enable this option to show loot from all sources.\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.");
+LootCheckBox:SetPoint("TOPLEFT", AccountModeCheckBox, "BOTTOMLEFT", 0, 4);
 
 -- This creates the "Precision" slider.
 local PrecisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", settings, "OptionsSliderTemplate");
@@ -925,7 +951,7 @@ end);
 
 
 local ThingsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-ThingsLabel:SetPoint("TOPLEFT", AccountModeCheckBox, "BOTTOMLEFT", 0, -16);
+ThingsLabel:SetPoint("TOPLEFT", LootCheckBox, "BOTTOMLEFT", 0, -16);
 ThingsLabel:SetJustifyH("LEFT");
 ThingsLabel:SetText("Which \"Things\" do you want to track?");
 ThingsLabel:Show();
@@ -966,9 +992,9 @@ AchievementsCheckBox.OnTooltip = function(t)
 	GameTooltip:AddLine(" ");
 	GameTooltip:AddDoubleLine("Total Achievements", t.total);
 end
-AchievementsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 0, -8);
+AchievementsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 22, -8);
 
-local AchievementsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local AchievementsAccountWideCheckBox = settings:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Achievements"));
 	if app.MODE_DEBUG or not settings:Get("Thing:Achievements") then
@@ -983,8 +1009,9 @@ function(self)
 	settings:Set("AccountWide:Achievements", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-AchievementsAccountWideCheckBox:SetATTTooltip("This behaviour is dependent on whether an achievement supports detection account wide or not. Unchecking this option just tells the achievement that you only want to check your current character. Some achievements are exclusively per-character.");
-AchievementsAccountWideCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "TOPLEFT", 220, 0);
+AchievementsAccountWideCheckBox:SetATTTooltip(app.ccColors.Account .. "Track Account Wide|R\n\nThis behaviour is dependent on whether an achievement supports detection account wide or not. Unchecking this option just tells the achievement that you only want to check your current character. Some achievements are exclusively per-character.");
+AchievementsAccountWideCheckBox:SetPoint("TOPRIGHT", AchievementsCheckBox, "TOPLEFT", 4, 0);
+AchievementsAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 
 local BattlePetsCheckBox = settings:CreateCheckBox(AUCTION_CATEGORY_BATTLE_PETS,
 function(self)
@@ -1018,14 +1045,14 @@ BattlePetsCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "BOTTOMLEFT", 0, 4)
 
 local BattlePetsAccountWideCheckBox;
 if C_PetJournal and app.GameBuildVersion > 30000 then
-BattlePetsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+BattlePetsAccountWideCheckBox = settings:CreateCheckBox("",
 function(self)
 	self:SetChecked(true);
 	self:Disable();
 	self:SetAlpha(0.2);
 end);
 else
-BattlePetsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+BattlePetsAccountWideCheckBox = settings:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:BattlePets"));
 	if app.MODE_DEBUG or not settings:Get("Thing:BattlePets") then
@@ -1040,11 +1067,12 @@ function(self)
 	settings:Set("AccountWide:BattlePets", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-BattlePetsAccountWideCheckBox:SetATTTooltip("Companion pets can be collected on multiple characters and realistically would require that you have an insane amount of bag space in order to collect them all on one character.\n\nWe recommend you keep this turned on, but you do you fam.");
+BattlePetsAccountWideCheckBox:SetATTTooltip(app.ccColors.Account .. "Track Account Wide|R\n\nCompanion pets can be collected on multiple characters and realistically would require that you have an insane amount of bag space in order to collect them all on one character.\n\nWe recommend you keep this turned on, but you do you fam.");
 end
-BattlePetsAccountWideCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "TOPLEFT", 220, 0);
+BattlePetsAccountWideCheckBox:SetPoint("TOPRIGHT", BattlePetsCheckBox, "TOPLEFT", 4, 0);
+BattlePetsAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 
-local DeathsCheckBox = settings:CreateCheckBox("Deaths / Soul Fragments",
+local DeathsCheckBox = settings:CreateCheckBox("Deaths",
 function(self)
 	self:SetChecked(settings:Get("DeathTracker"));
 	if app.MODE_DEBUG then
@@ -1066,7 +1094,7 @@ DeathsCheckBox.OnTooltip = function(t)
 end
 DeathsCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local DeathsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local DeathsAccountWideCheckBox = settings:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Deaths"));
 	if app.MODE_DEBUG or not settings:Get("DeathTracker") then
@@ -1081,10 +1109,11 @@ function(self)
 	settings:Set("AccountWide:Deaths", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-DeathsAccountWideCheckBox:SetATTTooltip("Most people keep this setting turned on. It may be considered insane to turn it off!");
-DeathsAccountWideCheckBox:SetPoint("TOPLEFT", DeathsCheckBox, "TOPLEFT", 220, 0);
+DeathsAccountWideCheckBox:SetATTTooltip(app.ccColors.Account .. "Track Account Wide|R\n\nMost people keep this setting turned on. It may be considered insane to turn it off!");
+DeathsAccountWideCheckBox:SetPoint("TOPRIGHT", DeathsCheckBox, "TOPLEFT", 4, 0);
+DeathsAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 
-local ExplorationCheckBox = settings:CreateCheckBox("Exploration / Map Completion",
+local ExplorationCheckBox = settings:CreateCheckBox("Exploration",
 function(self)
 	self:SetChecked(settings:Get("Thing:Exploration"));
 	if app.MODE_DEBUG then
@@ -1114,7 +1143,7 @@ ExplorationCheckBox.OnTooltip = function(t)
 end
 ExplorationCheckBox:SetPoint("TOPLEFT", DeathsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ExplorationAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local ExplorationAccountWideCheckBox = settings:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Exploration"));
 	if app.MODE_DEBUG or not settings:Get("Thing:Exploration") then
@@ -1129,10 +1158,11 @@ function(self)
 	settings:Set("AccountWide:Exploration", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-ExplorationAccountWideCheckBox:SetATTTooltip("Exploration tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?");
-ExplorationAccountWideCheckBox:SetPoint("TOPLEFT", ExplorationCheckBox, "TOPLEFT", 220, 0);
+ExplorationAccountWideCheckBox:SetATTTooltip(app.ccColors.Account .. "Track Account Wide|R\n\nExploration tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?");
+ExplorationAccountWideCheckBox:SetPoint("TOPRIGHT", ExplorationCheckBox, "TOPLEFT", 4, 0);
+ExplorationAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 
-local FlightPathsCheckBox = settings:CreateCheckBox("Flight Paths / Ferry Stations",
+local FlightPathsCheckBox = settings:CreateCheckBox("Flight Paths",
 function(self)
 	self:SetChecked(settings:Get("Thing:FlightPaths"));
 	if app.MODE_DEBUG then
@@ -1162,7 +1192,7 @@ FlightPathsCheckBox.OnTooltip = function(t)
 end
 FlightPathsCheckBox:SetPoint("TOPLEFT", ExplorationCheckBox, "BOTTOMLEFT", 0, 4);
 
-local FlightPathsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local FlightPathsAccountWideCheckBox = settings:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:FlightPaths"));
 	if app.MODE_DEBUG or not settings:Get("Thing:FlightPaths") then
@@ -1177,8 +1207,9 @@ function(self)
 	settings:Set("AccountWide:FlightPaths", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-FlightPathsAccountWideCheckBox:SetATTTooltip("Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?");
-FlightPathsAccountWideCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "TOPLEFT", 220, 0);
+FlightPathsAccountWideCheckBox:SetATTTooltip(app.ccColors.Account .. "Track Account Wide|R\n\nFlight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?");
+FlightPathsAccountWideCheckBox:SetPoint("TOPRIGHT", FlightPathsCheckBox, "TOPLEFT", 4, 0);
+FlightPathsAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 
 -- Heirlooms aren't in the game until late Wrath Classic.
 local HeirloomsCheckBox;
@@ -1213,13 +1244,14 @@ HeirloomsCheckBox.OnTooltip = function(t)
 end
 HeirloomsCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local HeirloomsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local HeirloomsAccountWideCheckBox = settings:CreateCheckBox("",
 function(self)
 	self:SetChecked(true);
 	self:Disable();
 	self:SetAlpha(0.2);
 end);
-HeirloomsAccountWideCheckBox:SetPoint("TOPLEFT", HeirloomsCheckBox, "TOPLEFT", 220, 0);
+HeirloomsAccountWideCheckBox:SetPoint("TOPRIGHT", HeirloomsCheckBox, "TOPLEFT", 4, 0);
+HeirloomsAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 end
 
 -- Illusions aren't in the game until Transmog is.
@@ -1255,84 +1287,15 @@ IllusionsCheckBox.OnTooltip = function(t)
 end
 IllusionsCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox or HeirloomsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local IllusionsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local IllusionsAccountWideCheckBox = settings:CreateCheckBox("",
 function(self)
 	self:SetChecked(true);
 	self:Disable();
 	self:SetAlpha(0.2);
 end);
-IllusionsAccountWideCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox, "TOPLEFT", 220, 0);
+IllusionsAccountWideCheckBox:SetPoint("TOPRIGHT", IllusionsCheckBox, "TOPLEFT", 4, 0);
+IllusionsAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 end
-
-local LootCheckBox = settings:CreateCheckBox("Loot / Drops / Items",
-function(self)
-	self:SetChecked(settings:Get("Thing:Loot"));
-	if app.MODE_DEBUG then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:SetLootMode(self:GetChecked());
-end);
-LootCheckBox:SetATTTooltip("Enable this option to track loot.\n\nLoot being any item you can get from a mob, quest, or container. Loot that qualifies for one of the other filters will still appear in ATT if this filter is turned off.\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.");
-LootCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox or HeirloomsCheckBox or FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
-
-local RWPCheckBox = settings:CreateCheckBox("Removed With Patch Loot",
-function(self)
-	self:SetChecked(settings:Get("Thing:RWP"));
-	if app.MODE_DEBUG then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-	if not self.total or self.total == 0 then
-		local total = 0;
-		local container = app.SearchForFieldContainer("itemID");
-		for i,o in pairs(container) do
-			for i,p in ipairs(o) do
-				if p.itemID and p.rwp and p.f and app.Settings:GetFilterForRWPBase(p.f) then
-					total = total + 1;
-					break;
-				end
-			end
-		end
-		self.total = total;
-	end
-end,
-function(self)
-	settings:Set("Thing:RWP", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-RWPCheckBox:SetATTTooltip("Enable this option to track future removed from game loot. Only Items tagged with 'removed with patch' data count toward this. If you find an item not tagged that should be tagged, please let me know!\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.");
-RWPCheckBox.OnTooltip = function(t)
-	GameTooltip:AddLine(" ");
-	GameTooltip:AddDoubleLine("Total RWP", t.total);
-end
-RWPCheckBox:SetPoint("TOPLEFT", LootCheckBox, "BOTTOMLEFT", 0, 4);
-
-local RWPAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
-function(self)
-	self:SetChecked(settings:Get("AccountWide:RWP"));
-	if app.MODE_DEBUG or not settings:Get("Thing:RWP") then
-		self:Disable();
-		self:SetAlpha(0.2);
-	else
-		self:Enable();
-		self:SetAlpha(1);
-	end
-end,
-function(self)
-	settings:Set("AccountWide:RWP", self:GetChecked());
-	settings:UpdateMode(1);
-end);
-RWPAccountWideCheckBox:SetATTTooltip("Removed from Game Items should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.");
-RWPAccountWideCheckBox:SetPoint("TOPLEFT", RWPCheckBox, "TOPLEFT", 220, 0);
 
 local MountsCheckBox = settings:CreateCheckBox("Mounts",
 function(self)
@@ -1371,18 +1334,18 @@ MountsCheckBox.OnTooltip = function(t)
 	GameTooltip:AddLine(" ");
 	GameTooltip:AddDoubleLine("Total Mounts", t.total);
 end
-MountsCheckBox:SetPoint("TOPLEFT", RWPCheckBox, "BOTTOMLEFT", 0, 4);
+MountsCheckBox:SetPoint("TOPLEFT", IllusionsCheckBox or HeirloomsCheckBox or FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local MountsAccountWideCheckBox;
 if C_MountJournal then
-MountsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+MountsAccountWideCheckBox = settings:CreateCheckBox("",
 function(self)
 	self:SetChecked(true);
 	self:Disable();
 	self:SetAlpha(0.2);
 end);
 else
-MountsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+MountsAccountWideCheckBox = settings:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Mounts"));
 	if app.MODE_DEBUG or not settings:Get("Thing:Mounts") then
@@ -1398,7 +1361,9 @@ function(self)
 	settings:UpdateMode(1);
 end);
 end
-MountsAccountWideCheckBox:SetPoint("TOPLEFT", MountsCheckBox, "TOPLEFT", 220, 0);
+MountsAccountWideCheckBox:SetATTTooltip(app.ccColors.Account .. "Track Account Wide|R\n\nEnable this option to track mounts account wide. Depending on game version, keeping this option on is recommended as your bag space is limited.");
+MountsAccountWideCheckBox:SetPoint("TOPRIGHT", MountsCheckBox, "TOPLEFT", 4, 0);
+MountsAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 
 local QuestsCheckBox = settings:CreateCheckBox("Quests",
 function(self)
@@ -1463,7 +1428,7 @@ QuestsLockedCheckBox.OnTooltip = function(t)
 end
 QuestsLockedCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "TOPLEFT", 110, 0);
 
-local QuestsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local QuestsAccountWideCheckBox = settings:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Quests"));
 	if app.MODE_DEBUG or not settings:Get("Thing:Quests") then
@@ -1478,7 +1443,9 @@ function(self)
 	settings:Set("AccountWide:Quests", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-QuestsAccountWideCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "TOPLEFT", 220, 0);
+QuestsAccountWideCheckBox:SetATTTooltip(app.ccColors.Account .. "Track Account Wide|R\n\nEnable this option to track quests account wide. If any of your characters have completed a particular quest, it will not show as something you need to collect unless there is something from that quest that you've not collected.");
+QuestsAccountWideCheckBox:SetPoint("TOPRIGHT", QuestsCheckBox, "TOPLEFT", 4, 0);
+QuestsAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 
 local RecipesCheckBox = settings:CreateCheckBox("Recipes",
 function(self)
@@ -1515,7 +1482,7 @@ RecipesCheckBox.OnTooltip = function(t)
 end
 RecipesCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local RecipesAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local RecipesAccountWideCheckBox = settings:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Recipes"));
 	if app.MODE_DEBUG or not settings:Get("Thing:Recipes") then
@@ -1530,8 +1497,9 @@ function(self)
 	settings:Set("AccountWide:Recipes", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-RecipesAccountWideCheckBox:SetATTTooltip("Recipes are not normally tracked account wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.");
-RecipesAccountWideCheckBox:SetPoint("TOPLEFT", RecipesCheckBox, "TOPLEFT", 220, 0);
+RecipesAccountWideCheckBox:SetATTTooltip(app.ccColors.Account .. "Track Account Wide|R\n\nRecipes are not normally tracked account wide in Blizzard's database, but we can do that.\n\nIt is impossible to collect them all on one character, so with this, you can give your alts and their professions meaning.");
+RecipesAccountWideCheckBox:SetPoint("TOPRIGHT", RecipesCheckBox, "TOPLEFT", 4, 0);
+RecipesAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 
 local ReputationsCheckBox = settings:CreateCheckBox("Reputations",
 function(self)
@@ -1563,7 +1531,7 @@ ReputationsCheckBox.OnTooltip = function(t)
 end
 ReputationsCheckBox:SetPoint("TOPLEFT", RecipesCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ReputationsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local ReputationsAccountWideCheckBox = settings:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Reputations"));
 	if app.MODE_DEBUG or not settings:Get("Thing:Reputations") then
@@ -1578,8 +1546,63 @@ function(self)
 	settings:Set("AccountWide:Reputations", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-ReputationsAccountWideCheckBox:SetATTTooltip("Reputations are not normally tracked account wide in Blizzard's database, but we can do that.");
-ReputationsAccountWideCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "TOPLEFT", 220, 0);
+ReputationsAccountWideCheckBox:SetATTTooltip(app.ccColors.Account .. "Track Account Wide|R\n\nReputations are not normally tracked account wide in Blizzard's database, but we can do that.");
+ReputationsAccountWideCheckBox:SetPoint("TOPRIGHT", ReputationsCheckBox, "TOPLEFT", 4, 0);
+ReputationsAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
+
+local RWPCheckBox = settings:CreateCheckBox("Removed With Patch Loot",
+function(self)
+	self:SetChecked(settings:Get("Thing:RWP"));
+	if app.MODE_DEBUG then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+	if not self.total or self.total == 0 then
+		local total = 0;
+		local container = app.SearchForFieldContainer("itemID");
+		for i,o in pairs(container) do
+			for i,p in ipairs(o) do
+				if p.itemID and p.rwp and p.f and app.Settings:GetFilterForRWPBase(p.f) then
+					total = total + 1;
+					break;
+				end
+			end
+		end
+		self.total = total;
+	end
+end,
+function(self)
+	settings:Set("Thing:RWP", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+RWPCheckBox:SetATTTooltip("Enable this option to track future removed from game loot. Only Items tagged with 'removed with patch' data count toward this. If you find an item not tagged that should be tagged, please let me know!\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.");
+RWPCheckBox.OnTooltip = function(t)
+	GameTooltip:AddLine(" ");
+	GameTooltip:AddDoubleLine("Total RWP", t.total);
+end
+RWPCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local RWPAccountWideCheckBox = settings:CreateCheckBox("",
+function(self)
+	self:SetChecked(settings:Get("AccountWide:RWP"));
+	if app.MODE_DEBUG or not settings:Get("Thing:RWP") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:RWP", self:GetChecked());
+	settings:UpdateMode(1);
+end);
+RWPAccountWideCheckBox:SetATTTooltip(app.ccColors.Account .. "Track Account Wide|R\n\nRemoved from Game Items should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.");
+RWPAccountWideCheckBox:SetPoint("TOPRIGHT", RWPCheckBox, "TOPLEFT", 4, 0);
+RWPAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 
 local TitlesCheckBox = settings:CreateCheckBox(PAPERDOLL_SIDEBAR_TITLES,
 function(self)
@@ -1609,9 +1632,9 @@ TitlesCheckBox.OnTooltip = function(t)
 	GameTooltip:AddLine(" ");
 	GameTooltip:AddDoubleLine("Total Titles", t.total);
 end
-TitlesCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
+TitlesCheckBox:SetPoint("TOPLEFT", RWPCheckBox, "BOTTOMLEFT", 0, 4);
 
-local TitlesAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+local TitlesAccountWideCheckBox = settings:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Titles"));
 	if app.MODE_DEBUG or not settings:Get("Thing:Titles") then
@@ -1626,8 +1649,9 @@ function(self)
 	settings:Set("AccountWide:Titles", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-TitlesAccountWideCheckBox:SetATTTooltip("Titles are not normally tracked account wide in Blizzard's database, but we can do that.");
-TitlesAccountWideCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "TOPLEFT", 220, 0);
+TitlesAccountWideCheckBox:SetATTTooltip(app.ccColors.Account .. "Track Account Wide|R\n\nTitles are not normally tracked account wide in Blizzard's database, but we can do that.");
+TitlesAccountWideCheckBox:SetPoint("TOPRIGHT", TitlesCheckBox, "TOPLEFT", 4, 0);
+TitlesAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 
 local ToysCheckBox = settings:CreateCheckBox(TOY_BOX,
 function(self)
@@ -1661,7 +1685,7 @@ ToysCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ToysAccountWideCheckBox;
 if PlayerHasToy then
-ToysAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+ToysAccountWideCheckBox = settings:CreateCheckBox("",
 function(self)
 	self:SetChecked(true);
 	self:Disable();
@@ -1669,7 +1693,7 @@ function(self)
 end);
 ToysAccountWideCheckBox:SetATTTooltip("Toys are now account wide!");
 else
-ToysAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+ToysAccountWideCheckBox = settings:CreateCheckBox("",
 function(self)
 	self:SetChecked(settings:Get("AccountWide:Toys"));
 	if app.MODE_DEBUG or not settings:Get("Thing:Toys") then
@@ -1684,9 +1708,10 @@ function(self)
 	settings:Set("AccountWide:Toys", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-ToysAccountWideCheckBox:SetATTTooltip("Toys are not normally tracked account wide in Blizzard's database, but we can do that.");
+ToysAccountWideCheckBox:SetATTTooltip(app.ccColors.Account .. "Track Account Wide|R\n\nToys are not normally tracked account wide in Blizzard's database, but we can do that.");
 end
-ToysAccountWideCheckBox:SetPoint("TOPLEFT", ToysCheckBox, "TOPLEFT", 220, 0);
+ToysAccountWideCheckBox:SetPoint("TOPRIGHT", ToysCheckBox, "TOPLEFT", 4, 0);
+ToysAccountWideCheckBox:SetCheckedTexture(app.asset("TrackAccountWide"))
 
 local ShowMinimapButtonCheckBox = settings:CreateCheckBox("Show the Minimap Button",
 function(self)
@@ -1702,7 +1727,7 @@ function(self)
 	end
 end);
 ShowMinimapButtonCheckBox:SetATTTooltip("Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.");
-ShowMinimapButtonCheckBox:SetPoint("TOPLEFT", ExplorationAccountWideCheckBox, "TOPLEFT", 160, 0);
+ShowMinimapButtonCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "TOPLEFT", 360, 0);
 
 local MinimapButtonStyleCheckBox = settings:CreateCheckBox("Use the Old Minimap Style",
 function(self)
@@ -1896,8 +1921,8 @@ end)();
 -- The "Filters" Tab.					--
 ------------------------------------------
 (function()
-local tab = settings:CreateTab("Filters");
-tab.OnRefresh = function(self)
+local child = settings:CreateTab("Filters");
+child.OnRefresh = function(self)
 	if app.MODE_DEBUG then
 		PanelTemplates_DisableTab(settings, self:GetID());
 	else
@@ -2089,8 +2114,8 @@ end)();
 -- The "Phases" Tab.					--
 ------------------------------------------
 (function()
-local tab = settings:CreateTab("Phases");
-tab.OnRefresh = function(self)
+local child = settings:CreateTab("Phases");
+child.OnRefresh = function(self)
 	if app.MODE_DEBUG then
 		PanelTemplates_DisableTab(settings, self:GetID());
 	else
@@ -2186,7 +2211,7 @@ end)();
 -- The "Interface" Tab.					--
 ------------------------------------------
 (function()
-local tab = settings:CreateTab("Interface");
+local child = settings:CreateTab("Interface");
 local TooltipLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 TooltipLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 TooltipLabel:SetJustifyH("LEFT");
@@ -2730,7 +2755,7 @@ end)();
 -- The "Features" Tab.					--
 ------------------------------------------
 (function()
-local tab = settings:CreateTab("Features");
+local child = settings:CreateTab("Features");
 local CelebrationsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 CelebrationsLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 330, -8);
 CelebrationsLabel:SetJustifyH("LEFT");
@@ -2946,7 +2971,7 @@ local CreateWindowButton = function()
 	lastWindowButtonDistance = -1;
 	lastWindowButtonRow = row;
 	tinsert(WindowButtons, row);
-	tinsert(tab.objects, row);
+	tinsert(child.objects, row);
 	return row;
 end
 local doNothing = function() end;
@@ -2991,7 +3016,7 @@ end)();
 -- The "About" Tab.				--
 ------------------------------------------
 (function()
-local tab = settings:CreateTab("About");
+local child = settings:CreateTab("About");
 local AboutText = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 AboutText:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 AboutText:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -8, -8);
