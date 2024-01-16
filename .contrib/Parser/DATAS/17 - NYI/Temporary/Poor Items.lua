@@ -107,7 +107,6 @@ root(ROOTS.NeverImplemented, {
 						i(5308),	-- Deprecated Deckhand Gloves
 						i(3062),	-- Deprecated Deepwood Gloves
 						i(2255),	-- Deprecated Thick Leather Gloves
-						i(3981),	-- Strapped Gloves
 					}),
 					n(WAIST, {
 						i(3977),	-- Strapped Belt

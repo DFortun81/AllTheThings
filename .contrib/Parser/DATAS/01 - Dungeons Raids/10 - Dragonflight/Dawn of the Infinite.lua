@@ -63,10 +63,11 @@ local QUANTUM_GROUP = sharedData({
 			ig(114390),	-- Greathelm of Grievous Storms		(NYI)
 			ig(108081),	-- Hardened Draenic Steel Helm		(NYI)
 			ig(108165),	-- Peerless Draenic Steel Helm		(NYI)
+			ig(108181),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108189),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108197),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108205),	-- Peerless Draenic Steel Helm		(NYI)
-			ig(108181),	-- Peerless Draenic Steel Helm		(NYI)
+			ig(108221),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(114266),	-- Ruby Plate Greathelm				(NYI)
 
 			ig(134630),	-- Firescored Helm					(Removed)
@@ -99,6 +100,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(134761),	-- Masked Shoulderpads				(Removed)
 			ig(134678),	-- Rookie's Shoulders				(Removed)
 			ig(134702),	-- Swarming Shoulders				(Removed)
+			ig(51998),	-- Vigorous Spaulders				(Removed)
 
 			ig(105798),	-- Flame Healer's Shoulderguards	(Ordos)
 			ig(105801),	-- Spaulders of Dominating Dreams	(Ordos)
@@ -164,6 +166,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(114252), -- Leafscale Chestguard				(NYI)
 
 			ig(134732),	-- Frigidlink Armor					(Removed)
+			ig(6773),	-- Gelkis Marauder Chain			(Removed)
 			ig(2273),	-- Guerrilla Armor					(Removed)
 			ig(134795),	-- Ironbranded Chainmail			(Removed)
 			ig(134763),	-- Overgrown Armor					(Removed)
@@ -204,6 +207,7 @@ local QUANTUM_GROUP = sharedData({
 		filter(LEATHER, {
 			ig(114260),	-- Bloodthorn Gauntlets				(NYI)
 			ig(114384),	-- Gauntlets of Falling Leaves		(NYI)
+			ig(3981),	-- Strapped Gloves					(NYI)
 
 			ig(134730),	-- Frosthide Gloves					(Removed)
 			ig(134675),	-- Rookie's Gloves					(Removed)
@@ -352,6 +356,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(134717),	-- Cold-Touched Decapitator				(NYI)
 		ig(108046),	-- Draenic Steel War Axe				(NYI)
 		ig(189996),	-- Elegantly Balanced Axe				(NYI)(Unique)
+		ig(108142),	-- Hardened Draenic Steel War Axe		(NYI)
 		ig(108226),	-- Peerless Draenic Steel War Axe		(NYI)
 		ig(108227),	-- Peerless Draenic Steel War Axe		(NYI)
 		ig(108228),	-- Peerless Draenic Steel War Axe		(NYI)
@@ -389,13 +394,13 @@ local QUANTUM_GROUP = sharedData({
 		ig(115295),	-- Spectral Dagger						(NYI)
 		ig(2664),	-- Spinner Fang							(NYI)
 		ig(3222),	-- Wicked Dagger						(NYI)
-		ig(2664),	--										(NYI/UNIQUE)
 
 		ig(14151),	-- Chanting Blade						(Removed)
 		ig(134718),	-- Cold-Touched Shanker					(Removed)
 		ig(134748),	-- Covert Shanker						(Removed)
-		ig(37597),	-- Direbrew's Shanker [Level 70]		(Removed)
-		ig(49120),	-- Direbrew's Bloody Shanker [Level 80]	(Removed)
+		ig(37597),	-- Direbrew's Shanker					(Removed)
+		ig(107217),	-- Direbrew's Bloodied Shanker			(Removed)
+		ig(49120),	-- Direbrew's Bloody Shanker			(Removed)
 		ig(66540),	-- Miniature Winter Veil Tree			(Removed)
 		ig(2941),	-- Prison Shank							(Removed)
 		ig(134610),	-- Scorching Shanker					(Removed)
@@ -411,6 +416,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(166405),	-- Blindside							(NYI)
 		ig(108058),	-- Draenic Steel Mace					(NYI)
 		ig(174228),	-- Gavel of the Oasis					(NYI)
+		ig(108154),	-- Hardened Draenic Steel Mace			(NYI)
 		ig(163930),	-- Kovork's Rattle						(NYI)
 		ig(161118),	-- Marrow Shatter						(NYI)
 		ig(107390),	-- Obliterator Firing Lever				(NYI)(Unique)
@@ -475,6 +481,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(166364),	-- Song of the Fallen					(NYI)
 		ig(155074),	-- Toll Enforcer						(NYI)
 
+		ig(68195),	-- Bazzalan's Blade						(Removed)
 		ig(19110),	-- Cold Forged Blade 					(Removed)
 		ig(134725),	-- Cold-Touched Mageblade 				(Removed)
 		ig(134726),	-- Cold-Touched Sword 					(Removed)

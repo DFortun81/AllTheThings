@@ -82,8 +82,6 @@ root(ROOTS.NeverImplemented, {
 						i(116653),	-- Unstable Greater Steelforged Essence
 						i(116650),	-- Unstable Greater Truesteel Essence
 						i(108084),	-- Hardened Draenic Steel Girdle
-						i(108154),	-- Hardened Draenic Steel Mace
-						i(108142),	-- Hardened Draenic Steel War Axe
 						i(108079),	-- Hardened Draenic Steel Warboots
 						i(108085),	-- Hardened Draenic Steel Wristwraps
 						i(108243),	-- Peerless Draenic Steel Bulwark
@@ -93,7 +91,6 @@ root(ROOTS.NeverImplemented, {
 						i(108178),	-- Peerless Draenic Steel Chestplate
 						i(108194),	-- Peerless Draenic Steel Chestplate
 						i(108213),	-- Peerless Draenic Steel Helm
-						i(108221),	-- Peerless Draenic Steel Helm
 						i(108168),	-- Peerless Draenic Steel Girdle
 						i(108184),	-- Peerless Draenic Steel Girdle
 						i(108192),	-- Peerless Draenic Steel Girdle
