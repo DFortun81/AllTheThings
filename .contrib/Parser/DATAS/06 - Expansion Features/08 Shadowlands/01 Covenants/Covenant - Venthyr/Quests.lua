@@ -281,6 +281,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
 				["provider"] = { "i", 178557 },	-- Supply Chain Memo
 				["coord"] = { 57.4, 69.2, REVENDRETH },	-- rough area
+				["g"] = {
+					i(178557),	-- Supply Chain Memo (QI!)
+				},
 			}),
 			q(58384, {	-- Dredgers Left Behind
 				["sourceQuests"] = { 58426 },	-- In the Shadow of our Failures
@@ -318,6 +321,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
 				["provider"] = { "n", 167380 },	-- Prince Renethal
 				["coord"] = { 56.3, 66.7, REVENDRETH },
+				["g"] = {
+					i(178213),	-- Prince Renathal's Decree (QI!)
+				},
 			}),
 			q(60500, {	-- Halls of Atonement: Medallion of Pride
 				["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
@@ -348,6 +354,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 61050 },	-- How to Wear Seven Medallions
 				["provider"] = { "n", 161514 },	-- General Draven
 				["coord"] = { 43.8, 46.4, SINFALL_REACHES },
+				["g"] = {
+					i(180356),	-- Laurent's Compact Looking Glass (QI!)
+				},
 			}),
 			q(62915, {	-- Home Improvement
 				["sourceQuests"] = { 62837 },	-- Hopeful News

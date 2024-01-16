@@ -149,6 +149,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
 					["provider"] = { "n", 169686 },	-- Niya
 					["coord"] = { 66.9, 26.5, ARDENWEALD },
+					["g"] = {
+						i(180126),	-- Drained Wildseed (QI!)
+					},
 				}),
 				q(60637, {	-- The End of Former Friends
 					["sourceQuests"] = { 60624 },	-- Ride to Heartwood Grove
@@ -815,6 +818,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 60905 },	-- Infusing the Wildseed
 				["provider"] = { "n", 160894 },	-- Droman Aliothe
 				["coord"] = { 60.0, 53.9, ARDENWEALD },
+				["g"] = {
+					i(184157),	-- Hibernal Hollow Supplies (QI!)
+				},
 			}),
 			q(59120, {	-- Renny the Vulpin
 				["sourceQuests"] = { 59087 },	-- That Darn Fox!
@@ -893,9 +899,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(62775, {	-- The Waning Grove [Pre-60]
 					["coord"] = { 69.0, 22.4, ARDENWEALD },
 					["g"] = {
+						i(184101),	-- Drained Wildseed (QI!)
 						i(181415),	-- Faemoss Leggings
-						i(181417),	-- Runetender Pants
 						i(181416),	-- Gormhusk Kilt
+						i(181417),	-- Runetender Pants
 						i(181414),	-- Sapsteel Legplates
 					},
 				}),

@@ -81,6 +81,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59757 },	-- Field Seance
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
 					["maps"] = { 1648 },	-- pre-SL scenario
+					["g"] = {
+						i(184313),	-- Shattered Helm of Domination (QI!)
+					},
 				}),
 				q(59915, {	-- Soul in Hand
 					["sourceQuests"] = { 59758 },	-- Speaking to the Dead
@@ -266,6 +269,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 63051 },	-- Trust Issues
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
+					["g"] = {
+						i(184492),	-- Pulsing Sphere (QI!)
+					},
 				}),
 				q(60284, {	-- Rule 5: Be Audacious
 					["sourceQuests"] = { 60281 },	-- Rule 4: Make a List
@@ -318,6 +324,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(63039, {	-- A Monument to Vengeance
 				["provider"] = { "n", 175807 },	-- Knight of the Ebon Blade
 				["coord"] = { 22.1, 48.0, THE_MAW },
+				["g"] = {
+					i(184511),	-- Ebon Runeblade (QI!)
+				},
 			}),
 			q(63166, {	-- A Shadowed Fate
 				["provider"] = { "n", 176029 },	-- Tormented Soul
@@ -333,14 +342,23 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(63031, {	-- Acquisition: Crystallized Stygia
 				["provider"] = { "o", 364899 },	-- Crystallized Stygia
 				["coord"] = { 21.2, 34.1, THE_MAW },
+				["g"] = {
+					i(184510),	-- Crystallized Stygia (QI!)
+				},
 			}),
 			q(63047, {	-- Acquisition: Runeforged Shackles
 				["provider"] = { "o", 364926 },	-- Runeforged Shackles
 				["coord"] = { 25.6, 24.2, THE_MAW },
+				["g"] = {
+					i(184552),	-- Runeforged Shackles (QI!)
+				},
 			}),
 			q(63072, {	-- Acquisition: Stygic Ore
 				["provider"] = { "o", 364994 },	-- Spectral Pick
 				["coord"] = { 48.2, 81.9, THE_MAW },
+				["g"] = {
+					i(184585),	-- Stygic Ore (QI!)
+				},
 			}),
 			q(60732, {	-- Disrupting the Flow
 				["provider"] = { "n", 176164 },	-- Doomed Soul
@@ -359,11 +377,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 				["provider"] = { "n", 175797 },	-- Deceased Broker
 				["coord"] = { 30.7, 58.3, THE_MAW },
+				["g"] = {
+					i(184513),	-- Containment Orb (QI!)
+				},
 			}),
 			q(63040, {	-- Guaranteed Delivery
 				["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 				["provider"] = { "n", 175797 },	-- Deceased Broker
 				["coord"] = { 30.7, 58.3, THE_MAW },
+				["g"] = {
+					i(184513),	-- Containment Orb (QI!)
+				},
 			}),
 			q(61088, {	-- Dust to Dust
 				["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
@@ -384,6 +408,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(63206, {	-- Soulless Husks
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.9, 41.7, THE_MAW },
+				["g"] = {
+					i(184622),	-- Stygian Hammer (QI!)
+				},
 			}),
 			q(63043, {	-- Sundered Souls
 				["provider"] = { "n", 175813 },	-- Trapped Soul
@@ -402,6 +429,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 				["provider"] = { "o", 364987 },	-- Broker Journal
 				["coord"] = { 46.4, 62.3, THE_MAW },
+				["g"] = {
+					i(184579),	-- Torn Journal Page (QI!)
+				},
 			}),
 			q(61765, {	-- Words of Warding
 				["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
@@ -422,6 +452,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60775, {	-- A Suitable Demise
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.9, 41.7, THE_MAW },
+				["g"] = {
+					i(180280),	-- Soulforged Core (QI!)
+				},
 			}),
 			q(60762, {	-- Death Motes
 				["provider"] = { "n", 162804 },	-- Ve'nari
@@ -458,6 +491,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 46.9, 41.7, THE_MAW },
 				["g"] = {
 					i(180129),	-- Anima Equalizer (QI!)
+					i(184614),	-- Essence of Misery (QI!)
 				},
 			}),
 			q(63708, {	-- Phantasmagoria

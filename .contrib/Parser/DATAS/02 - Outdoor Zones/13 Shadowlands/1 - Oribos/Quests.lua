@@ -100,6 +100,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.8, 41.7, THE_MAW },
 					["g"] = {
+						i(184544),	-- Attuned Shard (QI!)
 						i(184757),	-- Chain of the Purpose-Bound
 					},
 				}),
@@ -110,6 +111,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["maps"] = { 1627 },	-- Torghast
 					["g"] = {
 						i(184758),	-- Drape of Inscrutable Purpose
+						i(184198),	-- Soul-Touched Key (QI!)
 					},
 				}),
 				q(62935, {	-- Remnants of Hope
@@ -121,13 +123,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 62935 },	-- Remnants of Hope
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
+					["g"] = {
+						i(184200),	-- Coded Notes (QI!)
+						i(184199),	-- Ice-Encrusted Debris (QI!)
+					},
 				}),
 				q(60139, {	-- Torment Chamber: Jaina
 					["sourceQuests"] = { 62938 },	-- Information for a Price
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
 					["g"] = {
-						i(184550),	-- Attuned Shard
+						i(184550),	-- Attuned Shard (QI!)
 					},
 				}),
 				q(62966, {	-- Finding a Witness
@@ -147,6 +153,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 62969 },	-- Lest the Trail Go Cold
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
+					["g"] = {
+						i(184551),	-- Attuned Shard (QI!)
+					},
 				}),
 				q(61557, {	-- An Echo in the Darkness
 					["description"] = "Provided automatically when zoning or changing floors in Oribos.",
@@ -165,6 +174,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60146 },	-- Torment Chamber: Thrall
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
+					["g"] = {
+						i(184276),	-- Length of Light-Infused Chain (QI!)
+						i(184277),	-- Lion Emblem (QI!)
+						i(184278),	-- Royal Ring (QI!)
+					},
 				}),
 				q(61730, {	-- The Captive King
 					["sourceQuests"] = { 62836 },	-- Signs of the Lion

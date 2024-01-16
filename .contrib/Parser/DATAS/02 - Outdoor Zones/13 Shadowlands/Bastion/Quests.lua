@@ -344,6 +344,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 54.7, 64.1, BASTION },
 					["g"] = {
 						i(178092),	-- Battered Scroll (QI!)
+						i(178046),	-- Locus Manual (QI!)
 					},
 				}),
 				q(58799, {	-- The Prime's Directive
@@ -369,6 +370,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58800 },	-- The Mnemonic Locus
 					["provider"] = { "n", 167034 },	-- Mikanikos
 					["coord"] = { 57.5, 61.8, BASTION },
+					["g"] = {
+						i(183802),	-- Memory of the Forsworn (QI!)
+					},
 				}),
 				q(58978, {	-- Lysonia's Truth
 					["sourceQuests"] = { 58977 },	-- What's In a Memory?
@@ -875,11 +879,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 60466 },	-- The Old Ways
 				["provider"] = { "n", 160598 },	-- Klystere
 				["coord"] = { 47.8, 73.2, BASTION },
+				["g"] = {
+					i(183966),	-- Klystere's Gift (QI!)
+				},
 			}),
 			q(62715, {	-- More Than A Gift
 				["sourceQuests"] = { 62714 },	-- A Gift for An Acolyte
 				["provider"] = { "n", 174900 },	-- Acolyte Amalthina
 				["coord"] = { 47.8, 73.2, BASTION },
+				["g"] = {
+					i(183967),	-- Cultivated Windblossom (QI!)
+				},
 			}),
 			------ Miscellaneous ------
 			q(57444, {	-- An Inspired Moral Inventory

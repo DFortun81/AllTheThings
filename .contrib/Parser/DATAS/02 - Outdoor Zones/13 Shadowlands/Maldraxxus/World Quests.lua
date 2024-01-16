@@ -87,7 +87,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(180876),	-- Aqueous Material Accumulator (QI!)
 				},
 			}),
-			q(58221),	-- Gettin' Even
+			q(58221, {	-- Gettin' Even
+				["g"] = {
+					i(184576),	-- Stolen Equipment (QI!)
+				},
+			}),
 			q(61545, {	-- Herbalism: Engorged Marrowroot
 				["requireSkill"] = HERBALISM,
 			}),
@@ -117,7 +121,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(182031),	-- Unused Flesh
 				},
 			}),
-			q(61539),	-- Liches Get Stitches
+			q(61539, {	-- Liches Get Stitches
+				["g"] = {
+					i(184560),	-- Ritual Focus (QI!)
+				},
+			}),
 			q(61866),	-- Mighty Minions of Maldraxxus
 			q(61537, {	-- Mining: Monolithic Oxxein Cluster
 				["requireSkill"] = MINING,

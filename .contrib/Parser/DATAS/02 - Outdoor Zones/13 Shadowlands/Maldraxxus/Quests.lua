@@ -300,6 +300,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57984 },	-- The Ones in Charge
 					["provider"] = { "n", 165397 },	-- Secutor Mevix
 					["coord"] = { 31.9, 27.3, MALDRAXXUS },
+					["g"] = {
+						i(180120),	-- Harvesting Hook (QI!)
+					},
 				}),
 				q(57982, {	-- Breaking Down Barriers
 					["sourceQuests"] = {
@@ -341,6 +344,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59130 },	-- The House of Plagues
 					["provider"] = { "o", 353645 },	-- Marileth's Journal
 					["coord"] = { 56.5, 57.2, MALDRAXXUS },
+					["g"] = {
+						i(180235),	-- Marileth's Journal - Page One (QI!)
+						i(180236),	-- Marileth's Journal - Page Two (QI!)
+						i(180237),	-- Marileth's Journal - Page Three (QI!)
+						i(180238),	-- Marileth's Journal - Page Four (QI!)
+					},
 				}),
 				q(58011, {	-- Bug Bites
 					["sourceQuests"] = { 59130 },	-- The House of Plagues
@@ -370,6 +379,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58027 },	-- Slime, Anyone?
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 56.4, 57.2, MALDRAXXUS },
+					["g"] = {
+						i(173536),	-- Laboratory Equipment (QI!)
+					},
 				}),
 				q(58045, {	-- Plague is Thicker Than Water
 					["sourceQuests"] = { 58027 },	-- Slime, Anyone?
@@ -579,6 +591,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 161559 },	-- Louison
 					["coord"] = { 54.4, 48.6, MALDRAXXUS },
+					["g"] = {
+						i(177877),	-- Flask of Team Spirit (QI!)
+					},
 				}),
 				q(58947, {	-- Test Your Mettle
 					["sourceQuests"] = {

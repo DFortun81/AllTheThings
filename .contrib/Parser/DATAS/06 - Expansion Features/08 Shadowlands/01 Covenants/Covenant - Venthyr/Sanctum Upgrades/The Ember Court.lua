@@ -1038,6 +1038,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										i(176136, {	-- Contract: Mushroom Surprise! (EC!)
 											["questID"] = 59500,
 										}),
+										i(181828),	-- Disgusting Foraging Bag (QI!)
+										i(181829),	-- Feather Cap (QI!)
+										i(181830),	-- Lacy Bell Morel (QI!)
+										i(181839),	-- Violet Frill (QI!)
 									},
 								}),
 								q(61400, {	-- Ember Court: Mystery Mirrors
@@ -1709,6 +1713,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["sourceQuests"] = { 61851 },	-- Shades of Muck
 									["provider"] = { "n", 157846 },	-- Rendle
 									["coord"] = { 72.5, 73.2, REVENDRETH },
+									["g"] = {
+										i(184448),	-- Spicy Scorchshrooms (QI!)
+									},
 								}),
 								q(62222, {	-- On Silver Wings
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
@@ -1951,6 +1958,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["provider"] = { "n", 171647 },	-- Mikanikos
 									["coord"] = { 50.1, 21.0, BASTION },
 									["g"] = {
+										i(180895),	-- Potentially Perfect Part (QI!)
 										i(176113),	-- RSVP: Mikanikos
 										i(182114),	-- Assorted Parts and 'Things'
 									},

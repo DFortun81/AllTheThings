@@ -201,6 +201,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59014 },	-- King of the Hill
 					["provider"] = { "n", 168664 },	-- The Fearstalker
 					["coord"] = { 47.8, 70.1, REVENDRETH },
+					["g"] = {
+						i(178994),	-- Hollowed Dredbat Fang (QI!)
+					},
 				}),
 				q(57164, {	-- Devour This
 					["sourceQuests"] = { 57131 },	-- Let the Hunt Begin
@@ -453,11 +456,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
 					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
 					["coord"] = { 59.9, 68.9, REVENDRETH },
+					["g"] = {
+						i(177765),	-- Witherfall Special Reserve (QI!)
+					},
 				}),
 				q(59713, {	-- Active Ingredients
 					["sourceQuests"] = { 59846 },	-- Finders-Keepers, Sinners-Weepers
 					["provider"] = { "n", 165864 },	-- Nadjia the Mistblade
 					["coord"] = { 59.9, 68.9, REVENDRETH },
+					["g"] = {
+						i(177713),	-- Pristine Venom Gland (QI!)
+						i(177714),	-- Scythe Bloom Pollen (QI!)
+					},
 				}),
 				q(59715, {	-- Message for Matyas
 					["sourceQuests"] = {
@@ -857,6 +867,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 59014 },	-- King of the Hill
 				["provider"] = { "n", 156384 },	-- Huntmaster Constantin
 				["coord"] = { 48.5, 68.4, REVENDRETH },
+				["g"] = {
+					i(179316),	-- Doomfang Skull (QI!)
+					i(178996),	-- Pristine Deathwalker Paw (QI!)
+					i(178997),	-- Prized Fearspinner Fangs (QI!)
+				},
 			}),
 			q(60487, {	-- It Used to Be Quiet Here
 				["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone

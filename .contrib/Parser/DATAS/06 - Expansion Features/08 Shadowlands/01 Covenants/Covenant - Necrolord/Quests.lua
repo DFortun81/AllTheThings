@@ -539,6 +539,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 61226 },	-- Extra Limbs
 				["provider"] = { "n", 158604 },	-- Navigator Xennir
 				["coord"] = { 52.0, 16.9, MALDRAXXUS },
+				["g"] = {
+					i(183118),	-- Venomous Solvent (QI!)
+					i(181237),	-- Venomous Solvent (QI!)
+				},
 			}),
 			q(59650, {	-- No Hesitation, No Surrender
 				["sourceQuests"] = { 59625 },	-- The Only Cure
@@ -624,6 +628,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 57530 },	-- Gharmal's Tower
 				["provider"] = { "n", 173194 },	-- Alexandros Mograine
 				["coord"] = { 27.3, 23.8, MALDRAXXUS },
+				["g"]= {
+					i(182658),	-- Mantle of Eternal Victory (QI!)
+				},
 			}),
 			q(59265, {	-- Prying Eyes
 				["sourceQuests"] = { 58007 },	-- Eyes on the Problem
@@ -696,6 +703,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 60112 },	-- Cut to the Bone
 				["provider"] = { "n", 172573 },	-- Khaliiq
 				["coord"] = { 27.2, 45.2, MALDRAXXUS },
+				["g"] = {
+					i(181785),	-- Ossein Key (QI!)
+				},
 			}),
 			q(65165, {	-- Soul Support
 				["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
@@ -886,6 +896,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 58007 },	-- Eyes on the Problem
 				["provider"] = { "n", 164619 },	-- Baroness Vashj
 				["coord"] = { 50.8, 24.4, MALDRAXXUS },
+				["g"] = {
+					i(172371),	-- Mark of Vashj (QI!)
+				},
 			}),
 			q(59698, {	-- Wipe the Slate Clean
 				["sourceQuests"] = {

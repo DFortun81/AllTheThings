@@ -28,6 +28,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 60268 },	-- Deep Within
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
+					["g"] = {
+						i(178561),	-- Runecarver's Memory (QI!)
+					},
 				}),
 				q(60270, {	-- A Damned Pact
 					["sourceQuests"] = { 60269 },	-- Reawakening
@@ -40,6 +43,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 46.9, 41.7, THE_MAW },
 					["g"] = {
 						i(181324),	-- Anima Supricifer (QI!)
+						i(178562),	-- Molten Anima (QI!)
 					},
 				}),
 				q(60272, {	-- The Weak Link

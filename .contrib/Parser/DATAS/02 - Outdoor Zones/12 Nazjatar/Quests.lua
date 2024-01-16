@@ -1926,6 +1926,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 			["isDaily"] = true,
 			["races"] = HORDE_ONLY,
+			["g"] = {
+				i(169345),	-- Purified Water (QI!)
+			},
 		}),
 		q(56358, {	-- The Eternal Palace: Queen's Gambit (A)
 			["sourceQuests"] = { 56325 },	-- Changing Tides

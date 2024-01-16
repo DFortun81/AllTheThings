@@ -15,7 +15,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61593),	-- A Crisis of Memory (no idea why there are 2 versions of this)
 			q(61689),	-- A Crisis of Memory
 			q(60623),	-- AHHH! Real Monsters!
-			q(61148),	-- AHHH! Real Monsters!
+			q(61148, {	-- AHHH! Real Monsters!
+				["g"] = {
+					i(180789),	-- Devoured Anima (QI!)
+				},
+			}),
 			q(61220),	-- AHHH! Real Monsters!
 			q(60929),	-- Air Supremacy
 			q(61434, {	-- Alchemy: Flask of Measured Discipline
@@ -53,7 +57,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(182020),	-- Transcendent Dust
 				},
 			}),
-			q(61520),	-- Enemy of My Mnemis
+			q(61520, {	-- Enemy of My Mnemis
+				["g"] = {
+					i(181711),	-- Depleted Centurion Core (QI!)
+					i(181710),	-- Inert Centurion Core (QI!)
+				},
+			}),
 			q(61441, {	-- Engineering: Power Hammer
 				["requireSkill"] = ENGINEERING,
 			}),

@@ -444,6 +444,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["description"] = "Requires Renown 8.",
 				["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
 				["maps"] = { 1917 },	-- De Other Side (scenario)
+				["g"] = {
+					i(177904),	-- Deathstone (QI!)
+				},
 			}),
 			q(59811, {	-- Taking Inventory
 				["sourceQuests"] = { 59809 },	-- On De Other Side
@@ -453,6 +456,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 			q(59812, {	-- Following the Trail
 				["sourceQuests"] = { 59811 },	-- Taking Inventory
 				["provider"] = { "n", 166265 },	-- Mask of Bwonsamdi
+				["g"] = {
+					i(180167),	-- Death God Mask (QI!)
+				},
 			}),
 			q(59813, {	-- Minions of Mueh'zala
 				["sourceQuests"] = { 59812 },	-- Following the Trail
@@ -585,11 +591,17 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 60898 },	-- The Fate of Ara'lon
 				["provider"] = { "n", 170705 },	-- Ara'lon
 				["coord"] = { 43.2, 40.1, ARDENWEALD },
+				["g"] = {
+					i(180462),	-- Mask of Possession (QI!)
+				},
 			}),
 			q(60928, {	-- Blackthorn Captives
 				["sourceQuests"] = { 60910 },	-- Masks of Deception
 				["provider"] = { "n", 170705 },	-- Ara'lon
 				["coord"] = { 43.2, 40.1, ARDENWEALD },
+				["g"] = {
+					i(180523),	-- Disguise Mask (QI!)
+				},
 			}),
 			q(60934, {	-- Report to Lord Herne
 				["sourceQuests"] = { 60928 },	-- Blackthorn Captives
@@ -681,6 +693,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["coord"] = { 46.2, 56.7, ARDENWEALD },
 				["g"] = {
 					i(175597),	-- Faewoven Amice
+					i(180832),	-- Lord Herne's Report (QI!)
 					i(179770),	-- Oakheart Mantle
 					i(179892),	-- Queensguard Pauldrons
 					i(181914),	-- Runewarden's Spaulders
