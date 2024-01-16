@@ -6,8 +6,8 @@ local _, app = ...;
 -- Encapsulates the functionality for interacting with and hooking into game Tooltips
 
 -- Global locals
-local rawget, ipairs, pairs, TooltipUtil, Enum_TooltipDataType, InCombatLockdown, pcall, strsplit, tostring, tonumber, tinsert, C_Map_GetPlayerMapPosition, math_sqrt
-	= rawget, ipairs, pairs, TooltipUtil, Enum.TooltipDataType, InCombatLockdown, pcall, strsplit, tostring, tonumber, tinsert, C_Map.GetPlayerMapPosition, math.sqrt;
+local rawget, ipairs, pairs, TooltipUtil, Enum_TooltipDataType, InCombatLockdown, pcall, strsplit, tostring, tonumber, tinsert, C_Map_GetPlayerMapPosition, math_sqrt, GetItemInfoInstant
+	= rawget, ipairs, pairs, TooltipUtil, Enum.TooltipDataType, InCombatLockdown, pcall, strsplit, tostring, tonumber, tinsert, C_Map.GetPlayerMapPosition, math.sqrt, GetItemInfoInstant
 
 -- App locals
 local SearchForField = app.SearchForField;
@@ -23,13 +23,14 @@ end
 -- Build the Object Name Cache
 local objectNamesToIDs = {};
 local function OnLoad_CacheObjectNames()
+	local o
 	for objectID,name in pairs(app.ObjectNames) do
-		local o = objectNamesToIDs[name];
+		o = objectNamesToIDs[name];
 		if not o then
 			o = { objectID };
 			objectNamesToIDs[name] = o;
 		else
-			tinsert(o, objectID);
+			o[#o + 1] = objectID;
 		end
 	end
 end
@@ -38,43 +39,40 @@ end
 -- then correlate those search results by closest distance to the player's current position
 local function GetBestObjectIDForName(name)
 	local o = objectNamesToIDs[name];
-	if o then
-		if #o > 1 then
-			local mapID = GetCurrentMapID();
-			local pos = C_Map_GetPlayerMapPosition(mapID, "player");
-			if pos then
-				local px, py = pos:GetXY();
-				px, py = px * 100, py * 100;
-				local closestDistance, closestObjectID, dist, searchCoord = 99999, o[1];
-				for i,objectID in ipairs(o) do
-					local searchResults = SearchForField("objectID", objectID);
-					if searchResults and #searchResults > 0 then
-						for j,searchResult in ipairs(searchResults) do
-							searchCoord = searchResult.coord;
-							if searchCoord and searchCoord[3] == mapID then
-								dist = distance(px, py, searchCoord[1], searchCoord[2]);
-								if dist and dist < closestDistance then
-									closestDistance = dist;
-									closestObjectID = objectID;
-								end
-							elseif searchResult.coords then
-								for k,coord in ipairs(searchResult.coords) do
-									if coord[3] == mapID then
-										dist = distance(px, py, coord[1], coord[2]);
-										if dist and dist < closestDistance then
-											closestDistance = dist;
-											closestObjectID = objectID;
-										end
+	if o and #o > 0 then
+		local mapID = GetCurrentMapID();
+		local pos = C_Map_GetPlayerMapPosition(mapID, "player");
+		if pos then
+			local px, py = pos:GetXY();
+			px, py = px * 100, py * 100;
+			local closestDistance, closestObjectID, dist, searchCoord = 99999, o[1];
+			for i,objectID in ipairs(o) do
+				local searchResults = SearchForField("objectID", objectID);
+				if searchResults and #searchResults > 0 then
+					for j,searchResult in ipairs(searchResults) do
+						searchCoord = searchResult.coord;
+						if searchCoord and searchCoord[3] == mapID then
+							dist = distance(px, py, searchCoord[1], searchCoord[2]);
+							if dist and dist < closestDistance then
+								closestDistance = dist;
+								closestObjectID = objectID;
+							end
+						elseif searchResult.coords then
+							for k,coord in ipairs(searchResult.coords) do
+								if coord[3] == mapID then
+									dist = distance(px, py, coord[1], coord[2]);
+									if dist and dist < closestDistance then
+										closestDistance = dist;
+										closestObjectID = objectID;
 									end
 								end
 							end
 						end
 					end
 				end
-				return closestObjectID;
 			end
+			return closestObjectID;
 		end
-		return o[1];
 	end
 end
 
