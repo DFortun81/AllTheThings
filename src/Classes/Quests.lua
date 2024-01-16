@@ -1062,7 +1062,7 @@ if app.IsRetail then
 				-- should never use CreateQuest since it would mean we have sourceQuests linked to a QuestID which isn't cached
 				local accepted = Search("questID", questID) or app.CreateQuest(questID)
 				for _,bc in pairs(nextQuests) do
-					if not bc.collected and app.RecursiveCharacterRequirementsFilter(bc) and app.RecursiveUnobtainableFilter(bc) then
+					if not bc.collected and not bc.locked and app.RecursiveCharacterRequirementsFilter(bc) and app.RecursiveUnobtainableFilter(bc) then
 						app.FunctionRunner.Run(PrintBreadcrumbWarning, accepted, bc)
 					end
 				end
