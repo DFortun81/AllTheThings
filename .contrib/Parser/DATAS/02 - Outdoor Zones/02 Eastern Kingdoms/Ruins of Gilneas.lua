@@ -3,6 +3,9 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(RUINS_OF_GILNEAS, {
+		-- #if AFTER 8.3.0
+		["icon"] = 462338,
+		-- #endif
 		["timeline"] = { "added 4.0.3" },
 		["groups"] = {
 			n(FLIGHT_PATHS, {
@@ -133,6 +136,125 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			header(HEADERS.Achievement, 19719, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Reclamation of Gilneas
+				q(78596, {	-- Summons to Lord Greymane
+					["qg"] = 212899,    -- Greyguard Elite
+					["coords"] = {
+						{ 59, 42.3, VALDRAKKEN },
+						{ 62.4, 71.9, STORMWIND_CITY },
+					},
+					["isBreadcrumb"] = true,
+				}),
+				q(78177, {	-- To Gilneas
+					["qg"] = 214538,	-- Genn Greymane
+					["sourceQuest"] = 78596,	-- Summons to Lord Greymane
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 35.7, 28.2, STORMWIND_CITY },
+				}),
+				-- q(78178, {	-- To Gilneas
+				-- 	["qg"] = 214538,	-- Genn Greymane
+				-- 	["sourceQuest"] = 78596,	-- Summons to Lord Greymane
+				-- 	["races"] = HORDE_ONLY,
+				-- 	["coord"] = {  },
+				-- }),
+				q(78180, {	-- A Crusade of Red
+					["qg"] = 210905,	-- Princess Tess Greymane
+					["sourceQuests"] = {
+						78177,	-- To Gilneas
+						-- 78178,	-- To Gilneas (78178 Horde?)
+					},
+					["coord"] = { 41.5, 36.1, RUINS_OF_GILNEAS },
+				}),
+				q(78181, {	-- Aderic's Retort
+					["qg"] = 210904,	-- Genn Greymane
+					["sourceQuests"] = {
+						78177,	-- To Gilneas
+						-- 78178,	-- To Gilneas (78178 Horde?)
+					},
+					["coord"] = { 41.5, 36.1, RUINS_OF_GILNEAS },
+				}),
+				q(78182, {	-- Knee-High
+					["qg"] = 212187,	-- Genn Greymane
+					["sourceQuests"] = {
+						78180,	-- A Crusade of Red
+						78181,	-- Aderic's Retort
+					},
+					["coord"] = { 49.6, 56.9, RUINS_OF_GILNEAS },
+				}),
+				q(78183, {	-- Scarlet Blood
+					["qg"] = 210964,	-- Lillian Voss
+					["sourceQuest"] = 78182,	-- Knee-High
+					["coord"] = { 57, 53, RUINS_OF_GILNEAS },
+				}),
+				q(78184, {	-- Smokepowder and Mirrors
+					["qg"] = 210905,	-- Princess Tess Greymane
+					["sourceQuests"] = 	78182,	-- Knee-High
+					["coord"] = { 57, 53, RUINS_OF_GILNEAS },
+					["groups"] = {
+						o(410877, {	-- Scarlet Munitions
+							i(211248),	-- Scarlet Explosives (QI!)	
+						}),
+					},
+				}),
+				q(78185, {	-- Hounds of War
+					["qg"] = 210905,	-- Princess Tess Greymane
+					["sourceQuests"] = {
+						78183,	-- Scarlet Blood
+						78184,	-- Smokepowder and Mirrors
+					},
+					-- ["coord"] = { 57, 53, RUINS_OF_GILNEAS }, -- Spawns with you.
+				}),
+				q(78186, {	-- Crushing the Crusade
+					["qg"] = 210964,	-- Lillian Voss
+					["sourceQuest"] = 78185,	-- Hounds of War
+					["coord"] = { 55.8, 58.3, RUINS_OF_GILNEAS },
+				}),
+				q(78187, {	-- Artillerist Arsonist
+					["qg"] = 210905,	-- Princess Tess Greymane
+					["sourceQuest"] = 78185,	-- Hounds of War
+					["coord"] = { 55.8, 58.7, RUINS_OF_GILNEAS },
+				}),
+				q(78188, {	-- Righteous Fire, Righteous Fury
+					["qg"] = 210905,	-- Princess Tess Greymane
+					["sourceQuests"] = {
+						78186,	-- Crushing the Crusade
+						78187,	-- Artillerist Arsonist
+					},
+					["coord"] = { 59.4, 48.7, RUINS_OF_GILNEAS },
+				}),
+				q(78189, {	-- Beginning a New Dawn
+					["qg"] = 210904,	-- Genn Greymane
+					["sourceQuest"] = 78188,	-- Righteous Fire, Righteous Fury
+					["coord"] = { 58.7, 47.8, RUINS_OF_GILNEAS },
+					["groups"] = {
+						i(211873),	-- Reins of the Gilnean Prowler
+					},
+				}),
+				q(78190, {	-- What We Left Behind
+					["qg"] = 210905,	-- Princess Tess Greymane
+					["sourceQuest"] = 78189,	-- Beginning a New Dawn
+					["coord"] = { 58.8, 47.7, RUINS_OF_GILNEAS },
+					["groups"] = {
+						ach(19719),	-- Reclamation of Gilneas
+						o(421360, {	-- Memorial Bouquet
+							["coord"] = { 48.8, 53, RUINS_OF_GILNEAS },
+							["races"] = { WORGEN },
+							["groups"] = {
+								i(211788),	-- Tess's Peacebloom
+							},
+						}),
+					},
+				}),
+			})),
+			n(ZONE_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+				i(211939),	-- Worn Scarlet Cloak
+			})),
 		},
+	}),
+}));
+root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
+	m(RUINS_OF_GILNEAS, {
+		q(80080),	-- Upon learning Ensemble: Gilnean Noble's Suit
+		q(79137),	-- Achievement 19719?
 	}),
 }));

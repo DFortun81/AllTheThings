@@ -1267,3 +1267,4 @@ i(211864);	-- Exquisite Love Boat
 i(210974);	-- Eyes For You Only
 i(211946);	-- Hearthstone Game Table
 i(212337);	-- Stone of the Hearth
+i(211788);	-- Tess's Peacebloom

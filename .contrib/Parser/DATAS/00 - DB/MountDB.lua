@@ -1734,6 +1734,7 @@ i(212522, 431992);	-- Compass Rose
 i(192796, 374204);	-- Explorer's Stonehide Packbeast
 i(163186, 278966);	-- Fiery Hearthsteed
 i(212227, 431357);	-- Fur-endship Fox
+i(211873, 430225);	-- Gilnean Prowler
 i(210973, 427777);	-- Heartseeker Mana Ray
 i(212630, 432558);	-- Majestic Azure Peafowl
 i(212599, 432455);	-- Noble Flying Carpet
