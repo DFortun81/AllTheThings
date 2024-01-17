@@ -889,9 +889,9 @@ if app.IsRetail then
 	app:RegisterEvent("LOOT_OPENED");
 	app.events.LOOT_OPENED = RefreshAllQuestInfo;
 	-- We don't want any reporting/updating of completed quests when ATT starts... simply capture all completed quests
-	tinsert(app.EventHandlers.OnStartup, QueryCompletedQuests);
-	tinsert(app.EventHandlers.OnRecalculate, RefreshAllQuestInfo);
-	tinsert(app.EventHandlers.OnPlayerLevelUp, RefreshAllQuestInfo);
+	app.AddEventHandler("OnStartup", QueryCompletedQuests);
+	app.AddEventHandler("OnRecalculate", RefreshAllQuestInfo);
+	app.AddEventHandler("OnPlayerLevelUp", RefreshAllQuestInfo);
 else
 	local GetQuestsCompleted = GetQuestsCompleted;
 	local QueryCompletedQuests = function()
@@ -982,8 +982,8 @@ else
 	end
 
 	-- Classic Event Handlers
-	tinsert(app.EventHandlers.OnRecalculate, QueryCompletedQuests);
-	tinsert(app.EventHandlers.OnStartup, QueryCompletedQuests);
+	app.AddEventHandler("OnRecalculate", QueryCompletedQuests);
+	app.AddEventHandler("OnStartup", QueryCompletedQuests);
 end
 
 -- World Quest Support Lib
@@ -1300,7 +1300,7 @@ if IsQuestReplayable then
 	app:RegisterEvent("QUEST_SESSION_JOINED");
 	app:RegisterEvent("QUEST_SESSION_LEFT");
 	app:RegisterEvent("QUEST_SESSION_DESTROYED");
-	tinsert(app.EventHandlers.OnStartup, function()
+	app.AddEventHandler("OnStartup", function()
 		-- check if we are in a Party Sync session when loading in
 		IsPartySyncActive = C_QuestSession.Exists();
 	end);
@@ -1752,7 +1752,7 @@ app:RegisterEvent("QUEST_ACCEPTED");
 app:RegisterEvent("QUEST_REMOVED");
 app:RegisterEvent("QUEST_TURNED_IN");
 app:RegisterEvent("QUEST_WATCH_UPDATE");
-tinsert(app.EventHandlers.OnRefreshCollections, RefreshAllQuestInfo);
+app.AddEventHandler("OnRefreshCollections", RefreshAllQuestInfo);
 
 
 

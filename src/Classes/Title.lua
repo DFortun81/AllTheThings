@@ -147,7 +147,7 @@ app.CreateTitle = app.CreateClass("Title", "titleID", {
 -- Title Refresh
 if app.IsRetail then
 -- NOTE: Not sure if this is necessary for Classic.
-tinsert(app.EventHandlers.OnRefreshCollections, function()
+app.AddEventHandler("OnRefreshCollections", function()
 	-- app.PrintDebug("Refresh:Titles")
 	local acctTitles, charTitles = AccountWideData.Titles, {};
 	for i=1,GetNumTitles(),1 do

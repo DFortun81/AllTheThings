@@ -741,7 +741,7 @@ settings.Refresh = function(self)
 end
 end
 
-tinsert(app.EventHandlers.OnPlayerLevelUp, function()
+app.AddEventHandler("OnPlayerLevelUp", function()
 	if settings:Get("Filter:ByLevel") then
 		settings:Refresh();
 	end

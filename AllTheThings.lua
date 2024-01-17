@@ -6025,7 +6025,7 @@ AddTomTomWaypoint = function(group)
 	-- actually send the coords now that every coord has been cached
 	WaypointRunner.OnEnd(PlotCachedCoords);
 end
-tinsert(app.EventHandlers.OnReady, function()
+app.AddEventHandler("OnReady", function()
 	local tomTom = TomTom;
 	if tomTom then
 		local oldAddWaypoint = tomTom.AddWaypoint;
@@ -6500,7 +6500,7 @@ app.events.UPDATE_INSTANCE_INFO = function()
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	RefreshSaves();
 end
-tinsert(app.EventHandlers.OnStartup, app.events.UPDATE_INSTANCE_INFO);
+app.AddEventHandler("OnStartup", app.events.UPDATE_INSTANCE_INFO);
 end -- Refresh Functions
 
 -- Lib Helpers
@@ -7404,7 +7404,7 @@ local PetIDSpeciesIDHelper = setmetatable({}, {
 		return speciesID;
 	end
 });
-tinsert(app.EventHandlers.OnRefreshCollections, function()
+app.AddEventHandler("OnRefreshCollections", function()
 	-- app.PrintDebug("RCBP")
 	wipe(CollectedSpeciesHelper);
 	local petID, speciesID;
@@ -14811,9 +14811,7 @@ local function RefreshData()
 		app.refreshDataForce = nil;
 
 		-- Execute the OnRecalculate handlers.
-		for i,handler in ipairs(app.EventHandlers.OnRecalculate) do
-			handler();
-		end
+		app.HandleEvent("OnRecalculate")
 
 		-- Reapply custom collects
 		app.RefreshCustomCollectibility();
@@ -19692,9 +19690,7 @@ app.Startup = function()
 	app:RegisterEvent("PET_BATTLE_CLOSE")
 
 	-- Execute the OnStartup handlers.
-	for i,handler in ipairs(app.EventHandlers.OnStartup) do
-		handler();
-	end
+	app.HandleEvent("OnStartup")
 
 	-- See if any Modules have 'OnStartup' functions defined, and call them now
 	app.DoModuleEvent("OnStartup")
@@ -19898,9 +19894,7 @@ app.InitDataCoroutine = function()
 	-- app.PrintDebug("ATT is Ready!");
 
 	-- Execute the OnReady handlers.
-	for i,handler in ipairs(app.EventHandlers.OnReady) do
-		handler();
-	end
+	app.HandleEvent("OnReady")
 
 	-- See if any Modules have 'OnReady' functions defined, and call them now
 	app.DoModuleEvent("OnReady")
@@ -20385,9 +20379,7 @@ app.events.PLAYER_LEVEL_UP = function(newLevel)
 	app.Level = newLevel;
 
 	-- Execute the OnPlayerLevelUp handlers.
-	for i,handler in ipairs(app.EventHandlers.OnPlayerLevelUp) do
-		handler();
-	end
+	app.HandleEvent("OnPlayerLevelUp")
 end
 
 app.events.SKILL_LINES_CHANGED = function()

@@ -155,8 +155,9 @@ app.CloneReference = CloneReference;
 app.GetRelativeField = GetRelativeField;
 app.GetRelativeValue = GetRelativeValue;
 
--- Declare Event Handlers
-app.EventHandlers = setmetatable({
+-- Declare Custom Event Handlers
+do
+local EventHandlers = setmetatable({
 	OnReady = {},
 	OnRecalculate = {},
 	OnRefreshCollections = {},
@@ -166,7 +167,25 @@ app.EventHandlers = setmetatable({
 		rawset(t, key, item);
 		return item;
 	end,
-});
+})
+app.AddEventHandler = function(eventName, handler)
+	if type(handler) ~= "function" then
+		app.print("AddEventHandler was provided a non-function",handler)
+		return
+	end
+	local handlers = EventHandlers[eventName]
+	handlers[#handlers + 1] = handler;
+end
+app.HandleEvent = function(eventName)
+	-- app.PrintDebug("HandleEvent",eventName)
+	for i,handler in ipairs(EventHandlers[eventName]) do
+		handler();
+	end
+	-- app.PrintDebugPrior("HandleEvent")
+end
+-- TODO: remove when Classic uses AddEventHandler/HandleEvent
+app.EventHandlers = EventHandlers
+end
 
 -- Cache information about the player.
 app.Gender = UnitSex("player");

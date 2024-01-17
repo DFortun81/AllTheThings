@@ -6,7 +6,7 @@ local CloneReference, ExpandGroupsRecursively, ResolveSymbolicLink, SearchForFie
 -- Global locals
 local ipairs, pairs, tinsert =
 	  ipairs, pairs, tinsert;
-local C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink, 
+local C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
 	GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, GetSpellInfo, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked =
 	  C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagents, GetCraftReagentInfo, GetCraftReagentItemLink,
 	GetItemInfoInstant, GetNumCrafts, GetSkillLineInfo, GetSpellInfo, GetTradeSkillLine, InCombatLockdown, IsSpellKnown, IsTradeSkillLinked;
@@ -63,7 +63,7 @@ local function RefreshSkills()
 		end
 	end
 end
-tinsert(app.EventHandlers.OnRefreshCollections, RefreshSkills);
+app.AddEventHandler("OnRefreshCollections", RefreshSkills);
 
 -- Implementation
 app:GetWindow("Tradeskills", {
@@ -159,7 +159,7 @@ app:GetWindow("Tradeskills", {
 						tradeSkillID = Skillet.currentTrade;
 					end
 				end
-				
+
 				if craftSkillID ~= 0 then
 					local spellName = GetSpellInfo(craftSkillID);
 					for skillID,spellID in pairs(app.SkillIDToSpellID) do
