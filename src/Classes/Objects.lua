@@ -8,8 +8,18 @@ local ArrayAppend = app.ArrayAppend;
 local IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompletedForObject;
 
 -- Global locals
-local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
+local C_QuestLog_IsOnQuest, ipairs, setmetatable
+	= C_QuestLog.IsOnQuest, ipairs, setmetatable;
 
+local ObjectWithQuestConditional = function(t, variants)
+	if t.questID then
+		if t.lc then
+			setmetatable(t, variants.AndLockCriteria);
+			return true, true;
+		end
+		return true;
+	end
+end;
 -- Object Lib (as in "World Object")
 app.CreateObject = app.CreateClass("Object", "objectID", {
 	["text"] = function(t)
@@ -59,7 +69,7 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 		end
 		return unsavedCoords;
 	end,
-}, 
+},
 function(t)
 	-- Check for a relative object with a questID.
 	if not t.g then return; end
@@ -68,15 +78,21 @@ function(t)
 	end
 end,
 "WithQuest", {
-	collectible = function(t)
+	collectible = app.IsClassic and function(t)
 		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog_IsOnQuest(t.questID));
-	end,
-	collected = function(t)
-		return IsQuestFlaggedCompletedForObject(t);
-	end,
+	end
+	-- Retail: typical object collectibility matches Quest collectibility
+	or app.CollectibleAsQuest,
+	collected = IsQuestFlaggedCompletedForObject,
 	trackable = app.ReturnTrue,
 	saved = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
-	end
-}, (function(t) return t.questID; end));
+		return t.collected == 1;
+	end,
+	variants = {
+		AndLockCriteria = {
+			collectible = app.CollectibleAsQuestOrAsLocked,
+			locked = app.LockedAsQuest,
+		},
+	},
+}, ObjectWithQuestConditional);
 end

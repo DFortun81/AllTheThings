@@ -2154,6 +2154,7 @@ api.OnStartup = function(AccountData)
 	OneTimeQuests = AccountData.OneTimeQuests
 end
 app.CollectibleAsQuest = CollectibleAsQuest;
+app.CollectibleAsQuestOrAsLocked = CollectibleAsQuestOrAsLocked;
 app.GetQuestIndicator = GetQuestIndicator;
 app.GetQuestName = function(questID)
 	return QuestNameFromID[questID];
