@@ -144,7 +144,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(205455),	-- Telescope Lens (QI!)
 					},
 				}),
-				-- 
+				--
 				q(79226, {	-- The Big Dig: Traitor's Rest
 					["coord"] = { 61.6, 31.3, THALDRASZUS },
 					["isWeekly"] = true,
@@ -157,6 +157,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(213186),	-- Dusty Niffen Tome
 						i(213187),	-- Dusty Drakonid Tome
 						i(213188),	-- Dusty Dracthyr Tome
+						i(213176),	-- Preserved Isles Tome
+						i(213365), -- Carved Cave Crystal
+						i(212650), -- Pot of Tattooing Ink
 					},
 				}),
 			}),

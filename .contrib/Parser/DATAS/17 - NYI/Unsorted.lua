@@ -851,7 +851,6 @@ root(ROOTS.Unsorted, {
 				i(212608),	-- Duck Potion
 				i(213364),	-- Empty Vial of Perfume
 				i(213388),	-- Faded Centaur Painting
-				i(212772),	-- False Silver Coin
 				i(212765),	-- Fish Bones
 				i(212648),	-- Fishbone Needle
 				i(212764),	-- Fishing Net Fragment
@@ -873,7 +872,6 @@ root(ROOTS.Unsorted, {
 				i(213194),	-- Petrified Rations
 				i(212761),	-- Pouch of Coins
 				i(213196),	-- Pressed Flower
-				i(213387),	-- Primitive Centaur Carving
 				i(213184),	-- Rock with Chewed Gum
 				i(213030),	-- Rusty Garden Shears
 				i(212688),	-- Salt-dried Roots
@@ -887,7 +885,6 @@ root(ROOTS.Unsorted, {
 				i(213366),	-- Strip of Niffen Headwear
 				i(213216),	-- Strip of Notched Leather
 				i(213040),	-- Tarnished Djaradin Amulet
-				i(213039),	-- Thin Drakonid Spoon
 				i(213386),	-- Unearthed Stone Arrowhead
 				i(213380),	-- Unidentifiable Equine Fossil
 				i(213203),	-- Velvet Nightcap
@@ -1171,7 +1168,6 @@ root(ROOTS.Unsorted, {
 			i(212371), -- Azerothian Archivist Initiation Token
 			i(213024), -- Bloody Djaradin Mug
 			i(213200), -- Book of Horoscopes
-			i(213365), -- Carved Cave Crystal
 			i(213215), -- Carved Votive Stone
 			i(213021), -- Corked Drakonid Vial
 			i(213359), -- Cracked Drakonid Staff
@@ -1190,10 +1186,8 @@ root(ROOTS.Unsorted, {
 			i(213382), -- Partial Centaur Hunting Map
 			i(212782), -- Poorly Preserved Relic
 			i(213208), -- Pot of Pickled Ancheevies
-			i(212650), -- Pot of Tattooing Ink
 			i(213190), -- Preserved Djaradin Tome
 			i(213189), -- Preserved Dragonkin Tome
-			i(213176), -- Preserved Isles Tome
 			i(213204), -- Ruby-Studded Locket
 			i(212773), -- Rusted Locket
 			i(213375), -- Satchel of Buried Valuables

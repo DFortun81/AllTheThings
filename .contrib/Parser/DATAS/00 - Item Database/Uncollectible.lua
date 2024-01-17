@@ -1044,3 +1044,6 @@ i(211270);	-- Pristine Core Leather
 ------------------
 --- Trash ---
 i(207460);	-- Dreadsquall Eggshell Fragment
+i(212772);	-- False Silver Coin
+i(213387);	-- Primitive Centaur Carving
+i(213039);	-- Thin Drakonid Spoon
