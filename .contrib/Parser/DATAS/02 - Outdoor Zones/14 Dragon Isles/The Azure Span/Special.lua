@@ -24,6 +24,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(200086), -- Khaz'gorite-Infused Resin (IF!)
 				},
 			}),
+			n(196900, {	-- Lost Elemental
+				["description"] = "Patrols the area and is not considered a rare.",
+				["coord"] = { 75.6, 24.2, THE_AZURE_SPAN },
+				["g"] = {
+					i(200528),	-- Glowing Arcane Jewel
+				},
+			}),
 			n(196768, {	-- Primal Bear Cub
 				["description"] = "Give 3x Hornswog Hunk and a Honey Snack to Primal Bear Cub while wearing the title Honorary Dryad (from Thalendra [192522]) will give you this pet.",
 				["sourceQuests"] = { 67606 },	-- A Dryadic Remedy

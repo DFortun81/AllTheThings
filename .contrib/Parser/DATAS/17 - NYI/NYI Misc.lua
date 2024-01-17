@@ -669,61 +669,110 @@ root(ROOTS.NeverImplemented, {
 		tier(DF_TIER, {
 			-- 10.0.0
 			tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				i(194719),	-- [DEPRECATED]Illusionary Coin
+				i(192600),	-- [DNT][PH] Meat
 				i(194110),	-- [PH] Dragon Rider's Honor
 				i(193682),	-- [PH] Plains Feather
+				i(191063),	-- 10 Food/Drink Template - Alcohol - Potent
+				i(191064),	-- 10 Food/Drink Template - Alcohol - Strong
+				i(191062),	-- 10 Food/Drink Template - Alcohol - Weak
 				i(193702),	-- 10.0 Dungeon - Optional Reagent
 				i(193737),	-- 10.0 Dungeon - Optional Reagent
 				i(193749),	-- 10.0 Dungeon - Optional Reagent
+				i(191056),	-- 10.0 Food/Drink Template - Both Health and Mana - Level 70 - Required Level 65
+				i(191052),	-- 10.0 Food/Drink Template - Drink Only - Level 65 - Required Level 60
+				i(191053),	-- 10.0 Food/Drink Template - Drink Only - Level 70 - Required Level 65
+				i(191050),	-- 10.0 Food/Drink Template - Food Only - Level 65 - Required Level 60
+				i(191051),	-- 10.0 Food/Drink Template - Food Only - Level 70 - Required Level 65
+				i(200282),	-- A Steamy Romance Novel: The Lusty Draconian Mage
 				i(194442),	-- Activity Map: Apex Canopy
 				i(201834),	-- Add Keystone Affix: Thundering
+				i(191667),	-- Aged Key
 				i(194028),	-- Ancient Parchment: Bottom Half
 				i(194027),	-- Ancient Parchment: Top Half
 				i(193798),	-- Ancient Titan Alloy
 				i(194873),	-- Apprentice's Fluffed Quill
 				i(200825),	-- Assorted Debris
 				i(191192),	-- Assorted Parts
+				i(198141),	-- Astral Essence
+				i(192127),	-- Basilisk Eggs
 				i(198442),	-- Bogthwottle's Shrinky-Do
+				i(192560),	-- Bossy Storm Stuff
+				i(200824),	-- Bottled Lightning
 				i(192078),	-- Bottled Putrescence
+				i(200967),	-- Conquest
+				i(200950),	-- Consortium Packaging String
+				i(198541),	-- Depleted Violet Vapors
 				i(191058),	-- Dilapidated Parchment: Bottom Half
+				i(191059),	-- Dilapidated Parchment: Top Half
+				i(200592),	-- Dirty Old Satchel
 				i(191876),	-- DNT - Stonename Razorstone
 				i(191877),	-- DNT - Stonename Razorstone
 				i(191878),	-- DNT - Stonename Weightstone
 				i(191879),	-- DNT - Stonename Weightstone
 				i(191880),	-- DNT - Stonename Whetstone
 				i(191881),	-- DNT - Stonename Whetstone
+				i(200262),	-- Do-It-Yourself Part Building Kit
+				i(191287),	-- Dragonscale Expedition Crate
 				i(191203),	-- Dragonscale Expedition Supplies
+				i(194678),	-- Elemental Crystal
 				i(200969),	-- Elemental Shatter: Air
+				i(200984),	-- Elemental Shatter: Earth
 				i(200989),	-- Elemental Shatter: Fire
 				i(200991),	-- Elemental Shatter: Frost
-				i(200984),	-- Elemental Shatter: Earth
 				i(200994),	-- Elemental Shatter: Order
 				i(194021),	-- Emblazoned Parchment: Bottom Half
 				i(194022),	-- Emblazoned Parchment: Top Half
 				i(195572),	-- Empty Elixir
 				i(191296),	-- Enchanted Lockbox
+				i(193659),	-- Ever-Decaying Spore
 				i(198723),	-- Expedition Binoculars (NYI)
+				i(192476),	-- Expedition Bullwhip
 				i(198724),	-- Expedition Telescope (NYI)
 				i(199904),	-- Extraction: Awakened Air
+				i(199905),	-- Extraction: Awakened Earth
 				i(199901),	-- Extraction: Awakened Fire
 				i(199903),	-- Extraction: Awakened Frost
-				i(199905),	-- Extraction: Awakened Earth
-				i(193659),	-- Ever-Decaying Spore
+				i(199185),	-- Fanciful Strings
+				i(195460),	-- Fermented Musken Milk
+				i(198674),	-- Filled Life Pools Vial
 				i(195458),	-- Forager's Stew
+				i(200847),	-- Frail Shield
 				i(193774),	-- Furyforged Plating
+				i(198479),	-- Gale Rider
+				i(200607),	-- Half-Eaten Banana
+				i(200845),	-- Heavily Deformed Mace
+				i(199343),	-- Immaculate Sac of Swog Treasures
+				i(199187),	-- Impossible Sheet Music
+				i(191244),	-- I.P.F. Mark 15
+				i(196182),	-- Journal Entry
+				i(198840),	-- Kalecite Cluster
+				i(200935),	-- Large Egg Shell
 				i(200839),	-- Magical Cleaning Broom
 				i(190233),	-- Maruuk Centaur Supplies
+				i(194677),	-- Marvelous Mood Ring
 				i(200588),	-- Meaty Stem
 				i(194682),	-- Mother's Gift
 				i(191193),	-- Mysteriously Charged Core
+				i(186159),	-- Mythic Keystone
 				i(187637),	-- Navarro's Backpack
+				i(200948),	-- Obsidian Hunting Hook
+				i(191032),	-- Oily Fat
+				i(200844),	-- Overly Bent Bow
+				i(200829),	-- Pareidolic Image
+				i(191787),	-- Partially Digested Hand
 				i(190318),	-- Perception!
 				i(198653),	-- PH Profession Drop
 				i(190340),	-- Plainshunter's Supplies
 				i(201757),	-- Plundered Supplies
+				i(200121),	-- Potion of Beginner's Luck
+				i(194718),	-- Premium Salamander Feed
+				i(200606),	-- Previously Owned Map
 				i(201361),	-- Primal Inspiration
+				i(194750),	-- Professional Equipment
 				i(201821),	-- Professor Instructaur's Brain
-				i(198518),	-- Professor Instructaur's Top Secret Guide to Blacksmithing
 				i(198519),	-- Professor Instructaur's Top Secret Guide to Alchemy
+				i(198518),	-- Professor Instructaur's Top Secret Guide to Blacksmithing
 				i(198520),	-- Professor Instructaur's Top Secret Guide to Enchanting
 				i(198521),	-- Professor Instructaur's Top Secret Guide to Engineering
 				i(198522),	-- Professor Instructaur's Top Secret Guide to Herbalism
@@ -735,51 +784,70 @@ root(ROOTS.NeverImplemented, {
 				i(198528),	-- Professor Instructaur's Top Secret Guide to Tailoring
 				i(193209),	-- Quality Bone
 				i(191194),	-- Radiant Metallic Threading
+				i(191856),	-- Reinforced Hooked Line
 				i(191252),	-- Reinforced Plating+
 				i(191874),	-- Reinforced Plating++
 				i(191875),	-- Reinforced Plating+++
 				i(190319),	-- Resourceful!
+				i(191861),	-- Rocdrop Carapace
+				i(191864),	-- Rocdrop Pudgepart
 				i(194025),	-- Runebound Parchment: Bottom Half
 				i(194024),	-- Runebound Parchment: Top Half
 				i(194075),	-- Sacrilegious Spear
 				i(199685),	-- Scribbled Drawings of Explosions
-				i(201328),	-- Set Keystone Map: Upper Blackrock Spire
-				i(201329),	-- Set Keystone Map: The Everbloom
-				i(201330),	-- Set Keystone Map: Shadowmoon Burial Grounds
+				i(191849),	-- Serevite Angle Iron
+				i(201344),	-- Set Keystone Map: Algeth'ar Academy
 				i(201331),	-- Set Keystone Map: Auchindoun
 				i(201332),	-- Set Keystone Map: Bloodmaul Slag Mines
-				i(201333),	-- Set Keystone Map: Skyreach
-				i(201334),	-- Set Keystone Map: Temple of the Jade Serpent
-				i(201335),	-- Set Keystone Map: Stormstout Brewery
-				i(201336),	-- Set Keystone Map: Gate of the Setting Sun
-				i(201337),	-- Set Keystone Map: Shado-Pan Monastery
-				i(201338),	-- Set Keystone Map: Siege of Niuzao Temple
-				i(201339),	-- Set Keystone Map: Mogu'shan Palace
-				i(201340),	-- Set Keystone Map: Scholomance
-				i(201341),	-- Set Keystone Map: Scarlet Halls
-				i(201342),	-- Set Keystone Map: Scarlet Monastery
-				i(201344),	-- Set Keystone Map: Algeth'ar Academy
-				i(201345),	-- Set Keystone Map: Halls of Infusion
 				i(201346),	-- Set Keystone Map: Brackenhide Hollow
-				i(201347),	-- Set Keystone Map: The Azure Vault
-				i(201348),	-- Set Keystone Map: The Nokhud Offensive
+				i(201336),	-- Set Keystone Map: Gate of the Setting Sun
+				i(201345),	-- Set Keystone Map: Halls of Infusion
+				i(201339),	-- Set Keystone Map: Mogu'shan Palace
 				i(201349),	-- Set Keystone Map: Neltharus
 				i(201350),	-- Set Keystone Map: Ruby Life Pools
+				i(201341),	-- Set Keystone Map: Scarlet Halls
+				i(201342),	-- Set Keystone Map: Scarlet Monastery
+				i(201340),	-- Set Keystone Map: Scholomance
+				i(201330),	-- Set Keystone Map: Shadowmoon Burial Grounds
+				i(201337),	-- Set Keystone Map: Shado-Pan Monastery
+				i(201338),	-- Set Keystone Map: Siege of Niuzao Temple
+				i(201333),	-- Set Keystone Map: Skyreach
+				i(201335),	-- Set Keystone Map: Stormstout Brewery
+				i(201334),	-- Set Keystone Map: Temple of the Jade Serpent
+				i(201347),	-- Set Keystone Map: The Azure Vault
+				i(201329),	-- Set Keystone Map: The Everbloom
+				i(201348),	-- Set Keystone Map: The Nokhud Offensive
 				i(201351),	-- Set Keystone Map: Uldaman: Legacy of Tyr
+				i(201328),	-- Set Keystone Map: Upper Blackrock Spire
 				i(199927),	-- Sheet Music: The Lazy Turnip
+				i(191412),	-- Small Expedition Pick
 				i(191175),	-- Snail Food
 				i(190332),	-- Sparking Catalyst
+				i(199184),	-- Spellbound Bone Pipes
+				i(194686),	-- Spicy Musken Drummies
 				i(194828),	-- Stacked Deck of Darkmoon Mysteries
+				i(195465),	-- Stormwing Egg Breakfast
+				i(199074),	-- Studies of Arcane Magic
+				i(191413),	-- Sturdy Expedition Pick
+				i(192130),	-- Sundered Flame Weapon Mold
+				i(195464),	-- Sweetened Broadhoof Milk
+				i(198842),	-- Tallstrider Feather
 				i(187617),	-- Tempered Djaradin Steel
 				i(191087),	-- Treasure Map: Ohn'ahran Plains
-				i(194026),	-- Treasure Map: The Azure Span
 				i(194029),	-- Treasure Map: Thaldraszus
+				i(194026),	-- Treasure Map: The Azure Span
 				i(194023),	-- Treasure Map: The Waking Shores
 				i(193640),	-- Unstable Power Stone
+				i(200951),	-- Valdrakken Critter Snacks
+				i(200870),	-- Vorquin Essence
 				i(198733),	-- Wayfinderr's Compass (NYI)
+				i(191426),	-- Whelmed Duckling
 				i(194742),	-- Worn Book
 				i(191185),	-- Worn Parchment
 				i(187621),	-- Writ of Construction
+				i(187523),	-- Your Reward [DNT]
+				i(191045),	-- Yu's Bloodied Journal Entry
+				i(199186),	-- zzOldBewitched Wood
 				i(193361),	-- zzOldIncomplete Hunting Necklace
 				i(199110),	-- zzOldMechanical Maestro Duck
 			})),
@@ -790,28 +858,57 @@ root(ROOTS.NeverImplemented, {
 				i(193057),	-- 10.0 Placeholder Enchanting Crystal
 				i(193067),	-- Acadia's Tools [DNT/Unused]
 				i(200964),	-- Alliance Dueling Flag
-				i(203434),	-- Bottomless Bag of Blacksmithing Goods
+				i(192604),	-- Ancient Lantern
+				i(192684),	-- Ancient War Tusk
+				i(201175),	-- Arakkoa Ritual Feather
+				i(193448),	-- Arcane Cell
+				i(201823),	-- Arcane-Infused Webbing
+				i(201187),	-- Bent Lockpicks
+				i(201211),	-- Bottled Ear Wax
 				i(203435),	-- Bottomless Bag of Alchemy Goods
+				i(203434),	-- Bottomless Bag of Blacksmithing Goods
 				i(203436),	-- Bottomless Bag of Enchanting Goods
 				i(203437),	-- Bottomless Bag of Engineering Goods
+				i(203444),	-- Bottomless Bag of General Goods
+				i(203449),	-- Bottomless Bag of Herbs
 				i(203438),	-- Bottomless Bag of Inscription Goods
 				i(203439),	-- Bottomless Bag of Jewelcrafting Goods
 				i(203440),	-- Bottomless Bag of Leatherworking Goods
-				i(203441),	-- Bottomless Bag of Tailoring Goods
-				i(203444),	-- Bottomless Bag of General Goods
 				i(203447),	-- Bottomless Bag of Optional Goods
 				i(203448),	-- Bottomless Bag of Ore
-				i(203449),	-- Bottomless Bag of Herbs
 				i(203450),	-- Bottomless Bag of Skins
+				i(203441),	-- Bottomless Bag of Tailoring Goods
 				i(201253),	-- Competitor's Edge
+				i(201178),	-- Cracked Skull
+				i(192698),	-- Depleted Titan Training Matrix
 				i(202037),	-- Expedition Shovel or Expedition Multi-Toolbox
 				i(200862),	-- Experimental Duck Feed
+				i(201174),	-- Fantastic Jewel
+				i(200937),	-- Flavorful Soup Bone
 				i(201423),	-- Hallowed Helm
 				i(200965),	-- Horde Dueling Flag
+				i(201723),	-- Indecipherable Pages
 				i(193054),	-- Luxurious Loop
+				i(201200),	-- Makeshift Totem
 				i(199553),	-- Memory of Unity
+				i(200933),	-- Mushy Vegtable
+				i(201730),	-- Nokhud Centaur Spear
+				i(201731),	-- Nokhud Centaur Staff
 				i(201928),	-- Ohn'ir Windprayer Talisman
+				i(201214),	-- Olfactory Truffle
+				i(201176),	-- Ornate Bracelet
 				i(201251),	-- Pillaged Contender's Strongbox
+				i(201183),	-- Pouch of Salt
+				i(192694),	-- Second Head's Fang
+				i(201201),	-- Skull Pendant
+				i(192633),	-- Slit-Shaped Pupil
+				i(201179),	-- Snapped Tusk Tip
+				i(201213),	-- Sparkling Stone
+				i(201729),	-- Spiked Horseshoe
+				i(201224),	-- Tauren Horn
+				i(192696),	-- Third Head's Eye
+				i(201223),	-- Thorn Bracelet
+				i(193447),	-- Thunder Thigh
 			})),
 
 			-- 10.0.5

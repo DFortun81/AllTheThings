@@ -1604,9 +1604,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(197141),	-- Highland Drake: Scaled Pattern (DM!)
 					i(197137),	-- Highland Drake: Spined Nose (DM!)
 				},
-				-- Lost Elemental ID 196900
-				-- Lava Orb ID 196901
-				-- Stranded Soul ID 197183
 			}),
 			q(67175, {	-- How To Stop An Exploding Toy Boat
 				["sourceQuests"] = { 67174 },	-- Arcane Detection

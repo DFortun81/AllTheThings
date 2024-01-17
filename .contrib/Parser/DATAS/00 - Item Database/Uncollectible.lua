@@ -558,6 +558,31 @@ i(202065);	-- Static Sand
 
 -- ^^ Not cleaned
 ------------------
+-- PATCH 4.0.3 --
+------------------
+i(62370);	-- Bear Whisker
+i(60406);	-- Blood-Caked Incisors
+i(56054);	-- Gleaming Flipper
+i(62770);	-- Infested Feather
+i(54629);	-- Prickly Thorn
+i(60390);	-- Reticulated Tissue
+i(62528);	-- Sharp Crocolisk Tooth
+i(56055);	-- Small Parasitic Fish
+i(60405);	-- Stubby Bear Tail
+i(56056);	-- Trophy Jaws
+i(62452);	-- Velvet Ear
+
+------------------
+-- PATCH 7.0.3 --
+------------------
+i(123865);	-- Relic of Ursol
+
+------------------
+-- PATCH 9.0.2 --
+------------------
+i(178149);	-- Centurion Anima Core
+
+------------------
 -- PATCH 10.0.2 --
 ------------------
 --- Vendor (Poor) ---
@@ -606,20 +631,33 @@ i(200701);	-- Titian Extract
 i(200696);	-- Winter Berries
 --- Profession	---
 i(201926);	-- Crushing
+i(200647);	-- Crystalline Shatter
+i(192182);	-- Decay to Elements
+i(200648);	-- Elemental Shatter
 i(194537);	-- Fiddle with Draconium Fabric Cutters
 i(194538);	-- Fiddle with Khaz'gorite Fabric Cutters
 i(198390);	-- Milling
+i(192181);	-- Order to Elements
 i(194709);	-- Prospecting
 i(194973);	-- Reclaim Concoctions
+i(200635);	-- Refine Dragon Isles Herbs
+i(198424);	-- Refine Dragon Isles Hides
+i(198425);	-- Refine Dragon Isles Leather
+i(198426);	-- Refine Dragon Isles Scales
 --- Trash ---
+i(200823);	-- 300x Magnifying Glass
 i(200770);	-- A Brief History of Azeroth
 i(193389);	-- Adamantine Core
 i(200783);	-- Adorned Ohunan Jess
 i(192644);	-- Aeriform Speck
+i(201210);	-- Albino Feather
 i(200804);	-- Ancestor's Scales
 i(192608);	-- Ancient Resin
+i(201220);	-- Ancient Tool
 i(192717);	-- Animated Splinter
 i(192646);	-- Aqueous Speck
+i(193450);	-- Arakkoa Doll
+i(201824);	-- Arcane Fluid
 i(200836);	-- Arcane-Infused Crystals
 i(200785);	-- Argali Wool Rug
 i(200813);	-- Assorted Fractals
@@ -629,16 +667,22 @@ i(200817);	-- Azure Splinters
 i(201191);	-- Back Scratcher
 i(200766);	-- Bakar Fangs
 i(192685);	-- Battle-Hardened Fang
+i(201198);	-- Beaded Bracelet
 i(192610);	-- Beady Woodland Eye
 i(200789);	-- Beckoning Kite
 i(200782);	-- Bejeweled Horseshoes
+i(201226);	-- Big Rock
+i(201180);	-- Bone Necklace
 i(201205);	-- Bone Toothpick
 i(200798);	-- Bottled Diseased Parasites
 i(192611);	-- Bottled Torrent
 i(200791);	-- Braided Ottuk Hair Fishing Line
+i(201165);	-- Burnished Bauble
+i(200533);	-- Bygone Idol
 i(200834);	-- Can You Smell It?
 i(200821);	-- Celsius 232
 i(200769);	-- Ceramic Shards
+i(192686);	-- Charred Carapace
 i(192655);	-- Chilling Spider Leg
 i(200811);	-- Congealed Sap Droplet
 i(200814);	-- Congealing Shard
@@ -647,60 +691,81 @@ i(200248);	-- Cooked Book
 i(194721);	-- Cracked Hourglass
 i(192769);	-- Cracked Spear
 i(192688);	-- Cracked Stone Bracers
+i(201216);	-- Crumbled Elemental Spark
 i(193384);	-- Crumbling Bone
 i(194083);	-- Crushed Stone
 i(192746);	-- Curio of Yore
 i(192651);	-- Damaged Core
+i(200532);	-- Damaged Qiraji Ring
 i(200799);	-- Decaying Pelt Bolt
 i(193385);	-- Decaying Resin
 i(201188);	-- Deceased Critter
 i(200848);	-- Decorative Bouquet
 i(200793);	-- Decorative Sail
 i(200451);	-- Deep Sea Star
+i(193420);	-- Depleted Mana Stone
 i(200815);	-- Deposited
 i(192652);	-- Discharged Thunderscale
 i(200780);	-- Dragon Horns
 i(192613);	-- Dragon Tooth
 i(201193);	-- Dragon Tooth Shank
+i(201197);	-- Dream Journal
 i(200850);	-- Dream-Infused Seed
 i(195359);	-- Dry Snapper Meat
 i(200820);	-- Dry Wood Log
+i(192687);	-- Duck Bill
+i(192689);	-- Eagle Eye
 i(192614);	-- Elemental Ooze
 i(201467);	-- Emerald Bloom
 i(193849);	-- Emptied Satchel
+i(201195);	-- Empty Herb Pouch
 i(200840);	-- Encyclopaedia Draeconica Set
 i(200767);	-- Energized Crystal
 i(201968);	-- Enormous Grain of Salt
 i(200818);	-- Eternal Flame
+i(192691);	-- Eternal Ice Stalactite
 i(194036);	-- Exquisite Necklace
+i(192692);	-- Faerie Dust
 i(200805);	-- Fallen Watcher Remains
+i(192693);	-- First Heads Horn
 i(192653);	-- Floppy Molten Ear
 i(192697);	-- Fluffy Ear
 i(200800);	-- Fool's Gold
 i(200794);	-- Fresh Critter Carcass
 i(201206);	-- Fresh Meat Lump
 i(192089);	-- Fresh Vorquin Carcass
+i(192700);	-- Frozen Dorsal Spike
+i(192701);	-- Frozen Eye
 i(192616);	-- Fung Eye
 i(200832);	-- Geode Splinters
 i(192702);	-- Giant's Heart
 i(194038);	-- Gilded Blade
 i(200801);	-- Gilded Statuette
 i(194035);	-- Glittering Diamonds
+i(192707);	-- Gnawing Incisors
 i(194071);	-- Gold Ring
 i(201190);	-- Goo Filled Flask
 i(192656);	-- Half-Digested Fish
+i(201227);	-- Half-Eaten Stone
+i(201228);	-- Handful of Gravel
 i(192657);	-- Hardy Cloven Hoof
+i(193438);	-- Harrowing Osteal
+i(201185);	-- Hidden Blade
+i(192703);	-- Hide-Piercing Horn
 i(192617);	-- Hound Paw
 i(200853);	-- How to Grow a Tree in 10 Days
+i(192704);	-- Huge Flat Tooth
 i(200784);	-- Hunting Trophies
 i(192618);	-- Ice Chunks
 i(200776);	-- Igneous Rock Sculpture
+i(192705);	-- Imposing Tusk
 i(192659);	-- Impressive Mandible
 i(192619);	-- Impressive Tail Fin
 i(200838);	-- Insignia of the Kirin Tor
 i(200830);	-- Instantly Drying Clay
 i(200822);	-- Jar of Ashes
 i(200772);	-- Knowledge Discs
+i(201170);	-- Knucklebones
 i(201192);	-- Large Dragonbone Dice
 i(192620);	-- Large Tail Spikes
 i(200778);	-- Lava Blowing for Dummies
@@ -710,11 +775,16 @@ i(192708);	-- Magnificent Antler
 i(200788);	-- Mantacorn Horns
 i(200786);	-- Marbled Broadhoof Brisket
 i(192622);	-- Massive Beast Eye
+i(192660);	-- Massive Hydra Claw
 i(192623);	-- Massive Proto-Dragon Claw
+i(192709);	-- Membranous Wing
+i(192714);	-- Mgrrrl
 i(200841);	-- Miniature Prismatic Disc
 i(201466);	-- Mote of Dreams
 i(192626);	-- Mound of Dust
 i(200105);	-- Muck Covered Flotsam
+i(193410);	-- Nauseating Stinger
+i(192710);	-- Nearly Unbreakable Horn
 i(201209);	-- Nibbled Fish Head
 i(200852);	-- Nourishing Fertilizer
 i(192645);	-- Obsidian Nugget
@@ -726,14 +796,20 @@ i(192712);	-- Otherworldly Essence
 i(201203);	-- Painted Gnoll Band
 i(201219);	-- Parchment Cards
 i(200816);	-- Partially Damp Measuring Stick
+i(201171);	-- Perfectly Round Stone
+i(192713);	-- Pharyngeal Jaw
 i(192628);	-- Phoenix Ash
 i(192715);	-- Phoenix Stone
+i(201163);	-- Piece of Dragonkin Eggshell
 i(200828);	-- Pocketed Clouds
 i(200842);	-- Power-Depleted Staff
 i(192661);	-- Prehistoric Fin
+i(192716);	-- Prehistoric Sediment
+i(201196);	-- Pretty Flower
 i(192629);	-- Primal Beast Claw
 i(192648);	-- Pristine Beast Fur
 i(200771);	-- Projected Starmap
+i(201194);	-- Pumice Hand Chalk
 i(200790);	-- Pungent Soup Spices
 i(192662);	-- Pyretic Speck
 i(192706);	-- Razor Quill
@@ -744,18 +820,24 @@ i(192605);	-- Reptilian Fang
 i(200797);	-- Repulsive Perfume
 i(192718);	-- Rock-Hard Eggshell
 i(192650);	-- Roomy Shell
+i(201186);	-- Rope Bonds
 i(200796);	-- Rotting Wood Totem
 i(200808);	-- Runestone Shards
 i(200835);	-- Sand Pouch
 i(192719);	-- Scaled Toes
 i(192663);	-- Scaly Wing
 i(195360);	-- Scorched Snapper Meat
+i(201208);	-- Seer's Crystal
 i(200851);	-- Self-Trimming Bonsai
+i(192690);	-- Serrated Limb
 i(192664);	-- Serrated Pincer
+i(201182);	-- Serrated Stone
 i(192666);	-- Severed Roots
 i(200843);	-- Severely Chipped Broadsword
 i(192632);	-- Sharp Bird Talon
 i(199206);	-- Shattered Adamant Scales
+i(201207);	-- Shells in a Conch
+i(201162);	-- Shiny Metal Scraps
 i(200795);	-- Sickly Egg Sacs
 i(200802);	-- Signet of the Dragonflights
 i(199476);	-- Singed Cloth Scraps
@@ -764,6 +846,7 @@ i(192720);	-- Slender Twisting Horn
 i(192683);	-- Slimy Frog Eggs
 i(200106);	-- Slimy Old Boot
 i(200764);	-- Slimy Shinies
+i(201221);	-- Small Titan Mechanism
 i(192634);	-- Smashed Metal Scraps
 i(201222);	-- Smooth Seashell
 i(193860);	-- Snapped Wand
@@ -771,8 +854,13 @@ i(200837);	-- So You Think You Can Rune?
 i(193387);	-- Solar Battery
 i(201184);	-- Spare Bow String
 i(192670);	-- Splendid Feather
+i(201199);	-- Splendid Feather Necklace
+i(192721);	-- Splendid Horn
+i(192722);	-- Splendid Whiskers
 i(192723);	-- Springy Tongue
+i(201202);	-- Squirrel Tail
 i(201970);	-- Stolen Illidari Blindfold
+i(201167);	-- Stone Calendar
 i(200826);	-- Stored Humid Air
 i(200787);	-- Strong Exotic Spices
 i(192671);	-- Sublime Flower
@@ -783,13 +871,17 @@ i(194886);	-- Tazenrath's Torn Wing
 i(200849);	-- Tear of the Dreamer
 i(192647);	-- Terrene Speck
 i(192724);	-- Terrifying Teeth
+i(192725);	-- Thin Blubber
 i(201969);	-- Threatening Note
 i(201971);	-- Threatening Note
 i(200803);	-- Through the Stained-Glass
 i(192726);	-- Thunderhorn
 i(192727);	-- Timeless Horns
+i(193391);	-- Time-Worn Fang
 i(201164);	-- Titan Runestone
 i(200833);	-- Titan Watcher Replica
+i(201204);	-- Tooth Bracelet
+i(192665);	-- Torn Dragon Wing
 i(192673);	-- Torn Ear
 i(200809);	-- Trinket-Packed Collar
 i(192728);	-- Undamaged Silk Gland
@@ -797,13 +889,17 @@ i(192729);	-- Unhinged Mandible
 i(192674);	-- Unknown Titan Mechanism
 i(200812);	-- Unmelting Crystalline Structure
 i(192730);	-- Unstable Arcane Essence
+i(201168);	-- Untainted Scales
 i(201424);	-- Unusable Plant Matter
+i(192731);	-- Venomous Fang
 i(200819);	-- Volatile Sparks
 i(200827);	-- Weathered Sculpture
 i(192675);	-- Winglet
 i(200806);	-- Woodcarving Stone
+i(201177);	-- Wooden Eagle Statue
 i(200810);	-- Wooden Stonegrabber Figurine
 i(200807);	-- Wooden Ursine Figure
+i(200531);	-- Worn Chitin Fragment
 --- Common ---
 i(191850);	-- Broken Severite Blade Tip
 i(198688);	-- Catnip Leaf
@@ -829,6 +925,8 @@ i(7005);	-- Skinning Knife
 --- Trash ---
 i(204234);	-- Dead Worms
 i(204308);	-- Sturdy Bone
+i(201173);	-- Handful of Teeth
+i(192668);	-- Short Rib
 i(204442);	-- Clump of Tar
 i(200846);	-- Fletching-less Arrows
 i(204873);	-- Tied-up Envelope
@@ -895,6 +993,7 @@ i(205217);	-- Sharpbeak's Feed
 
 --- Trash ---
 i(201166);	-- Gilded Hilt
+i(200107);	-- Tarnished Engagement Ring
 i(204580);	-- Abnormal Brain
 i(205457);	-- Delicate Crystal Shell
 i(205459);	-- Luminous Gloop

@@ -59,6 +59,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(QUESTS, {
 				------ RENOWN 7 ------
+				i(198538, {	-- Magically Bound Message
+					["description"] = "Appears when reaching Renown 7.",
+				}),
 				q(66595, {	-- Dormant Discovery
 					["provider"] = { "i", 198538 },	-- Magically Bound Message
 				}),

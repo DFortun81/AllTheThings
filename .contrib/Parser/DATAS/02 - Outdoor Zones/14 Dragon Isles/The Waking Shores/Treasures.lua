@@ -48,6 +48,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(202193),	-- Dead Man's Tunic
 				},
 			}),
+			o(380518, {	-- Dislodged Dragoneye
+				["coord"] = { 60.5, 57.8, THE_WAKING_SHORES },
+				["g"] = {
+					i(198626),	-- Dislodged Dragoneye
+				},
+			}),
 			o(385022, {	-- Eroded Fossil
 				["description"] = "Only available when world quest |cffffffffBrightblade's Bones|r (66070) is active.",
 				["coords"] = {

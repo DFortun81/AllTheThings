@@ -1000,6 +1000,9 @@ root(ROOTS.Zones, {
 					["coord"] = { 30.3, 30.8, SURAMAR },
 					["provider"] = { "n", 103571 },	-- Solendra Featherdown
 					["sourceQuest"] = 41478,	-- The Final Blessing
+					["g"] = {
+						i(136605),	-- Solendra's Compassion (QI!)
+					},
 				}),
 				q(44723, {	-- More Like Me
 					["coord"] = { 52.0, 79.1, SURAMAR },

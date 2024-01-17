@@ -40,6 +40,7 @@ root(ROOTS.NeverImplemented, {
 				tier(DF_TIER, {
 					-- 10.0.0
 					tier(DF_TIER, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+						i(191422),	-- Crystal Magical Lockpick
 						i(198483),	-- jrz 10.0 enchanting test [DNT]
 						i(198677),	-- jrz test vellum quality 1 [DNT]
 						i(198678),	-- jrz test vellum quality 2 [DNT]

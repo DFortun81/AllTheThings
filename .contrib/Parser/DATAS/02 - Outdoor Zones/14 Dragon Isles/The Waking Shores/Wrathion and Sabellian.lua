@@ -240,6 +240,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 191193 },	-- Exadria
 					["coord"] = { 27.6, 56.3, THE_WAKING_SHORES },
 					["isWeekly"] = true,
+					["g"] = {
+						i(194716),	-- Evorian Report (QI!)
+						i(194707),	-- Myridian Report (QI!)
+						i(194713),	-- Zepharion Report (QI!)
+					},
 				}),
 				q(66103, {	-- Eager to Please
 					["sourceQuest"] = 66419,	-- Allegiance To One

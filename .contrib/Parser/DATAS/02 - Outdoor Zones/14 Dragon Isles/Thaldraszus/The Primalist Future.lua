@@ -186,6 +186,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						}),
 					},
 				}),
+				n(198827, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Sous Chef Durang
+					["coord"] = { 61.2, 52.8, THE_PRIMALIST_FUTURE },
+					["g"] = {
+						i(201813),	-- Spoiled Firewine
+					},
+				})),
 				n(199541, {	-- Tarndormu <Temporal Squadron Commander>
 					["description"] = "This Vendor is only visible during the Storm's Fury event.",
 					["coord"] = { 60.8, 46.6, THE_PRIMALIST_FUTURE },

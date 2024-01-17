@@ -36,6 +36,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					193137,	-- Restless Lava
 				},
 			}),
+			i(201883, {	-- Empty Magma Shell
+				["crs"] = {
+					193139,	-- Basalt Shell
+					186623,	-- Lavaslurper
+					193138,	-- Lavaslurper
+				},
+			}),
 			i(191904, {	-- Orb of Primal Stone
 				["cr"] = 189795,	-- Unsettled Rubble
 			}),

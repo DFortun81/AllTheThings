@@ -292,6 +292,8 @@ root(ROOTS.NeverImplemented, {
 
 			-- 10.0.2
 			tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
+				i(194706),	-- [DEPRECATED]Illusionary Key
+				i(191069),	-- Beacon of the Black Prince
 				i(198848),	-- Flyspawn Thorax
 				i(199798),	-- Makko's Journal - Page Seven
 				i(194423),	-- Maruuk's Spear
