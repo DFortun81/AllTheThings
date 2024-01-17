@@ -19,9 +19,9 @@ app.Modules.Upgrade = api;
 -- Module locals
 local CreateItem
 
-api.OnLoad = function()
+app.AddEventHandler("OnLoad", function()
 	CreateItem = app.CreateItem;
-end
+end)
 
 -- Static mapping of BonusID -> Next Unlock BonusID for a corresponding Item. Unlock will most-likely always be an Appearance
 -- Thanks @Addon:ItemUpgradeTip for this compiled list of BonusIDs! Wish Blizzard did this for us by default...

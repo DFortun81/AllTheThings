@@ -15,14 +15,14 @@ local NestObjects, Colorize, CreateObject, NestObject, SearchForFieldContainer, 
 -- Access via AllTheThings.Modules.Miscellaneous
 local api = {};
 app.Modules.Miscellaneous = api;
-api.OnLoad = function()
+app.AddEventHandler("OnLoad", function()
 	NestObject = app.NestObject
 	NestObjects = app.NestObjects
 	Colorize = app.Modules.Color.Colorize
 	CreateObject = app.__CreateObject
 	SearchForFieldContainer = app.SearchForFieldContainer
 	SearchForObject = app.SearchForObject;
-end
+end)
 
 local RecursiveParentMapping = {};
 -- Recurses upwards in the group hierarchy until finding the group with the specified value in the specified field. The

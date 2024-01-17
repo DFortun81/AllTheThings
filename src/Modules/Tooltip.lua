@@ -659,13 +659,13 @@ local api = {};
 app.Modules.Tooltip = api;
 api.AttachTooltipSearchResults = AttachTooltipSearchResults;
 api.GetBestObjectIDForName = GetBestObjectIDForName;
-api.OnLoad = function()
+app.AddEventHandler("OnLoad", function()
 	GetCachedSearchResults = app.GetCachedSearchResults;
 	SearchForLink = app.SearchForLink;
 	L = app.L;
 	GetCurrentMapID = app.GetCurrentMapID;
 	OnLoad_CacheObjectNames();
-end
-api.OnReady = function()
+end)
+app.AddEventHandler("OnReady", function()
 	OnReadyHooks();
-end
+end)

@@ -683,13 +683,13 @@ local function CacheSettingsData()
 	-- app.PrintDebug("SettingsFilterIDs",#SettingsFilterIDs)
 end
 
-api.OnLoad = function()
+app.AddEventHandler("OnLoad", function()
 	SearchForSourceIDQuickly = app.SearchForSourceIDQuickly
 	FactionID = app.FactionID;
 
 	-- Filters defined in other Modules... maybe link them dynamically somehow instead
 	DefineToggleFilter("Event", AccountFilters, app.Modules.Events.FilterIsEventActive);
-end
+end)
 api.OnStartup = function(AccountData)
 	ATTAccountWideData = AccountData
 	-- this table is set once in ATT, but contents are volatile
@@ -697,9 +697,9 @@ api.OnStartup = function(AccountData)
 	CacheSettingsData();
 end
 -- Cache filter-related content from Settings here instead of checking in every function call
-api.OnRefreshData_NewSettings = function()
+app.AddEventHandler("OnRecalculate_NewSettings", function()
 	CacheSettingsData();
-end
+end)
 
 -- temp sanity debug logging
 -- for name,setFilter in pairs(api.Set) do

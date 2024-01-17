@@ -14819,10 +14819,7 @@ local function RefreshData()
 		if LastSettingsChangeUpdate ~= app._SettingsRefresh then
 			LastSettingsChangeUpdate = app._SettingsRefresh;
 
-			app.DoModuleEvent("OnRefreshData_NewSettings")
-		-- else
-			-- comment this in when needed (i.e. custom collect module/quest module/etc. for above methods)
-		-- 	app.DoModuleEvent("OnRefreshData")
+			app.HandleEvent("OnRecalculate_NewSettings")
 		end
 
 		-- Forcibly update the windows.
@@ -19691,8 +19688,6 @@ app.Startup = function()
 
 	-- Execute the OnStartup handlers.
 	app.HandleEvent("OnStartup")
-
-	-- See if any Modules have 'OnStartup' functions defined, and call them now
 	app.DoModuleEvent("OnStartup")
 
 	StartCoroutine("InitDataCoroutine", app.InitDataCoroutine);
@@ -19895,9 +19890,6 @@ app.InitDataCoroutine = function()
 
 	-- Execute the OnReady handlers.
 	app.HandleEvent("OnReady")
-
-	-- See if any Modules have 'OnReady' functions defined, and call them now
-	app.DoModuleEvent("OnReady")
 
 	-- app.PrintMemoryUsage("InitDataCoroutine:Done")
 end
@@ -20574,7 +20566,7 @@ app.events.VIGNETTES_UPDATED = function()
 end
 end	-- Vignette Functionality Scope
 
--- See if any Modules have 'OnLoad' functions defined, and call them now
-app.DoModuleEvent("OnLoad")
+-- OnLoad events
+app.HandleEvent("OnLoad")
 
 -- app.PrintMemoryUsage("AllTheThings.EOF");

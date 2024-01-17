@@ -295,13 +295,13 @@ end
 -- Access via AllTheThings.Modules.Costs
 local api = {};
 app.Modules.Costs = api;
-api.OnLoad = function()
+app.AddEventHandler("OnLoad", function()
 	DGU = app.DirectGroupUpdate;
 	api.Runner = app.CreateRunner("costs");
 	UpdateRunner = api.Runner
 	CacheFilters();
-end
+end)
 api.OnStartup = function(AccountData)
 	AccountWideQuests = AccountData.OneTimeQuests
 end
-api.OnRefreshData_NewSettings = UpdateCosts;
+app.AddEventHandler("OnRecalculate_NewSettings", UpdateCosts)

@@ -147,18 +147,18 @@ app.CreateTitle = app.CreateClass("Title", "titleID", {
 -- Title Refresh
 if app.IsRetail then
 -- NOTE: Not sure if this is necessary for Classic.
-app.AddEventHandler("OnRefreshCollections", function()
-	-- app.PrintDebug("Refresh:Titles")
-	local acctTitles, charTitles = AccountWideData.Titles, {};
-	for i=1,GetNumTitles(),1 do
-		if IsTitleKnown(i) then
-			if not acctTitles[i] then
-				app.print("Added Title",app:Linkify(i,app.Colors.ChatLink,"search:titleID:"..i))
+	app.AddEventHandler("OnRefreshCollections", function()
+		-- app.PrintDebug("Refresh:Titles")
+		local acctTitles, charTitles = AccountWideData.Titles, {};
+		for i=1,GetNumTitles(),1 do
+			if IsTitleKnown(i) then
+				if not acctTitles[i] then
+					app.print("Added Title",app:Linkify(i,app.Colors.ChatLink,"search:titleID:"..i))
+				end
+				charTitles[i] = 1;
 			end
-			charTitles[i] = 1;
 		end
-	end
-	app.CurrentCharacter.Titles = charTitles;
-	-- app.PrintDebugPrior("Done")
-end);
+		app.CurrentCharacter.Titles = charTitles;
+		-- app.PrintDebugPrior("Done")
+	end);
 end

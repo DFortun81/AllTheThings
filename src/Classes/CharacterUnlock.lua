@@ -40,7 +40,7 @@ api.OnStartup = function(ATTAccountWideData)
 	AccountWideData = ATTAccountWideData
 end
 
-api.OnLoad = function()
+app.AddEventHandler("OnLoad", function()
 	IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
 	IsSpellKnownHelper = app.IsSpellKnownHelper
 
@@ -90,4 +90,4 @@ api.OnLoad = function()
 		end
 		return CreateCharacterUnlockSpell(id, t)
 	end
-end
+end)
