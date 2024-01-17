@@ -243,6 +243,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(211788),	-- Tess's Peacebloom
 							},
 						}),
+						-- Ensemble: Gilnean Noble's Suit
+						i(211791),    -- Gilnean Nobles Buckle
+						i(211795),    -- Gilnean Nobles Mantle
+						i(211790),    -- Gilnean Nobles Shoes
+						i(211793),    -- Gilnean Nobles Top Hat
+						i(211794),    -- Gilnean Nobles Trousers
+						i(211792),    -- Gilnean Nobles Vest
 					},
 				}),
 			})),
