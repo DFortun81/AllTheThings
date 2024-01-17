@@ -570,6 +570,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 				i(9491),	-- Hotshot Pilot's Gloves
 				i(9508, {	-- Mechbuilder's Overalls
+					-- TODO: new itemdb file required to remove this requirement
+					-- #if AFTER 10.1.7
+					["_drop"] = { "requireSkill" },
+					-- #endif
 					["crs"] = {
 						6232,	-- Arcane Nullifier X-21
 						6212,	-- Dark Iron Agent
