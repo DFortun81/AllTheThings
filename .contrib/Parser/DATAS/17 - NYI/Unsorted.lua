@@ -792,7 +792,6 @@ root(ROOTS.Unsorted, {
 				i(211949),	-- Durumu's Glass Pupil
 				------
 				i(212766),	-- Amphora Fragment
-				i(213362),	-- Ancient Drakonid Candy
 				i(213029),	-- Bent Drakonid Fork
 				i(213210),	-- Bloodied Banner Scrap
 				i(213033),	-- Brittle Blacksmith Tongs
@@ -864,7 +863,6 @@ root(ROOTS.Unsorted, {
 				i(213026),	-- Massive Drakonid Brush
 				i(213031),	-- Misshapen Drakonid Goblet
 				i(213363),	-- Molted Eye Skin
-				i(213377),	-- Mutliated Storybook
 				i(213374),	-- Niffen Noseplug
 				i(212768),	-- Niffen-Sized Dagger
 				i(213211),	-- Petrified Flower Petals

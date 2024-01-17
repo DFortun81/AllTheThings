@@ -72,146 +72,35 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				ach(19786),	-- When a Rock is Just a Rock
 			}),
 			n(DROPS, {
-				i(213389, {	-- Ancient Centaur Diary
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213025, { -- Ancient Djaradin Bolt
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213020, { -- Ancient Drakonid Shovel
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213024, { -- Bloody Djaradin Mug
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213200, { -- Book of Horoscopes
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213365, {	-- Carved Cave Crystal
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213215, { -- Carved Votive Stone
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213021, {	-- Corked Drakonid Vial
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213359, { -- Cracked Drakonid Staff
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(212687, { -- Crude Toy Ducky
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213357, { -- Crystal Scrying Bowl
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(212978, { -- Dragon Painter's Palette
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213022, { -- Drakonid Blacksmith Hammer
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(212976, { -- Drakonid Duck Carving
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(212977, { -- Drakonid Sign Placard
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213183, { -- Makeshift Beaded Bracelet
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213429, {	-- Meticulous Archivist's Appendix
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213023, { -- Oil-Drenched Djaradin Torch
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213382, { -- Partial Centaur Hunting Map
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(212782, { -- Poorly Preserved Relic
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213208, {	-- Pot of Pickled Ancheevies
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(212650, {	-- Pot of Tattooing Ink
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213204, { -- Ruby-Studded Locket
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(212773, { -- Rusted Locket
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213375, { -- Satchel of Buried Valuables
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(213192, { -- Scratched-Out List of Names
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(212762, { -- Tarnished Horn Signet
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
-				i(212769, { -- Tattered Wanted Poster
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-					},
-				}),
+				i(213389),	-- Ancient Centaur Diary
+				i(213025),	-- Ancient Djaradin Bolt
+				i(213020),	-- Ancient Drakonid Shovel
+				i(213024),	-- Bloody Djaradin Mug
+				i(213200),	-- Book of Horoscopes
+				i(213365),	-- Carved Cave Crystal
+				i(213215),	-- Carved Votive Stone
+				i(213021),	-- Corked Drakonid Vial
+				i(213359),	-- Cracked Drakonid Staff
+				i(212687),	-- Crude Toy Ducky
+				i(213357),	-- Crystal Scrying Bowl
+				i(212978),	-- Dragon Painter's Palette
+				i(213022),	-- Drakonid Blacksmith Hammer
+				i(212976),	-- Drakonid Duck Carving
+				i(212977),	-- Drakonid Sign Placard
+				i(213183),	-- Makeshift Beaded Bracelet
+				i(213429),	-- Meticulous Archivist's Appendix
+				i(213023),	-- Oil-Drenched Djaradin Torch
+				i(205223),	-- Ornamented Centaur Axe
+				i(213382),	-- Partial Centaur Hunting Map
+				i(212782),	-- Poorly Preserved Relic
+				i(213208),	-- Pot of Pickled Ancheevies
+				i(212650),	-- Pot of Tattooing Ink
+				i(213204),	-- Ruby-Studded Locket
+				i(212773),	-- Rusted Locket
+				i(213375),	-- Satchel of Buried Valuables
+				i(213192),	-- Scratched-Out List of Names
+				i(212762),	-- Tarnished Horn Signet
+				i(212769),	-- Tattered Wanted Poster
 			}),
 			n(FACTIONS, {
 				faction(FACTION_AZEROTHIAN_ARCHIVES, {

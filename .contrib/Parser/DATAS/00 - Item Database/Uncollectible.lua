@@ -1078,3 +1078,6 @@ i(213366);	-- Strip of Niffen Headwear
 i(213216);	-- Strip of Notched Leather
 i(213039);	-- Thin Drakonid Spoon
 i(213380);	-- Unidentifiable Equine Fossil
+i(213362);	-- Ancient Drakonid Candy
+i(213377);	-- Mutliated Storybook
+i(205222);	-- Wooden Caravan Spoke
