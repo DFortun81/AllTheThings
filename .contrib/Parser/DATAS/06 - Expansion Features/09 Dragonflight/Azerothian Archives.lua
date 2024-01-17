@@ -40,7 +40,35 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(213133),	-- Reese (PET!)
 				}),
 				ach(19789),	-- Relic Rescuer
-				ach(19788),	-- Tome Comber
+				ach(19788, {	-- Tome Comber
+					crit(65389, {
+						["provider"] = { "i", 213185 },	-- Dusty Centaur Tome
+					}),
+					crit(65390, {
+						["provider"] = { "i", 213175 },	-- Dusty Djaradin Tome
+					}),
+					crit(65391, {
+						["provider"] = { "i", 213188 },	-- Dusty Dracthyr Tome
+					}),
+					crit(65392, {
+						["provider"] = { "i", 213187 },	-- Dusty Drakonid Tome
+					}),
+					crit(65393, {
+						["provider"] = { "i", 213186 },	-- Dusty Niffen Tome
+					}),
+					crit(65394, {
+						["provider"] = { "i", 213190 },	-- Preserved Djaradin Tome
+					}),
+					crit(65395, {
+						["provider"] = { "i", 213189 }, -- Preserved Dragonkin Tome
+					}),
+					crit(65396, {
+						["provider"] = { "i", 13176 },	-- Preserved Isles Tome
+					}),
+					crit(65397, {
+						["provider"] = { "i", 213177 },	-- Immaculate Tome
+					}),
+				}),
 				ach(19786),	-- When a Rock is Just a Rock
 			}),
 			n(FACTIONS, {
@@ -152,19 +180,18 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["g"] = {
 						currency(2657),	-- Mysterious Fragment
 						currency(2819),	-- Archivist Knowledge
-						i(213175),	-- Dusty Djaradin Tome
-						i(213185),	-- Dusty Centaur Tome
-						i(213186),	-- Dusty Niffen Tome
-						i(213187),	-- Dusty Drakonid Tome
-						i(213188),	-- Dusty Dracthyr Tome
-						i(213176),	-- Preserved Isles Tome
-						i(213365), -- Carved Cave Crystal
-						i(212650), -- Pot of Tattooing Ink
 					},
 				}),
 			}),
-			n(REWARDS, {
-				i(212645),	-- Clayscale Hornstrider (MOUNT!)
+			n(RARES, {
+				n(208029, {	-- Doomshadow
+					i(212645),	-- Clayscale Hornstrider (MOUNT!)
+					i(213365), -- Carved Cave Crystal
+					i(213021), -- Corked Drakonid Vial
+					i(213429),	-- Meticulous Archivist's Appendix
+					i(213208),	-- Pot of Pickled Ancheevies
+					i(212650),	-- Pot of Tattooing Ink
+				}),
 			}),
 			n(VENDORS, {
 				n(209192, {	-- Provisioner Aristta
