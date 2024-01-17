@@ -137,39 +137,55 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			header(HEADERS.Achievement, 19719, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Reclamation of Gilneas
+				ach(19719, {	-- Reclamation of Gilneas
+					["sourceQuests"] = {
+						78190,	-- What We Left Behind (A)
+						79137,	-- The Wall between Us (H)
+					},
+				}),
 				q(78596, {	-- Summons to Lord Greymane
 					["qg"] = 212899,    -- Greyguard Elite
 					["coords"] = {
 						{ 59, 42.3, VALDRAKKEN },
 						{ 62.4, 71.9, STORMWIND_CITY },
 					},
+					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(78177, {	-- To Gilneas
+				q(78597, {	-- Clandestine Movements
+					["qg"] = 212916,    --
+					["coords"] = {
+						{ 56.1, 39.4, VALDRAKKEN },
+						-- Orgrimmar ??
+					},
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(78177, {	-- To Gilneas (A)
 					["qg"] = 214538,	-- Genn Greymane
 					["sourceQuest"] = 78596,	-- Summons to Lord Greymane
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 35.7, 28.2, STORMWIND_CITY },
 				}),
-				-- q(78178, {	-- To Gilneas
-				-- 	["qg"] = 214538,	-- Genn Greymane
-				-- 	["sourceQuest"] = 78596,	-- Summons to Lord Greymane
-				-- 	["races"] = HORDE_ONLY,
-				-- 	["coord"] = {  },
-				-- }),
+				q(78178, {	-- To Gilneas (H)
+					-- ["qg"] = ??, -- TODO
+					["sourceQuest"] = 78597,	-- Clandestine Movements
+					["races"] = HORDE_ONLY,
+					["coord"] = { 43.5, 73.2, SILVERPINE_FOREST },
+				}),
 				q(78180, {	-- A Crusade of Red
 					["qg"] = 210905,	-- Princess Tess Greymane
 					["sourceQuests"] = {
-						78177,	-- To Gilneas
-						-- 78178,	-- To Gilneas (78178 Horde?)
+						78177,	-- To Gilneas (A)
+						78178,	-- To Gilneas (H)
 					},
 					["coord"] = { 41.5, 36.1, RUINS_OF_GILNEAS },
 				}),
 				q(78181, {	-- Aderic's Retort
 					["qg"] = 210904,	-- Genn Greymane
 					["sourceQuests"] = {
-						78177,	-- To Gilneas
-						-- 78178,	-- To Gilneas (78178 Horde?)
+						78177,	-- To Gilneas (A)
+						78178,	-- To Gilneas (H)
 					},
 					["coord"] = { 41.5, 36.1, RUINS_OF_GILNEAS },
 				}),
@@ -192,7 +208,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 57, 53, RUINS_OF_GILNEAS },
 					["groups"] = {
 						o(410877, {	-- Scarlet Munitions
-							i(211248),	-- Scarlet Explosives (QI!)	
+							i(211248),	-- Scarlet Explosives (QI!)
 						}),
 					},
 				}),
@@ -228,21 +244,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 58.7, 47.8, RUINS_OF_GILNEAS },
 					["groups"] = {
 						i(211873),	-- Reins of the Gilnean Prowler
-					},
-				}),
-				q(78190, {	-- What We Left Behind
-					["qg"] = 210905,	-- Princess Tess Greymane
-					["sourceQuest"] = 78189,	-- Beginning a New Dawn
-					["coord"] = { 58.8, 47.7, RUINS_OF_GILNEAS },
-					["groups"] = {
-						ach(19719),	-- Reclamation of Gilneas
-						o(421360, {	-- Memorial Bouquet
-							["coord"] = { 48.8, 53, RUINS_OF_GILNEAS },
-							["races"] = { WORGEN },
-							["groups"] = {
-								i(211788),	-- Tess's Peacebloom
-							},
-						}),
 						-- Ensemble: Gilnean Noble's Suit
 						i(211791),    -- Gilnean Nobles Buckle
 						i(211795),    -- Gilnean Nobles Mantle
@@ -250,6 +251,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(211793),    -- Gilnean Nobles Top Hat
 						i(211794),    -- Gilnean Nobles Trousers
 						i(211792),    -- Gilnean Nobles Vest
+					},
+				}),
+				q(79137, {	-- The Wall between Us
+					["coord"] = { 58.8, 48.4, RUINS_OF_GILNEAS },
+					["qg"] = 210965,	--
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 78189,	-- Beginning a New Dawn
+				}),
+				q(78190, {	-- What We Left Behind
+					["qg"] = 210905,	-- Princess Tess Greymane
+					["sourceQuest"] = 78189,	-- Beginning a New Dawn
+					["coord"] = { 58.8, 47.7, RUINS_OF_GILNEAS },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						o(421360, {	-- Memorial Bouquet
+							["coord"] = { 48.8, 53, RUINS_OF_GILNEAS },
+							["races"] = { WORGEN },
+							["groups"] = {
+								i(211788),	-- Tess's Peacebloom
+							},
+						}),
 					},
 				}),
 			})),
@@ -265,6 +287,5 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
 	m(RUINS_OF_GILNEAS, {
 		q(80080),	-- Upon learning Ensemble: Gilnean Noble's Suit
-		q(79137),	-- Achievement 19719?
 	}),
 }));
