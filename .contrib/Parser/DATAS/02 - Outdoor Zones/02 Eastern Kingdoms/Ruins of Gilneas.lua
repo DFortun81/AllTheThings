@@ -245,12 +245,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(211873),	-- Reins of the Gilnean Prowler
 						-- Ensemble: Gilnean Noble's Suit
-						i(211791),    -- Gilnean Nobles Buckle
-						i(211795),    -- Gilnean Nobles Mantle
-						i(211790),    -- Gilnean Nobles Shoes
-						i(211793),    -- Gilnean Nobles Top Hat
-						i(211794),    -- Gilnean Nobles Trousers
-						i(211792),    -- Gilnean Nobles Vest
+						i(211791),	-- Gilnean Nobles Buckle
+						i(211795),	-- Gilnean Nobles Mantle
+						i(211790),	-- Gilnean Nobles Shoes
+						i(211793),	-- Gilnean Nobles Top Hat
+						i(211794),	-- Gilnean Nobles Trousers
+						i(211792),	-- Gilnean Nobles Vest
 					},
 				}),
 				q(79137, {	-- The Wall between Us

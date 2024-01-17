@@ -3625,8 +3625,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["description"] = "Roams around the waterfall just outside the Wailing Caverns dungeon portal.",
 					["groups"] = {
-						i(5423),  -- Boahn's Fang
-						i(5422),  -- Brambleweed Leggings
+						i(5423),	-- Boahn's Fang
+						i(5422),	-- Brambleweed Leggings
 					},
 				}),
 				n(5838, {	-- Brokespear
@@ -4367,7 +4367,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = {{"select","itemID",
 						16059,	-- Common Brown Shirt
 						3428,	-- Common Grey Shirt
-						16060,	-- Common White Shirt	
+						16060,	-- Common White Shirt
 					}},
 					["groups"] = {
 						i(4790, {	-- Inferno Cloak

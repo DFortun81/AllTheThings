@@ -53,7 +53,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 				},
 				["groups"] = {
 					i(69842),	-- Garr's Reinforced Girdle of Memories
-					un(REMOVED_FROM_GAME, i(67235)), --	Garr's Girdle of Memories [Replaced with 69842]
+					un(REMOVED_FROM_GAME, i(67235)),	--	Garr's Girdle of Memories [Replaced with 69842]
 				},
 			}),
 			n(50089, {	-- Julak-Doom

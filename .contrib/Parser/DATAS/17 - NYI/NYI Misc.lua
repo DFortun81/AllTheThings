@@ -680,7 +680,9 @@ root(ROOTS.NeverImplemented, {
 				i(194027),	-- Ancient Parchment: Top Half
 				i(193798),	-- Ancient Titan Alloy
 				i(194873),	-- Apprentice's Fluffed Quill
+				i(200825),	-- Assorted Debris
 				i(191192),	-- Assorted Parts
+				i(198442),	-- Bogthwottle's Shrinky-Do
 				i(192078),	-- Bottled Putrescence
 				i(191058),	-- Dilapidated Parchment: Bottom Half
 				i(191876),	-- DNT - Stonename Razorstone
@@ -697,6 +699,7 @@ root(ROOTS.NeverImplemented, {
 				i(200994),	-- Elemental Shatter: Order
 				i(194021),	-- Emblazoned Parchment: Bottom Half
 				i(194022),	-- Emblazoned Parchment: Top Half
+				i(195572),	-- Empty Elixir
 				i(191296),	-- Enchanted Lockbox
 				i(198723),	-- Expedition Binoculars (NYI)
 				i(198724),	-- Expedition Telescope (NYI)
@@ -705,14 +708,19 @@ root(ROOTS.NeverImplemented, {
 				i(199903),	-- Extraction: Awakened Frost
 				i(199905),	-- Extraction: Awakened Earth
 				i(193659),	-- Ever-Decaying Spore
+				i(195458),	-- Forager's Stew
 				i(193774),	-- Furyforged Plating
+				i(200839),	-- Magical Cleaning Broom
 				i(190233),	-- Maruuk Centaur Supplies
+				i(200588),	-- Meaty Stem
+				i(194682),	-- Mother's Gift
 				i(191193),	-- Mysteriously Charged Core
 				i(187637),	-- Navarro's Backpack
 				i(190318),	-- Perception!
 				i(198653),	-- PH Profession Drop
 				i(190340),	-- Plainshunter's Supplies
 				i(201757),	-- Plundered Supplies
+				i(201361),	-- Primal Inspiration
 				i(201821),	-- Professor Instructaur's Brain
 				i(198518),	-- Professor Instructaur's Top Secret Guide to Blacksmithing
 				i(198519),	-- Professor Instructaur's Top Secret Guide to Alchemy
@@ -769,6 +777,7 @@ root(ROOTS.NeverImplemented, {
 				i(194023),	-- Treasure Map: The Waking Shores
 				i(193640),	-- Unstable Power Stone
 				i(198733),	-- Wayfinderr's Compass (NYI)
+				i(194742),	-- Worn Book
 				i(191185),	-- Worn Parchment
 				i(187621),	-- Writ of Construction
 				i(193361),	-- zzOldIncomplete Hunting Necklace

@@ -47,7 +47,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(105803),	-- Stickney's Grey-Shade Hood		(Ordos)
 		}),
 		filter(MAIL, {
-			ig(114389), -- Element-Binder Helm				(NYI)
+			ig(114389),	-- Element-Binder Helm				(NYI)
 			ig(18304),	-- Greenroot Mail					(NYI Unique)
 			ig(114265),	-- Leafscale Helm					(NYI)
 			ig(121508),	-- Stormborn Crown					(NYI)
@@ -163,7 +163,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(MAIL, {
 			ig(114315),	-- Chestguard of Meditative Focus	(NYI)
-			ig(114252), -- Leafscale Chestguard				(NYI)
+			ig(114252),	-- Leafscale Chestguard				(NYI)
 
 			ig(134732),	-- Frigidlink Armor					(Removed)
 			ig(6773),	-- Gelkis Marauder Chain			(Removed)
@@ -360,7 +360,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(108226),	-- Peerless Draenic Steel War Axe		(NYI)
 		ig(108227),	-- Peerless Draenic Steel War Axe		(NYI)
 		ig(108228),	-- Peerless Draenic Steel War Axe		(NYI)
-		ig(108229), -- Peerless Draenic Steel War Axe		(NYI)
+		ig(108229),	-- Peerless Draenic Steel War Axe		(NYI)
 		ig(115293),	-- Spectral Greataxe					(NYI)
 
 		ig(134717),	-- Cold-Touched Decapitator				(Removed)
@@ -1160,7 +1160,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			ig(105809),	-- Crest of Burning Deeds			(Ordos)
 
 			ig(92842),	-- Danio-Scale Helm					(NYI)
-			ig(114389), -- Element-Binder Helm				(NYI)
+			ig(114389),	-- Element-Binder Helm				(NYI)
 			ig(114265),	-- Leafscale Helm					(NYI)
 			ig(121508),	-- Stormborn Crown					(NYI)
 
@@ -1213,7 +1213,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		--	ig(4861),	-- Sleek Feathered Tunic			(Removed)			Added in 10.1.7 to original Source
 		}),
 		filter(MAIL, {
-			ig(114252), -- Leafscale Chestguard				(NYI)
+			ig(114252),	-- Leafscale Chestguard				(NYI)
 			ig(108218),	-- Peerless Draeneic Steel Chest	(NYI)
 			ig(93086),	-- Swashbuckling Vest				(NYI)
 
@@ -1279,7 +1279,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		ig(108046),	-- Draenic Steel War Axe			(NYI)
 		ig(189996),	-- Elegantly Balanced Axe			(NYI)(Unique)
 		ig(108228),	-- Peerless Draenic Steel War Axe	(NYI)
-		ig(108229), -- Peerless Draenic Steel War Axe	(NYI)
+		ig(108229),	-- Peerless Draenic Steel War Axe	(NYI)
 		ig(115293),	-- Spectral Greataxe				(NYI)
 		ig(134577),	-- Vanguard Decapitator				(NYI)
 

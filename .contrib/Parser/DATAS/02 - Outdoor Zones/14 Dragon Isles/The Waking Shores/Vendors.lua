@@ -48,6 +48,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(203652),	-- Griftah's All-Purpose Embellishing Powder
 				},
 			}),
+			n(187412, {	-- Happy Hal <Innkeeper>
+				["coord"] = { 81.2, 31.8, THE_WAKING_SHORES },
+				["g"] = {
+					i(194680),	-- Jerky Surprise
+				},
+			}),
 			n(186454, {	-- Kora Fullsails <Food and Provisions>
 				["coord"] = { 43.0, 67.2, THE_WAKING_SHORES },
 				["g"] = {
@@ -63,15 +69,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(197858),	-- Salt-Baked Scalebelly
 				},
 			}),
+			n(197510, {	-- Talon Scaralesh
+				["coord"] = { 47.0, 83.0, THE_WAKING_SHORES },
+				["g"] = {
+					i(200619),	-- Scaralesh's Special
+				},
+			}),
 			n(191135, {	-- Yries Lightfingers
 				["coord"] = { 26.4, 55.4, THE_WAKING_SHORES },
 				["g"] = {
-					i(193499),	-- Blacktalon Wingpack
-					i(194884),	-- Annoy-o-Tron Gang
-					i(194679),	-- BOOM-O-MATIC 90000
-					i(194890),	-- GG-117 Micro-Jetpack
-					i(194696),	-- Recycled Crawler Mine
-					i(194961),	-- Stolen Rocket Hop
 					i(199326, {	-- Chip (PET!)
 						["cost"] = {
 							{ "i", 198357, 1 },	-- 1xRock of Aegis

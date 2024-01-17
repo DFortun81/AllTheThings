@@ -430,7 +430,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						},
 					}),
 					cr(55265, e(311, {	-- Morchok
-						ach(6174),    -- Don't Stand So Close to Me
+						ach(6174),	-- Don't Stand So Close to Me
 					})),
 					cr(55308, e(324, {	-- Warlord Zon'ozz
 						ach(6128),	-- Ping Pong Champion
@@ -477,7 +477,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						ach(6105),	-- Deck Defender
 					})),
 					cr(53879, e(318, {	-- Spine of Deathwing
-						ach(6133),    -- Maybe He'll Get Dizzy...
+						ach(6133),	-- Maybe He'll Get Dizzy...
 					})),
 					cr(56173, e(333, {	-- Madness of Deathwing
 						ach(6180, {	-- Chromatic Champion
@@ -741,7 +741,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						i(78361),	-- Pillarfoot Greaves
 					})),
 					cr(55308, e(324, {	-- Warlord Zon'ozz
-						ach(6110),    -- Heroic: Warlord Zon'ozz
+						ach(6110),	-- Heroic: Warlord Zon'ozz
 						i(78853),	-- Gauntlets of the Corrupted Conqueror
 						i(78854),	-- Gauntlets of the Corrupted Protector
 						i(78855),	-- Gauntlets of the Corrupted Vanquisher
@@ -755,7 +755,7 @@ root(ROOTS.Instances, tier(CATA_TIER, {
 						i(77989),	-- Seal of the Seven Signs
 					})),
 					cr(55312, e(325, {	-- Yor'sahj the Unsleeping
-						ach(6111),    -- Heroic: Yor'sahj the Unsleeping
+						ach(6111),	-- Heroic: Yor'sahj the Unsleeping
 						i(78856),	-- Leggings of the Corrupted Conqueror
 						i(78857),	-- Leggings of the Corrupted Protector
 						i(78858),	-- Leggings of the Corrupted Vanquisher

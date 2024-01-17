@@ -2177,7 +2177,7 @@ root(ROOTS.Zones, {
 						["questID"] = 35953,
 						["coord"] = { 81.5, 13.0, DRAENOR_NAGRAND },
 						["g"] = {
-							i(116640),  -- Howling Staff
+							i(116640),	-- Howling Staff
 						},
 					}),
 					o(233079, {	-- Appropriated Warsong Supplies
@@ -2386,7 +2386,7 @@ root(ROOTS.Zones, {
 						["questID"] = 36115,
 						["coord"] = { 57.8, 62.1, DRAENOR_NAGRAND },
 						["g"] = {
-							i(118278), -- Pale Vision Potion
+							i(118278),	-- Pale Vision Potion
 						},
 					}),
 					o(233593, {	-- Polished Saberon Skull

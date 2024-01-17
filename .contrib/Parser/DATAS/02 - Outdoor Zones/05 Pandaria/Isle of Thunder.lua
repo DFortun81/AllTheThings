@@ -243,7 +243,7 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 67992 },    -- Lady Jaina Proudmoore
 									["minReputation"] = { 1387, EXALTED },    -- Kirin Tor Offensive
 									["g"] = {
-										i(95589),    -- Glorious Standard of the Kirin Tor Offensive (TOY!)
+										i(95589),	-- Glorious Standard of the Kirin Tor Offensive (TOY!)
 									},
 								}),
 								q(32549, {	-- Skin of the Saurok (A)

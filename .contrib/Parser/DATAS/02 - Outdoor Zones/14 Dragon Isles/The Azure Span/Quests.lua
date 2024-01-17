@@ -589,6 +589,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66708 },	-- Riders in the Snow
 					["provider"] = { "n", 189963 },	-- Old Grimtusk
 					["coord"] = { 59.3, 39.7, THE_AZURE_SPAN },
+					["g"] = {
+						i(193372),	-- Wood (QI!)
+					},
 				}),
 				q(66715, {	-- The Extraction
 					["sourceQuests"] = { 66709 },	-- Field Medic 101
@@ -599,6 +602,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 66715 },	-- The Extraction
 					["provider"] = { "n", 189625 },	-- Frostbite
 					["coord"] = { 58.4, 42.0, THE_AZURE_SPAN },
+					["g"] = {
+						i(193617),	-- Snowhide Totem (QI!)
+					},
 				}),
 				q(67050, {	-- Frostbite: Causes and Symptoms
 					["sourceQuests"] = { 66703 },	-- Snowball Effect
@@ -835,11 +841,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65758 },	-- Grungir the Explorer
 					["provider"] = { "n", 185806 },	-- Grungir Ironspout
 					["coord"] = { 49.0, 64.2, THE_AZURE_SPAN },
+					["g"] = {
+						i(191042),	-- Flask of Dwarven Antifreeze (QI!)
+					},
 				}),
 				q(65833, {	-- Primalist Tampering
 					["sourceQuests"] = { 65758 },	-- Grungir the Explorer
 					["provider"] = { "n", 185806 },	-- Grungir Ironspout
 					["coord"] = { 49.0, 64.2, THE_AZURE_SPAN },
+					["g"] = {
+						i(191137),	-- Julh'ek's Runestone (QI!)
+						i(191135),	-- Nai'jin's Runestone (QI!)
+						i(191136),	-- Sin'tia's Runestone (QI!)
+					},
 				}),
 				q(65834, {	-- Kill the Queen
 					["sourceQuests"] = {
@@ -1187,6 +1201,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 67036 },	-- Wrath of the Kirin Tor
 					["provider"] = { "n", 189208 },	-- Custodian Vernagos
 					["coord"] = { 46.1, 41.0, THE_AZURE_SPAN },
+					["g"] = {
+						i(192776),	-- Dormant Embercone (QI!)
+						i(192474),	-- Frozen Core (QI!)
+						i(192473),	-- Hornswog Hide Scraps (QI!)
+					},
 				}),
 			}),
 			header(HEADERS.AchCriteria, 16580.03, {	-- Setting the Defense

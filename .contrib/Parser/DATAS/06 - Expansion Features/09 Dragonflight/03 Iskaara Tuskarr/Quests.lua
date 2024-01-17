@@ -195,6 +195,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 68640 },	-- Sudden Isolation
 					["provider"] = { "n", 188301 },	-- Guard Hakota
 					["coord"] = { 55.1, 38.3, THE_WAKING_SHORES },
+					["g"] = {
+						i(191855),	-- Qalashi Trophy (QI!)
+					},
 				}),
 				q(66410, {	-- Worst Impressions
 					["sourceQuests"] = { 66409 },	-- Pressing Matters
@@ -206,13 +209,18 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 188283 },	-- Elder Unujaak
 					["coord"] = { 53.7, 37.9, THE_WAKING_SHORES },
 					["g"] = {
-						i(192191),	-- Tuskarr Fishing Net
+						i(192191),	-- Tuskarr Fishing Net (QI!)
+						i(191858),	-- Succulent Snapper Meat (QI!)
 					},
 				}),
 				q(66417, {	-- Salvaging Supplies
 					["sourceQuests"] = { 66410 },	-- Worst Impressions
 					["provider"] = { "n", 188285 },	-- Crafter Kuliqa
 					["coord"] = { 53.6, 38.0, THE_WAKING_SHORES },
+					["g"] = {
+						i(191863),	-- Waterlogged Wood (QI!)
+						i(191862),	-- Whalebone Fragment (QI!)
+					},
 				}),
 				q(66413, {	-- Encroaching Heat
 					["sourceQuests"] = { 66410 },	-- Worst Impressions

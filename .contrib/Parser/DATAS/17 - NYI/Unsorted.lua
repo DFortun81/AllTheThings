@@ -1185,73 +1185,73 @@ root(ROOTS.Unsorted, {
 			i(212769), -- Tattered Wanted Poster
 			i(215160), -- The Big Dig Rig
 			-- Quest Items
-			i(210834), -- Archivist's Earth Totem
-			i(210956), -- Archivist's Fire Totem
-			i(211266), -- Archivist's Fire Totem
-			i(210778), -- Archivist's Wind Totem
+			i(210834),	-- Archivist's Earth Totem
+			i(210956),	-- Archivist's Fire Totem
+			i(211266),	-- Archivist's Fire Totem
+			i(210778),	-- Archivist's Wind Totem
 			-- Rewards
-			i(208451), -- Archivist's Buckled Cap
-			i(212642), -- Excavator's Boots
-			i(212692), -- Excavator's Dusky Fedora
-			i(212639), -- Excavator's Glovelettes
-			i(212793), -- Excavator's Pack of Findings
-			i(212641), -- Excavator's Rugged Pants
-			i(212640), -- Excavator's Trusty Satchel
-			i(212640), -- Excavator's Utility Belt
-			i(212638), -- Excavator's Work Shirt
+			i(208451),	-- Archivist's Buckled Cap
+			i(212642),	-- Excavator's Boots
+			i(212692),	-- Excavator's Dusky Fedora
+			i(212639),	-- Excavator's Glovelettes
+			i(212793),	-- Excavator's Pack of Findings
+			i(212641),	-- Excavator's Rugged Pants
+			i(212640),	-- Excavator's Trusty Satchel
+			i(212640),	-- Excavator's Utility Belt
+			i(212638),	-- Excavator's Work Shirt
 
 			------ Love in the Air ------
 			-- Misc
-			i(210821), -- Berry Chocolate Tart
-			i(211429), -- Bundle of Love Tokens
-			i(211430), -- Bundle of Love Tokens
-			i(210841), -- Buttered Oysters
-			i(210318), -- Chocolate Bon-Bomb
-			i(210819), -- Chocolate-Covered Cherries
-			i(211810), -- Chocolate-Covered Crunchies
-			i(210929), -- Comfort Food Package
-			i(210695), -- Delightful Chocolate Sample
-			i(210658), -- Discarded Perfume Bottle
-			i(210842), -- Fresh Fig
-			i(210927), -- Fruity Cocktail Flight
-			i(210928), -- Healthy Body Package
-			i(210688), -- Manufacturing Oil
-			i(213091), -- Memo from Apothecary Hummel
-			i(210926), -- Me, Myself, and Chocolate Package
-			i(211127), -- Note from Bang Sparknozzle
-			i(211782), -- Note from Zikky
-			i(211976), -- Pink Brightbursts
-			i(211363), -- Rose of Dreams Fulfilled
-			i(211351), -- Rose of Friendship
-			i(211362), -- Rose of Independence
-			i(211361), -- Rose of Joy
-			i(211360), -- Rose of Purity
-			i(211264), -- Rose of Romance
-			i(211364), -- Rose of Tragedy
-			i(210965), -- Single-Use Bouquet
+			i(210821),	-- Berry Chocolate Tart
+			i(211429),	-- Bundle of Love Tokens
+			i(211430),	-- Bundle of Love Tokens
+			i(210841),	-- Buttered Oysters
+			i(210318),	-- Chocolate Bon-Bomb
+			i(210819),	-- Chocolate-Covered Cherries
+			i(211810),	-- Chocolate-Covered Crunchies
+			i(210929),	-- Comfort Food Package
+			i(210695),	-- Delightful Chocolate Sample
+			i(210658),	-- Discarded Perfume Bottle
+			i(210842),	-- Fresh Fig
+			i(210927),	-- Fruity Cocktail Flight
+			i(210928),	-- Healthy Body Package
+			i(210688),	-- Manufacturing Oil
+			i(213091),	-- Memo from Apothecary Hummel
+			i(210926),	-- Me, Myself, and Chocolate Package
+			i(211127),	-- Note from Bang Sparknozzle
+			i(211782),	-- Note from Zikky
+			i(211976),	-- Pink Brightbursts
+			i(211363),	-- Rose of Dreams Fulfilled
+			i(211351),	-- Rose of Friendship
+			i(211362),	-- Rose of Independence
+			i(211361),	-- Rose of Joy
+			i(211360),	-- Rose of Purity
+			i(211264),	-- Rose of Romance
+			i(211364),	-- Rose of Tragedy
+			i(210965),	-- Single-Use Bouquet
 			-- Quest Items
-			i(210431), -- Artisanal Bon-Bombs
-			i(210743), -- Borrowed Camera
-			i(211922), -- Bouquet of Flowers
-			i(210720), -- Delicate Flower
-			i(210721), -- Fanciful Flower
-			i(210416), -- Formula: Intoxicating Toxic Perfume
-			i(210719), -- Grizzly Hills Flower
-			i(210413), -- Map of Shadowfang Keep Security
-			i(210417), -- Memo from Apothecary Hummel
-			i(210332), -- O.D.I.E.'s Remote Control
-			i(211208), -- O.D.I.E.'s Remote Control
-			i(211778), -- O.D.I.E.'s Remote Control
-			i(211781), -- O.D.I.E.'s Remote Control
-			i(211923), -- Sealed Letter
+			i(210431),	-- Artisanal Bon-Bombs
+			i(210743),	-- Borrowed Camera
+			i(211922),	-- Bouquet of Flowers
+			i(210720),	-- Delicate Flower
+			i(210721),	-- Fanciful Flower
+			i(210416),	-- Formula: Intoxicating Toxic Perfume
+			i(210719),	-- Grizzly Hills Flower
+			i(210413),	-- Map of Shadowfang Keep Security
+			i(210417),	-- Memo from Apothecary Hummel
+			i(210332),	-- O.D.I.E.'s Remote Control
+			i(211208),	-- O.D.I.E.'s Remote Control
+			i(211778),	-- O.D.I.E.'s Remote Control
+			i(211781),	-- O.D.I.E.'s Remote Control
+			i(211923),	-- Sealed Letter
 			-- Rewards
-			i(211359), -- Eternal Black Rose
-			i(211358), -- Eternal Blue Rose
-			i(211357), -- Eternal Orange Rose
-			i(211355), -- Eternal Pink Rose
-			i(211354), -- Eternal White Rose
-			i(211352), -- Eternal Yellow Rose
-			i(190670), -- Sanguine Bouquet
+			i(211359),	-- Eternal Black Rose
+			i(211358),	-- Eternal Blue Rose
+			i(211357),	-- Eternal Orange Rose
+			i(211355),	-- Eternal Pink Rose
+			i(211354),	-- Eternal White Rose
+			i(211352),	-- Eternal Yellow Rose
+			i(190670),	-- Sanguine Bouquet
 
 			------ Hearthstone ------
 			-- Misc
@@ -2047,7 +2047,6 @@ root(ROOTS.Unsorted, {
 				i(195460),	-- Fermented Musken Milk
 				i(198674),	-- Filled Life Pools Vial
 				i(200847),	-- Frail Shield
-				i(195466),	-- Frenzy and Chips
 				i(198479),	-- Gale Rider
 				i(200607),	-- Half-Eaten Banana
 				i(200845),	-- Heavily Deformed Mace
@@ -2867,8 +2866,6 @@ root(ROOTS.Unsorted, {
 		i(199687),	-- BWU Test Hammer
 		i(199690),	-- BWU Test Profession Accessory
 		--
-		i(194681),	-- Sugarwing Cupcake
-		i(194683),	-- Buttermilk
 		i(198538),	-- Magically Bound Message
 		i(198626),	-- Dislodged Dragoneye
 		i(200528),	-- Glowing Arcane Jewel

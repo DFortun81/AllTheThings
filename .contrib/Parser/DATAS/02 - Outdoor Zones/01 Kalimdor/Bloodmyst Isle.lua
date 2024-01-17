@@ -1157,8 +1157,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(18, 18, 1),
 					["groups"] = {
 						i(24344),	-- Tabard of the Hand
-						i(24349),   -- Signet Ring of the Hand
-						i(24350),   -- Signet Ring of the Hand
+						i(24349),	-- Signet Ring of the Hand
+						i(24350),	-- Signet Ring of the Hand
 					},
 				}),
 				q(9633, {	-- The Way to Auberdine

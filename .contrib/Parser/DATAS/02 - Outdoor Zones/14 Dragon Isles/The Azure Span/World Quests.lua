@@ -82,7 +82,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				q(70064, {	-- For Imbu!
-					-- ["coord"] = { XX, YY, THE_AZURE_SPAN },
+					["coord"] = { 58.4, 66.4, THE_AZURE_SPAN },
+					["g"] = {
+						i(199646),	-- Imbu Tuskarr Bandages (QI!)
+					},
 				}),
 				q(69941, {	-- Frozen Victims
 					["coord"] = { 50.9, 60.5, THE_AZURE_SPAN },

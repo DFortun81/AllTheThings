@@ -569,7 +569,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 47.1, 82.9, THE_WAKING_SHORES },
 				["g"] = {
 					i(196440),	-- Dragon Flight
-					i(194691),	-- Artisnal Berry Juice
+					i(194691),	-- Artisanal Berry Juice
 					i(201089),	-- Craft Creche Crowler
 				},
 			}),

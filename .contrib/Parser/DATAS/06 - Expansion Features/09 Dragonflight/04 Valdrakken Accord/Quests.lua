@@ -237,13 +237,19 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							["provider"] = { "n", 192480 },	-- Watcher Karanos
 							["coord"] = { 60.4, 58.9, THALDRASZUS },
 							["g"] = {
-								i(198355),	-- Tyrhold Conduit
+								i(197862),	-- Primary Security Disc (QI!)
+								i(197863),	-- Secondary Security Disc (QI!)
+								i(198355),	-- Tyrhold Conduit (QI!)
 							}
 						}),
-						q(67081, {	-- An Infusion of Materials
+						q(67081, {	-- Halls of Infusion: An Infusion of Materials
 							["sourceQuests"] = { 67079 },	-- Hard Lock Life
 							["provider"] = { "n", 192496 },	-- Keeper Tyr
 							["coord"] = { 60.5, 58.6, THALDRASZUS },
+							["maps"] = { 2082, 2083 },	-- Halls of Infusion
+							["g"] = {
+								i(198038),	-- Ancient Titansteel Ingot (QI!)
+							},
 						}),
 						q(67084, {	-- The Silver Purpose
 							["sourceQuests"] = { 67081 },	-- An Infusion of Materials

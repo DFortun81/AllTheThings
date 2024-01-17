@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["coord"] = { 59.7, 77.2, VALSHARAH },
 				["questID"] = 38468,
 				["g"] = {
-					i(130154),  -- Pygmy Owl (PET!)
+					i(130154),	-- Pygmy Owl (PET!)
 				},
 			}),
 			n(95123,  {	-- Grelda the Hag

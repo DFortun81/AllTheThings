@@ -55,6 +55,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(72030, {	-- Fishing Frenzy!
 					["coord"] = { 33.6, 63.2, THE_WAKING_SHORES },
+					["g"] = {
+						i(200854),	-- Cooked Caviar (QI!)
+					},
 				}),
 				q(67014, {	-- Gorlocs No More-locs
 					["coord"] = { 80, 39.6, THE_WAKING_SHORES },
@@ -88,6 +91,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(66896, {	-- Net Income
 					["coord"] = { 51.6, 35.1, THE_WAKING_SHORES },
+					["g"] = {
+						i(191857),	-- Warmwater Riverfish (QI!)
+					},
 				}),
 				pvp(q(72008, {	-- Overcoming a Mountain: Krolkoth
 					["coord"] = { 43.2, 58, THE_WAKING_SHORES },

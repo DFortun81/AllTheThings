@@ -143,6 +143,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				},
 			}),
+			n(192814, {	-- Kritha <Barkeep>
+				["coord"] = { 47.2, 41.6, VALDRAKKEN },
+				["g"] = {
+					i(201327),	-- Emerald Dreamtime
+				},
+			}),
 			n(193029, {	-- Lysindra
 				["coord"] = { 48.2, 82.7, VALDRAKKEN },
 				["g"] = {
@@ -210,6 +216,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(203443, {	-- Box of Leapmaize Crackers (QI!)
 						["timeline"] = { ADDED_10_1_5 },
 					}),
+				},
+			}),
+			n(196640, {	-- Yzinia <Innkeeper>
+				["coord"] = { 22.6, 30.8, VALDRAKKEN },
+				["g"] = {
+					i(200099),	-- M.R.E.
 				},
 			}),
 			n(196975, {	-- Zinfandormu <Sommelier>

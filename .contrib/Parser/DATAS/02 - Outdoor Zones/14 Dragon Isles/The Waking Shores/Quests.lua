@@ -1002,6 +1002,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
 					["g"] = {
 						i(197361),	-- Renewed Proto-Drake: Spiked Crest (DM!)
+						i(198979),	-- Time Capsule Letter
 						i(198430),	-- Time Capsule (QI!)
 					},
 				}),

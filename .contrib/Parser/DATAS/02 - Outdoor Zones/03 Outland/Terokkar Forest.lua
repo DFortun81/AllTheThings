@@ -391,7 +391,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/1 Blackfin Darter
 								["provider"] = { "i", 34865 },	-- Blackfin Darter
 							}),
-							i(34863),  -- Bag of Fishing Treasures
+							i(34863),	-- Bag of Fishing Treasures
 						},
 					}),
 					q(11665, {  -- Crocolisks in the City
@@ -417,7 +417,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/1 Monstrous Felblood Snapper
 								["provider"] = { "i", 34867 },	-- Monstrous Felblood Snapper
 							}),
-							i(34863),  -- Bag of Fishing Treasures
+							i(34863),	-- Bag of Fishing Treasures
 						},
 					}),
 					q(11668, {	-- Shrimpin' Ain't Easy
@@ -430,7 +430,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/10 Giant Freshwater Shrimp
 								["provider"] = { "i", 34866 },	-- Giant Freshwater Shrimp
 							}),
-							i(34863),  -- Bag of Fishing Treasures
+							i(34863),	-- Bag of Fishing Treasures
 						},
 					}),
 					q(11667, {	-- The One That Got Away
@@ -443,7 +443,7 @@ root(ROOTS.Zones, {
 							objective(1, {	-- 0/1 World's Largest Mudfish
 								["provider"] = { "i", 34868 },	-- World's Largest Mudfish
 							}),
-							i(34863),  -- Bag of Fishing Treasures
+							i(34863),	-- Bag of Fishing Treasures
 						},
 					}),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11885, {	-- Adversarial Blood

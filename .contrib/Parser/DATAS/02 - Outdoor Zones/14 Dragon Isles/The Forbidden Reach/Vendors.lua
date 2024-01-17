@@ -32,6 +32,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					}),
 				},
 			}),
+			n(200987, {	-- Fusethrian <Munitions & Aspiring Sous-chef>
+				["coord"] = { 34.2, 59.8, THE_FORBIDDEN_REACH },
+				["g"] = {
+					i(200305),	-- Dracthyr Water Rations
+					i(200304),	-- Stored Dracthyr Rations
+				},
+			}),
 			n(200563, {	-- Kraxxus
 				["coord"] = { 34.2, 60.0, THE_FORBIDDEN_REACH },
 				["g"] = {

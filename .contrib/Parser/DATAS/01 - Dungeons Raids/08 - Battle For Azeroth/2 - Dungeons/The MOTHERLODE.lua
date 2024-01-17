@@ -121,7 +121,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 						132713,	-- Mogul Razdunk
 					},
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
-						ach(12844),  -- The MOTHERLODE!!
+						ach(12844),	-- The MOTHERLODE!!
 						i(159641),	-- G3T-00t
 						i(158364),	-- High Altitude Turban
 						i(159360),	-- Crashguard Spaulders

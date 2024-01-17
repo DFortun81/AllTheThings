@@ -846,6 +846,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["provider"] = { "n", 186300 },	-- Skyscribe Adenedal
 					["coord"] = { 64.0, 18.3, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(193355),	-- Map of Nelthazan Ruins (QI!)
+						i(198079),	-- Orders from Sarkareth (QI!)
+						i(198078),	-- Recruitment Roster (QI!)
+						i(193357),	-- Shattered Ornament (QI!)
+					},
 				}),
 				q(66719, {	-- One Step Backwards
 					["sourceQuests"] = { 65895 },	-- Competing Company
@@ -1258,7 +1264,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["classes"] = { EVOKER },
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 				["groups"] = {
-					i(198455),	-- Tangled Roots (First item dropped while fishing/doesn't stay in bags)
+					i(198456),	-- Oliveye Fry (QI!)
+					i(198455),	-- Tangled Roots (QI!)
 				},
 			}),
 			q(70319, {	-- Nergazurai

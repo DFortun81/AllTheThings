@@ -1518,7 +1518,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 68.9, 43.2, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56133 },	-- Chen Stormsout
 						["g"] = {
-							i(88375),  -- Turnip Punching Bag (TOY!)
+							i(88375),	-- Turnip Punching Bag (TOY!)
 						},
 					}),
 					q(29949, {	-- Legacy

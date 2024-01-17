@@ -2246,12 +2246,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 79.2, 28.8, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(30777),    -- Aldor Heavy Belt
-							i(30771),    -- Heavy Draenic Bracers
-							i(30765),    -- Heavy Draenic Breastplate
-							i(30775),    -- Layered Bone Shield
-							i(30781),    -- Mag'hari Chain Vest
-							i(30784),    -- Worn Mag'hari Gauntlets
+							i(30777),	-- Aldor Heavy Belt
+							i(30771),	-- Heavy Draenic Bracers
+							i(30765),	-- Heavy Draenic Breastplate
+							i(30775),	-- Layered Bone Shield
+							i(30781),	-- Mag'hari Chain Vest
+							i(30784),	-- Worn Mag'hari Gauntlets
 							-- These 6 items could be symlinked to 6 more vendors
 						},
 					}),
@@ -2259,12 +2259,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 59.6, 63.6, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(30777),    -- Aldor Heavy Belt
-							i(30771),    -- Heavy Draenic Bracers
-							i(30765),    -- Heavy Draenic Breastplate
-							i(30775),    -- Layered Bone Shield
-							i(30781),    -- Mag'hari Chain Vest
-							i(30784),    -- Worn Mag'hari Gauntlets
+							i(30777),	-- Aldor Heavy Belt
+							i(30771),	-- Heavy Draenic Bracers
+							i(30765),	-- Heavy Draenic Breastplate
+							i(30775),	-- Layered Bone Shield
+							i(30781),	-- Mag'hari Chain Vest
+							i(30784),	-- Worn Mag'hari Gauntlets
 							-- These 6 items could be symlinked to 6 more vendors
 						},
 					}),

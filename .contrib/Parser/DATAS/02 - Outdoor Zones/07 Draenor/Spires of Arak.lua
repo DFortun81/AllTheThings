@@ -2162,7 +2162,7 @@ root(ROOTS.Zones, {
 								i(116915, {	-- Inactive Apexis Guardian
 									["isLimited"] = true,
 									["g"] = {
-										follower(168),  -- Ziri'ak
+										follower(168),	-- Ziri'ak
 									},
 								}),
 								i(113277, {	-- Ogreblood Potion
@@ -2205,7 +2205,7 @@ root(ROOTS.Zones, {
 								i(116915, {	-- Inactive Apexis Guardian
 									["isLimited"] = true,
 									["g"] = {
-										follower(168),  -- Ziri'ak
+										follower(168),	-- Ziri'ak
 									},
 								}),
 								i(113277, {	-- Ogreblood Potion

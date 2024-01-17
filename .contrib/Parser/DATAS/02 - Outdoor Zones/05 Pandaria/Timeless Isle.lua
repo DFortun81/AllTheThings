@@ -1417,8 +1417,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 62.2, 63.2, TIMELESS_ISLE },
 						["g"] = {
-							i(104262), 	-- Odd Polished Stone (TOY!)
-							i(104263), 	-- Glinting Pile of Stone
+							i(104262),	-- Odd Polished Stone (TOY!)
+							i(104263),	-- Glinting Pile of Stone
 						},
 					}),
 					n(73161,  {	-- Great Turtle Furyshell
@@ -1443,7 +1443,7 @@ root(ROOTS.Zones, {
 							{ 32.4, 78.2, TIMELESS_ISLE },
 						},
 						["g"] = {
-							i(104290), 	-- Sticky Silkworm Goo
+							i(104290),	-- Sticky Silkworm Goo
 							i(104291),	-- Gu'chi Swarmling (PET!)
 						},
 					}),
@@ -1454,7 +1454,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 66.0, 58.8, TIMELESS_ISLE },
 						["g"] = {
 							i(104286),	-- Quivering Firestorm Egg
-							i(104269), 	-- Thundering Onyx Cloud Serpent (MOUNT!)
+							i(104269),	-- Thundering Onyx Cloud Serpent (MOUNT!)
 						},
 					}),
 					n(73163,  {	-- Imperial Python
@@ -1601,8 +1601,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 57.6, 76.6, TIMELESS_ISLE },
 						["g"] = {
-							i(104296), 	-- Ordon Ceremonial Robes
-							i(104305), 	-- Ashen Stone
+							i(104296),	-- Ordon Ceremonial Robes
+							i(104305),	-- Ashen Stone
 						},
 					}),
 					n(71876, {	-- Zarhym
@@ -1619,7 +1619,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 47.0, 87.4, TIMELESS_ISLE },	-- mapID needs verification
 						["g"] = {
-							i(104303), 	-- Rain Stone
+							i(104303),	-- Rain Stone
 						},
 					}),
 					n(71919,  {	-- Zhu-Gon the Sour
@@ -1628,7 +1628,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 37.8, 77.2, TIMELESS_ISLE },
 						["g"] = {
-							i(104167), 	-- Skunky Alemental (PET!)
+							i(104167),	-- Skunky Alemental (PET!)
 						},
 					}),
 				}),
@@ -2703,7 +2703,7 @@ root(ROOTS.Zones, {
 						}),
 						i(101791),	-- Cliffbreaker Gauntlets
 						i(101853),	-- Elder Tortoiseshell Gauntlets
-						i(101820),  -- Everbright Gauntlets
+						i(101820),	-- Everbright Gauntlets
 					}),
 					i(102269, {	-- Timeless Plate Belt
 						n(BURDEN_OF_ETERNITY, {

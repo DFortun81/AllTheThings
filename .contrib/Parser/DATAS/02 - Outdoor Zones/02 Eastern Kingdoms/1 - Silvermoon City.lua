@@ -708,20 +708,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						17190,    -- Ornate Buckler
 					}},
 					["groups"] = {
-						i(2424),    -- Brigandine Belt
-						i(2426),    -- Brigandine Boots
-						i(2427),    -- Brigandine Bracers
-						i(2428),    -- Brigandine Gloves
-						i(3894),    -- Brigandine Helm
-						i(2425),    -- Brigandine Leggings
-						i(2423),    -- Brigandine Vest
-						i(8094),    -- Platemail Armor
-						i(8088),    -- Platemail Belt
-						i(8089),    -- Platemail Boots
-						i(8090),    -- Platemail Bracers
-						i(8091),    -- Platemail Gloves
-						i(8092),    -- Platemail Helm
-						i(8093),    -- Platemail Leggings
+						i(2424),	-- Brigandine Belt
+						i(2426),	-- Brigandine Boots
+						i(2427),	-- Brigandine Bracers
+						i(2428),	-- Brigandine Gloves
+						i(3894),	-- Brigandine Helm
+						i(2425),	-- Brigandine Leggings
+						i(2423),	-- Brigandine Vest
+						i(8094),	-- Platemail Armor
+						i(8088),	-- Platemail Belt
+						i(8089),	-- Platemail Boots
+						i(8090),	-- Platemail Bracers
+						i(8091),	-- Platemail Gloves
+						i(8092),	-- Platemail Helm
+						i(8093),	-- Platemail Leggings
 					},
 				}),
 				n(16442, {	-- Vinemaster Suntouched <Wine & Spirits Merchant>

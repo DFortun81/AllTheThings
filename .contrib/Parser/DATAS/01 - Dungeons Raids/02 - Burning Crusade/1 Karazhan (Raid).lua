@@ -654,7 +654,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							-- #endif
 						}),
 						-- #if AFTER 6.0.2
-						r(27920,{["timeline"] = {"added 2.0.1","removed 6.0.2"}}),    -- Striking
+						r(27920,{["timeline"] = {"added 2.0.1","removed 6.0.2"}}),	 -- Striking
 						-- #endif
 					},
 				}),

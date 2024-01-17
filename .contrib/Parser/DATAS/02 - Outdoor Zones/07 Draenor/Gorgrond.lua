@@ -2409,7 +2409,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 59.6, 43.0, GORGROND },
 						["g"] = {
-							i(119414),  -- Yal's Leafwrap Cloak
+							i(119414),	-- Yal's Leafwrap Cloak
 						},
 					}),
 					n(83522, {	-- Hive Queen Skrikka

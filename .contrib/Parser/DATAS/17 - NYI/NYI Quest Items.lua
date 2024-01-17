@@ -292,11 +292,10 @@ root(ROOTS.NeverImplemented, {
 
 			-- 10.0.2
 			tier(DF_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
+				i(198848),	-- Flyspawn Thorax
 				i(199798),	-- Makko's Journal - Page Seven
-
-				--- Might Appear In Game ---
-				i(202001),	-- Passing Renascence (catalyst s1 item for charge)
-				i(191857),	-- Warmwater Riverfish
+				i(194423),	-- Maruuk's Spear
+				i(194421),	-- Teera's Bow
 			})),
 
 			-- 10.0.7

@@ -243,62 +243,62 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(157608, { -- Groundrumble Boots
 							["timeline"] = { ADDED_7_3_5 },
 						}),
-						i(56311), -- Inquisition Robes
-						i(56313), -- Manacles of Pain
-						i(56314), -- Shield of the Iron Maiden
-						i(56310), -- Skullcracker Ring
-						i(56312), -- Torturer's Mercy
+						i(56311),	-- Inquisition Robes
+						i(56313),	-- Manacles of Pain
+						i(56314),	-- Shield of the Iron Maiden
+						i(56310),	-- Skullcracker Ring
+						i(56312),	-- Torturer's Mercy
 					},
 				}),
 				e(106, {  -- Corla, Herald of Twilight
 					["crs"] = { 39679 },	-- Corla, Herald of Twilight
 					["groups"] = {
-						i(56297), -- Armbands of Change
-						i(56296), -- Corla's Baton
-						i(56295), -- Grace of the Herald
-						i(56298), -- Renouncer's Cowl
-						i(56299), -- Signet of Transformation
+						i(56297),	-- Armbands of Change
+						i(56296),	-- Corla's Baton
+						i(56295),	-- Grace of the Herald
+						i(56298),	-- Renouncer's Cowl
+						i(56299),	-- Signet of Transformation
 					},
 				}),
 				e(107, {  -- Karsh Steelbender
 					["crs"] = { 39698 },	-- Karsh Steelbender
 					["groups"] = {
-						i(56301), -- Bracers of Cooled Anger
-						i(56304), -- Burned Gatherings
-						i(56303), -- Heat Wave Leggings
+						i(56301),	-- Bracers of Cooled Anger
+						i(56304),	-- Burned Gatherings
+						i(56303),	-- Heat Wave Leggings
 						i(157610, { -- Heat-Shielded Tunic
 							["timeline"] = { ADDED_7_3_5 },
 						}),
-						i(56300), -- Quicksilver Amulet
-						i(56302), -- Steelbender's Masterpiece
+						i(56300),	-- Quicksilver Amulet
+						i(56302),	-- Steelbender's Masterpiece
 					},
 				}),
 				e(108, {  -- Beauty
 					["crs"] = { 39700 },	-- Beauty
 					["groups"] = {
-						i(56305), -- Beauty's Silken Ribbon
-						i(56306), -- Beauty's Favorite Bone
-						i(56308), -- Beauty's Plate
-						i(56309), -- Beauty's Chew Toy
+						i(56305),	-- Beauty's Silken Ribbon
+						i(56306),	-- Beauty's Favorite Bone
+						i(56308),	-- Beauty's Plate
+						i(56309),	-- Beauty's Chew Toy
 						i(157607, { -- Gently Gnawed Hauberk
 							["timeline"] = { ADDED_7_3_5 },
 						}),
-						i(56307), -- Kibble
+						i(56307),	-- Kibble
 					},
 				}),
 				e(109, {  -- Ascendent Lord Obsidius
 					["crs"] = { 39705 },	-- Ascendent Lord Obsidius
 					["groups"] = {
 						ach(4833),	-- Blackrock Caverns
-						i(56317), -- Amber Messenger
-						i(56319), -- Carrier Wave Pendant
-						i(56323), -- Clutches of Dying Light
-						i(56322), -- Crepuscular Shield
-						i(56324), -- Kyrstel Mantle
-						i(56318), -- Raz's Pauldrons
-						i(56315), -- Twitching Shadows
-						i(56321), -- Willowy Crown
-						i(56320), -- Witching Hourglass
+						i(56317),	-- Amber Messenger
+						i(56319),	-- Carrier Wave Pendant
+						i(56323),	-- Clutches of Dying Light
+						i(56322),	-- Crepuscular Shield
+						i(56324),	-- Kyrstel Mantle
+						i(56318),	-- Raz's Pauldrons
+						i(56315),	-- Twitching Shadows
+						i(56321),	-- Willowy Crown
+						i(56320),	-- Witching Hourglass
 					},
 				}),
 			}),

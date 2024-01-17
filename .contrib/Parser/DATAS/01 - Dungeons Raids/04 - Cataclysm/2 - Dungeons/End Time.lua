@@ -53,7 +53,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_3_0 },
 					["sourceQuest"] = 30096,	-- Murozond
 				}),
 			}),
-			n(ZONE_DROPS, sharedData({ ["modID"] = 2, }, { 
+			n(ZONE_DROPS, sharedData({ ["modID"] = 2, }, {
 				i(76154, {	-- Breastplate of Despair
 					["crs"] = {
 						54920,	-- Infinite Suppressor
@@ -94,19 +94,19 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_3_0 },
 						54544,	-- Echo of Tyrande
 					},
 					["groups"] = {
-						i(72801), -- Breastplate of Sorrow
-						i(72798), -- Cord of Lost Hope
-						i(72799), -- Dead End Boots
-						i(72804), -- Dragonshrine Scepter
-						i(72806), -- Echoing Headguard
-						i(72800), -- Gauntlets of Temporal Interference
-						i(72803), -- Girdle of Lost Heroes
-						i(72805), -- Gloves of The Hollow
-						i(72802), -- Time Traveler's Leggings
+						i(72801),	-- Breastplate of Sorrow
+						i(72798),	-- Cord of Lost Hope
+						i(72799),	-- Dead End Boots
+						i(72804),	-- Dragonshrine Scepter
+						i(72806),	-- Echoing Headguard
+						i(72800),	-- Gauntlets of Temporal Interference
+						i(72803),	-- Girdle of Lost Heroes
+						i(72805),	-- Gloves of The Hollow
+						i(72802),	-- Time Traveler's Leggings
 						i(157606, { -- Time-Dessicated Girdle
 							["timeline"] = { ADDED_7_3_5 },
 						}),
-						i(72807), -- Waistguard of Lost Time
+						i(72807),	-- Waistguard of Lost Time
 					},
 				}),
 				e(340, {	-- Echo of Baine
@@ -127,8 +127,8 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_3_0 },
 					["crs"] = { 54123 },	-- Echo of Sylvannas
 					["groups"] = {
 						ach(6130),	-- Severed Ties
-						i(72811), -- Cloak of the Banshee Queen
-						i(72810), -- Windrunner's Bow
+						i(72811),	-- Cloak of the Banshee Queen
+						i(72810),	-- Windrunner's Bow
 					},
 				}),
 				e(283, {	-- Echo of Tyrande
@@ -144,18 +144,18 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_3_0 },
 					["groups"] = {
 						ach(6117),	-- Heroic: End Time
 						ach(6120),	-- Heroic: End Time Guild Run
-						i(72897), -- Arrow of Time
-						i(72818), -- Breastplate of Tarnished Bronze
-						i(72819), -- Chrono Boots
-						i(72820), -- Crown of Epochs
-						i(72816), -- Distortion Greaves
-						i(72822), -- Jagged Edge of Time
-						i(72825), -- Mantle of Time
-						i(72826), -- Robes of Fate
-						i(72821), -- Temporal Pauldrons
-						i(72817), -- Time Altered Legguards
-						i(72824), -- Time Twisted Tunic
-						i(72823), -- Timeway Headgear
+						i(72897),	-- Arrow of Time
+						i(72818),	-- Breastplate of Tarnished Bronze
+						i(72819),	-- Chrono Boots
+						i(72820),	-- Crown of Epochs
+						i(72816),	-- Distortion Greaves
+						i(72822),	-- Jagged Edge of Time
+						i(72825),	-- Mantle of Time
+						i(72826),	-- Robes of Fate
+						i(72821),	-- Temporal Pauldrons
+						i(72817),	-- Time Altered Legguards
+						i(72824),	-- Time Twisted Tunic
+						i(72823),	-- Timeway Headgear
 					},
 				}),
 			}),

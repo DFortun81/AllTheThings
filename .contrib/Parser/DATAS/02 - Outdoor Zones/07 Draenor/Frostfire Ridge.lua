@@ -1306,7 +1306,7 @@ root(ROOTS.Zones, {
 							o(224686, {	-- Devourer's Gutstone
 								["icon"] = "Interface\\Icons\\INV_Elemental_Primal_Fire",
 								["g"] = {
-									i(112110),  -- Carapace Shield of the Devourer
+									i(112110),	-- Carapace Shield of the Devourer
 								},
 							}),
 						},

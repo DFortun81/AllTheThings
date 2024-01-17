@@ -343,6 +343,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 66013 },	-- Investigate the Door
 					["provider"] = { "n", 186870 },	-- Naleidea Rivergleam
 					["coord"] = { 54.5, 55.7, THALDRASZUS },
+					["g"] = {
+						i(197958),	-- Watcher Log (QI!)
+					},
 				}),
 				q(66094, {	-- The Ruins of Szat Skeleth
 					["sourceQuests"] = { 66673 },	-- Speak to Koranos
@@ -363,6 +366,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 66094 },	-- The Ruins of Szat Skeleth
 					["provider"] = { "n", 191159 },	-- Toddy Whiskers
 					["coord"] = { 40.0, 67.5, OHNAHRAN_PLAINS },
+					["g"] = {
+						i(193070),	-- The Insight of Tyr (QI!)
+					},
 				}),
 				q(70766, {	-- The Fractured Flame
 					["sourceQuests"] = { 70507 },	-- The Insight of Tyr
@@ -395,6 +401,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 70785 },	-- The City of the Dead
 					["provider"] = { "n", 190855 },	-- Naleidea Rivergleam
 					["coord"] = { 62.2, 18.3, THALDRASZUS },
+					["g"] = {
+						i(193072),	-- The Judgment of Tyr (QI!)
+					},
 				}),
 				q(66128, {	-- Next Steps
 					["sourceQuests"] = {

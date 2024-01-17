@@ -136,7 +136,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							134069,	-- Vol'zith the Whisperer
 						},
 						["g"] = {
-							ach(12837),  -- Heroic: Shrine of the Storm
+							ach(12837),	-- Heroic: Shrine of the Storm
 							i(159135),	-- Deep Fathom's Bite
 							i(159302),	-- Cowl of Fluid Machiantions
 							i(159430),	-- Helm of Abyssal Malevolence

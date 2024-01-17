@@ -1510,7 +1510,6 @@ root(ROOTS.NeverImplemented, {
 			i(190672),	-- Deathguard Acolyte's Cloak
 			i(189869),	-- Distinguished Warcloak
 			i(190068),	-- Emerald Drape
-			i(67108),	-- Lord Godfrey's Old Spectacles
 			i(190201),	-- Sin'dorei Assassin's Shroud
 
 			-- 10.0.0

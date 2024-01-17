@@ -1123,7 +1123,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 80.6, 56.4, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 						["g"] = {
-							i(108633), 	-- Crashin' Thrashin' Cannon Controller (TOY!)
+							i(108633),	-- Crashin' Thrashin' Cannon Controller (TOY!)
 						},
 					}),
 					n(92941, {	-- Gorabosh
@@ -1368,7 +1368,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coord"] = { 88.2, 55.4, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 						["g"] = {
-							i(108634), 	-- Crashin' Thrashin' Mortar Controller (TOY!)
+							i(108634),	-- Crashin' Thrashin' Mortar Controller (TOY!)
 						},
 					}),
 					n(92495, {	-- Soulslicer
@@ -1687,7 +1687,7 @@ root(ROOTS.Zones, {
 							38463,	-- The Cipher of Damnation [H]
 						},
 						["g"] = {
-							i(128309),  -- Shard of Cyrukh (PET!)
+							i(128309),	-- Shard of Cyrukh (PET!)
 						},
 					}),
 					o(241712, {	-- Ironbeard's Treasure
@@ -1947,7 +1947,7 @@ root(ROOTS.Zones, {
 							i(128441, {	-- Contract: Solar Priest Vayx
 								["cost"] = { { "c", 823, 1000 }, },	-- 1,000x Apexis Crystal
 								["g"] = {
-									follower(582),  -- Solar Priest Vayx
+									follower(582),	-- Solar Priest Vayx
 								},
 							}),
 							-- currency(1191, {	-- Valor

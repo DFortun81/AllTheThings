@@ -317,8 +317,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 70510 },	-- Victorious
 					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["coord"] = { 83.9, 53.2, VALDRAKKEN },
+					["maps"] = { 2082, 2083 },	-- Halls of Infusion
 					["g"] = {
 						i(199197),	-- Bottled Essence
+						i(200108),	-- Irideus' Power Core (QI!)
 					},
 				}),
 				------ Chapter 6 ------
