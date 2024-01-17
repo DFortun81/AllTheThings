@@ -175,6 +175,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				--
 				q(79226, {	-- The Big Dig: Traitor's Rest
 					["coord"] = { 61.6, 31.3, THALDRASZUS },
+					["maps"] = { THE_AZURE_SPAN },
 					["isWeekly"] = true,
 					["provider"] = { "n", 112802 },	-- Eadweard Dalyngrigge
 					["g"] = {
@@ -185,12 +186,40 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(RARES, {
 				n(208029, {	-- Doomshadow
-					i(212645),	-- Clayscale Hornstrider (MOUNT!)
-					i(213365), -- Carved Cave Crystal
-					i(213021), -- Corked Drakonid Vial
-					i(213429),	-- Meticulous Archivist's Appendix
-					i(213208),	-- Pot of Pickled Ancheevies
-					i(212650),	-- Pot of Tattooing Ink
+					["coord"] = { 27.75, 46.20, THE_AZURE_SPAN },
+					["g"] = {
+						i(212645),	-- Clayscale Hornstrider (MOUNT!)
+						i(213389, {	-- Ancient Centaur Diary
+							["g"] = {
+								currency(2657),	-- Mysterious Fragment
+							},
+						}),
+						i(213365, {	-- Carved Cave Crystal
+							["g"] = {
+								currency(2657),	-- Mysterious Fragment
+							},
+						}),
+						i(213021, {	-- Corked Drakonid Vial
+							["g"] = {
+								currency(2657),	-- Mysterious Fragment
+							},
+						}),
+						i(213429, {	-- Meticulous Archivist's Appendix
+							["g"] = {
+								currency(2657),	-- Mysterious Fragment
+							},
+						}),
+						i(213208, {	-- Pot of Pickled Ancheevies
+							["g"] = {
+								currency(2657),	-- Mysterious Fragment
+							},
+						}),
+						i(212650, {	-- Pot of Tattooing Ink
+							["g"] = {
+								currency(2657),	-- Mysterious Fragment
+							},
+						}),
+					},
 				}),
 			}),
 			n(VENDORS, {

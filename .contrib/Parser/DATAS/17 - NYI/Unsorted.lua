@@ -792,7 +792,6 @@ root(ROOTS.Unsorted, {
 				i(211949),	-- Durumu's Glass Pupil
 				------
 				i(212766),	-- Amphora Fragment
-				i(213389),	-- Ancient Centaur Diary
 				i(213362),	-- Ancient Drakonid Candy
 				i(213029),	-- Bent Drakonid Fork
 				i(213210),	-- Bloodied Banner Scrap
@@ -881,12 +880,8 @@ root(ROOTS.Unsorted, {
 				i(213277),	-- Smudged Snippet of Poetry
 				i(213045),	-- Snapped Djaradin Necklace
 				i(212763),	-- Spoiled Honeywine
-				i(213385),	-- Stiff Brush
-				i(213366),	-- Strip of Niffen Headwear
-				i(213216),	-- Strip of Notched Leather
 				i(213040),	-- Tarnished Djaradin Amulet
 				i(213386),	-- Unearthed Stone Arrowhead
-				i(213380),	-- Unidentifiable Equine Fossil
 				i(213203),	-- Velvet Nightcap
 				i(213032),	-- Warped Drakonid Jar
 				i(213212),	-- Whalebone Knife
