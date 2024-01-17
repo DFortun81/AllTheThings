@@ -1698,7 +1698,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { WARRIOR },
-					["races"] = ALLIANCE_ONLY,
+					["races"] = { DWARF, GNOME },
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
 				}),
