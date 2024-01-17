@@ -469,6 +469,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(67061),	-- triggered after 'Anything But a Breeze' (questID 67068) (spellID 377499)
 		q(72010),	-- triggered after 'What a Long, Sweet Trip It's Been' (questID 67071) (spellID 391779)
 		q(65041),	-- Talked with Scalecommanders Cindretresh and Azurathel (spellID 388943)
+		q(79652),	-- 'Stay a while and listen' with Kalecgos and Khadgar (patch 10.2.5)
+		q(79632),	-- 'Stay a while and listen' with  Wrathion and Sabellian (patch 10.2.5)
 	}),
 }));
 
