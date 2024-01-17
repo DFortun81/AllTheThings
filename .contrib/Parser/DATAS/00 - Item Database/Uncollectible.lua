@@ -1038,3 +1038,9 @@ i(210451);	-- Imp Tail
 i(210445);	-- Ash Pouch
 i(210452);	-- Small Demon Horn
 i(211270);	-- Pristine Core Leather
+
+------------------
+-- PATCH 10.2.5 --
+------------------
+--- Trash ---
+i(207460);	-- Dreadsquall Eggshell Fragment

@@ -1181,7 +1181,6 @@ root(ROOTS.Unsorted, {
 			i(213022), -- Drakonid Blacksmith Hammer
 			i(212976), -- Drakonid Duck Carving
 			i(212977), -- Drakonid Sign Placard
-			i(207460), -- Dreadsquall Eggshell Fragment
 			i(213177), -- Immaculate Tome
 			i(213183), -- Makeshift Beaded Bracelet
 			i(213429), -- Meticulous Archivist's Appendix
@@ -1207,8 +1206,6 @@ root(ROOTS.Unsorted, {
 			i(210956), -- Archivist's Fire Totem
 			i(211266), -- Archivist's Fire Totem
 			i(210778), -- Archivist's Wind Totem
-			i(202247), -- Technoscryers
-			i(205455), -- Telescope Lens
 			-- Rewards
 			i(208451), -- Archivist's Buckled Cap
 			i(212642), -- Excavator's Boots

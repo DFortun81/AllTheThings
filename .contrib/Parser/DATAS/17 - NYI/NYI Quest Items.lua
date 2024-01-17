@@ -336,7 +336,6 @@ root(ROOTS.NeverImplemented, {
 			-- 10.1.5
 			tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 				i(202270),	-- [DNT] Twice-Woven Rope
-				i(202247),	-- Curious Curio Goggles
 				i(202313),	-- Echolocator
 				i(202312),	-- Juicy Mammoth Steak
 				i(202340),	-- Laydia's Flower Petals

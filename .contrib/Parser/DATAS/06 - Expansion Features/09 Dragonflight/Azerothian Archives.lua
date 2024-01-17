@@ -99,7 +99,52 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(208084),	-- Technoscryers (QI!)
 					},
 				}),
-				-- both quest above unlocked after 77325 cannot be completed as 31/12
+				q(77166, {	-- A Practical Test
+					["sourceQuests"] = { 77231 },	-- Technoscrying 101
+					["provider"] = { "n", 208355 },	-- Zenata
+					["coord"] = { 61.2, 30.7, THALDRASZUS },
+					["g"] = {
+						i(202247),	-- Technoscryers (QI!)
+					},
+				}),
+				q(77176, {	-- I Can See Through Time!
+					["sourceQuests"] = { 77166 },	-- A Practical Test
+					["provider"] = { "n", 208355 },	-- Zenata
+					["coord"] = { 61.7, 29.8, THALDRASZUS },
+					["g"] = {
+						i(202247),	-- Technoscryers (QI!)
+					},
+				}),
+				q(77434, {	-- Technoscrying: Observatory
+					["sourceQuests"] = { 77176 },	-- I Can See Through Time!
+					["provider"] = { "n", 208355 },	-- Zenata
+					["coord"] = { 61.7, 29.8, THALDRASZUS },
+				}),
+				q(75729, {	-- Attune to the Observer
+					["sourceQuests"] = { 77434 },	-- Technoscrying: Observatory
+					["provider"] = { "n", 204835 },	-- Zenata
+					["coord"] = { 56.3, 43.9, THE_WAKING_SHORES },
+					["g"] = {
+						i(202247),	-- Technoscryers (QI!)
+					},
+				}),
+				q(75867, {	-- A Link to the Past
+					["sourceQuests"] = { 75729 },	-- Attune to the Observer
+					["provider"] = { "n", 204835 },	-- Zenata
+					["coord"] = { 56.3, 43.9, THE_WAKING_SHORES },
+					["g"] = {
+						--i(202247),	-- Technoscryers (QI!) (TODO: seems like qi didn't get removed from previous quest?)
+					},
+				}),
+				q(75868, {	-- A Window into the Future
+					["sourceQuests"] = { 75867 },	-- A Link to the Past
+					["provider"] = { "n", 204835 },	-- Zenata
+					["coord"] = { 56.3, 43.9, THE_WAKING_SHORES },
+					["g"] = {
+						i(205455),	-- Telescope Lens (QI!)
+					},
+				}),
+				-- 
 				q(79226, {	-- The Big Dig: Traitor's Rest
 					["coord"] = { 61.6, 31.3, THALDRASZUS },
 					["isWeekly"] = true,
