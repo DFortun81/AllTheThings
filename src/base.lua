@@ -183,8 +183,6 @@ app.HandleEvent = function(eventName)
 	end
 	-- app.PrintDebugPrior("HandleEvent")
 end
--- TODO: remove when Classic uses AddEventHandler/HandleEvent
-app.EventHandlers = EventHandlers
 end
 
 -- Cache information about the player.

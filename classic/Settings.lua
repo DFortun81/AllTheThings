@@ -700,7 +700,7 @@ settings.UpdateMode = function(self, doRefresh)
 	self:Refresh();
 end
 
-tinsert(app.EventHandlers.OnPlayerLevelUp, function()
+app.AddEventHandler("OnPlayerLevelUp", function()
 	if settings:Get("Filter:ByLevel") then
 		app:RefreshDataCompletely("PLAYER_LEVEL_UP");
 	end

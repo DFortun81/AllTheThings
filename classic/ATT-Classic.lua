@@ -3515,7 +3515,7 @@ else
 	WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 	WorldMapTooltip:HookScript("OnShow", AttachTooltip);
 
-	tinsert(app.EventHandlers.OnReady, function()
+	app.AddEventHandler("OnReady", function()
 		local GameTooltip_SetLFGDungeonReward = GameTooltip.SetLFGDungeonReward;
 		if GameTooltip_SetLFGDungeonReward then
 			GameTooltip.SetLFGDungeonReward = function(self, dungeonID, rewardIndex)
@@ -4154,7 +4154,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 			end
 		end
 	end
-	tinsert(app.EventHandlers.OnRecalculate, refreshAchievementCollection);
+	app.AddEventHandler("OnRecalculate", refreshAchievementCollection);
 	app:RegisterEvent("ADDON_LOADED");
 	app:RegisterEvent("ACHIEVEMENT_EARNED");
 	app.events.ACHIEVEMENT_EARNED = CheckAchievementCollectionStatus;
@@ -5263,7 +5263,7 @@ local CurrencyCollectedAsCost = setmetatable({}, { __index = function(t, id)
 	t[id] = false;
 	return false;
 end });
-tinsert(app.EventHandlers.OnRecalculate, function()
+app.AddEventHandler("OnRecalculate", function()
 	wipe(CurrencyCollectibleAsCost);
 	wipe(CurrencyCollectedAsCost);
 end);
@@ -5732,7 +5732,7 @@ local arrOfNodes = {
 	2149,	-- Ohn'ahran Plains [The Nokhud Offensive] (has FPs inside)
 	2175,	-- Zaralek Cavern
 };
-tinsert(app.EventHandlers.OnReady, function()
+app.AddEventHandler("OnReady", function()
 	-- Cache Flight Path Data once the addon is ready.
 	local newNodes, anyNew = {}, false;
 	for i,mapID in ipairs(arrOfNodes) do
@@ -6575,10 +6575,10 @@ if C_ToyBox and app.GameBuildVersion >= 30000 then
 			app:RefreshDataQuietly("TOYS_UPDATED", true);
 		end
 	end
-	tinsert(app.EventHandlers.OnReady, function()
+	app.AddEventHandler("OnReady", function()
 		app:RegisterEvent("TOYS_UPDATED");
 	end);
-	tinsert(app.EventHandlers.OnRefreshCollections, function()
+	app.AddEventHandler("OnRefreshCollections", function()
 		-- Refresh Toys
 		local collected;
 		for id,t in pairs(app.SearchForFieldContainer("toyID")) do
@@ -7196,7 +7196,7 @@ app.events.MAP_EXPLORATION_UPDATED = function(...)
 		end
 	end);
 end
-tinsert(app.EventHandlers.OnRecalculate, app.events.MAP_EXPLORATION_UPDATED);
+app.AddEventHandler("OnRecalculate", app.events.MAP_EXPLORATION_UPDATED);
 app.events.UI_INFO_MESSAGE = function(messageID)
 	if messageID == 372 then
 		app.events.MAP_EXPLORATION_UPDATED();
@@ -8131,9 +8131,7 @@ local function RefreshCollections()
 		app.print("Refreshing collection...");
 		
 		-- Execute the OnRefreshCollections handlers.
-		for i,handler in ipairs(app.EventHandlers.OnRefreshCollections) do
-			handler();
-		end
+		app.HandleEvent("OnRefreshCollections");
 		coroutine.yield();
 		
 		app:RefreshDataCompletely("RefreshCollections");
@@ -8298,7 +8296,7 @@ app.events.UPDATE_INSTANCE_INFO = function()
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	app:StartATTCoroutine("RefreshSaves", RefreshSaves);
 end
-tinsert(app.EventHandlers.OnStartup, app.events.UPDATE_INSTANCE_INFO);
+app.AddEventHandler("OnStartup", app.events.UPDATE_INSTANCE_INFO);
 
 -- TomTom Support
 local __TomTomWaypointCacheIndexY = { __index = function(t, y)
@@ -8479,7 +8477,7 @@ local function AddTomTomWaypoint(group)
 		app.print("You must have TomTom installed to plot coordinates.");
 	end
 end
-tinsert(app.EventHandlers.OnReady, function()
+app.AddEventHandler("OnReady", function()
 	local tomTom = TomTom;
 	if tomTom then
 		local oldAddWaypoint = tomTom.AddWaypoint;
@@ -10235,9 +10233,7 @@ local function RefreshData(source, trigger)
 			app.forceFullDataRefresh = nil;
 
 			-- Execute the OnRecalculate handlers.
-			for i,handler in ipairs(app.EventHandlers.OnRecalculate) do
-				handler();
-			end
+			app.HandleEvent("OnRecalculate");
 			app:UpdateWindows(source, true, refreshFromTrigger);
 		else
 			app:UpdateWindows(source, nil, refreshFromTrigger);
@@ -11988,21 +11984,15 @@ app.events.PLAYER_LEVEL_UP = function(newLevel)
 	app.Level = newLevel;
 	
 	-- Execute the OnPlayerLevelUp handlers.
-	for i,handler in ipairs(app.EventHandlers.OnPlayerLevelUp) do
-		handler();
-	end
+	app.HandleEvent("OnPlayerLevelUp");
 end
 app.events.VARIABLES_LOADED = function()
 	app:StartATTCoroutine("Startup", function()
 		coroutine.yield();
-
-		-- See if any Modules have 'OnStartup' functions defined, and call them now
-		app.DoModuleEvent("OnStartup")
 		
 		-- Execute the OnStartup handlers.
-		for i,handler in ipairs(app.EventHandlers.OnStartup) do
-			handler();
-		end
+		app.HandleEvent("OnStartup");
+		app.DoModuleEvent("OnStartup")
 		
 		-- Check for Season of Discovery
 		local season = C_Seasons and C_Seasons.GetActiveSeason() or 0;
@@ -12039,9 +12029,7 @@ app.events.VARIABLES_LOADED = function()
 		LoadSettingsForWindows(windowSettings);
 
 		-- Execute the OnReady handlers.
-		for i,handler in ipairs(app.EventHandlers.OnReady) do
-			handler();
-		end
+		app.HandleEvent("OnReady");
 		
 		-- Mark that we're ready now!
 		app.IsReady = true;
