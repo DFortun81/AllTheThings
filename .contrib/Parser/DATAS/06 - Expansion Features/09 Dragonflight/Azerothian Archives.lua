@@ -71,6 +71,148 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				ach(19786),	-- When a Rock is Just a Rock
 			}),
+			n(DROPS, {
+				i(213389, {	-- Ancient Centaur Diary
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213025, { -- Ancient Djaradin Bolt
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213020, { -- Ancient Drakonid Shovel
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213024, { -- Bloody Djaradin Mug
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213200, { -- Book of Horoscopes
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213365, {	-- Carved Cave Crystal
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213215, { -- Carved Votive Stone
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213021, {	-- Corked Drakonid Vial
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213359, { -- Cracked Drakonid Staff
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(212687, { -- Crude Toy Ducky
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213357, { -- Crystal Scrying Bowl
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(212978, { -- Dragon Painter's Palette
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213022, { -- Drakonid Blacksmith Hammer
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(212976, { -- Drakonid Duck Carving
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(212977, { -- Drakonid Sign Placard
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213183, { -- Makeshift Beaded Bracelet
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213429, {	-- Meticulous Archivist's Appendix
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213023, { -- Oil-Drenched Djaradin Torch
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213382, { -- Partial Centaur Hunting Map
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(212782, { -- Poorly Preserved Relic
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213208, {	-- Pot of Pickled Ancheevies
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(212650, {	-- Pot of Tattooing Ink
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213204, { -- Ruby-Studded Locket
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(212773, { -- Rusted Locket
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213375, { -- Satchel of Buried Valuables
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(213192, { -- Scratched-Out List of Names
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(212762, { -- Tarnished Horn Signet
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+				i(212769, { -- Tattered Wanted Poster
+					["g"] = {
+						currency(2657),	-- Mysterious Fragment
+					},
+				}),
+			}),
 			n(FACTIONS, {
 				faction(FACTION_AZEROTHIAN_ARCHIVES, {
 					ach(19685, {	-- Tenured Archiviest
@@ -189,36 +331,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 27.75, 46.20, THE_AZURE_SPAN },
 					["g"] = {
 						i(212645),	-- Clayscale Hornstrider (MOUNT!)
-						i(213389, {	-- Ancient Centaur Diary
-							["g"] = {
-								currency(2657),	-- Mysterious Fragment
-							},
-						}),
-						i(213365, {	-- Carved Cave Crystal
-							["g"] = {
-								currency(2657),	-- Mysterious Fragment
-							},
-						}),
-						i(213021, {	-- Corked Drakonid Vial
-							["g"] = {
-								currency(2657),	-- Mysterious Fragment
-							},
-						}),
-						i(213429, {	-- Meticulous Archivist's Appendix
-							["g"] = {
-								currency(2657),	-- Mysterious Fragment
-							},
-						}),
-						i(213208, {	-- Pot of Pickled Ancheevies
-							["g"] = {
-								currency(2657),	-- Mysterious Fragment
-							},
-						}),
-						i(212650, {	-- Pot of Tattooing Ink
-							["g"] = {
-								currency(2657),	-- Mysterious Fragment
-							},
-						}),
+						i(212642),	-- Excavator's Boots
+						i(212692),	-- Excavator's Dusky Fedora
+						i(212639),	-- Excavator's Glovelettes
+						i(212793),	-- Excavator's Pack of Findings
+						i(212641),	-- Excavator's Rugged Pants
+						i(212640),	-- Excavator's Trusty Satchel
+						i(212640),	-- Excavator's Utility Belt
+						i(212638),	-- Excavator's Work Shirt
 					},
 				}),
 			}),

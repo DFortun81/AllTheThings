@@ -1067,6 +1067,10 @@ i(211270);	-- Pristine Core Leather
 ------------------
 --- Trash ---
 i(207460);	-- Dreadsquall Eggshell Fragment
+--- Azerothian Archives Trash ---
+i(205224);	-- Just a Rock
+i(212646);	-- Chipped Armor Plate
+i(212649);	-- Quilted Tent Scrap
 i(212772);	-- False Silver Coin
 i(213387);	-- Primitive Centaur Carving
 i(213385);	-- Stiff Brush
@@ -1074,7 +1078,3 @@ i(213366);	-- Strip of Niffen Headwear
 i(213216);	-- Strip of Notched Leather
 i(213039);	-- Thin Drakonid Spoon
 i(213380);	-- Unidentifiable Equine Fossil
---- Azerothian Archives Trash ---
-i(205224);	-- Just a Rock
-i(212646);	-- Chipped Armor Plate
-i(212649);	-- Quilted Tent Scrap

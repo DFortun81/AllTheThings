@@ -1158,31 +1158,9 @@ root(ROOTS.Unsorted, {
 			}),
 			------ Azerothian Archives ------
 			-- Misc
-			i(213025), -- Ancient Djaradin Bolt
-			i(213020), -- Ancient Drakonid Shovel
 			i(212371), -- Azerothian Archivist Initiation Token
-			i(213024), -- Bloody Djaradin Mug
-			i(213200), -- Book of Horoscopes
-			i(213215), -- Carved Votive Stone
-			i(213359), -- Cracked Drakonid Staff
-			i(212687), -- Crude Toy Ducky
-			i(213357), -- Crystal Scrying Bowl
-			i(212978), -- Dragon Painter's Palette
-			i(213022), -- Drakonid Blacksmith Hammer
-			i(212976), -- Drakonid Duck Carving
-			i(212977), -- Drakonid Sign Placard
-			i(213183), -- Makeshift Beaded Bracelet
 			i(208202), -- Neltharion Agent Instructions
-			i(213023), -- Oil-Drenched Djaradin Torch
 			i(208201), -- Paper Scraps
-			i(213382), -- Partial Centaur Hunting Map
-			i(212782), -- Poorly Preserved Relic
-			i(213204), -- Ruby-Studded Locket
-			i(212773), -- Rusted Locket
-			i(213375), -- Satchel of Buried Valuables
-			i(213192), -- Scratched-Out List of Names
-			i(212762), -- Tarnished Horn Signet
-			i(212769), -- Tattered Wanted Poster
 			i(215160), -- The Big Dig Rig
 			-- Quest Items
 			i(210834),	-- Archivist's Earth Totem
@@ -1191,15 +1169,6 @@ root(ROOTS.Unsorted, {
 			i(210778),	-- Archivist's Wind Totem
 			-- Rewards
 			i(208451),	-- Archivist's Buckled Cap
-			i(212642),	-- Excavator's Boots
-			i(212692),	-- Excavator's Dusky Fedora
-			i(212639),	-- Excavator's Glovelettes
-			i(212793),	-- Excavator's Pack of Findings
-			i(212641),	-- Excavator's Rugged Pants
-			i(212640),	-- Excavator's Trusty Satchel
-			i(212640),	-- Excavator's Utility Belt
-			i(212638),	-- Excavator's Work Shirt
-
 			------ Love in the Air ------
 			-- Misc
 			i(210821),	-- Berry Chocolate Tart
