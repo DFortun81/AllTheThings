@@ -114,42 +114,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "o", 405593 },	-- Azerothian Archives!
 					["coord"] = { 46.6, 47.5, VALDRAKKEN },
 				}),
-				q(77267, {	-- Excavation 101
-					["sourceQuests"] = { 77325 },	-- To the Archives!
-					["provider"] = { "n", 208614 },	-- Roska Rocktooth
-					["coord"] = { 61.5, 31.1, THALDRASZUS },
-					["g"] = {
-						i(210956),	-- Archivist's Fire Totem (QI!)
-					},
-				}),
-				q(78762, {	-- Your First Find
-					["sourceQuests"] = { 77267 },	-- Excavation 101
-					["provider"] = { "n", 208614 },	-- Roska Rocktooth
-					["coord"] = { 61.3, 30.2, THALDRASZUS },
-				}),
-				q(77268, {	-- Hands-On Experience
-					["sourceQuests"] = { 78762 },	-- Your First Find
-					["provider"] = { "n", 208614 },	-- Roska Rocktooth
-					["coord"] = { 61.3, 30.2, THALDRASZUS },
-				}),
-				q(77433, {	-- Excavation: Riverbed
-					["sourceQuests"] = { 77268 },	-- Hands-On Experience
-					["provider"] = { "n", 208614 },	-- Roska Rocktooth
-					["coord"] = { 61.5, 30, THALDRASZUS },
-				}),
-				q(75493, {	-- Surveying the Riverbed
-					["sourceQuests"] = { 77433 },	-- Excavation: Riverbed
-					["provider"] = { "n", 204094 },	-- Roska Rocktooth
-					["coord"] = { 67.3, 47.5, OHNAHRAN_PLAINS },
-					["groups"] = {
-						i(210435), -- Archivist's Water Totem
-					},
-				}),
-				q(75518, {	-- The Body on the Banks
-					["sourceQuests"] = { 75493 },	-- Surveying the Riverbed
-					["provider"] = { "n", 204245 },	-- Ancient Centaur Corpse
-					["coord"] = { 67.3, 47.5, OHNAHRAN_PLAINS },
-				}),
 				q(77231, {	-- Technoscrying 101
 					["sourceQuests"] = { 77325 },	-- To the Archives!
 					["provider"] = { "n", 208355 },	-- Zenata
@@ -202,6 +166,102 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["g"] = {
 						i(205455),	-- Telescope Lens (QI!)
 					},
+				}),
+				q(77267, {	-- Excavation 101
+					["sourceQuests"] = { 77325 },	-- To the Archives!
+					["provider"] = { "n", 208614 },	-- Roska Rocktooth
+					["coord"] = { 61.5, 31.1, THALDRASZUS },
+					["g"] = {
+						i(210956),	-- Archivist's Fire Totem (QI!)
+					},
+				}),
+				q(78762, {	-- Your First Find
+					["sourceQuests"] = { 77267 },	-- Excavation 101
+					["provider"] = { "n", 208614 },	-- Roska Rocktooth
+					["coord"] = { 61.3, 30.2, THALDRASZUS },
+				}),
+				q(77268, {	-- Hands-On Experience
+					["sourceQuests"] = { 78762 },	-- Your First Find
+					["provider"] = { "n", 208614 },	-- Roska Rocktooth
+					["coord"] = { 61.3, 30.2, THALDRASZUS },
+				}),
+				q(77433, {	-- Excavation: Riverbed
+					["sourceQuests"] = { 77268 },	-- Hands-On Experience
+					["provider"] = { "n", 208614 },	-- Roska Rocktooth
+					["coord"] = { 61.5, 30, THALDRASZUS },
+				}),
+				q(75493, {	-- Surveying the Riverbed
+					["sourceQuests"] = { 77433 },	-- Excavation: Riverbed
+					["provider"] = { "n", 204094 },	-- Roska Rocktooth
+					["coord"] = { 67.3, 47.5, OHNAHRAN_PLAINS },
+					["groups"] = {
+						i(210435), -- Archivist's Water Totem
+					},
+				}),
+				q(75518, {	-- The Body on the Banks
+					["sourceQuests"] = { 75493 },	-- Surveying the Riverbed
+					["provider"] = { "n", 204245 },	-- Ancient Centaur Corpse
+					["coord"] = { 67.3, 47.5, OHNAHRAN_PLAINS },
+				}),
+				q(75603, {	-- Do Rites by Her
+					["sourceQuests"] = { 75518 },	-- The Body on the Banks
+					["provider"] = { "n", 204643 },	-- Roska Rocktooth
+					["coord"] = { 66.4, 46, OHNAHRAN_PLAINS },
+				}),
+				q(77327, {	-- Nirobin and the Office
+					["sourceQuests"] = { 75603 },	-- Do Rites by Her
+					["provider"] = { "n", 204643 },	-- Roska Rocktooth
+					["coord"] = { 66.4, 46, OHNAHRAN_PLAINS },
+				}),
+				q(76217, {	-- Living History
+					["sourceQuests"] = { 77327 },	-- Nirobin and the Office
+					["provider"] = { "n", 205967 },	-- Nirobin
+					["coord"] = { 58.4, 36.8, THALDRASZUS },
+				}),
+				q(76241, {	-- Lab Partners with a Squirrel
+					["sourceQuests"] = { 76217 },	-- Living History
+					["provider"] = { "n", 205967 },	-- Nirobin
+					["coord"] = { 58.4, 36.8, THALDRASZUS },
+				}),
+				q(76242, {	-- A Research Thesis Worth Publishing
+					["sourceQuests"] = { 76241 },	-- Lab Partners with a Squirrel
+					["provider"] = { "n", 205975 },	-- Reese
+					["coord"] = { 53.5, 47.5, THE_FORBIDDEN_REACH },
+				}),
+				q(77328, {	-- Back to Headquarters!
+					["sourceQuests"] = { 76242 },	-- A Research Thesis Worth Publishing
+					["provider"] = { "n", 205967 },	-- Nirobin
+					["coord"] = { 58.4, 36.8, THALDRASZUS },
+				}),
+				q(79223, {	-- Finally, An Archivist!
+					["sourceQuests"] = { 77328 },	-- Back to Headquarters!
+					["provider"] = { "n", 206107 },	-- Eadweard Dalyngrigge
+					["coord"] = { 61.5, 31.2, THALDRASZUS },
+					["g"] = {
+						i(208451, {	-- Archivist's Buckled Cap
+							["provider"] = { "i", 212371 },-- Azerothian Archivist Initiation Token
+						}),
+					},
+				}),
+				q(77483, {	-- Technoscrying: Dragonskull Island
+					["sourceQuests"] = { 79223 },	-- Finally, An Archivist!
+					["provider"] = { "n", 208355 },	-- Zenata
+					["coord"] = { 61.5, 31.1, THALDRASZUS },
+				}),
+				q(77484, {	-- Technoscrying: Igira's Watch
+					["sourceQuests"] = { 79223 },	-- Finally, An Archivist!
+					["provider"] = { "n", 208355 },	-- Zenata
+					["coord"] = { 61.5, 31.1, THALDRASZUS },
+				}),
+				q(77486, {	-- Excavation: Gaze of Neltharion
+					["sourceQuests"] = { 79223 },	-- Finally, An Archivist!
+					["provider"] = { "n", 208614 },	-- Roska Rocktooth
+					["coord"] = { 61.5, 31.1, THALDRASZUS },
+				}),
+				q(77487, {	-- Excavation: Winglord's Perch
+					["sourceQuests"] = { 79223 },	-- Finally, An Archivist!
+					["provider"] = { "n", 208614 },	-- Roska Rocktooth
+					["coord"] = { 61.5, 31.1, THALDRASZUS },
 				}),
 				--
 				q(79226, {	-- The Big Dig: Traitor's Rest
