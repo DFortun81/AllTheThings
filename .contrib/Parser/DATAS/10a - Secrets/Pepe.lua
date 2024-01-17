@@ -233,7 +233,7 @@ root(ROOTS.Secrets, n(86470, {	-- Pepe
 		i(213207, {	-- A Tiny Ear Warmer
 			-- ["provider"] = { "o",  },	-- 
 			["questID"] = 79551,
-			["coord"] = { 50.5, 52.9, THE_AZURE_SPAN },
+			["coord"] = { 13.0, 48.6, THE_AZURE_SPAN },
 			["timeline"] = { ADDED_10_2_5 },
 		}),
 	},
