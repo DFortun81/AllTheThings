@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(211099, { -- Gilded Scarab Bulwark
 						["cost"] = 1000000000, -- 100,000g
 					}),
-					i(211084, { -- Gold Resonating Crystal
+					i(211084, { -- Golden Regal Scarab (MOUNT!)
 						["cost"] = 12000000000,	-- 1,200,000g
 					}),
 					i(211096, { -- Gold-Plated Witchhunter's Carbine

@@ -180,7 +180,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 							{"pop"},
 						},
 						["g"] = {
-							i(210059),	-- Reins of the Winter Night Dreamsaber (MOUNT!) / should be from any dreamseed (according to blue post)
+							i(210059),	-- Winter Night Dreamsaber (MOUNT!) / should be from any dreamseed (according to blue post)
 							i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!)
 							i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back (DM!) / also was looted from purple
 							i(207772),	-- Grotto Netherwing Drake: Long Horns (DM!)

@@ -427,7 +427,9 @@ i(203337, 73827);	-- Winding Slitherdrake: Thorn Horns
 i(208550, 69214);	-- Dragon Isles Drakes: White Scales [Tyr Part 4]
 
 ------------------
--- PATCH 10.2.0 --
+-- PATCH 10.2.5 --
 ------------------
 -- TODO: Has spellID 431709, needs different handling?
 i(212518, 0);	-- Manuscript of Endless Possibility
+i(211812, 79088);	-- Renewed Proto-Drake: Love Armor
+i(211868, 79112);	-- Winding Slitherdrake: Lunar Festival Armor

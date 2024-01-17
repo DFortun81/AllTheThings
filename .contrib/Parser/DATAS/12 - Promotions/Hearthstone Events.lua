@@ -76,7 +76,7 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 
 			ach(19866),	-- Hearthstoned: Fiery Edition
 			ach(20033, {	-- Hearthstone Beginner
-				i(211946),	-- Hearthstone Game Table
+				i(211946),	-- Hearthstone Game Table (TOY!)
 			}),
 		},
 	}),

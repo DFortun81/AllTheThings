@@ -33,15 +33,11 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				ach(19787),	-- Clued in
 				ach(19793, {	-- Finally At Rest
-					["g"] = {
-						i(213134),	-- Hap'he (PET!)
-					},
+					i(213134),	-- Hap'he (PET!)
 				}),
 				ach(19791),	-- Goggle Wobble
 				ach(19792, {	-- Just One More Thing
-					["g"] = {
-						i(213133),	-- Reese (PET!)
-					},
+					i(213133),	-- Reese (PET!)
 				}),
 				ach(19789),	-- Relic Rescuer
 				ach(19788),	-- Tome Comber
@@ -90,6 +86,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(213188),	-- Dusty Dracthyr Tome
 					},
 				}),
+			}),
+			n(REWARDS, {
+				i(212645),	-- Clayscale Hornstrider (MOUNT!)
 			}),
 			n(VENDORS, {
 				n(209192, {	-- Provisioner Aristta

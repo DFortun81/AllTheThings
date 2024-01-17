@@ -1122,7 +1122,6 @@ i(156885, 262028);	-- Gold Gladiator's Proto-Drake
 i(156883, 262026);	-- Green Gladiator's Proto-Drake
 i(156882, 262025);	-- Pale Gladiator's Proto-Drake
 i(163063, 278656);	-- Spectral Phoenix
-i(163186, 278966);	-- Tempestuous Skystallion
 i(163188, 0);		-- Surf Jelly
 
 -----------------
@@ -1547,7 +1546,6 @@ i(192801, 374255);	-- PH Primal Tallstrider White
 i(192793, 374200);	-- PH Thunder Lizard Black
 i(192794, 374201);	-- PH Thunder Lizard Blue
 i(192792, 351408);	-- PH Thunder Lizard Green
-i(192796, 374204);	-- PH Thunder Lizard Light
 i(194106, 0);		-- Highland Drake
 i(192770, 0);		-- [PH] Moose Bull Black
 
@@ -1687,15 +1685,18 @@ i(203727, 0);		-- Gleaming Moonbeast's Reins
 -- PATCH 10.2.0 --
 ------------------
 i(210061, 424484);	-- Anu'relos, Flame's Guidance
-i(0, 418286);		-- Auspicious Arborwyrm (MOUNT!)
+i(0, 418286);		-- Auspicious Arborwyrm
 i(209947, 423871);	-- Blossoming Dreamstag
+i(210919, 427435);	-- Crimson Glimmerfur
 i(210831, 427222);	-- Delugen
 i(210058, 424479);	-- Evening Sun Dreamsaber
 i(210412, 425338);	-- Flourishing Whimsydrake
+i(211084, 428060);	-- Golden Regal Scarab
 i(210948, 427549);	-- Imagiwing
 i(209951, 423891);	-- Lunar Dreamstag
 i(210946, 427546);	-- Mammyth
 i(210057, 424482);	-- Morning Flourish Dreamsaber
+i(210774, 427041);	-- Ochre Dreamtalon
 i(209950, 423877);	-- Rekindled Dreamstag
 i(210008, 424009);	-- Runebound Firelord
 i(210969, 427724);	-- Salatrancer
@@ -1709,25 +1710,36 @@ i(209060, 422486);	-- Verdant Armoredon
 i(210345, 425416);	-- Verdant Gladiator's Slitherdrake
 i(210070, 424534);	-- Vicious Moonbeast
 i(210069, 424535);	-- Vicious Moonbeast
+i(210059, 424476);	-- Winter Night Dreamsaber
 --- NYI ---
 i(210141, 424601);	-- [PH] Brown-Furred Spiky Bakar
 i(210142, 424607);	-- [PH] Red-Furred Bakar
 i(210143, 424608);	-- [PH] White-Furred Bakar
 i(210144, 424610);	-- [PH] Yellow-Furred Spiky Bakar
 i(210145, 424611);	-- [PH] YellowBlack-Furred Bakar
-i(210919, 427435);	-- Crimson Glimmerfur
 i(211075, 428013);	-- Deathbringer's Shadowcycle
 i(211089, 428068);	-- Felreaver Deathcycle
-i(211084, 428060);	-- Golden Regal Scarab
 i(211074, 428005);	-- Jeweled Copper Scarab
 i(211086, 428065);	-- Jeweled Jade Scarab
 i(211085, 428062);	-- Jeweled Sapphire Scarab
-i(210774, 427041);	-- Ochre Dreamtalon
 i(211087, 428067);	-- Shadowflame Hellbike
-i(210059, 424476);	-- Winter Night Dreamsaber
 i(210140, 0);		-- [PH] Black-Furred Bakar
 
 ------------------
 -- PATCH 10.2.5 --
 ------------------
+i(212631, 432562);	-- Brilliant Sunburst Peafowl
+i(212645, 432610);	-- Clayscale Hornstrider
+i(212522, 431992);	-- Compass Rose
 i(192796, 374204);	-- Explorer's Stonehide Packbeast
+i(163186, 278966);	-- Fiery Hearthsteed
+i(212227, 431357);	-- Fur-endship Fox
+i(210973, 427777);	-- Heartseeker Mana Ray
+i(212630, 432558);	-- Majestic Azure Peafowl
+i(212599, 432455);	-- Noble Flying Carpet
+i(212920, 433281);	-- Savage Blue Battle Turtle
+i(212228, 431359);	-- Soaring Sky Fox
+i(212632, 432564);	-- Starry Twilight Peafowl
+i(212229, 431360);	-- Twilight Sky Prowler
+-- NYI --
+i(211486, 0);		-- Winding Slitherdrake

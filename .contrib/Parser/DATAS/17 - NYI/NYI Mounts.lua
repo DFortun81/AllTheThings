@@ -551,9 +551,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(163063, {	-- Spectral Phoenix (MOUNT!)
 				-- ["modelID"] = ,
 			}),
-			i(163186, {	-- Tempestuous Skystallion (MOUNT!)
-				-- ["modelID"] = ,
-			}),
 			-- Without MountID Attached
 			i(163188, {	-- Surf Jelly (MOUNT!)
 				-- ["modelID"] = ,
@@ -845,9 +842,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			}),
 			i(211089, {	-- Felreaver Deathcycle (MOUNT!) [Trading Post?]
 				["modelID"] = 114785,
-			}),
-			i(211084, {	-- Golden Regal Scarab (MOUNT!) [Trading Post?]
-				["modelID"] = 114740,
 			}),
 			i(211086, {	-- Jeweled Jade Scarab (MOUNT!) [Trading Post?]
 				["modelID"] = 114744,

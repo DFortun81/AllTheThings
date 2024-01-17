@@ -1128,6 +1128,18 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 	})),
 	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
 		i(212518),	-- Manuscript of Endless Possibility (DM!)
+		header(HEADERS.Item, 194034, sharedData({	-- Renewed Proto-Drake
+			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
+			["timeline"] = { CREATED_10_2_5 },
+		}, {
+			i(211812),	-- Renewed Proto-Drake: Love Armor
+		})),
+		header(HEADERS.Item, 204361, sharedData({	-- Winding Slitherdrake
+			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
+			["timeline"] = { CREATED_10_2_5 },
+		}, {
+			i(211868),	-- Winding Slitherdrake: Lunar Festival Armor
+		})),
 	})),
 })));
 

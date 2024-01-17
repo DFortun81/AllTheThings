@@ -1242,6 +1242,7 @@ i(206347);	-- Mannequin Charm
 -- PATCH 10.2.0 --
 ------------------
 i(210411);	-- Fast Growing Seed
+i(209035);	-- Hearthstone of the Flame
 i(210864);	-- Improvised Leafbed
 i(208825);	-- Junior Timekeeper's Racing Belt
 i(210725);	-- Owl Post
@@ -1252,5 +1253,17 @@ i(209859);	-- Festive Trans-Dimensional Bird Whistle
 i(210656);	-- Winter Veil Socks
 --- NYI ---
 i(211424);	-- Dreaming Banner of the Aspects
-i(209035);	-- Hearthstone of the Flame
 i(208087);	-- Unknown
+
+------------------
+-- PATCH 10.2.5 --
+------------------
+i(210975);	-- Date Simulation Modulator
+i(212524);	-- Delicate Crimson Parasol
+i(212525);	-- Delicate Ebony Parasol
+i(212523);	-- Delicate Jade Parasol
+i(212500);	-- Delicate Silk Parasol
+i(211864);	-- Exquisite Love Boat
+i(210974);	-- Eyes For You Only
+i(211946);	-- Hearthstone Game Table
+i(212337);	-- Stone of the Hearth

@@ -308,7 +308,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			}),
 		})),
 		ach(1696, {	-- The Rocket's Pink Glare
-			["cost"] = { { "i", 34258, 10 } },	-- 10x Love Rocket
+			["cost"] = { { "i", 34258, 10 } },	-- 10x Lovely Fireworks
 			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(9394, {	-- They Really Love Me! (50)
@@ -1044,7 +1044,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				i(21812),	-- Box of Chocolates
 				i(22218),	-- Handful of Rose Petals
 				i(22200),	-- Silver Shafted Arrow
-				i(34258),	-- Love Rocket
+				i(34258),	-- Lovely Fireworks
 			},
 			-- #endif
 		}),
@@ -1066,7 +1066,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				i(21812),	-- Box of Chocolates
 				i(22218),	-- Handful of Rose Petals
 				i(22200),	-- Silver Shafted Arrow
-				i(34258),	-- Love Rocket
+				i(34258),	-- Lovely Fireworks
 			},
 			-- #endif
 		}),
@@ -1339,7 +1339,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			-- #if BEFORE 3.3.2.11403
 			i(22261),	-- Love Fool
 			-- #endif
-			i(34258, {	-- Love Rocket
+			i(34258, {	-- Lovely Fireworks
 				["timeline"] = { "added 2.3.0.7382" },
 			}),
 			-- #if BEFORE 3.3.2.11403
@@ -1370,7 +1370,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				["timeline"] = { "removed 3.3.2.11403", "added 8.1.0" },
 				["_drop"] = { "f", "spellID" },
 			}),
-			i(21815, {	-- Love Token
+			i(21815, {	-- Wrinkled Love Token
 				["timeline"] = { "removed 3.3.2.11403" },
 				["_drop"] = { "f" },
 			}),
@@ -1558,7 +1558,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 					["timeline"] = { "added 3.3.2.11403" },
 					["cost"] = { { "i", 49927, 10 } },	-- 10x Love Token
 				}),
-				i(34258, {	-- Love Rocket
+				i(34258, {	-- Lovely Fireworks
 					["timeline"] = { "added 2.3.0.7382" },
 					["cost"] = { { "i", 49927, 5 } },	-- 5x Love Token
 				}),
@@ -1592,7 +1592,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		["cost"] = {
 			{ "i", 21833, 1 },	-- Cologne Bottle
 			{ "i", 21829, 1 },	-- Perfume Bottle
-			{ "i", 21815, 1 },	-- Love Token
+			{ "i", 21815, 1 },	-- Wrinkled Love Token
 		},
 		-- #endif
 		["groups"] = {
@@ -2224,7 +2224,7 @@ for i,o in ipairs({
 			i(49909, {	-- Box of Chocolates
 				["timeline"] = { "added 3.3.2.11403" },
 			}),
-			i(34258, {	-- Love Rocket
+			i(34258, {	-- Lovely Fireworks
 				["timeline"] = { "added 2.3.0.7382" },
 			}),
 			]]--
