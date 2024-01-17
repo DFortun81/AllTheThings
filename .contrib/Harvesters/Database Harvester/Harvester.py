@@ -313,8 +313,8 @@ def create_missing_file(thing: type[Thing]) -> None:
         excluded_ids = extract_nth_column(Path("Exclusion", f"{thing.__name__}.txt"), 0)
         difference_db = None
         difference = sorted(
-            set(raw_ids) - set(get_existing_ids(thing)) - set(excluded_ids),
-            # set(raw_ids) - set(get_existing_ids_item(thing)) - set(excluded_ids),
+            # set(raw_ids) - set(get_existing_ids(thing)) - set(excluded_ids),
+            set(raw_ids) - set(get_existing_ids_item(thing)) - set(excluded_ids),
             key=raw_ids.index,
         )
         if (difference := remove_empty_builds(difference)):
@@ -551,7 +551,7 @@ def create_missing_files() -> None:
     """This iterates over Things to create missing files"""
     things: list[type[Thing]] = Thing.__subclasses__()
     for thing in things:
-        if thing != Items:
+        if thing == Items:
             print('Missing File: ', thing)
             create_missing_file(thing)
             print('Post Process: ', thing)

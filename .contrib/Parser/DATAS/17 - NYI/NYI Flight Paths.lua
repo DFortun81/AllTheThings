@@ -740,6 +740,12 @@ root(ROOTS.NeverImplemented, {
 				fp(2876, {["description"] = "Lookout Breach, Zaralek Cavern"}),
 				fp(2877, {["description"] = "Lookout Breach, Azure Span"}),
 			})),
+
+			-- 10.1.7
+			tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+				fp(2887, {["description"] = "Quest Path 9429: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Lower Floor (MPK)"}),
+				fp(2892, {["description"] = "Quest Path 9443: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Hel'nurath's Room (MPK)"}),
+			})),
 		}),
 	}),
 });

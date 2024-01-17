@@ -70,6 +70,11 @@ root(ROOTS.NeverImplemented, {
 			tier(DF_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
 				title(480),	-- <Name>, Knight of Feathersworth
 			})),
+
+			-- 10.2.0
+			tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+				title(518),	-- <Name>, Honorary Historian
+			})),
 		}),
 	}),
 });

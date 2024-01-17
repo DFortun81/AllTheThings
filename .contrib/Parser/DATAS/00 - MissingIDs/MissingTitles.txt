@@ -1,4 +1,0 @@
-3.4.1.47966
-title(210),	-- Battlemaster %s
-10.2.0.52301
-title(518),	-- %s, Honorary Historian

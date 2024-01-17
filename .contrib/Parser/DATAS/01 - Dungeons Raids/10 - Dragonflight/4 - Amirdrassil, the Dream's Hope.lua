@@ -347,9 +347,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					--			["cost"] = {},
 					--		}),
 					--		i(210010, {	-- Erden's Notes on Symbiotic Spores
-					--				r(xx, {	-- (it is spell 422326, not sure what actual recipeID)
-					--				["requireSkill"] = LEATHERWORKING,
-					--				["u"] = TRAINING,
+					--				r(422330, {	-- Erden's Glowspore Grip
+					--					["u"] = TRAINING,
+					--				}),
 					--		}),
 					--	},
 					--}),
@@ -427,9 +427,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 					--			["cost"] = {},
 					--		}),
 					--		i(210011, {	-- Shalasar's Notes on Sophic Magic
-					--				r(xx, {	-- (it is spell 422328, not sure what actual recipeID)
-					--				["requireSkill"] = ENCHANTING,
-					--				["u"] = TRAINING,
+					--				r(422338, {	-- Shalasar's Sophic Vellum
+					--					["u"] = TRAINING,
+					--				}),
 					--		}),
 					--	},
 					--}),

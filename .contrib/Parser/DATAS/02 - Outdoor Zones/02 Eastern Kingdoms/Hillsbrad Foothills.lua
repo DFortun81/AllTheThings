@@ -155,7 +155,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(14, {	-- Southshore, Hillsbrad
 					["cr"] = 2432,	-- Darla Harris <Gryphon Master>
 					["coord"] = { 49.4, 52.4, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "deleted 4.0.3" },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(670, {	-- Strahnbrad, Alterac Mountains

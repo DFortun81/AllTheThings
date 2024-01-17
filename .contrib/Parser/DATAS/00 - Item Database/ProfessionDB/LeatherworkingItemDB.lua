@@ -2265,3 +2265,5 @@ i(208294, 419009);	-- Verdant Combatant's Resilient Shoulderpads
 i(208293, 419008);	-- Verdant Combatant's Resilient Trousers
 i(208297, 419012);	-- Verdant Combatant's Resilient Wristwraps
 i(210169, 418579);	-- Verdant Conduit
+--- SPECIAL ---
+i(0, 422330);		-- Erden's Glowspore Grip

@@ -1292,6 +1292,7 @@ _.FlightPathNames = {
 	[11] = "Undercity, Tirisfal",
 	[12] = "Darkshire, Duskwood",
 	[13] = "Tarren Mill, Hillsbrad",
+	[14] = "Southshore, Hillsbrad",
 	[15] = "Eastern Plaguelands",
 	[16] = "Refuge Pointe, Arathi",
 	[17] = "Hammerfall, Arathi",

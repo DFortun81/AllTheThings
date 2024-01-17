@@ -1,5 +1,0 @@
-0.5.3.3368
-fp(14),	-- -- \\ Southshore, Hillsbrad
-10.1.7.51237
-fp(2887),	-- Quest Path 9429: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Lower Floor (MPK)
-fp(2892),	-- Quest Path 9443: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Hel'nurath's Room (MPK)

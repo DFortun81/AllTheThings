@@ -946,21 +946,3 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 		}),
 	}),
 })));
-
-root(ROOTS.NeverImplemented, {
-	tier(SL_TIER, {
-		prof(PROTOFORM_SYNTHESIS, {
-			q(65392, {	-- Schematic Reassimilation: Patient Bufonid (Mount moved to Quest)
-				["sourceQuests"] = { 65427 },	-- A New Architect
-				["provider"] = { "i", 189470 },	-- Schematic: Patient Bufonid
-			}),
-			i(189470),	-- Schematic: Patient Bufonid
-			recipe(365061),	-- Patient Bufonid
-			q(65375, {	-- Schematic Reassimilation: Pale Regal Cervid
-				["sourceQuests"] = { 65427 },	-- A New Architect
-				["provider"] = { "i", 189455 },	-- Schematic: Pale Regal Cervid
-			}),
-			i(189455),	-- Schematic: Pale Regal Cervid
-		}),
-	}),
-});

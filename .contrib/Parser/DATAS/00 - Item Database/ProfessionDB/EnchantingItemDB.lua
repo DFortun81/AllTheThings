@@ -1261,3 +1261,5 @@ i(210171, 414989);	-- Enchanted Aspect's Dreaming Crest
 i(210173, 414985);	-- Enchanted Whelpling's Dreaming Crest
 i(210172, 414988);	-- Enchanted Wyrm's Dreaming Crest
 i(210174, 414946);	-- Illusory Adornment: Dreams
+--- SPECIAL --
+i(0, 422338);		-- Shalasar's Sophic Vellum

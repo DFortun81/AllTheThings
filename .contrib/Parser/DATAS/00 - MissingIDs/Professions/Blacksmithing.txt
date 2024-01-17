@@ -1,7 +1,0 @@
-1.15.0.52124
-r(427061),	-- Mantle of the Second War
-r(429348),	-- Shifting Silver Breastplate
-r(430397),	-- Blackfathom Sharpening Stone
-
-
-Nothing is Missing in BlacksmithingItemDB.lua! Good Work!
