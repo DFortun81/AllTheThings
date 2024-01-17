@@ -253,6 +253,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			})),
+			prof(FISHING, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
+				i(67108),	-- Lord Godfrey's Old Spectacles
+			})),
 			n(ZONE_DROPS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 				i(211939),	-- Worn Scarlet Cloak
 			})),
