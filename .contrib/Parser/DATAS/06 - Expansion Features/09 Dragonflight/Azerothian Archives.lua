@@ -35,7 +35,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				ach(19793, {	-- Finally At Rest
 					i(213134),	-- Hap'he (PET!)
 				}),
-				ach(19791),	-- Goggle Wobble
+				ach(19791, {	-- Goggle Wobble
+					crit(65404, {	-- Zenata danced with at Igira's Watch
+						--["coord"] = { },
+					}),
+					crit(65405, {	-- Zenata danced with at Dragonskull Island
+						["coord"] = { 77.1, 38.4, THE_FORBIDDEN_REACH },
+					}),
+					crit(65406, {	-- Zenata danced with at Concord Observatory
+						--["coord"] = { },
+					}),
+				}),
 				ach(19792, {	-- Just One More Thing
 					i(213133),	-- Reese (PET!)
 				}),
@@ -248,6 +258,24 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 208355 },	-- Zenata
 					["coord"] = { 61.5, 31.1, THALDRASZUS },
 				}),
+				q(76448, {	-- The Fate of Scalecommander Abereth
+					["sourceQuests"] = { 77483 },	-- Technoscrying: Dragonskull Island
+					["provider"] = { "n", 207311 },	-- Zenata
+					["coord"] = { 77.1, 38.4, THE_FORBIDDEN_REACH },
+				}),
+				q(76557, {	-- Without Honor
+					["sourceQuests"] = { 76448 },	-- The Fate of Scalecommander Abereth
+					["provider"] = { "n", 207311 },	-- Zenata
+					["coord"] = { 77.1, 38.4, THE_FORBIDDEN_REACH },
+				}),
+				q(77415, {	-- The Hidden Hand
+					["sourceQuests"] = { 76557 },	-- Without Honor
+					["provider"] = { "n", 207311 },	-- Zenata
+					["coord"] = { 77.1, 38.4, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(208202), -- Neltharion Agent Instructions (QI!)
+					},
+				}),
 				q(77484, {	-- Technoscrying: Igira's Watch
 					["sourceQuests"] = { 79223 },	-- Finally, An Archivist!
 					["provider"] = { "n", 208355 },	-- Zenata
@@ -262,6 +290,24 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 79223 },	-- Finally, An Archivist!
 					["provider"] = { "n", 208614 },	-- Roska Rocktooth
 					["coord"] = { 61.5, 31.1, THALDRASZUS },
+				}),
+				q(77100, {	-- Surveying the Cliffside
+					["sourceQuests"] = { 77487 },	-- Excavation: Winglord's Perch
+					["provider"] = { "n", 208362 },	-- Roska Rocktooth
+					["coord"] = { 17.2, 16.3, THE_FORBIDDEN_REACH },
+					["g"] = {
+						i(210778),	-- Archivist's Wind Totem (QI!)
+					},
+				}),
+				q(77151, {	-- The Cache in the Crag
+					["sourceQuests"] = { 77100 },	-- Surveying the Cliffside
+					["provider"] = { "n", 208402 },	-- Intact Dragonkin Cache
+					["coord"] = { 14.0, 14.7, THE_FORBIDDEN_REACH },
+				}),
+				q(77154, {	-- A Taste of the Past
+					["sourceQuests"] = { 77151 },	-- The Cache in the Crag
+					["provider"] = { "n", 208362 },	-- Roska Rocktooth
+					["coord"] = { 14.0, 14.7, THE_FORBIDDEN_REACH },
 				}),
 				--
 				q(79226, {	-- The Big Dig: Traitor's Rest
@@ -379,5 +425,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, {
 		q(79616),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434198)
 		q(79664),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434203)
 		q(79670),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434928)
+		q(79996),	-- After completing 'The Hidden Hand' (questID 77415)
+		q(79995),	-- After completing 'A Taste of the Past' (questID 77154)
 	})),
 }));

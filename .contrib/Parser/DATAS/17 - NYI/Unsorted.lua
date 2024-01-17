@@ -1156,14 +1156,11 @@ root(ROOTS.Unsorted, {
 			}),
 			------ Azerothian Archives ------
 			-- Misc
-			i(208202), -- Neltharion Agent Instructions
-			i(208201), -- Paper Scraps
 			i(215160), -- The Big Dig Rig
 			-- Quest Items
 			i(210834),	-- Archivist's Earth Totem
 			i(210956),	-- Archivist's Fire Totem
 			i(211266),	-- Archivist's Fire Totem
-			i(210778),	-- Archivist's Wind Totem
 			------ Love in the Air ------
 			-- Misc
 			i(210821),	-- Berry Chocolate Tart

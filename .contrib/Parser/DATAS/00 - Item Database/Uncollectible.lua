@@ -1081,3 +1081,4 @@ i(213380);	-- Unidentifiable Equine Fossil
 i(213362);	-- Ancient Drakonid Candy
 i(213377);	-- Mutliated Storybook
 i(205222);	-- Wooden Caravan Spoke
+i(208201); -- Paper Scraps
