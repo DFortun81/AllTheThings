@@ -451,6 +451,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					-- #endif
 				},
 				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,
 			}),
 			q(14065, {	-- Sharing a Bountiful Feast (Horde)
 				["qg"] = 34654,	-- Bountiful Feast Hostess
@@ -461,6 +462,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					HELLFIRE_PENINSULA,
 				},
 				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
 			}),
 			q(14055, {	-- She Says Potato (Alliance)
 				["qg"] = 34744,	-- Jasper Moore
