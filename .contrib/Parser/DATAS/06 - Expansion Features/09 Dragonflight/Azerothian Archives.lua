@@ -63,6 +63,34 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(210956),	-- Archivist's Fire Totem (QI!)
 					},
 				}),
+				q(78762, {	-- Your First Find
+					["sourceQuests"] = { 77267 },	-- Excavation 101
+					["provider"] = { "n", 208614 },	-- Roska Rocktooth
+					["coord"] = { 61.3, 30.2, THALDRASZUS },
+				}),
+				q(77268, {	-- Hands-On Experience
+					["sourceQuests"] = { 78762 },	-- Your First Find
+					["provider"] = { "n", 208614 },	-- Roska Rocktooth
+					["coord"] = { 61.3, 30.2, THALDRASZUS },
+				}),
+				q(77433, {	-- Excavation: Riverbed
+					["sourceQuests"] = { 77268 },	-- Hands-On Experience
+					["provider"] = { "n", 208614 },	-- Roska Rocktooth
+					["coord"] = { 61.5, 30, THALDRASZUS },
+				}),
+				q(75493, {	-- Surveying the Riverbed
+					["sourceQuests"] = { 77433 },	-- Excavation: Riverbed
+					["provider"] = { "n", 204094 },	-- Roska Rocktooth
+					["coord"] = { 67.3, 47.5, OHNAHRAN_PLAINS },
+					["groups"] = {
+						i(210435), -- Archivist's Water Totem
+					},
+				}),
+				q(75518, {	-- The Body on the Banks
+					["sourceQuests"] = { 75493 },	-- Surveying the Riverbed
+					["provider"] = { "n", 204245 },	-- Ancient Centaur Corpse
+					["coord"] = { 67.3, 47.5, OHNAHRAN_PLAINS },
+				}),
 				q(77231, {	-- Technoscrying 101
 					["sourceQuests"] = { 77325 },	-- To the Archives!
 					["provider"] = { "n", 208355 },	-- Zenata

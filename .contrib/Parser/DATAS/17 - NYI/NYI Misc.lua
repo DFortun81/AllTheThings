@@ -924,7 +924,6 @@ root(ROOTS.NeverImplemented, {
 				i(209997),	-- Distilled Knowledge of Timeways
 				i(208925),	-- Dreambound Trinket
 				i(204720),	-- Join the New Scarlet Crusade!
-				i(205224),	-- Just a Rock
 				i(208545),	-- Kindled Bonfire
 				i(209020),	-- Loot-Filled Pumpkin
 				i(209025),	-- Loot-Filled Pumpkin

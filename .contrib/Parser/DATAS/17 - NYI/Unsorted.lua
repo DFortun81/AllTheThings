@@ -584,8 +584,6 @@ root(ROOTS.Unsorted, {
 			filter(COSMETIC, {
 				i(211926),	-- Riders of Azeroth Tabard [Cup]
 				i(211928),	-- Ruby Riders of Azeroth Tabard [Cup]
-				i(213004),	-- Violet Kaldorei Backpack [Quest]
-				i(212981),	-- Violet Kaldorei Bedroll [Quest]
 
 				------ Trading Post ------
 				------ Skyborn Blades ------
@@ -804,7 +802,6 @@ root(ROOTS.Unsorted, {
 				i(213195),	-- Charred Doodle
 				i(213206),	-- Charred Letter
 				i(212771),	-- Charred Snail Shells
-				i(212646),	-- Chipped Armor Plate
 				i(213027),	-- Chipped Drakonid Cup
 				i(212489),	-- Copy of a Damaged Apprentice Journal
 				i(212468),	-- Copy of Blinking Rules & Regulations
@@ -877,7 +874,6 @@ root(ROOTS.Unsorted, {
 				i(212761),	-- Pouch of Coins
 				i(213196),	-- Pressed Flower
 				i(213387),	-- Primitive Centaur Carving
-				i(212649),	-- Quilted Tent Scrap
 				i(213184),	-- Rock with Chewed Gum
 				i(213030),	-- Rusty Garden Shears
 				i(212688),	-- Salt-dried Roots
@@ -1210,7 +1206,6 @@ root(ROOTS.Unsorted, {
 			i(210834), -- Archivist's Earth Totem
 			i(210956), -- Archivist's Fire Totem
 			i(211266), -- Archivist's Fire Totem
-			i(210435), -- Archivist's Water Totem
 			i(210778), -- Archivist's Wind Totem
 			i(202247), -- Technoscryers
 			i(205455), -- Telescope Lens

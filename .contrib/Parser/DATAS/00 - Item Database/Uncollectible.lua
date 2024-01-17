@@ -632,6 +632,10 @@ i(200702);	-- Magenta Titian Extract
 i(200704);	-- Gratona Seed
 i(200705);	-- Thaldraszus Root
 i(200929);	-- Everglow Nectar
+--- Azerothian Archives Trash ---
+i(205224);	-- Just a Rock
+i(212646);	-- Chipped Armor Plate
+i(212649);	-- Quilted Tent Scrap
 --- Trash ---
 i(192089);	-- Fresh Vorquin Carcass
 i(192769);	-- Cracked Spear
