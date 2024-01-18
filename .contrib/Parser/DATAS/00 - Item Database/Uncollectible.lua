@@ -1084,3 +1084,11 @@ i(213377);	-- Mutliated Storybook
 i(213380);	-- Unidentifiable Equine Fossil
 i(213385);	-- Stiff Brush
 i(213387);	-- Primitive Centaur Carving
+i(212765);	-- Fish Bones
+i(212761);	-- Pouch of Coins
+i(212770);	-- Smashed Pottery
+i(213368);	-- Scratch-and-Sniff Stone
+i(213179);	-- Cracked Draconic Tooth
+i(212648);	-- Fishbone Needle
+i(213041);	-- Desiccated Djaradin Scroll
+i(213363);	-- Molted Eye Skin

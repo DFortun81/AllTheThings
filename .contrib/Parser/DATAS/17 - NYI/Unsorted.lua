@@ -831,13 +831,11 @@ root(ROOTS.Unsorted, {
 				i(212486),	-- Copy of The Worst Mage in Dalaran: A Children's Book
 				i(212470),	-- Copy of Thinking with Portals - A Memorandum on Proper Portal Usage
 				i(212485),	-- Copy of Weathered Diary - Dates from the Third War
-				i(213179),	-- Cracked Draconic Tooth
 				i(213028),	-- Cracked Drafting Compass
 				i(213034),	-- Cracked Drakonid Bowl
 				i(213038),	-- Cracked Magnifying Glass
 				i(213180),	-- Crumpled Map
 				i(213035),	-- Crusty Dracthyr Brush
-				i(213041),	-- Desiccated Djaradin Scroll
 				i(212784),	-- Destroyed Relic
 				i(213042),	-- Deteriorated Djaradin Banner
 				i(212467),	-- Discarded Advertisement
@@ -849,8 +847,6 @@ root(ROOTS.Unsorted, {
 				i(212608),	-- Duck Potion
 				i(213364),	-- Empty Vial of Perfume
 				i(213388),	-- Faded Centaur Painting
-				i(212765),	-- Fish Bones
-				i(212648),	-- Fishbone Needle
 				i(212764),	-- Fishing Net Fragment
 				i(212382),	-- Fluorescent Splitblade
 				i(213044),	-- Frayed Fang Amulet
@@ -862,18 +858,14 @@ root(ROOTS.Unsorted, {
 				i(213205),	-- Mad Scribblings
 				i(213026),	-- Massive Drakonid Brush
 				i(213031),	-- Misshapen Drakonid Goblet
-				i(213363),	-- Molted Eye Skin
 				i(213374),	-- Niffen Noseplug
 				i(212768),	-- Niffen-Sized Dagger
 				i(213211),	-- Petrified Flower Petals
 				i(213194),	-- Petrified Rations
-				i(212761),	-- Pouch of Coins
 				i(213196),	-- Pressed Flower
 				i(213184),	-- Rock with Chewed Gum
 				i(213030),	-- Rusty Garden Shears
 				i(212688),	-- Salt-dried Roots
-				i(213368),	-- Scratch-and-Sniff Stone
-				i(212770),	-- Smashed Pottery
 				i(213277),	-- Smudged Snippet of Poetry
 				i(213045),	-- Snapped Djaradin Necklace
 				i(213040),	-- Tarnished Djaradin Amulet

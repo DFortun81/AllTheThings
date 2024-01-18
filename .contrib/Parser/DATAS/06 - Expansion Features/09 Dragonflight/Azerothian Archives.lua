@@ -174,7 +174,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 204835 },	-- Zenata
 					["coord"] = { 56.3, 43.9, THE_WAKING_SHORES },
 					["g"] = {
-						i(205455),	-- Telescope Lens (QI!)
+						o(404849, {	-- Dreadsquall Nest
+							i(205455),	-- Telescope Lens (QI!)
+						}),
 					},
 				}),
 				q(77267, {	-- Excavation 101
@@ -219,9 +221,18 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 66.4, 46, OHNAHRAN_PLAINS },
 				}),
 				q(77327, {	-- Nirobin and the Office
-					["sourceQuests"] = { 75603 },	-- Do Rites by Her
-					["provider"] = { "n", 204643 },	-- Roska Rocktooth
-					["coord"] = { 66.4, 46, OHNAHRAN_PLAINS },
+					["sourceQuests"] = {
+						75603,	-- Do Rites by Her
+						75868,	-- A Window into the Future
+					},
+					["providers"] = {
+						{ "n", 204643 },	-- Roska Rocktooth
+						{ "n", 204835 },	-- Zenata
+					},
+					["coords"] = {
+						{ 66.4, 46, OHNAHRAN_PLAINS },
+						{ 56.3, 43.9, THE_WAKING_SHORES },
+					},
 				}),
 				q(76217, {	-- Living History
 					["sourceQuests"] = { 77327 },	-- Nirobin and the Office
@@ -274,8 +285,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 207311 },	-- Zenata
 					["coord"] = { 77.1, 38.4, THE_FORBIDDEN_REACH },
 					["g"] = {
+						o(405943, {	-- Drakonid Scroll Case
+							i(208202), -- Neltharion Agent Instructions (QI!)
+						}),
 						--spell(431593),	-- Azerothian Archives: Dragonskull Island, Forbidden Reach Site (WQ unlock)
-						i(208202), -- Neltharion Agent Instructions (QI!)
 					},
 				}),
 				q(77484, {	-- Technoscrying: Igira's Watch
@@ -299,7 +312,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 38.1, 49.8, ZARALEK_CAVERN },
 					["g"] = {
 						--spell(431594),	-- Azerothian Archives: Igira's Watch, Zaralek Cavern Site (WQ unlock)
-						i(208228),	-- Ancient Trade-bonded Tablet (QI!)
+						o(405996, {	-- Ancient Zaqali Trade-bond Tablet
+							["coord"] = { 42, 35, ZARALEK_CAVERN },
+							["groups"] = {
+								i(208228),	-- Ancient Trade-bonded Tablet (QI!)
+							},
+						})
 					},
 				}),
 				q(77486, {	-- Excavation: Gaze of Neltharion
