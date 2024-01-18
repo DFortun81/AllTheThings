@@ -796,7 +796,6 @@ root(ROOTS.Unsorted, {
 				i(213210),	-- Bloodied Banner Scrap
 				i(213033),	-- Brittle Blacksmith Tongs
 				i(213043),	-- Brittle Djaradin Leather
-				i(212767),	-- Broken Beaker
 				i(213195),	-- Charred Doodle
 				i(213206),	-- Charred Letter
 				i(212771),	-- Charred Snail Shells

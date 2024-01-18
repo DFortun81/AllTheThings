@@ -505,7 +505,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 					q(76739, {	-- Research: Niffen of Zaralek Cavern
 						["coord"] = { 47.6, 48.6, ZARALEK_CAVERN },
-					}),					
+					}),
 					q(78820, {	-- Technoscrying: The Mysteries of Igira's Watch
 						["coord"] = { 38.1, 49.8, ZARALEK_CAVERN },
 					}),
@@ -525,5 +525,8 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, {
 		q(79995),	-- After completing 'A Taste of the Past' (questID 77154) (spellID 436768) (WQ unlock - Winglord's Perch, Forbidden Reach Site)
 		q(79997),	-- After completing 'The Scale of it All' (questID 77425) (spellID 436778) (WQ unlock - Igira's Watch, Zaralek Cavern Site)
 		q(79994),	-- After completing 'Antiquated Antics' (questID 75604) (spellID 436766) (WQ unlock - Gaze of Neltharion, Zaralek Cavern Site)
+		q(79607),	-- After completing ZC world quest for Azerothian Archive
+		q(79661),	-- After completing ZC world quest for Azerothian Archive
+		q(79663),	-- After completing 2nd ZC world quest for Azerothian Archive
 	})),
 }));
