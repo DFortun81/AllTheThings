@@ -319,7 +319,7 @@ local CompletedQuests = setmetatable({}, {
 	or function(t, questID)
 		if RetailRawQuests[questID] then return true end
 		if C_QuestLog_IsQuestFlaggedCompleted(questID) then
-			RetailRawQuests[questID] = true;
+			t[questID] = true;
 			return true;
 		end
 		return false;
@@ -800,7 +800,7 @@ if app.IsRetail then
 		if not freshCompletes or #freshCompletes == 0 then
 			return;
 		end
-		-- app.PrintDebug("QueryCompletedQuests",#freshCompletes,#CompleteQuestSequence)
+		-- app.PrintDebug("QCQ",#freshCompletes,#CompleteQuestSequence)
 		local oldReportSetting = app.Settings:GetTooltipSetting("Report:CompletedQuests");
 		-- check if Blizzard is being dumb / should we print a summary instead of individual lines
 		local questDiff = #freshCompletes - #CompleteQuestSequence;
@@ -849,6 +849,13 @@ if app.IsRetail then
 		if manyQuests then
 			app.Settings:SetTooltipSetting("Report:CompletedQuests", oldReportSetting);
 		end
+
+		if #RetailDirtyQuests > 0 then
+			app.SetBatchCached("Quests", RetailRawQuests, 1)
+			app.SetBatchCached("Quests", UnflaggedQuests)
+			wipe(UnflaggedQuests)
+		end
+
 		BatchRefresh = nil
 	end
 
@@ -863,9 +870,6 @@ if app.IsRetail then
 			-- because that is a huge overhead. Instead capture the values and assign them all at once
 			QueryCompletedQuests();
 			if #RetailDirtyQuests > 0 then
-				app.SetBatchCached("Quests", CompletedQuests, 1)
-				app.SetBatchCached("Quests", UnflaggedQuests)
-				wipe(UnflaggedQuests)
 				app.UpdateRawIDs("questID", RetailDirtyQuests);
 			end
 		end
