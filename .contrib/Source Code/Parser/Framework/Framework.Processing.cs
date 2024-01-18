@@ -4,9 +4,7 @@ using ATT.FieldTypes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography;
 using static ATT.Export;
-using static ATT.Framework;
 
 namespace ATT
 {
@@ -1081,7 +1079,7 @@ namespace ATT
                 var split = text.Split(':');
                 var headerID = Convert.ToInt64(split[1]);
                 MarkCustomHeaderAsRequired(headerID);
-                switch(split.Length > 2 ? split[2].ToLower() : "text")
+                switch (split.Length > 2 ? split[2].ToLower() : "text")
                 {
                     case "description":
                         data[key] = $"~_.L.HEADER_DESCRIPTIONS[{headerID}]";
@@ -1352,7 +1350,7 @@ namespace ATT
             if (data.TryGetValue("creatureID", out long creatureID))
             {
                 data.Remove("creatureID");
-                LogDebugWarn($"Converted 'creatureID' {creatureID} on Criteria {criteriaID} into 'crs'");
+                LogDebugWarn($"Converted 'creatureID' {creatureID} on Criteria {achID}:{criteriaID} into 'crs'");
                 Objects.Merge(data, "crs", new List<long> { creatureID });
             }
 
@@ -1360,7 +1358,7 @@ namespace ATT
             if (data.TryGetValue("npcID", out long npcID))
             {
                 data.Remove("npcID");
-                LogDebugWarn($"Converted 'npcID' {npcID} on Criteria {criteriaID} into 'crs'");
+                LogDebugWarn($"Converted 'npcID' {npcID} on Criteria {achID}:{criteriaID} into 'crs'");
                 Objects.Merge(data, "crs", new List<long> { npcID });
             }
 
@@ -1371,6 +1369,13 @@ namespace ATT
                 data.Remove("crs");
                 Objects.Merge(data, "_npcs", crs);
             }
+
+            // If Criteria doesn't have any timeline, enforce a default of 3.0.1
+            if (!data.ContainsKey("timeline"))
+            {
+                data["timeline"] = new List<object> { "added 3.0.1" };
+                LogDebugWarn($"Added default timeline 3.0.1 on Criteria {achID}:{criteriaID}");
+            }
         }
 
         private static void Validate_Quest(IDictionary<string, object> data)
@@ -1379,10 +1384,10 @@ namespace ATT
             if (!data.TryGetValue("questID", out long questID))
                 return;
 
-            if (questID == 69332)
-            {
+            //if (questID == 69332)
+            //{
 
-            }
+            //}
 
             // Merge quest entry to AllQuest collection
             Objects.MergeQuestData(data);
@@ -1591,14 +1596,14 @@ namespace ATT
                 // Get matching Achievement
                 if (!TryGetTypeDBObject(achID, out Achievement achievementData))
                 {
-                    LogWarn($"Failed to find matching Achievement data for ID: {achID}");
+                    LogWarn($"Failed to find matching Achievement data (Wago) for ID: {achID}");
                     return;
                 }
 
                 // Get matching CriteriaTree
                 if (!TryGetTypeDBObject(achievementData.Criteria_tree, out CriteriaTree criteriaTreeData))
                 {
-                    LogWarn($"Failed to find matching CriteriaTree data for ID: {achievementData.Criteria_tree}");
+                    LogWarn($"Failed to find matching CriteriaTree data (Wago) for ID: {achievementData.Criteria_tree}");
                     return;
                 }
 
