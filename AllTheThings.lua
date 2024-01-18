@@ -16043,6 +16043,7 @@ customWindowUpdates["ItemFilter"] = function(self, force)
 				local results = app:BuildSearchResponse(field, value, true);
 				app.PrintDebug("Results",#results)
 				ArrayAppend(self.data.g, results);
+				self.data.text = L["ITEM_FILTER_TEXT"]..sformat("  [%s=%s]",field,value);
 			end
 
 			-- Item Filter
