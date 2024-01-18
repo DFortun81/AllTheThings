@@ -24,6 +24,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 			}),
 			q(69929, {	-- Strunraan (WQ)
 				["coord"] = { 82.0, 76.0, OHNAHRAN_PLAINS },
+				["isWorldQuest"] = true,
 				["sym"] = {
 					{"select","encounterID",2515,},{"pop"},	-- Original WB
 				},
@@ -44,6 +45,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 			}),
 			q(69930, {	-- Basrikron (WQ)
 				["coord"] = { 55.0, 77.7, THE_WAKING_SHORES },
+				["isWorldQuest"] = true,
 				["sym"] = {
 					{"select","encounterID",2506,},{"pop"},	-- Original WB
 				},
@@ -64,6 +66,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 			}),
 			q(69927, {	-- Bazual (WQ)
 				["coord"] = { 77.7, 35.8, THE_AZURE_SPAN },
+				["isWorldQuest"] = true,
 				["sym"] = {
 					{"select","encounterID",2517,},{"pop"},	-- Original WB
 				},
@@ -84,6 +87,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 			}),
 			q(69928, {	-- Liskanoth (WQ)
 				["coord"] = { 53.7, 64.5, 2085 },
+				["isWorldQuest"] = true,
 				["sym"] = {
 					{"select","encounterID",2518,},{"pop"},	-- Original WB
 				},
@@ -110,6 +114,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 			}),
 			q(74892, {	-- Zaqali Elders (WQ)
 				["coord"] = { 27.5, 44.4, ZARALEK_CAVERN },
+				["isWorldQuest"] = true,
 				["sym"] = {
 					{"select","encounterID",2531,},{"pop"},	-- Original WB
 				},
@@ -125,7 +130,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					i(210751),	-- Mark of the Hibernating Runebear (CI!)
 					i(210433, { -- Visage of Aurostor (COSMETIC!)
 						["modID"] = 0,
-					}),	
+					}),
 					i(208440),	-- Aurostor's Sleeping Knickers
 					i(208437),	-- Crown of Freya's Chosen
 					i(208436),	-- Flame-Etched Breastplate
@@ -141,6 +146,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 			q(76367,	-- Hibernation Heroes
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 				["coord"] = { 37.1, 55.2, EMERALD_DREAM },
+				["isWorldQuest"] = true,
 				["sym"] = {
 					{"select","encounterID",2562,},{"pop"},
 				},

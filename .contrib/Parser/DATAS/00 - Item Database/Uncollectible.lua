@@ -1075,6 +1075,10 @@ i(212646);	-- Chipped Armor Plate
 i(212649);	-- Quilted Tent Scrap
 i(212763);	-- Spoiled Honeywine
 i(212772);	-- False Silver Coin
+i(212765);	-- Fish Bones
+i(212764);	-- Fishing Net Fragment
+i(212761);	-- Pouch of Coins
+i(212688);	-- Salt-dried Roots
 i(212774);	-- Sharpened Shalewing Bones
 i(213039);	-- Thin Drakonid Spoon
 i(213216);	-- Strip of Notched Leather

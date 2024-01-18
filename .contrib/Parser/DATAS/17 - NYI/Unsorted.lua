@@ -846,6 +846,8 @@ root(ROOTS.Unsorted, {
 				i(212608),	-- Duck Potion
 				i(213364),	-- Empty Vial of Perfume
 				i(213388),	-- Faded Centaur Painting
+				i(212765),	-- Fish Bones
+				i(212648),	-- Fishbone Needle
 				i(212764),	-- Fishing Net Fragment
 				i(212382),	-- Fluorescent Splitblade
 				i(213044),	-- Frayed Fang Amulet
@@ -865,6 +867,8 @@ root(ROOTS.Unsorted, {
 				i(213184),	-- Rock with Chewed Gum
 				i(213030),	-- Rusty Garden Shears
 				i(212688),	-- Salt-dried Roots
+				i(213368),	-- Scratch-and-Sniff Stone
+				i(212770),	-- Smashed Pottery
 				i(213277),	-- Smudged Snippet of Poetry
 				i(213045),	-- Snapped Djaradin Necklace
 				i(213040),	-- Tarnished Djaradin Amulet

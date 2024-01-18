@@ -1101,10 +1101,16 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				16530,	-- Ally of the Flights
 			}},
 		}),
-		ach(17978),		-- Stones Can Fly!
-		ach(17977),		-- Stones Can Try To Fly!
-		ach(17830),		-- Stones Can't Fly!
+		ach(17978),	-- Stones Can Fly!
+		ach(17977),	-- Stones Can Try To Fly!
+		ach(17830),	-- Stones Can't Fly!
 	}),
+	-- 10.2
+	n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+		ach(19326),	-- Dreaming of Drakes
+		ach(19397),	-- Dreaming of Wyrms
+		ach(19398),	-- Dreaming of the Aspects
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
