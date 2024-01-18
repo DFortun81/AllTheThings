@@ -13523,3 +13523,6 @@
 20033@@@Hearthstone Beginner
 10.2.5.52902
 19031@@@Fyrn
+10.2.5.52968
+19719@@@Reclamation of Gilneas
+19720@@@Reclamation of Gilneas (Hidden Character Achievement)

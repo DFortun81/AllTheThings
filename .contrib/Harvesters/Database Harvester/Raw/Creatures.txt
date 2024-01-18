@@ -20909,3 +20909,79 @@
 217530@@@Hoplet
 10.2.5.52902
 209163@@@Fyrn
+10.2.5.52968
+205981@@@Lukou
+209891@@@Kevo ya Siti
+210090@@@Mueh'zala
+210116@@@Bwonsamdi
+210190@@@Gonk
+210245@@@Kevo ya Siti
+210258@@@Lukou
+210260@@@Kevo ya Siti
+210311@@@Mueh'zala
+210340@@@Grand Artificer Romuul
+210345@@@Draenei Traveler
+210347@@@Draenei Civilian
+210350@@@Pack Talbuk
+210351@@@Pack Elekk
+210390@@@Prophet Velen
+210391@@@Chieftain Hatuun
+210562@@@Grand Artificer Romuul
+210563@@@Arzaal
+210565@@@Grand Artificer Romuul
+210583@@@Anxious Spirit
+210588@@@Arzaal
+210598@@@Arzaal
+210599@@@Chieftain Hatuun
+210600@@@Prophet Velen
+210605@@@Prophet Velen
+210606@@@Chieftain Hatuun
+210607@@@Arzaal
+210670@@@Prophet Velen
+210671@@@Chieftain Hatuun
+210672@@@Arzaal
+210905@@@Princess Tess Greymane
+210907@@@Lord Darius Crowley
+210916@@@Huntsman Blake
+210955@@@Belysra Starbreeze
+210965@@@Calia Menethil
+210968@@@Scarlet Champion
+211191@@@Mia Greymane
+213057@@@Lord Darius Crowley
+214936@@@Alexstrasza the Life-Binder
+214975@@@Vyranoth
+214976@@@Merithra
+214977@@@Ebyssian
+214978@@@Kalecgos
+214980@@@Nozdormu
+214981@@@Wrathion
+214983@@@Sabellian
+215533@@@Greyguard Elite
+215534@@@7th Legion Scout
+215535@@@7th Legion Infantry
+215536@@@7th Legion Sharpshooter
+215537@@@7th Legion Battlemage
+215587@@@Genn Greymane
+215693@@@Archmage Khadgar
+215694@@@Kalecgos
+215695@@@Archmage Khadgar
+216069@@@Malfurion Stormrage
+216115@@@Master Mathias Shaw
+216116@@@Genn Greymane
+217032@@@Bel'ameth Huntress
+217033@@@Amirdrassil Settler
+217045@@@Aessa Silverdew
+217046@@@Sentinel of the New Moon
+217116@@@Genn Greymane
+217117@@@Princess Tess Greymane
+217165@@@Calia Menethil
+217171@@@Greyguard Elite
+217172@@@7th Legion Infantry
+217173@@@Commander Lorna Crowley
+217174@@@Priestess of the Moon
+217175@@@Lord Darius Crowley
+217176@@@Vassandra Stormclaw
+217177@@@Tobias Mistmantle
+217180@@@Grandma Wahl
+217181@@@Celestine of the Harvest
+217182@@@Belysra Starbreeze
