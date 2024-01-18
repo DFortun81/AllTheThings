@@ -2860,3 +2860,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 		}),
 	},
 })));
+
+root(ROOTS.HiddenQuestTriggers, {
+	tier(DF_TIER, {
+		q(79142, {["timeline"] = { ADDED_10_2_5 }, }),	-- Triggers with 'Outland Racing Completionist: Gold' (achievementID 19107)
+	}),
+});
