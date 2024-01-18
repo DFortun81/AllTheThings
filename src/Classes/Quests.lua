@@ -457,6 +457,8 @@ local function CollectibleAsLocked(t, locked)
 	return
 	-- not able to access quest on current character
 	(locked or t.locked)
+	-- not a repeatable quest
+	and not t.repeatable
 	and
 	(
 		-- Collecting Locked Quests
@@ -1479,7 +1481,7 @@ not app.IsClassic and "AsBreadcrumbWithLockCriteria" or false, {
 -- Both: Breadcrumbs
 "AsBreadcrumb", {
 	text = function(t)
-		return Colorize(t.name, app.Colors.Breadcrumb)
+		return t.locked and Colorize(t.name, app.Colors.Locked) or Colorize(t.name, app.Colors.Breadcrumb)
 	end,
 	collectible = app.IsClassic and function(t)
 		if app.Settings.Collectibles.Quests then
