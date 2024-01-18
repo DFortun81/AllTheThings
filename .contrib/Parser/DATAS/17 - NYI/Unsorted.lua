@@ -873,7 +873,6 @@ root(ROOTS.Unsorted, {
 				i(213032),	-- Warped Drakonid Jar
 				i(213212),	-- Whalebone Knife
 				i(213182),	-- Worry Stone
-				i(213214),	-- Woven Lavareed Basket
 			}),
 			filter(MOUNTS, {
 				i(212631),	-- Brilliant Sunburst Peafowl (MOUNT!)

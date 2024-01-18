@@ -527,6 +527,7 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, {
 		q(79994),	-- After completing 'Antiquated Antics' (questID 75604) (spellID 436766) (WQ unlock - Gaze of Neltharion, Zaralek Cavern Site)
 		q(79607),	-- After completing ZC world quest for Azerothian Archive
 		q(79661),	-- After completing ZC world quest for Azerothian Archive
+		q(79662),	-- After completing Ohn'ahran Plains world quest for Azerothian Archive
 		q(79663),	-- After completing 2nd ZC world quest for Azerothian Archive
 	})),
 }));

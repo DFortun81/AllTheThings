@@ -1093,3 +1093,4 @@ i(212648);	-- Fishbone Needle
 i(213041);	-- Desiccated Djaradin Scroll
 i(213363);	-- Molted Eye Skin
 i(212767);	-- Broken Beaker
+i(213214);	-- Woven Lavareed Basket
