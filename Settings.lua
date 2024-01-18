@@ -3541,7 +3541,7 @@ local function changeBackgroundColor(restore)
 		newR, newG, newB, newA = unpack(restore)
 	else
 		-- Something changed
-		newA, newR, newG, newB = OpacitySliderFrame:GetValue(), ColorPickerFrame:GetColorRGB()
+		newA, newR, newG, newB = ColorPickerFrame:GetColorAlpha(), ColorPickerFrame:GetColorRGB()
 	end
 
 	-- Update our internal storage
@@ -3558,7 +3558,7 @@ local function changeBorderColor(restore)
 		newR, newG, newB, newA = unpack(restore)
 	else
 		-- Something changed
-		newA, newR, newG, newB = OpacitySliderFrame:GetValue(), ColorPickerFrame:GetColorRGB()
+		newA, newR, newG, newB = ColorPickerFrame:GetColorAlpha(), ColorPickerFrame:GetColorRGB()
 	end
 
 	-- Update our internal storage
@@ -3571,9 +3571,8 @@ end
 function ShowColorPicker(r, g, b, a, changedCallback)
 	ColorPickerFrame.hasOpacity, ColorPickerFrame.opacity = (a ~= nil), a
 	ColorPickerFrame.previousValues = {r,g,b,a}
-	ColorPickerFrame.func, ColorPickerFrame.opacityFunc, ColorPickerFrame.cancelFunc =
-		changedCallback, changedCallback, changedCallback
-	ColorPickerFrame:SetColorRGB(r,g,b)
+	ColorPickerFrame.func, ColorPickerFrame.opacityFunc, ColorPickerFrame.cancelFunc, ColorPickerFrame.swatchFunc = changedCallback, changedCallback, changedCallback, changedCallback
+	ColorPickerFrame.Content.ColorPicker:SetColorRGB(r,g,b)
 	ColorPickerFrame:Hide()	-- Need to run the OnShow handler
 	ColorPickerFrame:Show()
 end
