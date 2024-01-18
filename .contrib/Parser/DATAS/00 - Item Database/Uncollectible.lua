@@ -1065,20 +1065,21 @@ i(211270);	-- Pristine Core Leather
 ------------------
 -- PATCH 10.2.5 --
 ------------------
---- Trash ---
-i(207460);	-- Dreadsquall Eggshell Fragment
 --- Azerothian Archives Trash ---
+i(205221);	-- Simple Pottery Fragment
+i(205222);	-- Wooden Caravan Spoke
 i(205224);	-- Just a Rock
+i(207460);	-- Dreadsquall Eggshell Fragment
+i(208201);	-- Paper Scraps
 i(212646);	-- Chipped Armor Plate
 i(212649);	-- Quilted Tent Scrap
+i(212763);	-- Spoiled Honeywine
 i(212772);	-- False Silver Coin
-i(213387);	-- Primitive Centaur Carving
-i(213385);	-- Stiff Brush
-i(213366);	-- Strip of Niffen Headwear
-i(213216);	-- Strip of Notched Leather
 i(213039);	-- Thin Drakonid Spoon
-i(213380);	-- Unidentifiable Equine Fossil
+i(213216);	-- Strip of Notched Leather
 i(213362);	-- Ancient Drakonid Candy
+i(213366);	-- Strip of Niffen Headwear
 i(213377);	-- Mutliated Storybook
-i(205222);	-- Wooden Caravan Spoke
-i(208201); -- Paper Scraps
+i(213380);	-- Unidentifiable Equine Fossil
+i(213385);	-- Stiff Brush
+i(213387);	-- Primitive Centaur Carving

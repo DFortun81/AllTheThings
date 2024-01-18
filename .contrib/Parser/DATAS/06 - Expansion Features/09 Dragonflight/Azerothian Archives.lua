@@ -248,6 +248,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 206107 },	-- Eadweard Dalyngrigge
 					["coord"] = { 61.5, 31.2, THALDRASZUS },
 					["g"] = {
+						--spell(431591),	-- Azerothian Archives: Riverbed, Concord Observatory, and Lost Anethenum Sites (WQ unlock)
 						i(208451, {	-- Archivist's Buckled Cap
 							["provider"] = { "i", 212371 },-- Azerothian Archivist Initiation Token
 						}),
@@ -273,6 +274,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 207311 },	-- Zenata
 					["coord"] = { 77.1, 38.4, THE_FORBIDDEN_REACH },
 					["g"] = {
+						--spell(431593),	-- Azerothian Archives: Dragonskull Island, Forbidden Reach Site (WQ unlock)
 						i(208202), -- Neltharion Agent Instructions (QI!)
 					},
 				}),
@@ -308,6 +310,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 77151 },	-- The Cache in the Crag
 					["provider"] = { "n", 208362 },	-- Roska Rocktooth
 					["coord"] = { 14.0, 14.7, THE_FORBIDDEN_REACH },
+					--["g"] = {
+					--	spell(431592),	-- Azerothian Archives: Winglord's Perch, Forbidden Reach Site (WQ unlock)
+					--},
 				}),
 				--
 				q(79226, {	-- The Big Dig: Traitor's Rest
@@ -416,6 +421,20 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			}),
+			n(WORLD_QUESTS, {
+				["sourceQuests"] = {
+					71232,	-- Renown of the Dragon Isles
+					DF_ACCOUNT_CAMPAIGN_QUEST,
+					--79996,	-- Dragonskull Island, Forbidden Reach Site
+					--79995,	-- Winglord's Perch, Forbidden Reach Site
+					--79992,	-- Riverbed, Concord Observatory, and Lost Anethenum Sites
+				},
+				["g"] = sharedData({ ["isWorldQuest"] = true, }, {
+					q(78645, {	-- Excavation: Buried in the Riverbed
+						["coord"] = { 65.9, 45.7, OHNAHRAN_PLAINS },
+					}),
+				}),
+			}),
 		},
 	}),
 })));
@@ -425,7 +444,8 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, {
 		q(79616),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434198)
 		q(79664),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434203)
 		q(79670),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434928)
-		q(79996),	-- After completing 'The Hidden Hand' (questID 77415)
-		q(79995),	-- After completing 'A Taste of the Past' (questID 77154)
+		q(79992),	-- After completing 'Finally, An Archivist' (questID 79223) (spellID 436735) (WQ unlock - Riverbed, Concord Observatory, and Lost Anethenum Sites)
+		q(79996),	-- After completing 'The Hidden Hand' (questID 77415) (spellID 436777) (WQ unlock - Dragonskull Island, Forbidden Reach Site)
+		q(79995),	-- After completing 'A Taste of the Past' (questID 77154) (spellID 436768) (WQ unlock - Winglord's Perch, Forbidden Reach Site)
 	})),
 }));

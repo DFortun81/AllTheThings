@@ -877,7 +877,6 @@ root(ROOTS.Unsorted, {
 				i(212770),	-- Smashed Pottery
 				i(213277),	-- Smudged Snippet of Poetry
 				i(213045),	-- Snapped Djaradin Necklace
-				i(212763),	-- Spoiled Honeywine
 				i(213040),	-- Tarnished Djaradin Amulet
 				i(213386),	-- Unearthed Stone Arrowhead
 				i(213203),	-- Velvet Nightcap
