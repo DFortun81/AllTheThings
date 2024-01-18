@@ -1470,12 +1470,12 @@ not app.IsClassic and "AsBreadcrumbWithLockCriteria" or false, {
 			return true
 		end
 	end,
-}, (function(t) return t.lc and t.isBreadcrumb; end),
+}, (function(t) return (t.lc or t.altQuests) and t.isBreadcrumb; end),
 -- Both: Locked Quest support
 "WithLockCriteria", {
 	collectible = CollectibleAsQuestOrAsLocked,
 	locked = LockedAsQuest,
-}, (function(t) return t.lc; end),
+}, (function(t) return t.lc or t.altQuests; end),
 -- Both: Breadcrumbs
 "AsBreadcrumb", {
 	text = function(t)
