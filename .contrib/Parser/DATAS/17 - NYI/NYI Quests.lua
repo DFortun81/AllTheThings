@@ -7661,11 +7661,7 @@ root(ROOTS.NeverImplemented, {
 			-- 10.1.7
 			tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 				-- 10.1.7.50442
-				q(75604),	--
 				q(75938),	-- Test
-				q(76026),	--
-				q(76032),	--
-				q(77331),	--
 				q(77485),	--
 				q(77488),	--
 				q(77615),	--

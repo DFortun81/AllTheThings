@@ -873,7 +873,6 @@ root(ROOTS.Unsorted, {
 				i(213030),	-- Rusty Garden Shears
 				i(212688),	-- Salt-dried Roots
 				i(213368),	-- Scratch-and-Sniff Stone
-				i(212774),	-- Sharpened Shalewing Bones
 				i(212770),	-- Smashed Pottery
 				i(213277),	-- Smudged Snippet of Poetry
 				i(213045),	-- Snapped Djaradin Necklace
@@ -1157,7 +1156,6 @@ root(ROOTS.Unsorted, {
 			-- Misc
 			i(215160), -- The Big Dig Rig
 			-- Quest Items
-			i(210834),	-- Archivist's Earth Totem
 			i(210956),	-- Archivist's Fire Totem
 			i(211266),	-- Archivist's Fire Totem
 			------ Love in the Air ------

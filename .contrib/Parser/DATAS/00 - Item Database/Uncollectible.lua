@@ -1075,6 +1075,7 @@ i(212646);	-- Chipped Armor Plate
 i(212649);	-- Quilted Tent Scrap
 i(212763);	-- Spoiled Honeywine
 i(212772);	-- False Silver Coin
+i(212774);	-- Sharpened Shalewing Bones
 i(213039);	-- Thin Drakonid Spoon
 i(213216);	-- Strip of Notched Leather
 i(213362);	-- Ancient Drakonid Candy
