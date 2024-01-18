@@ -693,18 +693,17 @@ crit = function(criteriaUID, t)							-- Create an Achievement Criteria Object (
 	if (t.groups or t.g) and #(t.groups or t.g) > 0 and false then
 		error(table.concat({"Do not nest content (g/groups) inside Achievement Criteria:",criteriaUID}))
 	end
-			if t.achievementID then
-				-- print(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaUID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
-				-- error(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaUID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
-			end
-			if t.questID then
+	if t.achievementID then
+		-- print(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaUID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
+		-- error(table.concat({"Do not use AchievementID:",t.achievementID," inside Achievement Criteria:",criteriaUID," ==> Use '_quests', '_npcs', 'cost', or 'provider' to define where/how this Criteria is granted instead of directly nesting it in Source."}))
+	end
+	if t.questID then
 		error(table.concat({"Do not use 'questID' in crit(",criteriaUID,") ==> [\"_quests\"]={",t.questID,"}"}))
 	end
 	if t.creatureID or t.npcID then
 		error(table.concat({"Do not use 'creatureID' or 'npcID' in crit(",criteriaUID,") ==> [\"crs\"]={",t.creatureID or t.npcID,"}"}))
 	end
 	t.criteriaID = criteriaUID;
-	if not t.timeline then bubbleDown({ ["timeline"] = { "added 3.0.1" } }, t); end
 	return t;
 end
 currency = function(id, t)								-- Create a CURRENCY Object

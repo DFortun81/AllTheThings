@@ -226,7 +226,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 55.8, 58.3, RUINS_OF_GILNEAS },
 				}),
 				q(78187, {	-- Artillerist Arsonist
-					["qg"] = 210905,	-- Princess Tess Greymane
+					["qg"] = 213995,	-- Princess Tess Greymane
 					["sourceQuest"] = 78185,	-- Hounds of War
 					["coord"] = { 55.8, 58.7, RUINS_OF_GILNEAS },
 				}),
@@ -286,6 +286,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 }));
 root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
 	m(RUINS_OF_GILNEAS, {
-		q(80080),	-- Upon learning Ensemble: Gilnean Noble's Suit
+		q(80080),	-- Upon learning Ensemble: Gilnean Noble's Suit (spellID 430283)
 	}),
 }));

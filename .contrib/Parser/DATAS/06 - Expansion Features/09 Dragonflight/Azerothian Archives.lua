@@ -37,13 +37,13 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				ach(19791, {	-- Goggle Wobble
 					crit(65404, {	-- Zenata danced with at Igira's Watch
-						--["coord"] = { },
+						["coord"] = { 38.1, 49.8, ZARALEK_CAVERN },
 					}),
 					crit(65405, {	-- Zenata danced with at Dragonskull Island
 						["coord"] = { 77.1, 38.4, THE_FORBIDDEN_REACH },
 					}),
 					crit(65406, {	-- Zenata danced with at Concord Observatory
-						--["coord"] = { },
+						["coord"] = { 56.3, 43.9, THE_WAKING_SHORES },
 					}),
 				}),
 				ach(19792, {	-- Just One More Thing
@@ -174,7 +174,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 204835 },	-- Zenata
 					["coord"] = { 56.3, 43.9, THE_WAKING_SHORES },
 					["g"] = {
-						i(205455),	-- Telescope Lens (QI!)
+						o(404849, {	-- Dreadsquall Nest
+							i(205455),	-- Telescope Lens (QI!)
+						}),
 					},
 				}),
 				q(77267, {	-- Excavation 101
@@ -219,9 +221,18 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 66.4, 46, OHNAHRAN_PLAINS },
 				}),
 				q(77327, {	-- Nirobin and the Office
-					["sourceQuests"] = { 75603 },	-- Do Rites by Her
-					["provider"] = { "n", 204643 },	-- Roska Rocktooth
-					["coord"] = { 66.4, 46, OHNAHRAN_PLAINS },
+					["sourceQuests"] = {
+						75603,	-- Do Rites by Her
+						75868,	-- A Window into the Future
+					},
+					["providers"] = {
+						{ "n", 204643 },	-- Roska Rocktooth
+						{ "n", 204835 },	-- Zenata
+					},
+					["coords"] = {
+						{ 66.4, 46, OHNAHRAN_PLAINS },
+						{ 56.3, 43.9, THE_WAKING_SHORES },
+					},
 				}),
 				q(76217, {	-- Living History
 					["sourceQuests"] = { 77327 },	-- Nirobin and the Office
@@ -248,8 +259,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 206107 },	-- Eadweard Dalyngrigge
 					["coord"] = { 61.5, 31.2, THALDRASZUS },
 					["g"] = {
+						--spell(431591),	-- Azerothian Archives: Riverbed, Concord Observatory, and Lost Anethenum Sites (WQ unlock)
 						i(208451, {	-- Archivist's Buckled Cap
-							["provider"] = { "i", 212371 },-- Azerothian Archivist Initiation Token
+							["provider"] = { "i", 212371 },	-- Azerothian Archivist Initiation Token
 						}),
 					},
 				}),
@@ -273,7 +285,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 207311 },	-- Zenata
 					["coord"] = { 77.1, 38.4, THE_FORBIDDEN_REACH },
 					["g"] = {
-						i(208202), -- Neltharion Agent Instructions (QI!)
+						o(405943, {	-- Drakonid Scroll Case
+							i(208202), -- Neltharion Agent Instructions (QI!)
+						}),
+						--spell(431593),	-- Azerothian Archives: Dragonskull Island, Forbidden Reach Site (WQ unlock)
 					},
 				}),
 				q(77484, {	-- Technoscrying: Igira's Watch
@@ -281,10 +296,55 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 208355 },	-- Zenata
 					["coord"] = { 61.5, 31.1, THALDRASZUS },
 				}),
+				q(76564, {	-- The Tools of the Dragonkillers
+					["sourceQuests"] = { 77484 },	-- Technoscrying: Igira's Watch
+					["provider"] = { "n", 207763 },	-- Zenata
+					["coord"] = { 38.1, 49.8, ZARALEK_CAVERN },
+				}),
+				q(76576, {	-- An Unlikely Proposal
+					["sourceQuests"] = { 76564 },	-- The Tools of the Dragonkillers
+					["provider"] = { "n", 207763 },	-- Zenata
+					["coord"] = { 38.1, 49.8, ZARALEK_CAVERN },
+				}),
+				q(77425, {	-- The Scale of it All
+					["sourceQuests"] = { 76576 },	-- An Unlikely Proposal
+					["provider"] = { "n", 207763 },	-- Zenata
+					["coord"] = { 38.1, 49.8, ZARALEK_CAVERN },
+					["g"] = {
+						--spell(431594),	-- Azerothian Archives: Igira's Watch, Zaralek Cavern Site (WQ unlock)
+						o(405996, {	-- Ancient Zaqali Trade-bond Tablet
+							["coord"] = { 42, 35, ZARALEK_CAVERN },
+							["groups"] = {
+								i(208228),	-- Ancient Trade-bonded Tablet (QI!)
+							},
+						})
+					},
+				}),
 				q(77486, {	-- Excavation: Gaze of Neltharion
 					["sourceQuests"] = { 79223 },	-- Finally, An Archivist!
 					["provider"] = { "n", 208614 },	-- Roska Rocktooth
 					["coord"] = { 61.5, 31.1, THALDRASZUS },
+				}),
+				q(76026, {	-- Surveying the Tower
+					["sourceQuests"] = { 77486 },	-- Excavation: Gaze of Neltharion
+					["provider"] = { "n", 205413 },	-- Roska Rocktooth
+					["coord"] = { 48.6, 48.3, ZARALEK_CAVERN },
+					["g"] = {
+						i(210834),	-- Archivist's Earth Totem (QI!)
+					},
+				}),
+				q(76032, {	-- Hidden in the Midden
+					["sourceQuests"] = { 76026 },	-- Surveying the Tower
+					["provider"] = { "n", 207931 },	-- Defaced Dragon Statue
+					["coord"] = { 47.5, 48.5, ZARALEK_CAVERN },
+				}),
+				q(75604, {	-- Antiquated Antics
+					["sourceQuests"] = { 76032 },	-- Hidden in the Midden
+					["provider"] = { "n", 205413 },	-- Roska Rocktooth (TODO: unsure, need to recheck npcID)
+					["coord"] = { 47.6, 48.6, ZARALEK_CAVERN },
+					--["g"] = {
+					--	spell(431595),	-- Azerothian Archives: Gaze of Neltharion, Zaralek Cavern Site (WQ unlock)
+					--},
 				}),
 				q(77487, {	-- Excavation: Winglord's Perch
 					["sourceQuests"] = { 79223 },	-- Finally, An Archivist!
@@ -308,6 +368,19 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["sourceQuests"] = { 77151 },	-- The Cache in the Crag
 					["provider"] = { "n", 208362 },	-- Roska Rocktooth
 					["coord"] = { 14.0, 14.7, THE_FORBIDDEN_REACH },
+					--["g"] = {
+					--	spell(431592),	-- Azerothian Archives: Winglord's Perch, Forbidden Reach Site (WQ unlock)
+					--},
+				}),
+				q(79231, {	-- Back to Headquarters! Again!
+					["sourceQuests"] = { 75604 },	-- Antiquated Antics (TODO: may be it require all 4 quests chain completed, so he can spawn with different coords? Or different qID?)
+					["provider"] = { "n", 208055 },	-- Roska Rocktooth
+					["coord"] = { 48.6, 48.3, ZARALEK_CAVERN },
+				}),
+				q(77331, {	-- Graduation Day
+					["sourceQuests"] = { 79231 },	-- Back to Headquarters! Again!
+					["provider"] = { "n", 206107 },	-- Eadweard Dalyngrigge
+					["coord"] = { 61.5, 31.2, THALDRASZUS },
 				}),
 				--
 				q(79226, {	-- The Big Dig: Traitor's Rest
@@ -416,6 +489,28 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 			}),
+			n(WORLD_QUESTS, {
+				["sourceQuests"] = {
+					71232,	-- Renown of the Dragon Isles
+					DF_ACCOUNT_CAMPAIGN_QUEST,
+					--79996,	-- Dragonskull Island, Forbidden Reach Site
+					--79995,	-- Winglord's Perch, Forbidden Reach Site
+					--79992,	-- Riverbed, Concord Observatory, and Lost Anethenum Sites
+					--79997,	-- Igira's Watch, Zaralek Cavern Site
+					--79994,	-- Gaze of Neltharion, Zaralek Cavern Site
+				},
+				["g"] = sharedData({ ["isWorldQuest"] = true, }, {
+					q(78645, {	-- Excavation: Buried in the Riverbed
+						["coord"] = { 65.9, 45.7, OHNAHRAN_PLAINS },
+					}),
+					q(76739, {	-- Research: Niffen of Zaralek Cavern
+						["coord"] = { 47.6, 48.6, ZARALEK_CAVERN },
+					}),
+					q(78820, {	-- Technoscrying: The Mysteries of Igira's Watch
+						["coord"] = { 38.1, 49.8, ZARALEK_CAVERN },
+					}),
+				}),
+			}),
 		},
 	}),
 })));
@@ -425,7 +520,14 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, {
 		q(79616),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434198)
 		q(79664),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434203)
 		q(79670),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434928)
-		q(79996),	-- After completing 'The Hidden Hand' (questID 77415)
-		q(79995),	-- After completing 'A Taste of the Past' (questID 77154)
+		q(79992),	-- After completing 'Finally, An Archivist' (questID 79223) (spellID 436735) (WQ unlock - Riverbed, Concord Observatory, and Lost Anethenum Sites)
+		q(79996),	-- After completing 'The Hidden Hand' (questID 77415) (spellID 436777) (WQ unlock - Dragonskull Island, Forbidden Reach Site)
+		q(79995),	-- After completing 'A Taste of the Past' (questID 77154) (spellID 436768) (WQ unlock - Winglord's Perch, Forbidden Reach Site)
+		q(79997),	-- After completing 'The Scale of it All' (questID 77425) (spellID 436778) (WQ unlock - Igira's Watch, Zaralek Cavern Site)
+		q(79994),	-- After completing 'Antiquated Antics' (questID 75604) (spellID 436766) (WQ unlock - Gaze of Neltharion, Zaralek Cavern Site)
+		q(79607),	-- After completing ZC world quest for Azerothian Archive
+		q(79661),	-- After completing ZC world quest for Azerothian Archive
+		q(79662),	-- After completing Ohn'ahran Plains world quest for Azerothian Archive
+		q(79663),	-- After completing 2nd ZC world quest for Azerothian Archive
 	})),
 }));
