@@ -1010,6 +1010,17 @@ local function ExpandGroupsRecursively(group, expanded, manual)
 		end
 	end
 end
+-- Returns true if any subgroup of the provided group is currently expanded, otherwise nil
+local function HasExpandedSubgroup(group)
+	if group and group.g then
+		for _,subgroup in ipairs(group.g) do
+			-- dont need recursion since a group has to be expanded for a subgroup to be visible within it
+			if subgroup.expanded then
+				return true;
+			end
+		end
+	end
+end
 local function ReapplyExpand(g, g2)
 	for j,p in ipairs(g2) do
 		local found = false;
@@ -9124,7 +9135,8 @@ local function RowOnClick(self, button)
 		if reference.OnClick and reference.OnClick(self, button) then
 			return true;
 		end
-
+		
+		local window = self:GetParent():GetParent();
 		if IsShiftKeyDown() then
 			if button == "RightButton" then
 				if app.Settings:GetTooltipSetting("Sort:Progress") then
@@ -9203,12 +9215,13 @@ local function RowOnClick(self, button)
 
 			-- If this reference is anything else, expand the groups.
 			if reference.g then
-				if self.index < 1 and #reference.g > 0 then
-					ExpandGroupsRecursively(reference, not reference.g[1].expanded, true);
-				else
-					ExpandGroupsRecursively(reference, not reference.expanded, true);
+				-- mark the window if it is being fully-collapsed
+				if self.index < 1 then
+					window.fullCollapsed = HasExpandedSubgroup(reference);
 				end
-				self:GetParent():GetParent():Update();
+				-- always expand if collapsed or if clicked the header and all immediate subgroups are collapsed, otherwise collapse
+				ExpandGroupsRecursively(reference, not reference.expanded or (self.index < 1 and not window.fullCollapsed), true);
+				window:Update();
 				return true;
 			end
 		end
@@ -9224,19 +9237,18 @@ local function RowOnClick(self, button)
 			end
 		elseif self.index > 0 then
 			reference.expanded = not reference.expanded;
-			self:GetParent():GetParent():Update();
+			window:Update();
 		elseif not reference.expanded then
 			reference.expanded = true;
-			self:GetParent():GetParent():Update();
+			window:Update();
 		else
 			-- Allow the First Frame to move the parent.
-			local owner = self:GetParent():GetParent();
-			if owner:IsMovable() then
+			if window:IsMovable() then
 				self:SetScript("OnMouseUp", function(self)
 					self:SetScript("OnMouseUp", nil);
-					StopMovingOrSizing(owner);
+					StopMovingOrSizing(window);
 				end);
-				StartMovingOrSizing(owner);
+				StartMovingOrSizing(window);
 			end
 		end
 	end
