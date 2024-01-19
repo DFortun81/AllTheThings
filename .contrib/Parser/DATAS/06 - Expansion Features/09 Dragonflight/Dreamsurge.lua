@@ -140,7 +140,10 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		})),
 		n(REWARDS, {
 			["maps"] = {
-				EMERALD_DREAM,
+				OHNAHRAN_PLAINS,
+				THALDRASZUS,
+				THE_AZURE_SPAN,
+				THE_WAKING_SHORES,
 			},
 			["groups"] = {
 				i(DREAMSURGE_COALESCENCE, {
