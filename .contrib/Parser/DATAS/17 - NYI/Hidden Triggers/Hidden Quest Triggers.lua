@@ -138,28 +138,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(24644),	-- Troll Introduction Complete
 		q(26741),	-- REUSE - Northern Stranglethorn - triggered after completing "The Hunt" (questID 26340)
 		q(236),		-- Fueling the Demolishers (auto-completed removed quest)
-		q(14436, {	-- Dwarven Digging [Mulgore]
-			--[[
-			["qg"] = 36644,	-- Ahmo Thunderhorn
-			["coord"] = { 47.7, 59.6, MULGORE },
-			["timeline"] = { "added 3.0.1", "removed 4.0.3" },
-			["races"] = HORDE_ONLY,
-			["lvl"] = 6,
-			]]--
-		}),
-		q(14437, {	-- Rites of the Earthmother (2/3) [Mulgore]
-			-- CRIEVE NOTE: Not sure if Darkal wants this information or not.
-			--[[
-			["providers"] = {
-				{ "n", 2981 },	-- Chief Hawkwind
-				{ "i", 4783 },	-- Totem of Hawkwind
-			},
-			["sourceQuest"] = 757,	-- Rite of Strength
-			["coord"] = { 44.2, 76.1, MULGORE },
-			["timeline"] = { "added 3.0.1", "removed 4.0.3.13277" },
-			["races"] = HORDE_ONLY,
-			]]--
-		}),
+
 		-------------------
 		---   OUTLAND   ---
 		-------------------
@@ -1691,6 +1670,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(13052),	-- Aerial Surveillance - completed with quest 12696
 		q(14411),	-- The Wilds of Feralas - completed with quest 14410 & 26589
 		q(14414),	-- The Wilds of Feralas - completed with quest 14410 & 26589
+		q(14436),	-- Dwarven Digging - completed with quest 746
+		q(14437),	-- Rites of the Earthmother - completed with quest 763 & 23733
 		q(14447),	-- Takes One to Know One - completed with quest 13260
 		q(14448),	-- Takes One to Know One - completed with quest 13260
 		q(14474),	-- Goblin Escape Pods - completed with quest 14001
