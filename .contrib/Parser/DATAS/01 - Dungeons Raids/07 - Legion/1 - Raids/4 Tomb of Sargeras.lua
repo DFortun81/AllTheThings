@@ -111,7 +111,7 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 			}),
 			n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 				n(118930, {	-- Ixallon the Soulbreaker
-					["description"] = "Last Mob before Kil'Jaeden",
+					["description"] = "Last Mob before Kil'Jaeden.\nQueue for Deceiver's Fall in Dalaran for very quick acess to him.",
 					["g"] = {
 						i(212779),	-- Grimoire of the Bloodrage Tyrant (CI!)
 					},
@@ -436,6 +436,24 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					}),
 				}),
 			}),
+			d(NORMAL_PLUS_RAID, {
+				e(1861, {	-- Mistress Sassz'ine
+					["creatureID"] = 115767,	-- Mistress Sassz'ine
+					["g"] = {
+						i(213016, {	-- Grimoire of the Abyssal Darkglare (CI!)
+							["timeline"] = { ADDED_10_2_5 },
+						}),
+					},
+				}),
+				e(1898, {	-- Kil'jaeden
+					["creatureID"] = 117269,	-- Kil'jaeden
+					["g"] = {
+						i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
+							["timeline"] = { "added 7.2.5" },
+						}),
+					},
+				}),
+			}),
 			d(NORMAL_RAID, {
 				n(QUESTS, {
 					q(47725, {	-- Tomb of Sargeras: Aegwynn's Path (Normal)
@@ -584,9 +602,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
 						ach(11676),	-- Five Course Seafood Buffet
-						i(213016, {	-- Grimoire of the Abyssal Darkglare (CI!)
-							["timeline"] = { ADDED_10_2_5 },
-						}),
 						i(143643),	-- Abyss Worm (MOUNT!)
 						i(147049),	-- Azure Squallshaper's Helm
 						i(146990),	-- Hundred-Fathom Veil
@@ -718,9 +733,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["g"] = {
 						ach(11770, {	-- Dark Souls
 							["crs"] = { 121193 },	-- Shadowsoul
-						}),
-						i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
-							["timeline"] = { "added 7.2.5" },
 						}),
 						i(147034),	-- Shadow-Scarred Headcover
 						i(146988),	-- Gloves of Furtive Oppression
@@ -879,9 +891,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 				e(1861, {	-- Mistress Sassz'ine
 					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
-						i(213016, {	-- Grimoire of the Abyssal Darkglare (CI!)
-							["timeline"] = { ADDED_10_2_5 },
-						}),
 						i(143643),	-- Abyss Worm (MOUNT!)
 						i(147049),	-- Azure Squallshaper's Helm
 						i(146990),	-- Hundred-Fathom Veil
@@ -1010,9 +1019,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["g"] = {
 						ach(11874, {	-- Ahead of the Curve: Kil'jaeden
 							["u"] = REMOVED_FROM_GAME,
-						}),
-						i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
-							["timeline"] = { "added 7.2.5" },
 						}),
 						i(147034),	-- Shadow-Scarred Headcover
 						i(146988),	-- Gloves of Furtive Oppression
@@ -1176,9 +1182,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 					["creatureID"] = 115767,	-- Mistress Sassz'ine
 					["g"] = {
 						ach(11776),	-- Mythic: Mistress Sassz'ine
-						i(213016, {	-- Grimoire of the Abyssal Darkglare (CI!)
-							["timeline"] = { ADDED_10_2_5 },
-						}),
 						i(143643),	-- Abyss Worm (MOUNT!)
 						i(147049),	-- Azure Squallshaper's Helm
 						i(146990),	-- Hundred-Fathom Veil
@@ -1318,9 +1321,6 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 							title(357),	-- %s the Darkener
 						}),
 						ach(11784),	-- Mythic: Kil'jaeden Guild Run
-						i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
-							["timeline"] = { "added 7.2.5" },
-						}),
 						i(147034),	-- Shadow-Scarred Headcover
 						i(146988),	-- Gloves of Furtive Oppression
 						i(147048),	-- Vicegrip of the Unrepentant
