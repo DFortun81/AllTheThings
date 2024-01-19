@@ -1,12 +1,24 @@
 -- Reassign the pointer to the recipe function to automatically mark the removal date.
 local recipe = function(recipeID, t)
 	local o = recipe(recipeID, t);
-	o.timeline = { "removed 8.0.1" };
+	o.timeline = { REMOVED_8_0_1 };
 	return o;
 end
 
 profession(FIRST_AID, {
 	tier(CLASSIC_TIER, {
+		recipe(3273, {	-- First Aid (Apprentice)
+			["rank"] = 1,
+		}),
+		recipe(3274, {	-- First Aid (Journeyman)
+			["rank"] = 2,
+		}),
+		recipe(7924, {	-- First Aid (Expert)
+			["rank"] = 3,
+		});
+		recipe(10846, {	-- First Aid (Artisan)
+			["rank"] = 4,
+		}),
 		recipe(3275),	-- Linen Bandage
 		recipe(3276),	-- Heavy Linen Bandage
 		recipe(7934),	-- Anti-Venom
@@ -22,12 +34,20 @@ profession(FIRST_AID, {
 		recipe(23787),	-- Powerful Anti-Venom
 	}),
 	applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
+		recipe(27028, {	-- First Aid (Master)
+			["timeline"] = { "added 2.0.1", REMOVED_8_0_1 },
+			["rank"] = 5,
+		}),
 		recipe(27032),	-- Nethercloth Bandage
 		recipe(27033),	-- Heavy Nethercloth Bandage
 	})),
 	applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
 		ach(135, {	-- Grand Master in First Aid
 			["timeline"] = { ADDED_3_0_2, REMOVED_8_0_1 },
+		}),
+		recipe(45542, {	-- First Aid (Grand Master)
+			["timeline"] = { ADDED_3_0_2, REMOVED_8_0_1 },
+			["rank"] = 6,
 		}),
 		recipe(45545),	-- Frostweave Bandage
 		recipe(45546),	-- Heavy Frostweave Bandage
