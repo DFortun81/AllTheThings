@@ -750,7 +750,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		i(12736, {	-- Frostwhisper's Embalming Fluid
 			["provider"] = { "o", 175965 },	-- Frostwhisper's Embalming Fluid
 			["description"] = "Can be found inside the chemistry lab in Scholomance, in Ras Frostwhisper's room.",
-			["timeline"] = { "added 1.11.1.5462", REMOVED_5_0_4 }
+			["timeline"] = { "added 1.11.1.5462", REMOVED_5_0_4, "added 10.2.5" }	-- Maybe added with Scholo in 10.1.7, but its an useless item anyway.
 		}),
 	}),
 	n(ZONE_DROPS, {
