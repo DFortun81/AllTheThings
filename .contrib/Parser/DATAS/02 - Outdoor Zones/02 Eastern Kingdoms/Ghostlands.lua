@@ -317,6 +317,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
+				q(9460, {	-- Combining Forces
+					["qg"] = 17224,	-- Keltus Darkleaf
+					["sourceQuest"] = 9532, 	-- Find Keltus Darkleaf
+					["coord"] = { 33, 11.2, GHOSTLANDS },
+					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["classes"] = { ROGUE },
+					["races"] = { BLOOD_ELF },
+					["lvl"] = lvlsquish(10, 10, 1),
+					["groups"] = {
+						objective(1, {	-- 0/1 Lacy Handkerchief
+							["provider"] = { "i", 23686 },	-- Lacy Handkerchief
+							["coord"] = { 38.4, 13.6, GHOSTLANDS },
+							["cr"] = 17210,	-- Sentinel Leader
+						}),
+					},
+				}),
 				q(9171, {	-- Culinary Crunch
 					["qg"] = 16253,	-- Master Chef Mouldier
 					["sourceQuest"] = 9138,	-- Suncrown Village
@@ -464,6 +480,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(131248),	-- Troll Kickers (Mail)
 						-- #endif
 					},
+				}),
+				q(9532, {	-- Find Keltus Darkleaf
+					["qg"] = 16684,	-- Zelanis <Rogue Trainer>
+					["coord"] = { 79.6, 52, SILVERMOON_CITY },
+					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["classes"] = { ROGUE },
+					["races"] = { BLOOD_ELF },
+					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				-- #if BEFORE WRATH
 				-- After Wrath, this quest was moved to Eversong Woods and has a lower level requirement.
@@ -750,6 +774,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						objective(2, {	-- 0/10 Fallen Ranger slain
 							["provider"] = { "n", 16314 },	-- Fallen Ranger
+						}),
+					},
+				}),
+				q(9618, {	-- Return the Reports
+					["providers"] = {
+						{ "n", 17224 },	-- Keltus Darkleaf
+						{ "i", 23919 },	-- Stack of Reports
+					},
+					["sourceQuest"] = 9460,	-- Combining Forces
+					["coord"] = { 33, 11.2, GHOSTLANDS },
+					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["maps"] = { SILVERMOON_CITY },
+					["classes"] = { ROGUE },
+					["races"] = { BLOOD_ELF },
+					["lvl"] = lvlsquish(10, 10, 1),
+					["groups"] = {
+						i(7298, {	-- Blade of Cunning
+							["timeline"] = { "removed 4.0.3" },
 						}),
 					},
 				}),
