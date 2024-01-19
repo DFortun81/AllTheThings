@@ -53,24 +53,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 				i(165694),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 2] (RECIPE!)
 				i(165695),	-- Vantus Rune Technique: Battle of Dazar'alor [Rank 3] (RECIPE!)
 			}),
-			n(DROPS, {
-				i(165846, {	-- Child of Pa'ku (PET!)
-					["crs"] = {
-						144941,	-- Akunda's Aspect
-						144767,	-- Gonk's Aspect
-						144963,	-- Kimbul's Aspect
-						144747,	-- Pa'ku's Aspect
-					},
-				}),
-				i(165847, {	-- Thunder Lizard Runt (PET!)
-					["crs"] = {
-						144941,	-- Akunda's Aspect
-						144767,	-- Gonk's Aspect
-						144963,	-- Kimbul's Aspect
-						144747,	-- Pa'ku's Aspect
-					},
-				}),
-			}),
 			d(LFR_RAID, {	-- Queue NPC
 				["crs"] = {
 					177193,	-- Kiku
@@ -246,6 +228,8 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 							a(i(166418)),	-- Crest of Pa'ku (Alliance)
 							h(i(165581)),	-- Crest of Pa'ku (Horde)
 							i(165579),	-- Kimbul's Razor Claw
+							i(165846),	-- Child of Pa'ku (PET!)
+							i(165847),	-- Thunder Lizard Runt (PET!)
 						},
 					}),
 					e(2335, {	-- King Rastakhan
@@ -362,6 +346,33 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 							i(165576),	-- Tidestorm Codex
 						},
 					}),
+				}),
+			}),
+			d(NORMAL_PLUS_RAID, {
+				e(2330, {	-- Loa Council / Conclave of the Chosen
+					["crs"] = {
+						144941,	-- Akunda's Aspect
+						144767,	-- Gonk's Aspect
+						144963,	-- Kimbul's Aspect
+						144747,	-- Pa'ku's Aspect
+					},
+					["g"] = {
+						i(165846),	-- Child of Pa'ku (PET!)
+						i(165847),	-- Thunder Lizard Runt (PET!)
+					},
+				}),
+				e(2334, {	-- High Tinker Mekkatorque
+					["crs"] = { 144796 },	-- High Tinker Mekkatorque
+					["g"] = {
+						i(166518),	-- G.M.O.D. (MOUNT!)
+						i(166276),	-- Schematic: Unstable Temporal Time Shifter
+					},
+				}),
+				e(2343, {	-- Lady Jaina Proudmoore
+					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
+					["g"] = {
+						i(166582),	-- Technique: Glyph of the Tides (RECIPE!)
+					},
 				}),
 			}),
 			d(NORMAL_RAID, {
@@ -521,7 +532,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 					["crs"] = { 144796 },	-- High Tinker Mekkatorque
 					["g"] = {
 						ach(13401),	-- I Got Next!
-						i(166518),	-- G.M.O.D. (MOUNT!)
 						i(165598),	-- Servo-Claw Smasher
 						i(165600),	-- Twin-Pipe Buster Cannon
 						i(165543),	-- Target-Tracking Headgear
@@ -533,7 +543,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 						i(165522),	-- Mech-Jockey Grips
 						i(165580),	-- Ramping Amplitude Gigavolt Engine
 						i(165572),	-- Variable Intensity Gigavolt Oscillating Reactor
-						i(166276),	-- Schematic: Unstable Temporal Time Shifter
 					},
 				}),
 				e(2337, cr(146256, {	-- Stormwall Blockade / Laminaria
@@ -562,7 +571,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 					["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 					["g"] = {
 						ach(13410),	-- Snow Fun Allowed
-						i(166582),	-- Technique: Glyph of the Tides (RECIPE!)
 						i(165604),	-- Daelin Proudmoore's Saber
 						i(165583),	-- Fogbreaker, Light of the Sea
 						i(165823),	-- Glaciercrest Helm
@@ -728,7 +736,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 				e(2334, {	-- High Tinker Mekkatorque
 					["crs"] = { 144796 },	-- High Tinker Mekkatorque
 					["g"] = {
-						i(166518),	-- G.M.O.D. (MOUNT!)
 						i(165598),	-- Servo-Claw Smasher
 						i(165600),	-- Twin-Pipe Buster Cannon
 						i(165543),	-- Target-Tracking Headgear
@@ -740,7 +747,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 						i(165522),	-- Mech-Jockey Grips
 						i(165580),	-- Ramping Amplitude Gigavolt Engine
 						i(165572),	-- Variable Intensity Gigavolt Oscillating Reactor
-						i(166276),	-- Schematic: Unstable Temporal Time Shifter
 					},
 				}),
 				e(2337, cr(146256, {	-- Stormwall Blockade / Laminaria
@@ -770,7 +776,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 						ach(13322, {	-- Ahead of the Curve: Lady Jaina Proudmoore
 							["timeline"] = { "added 8.1.0", "removed 8.2.0" },
 						}),
-						i(166582),	-- Technique: Glyph of the Tides (RECIPE!)
 						i(165604),	-- Daelin Proudmoore's Saber
 						i(165583),	-- Fogbreaker, Light of the Sea
 						i(165823),	-- Glaciercrest Helm
@@ -949,7 +954,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 					["crs"] = { 144796 },	-- High Tinker Mekkatorque
 					["g"] = {
 						ach(13312),	-- Mythic: Mekkatorque
-						i(166518),	-- G.M.O.D. (MOUNT!)
 						i(165598),	-- Servo-Claw Smasher
 						i(165600),	-- Twin-Pipe Buster Cannon
 						i(165543),	-- Target-Tracking Headgear
@@ -961,7 +965,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 						i(165522),	-- Mech-Jockey Grips
 						i(165580),	-- Ramping Amplitude Gigavolt Engine
 						i(165572),	-- Variable Intensity Gigavolt Oscillating Reactor
-						i(166276),	-- Schematic: Unstable Temporal Time Shifter
 					},
 				}),
 				e(2337, cr(146256, {	-- Stormwall Blockade / Laminaria
@@ -1009,7 +1012,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_1_0 }
 							},
 						})),
 						i(166705),	-- Glacial Tidestorm (MOUNT!)
-						i(166582),	-- Technique: Glyph of the Tides (RECIPE!)
 						i(165604),	-- Daelin Proudmoore's Saber
 						i(165583),	-- Fogbreaker, Light of the Sea
 						i(165823),	-- Glaciercrest Helm

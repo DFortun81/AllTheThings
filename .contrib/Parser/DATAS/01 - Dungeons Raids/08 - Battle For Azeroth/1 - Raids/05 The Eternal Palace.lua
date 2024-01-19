@@ -101,55 +101,6 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 				pet(2658),	-- Chitterspine Deepstalker (PET!)
 				pet(2659),	-- Trench Slug (PET!)
 			})),
-			d(ALL_DIFFICULTIES_RAID, {
-				["crs"] = {
-					177193,	-- Kiku
-					177208,	-- Eppu
-				},
-				["groups"] = {
-					e(2347, {	-- Blackwater Behemoth
-						["crs"] = { 150653 },	-- Blackwater Behemoth
-						["g"] = {
-							i(169360),	-- Mindlost Bloodfrenzy (PET!)
-						},
-					}),
-					e(2353, {	-- Radiance of Azshara
-						["crs"] = { 152364 },	-- Radiance of Azshara
-						["g"] = {
-							i(169694),	-- Aqueous Reliquary
-							i(170163),	-- Technique: Glyph of the Dark Depths (RECIPE!)
-						},
-					}),
-					e(2354, {	-- Lady Ashvane
-						["crs"] = { 152236 },	-- Lady Ashvane
-						["g"] = {
-							i(169358),	-- Lightless Ambusher (PET!)
-						},
-					}),	
-					e(2359, {	-- The Queen's Court
-						["crs"] = {
-							152852,	-- Pashmar the Fanatical
-							152853,	-- Silivaz the Zealous
-						},
-						["g"] = {
-							i(169694),	-- Aqueous Reliquary
-						},
-					}),
-					e(2349, {	-- Za'qul, Harbinger of Ny'alotha
-						["crs"] = { 150859 },	-- Za'qul, Harbinger of Ny'alotha
-						["g"] = {	
-							i(169362),	-- Nameless Octopode (PET!)
-						},
-					}),			
-					e(2361, {	-- Queen Azshara
-						["crs"] = { 152910 },	-- Queen Azshara
-						["g"] = {
-							i(169694),	-- Aqueous Reliquary
-							i(169348),	-- Zanj'ir Poker (PET!)
-						},
-					}),
-				},
-			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					151881,	-- Abyssal Commander Sivara
@@ -233,6 +184,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 							i(168385),	-- Slipstreamer's Saltwalkers
 							i(169304),	-- Leviathan's Lure
 							i(169312),	-- Luminous Jellyweed
+							i(169360),	-- Mindlost Bloodfrenzy (PET!)
 						},
 					}),
 					e(2353, {	-- Radiance of Azshara
@@ -253,6 +205,8 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 							i(168378),	-- Leggings of the Stormborn
 							i(168380),	-- Ancient Tempest Striders
 							i(169313),	-- Phial of the Frigid Tempest
+							i(169694),	-- Aqueous Reliquary
+							i(170163),	-- Technique: Glyph of the Dark Depths (RECIPE!)
 						},
 					}),
 				}),
@@ -273,6 +227,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 							i(169305),	-- Aquipotent Nautilus
 							i(169311),	-- Arcing Razor Coral
 							i(169310),	-- Ashvane's Bloodthirsty Coral
+							i(169358),	-- Lightless Ambusher (PET!)
 						},
 					}),
 					e(2351, {	-- Orgozoa
@@ -314,6 +269,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 							i(168890),	-- Ring of the Highborne Courtier
 							i(169315),	-- Edicts of the Faithless
 							i(169316),	-- Stay of Execution
+							i(169694),	-- Aqueous Reliquary
 						},
 					}),
 				}),
@@ -333,6 +289,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 							i(169308),	-- Chain of Suffering
 							i(169307),	-- Vision of Demise
 							i(169306),	-- Za'qul's Portal Key
+							i(169362),	-- Nameless Octopode (PET!)
 						},
 					}),
 					e(2361, {	-- Queen Azshara
@@ -351,9 +308,56 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }
 							i(168878),	-- Vethan's Icewalkers
 							i(168891),	-- Cursed Lover's Ring
 							i(169314),	-- Azshara's Font of Power
+							i(169694),	-- Aqueous Reliquary
+							i(169348),	-- Zanj'ir Poker (PET!)
 						},
 					}),
 				}),
+			}),
+			d(NORMAL_PLUS_RAID, {
+				["groups"] = {
+					e(2347, {	-- Blackwater Behemoth
+						["crs"] = { 150653 },	-- Blackwater Behemoth
+						["g"] = {
+							i(169360),	-- Mindlost Bloodfrenzy (PET!)
+						},
+					}),
+					e(2353, {	-- Radiance of Azshara
+						["crs"] = { 152364 },	-- Radiance of Azshara
+						["g"] = {
+							i(169694),	-- Aqueous Reliquary
+							i(170163),	-- Technique: Glyph of the Dark Depths (RECIPE!)
+						},
+					}),
+					e(2354, {	-- Lady Ashvane
+						["crs"] = { 152236 },	-- Lady Ashvane
+						["g"] = {
+							i(169358),	-- Lightless Ambusher (PET!)
+						},
+					}),	
+					e(2359, {	-- The Queen's Court
+						["crs"] = {
+							152852,	-- Pashmar the Fanatical
+							152853,	-- Silivaz the Zealous
+						},
+						["g"] = {
+							i(169694),	-- Aqueous Reliquary
+						},
+					}),
+					e(2349, {	-- Za'qul, Harbinger of Ny'alotha
+						["crs"] = { 150859 },	-- Za'qul, Harbinger of Ny'alotha
+						["g"] = {	
+							i(169362),	-- Nameless Octopode (PET!)
+						},
+					}),			
+					e(2361, {	-- Queen Azshara
+						["crs"] = { 152910 },	-- Queen Azshara
+						["g"] = {
+							i(169694),	-- Aqueous Reliquary
+							i(169348),	-- Zanj'ir Poker (PET!)
+						},
+					}),
+				},
 			}),
 			d(NORMAL_RAID, {
 				n(ZONE_DROPS, {
