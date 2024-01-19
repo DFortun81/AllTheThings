@@ -2069,6 +2069,7 @@ app.Modules.Quests = api;
 app.AddEventHandler("OnStartup", function()
 	OneTimeQuests = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true).OneTimeQuests;
 end)
+app.CheckFollowupQuests = CheckFollowupQuests;
 app.CollectibleAsQuest = CollectibleAsQuest;
 app.CollectibleAsQuestOrAsLocked = CollectibleAsQuestOrAsLocked;
 app.GetQuestIndicator = GetQuestIndicator;
