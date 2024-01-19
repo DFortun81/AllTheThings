@@ -5957,6 +5957,7 @@ _.ObjectNames = {
 	[421186] = "Kaldorei Spyglass",
 	[421338] = "Kaldorei Bag",
 	[421339] = "Kaldorei Horn",
+	[421360] = "Memorial Bouquet",
 	[421555] = "Kaldorei Moon Bow",
 	[9000000] = "Wind Sculpted Stone",
 	[9000001] = "Ancient Incense Brazier",
