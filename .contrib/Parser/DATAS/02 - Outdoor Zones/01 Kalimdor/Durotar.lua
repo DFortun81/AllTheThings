@@ -3416,15 +3416,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
-				q(2380, {	-- To Orgrimmar!
-					["qg"] = 3170,	-- Kaplak
-					["coord"] = { 51.98, 43.70, DUROTAR },
-					["timeline"] = { "removed 4.0.3" },
-					["races"] = HORDE_ONLY,
-					["classes"] = { ROGUE },
-					["isBreadcrumb"] = true,
-					["lvl"] = 16,
-				}),
 				q(28816, {	-- To the Depths
 					["qg"] = 45244,	-- Farseer Krogar
 					["sourceQuest"] = 28805,	-- The Eye of the Storm

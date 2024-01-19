@@ -800,6 +800,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(2378, {	-- Find the Shattered Hand
 					["qg"] = 6467,	-- Mennet Carkad
+					["altQuests"] = { 2380 },	-- To Orgrimmar!
 					["coord"] = { 83.2, 69, UNDERCITY },
 					["timeline"] = { "removed 4.0.3" },
 					["classes"] = { ROGUE },
@@ -1611,6 +1612,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1013,	-- The Stockade (Scenario)
 					},
 					["races"] = HORDE_ONLY,
+				}),
+				q(2380, {	-- To Orgrimmar!
+					["qg"] = 3170,	-- Kaplak
+					["altQuests"] = { 2378 },	-- Find the Shattered Hand
+					["coord"] = { 51.98, 43.70, DUROTAR },
+					["timeline"] = { "removed 4.0.3" },
+					["races"] = HORDE_ONLY,
+					["classes"] = { ROGUE },
+					["isBreadcrumb"] = true,
+					["lvl"] = 16,
 				}),
 				q(26830, {	-- Traitor's Bait
 					["qg"] = 3144,	-- Eitrigg
