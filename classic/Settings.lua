@@ -1418,7 +1418,7 @@ QuestsLockedCheckBox.OnTooltip = function(t)
 	for i,o in pairs(container) do
 		local locked = false;
 		for j,quest in ipairs(o) do
-			if quest.locked then
+			if quest.locked and app.RecursiveDefaultCharacterRequirementsFilter(quest) then
 				total = total + 1;
 				break;
 			end
