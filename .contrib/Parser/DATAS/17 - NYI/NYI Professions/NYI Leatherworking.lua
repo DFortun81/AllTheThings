@@ -20,8 +20,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 			}),
 			tier(CATA_TIER, {
-				-- 4.0.3
-				tier(CATA_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
+				-- 4.0.1
+				tier(CATA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
 					i(56501),	-- Razorshell Belt
 					i(56493),	-- Razorshell Boots
 					i(56487),	-- Razorshell Bracers
@@ -188,10 +188,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(74493),	-- Savage Leather
 					r(78421),	-- Unknown
 					r(78422),	-- Unknown
-				})),
-				-- 4.0.3
-				tier(CATA_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
-					r(74493),	-- Savage Leather
 					-- With SpellID attached
 					i(67017),	-- Pattern: Razorshell Belt
 					i(67009),	-- Pattern: Razorshell Boots
@@ -234,7 +230,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(67025),	-- Pattern: Tsunami Leggings
 					i(67014),	-- Pattern: Tsunami Shoulders
 					i(67019),	-- Pattern: Twilight Leg Armor
-
 				})),
 			}),
 			tier(MOP_TIER, {
