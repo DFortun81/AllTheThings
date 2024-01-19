@@ -949,6 +949,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 58.2, 51.6, STONETALON_MOUNTAINS },
 					["timeline"] = { "removed 2.0.1" },
 					["maps"] = { SILVERPINE_FOREST, SHADOWFANG_KEEP },
+					["lockCriteria"] = { 1, "spellID", 400080 },	-- Engrave Chest - Deadly Brew
 					["classes"] = { ROGUE },
 					["lvl"] = 20,
 					["groups"] = {
