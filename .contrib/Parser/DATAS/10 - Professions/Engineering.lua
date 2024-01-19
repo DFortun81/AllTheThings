@@ -2276,7 +2276,13 @@ profession(ENGINEERING, {
 				{
 					["name"] = "Electroflux Sight Enhancers",
 					-- #if BEFORE 7.3.0
-					["classes"] = { HUNTER, SHAMAN },
+					["classes"] = {
+						-- #if AFTER CATA
+						-- CRIEVE NOTE: Not sure what patch this becomes available to hunters.
+						HUNTER,
+						-- #endif
+						SHAMAN,
+					},
 					-- #endif
 					["recipeID"] = 56487,
 				},
