@@ -1025,7 +1025,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6467,	-- Mennet Carkad
 					["sourceQuest"] = 1885,	-- Mennet Carkad
 					["coord"] = { 83.2, 69, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 3.3.0" },
 					["maps"] = { SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
@@ -1050,7 +1050,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 1886,	-- The Deathstalkers (1/4)
 					["coord"] = { 83.2, 69, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 3.3.0" },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
@@ -1059,7 +1059,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6522,	-- Andron Gant
 					["sourceQuest"] = 1898,	-- The Deathstalkers (2/4)
 					["coord"] = { 54.6, 75.6, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 3.3.0" },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
@@ -1087,13 +1087,61 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				q(14420, {	-- The Deathstalkers (1/4)
+					["qg"] = 6467,	-- Mennet Carkad
+					["sourceQuest"] = 1885,	-- Mennet Carkad
+					["coord"] = { 83.2, 69, UNDERCITY },
+					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["maps"] = { SILVERPINE_FOREST },
+					["races"] = { UNDEAD },
+					["classes"] = { ROGUE },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- 0/1 Astor's Letter of Introduction
+							["provider"] = { "i", 7231 },	-- Astor's Letter of Introduction
+							["coords"] = {
+								{ 67.4, 5.6, SILVERPINE_FOREST },
+								{ 53.6, 19.5, SILVERPINE_FOREST },
+								{ 51.0, 36.2, SILVERPINE_FOREST },
+								{ 46.4, 41.4, SILVERPINE_FOREST },
+							},
+							["cr"] = 6497,	-- Astor Hadren
+						}),
+					},
+				}),
+				q(14419, {	-- The Deathstalkers (2/4)
+					["providers"] = {
+						{ "n", 6467 },	-- Mennet Carkad
+						{ "i", 7231 },	-- Astor's Letter of Introduction
+					},
+					["sourceQuest"] = 14420,	-- The Deathstalkers (1/4)
+					["coord"] = { 83.2, 69, UNDERCITY },
+					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["races"] = { UNDEAD },
+					["classes"] = { ROGUE },
+					["lvl"] = 10,
+				}),
+				q(14421, {	-- The Deathstalkers (3/4)
+					["qg"] = 6522,	-- Andron Gant
+					["sourceQuest"] = 14419,	-- The Deathstalkers (2/4)
+					["coord"] = { 54.6, 75.6, UNDERCITY },
+					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
+					["races"] = { UNDEAD },
+					["classes"] = { ROGUE },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- 0/1 Andron's Ledger
+							["provider"] = { "i", 7294 },	-- Andron's Ledger
+							["coord"] = { 55.3, 76.7, UNDERCITY },
+						}),
+					},
+				}),
 				q(14418, {	-- The Deathstalkers (4/4)
 					["providers"] = {
 						{ "n", 6467 },	-- Mennet Carkad
 						{ "i", 7294 },	-- Andron's Ledger
 					},
-					["altQuests"] = { 1978 },	-- The Deathstalkers (4/4)
-					["sourceQuest"] = 1899,	-- The Deathstalkers (3/4)
+					["sourceQuest"] = 14421,	-- The Deathstalkers (3/4)
 					["coord"] = { 83.2, 69, UNDERCITY },
 					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 					["races"] = { UNDEAD },
