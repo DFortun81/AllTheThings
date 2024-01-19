@@ -781,9 +781,50 @@ i(49966, 70561);	-- Rock-Steady Treads
 ------------------
 -- PATCH 4.0.1 --
 ------------------
+--- NYI ---
 i(0, 74493);	-- Savage Leather
 i(0, 78421);	-- Unknown
 i(0, 78422);	-- Unknown
+i(67017, 78418);	-- Razorshell Belt
+i(67009, 78409);	-- Razorshell Boots
+i(67003, 78402);	-- Razorshell Bracers
+i(67035, 78435);	-- Razorshell Chest
+i(67013, 78414);	-- Razorshell Gloves
+i(67023, 78426);	-- Razorshell Helm
+i(67030, 78430);	-- Razorshell Leggings
+i(67004, 78404);	-- Razorshell Shoulders
+i(67012, 78413);	-- Windbound Belt
+i(67008, 78408);	-- Windbound Boots
+i(67001, 78400);	-- Windbound Bracers
+i(67028, 78429);	-- Windbound Chest
+i(67002, 78401);	-- Windbound Gloves
+i(67034, 78434);	-- Windbound Helm
+i(67022, 78425);	-- Windbound Leggings
+i(67016, 78417);	-- Windbound Shoulders
+i(67039, 0);	-- Cloak of Beasts
+i(67041, 0);	-- Cloak of War
+i(67015, 0);	-- Darkbrand Belt
+i(67007, 0);	-- Darkbrand Boots
+i(66999, 0);	-- Darkbrand Bracers
+i(67026, 0);	-- Darkbrand Chestguard
+i(67000, 0);	-- Darkbrand Gloves
+i(67021, 0);	-- Darkbrand Helm
+i(67033, 0);	-- Darkbrand Leggings
+i(67011, 0);	-- Darkbrand Shoulders
+i(67038, 0);	-- Heavy Savage Armor Kit
+i(67036, 0);	-- Heavy Savage Leather
+i(66995, 0);	-- Savage Cloak
+i(67018, 0);	-- Scorched Leg Armor
+i(67005, 0);	-- Shellscale Cloak->Hardened Scale Cloak
+i(66997, 0);	-- Tsunami Belt
+i(67010, 0);	-- Tsunami Boots
+i(66996, 0);	-- Tsunami Bracers
+i(67020, 0);	-- Tsunami Chestguard
+i(67006, 0);	-- Tsunami Gloves
+i(67031, 0);	-- Tsunami Helm
+i(67025, 0);	-- Tsunami Leggings
+i(67014, 0);	-- Tsunami Shoulders
+i(67019, 0);	-- Twilight Leg Armor
 
 ------------------
 -- PATCH 4.0.3 --
@@ -867,48 +908,6 @@ i(67056, 78452);	-- Vicious Wyrmhide Gloves
 i(67086, 78480);	-- Vicious Wyrmhide Helm
 i(67085, 78479);	-- Vicious Wyrmhide Legs
 i(67074, 78464);	-- Vicious Wyrmhide Shoulders
---- NYI ---
-i(0, 74493);		-- Savage Leather
-i(67017, 78418);	-- Razorshell Belt
-i(67009, 78409);	-- Razorshell Boots
-i(67003, 78402);	-- Razorshell Bracers
-i(67035, 78435);	-- Razorshell Chest
-i(67013, 78414);	-- Razorshell Gloves
-i(67023, 78426);	-- Razorshell Helm
-i(67030, 78430);	-- Razorshell Leggings
-i(67004, 78404);	-- Razorshell Shoulders
-i(67012, 78413);	-- Windbound Belt
-i(67008, 78408);	-- Windbound Boots
-i(67001, 78400);	-- Windbound Bracers
-i(67028, 78429);	-- Windbound Chest
-i(67002, 78401);	-- Windbound Gloves
-i(67034, 78434);	-- Windbound Helm
-i(67022, 78425);	-- Windbound Leggings
-i(67016, 78417);	-- Windbound Shoulders
-i(67039, 0);	-- Cloak of Beasts
-i(67041, 0);	-- Cloak of War
-i(67015, 0);	-- Darkbrand Belt
-i(67007, 0);	-- Darkbrand Boots
-i(66999, 0);	-- Darkbrand Bracers
-i(67026, 0);	-- Darkbrand Chestguard
-i(67000, 0);	-- Darkbrand Gloves
-i(67021, 0);	-- Darkbrand Helm
-i(67033, 0);	-- Darkbrand Leggings
-i(67011, 0);	-- Darkbrand Shoulders
-i(67038, 0);	-- Heavy Savage Armor Kit
-i(67036, 0);	-- Heavy Savage Leather
-i(66995, 0);	-- Savage Cloak
-i(67018, 0);	-- Scorched Leg Armor
-i(67005, 0);	-- Shellscale Cloak->Hardened Scale Cloak
-i(66997, 0);	-- Tsunami Belt
-i(67010, 0);	-- Tsunami Boots
-i(66996, 0);	-- Tsunami Bracers
-i(67020, 0);	-- Tsunami Chestguard
-i(67006, 0);	-- Tsunami Gloves
-i(67031, 0);	-- Tsunami Helm
-i(67025, 0);	-- Tsunami Leggings
-i(67014, 0);	-- Tsunami Shoulders
-i(67019, 0);	-- Twilight Leg Armor
 
 ------------------
 -- PATCH 4.2.0 --
@@ -1048,7 +1047,7 @@ i(86297, 124642);	-- Stormbreaker Chestguard
 i(86308, 124622);	-- Wildblood Gloves
 i(86309, 124621);	-- Wildblood Vest
 --- NYI ---
-i(86286, 0);	-- Sha Leather
+i(86286, 0);		-- Sha Leather
 
 ------------------
 -- PATCH 5.2.0 --
@@ -1237,30 +1236,43 @@ i(102513, 146613);	-- Drums of Rage
 ------------------
 -- PATCH 6.0.2 --
 ------------------
--- LATER --
-i(0, 163216);	-- Blackened Dragonscale
-i(0, 163231);	-- Cobra Scales
-i(0, 163226);	-- Crystal Infused Leather
-i(0, 163218);	-- Deepsea Scale
-i(0, 163229);	-- Fel Hide
-i(0, 163228);	-- Fel Scales
-i(0, 163222);	-- Icy Dragonscale
-i(0, 163224);	-- Jormungar Scale
-i(0, 163223);	-- Nerubian Chitin
-i(0, 163230);	-- Nether Dragonscales
-i(0, 163220);	-- Prismatic Scale
-i(0, 163225);	-- Thick Clefthoof Leather
-i(0, 163232);	-- Wind Scales
+--- NYI ---
+i(0, 171713);		-- Burnished Leather
+i(118097, 173416);	-- Small Football
+i(116319, 0);		-- Journeying Helm
+i(116320, 0);		-- Journeying Robes
+i(116321, 0);		-- Journeying Slacks
+i(120130, 0);		-- Secrets of Draenor Leatherworking
+i(116322, 0);		-- Traveling Helm
+i(116324, 0);		-- Traveling Leggings
+i(116323, 0);		-- Traveling Tunic
+
+------------------
+-- PATCH 6.0.3 --
+------------------
 --- TRAINER ---
 i(0, 158752);		-- Leatherworking (Draenor Master) [REMOVED: 8.0.1]
+i(0, 163216);		-- Blackened Dragonscale
 i(0, 171391);		-- Burnished Leather
+i(0, 163231);		-- Cobra Scales
+i(0, 163226);		-- Crystal Infused Leather
+i(0, 163218);		-- Deepsea Scale
+i(0, 163229);		-- Fel Hide
+i(0, 163228);		-- Fel Scales
+i(0, 163222);		-- Icy Dragonscale
+i(0, 163224);		-- Jormungar Scale
 i(0, 171260);		-- Journeying Helm
 i(0, 171261);		-- Journeying Robes
 i(0, 171262);		-- Journeying Slacks
+i(0, 163223);		-- Nerubian Chitin
+i(0, 163230);		-- Nether Dragonscales
+i(0, 163220);		-- Prismatic Scale
 i(0, 176089);		-- Secrets of Draenor Leatherworking
+i(0, 163225);		-- Thick Clefthoof Leather
 i(0, 171263);		-- Traveling Helm
 i(0, 171265);		-- Traveling Leggings
 i(0, 171264);		-- Traveling Tunic
+i(0, 163232);		-- Wind Scales
 --- ITEM ---
 i(116328, 171269);	-- Brilliant Burnished Cloak
 i(116345, 171286);	-- Burnished Essence
@@ -1312,16 +1324,6 @@ i(0, 176405);		-- Savage Leather Tent
 i(0, 176420);		-- Simple Tent
 i(0, 176411);		-- Sturdy Tent
 i(0, 176425);		-- Voodoo Doctor's Hovel
---- NYI ---
-i(0, 171713);		-- Burnished Leather
-i(118097, 173416);	-- Small Football
-i(116319, 0);		-- Journeying Helm
-i(116320, 0);		-- Journeying Robes
-i(116321, 0);		-- Journeying Slacks
-i(120130, 0);		-- Secrets of Draenor Leatherworking
-i(116322, 0);		-- Traveling Helm
-i(116324, 0);		-- Traveling Leggings
-i(116323, 0);		-- Traveling Tunic
 
 ------------------
 -- PATCH 6.1.0 --
@@ -1652,10 +1654,10 @@ i(162419, 269550);	-- Honorable Combatant's Cestus [Rank 2]
 i(162420, 269551);	-- Honorable Combatant's Cestus [Rank 3]
 i(162415, 269547);	-- Honorable Combatant's Striker [Rank 2]
 i(162416, 269548);	-- Honorable Combatant's Striker [Rank 3]
-i(162388, 0);	-- Pattern: Hardened Tempest Boots [Rank 3]
-i(162389, 0);	-- Pattern: Hardened Tempest Leggings [Rank 3]
-i(162400, 0);	-- Pattern: Mistscale Boots [Rank 3]
-i(162401, 0);	-- Pattern: Mistscale Greaves [Rank 3]
+i(162388, 0);		-- Hardened Tempest Boots [Rank 3]
+i(162389, 0);		-- Hardened Tempest Leggings [Rank 3]
+i(162400, 0);		-- Mistscale Boots [Rank 3]
+i(162401, 0);		-- Mistscale Greaves [Rank 3]
 
 -----------------
 -- PATCH 8.1.0 --
@@ -1713,7 +1715,7 @@ i(165651, 285096);	-- Tempered Mistscale Greaves
 i(165645, 285099);	-- Tempered Tempest Boots
 i(165647, 285100);	-- Tempered Tempest Leggings
 --- NYI ---
-i(166312, 0);	-- Pattern: Coarse Leather Barding [Rank 2]
+i(166312, 0);		-- Coarse Leather Barding [Rank 2]
 
 -----------------
 -- PATCH 8.1.5 --
@@ -2310,5 +2312,5 @@ i(208294, 419009);	-- Verdant Combatant's Resilient Shoulderpads
 i(208293, 419008);	-- Verdant Combatant's Resilient Trousers
 i(208297, 419012);	-- Verdant Combatant's Resilient Wristwraps
 i(210169, 418579);	-- Verdant Conduit
---- SPECIAL ---
+--- LEGENDARY ---
 i(0, 422330);		-- Erden's Glowspore Grip

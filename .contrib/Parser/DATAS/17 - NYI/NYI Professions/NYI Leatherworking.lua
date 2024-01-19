@@ -4,6 +4,56 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(LEATHERWORKING, {
 		n(CRAFTABLES, {
+			tier(CLASSIC_TIER, {
+				i(8195),	-- Nightscape Cloak
+				i(15141),	-- Onyxia Scale Breastplate
+			}),
+			tier(WOTLK_TIER, {
+				-- 3.0.2
+				tier(WOTLK_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_3_0_2 } }, {
+					i(41264),	-- Deflecting Bracers
+					i(39710),	-- Verdant Tundra Belt
+					i(39709),	-- Verdant Tundra Boots
+					i(39711),	-- Verdant Tundra Bracers
+					i(39707),	-- Verdant Tundra Cap
+					i(39708),	-- Verdant Tundra Shoulderpads
+				})),
+			}),
+			tier(CATA_TIER, {
+				-- 4.0.3
+				tier(CATA_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
+					i(56501),	-- Razorshell Belt
+					i(56493),	-- Razorshell Boots
+					i(56487),	-- Razorshell Bracers
+					i(56515),	-- Razorshell Chest
+					i(56497),	-- Razorshell Gloves
+					i(56507),	-- Razorshell Helm
+					i(56511),	-- Razorshell Leggings
+					i(56488),	-- Razorshell Shoulders
+					i(56496),	-- Windbound Belt
+					i(56492),	-- Windbound Boots
+					i(56485),	-- Windbound Bracers
+					i(56510),	-- Windbound Chest
+					i(56486),	-- Windbound Gloves
+					i(56514),	-- Windbound Helm
+					i(56506),	-- Windbound Leggings
+					i(56500),	-- Windbound Shoulders
+
+				})),
+			}),
+			tier(WOD_TIER, {
+				-- 6.0.2
+				tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+					i(118049),	-- Small Football
+				})),
+			}),
+			tier(LEGION_TIER, {
+				-- 7.0.3
+				tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+					i(130878),	-- Shaved Felhide
+					i(129963),	-- Stonehide Boot Base
+				})),
+			}),
 			tier(BFA_TIER, {
 				-- 8.0.1
 				tier(BFA_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
@@ -87,13 +137,160 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 		}),
 		filter(RECIPES, {
+			tier(CLASSIC_TIER, {
+				-- With SpellID attached
+				i(8388),	-- Pattern: Nightscape Cloak
+				i(15780),	-- Pattern: Onyxia Scale Breastplate
+				-- Without SpellID attached
+				i(22698),	-- Pattern: Icy Scale Bracers
+				i(22696),	-- Pattern: Icy Scale Breastplate
+				i(22697),	-- Pattern: Icy Scale Gauntlets
+				i(4997),	-- Deprecated Recipe: Kodo Skin Bag
+				i(22695),	-- Pattern: Polar Bracers
+				i(22694),	-- Pattern: Polar Gloves
+				i(22692),	-- Pattern: Polar Tunic
+			}),
 			-- #if ANYCLASSIC
-			tier(WOTLK_TIER, {
+			tier(TBC_TIER, {
 				applyclassicphase(TBC_PHASE_FOUR, i(185922, {	-- Pattern: Greater Drums of War
 					["description"] = "Not actually sure if this is in the game at all since the spell trained by this recipe can be learned at the trainer.",
 				})),
 			}),
 			-- #endif
+			tier(TBC_TIER, {
+				-- 2.4.0
+				tier(TBC_TIER, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
+					-- Without SpellID attached
+					i(35528),	-- Pattern: Swiftstrike Shoulders
+				})),
+			}),
+			tier(WOTLK_TIER, {
+				-- 3.0.2
+				tier(WOTLK_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_3_0_2 } }, {
+					r(55243),	-- Bracers of Deflection
+					r(53681),	-- Garok's Battle
+					r(53686),	-- Verdant Tundra Belt
+					r(53688),	-- Verdant Tundra Boots
+					r(53689),	-- Verdant Tundra Bracers
+					r(53687),	-- Verdant Tundra Cap
+					r(53690),	-- Verdant Tundra Shoulderpads
+					r(45541),	-- Unknown
+					r(48038),	-- Unknown
+					r(50935),	-- Unknown
+					-- Without SpellID attached
+					i(38599),	-- Pattern: Dark Arctic Chestpiece
+					i(38598),	-- Pattern: Dark Arctic Leggings
+				})),
+			}),
+			tier(CATA_TIER, {
+				-- 4.0.1
+				tier(CATA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
+					r(74493),	-- Savage Leather
+					r(78421),	-- Unknown
+					r(78422),	-- Unknown
+				})),
+				-- 4.0.3
+				tier(CATA_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
+					r(74493),	-- Savage Leather
+					-- With SpellID attached
+					i(67017),	-- Pattern: Razorshell Belt
+					i(67009),	-- Pattern: Razorshell Boots
+					i(67003),	-- Pattern: Razorshell Bracers
+					i(67035),	-- Pattern: Razorshell Chest
+					i(67013),	-- Pattern: Razorshell Gloves
+					i(67023),	-- Pattern: Razorshell Helm
+					i(67030),	-- Pattern: Razorshell Leggings
+					i(67004),	-- Pattern: Razorshell Shoulders
+					i(67012),	-- Pattern: Windbound Belt
+					i(67008),	-- Pattern: Windbound Boots
+					i(67001),	-- Pattern: Windbound Bracers
+					i(67028),	-- Pattern: Windbound Chest
+					i(67002),	-- Pattern: Windbound Gloves
+					i(67034),	-- Pattern: Windbound Helm
+					i(67022),	-- Pattern: Windbound Leggings
+					i(67016),	-- Pattern: Windbound Shoulders
+					-- Without SpellID attached
+					i(67039),	-- Pattern: Cloak of Beasts
+					i(67041),	-- Pattern: Cloak of War
+					i(67015),	-- Pattern: Darkbrand Belt
+					i(67007),	-- Pattern: Darkbrand Boots
+					i(66999),	-- Pattern: Darkbrand Bracers
+					i(67026),	-- Pattern: Darkbrand Chestguard
+					i(67000),	-- Pattern: Darkbrand Gloves
+					i(67021),	-- Pattern: Darkbrand Helm
+					i(67033),	-- Pattern: Darkbrand Leggings
+					i(67011),	-- Pattern: Darkbrand Shoulders
+					i(67038),	-- Pattern: Heavy Savage Armor Kit
+					i(67036),	-- Pattern: Heavy Savage Leather
+					i(66995),	-- Pattern: Savage Cloak
+					i(67018),	-- Pattern: Scorched Leg Armor
+					i(67005),	-- Pattern: Shellscale Cloak->Hardened Scale Cloak
+					i(66997),	-- Pattern: Tsunami Belt
+					i(67010),	-- Pattern: Tsunami Boots
+					i(66996),	-- Pattern: Tsunami Bracers
+					i(67020),	-- Pattern: Tsunami Chestguard
+					i(67006),	-- Pattern: Tsunami Gloves
+					i(67031),	-- Pattern: Tsunami Helm
+					i(67025),	-- Pattern: Tsunami Leggings
+					i(67014),	-- Pattern: Tsunami Shoulders
+					i(67019),	-- Pattern: Twilight Leg Armor
+
+				})),
+			}),
+			tier(MOP_TIER, {
+				-- 5.0.4
+				tier(WOD_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+					i(86286),	-- Pattern: Sha Leather
+				})),
+			}),
+			tier(WOD_TIER, {
+				-- 6.0.2
+				tier(WOD_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+					r(171713),	-- Burnished Leather
+					-- With SpellID attached
+					i(118097),	-- Pattern: Small Football
+					-- Without SpellID attached
+					i(116319),	-- Pattern: Journeying Helm
+					i(116320),	-- Pattern: Journeying Robes
+					i(116321),	-- Pattern: Journeying Slacks
+					i(120130),	-- Pattern: Secrets of Draenor Leatherworking
+					i(116322),	-- Pattern: Traveling Helm
+					i(116324),	-- Pattern: Traveling Leggings
+					i(116323),	-- Pattern: Traveling Tunic
+				})),
+			}),
+			tier(LEGION_TIER, {
+				-- 7.0.3
+				tier(LEGION_TIER, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+					r(196388),	-- Tanned Fel Leather
+					r(196387),	-- Shaved Felhide
+					r(196425),	-- Stonehide Boot Base
+					r(196383),	-- Stonehide Leather Vamp
+					-- Without SpellID attached
+					i(137900),	-- Pattern: Battlebound Armbands [Rank 2]
+					i(137901),	-- Pattern: Battlebound Girdle [Rank 2]
+					i(137905),	-- Pattern: Battlebound Grips [Rank 2]
+					i(137907),	-- Pattern: Battlebound Hauberk [Rank 2]
+					i(137903),	-- Pattern: Battlebound Leggings [Rank 2]
+					i(137902),	-- Pattern: Battlebound Spaulders [Rank 2]
+					i(132124),	-- Pattern: Battlebound Treads [Rank 1]
+					i(137906),	-- Pattern: Battlebound Treads [Rank 2]
+					i(132123),	-- Pattern: Battlebound Warhelm [Rank 1]
+					i(137904),	-- Pattern: Battlebound Warhelm [Rank 2]
+					i(140636),	-- Pattern: Dreadleather Bindings [Rank 1]
+					i(140644),	-- Pattern: Gravenscale Armbands [Rank 1]
+					i(137933),	-- Pattern: Leather Pet Bed
+					i(137952),	-- Pattern: Stonehide Leather Barding
+					i(137869),	-- Pattern: Warhide Belt [Rank 2]
+					i(137868),	-- Pattern: Warhide Bindings [Rank 2]
+					i(137874),	-- Pattern: Warhide Footpads [Rank 2]
+					i(137873),	-- Pattern: Warhide Gloves [Rank 2]
+					i(137875),	-- Pattern: Warhide Jerkin [Rank 2]
+					i(137872),	-- Pattern: Warhide Mask [Rank 2]
+					i(137871),	-- Pattern: Warhide Pants [Rank 2]
+					i(137870),	-- Pattern: Warhide Shoulderguard [Rank 2]
+				})),
+			}),
 			tier(BFA_TIER, {
 				-- 8.0.1
 				tier(BFA_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
@@ -104,6 +301,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(162420),	-- Honorable Combatant's Cestus [Rank 3]
 					i(162415),	-- Honorable Combatant's Striker [Rank 2]
 					i(162416),	-- Honorable Combatant's Striker [Rank 3]
+					-- With SpellID attached
+					i(162388),	-- Pattern: Hardened Tempest Boots [Rank 3]
+					i(162389),	-- Pattern: Hardened Tempest Leggings [Rank 3]
+					i(162400),	-- Pattern: Mistscale Boots [Rank 3]
+					i(162401),	-- Pattern: Mistscale Greaves [Rank 3]
+				})),
+
+				-- 8.1.0
+				tier(BFA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
+					i(166312),	-- Pattern: Coarse Leather Barding [Rank 2]
 				})),
 			}),
 			tier(SL_TIER, {
@@ -172,7 +379,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(309276),	-- Wildskin Waistguard (RECIPE!)
 					r(309277),	-- Wildskin Armguards (RECIPE!)
 					-- With SpellID attached
-					i(182669),	-- Loosened Belt (RECIPE!)
+					i(182669),	-- Pattern: Loosened Belt (RECIPE!)
+					-- Without SpellID attached
+					i(183869),	-- [DNT][REUSE ME] Pattern: Crafter's Mark III
 				})),
 			}),
 			tier(DF_TIER, {
