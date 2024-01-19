@@ -371,13 +371,13 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			}),
 			ach(11706, {["timeline"] = {ADDED_7_2_0}}),	-- The Original (PvP Season 1)
 		})),
-		n(PVP_GLADIATOR, {
-			-- #if AFTER 7.0.3
-			n(54650, {	-- Kezzik the Striker <Gladiator and General's Gladiator> [Legion+] / Kezzik the Striker <Gladiator, Merciless, & Vengeful Gear>
-				["coord"] = { 33.0, 64.2, NETHERSTORM },
-				["timeline"] = { "added 4.3.0.14890" },
-				["groups"] = {
-			-- #endif
+		-- #if AFTER 7.0.3
+		n(54650, {	-- Kezzik the Striker <Gladiator and General's Gladiator> [Legion+] / Kezzik the Striker <Gladiator, Merciless, & Vengeful Gear>
+			["coord"] = { 33.0, 64.2, NETHERSTORM },
+			["timeline"] = { "added 4.3.0.14890" },
+			["groups"] = {
+		-- #endif
+				n(PVP_GLADIATOR, {
 					n(WEAPONS, {
 						i(146651, {	-- Arsenal: Gladiator's Weapons
 							["timeline"] = { -- combined with Season 2
@@ -1304,11 +1304,11 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
 					}),
-		-- #if AFTER 7.0.3
-				},
-			}),
-		-- #endif
+				}),
+	-- #if AFTER 7.0.3
+			},
 		}),
+	-- #endif
 	}),
 	applyclassicphase(TBC_PHASE_TWO, n(SEASON_MERCILESS, {
 		n(ACHIEVEMENTS, bubbleDown({
@@ -1329,13 +1329,13 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			}),
 			ach(11707, {["timeline"] = {ADDED_7_2_0}}),	-- No Mercy (PvP Season 2)
 		})),
-		n(PVP_GLADIATOR, {
-			-- #if AFTER 7.0.3
-			n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
-				["coord"] = { 33.0, 64.2, NETHERSTORM },
-				["timeline"] = { "added 7.0.3.22260" },
-				["groups"] = {
-			-- #endif
+		-- #if AFTER 7.0.3
+		n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
+			["coord"] = { 33.0, 64.2, NETHERSTORM },
+			["timeline"] = { "added 7.0.3.22260" },
+			["groups"] = {
+		-- #endif
+				n(PVP_GLADIATOR, {
 					n(WEAPONS, {
 						i(146650, {	-- Arsenal: Merciless Gladiator's Weapons [Horde / Alliance / Tested ] { Note: Contains Gladiator/Merciless Sets }
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -2033,11 +2033,11 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
 					}),
-			-- #if AFTER 7.0.3
-				},
-			}),
-			-- #endif
+				}),
+	-- #if AFTER 7.0.3
+			},
 		}),
+	-- #endif
 	})),
 	applyclassicphase(TBC_PHASE_THREE, n(SEASON_VENGEFUL, {
 		n(ACHIEVEMENTS, bubbleDown({
@@ -2058,13 +2058,13 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			}),
 			ach(11708, {["timeline"] = {ADDED_7_2_0}}),	-- With a Vengeance (PvP Season 3)
 		})),
-		n(PVP_GLADIATOR, {
-			-- #if AFTER 7.0.3
-			n(107610, {	-- Kitzie Crankshot <Vengeful and Vindicator's Gladiator>
-				["coord"] = { 33.0, 64.2, NETHERSTORM },
-				["timeline"] = { "added 7.0.3.22260" },
-				["groups"] = {
-			-- #endif
+		-- #if AFTER 7.0.3
+		n(107610, {	-- Kitzie Crankshot <Vengeful and Vindicator's Gladiator>
+			["coord"] = { 33.0, 64.2, NETHERSTORM },
+			["timeline"] = { "added 7.0.3.22260" },
+			["groups"] = {
+		-- #endif
+				n(PVP_GLADIATOR, {
 					n(WEAPONS, {
 						i(146649, {	-- Arsenal: Vengeful Gladiator's Weapons [ Horde / Alliance / Tested ]
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -2805,11 +2805,11 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						})),
 					}),
-					-- #if AFTER 7.0.3
-				},
-			}),
-			-- #endif
+				}),
+	-- #if AFTER 7.0.3
+			},
 		}),
+	-- #endif
 	})),
 	applyclassicphase(TBC_PHASE_FIVE, n(SEASON_BRUTAL, {
 		n(ACHIEVEMENTS, bubbleDown({
@@ -2830,13 +2830,13 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 			}),
 			ach(11709, {["timeline"] = {ADDED_7_2_0}}),	-- Tough Threads (PvP Season 4)
 		})),
-		n(PVP_GLADIATOR, {
-			-- #if AFTER 7.0.3
-			n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>
-				["coord"] = { 33.2, 64.0, NETHERSTORM },
-				["timeline"] = { "added 7.0.3.22260" },
-				["groups"] = {
-			-- #endif
+		-- #if AFTER 7.0.3
+		n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>
+			["coord"] = { 33.2, 64.0, NETHERSTORM },
+			["timeline"] = { "added 7.0.3.22260" },
+			["groups"] = {
+		-- #endif
+				n(PVP_GLADIATOR, {
 					n(WEAPONS, {
 						i(146648, {	-- Arsenal: Brutal Gladiator's Weapons [ Horde / Alliance / Tested ]
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -3632,11 +3632,11 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["timeline"] = { "added 4.1.0", "removed 6.0.1" },
 						}),
 					}),
-			-- #if AFTER 7.0.3
-				},
-			}),
-			-- #endif
+				}),
+	-- #if AFTER 7.0.3
+			},
 		}),
+	-- #endif
 	})),
 }))))));
 -- #if AFTER LEGION
