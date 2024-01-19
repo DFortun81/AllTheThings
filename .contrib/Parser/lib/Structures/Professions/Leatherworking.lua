@@ -212,7 +212,11 @@ TBC_LEATHERWORKING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] 
 		r(32481),	-- Wild Draenish Vest
 	}),
 	filter(MISC, {
+		r(163231, {["timeline"] = {ADDED_6_0_2}}),	-- Cobra Scales
+		r(163226, {["timeline"] = {ADDED_6_0_2}}),	-- Crystal Infused Leather
 		r(35540),	-- Drums of War
+		r(163229, {["timeline"] = {ADDED_6_0_2}}),	-- Fel Hide
+		r(163228, {["timeline"] = {ADDED_6_0_2}}),	-- Fel Scales
 		r(44770, {["timeline"] = {ADDED_2_3_0}}),	-- Glove Reinforcements
 		-- #if ANYCLASSIC
 		applyclassicphase(TBC_PHASE_FOUR, r(351766, {	-- Greater Drums of War
@@ -226,6 +230,9 @@ TBC_LEATHERWORKING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] 
 		r(32454),	-- Knothide Leather
 		r(44344, {["timeline"] = {ADDED_2_3_0, REMOVED_4_0_1}}),	-- Knothide Quiver
 		r(45100, {["timeline"] = {ADDED_2_3_0}}),	-- Leatherworker's Satchel
+		r(163230, {["timeline"] = {ADDED_6_0_2}}),	-- Nether Dragonscales
+		r(163225, {["timeline"] = {ADDED_6_0_2}}),	-- Thick Clefthoof Leather
+		r(163232, {["timeline"] = {ADDED_6_0_2}}),	-- Wind Scales
 	}),
 }));
 TBC_DRAGONSCALE = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_2_0_5, REMOVED_4_0_3_LAUNCH } }, {
@@ -360,8 +367,11 @@ WRATH_LEATHERWORKING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timelin
 		r(50963),	-- Heavy Borean Armor Kit
 		r(50936),	-- Heavy Borean Leather
 		r(50967),	-- Icescale Leg Armor
+		r(163222, {["timeline"] = {ADDED_6_0_2}}),	-- Icy Dragonscale
 		r(50964),	-- Jormungar Leg Armor
 		r(60583, {["timeline"] = {ADDED_3_0_3, REMOVED_5_0_4}}),	-- Jormungar Leg Reinforcements
+		r(163224, {["timeline"] = {ADDED_6_0_2}}),	-- Jormungar Scale
+		r(163223, {["timeline"] = {ADDED_6_0_2}}),	-- Nerubian Chitin
 		r(50966),	-- Nerubian Leg Armor
 		r(60584, {["timeline"] = {ADDED_3_0_3, REMOVED_5_0_4}}),	-- Nerubian Leg Reinforcements
 		r(60643),	-- Pack of Endless Pockets
@@ -557,6 +567,7 @@ CATA_LEATHERWORKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"
 	filter(MISC, {
 		r(163216, {["timeline"] = {ADDED_6_0_2}}),	-- Blackened Dragonscale
 		r(85068, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Charscale Leg Reinforcements
+		r(163218, {["timeline"] = {ADDED_6_0_2}}),	-- Deepsea Scale
 		r(85067, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Dragonbone Leg Reinforcements
 		r(101600, {["timeline"] = {ADDED_4_2_0, REMOVED_6_0_2}}),	-- Drakehide Leg Reinforcements
 		r(85008, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Fur Lining - Agility [Rank 2]
@@ -772,6 +783,7 @@ MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] 
 		r(124567, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Primal Leg Reinforcements [Rank 1]
 		r(124564, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Primal Leg Reinforcements [Rank 2]
 		r(124559),	-- Primal Leg Reinforcements [Rank 3]
+		r(163220, {["timeline"] = {ADDED_6_0_2}}),	-- Prismatic Scale
 		r(124628),	-- Sha Armor Kit
 		r(124124),	-- Sha-Touched Leg Armor
 		r(124125),	-- Toughened Leg Armor

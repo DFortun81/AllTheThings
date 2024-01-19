@@ -20,6 +20,15 @@ i(185923, 351768);	-- Greater Drums of Speed [H]
 i(185922, 0);		-- Greater Drums of War
 -- #endif
 
+-- #if SEASON_OF_DISCOVERY
+------------------
+-- PATCH 1.15.0 --
+------------------
+--- QUEST ---
+i(0, 429869);	-- Void-Touched Leather Gauntlets
+i(0, 429354);	-- Void-Touched Leather Gloves
+-- #endif
+
 -----------------
 --   CLASSIC   --
 -----------------
@@ -336,16 +345,10 @@ i(15780, 19106);	-- Onyxia Scale Breastplate
 i(22698, 0);		-- Icy Scale Bracers
 i(22696, 0);		-- Icy Scale Breastplate
 i(22697, 0);		-- Icy Scale Gauntlets
+i(4997, 0);			-- Deprecated Recipe: Kodo Skin Bag
 i(22695, 0);		-- Polar Bracers
 i(22694, 0);		-- Polar Gloves
 i(22692, 0);		-- Polar Tunic
-
--- #if SEASON_OF_DISCOVERY
--- SEASON OF DISCOVERY --
--- QUEST --
-i(0, 429869);	-- Void-Touched Leather Gauntlets
-i(0, 429354);	-- Void-Touched Leather Gloves
--- #endif
 
 ------------------
 -- PATCH 2.0.5 --
@@ -564,19 +567,25 @@ i(35301, 35573);	-- Netherdrake Gloves [BoP]
 i(35215, 46135);	-- Sun-Drenched Scale Gloves
 i(35219, 46139);	-- Sun-Drenched Scale Chestguard
 i(35300, 35568);	-- Windstrike Gloves [BoP]
+--- NYI ---
+i(35528, 0);		-- Swiftstrike Shoulders
 
 ------------------
 -- PATCH 3.0.1 --
 ------------------
--- NYI --
+--- NYI ---
 i(0, 55243);	-- Bracers of Deflection
 i(0, 53681);	-- Garok's Battle
-i(0, 50935);	-- Unknown
 i(0, 53686);	-- Verdant Tundra Belt
 i(0, 53688);	-- Verdant Tundra Boots
 i(0, 53689);	-- Verdant Tundra Bracers
 i(0, 53687);	-- Verdant Tundra Cap
 i(0, 53690);	-- Verdant Tundra Shoulderpads
+i(0, 45541);	-- Unknown
+i(0, 48038);	-- Unknown
+i(0, 50935);	-- Unknown
+i(38599, 0);	-- Dark Arctic Chestpiece
+i(38598, 0);	-- Dark Arctic Leggings
 
 ------------------
 -- PATCH 3.0.2 --
@@ -770,6 +779,13 @@ i(49962, 70558);	-- Lightning-Infused Leggings
 i(49966, 70561);	-- Rock-Steady Treads
 
 ------------------
+-- PATCH 4.0.1 --
+------------------
+i(0, 74493);	-- Savage Leather
+i(0, 78421);	-- Unknown
+i(0, 78422);	-- Unknown
+
+------------------
 -- PATCH 4.0.3 --
 ------------------
 --- TRAINER ---
@@ -852,8 +868,7 @@ i(67086, 78480);	-- Vicious Wyrmhide Helm
 i(67085, 78479);	-- Vicious Wyrmhide Legs
 i(67074, 78464);	-- Vicious Wyrmhide Shoulders
 --- NYI ---
-i(66999, 0);	-- Darkbrand Bracers
-i(67000, 0);	-- Darkbrand Gloves
+i(0, 74493);		-- Savage Leather
 i(67017, 78418);	-- Razorshell Belt
 i(67009, 78409);	-- Razorshell Boots
 i(67003, 78402);	-- Razorshell Bracers
@@ -862,7 +877,6 @@ i(67013, 78414);	-- Razorshell Gloves
 i(67023, 78426);	-- Razorshell Helm
 i(67030, 78430);	-- Razorshell Leggings
 i(67004, 78404);	-- Razorshell Shoulders
-i(0, 74493);	-- Savage Leather
 i(67012, 78413);	-- Windbound Belt
 i(67008, 78408);	-- Windbound Boots
 i(67001, 78400);	-- Windbound Bracers
@@ -871,6 +885,30 @@ i(67002, 78401);	-- Windbound Gloves
 i(67034, 78434);	-- Windbound Helm
 i(67022, 78425);	-- Windbound Leggings
 i(67016, 78417);	-- Windbound Shoulders
+i(67039, 0);	-- Cloak of Beasts
+i(67041, 0);	-- Cloak of War
+i(67015, 0);	-- Darkbrand Belt
+i(67007, 0);	-- Darkbrand Boots
+i(66999, 0);	-- Darkbrand Bracers
+i(67026, 0);	-- Darkbrand Chestguard
+i(67000, 0);	-- Darkbrand Gloves
+i(67021, 0);	-- Darkbrand Helm
+i(67033, 0);	-- Darkbrand Leggings
+i(67011, 0);	-- Darkbrand Shoulders
+i(67038, 0);	-- Heavy Savage Armor Kit
+i(67036, 0);	-- Heavy Savage Leather
+i(66995, 0);	-- Savage Cloak
+i(67018, 0);	-- Scorched Leg Armor
+i(67005, 0);	-- Shellscale Cloak->Hardened Scale Cloak
+i(66997, 0);	-- Tsunami Belt
+i(67010, 0);	-- Tsunami Boots
+i(66996, 0);	-- Tsunami Bracers
+i(67020, 0);	-- Tsunami Chestguard
+i(67006, 0);	-- Tsunami Gloves
+i(67031, 0);	-- Tsunami Helm
+i(67025, 0);	-- Tsunami Leggings
+i(67014, 0);	-- Tsunami Shoulders
+i(67019, 0);	-- Twilight Leg Armor
 
 ------------------
 -- PATCH 4.2.0 --
@@ -917,9 +955,6 @@ i(72027, 10564);	-- Tough Scorpid Shoulders [New Version]
 ------------------
 -- PATCH 5.0.4 --
 ------------------
--- LATER --
-i(0, 124627);	-- Mist-Touched Leather [TODO: CHECK THIS]
-i(0, 102366);		-- Mist-Touched Leather
 --- TRAINER ---
 i(0, 110423);		-- Leatherworking (Zen Master) [REMOVED: 8.0.1]
 i(0, 124126);		-- Brutal Leg Armor
@@ -943,6 +978,7 @@ i(0, 124574);		-- Misthide Gloves
 i(0, 124571);		-- Misthide Helm
 i(0, 124575);		-- Misthide Leggings
 i(0, 124572);		-- Misthide Shoulders
+i(0, 124627);		-- Mist-Touched Leather
 i(0, 124567);		-- Primal Leg Reinforcements [Rank 1] [REMOVED: 6.0.2]
 i(0, 124564);		-- Primal Leg Reinforcements [Rank 2] [REMOVED: 6.0.2]
 i(0, 124559);		-- Primal Leg Reinforcements [Rank 3]
@@ -1011,6 +1047,8 @@ i(86295, 124129);	-- Shadowleather Leg Armor
 i(86297, 124642);	-- Stormbreaker Chestguard
 i(86308, 124622);	-- Wildblood Gloves
 i(86309, 124621);	-- Wildblood Vest
+--- NYI ---
+i(86286, 0);	-- Sha Leather
 
 ------------------
 -- PATCH 5.2.0 --
@@ -1276,7 +1314,7 @@ i(0, 176411);		-- Sturdy Tent
 i(0, 176425);		-- Voodoo Doctor's Hovel
 --- NYI ---
 i(0, 171713);		-- Burnished Leather
-i(0, 173416);		-- Small Football
+i(118097, 173416);	-- Small Football
 i(116319, 0);		-- Journeying Helm
 i(116320, 0);		-- Journeying Robes
 i(116321, 0);		-- Journeying Slacks
@@ -1445,7 +1483,6 @@ i(0, 196395);		-- Fel Leather Strap
 i(0, 196456);		-- Felhide Bracers
 i(0, 196428);		-- Rough Warhide Mask
 i(0, 196375);		-- Shaved Stonehide Pelt
-i(0, 196425);		-- Stonehide Boot Base
 i(0, 196384);		-- Stonehide Boot Exterior
 i(0, 196469);		-- Stonehide Caparison
 i(0, 196467);		-- Stonehide Champron
@@ -1461,6 +1498,7 @@ i(0, 208615);		-- Stonehide Leather Strip
 --- NYI ---
 i(0, 196388);		-- Tanned Fel Leather
 i(0, 196387);		-- Shaved Felhide
+i(0, 196425);		-- Stonehide Boot Base
 i(0, 196383);		-- Stonehide Leather Vamp
 i(137900, 0);		-- Battlebound Armbands [Rank 2]
 i(137901, 0);		-- Battlebound Girdle [Rank 2]
@@ -1614,6 +1652,10 @@ i(162419, 269550);	-- Honorable Combatant's Cestus [Rank 2]
 i(162420, 269551);	-- Honorable Combatant's Cestus [Rank 3]
 i(162415, 269547);	-- Honorable Combatant's Striker [Rank 2]
 i(162416, 269548);	-- Honorable Combatant's Striker [Rank 3]
+i(162388, 0);	-- Pattern: Hardened Tempest Boots [Rank 3]
+i(162389, 0);	-- Pattern: Hardened Tempest Leggings [Rank 3]
+i(162400, 0);	-- Pattern: Mistscale Boots [Rank 3]
+i(162401, 0);	-- Pattern: Mistscale Greaves [Rank 3]
 
 -----------------
 -- PATCH 8.1.0 --
@@ -1670,6 +1712,8 @@ i(165649, 285095);	-- Tempered Mistscale Boots
 i(165651, 285096);	-- Tempered Mistscale Greaves
 i(165645, 285099);	-- Tempered Tempest Boots
 i(165647, 285100);	-- Tempered Tempest Leggings
+--- NYI ---
+i(166312, 0);	-- Pattern: Coarse Leather Barding [Rank 2]
 
 -----------------
 -- PATCH 8.1.5 --
@@ -1891,6 +1935,7 @@ i(0, 309275);		-- Wildskin Pauldrons
 i(0, 309276);		-- Wildskin Waistguard
 i(0, 309277);		-- Wildskin Armguards
 i(182669, 309222);	-- Loosened Belt
+i(183869, 0);		-- [DNT][REUSE ME] Pattern: Crafter's Mark III
 
 -----------------
 -- PATCH 9.0.2 --

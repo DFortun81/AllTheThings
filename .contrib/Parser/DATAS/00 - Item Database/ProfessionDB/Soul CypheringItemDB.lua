@@ -1,4 +1,5 @@
 local i = GetRecipeHelperForProfession(SOUL_CYPHERING);
+
 -----------------
 -- PATCH 9.0.1 --
 -----------------

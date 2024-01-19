@@ -757,10 +757,5 @@ root(ROOTS.NeverImplemented, {
 				i(52165),	-- Perfect Mystic Alicite
 			}),
 		}),
-		prof(LEATHERWORKING, {
-			tier(CATA_TIER, {
-				i(56497),	-- Razorshell Gloves
-			}),
-		}),
 	}),
 });

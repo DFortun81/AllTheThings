@@ -1,4 +1,5 @@
 local i = GetRecipeHelperForProfession(HERBALISM);
+
 -----------------
 --   CLASSIC   --
 -----------------

@@ -212,7 +212,6 @@ root(ROOTS.NeverImplemented, {
 					i(37385),	-- Seared Harness
 					i(37386),	-- Ruby Heart Spaulders
 					i(37400),	-- Whalehunter Cuffs
-					i(39707),	-- Verdant Tundra Cap
 					i(41757),	-- Vest of Unyielding Companionship
 				}),
 				n(P3xx, {
@@ -454,20 +453,7 @@ root(ROOTS.NeverImplemented, {
 				tier(CATA_TIER, 0.3, {
 					i(63002),	-- Bat Claw Boots
 					--
-					i(56493),	-- Razorshell Boots
-					i(56496),	-- Windbound Belt
-					i(56500),	-- Windbound Shoulders
-					i(56501),	-- Razorshell Belt
-					i(56506),	-- Windbound Leggings
-					i(56510),	-- Windbound Chest
 					i(54551),	-- Defiant Bracers
-					i(56492),	-- Windbound Boots
-					i(56485),	-- Windbound Bracers
-					i(56486),	-- Windbound Gloves
-					i(56487),	-- Razorshell Bracers
-					i(56488),	-- Razorshell Shoulders
-					i(56507),	-- Razorshell Helm
-					i(56514),	-- Windbound Helm
 					i(59789),	-- Sea-Snack Footguards
 					i(65744),	-- Nimble Command Shoulderguards
 					i(62715),	-- Art Template Mail Belt - Mail_Cataclysm_B_01 - Blue

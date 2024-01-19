@@ -1,4 +1,5 @@
 local i = GetRecipeHelperForProfession(MINING);
+
 -----------------
 --   CLASSIC   --
 -----------------
@@ -297,6 +298,6 @@ i(0, 405131);		-- Overload Metamorphic Deposit
 -- PATCH 10.2.0 --
 ------------------
 --- DISCOVERY ---
-i(0, 421247);	-- Living Draconium Deposit
-i(0, 421244);	-- Living Serevite Deposit
-i(0, 422809);	-- Overload Living Deposit
+i(0, 421247);		-- Living Draconium Deposit
+i(0, 421244);		-- Living Serevite Deposit
+i(0, 422809);		-- Overload Living Deposit

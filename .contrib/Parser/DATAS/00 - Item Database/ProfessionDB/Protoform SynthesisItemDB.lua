@@ -1,4 +1,5 @@
 local i = GetRecipeHelperForProfession(PROTOFORM_SYNTHESIS);
+
 -----------------
 -- PATCH 9.2.0 --
 -----------------
@@ -37,7 +38,6 @@ i(0, 364697);		-- Microlicid
 i(0, 364679);		-- Multichicken
 i(0, 364689);		-- Omnipotential Core
 i(0, 365040);		-- Pale Regal Cervid
-i(0, 365061);		-- Patient Bufonid
 i(0, 364691);		-- Prototickles
 i(0, 365062);		-- Prototype Leaper
 i(0, 365052);		-- Raptora Swooper
@@ -55,3 +55,5 @@ i(0, 365074);		-- Unsuccessful Prototype Fleetpod
 i(0, 365046);		-- Vespoid Flutterer
 i(0, 364687);		-- Violent Poultrid
 i(0, 364699);		-- Viperid Menace
+--- NYI ---
+i(0, 365061);		-- Patient Bufonid

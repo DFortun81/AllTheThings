@@ -1,4 +1,5 @@
 local i = GetRecipeHelperForProfession(ASCENSION_CRAFTING);
+
 -----------------
 -- PATCH 9.0.1 --
 -----------------

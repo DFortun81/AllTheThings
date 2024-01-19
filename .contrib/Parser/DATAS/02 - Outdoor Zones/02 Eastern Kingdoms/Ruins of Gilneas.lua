@@ -243,7 +243,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 78188,	-- Righteous Fire, Righteous Fury
 					["coord"] = { 58.7, 47.8, RUINS_OF_GILNEAS },
 					["groups"] = {
-						i(211873),	-- Reins of the Gilnean Prowler
+						i(211873),	-- Gilnean Prowler (MOUNT!)
 						-- Ensemble: Gilnean Noble's Suit
 						i(211791),	-- Gilnean Nobles Buckle
 						i(211795),	-- Gilnean Nobles Mantle
@@ -269,7 +269,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 48.8, 53, RUINS_OF_GILNEAS },
 							["races"] = { WORGEN },
 							["groups"] = {
-								i(211788),	-- Tess's Peacebloom
+								i(211788),	-- Tess's Peacebloom (TOY!)
 							},
 						}),
 					},

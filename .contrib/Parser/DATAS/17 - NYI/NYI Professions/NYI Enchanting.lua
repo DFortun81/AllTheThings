@@ -192,12 +192,9 @@ root(ROOTS.NeverImplemented, {
 				tier(BFA_TIER, {
 					-- 8.0.1
 					tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 8.0.1" } }, {
-						r(255106),	-- 9.0 Blacksmithing - Modified Crafting Reagent 03
-						r(255107),	-- 9.0 Blacksmithing - Modified Crafting Reagent 04
 						r(269720),	-- Honorable Combatant's Salutary Scepter [Rank 1]
 						r(269721),	-- Honorable Combatant's Salutary Scepter [Rank 2]
 						r(269722),	-- Honorable Combatant's Salutary Scepter [Rank 3]
-						r(255108),	-- REUSE ME (DNT)
 						r(265107),	-- Talanji's Salutary Scepter [Rank 1]
 						r(265108),	-- Talanji's Salutary Scepter [Rank 2]
 						r(265109),	-- Talanji's Salutary Scepter [Rank 2]

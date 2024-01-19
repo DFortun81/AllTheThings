@@ -1,4 +1,7 @@
 430409@@@Blackfathom Mana Oil [Classic]
 10000@@@Douse Lock \\ Plans: Wicked Mithril Blade [Blacksmithing]
 110955@@@Release Spirit
+255106@@@9.0 Blacksmithing - Modified Crafting Reagent 03
+255107@@@9.0 Blacksmithing - Modified Crafting Reagent 04
+255108@@@9.0 Blacksmithing - Modified Crafting Reagent 06
 338119@@@Bug Zapifier \\ Ardenweald Engineering Item [Engineering...]

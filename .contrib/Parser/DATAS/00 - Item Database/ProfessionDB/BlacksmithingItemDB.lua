@@ -5,6 +5,17 @@ local MASTER_AXESMITH = 17041;
 local MASTER_HAMMERSMITH = 17040;
 local MASTER_SWORDSMITH = 17039;
 
+-- #if SEASON_OF_DISCOVERY
+------------------
+-- PATCH 1.15.0 --
+------------------
+--- QUEST ---
+i(0, 429348);		-- Shifting Silver Breastplate
+--- ITEM ---
+i(211846, 430397);	-- Blackfathom Sharpening Stone
+i(210779, 427061);	-- Mantle of the Second War
+-- #endif
+
 -----------------
 --   CLASSIC   --
 -----------------
@@ -348,15 +359,6 @@ i(7994, 0);			-- Orcish War Leggings
 i(7988, 0);			-- Ornate Mithril Boots
 i(7986, 0);			-- Ornate Mithril Breastplate
 i(7987, 0);			-- Ornate Mithril Helm
-
--- #if SEASON_OF_DISCOVERY
--- SEASON OF DISCOVERY --
--- QUEST --
-i(0, 429348);	-- Shifting Silver Breastplate
--- ITEM --
-i(211846, 430397);	-- Blackfathom Sharpening Stone
-i(210779, 427061);	-- Mantle of the Second War
--- #endif
 
 -----------------
 -- PATCH 2.0.5 --
@@ -987,54 +989,54 @@ i(0, 113263);		--
 i(0, 126864);		--
 i(0, 114112);		--
 i(0, 126866);		--
-i(84187, 122591);		-- Lightsteel Belt
-i(84188, 122590);		-- Lightsteel Boots
-i(84190, 122586);		-- Lightsteel Breastplate
-i(84191, 122587);		-- Lightsteel Gauntlets
-i(84192, 122584);		-- Lightsteel Helm
-i(84193, 122588);		-- Lightsteel Legplates
-i(84195, 122585);		-- Lightsteel Shoulders
-i(84199, 122607);		-- Masterwork Ghost-Forged Belt
-i(84201, 122606);		-- Masterwork Ghost-Forged Boots
-i(84202, 122605);		-- Masterwork Ghost-Forged Bracers
-i(84203, 122602);		-- Masterwork Ghost-Forged Breastplate
-i(84204, 122603);		-- Masterwork Ghost-Forged Gauntlets
-i(84205, 122600);		-- Masterwork Ghost-Forged Helm
-i(84206, 122604);		-- Masterwork Ghost-Forged Legplates
-i(84207, 122601);		-- Masterwork Ghost-Forged Shoulders
-i(84209, 122615);		-- Masterwork Lightsteel Belt
-i(84210, 122614);		-- Masterwork Lightsteel Boots
-i(84211, 122613);		-- Masterwork Lightsteel Bracers
-i(84212, 122610);		-- Masterwork Lightsteel Breastplate
-i(84213, 122611);		-- Masterwork Lightsteel Gauntlets
-i(84214, 122608);		-- Masterwork Lightsteel Helm
-i(84215, 122612);		-- Masterwork Lightsteel Legplates
-i(84216, 122609);		-- Masterwork Lightsteel Shoulders
-i(84230, 122575);		-- Spiritguard Belt
-i(84231, 122574);		-- Spiritguard Boots
-i(84233, 122570);		-- Spiritguard Breastplate
-i(84234, 122571);		-- Spiritguard Gauntlets
-i(84235, 122568);		-- Spiritguard Helm
-i(84236, 122572);		-- Spiritguard Legplates
-i(84238, 122569);		-- Spiritguard Shoulders
-i(84174, 0);			-- Forgewire Axe
-i(84176, 0);			-- Ghost Shard
-i(84177, 0);			-- Ghost-Forged Belt
-i(84178, 0);			-- Ghost-Forged Blade
-i(84179, 0);			-- Ghost-Forged Boots
-i(84180, 0);			-- Ghost-Forged Bracers
-i(84181, 0);			-- Ghost-Forged Breastplate
-i(84182, 0);			-- Ghost-Forged Gauntlets
-i(84183, 0);			-- Ghost-Forged Helm
-i(84184, 0);			-- Ghost-Forged Legplates
-i(84185, 0);			-- Ghost-Forged Shoulders
-i(84186, 0);			-- Ghostly Skeleton Key
-i(84189, 0);			-- Lightsteel Bracers
-i(84194, 0);			-- Lightsteel Shield
-i(84228, 0);			-- Phantasmal Hammer
-i(84229, 0);			-- Spiritblade Decimator
-i(84232, 0);			-- Spiritguard Bracers
-i(84237, 0);			-- Spiritguard Shield
+i(84187, 122591);	-- Lightsteel Belt
+i(84188, 122590);	-- Lightsteel Boots
+i(84190, 122586);	-- Lightsteel Breastplate
+i(84191, 122587);	-- Lightsteel Gauntlets
+i(84192, 122584);	-- Lightsteel Helm
+i(84193, 122588);	-- Lightsteel Legplates
+i(84195, 122585);	-- Lightsteel Shoulders
+i(84199, 122607);	-- Masterwork Ghost-Forged Belt
+i(84201, 122606);	-- Masterwork Ghost-Forged Boots
+i(84202, 122605);	-- Masterwork Ghost-Forged Bracers
+i(84203, 122602);	-- Masterwork Ghost-Forged Breastplate
+i(84204, 122603);	-- Masterwork Ghost-Forged Gauntlets
+i(84205, 122600);	-- Masterwork Ghost-Forged Helm
+i(84206, 122604);	-- Masterwork Ghost-Forged Legplates
+i(84207, 122601);	-- Masterwork Ghost-Forged Shoulders
+i(84209, 122615);	-- Masterwork Lightsteel Belt
+i(84210, 122614);	-- Masterwork Lightsteel Boots
+i(84211, 122613);	-- Masterwork Lightsteel Bracers
+i(84212, 122610);	-- Masterwork Lightsteel Breastplate
+i(84213, 122611);	-- Masterwork Lightsteel Gauntlets
+i(84214, 122608);	-- Masterwork Lightsteel Helm
+i(84215, 122612);	-- Masterwork Lightsteel Legplates
+i(84216, 122609);	-- Masterwork Lightsteel Shoulders
+i(84230, 122575);	-- Spiritguard Belt
+i(84231, 122574);	-- Spiritguard Boots
+i(84233, 122570);	-- Spiritguard Breastplate
+i(84234, 122571);	-- Spiritguard Gauntlets
+i(84235, 122568);	-- Spiritguard Helm
+i(84236, 122572);	-- Spiritguard Legplates
+i(84238, 122569);	-- Spiritguard Shoulders
+i(84174, 0);		-- Forgewire Axe
+i(84176, 0);		-- Ghost Shard
+i(84177, 0);		-- Ghost-Forged Belt
+i(84178, 0);		-- Ghost-Forged Blade
+i(84179, 0);		-- Ghost-Forged Boots
+i(84180, 0);		-- Ghost-Forged Bracers
+i(84181, 0);		-- Ghost-Forged Breastplate
+i(84182, 0);		-- Ghost-Forged Gauntlets
+i(84183, 0);		-- Ghost-Forged Helm
+i(84184, 0);		-- Ghost-Forged Legplates
+i(84185, 0);		-- Ghost-Forged Shoulders
+i(84186, 0);		-- Ghostly Skeleton Key
+i(84189, 0);		-- Lightsteel Bracers
+i(84194, 0);		-- Lightsteel Shield
+i(84228, 0);		-- Phantasmal Hammer
+i(84229, 0);		-- Spiritblade Decimator
+i(84232, 0);		-- Spiritguard Bracers
+i(84237, 0);		-- Spiritguard Shield
 
 -----------------
 -- PATCH 5.2.0 --

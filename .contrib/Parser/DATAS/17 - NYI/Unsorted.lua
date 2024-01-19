@@ -1214,6 +1214,12 @@ root(ROOTS.Unsorted, {
 			i(212607),	-- Reno's Lucky Hat [Hearthstone]
 			i(212644),	-- Taverner's Belt [Hearthstone]
 			i(212336),	-- The Tavern's Tabard
+
+			--
+			i(210081),	-- Flaming Torch
+			i(211937),	-- Scarlet Pendant
+			i(211938),	-- Flame Inscribed Band
+			i(211943),	-- Scarlet Silk Bandage
 		})),
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			i(211927),	-- Tattered DreamleafS

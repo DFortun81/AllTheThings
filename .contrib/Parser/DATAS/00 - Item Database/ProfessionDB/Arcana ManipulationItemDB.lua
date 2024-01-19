@@ -1,4 +1,5 @@
 local i = GetRecipeHelperForProfession(ARCANA_MANIPULATION);
+
 ------------------
 -- PATCH 10.0.0 --
 ------------------

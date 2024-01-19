@@ -779,7 +779,6 @@ i(160662, 172541);	-- Blackwater Anti-Venom
 i(160664, 221690);	-- Silvery Salve
 -- #endif
 -- NYI --
---i(0, 251824);		-- REUSE ME - SCS
 i(0, 252365);		-- Unknown
 i(0, 252366);		-- Unknown
 i(0, 252367);		-- Unknown

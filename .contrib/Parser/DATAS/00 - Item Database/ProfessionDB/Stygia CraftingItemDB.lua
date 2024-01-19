@@ -1,4 +1,5 @@
 local i = GetRecipeHelperForProfession(STYGIA_CRAFTING);
+
 -----------------
 -- PATCH 9.0.5 --
 -----------------
