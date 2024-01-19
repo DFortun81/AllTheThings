@@ -82,13 +82,13 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			}),
 			ach(11710, {["timeline"] = {ADDED_7_2_0}}),	-- Lethal Looks (PvP Season 5)
 		})),
-		n(PVP_HONOR, {
-			-- #if AFTER 7.0.3
-			n(40212, {	-- Trapjaw Rix <Savage Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+]
-				["coord"] = { 59.3, 57.3, NORTHREND_THE_UNDERBELLY },
-				["timeline"] = { "added 7.0.3.22260" },
-				["groups"] = {
-			-- #endif
+		-- #if AFTER 7.0.3
+		n(40212, {	-- Trapjaw Rix <Savage Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+]
+			["coord"] = { 59.3, 57.3, NORTHREND_THE_UNDERBELLY },
+			["timeline"] = { "added 7.0.3.22260" },
+			["groups"] = {
+		-- #endif
+				n(PVP_HONOR, {
 					n(WEAPONS, {
 						i(146647, {	-- Arsenal: Savage Gladiator's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -482,18 +482,18 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						i(42595),	-- Savage Gladiator's Totem of the Third Wind
 					})),
 					-- #endif
-			-- #if AFTER 7.0.3
-				},
-			}),
-			-- #endif
+				}),
+		-- #if AFTER 7.0.3
+			},
 		}),
-		n(PRE_SEASON_HATEFUL, {
-			-- #if AFTER 7.0.3
-			n(30885, {	-- Blazik Fireclaw <Hateful Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+] / Blazik Fireclaw <Water Vendor> [WRATH]
-				["coord"] = { 59.5, 57.9, NORTHREND_THE_UNDERBELLY },
-				["timeline"] = { "added 7.0.3.22260" },
-				["groups"] = {
-			-- #endif
+		-- #endif
+		-- #if AFTER 7.0.3
+		n(30885, {	-- Blazik Fireclaw <Hateful Gladiator> [Legion?] / Blazik Fireclaw <Legacy Arena Armor> [CATA+] / Blazik Fireclaw <Water Vendor> [WRATH]
+			["coord"] = { 59.5, 57.9, NORTHREND_THE_UNDERBELLY },
+			["timeline"] = { "added 7.0.3.22260" },
+			["groups"] = {
+		-- #endif
+				n(PRE_SEASON_HATEFUL, {
 					n(WEAPONS, {
 						i(146646, {	-- Arsenal: Hateful Gladiator's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -1165,18 +1165,18 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						i(42601),	-- Hateful Gladiator's Totem of Survival
 						i(42596),	-- Hateful Gladiator's Totem of the Third Wind
 					})),
+				}),
 		-- #if AFTER 7.0.3
-				},
-			}),
-		-- #endif
+			},
 		}),
-		n(PVP_GLADIATOR, {
-			-- #if AFTER 7.0.3
-			n(69321, {	-- Herwin Steampop <Deadly Gladiator>
-				["coord"] = { 59.4, 57.8, NORTHREND_THE_UNDERBELLY },
-				["timeline"] = { "added 7.0.3.22260" },
-				["groups"] = {
-			-- #endif
+		-- #endif
+		-- #if AFTER 7.0.3
+		n(69321, {	-- Herwin Steampop <Deadly Gladiator>
+			["coord"] = { 59.4, 57.8, NORTHREND_THE_UNDERBELLY },
+			["timeline"] = { "added 7.0.3.22260" },
+			["groups"] = {
+		-- #endif	
+				n(PVP_GLADIATOR, {
 					n(WEAPONS, {
 						i(146645, {	-- Arsenal: Deadly Gladiator's Weapon
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -1853,11 +1853,11 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						i(42131),	-- Battlemaster's Conviction Patch 3.0.2
 						i(42128),	-- Battlemaster's Hostility Patch 3.0.2
 					})),
-			-- #if AFTER 7.0.3
-				},
-			}),
-			-- #endif
+				}),
+		-- #if AFTER 7.0.3
+			},
 		}),
+		-- #endif
 		-- #if ANYCLASSIC
 		bubbleDown({
 			["timeline"] = { "added 3.0.1", "removed 3.1.0" },
@@ -1892,13 +1892,13 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			}),
 			ach(11711, {["timeline"] = {ADDED_7_2_0}}),	-- The Fierce and the Furious (PvP Season 6)
 		})),
-		n(PVP_GLADIATOR, {
-			-- #if AFTER 7.0.3
-			n(69318, {	-- Kylo Kelwin <Furious Gladiator>
-				["coord"] = { 59.0, 57.6, NORTHREND_THE_UNDERBELLY },
-				["timeline"] = { "added 7.0.3.22260" },
-				["groups"] = {
-			-- #endif
+		-- #if AFTER 7.0.3
+		n(69318, {	-- Kylo Kelwin <Furious Gladiator>
+			["coord"] = { 59.0, 57.6, NORTHREND_THE_UNDERBELLY },
+			["timeline"] = { "added 7.0.3.22260" },
+			["groups"] = {
+		-- #endif
+				n(PVP_GLADIATOR, {
 					n(WEAPONS, {
 						i(146644, {	-- Arsenal: Furious Gladiator's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -2570,11 +2570,11 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						i(42124),	-- (A) Medallion of the Alliance
 						i(42126),	-- (H) Medallion of the Horde
 					})),
-			-- #if AFTER 7.0.3
-				},
-			}),
-			-- #endif
+				}),
+		-- #if AFTER 7.0.3
+			},
 		}),
+		-- #endif
 		bubbleDown({
 			["timeline"] = { "added 3.1.0", "removed 3.2.0" },
 			-- #if BEFORE 5.0.1
@@ -2637,13 +2637,13 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			}),
 			ach(11712, {["timeline"] = {ADDED_7_2_0}}),	-- Relentlessly Good Looking (PvP Season 7)
 		})),
-		n(PVP_GLADIATOR, {
-			-- #if AFTER 7.0.3
-			n(69973, {	-- Zom Bocom <Relentless Gladiator> [Legion?] / Zom Bocom <Honor Quartermaster> [MOP?]
-				["coord"] = { 59.0, 58.8, NORTHREND_THE_UNDERBELLY },
-				["timeline"] = { "added 7.0.3.22260" },
-				["groups"] = {
-			-- #endif
+		-- #if AFTER 7.0.3
+		n(69973, {	-- Zom Bocom <Relentless Gladiator> [Legion?] / Zom Bocom <Honor Quartermaster> [MOP?]
+			["coord"] = { 59.0, 58.8, NORTHREND_THE_UNDERBELLY },
+			["timeline"] = { "added 7.0.3.22260" },
+			["groups"] = {
+		-- #endif
+				n(PVP_GLADIATOR, {
 					n(WEAPONS, {
 						i(146643, {	-- Arsenal: Relentless Gladiator's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -3331,11 +3331,11 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						i(42137),	-- Battlemaster's Ruination
 						i(42135),	-- Battlemaster's Vivacity
 					})),
-			-- #if AFTER 7.0.3
-				},
-			}),
-			-- #endif
+				}),
+		-- #if AFTER 7.0.3
+			},
 		}),
+		-- #endif
 		bubbleDown({
 			["timeline"] = { "added 3.2.0", "removed 3.3.2" },
 			-- #if BEFORE 5.0.1
@@ -3400,13 +3400,13 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 			}),
 			ach(11713, {["timeline"] = {ADDED_7_2_0}}),	-- Wrath of the Stitch King (PvP Season 8)
 		})),
-		n(PVP_GLADIATOR, {
-			-- #if AFTER 7.0.3
-			n(69971, {	-- Xazi Smolderpipe <Wrathful Gladiator> [Legion?] / Xazi Smolderpipe <Conquest Quartermaster> [MOP?]
-				["coord"] = { 58.5, 58.3, NORTHREND_THE_UNDERBELLY },
-				["timeline"] = { "added 7.0.3.22260" },
-				["groups"] = {
-			-- #endif
+		-- #if AFTER 7.0.3
+		n(69971, {	-- Xazi Smolderpipe <Wrathful Gladiator> [Legion?] / Xazi Smolderpipe <Conquest Quartermaster> [MOP?]
+			["coord"] = { 58.5, 58.3, NORTHREND_THE_UNDERBELLY },
+			["timeline"] = { "added 7.0.3.22260" },
+			["groups"] = {
+		-- #endif
+				n(PVP_GLADIATOR, {
 					n(WEAPONS, {
 						i(146642, {	-- Arsenal: Wrathful Gladiator's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -4087,11 +4087,11 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						i(51377),	-- (A) Medallion of the Alliance
 						i(51378),	-- (H) Medallion of the Horde
 					})),
-			-- #if AFTER 7.0.3
-				},
-			}),
-			-- #endif
+				}),
+		-- #if AFTER 7.0.3
+			},
 		}),
+		-- #endif
 		bubbleDown({
 			["timeline"] = { "added 3.3.2", "removed 4.0.1" },
 			-- #if BEFORE 5.0.1
