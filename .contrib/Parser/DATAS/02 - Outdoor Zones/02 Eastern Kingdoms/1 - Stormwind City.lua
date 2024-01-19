@@ -2229,6 +2229,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 39.2, 28, STORMWIND_CITY },
 					["timeline"] = { "removed 2.0.1" },
 					["maps"] = { ELWYNN_FOREST },
+					["classes"] = { PRIEST },
 					["races"] = { DWARF, HUMAN },
 					["lvl"] = 5,
 					["groups"] = {

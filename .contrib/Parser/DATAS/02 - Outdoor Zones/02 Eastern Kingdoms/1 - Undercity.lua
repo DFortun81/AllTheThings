@@ -889,6 +889,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.6, 15.6, UNDERCITY },
 					["timeline"] = { "removed 2.0.1" },
 					["maps"] = { TIRISFAL_GLADES },
+					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 5,
 					["groups"] = {

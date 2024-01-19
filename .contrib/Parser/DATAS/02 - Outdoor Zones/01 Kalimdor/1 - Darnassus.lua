@@ -614,6 +614,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4092,	-- Lariia <Priest Trainer>
 					["coord"] = { 40, 87.4, DARNASSUS },
 					["timeline"] = { "removed 2.0.1" },
+					["classes"] = { PRIEST },
 					["races"] = { NIGHTELF },
 					["lvl"] = 5,
 					["groups"] = {

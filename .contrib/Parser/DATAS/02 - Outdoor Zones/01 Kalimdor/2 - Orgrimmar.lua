@@ -1368,6 +1368,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 35.6, 87.6, ORGRIMMAR },
 					["timeline"] = { "removed 2.0.1" },
 					["maps"] = { DUROTAR },
+					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 5,
 					["groups"] = {
