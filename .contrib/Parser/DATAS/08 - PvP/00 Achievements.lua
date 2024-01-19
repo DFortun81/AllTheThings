@@ -42,25 +42,25 @@ end]];
 local THE_JUSTICAR_OnUpdate = [[function(t)
 	if t.collectible then
 		if not t.wsg then
-			local f = _.SearchForField("factionID", 890);
-			if f and #f > 0 then
-				t.wsg = f[1];
+			local f = _.SearchForObject("factionID", 890, "key");
+			if f then
+				t.wsg = f;
 			else
 				return true;
 			end
 		end
 		if not t.ab then
-			local f = _.SearchForField("factionID", 509);
-			if f and #f > 0 then
-				t.ab = f[1];
+			local f = _.SearchForObject("factionID", 509, "key");
+			if f then
+				t.ab = f;
 			else
 				return true;
 			end
 		end
 		if not t.av then
-			local f = _.SearchForField("factionID", 730);
-			if f and #f > 0 then
-				t.av = f[1];
+			local f = _.SearchForObject("factionID", 730, "key");
+			if f then
+				t.av = f;
 			else
 				return true;
 			end
