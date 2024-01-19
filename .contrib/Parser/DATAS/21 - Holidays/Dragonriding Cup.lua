@@ -2855,7 +2855,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 		}))),
 		n(ACHIEVEMENTS, {
 			currency(RIDERS_OF_AZEROTH_BADGE, {
-				["description"] = "For each achievement in the Dragonriding Cup players earn one badge, with up to 9 badges available per race track by obtaining gold in all three races.",
+				["description"] = "For each achievement in the Dragonriding Cup players earn one badge, with up to 9 badges available per race track by obtaining gold in all three courses.",
 			}),
 		}),
 	},
