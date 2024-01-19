@@ -879,7 +879,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(197621),	-- Windborne Velocidrake: Exposed Finned Tail
 		})),
 	}),
-	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
+	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDownFiltered({ ["timeline"] = { ADDED_10_0_7 } },FILTERFUNC_itemID,{
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
 			i(197000),	-- Cliffside Wylderdrake: Coiled Horns (DM!)
 			i(197015),	-- Cliffside Wylderdrake: Dark Skin Variation (DM!)
@@ -917,7 +917,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(197629),	-- Windborne Velocidrake: Spiked Neck (DM!)
 		}),
 	})),
-	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
+	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDownFiltered({ ["timeline"] = { ADDED_10_1_0 } },FILTERFUNC_itemID,{
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
 			i(196965),	-- Cliffside Wylderdrake: Bronze and Teal Armor (DM!)
 			i(196990),	-- Cliffside Wylderdrake: Helm (DM!)
@@ -1005,7 +1005,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203302),	-- Winding Slitherdrake: Purple and Silver Armor
 		})),
 	})),
-	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
+	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDownFiltered({ ["timeline"] = { ADDED_10_1_5 } },FILTERFUNC_itemID,{
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
 			i(208102),	-- Cliffside Wylderdrake: Visage of the Infinite (DM!)
 		}),
@@ -1025,7 +1025,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203349),	-- Winding Slitherdrake: Curved Nose Horn (DM!)
 		}),
 	})),
-	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
+	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDownFiltered({ ["timeline"] = { ADDED_10_1_7 } },FILTERFUNC_itemID,{
 		i(208200),	-- Dragon Isles Drakes: Gilded Armor (DM!)
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
 			applyevent(EVENTS.DAY_OF_THE_DEAD, i(208859)),	-- Cliffside Wylderdrake: Day of the Dead Armor
@@ -1046,7 +1046,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203355),	-- Winding Slitherdrake: Yellow Scales (DM!)
 		}),
 	})),
-	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDownFiltered({ ["timeline"] = { ADDED_10_2_0 } },FILTERFUNC_itemID,{
 		i(208550),	-- Dragon Isles Drakes: White Scales (DM!)
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
 		}),
@@ -1126,7 +1126,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(203337),	-- Winding Slitherdrake: Thorn Horns (DM!)
 		}),
 	})),
-	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
+	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDownFiltered({ ["timeline"] = { ADDED_10_2_5 } },FILTERFUNC_itemID,{
 		i(212518),	-- Manuscript of Endless Possibility (DM!)
 		header(HEADERS.Item, 194034, sharedData({	-- Renewed Proto-Drake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
