@@ -10,6 +10,8 @@ local pairs, string_format
 local AssignChildren = app.AssignChildren;
 local NestObjects, Colorize, CreateObject, NestObject, SearchForFieldContainer, SearchForObject
 
+local DynamicDataCache = app.CreateDataCache("dynamic", true);
+local Runner = app.CreateRunner("dynamic");
 
 -- Miscellaneous API Implementation
 -- Access via AllTheThings.Modules.Miscellaneous
@@ -41,18 +43,11 @@ local function RecursiveParentMapper(group, field, value)
 	end
 end
 
-local DynamicDataCache = app.CreateDataCache("dynamic", true);
 
 -- Common function set as the OnUpdate for a group which will build itself a 'nested' version of the
 -- content which matches the specified .dynamic 'field' and .dynamic_value of the group
 local DynamicCategory_Nested = function(self)
 	-- app.PrintDebug("DC:N",self.dynamic,self.dynamic_value,self.dynamic_withsubgroups)
-	-- dynamic groups are ignored for the source tooltips if they aren't constrained to a specific value
-	self.sourceIgnored = not self.dynamic_value;
-	-- change the text color of the dynamic group to help indicate it is not included in the window total, if it's ignored
-	if self.sourceIgnored then
-		self.text = Colorize(self.text, app.Colors.SourceIgnored);
-	end
 	-- pull out all Things which should go into this category based on field & value
 	local groups = app:BuildSearchResponse(self.dynamic, self.dynamic_value, not self.dynamic_withsubgroups);
 	NestObjects(self, groups);
@@ -61,7 +56,7 @@ local DynamicCategory_Nested = function(self)
 	-- delay-sort the top level groups
 	self.SortType = "Global";
 	-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
-	app.DynamicRunner.Run(DynamicDataCache.CacheFields, self);
+	Runner.Run(DynamicDataCache.CacheFields, self);
 	-- run a direct update on itself after being populated
 	app.DirectGroupUpdate(self);
 end
@@ -129,12 +124,6 @@ local DynamicCategory_Simple = function(self)
 					end
 				end
 			end
-			-- dynamic groups for general Types are ignored for the source tooltips
-			self.sourceIgnored = true;
-		end
-		-- change the text color of the dynamic group to help indicate it is not included in the window total, if it's ignored
-		if self.sourceIgnored then
-			self.text = Colorize(self.text, app.Colors.SourceIgnored);
 		end
 		-- sort all of the Things by name in each top header and put it under the dynamic group
 		for _,header in pairs(topHeaders) do
@@ -147,7 +136,7 @@ local DynamicCategory_Simple = function(self)
 		-- delay-sort the top level groups
 		self.SortType = "Global";
 		-- make sure these things are cached so they can be updated when collected, but run the caching after other dynamic groups are filled
-		app.DynamicRunner.Run(DynamicDataCache.CacheFields, self);
+		Runner.Run(DynamicDataCache.CacheFields, self);
 		-- run a direct update on itself after being populated
 		app.DirectGroupUpdate(self);
 	else
@@ -162,23 +151,20 @@ local function RecalculateFiller()
 	Filler = (dynamicSetting == 2 and DynamicCategory_Nested) or
 			(dynamicSetting == 1 and DynamicCategory_Simple) or nil;
 	-- app.PrintDebug("RecalculateFiller",dynamicSetting)
+	return Filler
 end
 
 -- Adds a Dynamic Category Filler function to the Function Runner which will fill the provided group using the existing dynamic/dynamic_value fields
 local function FillDynamicCategory(group, field, value)
+	-- app.PrintDebug("FDC:",group.dynamic,group.dynamic_value)
 	group.OnClick = false
 	group.OnUpdate = false
 	group.title = false
 	-- mark the top group as dynamic for the field which it used (so popouts under the dynamic header are considered unique from other dynamic popouts)
 	group.dynamic = group.dynamicID or field;
 	group.dynamic_value = group.dynamic_value or value;
-	-- app.PrintDebug("FDC:",group.dynamic,group.dynamic_value)
-	-- run a direct update on itself after being populated if the Filler exists
-	if Filler then
-		local runner = app.DynamicRunner
-		runner.Run(Filler, group);
-		runner.SetPerFrame(5);
-	end
+	Runner.Run(Filler, group);
+	Runner.SetPerFrame(5);
 	return group
 end
 
@@ -225,14 +211,14 @@ local function dynamic_back()
 	return 0.3
 end
 local function dynamic_onclick(row, button)
-	RecalculateFiller()
+	if not RecalculateFiller() then return true end
 	-- fill the dynamic category group
 	FillDynamicCategory(row.ref)
 	-- don't handle further onclick logic (i.e. expanding)
 	return true
 end
 local function dynamicvalues_onclick(row, button)
-	RecalculateFiller()
+	if not RecalculateFiller() then return end
 	-- fill the dynamic category group
 	NestDynamicValueCategories(row.ref)
 	-- allow further onclick logic (i.e. expanding)

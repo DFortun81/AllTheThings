@@ -160,7 +160,6 @@ local DelayedCallback = app.CallbackHandlers.DelayedCallback;
 local AfterCombatCallback = app.CallbackHandlers.AfterCombatCallback;
 local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback;
 app.FunctionRunner = app.CreateRunner("default");
-app.DynamicRunner = app.CreateRunner("dynamic");
 app.UpdateRunner = app.CreateRunner("update");
 app.FillRunner = app.CreateRunner("fill");
 -- Whether ATT should ignore saving data experienced during the play session
