@@ -1077,7 +1077,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 1899,	-- The Deathstalkers (3/4)
 					["coord"] = { 83.2, 69, UNDERCITY },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 3.3.0" },
+					["races"] = { UNDEAD },
+					["classes"] = { ROGUE },
+					["lvl"] = 10,
+					["groups"] = {
+						i(7298, {	-- Blade of Cunning
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(14418, {	-- The Deathstalkers (4/4)
+					["providers"] = {
+						{ "n", 6467 },	-- Mennet Carkad
+						{ "i", 7294 },	-- Andron's Ledger
+					},
+					["altQuests"] = { 1978 },	-- The Deathstalkers (4/4)
+					["sourceQuest"] = 1899,	-- The Deathstalkers (3/4)
+					["coord"] = { 83.2, 69, UNDERCITY },
+					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
