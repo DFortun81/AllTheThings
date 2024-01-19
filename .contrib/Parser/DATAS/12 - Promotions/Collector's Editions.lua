@@ -327,6 +327,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_4_A, "removed 3.4.3.51943" } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",
+			["questID"] = 70449,	-- Elite Northrend Expedition Supplies [Heroic]
 			["g"] = {
 				i(198665),	-- Pebble's Pebble
 				i(198647),	-- Fishspeaker's Lucky Lure
@@ -357,6 +358,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		}),
 		n(EPIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
+			["questID"] = 70448,	-- Elite Northrend Expedition Supplies [Epic]
 			["g"] = {
 				i(192455),	-- Kalu'ak Whalebone Glider
 			},
