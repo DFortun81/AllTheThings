@@ -36,21 +36,21 @@ HEARTHSTONE_10TH_ANNIVERSARY = createHeader({
 		en = "Hearthstone's 10th Anniversary",
 	},
 });
-root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
-	n(HEARTHSTONE, {
+root(ROOTS.Promotions, {
+	n(HEARTHSTONE, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		["timeline"] = { "added 5.3.0.16825" },
 		["groups"] = {
 			ach(8345),	-- Hearthstoned
 			i(98618), -- Hearthsteed (MOUNT!)
 		},
-	}),
-	n(HEARTHSTONE_MERCENARIES_MODE, {
+	})),
+	n(HEARTHSTONE_MERCENARIES_MODE, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		["timeline"] = { ADDED_9_1_0 },
 		["groups"] = {
 			mount(356488),	-- Sarge's Tale (MOUNT!)
 			ach(15323),	-- Sarge's Tale
 		},
-	}),
+	})),
 	n(HEARTHSTONE_10TH_ANNIVERSARY, {
 		-- Work in progress
 		["timeline"] = { ADDED_10_2_5 },
@@ -63,13 +63,13 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			}),
 			i(212335),   -- Collector's Carryall (BAG)
 			--i(),	-- Compass Rose (MOUNT!)
-			i(212338),   -- DNT Hearthstone Loot Hat (Needs Art)
+			--i(212338),   -- DNT Hearthstone Loot Hat (Needs Art)	-- Doesnt load ingame
 			i(163186),	-- Fiery Hearthsteed (MOUNT!)
 			i(212154),   -- Hearthstone Invitation Letter
 			i(211965),   -- Hearthstone Wild Card
 			--pets(),	-- Sarge (PET!))
 			i(212337),   -- Stone of the Hearth (TOY!)
-			i(212532),   -- Reno's Hat
+			--i(212532),   -- Reno's Hat	-- Doesnt load ingame
 			i(212607),   -- Reno's Lucky Hat
 			i(212644),   -- Taverner's Belt
 			i(212336),   -- The Tavern's Tabard
@@ -80,4 +80,4 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			}),
 		},
 	}),
-}));
+});
