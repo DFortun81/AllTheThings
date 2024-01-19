@@ -323,7 +323,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 33, 11.2, GHOSTLANDS },
 					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 					["classes"] = { ROGUE },
-					["races"] = { BLOOD_ELF },
+					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Lacy Handkerchief
@@ -486,7 +486,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 79.6, 52, SILVERMOON_CITY },
 					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 					["classes"] = { ROGUE },
-					["races"] = { BLOOD_ELF },
+					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				-- #if BEFORE WRATH
@@ -787,7 +787,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 					["maps"] = { SILVERMOON_CITY },
 					["classes"] = { ROGUE },
-					["races"] = { BLOOD_ELF },
+					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(10, 10, 1),
 					["groups"] = {
 						i(7298, {	-- Blade of Cunning
