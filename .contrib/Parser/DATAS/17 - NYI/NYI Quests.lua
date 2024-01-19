@@ -202,7 +202,6 @@ root(ROOTS.NeverImplemented, {
 				q(7479, { ["name"] = "Libram of Focus", }),
 				q(7480, { ["name"] = "Libram of Protection", }),
 				q(7478, { ["name"] = "Libram of Rapidity", }),
-				q(3366, { ["name"] = "OLD The Glowing Shard", }),
 				q(7741, { ["name"] = "Praise from the Emerald Circle <NYI> <TXT>", }),
 				q(8152, { ["name"] = "REUSE", }),
 				q(8973, { ["name"] = "REUSE", }),
