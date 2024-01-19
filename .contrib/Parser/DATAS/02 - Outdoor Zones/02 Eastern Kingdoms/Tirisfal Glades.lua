@@ -1337,7 +1337,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(354, {	-- Deaths in the Family
 					["qg"] = 1500,	-- Coleman Farthing
+					-- #if BEFORE WRATH
 					["sourceQuest"] = 362,	-- The Haunted Mills
+					-- #endif
 					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
 					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
