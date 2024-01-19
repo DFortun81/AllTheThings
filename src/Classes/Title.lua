@@ -15,15 +15,15 @@ local GetTitleName, UnitName, CALENDAR_PLAYER_NAME, IsTitleKnown, GetNumTitles =
 local DESCRIPTION_SEPARATOR, GetProgressColor = app.DESCRIPTION_SEPARATOR, app.Modules.Color.GetProgressColor;
 
 -- App
-local AccountWideData
+local ATTAccountWideData
 
 -- Title API Implementation
 -- Access via AllTheThings.Modules.Title
 local api = {};
 app.Modules.Title = api
-api.OnStartup = function(ATTAccountWideData)
-	AccountWideData = ATTAccountWideData
-end
+app.AddEventHandler("OnStartup", function()
+	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true)
+end)
 
 local function CalculateTitleStyle(name)
 	if name then
@@ -131,10 +131,10 @@ app.CreateTitle = app.CreateClass("Title", "titleID", {
 		if app.CurrentCharacter.Titles[titleID] then return 1; end
 		if IsTitleKnown(titleID) then
 			app.CurrentCharacter.Titles[titleID] = 1;
-			AccountWideData.Titles[titleID] = 1;
+			ATTAccountWideData.Titles[titleID] = 1;
 			return 1;
 		end
-		if app.Settings.AccountWide.Titles and AccountWideData.Titles[titleID] then return 2; end
+		if app.Settings.AccountWide.Titles and ATTAccountWideData.Titles[titleID] then return 2; end
 	end,
 	["saved"] = function(t)
 		return IsTitleKnown(t.titleID);
@@ -149,7 +149,7 @@ if app.IsRetail then
 -- NOTE: Not sure if this is necessary for Classic.
 	app.AddEventHandler("OnRefreshCollections", function()
 		-- app.PrintDebug("Refresh:Titles")
-		local acctTitles, charTitles = AccountWideData.Titles, {};
+		local acctTitles, charTitles = ATTAccountWideData.Titles, {};
 		for i=1,GetNumTitles(),1 do
 			if IsTitleKnown(i) then
 				if not acctTitles[i] then

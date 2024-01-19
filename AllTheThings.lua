@@ -76,15 +76,6 @@ local ColorizeRGB = app.Modules.Color.ColorizeRGB;
 local HexToARGB = app.Modules.Color.HexToARGB;
 
 -- Print/Debug/Testing Functions
-app.print = function(...)
-	print(L["TITLE"], ...);
-end
-app.report = function(...)
-	if ... then
-		app.print(...);
-	end
-	app.print(app.Version..": "..L["PLEASE_REPORT_MESSAGE"]);
-end
 app.PrintGroup = function(group,depth)
 	depth = depth or 0;
 	if group then
@@ -162,60 +153,8 @@ local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCa
 app.FunctionRunner = app.CreateRunner("default");
 app.UpdateRunner = app.CreateRunner("update");
 app.FillRunner = app.CreateRunner("fill");
--- Whether ATT should ignore saving data experienced during the play session
-app.IgnoreDataCaching = function()
-	-- This function currently returns false on Tournament realms. Very good. >_<
-	if IsOnTournamentRealm() then
-		app.print("Data will not be saved for this Realm");
-		app.IgnoreDataCaching = app.ReturnTrue;
-		return true;
-	end
-	local realmName = GetRealmName();
-	if  realmName:find("Mythic Dungeons") or
-		realmName:find("Arena Champions") or
-		realmName:find("US") or
-		realmName:find("AU") or
-		realmName:find("EU")
-		-- confirm realm tournament names elsewhere
-		-- or realmName:find("CN")
-		-- or realmName:find("TW")
-	then
-		app.print("Data will not be saved for this Realm");
-		app.IgnoreDataCaching = app.ReturnTrue;
-		return true;
-	end
-end
-app.DoModuleEvent = function(eventName)
-	-- See if any Modules have the event function defined, and call them now
-	local func
-	for _,module in pairs(app.Modules) do
-		func = module[eventName]
-		if func and type(func) == "function" then
-			app.PrintDebug(_,eventName,ATTAccountWideData)
-			func(ATTAccountWideData)
-			-- app.FunctionRunner.Run(module[eventName], ATTAccountWideData);
-		end
-	end
-end
--- Returns the Global reference by name, setting it to the 'init' value if not already existing
-local function LocalizeGlobal(globalName, init)
-	local val = _G[globalName];
-	if init and not val then
-		val = {};
-		_G[globalName] = val;
-	end
-	-- app.PrintDebug("LocalizeGlobal",globalName,val)
-	return val;
-end
--- Returns the Global reference by name, setting it to the 'init' value if not already existing
--- ONLY if no value returned from app.IgnoreDataCaching(). Otherwise the captured Global reference will be
--- forced to an alternate value to prevent being captured into the Saved Variables when unloading
-local function LocalizeGlobalIfAllowed(globalName, init)
-	if app.IgnoreDataCaching() then
-		globalName = globalName.."__NOSTORE";
-	end
-	return LocalizeGlobal(globalName, init);
-end
+local LocalizeGlobal = app.LocalizeGlobal
+local LocalizeGlobalIfAllowed = app.LocalizeGlobalIfAllowed
 local constructor = function(id, t, typeID)
 	if t then
 		if not t.g and t[1] then
@@ -19688,7 +19627,6 @@ app.Startup = function()
 
 	-- Execute the OnStartup handlers.
 	app.HandleEvent("OnStartup")
-	app.DoModuleEvent("OnStartup")
 
 	StartCoroutine("InitDataCoroutine", app.InitDataCoroutine);
 	-- app.PrintMemoryUsage("Startup:Done")

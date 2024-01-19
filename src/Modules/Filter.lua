@@ -690,12 +690,12 @@ app.AddEventHandler("OnLoad", function()
 	-- Filters defined in other Modules... maybe link them dynamically somehow instead
 	DefineToggleFilter("Event", AccountFilters, app.Modules.Events.FilterIsEventActive);
 end)
-api.OnStartup = function(AccountData)
-	ATTAccountWideData = AccountData
+app.AddEventHandler("OnStartup", function()
+	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true)
 	-- this table is set once in ATT, but contents are volatile
 	ActiveCustomCollects = app.ActiveCustomCollects;
 	CacheSettingsData();
-end
+end)
 -- Cache filter-related content from Settings here instead of checking in every function call
 app.AddEventHandler("OnRecalculate_NewSettings", function()
 	CacheSettingsData();

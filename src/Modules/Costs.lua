@@ -12,7 +12,7 @@ local rawget, ipairs, pairs, type
 -- App locals
 local SearchForFieldContainer, ArrayAppend, GetRawField
 	= app.SearchForFieldContainer, app.ArrayAppend, app.GetRawField
-local AccountWideQuests = app.EmptyTable
+local OneTimeQuests = app.EmptyTable
 
 -- Module locals
 local RecursiveGroupRequirementsFilter, GroupFilter, DGU, UpdateRunner, CheckCanBeCollected
@@ -23,7 +23,7 @@ end
 -- If a Thing which has a cost is not a quest or not saved or not an Account-Wide Quest
 local function CanBeAccountCollected(ref)
 	local questID = ref.questID
-	return not questID or not ref.saved or not AccountWideQuests[questID]
+	return not questID or not ref.saved or not OneTimeQuests[questID]
 end
 
 -- Function which returns if a Thing has a cost based on a given 'ref' Thing, which has been previously determined as a
@@ -31,7 +31,7 @@ end
 local function SubCheckCollectible(ref)
 	-- Collectibles that have a Cost but are already 'saved' should not indicate they are needed as a Cost
 	if CheckCanBeCollected and not CheckCanBeCollected(ref) then
-		-- app.PrintDebug("Saved Thing not collectible as cost",ref.hash,ref.questID,ref.saved,AccountWideQuests[ref.questID])
+		-- app.PrintDebug("Saved Thing not collectible as cost",ref.hash,ref.questID,ref.saved,OneTimeQuests[ref.questID])
 		return;
 	end
 	-- app.PrintDebug("SubCheckCollectible",ref.hash)
@@ -301,7 +301,7 @@ app.AddEventHandler("OnLoad", function()
 	UpdateRunner = api.Runner
 	CacheFilters();
 end)
-api.OnStartup = function(AccountData)
-	AccountWideQuests = AccountData.OneTimeQuests
-end
+app.AddEventHandler("OnStartup", function()
+	OneTimeQuests = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true).OneTimeQuests;
+end)
 app.AddEventHandler("OnRecalculate_NewSettings", UpdateCosts)

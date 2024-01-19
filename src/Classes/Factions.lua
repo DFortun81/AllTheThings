@@ -29,9 +29,9 @@ local GetFriendshipReputation, GetFriendshipReputationRanks, GetFactionInfoByID,
 -- Access via AllTheThings.Modules.Faction
 local api = {};
 app.Modules.Faction = api;
-api.OnStartup = function(AccountData)
-	ATTAccountWideData = AccountData
-end
+app.AddEventHandler("OnStartup", function()
+	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
+end)
 
 -- 10.0 Blizz does some weird stuff with Friendship functions now, so let's try to wrap the functionality to work with what we expected before... at least for now
 if C_GossipInfo then

@@ -2066,9 +2066,9 @@ end
 -- External API
 local api = {};
 app.Modules.Quests = api;
-api.OnStartup = function(AccountData)
-	OneTimeQuests = AccountData.OneTimeQuests
-end
+app.AddEventHandler("OnStartup", function()
+	OneTimeQuests = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true).OneTimeQuests;
+end)
 app.CollectibleAsQuest = CollectibleAsQuest;
 app.CollectibleAsQuestOrAsLocked = CollectibleAsQuestOrAsLocked;
 app.GetQuestIndicator = GetQuestIndicator;

@@ -34,6 +34,15 @@ end
 app.EmptyFunction = function() end;
 app.ReturnTrue = function() return true; end
 app.ReturnFalse = function() return false; end
+app.print = function(...)
+	print(app.L.TITLE, ...);
+end
+app.report = function(...)
+	if ... then
+		app.print(...);
+	end
+	app.print(app.Version..": "..app.L.PLEASE_REPORT_MESSAGE);
+end
 
 -- External API
 -- TODO: We will use a common API eventually.
@@ -268,6 +277,49 @@ app.SetScript = function(self, ...)
 	else
 		frame:SetScript(scriptName, nil);
 	end
+end
+
+-- Whether ATT should ignore saving data experienced during the play session
+app.IgnoreDataCaching = function()
+	-- This function currently returns false on Tournament realms. Very good. >_<
+	if IsOnTournamentRealm() then
+		app.print("Data will not be saved for this Realm");
+		app.IgnoreDataCaching = app.ReturnTrue;
+		return true;
+	end
+	local realmName = GetRealmName();
+	if  realmName:find("Mythic Dungeons") or
+		realmName:find("Arena Champions") or
+		realmName:find("US") or
+		realmName:find("AU") or
+		realmName:find("EU")
+		-- confirm realm tournament names elsewhere
+		-- or realmName:find("CN")
+		-- or realmName:find("TW")
+	then
+		app.print("Data will not be saved for this Realm");
+		app.IgnoreDataCaching = app.ReturnTrue;
+		return true;
+	end
+end
+-- Returns the Global reference by name, setting it to the 'init' value if not already existing
+app.LocalizeGlobal = function(globalName, init)
+	local val = _G[globalName];
+	if init and not val then
+		val = {};
+		_G[globalName] = val;
+	end
+	-- app.PrintDebug("LocalizeGlobal",globalName,val)
+	return val;
+end
+-- Returns the Global reference by name, setting it to the 'init' value if not already existing
+-- ONLY if no value returned from app.IgnoreDataCaching(). Otherwise the captured Global reference will be
+-- forced to an alternate value to prevent being captured into the Saved Variables when unloading
+app.LocalizeGlobalIfAllowed = function(globalName, init)
+	if app.IgnoreDataCaching() then
+		globalName = globalName.."__NOSTORE";
+	end
+	return app.LocalizeGlobal(globalName, init);
 end
 
 (function()

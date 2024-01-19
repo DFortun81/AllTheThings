@@ -5,7 +5,7 @@ local _, app = ...
 -- Global locals
 
 -- App locals
-local IsQuestFlaggedCompleted, IsSpellKnownHelper, AccountWideData
+local IsQuestFlaggedCompleted, IsSpellKnownHelper, ATTAccountWideData
 
 -- Character Unlock API Implementation
 -- Access via AllTheThings.Modules.CharacterUnlocks
@@ -17,11 +17,11 @@ local function Collectible()
 end
 local function CollectedAsQuest(t)
 	return t.saved
-		or app.Settings.AccountWide.CharacterUnlocks and AccountWideData.Quests[t.questID] and 2
+		or app.Settings.AccountWide.CharacterUnlocks and ATTAccountWideData.Quests[t.questID] and 2
 end
 local function CollectedAsSpell(t)
 	return t.saved
-		or app.Settings.AccountWide.CharacterUnlocks and AccountWideData.Spells[t.spellID] and 2
+		or app.Settings.AccountWide.CharacterUnlocks and ATTAccountWideData.Spells[t.spellID] and 2
 end
 local function SavedAsQuest(t)
 	return IsQuestFlaggedCompleted(t.questID)
@@ -31,15 +31,14 @@ local function SavedAsSpell(t)
 	if app.CurrentCharacter.Spells[spellID] then return true; end
 	if IsSpellKnownHelper(spellID) then
 		app.CurrentCharacter.Spells[spellID] = 1;
-		AccountWideData.Spells[spellID] = 1;
+		ATTAccountWideData.Spells[spellID] = 1;
 		return true;
 	end
 end
 
-api.OnStartup = function(ATTAccountWideData)
-	AccountWideData = ATTAccountWideData
-end
-
+app.AddEventHandler("OnStartup", function()
+	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
+end)
 app.AddEventHandler("OnLoad", function()
 	IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
 	IsSpellKnownHelper = app.IsSpellKnownHelper
