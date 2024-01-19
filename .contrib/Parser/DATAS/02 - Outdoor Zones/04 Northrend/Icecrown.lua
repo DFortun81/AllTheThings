@@ -1449,6 +1449,25 @@ root(ROOTS.Zones, {
 							i(43924),	-- Illskar's Greatcloak
 						},
 					}),
+					q(13406, {	-- Riding the Wavelength: The Bombardment
+						["qg"] = 32430,	-- Fringe Engineer Tezzla
+						["sourceQuest"] = 13376,	-- Total Ohmage: The Valley of Lost Hope!
+						["coord"] = { 54.0, 36.9, ICECROWN },
+						["timeline"] = { "removed 4.1.0" },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/50 Bombardment Infantry slain
+								["provider"] = { "n", 32399 },	-- Bombardment Infantry
+							}),
+							objective(2, {	-- 0/10 Bombardment Captain slain
+								["provider"] = { "n", 32410 },	-- Bombardment Captain
+							}),
+							objective(3, {	-- 0/20 Gargoyle Ambusher slain
+								["provider"] = { "n", 32188 },	-- Gargoyle Ambusher
+							}),
+						},
+					}),
 					q(13008, {	-- Scourge Tactics
 						["coord"] = { 87.0, 75.8, ICECROWN },
 						["qg"] = 30223,	-- Crusade Commander Entari
@@ -2078,6 +2097,20 @@ root(ROOTS.Zones, {
 						["timeline"] = { "removed 4.1.0" },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/50 Bombardment Infantry slain
+								["provider"] = { "n", 32399 },	-- Bombardment Infantry
+							}),
+							objective(2, {	-- 0/20 Gargoyle Ambusher slain
+								["provider"] = { "n", 32188 },	-- Gargoyle Ambusher
+							}),
+							objective(3, {	-- 0/12 Scourge War Machine slain
+								["provider"] = { "n", 32154 },	-- Scourge War Machine
+							}),
+							objective(4, {	-- 0/12 Frostbrood Sentry slain
+								["provider"] = { "n", 31721 },	-- Frostbrood Sentry
+							}),
+						},
 					}),
 					q(13085, {	-- Vaelen Has Returned
 						["coord"] = { 42.8, 25.0, ICECROWN },
