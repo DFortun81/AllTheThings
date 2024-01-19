@@ -513,20 +513,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13320, {	-- Cannot Reproduce (A)
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 29799,	-- Thassarian
-						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13315,	-- Sneak Preview
+						["description"] = "On the Skybreaker.",
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13355, {	-- Cannot Reproduce (H)
-						["races"] = HORDE_ONLY,
 						["qg"] = 29795,	-- Koltira Deathweaver
+						["sourceQuest"] = 13351,	-- Sneak Preview
 						["description"] = "On Orgrim's Hammer.",
-						["sourceQuests"] = {
-							13351,	-- Sneak Preview
-							-- TODO:: confirm below:
-							13278,	-- Coprous the Defiled
-						},
+						["races"] = HORDE_ONLY,
 					}),
 					q(13333, {	-- Capture More Dispatches
 						["qg"] = 29799,	-- Thassarian
