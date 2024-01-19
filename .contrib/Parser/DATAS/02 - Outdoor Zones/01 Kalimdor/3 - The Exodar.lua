@@ -475,10 +475,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(16766, {	-- Issca <Tabard Vendor>
 					["coord"] = { 53.8, 67.2, THE_EXODAR },
-					["races"] = ALLIANCE_ONLY,
-					-- #if AFTER WRATH
 					["sym"] = { { "sub", "common_vendor", 5193 } },	-- Rebecca Laughlin <Tabard Designer>
-					-- #endif
+					["races"] = ALLIANCE_ONLY,
 				}),
 				n(50306, {	-- Kadu <Exodar Quartermaster>
 					["coord"] = { 54.8, 36.8, THE_EXODAR },

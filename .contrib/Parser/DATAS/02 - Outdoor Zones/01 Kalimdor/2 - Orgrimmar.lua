@@ -2680,12 +2680,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(2529),	-- Zweihander
 					},
 				}),
-				-- #if NOT ANYCLASSIC
-				-- CRIEVE NOTE: I've never been a fan of Tabard Vendors, they're too all encompassing.
-				-- Not including it in Classic for now, going to use a symlink instead at some point but don't have time right now. Just want this merge to be finished!
 				n(5188, {	-- Garyl <Tabard Vendor>
 					["coord"] = { 47.6, 75.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					-- #if NOT ANYCLASSIC
+					-- TODO: This stuff is missing timeline data. At some point do that, then we can remove the conditional.
 					["groups"] = {
 						i(31779),	-- Aldor Tabard
 						i(31804),	-- Cenarion Expedition Tabard
@@ -2758,8 +2757,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
 						}),
 					},
+					-- #endif
 				}),
-				-- #endif
 				n(46555, {	-- Gunra <Justice Quartermaster>
 					["coord"] = { 48.4, 71.6, ORGRIMMAR },
 					["timeline"] = { "added 4.0.1.12984" },

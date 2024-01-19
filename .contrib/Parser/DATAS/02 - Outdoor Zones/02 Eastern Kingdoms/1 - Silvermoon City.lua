@@ -618,17 +618,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						285,    -- Scalemail Vest
 					}},
 				}),
-				--[[ Crieve has to approve but these the tabards should have timelines
 				n(16610, {	-- Kredis <Tabard Vendor>
 					["coord"] = { 78.6, 84.6, SILVERMOON_CITY },
+					["sym"] = {{"sub", "common_vendor", 5188}}, -- Garyl <Tabard Vendor>
 					["races"] = HORDE_ONLY,
-					-- #if AFTER WRATH
-					["sym"] = {
-						{"sub", "common_vendor", 5188}, -- Garyl <Tabard Vendor>
-					},
-					-- #endif
 				}),
-				--]]
 				n(16635, {	-- Lyna <Enchanting Supplies>
 					["coord"] = { 70.0, 24.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,

@@ -1548,10 +1548,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["coord"] = { 70.4, 23.2, DARNASSUS },
 					-- #endif
+					["sym"] = {{"sub", "common_vendor", 5193}},	-- Rebecca Laughlin <Tabard Designer>
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {
-						{"sub", "common_vendor", 5193},	-- Rebecca Laughlin <Tabard Designer>
-					},
 				}),
 				n(8665, {	-- Shylenai <Owl Trainer>
 					-- #if AFTER CATA

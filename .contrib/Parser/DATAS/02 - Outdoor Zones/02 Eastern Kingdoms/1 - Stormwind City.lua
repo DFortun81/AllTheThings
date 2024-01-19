@@ -5900,12 +5900,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						17192,	-- Reinforced Targe
 					}},
 				}),
-				-- #if NOT ANYCLASSIC
-				-- CRIEVE NOTE: I've never been a fan of Tabard Vendors, they're too all encompassing.
-				-- Not including it in Classic for now, going to use a symlink instead at some point but don't have time right now. Just want this merge to be finished!
 				n(5193, {	-- Rebecca Laughlin <Tabard Designer>
+					-- #if AFTER WRATH
 					["coord"] = { 64.0, 77.2, STORMWIND_CITY },
+					-- #else
+					["coord"] = { 57.2, 68.4, STORMWIND_CITY },
+					-- #endif
 					["races"] = ALLIANCE_ONLY,
+					-- #if NOT ANYCLASSIC
+					-- TODO: This stuff is missing timeline data. At some point do that, then we can remove the conditional.
 					["groups"] = {
 						i(31779),	-- Aldor Tabard
 						i(31804),	-- Cenarion Expedition Tabard
@@ -5985,8 +5988,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(35221),	-- Tabard of the Shattered Sun
 					},
+					-- #endif
 				}),
-				-- #endif
 				n(277, {	-- Roberto Pupellyverbos <Merlot Connoisseur>
 					-- #if AFTER WRATH
 					["coord"] = { 59.4, 77.2, STORMWIND_CITY },
