@@ -1074,14 +1074,19 @@ i(205224);	-- Just a Rock
 i(207460);	-- Dreadsquall Eggshell Fragment
 i(208201);	-- Paper Scraps
 i(212646);	-- Chipped Armor Plate
+i(213035);	-- Crusty Dracthyr Brush
+i(213042);	-- Deteriorated Djaradin Banner
+i(213031);	-- Misshapen Drakonid Goblet
 i(212649);	-- Quilted Tent Scrap
 i(212763);	-- Spoiled Honeywine
 i(212772);	-- False Silver Coin
 i(212765);	-- Fish Bones
 i(212764);	-- Fishing Net Fragment
+i(213044);	-- Frayed Fang Amulet
 i(212761);	-- Pouch of Coins
 i(212688);	-- Salt-dried Roots
 i(212774);	-- Sharpened Shalewing Bones
+i(213045);	-- Snapped Djaradin Necklace
 i(213039);	-- Thin Drakonid Spoon
 i(213216);	-- Strip of Notched Leather
 i(213362);	-- Ancient Drakonid Candy
