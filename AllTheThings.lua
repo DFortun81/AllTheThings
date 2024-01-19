@@ -16495,7 +16495,7 @@ customWindowUpdates["RaidAssistant"] = function(self)
 			self:SetData(raidassistant);
 
 			-- Setup Event Handlers and register for events
-			self:SetScript("OnEvent", function(self, e, ...) Callback(self.Update, self, true); end);
+			self:SetScript("OnEvent", function(self, e, ...) DelayedCallback(self.Update, 0.5, self, true); end);
 			self:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
 			self:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
 			self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
