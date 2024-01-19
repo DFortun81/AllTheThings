@@ -1770,7 +1770,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(486, {	-- Ursal the Mauler
 					["qg"] = 2078,	-- Athridas Bearmantle
-					["sourceQuest"] = 775,	-- The Relics of Wakening
+					["sourceQuest"] = 483,	-- The Relics of Wakening
 					-- #if AFTER CATA
 					["coord"] = { 55.6, 51.8, TELDRASSIL },
 					-- #else

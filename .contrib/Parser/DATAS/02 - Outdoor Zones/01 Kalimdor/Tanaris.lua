@@ -3870,6 +3870,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(4507, {	-- Pawn Captures Queen
 					["qg"] = 5594,	-- Alchemist Pestlezugg <Alchemy Supplies>
+					["sourceQuest"] = 4496,	-- Bungle in the Jungle
 					["coord"] = { 50.9, 27.0, TANARIS },
 					["timeline"] = { "removed 4.0.3" },
 					["maps"] = { UNGORO_CRATER },
