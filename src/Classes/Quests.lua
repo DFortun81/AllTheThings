@@ -646,6 +646,7 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 	tinsert(info, coord and ("coord:"..coord) or "coord:??");
 
 	tinsert(info, "ver:"..app.Version);
+	tinsert(info, "build:"..app.GameBuildVersion);
 	tinsert(info, "```");	-- discord fancy box end
 	return info;
 end
