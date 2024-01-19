@@ -597,7 +597,9 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 							["rank"] = 9,
 						}),
 						i(21302, {	-- Handbook of Deadly Poison V
+							-- #if BEFORE 3.0.2
 							["spellID"] = 25347,	-- Deadly Poison V
+							-- #endif
 						}),
 						i(21303, {	-- Handbook of Feint V
 							["spellID"] = 25302,	-- Feint V
@@ -606,8 +608,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					})),
 					cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
 						i(21293, {	-- Tablet of Grace of Air Totem III
+							-- #if BEFORE 3.0.1
 							["spellID"] = 25359,	-- Grace of Air Totem III
 							["rank"] = 3,
+							-- #endif
 						}),
 						i(21291, {	-- Tablet of Healing Wave X
 							["spellID"] = 25357,	-- Healing Wave X
