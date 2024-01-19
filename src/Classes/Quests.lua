@@ -32,7 +32,6 @@ local RepeatableQuestIcon = app.asset("Interface_Questd");
 local OneTimeQuests
 
 -- Quest Name Lib
-local RequestLoadQuestByID;
 local GetTitleForQuestID, GetQuestTimeLeftMinutes;
 local C_QuestLog_GetTitleForQuestID = C_QuestLog.GetTitleForQuestID or C_QuestLog.GetQuestInfo;
 if C_TaskQuest then
@@ -47,38 +46,9 @@ else
 	GetQuestTimeLeftMinutes = function(questID) end;
 	GetTitleForQuestID = C_QuestLog_GetTitleForQuestID;
 end
-local QuestRetries = setmetatable({}, { __index = function(t, questID)
-	RequestLoadQuestByID(questID);
-	rawset(t, questID, 0);
-	return 0;
-end });
-local ResetQuestName
-local QuestNameFromID
-if app.IsClassic then
-	QuestNameFromID = setmetatable(L.QUEST_NAMES or {}, { __index = function(t, questID)
-		local title = GetTitleForQuestID(questID);
-		if IsRetrieving(title) then
-			local retries = QuestRetries[questID];
-			if retries > 120 then
-				title = "Quest #" .. questID .. "*";
-				rawset(QuestRetries, questID, nil);
-				rawset(t, questID, title);
-				return title;
-			else
-				rawset(QuestRetries, questID, retries + 1);
-			end
-		else
-			rawset(QuestRetries, questID, nil);
-			rawset(t, questID, title);
-			return title;
-		end
-	end });
-	ResetQuestName = function(questID)
-		rawset(QuestNameFromID, questID, nil);
-	end
-end
 
--- If the Request Load Quest function is available...
+-- Load Quest Lib
+local RequestLoadQuestByID, ResetQuestName, QuestNameFromID;
 local C_QuestLog_RequestLoadQuestByID = C_QuestLog.RequestLoadQuestByID;
 if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA_LOAD_RESULT") then
 	local QuestsRequested = {};
@@ -153,6 +123,32 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 	end
 
 else
+	local QuestRetries = setmetatable({}, { __index = function(t, questID)
+		RequestLoadQuestByID(questID);
+		rawset(t, questID, 0);
+		return 0;
+	end });
+	QuestNameFromID = setmetatable(L.QUEST_NAMES or {}, { __index = function(t, questID)
+		local title = GetTitleForQuestID(questID);
+		if IsRetrieving(title) then
+			local retries = QuestRetries[questID];
+			if retries > 120 then
+				title = "Quest #" .. questID .. "*";
+				rawset(QuestRetries, questID, nil);
+				rawset(t, questID, title);
+				return title;
+			else
+				rawset(QuestRetries, questID, retries + 1);
+			end
+		else
+			rawset(QuestRetries, questID, nil);
+			rawset(t, questID, title);
+			return title;
+		end
+	end });
+	ResetQuestName = function(questID)
+		rawset(QuestNameFromID, questID, nil);
+	end
 	RequestLoadQuestByID = function(questID)
 		-- Function not available in this environment. :(
 	end
@@ -181,6 +177,7 @@ else
 end
 local C_QuestLog_IsComplete = C_QuestLog.IsComplete;
 if not C_QuestLog_IsComplete then
+	local GetQuestLogTitle = GetQuestLogTitle;
 	C_QuestLog_IsComplete = function(questID)
 		local questLogIndex = GetQuestLogIndexByID(questID);
 		if questLogIndex and questLogIndex > 0 then
@@ -196,101 +193,7 @@ local PrintQuestInfo
 -- DirtyQuests became a table instead of an array like before, so it broke a lot of things... I'll make one for each version to keep it working
 local ClassicDirtyQuests, RetailDirtyQuests = {}, {}
 local CollectibleAsQuest, IsQuestFlaggedCompletedForObject;
-local IgnoreErrorQuests = setmetatable({
-	--[[ -- Why are all these set to be ignored for reporting?
-	[1476]=1,	-- Hearts of the Pure (Horde Pre-req for the Undercity Succubus Binding quest)
-	[1474]=1,	-- The Binding (Succubus) [Undercity]
-	[1508]=1,	-- Blind Cazul (Horde Pre-req for the Orgrimmar Succubus Binding quest)
-	[1509]=1,	-- News of Dogran (1/2) (Horde Pre-req for the Orgrimmar Succubus Binding quest)
-	[1510]=1,	-- News of Dogran (2/2) (Horde Pre-req for the Orgrimmar Succubus Binding quest)
-	[1511]=1,	-- Ken'zigla's Draught (Horde Pre-req for the Orgrimmar Succubus Binding quest)
-	[1515]=1,	-- Dogran's Captivity (Horde Pre-req for the Orgrimmar Succubus Binding quest)
-	[1512]=1,	-- Love's Gift (Horde Pre-req for the Orgrimmar Succubus Binding quest)
-	[1513]=1,	-- The Binding (Succubus) [Orgrimmar]
-	[1738]=1,	-- Heartswood (Alliance Pre-req for the Stormwind City Succubus Binding quest)
-	[1739]=1,	-- The Binding (Succubus) [Stormwind City]
-	[1516]=1, 	-- Call of Earth (1/3 Durotar)
-	[1519]=1, 	-- Call of Earth (1/3 Mulgore)
-	[9449]=1, 	-- Call of Earth (1/3 Ammen Vale)
-	[555]=1,	-- Soothing Turtle Bisque (A)
-	[7321]=1,	-- Soothing Turtle Bisque (H)
-	[3630]=1,	-- Gnome Engineering [A]
-	[3632]=1,	-- Gnome Engineering [A]
-	[3634]=1,	-- Gnome Engineering [H]
-	[3635]=1,	-- Gnome Engineering [H]
-	[3637]=1,	-- Gnome Engineering [H]
-	[3526]=1,	-- Goblin Engineering [H]
-	[3629]=1,	-- Goblin Engineering [A]
-	[3633]=1,	-- Goblin Engineering [H]
-	[4181]=1,	-- Goblin Engineering [A]
-	[5517]=1,	-- Chromatic Mantle of the Dawn
-	[5521]=1,	-- Chromatic Mantle of the Dawn
-	[5524]=1,	-- Chromatic Mantle of the Dawn
-	[5504]=1,	-- Mantles of the Dawn
-	[5507]=1,	-- Mantles of the Dawn
-	[5513]=1,	-- Mantles of the Dawn
-	[7170]=1,	-- Earned Reverence (Alliance)
-	[7165]=1,	-- Earned Reverence (Horde)
-	[7171]=1,	-- Legendary Heroes (Alliance)
-	[7166]=1,	-- Legendary Heroes (Horde)
-	[7168]=1,	-- Rise and Be Recognized (Alliance)
-	[7163]=1,	-- Rise and Be Recognized (Horde)
-	[7172]=1,	-- The Eye of Command (Alliance)
-	[7167]=1,	-- The Eye of Command (Horde)
-	[7164]=1,	-- Honored Amongst the Clan
-	[7169]=1,	-- Honored Amongst the Guard
-	[8870]=1,	-- The Lunar Festival
-	[8871]=1,	-- The Lunar Festival
-	[8872]=1,	-- The Lunar Festival
-	[8873]=1,	-- The Lunar Festival
-	[8874]=1,	-- The Lunar Festival
-	[8875]=1,	-- The Lunar Festival
-	[8700]=1,	-- Band of Unending Life
-	[8692]=1,	-- Cloak of Unending Life
-	[8708]=1,	-- Mace of Unending Life
-	[8704]=1,	-- Signet of the Unseen Path
-	[8696]=1,	-- Cloak of the Unseen Path
-	[8712]=1,	-- Scythe of the Unseen Path
-	[8699]=1,	-- Band of Vaulted Secrets
-	[8691]=1,	-- Drape of Vaulted Secrets
-	[8707]=1,	-- Blade of Vaulted Secrets
-	[8703]=1,	-- Ring of Eternal Justice
-	[8695]=1,	-- Cape of Eternal Justice
-	[8711]=1,	-- Blade of Eternal Justice
-	[8697]=1,	-- Ring of Infinite Wisdom
-	[8689]=1,	-- Shroud of Infinite Wisdom
-	[8705]=1,	-- Gavel of Infinite Wisdom
-	[8701]=1,	-- Band of Veiled Shadows
-	[8693]=1,	-- Cloak of Veiled Shadows
-	[8709]=1,	-- Dagger of Veiled Shadows
-	[8698]=1,	-- Ring of the Gathering Storm
-	[8690]=1,	-- Cloak of the Gathering Storm
-	[8706]=1,	-- Hammer of the Gathering Storm
-	[8702]=1,	-- Ring of Unspoken Names
-	[8694]=1,	-- Shroud of Unspoken Names
-	[8710]=1,	-- Kris of Unspoken Names
-	[8556]=1,	-- Signet of Unyielding Strength
-	[8557]=1,	-- Drape of Unyielding Strength
-	[8558]=1,	-- Sickle of Unyielding Strength
-	[9520]=1,	-- Diabolical Plans [Alliance]
-	[9535]=1,	-- Diabolical Plans [Horde]
-	[9522]=1,	-- Never Again! [Alliance]
-	[9536]=1,	-- Never Again! [Horde]
-	[10371]=1,	-- Yorus Barleybrew (Draenei)
-	[10621]=1,	-- Illidari Bane-Shard (A)
-	[10623]=1,	-- Illidari Bane-Shard (H)
-	[10759]=1,	-- Find the Deserter (A)
-	[10761]=1,	-- Find the Deserter (H)
-	[11185]=1,	-- The Apothecary's Letter
-	[11186]=1,	-- Signs of Treachery?
-	[11201]=1,	-- The Grimtotem Plot
-	[11123]=1,	-- Inspecting the Ruins [Alliance]
-	[11124]=1,	-- Inspecting the Ruins [Horde]
-	[11150]=1,	-- Raze Direhorn Post! [Alliance]
-	[11205]=1,	-- Raze Direhorn Post! [Horde]
-	[11215]=1,	-- Help Mudsprocket
-	--]]--
-}, {
+local IgnoreErrorQuests = setmetatable({}, {
 	__index = function(t, key)
 		setmetatable(t, nil);	-- Wipe out the metatable (so this only happens once)
 		local userignored = ATTAccountWideData.IGNORE_QUEST_PRINT
