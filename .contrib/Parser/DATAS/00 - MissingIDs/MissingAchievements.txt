@@ -304,7 +304,6 @@ ach(19391),	-- [DNT] Hidden - Fyr'alath - Heroic/Mythic Marker
 10.2.5.52206
 ach(19400),	-- Support Your Local Artisans
 ach(19508),	-- Love Language Expert
-ach(19632),	-- Citadel Sortie Advanced: Gold
 10.2.5.52330
 ach(19696),	-- Hearthstone Anniversary Mail
 10.2.5.52432

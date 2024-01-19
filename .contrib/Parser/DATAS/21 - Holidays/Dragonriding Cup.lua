@@ -2464,7 +2464,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
 						19587,	-- Blackriver Burble Advanced: Gold
-						19631,	-- Citadel Sortie Advanced: Gold
+						19632,	-- Citadel Sortie Advanced: Gold
 						19670,	-- Coldarra Climb Advanced: Gold
 						19614,	-- Crystalsong Crisis Advanced: Gold
 						19623,	-- Dragonblight Dragon Flight Advanced: Gold
@@ -2615,7 +2615,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					["g"] = {
 						ach(19630),	-- Citadel Sortie Advanced: Bronze
 						ach(19631),	-- Citadel Sortie Advanced: Silver
-						ach(19631),	-- Citadel Sortie Advanced: Gold
+						ach(19632),	-- Citadel Sortie Advanced: Gold
 					},
 				}),
 				dragonridingrace(78501, {	-- Citadel Sortie - Reverse
