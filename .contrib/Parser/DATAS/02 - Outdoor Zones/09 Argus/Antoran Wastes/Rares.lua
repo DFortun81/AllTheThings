@@ -137,6 +137,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["g"] = {
 					i(212778, {	-- Grimoire of the Vile Tyrant (CI!)
 						["timeline"] = { ADDED_10_2_5 },
+						["description"] = "The grimoire only drops when Radix is in stasis and you have to rightclick to activate him.\nIf Radix is already active and has no loot, not even greys, then you cant loot the grimoire for this day.",
 					}),
 				},
 			}),
