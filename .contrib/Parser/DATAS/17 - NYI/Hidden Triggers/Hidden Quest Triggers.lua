@@ -138,7 +138,28 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(24644),	-- Troll Introduction Complete
 		q(26741),	-- REUSE - Northern Stranglethorn - triggered after completing "The Hunt" (questID 26340)
 		q(236),		-- Fueling the Demolishers (auto-completed removed quest)
-
+		q(14436, {	-- Dwarven Digging [Mulgore]
+			--[[
+			["qg"] = 36644,	-- Ahmo Thunderhorn
+			["coord"] = { 47.7, 59.6, MULGORE },
+			["timeline"] = { "added 3.0.1", "removed 4.0.3" },
+			["races"] = HORDE_ONLY,
+			["lvl"] = 6,
+			]]--
+		}),
+		q(14437, {	-- Rites of the Earthmother (2/3) [Mulgore]
+			-- CRIEVE NOTE: Not sure if Darkal wants this information or not.
+			--[[
+			["providers"] = {
+				{ "n", 2981 },	-- Chief Hawkwind
+				{ "i", 4783 },	-- Totem of Hawkwind
+			},
+			["sourceQuest"] = 757,	-- Rite of Strength
+			["coord"] = { 44.2, 76.1, MULGORE },
+			["timeline"] = { "added 3.0.1", "removed 4.0.3.13277" },
+			["races"] = HORDE_ONLY,
+			]]--
+		}),
 		-------------------
 		---   OUTLAND   ---
 		-------------------

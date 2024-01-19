@@ -425,16 +425,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { "removed 4.0.3" },
 							["races"] = HORDE_ONLY,
 						}),
-						q(14437, {	-- Rites of the Earthmother (2/3)
-							["providers"] = {
-								{ "n", 2981 },	-- Chief Hawkwind
-								{ "i", 4783 },	-- Totem of Hawkwind
-							},
-							["sourceQuest"] = 757,	-- Rite of Strength
-							["coord"] = { 44.2, 76.1, MULGORE },
-							["timeline"] = { "added 4.0.1", "removed 4.0.3.13277" },
-							["races"] = HORDE_ONLY,
-						}),
 						q(763, {	-- Rites of the Earthmother (2/3)
 							["providers"] = {
 								{ "n", 2981 },	-- Chief Hawkwind
@@ -442,7 +432,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 757,	-- Rite of Strength
 							["coord"] = { 44.2, 76.1, MULGORE },
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { "removed 4.0.3" },
 							["races"] = HORDE_ONLY,
 						}),
 						q(3093, {	-- Rune-Inscribed Note
@@ -758,34 +748,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(14436, {	-- Dwarven Digging
-					["qg"] = 36644,	-- Ahmo Thunderhorn
-					["coord"] = { 47.7, 59.6, MULGORE },
-					["timeline"] = { "added 4.0.1", "removed 4.0.3" },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 6,
-					["groups"] = {
-						objective(1, {	-- 0/6 Broken Tools
-							["provider"] = { "i", 4703 },	-- Broken Tools
-							["cost"] = {{ "i", 4702, 1 }},	-- Prospector's Pick
-							["coord"] = { 34, 46, MULGORE },
-							["crs"] = {
-								2990,	-- Bael'dun Appraiser
-								2989,	-- Bael'dun Digger
-							},
-						}),
-						i(4969, {	-- Fortified Bindings
-							["timeline"] = { "removed 4.0.3" },
-						}),
-						i(4970, {	-- Rough-hewn Kodo Leggings
-							["timeline"] = { "removed 4.0.3" },
-						}),
-					},
-				}),
 				q(746, {	-- Dwarven Digging
 					["qg"] = 2993,	-- Baine Bloodhoof
 					["coord"] = { 47.5, 60.2, MULGORE },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
 					["groups"] = {
