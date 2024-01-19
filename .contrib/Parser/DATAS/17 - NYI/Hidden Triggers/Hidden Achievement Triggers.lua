@@ -2856,5 +2856,93 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(18555),	-- <Hidden> Completed Murloc based Tasks
 		--10.1.5.50006
 		ach(18648),	-- <DNT> Eons Fringe - Multitude of Tasks - Completed Twice (Character)
+		--10.2.0
+		ach(19216),	-- <DNT> Dream Wardens Rank 1 (Account)
+		ach(19217),	-- <DNT> Dream Wardens Rank 2 (Account)
+		ach(19218),	-- <DNT> Dream Wardens Rank 3 (Account)
+		ach(19219),	-- <DNT> Dream Wardens Rank 4 (Account)
+		ach(19220),	-- <DNT> Dream Wardens Rank 5 (Account)
+		ach(19221),	-- <DNT> Dream Wardens Rank 6 (Account)
+		ach(19222),	-- <DNT> Dream Wardens Rank 7 (Account)
+		ach(19223),	-- <DNT> Dream Wardens Rank 8 (Account)
+		ach(19224),	-- <DNT> Dream Wardens Rank 9 (Account)
+		ach(19225),	-- <DNT> Dream Wardens Rank 10 (Account)
+		ach(19226),	-- <DNT> Dream Wardens Rank 11 (Account)
+		ach(19227),	-- <DNT> Dream Wardens Rank 12 (Account)
+		ach(19228),	-- <DNT> Dream Wardens Rank 13 (Account)
+		ach(19229),	-- <DNT> Dream Wardens Rank 14 (Account)
+		ach(19231),	-- <DNT> Dream Wardens Rank 16 (Account)
+		ach(19232),	-- <DNT> Dream Wardens Rank 17 (Account)
+		ach(19233),	-- <DNT> Dream Wardens Rank 18 (Account)
+		ach(19234),	-- <DNT> Dream Wardens Rank 19 (Account)
+		ach(19256),	-- <DNT> Dream Wardens Rank 1 (Character)
+		ach(19257),	-- <DNT> Dream Wardens Rank 2 (Character)
+		ach(19258),	-- <DNT> Dream Wardens Rank 3 (Character)
+		ach(19259),	-- <DNT> Dream Wardens Rank 4 (Character)
+		ach(19260),	-- <DNT> Dream Wardens Rank 5 (Character)
+		ach(19261),	-- <DNT> Dream Wardens Rank 6 (Character)
+		ach(19262),	-- <DNT> Dream Wardens Rank 7 (Character)
+		ach(19263),	-- <DNT> Dream Wardens Rank 8 (Character)
+		ach(19264),	-- <DNT> Dream Wardens Rank 9 (Character)
+		ach(19265),	-- <DNT> Dream Wardens Rank 10 (Character)
+		ach(19266),	-- <DNT> Dream Wardens Rank 11 (Character)
+		ach(19267),	-- <DNT> Dream Wardens Rank 12 (Character)
+		ach(19268),	-- <DNT> Dream Wardens Rank 13 (Character)
+		ach(19269),	-- <DNT> Dream Wardens Rank 14 (Character)
+		ach(19270),	-- <DNT> Dream Wardens Rank 15 (Character)
+		ach(19271),	-- <DNT> Dream Wardens Rank 16 (Character)
+		ach(19272),	-- <DNT> Dream Wardens Rank 17 (Character)
+		ach(19273),	-- <DNT> Dream Wardens Rank 18 (Character)
+		ach(19274),	-- <DNT> Dream Wardens Rank 19 (Character)
+		ach(19275),	-- <DNT> Dream Wardens Rank 20 (Character)
+		ach(19348),	-- Gnarlroot kills (Raid Finder Amirdrassil, the Dream's Hope)
+		ach(19352),	-- Igira the Cruel kills (Raid Finder Amirdrassil, the Dream's Hope)
+		ach(19353),	-- Volcoross kills (Raid Finder Amirdrassil, the Dream's Hope)
+		ach(19354),	-- Council of Dreams kills (Raid Finder Amirdrassil, the Dream's Hope)
+		ach(19355),	-- Larodar, Keeper of the Flame kills (Raid Finder Amirdrassil, the Dream's Hope)
+		ach(19356),	-- Nymue, Warden of the Cycle kills (Raid Finder Amirdrassil, the Dream's Hope)
+		ach(19357),	-- Smolderon kills (Raid Finder Amirdrassil, the Dream's Hope)
+		ach(19358),	-- Tindral Sageswift, Seer of the Flame kills (Raid Finder Amirdrassil, the Dream's Hope)
+		ach(19359),	-- Fyrakk the Blazing kills (Raid Finder Amirdrassil, the Dream's Hope)
+		ach(19360),	-- Gnarlroot kills (Normal Amirdrassil, the Dream's Hope)
+		ach(19361),	-- Igira the Cruel kills (Normal Amirdrassil, the Dream's Hope)
+		ach(19362),	-- Volcoross kills (Normal Amirdrassil, the Dream's Hope)
+		ach(19363),	-- Council of Dreams kills (Normal Amirdrassil, the Dream's Hope)
+		ach(19364),	-- Larodar, Keeper of the Flame kills (Normal Amirdrassil, the Dream's Hope)
+		ach(19365),	-- Nymue, Weaver of the Cycle kills (Normal Amirdrassil, the Dream's Hope)
+		ach(19366),	-- Smolderon kills (Normal Amirdrassil, the Dream's Hope)
+		ach(19367),	-- Tindral Sageswift, Seer of the Flame kills (Normal Amirdrassil, the Dream's Hope)
+		ach(19368),	-- Fyrakk the Blazing kills (Normal Amirdrassil, the Dream's Hope)
+		ach(19369),	-- Gnarlroot kills (Heroic Amirdrassil, the Dream's Hope)
+		ach(19370),	-- Igira the Cruel kills (Heroic Amirdrassil, the Dream's Hope)
+		ach(19371),	-- Volcoross kills (Heroic Amirdrassil, the Dream's Hope)
+		ach(19372),	-- Council of Dreams kills (Heroic Amirdrassil, the Dream's Hope)
+		ach(19373),	-- Larodar, Keeper of the Flame kills (Heroic Amirdrassil, the Dream's Hope)
+		ach(19374),	-- Nymue, Weaver of the Cycle kills (Heroic Amirdrassil, the Dream's Hope)
+		ach(19375),	-- Smolderon kills (Heroic Amirdrassil, the Dream's Hope)
+		ach(19376),	-- Tindral Sageswift, Seer of the Flame kills (Heroic Amirdrassil, the Dream's Hope)
+		ach(19377),	-- Fyrakk the Blazing kills (Heroic Amirdrassil, the Dream's Hope)
+		ach(19378),	-- Gnarlroot kills (Mythic Amirdrassil, the Dream's Hope)
+		ach(19379),	-- Igira the Cruel kills (Mythic Amirdrassil, the Dream's Hope)
+		ach(19380),	-- Volcoross kills (Mythic Amirdrassil, the Dream's Hope)
+		ach(19381),	-- Council of Dreams kills (Mythic Amirdrassil, the Dream's Hope)
+		ach(19382),	-- Larodar, Keeper of the Flame kills (Mythic Amirdrassil, the Dream's Hope)
+		ach(19383),	-- Nymue, Weaver of the Cycle kills (Mythic Amirdrassil, the Dream's Hope)
+		ach(19384),	-- Smolderon kills (Mythic Amirdrassil, the Dream's Hope)
+		ach(19385),	-- Tindral Sageswift, Seer of the Flame kills (Mythic Amirdrassil, the Dream's Hope)
+		ach(19386),	-- Fyrakk the Blazing kills (Mythic Amirdrassil, the Dream's Hope)
+		ach(19395),	-- <Hidden> Account has completed 10.2 Upgrade System tutorial quests
+		ach(19421),	-- Whelpling's Dreaming Crests earned
+		ach(19422),	-- Drake's Dreaming Crests earned
+		ach(19423),	-- Wyrm's Dreaming Crests earned
+		ach(19424),	-- Aspect's Dreaming Crests earned
+		ach(19447),	-- <DNT> Eggs in Abundance Completed
+		ach(19451),	-- <DNT> Fandral's Flamescythe Acquisition
+		ach(18861),	-- <Hidden> ACCOUNT: Renown Campaign Complete - Tyr 4
+		ach(18933),	-- <Hidden> 10.2 Tyr Campaign - Ch 04 - Mail Quest Push - Valunei's Letter (AAO)
+		ach(19391),	-- [DNT] Hidden - Fyr'alath - Heroic/Mythic Marker
+		--10.2.5
+		ach(19696),	-- Hearthstone Anniversary Mail
+		ach(19784),	-- Hearthstone Game Wins
 	}),
 });

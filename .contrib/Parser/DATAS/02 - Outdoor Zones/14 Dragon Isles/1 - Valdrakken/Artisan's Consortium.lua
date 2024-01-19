@@ -6,6 +6,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		faction(FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, {
 			n(ACHIEVEMENTS, {
 				ach(16539),	-- In High Esteem
+				ach(19400, {	-- Support Your Local Artisans
+					["timeline"] = { ADDED_10_2_5 },
+				}),
 			}),
 			n(VENDORS, {
 				n(194057, {	-- Rabul
@@ -18,7 +21,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									i(190454),	-- Depleted Primal Chaos
 								},
 							})),
-							i(199108, {		-- Bag of Discount Goods 
+							i(199108, {		-- Bag of Discount Goods
 								["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 },	-- Not sure when removed
 								["g"] = {
 									i(33012),	-- Terokkar Lilac

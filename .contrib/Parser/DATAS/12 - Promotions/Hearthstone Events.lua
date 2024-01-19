@@ -55,6 +55,11 @@ root(ROOTS.Promotions, {
 		-- Work in progress
 		["timeline"] = { ADDED_10_2_5 },
 		["groups"] = {
+			ach(19866),		-- Hearthstoned: Fiery Edition
+			ach(20033, {	-- Hearthstone Beginner
+				i(211946),	-- Hearthstone Game Table (TOY!)
+			}),
+			ach(19724),		-- Hearthstone Card Collection
 			q(79184, {	-- It's Hearthstone's Anniversary!
 				["provider"] = { "i", 212154 },	-- Hearthstone Invitation Letter
 				["groups"] = {
@@ -65,7 +70,7 @@ root(ROOTS.Promotions, {
 			--i(),	-- Compass Rose (MOUNT!)
 			--i(212338),   -- DNT Hearthstone Loot Hat (Needs Art)	-- Doesnt load ingame
 			i(163186),	-- Fiery Hearthsteed (MOUNT!)
-			i(212154),   -- Hearthstone Invitation Letter
+			i(212154),	-- Hearthstone Invitation Letter
 			i(211965),   -- Hearthstone Wild Card
 			--pets(),	-- Sarge (PET!))
 			i(212337),   -- Stone of the Hearth (TOY!)
@@ -73,11 +78,6 @@ root(ROOTS.Promotions, {
 			i(212607),   -- Reno's Lucky Hat
 			i(212644),   -- Taverner's Belt
 			i(212336),   -- The Tavern's Tabard
-
-			ach(19866),	-- Hearthstoned: Fiery Edition
-			ach(20033, {	-- Hearthstone Beginner
-				i(211946),	-- Hearthstone Game Table (TOY!)
-			}),
 		},
 	}),
 });

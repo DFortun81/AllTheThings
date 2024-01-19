@@ -242,6 +242,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { "added 3.0.1" },
 			["maps"] = { NORTHREND_DALARAN },
 		}),
+		ach(19508, { -- Love Language Expert
+			["timeline"] = { ADDED_10_2_5 },
+		}),
 		ach(1703, {	-- My Love is Like a Red, Red Rose
 			["providers"] = {
 				{ "i", 22206 },	-- Bouquet of Red Roses

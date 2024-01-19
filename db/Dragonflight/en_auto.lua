@@ -99,7 +99,6 @@ local keys = {
 [3064]="<NYI> <TXT> Pirate Hats",
 [3111]="<UNUSED> [DEPRECATED]",
 [3241]="<NYI> <TXT><redux> Dreadmist Peak",
-[3366]="OLD The Glowing Shard",
 [3383]="<UNUSED>",
 [3384]="<UNUSED>",
 [3401]="<UNUSED>",
