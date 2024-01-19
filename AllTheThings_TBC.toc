@@ -97,6 +97,7 @@ src\UI\Flight Paths.lua
 src\UI\Hidden Achievement Triggers.lua
 src\UI\Hidden Quest Triggers.lua
 src\UI\Illusions.lua
+src\UI\Locked.lua
 src\UI\Maps.lua
 src\UI\Mini List.lua
 src\UI\Missing Quests.lua
