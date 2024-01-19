@@ -783,7 +783,7 @@ root(ROOTS.Zones, {
 									{ "o", 192081 },	-- Horn Fragment
 									{ "o", 192082 },	-- Horn Fragment
 								},
-								["coords"] = { 72.1, 49.5, THE_STORM_PEAKS },
+								["coord"] = { 72.1, 49.5, THE_STORM_PEAKS },
 							}),
 						},
 					}),
