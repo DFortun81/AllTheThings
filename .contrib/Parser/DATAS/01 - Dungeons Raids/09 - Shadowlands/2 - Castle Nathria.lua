@@ -490,20 +490,6 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 					},
 				}),
 			}),
-			n(DROPS, {
-				i(179358, {	-- Remornia
-					["crs"] = {
-						167406,	-- Sire Denathrius
-						168156,	-- Remornia
-					},
-				}),
-				i(183395, {	-- Will of Remornia (PET!)
-					["crs"] = {
-						167406,	-- Sire Denathrius
-						168156,	-- Remornia
-					},
-				}),
-			}),
 			n(LEGENDARIES, {
 				e(2429, {	-- Huntsman Altimor
 					["crs"] = {
@@ -820,9 +806,23 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 						i(184030),	-- Dreadfire Vessel
 						i(184029),	-- Manabound Mirror
 						i(184031),	-- Sanguine Vintage
+						i(179358),	-- Remornia
+						i(183395),	-- Will of Remornia (PET!)
 					},
 				}),
 			})),
+			d(NORMAL_PLUS_RAID, {
+				e(2424, {	-- Sire Denathrius
+					["crs"] = {
+						167406,	-- Sire Denathrius
+						168156,	-- Remornia
+					},
+					["g"] = {
+						i(179358),	-- Remornia
+						i(183395),	-- Will of Remornia (PET!)
+					},
+				}),
+			}),
 			d(NORMAL_RAID, {
 				n(QUESTS, {
 					q(62054, {	-- Castle Nathria: Getting a Head [Normal]
