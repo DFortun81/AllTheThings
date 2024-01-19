@@ -499,6 +499,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(REWARDS, {
+				["maps"] = {
+					OHNAHRAN_PLAINS,
+					THALDRASZUS,
+					THE_AZURE_SPAN,
+					THE_WAKING_SHORES,
+				},
 				-- #if after 10.0.7
 				["sym"] = {{"select","mapID",THE_FORBIDDEN_REACH},{"pop"},
 							{"where","headerID",ZONE_REWARDS},{"pop"},
@@ -506,23 +512,23 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				},
 				-- #endif
 				["g"] = {
-					i(200183),	-- Echo of the Cave (PET!)
-					i(200260),	-- Echo of the Depths (PET!)
-					i(200263),	-- Echo of the Heights (PET!)
-					i(200255),	-- Echo of the Inferno (PET!)
-					i(200675),	-- Elemental Overflow Cluster
+						i(200183),	-- Echo of the Cave (PET!)
+						i(200260),	-- Echo of the Depths (PET!)
+						i(200263),	-- Echo of the Heights (PET!)
+						i(200255),	-- Echo of the Inferno (PET!)
+						i(200675),	-- Elemental Overflow Cluster
 
-					-- Enchanting knowledge drops (one-time)
-					i(201356),	-- Glimmer of Fire
-					i(201357),	-- Glimmer of Frost
-					i(201358),	-- Glimmer of Air
-					i(201359),	-- Glimmer of Earth
+						-- Enchanting knowledge drops (one-time)
+						i(201356),	-- Glimmer of Fire
+						i(201357),	-- Glimmer of Frost
+						i(201358),	-- Glimmer of Air
+						i(201359),	-- Glimmer of Earth
 
-					i(199749),	-- Primal Air Core
-					i(199691),	-- Primal Earth Core
-					i(199750),	-- Primal Fire Core
-					i(199748),	-- Primal Water Core
-					currency(2118),	-- Elemental Overflow
+						i(199749),	-- Primal Air Core
+						i(199691),	-- Primal Earth Core
+						i(199750),	-- Primal Fire Core
+						i(199748),	-- Primal Water Core
+						currency(2118),	-- Elemental Overflow
 				},
 			}),
 			n(VENDORS, {

@@ -139,16 +139,21 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 		})),
 		n(REWARDS, {
-			i(DREAMSURGE_COALESCENCE, {
-				["description"] = "10 per WQ, 25 per rare kill in zone where Dreamsurge is active",
-			}),
-			i(208153, {	-- Dreamsurge Chrysalis (10.1.7)
-				["timeline"] = { ADDED_10_1_7, REMOVED_10_2_0 },
-			}),
-			i(DREAMSURGE_CHRYSALIS),
-			i(192807, {	-- Renewed Magmammoth (MOUNT!)
-				["cost"] = {{ "i", 209419, 20 }},	-- Charred Elemental Remains
-			}),
+			["maps"] = {
+				EMERALD_DREAM,
+			},
+			["groups"] = {
+				i(DREAMSURGE_COALESCENCE, {
+					["description"] = "10 per WQ, 25 per rare kill in zone where Dreamsurge is active",
+				}),
+				i(208153, {	-- Dreamsurge Chrysalis (10.1.7)
+					["timeline"] = { ADDED_10_1_7, REMOVED_10_2_0 },
+				}),
+				i(DREAMSURGE_CHRYSALIS),
+				i(192807, {	-- Renewed Magmammoth (MOUNT!)
+					["cost"] = {{ "i", 209419, 20 }},	-- Charred Elemental Remains
+				}),
+			},
 		}),
 		n(VENDORS, {
 			n(210608, {	-- Celestine of the Harvest

@@ -427,88 +427,96 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			})),
 			n(REWARDS, {
-				i(200082, {	-- Battered Imbu-made Net
-					["description"] = "Obtained from Rare fishing pools.",
-					["providers"] = {
-						{ "o", 377938 },	-- Prismatic Leaper School
-						{ "o", 382180 },	-- Overheated Magma Thresher Pool
-						{ "n", 197596 },	-- Deep Ice Fishing Hole
-					},
-				}),
-				i(200080, {	-- Draconium Nugget
-					["description"] = "Obtained from Rare fishing pools.",
-					["providers"] = {
-						{ "o", 377938 },	-- Prismatic Leaper School
-						{ "o", 382180 },	-- Overheated Magma Thresher Pool
-						{ "n", 197596 },	-- Deep Ice Fishing Hole
-					},
-				}),
-				i(200081, {	-- Hardened Seavine
-					["description"] = "Obtained from Rare fishing pools.",
-					["providers"] = {
-						{ "o", 377938 },	-- Prismatic Leaper School
-						{ "o", 382180 },	-- Overheated Magma Thresher Pool
-						{ "n", 197596 },	-- Deep Ice Fishing Hole
-					},
-				}),
-				i(200083, {	-- Irontree Branch
-					["description"] = "Obtained from Rare fishing pools.",
-					["providers"] = {
-						{ "o", 377938 },	-- Prismatic Leaper School
-						{ "o", 382180 },	-- Overheated Magma Thresher Pool
-						{ "n", 197596 },	-- Deep Ice Fishing Hole
-					},
-				}),
-				i(200086, {	-- Khaz'gorite-Infused Resin
-					["description"] = "Obtained from Rares summoned by using Ominous Conch at Large Lunker Sightings.",
-					["providers"] = {
-						{ "n", 193706 },	-- Snufflegust
-						{ "n", 197411 },	-- Astray Splasher
-						{ "n", 193634 },	-- Swog'Ranka
-						{ "n", 193708 },	-- Skald the Impaler
-						{ "n", 193710 },	-- Seereel, the Spring
-						{ "n", 193735 },	-- Moth'go Deeploom
-						{ "n", 197371 },	-- Ravenous Tundra Bear
-					},
-				}),
-				i(200085, {	-- Khaz'gorite Wire
-					["description"] = "Obtained from Full Tuskarr Fishing Nets.",
-					["providers"] = {
-						{ "o", 382071 },	-- Full Fishing Net
-						{ "o", 379314 },	-- Full Fishing Net
-						{ "o", 381069 },	-- Full Fishing Net
-					},
-				}),
-				i(200084, {	-- Salinated Serevite
-					["description"] = "Obtained from Rare fishing pools.",
-					["providers"] = {
-						{ "o", 377938 },	-- Prismatic Leaper School
-						{ "o", 382180 },	-- Overheated Magma Thresher Pool
-						{ "n", 197596 },	-- Deep Ice Fishing Hole
-						--[[ Never got one from it and wowhead doesnt have data either. If confirmed, readd them ~Gold Jan 2023
-						{ "o", 382071 },	-- Full Fishing Net
-						{ "o", 379314 },	-- Full Fishing Net
-						{ "o", 381069 },	-- Full Fishing Net
-						--]]
-					},
-				}),
-				o(381514, {	-- Sea-Polished Basalt
-					-- i didn't save the coords, and wowhead doesn't know about it. probably need some fine-tuning and additional spawn locations, then remove description
-					["description"] = "Near landing points for Alliance/Horde in The Waking Shores. Rough coordinates.",
-					["coords"] = {
-						{ 80.0, 27.0, THE_WAKING_SHORES },
-					},
-					["g"] = {
-						i(200079),	-- Sea-Polished Basalt
-					},
-				}),
-				o(381512, {	-- Wooden Pole
-					["description"] = "Used to craft Iskaaran Harpoon.",
-					["coord"] = { 15.6, 44.5, THE_AZURE_SPAN },
-					["g"] = {
-						i(200077),	-- Wooden Pole
-					},
-				}),
+				["maps"] = {
+					OHNAHRAN_PLAINS,
+					THALDRASZUS,
+					THE_AZURE_SPAN,
+					THE_WAKING_SHORES,
+				},
+				["groups"] = {
+					i(200082, {	-- Battered Imbu-made Net
+						["description"] = "Obtained from Rare fishing pools.",
+						["providers"] = {
+							{ "o", 377938 },	-- Prismatic Leaper School
+							{ "o", 382180 },	-- Overheated Magma Thresher Pool
+							{ "n", 197596 },	-- Deep Ice Fishing Hole
+						},
+					}),
+					i(200080, {	-- Draconium Nugget
+						["description"] = "Obtained from Rare fishing pools.",
+						["providers"] = {
+							{ "o", 377938 },	-- Prismatic Leaper School
+							{ "o", 382180 },	-- Overheated Magma Thresher Pool
+							{ "n", 197596 },	-- Deep Ice Fishing Hole
+						},
+					}),
+					i(200081, {	-- Hardened Seavine
+						["description"] = "Obtained from Rare fishing pools.",
+						["providers"] = {
+							{ "o", 377938 },	-- Prismatic Leaper School
+							{ "o", 382180 },	-- Overheated Magma Thresher Pool
+							{ "n", 197596 },	-- Deep Ice Fishing Hole
+						},
+					}),
+					i(200083, {	-- Irontree Branch
+						["description"] = "Obtained from Rare fishing pools.",
+						["providers"] = {
+							{ "o", 377938 },	-- Prismatic Leaper School
+							{ "o", 382180 },	-- Overheated Magma Thresher Pool
+							{ "n", 197596 },	-- Deep Ice Fishing Hole
+						},
+					}),
+					i(200086, {	-- Khaz'gorite-Infused Resin
+						["description"] = "Obtained from Rares summoned by using Ominous Conch at Large Lunker Sightings.",
+						["providers"] = {
+							{ "n", 193706 },	-- Snufflegust
+							{ "n", 197411 },	-- Astray Splasher
+							{ "n", 193634 },	-- Swog'Ranka
+							{ "n", 193708 },	-- Skald the Impaler
+							{ "n", 193710 },	-- Seereel, the Spring
+							{ "n", 193735 },	-- Moth'go Deeploom
+							{ "n", 197371 },	-- Ravenous Tundra Bear
+						},
+					}),
+					i(200085, {	-- Khaz'gorite Wire
+						["description"] = "Obtained from Full Tuskarr Fishing Nets.",
+						["providers"] = {
+							{ "o", 382071 },	-- Full Fishing Net
+							{ "o", 379314 },	-- Full Fishing Net
+							{ "o", 381069 },	-- Full Fishing Net
+						},
+					}),
+					i(200084, {	-- Salinated Serevite
+						["description"] = "Obtained from Rare fishing pools.",
+						["providers"] = {
+							{ "o", 377938 },	-- Prismatic Leaper School
+							{ "o", 382180 },	-- Overheated Magma Thresher Pool
+							{ "n", 197596 },	-- Deep Ice Fishing Hole
+							--[[ Never got one from it and wowhead doesnt have data either. If confirmed, readd them ~Gold Jan 2023
+							{ "o", 382071 },	-- Full Fishing Net
+							{ "o", 379314 },	-- Full Fishing Net
+							{ "o", 381069 },	-- Full Fishing Net
+							--]]
+						},
+					}),
+					o(381514, {	-- Sea-Polished Basalt
+						-- i didn't save the coords, and wowhead doesn't know about it. probably need some fine-tuning and additional spawn locations, then remove description
+						["description"] = "Near landing points for Alliance/Horde in The Waking Shores. Rough coordinates.",
+						["coords"] = {
+							{ 80.0, 27.0, THE_WAKING_SHORES },
+						},
+						["g"] = {
+							i(200079),	-- Sea-Polished Basalt
+						},
+					}),
+					o(381512, {	-- Wooden Pole
+						["description"] = "Used to craft Iskaaran Harpoon.",
+						["coord"] = { 15.6, 44.5, THE_AZURE_SPAN },
+						["g"] = {
+							i(200077),	-- Wooden Pole
+						},
+					}),
+				},
 			}),
 			n(SPECIAL, sharedData({
 				["description"] = "Chance to spawn after using 5 |cffffffffOminous Conches|r at specific |cffffffffLarge Lunker Sighting|r Locations.\nWhich Lunker Sighting is up changes every week & if there is no fish icon, the pool is not up and you cannot spawn a Thresher at that location.",

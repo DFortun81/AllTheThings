@@ -13,62 +13,85 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		n(DRAGONRIDING_RACING, bubbleDownSelf({ ["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 7 } }, {
 			header(HEADERS.Map, DRAGON_ISLES, {
 				n(REWARDS, {
-					i(199192, {	-- Dragon Racer's Purse
-						i(196979),	-- Cliffside Wylderdrake: Curled Head Horns (DM!)
-						i(197017),	-- Cliffside Wylderdrake: Large Tail Spikes (DM!)
-						i(196971),	-- Cliffside Wylderdrake: Spiked Brow (DM!)
-						i(197128),	-- Highland Drake: Curled Back Horns (DM!)
-						i(197152),	-- Highland Drake: Hooked Tail (DM!)
-						i(197113),	-- Highland Drake: Swept Spiked Head (DM!)
-						i(197366),	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
-						i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw (DM!)
-						i(197605),	-- Windborne Velocidrake: Curled Horns (DM!)
-						i(197619),	-- Windborne Velocidrake: Hooked Snout (DM!)
-					}),
-					i(200609),	-- Dragon Racing Purse - First Place
-					i(200610),	-- Dragon Racing Purse - Second Place
-					i(200611),	-- Dragon Racing Purse - Third Place
+					["maps"] = {
+						OHNAHRAN_PLAINS,
+						THALDRASZUS,
+						THE_AZURE_SPAN,
+						THE_WAKING_SHORES,
+					},
+					["groups"] = {
+						i(199192, {	-- Dragon Racer's Purse
+							i(196979),	-- Cliffside Wylderdrake: Curled Head Horns (DM!)
+							i(197017),	-- Cliffside Wylderdrake: Large Tail Spikes (DM!)
+							i(196971),	-- Cliffside Wylderdrake: Spiked Brow (DM!)
+							i(197128),	-- Highland Drake: Curled Back Horns (DM!)
+							i(197152),	-- Highland Drake: Hooked Tail (DM!)
+							i(197113),	-- Highland Drake: Swept Spiked Head (DM!)
+							i(197366),	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
+							i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw (DM!)
+							i(197605),	-- Windborne Velocidrake: Curled Horns (DM!)
+							i(197619),	-- Windborne Velocidrake: Hooked Snout (DM!)
+						}),
+						i(200609),	-- Dragon Racing Purse - First Place
+						i(200610),	-- Dragon Racing Purse - Second Place
+						i(200611),	-- Dragon Racing Purse - Third Place
+					},
 				}),
 			}),
 			header(HEADERS.Map, THE_FORBIDDEN_REACH, {
 				n(REWARDS, {
-					i(204359,	-- Reach Racer's Purse
-					bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
-						i(197002),	-- Cliffside Wylderdrake: Flared Cheek (DM!)
-						i(197124),	-- Highland Drake: Swept Horns (DM!)
-						i(202274),	-- Renewed Proto-Drake: Plated Brow (DM!)
-						i(197594),	-- Windborne Velocidrake: Small Ears (DM!)
-					})),
+					["maps"] = {
+						THE_FORBIDDEN_REACH,
+					},
+					["groups"] = {
+						i(204359,	-- Reach Racer's Purse
+						bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+							i(197002),	-- Cliffside Wylderdrake: Flared Cheek (DM!)
+							i(197124),	-- Highland Drake: Swept Horns (DM!)
+							i(202274),	-- Renewed Proto-Drake: Plated Brow (DM!)
+							i(197594),	-- Windborne Velocidrake: Small Ears (DM!)
+						})),
+					},
 				}),
 			}),
 			header(HEADERS.Map, ZARALEK_CAVERN, {
 				n(REWARDS, {
-					i(205226,	-- Cavern Racer's Purse
-					bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
-						i(196978),	-- Cliffside Wylderdrake: Small Head Spikes (DM!)
-						i(196997),	-- Cliffside Wylderdrake: Split Horns (DM!)
-						i(197104),	-- Highland Drake: Tapered Chin (DM!)
-						i(202280),	-- Renewed Proto-Drake: Pronged Tail (DM!)
-						i(203361),	-- Winding Slitherdrake: Finned Tip Tail (DM!)
-						i(203348),	-- Winding Slitherdrake: Pointed Nose (DM!)
-						i(203317),	-- Winding Slitherdrake: Small Finned Crest (DM!)
-						i(203342),	-- Winding Slitherdrake: Triple Jaw Horns (DM!)
-					})),
+					["maps"] = {
+						ZARALEK_CAVERN,
+					},
+					["groups"] = {
+						i(205226,	-- Cavern Racer's Purse
+						bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+							i(196978),	-- Cliffside Wylderdrake: Small Head Spikes (DM!)
+							i(196997),	-- Cliffside Wylderdrake: Split Horns (DM!)
+							i(197104),	-- Highland Drake: Tapered Chin (DM!)
+							i(202280),	-- Renewed Proto-Drake: Pronged Tail (DM!)
+							i(203361),	-- Winding Slitherdrake: Finned Tip Tail (DM!)
+							i(203348),	-- Winding Slitherdrake: Pointed Nose (DM!)
+							i(203317),	-- Winding Slitherdrake: Small Finned Crest (DM!)
+							i(203342),	-- Winding Slitherdrake: Triple Jaw Horns (DM!)
+						})),
+					},
 				}),
 			}),
 			header(HEADERS.Map, EMERALD_DREAM, {
 				n(REWARDS, {
-					i(210549,	-- Dream Racer's Purse
-					bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-						i(207765),	-- Grotto Netherwing Drake: Cluster Spiked Crest (DM!)
-						i(207778),	-- Grotto Netherwing Drake: Double Finned Tail (DM!)
-						i(207758),	-- Grotto Netherwing Drake: Spiked Back (DM!)
-						i(207768),	-- Grotto Netherwing Drake: Volatile Pattern (DM!)
-						i(203343),	-- Winding Slitherdrake: Hairy Jaw (DM!) (discord report from user dumbomb in #error)
-						i(203333),	-- Winding Slitherdrake: Short Horns (DM!) (discord report from user shinshiva in #general)
-						i(203360),	-- Winding Slitherdrake: Large Finned Tail (DM!) (discord report from user nohh in #error)
-						i(203337),	-- Winding Slitherdrake: Thorn Horns (DM!)
-					})),
+					["maps"] = {
+						EMERALD_DREAM,
+					},
+					["groups"] = {
+						i(210549,	-- Dream Racer's Purse
+						bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+							i(207765),	-- Grotto Netherwing Drake: Cluster Spiked Crest (DM!)
+							i(207778),	-- Grotto Netherwing Drake: Double Finned Tail (DM!)
+							i(207758),	-- Grotto Netherwing Drake: Spiked Back (DM!)
+							i(207768),	-- Grotto Netherwing Drake: Volatile Pattern (DM!)
+							i(203343),	-- Winding Slitherdrake: Hairy Jaw (DM!) (discord report from user dumbomb in #error)
+							i(203333),	-- Winding Slitherdrake: Short Horns (DM!) (discord report from user shinshiva in #general)
+							i(203360),	-- Winding Slitherdrake: Large Finned Tail (DM!) (discord report from user nohh in #error)
+							i(203337),	-- Winding Slitherdrake: Thorn Horns (DM!)
+						})),
+					},
 				}),
 			}),
 			n(WORLD_QUESTS, sharedData({
