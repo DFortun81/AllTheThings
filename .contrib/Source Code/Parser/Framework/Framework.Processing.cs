@@ -1403,9 +1403,21 @@ namespace ATT
             }
 
             // Remove itself from the list of altQuests
-            if (data.TryGetValue("altQuests", out List<object> altQuests) && altQuests != null && altQuests.Count > 0)
+            if (data.TryGetValue("altQuests", out List<object> altQuests))
             {
                 altQuests.Remove(questID);
+                if (altQuests.Count == 0)
+                {
+                    data.Remove("altQuests");
+                }
+                else
+                {
+                    // To keep things simple in Retail, convert altQuests to lockCriteria
+                    // if (Program.PreProcessorTags.ContainsKey("RETAIL"))
+                    // {
+
+                    // }
+                }
             }
 
             // Convert any 'n' providers into 'qgs' for data simplicity
@@ -1451,6 +1463,11 @@ namespace ATT
                 data.ContainsKey("criteriaID") ||
                 (data.TryGetValue("collectible", out bool collectible) && !collectible)) return;
 
+            // if (achID == 19326)
+            // {
+
+            // }
+
             // Grab AchievementDB info
             ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
 
@@ -1495,7 +1512,7 @@ namespace ATT
             // Classic can't trust Retail data for Achievements because Blizzard
             if (!Program.PreProcessorTags.ContainsKey("RETAIL")) return;
 
-            // only incorporate achievement criteria which is not under a header or another achievement
+            // only incorporate achievement criteria which is under a header or another achievement
             if (CurrentParentGroup.HasValue &&
                 CurrentParentGroup.Value.Key != "npcID" &&
                 CurrentParentGroup.Value.Key != "achID")
@@ -1698,10 +1715,14 @@ namespace ATT
                 Objects.Merge(data, "_npcs", providerNPC);
             }
 
-            long emoteModifierTreeID = criteriaData.GetModifierTreeID();
-            if (emoteModifierTreeID > 0)
+            long modifierTreeID = criteriaData.GetModifierTreeID();
+            if (modifierTreeID > 0)
             {
-                Incorporate_ModifierTree(data, emoteModifierTreeID);
+                if (!Incorporate_ModifierTree(data, modifierTreeID) && matchedCriteriaInfo == null)
+                {
+                    LogDebug($"INFO: No good ModifierTree {modifierTreeID} data for hidden Criteria {achID}:{criteriaID}. It will be removed.");
+                    data["_remove"] = true;
+                }
                 // -> modifiertree -> parent[collection] -> type=4(creature target) -> Asset
             }
 
@@ -1984,12 +2005,13 @@ namespace ATT
             return incorporated;
         }
 
-        private static void Incorporate_ModifierTree(IDictionary<string, object> data, long id, ModifierTree existingModifierTree = null)
+        private static bool Incorporate_ModifierTree(IDictionary<string, object> data, long id, ModifierTree existingModifierTree = null)
         {
+            bool incorporated = false;
             if (existingModifierTree == null)
             {
                 if (!TryGetTypeDBObject(id, out ModifierTree modifierTree))
-                    return;
+                    return incorporated;
 
                 existingModifierTree = modifierTree;
             }
@@ -1997,6 +2019,7 @@ namespace ATT
             // 2 (SingleTrue)
             if (existingModifierTree.Operator == 2)
             {
+                incorporated = true;
                 switch (existingModifierTree.Type)
                 {
                     // 4 (TARGET_CREATURE_ENTRY)
@@ -2083,6 +2106,9 @@ namespace ATT
                         Objects.Merge(data, "minReputation", new List<object> { existingModifierTree.SecondaryAsset, existingModifierTree.Asset });
                         Objects.Merge(data, "_factions", existingModifierTree.SecondaryAsset);
                         break;
+                    default:
+                        incorporated = false;
+                        break;
                 }
             }
 
@@ -2091,9 +2117,11 @@ namespace ATT
             {
                 foreach (ModifierTree child in childTrees)
                 {
-                    Incorporate_ModifierTree(data, child.ID, child);
+                    incorporated |= Incorporate_ModifierTree(data, child.ID, child);
                 }
             }
+
+            return incorporated;
         }
 
         private static bool CheckSingleSymlink(IDictionary<string, object> data, string command)

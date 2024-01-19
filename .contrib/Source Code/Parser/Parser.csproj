@@ -96,6 +96,7 @@
     <Compile Include="FieldTypes\Cost.cs" />
     <Compile Include="FieldTypes\IExportableField.cs" />
     <Compile Include="FieldTypes\IProcessedField.cs" />
+    <Compile Include="FieldTypes\LockCriteria.cs" />
     <Compile Include="Framework\Framework.Objects.cs" />
     <Compile Include="Framework\Framework.Items.cs" />
     <Compile Include="Framework\Framework.cs" />
