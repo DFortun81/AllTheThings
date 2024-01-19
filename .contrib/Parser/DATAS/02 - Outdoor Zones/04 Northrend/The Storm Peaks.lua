@@ -774,9 +774,18 @@ root(ROOTS.Zones, {
 					}),
 					q(12975, {	-- In Memoriam
 						["qg"] = 30105,	-- King Jokkum
+						["sourceQuest"] = 12924,	-- Forging an Alliance	-- SQ needs verification
 						["coord"] = { 65.4, 60.1, THE_STORM_PEAKS },
-						["sourceQuest"] = 12924,	-- Forging an Alliance
-						-- SQ needs verification
+						["groups"] = {
+							objective(1, {	-- 0/8 Horn Fragment
+								["providers"] = {
+									{ "i",  42162 },	-- Horn Fragment
+									{ "o", 192081 },	-- Horn Fragment
+									{ "o", 192082 },	-- Horn Fragment
+								},
+								["coords"] = { 72.1, 49.5, THE_STORM_PEAKS },
+							}),
+						},
 					}),
 					q(12997, {	-- Into the Pit
 						["qg"] = 29839,	-- Astrid Bjornrittar
