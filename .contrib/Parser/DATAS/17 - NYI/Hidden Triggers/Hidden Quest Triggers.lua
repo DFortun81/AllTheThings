@@ -129,7 +129,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		---   CLASSIC   ---
 		-------------------
 		--	QUESTING / LEVELING
-		q(3366, { ["name"] = "OLD The Glowing Shard", }),	-- Completed the Glowing Shard quest in Wailing Caverns.
 		q(9611),	-- Azuremyst: aa - A - Quest Flag 000 — triggered after healing the NPC/killing the mob before you can pick up "A Hearty Thanks!" on Azuremyst Isle
 		q(27224),	-- Andorhal Phase Flag — Western Plaguelands — triggers during "The Depravity of the Forsaken"
 		q(25040),	-- FLAG - Worgen Attacked — Tirisfal Glades — attacked by a worgen during "Darkhound Pounding" to trigger the "Escaped From Gilneas" quest
@@ -1679,6 +1678,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- TEMPORARY SOLUTION AS HQT FOR NOW
 	-- SORTED BY ID
 	n(SPECIAL, {
+		q(3366),	-- The Glowing Shard - completed with quest 6981
 		q(9749),	-- They're Alive! Maybe... - completed with quest 9670
 		q(10149),	-- Mission: End All, Be All - completed with quest 10136 & 10400
 		q(10386),	-- The Fel Reaver Slayer - completed with quest 10382
