@@ -344,6 +344,20 @@ root(ROOTS.Zones, {
 						["qg"] = 30105,	-- King Jokkum
 						["coord"] = { 65.3, 60.1, THE_STORM_PEAKS },
 						["minReputation"] = { 1119, FRIENDLY },	-- The Sons of Hodir, Friendly.
+						["groups"] = {
+							objective(1, {	-- 0/1 Jorcuttar slain
+								["provider"] = { "n", 30340 },	-- Jorcuttar
+								["coord"] = { 54.6, 60.8, THE_STORM_PEAKS },
+								["cost"] = {{ "i", 42733, 1 }},	-- Icemaw Bear Flank
+							}),
+							i(42733, {	-- Icemaw Bear Flank
+								["providers"] = {
+									{ "n", 30292 },	-- Dead Icemaw Bear
+									{ "i", 42732 },	-- Everfrost Razor
+								},
+								["coord"] = { 55.0, 61.8, THE_STORM_PEAKS },
+							}),
+						},
 					}),
 					q(13006, {	-- A Viscous Cleaning
 						["provider"] = { "o", 192080 },	-- Hodir's Helm
@@ -443,9 +457,12 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12821,	-- Cell Block Tango
 					}),
 					q(12976, {	-- A Monument to the Fallen
-						["qg"] = 30105,	-- King Jokkum
-						["coord"] = { 65.4, 60.1, THE_STORM_PEAKS },
+						["providers"] = {
+							{ "n", 30105 },	-- King Jokkum
+							{ "i", 42163 },	-- Horn Fragments
+						},
 						["sourceQuest"] = 12975,	-- In Memoriam
+						["coord"] = { 65.4, 60.1, THE_STORM_PEAKS },
 					}),
 					q(13009, {	-- A New Beginning
 						["qg"] = 30127,	-- Njormeld
@@ -718,10 +735,24 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12930,	-- Rare Earth
 					}),
 					q(12985, {	-- Forging a Head
-						["minReputation"] = { 1119, FRIENDLY },
+						["qg"] = 30127,	-- Njormeld
 						["sourceQuest"] = 12967,	-- Battling the Elements
 						["coord"] = { 63.2, 63.2, THE_STORM_PEAKS },
-						["qg"] = 30127,	-- Njormeld
+						["minReputation"] = { 1119, FRIENDLY },	-- The Sons of Hodir, Friendly.
+						["groups"] = {
+							objective(1, {	-- 0/8 Stormforged Eye
+								["providers"] = {
+									{ "i", 42423 },	-- Stormforged Eye
+									{ "n", 30208 },	-- Stormforged Ambusher
+									{ "i", 42424 },	-- Diamond Tipped Pick
+								},
+								["coord"] = { 70.0, 60.2, THE_STORM_PEAKS },
+								["crs"] = {
+									29914,	-- Dead Iron Giant
+									30163,	-- Dead Iron Giant
+								},
+							}),
+						},
 					}),
 					q(12924, {	-- Forging an Alliance
 						["qg"] = 29445,	-- Thorim
@@ -736,6 +767,30 @@ root(ROOTS.Zones, {
 							i(42805),	-- Njormeld's Pauldrons
 							i(42817),	-- Reforged Chain Leggings
 							i(42830),	-- Ring of Jokkum
+						},
+					}),
+					q(13001, {	-- Forging Hodir's Spear
+						["qg"] = 30252,	-- Lorekeeper Randvir
+						["coord"] = { 64.8, 59.1, THE_STORM_PEAKS },
+						["minReputation"] = { 1119, HONORED },	-- The Sons of Hodir, Honored.
+						["groups"] = {
+							objective(1, {	-- 0/3 Everfrost Shard
+								["providers"] = {
+									{ "i",  42541 },	-- Everfrost Shard
+									{ "o", 192187 },	-- Everfrost Shard
+									{ "o", 192188 },	-- Everfrost Shard
+									{ "o", 192189 },	-- Everfrost Shard
+									{ "o", 192190 },	-- Everfrost Shard
+									{ "o", 192191 },	-- Everfrost Shard
+									{ "o", 192192 },	-- Everfrost Shard
+								},
+								["coord"] = { 54.7, 60.8, THE_STORM_PEAKS },
+							}),
+							objective(2, {	-- 0/3 Stoic Mammoth Hide
+								["provider"] = { "i", 42542 },	-- Stoic Mammoth Hide
+								["coord"] = { 58.6, 62.6, THE_STORM_PEAKS },
+								["cr"] = 30260,	-- Stoic Mammoth
+							}),
 						},
 					}),
 					q(13285, {	-- Forging the Keystone
@@ -1008,11 +1063,6 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						-- this quest appeared for me after turning in "the brother's bronzebeard," which was the last quest i did for its criteria + the overall zone.  i'm not sure if the quest itself is a prerequisite or if it's based on reputation, because i also hit friendly with alliance vanguard when turning it in.  some wowhead comments said it had different requirements, so i'm not sure what to put for SQ or a description.
-					}),
-					q(13001, {	-- Forging Hodir's Spear
-						["coord"] = { 64.8, 59.1, THE_STORM_PEAKS },
-						["minReputation"] = { 1119, HONORED },
-						["qg"] = 30252,	-- Lorekeeper Randvir
 					}),
 					q(12930, {	-- Rare Earth
 						["qg"] = 29801,	-- Bouldercrag the Rockshaper
