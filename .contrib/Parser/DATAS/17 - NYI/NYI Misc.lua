@@ -879,7 +879,6 @@ root(ROOTS.NeverImplemented, {
 				i(203450),	-- Bottomless Bag of Skins
 				i(203441),	-- Bottomless Bag of Tailoring Goods
 				i(201253),	-- Competitor's Edge
-				i(201178),	-- Cracked Skull
 				i(192698),	-- Depleted Titan Training Matrix
 				i(202037),	-- Expedition Shovel or Expedition Multi-Toolbox
 				i(200862),	-- Experimental Duck Feed
@@ -904,7 +903,6 @@ root(ROOTS.NeverImplemented, {
 				i(192633),	-- Slit-Shaped Pupil
 				i(201179),	-- Snapped Tusk Tip
 				i(201213),	-- Sparkling Stone
-				i(201729),	-- Spiked Horseshoe
 				i(201224),	-- Tauren Horn
 				i(192696),	-- Third Head's Eye
 				i(201223),	-- Thorn Bracelet

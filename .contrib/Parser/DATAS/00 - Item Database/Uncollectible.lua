@@ -689,6 +689,7 @@ i(200814);	-- Congealing Shard
 i(200774);	-- Contained Void Sample
 i(200248);	-- Cooked Book
 i(194721);	-- Cracked Hourglass
+i(201178);	-- Cracked Skull
 i(192769);	-- Cracked Spear
 i(192688);	-- Cracked Stone Bracers
 i(201216);	-- Crumbled Elemental Spark
@@ -853,6 +854,7 @@ i(193860);	-- Snapped Wand
 i(200837);	-- So You Think You Can Rune?
 i(193387);	-- Solar Battery
 i(201184);	-- Spare Bow String
+i(201729);	-- Spiked Horseshoe
 i(192670);	-- Splendid Feather
 i(201199);	-- Splendid Feather Necklace
 i(192721);	-- Splendid Horn
