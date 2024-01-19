@@ -4,9 +4,9 @@ local ELEMENTAL = 10658;
 local TRIBAL = 10660;
 
 -- #if ANYCLASSIC
-------------------
+-----------------
 -- PATCH 2.5.1 --
-------------------
+-----------------
 --- TRAINER ---
 i(0, 351766);		-- Greater Drums of War
 --- ITEM ---
@@ -350,9 +350,9 @@ i(22695, 0);		-- Polar Bracers
 i(22694, 0);		-- Polar Gloves
 i(22692, 0);		-- Polar Tunic
 
-------------------
+-----------------
 -- PATCH 2.0.5 --
-------------------
+-----------------
 --- TRAINER ---
 i(0, 32549);	-- Leatherworking (Master) [REMOVED: 8.0.1]
 i(0, 35540);	-- Drums of War
@@ -491,9 +491,9 @@ i(0, 35588);	-- Windhawk Bracers [REMOVED: 4.0.3]
 i(0, 35585);	-- Windhawk Hauberk [REMOVED: 4.0.3]
 -- #endif
 
-------------------
+-----------------
 -- PATCH 2.1.0 --
-------------------
+-----------------
 --- ITEM ---
 i(30302, 36351);	-- Belt of Deep Shadow
 i(30301, 36349);	-- Belt of Natural Power
@@ -524,16 +524,16 @@ i(32430, 40000);	-- Bracers of Shackled Souls
 -- #endif
 i(32432, 40002);	-- Waistguard of Shackled Souls
 
-------------------
+-----------------
 -- PATCH 2.2.0 --
-------------------
+-----------------
 --- ITEM ---
 i(33124, 42546);	-- Cloak of Darkness
 i(33205, 42731);	-- Shadowprowler's Chestguard
 
-------------------
+-----------------
 -- PATCH 2.3.0 --
-------------------
+-----------------
 --- TRAINER ---
 i(0, 44770);	-- Glove Reinforcements
 i(0, 44970);	-- Heavy Knothide Armor Kit
@@ -551,9 +551,9 @@ i(34218, 44768);	-- Netherscale Ammo Pouch [A] [REMOVED: 4.0.1]
 i(34201, 44768);	-- Netherscale Ammo Pouch [H] [REMOVED: 4.0.1]
 i(34262, 44953);	-- Winter Boots
 
-------------------
+-----------------
 -- PATCH 2.4.0 --
-------------------
+-----------------
 --- ITEM ---
 i(35218, 46138);	-- Carapace of Sun and Shadow
 i(35302, 35559);	-- Cobrascale Gloves [BoP]
@@ -570,9 +570,9 @@ i(35300, 35568);	-- Windstrike Gloves [BoP]
 --- NYI ---
 i(35528, 0);		-- Swiftstrike Shoulders
 
-------------------
+-----------------
 -- PATCH 3.0.1 --
-------------------
+-----------------
 --- NYI ---
 i(0, 55243);	-- Bracers of Deflection
 i(0, 53681);	-- Garok's Battle
@@ -587,9 +587,9 @@ i(0, 50935);	-- Unknown
 i(38599, 0);	-- Dark Arctic Chestpiece
 i(38598, 0);	-- Dark Arctic Leggings
 
-------------------
+-----------------
 -- PATCH 3.0.2 --
-------------------
+-----------------
 --- TRAINER ---
 i(0, 51302);	-- Leatherworking (Grand Master)
 i(0, 50949);	-- Arctic Belt
@@ -724,9 +724,9 @@ i(44550, 60758);	-- Trollwoven Spaulders
 i(44932, 62176);	-- Windripper Boots
 i(44933, 62177);	-- Windripper Leggings
 
-------------------
+-----------------
 -- PATCH 3.1.0 --
-------------------
+-----------------
 --- ITEM ---
 i(45100, 63200);	-- Belt of Arctic Life
 i(45094, 63194);	-- Belt of Dragons
@@ -737,9 +737,9 @@ i(45098, 63198);	-- Death-Warmed Belt
 i(45099, 63199);	-- Footpads of Silence
 i(45097, 63197);	-- Lightning Grounded Boots
 
-------------------
+-----------------
 -- PATCH 3.2.0 --
-------------------
+-----------------
 --- ITEM ---
 i(47629, 67081);	-- Black Chitin Bracers [A]
 i(47646, 67137);	-- Black Chitin Bracers [H]
@@ -758,16 +758,16 @@ i(47652, 67140);	-- Lunar Eclipse Robes [H]
 i(47633, 67085);	-- Moonshadow Armguards [A]
 i(47653, 67141);	-- Moonshadow Armguards [H]
 
-------------------
+-----------------
 -- PATCH 3.2.2 --
-------------------
+-----------------
 --- TRAINER ---
 i(0, 69386);	-- Drums of Forgotten Kings
 i(0, 69388);	-- Drums of the Wild
 
-------------------
+-----------------
 -- PATCH 3.3.0 --
-------------------
+-----------------
 --- ITEM ---
 i(49959, 70556);	-- Bladeborn Leggings
 i(49958, 70555);	-- Blessed Cenarion Boots
@@ -778,9 +778,9 @@ i(49957, 70554);	-- Legwraps of Unleashed Nature
 i(49962, 70558);	-- Lightning-Infused Leggings
 i(49966, 70561);	-- Rock-Steady Treads
 
-------------------
+-----------------
 -- PATCH 4.0.1 --
-------------------
+-----------------
 --- NYI ---
 i(0, 74493);	-- Savage Leather
 i(0, 78421);	-- Unknown
@@ -826,9 +826,9 @@ i(67025, 0);	-- Tsunami Leggings
 i(67014, 0);	-- Tsunami Shoulders
 i(67019, 0);	-- Twilight Leg Armor
 
-------------------
+-----------------
 -- PATCH 4.0.3 --
-------------------
+-----------------
 --- TRAINER ---
 i(0, 81199);	-- Leatherworking (Illustrious) [REMOVED: 8.0.1]
 i(0, 85068);	-- Charscale Leg Reinforcements [REMOVED: 6.0.2]
@@ -909,9 +909,9 @@ i(67086, 78480);	-- Vicious Wyrmhide Helm
 i(67085, 78479);	-- Vicious Wyrmhide Legs
 i(67074, 78464);	-- Vicious Wyrmhide Shoulders
 
-------------------
+-----------------
 -- PATCH 4.2.0 --
-------------------
+-----------------
 --- TRAINER ---
 i(0, 101600);	-- Drakehide Leg Reinforcements [REMOVED: 6.0.2]
 i(0, 99536);	-- Vicious Fur Cloak
@@ -929,9 +929,9 @@ i(70174, 100583);	-- Royal Scribe's Satchel
 i(69973, 99457);	-- Treads of the Craft
 i(70175, 100586);	-- Triple-Reinforced Mining Bag
 
-------------------
+-----------------
 -- PATCH 4.3.0 --
-------------------
+-----------------
 --- ITEM ---
 i(72006, 101935);	-- Bladeshadow Leggings
 i(72010, 101940);	-- Bladeshadow Wristguards
@@ -951,9 +951,9 @@ i(72033, 10570);	-- Tough Scorpid Helm [New Version]
 i(72030, 10568);	-- Tough Scorpid Leggings [New Version]
 i(72027, 10564);	-- Tough Scorpid Shoulders [New Version]
 
-------------------
+-----------------
 -- PATCH 5.0.4 --
-------------------
+-----------------
 --- TRAINER ---
 i(0, 110423);		-- Leatherworking (Zen Master) [REMOVED: 8.0.1]
 i(0, 124126);		-- Brutal Leg Armor
@@ -1049,9 +1049,9 @@ i(86309, 124621);	-- Wildblood Vest
 --- NYI ---
 i(86286, 0);		-- Sha Leather
 
-------------------
+-----------------
 -- PATCH 5.2.0 --
-------------------
+-----------------
 --- TRAINER ---
 i(0, 131865);		-- Magnificent Hide
 --- ITEM ---
@@ -1142,9 +1142,9 @@ i(0, 138590);		-- Quilen Hide Helm
 i(0, 138593);		-- Spirit Keeper Footguards
 i(0, 138594);		-- Spirit Keeper Helm
 
-------------------
+-----------------
 -- PATCH 5.4.0 --
-------------------
+-----------------
 --- DISCOVERY ---
 i(0, 143146);		-- Crafted Malevolent Gladiator's Armbands of Meditation
 i(0, 143145);		-- Crafted Malevolent Gladiator's Armbands of Prowess
@@ -1233,9 +1233,9 @@ i(0, 146923);		-- Accelerated Hardened Magnificent Hide
 i(0, 142976);		-- Hardened Magnificent Hide
 i(102513, 146613);	-- Drums of Rage
 
-------------------
+-----------------
 -- PATCH 6.0.2 --
-------------------
+-----------------
 --- NYI ---
 i(0, 171713);		-- Burnished Leather
 i(118097, 173416);	-- Small Football
@@ -1247,9 +1247,9 @@ i(116322, 0);		-- Traveling Helm
 i(116324, 0);		-- Traveling Leggings
 i(116323, 0);		-- Traveling Tunic
 
-------------------
+-----------------
 -- PATCH 6.0.3 --
-------------------
+-----------------
 --- TRAINER ---
 i(0, 158752);		-- Leatherworking (Draenor Master) [REMOVED: 8.0.1]
 i(0, 163216);		-- Blackened Dragonscale
@@ -1325,22 +1325,22 @@ i(0, 176420);		-- Simple Tent
 i(0, 176411);		-- Sturdy Tent
 i(0, 176425);		-- Voodoo Doctor's Hovel
 
-------------------
+-----------------
 -- PATCH 6.1.0 --
-------------------
+-----------------
 --- ITEM ---
 i(122715, 182121);	-- Spiritual Leathercraft
 
-------------------
+-----------------
 -- PATCH 6.2.0 --
-------------------
+-----------------
 --- ITEM ---
 i(127722, 187489);	-- Mighty Burnished Essence [REMOVED: 10.0.5]
 i(127740, 187513);	-- Savage Burnished Essence [REMOVED: 10.0.5]
 
-------------------
+-----------------
 -- PATCH 7.0.3 --
-------------------
+-----------------
 i(0, 195119);		-- Leatherworking (Legion) [REMOVED: 8.0.1]
 --- TRAINER ---
 i(0, 194735);		-- Battlebound Armbands [Rank 1]
