@@ -1637,7 +1637,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { "removed 4.0.3" },
 		}),
 		i(23473, {	-- Recruit's Shirt
-			["description"] = "Former Starter Shirt for Draenei Warriors",
+			["description"] = "Former Starter Shirt for Draenei Warriors and Mages",
 			["timeline"] = { "added 2.0.1", "removed 4.0.3" },
 		}),
 		i(6120, {	-- Recruit's Shirt
