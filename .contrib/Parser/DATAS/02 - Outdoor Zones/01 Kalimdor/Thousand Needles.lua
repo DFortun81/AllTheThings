@@ -367,6 +367,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5892,	-- Searn Firewarder
 					["coord"] = { 37.8, 37.4, ORGRIMMAR },
 					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
@@ -379,6 +380,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 5906,	-- Xanis Flameweaver
 					["coord"] = { 25.2, 21, THUNDER_BLUFF },
 					["timeline"] = { "removed 4.0.3" },
+					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {
