@@ -46,6 +46,7 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 				q(9764, {	-- Orders from Lady Vashj
 					["provider"] = { "i", 24367 },	-- Orders from Lady Vashj
 					["timeline"] = { "removed 4.3.0.14732" },
+					["maps"] = { ZANGARMARSH },
 					["lvl"] = lvlsquish(67, 67, 20),
 				}),
 				q(29616, {	-- Storming the Steamvault

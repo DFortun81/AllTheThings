@@ -390,7 +390,10 @@ root(ROOTS.Zones, {
 						["lvl"] = lvlsquish(60, 60, 10),
 						["groups"] = {
 							objective(1, {	-- 0/1 Ikeyen's Belongings
-								["provider"] = { "i", 24411 },	-- Ikeyen's Belongings
+								["providers"] = {
+									{ "i",  24411 },	-- Ikeyen's Belongings
+									{ "o", 182122 },	-- Ikeyen's Belongings
+								},
 								["coord"] = { 70.6, 97.9, ZANGARMARSH },
 							}),
 							i(25516),	-- Ikeyen's Boots
