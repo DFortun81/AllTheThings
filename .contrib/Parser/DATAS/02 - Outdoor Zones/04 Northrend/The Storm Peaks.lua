@@ -1092,12 +1092,6 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 12864,	-- Missing Scouts
 					}),
-					q(29863, {	-- Stormherald Eljrrin
-						["qg"] = 30105,	-- King Jokkum
-						["coord"] = { 65.4, 60.1, THE_STORM_PEAKS },
-						["isBreadcrumb"] = true,
-						["sourceQuest"] = 13047,	-- The Reckoning
-					}),
 					q(12971, {	-- Taking on All Challengers
 						["qg"] = 29975,	-- Lok'lira the Crone
 						["coord"] = { 47.4, 69.0, THE_STORM_PEAKS },

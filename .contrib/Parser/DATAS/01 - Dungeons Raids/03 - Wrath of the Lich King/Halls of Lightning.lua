@@ -199,6 +199,13 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 						i(43198),	-- Mantle of Volkhan
 					},
 				}),
+				q(29863, {	-- Stormherald Eljrrin
+					["qg"] = 30105,	-- King Jokkum
+					["sourceQuest"] = 13047,	-- The Reckoning
+					["coord"] = { 65.4, 60.1, THE_STORM_PEAKS },
+					["timeline"] = { "added 4.3.0.14732" },
+					["isBreadcrumb"] = true,
+				}),
 				q(13108, {	-- Whatever it Takes!
 					["qg"] = 30105,	-- King Jokkum
 					["sourceQuest"] = 13047,	-- The Reckoning
