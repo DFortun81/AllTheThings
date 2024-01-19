@@ -445,7 +445,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 541,	-- Battle of Hillsbrad (6/7)
 					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "removed 4.0.3" },
+					["timeline"] = { "removed 3.3.0" },
+					["maps"] = { UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 19,
+					["groups"] = {
+						i(3761, {	-- Deadskull Shield
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(3822, {	-- Runic Darkblade
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(6282, {	-- Sacred Burial Trousers
+							["timeline"] = { "removed 4.0.3" },
+						}),
+						i(3760, {	-- Band of the Undercity
+							["timeline"] = { "removed 4.0.3" },
+						}),
+					},
+				}),
+				q(14351, {	-- Battle of Hillsbrad (7/7)
+					["providers"] = {
+						{ "n", 2215 },	-- High Executor Darthalia
+						{ "i", 3701 },	-- Darthalia's Sealed Commendation
+					},
+					["sourceQuest"] = 541,	-- Battle of Hillsbrad (6/7)
+					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
+					["timeline"] = { "added 3.3.0", "removed 4.0.3" },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
