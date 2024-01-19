@@ -322,6 +322,9 @@ else
 	IsQuestFlaggedCompletedForObject = function(t)
 		local questID = t.questID;
 		if questID then
+			if C_QuestLog_IsOnQuest(questID) then
+				return false;
+			end
 			if IsQuestFlaggedCompleted(questID) then return 1; end
 			if app.Settings.AccountWide.Quests and not t.repeatable then
 				if ATTAccountWideData.Quests[questID] then
@@ -1348,6 +1351,9 @@ not app.IsClassic and "WithReputationWithLockCriteria" or false, {
 	-- Classic: Quests which give Reputation are considered collected if tracking Reputations
 	-- and the corresponding Faction is not collected. Even if the Quest itself is not complete.
 	collected = app.IsClassic and function(t)
+		if C_QuestLog_IsOnQuest(t.questID) then
+			return false;
+		end
 		local flag = IsQuestFlaggedCompletedForObject(t);
 		if flag then return flag; end
 		local maxReputation = t.maxReputation;
