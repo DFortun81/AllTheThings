@@ -31,7 +31,18 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						title(536),	-- Isles Archivist
 					},
 				}),
-				ach(19787),	-- Clued in
+				ach(19787, {
+					["providers"] = {
+						{ "n", 210079 },	-- Information-Stuffed Clue
+						{ "n", 206816 },	-- Information-Stuffed Clue
+						{ "n", 208938 },	-- Information-Stuffed Clue
+						{ "n", 207983 },	-- Information-Stuffed Clue
+						{ "n", 208082 },	-- Information-Stuffed Clue
+						{ "n", 208105 },	-- Information-Stuffed Clue
+						{ "n", 208132 },	-- Information-Stuffed Clue
+						{ "n", 208766 },	-- Information-Stuffed Clue
+					 },
+				}),
 				ach(19793, {	-- Finally At Rest
 					i(213134),	-- Hap'he (PET!)
 				}),
@@ -185,6 +196,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 61.5, 31.1, THALDRASZUS },
 					["g"] = {
 						i(210956),	-- Archivist's Fire Totem (QI!)
+						i(205224),	-- Just a Rock
 					},
 				}),
 				q(78762, {	-- Your First Find
@@ -518,9 +530,15 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 					q(78645, {	-- Excavation: Buried in the Riverbed
 						["coord"] = { 65.9, 45.7, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(205224),	-- Just a Rock
+						},
 					}),
 					q(78739, {	-- Excavation: The Trove in the Tower
 						["coord"] = { 46.9, 48.8, ZARALEK_CAVERN },
+						["g"] = {
+							i(205224),	-- Just a Rock
+						},
 					}),
 					q(76587, {	-- Research: Centaur of Ohn'ahran Plains
 						["coord"] = { 69, 34.3, OHNAHRAN_PLAINS },

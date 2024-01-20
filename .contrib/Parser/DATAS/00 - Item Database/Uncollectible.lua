@@ -1086,7 +1086,6 @@ i(211938);	-- Flame Inscribed Band
 --- Azerothian Archives Trash ---
 i(205221);	-- Simple Pottery Fragment
 i(205222);	-- Wooden Caravan Spoke
-i(205224);	-- Just a Rock
 i(207460);	-- Dreadsquall Eggshell Fragment
 i(208201);	-- Paper Scraps
 i(212646);	-- Chipped Armor Plate
