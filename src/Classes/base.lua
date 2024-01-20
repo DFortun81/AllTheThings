@@ -335,6 +335,11 @@ local function CloneClassInstance(object, ignoreChildren)
 end
 app.CloneClassInstance = CloneClassInstance;
 app.CreateClassInstance = CreateClassInstance;
+-- I wish this could just automatically work for any given Class, but the way this is designed
+-- means it would have to generate a new variant class on top of every possible other Class, and most
+-- wouldn't even be used obviously... so maybe in the future
+local GlobalVariants = {}
+app.GlobalVariants = GlobalVariants
 
 app.CreateClass = function(className, classKey, fields, ...)
 	-- Validate arguments
@@ -399,21 +404,42 @@ app.CreateClass = function(className, classKey, fields, ...)
 					local variants = class.variants;
 					if variants then
 						local subbase = function(t, key) return subclass.__index; end
+						local variantClone
 						for variantName,variant in pairs(variants) do
+							if not variant.__condition then
+								app.print("Missing Sub-Class Variant __conditon!",variantName,subclassName,className)
+							end
+							-- raw variant table may be used by other classes, so need to copy it for this specific subclass
+							variantClone = {}
+							for key,method in pairs(variant) do
+								variantClone[key] = method;
+							end
+							-- copy in the class fields
 							for key,method in pairs(class) do
-								if not rawget(variant, key) then
-									variant[key] = method;
+								if not variantClone[key] then
+									variantClone[key] = method;
 								end
 							end
-							variant.base = subbase;
-							variants[variantName] = BaseObjectFields(variant, className .. subclassName .. variantName);
+							variantClone.base = subbase;
+							variants[variantName] = BaseObjectFields(variantClone, className .. subclassName .. variantName);
 						end
 					end
 					local a,b;
 					tinsert(conditionals, function(t)
-						a,b = conditional(t, variants);
+						a = conditional(t);
 						if a then
-							if b then return true; end
+							-- check any variants for this subclass
+							if variants then
+								local variantCondition
+								for variantName,variant in pairs(variants) do
+									variantCondition = variant.__class.__condition
+									if variantCondition and variantCondition(t) then
+										setmetatable(t, variant);
+										-- app.PrintDebug("Create Variant",t.hash,variantName)
+										return true
+									end
+								end
+							end
 							setmetatable(t, subclass);
 							return true;
 						end
@@ -654,15 +680,14 @@ local fieldsWithWorldQuest = {
 					print(t.name .. " (" .. t.__type .. "): I'm a subvariant with reputation!");
 				end
 			end,
+			__condition = function(t)
+				return t.maxReputation
+			end,
 		},
 	},
 };
-local WorldQuestConditional = function(t, variants)
+local WorldQuestConditional = function(t)
 	if t.isWorldQuest then
-		if t.maxReputation then
-			setmetatable(t, variants.AndReputation);
-			return true, true;
-		end
 		return true;
 	end
 end;

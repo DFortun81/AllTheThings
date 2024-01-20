@@ -11,15 +11,6 @@ local IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompletedForObject;
 local C_QuestLog_IsOnQuest, ipairs, setmetatable
 	= C_QuestLog.IsOnQuest, ipairs, setmetatable;
 
-local ObjectWithQuestConditional = function(t, variants)
-	if t.questID then
-		if t.lc then
-			setmetatable(t, variants.AndLockCriteria);
-			return true, true;
-		end
-		return true;
-	end
-end;
 -- Object Lib (as in "World Object")
 app.CreateObject = app.CreateClass("Object", "objectID", {
 	["text"] = function(t)
@@ -89,10 +80,7 @@ end,
 		return t.collected == 1;
 	end,
 	variants = {
-		AndLockCriteria = {
-			collectible = app.CollectibleAsQuestOrAsLocked,
-			locked = app.LockedAsQuest,
-		},
+		AndLockCriteria = app.GlobalVariants.AndLockCriteria,
 	},
-}, ObjectWithQuestConditional);
+}, function(t) return t.questID end);
 end

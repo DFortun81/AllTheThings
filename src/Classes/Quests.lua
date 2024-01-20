@@ -1173,6 +1173,17 @@ local function QuestWithReputationCollectibleAsCost(t)
 		end
 	end
 end
+-- Basically anything in ATT which has QuestID needs to also support being Locked...
+-- Guess it's easiest for now to make a global variant and just 'remember' to
+-- add it in every possible Class which could have a questID...
+local AndLockCriteria = {
+	collectible = CollectibleAsQuestOrAsLocked,
+	locked = LockedAsQuest,
+	__condition = function(t)
+		return t.lc or t.altQuests
+	end,
+}
+app.GlobalVariants.AndLockCriteria = AndLockCriteria
 
 -- Party Sync Support
 local IsQuestReplayable, OnUpdateForPartySyncedQuest = C_QuestLog.IsQuestReplayable;
@@ -1334,13 +1345,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	end,
 	indicatorIcon = GetQuestIndicator,
 },
--- Retail: Some Reputation-linked Quests are also able to be Locked
-not app.IsClassic and "WithReputationWithLockCriteria" or false, {
-	description = QuestWithReputationDescription,
-	-- Retail: Quests which have a maxrepuation can be considered a Cost for the respective Faction
-	collectibleAsCost = not app.IsClassic and QuestWithReputationCollectibleAsCost or nil,
-	locked = LockedAsQuest,
-}, (function(t) return t.maxReputation and t.lc; end),
 "WithReputation", {
 	-- Classic: Quests which give Reputation are always collectible if tracking Quests & Reputations
 	collectible = app.IsClassic and function(t)
@@ -1374,24 +1378,10 @@ not app.IsClassic and "WithReputationWithLockCriteria" or false, {
 	description = QuestWithReputationDescription,
 	-- Retail: Quests which have a maxrepuation can be considered a Cost for the respective Faction
 	collectibleAsCost = not app.IsClassic and QuestWithReputationCollectibleAsCost or nil,
+	variants = {
+		AndLockCriteria = AndLockCriteria,
+	},
 }, (function(t) return t.maxReputation; end),
--- Retail: Breadcrumb w/ Locked Quest support
-not app.IsClassic and "AsBreadcrumbWithLockCriteria" or false, {
-	text = function(t)
-		return t.locked and Colorize(t.name, app.Colors.Locked) or Colorize(t.name, app.Colors.Breadcrumb)
-	end,
-	collectible = CollectibleAsQuestOrAsLocked,
-	locked = function(t)
-		if LockedAsQuest(t) or LockedAsBreadcrumb(t) then
-			return true
-		end
-	end,
-}, (function(t) return (t.lc or t.altQuests) and t.isBreadcrumb; end),
--- Both: Locked Quest support
-"WithLockCriteria", {
-	collectible = CollectibleAsQuestOrAsLocked,
-	locked = LockedAsQuest,
-}, (function(t) return t.lc or t.altQuests; end),
 -- Both: Breadcrumbs
 "AsBreadcrumb", {
 	text = function(t)
@@ -1415,6 +1405,9 @@ not app.IsClassic and "AsBreadcrumbWithLockCriteria" or false, {
 	-- Retail: Breadcrumbs are just regular quests, or they can be locked and you still want to collect them (via Party Sync)... because why not?
 	end or CollectibleAsQuestOrAsLocked,
 	locked = LockedAsBreadcrumb,
+	variants = {
+		AndLockCriteria = AndLockCriteria,
+	},
 }, (function(t) return t.isBreadcrumb; end)
 -- Both: World Quests (Baked back into Quest for now since multiple types can be WorldQuests)
 --[[
@@ -1430,6 +1423,8 @@ not app.IsClassic and "AsBreadcrumbWithLockCriteria" or false, {
 	end,
 }, (function(t) return (t.isWorldQuest or IsWorldQuest(t)); end)
 --]]
+-- Both: Locked Quest support (no way to make a variant on the base Class at this time)
+,"WithLockCriteria", app.CloneDictionary(AndLockCriteria), AndLockCriteria.__condition
 );
 
 app.CreateQuest = createQuest;
@@ -2063,9 +2058,6 @@ if app.IsRetail then
 	app.TryPopulateQuestRewards = TryPopulateQuestRewards;
 end
 
--- External API
-local api = {};
-app.Modules.Quests = api;
 app.AddEventHandler("OnStartup", function()
 	OneTimeQuests = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true).OneTimeQuests;
 end)
