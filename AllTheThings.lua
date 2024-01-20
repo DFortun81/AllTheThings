@@ -15289,7 +15289,6 @@ customWindowUpdates["Bounty"] = function(self, force, got)
 				["description"] = "These items were likely not readded with 10.1.7 or their source is currently unknown.",
 				["g"] = {
 					app.CreateItemSource(85, 778),	-- Kobold Excavation Pick
-					app.CreateItemSource(2280, 6180),	-- Slarkskin
 					app.CreateItemSource(1932, 4951),	-- Squeeler's Belt
 					app.CreateItem(1462),	-- Ring of the Shadow
 					app.CreateItem(1404),	-- Tidal Charm

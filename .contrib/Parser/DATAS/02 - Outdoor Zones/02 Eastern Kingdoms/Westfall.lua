@@ -1483,11 +1483,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { "added 10.1.7" },	-- ATT Discord 05.09.2023
 						}),
 						i(6180, {	-- Slarkskin
-							["timeline"] = { "removed 4.0.3" },	-- Not yet confirmed!
-							-- ["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
-							-- #if AFTER 10.1.7
-							["isBounty"] = true,
-							-- #endif
+							["timeline"] = { "removed 4.0.3", "added 10.2.0" },	-- ATT Discord 01.19.2024
 						}),
 					},
 				}),
