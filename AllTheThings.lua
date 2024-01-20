@@ -2564,6 +2564,17 @@ local ResolveFunctions = {
 		end
 		PruneFinalized = { "g" };
 	end,
+	-- Instruction to search the full database for an achievementID and persist the associated Criteria
+	["partial_achievement"] = function(finalized, searchResults, o, cmd, achID)
+		local cache = app.SearchForField("achievementID", achID)
+		local crit
+		for i=1,#cache do
+			crit = cache[i]
+			if crit.criteriaID then
+				searchResults[#searchResults + 1] = crit
+			end
+		end
+	end,
 	-- Instruction to simply 'prune' sub-groups from the finalized selection, or specified fields
 	["prune"] = function(finalized, searchResults, o, cmd, ...)
 		local vals = select("#", ...);

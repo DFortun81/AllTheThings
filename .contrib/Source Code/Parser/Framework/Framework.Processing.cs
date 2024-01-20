@@ -1526,9 +1526,15 @@ namespace ATT
 
             // Pull in any defined Achievement Criteria/Tree unless we've defined it a 'meta' Achievement
             if (achInfo.TryGetValue("criteriaTreeID", out long criteriaTreeID) &&
-                TryGetTypeDBObject(criteriaTreeID, out CriteriaTree criteriaTree) &&
-                !CheckSingleSymlink(data, "meta_achievement"))
+                TryGetTypeDBObject(criteriaTreeID, out CriteriaTree criteriaTree))
             {
+                // Some Achievements we use specific symlinks to show information instead of Criteria
+                if (CheckSymlink(data, "meta_achievement", "partial_achievement"))
+                {
+                    LogDebug($"INFO: Achievement {achID} skipping Criteria incorporation due to symlink:", data["sym"]);
+                    return;
+                }
+
                 // CriteriaTree can be linked to a Parent, or CriteriaID
                 Incorporate_CriteriaTree(achID, data, criteriaTree.ID, criteriaTree);
             }
@@ -2124,11 +2130,11 @@ namespace ATT
             return incorporated;
         }
 
-        private static bool CheckSingleSymlink(IDictionary<string, object> data, string command)
+        private static bool CheckSymlink(IDictionary<string, object> data, params string[] commands)
         {
-            return data.TryGetValue("sym", out List<object> symObj) && symObj.Count == 1 &&
+            return data.TryGetValue("sym", out List<object> symObj) && symObj.Count >= 1 &&
                                 symObj.First() is List<object> symCmdObj && symCmdObj.Count >= 1 &&
-                                symCmdObj.First() is string symCmdStr && symCmdStr == command;
+                                symCmdObj.First() is string symCmdStr && commands.Contains(symCmdStr);
         }
 
         private static bool Incorporate_DataCloning(IDictionary<string, object> data)
