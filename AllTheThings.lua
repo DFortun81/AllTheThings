@@ -507,6 +507,7 @@ app.RefreshTradeSkillCache = function()
 	wipe(cache);
 	-- "Professions" that anyone can "know"
 	cache[2720] = 1;	-- Junkyard Tinkering
+	cache[2787] = 1;	-- Abominable Stitching
 	cache[2791] = 1;	-- Ascension Crafting
 	cache[2811] = 1;	-- Stygia Crafting
 	cache[2819] = 1;	-- Protoform Synthesis

@@ -588,7 +588,7 @@ i(38599, 0);	-- Dark Arctic Chestpiece
 i(38598, 0);	-- Dark Arctic Leggings
 
 -----------------
--- PATCH 3.0.2 --
+-- PATCH 3.0.3 --
 -----------------
 --- TRAINER ---
 i(0, 51302);	-- Leatherworking (Grand Master)
