@@ -12695,7 +12695,7 @@ RowOnEnter = function (self)
 		-- nil means no search results were attached, so we can manually add it below
 		local refQuestID = reference.questID;
 		if doSearch or GameTooltip.ATTAttachComplete == nil then
-			if reference.creatureID or reference.encounterID or reference.objectID then
+			if reference.creatureID or reference.encounterID then
 				-- rows with these fields should not include the extra search info
 			elseif reference.currencyID then
 				GameTooltip:SetCurrencyByID(reference.currencyID, 1);
@@ -12703,6 +12703,8 @@ RowOnEnter = function (self)
 				AttachTooltipSearchResults(GameTooltip, 1, "azeriteEssenceID:" .. reference.azeriteEssenceID .. (reference.rank or 0), SearchForField, "azeriteEssenceID", reference.azeriteEssenceID, reference.rank);
 			elseif reference.speciesID then
 				AttachTooltipSearchResults(GameTooltip, 1, "speciesID:" .. reference.speciesID, SearchForField, "speciesID", reference.speciesID);
+			elseif reference.objectID then
+				AttachTooltipSearchResults(GameTooltip, 1, "objectID:" .. reference.objectID, SearchForField, "objectID", reference.objectID);
 			elseif reference.titleID then
 				AttachTooltipSearchResults(GameTooltip, 1, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID);
 			elseif refQuestID then
