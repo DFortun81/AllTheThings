@@ -1205,6 +1205,7 @@ root(ROOTS.Unsorted, {
 			i(212157),	-- An Invitation
 			i(211965),	-- Hearthstone Wild Card
 			-- Quest Items
+			i(210081),	-- Flaming Torch
 			i(212155),	-- Hearthstone Invitation Letter
 			i(212156),	-- Hearthstone Invitation Letter
 			-- Rewards
@@ -1214,18 +1215,10 @@ root(ROOTS.Unsorted, {
 			i(212607),	-- Reno's Lucky Hat [Hearthstone]
 			i(212644),	-- Taverner's Belt [Hearthstone]
 			i(212336),	-- The Tavern's Tabard
-
-			--
-			i(210081),	-- Flaming Torch
-			i(211937),	-- Scarlet Pendant
-			i(211938),	-- Flame Inscribed Band
-			i(211943),	-- Scarlet Silk Bandage
 		})),
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			i(211927),	-- Tattered DreamleafS
-
 			i(211260),	-- Crimson Gladiator's Spear
-
 			i(208878),	-- Adventurer's Footlocker
 			--
 			i(206448),	-- Fyr'alath the Dreamrender
@@ -1274,7 +1267,6 @@ root(ROOTS.Unsorted, {
 			i(210871),	-- Greater Ember of Fyr'alath
 			i(190887),	-- Highlord's Ceremonial Drape
 			i(190892),	-- Orange-Sleeved Shirt
-			i(190671),	-- Tabard of Wild Might
 			i(190854),	-- Heavily Stitched Wallet
 			i(213580),	-- Heart-Lesion Helm
 			i(213581),	-- Heart-Lesion Helm

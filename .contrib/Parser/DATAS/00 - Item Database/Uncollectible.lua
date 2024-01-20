@@ -1067,6 +1067,11 @@ i(211270);	-- Pristine Core Leather
 ------------------
 -- PATCH 10.2.5 --
 ------------------
+--- White Consumable ---
+i(211943);	-- Scarlet Silk Bandage
+--- Trash ---
+i(211937);	-- Scarlet Pendant
+i(211938);	-- Flame Inscribed Band
 --- Azerothian Archives Trash ---
 i(205221);	-- Simple Pottery Fragment
 i(205222);	-- Wooden Caravan Spoke
