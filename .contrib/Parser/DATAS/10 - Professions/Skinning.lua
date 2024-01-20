@@ -143,7 +143,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 			}),
 		}),
 		ach(18832, {	-- Elusive Legend of the Dragon Isles (1)
-			["sym"] = {{"select","achievementID",18833},{"pop"}},	-- Elusive Legends of the Dragon Isles
+			["sym"] = {{"partial_achievement",18833}},	-- Elusive Legends of the Dragon Isles
 		}),
 		ach(18833, {	-- Elusive Legends of the Dragon Isles
 			crit(61473, {	-- Elusive Elder Drake

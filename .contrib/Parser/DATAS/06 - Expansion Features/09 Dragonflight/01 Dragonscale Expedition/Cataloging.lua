@@ -5,6 +5,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 	n(DRAGONSCALE_EXPEDITION, {
 		n(CATALOGING, bubbleDownSelf({ ["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 8 } }, {
 			n(ACHIEVEMENTS, {
+				ach(16572, {	-- Legendary Photograph
+					["sym"] = {{"partial_achievement",16570}},	-- A Legendary Album
+				}),
+				ach(16573, {	-- Legendary Photographs
+					["sym"] = {{"partial_achievement",16570}},	-- A Legendary Album
+				}),
 				ach(16570, {	-- A Legendary Album
 					crit(55758, {	-- Abu'Gar
 						["cr"] = 195792,
@@ -34,12 +40,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						["cr"] = 185089,
 						["_quests"] = { 70699 },	-- Cataloging Thaldraszus
 					}),
-				}),
-				ach(16572, {	-- Legendary Photograph
-					["sym"] = {{"select","achievementID",16570},{"pop"}},	-- same criteria as final achievement
-				}),
-				ach(16573, {	-- Legendary Photographs
-					["sym"] = {{"select","achievementID",16570},{"pop"}},	-- same criteria as final achievement
 				}),
 				ach(16567),	-- A Lot of Great Shots!
 				ach(16566),	-- Great Shot!

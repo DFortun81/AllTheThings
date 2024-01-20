@@ -1529,7 +1529,7 @@ namespace ATT
                 TryGetTypeDBObject(criteriaTreeID, out CriteriaTree criteriaTree))
             {
                 // Some Achievements we use specific symlinks to show information instead of Criteria
-                if (CheckSymlink(data, "meta_achievement", "partial_achievement"))
+                if (CheckSymlink(data, "meta_achievement", "partial_achievement", "select"))
                 {
                     LogDebug($"INFO: Achievement {achID} skipping Criteria incorporation due to symlink:", data["sym"]);
                     return;

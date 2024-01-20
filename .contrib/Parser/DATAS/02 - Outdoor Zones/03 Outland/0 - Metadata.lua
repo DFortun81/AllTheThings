@@ -111,8 +111,12 @@ root(ROOTS.Zones, {
 					["races"] = HORDE_ONLY,
 				}),
 				ach(1311, {	-- Medium Rare
-					-- identical criteria as full achievement
-					["sym"] = {{"select","achievementID",1312},{"pop"}},	-- Bloody Rare Criteria
+					["sym"] =
+					-- #IF ANYCLASSIC
+						{{"select","achievementID",1312},{"pop"}},	-- Bloody Rare Criteria
+					-- #ELSE
+						{{"partial_achievement",1312}},	-- Bloody Rare
+					-- #ENDIF
 					["timeline"] = { "added 3.0.1" },
 				}),
 				applyclassicphase(TBC_PHASE_ONE, ach(44, {	-- Outland Explorer [7.0.3] / Explore Outland

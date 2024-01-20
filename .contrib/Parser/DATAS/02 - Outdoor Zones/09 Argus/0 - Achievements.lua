@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			i(153041),	-- Bleakhoof Ruinstrider (MOUNT!)
 		}),
 		ach(12077, {	-- Adventurer of Argus
-			["sym"] = {{"select","achievementID",12078},{"pop"}},	-- Commander of Argus
+			["sym"] = {{"partial_achievement",12078}},	-- Commander of Argus
 		}),
 		ach(12104, {	-- And We're All Out of Mana Buns
 			title(367),	-- Demonslayer <Name>

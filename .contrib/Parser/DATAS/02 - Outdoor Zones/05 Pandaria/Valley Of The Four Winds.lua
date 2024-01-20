@@ -49,7 +49,7 @@ root(ROOTS.Zones, {
 						["g"] = {
 							n(ACHIEVEMENTS, {
 								ach(6551, { -- Friend on the Farm
-									["sym"] = {{"select","achievementID",6552},{"pop"}},	-- same criteria as full achieve
+									["sym"] = {{"partial_achievement",6552}},	-- Friends on the Farm
 								}),
 								ach(6552, {		-- Friends on the Farm
 									crit(19398, { -- Farmer Fung

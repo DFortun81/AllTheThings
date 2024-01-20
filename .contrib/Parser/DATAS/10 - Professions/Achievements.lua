@@ -295,7 +295,7 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 	ach(13516, {	-- Massive Tool
 		-- #if AFTER 10.1.7
 		-- Identical Criteria as Main Achievement
-		["sym"] = {{"select","achievementID",18778},{"pop"}},	-- Massive Toolshed
+		["sym"] = {{"partial_achievement",18778}},	-- Massive Toolshed
 		-- #else
 		["providers"] = {
 			{ "i", 164766 },	-- Iwen's Enchanting Rod

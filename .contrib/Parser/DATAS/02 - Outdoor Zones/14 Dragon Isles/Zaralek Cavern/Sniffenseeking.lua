@@ -44,11 +44,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						crit(59760),	-- Liars of Spirit
 					}),
 					ach(17832, {	-- Sniffen Around
-						-- identical criteria as full achievement
-						["sym"] = {{"select","achievementID",17833},{"pop"} },	--  Sniffen Sage Criteria
+						-- not using partial_achievement since there are not actual Criteria generated for Sniffen Sage
+						["sym"] = {{"select","achievementID",17833},{"pop"}},	--  Sniffen Sage
 					}),
 					ach(17833, {	-- Sniffen Sage
-						-- No longer individual criteria here...
 						["sym"] = {{"select","questID",
 							75765,	-- Liquid Art
 							75766,	-- Ruby in the Rough

@@ -111,8 +111,12 @@ root(ROOTS.Zones, {
 					["races"] = HORDE_ONLY,
 				})),
 				ach(2256, {	-- Northern Exposure
-					-- identical criteria as full achievement
-					["sym"] = {{"select","achievementID",2257},{"pop"}},	-- Frostbitten Criteria
+					["sym"] =
+					-- #IF ANYCLASSIC
+						{{"select","achievementID",2257},{"pop"}},	-- Frostbitten Criteria
+					-- #ELSE
+						{{"partial_achievement",2257}},	-- Frostbitten
+					-- #ENDIF
 				}),
 				applyclassicphase(WRATH_PHASE_ONE, ach(45, {	-- Northrend Explorer [7.0.3] / Explore Northrend
 					-- Meta Achievement

@@ -407,7 +407,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			ach(14894, {	-- To 'Ghast, Two Curios (2 of these criteria)
-				["sym"] = {{"select","achievementID",14895},{"pop"}},	-- same criteria as full achieve
+				["sym"] = {{"partial_achievement",14895}},	-- 'Ghast Five
 			}),
 			ach(15648, sharedDataSelf({ ["timeline"] = { ADDED_9_2_5 } }, {	-- Walking in Maw-mphis
 				-- Meta Achievement
