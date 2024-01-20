@@ -1184,6 +1184,33 @@ local AndLockCriteria = {
 	end,
 }
 app.GlobalVariants.AndLockCriteria = AndLockCriteria
+if app.IsRetail then
+	local strsplit = strsplit
+	local WithTypeName = {
+		name = function(t)
+			local type, id = strsplit(":",t.type)
+			local data = app.GetAutomaticHeaderData(id,type)
+			for key,value in pairs(data) do
+				t[key] = value;
+			end
+			return data.name
+		end,
+		icon = function(t)
+			local type, id = strsplit(":",t.type)
+			local data = app.GetAutomaticHeaderData(id,type)
+			for key,value in pairs(data) do
+				t[key] = value;
+			end
+			return data.icon
+		end,
+		__condition = function(t)
+			return t.type
+		end,
+	}
+	app.GlobalVariants.WithTypeName = WithTypeName
+else
+	app.GlobalVariants.WithTypeName = {}
+end
 
 -- Party Sync Support
 local IsQuestReplayable, OnUpdateForPartySyncedQuest = C_QuestLog.IsQuestReplayable;
@@ -1425,6 +1452,8 @@ local createQuest = app.CreateClass("Quest", "questID", {
 --]]
 -- Both: Locked Quest support (no way to make a variant on the base Class at this time)
 ,"WithLockCriteria", app.CloneDictionary(AndLockCriteria), AndLockCriteria.__condition
+-- Retail: Quests with a 'type' field can derive their name from other in-game data automatically
+,app.IsRetail and "WithTypeName" or false, app.CloneDictionary(app.GlobalVariants.WithTypeName), app.GlobalVariants.WithTypeName.__condition
 );
 
 app.CreateQuest = createQuest;
