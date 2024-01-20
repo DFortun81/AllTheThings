@@ -10037,13 +10037,14 @@ app.BaseNPC = app.BaseObjectFields(npcFields, "BaseNPC");
 
 local fields = RawCloneData(npcFields);
 fields.altcollected = npcFields.altcollectedAsQuest;
-fields.collectible = npcFields.collectibleAsQuest;
 fields.collected = npcFields.collectedAsQuest;
 fields.trackable = npcFields.trackableAsQuest;
 fields.repeatable = npcFields.repeatableAsQuest;
 fields.saved = fields.savedAsQuest;
+-- this would be an actual variant once migrated
+fields.collectible = app.GlobalVariants.AndLockCriteria.collectible;
+fields.locked = app.GlobalVariants.AndLockCriteria.locked
 app.BaseNPCWithQuest = app.BaseObjectFields(fields, "BaseNPCWithQuest");
-
 
 -- Header Lib
 local headerFields = {
