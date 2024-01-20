@@ -1127,3 +1127,5 @@ i(212766);	-- Amphora Fragment
 i(213212);	-- Whalebone Knife
 i(213182);	-- Worry Stone
 i(213195);	-- Charred Doodle
+i(213374);	-- Niffen Noseplug
+i(213384);	-- Horsehair Doll

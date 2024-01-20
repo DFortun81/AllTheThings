@@ -837,11 +837,9 @@ root(ROOTS.Unsorted, {
 				i(213388),	-- Faded Centaur Painting
 				i(212765),	-- Fish Bones
 				i(212382),	-- Fluorescent Splitblade
-				i(213384),	-- Horsehair Doll
 				i(211383),	-- Luvkip
 				i(213205),	-- Mad Scribblings
 				i(213026),	-- Massive Drakonid Brush
-				i(213374),	-- Niffen Noseplug
 				i(212768),	-- Niffen-Sized Dagger
 				i(213194),	-- Petrified Rations
 				i(213196),	-- Pressed Flower
