@@ -8621,11 +8621,12 @@ fields.collected = itemFields.collectedAsFaction;
 app.BaseItemWithFactionID = app.BaseObjectFields(fields, "BaseItemWithFactionID");
 
 local fields = RawCloneData(itemFields);
-fields.collectible = itemFields.collectibleAsQuest;
 fields.collected = itemFields.collectedAsQuest;
 fields.trackable = itemFields.trackableAsQuest;
 fields.saved = itemFields.savedAsQuest;
-fields.locked = app.LockedAsQuest;
+-- this would be an actual variant once migrated
+fields.collectible = app.GlobalVariants.AndLockCriteria.collectible;
+fields.locked = app.GlobalVariants.AndLockCriteria.locked
 app.BaseItemWithQuestID = app.BaseObjectFields(fields, "BaseItemWithQuestID");
 
 local fields = RawCloneData(itemFields);
