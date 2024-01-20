@@ -50,38 +50,38 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					i(213133),	-- Reese (PET!)
 				}),
 				ach(19789),	-- Relic Rescuer
-				ach(19788, {	-- Tome Comber
-					crit(65389, {
-						["provider"] = { "i", 213185 },	-- Dusty Centaur Tome
-					}),
-					crit(65390, {
-						["provider"] = { "i", 213175 },	-- Dusty Djaradin Tome
-					}),
-					crit(65391, {
-						["provider"] = { "i", 213188 },	-- Dusty Dracthyr Tome
-					}),
-					crit(65392, {
-						["provider"] = { "i", 213187 },	-- Dusty Drakonid Tome
-					}),
-					crit(65393, {
-						["provider"] = { "i", 213186 },	-- Dusty Niffen Tome
-					}),
-					crit(65394, {
-						["provider"] = { "i", 213190 },	-- Preserved Djaradin Tome
-					}),
-					crit(65395, {
-						["provider"] = { "i", 213189 }, -- Preserved Dragonkin Tome
-					}),
-					crit(65396, {
-						["provider"] = { "i", 13176 },	-- Preserved Isles Tome
-					}),
-					crit(65397, {
-						["provider"] = { "i", 213177 },	-- Immaculate Tome
-					}),
-				}),
+				ach(19788),	-- Tome Comber
 				ach(19786),	-- When a Rock is Just a Rock
 			}),
 			n(DROPS, {
+				i(213185, { -- Dusty Centaur Tome
+					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
+				}),
+				i(213175, { -- Dusty Djaradin Tome
+					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
+				}),
+				i(213188, { -- Dusty Dracthyr Tome
+					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
+				}),
+				i(213187, { -- Dusty Drakonid Tome
+					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
+				}),
+				i(213186, { -- Dusty Niffen Tome
+					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
+				}),
+				i(213190, { -- Preserved Djaradin Tome
+					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
+				}),
+				i(213189, { -- Preserved Dragonkin Tome
+					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
+				}),
+				i(213176, { -- Preserved Isles Tome
+					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
+				}),
+				i(213177, {	-- Immaculate Tome
+					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
+				}),
+				---
 				i(213389),	-- Ancient Centaur Diary
 				i(213025),	-- Ancient Djaradin Bolt
 				i(213020),	-- Ancient Drakonid Shovel
