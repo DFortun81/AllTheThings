@@ -510,8 +510,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					q(78645, {	-- Excavation: Buried in the Riverbed
 						["coord"] = { 65.9, 45.7, OHNAHRAN_PLAINS },
 					}),
+					q(78739, {	-- Excavation: The Trove in the Tower
+						["coord"] = { 46.9, 48.8, ZARALEK_CAVERN },
+					}),
+					q(76587, {	-- Research: Centaur of Ohn'ahran Plains
+						["coord"] = { 69, 34.3, OHNAHRAN_PLAINS },
+					}),
 					q(76739, {	-- Research: Niffen of Zaralek Cavern
 						["coord"] = { 47.6, 48.6, ZARALEK_CAVERN },
+					}),
+					q(78616, {	-- Technoscrying: The Mysteries of the Concord Observatory
+						["coord"] = { 55, 46.2, THE_WAKING_SHORES },
 					}),
 					q(78820, {	-- Technoscrying: The Mysteries of Igira's Watch
 						["coord"] = { 38.1, 49.8, ZARALEK_CAVERN },
@@ -536,5 +545,6 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, {
 		q(79661),	-- After completing ZC world quest for Azerothian Archive
 		q(79662),	-- After completing Ohn'ahran Plains world quest for Azerothian Archive
 		q(79663),	-- After completing 2nd ZC world quest for Azerothian Archive
+		q(79596),	-- After completing 'Research: Centaur of Ohn'ahran Plains'
 	})),
 }));
