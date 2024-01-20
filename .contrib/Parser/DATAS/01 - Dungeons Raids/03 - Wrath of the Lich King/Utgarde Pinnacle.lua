@@ -151,16 +151,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					["lvl"] = lvlsquish(78, 78, 20),
 					["groups"] = {
 						objective(1, {	-- 0/5 Untarnished Silver Bar
-							["provider"] = { "i", 43238 },	-- Untarnished Silver Bar
+							["providers"] = {
+								{ "i",  43238 },	-- Untarnished Silver Bar
+								{ "o", 192941 },	-- Untarnished Silver Bar
+							},
 						}),
 						objective(2, {	-- 0/3 Shiny Bauble
-							["provider"] = { "i", 43239 },	-- Shiny Bauble
+							["providers"] = {
+								{ "i",  43239 },	-- Shiny Bauble
+								{ "o", 192942 },	-- Shiny Bauble
+								{ "o", 192943 },	-- Shiny Bauble
+							},
 						}),
 						objective(3, {	-- 0/2 Golden Goblet
-							["provider"] = { "i", 43240 },	-- Golden Goblet
+							["providers"] = {
+								{ "i",  43240 },	-- Golden Goblet
+								{ "o", 192944 },	-- Golden Goblet
+							},
 						}),
 						objective(4, {	-- 0/1 Jade Statue
-							["provider"] = { "i", 43241 },	-- Jade Statue
+							["providers"] = {
+								{ "i",  43241 },	-- Jade Statue
+								{ "o", 192945 },	-- Jade Statue
+							},
 						}),
 						i(44404),	-- Bauble-Woven Gown
 						i(44405),	-- Exotic Leather Tunic
