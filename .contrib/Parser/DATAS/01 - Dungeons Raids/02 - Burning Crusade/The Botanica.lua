@@ -113,7 +113,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 						i(28318),	-- Obsidian Clodstompers
 						i(28315),	-- Stormreaver Warblades
 						i(23617),	-- Plans: Earthpeace Breastplate (RECIPE!)
-						i(31744),	-- Botanist's Field Guide
 					},
 				}),
 				e(560, {	-- Thorngrin the Tender
@@ -243,7 +242,6 @@ root(ROOTS.Instances, tier(TBC_TIER, applyclassicphase(TBC_PHASE_ONE, {
 							i(28318),	-- Obsidian Clodstompers
 							i(28315),	-- Stormreaver Warblades
 							i(23617),	-- Plans: Earthpeace Breastplate (RECIPE!)
-							i(31744),	-- Botanist's Field Guide
 						},
 					}),
 					e(560, {	-- Thorngrin the Tender

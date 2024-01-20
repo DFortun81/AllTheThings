@@ -1094,6 +1094,13 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10001,	-- The Master Planner
 						["coord"] = { 27.4, 42.0, NAGRAND },
 					}),
+					q(9797, {	-- Reinforcements for Garadar
+						["qg"] = 18091,	-- Messenger Gazgrigg
+						["coord"] = { 32.0, 50.4, ZANGARMARSH },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = lvlsquish(64, 64, 10),
+					}),
 					q(10650, {	-- Return to the Aldor
 						["qg"] = 18417,	-- Altruis the Sufferer
 						["sourceQuest"] = 10649,	-- The Book of Fel Names

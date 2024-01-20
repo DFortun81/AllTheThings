@@ -664,6 +664,14 @@ root(ROOTS.Zones, {
 						["qg"] = 18446,	-- Earthbinder Tavgren
 						["coord"] = { 44.3, 26.3, TEROKKAR_FOREST },
 					}),
+					q(10104, {	-- Concerns About Tuurem
+						["qg"] = 18008,	-- Ikuti
+						["altQuests"] = { 9793 },	-- The Fate of Tuurem
+						["coord"] = { 41.8, 27.2, ZANGARMARSH },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = lvlsquish(62, 62, 10),
+					}),
 					q(10922, {	-- Digging Through Bones -- aa
 						["qg"] = 22458,	-- Chief Archaeologist Letoll
 						["coord"] = { 31.0, 76.1, TEROKKAR_FOREST },
@@ -1018,6 +1026,17 @@ root(ROOTS.Zones, {
 							i(31796),	-- Sha'tari Marksman's Gloves
 							i(31794),	-- Sha'tari Vindicator's Legplates
 						},
+					}),
+					q(9793, {	-- The Fate of Tuurem
+						["providers"] = {
+							{ "n", 18004 },	-- Vindicator Idaar
+							{ "i", 24415 },	-- Vindicator Idaar's Letter
+						},
+						["altQuests"] = { 10104 },	-- Concerns About Tuurem
+						["coord"] = { 68.2, 50.0, ZANGARMARSH },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = lvlsquish(62, 62, 10),
 					}),
 					q(10446, {	-- The Final Code (A)
 						["qg"] = 21006,	-- Lieutenant Meridian
