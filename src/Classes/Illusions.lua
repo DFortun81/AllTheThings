@@ -7,6 +7,8 @@ local app = select(2, ...);
 local GetItemInfo =
 	  GetItemInfo;
 
+local ATTAccountWideData
+
 -- Illusion Class
 local illusionFields = {
 	["filterID"] = function(t)
@@ -76,4 +78,8 @@ app.CreateIllusion = app.CreateClass("Illusion", "illusionID", illusionFields,
 		return "|cffff80ff[" .. t.name .. "]|r";
 	end
 }, function(t) return t.itemID; end);
+
+app.AddEventHandler("OnStartup", function()
+	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
+end)
 end

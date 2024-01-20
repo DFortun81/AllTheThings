@@ -2,7 +2,7 @@ do
 local app = select(2, ...);
 
 -- App locals
-
+local ATTAccountWideData, ATTCharacterData
 
 -- Global locals
 local string_gsub = string.gsub;
@@ -101,4 +101,8 @@ else
 end
 app:RegisterEvent("PLAYER_DEAD");
 app.CreateDeathClass = app.CreateClass("DeathTracker", "deaths", fields);
+app.AddEventHandler("OnStartup", function()
+	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
+	ATTCharacterData = app.LocalizeGlobalIfAllowed("ATTCharacterData", true);
+end)
 end

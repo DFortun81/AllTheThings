@@ -14,6 +14,7 @@ local C_MountJournal_GetMountInfoByID, C_MountJournal_GetMountIDs, PlayerHasToy,
 
 -- App locals
 local StartCoroutine = app.StartCoroutine;
+local ATTAccountWideData
 
 local function CacheAccountWideCompleteViaAchievement(accountWideData)
 	-- Cache some collection states for account wide quests that aren't actually granted account wide and can be flagged using an achievementID. (Allied Races)
@@ -271,8 +272,6 @@ local function FixWrongAccountWideQuests(accountWideData)
 end
 
 local function RefreshCollections()
-	-- account-data is a global
-	local ATTAccountWideData = ATTAccountWideData;
 	local currentCharacter = app.CurrentCharacter;
 	local charGuid = app.GUID;
 	-- for the first auto-refresh, don't actually print to chat since some users don't like that auto-chat on login
@@ -405,3 +404,6 @@ end
 app.RefreshCollections = function()
 	StartCoroutine("RefreshingCollections", RefreshCollections);
 end
+app.AddEventHandler("OnStartup", function()
+	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
+end)
