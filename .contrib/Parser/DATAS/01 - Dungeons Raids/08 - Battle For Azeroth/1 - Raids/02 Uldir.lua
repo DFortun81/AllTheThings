@@ -864,7 +864,7 @@ root(ROOTS.Instances, tier(BFA_TIER, bubbleDown({ ["timeline"] = { "added 8.0.1"
 								title(374),	-- <Name>, Famed Slayer of G'huun
 							},
 						})),
-						ach(12551),		-- Double Dribble
+						ach(12551),	-- Double Dribble
 						i(160690),	-- Heptavium, Staff of Torturous Knowledge
 						i(160693),	-- Lancet of the Deft Hand
 						i(160694),	-- Re-Origination Pulse Rifle

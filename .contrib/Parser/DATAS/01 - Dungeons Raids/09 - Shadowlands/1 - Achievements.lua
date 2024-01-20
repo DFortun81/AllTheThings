@@ -94,7 +94,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 				14289,	-- Kaal-ed Shot
 			}},
 			["g"] = {
-				i(184183),		-- Voracious Gorger (MOUNT!)
+				i(184183),	-- Voracious Gorger (MOUNT!)
 			},
 		}),
 		-- #IF AFTER SHADOWLANDS

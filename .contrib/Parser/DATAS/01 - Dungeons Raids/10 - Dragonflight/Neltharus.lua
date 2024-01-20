@@ -29,8 +29,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 				}),
 			}),
 			n(TREASURES, {
-				-- Don't have ObjectID etc.. atm
-				i(199229),	-- Schematic: Tinker: Breath of Neltharion (RECIPE!)
+				o(384317, {	-- Crumpled Schematic
+					i(199229),	-- Schematic: Tinker: Breath of Neltharion (RECIPE!)
+				}),
 			}),
 			d(NormalPlus, {
 				e(2490, {	-- Chargath, Bane of Scales

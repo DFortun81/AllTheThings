@@ -48,6 +48,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							{"pop"},									-- Discard the Header and acquire all of the children.
 						},
 						-- #ENDIF
+						-- #IF AFTER 9.2.0
+						["groups"] = {
+							i(188759),	-- Sealed Vintage Darkmoon Deck
+						},
+						-- #ENDIF
 					}),
 					i(194118, {	-- Cosmic Equipment Chest [PvP S3]
 						["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 },

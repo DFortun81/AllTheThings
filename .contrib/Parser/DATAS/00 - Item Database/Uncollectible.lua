@@ -583,6 +583,17 @@ i(123865);	-- Relic of Ursol
 i(178149);	-- Centurion Anima Core
 
 ------------------
+-- PATCH 9.0.5 --
+------------------
+i(184845);	-- Bloodstained Spectacles
+
+------------------
+-- PATCH 9.1.5 --
+------------------
+--- Vendor (Common) ---
+i(187911);	-- Sable "Soup"
+
+------------------
 -- PATCH 10.0.2 --
 ------------------
 --- Vendor (Poor) ---

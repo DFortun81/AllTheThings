@@ -4722,8 +4722,6 @@ root(ROOTS.Unsorted, {
 			i(174283),	-- Stygian Stew
 		})),
 		tier(SL_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_5 } }, {
-			i(184845),	-- Bloodstained Spectacles
-			i(185048),	-- Shoveltusk Soul
 			i(185472),	-- Heritage of the Shu'halo
 			i(185681),	-- Theotar's Egg
 			i(185682),	-- Temel's Egg
@@ -4979,10 +4977,8 @@ root(ROOTS.Unsorted, {
 			i(187520),	-- Gently Shaken Gift
 			i(187561),	-- Winter Veil Gift
 			i(187786),	-- Timeworn Keystone
-			i(187911),	-- Sable "Soup"
 			i(188164),	-- Glyph of the Wild Mushroom
 			i(188168),	-- Kyrian Traveler's Anima Cache
-			i(188759),	-- Sealed Vintage Darkmoon Deck
 		})),
 		tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
 			i(187115),	-- Mawsworn Missive
