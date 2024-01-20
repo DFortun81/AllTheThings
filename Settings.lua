@@ -6,6 +6,8 @@
 local appName, app = ...
 local L = app.L
 local Colorize = app.Modules.Color.Colorize
+local HexToARGB = app.Modules.Color.HexToARGB
+local RGBToHex = app.Modules.Color.RGBToHex
 
 -- The Settings Frame
 local settings = CreateFrame("FRAME", appName .. "-Settings", InterfaceOptionsFramePanelContainer or UIParent, BackdropTemplateMixin and "BackdropTemplate")
@@ -142,6 +144,7 @@ local GeneralSettingsBase = {
 		["Window:BackgroundColor"] = { r = 0, g = 0, b = 0, a = 1 },
 		["Window:BorderColor"] = { r = 1, g = 1, b = 1, a = 1 },
 		["Window:UseClassForBorder"] = false,
+		["Window:CustomColors"] = {},
 	},
 }
 local FilterSettingsBase = {}
@@ -234,6 +237,15 @@ settings.Initialize = function(self)
 		setmetatable(RawSettings.General, GeneralSettingsBase)
 		setmetatable(RawSettings.Tooltips, TooltipSettingsBase)
 		setmetatable(RawSettings.Unobtainable, UnobtainableSettingsBase)
+	end
+
+	-- Initialise custom colors, iterate so if app.Colors gets new colors they aren't lost
+	if not app.DefaultColors then
+		app.DefaultColors = app.Colors
+		local colors = settings:Get("Window:CustomColors")
+		for k, v in pairs(colors) do
+			app.Colors[k] = v
+		end
 	end
 
 	-- Assign the preset filters for your character class as the default states
@@ -1570,12 +1582,7 @@ headerTitle:SetPoint("LEFT", logo, "RIGHT", 0, 0)
 headerTitle:SetScale(1.5)
 
 local buttonDiscord = child:CreateButton(
--- button settings
-{
-	text = L["DISCORD_BUTTON_LABEL"],
-	tooltip = L["DISCORD_BUTTON_TOOLTIP"],
-},
--- function hooks for the button
+{ text = L["DISCORD_BUTTON_LABEL"], tooltip = L["DISCORD_BUTTON_TOOLTIP"], },
 {
 	OnClick = function(self)
 		app:ShowPopupDialogWithEditBox(nil, "discord.gg/allthethings", nil, 10)
@@ -1585,12 +1592,7 @@ buttonDiscord:SetPoint("CENTER", headerTitle, 0, 0)
 buttonDiscord:SetPoint("LEFT", headerTitle, "RIGHT", 10, 0)
 
 local buttonTwitch = child:CreateButton(
--- button settings
-{
-	text = L["TWITCH_BUTTON_LABEL"],
-	tooltip = L["TWITCH_BUTTON_TOOLTIP"],
-},
--- function hooks for the button
+{	text = L["TWITCH_BUTTON_LABEL"], tooltip = L["TWITCH_BUTTON_TOOLTIP"], },
 {
 	OnClick = function(self)
 		app:ShowPopupDialogWithEditBox(nil, "twitch.tv/crieve", nil, 10)
@@ -1599,12 +1601,7 @@ local buttonTwitch = child:CreateButton(
 buttonTwitch:SetPoint("TOPLEFT", buttonDiscord, "TOPRIGHT", 4, 0)
 
 local buttonPatreon = child:CreateButton(
--- button settings
-{
-	text = L["PATREON_BUTTON_LABEL"],
-	tooltip = L["PATREON_BUTTON_TOOLTIP"],
-},
--- function hooks for the button
+{ text = L["PATREON_BUTTON_LABEL"], tooltip = L["PATREON_BUTTON_TOOLTIP"], },
 {
 	OnClick = function(self)
 		app:ShowPopupDialogWithEditBox(nil, "patreon.com/allthethings", nil, 10)
@@ -1613,12 +1610,7 @@ local buttonPatreon = child:CreateButton(
 buttonPatreon:SetPoint("TOPLEFT", buttonTwitch, "TOPRIGHT", 4, 0)
 
 local buttonMerch = child:CreateButton(
--- button settings
-{
-	text = L["MERCH_BUTTON_LABEL"],
-	tooltip = L["MERCH_BUTTON_TOOLTIP"],
-},
--- function hooks for the button
+{ text = L["MERCH_BUTTON_LABEL"], tooltip = L["MERCH_BUTTON_TOOLTIP"], },
 {
 	OnClick = function(self)
 		app:ShowPopupDialogWithEditBox(nil, "designbyhumans.com/shop/allthethings", nil, 10)
@@ -2427,12 +2419,7 @@ local allEquipmentFilters = {	-- Filter IDs
 
 -- The 3 buttons
 local buttonClassDefaults = child:CreateButton(
--- button settings
-{
-	text = L["CLASS_DEFAULTS_BUTTON"],
-	tooltip = L["CLASS_DEFAULTS_BUTTON_TOOLTIP"],
-},
--- function hooks for the button
+{ text = L["CLASS_DEFAULTS_BUTTON"], tooltip = L["CLASS_DEFAULTS_BUTTON_TOOLTIP"], },
 {
 	OnClick = function(self)
 		for key,value in pairs(AllTheThingsSettingsPerCharacter.Filters) do
@@ -2452,12 +2439,7 @@ buttonClassDefaults.OnRefresh = function(self)
 end
 
 local buttonAll = child:CreateButton(
--- button settings
-{
-	text = L["ALL_BUTTON"],
-	tooltip = L["ALL_BUTTON_TOOLTIP"],
-},
--- function hooks for the button
+{ text = L["ALL_BUTTON"], tooltip = L["ALL_BUTTON_TOOLTIP"], },
 {
 	OnClick = function(self)
 		for k,v in pairs(allEquipmentFilters) do
@@ -2476,12 +2458,7 @@ buttonAll.OnRefresh = function(self)
 end
 
 local buttonNone = child:CreateButton(
--- button settings
-{
-	text = L["UNCHECK_ALL_BUTTON"],
-	tooltip = L["UNCHECK_ALL_BUTTON_TOOLTIP"],
-},
--- function hooks for the button
+{ text = L["UNCHECK_ALL_BUTTON"], tooltip = L["UNCHECK_ALL_BUTTON_TOOLTIP"], },
 {
 	OnClick = function(self)
 		for k,v in pairs(allEquipmentFilters) do
@@ -3537,10 +3514,8 @@ headerWindowColors:SetPoint("TOP", checkboxDynamicOff, "BOTTOM", 0, -10)
 local function changeBackgroundColor(restore)
 	local newR, newG, newB, newA
 	if restore then
-		-- The user bailed, we extract the old color from the table created by ShowColorPicker
 		newR, newG, newB, newA = unpack(restore)
 	else
-		-- Something changed
 		newA, newR, newG, newB = ColorPickerFrame:GetColorAlpha(), ColorPickerFrame:GetColorRGB()
 	end
 
@@ -3554,10 +3529,8 @@ end
 local function changeBorderColor(restore)
 	local newR, newG, newB, newA
 	if restore then
-		-- The user bailed, we extract the old color from the table created by ShowColorPicker
 		newR, newG, newB, newA = unpack(restore)
 	else
-		-- Something changed
 		newA, newR, newG, newB = ColorPickerFrame:GetColorAlpha(), ColorPickerFrame:GetColorRGB()
 	end
 
@@ -3578,12 +3551,7 @@ function ShowColorPicker(r, g, b, a, changedCallback)
 end
 
 local buttonBackgroundColor = child:CreateButton(
--- button settings
-{
-	text = L["BACKGROUND"],
-	tooltip = L["BACKGROUND_TOOLTIP"],
-},
--- function hooks for the button
+{ text = L["BACKGROUND"], tooltip = L["BACKGROUND_TOOLTIP"], },
 {
 	OnClick = function(self)
 		local r = tonumber(settings:Get("Window:BackgroundColor").r) or 0
@@ -3596,12 +3564,7 @@ local buttonBackgroundColor = child:CreateButton(
 buttonBackgroundColor:SetPoint("TOPLEFT", headerWindowColors, "BOTTOMLEFT", 0, -5)
 
 local buttonBorderColor = child:CreateButton(
--- button settings
-{
-	text = L["BORDER"],
-	tooltip = L["BORDER_TOOLTIP"],
-},
--- function hooks for the button
+{ text = L["BORDER"], tooltip = L["BORDER_TOOLTIP"], },
 {
 	OnClick = function(self)
 		local r = tonumber(settings:Get("Window:BorderColor").r) or 0
@@ -3621,12 +3584,7 @@ buttonBorderColor.OnRefresh = function(self)
 end
 
 local buttonResetColor = child:CreateButton(
--- button settings
-{
-	text = L["RESET"],
-	tooltip = L["RESET_TOOLTIP"],
-},
--- function hooks for the button
+{ text = L["RESET"], tooltip = L["RESET_TOOLTIP"], },
 {
 	OnClick = function(self)
 		settings:Set("Window:BackgroundColor", {r = 0, g = 0, b = 0, a = 1})
@@ -4201,6 +4159,127 @@ textKeybindings:SetWidth(320)
 
 end)();
 
+--------------------------
+-- "Accessibility" page --
+--------------------------
+
+-- SETUP
+(function()
+-- Create the page
+local child = settings:CreateOptionsPage(L["ACCESSIBILITY_PAGE"], true)
+
+-- CONTENT
+
+-- Column 1
+local headerColors = child:CreateHeaderLabel(L["COLORS_ICONS"])
+headerColors:SetPoint("TOPLEFT", child, 0, 0)
+
+local textHeader = child:CreateTextLabel(Colorize(L["ACCESSIBILITY_EXPLAIN"], app.Colors.White))
+textHeader:SetPoint("TOPLEFT", headerColors, "BOTTOMLEFT", 0, -4)
+
+local buttonDefault = child:CreateButton(
+{ text = L["DEFAULT"], tooltip = L["RESET_TOOLTIP"], },
+{
+	OnClick = function(self)
+		app.Colors = app.DefaultColors
+		app:UpdateWindows()
+	end,
+})
+buttonDefault:SetPoint("TOPLEFT", textHeader, "BOTTOMLEFT", 0, -5)
+
+local textBreadcrumbs = child:CreateTextLabel(Colorize(L["BREADCRUMBS"], app.Colors.White))
+textBreadcrumbs:SetPoint("TOPLEFT", buttonDefault, "BOTTOMLEFT", 0, -10)
+	
+local function breadcrumbColor(restore)
+	local newR, newG, newB, newA
+	if restore then
+		newR, newG, newB, newA = unpack(restore)
+	else
+		newA, newR, newG, newB = ColorPickerFrame:GetColorAlpha(), ColorPickerFrame:GetColorRGB()
+	end
+
+	-- Update our internal storage
+	app.Colors.Breadcrumb = RGBToHex(newR, newG, newB)
+	settings:Set("Window:CustomColors", app.Colors)
+	
+ 	-- And update the actual windows
+	app:UpdateWindows()
+end
+
+local buttonBreadcrumbColor = child:CreateButton(
+{ text = L["COLOR"], },
+{
+	OnClick = function(self)
+		local a, r, g, b = HexToARGB(app.Colors.Breadcrumb)
+		ShowColorPicker(r, g, b, a, breadcrumbColor)
+	end,
+})
+buttonBreadcrumbColor:SetPoint("TOPLEFT", textBreadcrumbs, "BOTTOMLEFT", 0, -5)
+
+--
+
+local textLocked = child:CreateTextLabel(Colorize(L["LOCKED_QUESTS"], app.Colors.White))
+textLocked:SetPoint("TOPLEFT", buttonBreadcrumbColor, "BOTTOMLEFT", 0, -10)
+	
+local function lockedColor(restore)
+	local newR, newG, newB, newA
+	if restore then 
+		newR, newG, newB, newA = unpack(restore)
+	else
+		newA, newR, newG, newB = ColorPickerFrame:GetColorAlpha(), ColorPickerFrame:GetColorRGB()
+	end
+
+	-- Update our internal storage
+	app.Colors.Locked = RGBToHex(newR, newG, newB)
+	settings:Set("Window:CustomColors", app.Colors)
+	
+ 	-- And update the actual windows
+	app:UpdateWindows()
+end
+
+local buttonLockedColor = child:CreateButton(
+{ text = L["COLOR"], },
+{
+	OnClick = function(self)
+		local a, r, g, b = HexToARGB(app.Colors.Locked)
+		ShowColorPicker(r, g, b, a, lockedColor)
+	end,
+})
+buttonLockedColor:SetPoint("TOPLEFT", textLocked, "BOTTOMLEFT", 0, -5)
+
+--
+
+local textMount = child:CreateTextLabel(Colorize(L["MOUNTS"], app.Colors.White))
+textMount:SetPoint("TOPLEFT", buttonLockedColor, "BOTTOMLEFT", 0, -10)
+	
+local function mountColor(restore)
+	local newR, newG, newB, newA
+	if restore then 
+		newR, newG, newB, newA = unpack(restore)
+	else
+		newA, newR, newG, newB = ColorPickerFrame:GetColorAlpha(), ColorPickerFrame:GetColorRGB()
+	end
+
+	-- Update our internal storage
+	app.Colors.Mount = RGBToHex(newR, newG, newB)
+	settings:Set("Window:CustomColors", app.Colors)
+	
+ 	-- And update the actual windows
+	app:UpdateWindows()
+end
+
+local buttonMountColor = child:CreateButton(
+{ text = L["COLOR"], },
+{
+	OnClick = function(self)
+		local a, r, g, b = HexToARGB(app.Colors.Mount)
+		ShowColorPicker(r, g, b, a, mountColor)
+	end,
+})
+buttonMountColor:SetPoint("TOPLEFT", textMount, "BOTTOMLEFT", 0, -5)
+
+end)();
+
 ---------------------
 -- "Profiles" page --
 ---------------------
@@ -4251,12 +4330,7 @@ local function InitProfilesButton_Disable(self)
 	self:Disable()
 end
 local buttonInitializeProfiles = child:CreateButton(
--- button settings
-{
-	text = L["PROFILE_INITIALIZE"],
-	tooltip = L["PROFILE_INITIALIZE_TOOLTIP"],
-},
--- function hooks for the button
+{ text = L["PROFILE_INITIALIZE"], tooltip = L["PROFILE_INITIALIZE_TOOLTIP"], },
 {
 	OnClick = function(self)
 		app:ShowPopupDialog(L["PROFILE_INITIALIZE_CONFIRM"],
@@ -4279,12 +4353,7 @@ end
 
 -- Create Button
 local buttonCreateProfile = child:CreateButton(
--- button settings
-{
-	text = CREATE_COMPACT_UNIT_FRAME_PROFILE,
-	tooltip = CREATE_NEW_COMPACT_UNIT_FRAME_PROFILE,
-},
--- function hooks for the button
+{ text = CREATE_COMPACT_UNIT_FRAME_PROFILE, tooltip = CREATE_NEW_COMPACT_UNIT_FRAME_PROFILE, },
 {
 	OnClick = function(self)
 		-- if self.ATTActionObject and self.ATTActionObject.GetText then
@@ -4305,12 +4374,7 @@ buttonCreateProfile:SetPoint("TOPLEFT", textboxNewProfile, "TOPRIGHT", 5, 2)
 
 -- Delete Button
 local buttonDeleteProfile = child:CreateButton(
--- button settings
-{
-	text = DELETE,
-	tooltip = L["PROFILE_DELETE_TOOLTIP"],
-},
--- function hooks for the button
+{ text = DELETE, tooltip = L["PROFILE_DELETE_TOOLTIP"], },
 {
 	OnClick = function(self)
 		local profile = SelectedProfile
@@ -4329,12 +4393,7 @@ buttonDeleteProfile:SetPoint("BOTTOMLEFT", profileScroller, "BOTTOMRIGHT", 5, -1
 
 -- Switch Button
 local buttonSwitchProfile = child:CreateButton(
--- button settings
-{
-	text = SWITCH,
-	tooltip = L["PROFILE_SWITCH_TOOLTIP"],
-},
--- function hooks for the button
+{ text = SWITCH, tooltip = L["PROFILE_SWITCH_TOOLTIP"], },
 {
 	OnClick = function(self)
 		local profile = SelectedProfile
@@ -4350,12 +4409,7 @@ buttonSwitchProfile:SetPoint("TOP", profileScroller, "TOP", 0, 2)
 
 -- Copy Button
 local buttonCopyProfile = child:CreateButton(
--- button settings
-{
-	text = CALENDAR_COPY_EVENT,
-	tooltip = L["PROFILE_COPY_TOOLTIP"],
-},
--- function hooks for the button
+{ text = CALENDAR_COPY_EVENT, tooltip = L["PROFILE_COPY_TOOLTIP"], },
 {
 	OnClick = function(self)
 		local profile = SelectedProfile
