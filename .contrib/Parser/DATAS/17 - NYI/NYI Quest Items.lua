@@ -353,7 +353,6 @@ root(ROOTS.NeverImplemented, {
 				i(208736),	-- Apprentice Astrologist Homework
 				i(208733),	-- Dragonhorn Flute
 				i(208737),	-- Hole-Punched Bakar Tooth
-				i(208734),	-- Waterlogged Ledger
 			})),
 
 			-- 10.2.0

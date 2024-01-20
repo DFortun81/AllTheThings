@@ -1110,3 +1110,20 @@ i(213041);	-- Desiccated Djaradin Scroll
 i(213363);	-- Molted Eye Skin
 i(212767);	-- Broken Beaker
 i(213214);	-- Woven Lavareed Basket
+i(213386);	-- Unearthed Stone Arrowhead
+i(213033);	-- Brittle Blacksmith Tongs
+i(213034);	-- Cracked Drakonid Bowl
+i(213038);	-- Cracked Magnifying Glass
+i(213032);	-- Warped Drakonid Jar
+i(213211);	-- Petrified Flower Petals
+i(213037);	-- Jagged Garden Trowel
+i(213367);	-- Discarded Claw Prototype
+i(213358);	-- Indelicately Excavated Skull
+i(213180);	-- Crumpled Map
+i(213206);	-- Charred Letter
+i(213027);	-- Chipped Drakonid Cup
+i(212647);	-- Leather Bakar-Sized Shoe
+i(212766);	-- Amphora Fragment
+i(213212);	-- Whalebone Knife
+i(213182);	-- Worry Stone
+i(213195);	-- Charred Doodle

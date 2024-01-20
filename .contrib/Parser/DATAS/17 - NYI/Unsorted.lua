@@ -791,15 +791,10 @@ root(ROOTS.Unsorted, {
 				------ Warlock ------
 				i(211949),	-- Durumu's Glass Pupil
 				------
-				i(212766),	-- Amphora Fragment
 				i(213029),	-- Bent Drakonid Fork
 				i(213210),	-- Bloodied Banner Scrap
-				i(213033),	-- Brittle Blacksmith Tongs
 				i(213043),	-- Brittle Djaradin Leather
-				i(213195),	-- Charred Doodle
-				i(213206),	-- Charred Letter
 				i(212771),	-- Charred Snail Shells
-				i(213027),	-- Chipped Drakonid Cup
 				i(212489),	-- Copy of a Damaged Apprentice Journal
 				i(212468),	-- Copy of Blinking Rules & Regulations
 				i(212465),	-- Copy of Bundle of Romantic Correspondences
@@ -831,12 +826,8 @@ root(ROOTS.Unsorted, {
 				i(212470),	-- Copy of Thinking with Portals - A Memorandum on Proper Portal Usage
 				i(212485),	-- Copy of Weathered Diary - Dates from the Third War
 				i(213028),	-- Cracked Drafting Compass
-				i(213034),	-- Cracked Drakonid Bowl
-				i(213038),	-- Cracked Magnifying Glass
-				i(213180),	-- Crumpled Map
 				i(212784),	-- Destroyed Relic
 				i(212467),	-- Discarded Advertisement
-				i(213367),	-- Discarded Claw Prototype
 				i(213360),	-- Discarded Drakonid Amulet
 				i(213201),	-- Discarded Waterfowl Bones
 				i(213361),	-- Disquieting Children's Toy
@@ -845,33 +836,21 @@ root(ROOTS.Unsorted, {
 				i(213364),	-- Empty Vial of Perfume
 				i(213388),	-- Faded Centaur Painting
 				i(212765),	-- Fish Bones
-				i(212648),	-- Fishbone Needle
-				i(212764),	-- Fishing Net Fragment
 				i(212382),	-- Fluorescent Splitblade
 				i(213384),	-- Horsehair Doll
-				i(213358),	-- Indelicately Excavated Skull
-				i(213037),	-- Jagged Garden Trowel
-				i(212647),	-- Leather Bakar-Sized Shoe
 				i(211383),	-- Luvkip
 				i(213205),	-- Mad Scribblings
 				i(213026),	-- Massive Drakonid Brush
 				i(213374),	-- Niffen Noseplug
 				i(212768),	-- Niffen-Sized Dagger
-				i(213211),	-- Petrified Flower Petals
 				i(213194),	-- Petrified Rations
 				i(213196),	-- Pressed Flower
 				i(213184),	-- Rock with Chewed Gum
 				i(213030),	-- Rusty Garden Shears
-				i(212688),	-- Salt-dried Roots
 				i(213368),	-- Scratch-and-Sniff Stone
-				i(212770),	-- Smashed Pottery
 				i(213277),	-- Smudged Snippet of Poetry
 				i(213040),	-- Tarnished Djaradin Amulet
-				i(213386),	-- Unearthed Stone Arrowhead
 				i(213203),	-- Velvet Nightcap
-				i(213032),	-- Warped Drakonid Jar
-				i(213212),	-- Whalebone Knife
-				i(213182),	-- Worry Stone
 			}),
 			filter(MOUNTS, {
 				i(212631),	-- Brilliant Sunburst Peafowl (MOUNT!)
