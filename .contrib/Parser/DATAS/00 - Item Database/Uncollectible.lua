@@ -1084,58 +1084,77 @@ i(211943);	-- Scarlet Silk Bandage
 i(211937);	-- Scarlet Pendant
 i(211938);	-- Flame Inscribed Band
 --- Azerothian Archives Trash ---
-i(205221);	-- Simple Pottery Fragment
-i(205222);	-- Wooden Caravan Spoke
-i(207460);	-- Dreadsquall Eggshell Fragment
-i(208201);	-- Paper Scraps
-i(212646);	-- Chipped Armor Plate
-i(213035);	-- Crusty Dracthyr Brush
-i(213042);	-- Deteriorated Djaradin Banner
-i(213031);	-- Misshapen Drakonid Goblet
-i(212649);	-- Quilted Tent Scrap
-i(212763);	-- Spoiled Honeywine
-i(212772);	-- False Silver Coin
-i(212765);	-- Fish Bones
-i(212764);	-- Fishing Net Fragment
-i(213044);	-- Frayed Fang Amulet
-i(212761);	-- Pouch of Coins
-i(212688);	-- Salt-dried Roots
-i(212774);	-- Sharpened Shalewing Bones
-i(213045);	-- Snapped Djaradin Necklace
-i(213039);	-- Thin Drakonid Spoon
-i(213216);	-- Strip of Notched Leather
+i(212766);	-- Amphora Fragment
 i(213362);	-- Ancient Drakonid Candy
-i(213366);	-- Strip of Niffen Headwear
-i(213377);	-- Mutliated Storybook
-i(213380);	-- Unidentifiable Equine Fossil
-i(213385);	-- Stiff Brush
-i(213387);	-- Primitive Centaur Carving
-i(212765);	-- Fish Bones
-i(212761);	-- Pouch of Coins
-i(212770);	-- Smashed Pottery
-i(213368);	-- Scratch-and-Sniff Stone
-i(213179);	-- Cracked Draconic Tooth
-i(212648);	-- Fishbone Needle
-i(213041);	-- Desiccated Djaradin Scroll
-i(213363);	-- Molted Eye Skin
-i(212767);	-- Broken Beaker
-i(213214);	-- Woven Lavareed Basket
-i(213386);	-- Unearthed Stone Arrowhead
+i(213029);	-- Bent Drakonid Fork
+i(213210);	-- Bloodied Banner Scrap
 i(213033);	-- Brittle Blacksmith Tongs
+i(213043);	-- Brittle Djaradin Leather
+i(212767);	-- Broken Beaker
+i(213195);	-- Charred Doodle
+i(213206);	-- Charred Letter
+i(212771);	-- Charred Snail Shells
+i(212646);	-- Chipped Armor Plate
+i(213027);	-- Chipped Drakonid Cup
+i(213179);	-- Cracked Draconic Tooth
+i(213028);	-- Cracked Drafting Compass
 i(213034);	-- Cracked Drakonid Bowl
 i(213038);	-- Cracked Magnifying Glass
-i(213032);	-- Warped Drakonid Jar
-i(213211);	-- Petrified Flower Petals
-i(213037);	-- Jagged Garden Trowel
-i(213367);	-- Discarded Claw Prototype
-i(213358);	-- Indelicately Excavated Skull
 i(213180);	-- Crumpled Map
-i(213206);	-- Charred Letter
-i(213027);	-- Chipped Drakonid Cup
-i(212647);	-- Leather Bakar-Sized Shoe
-i(212766);	-- Amphora Fragment
-i(213212);	-- Whalebone Knife
-i(213182);	-- Worry Stone
-i(213195);	-- Charred Doodle
-i(213374);	-- Niffen Noseplug
+i(213035);	-- Crusty Dracthyr Brush
+i(213041);	-- Desiccated Djaradin Scroll
+i(213042);	-- Deteriorated Djaradin Banner
+i(213367);	-- Discarded Claw Prototype
+i(213360);	-- Discarded Drakonid Amulet
+i(213201);	-- Discarded Waterfowl Bones
+i(213361);	-- Disquieting Children's Toy
+i(207460);	-- Dreadsquall Eggshell Fragment
+i(213213);	-- Dried Cave Fungus
+i(213364);	-- Empty Vial of Perfume
+i(213388);	-- Faded Centaur Painting
+i(212772);	-- False Silver Coin
+i(212765);	-- Fish Bones
+i(212648);	-- Fishbone Needle
+i(212764);	-- Fishing Net Fragment
+i(213044);	-- Frayed Fang Amulet
 i(213384);	-- Horsehair Doll
+i(213358);	-- Indelicately Excavated Skull
+i(213037);	-- Jagged Garden Trowel
+i(212647);	-- Leather Bakar-Sized Shoe
+i(213205);	-- Mad Scribblings
+i(213026);	-- Massive Drakonid Brush
+i(213031);	-- Misshapen Drakonid Goblet
+i(213363);	-- Molted Eye Skin
+i(213377);	-- Mutliated Storybook
+i(213374);	-- Niffen Noseplug
+i(212768);	-- Niffen-Sized Dagger
+i(208201);	-- Paper Scraps
+i(213211);	-- Petrified Flower Petals
+i(213194);	-- Petrified Rations
+i(212761);	-- Pouch of Coins
+i(213196);	-- Pressed Flower
+i(213387);	-- Primitive Centaur Carving
+i(212649);	-- Quilted Tent Scrap
+i(213184);	-- Rock with Chewed Gum
+i(213030);	-- Rusty Garden Shears
+i(212688);	-- Salt-dried Roots
+i(213368);	-- Scratch-and-Sniff Stone
+i(212774);	-- Sharpened Shalewing Bones
+i(205221);	-- Simple Pottery Fragment
+i(212770);	-- Smashed Pottery
+i(213277);	-- Smudged Snippet of Poetry
+i(213045);	-- Snapped Djaradin Necklace
+i(212763);	-- Spoiled Honeywine
+i(213385);	-- Stiff Brush
+i(213366);	-- Strip of Niffen Headwear
+i(213216);	-- Strip of Notched Leather
+i(213040);	-- Tarnished Djaradin Amulet
+i(213039);	-- Thin Drakonid Spoon
+i(213386);	-- Unearthed Stone Arrowhead
+i(213380);	-- Unidentifiable Equine Fossil
+i(213203);	-- Velvet Nightcap
+i(213032);	-- Warped Drakonid Jar
+i(213212);	-- Whalebone Knife
+i(205222);	-- Wooden Caravan Spoke
+i(213182);	-- Worry Stone
+i(213214);	-- Woven Lavareed Basket

@@ -586,6 +586,8 @@ root(ROOTS.Unsorted, {
 				i(211928),	-- Ruby Riders of Azeroth Tabard [Cup]
 
 				------ Trading Post ------
+				i(212382),	-- Fluorescent Splitblade
+
 				------ Skyborn Blades ------
 				i(212577),	-- Arsenal: Skyborn Blades
 				i(212578),	-- Radiant Skyborn Blade
@@ -791,10 +793,6 @@ root(ROOTS.Unsorted, {
 				------ Warlock ------
 				i(211949),	-- Durumu's Glass Pupil
 				------
-				i(213029),	-- Bent Drakonid Fork
-				i(213210),	-- Bloodied Banner Scrap
-				i(213043),	-- Brittle Djaradin Leather
-				i(212771),	-- Charred Snail Shells
 				i(212489),	-- Copy of a Damaged Apprentice Journal
 				i(212468),	-- Copy of Blinking Rules & Regulations
 				i(212465),	-- Copy of Bundle of Romantic Correspondences
@@ -825,30 +823,10 @@ root(ROOTS.Unsorted, {
 				i(212486),	-- Copy of The Worst Mage in Dalaran: A Children's Book
 				i(212470),	-- Copy of Thinking with Portals - A Memorandum on Proper Portal Usage
 				i(212485),	-- Copy of Weathered Diary - Dates from the Third War
-				i(213028),	-- Cracked Drafting Compass
 				i(212784),	-- Destroyed Relic
 				i(212467),	-- Discarded Advertisement
-				i(213360),	-- Discarded Drakonid Amulet
-				i(213201),	-- Discarded Waterfowl Bones
-				i(213361),	-- Disquieting Children's Toy
-				i(213213),	-- Dried Cave Fungus
 				i(212608),	-- Duck Potion
-				i(213364),	-- Empty Vial of Perfume
-				i(213388),	-- Faded Centaur Painting
-				i(212765),	-- Fish Bones
-				i(212382),	-- Fluorescent Splitblade
 				i(211383),	-- Luvkip
-				i(213205),	-- Mad Scribblings
-				i(213026),	-- Massive Drakonid Brush
-				i(212768),	-- Niffen-Sized Dagger
-				i(213194),	-- Petrified Rations
-				i(213196),	-- Pressed Flower
-				i(213184),	-- Rock with Chewed Gum
-				i(213030),	-- Rusty Garden Shears
-				i(213368),	-- Scratch-and-Sniff Stone
-				i(213277),	-- Smudged Snippet of Poetry
-				i(213040),	-- Tarnished Djaradin Amulet
-				i(213203),	-- Velvet Nightcap
 			}),
 			filter(MOUNTS, {
 				i(212631),	-- Brilliant Sunburst Peafowl (MOUNT!)
@@ -1122,7 +1100,6 @@ root(ROOTS.Unsorted, {
 			-- Misc
 			i(215160), -- The Big Dig Rig
 			-- Quest Items
-			i(210956),	-- Archivist's Fire Totem
 			i(211266),	-- Archivist's Fire Totem
 			------ Love in the Air ------
 			-- Misc
