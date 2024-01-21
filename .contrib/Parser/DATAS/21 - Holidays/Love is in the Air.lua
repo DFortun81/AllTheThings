@@ -296,6 +296,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["cost"] = { { "i", 22200, 10 } },	-- 10x Silver Shafted Arrow
 			["timeline"] = { "added 3.0.1" },
 		}),
+		ach(19400, {	-- Support Your Local Artisans
+			["timeline"] = { ADDED_10_2_5 },
+		}),
 		ach(1702, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Sweet Tooth
 			crit(8705, {	-- Buttermilk Delight
 				["provider"] = { "i", 22236 },	-- 1x Buttermilk Delight

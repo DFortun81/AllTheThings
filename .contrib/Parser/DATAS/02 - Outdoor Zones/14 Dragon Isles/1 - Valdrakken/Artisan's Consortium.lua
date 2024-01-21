@@ -6,9 +6,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		faction(FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, {
 			n(ACHIEVEMENTS, {
 				ach(16539),	-- In High Esteem
-				ach(19400, {	-- Support Your Local Artisans
-					["timeline"] = { ADDED_10_2_5 },
-				}),
 			}),
 			n(VENDORS, {
 				n(194057, {	-- Rabul
