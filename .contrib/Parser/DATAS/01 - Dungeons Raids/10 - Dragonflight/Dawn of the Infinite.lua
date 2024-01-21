@@ -47,6 +47,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(105803),	-- Stickney's Grey-Shade Hood		(Ordos)
 		}),
 		filter(MAIL, {
+			q(77627, {	-- when you learn everything from Quantum Headpiece (Mail / Hunter)
+				["name"] = "Quantum Headpiece (Mail) completed.",
+				["collectible"] = false,
+			}),
 			ig(114389),	-- Element-Binder Helm				(NYI)
 			ig(18304),	-- Greenroot Mail					(NYI Unique)
 			ig(114265),	-- Leafscale Helm					(NYI)
@@ -162,6 +166,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(105770),	-- Zoo-Per's Superior Chestguard	(Ordos)
 		}),
 		filter(MAIL, {
+			q(77635, {	-- when you learn everything from Quantum Chestpiece (Mail / Hunter)
+				["name"] = "Quantum Chestpiece (Mail) completed.",
+				["collectible"] = false,
+			}),
 			ig(114315),	-- Chestguard of Meditative Focus	(NYI)
 			ig(114252),	-- Leafscale Chestguard				(NYI)
 
@@ -273,6 +281,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(105760),	-- Hamlet's Wind-Whipped Leggings	(Ordos)
 		}),
 		filter(MAIL, {
+			q(77623, {	-- when you learn everything from Quantum Legs (Mail / Hunter)
+				["name"] = "Quantum Legs (Mail) completed.",
+				["collectible"] = false,
+			}),
 			ig(114393),	-- Element-Binder Legguards			(NYI)
 			ig(189943),	-- Greaves of Cosmic Designs		(NYI)
 			ig(114269),	-- Leafscale Legguards				(NYI)
@@ -308,6 +320,10 @@ local QUANTUM_GROUP = sharedData({
 		}),
 	}),
 	i(208111, {	-- Quantum Axe			(One-Handed)
+		q(77597, {	-- when you learn everything from Quantum Axe (One-Handed)
+			["name"] = "Quantum Axe (One-Handed) completed.",
+			["collectible"] = false,
+		}),
 		ig(134755),	-- Covert Hatchet						(NYI)
 		ig(5255),	-- Quilboar Tomahawk					(NYI)
 		ig(134586),	-- Vanguard Hatchet						(NYI)
@@ -336,6 +352,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(134608),	-- Scorching Longbow					(Removed)
 	}),
 	i(208118, {	-- Quantum Crossbow
+		q(77604, {	-- when you learn everything from Quantum Crossbow
+			["name"] = "Quantum Crossbow completed.",
+			["collectible"] = false,
+		}),
 		ig(134778),	-- Seasoned Crossbow					(Removed)
 		ig(134580),	-- Vanguard Heavy Crossbow				(Removed)
 	}),
@@ -347,6 +367,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(56376),	-- Thundercall							(Removed)
 	}),
 	i(208125, {	-- Quantum Focus
+		q(77609, {	-- when you learn everything from Quantum Focus
+			["name"] = "Quantum Focus completed.",
+			["collectible"] = false,
+		}),
 		ig(18316),	-- Obsidian Bauble						(NYI)
 
 		ig(134727),	-- Cold-Touched Endgame					(Removed)
@@ -373,6 +397,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(44924),	-- Sun Lute								(BMAH)(Unique)
 	}),
 	i(208114, {	-- Quantum Greathammer	(Two-Handed)(Mace)
+		q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed)(Mace)
+			["name"] = "Quantum Mace (Two-Handed) completed.",
+			["collectible"] = false,
+		}),
 	}),
 	i(208112, {	-- Quantum Greatsword	(Two-Handed)
 		ig(134746),	-- Covert Greatsword					(Removed)
@@ -408,6 +436,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(134581),	-- Vanguard Shanker						(Removed)
 	}),
 	i(208121, {	-- Quantum Knuckles
+		q(77607, {	-- when you learn everything from Quantum Knuckles
+			["name"] = "Quantum Knuckles completed.",
+			["collectible"] = false,
+		}),
 		ig(134719),	-- Cold-Touched Ripper					(Removed)
 		ig(2942),	-- Iron Knuckles						(Removed)
 		ig(134780),	-- Seasoned Ripper						(Removed)
@@ -465,6 +497,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(134589),	-- Vanguard Reprieve 					(Removed)
 	}),
 	i(208115, {	-- Quantum Staff
+		q(77601, {	-- when you learn everything from Quantum Staff
+			["name"] = "Quantum Staff completed.",
+			["collectible"] = false,
+		}),
 		ig(115298),	-- Spectral Spire 						(NYI)
 
 		ig(134721),	-- Cold-Touched Staff 					(Removed)
@@ -1095,9 +1131,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- Quantum Items
 		-- q(77595),	-- when you learn everything from Quantum ?
 		-- q(77596),	-- when you learn everything from Quantum ?
-		q(77597, {	-- when you learn everything from Quantum Axe (One-Handed)
-			["name"] = "Quantum Axe (One-Handed) completed.",
-		}),
 		-- q(77598),	-- when you learn everything from Quantum ?
 		-- q(77599),	-- when you learn everything from Quantum ?
 		q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed)(Mace)
