@@ -5,184 +5,59 @@
 root(ROOTS.HiddenQuestTriggers, {
 	-- Note!! Here is where we can put all the hidden quest triggers in the game that don't exactly fit anywhere.
 	-- When adding a quest trigger be sure to put a description of how it triggered
-	n(QUESTS, {	-- Quests
-		q(13807),	-- FLAG: Tournament Invitation
 
-		-------------------
-		--  UNKNOWN/NYI  --
-		-------------------
-		q(38995),	-- Unused
-		q(54740),	-- [DNT] REUSE ME
-		q(57917),	-- [DNT] Test - JAM
-		q(8274),	-- Test Kill Quest - triggered after The Conquest Pit: Final Showdown (12431)
-		q(7069),	-- Unused
-		q(8458),	-- Unused
-		q(24797),	-- REUSE
-		q(46807),	-- [UNUSED]
-		q(40596),	-- FLAG - Azsuna - Timothy Jones - (UNUSED)
-		q(40595),	-- FLAG - Dalaran - Timothy Jones - (UNUSED)
-		q(47495),	-- Insatiable Appetite [UNUSED]
-		q(39044),	-- Unused
-		q(50690),	-- Unused
-		q(54781),	-- UNUSED
-		q(37812),	-- UNUSED: Test Race: 1 Marker
-		q(38845),	-- Unused
-		--q(59038),	-- Got suddenly appeared. Same time as I was chatting. We finished Temple of Jade Serpent, lvl 16, 22, 46 (I'm the 46). Goblin in group with Vulpera Party Sync enabled
-		--q(63389),	-- Person in Errors doesnt really remember
-		--q(63390), -- Person in Errors doesnt really remember
-		--q(63391), -- Person in Errors doesnt really remember
-		--q(54324),	-- Triggered in BfA
-		--q(54317),	-- BfA Alliance Stormsong "Invasion"
-		--q(62521),	-- unknown tracking
-		--q(62571),	-- Flying in Maldraxxus
-		--q(62397),	-- Unknown
-		--q(45775),	-- Discord: this week's archaeology quest. when I either turned it in at the blood elf in suramar, or when I took the follow up quest. dont remember which. 7 April 2022
-		q(54422),	-- After winning a PVP pet battle I received a clickable item that added a mission to the BFA mission table:[A Shady Character] has been added to your Mission Table.
-
-		-------------------
-		--    VARIOUS    --
-		-------------------
-		-- all of these trigger when you get a paragon box, i guess?  it's not the *first* paragon box for the character, because i had some legion paragons unlocked on the character it happened on (maybe added later, but some of these questIDs are pretty old).  it looks like a quest to introduce you to the concept of paragon rewards, and it triggers all of these at once, BFA + legion at the same time.  not sure the requirements to actually get one of the quests in the first place, and completing one completes them all, so it doesn't seem worth it to list them in the zone files.
-		q(46794),	-- Paragon of the Court
-		q(46796),	-- Paragon of Highmountain
-		q(46797),	-- Paragon of the Dreamweavers
-		q(46798),	-- Paragon of the Valarjar
-		q(46799),	-- Paragon of the Nightfallen
-		q(46800),	-- Paragon of the Wardens
-		q(46802),	-- Paragon of the Legionfall Armies
-		q(48973),	-- Paragon of Argussian Reach
-		q(48974),	-- Paragon of the Army of the Light
-		q(54610),	-- Paragon of the Tortollan Seekers
-		q(54611),	-- Paragon of the Champions of Azeroth
-		q(54618),	-- Paragon of the 7th Legion
-		q(54626),	-- Paragon of the Honorbound
-		q(54627),	-- Paragon of the Order of Embers
-		q(54628),	-- Paragon of the Storm's Wake
-		q(54629),	-- Paragon of the Proudmoore Admiralty
-		q(54630),	-- Paragon of Talanji's Expedition
-		q(54631),	-- Paragon of the Voldunai
-		q(54632),	-- Paragon of the Zandalari Empire
-
-	--	PVP quests
-		q(62298, {	-- Classic 20-49
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(62299, {	-- Classic 20-49
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(62347, {	-- Shadowlands (51-59) E
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(62353, {	-- Shadowlands (51-59) E
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(62357, {	-- Shadowlands (51-59) E
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-		q(62348, {	-- Shadowlands (51-59) E
-			["_drop"] = { "g" },	-- drop Crate of Battlefield Goods
-		}),
-
-		-- PvP Assassin
-		q(63389),	-- Killed and looted Horde Assasin(as Alliance obviously)
-		q(63390),	-- Killed and looted Horde Assasin(as Alliance obviously)
-		q(63391),	-- Killed and looted Horde Assasin(as Alliance obviously)
-
-		q(47954),	-- Tracking Quest (Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths)
-		q(47956),	-- Tracking Quest (triggered when using "To Modernize the Provisioning of Azeroth" toy to unlock EK flight paths)
-		q(50659),	-- Silithus - talk to Zidormi to phase into the past version of the map
-		q(49813),	-- Adventure Calls (lvl 60) - can trigger prior to level 60 if you accept a quest from the warboard
-		q(49860),	-- Adventure Calls (lvl 60) - can trigger prior to level 60 if you accept a quest from the warboard
-		q(42871),	-- Tome of Illusions - Azeroth
-		q(42873),	-- Tome of Illusions - Outland
-		q(42874),	-- Tome of Illusions - Northrend
-		q(42875),	-- Tome of Illusions - Cataclysm
-		q(42876),	-- Tome of Illusions - Elemental Lords
-		q(42877),	-- Tome of Illusions - Pandaria
-		q(42878),	-- Tome of Illusions - Secrets of the Shado-Pan
-		q(42879),	-- Tome of Illusions - Draenor
-		q(45435),	-- First Win of the Day (Random BG)
-		q(47144),	-- First Win of the Day (BG Brawl)
-		q(45432),	-- First Win of the Day (2v2)
-		q(45436),	-- First Win of the Day (Skirmish)
-		q(45433),	-- First Win of the Day (3v3)
-		q(45434),	-- First Win of the Day (10v10)
-		q(49847),	-- Selected Pandaria at level 80 Special Duty Assignment" on horde
-		q(57668),	-- Triggering when using a portal to Orgrimmar as Horde/to Ironforge as Alliance after Dec 25th during the Feast of Winter Veil 2019/2021
-		--- (seems to trigger only the first time you go there that day). Possibly used to determine loot eligibility?
-		q(31990),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
-		q(39695),	-- triggers after applying a Vantus Rune
-
-		-- Events/Holidays
-		q(11320),	-- [NYI] Now this is Ram Racing... Almost. (Brewfest)
-		q(13959),	-- Old "Back To The Orphanage" quest, triggers together with modern version (Oracle quest during Children's Week)
-		q(13960),	-- Old "Back To The Orphanage" quest, triggers together with modern version (Wolvar quest during Children's Week)
-		q(28761),	-- obsolete "Honor the Flame" quest according to Wowhead, triggered together with "Honor the Flame" 11834 in Winterspring
-		q(11937),	-- FLAG - all torch return quests are complete. Marked as no longer available on Wowhead but triggered for me when I returned all 4 torches first time on new char. It doesn't reset yearly though cause I didn't get it on my main
-		q(47465),	-- Bonus roll on Azuregos World boss during WoW 15th anniversary in 2019
-		q(47464),	-- Bonus roll on Kazzak World boss during WoW 15th anniversary in 2019
-		q(47466),	-- Bonus roll on Emeriss during anniversary event
-		q(28997),	-- triggered together with 28961, Surwich Candy Bucket
-		q(39828),	-- Horseman and Guards Shared Criteria, triggered when I applied Creepy Crawlers garrison decoration
-
-		-------------------
-		---   CLASSIC   ---
-		-------------------
+	-----------------------
+	--      CLASSIC      --
+	-----------------------
+	tier(CLASSIC_TIER, {
 		--	QUESTING / LEVELING
 		q(9611),	-- Azuremyst: aa - A - Quest Flag 000 — triggered after healing the NPC/killing the mob before you can pick up "A Hearty Thanks!" on Azuremyst Isle
-		q(27224),	-- Andorhal Phase Flag — Western Plaguelands — triggers during "The Depravity of the Forsaken"
-		q(25040),	-- FLAG - Worgen Attacked — Tirisfal Glades — attacked by a worgen during "Darkhound Pounding" to trigger the "Escaped From Gilneas" quest
-		q(28855),	-- Northern Stranglethorn 4.x: PRK - E - Just Hatched FLAG (Triggers when you collect the 7th "Jungle Remedy" during the Bad Medicine quest. A Lashtail Hatchling will start following you)
-		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success" (spellID 388051)
-		q(26136),	-- FLAG - Rigor Mortis Removed. Triggered on a fresh lvl 1 warlock undead on login
-		q(24644),	-- Troll Introduction Complete
-		q(26741),	-- REUSE - Northern Stranglethorn - triggered after completing "The Hunt" (questID 26340)
 		q(236),		-- Fueling the Demolishers (auto-completed removed quest)
+	}),
 
-		-------------------
-		---   OUTLAND   ---
-		-------------------
+	-------------------
+	--      TBC      --
+	-------------------
+	tier(TBC_TIER, {
 		--	QUESTING / LEVELING
 		-- #if BEFORE WRATH
 		-- This got repurposed into an actual quest with Cata.
-		q(8329, {	-- Warrior Training, Triggered by a Blood Elf Rogue after completing [lq:9392<8325 on Wrath Classic]
-			["timeline"] = { "created 2.0.1" },
-		}),
+		q(8329, { ["timeline"] = { "created 2.0.1" }, }),-- Warrior Training, Triggered by a Blood Elf Rogue after completing [lq:9392<8325 on Wrath Classic]
 		-- #endif
 		q(11518),	-- Sunwell Daily Portal Flag
 		q(11522),	-- Triggers with Rediscovering Your Roots (11521)
-		q(12494),	-- FLAG: Riding Training Advertisement
+		q(12494),	-- FLAG: Riding Training Advertisement (20)
+	}),
 
-		--	DUNGEONS
-		q(24887, {	-- LFGDungeons - Burning Crusade - Normal Random - 1st
-			["_drop"] = { "g" },	-- drop Otherworldly Satchel of Helpful Goods
-		}),
-		q(24895, {	-- LFGDungeons - Burning Crusade - Normal Random - Nth
-			["_drop"] = { "g" },	-- drop Otherworldly Satchel of Helpful Goods
-		}),
+	---------------------
+	--      WOTLK      --
+	---------------------
+	tier(WOTLK_TIER, {
+		--	DUNGEONS & RAIDS
+		q(24887, { ["_drop"] = { "g" },	}),	-- LFGDungeons - Burning Crusade - Normal Random - 1st
+		q(24895, { ["_drop"] = { "g" },	}),	-- LFGDungeons - Burning Crusade - Normal Random - Nth
 
-		-------------------
-		--     WOTLK     --
-		-------------------
 		-- Zones
 		q(12845),	-- Dalaran teleport crystal flag
 		q(13700),	-- Argent Tournament - Alliance Champion Marker
 		q(13701),	-- Argent Tournament - Horde Champion Marker
 		q(13686),	-- Alliance Tournament Eligibility Marker
 		q(13687),	-- Horde Tournament Eligibility Marker
-		q(46051),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 01
-		q(46052),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 02
-		q(46053),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 03
-		q(46054),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 04
-		q(46055),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 05
 		q(12485),	-- Howling Fjord - triggers during "The Echo of Ymiron" when you see the RP between two vrykul in Wyrmskull Village
 		q(12452),	-- Dragonblight - triggers when turning in "The Fate of the Ruby Dragonshrine". duplicate version of a quest during early development
 		q(12693),	-- Sholazar Basin - Wolvar Faction Choice Tracker
 		q(12694),	-- Sholazar Basin - Oracle Faction Choice Tracker
 
-		-------------------
-		--   CATACLYSM   --
-		-------------------
+		-- Riding
+		q(14185),	-- FLAG: Riding Trainer Advertisement (40)
+		q(14186),	-- FLAG: Riding Trainer Advertisement (60)
+		q(14187),	-- FLAG: Riding Trainer Advertisement (70)
+	}),
+
+	--------------------
+	--      CATA      --
+	--------------------
+	tier(CATA_TIER, {
 		-- QUESTING
 		q(28347),	-- Coffer of Promise TRACKING QUEST
 		q(25071),	-- FLAG - Purple Murloc
@@ -217,11 +92,510 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(28846),	-- Lost Isles - Repel the Paratroopers accepted tracking flag
 		q(25226),	-- Lost Isles - Kill Chip Endale tracking flag
 		q(25245),	-- Lost Isles - Kill Candy Cane tracking flag
+		q(26741),	-- REUSE - triggered after completing "The Hunt" (questID 26340)
+		q(27224),	-- Andorhal Phase Flag — Western Plaguelands — triggers during "The Depravity of the Forsaken"
+		q(25040),	-- FLAG - Worgen Attacked — Tirisfal Glades — attacked by a worgen during "Darkhound Pounding" to trigger the "Escaped From Gilneas" quest
+		q(28855),	-- Northern Stranglethorn 4.x: PRK - E - Just Hatched FLAG (Triggers when you collect the 7th "Jungle Remedy" during the Bad Medicine quest. A Lashtail Hatchling will start following you)
+		q(26136),	-- FLAG - Rigor Mortis Removed. Triggered on a fresh lvl 1 warlock undead on login
+		q(24644),	-- Troll Introduction Complete
+	}),
 
-		-------------------
-		--      BFA      --
-		-------------------
+	-------------------
+	--      MOP      --
+	-------------------
+	tier(MOP_TIER, {
+		-- Operation: Shieldwall / Dominance Offensive campaign
+		q(32357),	-- Tracking Event: Event Complete - triggeres after watching the RP after turning in "Heart of the Alliance" (questID 32316)
+		q(32356),	-- Tracking Event: Ambassadors Summoned - triggeres  "Heart of the Alliance" completion
+		q(32395),	-- Tracking Event: Saw Avartu - triggered while on "The Divine Bell," part of the Operation: Shieldwall campaign (at the end of the quest before killing Avartu)
+		q(32339),	-- Rebuilding the Mallet (Tracker) - triggered after turning in The Head and The Harmonic Ointment (The Handle was turned in earlier, but presumably requires all 3), part of the Operation: Shieldwall campaign
+		q(32365),	-- Tracking Event: Epilogue Complete - triggered after turning in "The Silence" and watching the RP, part of the Operation: Shieldwall campaign.  didn't go off until I left the area and turned in another quest (which is a daily that doesn't normally have any additional tracking quests attached, so i know it was from the final campaign quest)
+		q(32361),	-- triggered after turning in #32352, "A Gathering Storm," part of the Dominance Offensive campaign
+		q(32364),	-- triggered after turning in #32448, "Ties with the Past," part of the Dominance Offensive campaign
+		q(32437),	-- Tracking Event: Saw Sarannha 1 - triggered at the end of "The Divine Bell," part of the Dominance Offensive campaign
+		q(32438),	-- Tracking Event: Saw Sarannha 2 - triggered at the end of "The Divine Bell," part of the Dominance Offensive campaign
+
+		--	QUESTING / LEVELING / VARIOUS
+		q(29698),	-- Tracking Event: Alliance Banner Found
+		q(29699),	-- Tracking Event: Alliance Chest Found
+		q(29700),	-- Tracking Event: Bodyguard Found
+		q(29701),	-- Tracking Event: Journal Found
+		q(30564),	-- Tracking Event: Talked to Dog at Farm
+		q(30207),	-- Tracking Event: 1st Place
+		q(30208),	-- Tracking Event: 2nd Place
+		q(30209),	-- Tracking Event: 3rd Place
+		q(30210),	-- Tracking Event: 4th Place
+		q(30211),	-- Tracking Event: 5th Place
+		q(30212),	-- Tracking Event: 6th Place
+		q(31960),	-- Tracking Event: Vote #1 Complete
+		q(31961),	-- Tracking Event: Vote #2 Complete
+		q(31962),	-- Tracking Event: Vote #3 Complete
+		q(31963),	-- Tracking Event: Vote #4 Complete
+		q(31964),	-- Tracking Event: Vote #5 Complete
+		q(31965),	-- Tracking Event: Vote #6 Complete
+		q(33900),	-- Tracking Quest: Activated Arkonite 3
+		q(33901),	-- Tracking Quest: Activated Arkonite 4
+		q(33899),	-- Tracking Quest: Turn on the Holograms
+		q(32112),	-- FLAG - Been to Fight Club - completing first fight
+		q(32113),	-- FLAG - Been to Fight Club Today
+		q(32444),	-- FLAG - Earned Brawler Title (Weekly)
+		q(32725),	-- Warlock Green Fire Questline - Reached Kanrethad
+		q(32666),	-- Warlock Green Fire Questline - Reached Kanrethad
+
+		--	DUNGEONS & RAIDS
+		q(31614),	-- LFGDungeons - Mists - Heroic Random - 1st
+		q(31615),	-- LFGDungeons - Mists - Heroic Random - Nth
+		q(31274),	-- LFGDungeons - Mists - Raid Finder - 1st
+		q(31275),	-- LFGDungeons - Mists - Raid Finder - Nth
+		q(32097),	-- Short-Supply Reward
+		q(33233, { ["_drop"] = { "g" }, }),	-- Short-Supply Reward
+
+		-- SCENARIOS
+		q(32817),	-- Complete "Loyalty" Scenario - triggeres when turning in "The King and the Council"
+		q(32818),	-- Complete "The Dark Heart of Pandaria" Scenario - triggeres when turning in "The Warchief and the Darkness"
+		q(32898),	-- Daily Scenario Random (1st) (Mists)
+		q(32899),	-- Daily Scenario Random (Nth) (Mists)
+		q(32897),	-- LFGDungeons - Mists - Scenario - Heroic Daily - 1st/Nth
+		q(32873, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st
+		q(32874, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth
+		q(32893),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st Bonus
+		q(32894),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth Bonus
+		q(31616, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Mists - Scenario - Normal Random - 1st
+		q(31617, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Mists - Scenario - Normal Random - Nth
+		q(31987, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Theramore Launch Event
+
+		-- PROVING GROUNDS
+		q(33089),	-- FLAG - Proving Grounds - Damage Bronze
+		q(33091),	-- FLAG - Proving Grounds - Damage Gold
+		q(33090),	-- FLAG - Proving Grounds - Damage Silver
+		q(33095),	-- FLAG - Proving Grounds - Healer Bronze
+		q(33097),	-- FLAG - Proving Grounds - Healer Gold
+		q(33096),	-- FLAG - Proving Grounds - Healer Silver
+		q(33092),	-- FLAG - Proving Grounds - Tank Bronze
+		q(33094),	-- FLAG - Proving Grounds - Tank Gold
+		q(33093),	-- FLAG - Proving Grounds - Tank Silver
+
+		--	Short-Supply Reward - UNKNOWN TRIGGERS
+		qNYI(33602),	-- Short-Supply Reward
+		qNYI(33603),	-- Short-Supply Reward
+	}),
+
+	-------------------
+	--      WOD      --
+	-------------------
+	tier(WOD_TIER, {
+		--	QUESTING / LEVELING / VARIOUS
+		q(35266),	-- Boosted Character - triggered for character that used WoD boost (level 90)
+		q(37187),	-- The Dark Portal
+		q(37193),	-- The King's Command - autocompleted when "Hero's Call: Jade Forest!" is picked up (questID 49556)
+		q(36825),	-- Fate of the Horde - triggered when turning in "Audience with the Warchief" as a demon hunter (questID 40976)
+
+		--	DUNGEONS & RAIDS
+		q(37212),	-- FLAG - Proving Grounds - Damage Bronze
+		q(37214),	-- FLAG - Proving Grounds - Damage Gold
+		q(37213),	-- FLAG - Proving Grounds - Damage Silver
+		q(37218),	-- FLAG - Proving Grounds - Healer Bronze
+		q(37220),	-- FLAG - Proving Grounds - Healer Gold
+		q(37219),	-- FLAG - Proving Grounds - Healer Silver
+		q(37215),	-- FLAG - Proving Grounds - Tank Bronze
+		q(37217),	-- FLAG - Proving Grounds - Tank Gold
+		q(37216),	-- FLAG - Proving Grounds - Tank Silver
+		q(37501),	-- Draenor Challenge Mode - Bronze Addition (1st)
+		q(37502),	-- Draenor Challenge Mode - Consolation (1st)
+		q(37503),	-- Draenor Challenge Mode - Gold Addition (1st)
+		q(37504),	-- Draenor Challenge Mode - Silver Addition (1st)
+		q(36145, {["_drop"] = { "g" }}),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
+		q(36151, {["_drop"] = { "g" }}),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
+		q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
+		q(37333),	-- LFGDungeons - Draenor - Heroic Random - 1st
+		q(37334),	-- LFGDungeons - Draenor - Heroic Random - Nth
+		q(37335),	-- LFGDungeons - Draenor - Normal Random - 1st
+		q(37336),	-- LFGDungeons - Draenor - Normal Random - Nth
+		q(37505),	-- LFGDungeons - Draenor - Raid Finder - 1st
+		q(37506),	-- LFGDungeons - Draenor - Raid Finder - Nth
+		q(36143, {["_drop"] = { "g" }}),	-- LFGDungeons - Lich King - Dungeon Normal 1st
+		q(36149, {["_drop"] = { "g" }}),	-- LFGDungeons - Lich King - Dungeon Normal Nth
+		q(31618, {["_drop"] = { "g" }}),	-- LFGDungeons - Mists - Normal Random - 1st
+		q(31619, {["_drop"] = { "g" }}),	-- LFGDungeons - Mists - Normal Random - Nth
+		q(36147, {["_drop"] = { "g" }}),	-- LFGDungeons - Pandaria - Dungeon Normal 1st
+		q(36139, {["_drop"] = { "g" }}),	-- LFGDungeons - Pandaria - Dungeon Normal Nth
+		q(40395, {["_drop"] = { "g" }}),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
+		q(36144, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
+		q(36150, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
+		q(37648, {["_drop"] = { "g" }}),	-- Short-Supply Reward
+		q(35963),	-- Warlords Heroic Dungeon Reward Quest - triggered at the end of Mythic Grimrail Depot
+		q(36277),	-- Warlords Max Level Dungeon Bonus Reward
+		q(35962),	-- Warlords Max Level Dungeon Reward Quest - triggered at the end of Normal Grimrail Depot
+
+		-- PVP
+		q(36146),	-- Cataclysm 84-85
+		q(36152),	-- Cataclysm 84-85
+		q(38116, {["_drop"] = { "g" }}),	-- Cata/Mop 80-89
+		q(38127, {["_drop"] = { "g" }}),	-- Cata/MoP 80-89
+		q(38138),	-- Cata/MoP 80-89
+		q(38156),	-- Cata/MoP 80-89
+		q(38167),	-- Cata/MoP 80-89
+		q(38149),	-- Classic 10-19
+		q(38160),	-- Classic 10-19
+		q(38110, {["_drop"] = { "g" }}),	-- Classic 20-29
+		q(38121, {["_drop"] = { "g" }}),	-- Classic 20-29
+		q(38132),	-- Classic 20-29
+		q(38150),	-- Classic 20-29
+		q(38161),	-- Classic 20-29
+		q(38111, {["_drop"] = { "g" }}),	-- Classic 30-39
+		q(38122, {["_drop"] = { "g" }}),	-- Classic 30-39
+		q(38133),	-- Classic 30-39
+		q(38151),	-- Classic 30-39
+		q(38162),	-- Classic 30-39
+		q(38112, {["_drop"] = { "g" }}),	-- Classic 40-49
+		q(38123, {["_drop"] = { "g" }}),	-- Classic 40-49
+		q(38134),	-- Classic 40-49
+		q(38152),	-- Classic 40-49
+		q(38163),	-- Classic 40-49
+		q(38113, {["_drop"] = { "g" }}),	-- Classic 50-59
+		q(38124, {["_drop"] = { "g" }}),	-- Classic 50-59
+		q(38135),	-- Classic 50-59
+		q(38153),	-- Classic 50-59
+		q(38164),	-- Classic 50-59
+		q(38118, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38129, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38140, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38158, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38169),	-- Legion 100-109 A
+		q(38171, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38172, {["_drop"] = { "g" }}),	-- Legion 100-109 A
+		q(38119, {["_drop"] = { "g" }}),	-- Legion 100-109 H
+		q(38130, {["_drop"] = { "g" }}),	-- Legion 100-109 H
+		q(38141),	-- Legion 100-109 H
+		q(38159, {["_drop"] = { "g" }}),	-- Legion 100-109 H
+		q(38170),	-- Legion 100-109 H
+		q(38173, {["_drop"] = { "g" }}),	-- Legion 100-109 H
+		q(38174, {["_drop"] = { "g" }}),	-- Legion 100-109 H
+		q(36140, {["_drop"] = { "g" }}),	-- Pandaria 88-90
+		q(36148, {["_drop"] = { "g" }}),	-- Pandaria 88-90
+		q(38114, {["_drop"] = { "g" }}),	-- TBC 60-69
+		q(38125, {["_drop"] = { "g" }}),	-- TBC 60-69
+		q(38136),	-- TBC 60-69
+		q(38154),	-- TBC 60-69
+		q(38165),	-- TBC 60-69
+		q(38109, {["_drop"] = { "g" }}),	-- Vanilla 10-19
+		q(38120, {["_drop"] = { "g" }}),	-- Vanilla 10-19
+		q(38131),	-- Vanilla 10-19
+		q(38115, {["_drop"] = { "g" }}),	-- WLK 70-79
+		q(38126, {["_drop"] = { "g" }}),	-- WLK 70-79
+		q(38137),	-- WLK 70-79
+		q(38155),	-- WLK 70-79
+		q(38166),	-- WLK 70-79
+		q(38117, {["_drop"] = { "g" }}),	-- WOD 90-99
+		q(38128, {["_drop"] = { "g" }}),	-- WOD 90-99
+		q(38139),	-- WOD 90-99
+		q(38157),	-- WOD 90-99
+		q(38168),	-- WOD 90-99
+
+		-- ASSAULTS
+		q(36534),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
+		q(36547),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
+		q(36663),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Horde character)
+		q(36664),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Alliance character)
+		q(36537),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
+		q(36558),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
+		q(36532),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
+		q(36545),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
+		q(36527),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
+		q(36549),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
+		q(36528),	-- Garrison Max-level Choice Tracker: Shadowmoon Darktide Roost
+		q(36555),	-- Garrison Max-level Choice Tracker: Shadowmoon Darktide Roost
+		q(36533),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
+		q(36552),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
+		q(36531),	-- Garrison Max-level Choice Tracker: Shadowmoon Sanctum of Othaar
+		q(36556),	-- Garrison Max-level Choice Tracker: Shadowmoon Sanctum of Othaar
+		q(36539),	-- Garrison Max-level Choice Tracker: Spires Mushroom Swamp
+		q(36557),	-- Garrison Max-level Choice Tracker: Spires Mushroom Swamp
+		q(36540),	-- Garrison Max-level Choice Tracker: Nagrand Broken Precipice
+		q(36553),	-- Garrison Max-level Choice Tracker: Nagrand Broken Precipice
+		q(36541),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
+		q(36554),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
+		q(37646),	-- See New Brightstone, See Wolfed Out Thorn (Garrison Attack?)
+
+		--	Short-Supply Reward - UNKNOWN TRIGGERS
+		qNYI(37461),	-- Short-Supply Reward
+		qNYI(37463),	-- Short-Supply Reward
+		qNYI(37465),	-- Short-Supply Reward
+		qNYI(37681),	-- Short-Supply Reward
+		qNYI(37682),	-- Short-Supply Reward
+		qNYI(37683),	-- Short-Supply Reward
+		qNYI(37684),	-- Short-Supply Reward
+		qNYI(39398),	-- Short-Supply Reward
+		qNYI(39468),	-- Short-Supply Reward
+		qNYI(39473),	-- Short-Supply Reward
+		qNYI(39474),	-- Short-Supply Reward
+		qNYI(39475),	-- Short-Supply Reward
+		qNYI(39476),	-- Short-Supply Reward
+		qNYI(39477),	-- Short-Supply Reward
+		qNYI(39478),	-- Short-Supply Reward
+		qNYI(39479),	-- Short-Supply Reward
+		qNYI(39480),	-- Short-Supply Reward
+		qNYI(39481),	-- Short-Supply Reward
+		qNYI(39482),	-- Short-Supply Reward
+		qNYI(39483),	-- Short-Supply Reward
+		qNYI(39484),	-- Short-Supply Reward
+		qNYI(39485),	-- Short-Supply Reward
+
+		-- Tracking Quest - UNKNOWN TRIGGERS
+		qNYI(32935),	-- Tracking Quest
+		qNYI(37423),	-- Tracking Quest
+		qNYI(37424),	-- Tracking Quest
+		qNYI(37425),	-- Tracking Quest
+		qNYI(37426),	-- Tracking Quest
+		qNYI(37427),	-- Tracking Quest
+		qNYI(37428),	-- Tracking Quest
+		qNYI(37429),	-- Tracking Quest
+		qNYI(37430),	-- Tracking Quest
+		qNYI(37431),	-- Tracking Quest
+		qNYI(37432),	-- Tracking Quest
+		qNYI(39727),	-- Tracking Quest
+		qNYI(39728),	-- Tracking Quest
+		qNYI(39736),	-- Tracking Quest
+		qNYI(39737),	-- Tracking Quest
+		qNYI(39738),	-- Tracking Quest
+		qNYI(39739),	-- Tracking Quest
+		qNYI(39740),	-- Tracking Quest
+		qNYI(39751),	-- Tracking Quest
+		qNYI(39752),	-- Tracking Quest
+		qNYI(39753),	-- Tracking Quest
+		qNYI(40416),	-- Tracking Quest
+		qNYI(40853),	-- Tracking Quest
+
+		--	???
+		q(33964),	-- Arak Flowerpicker
+		q(36636),	-- Blueprint Read
+		q(36849),	-- Burning Missive
+		q(36850),	-- Burning Missive
+		q(36851),	-- Burning Missive
+		q(36852),	-- Burning Missive
+		q(36853),	-- Burning Missive
+		q(36854),	-- Burning Missive
+		q(36855),	-- Burning Missive
+		q(36856),	-- Burning Missive
+		q(34580),	-- Draenor Flowerpicker
+		q(34581),	-- Draenor Flowerpicker Note Found
+		q(34831),	-- Encounter Mushroom
+		q(33961),	-- Frostfire Flowerpicker
+		q(33966),	-- Gorgrond Flowerpicker
+		q(33963),	-- Nagrand Flowerpicker
+		q(34872),	-- Prized Repossessions Tracking
+		q(34985),	-- Prized Repossessions Tracking
+		q(34986),	-- Punching Through Tracking
+		q(34873),	-- Punching Through Tracking
+		q(33962),	-- Shadowmoon Flowerpicker
+		q(34053),	-- SoL Conversation Tracker
+		q(34871),	-- Supply Recovery Tracking
+		q(34984),	-- Supply Recovery Tracking
+		q(33960),	-- Talador Flowerpicker
+		q(33965),	-- Tanaan Flowerpicker
+		q(39128),	-- Tanaan Vignette
+		q(39713),	-- Tracking Quest - Pops immediately on new characters but no other info known. Possibly legendary ring related
+	}),
+
+	----------------------
+	--      LEGION      --
+	----------------------
+	tier(LEGION_TIER, {
+		-- DUNGEONS & RAIDS
+		q(41710, { ["_drop"] = { "g" }, }),	-- Legion 110 A
+		q(41712, { ["_drop"] = { "g" },	}),	-- Legion 110 A
+		q(41714),	-- Legion 110 A
+		q(41716),	-- Legion 110 A
+		q(41718),	-- Legion 110 A
+		q(41720),	-- Legion 110 A
+		q(41721),	-- Legion 110 A
+		q(42457),	-- Legion 110 A
+		q(42458),	-- Legion 110 A
+		q(42462),	-- Legion 110 A
+		q(42464),	-- Legion 110 A
+		q(42466, { ["_drop"] = { "g" }, }),	-- Legion 110 A
+		q(42467, { ["_drop"] = { "g" }, }),	-- Legion 110 A
+		q(42468),	-- Legion 110 A
+		q(42469),	-- Legion 110 A
+		q(42470),	-- Legion 110 A
+		q(43497),	-- Legion 110 A
+		q(43498),	-- Legion 110 A
+		q(44435),	-- Legion 110 Dungeon Reward Quest
+		q(41711, { ["_drop"] = { "g" }, }),	-- Legion 110 H
+		q(41713, { ["_drop"] = { "g" }, }),	-- Legion 110 H
+		q(41715),	-- Legion 110 H
+		q(41717),	-- Legion 110 H
+		q(41719),	-- Legion 110 H
+		q(41722),	-- Legion 110 H
+		q(41723),	-- Legion 110 H
+		q(42459),	-- Legion 110 H
+		q(42460),	-- Legion 110 H
+		q(42463),	-- Legion 110 H
+		q(42465),	-- Legion 110 H
+		q(42471, { ["_drop"] = { "g" }, }),	-- Legion 110 H
+		q(42472, { ["_drop"] = { "g" }, }),	-- Legion 110 H
+		q(42473),	-- Legion 110 H
+		q(42474),	-- Legion 110 H
+		q(42475),	-- Legion 110 H
+		q(43499),	-- Legion 110 H
+		q(43500),	-- Legion 110 H
+		q(44437),	-- Legion Dungeon Reward Quest
+		q(45533),	-- Legion Dungeon Reward Quest
+		q(42915),	-- LFGDungeons - Legion - Dungeon Heroic - 1st
+		q(42916),	-- LFGDungeons - Legion - Dungeon Heroic - Nth
+		q(42912),	-- LFGDungeons - Legion - Dungeon Normal - 1st
+		q(42913),	-- LFGDungeons - Legion - Dungeon Normal - Nth
+		q(42897),	-- LFGDungeons - Legion - Heroic Random - 1st
+		q(42899),	-- LFGDungeons - Legion - Heroic Random - Nth
+		q(42901),	-- LFGDungeons - Legion - Normal Random - 1st
+		q(42903),	-- LFGDungeons - Legion - Normal Random - Nth
+		q(42904),	-- LFGDungeons - Legion - Raid Finder - 1st
+		q(42905),	-- LFGDungeons - Legion - Raid Finder - Nth
+		q(42554),	-- WOD 100 A
+		q(42555),	-- WOD 100 A
+		q(42561),	-- WOD 100 A
+		q(42562),	-- WOD 100 A
+		q(42563),	-- WOD 100 A
+		q(42564),	-- WOD 100 A
+		q(42565),	-- WOD 100 A
+		q(42552),	-- WOD 100 H
+		q(42553),	-- WOD 100 H
+		q(42556),	-- WOD 100 H
+		q(42557),	-- WOD 100 H
+		q(42558),	-- WOD 100 H
+		q(42559),	-- WOD 100 H
+		q(42560),	-- WOD 100 H
+
+		-- PVP
+		q(45538),	-- 10v10 Weekly Quest UI
+		q(42548),	-- 10v10 #1
+		q(42549),	-- 10v10 #2
+		q(42550),	-- 10v10 #3
+		q(42551),	-- 10v10 #4
+		q(44891),	-- 2v2 Weekly Quest
+		q(45536),	-- 2v2 Weekly Quest UI
+		q(42540),	-- 2v2 #1
+		q(42541),	-- 2v2 #2
+		q(42542),	-- 2v2 #3
+		q(42543),	-- 2v2 #4
+		q(44908),	-- 3v3 Weekly Quest
+		q(45537),	-- 3v3 Weekly Quest UI
+		q(42544),	-- 3v3 #1
+		q(42545),	-- 3v3 #2
+		q(42546),	-- 3v3 #3
+		q(42547),	-- 3v3 #4
+		q(44909),	-- RBG Weekly
+
+		-- Legion start
+		q(42741),	-- Legion Expansion Started Tracking Quest
+		q(46733),	-- Legion Expansion Started Tracking Quest
+		q(42646),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
+		q(42647),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
+		q(42648),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
+		q(40658),	-- Durotar - Tracking Quest - W1 - See Demon Attack ("Demons Among Us" quest)
+		q(40768),	-- Orgrimmar - Tracking Quest - W1 - Intro to Illidari Complete - triggers when turning in "Keep Your Friends Close"
+		q(40616),	-- Tracking Quest - W1 - Saw Leader Die
+		q(40521),	-- Tracking Quest - W1 - Demon Attack Complete (Horde) - triggered after turning in "Demons Among Them"
+		q(41306),	-- The Fallen Lion. Triggers with regular "The Fallen Lion" 40517
+		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
+		q(43806),	-- The Battle for Broken Shore Scenario Skip (A)
+		q(44543),	-- The Battle for Broken Shore Scenario Skip (H)
+		q(44659),	-- Dalaran - I Skipped The Intro Tracking Quest
+
+		-- Generic Order Hall
+		q(38894),	-- Founded Garrison - founded the order hall
+		q(43837),	-- Tracking Quest: Tutorial - Combat Ally Unlocked
+		q(44296),	-- Tracking Quest: Finished Rise, Champions - triggers after recruiting your first follower(s)
+		q(43900),	-- Tracking Quest: All - Troop A Enabled - completed first tutorial mission
+		q(43901),	-- Tracking Quest: All - Troop B Enabled - completed second tutorial mission
+		q(43433),	-- Tracking Quest: Tutorial - Troops Built
+		q(42115),	-- Tracking Quest: Chapter 1 completed - triggers when you complete the quest that gets your first order hall upgrade
+		q(42116),	-- Tracking Quest: Chapter 2 Completed - triggers after completing your first order hall campaign effort
+		q(42117),	-- Tracking Quest: Chapter 3 Completed - triggers after completing the first dungeon quest from your order hall leader - order hall bracers unlock
+		q(42118),	-- Tracking Quest: Chapter 4 Completed - triggers after completing order hall campaign
+		q(45171),	-- 7.1 Class Hall - Special - PVP - PVP Intro Mission - Tracking Quest
+		q(47661),	-- [DNT] - tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm". Triggered immediately after the broken shore scenario, so probably some kind of daily trigger
+		q(47699),	-- [DNT] - tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm". Triggered immediately after the broken shore scenario, so probably some kind of daily trigger
+		q(44483),	-- Vendor Beckon Trigger - triggers all classes
+		q(44484),	-- Vendor Beckon Trigger - triggers all classes
+		q(45773),	-- 7.2 Class Hall - Maximillian of Northshire - Aqcuisition - Track Mail Sent
+		q(43510),	-- Seal of Fate: Class Hall - weekly quest, various sources
+
+		-- Paragon
+		q(46794),	-- Paragon of the Court
+		q(46796),	-- Paragon of Highmountain
+		q(46797),	-- Paragon of the Dreamweavers
+		q(46798),	-- Paragon of the Valarjar
+		q(46799),	-- Paragon of the Nightfallen
+		q(46800),	-- Paragon of the Wardens
+		q(46802),	-- Paragon of the Legionfall Armies
+		q(48973),	-- Paragon of Argussian Reach
+		q(48974),	-- Paragon of the Army of the Light
+
+		-- Random -- TODO -Darkal
+		q(43463),	-- Ashes of a Fallen Crusader Tracking Quest - Looting Charred Locket from Ashes of a Fallen Crusader
+		q(43464),	-- Talking to Alaina Hearthsong
+		q(43465),	-- Looting Alaina's Bonnet
+
+		q(44295),	-- Tracking Quest - W2 - Spoke to Khadgar
+		q(44297),	-- Tracking Quest - W2 - Jaina Gone
+
+		q(48858),	-- Light's Judgment active tracking quest?
+		q(48859),	-- Lightforged Warframe active tracking quest?
+		q(48860),	-- Fel Heart of Argus active tracking quest?
+		q(48579),	-- Shroud of Arcane Echoes active tracking quest?
+
+		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
+		q(44455),	-- Downfall tracking - in Suramar, possibly tied to a Demon Hunter artifact?
+
+		q(45302),	-- 7.1.5 Class Hall - Brawlers Missions - Has Completed Any Brawlers Mission with Overmax - Tracking Quest - triggered when doing my first brawl for BFA
+		q(45311),	-- 7.1.5 Class Hall - Special - Brawlers - Fight 04 - Tracking Quest - completing "I've Got a Strange Feeling About This" mission while unlocking Meatball
+		q(45313),	-- 7.1.5 Class Hall - Brawlers - Fight 04 - Overmax Reward Credit - Tracking Quest - same as above
+
+		q(46717),	-- Tracking Quest - got achievement Burning Bridges and looted Qa'pla, Eredun War Order legendary, so one of the two
+		q(42189),	-- Fire Mage - Flavor Event 01. Showed Arcanomancer Vridiel in Dalaran the newly acquired Felo'melorne
+		q(42192),	-- Fire Mage - Flavor Event 02
+		q(42212),	-- Fire Mage - Flavor Event 03
+		q(42860),	-- Tracking - God-King Scene - something happened around turning in #38811/39791 that triggered some /yells from God-King Skovald
+		q(39017, {	-- Triggered when turning in first DK artifact completion quest (likely triggers after any first artifact quest for DK)
+			-- Added sourcequests in here since this HQT unlocks the Legion DK Flight Path...
+			["name"] = "Flight Path Unlock",
+			["sourceQuests"] = {
+				40740,	-- The Dead and the Damned [Blood Artifact]*
+				38990,	-- The Call of Icecrown [Frost Artifact] TODO: confirm
+				40930,	-- Apocalypse [Unholy Artifact] TODO: confirm
+			},
+		}),
+
+		-- Balance of Power questline -- TODO -Darkal
+		q(43511),	-- Kalec Arrives - triggered when turning in "The Power Within" at Azurewing Repose (starting Balance of Power)
+		q(43775),	-- Kalec Arrives - triggered when completing Seeking the Valkyra (40603) in the Balance of Power questline
+		q(40627),	-- Triggers after looting heart for Halls of Valor: Odyn's Blessing (40615) in the Balance of Power questline
+		q(43529),	-- Triggered when turning in Preparing to Move (43898) in the Balance of Power questline
+
+		--	Treasures -- TODO -Darkal
+		q(40601),	-- 7.0 Highmountain - Vignette - Pinerock Basin - Highmountain Beastmaster See Treasure (JLW) - looting treasure after Arru
+		q(40389),	-- creating Rocfeather Skyhorn Kite
+		-- Eredath
+		q(49264),	-- opening a Void-Seeped Cache in Eredath
+		q(49022),	-- It's clearing the rubble in front of "Forgotten Legion Supplies" (object id: 277204)
+		-- Antoran Wastes
+		q(48613),	-- clearing the rubble in front of "Eredar Treasure Cache" (object id: 276223)
+		q(48742),	-- clearing the rubble in front of "Students Surprising Surplus" (object id: 276225)
+		q(48746),	-- clearing the rubble in front of "Void Tinged Chest" (object id: 276226)
+		q(48741),	-- clearing the rubble in front of "Chest of Ill-Gotten Gains" (object: 276224)
+		-- Krokuun
+		q(48876),	-- jumping on the rubble in front of "Krokul Emergency Cache" (object id: 276490)
+		q(48877),	-- I'm guessing for clearing the rubble in front of "Legion Power Chest" (object id: 276489)
+		q(48878),	-- clearing rubble for "Lost Krokul Chest" (object id: 276491)
+	}),
+
+	-------------------
+	--      BFA      --
+	-------------------
+	tier(BFA_TIER, {
 		--	VARIOUS
+		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success" (spellID 388051)
 		q(47703),	-- triggered while on #47631, "Rendezvous with the Libation"
 		q(50225),	-- first kill of Ogmot the Mad
 		q(50465),	-- triggered with #49950, "Blood Purification"
@@ -306,6 +680,18 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(54705),	-- Using 7th Legion Scouting Map
 		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
 		--q(55464),	-- Triggered with Tandred Proudmoore conversation?
+
+		-- Paragon
+		q(54610),	-- Paragon of the Tortollan Seekers
+		q(54611),	-- Paragon of the Champions of Azeroth
+		q(54618),	-- Paragon of the 7th Legion
+		q(54626),	-- Paragon of the Honorbound
+		q(54627),	-- Paragon of the Order of Embers
+		q(54628),	-- Paragon of the Storm's Wake
+		q(54629),	-- Paragon of the Proudmoore Admiralty
+		q(54630),	-- Paragon of Talanji's Expedition
+		q(54631),	-- Paragon of the Voldunai
+		q(54632),	-- Paragon of the Zandalari Empire
 
 		--	HONEYBACK HIVE
 		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley
@@ -1052,12 +1438,25 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(58514),	-- Vuk'laz the Earthbreaker bonus roll
 		q(58508),	-- Grand Empress Shek'zara first kill??
 		--q(58770),	-- Grand Empress Shek'zara bonus roll
+	}),
 
+	------------------
+	--      SL      --
+	------------------
+	tier(SL_TIER, {
+		-- PVP
+		q(62298, { ["_drop"] = { "g" },	}),	-- Classic 20-49
+		q(62299, { ["_drop"] = { "g" },	}),	-- Classic 20-49
+		q(62347, { ["_drop"] = { "g" },	}),	-- Shadowlands (51-59) E
+		q(62353, { ["_drop"] = { "g" },	}),	-- Shadowlands (51-59) E
+		q(62357, { ["_drop"] = { "g" },	}),	-- Shadowlands (51-59) E
+		q(62348, { ["_drop"] = { "g" },	}),	-- Shadowlands (51-59) E
 
+		-- PvP Assassin
+		q(63389),	-- Killed and looted Horde Assasin (as Alliance obviously)
+		q(63390),	-- Killed and looted Horde Assasin (as Alliance obviously)
+		q(63391),	-- Killed and looted Horde Assasin (as Alliance obviously)
 
-		-----------------
-		-- SHADOWLANDS --
-		-----------------
 		-- Generic SL tracking quests (cannot be placed in a single file)
 		q(64508),	-- generic Renown quest - triggers multiple times for all covenants
 		q(63220),	-- generic quest for hitting Renown 10 (any covenant) - WQ reward upgrade #1
@@ -1612,7 +2011,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(63196),	-- triggered when starting/accepting Hunt Death Elementals (spellID 347179)
 		q(63197),	-- triggered when starting/accepting Hunt Winged Souleaters (spellID 347180)
 		q(68666),	-- Either after killing Ekphoras, Herald of Grief in the maw or after crafting Domination's calling with the three Dominion's etchings
-	--	q(63178),	-- triggered randomly in The Maw 12/16/20
+		--	q(63178),	-- triggered randomly in The Maw 12/16/20
 		-- The Maw rares
 		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
 					-- also for mogwai when killing Eketra...
@@ -1647,7 +2046,28 @@ root(ROOTS.HiddenQuestTriggers, {
 
 		-- Treasures of Korthia achievement
 		q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
+	}),
 
+	------------------
+	--      DF      --
+	------------------
+	tier(DF_TIER, {
+		-- New Heritage questline start HQTs
+		q(75246),	-- Human Heritage (spellID 406118)
+		q(75247),	-- Orc Heritage (spellID 406119)
+		q(75248),	-- Goblin Heritage (spellID 406121)
+		q(75249),	-- Worgen Heritage (spellID 406122)
+		q(75250),	-- Tauren Heritage (spellID 406123)
+		q(75251),	-- Gnome Heritage (spellID 406126)
+		q(75252),	-- Blood Elf Heritage (spellID 406127)
+		q(75253),	-- Dwarf Heritage (spellID 406128)
+		q(76457),	-- Undead Heritage (spellID 414546)
+		q(76458),	-- Night Elf Heritage (spellID 414550)
+		-- Timewalking - Master of Timeways Triggers
+		q(78204),	-- First Week Trigger (spellID 423861)
+		-- PVP
+		q(79332, {["repeatable"]=true}),	-- Triggers after winning a Brawl: Battleground Blitz (possibly only when theres an elistment bonus?)
+		q(78011),	-- trigger after Brawl: Battleground Blitz (possibly criteria hqt for turn in Gotta Go Fast?)
 	}),
 
 	--------------------
@@ -1845,508 +2265,75 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(49769),	-- Wreckage of the Cataclysm - completed with quest 50331
 	}),
 
-	-------------------
-	--      MOP      --
-	-------------------
-	tier(MOP_TIER, {
-		-- Operation: Shieldwall / Dominance Offensive campaign
-		q(32357),	-- Tracking Event: Event Complete - triggeres after watching the RP after turning in "Heart of the Alliance" (questID 32316)
-		q(32356),	-- Tracking Event: Ambassadors Summoned - triggeres  "Heart of the Alliance" completion
-		q(32395),	-- Tracking Event: Saw Avartu - triggered while on "The Divine Bell," part of the Operation: Shieldwall campaign (at the end of the quest before killing Avartu)
-		q(32339),	-- Rebuilding the Mallet (Tracker) - triggered after turning in The Head and The Harmonic Ointment (The Handle was turned in earlier, but presumably requires all 3), part of the Operation: Shieldwall campaign
-		q(32365),	-- Tracking Event: Epilogue Complete - triggered after turning in "The Silence" and watching the RP, part of the Operation: Shieldwall campaign.  didn't go off until I left the area and turned in another quest (which is a daily that doesn't normally have any additional tracking quests attached, so i know it was from the final campaign quest)
-		q(32361),	-- triggered after turning in #32352, "A Gathering Storm," part of the Dominance Offensive campaign
-		q(32364),	-- triggered after turning in #32448, "Ties with the Past," part of the Dominance Offensive campaign
-		q(32437),	-- Tracking Event: Saw Sarannha 1 - triggered at the end of "The Divine Bell," part of the Dominance Offensive campaign
-		q(32438),	-- Tracking Event: Saw Sarannha 2 - triggered at the end of "The Divine Bell," part of the Dominance Offensive campaign
+	-------------------------------
+	--  UNKNOWN / NYI / UNSORTED --
+	-------------------------------
+	n(QUESTS, {	-- Quests
+		q(13807),	-- FLAG: Tournament Invitation
+		q(38995),	-- Unused
+		q(54740),	-- [DNT] REUSE ME
+		q(57917),	-- [DNT] Test - JAM
+		q(8274),	-- Test Kill Quest - triggered after The Conquest Pit: Final Showdown (12431)
+		q(7069),	-- Unused
+		q(8458),	-- Unused
+		q(24797),	-- REUSE
+		q(46807),	-- [UNUSED]
+		q(40596),	-- FLAG - Azsuna - Timothy Jones - (UNUSED)
+		q(40595),	-- FLAG - Dalaran - Timothy Jones - (UNUSED)
+		q(47495),	-- Insatiable Appetite [UNUSED]
+		q(39044),	-- Unused
+		q(50690),	-- Unused
+		q(54781),	-- UNUSED
+		q(37812),	-- UNUSED: Test Race: 1 Marker
+		q(38845),	-- Unused
+		--q(59038),	-- Got suddenly appeared. Same time as I was chatting. We finished Temple of Jade Serpent, lvl 16, 22, 46 (I'm the 46). Goblin in group with Vulpera Party Sync enabled
+		--q(63389),	-- Person in Errors doesnt really remember
+		--q(63390), -- Person in Errors doesnt really remember
+		--q(63391), -- Person in Errors doesnt really remember
+		--q(54324),	-- Triggered in BfA
+		--q(54317),	-- BfA Alliance Stormsong "Invasion"
+		--q(62521),	-- unknown tracking
+		--q(62571),	-- Flying in Maldraxxus
+		--q(62397),	-- Unknown
+		--q(45775),	-- Discord: this week's archaeology quest. when I either turned it in at the blood elf in suramar, or when I took the follow up quest. dont remember which. 7 April 2022
+		q(54422),	-- After winning a PVP pet battle I received a clickable item that added a mission to the BFA mission table:[A Shady Character] has been added to your Mission Table.
 
-		--	QUESTING / LEVELING / VARIOUS
-		q(29698),	-- Tracking Event: Alliance Banner Found
-		q(29699),	-- Tracking Event: Alliance Chest Found
-		q(29700),	-- Tracking Event: Bodyguard Found
-		q(29701),	-- Tracking Event: Journal Found
-		q(30564),	-- Tracking Event: Talked to Dog at Farm
-		q(30207),	-- Tracking Event: 1st Place
-		q(30208),	-- Tracking Event: 2nd Place
-		q(30209),	-- Tracking Event: 3rd Place
-		q(30210),	-- Tracking Event: 4th Place
-		q(30211),	-- Tracking Event: 5th Place
-		q(30212),	-- Tracking Event: 6th Place
-		q(31960),	-- Tracking Event: Vote #1 Complete
-		q(31961),	-- Tracking Event: Vote #2 Complete
-		q(31962),	-- Tracking Event: Vote #3 Complete
-		q(31963),	-- Tracking Event: Vote #4 Complete
-		q(31964),	-- Tracking Event: Vote #5 Complete
-		q(31965),	-- Tracking Event: Vote #6 Complete
-		q(33900),	-- Tracking Quest: Activated Arkonite 3
-		q(33901),	-- Tracking Quest: Activated Arkonite 4
-		q(33899),	-- Tracking Quest: Turn on the Holograms
-		q(32112),	-- FLAG - Been to Fight Club - completing first fight
-		q(32113),	-- FLAG - Been to Fight Club Today
-		q(32444),	-- FLAG - Earned Brawler Title (Weekly)
-		q(32725),	-- Warlock Green Fire Questline - Reached Kanrethad
-		q(32666),	-- Warlock Green Fire Questline - Reached Kanrethad
+		--	PVP quests
+		q(47954),	-- Tracking Quest (Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths)
+		q(47956),	-- Tracking Quest (triggered when using "To Modernize the Provisioning of Azeroth" toy to unlock EK flight paths)
+		q(50659),	-- Silithus - talk to Zidormi to phase into the past version of the map
+		q(49813),	-- Adventure Calls (lvl 60) - can trigger prior to level 60 if you accept a quest from the warboard
+		q(49860),	-- Adventure Calls (lvl 60) - can trigger prior to level 60 if you accept a quest from the warboard
+		q(42871),	-- Tome of Illusions - Azeroth
+		q(42873),	-- Tome of Illusions - Outland
+		q(42874),	-- Tome of Illusions - Northrend
+		q(42875),	-- Tome of Illusions - Cataclysm
+		q(42876),	-- Tome of Illusions - Elemental Lords
+		q(42877),	-- Tome of Illusions - Pandaria
+		q(42878),	-- Tome of Illusions - Secrets of the Shado-Pan
+		q(42879),	-- Tome of Illusions - Draenor
+		q(45435),	-- First Win of the Day (Random BG)
+		q(47144),	-- First Win of the Day (BG Brawl)
+		q(45432),	-- First Win of the Day (2v2)
+		q(45436),	-- First Win of the Day (Skirmish)
+		q(45433),	-- First Win of the Day (3v3)
+		q(45434),	-- First Win of the Day (10v10)
+		q(49847),	-- Selected Pandaria at level 80 Special Duty Assignment" on horde
+		q(57668),	-- Triggering when using a portal to Orgrimmar as Horde/to Ironforge as Alliance after Dec 25th during the Feast of Winter Veil 2019/2021
+		--- (seems to trigger only the first time you go there that day). Possibly used to determine loot eligibility?
+		q(31990),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
+		q(39695),	-- triggers after applying a Vantus Rune
 
-		--	DUNGEONS & RAIDS
-		q(31614),	-- LFGDungeons - Mists - Heroic Random - 1st
-		q(31615),	-- LFGDungeons - Mists - Heroic Random - Nth
-		q(31274),	-- LFGDungeons - Mists - Raid Finder - 1st
-		q(31275),	-- LFGDungeons - Mists - Raid Finder - Nth
-		q(32097),	-- Short-Supply Reward
-		q(33233, { ["_drop"] = { "g" }, }),	-- Short-Supply Reward
-
-		-- SCENARIOS
-		q(32817),	-- Complete "Loyalty" Scenario - triggeres when turning in "The King and the Council"
-		q(32818),	-- Complete "The Dark Heart of Pandaria" Scenario - triggeres when turning in "The Warchief and the Darkness"
-		q(32898),	-- Daily Scenario Random (1st) (Mists)
-		q(32899),	-- Daily Scenario Random (Nth) (Mists)
-		q(32897),	-- LFGDungeons - Mists - Scenario - Heroic Daily - 1st/Nth
-		q(32873, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st
-		q(32874, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth
-		q(32893),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st Bonus
-		q(32894),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth Bonus
-		q(31616, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Mists - Scenario - Normal Random - 1st
-		q(31617, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Mists - Scenario - Normal Random - Nth
-		q(31987, { ["_drop"] = { "g" }, }),	-- LFGDungeons - Theramore Launch Event
-
-		-- PROVING GROUNDS
-		q(33089),	-- FLAG - Proving Grounds - Damage Bronze
-		q(33091),	-- FLAG - Proving Grounds - Damage Gold
-		q(33090),	-- FLAG - Proving Grounds - Damage Silver
-		q(33095),	-- FLAG - Proving Grounds - Healer Bronze
-		q(33097),	-- FLAG - Proving Grounds - Healer Gold
-		q(33096),	-- FLAG - Proving Grounds - Healer Silver
-		q(33092),	-- FLAG - Proving Grounds - Tank Bronze
-		q(33094),	-- FLAG - Proving Grounds - Tank Gold
-		q(33093),	-- FLAG - Proving Grounds - Tank Silver
-
-		--	Short-Supply Reward - UNKNOWN TRIGGERS
-		qNYI(33602),	-- Short-Supply Reward
-		qNYI(33603),	-- Short-Supply Reward
-	}),
-
-	-------------------
-	--      WOD      --
-	-------------------
-	tier(WOD_TIER, {
-		--	QUESTING / LEVELING / VARIOUS
-		q(35266),	-- Boosted Character - triggered for character that used WoD boost (level 90)
-		q(37187),	-- The Dark Portal
-		q(37193),	-- The King's Command - autocompleted when "Hero's Call: Jade Forest!" is picked up (questID 49556)
-		q(36825),	-- Fate of the Horde - triggered when turning in "Audience with the Warchief" as a demon hunter (questID 40976)
-
-		--	DUNGEONS & RAIDS
-		q(37212),	-- FLAG - Proving Grounds - Damage Bronze
-		q(37214),	-- FLAG - Proving Grounds - Damage Gold
-		q(37213),	-- FLAG - Proving Grounds - Damage Silver
-		q(37218),	-- FLAG - Proving Grounds - Healer Bronze
-		q(37220),	-- FLAG - Proving Grounds - Healer Gold
-		q(37219),	-- FLAG - Proving Grounds - Healer Silver
-		q(37215),	-- FLAG - Proving Grounds - Tank Bronze
-		q(37217),	-- FLAG - Proving Grounds - Tank Gold
-		q(37216),	-- FLAG - Proving Grounds - Tank Silver
-		q(37501),	-- Draenor Challenge Mode - Bronze Addition (1st)
-		q(37502),	-- Draenor Challenge Mode - Consolation (1st)
-		q(37503),	-- Draenor Challenge Mode - Gold Addition (1st)
-		q(37504),	-- Draenor Challenge Mode - Silver Addition (1st)
-		q(36145, {["_drop"] = { "g" }}),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
-		q(36151, {["_drop"] = { "g" }}),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
-		q(40829),	-- LFGDungeons - Draenor 6.2 - Raid Finder - 1st
-		q(37333),	-- LFGDungeons - Draenor - Heroic Random - 1st
-		q(37334),	-- LFGDungeons - Draenor - Heroic Random - Nth
-		q(37335),	-- LFGDungeons - Draenor - Normal Random - 1st
-		q(37336),	-- LFGDungeons - Draenor - Normal Random - Nth
-		q(37505),	-- LFGDungeons - Draenor - Raid Finder - 1st
-		q(37506),	-- LFGDungeons - Draenor - Raid Finder - Nth
-		q(36143, {["_drop"] = { "g" }}),	-- LFGDungeons - Lich King - Dungeon Normal 1st
-		q(36149, {["_drop"] = { "g" }}),	-- LFGDungeons - Lich King - Dungeon Normal Nth
-		q(31618, {["_drop"] = { "g" }}),	-- LFGDungeons - Mists - Normal Random - 1st
-		q(31619, {["_drop"] = { "g" }}),	-- LFGDungeons - Mists - Normal Random - Nth
-		q(36147, {["_drop"] = { "g" }}),	-- LFGDungeons - Pandaria - Dungeon Normal 1st
-		q(36139, {["_drop"] = { "g" }}),	-- LFGDungeons - Pandaria - Dungeon Normal Nth
-		q(40395, {["_drop"] = { "g" }}),	-- LFGDungeons - Timewalking "Heroic" Random - Nth
-		q(36144, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
-		q(36150, {["_drop"] = { "g" }}),	-- LFG WLK 75-80
-		q(37648, {["_drop"] = { "g" }}),	-- Short-Supply Reward
-		q(35963),	-- Warlords Heroic Dungeon Reward Quest - triggered at the end of Mythic Grimrail Depot
-		q(36277),	-- Warlords Max Level Dungeon Bonus Reward
-		q(35962),	-- Warlords Max Level Dungeon Reward Quest - triggered at the end of Normal Grimrail Depot
-
-		-- PVP
-		q(36146),	-- Cataclysm 84-85
-		q(36152),	-- Cataclysm 84-85
-		q(38116, {["_drop"] = { "g" }}),	-- Cata/Mop 80-89
-		q(38127, {["_drop"] = { "g" }}),	-- Cata/MoP 80-89
-		q(38138),	-- Cata/MoP 80-89
-		q(38156),	-- Cata/MoP 80-89
-		q(38167),	-- Cata/MoP 80-89
-		q(38149),	-- Classic 10-19
-		q(38160),	-- Classic 10-19
-		q(38110, {["_drop"] = { "g" }}),	-- Classic 20-29
-		q(38121, {["_drop"] = { "g" }}),	-- Classic 20-29
-		q(38132),	-- Classic 20-29
-		q(38150),	-- Classic 20-29
-		q(38161),	-- Classic 20-29
-		q(38111, {["_drop"] = { "g" }}),	-- Classic 30-39
-		q(38122, {["_drop"] = { "g" }}),	-- Classic 30-39
-		q(38133),	-- Classic 30-39
-		q(38151),	-- Classic 30-39
-		q(38162),	-- Classic 30-39
-		q(38112, {["_drop"] = { "g" }}),	-- Classic 40-49
-		q(38123, {["_drop"] = { "g" }}),	-- Classic 40-49
-		q(38134),	-- Classic 40-49
-		q(38152),	-- Classic 40-49
-		q(38163),	-- Classic 40-49
-		q(38113, {["_drop"] = { "g" }}),	-- Classic 50-59
-		q(38124, {["_drop"] = { "g" }}),	-- Classic 50-59
-		q(38135),	-- Classic 50-59
-		q(38153),	-- Classic 50-59
-		q(38164),	-- Classic 50-59
-		q(38118, {["_drop"] = { "g" }}),	-- Legion 100-109 A
-		q(38129, {["_drop"] = { "g" }}),	-- Legion 100-109 A
-		q(38140, {["_drop"] = { "g" }}),	-- Legion 100-109 A
-		q(38158, {["_drop"] = { "g" }}),	-- Legion 100-109 A
-		q(38169),	-- Legion 100-109 A
-		q(38171, {["_drop"] = { "g" }}),	-- Legion 100-109 A
-		q(38172, {["_drop"] = { "g" }}),	-- Legion 100-109 A
-		q(38119, {["_drop"] = { "g" }}),	-- Legion 100-109 H
-		q(38130, {["_drop"] = { "g" }}),	-- Legion 100-109 H
-		q(38141),	-- Legion 100-109 H
-		q(38159, {["_drop"] = { "g" }}),	-- Legion 100-109 H
-		q(38170),	-- Legion 100-109 H
-		q(38173, {["_drop"] = { "g" }}),	-- Legion 100-109 H
-		q(38174, {["_drop"] = { "g" }}),	-- Legion 100-109 H
-		q(36140, {["_drop"] = { "g" }}),	-- Pandaria 88-90
-		q(36148, {["_drop"] = { "g" }}),	-- Pandaria 88-90
-		q(38114, {["_drop"] = { "g" }}),	-- TBC 60-69
-		q(38125, {["_drop"] = { "g" }}),	-- TBC 60-69
-		q(38136),	-- TBC 60-69
-		q(38154),	-- TBC 60-69
-		q(38165),	-- TBC 60-69
-		q(38109, {["_drop"] = { "g" }}),	-- Vanilla 10-19
-		q(38120, {["_drop"] = { "g" }}),	-- Vanilla 10-19
-		q(38131),	-- Vanilla 10-19
-		q(38115, {["_drop"] = { "g" }}),	-- WLK 70-79
-		q(38126, {["_drop"] = { "g" }}),	-- WLK 70-79
-		q(38137),	-- WLK 70-79
-		q(38155),	-- WLK 70-79
-		q(38166),	-- WLK 70-79
-		q(38117, {["_drop"] = { "g" }}),	-- WOD 90-99
-		q(38128, {["_drop"] = { "g" }}),	-- WOD 90-99
-		q(38139),	-- WOD 90-99
-		q(38157),	-- WOD 90-99
-		q(38168),	-- WOD 90-99
-
-		-- ASSAULTS
-		q(36534),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
-		q(36547),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
-		q(36663),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Horde character)
-		q(36664),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Alliance character)
-		q(36537),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
-		q(36558),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
-		q(36532),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
-		q(36545),	-- Garrison Max-level Choice Tracker: (GROUP) Gorgrond Blackrock Foundry
-		q(36527),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
-		q(36549),	-- Garrison Max-level Choice Tracker: Frostfire Bloodmaul Compound
-		q(36528),	-- Garrison Max-level Choice Tracker: Shadowmoon Darktide Roost
-		q(36555),	-- Garrison Max-level Choice Tracker: Shadowmoon Darktide Roost
-		q(36533),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
-		q(36552),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
-		q(36531),	-- Garrison Max-level Choice Tracker: Shadowmoon Sanctum of Othaar
-		q(36556),	-- Garrison Max-level Choice Tracker: Shadowmoon Sanctum of Othaar
-		q(36539),	-- Garrison Max-level Choice Tracker: Spires Mushroom Swamp
-		q(36557),	-- Garrison Max-level Choice Tracker: Spires Mushroom Swamp
-		q(36540),	-- Garrison Max-level Choice Tracker: Nagrand Broken Precipice
-		q(36553),	-- Garrison Max-level Choice Tracker: Nagrand Broken Precipice
-		q(36541),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
-		q(36554),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
-		q(37646),	-- See New Brightstone, See Wolfed Out Thorn (Garrison Attack?)
-
-		--	Short-Supply Reward - UNKNOWN TRIGGERS
-		qNYI(37461),	-- Short-Supply Reward
-		qNYI(37463),	-- Short-Supply Reward
-		qNYI(37465),	-- Short-Supply Reward
-		qNYI(37681),	-- Short-Supply Reward
-		qNYI(37682),	-- Short-Supply Reward
-		qNYI(37683),	-- Short-Supply Reward
-		qNYI(37684),	-- Short-Supply Reward
-		qNYI(39398),	-- Short-Supply Reward
-		qNYI(39468),	-- Short-Supply Reward
-		qNYI(39473),	-- Short-Supply Reward
-		qNYI(39474),	-- Short-Supply Reward
-		qNYI(39475),	-- Short-Supply Reward
-		qNYI(39476),	-- Short-Supply Reward
-		qNYI(39477),	-- Short-Supply Reward
-		qNYI(39478),	-- Short-Supply Reward
-		qNYI(39479),	-- Short-Supply Reward
-		qNYI(39480),	-- Short-Supply Reward
-		qNYI(39481),	-- Short-Supply Reward
-		qNYI(39482),	-- Short-Supply Reward
-		qNYI(39483),	-- Short-Supply Reward
-		qNYI(39484),	-- Short-Supply Reward
-		qNYI(39485),	-- Short-Supply Reward
-
-		-- Tracking Quest - UNKNOWN TRIGGERS
-		qNYI(32935),	-- Tracking Quest
-		qNYI(37423),	-- Tracking Quest
-		qNYI(37424),	-- Tracking Quest
-		qNYI(37425),	-- Tracking Quest
-		qNYI(37426),	-- Tracking Quest
-		qNYI(37427),	-- Tracking Quest
-		qNYI(37428),	-- Tracking Quest
-		qNYI(37429),	-- Tracking Quest
-		qNYI(37430),	-- Tracking Quest
-		qNYI(37431),	-- Tracking Quest
-		qNYI(37432),	-- Tracking Quest
-		qNYI(39727),	-- Tracking Quest
-		qNYI(39728),	-- Tracking Quest
-		qNYI(39736),	-- Tracking Quest
-		qNYI(39737),	-- Tracking Quest
-		qNYI(39738),	-- Tracking Quest
-		qNYI(39739),	-- Tracking Quest
-		qNYI(39740),	-- Tracking Quest
-		qNYI(39751),	-- Tracking Quest
-		qNYI(39752),	-- Tracking Quest
-		qNYI(39753),	-- Tracking Quest
-		qNYI(40416),	-- Tracking Quest
-		qNYI(40853),	-- Tracking Quest
-
-		--	???
-		q(33964),	-- Arak Flowerpicker
-		q(36636),	-- Blueprint Read
-		q(36849),	-- Burning Missive
-		q(36850),	-- Burning Missive
-		q(36851),	-- Burning Missive
-		q(36852),	-- Burning Missive
-		q(36853),	-- Burning Missive
-		q(36854),	-- Burning Missive
-		q(36855),	-- Burning Missive
-		q(36856),	-- Burning Missive
-		q(34580),	-- Draenor Flowerpicker
-		q(34581),	-- Draenor Flowerpicker Note Found
-		q(34831),	-- Encounter Mushroom
-		q(33961),	-- Frostfire Flowerpicker
-		q(33966),	-- Gorgrond Flowerpicker
-		q(33963),	-- Nagrand Flowerpicker
-		q(34872),	-- Prized Repossessions Tracking
-		q(34985),	-- Prized Repossessions Tracking
-		q(34986),	-- Punching Through Tracking
-		q(34873),	-- Punching Through Tracking
-		q(33962),	-- Shadowmoon Flowerpicker
-		q(34053),	-- SoL Conversation Tracker
-		q(34871),	-- Supply Recovery Tracking
-		q(34984),	-- Supply Recovery Tracking
-		q(33960),	-- Talador Flowerpicker
-		q(33965),	-- Tanaan Flowerpicker
-		q(39128),	-- Tanaan Vignette
-		q(39713),	-- Tracking Quest - Pops immediately on new characters but no other info known. Possibly legendary ring related
-	}),
-
-	----------------------
-	--      LEGION      --
-	----------------------
-	tier(LEGION_TIER, {
-		-- DUNGEONS & RAIDS
-		q(41710, { ["_drop"] = { "g" }, }),	-- Legion 110 A
-		q(41712, { ["_drop"] = { "g" },	}),	-- Legion 110 A
-		q(41714),	-- Legion 110 A
-		q(41716),	-- Legion 110 A
-		q(41718),	-- Legion 110 A
-		q(41720),	-- Legion 110 A
-		q(41721),	-- Legion 110 A
-		q(42457),	-- Legion 110 A
-		q(42458),	-- Legion 110 A
-		q(42462),	-- Legion 110 A
-		q(42464),	-- Legion 110 A
-		q(42466, { ["_drop"] = { "g" }, }),	-- Legion 110 A
-		q(42467, { ["_drop"] = { "g" }, }),	-- Legion 110 A
-		q(42468),	-- Legion 110 A
-		q(42469),	-- Legion 110 A
-		q(42470),	-- Legion 110 A
-		q(43497),	-- Legion 110 A
-		q(43498),	-- Legion 110 A
-		q(44435),	-- Legion 110 Dungeon Reward Quest
-		q(41711, { ["_drop"] = { "g" }, }),	-- Legion 110 H
-		q(41713, { ["_drop"] = { "g" }, }),	-- Legion 110 H
-		q(41715),	-- Legion 110 H
-		q(41717),	-- Legion 110 H
-		q(41719),	-- Legion 110 H
-		q(41722),	-- Legion 110 H
-		q(41723),	-- Legion 110 H
-		q(42459),	-- Legion 110 H
-		q(42460),	-- Legion 110 H
-		q(42463),	-- Legion 110 H
-		q(42465),	-- Legion 110 H
-		q(42471, { ["_drop"] = { "g" }, }),	-- Legion 110 H
-		q(42472, { ["_drop"] = { "g" }, }),	-- Legion 110 H
-		q(42473),	-- Legion 110 H
-		q(42474),	-- Legion 110 H
-		q(42475),	-- Legion 110 H
-		q(43499),	-- Legion 110 H
-		q(43500),	-- Legion 110 H
-		q(44437),	-- Legion Dungeon Reward Quest
-		q(45533),	-- Legion Dungeon Reward Quest
-		q(42915),	-- LFGDungeons - Legion - Dungeon Heroic - 1st
-		q(42916),	-- LFGDungeons - Legion - Dungeon Heroic - Nth
-		q(42912),	-- LFGDungeons - Legion - Dungeon Normal - 1st
-		q(42913),	-- LFGDungeons - Legion - Dungeon Normal - Nth
-		q(42897),	-- LFGDungeons - Legion - Heroic Random - 1st
-		q(42899),	-- LFGDungeons - Legion - Heroic Random - Nth
-		q(42901),	-- LFGDungeons - Legion - Normal Random - 1st
-		q(42903),	-- LFGDungeons - Legion - Normal Random - Nth
-		q(42904),	-- LFGDungeons - Legion - Raid Finder - 1st
-		q(42905),	-- LFGDungeons - Legion - Raid Finder - Nth
-		q(42554),	-- WOD 100 A
-		q(42555),	-- WOD 100 A
-		q(42561),	-- WOD 100 A
-		q(42562),	-- WOD 100 A
-		q(42563),	-- WOD 100 A
-		q(42564),	-- WOD 100 A
-		q(42565),	-- WOD 100 A
-		q(42552),	-- WOD 100 H
-		q(42553),	-- WOD 100 H
-		q(42556),	-- WOD 100 H
-		q(42557),	-- WOD 100 H
-		q(42558),	-- WOD 100 H
-		q(42559),	-- WOD 100 H
-		q(42560),	-- WOD 100 H
-
-		-- PVP
-		q(45538),	-- 10v10 Weekly Quest UI
-		q(42548),	-- 10v10 #1
-		q(42549),	-- 10v10 #2
-		q(42550),	-- 10v10 #3
-		q(42551),	-- 10v10 #4
-		q(44891),	-- 2v2 Weekly Quest
-		q(45536),	-- 2v2 Weekly Quest UI
-		q(42540),	-- 2v2 #1
-		q(42541),	-- 2v2 #2
-		q(42542),	-- 2v2 #3
-		q(42543),	-- 2v2 #4
-		q(44908),	-- 3v3 Weekly Quest
-		q(45537),	-- 3v3 Weekly Quest UI
-		q(42544),	-- 3v3 #1
-		q(42545),	-- 3v3 #2
-		q(42546),	-- 3v3 #3
-		q(42547),	-- 3v3 #4
-		q(44909),	-- RBG Weekly
-
-		-- Legion start
-		q(42741),	-- Legion Expansion Started Tracking Quest
-		q(46733),	-- Legion Expansion Started Tracking Quest
-		q(42646),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
-		q(42647),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
-		q(42648),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
-		q(40658),	-- Durotar - Tracking Quest - W1 - See Demon Attack ("Demons Among Us" quest)
-		q(40768),	-- Orgrimmar - Tracking Quest - W1 - Intro to Illidari Complete - triggers when turning in "Keep Your Friends Close"
-		q(40616),	-- Tracking Quest - W1 - Saw Leader Die
-		q(40521),	-- Tracking Quest - W1 - Demon Attack Complete (Horde) - triggered after turning in "Demons Among Them"
-		q(41306),	-- The Fallen Lion. Triggers with regular "The Fallen Lion" 40517
-		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
-		q(43806),	-- The Battle for Broken Shore Scenario Skip (A)
-		q(44543),	-- The Battle for Broken Shore Scenario Skip (H)
-		q(44659),	-- Dalaran - I Skipped The Intro Tracking Quest
-
-		-- Generic Order Hall
-		q(38894),	-- Founded Garrison - founded the order hall
-		q(43837),	-- Tracking Quest: Tutorial - Combat Ally Unlocked
-		q(44296),	-- Tracking Quest: Finished Rise, Champions - triggers after recruiting your first follower(s)
-		q(43900),	-- Tracking Quest: All - Troop A Enabled - completed first tutorial mission
-		q(43901),	-- Tracking Quest: All - Troop B Enabled - completed second tutorial mission
-		q(43433),	-- Tracking Quest: Tutorial - Troops Built
-		q(42115),	-- Tracking Quest: Chapter 1 completed - triggers when you complete the quest that gets your first order hall upgrade
-		q(42116),	-- Tracking Quest: Chapter 2 Completed - triggers after completing your first order hall campaign effort
-		q(42117),	-- Tracking Quest: Chapter 3 Completed - triggers after completing the first dungeon quest from your order hall leader - order hall bracers unlock
-		q(42118),	-- Tracking Quest: Chapter 4 Completed - triggers after completing order hall campaign
-		q(45171),	-- 7.1 Class Hall - Special - PVP - PVP Intro Mission - Tracking Quest
-		q(47661),	-- [DNT] - tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm". Triggered immediately after the broken shore scenario, so probably some kind of daily trigger
-		q(47699),	-- [DNT] - tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm". Triggered immediately after the broken shore scenario, so probably some kind of daily trigger
-		q(44483),	-- Vendor Beckon Trigger - triggers all classes
-		q(44484),	-- Vendor Beckon Trigger - triggers all classes
-		q(45773),	-- 7.2 Class Hall - Maximillian of Northshire - Aqcuisition - Track Mail Sent
-		q(43510),	-- Seal of Fate: Class Hall - weekly quest, various sources
-
-		-- Random -- TODO -Darkal
-		q(43463),	-- Ashes of a Fallen Crusader Tracking Quest - Looting Charred Locket from Ashes of a Fallen Crusader
-		q(43464),	-- Talking to Alaina Hearthsong
-		q(43465),	-- Looting Alaina's Bonnet
-
-		q(44295),	-- Tracking Quest - W2 - Spoke to Khadgar
-		q(44297),	-- Tracking Quest - W2 - Jaina Gone
-
-		q(48858),	-- Light's Judgment active tracking quest?
-		q(48859),	-- Lightforged Warframe active tracking quest?
-		q(48860),	-- Fel Heart of Argus active tracking quest?
-		q(48579),	-- Shroud of Arcane Echoes active tracking quest?
-
-		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
-		q(44455),	-- Downfall tracking - in Suramar, possibly tied to a Demon Hunter artifact?
-
-		q(45302),	-- 7.1.5 Class Hall - Brawlers Missions - Has Completed Any Brawlers Mission with Overmax - Tracking Quest - triggered when doing my first brawl for BFA
-		q(45311),	-- 7.1.5 Class Hall - Special - Brawlers - Fight 04 - Tracking Quest - completing "I've Got a Strange Feeling About This" mission while unlocking Meatball
-		q(45313),	-- 7.1.5 Class Hall - Brawlers - Fight 04 - Overmax Reward Credit - Tracking Quest - same as above
-
-		q(46717),	-- Tracking Quest - got achievement Burning Bridges and looted Qa'pla, Eredun War Order legendary, so one of the two
-		q(42189),	-- Fire Mage - Flavor Event 01. Showed Arcanomancer Vridiel in Dalaran the newly acquired Felo'melorne
-		q(42192),	-- Fire Mage - Flavor Event 02
-		q(42212),	-- Fire Mage - Flavor Event 03
-		q(42860),	-- Tracking - God-King Scene - something happened around turning in #38811/39791 that triggered some /yells from God-King Skovald
-		q(39017, {	-- Triggered when turning in first DK artifact completion quest (likely triggers after any first artifact quest for DK)
-			-- Added sourcequests in here since this HQT unlocks the Legion DK Flight Path...
-			["name"] = "Flight Path Unlock",
-			["sourceQuests"] = {
-				40740,	-- The Dead and the Damned [Blood Artifact]*
-				38990,	-- The Call of Icecrown [Frost Artifact] TODO: confirm
-				40930,	-- Apocalypse [Unholy Artifact] TODO: confirm
-			},
-		}),
-
-		-- Legion ID, but triggers in different expansion -- TODO -Darkal
-		-- WoD - Tanaan Junhle
-		q(47285),	-- Triggers together with obtaining Equipment Blueprint: Tuskarr Fishing Net
-
-		-- Balance of Power questline -- TODO -Darkal
-		q(43511),	-- Kalec Arrives - triggered when turning in "The Power Within" at Azurewing Repose (starting Balance of Power)
-		q(43775),	-- Kalec Arrives - triggered when completing Seeking the Valkyra (40603) in the Balance of Power questline
-		q(40627),	-- Triggers after looting heart for Halls of Valor: Odyn's Blessing (40615) in the Balance of Power questline
-		q(43529),	-- Triggered when turning in Preparing to Move (43898) in the Balance of Power questline
-
-		--	Treasures -- TODO -Darkal
-		q(40601),	-- 7.0 Highmountain - Vignette - Pinerock Basin - Highmountain Beastmaster See Treasure (JLW) - looting treasure after Arru
-		q(40389),	-- creating Rocfeather Skyhorn Kite
-		-- Eredath
-		q(49264),	-- opening a Void-Seeped Cache in Eredath
-		q(49022),	-- It's clearing the rubble in front of "Forgotten Legion Supplies" (object id: 277204)
-			-- Antoran Wastes
-		q(48613),	-- clearing the rubble in front of "Eredar Treasure Cache" (object id: 276223)
-		q(48742),	-- clearing the rubble in front of "Students Surprising Surplus" (object id: 276225)
-		q(48746),	-- clearing the rubble in front of "Void Tinged Chest" (object id: 276226)
-		q(48741),	-- clearing the rubble in front of "Chest of Ill-Gotten Gains" (object: 276224)
-			-- Krokuun
-		q(48876),	-- jumping on the rubble in front of "Krokul Emergency Cache" (object id: 276490)
-		q(48877),	-- I'm guessing for clearing the rubble in front of "Legion Power Chest" (object id: 276489)
-		q(48878),	-- clearing rubble for "Lost Krokul Chest" (object id: 276491)
-	}),
-
-	------------------
-	--      DF      --
-	------------------
-	tier(DF_TIER, {
-		-- New Heritage questline start HQTs
-		q(75246),	-- Human Heritage (spellID 406118)
-		q(75247),	-- Orc Heritage (spellID 406119)
-		q(75248),	-- Goblin Heritage (spellID 406121)
-		q(75249),	-- Worgen Heritage (spellID 406122)
-		q(75250),	-- Tauren Heritage (spellID 406123)
-		q(75251),	-- Gnome Heritage (spellID 406126)
-		q(75252),	-- Blood Elf Heritage (spellID 406127)
-		q(75253),	-- Dwarf Heritage (spellID 406128)
-		q(76457),	-- Undead Heritage (spellID 414546)
-		q(76458),	-- Night Elf Heritage (spellID 414550)
-		-- Timewalking - Master of Timeways Triggers
-		q(78204),	-- First Week Trigger (spellID 423861)
-		-- PVP
-		q(79332, {["repeatable"]=true}),	-- Triggers after winning a Brawl: Battleground Blitz (possibly only when theres an elistment bonus?)
-		q(78011),	-- trigger after Brawl: Battleground Blitz (possibly criteria hqt for turn in Gotta Go Fast?)
+		-- Events/Holidays
+		q(11320),	-- [NYI] Now this is Ram Racing... Almost. (Brewfest)
+		q(13959),	-- Old "Back To The Orphanage" quest, triggers together with modern version (Oracle quest during Children's Week)
+		q(13960),	-- Old "Back To The Orphanage" quest, triggers together with modern version (Wolvar quest during Children's Week)
+		q(28761),	-- obsolete "Honor the Flame" quest according to Wowhead, triggered together with "Honor the Flame" 11834 in Winterspring
+		q(11937),	-- FLAG - all torch return quests are complete. Marked as no longer available on Wowhead but triggered for me when I returned all 4 torches first time on new char. It doesn't reset yearly though cause I didn't get it on my main
+		q(47465),	-- Bonus roll on Azuregos World boss during WoW 15th anniversary in 2019
+		q(47464),	-- Bonus roll on Kazzak World boss during WoW 15th anniversary in 2019
+		q(47466),	-- Bonus roll on Emeriss during anniversary event
+		q(28997),	-- triggered together with 28961, Surwich Candy Bucket
+		q(39828),	-- Horseman and Guards Shared Criteria, triggered when I applied Creepy Crawlers garrison decoration
 	}),
 });

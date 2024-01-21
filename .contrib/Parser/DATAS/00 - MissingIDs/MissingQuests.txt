@@ -445,9 +445,6 @@ q(14180),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
 q(14181),	-- Call to Arms: Arathi Basin	 WOTLK:Call to Arms: Arathi Basin
 q(14182),	-- Call to Arms: Eye of the Storm	 WOTLK:Call to Arms: Eye of the Storm
 q(14183),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
-q(14185),	-- FLAG: Riding Trainer Advertisement (40)
-q(14186),	-- FLAG: Riding Trainer Advertisement (60)
-q(14187),	-- FLAG: Riding Trainer Advertisement (70)
 q(14200),	-- Kickoff Mail Marker
 q(14349),	-- The Call to Command	 WOTLK:The Call to Command
 q(14350),	-- The Crimson Courier	 WOTLK:The Crimson Courier
