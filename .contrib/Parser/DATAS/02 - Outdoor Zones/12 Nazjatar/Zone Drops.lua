@@ -558,7 +558,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				153306,	-- Azsh'ari Leviathan
 			},
 			["g"] = {
-				crit(46077, {	-- Voltscale Shield
+				crit(46090, {	-- Voltscale Shield
 					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
 				}),
 			},
