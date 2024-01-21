@@ -2590,7 +2590,7 @@ root(ROOTS.Unsorted, {
 		i(199690),	-- BWU Test Profession Accessory
 	}),
 	tier(SL_TIER, {
-		tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+		--[[tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 			i(167206),	-- Fire Essence
 			i(167209),	-- Crude Map
 			i(168035),	-- Mawrat Harness
@@ -5126,6 +5126,6 @@ root(ROOTS.Unsorted, {
 		tier(SL_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_5 } }, {
 			i(192093),	-- Gently Shaken Gift
 			i(192094),	-- Winter Veil Gift
-		})),
+		})),--]]
 	}),
 });
