@@ -1095,35 +1095,53 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- Quantum Items
 		-- q(77595),	-- when you learn everything from Quantum ?
 		-- q(77596),	-- when you learn everything from Quantum ?
-		q(77597),	-- when you learn everything from Quantum Axe (One-Handed)
+		q(77597, {	-- when you learn everything from Quantum Axe (One-Handed)
+			["name"] = "Quantum Axe (One-Handed) completed.",
+		}),
 		-- q(77598),	-- when you learn everything from Quantum ?
 		-- q(77599),	-- when you learn everything from Quantum ?
-		q(77600),	-- when you learn everything from Quantum Greathammer (Two-Handed)(Mace)
-		q(77601),	-- when you learn everything from Quantum Staff
+		q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed)(Mace)
+			["name"] = "Quantum Mace (Two-Handed) completed.",
+		}),
+		q(77601, {	-- when you learn everything from Quantum Staff
+			["name"] = "Quantum Staff completed.",
+		}),
 		-- q(77602),	-- when you learn everything from Quantum ?
 		-- q(77603),	-- when you learn everything from Quantum ?
-		q(77604),	-- when you learn everything from Quantum Crossbow
+		q(77604, {	-- when you learn everything from Quantum Crossbow
+			["name"] = "Quantum Crossbow completed.",
+		}),
 		-- q(77605),	-- when you learn everything from Quantum ?
 		-- q(77606),	-- when you learn everything from Quantum ?
-		q(77607),	-- when you learn everything from Quantum Knuckles
+		q(77607, {	-- when you learn everything from Quantum Knuckles
+			["name"] = "Quantum Knuckles completed.",
+		}),
 		-- q(77608),	-- when you learn everything from Quantum ?
-		q(77609),	-- when you learn everything from Quantum Focus
+		q(77609, {	-- when you learn everything from Quantum Focus
+			["name"] = "Quantum Focus completed.",
+		}),
 		q(77610),	-- when you learn everything from Quantum Wand
 		-- q(77611),	-- when you learn everything from Quantum ?
 		-- q(77622),	-- when you learn everything from Quantum ?
-		q(77623),	-- when you learn everything from Quantum Legs (Mail / Hunter)
+		q(77623, {	-- when you learn everything from Quantum Legs (Mail / Hunter)
+			["name"] = "Quantum Legs (Mail) completed.",
+		}),
 		q(77624),	-- when you learn everything from Quantum Legs (Leather / Druid)
 		-- q(77625),	-- when you learn everything from Quantum ?
 		-- q(77626),	-- when you learn everything from Quantum ?
-		q(77627),	-- when you learn everything from Quantum Headpiece (Mail / Hunter)
+		q(77627, {	-- when you learn everything from Quantum Headpiece (Mail / Hunter)
+			["name"] = "Quantum Headpiece (Mail) completed.",
+		}),
 		q(77628),	-- when you learn everything from Quantum Headpiece (Leather / Druid)
 		-- q(77629),	-- when you learn everything from Quantum ?
-		q(77630),	-- when you learn everything from Quantum Gloves (Plate / Warrior)
+		q(77630, {	-- when you learn everything from Quantum Gloves (Plate / Warrior)
 		-- q(77631),	-- when you learn everything from Quantum ?
 		-- q(77632),	-- when you learn everything from Quantum ?
 		-- q(77633),	-- when you learn everything from Quantum ?
 		-- q(77634),	-- when you learn everything from Quantum ?
-		q(77635),	-- when you learn everything from Quantum Chestpiece (Mail / Hunter)
+		q(77635, {	-- when you learn everything from Quantum Chestpiece (Mail / Hunter)
+			["name"] = "Quantum Chestpiece (Mail) completed.",
+		}),
 		q(77636),	-- when you learn everything from Quantum Chestpiece (Leather / Druid)
 		-- q(77637),	-- when you learn everything from Quantum ?
 		-- q(77638),	-- when you learn everything from Quantum ?
