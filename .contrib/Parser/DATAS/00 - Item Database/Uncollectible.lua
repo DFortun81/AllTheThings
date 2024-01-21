@@ -578,9 +578,418 @@ i(62452);	-- Velvet Ear
 i(123865);	-- Relic of Ursol
 
 ------------------
+-- PATCH 9.0.1 --
+------------------
+--- Vendor (Common) ---
+i(182123);	-- Aged Agrave Tequila
+i(174282);	-- Airy Ciabatta
+i(177040);	-- Ambroria Dew
+i(182122);	-- Ardenwood Vermouth
+i(178217);	-- Azurebloom Tea
+i(179268);	-- Banewood Penny Bun
+i(179019);	-- Barbequed Dredwing
+i(179011);	-- Batloaf
+i(178538);	-- Beetle Juice
+i(176408);	-- Blinding Smoke Capsules
+i(178552);	-- Blood Oranges
+i(182119);	-- Bloody Marileth
+i(178549);	-- Boiled Meat
+i(178545);	-- Bone Apple Tea
+i(180209);	-- Bug Dissolver
+i(179275);	-- Cabbage Wrapped Minced Mite
+i(173759);	-- Candied Brightbark
+i(174285);	-- Candied Walnuts
+i(178226);	-- Charred Runeflank
+i(179276);	-- Chimaera Tripe Soup
+i(179022);	-- Clearleaf Cabbage
+i(178534);	-- Corpini Slurry
+i(182121);	-- Corpse Reanimator
+i(179016);	-- Cottage Cheese
+i(178542);	-- Cranial Concoction
+i(178518);	-- Crypt-Aged Ale
+i(180411);	-- Darkhaven Stout
+i(179273);	-- Darkhound Tenderloin
+i(178900);	-- Death Pepper Decay
+i(178540);	-- Delectable Dirt Dessert
+i(178220);	-- Dewdrop Ale
+i(179307);	-- Drab of Tuica Moonshine
+i(178544);	-- Dubious Cheese Platter
+i(179269);	-- Dusk Almond Mousse
+i(173043);	-- Elysian Thade Bait
+i(174284);	-- Empyrean Fruit Salad
+i(179267);	-- Endmire Glowcap
+i(173859);	-- Ethereal Pomegranate
+i(179026);	-- Evernight Porridge
+i(179272);	-- Fearstalker's Delight
+i(180430);	-- Finger Food
+i(173762);	-- Flask of Ardendew
+i(182382);	-- Flask of Vile Resistance
+i(176443);	-- Fleeting Frenzy Potion
+i(183597);	-- Fleshstitched Cookie
+i(179020);	-- Garlic Clove
+i(179015);	-- Garlic Spider Legs
+i(173761);	-- Glazed Glowberries
+i(178228);	-- Glittersnap Snowpeas
+i(178216);	-- Grilled Slumbershrooms
+i(180429);	-- Hand-Formed Fleshbread
+i(178222);	-- Honeyplum Pie
+i(179993);	-- Infused Muck Water
+i(173039);	-- Iridescent Amberjack Bait
+i(179279);	-- Jug of Tuica Moonshine
+i(173038);	-- Lost Sole Bait
+i(178539);	-- Lukewarm Tauralus Milk
+i(179014);	-- Marbled Gorger Steak
+i(180788);	-- Memorial Wine
+i(178227);	-- Midnight Starpepper
+i(179283);	-- Millet Wafers
+i(179012);	-- Mirecrawler Goulash
+i(179274);	-- Mutton Drob
+i(179166);	-- Night Harvest Rolls
+i(176331);	-- Obscuring Essence Potion
+i(179025);	-- Odorous Rice
+i(178223);	-- Poached Strider Egg
+i(173041);	-- Pocked Bonefish Bait
+i(179281);	-- Pridefall Borscht
+i(174281);	-- Purified Skyspring Water \\ Purified Water
+i(177043);	-- Reaped Larion Flank
+i(176409);	-- Rejuvenating Siphoned Essence
+i(179023);	-- Rhubarb Stalks \\ Rhubarb Stocks
+i(178247);	-- Ripe Wintermelon
+i(178541);	-- Roasted Marrow Bones
+i(179021);	-- Rosy Sweet Pepper
+i(181163);	-- Scroll of Teleport: Theater of Pain
+i(179277);	-- Shadeberry Shandy
+i(179278);	-- Shadeskin Brandy
+i(179270);	-- Shadeskin Plum
+i(179992);	-- Shadespring Water
+i(173040);	-- Silvergill Pike Bait
+i(179018);	-- Skullboar Chop
+i(179013);	-- Smoked Muckfish
+i(182118);	-- Sour Nightcap \\ Nightcap Nightcap
+i(173042);	-- Spinefin Piranha Bait
+i(178224);	-- Steamed Gorm Tail
+i(183857);	-- Strength of Fire
+i(173760);	-- Sylberry Snowcake
+i(178536);	-- Tauralus Bone Marrow
+i(178548);	-- Tea Bones
+i(179017);	-- Telemea
+i(178550);	-- Tenebrous Truffle
+i(182120);	-- The Lich's Heart
+i(178252);	-- Torchberry Bundle
+i(178225);	-- Wild Hunter's Stew
+i(178218);	-- Wintermelon Brandy
+
+--- Trash ---
+i(183936);	-- A Curt Note
+i(183928);	-- A Polite, But Short Thank You Note
+i(180175);	-- A Treatise on Henbestian Logic
+i(176857);	-- Abrasive Foot
+i(178172);	-- Abrasive Sand
+i(181722);	-- Antiquated Verdigris Coin \\ Maldraxxus Flavor Hit
+i(180882);	-- Arena Writ
+i(176886);	-- Augmented Femur
+i(176864);	-- Barbed Leg
+i(180385);	-- Bats Wing
+i(183208);	-- Beasts, and How to Eat Them: Volume I
+i(183920);	-- Bent Fork
+i(180992);	-- Blood Red Plume
+i(178129);	-- Bone and Muck Figure \\ Pocket Muck
+i(176869);	-- Bone Chip
+i(180381);	-- Brainwort
+i(182760);	-- Brilliant Azure Orb
+i(178178);	-- Brittle Bark
+i(183927);	-- Broken Centurian Mechanism
+i(183923);	-- Broken Claw
+i(183913);	-- Broken Flute Stem
+i(179372);	-- Broken Mawrat Trap
+i(183930);	-- Broken Vambrace Clasp
+i(182714);	-- Bundle of Leaflets
+i(173877);	-- Burnished Hoof
+i(178111);	-- Carrion Spattered Beak
+i(176855);	-- Caustic Secretion
+i(182161);	-- Ceremonial Javelin \\ Elysiansong Mallet
+i(183055);	-- Chained Venthyr Pocketwatch \\ Fiery Bat Talisman
+i(182774);	-- Chalice of Renagal's Pact
+i(181382);	-- Chime of Eternity
+i(183918);	-- Chipped Serving Bowl
+i(179298);	-- Cloth Parisol Strips \\ Coth Parisol Strips
+i(179985);	-- Clouded Stain Glass Shards \\ Stained Glass Shard
+i(180893);	-- Clumped Spores
+i(180886);	-- Coarse Ground Sinew
+i(176876);	-- Collapsed Psyche
+i(176880);	-- Colossal Stinger
+i(176883);	-- Congealed Muck
+i(178177);	-- Consumptive Brambles
+i(176865);	-- Contaminated Pollen
+i(180878);	-- Corroded Vial
+i(176809);	-- Cracked Actuator \\ Cracked Conduit
+i(180520);	-- Cracked Amber Doll
+i(180505);	-- Cracked Stone Mask
+i(183916);	-- Cracked Tea Cup
+i(180521);	-- Creeping Hive Cobweb
+i(178122);	-- Crematoric Residue
+i(180991);	-- Crimson Ink Well
+i(176875);	-- Crooked Horn
+i(178173);	-- Crumbling Sandstone
+i(183921);	-- Crumpled Napkin
+i(183922);	-- Crushed Nut Shells
+i(178125);	-- Dancing Metal Slivers \\ Metal Slivers
+i(183065);	-- Dazzling Zircon Cube
+i(182758);	-- Decorative Sinsteel Dagger
+i(173875);	-- Defiling Mire
+i(182776);	-- Demoltrov's Ritual Dagger
+i(176872);	-- Dense Stalk
+i(176807);	-- Dented Armorplate \\ Dented Aegis
+i(180614);	-- Depleted Nethershard
+i(178174);	-- Desiccated Core
+i(176874);	-- Desiccated Humerus
+i(180383);	-- Devil's Dung
+i(181727);	-- Devoid Reinforced Flasks \\ Collection of Flasks \\ Maldraxxus Flavor Hit 6
+i(182707);	-- Discarded Hand-Wraps
+i(180332);	-- Discarded Wingtips
+i(182366);	-- Disgusting Ooze
+i(180333);	-- Disquieted Lyre Neck
+i(180894);	-- Drained Flask
+i(175962);	-- Dreamwood Antler
+i(178137);	-- Drop of Memory
+i(178017);	-- Drusty Molting
+i(179296);	-- Duelist's Glove
+i(179297);	-- Dust Filled Flask
+i(176884);	-- Elongated Spinal Column
+i(178104);	-- Ember Ashes \\ Snuffed Out Ashes \\ Suffed Out Ashes
+i(180327);	-- Emberflea Collection
+i(178136);	-- Emotional Residue
+i(180407);	-- Empty Brandy Bottle
+i(180408);	-- Empty Brandy Phial
+i(182715);	-- Empty Crate
+i(179294);	-- Empty Dredwing Skin
+i(173878);	-- Empyreal Horn
+i(176861);	-- Engorged Venom Sac
+i(183945);	-- Enlarged Nerve
+i(182763);	-- Enormous Jade Pendant
+i(178134);	-- Ephemeral Digits \\ Ephemeral Essence
+i(180622);	-- Essence of Ephemeral Knowledge
+i(180343);	-- Everburning Censer
+i(180330);	-- Fading Denathrius Pennant
+i(173870);	-- Fading Glimmerdust
+i(178123);	-- Fading Lightspawn Ember \\ Shard of Light
+i(180624);	-- Faintly Glowing Vellum
+i(184077);	-- Famous Sinstone Headers
+i(182709);	-- Fancy Half-Leggings
+i(180506);	-- Faulty Hookshot
+i(180507);	-- Feathered Drake Down
+i(178105);	-- Fiery Hell Hound Claws \\ Fiery Hell Hound Paw
+i(179292);	-- Fine Handkerchief \\ Fine Hankerchief
+i(175957);	-- Fleecy Paw
+i(182710);	-- Fluffy Robe
+i(180310);	-- Fluttering Stone Wings
+i(181730);	-- Forged Oxxein Whetstone \\ Maldraxxus Flavor Hit 9
+i(181380);	-- Forgehand Tools \\ Masterwork Steward Tools
+i(180345);	-- Forgotten Dream Vial
+i(176871);	-- Fortified Antennae
+i(182367);	-- Foul Bones
+i(178923);	-- Fractured Rubble \\ Rubble
+i(176867);	-- Fractured Shackle
+i(183926);	-- Frayed Leather Laces
+i(180384);	-- Gallowsgrass
+i(180406);	-- Gargon Treat
+i(180328);	-- Ghost Tracks: A Treatise on the Unseen Trails
+i(180353);	-- Ghostly Pocket Stone
+i(180883);	-- Gleaming Crystal
+i(183062);	-- Gleaming Replica of Partannas \\ Jeweled Replica of Partannas
+i(173360);	-- Glossy Fur
+i(182733);	-- Gnawed Animacorns
+i(182765);	-- Golden Wren
+i(180514);	-- Gorm Bracelet
+i(176087);	-- Gorm Chitin
+i(183924);	-- Gorm Egg Shells
+i(176088);	-- Gormgris
+i(180880);	-- Gory Keepsake
+i(176881);	-- Grasping Tendril
+i(180338);	-- Graven Image
+i(180879);	-- Gritty Bone File
+i(180512);	-- Guardian's Acorn
+i(183049);	-- Guile of the Pack \\ Guile of the Darkhound
+i(183914);	-- Gummy Napkin
+i(183933);	-- Guttered Crypt Candle
+i(173871);	-- Harrowed Ichor
+i(180510);	-- Hibiscus Tea Bag
+i(180307);	-- Horrific Stone Visage
+i(182968);	-- Humerus
+i(179368);	-- Immutable Shackles
+i(179370);	-- Inert Passage Sigil \\ Inert Passage Stone
+i(180518);	-- Ironwood Needle
+i(183064);	-- Jewel of Opantriss
+i(176860);	-- Keen Incisor
+i(183207);	-- Keepsake of the First Conflict \\ Keepsake of the First War
+i(181731);	-- Lacquered Larion Fang \\ Bloodied Larion Fang \\ Maldraxxus Flavor Hit 10
+i(183929);	-- Laestrite Pocket Gravel
+i(173359);	-- Lambent Feather
+i(182745);	-- Large Aquamarine Crystal
+i(181379);	-- Larionfeather Quill \\ Ceremonial Javelin
+i(176391);	-- Leafy Antenna
+i(171346);	-- Letters from the City
+i(180517);	-- Lifecrafted Flute
+i(180519);	-- Lifeless Branch
+i(174999);	-- Long-Forgotten Sinstone
+i(183071);	-- Lucky Sinrunner Horseshoe
+i(173362);	-- Lustrous Scale
+i(176873);	-- Macerated Ribs \\ Liquefied Ribs
+i(176887);	-- Malicious Essence
+i(180309);	-- Malicious Mandible \\ Malicious Mandibles
+i(180881);	-- Mangled Toothpick
+i(183204);	-- Manual of Bonebending Methods
+i(176862);	-- Marred Skin
+i(183203);	-- Massive Oxxein Tankard
+i(183110);	-- Mercurial Void
+i(181723);	-- Meticulously Pickled Head \\ Preserved Head \\ Maldraxxus Flavor Hit 2
+i(181515);	-- Miserable Pile of Secrets
+i(183935);	-- Modified Death Warrant
+i(183925);	-- Mushy Snowplum
+i(180346);	-- Nail-Worked Crystalware
+i(180329);	-- Naked Morningstar Chain
+i(180341);	-- Nathrezim Relic
+i(175965);	-- Needlepoint Beak
+i(180508);	-- Night Lily's Bell
+i(176086);	-- Nightmare Silt \\ Memory Silt
+i(175960);	-- Notched Bone
+i(169821);	-- Ogre Effigy \\ Ogre Figurine
+i(178110);	-- Oily Black Feather
+i(177027);	-- Old Glove \\ Gloomhopper
+i(180176);	-- On the Nature of the Divine
+i(176730);	-- Orders from the Ancient One
+i(180348);	-- Ornate Filigreed Harp
+i(182762);	-- Ornately Jeweled Amulet
+i(174790);	-- Overseer's Mandate
+i(178107);	-- Pallid Sinuous Hide \\ Leathery Dredwing \\ Leathery Dreadwing
+i(176856);	-- Partially Digested Viscera
+i(177025);	-- Partially Eaten Fish \\ Spine Worm
+i(184076);	-- Partially Finished Stone Sentry
+i(176392);	-- Patterned Wing
+i(183072);	-- Perfume Bottles \\ Amber and Ruby Crafted Spider
+i(180511);	-- Petrified Leaf
+i(183075);	-- Phantasmal Masquerade Guise \\ Ivory Phantasm's Mask
+i(183205);	-- Plated Horn of Battle
+i(176858);	-- Pliable Tail Fin
+i(173361);	-- Polished Claw
+i(183048);	-- Power of the Darkhound
+i(183209);	-- Prime Enforcer's Seal
+i(181728);	-- Pristine Fleshstitcher Needles \\ Maldraxxus Flavor Hit 7
+i(181725);	-- Prized Guardian's Medal \\ Maldraxxus Flavor Hit 4
+i(181729);	-- Prototype Phylactery Mold \\ Reinforced Phylactery Mould \\ Maldraxxus Flavor Hit 8
+i(182797);	-- Pugilist Ring Rules
+i(179299);	-- Pulled Canine
+i(182764);	-- Pulsing Star Amethyst
+i(183109);	-- Pulsing Voidscarred Fragment
+i(176866);	-- Putrid Sludge
+i(182757);	-- Redelav Silver Set
+i(182761);	-- Refined Gold Ingot
+i(178132);	-- Richly Calligraphed Invitation \\ Richly Caligraphed Invitation \\ Rich Caligraphed Invitation \\ Faded Court Invitation \\ Faded Ember Court Invitation
+i(183073);	-- Royal Sinvyr Cooking Set
+i(180382);	-- Scaldhead
+i(181713);	-- Scorched Letter
+i(183915);	-- Scrap of Streamer
+i(180884);	-- Scroll of Foul Rites
+i(178130);	-- Shapeable Muck \\ Bones and Twig
+i(179003);	-- Shattered Quartz Eyes
+i(180504);	-- Shimmerbough Recorder
+i(183056);	-- Shriekwing by Krentis
+i(176879);	-- Silk Spigot
+i(175959);	-- Silky Mane
+i(179291);	-- Silver Flask
+i(182756);	-- Silver Winged Bust
+i(180342);	-- Silvered Fang
+i(179290);	-- Simple Manacles
+i(178126);	-- Sinew-Wrapped Hilt \\ Leather Wrappings
+i(180347);	-- Sinsteel Silverware
+i(176870);	-- Skeletal Tusk
+i(180476);	-- Sleep Slime
+i(180513);	-- Sleepy Toadstool
+i(183917);	-- Slime-Stained Bowl
+i(176868);	-- Sliver of Entropy
+i(176393);	-- Slumber Powder
+i(183047);	-- Soul of the Darkhound
+i(179369);	-- Spectral Key
+i(176853);	-- Spindly Flesh
+i(178106);	-- Splintered Fang \\ Pallid Hide
+i(180334);	-- Splintering Stein
+i(183931);	-- Split Arrow Fletching
+i(176877);	-- Split Tooth
+i(176882);	-- Spotless Skull
+i(180516);	-- Spriggan Pipes
+i(178116);	-- Squishy Eyeball
+i(178114);	-- Stone Haunch \\ Quivering Stone Haunch \\ Stony Haunch
+i(182718);	-- Stoneborn Messenger Stamp Sheet
+i(180331);	-- Stonewright's Chisel
+i(175954);	-- Suffused Horn
+i(181724);	-- Tactics Vol. 83: Exploitation of Weather \\ Volume VII of Tactics: Exploitation of Weather \\ Maldraxxus Flavor Hit 3
+i(183108);	-- Tainted Void-Touched Core
+i(178115);	-- Tapping Stone Claw \\ Etched Stone Claw
+i(178127);	-- Tattered Scraps of Clothing \\ Unraveling Coth Scraps \\ Scraps of Cloth
+i(176859);	-- Tempered Carapace
+i(178133);	-- Tendrils of Ectoplasm
+i(182775);	-- Teramanik's Gilded Reins
+i(183050);	-- The Endmire's Mists
+i(183051);	-- The Rushing Tide \\ The Reaching
+i(178103);	-- Tiny Wing \\ Tiny Wings
+i(179001);	-- Tithe Jar
+i(183932);	-- Torn Bet Voucher
+i(180623);	-- Torn Rune-Etched Page
+i(176089);	-- Treesnap Mandible
+i(180326);	-- Twisted Parasol
+i(179289);	-- Twisted Prayer Beads
+i(173874);	-- Twisted Sediment
+i(178113);	-- Twitching Stone \\ Quivering Debris \\ Stoneborn Crumbles
+i(175955);	-- Umbral Pelt
+i(176854);	-- Unbreakable Jawbone
+i(176863);	-- Virulent Gland
+i(179288);	-- Voltive Candles
+i(181726);	-- Warfare Vol. 27: Behind Enemy Lines \\ Volume VIII of War: Behind Enemy Lines \\ Maldraxxus Flavor Hit 5
+i(180889);	-- Warped Spectacles
+i(182713);	-- Water-Run Letter
+i(175242);	-- Waterlogged Supplies
+i(180475);	-- Webbed Foot
+i(180515);	-- Weird Egg
+i(178131);	-- Whetstone Talon File \\ Whetstone Nail File \\ Crude Wing Talisman
+i(182711);	-- Winner Caller's Warbler
+i(176885);	-- Wisp of Extinction
+i(178135);	-- Wisp of Life \\ Depleted Soulstone
+i(180344);	-- Wisps of Nightmares
+i(180174);	-- Witherfall Varietals for the Discriminating Palate
+i(182708);	-- Wood Carved Chomper Protector
+i(178108);	-- Wool of Dredbat \\ Dredbat Fang \\ Dreadbat Fang
+i(180885);	-- Worn Rune-Adorned Pouch
+
+------------------
 -- PATCH 9.0.2 --
 ------------------
+--- Trash ---
+i(184566);	-- Adrima's Potpourri
+i(184563);	-- Anima Condenser
+i(184369);	-- Brutally Sundered Mallet
+i(184372);	-- Charred Dreadplate
 i(178149);	-- Centurion Anima Core
+i(174022);	-- Ceremonial Hand Bell
+i(184370);	-- Erratic Sparkshield
+i(184393);	-- Everburning Mange
+i(184392);	-- Fizzled Ritual Scroll
+i(184390);	-- Foul Ectoplasm
+i(184208);	-- Fraying Covenant Belt
+i(184567);	-- Hand-Knitted Steward Sweater
+i(174322);	-- Harmonious Windchime
+i(184391);	-- Hollow Phylactery Shard
+i(184376);	-- Incinerated Arcane Tome
+i(184564);	-- Kyrian Music Box
+i(184565);	-- Kyrian Wave Simulator
+i(184207);	-- Rusting Covenant Spaulder
+i(184377);	-- Shattered Firestone
+i(184375);	-- Shattered Orbiter Crystal
+i(184553);	-- Sinvyr Shards
+i(184209);	-- Stoneborn Fragments
+i(184310);	-- Tod's Sinstone
+i(184562);	-- Tranquility Stone
+i(184309);	-- Venthyr Inquisitor's Notes
+i(184394);	-- Vial of Bleak Blood
 
 ------------------
 -- PATCH 9.0.5 --
@@ -588,10 +997,126 @@ i(178149);	-- Centurion Anima Core
 i(184845);	-- Bloodstained Spectacles
 
 ------------------
+-- PATCH 9.1.0 --
+------------------
+--- Vendor (Common) ---
+i(185933);	-- Cheap Spices
+i(185936);	-- Common Drum \\ Common Chair
+i(185934);	-- Cracked Warhammer
+i(185932);	-- Damaged Flask
+i(185909);	-- Dull Opal
+i(185935);	-- Dusty Skull
+i(185937);	-- Stale Bread
+i(185938);	-- Threadbare Cloth
+i(185939);	-- Worn Journal
+--- Trash ---
+i(187338);	-- Alabaster Feather
+i(187487);	-- Ancient Relic Expositor
+i(187479);	-- Bark Strip Bedding
+i(187483);	-- Blood-Tipped Razorwing Quill
+i(187470);	-- Broken Mutilator Chain
+i(187408);	-- Cartel Purchase Order
+i(186660);	-- Charger's Armor Spikes
+i(187477);	-- Chewed Mawsworn Orders
+i(187449);	-- Chipped Razorwing Fang
+i(187453);	-- Coiled Black Chain
+i(185483);	-- Cranial Disk
+i(187456);	-- Crucible of Soulforge Metal
+i(187444);	-- Crushed Mawshrooms
+i(185739);	-- Crystaline Shard
+i(187464);	-- Crystallized Soul Dust
+i(185478);	-- Dagger-Length Talons
+i(187355);	-- Devourer Femur
+i(187358);	-- Dusty Meditation Crystal
+i(187488);	-- Emptied Inkwell
+i(187480);	-- Energy-Singed Branch
+i(185476);	-- Flowing Ridge Spikes
+i(187484);	-- Gilded Korthian Decoration
+i(186703);	-- Gold Chalice
+i(187495);	-- Golden Filigree Brush
+i(187445);	-- Inert Spell Scroll
+i(187481);	-- Intact Razorwing Ribcage
+i(185477);	-- Irridescent Eye
+i(187471);	-- Large Shardhide Tooth
+i(185481);	-- Long Fibrous Tongue
+i(187491);	-- Mawshroom Cap
+i(187490);	-- Mawshroom Fungi
+i(187492);	-- Mawshroom Stem
+i(187469);	-- Mawsworn Javelin Heads
+i(187441);	-- Mawsworn Val'kyr Feather
+i(186677);	-- Metallic Socket
+i(187472);	-- Molted Razorwing Scale
+i(187180);	-- Pitted Diaphanous Wing
+i(187486);	-- Prismatic Glass Pyramids
+i(187493);	-- Pungent Mawshroom Residue
+i(185969);	-- Rune-Etched Stone
+i(187474);	-- Scratched Mawsworn Buckle
+i(187473);	-- Severed Gromit Limb
+i(187475);	-- Shardhide Spine-Fin
+i(187446);	-- Shredded Documents
+i(187482);	-- Shredded Mawsworn Tunic
+i(185479);	-- Sinuous Wing Membrane
+i(187448);	-- Sloughed Shardhide Scales
+i(185737);	-- Small Chain Links
+i(187356);	-- Small Gromit Bones
+i(185482);	-- Socketed Crest
+i(187454);	-- Spare Weapon Chains \\ Spare Weapon Chain
+i(187443);	-- Specimen Jar Cork
+i(187489);	-- Specimen Jar Glass
+i(187455);	-- Spiked Manacles
+i(185970);	-- Splintered Crystal Fragments
+i(186661);	-- Splintered Horseshoe
+i(187357);	-- Squished Mawshroom
+i(187485);	-- Stone Teleporter Parts
+i(187348);	-- Tattered Scroll
+i(187451);	-- Torture Device Parts
+i(187452);	-- Vacant Soul Vessel
+i(187450);	-- Vial of Spectral Tears
+i(185480);	-- Vibrantly Colored Crest
+i(187461);	-- Warped Branding Rod
+i(187476);	-- Weathered Journal
+
+------------------
 -- PATCH 9.1.5 --
 ------------------
 --- Vendor (Common) ---
 i(187911);	-- Sable "Soup"
+
+------------------
+-- PATCH 9.2.0 --
+------------------
+--- Trash ---
+i(188835);	-- Acridic Acid Bubble \\ Acridic Acid Vessel
+i(188792);	-- Armored Frame
+i(187711);	-- Broker Bits
+i(188794);	-- Captured Light
+i(188811);	-- Celestial Salt Crystal \\ Celestial Brine
+i(188791);	-- Conical Borer
+i(188947);	-- Constellation-Inscribed Palm
+i(188827);	-- Cosmic Goo \\ Galaxy Goo
+i(188685);	-- Cyclical Spinning Rune \\ Cyclically Spinning Rune
+i(188779);	-- Energy-Bathed Horn \\ Energy-bathed Horn
+i(188672);	-- Fractured Heat Emitter
+i(188948);	-- Gleaming Wing
+i(189571);	-- Golden Saber Hilt
+i(188684);	-- Illustrious Visor
+i(190235);	-- Inert Cracked Carapace
+i(188760);	-- Inert Engimatic Crown \\ Engimatic Crown
+i(187842);	-- Inert Progenium Ore
+i(188671);	-- Large Gilded Ring
+i(188795);	-- Majestic Mane
+i(188670);	-- Molded Minerals
+i(188682);	-- Mystically Sculpted Sphere
+i(188669);	-- Obsidian Core
+i(188836);	-- Polygonal Avian Beak
+i(188762);	-- Resonant Bar
+i(188683);	-- Roiling Glyph
+i(188681);	-- Sleek Optical Lens
+i(188834);	-- Spectral Lupine Tooth
+i(188790);	-- Subdivided Orb
+i(190382);	-- Warped Pocket Dimension
+i(188946);	-- Weave of Light
+
 
 ------------------
 -- PATCH 10.0.2 --
