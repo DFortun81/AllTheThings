@@ -12,7 +12,7 @@ DIVERGENT = createHeader({
 	},
 });
 local QUANTUM_GROUP = sharedData({
-	["description"] = "This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed, but not revamped)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions \nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight Items\nCrafted Items\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",
+	["description"] = "This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",
 },{
 	-- Please use 'ig()' to make sure Mythic ModID isn't attached to all of these sourced items
 	-- Which items you could get between 10.1.5 & 10.1.7 are saved at the bottom of the file as history
@@ -152,6 +152,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(105773),	-- Ulmaas' Robes of Crushing Magma	(Ordos)
 		}),
 		filter(LEATHER, {
+			q(77636, {	-- when you learn everything from Quantum Chestpiece 
+				["name"] = "Quantum Chestpiece (Leather) completed.",
+				["collectible"] = false,
+			}),
 			ig(114251),	-- Bloodthorn Chestguard 			(NYI)
 			ig(189917),	-- Constellation Master's Smock		(NYI)
 			ig(114314),	-- Shadow-Gorged Chestguard			(NYI)
@@ -230,6 +234,9 @@ local QUANTUM_GROUP = sharedData({
 			ig(134797),	-- Ironbranded Gauntlets			(Removed)
 		}),
 		filter(PLATE, {
+			q(77630, {	-- when you learn everything from Quantum Gloves (Plate / Warrior)
+				["name"] = "Quantum Gloves (Plate) completed.",
+			}),
 			ig(114386),	-- Gauntlets of Grievous Storms		(NYI)
 			ig(108080),	-- Hardened Draenic Steel Guantlets	(NYI)
 			ig(108164),	-- Peerless Draenic Steel Guantlets	(NYI)
@@ -528,6 +535,10 @@ local QUANTUM_GROUP = sharedData({
 	i(208122, {	-- Quantum Warglaives
 	}),
 	i(208123, {	-- Quantum Wand
+		q(77610, {	-- when you learn everything from Quantum Wand 
+			["name"] = "Quantum Wand completed.",
+			["collectible"] = false,
+		}),
 		ig(134728),	-- Cold-Touched Wand					(Removed)
 		ig(134590),	--Vanguard Baton of Light				(Removed)
 	}),
@@ -632,6 +643,46 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					},
 				}),
 			}),
+			n(QUESTS, sharedData({
+				["collectible"] = false,
+			},{
+				q(77627, {	-- when you learn everything from Quantum Headpiece (Mail / Hunter)
+					["name"] = "Quantum Headpiece (Mail) completed.",
+				}),
+				q(77636, {	-- when you learn everything from Quantum Chestpiece 
+					["name"] = "Quantum Chestpiece (Leather) completed.",
+				}),
+				q(77635, {	-- when you learn everything from Quantum Chestpiece (Mail / Hunter)
+					["name"] = "Quantum Chestpiece (Mail) completed.",
+				}),
+				q(77630, {	-- when you learn everything from Quantum Gloves (Plate / Warrior)
+					["name"] = "Quantum Gloves (Plate) completed.",
+				}),
+				q(77623, {	-- when you learn everything from Quantum Legs (Mail / Hunter)
+					["name"] = "Quantum Legs (Mail) completed.",
+				}),
+				q(77597, {	-- when you learn everything from Quantum Axe (One-Handed)
+					["name"] = "Quantum Axe (One-Handed) completed.",
+				}),
+				q(77604, {	-- when you learn everything from Quantum Crossbow
+					["name"] = "Quantum Crossbow completed.",
+				}),
+				q(77609, {	-- when you learn everything from Quantum Focus
+					["name"] = "Quantum Focus completed.",
+				}),
+				q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed)(Mace)
+					["name"] = "Quantum Mace (Two-Handed) completed.",
+				}),
+				q(77607, {	-- when you learn everything from Quantum Knuckles
+					["name"] = "Quantum Knuckles completed.",
+				}),
+				q(77601, {	-- when you learn everything from Quantum Staff
+					["name"] = "Quantum Staff completed.",
+				}),
+				q(77610, {	-- when you learn everything from Quantum Wand 
+					["name"] = "Quantum Wand completed.",
+				}),
+			})),
 			-- #if AFTER 10.1.7
 			d(HeroicPlus, {
 				n(COMMON_BOSS_DROPS, {
@@ -1133,51 +1184,22 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- q(77596),	-- when you learn everything from Quantum ?
 		-- q(77598),	-- when you learn everything from Quantum ?
 		-- q(77599),	-- when you learn everything from Quantum ?
-		q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed)(Mace)
-			["name"] = "Quantum Mace (Two-Handed) completed.",
-		}),
-		q(77601, {	-- when you learn everything from Quantum Staff
-			["name"] = "Quantum Staff completed.",
-		}),
 		-- q(77602),	-- when you learn everything from Quantum ?
 		-- q(77603),	-- when you learn everything from Quantum ?
-		q(77604, {	-- when you learn everything from Quantum Crossbow
-			["name"] = "Quantum Crossbow completed.",
-		}),
 		-- q(77605),	-- when you learn everything from Quantum ?
 		-- q(77606),	-- when you learn everything from Quantum ?
-		q(77607, {	-- when you learn everything from Quantum Knuckles
-			["name"] = "Quantum Knuckles completed.",
-		}),
 		-- q(77608),	-- when you learn everything from Quantum ?
-		q(77609, {	-- when you learn everything from Quantum Focus
-			["name"] = "Quantum Focus completed.",
-		}),
-		q(77610),	-- when you learn everything from Quantum Wand
 		-- q(77611),	-- when you learn everything from Quantum ?
 		-- q(77622),	-- when you learn everything from Quantum ?
-		q(77623, {	-- when you learn everything from Quantum Legs (Mail / Hunter)
-			["name"] = "Quantum Legs (Mail) completed.",
-		}),
 		q(77624),	-- when you learn everything from Quantum Legs (Leather / Druid)
 		-- q(77625),	-- when you learn everything from Quantum ?
 		-- q(77626),	-- when you learn everything from Quantum ?
-		q(77627, {	-- when you learn everything from Quantum Headpiece (Mail / Hunter)
-			["name"] = "Quantum Headpiece (Mail) completed.",
-		}),
 		q(77628),	-- when you learn everything from Quantum Headpiece (Leather / Druid)
 		-- q(77629),	-- when you learn everything from Quantum ?
-		q(77630, {	-- when you learn everything from Quantum Gloves (Plate / Warrior)
-			["name"] = "Quantum Gloves (Plate) completed.",
-		}),
 		-- q(77631),	-- when you learn everything from Quantum ?
 		-- q(77632),	-- when you learn everything from Quantum ?
 		-- q(77633),	-- when you learn everything from Quantum ?
 		-- q(77634),	-- when you learn everything from Quantum ?
-		q(77635, {	-- when you learn everything from Quantum Chestpiece (Mail / Hunter)
-			["name"] = "Quantum Chestpiece (Mail) completed.",
-		}),
-		q(77636),	-- when you learn everything from Quantum Chestpiece (Leather / Druid)
 		-- q(77637),	-- when you learn everything from Quantum ?
 		-- q(77638),	-- when you learn everything from Quantum ?
 		-- q(77639),	-- when you learn everything from Quantum ?
