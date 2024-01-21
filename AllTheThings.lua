@@ -601,6 +601,7 @@ do
 	local BlockedDisplayID = {
 		[11686] = 0,	-- empty blue thing
 		[16925] = 0,	-- nothing
+		[21072] = 0,	-- empty blue thing
 		[27823] = 0,	-- empty blue thing
 		[52318] = 0,	-- generic bunny
 		[56187] = 0,	-- generic bunny
