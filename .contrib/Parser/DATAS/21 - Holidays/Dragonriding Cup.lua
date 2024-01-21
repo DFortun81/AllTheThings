@@ -76,8 +76,9 @@ PANDARIA_CUP_HEADER = createHeader({
 -- These actually don't require any DF content
 local dragonridingrace = function(id, data)
 	local t = dragonridingrace(id, data);
-	t.sourceQuests = nil
+	t.sourceQuests = nil;
 	t.sourceQuestNumRequired = nil;
+	t.repeatable = true;
 	return t;
 end
 local RIDERS_OF_AZEROTH_BADGE = 2588;
@@ -970,7 +971,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 			}),
-			-- Todo: Add Shared Data: Repeatable for all the quests
 			n(QUESTS, {
 				q(76429, {	-- The Kalimdor Cup Begins
 					["provider"] = { "n", 199261 },	-- Holiday Enthusiast
@@ -1418,7 +1418,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 			}),
-			n(QUESTS, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
+			n(QUESTS, {
 				dragonridingrace(76061, {	-- Ahn'Qiraj Circuit - Challenge
 					["provider"] = { "n", 204092 },	-- Bronze Timekeeper
 					["coord"] = { 39.6, 84.2, SILITHUS },
@@ -1707,7 +1707,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						ach(18270),	-- Winter Wander Reverse Challenge: Gold
 					},
 				}),
-			})),
+			}),
 			n(VENDORS, {
 				n(206744, {	-- Maztha <Riders of Azeroth>
 					["coord"] = { 27.2, 47.2, VALDRAKKEN },
@@ -2383,7 +2383,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				})),
 			}),
 		}))),
-		applyevent(EVENTS.NORTHREND_CUP, n(NORTHREND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5, ADDED_10_2_6 } }, {					-- Northrend Cup
+		applyevent(EVENTS.NORTHREND_CUP, n(NORTHREND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {					-- Northrend Cup
 			n(ACHIEVEMENTS, {
 				ach(19674, {	-- Northrend: Bronze
 					-- Meta Achievement
@@ -2845,7 +2845,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				}),
 			}),
 			n(VENDORS, {
-				n(206744, bubbleDown({ ["timeline"] = { CREATED_10_2_5, ADDED_10_2_6 } }, {	-- Maztha <Riders of Azeroth>
+				n(206744, bubbleDown({ ["timeline"] = { ADDED_10_2_6 } }, {	-- Maztha <Riders of Azeroth>
 					["coord"] = { 27.2, 47.2, VALDRAKKEN },
 					["g"] = {
 						--TODO: Add inventory
