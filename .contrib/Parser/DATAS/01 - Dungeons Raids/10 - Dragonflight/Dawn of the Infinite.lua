@@ -32,6 +32,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(105808),	-- Damien's Ice-Vein Mask			(Ordos)
 		}),
 		filter(LEATHER, {
+			q(77628, {	-- when you learn everything from Quantum Headpiece (Leather)
+				["name"] = "Quantum Headpiece (Leather) completed.",
+				["collectible"] = false,
+			}),
 			ig(114264),	-- Bloodthorn Hood					(NYI)
 			ig(114388),	-- Hood of Falling Leaves			(NYI)
 			ig(147516, {	-- Legion Stalker's Hood		(NYI)
@@ -47,7 +51,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(105803),	-- Stickney's Grey-Shade Hood		(Ordos)
 		}),
 		filter(MAIL, {
-			q(77627, {	-- when you learn everything from Quantum Headpiece (Mail / Hunter)
+			q(77627, {	-- when you learn everything from Quantum Headpiece (Mail)
 				["name"] = "Quantum Headpiece (Mail) completed.",
 				["collectible"] = false,
 			}),
@@ -152,7 +156,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(105773),	-- Ulmaas' Robes of Crushing Magma	(Ordos)
 		}),
 		filter(LEATHER, {
-			q(77636, {	-- when you learn everything from Quantum Chestpiece 
+			q(77636, {	-- when you learn everything from Quantum Chestpiece (Leather)
 				["name"] = "Quantum Chestpiece (Leather) completed.",
 				["collectible"] = false,
 			}),
@@ -170,7 +174,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(105770),	-- Zoo-Per's Superior Chestguard	(Ordos)
 		}),
 		filter(MAIL, {
-			q(77635, {	-- when you learn everything from Quantum Chestpiece (Mail / Hunter)
+			q(77635, {	-- when you learn everything from Quantum Chestpiece (Mail)
 				["name"] = "Quantum Chestpiece (Mail) completed.",
 				["collectible"] = false,
 			}),
@@ -234,7 +238,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(134797),	-- Ironbranded Gauntlets			(Removed)
 		}),
 		filter(PLATE, {
-			q(77630, {	-- when you learn everything from Quantum Gloves (Plate / Warrior)
+			q(77630, {	-- when you learn everything from Quantum Gloves (Plate)
 				["name"] = "Quantum Gloves (Plate) completed.",
 			}),
 			ig(114386),	-- Gauntlets of Grievous Storms		(NYI)
@@ -275,6 +279,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(105757),	-- Shipley's Shady Silks			(Ordos)
 		}),
 		filter(LEATHER, {
+			q(77624, {	-- when you learn everything from Quantum Legs (Leather)
+				["name"] = "Quantum Legs (Leather) completed.",
+				["collectible"] = false,
+			}),
 			ig(114268),	-- Bloodthorn Legguards 			(NYI)
 			ig(114392),	-- Legguards of Falling Leaves 		(NYI)
 			ig(121513),	-- Runesworn Breeches 				(NYI)
@@ -288,7 +296,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(105760),	-- Hamlet's Wind-Whipped Leggings	(Ordos)
 		}),
 		filter(MAIL, {
-			q(77623, {	-- when you learn everything from Quantum Legs (Mail / Hunter)
+			q(77623, {	-- when you learn everything from Quantum Legs (Mail)
 				["name"] = "Quantum Legs (Mail) completed.",
 				["collectible"] = false,
 			}),
@@ -374,8 +382,8 @@ local QUANTUM_GROUP = sharedData({
 		ig(56376),	-- Thundercall							(Removed)
 	}),
 	i(208125, {	-- Quantum Focus
-		q(77609, {	-- when you learn everything from Quantum Focus
-			["name"] = "Quantum Focus completed.",
+		q(77609, {	-- when you learn everything from Quantum Focus (Off-hand)
+			["name"] = "Quantum Off-hand completed.",
 			["collectible"] = false,
 		}),
 		ig(18316),	-- Obsidian Bauble						(NYI)
@@ -404,7 +412,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(44924),	-- Sun Lute								(BMAH)(Unique)
 	}),
 	i(208114, {	-- Quantum Greathammer	(Two-Handed)(Mace)
-		q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed)(Mace)
+		q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
 			["name"] = "Quantum Mace (Two-Handed) completed.",
 			["collectible"] = false,
 		}),
@@ -443,8 +451,8 @@ local QUANTUM_GROUP = sharedData({
 		ig(134581),	-- Vanguard Shanker						(Removed)
 	}),
 	i(208121, {	-- Quantum Knuckles
-		q(77607, {	-- when you learn everything from Quantum Knuckles
-			["name"] = "Quantum Knuckles completed.",
+		q(77607, {	-- when you learn everything from Quantum Knuckles (Fist Weapon)
+			["name"] = "Quantum Fist Weapon completed.",
 			["collectible"] = false,
 		}),
 		ig(134719),	-- Cold-Touched Ripper					(Removed)
@@ -646,19 +654,25 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 			n(QUESTS, sharedData({
 				["collectible"] = false,
 			},{
-				q(77627, {	-- when you learn everything from Quantum Headpiece (Mail / Hunter)
+				q(77628, {	-- when you learn everything from Quantum Headpiece (Leather)
+					["name"] = "Quantum Headpiece (Leather) completed.",
+				}),
+				q(77627, {	-- when you learn everything from Quantum Headpiece (Mail)
 					["name"] = "Quantum Headpiece (Mail) completed.",
 				}),
-				q(77636, {	-- when you learn everything from Quantum Chestpiece 
+				q(77636, {	-- when you learn everything from Quantum Chestpiece (Leather)
 					["name"] = "Quantum Chestpiece (Leather) completed.",
 				}),
-				q(77635, {	-- when you learn everything from Quantum Chestpiece (Mail / Hunter)
+				q(77635, {	-- when you learn everything from Quantum Chestpiece (Mail)
 					["name"] = "Quantum Chestpiece (Mail) completed.",
 				}),
-				q(77630, {	-- when you learn everything from Quantum Gloves (Plate / Warrior)
+				q(77630, {	-- when you learn everything from Quantum Gloves (Plate)
 					["name"] = "Quantum Gloves (Plate) completed.",
 				}),
-				q(77623, {	-- when you learn everything from Quantum Legs (Mail / Hunter)
+				q(77624, {	-- when you learn everything from Quantum Legs (Leather)
+					["name"] = "Quantum Legs (Leather) completed.",
+				}),
+				q(77623, {	-- when you learn everything from Quantum Legs (Mail)
 					["name"] = "Quantum Legs (Mail) completed.",
 				}),
 				q(77597, {	-- when you learn everything from Quantum Axe (One-Handed)
@@ -667,13 +681,13 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				q(77604, {	-- when you learn everything from Quantum Crossbow
 					["name"] = "Quantum Crossbow completed.",
 				}),
-				q(77609, {	-- when you learn everything from Quantum Focus
+				q(77609, {	-- when you learn everything from Quantum Focus (Off-hand)
 					["name"] = "Quantum Focus completed.",
 				}),
-				q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed)(Mace)
+				q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
 					["name"] = "Quantum Mace (Two-Handed) completed.",
 				}),
-				q(77607, {	-- when you learn everything from Quantum Knuckles
+				q(77607, {	-- when you learn everything from Quantum Knuckles (Fist Weapon)
 					["name"] = "Quantum Knuckles completed.",
 				}),
 				q(77601, {	-- when you learn everything from Quantum Staff
@@ -1191,10 +1205,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- q(77608),	-- when you learn everything from Quantum ?
 		-- q(77611),	-- when you learn everything from Quantum ?
 		-- q(77622),	-- when you learn everything from Quantum ?
-		q(77624),	-- when you learn everything from Quantum Legs (Leather / Druid)
 		-- q(77625),	-- when you learn everything from Quantum ?
 		-- q(77626),	-- when you learn everything from Quantum ?
-		q(77628),	-- when you learn everything from Quantum Headpiece (Leather / Druid)
 		-- q(77629),	-- when you learn everything from Quantum ?
 		-- q(77631),	-- when you learn everything from Quantum ?
 		-- q(77632),	-- when you learn everything from Quantum ?
