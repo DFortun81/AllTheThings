@@ -31,7 +31,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						title(536),	-- Isles Archivist
 					},
 				}),
-				ach(19787, {
+				ach(19787, {	-- Clued In
+					["description"] = "Look for glowing objects on the floor during Research World Quests, or find them at The Big Dig when someone has the relevant task.",
 					["providers"] = {
 						{ "n", 210079 },	-- Information-Stuffed Clue
 						{ "n", 206816 },	-- Information-Stuffed Clue
@@ -58,11 +59,34 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 				}),
 				ach(19792, {	-- Just One More Thing
-					i(213133),	-- Reese (PET!)
+					["description"] = "Each related Research World Quest needs to be completed 3 times to get credit for one criteria.",
+					["g"] = {
+						i(213133),	-- Reese (PET!)
+						crit(65408, {	-- Lost Atheneum
+							--["coord"] = {},
+						}),
+						crit(65409, {	-- The Riverbed
+							["coord"] = { 69, 34.3, OHNAHRAN_PLAINS },
+						}),
+						crit(65410, {	-- Igira's Watch
+							--["coord"] = {},
+						}),
+						crit(65411, {	-- Gaze of Neltharion
+							["coord"] = { 47.6, 48.6, ZARALEK_CAVERN },
+						}),
+						crit(65412, {	-- Concord Observatory
+							--["coord"] = {},
+						}),
+						crit(65413, {	-- Winglord's Perch
+							--["coord"] = {},
+						}),
+					},
 				}),
 				ach(19789),	-- Relic Rescuer
 				ach(19788),	-- Tome Comber
-				ach(19786),	-- When a Rock is Just a Rock
+				ach(19786, {	-- When a Rock is Just a Rock
+					["description"] = "Can be found during Excavation World Quests, look for a rock near dirt piles or geysers."
+				}),
 			}),
 			n(DROPS, {
 				i(213185, { -- Dusty Centaur Tome
@@ -564,10 +588,28 @@ root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, {
 		q(79995),	-- After completing 'A Taste of the Past' (questID 77154) (spellID 436768) (WQ unlock - Winglord's Perch, Forbidden Reach Site)
 		q(79997),	-- After completing 'The Scale of it All' (questID 77425) (spellID 436778) (WQ unlock - Igira's Watch, Zaralek Cavern Site)
 		q(79994),	-- After completing 'Antiquated Antics' (questID 75604) (spellID 436766) (WQ unlock - Gaze of Neltharion, Zaralek Cavern Site)
-		q(79607),	-- After completing ZC world quest for Azerothian Archive
 		q(79661),	-- After completing ZC world quest for Azerothian Archive
 		q(79662),	-- After completing Ohn'ahran Plains world quest for Azerothian Archive
 		q(79663),	-- After completing 2nd ZC world quest for Azerothian Archive
-		q(79596),	-- After completing 'Research: Centaur of Ohn'ahran Plains'
+
+		-- "Just One More Thing" trackers
+		q(79601),	-- Lost Atheneum first completion
+		q(79600),	-- Lost Atheneum second completion
+		q(79599),	-- Lost Atheneum third completion
+		q(79596),	-- The Riverbed first completion
+		q(79597),	-- The Riverbed second completion
+		q(79598),	-- The Riverbed third completion
+		q(79604),	-- Igira's Watch first completion
+		q(79603),	-- Igira's Watch second completion
+		q(79602),	-- Igira's Watch third completion
+		q(79607),	-- Gaze of Neltharion first completion
+		q(79606),	-- Gaze of Neltharion second completion
+		q(79605),	-- Gaze of Neltharion third completion
+		q(79610),	-- Concord Observatory first completion
+		q(79609),	-- Concord Observatory second completion
+		q(79608),	-- Concord Observatory third completion
+		q(79613),	-- Winglord's Perch first completion
+		q(79612),	-- Winglord's Perch second completion
+		q(79611),	-- Winglord's Perch third completion
 	})),
 }));

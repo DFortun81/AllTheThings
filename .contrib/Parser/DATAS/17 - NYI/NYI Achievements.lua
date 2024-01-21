@@ -605,11 +605,32 @@ root(ROOTS.NeverImplemented, {
 				ach(17501),	-- Renowned Mooncloth Tailor
 				ach(17502),	-- Renowned Spellfire Tailor
 				ach(17503),	-- Renowned Shadoweave Tailor
+				ach(17322),	-- <DNT> Hearthfire Fellowship Rank 1
+				ach(17323),	-- <DNT> Hearthfire Fellowship Rank 2
+				ach(17324),	-- <DNT> Hearthfire Fellowship Rank 3
+				ach(17325),	-- <DNT> Hearthfire Fellowship Rank 4
 			})),
 
 			-- 10.1.0
 			tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 				ach(18542),	-- Dragonflight Keystone Master: Season Two	-- shows as completed together with ach(17844), but this version is NYI
+			})),
+
+			--10.1.7
+			tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+				ach(6313),	-- [DNT] UTILITY: Promotion - China (Cenarion Hatchling)
+				ach(9030),	-- Login Tracking Achievement [SERVER ONLY]
+				ach(10705),	-- HS Achievement Fixup
+				ach(11266),	-- Overwatch Spray Unlock
+				ach(11295),	-- Movie Promotion Transmog Fixup
+				ach(14958),	-- [DNT] Charity Pet 2021 - Bananas (account level)
+				ach(14960),	-- [DNT] Charity Pet 2021 - Bananas (character level)
+				ach(19028),	-- Lil' Frostwing
+			})),
+
+			--10.2.5
+			tier(DF_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+				ach(19696),	-- Hearthstone Anniversary Mail
 			})),
 		}),
 	}),

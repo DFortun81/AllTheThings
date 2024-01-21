@@ -2707,10 +2707,6 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(17307),	-- <DNT> Winterpelt Furbolg - 1 - Honored
 		ach(17308),	-- <DNT> Winterpelt Furbolg - 1 - Revered
 		ach(17309),	-- <DNT> Winterpelt Furbolg - 1 - Exalted
-		ach(17322),	-- <DNT> Hearthfire Fellowship Rank 1
-		ach(17323),	-- <DNT> Hearthfire Fellowship Rank 2
-		ach(17324),	-- <DNT> Hearthfire Fellowship Rank 3
-		ach(17325),	-- <DNT> Hearthfire Fellowship Rank 4
 		ach(17409),	-- <Hidden> ACCOUNT: Treasure Room Local Quest Completed
 		ach(17422),	-- <DNT> Artisan's Consortium Reputation is Preferred (Rank 1)
 		ach(17423),	-- <DNT> Artisan's Consortium Reputation is Respected (Rank 2)
@@ -2859,14 +2855,6 @@ root(ROOTS.HiddenAchievementTriggers, {
 		--10.1.7
 		ach(18860),	-- <Hidden> ACCOUNT: Renown Campaign Complete - Tyr 3
 		ach(18938),	-- Seeing Red (account)
-		ach(6313),	-- [DNT] UTILITY: Promotion - China (Cenarion Hatchling)
-		ach(9030),	-- Login Tracking Achievement [SERVER ONLY]
-		ach(10705),	-- HS Achievement Fixup
-		ach(11266),	-- Overwatch Spray Unlock
-		ach(11295),	-- Movie Promotion Transmog Fixup
-		ach(14958),	-- [DNT] Charity Pet 2021 - Bananas (account level)
-		ach(14960),	-- [DNT] Charity Pet 2021 - Bananas (character level)
-		ach(19028),	-- Lil' Frostwing
 		ach(19137),	-- <Hidden> Base 11.0 Tender [DNT]
 		ach(19138),	-- <Hidden> Heroic 11.0 Tender [DNT]
 		ach(19139),	-- <Hidden> Epic 11.0 Tender [DNT]
@@ -2961,7 +2949,6 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(18933),	-- <Hidden> 10.2 Tyr Campaign - Ch 04 - Mail Quest Push - Valunei's Letter (AAO)
 		ach(19391),	-- [DNT] Hidden - Fyr'alath - Heroic/Mythic Marker
 		--10.2.5
-		ach(19696),	-- Hearthstone Anniversary Mail
 		ach(19784),	-- Hearthstone Game Wins
 	}),
 });
