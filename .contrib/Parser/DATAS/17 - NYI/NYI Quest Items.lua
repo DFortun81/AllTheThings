@@ -276,9 +276,6 @@ root(ROOTS.NeverImplemented, {
 				i(192482),	-- Timewalker Staff
 				i(192551),	-- Timewalker Staff
 				i(193409),	-- Time-Lost Curio
-				i(198649),	-- Time-Lost Possession
-				i(198601),	-- Time-Lost Relic
-				i(198602),	-- Time-Lost Relic
 				i(197952),	-- Titan Disc
 				i(199199),	-- Tough Moose Flank
 				i(192188),	-- Tuskarr Fishing Gear
