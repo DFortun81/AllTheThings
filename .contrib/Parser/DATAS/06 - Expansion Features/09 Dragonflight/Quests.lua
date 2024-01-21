@@ -180,6 +180,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["sourceQuests"] = { 66596 },	-- Whispers on the Winds [A]
 			["provider"] = { "n", 189569 },	-- Wrathion <The Black Prince>
 			["coord"] = { 22.9, 56.0, STORMWIND_CITY },
+			["timeline"] = { REMOVED_10_0_2_LAUNCH },
 			["g"] = {
 				i(201303),	-- Beheader's Poleaxe
 				i(201304),	-- Dunesplitter
@@ -195,6 +196,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
 			["provider"] = { "n", 190239 },	-- Ebyssian
 			["coord"] = { 55.8, 12.1, DUROTAR },
+			["timeline"] = { REMOVED_10_0_2_LAUNCH },
 			["g"] = {
 				i(201303),	-- Beheader's Poleaxe
 				i(201304),	-- Dunesplitter
