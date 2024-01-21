@@ -700,6 +700,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				q(77607, {	-- when you learn everything from Quantum Knuckles (Fist Weapon)
 					["name"] = "Quantum Knuckles completed.",
 				}),
+				q(77596, {	-- when you learn everything from Quantum Mace (One-Handed)
+					["name"] = "Quantum Mace (One-Handed) completed.",
+				}),
 				q(77601, {	-- when you learn everything from Quantum Staff
 					["name"] = "Quantum Staff completed.",
 				}),
