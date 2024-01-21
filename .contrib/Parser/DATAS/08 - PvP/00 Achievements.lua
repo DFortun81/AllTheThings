@@ -234,6 +234,18 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(11468, {	-- Alive for Five
 		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 	}),
+	ach(19418, {		-- Battle-scarred Battler
+		["timeline"] = { ADDED_10_2_0 },
+	}),
+	ach(19412, {		-- Battleground Blitz Apprentice
+		["timeline"] = { ADDED_10_2_0 },
+	}),
+	ach(19411, {		-- Battleground Blitz Novice
+		["timeline"] = { ADDED_10_2_0 },
+	}),
+	ach(19413, {		-- Battleground Blitz Veteran
+		["timeline"] = { ADDED_10_2_0 },
+	}),
 	ach(611, {		-- Bleeding Bloodhoof
 		["providers"] = {
 			-- #if AFTER CATA
@@ -255,6 +267,9 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
+	}),
+	ach(19417, {		-- Brawlroom Blitzer
+		["timeline"] = { ADDED_10_2_0 },
 	}),
 	applyclassicphase(PHASE_TWO, ach(727, {	-- Call in the Cavalry
 		["providers"] = {
@@ -727,6 +742,9 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
+	}),
+	ach(19416, {		-- Learning the Ropes
+		["timeline"] = { ADDED_10_2_0 },
 	}),
 	ach(436, {		-- Lieutenant Commander
 		["races"] = ALLIANCE_ONLY,

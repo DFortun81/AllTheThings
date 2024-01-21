@@ -202,12 +202,5 @@ ach(19284),	-- Daggercap Dart Reverse: Silver
 ach(19285),	-- Daggercap Dart Reverse: Gold
 ach(19287),	-- Vicious Saddle (38)
 ach(19289),	-- Vicious Saddle (38)
-10.2.0.51521
-ach(19411),	-- Battleground Blitz Novice
-ach(19412),	-- Battleground Blitz Apprentice
-ach(19413),	-- Battleground Blitz Veteran
-ach(19416),	-- Learning the Ropes
-ach(19417),	-- Brawlroom Blitzer
-ach(19418),	-- Battle-scarred Battler
 10.2.5.52902
 ach(19031),	-- Fyrn
