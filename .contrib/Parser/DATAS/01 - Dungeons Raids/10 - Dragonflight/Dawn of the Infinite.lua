@@ -75,6 +75,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(108189),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108197),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108205),	-- Peerless Draenic Steel Helm		(NYI)
+			ig(108213),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108221),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(114266),	-- Ruby Plate Greathelm				(NYI)
 
@@ -128,6 +129,7 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(PLATE, {
 			ig(108083),	-- Hardened Draenic Steel Shoulders	(NYI)
+			ig(108167),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(108215),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(114274),	-- Ruby Plate Shoulderguard			(NYI)
 
@@ -136,7 +138,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(134713),	-- Crushing Pauldrons				(Removed)
 			ig(103785),	-- Tusks of Mannoroth Heroic		(Removed)
 
-			ig(105796),	-- Rossi's Rosin-Soaked Shoulderplates(Ordos)
+			ig(105796),	-- Rossi's Rosin-Soaked Shoulderplates	(Ordos)
 			ig(105794),	-- Starry Spaulders of Durability	(Ordos)
 			ig(105802),	-- Yaungol Deathcult Shoulderguards	(Ordos)
 		}),
@@ -147,6 +149,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(114317),	-- Mantisweave Robes				(NYI)
 			ig(3959),	-- Mesh Armor						(NYI)
 
+			ig(6682),	-- Death Speaker Robes				(Removed)
 			ig(134784),	-- Entrenched Raiment				(Removed)
 			ig(134722),	-- Icyweave Robes					(Removed)
 			ig(14150),	-- Robe of Evocation				(Removed)
@@ -180,6 +183,7 @@ local QUANTUM_GROUP = sharedData({
 			}),
 			ig(114315),	-- Chestguard of Meditative Focus	(NYI)
 			ig(114252),	-- Leafscale Chestguard				(NYI)
+			ig(4015),	-- Sterling Chain Armor				(NYI)
 
 			ig(134732),	-- Frigidlink Armor					(Removed)
 			ig(6773),	-- Gelkis Marauder Chain			(Removed)
@@ -234,6 +238,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(114261),	-- Leafscale Gauntlets				(NYI)
 			ig(4012),	-- Sterling Chain Gloves			(NYI)
 
+			ig(51980),	-- Earthbound Handgrips				(Removed)
 			ig(134733),	-- Frigidlink Gauntlets				(Removed)
 			ig(134797),	-- Ironbranded Gauntlets			(Removed)
 		}),
@@ -321,9 +326,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(121510),	-- Dreadsworn Legguards				(NYI)
 			ig(108082),	-- Hardened Draenic Steel Legguards	(NYI)
 			ig(114394),	-- Legplates of Grievous Storms		(NYI)
+			ig(108182),	-- Peerless Draenic Steel Legguards	(NYI)
+			ig(108206),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(108214),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(108222),	-- Peerless Draenic Steel Legguards	(NYI)
-			ig(108206),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(114270),	-- Ruby Plate Legplates				(NYI)
 
 			ig(134768),	-- Concealment Legplates			(Removed)
@@ -411,7 +417,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(39769),	-- Arcanite Ripper						(BMAH)(Unique)
 		ig(44924),	-- Sun Lute								(BMAH)(Unique)
 	}),
-	i(208114, {	-- Quantum Greathammer	(Two-Handed)(Mace)
+	i(208114, {	-- Quantum Greathammer	(Two-Handed) (Mace)
 		q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
 			["name"] = "Quantum Mace (Two-Handed) completed.",
 			["collectible"] = false,
@@ -460,6 +466,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(134780),	-- Seasoned Ripper						(Removed)
 	}),
 	i(208110, {	-- Quantum Mace			(One-Handed)
+		q(77596, {	-- when you learn everything from Quantum Mace (One-Handed)
+			["name"] = "Quantum Mace (One-Handed) completed.",
+			["collectible"] = false,
+		}),
 		ig(166405),	-- Blindside							(NYI)
 		ig(108058),	-- Draenic Steel Mace					(NYI)
 		ig(174228),	-- Gavel of the Oasis					(NYI)
@@ -1195,7 +1205,6 @@ root(ROOTS.HiddenQuestTriggers, {
 
 		-- Quantum Items
 		-- q(77595),	-- when you learn everything from Quantum ?
-		-- q(77596),	-- when you learn everything from Quantum ?
 		-- q(77598),	-- when you learn everything from Quantum ?
 		-- q(77599),	-- when you learn everything from Quantum ?
 		-- q(77602),	-- when you learn everything from Quantum ?

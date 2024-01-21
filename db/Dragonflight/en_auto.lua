@@ -3241,6 +3241,7 @@ local keys = {
 [75708]="Weekly: A Race To The Finish",
 [77230]="Pay Shakey's Tab",
 [77397]="Talk with 'Appraiser' Sazsel Stickyfingers",
+[77596]="Quantum Mace (One-Handed) completed.",
 [77597]="Quantum Axe (One-Handed) completed.",
 [77600]="Quantum Mace (Two-Handed) completed.",
 [77601]="Quantum Staff completed.",
