@@ -236,6 +236,10 @@ root(ROOTS.NeverImplemented, {
 				i(20946, { ["name"] = "Tactical Task Briefing III", }),	-- Silithus
 				i(21246, { ["name"] = "Combat Task Briefing I", }),	-- Silithus
 				i(21247, { ["name"] = "Combat Task Briefing II", }),	-- Silithus
+				q(999, { ["name"] = "When Dreams Turn to Nightmares", }),
+				q(1005, { ["name"] = "What Lurks Beyond", }),
+				q(1006, { ["name"] = "What Lies Beyond", }),
+				q(1500, { ["name"] = "Waking Naralex", }),
 
 				-- Got these from Questie
 				q(1, { ["name"] = "The \"Chow\" Quest (123)aa", }),	-- Kanrethad's Quest,		TBC: Alexander's Quest,		CLASSIC: The "Chow" Quest (123)aa
@@ -317,6 +321,7 @@ root(ROOTS.NeverImplemented, {
 				q(8155, { ["name"] = "Arathi Basin Resources!", }),
 				q(8156, { ["name"] = "Arathi Basin Resources!", }),
 				q(8297, { ["name"] = "Arathi Basin Resources!", }),
+
 			}),
 		}),
 		tier(TBC_TIER, {
@@ -503,126 +508,13 @@ root(ROOTS.NeverImplemented, {
 				q(12479, { ["name"] = "Wrath of the Lich King: Onwards to Northrend!", }),
 				q(12480, { ["name"] = "Wrath of the Lich King: Onwards to Northrend!", }),
 				q(11197, { ["name"] = "ZZOLD Upper Deck Promo - Ghost Wolf Mount OLD", }),
-
-
-				-- Pulled from Questie
-				-- [BETA] quests
-				q(402), -- Sirra is Busy
-				q(785), -- A Strategic Alliance
-				q(999), -- When Dreams Turn to Nightmares
-				q(1005), -- What Lurks Beyond
-				q(1006), -- What Lies Beyond
-				q(1099), -- Goblins Win!
-				q(1263), -- The Burning Inn <CHANGE TO GOSSIP>
-				q(1272), -- Finding Reethe <CHANGE INTO GOSSIP>
-				q(1281), -- Jim's Song <CHANGE TO GOSSIP>
-				q(1289), -- Vimes's Report
-				q(1500), -- Waking Naralex
-				q(7961), -- Waskily Wabbits!
-				q(8478), -- Choose Your Weapon
-				q(8489), -- An Intact Converter
-				q(8896), -- The Dwarven Spy
-				q(9168), -- Heart of Deatholme
-				q(9342), -- Marauding Crust Bursters
-				q(9344), -- A Hasty Departure
-				q(9346), -- When Helboars Fly
-				q(9357), -- Report to Aeldon Sunbrand
-				q(9382), -- The Fate of the Clefthoof
-				q(9408), -- Forgotten Heroes
-				q(9511), -- Kargath's Battle Plans
-				q(9568), -- On the Offensive
-				q(9749), -- They're Alive! Maybe...
-				q(9929), -- The Missing Merchant
-				q(9930), -- The Missing Merchant
-				q(9941), -- Tracking Down the Culprits
-				q(9942), -- Tracking Down the Culprits
-				q(9943), -- Return to Thander
-				q(9947), -- Return to Rokag
-				q(9949), -- A Bird's-Eye View
-				q(9950), -- A Bird's-Eye View
-				q(9952), -- Prospector Balmoral
-				q(9953), -- Lookout Nodak
-				q(9958), -- Scouting the Defenses
-				q(9959), -- Scouting the Defenses
-				q(9963), -- Seeking Help from the Source
-				q(9964), -- Seeking Help from the Source
-				q(9965), -- A Show of Good Faith
-				q(9966), -- A Show of Good Faith
-				q(9969), -- The Final Reagents
-				q(9974), -- The Final Reagents
-				q(9975), -- Primal Magic
-				q(9976), -- Primal Magic
-				q(9980), -- Rescue Deirom!
-				q(9981), -- Rescue Dugar!
-				q(9984), -- Host of the Hidden City
-				q(9985), -- Host of the Hidden City
-				q(9988), -- A Dandy's Best Friend
-				q(9989), -- Alien Spirits
-				q(10014), -- The Firewing Point Project
-				q(10015), -- The Firewing Point Project
-				q(10029), -- The Spirits Are Calling
-				q(10046), -- Through the Dark Portal
-				q(10053), -- Dealing with Zeth'Gor
-				q(10054), -- Impending Doom
-				q(10056), -- Bleeding Hollow Supplies
-				q(10059), -- Dealing With Zeth'Gor
-				q(10060), -- Impending Doom
-				q(10061), -- The Unyielding
-				q(10062), -- Looking to the Leadership
-				q(10084), -- Assault on Mageddon
-				q(10088), -- When This Mine's a-Rockin'
-				q(10089), -- Forge Camps of the Legion
-				q(10092), -- Assault on Mageddon
-				q(10100), -- The Mastermind
-				q(10122), -- The Citadel's Reach
-				q(10125), -- Mission: Disrupt Communications
-				q(10126), -- Warboss Nekrogg's Orders
-				q(10127), -- Mission: Sever the Tie
-				q(10128), -- Saving Private Imarion
-				q(10130), -- The Western Flank
-				q(10131), -- Planning the Escape
-				q(10133), -- Mission: Kill the Messenger
-				q(10135), -- Mission: Be the Messenger
-				q(10137), -- Provoking the Warboss
-				q(10138), -- Under Whose Orders?
-				q(10139), -- Dispatching the Commander
-				q(10145), -- Mission: Sever the Tie UNUSED
-				q(10147), -- Mission: Kill the Messenger
-				q(10148), -- Mission: Be the Messenger
-				q(10149), -- Mission: End All, Be All
-				q(10150), -- The Citadel's Reach
-				q(10151), -- Warboss Nekrogg's Orders
-				q(10152), -- The Western Flank
-				q(10153), -- Saving Scout Makha
-				q(10154), -- Planning the Escape
-				q(10155), -- Provoking the Warboss
-				q(10156), -- Under Whose Orders?
-				q(10157), -- Dispatching the Commander
-				q(10158), -- Bleeding Hollow Supplies
-				q(10179), -- The Custodian of Kirin'Var
-				q(10187), -- A Message for the Archmage
-				q(10195), -- Mercenary See, Mercenary Do
-				q(10196), -- More Arakkoa Feathers
-				q(10207), -- Forward Base: Reaver's Fall REUSE
-				q(10214), -- When This Mine's a-Rockin'
-				q(10244), -- R.T.F.R.C.M.
-				q(10260), -- Netherologist Coppernickels
-				q(10292), -- More Power!
-				q(10370), -- Nazgrel's Command <TXT>
-				q(10375), -- Obsidian Warbeads
-				q(10386), -- The Fel Reaver Slayer
-				q(10387), -- The Fel Reaver Slayer
-				q(10398), -- Return to Honor Hold
-				q(10401), -- Mission: End All, Be All
-				q(10404), -- Against the Legion
-				q(10441), -- Peddling the Goods
-				q(10716), -- Test Flight: Raven's Wood <needs reward>
-				q(10815), -- The Journal of Val'zareq: Portends of War
-				q(10841), -- The Vengeful Harbringer
-				q(10844), -- Forge Camp: Anger
-				q(10871), -- Ally of the Netherwing
-				q(10872), -- Zuluhed the Whacked
-				q(10925), -- Evil Draws Near
+				q(9168, { ["name"] = "Heart of Deatholme", }),
+				q(9357, { ["name"] = "Report to Aeldon Sunbrand", }),
+				q(9568, { ["name"] = "On the Offensive", }),
+				q(10260, { ["name"] = "Netherologist Coppernickels", }),
+				q(10292, { ["name"] = "More Power!", }),
+				q(10404, { ["name"] = "Against the Legion", }),
+				q(10844, { ["name"] = "Forge Camp: Anger", }),
 			}),
 		}),
 		tier(WOTLK_TIER, {

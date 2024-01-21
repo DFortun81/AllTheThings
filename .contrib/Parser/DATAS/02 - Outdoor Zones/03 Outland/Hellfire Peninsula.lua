@@ -3647,11 +3647,5 @@ appendGroups({
 -- #if AFTER TBC
 -- These quests trigger after specific events occur in the zone.
 root(ROOTS.HiddenQuestTriggers, {
-	q(10061),	-- The Unyielding - completed with 10050 "Unyielding Souls"
-	q(10062, { ["_drop"] = { "g" }, }),	-- Looking to the Leadership - completed with 10057 "Looking to the Leadership"
-	q(10088),	-- When This Mine's a-Rockin' - completed with quest 10079
-	q(10125),	-- Mission: Disrupt Communications - completed with quest 10144 & 10208
-	q(10207),	-- Forward Base: Reaver's Fall REUSE - completed with quest 10124 & 10143
-	q(10214),	-- When This Mine's a-Rockin' - completed with quest 10079
 	q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in quest 10124 & 10143
 });

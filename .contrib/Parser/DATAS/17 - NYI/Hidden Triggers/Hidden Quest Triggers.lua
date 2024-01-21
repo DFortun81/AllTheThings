@@ -1659,12 +1659,21 @@ root(ROOTS.HiddenQuestTriggers, {
 	n(SPECIAL, {
 		q(3366),	-- The Glowing Shard - completed with quest 6981
 		q(9749),	-- They're Alive! Maybe... - completed with quest 9670
+		q(9989),	-- Alien Spirits - completed with quest 10917
+		q(10061),	-- The Unyielding - completed with quest 10050
+		q(10062, { ["_drop"] = { "g" }, }),	-- Looking to the Leadership - completed with quest 10057
+		q(10088),	-- When This Mine's a-Rockin' - completed with quest 10079
+		q(10125),	-- Mission: Disrupt Communications - completed with quest 10144 & 10208
 		q(10149),	-- Mission: End All, Be All - completed with quest 10136 & 10400
+		q(10207),	-- Forward Base: Reaver's Fall REUSE - completed with quest 10124 & 10143
+		q(10214),	-- When This Mine's a-Rockin' - completed with quest 10079
 		q(10386),	-- The Fel Reaver Slayer - completed with quest 10382
 		q(10387),	-- The Fel Reaver Slayer - completed with quest 10382
 		q(10401),	-- Mission: End All, Be All - completed with quest 10136 & 10400
 		q(10815),	-- The Journal of Val'zareq: Portends of War - completed with quest 10793
 		q(10841),	-- The Vengeful Harbringer - completed with quest 10720
+		q(10925),	-- Evil Draws Near - completed with quest 10923
+		q(11072),	-- Adversarial Blood - completed with quest 11885
 		q(11790),	-- Cultists Among Us - completed with quest 11920
 		q(13053),	-- Looking for Survivors - completed with quest 12671
 		q(13052),	-- Aerial Surveillance - completed with quest 12696

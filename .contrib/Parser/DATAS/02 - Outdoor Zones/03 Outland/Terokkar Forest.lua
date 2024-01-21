@@ -1750,10 +1750,3 @@ appendGroups({
 
 -- Remove the phase flag.
 UNHOLY_ENCHANT.u = nil;
-
--- #if AFTER TBC
--- These quests trigger after specific events occur in the zone.
-root(ROOTS.HiddenQuestTriggers, {
-	q(10925),	-- Evil Draws Near - completed with quest 10923
-	q(11072),	-- Adversarial Blood - completed with quest 11885
-});
