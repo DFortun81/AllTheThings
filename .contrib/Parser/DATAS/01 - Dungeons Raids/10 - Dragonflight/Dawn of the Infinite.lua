@@ -1135,6 +1135,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(77628),	-- when you learn everything from Quantum Headpiece (Leather / Druid)
 		-- q(77629),	-- when you learn everything from Quantum ?
 		q(77630, {	-- when you learn everything from Quantum Gloves (Plate / Warrior)
+			["name"] = "Quantum Gloves (Plate) completed.",
+		}),
 		-- q(77631),	-- when you learn everything from Quantum ?
 		-- q(77632),	-- when you learn everything from Quantum ?
 		-- q(77633),	-- when you learn everything from Quantum ?
