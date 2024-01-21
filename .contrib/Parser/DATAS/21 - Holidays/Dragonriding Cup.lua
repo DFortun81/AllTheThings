@@ -2340,28 +2340,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 5 } },
 						}),
 						i(211885, {	-- Outlandish Drake Racer's Belt
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(211887, {	-- Outlandish Drake Racer's Boots
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(211884, {	-- Outlandish Drake Racer's Handwraps
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(211881, {	-- Outlandish Drake Racer's Helmet
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(211883, {	-- Outlandish Drake Racer's Jersey
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(211886, {	-- Outlandish Drake Racer's Leggings
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(211888, {	-- Outlandish  Drake Racer's Scarf
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 5 } },
 						}),
 						i(211882, {	-- Outlandish Drake Racer's Shoulderpads
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 
 						i(197017, {	-- Cliffside Wylderdrake: Large Tail Spikes (DM!)
