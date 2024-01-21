@@ -345,11 +345,6 @@ root(ROOTS.NeverImplemented, {
 				i(202363),	-- Survey Arc Device
 			})),
 
-			-- 10.1.7
-			tier(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
-				i(208736),	-- Apprentice Astrologist Homework
-			})),
-
 			-- 10.2.0
 			tier(DF_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				i(206378),	-- [DNT] Test Loot

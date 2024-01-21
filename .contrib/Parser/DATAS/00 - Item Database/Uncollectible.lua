@@ -840,6 +840,7 @@ i(192719);	-- Scaled Toes
 i(192663);	-- Scaly Wing
 i(195360);	-- Scorched Snapper Meat
 i(201208);	-- Seer's Crystal
+i(200775);	-- Self-Luminous Orb
 i(200851);	-- Self-Trimming Bonsai
 i(192690);	-- Serrated Limb
 i(192664);	-- Serrated Pincer
@@ -1086,6 +1087,7 @@ i(211938);	-- Flame Inscribed Band
 --- Azerothian Archives Trash ---
 i(212766);	-- Amphora Fragment
 i(213362);	-- Ancient Drakonid Candy
+i(208736);	-- Apprentice Astrologist Homework
 i(213029);	-- Bent Drakonid Fork
 i(213210);	-- Bloodied Banner Scrap
 i(213033);	-- Brittle Blacksmith Tongs

@@ -1490,7 +1490,9 @@ root(ROOTS.NeverImplemented, {
 			-- Gloves
 
 			-- Head
-
+			i(190559, {	-- Helm of the Swift
+				["cost"] = {{"c", TRADERS_TENDER, 225}},
+			}),
 			-- Weapons
 			-- 1H Weapon
 			i(190561, {	-- Crystalblade of Shifting Magic
@@ -1506,7 +1508,9 @@ root(ROOTS.NeverImplemented, {
 			-- Off-Hand
 
 			-- Shield
-
+			i(190077, {	-- Scarlet Zealot's Heater Shield
+				["cost"] = {{"c", TRADERS_TENDER, 200}},
+			}),
 			i(190672),	-- Deathguard Acolyte's Cloak
 			i(189869),	-- Distinguished Warcloak
 			i(190068),	-- Emerald Drape
@@ -1680,6 +1684,11 @@ root(ROOTS.NeverImplemented, {
 			-- 10.1.5
 			tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 					------ TRADING POST ------
+				filter(BATTLE_PETS, {
+					i(207962, {	-- Spirit of Competition (PET!)
+						["cost"] = {{"c", TRADERS_TENDER, 650}},
+					}),
+				}),
 				i(206278),	-- Vagabond's Aquatic Cape
 				i(206279),	-- Vagabond's Plum Cape
 				i(206280),	-- Vagabond's Faded Cape
