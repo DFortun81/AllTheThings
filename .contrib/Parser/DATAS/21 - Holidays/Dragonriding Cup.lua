@@ -2845,12 +2845,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				}),
 			}),
 			n(VENDORS, {
-			--[[	n(206744, {	-- Maztha <Riders of Azeroth>
+				n(206744, bubbleDown({ ["timeline"] = { CREATED_10_2_5, ADDED_10_2_6 } }, {	-- Maztha <Riders of Azeroth>
 					["coord"] = { 27.2, 47.2, VALDRAKKEN },
 					["g"] = {
-						-- TODO: Add inventory
+						--TODO: Add inventory
 					},
-				}),--]]
+				})),
 			}),
 		}))),
 		n(ACHIEVEMENTS, {
