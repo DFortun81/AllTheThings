@@ -3347,6 +3347,12 @@ r = oldR;
 local INSCRIPTION_KNOWLEDGE = 2028;
 root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRIPTION }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+		ach(18858, {	-- Forge and Befuddle
+			["races"] = HORDE_ONLY,
+		}),
+		ach(18859, {	-- Forge and Befuddle
+			["races"] = ALLIANCE_ONLY,
+		}),
 		ach(18724),	-- Gaining an Advantus
 		ach(18879),	-- Ink and Quill IV
 		ach(18878),	-- Ink and Quill III

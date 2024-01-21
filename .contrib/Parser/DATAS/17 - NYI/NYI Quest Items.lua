@@ -348,7 +348,6 @@ root(ROOTS.NeverImplemented, {
 			-- 10.1.7
 			tier(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
 				i(208736),	-- Apprentice Astrologist Homework
-				i(208737),	-- Hole-Punched Bakar Tooth
 			})),
 
 			-- 10.2.0

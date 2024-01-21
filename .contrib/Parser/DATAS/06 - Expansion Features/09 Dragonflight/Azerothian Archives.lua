@@ -407,17 +407,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(77760, {	-- Curious Find: Dragonhorn Flute
 					["provider"] = { "i", 208733 },	-- Dragonhorn Flute (QI!)
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-						currency(2819),	-- Archivist Knowledge
-					},
+				}),
+				q(77766, {	-- Curious Find: Hole-Punched Bakar Tooth
+					["provider"] = { "i", 208737 },	-- Hole-Punched Bakar Tooth (QI!)
 				}),
 				q(77763, {	-- Curious Find: Waterlogged Ledger
 					["provider"] = { "i", 208734 },	-- Waterlogged Ledger (QI!)
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-						currency(2819),	-- Archivist Knowledge
-					},
 				}),
 			}),
 			n(RARES, {
@@ -433,6 +428,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(212640),	-- Excavator's Trusty Satchel
 						i(212640),	-- Excavator's Utility Belt
 						i(212638),	-- Excavator's Work Shirt
+						i(208737),	-- Hole-Punched Bakar Tooth (QI!)
 						i(208733),	-- Dragonhorn Flute (QI!)
 						i(208734),	-- Waterlogged Ledger (QI!)
 					},

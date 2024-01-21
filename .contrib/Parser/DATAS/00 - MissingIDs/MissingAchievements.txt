@@ -157,31 +157,7 @@ ach(12181),	-- Protocol 2.3
 8.1.0.27985
 ach(13283),	-- Frontline Warrior \\ On The Frontlines
 ach(13284),	-- Frontline Warrior \\ On The Frontlines
-10.1.7.50442
-ach(18858),	-- Forge and Befuddle
-ach(18859),	-- Forge and Befuddle
-ach(18860),	-- <Hidden> ACCOUNT: Renown Campaign Complete - Tyr 3
-ach(18938),	-- Seeing Red (account)
-10.1.7.50505
-ach(18959),	-- Don't Lose Your Head, Man
-10.1.7.50730
-ach(6313),	-- [DNT] UTILITY: Promotion - China (Cenarion Hatchling)
-ach(9030),	-- Login Tracking Achievement [SERVER ONLY]
-ach(10705),	-- HS Achievement Fixup
-ach(11266),	-- Overwatch Spray Unlock
-ach(11295),	-- Movie Promotion Transmog Fixup
-ach(14958),	-- [DNT] Charity Pet 2021 - Bananas (account level)
-ach(14960),	-- [DNT] Charity Pet 2021 - Bananas (character level)
-ach(19028),	-- Lil' Frostwing
-10.1.7.51059
-ach(19137),	-- <Hidden> Base 11.0 Tender [DNT]
-ach(19138),	-- <Hidden> Heroic 11.0 Tender [DNT]
-ach(19139),	-- <Hidden> Epic 11.0 Tender [DNT]
-10.1.7.51237
-ach(18691),	-- <DNT> Complete the "The Coalition of Flames" questline.
 10.2.0.51239
-ach(17730),	-- Random Login Variable B
-ach(18647),	-- <Hidden> 10.1.7 Prologue / 10.2 Intro Quest Launch [NOT USED YET]
 ach(19199),	-- Scalawag Slither: Bronze \\ Skalawag Slither: Bronze
 ach(19200),	-- Scalawag Slither: Silver \\ Skalawag Slither: Silver
 ach(19201),	-- Scalawag Slither: Gold \\ Skalawag Slither: Gold
@@ -200,7 +176,5 @@ ach(19282),	-- Daggercap Dart Advanced: Gold
 ach(19283),	-- Daggercap Dart Reverse: Bronze
 ach(19284),	-- Daggercap Dart Reverse: Silver
 ach(19285),	-- Daggercap Dart Reverse: Gold
-ach(19287),	-- Vicious Saddle (38)
-ach(19289),	-- Vicious Saddle (38)
 10.2.5.52902
 ach(19031),	-- Fyrn

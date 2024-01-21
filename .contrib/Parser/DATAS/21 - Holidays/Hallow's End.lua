@@ -584,6 +584,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["provider"] = { "i", 34068 }	-- Weighted Jack-o'-Lantern
 			}),
 		})),
+		ach(18959, {	-- Don't Lose Your Head, Man
+			["timeline"] = { ADDED_10_1_7 },
+		}),
 		ach(1261, {	-- G.N.E.R.D. Rage
 			["provider"] = { "i", 37583 },	-- G.N.E.R.D.S.
 			["timeline"] = { "added 3.0.1" },
