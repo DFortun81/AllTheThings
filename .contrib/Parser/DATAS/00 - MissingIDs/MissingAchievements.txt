@@ -157,24 +157,5 @@ ach(12181),	-- Protocol 2.3
 8.1.0.27985
 ach(13283),	-- Frontline Warrior \\ On The Frontlines
 ach(13284),	-- Frontline Warrior \\ On The Frontlines
-10.2.0.51239
-ach(19199),	-- Scalawag Slither: Bronze \\ Skalawag Slither: Bronze
-ach(19200),	-- Scalawag Slither: Silver \\ Skalawag Slither: Silver
-ach(19201),	-- Scalawag Slither: Gold \\ Skalawag Slither: Gold
-ach(19202),	-- Scalawag Slither Advanced: Bronze \\ Skalawag Slither Advanced: Bronze
-ach(19203),	-- Scalawag Slither Advanced: Silver \\ Skalawag Slither Advanced: Silver
-ach(19204),	-- Scalawag Slither Advanced: Gold \\ Skalawag Slither Advanced: Gold
-ach(19205),	-- Scalawag Slither Reverse: Bronze \\ Skalawag Slither Reverse: Bronze
-ach(19206),	-- Scalawag Slither Reverse: Silver \\ Skalawag Slither Reverse: Silver
-ach(19207),	-- Scalawag Slither Reverse: Gold \\ Skalawag Slither Reverse: Gold
-ach(19277),	-- Daggercap Dart: Bronze
-ach(19278),	-- Daggercap Dart: Silver
-ach(19279),	-- Daggercap Dart: Gold
-ach(19280),	-- Daggercap Dart Advanced: Bronze
-ach(19281),	-- Daggercap Dart Advanced: Silver
-ach(19282),	-- Daggercap Dart Advanced: Gold
-ach(19283),	-- Daggercap Dart Reverse: Bronze
-ach(19284),	-- Daggercap Dart Reverse: Silver
-ach(19285),	-- Daggercap Dart Reverse: Gold
 10.2.5.52902
 ach(19031),	-- Fyrn

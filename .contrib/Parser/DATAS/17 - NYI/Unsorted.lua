@@ -1329,52 +1329,22 @@ root(ROOTS.Unsorted, {
 				q(78252),	--
 				q(78253),	--
 				q(78268),	-- [DNT] Test Quest
-				q(78301),	-- Scalawag Slither	 PTR:Skalawag Slither
-				q(78302),	-- Scalawag Slither - Advanced	 PTR:Skalawag Slither - Advanced
-				q(78303),	-- Scalawag Slither - Reverse	 PTR:Skalawag Slither - Reverse
-				q(78325),	-- Daggercap Dart
-				q(78326),	-- Daggercap Dart - Advanced
-				q(78327),	-- Daggercap Dart - Reverse
 				q(78331),	--
-				q(78334),	-- Blackriver Burble
-				q(78335),	-- Blackriver Burble - Advanced
-				q(78336),	-- Blackriver Burble - Reverse
-				q(78346),	-- Gundrak Fast Track
-				q(78347),	-- Gundrak Fast Track - Advanced
-				q(78349),	-- Gundrak Fast Track - Reverse
 				q(78357),	--
 				q(78362),	--
 				q(78366),	--
 				q(78377),	--
 				q(78380),	--
-				q(78389),	-- The Makers' Marathon	 PTR:Maker's Marathon
-				q(78390),	-- The Makers' Marathon - Advanced	 PTR:Maker's Marathon - Advanced
-				q(78391),	-- The Makers' Marathon - Reverse	 PTR:Maker's Marathon - Reverse
 				q(78420),	--
 				q(78432),	--
 				q(78433),	--
-				q(78441),	-- Crystalsong Crisis
-				q(78442),	-- Crystalsong Crisis - Advanced
-				q(78443),	-- Crystalsong Crisis - Reverse
 				q(78445),	--
-				q(78454),	-- Dragonblight Dragon Flight
-				q(78455),	-- Dragonblight Dragon Flight - Advanced
-				q(78456),	-- Dragonblight Dragon Flight - Reverese
-				q(78499),	-- Citadel Sortie
-				q(78500),	-- Citadel Sortie - Advanced
-				q(78501),	-- Citadel Sortie - Reverse
 				q(78554),	--
-				q(78558),	-- Sholazar Spree
-				q(78559),	-- Sholazar Spree - Advanced
-				q(78560),	-- Sholazar Spree - Reverse
 				q(78576),	--
 				q(78577),	--
 				q(78578),	--
 				-- 10.2.0.51297
 				-- 10.2.0.51425
-				q(78608),	-- Geothermal Jaunt
-				q(78609),	-- Geothermal Jaunt - Advanced
-				q(78610),	-- Geothermal Jaunt - Reverse
 				q(78617),	--
 				q(78644),	--
 				-- 10.2.0.51521
