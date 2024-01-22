@@ -584,7 +584,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 			filter(BATTLE_PETS, {
-				i(37297, { -- Spirit of Competition (PET!)
+				i(207962, {	-- Spirit of Competition (PET!)
 					["cost"] = {{"c", TRADERS_TENDER, 650}},
 				}),
 			}),
@@ -1684,11 +1684,6 @@ root(ROOTS.NeverImplemented, {
 			-- 10.1.5
 			tier(DF_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 					------ TRADING POST ------
-				filter(BATTLE_PETS, {
-					i(207962, {	-- Spirit of Competition (PET!)
-						["cost"] = {{"c", TRADERS_TENDER, 650}},
-					}),
-				}),
 				i(206278),	-- Vagabond's Aquatic Cape
 				i(206279),	-- Vagabond's Plum Cape
 				i(206280),	-- Vagabond's Faded Cape
