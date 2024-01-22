@@ -578,7 +578,6 @@ root(ROOTS.Unsorted, {
 				i(212722),	-- Buggsy (PET!) [Trading Post]
 				i(212786),	-- Lovely Duckling (PET!) [Noblegarden]
 				i(212791),	-- Beetriz (PET!) [Trading Post]
-				i(213556),	-- Hoplet (PET!) [In-Game Shop/Lunar]
 				i(208446),	-- Fyrn (PET!) [Promotion]
 			}),
 			filter(COSMETIC, {

@@ -236,6 +236,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["description"] = "This item is available only if you purchase the Plush Toy and redeem the code.",
 			["timeline"] = { "added 3.3.2.11403", "removed 8.3.0" },
 		}),
+		i(213556, {	-- Hoplet (PET!)
+			["timeline"] = { "added 10.2.5", "removed 10.2.6" },
+		}),
 		i(49693, {	-- Lil' K.T.
 			["timeline"] = { "added 3.2.2.10505", "removed 10.0.2.47213" },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
 		}),

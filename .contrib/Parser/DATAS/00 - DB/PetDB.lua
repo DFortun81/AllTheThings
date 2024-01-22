@@ -1039,7 +1039,7 @@ end
 -- CLASSIC WOW --
 -----------------
 i(198665, 4234);	-- Pebble's Pebble
-i(200060, 4235);	-- Hoplet
+i(200060, 4235);	-- Hoplet (Classic)
 i(204982, 4236);	-- Glub
 i(187794, 4233);	-- Flurky
 i(211082, 4329);	-- Arfus (WOTLK)
@@ -4142,7 +4142,7 @@ i(212791, 4410);	-- Beetriz
 i(212722, 4408);	-- Buggsy
 i(208446, 4264);	-- Fyrn
 i(213134, 4412);	-- Hap'he
-i(213556, 4421);	-- Hoplet
+i(213556, 4421);	-- Hoplet (Retail)
 i(212786, 4409);	-- Lovely Duckling
 i(212700, 4407);	-- Nelle
 i(213133, 4411);	-- Reese

@@ -493,7 +493,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 				mount(359843),	-- Tangled Dreamweaver (MOUNT!)
 				ach(17314),	-- Heroic Edition: Tangled Dreamweaver
 				ach(17305, {	-- Trading Post: Dragonflight
-					["timeline"] = { ADDED_10_0_5 },
+					["timeline"] = { ADDED_10_0_5, "removed 10.2.0" },
 				}),
 			},
 		}),

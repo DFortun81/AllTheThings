@@ -256,7 +256,9 @@ root(ROOTS.PetBattles, petbattle({
 			ach(6580),	-- Rookie Pet Crew (30)
 			ach(6579),	-- Rookie Pet Group (15)
 		}),
-		ach(9712),		-- Shiny Pet Charmer
+		ach(9712, {		-- Shiny Pet Charmer
+			["timeline"] = { "removed 10.2.5" },
+		}),
 		ach(6851, {	-- Take 'Em All On!
 			crit(19835),	-- Aquatic
 			crit(19836),	-- Beast
