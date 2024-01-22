@@ -248,6 +248,8 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				}),
 			}),
 		})),
+		a(ach(13283)),	-- Frontline Warrior (A)
+		h(ach(13284)),	-- Frontline Warrior (H)
 		ach(12740, {	-- Full of Scrap!
 			["maps"] = {
 				BORALUS,

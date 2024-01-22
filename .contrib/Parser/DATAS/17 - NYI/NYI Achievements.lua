@@ -317,6 +317,7 @@ root(ROOTS.NeverImplemented, {
 				ach(4778),	-- Disenchant rolls made on loot
 				ach(4780),	-- Deaths in Trial of the Crusader
 				ach(4781),	-- Deaths in Icecrown Citadel
+				ach(18602),	-- Defense Protocol Beta: Trial of The Champion
 			}),
 		}),
 		tier(CATA_TIER, {

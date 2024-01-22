@@ -697,6 +697,11 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		["_noautomation"] = true,
 		["rank"] = 1,
 	}),
+	-- #if ANYCLASSIC
+	ach(16433, {	-- Soul of Iron (Season of Mastery)
+		["timeline"] = { ADDED_3_4_0 },
+	}),
+	-- #endif
 	ach(1832, {	-- Tastes Like Chicken
 		["timeline"] = { "added 3.0.1" },
 	}),

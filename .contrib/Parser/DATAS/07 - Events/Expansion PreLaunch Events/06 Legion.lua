@@ -10,6 +10,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "ad
 				ach(11201, {		-- Defender of Azeroth: Legion Invasions
 					["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
 				}),
+				ach(11065, {		-- It All Makes Sense Now
+					["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
+				}),
 				ach(11200, {		-- Stand Against the Legion
 					["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
 				}),

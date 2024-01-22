@@ -841,6 +841,9 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_6_0_2, REMOVED_6_2_0 },
 	}),
+	ach(12181, {	-- Protocol 2.3
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
 	ach(618, {		-- Putting Out the Light
 		["provider"] = { "n", 17468 },	-- Prophet Velen
 		["timeline"] = { "added 3.0.1" },
