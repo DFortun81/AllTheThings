@@ -7,48 +7,72 @@ root(ROOTS.HiddenAchievementTriggers, {
 	-- When adding a Achievement trigger be sure to put a description of how it triggered
 	tier(CLASSIC_TIER, {
 		--1.14.0.39802
-		-- #if BEFORE TBC
+		-- #if DEBUG
+		-- #if AFTER 3.0.1
 		ach(9275),	-- Warlord Zaela kills (Upper Blackrock Spire)
 		-- #endif
+		-- #endif
 		--1.14.1.40666
-		-- #if BEFORE TBC
+		-- #if DEBUG
+		-- #if ANYCLASSIC
+		-- #if AFTER 3.0.1
 		ach(15329),	-- Has Died
+		-- #endif
+		-- #endif
 		-- #endif
 		--1.14.1.40688
 		-- #if ANYCLASSIC
+		-- #if AFTER 3.0.1
 		ach(15330),	-- Survivor of the Firelord (Season of Mastery) \\ Survivor of the Firelord \\ Survivor of the Flames
+		-- #endif
+		-- #endif
+		-- #if DEBUG
+		-- #if ANYCLASSIC
+		-- #if AFTER 3.0.1
 		ach(15332),	-- [DNT] Survivor (Season of Mastery) (hidden) \\ Survivor
+		-- #endif
+		-- #endif
 		-- #endif
 		--1.14.1.40800
 		-- #if ANYCLASSIC
+		-- #if AFTER 3.0.1
 		ach(15333),	-- Survivor of the Shadow Flame (Season of Mastery) \\ Survivor of the Shadow Flame
 		ach(15334),	-- Survivor of the Old God (Season of Mastery) \\ Survivor of the Old God
 		ach(15335),	-- Survivor of the Damned (Season of Mastery) \\ Survivor of the Damned
 		-- #endif
+		-- #endif
 		--1.14.2.42597
-		-- #if BEFORE TBC
+		-- #if DEBUG
+		-- #if ANYCLASSIC
+		-- #if AFTER 3.0.1
 		ach(15578),	-- <Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits
+		-- #endif
+		-- #endif
 		-- #endif
 		--1.14.3.42770
 		-- #if ANYCLASSIC
+		-- #if AFTER 3.0.1
 		ach(15637),	-- The Immortal (Season of Mastery) \\ The Immortal
+		-- #endif
 		-- #endif
 	}),
 	tier(TBC_TIER, {
 		--2.5.1.39399
 		-- #if ANYCLASSIC
-		-- #if AFTER TBC
+		-- #if AFTER 3.0.1
 		ach(15019),	-- Gladiator: Season 1
 		ach(15020),	-- Duelist: Season 1
 		ach(15021),	-- Rival: Season 1
 		ach(15022),	-- Challenger: Season 1
-		ach(15198),	-- [DNT] BCC Arena Tournament - Vanquisher Title
 		ach(15018),	-- Infernal Gladiator
+		-- #if DEBUG
+		ach(15198),	-- [DNT] BCC Arena Tournament - Vanquisher Title
+		-- #endif
 		-- #endif
 		-- #endif
 		--2.5.2.39570
 		-- #if ANYCLASSIC
-		-- #if AFTER TBC
+		-- #if AFTER 3.0.1
 		ach(15199),	-- Gladiator: Season 2
 		ach(15200),	-- Gladiator: Season 4
 		ach(15201),	-- Duelist: Season 4
@@ -64,9 +88,11 @@ root(ROOTS.HiddenAchievementTriggers, {
 		-- #endif
 		-- #endif
 		--2.5.4.44833
+		-- #if DEBUG
 		-- #if ANYCLASSIC
-		-- #if AFTER TBC
+		-- #if AFTER 3.0.1
 		ach(15853),	-- <Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
+		-- #endif
 		-- #endif
 		-- #endif
 	}),
@@ -510,35 +536,41 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(4823),	-- Halion kills (Heroic Ruby Sanctum 25 player)
 		--3.4.0.46158
 		-- #if ANYCLASSIC
-		-- #if AFTER WRATH
+		-- #if AFTER 3.0.1
 		ach(16313),	-- Rival: Season 5
 		ach(16314),	-- Gladiator: Season 5
 		ach(16315),	-- Duelist: Season 5
 		ach(16316),	-- Challenger: Season 5
+		-- #if DEBUG
 		ach(16397),	-- [DNT] Heirloom Tracking - Bloodied Arcanite Reaper (Hidden)
 		ach(16437),	-- [DNT] Soul of Iron Tracker (Season of Mastery) (hidden)
 		-- #endif
 		-- #endif
+		-- #endif
 		--3.4.1.47966
 		-- #if ANYCLASSIC
-		-- #if AFTER WRATH
+		-- #if AFTER 3.0.1
+		-- #if DEBUG
 		ach(17328),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
+		-- #endif
 		-- #endif
 		-- #endif
 		--3.4.2.49311
 		-- #if ANYCLASSIC
-		-- #if AFTER WRATH
+		-- #if AFTER 3.0.1
 		ach(17415),	-- Rival: Season 6
 		ach(17416),	-- Gladiator: Season 6
 		ach(17417),	-- Duelist: Season 6
 		ach(17418),	-- Challenger: Season 6
+		-- #if DEBUG
 		ach(18375),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
 		ach(18376),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
 		-- #endif
 		-- #endif
+		-- #endif
 		--3.4.2.49658
 		-- #if ANYCLASSIC
-		-- #if AFTER WRATH
+		-- #if AFTER 3.0.1
 		ach(18544),	-- Rival: Season 7
 		ach(18545),	-- Gladiator: Season 7
 		ach(18546),	-- Duelist: Season 7
