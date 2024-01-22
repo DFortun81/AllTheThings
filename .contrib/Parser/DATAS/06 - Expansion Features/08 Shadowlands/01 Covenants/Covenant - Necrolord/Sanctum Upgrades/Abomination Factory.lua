@@ -143,10 +143,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							r(338040), -- Construct Body: "Sabrina"
 							r(326407), -- Construct Body: "Toothpick"
 							r(331404), -- Construct Disguise
-							r(341500), -- Construct Ensemble: Stitched Alacrity of Maldraxxus
-							r(341498), -- Construct Ensemble: Stitched Authority of Maldraxxus
-							r(341502), -- Construct Ensemble: Stitched Guile of Maldraxxus
-							r(341504), -- Construct Ensemble: Stitched Rationale of Maldraxxus
+							r(341500, {["timeline"]={CREATED_9_0_2}}), -- Construct Ensemble: Stitched Alacrity of Maldraxxus
+							r(341498, {["timeline"]={CREATED_9_0_2}}), -- Construct Ensemble: Stitched Authority of Maldraxxus
+							r(341502, {["timeline"]={CREATED_9_0_2}}), -- Construct Ensemble: Stitched Guile of Maldraxxus
+							r(341504, {["timeline"]={CREATED_9_0_2}}), -- Construct Ensemble: Stitched Rationale of Maldraxxus
 							r(342803), -- Construct's Best Friend
 							r(337535), -- Dapper Top Hat
 							r(344095), -- Dundae's Hat
@@ -158,7 +158,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							r(342468), -- Happiness Bird
 							r(342902), -- Hitchhiker
 							r(338383), -- Holiday Hat
-							r(342895), -- Intellectuals Monocle
+							r(342895, {["timeline"]={CREATED_9_0_2}}), -- Intellectuals Monocle
 							r(331403), -- Lil' Eddie
 							r(344096), -- Lovely Candle Display
 							r(342851), -- Magician's Hat
@@ -167,7 +167,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 							r(337540), -- Outlaw Flag
 							r(344769), -- Pirate Hat
 							r(342850), -- Plague Pack
-							r(344765), -- Pumpkin Head
+							r(344765, {["timeline"]={CREATED_9_0_2}}), -- Pumpkin Head
 							r(342455), -- Red Eye Lens
 							r(327090), -- Restore Construct
 							r(342842), -- Safe Fall Pack
