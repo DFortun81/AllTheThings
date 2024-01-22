@@ -619,7 +619,8 @@ PrintQuestInfo = function(questID, new)
 			app:SetupReportDialog(popupID, "NYI Quest: " .. questID,
 				BuildDiscordQuestInfoTable(questID, "nyi-quest", questChange)
 			);
-			print(app:Linkify(text .. " [NYI] ATT " .. app.Version, app.Colors.ChatLinkError, "dialog:" .. popupID));
+			print("Quest", questChange, app:Linkify(text .. " [NYI] ATT " .. app.Version, app.Colors.ChatLinkError, "dialog:" .. popupID));
+			return
 		end
 
 		-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
@@ -632,7 +633,7 @@ PrintQuestInfo = function(questID, new)
 		end
 		print("Quest", questChange, text, GetQuestFrequency(questID) or "");
 	else
-		text = (QuestNameFromID[questID] or RETRIEVING_DATA) .. " (" .. questID .. ")";
+		text = (QuestNameFromID[questID] or UNKNOWN) .. " (" .. questID .. ")";
 
 		-- Play a sound when a reportable error is found, if any sound setting is enabled
 		app.Audio:PlayReportSound();
@@ -642,7 +643,7 @@ PrintQuestInfo = function(questID, new)
 		app:SetupReportDialog(popupID, "Missing Quest: " .. questID,
 			BuildDiscordQuestInfoTable(questID, "missing-quest", questChange)
 		);
-		print(app:Linkify(text .. " (Not in ATT " .. app.Version .. ")", app.Colors.ChatLinkError, "dialog:" .. popupID), GetQuestFrequency(questID) or "");
+		print("Quest", questChange, app:Linkify(text .. " (Not in ATT " .. app.Version .. ")", app.Colors.ChatLinkError, "dialog:" .. popupID), GetQuestFrequency(questID) or "");
 	end
 end
 app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
