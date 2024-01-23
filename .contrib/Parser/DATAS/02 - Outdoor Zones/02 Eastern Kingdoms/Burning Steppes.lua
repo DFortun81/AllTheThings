@@ -240,21 +240,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
 					["timeline"] = { "added 4.0.3.13277" },
-					["races"] = { DWARF, VOIDELF },
+					["races"] = { HUMAN, DWARF, VOIDELF, KULTIRAN, DARKIRON },
+					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Humans, Dwarfs, Void Elves, Kul Tirans, and Dark Iron Dwarfs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution for Human, Dwarf and Dark Iron Dwarf:\n2 Hides, 4 handfulls of Mud, and 2 spools of Thread.\n\nSolution for Void Elf:\n3 Hides, 2 handfulls of Mud, and 1 spool of Thread.\n\nSolution for Kul Tiran:\n4 Hides, 1 handfull of Mud, and 3 spools of Thread.\n\n",
 				}),
 				q(28203, {	-- A Perfect Costume
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
 					["timeline"] = { "added 4.0.1.12984" },
-					["races"] = { DRAENEI, WORGEN },	-- Lightforged Draenei too?
+					["races"] = { DRAENEI, WORGEN , PANDAREN_ALLIANCE, LIGHTFORGED, DRACTHYR_ALLIANCE},
+					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Draenei, Worgen, Tushui Pandaren, Lightforged Draenei, and Alliance Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 handfull of Mud\n3 spools of Thread",
 				}),
 				q(28204, {	-- A Perfect Costume
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28254,	-- A Needle in a Hellhole
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
 					["timeline"] = { "added 4.0.3.13277" },
-					["races"] = { GNOME },
+					["races"] = { GNOME, MECHAGNOME },
+					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Gnomes and Mechagnomes. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 handfulls of Mud\n4 spools of Thread",
 				}),
 				q(28205, {	-- A Perfect Costume
 					["qg"] = 48001,	-- Thelaron Direneedle
@@ -262,34 +268,44 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = { NIGHTELF },
+					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Night Elves. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 handfulls of Mud\n1 spool of Thread",
 				}),
 				q(28428, {	-- A Perfect Costume
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
 					["timeline"] = { "added 4.0.3.13329" },
-					["races"] = { ORC, UNDEAD },
+					["races"] = { ORC, UNDEAD, MAGHAR },
+					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Orcs, Undead, and Mag'har Orcs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n2 Hides\n4 handfulls of Mud\n2 spools of Thread",
 				}),
-				q(28429, {	-- A Perfect Costume (NEEDS CONFIRMATION ON HIGHMOUNTAIN TAUREN)
+				q(28429, {	-- A Perfect Costume
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
 					["timeline"] = { "added 4.0.3.13329" },
-					["races"] = { TAUREN, PANDAREN_HORDE, HIGHMOUNTAIN_TAUREN },	-- Highmountain Tauren is UNCONFIRMED
+					["races"] = { TAUREN, PANDAREN_HORDE, HIGHMOUNTAIN_TAUREN, DRACTHYR_HORDE },
+					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Tauren, Huojin Pandaren, Highmountain Tauren, and Horde Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 handfull of Mud\n3 spools of Thread",
 				}),
 				q(28430, {	-- A Perfect Costume
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
 					["timeline"] = { "added 4.0.3.13329" },
-					["races"] = { GOBLIN },
+					["races"] = { GOBLIN, VULPERA },
+					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Goblins and Vulperas. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 handfulls of Mud\n4 spools of Thread",
 				}),
 				q(28431, {	-- A Perfect Costume
 					["qg"] = 48001,	-- Thelaron Direneedle
 					["sourceQuest"] = 28427,	-- A Needle in a Hellhole
 					["coord"] = { 45.4, 46.3, BURNING_STEPPES },
 					["timeline"] = { "added 4.0.3.13277" },
-					["races"] = { TROLL, BLOODELF, NIGHTBORNE },
+					["races"] = { TROLL, BLOODELF, NIGHTBORNE, ZANDALARI },
+					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Trolls, Blood Elves, Nightborne Elves, and Zandalari Trolls. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 handfulls of Mud\n1 spool of Thread",
 				}),
 				q(28279, {	-- Abuse of Power
 					["qg"] = 48110,	-- Colonel Troteman
