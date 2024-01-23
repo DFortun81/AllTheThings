@@ -3488,7 +3488,6 @@ root(ROOTS.Unsorted, {
 			i(179300),	-- Muck-Hardened Marble
 			i(183934),	-- Muck-Stained Napkin
 			i(173899),	-- Mysterious Hooks
-			i(180653),	-- Mythic Keystone
 			i(177881),	-- Nadjia's Sinstone
 			i(178577),	-- Nalthor's Phylactery Instructions \\ Nalthor's Phlactory Instructions
 			i(178729),	-- Necromancy Focus

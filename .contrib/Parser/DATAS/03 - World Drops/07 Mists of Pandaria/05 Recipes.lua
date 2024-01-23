@@ -27,14 +27,13 @@ root(ROOTS.WorldDrops, {
 				}),
 				i(94847, {	-- Schematic: Chief Engineer Jard's Journal
 					["f"] = MISC,
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { ADDED_5_2_0, REMOVED_9_0_2_LAUNCH },
 					["_drop"] = { "g" },
-					["g"] = {
-						q(32630, {	-- Chief Engineer Jard's Journal
-							["u"] = REMOVED_FROM_GAME,
-							["_drop"] = { "g" },
-						}),
-					},
+				}),
+				q(32630, {	-- Chief Engineer Jard's Journal
+					["timeline"] = { ADDED_5_2_0, REMOVED_9_0_2_LAUNCH },
+					["provider"] = {"i",94847},	-- Schematic: Chief Engineer Jard's Journal
+					["_drop"] = { "g" },
 				}),
 			}),
 			prof(INSCRIPTION, {

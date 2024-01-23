@@ -644,6 +644,7 @@ i(178227);	-- Midnight Starpepper
 i(179283);	-- Millet Wafers
 i(179012);	-- Mirecrawler Goulash
 i(179274);	-- Mutton Drob
+i(180653);	-- Mythic Keystone
 i(179166);	-- Night Harvest Rolls
 i(176331);	-- Obscuring Essence Potion
 i(179025);	-- Odorous Rice

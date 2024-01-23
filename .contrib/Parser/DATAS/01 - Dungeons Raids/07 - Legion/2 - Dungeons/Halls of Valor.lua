@@ -8,18 +8,15 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["maps"] = { 703, 704, 705 },
 		["g"] = {
 			n(QUESTS, {
-				o(251991, {	-- The Aegis of Aggramar
+				q(43349, {	-- The Aegis of Aggramar
+					["sourceQuests"] = { 40072 },	-- Halls of Valor: Securing the Aegis
+					["provider"] = {"o",251991},	-- The Aegis of Aggramar
 					["modelScale"] = 3,
 					["g"] = {
-						q(43349, {	-- The Aegis of Aggramar
-							["sourceQuests"] = { 40072 },	-- Halls of Valor: Securing the Aegis
-							["g"] = {
-								i(130016),	-- Valor-Bound Legplates
-								i(129997),	-- Valor-Bound Legwraps
-								i(129989),	-- Valor-Bound Trousers
-								i(130005),	-- Valor-Bound Greaves
-							},
-						}),
+						i(130016),	-- Valor-Bound Legplates
+						i(129997),	-- Valor-Bound Legwraps
+						i(129989),	-- Valor-Bound Trousers
+						i(130005),	-- Valor-Bound Greaves
 					},
 				}),
 			}),

@@ -1071,7 +1071,26 @@ namespace ATT
             Validate_LocalizableData(data, "title");
             Validate_LocalizableData(data, "description");
             Validate_LocalizableData(data, "lore");
+
+            // raw 'type' field on a 'header' can denote required locale names
+            if (data.TryGetValue("headerID", out long headerID) && data.TryGetValue("type", out string type))
+            {
+                switch (type)
+                {
+                    case "i":
+                        Items.MarkItemAsReferenced(headerID);
+                        break;
+                    case "n":
+                        NPCS_WITH_REFERENCES[headerID] = true;
+                        MarkCustomHeaderAsRequired(headerID);
+                        break;
+                    case "o":
+                        OBJECTS_WITH_REFERENCES[headerID] = true;
+                        break;
+                }
+            }
         }
+
         private static void Validate_LocalizableData(IDictionary<string, object> data, string key)
         {
             if (data.TryGetValue(key, out string text) && text.StartsWith("~H:"))
@@ -1443,6 +1462,17 @@ namespace ATT
                 // merge the 'qgs' back into the data if anything was converted
                 if (quest_qgs.Count > 0)
                     Objects.Merge(data, "qgs", quest_qgs);
+            }
+
+            // Not quite able to have this as a normal warning yet, some situations are still quite uncertain
+            if (!data.ContainsKey("objectID") && !data.ContainsKey("itemID") && !data.ContainsKey("npcID"))
+            {
+                if (CurrentParentGroup.HasValue &&
+                    (CurrentParentGroup.Value.Key == "itemID" ||
+                    CurrentParentGroup.Value.Key == "objectID"))
+                {
+                    LogDebugWarn($"Raw Quest {questID} should not be listed inside of an Item/Object group.", data);
+                }
             }
         }
 

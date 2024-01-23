@@ -1127,13 +1127,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 68.5, 64.5, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
 					}),
-					q(35338, {	-- Shooting the Breeze
+					q(35338, {	-- Shooting the Breeze (A)
 						["provider"] = { "n", 82094 },	-- Rangari Laara
 						["coord"] = { 63.4, 61.4, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34769,	-- A Choice to Make
 					}),
-					q(35376, {	-- Shooting the Breeze
+					q(35376, {	-- Shooting the Breeze (H)
 						["provider"] = { "n", 82080 },	-- Stalker Ogka
 						["coord"] = { 82.5, 43.9, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
@@ -1169,15 +1169,9 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 35096,	-- Terms of Surrender
 					}),
-					i(113107, {	-- Rangari Arrow
-						["crs"] = { 78278 },	-- Breezestrider Talbuk
+					q(35356, {	-- Someone's Missing Arrow
 						["races"] = ALLIANCE_ONLY,
-						["description"] = "Drops while doing |cFFFFD700Shooting the Breeze|r.",
-						["g"] = {
-							q(35356, {	-- Someone's Missing Arrow
-								["races"] = ALLIANCE_ONLY,
-							}),
-						},
+						["provider"] = {"i",113107},	-- Rangari Arrow
 					}),
 					q(35377, {	-- Someone's Missing Axe
 						["races"] = HORDE_ONLY,
@@ -1662,12 +1656,6 @@ root(ROOTS.Zones, {
 					q(36273, {	-- Whacking Weeds
 						["provider"] = { "n", 84632 },	-- Marybelle Walsh
 						["coord"] = { 77.4, 47.3, DRAENOR_NAGRAND },
-					}),
-					i(113109, {	-- Frostwolf Axe
-						["crs"] = { 78278 },	-- Breezestrider Talbuk
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35376,	-- Shooting the Breeze
-						["description"] = "Drops while doing |cFFFFD700Shooting the Breeze|r.",
 					}),
 					n(BONUS_OBJECTIVES, {
 						-- TODO: Check SQ
@@ -2564,6 +2552,18 @@ root(ROOTS.Zones, {
 							i(44694),	-- Antiseptic-Soaked Dressing
 							i(44693),	-- Wound Dressing
 						},
+					}),
+				}),
+				n(ZONE_DROPS, {
+					i(113109, {	-- Frostwolf Axe
+						["crs"] = { 78278 },	-- Breezestrider Talbuk
+						["sourceQuest"] = 35376,	-- Shooting the Breeze (H)
+						["description"] = "Drops while doing |cFFFFD700Shooting the Breeze|r.",
+					}),
+					i(113107, {	-- Rangari Arrow
+						["crs"] = { 78278 },	-- Breezestrider Talbuk
+						["sourceQuest"] = 35338,	-- Shooting the Breeze (A)
+						["description"] = "Drops while doing |cFFFFD700Shooting the Breeze|r.",
 					}),
 				}),
 			},

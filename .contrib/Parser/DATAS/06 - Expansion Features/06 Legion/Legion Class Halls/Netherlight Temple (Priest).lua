@@ -8,15 +8,13 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 			["maps"] = { NETHERLIGHT_TEMPLE },
 			["g"] = {
 				n(ARTIFACTS, {
-					i(141332, {	-- The Annals of Light and Shadow
+					header(HEADERS.Item, 141332, {	-- The Annals of Light and Shadow
 						["description"] = "Obtain 12 of these books to complete the set and receive the Discipline Priest Hidden Artifact Appearance.\n\nStart with Volume VI and Archivist Inkforge in your Order Hall.",
-						["g"] = {
-							q(44342, {	-- Volume VI
-								["name"] = "|cFFFFFFFFVolume VI|r | Archivist Inkforge in the class order hall.",
-								["description"] = "You must get this volume first in order to collect the others.  Talk to Archivist Inkforge. Always choose the middle answer (passive curious, not judging) and he will give you the first volume.",
-								["provider"] = { "n", 111119 },	-- Archivist Inkforge
-								["coord"] = { 62.5, 36.3, NETHERLIGHT_TEMPLE },
-							}),
+						["g"] = sharedData({
+							["groups"] = {
+								i(141332),	-- The Annals of Light and Shadow
+							},
+						},{
 							q(44339, {	-- Volume I
 								["name"] = "|cFFFFFFFFVolume I|r | The Violet Citadel in new Dalaran.",
 								["description"] = "Khadgar is located in the Violet Citadel in new Dalaran. On the left side, there is an NPC named Archivist Elysiana. Volume 1 is on the right-hand bookshelf behind her.\n\nWorld Spawn - might be on cooldown!",
@@ -52,6 +50,12 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 									{ 69.0, 72.9, WESTERN_PLAGUELANDS },	-- Scholomance entrance
 									{ 58.8, 84.0, SCHOLOMANCE },	--	Actual volume inside the dungeon
 								},
+							}),
+							q(44342, {	-- Volume VI
+								["name"] = "|cFFFFFFFFVolume VI|r | Archivist Inkforge in the class order hall.",
+								["description"] = "You must get this volume first in order to collect the others.  Talk to Archivist Inkforge. Always choose the middle answer (passive curious, not judging) and he will give you the first volume.",
+								["provider"] = { "n", 111119 },	-- Archivist Inkforge
+								["coord"] = { 62.5, 36.3, NETHERLIGHT_TEMPLE },
 							}),
 							q(44345, {	-- Volume VII
 								["name"] = "|cFFFFFFFFVolume VII|r | The Flameweaver's library in Scarlet Halls.",
@@ -99,13 +103,14 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 								["coord"] = { 65.6, 56.8, AZSUNA },
 							}),
 							i(139567, {	-- Writings of the End
-								["description"] = "Once you have obtained all 12 volumes, return to Archivist Inkforge in the class order hall and give them to him and he will give you this item. Turn on \"Show Incomplete Quests\" to track your progress.",
+								["description"] = "Once you have obtained all 12 volumes, return to Archivist Inkforge in the class order hall and give them to him and he will give you this item.",
 								["coord"] = { 62.5, 36.3, NETHERLIGHT_TEMPLE },
-								["g"] = {
+								["cost"] = {{"i",141332,12}},	-- The Annals of Light and Shadow
+								["groups"] = {
 									artifact(738),	-- Discipline Priest Hidden Artifact Skin
 								},
 							}),
-						},
+						}),
 					}),
 				}),
 				n(FOLLOWERS, bubbleDownSelf({

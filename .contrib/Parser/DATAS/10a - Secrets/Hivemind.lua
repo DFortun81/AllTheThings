@@ -233,6 +233,7 @@ root(ROOTS.Secrets, {
 						["icon"] = "Interface\\Icons\\inv_helmet_44",
 						["name"] = "Yellow Crystal Monocle",
 						["description"] = "Go to |cFFFFD700Halls of Origination|r in |cFFFFD700Uldum|r. After the first boss in Halls of Origination, there is a large room with an elevator. While wearing the |cFFFFD700Talisman of True Treasure Tracking|r, you can click a Stellar Refraction Device that spawns colorful constellations in the room below the elevator.\n\nTo access the puzzle, head north from the elevator and there will be an open way with a staircase to the floor below.\n\nYour objective here is to transform all constellations to the same color. To do this, there are three special refractors that change their colors when clicked on.\n\n|cFFFFD700The Hivemind HoO Puzzle Helper|r addon is recommended to complete this step, as it simply requires you to input the current colors of the constellations, then gives you directions on how to click the refractors to solve it.\n\nWhen all constellations have the same color, a chest will spawn on top of the Stellar Refraction Device containing the |cFFFFFFFFYellow Crystal Monocle|r.\n\n|cFFCC33FFBe careful to not accidentally click the Refraction Device when looting the monocle, as this will restart the puzzle and despawn the chest|r.\n",
+						["provider"] = { "i", 27944 },	-- Talisman of True Treasure Tracking
 						["g"] = {
 							o(280886, {	-- Star-Touched Chest
 								["questID"] = 50183,
@@ -250,18 +251,22 @@ root(ROOTS.Secrets, {
 					n(132595, {	-- Rikei
 						["description"] = "Red Monocle",
 						["coord"] = { 71.8, 62.5, SURAMAR },
+						["provider"] = { "i", 156725 },	-- Red Crystal Monocle
 					}),
 					n(132596, {	-- Blom'an
 						["description"] = "Blue Monocle",
 						["coord"] = { 71.8, 62.5, SURAMAR },
+						["provider"] = { "i", 156724 },	-- Blue Crystal Monocle
 					}),
 					n(132597, {	-- Giluzui
 						["description"] = "Green Monocle",
 						["coord"] = { 71.8, 62.5, SURAMAR },
+						["provider"] = { "i", 156727 },	-- Green Crystal Monocle
 					}),
 					n(132598, {	-- Yorilan
 						["description"] = "Yellow Monocle",
 						["coord"] = { 71.8, 62.5, SURAMAR },
+						["provider"] = { "i", 156726 },	-- Yellow Crystal Monocle
 					}),
 					o(280903, { -- Lost Cat Toy
 						["description"] = "The person in Dalaran have to pick up this Toy and will take random damage while doing so. It's important that this TOTAL(Damage+Absorbs+Overkill) damage is recorded.",

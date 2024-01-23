@@ -237,19 +237,19 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 60042 },	-- Korga Strongmane
 						["sourceQuests"] = { 29792 },	-- Bidden to Greatness
 					}),
-					o(209673, {	-- Jade Tiger Pillar
-						q(29782, {	-- Stronger Than Bone
-							["sourceQuests"] = { 29778 },	-- Rewritten Wisdoms
-							["g"] = {
-								i(157020, {	-- Humble Cudgel
-									["timeline"] = { "added 7.0.3.22248" },
-								}),
-								i(74588),	-- Jade Crossbow
-								i(74590),	-- Jade Hilted Dagger
-								i(74589),	-- Jade Hilted Sword
-								i(74587),	-- Jade Shield
-							},
-						}),
+					q(29782, {	-- Stronger Than Bone
+						["sourceQuests"] = { 29778 },	-- Rewritten Wisdoms
+						["provider"] = { "o", 209673 },	-- Jade Tiger Pillar
+						["coord"] = { 26.5, 33.8, THE_WANDERING_ISLE },
+						["g"] = {
+							i(157020, {	-- Humble Cudgel
+								["timeline"] = { "added 7.0.3.22248" },
+							}),
+							i(74588),	-- Jade Crossbow
+							i(74590),	-- Jade Hilted Dagger
+							i(74589),	-- Jade Hilted Sword
+							i(74587),	-- Jade Shield
+						},
 					}),
 					q(29662, {	-- Stronger Than Reeds
 						["provider"] = { "n", 55585 },	-- Jojo Ironbrow
