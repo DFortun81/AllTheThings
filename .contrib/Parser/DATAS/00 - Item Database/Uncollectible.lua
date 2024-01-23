@@ -891,6 +891,7 @@ i(181713);	-- Scorched Letter
 i(183915);	-- Scrap of Streamer
 i(180884);	-- Scroll of Foul Rites
 i(178130);	-- Shapeable Muck \\ Bones and Twig
+i(174104);	-- Shattered Memento
 i(179003);	-- Shattered Quartz Eyes
 i(180504);	-- Shimmerbough Recorder
 i(183056);	-- Shriekwing by Krentis

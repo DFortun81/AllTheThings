@@ -3758,7 +3758,6 @@ root(ROOTS.Unsorted, {
 			i(174375),	-- Shard of the Countess
 			i(174359),	-- Shard of the Countess
 			i(178495),	-- Shattered Helm of Domination \\ Shard of Domination
-			i(174104),	-- Shattered Memento
 			i(178044),	-- Shifting Cryptogram
 			i(180796),	-- Shimmerflight Quill
 			i(183836),	-- Shimmersilt
