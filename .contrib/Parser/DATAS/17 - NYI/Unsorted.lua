@@ -2560,7 +2560,6 @@ root(ROOTS.Unsorted, {
 	}),
 	tier(SL_TIER, {
 		tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
-			i(172915),	-- 50UL-TR4P \\ 50UL-7RAP \\ 50UL-Trap \\ SL-00X Soul Shackler [NYI]
 			i(175768),	-- 9.0 QRP - Ardenweald - Cloak
 			i(177814),	-- 9.0 Zone Uncommon - Revendreth - Accessory - Trinket
 			i(173120),	-- 9.x Cut Rare
@@ -2570,15 +2569,9 @@ root(ROOTS.Unsorted, {
 			i(173111),	-- 9.x Raw Rare
 			i(173116),	-- 9.x Raw Red
 			i(173115),	-- 9.x Raw Yellow
-			i(172909),	-- [DNT] [REUSE ME] \\ Disposable Ectoplasmic Specs
-			i(172942),	-- [DNT] [REUSE ME] \\ Faerie Glider Kit
-			i(172943),	-- [DNT] [REUSE ME] \\ Kyrian Glider Kit
 			i(172911),	-- [DNT] [REUSE ME] \\ M.O.T.E. Collector
-			i(172944),	-- [DNT] [REUSE ME] \\ Maldraxxian Glider Kit
 			i(176448),	-- [DNT] [REUSE ME] \\ Soul Battery
 			i(172916),	-- [DNT] [REUSE ME] \\ Soul Extractomatic [NYI]
-			i(172945),	-- [DNT] [REUSE ME] \\ Stoneborn Glider Kit
-			i(172913),	-- [DNT] [REUSE ME] \\ Torghast Reconfiguration Rig [NYI]
 			i(176616),	-- [DNT] [REUSE ME] \\ Unbound Soul
 			i(173063),	-- [DNT] REUSE ME \\ [DNT] REUSE ME [MTMM]
 			i(173064),	-- [DNT] REUSE ME \\ [DNT] REUSE ME [MTMM]
@@ -2672,7 +2665,6 @@ root(ROOTS.Unsorted, {
 			i(174058),	-- Anima Reserve
 			i(177839),	-- Anima Siphon
 			i(175413),	-- Anima Vial
-			i(178594),	-- Anima-bound Wraps
 			i(174934),	-- Anima-charged Maldracite
 			i(183041),	-- Anima-Infused Silk \\ Anima Infused Silk
 			i(175972),	-- Anima-Infused Venom \\ Anima Infused Venom
@@ -2750,7 +2742,6 @@ root(ROOTS.Unsorted, {
 			i(175135),	-- Atticus's Spare Supplies
 			i(174998),	-- Avowed Crypt Key \\ Atonement Crypt Keys
 			i(175050),	-- Bag o' Conduits
-			i(178568),	-- Bag of Creepy Crawlies
 			i(173013),	-- Bag of Faerie Dust
 			i(180439),	-- Bagged Frog
 			i(178493),	-- Baine Bloodhoof
@@ -2768,9 +2759,6 @@ root(ROOTS.Unsorted, {
 			i(181162),	-- Beacon Trigger
 			i(173023),	-- Bear Witness: The Watcher's Code
 			i(174674),	-- Bell of Remembrance
-			i(172919),	-- Belt Modification: Damage Retaliator
-			i(172917),	-- Belt Modification: Dimensional Shifter
-			i(172918),	-- Belt Modification: Electro-Jump
 			i(178463),	-- Bestial Epigraph
 			i(175795),	-- Betrayer's Eye
 			i(182645),	-- Binding of the Banished One
@@ -2809,11 +2797,8 @@ root(ROOTS.Unsorted, {
 			i(182116),	-- Bolt of Bleakcloth \\ Almost Thing
 			i(182051),	-- Bolt of Prideweave \\ Almost Thing
 			i(182102),	-- Bolt of Woven Gossamer
-			i(172902),	-- Bomb Bola Launcher \\ Bouncing Boomer
-			i(182038),	-- Bone Reinforced Oxxein Tubing \\ Almost Thing
 			i(174749),	-- Bone Splinter
 			i(173700),	-- Bonebinder Zal's Key
-			i(181952),	-- Boneclad Stake Launcher \\ Maldraxxus Engineering Item
 			i(179317),	-- Bonemetal
 			i(182049),	-- Bones of Defeated Enemies
 			i(173380),	-- Book of the Unspeakable
@@ -2831,7 +2816,6 @@ root(ROOTS.Unsorted, {
 			i(182956),	-- Broker Hunting Rune \\ Genesis Rune
 			i(174497),	-- Brushberry
 			i(182047),	-- Brutal Oil
-			i(181385),	-- Bug Zapifier \\ Ardenweald Engineering Item \\ Engineering Item \\ Dart Launcher
 			i(180031),	-- Bulbous Seaweed Stalk
 			i(174467),	-- Bulging Digestive Sac
 			i(182779),	-- Bundle of "Modified" Reagents
@@ -2898,7 +2882,6 @@ root(ROOTS.Unsorted, {
 			i(182311),	-- Confiscated Stage Lights
 			i(182312),	-- Confiscated Stage Props
 			i(175036),	-- Conservation
-			i(180275),	-- Construct Disguise
 			i(174233),	-- Construct Field Plan
 			i(175757),	-- Construct Supply Key
 			i(175045),	-- Continuing Stampede
@@ -3010,7 +2993,6 @@ root(ROOTS.Unsorted, {
 			i(181754),	-- Droman Aliothe Very Happy PH Reward
 			i(174864),	-- Droman's Hunting Horn
 			i(180423),	-- Duchess Helveera
-			i(181953),	-- Duelist's Pistol \\ Revendreth Engineering Item
 			i(176878),	-- Dulled Memento
 			i(174923),	-- Duskmire Elixir
 			i(173286),	-- Duskmire Mushroom
@@ -3024,7 +3006,6 @@ root(ROOTS.Unsorted, {
 			i(173086),	-- Eight of Repose \\ Eight of the Rebirth
 			i(173104),	-- Eight of the Indomitable \\ Eight of Ascendance
 			i(173095),	-- Eight of Voracity \\ Eight of Atonement
-			i(181992),	-- Electro Cable \\ Almost Thing
 			i(179377),	-- Elegant Diary Key
 			i(170480),	-- Elevator Key: Level 10
 			i(170481),	-- Elevator Key: Level 15
@@ -3060,7 +3041,6 @@ root(ROOTS.Unsorted, {
 			i(172444),	-- Enchanting Reagent 08
 			i(181496),	-- Endmire Blossom
 			i(182314),	-- Endmire Vineroot
-			i(181993),	-- Energized Battery \\ Kinda Thing
 			i(172938),	-- Engineering Reagent 05
 			i(172939),	-- Engineering Reagent 06
 			i(172940),	-- Engineering Reagent 07
@@ -3228,7 +3208,6 @@ root(ROOTS.Unsorted, {
 			i(173704),	-- Granary Jug
 			i(180451),	-- Grand Inquisitor's Sinstone Fragment
 			i(182046),	-- Grave Dust
-			i(172914),	-- Gravimetric Scrambler Cannon \\ Portable Micro-Maw Cannon \\ Portable Micro-Maw \\ Deployable Black Hole Generator
 			i(182023),	-- Grazer Bone Broth
 			i(182024),	-- Grazer Bones
 			i(182644),	-- Greater Wards and Barriers, Volume IV
@@ -3251,10 +3230,7 @@ root(ROOTS.Unsorted, {
 			i(182112),	-- Handcrafted Mirror Repair Kit \\ Hand Crafted Mirror Repair Kit
 			i(169819),	-- Handful of Blood Shards \\ Rotted Quilboar Fetish
 			i(182289),	-- Handful of Glimmering Gemstones
-			i(172934),	-- Handful of Laestrite Bolts
-			i(182039),	-- Handful of Oxxein Bolts \\ Kinda Thing
 			i(180088),	-- Handwritten Note
-			i(182017),	-- Hardened Bolts \\ Kinda Thing
 			i(172455),	-- Hardened Fel Shards
 			i(176852),	-- Hardened Tail Bone
 			i(178138),	-- Harp Piece
@@ -3288,7 +3264,6 @@ root(ROOTS.Unsorted, {
 			i(181970),	-- Horrific Leather Hide \\ Revendreth Skinning Item
 			i(180497),	-- House Iremoore Disguise \\ House Redelav Disguise
 			i(179921),	-- Hydra Gutter
-			i(172928),	-- Hydrodynamic Accelerators \\ Engineering - Modified Crafting Reagent 03
 			i(175979),	-- Ice Mote
 			i(180888),	-- Illegible Journal
 			i(177569),	-- Illidari Blindfold
@@ -3370,7 +3345,6 @@ root(ROOTS.Unsorted, {
 			i(177535),	-- Lightdrinker Jerkin
 			i(177540),	-- Lightdrinker Shoulders
 			i(181718),	-- Ligneous Phaedrum Ore \\ Luminous Phaedrum Ore
-			i(180267),	-- Lil' Eddie
 			i(175025),	-- Lingering Moonfire
 			i(181983),	-- Liquid Sleep
 			i(176084),	-- List of Demands
@@ -3395,10 +3369,6 @@ root(ROOTS.Unsorted, {
 			i(182641),	-- Lustrous Silver Key
 			i(179862),	-- Luxurious Feather
 			i(178655),	-- Lye's Ritual Drafts
-			i(182040),	-- Machined Oxxein Bar \\ Base Thing
-			i(181994),	-- Machined Phaedrum Bar \\ Base Thing
-			i(182064),	-- Machined Sinvyr Bar \\ Base Thing
-			i(182018),	-- Machined Solenium Bar \\ Base Thing
 			i(183952),	-- Machinist's Oil
 			i(172205),	-- Maldracite Crystal
 			i(178684),	-- Maldracite Dust
@@ -3472,12 +3442,10 @@ root(ROOTS.Unsorted, {
 			i(177493),	-- Mistdancer Shoulders
 			i(177481),	-- Mistdancer Vest
 			i(172037),	-- Mister Mikanikos \\ Kala's Stuffed Steward
-			i(172912),	-- Momentum Redistributor Boots \\ Short-range Teleportation Unit
 			i(181719),	-- Monolithic Oxxein Ore \\ Luminous Oxxein Ore
 			i(178551),	-- Monstrous Bloodtusk Haggis
 			i(173941),	-- Monstrous Skull
 			i(180850),	-- Morbid Boneguard's Head
-			i(172936),	-- Mortal Coiled Spring
 			i(174378),	-- Mortegore Scroll
 			i(173716),	-- Mossy Hearthstone
 			i(183725),	-- Moth Net
@@ -3491,7 +3459,6 @@ root(ROOTS.Unsorted, {
 			i(177881),	-- Nadjia's Sinstone
 			i(178577),	-- Nalthor's Phylactery Instructions \\ Nalthor's Phlactory Instructions
 			i(178729),	-- Necromancy Focus
-			i(172926),	-- Necrostatic Micro Capacitor \\ Solxein Alloy
 			i(171146),	-- Necrotic Deathward
 			i(170552),	-- Necrotic Fetish
 			i(182037),	-- Necrotic Pigment \\ Base Thing
@@ -3509,7 +3476,6 @@ root(ROOTS.Unsorted, {
 			i(171969),	-- Nondescript Robe
 			i(183795),	-- Notice of Special Delivery
 			i(182958),	-- Nox Root
-			i(172903),	-- Nutcracker Grenade \\ Holy Hand Grenade of Ardenweald
 			i(182101),	-- Oat Pie Crust
 			i(177614),	-- Oathsworn Breastplate
 			i(177622),	-- Oathsworn Chestguard
@@ -3522,7 +3488,6 @@ root(ROOTS.Unsorted, {
 			i(174947),	-- Old Grimoire
 			i(175980),	-- Old Spring
 			i(177039),	-- Olive-Stuffed Barbouni
-			i(172920),	-- Optical Target Embiggener
 			i(178787),	-- Orboreal Shard \\ zzOldAcrid Coriander \\ Acrid Coriander
 			i(174278),	-- Orders from the Tithelord \\ Orders from the Grand Steward
 			i(177162),	-- Ordinary Basket
@@ -3569,7 +3534,6 @@ root(ROOTS.Unsorted, {
 			i(180025),	-- Pile of Blubberfat
 			i(179304),	-- Pile of Muck
 			i(183791),	-- Pilfered Materials
-			i(182016),	-- Piston Assembly \\ Almost Thing
 			i(171368),	-- Pitch-Perfect Alloy
 			i(183788),	-- Placeholder Twisting Corridors Cosmetic
 			i(178758),	-- Plague Experimenter's Gloves
@@ -3588,7 +3552,6 @@ root(ROOTS.Unsorted, {
 			i(179004),	-- Polished Silver Tithe \\ Hand-Worn Silver Tithe
 			i(182058),	-- Polished Sinvyr Bar \\ Base Thing
 			i(173952),	-- Pomagrave
-			i(172935),	-- Porous Polishing Abrasive
 			i(173896),	-- Portable Spy Kit
 			i(171351),	-- Potion of Deathly Fixation
 			i(171350),	-- Potion of Divine Awakening
@@ -3610,7 +3573,6 @@ root(ROOTS.Unsorted, {
 			i(183823),	-- Potion of Unhindered Passing
 			i(173355),	-- Pouch of Puffpetal Powder
 			i(181984),	-- Powdered Dreamroot
-			i(181951),	-- Power Hammer \\ Bastion Engineering Item
 			i(183724),	-- Poxedskin Sample
 			i(180887),	-- Preserved Organ
 			i(182061),	-- Prideful Pigment \\ Base Thing
@@ -3654,7 +3616,6 @@ root(ROOTS.Unsorted, {
 			i(178144),	-- Raw Silkstrider Silk
 			i(180231),	-- Razor Hill Report
 			i(174534),	-- Razorthread Spool
-			i(172922),	-- Re-Calibrated Proton Blaster
 			i(178051),	-- Re-Sizer v9.0.1
 			i(170557),	-- Re-Sizer v9.0.1
 			i(175051),	-- Reactive Regrowth
@@ -3747,7 +3708,6 @@ root(ROOTS.Unsorted, {
 			i(179308),	-- Shadeskin Brandy Phial
 			i(180457),	-- Shadestone
 			i(183187),	-- Shadeweaver Incantation
-			i(172904),	-- Shadow Land Mine
 			i(171285),	-- Shadowcore Oil
 			i(176928),	-- Shadowlands Skinning Knife
 			i(179919),	-- Shadowy Rabbit's Foot
@@ -3785,8 +3745,6 @@ root(ROOTS.Unsorted, {
 			i(180283),	-- Sinstone Fragment \\ Sinstone Fragment 4
 			i(180284),	-- Sinstone Fragment \\ Sinstone Fragment 5
 			i(173733),	-- Sinstone Records
-			i(182062),	-- Sinvyr Barrel \\ Almost Thing
-			i(182063),	-- Sinvyr Trigger Mechanism \\ Kinda Thing
 			i(173075),	-- Six of Putrescence \\ Six of Putresence \\ Six of the Macabre
 			i(173084),	-- Six of Repose \\ Six of the Rebirth
 			i(173102),	-- Six of the Indomitable \\ Six of Ascendance
@@ -4006,7 +3964,6 @@ root(ROOTS.Unsorted, {
 			i(176398),	-- Torgok's Reagent Pouch
 			i(173872),	-- Torn Journal Page
 			i(183698),	-- Torturer's Key
-			i(183599),	-- Tossable Head
 			i(177468),	-- Trailseeker Helm
 			i(177470),	-- Trailseeker Spaulders
 			i(177465),	-- Trailseeker Vest
@@ -4116,7 +4073,6 @@ root(ROOTS.Unsorted, {
 			i(181246),	-- Withered Leaf
 			i(174916),	-- Withering Hemlock
 			i(173024),	-- Worlds Beyond Counting
-			i(172937),	-- Wormfed Gear Assembly
 			i(172458),	-- Worn Legion Chit
 			i(180804),	-- Worn Obleron Etching
 			i(179979),	-- Worn Sinstone
@@ -4182,21 +4138,17 @@ root(ROOTS.Unsorted, {
 		})),
 		tier(SL_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
 			i(178659),	-- Abominable Backup
-			i(180264),	-- Abominable Backup
 			i(184227),	-- Angelic Feather
 			i(175841),	-- Ani-Matter Orb
 			i(181739),	-- Bag of Soul Ash
-			i(182160),	-- Bag of Twigin Treats
 			i(184482),	-- Blueprint: Phial of Serenity
 			i(184484),	-- Blueprint: Ring of Warding
 			i(184483),	-- Blueprint: Vial of Lichfrost
 			i(175013),	-- Bug Dissolver
 			i(184575),	-- Byron Test Happy Fun Rock
-			i(183811),	-- Construct's Best Friend
 			i(181824),	-- Corrosive Bile
 			i(184402),	-- Culexwood Pan Flute
 			i(177905),	-- Deathstone
-			i(184308),	-- Disposable Spectrophasic Reanimator
 			i(184403),	-- Dreamlure Candle
 			i(176396),	-- Dredhollow Tools
 			i(184283),	-- Dusk No. 1
@@ -4234,7 +4186,6 @@ root(ROOTS.Unsorted, {
 			i(184102),	-- Possessed Mask
 			i(178016),	-- Potential Catalyst
 			i(184662),	-- Requisitioned Anima Cell
-			i(178658),	-- Restore Construct
 			i(180053),	-- Right Gem Eye
 			i(180219),	-- Romance Novel
 			i(180228),	-- Self-Help Book
@@ -4256,7 +4207,6 @@ root(ROOTS.Unsorted, {
 			i(183807),	-- Stygic Coercion
 			i(183787),	-- Stygic Dampener
 			i(178585),	-- The Forgotten Key
-			i(184606),	-- Tighter Stitching
 			i(184611),	-- Tormentor's Notes
 			i(180229),	-- Tubbins's Autobiography
 			i(181490),	-- Wild Godrune \\ Wild Godstone

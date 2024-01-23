@@ -3,6 +3,13 @@
 ---------------------------------------------
 local CURRENT_EXPAC_INK_ITEMID = 173058;	-- Umbral Ink
 root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	i(173381),	-- Crafter's Mark I
+	i(173382),	-- Crafter's Mark II
+	i(173383, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark III
+	i(187741, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark IV
+	i(173384, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark of the Chained Isle
+	i(187742, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark of the First Ones
+	i(183942),	-- Novice Crafter's Mark
 	prof(ALCHEMY, {
 		n(HEAD, {
 			i(180751),	-- Red Noggin Candle
@@ -13,11 +20,6 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 			}),
 		}),
 		filter(MISC, {
-			i(173382),	-- Crafter's Mark II
-			i(173383),	-- Crafter's Mark III
-			i(187741),	-- Crafter's Mark IV
-			i(173384),	-- Crafter's Mark of the Chained Isle
-			i(187742),	-- Crafter's Mark of the First Ones
 			i(187827),	-- Infusion: Corpse Purification
 			i(187850),	-- Sustaining Armor Polish
 			i(186697),	-- Blossom Burst
@@ -97,14 +99,7 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 			i(171448),	-- Shadowsteel Waistguard
 		}),
 		filter(MISC, {
-			i(173381),	-- Crafter's Mark I
-			i(173382),	-- Crafter's Mark II
-			i(173383, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark III
-			i(187741, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark IV
-			i(173384, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark of the Chained Isle
-			i(187742, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark of the First Ones
 			i(171441),	-- Laestrite Skeleton Key
-			i(183942),	-- Novice Crafter's Mark
 			i(171436),	-- Porous Sharpening Stone
 			i(171438),	-- Porous Weightstone
 			i(171437),	-- Shaded Sharpening Stone
@@ -164,10 +159,7 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 		}),
 		filter(MISC, {
 			i(187825, {["timeline"] = {ADDED_9_2_0}}),	-- Cosmic Protoweave
-			i(173381),	-- Crafter's Mark I
-			i(173382),	-- Crafter's Mark II
 			i(187823, {["timeline"] = {ADDED_9_2_0}}),	-- Magically Regulated Automa Core
-			i(183942),	-- Novice Crafter's Mark
 		}),
 		filter(REAGENTS, {
 			i(172437),	-- Enchanted Elethium Bar
@@ -189,40 +181,44 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 		}),
 	}),
 	prof(ENGINEERING, {
+		filter(MISC, {
+
+		}),
+		n(ARMOR, {
+			i(172907),	-- Articulated Ectoplasmic Specs
+			i(172905),	-- Flexible Ectoplasmic Specs
+			i(172906),	-- Grounded Ectoplasmic Specs
+			i(172908),	-- Reinforced Ectoplasmic Specs
+		}),
 		filter(BATTLE_PETS, {
 			i(180208),	-- PHA7-YNX (PET!)
 		}),
-		filter(CONSUMABLES, {
+		filter(MISC, {
+			i(172915),	-- 50UL-TR4P
+			i(172902),	-- Bomb Bola Launcher
+			i(184308),	-- Disposable Spectrophasic Reanimator
+			i(187836, {["timeline"] = {ADDED_9_2_0}}),	-- Erratic Genesis Matrix
+			i(172914),	-- Gravimetric Scrambler Cannon
+			i(172934),	-- Handful of Laestrite Bolts
 			i(172921),	-- Infra-green Reflex Sight
-		}),
-		n(HEAD, {
-			filter(CLOTH, {
-				i(172905),	-- Flexible Ectoplasmic Specs
-			}),
-			filter(LEATHER, {
-				i(172906),	-- Grounded Ectoplasmic Specs
-			}),
-			filter(MAIL, {
-				i(172907),	-- Articulated Ectoplasmic Specs
-			}),
-			filter(PLATE, {
-				i(172908),	-- Reinforced Ectoplasmic Specs
-			}),
-		}),
-		filter(GUNS, {
-			i(172923)	-- Precision Lifeforce Inverter
+			i(172912),	-- Momentum Redistributor Boots
+			i(172936),	-- Mortal Coiled Spring
+			i(172903),	-- Nutcracker Grenade
+			i(172920),	-- Optical Target Embiggener
+			i(172935),	-- Porous Polishing Abrasive
+			i(187831, {["timeline"] = {ADDED_9_2_0}}),	-- Pure-Air Sail Extensions
+			i(172904),	-- Shadow Land Mine
+			i(172937),	-- Wormfed Gear Assembly
+			--- NYI---
+			i(172919),	-- Belt Modification: Damage Retaliator
+			i(172917),	-- Belt Modification: Dimensional Shifter
+			i(172918),	-- Belt Modification: Electro-Jump
 		}),
 		filter(TOYS, {
 			i(172924)	-- Wormhole Generator: Shadowlands (TOY!)
 		}),
-		filter(MISC, {
-			i(173382),	-- Crafter's Mark II
-			i(173383),	-- Crafter's Mark III
-			i(187741),	-- Crafter's Mark IV
-			i(173384),	-- Crafter's Mark of the Chained Isle
-			i(187742),	-- Crafter's Mark of the First Ones
-			i(187836),	-- Erratic Genesis Matrix
-			i(187831),	-- Pure-Air Sail Extensions
+		n(WEAPONS, {
+			i(172923)	-- Precision Lifeforce Inverter
 		}),
 	}),
 	prof(HERBALISM, {
@@ -396,8 +392,6 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 		i(185960),		-- Vestige of Origins
 		filter(MISC, {
 			i(187829),	-- Aealic Harmonizing Stone
-			i(187741),	-- Crafter's Mark IV
-			i(187742),	-- Crafter's Mark of the First Ones
 			i(187849),	-- Devourer Essence Stone
 			i(187784),	-- Vestige of the Eternal
 		}),
@@ -541,16 +535,9 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 		}),
 		filter(MISC, {
 			i(168419),	-- Comfortable Rider's Barding
-			i(173381),	-- Crafter's Mark I
-			i(173382),	-- Crafter's Mark II
-			i(173383, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark III
-			i(187741, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark IV
-			i(173384, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark of the Chained Isle
-			i(187742, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark of the First Ones
 			i(172346),	-- Desolate Armor Kit
 			i(172233),	-- Drums of Deathly Ferocity
 			i(172347),	-- Heavy Desolate Armor Kit
-			i(183942),	-- Novice Crafter's Mark
 			i(185960, {["timeline"] = {ADDED_9_1_0}}),	-- Vestige of Origins
 			i(187784, {["timeline"] = {ADDED_9_2_0}}),	-- Vestige of the Eternal
 		}),
@@ -641,11 +628,6 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 		i(185960),		-- Vestige of Origins
 		i(184479),		-- Shrouded Cloth Bag
 		filter(MISC, {
-			i(173382),	-- Crafter's Mark II
-			i(173383),	-- Crafter's Mark III
-			i(187741),	-- Crafter's Mark IV
-			i(173384),	-- Crafter's Mark of the Chained Isle
-			i(187742),	-- Crafter's Mark of the First Ones
 			i(187784),	-- Vestige of the Eternal
 		}),
 	}),

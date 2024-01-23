@@ -41,13 +41,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					r(338094, {["u"]=TRAINING}),	-- Prideful Manacles
 					r(338096, {["u"]=TRAINING}),	-- Soft Manacle Chains
 					r(338095, {["u"]=TRAINING}),	-- Tempered Manacle Chains
-					i(182090),	-- Binding Cuffs
-					i(182091),	-- Borrowed Sinvyr Bar
-					i(182094),	-- Borrowed Sinvyr Rod
-					i(182089),	-- Enchanted Rivets
-					i(181378),	-- Prideful Manacles
-					i(182093),	-- Soft Manacle Chains
-					i(182092),	-- Tempered Manacle Chains
+					i(182090),	-- Binding Cuffs (QI!)
+					i(182091),	-- Borrowed Sinvyr Bar (QI!)
+					i(182094),	-- Borrowed Sinvyr Rod (QI!)
+					i(182089),	-- Enchanted Rivets (QI!)
+					i(181378),	-- Prideful Manacles (QI!)
+					i(182093),	-- Soft Manacle Chains (QI!)
+					i(182092),	-- Tempered Manacle Chains (QI!)
 				},
 			}),
 			q(61621, {	-- Cooking: Skewered Meats
@@ -60,13 +60,22 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["requireSkill"] = ENCHANTING,
 				["g"] = {
 					r(338125, {["u"]=TRAINING}),	-- Everburning Brand
-					i(182067),	-- Antique Duelist's Rapier
-					i(181950),	-- Everburning Brand
-					i(182066),	-- Sanguine Crystal
+					i(182067),	-- Antique Duelist's Rapier (QI!)
+					i(181950),	-- Everburning Brand (QI!)
+					i(182066),	-- Sanguine Crystal (QI!)
 				},
 			}),
 			q(61622, {	-- Engineering: Duelist's Pistol
 				["requireSkill"] = ENGINEERING,
+				["g"] = {
+					r(338220, {["u"]=TRAINING}),-- Duelist's Pistol
+					r(338222, {["u"]=TRAINING}),-- Sinvyr Barrel
+					r(338223, {["u"]=TRAINING}),-- Sinvyr Trigger Mechanism
+					i(181953),	-- Duelist's Pistol (QI!)
+					i(182064),	-- Machined Sinvyr Bar (QI!)
+					i(182062),	-- Sinvyr Barrel (QI!)
+					i(182063),	-- Sinvyr Trigger Mechanism (QI!)
+				},
 			}),
 			q(61885),	-- Eyegor's Special Friends
 			q(61623, {	-- Fishing: Bloodthroated Grouper
@@ -80,11 +89,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
 					r(338234, {["u"]=TRAINING}),	-- Catalog of Sins
-					i(181959),	-- Catalog of Sins
 					r(338236, {["u"]=TRAINING}),	-- Prideful Ink
-					i(182060),	-- Prideful Ink
 					r(338235, {["u"]=TRAINING}),	-- Scroll of Calming Lyrics
-					i(182059),	-- Scroll of Castigation
+					i(181959),	-- Catalog of Sins (QI!)
+					i(182060),	-- Prideful Ink (QI!)
+					i(182059),	-- Scroll of Castigation (QI!)
 				},
 			}),
 			q(59643, {	-- It's Race Day in the Ramparts!
@@ -100,12 +109,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["requireSkill"] = LEATHERWORKING,
 				["g"] = {
 					r(338263, {["u"]=TRAINING}),	-- Courtly Leather Boots
-					i(181967),	-- Courtly Leather Boots
-					i(182055),	-- Ragged Sinrunner Leather
 					r(338265, {["u"]=TRAINING}),	-- Softened Leather
-					i(182054),	-- Softened Leather
 					r(338264, {["u"]=TRAINING}),	-- Tortured Sole
-					i(182053),	-- Tortured Sole
+					i(181967),	-- Courtly Leather Boots (QI!)
+					i(182055),	-- Ragged Sinrunner Leather (QI!)
+					i(182054),	-- Softened Leather (QI!)
+					i(182053),	-- Tortured Sole (QI!)
 				},
 			}),
 			q(60659),	-- Light Defense

@@ -450,10 +450,6 @@ root(ROOTS.NeverImplemented, {
 				i(183841),	-- Emergency Flare
 				i(180738),	-- Enchanter's Journal
 				i(180739),	-- Engineer's Journal
-				i(183413),	-- Ensemble: Stitched Alacrity of Maldraxxus
-				i(183411),	-- Ensemble: Stitched Authority of Maldraxxus
-				i(183414),	-- Ensemble: Stitched Guile of Maldraxxus
-				i(183415),	-- Ensemble: Stitched Rationale of Maldraxxus
 				i(178564),	-- Eye of the Jailer:|CFFff2020 +1000 |R
 				i(178588),	-- Fae Armaments
 				i(184041),	-- Festive Umbrella

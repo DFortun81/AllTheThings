@@ -22,6 +22,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_L
 					["g"] = SL_ENCHANTING,
 				}),
 			}),
+			prof(ENGINEERING, {
+				n(156691, {	-- Machinist Au'gur <Engineering Trainer>
+					["coord"] = { 37.8, 44.6, VALDRAKKEN },
+					["g"] = SL_ENGINEERING,
+				}),
+			}),
 			prof(HERBALISM, {
 				n(156686, {	-- Selector Au'mar <Herbalism Trainer>
 					["coord"] = { 39.8, 38.6, ORIBOS },

@@ -27,12 +27,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					r(337427, {["u"]=TRAINING}),	-- Bundle of Stalker Arrowheads
 					r(337374, {["u"]=TRAINING}),	-- Molten Phaedrum
 					r(337426, {["u"]=TRAINING}),	-- Unrefined Arrowheads
-					i(181783),	-- Borrowed Phaedrum Ore
-					i(181860),	-- Borrowed Twilight Bark
-					i(181784),	-- Bundle of Stalker Arrowheads
-					i(181787),	-- Molten Phaedrum
-					i(181788),	-- Unrefined Arrowheads
-					i(181789),	-- Wooden Arrowhead Mold
+					i(181783),	-- Borrowed Phaedrum Ore (QI!)
+					i(181860),	-- Borrowed Twilight Bark (QI!)
+					i(181784),	-- Bundle of Stalker Arrowheads (QI!)
+					i(181787),	-- Molten Phaedrum (QI!)
+					i(181788),	-- Unrefined Arrowheads (QI!)
+					i(181789),	-- Wooden Arrowhead Mold (QI!)
 				},
 			}),
 			q(61631),	-- Drust Between You and Me
@@ -43,13 +43,22 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["requireSkill"] = ENCHANTING,
 				["g"] = {
 					r(346026, {["u"]=TRAINING}),	-- Boundless Basket
-					i(181991),	-- Antique Stalker's Bow
-					i(181384),	-- Boundless Basket
-					i(181990),	-- Twilight Dust
+					i(181991),	-- Antique Stalker's Bow (QI!)
+					i(181384),	-- Boundless Basket (QI!)
+					i(181990),	-- Twilight Dust (QI!)
 				},
 			}),
 			q(61597, {	-- Engineering: Bug Zapifier
 				["requireSkill"] = ENGINEERING,
+				["g"] = {
+					r(338119, {["u"]=TRAINING}),	-- Bug Zapifier
+					r(338212, {["u"]=TRAINING}),	-- Electro Cable
+					r(338210, {["u"]=TRAINING}),	-- Energized Battery
+					i(181385),	-- Bug Zapifier (QI!)
+					i(181992),	-- Electro Cable (QI!)
+					i(181993),	-- Energized Battery (QI!)
+					i(181994),	-- Machined Phaedrum Bar (QI!)
+				},
 			}),
 			q(61598, {	-- Fishing: Speckled Flametail
 				["requireSkill"] = FISHING,
@@ -62,11 +71,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
 					r(338227, {["u"]=TRAINING}),	-- Ardenberry Ink
-					i(181996),	-- Ardenberry Ink
 					r(338225, {["u"]=TRAINING}),	-- Hymnal of Respite
-					i(181397),	-- Hymnal of Respite
 					r(338226, {["u"]=TRAINING}),	-- Scroll of Calming Lyrics
-					i(181995),	-- Scroll of Calming Lyrics
+					i(181996),	-- Ardenberry Ink (QI!)
+					i(181397),	-- Hymnal of Respite (QI!)
+					i(181995),	-- Scroll of Calming Lyrics (QI!)
 				},
 			}),
 			q(61303),	-- It's Raining Sparkles
@@ -76,14 +85,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61602, {	-- Leatherworking: Stalker's Leather Quiver
 				["requireSkill"] = LEATHERWORKING,
 				["g"] = {
-					i(182290),	-- Bottle of Leather Dye
 					r(338253, {["u"]=TRAINING}),	-- Dyed Runestag Leather
-					i(182002),	-- Dyed Runestag Leather
-					i(182003),	-- Runestag Leather
 					r(338254, {["u"]=TRAINING}),	-- Runestag Leather Strap
-					i(182001),	-- Runestag Leather Strap
 					r(338255, {["u"]=TRAINING}),	-- Stalker's Leather Quiver
-					i(181434),	-- Stalker's Leather Quiver
+					i(182290),	-- Bottle of Leather Dye (QI!)
+					i(182002),	-- Dyed Runestag Leather (QI!)
+					i(182003),	-- Runestag Leather (QI!)
+					i(182001),	-- Runestag Leather Strap (QI!)
+					i(181434),	-- Stalker's Leather Quiver (QI!)
 				},
 			}),
 			q(61947),	-- Lurking In The Shadows

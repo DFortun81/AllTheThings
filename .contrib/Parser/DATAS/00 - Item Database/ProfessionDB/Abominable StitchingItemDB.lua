@@ -1,6 +1,16 @@
 local i = GetRecipeHelperForProfession(ABOMINABLE_STITCHING);
 
 -----------------
+-- PATCH 9.0.1 --
+-----------------
+--- NYI ---
+i(0, 341500);		-- Construct Ensemble: Stitched Alacrity of Maldraxxus
+i(0, 341498);		-- Construct Ensemble: Stitched Authority of Maldraxxus
+i(0, 341502);		-- Construct Ensemble: Stitched Guile of Maldraxxus
+i(0, 341504);		-- Construct Ensemble: Stitched Rationale of Maldraxxus
+i(0, 342895);		-- Intellectuals Monocle
+
+-----------------
 -- PATCH 9.0.2 --
 -----------------
 i(0, 327091);		-- Abominable Backup
@@ -32,10 +42,6 @@ i(0, 325451);		-- Construct Body: "Roseboil"
 i(0, 338040);		-- Construct Body: "Sabrina"
 i(0, 326407);		-- Construct Body: "Toothpick"
 i(0, 331404);		-- Construct Disguise
-i(0, 341500);		-- Construct Ensemble: Stitched Alacrity of Maldraxxus
-i(0, 341498);		-- Construct Ensemble: Stitched Authority of Maldraxxus
-i(0, 341502);		-- Construct Ensemble: Stitched Guile of Maldraxxus
-i(0, 341504);		-- Construct Ensemble: Stitched Rationale of Maldraxxus
 i(0, 342803);		-- Construct's Best Friend
 i(0, 337535);		-- Dapper Top Hat
 i(0, 344095);		-- Dundae's Hat
@@ -47,7 +53,6 @@ i(0, 342448);		-- Halo of Purity
 i(0, 342468);		-- Happiness Bird
 i(0, 342902);		-- Hitchhiker
 i(0, 338383);		-- Holiday Hat
-i(0, 342895);		-- Intellectuals Monocle
 i(0, 331403);		-- Lil' Eddie
 i(0, 344096);		-- Lovely Candle Display
 i(0, 342851);		-- Magician's Hat
@@ -73,3 +78,5 @@ i(0, 337554);		-- Trustworthy Doll
 i(0, 344797);		-- Underpowered Gravity Pack
 i(0, 344770);		-- Unworthy Crown
 i(0, 342417);		-- Vestigial Wings
+--- NYI ---
+i(0, 344765);		-- Pumpkin Head

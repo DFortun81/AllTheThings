@@ -43,45 +43,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["g"] = DF_ENCHANTING,
 				}),
 			}),
-			prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = ENGINEERING }, {
+			prof(ENGINEERING, {
 				n(185548, {	-- Clinkyclick Shatterboom <Engineering Trainer>
 					["coord"] = { 42.2, 48.8, VALDRAKKEN },
-					["g"] = {
-						r(366254),	-- Dragon Isles Engineering
-						r(382379),	-- Arclight Capacitor
-						r(382391),	-- Battle-Ready Binoculars
-						r(382393),	-- Bottomless Stonecrust Ore Satchel
-						r(384314),	-- Bronze Fireflight
-						r(382330),	-- Creature Combustion Canister
-						r(382385),	-- Deadline Deadeyes
-						r(382398),	-- Draconium Brainwave Amplifier
-						r(382392),	-- Draconium Delver's Helmet
-						r(382397),	-- Draconium Encased Samophlange
-						r(382394),	-- Draconium Fisherfriend
-						r(382377),	-- Everburning Blasting Powder
-						r(382378),	-- Greased-Up Gears
-						r(382402),	-- Gyroscopic Kaleidoscope
-						r(382375),	-- Handful of Tyrivite Bolts
-						r(382346),	-- Haphazardly Tethered Wires
-						r(382395),	-- Lapidary's Draconium Clamps
-						r(382388),	-- Lightweight Ocular Lenses
-						r(382384),	-- Milestone Magnifiers
-						r(382407),	-- Neural Silencer Mk3
-						r(382390),	-- Oscillating Wilderness Opticals
-						r(382348),	-- Overcharged Overclocker
-						r(382387),	-- P.E.W. x2
-						r(382389),	-- Peripheral Vision Projectors
-						r(382383),	-- Quality-Assured Optics
-						r(389192),	-- Recraft Equipment
-						r(382380),	-- Reinforced Machine Chassis
-						r(382386),	-- Sentry's Stabilized Specs
-						r(382376),	-- Shock-Spring Coil
-						r(382396),	-- Spring-Loaded Draconium Fabric Cutters
-						r(382401),	-- Tinker: Plane Displacer
-						r(396777),	-- Tinker Removal Kit
-					},
+					["g"] = DF_ENGINEERING,
 				}),
-			})),
+			}),
 			prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHING }, {
 				n(185359, {	-- Toklo <Fishing Trainer>
 					["coord"] = { 44.6, 74.6, VALDRAKKEN },

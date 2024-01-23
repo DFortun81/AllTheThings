@@ -35,10 +35,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					r(338090, {["u"]=TRAINING}),	-- Hardened Heavy Razor
 					r(338091, {["u"]=TRAINING}),	-- Soft Heavy Razor
 					r(338088, {["u"]=TRAINING}),	-- Soul Razor
-					i(182088),	-- Borrowed Oxxein Ore
-					i(182086),	-- Hardened Heavy Razor
-					i(182087),	-- Soft Heavy Razor
-					i(181862),	-- Soul Razor
+					i(182088),	-- Borrowed Oxxein Ore (QI!)
+					i(182086),	-- Hardened Heavy Razor (QI!)
+					i(182087),	-- Soft Heavy Razor (QI!)
+					i(181862),	-- Soul Razor (QI!)
 
 				},
 			}),
@@ -68,13 +68,22 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["requireSkill"] = ENCHANTING,
 				["g"] = {
 					r(338123, {["u"]=TRAINING}),	-- Unbreakable Crystal
-					i(182043),	-- Antique Necromancer's Staff
-					i(182042),	-- Necrotic Essence
-					i(181949),	-- Unbreakable Crystal
+					i(182043),	-- Antique Necromancer's Staff (QI!)
+					i(182042),	-- Necrotic Essence (QI!)
+					i(181949),	-- Unbreakable Crystal (QI!)
 				},
 			}),
 			q(61609, {	-- Engineering: Boneclad Stake Launcher
 				["requireSkill"] = ENGINEERING,
+				["g"] = {
+					r(338218, {["u"]=TRAINING}),	-- Bone Reinforced Oxxein Tubing
+					r(338217, {["u"]=TRAINING}),	-- Boneclad Stake Launcher
+					r(338219, {["u"]=TRAINING}),	-- Handful of Oxxein Bolts
+					i(182038),	-- Bone Reinforced Oxxein Tubing (QI!)
+					i(181952),	-- Boneclad Stake Launcher (QI!)
+					i(182039),	-- Handful of Oxxein Bolts (QI!)
+					i(182040),	-- Machined Oxxein Bar (QI!)
+				},
 			}),
 			q(61867),	-- Extra Pieces
 			q(61870),	-- Failed Experiments
@@ -98,12 +107,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61611, {	-- Inscription: Litany of Might
 				["requireSkill"] = INSCRIPTION,
 				["g"] = {
-					r(338231, {["u"]=15}),	-- Litany of Might
-					i(181958),	-- Litany of Might
-					r(338233, {["u"]=15}),	-- Necrotic Ink
-					i(182036),	-- Necrotic Ink
-					r(338232, {["u"]=15}),	-- Scroll of Unyielding Strength
-					i(182035),	-- Scroll of Unyielding Strength
+					r(338231, {["u"]=TRAINING}),	-- Litany of Might
+					r(338233, {["u"]=TRAINING}),	-- Necrotic Ink
+					r(338232, {["u"]=TRAINING}),	-- Scroll of Unyielding Strength
+					i(181958),	-- Litany of Might (QI!)
+					i(182036),	-- Necrotic Ink (QI!)
+					i(182035),	-- Scroll of Unyielding Strength (QI!)
 				},
 			}),
 			q(61612, {	-- Jewelcrafting: Carved Crystal Ring
@@ -114,11 +123,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["requireSkill"] = LEATHERWORKING,
 				["g"] = {
 					r(338260, {["u"]=TRAINING}),	-- Bonestudded Fist
-					i(181966),	-- Bonestudded Fist
-					i(182030),	-- Cleaned Hide
 					r(338262, {["u"]=TRAINING}),	-- Cleaned Hide
-					i(182029),	-- Corpsestitch Thread
-					i(182031),	-- Unused Flesh
+					i(181966),	-- Bonestudded Fist (QI!)
+					i(182030),	-- Cleaned Hide (QI!)
+					i(182029),	-- Corpsestitch Thread (QI!)
+					i(182031),	-- Unused Flesh (QI!)
 				},
 			}),
 			q(61539, {	-- Liches Get Stitches

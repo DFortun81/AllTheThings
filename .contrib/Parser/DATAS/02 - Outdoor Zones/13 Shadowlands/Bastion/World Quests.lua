@@ -35,10 +35,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					r(337619,{["u"]=TRAINING}),	-- Polished Kyrian Shield
 					r(337626,{["u"]=TRAINING}),	-- Reforged Kyrian Shield
 					r(337621,{["u"]=TRAINING}),	-- Tarnished Kyrian Shield
-					i(181791),	-- Polished Kyrian Shield
-					i(181790),	-- Reforged Kyrian Shield
-					i(181793),	-- Shattered Kyrian Shield Fragment
-					i(181792),	-- Tarnished Kyrian Shield
+					i(181791),	-- Polished Kyrian Shield (QI!)
+					i(181790),	-- Reforged Kyrian Shield (QI!)
+					i(181793),	-- Shattered Kyrian Shield Fragment (QI!)
+					i(181792),	-- Tarnished Kyrian Shield (QI!)
 				},
 			}),
 			q(62058),	-- Centurions, Assemble!
@@ -52,9 +52,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["requireSkill"] = ENCHANTING,
 				["g"] = {
 					r(338121,{["u"]=TRAINING}),	-- True Aim Spear
-					i(182021),	-- Antique Kyrian Javelin
-					i(181948),	-- Enchant: True Aim
-					i(182020),	-- Transcendent Dust
+					i(182021),	-- Antique Kyrian Javelin (QI!)
+					i(181948),	-- Enchant: True Aim (QI!)
+					i(182020),	-- Transcendent Dust (QI!)
 				},
 			}),
 			q(61520, {	-- Enemy of My Mnemis
@@ -65,6 +65,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61441, {	-- Engineering: Power Hammer
 				["requireSkill"] = ENGINEERING,
+				["g"] = {
+					r(338216, {["u"]=TRAINING}),	-- Hardened Bolts
+					r(338214, {["u"]=TRAINING}),	-- Piston Assembly
+					r(338213, {["u"]=TRAINING}),	-- Power Hammer
+					i(182017),	-- Hardened Bolts (QI!)
+					i(182018),	-- Machined Solenium Bar (QI!)
+					i(182016),	-- Piston Assembly (QI!)
+					i(181951),	-- Power Hammer (QI!)
+				},
 			}),
 			q(59658),	-- Express Dominance
 			q(61442, {	-- Fishing: Glorious Shimmerfin
@@ -90,11 +99,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					r(338228, {["u"]=TRAINING}),	-- Invocation of Duty
 					r(338230, {["u"]=TRAINING}),	-- Opalescent Ink
 					r(338229, {["u"]=TRAINING}),	-- Poem on Duty
-					i(182202),	-- Borrowed Parchment
-					i(181957),	-- Invocation of Duty
-					i(182014),	-- Opalescent Ink
-					i(182015),	-- Opalescent Pigment
-					i(182013),	-- Poem on Duty
+					i(182202),	-- Borrowed Parchment (QI!)
+					i(181957),	-- Invocation of Duty (QI!)
+					i(182014),	-- Opalescent Ink (QI!)
+					i(182015),	-- Opalescent Pigment (QI!)
+					i(182013),	-- Poem on Duty (QI!)
 				},
 			}),
 			q(61447, {	-- Jewelcrafting: Gleaming Kyranite Necklace
@@ -103,15 +112,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61449, {	-- Leatherworking: Steelhide Leather Harness
 				["requireSkill"] = LEATHERWORKING,
 				["g"] = {
-					i(182009),	-- Fresh Steelhide
 					r(338258, {["u"]=TRAINING}),	-- Steelhide Leather Belt
-					i(182007),	-- Steelhide Leather Belt
 					r(338257, {["u"]=TRAINING}),	-- Steelhide Leather Harness
-					i(181965),	-- Steelhide Leather Harness
-					i(182194),	-- Steelhide Sinew
 					r(338259, {["u"]=TRAINING}),	-- Steelhide Leather Strap
-					i(182008),	-- Steelhide Leather Strap
-					i(182193),	-- Thick Steelhide Leather
+					i(182009),	-- Fresh Steelhide (QI!)
+					i(182007),	-- Steelhide Leather Belt (QI!)
+					i(181965),	-- Steelhide Leather Harness (QI!)
+					i(182194),	-- Steelhide Sinew (QI!)
+					i(182008),	-- Steelhide Leather Strap (QI!)
+					i(182193),	-- Thick Steelhide Leather (QI!)
 				},
 			}),
 			q(59578),	-- Let's Get Ready to Humble

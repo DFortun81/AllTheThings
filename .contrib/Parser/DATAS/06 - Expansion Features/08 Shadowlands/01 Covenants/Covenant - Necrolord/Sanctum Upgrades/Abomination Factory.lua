@@ -101,7 +101,6 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 						MALDRAXXUS,
 					},
 					["g"] = {
-						-- wip
 						prof(ABOMINABLE_STITCHING, {
 							n(CRAFTABLES, {
 								i(180264),	-- Abominable Backup
@@ -113,77 +112,78 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								i(182078),	-- Bonesewn Fleshroc (MOUNT!)
 								i(180275),	-- Construct Disguise
 								i(183811),	-- Construct's Best Friend
+								i(180267),	-- Lil' Eddie
+								i(181282),	-- Mu'dud (PET!)
+								i(178658),	-- Restore Construct
+								i(184606),	-- Tighter Stitching
+								i(183599),	-- Tossable Head
 							}),
-							r(327091), -- Abominable Backup
-							r(326903), -- Anima-bound Wraps
-							r(342849), -- Armor Plating
-							r(344796), -- Back Mushrooms
-							r(338057), -- Backbone
-							r(326762), -- Bag of Creepy Crawlies
-							r(338059), -- Bag of Twigin Treats
-							r(344110), -- Barrel O' Fish
-							r(338046), -- Bindings of Wellbeing
-							r(338052), -- Bonesewn Fleshroc
-							r(342846), -- Butterflies
-							r(344100), -- Chef Hat
-							r(342841), -- Collector Kash's Pack
-							r(325454), -- Construct Body: "Atticus"
-							r(325284), -- Construct Body: "Chordy"
-							r(325453), -- Construct Body: "Flytrap"
-							r(326380), -- Construct Body: "Gas Bag"
-							r(338039), -- Construct Body: "Guillotine"
-							r(338037), -- Construct Body: "Iron Phillip"
-							r(326408), -- Construct Body: "Mama Tomalin"
-							r(325452), -- Construct Body: "Marz"
-							r(325458), -- Construct Body: "Miru"
-							r(338043), -- Construct Body: "Naxx"
-							r(326379), -- Construct Body: "Neena"
-							r(326406), -- Construct Body: "Professor"
-							r(325451), -- Construct Body: "Roseboil"
-							r(338040), -- Construct Body: "Sabrina"
-							r(326407), -- Construct Body: "Toothpick"
-							r(331404), -- Construct Disguise
-							r(341500, {["timeline"]={CREATED_9_0_2}}), -- Construct Ensemble: Stitched Alacrity of Maldraxxus
-							r(341498, {["timeline"]={CREATED_9_0_2}}), -- Construct Ensemble: Stitched Authority of Maldraxxus
-							r(341502, {["timeline"]={CREATED_9_0_2}}), -- Construct Ensemble: Stitched Guile of Maldraxxus
-							r(341504, {["timeline"]={CREATED_9_0_2}}), -- Construct Ensemble: Stitched Rationale of Maldraxxus
-							r(342803), -- Construct's Best Friend
-							r(337535), -- Dapper Top Hat
-							r(344095), -- Dundae's Hat
-							r(344101), -- Egg Hat
-							r(342418), -- Engineering Pack
-							r(342843), -- Faction Flag
-							r(342447), -- Flower Crown
-							r(342448), -- Halo of Purity
-							r(342468), -- Happiness Bird
-							r(342902), -- Hitchhiker
-							r(338383), -- Holiday Hat
-							r(342895, {["timeline"]={CREATED_9_0_2}}), -- Intellectuals Monocle
-							r(331403), -- Lil' Eddie
-							r(344096), -- Lovely Candle Display
-							r(342851), -- Magician's Hat
-							r(338058), -- Mu'dud
-							r(342421), -- Operational Instructions
-							r(337540), -- Outlaw Flag
-							r(344769), -- Pirate Hat
-							r(342850), -- Plague Pack
-							r(344765, {["timeline"]={CREATED_9_0_2}}), -- Pumpkin Head
-							r(342455), -- Red Eye Lens
-							r(327090), -- Restore Construct
-							r(342842), -- Safe Fall Pack
-							r(344798), -- Shoulder Sprouts
-							r(342483), -- Six-League Pack
-							r(344766), -- Skull Fungus
-							r(342454), -- Skull Protector
-							r(342899), -- Spare Weapon
-							r(342845), -- Sticky Cat
-							r(347024), -- Tighter Stitching
-							r(342782), -- Tossable Head
-							r(344097), -- Trained Corpselice
-							r(337554), -- Trustworthy Doll
-							r(344797), -- Underpowered Gravity Pack
-							r(344770), -- Unworthy Crown
-							r(342417), -- Vestigial Wings
+							filter(RECIPES, {
+								r(327091), -- Abominable Backup
+								r(326903), -- Anima-bound Wraps
+								r(342849), -- Armor Plating
+								r(344796), -- Back Mushrooms
+								r(338057), -- Backbone
+								r(326762), -- Bag of Creepy Crawlies
+								r(338059), -- Bag of Twigin Treats
+								r(344110), -- Barrel O' Fish
+								r(338046), -- Bindings of Wellbeing
+								r(338052), -- Bonesewn Fleshroc
+								r(342846), -- Butterflies
+								r(344100), -- Chef Hat
+								r(342841), -- Collector Kash's Pack
+								r(325454, {["u"]=TRAINING}), -- Construct Body: "Atticus"
+								r(325284, {["u"]=TRAINING}), -- Construct Body: "Chordy"
+								r(325453, {["u"]=TRAINING}), -- Construct Body: "Flytrap"
+								r(326380, {["u"]=TRAINING}), -- Construct Body: "Gas Bag"
+								r(338039, {["u"]=TRAINING}), -- Construct Body: "Guillotine"
+								r(338037, {["u"]=TRAINING}), -- Construct Body: "Iron Phillip"
+								r(326408, {["u"]=TRAINING}), -- Construct Body: "Mama Tomalin"
+								r(325452, {["u"]=TRAINING}), -- Construct Body: "Marz"
+								r(325458, {["u"]=TRAINING}), -- Construct Body: "Miru"
+								r(338043, {["u"]=TRAINING}), -- Construct Body: "Naxx"
+								r(326379, {["u"]=TRAINING}), -- Construct Body: "Neena"
+								r(326406, {["u"]=TRAINING}), -- Construct Body: "Professor"
+								r(325451, {["u"]=TRAINING}), -- Construct Body: "Roseboil"
+								r(338040, {["u"]=TRAINING}), -- Construct Body: "Sabrina"
+								r(326407, {["u"]=TRAINING}), -- Construct Body: "Toothpick"
+								r(331404), -- Construct Disguise
+								r(342803), -- Construct's Best Friend
+								r(337535), -- Dapper Top Hat
+								r(344095), -- Dundae's Hat
+								r(344101), -- Egg Hat
+								r(342418), -- Engineering Pack
+								r(342843), -- Faction Flag
+								r(342447), -- Flower Crown
+								r(342448), -- Halo of Purity
+								r(342468), -- Happiness Bird
+								r(342902), -- Hitchhiker
+								r(338383), -- Holiday Hat
+								r(331403), -- Lil' Eddie
+								r(344096), -- Lovely Candle Display
+								r(342851), -- Magician's Hat
+								r(338058), -- Mu'dud
+								r(342421), -- Operational Instructions
+								r(337540), -- Outlaw Flag
+								r(344769), -- Pirate Hat
+								r(342850), -- Plague Pack
+								r(342455), -- Red Eye Lens
+								r(327090), -- Restore Construct
+								r(342842), -- Safe Fall Pack
+								r(344798), -- Shoulder Sprouts
+								r(342483), -- Six-League Pack
+								r(344766), -- Skull Fungus
+								r(342454), -- Skull Protector
+								r(342899), -- Spare Weapon
+								r(342845), -- Sticky Cat
+								r(347024), -- Tighter Stitching
+								r(342782), -- Tossable Head
+								r(344097), -- Trained Corpselice
+								r(337554), -- Trustworthy Doll
+								r(344797), -- Underpowered Gravity Pack
+								r(344770), -- Unworthy Crown
+								r(342417), -- Vestigial Wings
+							}),
 						}),
 						n(ACHIEVEMENTS, {
 							ach(14684, {	-- Abominable Lives
