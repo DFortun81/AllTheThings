@@ -37,21 +37,6 @@ i(3832, 3453); -- Recipe: Elixir of Detect Lesser Invisibility
 -- #IF AFTER WOD
 -- #IF AFTER LEGION
 i(6454, 7935); -- Manual: Strong Anti-Venom
--- #IF AFTER BFA
--- #IF AFTER SHADOWLANDS
-i(186990, 354885); -- Recipe: Blossom Burst
-i(183106, 307087); -- Recipe: Eternal Cauldron
-i(186988, 354881); -- Recipe: Glory Burst
-i(187828, 360014); -- Recipe: Infusion: Corpse Purification
-i(186989, 354880); -- Recipe: Marrow Burst
-i(180780, 334413); -- Recipe: Red Noggin Candle
-i(182660, 307143); -- Recipe: Shadestone
-i(187848, 360318); -- Recipe: Sustaining Armor Polish
-i(186987, 354884); -- Recipe: Torch Burst
-i(186986, 354882); -- Recipe: Widow Burst
-i(186991, 307144); -- Transmute: Stones to Ore
--- #ENDIF
--- #ENDIF
 -- #ENDIF
 -- #ENDIF
 -- #ENDIF
@@ -73,22 +58,6 @@ i(7678, 9513, "removed 4.0.3"); -- Recipe: Thistle Tea (RECIPE!)
 -- #IF AFTER CATA
 -- #IF AFTER MOP
 i(86393, 126654); -- Four Senses Brew / Tablet of Ren Yun (RECIPE!)
--- #IF AFTER WOD
--- #IF AFTER LEGION
--- #IF AFTER BFA
--- #IF AFTER SHADOWLANDS
-i(187007, 354766); -- Recipe: Bonemeal Bread (RECIPE!)
-i(187804, 359333); -- Recipe: Empty Kettle of Stone Soup (RECIPE!)
-i(184625, 347176); -- Recipe: Extra Sugary Fish Feast (RECIPE!)
-i(184683, 347457); -- Recipe: Extra Lemony Herb Filet (RECIPE!)
-i(184689, 347509); -- Recipe: Extra Fancy Darkmoon Feast (RECIPE!)
-i(182668, 308403); -- Recipe: Feast of Gluttonous Hedonism (RECIPE!)
-i(187008, 354768); -- Recipe: Porous Rock Candy (RECIPE!)
-i(187006, 354764); -- Recipe: Twilight Tea (RECIPE!)
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
 -- #ENDIF
 -- #ENDIF
 -- #ENDIF
@@ -98,14 +67,6 @@ i(187006, 354764); -- Recipe: Twilight Tea (RECIPE!)
 -----------------
 i = GetRecipeHelperForProfession(INSCRIPTION);
 -----------------
--- #IF AFTER CLASSIC
--- #IF AFTER TBC
--- #IF AFTER WRATH
--- #IF AFTER CATA
--- #IF AFTER MOP
--- #IF AFTER WOD
--- #IF AFTER LEGION
--- #IF AFTER BFA
 -- #IF AFTER SHADOWLANDS
 i(183098, 311424); -- Technique: Codex of the Still Mind
 i(183102, 311412); -- Technique: Contract: Court of Harvesters
@@ -120,14 +81,6 @@ i(190381, 367393); -- Technique: Glyph of the Spectral Vulpine
 i(173068, 311453); -- Vantus Rune Technique: Castle Nathria
 i(186671, 354394); -- Vantus Rune Technique: Sanctum of Domination
 i(187806, 359890); -- Vantus Rune Technique: Sepulcher of the First Ones
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
 -- #ENDIF
 
 -----------------
@@ -234,24 +187,8 @@ i(186994, 355189); -- Design: Shaded Stone Statue
 -----------------
 i = GetRecipeHelperForProfession(TAILORING);
 -----------------
--- #IF AFTER CLASSIC
--- #IF AFTER TBC
--- #IF AFTER WRATH
--- #IF AFTER CATA
--- #IF AFTER MOP
--- #IF AFTER WOD
--- #IF AFTER LEGION
--- #IF AFTER BFA
 -- #IF AFTER SHADOWLANDS
 i(180781, 334499); -- Pattern: Pink Party Hat
 i(183101, 310898); -- Pattern: Shadowlace Cloak
 i(186995, 355183); -- Pattern: Shrouded Hand Towel
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
 -- #ENDIF

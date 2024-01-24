@@ -1,5 +1,13 @@
 local i = GetRecipeHelperForProfession(ALCHEMY);
 
+-- #if SEASON_OF_DISCOVERY
+------------------
+-- PATCH 1.15.0 --
+------------------
+--- ITEM ---
+i(210709, 426607);	-- Elixir of Coalesced Regret
+-- #endif
+
 -----------------
 --   CLASSIC   --
 -----------------
@@ -886,61 +894,7 @@ i(0, 307172);		-- Void Focus (Multiple Recipes from this itemID:171312 depending
 -----------------
 -- PATCH 9.0.1 --
 -----------------
--- TRAINER --
-i(0, 338204);		-- Bramblethorn Juice
-i(0, 338199);		-- Brutal Oil
-i(0, 343679);		-- Crafter's Mark I
-i(0, 343678);		-- Crafter's Mark II (Multiple Recipes from this itemID:183870 depending on profession)
-i(0, 338200);		-- Crushed Bones
-i(0, 338195);		-- Distilled Resolve
-i(0, 338198);		-- Draught of Grotesque Strength
-i(0, 338202);		-- Elixir of Humility
-i(0, 307119);		-- Embalmer's Oil
-i(0, 338194);		-- Flask of Measured Discipline
-i(0, 307120);		-- Ground Death Blossom
-i(0, 307123);		-- Ground Marrowroot
-i(0, 307125);		-- Ground Nightshade
-i(0, 307124);		-- Ground Rising Glory
-i(0, 307121);		-- Ground Vigil's Torch
-i(0, 307122);		-- Ground Widowbloom
-i(0, 338191);		-- Liquid Sleep
-i(0, 343675);		-- Novice Crafter's Mark
-i(0, 307384);		-- Potion of Deathly Fixation
-i(0, 307383);		-- Potion of Divine Awakening
-i(0, 307381);		-- Potion of Empowered Exorcisms
-i(0, 307094);		-- Potion of Hardened Shadows
-i(0, 338190);		-- Potion of Hibernal Rest
-i(0, 307382);		-- Potion of Phantom Fire
-i(0, 322301);		-- Potion of Sacrificial Anima
-i(0, 295084);		-- Potion of Shaded Sight
-i(0, 256134);		-- Potion of Soul Purity
-i(0, 256133);		-- Potion of Specter Swiftness
-i(0, 307093);		-- Potion of Spectral Agility
-i(0, 307096);		-- Potion of Spectral Intellect
-i(0, 307097);		-- Potion of Spectral Stamina
-i(0, 307098);		-- Potion of Spectral Strength
-i(0, 307095);		-- Potion of Spiritual Clarity
-i(0, 261424);		-- Potion of the Hidden Spirit
-i(0, 344316);		-- Potion of the Psychopomp's Speed
-i(0, 342887);		-- Potion of Unhindered Passing
-i(0, 338192);		-- Powdered Dreamroot
-i(0, 338196);		-- Pulverized Breezebloom
-i(0, 338203);		-- Refined Submission
-i(0, 307118);		-- Shadowcore Oil
-i(0, 309822);		-- Shadowlands Alchemy
-i(0, 307142);		-- Shadowghast Ingot
-i(0, 307101);		-- Spectral Flask of Power
-i(0, 307103);		-- Spectral Flask of Stamina
-i(0, 307200);		-- Spiritual Alchemy Stone
-i(0, 307100);		-- Spiritual Anti-Venom
-i(0, 301578);		-- Spiritual Healing Potion
-i(0, 301683);		-- Spiritual Mana Potion
-i(0, 261423);		-- Spiritual Rejuvenation Potion
--- ITEM --
-i(183106, 307087);	-- Eternal Cauldron
-i(180780, 334413);	-- Red Noggin Candle
-i(182660, 307143);	-- Shadestone
--- NYI --
+--- NYI ---
 i(0, 307106);		-- 9.0 Alchemy - Modified Crafting Reagent 02
 i(0, 307107);		-- 9.0 Alchemy - Modified Crafting Reagent 03
 i(0, 307108);		-- 9.0 Alchemy - Modified Crafting Reagent 04
@@ -958,9 +912,68 @@ i(183868, 0);		-- [DNT][REUSE ME] Recipe: Crafter's Mark III
 i(182665, 0);		-- Recipe: Sins to Virtue
 
 -----------------
+-- PATCH 9.0.2 --
+-----------------
+--- TRAINER ---
+i(0, 309822);		-- Shadowlands Alchemy
+i(0, 343679);		-- Crafter's Mark I
+i(0, 307119);		-- Embalmer's Oil
+i(0, 307120);		-- Ground Death Blossom
+i(0, 307123);		-- Ground Marrowroot
+i(0, 307125);		-- Ground Nightshade
+i(0, 307124);		-- Ground Rising Glory
+i(0, 307121);		-- Ground Vigil's Torch
+i(0, 307122);		-- Ground Widowbloom
+i(0, 343675);		-- Novice Crafter's Mark
+i(0, 307384);		-- Potion of Deathly Fixation
+i(0, 307383);		-- Potion of Divine Awakening
+i(0, 307381);		-- Potion of Empowered Exorcisms
+i(0, 307094);		-- Potion of Hardened Shadows
+i(0, 307382);		-- Potion of Phantom Fire
+i(0, 322301);		-- Potion of Sacrificial Anima
+i(0, 295084);		-- Potion of Shaded Sight
+i(0, 256134);		-- Potion of Soul Purity
+i(0, 256133);		-- Potion of Specter Swiftness
+i(0, 307093);		-- Potion of Spectral Agility
+i(0, 307096);		-- Potion of Spectral Intellect
+i(0, 307097);		-- Potion of Spectral Stamina
+i(0, 307098);		-- Potion of Spectral Strength
+i(0, 307095);		-- Potion of Spiritual Clarity
+i(0, 261424);		-- Potion of the Hidden Spirit
+i(0, 344316);		-- Potion of the Psychopomp's Speed
+i(0, 342887);		-- Potion of Unhindered Passing
+i(0, 307118);		-- Shadowcore Oil
+i(0, 307142);		-- Shadowghast Ingot
+i(0, 307101);		-- Spectral Flask of Power
+i(0, 307103);		-- Spectral Flask of Stamina
+i(0, 307200);		-- Spiritual Alchemy Stone
+i(0, 307100);		-- Spiritual Anti-Venom
+i(0, 301578);		-- Spiritual Healing Potion
+i(0, 301683);		-- Spiritual Mana Potion
+i(0, 261423);		-- Spiritual Rejuvenation Potion
+--- ITEM ---
+i(0, 343678);		-- Crafter's Mark II (Multiple Recipes from this itemID:183870 depending on profession)
+i(183106, 307087);	-- Eternal Cauldron
+i(180780, 334413);	-- Red Noggin Candle
+i(182660, 307143);	-- Shadestone
+--- QUEST ---
+i(0, 338204);		-- Bramblethorn Juice
+i(0, 338199);		-- Brutal Oil
+i(0, 338200);		-- Crushed Bones
+i(0, 338195);		-- Distilled Resolve
+i(0, 338198);		-- Draught of Grotesque Strength
+i(0, 338202);		-- Elixir of Humility
+i(0, 338194);		-- Flask of Measured Discipline
+i(0, 338191);		-- Liquid Sleep
+i(0, 338190);		-- Potion of Hibernal Rest
+i(0, 338192);		-- Powdered Dreamroot
+i(0, 338196);		-- Pulverized Breezebloom
+i(0, 338203);		-- Refined Submission
+
+-----------------
 -- PATCH 9.1.0 --
 -----------------
--- ITEM --
+--- ITEM ---
 i(0, 343677);		-- Crafter's Mark III (Multiple Recipes from this itemID:186598 depending on profession)
 i(0, 343676);		-- Crafter's Mark of the Chained Isle (Multiple Recipes from this itemID:186470 depending on profession)
 i(186990, 354885);	-- Blossom Burst
@@ -969,15 +982,15 @@ i(186989, 354880);	-- Marrow Burst
 i(186991, 307144);	-- Stones to Ore
 i(186987, 354884);	-- Torch Burst
 i(186986, 354882);	-- Widow Burst
--- NYI --
+--- NYI ---
 i(0, 354860);		-- Unknown
 
 -----------------
 -- PATCH 9.2.0 --
 -----------------
--- TRAINER --
+--- TRAINER ---
 i(0, 359870);		-- Cosmic Healing Potion
--- ITEM --
+--- ITEM ---
 i(0, 359666);		-- Crafter's Mark IV (Multiple Recipes from this itemID:187750 depending on profession)
 i(0, 359673);		-- Crafter's Mark of the First Ones (Multiple Recipes from this itemID:187749 depending on profession)
 i(187828, 360014);	-- Infusion: Corpse Purification
@@ -986,21 +999,21 @@ i(187848, 360318);	-- Sustaining Armor Polish
 ------------------
 -- PATCH 10.0.0 --
 ------------------
--- TRAINER --
-i(0, 366261);	-- Dragon Isles Alchemy
-i(0, 370547);	-- Aerated Mana Potion
-i(0, 370746);	-- Basic Phial Experimentation
-i(0, 370743);	-- Basic Potion Experimentation
-i(0, 370551);	-- Elemental Potion of Power
-i(0, 370722);	-- Omnium Draconis
-i(0, 370465);	-- Phial of Tepid Versatility
-i(0, 370717);	-- Primal Convergent
-i(0, 370748);	-- Reclaim Concoctions
-i(0, 389190);	-- Recraft Equipment
-i(0, 370539);	-- Refreshing Healing Potion
-i(0, 370711);	-- Transmute: Awakened Air
-i(0, 370731);	-- Writhefire Oil
--- ITEM --
+--- TRAINER ---
+i(0, 366261);		-- Dragon Isles Alchemy
+i(0, 370547);		-- Aerated Mana Potion
+i(0, 370746);		-- Basic Phial Experimentation
+i(0, 370743);		-- Basic Potion Experimentation
+i(0, 370551);		-- Elemental Potion of Power
+i(0, 370722);		-- Omnium Draconis
+i(0, 370465);		-- Phial of Tepid Versatility
+i(0, 370717);		-- Primal Convergent
+i(0, 370748);		-- Reclaim Concoctions
+i(0, 389190);		-- Recraft Equipment
+i(0, 370539);		-- Refreshing Healing Potion
+i(0, 370711);		-- Transmute: Awakened Air
+i(0, 370731);		-- Writhefire Oil
+--- ITEM ---
 i(198533, 381270);	-- Aerated Phial of Quick Hands
 i(191593, 370732);	-- Agitating Potion Augmentation
 i(191547, 370677);	-- Alacritous Alchemist Stone
@@ -1016,113 +1029,113 @@ i(191545, 370676);	-- Sustaining Alchemist Stone
 i(191580, 370710);	-- Transmute: Awakened Earth
 i(191578, 370707);	-- Transmute: Awakened Fire
 i(191579, 370708);	-- Transmute: Awakened Frost
--- SPECIAL --
-i(0, 370543);	-- Elemental Potion of Ultimate Power [Shares item 201740]
-i(0, 370672);	-- Potion Cauldron of Ultimate Power [Shares item 201740]
--- DISCOVERY --
--- Phial --
-i(0, 370472);	-- Aerated Phial of Deftness
-i(0, 370476);	-- Charged Phial of Alacrity
-i(0, 370483);	-- Crystaline Phial of Perception
-i(0, 370457);	-- Iced Phial of Corrupting Rage
-i(0, 370460);	-- Phial of Charged Isolation
-i(0, 370504);	-- Phial of Elemental Chaos
-i(0, 370462);	-- Phial of Glacial Fury
-i(0, 370456);	-- Phial of Icy Preservation
-i(0, 370463);	-- Phial of Static Empowerment
-i(0, 370453);	-- Phial of Still Air
-i(0, 370438);	-- Phial of the Eye in the Storm
-i(0, 370473);	-- Steaming Phial of Finesse
--- Potion --
-i(0, 370521);	-- Bottled Putrescence
-i(0, 370536);	-- Delicate Suspension of Spores
-i(0, 370525);	-- Potion of Chilled Clarity
-i(0, 370478);	-- Potion of Frozen Fatality
-i(0, 370524);	-- Potion of Frozen Focus
-i(0, 370558);	-- Potion of Gusts
-i(0, 370561);	-- Potion of Shocking Disclosure
-i(0, 370556);	-- Potion of the Hushed Zephyr
-i(0, 370528);	-- Potion of Withering Vitality
-i(0, 370533);	-- Residual Neural Channeling Agent
--- SPECIALIZATION --
-i(0, 370747);	-- Advanced Phial Experimentation
-i(0, 370745);	-- Advanced Potion Experimentation
-i(0, 370730);	-- Brood Salt
-i(0, 370735);	-- Illustrious Insight
-i(0, 370668);	-- Potion Cauldron of Power
-i(0, 370715);	-- Transmute: Order to Elements
-i(0, 370714);	-- Transmute: Decay to Elements
--- QUEST --
-i(0, 377978);	-- Heart in a Bottle
--- NYI --
-i(0, 371635);	-- Demonstration Item Recipe
-i(0, 370771);	-- Dragon Isles Alchemy Troubleshooting Test Recipe (DNT)
-i(0, 382571);	-- Opening
+--- SPECIAL ---
+i(0, 370543);		-- Elemental Potion of Ultimate Power [Shares item 201740]
+i(0, 370672);		-- Potion Cauldron of Ultimate Power [Shares item 201740]
+--- DISCOVERY ---
+--- PHIAL ---
+i(0, 370472);		-- Aerated Phial of Deftness
+i(0, 370476);		-- Charged Phial of Alacrity
+i(0, 370483);		-- Crystaline Phial of Perception
+i(0, 370457);		-- Iced Phial of Corrupting Rage
+i(0, 370460);		-- Phial of Charged Isolation
+i(0, 370504);		-- Phial of Elemental Chaos
+i(0, 370462);		-- Phial of Glacial Fury
+i(0, 370456);		-- Phial of Icy Preservation
+i(0, 370463);		-- Phial of Static Empowerment
+i(0, 370453);		-- Phial of Still Air
+i(0, 370438);		-- Phial of the Eye in the Storm
+i(0, 370473);		-- Steaming Phial of Finesse
+--- POTION ---
+i(0, 370521);		-- Bottled Putrescence
+i(0, 370536);		-- Delicate Suspension of Spores
+i(0, 370525);		-- Potion of Chilled Clarity
+i(0, 370478);		-- Potion of Frozen Fatality
+i(0, 370524);		-- Potion of Frozen Focus
+i(0, 370558);		-- Potion of Gusts
+i(0, 370561);		-- Potion of Shocking Disclosure
+i(0, 370556);		-- Potion of the Hushed Zephyr
+i(0, 370528);		-- Potion of Withering Vitality
+i(0, 370533);		-- Residual Neural Channeling Agent
+--- SPECIALIZATION ---
+i(0, 370747);		-- Advanced Phial Experimentation
+i(0, 370745);		-- Advanced Potion Experimentation
+i(0, 370730);		-- Brood Salt
+i(0, 370735);		-- Illustrious Insight
+i(0, 370668);		-- Potion Cauldron of Power
+i(0, 370715);		-- Transmute: Order to Elements
+i(0, 370714);		-- Transmute: Decay to Elements
+--- QUEST ---
+i(0, 377978);		-- Heart in a Bottle
+--- NYI ---
+i(0, 371635);		-- Demonstration Item Recipe
+i(0, 370771);		-- Dragon Isles Alchemy Troubleshooting Test Recipe (DNT)
+i(0, 382571);		-- Opening
 i(191598, 370739);	-- Alchemical Flavor Pocket
 i(191453, 370554);	-- Breezy Potion of Draconic Vigor
 i(191457, 370563);	-- Potion of Burning Purification
 i(191595, 370734);	-- Wisp of Tyr
-i(194543, 0);	-- Dragon Isles Jewelcrafting Recipe Template (DNT)
-i(191428, 0);	-- Dragon Isles Alchemy Recipe Template (DNT)
-i(194959, 0);	-- Dragon Isles Cooking Recipe Template (DNT)
-i(191602, 0);	-- Advanced Phial Experimentation
-i(191600, 0);	-- Advanced Potion Experimentation
-i(191451, 0);	-- Aerated Mana Potion
-i(191437, 0);	-- Aerated Phial of Deftness
-i(191601, 0);	-- Basic Phial Experimentation
-i(191599, 0);	-- Basic Potion Experimentation
-i(191443, 0);	-- Bottled Putrescence
-i(191591, 0);	-- Brood Salt
-i(191439, 0);	-- Charged Phial of Alacrity
-i(191441, 0);	-- Crystaline Phial of Perception
-i(191448, 0);	-- Delicate Suspension of Spores
-i(191452, 0);	-- Elemental Potion of Power
-i(191450, 0);	-- Elemental Potion of Ultimate Power
-i(191432, 0);	-- Iced Phial of Corrupting Rage
-i(191596, 0);	-- Illustrious Insight
-i(191585, 0);	-- Omnium Draconis
-i(191433, 0);	-- Phial of Charged Isolation
-i(191442, 0);	-- Phial of Elemental Chaos
-i(191434, 0);	-- Phial of Glacial Fury
-i(191431, 0);	-- Phial of Icy Preservation
-i(191435, 0);	-- Phial of Static Empowerment
-i(191430, 0);	-- Phial of Still Air
-i(191436, 0);	-- Phial of Tepid Versatility
-i(191429, 0);	-- Phial of the Eye in the Storm
-i(191542, 0);	-- Potion Cauldron of Power
-i(191543, 0);	-- Potion Cauldron of Ultimate Power
-i(191445, 0);	-- Potion of Chilled Clarity
-i(191440, 0);	-- Potion of Frozen Fatality
-i(191444, 0);	-- Potion of Frozen Focus
-i(191455, 0);	-- Potion of Gusts
-i(191456, 0);	-- Potion of Shocking Disclosure
-i(191454, 0);	-- Potion of the Hushed Zephyr
-i(191446, 0);	-- Potion of Withering Vitality
-i(191584, 0);	-- Primal Convergent
-i(191449, 0);	-- Refreshing Healing Potion
-i(191447, 0);	-- Residual Neural Channeling Agent
-i(191438, 0);	-- Steaming Phial of Finesse
-i(191581, 0);	-- Transmute: Awakened Air
-i(191582, 0);	-- Transmute: Decay to Elements
-i(191583, 0);	-- Transmute: Order to Elements
-i(191592, 0);	-- Writhefire Oil
+i(194543, 0);		-- Dragon Isles Jewelcrafting Recipe Template (DNT)
+i(191428, 0);		-- Dragon Isles Alchemy Recipe Template (DNT)
+i(194959, 0);		-- Dragon Isles Cooking Recipe Template (DNT)
+i(191602, 0);		-- Advanced Phial Experimentation
+i(191600, 0);		-- Advanced Potion Experimentation
+i(191451, 0);		-- Aerated Mana Potion
+i(191437, 0);		-- Aerated Phial of Deftness
+i(191601, 0);		-- Basic Phial Experimentation
+i(191599, 0);		-- Basic Potion Experimentation
+i(191443, 0);		-- Bottled Putrescence
+i(191591, 0);		-- Brood Salt
+i(191439, 0);		-- Charged Phial of Alacrity
+i(191441, 0);		-- Crystaline Phial of Perception
+i(191448, 0);		-- Delicate Suspension of Spores
+i(191452, 0);		-- Elemental Potion of Power
+i(191450, 0);		-- Elemental Potion of Ultimate Power
+i(191432, 0);		-- Iced Phial of Corrupting Rage
+i(191596, 0);		-- Illustrious Insight
+i(191585, 0);		-- Omnium Draconis
+i(191433, 0);		-- Phial of Charged Isolation
+i(191442, 0);		-- Phial of Elemental Chaos
+i(191434, 0);		-- Phial of Glacial Fury
+i(191431, 0);		-- Phial of Icy Preservation
+i(191435, 0);		-- Phial of Static Empowerment
+i(191430, 0);		-- Phial of Still Air
+i(191436, 0);		-- Phial of Tepid Versatility
+i(191429, 0);		-- Phial of the Eye in the Storm
+i(191542, 0);		-- Potion Cauldron of Power
+i(191543, 0);		-- Potion Cauldron of Ultimate Power
+i(191445, 0);		-- Potion of Chilled Clarity
+i(191440, 0);		-- Potion of Frozen Fatality
+i(191444, 0);		-- Potion of Frozen Focus
+i(191455, 0);		-- Potion of Gusts
+i(191456, 0);		-- Potion of Shocking Disclosure
+i(191454, 0);		-- Potion of the Hushed Zephyr
+i(191446, 0);		-- Potion of Withering Vitality
+i(191584, 0);		-- Primal Convergent
+i(191449, 0);		-- Refreshing Healing Potion
+i(191447, 0);		-- Residual Neural Channeling Agent
+i(191438, 0);		-- Steaming Phial of Finesse
+i(191581, 0);		-- Transmute: Awakened Air
+i(191582, 0);		-- Transmute: Decay to Elements
+i(191583, 0);		-- Transmute: Order to Elements
+i(191592, 0);		-- Writhefire Oil
 
 ------------------
 -- PATCH 10.0.7 --
 ------------------
---ITEM --
+--- ITEM ---
 i(203420, 400270);	-- Draconic Suppression Powder
 
 ------------------
 -- PATCH 10.1.0 --
 ------------------
--- ITEM --
+--- ITEM ---
 i(204695, 405879);	-- Cauldron of Extracted Putrescence
 i(204696, 406106);	-- Draconic Phial Cauldron
 i(204984, 405832);	-- Stinky Bright Potion
 i(204631, 405847);	-- Transmute: Dracothyst
--- DISCOVERY --
-i(0, 405832);	-- Stinky Bright Potion
+--- DISCOVERY ---
+i(0, 405832);		-- Stinky Bright Potion
 
 ------------------
 -- PATCH 10.2.0 --
@@ -1131,17 +1144,3 @@ i(0, 405832);	-- Stinky Bright Potion
 i(210241, 415628);	-- Dreamwalker's Healing Potion
 --- DISCOVERY ---
 i(0, 415810);		-- Potion of Withering Dreams
-
-
--- #if ANYCLASSIC
-------------------
---  WOW CLASSIC --
-------------------
-
--- #if SEASON_OF_DISCOVERY
---------------------------
--- Season of Discovery ---
---------------------------
-i(210709, 426607);	-- Elixir of Coalesced Regret
--- #endif
--- #endif

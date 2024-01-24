@@ -16,6 +16,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_L
 					["g"] = SL_BLACKSMITHING,
 				}),
 			}),
+			prof(COOKING, {
+				n(156672, {	-- Chef Au'krut <Cooking Trainer>
+					["coord"] = { 47.0, 23.6, ORIBOS },
+					["g"] = SL_COOKING,
+				}),
+			}),
 			prof(ENCHANTING, {
 				n(156683, {	-- Imbuer Au'vresh <Enchanting Trainer>
 					["coord"] = { 48.2, 29.0, ORIBOS },

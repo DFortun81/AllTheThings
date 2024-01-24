@@ -647,57 +647,56 @@ i(0, 314960);	-- K'Bab
 -----------------
 -- PATCH 9.0.1 --
 -----------------
--- TRAINER --
-i(0, 308415);	-- Banana Beef Pudding / 9.0 Cooking - Stam Food 02
-i(0, 308410);	-- Biscuits and Caviar / 9.0 Cooking - Health Food 01
-i(0, 308397);	-- Butterscotch Marinated Ribs / 9.0 Cooking - Crit Food 01
-i(0, 308411);	-- Candied Amberjack Cakes / 9.0 Cooking - Health Food 02
-i(0, 308404);	-- Cinnamon Bonefish Stew / 9.0 Cooking - Haste Food 01
-i(0, 308413);	-- Iridescent Ravioli with Apple Sauce / Crawler Ravioli with Apple Sauce / 9.0 Cooking - Mastery Food 02
-i(0, 308412);	-- Meaty Apple Dumplings / 9.0 Cooking - Mastery Food 01
-i(0, 308414);	-- Pickled Meat Smoothie / 9.0 Cooking - Stam Food 01
-i(0, 308417);	-- Seraph Tenders / Health / Mana Regenwich
-i(0, 309830);	-- Shadowlands Cooking
-i(0, 308419);	-- Smothered Shank / Pungent Sole Pinwheel
-i(0, 308400);	-- Spinefin Souffle and Fries / Phantasmal Souffle and Fries / 9.0 Cooking - Crit Food 02
-i(0, 308426);	-- Steak a la Mode / 9.0 Cooking - Vers Food 02
-i(0, 308402);	-- Surprisingly Palatable Feast / 9.0 Cooking - Feast 01
-i(0, 308425);	-- Sweet Silvergill Sausages / 9.0 Cooking - Vers Food 01
-i(0, 308405);	-- Tenebrous Crown Roast Aspic / 9.0 Cooking - Haste Food 02
--- ITEM --
-i(182668, 308403);	-- Feast of Gluttonous Hedonism / 9.0 Cooking - Feast 02
--- QUEST --
-i(0, 338100);	-- Arden Apple Pie
-i(0, 338107);	-- Diced Vegetables
-i(0, 338115);	-- Ember Sauce
-i(0, 338106);	-- Grazer Bone Broth
-i(0, 338101);	-- Oat Pie Crust
-i(0, 338117);	-- Seared Cutlets
-i(0, 338116);	-- Skewered Meats
-i(0, 338102);	-- Sliced Arden Apples
-i(0, 338110);	-- Spider Jerky
-i(0, 338105);	-- Steward Stew
-i(0, 338113);	-- Thick Spider Meat
--- NYI --
-i(0, 308421);	-- Ardenweald Zonewich
-i(0, 308422);	-- Bastion Zonewich
-i(0, 308420);	-- Fried Bonefish / Speed Boostwich
-i(0, 308423);	-- Maldraxxus Zonewich
-i(0, 308416);	-- Quiethounds
-i(0, 308424);	-- Revendreth Zonewich
+--- NYI ---
+i(0, 308421);		-- Ardenweald Zonewich
+i(0, 308422);		-- Bastion Zonewich
+i(0, 308423);		-- Maldraxxus Zonewich
+i(0, 308416);		-- Quiethounds
+i(0, 308424);		-- Revendreth Zonewich
 
 -----------------
 -- PATCH 9.0.2 --
 -----------------
--- ITEM --
+--- TRAINER ---
+i(0, 309830);		-- Shadowlands Cooking
+i(0, 308415);		-- Banana Beef Pudding
+i(0, 308410);		-- Biscuits and Caviar
+i(0, 308397);		-- Butterscotch Marinated Ribs
+i(0, 308411);		-- Candied Amberjack Cakes
+i(0, 308404);		-- Cinnamon Bonefish Stew
+i(0, 308420);		-- Fried Bonefish
+i(0, 308413);		-- Iridescent Ravioli with Apple Sauce
+i(0, 308412);		-- Meaty Apple Dumplings
+i(0, 308414);		-- Pickled Meat Smoothie
+i(0, 308417);		-- Seraph Tenders
+i(0, 308419);		-- Smothered Shank
+i(0, 308400);		-- Spinefin Souffle and Fries
+i(0, 308426);		-- Steak a la Mode
+i(0, 308402);		-- Surprisingly Palatable Feast
+i(0, 308425);		-- Sweet Silvergill Sausages
+i(0, 308405);		-- Tenebrous Crown Roast Aspic
+--- ITEM ---
 i(184689, 347509);	-- Extra Fancy Darkmoon Feast
 i(184683, 347457);	-- Extra Lemony Herb Filet
 i(184625, 347176);	-- Extra Sugary Fish Feast
+i(182668, 308403);	-- Feast of Gluttonous Hedonism
+--- QUEST ---
+i(0, 338100);		-- Arden Apple Pie
+i(0, 338107);		-- Diced Vegetables
+i(0, 338115);		-- Ember Sauce
+i(0, 338106);		-- Grazer Bone Broth
+i(0, 338101);		-- Oat Pie Crust
+i(0, 338117);		-- Seared Cutlets
+i(0, 338116);		-- Skewered Meats
+i(0, 338102);		-- Sliced Arden Apples
+i(0, 338110);		-- Spider Jerky
+i(0, 338105);		-- Steward Stew
+i(0, 338113);		-- Thick Spider Meat
 
 -----------------
 -- PATCH 9.1.0 --
 -----------------
--- ITEM --
+--- ITEM ---
 i(187007, 354766);	-- Bonemeal Bread
 i(187008, 354768);	-- Porous Rock Candy
 i(187006, 354764);	-- Twilight Tea
@@ -705,35 +704,35 @@ i(187006, 354764);	-- Twilight Tea
 -----------------
 -- PATCH 9.2.0 --
 -----------------
--- ITEM --
+--- ITEM ---
 i(187804, 359333);	-- Empty Kettle of Stone Soup
 
 ------------------
 -- PATCH 10.0.0 --
 ------------------
--- TRAINER --
-i(0, 366256);	-- Dragon Isles Cooking
-i(0, 381364);	-- Assorted Exotic Spices
-i(0, 381371);	-- Breakfast of Draconic Champions
-i(0, 381367);	-- Cheese and Quackers
-i(0, 381382);	-- Delicious Dragon Spittle
-i(0, 381389);	-- Hopefully Healthy
-i(0, 381368);	-- Mackerel Snackerel
-i(0, 381363);	-- Pebbled Rock Salts
-i(0, 381369);	-- Probably Protein
-i(0, 381411);	-- Salted Meat Mash
-i(0, 381386);	-- Scrambled Basilisk Eggs
-i(0, 381370);	-- Sweet and Sour Clam Chowder
-i(0, 381365);	-- Twice-Baked Potato
-i(0, 381381);	-- Zesty Water
--- ITEM --
+--- TRAINER ---
+i(0, 366256);		-- Dragon Isles Cooking
+i(0, 381364);		-- Assorted Exotic Spices
+i(0, 381371);		-- Breakfast of Draconic Champions
+i(0, 381367);		-- Cheese and Quackers
+i(0, 381382);		-- Delicious Dragon Spittle
+i(0, 381389);		-- Hopefully Healthy
+i(0, 381368);		-- Mackerel Snackerel
+i(0, 381363);		-- Pebbled Rock Salts
+i(0, 381369);		-- Probably Protein
+i(0, 381411);		-- Salted Meat Mash
+i(0, 381386);		-- Scrambled Basilisk Eggs
+i(0, 381370);		-- Sweet and Sour Clam Chowder
+i(0, 381365);		-- Twice-Baked Potato
+i(0, 381381);		-- Zesty Water
+--- ITEM ---
 i(198104, 381377);	-- Blubbery Muffin
 i(198105, 381378);	-- Celebratory Cake
 i(195881, 381385);	-- Charred Hornswog Steaks
 i(198109, 381383);	-- Churnbelly Tea
 i(198127, 381412);	-- Fated Fortune Cookie
-i(198114, 381392);	-- Filet of Fangs (FISHING?)
-i(201787, 381392);	-- Filet of Fangs (QUEST?)
+i(198114, 381392);	-- Filet of Fangs
+i(201787, 381392);	-- Filet of Fangs
 i(198131, 381418);	-- Gral's Devotion
 i(198129, 381415);	-- Gral's Reverence
 i(198130, 381417);	-- Gral's Veneration
@@ -741,71 +740,73 @@ i(198132, 381420);	-- Hoard of Draconic Delicacies
 i(198102, 381375);	-- Impossibly Sharp Cutting Knife
 i(198098, 378302);	-- Ooey-Gooey Chocolate
 i(198101, 381373);	-- Salad on the Side
-i(198116, 381395);	-- Salt-Baked Fishcake (FISHING?)
-i(201786, 381395);	-- Salt-Baked Fishcake (QUEST?)
-i(198115, 381393);	-- Seamoth Surprise (FISHING?)
-i(201785, 381393);	-- Seamoth Surprise (QUEST?)
+i(198116, 381395);	-- Salt-Baked Fishcake
+i(201786, 381395);	-- Salt-Baked Fishcake
+i(198115, 381393);	-- Seamoth Surprise
+i(201785, 381393);	-- Seamoth Surprise
 i(198103, 381376);	-- Snow in a Cone
 i(198106, 381380);	-- Tasty Hatchling's Treat
 i(194964, 381388);	-- Thrice-Spiced Mammoth Kabob
-i(198113, 381391);	-- Timely Demise (FISHING?)
-i(201784, 381391);	-- Timely Demise (QUEST?)
+i(198113, 381391);	-- Timely Demise
+i(201784, 381391);	-- Timely Demise
 i(194965, 381413);	-- Yusa's Hearty Stew
--- DISCOVERY --
-i(0, 381397);	-- Aromatic Seafood Platter
-i(0, 381403);	-- Braised Bruffalon Brisket
-i(0, 381396);	-- Feisty Fish Sticks
-i(0, 381402);	-- Great Cerulean Sea
-i(0, 381399);	-- Revenge, Served Cold
-i(0, 381404);	-- Riverside Picnic
-i(0, 381407);	-- Roast Duck Delight
-i(0, 381398);	-- Sizzling Seafood Medley
-i(0, 381400);	-- Thousandbone Tongueslicer
--- NYI --
-i(198118, 0);	-- Aromatic Seafood Platter
-i(198100, 0);	-- Assorted Exotic Spices
-i(198123, 0);	-- Braised Bruffalon Brisket
-i(198097, 0);	-- Breakfast of Draconic Champions
-i(198093, 0);	-- Cheese and Quackers
-i(198108, 0);	-- Delicious Dragon Spittle
-i(198117, 0);	-- Feisty Fish Sticks
-i(198122, 0);	-- Great Cerulean Sea
-i(198112, 0);	-- Hopefully Healthy
-i(198094, 0);	-- Mackerel Snackerel
-i(198099, 0);	-- Pebbled Rock Salts
-i(198095, 0);	-- Probably Protein
-i(198120, 0);	-- Revenge, Served Cold
-i(198124, 0);	-- Riverside Picnic
-i(198125, 0);	-- Roast Duck Delight
-i(198126, 0);	-- Salted Meat Mash
-i(198111, 0);	-- Scrambled Basilisk Eggs
-i(198119, 0);	-- Sizzling Seafood Medley
-i(198096, 0);	-- Sweet and Sour Clam Chowder
-i(198121, 0);	-- Thousandbone Tongueslicer
-i(198092, 0);	-- Twice-Baked Potato
-i(198107, 0);	-- Zesty Water
+--- DISCOVERY ---
+i(0, 381397);		-- Aromatic Seafood Platter
+i(0, 381403);		-- Braised Bruffalon Brisket
+i(0, 381396);		-- Feisty Fish Sticks
+i(0, 381402);		-- Great Cerulean Sea
+i(0, 381399);		-- Revenge, Served Cold
+i(0, 381404);		-- Riverside Picnic
+i(0, 381407);		-- Roast Duck Delight
+i(0, 381398);		-- Sizzling Seafood Medley
+i(0, 381400);		-- Thousandbone Tongueslicer
+--- NYI ---
+i(198118, 0);		-- Aromatic Seafood Platter
+i(198100, 0);		-- Assorted Exotic Spices
+i(198123, 0);		-- Braised Bruffalon Brisket
+i(198097, 0);		-- Breakfast of Draconic Champions
+i(198093, 0);		-- Cheese and Quackers
+i(198108, 0);		-- Delicious Dragon Spittle
+i(198117, 0);		-- Feisty Fish Sticks
+i(198122, 0);		-- Great Cerulean Sea
+i(198112, 0);		-- Hopefully Healthy
+i(198094, 0);		-- Mackerel Snackerel
+i(198099, 0);		-- Pebbled Rock Salts
+i(198095, 0);		-- Probably Protein
+i(198120, 0);		-- Revenge, Served Cold
+i(198124, 0);		-- Riverside Picnic
+i(198125, 0);		-- Roast Duck Delight
+i(198126, 0);		-- Salted Meat Mash
+i(198111, 0);		-- Scrambled Basilisk Eggs
+i(198119, 0);		-- Sizzling Seafood Medley
+i(198096, 0);		-- Sweet and Sour Clam Chowder
+i(198121, 0);		-- Thousandbone Tongueslicer
+i(198092, 0);		-- Twice-Baked Potato
+i(198107, 0);		-- Zesty Water
 
 ------------------
 -- PATCH 10.0.5 --
 ------------------
--- ITEM --
+--- ITEM ---
 i(202249, 13028);	-- Goldthorn Tea
 
 ------------------
 -- PATCH 10.0.7 --
 ------------------
+--- ITEM ---
 i(202289, 398438);	-- Firewater Sorbet
 i(204073, 403018);	-- Deviously Deviled Eggs
 i(203422, 400807);	-- Sparkling Spice Pouch
--- Quest --
-i(0, 399034);	-- Curried Coconut Crab
-i(0, 399040);	-- Feast for the Ancestors
-i(0, 399035);	-- Grilled Southfury Salmon
-i(0, 399038);	-- Spicy Seared Talbuk Steak
+--- QUEST ---
+i(0, 399034);		-- Curried Coconut Crab
+i(0, 399040);		-- Feast for the Ancestors
+i(0, 399035);		-- Grilled Southfury Salmon
+i(0, 399038);		-- Spicy Seared Talbuk Steak
 
 ------------------
 -- PATCH 10.1.0 --
 ------------------
+--- ITEM ---
 i(204849, 407100);	-- Charitable Cheddar
 i(204847, 407066);	-- Rocks on the Rocks
 
@@ -813,13 +814,13 @@ i(204847, 407066);	-- Rocks on the Rocks
 -- PATCH 10.1.5 --
 ------------------
 --- NYI ---
-i(0, 412533);	-- Druidic Dreamsalad
-i(0, 412534);	-- Fine Taladorian Cheese Platter
-i(0, 412531);	-- Highly Spiced Haunch
-i(0, 411178);	-- Lemon Silverleaf Tea
-i(0, 412537);	-- Picante Pomfruit Cake
-i(0, 412536);	-- Roquefort-Stuffed Peppers
-i(0, 412535);	-- Venrik's Goat Milk
+i(0, 412533);		-- Druidic Dreamsalad
+i(0, 412534);		-- Fine Taladorian Cheese Platter
+i(0, 412531);		-- Highly Spiced Haunch
+i(0, 411178);		-- Lemon Silverleaf Tea
+i(0, 412537);		-- Picante Pomfruit Cake
+i(0, 412536);		-- Roquefort-Stuffed Peppers
+i(0, 412535);		-- Venrik's Goat Milk
 
 ------------------
 -- PATCH 10.2.0 --

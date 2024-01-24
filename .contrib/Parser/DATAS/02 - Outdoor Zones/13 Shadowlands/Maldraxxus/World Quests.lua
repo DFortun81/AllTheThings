@@ -21,6 +21,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(59703),	-- Abombing Run
 			q(61605, {	-- Alchemy: Draught of Grotesque Strength
 				["requireSkill"] = ALCHEMY,
+				["g"] = {
+					r(338199, {["u"]=TRAINING}),	-- Brutal Oil
+					r(338200, {["u"]=TRAINING}),	-- Crushed Bones
+					r(338198, {["u"]=TRAINING}),	-- Draught of Grotesque Strength
+					i(182049),	-- Bones of Defeated Enemies (QI!)
+					i(182047),	-- Brutal Oil (QI!)
+					i(182048),	-- Crushed Bones (QI!)
+					i(181858),	-- Draught of Grotesque Strength (QI!)
+				},
 			}),
 			q(61352),	-- All Will Be Consumed
 			q(61353),	-- All Will Be Consumed
@@ -47,6 +56,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60531),	-- Chosen Champions
 			q(61607, {	-- Cooking: Spider Jerky
 				["requireSkill"] = COOKING,
+				["g"] = {
+					r(338110, {["u"]=TRAINING}),	-- Spider Jerky
+					r(338113, {["u"]=TRAINING}),	-- Thick Spider Meat
+					i(182046),	-- Grave Dust (QI!)
+					i(181946),	-- Spider Jerky (QI!)
+					i(182045),	-- Thick Spider Legs (QI!)
+					i(182044),	-- Thick Spider Meat (QI!)
+				},
 			}),
 			q(58490, {	-- Deadly Reminder
 				n(161857, { -- Nirvaska the Summoner

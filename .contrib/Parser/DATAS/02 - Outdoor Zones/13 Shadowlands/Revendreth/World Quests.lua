@@ -31,6 +31,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61619, {	-- Alchemy: Elixir of Humility
 				["requireSkill"] = ALCHEMY,
 				["g"] = {
+					r(338204, {["u"]=TRAINING}),	-- Bramblethorn Juice
+					r(338202, {["u"]=TRAINING}),	-- Elixir of Humility
+					r(338203, {["u"]=TRAINING}),	-- Refined Submission
 					i(182072),	-- Bramblethorn Juice (QI!)
 					i(181857),	-- Elixir of Humility (QI!)
 					i(182073),	-- Fresh Bramblethorn Trimmings (QI!)
@@ -58,6 +61,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61621, {	-- Cooking: Skewered Meats
 				["requireSkill"] = COOKING,
+				["g"] = {
+					r(338115, {["u"]=TRAINING}),	-- Ember Sauce
+					r(338117, {["u"]=TRAINING}),	-- Seared Cutlets
+					r(338116, {["u"]=TRAINING}),	-- Skewered Meats
+					i(182096),	-- Ember Chilis (QI!)
+					i(182068),	-- Ember Sauce (QI!)
+					i(182070),	-- Fresh Beast Steak (QI!)
+					i(182069),	-- Seared Cutlets (QI!)
+					i(181947),	-- Skewered Meats (QI!)
+				},
 			}),
 			q(60532),	-- Destroy the Dominant
 			q(57443),	-- Dirty Job: Demolition Detail

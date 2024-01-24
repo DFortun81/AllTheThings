@@ -11,22 +11,58 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 	i(187742, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark of the First Ones
 	i(183942),	-- Novice Crafter's Mark
 	prof(ALCHEMY, {
-		n(HEAD, {
+		filter(CONSUMABLES, {
+			i(187802, {["timeline"] = {ADDED_9_2_0}}),	-- Cosmic Healing Potion
+			i(171286),	-- Embalmer's Oil
+			i(171284),	-- Eternal Cauldron
+			i(171351),	-- Potion of Deathly Fixation
+			i(171350),	-- Potion of Divine Awakening
+			i(171352),	-- Potion of Empowered Exorcisms
+			i(171271),	-- Potion of Hardened Shadows
+			i(171349),	-- Potion of Phantom Fire
+			i(176811),	-- Potion of Sacrificial Anima
+			i(171264),	-- Potion of Shaded Sight
+			i(171263),	-- Potion of Soul Purity
+			i(171370),	-- Potion of Specter Swiftness
+			i(171270),	-- Potion of Spectral Agility
+			i(171273),	-- Potion of Spectral Intellect
+			i(171274),	-- Potion of Spectral Stamina
+			i(171275),	-- Potion of Spectral Strength
+			i(171272),	-- Potion of Spiritual Clarity
+			i(171266),	-- Potion of the Hidden Spirit
+			i(184090),	-- Potion of the Psychopomp's Speed
+			i(183823),	-- Potion of Unhindered Passing
+			i(171285),	-- Shadowcore Oil
+			i(171276),	-- Spectral Flask of Power
+			i(171278),	-- Spectral Flask of Stamina
+			i(171301),	-- Spiritual Anti-Venom
+			i(171267),	-- Spiritual Healing Potion
+			i(171268),	-- Spiritual Mana Potion
+			i(171269),	-- Spiritual Rejuvenation Potion
+		}),
+		filter(COSMETIC, {
 			i(180751),	-- Red Noggin Candle
 		}),
-		filter(TRINKET_F, {
-			i(171323, {	-- Spiritual Alchemy Stone
-				["collectible"] = false,
-			}),
-		}),
 		filter(MISC, {
-			i(187827),	-- Infusion: Corpse Purification
-			i(187850),	-- Sustaining Armor Polish
-			i(186697),	-- Blossom Burst
-			i(186698),	-- Torch Burst
-			i(186699),	-- Widow Burst
-			i(186700),	-- Marrow Burst
-			i(186701),	-- Glory Burst
+			i(186697, {["timeline"] = {ADDED_9_1_0}}),	-- Blossom Burst
+			i(186701, {["timeline"] = {ADDED_9_1_0}}),	-- Glory Burst
+			i(171287),	-- Ground Death Blossom
+			i(171290),	-- Ground Marrowroot
+			i(171292),	-- Ground Nightshade
+			i(171291),	-- Ground Rising Glory
+			i(171288),	-- Ground Vigil's Torch
+			i(171289),	-- Ground Widowbloom
+			i(187827, {["timeline"] = {ADDED_9_2_0}}),	-- Infusion: Corpse Purification
+			i(186700, {["timeline"] = {ADDED_9_1_0}}),	-- Marrow Burst
+			i(186694, {["timeline"] = {ADDED_9_1_0}}),	-- Shaded Bag of Ore
+			i(180457),	-- Shadestone
+			i(171428),	-- Shadowghast Ingot
+			i(187850, {["timeline"] = {ADDED_9_2_0}}),	-- Sustaining Armor Polish
+			i(186698, {["timeline"] = {ADDED_9_1_0}}),	-- Torch Burst
+			i(186699, {["timeline"] = {ADDED_9_1_0}}),	-- Widow Burst
+		}),
+		filter(TRINKET_F, {
+			i(171323),	-- Spiritual Alchemy Stone
 		}),
 	}),
 	prof(BLACKSMITHING, {
@@ -121,6 +157,29 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 			i(171386),	-- Ceremonious Spear
 			i(171392),	-- Ceremonious Warglaive
 		}),
+	}),
+	prof(COOKING, {
+		i(172069),	-- Banana Beef Pudding
+		i(172046),	-- Biscuits and Caviar
+		i(186725, {["timeline"] = {ADDED_9_1_0}}),	-- Bonemeal Bread
+		i(172040),	-- Butterscotch Marinated Ribs
+		i(172047),	-- Candied Amberjack Cakes
+		i(172044),	-- Cinnamon Bonefish Stew
+		i(187648, {["timeline"] = {ADDED_9_2_0}}),	-- Empty Kettle of Stone Soup
+		i(172043),	-- Feast of Gluttonous Hedonism
+		i(172063),	-- Fried Bonefish
+		i(172049),	-- Iridescent Ravioli with Apple Sauce
+		i(172048),	-- Meaty Apple Dumplings
+		i(172068),	-- Pickled Meat Smoothie
+		i(186726, {["timeline"] = {ADDED_9_1_0}}),	-- Porous Rock Candy
+		i(172061),	-- Seraph Tenders
+		i(172062),	-- Smothered Shank
+		i(172041),	-- Spinefin Souffle and Fries
+		i(172051),	-- Steak a la Mode
+		i(172042),	-- Surprisingly Palatable Feast
+		i(172050),	-- Sweet Silvergill Sausages
+		i(172045),	-- Tenebrous Crown Roast Aspic
+		i(186704, {["timeline"] = {ADDED_9_1_0}}),	-- Twilight Tea
 	}),
 	prof(ENCHANTING, {
 		spell(13262, {	-- Disenchant

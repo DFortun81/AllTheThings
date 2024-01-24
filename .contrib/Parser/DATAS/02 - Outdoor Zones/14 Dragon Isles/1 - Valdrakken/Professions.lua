@@ -16,27 +16,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["g"] = DF_BLACKSMITHING,
 				}),
 			}),
-			prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKING }, {
+			prof(COOKING, {
 				n(185556, {	-- Erugosa <Cooking Trainer>
 					["coord"] = { 46.6, 46.6, VALDRAKKEN },
-					["g"] = {
-						r(366256),	-- Dragon Isles Cooking
-						r(381364),	-- Assorted Exotic Spices
-						r(381371),	-- Breakfast of Draconic Champions
-						r(381367),	-- Cheese and Quackers
-						r(381382),	-- Delicious Dragon Spittle
-						r(381389),	-- Hopefully Healthy
-						r(381368),	-- Mackerel Snackerel
-						r(381363),	-- Pebbled Rock Salts
-						r(381369),	-- Probably Protein
-						r(381411),	-- Salted Meat Mash
-						r(381386),	-- Scrambled Basilisk Eggs
-						r(381370),	-- Sweet and Sour Clam Chowder
-						r(381365),	-- Twice-Baked Potato
-						r(381381),	-- Zesty Water
-					},
+					["g"] = DF_COOKING,
 				}),
-			}));
+			}),
 			prof(ENCHANTING, {
 				n(193744, {	-- Soragosa <Enchanting Trainer>
 					["coord"] = { 30.8, 61.4, VALDRAKKEN },

@@ -24,6 +24,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60929),	-- Air Supremacy
 			q(61434, {	-- Alchemy: Flask of Measured Discipline
 				["requireSkill"] = ALCHEMY,
+				["g"] = {
+					r(338195, {["u"]=TRAINING}),	-- Distilled Resolve
+					r(338194, {["u"]=TRAINING}),	-- Flask of Measured Discipline
+					r(338196, {["u"]=TRAINING}),	-- Pulverized Breezebloom
+					i(182025),	-- Distilled Resolve (QI!)
+					i(181859),	-- Flask of Measured Discipline (QI!)
+					i(182027),	-- Fresh Breezebloom Trimmings (QI!)
+					i(182026),	-- Pulverized Breezebloom (QI!)
+				},
 			}),
 			q(62235),	-- Allay Their Fears
 			q(59601),	-- Assault on the Vestibule
@@ -32,9 +41,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61564, {	-- Blacksmithing: Polished Kyrian Shield
 				["requireSkill"] = BLACKSMITHING,
 				["g"] = {
-					r(337619,{["u"]=TRAINING}),	-- Polished Kyrian Shield
-					r(337626,{["u"]=TRAINING}),	-- Reforged Kyrian Shield
-					r(337621,{["u"]=TRAINING}),	-- Tarnished Kyrian Shield
+					r(337619, {["u"]=TRAINING}),	-- Polished Kyrian Shield
+					r(337626, {["u"]=TRAINING}),	-- Reforged Kyrian Shield
+					r(337621, {["u"]=TRAINING}),	-- Tarnished Kyrian Shield
 					i(181791),	-- Polished Kyrian Shield (QI!)
 					i(181790),	-- Reforged Kyrian Shield (QI!)
 					i(181793),	-- Shattered Kyrian Shield Fragment (QI!)
@@ -45,13 +54,25 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61784),	-- Cliffs of Bastion
 			q(61439, {	-- Cooking: Steward Stew
 				["requireSkill"] = COOKING,
+				["g"] = {
+					r(338107, {["u"]=TRAINING}),	-- Diced Vegetables
+					r(338106, {["u"]=TRAINING}),	-- Grazer Bone Broth
+					r(338105, {["u"]=TRAINING}),	-- Steward Stew
+					i(182022),	-- Diced Vegetables (QI!)
+					i(182098),	-- Fresh Carrots (QI!)
+					i(182100),	-- Fresh Mushrooms (QI!)
+					i(182099),	-- Fresh Turnips (QI!)
+					i(182024),	-- Grazer Bones (QI!)
+					i(182023),	-- Grazer Bone Broth (QI!)
+					i(181945),	-- Steward Stew (QI!)
+				},
 			}),
 			q(60534),	-- Disloyal Denizens
 			q(61549),	-- Drought Conditions
 			q(61629, {	-- Enchanting: True Aim
 				["requireSkill"] = ENCHANTING,
 				["g"] = {
-					r(338121,{["u"]=TRAINING}),	-- True Aim Spear
+					r(338121, {["u"]=TRAINING}),	-- True Aim Spear
 					i(182021),	-- Antique Kyrian Javelin (QI!)
 					i(181948),	-- Enchant: True Aim (QI!)
 					i(182020),	-- Transcendent Dust (QI!)

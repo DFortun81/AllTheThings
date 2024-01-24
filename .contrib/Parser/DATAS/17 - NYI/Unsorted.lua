@@ -2639,7 +2639,6 @@ root(ROOTS.Unsorted, {
 			i(178558),	-- Afflictor's Key
 			i(182356),	-- Aged Windcheese
 			i(181463),	-- Alchemist's Crate of the Anonymous Buyer
-			i(171293),	-- Alchemist's Pouch \\ Alchemical Concoction
 			i(180269),	-- Althera's Field Report
 			i(180376),	-- Amalgamation of Sin
 			i(183400),	-- Amethystine Powder
@@ -2684,7 +2683,6 @@ root(ROOTS.Unsorted, {
 			i(182473),	-- Archivam Tome
 			i(178140),	-- Archonic Resonator
 			i(178041),	-- Archonic Resonator
-			i(181381),	-- Arden Apple Pie \\ Cooking Item \\ Chef's Surprise
 			i(181997),	-- Ardenberry Pigment \\ Base Thing
 			i(178717),	-- Ardenmoth Cocoon
 			i(182005),	-- Ardensilk Cloth \\ Kinda Thing
@@ -2745,7 +2743,6 @@ root(ROOTS.Unsorted, {
 			i(173013),	-- Bag of Faerie Dust
 			i(180439),	-- Bagged Frog
 			i(178493),	-- Baine Bloodhoof
-			i(172069),	-- Banana Beef Pudding \\ 9.0 Cooking - Stam Food 02
 			i(182302),	-- Band Promotional Posters
 			i(178496),	-- Baron's Warhorn
 			i(178084),	-- Bastion Epic Treasure
@@ -2764,7 +2761,6 @@ root(ROOTS.Unsorted, {
 			i(182645),	-- Binding of the Banished One
 			i(182249),	-- Bindings of Fleshcrafting \\ Bracers of Control
 			i(178768),	-- Binds of the Unwitting Servant
-			i(172046),	-- Biscuits and Caviar \\ 9.0 Cooking - Health Food 01
 			i(171429),	-- Blacksmithing Reagent 02
 			i(171430),	-- Blacksmithing Reagent 03
 			i(171431),	-- Blacksmithing Reagent 04
@@ -2800,13 +2796,11 @@ root(ROOTS.Unsorted, {
 			i(174749),	-- Bone Splinter
 			i(173700),	-- Bonebinder Zal's Key
 			i(179317),	-- Bonemetal
-			i(182049),	-- Bones of Defeated Enemies
 			i(173380),	-- Book of the Unspeakable
 			i(182197),	-- Borrowed Kyranite
 			i(182012),	-- Borrowed Solenium Nugget \\ Base Thing
 			i(181281),	-- Boss 10 Lure
 			i(172900),	-- Bounty Notes
-			i(182072),	-- Bramblethorn Juice
 			i(182199),	-- Brightspark's Bottled Blaze
 			i(182056),	-- Brilliant Bauble \\ Almost Thing
 			i(174854),	-- Brimming Animus Core
@@ -2815,13 +2809,11 @@ root(ROOTS.Unsorted, {
 			i(183119),	-- Broker Bauble
 			i(182956),	-- Broker Hunting Rune \\ Genesis Rune
 			i(174497),	-- Brushberry
-			i(182047),	-- Brutal Oil
 			i(180031),	-- Bulbous Seaweed Stalk
 			i(174467),	-- Bulging Digestive Sac
 			i(182779),	-- Bundle of "Modified" Reagents
 			i(174997),	-- Bundle of Lumber
 			i(182679),	-- Bundle of Reagents
-			i(172040),	-- Butterscotch Marinated Ribs \\ 9.0 Cooking - Crit Food 01
 			i(176760),	-- Buzzkill's Stinger
 			i(180829),	-- Cache of Anima Tolls
 			i(173526),	-- Caer Darrow Scroll
@@ -2830,7 +2822,6 @@ root(ROOTS.Unsorted, {
 			i(173965),	-- Calibrated Mawstone
 			i(172094),	-- Callous Hide \\ Desolate Hide
 			i(172095),	-- Callous Hide Scraps \\ Desolate Hide Scraps
-			i(172047),	-- Candied Amberjack Cakes \\ 9.0 Cooking - Health Food 02
 			i(181473),	-- Candle Wax Chunk \\ Small Candle Stub
 			i(178791),	-- Carved Cloudfeather Call
 			i(181961),	-- Carved Crystal Ring \\ Maldraxxus Jewelcrafting Item
@@ -2845,7 +2836,6 @@ root(ROOTS.Unsorted, {
 			i(182159),	-- Choofa Very Happy PH Reward
 			i(183185),	-- Chromie's Scroll
 			i(183188),	-- Chromie's Scroll
-			i(172044),	-- Cinnamon Bonefish Stew \\ 9.0 Cooking - Haste Food 01
 			i(171961),	-- Cleansing Chime
 			i(181453),	-- Cloak of Camouflage \\ Ardenweald Tailoring Item \\ Tailoring Item \\ Tailoring Foozle
 			i(174526),	-- Clotting Patches
@@ -2909,7 +2899,6 @@ root(ROOTS.Unsorted, {
 			i(173873),	-- Crumpled Journal Page
 			i(183797),	-- Crusader's Dressing
 			i(183689),	-- Crusader's Dressing
-			i(182048),	-- Crushed Bones
 			i(180463),	-- Crusty Scepter
 			i(173267),	-- Crystalized Gormgris
 			i(172512),	-- Culexwood Branch
@@ -2963,16 +2952,13 @@ root(ROOTS.Unsorted, {
 			i(172093),	-- Desolate Leather Scraps
 			i(180308),	-- Determined Stone Visage
 			i(174938),	-- Devourer Essence
-			i(182022),	-- Diced Vegetables
 			i(174110),	-- Disassembly Flag
 			i(180808),	-- Discarded Torments
 			i(183950),	-- Distilled Death Extract
-			i(182025),	-- Distilled Resolve
 			i(182735),	-- Domination Blade
 			i(171990),	-- Dormant Maldracite
 			i(176806),	-- Drained Anima-Core
 			i(180232),	-- Dranosh'ar Blockade Report
-			i(181858),	-- Draught of Grotesque Strength
 			i(180996),	-- Dread Sentinel's Chestplate
 			i(181003),	-- Dread Sentinel's Cloak
 			i(181001),	-- Dread Sentinel's Girdle
@@ -3011,16 +2997,12 @@ root(ROOTS.Unsorted, {
 			i(170481),	-- Elevator Key: Level 15
 			i(170482),	-- Elevator Key: Level 20
 			i(170479),	-- Elevator Key: Level 5
-			i(181857),	-- Elixir of Humility
 			i(173532),	-- Elwynn Forest Scroll
 			i(177960),	-- Elwynn Report
 			i(180809),	-- Elysian Horn
 			i(173037),	-- Elysian Thade
 			i(178891),	-- Elysian Thread
-			i(171286),	-- Embalmer's Oil
-			i(182096),	-- Ember Chilis
 			i(179958),	-- Ember Court Guest List
-			i(182068),	-- Ember Sauce
 			i(180421),	-- Emberfall
 			i(174520),	-- Emeni's Magnificent Skin
 			i(168803),	-- Emergency Supplies
@@ -3062,7 +3044,6 @@ root(ROOTS.Unsorted, {
 			i(171281),	-- Eternal Cauldron
 			i(171282),	-- Eternal Cauldron
 			i(171283),	-- Eternal Cauldron
-			i(171284),	-- Eternal Cauldron
 			i(171280),	-- Eternal Flask
 			i(172461),	-- Eternal Twilight Wand
 			i(178042),	-- Eternity Plating
@@ -3117,7 +3098,6 @@ root(ROOTS.Unsorted, {
 			i(173092),	-- Five of Voracity \\ Five of Atonement
 			i(177042),	-- Five-Chime Batzos
 			i(174775),	-- Fix-It-Stick
-			i(181859),	-- Flask of Measured Discipline
 			i(182297),	-- Flayed Flesh
 			i(176814),	-- Fleshcrafter's Maldracite
 			i(182341),	-- Fleshshaper's Heart
@@ -3138,20 +3118,11 @@ root(ROOTS.Unsorted, {
 			i(173091),	-- Four of Voracity \\ Four of Atonement
 			i(175409),	-- Fractured Anima Crystal
 			i(180769),	-- Fractured Stonewing
-			i(181987),	-- Fresh Arden Apples
 			i(182360),	-- Fresh Ardenweald Anima
 			i(182358),	-- Fresh Bastion Anima
-			i(182070),	-- Fresh Beast Steak
-			i(182073),	-- Fresh Bramblethorn Trimmings
-			i(182027),	-- Fresh Breezebloom Trimmings
-			i(182098),	-- Fresh Carrots
-			i(181985),	-- Fresh Dreamroot Trimmings
 			i(173268),	-- Fresh Gorm Gris \\ Ardenshard
 			i(182359),	-- Fresh Maldraxxus Anima
-			i(182100),	-- Fresh Mushrooms
 			i(182361),	-- Fresh Revendreth Anima
-			i(182099),	-- Fresh Turnips
-			i(172063),	-- Fried Bonefish \\ Speed Boostwich
 			i(175027),	-- Fulfilling Meditation
 			i(172084),	-- Fungal Beacon
 			i(182308),	-- Garnet Shard
@@ -3207,20 +3178,11 @@ root(ROOTS.Unsorted, {
 			i(173910),	-- Gracepetal Incense Burner
 			i(173704),	-- Granary Jug
 			i(180451),	-- Grand Inquisitor's Sinstone Fragment
-			i(182046),	-- Grave Dust
-			i(182023),	-- Grazer Bone Broth
-			i(182024),	-- Grazer Bones
 			i(182644),	-- Greater Wards and Barriers, Volume IV
 			i(173385),	-- Greenflame Candle
 			i(170053),	-- Grek'og's Tusk
 			i(172038),	-- Grim Iron Shackles
-			i(171287),	-- Ground Death Blossom \\ Death Blossom Extract
-			i(171290),	-- Ground Marrowroot \\ Marrowroot Extract
-			i(171292),	-- Ground Nightshade \\ Nightshade Extract
-			i(171291),	-- Ground Rising Glory \\ Rising Glory Extract
 			i(181861),	-- Ground Twilight Bark
-			i(171288),	-- Ground Vigil's Torch \\ Vigil's Torch Extract \\ Vigil's Candle Extract
-			i(171289),	-- Ground Widowbloom \\ Ground Widowblooom \\ Widowblooom Extract
 			i(175991),	-- Grove Defender's Focus \\ Droman's Focus
 			i(174877),	-- Grubby's Silk
 			i(182170),	-- Gryphon Soul \\ Gryphon Soulshape
@@ -3293,7 +3255,6 @@ root(ROOTS.Unsorted, {
 			i(173358),	-- Invitations
 			i(174093),	-- Ionata's Fangs \\ Bell of Remembrance
 			i(173033),	-- Iridescent Amberjack
-			i(172049),	-- Iridescent Ravioli with Apple Sauce \\ Crawler Ravioli with Apple Sauce \\ 9.0 Cooking - Mastery Food 02
 			i(176052),	-- Iron Skull Belt Buckle
 			i(173706),	-- Jade Jug
 			i(183757),	-- Jagged Blade
@@ -3346,7 +3307,6 @@ root(ROOTS.Unsorted, {
 			i(177540),	-- Lightdrinker Shoulders
 			i(181718),	-- Ligneous Phaedrum Ore \\ Luminous Phaedrum Ore
 			i(175025),	-- Lingering Moonfire
-			i(181983),	-- Liquid Sleep
 			i(176084),	-- List of Demands
 			i(180436),	-- List of wildseeds
 			i(180276),	-- Locked Toolbox Key
@@ -3400,7 +3360,6 @@ root(ROOTS.Unsorted, {
 			i(183165),	-- Mawsworn Crossbow
 			i(178553),	-- Mawsworn Key \\ Shackler's Key
 			i(180799),	-- Mawsworn Patrol Map \\ Mawguard Patrol Map
-			i(172048),	-- Meaty Apple Dumplings \\ 9.0 Cooking - Mastery Food 01
 			i(180010),	-- Meaty Crab Chunk
 			i(173728),	-- Meaty Exopods
 			i(174111),	-- Medallion of Avarice \\ Medallion of the Curator
@@ -3476,7 +3435,6 @@ root(ROOTS.Unsorted, {
 			i(171969),	-- Nondescript Robe
 			i(183795),	-- Notice of Special Delivery
 			i(182958),	-- Nox Root
-			i(182101),	-- Oat Pie Crust
 			i(177614),	-- Oathsworn Breastplate
 			i(177622),	-- Oathsworn Chestguard
 			i(177617),	-- Oathsworn Helm
@@ -3529,7 +3487,6 @@ root(ROOTS.Unsorted, {
 			i(177278),	-- Phial of Serenity
 			i(174043),	-- Phylactery of Arin'gore
 			i(175276),	-- Phylactery of Kel'Thuzad
-			i(172068),	-- Pickled Meat Smoothie \\ 9.0 Cooking - Stam Food 01
 			i(175137),	-- Piece of Shredded Scroll
 			i(180025),	-- Pile of Blubberfat
 			i(179304),	-- Pile of Muck
@@ -3553,26 +3510,7 @@ root(ROOTS.Unsorted, {
 			i(182058),	-- Polished Sinvyr Bar \\ Base Thing
 			i(173952),	-- Pomagrave
 			i(173896),	-- Portable Spy Kit
-			i(171351),	-- Potion of Deathly Fixation
-			i(171350),	-- Potion of Divine Awakening
-			i(171352),	-- Potion of Empowered Exorcisms
-			i(171271),	-- Potion of Hardened Shadows
-			i(181375),	-- Potion of Hibernal Rest \\ Alchemy Quest Item \\ Obsidian Colored Potion
-			i(171349),	-- Potion of Phantom Fire
-			i(176811),	-- Potion of Sacrificial Anima
-			i(171264),	-- Potion of Shaded Sight
-			i(171263),	-- Potion of Soul Purity
-			i(171370),	-- Potion of Specter Swiftness
-			i(171270),	-- Potion of Spectral Agility
-			i(171273),	-- Potion of Spectral Intellect
-			i(171274),	-- Potion of Spectral Stamina
-			i(171275),	-- Potion of Spectral Strength
-			i(171272),	-- Potion of Spiritual Clarity
-			i(171266),	-- Potion of the Hidden Spirit
-			i(184090),	-- Potion of the Psychopomp's Speed
-			i(183823),	-- Potion of Unhindered Passing
 			i(173355),	-- Pouch of Puffpetal Powder
-			i(181984),	-- Powdered Dreamroot
 			i(183724),	-- Poxedskin Sample
 			i(180887),	-- Preserved Organ
 			i(182061),	-- Prideful Pigment \\ Base Thing
@@ -3585,7 +3523,6 @@ root(ROOTS.Unsorted, {
 			i(180828),	-- Promissory Note
 			i(175047),	-- Protective Rebirth
 			i(178676),	-- Pulsating Hide Scraps \\ Pulsating Hide
-			i(182026),	-- Pulverized Breezebloom
 			i(178898),	-- Pungent Swarmer Toxin
 			i(175144),	-- Purest Healing
 			i(173233),	-- Pureweave Cloak
@@ -3607,7 +3544,6 @@ root(ROOTS.Unsorted, {
 			i(173029),	-- Quartermaster's Insignia
 			i(173128),	-- Quick Jewel Cluster
 			i(173122),	-- Quick Jewel Doublet
-			i(172060),	-- Quiethounds
 			i(174935),	-- Rabbit Meat
 			i(176442),	-- Ratwhisker Brew
 			i(175973),	-- Ravager Talon
@@ -3629,7 +3565,6 @@ root(ROOTS.Unsorted, {
 			i(182701),	-- Refined Blue Pigment
 			i(182700),	-- Refined Green Pigment
 			i(182699),	-- Refined Red Pigment
-			i(182071),	-- Refined Submission
 			i(171468),	-- Regal Cloth Scrap
 			i(181354),	-- Regenerative Magma
 			i(179313),	-- Registrar's Records
@@ -3682,7 +3617,6 @@ root(ROOTS.Unsorted, {
 			i(175981),	-- Rusted Chain
 			i(177028),	-- Rusty Chain \\ Sprite Fly
 			i(179303),	-- Rusty Sword
-			i(181988),	-- Sack of Arden Oats
 			i(178876),	-- Sack of Supplies
 			i(170550),	-- Sacred Scroll \\ Projection Core
 			i(182477),	-- Sacred Text
@@ -3696,8 +3630,6 @@ root(ROOTS.Unsorted, {
 			i(175138),	-- Sealed Scroll of Soul Rot
 			i(173898),	-- Sealed Scrolls
 			i(183953),	-- Sealing Wax
-			i(182069),	-- Seared Cutlets
-			i(172061),	-- Seraph Tenders \\ OOC Regenwich
 			i(183046),	-- Serrated Inking Spines
 			i(173076),	-- Seven of Putrescence \\ Seven of Putresence \\ Seven of the Macabre
 			i(173085),	-- Seven of Repose \\ Seven of the Rebirth
@@ -3706,9 +3638,7 @@ root(ROOTS.Unsorted, {
 			i(178904),	-- Shackle Key
 			i(180806),	-- Shadebound Testimonial
 			i(179308),	-- Shadeskin Brandy Phial
-			i(180457),	-- Shadestone
 			i(183187),	-- Shadeweaver Incantation
-			i(171285),	-- Shadowcore Oil
 			i(176928),	-- Shadowlands Skinning Knife
 			i(179919),	-- Shadowy Rabbit's Foot
 			i(179315),	-- Shadowy Shanks
@@ -3750,14 +3680,11 @@ root(ROOTS.Unsorted, {
 			i(173102),	-- Six of the Indomitable \\ Six of Ascendance
 			i(173093),	-- Six of Voracity \\ Six of Atonement
 			i(181955),	-- Skeletal Mudskipper \\ Maldraxxus Fishing Item
-			i(181947),	-- Skewered Meats
 			i(174524),	-- Skewering Needle
-			i(181986),	-- Sliced Arden Apples
 			i(173881),	-- Sludge Pump
 			i(173894),	-- Sludge-Camouflaged Pants
 			i(173893),	-- Sludge-Covered Belt
 			i(180891),	-- Smooshed Maggot
-			i(172062),	-- Smothered Shank \\ Pungent Sole Pinwheel
 			i(172058),	-- Smuggled Azerothian Produce \\ Humbling Pepper
 			i(182354),	-- Soft Vulpin Fur
 			i(182357),	-- Soggy Kelpcheese
@@ -3801,14 +3728,8 @@ root(ROOTS.Unsorted, {
 			i(173901),	-- Specialized Gutting Knife
 			i(181387),	-- Speckled Flametail \\ Ardenweald Fishing Item \\ Fishing Item \\ Toxic Darter
 			i(174464),	-- Spectral Bridle
-			i(171276),	-- Spectral Flask of Power
-			i(171278),	-- Spectral Flask of Stamina
 			i(180297),	-- Spellbound Notes
-			i(181946),	-- Spider Jerky
 			i(173036),	-- Spinefin Piranha
-			i(172041),	-- Spinefin Souffle and Fries \\ Phantasmal Souffle and Fries \\ 9.0 Cooking - Crit Food 02
-			i(171301),	-- Spiritual Anti-Venom
-			i(171269),	-- Spiritual Rejuvenation Potion
 			i(182006),	-- Spool of Ardensilk \\ Base Thing
 			i(175029),	-- Spreading Vale
 			i(178908),	-- Spriggan-Sized Polearm
@@ -3826,11 +3747,9 @@ root(ROOTS.Unsorted, {
 			i(177449),	-- Springrain Vest
 			i(173061),	-- Stabilizing Powder
 			i(178719),	-- Star Shower
-			i(172051),	-- Steak a la Mode \\ 9.0 Cooking - Versatility Food 02
 			i(173148),	-- Steel Cleaver
 			i(178722),	-- Steel Leaves
 			i(180848),	-- Steelskin Linebreaker's Head
-			i(181945),	-- Steward Stew
 			i(180285),	-- Steward's Golden Key
 			i(180049),	-- Steward's Silver Key
 			i(178515),	-- Stitched Surprise Cake
@@ -3890,10 +3809,8 @@ root(ROOTS.Unsorted, {
 			i(177041),	-- Sunwarmed Xyfias
 			i(175976),	-- Supervisor's Plans
 			i(176813),	-- Surgeon's Maldracite
-			i(172042),	-- Surprisingly Palatable Feast \\ 9.0 Cooking - Feast 01
 			i(178565),	-- Suspicious Message
 			i(174212),	-- Suspicious Weapon
-			i(172050),	-- Sweet Silvergill Sausages \\ 9.0 Cooking - Versatility Food 01
 			i(175037),	-- Symbiotic Growth
 			i(181367),	-- Ta Cartel Restock List
 			i(173259),	-- Tailoring - Modified Crafting Reagent 02
@@ -3921,7 +3838,6 @@ root(ROOTS.Unsorted, {
 			i(173737),	-- Temel's Body
 			i(173739),	-- Temel's Head
 			i(173738),	-- Temel's Wings
-			i(172045),	-- Tenebrous Crown Roast Aspic \\ 9.0 Cooking - Haste Food 02
 			i(172053),	-- Tenebrous Ribs
 			i(171104),	-- The Accuser's Sinstone
 			i(180217),	-- The Bad Container
@@ -3938,8 +3854,6 @@ root(ROOTS.Unsorted, {
 			i(177947),	-- Theotar's Lost Parasol
 			i(173158),	-- Theotar's Note
 			i(181452),	-- Thick Gormhide \\ Ardenweald Skinning Item \\ Skinning Item \\ Skinning Foozle
-			i(182045),	-- Thick Spider Legs
-			i(182044),	-- Thick Spider Meat
 			i(175143),	-- Thicker Bark
 			i(176054),	-- Thigh High Boots
 			i(180600),	-- Thistle Tea
@@ -4085,10 +3999,6 @@ root(ROOTS.Unsorted, {
 			i(178656),	-- Xeeli's Ritual Drafts
 			i(180032),	-- Young Seaweed Stalk
 			i(180787),	-- Zel'han's Broken Armor
-			i(172064),	-- zzOldArdenweald Zonewich \\ Ardenweald Zonewich
-			i(172065),	-- zzOldBastion Zonewich \\ Bastion Zonewich
-			i(172066),	-- zzOldMaldraxxus Zonewich \\ Maldraxxus Zonewich
-			i(172067),	-- zzOldRevendreth Zonewich \\ Revendreth Zonewich
 			i(178439),	-- zzzRated - Cloth Cord \\ Rated - Cloth Cord
 			i(178425),	-- zzzRated - Cloth Gloves \\ Rated - Cloth Gloves
 			i(178427),	-- zzzRated - Cloth Hood \\ Rated - Cloth Hood
@@ -4225,7 +4135,6 @@ root(ROOTS.Unsorted, {
 			i(187193),	-- Autographed Stuffed Seagull
 			i(187120),	-- Blood Healing Shard 1 - Rank 5
 			i(187004),	-- Bone Chew
-			i(186725),	-- Bonemeal Bread
 			i(185736),	-- Brilliant Golden Feather
 			i(187211),	-- Chronicle of Cartel Al
 			i(187343),	-- Condensed Offering Sphere
@@ -4305,7 +4214,6 @@ root(ROOTS.Unsorted, {
 			i(187112),	-- Packaged Soul Ash
 			i(187149),	-- Partial Conduit Index
 			i(187003),	-- Pet Plushy
-			i(186726),	-- Porous Rock Candy
 			i(186981),	-- Porous Stone Statue
 			i(187312),	-- Portentous Shard of Bek
 			i(187315),	-- Portentous Shard of Cor
@@ -4329,7 +4237,6 @@ root(ROOTS.Unsorted, {
 			i(187407),	-- Satchel of Security
 			i(187499),	-- Sculpted Elethium Orb
 			i(186197),	-- Seal of Death's Unity
-			i(186694),	-- Shaded Bag of Ore
 			i(186982),	-- Shaded Stone Statue
 			i(187468),	-- Shadehound Tack
 			i(187550),	-- Shadowsteel Shavings
@@ -4380,7 +4287,6 @@ root(ROOTS.Unsorted, {
 			i(186043),	-- Torghast Portal Manipulator
 			i(185743),	-- Torn Page
 			i(185829),	-- Trueheart Spear
-			i(186704),	-- Twilight Tea
 			i(187501),	-- Understanding the Purpose
 			i(187192),	-- Urn of Knowledge
 			i(186662),	-- Vantus Rune: Sanctum of Domination
@@ -4433,7 +4339,6 @@ root(ROOTS.Unsorted, {
 			i(189748),	-- Constialic Fluidic Spheroid \\ Fluidic Enhancement: Redundancy \\ Fluidic Enhancement: Stamina
 			i(187796),	-- Contract: The Enlightened \\ Contract: Enlightened Brokers
 			i(188214),	-- Core Vine Cluster [UNUSED]
-			i(187802),	-- Cosmic Healing Potion
 			i(187341),	-- Creation Codex: Animate
 			i(187340),	-- Creation Codex: Automa
 			i(189560),	-- Deflectialic Crystallic Spheroid \\ Crystallized Enhancement: Deflection \\ Crystalizated Absorption
@@ -4445,7 +4350,6 @@ root(ROOTS.Unsorted, {
 			i(189763),	-- Efficialic Crystallic Spheroid \\ Crystallized Enhancement: Efficiency
 			i(189757),	-- Efficialic Fluidic Spheroid \\ Fluidic Enhancement: Efficiency
 			i(187812),	-- Empty Kettle
-			i(187648),	-- Empty Kettle of Stone Soup
 			i(188275),	-- Energized Roots [UNUSED]
 			i(188523),	-- Energizing Leporid
 			i(188166),	-- Engraved Card

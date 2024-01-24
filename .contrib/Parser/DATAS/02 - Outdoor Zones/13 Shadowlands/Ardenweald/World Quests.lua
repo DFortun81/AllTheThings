@@ -19,6 +19,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61948),	-- Airborne Defense Force
 			q(61595, {	-- Alchemy: Potion of Hibernal Rest
 				["requireSkill"] = ALCHEMY,
+				["g"] = {
+					r(338191, {["u"]=TRAINING}),	-- Liquid Sleep
+					r(338190, {["u"]=TRAINING}),	-- Potion of Hibernal Rest
+					r(338192, {["u"]=TRAINING}),	-- Powdered Dreamroot
+					i(181985),	-- Fresh Dreamroot Trimmings (QI!)
+					i(181983),	-- Liquid Sleep (QI!)
+					i(181375),	-- Potion of Hibernal Rest (QI!)
+					i(181984),	-- Powdered Dreamroot (QI!)
+				},
 			}),
 			q(61949),	-- Ardenweald's Tricksters
 			q(61435, {	-- Blacksmithing: Stalker Arrowheads
@@ -38,6 +47,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61631),	-- Drust Between You and Me
 			q(61596, {	-- Cooking: Arden Apple Pie
 				["requireSkill"] = COOKING,
+				["g"] = {
+					r(338100, {["u"]=TRAINING}),	-- Arden Apple Pie
+					r(338101, {["u"]=TRAINING}),	-- Oat Pie Crust
+					r(338102, {["u"]=TRAINING}),	-- Sliced Arden Apples
+					i(181381),	-- Arden Apple Pie (QI!)
+					i(181987),	-- Fresh Arden Apples (QI!)
+					i(182101),	-- Oat Pie Crust (QI!)
+					i(181988),	-- Sack of Arden Oats (QI!)
+					i(181986),	-- Sliced Arden Apples (QI!)
+				},
 			}),
 			q(61440, {	-- Enchanting: Boundless Basket
 				["requireSkill"] = ENCHANTING,
