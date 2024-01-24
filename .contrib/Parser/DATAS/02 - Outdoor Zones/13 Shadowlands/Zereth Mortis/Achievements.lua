@@ -226,7 +226,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					15512,	-- Adventures in Zereth Mortis
 					15515,	-- Path to Enlightenment
 					15518,	-- A Means to an End
-					15220,	-- The Enlightened
 				}},
 				["g"] = {
 					spell(366736),	-- Zereth Mortis Flying
