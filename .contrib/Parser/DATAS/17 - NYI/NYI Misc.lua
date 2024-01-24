@@ -1134,8 +1134,6 @@ root(ROOTS.NeverImplemented, {
 				------ Insignia ------
 				i(210419),	-- Dream Wardens Insignia [Uncommon]
 				i(210420),	-- Dream Wardens Insignia [Rare]
-				------ Equipment Chest ------
-				i(210595),	-- Dreaming Equipment Chest
 			})),
 		}),
 	}),

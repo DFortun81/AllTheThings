@@ -149,6 +149,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(201327),	-- Emerald Dreamtime
 				},
 			}),
+			n(197711, {	-- Lindormi
+				["coord"] = { 53.2, 56.0, VALDRAKKEN },
+				["timeline"] = { "added 10.2.5.53040" },
+				["g"] = {
+					i(210595),	-- Dreaming Equipment Chest
+				},
+			}),
 			n(193029, {	-- Lysindra
 				["coord"] = { 48.2, 82.7, VALDRAKKEN },
 				["g"] = {

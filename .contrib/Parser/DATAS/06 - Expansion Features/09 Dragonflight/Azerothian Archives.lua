@@ -557,6 +557,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(205224),	-- Just a Rock
 						},
 					}),
+					q(78663, {	-- Excavation: Scattered Around the Tower
+						["coord"] = { 47.9, 48.7, ZARALEK_CAVERN },
+						["g"] = {
+							i(205224),	-- Just a Rock
+						},
+					}),
 					q(78739, {	-- Excavation: The Trove in the Tower
 						["coord"] = { 46.9, 48.8, ZARALEK_CAVERN },
 						["g"] = {
@@ -566,8 +572,14 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					q(76587, {	-- Research: Centaur of Ohn'ahran Plains
 						["coord"] = { 69, 34.3, OHNAHRAN_PLAINS },
 					}),
+					q(76734, {	-- Research: Djaradin of Zaralek Cavern
+						["coord"] = { 44.1, 54.1, ZARALEK_CAVERN },
+					}),
 					q(76739, {	-- Research: Niffen of Zaralek Cavern
 						["coord"] = { 47.6, 48.6, ZARALEK_CAVERN },
+					}),
+					q(78931, {	-- Technoscrying: The Mysteries of Dragonskull Island
+						["coord"] = { 76.8, 38.0, THE_FORBIDDEN_REACH },
 					}),
 					q(78616, {	-- Technoscrying: The Mysteries of the Concord Observatory
 						["coord"] = { 55, 46.2, THE_WAKING_SHORES },
