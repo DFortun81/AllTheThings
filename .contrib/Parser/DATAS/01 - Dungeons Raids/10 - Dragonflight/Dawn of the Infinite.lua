@@ -423,7 +423,7 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208114, {	-- Quantum Greathammer	(Two-Handed) (Mace)
 		q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
-			["name"] = "Quantum Mace (Two-Handed) completed.",
+			["name"] = "Quantum Greathammer/Mace (Two-Handed) completed.",
 			["collectible"] = false,
 		}),
 	}),
@@ -706,7 +706,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					["name"] = "Quantum Focus completed.",
 				}),
 				q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
-					["name"] = "Quantum Mace (Two-Handed) completed.",
+					["name"] = "Quantum Greathammer/Mace (Two-Handed) completed.",
 				}),
 				q(77607, {	-- when you learn everything from Quantum Knuckles (Fist Weapon)
 					["name"] = "Quantum Knuckles completed.",
