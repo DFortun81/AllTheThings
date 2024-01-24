@@ -2370,7 +2370,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						i(197113, {	-- Highland Drake: Swept Spiked Head (DM!)
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
 						}),
-						i(212518, {	-- Manuscript of Endless Possibility (DM!)
+						-- i(212518, {	-- Manuscript of Endless Possibility (DM!) (Replaced with Toy 23-Jan-2023 with same ItemID)
+						-- 	["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
+						-- }),
+						i(212518, {	-- Vial of Endless Daconic Scales (TOY)
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
 						}),
 						i(197366, {	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
