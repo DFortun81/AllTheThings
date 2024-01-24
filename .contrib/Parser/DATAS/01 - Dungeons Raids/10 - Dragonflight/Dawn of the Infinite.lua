@@ -115,6 +115,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(105801),	-- Spaulders of Dominating Dreams	(Ordos)
 		}),
 		filter(MAIL, {
+			q(77639, {	-- when you learn everything from Quantum Shoulders (Mail)
+				["name"] = "Quantum Shoulders (Mail) completed.",
+				["collectible"] = false,
+			}),
 			ig(18320),	-- Demonheart Spaulders				(NYI)
 			ig(114273),	-- Leafscale Spaulders				(NYI)
 			ig(4014),	-- Sterling Chain Shoulderpads		(NYI)
@@ -496,6 +500,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(134588),	-- Vanguard Gavel						(Removed)
 	}),
 	i(208116, {	-- Quantum Polearm
+		q(77602, {	-- when you learn everything from Quantum Polearm
+			["name"] = "Quantum Polearm completed.",
+			["collectible"] = false,
+		}),
 		ig(115297),	-- Spectral Polearm 					(NYI)
 
 		ig(6679),	-- Armor Piercer						(Removed)
@@ -670,6 +678,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				q(77627, {	-- when you learn everything from Quantum Headpiece (Mail)
 					["name"] = "Quantum Headpiece (Mail) completed.",
 				}),
+				q(77639 , {	-- when you learn everything from Quantum Shoulders (Mail)
+					["name"] = "Quantum Shoulders (Mail) completed.",
+				}),
 				q(77636, {	-- when you learn everything from Quantum Chestpiece (Leather)
 					["name"] = "Quantum Chestpiece (Leather) completed.",
 				}),
@@ -702,6 +713,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				}),
 				q(77596, {	-- when you learn everything from Quantum Mace (One-Handed)
 					["name"] = "Quantum Mace (One-Handed) completed.",
+				}),
+				q(77602, {	-- when you learn everything from Quantum Polearm
+					["name"] = "Quantum Polearm completed.",
 				}),
 				q(77601, {	-- when you learn everything from Quantum Staff
 					["name"] = "Quantum Staff completed.",
@@ -1210,7 +1224,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- q(77595),	-- when you learn everything from Quantum ?
 		-- q(77598),	-- when you learn everything from Quantum ?
 		-- q(77599),	-- when you learn everything from Quantum ?
-		-- q(77602),	-- when you learn everything from Quantum ?
 		-- q(77603),	-- when you learn everything from Quantum ?
 		-- q(77605),	-- when you learn everything from Quantum ?
 		-- q(77606),	-- when you learn everything from Quantum ?
@@ -1226,7 +1239,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- q(77634),	-- when you learn everything from Quantum ?
 		-- q(77637),	-- when you learn everything from Quantum ?
 		-- q(77638),	-- when you learn everything from Quantum ?
-		-- q(77639),	-- when you learn everything from Quantum ?
 		-- q(77640),	-- when you learn everything from Quantum ?
 		-- q(77641),	-- when you learn everything from Quantum ?
 	}),
