@@ -418,6 +418,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					14738,	-- Hunting Party
 					14658,	-- Soulkeeper's Burden
 					14663,	-- Explore The Maw
+					14656,	-- Trading Partners
 				}},
 				["g"] = {
 					title(462),	-- <Name>, Maw Walker
