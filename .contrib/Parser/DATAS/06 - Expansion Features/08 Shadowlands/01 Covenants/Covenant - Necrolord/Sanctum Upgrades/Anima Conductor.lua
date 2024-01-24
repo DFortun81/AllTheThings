@@ -90,10 +90,16 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								q(62403, {	-- Boared to Death
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
+									["g"] = {
+										i(183620),	-- Bloody Tusks (QI!)
+									},
 								}),
 								q(62390, {	-- Body Count
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
+									["g"] = {
+										i(183600),	-- Abomination Parts (QI!)
+									},
 								}),
 								q(62364, {	-- Dire Learning
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
@@ -126,6 +132,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								q(62362, {	-- Volatile Reactions
 									["provider"] = { "n", 167603 },	-- Fixer Bixie
 									["coord"] = { 49.0, 36.0, MALDRAXXUS },
+									["g"] = {
+										i(183436),	-- Animated Catalyst (QI!)
+									},
 								}),
 							})),
 							n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {

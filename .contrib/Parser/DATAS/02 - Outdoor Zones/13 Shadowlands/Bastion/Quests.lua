@@ -84,6 +84,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
 					["provider"] = { "n", 166577 },	-- Sika
 					["coord"] = { 52.7, 82.5, BASTION },
+					["g"] = {
+						i(172518),	-- Adrima's Lily (QI!)
+					},
 				}),
 				q(59920, {	-- Light the Forge, Forgelite
 					["sourceQuests"] = {
@@ -480,6 +483,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60006 },	-- Now or Never
 					["provider"] = { "n", 167135 },	-- Mikanikos
 					["coord"] = { 40.7, 55.5, BASTION },
+					["g"] = {
+						i(178043),	-- Anima Conflux (QI!)
+						i(178041),	-- Archonic Resonator (QI!)
+						i(178042),	-- Eternity Plating (QI!)
+					},
 				}),
 				q(60053, {	-- Clear as Crystal
 					["sourceQuests"] = {
@@ -497,6 +505,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						60007,	-- Stay Scrappy
 					},
 					["provider"] = { "n", 167164 },	-- Thanikos
+					["g"] = {
+						i(178140),	-- Archonic Resonator (QI!)
+					},
 				}),
 				q(60054, {	-- The Final Countdown
 					["sourceQuests"] = {
@@ -585,6 +596,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59773 },	-- Seek the Ascended
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.8, 42.7, BASTION },
+					["g"] = {
+						i(175791),	-- Ariella's Wing (QI!)
+					},
 				}),
 				q(59263, {	-- Feathers of Flight
 					["sourceQuests"] = { 59262 },	-- Broken Wings
@@ -600,6 +614,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60660 },	-- Flight Test
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.8, 42.7, BASTION },
+					['g'] = {
+						i(175968),	-- Animyllis Bloom (QI!)
+					},
 				}),
 				q(59351, {	-- Strings and Things
 					["sourceQuests"] = { 60660 },	-- Flight Test
@@ -614,6 +631,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 164640 },	-- Kowalskos
 					["coord"] = { 42.8, 42.7, BASTION },
 					["g"] = {
+						i(176812),	-- Animyllis Bloom (QI!)
 						i(180839),	-- Helpful Glimmerfly (PET!)
 					},
 				}),
@@ -806,6 +824,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 159609 },	-- Hopo
 					["coord"] = { 54.7, 41.2, BASTION },
+					["g"] = {
+						i(173691),	-- Anima Drainer (QI!)
+					},
 				}),
 				q(57933, {	-- We Can Rebuild Him
 					["sourceQuests"] = {
@@ -915,6 +936,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57711 },	-- A Forge Gone Cold
 				["provider"] = { "n", 157138 },	-- Aspirant Akimos
 				["coord"] = { 55.3, 83.4, BASTION },
+				["g"] = {
+					i(173023),	-- Bear Witness: The Watcher's Code (QI!)
+					i(173025),	-- The Infinite Treatises (QI!)
+					i(173024),	-- Worlds Beyond Counting (QI!)
+				},
 			}),
 			q(62733, {	-- The Sweetest Tribute
 				["sourceQuests"] = { 62730 },	-- Fruit of the Gods
@@ -983,6 +1009,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(62737, {	-- Aspirant For a Day [Pre-60]
 					["coord"] = { 54.1, 80.4, BASTION },
 					["g"] = {
+						i(172518),	-- Adrima's Lily (QI!)
 						i(181571),	-- Spiritmender's Handwraps
 						i(181580),	-- Soulbearer's Gloves
 						i(181596),	-- Forgehand's Handguards

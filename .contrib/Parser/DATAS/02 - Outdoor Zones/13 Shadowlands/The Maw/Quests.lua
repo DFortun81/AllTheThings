@@ -99,6 +99,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
 					["coord"] = { 25.0, 13.3, 1648 },	-- pre-SL scenario
+					["g"] = {
+						i(178558),	-- Afflictor's Key (QI!)
+					},
 				}),
 				q(59761, {	-- An Undeserved Fate
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
@@ -289,6 +292,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["coord"] = { 46.9, 41.7, THE_MAW },
 					["groups"] = {
 						ach(14747),	-- Make it Double!
+						i(182956),	-- Broker Hunting Rune (QI!)
+						i(182955),	-- Cypher of Dampening (QI!)
 					},
 				}),
 				q(62461, {	-- Stalking the Warrens
@@ -437,6 +442,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.9, 41.7, THE_MAW },
+				["g"] = {
+					i(182303),	-- Assassin's Soulcloak (QI!)
+				},
 			}),
 			n(BONUS_OBJECTIVES, sharedData({
 				["isDaily"] = true,

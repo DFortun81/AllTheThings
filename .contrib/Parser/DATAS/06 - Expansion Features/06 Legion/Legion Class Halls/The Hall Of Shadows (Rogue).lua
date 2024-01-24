@@ -111,6 +111,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							["sourceQuestNumRequired"] = 1,
 							["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 							["coord"] = { 42.3, 75.9, THE_HALL_OF_SHADOWS },
+							["g"] = {
+								i(173531),	-- Blasted Lands Scroll (QI!)
+								i(137676),	-- Coded Message (QI!)
+							},
 						}),
 						q(42502, {	-- No Sanctuary
 							["sourceQuests"] = {

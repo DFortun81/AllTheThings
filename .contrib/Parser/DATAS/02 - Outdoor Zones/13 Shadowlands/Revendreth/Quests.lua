@@ -49,6 +49,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 56942 },	-- On The Road Again
 					["provider"] = { "n", 155533 },	-- Lord Chamberlain
 					["coord"] = { 67.5, 68.5, REVENDRETH },
+					["g"] = {
+						i(174102),	-- Anima Canister (QI!)
+					},
 				}),
 				q(56955, {	-- Rebels on the Road
 					["sourceQuests"] = { 56942 },	-- On The Road Again
@@ -108,6 +111,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
 					["provider"] = { "n", 156823 },	-- Lord Chamberlain
 					["coord"] = { 64.7, 49.9, REVENDRETH },
+					["g"] = {
+						i(174998),	-- Avowed Crypt Key (QI!)
+						i(174930),	-- Inquisitor Stelia's Sinstone (QI!)
+					},
 				}),
 				q(58932, {	-- Temel, the Sin Herald
 					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
@@ -292,6 +299,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57240 },	-- Where is Prince Renathal?
 					["provider"] = { "n", 157199 },	-- Stonehead
 					["coord"] = { 38.9, 66.0, REVENDRETH },
+					["g"] = {
+						i(171343),	-- Blank Parchment (QI!)
+						i(171345),	-- Forged Letter of Condemnation (QI!)
+						i(171344),	-- Venthyr Calligraphy Set (QI!)
+					},
 				}),
 				q(57405, {	-- Chasing Madness
 					["sourceQuests"] = { 57380 },	-- Sign Your Own Death Warrant
@@ -846,6 +858,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57136 },	-- The Penitent Hunt
 				["provider"] = { "n", 156384 },	-- Huntmaster Constantin
 				["coord"] = { 48.5, 68.5, REVENDRETH },
+				["g"] = {
+					i(174957),	-- Abel's Rapier (QI!)
+				},
 			}),
 			q(57928, {	-- Atonement Crypt Key
 				["description"] = "The quest item drops from Depraved and Dredger mobs in the Court of the Harvesters.",
@@ -856,6 +871,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["sourceQuests"] = { 57098 },	-- The Grove of Terror
 				["provider"] = { "o", 355296 },	-- Bounty: Beast Control
 				["coord"] = { 49.6, 75.9, REVENDRETH },
+				["g"] = {
+					i(179719),	-- Anima Lure (QI!)
+				},
 			}),
 			q(58717, {	-- Bell of Remembrance
 				["provider"] = { "i", 174674 },	-- Bell of Remembrance
@@ -900,6 +918,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 39.2, 65.2, REVENDRETH },
 				["g"] = {
 					ach(14272),	-- Best Bud With Benefits
+					i(175840),	-- A Light Snack (QI!)
+					i(175826),	-- Ash Crisps (QI!)
+					i(175829),	-- Gooey Bug Bites (QI!)
+					i(175828),	-- Mirror Candy (QI!)
 				},
 			}),
 			q(60480, {	-- The Endmire

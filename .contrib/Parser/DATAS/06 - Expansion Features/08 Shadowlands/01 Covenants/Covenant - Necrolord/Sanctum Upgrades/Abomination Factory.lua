@@ -573,7 +573,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 											1717,	-- Chill's Reach
 										},
 										["g"] = {
+											i(183119),	-- Broker Bauble (QI!)
 											i(178678),	-- Call Atticus (QI!)
+											i(178681),	-- Slim Shinbone (QI!)
 										},
 									}),
 									q(59042, {	-- A Good Heart
@@ -798,7 +800,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 										["g"] = {
+											i(178682),	-- Atticus's Ledger (QI!)
 											i(178678),	-- Call Atticus (QI!)
+											i(175133),	-- Ossein Battlemail (QI!)
+											i(178681),	-- Slim Shinbone (QI!)
 										},
 									}),
 									q(58670, {	-- The Slaughter Daughter

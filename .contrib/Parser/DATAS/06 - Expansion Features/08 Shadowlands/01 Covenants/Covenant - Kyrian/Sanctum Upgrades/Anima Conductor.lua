@@ -87,6 +87,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 								q(61199, {	-- Arms Day
 									["provider"] = { "n", 171671 },    -- Kofi
 									["coord"] = { 50.3, 21.4, BASTION },
+									["g"] = {
+										i(180946),	-- Blessed Armament (QI!)
+									},
 								}),
 								q(61146, {	-- Manifesting Power
 									["provider"] = { "n", 171677 },    -- Forgelite Selene

@@ -90,6 +90,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									-- ["sourceQuests"] = { ? },	--
 									["provider"] = { "n", 173038 },	-- John the Reanimator
 									["coord"] = { 71.5, 76.3, REVENDRETH },
+									["g"] = {
+										i(182291),	-- Anima Cage (QI!)
+									},
 								}),
 								q(61733, {	-- Big Bag of Creepers
 									-- ["sourceQuests"] = { ? },	--

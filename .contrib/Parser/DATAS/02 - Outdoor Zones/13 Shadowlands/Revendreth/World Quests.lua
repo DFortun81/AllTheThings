@@ -30,6 +30,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60657),	-- Aid From Above
 			q(61619, {	-- Alchemy: Elixir of Humility
 				["requireSkill"] = ALCHEMY,
+				["g"] = {
+					i(182072),	-- Bramblethorn Juice (QI!)
+					i(181857),	-- Elixir of Humility (QI!)
+					i(182073),	-- Fresh Bramblethorn Trimmings (QI!)
+					i(182071),	-- Refined Submission (QI!)
+				},
 			}),
 			q(60658),	-- An Endless Appetite
 			q(61879),	-- Ashes Will Fall
@@ -80,6 +86,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61885),	-- Eyegor's Special Friends
 			q(61623, {	-- Fishing: Bloodthroated Grouper
 				["requireSkill"] = FISHING,
+				["g"] = {
+					i(181956),	-- Bloodthroated Grouper (QI!)
+				},
 			}),
 			q(59803),	-- For Honor
 			q(61544, {	-- Herbalism: Lush Widowbloom
@@ -104,6 +113,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61625, {	-- Jewelcrafting: Sinister Choker
 				["requireSkill"] = JEWELCRAFTING,
+				["g"] = {
+					i(182056),	-- Brilliant Bauble (QI!)
+					i(182057),	-- Fine Sinvyr Chain (QI!)
+					i(182308),	-- Garnet Shard (QI!)
+					i(182058),	-- Polished Sinvyr Bar (QI!)
+					i(181964),	-- Sinister Choker (QI!)
+				},
 			}),
 			q(61626, {	-- Leatherworking: Courtly Leather Boots
 				["requireSkill"] = LEATHERWORKING,
@@ -203,6 +219,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61628, {	-- Tailoring: Looming Tapestry
 				["requireSkill"] = TAILORING,
+				["g"] = {
+					i(182051),	-- Bolt of Prideweave (QI!)
+					i(181973),	-- Looming Tapestry (QI!)
+					i(182050),	-- Prideweave Cloth (QI!)
+					i(182052),	-- Thread of Pride (QI!)
+				}
 			}),
 			q(59852, {	-- Tea Tales: Gubbins and Tubbins
 				i(177235, {	-- Tubbins's Lucky Teapot (EC!)
@@ -214,7 +236,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(59850),	-- Tea Tales: Vulca
 			q(61886),	-- The Mind Games of Addius
 			q(59581),	-- The Strength of Sinfall
-			q(59789),	-- Tithe and Taxes
+			q(59789, {	-- Tithe and Taxes
+				["g"] = {
+					i(177839),	-- Anima Siphon (QI!)
+				},
+			}),
 			q(57328),	-- Trashin' the Camp
 		})),
 	}),

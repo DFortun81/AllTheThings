@@ -625,7 +625,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 											{ "i", 181279, 1 },	-- 1xAshfallen Key
 										},
 									}),
-									q(61356, {	-- Echthra, Dame of Hated
+									q(61356, {	-- Echthra, Dame of Hatred
 										["sourceQuests"] = { 60498 },	-- Overcoming the Trial
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
@@ -633,6 +633,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 											{ "i", SOUL_MIRROR, 1 },
 											{ "i", 181273, 1 },	-- 1xAnointment Oil
 										},
+
 									}),
 									q(62219, {	-- Fanciful Distractions
 										["sourceQuests"] = { 62218 },	-- A Fountain for Fae

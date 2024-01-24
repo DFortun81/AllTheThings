@@ -102,7 +102,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61946),	-- Natural Defenders
 			q(61411),	-- Our Heart Will Go On
 			q(58975),	-- Pest Removal
-			q(60337),	-- Pupa Trooper
+			q(60337, {	-- Pupa Trooper
+				["g"] = {
+					i(178717),	-- Ardenmoth Cocoon (QI!)
+				},
+			}),
 			q(59600),	-- Rotbriar Trouble
 			q(59825),	-- Seed Hunting
 			q(60574),	-- Shaking 'Shrooms
@@ -116,6 +120,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60786),	-- Swarm Defense
 			q(61604, {	-- Tailoring: Cloak of Camouflage
 				["requireSkill"] = TAILORING,
+				["g"] = {
+					i(182005),	-- Ardensilk Cloth (QI!)
+					i(182004),	-- Bolt of Ardensilk Cloth (QI!)
+					i(181453),	-- Cloak of Camouflage (QI!)
+					i(182006),	-- Spool of Ardensilk (QI!)
+				}
 			}),
 			q(60533),	-- Terrors in Tirna Scithe
 			q(60564),	-- Three Gorm Enter, No One Leaves

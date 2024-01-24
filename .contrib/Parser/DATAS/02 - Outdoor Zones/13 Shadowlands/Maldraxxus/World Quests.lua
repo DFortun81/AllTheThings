@@ -155,6 +155,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61615, {	-- Tailoring: Haunting Hood
 				["requireSkill"] = TAILORING,
+				["g"] = {
+					i(182117),	-- Bleakcloth (QI!)
+					i(182028),	-- Bleakthread (QI!)
+					i(182116),	-- Bolt of Bleakcloth (QI!)
+					i(181972),	-- Haunting Hood (QI!)
+				},
 			}),
 			q(59743),	-- The Spider on the Wall
 			q(61868),	-- Uncomfortably Undercover

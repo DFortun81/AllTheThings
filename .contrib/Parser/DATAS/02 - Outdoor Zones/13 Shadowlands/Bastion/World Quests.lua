@@ -108,6 +108,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61447, {	-- Jewelcrafting: Gleaming Kyranite Necklace
 				["requireSkill"] = JEWELCRAFTING,
+				["g"] = {
+					i(182197),	-- Borrowed Kyranite (QI!)
+					i(182012),	-- Borrowed Solenium Nugget (QI!)
+					i(181960),	-- Gleaming Kyranite Necklace (QI!)
+					i(182010),	-- Kyranite Dangle (QI!)
+					i(182011),	-- Solenium Wire (QI!)
+				},
 			}),
 			q(61449, {	-- Leatherworking: Steelhide Leather Harness
 				["requireSkill"] = LEATHERWORKING,
@@ -137,6 +144,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(62258),	-- Soaring Over Bastion
 			q(61469, {	-- Tailoring: Woven Gossamer Tunic
 				["requireSkill"] = TAILORING,
+				["g"] = {
+					i(182102),	-- Bolt of Woven Gossamer (QI!)
+					i(182103),	-- Gossamer Cloth (QI!)
+					i(182104),	-- Gossamer Thread (QI!)
+					i(181971),	-- Woven Gossamer Tunic (QI!)
+				},
 			}),
 			q(61791),	-- Thenia's Loyal Companions
 			q(59717, { -- Things Remembered
