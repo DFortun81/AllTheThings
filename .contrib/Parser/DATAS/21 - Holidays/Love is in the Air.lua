@@ -1384,6 +1384,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 	}),
 	-- #if AFTER 3.3.2.11403
 	n(VENDORS, {
+		-- SORT ME -- 
+		i(210973),	-- Heartseeker Mana Ray (MOUNT!) [Love in the Air]
+		i(211864),	-- Exquisite Love Boat (TOY!) [Love in the Air]
+		i(210974),	-- Eyes For You Only (TOY!) [Love in the Air]
+		i(210975),	-- Date Simulation Modulator (TOY!) [Love in the Air]
+		-- SORT ME OVER --
 		n(37674, {	-- Lovely Merchant <Crown Chemical Co.>
 			["coords"] = {
 				{ 45.2, 57.6, DARNASSUS },

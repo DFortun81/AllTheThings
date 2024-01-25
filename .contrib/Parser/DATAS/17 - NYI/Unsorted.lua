@@ -643,16 +643,6 @@ root(ROOTS.Unsorted, {
 				i(214224),	-- Gleaming Tunic of Unrelenting Justice
 
 				------ Love Witch's Attire ------
-				i(212220),	-- Ensemble: Love Witch's Attire
-				i(212197),	-- Love Witch's Blouse
-				i(212198),	-- Love Witch's Boots
-				i(212199),	-- Love Witch's Gloves
-				i(212200),	-- Love Witch's Hat
-				i(212203),	-- Love Witch's Sash
-				i(212202),	-- Love Witch's Shoulders
-				i(212201),	-- Love Witch's Skirt
-
-				------ Love Witch's Attire ------
 				i(212221),	-- Ensemble: Sky Witch's Attire
 				i(212204),	-- Sky Witch's Blouse
 				i(212205),	-- Sky Witch's Boots
@@ -743,9 +733,6 @@ root(ROOTS.Unsorted, {
 				i(213065),	-- Lavish Floral Edge
 				i(213068),	-- Lavish Floral Stalk
 				i(190895),	-- Lost Crusader's Amethyst Battleaxe
-				i(212379),	-- Love Witch's Rosy Stave
-				i(212377),	-- Love Witch's Rosy Wand
-				i(212376),	-- Lovely Gothic Longbow
 				i(212375),	-- Lovely Rosy Longbow
 				i(212381),	-- Love's Bulwark
 				i(212372),	-- Magenta Masquerade Gloves
@@ -830,8 +817,6 @@ root(ROOTS.Unsorted, {
 			filter(MOUNTS, {
 				i(212631),	-- Brilliant Sunburst Peafowl (MOUNT!)
 				i(212522),	-- Compass Rose (MOUNT!) [Hearthstone]
-				i(212227),	-- Fur-endship Fox (MOUNT!) [Trading Post]
-				i(210973),	-- Heartseeker Mana Ray (MOUNT!) [Love in the Air]
 				i(212630),	-- Majestic Azure Peafowl (MOUNT!) [Trading Post]
 				i(212599),	-- Noble Flying Carpet (MOUNT!) [Noblegarden]
 				i(212920),	-- Savage Blue Battle Turtle (MOUNT!) [Trading Post]
@@ -1085,13 +1070,10 @@ root(ROOTS.Unsorted, {
 				i(210526),	-- Unraveling Tunic
 			}),
 			filter(TOYS, {
-				i(210975),	-- Date Simulation Modulator (TOY!) [Love in the Air]
 				i(212524),	-- Delicate Crimson Parasol (TOY!) [Trading Post]
 				i(212525),	-- Delicate Ebony Parasol (TOY!) [Trading Post]
 				i(212523),	-- Delicate Jade Parasol (TOY!) [Trading Post]
 				i(212500),	-- Delicate Silk Parasol (TOY!) [Trading Post]
-				i(211864),	-- Exquisite Love Boat (TOY!) [Love in the Air]
-				i(210974),	-- Eyes For You Only (TOY!) [Love in the Air]
 				i(211946),	-- Hearthstone Game Table (TOY!) [Hearthstone]
 				i(212337),	-- Stone of the Hearth (TOY!) [Hearthstone]
 			}),

@@ -1395,6 +1395,56 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
+		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.5"} }, {
+			n(MONTHLY_REWARD, {
+				i(212220, {	-- Ensemble: Love Witch's Attire
+					i(212197),	-- Love Witch's Blouse
+					i(212198),	-- Love Witch's Boots
+					i(212199),	-- Love Witch's Gloves
+					i(212200),	-- Love Witch's Hat
+					i(212203),	-- Love Witch's Sash
+					i(212202),	-- Love Witch's Shoulders
+					i(212201),	-- Love Witch's Skirt
+				}),
+			}),
+			filter(BATTLE_PETS, {
+				
+			}),
+			filter(MOUNTS, {
+				i(212227, { -- Reins of the Fur-Endship Fox
+					["cost"] = {{"c", TRADERS_TENDER, 750}},
+				}),
+			}),
+			filter(COSMETIC, {
+				i(212369, { -- Battlefield Lover's Bow
+					["cost"] = {{"c", TRADERS_TENDER, 250}},
+				}),
+				i(212545, { -- Crown of the White Rose
+					["cost"] = {{"c", TRADERS_TENDER, 250}},
+				}),
+				i(212381, { -- Love's Bulwark
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(212375, { -- Lovely Rosy Longbow
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(212376, { -- Lovely Gothic Longbow
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(212379, { -- Love Witch's Rosy Stave
+					["cost"] = {{"c", TRADERS_TENDER, 250}},
+				}),
+				i(212377, { -- Love Witch's Rosy Wand
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(212378, { -- Twilight Witch's Gothic Scepter
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(212380, { -- Twilight Witch's Gothic Stave
+					["cost"] = {{"c", TRADERS_TENDER, 250}},
+				}),
+			}),
+		})),
 	}),
 }));
 root(ROOTS.HiddenQuestTriggers, {
