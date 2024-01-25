@@ -54,11 +54,11 @@ root(ROOTS.Promotions, {
 			}),
 			i(92724, {	-- Swift Windsteed (MOUNT!)
 				["description"] = "Amazon Prime Gaming reward from December 26th 2023 till January 30th 2024.",
-				["timeline"] = { "added 10.2.0.52649", "removed 10.2.0.99999" },
+				["timeline"] = { "added 10.2.0.52649", "removed 10.2.5.99999" },
 			}),
 			--[[i(38313, {	-- 
-				["description"] = "Amazon Prime Gaming reward from November 28th 2023 till December 26th 2023.",
-				["timeline"] = { "added 10.2.0.52188", "removed 10.2.0.99999" },
+				["description"] = "Amazon Prime Gaming reward from January 30th 2024 till February 26th 2024.",
+				["timeline"] = { "added 10.2.5.52188", "removed 10.2.6.99999" },
 			}),--]]
 		},
 	}),
