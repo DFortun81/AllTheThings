@@ -234,7 +234,7 @@ SL_INSCRIPTION = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timelin
 		r(324039),	-- Darkmoon Card of the Indomitable
 		r(324035),	-- Darkmoon Card of Voracity
 	}),
-	filter(WEAPONS, {
+	n(WEAPONS, {
 		r(311408),	-- Newly Departed Codex
 		r(311688),	-- Soul Keeper's Column
 		r(311689),	-- Soul Keeper's Spire
@@ -281,7 +281,7 @@ DF_INSCRIPTION = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { A
 		r(324039),	-- Darkmoon Card of the Indomitable
 		r(324035),	-- Darkmoon Card of Voracity
 	}),
-	filter(WEAPONS, {
+	n(WEAPONS, {
 		r(383539),	-- Core Explorer's Compendium
 		r(383543),	-- Overseer's Writhebark Stave
 		r(383544),	-- Pioneer's Writhebark Stave
