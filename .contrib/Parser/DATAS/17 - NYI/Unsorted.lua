@@ -630,18 +630,6 @@ root(ROOTS.Unsorted, {
 				i(212188),	-- Dreadlord's Venombane Tunic
 				i(212196),	-- Dreadlord's Venombane Wristbands
 
-				------ Gleaming Burden of Unrelenting Justice ------
-				i(214240),	-- Ensemble: Gleaming Burden of Unrelenting Justice
-				i(214226),	-- Gleaming Belt of Unrelenting Justice
-				i(214225),	-- Gleaming Bracers of Unrelenting Justice
-				i(214228),	-- Gleaming Cloak of Unrelenting Justice
-				i(214214),	-- Gleaming Gloves of Unrelenting Justice
-				i(214223),	-- Gleaming Helm of Unrelenting Justice
-				i(214227),	-- Gleaming Leggings of Unrelenting Justice
-				i(214229),	-- Gleaming Mantle of Unrelenting Justice
-				i(214230),	-- Gleaming Treads of Unrelenting Justice
-				i(214224),	-- Gleaming Tunic of Unrelenting Justice
-
 				------ Love Witch's Attire ------
 				i(212221),	-- Ensemble: Sky Witch's Attire
 				i(212204),	-- Sky Witch's Blouse
@@ -651,18 +639,6 @@ root(ROOTS.Unsorted, {
 				i(212210),	-- Sky Witch's Sash
 				i(212209),	-- Sky Witch's Shoulders
 				i(212208),	-- Sky Witch's Skirt
-
-				------ Moonlit Burden of Unrelenting Justice ------
-				i(214241),	-- Ensemble: Moonlit Burden of Unrelenting Justice
-				i(214235),	-- Moonlit Belt of Unrelenting Justice
-				i(214234),	-- Moonlit Bracers of Unrelenting Justice
-				i(214237),	-- Moonlit Cloak of Unrelenting Justice
-				i(214231),	-- Moonlit Gloves of Unrelenting Justice
-				i(214232),	-- Moonlit Helm of Unrelenting Justice
-				i(214236),	-- Moonlit Leggings of Unrelenting Justice
-				i(214238),	-- Moonlit Mantle of Unrelenting Justice
-				i(214239),	-- Moonlit Treads of Unrelenting Justice
-				i(214233),	-- Moonlit Tunic of Unrelenting Justice
 
 				------ Spring Reveler's Lavender ------
 				i(213084),	-- Ensemble: Spring Reveler's Lavender Apparel
