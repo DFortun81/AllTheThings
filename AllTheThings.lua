@@ -1301,7 +1301,7 @@ local function MergeProperties(g, t, noReplace, clone)
 						g.sourceParent = v;
 					end
 				elseif not skips[k] then
-					if not rawget(g, k) then
+					if rawget(g, k) == nil then
 						g[k] = v;
 					end
 				end
