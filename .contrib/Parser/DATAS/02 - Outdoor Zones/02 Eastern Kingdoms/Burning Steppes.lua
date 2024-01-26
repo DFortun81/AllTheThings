@@ -1889,6 +1889,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(15732, {	-- Pattern: Volcanic Leggings (RECIPE!)
 					["cr"] = 7035,	-- Firegut Brute
 					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["description"] = "Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages veryS often spawn in place of Firegut Brutes.",
 					["coords"] = {
 						{ 83.6, 40.0, BURNING_STEPPES },
 						{ 80.4, 45.8, BURNING_STEPPES },
