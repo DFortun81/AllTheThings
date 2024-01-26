@@ -504,6 +504,7 @@ i(32429, 39997);	-- Boots of Shackled Souls
 i(30307, 36358);	-- Boots of the Crimson Hawk
 i(30306, 36357);	-- Boots of Utter Darkness
 i(32744, 41156);	-- Bracers of Renewed Life
+i(0, 40000);		-- Bracers of Shackled Souls [Multiple recipes uses this ID, See later one]
 i(32431, 40001);	-- Greaves of Shackled Souls
 i(30308, 36359);	-- Hurricane Boots
 i(32750, 41163);	-- Living Earth Bindings
@@ -517,11 +518,6 @@ i(32745, 41157);	-- Shoulderpads of Renewed Life
 i(32749, 41162);	-- Shoulders of Lightning Reflexes
 i(32746, 41158);	-- Swiftstrike Bracers
 i(32747, 41160);	-- Swiftstrike Shoulders
--- #if AFTER WRATH
-i(32430, 52733);	-- Bracers of Shackled Souls
--- #else
-i(32430, 40000);	-- Bracers of Shackled Souls
--- #endif
 i(32432, 40002);	-- Waistguard of Shackled Souls
 
 -----------------
@@ -666,6 +662,7 @@ i(0, 60665);	-- Seafoam Gauntlets
 i(0, 60651);	-- Virulent Spaulders
 i(0, 60669);	-- Wildscale Breastplate
 --- ITEM ---
+i(0, 52733);		-- Bracers of Shackled Souls [Multiple recipes uses this ID]
 i(44511, 60645);	-- Dragonscale Ammo Pouch [REMOVED: 4.0.1]
 i(44553, 60761);	-- Earthgiving Boots
 i(44552, 60760);	-- Earthgiving Legguards

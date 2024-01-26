@@ -259,15 +259,12 @@ q(9350),	-- A Peon's Work is Never Done	 TBC:A Peon's Work is Never Done	 WOTLK:
 q(9354),	-- Searching for New Materials	 TBC:Searching for New Materials	 WOTLK:Searching for New Materials
 q(9379),	-- Fortifying the Felhunter	 TBC:Fortifying the Felhunter	 WOTLK:Fortifying the Felhunter
 q(9432),	-- Travel to Astranaar	 TBC:Travel to Astranaar	 WOTLK:Travel to Astranaar
-q(9460),	-- Combining Forces	 TBC:Combining Forces	 WOTLK:Combining Forces
 q(9484),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast
 q(9485),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast
 q(9486),	-- Taming the Beast	 TBC:Taming the Beast	 WOTLK:Taming the Beast
 q(9497),	-- Emblem of the Fel Horde	 TBC:Emblem of the Fel Horde	 WOTLK:Emblem of the Fel Horde
-q(9532),	-- Find Keltus Darkleaf	 TBC:Find Keltus Darkleaf	 WOTLK:Find Keltus Darkleaf
 q(9546),	-- Fulfilling a Promise
 q(9617),	-- Seek the Farstriders	 TBC:Seek the Farstriders	 WOTLK:Seek the Farstriders
-q(9618),	-- Return the Reports	 TBC:Return the Reports	 WOTLK:Return the Reports
 q(9712),	-- The Thalassian Warhorse	 TBC:The Thalassian Warhorse	 WOTLK:The Thalassian Warhorse
 q(9713),	-- Glowcap Harvesting Enabling Flag
 q(9767),	-- Know Your Enemy	 TBC:Know Your Enemy	 WOTLK:Know Your Enemy
@@ -423,7 +420,6 @@ q(13317),	-- ----	 WOTLK:----
 q(13378),	-- Chief Engineer Copperclaw	 WOTLK:Chief Engineer Copperclaw
 q(13404),	-- Static Shock Troops: the Bombardment	 WOTLK:Static Shock Troops: the Bombardment
 q(13405),	-- Call to Arms: Strand of the Ancients	 WOTLK:Call to Arms: Strand of the Ancients
-q(13406),	-- Riding the Wavelength: The Bombardment	 WOTLK:Riding the Wavelength: The Bombardment
 q(13407),	-- Call to Arms: Strand of the Ancients	 WOTLK:Call to Arms: Strand of the Ancients
 q(13427),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley
 q(13428),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley
@@ -448,11 +444,6 @@ q(14183),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
 q(14200),	-- Kickoff Mail Marker
 q(14349),	-- The Call to Command	 WOTLK:The Call to Command
 q(14350),	-- The Crimson Courier	 WOTLK:The Crimson Courier
-q(14351),	-- [DEPRECATED] Battle of Hillsbrad	 WOTLK:Battle of Hillsbrad
-q(14418),	-- The Deathstalkers	 WOTLK:The Deathstalkers
-q(14419),	-- The Deathstalkers	 WOTLK:The Deathstalkers
-q(14420),	-- The Deathstalkers	 WOTLK:The Deathstalkers
-q(14421),	-- The Deathstalkers	 WOTLK:The Deathstalkers
 q(14441),	-- Garrosh's Autograph	 WOTLK:Garrosh's Autograph
 q(24216),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
 q(24217),	-- Call to Arms: Warsong Gulch	 WOTLK:Call to Arms: Warsong Gulch
@@ -1663,35 +1654,15 @@ q(78969),	--
 q(78970),	--
 q(78971),	--
 10.2.5.52206
-q(75493),	--
-q(75518),	--
-q(75603),	--
-q(75729),	--
-q(75867),	--
-q(75868),	--
-q(76217),	--
-q(76241),	--
-q(76242),	--
 q(76391),	--
 q(76392),	--
 q(76393),	--
-q(76448),	--
-q(76557),	--
-q(76564),	--
-q(76576),	--
-q(76587),	--
-q(76734),	--
-q(76739),	--
 q(76911),	--
-q(77166),	--
-q(77176),	--
 q(77362),	--
-q(77415),	--
 q(77424),	--
-q(77425),	--
-q(77764),	--
+q(77764),	-- Curious Find: Apprentice Astrologist Homework
 q(78174),	--
-q(78272),	--
+q(78272),	-- Interrupting Duck
 q(78274),	--
 q(78328),	--
 q(78329),	--
@@ -1704,12 +1675,9 @@ q(78476),	--
 q(78565),	--
 q(78591),	--
 q(78594),	--
-q(78616),	--
-q(78645),	--
 q(78649),	--
 q(78661),	--
 q(78662),	--
-q(78663),	--
 q(78664),	--
 q(78674),	--
 q(78679),	--
@@ -1721,14 +1689,10 @@ q(78729),	--
 q(78734),	--
 q(78735),	--
 q(78736),	--
-q(78739),	--
-q(78762),	--
-q(78820),	--
 q(78893),	--
 q(78894),	--
 q(78903),	--
 q(78912),	--
-q(78931),	--
 q(78976),	--
 q(78978),	--
 q(78979),	--
@@ -1746,9 +1710,7 @@ q(78990),	--
 q(78991),	--
 q(78992),	--
 q(78993),	--
-q(79088),	--
 q(79104),	--
-q(79112),	--
 q(79125),	--
 q(79126),	--
 q(79130),	--
@@ -1761,7 +1723,7 @@ q(79136),	--
 q(79143),	--
 q(79144),	--
 q(79155),	--
-q(79178),	--
+q(79178),	-- Play Hearthstone!
 q(79186),	--
 q(79189),	--
 q(79207),	--
@@ -1771,12 +1733,12 @@ q(79210),	--
 q(79211),	--
 q(79278),	--
 q(79314),	--
-q(79322),	--
+q(79322),	-- What the Duck?
 q(79323),	--
 q(79330),	--
 q(79331),	--
 10.2.5.52330
-q(79350),	--
+q(79350),	-- Intro Dummy Quest Week 1 (Text Only)
 q(79353),	--
 q(79378),	--
 q(79384),	--
@@ -1828,28 +1790,73 @@ q(79460),	--
 q(79467),	--
 q(79468),	--
 q(79517),	--
-q(79537),	--
-q(79558),	--
-q(79575),	--
+q(79537),	-- Jrz Test Currency Quest
+q(79558),	-- Feathered Fiend
+q(79575),	-- What the Duck?
 q(79576),	--
 q(79577),	--
 q(79578),	--
 q(79582),	--
 q(79583),	--
-q(79617),	--
 q(79618),	--
 q(79619),	--
 q(79620),	--
 q(79621),	--
 10.2.5.52554
-q(79671),	--
 q(79672),	--
 q(79674),	--
 q(79675),	--
 q(79676),	--
 q(79684),	--
-q(79693),	--
-q(79694),	--
+q(79693),	-- Play Hearthstone!
+q(79694),	-- Play Hearthstone!
 10.2.5.52902
 q(79708),	--
 q(79709),	--
+10.2.5.52968
+q(77868),	--
+q(77869),	--
+q(77870),	--
+q(77871),	--
+q(77873),	--
+q(77874),	--
+q(77877),	--
+q(77879),	--
+q(77880),	--
+q(77881),	--
+q(77882),	--
+q(77894),	--
+q(77898),	--
+q(77899),	--
+q(77900),	--
+q(77901),	--
+q(77902),	--
+q(77903),	--
+q(77904),	--
+q(77905),	--
+q(77906),	--
+q(77907),	--
+q(78068),	-- Q1 Breadcrumb to Exodar
+q(78069),	--
+q(78070),	--
+q(78071),	--
+q(78072),	--
+q(78073),	--
+q(78074),	--
+q(78075),	--
+q(78076),	--
+q(78077),	--
+q(78078),	--
+q(78079),	--
+q(78080),	--
+q(78081),	--
+q(78082),	--
+q(78083),	--
+q(78179),	--
+q(79474),	--
+q(80059),	--
+q(80060),	--
+q(80061),	--
+q(80064),	--
+q(80065),	--
+q(80066),	--

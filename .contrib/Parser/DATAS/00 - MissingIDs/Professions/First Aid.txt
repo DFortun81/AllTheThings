@@ -2,19 +2,10 @@
 r(1159),	-- First Aid
 r(3267),	-- First Aid
 r(3268),	-- First Aid
-r(3273),	-- First Aid
-r(3274),	-- First Aid
-0.5.5.3494
-r(7924),	-- First Aid
 0.7.0.3694
 r(10844),	-- Powerful Smelling Salts
-r(10846),	-- First Aid
 1.13.0.28211
 r(30021),	-- Crystal Infused Bandage
-2.0.0.6080
-r(27028),	-- First Aid
-3.0.1.8303
-r(45542),	-- First Aid
 3.0.1.8622
 r(51801),	--
 4.0.1.12911

@@ -1127,7 +1127,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 	})),
 	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDownFiltered({ ["timeline"] = { ADDED_10_2_5 } },FILTERFUNC_itemID,{
-		-- i(212518),	-- Manuscript of Endless Possibility (DM!) (Replaced with Toy 23-Jan-2023 with same ItemID)
 		header(HEADERS.Item, 194034, sharedData({	-- Renewed Proto-Drake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
 			["timeline"] = { CREATED_10_2_5 },

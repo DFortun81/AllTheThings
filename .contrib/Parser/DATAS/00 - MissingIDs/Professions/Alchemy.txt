@@ -81,6 +81,7 @@ r(41500),	-- Cauldron of Major Fire Protection
 r(41501),	-- Cauldron of Major Frost Protection
 r(41502),	-- Cauldron of Major Nature Protection
 r(41503),	-- Cauldron of Major Shadow Protection
+r(45061),	-- Mad Alchemist's Potion
 3.0.1.8622
 r(51304),	-- Alchemy
 r(53771),	-- Transmute: Eternal Life to Shadow
@@ -199,6 +200,12 @@ r(94162),	-- Flask of Flowing Water
 r(96252),	-- Volatile Alchemist Stone
 r(96253),	-- Quicksilver Alchemist Stone
 r(96254),	-- Vibrant Alchemist Stone
+r(101823),	--
+r(101824),	--
+r(101825),	--
+r(101826),	--
+r(101827),	--
+r(101828),	--
 5.0.3.15890
 r(105206),	-- Alchemy
 r(114751),	-- Alchemist's Rejuvenation
@@ -237,14 +244,24 @@ r(114786),	-- Alchemist's Flask
 r(130326),	-- Riddle of Steel
 6.0.1.18179
 r(136197),	-- Zen Alchemist Stone
+r(156562),	-- UNUSED
+r(156565),	-- UNUSED
 r(156566),	-- UNUSED
 r(156567),	-- Draenor Armor Flask
+r(156570),	-- UNUSED
+r(156573),	-- UNUSED
 r(156574),	-- UNUSED
 r(156575),	-- UNUSED
 r(156583),	-- UNUSED
 r(156586),	-- Alchemist's Cauldron
+r(156588),	-- Alchemical Catalyst - Fireweed
+r(156589),	-- Alchemical Catalyst - Flytrap
+r(156590),	-- Alchemical Catalyst - Starflower
+r(156592),	-- Alchemical Catalyst - Orchid
+r(156593),	-- Alchemical Catalyst - Lotus
 r(156606),	-- Alchemy
 7.3.0.24473
+r(162403),	-- Transmorphic Tincture
 r(168042),	-- Alchemical Catalyst
 r(195095),	-- Alchemy
 r(213250),	-- Transmute: Skins to Ore
@@ -360,6 +377,8 @@ r(298854),	-- Greater Flask of the Undertow
 r(298862),	-- Greater Mystical Cauldron
 r(298863),	-- Greater Mystical Cauldron
 r(298995),	-- Abyssal Alchemist Stone
+r(298996),	-- Crushing Alchemist Stone
+r(298997),	-- Ascended Alchemist Stone
 r(300749),	-- Potion of Unbridled Fury
 r(300750),	-- Potion of Unbridled Fury
 r(300752),	-- Potion of Wild Mending
@@ -369,19 +388,6 @@ r(301310),	-- Abyssal Healing Potion
 r(301311),	-- Abyssal Healing Potion
 8.3.0.32044
 r(307172),	-- Void Focus
-9.0.1.35167
-r(338190),	-- Potion of Hibernal Rest
-r(338191),	-- Liquid Sleep
-r(338192),	-- Powdered Dreamroot
-r(338194),	-- Flask of Measured Discipline
-r(338195),	-- Distilled Resolve
-r(338196),	-- Pulverized Breezebloom
-r(338198),	-- Draught of Grotesque Strength
-r(338199),	-- Brutal Oil
-r(338200),	-- Crushed Bones
-r(338202),	-- Elixir of Humility
-r(338203),	-- Refined Submission
-r(338204),	-- Bramblethorn Juice
 
 
 
