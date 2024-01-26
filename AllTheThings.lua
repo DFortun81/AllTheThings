@@ -107,7 +107,7 @@ app.PrintTable = function(t,depth)
 	-- dont accidentally recursively print the same table
 	if not app._PrintTable[t] then
 		app._PrintTable[t] = true;
-		print(p,tostring(t)," {");
+		print(p,tostring(t),"__type",t.__type," {");
 		for k,v in pairs(t) do
 			if type(v) == "table" then
 				print(p,k,":");
@@ -13549,9 +13549,10 @@ RowOnEnter = function (self)
 			-- "collected",
 			-- "trackable",
 			-- "saved",
-			-- "collectibleAsCost",
-			-- "costTotal",
-			-- "costProgress",
+			"collectibleAsCost",
+			"costTotal",
+			"filledCost",
+			"skipFill",
 			-- "itemID",
 			-- "modItemID"
 		};
@@ -15497,10 +15498,10 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			"c",
 			"nmc",
 			"nmr",
-			"hash",
 		}) do
 			BaseVisualHeaderClone.__class[field] = app.EmptyFunction
 		end
+		BaseVisualHeaderClone.__class.hash = app.CreateHash
 		-- Wraps a given object such that it can act as a filtered Header of the base group
 		local CreateWrapVisualHeader = function(base, groups)
 			return Wrap(setmetatable(constructor(nil, {g=groups or {}}, "WrapVisualHeader"), BaseVisualHeaderClone), base);
