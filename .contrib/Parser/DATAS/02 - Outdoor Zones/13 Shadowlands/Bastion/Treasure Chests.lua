@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 61698,
 				["isWeekly"] = true,
 				["g"] = {
-					i(180783),	-- Design: Crown of the Righteous
+					i(180783),	-- Design: Crown of the Righteous (RECIPE!)
 					i(183756),	-- Floating Circlet
 				},
 			}),

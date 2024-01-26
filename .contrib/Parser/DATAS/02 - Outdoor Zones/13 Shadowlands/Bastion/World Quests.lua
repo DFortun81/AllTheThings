@@ -130,6 +130,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61447, {	-- Jewelcrafting: Gleaming Kyranite Necklace
 				["requireSkill"] = JEWELCRAFTING,
 				["g"] = {
+					r(338241, {["u"]=TRAINING}),	-- Gleaming Kyranite Necklace
+					r(338242, {["u"]=TRAINING}),	-- Kyranite Dangle
+					r(338243, {["u"]=TRAINING}),	-- Solenium Wire
 					i(182197),	-- Borrowed Kyranite (QI!)
 					i(182012),	-- Borrowed Solenium Nugget (QI!)
 					i(181960),	-- Gleaming Kyranite Necklace (QI!)

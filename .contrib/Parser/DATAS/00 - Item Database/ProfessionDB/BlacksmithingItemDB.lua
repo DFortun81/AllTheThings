@@ -1784,7 +1784,7 @@ i(0, 307700);		-- Phaeweald Smasher
 i(0, 307695);		-- Phaeweald Spear
 i(0, 307691);		-- Phaeweald Waistguard
 i(0, 307694);		-- Phaeweald Warglaive
-i(0, 322592);		-- Shadowsteel Aegis \\ Solforged Aegis
+i(0, 322592);		-- Shadowsteel Aegis
 i(0, 322610);		-- Sinsteel Aegis
 i(0, 322613);		-- Sinsteel Armguards
 i(0, 322636);		-- Sinsteel Axe

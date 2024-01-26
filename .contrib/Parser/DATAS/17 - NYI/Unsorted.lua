@@ -2574,10 +2574,6 @@ root(ROOTS.Unsorted, {
 			i(172929),	-- [DNT] REUSE ME \\ Flash-Freeze Power Cells \\ Engineering - Modified Crafting Reagent 04
 			i(171421),	-- [DNT] REUSE ME \\ Freak Slayer's Charm \\ Freak Slayer
 			i(171422),	-- [DNT] REUSE ME \\ Ghoul Slayer's Charm \\ Ghoul Slayer
-			i(173164),	-- [DNT] REUSE ME \\ Jewelcrafting - Modified Crafting Reagent 05
-			i(173165),	-- [DNT] REUSE ME \\ Jewelcrafting - Modified Crafting Reagent 06
-			i(173166),	-- [DNT] REUSE ME \\ Jewelcrafting - Modified Crafting Reagent 07
-			i(173167),	-- [DNT] REUSE ME \\ Jewelcrafting - Modified Crafting Reagent 08
 			i(171425),	-- [DNT] REUSE ME \\ Laestrite Plates \\ Blacksmithing - Modified Crafting Reagent 06
 			i(171424),	-- [DNT] REUSE ME \\ Laestrite Spikes
 			i(172342),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 05
@@ -2627,7 +2623,6 @@ root(ROOTS.Unsorted, {
 			i(183722),	-- Ancient Insignia
 			i(172024),	-- Ancient Maldracite Weapon
 			i(181248),	-- Ancient Sinstone
-			i(173109),	-- Angerseye
 			i(181365),	-- Anh'Qiraj Statue
 			i(182291),	-- Anima Cage
 			i(174102),	-- Anima Canister \\ Anima Cage
@@ -2768,12 +2763,9 @@ root(ROOTS.Unsorted, {
 			i(173700),	-- Bonebinder Zal's Key
 			i(179317),	-- Bonemetal
 			i(173380),	-- Book of the Unspeakable
-			i(182197),	-- Borrowed Kyranite
-			i(182012),	-- Borrowed Solenium Nugget \\ Base Thing
 			i(181281),	-- Boss 10 Lure
 			i(172900),	-- Bounty Notes
 			i(182199),	-- Brightspark's Bottled Blaze
-			i(182056),	-- Brilliant Bauble \\ Almost Thing
 			i(174854),	-- Brimming Animus Core
 			i(178543),	-- Broiled Blood Sausage
 			i(180286),	-- Broken Fishing Pole
@@ -2793,7 +2785,6 @@ root(ROOTS.Unsorted, {
 			i(173965),	-- Calibrated Mawstone
 			i(181473),	-- Candle Wax Chunk \\ Small Candle Stub
 			i(178791),	-- Carved Cloudfeather Call
-			i(181961),	-- Carved Crystal Ring \\ Maldraxxus Jewelcrafting Item
 			i(175046),	-- Cats Go Fast
 			i(176805),	-- Centurion Armor Fragment \\ Anima-Infused Core
 			i(176810),	-- Centurion Core
@@ -2876,8 +2867,6 @@ root(ROOTS.Unsorted, {
 			i(177818),	-- Dark Mojo
 			i(171215),	-- Dark Sermon
 			i(178721),	-- Dark Star
-			i(173127),	-- Deadly Jewel Cluster
-			i(173121),	-- Deadly Jewel Doublet
 			i(170498),	-- Deadsoul Hound Harness
 			i(174357),	-- Death Lotus Petal
 			i(174382),	-- Death Lotus Powder
@@ -2975,7 +2964,6 @@ root(ROOTS.Unsorted, {
 			i(172940),	-- Engineering Reagent 07
 			i(172941),	-- Engineering Reagent 08
 			i(178581),	-- Engorged Gorm Larva
-			i(181998),	-- Engraved Phaedrum Band \\ Almost Thing
 			i(175793),	-- Enlarged Gluegland
 			i(175043),	-- Entangling Vortex
 			i(177712),	-- Envoy's Letter
@@ -2984,10 +2972,6 @@ root(ROOTS.Unsorted, {
 			i(180448),	-- Eroded Heat Sink \\ Erroded Heat Sink
 			i(182615),	-- Errant Tome
 			i(180471),	-- Essence Dust
-			i(173170),	-- Essence of Rebirth
-			i(173172),	-- Essence of Servitude
-			i(173171),	-- Essence of Torment \\ Essence of Suffering
-			i(173173),	-- Essence of Valor
 			i(171281),	-- Eternal Cauldron
 			i(171282),	-- Eternal Cauldron
 			i(171283),	-- Eternal Cauldron
@@ -3003,7 +2987,6 @@ root(ROOTS.Unsorted, {
 			i(183442),	-- Experimental Fluid
 			i(184033),	-- Extra-Spacious Knapsack
 			i(180035),	-- Eye of the Scryer
-			i(182033),	-- Faceted Crystal \\ Kinda Thing
 			i(175243),	-- Faded Grimoire
 			i(178570),	-- Fading Memory Glass
 			i(182611),	-- Fae Flute
@@ -3033,7 +3016,6 @@ root(ROOTS.Unsorted, {
 			i(177610),	-- Felsoul Robe
 			i(177611),	-- Felsoul Shoulderpads
 			i(182387),	-- Feral Anima
-			i(182057),	-- Fine Sinvyr Chain \\ Kinda Thing
 			i(173150),	-- Finnan's Lucky Mallet
 			i(167206),	-- Fire Essence
 			i(168410),	-- First Aid Kit
@@ -3063,12 +3045,10 @@ root(ROOTS.Unsorted, {
 			i(182361),	-- Fresh Revendreth Anima
 			i(175027),	-- Fulfilling Meditation
 			i(172084),	-- Fungal Beacon
-			i(182308),	-- Garnet Shard
 			i(171106),	-- Gathered Necrotic Shards
 			i(177279),	-- Gaunt Sinew \\ Desolate Sinew
 			i(177034),	-- Gem Chisel Kit
 			i(171966),	-- Gem of Binding
-			i(181431),	-- Gem Studded Bangle \\ Ardenweald Jewelcrafting Item \\ Jewelcrafting Item \\ Thorny Necklace
 			i(180230),	-- Gemstone Chips
 			i(178529),	-- Gently Shaken Gift
 			i(172221),	-- Giant Gorm Gris
@@ -3081,7 +3061,6 @@ root(ROOTS.Unsorted, {
 			i(168210),	-- Gleaming Chest: Azrafael
 			i(168211),	-- Gleaming Chest: Beneficus
 			i(168209),	-- Gleaming Chest: Olberic
-			i(181960),	-- Gleaming Kyranite Necklace \\ Bastion Jewelcrafting Item
 			i(181356),	-- Glenzu Original
 			i(179005),	-- Glinting Gold Fang
 			i(181954),	-- Glorious Shimmerfin
@@ -3126,7 +3105,6 @@ root(ROOTS.Unsorted, {
 			i(178657),	-- Halen's Ritual Drafts
 			i(182112),	-- Handcrafted Mirror Repair Kit \\ Hand Crafted Mirror Repair Kit
 			i(169819),	-- Handful of Blood Shards \\ Rotted Quilboar Fetish
-			i(182289),	-- Handful of Glimmering Gemstones
 			i(180088),	-- Handwritten Note
 			i(172455),	-- Hardened Fel Shards
 			i(176852),	-- Hardened Tail Bone
@@ -3156,7 +3134,6 @@ root(ROOTS.Unsorted, {
 			i(178992),	-- Hidden Weapons
 			i(178728),	-- High Winds
 			i(173538),	-- Hippogryph Whistle
-			i(182032),	-- Hollowed Crystal \\ Almost Thing
 			i(179388),	-- Hopebreaker Soul Chains
 			i(181970),	-- Horrific Leather Hide \\ Revendreth Skinning Item
 			i(180497),	-- House Iremoore Disguise \\ House Redelav Disguise
@@ -3189,7 +3166,6 @@ root(ROOTS.Unsorted, {
 			i(176052),	-- Iron Skull Belt Buckle
 			i(173706),	-- Jade Jug
 			i(183757),	-- Jagged Blade
-			i(182034),	-- Jagged Necrotic Crystal \\ Base Thing
 			i(172950),	-- Jar of Clay
 			i(173693),	-- Jar of Maggots
 			i(179310),	-- Jar of Muck
@@ -3208,7 +3184,6 @@ root(ROOTS.Unsorted, {
 			i(172141),	-- Korinna's Allaying Crook
 			i(183045),	-- Korinna's Allaying Crook
 			i(175478),	-- Korrim's Journal
-			i(182010),	-- Kyranite Dangle \\ Almost Thing
 			i(173923),	-- Kyrian Boots
 			i(173922),	-- Kyrian Chestplate
 			i(173924),	-- Kyrian Helmet
@@ -3217,7 +3192,6 @@ root(ROOTS.Unsorted, {
 			i(173708),	-- Kyrian Shield
 			i(176055),	-- Lace-Up Bracers
 			i(176321),	-- Lady Moonberry's Hairbrush
-			i(173168),	-- Laestrite Setting
 			i(181757),	-- Lambent Vigil's Torch \\ Lush Vigil's Torch
 			i(175792),	-- Larion Flight Feather
 			i(178890),	-- Larion Plume
@@ -3275,8 +3249,6 @@ root(ROOTS.Unsorted, {
 			i(173942),	-- Marrowbore Larva \\ Marrowbore larva
 			i(183796),	-- Marrowgrub Flesh
 			i(178725),	-- Master of Shapes
-			i(173130),	-- Masterful Jewel Cluster
-			i(173124),	-- Masterful Jewel Doublet
 			i(174092),	-- Mateo's Mirror Shard \\ Broken Mirror Shard
 			i(183139),	-- Mature Spore Sample
 			i(170499),	-- Maw Seeker Harness
@@ -3367,7 +3339,6 @@ root(ROOTS.Unsorted, {
 			i(174278),	-- Orders from the Tithelord \\ Orders from the Grand Steward
 			i(177162),	-- Ordinary Basket
 			i(180718),	-- Ordinary Crystal
-			i(173108),	-- Oriblase
 			i(180168),	-- Oribobber
 			i(173180),	-- Ornate Key
 			i(181160),	-- Ossein Battleaxe
@@ -3417,10 +3388,7 @@ root(ROOTS.Unsorted, {
 			i(180287),	-- Plundered Anima
 			i(181968),	-- Plush Copperfur Pelt \\ Bastion Skinning Item
 			i(181247),	-- Pointy Stick
-			i(181999),	-- Polished Gemstones \\ Kinda Thing
-			i(182000),	-- Polished Phedrum Rod \\ Base Thing
 			i(179004),	-- Polished Silver Tithe \\ Hand-Worn Silver Tithe
-			i(182058),	-- Polished Sinvyr Bar \\ Base Thing
 			i(173952),	-- Pomagrave
 			i(173896),	-- Portable Spy Kit
 			i(173355),	-- Pouch of Puffpetal Powder
@@ -3454,8 +3422,6 @@ root(ROOTS.Unsorted, {
 			i(173703),	-- Purity Jug
 			i(180803),	-- Puzzling Cryptogram
 			i(173029),	-- Quartermaster's Insignia
-			i(173128),	-- Quick Jewel Cluster
-			i(173122),	-- Quick Jewel Doublet
 			i(174935),	-- Rabbit Meat
 			i(176442),	-- Ratwhisker Brew
 			i(175973),	-- Ravager Talon
@@ -3497,7 +3463,6 @@ root(ROOTS.Unsorted, {
 			i(178086),	-- Revendreth Rare Treasure
 			i(178085),	-- Revendreth Uncommon Treasure
 			i(178091),	-- Revendreth Unique Loot
-			i(173125),	-- Revitalizing Jewel Doublet
 			i(180899),	-- Riding Hook
 			i(175794),	-- Ring of Keys
 			i(178572),	-- Ring of Otherworldly Metal
@@ -3565,7 +3530,6 @@ root(ROOTS.Unsorted, {
 			i(181252),	-- Silverheart Vine Leaves
 			i(180350),	-- Simple Stone Loop
 			i(171369),	-- Singing Wood
-			i(181964),	-- Sinister Choker \\ Revendreth Jewelcrafting Item
 			i(179359),	-- Sinstone Fragment
 			i(180279),	-- Sinstone Fragment \\ Sinstone Fragment 1
 			i(180281),	-- Sinstone Fragment \\ Sinstone Fragment 2
@@ -3581,7 +3545,6 @@ root(ROOTS.Unsorted, {
 			i(180891),	-- Smooshed Maggot
 			i(182354),	-- Soft Vulpin Fur
 			i(182357),	-- Soggy Kelpcheese
-			i(182011),	-- Solenium Wire \\ Kinda Thing
 			i(172090),	-- Sorrowscale Fragment
 			i(179318),	-- Sorrowvine
 			i(171948),	-- Soul Ash
@@ -3667,7 +3630,6 @@ root(ROOTS.Unsorted, {
 			i(181772),	-- Stonehead Very Happy PH Reward
 			i(172459),	-- Storied Legion Emblem
 			i(178579),	-- Stradama's Lost Ledger
-			i(173126),	-- Straddling Jewel Doublet
 			i(178578),	-- Strange Doll
 			i(178574),	-- Strange Ritual Mask
 			i(173732),	-- Strange Runestone
@@ -3781,7 +3743,6 @@ root(ROOTS.Unsorted, {
 			i(180851),	-- Twirlpetal Pollen
 			i(178685),	-- Twisted Mawsteel
 			i(178790),	-- Umbral Plume
-			i(173110),	-- Umbryl
 			i(171991),	-- Unadorned Weapon
 			i(175971),	-- Unexploded Blight Bomb
 			i(178662),	-- Unfinished Blade
@@ -3813,8 +3774,6 @@ root(ROOTS.Unsorted, {
 			i(173695),	-- Venthyr Ritual Robes
 			i(173697),	-- Venthyr Ritual Tome
 			i(178170),	-- Vernon's Field Report \\ Gregor's Field Report \\ Darkshire Report
-			i(173129),	-- Versatile Jewel Cluster
-			i(173123),	-- Versatile Jewel Doublet
 			i(175011),	-- Vesper of Veilflight
 			i(175153),	-- Vessel of Ardenweald
 			i(180778),	-- Vessel of Ardenweald
@@ -4090,7 +4049,6 @@ root(ROOTS.Unsorted, {
 			i(187112),	-- Packaged Soul Ash
 			i(187149),	-- Partial Conduit Index
 			i(187003),	-- Pet Plushy
-			i(186981),	-- Porous Stone Statue
 			i(187312),	-- Portentous Shard of Bek
 			i(187315),	-- Portentous Shard of Cor
 			i(187318),	-- Portentous Shard of Dyz
@@ -4113,7 +4071,6 @@ root(ROOTS.Unsorted, {
 			i(187407),	-- Satchel of Security
 			i(187499),	-- Sculpted Elethium Orb
 			i(186197),	-- Seal of Death's Unity
-			i(186982),	-- Shaded Stone Statue
 			i(187468),	-- Shadehound Tack
 			i(187550),	-- Shadowsteel Shavings
 			i(187057),	-- Shard of Bek

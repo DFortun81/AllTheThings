@@ -393,34 +393,69 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 		}),
 	}),
 	prof(JEWELCRAFTING, {
-		n(HEAD, {
+		spell(325248, {	-- Shadowlands Prospecting
+			i(173109),	-- Angerseye
+			i(173170),	-- Essence of Rebirth
+			i(173172),	-- Essence of Servitude
+			i(173171),	-- Essence of Torment
+			i(173173),	-- Essence of Valor
+			i(173108),	-- Oriblase
+			i(173110),	-- Umbryl
+		}),
+		n(DISCOVERY, {
+			spell(338977, {	-- Shadowghast Necklace [Rank 1]
+				r(332075),	-- Shadowghast Necklace [Rank 2]
+				r(332040),	-- Shadowghast Necklace [Rank 3]
+				r(327921),	-- Shadowghast Necklace [Rank 4]
+			}),
+			spell(338978, {	-- Shadowghast Ring [Rank 1]
+				r(332074),	-- Shadowghast Ring [Rank 2]
+				r(332039),	-- Shadowghast Ring [Rank 3]
+				r(327920),	-- Shadowghast Ring [Rank 4]
+			}),
+		}),
+		filter(COSMETIC, {
 			i(180760),	-- Crown of the Righteous
 		}),
-		filter(NECK_F, {
-			i(178927),	-- Shadowghast Necklace
-			i(173144),	-- Versatile Solenium Necklace
-			i(173147),	-- Deadly Sinvyr Necklace
-			i(173145),	-- Masterful Phaedrum Necklace
-			i(173146),	-- Quick Oxxein Necklace
-			i(173141),	-- Masterful Laestrite Choker
-			i(173142),	-- Quick Laestrite Choker
-			i(173143),	-- Deadly Laestrite Choker
-			i(173140),	-- Versatile Laestrite Choker
-		}),
 		filter(FINGER_F, {
-			i(178926),	-- Shadowghast Ring
-			i(173131),	-- Versatile Solenium Ring
-			i(173134),	-- Deadly Sinvyr Ring
-			i(173132),	-- Masterful Phaedrum Ring
-			i(173133),	-- Quick Oxxein Ring
-			i(173136),	-- Masterful Laestrite Band
-			i(173138),	-- Deadly Laestrite Band
-			i(173135),	-- Versatile Laestrite Band
-			i(173137),	-- Quick Laestrite Band
+			i(173138), -- Deadly Laestrite Band
+			i(173134), -- Deadly Sinvyr Ring
+			i(173136), -- Masterful Laestrite Band
+			i(173132), -- Masterful Phaedrum Ring
+			i(173137), -- Quick Laestrite Band
+			i(173133), -- Quick Oxxein Ring
+			i(178926), -- Shadowghast Ring
+			i(173135), -- Versatile Laestrite Band
+			i(173131), -- Versatile Solenium Ring
+		}),
+		filter(GEMS, {
+			i(173127),	-- Deadly Jewel Cluster
+			i(173121),	-- Deadly Jewel Doublet
+			i(173130),	-- Masterful Jewel Cluster
+			i(173124),	-- Masterful Jewel Doublet
+			i(173128),	-- Quick Jewel Cluster
+			i(173122),	-- Quick Jewel Doublet
+			i(173125),	-- Revitalizing Jewel Doublet
+			i(173126),	-- Straddling Jewel Doublet
+			i(173129),	-- Versatile Jewel Cluster
+			i(173123),	-- Versatile Jewel Doublet
+		}),
+		filter(NECK_F, {
+			i(173143), -- Deadly Laestrite Choker
+			i(173147), -- Deadly Sinvyr Necklace
+			i(173141), -- Masterful Laestrite Choker
+			i(173145), -- Masterful Phaedrum Necklace
+			i(173142), -- Quick Laestrite Choker
+			i(173146), -- Quick Oxxein Necklace
+			i(178927), -- Shadowghast Necklace
+			i(173140), -- Versatile Laestrite Choker
+			i(173144), -- Versatile Solenium Necklace
 		}),
 		filter(MISC, {
-			i(187829),	-- Aealic Harmonizing Stone
-			i(187849),	-- Devourer Essence Stone
+			i(187829, {["timeline"] = {ADDED_9_2_0}}),	-- Aealic Harmonizing Stone
+			i(187849, {["timeline"] = {ADDED_9_2_0}}),	-- Devourer Essence Stone
+			i(186981, {["timeline"] = {ADDED_9_1_0}}),	-- Porous Stone Statue
+			i(186982, {["timeline"] = {ADDED_9_1_0}}),	-- Shaded Stone Statue
 		}),
 	}),
 	prof(LEATHERWORKING, {

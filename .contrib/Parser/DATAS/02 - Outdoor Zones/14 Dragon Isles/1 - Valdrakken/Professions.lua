@@ -70,39 +70,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["g"] = DF_INSCRIPTION,
 				}),
 			}),
-			prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = JEWELCRAFTING }, {
+			prof(JEWELCRAFTING, {
 				n(190094, {	-- Tuluradormi <Jewelcrafting Trainer>
 					["coord"] = { 40.6, 61.2, VALDRAKKEN },
-					["g"] = {
-						r(366250),	-- Dragon Isles Jewelcrafting
-						r(374627),	-- Dragon Isles Prospecting
-						r(395696),	-- Dragon Isles Crushing
-						r(376233),	-- Band of New Beginnings
-						r(374530),	-- Bold-Print Bifocals
-						r(374537),	-- Chromatic Focus
-						r(374437),	-- Crafty Queen's Ruby
-						r(374477),	-- Draconic Vial
-						r(374553),	-- Elemental Harmony
-						r(374439),	-- Energized Vibrant Emerald
-						r(374461),	-- Forceful Nozdorite
-						r(374478),	-- Frameless Lens
-						r(374480),	-- Glossy Stone
-						r(374460),	-- Jagged Nozdorite
-						r(374531),	-- Left-Handed Magnifying Glass
-						r(374494),	-- Pendant of Impending Perils
-						r(374462),	-- Puissant Nozdorite
-						r(389194),	-- Recraft Equipment
-						r(374506),	-- Revitalizing Red Carving
-						r(374440),	-- Sensei's Sundered Onyx
-						r(374475),	-- Shimmering Clasp
-						r(374441),	-- Solid Eternity Amber
-						r(374463),	-- Steady Nozdorite
-						r(374532),	-- Sundered Onyx Loupes
-						r(374550),	-- Timewatcher's Patience
-						r(374438),	-- Zen Mystic Sapphire
-					},
+					["g"] = DF_JEWELCRAFTING,
 				}),
-			})),
+			}),
 			prof(MINING, {
 				n(185553, {	-- Sekita the Burrower <Mining Trainer>
 					["coord"] = { 39.0, 51.8, VALDRAKKEN },

@@ -129,6 +129,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61625, {	-- Jewelcrafting: Sinister Choker
 				["requireSkill"] = JEWELCRAFTING,
 				["g"] = {
+					r(338247, {["u"]=TRAINING}),	-- Sinister Choker
+					r(338248, {["u"]=TRAINING}),	-- Brilliant Bauble
+					r(338249, {["u"]=TRAINING}),	-- Fine Sinvyr Chain
 					i(182056),	-- Brilliant Bauble (QI!)
 					i(182057),	-- Fine Sinvyr Chain (QI!)
 					i(182308),	-- Garnet Shard (QI!)

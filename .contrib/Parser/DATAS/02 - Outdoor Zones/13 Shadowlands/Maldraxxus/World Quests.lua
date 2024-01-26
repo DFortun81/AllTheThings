@@ -136,6 +136,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(61612, {	-- Jewelcrafting: Carved Crystal Ring
 				["requireSkill"] = JEWELCRAFTING,
+				["g"] = {
+					r(338244, {["u"]=TRAINING}),	-- Carved Crystal Ring
+					r(338246, {["u"]=TRAINING}),	-- Faceted Crystal
+					r(338245, {["u"]=TRAINING}),	-- Hollowed Crystal
+					i(181961),	-- Carved Crystal Ring (QI!)
+					i(182033),	-- Faceted Crystal (QI!)
+					i(182032),	-- Hollowed Crystal (QI!)
+					i(182034),	-- Jagged Necrotic Crystal (QI!)
+				},
 			}),
 			q(61540),	-- Just Winging It
 			q(61613, {	-- Leatherworking: Bonestudded Fists

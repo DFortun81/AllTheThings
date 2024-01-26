@@ -13,6 +13,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_L
 			n(156733, {	-- Distributor Au'kharn <Jewelcrafting Supplies>
 				["coord"] = { 39.2, 39.8, ORIBOS },
 				["g"] = {
+					i(173168),	-- Laestrite Setting
 					i(183954),	-- Malleable Wire
 				},
 			}),
@@ -190,6 +191,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_L
 							["cost"] = {{ "i", 173058, 1 }},	-- 1x Umbral Ink
 						}),
 					},
+				}),
+			}),
+			prof(JEWELCRAFTING, {
+				n(156670, {	-- Appraiser Au'vesk <Jewelcrafting Trainer>
+					["coord"] = { 35.8, 41.8, ORIBOS },
+					["g"] = SL_JEWELCRAFTING,
 				}),
 			}),
 			prof(LEATHERWORKING, {

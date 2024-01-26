@@ -144,22 +144,6 @@ i(46930, 66446); -- Design: Brilliant Cardinal Ruby
 i(46916, 66446); -- Design: Brilliant Cardinal Ruby
 i(46917, 66447); -- Design: Bold Cardinal Ruby
 i(47010, 66576); -- Design: Accurate Dreadstone
--- #IF AFTER MOP
--- #IF AFTER WOD
--- #IF AFTER LEGION
--- #IF AFTER BFA
--- #IF AFTER SHADOWLANDS
-i(187830, 360016); -- Design: Aealic Harmonizing Stone
-i(180783, 334548); -- Design: Crown of the Righteous
-i(187847, 360317); -- Design: Devourer Essence Stone
-i(186993, 355187); -- Design: Porous Stone Statue
-i(183099, 311870); -- Design: Revitalizing Jewel Doublet
-i(186994, 355189); -- Design: Shaded Stone Statue
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
--- #ENDIF
 -- #ENDIF
 -- #ENDIF
 -- #ENDIF

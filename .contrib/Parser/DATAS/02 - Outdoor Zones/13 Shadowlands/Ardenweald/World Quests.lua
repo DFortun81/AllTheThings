@@ -102,6 +102,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61303),	-- It's Raining Sparkles
 			q(61601, {	-- Jewelcrafting: Gem Studded Bangle
 				["requireSkill"] = JEWELCRAFTING,
+				["g"] = {
+					r(338239, {["u"]=TRAINING}),	-- Engraved Phaedrum Band
+					r(338238, {["u"]=TRAINING}),	-- Gem Studded Bangle
+					r(338240, {["u"]=TRAINING}),	-- Polished Gemstones
+					i(181998),	-- Engraved Phaedrum Band (QI!)
+					i(181431),	-- Gem Studded Bangle (QI!)
+					i(182289),	-- Handful of Glimmering Gemstones (QI!)
+					i(181999),	-- Polished Gemstones (QI!)
+					i(182000),	-- Polished Phedrum Rod (QI!)
+				},
 			}),
 			q(61602, {	-- Leatherworking: Stalker's Leather Quiver
 				["requireSkill"] = LEATHERWORKING,

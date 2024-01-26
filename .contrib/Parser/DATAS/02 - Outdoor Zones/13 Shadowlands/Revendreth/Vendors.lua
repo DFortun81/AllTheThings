@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(182668, {	-- Recipe: Feast of Gluttonous Hedonism (RECIPE!)
 						["cost"] = 17650000, -- 1,765g
 					}),
-					i(183099, {	-- Design: Revitalizing Jewel Doublet
+					i(183099, {	-- Design: Revitalizing Jewel Doublet (RECIPE!)
 						["cost"] = 13500000, -- 1,350g
 					}),
 					i(183102, {	-- Technique: Contract: Court of Harvesters (RECIPE!)

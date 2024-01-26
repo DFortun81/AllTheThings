@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				ach(4907, {	-- Duskwood Quests
-					["timeline"] = { "added 4.0.3", "deleted 5.0.4" },
+					["timeline"] = { "added 4.0.3", "removed 5.0.4" },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(12430, {	-- Duskwood Quests
