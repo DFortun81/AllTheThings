@@ -127,6 +127,7 @@ namespace ATT
                     Console.ReadLine();
                     return;
                 }
+                Framework.CurrentFileName = mainFileName;
                 luaFiles.Sort(StringComparer.InvariantCulture);
                 NLua.Lua lua = new NLua.Lua();
                 lua.State.Encoding = Encoding.UTF8;
@@ -167,7 +168,7 @@ namespace ATT
                 }
                 catch (Exception e)
                 {
-                    Trace.WriteLine(e);
+                    Framework.LogException(e);
                     Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Console.ReadLine();
                 }
@@ -202,7 +203,7 @@ namespace ATT
                 }
                 catch (Exception e)
                 {
-                    Trace.WriteLine(e);
+                    Framework.LogException(e);
                 }
 
                 do
@@ -216,7 +217,7 @@ namespace ATT
                     }
                     catch (Exception e)
                     {
-                        Trace.WriteLine(e);
+                        Framework.LogException(e);
                         Trace.WriteLine("Press Enter once you have resolved the issue.");
                         Console.ReadLine();
                     }
@@ -286,7 +287,7 @@ namespace ATT
             }
             catch (Exception e)
             {
-                Trace.WriteLine(e);
+                Framework.LogException(e);
                 Console.ReadLine();
             }
         }
@@ -631,7 +632,7 @@ namespace ATT
                 }
                 catch (Exception e)
                 {
-                    Framework.Log(e.Message);
+                    Framework.LogException(e);
                     var line = GetLineNumber(e);
                     if (line > -1)
                     {
