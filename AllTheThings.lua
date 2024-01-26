@@ -15504,7 +15504,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 		}) do
 			BaseVisualHeaderClone.__class[field] = app.EmptyFunction
 		end
-		BaseVisualHeaderClone.__class.hash = app.CreateHash
 		-- Wraps a given object such that it can act as a filtered Header of the base group
 		local CreateWrapVisualHeader = function(base, groups)
 			return Wrap(setmetatable(constructor(nil, {g=groups or {}}, "WrapVisualHeader"), BaseVisualHeaderClone), base);
