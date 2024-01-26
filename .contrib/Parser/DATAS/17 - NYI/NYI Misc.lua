@@ -981,6 +981,7 @@ root(ROOTS.NeverImplemented, {
 				i(205220),	-- Corroded Key
 				i(204890),	-- Dampening Emitter
 				i(205198),	-- Detailed Titan Key
+				i(206026),	-- Ensemble: Enmity Hood and Cloak
 				i(205691),	-- Hypnotic Murloc Lure
 				i(204886),	-- Insulating Embershard
 				i(203397),	-- Kirygosa's Note

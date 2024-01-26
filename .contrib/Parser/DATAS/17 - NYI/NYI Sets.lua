@@ -5359,6 +5359,7 @@ root(ROOTS.NeverImplemented, {
 							i(203564),	-- Stormwing Harrier's Skullmask
 						}),
 						cl(MAGE, {
+							i(201478),	-- Crimson Gladiator's Silk Hood
 							i(203593),	-- Crystal Scholar's Beacons
 							i(203591),	-- Crystal Scholar's Cowl
 						}),
@@ -5412,6 +5413,7 @@ root(ROOTS.NeverImplemented, {
 							i(203564),	-- Stormwing Harrier's Skullmask
 						}),
 						cl(MAGE, {
+							i(201478),	-- Crimson Gladiator's Silk Hood
 							i(203593),	-- Crystal Scholar's Beacons
 							i(203591),	-- Crystal Scholar's Cowl
 						}),
@@ -5655,14 +5657,6 @@ root(ROOTS.NeverImplemented, {
 							i(203503),	-- Peaks of the Walking Mountain
 						}),
 					})),
-					-- Extra
-					i(194711),	--
-					i(201478, {	-- Crimson Gladiator's Silk Hood
-						["bonusID"] = 6894,
-					}),
-					i(201478, {	-- Crimson Gladiator's Silk Hood
-						["bonusID"] = 6895,
-					}),
 				}),
 			})),
 
@@ -6165,103 +6159,8 @@ root(ROOTS.NeverImplemented, {
 						}),
 					})),
 				}),
-				--[[
-				d(LFR_RAID, bubbleDown({ ["bonusID"] = 451 }, {
-					cl(DEATHKNIGHT, {
-						i(202461),	-- Lingering Phantom's Dreadhorns
-						i(202462),	-- Lingering Phantom's Gauntlets
-						i(202464),	-- Lingering Phantom's Plackart
-						i(202460),	-- Lingering Phantom's Schynbalds
-						i(202459),	-- Lingering Phantom's Shoulderplates
-					}),
-					cl(DEMONHUNTER, {
-						i(202525),	-- Kinslayer's Bloodstained Grips
-						i(202524),	-- Kinslayer's Hood
-						i(202523),	-- Kinslayer's Legguards
-						i(202522),	-- Kinslayer's Tainted Spaulders
-						i(202527),	-- Kinslayer's Vest
-					}),
-					cl(DRUID, {
-						i(202515),	-- Bough of the Autumn Blaze
-						i(202518),	-- Chestroots of the Autumn Blaze
-						i(202516),	-- Handguards of the Autumn Blaze
-						i(202513),	-- Mantle of the Autumn Blaze
-						i(202514),	-- Pants of the Autumn Blaze
-					}),
-					cl(EVOKER, {
-						i(202487),	-- Chausses of Obsidian Secrets
-						i(202489),	-- Claws of Obsidian Secrets
-						i(202488),	-- Crown of Obsidian Secrets
-						i(202491),	-- Hauberk of Obsidian Secrets
-						i(202486),	-- Wingspan of Obsidian Secrets
-					}),
-					cl(HUNTER, {
-						i(202479),	-- Ashen Predator's Faceguard
-						i(202478),	-- Ashen Predator's Poleyns
-						i(202480),	-- Ashen Predator's Skinners
-						i(202482),	-- Ashen Predator's Sling Vest
-						i(202477),	-- Ashen Predator's Trophy
-					}),
-					cl(MAGE, {
-						i(202551),	-- Underlight Conjurer's Arcanocowl
-						i(202549),	-- Underlight Conjurer's Aurora
-						i(202552),	-- Underlight Conjurer's Gloves
-						i(202550),	-- Underlight Conjurer's Trousers
-						i(202554),	-- Underlight Conjurer's Vestment
-					}),
-					cl(MONK, {
-						i(202506),	-- Cover of the Vermillion Forge
-						i(202509),	-- Cuirass of the Vermillion Forge
-						i(202507),	-- Fists of the Vermillion Forge
-						i(202505),	-- Pantaloons of the Vermillion Forge
-						i(202504),	-- Spines of the Vermillion Forge
-					}),
-					cl(PALADIN, {
-						i(202455),	-- Heartfire Sentinel's Brigandine
-						i(202451),	-- Heartfire Sentinel's Faulds
-						i(202452),	-- Heartfire Sentinel's Forgehelm
-						i(202453),	-- Heartfire Sentinel's Protectors
-						i(202450),	-- Heartfire Sentinel's Steelwings
-					}),
-					cl(PRIEST, {
-						i(202541),	-- Breeches of the Furnace Seraph
-						i(202545),	-- Command of the Furnace Seraph
-						i(202540),	-- Devotion of the Furnace Seraph
-						i(202543),	-- Grasp of the Furnace Seraph
-						i(202542),	-- Mask of the Furnace Seraph
-					}),
-					cl(ROGUE, {
-						i(202500),	-- Lurking Specter's Brigandine
-						i(202498),	-- Lurking Specter's Handgrips
-						i(202495),	-- Lurking Specter's Shoulderblades
-						i(202496),	-- Lurking Specter's Tights
-						i(202497),	-- Lurking Specter's Visage
-					}),
-					cl(SHAMAN, {
-						i(202473),	-- Adornments of the Cinderwolf
-						i(202469),	-- Braies of the Cinderwolf
-						i(202471),	-- Knuckles of the Cinderwolf
-						i(202470),	-- Spangenhelm of the Cinderwolf
-						i(202468),	-- Thunderpads of the Cinderwolf
-					}),
-					cl(WARLOCK, {
-						i(202531),	-- Amice of the Sinister Savant
-						i(202536),	-- Cursed Robes of the Sinister Savant
-						i(202533),	-- Grimhorns of the Sinister Savant
-						i(202534),	-- Grips of the Sinister Savant
-						i(202532),	-- Leggings of the Sinister Savant
-					}),
-					cl(WARRIOR, {
-						i(202446),	-- Battlechest of the Onyx Crucible
-						i(202444),	-- Handguards of the Onyx Crucible
-						i(202442),	-- Legplates of the Onyx Crucible
-						i(202441),	-- Pauldrons of the Onyx Crucible
-						i(202443),	-- Thraexhelm of the Onyx Crucible
-					}),
-				})),
-				--]]
 				header(HEADERS.Item, 205878, {	-- Obsidian Aspectral Earthstone
-					d(LFR_RAID, bubbleDown({ ["bonusID"] = 6896 }, {
+					d(LFR_RAID, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 						cl(DEMONHUNTER, {
 							i(205845),	-- Kinslayer's Hood
 							i(205843),	-- Kinslayer's Tainted Spaulders
@@ -6279,6 +6178,7 @@ root(ROOTS.NeverImplemented, {
 							i(205818),	-- Ashen Predator's Trophy
 						}),
 						cl(MAGE, {
+							i(205381),	-- Obsidian Gladiator's Silk Hood
 							i(205858),	-- Underlight Conjurer's Aurora
 							i(202548),	-- Underlight Conjurer's Charmbelt
 						}),
@@ -6287,7 +6187,6 @@ root(ROOTS.NeverImplemented, {
 							i(205803),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
 							i(205855),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
@@ -6303,12 +6202,11 @@ root(ROOTS.NeverImplemented, {
 							i(205850),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
 							i(205798),	-- Pauldrons of the Onyx Crucible
 							i(205800),	-- Thraexhelm of the Onyx Crucible
 						}),
 					})),
-					d(NORMAL_RAID, bubbleDown({ ["bonusID"] = 6894 }, {
+					d(NORMAL_RAID, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
 						cl(DEMONHUNTER, {
 							i(205845),	-- Kinslayer's Hood
 							i(205843),	-- Kinslayer's Tainted Spaulders
@@ -6326,6 +6224,7 @@ root(ROOTS.NeverImplemented, {
 							i(205818),	-- Ashen Predator's Trophy
 						}),
 						cl(MAGE, {
+							i(205381),	-- Obsidian Gladiator's Silk Hood
 							i(205858),	-- Underlight Conjurer's Aurora
 							i(202548),	-- Underlight Conjurer's Charmbelt
 						}),
@@ -6334,7 +6233,6 @@ root(ROOTS.NeverImplemented, {
 							i(205803),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
 							i(205855),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
@@ -6350,12 +6248,11 @@ root(ROOTS.NeverImplemented, {
 							i(205850),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
 							i(205798),	-- Pauldrons of the Onyx Crucible
 							i(205800),	-- Thraexhelm of the Onyx Crucible
 						}),
 					})),
-					d(HEROIC_RAID, bubbleDown({ ["bonusID"] = 6897 }, {
+					d(HEROIC_RAID, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
 						cl(DEMONHUNTER, {
 							i(205845),	-- Kinslayer's Hood
 							i(205843),	-- Kinslayer's Tainted Spaulders
@@ -6381,7 +6278,6 @@ root(ROOTS.NeverImplemented, {
 							i(205803),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
 							i(205855),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
@@ -6397,12 +6293,11 @@ root(ROOTS.NeverImplemented, {
 							i(205850),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
 							i(205798),	-- Pauldrons of the Onyx Crucible
 							i(205800),	-- Thraexhelm of the Onyx Crucible
 						}),
 					})),
-					d(MYTHIC_RAID, bubbleDown({ ["bonusID"] = 6895 }, {
+					d(MYTHIC_RAID, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
 						cl(DEMONHUNTER, {
 							i(205845),	-- Kinslayer's Hood
 							i(205843),	-- Kinslayer's Tainted Spaulders
@@ -6428,7 +6323,6 @@ root(ROOTS.NeverImplemented, {
 							i(205803),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
 							i(205855),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
@@ -6444,7 +6338,6 @@ root(ROOTS.NeverImplemented, {
 							i(205850),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
 							i(205798),	-- Pauldrons of the Onyx Crucible
 							i(205800),	-- Thraexhelm of the Onyx Crucible
 						}),
@@ -6475,7 +6368,6 @@ root(ROOTS.NeverImplemented, {
 							i(205803),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
 							i(205855),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
@@ -6491,7 +6383,6 @@ root(ROOTS.NeverImplemented, {
 							i(205850),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
 							i(205798),	-- Pauldrons of the Onyx Crucible
 							i(205800),	-- Thraexhelm of the Onyx Crucible
 						}),
@@ -6522,7 +6413,6 @@ root(ROOTS.NeverImplemented, {
 							i(205803),	-- Heartfire Sentinel's Steelwings
 						}),
 						cl(PRIEST, {
-							i(202545),	-- Command of the Furnace Seraph [This Item Act Weird..]
 							i(205855),	-- Mask of the Furnace Seraph
 						}),
 						cl(ROGUE, {
@@ -6538,13 +6428,11 @@ root(ROOTS.NeverImplemented, {
 							i(205850),	-- Grimhorns of the Sinister Savant
 						}),
 						cl(WARRIOR, {
-							i(202440),	-- Insignia of the Onyx Crucible [This Item Act Weird..]
 							i(205798),	-- Pauldrons of the Onyx Crucible
 							i(205800),	-- Thraexhelm of the Onyx Crucible
 						}),
 					})),
 				}),
-				i(206026),	-- Ensemble: Enmity Hood and Cloak
 			})),
 
 			-- 10.1.5

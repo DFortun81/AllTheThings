@@ -65458,8 +65458,6 @@ s(186715)/i(205381),	-- Obsidian Gladiator's Silk Hood
 s(186716)/i(205381),	-- Obsidian Gladiator's Silk Hood
 10.1.0.48776
 s(187207)/i(205687),	--
-s(187564)/i(205847),	-- Kinslayer's Vest \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Chest
-s(187565)/i(205847),	-- Kinslayer's Vest \\ PVP Upgrade - Class Sets - Demon Hunter - Armor - Leather - Chest
 s(187719)/i(205924),	-- Obsidian Gladiator's Axe
 s(187720)/i(205915),	-- Obsidian Gladiator's Dagger
 s(187721)/i(205925),	-- Obsidian Gladiator's Knife
