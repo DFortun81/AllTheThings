@@ -7,6 +7,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			i(189704, {	-- Dominance Key
 				["cr"] = 181403,	-- Mawsworn Inquisitor
 			}),
+			i(187707),	-- Progenitor Essentia
 			i(192444, {	-- Resonating Disc
 				["timeline"] = { ADDED_9_2_5 },
 			}),
@@ -14,6 +15,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			i(190197, {	-- Sandworn Chest Key
 				["cost"] = { { "i", 190198, 5 } },	-- Sandworn Chest Key Fragment
 			}),
+			i(187703),	-- Silken Protofiber
 			i(190579),	-- Unformed Essence
 			filter(COSMETIC, {
 				i(190951, {	-- Distinguished Blade of Cartel Al

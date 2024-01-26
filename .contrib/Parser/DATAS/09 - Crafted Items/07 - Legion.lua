@@ -359,9 +359,7 @@ root(ROOTS.Craftables, tier(LEGION_TIER, applyclassicphase(LEGION_PHASE_ONE, bub
 		filter(GLYPHS, {
 			i(140630),	-- Mark of the Doe (CI!)
 			i(129021),	-- Mark of the Sentinel (CI!)
-			i(187933, {	-- Mark of the Duskwing Raven (CI!)
-				["timeline"] = { ADDED_9_1_5 },
-			}),
+			i(187933, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Duskwing Raven (CI!)
 			i(139314, {	-- Grimoire of the Abyssal (CI!)
 				["timeline"] = { ADDED_10_1_5 },
 			}),

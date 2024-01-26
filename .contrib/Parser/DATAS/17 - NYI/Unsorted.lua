@@ -2609,15 +2609,9 @@ root(ROOTS.Unsorted, {
 			i(183600),	-- Abomination Parts
 			i(172176),	-- Abomination Service Stub
 			i(183616),	-- Accursed Keepsake
-			i(173070),	-- Ace of Putrescence \\ Ace of Putresence \\ Ace of the Macabre
-			i(173079),	-- Ace of Repose \\ Ace of the Rebirth
-			i(173097),	-- Ace of the Indomitable \\ Ace of Ascendance
-			i(173088),	-- Ace of Voracity \\ Ace of Atonement
 			i(183137),	-- Acolyte's Corpse
 			i(178019),	-- Additional Volumes of Victory
 			i(172518),	-- Adrima's Lily
-			i(173060),	-- Aerated Water
-			i(172052),	-- Aethereal Meat \\ Otherworldly Meat
 			i(178558),	-- Afflictor's Key
 			i(182356),	-- Aged Windcheese
 			i(181463),	-- Alchemist's Crate of the Anonymous Buyer
@@ -2665,7 +2659,6 @@ root(ROOTS.Unsorted, {
 			i(182473),	-- Archivam Tome
 			i(178140),	-- Archonic Resonator
 			i(178041),	-- Archonic Resonator
-			i(181997),	-- Ardenberry Pigment \\ Base Thing
 			i(178717),	-- Ardenmoth Cocoon
 			i(182005),	-- Ardensilk Cloth \\ Kinda Thing
 			i(181542),	-- Ardenweald Anima 3
@@ -2752,10 +2745,6 @@ root(ROOTS.Unsorted, {
 			i(171435),	-- Blacksmithing Reagent 08
 			i(172889),	-- Blackthorn Antidote
 			i(183840),	-- Blackthorn Clay
-			i(177843),	-- Blank Card of Putrescence \\ Blank Card of Putresence \\ Blank Card of the Macabre
-			i(177842),	-- Blank Card of Repose \\ Blank Card of Rebirth
-			i(177840),	-- Blank Card of the Indomitable \\ Blank Card of Ascendance
-			i(177841),	-- Blank Card of Voracity \\ Blank Card of Atonement
 			i(171343),	-- Blank Parchment \\ Official Venthyr Document
 			i(178519),	-- Blank Sinstone
 			i(173531),	-- Blasted Lands Scroll
@@ -2802,8 +2791,6 @@ root(ROOTS.Unsorted, {
 			i(174023),	-- Calibrated Mawstone
 			i(174024),	-- Calibrated Mawstone
 			i(173965),	-- Calibrated Mawstone
-			i(172094),	-- Callous Hide \\ Desolate Hide
-			i(172095),	-- Callous Hide Scraps \\ Desolate Hide Scraps
 			i(181473),	-- Candle Wax Chunk \\ Small Candle Stub
 			i(178791),	-- Carved Cloudfeather Call
 			i(181961),	-- Carved Crystal Ring \\ Maldraxxus Jewelcrafting Item
@@ -2827,7 +2814,6 @@ root(ROOTS.Unsorted, {
 			i(178885),	-- Cloudstrider Pelt
 			i(182167),	-- Cobra Soul \\ Cobra Soulshape
 			i(172969),	-- Codex of Impossibilities
-			i(173048),	-- Codex of the Still Mind
 			i(179327),	-- Coin of Brokerage
 			i(180801),	-- Coldheart Flight Routes
 			i(181253),	-- Collaborator's Hood
@@ -2858,10 +2844,6 @@ root(ROOTS.Unsorted, {
 			i(175757),	-- Construct Supply Key
 			i(175045),	-- Continuing Stampede
 			i(178726),	-- Continuing Stampede
-			i(173062),	-- Contract: Revendreth Zone Faction \\ Contract: Court of Harvesters \\ [DNT] REUSE ME [MTMM]
-			i(173051),	-- Contract: The Ascended \\ Contract: Bastion Zone Faction
-			i(175924),	-- Contract: The Undying Army \\ Contract: Maldraxxus Zone Faction \\ [DNT] [REUSE ME] [MTMM]
-			i(173053),	-- Contract: The Wild Hunt \\ Contract: Ardenweald Zone Faction
 			i(178727),	-- Controlled Affinity
 			i(174074),	-- Cooked Meat
 			i(178875),	-- Corpsehound Whistle
@@ -2873,7 +2855,6 @@ root(ROOTS.Unsorted, {
 			i(180352),	-- Cracked Inquisitor's Band
 			i(179980),	-- Cracked Sinstone
 			i(173258),	-- Craftman's Pouch \\ Frozen Thread
-			i(179314),	-- Creeping Crawler Meat
 			i(174336),	-- Crimson Cravat
 			i(175030),	-- Critical Swiftmend
 			i(179375),	-- Crude Diary Key
@@ -2884,7 +2865,6 @@ root(ROOTS.Unsorted, {
 			i(180463),	-- Crusty Scepter
 			i(173267),	-- Crystalized Gormgris
 			i(172512),	-- Culexwood Branch
-			i(183955),	-- Curing Salt
 			i(180446),	-- Curiously Corrosive Concoction \\ Altered Aldur'thar Extract
 			i(180607),	-- Cypher of Blinding
 			i(180626),	-- Cypher of Melody
@@ -2894,15 +2874,8 @@ root(ROOTS.Unsorted, {
 			i(171967),	-- Dark Cowl
 			i(180340),	-- Dark Deceits and Diversions
 			i(177818),	-- Dark Mojo
-			i(175886),	-- Dark Parchment
 			i(171215),	-- Dark Sermon
 			i(178721),	-- Dark Star
-			i(173066),	-- Darkmoon Card of Death
-			i(177875),	-- Darkmoon Card of Putrescence \\ Darkmoon Card of Putresence \\ Darkmoon Card of the Macabre
-			i(172910),	-- Darkmoon Card of Repose \\ Darkmoon Card of Rebirth
-			i(177876),	-- Darkmoon Card of Repose \\ Darkmoon Card of Rebirth
-			i(177873),	-- Darkmoon Card of the Indomitable \\ Darkmoon Card of Ascendance
-			i(177874),	-- Darkmoon Card of Voracity \\ Darkmoon Card of Atonement
 			i(173127),	-- Deadly Jewel Cluster
 			i(173121),	-- Deadly Jewel Doublet
 			i(170498),	-- Deadsoul Hound Harness
@@ -2921,7 +2894,6 @@ root(ROOTS.Unsorted, {
 			i(181031),	-- Death Shroud Vest
 			i(178112),	-- Death Venom Stinger
 			i(183122),	-- Death's Cloak
-			i(173052),	-- Deathbound Codex
 			i(180811),	-- Deathfang's Favorite Skull
 			i(172970),	-- Debris Searched
 			i(183695),	-- Decaying Dark Naaru Shard
@@ -2931,12 +2903,10 @@ root(ROOTS.Unsorted, {
 			i(172953),	-- Depleted Wildseed \\ Hatched Chrysalis
 			i(178766),	-- Deranged Surgeon's Band \\ Deranged Surgeon's Signet
 			i(177946),	-- Desolate Leather Barding
-			i(172093),	-- Desolate Leather Scraps
 			i(180308),	-- Determined Stone Visage
 			i(174938),	-- Devourer Essence
 			i(174110),	-- Disassembly Flag
 			i(180808),	-- Discarded Torments
-			i(183950),	-- Distilled Death Extract
 			i(182735),	-- Domination Blade
 			i(171990),	-- Dormant Maldracite
 			i(176806),	-- Drained Anima-Core
@@ -2970,10 +2940,6 @@ root(ROOTS.Unsorted, {
 			i(177894),	-- Earthen Jar
 			i(181699),	-- Echthra's Notes \\ Echtra's Notes
 			i(175411),	-- Effused Powder
-			i(173077),	-- Eight of Putrescence \\ Eight of Putresence \\ Eight of the Macabre
-			i(173086),	-- Eight of Repose \\ Eight of the Rebirth
-			i(173104),	-- Eight of the Indomitable \\ Eight of Ascendance
-			i(173095),	-- Eight of Voracity \\ Eight of Atonement
 			i(179377),	-- Elegant Diary Key
 			i(170480),	-- Elevator Key: Level 10
 			i(170481),	-- Elevator Key: Level 15
@@ -2982,7 +2948,6 @@ root(ROOTS.Unsorted, {
 			i(173532),	-- Elwynn Forest Scroll
 			i(177960),	-- Elwynn Report
 			i(180809),	-- Elysian Horn
-			i(173037),	-- Elysian Thade
 			i(178891),	-- Elysian Thread
 			i(179958),	-- Ember Court Guest List
 			i(180421),	-- Emberfall
@@ -3074,13 +3039,8 @@ root(ROOTS.Unsorted, {
 			i(168410),	-- First Aid Kit
 			i(170549),	-- First Aid Kit
 			i(180897),	-- Firstborne's Light
-			i(173074),	-- Five of Putrescence \\ Five of Putresence \\ Five of the Macabre
-			i(173083),	-- Five of Repose \\ Five of the Rebirth
-			i(173101),	-- Five of the Indomitable \\ Five of Ascendance
-			i(173092),	-- Five of Voracity \\ Five of Atonement
 			i(177042),	-- Five-Chime Batzos
 			i(174775),	-- Fix-It-Stick
-			i(182297),	-- Flayed Flesh
 			i(176814),	-- Fleshcrafter's Maldracite
 			i(182341),	-- Fleshshaper's Heart
 			i(182334),	-- Fleshshaper's Heart
@@ -3094,10 +3054,6 @@ root(ROOTS.Unsorted, {
 			i(182355),	-- Forgotten Sweetcheese
 			i(180816),	-- Forsworn Insignia
 			i(175277),	-- Forsworn Uniform Piece
-			i(173073),	-- Four of Putrescence \\ Four of Putresence \\ Four of the Macabre
-			i(173082),	-- Four of Repose \\ Four of the Rebirth
-			i(173100),	-- Four of the Indomitable \\ Four of Ascendance
-			i(173091),	-- Four of Voracity \\ Four of Atonement
 			i(175409),	-- Fractured Anima Crystal
 			i(180769),	-- Fractured Stonewing
 			i(182360),	-- Fresh Ardenweald Anima
@@ -3132,9 +3088,6 @@ root(ROOTS.Unsorted, {
 			i(179006),	-- Glowing Endmire Dust \\ Pile of Endmire Dust
 			i(173537),	-- Glowing Hearthstone
 			i(172516),	-- Glowing Viscera
-			i(184100),	-- Glyph of the Aerial Chameleon
-			i(184097),	-- Glyph of the Aquatic Chameleon
-			i(184096),	-- Glyph of the Swift Chameleon
 			i(178517),	-- Gold Tooth
 			i(178582),	-- Golden Death Mask
 			i(182766),	-- Golden Egg
@@ -3214,11 +3167,9 @@ root(ROOTS.Unsorted, {
 			i(177571),	-- Illidari Robe
 			i(177567),	-- Illidari Shoulders
 			i(180625),	-- Imbued Drust Fetish
-			i(183951),	-- Immortal Shard
 			i(174658),	-- Imprisoned Soul
 			i(176082),	-- Inane Drabblings
 			i(174821),	-- Incense of Guidance
-			i(172057),	-- Inconceivably Aged Vinegar \\ Wealdwood Syrup
 			i(183058),	-- Indecipherable Map
 			i(179983),	-- Infused Animacones
 			i(179978),	-- Infused Animacones
@@ -3236,7 +3187,6 @@ root(ROOTS.Unsorted, {
 			i(171373),	-- Introspection
 			i(173358),	-- Invitations
 			i(174093),	-- Ionata's Fangs \\ Bell of Remembrance
-			i(173033),	-- Iridescent Amberjack
 			i(176052),	-- Iron Skull Belt Buckle
 			i(173706),	-- Jade Jug
 			i(183757),	-- Jagged Blade
@@ -3298,20 +3248,14 @@ root(ROOTS.Unsorted, {
 			i(169823),	-- Lordaeron Coin
 			i(178526),	-- Lost Cryptkeeper's Ring
 			i(177026),	-- Lost Earring \\ Ethereal Worm
-			i(173032),	-- Lost Sole
 			i(175044),	-- Louder Stampeding Roar
 			i(177835),	-- Louison's Gristle Cutter
-			i(180733),	-- Luminous Flux
-			i(173059),	-- Luminous Ink
-			i(173057),	-- Luminous Pigment
 			i(181450),	-- Luminous Solenium Ore \\ Mining Foozle
 			i(181388),	-- Lush Marrowroot \\ Black Leaf
 			i(181762),	-- Lush Widowbloom
-			i(178786),	-- Lusterwheat Flour \\ Sinegar
 			i(182641),	-- Lustrous Silver Key
 			i(179862),	-- Luxurious Feather
 			i(178655),	-- Lye's Ritual Drafts
-			i(183952),	-- Machinist's Oil
 			i(172205),	-- Maldracite Crystal
 			i(178684),	-- Maldracite Dust
 			i(177879),	-- Maldraxxi Bone Marrow \\ Maldraxxian Living Ore
@@ -3320,7 +3264,6 @@ root(ROOTS.Unsorted, {
 			i(175961),	-- Maldraxxus Rare Treasure
 			i(175958),	-- Maldraxxus Uncommon Treasure
 			i(178088),	-- Maldraxxus Unique Loot
-			i(183954),	-- Malleable Wire
 			i(180509),	-- Mane Hair Harp
 			i(178214),	-- Mantle of the Primus \\ [PH] Crown of the Primus
 			i(183809),	-- Margrave Krexus Tribute
@@ -3352,7 +3295,6 @@ root(ROOTS.Unsorted, {
 			i(173976),	-- Medallion of Envy
 			i(178584),	-- Medallion of Orientation
 			i(179024),	-- Medallion of Pride
-			i(172056),	-- Medley of Transplanar Spices \\ Thade Sauce
 			i(180797),	-- Memorial Offering Key
 			i(181720),	-- Menacing Sinvyr Ore \\ Luminous Sinvyr Ore
 			i(175975),	-- Meredy's Spell Book
@@ -3372,10 +3314,6 @@ root(ROOTS.Unsorted, {
 			i(182616),	-- Mischievous Quill
 			i(180800),	-- Misshapen Cypher of Relocation
 			i(180262),	-- Missing Eye
-			i(173161),	-- Missive of Critical Strike \\ Rune of Critical Strike \\ Jewelcrafting - Modified Crafting Reagent 02
-			i(173160),	-- Missive of Haste \\ Rune of Haste \\ [DNT] REUSE ME \\ Freezing Diamond \\ Jewelcrafting - Modified Crafting Reagent 01
-			i(173162),	-- Missive of Mastery \\ Rune of Mastery \\ Jewelcrafting - Modified Crafting Reagent 03
-			i(173163),	-- Missive of Versatility \\ Rune of Versatility \\ Jewelcrafting - Modified Crafting Reagent 04
 			i(177484),	-- Mistdancer Helm
 			i(177491),	-- Mistdancer Hood
 			i(177496),	-- Mistdancer Jerkin
@@ -3402,7 +3340,6 @@ root(ROOTS.Unsorted, {
 			i(178729),	-- Necromancy Focus
 			i(171146),	-- Necrotic Deathward
 			i(170552),	-- Necrotic Fetish
-			i(182037),	-- Necrotic Pigment \\ Base Thing
 			i(171105),	-- Necrotic Shard
 			i(173692),	-- Nemea's Javelin
 			i(174778),	-- Neonate Bonetooth
@@ -3428,7 +3365,6 @@ root(ROOTS.Unsorted, {
 			i(174947),	-- Old Grimoire
 			i(175980),	-- Old Spring
 			i(177039),	-- Olive-Stuffed Barbouni
-			i(178787),	-- Orboreal Shard \\ zzOldAcrid Coriander \\ Acrid Coriander
 			i(174278),	-- Orders from the Tithelord \\ Orders from the Grand Steward
 			i(177162),	-- Ordinary Basket
 			i(180718),	-- Ordinary Crystal
@@ -3442,7 +3378,6 @@ root(ROOTS.Unsorted, {
 			i(178776),	-- Ossified Oozebound Waistguard \\ Waistguard of the Blight Warden
 			i(183130),	-- Otherworldly Egg
 			i(182609),	-- Overdue Scroll
-			i(172092),	-- Pallid Bone \\ Desolate Bone \\ Sorrowscale
 			i(180712),	-- Partially Digested Cloth \\ Curious Green Vial
 			i(180719),	-- Partially Digested Leather \\ Curious Green Vial
 			i(175042),	-- Path to Enlightenment
@@ -3450,7 +3385,6 @@ root(ROOTS.Unsorted, {
 			i(175035),	-- Patience is a Virtue
 			i(177710),	-- Patrol Schedule
 			i(182386),	-- Pauldrons of Imperium \\ Mantle of Imperium
-			i(177062),	-- Penumbra Thread
 			i(182450),	-- Perfect Ardenmoth Wing Scale
 			i(174330),	-- Perfected Circlet Mold \\ Circlet Mold
 			i(178723),	-- Personal Growth
@@ -3465,7 +3399,6 @@ root(ROOTS.Unsorted, {
 			i(175956),	-- PH Unusual
 			i(174061),	-- Phaestus, Genesis of Aeons \\ Phaestus, Gensis of Aeons \\ Phaestus, Gensis of Eons
 			i(181777),	-- Phaeton's Key \\ Runespeaker's Key
-			i(172055),	-- Phantasmal Haunch \\ Mysterious Meat
 			i(177278),	-- Phial of Serenity
 			i(174043),	-- Phylactery of Arin'gore
 			i(175276),	-- Phylactery of Kel'Thuzad
@@ -3484,7 +3417,6 @@ root(ROOTS.Unsorted, {
 			i(176053),	-- Pleated Cape
 			i(180287),	-- Plundered Anima
 			i(181968),	-- Plush Copperfur Pelt \\ Bastion Skinning Item
-			i(173035),	-- Pocked Bonefish
 			i(181247),	-- Pointy Stick
 			i(181999),	-- Polished Gemstones \\ Kinda Thing
 			i(182000),	-- Polished Phedrum Rod \\ Base Thing
@@ -3495,7 +3427,6 @@ root(ROOTS.Unsorted, {
 			i(173355),	-- Pouch of Puffpetal Powder
 			i(183724),	-- Poxedskin Sample
 			i(180887),	-- Preserved Organ
-			i(182061),	-- Prideful Pigment \\ Base Thing
 			i(182050),	-- Prideweave Cloth \\ Kinda Thing
 			i(177880),	-- Primordial Muck
 			i(176456),	-- Prisoner Cage Key \\ Ossein Key Ring
@@ -3530,7 +3461,6 @@ root(ROOTS.Unsorted, {
 			i(176442),	-- Ratwhisker Brew
 			i(175973),	-- Ravager Talon
 			i(174072),	-- Raw Meat
-			i(172054),	-- Raw Seraphic Wing \\ Seraphic Wing
 			i(178144),	-- Raw Silkstrider Silk
 			i(180231),	-- Razor Hill Report
 			i(174534),	-- Razorthread Spool
@@ -3541,8 +3471,6 @@ root(ROOTS.Unsorted, {
 			i(182362),	-- Reclaimed Lumber
 			i(181716),	-- Recruiting Posters \\ Scandalous Gossip Leaflets
 			i(175146),	-- Recurring Vale
-			i(173055),	-- Redeemer's Column
-			i(173429),	-- Redeemer's Spire
 			i(177959),	-- Redridge Report
 			i(182701),	-- Refined Blue Pigment
 			i(182700),	-- Refined Green Pigment
@@ -3571,9 +3499,7 @@ root(ROOTS.Unsorted, {
 			i(178085),	-- Revendreth Uncommon Treasure
 			i(178091),	-- Revendreth Unique Loot
 			i(173125),	-- Revitalizing Jewel Doublet
-			i(172059),	-- Rich Grazer Milk \\ Hellsung Garlic
 			i(180899),	-- Riding Hook
-			i(182309),	-- Rigid Vellum
 			i(175794),	-- Ring of Keys
 			i(178572),	-- Ring of Otherworldly Metal
 			i(171310),	-- Ring of Stonebound Control
@@ -3590,7 +3516,6 @@ root(ROOTS.Unsorted, {
 			i(182299),	-- Ruined Carapace
 			i(180177),	-- Ruminations on True Names
 			i(174333),	-- Rumors of Favor
-			i(180732),	-- Rune Etched Vial
 			i(173392),	-- Runed Dagger
 			i(172968),	-- Runed Latchpick
 			i(182647),	-- Runestone Spike
@@ -3611,19 +3536,13 @@ root(ROOTS.Unsorted, {
 			i(174498),	-- Seal of Contrition \\ The Seal of Contrition
 			i(175138),	-- Sealed Scroll of Soul Rot
 			i(173898),	-- Sealed Scrolls
-			i(183953),	-- Sealing Wax
 			i(183046),	-- Serrated Inking Spines
-			i(173076),	-- Seven of Putrescence \\ Seven of Putresence \\ Seven of the Macabre
-			i(173085),	-- Seven of Repose \\ Seven of the Rebirth
-			i(173103),	-- Seven of the Indomitable \\ Seven of Ascendance
-			i(173094),	-- Seven of Voracity \\ Seven of Atonement
 			i(178904),	-- Shackle Key
 			i(180806),	-- Shadebound Testimonial
 			i(179308),	-- Shadeskin Brandy Phial
 			i(183187),	-- Shadeweaver Incantation
 			i(176928),	-- Shadowlands Skinning Knife
 			i(179919),	-- Shadowy Rabbit's Foot
-			i(179315),	-- Shadowy Shanks
 			i(174374),	-- Shard of the Countess
 			i(176215),	-- Shard of the Countess
 			i(174375),	-- Shard of the Countess
@@ -3632,7 +3551,6 @@ root(ROOTS.Unsorted, {
 			i(178044),	-- Shifting Cryptogram
 			i(180796),	-- Shimmerflight Quill
 			i(183836),	-- Shimmersilt
-			i(173202),	-- Shrouded Cloth
 			i(173192),	-- Shrouded Cloth Bandage
 			i(175982),	-- Sicklethorn To-Do List
 			i(174843),	-- Sicklethorn Trickster Powder \\ Sicklethorn Trick Powder
@@ -3645,7 +3563,6 @@ root(ROOTS.Unsorted, {
 			i(178143),	-- Silkstrider Harp
 			i(173047),	-- Silkstrider Larvae
 			i(173045),	-- Silkstrider Silk
-			i(173034),	-- Silvergill Pike
 			i(181252),	-- Silverheart Vine Leaves
 			i(180350),	-- Simple Stone Loop
 			i(171369),	-- Singing Wood
@@ -3657,17 +3574,12 @@ root(ROOTS.Unsorted, {
 			i(180283),	-- Sinstone Fragment \\ Sinstone Fragment 4
 			i(180284),	-- Sinstone Fragment \\ Sinstone Fragment 5
 			i(173733),	-- Sinstone Records
-			i(173075),	-- Six of Putrescence \\ Six of Putresence \\ Six of the Macabre
-			i(173084),	-- Six of Repose \\ Six of the Rebirth
-			i(173102),	-- Six of the Indomitable \\ Six of Ascendance
-			i(173093),	-- Six of Voracity \\ Six of Atonement
 			i(181955),	-- Skeletal Mudskipper \\ Maldraxxus Fishing Item
 			i(174524),	-- Skewering Needle
 			i(173881),	-- Sludge Pump
 			i(173894),	-- Sludge-Camouflaged Pants
 			i(173893),	-- Sludge-Covered Belt
 			i(180891),	-- Smooshed Maggot
-			i(172058),	-- Smuggled Azerothian Produce \\ Humbling Pepper
 			i(182354),	-- Soft Vulpin Fur
 			i(182357),	-- Soggy Kelpcheese
 			i(182011),	-- Solenium Wire \\ Kinda Thing
@@ -3711,7 +3623,6 @@ root(ROOTS.Unsorted, {
 			i(181387),	-- Speckled Flametail \\ Ardenweald Fishing Item \\ Fishing Item \\ Toxic Darter
 			i(174464),	-- Spectral Bridle
 			i(180297),	-- Spellbound Notes
-			i(173036),	-- Spinefin Piranha
 			i(182006),	-- Spool of Ardensilk \\ Base Thing
 			i(175029),	-- Spreading Vale
 			i(178908),	-- Spriggan-Sized Polearm
@@ -3820,7 +3731,6 @@ root(ROOTS.Unsorted, {
 			i(173737),	-- Temel's Body
 			i(173739),	-- Temel's Head
 			i(173738),	-- Temel's Wings
-			i(172053),	-- Tenebrous Ribs
 			i(171104),	-- The Accuser's Sinstone
 			i(180217),	-- The Bad Container
 			i(180422),	-- The Banewood Road
@@ -3841,10 +3751,6 @@ root(ROOTS.Unsorted, {
 			i(180600),	-- Thistle Tea
 			i(182333),	-- Thistledrop Dew
 			i(182052),	-- Thread of Pride \\ Base Thing
-			i(173072),	-- Three of Putrescence \\ Three of Putresence \\ Three of the Macabre
-			i(173081),	-- Three of Repose \\ Three of the Rebirth
-			i(173099),	-- Three of the Indomitable \\ Three of Ascendance
-			i(173090),	-- Three of Voracity \\ Three of Atonement
 			i(180777),	-- Thros-Forged Key
 			i(180810),	-- Throwin' Skull
 			i(179309),	-- Tincture of Tuica Moonshine
@@ -3866,8 +3772,6 @@ root(ROOTS.Unsorted, {
 			i(183121),	-- Training Gem
 			i(173269),	-- Training Gem
 			i(171204),	-- Traitor's Head
-			i(175970),	-- Tranquil Ink
-			i(175788),	-- Tranquil Pigment
 			i(173285),	-- Treasonous Missive
 			i(172218),	-- Treated Gorm Husk
 			i(178718),	-- Trinary Efflux
@@ -3875,15 +3779,8 @@ root(ROOTS.Unsorted, {
 			i(177949),	-- Tubbins's Lost Teapot
 			i(174844),	-- Tuft of Prowler Fur
 			i(178176),	-- Tunk's Trunk
-			i(182286),	-- Twilight Parchment
 			i(180851),	-- Twirlpetal Pollen
 			i(178685),	-- Twisted Mawsteel
-			i(173071),	-- Two of Putrescence \\ Two of Putresence \\ Two of the Macabre
-			i(173080),	-- Two of Repose \\ Two of the Rebirth
-			i(173098),	-- Two of the Indomitable \\ Two of Ascendance
-			i(173089),	-- Two of Voracity \\ Two of Atonement
-			i(173058),	-- Umbral Ink
-			i(173056),	-- Umbral Pigment
 			i(178790),	-- Umbral Plume
 			i(173110),	-- Umbryl
 			i(171991),	-- Unadorned Weapon
@@ -3905,7 +3802,6 @@ root(ROOTS.Unsorted, {
 			i(178573),	-- Unusual Automaton Parts
 			i(180272),	-- Upper Reaches Key \\ Key to Upper Reaches - Seat of the Jailer
 			i(173900),	-- Vanishing Ink
-			i(173067),	-- Vantus Rune: Castle Nathria
 			i(178940),	-- Vashj's Signal
 			i(174968),	-- Veil Blossom
 			i(183688),	-- Veiled Crystal
@@ -4120,7 +4016,6 @@ root(ROOTS.Unsorted, {
 			i(185736),	-- Brilliant Golden Feather
 			i(187211),	-- Chronicle of Cartel Al
 			i(187343),	-- Condensed Offering Sphere
-			i(186522),	-- Contract: Death's Advance
 			i(187188),	-- D'roo's Bottomless Gulper
 			i(187197),	-- D'roo's Haunted Drumset
 			i(187497),	-- Delicate Razorwing Figurine
@@ -4271,7 +4166,6 @@ root(ROOTS.Unsorted, {
 			i(185829),	-- Trueheart Spear
 			i(187501),	-- Understanding the Purpose
 			i(187192),	-- Urn of Knowledge
-			i(186662),	-- Vantus Rune: Sanctum of Domination
 			i(186658),	-- Ven'ari's Scavenged Supplies
 			i(187191),	-- Vi'ller's Preserved Eye
 			i(187005),	-- Wizard Pet Hat
@@ -4282,7 +4176,6 @@ root(ROOTS.Unsorted, {
 			i(187520),	-- Gently Shaken Gift
 			i(187561),	-- Winter Veil Gift
 			i(187786),	-- Timeworn Keystone
-			i(188164),	-- Glyph of the Wild Mushroom
 			i(188168),	-- Kyrian Traveler's Anima Cache
 		})),
 		tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
@@ -4319,7 +4212,6 @@ root(ROOTS.Unsorted, {
 			i(190387),	-- Conduits For Free
 			i(189732),	-- Constialic Crystallic Spheroid \\ Crystallized Enhancement: Redundancy \\ Crystallized Enhancement: Stamina
 			i(189748),	-- Constialic Fluidic Spheroid \\ Fluidic Enhancement: Redundancy \\ Fluidic Enhancement: Stamina
-			i(187796),	-- Contract: The Enlightened \\ Contract: Enlightened Brokers
 			i(188214),	-- Core Vine Cluster [UNUSED]
 			i(187341),	-- Creation Codex: Animate
 			i(187340),	-- Creation Codex: Automa
@@ -4331,7 +4223,6 @@ root(ROOTS.Unsorted, {
 			i(188186),	-- Drape of Dominion
 			i(189763),	-- Efficialic Crystallic Spheroid \\ Crystallized Enhancement: Efficiency
 			i(189757),	-- Efficialic Fluidic Spheroid \\ Fluidic Enhancement: Efficiency
-			i(187812),	-- Empty Kettle
 			i(188275),	-- Energized Roots [UNUSED]
 			i(188523),	-- Energizing Leporid
 			i(188166),	-- Engraved Card
@@ -4382,7 +4273,6 @@ root(ROOTS.Unsorted, {
 			i(187143),	-- Pristine Raptora Core
 			i(190236),	-- Proto Scale Fragment
 			i(187704),	-- Protoflesh
-			i(187701),	-- Protogenic Pelt
 			i(190955),	-- Protoplasmic Thread
 			i(190969),	-- Provis Flora Report
 			i(188187),	-- Quickfinger Pocketlifters
@@ -4404,14 +4294,12 @@ root(ROOTS.Unsorted, {
 			i(188189),	-- Shadowwrap Leggings
 			i(188184),	-- Shoulderpads of the First Rogue
 			i(188190),	-- Shoulderpads of the Primordial
-			i(187703),	-- Silken Protofiber
 			i(187618),	-- Site Oeth Circuit
 			i(188274),	-- Stolen Artifact
 			i(190971),	-- Terrace of Formation Report
 			i(187321),	-- Thermic Demolitor
 			i(189761),	-- Toxicialic Crystallic Spheroid \\ Crystallized Enhancement: Toxicity
 			i(189756),	-- Toxicialic Fluidic Spheroid \\ Fluidic Enhancement: Toxicity
-			i(187805),	-- Vantus Rune: Sepulcher of the First Ones
 			i(189735),	-- Velocialic Crystallic Spheroid \\ Crystallized Enhancement: Velocity \\ Crystallized Enhancement: Speed
 			i(189747),	-- Velocialic Fluidic Spheroid \\ Fluidic Enhancement: Velocity \\ Fluidic Enhancement: Speed
 			i(188179),	-- Vest of the First Rogue

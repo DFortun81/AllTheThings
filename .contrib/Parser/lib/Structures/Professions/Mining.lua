@@ -151,6 +151,7 @@ SL_MINING = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] =
 }));
 DF_MINING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	r(366260),	-- Mining (Dragon Isles)
+	r(2656),	-- Mining Journal \ Smelting
 	r(396169),	-- Elementally-Charged Stone
 	r(395269),	-- Iridescent Ore
 	r(396162),	-- Khaz'gorite

@@ -127,8 +127,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					r(338231, {["u"]=TRAINING}),	-- Litany of Might
 					r(338233, {["u"]=TRAINING}),	-- Necrotic Ink
 					r(338232, {["u"]=TRAINING}),	-- Scroll of Unyielding Strength
+					i(182297),	-- Flayed Flesh (QI!)
 					i(181958),	-- Litany of Might (QI!)
 					i(182036),	-- Necrotic Ink (QI!)
+					i(182037),	-- Necrotic Pigment (QI!)
 					i(182035),	-- Scroll of Unyielding Strength (QI!)
 				},
 			}),

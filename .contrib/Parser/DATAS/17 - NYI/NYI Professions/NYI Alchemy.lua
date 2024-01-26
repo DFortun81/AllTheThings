@@ -8,6 +8,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				-- 9.0.1
 				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					i(171293),	-- Alchemist's Pouch
+					i(175941),	-- Spiritual Alchemy Stone
+					i(175942),	-- Spiritual Alchemy Stone
+					i(175943),	-- Spiritual Alchemy Stone
 				})),
 			}),
 			tier(DF_TIER, {

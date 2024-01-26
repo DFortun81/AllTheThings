@@ -65,25 +65,6 @@ i(86393, 126654); -- Four Senses Brew / Tablet of Ren Yun (RECIPE!)
 -- #ENDIF
 
 -----------------
-i = GetRecipeHelperForProfession(INSCRIPTION);
------------------
--- #IF AFTER SHADOWLANDS
-i(183098, 311424); -- Technique: Codex of the Still Mind
-i(183102, 311412); -- Technique: Contract: Court of Harvesters
-i(186724, 354000); -- Technique: Contract: Death's Advance
-i(183103, 311409); -- Technique: Contract: The Ascended
-i(187797, 359786); -- Technique: Contract: The Enlightened
-i(183104, 311411); -- Technique: Contract: The Undying Army
-i(183093, 311410); -- Technique: Contract: The Wild Hunt
-i(180782, 334537); -- Technique: Fae Revel Masque
-i(190379, 367389); -- Technique: Glyph of the Spectral Lupine
-i(190381, 367393); -- Technique: Glyph of the Spectral Vulpine
-i(173068, 311453); -- Vantus Rune Technique: Castle Nathria
-i(186671, 354394); -- Vantus Rune Technique: Sanctum of Domination
-i(187806, 359890); -- Vantus Rune Technique: Sepulcher of the First Ones
--- #ENDIF
-
------------------
 i = GetRecipeHelperForProfession(JEWELCRAFTING);
 -----------------
 -- #IF AFTER CLASSIC

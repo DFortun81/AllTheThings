@@ -93,8 +93,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					r(338225, {["u"]=TRAINING}),	-- Hymnal of Respite
 					r(338226, {["u"]=TRAINING}),	-- Scroll of Calming Lyrics
 					i(181996),	-- Ardenberry Ink (QI!)
+					i(181997),	-- Ardenberry Pigment (QI!)
 					i(181397),	-- Hymnal of Respite (QI!)
 					i(181995),	-- Scroll of Calming Lyrics (QI!)
+					i(182286),	-- Twilight Parchment (QI!)
 				},
 			}),
 			q(61303),	-- It's Raining Sparkles

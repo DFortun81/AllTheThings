@@ -115,6 +115,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					r(338235, {["u"]=TRAINING}),	-- Scroll of Calming Lyrics
 					i(181959),	-- Catalog of Sins (QI!)
 					i(182060),	-- Prideful Ink (QI!)
+					i(182061),	-- Prideful Pigment (QI!)
+					i(182309),	-- Rigid Vellum (QI!)
 					i(182059),	-- Scroll of Castigation (QI!)
 				},
 			}),

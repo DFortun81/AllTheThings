@@ -553,6 +553,9 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 	}),
 	prof(INSCRIPTION, {
 		filter(GLYPHS, {
+			i(184100, {["timeline"] = {ADDED_9_0_1}}),	-- Glyph of the Aerial Chameleon
+			i(184097, {["timeline"] = {ADDED_9_0_1}}),	-- Glyph of the Aquatic Chameleon
+			i(184096, {["timeline"] = {ADDED_9_0_1}}),	-- Glyph of the Swift Chameleon
 			i(162022),	-- Mark of the Dolphin (CI!)
 			i(162029),	-- Mark of the Humble Flyer (CI!)
 			i(162027),	-- Mark of the Tideskipper (CI!)

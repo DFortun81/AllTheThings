@@ -13,6 +13,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(172944),	-- [DNT] [REUSE ME]
 					i(172945),	-- [DNT] [REUSE ME]
 					i(172913),	-- [DNT] [REUSE ME]
+					i(172919),	-- Belt Modification: Damage Retaliator
+					i(172917),	-- Belt Modification: Dimensional Shifter
+					i(172918),	-- Belt Modification: Electro-Jump
 					i(172928),	-- Hydrodynamic Accelerators
 					i(172926),	-- Necrostatic Micro Capacitor
 					i(172922),	-- Re-Calibrated Proton Blaster

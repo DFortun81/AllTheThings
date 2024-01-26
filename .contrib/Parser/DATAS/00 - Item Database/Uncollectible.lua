@@ -555,10 +555,15 @@ i(192695);	-- Molten Mandible
 i(202065);	-- Static Sand
 
 
+
+
+
+
+
 -- ^^ Not cleaned
-------------------
+-----------------
 -- PATCH 4.0.3 --
-------------------
+-----------------
 i(62370);	-- Bear Whisker
 i(60406);	-- Blood-Caked Incisors
 i(56054);	-- Gleaming Flipper
@@ -571,14 +576,14 @@ i(60405);	-- Stubby Bear Tail
 i(56056);	-- Trophy Jaws
 i(62452);	-- Velvet Ear
 
-------------------
+-----------------
 -- PATCH 7.0.3 --
-------------------
+-----------------
 i(123865);	-- Relic of Ursol
 
-------------------
+-----------------
 -- PATCH 9.0.1 --
-------------------
+-----------------
 --- Vendor (Common) ---
 i(182123);	-- Aged Agrave Tequila
 i(174282);	-- Airy Ciabatta
@@ -964,6 +969,12 @@ i(180885);	-- Worn Rune-Adorned Pouch
 ------------------
 -- PATCH 9.0.2 --
 ------------------
+--- Profession ---
+i(173066);	-- Darkmoon Card of Death
+i(177875);	-- Darkmoon Card of Putrescence
+i(177876);	-- Darkmoon Card of Repose
+i(177873);	-- Darkmoon Card of the Indomitable
+i(177874);	-- Darkmoon Card of Voracity
 --- Trash ---
 i(184566);	-- Adrima's Potpourri
 i(184563);	-- Anima Condenser
