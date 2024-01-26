@@ -15477,6 +15477,9 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			-- 	return 0.3;	-- visibility of which rows are cloned
 			-- end,
 		}, "VisualHeaderClone");
+		-- We don't want the BaseClass fields to be part of the VisualHeaderClone __class
+		-- since that prevents those fields from falling through to the BaseObject as expected
+		wipe(BaseVisualHeaderClone.__class)
 		-- Fields in the wrapped object which should not persist when represented as a Header
 		for field,_ in pairs(app.MergeSkipFields) do
 			BaseVisualHeaderClone.__class[field] = app.EmptyFunction
