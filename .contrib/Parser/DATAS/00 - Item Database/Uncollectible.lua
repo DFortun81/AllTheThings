@@ -638,6 +638,7 @@ i(178216);	-- Grilled Slumbershrooms
 i(180429);	-- Hand-Formed Fleshbread
 i(178222);	-- Honeyplum Pie
 i(179993);	-- Infused Muck Water
+i(180735);	-- Innert Accolade
 i(173039);	-- Iridescent Amberjack Bait
 i(179279);	-- Jug of Tuica Moonshine
 i(173038);	-- Lost Sole Bait

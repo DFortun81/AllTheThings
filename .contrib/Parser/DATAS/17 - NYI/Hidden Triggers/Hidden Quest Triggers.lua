@@ -1048,14 +1048,11 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(50920),	-- Vol'dun repeatable random chest
 		q(51673),	-- Vol'dun repeatable random chest
 		q(50926),	-- Vol'dun repeatable random chest
-		q(50928),	-- Vol'dun repeatable random chest
 		q(50916),	-- Vol'dun repeatable random chest
 		q(50914),	-- Vol'dun repeatable random chest
 		q(50918),	-- Vol'dun repeatable random chest
-		q(50923),	-- Vol'dun repeatable random chest
 		q(50924),	-- Vol'dun repeatable random chest
 		q(50921),	-- Vol'dun repeatable random chest
-		q(50917),	-- Vol'dun repeatable random chest
 		q(50919),	-- Vol'dun repeatable random chest
 		q(50915),	-- Vol'dun repeatable random chest
 		q(50925),	-- Vol'dun repeatable random chest
@@ -1075,7 +1072,6 @@ root(ROOTS.HiddenQuestTriggers, {
 
 		--	Zuldazar
 		-- Chests
-		q(50710),	-- Zuldazar repeatable random chest
 		q(50712),	-- Zuldazar repeatable random chest
 		q(50719),	-- Zuldazar repeatable random chest
 		q(50720),	-- Zuldazar repeatable random chest
@@ -1805,7 +1801,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(63453),	-- triggers when turning in "Return Lost Souls" (spellID 348838 & 348841 & 348844 & 348847)
 		q(61591),	-- Triggered after completing Specter Of War: Visectus (60283) for the first time
 		q(62929),	-- Triggered when freeing Neena from cage to make "Every Dog Has Its Day" (questID 59615) available (spellID 345404)
-		q(62240),	-- Triggered when Toothpick dug up a "Burried Chest"
 		q(62247),	-- Triggered when Toothpick dug up a "Burried Chest"
 		q(62290),	-- Triggered when turning in 'Corpse Run' (61523)
 		q(62215),	-- Triggered when turning in Training Program (62216)

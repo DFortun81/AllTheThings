@@ -755,8 +755,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(352703, {	-- The Harvest
-				["description"] = "Read the |cFFFFFFFFNote What Says Where You Put The Key|r near the treasure to figure out where the key is.\n\n– 'By one of those big lamps' = |cFFFFFFFF43.8, 41.4|r\n– 'In another storehouse' = |cFFFFFFFF38.2, 43.7|r",
+				["description"] = "Read the |cFFFFFFFFNote What Says Where You Put The Key|r near the treasure to figure out where the key is.\n\n- 'By one of those big lamps' = |cFFFFFFFF43.8, 41.4|r / |cFFFFFFFF41.6, 41.2|r\n- 'In another storehouse' = |cFFFFFFFF38.2, 43.7|r",
 				["coord"] = { 38.5, 39.9, REVENDRETH },
+				["cost"] = {{"i",179823,1}},	-- The Harvest Key
 				["questID"] = 60579,
 				["isDaily"] = true,
 				["g"] = {

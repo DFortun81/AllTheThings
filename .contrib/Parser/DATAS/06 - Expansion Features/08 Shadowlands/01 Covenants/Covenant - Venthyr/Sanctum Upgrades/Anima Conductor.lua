@@ -79,7 +79,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									["isDaily"] = true,
 									["coord"] = { 46.0, 29.1, REVENDRETH },
 									["g"] = {
-										i(182768),	-- The Enchanted Dragon (unknown if interesting yet)
+										i(182768, {	-- The Enchanted Dragon
+											i(182766),	-- Golden Egg
+										}),
 									},
 								}),
 							}),

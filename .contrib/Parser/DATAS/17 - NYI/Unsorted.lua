@@ -3178,7 +3178,6 @@ root(ROOTS.Unsorted, {
 			i(182158),	-- Infused Rubble
 			i(175751),	-- Infused Ruby
 			i(179652),	-- Infused Ruby
-			i(180735),	-- Innert Accolade
 			i(171103),	-- Inquisitor Sinstones
 			i(174930),	-- Inquisitor Stelia's Sinstone
 			i(175974),	-- Intact Femur

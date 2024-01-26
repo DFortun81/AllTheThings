@@ -1005,6 +1005,16 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
 										["g"] = {
 											i(183043),	-- Call Toothpick (QI!)
+											o_repeated(sharedData({	-- Burried Cache
+												["isDaily"] = true,
+											},{
+												o(357771, {
+													["questID"] = 62240,
+													["coords"] = {
+														{ 49.5, 76.2, ARDENWEALD },
+													},
+												}),
+											}))
 										},
 									}),
 									q(62294, {	-- One Lich's Trash...
