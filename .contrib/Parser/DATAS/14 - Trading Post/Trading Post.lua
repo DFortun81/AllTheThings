@@ -27,7 +27,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(212592), -- Treads of Unrelenting Justice
 				i(211091), -- Tunic of Unrelenting Justice
 			}),
-			i(214240, {	-- Ensemble: Gleaming Burden of Unrelenting Justice
+			i(214240, sharedDataSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Ensemble: Gleaming Burden of Unrelenting Justice
 				i(214226),	-- Gleaming Belt of Unrelenting Justice
 				i(214225),	-- Gleaming Bracers of Unrelenting Justice
 				i(214228),	-- Gleaming Cloak of Unrelenting Justice
@@ -37,8 +37,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(214229),	-- Gleaming Mantle of Unrelenting Justice
 				i(214230),	-- Gleaming Treads of Unrelenting Justice
 				i(214224),	-- Gleaming Tunic of Unrelenting Justice
-			}),
-			i(214241, {	-- Ensemble: Moonlit Burden of Unrelenting Justice
+			})),
+			i(214241, sharedDataSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Ensemble: Moonlit Burden of Unrelenting Justice
 				i(214235),	-- Moonlit Belt of Unrelenting Justice
 				i(214234),	-- Moonlit Bracers of Unrelenting Justice
 				i(214237),	-- Moonlit Cloak of Unrelenting Justice
@@ -48,7 +48,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(214238),	-- Moonlit Mantle of Unrelenting Justice
 				i(214239),	-- Moonlit Treads of Unrelenting Justice
 				i(214233),	-- Moonlit Tunic of Unrelenting Justice
-			}),
+			})),
 		}),
 	}),
 	n(QUESTS, {
