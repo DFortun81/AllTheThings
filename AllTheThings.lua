@@ -1379,10 +1379,10 @@ local function CreateObject(t, rootOnly)
 		-- include the raw g since it will be replaced at the end with new objects
 		result.g = t.g;
 		t = result;
-		if not getmetatable(t) then
-			app.PrintDebug(Colorize("Bad CreateObject (key without metatable) used:",app.Colors.ChatLinkError))
-			app.PrintTable(t)
-		end
+		-- if not getmetatable(t) then
+		-- 	app.PrintDebug(Colorize("Bad CreateObject (key without metatable) used:",app.Colors.ChatLinkError))
+		-- 	app.PrintTable(t)
+		-- end
 		-- app.PrintDebug("Merge done",result.key,result[result.key], t, result);
 	-- is it an array of raw datas which needs to be turned into an array of usable objects
 	elseif t[1] then
