@@ -375,22 +375,40 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(192211),	-- Eternal Gladiator's Shawl
 						}),
 						filter(CLOTH, {
-							i(192230),	-- Eternal Gladiator's Silk Amice
-							i(192234),	-- Eternal Gladiator's Silk Armbands
-							i(192232),	-- Eternal Gladiator's Silk Belt
-							i(192231),	-- Eternal Gladiator's Silk Cord
-							i(192223),	-- Eternal Gladiator's Silk Gloves
-							i(192226),	-- Eternal Gladiator's Silk Guise
-							i(192224),	-- Eternal Gladiator's Silk Handwraps
-							i(192225),	-- Eternal Gladiator's Silk Hood
-							i(192227),	-- Eternal Gladiator's Silk Leggings
-							i(192229),	-- Eternal Gladiator's Silk Mantle
-							i(192219),	-- Eternal Gladiator's Silk Robe
-							i(192221),	-- Eternal Gladiator's Silk Slippers
-							i(192222),	-- Eternal Gladiator's Silk Treads
-							i(192228),	-- Eternal Gladiator's Silk Trousers
-							i(192220),	-- Eternal Gladiator's Silk Vestments
-							i(192233),	-- Eternal Gladiator's Silk Wristwraps
+							-- #if AFTER 10.0.2
+							i(201852, {	-- Ensemble: Cosmic Gladiator's Mage Armor
+							-- #endif
+								i(192234),	-- Eternal Gladiator's Silk Armbands
+								i(192232),	-- Eternal Gladiator's Silk Belt
+								i(192223),	-- Eternal Gladiator's Silk Gloves
+								i(192225),	-- Eternal Gladiator's Silk Hood
+								i(192221),	-- Eternal Gladiator's Silk Slippers
+								i(192228),	-- Eternal Gladiator's Silk Trousers
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
+							-- #if AFTER 10.0.2
+							i(201849, {	-- Ensemble: Cosmic Gladiator's Priest Armor
+							-- #endif
+								i(192230),	-- Eternal Gladiator's Silk Amice
+								i(192231),	-- Eternal Gladiator's Silk Cord
+								i(192226),	-- Eternal Gladiator's Silk Guise
+								i(192220),	-- Eternal Gladiator's Silk Vestments
+								i(192233),	-- Eternal Gladiator's Silk Wristwraps
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
+							-- #if AFTER 10.0.2
+							i(201846, {	-- Ensemble: Cosmic Gladiator's Warlock Armor
+							-- #endif
+								i(192224),	-- Eternal Gladiator's Silk Handwraps
+								i(192227),	-- Eternal Gladiator's Silk Leggings
+								i(192229),	-- Eternal Gladiator's Silk Mantle
+								i(192219),	-- Eternal Gladiator's Silk Robe
+								i(192222),	-- Eternal Gladiator's Silk Treads
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 						filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 							i(192214),	-- Eternal Gladiator's Band
@@ -398,40 +416,76 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(192215),	-- Eternal Gladiator's Signet
 						})),
 						filter(LEATHER, {
-							i(192247),	-- Eternal Gladiator's Leather Belt
-							i(192237),	-- Eternal Gladiator's Leather Boots
-							i(192243),	-- Eternal Gladiator's Leather Breeches
-							i(192239),	-- Eternal Gladiator's Leather Gloves
-							i(192240),	-- Eternal Gladiator's Leather Grips
-							i(192241),	-- Eternal Gladiator's Leather Helm
-							i(192236),	-- Eternal Gladiator's Leather Jerkin
-							i(192244),	-- Eternal Gladiator's Leather Legwraps
-							i(192242),	-- Eternal Gladiator's Leather Mask
-							i(192246),	-- Eternal Gladiator's Leather Shoulderpads
-							i(192245),	-- Eternal Gladiator's Leather Spaulders
-							i(192248),	-- Eternal Gladiator's Leather Strap
-							i(192238),	-- Eternal Gladiator's Leather Treads
-							i(192235),	-- Eternal Gladiator's Leather Vest
-							i(192250),	-- Eternal Gladiator's Leather Wristguards
-							i(192249),	-- Eternal Gladiator's Leather Wristwraps
+							-- #if AFTER 10.0.2
+							i(201855, {	-- Ensemble: Cosmic Gladiator's Demon Hunter Armor
+							-- #endif
+								i(192247),	-- Eternal Gladiator's Leather Belt
+								i(192244),	-- Eternal Gladiator's Leather Legwraps							
+								i(192242),	-- Eternal Gladiator's Leather Mask							
+								i(192249),	-- Eternal Gladiator's Leather Wristwraps
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
+							-- #if AFTER 10.0.2
+							i(201854, {	-- Ensemble: Cosmic Gladiator's Druid Armor
+							-- #endif
+								i(192243),	-- Eternal Gladiator's Leather Breeches							
+								i(192239),	-- Eternal Gladiator's Leather Gloves							
+								i(192238),	-- Eternal Gladiator's Leather Treads							
+								i(192250),	-- Eternal Gladiator's Leather Wristguards
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
+							-- #if AFTER 10.0.2
+							i(201851, {	-- Ensemble: Cosmic Gladiator's Monk Armor
+							-- #endif
+								i(192240),	-- Eternal Gladiator's Leather Grips							
+								i(192248),	-- Eternal Gladiator's Leather Strap							
+								i(192245),	-- Eternal Gladiator's Leather Spaulders							
+								i(192236),	-- Eternal Gladiator's Leather Jerkin
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
+							-- #if AFTER 10.0.2
+							i(201848, {	-- Ensemble: Cosmic Gladiator's Rogue Armor
+							-- #endif
+								i(192237),	-- Eternal Gladiator's Leather Boots
+								i(192241),	-- Eternal Gladiator's Leather Helm
+								i(192246),	-- Eternal Gladiator's Leather Shoulderpads
+								i(192235),	-- Eternal Gladiator's Leather Vest
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 						filter(MAIL, {
-							i(192263),	-- Eternal Gladiator's Chain Belt
-							i(192254),	-- Eternal Gladiator's Chain Boots
-							i(192266),	-- Eternal Gladiator's Chain Bracers
-							i(192260),	-- Eternal Gladiator's Chain Breeches
-							i(192258),	-- Eternal Gladiator's Chain Faceguard
-							i(192255),	-- Eternal Gladiator's Chain Gauntlets
-							i(192264),	-- Eternal Gladiator's Chain Girdle
-							i(192256),	-- Eternal Gladiator's Chain Handguards
-							i(192257),	-- Eternal Gladiator's Chain Helm
-							i(192259),	-- Eternal Gladiator's Chain Leggings
-							i(192261),	-- Eternal Gladiator's Chain Monnion
-							i(192253),	-- Eternal Gladiator's Chain Sabatons
-							i(192262),	-- Eternal Gladiator's Chain Shoulderguard
-							i(192252),	-- Eternal Gladiator's Chain Tunic
-							i(192251),	-- Eternal Gladiator's Chain Vest
-							i(192265),	-- Eternal Gladiator's Chain Wristguards
+							-- #if AFTER 10.0.2
+							i(201853, {	-- Ensemble: Cosmic Gladiator's Hunter Armor
+							-- #endif
+								i(192265),	-- Eternal Gladiator's Chain Wristguards							
+								i(192257),	-- Eternal Gladiator's Chain Helm							
+								i(192259),	-- Eternal Gladiator's Chain Leggings							
+								i(192261),	-- Eternal Gladiator's Chain Monnion							
+								i(192253),	-- Eternal Gladiator's Chain Sabatons							
+								i(192255),	-- Eternal Gladiator's Chain Gauntlets
+								i(192263),	-- Eternal Gladiator's Chain Belt							
+								i(192251),	-- Eternal Gladiator's Chain Vest
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
+							-- #if AFTER 10.0.2
+							i(201847, {	-- Ensemble: Cosmic Gladiator's Shaman Armor
+							-- #endif
+								i(192254),	-- Eternal Gladiator's Chain Boots
+								i(192266),	-- Eternal Gladiator's Chain Bracers
+								i(192260),	-- Eternal Gladiator's Chain Breeches
+								i(192258),	-- Eternal Gladiator's Chain Faceguard
+								i(192264),	-- Eternal Gladiator's Chain Girdle
+								i(192256),	-- Eternal Gladiator's Chain Handguards
+								i(192262),	-- Eternal Gladiator's Chain Shoulderguard
+								i(192252),	-- Eternal Gladiator's Chain Tunic
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 						filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 							i(192218),	-- Eternal Gladiator's Amulet
@@ -439,22 +493,40 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(192217),	-- Eternal Gladiator's Pendant
 						})),
 						filter(PLATE, {
-							i(192267),	-- Eternal Gladiator's Plate Chestguard
-							i(192268),	-- Eternal Gladiator's Plate Chestplate
-							i(192271),	-- Eternal Gladiator's Plate Gauntlets
-							i(192279),	-- Eternal Gladiator's Plate Girdle
-							i(192280),	-- Eternal Gladiator's Plate Greatbelt
-							i(192272),	-- Eternal Gladiator's Plate Handguards
-							i(192273),	-- Eternal Gladiator's Plate Helm
-							i(192274),	-- Eternal Gladiator's Plate Helmet
-							i(192275),	-- Eternal Gladiator's Plate Legguards
-							i(192278),	-- Eternal Gladiator's Plate Pauldrons
-							i(192277),	-- Eternal Gladiator's Plate Shoulders
-							i(192270),	-- Eternal Gladiator's Plate Stompers
-							i(192282),	-- Eternal Gladiator's Plate Vambraces
-							i(192269),	-- Eternal Gladiator's Plate Warboots
-							i(192276),	-- Eternal Gladiator's Plate Wargreaves
-							i(192281),	-- Eternal Gladiator's Plate Wristguards
+							-- #if AFTER 10.0.2
+							i(201850, {	-- Ensemble: Cosmic Gladiator's Paladin Armor
+							-- #endif
+								i(192267),	-- Eternal Gladiator's Plate Chestguard							
+								i(192272),	-- Eternal Gladiator's Plate Handguards
+								i(192273),	-- Eternal Gladiator's Plate Helm							
+								i(192277),	-- Eternal Gladiator's Plate Shoulders
+								i(192270),	-- Eternal Gladiator's Plate Stompers							
+								i(192282),	-- Eternal Gladiator's Plate Vambraces
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
+							-- #if AFTER 10.0.2
+							i(201845, {	-- Ensemble: Cosmic Gladiator's Warrior Armor
+							-- #endif
+								i(192268),	-- Eternal Gladiator's Plate Chestplate							
+								i(192280),	-- Eternal Gladiator's Plate Greatbelt							
+								i(192278),	-- Eternal Gladiator's Plate Pauldrons							
+								i(192269),	-- Eternal Gladiator's Plate Warboots							
+								i(192276),	-- Eternal Gladiator's Plate Wargreaves
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
+							-- #if AFTER 10.0.2
+							i(201856, {	-- Ensemble: Cosmic Gladiator's Death Knight Armor						
+							-- #endif	
+								i(192271),	-- Eternal Gladiator's Plate Gauntlets
+								i(192279),	-- Eternal Gladiator's Plate Girdle
+								i(192274),	-- Eternal Gladiator's Plate Helmet
+								i(192275),	-- Eternal Gladiator's Plate Legguards
+								i(192281),	-- Eternal Gladiator's Plate Wristguards
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 						filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 							i(192295),	-- Eternal Gladiator's Badge of Ferocity
@@ -470,28 +542,34 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(192300),	-- Eternal Gladiator's Sigil of Adaptation
 						})),
 						n(WEAPONS, {
-							i(192292),	-- Eternal Gladiator's Ballista
-							i(192306),	-- Eternal Gladiator's Barrier
-							i(192288),	-- Eternal Gladiator's Ceremonial Sword
-							i(192207),	-- Eternal Gladiator's Chalice
-							i(192309),	-- Eternal Gladiator's Focus Staff
-							i(192311),	-- Eternal Gladiator's Gavel
-							i(192287),	-- Eternal Gladiator's Gladius
-							i(192310),	-- Eternal Gladiator's Greatstaff
-							i(192308),	-- Eternal Gladiator's Greatsword
-							i(192208),	-- Eternal Gladiator's Guard
-							i(192284),	-- Eternal Gladiator's Hacker
-							i(192285),	-- Eternal Gladiator's Knife
-							i(192291),	-- Eternal Gladiator's Pulverizer
-							i(192307),	-- Eternal Gladiator's Rifle
-							i(192312),	-- Eternal Gladiator's Ripper
-							i(192286),	-- Eternal Gladiator's Ritual Dagger
-							i(192293),	-- Eternal Gladiator's Scythe
-							i(192313),	-- Eternal Gladiator's Slicer
-							i(192283),	-- Eternal Gladiator's Splitter
-							i(192294),	-- Eternal Gladiator's Vesper
-							i(192290),	-- Eternal Gladiator's Warglaive
-							i(192289),	-- Eternal Gladiator's Xiphos
+							-- #if AFTER 10.0.2
+							i(201873, {	-- Arsenal: Cosmic Gladiator's Weapons
+							-- #endif
+								i(192292),	-- Eternal Gladiator's Ballista
+								i(192306),	-- Eternal Gladiator's Barrier
+								i(192288),	-- Eternal Gladiator's Ceremonial Sword
+								i(192207),	-- Eternal Gladiator's Chalice
+								i(192309),	-- Eternal Gladiator's Focus Staff
+								i(192311),	-- Eternal Gladiator's Gavel
+								i(192287),	-- Eternal Gladiator's Gladius
+								i(192310),	-- Eternal Gladiator's Greatstaff
+								i(192308),	-- Eternal Gladiator's Greatsword
+								i(192208),	-- Eternal Gladiator's Guard
+								i(192284),	-- Eternal Gladiator's Hacker
+								i(192285),	-- Eternal Gladiator's Knife
+								i(192291),	-- Eternal Gladiator's Pulverizer
+								i(192307),	-- Eternal Gladiator's Rifle
+								i(192312),	-- Eternal Gladiator's Ripper
+								i(192286),	-- Eternal Gladiator's Ritual Dagger
+								i(192293),	-- Eternal Gladiator's Scythe
+								i(192313),	-- Eternal Gladiator's Slicer
+								i(192283),	-- Eternal Gladiator's Splitter
+								i(192294),	-- Eternal Gladiator's Vesper
+								i(192290),	-- Eternal Gladiator's Warglaive
+								i(192289),	-- Eternal Gladiator's Xiphos
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 					},
 				}),

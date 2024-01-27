@@ -375,23 +375,40 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(186782),	-- Cosmic Gladiator's Shawl
 						}),
 						filter(CLOTH, {
-							-- todo: Split into 3 Ensembles
-								i(186801),	-- Cosmic Gladiator's Silk Amice
+							-- #if AFTER 10.0.2
+							i(201852, {	-- Ensemble: Cosmic Gladiator's Mage Armor
+							-- #endif
 								i(186805),	-- Cosmic Gladiator's Silk Armbands
 								i(186803),	-- Cosmic Gladiator's Silk Belt
-								i(186802),	-- Cosmic Gladiator's Silk Cord
 								i(186794),	-- Cosmic Gladiator's Silk Gloves
-								i(186797),	-- Cosmic Gladiator's Silk Guise
-								i(186795),	-- Cosmic Gladiator's Silk Handwraps
 								i(186796),	-- Cosmic Gladiator's Silk Hood
+								i(186792),	-- Cosmic Gladiator's Silk Slippers
+								i(186799),	-- Cosmic Gladiator's Silk Trousers
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
+							-- #if AFTER 10.0.2
+							i(201849, {	-- Ensemble: Cosmic Gladiator's Priest Armor
+							-- #endif
+								i(186801),	-- Cosmic Gladiator's Silk Amice
+								i(186802),	-- Cosmic Gladiator's Silk Cord
+								i(186797),	-- Cosmic Gladiator's Silk Guise
+								i(186791),	-- Cosmic Gladiator's Silk Vestments
+								i(186804),	-- Cosmic Gladiator's Silk Wristwraps
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
+							-- #if AFTER 10.0.2
+							i(201846, {	-- Ensemble: Cosmic Gladiator's Warlock Armor
+							-- #endif
+								i(186795),	-- Cosmic Gladiator's Silk Handwraps
 								i(186798),	-- Cosmic Gladiator's Silk Leggings
 								i(186800),	-- Cosmic Gladiator's Silk Mantle
 								i(186790),	-- Cosmic Gladiator's Silk Robe
-								i(186792),	-- Cosmic Gladiator's Silk Slippers
 								i(186793),	-- Cosmic Gladiator's Silk Treads
-								i(186799),	-- Cosmic Gladiator's Silk Trousers
-								i(186791),	-- Cosmic Gladiator's Silk Vestments
-								i(186804),	-- Cosmic Gladiator's Silk Wristwraps
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 						filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 							i(186785),	-- Cosmic Gladiator's Band
@@ -399,42 +416,76 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(186786),	-- Cosmic Gladiator's Signet
 						})),
 						filter(LEATHER, {
-							-- todo: Split into 4 Ensembles
+							-- #if AFTER 10.0.2
+							i(201855, {	-- Ensemble: Cosmic Gladiator's Demon Hunter Armor
+							-- #endif
 								i(186818),	-- Cosmic Gladiator's Leather Belt
-								i(186808),	-- Cosmic Gladiator's Leather Boots
-								i(186814),	-- Cosmic Gladiator's Leather Breeches
-								i(186810),	-- Cosmic Gladiator's Leather Gloves
-								i(186811),	-- Cosmic Gladiator's Leather Grips
-								i(186812),	-- Cosmic Gladiator's Leather Helm
-								i(186807),	-- Cosmic Gladiator's Leather Jerkin
 								i(186815),	-- Cosmic Gladiator's Leather Legwraps
 								i(186813),	-- Cosmic Gladiator's Leather Mask
-								i(186817),	-- Cosmic Gladiator's Leather Shoulderpads
+								i(186820),	-- Cosmic Gladiator's Leather Wristwraps
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
+							-- #if AFTER 10.0.2
+							i(201854, {	-- Ensemble: Cosmic Gladiator's Druid Armor
+							-- #endif
+								i(186814),	-- Cosmic Gladiator's Leather Breeches
+								i(186810),	-- Cosmic Gladiator's Leather Gloves
+								i(186809),	-- Cosmic Gladiator's Leather Treads
+								i(186821),	-- Cosmic Gladiator's Leather Wristguards
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
+							-- #if AFTER 10.0.2
+							i(201851, {	-- Ensemble: Cosmic Gladiator's Monk Armor
+							-- #endif
+								i(186811),	-- Cosmic Gladiator's Leather Grips
+								i(186807),	-- Cosmic Gladiator's Leather Jerkin
 								i(186816),	-- Cosmic Gladiator's Leather Spaulders
 								i(186819),	-- Cosmic Gladiator's Leather Strap
-								i(186809),	-- Cosmic Gladiator's Leather Treads
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
+							-- #if AFTER 10.0.2
+							i(201848, {	-- Ensemble: Cosmic Gladiator's Rogue Armor
+							-- #endif
+								i(186808),	-- Cosmic Gladiator's Leather Boots
+								i(186812),	-- Cosmic Gladiator's Leather Helm
+								i(186817),	-- Cosmic Gladiator's Leather Shoulderpads
 								i(186806),	-- Cosmic Gladiator's Leather Vest
-								i(186821),	-- Cosmic Gladiator's Leather Wristguards
-								i(186820),	-- Cosmic Gladiator's Leather Wristwraps
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 						filter(MAIL, {
-							-- todo: Split into 2 Ensembles
-								i(186834),	-- Cosmic Gladiator's Chain Belt
-								i(186825),	-- Cosmic Gladiator's Chain Boots
-								i(186837),	-- Cosmic Gladiator's Chain Bracers
-								i(186831),	-- Cosmic Gladiator's Chain Breeches
-								i(186829),	-- Cosmic Gladiator's Chain Faceguard
-								i(186826),	-- Cosmic Gladiator's Chain Gauntlets
-								i(186835),	-- Cosmic Gladiator's Chain Girdle
-								i(186827),	-- Cosmic Gladiator's Chain Handguards
+							-- #if AFTER 10.0.2
+							i(201853, {	-- Ensemble: Cosmic Gladiator's Hunter Armor
+							-- #endif
+								i(186822),	-- Cosmic Gladiator's Chain Vest
+								i(186836),	-- Cosmic Gladiator's Chain Wristguards
 								i(186828),	-- Cosmic Gladiator's Chain Helm
 								i(186830),	-- Cosmic Gladiator's Chain Leggings
 								i(186832),	-- Cosmic Gladiator's Chain Monnion
 								i(186824),	-- Cosmic Gladiator's Chain Sabatons
+								i(186826),	-- Cosmic Gladiator's Chain Gauntlets
+								i(186834),	-- Cosmic Gladiator's Chain Belt
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
+							-- #if AFTER 10.0.2
+							i(201847, {	-- Ensemble: Cosmic Gladiator's Shaman Armor
+							-- #endif
+								i(186825),	-- Cosmic Gladiator's Chain Boots
+								i(186837),	-- Cosmic Gladiator's Chain Bracers
+								i(186831),	-- Cosmic Gladiator's Chain Breeches
+								i(186829),	-- Cosmic Gladiator's Chain Faceguard
+								i(186835),	-- Cosmic Gladiator's Chain Girdle
+								i(186827),	-- Cosmic Gladiator's Chain Handguards
 								i(186833),	-- Cosmic Gladiator's Chain Shoulderguard
 								i(186823),	-- Cosmic Gladiator's Chain Tunic
-								i(186822),	-- Cosmic Gladiator's Chain Vest
-								i(186836),	-- Cosmic Gladiator's Chain Wristguards
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 						filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 							i(186789),	-- Cosmic Gladiator's Amulet
