@@ -69,19 +69,29 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					["coord"] = { 36.0, 58.6, ORIBOS },
 					["g"] = {
 						filter(CLOAKS, {
-							i(178301),	-- Sinful Aspirant's Cape
-							i(175851),	-- Sinful Aspirant's Cloak
-							i(178265),	-- Sinful Aspirant's Drape
+							i(178301, {	-- Sinful Aspirant's Cape
+								["description"] = "This item is only obtainable via the Sinful Aspirant's Plate Ensemble.",
+							}),
+							i(175851, {	-- Sinful Aspirant's Cloak
+								["description"] = "This item is only obtainable via the Sinful Aspirant's Cloth/Leather Ensemble.",
+							}),
+							i(178265, {	-- Sinful Aspirant's Drape
+								["description"] = "This item is only obtainable via the Sinful Aspirant's Mail Ensemble.",
+							}),
 						}),
 						filter(CLOTH, {
-							i(175876),	-- Sinful Aspirant's Silk Cord
-							i(175862),	-- Sinful Aspirant's Silk Gloves
-							i(175864),	-- Sinful Aspirant's Silk Hood
-							i(175868),	-- Sinful Aspirant's Silk Leggings
-							i(175873),	-- Sinful Aspirant's Silk Mantle
-							i(175852),	-- Sinful Aspirant's Silk Robe
-							i(175857),	-- Sinful Aspirant's Silk Treads
-							i(175880),	-- Sinful Aspirant's Silk Wristwraps
+							-- #if AFTER 10.0.2
+							i(201868, {	-- Ensemble: Sinful Aspirant's Cloth Armor
+							-- #endif
+								i(175876),	-- Sinful Aspirant's Silk Cord
+								i(175862),	-- Sinful Aspirant's Silk Gloves
+								i(175864),	-- Sinful Aspirant's Silk Hood
+								i(175868),	-- Sinful Aspirant's Silk Leggings
+								i(175873),	-- Sinful Aspirant's Silk Mantle
+								i(175852),	-- Sinful Aspirant's Silk Robe
+								i(175857),	-- Sinful Aspirant's Silk Treads
+								i(175880),	-- Sinful Aspirant's Silk Wristwraps
+							}),
 						}),
 						filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 							i(178293),	-- Sinful Aspirant's Band
@@ -89,24 +99,32 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(178329),	-- Sinful Aspirant's Signet
 						})),
 						filter(LEATHER, {
-							i(175878),	-- Sinful Aspirant's Leather Belt
-							i(175859),	-- Sinful Aspirant's Leather Boots
-							i(175870),	-- Sinful Aspirant's Leather Breeches
-							i(175860),	-- Sinful Aspirant's Leather Gloves
-							i(175866),	-- Sinful Aspirant's Leather Helm
-							i(175871),	-- Sinful Aspirant's Leather Spaulders
-							i(175855),	-- Sinful Aspirant's Leather Vest
-							i(175883),	-- Sinful Aspirant's Leather Wristwraps
+							-- #if AFTER 10.0.2
+							i(201867, {	-- Ensemble: Sinful Aspirant's Leather Armor
+							-- #endif
+								i(175878),	-- Sinful Aspirant's Leather Belt
+								i(175859),	-- Sinful Aspirant's Leather Boots
+								i(175870),	-- Sinful Aspirant's Leather Breeches
+								i(175860),	-- Sinful Aspirant's Leather Gloves
+								i(175866),	-- Sinful Aspirant's Leather Helm
+								i(175871),	-- Sinful Aspirant's Leather Spaulders
+								i(175855),	-- Sinful Aspirant's Leather Vest
+								i(175883),	-- Sinful Aspirant's Leather Wristwraps
+							}),
 						}),
 						filter(MAIL, {
-							i(175877),	-- Sinful Aspirant's Chain Belt
-							i(175863),	-- Sinful Aspirant's Chain Gauntlets
-							i(175865),	-- Sinful Aspirant's Chain Helm
-							i(175869),	-- Sinful Aspirant's Chain Leggings
-							i(175858),	-- Sinful Aspirant's Chain Sabatons
-							i(175874),	-- Sinful Aspirant's Chain Spaulders
-							i(175854),	-- Sinful Aspirant's Chain Vest
-							i(175882),	-- Sinful Aspirant's Chain Wristwraps
+							-- #if AFTER 10.0.2
+							i(201866, {	-- Ensemble: Sinful Aspirant's Mail Armor
+							-- #endif
+								i(175877),	-- Sinful Aspirant's Chain Belt
+								i(175863),	-- Sinful Aspirant's Chain Gauntlets
+								i(175865),	-- Sinful Aspirant's Chain Helm
+								i(175869),	-- Sinful Aspirant's Chain Leggings
+								i(175858),	-- Sinful Aspirant's Chain Sabatons
+								i(175874),	-- Sinful Aspirant's Chain Spaulders
+								i(175854),	-- Sinful Aspirant's Chain Vest
+								i(175882),	-- Sinful Aspirant's Chain Wristwraps
+							}),
 						}),
 						filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 							i(178299),	-- Sinful Aspirant's Choker
@@ -114,14 +132,18 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(178335),	-- Sinful Aspirant's Pendant
 						})),
 						filter(PLATE, {
-							i(175853),	-- Sinful Aspirant's Plate Chestplate
-							i(175881),	-- Sinful Aspirant's Plate Cuffs
-							i(175861),	-- Sinful Aspirant's Plate Gauntlets
-							i(175875),	-- Sinful Aspirant's Plate Girdle
-							i(175850),	-- Sinful Aspirant's Plate Helm
-							i(175867),	-- Sinful Aspirant's Plate Legguards
-							i(175872),	-- Sinful Aspirant's Plate Shoulders
-							i(175856),	-- Sinful Aspirant's Plate Warboots
+							-- #if AFTER 10.0.2
+							i(201865, {	-- Ensemble: Sinful Aspirant's Plate Armor
+							-- #endif
+								i(175853),	-- Sinful Aspirant's Plate Chestplate
+								i(175881),	-- Sinful Aspirant's Plate Cuffs
+								i(175861),	-- Sinful Aspirant's Plate Gauntlets
+								i(175875),	-- Sinful Aspirant's Plate Girdle
+								i(175850),	-- Sinful Aspirant's Plate Helm
+								i(175867),	-- Sinful Aspirant's Plate Legguards
+								i(175872),	-- Sinful Aspirant's Plate Shoulders
+								i(175856),	-- Sinful Aspirant's Plate Warboots
+							}),
 						}),
 						filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 							i(175884),	-- Sinful Aspirant's Badge of Ferocity
@@ -132,24 +154,28 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(184054),	-- Sinful Aspirant's Sigil of Adaptation
 						})),
 						n(WEAPONS, {
-							i(178490),	-- Sinful Aspirant's Barrier
-							i(178468),	-- Sinful Aspirant's Battleaxe
-							i(183433),	-- Sinful Aspirant's Blackjack
-							i(178670),	-- Sinful Aspirant's Blade
-							i(183435),	-- Sinful Aspirant's Crescent
-							i(178470),	-- Sinful Aspirant's Dagger
-							i(178481),	-- Sinful Aspirant's Gavel
-							i(178475),	-- Sinful Aspirant's Greataxe
-							i(178476),	-- Sinful Aspirant's Greatsword
-							i(178663),	-- Sinful Aspirant's Hatchet
-							i(178668),	-- Sinful Aspirant's Longspear
-							i(178471),	-- Sinful Aspirant's Mace
-							i(178478),	-- Sinful Aspirant's Orb
-							i(178472),	-- Sinful Aspirant's Polearm
-							i(178664),	-- Sinful Aspirant's Recurve
-							i(178473),	-- Sinful Aspirant's Staff
-							i(178474),	-- Sinful Aspirant's Sword
-							i(178479),	-- Sinful Aspirant's Warglaive
+							-- #if AFTER 10.0.2
+							i(201878, {	-- Arsenal: Sinful Aspirant's Weapons
+							-- #endif
+								i(178490),	-- Sinful Aspirant's Barrier
+								i(178468),	-- Sinful Aspirant's Battleaxe
+								i(183433),	-- Sinful Aspirant's Blackjack
+								i(178670),	-- Sinful Aspirant's Blade
+								i(183435),	-- Sinful Aspirant's Crescent
+								i(178470),	-- Sinful Aspirant's Dagger
+								i(178481),	-- Sinful Aspirant's Gavel
+								i(178475),	-- Sinful Aspirant's Greataxe
+								i(178476),	-- Sinful Aspirant's Greatsword
+								i(178663),	-- Sinful Aspirant's Hatchet
+								i(178668),	-- Sinful Aspirant's Longspear
+								i(178471),	-- Sinful Aspirant's Mace
+								i(178478),	-- Sinful Aspirant's Orb
+								i(178472),	-- Sinful Aspirant's Polearm
+								i(178664),	-- Sinful Aspirant's Recurve
+								i(178473),	-- Sinful Aspirant's Staff
+								i(178474),	-- Sinful Aspirant's Sword
+								i(178479),	-- Sinful Aspirant's Warglaive
+							}),
 						}),
 					},
 				}),
@@ -159,35 +185,47 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 					["coord"] = { 36.0, 58.6, ORIBOS },
 					["g"] = {
 						filter(CLOAKS, {
-							i(175888),	-- Sinful Gladiator's Cloak
-							i(178353),	-- Sinful Gladiator's Drape
-							i(184311),	-- Sinful Gladiator's Greatcloak
-							i(178414),	-- Sinful Gladiator's Shawl
+							i(175888, {	-- Sinful Gladiator's Cloak
+							--	["description"] = "This item is only obtainable via the Sinful Gladiator's Cloth Ensemble.",
+							}),
+							i(178353, {	-- Sinful Gladiator's Drape
+							--	["description"] = "This item is only obtainable via the Sinful Gladiator's Mail Ensemble.",
+							}),
+							i(184311, {	-- Sinful Gladiator's Greatcloak
+							--	["description"] = "This item is only obtainable via the Sinful Gladiator's Leather Ensemble.",
+							}),
+							i(178414, {	-- Sinful Gladiator's Shawl
+							--	["description"] = "This item is only obtainable via the Sinful Gladiator's Plate Ensemble.",
+							}),
 						}),
-						filter(CLOTH, {
-							i(178375),	-- Sinful Gladiator's Silk Amice
-							i(178382),	-- Sinful Gladiator's Silk Armbands
-							i(178378),	-- Sinful Gladiator's Silk Belt
-							i(175913),	-- Sinful Gladiator's Silk Cord
-							i(175899),	-- Sinful Gladiator's Silk Gloves
-							i(178366),	-- Sinful Gladiator's Silk Guise
-							i(178364),	-- Sinful Gladiator's Silk Handwraps
-							i(175901),	-- Sinful Gladiator's Silk Hood
-							i(175905),	-- Sinful Gladiator's Silk Leggings
-							i(175910),	-- Sinful Gladiator's Silk Mantle
-							i(175889),	-- Sinful Gladiator's Silk Robe
-							i(175894),	-- Sinful Gladiator's Silk Slippers
-							i(178359),	-- Sinful Gladiator's Silk Treads
-							i(178370),	-- Sinful Gladiator's Silk Trousers
-							i(178354),	-- Sinful Gladiator's Silk Vestments
-							i(175917),	-- Sinful Gladiator's Silk Wristwraps
+						filter(CLOTH, {					
+								i(178375),	-- Sinful Gladiator's Silk Amice
+								i(178382),	-- Sinful Gladiator's Silk Armbands
+								i(178378),	-- Sinful Gladiator's Silk Belt
+								i(175913),	-- Sinful Gladiator's Silk Cord
+								i(175899),	-- Sinful Gladiator's Silk Gloves
+								i(178366),	-- Sinful Gladiator's Silk Guise
+								i(178364),	-- Sinful Gladiator's Silk Handwraps
+								i(175901),	-- Sinful Gladiator's Silk Hood
+								i(175905),	-- Sinful Gladiator's Silk Leggings
+								i(175910),	-- Sinful Gladiator's Silk Mantle
+								i(175889),	-- Sinful Gladiator's Silk Robe
+								i(175894),	-- Sinful Gladiator's Silk Slippers
+								i(178359),	-- Sinful Gladiator's Silk Treads
+								i(178370),	-- Sinful Gladiator's Silk Trousers
+								i(178354),	-- Sinful Gladiator's Silk Vestments
+								i(175917),	-- Sinful Gladiator's Silk Wristwraps
 						}),
 						filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 							i(178381),	-- Sinful Gladiator's Band
 							i(175916),	-- Sinful Gladiator's Ring
 							i(178442),	-- Sinful Gladiator's Signet
 						})),
+						-- #if BEFORE 10.0.2
 						filter(LEATHER, {
+						-- #else
+						i(201865, {	-- Ensemble: Sinful Aspirant's Plate Armor
+						-- #endif
 							i(175915),	-- Sinful Gladiator's Leather Belt
 							i(175896),	-- Sinful Gladiator's Leather Boots
 							i(175907),	-- Sinful Gladiator's Leather Breeches
@@ -205,7 +243,11 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(178385),	-- Sinful Gladiator's Leather Wristguards
 							i(175920),	-- Sinful Gladiator's Leather Wristwraps
 						}),
+						-- #if BEFORE 10.0.2
 						filter(MAIL, {
+						-- #else
+						i(201865, {	-- Ensemble: Sinful Aspirant's Plate Armor
+						-- #endif
 							i(175914),	-- Sinful Gladiator's Chain Belt
 							i(178360),	-- Sinful Gladiator's Chain Boots
 							i(178384),	-- Sinful Gladiator's Chain Bracers
@@ -228,7 +270,11 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(175922),	-- Sinful Gladiator's Necklace
 							i(178387),	-- Sinful Gladiator's Pendant
 						})),
+						-- #if BEFORE 10.0.2
 						filter(PLATE, {
+						-- #else
+						i(201865, {	-- Ensemble: Sinful Aspirant's Plate Armor
+						-- #endif
 							i(175890),	-- Sinful Gladiator's Plate Chestguard
 							i(178355),	-- Sinful Gladiator's Plate Chestplate
 							i(175898),	-- Sinful Gladiator's Plate Gauntlets
