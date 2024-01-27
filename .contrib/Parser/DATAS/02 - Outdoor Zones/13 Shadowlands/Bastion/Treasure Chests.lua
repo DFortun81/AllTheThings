@@ -180,89 +180,58 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(173984),	-- Scroll of Aeons (TOY!)
 				},
 			}),
-			o_repeated({
-			-- Rewards
-				i(184418),	-- Acrobatic Steward (TOY!)
-			-- Objects
-				o(352754, {	-- Silver Strongbox
-					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
-					["description"] = "Requires a Ripe Purian to open.",
-					["coord"] = { 45.2, 83.2, BASTION },
-					["questID"] = 60596,
-					["isDaily"] = true,
-					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
-				}),
-				o(353019, {	-- Silver Strongbox
-					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
-					["description"] = "Requires a Ripe Purian to open.",
-					["coord"] = { 60.8, 80.3, BASTION },
-					["questID"] = 60627,
-					["isDaily"] = true,
-					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
-				}),
-				o(353205, {	-- Silver Strongbox
-					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
-					["description"] = "Requires a Ripe Purian to open.",
-					["coord"] = { 50.8, 44.7, BASTION },
-					["questID"] = 60652,
-					["isDaily"] = true,
-					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
-				}),
-				o(353252, {	-- Silver Strongbox
-					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
-					["description"] = "Requires a Ripe Purian to open.",
-					["coord"] = { 43.2, 36.2, BASTION },
-					["questID"] = 60668,
-					["isDaily"] = true,
-					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
-				}),
-				o(353314, {	-- Silver Strongbox
-					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
-					["description"] = "Requires a Ripe Purian to open.",
-					["coord"] = { 42.3, 26.4, BASTION },
-					["questID"] = 60708,
-					["isDaily"] = true,
-					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
-				}),
-				o(353325, {	-- Silver Strongbox
-					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
-					["description"] = "Requires a Ripe Purian to open.",
-					["coord"] = { 46.8, 19.9, BASTION },
-					["questID"] = 60712,
-					["isDaily"] = true,
-					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
-				}),
-				o(353503, {	-- Silver Strongbox
-					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
-					["description"] = "Requires a Ripe Purian to open.",
-					["coord"] = { 48.7, 31.8, BASTION },
-					["questID"] = 60755,
-					["isDaily"] = true,
-					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
-				}),
-				o(353516, {	-- Silver Strongbox
-					["description"] = "Requires a Ripe Purian to open.  You will have to jump down from the cliffs above.",
-					["coord"] = { 63.8, 29.1, BASTION },
-					["questID"] = 60758,
-					["isDaily"] = true,
-					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
-				}),
-				o(353643, {	-- Silver Strongbox
-					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
-					["description"] = "Requires a Ripe Purian to open.",
-					["coord"] = { 62.4, 57.6, BASTION },
-					["questID"] = 60777,
-					["isDaily"] = true,
-					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
-				}),
-				o(353500, {	-- Silver Strongbox
-					["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
-					["description"] = "Requires a Ripe Purian to open.  Use the Anima Gateway at 52.9, 12.1 to get to the cliff above the treasure.",
-					["coord"] = { 43.1, 15.7, BASTION },
-					["questID"] = 60754,
-					["isDaily"] = true,
-					["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
-				}),
+			o_repeated({	-- Silver Strongbox
+				["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
+				["isDaily"] = true,
+				["cost"] = {
+					{ "i", 178915, 1 },	-- 1x Ripe Purian
+					{ "i", 180049, 1 },	-- 1x Steward's Silver Key
+				},
+				["g"] = {
+					-- Rewards
+					i(184418),	-- Acrobatic Steward (TOY!)
+					-- Objects
+					o(352754, {	-- Silver Strongbox
+						["coord"] = { 45.2, 83.2, BASTION },
+						["questID"] = 60596,
+					}),
+					o(353019, {	-- Silver Strongbox
+						["coord"] = { 60.8, 80.3, BASTION },
+						["questID"] = 60627,
+					}),
+					o(353205, {	-- Silver Strongbox
+						["coord"] = { 50.8, 44.7, BASTION },
+						["questID"] = 60652,
+					}),
+					o(353252, {	-- Silver Strongbox
+						["coord"] = { 43.2, 36.2, BASTION },
+						["questID"] = 60668,
+					}),
+					o(353314, {	-- Silver Strongbox
+						["coord"] = { 42.3, 26.4, BASTION },
+						["questID"] = 60708,
+					}),
+					o(353325, {	-- Silver Strongbox
+						["coord"] = { 46.8, 19.9, BASTION },
+						["questID"] = 60712,
+					}),
+					o(353503, {	-- Silver Strongbox
+						["coord"] = { 48.7, 31.8, BASTION },
+						["questID"] = 60755,
+					}),
+					o(353516, {	-- Silver Strongbox
+						["coord"] = { 63.8, 29.1, BASTION },
+						["questID"] = 60758,
+					}),
+					o(353643, {	-- Silver Strongbox
+						["coord"] = { 62.4, 57.6, BASTION },
+						["questID"] = 60777,
+					}),
+					o(353500, {	-- Silver Strongbox
+						["coord"] = { 43.1, 15.7, BASTION },
+						["questID"] = 60754,
+					}),
+				},
 			}),
 			o(353691, {	-- Skyward Bell
 				["coords"] = {
@@ -284,7 +253,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 60779,
 				["isDaily"] = true,
 				["crs"] = { 170284 },	-- Elios
-				["cost"] = { { "i", 178915, 1 } },	-- 1x Ripe Purian
+				["cost"] = {
+					{ "i", 178915, 1 },	-- 1x Ripe Purian
+					{ "i", 180285, 1 },	-- 1x Steward's Golden Key
+				},
 			}),
 			o(354208, {	-- Stolen Equipment
 				["coord"] = { 40.5, 49.8, BASTION },

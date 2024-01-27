@@ -34,7 +34,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(182026),	-- Pulverized Breezebloom (QI!)
 				},
 			}),
-			q(62235),	-- Allay Their Fears
+			q(62235, {	-- Allay Their Fears
+				i(183045),	-- Korinna's Allaying Crook
+			}),
 			q(59601),	-- Assault on the Vestibule
 			q(62451),	-- Assault on the Vestibule
 			q(60565),	-- A Steward for Every Occasion

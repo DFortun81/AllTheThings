@@ -764,6 +764,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(180379),	-- Exquisitely Woven Rug
 					i(180401),	-- Noble Justice
 					i(182723),	-- Mail Courier's Shoulderguards
+					i(179823, {	-- The Harvest Key
+						["coords"] = {
+							-- ref https://www.wowhead.com/object=352703/the-harvest#comments:id=5222656
+							{ 38.2, 43.7, REVENDRETH },
+							{ 43.9, 41.5, REVENDRETH },
+							{ 42.9, 41.5, REVENDRETH },
+							{ 43.6, 38.1, REVENDRETH },
+							{ 41.4, 38.5, REVENDRETH },
+							{ 43.3, 44.7, REVENDRETH },
+							{ 44.7, 38.8, REVENDRETH },
+							{ 44.2, 44.1, REVENDRETH },
+						},
+					}),
 				},
 			}),
 			o(353792, {	-- Village Strongbox

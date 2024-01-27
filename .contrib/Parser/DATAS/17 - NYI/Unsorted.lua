@@ -3045,7 +3045,6 @@ root(ROOTS.Unsorted, {
 			i(172516),	-- Glowing Viscera
 			i(178517),	-- Gold Tooth
 			i(178582),	-- Golden Death Mask
-			i(182766),	-- Golden Egg
 			i(174746),	-- Golden Egg Shells
 			i(178575),	-- Golden Orb of Energy
 			i(174331),	-- Goliath Gauntlet
@@ -3085,7 +3084,6 @@ root(ROOTS.Unsorted, {
 			i(172455),	-- Hardened Fel Shards
 			i(176852),	-- Hardened Tail Bone
 			i(178138),	-- Harp Piece
-			i(179823),	-- Harvest Key \\ Gilded Key
 			i(173689),	-- Hastily Wrapped Package
 			i(181972),	-- Haunting Hood \\ Maldraxxus Tailoring Item
 			i(175132),	-- Havoc Chains
@@ -3158,7 +3156,6 @@ root(ROOTS.Unsorted, {
 			i(181752),	-- Kleia and Pelagos Happy PH Reward
 			i(181751),	-- Kleia and Pelagos Very Happy PH Reward
 			i(172141),	-- Korinna's Allaying Crook
-			i(183045),	-- Korinna's Allaying Crook
 			i(175478),	-- Korrim's Journal
 			i(173923),	-- Kyrian Boots
 			i(173922),	-- Kyrian Chestplate
@@ -3314,7 +3311,6 @@ root(ROOTS.Unsorted, {
 			i(177039),	-- Olive-Stuffed Barbouni
 			i(174278),	-- Orders from the Tithelord \\ Orders from the Grand Steward
 			i(177162),	-- Ordinary Basket
-			i(180718),	-- Ordinary Crystal
 			i(180168),	-- Oribobber
 			i(173180),	-- Ornate Key
 			i(181160),	-- Ossein Battleaxe
@@ -3581,8 +3577,6 @@ root(ROOTS.Unsorted, {
 			i(173148),	-- Steel Cleaver
 			i(178722),	-- Steel Leaves
 			i(180848),	-- Steelskin Linebreaker's Head
-			i(180285),	-- Steward's Golden Key
-			i(180049),	-- Steward's Silver Key
 			i(178515),	-- Stitched Surprise Cake
 			i(180845),	-- Stitchflesh Design \\ Stitchflesh's Designs
 			i(173224),	-- Stitchsilk Cloak

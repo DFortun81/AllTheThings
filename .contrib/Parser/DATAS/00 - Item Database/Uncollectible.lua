@@ -653,6 +653,7 @@ i(180653);	-- Mythic Keystone
 i(179166);	-- Night Harvest Rolls
 i(176331);	-- Obscuring Essence Potion
 i(179025);	-- Odorous Rice
+i(180718);	-- Ordinary Crystal
 i(178223);	-- Poached Strider Egg
 i(173041);	-- Pocked Bonefish Bait
 i(179281);	-- Pridefall Borscht
