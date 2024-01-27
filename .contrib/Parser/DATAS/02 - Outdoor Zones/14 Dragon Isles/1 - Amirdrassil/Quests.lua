@@ -36,3 +36,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 		}),
 	}),
 })));
+root(ROOTS.HiddenQuestTriggers, {
+    q(80190),   -- Triggers on getting Achievement 20206
+});

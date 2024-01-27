@@ -5,7 +5,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(1478, {	-- Ashran
 		["description"] = "Ashran is a 40v40 epic battleground found in eastern Draenor.",
 		["timeline"] = { "added 6.0.2" },
-		["maps"] = { 588 },	-- Ashran
+		["maps"] = { 588, 589 },	-- Ashran & Ashran Mine
 		["lvl"] = { 25 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
