@@ -691,7 +691,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER CATA
 						i(20768, {	-- Oozing Bag
 							-- #if AFTER BFA
-							["description"] = "Drops from mobs between level 53-59. Chromie time may be required.",
+							["description"] = "Oozing Bags with the biggest chance of containing the battle pet Disgusting Oozeling drops from mobs between level 53-59. Chromie time may be required.",
 							-- #else
 							["description"] = "The slimes can still be farmed during the 'Massacre At Light's Point' quest at the Death Knight starting area.",
 							-- #endif
