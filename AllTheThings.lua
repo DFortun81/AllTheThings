@@ -1395,16 +1395,18 @@ local function CreateObject(t, rootOnly)
 		return result;
 	-- use the highest-priority piece of data which exists in the table to turn it into an object
 	else
+		-- a table which somehow has a metatable which doesn't include a 'key' field...
 		local meta = getmetatable(t);
 		if meta then
 			local result = {};
 			for k,v in pairs(t) do
-				rawset(result, k, v);
+				result[k] = v
 			end
-			if t.g then
-				result.g = {};
+			if not rootOnly and t.g then
+				local newg = {}
+				result.g = newg
 				for i,o in ipairs(t.g) do
-					tinsert(result.g, CreateObject(o));
+					newg[#newg+1] = CreateObject(o)
 				end
 			end
 			setmetatable(result, meta);
@@ -1516,7 +1518,7 @@ app.__CreateObject = CreateObject;
 local function RawCloneData(data, clone)
 	clone = clone or {};
 	for key,value in pairs(data) do
-		if not clone[key] then
+		if clone[key] == nil then
 			clone[key] = value;
 		end
 	end
@@ -5535,7 +5537,7 @@ local function UpdateSearchResults(searchResults)
 		-- Directly update the Source groups of the search results, and collect their hashes for updates in other windows
 		for _,result in ipairs(searchResults) do
 			hashes[result.hash] = true;
-			tinsert(found, result);
+			found[#found + 1] = result;
 			-- Make sure any cost data is updated for this specific group since it was updated
 			UpdateCost(result);
 		end
