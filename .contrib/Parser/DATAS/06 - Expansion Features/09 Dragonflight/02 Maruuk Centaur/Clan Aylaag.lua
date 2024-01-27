@@ -21,9 +21,21 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		n(CLAN_AYLAAG, bubbleDownSelf({ ["minReputation"] = { FACTION_MARUUK_CENTAUR, 4 } }, {
 			n(ACHIEVEMENTS, {
 				ach(16462, {	-- The Ohn'ahran Trail
-					crit(55480),	-- Aylaag Outpost to river camp
-					crit(55481),	-- River camp to Eaglewatch Outpost
-					crit(55482),	-- Eaglewatch Outpost to Aylaag Outpost
+					crit(55480, {	-- Aylaag Outpost to river camp
+						["coords"] = {
+							{ 71.4, 31.8, OHNAHRAN_PLAINS },	-- Begins Here
+							{ 70.6, 63.0, OHNAHRAN_PLAINS },	-- Ends Here
+						}}),
+					crit(55481, {	-- River camp to Eaglewatch Outpost
+						["coords"] = {
+							{ 70.6, 63.0, OHNAHRAN_PLAINS },	-- Begins Here
+							{ 55.4, 52.4, OHNAHRAN_PLAINS },	-- Ends Here
+					}}),
+					crit(55482, {	-- Eaglewatch Outpost to Aylaag Outpost
+						["coords"] = {
+							{ 55.4, 52.4, OHNAHRAN_PLAINS },	-- Begins Here
+							{ 71.4, 31.8, OHNAHRAN_PLAINS },	-- Ends Here
+					}}),
 				}),
 			}),
 			n(QUESTS, sharedData({
