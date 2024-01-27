@@ -510,9 +510,8 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			o(380545, {	-- Painter's Pretty Jewel
-				["description"] = "Inside the foilage of a lantern, very small! May also be bugged in War Mode.",
 				["questID"] = 70261,
-				["coord"] = { 56.9, 43.7, THALDRASZUS },
+				["coord"] = { 56.9, 43.6, THALDRASZUS },
 				["g"] = {
 					i(198656),	-- Painter's Pretty Jewel
 				},
