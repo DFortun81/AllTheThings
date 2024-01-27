@@ -85,22 +85,28 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(192355),	-- Eternal Aspirant's Drape
 						}),
 						filter(CLOTH, {
-							i(192380),	-- Eternal Aspirant's Silk Belt
-							i(192384),	-- Eternal Aspirant's Silk Bindings
-							i(192344),	-- Eternal Aspirant's Silk Cord
-							i(192368),	-- Eternal Aspirant's Silk Cover
-							i(192361),	-- Eternal Aspirant's Silk Footwraps
-							i(192330),	-- Eternal Aspirant's Silk Gloves
-							i(192366),	-- Eternal Aspirant's Silk Handwraps
-							i(192332),	-- Eternal Aspirant's Silk Hood
-							i(192336),	-- Eternal Aspirant's Silk Leggings
-							i(192372),	-- Eternal Aspirant's Silk Legwraps
-							i(192341),	-- Eternal Aspirant's Silk Mantle
-							i(192377),	-- Eternal Aspirant's Silk Shawl
-							i(192325),	-- Eternal Aspirant's Silk Treads
-							i(192320),	-- Eternal Aspirant's Silk Tunic
-							i(192356),	-- Eternal Aspirant's Silk Vest
-							i(192348),	-- Eternal Aspirant's Silk Wristwraps
+							-- #if AFTER 10.0.2
+							i(201844, {	-- Ensemble: Cosmic Aspirant's Cloth Armor
+							-- #endif
+								i(192380),	-- Eternal Aspirant's Silk Belt
+								i(192384),	-- Eternal Aspirant's Silk Bindings
+								i(192344),	-- Eternal Aspirant's Silk Cord
+								i(192368),	-- Eternal Aspirant's Silk Cover
+								i(192361),	-- Eternal Aspirant's Silk Footwraps
+								i(192330),	-- Eternal Aspirant's Silk Gloves
+								i(192366),	-- Eternal Aspirant's Silk Handwraps
+								i(192332),	-- Eternal Aspirant's Silk Hood
+								i(192336),	-- Eternal Aspirant's Silk Leggings
+								i(192372),	-- Eternal Aspirant's Silk Legwraps
+								i(192341),	-- Eternal Aspirant's Silk Mantle
+								i(192377),	-- Eternal Aspirant's Silk Shawl
+								i(192325),	-- Eternal Aspirant's Silk Treads
+								i(192320),	-- Eternal Aspirant's Silk Tunic
+								i(192356),	-- Eternal Aspirant's Silk Vest
+								i(192348),	-- Eternal Aspirant's Silk Wristwraps
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 						filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 							i(192383),	-- Eternal Aspirant's Band
@@ -108,40 +114,52 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(192391),	-- Eternal Aspirant's Signet
 						})),
 						filter(LEATHER, {
-							i(192387),	-- Eternal Aspirant's Leather Armguards
-							i(192346),	-- Eternal Aspirant's Leather Belt
-							i(192327),	-- Eternal Aspirant's Leather Boots
-							i(192338),	-- Eternal Aspirant's Leather Breeches
-							i(192382),	-- Eternal Aspirant's Leather Cord
-							i(192363),	-- Eternal Aspirant's Leather Footpads
-							i(192328),	-- Eternal Aspirant's Leather Gloves
-							i(192364),	-- Eternal Aspirant's Leather Grips
-							i(192334),	-- Eternal Aspirant's Leather Helm
-							i(192374),	-- Eternal Aspirant's Leather Leggings
-							i(192375),	-- Eternal Aspirant's Leather Mantle
-							i(192370),	-- Eternal Aspirant's Leather Mask
-							i(192339),	-- Eternal Aspirant's Leather Spaulders
-							i(192359),	-- Eternal Aspirant's Leather Tunic
-							i(192323),	-- Eternal Aspirant's Leather Vest
-							i(192351),	-- Eternal Aspirant's Leather Wristwraps
+							-- #if AFTER 10.0.2
+							i(201843, {	-- Ensemble: Cosmic Aspirant's Leather Armor
+							-- #endif
+								i(192387),	-- Eternal Aspirant's Leather Armguards
+								i(192346),	-- Eternal Aspirant's Leather Belt
+								i(192327),	-- Eternal Aspirant's Leather Boots
+								i(192338),	-- Eternal Aspirant's Leather Breeches
+								i(192382),	-- Eternal Aspirant's Leather Cord
+								i(192363),	-- Eternal Aspirant's Leather Footpads
+								i(192328),	-- Eternal Aspirant's Leather Gloves
+								i(192364),	-- Eternal Aspirant's Leather Grips
+								i(192334),	-- Eternal Aspirant's Leather Helm
+								i(192374),	-- Eternal Aspirant's Leather Leggings
+								i(192375),	-- Eternal Aspirant's Leather Mantle
+								i(192370),	-- Eternal Aspirant's Leather Mask
+								i(192339),	-- Eternal Aspirant's Leather Spaulders
+								i(192359),	-- Eternal Aspirant's Leather Tunic
+								i(192323),	-- Eternal Aspirant's Leather Vest
+								i(192351),	-- Eternal Aspirant's Leather Wristwraps
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 						filter(MAIL, {
-							i(192345),	-- Eternal Aspirant's Chain Belt
-							i(192386),	-- Eternal Aspirant's Chain Bracer
-							i(192381),	-- Eternal Aspirant's Chain Clasp
-							i(192331),	-- Eternal Aspirant's Chain Gauntlets
-							i(192367),	-- Eternal Aspirant's Chain Handguards
-							i(192369),	-- Eternal Aspirant's Chain Headguard
-							i(192333),	-- Eternal Aspirant's Chain Helm
-							i(192337),	-- Eternal Aspirant's Chain Leggings
-							i(192326),	-- Eternal Aspirant's Chain Sabatons
-							i(192378),	-- Eternal Aspirant's Chain Shoulderguards
-							i(192342),	-- Eternal Aspirant's Chain Spaulders
-							i(192362),	-- Eternal Aspirant's Chain Stompers
-							i(192358),	-- Eternal Aspirant's Chain Tunic
-							i(192322),	-- Eternal Aspirant's Chain Vest
-							i(192373),	-- Eternal Aspirant's Chain Wargreaves
-							i(192350),	-- Eternal Aspirant's Chain Wristwraps
+							-- #if AFTER 10.0.2
+							i(201842, {	-- Ensemble: Cosmic Aspirant's Mail Armor
+							-- #endif
+								i(192345),	-- Eternal Aspirant's Chain Belt
+								i(192386),	-- Eternal Aspirant's Chain Bracer
+								i(192381),	-- Eternal Aspirant's Chain Clasp
+								i(192331),	-- Eternal Aspirant's Chain Gauntlets
+								i(192367),	-- Eternal Aspirant's Chain Handguards
+								i(192369),	-- Eternal Aspirant's Chain Headguard
+								i(192333),	-- Eternal Aspirant's Chain Helm
+								i(192337),	-- Eternal Aspirant's Chain Leggings
+								i(192326),	-- Eternal Aspirant's Chain Sabatons
+								i(192378),	-- Eternal Aspirant's Chain Shoulderguards
+								i(192342),	-- Eternal Aspirant's Chain Spaulders
+								i(192362),	-- Eternal Aspirant's Chain Stompers
+								i(192358),	-- Eternal Aspirant's Chain Tunic
+								i(192322),	-- Eternal Aspirant's Chain Vest
+								i(192373),	-- Eternal Aspirant's Chain Wargreaves
+								i(192350),	-- Eternal Aspirant's Chain Wristwraps
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 						filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 							i(192389),	-- Eternal Aspirant's Choker
@@ -149,22 +167,28 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(192393),	-- Eternal Aspirant's Pendant
 						})),
 						filter(PLATE, {
-							i(192385),	-- Eternal Aspirant's Plate Armguards
-							i(192357),	-- Eternal Aspirant's Plate Armor
-							i(192321),	-- Eternal Aspirant's Plate Chestplate
-							i(192349),	-- Eternal Aspirant's Plate Cuffs
-							i(192329),	-- Eternal Aspirant's Plate Gauntlets
-							i(192343),	-- Eternal Aspirant's Plate Girdle
-							i(192379),	-- Eternal Aspirant's Plate Greatbelt
-							i(192365),	-- Eternal Aspirant's Plate Handguards
-							i(192354),	-- Eternal Aspirant's Plate Headguard
-							i(192318),	-- Eternal Aspirant's Plate Helm
-							i(192335),	-- Eternal Aspirant's Plate Legguards
-							i(192376),	-- Eternal Aspirant's Plate Pauldrons
-							i(192340),	-- Eternal Aspirant's Plate Shoulders
-							i(192360),	-- Eternal Aspirant's Plate Stompers
-							i(192324),	-- Eternal Aspirant's Plate Warboots
-							i(192371),	-- Eternal Aspirant's Plate Wargreaves
+							-- #if AFTER 10.0.2
+							i(201841, {	-- Ensemble: Cosmic Aspirant's Plate Armor
+							-- #endif
+								i(192385),	-- Eternal Aspirant's Plate Armguards
+								i(192357),	-- Eternal Aspirant's Plate Armor
+								i(192321),	-- Eternal Aspirant's Plate Chestplate
+								i(192349),	-- Eternal Aspirant's Plate Cuffs
+								i(192329),	-- Eternal Aspirant's Plate Gauntlets
+								i(192343),	-- Eternal Aspirant's Plate Girdle
+								i(192379),	-- Eternal Aspirant's Plate Greatbelt
+								i(192365),	-- Eternal Aspirant's Plate Handguards
+								i(192354),	-- Eternal Aspirant's Plate Headguard
+								i(192318),	-- Eternal Aspirant's Plate Helm
+								i(192335),	-- Eternal Aspirant's Plate Legguards
+								i(192376),	-- Eternal Aspirant's Plate Pauldrons
+								i(192340),	-- Eternal Aspirant's Plate Shoulders
+								i(192360),	-- Eternal Aspirant's Plate Stompers
+								i(192324),	-- Eternal Aspirant's Plate Warboots
+								i(192371),	-- Eternal Aspirant's Plate Wargreaves
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 						filter(TRINKET_F, {
 							i(192352, {["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 }}),	-- Eternal Aspirant's Badge of Ferocity
@@ -175,24 +199,30 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(192414),	-- Eternal Aspirant's Sigil of Adaptation
 						}),
 						n(WEAPONS, {
-							i(192405),	-- Eternal Aspirant's Barrier
-							i(192394),	-- Eternal Aspirant's Battleaxe
-							i(192410),	-- Eternal Aspirant's Blackjack
-							i(192409),	-- Eternal Aspirant's Blade
-							i(192411),	-- Eternal Aspirant's Crescent
-							i(192395),	-- Eternal Aspirant's Dagger
-							i(192404),	-- Eternal Aspirant's Gavel
-							i(192400),	-- Eternal Aspirant's Greataxe
-							i(192401),	-- Eternal Aspirant's Greatsword
-							i(192406),	-- Eternal Aspirant's Hatchet
-							i(192408),	-- Eternal Aspirant's Longspear
-							i(192396),	-- Eternal Aspirant's Mace
-							i(192402),	-- Eternal Aspirant's Orb
-							i(192397),	-- Eternal Aspirant's Polearm
-							i(192407),	-- Eternal Aspirant's Recurve
-							i(192398),	-- Eternal Aspirant's Staff
-							i(192399),	-- Eternal Aspirant's Sword
-							i(192403),	-- Eternal Aspirant's Warglaive
+							-- #if AFTER 10.0.2
+							i(201875, {	-- Arsenal: Cosmic Aspirant's Weapons
+							-- #endif
+								i(192405),	-- Eternal Aspirant's Barrier
+								i(192394),	-- Eternal Aspirant's Battleaxe
+								i(192410),	-- Eternal Aspirant's Blackjack
+								i(192409),	-- Eternal Aspirant's Blade
+								i(192411),	-- Eternal Aspirant's Crescent
+								i(192395),	-- Eternal Aspirant's Dagger
+								i(192404),	-- Eternal Aspirant's Gavel
+								i(192400),	-- Eternal Aspirant's Greataxe
+								i(192401),	-- Eternal Aspirant's Greatsword
+								i(192406),	-- Eternal Aspirant's Hatchet
+								i(192408),	-- Eternal Aspirant's Longspear
+								i(192396),	-- Eternal Aspirant's Mace
+								i(192402),	-- Eternal Aspirant's Orb
+								i(192397),	-- Eternal Aspirant's Polearm
+								i(192407),	-- Eternal Aspirant's Recurve
+								i(192398),	-- Eternal Aspirant's Staff
+								i(192399),	-- Eternal Aspirant's Sword
+								i(192403),	-- Eternal Aspirant's Warglaive
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 					},
 				}),

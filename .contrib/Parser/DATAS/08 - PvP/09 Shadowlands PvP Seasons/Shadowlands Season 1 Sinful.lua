@@ -198,7 +198,10 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							--	["description"] = "This item is only obtainable via the Sinful Gladiator's Plate Ensemble.",
 							}),
 						}),
-						filter(CLOTH, {					
+						filter(CLOTH, {
+							-- #if AFTER 10.0.2
+							i(201872, {	-- Ensemble: Sinful Gladiator's Cloth Armor
+							-- #endif
 								i(178375),	-- Sinful Gladiator's Silk Amice
 								i(178382),	-- Sinful Gladiator's Silk Armbands
 								i(178378),	-- Sinful Gladiator's Silk Belt
@@ -215,82 +218,83 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 								i(178370),	-- Sinful Gladiator's Silk Trousers
 								i(178354),	-- Sinful Gladiator's Silk Vestments
 								i(175917),	-- Sinful Gladiator's Silk Wristwraps
+							}),
 						}),
 						filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 							i(178381),	-- Sinful Gladiator's Band
 							i(175916),	-- Sinful Gladiator's Ring
 							i(178442),	-- Sinful Gladiator's Signet
 						})),
-						-- #if BEFORE 10.0.2
 						filter(LEATHER, {
-						-- #else
-						i(201865, {	-- Ensemble: Sinful Aspirant's Plate Armor
-						-- #endif
-							i(175915),	-- Sinful Gladiator's Leather Belt
-							i(175896),	-- Sinful Gladiator's Leather Boots
-							i(175907),	-- Sinful Gladiator's Leather Breeches
-							i(175897),	-- Sinful Gladiator's Leather Gloves
-							i(178362),	-- Sinful Gladiator's Leather Grips
-							i(175903),	-- Sinful Gladiator's Leather Helm
-							i(178357),	-- Sinful Gladiator's Leather Jerkin
-							i(178372),	-- Sinful Gladiator's Leather Legwraps
-							i(178368),	-- Sinful Gladiator's Leather Mask
-							i(178373),	-- Sinful Gladiator's Leather Shoulderpads
-							i(175908),	-- Sinful Gladiator's Leather Spaulders
-							i(178380),	-- Sinful Gladiator's Leather Strap
-							i(178361),	-- Sinful Gladiator's Leather Treads
-							i(175892),	-- Sinful Gladiator's Leather Vest
-							i(178385),	-- Sinful Gladiator's Leather Wristguards
-							i(175920),	-- Sinful Gladiator's Leather Wristwraps
+							-- #if AFTER 10.0.2
+							i(201871, {	-- Ensemble: Sinful Gladiator's Leather Armor
+							-- #endif
+								i(175915),	-- Sinful Gladiator's Leather Belt
+								i(175896),	-- Sinful Gladiator's Leather Boots
+								i(175907),	-- Sinful Gladiator's Leather Breeches
+								i(175897),	-- Sinful Gladiator's Leather Gloves
+								i(178362),	-- Sinful Gladiator's Leather Grips
+								i(175903),	-- Sinful Gladiator's Leather Helm
+								i(178357),	-- Sinful Gladiator's Leather Jerkin
+								i(178372),	-- Sinful Gladiator's Leather Legwraps
+								i(178368),	-- Sinful Gladiator's Leather Mask
+								i(178373),	-- Sinful Gladiator's Leather Shoulderpads
+								i(175908),	-- Sinful Gladiator's Leather Spaulders
+								i(178380),	-- Sinful Gladiator's Leather Strap
+								i(178361),	-- Sinful Gladiator's Leather Treads
+								i(175892),	-- Sinful Gladiator's Leather Vest
+								i(178385),	-- Sinful Gladiator's Leather Wristguards
+								i(175920),	-- Sinful Gladiator's Leather Wristwraps
+							}),
 						}),
-						-- #if BEFORE 10.0.2
 						filter(MAIL, {
-						-- #else
-						i(201865, {	-- Ensemble: Sinful Aspirant's Plate Armor
-						-- #endif
-							i(175914),	-- Sinful Gladiator's Chain Belt
-							i(178360),	-- Sinful Gladiator's Chain Boots
-							i(178384),	-- Sinful Gladiator's Chain Bracers
-							i(178371),	-- Sinful Gladiator's Chain Breeches
-							i(178367),	-- Sinful Gladiator's Chain Faceguard
-							i(175900),	-- Sinful Gladiator's Chain Gauntlets
-							i(178379),	-- Sinful Gladiator's Chain Girdle
-							i(178365),	-- Sinful Gladiator's Chain Handguards
-							i(175902),	-- Sinful Gladiator's Chain Helm
-							i(175906),	-- Sinful Gladiator's Chain Leggings
-							i(175911),	-- Sinful Gladiator's Chain Monnion
-							i(175895),	-- Sinful Gladiator's Chain Sabatons
-							i(178376),	-- Sinful Gladiator's Chain Shoulderguard
-							i(178356),	-- Sinful Gladiator's Chain Tunic
-							i(175891),	-- Sinful Gladiator's Chain Vest
-							i(175919),	-- Sinful Gladiator's Chain Wristguards
+							-- #if AFTER 10.0.2
+							i(201870, {	-- Ensemble: Sinful Gladiator's Mail Armor
+							-- #endif							
+								i(175914),	-- Sinful Gladiator's Chain Belt
+								i(178360),	-- Sinful Gladiator's Chain Boots
+								i(178384),	-- Sinful Gladiator's Chain Bracers
+								i(178371),	-- Sinful Gladiator's Chain Breeches
+								i(178367),	-- Sinful Gladiator's Chain Faceguard
+								i(175900),	-- Sinful Gladiator's Chain Gauntlets
+								i(178379),	-- Sinful Gladiator's Chain Girdle
+								i(178365),	-- Sinful Gladiator's Chain Handguards
+								i(175902),	-- Sinful Gladiator's Chain Helm
+								i(175906),	-- Sinful Gladiator's Chain Leggings
+								i(175911),	-- Sinful Gladiator's Chain Monnion
+								i(175895),	-- Sinful Gladiator's Chain Sabatons
+								i(178376),	-- Sinful Gladiator's Chain Shoulderguard
+								i(178356),	-- Sinful Gladiator's Chain Tunic
+								i(175891),	-- Sinful Gladiator's Chain Vest
+								i(175919),	-- Sinful Gladiator's Chain Wristguards
+							}),
 						}),
 						filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 							i(178448),	-- Sinful Gladiator's Amulet
 							i(175922),	-- Sinful Gladiator's Necklace
 							i(178387),	-- Sinful Gladiator's Pendant
 						})),
-						-- #if BEFORE 10.0.2
 						filter(PLATE, {
-						-- #else
-						i(201865, {	-- Ensemble: Sinful Aspirant's Plate Armor
-						-- #endif
-							i(175890),	-- Sinful Gladiator's Plate Chestguard
-							i(178355),	-- Sinful Gladiator's Plate Chestplate
-							i(175898),	-- Sinful Gladiator's Plate Gauntlets
-							i(175912),	-- Sinful Gladiator's Plate Girdle
-							i(178377),	-- Sinful Gladiator's Plate Greatbelt
-							i(178363),	-- Sinful Gladiator's Plate Handguards
-							i(175887),	-- Sinful Gladiator's Plate Helm
-							i(178352),	-- Sinful Gladiator's Plate Helmet
-							i(175904),	-- Sinful Gladiator's Plate Legguards
-							i(178374),	-- Sinful Gladiator's Plate Pauldrons
-							i(175909),	-- Sinful Gladiator's Plate Shoulders
-							i(178358),	-- Sinful Gladiator's Plate Stompers
-							i(178383),	-- Sinful Gladiator's Plate Vambraces
-							i(175893),	-- Sinful Gladiator's Plate Warboots
-							i(178369),	-- Sinful Gladiator's Plate Wargreaves
-							i(175918),	-- Sinful Gladiator's Plate Wristguards
+							-- #if AFTER 10.0.2
+							i(201869, {	-- Ensemble: Sinful Gladiator's Plate Armor
+							-- #endif	
+								i(175890),	-- Sinful Gladiator's Plate Chestguard
+								i(178355),	-- Sinful Gladiator's Plate Chestplate
+								i(175898),	-- Sinful Gladiator's Plate Gauntlets
+								i(175912),	-- Sinful Gladiator's Plate Girdle
+								i(178377),	-- Sinful Gladiator's Plate Greatbelt
+								i(178363),	-- Sinful Gladiator's Plate Handguards
+								i(175887),	-- Sinful Gladiator's Plate Helm
+								i(178352),	-- Sinful Gladiator's Plate Helmet
+								i(175904),	-- Sinful Gladiator's Plate Legguards
+								i(178374),	-- Sinful Gladiator's Plate Pauldrons
+								i(175909),	-- Sinful Gladiator's Plate Shoulders
+								i(178358),	-- Sinful Gladiator's Plate Stompers
+								i(178383),	-- Sinful Gladiator's Plate Vambraces
+								i(175893),	-- Sinful Gladiator's Plate Warboots
+								i(178369),	-- Sinful Gladiator's Plate Wargreaves
+								i(175918),	-- Sinful Gladiator's Plate Wristguards
+							}),
 						}),
 						filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 							i(175921),	-- Sinful Gladiator's Badge of Ferocity

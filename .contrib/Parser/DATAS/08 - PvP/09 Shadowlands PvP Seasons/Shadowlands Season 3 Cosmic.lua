@@ -85,22 +85,28 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(186909),	-- Cosmic Aspirant's Drape
 						}),
 						filter(CLOTH, {
-							i(186934),	-- Cosmic Aspirant's Silk Belt
-							i(186938),	-- Cosmic Aspirant's Silk Bindings
-							i(186898),	-- Cosmic Aspirant's Silk Cord
-							i(186922),	-- Cosmic Aspirant's Silk Cover
-							i(186915),	-- Cosmic Aspirant's Silk Footwraps
-							i(186884),	-- Cosmic Aspirant's Silk Gloves
-							i(186920),	-- Cosmic Aspirant's Silk Handwraps
-							i(186886),	-- Cosmic Aspirant's Silk Hood
-							i(186890),	-- Cosmic Aspirant's Silk Leggings
-							i(186926),	-- Cosmic Aspirant's Silk Legwraps
-							i(186895),	-- Cosmic Aspirant's Silk Mantle
-							i(186931),	-- Cosmic Aspirant's Silk Shawl
-							i(186879),	-- Cosmic Aspirant's Silk Treads
-							i(186874),	-- Cosmic Aspirant's Silk Tunic
-							i(186910),	-- Cosmic Aspirant's Silk Vest
-							i(186902),	-- Cosmic Aspirant's Silk Wristwraps
+							-- #if AFTER 10.0.2
+							i(201844, {	-- Ensemble: Cosmic Aspirant's Cloth Armor
+							-- #endif
+								i(186934),	-- Cosmic Aspirant's Silk Belt
+								i(186938),	-- Cosmic Aspirant's Silk Bindings
+								i(186898),	-- Cosmic Aspirant's Silk Cord
+								i(186922),	-- Cosmic Aspirant's Silk Cover
+								i(186915),	-- Cosmic Aspirant's Silk Footwraps
+								i(186884),	-- Cosmic Aspirant's Silk Gloves
+								i(186920),	-- Cosmic Aspirant's Silk Handwraps
+								i(186886),	-- Cosmic Aspirant's Silk Hood
+								i(186890),	-- Cosmic Aspirant's Silk Leggings
+								i(186926),	-- Cosmic Aspirant's Silk Legwraps
+								i(186895),	-- Cosmic Aspirant's Silk Mantle
+								i(186931),	-- Cosmic Aspirant's Silk Shawl
+								i(186879),	-- Cosmic Aspirant's Silk Treads
+								i(186874),	-- Cosmic Aspirant's Silk Tunic
+								i(186910),	-- Cosmic Aspirant's Silk Vest
+								i(186902),	-- Cosmic Aspirant's Silk Wristwraps
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 						filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 							i(186937),	-- Cosmic Aspirant's Band
@@ -108,40 +114,52 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(186945),	-- Cosmic Aspirant's Signet
 						})),
 						filter(LEATHER, {
-							i(186941),	-- Cosmic Aspirant's Leather Armguards
-							i(186900),	-- Cosmic Aspirant's Leather Belt
-							i(186881),	-- Cosmic Aspirant's Leather Boots
-							i(186892),	-- Cosmic Aspirant's Leather Breeches
-							i(186936),	-- Cosmic Aspirant's Leather Cord
-							i(186917),	-- Cosmic Aspirant's Leather Footpads
-							i(186882),	-- Cosmic Aspirant's Leather Gloves
-							i(186918),	-- Cosmic Aspirant's Leather Grips
-							i(186888),	-- Cosmic Aspirant's Leather Helm
-							i(186928),	-- Cosmic Aspirant's Leather Leggings
-							i(186929),	-- Cosmic Aspirant's Leather Mantle
-							i(186924),	-- Cosmic Aspirant's Leather Mask
-							i(186893),	-- Cosmic Aspirant's Leather Spaulders
-							i(186913),	-- Cosmic Aspirant's Leather Tunic
-							i(186877),	-- Cosmic Aspirant's Leather Vest
-							i(186905),	-- Cosmic Aspirant's Leather Wristwraps
+							-- #if AFTER 10.0.2
+							i(201843, {	-- Ensemble: Cosmic Aspirant's Leather Armor
+							-- #endif
+								i(186941),	-- Cosmic Aspirant's Leather Armguards
+								i(186900),	-- Cosmic Aspirant's Leather Belt
+								i(186881),	-- Cosmic Aspirant's Leather Boots
+								i(186892),	-- Cosmic Aspirant's Leather Breeches
+								i(186936),	-- Cosmic Aspirant's Leather Cord
+								i(186917),	-- Cosmic Aspirant's Leather Footpads
+								i(186882),	-- Cosmic Aspirant's Leather Gloves
+								i(186918),	-- Cosmic Aspirant's Leather Grips
+								i(186888),	-- Cosmic Aspirant's Leather Helm
+								i(186928),	-- Cosmic Aspirant's Leather Leggings
+								i(186929),	-- Cosmic Aspirant's Leather Mantle
+								i(186924),	-- Cosmic Aspirant's Leather Mask
+								i(186893),	-- Cosmic Aspirant's Leather Spaulders
+								i(186913),	-- Cosmic Aspirant's Leather Tunic
+								i(186877),	-- Cosmic Aspirant's Leather Vest
+								i(186905),	-- Cosmic Aspirant's Leather Wristwraps
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 						filter(MAIL, {
-							i(186899),	-- Cosmic Aspirant's Chain Belt
-							i(186940),	-- Cosmic Aspirant's Chain Bracer
-							i(186935),	-- Cosmic Aspirant's Chain Clasp
-							i(186885),	-- Cosmic Aspirant's Chain Gauntlets
-							i(186921),	-- Cosmic Aspirant's Chain Handguards
-							i(186923),	-- Cosmic Aspirant's Chain Headguard
-							i(186887),	-- Cosmic Aspirant's Chain Helm
-							i(186891),	-- Cosmic Aspirant's Chain Leggings
-							i(186880),	-- Cosmic Aspirant's Chain Sabatons
-							i(186932),	-- Cosmic Aspirant's Chain Shoulderguards
-							i(186896),	-- Cosmic Aspirant's Chain Spaulders
-							i(186916),	-- Cosmic Aspirant's Chain Stompers
-							i(186912),	-- Cosmic Aspirant's Chain Tunic
-							i(186876),	-- Cosmic Aspirant's Chain Vest
-							i(186927),	-- Cosmic Aspirant's Chain Wargreaves
-							i(186904),	-- Cosmic Aspirant's Chain Wristwraps
+							-- #if AFTER 10.0.2
+							i(201842, {	-- Ensemble: Cosmic Aspirant's Mail Armor
+							-- #endif
+								i(186899),	-- Cosmic Aspirant's Chain Belt
+								i(186940),	-- Cosmic Aspirant's Chain Bracer
+								i(186935),	-- Cosmic Aspirant's Chain Clasp
+								i(186885),	-- Cosmic Aspirant's Chain Gauntlets
+								i(186921),	-- Cosmic Aspirant's Chain Handguards
+								i(186923),	-- Cosmic Aspirant's Chain Headguard
+								i(186887),	-- Cosmic Aspirant's Chain Helm
+								i(186891),	-- Cosmic Aspirant's Chain Leggings
+								i(186880),	-- Cosmic Aspirant's Chain Sabatons
+								i(186932),	-- Cosmic Aspirant's Chain Shoulderguards
+								i(186896),	-- Cosmic Aspirant's Chain Spaulders
+								i(186916),	-- Cosmic Aspirant's Chain Stompers
+								i(186912),	-- Cosmic Aspirant's Chain Tunic
+								i(186876),	-- Cosmic Aspirant's Chain Vest
+								i(186927),	-- Cosmic Aspirant's Chain Wargreaves
+								i(186904),	-- Cosmic Aspirant's Chain Wristwraps
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 						filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 							i(186943),	-- Cosmic Aspirant's Choker
@@ -149,22 +167,28 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(186947),	-- Cosmic Aspirant's Pendant
 						})),
 						filter(PLATE, {
-							i(186939),	-- Cosmic Aspirant's Plate Armguards
-							i(186911),	-- Cosmic Aspirant's Plate Armor
-							i(186875),	-- Cosmic Aspirant's Plate Chestplate
-							i(186903),	-- Cosmic Aspirant's Plate Cuffs
-							i(186883),	-- Cosmic Aspirant's Plate Gauntlets
-							i(186897),	-- Cosmic Aspirant's Plate Girdle
-							i(186933),	-- Cosmic Aspirant's Plate Greatbelt
-							i(186919),	-- Cosmic Aspirant's Plate Handguards
-							i(186908),	-- Cosmic Aspirant's Plate Headguard
-							i(186872),	-- Cosmic Aspirant's Plate Helm
-							i(186889),	-- Cosmic Aspirant's Plate Legguards
-							i(186930),	-- Cosmic Aspirant's Plate Pauldrons
-							i(186894),	-- Cosmic Aspirant's Plate Shoulders
-							i(186914),	-- Cosmic Aspirant's Plate Stompers
-							i(186878),	-- Cosmic Aspirant's Plate Warboots
-							i(186925),	-- Cosmic Aspirant's Plate Wargreaves
+							-- #if AFTER 10.0.2
+							i(201841, {	-- Ensemble: Cosmic Aspirant's Plate Armor
+							-- #endif
+								i(186939),	-- Cosmic Aspirant's Plate Armguards
+								i(186911),	-- Cosmic Aspirant's Plate Armor
+								i(186875),	-- Cosmic Aspirant's Plate Chestplate
+								i(186903),	-- Cosmic Aspirant's Plate Cuffs
+								i(186883),	-- Cosmic Aspirant's Plate Gauntlets
+								i(186897),	-- Cosmic Aspirant's Plate Girdle
+								i(186933),	-- Cosmic Aspirant's Plate Greatbelt
+								i(186919),	-- Cosmic Aspirant's Plate Handguards
+								i(186908),	-- Cosmic Aspirant's Plate Headguard
+								i(186872),	-- Cosmic Aspirant's Plate Helm
+								i(186889),	-- Cosmic Aspirant's Plate Legguards
+								i(186930),	-- Cosmic Aspirant's Plate Pauldrons
+								i(186894),	-- Cosmic Aspirant's Plate Shoulders
+								i(186914),	-- Cosmic Aspirant's Plate Stompers
+								i(186878),	-- Cosmic Aspirant's Plate Warboots
+								i(186925),	-- Cosmic Aspirant's Plate Wargreaves
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 						filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 							i(186906),	-- Cosmic Aspirant's Badge of Ferocity
@@ -175,24 +199,30 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(186968),	-- Cosmic Aspirant's Sigil of Adaptation
 						})),
 						n(WEAPONS, {
-							i(186959),	-- Cosmic Aspirant's Barrier
-							i(186948),	-- Cosmic Aspirant's Battleaxe
-							i(186964),	-- Cosmic Aspirant's Blackjack
-							i(186963),	-- Cosmic Aspirant's Blade
-							i(186965),	-- Cosmic Aspirant's Crescent
-							i(186949),	-- Cosmic Aspirant's Dagger
-							i(186958),	-- Cosmic Aspirant's Gavel
-							i(186954),	-- Cosmic Aspirant's Greataxe
-							i(186955),	-- Cosmic Aspirant's Greatsword
-							i(186960),	-- Cosmic Aspirant's Hatchet
-							i(186962),	-- Cosmic Aspirant's Longspear
-							i(186950),	-- Cosmic Aspirant's Mace
-							i(186956),	-- Cosmic Aspirant's Orb
-							i(186951),	-- Cosmic Aspirant's Polearm
-							i(186961),	-- Cosmic Aspirant's Recurve
-							i(186952),	-- Cosmic Aspirant's Staff
-							i(186953),	-- Cosmic Aspirant's Sword
-							i(186957),	-- Cosmic Aspirant's Warglaive
+							-- #if AFTER 10.0.2
+							i(201875, {	-- Arsenal: Cosmic Aspirant's Weapons
+							-- #endif
+								i(186959),	-- Cosmic Aspirant's Barrier
+								i(186948),	-- Cosmic Aspirant's Battleaxe
+								i(186964),	-- Cosmic Aspirant's Blackjack
+								i(186963),	-- Cosmic Aspirant's Blade
+								i(186965),	-- Cosmic Aspirant's Crescent
+								i(186949),	-- Cosmic Aspirant's Dagger
+								i(186958),	-- Cosmic Aspirant's Gavel
+								i(186954),	-- Cosmic Aspirant's Greataxe
+								i(186955),	-- Cosmic Aspirant's Greatsword
+								i(186960),	-- Cosmic Aspirant's Hatchet
+								i(186962),	-- Cosmic Aspirant's Longspear
+								i(186950),	-- Cosmic Aspirant's Mace
+								i(186956),	-- Cosmic Aspirant's Orb
+								i(186951),	-- Cosmic Aspirant's Polearm
+								i(186961),	-- Cosmic Aspirant's Recurve
+								i(186952),	-- Cosmic Aspirant's Staff
+								i(186953),	-- Cosmic Aspirant's Sword
+								i(186957),	-- Cosmic Aspirant's Warglaive
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 					},
 				}),
@@ -345,22 +375,23 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(186782),	-- Cosmic Gladiator's Shawl
 						}),
 						filter(CLOTH, {
-							i(186801),	-- Cosmic Gladiator's Silk Amice
-							i(186805),	-- Cosmic Gladiator's Silk Armbands
-							i(186803),	-- Cosmic Gladiator's Silk Belt
-							i(186802),	-- Cosmic Gladiator's Silk Cord
-							i(186794),	-- Cosmic Gladiator's Silk Gloves
-							i(186797),	-- Cosmic Gladiator's Silk Guise
-							i(186795),	-- Cosmic Gladiator's Silk Handwraps
-							i(186796),	-- Cosmic Gladiator's Silk Hood
-							i(186798),	-- Cosmic Gladiator's Silk Leggings
-							i(186800),	-- Cosmic Gladiator's Silk Mantle
-							i(186790),	-- Cosmic Gladiator's Silk Robe
-							i(186792),	-- Cosmic Gladiator's Silk Slippers
-							i(186793),	-- Cosmic Gladiator's Silk Treads
-							i(186799),	-- Cosmic Gladiator's Silk Trousers
-							i(186791),	-- Cosmic Gladiator's Silk Vestments
-							i(186804),	-- Cosmic Gladiator's Silk Wristwraps
+							-- todo: Split into 3 Ensembles
+								i(186801),	-- Cosmic Gladiator's Silk Amice
+								i(186805),	-- Cosmic Gladiator's Silk Armbands
+								i(186803),	-- Cosmic Gladiator's Silk Belt
+								i(186802),	-- Cosmic Gladiator's Silk Cord
+								i(186794),	-- Cosmic Gladiator's Silk Gloves
+								i(186797),	-- Cosmic Gladiator's Silk Guise
+								i(186795),	-- Cosmic Gladiator's Silk Handwraps
+								i(186796),	-- Cosmic Gladiator's Silk Hood
+								i(186798),	-- Cosmic Gladiator's Silk Leggings
+								i(186800),	-- Cosmic Gladiator's Silk Mantle
+								i(186790),	-- Cosmic Gladiator's Silk Robe
+								i(186792),	-- Cosmic Gladiator's Silk Slippers
+								i(186793),	-- Cosmic Gladiator's Silk Treads
+								i(186799),	-- Cosmic Gladiator's Silk Trousers
+								i(186791),	-- Cosmic Gladiator's Silk Vestments
+								i(186804),	-- Cosmic Gladiator's Silk Wristwraps
 						}),
 						filter(FINGER_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 							i(186785),	-- Cosmic Gladiator's Band
@@ -368,40 +399,42 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(186786),	-- Cosmic Gladiator's Signet
 						})),
 						filter(LEATHER, {
-							i(186818),	-- Cosmic Gladiator's Leather Belt
-							i(186808),	-- Cosmic Gladiator's Leather Boots
-							i(186814),	-- Cosmic Gladiator's Leather Breeches
-							i(186810),	-- Cosmic Gladiator's Leather Gloves
-							i(186811),	-- Cosmic Gladiator's Leather Grips
-							i(186812),	-- Cosmic Gladiator's Leather Helm
-							i(186807),	-- Cosmic Gladiator's Leather Jerkin
-							i(186815),	-- Cosmic Gladiator's Leather Legwraps
-							i(186813),	-- Cosmic Gladiator's Leather Mask
-							i(186817),	-- Cosmic Gladiator's Leather Shoulderpads
-							i(186816),	-- Cosmic Gladiator's Leather Spaulders
-							i(186819),	-- Cosmic Gladiator's Leather Strap
-							i(186809),	-- Cosmic Gladiator's Leather Treads
-							i(186806),	-- Cosmic Gladiator's Leather Vest
-							i(186821),	-- Cosmic Gladiator's Leather Wristguards
-							i(186820),	-- Cosmic Gladiator's Leather Wristwraps
+							-- todo: Split into 4 Ensembles
+								i(186818),	-- Cosmic Gladiator's Leather Belt
+								i(186808),	-- Cosmic Gladiator's Leather Boots
+								i(186814),	-- Cosmic Gladiator's Leather Breeches
+								i(186810),	-- Cosmic Gladiator's Leather Gloves
+								i(186811),	-- Cosmic Gladiator's Leather Grips
+								i(186812),	-- Cosmic Gladiator's Leather Helm
+								i(186807),	-- Cosmic Gladiator's Leather Jerkin
+								i(186815),	-- Cosmic Gladiator's Leather Legwraps
+								i(186813),	-- Cosmic Gladiator's Leather Mask
+								i(186817),	-- Cosmic Gladiator's Leather Shoulderpads
+								i(186816),	-- Cosmic Gladiator's Leather Spaulders
+								i(186819),	-- Cosmic Gladiator's Leather Strap
+								i(186809),	-- Cosmic Gladiator's Leather Treads
+								i(186806),	-- Cosmic Gladiator's Leather Vest
+								i(186821),	-- Cosmic Gladiator's Leather Wristguards
+								i(186820),	-- Cosmic Gladiator's Leather Wristwraps
 						}),
 						filter(MAIL, {
-							i(186834),	-- Cosmic Gladiator's Chain Belt
-							i(186825),	-- Cosmic Gladiator's Chain Boots
-							i(186837),	-- Cosmic Gladiator's Chain Bracers
-							i(186831),	-- Cosmic Gladiator's Chain Breeches
-							i(186829),	-- Cosmic Gladiator's Chain Faceguard
-							i(186826),	-- Cosmic Gladiator's Chain Gauntlets
-							i(186835),	-- Cosmic Gladiator's Chain Girdle
-							i(186827),	-- Cosmic Gladiator's Chain Handguards
-							i(186828),	-- Cosmic Gladiator's Chain Helm
-							i(186830),	-- Cosmic Gladiator's Chain Leggings
-							i(186832),	-- Cosmic Gladiator's Chain Monnion
-							i(186824),	-- Cosmic Gladiator's Chain Sabatons
-							i(186833),	-- Cosmic Gladiator's Chain Shoulderguard
-							i(186823),	-- Cosmic Gladiator's Chain Tunic
-							i(186822),	-- Cosmic Gladiator's Chain Vest
-							i(186836),	-- Cosmic Gladiator's Chain Wristguards
+							-- todo: Split into 2 Ensembles
+								i(186834),	-- Cosmic Gladiator's Chain Belt
+								i(186825),	-- Cosmic Gladiator's Chain Boots
+								i(186837),	-- Cosmic Gladiator's Chain Bracers
+								i(186831),	-- Cosmic Gladiator's Chain Breeches
+								i(186829),	-- Cosmic Gladiator's Chain Faceguard
+								i(186826),	-- Cosmic Gladiator's Chain Gauntlets
+								i(186835),	-- Cosmic Gladiator's Chain Girdle
+								i(186827),	-- Cosmic Gladiator's Chain Handguards
+								i(186828),	-- Cosmic Gladiator's Chain Helm
+								i(186830),	-- Cosmic Gladiator's Chain Leggings
+								i(186832),	-- Cosmic Gladiator's Chain Monnion
+								i(186824),	-- Cosmic Gladiator's Chain Sabatons
+								i(186833),	-- Cosmic Gladiator's Chain Shoulderguard
+								i(186823),	-- Cosmic Gladiator's Chain Tunic
+								i(186822),	-- Cosmic Gladiator's Chain Vest
+								i(186836),	-- Cosmic Gladiator's Chain Wristguards
 						}),
 						filter(NECK_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 							i(186789),	-- Cosmic Gladiator's Amulet
@@ -409,22 +442,40 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(186788),	-- Cosmic Gladiator's Pendant
 						})),
 						filter(PLATE, {
-							i(186838),	-- Cosmic Gladiator's Plate Chestguard
-							i(186839),	-- Cosmic Gladiator's Plate Chestplate
-							i(186842),	-- Cosmic Gladiator's Plate Gauntlets
-							i(186850),	-- Cosmic Gladiator's Plate Girdle
-							i(186851),	-- Cosmic Gladiator's Plate Greatbelt
-							i(186843),	-- Cosmic Gladiator's Plate Handguards
-							i(186844),	-- Cosmic Gladiator's Plate Helm
-							i(186845),	-- Cosmic Gladiator's Plate Helmet
-							i(186846),	-- Cosmic Gladiator's Plate Legguards
-							i(186849),	-- Cosmic Gladiator's Plate Pauldrons
-							i(186848),	-- Cosmic Gladiator's Plate Shoulders
-							i(186841),	-- Cosmic Gladiator's Plate Stompers
-							i(186853),	-- Cosmic Gladiator's Plate Vambraces
-							i(186840),	-- Cosmic Gladiator's Plate Warboots
-							i(186847),	-- Cosmic Gladiator's Plate Wargreaves
-							i(186852),	-- Cosmic Gladiator's Plate Wristguards
+							-- #if AFTER 10.0.2
+							i(201850, {	-- Ensemble: Cosmic Gladiator's Paladin Armor
+							-- #endif
+								i(186838),	-- Cosmic Gladiator's Plate Chestguard
+								i(186843),	-- Cosmic Gladiator's Plate Handguards
+								i(186844),	-- Cosmic Gladiator's Plate Helm
+								i(186848),	-- Cosmic Gladiator's Plate Shoulders
+								i(186841),	-- Cosmic Gladiator's Plate Stompers
+								i(186853),	-- Cosmic Gladiator's Plate Vambraces
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
+							-- #if AFTER 10.0.2
+							i(201845, {	-- Ensemble: Cosmic Gladiator's Warrior Armor
+							-- #endif
+								i(186839),	-- Cosmic Gladiator's Plate Chestplate
+								i(186851),	-- Cosmic Gladiator's Plate Greatbelt
+								i(186849),	-- Cosmic Gladiator's Plate Pauldrons
+								i(186840),	-- Cosmic Gladiator's Plate Warboots
+								i(186847),	-- Cosmic Gladiator's Plate Wargreaves
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
+							-- #if AFTER 10.0.2
+							i(201856, {	-- Ensemble: Cosmic Gladiator's Death Knight Armor						
+							-- #endif	
+								i(186842),	-- Cosmic Gladiator's Plate Gauntlets
+								i(186850),	-- Cosmic Gladiator's Plate Girdle
+								i(186845),	-- Cosmic Gladiator's Plate Helmet
+								i(186846),	-- Cosmic Gladiator's Plate Legguards
+								i(186852),	-- Cosmic Gladiator's Plate Wristguards
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 						filter(TRINKET_F, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 							i(186866),	-- Cosmic Gladiator's Badge of Ferocity
@@ -440,28 +491,34 @@ root(ROOTS.PVP, pvp(tier(SL_TIER, {
 							i(186871),	-- Cosmic Gladiator's Sigil of Adaptation
 						})),
 						n(WEAPONS, {
-							i(186863),	-- Cosmic Gladiator's Ballista
-							i(189562),	-- Cosmic Gladiator's Barrier
-							i(186859),	-- Cosmic Gladiator's Ceremonial Sword
-							i(186778),	-- Cosmic Gladiator's Chalice
-							i(189566),	-- Cosmic Gladiator's Focus Staff
-							i(189568),	-- Cosmic Gladiator's Gavel
-							i(186858),	-- Cosmic Gladiator's Gladius
-							i(189567),	-- Cosmic Gladiator's Greatstaff
-							i(189564),	-- Cosmic Gladiator's Greatsword
-							i(186779),	-- Cosmic Gladiator's Guard
-							i(186855),	-- Cosmic Gladiator's Hacker
-							i(186856),	-- Cosmic Gladiator's Knife
-							i(186862),	-- Cosmic Gladiator's Pulverizer
-							i(189563),	-- Cosmic Gladiator's Rifle
-							i(189569),	-- Cosmic Gladiator's Ripper
-							i(186857),	-- Cosmic Gladiator's Ritual Dagger
-							i(186864),	-- Cosmic Gladiator's Scythe
-							i(189570),	-- Cosmic Gladiator's Slicer
-							i(186854),	-- Cosmic Gladiator's Splitter
-							i(186865),	-- Cosmic Gladiator's Vesper
-							i(186861),	-- Cosmic Gladiator's Warglaive
-							i(186860),	-- Cosmic Gladiator's Xiphos
+							-- #if AFTER 10.0.2
+							i(201873, {	-- Arsenal: Cosmic Gladiator's Weapons
+							-- #endif
+								i(186863),	-- Cosmic Gladiator's Ballista
+								i(189562),	-- Cosmic Gladiator's Barrier
+								i(186859),	-- Cosmic Gladiator's Ceremonial Sword
+								i(186778),	-- Cosmic Gladiator's Chalice
+								i(189566),	-- Cosmic Gladiator's Focus Staff
+								i(189568),	-- Cosmic Gladiator's Gavel
+								i(186858),	-- Cosmic Gladiator's Gladius
+								i(189567),	-- Cosmic Gladiator's Greatstaff
+								i(189564),	-- Cosmic Gladiator's Greatsword
+								i(186779),	-- Cosmic Gladiator's Guard
+								i(186855),	-- Cosmic Gladiator's Hacker
+								i(186856),	-- Cosmic Gladiator's Knife
+								i(186862),	-- Cosmic Gladiator's Pulverizer
+								i(189563),	-- Cosmic Gladiator's Rifle
+								i(189569),	-- Cosmic Gladiator's Ripper
+								i(186857),	-- Cosmic Gladiator's Ritual Dagger
+								i(186864),	-- Cosmic Gladiator's Scythe
+								i(189570),	-- Cosmic Gladiator's Slicer
+								i(186854),	-- Cosmic Gladiator's Splitter
+								i(186865),	-- Cosmic Gladiator's Vesper
+								i(186861),	-- Cosmic Gladiator's Warglaive
+								i(186860),	-- Cosmic Gladiator's Xiphos
+							-- #if AFTER 10.0.2
+							}),
+							-- #endif
 						}),
 					},
 				}),
