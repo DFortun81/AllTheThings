@@ -1418,7 +1418,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 			}),
-			n(QUESTS, bubbleDown({ ["timeline"] = { CREATED_10_2_5 }, }, {	-- Timeline me if the time is right
+			n(QUESTS, bubbleDown({ ["timeline"] = { CREATED_10_2_5 }, }, {	-- Timeline me when the time is right
 				dragonridingrace(76061, {	-- Ahn'Qiraj Circuit - Challenge
 					["provider"] = { "n", 204092 },	-- Bronze Timekeeper
 					["coord"] = { 39.6, 84.2, SILITHUS },
