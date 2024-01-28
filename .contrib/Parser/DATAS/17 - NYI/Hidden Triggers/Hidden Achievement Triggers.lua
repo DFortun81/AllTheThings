@@ -2999,6 +2999,19 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(18648),	-- <DNT> Eons Fringe - Multitude of Tasks - Completed Twice (Character)
 		})),
 
+		--10.1.7
+		tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+			--10.1.7.50442
+			ach(18860),	-- <Hidden> ACCOUNT: Renown Campaign Complete - Tyr 3
+			ach(18938),	-- Seeing Red (account)
+			--10.1.7.51059
+			ach(19137),	-- <Hidden> Base 11.0 Tender [DNT]
+			ach(19138),	-- <Hidden> Heroic 11.0 Tender [DNT]
+			ach(19139),	-- <Hidden> Epic 11.0 Tender [DNT]
+			--10.1.7.51237
+			ach(18691),	-- <DNT> Complete the "The Coalition of Flames" questline.
+		})),
+
 		-- 10.2.0
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			ach(19216),	-- <DNT> Dream Wardens Rank 1 (Account)
@@ -3085,11 +3098,18 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(18861),	-- <Hidden> ACCOUNT: Renown Campaign Complete - Tyr 4
 			ach(18933),	-- <Hidden> 10.2 Tyr Campaign - Ch 04 - Mail Quest Push - Valunei's Letter (AAO)
 			ach(19391),	-- [DNT] Hidden - Fyr'alath - Heroic/Mythic Marker
+			--10.2.0.51239
+			ach(17730),	-- Random Login Variable B
+			ach(18647),	-- <Hidden> 10.1.7 Prologue / 10.2 Intro Quest Launch [NOT USED YET]
+			ach(19287),	-- Vicious Saddle (38)
+			ach(19289),	-- Vicious Saddle (38)
 		})),
 
 		-- 10.2.5
 		tier(DF_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 			ach(19784),	-- Hearthstone Game Wins
+			--10.2.5.52968
+			ach(19720),	-- Reclamation of Gilneas (Hidden Character Achievement)
 		})),
 	}),
 });
