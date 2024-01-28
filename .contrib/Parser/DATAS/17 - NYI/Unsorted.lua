@@ -4016,7 +4016,6 @@ root(ROOTS.Unsorted, {
 			i(187345),	-- Ornate Offering Box
 			i(187594),	-- P'ugh's Almanac
 			i(187199),	-- Pa'hix's Runepuzzle
-			i(187112),	-- Packaged Soul Ash
 			i(187149),	-- Partial Conduit Index
 			i(187003),	-- Pet Plushy
 			i(187312),	-- Portentous Shard of Bek

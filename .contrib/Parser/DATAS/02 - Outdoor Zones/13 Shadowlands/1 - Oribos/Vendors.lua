@@ -342,7 +342,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							i(173204),	-- Lightless Silk
 						},
 					})),
-					i(187221, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Soul Ash Cache
+					i(187221, {	-- Soul Ash Cache
+						["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
 						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
 						["g"] = {
 							currency(1828),	-- Soul Ash
