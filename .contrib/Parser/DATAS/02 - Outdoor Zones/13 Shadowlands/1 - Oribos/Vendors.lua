@@ -310,12 +310,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							i(186017),	-- Korthite Crystal
 						},
 					})),
-					i(187817, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_9_2_0 } }, {	-- Korthite Crystal Geode
+					i(187817, {	-- Korthite Crystal Geode
+						["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH },
 						["cost"] = {{ "c", VALOR, 1500 }},
 						["g"] = {
 							i(186017),	-- Korthite Crystal
 						},
-					})),
+					}),
 					i(191303, {	-- Overflowing Chest of Riches
 						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 3 }},
 						["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH }
@@ -348,7 +349,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						["g"] = {
 							currency(1828),	-- Soul Ash
 						},
-					})),
+					}),
 					i(187222, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0, REMOVED_10_0_2_LAUNCH } }, {	-- Stygic Singularity
 						["cost"] = {{ "i", ATTENDANTS_TOKEN_OF_MERIT, 1 }},
 						["g"] = {
