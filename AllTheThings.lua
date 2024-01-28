@@ -1478,6 +1478,8 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateSpell(t.spellID, t);
 		elseif t.f or t.filterID then
 			t = app.CreateFilter(t.f or t.filterID, t);
+		elseif t.text then
+			t = app.CreateRawText(t.text, t)
 		else
 			-- app.PrintDebug("CreateObject by value, no specific object type");
 			-- app.PrintTable(t);
@@ -1984,17 +1986,16 @@ PriorityNestObjects;
 app.searchCache = searchCache;
 (function()
 local function GetHash(t)
-	local hash = t.hash;
-	if hash then return hash; end
-	hash = app.CreateHash(t);
-	--app.PrintDebug("No hash for object:", hash, t.text);
+	local hash = app.CreateHash(t);
+	app.PrintDebug(Colorize("No base .hash for t:",app.Colors.ChatLinkError),hash,t.text);
+	app.PrintTable(t)
 	return hash;
 end
 MergeObject = function(g, t, index, newCreate)
 	if g and t then
-		local hash = GetHash(t);
+		local hash = t.hash or GetHash(t);
 		for i,o in ipairs(g) do
-			if GetHash(o) == hash then
+			if (o.hash or GetHash(o)) == hash then
 				MergeProperties(o, t, true);
 				NestObjects(o, t.g, newCreate);
 				return o;
@@ -2004,7 +2005,7 @@ MergeObject = function(g, t, index, newCreate)
 		if index then
 			tinsert(g, index, t);
 		else
-			tinsert(g, t);
+			g[#g + 1] = t
 		end
 	end
 end
@@ -2042,10 +2043,10 @@ MergeObjects = function(g, g2, newCreate)
 					else
 						t = CreateObject(o);
 						hashTable[hash] = t;
-						tinsert(g, t);
+						g[#g + 1] = t
 					end
 				else
-					tinsert(g, CreateObject(o));
+					g[#g + 1] = CreateObject(o)
 				end
 			end
 		else
@@ -2059,10 +2060,10 @@ MergeObjects = function(g, g2, newCreate)
 						NestObjects(t, o.g);
 					else
 						hashTable[hash] = o;
-						tinsert(g, o);
+						g[#g + 1] = t
 					end
 				else
-					tinsert(g, o);
+					g[#g + 1] = CreateObject(o)
 				end
 			end
 		end
@@ -2100,14 +2101,14 @@ PriorityNestObjects = function(p, g, newCreate, ...)
 				if pFunc(o) then
 					-- app.PrintDebug("Matched Priority Function",i,o.hash,o.parent.text)
 					pBucket = pBuckets[i];
-					tinsert(pBucket, o);
+					pBucket[#pBucket + 1] = o
 					break;
 				end
 			end
 			-- no bucket was found, put in skipped
 			if not pBucket then
 				-- app.PrintDebug("No Priority",o.hash,o.parent.text)
-				if skipped then tinsert(skipped, o);
+				if skipped then skipped[#skipped + 1] = o
 				else skipped = { o }; end
 			end
 			-- reset bucket
@@ -18321,7 +18322,9 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				local numRandomDungeons = GetNumRandomDungeons();
 				-- print(numRandomDungeons,"numRandomDungeons");
 				if numRandomDungeons > 0 then
-					local groupFinder = { achID = 4476, text = DUNGEONS_BUTTON, collectible = false, trackable = false, g = {} };
+					local groupFinder = { text = DUNGEONS_BUTTON, icon = app.asset("Category_GroupFinder") };
+					local gfg = {}
+					groupFinder.g = gfg
 					for index=1,numRandomDungeons,1 do
 						local dungeonID = GetLFGRandomDungeonInfo(index);
 						-- app.PrintDebug("RandInfo",index,GetLFGRandomDungeonInfo(index));
@@ -18331,7 +18334,9 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 						-- print(dungeonID,name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, minGearLevel);
 						local _, gold, unknown, xp, unknown2, numRewards, unknown = GetLFGDungeonRewards(dungeonID);
 						-- print("GetLFGDungeonRewards",dungeonID,GetLFGDungeonRewards(dungeonID));
-						local header = { dungeonID = dungeonID, text = name, description = description, lvl = { minRecLevel or 1, maxRecLevel }, OnUpdate = OnUpdateForLFGHeader, g = {}};
+						local header = { dungeonID = dungeonID, text = name, description = description, lvl = { minRecLevel or 1, maxRecLevel }, OnUpdate = OnUpdateForLFGHeader}
+						local hg = {}
+						header.g = hg
 						if expansionLevel and not isHoliday then
 							header.icon = setmetatable({["tierID"]=expansionLevel + 1}, app.BaseTier).icon;
 						elseif isTimeWalker then
@@ -18362,9 +18367,9 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 									NestObjects(thing, data.g);	-- no need to clone, everything is re-created at the end
 								end
 							end
-							NestObject(header, thing);
+							hg[#hg + 1] = thing
 						end
-						NestObject(groupFinder, header);
+						gfg[#gfg + 1] = header
 					end
 					tinsert(temp, CreateObject(groupFinder));
 				end
