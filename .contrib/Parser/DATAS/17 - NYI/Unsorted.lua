@@ -3656,7 +3656,6 @@ root(ROOTS.Unsorted, {
 			i(177280),	-- Tattered Binding
 			i(181351),	-- Tattered Cloth
 			i(181352),	-- Tattered Leather
-			i(175240),	-- Tattered Leather Bag
 			i(178597),	-- TBD Maldraxxus Supplies
 			i(180892),	-- Teeth-Marked Bone Chips
 			i(173737),	-- Temel's Body
@@ -3694,7 +3693,6 @@ root(ROOTS.Unsorted, {
 			i(171367),	-- Tonal Mallet
 			i(180274),	-- Torch
 			i(171440),	-- Torghast Door Key
-			i(176398),	-- Torgok's Reagent Pouch
 			i(173872),	-- Torn Journal Page
 			i(183698),	-- Torturer's Key
 			i(177468),	-- Trailseeker Helm
@@ -3709,7 +3707,6 @@ root(ROOTS.Unsorted, {
 			i(183943),	-- Tubbins's Bucket
 			i(177949),	-- Tubbins's Lost Teapot
 			i(174844),	-- Tuft of Prowler Fur
-			i(178176),	-- Tunk's Trunk
 			i(180851),	-- Twirlpetal Pollen
 			i(178685),	-- Twisted Mawsteel
 			i(178790),	-- Umbral Plume

@@ -41,6 +41,7 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					i(178165),	-- Tunk's Tooth
 					i(178166),	-- Tunk's Toothpick
 					i(178162),	-- Tunk's Whomper
+					i(178176),	-- Tunk's Trunk
 				}),
 				n(156501, {	-- Ravnyr
 					["crs"] = { 156814 },	-- Gor'groth
@@ -1130,6 +1131,9 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					{ 57.6, 40.9, EXILES_REACH },
 				},
 				["questID"] = 59611,
+				["g"] = {
+					i(175240),	-- Tattered Leather Bag
+				},
 			}),
 		})),
 		n(TREASURES, sharedData({
@@ -1287,6 +1291,11 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				["crs"] = {
 					150238,	-- Quilboar Geomancer
 					150237,	-- Quilboar Warrior
+				},
+			}),
+			i(176398, {	-- Torgok's Reagent Pouch
+				["crs"] = {
+					162817,	-- Torgok <Binder of Souls>
 				},
 			}),
 		}),
