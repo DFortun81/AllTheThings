@@ -127,8 +127,8 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								r(326762), -- Bag of Creepy Crawlies
 								r(338059), -- Bag of Twigin Treats
 								r(344110), -- Barrel O' Fish
-								r(338046), -- Bindings of Wellbeing
-								r(338052), -- Bonesewn Fleshroc
+								r(338046, {["u"]=TRAINING}), -- Bindings of Wellbeing
+								r(338052, {["u"]=TRAINING}), -- Bonesewn Fleshroc
 								r(342846), -- Butterflies
 								r(344100), -- Chef Hat
 								r(342841), -- Collector Kash's Pack
@@ -153,7 +153,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								r(344095), -- Dundae's Hat
 								r(344101), -- Egg Hat
 								r(342418), -- Engineering Pack
-								r(342843), -- Faction Flag
+								r(342843, {["u"]=TRAINING}), -- Faction Flag
 								r(342447), -- Flower Crown
 								r(342448), -- Halo of Purity
 								r(342468), -- Happiness Bird
