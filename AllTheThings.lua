@@ -4900,15 +4900,14 @@ app.BuildCost = function(group)
 	if not cost and not providers then return; end
 
 	-- Pop out the cost objects into their own sub-groups for accessibility
-	local costGroup = {
-		["text"] = L["COST"],
+	local costGroup = app.CreateRawText(L.COST, {
 		["description"] = L["COST_DESC"],
 		["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
 		["sourceIgnored"] = true,
 		["OnUpdate"] = app.AlwaysShowUpdate,
 		["skipFill"] = true,
 		["g"] = {},
-	};
+	});
 	-- Gold cost currently ignored
 	-- print("BuildCost",group.hash)
 	if cost then
@@ -4960,6 +4959,7 @@ app.ThingKeys = {
 	["sourceID"] = true,
 	["speciesID"] = true,
 	["recipeID"] = true,
+	["runeforgePowerID"] = true,
 	["spellID"] = true,
 	["illusionID"] = true,
 	["questID"] = true,
@@ -5137,14 +5137,13 @@ app.BuildSourceParent = function(group)
 		-- if there are valid parent groups for sources, merge them into a 'Source(s)' group
 		if parents then
 			-- app.PrintDebug("Found parents",#parents)
-			local sourceGroup = {
-				["text"] = L["SOURCES"],
+			local sourceGroup = app.CreateRawText(L.SOURCES, {
 				["description"] = L["SOURCES_DESC"],
 				["icon"] = "Interface\\Icons\\inv_misc_spyglass_02",
 				["OnUpdate"] = app.AlwaysShowUpdate,
 				["skipFill"] = true,
 				["g"] = {},
-			};
+			})
 			local clonedParent, keepSource;
 			local clones = {};
 			for _,parent in ipairs(parents) do

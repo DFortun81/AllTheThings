@@ -2037,7 +2037,7 @@ if app.IsRetail then
 								-- nest cached non-items
 								if not o.itemID then
 									-- app.PrintDebug("nested-nonItem",o.hash)
-									tinsert(nonItemNested, o);
+									nonItemNested[#nonItemNested + 1] = o
 								-- cached items need to merge with corresponding API item based on simple itemID
 								elseif apiItems[o.itemID] then
 									-- app.PrintDebug("nested-merged",o.hash)
@@ -2046,13 +2046,13 @@ if app.IsRetail then
 								elseif questObject.isRaid or not questObject.isWorldQuest then
 									-- otherwise just get nested
 									-- app.PrintDebug("nested-item",o.hash)
-									tinsert(nonItemNested, o);
+									nonItemNested[#nonItemNested + 1] = o
 								end
 							end
 						end
 					-- otherwise if this is a non-quest object flagged with this questID so it should be added under the quest
 					elseif data.key ~= "questID" then
-						tinsert(nonItemNested, data);
+						nonItemNested[#nonItemNested + 1] = data
 					end
 				end
 				-- Everything retrieved from API should not be related to another sourceParent
