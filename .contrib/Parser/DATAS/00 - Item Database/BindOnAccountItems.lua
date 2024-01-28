@@ -392,6 +392,7 @@ i(204727);	-- Coveted Bauble
 i(205365);	-- Loamm Niffen Insignia [Uncommon]
 i(205342);	-- Loamm Niffen Insignia [Rare]
 i(205985);	-- Loamm Niffen Insignia [Epic 500]
+i(210422);	-- Loamm Niffen Insignia [Epic 2.5k]
 i(204179);	-- Medal of Honor [A] (Season 2)
 i(204180);	-- Medal of Honor [H] (Season 2)
 i(206200);	-- Obsidian Equipment Chest
@@ -488,3 +489,8 @@ i(208926);	-- Dreambound Weapon
 i(205189);	-- Warcraft Rumble Welcome Letter [A]
 i(204731);	-- Warcraft Rumble Welcome Letter [N]
 i(205190);	-- Warcraft Rumble Welcome Letter [H]
+
+------------------
+-- PATCH 10.2.0 --
+------------------
+i(210423);	-- Dream Wardens Insignia [Epic 2.5k]
