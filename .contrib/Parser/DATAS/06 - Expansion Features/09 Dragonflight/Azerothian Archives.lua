@@ -50,6 +50,8 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				ach(19791, {	-- Goggle Wobble
 					crit(65404, {	-- Zenata danced with at Igira's Watch
 						["coord"] = { 38.1, 49.8, ZARALEK_CAVERN },
+						["provider"] = {"n",207763},	-- Zenata
+						["_noautomation"] = true,
 					}),
 					crit(65405, {	-- Zenata danced with at Dragonskull Island
 						["coord"] = { 77.1, 38.4, THE_FORBIDDEN_REACH },
@@ -579,7 +581,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						["coord"] = { 47.6, 48.6, ZARALEK_CAVERN },
 					}),
 					q(77424, {	-- Research: Dracthyr of Forbidden Reach
-						["coord"] = { 53.9, 36.7 THE_FORBIDDEN_REACH },
+						["coord"] = { 53.9, 36.7, THE_FORBIDDEN_REACH },
 					}),
 					q(78931, {	-- Technoscrying: The Mysteries of Dragonskull Island
 						["coord"] = { 76.8, 38.0, THE_FORBIDDEN_REACH },
