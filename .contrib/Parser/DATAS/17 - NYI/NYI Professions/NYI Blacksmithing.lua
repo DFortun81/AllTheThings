@@ -96,11 +96,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(108224),	-- Peerless Draenic Steel Girdle
 					i(108166),	-- Peerless Draenic Steel Legguards
 					i(108190),	-- Peerless Draenic Steel Legguards
-					i(108198),	-- Peerless Draenic Steel Legguards
 					i(108183),	-- Peerless Draenic Steel Shoulders
-					i(108191),	-- Peerless Draenic Steel Shoulders
 					i(108199),	-- Peerless Draenic Steel Shoulders
-					i(108207),	-- Peerless Draenic Steel Shoulders
 					i(108223),	-- Peerless Draenic Steel Shoulders
 					i(108163),	-- Peerless Draenic Steel Warboots
 					i(108179),	-- Peerless Draenic Steel Warboots

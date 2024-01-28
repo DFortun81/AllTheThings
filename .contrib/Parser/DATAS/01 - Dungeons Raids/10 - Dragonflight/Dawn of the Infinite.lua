@@ -134,6 +134,8 @@ local QUANTUM_GROUP = sharedData({
 		filter(PLATE, {
 			ig(108083),	-- Hardened Draenic Steel Shoulders	(NYI)
 			ig(108167),	-- Peerless Draenic Steel Shoulders	(NYI)
+			ig(108191),	-- Peerless Draenic Steel Shoulders	(NYI)
+			ig(108207),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(108215),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(114274),	-- Ruby Plate Shoulderguard			(NYI)
 
@@ -331,6 +333,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(108082),	-- Hardened Draenic Steel Legguards	(NYI)
 			ig(114394),	-- Legplates of Grievous Storms		(NYI)
 			ig(108182),	-- Peerless Draenic Steel Legguards	(NYI)
+			ig(108198),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(108206),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(108214),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(108222),	-- Peerless Draenic Steel Legguards	(NYI)
@@ -393,7 +396,7 @@ local QUANTUM_GROUP = sharedData({
 	}),
 	i(208125, {	-- Quantum Focus
 		q(77609, {	-- when you learn everything from Quantum Focus (Off-hand)
-			["name"] = "Quantum Off-hand completed.",
+			["name"] = "Quantum Focus/Off-hand completed.",
 			["collectible"] = false,
 		}),
 		ig(18316),	-- Obsidian Bauble						(NYI)
@@ -402,6 +405,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(13371),	-- Father Flame							(Removed)
 	}),
 	i(208113, {	-- Quantum Greataxe		(Two-Handed)
+		q(77599, {	-- when you learn everything from Quantum Greataxe (Two-Handed)
+			["name"] = "Quantum Greataxe (Two-Handed) completed.",
+			["collectible"] = false,
+		}),
 		ig(134717),	-- Cold-Touched Decapitator				(NYI)
 		ig(108046),	-- Draenic Steel War Axe				(NYI)
 		ig(189996),	-- Elegantly Balanced Axe				(NYI)(Unique)
@@ -703,7 +710,10 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					["name"] = "Quantum Crossbow completed.",
 				}),
 				q(77609, {	-- when you learn everything from Quantum Focus (Off-hand)
-					["name"] = "Quantum Focus completed.",
+					["name"] = "Quantum Focus/Off-hand completed.",
+				}),
+				q(77599, {	-- when you learn everything from Greataxe (Two-Handed)
+					["name"] = "Quantum Greataxe (Two-Handed) completed.",
 				}),
 				q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
 					["name"] = "Quantum Greathammer/Mace (Two-Handed) completed.",
@@ -1223,7 +1233,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- Quantum Items
 		-- q(77595),	-- when you learn everything from Quantum ?
 		-- q(77598),	-- when you learn everything from Quantum ?
-		-- q(77599),	-- when you learn everything from Quantum ?
 		-- q(77603),	-- when you learn everything from Quantum ?
 		-- q(77605),	-- when you learn everything from Quantum ?
 		-- q(77606),	-- when you learn everything from Quantum ?
