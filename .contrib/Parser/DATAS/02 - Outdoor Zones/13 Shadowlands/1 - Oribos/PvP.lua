@@ -225,6 +225,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								{"select", "headerID", SEASON_ETERNAL},	-- Select Eternal Season
 								{"find", "headerID", PVP_ASPIRANT},		-- Aspirant Gear
 								{"find", "headerID", WEAPONS},			-- Weapons
+								{"exclude", "itemID", 201875 },			-- Exclude Arsenal: Cosmic Aspirant's Weapons as its shared with S4
 								{"extract","itemID"},					-- Extract Items
 								{"finalize"},							-- Push Everything to the Queue
 
