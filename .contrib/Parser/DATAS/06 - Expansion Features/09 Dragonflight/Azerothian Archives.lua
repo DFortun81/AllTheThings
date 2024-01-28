@@ -578,6 +578,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					q(76739, {	-- Research: Niffen of Zaralek Cavern
 						["coord"] = { 47.6, 48.6, ZARALEK_CAVERN },
 					}),
+					q(77424, {	-- Research: Dracthyr of Forbidden Reach
+						["coord"] = { 53.9, 36.7 THE_FORBIDDEN_REACH },
+					}),
 					q(78931, {	-- Technoscrying: The Mysteries of Dragonskull Island
 						["coord"] = { 76.8, 38.0, THE_FORBIDDEN_REACH },
 					}),
