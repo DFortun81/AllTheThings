@@ -634,6 +634,7 @@ i(179020);	-- Garlic Clove
 i(179015);	-- Garlic Spider Legs
 i(173761);	-- Glazed Glowberries
 i(178228);	-- Glittersnap Snowpeas
+i(181491);	-- Gormgris Lamp \\ PH name
 i(178216);	-- Grilled Slumbershrooms
 i(180429);	-- Hand-Formed Fleshbread
 i(178222);	-- Honeyplum Pie
@@ -674,6 +675,7 @@ i(179018);	-- Skullboar Chop
 i(179013);	-- Smoked Muckfish
 i(182118);	-- Sour Nightcap \\ Nightcap Nightcap
 i(173042);	-- Spinefin Piranha Bait
+i(181489);	-- Star Lake Sonnets \\ Star Lake Sonnet
 i(178224);	-- Steamed Gorm Tail
 i(183857);	-- Strength of Fire
 i(173760);	-- Sylberry Snowcake

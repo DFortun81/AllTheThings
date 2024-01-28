@@ -3875,7 +3875,6 @@ root(ROOTS.Unsorted, {
 			i(180226),	-- Game Rulebook
 			i(184163),	-- Gilded Slime
 			i(181487),	-- Glowberry Bead String \\ Glowberry Beads
-			i(181491),	-- Gormgris Lamp \\ PH name
 			i(180224),	-- Gubbins's Lost Diary
 			i(180220),	-- Historical Treatise
 			i(180227),	-- Horror Novel
@@ -3918,7 +3917,6 @@ root(ROOTS.Unsorted, {
 			i(184357),	-- Soulkeeper
 			i(184358),	-- Soulkeeper
 			i(181483),	-- Spool of Silkstrider Thread \\ PH Name
-			i(181489),	-- Star Lake Sonnets \\ Star Lake Sonnet
 			i(174283),	-- Stygian Stew
 			i(183807),	-- Stygic Coercion
 			i(183787),	-- Stygic Dampener
