@@ -10219,6 +10219,7 @@ end
 local refreshDataCooldown = 5;
 local refreshFromTrigger;
 local currentlyRefreshingData = false;
+local LastSettingsChangeUpdate;
 local function RefreshData(source, trigger)
 	wipe(app.searchCache);
 	refreshDataCooldown = 5;
@@ -10246,6 +10247,13 @@ local function RefreshData(source, trigger)
 
 			-- Execute the OnRecalculate handlers.
 			app.HandleEvent("OnRecalculate");
+
+			if LastSettingsChangeUpdate ~= app._SettingsRefresh then
+				LastSettingsChangeUpdate = app._SettingsRefresh;
+
+				app.HandleEvent("OnRecalculate_NewSettings")
+			end
+			
 			app:UpdateWindows(source, true, refreshFromTrigger);
 		else
 			app:UpdateWindows(source, nil, refreshFromTrigger);

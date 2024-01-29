@@ -680,7 +680,10 @@ settings.UpdateMode = function(self, doRefresh)
 		app:RegisterEvent("GOSSIP_SHOW");
 		app:RegisterEvent("TAXIMAP_OPENED");
 	end
-	if doRefresh then app:RefreshDataCompletely("UpdateMode"); end
+	if doRefresh then
+		app._SettingsRefresh = GetTimePreciseSec()
+		app:RefreshDataCompletely("UpdateMode");
+	end
 	self:Refresh();
 end
 
