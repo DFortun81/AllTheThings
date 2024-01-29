@@ -2099,7 +2099,7 @@ PriorityNestObjects = function(p, g, newCreate, ...)
 			for i,pFunc in ipairs(pFuncs) do
 				-- if the function matches, put the object in the bucket
 				if pFunc(o) then
-					-- app.PrintDebug("Matched Priority Function",i,o.hash,o.parent.text)
+					-- app.PrintDebug("Matched Priority Function",i,o.hash)
 					pBucket = pBuckets[i];
 					pBucket[#pBucket + 1] = o
 					break;
@@ -2107,7 +2107,7 @@ PriorityNestObjects = function(p, g, newCreate, ...)
 			end
 			-- no bucket was found, put in skipped
 			if not pBucket then
-				-- app.PrintDebug("No Priority",o.hash,o.parent.text)
+				-- app.PrintDebug("No Priority",o.hash)
 				if skipped then skipped[#skipped + 1] = o
 				else skipped = { o }; end
 			end
@@ -2118,13 +2118,16 @@ PriorityNestObjects = function(p, g, newCreate, ...)
 		for i,pBucket in ipairs(pBuckets) do
 			-- app.PrintDebug("Nesting Priority Bucket",i,#pBucket)
 			NestObjects(p, pBucket, newCreate);
+			-- app.PrintDebug(".g",p.g and #p.g)
 		end
 		-- and nest anything skipped
 		-- app.PrintDebug("Nesting Skipped",skipped and #skipped)
 		NestObjects(p, skipped, newCreate);
+		-- app.PrintDebug(".g",p.g and #p.g)
 	else
 		NestObjects(p, g, newCreate);
 	end
+	-- app.PrintDebug("PNO-Done",#pFuncs,"Priorities",#g,"Objects",p.g and #p.g)
 end
 -- Merges multiple sources of an object into a single object. Can specify to clean out all sub-groups of the result
 app.MergedObject = function(group, rootOnly)
