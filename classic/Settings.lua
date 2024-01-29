@@ -1817,6 +1817,24 @@ end);
 FilterThingsBySkillLevelCheckBox:SetATTTooltip("Enable this setting if you only want to see content available to the maximum possible skill level available to the game environment.");
 FilterThingsBySkillLevelCheckBox:SetPoint("TOPLEFT", FilterThingsByLevelCheckBox, "BOTTOMLEFT", 0, 4);
 
+local checkboxNoSeasonalFilter = settings:CreateCheckBox(L["SHOW_ALL_SEASONAL"],
+function(self)
+	self:SetChecked(not settings:Get("Show:OnlyActiveEvents"))	-- Inversed, so enabled = show
+	if app.MODE_DEBUG then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:Set("Show:OnlyActiveEvents", not self:GetChecked())	-- Inversed, so enabled = show
+	settings:UpdateMode(1)
+end);
+checkboxNoSeasonalFilter:SetATTTooltip(L["SHOW_ALL_SEASONAL_TOOLTIP"])
+checkboxNoSeasonalFilter:SetPoint("TOPLEFT", FilterThingsBySkillLevelCheckBox, "BOTTOMLEFT", 0, 4);
+
 local HideBoEItemsCheckBox = settings:CreateCheckBox("Hide BoE Items",
 function(self)
 	self:SetChecked(settings:Get("Hide:BoEs"));
@@ -1832,7 +1850,7 @@ function(self)
 	settings:SetHideBOEItems(self:GetChecked());
 end);
 HideBoEItemsCheckBox:SetATTTooltip("Enable this setting if you want to hide Bind on Equip items.\n\nThis setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.");
-HideBoEItemsCheckBox:SetPoint("TOPLEFT", FilterThingsBySkillLevelCheckBox, "BOTTOMLEFT", 0, 4);
+HideBoEItemsCheckBox:SetPoint("TOPLEFT", checkboxNoSeasonalFilter, "BOTTOMLEFT", 0, 4);
 
 local IgnoreFiltersForBoEsCheckBox = settings:CreateCheckBox("Ignore Filters for BoEs",
 function(self)

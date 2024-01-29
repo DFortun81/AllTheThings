@@ -124,6 +124,8 @@ local L = {
 	["INCOMPLETE"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Incomplete|r";		-- Acquired the colors and icon from CanIMogIt.
 	["KNOWN_ON_CHARACTER"] = "|T" .. app.asset("known") .. ":0|t |c" .. app.Colors.Completed .. "Known on current character|r";
 	["UNKNOWN_ON_CHARACTER"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Unknown on current character|r";
+	["SHOW_ALL_SEASONAL"] = "All Seasonal Events";
+	["SHOW_ALL_SEASONAL_TOOLTIP"] = "Enable this setting to show all seasonal events, instead of only currently active seasonal events.\n\nNOTE: Seasonal Events will automatically be visible as active 7 days in advance.";
 
 	["ABBREVIATIONS"] = {
 		["ALL THE THINGS"] = "ATT",
@@ -580,10 +582,11 @@ local L = {
 	
 	-- Unobtainable Listing
 	["UNOBTAINABLE_ITEM_TEXTURES"] = {
-		"Interface\\FriendsFrame\\StatusIcon-DnD", 		-- No Hope
-		"Interface\\FriendsFrame\\StatusIcon-Away", 	-- Little Hope
-		"Interface\\FriendsFrame\\StatusIcon-Online",	-- There is Hope
-		"Interface\\FriendsFrame\\StatusIcon-Offline",	-- Seasonal
+		app.asset("status-unobtainable"),
+		app.asset("status-prerequisites"),
+		"",									-- 3, we want no icon for these
+		app.asset("status-seasonal-unavailable"),	-- Seasonal unavailable
+		app.asset("status-seasonal-available"),	-- Seasonal available
 	};
 	["UNOBTAINABLE_ITEM_REASONS"] = {
 		[1] = {1, "|CFFFF0000This was never available to players.|r", "Never Implemented"},

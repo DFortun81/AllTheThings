@@ -1289,11 +1289,11 @@ local L = {
 
 	-- Unobtainable Listing (for fellow 100%s out there)
 	["UNOBTAINABLE_ITEM_TEXTURES"] = {
-		"Interface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp",			-- 1
-		"Interface\\AddOns\\AllTheThings\\assets\\status-prerequisites.blp",		-- 2
-		"",																			-- 3, we want no icon for these
-		"Interface\\AddOns\\AllTheThings\\assets\\status-seasonal-unavailable.blp",	-- Seasonal unavailable
-		"Interface\\AddOns\\AllTheThings\\assets\\status-seasonal-available.blp",	-- Seasonal available
+		app.asset("status-unobtainable"),
+		app.asset("status-prerequisites"),
+		"",									-- 3, we want no icon for these
+		app.asset("status-seasonal-unavailable"),	-- Seasonal unavailable
+		app.asset("status-seasonal-available"),	-- Seasonal available
 	};
 	["UNOBTAINABLE_ITEM_REASONS"] = {
 		-- [id] = {header, description, name}, header: header id, 1-3 as above, 4 is legacy.
