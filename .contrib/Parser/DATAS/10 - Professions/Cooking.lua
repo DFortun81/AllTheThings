@@ -565,8 +565,6 @@ profession(COOKING, {
 			["timeline"]={ "removed 8.0.1" },
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
-			-- #else
-			["lvl"] = 10,
 			-- #endif
 			["rank"] = 2,
 		}),
@@ -574,14 +572,13 @@ profession(COOKING, {
 			["timeline"]={ "removed 8.0.1" },
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
-			-- #else
+			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			["OnUpdate"] = [[function(t)
-				t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 26 or 20;
+				if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
+					t.u = ]] .. SOD_PHASE_TWO .. [[;
+				end
 			end]],
-			-- #else
-			["lvl"] = 20,
-			-- #endif
 			-- #endif
 			["rank"] = 3,
 		}),
@@ -590,13 +587,14 @@ profession(COOKING, {
 			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
 			-- #else
-			-- #if SEASON_OF_DISCOVERY
-			["OnUpdate"] = [[function(t)
-				t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 41 or 35;
-			end]],
-			-- #else
 			["lvl"] = 35,
 			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			["OnUpdate"] = [[function(t)
+				if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
+					t.u = ]] .. SOD_PHASE_THREE .. [[;
+				end
+			end]],
 			-- #endif
 			["rank"] = 4,
 		}),
