@@ -6,6 +6,8 @@
 	r(2259,	{	-- Alchemy (Apprentice)
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		["lvl"] = 5,
 		-- #endif
 		["rank"] = 1,
 	}),
@@ -13,6 +15,8 @@
 		["timeline"] = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		["lvl"] = 10,
 		-- #endif
 		["rank"] = 2,
 	}),
@@ -87,6 +91,15 @@ EXPERT_ARTISAN_ALCHEMY = {
 		["timeline"] = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		-- #if SEASON_OF_DISCOVERY
+		["OnUpdate"] = [[function(t)--]]
+			--t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 26 or 20;
+		--end]],
+		--[[
+		-- #else
+		["lvl"] = 20,
+		-- #endif
 		-- #endif
 		["rank"] = 3,
 	}),
@@ -94,6 +107,15 @@ EXPERT_ARTISAN_ALCHEMY = {
 		["timeline"] = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		-- #if SEASON_OF_DISCOVERY
+		["OnUpdate"] = [[function(t)--]]
+			--t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 41 or 35;
+		--end]],
+		--[[
+		-- #else
+		["lvl"] = 35,
+		-- #endif
 		-- #endif
 		["rank"] = 4,
 	}),

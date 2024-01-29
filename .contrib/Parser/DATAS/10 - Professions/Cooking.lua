@@ -555,6 +555,51 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 -- #if ANYCLASSIC
 profession(COOKING, {
 	tier(CLASSIC_TIER, {
+		r(2550, {	-- Cooking (Apprentice)
+			-- #if NOT ANYCLASSIC
+			["collectible"] = false,
+			-- #endif
+			["rank"] = 1,
+		}),
+		r(3102, {	-- Cooking (Journeyman)
+			["timeline"]={ "removed 8.0.1" },
+			-- #if NOT ANYCLASSIC
+			["collectible"] = false,
+			-- #else
+			["lvl"] = 10,
+			-- #endif
+			["rank"] = 2,
+		}),
+		r(3413, {	-- Cooking (Expert)
+			["timeline"]={ "removed 8.0.1" },
+			-- #if NOT ANYCLASSIC
+			["collectible"] = false,
+			-- #else
+			-- #if SEASON_OF_DISCOVERY
+			["OnUpdate"] = [[function(t)
+				t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 26 or 20;
+			end]],
+			-- #else
+			["lvl"] = 20,
+			-- #endif
+			-- #endif
+			["rank"] = 3,
+		}),
+		r(18260, {	-- Cooking (Artisan)
+			["timeline"]={ "removed 8.0.1" },
+			-- #if NOT ANYCLASSIC
+			["collectible"] = false,
+			-- #else
+			-- #if SEASON_OF_DISCOVERY
+			["OnUpdate"] = [[function(t)
+				t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 41 or 35;
+			end]],
+			-- #else
+			["lvl"] = 35,
+			-- #endif
+			-- #endif
+			["rank"] = 4,
+		}),
 		{
 			["name"] = "Everyday Cooking",
 			["categoryID"] = 63,
@@ -1069,6 +1114,15 @@ profession(COOKING, {
 		},
 	}),
 	applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, {
+		r(33359, {	-- Cooking (Master)
+			["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
+			-- #if NOT ANYCLASSIC
+			["collectible"] = false,
+			-- #else
+			["lvl"] = 50,
+			-- #endif
+			["rank"] = 5,
+		}),
 		{
 			["name"] = "Blackened Basilisk",
 			["recipeID"] = 33286
@@ -1172,6 +1226,15 @@ profession(COOKING, {
 		}
 	})),
 	applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, {
+		r(51296, {	-- Cooking (Grand Master)
+			["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
+			-- #if NOT ANYCLASSIC
+			["collectible"] = false,
+			-- #else
+			["lvl"] = 65,
+			-- #endif
+			["rank"] = 6,
+		}),
 		{
 			["name"] = "Bad Clams",
 			["recipeID"] = 58523
@@ -2939,22 +3002,6 @@ profession(COOKING, {
 			}
 		}
 	})),
-
-	-- #if NOT ANYCLASSIC
-	-- TODO: Add these recipes to the place where you used to be able to buy them.
-	filter(RECIPES, {
-		tier(CLASSIC_TIER, {
-			un(REMOVED_FROM_GAME, i(16072, {	-- Expert Cookbook
-				["spellID"] = 0,	-- replacing the spellID that is automatically pulled from the itemDB, which shows this item as "unknown" when it's not collectible
-			})),
-			un(REMOVED_FROM_GAME, i(5485)),		-- Recipe: Fillet of Frenzy (RECIPE!)
-			un(REMOVED_FROM_GAME, i(13939)),	-- Recipe: Spotted Yellowtail (RECIPE!)
-			un(REMOVED_FROM_GAME, i(13942)),	-- Recipe: Grilled Squid (RECIPE!)
-			un(REMOVED_FROM_GAME, i(13945)),	-- Recipe: Nightfin Soup (RECIPE!)
-			un(REMOVED_FROM_GAME, i(13946)),	-- Recipe: Poached Sunscale Salmon (RECIPE!)
-		}),
-	}),
-	-- #endif
 });
 
 -- Cooking Item Database

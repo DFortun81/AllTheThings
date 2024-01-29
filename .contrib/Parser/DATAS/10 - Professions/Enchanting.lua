@@ -753,19 +753,51 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 	tier(CLASSIC_TIER, {
 		r(7411, {	-- Enchanting (Apprentice)
+			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
+			-- #else
+			["lvl"] = 5,
+			-- #endif
+			["rank"] = 1,
 		}),
 		r(7412, {	-- Enchanting (Journeyman)
 			["timeline"]={ "removed 8.0.1" },
+			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
+			-- #else
+			["lvl"] = 10,
+			-- #endif
+			["rank"] = 2,
 		}),
 		r(7413, {	-- Enchanting (Expert)
 			["timeline"]={ "removed 8.0.1" },
+			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
+			-- #else
+			-- #if SEASON_OF_DISCOVERY
+			["OnUpdate"] = [[function(t)
+				t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 26 or 20;
+			end]],
+			-- #else
+			["lvl"] = 20,
+			-- #endif
+			-- #endif
+			["rank"] = 3,
 		}),
 		r(13920, {	-- Enchanting (Artisan)
 			["timeline"]={ "removed 8.0.1" },
+			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
+			-- #else
+			-- #if SEASON_OF_DISCOVERY
+			["OnUpdate"] = [[function(t)
+				t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 41 or 35;
+			end]],
+			-- #else
+			["lvl"] = 35,
+			-- #endif
+			-- #endif
+			["rank"] = 4,
 		}),
 		r(264455, {["timeline"]={"added 8.0.1"}}),	-- Enchanting
 		r(13262, {	-- Disenchant
@@ -973,7 +1005,12 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 	applyclassicphase(TBC_PHASE_ONE, tier(TBC_TIER, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
 		r(28029, {	-- Enchanting (Master)
 			["timeline"]={ "added 2.0.1", "removed 8.0.1" },
+			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
+			-- #else
+			["lvl"] = 50,
+			-- #endif
+			["rank"] = 5,
 		}),
 		r(264460, {["timeline"]={"added 8.0.1"}}),	-- Outland Enchanting
 		cat(681, {	-- Boot Enchantments
@@ -1108,7 +1145,12 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 	applyclassicphase(WRATH_PHASE_ONE, tier(WOTLK_TIER, bubbleDownSelf({ ["timeline"] = { "added 3.0.2" } }, {
 		r(51313, {	-- Enchanting (Grand Master)
 			["timeline"]={ "added 3.0.2", "removed 8.0.1" },
+			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
+			-- #else
+			["lvl"] = 65,
+			-- #endif
+			["rank"] = 6,
 		}),
 		r(264462, {["timeline"]={"added 8.0.1"}}),	-- Northrend Enchanting
 		cat(673, {	-- Boot Enchantments
@@ -1212,7 +1254,10 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 	applyclassicphase(CATA_PHASE_ONE, tier(CATA_TIER, bubbleDownSelf({ ["timeline"] = { "added 4.0.3" } }, {
 		r(74258, {	-- Enchanting (Illustrious)
 			["timeline"]={ "added 4.0.3", "removed 8.0.1" },
+			-- #if NOT ANYCLASSIC
 			["collectible"] = false,
+			-- #endif
+			["rank"] = 7,
 		}),
 		r(264464, {["timeline"]={"added 8.0.1"}}),	-- Cataclysm Enchanting
 		cat(668, {	-- Armor Enchantments
@@ -1298,6 +1343,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		r(110400, {	-- Enchanting (Zen Master)
 			["timeline"]={ "added 5.0.4", "removed 8.0.1" },
 			["collectible"] = false,
+			["rank"] = 8,
 		}),
 		r(264467, {["timeline"]={"added 8.0.1"}}),	-- Pandaria Enchanting
 		cat(657, {	-- Armor Enchantments

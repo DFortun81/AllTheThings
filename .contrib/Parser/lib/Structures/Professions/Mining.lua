@@ -11,6 +11,8 @@ CLASSIC_MINING = {
 	r(2575, {	-- Mining (Apprentice)
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		["lvl"] = 5,
 		-- #endif
 		["rank"] = 1,
 	}),
@@ -18,6 +20,8 @@ CLASSIC_MINING = {
 		["timeline"] = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		["lvl"] = 10,
 		-- #endif
 		["rank"] = 2,
 	}),
@@ -25,6 +29,14 @@ CLASSIC_MINING = {
 		["timeline"] = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		-- #if SEASON_OF_DISCOVERY
+		["OnUpdate"] = [[function(t)
+			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 26 or 20;
+		end]],
+		-- #else
+		["lvl"] = 20,
+		-- #endif
 		-- #endif
 		["rank"] = 3,
 	}),
@@ -32,6 +44,14 @@ CLASSIC_MINING = {
 		["timeline"] = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		-- #if SEASON_OF_DISCOVERY
+		["OnUpdate"] = [[function(t)
+			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 41 or 35;
+		end]],
+		-- #else
+		["lvl"] = 35,
+		-- #endif
 		-- #endif
 		["rank"] = 4,
 	}),
@@ -53,6 +73,8 @@ TBC_MINING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDE
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		["lvl"] = 50,
 		-- #endif
 		["rank"] = 5,
 	}),
@@ -72,6 +94,8 @@ WRATH_MINING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { 
 		["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		["lvl"] = 65,
 		-- #endif
 		["rank"] = 6,
 	}),
