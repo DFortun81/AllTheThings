@@ -2060,7 +2060,7 @@ MergeObjects = function(g, g2, newCreate)
 						NestObjects(t, o.g);
 					else
 						hashTable[hash] = o;
-						g[#g + 1] = t
+						g[#g + 1] = o
 					end
 				else
 					g[#g + 1] = CreateObject(o)
