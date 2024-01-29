@@ -184,6 +184,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61615, {	-- Tailoring: Haunting Hood
 				["requireSkill"] = TAILORING,
 				["g"] = {
+					r(338277, {["u"]=TRAINING}),	-- Bleakcloth
+					r(338276, {["u"]=TRAINING}),	-- Bolt of Bleakcloth
+					r(338275, {["u"]=TRAINING}),	-- Haunting Hood
 					i(182117),	-- Bleakcloth (QI!)
 					i(182028),	-- Bleakthread (QI!)
 					i(182116),	-- Bolt of Bleakcloth (QI!)

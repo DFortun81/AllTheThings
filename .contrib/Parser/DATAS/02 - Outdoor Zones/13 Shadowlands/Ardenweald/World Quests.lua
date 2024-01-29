@@ -152,6 +152,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61604, {	-- Tailoring: Cloak of Camouflage
 				["requireSkill"] = TAILORING,
 				["g"] = {
+					r(338270, {["u"]=TRAINING}),	-- Ardensilk Cloth
+					r(338269, {["u"]=TRAINING}),	-- Bolt of Ardensilk Cloth
+					r(338267, {["u"]=TRAINING}),	-- Cloak of Camouflage
 					i(182005),	-- Ardensilk Cloth (QI!)
 					i(182004),	-- Bolt of Ardensilk Cloth (QI!)
 					i(181453),	-- Cloak of Camouflage (QI!)

@@ -1693,7 +1693,7 @@ i(0, 307221);		-- Void Focus
 -----------------
 -- PATCH 9.0.1 --
 -----------------
---- RELICS ---
+--- RELIC ---
 i(0, 330134);		-- Relic of the Past I [CLASSIC]
 i(0, 330140);		-- Relic of the Past II [CLASSIC]
 i(0, 330141);		-- Relic of the Past III [CLASSIC]

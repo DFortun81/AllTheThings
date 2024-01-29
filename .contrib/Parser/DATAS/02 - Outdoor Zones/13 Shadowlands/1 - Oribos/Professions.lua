@@ -211,6 +211,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_L
 					["g"] = SL_MINING,
 				}),
 			}),
+			prof(TAILORING, {
+				n(156681, {	-- Stitcher Au'phes <Tailoring Trainer>
+					["coord"] = { 45.2, 31.6, ORIBOS },
+					["g"] = SL_TAILORING,
+				}),
+			}),
 		}),
 	}),
 })));

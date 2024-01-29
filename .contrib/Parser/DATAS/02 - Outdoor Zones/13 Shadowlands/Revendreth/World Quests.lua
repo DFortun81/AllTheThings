@@ -238,6 +238,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61628, {	-- Tailoring: Looming Tapestry
 				["requireSkill"] = TAILORING,
 				["g"] = {
+					r(338279, {["u"]=TRAINING}),	-- Bolt of Prideweave
+					r(338278, {["u"]=TRAINING}),	-- Looming Tapestry
+					r(338280, {["u"]=TRAINING}),	-- Prideweave Cloth
 					i(182051),	-- Bolt of Prideweave (QI!)
 					i(181973),	-- Looming Tapestry (QI!)
 					i(182050),	-- Prideweave Cloth (QI!)

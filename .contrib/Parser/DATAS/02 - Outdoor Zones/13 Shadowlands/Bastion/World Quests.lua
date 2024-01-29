@@ -171,6 +171,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61469, {	-- Tailoring: Woven Gossamer Tunic
 				["requireSkill"] = TAILORING,
 				["g"] = {
+					r(338272, {["u"]=TRAINING}),	-- Bolt of Woven Gossamer
+					r(338273, {["u"]=TRAINING}),	-- Gossamer Cloth
+					r(338271, {["u"]=TRAINING}),	-- Woven Gossamer Tunic
 					i(182102),	-- Bolt of Woven Gossamer (QI!)
 					i(182103),	-- Gossamer Cloth (QI!)
 					i(182104),	-- Gossamer Thread (QI!)

@@ -13,7 +13,7 @@ root(ROOTS.WorldDrops, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_L
 		i(172053),	-- Tenebrous Ribs
 	}),
 	filter(RECIPES, {
-		i(186995, {	-- Pattern: Shrouded Hand Towel
+		i(186995, {	-- Pattern: Shrouded Hand Towel (RECIPE!)
 			["timeline"] = { ADDED_9_1_0 },
 		}),
 	}),

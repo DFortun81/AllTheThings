@@ -418,15 +418,15 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 			i(180760),	-- Crown of the Righteous
 		}),
 		filter(FINGER_F, {
-			i(173138), -- Deadly Laestrite Band
-			i(173134), -- Deadly Sinvyr Ring
-			i(173136), -- Masterful Laestrite Band
-			i(173132), -- Masterful Phaedrum Ring
-			i(173137), -- Quick Laestrite Band
-			i(173133), -- Quick Oxxein Ring
-			i(178926), -- Shadowghast Ring
-			i(173135), -- Versatile Laestrite Band
-			i(173131), -- Versatile Solenium Ring
+			i(173138),	-- Deadly Laestrite Band
+			i(173134),	-- Deadly Sinvyr Ring
+			i(173136),	-- Masterful Laestrite Band
+			i(173132),	-- Masterful Phaedrum Ring
+			i(173137),	-- Quick Laestrite Band
+			i(173133),	-- Quick Oxxein Ring
+			i(178926),	-- Shadowghast Ring
+			i(173135),	-- Versatile Laestrite Band
+			i(173131),	-- Versatile Solenium Ring
 		}),
 		filter(GEMS, {
 			i(173127),	-- Deadly Jewel Cluster
@@ -441,15 +441,15 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 			i(173123),	-- Versatile Jewel Doublet
 		}),
 		filter(NECK_F, {
-			i(173143), -- Deadly Laestrite Choker
-			i(173147), -- Deadly Sinvyr Necklace
-			i(173141), -- Masterful Laestrite Choker
-			i(173145), -- Masterful Phaedrum Necklace
-			i(173142), -- Quick Laestrite Choker
-			i(173146), -- Quick Oxxein Necklace
-			i(178927), -- Shadowghast Necklace
-			i(173140), -- Versatile Laestrite Choker
-			i(173144), -- Versatile Solenium Necklace
+			i(173143),	-- Deadly Laestrite Choker
+			i(173147),	-- Deadly Sinvyr Necklace
+			i(173141),	-- Masterful Laestrite Choker
+			i(173145),	-- Masterful Phaedrum Necklace
+			i(173142),	-- Quick Laestrite Choker
+			i(173146),	-- Quick Oxxein Necklace
+			i(178927),	-- Shadowghast Necklace
+			i(173140),	-- Versatile Laestrite Choker
+			i(173144),	-- Versatile Solenium Necklace
 		}),
 		filter(MISC, {
 			i(187829, {["timeline"] = {ADDED_9_2_0}}),	-- Aealic Harmonizing Stone
@@ -651,52 +651,91 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 		}),
 	}),
 	prof(TAILORING, {
-		n(HEAD, {
-			i(173245),	-- Grim-Veiled Hood
-			i(173218),	-- Shadowlace Cowl
-			i(173197),	-- Shrouded Cloth Hood
-			i(180752),	-- Pink Party Hat
+		n(DISCOVERY, {
+			spell(339003, {	-- Grim-Veiled Belt [Rank 1]
+				r(332072),	-- Grim-Veiled Belt [Rank 2]
+				r(332037),	-- Grim-Veiled Belt [Rank 3]
+				r(310885),	-- Grim-Veiled Belt [Rank 4]
+			}),
+			spell(339004, {	-- Grim-Veiled Bracers [Rank 1]
+				r(332073),	-- Grim-Veiled Bracers [Rank 2]
+				r(332038),	-- Grim-Veiled Bracers [Rank 3]
+				r(310886),	-- Grim-Veiled Bracers [Rank 4]
+			}),
+			spell(338995, {	-- Grim-Veiled Cape [Rank 1]
+				r(332067),	-- Grim-Veiled Cape [Rank 2]
+				r(332032),	-- Grim-Veiled Cape [Rank 3]
+				r(310880),	-- Grim-Veiled Cape [Rank 4]
+			}),
+			spell(339000, {	-- Grim-Veiled Hood [Rank 1]
+				r(332069),	-- Grim-Veiled Hood [Rank 2]
+				r(332034),	-- Grim-Veiled Hood [Rank 3]
+				r(310882),	-- Grim-Veiled Hood [Rank 4]
+			}),
+			spell(338998, {	-- Grim-Veiled Mittens [Rank 1]
+				r(332068),	-- Grim-Veiled Mittens [Rank 2]
+				r(332033),	-- Grim-Veiled Mittens [Rank 3]
+				r(310881),	-- Grim-Veiled Mittens [Rank 4]
+			}),
+			spell(339001, {	-- Grim-Veiled Pants [Rank 1]
+				r(332070),	-- Grim-Veiled Pants [Rank 2]
+				r(332035),	-- Grim-Veiled Pants [Rank 3]
+				r(310883),	-- Grim-Veiled Pants [Rank 4]
+			}),
+			spell(338996, {	-- Grim-Veiled Robe [Rank 1]
+				r(332066),	-- Grim-Veiled Robe [Rank 2]
+				r(332031),	-- Grim-Veiled Robe [Rank 3]
+				r(310879),	-- Grim-Veiled Robe [Rank 4]
+			}),
+			spell(338997, {	-- Grim-Veiled Sandals [Rank 1]
+				r(332065),	-- Grim-Veiled Sandals [Rank 2]
+				r(332030),	-- Grim-Veiled Sandals [Rank 3]
+				r(310878),	-- Grim-Veiled Sandals [Rank 4]
+			}),
+			spell(339002, {	-- Grim-Veiled Spaulders [Rank 1]
+				r(332071),	-- Grim-Veiled Spaulders [Rank 2]
+				r(332036),	-- Grim-Veiled Spaulders [Rank 3]
+				r(310884),	-- Grim-Veiled Spaulders [Rank 4]
+			}),
 		}),
-		n(CHEST, {
-			i(173241),	-- Grim-Veiled Robe
-			i(173214),	-- Shadowlace Tunic
-			i(173193),	-- Shrouded Cloth Robe
-		}),
-		n(BACK, {
+		n(ARMOR, {
+			i(173248),	-- Grim-Veiled Belt
+			i(173249),	-- Grim-Veiled Bracers
 			i(173242),	-- Grim-Veiled Cape
-			i(173215),	-- Shadowlace Cloak
-			i(173194),	-- Shrouded Cloth Cape
-		}),
-		n(FEET, {
-			i(173243),	-- Grim-Veiled Sandals
-			i(173216),	-- Shadowlace Footwraps
-			i(173195),	-- Shrouded Cloth Sandals
-		}),
-		n(HANDS, {
+			i(173245),	-- Grim-Veiled Hood
 			i(173244),	-- Grim-Veiled Mittens
-			i(173217),	-- Shadowlace Handwraps
-			i(173196),	-- Shrouded Cloth Mittens
-		}),
-		n(SHOULDER, {
+			i(173246),	-- Grim-Veiled Pants
+			i(173241),	-- Grim-Veiled Robe
+			i(173243),	-- Grim-Veiled Sandals
 			i(173247),	-- Grim-Veiled Spaulders
+			i(173215),	-- Shadowlace Cloak
+			i(173221),	-- Shadowlace Cord
+			i(173218),	-- Shadowlace Cowl
+			i(173222),	-- Shadowlace Cuffs
+			i(173216),	-- Shadowlace Footwraps
+			i(173217),	-- Shadowlace Handwraps
 			i(173220),	-- Shadowlace Mantle
+			i(173219),	-- Shadowlace Trousers
+			i(173214),	-- Shadowlace Tunic
+			i(173200),	-- Shrouded Cloth Belt
+			i(173201),	-- Shrouded Cloth Bracers
+			i(173194),	-- Shrouded Cloth Cape
+			i(173197),	-- Shrouded Cloth Hood
+			i(173196),	-- Shrouded Cloth Mittens
+			i(173198),	-- Shrouded Cloth Pants
+			i(173193),	-- Shrouded Cloth Robe
+			i(173195),	-- Shrouded Cloth Sandals
 			i(173199),	-- Shrouded Cloth Spaulders
 		}),
-		n(WAIST, {
-			i(173248),	-- Grim-Veiled Belt
-			i(173221),	-- Shadowlace Cord
-			i(173200),	-- Shrouded Cloth Belt
+		filter(COSMETIC, {
+			i(180752),	-- Pink Party Hat
 		}),
-		n(WRIST, {
-			i(173249),	-- Grim-Veiled Bracers
-			i(173222),	-- Shadowlace Cuffs
-			i(173201),	-- Shrouded Cloth Bracers
+		filter(MISC, {
+			i(173191),	-- Heavy Shrouded Cloth Bandage
+			i(184480),	-- Lightless Silk Pouch
+			i(184479),	-- Shrouded Cloth Bag
+			i(173192),	-- Shrouded Cloth Bandage
+			i(186975, {["timeline"] = {ADDED_9_1_0}}),	-- Shrouded Hand Towel
 		}),
-		n(LEGS, {
-			i(173246),	-- Grim-Veiled Pants
-			i(173219),	-- Shadowlace Trousers
-			i(173198),	-- Shrouded Cloth Pants
-		}),
-		i(184479),		-- Shrouded Cloth Bag
 	}),
 })));

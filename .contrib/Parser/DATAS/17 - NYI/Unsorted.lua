@@ -2561,10 +2561,6 @@ root(ROOTS.Unsorted, {
 			i(171300),	-- [DNT] REUSE ME \\ Modified Crafting Reagent 08
 			i(172927),	-- [DNT] REUSE ME \\ Phaevyr Alloy
 			i(171294),	-- [DNT] REUSE ME \\ Slippery Concoction
-			i(173262),	-- [DNT] REUSE ME \\ Tailoring - Modified Crafting Reagent 05
-			i(173263),	-- [DNT] REUSE ME \\ Tailoring - Modified Crafting Reagent 06
-			i(173264),	-- [DNT] REUSE ME \\ Tailoring - Modified Crafting Reagent 07
-			i(173265),	-- [DNT] REUSE ME \\ Tailoring - Modified Crafting Reagent 08
 			i(171277),	-- [DNT] Spiritual Intellect Flask \\ Spiritual Intellect Flask
 			i(171279),	-- [DNT] Spiritual Strength Flask \\ Spiritual Strength Flask
 			i(183902),	-- A Faintly Glowing Seed
@@ -2630,7 +2626,6 @@ root(ROOTS.Unsorted, {
 			i(178140),	-- Archonic Resonator
 			i(178041),	-- Archonic Resonator
 			i(178717),	-- Ardenmoth Cocoon
-			i(182005),	-- Ardensilk Cloth \\ Kinda Thing
 			i(181542),	-- Ardenweald Anima 3
 			i(179830),	-- Ardenweald Covenant Mail Chest
 			i(179861),	-- Ardenweald Covenant Mail Chest
@@ -2719,8 +2714,6 @@ root(ROOTS.Unsorted, {
 			i(178519),	-- Blank Sinstone
 			i(173531),	-- Blasted Lands Scroll
 			i(173699),	-- Blasted Lands Scroll
-			i(182117),	-- Bleakcloth \\ Kinda Thing
-			i(182028),	-- Bleakthread \\ Base Thing
 			i(180946),	-- Blessed Armament
 			i(175041),	-- Blinding Anima
 			i(180890),	-- Bloodstained Gambrel
@@ -2730,10 +2723,6 @@ root(ROOTS.Unsorted, {
 			i(181251),	-- Blooming Lasher Spur
 			i(175148),	-- Blooming Vale
 			i(174094),	-- Boian's Fangs \\ Rapier of the Fearless
-			i(182004),	-- Bolt of Ardensilk Cloth \\ Almost Thing
-			i(182116),	-- Bolt of Bleakcloth \\ Almost Thing
-			i(182051),	-- Bolt of Prideweave \\ Almost Thing
-			i(182102),	-- Bolt of Woven Gossamer
 			i(174749),	-- Bone Splinter
 			i(173700),	-- Bonebinder Zal's Key
 			i(179317),	-- Bonemetal
@@ -2772,7 +2761,6 @@ root(ROOTS.Unsorted, {
 			i(183185),	-- Chromie's Scroll
 			i(183188),	-- Chromie's Scroll
 			i(171961),	-- Cleansing Chime
-			i(181453),	-- Cloak of Camouflage \\ Ardenweald Tailoring Item \\ Tailoring Item \\ Tailoring Foozle
 			i(174526),	-- Clotting Patches
 			i(173702),	-- Cloudfeather Essence
 			i(183140),	-- Cloudstrider Antler
@@ -2820,7 +2808,6 @@ root(ROOTS.Unsorted, {
 			i(178566),	-- Cracked Hand Mirror
 			i(180352),	-- Cracked Inquisitor's Band
 			i(179980),	-- Cracked Sinstone
-			i(173258),	-- Craftman's Pouch \\ Frozen Thread
 			i(174336),	-- Crimson Cravat
 			i(175030),	-- Critical Swiftmend
 			i(179375),	-- Crude Diary Key
@@ -3060,8 +3047,6 @@ root(ROOTS.Unsorted, {
 			i(181284),	-- Gormling in a Bag
 			i(178028),	-- Gormwrought Shield \\ Gormsmith Shield
 			i(178026),	-- Gormwrought Staff \\ Gormsmith Staff
-			i(182103),	-- Gossamer Cloth
-			i(182104),	-- Gossamer Thread
 			i(173910),	-- Gracepetal Incense Burner
 			i(173704),	-- Granary Jug
 			i(180451),	-- Grand Inquisitor's Sinstone Fragment
@@ -3083,7 +3068,6 @@ root(ROOTS.Unsorted, {
 			i(176852),	-- Hardened Tail Bone
 			i(178138),	-- Harp Piece
 			i(173689),	-- Hastily Wrapped Package
-			i(181972),	-- Haunting Hood \\ Maldraxxus Tailoring Item
 			i(175132),	-- Havoc Chains
 			i(175038),	-- Healthy Bear
 			i(174341),	-- Heart of the Fallen Tree
@@ -3095,7 +3079,6 @@ root(ROOTS.Unsorted, {
 			i(177429),	-- Heart-Lesion Helm
 			i(177431),	-- Heart-Lesion Pauldrons
 			i(177438),	-- Heart-Lesion Shoulderguards
-			i(173191),	-- Heavy Shrouded Cloth Bandage
 			i(177281),	-- Heavy Sorrowscale
 			i(179376),	-- Hefty Diary Key
 			i(178229),	-- Herbert's Spell Book
@@ -3186,7 +3169,6 @@ root(ROOTS.Unsorted, {
 			i(176084),	-- List of Demands
 			i(180436),	-- List of wildseeds
 			i(180276),	-- Locked Toolbox Key
-			i(181973),	-- Looming Tapestry \\ Revendreth Tailoring Item
 			i(175796),	-- Loose Stitch's Key
 			i(182619),	-- Looted Animacone
 			i(169823),	-- Lordaeron Coin
@@ -3364,7 +3346,6 @@ root(ROOTS.Unsorted, {
 			i(173355),	-- Pouch of Puffpetal Powder
 			i(183724),	-- Poxedskin Sample
 			i(180887),	-- Preserved Organ
-			i(182050),	-- Prideweave Cloth \\ Kinda Thing
 			i(177880),	-- Primordial Muck
 			i(176456),	-- Prisoner Cage Key \\ Ossein Key Ring
 			i(172453),	-- Prisoner Transfer Orders
@@ -3375,15 +3356,6 @@ root(ROOTS.Unsorted, {
 			i(178676),	-- Pulsating Hide Scraps \\ Pulsating Hide
 			i(178898),	-- Pungent Swarmer Toxin
 			i(175144),	-- Purest Healing
-			i(173233),	-- Pureweave Cloak
-			i(173239),	-- Pureweave Cord
-			i(173236),	-- Pureweave Cowl
-			i(173240),	-- Pureweave Cuffs
-			i(173234),	-- Pureweave Footwraps
-			i(173235),	-- Pureweave Handwraps
-			i(173238),	-- Pureweave Mantle
-			i(173237),	-- Pureweave Trousers
-			i(173232),	-- Pureweave Tunic
 			i(173973),	-- Purian
 			i(177963),	-- Purified Armor Fragments
 			i(173880),	-- Purified Metal
@@ -3485,7 +3457,6 @@ root(ROOTS.Unsorted, {
 			i(178044),	-- Shifting Cryptogram
 			i(180796),	-- Shimmerflight Quill
 			i(183836),	-- Shimmersilt
-			i(173192),	-- Shrouded Cloth Bandage
 			i(175982),	-- Sicklethorn To-Do List
 			i(174843),	-- Sicklethorn Trickster Powder \\ Sicklethorn Trick Powder
 			i(180440),	-- Sigil of Discipline
@@ -3555,7 +3526,6 @@ root(ROOTS.Unsorted, {
 			i(181387),	-- Speckled Flametail \\ Ardenweald Fishing Item \\ Fishing Item \\ Toxic Darter
 			i(174464),	-- Spectral Bridle
 			i(180297),	-- Spellbound Notes
-			i(182006),	-- Spool of Ardensilk \\ Base Thing
 			i(175029),	-- Spreading Vale
 			i(178908),	-- Spriggan-Sized Polearm
 			i(178909),	-- Spriggan-Sized Staff
@@ -3577,15 +3547,6 @@ root(ROOTS.Unsorted, {
 			i(180848),	-- Steelskin Linebreaker's Head
 			i(178515),	-- Stitched Surprise Cake
 			i(180845),	-- Stitchflesh Design \\ Stitchflesh's Designs
-			i(173224),	-- Stitchsilk Cloak
-			i(173230),	-- Stitchsilk Cord
-			i(173227),	-- Stitchsilk Cowl
-			i(173231),	-- Stitchsilk Cuffs
-			i(173225),	-- Stitchsilk Footwraps
-			i(173226),	-- Stitchsilk Handwraps
-			i(173229),	-- Stitchsilk Mantle
-			i(173228),	-- Stitchsilk Trousers
-			i(173223),	-- Stitchsilk Tunic
 			i(172226),	-- Stolen Anima
 			i(184015),	-- Stolen Memento
 			i(174219),	-- Stolen Memento \\ Abandoned Memento
@@ -3635,9 +3596,6 @@ root(ROOTS.Unsorted, {
 			i(174212),	-- Suspicious Weapon
 			i(175037),	-- Symbiotic Growth
 			i(181367),	-- Ta Cartel Restock List
-			i(173259),	-- Tailoring - Modified Crafting Reagent 02
-			i(173260),	-- Tailoring - Modified Crafting Reagent 03
-			i(173261),	-- Tailoring - Modified Crafting Reagent 04
 			i(173250),	-- Tailoring Reagent 01
 			i(173251),	-- Tailoring Reagent 02
 			i(173252),	-- Tailoring Reagent 03
@@ -3678,7 +3636,6 @@ root(ROOTS.Unsorted, {
 			i(176054),	-- Thigh High Boots
 			i(180600),	-- Thistle Tea
 			i(182333),	-- Thistledrop Dew
-			i(182052),	-- Thread of Pride \\ Base Thing
 			i(180777),	-- Thros-Forged Key
 			i(180810),	-- Throwin' Skull
 			i(179309),	-- Tincture of Tuica Moonshine
@@ -3774,15 +3731,6 @@ root(ROOTS.Unsorted, {
 			i(177836),	-- Wingpierce Javelin
 			i(179306),	-- Wingtip Warmer
 			i(178528),	-- Winter Veil Gift
-			i(173206),	-- Winterweave Cloak
-			i(173212),	-- Winterweave Cord
-			i(173209),	-- Winterweave Cowl
-			i(173213),	-- Winterweave Cuffs
-			i(173207),	-- Winterweave Footwraps
-			i(173208),	-- Winterweave Handwraps
-			i(173211),	-- Winterweave Mantle
-			i(173210),	-- Winterweave Trousers
-			i(173205),	-- Winterweave Tunic
 			i(182963),	-- Witch's Satchel
 			i(180050),	-- Wither Blade
 			i(181246),	-- Withered Leaf
@@ -3792,7 +3740,6 @@ root(ROOTS.Unsorted, {
 			i(180804),	-- Worn Obleron Etching
 			i(179979),	-- Worn Sinstone
 			i(181299),	-- Wornthrough Bag
-			i(181971),	-- Woven Gossamer Tunic
 			i(174845),	-- Wreath of Night's Veil Flowers \\ Wreath of Night's Veil
 			i(173044),	-- Wreathed Fishing Pole
 			i(182184),	-- Wyvern Soul \\ Wyvern Soulshape
@@ -3880,7 +3827,6 @@ root(ROOTS.Unsorted, {
 			i(184610),	-- Korrath's Grimoire: Gyadrek
 			i(181486),	-- Leafscale Coat
 			i(180052),	-- Left Gem Eye
-			i(184480),	-- Lightless Silk Pouch
 			i(184612),	-- Mawsworn Orders
 			i(180775),	-- Memory of Home
 			i(181558),	-- Missing Ritual Pages
@@ -4055,7 +4001,6 @@ root(ROOTS.Unsorted, {
 			i(187076),	-- Shard of Oth
 			i(187071),	-- Shard of Tel
 			i(187079),	-- Shard of Zed
-			i(186975),	-- Shrouded Hand Towel
 			i(187033),	-- Small Offering Key
 			i(185975),	-- Soulborn Socket Matrix
 			i(186400),	-- Soulborn Socket Research \\ Devourer Contoller's Crest
