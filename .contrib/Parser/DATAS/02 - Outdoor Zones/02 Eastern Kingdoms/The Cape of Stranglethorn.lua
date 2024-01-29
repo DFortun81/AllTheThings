@@ -240,7 +240,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				q(7810, {	-- Arena Master
 					["provider"] = { "i", 18706 },	-- Arena Master (trinket)
-					["altQuests"] = { 7908 },	-- Arena Master
 					["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
 				}),
 				q(26644, {	-- Attracting Attention
@@ -2232,5 +2231,5 @@ root(ROOTS.HiddenQuestTriggers, m(EASTERN_KINGDOMS, {
 	m(THE_CAPE_OF_STRANGLETHORN, {
 		q(7908),	-- triggered when completing 7810 'Arena Master'
 	}),
-}))
+}));
 -- #endif

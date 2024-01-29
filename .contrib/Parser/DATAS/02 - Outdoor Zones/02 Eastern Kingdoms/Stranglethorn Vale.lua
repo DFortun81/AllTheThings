@@ -409,7 +409,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				q(7810, {	-- Arena Master
 					["provider"] = { "i", 18706 },	-- Arena Master (trinket)
-					["altQuests"] = { 7908 },	-- Arena Master
 					-- #if AFTER CATA
 					["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
@@ -2917,6 +2916,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 		},
+	}),
+}));
+
+root(ROOTS.HiddenQuestTriggers, m(EASTERN_KINGDOMS, {
+	m(STRANGLETHORN_VALE, {
+		q(7908),	-- triggered when completing 7810 'Arena Master'
 	}),
 }));
 -- #endif
