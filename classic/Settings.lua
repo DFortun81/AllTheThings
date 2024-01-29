@@ -272,22 +272,6 @@ settings.Initialize = function(self)
 	OnClickForTab(self.Tabs[1]);
 	self:UpdateMode();
 end
-settings.CheckSeasonalDate = function(self, eventID, startMonth, startDay, endMonth, endDay)
-	local today = date("*t");
-	local now, start, ends = time({day=today.day,month=today.month,year=today.year,hour=0,min=0,sec=0});
-	if startMonth <= endMonth then
-		start = time({day=startDay,month=startMonth,year=today.year,hour=0,min=0,sec=0});
-		ends = time({day=endDay,month=endMonth,year=today.year,hour=0,min=0,sec=0});
-	else
-		local year = today.year;
-		if today.month < startMonth then year = year - 1; end
-		start = time({day=startDay,month=startMonth,year=year,hour=0,min=0,sec=0});
-		ends = time({day=endDay,month=endMonth,year=year + 1,hour=0,min=0,sec=0});
-	end
-
-	local active = (now >= start and now <= ends);
-	app.ActiveEvents[eventID] = active;
-end
 settings.Get = function(self, setting)
 	return ATTClassicSettings.General[setting];
 end
