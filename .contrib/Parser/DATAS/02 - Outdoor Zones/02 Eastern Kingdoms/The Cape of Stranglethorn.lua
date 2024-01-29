@@ -2081,6 +2081,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(16083, {	-- Expert Fishing - The Bass and You
 							["timeline"] = { "removed 3.1.0" },
+							-- #if ANYCLASSIC
+							-- #if SEASON_OF_DISCOVERY
+							["OnUpdate"] = [[function(t)
+								t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 26 or 20;
+							end]],
+							-- #else
+							["lvl"] = 20,
+							-- #endif
+							-- #endif
 							["rank"] = 3,
 						}),
 					},
