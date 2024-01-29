@@ -2067,10 +2067,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				n(4015, {	-- Pridewing Patriarch
-					["description"] = "Can spawn after killing any Pridewing Beasts.",
-					-- #if AFTER CATA
+					-- #if AFTER 7.2.0
+					["description"] = "Can spawn after killing any Pridewing Beasts. Warning: This mob scales with character level up to level cap!",
 					["coord"] = { 55.6, 44.8, STONETALON_MOUNTAINS },
-					-- #else
+					-- #elseif BEFORE 4.0.3
+					["description"] = "Can spawn after killing any Pridewing Beasts.",
 					["coords"] = {
 						{ 45.2, 39.2, STONETALON_MOUNTAINS },
 						{ 44.8, 45.6, STONETALON_MOUNTAINS },
