@@ -2964,7 +2964,6 @@ root(ROOTS.Unsorted, {
 			i(180035),	-- Eye of the Scryer
 			i(175243),	-- Faded Grimoire
 			i(178570),	-- Fading Memory Glass
-			i(182611),	-- Fae Flute
 			i(182189),	-- Fae Flute
 			i(180061),	-- Fae Weapon
 			i(180292),	-- Faerie Dust
@@ -3870,12 +3869,10 @@ root(ROOTS.Unsorted, {
 			i(184202),	-- Freeze-Dried Salted Meat
 			i(180226),	-- Game Rulebook
 			i(184163),	-- Gilded Slime
-			i(181487),	-- Glowberry Bead String \\ Glowberry Beads
 			i(180224),	-- Gubbins's Lost Diary
 			i(180220),	-- Historical Treatise
 			i(180227),	-- Horror Novel
 			i(180173),	-- House Grinchin Ring
-			i(181485),	-- Jeweled Amber Leaf
 			i(180221),	-- Joke Book
 			i(180831),	-- Kivarr's Tonic
 			i(184608),	-- Korrath's Grimoire: Aleketh
@@ -3919,7 +3916,6 @@ root(ROOTS.Unsorted, {
 			i(178585),	-- The Forgotten Key
 			i(184611),	-- Tormentor's Notes
 			i(180229),	-- Tubbins's Autobiography
-			i(181490),	-- Wild Godrune \\ Wild Godstone
 			i(184607),	-- Words of the Warden
 		})),
 		tier(SL_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_5 } }, {

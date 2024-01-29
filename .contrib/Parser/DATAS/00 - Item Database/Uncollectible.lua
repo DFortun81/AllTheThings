@@ -634,6 +634,7 @@ i(179020);	-- Garlic Clove
 i(179015);	-- Garlic Spider Legs
 i(173761);	-- Glazed Glowberries
 i(178228);	-- Glittersnap Snowpeas
+i(181487);	-- Glowberry Bead String \\ Glowberry Beads
 i(181491);	-- Gormgris Lamp \\ PH name
 i(178216);	-- Grilled Slumbershrooms
 i(180429);	-- Hand-Formed Fleshbread
@@ -641,6 +642,7 @@ i(178222);	-- Honeyplum Pie
 i(179993);	-- Infused Muck Water
 i(180735);	-- Innert Accolade
 i(173039);	-- Iridescent Amberjack Bait
+i(181485);	-- Jeweled Amber Leaf
 i(179279);	-- Jug of Tuica Moonshine
 i(173038);	-- Lost Sole Bait
 i(178539);	-- Lukewarm Tauralus Milk
@@ -685,6 +687,7 @@ i(179017);	-- Telemea
 i(178550);	-- Tenebrous Truffle
 i(182120);	-- The Lich's Heart
 i(178252);	-- Torchberry Bundle
+i(181490);	-- Wild Godrune \\ Wild Godstone
 i(178225);	-- Wild Hunter's Stew
 i(178218);	-- Wintermelon Brandy
 
