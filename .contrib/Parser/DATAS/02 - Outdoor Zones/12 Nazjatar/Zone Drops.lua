@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 	n(ZONE_DROPS, {
 		--[[ TODO:: where are lockboxes going?
@@ -144,21 +143,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				153313,	-- Vyz'olgo the Mind-Taker
 				152812,	-- Zoatroid
 			},
-			["g"] = {
-				crit(46086, {	-- Abyss Pearl
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
-			},
 		}),
 		i(170184, {	-- Ancient Reefwalker Bark
 			["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 350 reputation, plus 100 experience for each of your faction's bodyguards.",
-			["repeatable"] = true,
-			["questID"] = 56969,
-			["g"] = {
-				crit(46088, {	-- Ancient Reefwalker Bark
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
-			},
 		}),
 		i(170188, {	-- Barnacled Bag of Goods
 			["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
@@ -170,20 +157,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				152412,	-- Kil'karrok Tidal Shaman
 				153263,	-- Kritch
 			},
-			["g"] = {
-				crit(46084, {	-- Barnacled Bag of Goods
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
-			},
 		}),
 		i(170172, {	-- Brightspine Shell
 			["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 				152793,	-- Sea Spireshell
-			},
-			["g"] = {
-				crit(46098, {	-- Brightspine Shell
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
 			},
 		}),
 		i(167012, {	-- Brinestone Pickaxe
@@ -222,9 +199,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			["coord"] = { 38.0, 59.2, NAZJATAR },
 			["g"] = {
 				i(170473),	-- Jingling Sack
-				crit(46071, {	-- Encrusted Coin
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
 			},
 		}),
 		i(170177, {	-- Exposed Fish
@@ -250,11 +224,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				153313,	-- Vyz'olgo the Mind-Taker
 				155914,	-- Zanj'ir Snapdragon
 			},
-			["g"] = {
-				crit(46095, {	-- Exposed Fish
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
-			},
 		}),
 		i(170176, {	-- Fathom Ray Wing
 			["description"] = "Gives 250 reputation and 50 experience for your bodyguard.",
@@ -271,11 +240,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				153314,	-- Aldrantiss
 				153310,	-- Qalina, Spear of Ice
 				153313,	-- Vyz'olgo the Mind-Taker
-			},
-			["g"] = {
-				crit(46100, {	-- Fermented Deviate Fish
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
 			},
 		}),
 		i(170171, {	-- Giant Crab Leg
@@ -309,9 +273,8 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				152544,	-- Voidscale Trenchstalker
 			},
 			["g"] = {
-				crit(46087, {	-- Intact Naga Skeleton
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
+				-- (putting a 'g' prevents this from complaining about being a character unlock due to questID)
+				currency(1721),	-- Prismatic Manapearl
 			},
 		}),
 		i(170190, {	-- Mardivas' Bag of Containing
@@ -326,9 +289,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				151534,	-- Necrofin Scavenger
 			},
 			["g"] = {
-				crit(46082, {	-- Mardivas' Bag of Containing
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
 				i(169332),	-- Strange Mineralized Water
 				i(169334),	-- Strange Oceanic Sediment
 				i(169333),	-- Strange Volcanic Rock
@@ -338,11 +298,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		i(170174, {	-- Muck Slime
 			["crs"] = {	-- may drop from additional mobs, or chests.  check back and add crs as appropriate.
 				152792,	-- Prismatic Spireshell
-			},
-			["g"] = {
-				crit(46097, {	-- Muck Slime
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
 			},
 		}),
 		i(170192, {	-- Mudwrap
@@ -354,31 +309,15 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				150583,	-- Rockweed Shambler
 				151166,	-- Wayward Algan
 			},
-			["g"] = {
-				crit(46080, {	-- Mudwrap
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
-			},
 		}),
 		i(170180, {	-- Razorshell
 			["crs"] = {
 				145970,	-- Razorshell Turtle
 				152383,	-- Snapshell Tortoise
 			},
-			["g"] = {
-				crit(46092, {	-- Razorshell
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
-			},
 		}),
 		i(170183, {	-- Reefwalker Bark
 			["description"] = "Turn in to |cFFFFD700Artisan Itanu|r (Alliance) or |cFFFFD700Finder Palta|r (Horde) for 75 reputation, plus 20 reputation with each of your faction's bodyguards.",
-			["repeatable"] = true,
-			["questID"] = 56970,	-- Reefwalker Bark (while some of the other items have separate Alliane/Horde questIDs, this one is shared)
-			["coords"] = {
-				{ 37.9, 55.6, NAZJATAR },	-- Alliance
-				{ 49.2, 62.0, NAZJATAR },	-- Horde
-			},
 			["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 			--	there are lots of mobs that have "reefwalker" in their name -- maybe those?  there are also elite ones, so possibly more common from them?
 				152558,	-- Barnacled Reefwalker
@@ -391,59 +330,14 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				152562,	-- Sunbleached Reefwalker
 				152560,	-- Whitewave Reefwalker
 			},
-			["g"] = {
-				crit(46089, {	-- Reefwalker Bark
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
-			},
 		}),
-		i(169370, {	-- Scalebrood Hydra (PET!)
-			crit(45566, {	-- Scalebrood Hydra
-				["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-			}),
-		}),
-		i(167077, {	-- Scrying Stone
-			o(322413, {	-- Glimmering Chest
-				-- Symlink in other Zone Drops instead of Sourcing again
-				["sym"] = {{"select","itemID",
-					168161,	-- Molted Shell
-					170189,	-- Blind Eye
-					170081,	-- Abyssal Conch (A)
-					170079,	-- Abyssal Conch (H)
-					169945,	-- Naga Deployment Orders
-					170472,	-- Encrusted Coin
-					170191,	-- Skeletal Hand
-					170177,	-- Exposed Fish
-					170170,	-- Fermented Deviate Fish
-					170186,	-- Abyss Pearl
-					170192,	-- Mudwrap
-					170194,	-- Storm Totem
-					170178,	-- Alpha Fin
-					169478,	-- Benthic Bracers
-					169480,	-- Benthic Chestguard
-					169481,	-- Benthic Cloak
-					169485,	-- Benthic Gauntlets
-					169477,	-- Benthic Girdle
-					169479,	-- Benthic Helm
-					169482,	-- Benthic Leggings
-					169484,	-- Benthic Spaulders
-					169483,	-- Benthic Treads
-				}},
-				["g"] = {
-					i(169351),	-- Sandclaw Nestseeker (PET!)
-				},
-			}),
-		}),
+		i(169370),	-- Scalebrood Hydra (PET!)
+		i(167077),	-- Scrying Stone
 		i(170200, {	-- Seastorm Totem
 			["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 				153314,	-- Aldrantiss
 				153309,	-- Alzana, Arrow of Thunder
 				153310,	-- Qalina, Spear of Ice
-			},
-			["g"] = {
-				crit(46073, {	-- Seastorm Totem
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
 			},
 		}),
 		i(170193, {	-- Sea Totem
@@ -457,11 +351,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				150371,	-- Volatile Tide Surger
 				152673,	-- Wave Surger
 			},
-			["g"] = {
-				crit(46079, {	-- Sea Totem
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
-			},
 		}),
 		i(170191, {	-- Skeletal Hand
 			["description"] = "Turn it in to |cFFFFD700Gloomseeker Yarga|r for a hefty sum of gold.",
@@ -472,11 +361,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				152709,	-- Necrofin Murloc
 				152711,	-- Necrofin Reaver
 				151534,	-- Necrofin Scavenger
-			},
-			["g"] = {
-				crit(46081, {	-- Skeletal Hand
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
 			},
 		}),
 		i(170179, {	-- Snapdragon Scent Gland
@@ -496,20 +380,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				154755,	-- Venomspine Snapdragon
 				155914,	-- Zanj'ir Snapdragon
 			},
-			["g"] = {
-				crit(46093, {	-- Snapdragon Scent Gland
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
-			},
 		}),
 		i(170194, {	-- Storm Totem
 			["crs"] = {	-- may drop from additional mobs, or chests.  check back and add crs as appropriate.
 				152683	-- Raging Tempest
-			},
-			["g"] = {
-				crit(46078, {	-- Storm Totem
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
 			},
 		}),
 		i(170181, {	-- Tidal Guard
@@ -518,11 +392,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				154132,	-- Tidal Cracklemaw
 				153655,	-- Tidal Guardian
 				153654,	-- Voltscale Guardian
-			},
-			["g"] = {
-				crit(46091, {	-- Tidal Guard
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
 			},
 		}),
 		i(170195, {	-- Voidcaster's Supply Bag
@@ -547,20 +416,10 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				153934,	-- Tidemistress Ethendriss
 				153304,	-- Undana Frostbarb
 			},
-			["g"] = {
-				crit(46077, {	-- Voidcaster's Supply Bag
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
-			},
 		}),
 		i(170182, {	-- Voltscale Shield
 			["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
 				153306,	-- Azsh'ari Leviathan
-			},
-			["g"] = {
-				crit(46090, {	-- Voltscale Shield
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
 			},
 		}),
 	--	Toys
@@ -571,11 +430,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				145324,	-- Imperial Defender
 				153080,	-- Voice of the Queen
 				151946,	-- Zanj'ir Bulwark
-			},
-			["g"] = {
-				crit(46070, {	-- Underlight Sealamp
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
 			},
 		}),
 		i(170199, {	-- Zanj'ir Weapon Rack (TOY!)
@@ -606,11 +460,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				153962,	-- Zanj'ir Trapper
 				153741,	-- Zanj'ir Trapper
 				152884,	-- Zanj'ir Trapper
-			},
-			["g"] = {
-				crit(46074, {	-- Zanj'ir Weapon Rack
-					["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-				}),
 			},
 		}),
 	--	Recipes

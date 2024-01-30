@@ -227,6 +227,30 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				i(169903),	-- Nazjatar Survival Pack
 			},
 		}),
+		q(56969, {	-- Ancient Reefwalker Bark
+			["repeatable"] = true,
+			["cost"] = {
+				{"i",170184,1},	-- Ancient Reefwalker Bark
+			},
+			["aqd"] = {
+				["providers"] = {
+					{ "n", 153509 },	-- Artisan Okata (A)
+				},
+				["coords"] = {
+					{ 37.9, 55.7, NAZJATAR },	-- Alliance
+				},
+				["maxReputation"] = {FACTION_WAVEBLADE_ANKOAN,EXALTED},
+			},
+			["hqd"] = {
+				["providers"] = {
+					{ "n", 153512 },	-- Finder Pruc (H)
+				},
+				["coords"] = {
+					{ 49.2, 62.2, NAZJATAR },	-- Horde
+				},
+				["maxReputation"] = {FACTION_THE_UNSHACKLED,EXALTED},
+			},
+		}),
 		q(56346, {	-- Ancient Technology
 			["coord"] = { 38.1, 36.9, NAZJATAR },
 			["races"] = ALLIANCE_ONLY,
@@ -1369,6 +1393,30 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 				i(169922),	-- Vim's Gift of Appreciation
 			},
 		}),
+		q(56970, {	-- Reefwalker Bark
+			["repeatable"] = true,
+			["cost"] = {
+				{"i",170183,1},	-- Reefwalker Bark
+			},
+			["aqd"] = {
+				["providers"] = {
+					{ "n", 153509 },	-- Artisan Okata (A)
+				},
+				["coords"] = {
+					{ 37.9, 55.7, NAZJATAR },	-- Alliance
+				},
+				["maxReputation"] = {FACTION_WAVEBLADE_ANKOAN,EXALTED},
+			},
+			["hqd"] = {
+				["providers"] = {
+					{ "n", 153512 },	-- Finder Pruc (H)
+				},
+				["coords"] = {
+					{ 49.2, 62.2, NAZJATAR },	-- Horde
+				},
+				["maxReputation"] = {FACTION_THE_UNSHACKLED,EXALTED},
+			},
+		}),
 		q(56788, {	-- Reclaimed Treasure
 			["sourceQuests"] = { 56156 },	-- A Tempered Blade
 			["description"] = "Offered when |cFFFFD700Bladesman Inowari|r reaches Rank 5.",
@@ -2483,11 +2531,13 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 		q(55872, {	-- Where They Hide
 			["sourceQuest"] = 55500,	-- Save a Friend
 			["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
-			["provider"] = {"o",326142},	-- Bounty Board
+			["providers"] = {
+				{"o",326142},	-- Bounty Board
+				{"n",153364},	-- Scout Marlin
+			},
 			["isDaily"] = true,
 			["coord"] = { 45.6, 58.6, NAZJATAR },
 			["races"] = HORDE_ONLY,
-			["provider"] = { "n", 153364 },	-- Scout Marlin
 		}),
 		q(56217, {	-- Wild Tame
 			["providers"] = {
