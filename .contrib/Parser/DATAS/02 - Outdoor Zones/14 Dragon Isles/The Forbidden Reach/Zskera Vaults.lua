@@ -302,6 +302,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							},
 						}),
 						o(398770, {	-- Box of Rocks
+							["coord"] = { 31.0, 56.0, THE_FORBIDDEN_REACH },
 							["questID"] = 75484,
 							["g"] = {
 								i(199216),	-- A Box of Rocks
@@ -534,6 +535,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["questID"] = 75217,
 							["g"] = {
 								i(169673),	-- Blue Paint Filled Bladder
+								i(169675),	-- Orange Paint Filled Bladder
 							},
 						}),
 						o(393283, {	-- Balloon Box
@@ -823,12 +825,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 								i(204443),	-- Blacksteel Hammer
 							},
 						}),
-						o(390559, {	-- Box of Rocks
-							["questID"] = 75152,
-							["g"] = {
-								i(199216),	-- A Box of Rocks
-							},
-						}),
 						o(392570, {	-- Chain-Bound Primordial Cache
 							["coord"] = { 28.2, 56.6, THE_FORBIDDEN_REACH },
 							["questID"] = 75176,
@@ -996,6 +992,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							},
 						}),
 						o(390559, {	-- Box of Rocks
+							["coord"] = { 28.2, 57.6, THE_FORBIDDEN_REACH },
 							["questID"] = 75152,
 							["g"] = {
 								i(199216),	-- A Box of Rocks

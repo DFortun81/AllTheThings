@@ -519,6 +519,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				n(186859, {	-- Worldcarver A'tir
 					["coord"] = { 30.0, 55.6, THE_WAKING_SHORES },
+					["crs"] = { 197395 },	-- Wurmling Bones
 					["cost"] = {{"i",191211,3}},	-- 3x Wurmling Bones
 					["questID"] = 74090,
 					["isDaily"] = true,

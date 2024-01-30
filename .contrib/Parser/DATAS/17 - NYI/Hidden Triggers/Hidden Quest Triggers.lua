@@ -1183,10 +1183,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(56548),	-- Triggers after completing the Glowing Arcane Trunk minigame in Highborne Estates (80.5, 31.9)
 		q(55604),	-- Triggers after unlocking or making a purchase from Mrrl (Once per day)
 		q(56901),	-- Triggers after buying Mrrl's secret trader stock (requires cloak with special stock trait). Received 170162 - waterlogged toolbox first
-		q(56974),	-- Triggers when receiving "Mardivas's Handemade Handbag" (itemID 170489) from a Glowing Arcane Trunk
-		q(56975),	-- Triggers when receiving "Mardivas's Rentention Dimension Invention (itemID 170475) from a Glowing Arcane Trunk
-		q(56976),	-- Triggers when receiving "Mardivas's Magnificent Desalinating Pouch (itemID 170068) from a Glowing Arcane Trunk
-		q(56977),	-- Triggers when receiving "Mardivas's Universally Lauded Tote" (itemID 170477) from a Glowing Arcane Trunk
 		q(57191),	-- Glimmering Chest — Prismatic Manapearls
 		q(57192),	-- Glimmering Chest — Prismatic Manapearls
 		q(55427),	-- Ravenous Slime fed (55.1, 48.8)
