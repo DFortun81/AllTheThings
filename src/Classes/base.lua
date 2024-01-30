@@ -118,8 +118,8 @@ local DefaultFields = {
 	["repeatable"] = function(t)
 		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly;
 	end,
-	["costProgress"] = returnZero,
     ["costTotal"] = returnZero,
+    ["upgradeTotal"] = returnZero,
 	["progress"] = returnZero,
     ["total"] = returnZero,
 };

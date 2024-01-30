@@ -89,29 +89,50 @@ local function CacheFilters()
 	GroupFilter = app.GroupFilter;
 	CheckCanBeCollected = app.MODE_DEBUG_OR_ACCOUNT and CanBeAccountCollected or CanBeCollected;
 end
+local function SetCostTotals(costs, isCost, refresh)
+	-- Iterate on the search result of the entry key
+	local parent, blocked
+	for _,c in ipairs(costs) do
+		-- Mark the group with a costTotal
+		-- app.PrintDebug("Force Cost",c.hash,isCost)
+		c._SettingsRefresh = refresh;
+		if isCost then
+			parent = c.parent
+			blocked = parent and (parent.saved or parent.locked)
+			if not blocked then
+				c.isCost = isCost;
+				c._CheckCollectible = isCost;
+			else
+				c.isCost = nil;
+				c._CheckCollectible = nil;
+				-- app.PrintDebug("Skipped cost under locked/saved parent"
+				-- 	,app:Linkify(c.hash, app.Colors.ChatLink, "search:"..c.key..":"..c[c.key])
+				-- 	,app:Linkify(parent.hash, app.Colors.ChatLink, "search:"..parent.key..":"..parent[parent.key]))
+			end
+		else
+			c.isCost = nil;
+			c._CheckCollectible = nil;
+		end
+		-- regardless of the Cost state, make sure to update this specific cost group for visibility
+		DGU(c)
+	end
+end
 local function UpdateCostsByItemID(itemID, refresh, refs)
 	local costs = GetRawField("itemID", itemID);
 	if costs then
-		local costTotal, ref;
+		local isCost
 		refs = refs or GetRawField("itemIDAsCost", itemID)
 		if refs then
+			local ref
 			for i=1,#refs do
 				ref = refs[i];
 				if CheckCollectible(ref) then
-					costTotal = 1;
+					isCost = true;
 					break;
 				end
 			end
 		end
-		local isCost = costTotal and true or nil;
-		-- Iterate on the search result of the entry key
-		for _,c in ipairs(costs) do
-			-- Mark the group with a costTotal of 1
-			-- app.PrintDebug("Force Cost",c.hash,costTotal)
-			c.costTotal = costTotal;
-			c._CheckCollectible = isCost;
-			c._SettingsRefresh = refresh;
-		end
+		SetCostTotals(costs, isCost, refresh)
 	-- else app.PrintDebug("Item as Cost is not Sourced!",itemID)
 	end
 	return costs;
@@ -119,27 +140,20 @@ end
 local function UpdateCostsByCurrencyID(currencyID, refresh, refs)
 	local costs = GetRawField("currencyID", currencyID);
 	if costs then
-		local costTotal, ref;
+		local isCost
 		refs = refs or GetRawField("currencyIDAsCost", currencyID)
 		if refs then
+			local ref
 			for i=1,#refs do
 				ref = refs[i];
 				if CheckCollectible(ref) then
-					costTotal = 1;
+					isCost = true;
 					break;
 				end
 			end
 		end
-		local isCost = costTotal and true or nil;
-		-- Iterate on the search result of the entry key
-		for _,c in ipairs(costs) do
-			-- Mark the group with a costTotal of 1
-			-- app.PrintDebug("Force Cost",c.hash,costTotal)
-			c.costTotal = costTotal;
-			c._CheckCollectible = isCost;
-			c._SettingsRefresh = refresh;
-		end
-	-- else app.PrintDebug("Currency as Cost is not Sourced!",currencyID)
+		SetCostTotals(costs, isCost, refresh)
+	-- else app.PrintDebug(key,"as Cost is not Sourced!",id)
 	end
 	return costs;
 end
@@ -158,8 +172,10 @@ local function UpdateCosts()
 	UpdateRunner.Reset()
 	UpdateRunner.SetPerFrame(50)
 
-	-- UpdateRunner.OnEnd(CostCalcComplete)
-	-- UpdateRunner.Run(CostCalcStart)
+	if app.Debugging then
+		UpdateRunner.OnEnd(CostCalcComplete)
+		UpdateRunner.Run(CostCalcStart)
+	end
 	-- app.PrintDebug("UpdateCosts",refresh)
 
 	-- app.Debugging = nil
@@ -191,15 +207,16 @@ local function UpdateCosts()
 	-- app.PrintDebugPrior("UpdateCosts:Done",app._SettingsRefresh)
 end
 
+-- Performs a recursive update sequence and update of cost against the referenced 'cost'/'providers' table
 local function UpdateCostGroup(c)
-	CacheFilters();
-	-- app.PrintDebug("UpdateCostGroup",c.hash,app._SettingsRefresh)
+	-- app.PrintDebug("UCG",c.hash,app._SettingsRefresh)
 	local refresh = app._SettingsRefresh;
+	local groups
+	local costs, providers = c.cost, c.providers
 	-- update cost
-	local costs = c.cost;
 	if costs and type(costs) == "table" then
 		-- app.PrintDebug("UCG:cost",#costs)
-		local cost, type, id, groups;
+		local cost, type, id
 		for i=1,#costs do
 			cost = costs[i];
 			type, id = cost[1], cost[2];
@@ -210,23 +227,11 @@ local function UpdateCostGroup(c)
 				groups = ArrayAppend(groups, UpdateCostsByCurrencyID(id, refresh))
 			end
 		end
-		if groups then
-			-- app.PrintDebug("UCG:groups",#groups)
-			local c
-			for i=1,#groups do
-				c = groups[i]
-				-- make sure this cost is DGU
-				UpdateRunner.Run(DGU, c);
-				-- but also it might have other costs which need to be checked...
-				UpdateRunner.Run(UpdateCostGroup, c);
-			end
-		end
 	end
-	-- update provider.i
-	local providers = c.providers;
+	-- update providers
 	if providers and type(providers) == "table" then
 		-- app.PrintDebug("UCG:providers",#providers)
-		local prov, type, id, groups;
+		local prov, type, id
 		for i=1,#providers do
 			prov = providers[i];
 			type, id = prov[1], prov[2];
@@ -237,21 +242,21 @@ local function UpdateCostGroup(c)
 				groups = ArrayAppend(groups, UpdateCostsByCurrencyID(id, refresh))
 			end
 		end
-		if groups then
-			-- app.PrintDebug("UCG:groups",#groups)
-			local p
-			for i=1,#groups do
-				p = groups[i]
-				-- make sure this prov is DGU
-				UpdateRunner.Run(DGU, p);
-				-- but also it might have other costs which need to be checked...
-				UpdateRunner.Run(UpdateCostGroup, p);
-			end
+	end
+	if groups then
+		-- app.PrintDebug("UCG:groups",#groups)
+		local p
+		for i=1,#groups do
+			p = groups[i]
+			UpdateRunner.Run(UpdateCostGroup, p);
 		end
 	end
 	-- app.PrintDebug("UCG:Done",c.hash,app._SettingsRefresh)
 end
-app.UpdateCostGroup = UpdateCostGroup
+app.UpdateCostGroup = function(group)
+	CacheFilters()
+	UpdateCostGroup(group)
+end
 
 -- Returns whether 't' should be considered collectible based on the set of costCollectibles already assigned to this 't'
 app.CollectibleAsCost = function(t)
@@ -261,33 +266,29 @@ app.CollectibleAsCost = function(t)
 		t.collectibleAsCost = false;
 		return;
 	end
-	local settingsChange = t._SettingsRefresh;
+	local lastSettings, appSettings = t._SettingsRefresh, app._SettingsRefresh
 	-- previously checked without Settings changed
-	if settingsChange then
-		if app._SettingsRefresh == settingsChange then
-			-- app.PrintDebug("CAC:Cached",t.hash,t._CheckCollectible,settingsChange)
-			return t._CheckCollectible;
-		end
+	if lastSettings and lastSettings == appSettings then
+		-- app.PrintDebug("CAC:Cached",t.hash,t._CheckCollectible,settingsChange)
+		return t._CheckCollectible;
 	end
 	-- app.PrintDebug("CAC:Check",t.hash)
-	t._SettingsRefresh = app._SettingsRefresh;
+	t._SettingsRefresh = appSettings;
 	t._CheckCollectible = nil;
 	-- mark this group as not collectible by cost while it is processing, in case it has sub-content which can be used to obtain this 't'
 	t.collectibleAsCost = false;
 	-- check the collectibles if any are considered collectible currently
 	CacheFilters();
-	local costNeeded;
 	for _,ref in ipairs(collectibles) do
 		-- Use the common collectibility check logic
-		costNeeded = CheckCollectible(ref);
-		if costNeeded then
+		if CheckCollectible(ref) then
 			t._CheckCollectible = true;
 			t.collectibleAsCost = nil;
 			-- app.PrintDebug("CAC:Set",t.hash,"from",ref.hash,"@",t._SettingsRefresh)
 			return true;
 		end
 	end
-	-- app.PrintDebug("CollectibleAsCost:nil",t.hash)
+	-- app.PrintDebug("CAC:nil",t.hash)
 	t.collectibleAsCost = nil;
 end
 

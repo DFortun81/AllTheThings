@@ -957,19 +957,19 @@ local function GetTrackableIcon(data, iconOnly, forSaved)
 	end
 end
 local function GetCostIconForRow(data, iconOnly)
-	-- cost only in nested groups, or if itself is a cost
-	if (not data.window and (data.filledCost or data.costNested)) or (data.costTotal or 0) > 0 or data.collectibleAsCost then
+	-- cost only for filled groups, or if itself is a cost
+	if data.filledCost or (data.progress == data.total and ((data.costTotal or 0) > 0)) then
 		return iconOnly and L["COST_ICON"] or L["COST_TEXT"];
 	end
 end
 local function GetCostIconForTooltip(data, iconOnly)
 	-- cost only if itself is a cost
-	if (data.costTotal or 0) > 0 or data.collectibleAsCost then
+	if data.filledCost or data.collectibleAsCost then
 		return iconOnly and L["COST_ICON"] or L["COST_TEXT"];
 	end
 end
 local function GetUpgradeIconForRow(data, iconOnly)
-	-- upgrade only in nested groups, or if itself has an upgrade
+	-- upgrade only for filled groups, or if itself has an upgrade
 	if (not data.window and (data.filledUpgrade or data.hasUpgradeNested)) or data.collectibleAsUpgrade then
 		return iconOnly and L["UPGRADE_ICON"] or L["UPGRADE_TEXT"];
 	end
@@ -1199,9 +1199,7 @@ app.MergeSkipFields = {
 	["rawlink"] = true,
 	["sourceIgnored"] = true,
 	["costTotal"] = true,
-	["costProgress"] = true,
 	["iconPath"] = true,
-	["costNested"] = true,
 	["hasUpgradeNested"] = true,
 	-- fields added to a group from GetCachedSearchResults
 	["tooltipInfo"] = true,
@@ -4585,7 +4583,7 @@ local function DeterminePurchaseGroups(group, FillData)
 			if o.hash ~= groupHash then
 				-- app.PrintDebug("Purchase @",groupHash,"=>",o.hash)
 				clone = CreateObject(o);
-				tinsert(groups, clone);
+				groups[#groups + 1] = clone
 			end
 		end
 		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-final",groups and #groups);
@@ -10725,13 +10723,9 @@ local function SetGroupVisibility(parent, group)
 		visible = group.progress < group.total or GroupVisibilityFilter(group);
 	end
 	-- Cost
-	if not visible and (group.costNested or (group.costTotal or 0) > 0 or group.collectibleAsCost) then
+	if not visible and ((group.costTotal or 0) > 0) then
 		visible = not group.saved;
-		-- Only persist nested costs from visible groups
-		if parent and visible then
-			parent.costNested = true;
-		end
-		-- app.PrintDebug("SGV.cost",group.hash,visible,group.costNested)
+		-- app.PrintDebug("SGV.cost",group.hash,visible,group.costTotal)
 	end
 	-- Upgrade
 	if not visible and (group.hasUpgradeNested or group.collectibleAsUpgrade) then
@@ -10776,13 +10770,9 @@ local function SetThingVisibility(parent, group)
 		-- if debug then print("total",visible) end
 	end
 	-- Cost
-	if not visible and (group.costNested or (group.costTotal or 0) > 0 or group.collectibleAsCost) then
+	if not visible and ((group.costTotal or 0) > 0) then
 		visible = not group.saved;
-		-- Only persist nested costs from visible groups
-		if parent and visible then
-			parent.costNested = true;
-		end
-		-- if debug then print("STV.cost",group.hash,visible,group.costNested) end
+		-- app.PrintDebug("STV.cost",group.hash,visible,group.costTotal)
 	end
 	-- Upgrade
 	if not visible and (group.hasUpgradeNested or group.collectibleAsUpgrade) then
@@ -10812,7 +10802,6 @@ local function SetThingVisibility(parent, group)
 end
 local function UpdateGroup(group, parent)
 	group.visible = nil;
-	group.costNested = nil;
 	group.hasUpgradeNested = nil;
 
 	-- debug = group.itemID and group.factionID == 2045
@@ -10850,6 +10839,7 @@ local function UpdateGroup(group, parent)
 		-- if debug then print("UG.prog",progress,total,group.collectible) end
 		group.progress = progress;
 		group.total = total;
+		group.costTotal = group.isCost and 1 or 0
 
 		-- Check if this is a group
 		local g = group.g;
@@ -10885,6 +10875,8 @@ local function UpdateGroup(group, parent)
 		if parent and not group.sourceIgnored then
 			parent.total = (parent.total or 0) + group.total;
 			parent.progress = (parent.progress or 0) + group.progress;
+			parent.costTotal = (parent.costTotal or 0) + (group.costTotal or 0);
+			parent.upgradeTotal = (parent.upgradeTotal or 0) + (group.upgradeTotal or 0);
 		-- else
 			-- print("Ignoring progress/total",group.progress,"/",group.total,"for group",group.text)
 		end
@@ -10913,7 +10905,7 @@ UpdateGroups = function(parent, g)
 end
 app.UpdateGroups = UpdateGroups;
 -- Adjusts the progress/total of the group's parent chain, and refreshes visibility based on the new values
-local function AdjustParentProgress(group, progChange, totalChange)
+local function AdjustParentProgress(group, progChange, totalChange, costChange, upgradeChange)
 	-- rawget, .parent will default to sourceParent in some cases
 	local parent = group and not group.sourceIgnored and rawget(group, "parent");
 	if parent then
@@ -10922,13 +10914,16 @@ local function AdjustParentProgress(group, progChange, totalChange)
 		-- app.PrintDebug("CHG:",progChange,totalChange)
 		parent.total = (parent.total or 0) + totalChange;
 		parent.progress = (parent.progress or 0) + progChange;
+		parent.costTotal = (parent.costTotal or 0) + costChange;
+		parent.upgradeTotal = (parent.upgradeTotal or 0) + upgradeChange;
+		-- Assign cost cache
 		-- app.PrintDebug("END:",parent.progress,parent.total)
 		-- verify visibility of the group, always a 'group' since it is already a parent of another group, as long as it's not the root window data
 		if not parent.window then
 			parent.visible = nil
 			SetGroupVisibility(rawget(parent, "parent"), parent);
 		end
-		AdjustParentProgress(parent, progChange, totalChange);
+		AdjustParentProgress(parent, progChange, totalChange, costChange, upgradeChange);
 	end
 end
 -- For directly applying the full Update operation for the top-level data group within a window
@@ -10936,6 +10931,8 @@ local function TopLevelUpdateGroup(group)
 	group.TLUG = GetTimePreciseSec();
 	group.total = nil;
 	group.progress = nil;
+	group.costTotal = nil;
+	group.upgradeTotal = nil;
 	CacheFilterFunctions();
 	-- app.PrintDebug("TLUG",group.hash)
 	-- Root data in Windows should ALWAYS be visible
@@ -10976,7 +10973,8 @@ local function DirectGroupUpdate(group, got)
 		-- app.PrintDebug("DGU:Filtered",group.hash,group.parent and group.parent.text)
 		return;
 	end
-	local prevTotal, prevProg = group.total or 0, group.progress or 0;
+	local prevTotal, prevProg, prevCost, prevUpgrade
+		= group.total or 0, group.progress or 0, group.costTotal or 0, group.upgradeTotal or 0
 	TopLevelUpdateGroup(group);
 	-- Set proper visibility for the updated group
 	local parent = rawget(group, "parent");
@@ -10985,10 +10983,11 @@ local function DirectGroupUpdate(group, got)
 	else
 		SetThingVisibility(parent, group);
 	end
-	local progChange, totalChange = group.progress - prevProg, group.total - prevTotal;
+	local progChange, totalChange, costChange, upgradeChange
+		= group.progress - prevProg, group.total - prevTotal, group.costTotal - prevCost, group.upgradeTotal - prevUpgrade
 	-- Something to change
-	if progChange ~= 0 or totalChange ~= 0 then
-		AdjustParentProgress(group, progChange, totalChange);
+	if progChange ~= 0 or totalChange ~= 0 or costChange ~= 0 or upgradeChange ~= 0 then
+		AdjustParentProgress(group, progChange, totalChange, costChange, upgradeChange);
 	end
 	-- After completing the Direct Update, setup a soft-update on the affected Window, if any
 	local window = app.GetRelativeRawWithField(group, "window");
@@ -14831,7 +14830,7 @@ local BaseFilterHeaderClone = app.BaseObjectFields({
 	["collectibleAsCost"] = app.EmptyFunction,
 	["costCollectibles"] = app.EmptyFunction,
 	["hasUpgradeNested"] = app.EmptyFunction,
-	["costNested"] = app.EmptyFunction,
+	["costTotal"] = app.EmptyFunction,
 	["g"] = app.EmptyFunction,
 	["visible"] = app.EmptyFunction,
 	-- ["back"] = function(t)
@@ -18429,7 +18428,7 @@ app.LoadDebugger = function()
 				TLUG = 1,
 				locked = 1,
 				collectibleAsCost = 1,
-				costNested = 1,
+				costTotal = 1,
 				icon = 1,
 				_OnUpdate = 1,
 				_SettingsRefresh = 1,

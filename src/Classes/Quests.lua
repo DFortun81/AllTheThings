@@ -1939,10 +1939,6 @@ if app.IsRetail then
 						if item.itemID then
 							-- search will either match through bonusID, modID, or itemID in that priority
 							local search = app.SearchForLink(link);
-							-- block the group from being collectible as a cost if the option is not enabled for various 'currency' items
-							if skipCollectibleCurrencies and WorldQuestCurrencyItems[item.itemID] then
-								item.collectibleAsCost = false;
-							end
 							if search then
 								-- find the specific item which the link represents (not sure all of this is necessary with improved search)
 								local exactItemID = app.GetGroupItemIDWithModID(item);
@@ -1969,6 +1965,11 @@ if app.IsRetail then
 
 							-- don't let cached groups pollute potentially inaccurate raw Data
 							item.link = nil;
+							-- block the group from being collectible as a cost if the option is not enabled for various 'currency' items
+							if skipCollectibleCurrencies and WorldQuestCurrencyItems[item.itemID] then
+								item.skipFill = true
+								item.isCost = false
+							end
 							app.NestObject(questObject, item, true);
 						end
 					end
@@ -1984,11 +1985,9 @@ if app.IsRetail then
 					-- app.PrintDebug("TryPopulateQuestRewards_currencies:found",questID,currencyID,questObject.missingCurr)
 
 					currencyID = tonumber(currencyID);
+					-- TODO: can clean this up now that SearchForObject exists... probably only needed this because
+					-- SearchForField returns random stuff linked to the currencyID
 					local item = app.CreateCurrencyClass(currencyID);
-					-- block the group from being collectible as a cost if the option is not enabled
-					if skipCollectibleCurrencies then
-						item.collectibleAsCost = false;
-					end
 					cachedCurrency = SearchForField("currencyID", currencyID);
 					for _,data in ipairs(cachedCurrency) do
 						-- cache record is the item itself
@@ -1998,6 +1997,11 @@ if app.IsRetail then
 						else
 							app.NestObject(item, data);	-- no clone since item is cloned later
 						end
+					end
+					-- block the group from being collectible as a cost if the option is not enabled
+					if skipCollectibleCurrencies then
+						item.skipFill = true
+						item.isCost = false
 					end
 					app.NestObject(questObject, item, true);
 				end
