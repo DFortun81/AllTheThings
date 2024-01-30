@@ -825,6 +825,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 								i(204443),	-- Blacksteel Hammer
 							},
 						}),
+						o(390559, {	-- Box of Rocks
+							i(199216),	-- A Box of Rocks
+						}),
 						o(392570, {	-- Chain-Bound Primordial Cache
 							["coord"] = { 28.2, 56.6, THE_FORBIDDEN_REACH },
 							["questID"] = 75176,
