@@ -1128,50 +1128,24 @@ root(ROOTS.Unsorted, {
 			i(212336),	-- The Tavern's Tabard
 		})),
 		tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
-			i(211927),	-- Tattered DreamleafS
+			i(211927),	-- Tattered Dreamleaf
 			i(211260),	-- Crimson Gladiator's Spear
 			i(208878),	-- Adventurer's Footlocker
 			--
-			i(206448),	-- Fyr'alath the Dreamrender
-			i(208578),	-- Concentrated Sophic Vellum
-			i(208581),	-- Radiant Fleck of Ash
-			i(208592),	-- Rune of Shadowbinding
 			i(208597),	-- Eadweard's Notes
-			i(208781),	-- Symbiotic Glowspore Grip
 			i(208782),	-- Symbiotic Glowspore Grip
 			i(208826),	-- Letter from Valunei
 			i(208839),	-- Rune of Adaptive Binding
 			i(208840),	-- Concentrated Sophic Vellum
-			i(208846),	-- Restored Dreamleaf
 			i(208887),	-- Erdan's Notes
 			i(209348),	-- Lydiara's Notes
-			i(209349),	-- Lydiara's Notes on Rune Reagents
 			i(209350),	-- Shalasar's Notes on Sophic Magics
-			i(209351),	-- Erden's Dreamleaf Grip
-			i(209352),	-- Prototype Binding Rune
-			i(209996),	-- Tethercoil Rune
-			i(209998),	-- Lydiara's Binding Rune
-			i(209999),	-- Lydiara's Rune of Shadowbinding
-			i(210001),	-- Prototype Order Vellum
-			i(210002),	-- Ashen Dowsing Rod
-			i(210003),	-- Shalasar's Sophic Vellum
-			i(210009),	-- Prototype Dreamleaf Grip
-			i(210010),	-- Erden's Notes on Symbiotic Spores
-			i(210011),	-- Shalasar's Notes on Sophic Magic
-			i(210012),	-- Erden's Symbiotic Glowspore Grip
 			i(210027),	-- Extracted Ashen Dust
 			i(210028),	-- Extracted Ashen Dust
-			i(210048),	-- Shalasar's Sophic Vellum
-			i(210199),	-- Tattered Dreamleaf
-			i(210207),	-- Empowered Restorative Symbiote
 			i(210223),	-- Unstable Element
 			i(210240),	-- Stabilized Element
 			i(210255),	-- Alydrus' Research Notes
 			i(210321),	-- The Reforging of the Tyr's Guard
-			i(210918),	-- Adaptive Cooling Salve
-			i(207728),	-- Fyr'alath the Dreamrender
-			i(208576),	-- Thriving Restoration Mote
-			i(210222),	-- Resolved Element
 			i(190875),	-- Chilled Touch of the Condemned
 			i(190925),	-- Buttercup
 			i(210780),	-- Lesser Ember of Fyr'alath
@@ -1193,12 +1167,6 @@ root(ROOTS.Unsorted, {
 				i(209866),	-- Thornspeaker Ritual Knife
 				i(209867),	-- Thornspeaker Ritual Knife
 				i(209868),	-- Thornspeaker Ritual Knife
-			}),
-			filter(QUEST_ITEMS, {
-				------ Fyralath Questline ------
-				i(211396),	-- Attuned Glowspore Grip
-				i(211397),	-- Attuned Rune of Shadowbinding
-				i(211398),	-- Attuned Sophic Vellum
 			}),
 			n(QUESTS, {
 				-- 10.2.0.51239

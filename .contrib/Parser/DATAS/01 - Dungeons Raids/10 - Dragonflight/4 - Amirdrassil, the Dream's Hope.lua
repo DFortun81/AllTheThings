@@ -293,172 +293,214 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 				n(QUESTS, bubbleDownSelf({
 					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 				}, {
-					--q(77093, {	-- The Shadowflame Axe
-					--	["provider"] = { "i", 207728 },	-- Fyr'alath the Dreamrender
-					--}),
-					--q(77191, {	-- Handling It
-					--	["sourceQuests"] = { 77093 },	-- The Shadowflame Axe
-					--	["provider"] = { "n", xx },	-- xx
-					--	["coord"] = { x, y, map },
-					--	["cost"] = {
-					--		{ "i", 208577, 1 },	-- 1x Symbiotic Glowspore Grip
-					--		{ "i", 208592, 1 },	-- 1x Rune of Shadowbinding
-					--		{ "i", 208578, 1 },	-- 1x Concentrated Sophic Vellum
-					--	},
-					--	["g"] = {
-					--		i(208781),	-- Symbiotic Glowspore Grip (QI!)
-					--	},
-					--}),
-					--
-					--q(77791,	{	-- Handling It: Symbiotic Glowspore Grip
-					--	["sourceQuests"] = { 77191 },	-- Handling It
-					--	["provider"] = { "i", 208781 },	-- Symbiotic Glowspore Grip
-					--	["coord"] = { x, y, OHNAHRAN_PLAINS },
-					--	["g"] = {
-					--		i(),	--
-					--	},
-					--}),
-					--q(77886,	{	-- Handling It: Shadowed Dreamleaf
-					--	["sourceQuests"] = { 77791 },	-- Handling It: Symbiotic Glowspore Grip
-					--	["provider"] = { "n", xx },	-- Erden
-					--	["coord"] = { x, y, OHNAHRAN_PLAINS },
-					--	["g"] = {
-					--		i(210009),	-- Prototype Dreamleaf Grip (QI!)
-					--		i(208593),	-- Shadowed Dreamleaf (QI!)
-					--		i(210199),	-- Tattered Dreamleaf (QI!)
-					--	},
-					--}),
-					--q(77838,	{	-- Tattered Dreamleaf
-					--	["sourceQuests"] = { 77886 },	-- Handling It: Shadowed Dreamleaf
-					--	["provider"] = { "i", 210199 },	-- Tattered Dreamleaf
-					--	["g"] = {
-					--		i(208587),	-- Budding Restoration Mote (QI!)
-					--		i(208588),	-- Burgeoning Restoration Mote (QI!)
-					--		i(208846),	-- Restored Dreamleaf (QI!)
-					--		i(208576),	-- Thriving Restoration Mote (QI!)
-					--	},
-					--}),
-					--}),
-					--q(78159,	{	-- Handling It: Glowspore Grip
-					--	["sourceQuests"] = { 77886 },	-- Handling It: Shadowed Dreamleaf
-					--	["provider"] = { "n", xx },	-- xx
-					--	["g"] = {
-					--		i(209351, {	-- Erden's Dreamleaf Grip (QI!)
-					--			["cost"] = {},
-					--		}),
-					--		i(210010, {	-- Erden's Notes on Symbiotic Spores
-					--				r(422330, {	-- Erden's Glowspore Grip
-					--					["u"] = TRAINING,
-					--				}),
-					--		}),
-					--	},
-					--}),
-					--q(78160,	{	-- To the Test: Symbiotic Glowspore Grip
-					--	["sourceQuests"] = { 78159 },	-- Handling It: Glowspore Grip
-					--	["provider"] = { "n", xx },	-- xx
-					--	["g"] = {
-					--		i(210918),	-- Adaptive Cooling Salve (QI!)
-					--		i(211396, {	-- Attuned Glowspore Grip (QI!)
-					--			i(208577),	-- Symbiotic Glowspore Grip (QI!) / in case if this item is required
-					--		}),
-					--		i(210207),	-- Empowered Restorative Symbiote (QI!)
-					--		i(210012),	-- Erden's Symbiotic Glowspore Grip (QI!)
-					--}),
-					--
-					--q(77835,	{	-- Handling It: Rune of Shadowbinding
-					--	["sourceQuests"] = { 77191 },	-- Handling It
-					--	["provider"] = { "n", xx },	-- Lydiara Whisperfeather
-					--	["coord"] = { x, y, THE_AZURE_SPAN },
-					--}),
-					--q(78003,	{	-- Handling It: Taut Tethercoil
-					--	["sourceQuests"] = { 77835 },	-- Handling It: Rune of Shadowbinding
-					--	["provider"] = { "n", xx },	-- Lydiara Whisperfeather
-					--	["coord"] = { x, y, THE_AZURE_SPAN },
-					--	["g"] = {
-					--		i(209352),	-- Prototype Binding Rune (QI!)
-					--		i(208595),	-- Taut Tethercoil (QI!)
-					--		i(209996),	-- Tethercoil Rune (QI!)
-					--	},
-					--}),
-					--q(78153,	{	-- Handling It: Prototype Rune
-					--	["sourceQuests"] = { 78003 },	-- Handling It: Taut Tethercoil
-					--	["provider"] = { "n", xx },	-- xx
-					--	["g"] = {
-					--		i(209998, {	-- Lydiara's Binding Rune (QI!)
-					--			["cost"] = {},
-					--		}),
-					--		i(209349, {	-- Lydiara's Notes on Rune Reagents
-					--				r(xx, {	-- (it is spell 422327, not sure what actual recipeID)
-					--				["requireSkill"] = INSCRIPTION,
-					--				["u"] = TRAINING,
-					--		}),
-					--	},
-					--}),
-					--q(78160,	{	-- To the Test: Rune of Shadowbinding
-					--	["sourceQuests"] = { 78153 },	-- Handling It: Prototype Rune
-					--	["provider"] = { "n", xx },	-- xx
-					--	["g"] = {
-					--		i(209999),	-- Lydiara's Rune of Shadowbinding (QI!)
-					--		i(211397, {	-- Attuned Rune of Shadowbinding (QI!)
-					--			i(208592),	-- Rune of Shadowbinding (QI!) / in case if this item is required
-					--		}),
-					--}),
-					--
-					--q(77833,	{	-- Handling It: Concentrated Sophic Vellum
-					--	["sourceQuests"] = { 77191 },	-- Handling It
-					--	["provider"] = { "n", xx },	-- Shalasar Glimmerdusk
-					--	["coord"] = { x, y, OHNAHRAN_PLAINS },
-					--}),
-					--q(78155,	{	-- Handling It: Radiant Fleck of Ash
-					--	["sourceQuests"] = { 77833 },	-- Handling It: Concentrated Sophic Vellum
-					--	["provider"] = { "n", xx },	-- Shalasar Glimmerdusk
-					--	["coord"] = { x, y, OHNAHRAN_PLAINS },
-					--	["g"] = {
-					--		i(210002),	-- Ashen Dowsing Rod (QI!)
-					--		i(210001),	-- Prototype Order Vellum (QI!)
-					--		i(208581),	-- Radiant Fleck of Ash (QI!)
-					--	},
-					--}),
-					--q(78156,	{	-- Handling It: Radiant Vellum
-					--	["sourceQuests"] = { 78155 },	-- Handling It: Radiant Fleck of Ash
-					--	["provider"] = { "n", xx },	-- xx
-					--	["g"] = {
-					--		i(210003, {	-- Shalasar's Sophic Vellum (QI!)
-					--			["cost"] = {},
-					--		}),
-					--		i(210011, {	-- Shalasar's Notes on Sophic Magic
-					--				r(422338, {	-- Shalasar's Sophic Vellum
-					--					["u"] = TRAINING,
-					--				}),
-					--		}),
-					--	},
-					--}),
-					--q(78002,	{	-- To The Test: Concentrated Sophic Vellum
-					--	["sourceQuests"] = { 78156 },	-- Handling It: Radiant Vellum
-					--	["provider"] = { "n", xx },	-- xx
-					--	["g"] = {
-					--		i(210222),	-- Resolved Element (QI!)
-					--		i(210048),	-- Shalasar's Sophic Vellum (QI!)
-					--		i(211398, {	-- Attuned Sophic Vellum (QI!)
-					--			i(208578),	-- Concentrated Sophic Vellum (QI!) / in case if this item is required
-					--		}),
-					--}),
-					--
-					--q(77192,	{	-- An Axe Tempered
-						--["sourceQuests"] = { 77191 },	-- Handling It
-						--["provider"] = { "n", xx },	-- xx
-						--["coord"] = { xx },
-					--}),
-					--q(77193,	{	-- The Power of Temptation
-						--["sourceQuests"] = { 77192 },	-- An Axe Tempered
-						--["provider"] = { "n", xx },	-- xx
-						--["coord"] = { xx },
+					q(77093, {	-- The Shadowflame Axe
+						["provider"] = { "i", 207728 },	-- Fyr'alath the Dreamrender
+					}),
+					q(77191, {	-- Handling It
+						["sourceQuests"] = { 77093 },	-- The Shadowflame Axe
+						["provider"] = { "n", 206107 },	-- Eadweard Dalyngrigge
+						["coord"] = { 61.6, 31.2, THALDRASZUS },
+						["cost"] = {
+							{ "i", 208577, 1 },	-- 1x Symbiotic Glowspore Grip
+							{ "i", 208592, 1 },	-- 1x Rune of Shadowbinding
+							{ "i", 208578, 1 },	-- 1x Concentrated Sophic Vellum
+						},
+						["g"] = {
+							i(208781),	-- Symbiotic Glowspore Grip (QI!)
+						},
+					}),
+					q(77833, {	-- Handling It: Concentrated Sophic Vellum
+						["sourceQuests"] = { 77191 },	-- Handling It
+						["provider"] = { "n", 209601 },	-- Eadweard's Notes
+						["coord"] = { 61.6, 31.2, THALDRASZUS },
+					}),
+					q(77835, {	-- Handling It: Rune of Shadowbinding
+						["sourceQuests"] = { 77191 },	-- Handling It
+						["provider"] = { "n", 209601 },	-- Eadweard's Notes
+						["coord"] = { 61.6, 31.2, THALDRASZUS },
+					}),
+					q(77791, {	-- Handling It: Symbiotic Glowspore Grip
+						["sourceQuests"] = { 77191 },	-- Handling It
+						["provider"] = { "n", 209601 },	-- Eadweard's Notes
+						["coord"] = { 61.6, 31.2, THALDRASZUS },
+					}),
+					q(78155, {	-- Handling It: Radiant Fleck of Ash
+						["sourceQuests"] = { 77833 },	-- Handling It: Concentrated Sophic Vellum
+						["provider"] = { "n", 194837 },	-- Shalasar Glimmerdusk
+						["coord"] = { 62.4, 18.6, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(210002),	-- Ashen Dowsing Rod (QI!)
+							i(210001),	-- Prototype Order Vellum (QI!)
+							i(208581),	-- Radiant Fleck of Ash (QI!)
+						},
+					}),
+					q(78003, {	-- Handling It: Taut Tethercoil
+						["sourceQuests"] = { 77835 },	-- Handling It: Rune of Shadowbinding
+						["provider"] = { "n", 194840 },	-- Lydiara Whisperfeather
+						["coord"] = { 40.2, 64.4, THE_AZURE_SPAN },
+						["g"] = {
+							i(209352),	-- Prototype Binding Rune (QI!)
+							i(208595),	-- Taut Tethercoil (QI!)
+							i(209996),	-- Tethercoil Rune (QI!)
+						},
+					}),
+					q(77886, {	-- Handling It: Shadowed Dreamleaf
+						["sourceQuests"] = { 77791 },	-- Handling It: Symbiotic Glowspore Grip
+						["provider"] = { "n", 194842 },	-- Erden
+						["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(210009),	-- Prototype Dreamleaf Grip (QI!)
+							i(208593),	-- Shadowed Dreamleaf (QI!)
+							i(210199),	-- Tattered Dreamleaf (QI!)
+						},
+					}),
+					q(77838, {	-- Tattered Dreamleaf
+						["sourceQuests"] = {
+							77833,	-- Handling It: Concentrated Sophic Vellum
+							77835,	-- Handling It: Rune of Shadowbinding
+							77791,	-- Handling It: Symbiotic Glowspore Grip
+						},
+						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "i", 210199 },	-- Tattered Dreamleaf
+						["g"] = {
+							i(208587),	-- Budding Restoration Mote (QI!)
+							i(208588),	-- Burgeoning Restoration Mote (QI!)
+							i(208846),	-- Restored Dreamleaf (QI!)
+							i(208576),	-- Thriving Restoration Mote (QI!)
+						},
+					}),
+					q(78156, {	-- Handling It: Radiant Vellum
+						["sourceQuests"] = { 78155 },	-- Handling It: Radiant Fleck of Ash
+						["provider"] = { "n", 194837 },	-- Shalasar Glimmerdusk
+						["coord"] = { 62.4, 18.6, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(210003, {	-- Shalasar's Sophic Vellum (QI!)
+								["cost"] = {
+									{ "i", 190316, 100 },	-- Awakened Earth
+									{ "i", 190321, 150 },	-- Awakened Fire
+									{ "i", 190324, 50 },	-- Awakened Order
+									{ "i", 210001, 1 },		-- Prototype Order Vellum
+									{ "i", 200113, 200 },	-- Resonant Crystal
+								},
+							}),
+							i(210011, {	-- Shalasar's Notes on Sophic Magic
+								r(422338, {	-- Shalasar's Sophic Vellum
+									["requireSkill"] = ENCHANTING,
+									["u"] = TRAINING,
+								}),
+							}),
+						},
+					}),
+					q(78153, {	-- Handling It: Prototype Rune
+						["sourceQuests"] = { 78003 },	-- Handling It: Taut Tethercoil
+						["provider"] = { "n", 194840 },	-- Lydiara Whisperfeather
+						["coord"] = { 40.2, 64.4, THE_AZURE_SPAN },
+						["g"] = {
+							i(209998, {	-- Lydiara's Binding Rune (QI!)
+								["cost"] = {
+									{ "i", 194754, 250 },	-- Cosmic Ink
+									{ "i", 209352, 1 },		-- Prototype Binding Rune
+									{ "i", 194862, 50 },	-- Runed Writhebark
+									{ "i", 204464, 10 },	-- Shadowflame Essence
+								},
+							}),
+							i(209349, {	-- Lydiara's Notes on Rune Reagents
+								r(422337, {	-- Lydiara's Guidance
+									["requireSkill"] = INSCRIPTION,
+									["u"] = TRAINING,
+								}),
+							}),
+						},
+					}),
+					q(78159, {	-- Handling It: Glowspore Grip
+						["sourceQuests"] = { 77886 },	-- Handling It: Shadowed Dreamleaf
+						["provider"] = { "n", 194842 },	-- Erden
+						["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(209351, {	-- Erden's Dreamleaf Grip (QI!)
+								["cost"] = {
+									{ "i", 208212, 5 },	-- Dreaming Essence
+									{ "i", 193229, 50 },		-- Mireslush Hide
+									{ "i", 205413, 3 },	-- Obsidian Cobraskin
+									{ "i", 210009, 1 },	-- Prototype Dreamleaf Grip
+									{ "i", 204460, 400 },	-- Zaralek Glowspores
+								},
+							}),
+							i(210010, {	-- Erden's Notes on Symbiotic Spores
+								r(422330, {	-- Erden's Glowspore Grip
+									["requireSkill"] = LEATHERWORKING,
+									["u"] = TRAINING,
+								}),
+							}),
+						},
+					}),
+					q(78002, {	-- To The Test: Concentrated Sophic Vellum
+						["sourceQuests"] = { 78156 },	-- Handling It: Radiant Vellum
+						["provider"] = { "n", 194837 },	-- Shalasar Glimmerdusk
+						["coord"] = { 62.4, 18.6, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(210222),	-- Resolved Element (QI!)
+							i(210048),	-- Shalasar's Sophic Vellum (QI!)
+							i(211398, {	-- Attuned Sophic Vellum (QI!)
+								i(208578),	-- Concentrated Sophic Vellum (QI!)
+							}),
+						},
+					}),
+					q(78154, {	-- To the Test: Rune of Shadowbinding
+						["sourceQuests"] = { 78153 },	-- Handling It: Prototype Rune
+						["provider"] = { "n", 194840 },	-- Lydiara Whisperfeather
+						["coord"] = { 40.2, 64.4, THE_AZURE_SPAN },
+						["g"] = {
+							i(209999),	-- Lydiara's Rune of Shadowbinding (QI!)
+							i(211397, {	-- Attuned Rune of Shadowbinding (QI!)
+								i(208592),	-- Rune of Shadowbinding (QI!)
+							}),
+						},
+					}),
+					q(78655, {	-- Adaptive Cooling Salve
+						["sourceQuests"] = { 78159 },	-- Handling It: Glowspore Grip
+						["provider"] = { "n", 194842 },	-- Erden
+						["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
+						["isDaily"] = true,
+						["cost"] = {
+							{ "i", 190329, 5 },		-- Awakened Frost
+							{ "i", 208212, 1 },		-- Dreaming Essence
+							{ "i", 204460, 100 },	-- Zaralek Glowspores
+						},
+						["g"] = {
+							i(210918),	-- Adaptive Cooling Salve (QI!)
+						},
+					}),
+					q(78160, {	-- To the Test: Symbiotic Glowspore Grip
+						["sourceQuests"] = { 78159 },	-- Handling It: Glowspore Grip
+						["provider"] = { "n", 194842 },	-- Erden
+						["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(210918),	-- Adaptive Cooling Salve (QI!)
+							i(211396, {	-- Attuned Glowspore Grip (QI!)
+								i(208577),	-- Symbiotic Glowspore Grip (QI!)
+							}),
+							i(210207),	-- Empowered Restorative Symbiote (QI!)
+							i(210012),	-- Erden's Symbiotic Glowspore Grip (QI!)
+						},
+					}),
+					q(77192, {	-- An Axe Tempered
+						["sourceQuests"] = { 77191 },	-- Handling It
+						["provider"] = { "n", 206107 },	-- Eadweard Dalyngrigge
+						["coord"] = { 61.6, 31.2, THALDRASZUS },
+					}),
+					q(77193, {	-- The Power of Temptation
+						["sourceQuests"] = { 77192 },	-- An Axe Tempered
+						["provider"] = { "n", 208421 },	-- Wrathion
+						["coord"] = { 24.6, 60.6, THE_WAKING_SHORES },
 						--["maps"] = { scenario map id? },
 						["g"] = {
-							i(206448),	-- Fyr'alath the Dreamrender
-							ach(19450),	-- Fyr'alath the Dreamrender
+							i(207729),	-- Fyr'alath the Dreamrender (QI!)
+							i(206448, {	-- Fyr'alath the Dreamrender
+								ach(19450),	-- Fyr'alath the Dreamrender
+							}),	
 						},
-					--}),
+					}),
 				})),
 			}),
 			n(ACHIEVEMENTS, {

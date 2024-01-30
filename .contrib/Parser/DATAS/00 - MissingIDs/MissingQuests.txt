@@ -1610,33 +1610,15 @@ q(75642),	--
 10.2.0.51239
 q(78216),	--
 10.2.0.52301
-q(77093),	-- The Shadowflame Axe
-q(77191),	-- Handling It
-q(77192),	-- An Axe Tempered
-q(77193),	-- The Power of Temptation
-q(77791),	-- Handling It: Symbiotic Glowspore Grip
-q(77833),	-- Handling It: Concentrated Sophic Vellum
-q(77835),	-- Handling It: Rune of Shadowbinding
-q(77838),	-- Tattered Dreamleaf
-q(77886),	-- Handling It: Shadowed Dreamleaf
 q(77980),	--
 q(77993),	--
 q(78001),	-- [DEPRECATED] 10.2 Enchanting
-q(78002),	-- To The Test: Concentrated Sophic Vellum
-q(78003),	-- Handling It: Taut Tethercoil
 q(78004),	--
 q(78009),	--
 q(78010),	--
 q(78012),	--
 q(78013),	--
 q(78122),	--
-q(78153),	-- Handling It: Prototype Rune
-q(78154),	-- To the Test: Rune of Shadowbinding
-q(78155),	-- Handling It: Radiant Fleck of Ash
-q(78156),	-- Handling It: Radiant Vellum
-q(78159),	-- Handling It: Glowspore Grip
-q(78160),	-- To the Test: Symbiotic Glowspore Grip
-q(78655),	-- Adaptive Cooling Salve
 q(78956),	--
 q(78957),	--
 q(78958),	--
