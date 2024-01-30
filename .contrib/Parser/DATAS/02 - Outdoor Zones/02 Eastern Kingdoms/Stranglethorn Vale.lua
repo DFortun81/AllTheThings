@@ -407,14 +407,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(19024),	-- Arena Grand Master
 					},
 				})),
-				q(7810, {	-- Arena Master
+				pvp(q(7810, {	-- Arena Master
 					["provider"] = { "i", 18706 },	-- Arena Master (trinket)
 					-- #if AFTER CATA
 					["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					["coord"] = { 30.5, 47.8, STRANGLETHORN_VALE },
 					-- #endif
-				}),
+				})),
 				q(4621, {	-- Avast Ye, Admiral!
 					["qg"] = 2546,	-- Fleet Master Firallon
 					["sourceQuest"] = 1036,	-- Avast Ye, Scallywag

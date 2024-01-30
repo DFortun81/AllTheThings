@@ -238,10 +238,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(19024),	-- Arena Grand Master
 					},
 				})),
-				q(7810, {	-- Arena Master
+				pvp(q(7810, {	-- Arena Master
 					["provider"] = { "i", 18706 },	-- Arena Master (trinket)
 					["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
-				}),
+				})),
 				q(26644, {	-- Attracting Attention
 					["qg"] = 2548,	-- Captain Keelhaul
 					["sourceQuests"] = {
