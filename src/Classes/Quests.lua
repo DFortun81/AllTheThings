@@ -1985,19 +1985,9 @@ if app.IsRetail then
 					-- app.PrintDebug("TryPopulateQuestRewards_currencies:found",questID,currencyID,questObject.missingCurr)
 
 					currencyID = tonumber(currencyID);
-					-- TODO: can clean this up now that SearchForObject exists... probably only needed this because
-					-- SearchForField returns random stuff linked to the currencyID
 					local item = app.CreateCurrencyClass(currencyID);
-					cachedCurrency = SearchForField("currencyID", currencyID);
-					for _,data in ipairs(cachedCurrency) do
-						-- cache record is the item itself
-						if app.GroupMatchesParams(data, "currencyID", currencyID) then
-							app.MergeProperties(item, data);
-						-- cache record is associated with the item
-						else
-							app.NestObject(item, data);	-- no clone since item is cloned later
-						end
-					end
+					cachedCurrency = Search("currencyID", currencyID, "key");
+					app.MergeProperties(item, cachedCurrency, true);
 					-- block the group from being collectible as a cost if the option is not enabled
 					if skipCollectibleCurrencies then
 						item.skipFill = true
