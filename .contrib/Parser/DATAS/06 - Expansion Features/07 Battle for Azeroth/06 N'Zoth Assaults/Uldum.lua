@@ -1519,6 +1519,9 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 						n(ZONE_DROPS, {
 							i(174837),	-- Decaying Fusion Core (14 day timer on this. use it at 78/65 during Amathet assault to get fast percentage)
 							i(171312, {	-- Recipe: Void Focus (RECIPE!)
+								r(307172, {	-- Void Focus
+									["requireSkill"] = ALCHEMY,
+								}),
 								r(307221, {	-- Void Focus
 									["requireSkill"] = BLACKSMITHING,
 								}),

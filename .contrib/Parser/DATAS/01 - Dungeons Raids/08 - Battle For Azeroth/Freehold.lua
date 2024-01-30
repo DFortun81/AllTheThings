@@ -227,7 +227,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							ach(12833),	-- Mythic: Freehold
 							ach(12999),	-- Mythic: Freehold Guild Run
 							ach(12998),	-- That Sweete Booty
-							i(162520),	-- Recipe: Mystical Cauldron (Rank 2)
 							i(159842),	-- Sharkbait (MOUNT!)
 							i(159635),	-- Bloody Tideturner
 							i(155888),	-- Irontide Captain's Hat

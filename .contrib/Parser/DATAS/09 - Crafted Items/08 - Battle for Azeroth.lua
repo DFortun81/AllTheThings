@@ -3,8 +3,8 @@
 ---------------------------------------------
 root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	i(152668),	-- Expulsom
-	i(162460),	-- Hydrocore
-	i(162461),	-- Sanguicell
+	i(162460, {["timeline"] = {ADDED_8_1_0}}),	-- Hydrocore
+	i(162461, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguicell
 	i(171320, {["timeline"] = {ADDED_8_3_0}}),	-- Void Focus
 	filter(MOUNTS, {
 		i(153594, {	-- Xiwyllag ATV (MOUNT!)
@@ -15,21 +15,49 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(ALCHEMY, {
+		n(DISCOVERY, {
+			spell(298995, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Abyssal Alchemist Stone
+				i(168757),	-- Recipe: Crushing Alchemist Stone (RECIPE!)
+			})),
+			spell(305993, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Awakened Alchemist Stone
+				i(171084),	-- Recipe: Peerless Alchemist Stone (RECIPE!)
+			})),
+			spell(298996, bubbleDownSelf({["timeline"] = { ADDED_8_2_0 } }, {	-- Crushing Alchemist Stone
+				i(168758),	-- Recipe: Ascended Alchemist Stone (RECIPE!)
+			})),
+			spell(291085, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Imbued Alchemist Stone
+				i(166978),	-- Recipe: Emblazoned Alchemist Stone (RECIPE!)
+			})),
+			spell(291084, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Sanguinated Alchemist Stone
+				i(166977),	-- Recipe: Imbued Alchemist Stone (RECIPE!)
+			})),
+			spell(286922, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Spirited Alchemist Stone
+				i(165930),	-- Recipe: Eternal Alchemist Stone (RECIPE!)
+			})),
+			spell(286921, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Tidal Alchemist Stone
+				i(165929),	-- Recipe: Spirited Alchemist Stone (RECIPE!)
+			})),
+			spell(305994, bubbleDownSelf({["timeline"] = { ADDED_8_3_0 } }, {	-- Unbound Alchemist Stone
+				i(171086),	-- Recipe: Awakened Alchemist Stone (RECIPE!)
+			})),
+		}),
 		filter(BATTLE_PETS, {
-			i(160324, {	-- Grumbling Sac
-				i(163859),	-- Baby Crawg (PET!)
-				i(163861),	-- Bloated Bloodfeaster (PET!)
-				i(163860),	-- Gearspring Hopper (PET!)
-				i(163858),	-- Slippy (PET!)
-			}),
-			i(160325, {	-- Quivering Sac
-				i(163859),	-- Baby Crawg (PET!)
-				i(163861),	-- Bloated Bloodfeaster (PET!)
-				i(163860),	-- Gearspring Hopper (PET!)
-				i(163858),	-- Slippy (PET!)
+			spell(251808, {	-- Transmute: Meat to Pet
+				i(160324, {	-- Grumbling Sac
+					i(163859),	-- Baby Crawg (PET!)
+					i(163861),	-- Bloated Bloodfeaster (PET!)
+					i(163860),	-- Gearspring Hopper (PET!)
+					i(163858),	-- Slippy (PET!)
+				}),
+				i(160325, {	-- Quivering Sac
+					i(163859),	-- Baby Crawg (PET!)
+					i(163861),	-- Bloated Bloodfeaster (PET!)
+					i(163860),	-- Gearspring Hopper (PET!)
+					i(163858),	-- Slippy (PET!)
+				}),
 			}),
 		}),
-		spell(286547, {	-- Transmute: Herbs to Anchors
+		spell(286547, bubbleDownSelf({["timeline"] = { ADDED_8_1_0 } }, {	-- Transmute: Herbs to Anchors
 			i(165851, {	-- Bag of Anchors
 				i(159386, {	-- Anchor Chain Girdle
 					["modID"] = 1,	-- Normal Dungeon version (Siege only has heroic/mythic, but a normal version of this item drops from the transmute bag)
@@ -41,32 +69,67 @@ root(ROOTS.Craftables, tier(BFA_TIER, applyclassicphase(BFA_PHASE_ONE, bubbleDow
 				i(152692),	-- Devastator Anchor Crystal
 				i(151013),	-- Ethereal Anchor
 			}),
+		})),
+		filter(CONSUMABLES, {
+			i(169451, {["timeline"] = {ADDED_8_2_0}}),	-- Abyssal Healing Potion
+			i(163223),	-- Battle Potion of Agility
+			i(163222),	-- Battle Potion of Intellect
+			i(163225),	-- Battle Potion of Stamina
+			i(163224),	-- Battle Potion of Strength
+			i(152494),	-- Coastal Healing Potion
+			i(152495),	-- Coastal Mana Potion
+			i(163082),	-- Coastal Rejuvenation Potion
+			i(152496),	-- Demitri's Draught of Deception
+			i(152639),	-- Flask of Endless Fathoms
+			i(152638),	-- Flask of the Currents
+			i(152641),	-- Flask of the Undertow
+			i(152640),	-- Flask of the Vast Horizon
+			i(168652, {["timeline"] = {ADDED_8_2_0}}),	-- Greater Flask of Endless Fathoms
+			i(168651, {["timeline"] = {ADDED_8_2_0}}),	-- Greater Flask of the Currents
+			i(168653, {["timeline"] = {ADDED_8_2_0}}),	-- Greater Flask of the Vast Horizon
+			i(168654, {["timeline"] = {ADDED_8_2_0}}),	-- Greater Flask of the Undertow
+			i(168656, {["timeline"] = {ADDED_8_2_0}}),	-- Greater Mystical Cauldron
+			i(152497),	-- Lightfoot Potion
+			i(162519),	-- Mystical Cauldron
+			i(152560),	-- Potion of Bursting Blood
+			i(152503),	-- Potion of Concealment
+			i(168529, {["timeline"] = {ADDED_8_2_0}}),	-- Potion of Empowered Proximity
+			i(168506, {["timeline"] = {ADDED_8_2_0}}),	-- Potion of Focused Resolve
+			i(152561),	-- Potion of Replenishment
+			i(152559),	-- Potion of Rising Death
+			i(166270, {["timeline"] = {ADDED_8_1_0}}),	-- Potion of the Unveiling Eye
+			i(169299, {["timeline"] = {ADDED_8_2_0}}),	-- Potion of Unbridled Fury
+			i(169300, {["timeline"] = {ADDED_8_2_0}}),	-- Potion of Wild Mending
+			i(152550),	-- Sea Mist Potion
+			i(152557),	-- Steelskin Potion
+			i(168489, {["timeline"] = {ADDED_8_2_0}}),	-- Superior Battle Potion of Agility
+			i(168498, {["timeline"] = {ADDED_8_2_0}}),	-- Superior Battle Potion of Intellect
+			i(168499, {["timeline"] = {ADDED_8_2_0}}),	-- Superior Battle Potion of Stamina
+			i(168500, {["timeline"] = {ADDED_8_2_0}}),	-- Superior Battle Potion of Strength
+			i(168501, {["timeline"] = {ADDED_8_2_0}}),	-- Superior Steelskin Potion
+		}),
+		filter(MISC, {
+			i(165744),	-- Potion of Herb Tracking
+			i(156631, {["timeline"] = {ADDED_8_1_5}}),	-- Silas' Sphere of Transmutation
+			i(165721, {["timeline"] = {ADDED_8_1_0}}),	-- Vial of Obfuscation
 		}),
 		filter(TRINKET_F, {
-			i(168674, {	-- Abyssal Alchemist Stone
-				i(168757),	-- Recipe: Crushing Alchemist Stone
-			}),
-			i(168676),	-- Ascended Alchemist Stone
-			i(171087, {	-- Awakened Alchemist Stone
-				i(171084),	-- Recipe: Peerless Alchemist Stone
-			}),
-			i(168675, {	-- Crushing Alchemist Stone
-				i(168758),	-- Recipe: Ascended Alchemist Stone
-			}),
-			i(166976),	-- Emblazoned Alchemist Stone
+			i(168674, {["timeline"] = {ADDED_8_2_0}}),	-- Abyssal Alchemist Stone
+			i(168676, {["timeline"] = {ADDED_8_2_0}}),	-- Ascended Alchemist Stone
+			i(171087, {["timeline"] = {ADDED_8_3_0}}),	-- Awakened Alchemist Stone
+			i(168675, {["timeline"] = {ADDED_8_2_0}}),	-- Crushing Alchemist Stone
+			i(166976, {["timeline"] = {ADDED_8_1_0}}),	-- Emblazoned Alchemist Stone
 			i(152636),	-- Endless Tincture of Fractional Power
 			i(152634),	-- Endless Tincture of Renewed Combat
-			i(165928),	-- Eternal Alchemist Stone
-			i(166975),	-- Imbued Alchemist Stone
-			i(171085),	-- Peerless Alchemist Stone
-			i(166974),	-- Sanguinated Alchemist Stone
+			i(165928, {["timeline"] = {ADDED_8_1_0}}),	-- Eternal Alchemist Stone
+			i(166975, {["timeline"] = {ADDED_8_1_0}}),	-- Imbued Alchemist Stone
+			i(171085, {["timeline"] = {ADDED_8_3_0}}),	-- Peerless Alchemist Stone
+			i(166974, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguinated Alchemist Stone
 			i(152637),	-- Siren's Alchemist Stone
-			i(165927),	-- Spirited Alchemist Stone
+			i(165927, {["timeline"] = {ADDED_8_1_0}}),	-- Spirited Alchemist Stone
 			i(152632),	-- Surging Alchemist Stone
-			i(165926),	-- Tidal Alchemist Stone
-			i(171088, {	-- Unbound Alchemist Stone
-				i(171086),	-- Recipe: Awakened Alchemist Stone
-			}),
+			i(165926, {["timeline"] = {ADDED_8_1_0}}),	-- Tidal Alchemist Stone
+			i(171088, {["timeline"] = {ADDED_8_3_0}}),	-- Unbound Alchemist Stone
 		}),
 	}),
 	prof(BLACKSMITHING, {

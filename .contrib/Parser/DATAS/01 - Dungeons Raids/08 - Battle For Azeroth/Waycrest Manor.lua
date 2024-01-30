@@ -311,7 +311,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							ach(12490),	-- Alchemical Romance
 							ach(12488),	-- Mythic: Waycrest Manor
 							ach(13000),	-- Mythic: Waycrest Manor Guild Run
-							i(162520),	-- Recipe: Mystical Cauldron (Rank 2)
 							i(159662),	-- Blightreaper
 							i(159279),	-- Soulfuel Headdress
 							i(159398),	-- Soulscarred Headgear

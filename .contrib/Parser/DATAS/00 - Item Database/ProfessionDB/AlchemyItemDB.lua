@@ -675,7 +675,7 @@ i(0, 264247);		-- Draenor Alchemy
 i(0, 264250);		-- Legion Alchemy
 i(0, 264255);		-- Kul Tiran Alchemy
 i(0, 265787);		-- Zandalari Alchemy
--- TRAINER --
+--- TRAINER ---
 i(0, 279159);		-- Battle Potion of Agility [Rank 1]
 i(0, 279160);		-- Battle Potion of Agility [Rank 2]
 i(0, 279162);		-- Battle Potion of Intellect [Rank 1]
@@ -771,7 +771,6 @@ i(162692, 252340);	-- Potion of Replenishment [Rank 3] (H)
 i(162131, 252346);	-- Potion of Rising Death [Rank 3] (A)
 i(162694, 252346);	-- Potion of Rising Death [Rank 3] (H)
 i(162259, 252399);	-- Sea Mist Potion [Rank 3]
-i(166422, 260403);	-- Silas' Sphere of Transmutation
 i(162137, 252370);	-- Siren's Alchemist Stone [Rank 3]
 i(162128, 252336);	-- Steelskin Potion [Rank 3] (A)
 i(162691, 252336);	-- Steelskin Potion [Rank 3] (H)
@@ -797,38 +796,38 @@ i(0, 252375);		-- Unknown
 -----------------
 -- PATCH 8.1.0 --
 -----------------
--- TRAINER --
+--- TRAINER ---
 i(0, 287234);		-- Aqueous Dilution
-i(0, 291086);		-- Emblazoned Alchemist Stone
-i(0, 286923);		-- Eternal Alchemist Stone
-i(0, 291085);		-- Imbued Alchemist Stone
 i(0, 287447);		-- Potion of the Unveiling Eye [Rank 1]
 i(0, 291084);		-- Sanguinated Alchemist Stone
 i(0, 286630);		-- Sanguinated Dilution
-i(0, 286922);		-- Spirited Alchemist Stone
 i(0, 286921);		-- Tidal Alchemist Stone
 i(0, 286547);		-- Transmute: Herbs to Anchors
 i(0, 287288);		-- Vial of Obfuscation
--- ITEM --
+--- ITEM ---
+i(166978, 291086);	-- Emblazoned Alchemist Stone
+i(165930, 286923);	-- Eternal Alchemist Stone
+i(166977, 291085);	-- Imbued Alchemist Stone
 i(166272, 287448);	-- Potion of the Unveiling Eye [Rank 2]
 i(166271, 287449);	-- Potion of the Unveiling Eye [Rank 3]
+i(165929, 286922);	-- Spirited Alchemist Stone
 
 -----------------
 -- PATCH 8.1.5 --
 -----------------
--- TRAINER --
-i(0, 288176);		-- Potion of Shifting States
+--- ITEM ---
+i(166422, 260403);	-- Silas' Sphere of Transmutation
+--- QUEST ---
 i(0, 288182);		-- Potion of Durability
+i(0, 288176);		-- Potion of Shifting States
 
 -----------------
 -- PATCH 8.2.0 --
 -----------------
--- TRAINER --
+--- TRAINER ---
 i(0, 298995);		-- Abyssal Alchemist Stone
 i(0, 301310);		-- Abyssal Healing Potion [Rank 1]
 i(0, 301311);		-- Abyssal Healing Potion [Rank 2]
-i(0, 298997);		-- Ascended Alchemist Stone
-i(0, 298996);		-- Crushing Alchemist Stone
 i(0, 298846);		-- Greater Flask of Endless Fathoms [Rank 1]
 i(0, 298847);		-- Greater Flask of Endless Fathoms [Rank 2]
 i(0, 298842);		-- Greater Flask of the Currents [Rank 1]
@@ -857,8 +856,10 @@ i(0, 298750);		-- Superior Battle Potion of Strength [Rank 1]
 i(0, 298751);		-- Superior Battle Potion of Strength [Rank 2]
 i(0, 298734);		-- Superior Steelskin Potion [Rank 1]
 i(0, 298735);		-- Superior Steelskin Potion [Rank 2]
--- ITEM --
+--- ITEM ---
+i(168758, 298997);	-- Ascended Alchemist Stone
 i(170210, 301312);	-- Abyssal Healing Potion [Rank 3]
+i(168757, 298996);	-- Crushing Alchemist Stone
 i(169501, 298848);	-- Greater Flask of Endless Fathoms [Rank 3]
 i(169500, 298845);	-- Greater Flask of the Currents [Rank 3]
 i(169503, 298855);	-- Greater Flask of the Undertow [Rank 3]
@@ -885,7 +886,7 @@ i(169601, 298740);	-- Recipe: Potion of Reconstitution [Rank 3]
 -----------------
 -- PATCH 8.3.0 --
 -----------------
--- ITEM --
+--- ITEM ---
 i(171086, 305993);	-- Awakened Alchemist Stone
 i(171084, 305992);	-- Peerless Alchemist Stone
 i(171318, 305994);	-- Unbound Alchemist Stone

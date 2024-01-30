@@ -727,28 +727,7 @@ LEGION_ALCHEMY = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { 
 }));
 
 BFA_ALCHEMY = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
-	r(264255, {	-- Kul Tiran Alchemy [A]
-		["races"] = ALLIANCE_ONLY
-	}),
-	r(265787, {	-- Zandalari Alchemy [H]
-		["races"] = HORDE_ONLY
-	}),
-	cat(1228, {	-- Cauldrons
-		r(298862, {	-- Greater Mystical Cauldron [Rank 1]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298863, {	-- Greater Mystical Cauldron [Rank 2]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(276975),	-- Mystical Cauldron [Rank 1]
-	}),
-	cat(605, {	-- Combat Potions
-		r(301310, {	-- Abyssal Healing Potion [Rank 1]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(301311, {	-- Abyssal Healing Potion [Rank 2]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
+	filter(CONSUMABLES, {
 		r(279159),	-- Battle Potion of Agility [Rank 1]
 		r(279160),	-- Battle Potion of Agility [Rank 2]
 		r(279162),	-- Battle Potion of Intellect [Rank 1]
@@ -763,78 +742,8 @@ BFA_ALCHEMY = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADD
 		r(252386),	-- Coastal Mana Potion [Rank 2]
 		r(252388),	-- Coastal Rejuvenation Potion [Rank 1]
 		r(252389),	-- Coastal Rejuvenation Potion [Rank 2]
-		r(252341),	-- Potion of Bursting Blood [Rank 1]
-		r(252342),	-- Potion of Bursting Blood [Rank 2]
-		r(298726, {	-- Potion of Empowered Proximity [Rank 1]
-			["timeline"] = { ADDED_8_2_0 }
-		}),
-		r(298727, {	-- Potion of Empowered Proximity [Rank 2]
-			["timeline"] = { ADDED_8_2_0 }
-		}),
-		r(298744, {	-- Potion of Focused Resolve [Rank 1]
-			["timeline"] = { ADDED_8_2_0 }
-		}),
-		r(298745, {	-- Potion of Focused Resolve [Rank 2]
-			["timeline"] = { ADDED_8_2_0 }
-		}),
-		r(252337),	-- Potion of Replenishment [Rank 1
-		r(252339),	-- Potion of Replenishment [Rank 2
-		r(252344),	-- Potion of Rising Death [Rank 1]
-		r(252345),	-- Potion of Rising Death [Rank 2]
-		r(300749, {	-- Potion of Unbridled Fury [Rank 1]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(300750, {	-- Potion of Unbridled Fury [Rank 2]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(300752, {	-- Potion of Wild Mending [Rank 1]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(300753, {	-- Potion of Wild Mending [Rank 2]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(252334),	-- Steelskin Potion [Rank 1]
-		r(252335),	-- Steelskin Potion [Rank 2]
-		r(298729, {	-- Superior Battle Potion of Agility [Rank 1]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298730, {	-- Superior Battle Potion of Agility [Rank 2]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298741, {	-- Superior Battle Potion of Intellect [Rank 1]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298742, {	-- Superior Battle Potion of Intellect [Rank 2]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298747, {	-- Superior Battle Potion of Stamina [Rank 1]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298748, {	-- Superior Battle Potion of Stamina [Rank 2]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298750, {	-- Superior Battle Potion of Strength [Rank 1]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298751, {	-- Superior Battle Potion of Strength [Rank 2]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298734, {	-- Superior Steelskin Potion [Rank 1]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298735, {	-- Superior Steelskin Potion [Rank 2]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-	}),
-	cat(1238, {	-- Conversions
-		r(287234, {	-- Aqueous Dilution
-			["timeline"] = { ADDED_8_1_0 },
-		}),
-		r(286630, {	-- Sanguinated Dilution
-			["timeline"] = { ADDED_8_1_0 },
-		}),
-	}),
-	cat(607, {	-- Flasks
+		r(252391),	-- Demitri's Draught of Deception [Rank 1]
+		r(252392),	-- Demitri's Draught of Deception [Rank 2]
 		r(252351),	-- Flask of Endless Fathoms [Rank 1]
 		r(252352),	-- Flask of Endless Fathoms [Rank 2]
 		r(252348),	-- Flask of the Currents [Rank 1]
@@ -843,111 +752,89 @@ BFA_ALCHEMY = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADD
 		r(252358),	-- Flask of the Undertow [Rank 2]
 		r(252354),	-- Flask of the Vast Horizon [Rank 1]
 		r(252355),	-- Flask of the Vast Horizon [Rank 2]
-		r(298846, {	-- Greater Flask of Endless Fathoms [Rank 1]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298847, {	-- Greater Flask of Endless Fathoms [Rank 2]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298842, {	-- Greater Flask of the Currents [Rank 1]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298843, {	-- Greater Flask of the Currents [Rank 2]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298853, {	-- Greater Flask of the Undertow [Rank 1]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298854, {	-- Greater Flask of the Undertow [Rank 2]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298850, {	-- Greater Flask of the Vast Horizon [Rank 1]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298851, {	-- Greater Flask of the Vast Horizon [Rank 2]
-			["timeline"] = { ADDED_8_2_0 },
-		}),
+		r(252394),	-- Lightfoot Potion [Rank 1]
+		r(252395),	-- Lightfoot Potion [Rank 2]
+		r(276975),	-- Mystical Cauldron [Rank 1]
+		r(252341),	-- Potion of Bursting Blood [Rank 1]
+		r(252342),	-- Potion of Bursting Blood [Rank 2]
+		r(252400),	-- Potion of Concealment [Rank 1]
+		r(252401),	-- Potion of Concealment [Rank 2]
+		r(252337),	-- Potion of Replenishment [Rank 1]
+		r(252339),	-- Potion of Replenishment [Rank 2]
+		r(252344),	-- Potion of Rising Death [Rank 1]
+		r(252345),	-- Potion of Rising Death [Rank 2]
+		r(287447, {["timeline"] = {ADDED_8_1_0}}),	-- Potion of the Unveiling Eye [Rank 1]
+		r(252397),	-- Sea Mist Potion [Rank 1]
+		r(252398),	-- Sea Mist Potion [Rank 2]
+		r(252334),	-- Steelskin Potion [Rank 1]
+		r(252335),	-- Steelskin Potion [Rank 2]
 	}),
-	cat(1234, {	-- Follower Equipment
-		r(287288, {	-- Vial of Obfuscation
-			["timeline"] = { ADDED_8_1_0 },
-		}),
-	}),
-	cat(1250, {	-- Training
-		r(288176, {	-- Potion of Shifting States
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-		r(288182, {	-- Potion of Durability
-			["timeline"] = { ADDED_8_1_5 },
-		}),
-	}),
-	cat(608, {	-- Transmutation
+	filter(MISC, {
+		r(287234, {["timeline"] = {ADDED_8_1_0}}),	-- Aqueous Dilution
+		r(278420),	-- Potion of Herb Tracking
+		r(286630, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguinated Dilution
 		r(251314),	-- Transmute: Cloth to Skins
 		r(251832),	-- Transmute: Expulsom
 		r(251822),	-- Transmute: Fish to Gems
-		r(286547, {	-- Transmute: Herbs to Anchors
-			["timeline"] = { ADDED_8_1_0 },
-		}),
+		r(286547, {["timeline"] = {ADDED_8_1_0}}),	-- Transmute: Herbs to Anchors
 		r(251306),	-- Transmute: Herbs to Cloth
 		r(251305),	-- Transmute: Herbs to Ore
 		r(251808),	-- Transmute: Meat to Pet
 		r(251310),	-- Transmute: Ore to Cloth
 		r(251311),	-- Transmute: Ore to Gems
 		r(251309),	-- Transmute: Ore to Herbs
+		r(287288, {["timeline"] = {ADDED_8_1_0}}),	-- Vial of Obfuscation
 	}),
-	cat(609, {	-- Trinkets
-		r(298995, {	-- Abyssal Alchemist Stone
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298997, {	-- Ascended Alchemist Stone
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(298996, {	-- Crushing Alchemist Stone
-			["timeline"] = { ADDED_8_2_0 },
-		}),
-		r(291086, {	-- Emblazoned Alchemist Stone
-			["timeline"] = { ADDED_8_1_0 },
-		}),
+	filter(TRINKET_F, {
 		r(252376),	-- Endless Tincture of Fractional Power [Rank 1]
 		r(252377),	-- Endless Tincture of Fractional Power [Rank 2]
 		r(252361),	-- Endless Tincture of Renewed Combat [Rank 1]
 		r(252362),	-- Endless Tincture of Renewed Combat [Rank 2]
-		r(286923, {	-- Eternal Alchemist Stone
-			["timeline"] = { ADDED_8_1_0 },
-		}),
-		r(291085, {	-- Imbued Alchemist Stone
-			["timeline"] = { ADDED_8_1_0 },
-		}),
-		r(291084, {	-- Sanguinated Alchemist Stone
-			["timeline"] = { ADDED_8_1_0 },
-		}),
+		r(291084, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguinated Alchemist Stone
 		r(252368),	-- Siren's Alchemist Stone [Rank 1]
 		r(252369),	-- Siren's Alchemist Stone [Rank 2]
-		r(286922, {	-- Spirited Alchemist Stone
-			["timeline"] = { ADDED_8_1_0 },
-		}),
 		r(252379),	-- Surging Alchemist Stone [Rank 1]
 		r(252380),	-- Surging Alchemist Stone [Rank 2]
-		r(286921, {	-- Tidal Alchemist Stone
-			["timeline"] = { ADDED_8_1_0 },
-		}),
-	}),
-	cat(606, {	-- Utility Potions
-		r(252391),	-- Demitri's Draught of Deception [Rank 1]
-		r(252392),	-- Demitri's Draught of Deception [Rank 2]
-		r(252394),	-- Lightfoot Potion [Rank 1]
-		r(252395),	-- Lightfoot Potion [Rank 2]
-		r(252400),	-- Potion of Concealment [Rank 1]
-		r(252401),	-- Potion of Concealment [Rank 2]
-		r(278420),	-- Potion of Herb Tracking
-		r(287447, {	-- Potion of the Unveiling Eye [Rank 1]
-			["timeline"] = { ADDED_8_1_0 },
-		}),
-		r(252397),	-- Sea Mist Potion [Rank 1]
-		r(252398),	-- Sea Mist Potion [Rank 2]
+		r(286921, {["timeline"] = {ADDED_8_1_0}}),	-- Tidal Alchemist Stone
 	}),
 }));
-
+NAZJATAR_ALCHEMY = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
+	filter(CONSUMABLES, {
+		r(301310),	-- Abyssal Healing Potion [Rank 1]
+		r(301311),	-- Abyssal Healing Potion [Rank 2]
+		r(298846),	-- Greater Flask of Endless Fathoms [Rank 1]
+		r(298847),	-- Greater Flask of Endless Fathoms [Rank 2]
+		r(298842),	-- Greater Flask of the Currents [Rank 1]
+		r(298843),	-- Greater Flask of the Currents [Rank 2]
+		r(298853),	-- Greater Flask of the Undertow [Rank 1]
+		r(298854),	-- Greater Flask of the Undertow [Rank 2]
+		r(298850),	-- Greater Flask of the Vast Horizon [Rank 1]
+		r(298851),	-- Greater Flask of the Vast Horizon [Rank 2]
+		r(298862),	-- Greater Mystical Cauldron [Rank 1]
+		r(298863),	-- Greater Mystical Cauldron [Rank 2]
+		r(298726),	-- Potion of Empowered Proximity [Rank 1]
+		r(298727),	-- Potion of Empowered Proximity [Rank 2]
+		r(298744),	-- Potion of Focused Resolve [Rank 1]
+		r(298745),	-- Potion of Focused Resolve [Rank 2]
+		r(300749),	-- Potion of Unbridled Fury [Rank 1]
+		r(300750),	-- Potion of Unbridled Fury [Rank 2]
+		r(300752),	-- Potion of Wild Mending [Rank 1]
+		r(300753),	-- Potion of Wild Mending [Rank 2]
+		r(298729),	-- Superior Battle Potion of Agility [Rank 1]
+		r(298730),	-- Superior Battle Potion of Agility [Rank 2]
+		r(298741),	-- Superior Battle Potion of Intellect [Rank 1]
+		r(298742),	-- Superior Battle Potion of Intellect [Rank 2]
+		r(298747),	-- Superior Battle Potion of Stamina [Rank 1]
+		r(298748),	-- Superior Battle Potion of Stamina [Rank 2]
+		r(298750),	-- Superior Battle Potion of Strength [Rank 1]
+		r(298751),	-- Superior Battle Potion of Strength [Rank 2]
+		r(298734),	-- Superior Steelskin Potion [Rank 1]
+		r(298735),	-- Superior Steelskin Potion [Rank 2]
+	}),
+	filter(TRINKET_F, {
+		r(298995),	-- Abyssal Alchemist Stone
+	}),
+}));
 SL_ALCHEMY = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(309822),	-- Shadowlands Alchemy
 	filter(CONSUMABLES, {
@@ -980,14 +867,16 @@ SL_ALCHEMY = applyclassicphase(SHADOWLANDS_PHASE_ONE, bubbleDown({ ["timeline"] 
 	}),
 	filter(MISC, {
 		r(343679),	-- Crafter's Mark I
+		r(343675),	-- Novice Crafter's Mark
+		r(307142),	-- Shadowghast Ingot
+	}),
+	filter(REAGENTS, {
 		r(307120),	-- Ground Death Blossom
 		r(307123),	-- Ground Marrowroot
 		r(307125),	-- Ground Nightshade
 		r(307124),	-- Ground Rising Glory
 		r(307121),	-- Ground Vigil's Torch
 		r(307122),	-- Ground Widowbloom
-		r(343675),	-- Novice Crafter's Mark
-		r(307142),	-- Shadowghast Ingot
 	}),
 	filter(TRINKET_F, {
 		r(307200),	-- Spiritual Alchemy Stone
@@ -1005,10 +894,12 @@ DF_ALCHEMY = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED
 		r(370731),	-- Writhefire Oil
 	}),
 	filter(MISC, {
+		r(389190),	-- Recraft Equipment
+		r(370711),	-- Transmute: Awakened Air
+	}),
+	filter(REAGENTS, {
 		r(370722),	-- Omnium Draconis
 		r(370717),	-- Primal Convergent
 		r(370748),	-- Reclaim Concoctions
-		r(389190),	-- Recraft Equipment
-		r(370711),	-- Transmute: Awakened Air
 	}),
 }));

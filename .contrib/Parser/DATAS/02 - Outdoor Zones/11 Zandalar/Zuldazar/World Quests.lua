@@ -324,7 +324,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["races"] = HORDE_ONLY,
 				["requireSkill"] = ALCHEMY,
 				["g"] = {
-					i(162258),	-- Recipe: Lightfoot Potion (Rank 3)
+					i(162258),	-- Recipe: Lightfoot Potion [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52342, {	-- Work Order: Monel-Hardened Hoofplates

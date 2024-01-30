@@ -164,20 +164,38 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
 			}),
 			------ Tools of Trade Questline ------
-			q(50121, {	-- Casting the First Stone [A]
+			q(50121, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Casting the First Stone [A]
 				["description"] = "This quest chain requires 150 in Kul Tiran Alchemy.",
 				["provider"] = { "n", 132228 },	-- Elric Whalgrene
 				["coord"] = { 74.2, 6.5, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["timeline"] = { ADDED_8_1_5 },
-			}),
-			q(50112, {	-- Casting the First Stone [H]
+				["g"] = {
+					r(288182, {["u"]=TRAINING}),	-- Potion of Durability
+					r(288176, {["u"]=TRAINING}),	-- Potion of Shifting States (QI!)
+					i(166371),	-- Dried Star Moss Leaves (QI!)
+					i(156653),	-- Potion of Durability (QI!)
+					i(156654),	-- Potion of Shifting States (QI!)
+					i(166372),	-- Sand Shifter Scales (QI!)
+					i(166373),	-- Storm Silver Shards (QI!)
+					i(166374),	-- Test Vial (QI!)
+				},
+			})),
+			q(50112, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Casting the First Stone [H]
 				["description"] = "This quest chain requires 150 in Zandalari Alchemy.",
 				["provider"] = { "n", 122703 },	-- Clever Kumali
 				["coord"] = { 42.2, 38.0, DAZARALOR },
 				["races"] = HORDE_ONLY,
-				["timeline"] = { ADDED_8_1_5 },
-			}),
+				["g"] = {
+					r(288182, {["u"]=TRAINING}),	-- Potion of Durability
+					r(288176, {["u"]=TRAINING}),	-- Potion of Shifting States (QI!)
+					i(166371),	-- Dried Star Moss Leaves (QI!)
+					i(156653),	-- Potion of Durability (QI!)
+					i(156654),	-- Potion of Shifting States (QI!)
+					i(166372),	-- Sand Shifter Scales (QI!)
+					i(166373),	-- Storm Silver Shards (QI!)
+					i(166374),	-- Test Vial (QI!)
+				},
+			})),
 			q(50122, {	-- Ocular Extracts [A]
 				["sourceQuests"] = { 50121 },	-- Casting the First Stone [A]
 				["provider"] = { "n", 132228 },	-- Elric Whalgrene

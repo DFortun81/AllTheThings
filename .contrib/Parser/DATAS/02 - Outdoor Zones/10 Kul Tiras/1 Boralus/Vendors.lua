@@ -283,7 +283,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 74.1, 6.75, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(166422, {	-- Recipe: Silas' Sphere of Transmutation
+					i(166422, {	-- Recipe: Silas' Sphere of Transmutation (RECIPE!)
 						["sourceQuests"] = { 50129 },	-- A Recipe for Success
 					}),
 				},

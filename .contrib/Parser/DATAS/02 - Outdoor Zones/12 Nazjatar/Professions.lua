@@ -1,9 +1,19 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
+root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
 	n(PROFESSIONS, {
+		prof(ALCHEMY, {
+			["crs"] = {
+				153811, -- Instructor Okanu <Profession Trainer> (A)
+				154393, -- Narv <Profession Trainer> (H)
+			},
+			["coords"] = {
+				{ 38.0, 53.2, NAZJATAR },
+				{ 49.2, 61.6, NAZJATAR },
+			},
+			["g"] = NAZJATAR_ALCHEMY,
+		}),
 		prof(BLACKSMITHING, {
 			["crs"] = {
 				153817, -- Instructor Alikana <Profession Trainer> (A)

@@ -191,37 +191,61 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					i(169536),	-- Formula: Oceanic Restoration [Rank 3] (RECIPE!)
 				},
 			}),
-			q(56570, {	-- Work Order: Greater Flask of the Currents (A)
-				["requireSkill"] = ALCHEMY,
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(56770, {	-- Work Order: Greater Flask of the Currents (H)
-				["requireSkill"] = ALCHEMY,
-				["races"] = HORDE_ONLY,
-			}),
 			q(56767, {	-- Work Order: Greater Flask of Endless Fathoms (A)
 				["requireSkill"] = ALCHEMY,
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(169501),	-- Recipe: Greater Flask of Endless Fathoms [Rank 3] (RECIPE!)
+				}
 			}),
 			q(56772, {	-- Work Order: Greater Flask of Endless Fathoms (H)
 				["requireSkill"] = ALCHEMY,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(169501),	-- Recipe: Greater Flask of Endless Fathoms [Rank 3] (RECIPE!)
+				}
+			}),
+			q(56570, {	-- Work Order: Greater Flask of the Currents (A)
+				["requireSkill"] = ALCHEMY,
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(169500),	-- Recipe: Greater Flask of the Currents [Rank 3] (RECIPE!)
+				}
+			}),
+			q(56770, {	-- Work Order: Greater Flask of the Currents (H)
+				["requireSkill"] = ALCHEMY,
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(169500),	-- Recipe: Greater Flask of the Currents [Rank 3] (RECIPE!)
+				}
 			}),
 			q(56768, {	-- Work Order: Greater Flask of the Undertow (A)
 				["requireSkill"] = ALCHEMY,
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(169503),	-- Recipe: Greater Flask of the Undertow [Rank 3] (RECIPE!)
+				}
 			}),
 			q(56774, {	-- Work Order: Greater Flask of the Undertow (H)
 				["requireSkill"] = ALCHEMY,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(169503),	-- Recipe: Greater Flask of the Undertow [Rank 3] (RECIPE!)
+				}
 			}),
 			q(56769, {	-- Work Order: Greater Flask of the Vast Horizon (A)
 				["requireSkill"] = ALCHEMY,
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(169502),	-- Recipe: Greater Flask of the Vast Horizon [Rank 3] (RECIPE!)
+				}
 			}),
 			q(56773, {	-- Work Order: Greater Flask of the Vast Horizon (h)
 				["requireSkill"] = ALCHEMY,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(169502),	-- Recipe: Greater Flask of the Vast Horizon [Rank 3] (RECIPE!)
+				}
 			}),
 			q(56796, {	-- Work Order: Fragrant Kakavia (A)
 				["races"] = ALLIANCE_ONLY,
@@ -243,10 +267,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			i(168333),	-- Recipe: Bil'Tong [Rank 3] (RECIPE!)
 			i(168334),	-- Recipe: Fragrant Kakavia [Rank 3] (RECIPE!)
 			i(168330),	-- Recipe: Mech-Dowel's "Big Mech" [Rank 3] (RECIPE!)
-			i(169500),	-- Recipe: Greater Flask of the Currents [Rank 3] (RECIPE!)
-			i(169501),	-- Recipe: Greater Flask of Endless Fathoms [Rank 3] (RECIPE!)
-			i(169503),	-- Recipe: Greater Flask of the Undertow [Rank 3] (RECIPE!)
-			i(169502),	-- Recipe: Greater Flask of the Vast Horizon [Rank 3] (RECIPE!)
 		}),
 	}),
 })));
