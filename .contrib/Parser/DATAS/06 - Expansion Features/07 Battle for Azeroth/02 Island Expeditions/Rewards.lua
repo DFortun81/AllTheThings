@@ -511,7 +511,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				}),
 				i(173997, {	-- Whispering Reef Salvage
 					["modID"] = 14,
-					["cost"] = { { "c", 1710, 120 }, },	-- 120 Seafarer's Dubloons
 					["sym"] = {{"sub","common_island_expedition_salvage"}},
 					["g"] = {
 						n(ARMOR, {
@@ -547,7 +546,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				}),
 				i(173987, {	-- Elemental Salvage
 					["modID"] = 14,
-					["cost"] = { { "c", 1710, 75 }, },	-- 75 Seafarer's Dubloons
 					["sym"] = {{"sub","common_island_expedition_salvage"}},
 					["g"] = {
 						n(ARMOR, {
@@ -606,7 +604,6 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				}),
 				i(173995, {	-- Venture Co 'Salvage'
 					["modID"] = 14,
-					["cost"] = { { "c", 1710, 50 }, },	-- 50 Seafarer's Dubloons
 					["sym"] = {{"sub","common_island_expedition_salvage"}},
 					["g"] = {
 						n(ARMOR, {

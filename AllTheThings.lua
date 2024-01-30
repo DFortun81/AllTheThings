@@ -4123,7 +4123,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 		end
 		-- app.PrintDebug("Root",root.key,root[root.key],root.modItemID,root.up,root._up);
 		-- app.PrintTable(root)
-		-- app.PrintDebug("Root Collect",root.collectible,root.collected);
+		-- app.PrintDebug("Root Collect",root.collectible,root.collected,root.collectibleAsCost,root.hasUpgrade);
 		-- app.PrintDebug("params",paramA,paramB);
 		-- app.PrintDebug(#nested,"Nested total");
 		-- Nest the objects by matching filter priority if it's not a currency
@@ -4136,7 +4136,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				-- If the obj meets the recursive group filter
 				if app.RecursiveCharacterRequirementsFilter(o) then
 					-- Merge the obj into the merged results
-					-- print("Merge object",o.key,o[o.key])
+					-- app.PrintDebug("Merge object",o.key,o[o.key])
 					tinsert(added, o);
 				end
 			end
@@ -4575,6 +4575,15 @@ local function DeterminePurchaseGroups(group, FillData)
 
 	local collectibles = group.costCollectibles;
 	if collectibles and #collectibles > 0 then
+		-- if app.Debugging then
+		-- 	local sourceGroup = app.CreateRawText("RAW COLLECTIBLES", {
+		-- 		["OnUpdate"] = app.AlwaysShowUpdate,
+		-- 		["skipFill"] = true,
+		-- 		["g"] = {},
+		-- 	})
+		-- 	NestObjects(sourceGroup, collectibles, true)
+		-- 	NestObject(group, sourceGroup, nil, 1)
+		-- end
 		local groupHash = group.hash;
 		-- app.PrintDebug("DeterminePurchaseGroups",groupHash,"-collectibles",collectibles and #collectibles);
 		local groups = {};
@@ -4771,12 +4780,13 @@ end
 -- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
 local function FillGroupsRecursive(group, FillData)
 	if SkipFillingGroup(group, FillData) then
-		-- app.PrintDebug("FGR-SKIP",group.hash)
+		-- app.PrintDebug(Colorize("FGR-SKIP",app.Colors.ChatLinkError),group.hash)
 		return;
 	end
 	-- app.PrintDebug("FGR",group.hash)
 
 	local groups;
+	local ignoreSkip = group.sym or group.headerID or group.classID
 	-- Determine Cost/Crafted/Symlink groups
 	groups = ArrayAppend(groups,
 		DeterminePurchaseGroups(group, FillData),
@@ -4785,26 +4795,25 @@ local function FillGroupsRecursive(group, FillData)
 		DetermineSymlinkGroups(group),
 		DetermineNPCDrops(group, FillData));
 
+	-- Adding the groups normally based on available-source priority
+	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter);
+
 	if groups and #groups > 0 then
-		-- app.PrintDebug("FillGroups-MergeResults",group.hash,groups and #groups)
-		-- mark this group as being filled since it actually received filled content (unless it's a basic header/class header)
-		if not (
-			group.headerID or
-			group.classID
-		) then
+		-- app.PrintDebug("FillGroups-MergeResults",group.hash,#groups)
+		AssignChildren(group);
+		-- mark this group as being filled since it actually received filled content (unless it's ignored for being skipped)
+		if not ignoreSkip then
 			local groupHash = group.hash;
 			if groupHash then
-				-- app.PrintDebug("FG-Included",groupHash,#groups)
+				-- app.PrintDebug("FGA-Included",groupHash,#groups)
 				FillData.Included[groupHash] = true;
 			end
 		end
 	end
-	-- Adding the groups normally based on available-source priority
-	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter);
 
 	local g = group.g;
 	if g then
-		-- app.PrintDebug(".g",group.hash,#group.g)
+		-- app.PrintDebug(".g",group.hash,#g)
 		-- Then nest anything further
 		for _,o in ipairs(g) do
 			FillGroupsRecursive(o, FillData);
@@ -4815,7 +4824,7 @@ end
 -- over multiple frames to reduce stutter
 local function FillGroupsRecursiveAsync(group, FillData)
 	if SkipFillingGroup(group, FillData) then
-		-- app.PrintDebug("FGRA-SKIP",group.hash)
+		-- app.PrintDebug(Colorize("FGRA-SKIP",app.Colors.ChatLinkError),group.hash)
 		return;
 	end
 	-- app.PrintDebug("FGRA",group.hash)
@@ -4830,12 +4839,11 @@ local function FillGroupsRecursiveAsync(group, FillData)
 		DetermineSymlinkGroups(group),
 		DetermineNPCDrops(group, FillData));
 
-	-- if groups and #groups > 0 then
-	-- 	app.PrintDebug("FillGroupsAsync-MergeResults",group.hash,groups and #groups)
-	-- end
 	-- Adding the groups normally based on available-source priority
 	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter);
-	if #groups > 0 then
+
+	if groups and #groups > 0 then
+		-- app.PrintDebug("FillGroupsAsync-MergeResults",group.hash,#groups)
 		AssignChildren(group);
 		app.DirectGroupUpdate(group);
 		-- mark this group as being filled since it actually received filled content (unless it's ignored for being skipped)
@@ -4850,8 +4858,8 @@ local function FillGroupsRecursiveAsync(group, FillData)
 
 	local g = group.g;
 	if g then
+		-- app.PrintDebug(".g",group.hash,#g)
 		local Run = app.FillRunner.Run;
-		-- app.PrintDebug(".g",group.hash,#group.g)
 		-- Then nest anything further
 		for _,o in ipairs(g) do
 			Run(FillGroupsRecursiveAsync, o, FillData);
@@ -11445,8 +11453,10 @@ function app:CreateMiniListForGroup(group)
 			-- clone/search initially so as to not let popout operations modify the source data
 			group = CreateObject(group);
 
-			-- app.PrintDebug("clone")
+			-- app.PrintDebug(Colorize("clone",app.Colors.ChatLink))
 			-- app.PrintTable(group)
+			-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
+			-- app.PrintTable(group.g)
 
 			-- make a search for this group if it is an item/currency/achievement and not already a container for things
 			local key = group.key;
@@ -11456,23 +11466,30 @@ function app:CreateMiniListForGroup(group)
 				local groupSearch = GetCachedSearchResults(cmd, SearchForLink, cmd);
 				app.SetSkipPurchases(0);
 
-				-- app.PrintDebug("search")
+				-- app.PrintDebug(Colorize("search",app.Colors.ChatLink))
 				-- app.PrintTable(groupSearch)
+				-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
+				-- app.PrintTable(groupSearch.g)
 				-- Sometimes we want a specific Thing (/att i:147770)
 				-- but since it is keyed by a different ID (spell 242155)
 				-- this re-search replaces with an alternate item (147580)
 				-- so instead we should only merge properties from the re-search to ensure initial data isn't replaced due to alternate data matching
 				MergeProperties(group, groupSearch, true)
 				-- g is not merged automatically
+				-- app.PrintDebug("Copy .g",#groupSearch.g)
 				group.g = groupSearch.g
+				-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
+				-- app.PrintTable(group.g)
 				-- This isn't needed for the example noted anymore...
 				-- if not group.key and key then
 				-- 	group.key = key;	-- Dunno what causes this in GetCachedSearchResults, but assigning this before calling to the new CreateObject function fixes currency popouts for currencies that aren't in the addon. /att currencyid:1533
 				-- 	-- CreateMiniListForGroup missing key response, will likely fail to Create a Class Instance!
 				-- end
 
-				-- app.PrintDebug("merge")
+				-- app.PrintDebug(Colorize("merge",app.Colors.ChatLink))
 				-- app.PrintTable(group)
+				-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
+				-- app.PrintTable(group.g)
 			else
 				app.SetSkipPurchases(2);
 				app.FillGroups(group);
@@ -11481,6 +11498,10 @@ function app:CreateMiniListForGroup(group)
 		end
 
 		-- Insert the data group into the Raw Data table.
+		-- app.PrintDebug(Colorize("popout",app.Colors.ChatLink))
+		-- app.PrintTable(group)
+		-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
+		-- app.PrintTable(group.g)
 		popout:SetData(group);
 		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
 		-- if not group.isBaseSearchResult then
