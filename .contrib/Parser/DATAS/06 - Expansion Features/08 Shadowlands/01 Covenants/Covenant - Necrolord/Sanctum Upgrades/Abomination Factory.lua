@@ -1387,6 +1387,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									["coord"] = { 55.3, 68.6, MALDRAXXUS },
 									["crs"] = { 167756 },	-- Mama Tomalin (Ghost)
 									["g"] = {
+										i(183597),	-- Fleshstitched Cookie
 										i(181809),	-- Tomalins Seasoning Crystal
 									},
 								}),

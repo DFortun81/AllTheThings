@@ -59,6 +59,27 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					})),
 				},
 			}),
+			n(164725, {	-- Tanor <Food & Drink>
+				["coord"] = { 65.0, 19.6, ARDENWEALD },
+				["g"] = {
+					i(173759),	-- Candied Brightbark
+					i(178226),	-- Charred Runeflank
+					i(173762),	-- Flask of Ardendew
+					i(173761),	-- Glazed Glowberries
+					i(178228),	-- Glittersnap Snowpeas
+					i(178216),	-- Grilled Slumbershrooms
+					i(178222),	-- Honeyplum Pie
+					i(178227),	-- Midnight Starpepper
+					i(178219),	-- Mulled Faewine
+					i(178223),	-- Poached Strider Egg
+					i(178247),	-- Ripe Wintermelon
+					i(178224),	-- Steamed Gorm Tail
+					i(173760),	-- Sylberry Snowcake
+					i(178252),	-- Torchberry Bundle
+					i(178225),	-- Wild Hunter's Stew
+					i(178218),	-- Wintermelon Brandy
+				},
+			}),
 		}),
 	}),
 })));

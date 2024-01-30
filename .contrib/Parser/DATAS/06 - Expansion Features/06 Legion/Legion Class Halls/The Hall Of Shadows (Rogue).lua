@@ -112,7 +112,9 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 							["coord"] = { 42.3, 75.9, THE_HALL_OF_SHADOWS },
 							["g"] = {
-								i(173531),	-- Blasted Lands Scroll (QI!)
+								i(173531, {	-- Blasted Lands Scroll (QI!)
+									["timeline"] = { ADDED_9_0_1 },
+								}),
 								i(137676),	-- Coded Message (QI!)
 							},
 						}),

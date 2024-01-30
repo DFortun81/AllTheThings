@@ -2564,68 +2564,34 @@ root(ROOTS.Unsorted, {
 			i(171277),	-- [DNT] Spiritual Intellect Flask \\ Spiritual Intellect Flask
 			i(171279),	-- [DNT] Spiritual Strength Flask \\ Spiritual Strength Flask
 			i(183902),	-- A Faintly Glowing Seed
-			i(175840),	-- A Light Snack
 			i(183877),	-- A Meandering Story
 			i(183881),	-- A Naughty Story
-			i(176083),	-- A Personal Affront
-			i(178571),	-- A Slimy Correspondence
 			i(183880),	-- A Travel Journal
 			i(183878),	-- A Wandering Tale
-			i(174957),	-- Abel's Rapier
-			i(181285),	-- Abhorrent Design
-			i(183600),	-- Abomination Parts
 			i(172176),	-- Abomination Service Stub
 			i(183616),	-- Accursed Keepsake
 			i(183137),	-- Acolyte's Corpse
-			i(178019),	-- Additional Volumes of Victory
-			i(172518),	-- Adrima's Lily
-			i(178558),	-- Afflictor's Key
-			i(182356),	-- Aged Windcheese
 			i(181463),	-- Alchemist's Crate of the Anonymous Buyer
-			i(180269),	-- Althera's Field Report
 			i(180376),	-- Amalgamation of Sin
-			i(183400),	-- Amethystine Powder
-			i(181174),	-- Amulet of the Horsemen \\ Ebon Blade Amulet
 			i(175082),	-- Amulet of the Realms
 			i(183879),	-- An Escapist Novel
 			i(174062),	-- Ancient Anima Staff
-			i(178576),	-- Ancient Broker Headpiece
 			i(174940),	-- Ancient Heartwood
 			i(183722),	-- Ancient Insignia
 			i(172024),	-- Ancient Maldracite Weapon
 			i(181248),	-- Ancient Sinstone
 			i(181365),	-- Anh'Qiraj Statue
-			i(182291),	-- Anima Cage
-			i(174102),	-- Anima Canister \\ Anima Cage
-			i(178043),	-- Anima Conflux
 			i(181480),	-- Anima Container 2
 			i(181481),	-- Anima Container 3
 			i(181482),	-- Anima Container 3
-			i(173691),	-- Anima Drainer
-			i(179719),	-- Anima Lure
 			i(174058),	-- Anima Reserve
-			i(177839),	-- Anima Siphon
-			i(175413),	-- Anima Vial
-			i(174934),	-- Anima-charged Maldracite
-			i(183041),	-- Anima-Infused Silk \\ Anima Infused Silk
 			i(175972),	-- Anima-Infused Venom \\ Anima Infused Venom
-			i(179922),	-- Animacone
-			i(180172),	-- Animacone
 			i(180447),	-- Animacone
-			i(172948),	-- Animacone
-			i(177878),	-- Animacone
-			i(179389),	-- Animacone \\ Anima Acorn
 			i(175028),	-- Animana Cores
-			i(183436),	-- Animated Catalyst
-			i(175968),	-- Animyllis Bloom
-			i(176812),	-- Animyllis Bloom \\ Anima Bloom [PH]
 			i(181683),	-- Anointed Talisman
 			i(178031),	-- Anointing Chime
 			i(177036),	-- Aquatic Enticer
 			i(182473),	-- Archivam Tome
-			i(178140),	-- Archonic Resonator
-			i(178041),	-- Archonic Resonator
-			i(178717),	-- Ardenmoth Cocoon
 			i(181542),	-- Ardenweald Anima 3
 			i(179830),	-- Ardenweald Covenant Mail Chest
 			i(179861),	-- Ardenweald Covenant Mail Chest
@@ -2666,39 +2632,25 @@ root(ROOTS.Unsorted, {
 			i(178079),	-- Ardenweald Uncommon Treasure
 			i(178089),	-- Ardenweald Unique Loot
 			i(175923),	-- Ardenwood
-			i(175791),	-- Ariella's Wing
 			i(183792),	-- Artisan's Implement
 			i(182095),	-- Ascension Calling: Kleia
 			i(178924),	-- Ash Clod
-			i(175826),	-- Ash Crisps
 			i(182479),	-- Ashfallen Key
-			i(182303),	-- Assassin's Soulcloak
 			i(180450),	-- Assorted Bolts
-			i(182734),	-- Assorted Curios \\ [PH] Broker Junk
 			i(173735),	-- Atonement Crypt Key
-			i(178682),	-- Atticus's Ledger
 			i(175135),	-- Atticus's Spare Supplies
-			i(174998),	-- Avowed Crypt Key \\ Atonement Crypt Keys
 			i(175050),	-- Bag o' Conduits
 			i(173013),	-- Bag of Faerie Dust
 			i(180439),	-- Bagged Frog
 			i(178493),	-- Baine Bloodhoof
-			i(182302),	-- Band Promotional Posters
-			i(178496),	-- Baron's Warhorn
 			i(178084),	-- Bastion Epic Treasure
 			i(178083),	-- Bastion Rare Treasure
 			i(178082),	-- Bastion Uncommon Treasure
 			i(178090),	-- Bastion Unique Loot
-			i(173798),	-- Battered Journal
-			i(172020),	-- Battered Weapon
 			i(174385),	-- Battle Supplies
 			i(183758),	-- Battleworn Chainmail
-			i(181162),	-- Beacon Trigger
-			i(173023),	-- Bear Witness: The Watcher's Code
 			i(174674),	-- Bell of Remembrance
 			i(178463),	-- Bestial Epigraph
-			i(175795),	-- Betrayer's Eye
-			i(182645),	-- Binding of the Banished One
 			i(182249),	-- Bindings of Fleshcrafting \\ Bracers of Control
 			i(178768),	-- Binds of the Unwitting Servant
 			i(171429),	-- Blacksmithing Reagent 02
@@ -2709,39 +2661,19 @@ root(ROOTS.Unsorted, {
 			i(171434),	-- Blacksmithing Reagent 07
 			i(171435),	-- Blacksmithing Reagent 08
 			i(172889),	-- Blackthorn Antidote
-			i(183840),	-- Blackthorn Clay
-			i(171343),	-- Blank Parchment \\ Official Venthyr Document
 			i(178519),	-- Blank Sinstone
-			i(173531),	-- Blasted Lands Scroll
-			i(173699),	-- Blasted Lands Scroll
-			i(180946),	-- Blessed Armament
 			i(175041),	-- Blinding Anima
 			i(180890),	-- Bloodstained Gambrel
-			i(181956),	-- Bloodthroated Grouper \\ Revendreth Fishing Item
 			i(177837),	-- Bloodtusk Skull
-			i(183620),	-- Bloody Tusks
-			i(181251),	-- Blooming Lasher Spur
 			i(175148),	-- Blooming Vale
-			i(174094),	-- Boian's Fangs \\ Rapier of the Fearless
-			i(174749),	-- Bone Splinter
 			i(173700),	-- Bonebinder Zal's Key
 			i(179317),	-- Bonemetal
 			i(173380),	-- Book of the Unspeakable
 			i(181281),	-- Boss 10 Lure
 			i(172900),	-- Bounty Notes
-			i(182199),	-- Brightspark's Bottled Blaze
 			i(174854),	-- Brimming Animus Core
 			i(178543),	-- Broiled Blood Sausage
 			i(180286),	-- Broken Fishing Pole
-			i(183119),	-- Broker Bauble
-			i(182956),	-- Broker Hunting Rune \\ Genesis Rune
-			i(174497),	-- Brushberry
-			i(180031),	-- Bulbous Seaweed Stalk
-			i(174467),	-- Bulging Digestive Sac
-			i(182779),	-- Bundle of "Modified" Reagents
-			i(174997),	-- Bundle of Lumber
-			i(182679),	-- Bundle of Reagents
-			i(176760),	-- Buzzkill's Stinger
 			i(180829),	-- Cache of Anima Tolls
 			i(173526),	-- Caer Darrow Scroll
 			i(174023),	-- Calibrated Mawstone
@@ -2790,9 +2722,6 @@ root(ROOTS.Unsorted, {
 			i(180785),	-- Condensed Essence
 			i(178142),	-- Condensed Stygia
 			i(172496),	-- Conduit Keystone
-			i(182310),	-- Confiscated Instruments
-			i(182311),	-- Confiscated Stage Lights
-			i(182312),	-- Confiscated Stage Props
 			i(175036),	-- Conservation
 			i(174233),	-- Construct Field Plan
 			i(175757),	-- Construct Supply Key
@@ -2812,7 +2741,6 @@ root(ROOTS.Unsorted, {
 			i(175030),	-- Critical Swiftmend
 			i(179375),	-- Crude Diary Key
 			i(167209),	-- Crude Map
-			i(173873),	-- Crumpled Journal Page
 			i(183797),	-- Crusader's Dressing
 			i(183689),	-- Crusader's Dressing
 			i(180463),	-- Crusty Scepter
@@ -2822,7 +2750,6 @@ root(ROOTS.Unsorted, {
 			i(180607),	-- Cypher of Blinding
 			i(180626),	-- Cypher of Melody
 			i(178556),	-- Cypher of Relocation
-			i(174095),	-- Daciana's Fangs \\ Ledger of Forgotten Souls
 			i(175012),	-- Dancing Cricket
 			i(171967),	-- Dark Cowl
 			i(180340),	-- Dark Deceits and Diversions
