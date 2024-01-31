@@ -1432,7 +1432,7 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10707, {	-- The Ata'mal Terrace
-						["qg"] = 21770,	-- Akama
+						["qg"] = 21700,	-- Akama
 						["sourceQuest"] = 10706,	-- A Mysterious Portent
 						["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
 					}),
