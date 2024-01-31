@@ -574,8 +574,6 @@ root(ROOTS.Unsorted, {
 			filter(BATTLE_PETS, {
 				i(211432),	-- Teele (PET!) [Trading Post]
 				i(212606),	-- Sarge (PET!) [Hearthstone]
-				i(212700),	-- Nelle (PET!) [Trading Post]
-				i(212722),	-- Buggsy (PET!) [Trading Post]
 				i(212786),	-- Lovely Duckling (PET!) [Noblegarden]
 				i(212791),	-- Beetriz (PET!) [Trading Post]
 				i(208446),	-- Fyrn (PET!) [Promotion]
@@ -583,9 +581,6 @@ root(ROOTS.Unsorted, {
 			filter(COSMETIC, {
 				i(211926),	-- Riders of Azeroth Tabard [Cup]
 				i(211928),	-- Ruby Riders of Azeroth Tabard [Cup]
-
-				------ Trading Post ------
-				i(212382),	-- Fluorescent Splitblade
 
 				------ Skyborn Blades ------
 				i(212577),	-- Arsenal: Skyborn Blades
@@ -669,7 +664,6 @@ root(ROOTS.Unsorted, {
 				i(212789),	-- Champion's Jade Cleaver
 				i(190890),	-- Chipped Warblade
 				i(212544),	-- Classic Aquatic Tabard
-				i(212374),	-- Classic Rosy Tabard
 				i(212990),	-- Classic Violet Tabard
 				i(212790),	-- Codex of Classic Conjurations
 				i(212530),	-- Corroded Augari Defender
@@ -688,7 +682,6 @@ root(ROOTS.Unsorted, {
 				i(212621),	-- Dueler's Lively Shoulder Cape
 				i(212628),	-- Dueler's Midnight Shoulder Cape
 				i(212618),	-- Dueler's Plum Shoulder Cape
-				i(212572),	-- Dueler's Rosy Shoulder Cape
 				i(212626),	-- Dueler's Sepia Shoulder Cape
 				i(212615),	-- Dueler's Snowy Shoulder Cape
 				i(212614),	-- Dueler's Sunny Shoulder Cape
@@ -700,7 +693,6 @@ root(ROOTS.Unsorted, {
 				i(190857),	-- Gilded Emerald Longcloak
 				i(212787),	-- Gloves of the Violet Gala
 				i(212788),	-- Gossamer Emerald Gown
-				i(212373),	-- Gossamer Magenta Gown
 				i(212543),	-- Gossamer Teal Gown
 				i(212555),	-- Guise of the Royal Masquerade
 				i(212556),	-- Guise of the Shining Masquerade
@@ -708,10 +700,8 @@ root(ROOTS.Unsorted, {
 				i(213077),	-- Lavender Bow-quet
 				i(213065),	-- Lavish Floral Edge
 				i(213068),	-- Lavish Floral Stalk
-				i(190895),	-- Lost Crusader's Amethyst Battleaxe
 				i(212375),	-- Lovely Rosy Longbow
 				i(212381),	-- Love's Bulwark
-				i(212372),	-- Magenta Masquerade Gloves
 				i(213076),	-- Orchid Bow-quet
 				i(213062),	-- Paradise's Golden Axe
 				i(213063),	-- Paradise's Ruby Axe
@@ -1109,7 +1099,6 @@ root(ROOTS.Unsorted, {
 			i(211355),	-- Eternal Pink Rose
 			i(211354),	-- Eternal White Rose
 			i(211352),	-- Eternal Yellow Rose
-			i(190670),	-- Sanguine Bouquet
 
 			------ Hearthstone ------
 			-- Misc

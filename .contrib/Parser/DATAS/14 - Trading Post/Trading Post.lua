@@ -113,6 +113,11 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		q(76113, {	-- Report to the Trading Post -- Jan 2024
 			["timeline"] = { ADDED_10_2_0 },
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
+			["u"] = REMOVED_FROM_GAME,
+		}),
+		q(76114, {	-- Report to the Trading Post -- Feb 2024
+			["timeline"] = { ADDED_10_2_5 },
+			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
 	}),
 	n(YEAR2023, {
@@ -1430,20 +1435,65 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 			filter(BATTLE_PETS, {
-				
+				i(212700),	-- Nelle (PET!) [Trading Post]250
+				i(212722),	-- Buggsy (PET!) [Trading Post]350
 			}),
 			filter(MOUNTS, {
 				i(212227, { -- Reins of the Fur-Endship Fox
 					["cost"] = {{"c", TRADERS_TENDER, 750}},
+				}),
+				i(, { -- X-53 Touring Rocket
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+			}),
+			filter(TOYS, {
+				i(, {	-- Mannequin Charm
+					["cost"] = {{"c", TRADERS_TENDER, 10}},
 				}),
 			}),
 			filter(COSMETIC, {
 				i(212369, { -- Battlefield Lover's Bow
 					["cost"] = {{"c", TRADERS_TENDER, 250}},
 				}),
+				i(190725, {	-- Ensemble: Battlewraps of the Honored Valarjar
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+					["g"] = {
+						i(190716),	-- Shoulderpads of the Honored Valarjar
+						i(190717),	-- Wristguards of the Honored Valarjar
+						i(190718),	-- Drape of the Honored Valarjar
+						i(190719),	-- Hood of the Honored Valarjar
+						i(190720),	-- Leggings of the Honored Valarjar
+						i(190721),	-- Strap of the Honored Valarjar
+						i(190722),	-- Boots of the Honored Valarjar
+						i(190723),	-- Grips of the Honored Valarjar
+						i(190724),	-- Tunic of the Honored Valarjar
+					},
+				}),
+				i(210865),	-- Blademaster's Crimson Stones200
+				i(212374),	-- Classic Rosy Tabard100
 				i(212545, { -- Crown of the White Rose
 					["cost"] = {{"c", TRADERS_TENDER, 250}},
 				}),
+				i(212572),	-- Dueler's Rosy Shoulder Cape75
+				i(202170, { -- Ensemble: Vagabond's Rosy Threads
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+						i(202168), -- Vagabond's Rosy Cape
+						i(202169), -- Vagabond's Rosy Hood
+					},
+				}),
+				--i(, { -- Ensemble: Wanderer’s Rosy Trappings
+				--	["cost"] = {{"c", TRADERS_TENDER, 100}},
+				--	["g"] = {
+					--	i(), -- Vagabond's Rosy Cape
+					--	i(), -- Vagabond's Rosy Hood
+				--	},
+				--}),
+				--Fanciful Corsage 100
+				i(212382),	-- Fluorescent Splitblade250
+				--Gothic Corsage100
+				i(212373),	-- Gossamer Magenta Gown150
+				i(190895),	-- Lost Crusader's Amethyst Battleaxe200
 				i(212381, { -- Love's Bulwark
 					["cost"] = {{"c", TRADERS_TENDER, 200}},
 				}),
@@ -1459,6 +1509,16 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(212377, { -- Love Witch's Rosy Wand
 					["cost"] = {{"c", TRADERS_TENDER, 200}},
 				}),
+				i(212372),	-- Magenta Masquerade Gloves100
+				i(190909, { -- Ruby Felfire Splitblade
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+				}),
+				i(190910, { -- Ruby Felfire Bulwark
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+				}),
+				--Rosy Corsage100
+				i(190670),	-- Sanguine Bouquet100
+				i(210858),	-- Trader's Rosy Sarong100
 				i(212378, { -- Twilight Witch's Gothic Scepter
 					["cost"] = {{"c", TRADERS_TENDER, 200}},
 				}),
@@ -1515,20 +1575,6 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(COSMETIC, {
 			-- Ensemble
-			i(190725, {	-- Ensemble: Battlewraps of the Honored Valarjar
-				["cost"] = {{"c", TRADERS_TENDER, 850}},
-				["g"] = {
-					i(190716),	-- Shoulderpads of the Honored Valarjar
-					i(190717),	-- Wristguards of the Honored Valarjar
-					i(190718),	-- Drape of the Honored Valarjar
-					i(190719),	-- Hood of the Honored Valarjar
-					i(190720),	-- Leggings of the Honored Valarjar
-					i(190721),	-- Strap of the Honored Valarjar
-					i(190722),	-- Boots of the Honored Valarjar
-					i(190723),	-- Grips of the Honored Valarjar
-					i(190724),	-- Tunic of the Honored Valarjar
-				},
-			}),
 			i(190796, {	-- Ensemble: Slumbering Caldera Regalia
 				["cost"] = {{"c", TRADERS_TENDER, 850}},
 				["g"] = {
@@ -1841,14 +1887,12 @@ root(ROOTS.NeverImplemented, {
 					i(210855),	-- Trader's Lively Sarong
 					i(210848),	-- Trader's Midnight Sarong
 					i(210859),	-- Trader's Plum Sarong
-					i(210858),	-- Trader's Rosy Sarong
 					i(210850),	-- Trader's Sepia Sarong
 					i(210862),	-- Trader's Snowy Sarong
 					i(210863),	-- Trader's Sunny Sarong
 					i(210860),	-- Trader's Violet Sarong
 
 					------ Stones ------
-					i(210865),	-- Blademaster's Crimson Stones
 					i(210867),	-- Blademaster's Lively Stones
 					i(210868),	-- Blademaster's Violet Stones
 
