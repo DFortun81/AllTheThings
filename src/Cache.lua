@@ -537,7 +537,7 @@ local function _CacheFields(group)
 end
 
 ---- Retail Differences ----
-if tonumber(app.GameBuildVersion) > 100000 then
+if app.IsRetail then
 	-- 'altQuests' in Retail pretending to be the same quest as a different quest actually causes problems for searches
 	-- and it makes more sense to not pretend they're the same than to hamper existing logic with more conditionals to
 	-- make sure we actually get the data that we search for
