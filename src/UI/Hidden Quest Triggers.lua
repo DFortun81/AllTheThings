@@ -10,7 +10,7 @@ app:GetWindow("Hiddent Quest Triggers", {
 	OnLoad = function(self, settings)
 		local hqt = app.Categories.HiddenQuestTriggers;
 		if hqt then
-			self.hqtData = app.CacheFields({
+			self.data = app.CacheFields({
 				text = "Hidden Quest Triggers",
 				icon = app.asset("Interface_Quest"),
 				description = "These quests are triggered by completing things in the game",
@@ -18,15 +18,7 @@ app:GetWindow("Hiddent Quest Triggers", {
 				g = hqt,
 				_hqt = true,
 			}, true);
-		end
-	end,
-	OnRebuild = function(self)
-		if not self.data then
-			local hqtData = self.hqtData;
-			if hqtData then
-				self.data = hqtData;
-				return true;
-			end
+			self:AssignChildren();
 		end
 	end,
 });

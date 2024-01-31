@@ -10,7 +10,7 @@ app:GetWindow("Hiddent Achievement Triggers", {
 	OnLoad = function(self, settings)
 		local hat = app.Categories.HiddenAchievementTriggers;
 		if hat then
-			self.hqtData = app.CacheFields({
+			self.data = app.CacheFields({
 				text = "Hidden Achievement Triggers",
 				icon = app.asset("Category_Achievements"),
 				description = "Hidden Achievement Triggers",
@@ -18,15 +18,7 @@ app:GetWindow("Hiddent Achievement Triggers", {
 				g = hat,
 				_hqt = true,
 			}, true);
-		end
-	end,
-	OnRebuild = function(self)
-		if not self.data then
-			local hqtData = self.hqtData;
-			if hqtData then
-				self.data = hqtData;
-				return true;
-			end
+			self:AssignChildren();
 		end
 	end,
 });
