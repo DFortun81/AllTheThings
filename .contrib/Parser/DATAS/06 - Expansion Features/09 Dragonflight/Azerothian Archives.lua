@@ -114,9 +114,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				i(213176, { -- Preserved Isles Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
-					["groups"] = {
-						i(208737),	-- Hole-Punched Bakar Tooth (QI!)
-					},
 				}),
 				i(213177, {	-- Immaculate Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
