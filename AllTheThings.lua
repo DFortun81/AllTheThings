@@ -5404,7 +5404,8 @@ function app:ReceiveSyncRequest(sender, battleTag)
 	AllTheThingsAD.LinkedAccounts[sender] = true;
 
 	-- Generate the sync string (there may be several depending on how many alts there are)
-	local msgs = {};
+	-- TODO: use app.TableConcat()
+	-- local msgs = {};
 	local msg = "?\tsyncsum";
 	for guid,character in pairs(ATTCharacterData) do
 		if character.lastPlayed then
@@ -6063,7 +6064,6 @@ app.AddEventHandler("OnReady", function()
 			local waypointsByMapID = tomTom.waypoints;
 			if not waypointsByMapID then return false; end
 
-			local any = false;
 			for mapID,waypointsByMap in pairs(waypointsByMapID) do
 				for waypointUID,waypoint in pairs(waypointsByMap) do
 					if waypoint.from == "ATT" then
@@ -9277,7 +9277,7 @@ itemTooltipHarvesterFields.text = function(t)
 									print("Empty Races",t.info.itemID)
 								end
 							elseif string.find(text, " Only") then
-								local faction,list,c = strsplit(" ", text);
+								local faction, _, c = strsplit(" ", text);
 								if not c then
 									faction = strtrim(faction);
 									if faction == "Alliance" then
@@ -13318,7 +13318,8 @@ RowOnEnter = function (self)
 							end
 						elseif legacyLoot then
 							-- Not available at all, best loot spec is the one with the most number of items in it.
-							local most, bestSpecID = 0;
+							local most = 0;
+							local bestSpecID
 							for i=1,numSpecializations,1 do
 								local id = GetSpecializationInfo(i);
 								local specHit = specHits[id] or 0;
@@ -16144,16 +16145,6 @@ customWindowUpdates["RaidAssistant"] = function(self)
 			local raidassistant, lootspecialization, dungeondifficulty, raiddifficulty, legacyraiddifficulty;
 
 			-- Raid Assistant
-			local difficultyLookup = {
-				personalloot = "Personal Loot",
-				group = "Group Loot",
-				master = "Master Loot",
-			};
-			local difficultyDescriptions = {
-				personalloot = L["PERSONAL_LOOT_DESC"],
-				group = "Group loot, round-robin for normal items, rolling for special ones.\n\nClick twice to create a group automatically if you're by yourself.",
-				master = "Master looter, designated player distributes loot.\n\nClick twice to create a group automatically if you're by yourself.",
-			};
 			local switchDungeonDifficulty = function(row, button)
 				self:SetData(raidassistant);
 				SetDungeonDifficultyID(row.ref.difficultyID);
@@ -18738,7 +18729,7 @@ app.LoadDebugger = function()
 					DelayedCallback(AddMerchant, 1, UnitGUID("npc"));
 				elseif e == "TRADE_SKILL_LIST_UPDATE" then
 					local tradeSkillID = app.GetTradeSkillLine();
-					local currentCategoryGroup, currentCategoryID, categories = {}, -1, {};
+					local currentCategoryID, categories = -1, {};
 					local categoryList, rawGroups = {}, {};
 					local categoryIDs = { C_TradeSkillUI.GetCategories() };
 					for i = 1,#categoryIDs do
@@ -19263,7 +19254,6 @@ app.OpenAuctionModule = function(self)
 		window:Hide();
 
 		-- Cache some functions to make them faster
-		local _GetAuctionItemInfo, _GetAuctionItemLink = GetAuctionItemInfo, GetAuctionItemLink;
 		local origSideDressUpFrameHide, origSideDressUpFrameShow = SideDressUpFrame.Hide, SideDressUpFrame.Show;
 		SideDressUpFrame.Hide = function(...)
 			origSideDressUpFrameHide(...);
