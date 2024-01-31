@@ -251,6 +251,7 @@ local QUANTUM_GROUP = sharedData({
 		filter(PLATE, {
 			q(77630, {	-- when you learn everything from Quantum Gloves (Plate)
 				["name"] = "Quantum Gloves (Plate) completed.",
+				["collectible"] = false,
 			}),
 			ig(114386),	-- Gauntlets of Grievous Storms		(NYI)
 			ig(108080),	-- Hardened Draenic Steel Guantlets	(NYI)
@@ -366,6 +367,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(134604),	-- Vanguard Hacker						(Removed)
 	}),
 	i(208117, {	-- Quantum Bow
+		q(77603, {	-- when you learn everything from Quantum Bow
+			["name"] = "Quantum Bow completed.",
+			["collectible"] = false,
+		}),
 		ig(186414, {	-- Rae'shalare, Death's Whisper (LFR)	(NYI)
 			["bonusID"] = 451,
 		}),
@@ -705,6 +710,9 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				}),
 				q(77597, {	-- when you learn everything from Quantum Axe (One-Handed)
 					["name"] = "Quantum Axe (One-Handed) completed.",
+				}),
+				q(77603, {	-- when you learn everything from Quantum Bow
+					["name"] = "Quantum Bow completed.",
 				}),
 				q(77604, {	-- when you learn everything from Quantum Crossbow
 					["name"] = "Quantum Crossbow completed.",
@@ -1233,7 +1241,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- Quantum Items
 		-- q(77595),	-- when you learn everything from Quantum ?
 		-- q(77598),	-- when you learn everything from Quantum ?
-		-- q(77603),	-- when you learn everything from Quantum ?
 		-- q(77605),	-- when you learn everything from Quantum ?
 		-- q(77606),	-- when you learn everything from Quantum ?
 		-- q(77608),	-- when you learn everything from Quantum ?
