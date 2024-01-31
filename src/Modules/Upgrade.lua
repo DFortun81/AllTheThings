@@ -6,10 +6,12 @@ local _, app = ...;
 -- Encapsulates the functionality for handling and checking Upgrade information
 
 -- Global locals
-local floor, 	  type, strsplit, tonumber
-	= math.floor, type, strsplit, tonumber;
+local floor, 	  type, strsplit, tonumber, ipairs, pairs
+	= math.floor, type, strsplit, tonumber, ipairs, pairs
 
 -- App locals
+local SearchForFieldContainer, IsRetrieving
+= app.SearchForFieldContainer, app.Modules.RetrievingData.IsRetrieving
 
 -- Upgrade API Implementation
 -- Access via AllTheThings.Modules.Upgrade
@@ -17,10 +19,12 @@ local api = {};
 app.Modules.Upgrade = api;
 
 -- Module locals
-local CreateItem
+local CreateItem, DGU, TransmogLastRefresh
+local Runner = app.CreateRunner("upgrade");
 
 app.AddEventHandler("OnLoad", function()
 	CreateItem = app.CreateItem;
+	DGU = app.DirectGroupUpdate
 end)
 
 -- Static mapping of BonusID -> Next Unlock BonusID for a corresponding Item. Unlock will most-likely always be an Appearance
@@ -277,8 +281,72 @@ local function HasUpgrade(t)
 	-- end
 
 	t._up = up;
-	-- app.PrintDebug("HU:",up.__type,up.collected,t.modItemID,up.modItemID)
+	-- app.PrintDebug("HU:",up.__type,t.isUpgrade,t.modItemID,up.modItemID)
 	return up;
+end
+
+local UpdateUpgradeGroup
+local function CheckIsUpgrade(t)
+	local upgrade = t._up or HasUpgrade(t);
+	if upgrade then
+		t.isUpgrade = upgrade.collectible and not upgrade.collected
+		-- app.PrintDebug("isUpgrade",t.link,t.isUpgrade)
+		Runner.Run(DGU, t)
+		return
+	end
+	-- if it had no upgrade and no link, it isn't cached in game which means
+	-- blizz returns wrong data in some appearance API calls. very nice.
+	-- queue this group up to try again since we are only running this logic on groups which we *know*
+	-- have upgrades
+	if IsRetrieving(t.link) then
+		-- app.PrintDebug("re-try upgrade",t.link)
+		Runner.Run(UpdateUpgradeGroup, t)
+	end
+end
+
+UpdateUpgradeGroup = function(ref)
+	-- app.PrintDebug("Upgrade Update",ref.link)
+	CheckIsUpgrade(ref)
+end
+local function UpdateUpgradeGroups(refs)
+	local ref
+	-- app.PrintDebug("Upgrade Updates",#refs)
+	for i=1,#refs do
+		ref = refs[i];
+		CheckIsUpgrade(ref)
+	end
+end
+local function UpdateStart()
+	app.print("Upgrade Updates Starting...")
+end
+local function UpdateEnd()
+	app.print("Upgrade Updates Done")
+end
+local function UpdateUpgrades()
+
+	-- all upgrades are based on Transmog, so skip checking if Transmog is not enabled and was not previously enabled
+	if not TransmogLastRefresh and not app.Settings.Collectibles.Transmog then
+		-- app.PrintDebug("Skip Upgrade Logic")
+		return
+	end
+	TransmogLastRefresh = app.Settings.Collectibles.Transmog
+
+	-- cancel all existing running cost updates
+	Runner.Reset()
+	Runner.SetPerFrame(1)
+
+	if app.Debugging then
+		Runner.OnEnd(UpdateEnd)
+		Runner.Run(UpdateStart)
+	end
+
+	-- Get all itemIDAsCost entries
+	for up,refs in pairs(SearchForFieldContainer("up")) do
+		Runner.Run(UpdateUpgradeGroups, refs)
+	end
+
+	-- Any re-try updates can try faster
+	Runner.SetPerFrame(50)
 end
 
 -- Returns the different and upgraded version of 't' (via item link/bonuses or 'up' field)
@@ -351,3 +419,5 @@ api.CollectibleAsUpgrade = function(t)
 	local upgrade = t._up or HasUpgrade(t);
 	return upgrade and not upgrade.collected;
 end
+
+app.AddEventHandler("OnRecalculate_NewSettings", UpdateUpgrades)

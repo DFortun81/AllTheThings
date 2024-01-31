@@ -958,7 +958,7 @@ local function GetTrackableIcon(data, iconOnly, forSaved)
 end
 local function GetCostIconForRow(data, iconOnly)
 	-- cost only for filled groups, or if itself is a cost
-	if data.filledCost or (data.progress == data.total and ((data.costTotal or 0) > 0)) then
+	if data.filledCost or data.isCost or (data.progress == data.total and ((data.costTotal or 0) > 0)) then
 		return iconOnly and L["COST_ICON"] or L["COST_TEXT"];
 	end
 end
@@ -969,14 +969,14 @@ local function GetCostIconForTooltip(data, iconOnly)
 	end
 end
 local function GetUpgradeIconForRow(data, iconOnly)
-	-- upgrade only for filled groups, or if itself has an upgrade
-	if (not data.window and (data.filledUpgrade or data.hasUpgradeNested)) or data.collectibleAsUpgrade then
+	-- upgrade only for filled groups, or if itself is an upgrade
+	if data.filledUpgrade or data.isUpgrade or (data.progress == data.total and ((data.upgradeTotal or 0) > 0)) then
 		return iconOnly and L["UPGRADE_ICON"] or L["UPGRADE_TEXT"];
 	end
 end
 local function GetUpgradeIconForTooltip(data, iconOnly)
 	-- upgrade only if itself has an upgrade
-	if data.collectibleAsUpgrade then
+	if data.filledUpgrade or data.collectibleAsUpgrade then
 		return iconOnly and L["UPGRADE_ICON"] or L["UPGRADE_TEXT"];
 	end
 end
@@ -1199,8 +1199,8 @@ app.MergeSkipFields = {
 	["rawlink"] = true,
 	["sourceIgnored"] = true,
 	["costTotal"] = true,
+	["upgradeTotal"] = true,
 	["iconPath"] = true,
-	["hasUpgradeNested"] = true,
 	-- fields added to a group from GetCachedSearchResults
 	["tooltipInfo"] = true,
 	["working"] = true,
@@ -10736,13 +10736,9 @@ local function SetGroupVisibility(parent, group)
 		-- app.PrintDebug("SGV.cost",group.hash,visible,group.costTotal)
 	end
 	-- Upgrade
-	if not visible and (group.hasUpgradeNested or group.collectibleAsUpgrade) then
+	if not visible and ((group.upgradeTotal or 0) > 0) then
 		visible = not group.saved;
-		-- Only persist nested upgrades from visible groups
-		if parent and visible then
-			parent.hasUpgradeNested = true;
-		end
-		-- if debug then print("SGV.hasUpgrade",group.hash,visible,group.hasUpgradeNested) end
+		-- if debug then print("SGV.hasUpgrade",group.hash,visible) end
 	end
 	-- Trackable
 	if not visible and TrackableFilter(group) then
@@ -10783,13 +10779,9 @@ local function SetThingVisibility(parent, group)
 		-- app.PrintDebug("STV.cost",group.hash,visible,group.costTotal)
 	end
 	-- Upgrade
-	if not visible and (group.hasUpgradeNested or group.collectibleAsUpgrade) then
+	if not visible and ((group.upgradeTotal or 0) > 0) then
 		visible = not group.saved;
-		-- Only persist nested upgrades from visible groups
-		if parent and visible then
-			parent.hasUpgradeNested = true;
-		end
-		-- if debug then print("STV.hasUpgrade",group.hash,visible,group.hasUpgradeNested) end
+		-- if debug then print("STV.hasUpgrade",group.hash,visible) end
 	end
 	-- Trackable
 	if not visible and TrackableFilter(group) then
@@ -10810,7 +10802,6 @@ local function SetThingVisibility(parent, group)
 end
 local function UpdateGroup(group, parent)
 	group.visible = nil;
-	group.hasUpgradeNested = nil;
 
 	-- debug = group.itemID and group.factionID == 2045
 	-- if debug then print("UG",group.hash,parent and parent.hash) end
@@ -10848,6 +10839,7 @@ local function UpdateGroup(group, parent)
 		group.progress = progress;
 		group.total = total;
 		group.costTotal = group.isCost and 1 or 0
+		group.upgradeTotal = group.isUpgrade and 1 or 0
 
 		-- Check if this is a group
 		local g = group.g;
@@ -13582,10 +13574,9 @@ RowOnEnter = function (self)
 			end
 		end
 		local fields = {
-			-- "collectibleAsUpgrade",
 			"__type",
-			"key",
-			"hash",
+			-- "key",
+			-- "hash",
 			-- "name",
 			-- "link",
 			-- "sourceIgnored",
@@ -13596,6 +13587,10 @@ RowOnEnter = function (self)
 			"collectibleAsCost",
 			"costTotal",
 			"filledCost",
+			"isUpgrade",
+			"collectibleAsUpgrade",
+			"upgradeTotal",
+			"filledUpgrade",
 			"skipFill",
 			-- "itemID",
 			-- "modItemID"
@@ -14869,8 +14864,8 @@ local BaseFilterHeaderClone = app.BaseObjectFields({
 	["trackable"] = app.EmptyFunction,
 	["collectibleAsCost"] = app.EmptyFunction,
 	["costCollectibles"] = app.EmptyFunction,
-	["hasUpgradeNested"] = app.EmptyFunction,
 	["costTotal"] = app.EmptyFunction,
+	["upgradeTotal"] = app.EmptyFunction,
 	["g"] = app.EmptyFunction,
 	["visible"] = app.EmptyFunction,
 	-- ["back"] = function(t)
@@ -18495,6 +18490,7 @@ app.LoadDebugger = function()
 				locked = 1,
 				collectibleAsCost = 1,
 				costTotal = 1,
+				upgradeTotal = 1,
 				icon = 1,
 				_OnUpdate = 1,
 				_SettingsRefresh = 1,

@@ -608,6 +608,9 @@ if app.IsRetail then
 		end
 		return any;
 	end
+	fieldConverters.up = function(group, up)
+		CacheField(group, "up", up);
+	end
 elseif tonumber(app.GameBuildVersion) < 30000 then
 	fieldConverters.sins = function(group, value)
 		local mapID = group.mapID;
