@@ -4582,7 +4582,6 @@ root(ROOTS.NeverImplemented, {
 				-- 8.0.1.26567
 				q(52304),	--
 				q(52747),	--
-				q(52775),	-- Siege of Boralus: What's Yours is Mine
 				q(52783),	--
 				q(52808),	--
 				q(52811),	--
