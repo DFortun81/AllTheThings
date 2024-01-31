@@ -951,7 +951,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["g"] = {
 					i(167560),	-- Cleaned Brilliant Scales (QI!)
 					i(167558),	-- Etched Bones (QI!)
-					r(293135, {["u"] = TRAINING}),	--	Drum of Primal Might (RECIPE!)
+					r(293135, {["u"]=TRAINING}),	--	Drum of Primal Might (RECIPE!)
 					i(167561),	-- Drum of Primal Might (QI!)
 					i(167559),	-- Supple Hides (QI!)
 				},
@@ -968,7 +968,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["g"] = {
 					i(167560),	-- Cleaned Brilliant Scales (QI!)
 					i(167558),	-- Etched Bones (QI!)
-					r(293135, {["u"] = TRAINING}),	--	Drum of Primal Might (RECIPE!)
+					r(293135, {["u"]=TRAINING}),	--	Drum of Primal Might (RECIPE!)
 					i(167561),	-- Drum of Primal Might (QI!)
 					i(167559),	-- Supple Hides (QI!)
 				},

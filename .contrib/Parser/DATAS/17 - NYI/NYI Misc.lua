@@ -415,7 +415,7 @@ root(ROOTS.NeverImplemented, {
 		}),
 		tier(SL_TIER, {
 			-- 9.0.1
-			tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 9.0.1" } }, {
+			tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 				i(180483),	-- [PH] Legendary Dust
 				i(179367),	-- [PH] Torghast Boss Loot
 				i(180531),	-- [PH] Twisted Dust
@@ -448,6 +448,7 @@ root(ROOTS.NeverImplemented, {
 				i(178139),	-- Cypher of Relocation
 				i(181344),	-- Droman Aliothe
 				i(183841),	-- Emergency Flare
+				i(181796),	-- Emergency Supplies Key
 				i(180738),	-- Enchanter's Journal
 				i(180739),	-- Engineer's Journal
 				i(178564),	-- Eye of the Jailer:|CFFff2020 +1000 |R
@@ -459,6 +460,7 @@ root(ROOTS.NeverImplemented, {
 				i(178966),	-- Gardener's Satchel
 				i(181345),	-- Grandmaster Vole
 				i(180852),	-- Granule of Stygia
+				i(183726),	-- Gratitude of the Liberated
 				i(180128),	-- Harvester's Elite Bounty Purse
 				i(181342),	-- Hunt-Captain Korayn
 				i(180743),	-- Jeweler's Journal
@@ -479,8 +481,10 @@ root(ROOTS.NeverImplemented, {
 				i(175752),	-- Mirror Fragment
 				i(177764),	-- Mirror Fragment
 				i(179664),	-- Mirror of Kalisthene
+				i(180293),	-- Night Fae Insignia
 				i(183825),	-- Oversized Monocle
 				i(183873),	-- Otherworldy Tea Set
+				i(183190),	-- Oublion Cipher
 				i(181444),	-- Perk 24
 				i(181445),	-- Perk 25
 				i(181446),	-- Perk 26
@@ -548,47 +552,69 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.0.2
-			tier(SL_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 9.0.2" } }, {
+			tier(SL_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_9_0_2 } }, {
+				i(178659),	-- Abominable Backup
+				i(181739),	-- Bag of Soul Ash
+				i(184482),	-- Blueprint: Phial of Serenity
+				i(184484),	-- Blueprint: Ring of Warding
+				i(184483),	-- Blueprint: Vial of Lichfrost
 				i(184663),	-- Building: Guardhouse
+				i(184575),	-- Byron Test Happy Fun Rock
 				i(184316),	-- Cache of Nathrian Treasures
 				i(184317),	-- Cache of Nathrian Treasures
+				i(184402),	-- Culexwood Pan Flute
 				i(184534),	-- Entitled Guest
 				i(184762),	-- Fragmented Sorrow
-				i(184649),	-- Mawrat Cannon
 				i(184684),	-- Grimoire of Knowledge
 				i(184685),	-- Grimoire of Knowledge
 				i(184686),	-- Grimoire of Knowledge
 				i(184687),	-- Grimoire of Knowledge
 				i(184688),	-- Grimoire of Knowledge
+				i(181485),	-- Jeweled Amber Leaf
+				i(184608),	-- Korrath's Grimoire: Aleketh
+				i(184609),	-- Korrath's Grimoire: Belidir
+				i(184610),	-- Korrath's Grimoire: Gyadrek
 				i(184649),	-- Mawrat Cannon
+				i(184649),	-- Mawrat Cannon
+				i(184612),	-- Mawsworn Orders
+				i(184206),	-- Moth-Eaten Covenant Cloak
+				i(181868),	-- Murder Vacation
 				i(181366),	-- Necrostatic Charge
-				i(184760),	-- Quiescent Orb
+				i(173929),	-- Perforated Skull
 				i(184153),	-- Polymorphic Polyhedron
 				i(184761),	-- Purified Misery
+				i(184760),	-- Quiescent Orb
+				i(181488),	-- Shadowstalker Claw
+				i(181484),	-- Songwood Graft
 				i(184120),	-- Spare Brain
 				i(184121),	-- Spare Eye
 				i(184122),	-- Spare Foot
 				i(184119),	-- Spare Heart
 				i(184124),	-- Spare Stomach
-				-- i(184412),	-- Title Reward: Spirestalker
+				i(181483),	-- Spool of Silkstrider Thread
+				i(184412),	-- Title Reward: Spirestalker
+				i(184611),	-- Tormentor's Notes
+				i(184607),	-- Words of the Warden
 			})),
 
 			-- 9.0.5
-			tier(SL_TIER, 0.5, bubbleDown({ ["timeline"] = { "created 9.0.5" } }, {
+			tier(SL_TIER, 0.5, bubbleDown({ ["timeline"] = { CREATED_9_0_5 } }, {
+				i(185472),	-- Heritage of the Shu'halo
 				i(185717),	-- Slumbering Spirit
 				i(186099),	-- Spatial Realignment Apparatus
 				i(185764),	-- Tome of Town Portal
 			})),
 
 			-- 9.1.0
-			tier(SL_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 9.1.0" } }, {
-				i(187921),	-- [PH] Core Currency
+			tier(SL_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_9_1_0 } }, {
 				i(187524),	-- Add Keystone Affix: Tormented
-				i(187570),	-- Brokers' Skinning Mote of Potentiation
+				i(186402),	-- Armament Ehancement Matrix
+				i(187120),	-- Blood Healing Shard 1 - Rank 5
 				i(187571),	-- Brokers' Mining Mote of Potentiation
+				i(187570),	-- Brokers' Skinning Mote of Potentiation
 				i(173790),	-- Bunch of Berries
-				i(186530),	-- Cache of Sanctum Treasures
 				i(186529),	-- Cache of Sanctum Treasures
+				i(186530),	-- Cache of Sanctum Treasures
 				i(186520),	-- Chest of Playtest Equipment
 				i(186519),	-- Compressed Anima Bubble
 				i(187544),	-- Consumed Weapon Essence
@@ -596,22 +622,86 @@ root(ROOTS.NeverImplemented, {
 				i(187546),	-- Consumed Weapon Essence
 				i(187547),	-- Consumed Weapon Essence
 				i(187548),	-- Consumed Weapon Essence
+				i(187497),	-- Delicate Razorwing Figurine
+				i(187123),	-- Empowerment Bauble
 				i(186971),	-- Feeder's Hand
+				i(187151),	-- Field Recovery: Partial Conduit Index
+				i(186719),	-- Field Recovery: Soulborn Socket Research
+				i(186399),	-- Fragmented Vault Seal
 				i(186203),	-- Glowing Devourer Stomach
+				i(186396),	-- Intact Mauler Ridge
+				i(186681),	-- Intentionally Scattered Page
+				i(187500),	-- Intricately Etched Letter Opener
+				i(186394),	-- Item Ehancement Matrix
+				i(186443),	-- Item Enhancement Kit
+				i(186389),	-- Jailer's Stygian Badge
+				i(184823),	-- Junk Mail
+				i(184824),	-- Junk Mail
+				i(184825),	-- Junk Mail
 				i(187434),	-- Lightseed Sapling
+				i(186420),	-- Lightweight Item Enhancement Kit
 				i(187432),	-- Magifocus Heartwood
+				i(186773),	-- NAK Test Gem Item
+				i(186198),	-- Ordinary Seal
+				i(187345),	-- Ornate Offering Box
+				i(187112),	-- Packaged Soul Ash
+				i(187149),	-- Partial Conduit Index
+				i(184826),	-- Random Package Ammo
+				i(187496),	-- Realms of the Shadowlands
+				i(186408),	-- Refracting Soul Stone
+				i(186397),	-- Reinforced Item Ehancement Matrix
+				i(186441),	-- Reinforced Item Enhancement Kit
+				i(186521),	-- Renown For Free
 				i(186715),	-- Research Report: Improved Alloys
 				i(187137),	-- Research Report: Relic Finding Techniques
+				i(186720),	-- Rift Gate Attenuator
+				i(187499),	-- Sculpted Elethium Orb
+				i(186197),	-- Seal of Death's Unity
+				i(186585),	-- Shard of Domination - Grim Harvester - Rank 1
+				i(186586),	-- Shard of Domination - Grim Harvester - Rank 2
+				i(186587),	-- Shard of Domination - Grim Harvester - Rank 3
+				i(186588),	-- Shard of Domination - Grim Harvester - Rank 4
+				i(186589),	-- Shard of Domination - Grim Harvester - Rank 5
+				i(186592),	-- Shard of Domination - Sanguine Rage - Rank 1
+				i(186594),	-- Shard of Domination - Sanguine Rage - Rank 2
+				i(186595),	-- Shard of Domination - Sanguine Rage - Rank 3
+				i(186596),	-- Shard of Domination - Sanguine Rage - Rank 4
+				i(186597),	-- Shard of Domination - Sanguine Rage - Rank 5
+				i(186579),	-- Shard of Domination - Unbound Pestilence - Rank 1
+				i(186581),	-- Shard of Domination - Unbound Pestilence - Rank 2
+				i(186582),	-- Shard of Domination - Unbound Pestilence - Rank 3
+				i(186583),	-- Shard of Domination - Unbound Pestilence - Rank 4
+				i(186584),	-- Shard of Domination - Unbound Pestilence - Rank 5
+				i(185975),	-- Soulborn Socket Matrix
+				i(186400),	-- Soulborn Socket Research
+				i(185948),	-- Spectral Javelin
+				i(186390),	-- Spongy Devourer Gland
+				i(186395),	-- Sturdy Korthian Bones
+				i(186401),	-- Stygian Steel Nugget
+				i(186412),	-- Stygian Steel Setting
 				i(187526),	-- Suspicious List
+				i(187116),	-- Target Dummy
+				i(186972),	-- Teleporter Repair Kit
 				i(184844),	-- Test Item
+				i(186525),	-- The Mad Duke's Tea
+				i(187603),	-- The Mad Duke's Tea
+				i(187917),	-- The Mad Duke's Tea
+				i(186526),	-- The Mad Duke's Tea of Haste
+				i(186527),	-- The Mad Duke's Tea of Precision
+				i(186528),	-- The Mad Duke's Tea of Versatility
 				i(187515),	-- Theotar's Bottomless Teapot
+				i(186043),	-- Torghast Portal Manipulator
+				i(187501),	-- Understanding the Purpose
+				i(186658),	-- Ven'ari's Scavenged Supplies
 				i(187433),	-- Windcrystal Chimes
+				i(187921),	-- [PH] Core Currency
 			})),
 
 			-- 9.1.5
-			tier(SL_TIER, 1.5, bubbleDown({ ["timeline"] = { "created 9.1.5" } }, {
+			tier(SL_TIER, 1.5, bubbleDown({ ["timeline"] = { CREATED_9_1_5 } }, {
 				i(189534),	-- Add Keystone Affix: Infernal
 				i(187610),	-- Court of Farondis Insignia
+				i(188168),	-- Kyrian Traveler's Anima Cache
 				i(189524),	-- Set Keystone Level: 31
 				i(189525),	-- Set Keystone Level: 32
 				i(189526),	-- Set Keystone Level: 33
@@ -620,24 +710,83 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.2.0
-			tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
+			tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_9_2_0 } }, {
 				i(189452),	-- 9.2 Mount Crafting Bag of Goodies
 				i(189428),	-- 9.2 Pet Battle Playtest Bag of Goodies
 				i(190938),	-- Add Keystone Affix: Encrypted
+				i(187152),	-- Automa Key
 				i(190654),	-- Cache of Sepulcher Treasures
+				i(190387),	-- Conduits For Free
 				i(188796),	-- Cypher Test Item
+				i(191022),	-- Eternal Curio
 				i(190823),	-- Firim's Mysterious Cache
+				i(187920),	-- Flipper Fish
+				i(188951),	-- Key
+				i(188949),	-- Mysterious Object
+				i(188950),	-- Mysterious Object
 				i(190383),	-- Progenitor Essentia Lattice
 				i(189546),	-- Set Keystone Map: Tazavesh: So'leah's Gambit
 				i(189545),	-- Set Keystone Map: Tazavesh: Streets of Wonder
 				i(189573),	-- Tame Prime: Garudeon
 				i(189572),	-- Tame Prime: Hadeon the Stonebreaker
 				i(189561),	-- Tame Prime: Orixal
-				-- i(190172),	-- Title Reward: Gauntlet Runner
+				i(190172),	-- Title Reward: Gauntlet Runner
+				--- Spheroids ---
+				i(190665),	-- [PH] Epic 1 Fluidic Spheroid
+				i(190666),	-- [PH] Epic 2 Fluidic Spheroid
+				i(190667),	-- [PH] Epic 3 Fluidic Spheroid
+				i(190668),	-- [PH] Epic 4 Fluidic Spheroid
+				i(190662),	-- [PH] Rare 6 Fluidic Spheroid
+				i(190663),	-- [PH] Rare 7 Fluidic Spheroid
+				i(190664),	-- [PH] Rare 8 Fluidic Spheroid
+				i(189723),	-- Absorptialic Crystallic Spheroid
+				i(189736),	-- Absorptialic Fluidic Spheroid
+				i(189722),	-- Alacrialic Crystallic Spheroid
+				i(189740),	-- Alacrialic Fluidic Spheroid
+				i(189732),	-- Constialic Crystallic Spheroid
+				i(189748),	-- Constialic Fluidic Spheroid
+				i(189560),	-- Deflectialic Crystallic Spheroid
+				i(189577),	-- Deflectialic Fluidic Spheroid
+				i(189763),	-- Efficialic Crystallic Spheroid
+				i(189757),	-- Efficialic Fluidic Spheroid
+				i(189724),	-- Extractialic Crystallic Spheroid
+				i(189739),	-- Extractialic Fluidic Spheroid
+				i(189725),	-- Flexialic Crystallic Spheroid
+				i(189749),	-- Flexialic Fluidic Spheroid
+				i(189726),	-- Focialic Crystallic Spheroid
+				i(189743),	-- Focialic Fluidic Spheroid
+				i(189762),	-- Fortialic Crystallic Spheroid
+				i(189755),	-- Fortialic Fluidic Spheroid
+				i(189727),	-- Healialic Crystallic Spheroid
+				i(189742),	-- Healialic Fluidic Spheroid
+				i(189728),	-- Obscurialic Crystallic Spheroid
+				i(189737),	-- Obscurialic Fluidic Spheroid
+				i(189729),	-- Osmosialic Crystallic Spheroid
+				i(189741),	-- Osmosialic Fluidic Spheroid
+				i(189730),	-- Perceptialic Crystallic Spheroid
+				i(189738),	-- Perceptialic Fluidic Spheroid
+				i(189731),	-- Potentialic Crystallic Spheroid
+				i(189744),	-- Potentialic Fluidic Spheroid
+				i(189764),	-- Reflectialic Crystallic Spheroid
+				i(189758),	-- Reflectialic Fluidic Spheroid
+				i(189733),	-- Relialic Crystallic Spheroid
+				i(189745),	-- Relialic Fluidic Spheroid
+				i(190659),	-- Resonant Carapace Fluidic Spheroid
+				i(190658),	-- Resonant Gossamer Fluidic Spheroid
+				i(190660),	-- Resonant Mucus Fluidic Spheroid
+				i(190661),	-- Resonant Regrowth Fluidic Spheroid
+				i(189734),	-- Rigialic Crystallic Spheroid
+				i(189746),	-- Rigialic Fluidic Spheroid
+				i(189760),	-- Robustialic Crystallic Spheroid
+				i(189759),	-- Robustialic Fluidic Spheroid
+				i(189761),	-- Toxicialic Crystallic Spheroid
+				i(189756),	-- Toxicialic Fluidic Spheroid
+				i(189735),	-- Velocialic Crystallic Spheroid
+				i(189747),	-- Velocialic Fluidic Spheroid
 			})),
 
 			-- 9.2.5
-			tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { "created 9.2.5" } }, {
+			tier(SL_TIER, 2.5, bubbleDown({ ["timeline"] = { CREATED_9_2_5 } }, {
 				i(191217),	-- [Daon Test]Beast Battle-Training Stone
 				i(191219),	-- [Daon Test]Immaculate Elemental Battle-Stone
 				i(191200),	-- [Daon Test]Ultimate Battle-Training Stone

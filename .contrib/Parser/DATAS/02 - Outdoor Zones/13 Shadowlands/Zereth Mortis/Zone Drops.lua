@@ -8,6 +8,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["cr"] = 181403,	-- Mawsworn Inquisitor
 			}),
 			i(187707),	-- Progenitor Essentia
+			i(187704),	-- Protoflesh
 			i(192444, {	-- Resonating Disc
 				["timeline"] = { ADDED_9_2_5 },
 			}),

@@ -1113,9 +1113,11 @@ root(ROOTS.NeverImplemented, {
 				i(180838),	-- Blue Etherwyrm (PET!) [Wild Etherwyrm, item was never used]
 				i(180837),	-- Blue Glimmerfly (PET!) [Fluttering Glimmerfly, item was never used]
 				i(181259),	-- Clutch (PET!) [Wild Pet, item was never used]
+				i(180632),	-- Gorm Rootstinger (PET!) [Gorm Rootstinger, item was never used]
 				i(180590),	-- Lost Soul (PET!) [Wild Pet, item was never used]
 				i(180860),	-- Orange Vulpin (PET!) [Copperfur Kit, item was never used]
 				i(180841),	-- Olive Dragon Turtle (PET!) [Glimmerpool Hatchling, item never used]
+				i(182672),	-- Misty Leaper (PET!)
 				i(180840),	-- Pink Glimmerfly (PET!) [Vibrant Glimmerfly, item was never used]
 				i(180861),	-- Red Vulpin (PET!) [Rustfur Kit, item was never used]
 				i(180867),	-- Silver Crane (PET!) [Wader Chick, item was never used]
@@ -1123,6 +1125,7 @@ root(ROOTS.NeverImplemented, {
 				i(183853),	-- Sinfall Screecher (PET!) [Sinfall Screecher, item was never used]
 				i(184034),	-- Stony's Infused Ruby (PET!) [Stony, item was never used]
 				i(183714),	-- Swamp Reed (PET!) [Withering Creeper, item was never used]
+				i(180627),	-- Tranquil Wader (PET!) [Tranquil Wader, item was never used]
 			})),
 
 			-- 9.0.2

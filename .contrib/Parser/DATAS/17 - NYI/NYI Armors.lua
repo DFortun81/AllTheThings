@@ -2282,6 +2282,19 @@ root(ROOTS.NeverImplemented, {
 					i(190622),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Accessory - Trinket - Omni
 				}),
 			}),
+			--- 9.2.0 ---
+			i(188182),	-- Cavalier Hat of the First Rogue
+			i(188180),	-- Cloak of the First Rogue
+			i(188186),	-- Drape of Dominion
+			i(188181),	-- Gloves of the First Rogue
+			i(188185),	-- Indomitable Vest
+			i(188183),	-- Pants of the First Rogue
+			i(188187),	-- Quickfinger Pocketlifters
+			i(188189),	-- Shadowwrap Leggings
+			i(188184),	-- Shoulderpads of the First Rogue
+			i(188190),	-- Shoulderpads of the Primordial
+			i(188179),	-- Vest of the First Rogue
+			i(188188),	-- Worldbinder Tricorne
 		}),
 		tier(DF_TIER, {
 			n(BACK, {

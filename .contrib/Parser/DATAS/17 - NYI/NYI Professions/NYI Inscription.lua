@@ -12,6 +12,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(173055),	-- Redeemer's Column
 					i(173429),	-- Redeemer's Spire
 				})),
+
+				-- 9.2.0
+				tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
+					i(189721),	-- Glyph of the Sayaad
+				})),
 			}),
 			tier(DF_TIER, {
 				-- 10.0.0

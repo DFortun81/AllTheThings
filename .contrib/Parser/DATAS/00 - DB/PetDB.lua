@@ -3540,9 +3540,11 @@ i(0, 2951);			-- PH Slime
 i(180838, 0);		-- Blue Etherwyrm
 i(180837, 0);		-- Blue Glimmerfly
 i(181259, 0);		-- Clutch
+i(180632, 0);		-- Gorm Rootstinger
 i(180590, 0);		-- Lost Soul
 i(180860, 0);		-- Orange Vulpin
 i(180841, 0);		-- Olive Dragon Turtle
+i(182672, 0);		-- Misty Leaper
 i(180840, 0);		-- Pink Glimmerfly
 i(180861, 0);		-- Red Vulpin
 i(180867, 0);		-- Silver Crane
@@ -3550,6 +3552,7 @@ i(180813, 0);		-- Silver Teroclaw
 i(183853, 0);		-- Sinfall Screecher
 i(184034, 0);		-- Stony's Infused Ruby
 i(183714, 0);		-- Swamp Reed
+i(180627, 0);		-- Tranquil Wader
 
 -----------------
 -- PATCH 9.0.2 --

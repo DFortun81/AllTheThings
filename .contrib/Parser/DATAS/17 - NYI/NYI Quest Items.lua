@@ -90,7 +90,7 @@ root(ROOTS.NeverImplemented, {
 		}),
 		tier(SL_TIER, {
 			-- 9.0.1
-			tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 9.0.1" } }, {
+			tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 				i(175265),	-- Belt of Prime Command
 				i(181241),	-- Blueprint: Charm of Buff 7
 				i(182654),	-- Bonescript Dispatches
@@ -104,17 +104,19 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.0.2
-			tier(SL_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 9.0.2" } }, {
+			tier(SL_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_9_0_2 } }, {
 				i(184169),	-- Vault Chain Pull
 			})),
 
 			-- 9.1.0
-			tier(SL_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 9.1.0" } }, {
+			tier(SL_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_9_1_0 } }, {
 				i(187863),	-- Key of Ephemera
 			})),
 
 			-- 9.2.0
-			tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
+			tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_9_2_0 } }, {
+				i(187688),	-- [DNT] Rinanji's Key
+				i(187686),	-- [DNT] Suspicious Badge
 				i(188200),	-- Engraved Stone
 				i(191634),	-- Memory of Unity
 				i(191635),	-- Memory of Unity

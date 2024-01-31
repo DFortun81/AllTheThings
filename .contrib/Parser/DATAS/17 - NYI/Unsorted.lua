@@ -426,7 +426,6 @@ root(ROOTS.Unsorted, {
 				i(158580),	-- Loa-Claimer's Wariglaives
 			}),
 		}),
-
 		n(ARMOR, bubbleDownSelf({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
 			-- PvP (probably from some Ensemble)
 			i(127103),	-- Gladiator's Plate Shoulders	-- I collected it somehow -Darkal
@@ -559,14 +558,6 @@ root(ROOTS.Unsorted, {
 			q(64516),	--
 			-- 9.1.5
 			q(64975),	--
-		}),
-		filter(MISC, {
-			i(185920),	-- Cartel Al Incident Report
-			i(185927),	-- Expedition Report A37J - Foreword
-			i(185928),	-- Expedition Report A37J - Part 1
-			i(185929),	-- Expedition Report A37J - Part 2
-			i(185930),	-- Expedition Report A37J - Part 3
-			i(185931),	-- Expedition Report A37J - Part 4
 		}),
 	}),
 	tier(DF_TIER, {
@@ -1047,6 +1038,7 @@ root(ROOTS.Unsorted, {
 			-- Misc
 			i(215160), -- The Big Dig Rig
 			-- Quest Items
+			i(212371),	-- Azerothian Archivist Initiation Token
 			i(211266),	-- Archivist's Fire Totem
 			------ Love in the Air ------
 			-- Misc
@@ -1120,6 +1112,9 @@ root(ROOTS.Unsorted, {
 			i(211927),	-- Tattered Dreamleaf
 			i(211260),	-- Crimson Gladiator's Spear
 			i(208878),	-- Adventurer's Footlocker
+			--
+			i(209871),	-- Winter Veil Gift
+			i(210657),	-- Gently Shaken Gift
 			--
 			i(208597),	-- Eadweard's Notes
 			i(208782),	-- Symbiotic Glowspore Grip
@@ -3677,384 +3672,189 @@ root(ROOTS.Unsorted, {
 			i(178458),	-- zzzRated - Weapon - Shield \\ Rated - Weapon - Shield
 			i(178454),	-- zzzRated - Weapon - Staff Caster \\ Rated - Weapon - Staff Caster
 			i(178460),	-- zzzRated - Weapon - Warglaive \\ Rated - Weapon - Warglaive
+			--- Leftovers ---
+			i(171206),	-- Forgotten Weapon
+			i(171209),	-- Blooded Satchel
+			i(171210),	-- Satchel of Nature's Bounty
+			i(171211),	-- Venthyr's Coin Purse
+			i(171989),	-- Pouch of Spores
+			i(174078),	-- Primrose's Pyrotechnic Powder
+			i(174741),	-- Bell of Remembrance
+			i(175149),	-- A Small Carving of Ysera \\ A small carving of Ysera
+			i(175152),	-- A Slime-Covered Book of Secrets \\ A slime-covered book of secrets
+			i(175154),	-- A Secret Never Spoken
+			i(178033),	-- Talkative Spore
+			i(178124),	-- Dancing Motes of Light \\ Motes of Light \\ Restorative Residue
+			i(178602),	-- Thorny Loop \\ Thorn Ring
+			i(179295),	-- Squeaky Bat - NYI \\ Squeaky Bat
+			i(179392),	-- Orb of Burgeoning Ambition
+			i(179535),	-- Crumbling Pride Extractors
+			i(179986),	-- Agonized Echoes
+			i(180008),	-- Resonating Anima Core
+			i(180049),	-- Steward's Silver Key
+			i(180170),	-- Pulsing Animacone
+			i(180207),	-- Spirit Cradle
+			i(180285),	-- Steward's Golden Key
+			i(180372),	-- Amalgamation of Sin
+			i(180374),	-- Amalgamation of Sin
+			i(180377),	-- Red Rum
+			i(180405),	-- Rusty Gargon Chain
+			i(180410),	-- Simmiring Draft of Shadows
+			i(180470),	-- Wild Fungus
+			i(180484),	-- Noko's Flute
+			i(180485),	-- Ansel's Lucky Violin
+			i(180486),	-- Chiu's Lute
+			i(180660),	-- Darktower Parchments: Instant Polymorphist
+			i(180661),	-- Darktower Parchments: Affliction Most Foul
+			i(180684),	-- Sentinel Stonewing
+			i(180686),	-- "Borrowed" Soulstone
+			i(180690),	-- Bottled Ash Cloud
+			i(180693),	-- Cyclonic Chronicles \\ Chronicles of the Cyclone
+			i(180696),	-- Legion Wing Insignia
+			i(180697),	-- Wing Commanders Insignia \\ Legion Commanders Insignia
+			i(180709),	-- Tempered Armor Patch
+			i(180715),	-- Bottled Wrath
+			i(180874),	-- Gargon Whistle
+			i(180974),	-- Novice's Satchel
+			i(180975),	-- Journeyman's Satchel
+			i(180976),	-- Artisan's Satchel
+			i(180979),	-- Artisan's Large Satchel
+			i(180980),	-- Journeyman's Large Satchel
+			i(180981),	-- Novice's Large Satchel
+			i(180983),	-- Artisan's Stuffed Satchel
+			i(180984),	-- Journeyman's Stuffed Satchel
+			i(180985),	-- Novice's Stuffed Satchel
+			i(180988),	-- Journeyman's Overflowing Satchel
+			i(180989),	-- Novice's Overflowing Satchel
+			i(181361),	-- Court Gossip
+			i(181362),	-- Blob of Slime
+			i(181364),	-- Cluster of Seeds
+			i(181369),	-- Giant Lungcap
+			i(181454),	-- Duskmire Ruse
+			i(181456),	-- Faldo's Key
+			i(181471),	-- Humility's Guard
+			i(181715),	-- Temel's Certificate of Completion
+			i(182097),	-- Shrouded Mirror Shard \\ Mirror Fragment
+			i(182186),	-- Stolen Memento
+			i(182198),	-- Undulating Blood Burrower
+			i(182200),	-- Engorged Blood Burrower
+			i(182212),	-- Magical Curio
+			i(182601),	-- Sludgefist's Head
+			i(182602),	-- Sludgefist's Head
+			i(182603),	-- Sludgefist's Head
+			i(182688),	-- Cypher of Obfuscation
+			i(183042),	-- Colossal Power Core
+			i(183718),	-- Extra Gooey Gorm Gunk
+			i(183734),	-- Mysteriously Thrumming Orb
+			i(183912),	-- Scorched Mirror Fragment
+			i(183919),	-- Ashen Core
+			i(183987),	-- Prisoner Cage Key
+			i(184043),	-- Lost Scroll
 		})),
 		tier(SL_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
-			i(178659),	-- Abominable Backup
-			i(184227),	-- Angelic Feather
-			i(175841),	-- Ani-Matter Orb
-			i(181739),	-- Bag of Soul Ash
-			i(184482),	-- Blueprint: Phial of Serenity
-			i(184484),	-- Blueprint: Ring of Warding
-			i(184483),	-- Blueprint: Vial of Lichfrost
-			i(175013),	-- Bug Dissolver
-			i(184575),	-- Byron Test Happy Fun Rock
-			i(181824),	-- Corrosive Bile
-			i(184402),	-- Culexwood Pan Flute
-			i(177905),	-- Deathstone
-			i(184403),	-- Dreamlure Candle
-			i(176396),	-- Dredhollow Tools
-			i(184283),	-- Dusk No. 1
-			i(184228),	-- Electrified Soul Remnant
-			i(181394),	-- Empty Plague Bottle
-			i(184196),	-- Flask of Unravelling
-			i(184202),	-- Freeze-Dried Salted Meat
-			i(180226),	-- Game Rulebook
-			i(184163),	-- Gilded Slime
-			i(180224),	-- Gubbins's Lost Diary
-			i(180220),	-- Historical Treatise
-			i(180227),	-- Horror Novel
-			i(180173),	-- House Grinchin Ring
-			i(180221),	-- Joke Book
-			i(180831),	-- Kivarr's Tonic
-			i(184608),	-- Korrath's Grimoire: Aleketh
-			i(184609),	-- Korrath's Grimoire: Belidir
-			i(184610),	-- Korrath's Grimoire: Gyadrek
-			i(181486),	-- Leafscale Coat
-			i(180052),	-- Left Gem Eye
-			i(184612),	-- Mawsworn Orders
-			i(180775),	-- Memory of Home
-			i(181558),	-- Missing Ritual Pages
-			i(180222),	-- Mortal Recipe Book
-			i(184206),	-- Moth-Eaten Covenant Cloak
-			i(184281),	-- Muckfrosty
-			i(180225),	-- Murder Mystery
-			i(181868),	-- Murder Vacation
-			i(173929),	-- Perforated Skull
-			i(181492),	-- Petrified Faeflower
-			i(184102),	-- Possessed Mask
-			i(178016),	-- Potential Catalyst
-			i(184662),	-- Requisitioned Anima Cell
-			i(180053),	-- Right Gem Eye
-			i(180219),	-- Romance Novel
-			i(180228),	-- Self-Help Book
-			i(181488),	-- Shadowstalker Claw \\ Runesaber Claw
-			i(184229),	-- Shadowy Key
-			i(183799),	-- Shifting Catalyst
-			i(178993),	-- Sightless Vision
-			i(180223),	-- Sinstone Archival Records
-			i(184488),	-- Sinstone Fragment
-			i(184201),	-- Slushy Water
-			i(181484),	-- Songwood Graft
-			i(184355),	-- Soulkeeper
-			i(184356),	-- Soulkeeper
-			i(184357),	-- Soulkeeper
-			i(184358),	-- Soulkeeper
-			i(181483),	-- Spool of Silkstrider Thread \\ PH Name
-			i(174283),	-- Stygian Stew
-			i(183807),	-- Stygic Coercion
-			i(183787),	-- Stygic Dampener
-			i(178585),	-- The Forgotten Key
-			i(184611),	-- Tormentor's Notes
-			i(180229),	-- Tubbins's Autobiography
-			i(184607),	-- Words of the Warden
-		})),
-		tier(SL_TIER, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_5 } }, {
-			i(185472),	-- Heritage of the Shu'halo
-			i(185681),	-- Theotar's Egg
-			i(185682),	-- Temel's Egg
-			i(185683),	-- Prince Renathal's Egg
-			i(185684),	-- Lord Garridan's Egg \\ Watchmaster Boromod's Egg
+			filter(QUEST_ITEMS, {
+				i(175841),	-- Ani-Matter Orb
+				i(175013),	-- Bug Dissolver
+				i(181824),	-- Corrosive Bile
+				i(177905),	-- Deathstone
+				i(176396),	-- Dredhollow Tools
+				i(184228),	-- Electrified Soul Remnant
+				i(184196),	-- Flask of Unravelling
+				i(180831),	-- Kivarr's Tonic
+				i(180775),	-- Memory of Home
+				i(184102),	-- Possessed Mask
+				i(178016),	-- Potential Catalyst
+				i(184229),	-- Shadowy Key
+				i(178993),	-- Sightless Vision
+				i(184488),	-- Sinstone Fragment
+				i(184355),	-- Soulkeeper
+				i(184356),	-- Soulkeeper
+				i(184357),	-- Soulkeeper
+				i(184358),	-- Soulkeeper
+				i(178585),	-- The Forgotten Key
+			}),
 		})),
 		tier(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
-			i(185732),	-- Archive Tablet
-			i(186402),	-- Armament Ehancement Matrix
-			i(187193),	-- Autographed Stuffed Seagull
-			i(187120),	-- Blood Healing Shard 1 - Rank 5
-			i(187004),	-- Bone Chew
-			i(185736),	-- Brilliant Golden Feather
-			i(187211),	-- Chronicle of Cartel Al
-			i(187343),	-- Condensed Offering Sphere
-			i(187188),	-- D'roo's Bottomless Gulper
-			i(187197),	-- D'roo's Haunted Drumset
-			i(187497),	-- Delicate Razorwing Figurine
-			i(187002),	-- Delicious Pet Cookie
-			i(187293),	-- Desolate Shard of Bek
-			i(187296),	-- Desolate Shard of Cor
-			i(187299),	-- Desolate Shard of Dyz
-			i(187294),	-- Desolate Shard of Jas
-			i(187297),	-- Desolate Shard of Kyr
-			i(187300),	-- Desolate Shard of Oth
-			i(187295),	-- Desolate Shard of Rev
-			i(187298),	-- Desolate Shard of Tel
-			i(187301),	-- Desolate Shard of Zed
-			i(185727),	-- Draka's Battlehorn
-			i(185947),	-- Draught of Leeching Strikes
-			i(185951),	-- Draught of Spiked Skin
-			i(185950),	-- Draught of Temporal Rush
-			i(185968),	-- Duplicate Rune Chit \\ Duplicate Rune Stick
-			i(187554),	-- Elethium Chips
-			i(187123),	-- Empowerment Bauble
-			i(187196),	-- Endless Arcade Token
-			i(187418),	-- Evolving Mawshroom
-			i(187498),	-- Extravagantly Embroidered Pouch
-			i(187151),	-- Field Recovery: Partial Conduit Index
-			i(186719),	-- Field Recovery: Soulborn Socket Research \\ Field Recovery: Soulborn Socket Matrices
-			i(187190),	-- Floral Print Button Down
-			i(187302),	-- Foreboding Shard of Bek
-			i(187305),	-- Foreboding Shard of Cor
-			i(187308),	-- Foreboding Shard of Dyz
-			i(187303),	-- Foreboding Shard of Jas
-			i(187306),	-- Foreboding Shard of Kyr
-			i(187309),	-- Foreboding Shard of Oth
-			i(187304),	-- Foreboding Shard of Rev
-			i(187307),	-- Foreboding Shard of Tel
-			i(187310),	-- Foreboding Shard of Zed
-			i(186399),	-- Fragmented Vault Seal \\ Fragmented Vault Seals \\ Sharp Korthia Barbs
-			i(187195),	-- Golden Sax
-			i(185740),	-- Head of Azodius
-			i(187275),	-- Helsworn Battle Plans
-			i(187212),	-- Hyperlight Moccasins
-			i(187189),	-- Hyperlight Multitool
-			i(186396),	-- Intact Mauler Ridge
-			i(186681),	-- Intentionally Scattered Page
-			i(187500),	-- Intricately Etched Letter Opener
-			i(187555),	-- Irredeemable Trash \\ Iredeemable Trash
-			i(186394),	-- Item Ehancement Matrix \\ Lightweight Item Ehancement Matrix
-			i(186443),	-- Item Enhancement Kit \\ Robust Item Enhancement Kit
-			i(186389),	-- Jailer's Stygian Badge \\ Airy Korthian Bones
-			i(187213),	-- Jo's Intergalactic Cache
-			i(184823),	-- Junk Mail
-			i(184824),	-- Junk Mail
-			i(184825),	-- Junk Mail
-			i(185915),	-- Korthian Artifact
-			i(186420),	-- Lightweight Item Enhancement Kit
-			i(185946),	-- Long Tail Dynarats
-			i(186733),	-- Lovely Pet Caller
-			i(186773),	-- NAK Test Gem Item
-			i(185766),	-- Necrolite Focusing Crystal
-			i(187284),	-- Ominous Shard of Bek
-			i(187287),	-- Ominous Shard of Cor
-			i(187290),	-- Ominous Shard of Dyz
-			i(187285),	-- Ominous Shard of Jas
-			i(187288),	-- Ominous Shard of Kyr
-			i(187291),	-- Ominous Shard of Oth
-			i(187286),	-- Ominous Shard of Rev
-			i(187289),	-- Ominous Shard of Tel
-			i(187292),	-- Ominous Shard of Zed
-			i(187553),	-- Orboreal Carvings
-			i(186198),	-- Ordinary Seal
-			i(187345),	-- Ornate Offering Box
-			i(187594),	-- P'ugh's Almanac
-			i(187199),	-- Pa'hix's Runepuzzle
-			i(187149),	-- Partial Conduit Index
-			i(187003),	-- Pet Plushy
-			i(187312),	-- Portentous Shard of Bek
-			i(187315),	-- Portentous Shard of Cor
-			i(187318),	-- Portentous Shard of Dyz
-			i(187313),	-- Portentous Shard of Jas
-			i(187316),	-- Portentous Shard of Kyr
-			i(187319),	-- Portentous Shard of Oth
-			i(187314),	-- Portentous Shard of Rev
-			i(187317),	-- Portentous Shard of Tel
-			i(187320),	-- Portentous Shard of Zed
-			i(187055),	-- Pouch of Rune Chits
-			i(184826),	-- Random Package Ammo
-			i(187496),	-- Realms of the Shadowlands
-			i(186408),	-- Refracting Soul Stone
-			i(186397),	-- Reinforced Item Ehancement Matrix
-			i(186441),	-- Reinforced Item Enhancement Kit
-			i(186521),	-- Renown For Free
-			i(187177),	-- Researching Korthian Relics \\ Shattered Relic
-			i(186720),	-- Rift Gate Attenuator
-			i(185485),	-- Rune Remover
-			i(187407),	-- Satchel of Security
-			i(187499),	-- Sculpted Elethium Orb
-			i(186197),	-- Seal of Death's Unity
-			i(187468),	-- Shadehound Tack
-			i(187550),	-- Shadowsteel Shavings
-			i(187057),	-- Shard of Bek
-			i(187063),	-- Shard of Cor
-			i(186585),	-- Shard of Domination - Grim Harvester - Rank 1
-			i(186586),	-- Shard of Domination - Grim Harvester - Rank 2
-			i(186587),	-- Shard of Domination - Grim Harvester - Rank 3
-			i(186588),	-- Shard of Domination - Grim Harvester - Rank 4
-			i(186589),	-- Shard of Domination - Grim Harvester - Rank 5
-			i(186592),	-- Shard of Domination - Sanguine Rage - Rank 1
-			i(186594),	-- Shard of Domination - Sanguine Rage - Rank 2
-			i(186595),	-- Shard of Domination - Sanguine Rage - Rank 3
-			i(186596),	-- Shard of Domination - Sanguine Rage - Rank 4
-			i(186597),	-- Shard of Domination - Sanguine Rage - Rank 5
-			i(186579),	-- Shard of Domination - Unbound Pestilence - Rank 1
-			i(186581),	-- Shard of Domination - Unbound Pestilence - Rank 2
-			i(186582),	-- Shard of Domination - Unbound Pestilence - Rank 3
-			i(186583),	-- Shard of Domination - Unbound Pestilence - Rank 4
-			i(186584),	-- Shard of Domination - Unbound Pestilence - Rank 5
-			i(187073),	-- Shard of Dyz
-			i(187059),	-- Shard of Jas
-			i(187065),	-- Shard of Kyr
-			i(187076),	-- Shard of Oth
-			i(187071),	-- Shard of Tel
-			i(187079),	-- Shard of Zed
-			i(187033),	-- Small Offering Key
-			i(185975),	-- Soulborn Socket Matrix
-			i(186400),	-- Soulborn Socket Research \\ Devourer Contoller's Crest
-			i(185948),	-- Spectral Javelin
-			i(186390),	-- Spongy Devourer Gland
-			i(187194),	-- Star in a Jar
-			i(185910),	-- Star Lantern
-			i(186395),	-- Sturdy Korthian Bones
-			i(186401),	-- Stygian Steel Nugget
-			i(186412),	-- Stygian Steel Setting
-			i(187001),	-- Stylish Pet Collar
-			i(187505),	-- Super Cool Dragon Head
-			i(187116),	-- Target Dummy
-			i(186972),	-- Teleporter Repair Kit
-			i(186525),	-- The Mad Duke's Tea
-			i(187603),	-- The Mad Duke's Tea
-			i(187917),	-- The Mad Duke's Tea
-			i(186526),	-- The Mad Duke's Tea of Haste
-			i(186527),	-- The Mad Duke's Tea of Precision
-			i(186528),	-- The Mad Duke's Tea of Versatility
-			i(186043),	-- Torghast Portal Manipulator
-			i(185743),	-- Torn Page
-			i(185829),	-- Trueheart Spear
-			i(187501),	-- Understanding the Purpose
-			i(187192),	-- Urn of Knowledge
-			i(186658),	-- Ven'ari's Scavenged Supplies
-			i(187191),	-- Vi'ller's Preserved Eye
-			i(187005),	-- Wizard Pet Hat
-			i(187198),	-- Xy'le Date
-			i(187236),	-- Zovaal's Dark Carafe
+			filter(QUEST_ITEMS, {
+				i(185732),	-- Archive Tablet
+				i(187004),	-- Bone Chew
+				i(185736),	-- Brilliant Golden Feather
+				i(187002),	-- Delicious Pet Cookie
+				i(185727),	-- Draka's Battlehorn
+				i(185740),	-- Head of Azodius
+				i(187275),	-- Helsworn Battle Plans
+				i(185915),	-- Korthian Artifact
+				i(186733),	-- Lovely Pet Caller
+				i(185766),	-- Necrolite Focusing Crystal
+				i(187003),	-- Pet Plushy
+				i(187055),	-- Pouch of Rune Chits
+				i(187177),	-- Researching Korthian Relics
+				i(185485),	-- Rune Remover
+				i(187033),	-- Small Offering Key
+				i(187001),	-- Stylish Pet Collar
+				i(187505),	-- Super Cool Dragon Head
+				i(185743),	-- Torn Page
+				i(185829),	-- Trueheart Spear
+				i(187005),	-- Wizard Pet Hat
+			}),
 		})),
 		tier(SL_TIER, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
-			i(187520),	-- Gently Shaken Gift
-			i(187561),	-- Winter Veil Gift
-			i(187786),	-- Timeworn Keystone
-			i(188168),	-- Kyrian Traveler's Anima Cache
+			filter(QUEST_ITEMS, {
+				i(187520),	-- Gently Shaken Gift
+				i(187561),	-- Winter Veil Gift
+			}),
 		})),
 		tier(SL_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
-			i(187688),	-- [DNT] Rinanji's Key
-			i(187686),	-- [DNT] Suspicious Badge
-			i(190665),	-- [PH] Epic 1 Fluidic Spheroid
-			i(190666),	-- [PH] Epic 2 Fluidic Spheroid
-			i(190667),	-- [PH] Epic 3 Fluidic Spheroid
-			i(190668),	-- [PH] Epic 4 Fluidic Spheroid
-			i(190662),	-- [PH] Rare 6 Fluidic Spheroid
-			i(190663),	-- [PH] Rare 7 Fluidic Spheroid
-			i(190664),	-- [PH] Rare 8 Fluidic Spheroid
-			i(189723),	-- Absorptialic Crystallic Spheroid \\ Crystallized Enhancement: Absorption
-			i(189736),	-- Absorptialic Fluidic Spheroid \\ Fluidic Enhancement: Absorption
-			i(189722),	-- Alacrialic Crystallic Spheroid \\ Crystallized Enhancement: Alacrity \\ Crystallized Enhancement: Haste
-			i(189740),	-- Alacrialic Fluidic Spheroid \\ Fluidic Enhancement: Alacrity \\ Fluidic Enhancement: Haste
-			i(187274),	-- Ancient Alloy
-			i(188522),	-- Ancient Archive
-			i(187152),	-- Automa Key
-			i(187844),	-- Automa Protector Intact Resonator
-			i(187685),	-- Black Steel Fragment
-			i(190738),	-- Bouncing Bufonids
-			i(187708),	-- Broken Helm
-			i(188002),	-- Broken Helm
-			i(188765),	-- Broker Studies
-			i(188789),	-- Bufonid Throat Guard
-			i(191038),	-- Bundle of Supplies
-			i(187987),	-- Call Bounding Bufonid \\ Call Accelerated Nematoad
-			i(187949),	-- Catalyzed Apple
-			i(188182),	-- Cavalier Hat of the First Rogue
-			i(190323),	-- Chain Reactor \\ Torghast Device
-			i(190881),	-- Circle of Subsistence
-			i(188180),	-- Cloak of the First Rogue
-			i(190387),	-- Conduits For Free
-			i(189732),	-- Constialic Crystallic Spheroid \\ Crystallized Enhancement: Redundancy \\ Crystallized Enhancement: Stamina
-			i(189748),	-- Constialic Fluidic Spheroid \\ Fluidic Enhancement: Redundancy \\ Fluidic Enhancement: Stamina
-			i(188214),	-- Core Vine Cluster [UNUSED]
-			i(187341),	-- Creation Codex: Animate
-			i(187340),	-- Creation Codex: Automa
-			i(189560),	-- Deflectialic Crystallic Spheroid \\ Crystallized Enhancement: Deflection \\ Crystalizated Absorption
-			i(189577),	-- Deflectialic Fluidic Spheroid \\ Fluidic Enhancement: Deflection \\ Fluidic Enhancement: Absorption
-			i(187158),	-- Deobfuscating Oculus
-			i(187941),	-- Depleted Automa Core
-			i(187126),	-- Discarded Journal
-			i(188186),	-- Drape of Dominion
-			i(189763),	-- Efficialic Crystallic Spheroid \\ Crystallized Enhancement: Efficiency
-			i(189757),	-- Efficialic Fluidic Spheroid \\ Fluidic Enhancement: Efficiency
-			i(188275),	-- Energized Roots [UNUSED]
-			i(188523),	-- Energizing Leporid
-			i(188166),	-- Engraved Card
-			i(188118),	-- Enigmatic Scrolls
-			i(191022),	-- Eternal Curio
-			i(187841),	-- Explosive Core
-			i(189724),	-- Extractialic Crystallic Spheroid \\ Crystallized Enhancement: Extraction
-			i(189739),	-- Extractialic Fluidic Spheroid \\ Fluidic Enhancement: Extraction
-			i(190970),	-- Felicitous Glade Report
-			i(187516),	-- Firim's Forge-Tap \\ Firim's Forge-tap
-			i(188678),	-- Firim's Motivator
-			i(189725),	-- Flexialic Crystallic Spheroid \\ Crystallized Enhancement: Flexibility \\ Crystallized Enhancement: Versatility
-			i(189749),	-- Flexialic Fluidic Spheroid \\ Fluidic Enhancement: Flexibility \\ Fluidic Enhancement: Versatility
-			i(187920),	-- Flipper Fish
-			i(189726),	-- Focialic Crystallic Spheroid \\ Crystallized Enhancement: Focus \\ Crystallized Enhancement: Mastery
-			i(189743),	-- Focialic Fluidic Spheroid \\ Fluidic Enhancement: Focus \\ Fluidic Enhancement: Mastery
-			i(189762),	-- Fortialic Crystallic Spheroid \\ Crystallized Enhancement: Fault-Tolerance
-			i(189755),	-- Fortialic Fluidic Spheroid \\ Fluidic Enhancement: Fault-Tolerance
-			i(190968),	-- Genesis Fields Report
-			i(188181),	-- Gloves of the First Rogue
-			i(189721),	-- Glyph of the Sayaad \\ Glyph of the Tormentor
-			i(188761),	-- Happy Fun Sphere
-			i(189727),	-- Healialic Crystallic Spheroid \\ Crystallized Enhancement: Maintainability
-			i(189742),	-- Healialic Fluidic Spheroid \\ Fluidic Enhancement: Maintainability
-			i(188529),	-- Hexagonal Nectar
-			i(188185),	-- Indomitable Vest
-			i(187808),	-- Ingress Phrase
-			i(189768),	-- Jiro Hammer
-			i(188951),	-- Key
-			i(187337),	-- Mawsworn Cache Key
-			i(187115),	-- Mawsworn Missive
-			i(188949),	-- Mysterious Object
-			i(188950),	-- Mysterious Object
-			i(189728),	-- Obscurialic Crystallic Spheroid \\ Crystallized Enhancement: Obscurity \\ Crystallized Enhancement: Avoidance
-			i(189737),	-- Obscurialic Fluidic Spheroid \\ Fluidic Enhancement: Obscurity \\ Fluidic Enhancement: Avoidance
-			i(189729),	-- Osmosialic Crystallic Spheroid \\ Crystallized Enhancement: Osmosis \\ Crystallized Enhancement: Leech
-			i(189741),	-- Osmosialic Fluidic Spheroid \\ Fluidic Enhancement: Osmosis \\ Fluidic Enhancement: Leech
-			i(188183),	-- Pants of the First Rogue
-			i(189730),	-- Perceptialic Crystallic Spheroid \\ Crystallized Enhancement: Critical Strike
-			i(189738),	-- Perceptialic Fluidic Spheroid \\ Fluidic Enhancement: Perception \\ Fluidic Enhancement: Critical Strike
-			i(189731),	-- Potentialic Crystallic Spheroid \\ Crystallized Enhancement: Power
-			i(189744),	-- Potentialic Fluidic Spheroid \\ Fluidic Enhancement: Power
-			i(187702),	-- Precursor Placoderm
-			i(187712),	-- Precursor Placoderm Bait
-			i(187528),	-- Pristine Automa Core
-			i(187142),	-- Pristine Cervid Core
-			i(187141),	-- Pristine Lupine Core
-			i(187143),	-- Pristine Raptora Core
-			i(190236),	-- Proto Scale Fragment
-			i(187704),	-- Protoflesh
-			i(190955),	-- Protoplasmic Thread
-			i(190969),	-- Provis Flora Report
-			i(188187),	-- Quickfinger Pocketlifters
-			i(189764),	-- Reflectialic Crystallic Spheroid \\ Crystallized Enhancement: Reflection
-			i(189758),	-- Reflectialic Fluidic Spheroid \\ Fluidic Enhancement: Reflection
-			i(189733),	-- Relialic Crystallic Spheroid \\ Crystallized Enhancement: Reliability
-			i(189745),	-- Relialic Fluidic Spheroid \\ Fluidic Enhancement: Reliability
-			i(190659),	-- Resonant Carapace Fluidic Spheroid \\ [PH] Rare 3 Fluidic Spheroid
-			i(190658),	-- Resonant Gossamer Fluidic Spheroid \\ [PH] Rare 2 Fluidic Spheroid
-			i(190660),	-- Resonant Mucus Fluidic Spheroid \\ [PH] Rare 4 Fluidic Spheroid
-			i(190661),	-- Resonant Regrowth Fluidic Spheroid \\ [PH] Rare 5 Fluidic Spheroid
-			i(190936),	-- Restorative Flow
-			i(189734),	-- Rigialic Crystallic Spheroid \\ Crystallized Enhancement: Rigidity
-			i(189746),	-- Rigialic Fluidic Spheroid \\ Fluidic Enhancement: Rigidity
-			i(189767),	-- Roaming Repair Tool
-			i(189760),	-- Robustialic Crystallic Spheroid \\ Crystallized Enhancement: Robustness
-			i(189759),	-- Robustialic Fluidic Spheroid \\ Fluidic Enhancement: Robustness
-			i(189457),	-- Schematic: Deathrunner
-			i(188189),	-- Shadowwrap Leggings
-			i(188184),	-- Shoulderpads of the First Rogue
-			i(188190),	-- Shoulderpads of the Primordial
-			i(187618),	-- Site Oeth Circuit
-			i(188274),	-- Stolen Artifact
-			i(190971),	-- Terrace of Formation Report
-			i(187321),	-- Thermic Demolitor
-			i(189761),	-- Toxicialic Crystallic Spheroid \\ Crystallized Enhancement: Toxicity
-			i(189756),	-- Toxicialic Fluidic Spheroid \\ Fluidic Enhancement: Toxicity
-			i(189735),	-- Velocialic Crystallic Spheroid \\ Crystallized Enhancement: Velocity \\ Crystallized Enhancement: Speed
-			i(189747),	-- Velocialic Fluidic Spheroid \\ Fluidic Enhancement: Velocity \\ Fluidic Enhancement: Speed
-			i(188179),	-- Vest of the First Rogue
-			i(188165),	-- Waterfall Water
-			i(187620),	-- Winding Seed
-			i(188188),	-- Worldbinder Tricorne
-			i(188192),	-- Worn Stone Fragment
+			filter(QUEST_ITEMS, {
+				i(187274),	-- Ancient Alloy
+				i(188522),	-- Ancient Archive
+				i(187844),	-- Automa Protector Intact Resonator
+				i(187685),	-- Black Steel Fragment
+				i(187708),	-- Broken Helm
+				i(188002),	-- Broken Helm
+				i(188765),	-- Broker Studies
+				i(191038),	-- Bundle of Supplies
+				i(187987),	-- Call Bounding Bufonid
+				i(187949),	-- Catalyzed Apple
+				i(190323),	-- Chain Reactor
+				i(188214),	-- Core Vine Cluster [UNUSED]
+				i(187341),	-- Creation Codex: Animate
+				i(187340),	-- Creation Codex: Automa
+				i(187158),	-- Deobfuscating Oculus
+				i(187941),	-- Depleted Automa Core
+				i(187126),	-- Discarded Journal
+				i(188275),	-- Energized Roots [UNUSED]
+				i(188166),	-- Engraved Card
+				i(188118),	-- Enigmatic Scrolls
+				i(187841),	-- Explosive Core
+				i(190970),	-- Felicitous Glade Report
+				i(187516),	-- Firim's Forge-Tap
+				i(188678),	-- Firim's Motivator
+				i(190968),	-- Genesis Fields Report
+				i(188529),	-- Hexagonal Nectar
+				i(187808),	-- Ingress Phrase
+				i(187337),	-- Mawsworn Cache Key
+				i(187115),	-- Mawsworn Missive
+				i(187528),	-- Pristine Automa Core
+				i(187142),	-- Pristine Cervid Core
+				i(187141),	-- Pristine Lupine Core
+				i(187143),	-- Pristine Raptora Core
+				i(190955),	-- Protoplasmic Thread
+				i(190969),	-- Provis Flora Report
+				i(187618),	-- Site Oeth Circuit
+				i(188274),	-- Stolen Artifact
+				i(190971),	-- Terrace of Formation Report
+				i(187321),	-- Thermic Demolitor
+				i(188165),	-- Waterfall Water
+				i(187620),	-- Winding Seed
+				i(188192),	-- Worn Stone Fragment
+			}),
 		})),
 		tier(SL_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_5 } }, {
-			i(192093),	-- Gently Shaken Gift
-			i(192094),	-- Winter Veil Gift
+			filter(QUEST_ITEMS, {
+				i(192093),	-- Gently Shaken Gift
+				i(192094),	-- Winter Veil Gift
+			}),
 		})),
 	}),
 });

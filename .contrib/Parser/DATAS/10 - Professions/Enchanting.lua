@@ -390,7 +390,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				["provider"] = { "n", 146093 },	-- Sef Iwen
 				["coord"] = { 63.0, 59.4, DRUSTVAR },
 				["g"] = {
-					r(284415, {["u"] = TRAINING}),	-- Enchant Runic Power Core
+					r(284415, {["u"]=TRAINING}),	-- Enchant Runic Power Core
 				},
 			})),
 			q(54001, {	-- We're Going In

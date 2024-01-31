@@ -281,6 +281,7 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 		i(173033),	-- Iridescent Amberjack
 		i(173032),	-- Lost Sole
 		i(173035),	-- Pocked Bonefish
+		i(187702, {["timeline"] = {ADDED_9_2_0}}),	-- Precursor Placoderm
 		i(173034),	-- Silvergill Pike
 		i(173036),	-- Spinefin Piranha
 	}),
