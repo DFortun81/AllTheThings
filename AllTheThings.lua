@@ -18033,15 +18033,13 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 		if not self.initialized then
 			self.initialized = true;
 			force = true;
-			local data = {
-				["text"] = L["WORLD_QUESTS"],
+			local data = app.CreateRawText(L.WORLD_QUESTS, {
 				["icon"] = "Interface\\Icons\\INV_Misc_Map08.blp",
 				["description"] = L["WORLD_QUESTS_DESC"],
 				["indent"] = 0,
 				["back"] = 1,
 				["g"] = {
-					{
-						["text"] = L["UPDATE_WORLD_QUESTS"],
+					app.CreateRawText(L.UPDATE_WORLD_QUESTS, {
 						["icon"] = "Interface\\Icons\\INV_Misc_Map_01",
 						["description"] = L["UPDATE_WORLD_QUESTS_DESC"],
 						["hash"] = "funUpdateWorldQuests",
@@ -18050,9 +18048,9 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 							return true;
 						end,
 						["OnUpdate"] = app.AlwaysShowUpdate,
-					},
+					}),
 				},
-			};
+			})
 			self:SetData(data);
 			-- Build the initial heirarchy
 			self:BuildData();
@@ -18136,7 +18134,12 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 						{ 14 },	-- Arathi Highlands
 					},
 				},
-			};
+			}
+			local RepeatablesPerMapID = {
+				[2200] = {	-- Emerald Dream
+					78319,	-- The Superbloom
+				}
+			}
 			self.Clear = function(self)
 				local temp = self.data.g[1];
 				wipe(self.data.g);
@@ -18202,6 +18205,29 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					self.retry = true;
 				end
 			end
+			-- Static Repeatables
+			self.MergeRepeatables = function(self, mapObject)
+				local mapID = mapObject.mapID;
+				if not mapID then return; end
+				local repeatables = RepeatablesPerMapID[mapID]
+				if not repeatables then return end
+
+				local questObject
+				for _,questID in ipairs(repeatables) do
+					questObject = GetPopulatedQuestObject(questID)
+					if self.includeAll or
+						-- not saved
+						questObject.repeatable then
+						-- if mapID == 1355 then
+							-- app.PrintDebug("WQ",questObject.questID);
+						-- end
+						NestObject(mapObject, questObject);
+						-- see if need to retry based on missing data
+						-- if not self.retry and questObject.missingData then self.retry = true; end
+					end
+				end
+
+			end
 			self.BuildMapAndChildren = function(self, mapObject)
 				if not mapObject.mapID then return; end
 
@@ -18209,9 +18235,10 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 
 				-- Merge Tasks for Zone
 				self:MergeTasks(mapObject);
-
 				-- Merge Storylines for Zone
 				self:MergeStorylines(mapObject);
+				-- Merge Repeatables for Zone
+				self:MergeRepeatables(mapObject);
 
 				-- look for quests on map child maps as well
 				local mapChildInfos = C_Map_GetMapChildrenInfo(mapObject.mapID, 3);
@@ -18221,13 +18248,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 						C_QuestLine_RequestQuestLinesForMap(mapInfo.mapID);
 						local subMapObject = app.CreateMapWithStyle(mapInfo.mapID);
 
-						-- Merge Tasks for Zone
-						self:MergeTasks(subMapObject);
-
-						-- Merge Storylines for Zone
-						self:MergeStorylines(subMapObject);
-
-						-- Build children of this map as well
+						-- Build the children maps
 						self:BuildMapAndChildren(subMapObject);
 
 						NestObject(mapObject, subMapObject);
