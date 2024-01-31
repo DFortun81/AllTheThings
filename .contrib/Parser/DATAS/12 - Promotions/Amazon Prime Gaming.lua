@@ -57,7 +57,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(160588, {	-- Cap'n Crackers (PET!)
 				["description"] = "Amazon Prime Gaming reward from January 30th 2024 till February 27th 2024.",
-				["timeline"] = { "added 10.2.5.53040", "removed 10.2.6.99999" },
+				["timeline"] = { "added 10.2.5.53040", "removed 10.2.5.99999" },
 			}),
 		},
 	}),
