@@ -12895,42 +12895,62 @@ RowOnEnter = function (self)
 			app.AddQuestObjectivesToTooltip(GameTooltip, reference);
 		end
 		if reference.providers then
-			local first = true;
-			local providerType, providerID, providerString, providerTypeName, addId;
-			for i,provider in pairs(reference.providers) do
+			local first = 1;
+			local providerType, providerID
+			local CREATURE, OBJECT, ITEM = CREATURE, "Object", L.ITEM
+			local lineStrings = {}
+			for i,provider in ipairs(reference.providers) do
 				providerType = provider[1];
 				providerID = provider[2] or 0;
-				providerString = nil;
-				addId = nil;
+				wipe(lineStrings)
 				if providerType == "o" then
-					providerTypeName = "Object: ";
-					providerString = app.ObjectNames[providerID];
-					addId = app.Settings:GetTooltipSetting("objectID");
+					lineStrings[1] = OBJECT;
+					lineStrings[2] = ": "
+					lineStrings[3] = app.ObjectNames[providerID]
+					if app.Settings:GetTooltipSetting("objectID") then
+						lineStrings[4] = " ("
+						lineStrings[5] = providerID
+						lineStrings[6] = ")"
+					end
 				elseif providerType == "n" then
-					providerTypeName = "Creature: ";
-					providerString = providerID > 0 and app.NPCNameFromID[providerID];
-					addId = app.Settings:GetTooltipSetting("creatureID");
+					lineStrings[1] = CREATURE
+					lineStrings[2] = ": "
+					lineStrings[3] = providerID > 0 and app.NPCNameFromID[providerID];
+					if app.Settings:GetTooltipSetting("creatureID") then
+						lineStrings[4] = " ("
+						lineStrings[5] = providerID
+						lineStrings[6] = ")"
+					end
 				elseif providerType == "i" then
 					local _,name,_,_,_,_,_,_,_,icon = GetItemInfo(providerID);
 					if name then
-						providerTypeName = "Item: ";
+						lineStrings[1] = ITEM
+						lineStrings[2] = ": "
 						if icon then
-							providerTypeName = providerTypeName .. "|T" .. icon .. ":0|t";
+							lineStrings[3] = "|T"
+							lineStrings[4] = icon
+							lineStrings[5] = ":0|t"
 						end
-						providerString = name;
-						addId = app.Settings:GetTooltipSetting("itemID");
+						local count = #lineStrings
+						lineStrings[count + 1] = name;
+						if app.Settings:GetTooltipSetting("itemID") then
+							lineStrings[count + 2] = " ("
+							lineStrings[count + 3] = providerID
+							lineStrings[count + 4] = ")"
+						end
 					end
 				end
-				if providerString then
-					if addId then
-						providerString = providerString .. " (" .. providerID .. ")";
-					end
-					GameTooltip:AddDoubleLine(first and L.PROVIDERS or " ", providerTypeName .. providerString);
+				if #lineStrings > 0 then
+					GameTooltip:AddDoubleLine(first == 1 and L.PROVIDERS or " ", app.TableConcat(lineStrings));
 				else
-					GameTooltip:AddDoubleLine(first and L.PROVIDERS or " ", RETRIEVING_DATA);
+					GameTooltip:AddDoubleLine(first == 1 and L.PROVIDERS or " ", RETRIEVING_DATA);
 					missingMiscData = true;
 				end
-				first = nil;
+				if first > 25 then
+					GameTooltip:AddDoubleLine(" ", L.AND_ .. (#reference.providers - first) .. L._MORE .. "...");
+					break
+				end
+				first = first + 1;
 			end
 		end
 		local coord = reference.coord or reference.coord_tooltip;
