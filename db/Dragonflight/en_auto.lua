@@ -3247,6 +3247,7 @@ local keys = {
 [77600]="Quantum Greathammer/Mace (Two-Handed) completed.",
 [77601]="Quantum Staff completed.",
 [77602]="Quantum Polearm completed.",
+[77603]="Quantum Bow completed.",
 [77604]="Quantum Crossbow completed.",
 [77607]="Quantum Knuckles completed.",
 [77609]="Quantum Focus/Off-hand completed.",

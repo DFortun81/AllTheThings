@@ -583,6 +583,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					q(77424, {	-- Research: Dracthyr of Forbidden Reach
 						["coord"] = { 53.9, 36.7, THE_FORBIDDEN_REACH },
 					}),
+					q(77362, {	-- Research: Drakonid of Forbidden Reach
+						["coord"] = { 18.2, 13.2, THE_FORBIDDEN_REACH },
+					}),
 					q(78931, {	-- Technoscrying: The Mysteries of Dragonskull Island
 						["coord"] = { 76.8, 38.0, THE_FORBIDDEN_REACH },
 					}),
