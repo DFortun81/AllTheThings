@@ -1347,8 +1347,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(200925, {	-- Ensemble: Solemn Watchman's Garb
 					["cost"] = {{"c", TRADERS_TENDER, 650}},
 					["groups"] = {
-						i(190091),	-- Fanciful Corsage
-						i(190728),	-- Gothic Corsage
 						i(190694),	-- Solemn Watchman's Belt
 						i(190695),	-- Solemn Watchman's Boots
 						i(190872),	-- Solemn Watchman's Cuirass
@@ -1435,19 +1433,23 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 			filter(BATTLE_PETS, {
-				i(212700),	-- Nelle (PET!) [Trading Post]250
-				i(212722),	-- Buggsy (PET!) [Trading Post]350
+				i(212700, { -- Nelle (PET!) [Trading Post]
+					["cost"] = {{"c", TRADERS_TENDER, 250}},
+				}),
+				i(212722, { -- Buggsy (PET!) [Trading Post]
+					["cost"] = {{"c", TRADERS_TENDER, 350}},
+				}),
 			}),
 			filter(MOUNTS, {
 				i(212227, { -- Reins of the Fur-Endship Fox
 					["cost"] = {{"c", TRADERS_TENDER, 750}},
 				}),
-				i(, { -- X-53 Touring Rocket
+				i(54860, {	-- X-53 Touring Rocket (MOUNT!)
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
 			}),
 			filter(TOYS, {
-				i(, {	-- Mannequin Charm
+				i(206347, { -- Mannequin Charm (TOY!)
 					["cost"] = {{"c", TRADERS_TENDER, 10}},
 				}),
 			}),
@@ -1469,12 +1471,18 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(190724),	-- Tunic of the Honored Valarjar
 					},
 				}),
-				i(210865),	-- Blademaster's Crimson Stones200
-				i(212374),	-- Classic Rosy Tabard100
+				i(210865, { -- Blademaster's Crimson Stones
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(212374, { -- Classic Rosy Tabard
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
 				i(212545, { -- Crown of the White Rose
 					["cost"] = {{"c", TRADERS_TENDER, 250}},
 				}),
-				i(212572),	-- Dueler's Rosy Shoulder Cape75
+				i(212572, { -- Dueler's Rosy Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
 				i(202170, { -- Ensemble: Vagabond's Rosy Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
@@ -1482,18 +1490,28 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(202169), -- Vagabond's Rosy Hood
 					},
 				}),
-				--i(, { -- Ensemble: Wanderer’s Rosy Trappings
-				--	["cost"] = {{"c", TRADERS_TENDER, 100}},
-				--	["g"] = {
-					--	i(), -- Vagabond's Rosy Cape
-					--	i(), -- Vagabond's Rosy Hood
-				--	},
-				--}),
-				--Fanciful Corsage 100
-				i(212382),	-- Fluorescent Splitblade250
-				--Gothic Corsage100
-				i(212373),	-- Gossamer Magenta Gown150
-				i(190895),	-- Lost Crusader's Amethyst Battleaxe200
+				i(202167, { -- Ensemble: Wanderer's Rosy Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+						i(202166), -- Wanderer's Rosy Cloak
+						i(202165), -- Wanderer's Rosy Scarf
+					},
+				}),
+				i(190091, { -- Fanciful Corsage
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(212382, { -- Fluorescent Splitblade
+					["cost"] = {{"c", TRADERS_TENDER, 250}},
+				}),
+				i(190728, { -- Gothic Corsage
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(212373, { -- Gossamer Magenta Gown
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(190895, { -- Lost Crusader's Amethyst Battleaxe
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
 				i(212381, { -- Love's Bulwark
 					["cost"] = {{"c", TRADERS_TENDER, 200}},
 				}),
@@ -1509,16 +1527,22 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(212377, { -- Love Witch's Rosy Wand
 					["cost"] = {{"c", TRADERS_TENDER, 200}},
 				}),
-				i(212372),	-- Magenta Masquerade Gloves100
+				i(212372, { -- Magenta Masquerade Gloves
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
 				i(190909, { -- Ruby Felfire Splitblade
 					["cost"] = {{"c", TRADERS_TENDER, 400}},
 				}),
 				i(190910, { -- Ruby Felfire Bulwark
 					["cost"] = {{"c", TRADERS_TENDER, 400}},
 				}),
-				--Rosy Corsage100
-				i(190670),	-- Sanguine Bouquet100
-				i(210858),	-- Trader's Rosy Sarong100
+				--Rosy Corsage
+				i(190670, { -- Sanguine Bouquet
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(210858, { -- Trader's Rosy Sarong
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
 				i(212378, { -- Twilight Witch's Gothic Scepter
 					["cost"] = {{"c", TRADERS_TENDER, 200}},
 				}),
