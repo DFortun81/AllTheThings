@@ -18405,7 +18405,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 						local hg = {}
 						header.g = hg
 						if expansionLevel and not isHoliday then
-							header.icon = setmetatable({["tierID"]=expansionLevel + 1}, app.BaseTier).icon;
+							header.icon = app.CreateTier(expansionLevel + 1).icon;
 						elseif isTimeWalker then
 							header.icon = app.asset("Difficulty_Timewalking");
 						end
