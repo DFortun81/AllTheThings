@@ -1,5 +1,5 @@
 do
-local appName, app = ...;
+local _, app = ...;
 
 -- Global locals
 local ipairs, tinsert, pairs, rawset, type, wipe, setmetatable, rawget, math_floor

@@ -1761,7 +1761,7 @@ checkboxSources:AlignAfter(checkboxTransmog)
 
 local checkboxMainOnlyMode = child:CreateCheckBox(L["I_ONLY_CARE_ABOUT_MY_MAIN"],
 function(self)
-	local className, classFilename = UnitClass("player")
+	local _, classFilename = UnitClass("player")
 	local rPerc, gPerc, bPerc = GetClassColor(classFilename)
 	self.Text:SetTextColor(rPerc, gPerc, bPerc, 1)
 	self:SetChecked(settings:Get("MainOnly"))
@@ -1926,7 +1926,6 @@ child:CreateTrackingCheckbox("RUNEFORGELEGENDARIES", "RuneforgeLegendaries")
 local accwideCheckboxDrakewatcherManuscripts =
 child:CreateForcedAccountWideCheckbox()
 	:AlignBelow(accwideCheckboxRunecarvingPowers)
-local checkboxDrakewatcherManuscripts =
 child:CreateTrackingCheckbox("DRAKEWATCHERMANUSCRIPTS", "DrakewatcherManuscripts")
 	:AlignAfter(accwideCheckboxDrakewatcherManuscripts)
 
@@ -2344,7 +2343,7 @@ textWeaponsAndArmorExplain.OnRefresh = function(self)
 end
 
 -- Stuff to automatically generate the armor & weapon checkboxes
-local last, xoffset, yoffset = headerWeaponsAndArmor, 0, -4
+local last = headerWeaponsAndArmor
 local itemFilterNames = L["FILTER_ID_TYPES"]
 local ItemFilterOnClick = function(self)
 	settings:SetFilter(self.filterID, self:GetChecked())

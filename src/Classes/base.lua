@@ -424,7 +424,7 @@ app.CreateClass = function(className, classKey, fields, ...)
 							variants[variantName] = BaseObjectFields(variantClone, className .. subclassName .. variantName);
 						end
 					end
-					local a,b;
+					local a;
 					tinsert(conditionals, function(t)
 						a = conditional(t);
 						if a then
