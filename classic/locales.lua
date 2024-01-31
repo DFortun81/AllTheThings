@@ -459,6 +459,9 @@ local L = {
 		
 		-- Does not get added until 4.1.0, btw. So just keep that in mind for wrath.
 		[5788] = { 81, "Agent of the Shen'dralar", "Interface\\Icons\\inv_misc_book_04" },
+		
+		-- Season of Mastery
+		[16433] = { 81, "Soul of Iron", "Interface\\Icons\\inv_qirajidol_life" },
 	},
 	["ACHIEVEMENT_CRITERIA_DATA"] = {
 		[92] = { -1, "Character" },
@@ -609,7 +612,7 @@ local L = {
 		[1601] = {2, "|CFFAAFFAAThis was only available during the Scourge Invasions.|r", "Scourge Invasion", 11301, nil, "\n \n|CFFFFAAAAIf both Scourge Invasions have been completed on your server, simply turn this off.|r" },
 		[1602] = {2, "|CFFAAFFAAThis was only available during the Silithyst Must Flow World PVP Event.|r", "Silithyst", 11301, 11306, "\n \n|CFFFFAAAAIf the World PVP Event is available, simply turn this on.|r" },
 		[1603] = {2, "|CFFAAFFAAThis was only available after the start of Classic Era.|r", "Classic Era", 11301, 11307, "\n \n|CFFFFAAAAIf the Classic Era has begun, simply turn this on.|r" },
-		[1604] = {2, "|CFFAAFFAAThis was only available during Season of Mastery.|r", "Season of Mastery", 11301, 11400, "\n \n|CFFFFAAAAIf Season of Mastery is active on your server, simply turn this on.|r" },
+		[1604] = {2, "|CFFAAFFAAThis was only available during Season of Mastery.|r", "Season of Mastery", 11301, nil, "\n \n|CFFFFAAAAIf Season of Mastery is active on your server, simply turn this on.|r" },
 		[1605] = {2, "|CFFAAFFAAThis was only available during Season of Discovery.|r", "Season of Discovery", 11301, nil, "\n \n|CFFFFAAAAIf Season of Discovery is active on your server, simply turn this on.|r" },
 
 		[17] = {2, "|CFFAAFFAAThis was not available until Phase 1 of TBC Classic.|r", "Phase 1", 20501, 20501, "\n \n|CFFFFAAAAIncluded Karazhan, Magtheridon's Lair, and Gruul's Lair.|r" },

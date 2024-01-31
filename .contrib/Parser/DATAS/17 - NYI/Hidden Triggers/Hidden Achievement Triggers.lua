@@ -23,22 +23,22 @@ root(ROOTS.HiddenAchievementTriggers, {
 		--1.14.1.40688
 		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
-		ach(15330),	-- Survivor of the Firelord (Season of Mastery) \\ Survivor of the Firelord \\ Survivor of the Flames
+		applyclassicphase(SOM_PHASE_ONE, ach(15330)),	-- Survivor of the Firelord (Season of Mastery) \\ Survivor of the Firelord \\ Survivor of the Flames
 		-- #endif
 		-- #endif
 		-- #if DEBUG
 		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
-		ach(15332),	-- [DNT] Survivor (Season of Mastery) (hidden) \\ Survivor
+		applyclassicphase(SOM_PHASE_ONE, ach(15332)),	-- [DNT] Survivor (Season of Mastery) (hidden) \\ Survivor
 		-- #endif
 		-- #endif
 		-- #endif
 		--1.14.1.40800
 		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
-		ach(15333),	-- Survivor of the Shadow Flame (Season of Mastery) \\ Survivor of the Shadow Flame
-		ach(15334),	-- Survivor of the Old God (Season of Mastery) \\ Survivor of the Old God
-		ach(15335),	-- Survivor of the Damned (Season of Mastery) \\ Survivor of the Damned
+		applyclassicphase(SOM_PHASE_ONE, ach(15333)),	-- Survivor of the Shadow Flame (Season of Mastery) \\ Survivor of the Shadow Flame
+		applyclassicphase(SOM_PHASE_ONE, ach(15334)),	-- Survivor of the Old God (Season of Mastery) \\ Survivor of the Old God
+		applyclassicphase(SOM_PHASE_ONE, ach(15335)),	-- Survivor of the Damned (Season of Mastery) \\ Survivor of the Damned
 		-- #endif
 		-- #endif
 		--1.14.2.42597
@@ -52,7 +52,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		--1.14.3.42770
 		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
-		ach(15637),	-- The Immortal (Season of Mastery) \\ The Immortal
+		applyclassicphase(SOM_PHASE_ONE, ach(15637)),	-- The Immortal (Season of Mastery) \\ The Immortal
 		-- #endif
 		-- #endif
 	}),

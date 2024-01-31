@@ -698,9 +698,31 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		["rank"] = 1,
 	}),
 	-- #if ANYCLASSIC
-	ach(16433, {	-- Soul of Iron (Season of Mastery)
-		["timeline"] = { ADDED_3_4_0 },
-	}),
+	applyclassicphase(SOM_PHASE_ONE, ach(16433, {	-- Soul of Iron (Season of Mastery)
+		["timeline"] = { "added 1.14.3", "removed 1.15.0" },	-- NOTE: You could only acquire this during Season of Mastery, but it didn't appear on your account until Wrath Classic.
+		-- #if BEFORE TBC
+		["OnUpdate"] = [[function(t)
+			if t.collectible and _.Level >= 60 then
+				local i, spellID = 1, select(10, UnitBuff("player", 1));
+				while spellID do
+					if spellID == 364001 then
+						t:SetAchievementCollected(t.achievementID, true);
+						return false;
+					end
+					i = i + 1;
+					spellID = select(10, UnitBuff("player", i));
+				end;
+				t:SetAchievementCollected(t.achievementID, false);
+			end
+		end]],
+		-- #endif
+		["groups"] = {
+			title(143, {	-- <Name>, Soul of Iron (756 on wowhead? That's wrong!)
+				-- TODO: Double check this in Cataclysm Classic
+				["timeline"] = { "added 3.4.0" },
+			}),
+		},
+	})),
 	-- #endif
 	ach(1832, {	-- Tastes Like Chicken
 		["timeline"] = { "added 3.0.1" },
