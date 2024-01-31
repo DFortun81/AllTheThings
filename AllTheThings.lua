@@ -11836,8 +11836,7 @@ function app:CreateMiniListForGroup(group)
 					until not prereqs or #prereqs < 1;
 				end
 
-				local questChainHeader = {
-					["text"] = useNested and L["NESTED_QUEST_REQUIREMENTS"] or L["QUEST_CHAIN_REQ"],
+				local questChainHeader = app.CreateRawText(useNested and L.NESTED_QUEST_REQUIREMENTS or L.QUEST_CHAIN_REQ, {
 					["description"] = L["QUEST_CHAIN_REQ_DESC"],
 					["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
 					["OnUpdate"] = app.AlwaysShowUpdate,
@@ -11845,7 +11844,7 @@ function app:CreateMiniListForGroup(group)
 					["skipFill"] = true,
 					-- copy any sourceQuests into the header incase the root is not actually a quest
 					["sourceQuests"] = root.sourceQuests,
-				};
+				});
 				NestObject(group, questChainHeader);
 				if useNested then
 					app.NestSourceQuestsV2(questChainHeader, group.questID);
@@ -18140,6 +18139,8 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					78319,	-- The Superbloom
 				}
 			}
+			-- Blizz likes to list the same quest on multiple maps
+			local AddedQuestIDs = {}
 			self.Clear = function(self)
 				local temp = self.data.g[1];
 				wipe(self.data.g);
@@ -18155,7 +18156,8 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				if pois then
 					for i,poi in ipairs(pois) do
 						-- only include Tasks on this actual mapID since each Zone mapID is checked individually
-						if poi.mapID == mapID then
+						if poi.mapID == mapID and not AddedQuestIDs[poi.questId] then
+							AddedQuestIDs[poi.questId] = true
 							local questObject = GetPopulatedQuestObject(poi.questId);
 							if self.includeAll or
 								-- include the quest in the list if holding shift and tracking quests
@@ -18185,7 +18187,8 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				if questLines then
 					for id,questLine in pairs(questLines) do
 						-- dont show 'hidden' quest lines... not sure what this is exactly
-						if not questLine.hidden then
+						if not questLine.hidden and not AddedQuestIDs[questLine.questID] then
+							AddedQuestIDs[questLine.questID] = true
 							local questObject = GetPopulatedQuestObject(questLine.questID);
 							if self.includeAll or
 								-- include the quest in the list if holding shift and tracking quests
@@ -18264,6 +18267,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					return;
 				end
 				-- Rebuild all World Quest data
+				wipe(AddedQuestIDs)
 				-- app.PrintDebug("Rebuild WQ Data")
 				self.retry = nil;
 				-- Put a 'Clear World Quests' click first in the list
