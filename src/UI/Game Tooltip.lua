@@ -229,6 +229,7 @@ local function TrySetModel(reference)
 		if displayID then
 			GameTooltipModel.Model:SetFacing(CalculateModelRotation(reference.modelRotation));
 			GameTooltipModel.Model:SetCamDistanceScale(reference.modelScale or 1);
+			GameTooltipModel.Model:SetUnit("none");
 			GameTooltipModel.Model:SetDisplayInfo(displayID);
 			GameTooltipModel.Model:Show();
 			GameTooltipModel:Show();
