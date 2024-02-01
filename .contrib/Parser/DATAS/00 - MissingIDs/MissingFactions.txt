@@ -1,7 +1,3 @@
-0.5.3.3368
-faction(67),	-- Horde \\ _REUSE ME 003 \\ Unused - Use Me for Something
-0.9.0.3807
-faction(469),	-- Alliance \\ _REUSE ME 002
 1.15.0.52124
 faction(2588),	-- S03 - Scarlet Crusade Disguise
 5.0.3.15882
