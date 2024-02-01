@@ -1077,7 +1077,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 					i(140362),	-- Dust from the Shadowlands
 					un(REMOVED_FROM_GAME, i(143479)),	-- Frayed Banner
 					un(REMOVED_FROM_GAME, i(142522)),	-- Rude Letter (removed until Brawler's Guild comes back someday)
-					i(116415),	-- Shiny Pet Charm
+					i(116415, { ["timeline"] = { REMOVED_10_2_5 } }),	-- Shiny Pet Charm
 					-- Dungeons
 					un(REMOVED_FROM_GAME, i(139471)),	-- Black Rook Missive -> Black Rook Hold: The Lord of Black Rook Hold -> Black Rook Hold
 					un(REMOVED_FROM_GAME, i(139476)),	-- Broken Dragon Scale -> Neltharion's Lair: Into Neltharion's Lair -> Neltharion's Lair
