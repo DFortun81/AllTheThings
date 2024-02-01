@@ -701,18 +701,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		ach(972, {	-- Trick or Treat!
 			["timeline"] = { "added 3.0.1" },
 		}),
-		-- #if AFTER 4.2.0
-		ach(971, {	-- Tricks and Treats of Azeroth
+		ach(971, {	-- Tricks and Treats of Azeroth (H) / Tricks and Treats of Azeroth [MOP+]
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",
+				-- #if AFTER 4.2.0
 				966,	-- Tricks and Treats of Eastern Kingdoms (A)
+				-- #endif
 				967,	-- Tricks and Treats of Eastern Kingdoms (H)
+				-- #if AFTER 4.2.0
 				963,	-- Tricks and Treats of Kalimdor (A)
+				-- #endif
 				965,	-- Tricks and Treats of Kalimdor (H)
+				-- #if AFTER 4.2.0
 				969,	-- Tricks and Treats of Outlands (A)
+				-- #endif
 				968,	-- Tricks and Treats of Outlands (H)
 			}},
 			["timeline"] = { "added 3.0.1" },
+			-- #if BEFORE 4.2.0
+			["races"] = HORDE_ONLY,
+			-- #endif
 		}),
 		ach(970, {	-- Tricks and Treats of Azeroth (A)
 			-- Meta Achievement should symlink the contained Achievements from Source
@@ -724,17 +732,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["timeline"] = { "added 3.0.1", "removed 4.2.0" },
 			["races"] = ALLIANCE_ONLY,
 		}),
-		-- #else
-		ach(971, {	-- Tricks and Treats of Azeroth (H)
-			-- Meta Achievement should symlink the contained Achievements from Source
-			["sym"] = {{"meta_achievement",
-				967,	-- Tricks and Treats of Eastern Kingdoms (H)
-				965,	-- Tricks and Treats of Kalimdor (H)
-				968,	-- Tricks and Treats of Outlands (H)
-			}},
-			["races"] = HORDE_ONLY,
-		}),
-		-- #endif
 		ach(5837, {	-- Tricks and Treats of Cataclysm (A)
 			["timeline"] = { "added 4.2.0" },
 			["sym"] = {{ "achievement_criteria" }},
