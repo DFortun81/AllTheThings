@@ -287,6 +287,65 @@ local function GetMoneyString(amount)
 	end
 	return amount
 end
+local function GetDisplayID(data)
+	-- don't create a displayID for groups with a sourceID/itemID/difficultyID/mapID
+	if data.sourceID or data.itemID or data.difficultyID or data.mapID then return; end
+	if data.displayID then
+		return data.displayID;
+	elseif data.creatureID then
+		local displayID = app.NPCDisplayIDFromID[data.creatureID];
+		if displayID then
+			return displayID;
+		end
+	end
+
+	if data.providers and #data.providers > 0 then
+		for k,v in pairs(data.providers) do
+			-- if one of the providers is an NPC, we should show its texture regardless of other providers
+			if v[1] == "n" then
+				return app.NPCDisplayIDFromID[v[2]];
+			end
+		end
+	end
+
+	if data.qgs and #data.qgs > 0 then
+		return app.NPCDisplayIDFromID[data.qgs[1]];
+	end
+end
+local function GetIconFromProviders(group)
+	if group.providers then
+		local icon;
+		for k,v in ipairs(group.providers) do
+			if v[2] > 0 then
+				if v[1] == "o" then
+					icon = app.ObjectIcons[v[2]];
+				elseif v[1] == "i" then
+					icon = select(5, GetItemInfoInstant(v[2]));
+				end
+				if icon then return icon; end
+			end
+		end
+	end
+end
+local function GetNameFromProviders(group)
+	if group.providers then
+		local name;
+		for k,v in ipairs(group.providers) do
+			if v[2] > 0 then
+				if v[1] == "o" then
+					name = app.ObjectNames[v[2]];
+				elseif v[1] == "i" then
+					name = GetItemInfo(v[2]);
+				elseif v[1] == "n" then
+					name = app.NPCNameFromID[v[2]];
+				end
+				if name then return name; end
+			end
+		end
+	end
+end
+app.GetIconFromProviders = GetIconFromProviders;
+app.GetNameFromProviders = GetNameFromProviders;
 
 do -- TradeSkill Functionality
 local tradeSkillSpecializationMap = {
@@ -533,386 +592,10 @@ app.RefreshTradeSkillCache = function()
 end
 end -- TradeSkill Functionality
 
--- Game Tooltip Icon
-local GameTooltipIcon = CreateFrame("FRAME", nil, GameTooltip);
-GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-GameTooltipIcon:SetSize(72, 72);
-GameTooltipIcon.icon = GameTooltipIcon:CreateTexture(nil, "ARTWORK");
-GameTooltipIcon.icon:SetAllPoints(GameTooltipIcon);
-GameTooltipIcon.icon:Show();
-GameTooltipIcon.icon.Background = GameTooltipIcon:CreateTexture(nil, "BACKGROUND");
-GameTooltipIcon.icon.Background:SetAllPoints(GameTooltipIcon);
-GameTooltipIcon.icon.Background:Show();
-GameTooltipIcon.icon.Border = GameTooltipIcon:CreateTexture(nil, "BORDER");
-GameTooltipIcon.icon.Border:SetAllPoints(GameTooltipIcon);
-GameTooltipIcon.icon.Border:Show();
-GameTooltipIcon:Hide();
-
--- Model is used to display the model of an NPC/Encounter.
-local GameTooltipModel, model, fi = CreateFrame("FRAME", "ATTGameTooltipModel", GameTooltip, BackdropTemplateMixin and "BackdropTemplate");
-GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-GameTooltipModel:SetSize(128, 128);
-GameTooltipModel:SetBackdrop({
-	bgFile = "Interface/Tooltips/UI-Tooltip-Background",
-	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
-	tile = true, tileSize = 16, edgeSize = 16,
-	insets = { left = 4, right = 4, top = 4, bottom = 4 }
-});
-GameTooltipModel:SetBackdropBorderColor(1, 1, 1, 1);
-GameTooltipModel:SetBackdropColor(0, 0, 0, 1);
-GameTooltipModel.Models = {};
-GameTooltipModel.Model = CreateFrame("DressUpModel", nil, GameTooltipModel);
-GameTooltipModel.Model:SetPoint("TOPLEFT", GameTooltipModel, "TOPLEFT", 4, -4)
-GameTooltipModel.Model:SetPoint("BOTTOMRIGHT", GameTooltipModel, "BOTTOMRIGHT", -4, 4)
-GameTooltipModel.Model:SetFacing(MODELFRAME_DEFAULT_ROTATION);
-GameTooltipModel.Model:SetScript("OnUpdate", function(self, elapsed)
-	self:SetFacing(self:GetFacing() + elapsed);
-end);
-GameTooltipModel.Model:Hide();
-
-for i=1,MAX_CREATURES_PER_ENCOUNTER do
-	model = CreateFrame("DressUpModel", "ATTGameTooltipModel" .. i, GameTooltipModel);
-	model:SetPoint("TOPLEFT", GameTooltipModel, "TOPLEFT", 4, -4);
-	model:SetPoint("BOTTOMRIGHT", GameTooltipModel, "BOTTOMRIGHT", -4, 4);
-	model:SetCamDistanceScale(1.7);
-	model:SetDisplayInfo(987);
-	model:SetFacing(MODELFRAME_DEFAULT_ROTATION);
-	fi = math_floor(i / 2);
-	model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - 0.3);
-	--model:SetDepth(i);
-	model:Hide();
-	tinsert(GameTooltipModel.Models, model);
-end
-GameTooltipModel.HideAllModels = function(self)
-	for i=1,MAX_CREATURES_PER_ENCOUNTER do
-		GameTooltipModel.Models[i]:Hide();
-	end
-	GameTooltipModel.Model:Hide();
-end
-GameTooltipModel.SetRotation = function(number)
-	GameTooltipModel.Model:SetFacing(number and ((number * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-end
-GameTooltipModel.SetScale = function(number)
-	GameTooltipModel.Model:SetCamDistanceScale(number or 1);
-end
 
 
-GameTooltip.ClearATTReferenceTexture = function(self)
-	GameTooltipIcon.icon.Background:Hide();
-	GameTooltipIcon.icon.Border:Hide();
-	GameTooltipIcon:Hide();
-	GameTooltipModel:Hide();
-end
-GameTooltip.SetATTReferenceTexture = function(self, reference, owner)
-	local texture = reference.preview or reference.icon;
-	if texture then
-		if owner then
-			GameTooltipIcon:ClearAllPoints();
-			GameTooltipModel:ClearAllPoints();
-			if self:GetCenter() > (UIParent:GetWidth() / 2) then
-				GameTooltip:SetOwner(self, "ANCHOR_LEFT");
-				GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-				GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-			else
-				GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
-				GameTooltipIcon:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
-				GameTooltipModel:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
-			end
-		end
-		if reference.explorationID and reference.maphash and reference.preview then
-			local width, height, offsetX, offsetY = strsplit(":", reference.maphash);
-			GameTooltipIcon:SetSize(tonumber(width) or 72,tonumber(height) or 72);
-		else
-			GameTooltipIcon:SetSize(72,72);
-		end
-		GameTooltipIcon.icon:SetTexture(texture);
-		local texcoord = reference.texcoord;
-		if texcoord then
-			GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
-		else
-			GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
-		end
-		GameTooltipIcon:Show();
-	end
-end
 
-local GetDisplayID
-do
-	-- returns the input key unless it's blocked by being set to 0
-	local BlockedDisplayID = {
-		[11686] = 0,	-- empty blue thing
-		[16925] = 0,	-- nothing
-		[21072] = 0,	-- empty blue thing
-		[27823] = 0,	-- empty blue thing
-		[52318] = 0,	-- generic bunny
-		[56187] = 0,	-- generic bunny
-		[110046] = 0,	-- nothing
-		[112684] = 0,	-- nothing
-	}
-	local AllowedDisplayID = setmetatable({},
-		{ __index = function(t, key)
-			if not key or BlockedDisplayID[key] then return end
-			return key
-		end
-	})
-	GameTooltipModel.SetCreatureID = function(self, creatureID)
-		GameTooltipModel.HideAllModels(self);
-		if creatureID > 0 then
-			self.Model:SetUnit("none");
-			self.Model:SetCreature(creatureID);
-			local displayID = self.Model:GetDisplayInfo()
-			if not displayID then
-				Push(app, "SetCreatureID", function()
-					if self.lastModel == creatureID then
-						self:SetCreatureID(creatureID);
-					end
-				end);
-				self:Hide()
-				return
-			end
-			if not AllowedDisplayID[displayID] then
-				self.Model:SetUnit("none");
-				self:Hide()
-				return
-			end
-		end
-		self:Show();
-	end
-	GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
-		if displayInfos then
-			local count = #displayInfos;
-			local displayID, shown
-			if count > 0 then
-				local rotation = reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION;
-				local scale = reference.modelScale or 1;
-				if count > 1 then
-					count = math.min(count, MAX_CREATURES_PER_ENCOUNTER);
-					local ratio = count / MAX_CREATURES_PER_ENCOUNTER;
-					if count < 3 then
-						for i=1,count do
-							displayID = AllowedDisplayID[displayInfos[i]]
-							if displayID then
-								model = self.Models[i];
-								model:SetDisplayInfo(displayID);
-								model:SetCamDistanceScale(scale);
-								model:SetFacing(rotation);
-								model:SetPosition(0, (i % 2 == 0 and 0.5 or -0.5), 0);
-								model:Show();
-								shown = true
-							end
-						end
-					else
-						scale = (1 + (ratio * 0.5)) * scale;
-						for i=1,count do
-							displayID = AllowedDisplayID[displayInfos[i]]
-							if displayID then
-								model = self.Models[i];
-								model:SetDisplayInfo(displayID);
-								model:SetCamDistanceScale(scale);
-								model:SetFacing(rotation);
-								fi = math_floor(i / 2);
-								model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - (ratio * 0.15));
-								model:Show();
-								shown = true
-							end
-						end
-					end
-				else
-					displayID = AllowedDisplayID[displayInfos[1]]
-					if displayID then
-						self.Model:SetFacing(rotation);
-						self.Model:SetCamDistanceScale(scale);
-						self.Model:SetDisplayInfo(displayID);
-						-- app.PrintDebug("SetDisplayInfo",displayID)
-						self.Model:Show();
-						shown = true
-					end
-				end
-				if shown then self:Show(); else self:Hide() end
-				return true;
-			end
-		end
-	end
-	-- Attempts to return the displayID for the data, or every displayID if 'all' is specified
-	GetDisplayID = function(data, all)
-		-- don't create a displayID for groups with a sourceID/itemID/difficultyID/mapID
-		if data.sourceID or data.itemID or data.difficultyID or data.mapID then return; end
-		if all then
-			local displayInfo, _ = {};
-			-- specific displayID
-			_ = data.displayID;
-			if _ then tinsert(displayInfo, _); data.displayInfo = displayInfo; return displayInfo; end
 
-			-- specific creatureID for displayID
-			_ = AllowedDisplayID[data.creatureID and app.NPCDisplayIDFromID[data.creatureID]]
-			if _ then tinsert(displayInfo, _); data.displayInfo = displayInfo; return displayInfo; end
-
-			-- loop through "n" providers
-			if data.providers then
-				for k,v in pairs(data.providers) do
-					-- if one of the providers is an NPC, we should show its texture regardless of other providers
-					if v[1] == "n" then
-						_ = AllowedDisplayID[v[2] and app.NPCDisplayIDFromID[v[2]]];
-						if _ then tinsert(displayInfo, _); end
-					end
-				end
-			end
-			if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
-
-			-- for quest givers
-			if data.qgs then
-				for k,v in pairs(data.qgs) do
-					_ = AllowedDisplayID[v and app.NPCDisplayIDFromID[v]];
-					if _ then tinsert(displayInfo, _); end
-				end
-			end
-			if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
-		else
-			-- specific displayID
-			local _ = data.displayID or data.fetchedDisplayID
-			if _ then return _; end
-
-			-- specific creatureID for displayID
-			_ = AllowedDisplayID[data.creatureID and app.NPCDisplayIDFromID[data.creatureID]]
-			if _ then data.fetchedDisplayID = _; return _; end
-
-			-- loop through "n" providers
-			if data.providers then
-				for k,v in pairs(data.providers) do
-					-- if one of the providers is an NPC, we should show its texture regardless of other providers
-					if v[1] == "n" then
-						_ = AllowedDisplayID[v[2] and app.NPCDisplayIDFromID[v[2]]]
-						if _ then data.fetchedDisplayID = _; return _; end
-					end
-				end
-			end
-
-			-- for quest givers
-			if data.qgs then
-				for k,v in pairs(data.qgs) do
-					_ = AllowedDisplayID[v and app.NPCDisplayIDFromID[v]]
-					if _ then data.fetchedDisplayID = _; return _; end
-				end
-			end
-		end
-	end
-end
-local function GetIconFromProviders(group)
-	if group.providers then
-		local icon;
-		for k,v in ipairs(group.providers) do
-			if v[2] > 0 then
-				if v[1] == "o" then
-					icon = app.ObjectIcons[v[2]];
-				elseif v[1] == "i" then
-					icon = select(5, GetItemInfoInstant(v[2]));
-				end
-				if icon then return icon; end
-			end
-		end
-	end
-end
-local function GetNameFromProviders(group)
-	if group.providers then
-		local name;
-		for k,v in ipairs(group.providers) do
-			if v[2] > 0 then
-				if v[1] == "o" then
-					name = app.ObjectNames[v[2]];
-				elseif v[1] == "i" then
-					name = GetItemInfo(v[2]);
-				elseif v[1] == "n" then
-					name = app.NPCNameFromID[v[2]];
-				end
-				if name then return name; end
-			end
-		end
-	end
-end
-app.GetIconFromProviders = GetIconFromProviders;
-app.GetNameFromProviders = GetNameFromProviders;
-GameTooltipModel.TrySetModel = function(self, reference)
-	GameTooltipModel.HideAllModels(self);
-	if app.Settings:GetTooltipSetting("Models") then
-		self.lastModel = reference;
-		local displayInfos = reference.displayInfo or GetDisplayID(reference, true);
-		if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfos) then
-			return true;
-		end
-
-		if reference.displayID then
-			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self.Model:SetDisplayInfo(reference.displayID);
-			self.Model:Show();
-			self:Show();
-			return true;
-		elseif reference.modelID then
-			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self.Model:SetDisplayInfo(reference.modelID);
-			self.Model:Show();
-			self:Show();
-			return true;
-		elseif reference.unit and not reference.icon then
-			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self.Model:SetUnit(reference.unit);
-			self.Model:Show();
-			self:Show();
-		end
-
-		if reference.sourceID and reference.artifactID then
-			-- TODO: would be cool if this showed for all sourceID's, but it seems to be random which items show a model from the visualID
-			local sourceInfo = C_TransmogCollection_GetSourceInfo(reference.sourceID);
-			if sourceInfo and sourceInfo.visualID then
-				self.Model:SetCamDistanceScale(0.8);
-				self.Model:SetItemAppearance(sourceInfo.visualID);
-				self.Model:Show();
-				self:Show();
-				return true;
-			end
-		end
-
-		local modelID = tonumber(reference.model);
-		if modelID and modelID > 0 then
-			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self.Model:SetUnit("none");
-			self.Model:SetModel(modelID);
-			self.Model:Show();
-			self:Show();
-			return true;
-		elseif reference.creatureID and reference.creatureID > 0 then
-			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self:SetCreatureID(reference.creatureID);
-			self.Model:Show();
-			return true;
-		end
-		if reference.atlas then
-			GameTooltipIcon:SetSize(64,64);
-			GameTooltipIcon.icon:SetAtlas(reference.atlas);
-			GameTooltipIcon:Show();
-			if reference["atlas-background"] then
-				GameTooltipIcon.icon.Background:SetAtlas(reference["atlas-background"]);
-				GameTooltipIcon.icon.Background:Show();
-			end
-			if reference["atlas-border"] then
-				GameTooltipIcon.icon.Border:SetAtlas(reference["atlas-border"]);
-				GameTooltipIcon.icon.Border:Show();
-				if reference["atlas-color"] then
-					local swatches = reference["atlas-color"];
-					GameTooltipIcon.icon.Border:SetVertexColor(swatches[1], swatches[2], swatches[3], swatches[4] or 1.0);
-				else
-					GameTooltipIcon.icon.Border:SetVertexColor(1, 1, 1, 1.0);
-				end
-			end
-			return true;
-		end
-	end
-end
-GameTooltipModel:Hide();
 
 -- Screenshot
 function app:TakeScreenShot(type)
@@ -12524,21 +12207,11 @@ RowOnEnter = function (self)
 
 		if initialBuild then
 			-- app.PrintDebug("RowOnEnter-Initial");
-			GameTooltipIcon.icon.Background:Hide();
-			GameTooltipIcon.icon.Border:Hide();
-			GameTooltipIcon:Hide();
-			GameTooltipIcon:ClearAllPoints();
-			GameTooltipModel:Hide();
-			GameTooltipModel:ClearAllPoints();
-
+			GameTooltip:ClearATTReferenceTexture();
 			if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
 				tooltipAnchor = "ANCHOR_LEFT";
-				GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-				GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
 			else
 				tooltipAnchor = "ANCHOR_RIGHT";
-				GameTooltipIcon:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
-				GameTooltipModel:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
 			end
 			-- app.PrintDebug("OnRowEnter-GameTooltip:SetOwner");
 			GameTooltip:SetOwner(self, tooltipAnchor);
@@ -12890,17 +12563,7 @@ RowOnEnter = function (self)
 		elseif reference.isMonthly then GameTooltip:AddLine(L["COMPLETED_MONTHLY"]);
 		elseif reference.isYearly then GameTooltip:AddLine(L["COMPLETED_YEARLY"]);
 		elseif reference.repeatable then GameTooltip:AddLine(L["COMPLETED_MULTIPLE"]); end
-		if initialBuild and not GameTooltipModel:TrySetModel(reference) and reference.icon then
-			GameTooltipIcon:SetSize(72,72);
-			GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
-			local texcoord = reference.previewtexcoord or reference.texcoord;
-			if texcoord then
-				GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
-			else
-				GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
-			end
-			GameTooltipIcon:Show();
-		end
+		if initialBuild then GameTooltip:SetATTReference(reference, self); end
 		if reference.cost then
 			if type(reference.cost) == "table" then
 				local _, name, icon, amount;
@@ -13479,15 +13142,10 @@ RowOnEnter = function (self)
 	end
 end
 RowOnLeave = function (self)
-	if GameTooltip then
-		GameTooltip:ClearLines();
-		GameTooltip:Hide();
-		GameTooltipIcon.icon.Background:Hide();
-		GameTooltipIcon.icon.Border:Hide();
-		GameTooltipIcon:Hide();
-		GameTooltipModel:Hide();
-		GameTooltip.IsRefreshing = nil;
-	end
+	GameTooltip:ClearLines();
+	GameTooltip:Hide();
+	GameTooltip:ClearATTReferenceTexture();
+	GameTooltip.IsRefreshing = nil;
 end
 CreateRow = function(self)
 	local row = CreateFrame("Button", nil, self);

@@ -75,6 +75,7 @@ src\Classes\CharacterUnlock.lua
 # Load primary addon source files
 Settings.lua
 AllTheThings.lua
+src\UI\Game Tooltip.lua
 src\UI\Minimap Button.lua
 
 # Load expansion specific category database.
