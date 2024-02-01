@@ -2624,17 +2624,17 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						ach(12343),	-- Cheese the Freeze
 						ach(12345),	-- Getting Cold in Here
 						ach(12347, {	-- I Could Say That This Cache Was Rare
-							i(45886),	-- Icecore Staff			-- Fixed with 10.2.5
-							i(45457),	-- Staff of Endless Winter	-- Fixed with 10.2.5
-							i(45612),	-- Constellus				-- Fixed with 10.2.5
-							i(45876),	-- Shiver					-- Fixed with 10.2.5
-							i(45887),	-- Ice Layered Barrier		-- Fixed with 10.2.5
-							i(45877),	-- The Boreal Guard			-- Fixed with 10.2.5
-							i(45459),	-- Frigid Strength of Hodir	-- Fixed with 10.2.5
-							i(45461),	-- Drape of Icy Intent		-- Fixed with 10.2.5
-							i(45460),	-- Bindings of Winter Gale	-- Fixed with 10.2.5
-							i(45888),	-- Bitter Cold Armguards	-- Fixed with 10.2.5
-							i(45462),	-- Gloves of the Frozen Glade	-- Fixed with 10.2.5
+							i(45886, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Icecore Staff
+							i(45457, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Staff of Endless Winter
+							i(45612, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Constellus
+							i(45876, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Shiver
+							i(45887, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Ice Layered Barrier
+							i(45877, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- The Boreal Guard
+							i(45459, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Frigid Strength of Hodir
+							i(45461, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Drape of Icy Intent
+							i(45460, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Bindings of Winter Gale
+							i(45888, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Bitter Cold Armguards
+							i(45462, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Gloves of the Frozen Glade
 							i(45786),	-- Hodir's Sigil
 							i(45815),	-- Hodir's Sigil
 						}),
@@ -2674,15 +2674,15 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 							crit(39439),	-- Participate in slaying Ancient Rune Giant
 						}),
 						ach(12352, {	-- Lose Your Illusion
-							i(45930),	-- Combatant's Bootblade			-- Fixed with 10.2.5
-							i(45570),	-- Skyforge Crossbow				-- Fixed with 10.2.5
-							i(45470),	-- Wisdom's Hold					-- Fixed with 10.2.5
-							i(45472),	-- Warhelm of the Champion			-- Fixed with 10.2.5
-							i(45933),	-- Pendant of the Shallow Grave		-- Fixed with 10.2.5
-							i(45474),	-- Pauldrons of the Combatant		-- Fixed with 10.2.5
-							i(45473),	-- Embrace of the Gladiator			-- Fixed with 10.2.5
-							i(45928),	-- Gauntlets of the Thunder Lord	-- Fixed with 10.2.5
-							i(45471),	-- Fate's Clutch					-- Fixed with 10.2.5
+							i(45930, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Combatant's Bootblade
+							i(45570, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Skyforge Crossbow
+							i(45470, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Wisdom's Hold
+							i(45472, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Warhelm of the Champion
+							i(45933, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Pendant of the Shallow Grave
+							i(45474, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Pauldrons of the Combatant
+							i(45473, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Embrace of the Gladiator
+							i(45928, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Gauntlets of the Thunder Lord
+							i(45471, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Fate's Clutch
 							i(45931),	-- Mjolnir Runestone
 							i(45929),	-- Sif's Remembrance
 							i(45784),	-- Thorim's Sigil
@@ -2720,16 +2720,16 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_TWO, {
 						ach(12364),	-- Knock on Wood
 						ach(12365),	-- Knock, Knock on Wood
 						ach(12366, {	-- Knock, Knock, Knock on Wood
-							i(45613),	-- Dreambinder	-- Fixed with 10.2.5
-							i(45484),	-- Bladetwister	-- Fixed with 10.2.5
-							i(45947),	-- Serilas, Blood Blade of Invar One-Arm	-- Fixed with 10.2.5
-							i(45294),	-- Petrified Ivy Sprig	-- Fixed with 10.2.5
-							i(45485),	-- Bronze Pendant of the Vanir	-- Fixed with 10.2.5
-							i(45945),	-- Seed of Budding Carnage	-- Fixed with 10.2.5
-							i(45486),	-- Drape of the Sullen Goddess	-- Fixed with 10.2.5
-							i(45943),	-- Gloves of Whispering Winds	-- Fixed with 10.2.5
-							i(45487),	-- Handguards of Revitalization	-- Fixed with 10.2.5
-							i(45488),	-- Leggings of the Enslaved Idol	-- Fixed with 10.2.5
+							i(45613, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Dreambinder
+							i(45484, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Bladetwister
+							i(45947, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Serilas, Blood Blade of Invar One-Arm
+							i(45294, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Petrified Ivy Sprig
+							i(45485, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Bronze Pendant of the Vanir
+							i(45945, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Seed of Budding Carnage
+							i(45486, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Drape of the Sullen Goddess
+							i(45943, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Gloves of Whispering Winds
+							i(45487, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Handguards of Revitalization
+							i(45488, {["timeline"] = {"removed 7.3.5.25727", ADDED_10_2_5}}),	-- Leggings of the Enslaved Idol
 							i(45946),	-- Fire Orchid Signet
 							i(45788),	-- Freya's Sigil
 							i(45814),	-- Freya's Sigil

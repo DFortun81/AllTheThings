@@ -90,7 +90,7 @@ COMMON_CATACLYSM_TAILORING_RECIPES = {
 SL_TAILORING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(310949),	-- Shadowlands Tailoring
 	r(343634, {	-- Shadowlands Cloth Scavenging
-		["collectibled"] = false,
+		["collectible"] = false,
 	}),
 	n(ARMOR, {
 		r(339003, {	-- Grim-Veiled Belt [Rank 1]
@@ -150,7 +150,7 @@ SL_TAILORING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"
 DF_TAILORING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	r(366258),	-- Dragon Isles Tailoring
 	r(392396, {	-- Dragon Isles Cloth Scavenging
-		["collectibled"] = false,
+		["collectible"] = false,
 	}),
 	r(376562),	-- Dragon Isles Unravelling
 	n(ARMOR, {
