@@ -82,40 +82,40 @@ src\UI\Minimap Button.lua
 db\Dragonflight\Categories.lua
 
 # Window Definitions
-# src\UI\Achievements.lua
-# src\UI\Attunements.lua
-# src\UI\Auctions.lua
-# src\UI\Battle Pets.lua
-# src\UI\Bounty.lua
-# src\UI\Breadcrumbs.lua
-# src\UI\Dailies.lua
-# src\UI\Exploration.lua
-# src\UI\Factions.lua
-# src\UI\Find.lua
-# src\UI\Flight Paths.lua
-# src\UI\Heirlooms.lua
-# src\UI\Hidden Achievement Triggers.lua
-# src\UI\Hidden Quest Triggers.lua
-# src\UI\Illusions.lua
-# src\UI\Locked.lua
-# src\UI\Maps.lua
-# src\UI\Mini List.lua
-# src\UI\Missing Quests.lua
-# src\UI\Mounts.lua
-# src\UI\Never Implemented.lua
-# src\UI\Objects.lua
-# src\UI\Quests.lua
-# src\UI\Raid Assistant.lua
-# src\UI\Random.lua
-# src\UI\Removed From Game.lua
-# src\UI\Removed With Patch Drops.lua
-# src\UI\Removed With Patch Loot.lua
-# src\UI\Soft Reserves.lua
-# src\UI\Sync.lua
-# src\UI\Titles.lua
-# src\UI\Toys.lua
-# src\UI\Tradeskills.lua
-# src\UI\Unsorted.lua
+# src\UI\Windows\Achievements.lua
+# src\UI\Windows\Attunements.lua
+# src\UI\Windows\Auctions.lua
+# src\UI\Windows\Battle Pets.lua
+# src\UI\Windows\Bounty.lua
+# src\UI\Windows\Breadcrumbs.lua
+# src\UI\Windows\Dailies.lua
+# src\UI\Windows\Exploration.lua
+# src\UI\Windows\Factions.lua
+# src\UI\Windows\Find.lua
+# src\UI\Windows\Flight Paths.lua
+# src\UI\Windows\Heirlooms.lua
+# src\UI\Windows\Hidden Achievement Triggers.lua
+# src\UI\Windows\Hidden Quest Triggers.lua
+# src\UI\Windows\Illusions.lua
+# src\UI\Windows\Locked.lua
+# src\UI\Windows\Maps.lua
+# src\UI\Windows\Mini List.lua
+# src\UI\Windows\Missing Quests.lua
+# src\UI\Windows\Mounts.lua
+# src\UI\Windows\Never Implemented.lua
+# src\UI\Windows\Objects.lua
+# src\UI\Windows\Quests.lua
+# src\UI\Windows\Raid Assistant.lua
+# src\UI\Windows\Random.lua
+# src\UI\Windows\Removed From Game.lua
+# src\UI\Windows\Removed With Patch Drops.lua
+# src\UI\Windows\Removed With Patch Loot.lua
+# src\UI\Windows\Soft Reserves.lua
+# src\UI\Windows\Sync.lua
+# src\UI\Windows\Titles.lua
+# src\UI\Windows\Toys.lua
+# src\UI\Windows\Tradeskills.lua
+# src\UI\Windows\Unsorted.lua
 
 # Finally, prepare the Data Cache
 # Not used in Retail?
