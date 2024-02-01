@@ -168,6 +168,9 @@ faction(2403),	-- CTF - Flag - Alliance
 faction(1041),	-- Frenzy
 1.14.2.41959
 faction(2505),	-- Dragonflight, Chromatic
+1.15.0.52124
+faction(2586),	-- Azeroth Commerce Authority
+faction(2587),	-- Durotar Supply and Logistics
 2.0.0.6080
 faction(914),	-- PLAYER, Blood Elf
 faction(923),	-- Farstriders
