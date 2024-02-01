@@ -107,6 +107,26 @@ local function GetCreatureID(reference)
 		end
 	end
 end
+local function SetReferenceTexture(self, reference)
+	local texture = reference.preview or reference.icon;
+	if texture then
+		if reference.explorationID and reference.maphash and reference.preview then
+			local width, height, offsetX, offsetY = strsplit(":", reference.maphash);
+			GameTooltipIcon:SetSize(tonumber(width) or 72,tonumber(height) or 72);
+		else
+			GameTooltipIcon:SetSize(72,72);
+		end
+		GameTooltipIcon.icon:SetTexture(texture);
+		local texcoord = reference.texcoord;
+		if texcoord then
+			GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
+		else
+			GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
+		end
+		GameTooltipIcon:Show();
+		return true;
+	end
+end
 local function TrySetDisplayInfos(reference, displayInfos)
 	if displayInfos then
 		local count = #displayInfos;
@@ -245,35 +265,15 @@ local function TrySetModel(reference)
 end
 GameTooltipModel:Hide();
 
-GameTooltip.ClearATTReferenceTexture = function(self)
+GameTooltip.ClearATTReferenceTexture = function()
 	GameTooltipIcon.icon.Background:Hide();
 	GameTooltipIcon.icon.Border:Hide();
 	GameTooltipIcon:Hide();
 	GameTooltipModel:Hide();
 end
-GameTooltip.SetATTReferenceTexture = function(self, reference)
-	local texture = reference.preview or reference.icon;
-	if texture then
-		if reference.explorationID and reference.maphash and reference.preview then
-			local width, height, offsetX, offsetY = strsplit(":", reference.maphash);
-			GameTooltipIcon:SetSize(tonumber(width) or 72,tonumber(height) or 72);
-		else
-			GameTooltipIcon:SetSize(72,72);
-		end
-		GameTooltipIcon.icon:SetTexture(texture);
-		local texcoord = reference.texcoord;
-		if texcoord then
-			GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
-		else
-			GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
-		end
-		GameTooltipIcon:Show();
-		return true;
-	end
-end
 
 GameTooltip.SetATTReference = function(self, reference)
-	if TrySetModel(reference) or GameTooltip:SetATTReferenceTexture(reference) then
+	if TrySetModel(reference) or SetReferenceTexture(reference) then
 		GameTooltipIcon:ClearAllPoints();
 		GameTooltipModel:ClearAllPoints();
 		if GameTooltip:GetAnchorType() == "ANCHOR_LEFT" then

@@ -320,6 +320,9 @@ local function GetProgressTextForRow(data)
 	end
 end
 local function GetProgressTextForTooltip(data)
+	local iconOnly = app.Settings:GetTooltipSetting("ShowIconOnly");
+	if iconOnly then return GetProgressTextForRow(data); end
+	
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
 		return GetProgressColorText(data.progress or 0, data.total);
 	elseif data.collectible or (data.spellID and data.itemID and data.trackable) then
@@ -2016,7 +2019,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- If the user wants to show the progress of this search result, do so.
 		if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
-			group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
+			group.collectionText = GetProgressTextForTooltip(group);
 
 			-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
 			if group.encounterID then tinsert(info, 1, { left = "Progress", right = group.collectionText }); end
@@ -9266,7 +9269,7 @@ local function RowOnEnter(self)
 			end
 		end
 		if app.Settings:GetTooltipSetting("Progress") then
-			local right = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(reference);
+			local right = GetProgressTextForTooltip(reference);
 			if right and right ~= "" and right ~= "---" then
 				GameTooltipTextRight1:SetText(right);
 				GameTooltipTextRight1:Show();

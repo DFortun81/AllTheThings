@@ -683,30 +683,30 @@ end
 local function GetCostIconForRow(data, iconOnly)
 	-- cost only for filled groups, or if itself is a cost
 	if data.filledCost or data.isCost or (data.progress == data.total and ((data.costTotal or 0) > 0)) then
-		return iconOnly and L["COST_ICON"] or L["COST_TEXT"];
+		return L[iconOnly and "COST_ICON" or "COST_TEXT"];
 	end
 end
 local function GetCostIconForTooltip(data, iconOnly)
 	-- cost only if itself is a cost
 	if data.filledCost or data.collectibleAsCost then
-		return iconOnly and L["COST_ICON"] or L["COST_TEXT"];
+		return L[iconOnly and "COST_ICON" or "COST_TEXT"];
 	end
 end
 local function GetUpgradeIconForRow(data, iconOnly)
 	-- upgrade only for filled groups, or if itself is an upgrade
 	if data.filledUpgrade or data.isUpgrade or (data.progress == data.total and ((data.upgradeTotal or 0) > 0)) then
-		return iconOnly and L["UPGRADE_ICON"] or L["UPGRADE_TEXT"];
+		return L[iconOnly and "UPGRADE_ICON" or "UPGRADE_TEXT"];
 	end
 end
 local function GetUpgradeIconForTooltip(data, iconOnly)
 	-- upgrade only if itself has an upgrade
 	if data.filledUpgrade or data.collectibleAsUpgrade then
-		return iconOnly and L["UPGRADE_ICON"] or L["UPGRADE_TEXT"];
+		return L[iconOnly and "UPGRADE_ICON" or "UPGRADE_TEXT"];
 	end
 end
 local function GetReagentIcon(data, iconOnly)
 	if data.filledReagent then
-		return iconOnly and L["REAGENT_ICON"] or L["REAGENT_TEXT"];
+		return L[iconOnly and "REAGENT_ICON" or "REAGENT_TEXT"];
 	end
 end
 local function GetStateIcon(data, iconOnly)
@@ -764,9 +764,10 @@ local function GetProgressTextForRow(data)
 
 	return app.TableConcat(text, nil, "", " ");
 end
-local function GetProgressTextForTooltip(data, iconOnly)
+local function GetProgressTextForTooltip(data)
 	-- build the row text from left to right with possible info
 	local text = {}
+	local iconOnly = app.Settings:GetTooltipSetting("ShowIconOnly");
 	-- Reagent (show reagent icon)
 	local icon = GetReagentIcon(data, iconOnly);
 	if icon then
@@ -4200,7 +4201,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 
 		-- If the user wants to show the progress of this search result, do so
 		if app.Settings:GetTooltipSetting("Progress") and (group.key ~= "spellID" or group.collectible) then
-			group.collectionText = GetProgressTextForTooltip(group, app.Settings:GetTooltipSetting("ShowIconOnly"));
+			group.collectionText = GetProgressTextForTooltip(group);
 
 			-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
 			if group.encounterID then tinsert(info, 1, { left = "Progress", right = group.collectionText }); end
@@ -12604,7 +12605,7 @@ RowOnEnter = function (self)
 			GameTooltip:AddDoubleLine(L["CRITERIA_FOR"], GetAchievementLink(reference.achievementID));
 		end
 		if app.Settings:GetTooltipSetting("Progress") then
-			local right = GetProgressTextForTooltip(reference, app.Settings:GetTooltipSetting("ShowIconOnly"));
+			local right = GetProgressTextForTooltip(reference);
 			if right and right ~= "" and right ~= "---" then
 				GameTooltipTextRight1:SetText(right);
 				GameTooltipTextRight1:Show();
