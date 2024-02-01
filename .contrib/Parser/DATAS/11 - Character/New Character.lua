@@ -283,7 +283,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157619),	-- Spire of Astral Force
 		})),
 	}),
-	cl(EVOKER, bubbleDownSelf({ ["timeline"] = { "added 10.0.0" }, }, {
+	cl(EVOKER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2 }, }, {
 		i(188814),	-- Emerald Winglord's Amulet
 		i(188824),	-- Emerald Winglord's Boots
 		i(188823),	-- Emerald Winglord's Bracers

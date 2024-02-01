@@ -1232,7 +1232,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["description"] = "DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",
 				["groups"] = {
 					i(9214, {	-- Grimoire of Inferno
-						["timeline"] = { "removed 4.0.1", "added 10.1.7" },	-- 07.09.2023 ATT DISCORD
+						["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },	-- 07.09.2023 ATT DISCORD
 						["classes"] = { WARLOCK },
 						-- #if BEFORE 4.0.1
 						["spellID"] = 1122,	-- Inferno
@@ -1350,7 +1350,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["isBounty"] = true,
 						-- #endif
 						-- #endif
-						["timeline"] = { "removed 2.0.1", "added 10.1.7" },
+						["timeline"] = { "removed 2.0.1", ADDED_10_1_7 },
 					}),
 					i(13177),	-- Talisman of Evasion
 					i(13179),	-- Brazecore Armguards
@@ -1596,7 +1596,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["isBounty"] = true,
 						-- #endif
 						-- #endif
-						["timeline"] = { "removed 2.0.1", "added 10.1.7" },
+						["timeline"] = { "removed 2.0.1", ADDED_10_1_7 },
 					}),
 					i(13163),	-- Relentless Scythe
 					i(13161),	-- Trindlehaven Staff

@@ -143,7 +143,7 @@ root(ROOTS.Instances, tier(WOD_TIER, bubbleDown({ ["timeline"] = { ADDED_6_0_3_L
 					},
 					["g"] = {
 						ach(9493, {	-- They Burn, Burn, Burn
-							["timeline"] = { ADDED_6_0_3_LAUNCH, "removed 10.2.0" },
+							["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_10_2_0 },
 						}),
 						i(119174),	-- Sol's Magestaff
 						i(110014),	-- Spores of Alacrity

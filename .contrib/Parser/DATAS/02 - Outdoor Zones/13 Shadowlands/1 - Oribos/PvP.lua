@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["isWeekly"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 34.7, 56.5, ORIBOS },
-					["timeline"] = { "removed 10.0.2" },
+					["timeline"] = { REMOVED_10_0_2 },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62911, {	-- Against Overwhelming Odds
@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["isWeekly"] = true,
 					["races"] = HORDE_ONLY,
 					["coord"] = { 34.7, 56.5, ORIBOS },
-					["timeline"] = { "removed 10.0.2" },
+					["timeline"] = { REMOVED_10_0_2 },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(65649, {	-- A New Deal
@@ -116,28 +116,28 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["isWeekly"] = true,
 					["coord"] = { 34.3, 55.8, ORIBOS },
-					["timeline"] = { "removed 10.0.2" },
+					["timeline"] = { REMOVED_10_0_2 },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62284, {	-- Observing Battle
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["isWeekly"] = true,
 					["coord"] = { 34.7, 56.5, ORIBOS },
-					["timeline"] = { "removed 10.0.2" },
+					["timeline"] = { REMOVED_10_0_2 },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62286, {	-- Observing Skirmishes
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["isWeekly"] = true,
 					["coord"] = { 34.7, 56.5, ORIBOS },
-					["timeline"] = { "removed 10.0.2" },
+					["timeline"] = { REMOVED_10_0_2 },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62288, {	-- Observing Teamwork
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["isWeekly"] = true,
 					["coord"] = { 34.7, 56.5, ORIBOS },
-					["timeline"] = { "removed 10.0.2" },
+					["timeline"] = { REMOVED_10_0_2 },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(64527, {	-- Observing the Chase [SL 'Try Warmode']
@@ -153,20 +153,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["isWeekly"] = true,
 					["coord"] = { 34.7, 56.5, ORIBOS },
-					["timeline"] = { "removed 10.0.2" },
+					["timeline"] = { REMOVED_10_0_2 },
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(65773, {	-- Solo Mission
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["isWeekly"] = true,
-					["timeline"] = { "added 9.2.0", "removed 10.0.2" },
+					["timeline"] = { "added 9.2.0", REMOVED_10_0_2 },
 				}),
 				q(65775, {	-- Soloing Strategy
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["isWeekly"] = true,
-					["timeline"] = { "added 9.2.0", "removed 10.0.2" },
+					["timeline"] = { "added 9.2.0", REMOVED_10_0_2 },
 				}),
 			}),
 			n(VENDORS, {

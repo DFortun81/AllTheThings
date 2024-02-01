@@ -257,7 +257,7 @@ root(ROOTS.PetBattles, petbattle({
 			ach(6579),	-- Rookie Pet Group (15)
 		}),
 		ach(9712, {		-- Shiny Pet Charmer
-			["timeline"] = { "removed 10.2.5" },
+			["timeline"] = { REMOVED_10_2_5 },
 		}),
 		ach(6851, {	-- Take 'Em All On!
 			crit(19835),	-- Aquatic
@@ -368,9 +368,6 @@ root(ROOTS.PetBattles, petbattle({
 			ach(6555),		-- Building a Team (25)
 			ach(6554),		-- He's Mine! (10)
 		}),
-		ach(15644, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0, "removed 10.0.2.47120" } }, {	-- Good Things Come in Small Packages (2000)
-			i(191946),	-- Mister Muskoxeles (PET!)
-		})),
 		ach(15643,  bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- What Can I Say? They Love Me. (1750)
 			i(191932),	-- Violet Violence (PET!)
 		})),

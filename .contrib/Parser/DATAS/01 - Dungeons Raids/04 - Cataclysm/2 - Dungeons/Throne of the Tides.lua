@@ -235,7 +235,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					["crs"] = { 40586 },	-- Lady Naz'jar
 					["groups"] = {
 						ach(5285, {	-- Old Faithful
-							["timeline"] = { ADDED_4_0_3, "removed 10.2.0" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_10_2_0 },
 						}),
 					},
 				}),
@@ -245,7 +245,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						ach(5061),	-- Heroic: Throne of the Tides
 						ach(5135),	-- Heroic: Throne of the Tides Guild Run
 						ach(5286, {	-- Prince of Tides
-							["timeline"] = { ADDED_4_0_3, "removed 10.2.0" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_10_2_0 },
 						}),
 					},
 				}),

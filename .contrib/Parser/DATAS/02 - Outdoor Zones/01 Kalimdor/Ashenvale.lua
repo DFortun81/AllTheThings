@@ -3477,10 +3477,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(5753, {	-- Ruffled Chaplet
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(5754, {	-- Wolfpack Medallion
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -3697,7 +3697,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(1351, {	-- Fingerbone Bracers
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 15.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 15.09.2023
 					-- #if BEFORE 4.0.3
 					["description"] = "This item is only naturally accessible to Alliance players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 					["cr"] = 3808,	-- Forsaken Dark Stalker

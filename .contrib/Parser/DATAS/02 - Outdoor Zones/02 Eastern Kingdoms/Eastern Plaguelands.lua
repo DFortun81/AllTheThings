@@ -3294,7 +3294,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(16039, {	-- Ta'Kierthan Songblade
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -3843,7 +3843,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(13499, {	-- Recipe: Greater Shadow Protection Potion (RECIPE!)
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- Kamboozle DATA Discord 1.10.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- Kamboozle DATA Discord 1.10.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 41.0, 50.2, EASTERN_PLAGUELANDS },
@@ -3868,7 +3868,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(16056, {	-- Schematic: Flawless Arcanite Rifle (RECIPE!)
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["description"] = "Can kill Mossflayer Scout and Mossflayer Cannibal to get Shadowhunters.",
 					["cr"] = 8561,	-- Mossflayer Shadowhunter
 					-- #if BEFORE 4.0.3

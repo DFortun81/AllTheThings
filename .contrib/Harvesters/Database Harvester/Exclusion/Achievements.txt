@@ -34,39 +34,6 @@
 15210@@@Challenger: Season 2
 2.5.4.44833
 15853@@@<Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
-3.0.1.8303
-970@@@Tricks and Treats of Azeroth
-1168@@@Master of Alterac Valley
-1170@@@Master of Arathi Basin
-1173@@@Master of Warsong Gulch
-3.0.1.8874
-1187@@@The Keymaster
-1274@@@Champion of Outland
-1360@@@Champion of Northrend
-3.1.0.9767
-1657@@@Hallowed Be Thy Name
-1677@@@Loremaster of Eastern Kingdoms
-1680@@@Loremaster of Kalimdor
-1681@@@The Loremaster
-1682@@@The Loremaster
-1684@@@Brewmaster
-1692@@@Merrymaker
-1707@@@Fool For Love
-2195@@@Master of Strand of the Ancients
-2776@@@Master of Wintergrasp
-2797@@@Noble Gardener
-3.3.5.12340
-3656@@@Pilgrim
-3814@@@Resilience Will Fix It (25 player)
-3838@@@Dungeon & Raid Emblem
-3839@@@25 Dungeon & Raid Emblems
-3840@@@50 Dungeon & Raid Emblems
-3841@@@100 Dungeon & Raid Emblems
-3842@@@250 Dungeon & Raid Emblems
-3843@@@500 Dungeon & Raid Emblems
-3876@@@1500 Dungeon & Raid Emblems
-4784@@@Emblematic
-4785@@@Emblematic
 3.4.0.46158
 16313@@@Rival: Season 5
 16314@@@Gladiator: Season 5

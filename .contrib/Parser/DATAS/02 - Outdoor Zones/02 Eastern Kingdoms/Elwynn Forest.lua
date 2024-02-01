@@ -1287,7 +1287,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["timeline"] = { "added 4.0.3" },
 								}),
 								i(2055, {	-- Small Wooden Hammer
-									["timeline"] = { "added 10.1.7" },	-- ATT Discord 05.09.2023
+									["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 								}),
 							},
 						}),
@@ -1319,7 +1319,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #endif
 						i(2055, {	-- Small Wooden Hammer
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							-- #if BEFORE 4.0.3
 							["cr"] = 80,	-- Kobold Laborer
 							["coords"] = {
@@ -2369,10 +2369,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(6147, {	-- Ratty Old Belt
-							["timeline"] = { "removed 4.0.1", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(1913, {	-- Studded Blackjack
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -2413,10 +2413,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(6202, {	-- Fingerless Gloves
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(6203, {	-- Thuggish Shield
-							["timeline"] = { "removed 4.0.1", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2761,7 +2761,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						13159,  -- James Clark
 						-- #ENDIF
 					},
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					--[[["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
@@ -2787,7 +2787,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBounty"] = true,
 					-- #endif
 					["cr"] = 476,	-- Kobold Geomancer
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					--[[["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
@@ -2808,7 +2808,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					--]]
 				}),
 				i(1389, {	-- Kobold Mining Mallet
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 40,	-- Kobold Miner
 					["coords"] = {
 						{ 61.4, 50.4, ELWYNN_FOREST },
@@ -2817,7 +2817,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1195, {	-- Kobold Mining Shovel
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 475,	-- Kobold Tunneler
 					["coords"] = {
 						{ 41.6, 78.8, ELWYNN_FOREST },
@@ -2828,7 +2828,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(1399, {	-- Magic Candle
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 476,	-- Kobold Geomancer
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					--[[["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
 					["coords"] = {
@@ -2945,7 +2945,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(781, {	-- Stone Gnoll Hammer
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["crs"] = {
 						478,	-- Riverpaw Outrunner
 						97,		-- Riverpaw Runt
@@ -2968,7 +2968,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						474,	-- Defias Rogue Wizard
 						880,	-- Erlan Drudgemoor
 					},
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					--[[["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
 					["coords"] = {

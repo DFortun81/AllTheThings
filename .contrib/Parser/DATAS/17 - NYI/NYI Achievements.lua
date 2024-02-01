@@ -580,6 +580,7 @@ root(ROOTS.NeverImplemented, {
 		tier(DF_TIER, {
 			-- 10.0.0
 			tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				ach(15644),	-- Good Things Come in Small Packages
 				ach(15517),	-- Solo Shuffle rounds participated in
 				ach(15516),	-- Solo Shuffle rounds won
 				ach(15798),	-- Winding Slitherdrake

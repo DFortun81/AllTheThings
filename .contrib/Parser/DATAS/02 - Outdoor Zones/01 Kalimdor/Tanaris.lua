@@ -5048,7 +5048,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(17055, {	-- Changuk Smasher
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 12.09.2023 ATT Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 12.09.2023 ATT Discord
 						}),
 					},
 				}),

@@ -680,7 +680,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(1280, {	-- Cloaked Hood
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 2246,	-- Syndicate Assassin
 					["coords"] = {
@@ -707,7 +707,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if BEFORE CATA
 				i(5775, {	-- Pattern: Black Silk Pack
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },
 					["cr"] = 2434,	-- Shadowy Assassin
 				}),
 				-- #endif
@@ -716,7 +716,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2358,	-- Dalaran Summoner
 				}),
 				i(1602, {	-- Sickle Axe
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					["cr"] = 2287,	-- Crushridge Warmonger
 					["coords"] = {
 						{ 42.2, 28.8, ALTERAC_MOUNTAINS },
@@ -728,7 +728,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(5245, {	-- Summoner's Wand
 					["races"] = HORDE_ONLY,
 					["cr"] = 2358,	-- Dalaran Summoner
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					["coords"] = {
 						{ 30.8, 31.6, ALTERAC_MOUNTAINS },
 						{ 33.6, 40.6, ALTERAC_MOUNTAINS },

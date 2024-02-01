@@ -3508,7 +3508,7 @@ root(ROOTS.WorldDrops, tier(CLASSIC_TIER, {
 				["description"] = "Can drop from any troll in Arathi Highlands, Dun Morogh, Stranglethorn, Silithus, The Hinterlands & Zul Gurub. Inside Zul Gurub is a great spot.",
 				["maps"] = { ARATHI_HIGHLANDS, DUN_MOROGH, NORTHERN_STRANGLETHORN, SILITHUS, THE_CAPE_OF_STRANGLETHORN, THE_HINTERLANDS, ZULGURUB },
 				-- #endif
-				["timeline"] = { "removed 4.0.1", "added 10.1.7" },	-- ATT Discord 05.09.2023
+				["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 			}),
 			-- #endif
 		}),

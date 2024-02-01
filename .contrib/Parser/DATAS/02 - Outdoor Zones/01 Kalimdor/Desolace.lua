@@ -2430,7 +2430,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(2620, {	-- Augural Shroud
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 03.09.2023 Data Discord
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 					-- #if BEFORE 4.0.3
 					["cr"] = 4684,	-- Nether Sorceress
 					["coords"] = {

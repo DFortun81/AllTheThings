@@ -2925,7 +2925,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(3429, {	-- Guardsman Belt
-							["timeline"] = { "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["isLimited"] = true,
 						}),
 						i(4832, {	-- Mystic Sarong
@@ -3223,7 +3223,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 1.11.1.5462" },
 				}),
 				i(1280, {	-- Cloaked Hood
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 2246,	-- Syndicate Assassin
 					["coords"] = {
@@ -3247,7 +3247,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if AFTER 10.1.7
 				i(4767, {	-- Coppercloth Gloves
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 09.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 09.09.2023
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					["cr"] = 2628,	-- Dalaran Worker
 					["coords"] = {
@@ -3261,7 +3261,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(3204, {	-- Deepwood Bracers
 					["cr"] = 2372,	-- Mudsnout Gnoll
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 58.8, 74.6, HILLSBRAD_FOOTHILLS },
 						{ 57.8, 75.8, HILLSBRAD_FOOTHILLS },
@@ -3272,7 +3272,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2370,	-- Daggerspine Screamer
 						2368,	-- Daggerspine Shorestalker
 					},
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 59.6, 89.4, HILLSBRAD_FOOTHILLS },
 						{ 57.2, 84.2, HILLSBRAD_FOOTHILLS },
@@ -3307,7 +3307,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(4724, {	-- Humbert's Helm
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 2345,	-- Dun Garok Rifleman
 					["coords"] = {
@@ -3328,7 +3328,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(4723, {	-- Humbert's Pants
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 2346,	-- Dun Garok Priest
 					["coords"] = {
@@ -3369,7 +3369,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if AFTER CATA
 				i(5775, {	-- Pattern: Black Silk Pack
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if AFTER 10.1.7
 					["description"] = "This pattern is very rare. Expect 1000+ of kills before looting it.",
 					["cr"] = 2242,	-- Syndicate Spy (Alterac Mountains)
@@ -3392,7 +3392,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(1485, {	-- Pitchfork
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 09.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 09.09.2023
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						2403,	-- Farmer Getz
@@ -3425,7 +3425,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2358,	-- Dalaran Summoner
 				}),
 				i(1602, {	-- Sickle Axe
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					-- #if AFTER 10.1.7
 					["cr"] = 2254,	-- Crushridge Mauler
 					["coords"] = {
@@ -3439,7 +3439,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(5245, {	-- Summoner's Wand
 					["races"] = HORDE_ONLY,
 					["cr"] = 2358,	-- Dalaran Summoner
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					["coords"] = {
 						{ 27.4, 39.6, HILLSBRAD_FOOTHILLS },
 						{ 33.6, 40.6, HILLSBRAD_FOOTHILLS },

@@ -3775,7 +3775,6 @@ i(194098, 3350);	-- Lord Basilton
 i(199175, 3316);	-- Lubbins
 i(199757, 3378);	-- Magic Nibbler
 i(193571, 3303);	-- Mallard Duckling
-i(191946, 3265);	-- Mister Muskoxeles
 i(200519, 3286);	-- Mister Toots
 i(200930, 3414);	-- Obsidian Proto-Whelp
 i(200276, 3311);	-- Ohuna Companion
@@ -3869,6 +3868,7 @@ i(0, 3257);			-- Test Beetle
 i(0, 3308);			-- Time-Lost Duckling
 i(0, 3363);			-- Truesilver Crab
 i(193614, 3314);	-- Groundshaker
+i(191946, 3265);	-- Mister Muskoxeles
 i(193380, 3298);	-- Pink Salamanther
 i(193587, 3312);	-- Time-Lost Duck
 i(193429, 3297);	-- Time-Lost Salamanther

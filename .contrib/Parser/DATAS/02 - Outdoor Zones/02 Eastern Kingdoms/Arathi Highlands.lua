@@ -1664,10 +1664,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5742, {	-- Gemstone Dagger
-							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3", "added 10.1.7" },	-- Att disc 07.09.2023
+							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3", ADDED_10_1_7 },	-- Att disc 07.09.2023
 						}),
 						i(5743, {	-- Prismstone Ring
-							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3", "added 10.1.7" },	-- Att disc 05.09.2023
+							["timeline"] = { "created 1.11.1", "added 3.0.1", "removed 4.0.3", ADDED_10_1_7 },	-- Att disc 05.09.2023
 						}),
 					},
 				}),
@@ -1683,7 +1683,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5256, {	-- Kovork's Rattle
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1709,10 +1709,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5257, {	-- Dark Hooded Cape
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(2622, {	-- Nimar's Tribal Headdress
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1772,10 +1772,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5180, {	-- Necklace of Harmony
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(5181, {	-- Vibrant Silk Cape
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2013,7 +2013,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #elseif AFTER 10.1.7
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					-- #endif
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 2584,	-- Stromgarde Defender	-- CRIEVE NOTE: Check if the undead one can drop this too.
 					["coords"] = {
 						{ 26.0, 58.0, ARATHI_HIGHLANDS },
@@ -2046,7 +2046,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2564,	-- Boulderfist Enforcer
 						2562,	-- Boulderfist Ogre
 					},
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 27.4, 46.8, ARATHI_HIGHLANDS },
 						{ 26.2, 46.2, ARATHI_HIGHLANDS },
@@ -2064,7 +2064,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
 					-- #endif
 					["coord"] = { 29.8, 59.4, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 				}),
 				i(1993, {	-- Ogremind Ring
 					["crs"] = {
@@ -2087,7 +2087,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 63.6, 84.2, ARATHI_HIGHLANDS },
 					["timeline"] = { "removed 4.0.3" },
 					["collectible"] = false,
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					--[[["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
 					["coords"] = {

@@ -2574,7 +2574,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							["isBounty"] = true,
 							-- #endif
 							-- #endif
-							["timeline"] = { "removed 2.0.1", "added 10.1.7" },	-- 07.09.2023 ATT DISCORD
+							["timeline"] = { "removed 2.0.1", ADDED_10_1_7 },	-- 07.09.2023 ATT DISCORD
 						}),
 						applyclassicphase(PHASE_THREE, i(19268)),	-- Ace of Elementals
 					},
@@ -2786,7 +2786,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							["isBounty"] = true,
 							-- #endif
 							-- #endif
-							["timeline"] = { "removed 2.0.1", "added 10.1.7" },
+							["timeline"] = { "removed 2.0.1", ADDED_10_1_7 },
 						}),
 						-- #if BEFORE 7.3.2
 						i(11746),	-- Golem Skull Helm

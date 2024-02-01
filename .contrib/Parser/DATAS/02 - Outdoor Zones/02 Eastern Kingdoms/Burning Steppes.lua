@@ -1744,7 +1744,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(12828, {	-- Plans: Volcanic Hammer (RECIPE!)
-							["timeline"] = { "added 1.0.0", "removed 4.0.3", "added 10.1.7" },	-- Kamboozle DATA Discord 1.10.2023
+							["timeline"] = { "added 1.0.0", "removed 4.0.3", ADDED_10_1_7 },	-- Kamboozle DATA Discord 1.10.2023
 						}),
 					},
 				}),
@@ -1888,7 +1888,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(15732, {	-- Pattern: Volcanic Leggings (RECIPE!)
 					["cr"] = 7035,	-- Firegut Brute
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["description"] = "Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",
 					["coords"] = {
 						{ 83.6, 40.0, BURNING_STEPPES },

@@ -1243,6 +1243,9 @@ root(ROOTS.NeverImplemented, {
 				i(193614, {	-- Groundshaker (PET!)
 					["modelID"] = 106649,
 				}),
+				i(191946, {	-- Mister Muskoxeles (PET!)
+					["modelID"] = 106681,
+				}),
 				i(193380, {	-- Pink Salamanther (PET!)
 					["modelID"] = 106629,
 				}),

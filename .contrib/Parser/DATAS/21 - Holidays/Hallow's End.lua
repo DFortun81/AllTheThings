@@ -97,7 +97,7 @@ local CANDY_AND_TOY_VENDOR_GROUPS = {
 	}),
 	-- #else
 	i(208735, {	-- Bucket of Morbid Treats
-		["timeline"] = { "added 10.1.7" },
+		["timeline"] = { ADDED_10_1_7 },
 		["cost"] = { { "i", 33226, 150 }, },	-- 2x Tricky Treat
 	}),
 	i(37585, {	-- Chewy Fel Taffy
@@ -1989,16 +1989,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		-- #endif
 		["groups"] = {
 			ach(18962, {	-- A Cleansing Fire
-				["timeline"] = { "added 10.1.7" },
+				["timeline"] = { ADDED_10_1_7 },
 			}),
 			ach(255, {	-- Bring Me The Head of... Oh Wait
-				["timeline"] = { "added 3.0.1", "removed 10.1.7" },
+				["timeline"] = { "added 3.0.1", REMOVED_10_1_7 },
 			}),
 			ach(18960, {	-- Kickin' With the Wick
-				["timeline"] = { "added 10.1.7" },
+				["timeline"] = { ADDED_10_1_7 },
 			}),
 			i(117392, {	-- Loot-Filled Pumpkin (Epic)
-				["timeline"] = { "added 6.0.1", "removed 10.1.7" },
+				["timeline"] = { "added 6.0.1", REMOVED_10_1_7 },
 				-- #if BEFORE 10.1.7
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
@@ -2050,7 +2050,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				},
 			}),
 			i(209024, {	-- Loot-Filled Pumpkin (Epic Bag after 10.1.7 Rework)
-				["timeline"] = { "added 10.1.7" },
+				["timeline"] = { ADDED_10_1_7 },
 				["description"] = "This bag has a higher chance of dropping The Horseman's Reins with more curses applied, as confirmed in a blue post on October 18, 2023.\nThe effect on other items' drop rates remains unknown.",
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
@@ -2070,11 +2070,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						["filterID"] = MOUNTS,
 					}),
 					ach(17547, {	-- The Lick King
-						["timeline"] = { "added 10.1.7" },
+						["timeline"] = { ADDED_10_1_7 },
 						["provider"] = { "i", 211271 },	-- Arfus (PET)
 					}),
 					i(211271, {	-- Arfus (PET)
-						["timeline"] = { "added 10.1.7" },
+						["timeline"] = { ADDED_10_1_7 },
 					}),
 					i(33292, {	-- Hallowed Helm
 						["timeline"] = { "added 2.2.2.7318" },
@@ -2096,10 +2096,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 						["timeline"] = { "added 6.0.1.18594" },
 					}),
 					i(208485, {	-- The Scarlet Key
-						["timeline"] = { "added 10.1.7" },
+						["timeline"] = { ADDED_10_1_7 },
 					}),
 					i(208680, {	-- Windborne Velocidrake: Hallow's End Armor
-						["timeline"] = { "added 10.1.7" },
+						["timeline"] = { ADDED_10_1_7 },
 					}),
 				},
 			}),
@@ -2136,7 +2136,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				},
 			}),
 			i(209026, {	-- Loot-Stuffed Pumpkin (Blue Bag after 10.1.7 Rework)
-				["timeline"] = { "added 10.1.7" },
+				["timeline"] = { ADDED_10_1_7 },
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
 					{ "pop" },	-- Get the Rewards.
@@ -3566,7 +3566,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ "n", 53869 },	-- Orphan Matron Seacole (A)
 				{ "n", 53865 },	-- Orphan Matron Nanee (H)
 			},
-			["timeline"] = { "added 10.1.7" },
+			["timeline"] = { ADDED_10_1_7 },
 			["coords"] = {
 				{ 31.9, 50, ELWYNN_FOREST },	-- Alliance
 				{ 62.4, 66.6, TIRISFAL_GLADES },	-- Horde
@@ -3578,7 +3578,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(76072, {	-- Shades of Scarlet
 			["provider"] = { "n", 211008 },	-- Sir Thomas
 			["sourceQuest"] = 76075,	-- A Ghostly Message
-			["timeline"] = { "added 10.1.7" },
+			["timeline"] = { ADDED_10_1_7 },
 			["coord"] = { 81.2, 44.6, TIRISFAL_GLADES },
 			["groups"] = {
 				i(33226),	-- Tricky Treat
@@ -3587,7 +3587,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(76073, {	-- No Laughing Matter
 			["provider"] = { "n", 211008 },	-- Sir Thomas
 			["sourceQuest"] = 76072,	-- Shades of Scarlet
-			["timeline"] = { "added 10.1.7" },
+			["timeline"] = { ADDED_10_1_7 },
 			["coord"] = { 82.4, 32.7, TIRISFAL_GLADES },
 			["groups"] = {
 				i(33226),	-- Tricky Treat
@@ -3596,7 +3596,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(76074, {	-- The Headless Horseman, Returned
 			["provider"] = { "n", 205448 },	-- Suzannah
 			["sourceQuest"] = 76073,	-- No Laughing Matter
-			["timeline"] = { "added 10.1.7" },
+			["timeline"] = { ADDED_10_1_7 },
 			["coord"] = { 83.5, 30.8, TIRISFAL_GLADES },
 			["groups"] = {
 				i(33226),	-- Tricky Treat
@@ -3605,7 +3605,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		q(77779, {	-- The Tale of Sir Thomas
 			["provider"] = { "n", 209609 },	-- Sir Thomas
 			["sourceQuest"] = 76074,	-- The Headless Horseman, Returned
-			["timeline"] = { "added 10.1.7" },
+			["timeline"] = { ADDED_10_1_7 },
 			["coord"] = { 43, 53, SCARLET_MONASTERY },
 			["groups"] = {
 				i(208769),	-- Tome of Thomas Thomson

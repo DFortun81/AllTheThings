@@ -653,7 +653,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				}),
 				-- #if AFTER 10.1.7
 				i(9444, {	-- Techbot CPU Shell
-					["timeline"] = { "added 10.1.7" },	-- ATT Discord 20.09.2023
+					["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 20.09.2023
 				}),
 				-- #endif
 				i(9485, {	-- Vibroblade

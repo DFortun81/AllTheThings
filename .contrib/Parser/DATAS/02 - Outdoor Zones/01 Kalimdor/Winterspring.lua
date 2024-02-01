@@ -2026,7 +2026,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 5.1.0.16309" },
 					["groups"] = {
 						i(4191, {	-- Owlbeast Leggings
-							["timeline"] = { "added 10.1.7" },	-- ATT Discord 10.09.2023
+							["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 10.09.2023
 						}),
 					},
 				}),
@@ -2304,7 +2304,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(12435, {	-- Ice Thistle E'ko
 					["provider"] = { "i", 12384 },	-- Cache of Mau'ari
-					["timeline"] = { "removed 4.0.3", "added 10.1.5" },	-- Likely was never removed
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_5 },	-- Likely was never removed
 					["crs"] = {
 						7459,	-- Ice Thistle Matriarch
 						7460,	-- Ice Thistle Patriarch
@@ -2324,7 +2324,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(4191, {	-- Owlbeast Leggings
-					["timeline"] = { "added 10.1.7" },	-- ATT Discord 10.09.2023
+					["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 10.09.2023
 					["crs"] = {
 						50788, 	-- Quetzl (Rare)
 						7452,	-- Crazed Owlbeast
@@ -2341,7 +2341,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(15761, {	-- Pattern: Frostsaber Gloves (RECIPE!)
 					["cr"] = 7441,	-- Winterfall Totemic
-					["timeline"] = { "removed 7.3.5", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 7.3.5", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 41.6, 42.8, WINTERSPRING },
@@ -2356,7 +2356,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(15747, {	-- Pattern: Frostsaber Leggings (RECIPE!)
 					["cr"] = 7440,	-- Winterfall Den Watcher
-					["timeline"] = { "removed 7.3.5", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 7.3.5", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 68.0, 35.6, WINTERSPRING },
@@ -2373,7 +2373,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(15779, {	-- Pattern: Frostsaber Tunic (RECIPE!)
 					["cr"] = 7438,	-- Winterfall Ursa
-					["timeline"] = { "removed 7.3.5", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 7.3.5", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 69.6, 38.2, WINTERSPRING },
@@ -2397,7 +2397,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- Wont return, its on timewalking vendor
 				}),
 				i(13495, {	-- Recipe: Greater Frost Protection Potion (RECIPE!)
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 7428,	-- Frostmaul Giant
 					["coords"] = {
@@ -2420,7 +2420,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(16054, {	-- Schematic: Arcanite Dragonling
 					["timeline"] = { "removed 4.0.3" },
 					["cr"] = 7437,	-- Cobalt Mageweaver
-					--[[["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+					--[[["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 570,	-- Brain Eater
 					["coords"] = {

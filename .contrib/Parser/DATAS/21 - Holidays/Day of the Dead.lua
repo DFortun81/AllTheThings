@@ -213,7 +213,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 						["timeline"] = { "added 3.2.2.10505" },
 					}),
 					i(208859, {	-- Cliffside Wylderdrake: Day of the Dead Armor
-						["timeline"] = { "added 10.1.7" },
+						["timeline"] = { ADDED_10_1_7 },
 					}),
 					i(188689, {	-- Marigold Petal Offering Bowl
 						["timeline"] = { ADDED_9_1_5 },
