@@ -105,8 +105,8 @@ local function CreateMinimapButton()
 		if sin > 0 then
 			q = q + 2;	-- right
 		end
-		local width = (Minimap:GetWidth() * 0.5) + 8;
-		local height = (Minimap:GetHeight() * 0.5) + 8;
+		local width = Minimap:GetWidth() * 0.5;
+		local height = Minimap:GetHeight() * 0.5;
 		if MinimapShapes[GetMinimapShape and GetMinimapShape() or "ROUND"][q] then
 			x = cos*width;
 			y = sin*height;
