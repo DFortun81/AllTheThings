@@ -1305,7 +1305,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		})),
 	}),
 	n(YEAR2024, {
-		n(JANUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52649"} }, {
+		n(JANUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52649", "removed 10.2.5.53162"} }, {
 			n(MONTHLY_REWARD, {
 				i(211002),	-- Golden Mobile Timepiece
 			}),
