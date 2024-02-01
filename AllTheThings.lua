@@ -261,14 +261,14 @@ local function RoundNumber(number, decimalPlaces)
 end
 
 local function formatNumericWithCommas(amount)
-  local formatted, k = amount
+  local k
   while true do
-	formatted, k = string_gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
-	if (k==0) then
-	  break
+	amount, k = string_gsub(amount, "^(-?%d+)(%d%d%d)", '%1,%2')
+	if k == 0 then
+		break
 	end
   end
-  return formatted
+  return amount
 end
 local function GetMoneyString(amount)
 	if amount > 0 then
