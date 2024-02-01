@@ -560,7 +560,7 @@ root(ROOTS.Unsorted, {
 			q(64975),	--
 		}),
 	}),
-	tier(DF_TIER, {
+	--[[tier(DF_TIER, {
 		tier(DF_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 			filter(BATTLE_PETS, {
 				i(211432),	-- Teele (PET!) [Trading Post]
@@ -1288,7 +1288,6 @@ root(ROOTS.Unsorted, {
 				-- 10.2.0.52188
 				q(76279),	--
 			}),
-			--]]
 		})),
 		tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			n(QUESTS, {
@@ -3856,5 +3855,5 @@ root(ROOTS.Unsorted, {
 				i(192094),	-- Winter Veil Gift
 			}),
 		})),
-	}),
+	}),--]]
 });

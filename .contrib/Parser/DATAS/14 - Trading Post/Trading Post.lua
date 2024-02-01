@@ -1536,7 +1536,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190910, { -- Ruby Felfire Bulwark
 					["cost"] = {{"c", TRADERS_TENDER, 400}},
 				}),
-				--Rosy Corsage
+				i(190855, { -- Rosy Corsage
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
 				i(190670, { -- Sanguine Bouquet
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
