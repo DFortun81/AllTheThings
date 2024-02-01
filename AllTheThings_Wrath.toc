@@ -77,6 +77,7 @@ src\Classes\Title.lua
 # AllTheThings.lua
 classic\Settings.lua
 classic\ATT-Classic.lua
+src\UI\Minimap Button.lua
 
 # Load expansion specific category database.
 db\Wrath\Categories.lua

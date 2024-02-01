@@ -170,7 +170,6 @@ local TooltipSettingsBase = {
 		["MiniListScale"] = 1,
 		["MinimapButton"] = true,
 		["MinimapSize"] = 36,
-		["MinimapStyle"] = false,
 		["Models"] = true,
 		["Objectives"] = true,
 		["PlayDeathSound"] = false,
@@ -263,12 +262,9 @@ settings.Initialize = function(self)
 	self.MiniListScaleSlider:SetValue(self:GetTooltipSetting("MiniListScale"));
 	self.PrecisionSlider:SetValue(self:GetTooltipSetting("Precision"));
 	self.MinimapButtonSizeSlider:SetValue(self:GetTooltipSetting("MinimapSize"));
-	if self:GetTooltipSetting("MinimapButton") then
-		if not app.Minimap then app.Minimap = app.CreateMinimapButton(); end
-		app.Minimap:Show();
-	elseif app.Minimap then
-		app.Minimap:Hide();
-	end
+	app.SetMinimapButtonSettings(
+		self:GetTooltipSetting("MinimapButton"),
+		self:GetTooltipSetting("MinimapSize"));
 	OnClickForTab(self.Tabs[1]);
 	self:UpdateMode();
 end
@@ -933,7 +929,9 @@ MinimapButtonSizeSlider:SetScript("OnValueChanged", function(self, newValue)
 		return 1;
 	end
 	settings:SetTooltipSetting("MinimapSize", newValue)
-	if app.Minimap then app.Minimap:SetSize(newValue, newValue); end
+	app.SetMinimapButtonSettings(
+		settings:GetTooltipSetting("MinimapButton"),
+		settings:GetTooltipSetting("MinimapSize"));
 end);
 
 
@@ -1707,26 +1705,12 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("MinimapButton", self:GetChecked());
-	if self:GetChecked() then
-		if not app.Minimap then app.Minimap = app.CreateMinimapButton(); end
-		app.Minimap:Show();
-	elseif app.Minimap then
-		app.Minimap:Hide();
-	end
+	app.SetMinimapButtonSettings(
+		settings:GetTooltipSetting("MinimapButton"),
+		settings:GetTooltipSetting("MinimapSize"));
 end);
 ShowMinimapButtonCheckBox:SetATTTooltip("Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.");
 ShowMinimapButtonCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "TOPLEFT", 360, 0);
-
-local MinimapButtonStyleCheckBox = settings:CreateCheckBox("Use the Old Minimap Style",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("MinimapStyle"));
-end,
-function(self)
-	settings:SetTooltipSetting("MinimapStyle", self:GetChecked());
-	if app.Minimap then app.Minimap:UpdateStyle(); end
-end);
-MinimapButtonStyleCheckBox:SetATTTooltip("Some people don't like the new minimap button...\n\nThose people are wrong!\n\nIf you don't like it, here's an option to go back to the old style.");
-MinimapButtonStyleCheckBox:SetPoint("TOPLEFT", ShowMinimapButtonCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowCompletedGroupsCheckBox = settings:CreateCheckBox("Show Completed Groups",
 function(self)
@@ -1745,7 +1729,7 @@ function(self)
 	app:RefreshDataQuietly("ShowCompletedGroupsCheckBox");
 end);
 ShowCompletedGroupsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
-ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", MinimapButtonStyleCheckBox, "BOTTOMLEFT", 0, -4);
+ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", ShowMinimapButtonCheckBox, "BOTTOMLEFT", 0, -4);
 
 local ShowCollectedThingsCheckBox = settings:CreateCheckBox("Show Collected Things",
 function(self)

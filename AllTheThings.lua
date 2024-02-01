@@ -595,6 +595,47 @@ end
 GameTooltipModel.SetScale = function(number)
 	GameTooltipModel.Model:SetCamDistanceScale(number or 1);
 end
+
+
+GameTooltip.ClearATTReferenceTexture = function(self)
+	GameTooltipIcon.icon.Background:Hide();
+	GameTooltipIcon.icon.Border:Hide();
+	GameTooltipIcon:Hide();
+	GameTooltipModel:Hide();
+end
+GameTooltip.SetATTReferenceTexture = function(self, reference, owner)
+	local texture = reference.preview or reference.icon;
+	if texture then
+		if owner then
+			GameTooltipIcon:ClearAllPoints();
+			GameTooltipModel:ClearAllPoints();
+			if self:GetCenter() > (UIParent:GetWidth() / 2) then
+				GameTooltip:SetOwner(self, "ANCHOR_LEFT");
+				GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
+				GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
+			else
+				GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+				GameTooltipIcon:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
+				GameTooltipModel:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
+			end
+		end
+		if reference.explorationID and reference.maphash and reference.preview then
+			local width, height, offsetX, offsetY = strsplit(":", reference.maphash);
+			GameTooltipIcon:SetSize(tonumber(width) or 72,tonumber(height) or 72);
+		else
+			GameTooltipIcon:SetSize(72,72);
+		end
+		GameTooltipIcon.icon:SetTexture(texture);
+		local texcoord = reference.texcoord;
+		if texcoord then
+			GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
+		else
+			GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
+		end
+		GameTooltipIcon:Show();
+	end
+end
+
 local GetDisplayID
 do
 	-- returns the input key unless it's blocked by being set to 0
@@ -11231,179 +11272,7 @@ app.RefreshCustomCollectibility = function()
 end
 end	-- Custom Collectibility
 
--- Minimap Button
-function AllTheThings_MinimapButtonOnClick(self, button)
-	if button == "RightButton" then
-		-- Right Button opens the Options menu.
-		app.Settings:Open();
-	else
-		-- Left Button
-		if IsShiftKeyDown() then
-			app.RefreshCollections();
-		elseif app.ToggleMiniListForCurrentZone and (IsAltKeyDown() or IsControlKeyDown()) then
-			app.ToggleMiniListForCurrentZone();
-		else
-			app.ToggleMainList();
-		end
-	end
-end
-function AllTheThings_MinimapButtonOnEnter(self, button)
-	GameTooltip:SetOwner(type(self) ~= "string" and self or button, "ANCHOR_LEFT");
-	GameTooltip:ClearLines();
-	local reference = app:GetDataCache();
-	if reference then
-		GameTooltipIcon:SetSize(72,72);
-		GameTooltipIcon:ClearAllPoints();
-		GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-		GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
-		local texcoord = reference.texcoord;
-		if texcoord then
-			GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
-		else
-			GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
-		end
-		GameTooltipIcon:Show();
 
-		local left, right = strsplit(DESCRIPTION_SEPARATOR, reference.title);
-		GameTooltip:AddDoubleLine(reference.text, reference.progressText, 1, 1, 1);
-		GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
-
-		local prime = app:GetWindow("Prime");
-		if prime and prime.forceFullDataRefresh then
-			GameTooltip:AddDoubleLine("Updates Paused", L["MAIN_LIST_REQUIRES_REFRESH"], 1, 0.4, 0.4);
-		else
-			GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
-		end
-	else
-		GameTooltip:AddDoubleLine(L["TITLE"], L["MAIN_LIST_REQUIRES_REFRESH"], 1, 1, 1);
-		GameTooltipIcon:Hide();
-	end
-	GameTooltip:AddLine(L["MINIMAP_MOUSEOVER_TEXT"], 1, 1, 1);
-	GameTooltip:Show();
-end
-function AllTheThings_MinimapButtonOnLeave()
-	GameTooltip:Hide();
-	GameTooltipIcon.icon.Background:Hide();
-	GameTooltipIcon.icon.Border:Hide();
-	GameTooltipIcon:Hide();
-	GameTooltipModel:Hide();
-end
-local function CreateMinimapButton()
-	-- Create the Button for the Minimap frame. Create a local and non-local copy.
-	local size = app.Settings:GetTooltipSetting("MinimapSize");
-	local button = CreateFrame("BUTTON", appName .. "-Minimap", Minimap);
-	button:SetPoint("CENTER", 0, 0);
-	button:SetFrameStrata("HIGH");
-	button:SetMovable(true);
-	button:EnableMouse(true);
-	button:RegisterForDrag("LeftButton", "RightButton");
-	button:RegisterForClicks("LeftButtonUp", "RightButtonUp");
-	button:SetSize(size, size);
-
-	-- Create the Button Texture
-	local texture = button:CreateTexture(nil, "BACKGROUND");
-	texture:SetTexture(app.asset("Discord_2_64"));
-	texture:SetAllPoints();
-	button.texture = texture;
-
-	-- Create the Button Texture
-	local oldtexture = button:CreateTexture(nil, "BACKGROUND");
-	oldtexture:SetPoint("CENTER", 1, 0);
-	oldtexture:SetTexture(app.asset("logo_tiny"));
-	oldtexture:SetSize(21, 21);
-	button.oldtexture = oldtexture;
-
-	-- Create the Button Tracking Border
-	local border = button:CreateTexture(nil, "BORDER");
-	border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder");
-	border:SetPoint("CENTER", 12, -12);
-	border:SetSize(56, 56);
-	button.border = border;
-	button.UpdateStyle = function(self)
-		if app.Settings:GetTooltipSetting("MinimapStyle") then
-			self:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight", "ADD");
-			self.texture:Hide();
-			self.oldtexture:Show();
-			self.border:Show();
-		else
-			self:SetHighlightTexture(app.asset("MinimapHighlight_64x64"));
-			self.texture:Show();
-			self.oldtexture:Hide();
-			self.border:Hide();
-		end
-	end
-	button:UpdateStyle();
-
-	-- Button Configuration
-	local radius = 100;
-	local rounding = 10;
-	local MinimapShapes = {
-		-- quadrant booleans (same order as SetTexCoord)
-		-- {bottom-right, bottom-left, top-right, top-left}
-		-- true = rounded, false = squared
-		["ROUND"]			= {true,  true,  true,  true },
-		["SQUARE"]			= {false, false, false, false},
-		["CORNER-TOPLEFT"]		= {false, false, false, true },
-		["CORNER-TOPRIGHT"]		= {false, false, true,  false},
-		["CORNER-BOTTOMLEFT"]		= {false, true,  false, false},
-		["CORNER-BOTTOMRIGHT"]		= {true,  false, false, false},
-		["SIDE-LEFT"]			= {false, true,  false, true },
-		["SIDE-RIGHT"]			= {true,  false, true,  false},
-		["SIDE-TOP"]			= {false, false, true,  true },
-		["SIDE-BOTTOM"]		= {true,  true,  false, false},
-		["TRICORNER-TOPLEFT"]		= {false, true,  true,  true },
-		["TRICORNER-TOPRIGHT"]		= {true,  false, true,  true },
-		["TRICORNER-BOTTOMLEFT"]	= {true,  true,  false, true },
-		["TRICORNER-BOTTOMRIGHT"]	= {true,  true,  true,  false},
-	};
-	button.update = function(self)
-		local position = GetDataMember("Position", -10.31);
-		local angle = math.rad(position) -- determine position on your own
-		local x, y
-		local cos = math.cos(angle)
-		local sin = math.sin(angle)
-		local q = 1;
-		if cos < 0 then
-			q = q + 1;	-- lower
-		end
-		if sin > 0 then
-			q = q + 2;	-- right
-		end
-		if MinimapShapes[GetMinimapShape and GetMinimapShape() or "ROUND"][q] then
-			x = cos*radius;
-			y = sin*radius;
-		else
-			local diagRadius = math.sqrt(2*(radius)^2)-rounding
-			x = math.max(-radius, math.min(cos*diagRadius, radius))
-			y = math.max(-radius, math.min(sin*diagRadius, radius))
-		end
-		self:SetPoint("CENTER", "Minimap", "CENTER", -math_floor(x), math_floor(y));
-	end
-	local update = function(self)
-		local w, x = GetCursorPosition();
-		local y, z = Minimap:GetLeft(), Minimap:GetBottom();
-		local scale = UIParent:GetScale();
-		w = y - w / scale + 70; x = x / scale - z - 70;
-		SetDataMember("Position", math.deg(math.atan2(x, w)));
-		self:Raise();
-		self:update();
-	end
-
-	-- Register for Frame Events
-	button:SetScript("OnDragStart", function(self)
-		self:SetScript("OnUpdate", update);
-	end);
-	button:SetScript("OnDragStop", function(self)
-		self:SetScript("OnUpdate", nil);
-	end);
-	button:SetScript("OnEnter", AllTheThings_MinimapButtonOnEnter);
-	button:SetScript("OnLeave", AllTheThings_MinimapButtonOnLeave);
-	button:SetScript("OnClick", AllTheThings_MinimapButtonOnClick);
-	button:update();
-	button:Show();
-	return button;
-end
-app.CreateMinimapButton = CreateMinimapButton;
 function app:CreateMiniListForGroup(group)
 	-- Criteria now show their Source Achievement properly
 	-- Achievements already fill out their Criteria information automatically, don't think this is necessary now - Runaway
@@ -19441,14 +19310,6 @@ app.Startup = function()
 	app.L = L;
 	app.CategoryNames = nil;
 	app.ActiveCustomCollects = {};
-
-	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
-		type = "launcher",
-		icon = app.asset("logo_32x32"),
-		OnClick = AllTheThings_MinimapButtonOnClick,
-		OnEnter = AllTheThings_MinimapButtonOnEnter,
-		OnLeave = AllTheThings_MinimapButtonOnLeave,
-	});
 
 	-- Character Data Storage
 	local characterData = LocalizeGlobalIfAllowed("ATTCharacterData", true);

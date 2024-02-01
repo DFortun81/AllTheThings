@@ -166,7 +166,6 @@ local TooltipSettingsBase = {
 		["LootSpecializations"] = true,
 		["MinimapButton"] = true,
 		["MinimapSize"] = 36,
-		["MinimapStyle"] = false,
 		["Models"] = true,
 		["KnownBy"] = true,
 		["LiveScan"] = false,
@@ -257,12 +256,9 @@ settings.Initialize = function(self)
 	self.sliderMiniListScale:SetValue(self:GetTooltipSetting("MiniListScale"))
 	self.sliderPercentagePrecision:SetValue(self:GetTooltipSetting("Precision"))
 	self.sliderMinimapButtonSize:SetValue(self:GetTooltipSetting("MinimapSize"))
-	if self:GetTooltipSetting("MinimapButton") then
-		if not app.Minimap then app.Minimap = app.CreateMinimapButton() end
-		app.Minimap:Show()
-	elseif app.Minimap then
-		app.Minimap:Hide()
-	end
+	app.SetMinimapButtonSettings(
+		self:GetTooltipSetting("MinimapButton"),
+		self:GetTooltipSetting("MinimapSize"));
 	self:UpdateMode()
 
 	if self:GetTooltipSetting("Auto:MainList") then
@@ -3933,36 +3929,15 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("MinimapButton", self:GetChecked())
-	if self:GetChecked() then
-		if not app.Minimap then app.Minimap = app.CreateMinimapButton() end
-		app.Minimap:Show()
-	elseif app.Minimap then
-		app.Minimap:Hide()
-	end
+	app.SetMinimapButtonSettings(
+		settings:GetTooltipSetting("MinimapButton"),
+		settings:GetTooltipSetting("MinimapSize"));
 end)
 checkboxShowMinimapButton:SetATTTooltip(L["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"])
 checkboxShowMinimapButton:SetPoint("TOPLEFT", headerMinimapButton, "BOTTOMLEFT", -2, 0)
 
-local checkboxMinimapButtonStyle = child:CreateCheckBox(L["MINIMAP_BUTTON_STYLE_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("MinimapStyle"))
-	if not settings:GetTooltipSetting("MinimapButton") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("MinimapStyle", self:GetChecked())
-	if app.Minimap then app.Minimap:UpdateStyle() end
-end)
-checkboxMinimapButtonStyle:SetATTTooltip(L["MINIMAP_BUTTON_STYLE_CHECKBOX_TOOLTIP"])
-checkboxMinimapButtonStyle:AlignBelow(checkboxShowMinimapButton, 1)
-
 local sliderMinimapButtonSize = CreateFrame("Slider", "ATTsliderMinimapButtonSize", child, "OptionsSliderTemplate")
-sliderMinimapButtonSize:SetPoint("TOPLEFT", checkboxMinimapButtonStyle, "BOTTOMLEFT", 5, -12)
+sliderMinimapButtonSize:SetPoint("TOPLEFT", checkboxShowMinimapButton, "BOTTOMLEFT", 5, -12)
 table.insert(settings.Objects, sliderMinimapButtonSize)
 settings.sliderMinimapButtonSize = sliderMinimapButtonSize
 sliderMinimapButtonSize.tooltipText = L["MINIMAP_SLIDER_TOOLTIP"]
@@ -3985,10 +3960,12 @@ sliderMinimapButtonSize:SetScript("OnValueChanged", function(self, newValue)
 		return 1
 	end
 	settings:SetTooltipSetting("MinimapSize", newValue)
-	if app.Minimap then app.Minimap:SetSize(newValue, newValue) end
+	app.SetMinimapButtonSettings(
+		settings:GetTooltipSetting("MinimapButton"),
+		settings:GetTooltipSetting("MinimapSize"));
 end)
 sliderMinimapButtonSize.OnRefresh = function(self)
-	if not settings:GetTooltipSetting("MinimapButton") or settings:GetTooltipSetting("MinimapStyle") then
+	if not settings:GetTooltipSetting("MinimapButton") then
 		self:Disable()
 		self:SetAlpha(0.4)
 	else
