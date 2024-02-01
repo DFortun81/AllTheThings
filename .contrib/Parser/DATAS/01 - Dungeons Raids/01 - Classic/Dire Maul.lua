@@ -177,7 +177,6 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["OnTooltip"] = OnTooltipForShendralar,
 					-- #endif
 				}),
-				-- #if BEFORE 4.0.3
 				faction(169, {	-- Steamweedle Cartel
 					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					["OnTooltip"] = OnTooltipForSteamweedle,
@@ -189,8 +188,11 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_ONE_DIREMAUL, {
 						THE_BARRENS,
 						WINTERSPRING,
 					},
+					-- #if AFTER 4.0.3
+						["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
+						["collectible"] = false,
+					-- #endif
 				}),
-				-- #endif
 			}),
 			n(QUESTS, {
 				q(1193, {	-- A Broken Trap

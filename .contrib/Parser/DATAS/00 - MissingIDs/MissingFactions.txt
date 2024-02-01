@@ -1,7 +1,5 @@
 0.5.3.3368
 faction(67),	-- Horde \\ _REUSE ME 003 \\ Unused - Use Me for Something
-faction(70),	-- Syndicate
-faction(169),	-- Steamwheedle Cartel \\ AAAReuseme
 0.9.0.3807
 faction(469),	-- Alliance \\ _REUSE ME 002
 1.15.0.52124

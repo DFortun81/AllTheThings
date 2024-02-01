@@ -70,6 +70,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["icon"] = "Interface\\Icons\\Ability_Rogue_Eviscerate",
 					["OnTooltip"] = OnTooltipForRavenholdt,
 				}),
+				faction(70, {	-- Syndicate
+					["description"] = "Neutral is the highest you can currently reach with the Syndicate.",
+					["collectible"] = false,
+				}),
 			}),
 			n(QUESTS, {
 				applyclassicphase(PHASE_FOUR, q(8233, {	-- A Simple Request
