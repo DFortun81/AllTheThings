@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								2237,	-- Moonstalker Sire
 							},
 						}),
-						i(5387, {  -- Enchanted Moonstalker Cloak
+						i(5387, {	-- Enchanted Moonstalker Cloak
 							["timeline"] = { "removed 4.0.3" },
 						}),
 					},

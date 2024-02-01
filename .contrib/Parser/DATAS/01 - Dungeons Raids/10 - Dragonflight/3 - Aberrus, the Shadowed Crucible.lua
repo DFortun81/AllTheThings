@@ -354,95 +354,95 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_0 }
 			}),
 			n(ACHIEVEMENTS, {
 				ach(18163, {	-- Discarded Works
-					crit(58866, { -- Kazzara, the Hellforged
+					crit(58866, {	-- Kazzara, the Hellforged
 						["_encounter"] = { 2522, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(58867, { -- The Amalgamation Chamber
+					crit(58867, {	-- The Amalgamation Chamber
 						["_encounter"] = { 2529, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(58868, { -- The Forgotten Experiments
+					crit(58868, {	-- The Forgotten Experiments
 						["_encounter"] = { 2530, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(18164, {	-- Fury of Giants
-					crit(58869, { -- Assault of the Zaqali
+					crit(58869, {	-- Assault of the Zaqali
 						["_encounter"] = { 2524, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(58870, { -- Rashok, the Elder
+					crit(58870, {	-- Rashok, the Elder
 						["_encounter"] = { 2525, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(58871, { -- The Vigilant Steward, Zskarn
+					crit(58871, {	-- The Vigilant Steward, Zskarn
 						["_encounter"] = { 2532, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(18165, {	-- Neltharion's Shadow
-					crit(58881, { -- Magmorax
+					crit(58881, {	-- Magmorax
 						["_encounter"] = { 2527, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(58882, { -- Echo of Neltharion
+					crit(58882, {	-- Echo of Neltharion
 						["_encounter"] = { 2523, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(18167, {	-- Edge of the Void
-					crit(58883, { -- Scalecommander Sarkareth
+					crit(58883, {	-- Scalecommander Sarkareth
 						["_encounter"] = { 2520, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(18160, {	-- Aberrus, the Shadowed Crucible
-					crit(58866, { -- Kazzara, the Hellforged
+					crit(58866, {	-- Kazzara, the Hellforged
 						["_encounter"] = { 2522, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(58867, { -- The Amalgamation Chamber
+					crit(58867, {	-- The Amalgamation Chamber
 						["_encounter"] = { 2529, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(58868, { -- The Forgotten Experiments
+					crit(58868, {	-- The Forgotten Experiments
 						["_encounter"] = { 2530, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(58869, { -- Assault of the Zaqali
+					crit(58869, {	-- Assault of the Zaqali
 						["_encounter"] = { 2524, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(58870, { -- Rashok, the Elder
+					crit(58870, {	-- Rashok, the Elder
 						["_encounter"] = { 2525, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(58871, { -- The Vigilant Steward, Zskarn
+					crit(58871, {	-- The Vigilant Steward, Zskarn
 						["_encounter"] = { 2532, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(58881, { -- Magmorax
+					crit(58881, {	-- Magmorax
 						["_encounter"] = { 2527, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(58882, { -- Echo of Neltharion
+					crit(58882, {	-- Echo of Neltharion
 						["_encounter"] = { 2523, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(58883, { -- Scalecommander Sarkareth
+					crit(58883, {	-- Scalecommander Sarkareth
 						["_encounter"] = { 2520, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(18161, {	-- Heroic: Aberrus, the Shadowed Crucible
-					crit(59573, { -- Kazzara, the Hellforged
+					crit(59573, {	-- Kazzara, the Hellforged
 						["_encounter"] = { 2522, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(59574, { -- The Amalgamation Chamber
+					crit(59574, {	-- The Amalgamation Chamber
 						["_encounter"] = { 2529, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(59575, { -- The Forgotten Experiments
+					crit(59575, {	-- The Forgotten Experiments
 						["_encounter"] = { 2530, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(59576, { -- Assault of the Zaqali
+					crit(59576, {	-- Assault of the Zaqali
 						["_encounter"] = { 2524, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(59577, { -- Rashok, the Elder
+					crit(59577, {	-- Rashok, the Elder
 						["_encounter"] = { 2525, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(59578, { -- The Vigilant Steward, Zskarn
+					crit(59578, {	-- The Vigilant Steward, Zskarn
 						["_encounter"] = { 2532, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(59579, { -- Magmorax
+					crit(59579, {	-- Magmorax
 						["_encounter"] = { 2527, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(59580, { -- Echo of Neltharion
+					crit(59580, {	-- Echo of Neltharion
 						["_encounter"] = { 2523, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(59581, { -- Scalecommander Sarkareth
+					crit(59581, {	-- Scalecommander Sarkareth
 						["_encounter"] = { 2520, HEROIC_PLUS_ID_RAID },
 					}),
 				}),

@@ -4129,7 +4129,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 			r(307142),	-- Shadowghast Ingot
 			r(307144, {["timeline"] = { ADDED_9_1_0 }}),	-- Stones to Ore
 		}),
-		cat(1301, { -- Trinkets
+		cat(1301, {	-- Trinkets
 			r(307200),	-- Spiritual Alchemy Stone
 		}),
 		cat(1302, {	-- Utility Potions

@@ -1069,7 +1069,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(210471),	-- Flourishing Whimsydrake: Body Armor
 			i(210478),	-- Flourishing Whimsydrake: Gold and Pink Armor
 		})),
-		header(HEADERS.Item, 206156, { -- Grotto Netherwing Drake
+		header(HEADERS.Item, 206156, {	-- Grotto Netherwing Drake
 			i(207779),	-- Grotto Netherwing Drake: Barbed Tail (DM!)
 			i(207762),	-- Grotto Netherwing Drake: Chin Spike (DM!)
 			i(207761),	-- Grotto Netherwing Drake: Chin Tendrils (DM!)

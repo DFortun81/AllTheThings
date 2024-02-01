@@ -873,7 +873,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							["coord"] = { 43.4, 48.2, TRUESHOT_LODGE },
 						}),
 					}),
-					gt(375, { -- Eagle Ally
+					gt(375, {	-- Eagle Ally
 						i(140216), -- Eagle Feather
 					}),
 				}),

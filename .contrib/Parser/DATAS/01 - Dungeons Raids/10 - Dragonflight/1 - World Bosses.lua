@@ -128,7 +128,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 					["modID"] = 3,
 				},{
 					i(210751),	-- Mark of the Hibernating Runebear (CI!)
-					i(210433, { -- Visage of Aurostor (COSMETIC!)
+					i(210433, {	-- Visage of Aurostor (COSMETIC!)
 						["modID"] = 0,
 					}),
 					i(208440),	-- Aurostor's Sleeping Knickers

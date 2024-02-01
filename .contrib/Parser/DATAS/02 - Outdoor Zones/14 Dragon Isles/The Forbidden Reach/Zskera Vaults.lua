@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 				}),
 				-- Evoker Tablets
-				q(73115, { -- Journal Entry: Silence (A)
+				q(73115, {	-- Journal Entry: Silence (A)
 					["provider"] = { "i", 202337 },	-- Journal Entry: Silence [A]
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "i", 204246 },	-- Journal Entry: Silence [H]
 					["races"] = HORDE_ONLY,
 				}),
-				q(73114, { -- Journal Entry: The Creches (A)
+				q(73114, {	-- Journal Entry: The Creches (A)
 					["provider"] = { "i", 202336 },	-- Journal Entry: The Creches [A]
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -231,7 +231,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "i", 204223 },	-- Journal Entry: The Creches [H]
 					["races"] = HORDE_ONLY,
 				}),
-				q(73108, { -- Journal Entry: The Prisoner (A)
+				q(73108, {	-- Journal Entry: The Prisoner (A)
 					["provider"] = { "i", 202327 },	-- Journal Entry: The Prisoner [A]
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -326,7 +326,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386470, {	-- Gold Pile
 							["questID"] = 74434,
 						}),
-						o(386472, { -- Gold Pile
+						o(386472, {	-- Gold Pile
 							["questID"] = 74435,
 						}),
 						o(385032, {	-- Gold Pile
@@ -598,7 +598,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 26.5, 49.3, THE_FORBIDDEN_REACH },
 							["questID"] = 73068,
 						}),
-						o(393957, { -- Gold Pile
+						o(393957, {	-- Gold Pile
 							["questID"] = 75254,
 						}),
 						o(393958, {	-- Gold Pile

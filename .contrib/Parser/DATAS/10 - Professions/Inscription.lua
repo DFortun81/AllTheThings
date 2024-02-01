@@ -3756,35 +3756,35 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["timeline"] = { ADDED_8_1_0, REMOVED_9_0_1 },	-- Might no be correct removed patch
 			}),
 			------ Tools of Trade Questline ------
-			q(40537, { -- Drawing Blood [A]
+			q(40537, {	-- Drawing Blood [A]
 				["description"] = "This quest chain requires 150 skill in Kul Tiran Inscription.",
 				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
 				["coord"] = { 73.4, 6.3, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(49943, { -- Drawing Blood [H]
+			q(49943, {	-- Drawing Blood [H]
 				["description"] = "This quest chain requires 150 skill in Zandalari Inscription.",
 				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
 				["coord"] = { 42.2, 39.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(49694, { -- Turn to Drust [A]
+			q(49694, {	-- Turn to Drust [A]
 				["sourceQuests"] = { 40537 },	-- Drawing Blood [A]
 				["provider"] = { "n", 130399 },	-- Zooey Inksprocket
 				["coord"] = { 73.4, 6.3, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(49944, { -- Turn to Drust [H]
+			q(49944, {	-- Turn to Drust [H]
 				["sourceQuests"] = { 49943 },	-- Drawing Blood [H]
 				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
 				["coord"] = { 42.2, 39.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(49873, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, { --Sacrificial Writes
+			q(49873, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	--Sacrificial Writes
 				["sourceQuests"] = {
 					49694,	-- Turn to Drust [A]
 					49944,	-- Turn to Drust [H]
@@ -3795,7 +3795,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 					r(259665), -- Blood Contract: Sacrifice
 				},
 			})),
-			q(49874, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, { -- By the Book
+			q(49874, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- By the Book
 				["sourceQuests"] = { 49873 },	-- Sacrificial Writes
 				["provider"] = { "n", 131657 },	-- Bloodshed Compendium
 				["coord"] = { 20.7, 44, DRUSTVAR },
@@ -3804,21 +3804,21 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 					r(292012), -- Blood Contract: Bloodshed
 				},
 			})),
-			q(49876, { -- Lines in the Sand [A]
+			q(49876, {	-- Lines in the Sand [A]
 				["sourceQuests"] = { 49874 },	-- By the Book
 				["provider"] = { "n", 131386 },	-- Kronah
 				["coord"] = { 20.6, 44, DRUSTVAR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(49946, { -- Lines in the Sand [H]
+			q(49946, {	-- Lines in the Sand [H]
 				["sourceQuests"] = { 49874 },	-- By the Book
 				["provider"] = { "n", 131386 },	-- Kronah
 				["coord"] = { 20.6, 44, DRUSTVAR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
 			}),
-			q(49877, { -- Temple of Sethraliss: Booking on a Favor
+			q(49877, {	-- Temple of Sethraliss: Booking on a Favor
 				["sourceQuests"] = {
 					49876,	-- Lines in the Sand [A]
 					49946,	-- Lines in the Sand [H]
@@ -3828,7 +3828,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["maps"] = { 1038, 1043 }, -- Temple of Sethraliss
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(49879, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, { -- Brush With Death
+			q(49879, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Brush With Death
 				["sourceQuests"] = { 49877 },	-- Temple of Sethraliss: Booking on a Favor
 				["provider"] = { "o", 279645 }, -- Tome of Oblivion
 				["coord"] = { 27.6, 52.3, VOLDUN },
@@ -3836,7 +3836,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 					r(292322), -- Blood Contract: Oblivion
 				},
 			})),
-			q(49878, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, { --Penning In Protection
+			q(49878, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	--Penning In Protection
 				["sourceQuests"] = { 49877 },	-- Temple of Sethraliss: Booking on a Favor
 				["provider"] = { "o", 279646 }, -- Bloodguard Chronicles
 				["coord"] = { 27.6, 52.2, VOLDUN },
@@ -3844,7 +3844,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 					r(292320), -- Blood Contract: Bloodguard
 				},
 			})),
-			q(49881, { -- The Final Verse
+			q(49881, {	-- The Final Verse
 				["sourceQuests"] = {
 					49878, -- Penning In Protection
 					49879, -- Brush With Death
@@ -3853,7 +3853,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["coord"] = { 27.6, 52.3, VOLDUN },
 				["timeline"] = { ADDED_8_1_5 },
 			}),
-			q(49882, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, { -- A Test of Quills
+			q(49882, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- A Test of Quills
 				["sourceQuests"] = { 49881 },	-- The Final Verse
 				["provider"] = { "n", 131397 },	-- Miju
 				["coord"] = { 32.6, 86, ZULDAZAR },

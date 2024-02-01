@@ -466,7 +466,7 @@ root(ROOTS.Zones, {
 									133841,	-- Recipe: The Hungry Magister [Rank 2] (RECIPE!)
 									133861,	-- Recipe: The Hungry Magister [Rank 3] (RECIPE!)
 							}}}, {
-								i(151653, { -- Broken Isles Recipe Scrap
+								i(151653, {	-- Broken Isles Recipe Scrap
 									["description"] = "Use 10 of these to create an unlearned recipe.",
 								}),
 								i(146757, {	-- Prepared Ingredients

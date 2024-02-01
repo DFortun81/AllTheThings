@@ -102,10 +102,10 @@ root(ROOTS.Secrets, {
 					o(13000031, {	-- Red Crystal Monocle
 						["description"] = "Fish NPCs across Vashj'ir sell sea-themed currencies which need to be exchanged between the various NPCs in order to obtain the currencies required to purchase the |cFFFFD700Red Crystal Monocle|r.\n\nThe currencies expire after a period of time so it is advised that you purchase the items in the order listed.\n",
 						["g"] = {
-							o(13000002, { -- Scintillating Murloc Skin Lotion
+							o(13000002, {	-- Scintillating Murloc Skin Lotion
 								["description"] = "Exchange the following items with the NPC until you receive 5 |cFFFFD700Scintillating Murloc Skin Lotion|r.\n",
 								["g"] = {
-									o(13000003, { -- Glittergill Glitter
+									o(13000003, {	-- Glittergill Glitter
 										["description"] = "Exchange the following items with the NPC until you receive 50 |cFFFFD700Glittergill Glitter|r.\n",
 										["g"] = {
 											o(13000004, {	-- Step 1: Seashell
@@ -170,7 +170,7 @@ root(ROOTS.Secrets, {
 								},
 
 							}),
-							o(13000018, { -- Potent Gastropod Gloop
+							o(13000018, {	-- Potent Gastropod Gloop
 								["description"] = "Exchange the following items with the NPC until you receive 5 |cFFFFD700Potent Gastropod Gloop|r.\n",
 								["g"] = {
 									o(13000019, {	-- Step 1: Seashell
@@ -195,7 +195,7 @@ root(ROOTS.Secrets, {
 									}),
 								},
 							}),
-							o(13000024, { -- Captured Cavitation Bubble
+							o(13000024, {	-- Captured Cavitation Bubble
 								["description"] = "Exchange the following items with the NPC until you receive 5 |cFFFFD700Captured Cavitation Bubble|r.\n",
 								["g"] = {
 									o(13000025, {	-- Step 1: Seashell
@@ -220,7 +220,7 @@ root(ROOTS.Secrets, {
 									}),
 								},
 							}),
-							o(13000030, { -- Buy the Red Crystal Monocle
+							o(13000030, {	-- Buy the Red Crystal Monocle
 								["coord"] = { 44.6, 20.2, 205 },	-- Shimmering Expanse, Vashj'ir
 								["description"] = "Exchange the 3 items with |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir for the |cFFFFD700Red Crystal Monocle|r.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",
 								["g"] = {
@@ -268,7 +268,7 @@ root(ROOTS.Secrets, {
 						["coord"] = { 71.8, 62.5, SURAMAR },
 						["provider"] = { "i", 156726 },	-- Yellow Crystal Monocle
 					}),
-					o(280903, { -- Lost Cat Toy
+					o(280903, {	-- Lost Cat Toy
 						["description"] = "The person in Dalaran have to pick up this Toy and will take random damage while doing so. It's important that this TOTAL(Damage+Absorbs+Overkill) damage is recorded.",
 					}),
 				},

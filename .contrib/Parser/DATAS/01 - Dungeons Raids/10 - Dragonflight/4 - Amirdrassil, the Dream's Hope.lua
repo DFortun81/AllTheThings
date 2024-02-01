@@ -498,102 +498,102 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 }
 							i(207729),	-- Fyr'alath the Dreamrender (QI!)
 							i(206448, {	-- Fyr'alath the Dreamrender
 								ach(19450),	-- Fyr'alath the Dreamrender
-							}),	
+							}),
 						},
 					}),
 				})),
 			}),
 			n(ACHIEVEMENTS, {
 				ach(19344, {	-- Incarnate's Wake
-					crit(63095, { -- Gnarlroot
+					crit(63095, {	-- Gnarlroot
 						["_encounter"] = { GNARLROOT, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(63096, { -- Igira the Cruel
+					crit(63096, {	-- Igira the Cruel
 						["_encounter"] = { IGIRA, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(63101, { -- Smolderon
+					crit(63101, {	-- Smolderon
 						["_encounter"] = { SMOLDERON, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(19345, {	-- Molten Incursion
-					crit(63097, { -- Volcoross
+					crit(63097, {	-- Volcoross
 						["_encounter"] = { VOLCOROSS, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(63098, { -- Larodar, Keeper of the Flame
+					crit(63098, {	-- Larodar, Keeper of the Flame
 						["_encounter"] = { LARODAR, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(19346, {	-- The Viridian Weave
-					crit(63099, { -- Council of Dreams
+					crit(63099, {	-- Council of Dreams
 						["_encounter"] = { COUNCIL_OF_DREAMS, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(63100, { -- Nymue, Weaver of the Cycle
+					crit(63100, {	-- Nymue, Weaver of the Cycle
 						["_encounter"] = { NYMUE, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(19347, {	-- Fate of Amirdrassil
-					crit(63102, { -- Tindral Sageswift, Seer of the Flame
+					crit(63102, {	-- Tindral Sageswift, Seer of the Flame
 						["_encounter"] = { TINDRAL, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(63103, { -- Fyrakk the Blazing
+					crit(63103, {	-- Fyrakk the Blazing
 						["_encounter"] = { FYRAKK, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(19331, {	-- Amirdrassil, the Dream's Hope
-					crit(63095, { -- Gnarlroot
+					crit(63095, {	-- Gnarlroot
 						["_encounter"] = { GNARLROOT, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(63096, { -- Igira the Cruel
+					crit(63096, {	-- Igira the Cruel
 						["_encounter"] = { IGIRA, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(63097, { -- Volcoross
+					crit(63097, {	-- Volcoross
 						["_encounter"] = { VOLCOROSS, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(63098, { -- Larodar, Keeper of the Flame
+					crit(63098, {	-- Larodar, Keeper of the Flame
 						["_encounter"] = { LARODAR, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(63099, { -- Council of Dreams
+					crit(63099, {	-- Council of Dreams
 						["_encounter"] = { COUNCIL_OF_DREAMS, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(63100, { -- Nymue, Weaver of the Cycle
+					crit(63100, {	-- Nymue, Weaver of the Cycle
 						["_encounter"] = { NYMUE, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(63101, { -- Smolderon
+					crit(63101, {	-- Smolderon
 						["_encounter"] = { SMOLDERON, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(63102, { -- Tindral Sageswift, Seer of the Flame
+					crit(63102, {	-- Tindral Sageswift, Seer of the Flame
 						["_encounter"] = { TINDRAL, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(63103, { -- Fyrakk the Blazing
+					crit(63103, {	-- Fyrakk the Blazing
 						["_encounter"] = { FYRAKK, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(19333, {	-- Heroic: Amirdrassil, the Dream's Hope
-					crit(63104, { -- Gnarlroot
+					crit(63104, {	-- Gnarlroot
 						["_encounter"] = { GNARLROOT, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(63105, { -- Igira the Cruel
+					crit(63105, {	-- Igira the Cruel
 						["_encounter"] = { IGIRA, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(63106, { -- Volcoross
+					crit(63106, {	-- Volcoross
 						["_encounter"] = { VOLCOROSS, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(63107, { -- Larodar, Keeper of the Flame
+					crit(63107, {	-- Larodar, Keeper of the Flame
 						["_encounter"] = { LARODAR, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(63108, { -- Council of Dreams
+					crit(63108, {	-- Council of Dreams
 						["_encounter"] = { COUNCIL_OF_DREAMS, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(63109, { -- Nymue, Weaver of the Cycle
+					crit(63109, {	-- Nymue, Weaver of the Cycle
 						["_encounter"] = { NYMUE, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(63110, { -- Smolderon
+					crit(63110, {	-- Smolderon
 						["_encounter"] = { SMOLDERON, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(63111, { -- Tindral Sageswift, Seer of the Flame
+					crit(63111, {	-- Tindral Sageswift, Seer of the Flame
 						["_encounter"] = { TINDRAL, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(63112, { -- Fyrakk the Blazing
+					crit(63112, {	-- Fyrakk the Blazing
 						["_encounter"] = { FYRAKK, HEROIC_PLUS_ID_RAID },
 					}),
 				}),

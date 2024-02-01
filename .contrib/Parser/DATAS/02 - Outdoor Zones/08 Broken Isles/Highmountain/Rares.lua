@@ -12,12 +12,12 @@ root(ROOTS.Zones, {
 						["crs"] = { 109155 },	-- Malefica
 						["coord"] = { 32.8, 66.6, HIGHMOUNTAIN },
 					}),
-					n(109059, { -- Dareer
+					n(109059, {	-- Dareer
 						["questID"] = 42826,
 						["coord"] = { 39.8, 52.4, HIGHMOUNTAIN },
 						["crs"] = { 109062 },    -- Dareer
 					}),
-					n(109159, { -- Holk the Wanderer
+					n(109159, {	-- Holk the Wanderer
 						["questID"] = 42863,
 						["coord"] = { 39.6, 58.2, 750 },
 						["crs"] = { 109161 },    -- Holk the Wanderer

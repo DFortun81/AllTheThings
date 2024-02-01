@@ -420,7 +420,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["races"] = HORDE_ONLY,
 						-- #endif
 					}),
-					ach(5038, { -- Ragefire Chasm Guild Run
+					ach(5038, {	-- Ragefire Chasm Guild Run
 						["timeline"] = { "added 4.0.3", "removed 5.0.4" },
 					}),
 					-- #endif
@@ -522,7 +522,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				["timeline"] = { "added 5.0.4" },
 				["groups"] = {
 					ach(629),	-- Ragefire Chasm
-					ach(5038, { -- Ragefire Chasm Guild Run
+					ach(5038, {	-- Ragefire Chasm Guild Run
 						["timeline"] = { "added 5.0.4" },
 					}),
 					i(82888, {	-- Heartboiler Staff

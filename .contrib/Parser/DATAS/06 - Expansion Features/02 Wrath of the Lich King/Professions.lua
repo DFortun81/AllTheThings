@@ -5,7 +5,7 @@
 root(ROOTS.ExpansionFeatures, tier(WOTLK_TIER, {
 	n(PROFESSIONS, {
 		prof(FIRST_AID, {
-			ach(135, { -- Grand Master Medic (450)
+			ach(135, {	-- Grand Master Medic (450)
 				["timeline"] = { "added 3.0", "removed 8.0" },
 				["requireSkill"] = FIRST_AID,
 			}),

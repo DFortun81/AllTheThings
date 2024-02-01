@@ -10,29 +10,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(487, {	-- The Oculus
-					crit(5459, { -- Drakos the Interrogator
+					crit(5459, {	-- Drakos the Interrogator
 						["_encounter"] = { 622, NORMAL_DUNGEON },
 					}),
-					crit(5460, { -- Mage-Lord Urom
+					crit(5460, {	-- Mage-Lord Urom
 						["_encounter"] = { 624, NORMAL_DUNGEON },
 					}),
-					crit(5461, { -- Varos Cloudstrider
+					crit(5461, {	-- Varos Cloudstrider
 						["_encounter"] = { 623, NORMAL_DUNGEON },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
-					crit(5630, { -- Ley-Guardian Eregos
+					crit(5630, {	-- Ley-Guardian Eregos
 						["_encounter"] = { 625, NORMAL_DUNGEON },
 					}),
 					-- #else
-					crit(5462, { -- Ley-Guardian Eregos
+					crit(5462, {	-- Ley-Guardian Eregos
 						["_encounter"] = { 625, NORMAL_DUNGEON },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17300, {	-- Defense Protocol Alpha: The Oculus
-					crit(57763, { -- Drakos the Interrogator
+					crit(57763, {	-- Drakos the Interrogator
 						["_encounter"] = { 622, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39399),	-- Helm of the Vast Legions
@@ -40,7 +40,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39408),	-- Leggings of Sapphiron
 						},
 					}),
-					crit(57765, { -- Varos Cloudstrider
+					crit(57765, {	-- Varos Cloudstrider
 						["_encounter"] = { 623, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39401),	-- Circle of Death
@@ -48,7 +48,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39405),	-- Helmet of the Inner Sanctum
 						},
 					}),
-					crit(57762, { -- Mage-Lord Urom
+					crit(57762, {	-- Mage-Lord Urom
 						["_encounter"] = { 624, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39403),	-- Helm of the Unsubmissive
@@ -56,7 +56,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39415),	-- Shroud of the Citadel
 						},
 					}),
-					crit(57764, { -- Ley-Guardian Eregos
+					crit(57764, {	-- Ley-Guardian Eregos
 						["_encounter"] = { 625, HEROIC_DUNGEON },
 						["groups"] = {
 							i(44658),	-- Chain of the Ancient Wyrm
@@ -78,28 +78,28 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18599, {	-- Defense Protocol Beta: The Oculus
-					crit(60606, { -- Drakos the Interrogator
+					crit(60606, {	-- Drakos the Interrogator
 						["_encounter"] = { 622, HEROIC_DUNGEON },
 						["groups"] = {
 							i(45997),	-- Gauntlets of the Wretched
 							i(45996),	-- Hoperender
 						},
 					}),
-					crit(60608, { -- Varos Cloudstrider
+					crit(60608, {	-- Varos Cloudstrider
 						["_encounter"] = { 623, HEROIC_DUNGEON },
 						["groups"] = {
 							i(46015),	-- Pendant of Endless Despair
 							i(46014),	-- Saronite Animus Cloak
 						},
 					}),
-					crit(60605, { -- Mage-Lord Urom
+					crit(60605, {	-- Mage-Lord Urom
 						["_encounter"] = { 624, HEROIC_DUNGEON },
 						["groups"] = {
 							i(46013),	-- Underworld Mantle
 							i(46011),	-- Shadowbite
 						},
 					}),
-					crit(60607, { -- Ley-Guardian Eregos
+					crit(60607, {	-- Ley-Guardian Eregos
 						["_encounter"] = { 625, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
@@ -110,25 +110,25 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19436, {	-- Defense Protocol Gamma: The Oculus
-					crit(63358, { -- Drakos the Interrogator
+					crit(63358, {	-- Drakos the Interrogator
 						["_encounter"] = { 622, HEROIC_DUNGEON },
 						["groups"] = {
 
 						},
 					}),
-					crit(63361, { -- Varos Cloudstrider
+					crit(63361, {	-- Varos Cloudstrider
 						["_encounter"] = { 623, HEROIC_DUNGEON },
 						["groups"] = {
 
 						},
 					}),
-					crit(63356, { -- Mage-Lord Urom
+					crit(63356, {	-- Mage-Lord Urom
 						["_encounter"] = { 624, HEROIC_DUNGEON },
 						["groups"] = {
 
 						},
 					}),
-					crit(63360, { -- Ley-Guardian Eregos
+					crit(63360, {	-- Ley-Guardian Eregos
 						["_encounter"] = { 625, HEROIC_DUNGEON },
 						["groups"] = {
 
@@ -137,16 +137,16 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				})),
 				-- #endif
 				ach(498,  {	-- Heroic: The Oculus
-					crit(6859, { -- Drakos the Interrogator
+					crit(6859, {	-- Drakos the Interrogator
 						["_encounter"] = { 622, HEROIC_DUNGEON },
 					}),
-					crit(6860, { -- Mage-Lord Urom
+					crit(6860, {	-- Mage-Lord Urom
 						["_encounter"] = { 624, HEROIC_DUNGEON },
 					}),
-					crit(6861, { -- Varos Cloudstrider
+					crit(6861, {	-- Varos Cloudstrider
 						["_encounter"] = { 623, HEROIC_DUNGEON },
 					}),
-					crit(5617, { -- Ley-Guardian Eregos
+					crit(5617, {	-- Ley-Guardian Eregos
 						["_encounter"] = { 625, HEROIC_DUNGEON },
 					}),
 				}),

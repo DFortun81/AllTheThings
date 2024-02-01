@@ -7,7 +7,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		ach(18977, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Draconically Epic
 			["sym"] = {{"achievement_criteria"}},
 		})),
-		ach(18366, { -- Draconically Epic - Replaced with new achievement number 18977
+		ach(18366, {	-- Draconically Epic - Replaced with new achievement number 18977
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_5 },
 		}),
 		ach(14797, {	-- Epic [Shadowlands]
@@ -35,7 +35,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		ach(18976, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Draconically Superior
 			["sym"] = {{"achievement_criteria"}},
 		})),
-		ach(18365, { -- Draconically Superior - Replaced with new achievement number 18976
+		ach(18365, {	-- Draconically Superior - Replaced with new achievement number 18976
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_5 },
 		}),
 		ach(14796, {	-- Superior [Shadowlands]
@@ -138,7 +138,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		ach(14783, {["timeline"] = { ADDED_9_0_1 }}),	-- Level 60
 		ach(14782, {["timeline"] = { ADDED_9_0_1 }}),	-- Level 50
 		ach(14884, {["timeline"] = { ADDED_9_0_1 }}),	-- Level 45
-		
+
 		applyclassicphase(WRATH_PHASE_ONE, ach(705, {	-- Master of Arms
 			["timeline"] = { "added 3.0.1", "removed 4.0.1" },
 		})),
@@ -170,7 +170,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { "added 5.0.4" },
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(1187, {	-- The Keymaster
-			["timeline"] = { "added 3.0.1", "deleted 4.0.3" },
+			["timeline"] = { "added 3.0.1", "removed 4.0.3" },
 		})),
 		ach(5755, {	-- Thirty Tabards
 			["timeline"] = { "added 4.1.0" },

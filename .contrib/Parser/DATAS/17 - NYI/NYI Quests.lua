@@ -3720,7 +3720,7 @@ root(ROOTS.NeverImplemented, {
 					["description"] = "Category: |cFFf09f26Warfronts|r",
 					["lvl"] = 50,
 					["g"] = {
-						i(150733, { -- Scroll of Town Portal
+						i(150733, {	-- Scroll of Town Portal
 							["b"] = 1,
 							["q"] = 1,
 							["spellID"] = 259731,
@@ -3750,17 +3750,17 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(158174, { -- Battleworn Armor Kit
+						i(158174, {	-- Battleworn Armor Kit
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 2,
 						}),
-						i(162143, { -- Potion of Restoration
+						i(162143, {	-- Potion of Restoration
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 2,
 						}),
-						i(158179, { -- Potion of Combat Acumen
+						i(158179, {	-- Potion of Combat Acumen
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 2,
@@ -3776,7 +3776,7 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(158326, { -- Makeshift Explosives
+						i(158326, {	-- Makeshift Explosives
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 2,
@@ -3789,7 +3789,7 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(158709, { -- Refurbished Shredder
+						i(158709, {	-- Refurbished Shredder
 							["b"] = 1,
 							["filterID"] = TOYS,
 							["q"] = 3,
@@ -3801,7 +3801,7 @@ root(ROOTS.NeverImplemented, {
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = 1,
 					["g"] = {
-						i(151557, { -- Champion's Strongbox
+						i(151557, {	-- Champion's Strongbox
 							["b"] = 1,
 							["q"] = 2,
 						}),
@@ -3812,22 +3812,22 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(159723, { -- Chunk of Boar Meat
+						i(159723, {	-- Chunk of Boar Meat
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
-						i(159726, { -- Baked Egg
+						i(159726, {	-- Baked Egg
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
-						i(159724, { -- Slice of Cheese
+						i(159724, {	-- Slice of Cheese
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
-						i(159727, { -- Flagon of Applebrew
+						i(159727, {	-- Flagon of Applebrew
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 1,
@@ -3849,7 +3849,7 @@ root(ROOTS.NeverImplemented, {
 					["races"] = HORDE_ONLY,
 					["repeatable"] = 1,
 					["g"] = {
-						i(151557, { -- Champion's Strongbox
+						i(151557, {	-- Champion's Strongbox
 							["b"] = 1,
 							["q"] = 2,
 						}),
@@ -3863,7 +3863,7 @@ root(ROOTS.NeverImplemented, {
 				q(51370, {
 					["lvl"] = 50,
 					["g"] = {
-						i(160054, { -- War-Torn Satchel of Cooperation
+						i(160054, {	-- War-Torn Satchel of Cooperation
 							["b"] = 1,
 							["q"] = 3,
 						}),
@@ -3874,7 +3874,7 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(160219, { -- Scroll of Town Portal
+						i(160219, {	-- Scroll of Town Portal
 							["b"] = 1,
 							["q"] = 1,
 							["spellID"] = 278212,
@@ -3911,17 +3911,17 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(162140, { -- Battleworn Armor Kit
+						i(162140, {	-- Battleworn Armor Kit
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 2,
 						}),
-						i(162142, { -- Potion of Restoration
+						i(162142, {	-- Potion of Restoration
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 2,
 						}),
-						i(162141, { -- Potion of Combat Acumen
+						i(162141, {	-- Potion of Combat Acumen
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 2,
@@ -3933,22 +3933,22 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(163988, { -- Chunk of Boar Meat
+						i(163988, {	-- Chunk of Boar Meat
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
-						i(163990, { -- Baked Egg
+						i(163990, {	-- Baked Egg
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
-						i(163989, { -- Slice of Cheese
+						i(163989, {	-- Slice of Cheese
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 1,
 						}),
-						i(163991, { -- Flagon of Applebrew
+						i(163991, {	-- Flagon of Applebrew
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 1,
@@ -3970,7 +3970,7 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(163219, { -- Repurposed Explosive Device
+						i(163219, {	-- Repurposed Explosive Device
 							["b"] = 1,
 							["filterID"] = CONSUMABLES,
 							["q"] = 2,
@@ -4958,7 +4958,7 @@ root(ROOTS.NeverImplemented, {
 					["description"] = "Area: |cFFf09f26Nazjatar|r",
 					["lvl"] = 50,
 					["g"] = {
-						i(169444, { -- Creature Compendium: Zanj'ir Naga
+						i(169444, {	-- Creature Compendium: Zanj'ir Naga
 							["q"] = 0,
 						}),
 					},
@@ -5406,7 +5406,7 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(170077, { -- Gleaming Ashmaul Strongbox
+						i(170077, {	-- Gleaming Ashmaul Strongbox
 							["b"] = 1,
 							["q"] = 4,
 						}),
@@ -5417,7 +5417,7 @@ root(ROOTS.NeverImplemented, {
 					["lvl"] = 60,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(170077, { -- Gleaming Ashmaul Strongbox
+						i(170077, {	-- Gleaming Ashmaul Strongbox
 							["b"] = 1,
 							["q"] = 4,
 						}),
@@ -5723,7 +5723,7 @@ root(ROOTS.NeverImplemented, {
 				q(54986, {
 					["lvl"] = 50,
 					["g"] = {
-						i(169154, { -- [PH] N'Zoth Cache
+						i(169154, {	-- [PH] N'Zoth Cache
 							["q"] = 4,
 						}),
 					},

@@ -506,7 +506,7 @@ root(ROOTS.Zones, {
 							i(114953),	-- Skettis Deceiver's Signet
 						},
 					}),
-					q(34883, { -- A Feast of Shadows
+					q(34883, {	-- A Feast of Shadows
 						["sourceQuests"] = { 34830 },	-- Behind the Veil
 						["coord"] = { 44.4, 24.0, SPIRES_OF_ARAK },
 						["provider"] = { "n", 80508 },	-- Talonpriest Zellek

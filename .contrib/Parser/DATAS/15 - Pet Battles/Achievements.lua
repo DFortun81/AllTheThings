@@ -285,10 +285,10 @@ root(ROOTS.PetBattles, petbattle({
 		ach(6619, {	-- Win Streak (25)
 			ach(6618),	-- On A Roll (10)
 		}),
-		ach(6558, { -- Local Pet Mauler (10)
+		ach(6558, {	-- Local Pet Mauler (10)
 			["sym"] = {{"partial_achievement",6560}},	-- World Pet Mauler (60)
 		}),
-		ach(6559, { -- Traveling Pet Mauler (30)
+		ach(6559, {	-- Traveling Pet Mauler (30)
 			["sym"] = {{"partial_achievement",6560}},	-- World Pet Mauler (60)
 		}),
 		ach(6560, {	-- World Pet Mauler (60)

@@ -29,25 +29,25 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2 }
 						i(201920),	-- Obeservational Report: Earthen
 					},
 				}),
-				o(384313, { -- Ancient Volume
+				o(384313, {	-- Ancient Volume
 					["description"] = "Third boss room to the right of the exit door on the shelf.",
 					["groups"] = {
 						i(201727),	-- To My Staunchest Allies
 					},
 				}),
-				o(384311, { -- Ancient Volume
+				o(384311, {	-- Ancient Volume
 					["description"] = "Before entering the Fourth boss room on top of some chests.",
 					["groups"] = {
 						i(201722),	-- Edicts of the Prime Designate, Volume 742
 					},
 				}),
-				o(384654, { -- Ancient Volume
+				o(384654, {	-- Ancient Volume
 					["description"] = "To the right on shelf in the circle room before final boss.",
 					["groups"] = {
 						i(201833),	-- Wreckage Analysis Report
 					},
 				}),
-				o(384312, { -- Ancient Volume
+				o(384312, {	-- Ancient Volume
 					["description"] = "In the room before final boss, left side under the middle bench.",
 					["groups"] = {
 						i(201726),	-- Progress Report: Uldorus

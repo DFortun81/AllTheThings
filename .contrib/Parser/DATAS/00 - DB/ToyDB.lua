@@ -1236,7 +1236,6 @@ i(202865);  -- Warcraft Rumble Toy: Whelp Egg
 --- NYI ---
 i(208880);	-- Brewhahat
 i(208229);	-- Honor of the Forsaken
-i(206347);	-- Mannequin Charm
 
 ------------------
 -- PATCH 10.2.0 --
@@ -1266,6 +1265,7 @@ i(212500);	-- Delicate Silk Parasol
 i(211864);	-- Exquisite Love Boat
 i(210974);	-- Eyes For You Only
 i(211946);	-- Hearthstone Game Table
+i(206347);	-- Mannequin Charm
 i(212337);	-- Stone of the Hearth
 i(211788);	-- Tess's Peacebloom
 i(212518);	-- Vial of Endless Draconic Scales

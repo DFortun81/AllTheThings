@@ -66,7 +66,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			q(58490, {	-- Deadly Reminder
-				n(161857, { -- Nirvaska the Summoner
+				n(161857, {	-- Nirvaska the Summoner
 					["description"] = "Only spawns when the |cFFFFD700Deadly Reminder|r world quest is active.",
 					["questID"] = 58629,
 					["isDaily"] = true,

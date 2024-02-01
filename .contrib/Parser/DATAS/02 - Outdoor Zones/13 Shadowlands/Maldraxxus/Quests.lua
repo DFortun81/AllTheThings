@@ -855,7 +855,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 58.5, 73.4, MALDRAXXUS },
 			}),
 		})),
-		n(QUESTS, sharedData({ ["isWorldQuest"] = true }, { -- shows up in /attwq without this even though there are no related collectibles
+		n(QUESTS, sharedData({ ["isWorldQuest"] = true }, {	-- shows up in /attwq without this even though there are no related collectibles
 			q(59827, {	-- Bet On Yourself (Devmorta)
 				["provider"] = { "n", 159830 },	-- Au'narim
 				["coord"] = { 53.7, 47.5, MALDRAXXUS },

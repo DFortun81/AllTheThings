@@ -219,23 +219,23 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				}),
 			}),
 			ach(13054, {	-- Sabertron Assemble
-				crit(41420, { -- Red Sabertron slain
+				crit(41420, {	-- Red Sabertron slain
 					["_quests"] = { 51947, 51956 },	-- Sabertron (RED) / Default Sabertron
 					["crs"] = { 139328 },
 				}),
-				crit(41421, { -- Yellow Sabertron slain
+				crit(41421, {	-- Yellow Sabertron slain
 					["_quests"] = { 51977 },	-- Sabertron (YELLOW)
 					["crs"] = { 139335 },
 				}),
-				crit(41422, { -- Orange Sabertron slain
+				crit(41422, {	-- Orange Sabertron slain
 					["_quests"] = { 51978 },	-- Sabertron (ORANGE)
 					["crs"] = { 139356 },
 				}),
-				crit(41423, { -- Green Sabertron slain
+				crit(41423, {	-- Green Sabertron slain
 					["_quests"] = { 51976 },	-- Sabertron (GREEN)
 					["crs"] = { 139336 },
 				}),
-				crit(41424, { -- Copper Sabertron slain
+				crit(41424, {	-- Copper Sabertron slain
 					["_quests"] = { 51974 },	-- Sabertron (COPPER)
 					["crs"] = { 139359 },
 				}),

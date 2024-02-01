@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } }, {
 	n(RARES, {
-		n(152415, { -- Alga the Eyeless
+		n(152415, {	-- Alga the Eyeless
 			["questID"] = 56279,
 			["isDaily"] = true,
 			["coord"] = { 52.4, 41.9, NAZJATAR },

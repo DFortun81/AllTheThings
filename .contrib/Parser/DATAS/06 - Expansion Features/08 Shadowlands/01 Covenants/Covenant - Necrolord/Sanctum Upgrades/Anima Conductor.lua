@@ -16,7 +16,7 @@ local GIEGER = n(162741, {	-- Gieger <Experimental Construct>
 		i(183754),	-- Stitchflesh's Design Notes
 	},
 });
-local SABRIEL = n(168147, { -- Sabriel the Bonecleaver
+local SABRIEL = n(168147, {	-- Sabriel the Bonecleaver
 	["description"] = "Can be killed and looted by any Covenant, but a member of the |cFF40bf40Necrolord Covenant|r must channel anima to the Theater of Pain and pick up the daily quest |cFF349cffSpoiling For A Fight|r to add Sabriel to the arena's rotation.",
 	["isDaily"] = true,
 	["questID"] = 58784,

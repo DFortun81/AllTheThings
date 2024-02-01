@@ -145,7 +145,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 	}),
 	tier(MOP_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
-			ach(18852, { -- Weaponsmithing, Reborn
+			ach(18852, {	-- Weaponsmithing, Reborn
 				crit(61556, {	-- Wicked Edge of the Planes, Reborn
 					["provider"] = { "i", 94579 },	-- Wicked Edge of the Planes, Reborn
 				}),

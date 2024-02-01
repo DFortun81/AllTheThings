@@ -309,7 +309,7 @@ root(ROOTS.ExpansionFeatures,
 						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["provider"] = { "n", 27856 },	-- Chromie
 						["g"] = {
-							i(151692, { -- Ensemble: Chronoscryer's Finery
+							i(151692, {	-- Ensemble: Chronoscryer's Finery
 								["ignoreBonus"] = true,
 								["g"] = {
 									i(151672),	-- Head
@@ -322,7 +322,7 @@ root(ROOTS.ExpansionFeatures,
 									i(151664),	-- Feet
 								},
 							}),
-							i(151693, { -- Ensemble: Riftscarred Vestments
+							i(151693, {	-- Ensemble: Riftscarred Vestments
 								["ignoreBonus"] = true,
 								["g"] = {
 									i(151674),	-- Head
@@ -335,7 +335,7 @@ root(ROOTS.ExpansionFeatures,
 									i(151666),	-- Feet
 								},
 							}),
-							i(151694, { -- Ensemble: Epoch Sentinel's Mail
+							i(151694, {	-- Ensemble: Epoch Sentinel's Mail
 								["ignoreBonus"] = true,
 								["g"] = {
 									i(151673),	-- Head
@@ -348,7 +348,7 @@ root(ROOTS.ExpansionFeatures,
 									i(151665),	-- Feet
 								},
 							}),
-							i(151695, { -- Ensemble: Timewarden's Plate
+							i(151695, {	-- Ensemble: Timewarden's Plate
 								["ignoreBonus"] = true,
 								["g"] = {
 									i(151671),	-- Head

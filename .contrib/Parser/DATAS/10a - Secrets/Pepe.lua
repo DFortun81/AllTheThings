@@ -48,88 +48,88 @@ root(ROOTS.Secrets, n(86470, {	-- Pepe
 				["timeline"] = { "added 7.0.3.22248" },
 				["groups"] = {
 					i(122293),	-- Trans-Dimensional Bird Whistle (TOY!)
-					crit(27625, { -- Gug'rokk (Bloodmaul Slag Mines)
+					crit(27625, {	-- Gug'rokk (Bloodmaul Slag Mines)
 						["_encounter"] = { 889, NORMAL_DUNGEON },
 					}),
-					crit(27626, { -- Skulloc, Son of Gruul (Iron Docks)
+					crit(27626, {	-- Skulloc, Son of Gruul (Iron Docks)
 						["_encounter"] = { 1238, NORMAL_DUNGEON },
 					}),
-					crit(27627, { -- Warlord Zaela (Upper Blackrock Spire)
+					crit(27627, {	-- Warlord Zaela (Upper Blackrock Spire)
 						["_encounter"] = { 1234, NORMAL_DUNGEON },
 					}),
-					crit(27628, { -- Yalnu (The Everbloom)
+					crit(27628, {	-- Yalnu (The Everbloom)
 						["_encounter"] = { 1210, NORMAL_DUNGEON },
 					}),
-					crit(27629, { -- Skylord Tovra (Grimrail Depot)
+					crit(27629, {	-- Skylord Tovra (Grimrail Depot)
 						["_encounter"] = { 1133, NORMAL_DUNGEON },
 					}),
-					crit(27630, { -- High Sage Viryx (Skyreach)
+					crit(27630, {	-- High Sage Viryx (Skyreach)
 						["_encounter"] = { 968, NORMAL_DUNGEON },
 					}),
-					crit(27631, { -- Ner'zhul (Shadowmoon Burial Grounds)
+					crit(27631, {	-- Ner'zhul (Shadowmoon Burial Grounds)
 						["_encounter"] = { 1160, NORMAL_DUNGEON },
 					}),
-					crit(27632, { -- Teron'gor (Auchindoun)
+					crit(27632, {	-- Teron'gor (Auchindoun)
 						["_encounter"] = { 1225, NORMAL_DUNGEON },
 					}),
-					crit(27635, { -- Kargath Bladefist (Highmaul)
+					crit(27635, {	-- Kargath Bladefist (Highmaul)
 						["_encounter"] = { 1128, NORMAL_RAID },
 					}),
-					crit(27636, { -- The Butcher (Highmaul)
+					crit(27636, {	-- The Butcher (Highmaul)
 						["_encounter"] = { 971, NORMAL_RAID },
 					}),
-					crit(27637, { -- Brackenspore (Highmaul)
+					crit(27637, {	-- Brackenspore (Highmaul)
 						["_encounter"] = { 1196, NORMAL_RAID },
 					}),
-					crit(27638, { -- Tectus, The Living Mountain (Highmaul)
+					crit(27638, {	-- Tectus, The Living Mountain (Highmaul)
 						["_encounter"] = { 1195, NORMAL_RAID },
 					}),
-					crit(27639, { -- Twin Ogron (Highmaul)
+					crit(27639, {	-- Twin Ogron (Highmaul)
 						["_encounter"] = { 1148, NORMAL_RAID },
 					}),
-					crit(27640, { -- Ko'ragh (Highmaul)
+					crit(27640, {	-- Ko'ragh (Highmaul)
 						["_encounter"] = { 1153, NORMAL_RAID },
 					}),
-					crit(27633, { -- Imperator Mar'gok (Highmaul)
+					crit(27633, {	-- Imperator Mar'gok (Highmaul)
 						["_encounter"] = { 1197, NORMAL_RAID },
 					}),
-					crit(27642, { -- Oregorger the Devourer (Blackrock Foundry)
+					crit(27642, {	-- Oregorger the Devourer (Blackrock Foundry)
 						["_encounter"] = { 1202, NORMAL_RAID },
 					}),
-					crit(27641, { -- Gruul (Blackrock Foundry)
+					crit(27641, {	-- Gruul (Blackrock Foundry)
 						["_encounter"] = { 1161, NORMAL_RAID },
 					}),
-					crit(27643, { -- Hans'gar & Franzok (Blackrock Foundry)
+					crit(27643, {	-- Hans'gar & Franzok (Blackrock Foundry)
 						["_encounter"] = { 1155, NORMAL_RAID },
 					}),
-					crit(27644, { -- Flamebender Ka'graz (Blackrock Foundry)
+					crit(27644, {	-- Flamebender Ka'graz (Blackrock Foundry)
 						["_encounter"] = { 1123, NORMAL_RAID },
 					}),
-					crit(27645, { -- Beastlord Darmac (Blackrock Foundry)
+					crit(27645, {	-- Beastlord Darmac (Blackrock Foundry)
 						["_encounter"] = { 1122, NORMAL_RAID },
 					}),
-					crit(27646, { -- Operator Thogar (Blackrock Foundry)
+					crit(27646, {	-- Operator Thogar (Blackrock Foundry)
 						["_encounter"] = { 1147, NORMAL_RAID },
 					}),
-					crit(27647, { -- Blast Furnace (Blackrock Foundry)
+					crit(27647, {	-- Blast Furnace (Blackrock Foundry)
 						["_encounter"] = { 1154, NORMAL_RAID },
 					}),
-					crit(27648, { -- Kromog, Legend of the Mountain (Blackrock Foundry)
+					crit(27648, {	-- Kromog, Legend of the Mountain (Blackrock Foundry)
 						["_encounter"] = { 1162, NORMAL_RAID },
 					}),
-					crit(27649, { -- The Iron Maidens (Blackrock Foundry)
+					crit(27649, {	-- The Iron Maidens (Blackrock Foundry)
 						["_encounter"] = { 1203, NORMAL_RAID },
 					}),
-					crit(27634, { -- Blackhand (Blackrock Foundry)
+					crit(27634, {	-- Blackhand (Blackrock Foundry)
 						["_encounter"] = { 959, NORMAL_RAID },
 					}),
-					crit(27651, { -- Tarlna the Ageless (World Boss - Gorgrond)
+					crit(27651, {	-- Tarlna the Ageless (World Boss - Gorgrond)
 						["_npcs"] = { 81535 },	-- Tarlna the Ageless
 					}),
-					crit(27652, { -- Drov the Ruiner (World Boss - Gorgrond)
+					crit(27652, {	-- Drov the Ruiner (World Boss - Gorgrond)
 						["_npcs"] = { 81252 },	-- Drov the Ruiner
 					}),
-					crit(27650, { -- Rukhmar (World Boss - Spires of Arak)
+					crit(27650, {	-- Rukhmar (World Boss - Spires of Arak)
 						["_npcs"] = { 83746 },	-- Rukhmar
 					}),
 				},
@@ -219,19 +219,19 @@ root(ROOTS.Secrets, n(86470, {	-- Pepe
 			["customCollect"] = "SL_COV_NFA",
 		}),
 		i(213181, {	-- A Tiny Dragon Goblet
-			-- ["provider"] = { "o",  },	-- 
+			-- ["provider"] = { "o",  },	--
 			["questID"] = 79547,
 			["coord"] = { 50.5, 52.9, VALDRAKKEN },
 			["timeline"] = { ADDED_10_2_5 },
 		}),
 		i(213202, {	-- A Tiny Explorer's Hat
-			-- ["provider"] = { "o",  },	-- 
+			-- ["provider"] = { "o",  },	--
 			["questID"] = 79550,
 			["coord"] = { 47.3, 82.7, THE_WAKING_SHORES },
 			["timeline"] = { ADDED_10_2_5 },
 		}),
 		i(213207, {	-- A Tiny Ear Warmer
-			-- ["provider"] = { "o",  },	-- 
+			-- ["provider"] = { "o",  },	--
 			["questID"] = 79551,
 			["coord"] = { 12.89, 48.59, THE_AZURE_SPAN },
 			["timeline"] = { ADDED_10_2_5 },

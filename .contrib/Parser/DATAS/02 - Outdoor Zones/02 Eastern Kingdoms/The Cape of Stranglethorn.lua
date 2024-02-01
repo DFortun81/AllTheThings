@@ -76,11 +76,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					405,	-- Tree Python (PET!)
 				}},
 				["groups"] = {
-					pet(411, { -- Baby Ape (PET!)
+					pet(411, {	-- Baby Ape (PET!)
 						["description"] = "Can be found on Jaguero Isle in The Cape of Stranglethorn. They only spawn when it's raining on the island, and this area has its own unique weather pattern. Although it might be raining in Stranglethorn, it may not be raining on the Isle.",
 					}),
 					pet(401),	-- Strand Crab (PET!)
-					pet(410, { -- Wharf Rat (PET!)
+					pet(410, {	-- Wharf Rat (PET!)
 						["description"] = "Can be found relaibly as secondary pets alongside Baby Apes, but also found in Booty Bay.",
 					}),
 				},

@@ -4,7 +4,7 @@
 local GRATEFUL = currency(GRATEFUL);
 local REGURGITATED_KYRIAN_WINGS = i(182749);	-- Regurgitated Kyrian Wings
 local AEGIS_OF_SALVATION = i(184365);	-- Aegis of Salvation
-local WINGFLAYTER_THE_CRUEL = n(167078, { -- Wingflayer the Cruel
+local WINGFLAYTER_THE_CRUEL = n(167078, {	-- Wingflayer the Cruel
 	["description"] = " Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Temple of Courage can click the bell.",
 	["coord"] = { 41.8, 55.4, BASTION },
 	["questID"] = 60314,
@@ -13,7 +13,7 @@ local WINGFLAYTER_THE_CRUEL = n(167078, { -- Wingflayer the Cruel
 		REGURGITATED_KYRIAN_WINGS,
 	},
 });
-local ORSTUS_AND_SOTIROS = n(156340, { -- Larionrider Orstus
+local ORSTUS_AND_SOTIROS = n(156340, {	-- Larionrider Orstus
 	["description"] = "Take the anima gateway and click the Black Bell.  Only a member of the |cFF516bfeKyrian Covenant|r who has channeled anima to Citadel of Loyalty can click the bell.",
 	["crs"] = { 156339 },	-- Eliminator Sotiros
 	["coord"] = { 24.5, 22.7, BASTION },

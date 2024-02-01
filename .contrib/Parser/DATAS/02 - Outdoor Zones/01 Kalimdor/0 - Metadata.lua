@@ -211,7 +211,7 @@ root(ROOTS.Zones, {
 					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. KALIMDOR .. [[); end]],
 					-- #endif
-					["timeline"] = { "deleted 4.0.3" },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 				}),
 				petbattle(ach(6602,  {	-- Taming Kalimdor

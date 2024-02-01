@@ -1351,7 +1351,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}},
 				["groups"] = {
 					pet(374),	-- Black Lamb (PET!)
-					pet(459, { -- Cat (PET!)
+					pet(459, {	-- Cat (PET!)
 						["description"] = "Found commonly around the small farmhouse SW of Northshire and on Sunstrider Isle.",
 					}),
 					pet(447),	-- Fawn (PET!)

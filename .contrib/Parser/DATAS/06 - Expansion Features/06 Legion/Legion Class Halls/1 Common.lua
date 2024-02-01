@@ -550,10 +550,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 					}),
-					mission(1298, { -- The Emerald Nightmare: Il'gynoth
+					mission(1298, {	-- The Emerald Nightmare: Il'gynoth
 						["groups"] = {
 							i(139480), -- Corrupted Egg Fragment [Raid Finder]
-							q(43546, { -- Il'gynoth [Raid Finder]
+							q(43546, {	-- Il'gynoth [Raid Finder]
 								["repeatable"] = true,
 								["provider"] = { "i", 139480 }, -- Corrupted Egg Fragment [Raid Finder]
 								["u"] = REMOVED_FROM_GAME,
@@ -562,7 +562,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(139481), -- Corrupted Egg Fragment (Normal)
-							q(43547, { -- Il'gynoth (Normal)
+							q(43547, {	-- Il'gynoth (Normal)
 								["repeatable"] = true,
 								["provider"] = { "i", 139481 }, -- Corrupted Egg Fragment (Normal)
 								["u"] = REMOVED_FROM_GAME,
@@ -571,7 +571,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(139482), -- Corrupted Egg Fragment (Heroic)
-							q(43548, { -- Il'gynoth (Heroic)
+							q(43548, {	-- Il'gynoth (Heroic)
 								["repeatable"] = true,
 								["provider"] = { "i", 139482 }, -- Corrupted Egg Fragment (Heroic)
 								["u"] = REMOVED_FROM_GAME,
@@ -580,7 +580,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(139483), -- Corrupted Egg Fragment (Mythic)
-							q(43549, { -- Il'gynoth (Mythic)
+							q(43549, {	-- Il'gynoth (Mythic)
 								["repeatable"] = true,
 								["provider"] = { "i", 139483 }, -- Corrupted Egg Fragment (Mythic)
 								["u"] = REMOVED_FROM_GAME,
@@ -596,10 +596,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					mission(1300, { -- The Emerald Nightmare: Fall of Cenarius
+					mission(1300, {	-- The Emerald Nightmare: Fall of Cenarius
 						["groups"] = {
 							i(140163), -- Tainted Moonglade Leaf [Raid Finder]
-							q(43902, { -- Fall of Cenarius [Raid Finder]
+							q(43902, {	-- Fall of Cenarius [Raid Finder]
 								["repeatable"] = true,
 								["provider"] = { "i", 140163 }, -- Tainted Moonglade Leaf [Raid Finder]
 								["u"] = REMOVED_FROM_GAME,
@@ -608,7 +608,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140165), -- Tainted Moonglade Leaf (Normal)
-							q(43904, { -- Fall of Cenarius (Normal)
+							q(43904, {	-- Fall of Cenarius (Normal)
 								["repeatable"] = true,
 								["provider"] = { "i", 140165 }, -- Tainted Moonglade Leaf (Normal)
 								["u"] = REMOVED_FROM_GAME,
@@ -617,7 +617,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140167), -- Tainted Moonglade Leaf (Heroic)
-							q(43906, { -- Fall of Cenarius (Heroic)
+							q(43906, {	-- Fall of Cenarius (Heroic)
 								["repeatable"] = true,
 								["provider"] = { "i", 140167 }, -- Tainted Moonglade Leaf (Heroic)
 								["u"] = REMOVED_FROM_GAME,
@@ -626,7 +626,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140169), -- Tainted Moonglade Leaf (Mythic)
-							q(43908, { -- Fall of Cenarius (Mythic)
+							q(43908, {	-- Fall of Cenarius (Mythic)
 								["repeatable"] = true,
 								["provider"] = { "i", 140169 }, -- Tainted Moonglade Leaf (Mythic)
 								["u"] = REMOVED_FROM_GAME,
@@ -642,10 +642,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					mission(1302, { -- The Emerald Nightmare: Xavius
+					mission(1302, {	-- The Emerald Nightmare: Xavius
 						["groups"] = {
 							i(140164), -- Vial of Swirling Shadow [Raid Finder]
-							q(43903, { -- Xavius [Raid Finder]
+							q(43903, {	-- Xavius [Raid Finder]
 								["repeatable"] = true,
 								["provider"] = { "i", 140164 }, -- Vial of Swirling Shadow [Raid Finder]
 								["u"] = REMOVED_FROM_GAME,
@@ -654,7 +654,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140166), -- Vial of Swirling Shadow (Normal)
-							q(43905, { -- Xavius (Normal)
+							q(43905, {	-- Xavius (Normal)
 								["repeatable"] = true,
 								["provider"] = { "i", 140166 }, -- Vial of Swirling Shadow (Normal)
 								["u"] = REMOVED_FROM_GAME,
@@ -663,7 +663,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140168), -- Vial of Swirling Shadow (Heroic)
-							q(43907, { -- Xavius (Heroic)
+							q(43907, {	-- Xavius (Heroic)
 								["repeatable"] = true,
 								["provider"] = { "i", 140168 }, -- Vial of Swirling Shadow (Heroic)
 								["u"] = REMOVED_FROM_GAME,
@@ -672,7 +672,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140170), -- Vial of Swirling Shadow (Mythic)
-							q(43909, { -- Xavius (Mythic)
+							q(43909, {	-- Xavius (Mythic)
 								["repeatable"] = true,
 								["provider"] = { "i", 140170 }, -- Vial of Swirling Shadow (Mythic)
 								["u"] = REMOVED_FROM_GAME,
@@ -688,10 +688,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					mission(1303, { -- The Nighthold: Vaults
+					mission(1303, {	-- The Nighthold: Vaults
 						["groups"] = {
 							i(140147), -- Pulsauron Bindings [Raid Finder]
-							q(43882, { -- Vaults [Raid Finder]
+							q(43882, {	-- Vaults [Raid Finder]
 								["repeatable"] = true,
 								["provider"] = { "i", 140147 }, -- Pulsauron Bindings [Raid Finder]
 								["u"] = REMOVED_FROM_GAME,
@@ -700,7 +700,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140149), -- Pulsauron Bindings (Normal)
-							q(43889, { -- Vaults (Normal)
+							q(43889, {	-- Vaults (Normal)
 								["repeatable"] = true,
 								["provider"] = { "i", 140149 }, -- Pulsauron Bindings (Normal)
 								["u"] = REMOVED_FROM_GAME,
@@ -709,7 +709,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140151), -- Pulsauron Bindings (Heroic)
-							q(43890, { -- Vaults (Heroic)
+							q(43890, {	-- Vaults (Heroic)
 								["repeatable"] = true,
 								["provider"] = { "i", 140151 }, -- Pulsauron Bindings (Heroic)
 								["u"] = REMOVED_FROM_GAME,
@@ -718,7 +718,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140153), -- Pulsauron Bindings (Mythic)
-							q(43891, { -- Vaults (Mythic)
+							q(43891, {	-- Vaults (Mythic)
 								["repeatable"] = true,
 								["provider"] = { "i", 140153 }, -- Pulsauron Bindings (Mythic)
 								["u"] = REMOVED_FROM_GAME,
@@ -734,10 +734,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					mission(1304, { -- The Nighthold: High Botanist Tel'arn
+					mission(1304, {	-- The Nighthold: High Botanist Tel'arn
 						["groups"] = {
 							i(140171), -- Glowing Lily [Raid Finder]
-							q(43910, { -- High Botanist Tel'arn [Raid Finder]
+							q(43910, {	-- High Botanist Tel'arn [Raid Finder]
 								["repeatable"] = true,
 								["provider"] = { "i", 140171 }, -- Glowing Lily [Raid Finder]
 								["u"] = REMOVED_FROM_GAME,
@@ -746,7 +746,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140174), -- Glowing Lily (Normal)
-							q(43913, { -- High Botanist Tel'arn (Normal)
+							q(43913, {	-- High Botanist Tel'arn (Normal)
 								["repeatable"] = true,
 								["provider"] = { "i", 140174 }, -- Glowing Lily (Normal)
 								["u"] = REMOVED_FROM_GAME,
@@ -755,7 +755,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140178), -- Glowing Lily (Heroic)
-							q(43916, { -- High Botanist Tel'arn (Heroic)
+							q(43916, {	-- High Botanist Tel'arn (Heroic)
 								["repeatable"] = true,
 								["provider"] = { "i", 140178 }, -- Glowing Lily (Heroic)
 								["u"] = REMOVED_FROM_GAME,
@@ -764,7 +764,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140182), -- Glowing Lily (Mythic)
-							q(43920, { -- High Botanist Tel'arn (Mythic)
+							q(43920, {	-- High Botanist Tel'arn (Mythic)
 								["repeatable"] = true,
 								["provider"] = { "i", 140182 }, -- Glowing Lily (Mythic)
 								["u"] = REMOVED_FROM_GAME,
@@ -780,10 +780,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					mission(1305, { -- The Nighthold: Elisande
+					mission(1305, {	-- The Nighthold: Elisande
 						["groups"] = {
 							i(140172), -- Ancient Nightborne Tome [Raid Finder]
-							q(43911, { -- Elisande [Raid Finder]
+							q(43911, {	-- Elisande [Raid Finder]
 								["repeatable"] = true,
 								["provider"] = { "i", 140172 }, -- Ancient Nightborne Tome [Raid Finder]
 								["u"] = REMOVED_FROM_GAME,
@@ -792,7 +792,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140175), -- Ancient Nightborne Tome (Normal)
-							q(43914, { -- Elisande (Normal)
+							q(43914, {	-- Elisande (Normal)
 								["repeatable"] = true,
 								["provider"] = { "i", 140175 }, -- Ancient Nightborne Tome (Normal)
 								["u"] = REMOVED_FROM_GAME,
@@ -801,7 +801,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140472), -- Ancient Nightborne Tome (Heroic)
-							q(43917, { -- Elisande (Heroic)
+							q(43917, {	-- Elisande (Heroic)
 								["repeatable"] = true,
 								["provider"] = { "i", 140472 }, -- Ancient Nightborne Tome (Heroic)
 								["u"] = REMOVED_FROM_GAME,
@@ -810,7 +810,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140182), -- Ancient Nightborne Tome (Mythic)
-							q(43920, { -- Elisande (Mythic)
+							q(43920, {	-- Elisande (Mythic)
 								["repeatable"] = true,
 								["provider"] = { "i", 140182 }, -- Ancient Nightborne Tome (Mythic)
 								["u"] = REMOVED_FROM_GAME,
@@ -826,10 +826,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					mission(1306, { -- The Nighthold: Gul'dan
+					mission(1306, {	-- The Nighthold: Gul'dan
 						["groups"] = {
 							i(140173), -- Shred of Tattered Robe [Raid Finder]
-							q(43912, { -- Gul'dan [Raid Finder]
+							q(43912, {	-- Gul'dan [Raid Finder]
 								["repeatable"] = true,
 								["provider"] = { "i", 140173 }, -- Shred of Tattered Robe [Raid Finder]
 								["u"] = REMOVED_FROM_GAME,
@@ -838,7 +838,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140177), -- Shred of Tattered Robe (Normal)
-							q(43915, { -- Gul'dan (Normal)
+							q(43915, {	-- Gul'dan (Normal)
 								["repeatable"] = true,
 								["provider"] = { "i", 140177 }, -- Shred of Tattered Robe (Normal)
 								["u"] = REMOVED_FROM_GAME,
@@ -847,7 +847,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140180), -- Shred of Tattered Robe (Heroic)
-							q(43918, { -- Gul'dan (Heroic)
+							q(43918, {	-- Gul'dan (Heroic)
 								["repeatable"] = true,
 								["provider"] = { "i", 140180 }, -- Shred of Tattered Robe (Heroic)
 								["u"] = REMOVED_FROM_GAME,
@@ -856,7 +856,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(140183), -- Shred of Tattered Robe (Mythic)
-							q(43921, { -- Gul'dan (Mythic)
+							q(43921, {	-- Gul'dan (Mythic)
 								["repeatable"] = true,
 								["provider"] = { "i", 140183 }, -- Shred of Tattered Robe (Mythic)
 								["u"] = REMOVED_FROM_GAME,
@@ -872,10 +872,10 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 							}),
 						},
 					}),
-					mission(1680, { -- Tomb of Sargeras: The Tomb's Mistress [Mistress]
+					mission(1680, {	-- Tomb of Sargeras: The Tomb's Mistress [Mistress]
 						["groups"] = {
 							i(147497), -- Encrusted Naga Scale [Raid Finder]
-							q(47114, { -- The Tomb's Mistress [Raid Finder]
+							q(47114, {	-- The Tomb's Mistress [Raid Finder]
 								["repeatable"] = true,
 								["provider"] = { "i", 147497 }, -- Encrusted Naga Scale [Raid Finder]
 								["g"] = {
@@ -883,7 +883,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(147498), -- Encrusted Naga Scale (Normal)
-							q(47115, { -- The Tomb's Mistress (Normal)
+							q(47115, {	-- The Tomb's Mistress (Normal)
 								["repeatable"] = true,
 								["provider"] = { "i", 147498 }, -- Encrusted Naga Scale (Normal)
 								["g"] = {
@@ -891,7 +891,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(147499), -- Encrusted Naga Scale (Heroic)
-							q(47116, { -- The Tomb's Mistress (Heroic)
+							q(47116, {	-- The Tomb's Mistress (Heroic)
 								["repeatable"] = true,
 								["provider"] = { "i", 147499 }, -- Encrusted Naga Scale (Heroic)
 								["g"] = {
@@ -899,7 +899,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(147500), -- Encrusted Naga Scale (Mythic)
-							q(47117, { -- The Tomb's Mistress (Mythic)
+							q(47117, {	-- The Tomb's Mistress (Mythic)
 								["repeatable"] = true,
 								["provider"] = { "i", 147500 }, -- Encrusted Naga Scale (Mythic)
 								["g"] = {
@@ -907,17 +907,17 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
-							i(147518, { -- Cache of Fel Treasures (Raid Finder)
+							i(147518, {	-- Cache of Fel Treasures (Raid Finder)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Normal Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
 								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 						},
 					}),
-					mission(1681, { -- Tomb of Sargeras: Free The Tormented [Desolate Host]
+					mission(1681, {	-- Tomb of Sargeras: Free The Tormented [Desolate Host]
 						["groups"] = {
 							i(147501), -- Worshipper's Scrawlings [Raid Finder]
-							q(47118, { -- Free The Tormented [Raid Finder]
+							q(47118, {	-- Free The Tormented [Raid Finder]
 								["repeatable"] = true,
 								["provider"] = { "i", 147501 }, -- Worshipper's Scrawlings [Raid Finder]
 								["g"] = {
@@ -925,7 +925,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(147502), -- Worshipper's Scrawlings (Normal)
-							q(47119, { -- Free The Tormented (Normal)
+							q(47119, {	-- Free The Tormented (Normal)
 								["repeatable"] = true,
 								["provider"] = { "i", 147502 }, -- Worshipper's Scrawlings (Normal)
 								["g"] = {
@@ -933,7 +933,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(147503), -- Worshipper's Scrawlings (Heroic)
-							q(47120, { -- Free The Tormented (Heroic)
+							q(47120, {	-- Free The Tormented (Heroic)
 								["repeatable"] = true,
 								["provider"] = { "i", 147503 }, -- Worshipper's Scrawlings (Heroic)
 								["g"] = {
@@ -941,7 +941,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(147504), -- Worshipper's Scrawlings (Mythic)
-							q(47121, { -- Free The Tormented (Mythic)
+							q(47121, {	-- Free The Tormented (Mythic)
 								["repeatable"] = true,
 								["provider"] = { "i", 147504 }, -- Worshipper's Scrawlings (Mythic)
 								["g"] = {
@@ -949,17 +949,17 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
-							i(147519, { -- Cache of Fel Treasures (Normal)
+							i(147519, {	-- Cache of Fel Treasures (Normal)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
 								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 						},
 					}),
-					mission(1682, { -- Tomb of Sargeras: The Fallen Avatar
+					mission(1682, {	-- Tomb of Sargeras: The Fallen Avatar
 						["groups"] = {
 							i(147505), -- Wailing Soul [Raid Finder]
-							q(47122, { -- The Fallen Avatar [Raid Finder]
+							q(47122, {	-- The Fallen Avatar [Raid Finder]
 								["repeatable"] = true,
 								["provider"] = { "i", 147505 }, -- Wailing Soul [Raid Finder]
 								["g"] = {
@@ -967,7 +967,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(147506), -- Wailing Soul (Normal)
-							q(47123, { -- The Fallen Avatar (Normal)
+							q(47123, {	-- The Fallen Avatar (Normal)
 								["repeatable"] = true,
 								["provider"] = { "i", 147506 }, -- Wailing Soul (Normal)
 								["g"] = {
@@ -975,7 +975,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(147507), -- Wailing Soul (Heroic)
-							q(47124, { -- The Fallen Avatar (Heroic)
+							q(47124, {	-- The Fallen Avatar (Heroic)
 								["repeatable"] = true,
 								["provider"] = { "i", 147507 }, -- Wailing Soul (Heroic)
 								["g"] = {
@@ -983,7 +983,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(147508), -- Wailing Soul (Mythic)
-							q(47125, { -- The Fallen Avatar (Mythic)
+							q(47125, {	-- The Fallen Avatar (Mythic)
 								["repeatable"] = true,
 								["provider"] = { "i", 147508 }, -- Wailing Soul (Mythic)
 								["g"] = {
@@ -991,17 +991,17 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
-							i(147520, { -- Cache of Fel Treasures (Heroic)
+							i(147520, {	-- Cache of Fel Treasures (Heroic)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
 								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 						},
 					}),
-					mission(1683, { -- Tomb of Sargeras: The Deceiver
+					mission(1683, {	-- Tomb of Sargeras: The Deceiver
 						["groups"] = {
 							i(147509), -- Seal of the Deceiver [Raid Finder]
-							q(47126, { -- The Deceiver [Raid Finder]
+							q(47126, {	-- The Deceiver [Raid Finder]
 								["repeatable"] = true,
 								["provider"] = { "i", 147509 }, -- Seal of the Deceiver [Raid Finder]
 								["g"] = {
@@ -1009,7 +1009,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(147510), -- Seal of the Deceiver (Normal)
-							q(47127, { -- The Deceiver (Normal)
+							q(47127, {	-- The Deceiver (Normal)
 								["repeatable"] = true,
 								["provider"] = { "i", 147510 }, -- Seal of the Deceiver (Normal)
 								["g"] = {
@@ -1017,7 +1017,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(147511), -- Seal of the Deceiver (Heroic)
-							q(47128, { -- The Deceiver (Heroic)
+							q(47128, {	-- The Deceiver (Heroic)
 								["repeatable"] = true,
 								["provider"] = { "i", 147511 }, -- Seal of the Deceiver (Heroic)
 								["g"] = {
@@ -1025,7 +1025,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							i(147512), -- Seal of the Deceiver (Mythic)
-							q(47129, { -- The Deceiver (Mythic)
+							q(47129, {	-- The Deceiver (Mythic)
 								["repeatable"] = true,
 								["provider"] = { "i", 147512 }, -- Seal of the Deceiver (Mythic)
 								["g"] = {
@@ -1033,7 +1033,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, {
 								},
 							}),
 							-- Every Mission can return any Cache, but they all return the same name ingame, so its cleaner to list them under the mission. Description also clarifies how the boxes work
-							i(147521, { -- Cache of Fel Treasures (Mythic)
+							i(147521, {	-- Cache of Fel Treasures (Mythic)
 								["description"] = "This cache appears every 2 weeks as a class hall mission reward. The reward of the cache scales with how many bosses you've killed in a difficulty. Killing 13 Raid Finder Bosses upgrades the cache quality to Normal the next time the mission appears, same with Heroic & Mythic.",
 								["skipFill"] = true,
 								["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},

@@ -2369,7 +2369,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						10043,	-- Ribbly's Crony
 					},
 				}),
-				i(16049, {  -- Schematic: Dark Iron Bomb
+				i(16049, {	 -- Schematic: Dark Iron Bomb
 					["cr"] = 8920,   -- Weapon Technician
 				}),
 				i(16048, {	-- Schematic: Dark Iron Rifle

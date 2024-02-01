@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					["questID"] = 55951,
 					["coord"] = { 48.5, 87.4, NAZJATAR },
 				}),
-				o(326405, { -- Arcane Chest
+				o(326405, {	-- Arcane Chest
 					["questID"] = 55938,
 					["coord"] = { 85.3, 38.6, NAZJATAR },
 				}),

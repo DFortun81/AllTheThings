@@ -5094,7 +5094,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 					i(187604, {	-- Broken Isles Enchantment Delivery
 						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
 					}),
-					i(187599, { -- Broken Isles Herb Delivery
+					i(187599, {	-- Broken Isles Herb Delivery
 						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
 					}),
 					i(141018, {	-- Sargerei Blood Vessel

@@ -175,7 +175,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							134058,	-- Galecaller Faye
 						},
 						["g"] = {
-							i(162598, { -- Ensemble: Vestments of the Tidesages
+							i(162598, {	-- Ensemble: Vestments of the Tidesages
 								["ignoreBonus"] = true,
 								["sym"] = {{"fill"}},
 							}),
@@ -194,7 +194,7 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 						},
 						["g"] = {
 							ach(12601),	-- The Void Lies Sleeping
-							i(162598, { -- Ensemble: Vestments of the Tidesages
+							i(162598, {	-- Ensemble: Vestments of the Tidesages
 								["ignoreBonus"] = true,
 								["g"] = {
 									i(162592),	-- Hood of the Tidesages

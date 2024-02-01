@@ -703,7 +703,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sym"] = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 						}),
 						-- #endif
-						i(39202, { -- Rusted Pitchfork
+						i(39202, {	-- Rusted Pitchfork
 							["coords"] = {
 								{ 56.8, 49.8, EASTERN_PLAGUELANDS },
 								{ 59.6, 31.2, EASTERN_PLAGUELANDS },
@@ -717,7 +717,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								28557,	-- Scarlet Peasant
 							},
 						}),
-						i(39205, { -- Sole-Less Boots
+						i(39205, {	-- Sole-Less Boots
 							["coords"] = {
 								{ 56.8, 49.8, EASTERN_PLAGUELANDS },
 								{ 59.6, 31.2, EASTERN_PLAGUELANDS },

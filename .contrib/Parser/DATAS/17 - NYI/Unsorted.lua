@@ -560,8 +560,11 @@ root(ROOTS.Unsorted, {
 			q(64975),	--
 		}),
 	}),
-	--[[tier(DF_TIER, {
+	tier(DF_TIER, {
 		tier(DF_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+			n(ACHIEVEMENTS, {
+				ach(19031),	-- Fyrn [Promotion]
+			}),
 			filter(BATTLE_PETS, {
 				i(211432),	-- Teele (PET!) [Trading Post]
 				i(212606),	-- Sarge (PET!) [Hearthstone]
@@ -571,7 +574,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(COSMETIC, {
 				i(211926),	-- Riders of Azeroth Tabard [Cup]
-				i(211928),	-- Ruby Riders of Azeroth Tabard [Cup]
 
 				------ Skyborn Blades ------
 				i(212577),	-- Arsenal: Skyborn Blades
@@ -649,7 +651,6 @@ root(ROOTS.Unsorted, {
 				------ Single Pieces ------
 				i(190859),	-- Apprentice's Twisted Crook
 				i(213078),	-- Assassin's Bandolier
-				i(212369),	-- Battlefield Lover's Bow
 				i(212576),	-- Blackrock Executioner
 				i(213162),	-- Blessed Bow of the Windseeker
 				i(212789),	-- Champion's Jade Cleaver
@@ -658,7 +659,6 @@ root(ROOTS.Unsorted, {
 				i(212990),	-- Classic Violet Tabard
 				i(212790),	-- Codex of Classic Conjurations
 				i(212530),	-- Corroded Augari Defender
-				i(212545),	-- Crown of the White Rose
 				i(190805),	-- Deforester's Hatchet
 				i(212574),	-- Dueler's Aquatic Shoulder Cape
 				i(212627),	-- Dueler's Azure Shoulder Cape
@@ -679,7 +679,6 @@ root(ROOTS.Unsorted, {
 				i(212616),	-- Dueler's Violet Shoulder Cape
 				i(190819),	-- Emerald Guardian's Longbow
 				i(213073),	-- Faded Floral Staff
-				i(212382),	-- Flourescent Splitblade
 				i(212542),	-- Flowing Aquatic Gloves
 				i(190857),	-- Gilded Emerald Longcloak
 				i(212787),	-- Gloves of the Violet Gala
@@ -691,8 +690,6 @@ root(ROOTS.Unsorted, {
 				i(213077),	-- Lavender Bow-quet
 				i(213065),	-- Lavish Floral Edge
 				i(213068),	-- Lavish Floral Stalk
-				i(212375),	-- Lovely Rosy Longbow
-				i(212381),	-- Love's Bulwark
 				i(213076),	-- Orchid Bow-quet
 				i(213062),	-- Paradise's Golden Axe
 				i(213063),	-- Paradise's Ruby Axe
@@ -723,8 +720,6 @@ root(ROOTS.Unsorted, {
 				i(213071),	-- Sunny Floral Staff
 				i(213161),	-- Titan Thunderbow
 				i(210855),	-- Trader's Brick Sarong
-				i(212378),	-- Twilight Witch's Gothic Scepter
-				i(212380),	-- Twilight Witch's Gothic Stave
 				i(213067),	-- Violet Floral Edge
 				i(190873),	-- Warhammer of Hubris
 				i(212613),	-- Wings of the Amber Monarch
@@ -3855,5 +3850,5 @@ root(ROOTS.Unsorted, {
 				i(192094),	-- Winter Veil Gift
 			}),
 		})),
-	}),--]]
+	}),
 });

@@ -102,7 +102,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							},
 							["maps"] = { 714 },	-- Niskara (Scenario Map)
 							["g"] = {
-								i(128402, { -- Maw of the Damned
+								i(128402, {	-- Maw of the Damned
 									artifact(107),	-- Maw of the Damned
 								}),
 							},
@@ -174,7 +174,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							["provider"] = { "n", 100812 },	-- Revil Kost
 							["coord"] = { 49.4, 74.6, DEADWIND_PASS },
 							["g"] = {
-								i(128403, { -- Apocalypse
+								i(128403, {	-- Apocalypse
 									artifact(110),	-- Standard
 								}),
 							},
@@ -185,7 +185,7 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							["provider"] = { "n", 100812 },	-- Revil Kost
 							["coord"] = { 49.4, 74.6, DEADWIND_PASS },
 							["g"] = {
-								i(128403, { -- Apocalypse
+								i(128403, {	-- Apocalypse
 									artifact(110),	-- Standard
 								}),
 							},

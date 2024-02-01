@@ -19,116 +19,116 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 				bubbleDown({ ["races"] = ALLIANCE_ONLY }, ach(4296, {	-- Trial of the Champion (A)
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed the criteria for this achievement in Wrath Classic.
-					crit(11420, { -- Mokra the Skullcrusher
+					crit(11420, {	-- Mokra the Skullcrusher
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(12298, { -- Deathstalker Visceri
+					crit(12298, {	-- Deathstalker Visceri
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(12299, { -- Runok Wildmane
+					crit(12299, {	-- Runok Wildmane
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(12300, { -- Eressea Dawnsinger
+					crit(12300, {	-- Eressea Dawnsinger
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(12301, { -- Zul'tore
+					crit(12301, {	-- Zul'tore
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(13312, { -- Argent Confessor Paletress
+					crit(13312, {	-- Argent Confessor Paletress
 						["_encounter"] = { 636, NORMAL_DUNGEON },
 					}),
-					crit(13313, { -- Eadric the Pure
+					crit(13313, {	-- Eadric the Pure
 						["_encounter"] = { 635, NORMAL_DUNGEON },
 					}),
 					-- #endif
-					crit(13314, { -- The Black Knight
+					crit(13314, {	-- The Black Knight
 						["_encounter"] = { 637, NORMAL_DUNGEON },
 					}),
 				})),
 				bubbleDown({ ["races"] = ALLIANCE_ONLY }, ach(4298, {	-- Heroic: Trial of the Champion (A)
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed the criteria for this achievement in Wrath Classic.
-					crit(12539, { -- Mokra the Skullcrusher
+					crit(12539, {	-- Mokra the Skullcrusher
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(12545, { -- Deathstalker Visceri
+					crit(12545, {	-- Deathstalker Visceri
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(RUNOK_CRITERIA_UID_HEROIC_ALLIANCE, { -- Runok Wildmane
+					crit(RUNOK_CRITERIA_UID_HEROIC_ALLIANCE, {	-- Runok Wildmane
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(12543, { -- Eressea Dawnsinger
+					crit(12543, {	-- Eressea Dawnsinger
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(12541, { -- Zul'tore
+					crit(12541, {	-- Zul'tore
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(12549, { -- Argent Confessor Paletress
+					crit(12549, {	-- Argent Confessor Paletress
 						["_encounter"] = { 636, HEROIC_DUNGEON },
 					}),
-					crit(12551, { -- Eadric the Pure
+					crit(12551, {	-- Eadric the Pure
 						["_encounter"] = { 635, HEROIC_DUNGEON },
 					}),
 					-- #endif
-					crit(12553, { -- The Black Knight
+					crit(12553, {	-- The Black Knight
 						["_encounter"] = { 637, HEROIC_DUNGEON },
 					}),
 				})),
 				bubbleDown({ ["races"] = HORDE_ONLY }, ach(3778, {	-- Trial of the Champion (H)
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed the criteria for this achievement in Wrath Classic.
-					crit(11420, { -- Marshal Jacob Alerius
+					crit(11420, {	-- Marshal Jacob Alerius
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(12298, { -- Lana Stouthammer
+					crit(12298, {	-- Lana Stouthammer
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(12299, { -- Colosos
+					crit(12299, {	-- Colosos
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(12300, { -- Ambrose Boltspark
+					crit(12300, {	-- Ambrose Boltspark
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(12301, { -- Jaelyne Evensong
+					crit(12301, {	-- Jaelyne Evensong
 						["_encounter"] = { 634, NORMAL_DUNGEON },
 					}),
-					crit(13312, { -- Argent Confessor Paletress
+					crit(13312, {	-- Argent Confessor Paletress
 						["_encounter"] = { 636, NORMAL_DUNGEON },
 					}),
-					crit(13313, { -- Eadric the Pure
+					crit(13313, {	-- Eadric the Pure
 						["_encounter"] = { 635, NORMAL_DUNGEON },
 					}),
 					-- #endif
-					crit(13314, { -- The Black Knight
+					crit(13314, {	-- The Black Knight
 						["_encounter"] = { 637, NORMAL_DUNGEON },
 					}),
 				})),
 				bubbleDown({ ["races"] = HORDE_ONLY }, ach(4297, {	-- Heroic: Trial of the Champion (H)
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed the criteria for this achievement in Wrath Classic.
-					crit(12539, { -- Marshal Jacob Alerius
+					crit(12539, {	-- Marshal Jacob Alerius
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(12545, { -- Lana Stouthammer
+					crit(12545, {	-- Lana Stouthammer
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(COLOSOS_CRITERIA_UID_HEROIC_HORDE, { -- Colosos
+					crit(COLOSOS_CRITERIA_UID_HEROIC_HORDE, {	-- Colosos
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(12543, { -- Ambrose Boltspark
+					crit(12543, {	-- Ambrose Boltspark
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(12541, { -- Jaelyne Evensong
+					crit(12541, {	-- Jaelyne Evensong
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(12549, { -- Argent Confessor Paletress
+					crit(12549, {	-- Argent Confessor Paletress
 						["_encounter"] = { 636, HEROIC_DUNGEON },
 					}),
-					crit(12551, { -- Eadric the Pure
+					crit(12551, {	-- Eadric the Pure
 						["_encounter"] = { 635, HEROIC_DUNGEON },
 					}),
 					-- #endif
-					crit(12553, { -- The Black Knight
+					crit(12553, {	-- The Black Knight
 						["_encounter"] = { 637, HEROIC_DUNGEON },
 					}),
 				})),
@@ -137,29 +137,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(18677, {
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed these from Wrath Classic.
-					crit(60760, { -- Mokra the Skullcrusher
+					crit(60760, {	-- Mokra the Skullcrusher
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(60761, { -- Deathstalker Visceri
+					crit(60761, {	-- Deathstalker Visceri
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(60765, { -- Runok Wildmane
+					crit(60765, {	-- Runok Wildmane
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(60766, { -- Eressea Dawnsinger
+					crit(60766, {	-- Eressea Dawnsinger
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(60763, { -- Zul'tore
+					crit(60763, {	-- Zul'tore
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(60764, { -- Argent Confessor Paletress
+					crit(60764, {	-- Argent Confessor Paletress
 						["_encounter"] = { 636, HEROIC_DUNGEON },
 					}),
-					crit(60762, { -- Eadric the Pure
+					crit(60762, {	-- Eadric the Pure
 						["_encounter"] = { 635, HEROIC_DUNGEON },
 					}),
 					-- #endif
-					crit(60621, { -- The Black Knight
+					crit(60621, {	-- The Black Knight
 						["_encounter"] = { 637, HEROIC_DUNGEON },
 					}),
 				}))),
@@ -167,29 +167,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(18678, {
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed these from Wrath Classic.
-					crit(60768, { -- Marshal Jacob Alerius
+					crit(60768, {	-- Marshal Jacob Alerius
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(60771, { -- Lana Stouthammer
+					crit(60771, {	-- Lana Stouthammer
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(60770, { -- Colosos
+					crit(60770, {	-- Colosos
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(60764, { -- Ambrose Boltspark
+					crit(60764, {	-- Ambrose Boltspark
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(60767, { -- Jaelyne Evensong
+					crit(60767, {	-- Jaelyne Evensong
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(60764, { -- Argent Confessor Paletress
+					crit(60764, {	-- Argent Confessor Paletress
 						["_encounter"] = { 636, HEROIC_DUNGEON },
 					}),
-					crit(60762, { -- Eadric the Pure
+					crit(60762, {	-- Eadric the Pure
 						["_encounter"] = { 635, HEROIC_DUNGEON },
 					}),
 					-- #endif
-					crit(60621, { -- The Black Knight
+					crit(60621, {	-- The Black Knight
 						["_encounter"] = { 637, HEROIC_DUNGEON },
 					}),
 				}))),
@@ -197,29 +197,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(19426, {
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed these from Wrath Classic.
-					crit(63308, { -- Mokra the Skullcrusher
+					crit(63308, {	-- Mokra the Skullcrusher
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(63317, { -- Deathstalker Visceri
+					crit(63317, {	-- Deathstalker Visceri
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(63314, { -- Runok Wildmane
+					crit(63314, {	-- Runok Wildmane
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(63313, { -- Eressea Dawnsinger
+					crit(63313, {	-- Eressea Dawnsinger
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(63306, { -- Zul'tore
+					crit(63306, {	-- Zul'tore
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(63310, { -- Argent Confessor Paletress
+					crit(63310, {	-- Argent Confessor Paletress
 						["_encounter"] = { 636, HEROIC_DUNGEON },
 					}),
-					crit(63315, { -- Eadric the Pure
+					crit(63315, {	-- Eadric the Pure
 						["_encounter"] = { 635, HEROIC_DUNGEON },
 					}),
 					-- #endif
-					crit(63310, { -- The Black Knight
+					crit(63310, {	-- The Black Knight
 						["_encounter"] = { 637, HEROIC_DUNGEON },
 					}),
 				}))),
@@ -227,29 +227,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_THREE, {
 					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(19425, {
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed these from Wrath Classic.
-					crit(63308, { -- Marshal Jacob Alerius
+					crit(63308, {	-- Marshal Jacob Alerius
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(60771, { -- Lana Stouthammer
+					crit(60771, {	-- Lana Stouthammer
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(63314, { -- Colosos
+					crit(63314, {	-- Colosos
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(63313, { -- Ambrose Boltspark
+					crit(63313, {	-- Ambrose Boltspark
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(63306, { -- Jaelyne Evensong
+					crit(63306, {	-- Jaelyne Evensong
 						["_encounter"] = { 634, HEROIC_DUNGEON },
 					}),
-					crit(63316, { -- Argent Confessor Paletress
+					crit(63316, {	-- Argent Confessor Paletress
 						["_encounter"] = { 636, HEROIC_DUNGEON },
 					}),
-					crit(63315, { -- Eadric the Pure
+					crit(63315, {	-- Eadric the Pure
 						["_encounter"] = { 635, HEROIC_DUNGEON },
 					}),
 					-- #endif
-					crit(63310, { -- The Black Knight
+					crit(63310, {	-- The Black Knight
 						["_encounter"] = { 637, HEROIC_DUNGEON },
 					}),
 				}))),

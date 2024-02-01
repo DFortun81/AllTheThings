@@ -266,7 +266,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(211813, {	-- Silverwing Sentinel Charm
 							["races"] = HORDE_ONLY,
 						}),
-						i(211814, {	-- 
+						i(211814, {	--
 							["races"] = ALLIANCE_ONLY,
 						}),
 					},
@@ -1855,7 +1855,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
-						objective(1, { -- 0/1 Iron Pommel
+						objective(1, {	-- 0/1 Iron Pommel
 							["providers"] = {
 								{ "i", 5519 },	-- Iron Pommel
 								{ "o", 19021 },	-- Rusty Chest
@@ -1931,12 +1931,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
-						objective(1, { -- 0/1 Ran Bloodtooth
+						objective(1, {	-- 0/1 Ran Bloodtooth
 							["provider"] = { "i", 5388 },	-- Ran Bloodtooth's Skull
 							["coord"] = { 54.6, 79.4, ASHENVALE },
 							["cr"] = 3696,	-- Ran Bloodtooth
 						}),
-						objective(2, { -- 0/4 Bloodtooth Guard
+						objective(2, {	-- 0/4 Bloodtooth Guard
 							["provider"] = { "n", 3932 }, -- Bloodtooth Guard
 						}),
 					},
@@ -1957,10 +1957,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 18,
 					["groups"] = {
 						-- #if BEFORE WRATH
-						objective(1, { -- 0/1 Ran Bloodtooth's Skull
+						objective(1, {	-- 0/1 Ran Bloodtooth's Skull
 							["provider"] = { "i", 5388 },	-- Ran Bloodtooth's Skull
 						}),
-						objective(2, { -- 0/1 Dartol's Rod of Transformation
+						objective(2, {	-- 0/1 Dartol's Rod of Transformation
 							["provider"] = { "i", 5462 },	-- Dartol's Rod of Transformation
 							["description"] = "There's a trick to keep this item forever:\nBefore turning in the quest to Raene, destroy the item. Ask Raene for it back. Then turn in the quest. The item will be removed from your inventory. However, since you destroyed the first one, you can then use the Blizzard Item Restoration tool to get your destroyed rod back.",
 						}),

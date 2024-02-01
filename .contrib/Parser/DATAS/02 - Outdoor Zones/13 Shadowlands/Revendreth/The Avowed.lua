@@ -20,34 +20,34 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["cost"] = { { "i", 172957, 50 } },	-- 50x Atonement Crypt Key
 						}),
 						ach(14276, {	-- It's Always Sinny in Revendreth
-							crit(48135, { -- Inquisitor Otilia
+							crit(48135, {	-- Inquisitor Otilia
 								["_npcs"] = { 156918 },
 							}),
-							crit(48134, { -- Inquisitor Petre
+							crit(48134, {	-- Inquisitor Petre
 								["_npcs"] = { 156919 },
 							}),
-							crit(48133, { -- Inquisitor Sorin
+							crit(48133, {	-- Inquisitor Sorin
 								["_npcs"] = { 156916 },
 							}),
-							crit(48136, { -- Inquisitor Traian
+							crit(48136, {	-- Inquisitor Traian
 								["_npcs"] = { 159151 },
 							}),
-							crit(48140, { -- High Inquisitor Dacian
+							crit(48140, {	-- High Inquisitor Dacian
 								["_npcs"] = { 159155 },
 							}),
-							crit(48137, { -- High Inquisitor Gabi
+							crit(48137, {	-- High Inquisitor Gabi
 								["_npcs"] = { 159152 },
 							}),
-							crit(48139, { -- High Inquisitor Magda
+							crit(48139, {	-- High Inquisitor Magda
 								["_npcs"] = { 159154 },
 							}),
-							crit(48138, { -- High Inquisitor Radu
+							crit(48138, {	-- High Inquisitor Radu
 								["_npcs"] = { 159153 },
 							}),
-							crit(48142, { -- Grand Inquisitor Aurica
+							crit(48142, {	-- Grand Inquisitor Aurica
 								["_npcs"] = { 159157 },
 							}),
-							crit(48141, { -- Grand Inquisitor Nicu
+							crit(48141, {	-- Grand Inquisitor Nicu
 								["_npcs"] = { 159156 },
 							}),
 						}),

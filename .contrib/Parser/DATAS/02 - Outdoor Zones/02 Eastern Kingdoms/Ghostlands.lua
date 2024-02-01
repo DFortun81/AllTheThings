@@ -80,7 +80,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}},
 				["groups"] = {
 					pet(461),	-- Larva (PET!)
-					pet(463, { -- Spirit Crab (PET!)
+					pet(463, {	-- Spirit Crab (PET!)
 						["description"] = "Found along the western coastline and on the little island.",
 					}),
 				},

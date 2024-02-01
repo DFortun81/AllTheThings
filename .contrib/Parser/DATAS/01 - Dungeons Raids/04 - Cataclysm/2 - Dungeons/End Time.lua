@@ -103,7 +103,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_3_0 },
 						i(72803),	-- Girdle of Lost Heroes
 						i(72805),	-- Gloves of The Hollow
 						i(72802),	-- Time Traveler's Leggings
-						i(157606, { -- Time-Dessicated Girdle
+						i(157606, {	-- Time-Dessicated Girdle
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(72807),	-- Waistguard of Lost Time

@@ -14,22 +14,22 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(1865, {	-- Lockdown!
-					crit(7137, { -- Xevozz
+					crit(7137, {	-- Xevozz
 						["_encounter"] = { 629, HEROIC_DUNGEON },
 					}),
-					crit(7138, { -- Levanthor
+					crit(7138, {	-- Levanthor
 						["_encounter"] = { 630, HEROIC_DUNGEON },
 					}),
-					crit(7139, { -- Ichoron
+					crit(7139, {	-- Ichoron
 						["_encounter"] = { 628, HEROIC_DUNGEON },
 					}),
-					crit(7140, { -- Zuramat the Obliterator
+					crit(7140, {	-- Zuramat the Obliterator
 						["_encounter"] = { 631, HEROIC_DUNGEON },
 					}),
-					crit(7141, { -- Erekem
+					crit(7141, {	-- Erekem
 						["_encounter"] = { 626, HEROIC_DUNGEON },
 					}),
-					crit(7142, { -- Moragg
+					crit(7142, {	-- Moragg
 						["_encounter"] = { 627, HEROIC_DUNGEON },
 					}),
 				}),

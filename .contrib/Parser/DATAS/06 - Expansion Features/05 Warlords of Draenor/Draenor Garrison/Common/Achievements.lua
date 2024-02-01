@@ -112,42 +112,42 @@ root(ROOTS.ExpansionFeatures,
 					ach(9125),		-- Draftsman (20)
 				}),
 				a(ach(10067, {	-- In Pursuit of Gul'dan (Garrison) [A]
-					crit(28291, { -- All Hands On Deck
+					crit(28291, {	-- All Hands On Deck
 						["_quests"] = { 38259 },
 					}),
-					crit(28292, { -- The Invasion of Tanaan
+					crit(28292, {	-- The Invasion of Tanaan
 						["_quests"] = { 38445 },
 					}),
-					crit(28293, { -- Bane of the Bleeding Hollow
+					crit(28293, {	-- Bane of the Bleeding Hollow
 						["_quests"] = { 38274 },
 					}),
-					crit(28295, { -- Dark Ascension
+					crit(28295, {	-- Dark Ascension
 						["_quests"] = { 38223 },
 					}),
-					crit(28296, { -- The Fate of Teron'gor
+					crit(28296, {	-- The Fate of Teron'gor
 						["_quests"] = { 38562 },	-- Secrets of the Sargerei (A)
 					}),
-					crit(28408, { -- The Cipher of Damnation
+					crit(28408, {	-- The Cipher of Damnation
 						["_quests"] = { 39394 },
 					}),
 				})),
 				h(ach(10074, {	-- In Pursuit of Gul'dan (Garrison) [H]
-					crit(28306, { -- All Hands On Deck
+					crit(28306, {	-- All Hands On Deck
 						["_quests"] = { 38574 },
 					}),
-					crit(28307, { -- The Invasion of Tanaan
+					crit(28307, {	-- The Invasion of Tanaan
 						["_quests"] = { 37935 },
 					}),
-					crit(28293, { -- Bane of the Bleeding Hollow
+					crit(28293, {	-- Bane of the Bleeding Hollow
 						["_quests"] = { 38274 },
 					}),
-					crit(28295, { -- Dark Ascension
+					crit(28295, {	-- Dark Ascension
 						["_quests"] = { 38223 },
 					}),
-					crit(28308, { -- The Fate of Teron'gor
+					crit(28308, {	-- The Fate of Teron'gor
 						["_quests"] = { 38416 },	-- Secrets of the Sargerei (H)
 					}),
-					crit(28305, { -- The Cipher of Damnation
+					crit(28305, {	-- The Cipher of Damnation
 						["_quests"] = { 38463 },
 					}),
 				})),
@@ -267,40 +267,40 @@ root(ROOTS.ExpansionFeatures,
 				ach(9491, {	-- The Garrison Campaign
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						crit(25856, { -- The Warlord's Council
+						crit(25856, {	-- The Warlord's Council
 							["_quests"] = { 35841 },	-- Putting Down the Packleader
 						}),
-						crit(25857, { -- The Sargerei
+						crit(25857, {	-- The Sargerei
 							["_quests"] = { 35196 },	-- Forging Ahead
 						}),
-						crit(25858, { -- Darktide Roost
+						crit(25858, {	-- Darktide Roost
 							["_quests"] = { 34450 },	-- Rylak Rescue
 						}),
 						crit(25859, {	-- Iron Siegeworks
 							["_quests"] = { 34033 },	-- And The Mole You Rode In On
 						}),
-						crit(25860, { -- The Ring of Blood
+						crit(25860, {	-- The Ring of Blood
 							["_quests"] = { 36289 },	-- Out of the Shadows
 						}),
-						crit(25863, { -- The Fall of Shattrath
+						crit(25863, {	-- The Fall of Shattrath
 							["_quests"] = { 35685 },	-- Socrethar's Demise
 						}),
-						crit(25864, { -- Bloodmaul Compound
+						crit(25864, {	-- Bloodmaul Compound
 							["_quests"] = { 34289 },	-- Soulgrinder Survivor
 						}),
-						crit(27305, { -- Broken Precipice
+						crit(27305, {	-- Broken Precipice
 							["_quests"] = { 37517 },	-- News for Nixxie
 						}),
-						crit(25866, { -- The Exarch's Call
+						crit(25866, {	-- The Exarch's Call
 							["_quests"] = { 36169 },	-- The Trial of Champions
 						}),
-						crit(25861, { -- Heart of the Breakers
+						crit(25861, {	-- Heart of the Breakers
 							["_quests"] = { 34410 },	-- The Beating Heart
 						}),
-						crit(25862, { -- A Strike at the Heart
+						crit(25862, {	-- A Strike at the Heart
 							["_quests"] = { 36162 },	-- A Stolen Heart
 						}),
-						crit(25867, { -- Primal Fury
+						crit(25867, {	-- Primal Fury
 							["_quests"] = { 36341 },	-- Primal Fury
 						}),
 					},
@@ -308,40 +308,40 @@ root(ROOTS.ExpansionFeatures,
 				ach(9492, {	-- The Garrison Campaign
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						crit(25870, { -- The Warlord's Council
+						crit(25870, {	-- The Warlord's Council
 							["_quests"] = { 35842 },	-- Putting Down the Packleader
 						}),
-						crit(25871, { -- The Sargerei
+						crit(25871, {	-- The Sargerei
 							["_quests"] = { 35197 },	-- Forging Ahead
 						}),
-						crit(25858, { -- Darktide Roost
+						crit(25858, {	-- Darktide Roost
 							["_quests"] = { 34450 },	-- Rylak Rescue
 						}),
-						crit(25872, { -- Iron Siegeworks
+						crit(25872, {	-- Iron Siegeworks
 							["_quests"] = { 34078 },	-- Payment Due for Services Rendered
 						}),
-						crit(25873, { -- The Ring of Blood
+						crit(25873, {	-- The Ring of Blood
 							["_quests"] = { 36290 },	-- Out of the Shadows
 						}),
-						crit(27442, { -- The Fall of Shattrath
+						crit(27442, {	-- The Fall of Shattrath
 							["_quests"] = { 35687 },	-- Socrethar's Demise
 						}),
-						crit(25876, { -- Bloodmaul Compound
+						crit(25876, {	-- Bloodmaul Compound
 							["_quests"] = { 34319 },	-- Soulgrinder Survivor
 						}),
-						crit(27306, { -- Broken Precipice
+						crit(27306, {	-- Broken Precipice
 							["_quests"] = { 37516 },	-- News for Nixxie
 						}),
-						crit(24518, { -- Ours is the Fury
+						crit(24518, {	-- Ours is the Fury
 							["_quests"] = { 33427 }, -- Ours is the Fury
 						}),
-						crit(25874, { -- Heart of the Breakers
+						crit(25874, {	-- Heart of the Breakers
 							["_quests"] = { 34341 },	-- The Beating Heart
 						}),
-						crit(25875, { -- A Strike at the Heart
+						crit(25875, {	-- A Strike at the Heart
 							["_quests"] = { 36248 },	-- A Stolen Heart
 						}),
-						crit(25878, { -- Primal Fury
+						crit(25878, {	-- Primal Fury
 							["_quests"] = { 36342 },	-- Primal Fury
 						}),
 					},

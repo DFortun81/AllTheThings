@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(70150, {	-- 'Many Whelps, Handle It'
 					["coord"] = { 57.8, 68, THE_WAKING_SHORES },
 				}),
-				petbattle(q(74841, { -- Adinakon
+				petbattle(q(74841, {	-- Adinakon
 					["coord"] = { 51.90, 72.39, THE_WAKING_SHORES },
 					["timeline"] = { ADDED_10_0_7 },
 				})),
@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(67006, {	-- Quenching the Flame
 					["coord"] = { 67.5, 31.8, THE_WAKING_SHORES },
 				}),
-				petbattle(q(74840, { -- Sharp as Flint
+				petbattle(q(74840, {	-- Sharp as Flint
 					["coord"] = { 68.96, 46.78, THE_WAKING_SHORES },
 					["timeline"] = { ADDED_10_0_7 },
 				})),

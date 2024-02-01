@@ -50,7 +50,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						2191,	-- Ancient Courtyard Protector
 						2200,	-- Defense of the Ancients (Horde)
 					}},
-					["timeline"] = { "added 3.0.1", "deleted 4.3.0" },
+					["timeline"] = { "added 3.0.1", "removed 4.3.0" },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(1308, {	-- Strand of the Ancients Victory

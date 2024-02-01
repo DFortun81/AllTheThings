@@ -1951,6 +1951,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					}},
 					["g"] = {
 						title(521),	-- Outland Racer <Name>
+						i(211928),	-- Ruby Riders of Azeroth Tabard
 					},
 				}),
 			}),

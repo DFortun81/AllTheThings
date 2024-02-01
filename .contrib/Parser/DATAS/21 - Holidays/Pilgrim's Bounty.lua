@@ -80,7 +80,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					}),
 				},
 			}),
-			-- #if BEFORE MOP
 			ach(3656, {	-- Pilgrim
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {
@@ -96,7 +95,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 						3559,				-- Turkey Lurkey
 					},
 				},
-				["timeline"] = { "added 3.2.2.10505", "deleted 5.0.1" },
+				["timeline"] = { "added 3.2.2.10505", "removed 5.0.4" },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					title(133, {	-- <Name> the Pilgrim [NOTE: WoWHead's ID is incorrect, don't look at this and freak out like I did. - Crieve]
@@ -107,7 +106,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 					}),
 				},
 			}),
-			-- #endif
 			ach(3579, {	-- "FOOD FIGHT!"
 				["timeline"] = { "added 3.2.2.10505" },
 				["maps"] = ALL_PILGIM_MAPS,

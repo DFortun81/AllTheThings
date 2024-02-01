@@ -66,7 +66,6 @@ local HOLIDAY_SMOKYWOOD_PASTURES_GIFT_PACK = {	-- Smokywood Pastures Gift Pack
 };
 root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
 	n(ACHIEVEMENTS, {
-		-- #if BEFORE MOP
 		ach(1692, {	-- Merrymaker (A)
 			["sym"] = {{"meta_achievement",
 				273,			-- On Metzen!
@@ -81,13 +80,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				1689,			-- He Knows If You've Been Naughty
 				1690,			-- A Frosty Shake
 			}},
-			["timeline"] = { "added 3.0.2", "deleted 5.0.1" },
+			["timeline"] = { "added 3.0.2", "removed 5.0.4" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(102),				-- Merrymaker
 			},
 		}),
-		-- #endif
 		ach(1691, {	-- Merrymaker (H) / Merrymaker [MOP+]
 			["sym"] = {{"meta_achievement",
 				273,			-- On Metzen!
@@ -289,7 +287,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["providers"] = {
 				{ "i", 21212 },	-- Fresh Holly
 				{ "i", 21213 },	-- Preserved Holly
-				{ "n", 23120 },	-- Sky Sergeant Vanderlip 
+				{ "n", 23120 },	-- Sky Sergeant Vanderlip
 			},
 			["sourceQuest"] = 11023,	-- Bomb them again!
 			["timeline"] = { "added 3.0.1" },

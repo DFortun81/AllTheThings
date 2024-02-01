@@ -9,7 +9,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 		["coord"] = { 71.77, 52.98, BLACKROCK_MOUNTAIN_LEVEL2 },
 		["groups"] = {
 			n(QUESTS, {
-				q(28741, { -- Ascendant Lord Obsidius
+				q(28741, {	-- Ascendant Lord Obsidius
 					["qg"] = 49476,	-- Pip Quickwit
 					["sourceQuest"] = 28738,	-- The Twilight Forge
 					["groups"] = {
@@ -18,7 +18,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(66884),	-- Raz's Breastplate
 					},
 				}),
-				q(28740, { -- Do My Eyes Deceive Me?
+				q(28740, {	-- Do My Eyes Deceive Me?
 					["qg"] = 49476,	-- Pip Quickwit
 					["sourceQuest"] = 28738,	-- The Twilight Forge
 					["groups"] = {
@@ -27,15 +27,15 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(66890),	-- Auto-Decoding Band
 					},
 				}),
-				q(28738, { -- The Twilight Forge
+				q(28738, {	-- The Twilight Forge
 					["qg"] = 49476,	-- Pip Quickwit
 					["sourceQuest"] = 28737,	-- What Is This Place?
 				}),
-				q(28735, { -- To the Chamber of Incineration!
+				q(28735, {	-- To the Chamber of Incineration!
 					["qg"] = 49476,	-- Pip Quickwit
 					["sourceQuest"] = 28732,	-- This Can Only Mean One Thing...
 				}),
-				q(28737, { -- What Is This Place?
+				q(28737, {	-- What Is This Place?
 					["qg"] = 49476,	-- Pip Quickwit
 					["sourceQuest"] = 28735,	-- To the Chamber of Incineration!
 				}),
@@ -46,7 +46,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(55791, { -- Acanthia's Lost Pendant
+				i(55791, {	-- Acanthia's Lost Pendant
 					["crs"] = {
 						40084,	-- Bellows Slave
 						40013,	-- Buster
@@ -68,7 +68,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						50284,	-- Twilight Zealot
 					},
 				}),
-				i(55789, { -- Berto's Staff
+				i(55789, {	-- Berto's Staff
 					["crs"] = {
 						40084,	-- Bellows Slave
 						40013,	-- Buster
@@ -90,7 +90,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						50284,	-- Twilight Zealot
 					},
 				}),
-				i(55790, { -- Toxidunk Dagger
+				i(55790, {	-- Toxidunk Dagger
 					["crs"] = {
 						40084,	-- Bellows Slave
 						40013,	-- Buster
@@ -240,7 +240,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				e(105, {  -- Rom'ogg Bonecrusher
 					["crs"] = { 39665 },	-- Rom'ogg Bonecrusher
 					["groups"] = {
-						i(157608, { -- Groundrumble Boots
+						i(157608, {	-- Groundrumble Boots
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(56311),	-- Inquisition Robes
@@ -266,7 +266,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(56301),	-- Bracers of Cooled Anger
 						i(56304),	-- Burned Gatherings
 						i(56303),	-- Heat Wave Leggings
-						i(157610, { -- Heat-Shielded Tunic
+						i(157610, {	-- Heat-Shielded Tunic
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(56300),	-- Quicksilver Amulet
@@ -280,7 +280,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(56306),	-- Beauty's Favorite Bone
 						i(56308),	-- Beauty's Plate
 						i(56309),	-- Beauty's Chew Toy
-						i(157607, { -- Gently Gnawed Hauberk
+						i(157607, {	-- Gently Gnawed Hauberk
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(56307),	-- Kibble

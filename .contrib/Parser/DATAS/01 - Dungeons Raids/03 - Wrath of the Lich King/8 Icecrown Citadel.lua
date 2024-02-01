@@ -517,83 +517,83 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_FOUR, bubbl
 						}),
 					},
 				}),
-				q(24819, { -- A Change of Heart
+				q(24819, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(24820, { -- A Change of Heart
+				q(24820, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(24821, { -- A Change of Heart
+				q(24821, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(24822, { -- A Change of Heart
+				q(24822, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(24836, { -- A Change of Heart
+				q(24836, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(24837, { -- A Change of Heart
+				q(24837, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(24838, { -- A Change of Heart
+				q(24838, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(24839, { -- A Change of Heart
+				q(24839, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(24840, { -- A Change of Heart
+				q(24840, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(24841, { -- A Change of Heart
+				q(24841, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(24842, { -- A Change of Heart
+				q(24842, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(24843, { -- A Change of Heart
+				q(24843, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(24844, { -- A Change of Heart
+				q(24844, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(24845, { -- A Change of Heart
+				q(24845, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(24846, { -- A Change of Heart
+				q(24846, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(24847, { -- A Change of Heart
+				q(24847, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(25246, { -- A Change of Heart
+				q(25246, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(25247, { -- A Change of Heart
+				q(25247, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(25248, { -- A Change of Heart
+				q(25248, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),
-				q(25249, { -- A Change of Heart
+				q(25249, {	-- A Change of Heart
 					["qg"] = 38316,	-- Ormus the Penitent
 					["isRepeatable"] = true,
 				}),

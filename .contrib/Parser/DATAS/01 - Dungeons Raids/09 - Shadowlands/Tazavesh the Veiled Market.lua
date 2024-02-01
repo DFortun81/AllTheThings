@@ -131,7 +131,7 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 						i(34828),	-- Antique Silver Cufflinks
 						i(187179),	-- Glow Sticks
 					}),
-					n(180750, { -- Au'manal <Master Forger>
+					n(180750, {	-- Au'manal <Master Forger>
 						["description"] = "Requires |cFFFFFFFFFraudulent Credentials|r to be equipped to be able to trade for the new neck.",
 						["g"] = {
 							i(185954, {	-- Passably-Forged Credentials

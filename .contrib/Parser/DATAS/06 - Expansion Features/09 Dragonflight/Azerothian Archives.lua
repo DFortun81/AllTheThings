@@ -91,28 +91,28 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(DROPS, {
-				i(213185, { -- Dusty Centaur Tome
+				i(213185, {	-- Dusty Centaur Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
 				}),
-				i(213175, { -- Dusty Djaradin Tome
+				i(213175, {	-- Dusty Djaradin Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
 				}),
-				i(213188, { -- Dusty Dracthyr Tome
+				i(213188, {	-- Dusty Dracthyr Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
 				}),
-				i(213187, { -- Dusty Drakonid Tome
+				i(213187, {	-- Dusty Drakonid Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
 				}),
-				i(213186, { -- Dusty Niffen Tome
+				i(213186, {	-- Dusty Niffen Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
 				}),
-				i(213190, { -- Preserved Djaradin Tome
+				i(213190, {	-- Preserved Djaradin Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
 				}),
-				i(213189, { -- Preserved Dragonkin Tome
+				i(213189, {	-- Preserved Dragonkin Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
 				}),
-				i(213176, { -- Preserved Isles Tome
+				i(213176, {	-- Preserved Isles Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
 				}),
 				i(213177, {	-- Immaculate Tome

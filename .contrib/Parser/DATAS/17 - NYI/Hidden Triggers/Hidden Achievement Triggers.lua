@@ -6,10 +6,6 @@ root(ROOTS.HiddenAchievementTriggers, {
 	-- Note!! Here is where we can put all the hidden Achievement triggers in the game that don't exactly fit anywhere.
 	-- When adding a Achievement trigger be sure to put a description of how it triggered
 	tier(CLASSIC_TIER, {
-		--1.14.0.39802
-		-- #if AFTER 3.0.1
-		ach(9275),	-- Warlord Zaela kills (Upper Blackrock Spire)
-		-- #endif
 		--1.14.1.40666
 		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
@@ -1000,6 +996,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(9272),	-- Yalnu kills (Heroic The Everbloom)
 		ach(9273),	-- Ner'zhul kills (Shadowmoon Burial Grounds)
 		ach(9274),	-- Ner'zhul kills (Heroic Shadowmoon Burial Grounds)
+		ach(9275),	-- Warlord Zaela kills (Upper Blackrock Spire)
 		ach(9276),	-- Warlord Zaela kills (Heroic Upper Blackrock Spire)
 		ach(9277),	-- Drov the Ruiner kills (Gorgrond)
 		ach(9278),	-- Tarlna the Ageless kills (Gorgrond)

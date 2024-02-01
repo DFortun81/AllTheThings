@@ -52,7 +52,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 	}),
 	-- #else
 	n(ACHIEVEMENTS, {
-		-- #if BEFORE MOP
 		ach(1707, {	-- Fool For Love (A)
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",
@@ -69,13 +68,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				1703,	-- My Love is Like a Red, Red Rose
 				1704,	-- I Pitied The Fool
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", "removed 5.0.4" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(103),	-- the Love Fool
 			},
 		}),
-		-- #endif
 		ach(1693, {	-- Fool For Love (H) / Fool For Love [MOP+]
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",
@@ -242,7 +240,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { "added 3.0.1" },
 			["maps"] = { NORTHREND_DALARAN },
 		}),
-		ach(19508, { -- Love Language Expert
+		ach(19508, {	-- Love Language Expert
 			["timeline"] = { ADDED_10_2_5 },
 		}),
 		ach(1703, {	-- My Love is Like a Red, Red Rose
@@ -1384,7 +1382,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 	}),
 	-- #if AFTER 3.3.2.11403
 	n(VENDORS, {
-		-- SORT ME -- 
+		-- SORT ME --
 		i(210973),	-- Heartseeker Mana Ray (MOUNT!) [Love in the Air]
 		i(211864),	-- Exquisite Love Boat (TOY!) [Love in the Air]
 		i(210974),	-- Eyes For You Only (TOY!) [Love in the Air]

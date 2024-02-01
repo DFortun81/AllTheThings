@@ -67,7 +67,7 @@ root(ROOTS.Instances, { tier(LEGION_TIER, {
 					["coord"] = { 56.9, 68.6, KROKUUN },
 					["sourceQuest"] = 48803,	-- Forging a Key to the Past
 					["g"] = {
-						i(152241, sharedData({["modID"] = 2}, { -- Ensemble: Light-Woven Triumvirate Regalia
+						i(152241, sharedData({["modID"] = 2}, {	-- Ensemble: Light-Woven Triumvirate Regalia
 							["description"] = "May require relogging to gain all appearances.",
 							["g"] = {
 								-- Heroic items
@@ -92,7 +92,7 @@ root(ROOTS.Instances, { tier(LEGION_TIER, {
 								i(151301, {["modID"] = 23,}),	-- Feet
 							},
 						})),
-						i(152242, sharedData({["modID"] = 2}, { -- Ensemble: Burnished Triumvirate Armor
+						i(152242, sharedData({["modID"] = 2}, {	-- Ensemble: Burnished Triumvirate Armor
 							["description"] = "May require relogging to gain all appearances.",
 							["g"] = {
 								-- Heroic items
@@ -117,7 +117,7 @@ root(ROOTS.Instances, { tier(LEGION_TIER, {
 								i(151317, {["modID"] = 23,}),	-- Feet
 							},
 						})),
-						i(152243, sharedData({["modID"] = 2}, { -- Ensemble: Sterling Triumvirate Chainmail
+						i(152243, sharedData({["modID"] = 2}, {	-- Ensemble: Sterling Triumvirate Chainmail
 							["description"] = "May require relogging to gain all appearances.",
 							["g"] = {
 								-- Heroic items
@@ -142,7 +142,7 @@ root(ROOTS.Instances, { tier(LEGION_TIER, {
 								i(151320, {["modID"] = 23,}),	-- Feet
 							},
 						})),
-						i(152244, sharedData({["modID"] = 2}, { -- Ensemble: Venerated Triumvirate Battleplate
+						i(152244, sharedData({["modID"] = 2}, {	-- Ensemble: Venerated Triumvirate Battleplate
 							["description"] = "May require relogging to gain all appearances.",
 							["g"] = {
 								-- Heroic items

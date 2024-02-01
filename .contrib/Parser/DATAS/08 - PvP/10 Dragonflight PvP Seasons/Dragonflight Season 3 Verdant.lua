@@ -731,7 +731,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 								i(209070, {	-- Verdant Gladiator's Silk Blouse
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
-								i(209076, { -- Verdant Gladiator's Silk Cap
+								i(209076, {	-- Verdant Gladiator's Silk Cap
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
 								i(209081, {	-- Verdant Gladiator's Silk Cord
@@ -873,7 +873,7 @@ root(ROOTS.PVP, pvp(tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 								i(209281, {	-- Verdant Gladiator's Plate Stompers
 									["cost"] = { { "c", CONQUEST, 700 } },
 								}),
-								i(209287, { -- Verdant Gladiator's Plate Tasses
+								i(209287, {	-- Verdant Gladiator's Plate Tasses
 									["cost"] = { { "c", CONQUEST, 875 } },
 								}),
 								i(209293, {	-- Verdant Gladiator's Plate Vambraces

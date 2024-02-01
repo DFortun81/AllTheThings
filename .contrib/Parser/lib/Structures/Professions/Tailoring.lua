@@ -89,7 +89,9 @@ COMMON_CATACLYSM_TAILORING_RECIPES = {
 };
 SL_TAILORING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(310949),	-- Shadowlands Tailoring
-	r(343634),	-- Shadowlands Cloth Scavenging
+	r(343634, {	-- Shadowlands Cloth Scavenging
+		["collectibled"] = false,
+	}),
 	n(ARMOR, {
 		r(339003, {	-- Grim-Veiled Belt [Rank 1]
 			["sourceQuests"] = { 62799 },	-- The Vessels of the Thread
@@ -147,7 +149,9 @@ SL_TAILORING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline"
 }));
 DF_TAILORING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	r(366258),	-- Dragon Isles Tailoring
-	r(392396),	-- Dragon Isles Cloth Scavenging
+	r(392396, {	-- Dragon Isles Cloth Scavenging
+		["collectibled"] = false,
+	}),
 	r(376562),	-- Dragon Isles Unravelling
 	n(ARMOR, {
 		r(376509),	-- Surveyor's Cloth Bands

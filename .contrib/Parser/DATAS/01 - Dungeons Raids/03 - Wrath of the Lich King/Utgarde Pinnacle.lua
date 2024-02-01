@@ -9,30 +9,30 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["lvl"] = lvlsquish(75, 75, 20),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(488, { -- Utgarde Pinnacle
-					crit(5463, { -- Skadi the Ruthless
+				ach(488, {	-- Utgarde Pinnacle
+					crit(5463, {	-- Skadi the Ruthless
 						["_encounter"] = { 643, NORMAL_DUNGEON },
 					}),
-					crit(5465, { -- Svala Sorrowgrave
+					crit(5465, {	-- Svala Sorrowgrave
 						["_encounter"] = { 641, NORMAL_DUNGEON },
 					}),
-					crit(5466, { -- Gortok Palehoof
+					crit(5466, {	-- Gortok Palehoof
 						["_encounter"] = { 642, NORMAL_DUNGEON },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
-					crit(5631, { -- King Ymiron
+					crit(5631, {	-- King Ymiron
 						["_encounter"] = { 644, NORMAL_DUNGEON },
 					}),
 					-- #else
-					crit(5464, { -- King Ymiron
+					crit(5464, {	-- King Ymiron
 						["_encounter"] = { 644, NORMAL_DUNGEON },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17301, {	-- Defense Protocol Alpha: Utgarde Pinnacle
-					crit(57767, { -- Svala Sorrowgrave
+					crit(57767, {	-- Svala Sorrowgrave
 						["_encounter"] = { 641, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39296),	-- Accursed Bow of the Elite
@@ -40,7 +40,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39299),	-- Rapid Attack Gloves
 						},
 					}),
-					crit(57769, { -- Gortok Palehoof
+					crit(57769, {	-- Gortok Palehoof
 						["_encounter"] = { 642, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39284),	-- Miasma Mantle
@@ -48,7 +48,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39295),	-- Cowl of Sheet Lightning
 						},
 					}),
-					crit(57768, { -- Skadi the Ruthless
+					crit(57768, {	-- Skadi the Ruthless
 						["_encounter"] = { 643, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39294),	-- Arc-Scorched Helmet
@@ -56,7 +56,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39472),	-- Chain of Latent Energies
 						},
 					}),
-					crit(57766, { -- King Ymiron
+					crit(57766, {	-- King Ymiron
 						["_encounter"] = { 644, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39421),	-- Gem of Imprisoned Vassals
@@ -75,26 +75,26 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18600, {	-- Defense Protocol Beta: Utgarde Pinnacle
-					crit(60610, { -- Svala Sorrowgrave
+					crit(60610, {	-- Svala Sorrowgrave
 						["_encounter"] = { 641, HEROIC_DUNGEON },
 						["groups"] = {
 							i(45423),	-- Runetouch Wristwraps
 						},
 					}),
-					crit(60612, { -- Gortok Palehoof
+					crit(60612, {	-- Gortok Palehoof
 						["_encounter"] = { 642, HEROIC_DUNGEON },
 						["groups"] = {
 							i(45332),	-- Stormtip
 						},
 					}),
-					crit(60611, { -- Skadi the Ruthless
+					crit(60611, {	-- Skadi the Ruthless
 						["_encounter"] = { 643, HEROIC_DUNGEON },
 						["groups"] = {
 							i(45864),	-- Cover of the Keepers
 							i(45712),	-- Chestplate of Titanic Fury
 						},
 					}),
-					crit(60609, { -- King Ymiron
+					crit(60609, {	-- King Ymiron
 						["_encounter"] = { 644, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
@@ -104,25 +104,25 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19437, {	-- Defense Protocol Gamma: Utgarde Pinnacle
-					crit(63367, { -- Svala Sorrowgrave
+					crit(63367, {	-- Svala Sorrowgrave
 						["_encounter"] = { 641, HEROIC_DUNGEON },
 						["groups"] = {
 
 						},
 					}),
-					crit(63371, { -- Gortok Palehoof
+					crit(63371, {	-- Gortok Palehoof
 						["_encounter"] = { 642, HEROIC_DUNGEON },
 						["groups"] = {
 
 						},
 					}),
-					crit(63369, { -- Skadi the Ruthless
+					crit(63369, {	-- Skadi the Ruthless
 						["_encounter"] = { 643, HEROIC_DUNGEON },
 						["groups"] = {
 
 						},
 					}),
-					crit(63366, { -- King Ymiron
+					crit(63366, {	-- King Ymiron
 						["_encounter"] = { 644, HEROIC_DUNGEON },
 						["groups"] = {
 
@@ -130,17 +130,17 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 				})),
 				-- #endif
-				ach(499, { -- Heroic: Utgarde Pinnacle
-					crit(6864, { -- Svala Sorrowgrave
+				ach(499, {	-- Heroic: Utgarde Pinnacle
+					crit(6864, {	-- Svala Sorrowgrave
 						["_encounter"] = { 641, HEROIC_DUNGEON },
 					}),
-					crit(6865, { -- Gortok Palehoof
+					crit(6865, {	-- Gortok Palehoof
 						["_encounter"] = { 642, HEROIC_DUNGEON },
 					}),
-					crit(6863, { -- Skadi the Ruthless
+					crit(6863, {	-- Skadi the Ruthless
 						["_encounter"] = { 643, HEROIC_DUNGEON },
 					}),
-					crit(5618, { -- King Ymiron
+					crit(5618, {	-- King Ymiron
 						["_encounter"] = { 644, HEROIC_DUNGEON },
 					}),
 				}),

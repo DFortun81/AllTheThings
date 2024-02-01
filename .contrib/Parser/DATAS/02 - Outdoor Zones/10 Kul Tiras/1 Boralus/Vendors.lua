@@ -1329,7 +1329,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					}),
 				},
 			}),
-			n(149045, { -- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
+			n(149045, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
 				["coord"] = { 71.7, 13.7, BORALUS },
 				["g"] = {
 					i(168623, {	-- Biconcavic Lens of the Focusing Iris (Rank 4)

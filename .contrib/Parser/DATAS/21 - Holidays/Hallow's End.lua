@@ -435,7 +435,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				title(92),	-- %s the Hallowed
 			},
 		}),
-		-- #if BEFORE MOP
 		ach(1657, {	-- Hallowed Be Thy Name (H)
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",
@@ -451,13 +450,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				292,				-- Sinister Calling
 				971,				-- Tricks and Treats of Azeroth (H)
 			}},
-			["timeline"] = { "added 3.0.2", "deleted 5.0.1" },
+			["timeline"] = { "added 3.0.2", "removed 5.0.4" },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(92),	-- %s the Hallowed
 			},
 		}),
-		-- #endif
 		ach(10365, {	-- A Frightening Friend
 			["description"] = "You need Tier 3 garrison for this.",
 			["coords"] = {
@@ -716,7 +714,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}},
 			["timeline"] = { "added 3.0.1" },
 		}),
-		-- #else
 		ach(970, {	-- Tricks and Treats of Azeroth (A)
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",
@@ -727,6 +724,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["timeline"] = { "added 3.0.1", "removed 4.2.0" },
 			["races"] = ALLIANCE_ONLY,
 		}),
+		-- #else
 		ach(971, {	-- Tricks and Treats of Azeroth (H)
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",
@@ -3433,7 +3431,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["races"] = HORDE_ONLY,
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
-				i(71076, { -- Creepy Crate (PET!)
+				i(71076, {	-- Creepy Crate (PET!)
 					["timeline"] = { "added 4.2.0.14333"}
 				}),
 			},

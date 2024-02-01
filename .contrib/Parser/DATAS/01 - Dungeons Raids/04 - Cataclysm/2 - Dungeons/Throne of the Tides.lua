@@ -177,11 +177,11 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					["groups"] = {
 						i(56269), -- Aurelian Mitre
 						i(56270), -- Entwined Nereis
-						i(157588, { -- Ironshell Pendant
+						i(157588, {	-- Ironshell Pendant
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(56266), -- Lightning Whelk Axe
-						i(157587, { -- Old One Eye's Cowl
+						i(157587, {	-- Old One Eye's Cowl
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(56267), -- Periwinkle Cloak
@@ -205,7 +205,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(56276), -- Anthia's Ring
 						i(56277), -- Decapod Slippers
 						i(56280), -- Porcelain Crab
-						i(157586, { -- Stonespeaker's Spare Cinch
+						i(157586, {	-- Stonespeaker's Spare Cinch
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
@@ -220,7 +220,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(56286), -- Mnemiopsis Gloves
 						i(56282), -- Nautilus Ring
 						i(56288), -- Pipefish Cord
-						i(157589, { -- Salty Shell-Studded Girdle
+						i(157589, {	-- Salty Shell-Studded Girdle
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(56290), -- Sea Star

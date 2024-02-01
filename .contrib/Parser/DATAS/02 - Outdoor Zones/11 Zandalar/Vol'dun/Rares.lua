@@ -167,7 +167,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 					i(161026),	-- Spiderbite Wristwraps
 				},
 			}),
-			n(128686, { -- Kamid the Trapper
+			n(128686, {	-- Kamid the Trapper
 				["questID"] = 50528,
 				["coord"] = { 35.08, 51.83, VOLDUN },
 				["g"] = {

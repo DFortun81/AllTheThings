@@ -17,104 +17,104 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(15122, {	-- The Jailer's Vanguard
-					crit(52470, { -- The Tarragrue
+					crit(52470, {	-- The Tarragrue
 						["_encounter"] = { 2435, LFR_RAID },
 					}),
-					crit(52472, { -- The Eye of the Jailer
+					crit(52472, {	-- The Eye of the Jailer
 						["_encounter"] = { 2442, LFR_RAID },
 					}),
-					crit(52474, { -- The Nine
+					crit(52474, {	-- The Nine
 						["_encounter"] = { 2439, LFR_RAID },
 					}),
 				}),
 				ach(15123, {	-- The Dark Bastille
-					crit(52476, { -- Remnant of Ner'zhul
+					crit(52476, {	-- Remnant of Ner'zhul
 						["_encounter"] = { 2444, LFR_RAID },
 					}),
-					crit(52478, { -- Soulrender Dormazain
+					crit(52478, {	-- Soulrender Dormazain
 						["_encounter"] = { 2445, LFR_RAID },
 					}),
-					crit(52480, { -- Painsmith Raznal
+					crit(52480, {	-- Painsmith Raznal
 						["_encounter"] = { 2443, LFR_RAID },
 					}),
 				}),
 				ach(15124, {	-- Shackles of Fate
-					crit(52482, { -- Guardian of the First Ones
+					crit(52482, {	-- Guardian of the First Ones
 						["_encounter"] = { 2446, LFR_RAID },
 					}),
-					crit(52484, { -- Fatescribe Roh-Kalo
+					crit(52484, {	-- Fatescribe Roh-Kalo
 						["_encounter"] = { 2447, LFR_RAID },
 					}),
-					crit(52486, { -- Kel'Thuzad
+					crit(52486, {	-- Kel'Thuzad
 						["_encounter"] = { 2440, LFR_RAID },
 					}),
 				}),
 				ach(15125, {	-- The Reckoning
-					crit(52488, {-- Sylvanas Windrunner
+					crit(52488, {	-- Sylvanas Windrunner
 						["_encounter"] = { 2441, LFR_RAID },
 					}),
 				}),
 				ach(15126, {	-- Sanctum of Domination
-					crit(52471, { -- The Tarragrue
+					crit(52471, {	-- The Tarragrue
 						["_encounter"] = { 2435, LFR_RAID },
 					}),
-					crit(52473, { -- The Eye of the Jailer
+					crit(52473, {	-- The Eye of the Jailer
 						["_encounter"] = { 2442, LFR_RAID },
 					}),
-					crit(52475, { -- The Nine
+					crit(52475, {	-- The Nine
 						["_encounter"] = { 2439, LFR_RAID },
 					}),
-					crit(52477, { -- Remnant of Ner'zhul
+					crit(52477, {	-- Remnant of Ner'zhul
 						["_encounter"] = { 2444, LFR_RAID },
 					}),
-					crit(52479, { -- Soulrender Dormazain
+					crit(52479, {	-- Soulrender Dormazain
 						["_encounter"] = { 2445, LFR_RAID },
 					}),
-					crit(52481, { -- Painsmith Raznal
+					crit(52481, {	-- Painsmith Raznal
 						["_encounter"] = { 2443, LFR_RAID },
 					}),
-					crit(52483, { -- Guardian of the First Ones
+					crit(52483, {	-- Guardian of the First Ones
 						["_encounter"] = { 2446, LFR_RAID },
 					}),
-					crit(52485, { -- Fatescribe Roh-Kalo
+					crit(52485, {	-- Fatescribe Roh-Kalo
 						["_encounter"] = { 2447, LFR_RAID },
 					}),
-					crit(52487, { -- Kel'Thuzad
+					crit(52487, {	-- Kel'Thuzad
 						["_encounter"] = { 2440, LFR_RAID },
 					}),
-					crit(52489, {-- Sylvanas Windrunner
+					crit(52489, {	-- Sylvanas Windrunner
 						["_encounter"] = { 2441, LFR_RAID },
 					}),
 				}),
 				ach(15127, {	-- Heroic: Sanctum of Domination
-					crit(52344, { -- The Tarragrue
+					crit(52344, {	-- The Tarragrue
 						["_encounter"] = { 2435, HEROIC_RAID },
 					}),
-					crit(52345, { -- The Eye of the Jailer
+					crit(52345, {	-- The Eye of the Jailer
 						["_encounter"] = { 2442, HEROIC_RAID },
 					}),
-					crit(52346, { -- The Nine
+					crit(52346, {	-- The Nine
 						["_encounter"] = { 2439, HEROIC_RAID },
 					}),
-					crit(52348, { -- Remnant of Ner'zhul
+					crit(52348, {	-- Remnant of Ner'zhul
 						["_encounter"] = { 2444, HEROIC_RAID },
 					}),
-					crit(52347, { -- Soulrender Dormazain
+					crit(52347, {	-- Soulrender Dormazain
 						["_encounter"] = { 2445, HEROIC_RAID },
 					}),
-					crit(52349, { -- Painsmith Raznal
+					crit(52349, {	-- Painsmith Raznal
 						["_encounter"] = { 2443, HEROIC_RAID },
 					}),
-					crit(52350, { -- Guardian of the First Ones
+					crit(52350, {	-- Guardian of the First Ones
 						["_encounter"] = { 2446, HEROIC_RAID },
 					}),
-					crit(52351, { -- Fatescribe Roh-Kalo
+					crit(52351, {	-- Fatescribe Roh-Kalo
 						["_encounter"] = { 2447, HEROIC_RAID },
 					}),
-					crit(52352, { -- Kel'Thuzad
+					crit(52352, {	-- Kel'Thuzad
 						["_encounter"] = { 2440, HEROIC_RAID },
 					}),
-					crit(52353, {-- Sylvanas Windrunner
+					crit(52353, {	-- Sylvanas Windrunner
 						["_encounter"] = { 2441, HEROIC_RAID },
 					}),
 				}),
@@ -159,100 +159,100 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } 
 				-- Fated
 				ach(15667,	-- Fate of Domination
 				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {
-					crit(53547, { -- The Tarragrue
+					crit(53547, {	-- The Tarragrue
 						["_encounter"] = { 2435, LFR_RAID },
 					}),
-					crit(53548, { -- The Eye of the Jailer
+					crit(53548, {	-- The Eye of the Jailer
 						["_encounter"] = { 2442, LFR_RAID },
 					}),
-					crit(53549, { -- The Nine
+					crit(53549, {	-- The Nine
 						["_encounter"] = { 2439, LFR_RAID },
 					}),
-					crit(53550, { -- Remnant of Ner'zhul
+					crit(53550, {	-- Remnant of Ner'zhul
 						["_encounter"] = { 2444, LFR_RAID },
 					}),
-					crit(53551, { -- Soulrender Dormazain
+					crit(53551, {	-- Soulrender Dormazain
 						["_encounter"] = { 2445, LFR_RAID },
 					}),
-					crit(53552, { -- Painsmith Raznal
+					crit(53552, {	-- Painsmith Raznal
 						["_encounter"] = { 2443, LFR_RAID },
 					}),
-					crit(53553, { -- Guardian of the First Ones
+					crit(53553, {	-- Guardian of the First Ones
 						["_encounter"] = { 2446, LFR_RAID },
 					}),
-					crit(53554, { -- Fatescribe Roh-Kalo
+					crit(53554, {	-- Fatescribe Roh-Kalo
 						["_encounter"] = { 2447, LFR_RAID },
 					}),
-					crit(53555, { -- Kel'Thuzad
+					crit(53555, {	-- Kel'Thuzad
 						["_encounter"] = { 2440, LFR_RAID },
 					}),
-					crit(53556, {-- Sylvanas Windrunner
+					crit(53556, {	-- Sylvanas Windrunner
 						["_encounter"] = { 2441, LFR_RAID },
 					}),
 				})),
 				ach(15668,	-- Heroic: Fate of Domination
 				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {
-					crit(53558, { -- The Tarragrue
+					crit(53558, {	-- The Tarragrue
 						["_encounter"] = { 2435, HEROIC_RAID },
 					}),
-					crit(53559, { -- The Eye of the Jailer
+					crit(53559, {	-- The Eye of the Jailer
 						["_encounter"] = { 2442, HEROIC_RAID },
 					}),
-					crit(53560, { -- The Nine
+					crit(53560, {	-- The Nine
 						["_encounter"] = { 2439, HEROIC_RAID },
 					}),
-					crit(53612, { -- Soulrender Dormazain
+					crit(53612, {	-- Soulrender Dormazain
 						["_encounter"] = { 2445, HEROIC_RAID },
 					}),
-					crit(53562, { -- Remnant of Ner'zhul
+					crit(53562, {	-- Remnant of Ner'zhul
 						["_encounter"] = { 2444, HEROIC_RAID },
 					}),
-					crit(53563, { -- Painsmith Raznal
+					crit(53563, {	-- Painsmith Raznal
 						["_encounter"] = { 2443, HEROIC_RAID },
 					}),
-					crit(53564, { -- Guardian of the First Ones
+					crit(53564, {	-- Guardian of the First Ones
 						["_encounter"] = { 2446, HEROIC_RAID },
 					}),
-					crit(53565, { -- Fatescribe Roh-Kalo
+					crit(53565, {	-- Fatescribe Roh-Kalo
 						["_encounter"] = { 2447, HEROIC_RAID },
 					}),
-					crit(53566, { -- Kel'Thuzad
+					crit(53566, {	-- Kel'Thuzad
 						["_encounter"] = { 2440, HEROIC_RAID },
 					}),
-					crit(53567, {-- Sylvanas Windrunner
+					crit(53567, {	-- Sylvanas Windrunner
 						["_encounter"] = { 2441, HEROIC_RAID },
 					}),
 				})),
 				ach(15669,	-- Mythic: Fate of Domination
 				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {
-					crit(53570, { -- The Tarragrue
+					crit(53570, {	-- The Tarragrue
 						["_encounter"] = { 2435, MYTHIC_RAID },
 					}),
-					crit(53571, { -- The Eye of the Jailer
+					crit(53571, {	-- The Eye of the Jailer
 						["_encounter"] = { 2442, MYTHIC_RAID },
 					}),
-					crit(53572, { -- The Nine
+					crit(53572, {	-- The Nine
 						["_encounter"] = { 2439, MYTHIC_RAID },
 					}),
-					crit(53561, { -- Soulrender Dormazain
+					crit(53561, {	-- Soulrender Dormazain
 						["_encounter"] = { 2445, MYTHIC_RAID },
 					}),
-					crit(53573, { -- Remnant of Ner'zhul
+					crit(53573, {	-- Remnant of Ner'zhul
 						["_encounter"] = { 2444, MYTHIC_RAID },
 					}),
-					crit(53574, { -- Painsmith Raznal
+					crit(53574, {	-- Painsmith Raznal
 						["_encounter"] = { 2443, MYTHIC_RAID },
 					}),
-					crit(53575, { -- Guardian of the First Ones
+					crit(53575, {	-- Guardian of the First Ones
 						["_encounter"] = { 2446, MYTHIC_RAID },
 					}),
-					crit(53576, { -- Fatescribe Roh-Kalo
+					crit(53576, {	-- Fatescribe Roh-Kalo
 						["_encounter"] = { 2447, MYTHIC_RAID },
 					}),
-					crit(53577, { -- Kel'Thuzad
+					crit(53577, {	-- Kel'Thuzad
 						["_encounter"] = { 2440, MYTHIC_RAID },
 					}),
-					crit(53578, {-- Sylvanas Windrunner
+					crit(53578, {	-- Sylvanas Windrunner
 						["_encounter"] = { 2441, MYTHIC_RAID },
 					}),
 				})),

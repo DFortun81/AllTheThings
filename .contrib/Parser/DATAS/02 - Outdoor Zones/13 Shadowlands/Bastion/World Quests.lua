@@ -181,7 +181,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			q(61791),	-- Thenia's Loyal Companions
-			q(59717, { -- Things Remembered
+			q(59717, {	-- Things Remembered
 				ach(14737, {	-- What Bastion Remembered
 					crit(49827),	-- Eridia, Hand of Purity
 					crit(49828),	-- Kalisthene
@@ -193,7 +193,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					crit(49834),	-- Mikanikos
 				}),
 			}),
-			q(59705, { -- Things Remembered
+			q(59705, {	-- Things Remembered
 				["sym"] = {{"select","achievementID",14737}},	-- What Bastion Remembered
 			}),
 			q(62241),	-- Training Regimen

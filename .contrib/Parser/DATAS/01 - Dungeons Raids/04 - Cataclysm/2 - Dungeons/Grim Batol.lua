@@ -136,7 +136,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					}),
 					e(133, {	-- Drahga Shadowburner
 						["crs"] = { 40319 },	-- Drahga Shadowburner
-						["groups"] = {					
+						["groups"] = {
 							i(56450), -- Azureborne Cloak
 							i(56453), -- Crimsonborne Bracers
 							i(56452), -- Earthshape Pauldrons
@@ -146,7 +146,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					}),
 					e(134, {	-- Erudax
 						["crs"] = { 40484 },	-- Erudax
-						["groups"] = {					
+						["groups"] = {
 							ach(5298),	-- Don't Need to Break Eggs to Make an Omelet
 							ach(5062),	-- Heroic: Grim Batol
 							ach(5138),	-- Heroic: Grim Batol Guild Run
@@ -170,7 +170,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					["crs"] = { 39625 },	-- General Umbriss
 					["groups"] = {
 						i(56442), -- Cursed Skardyn Vest
-						i(157612, { -- Dragonkin Ward
+						i(157612, {	-- Dragonkin Ward
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(157596, {	-- Glimmerthread Pantaloons
@@ -184,15 +184,15 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				}),
 				e(132, {	-- Forgemaster Throngus
 					["crs"] = { 40177 },	-- Forgemaster Throngus
-					["groups"] = {				
+					["groups"] = {
 						i(56447), -- Belt of the Forgemaster
 						i(56448), -- Dark Iron Chain Boots
-						i(157613, { -- Geomancy Slicer
+						i(157613, {	-- Geomancy Slicer
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(56445), -- Ring of Dun Algaz
 						i(56449), -- Throngus's Finger
-						i(157597, { -- Troggstitched Drape
+						i(157597, {	-- Troggstitched Drape
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(56446), -- Wand of Untainted Power
@@ -200,14 +200,14 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				}),
 				e(133, {	-- Drahga Shadowburner
 					["crs"] = { 40319 },	-- Drahga Shadowburner
-					["groups"] = {				
+					["groups"] = {
 						i(56450), -- Azureborne Cloak
-						i(157598, { -- Courier's Dragonriding Spaulders
+						i(157598, {	-- Courier's Dragonriding Spaulders
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(56453), -- Crimsonborne Bracers
 						i(56452), -- Earthshape Pauldrons
-						i(157614, { -- Flame Invoker's Treads
+						i(157614, {	-- Flame Invoker's Treads
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(56451), -- Red Scale Boots
@@ -217,12 +217,12 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				e(134, {	-- Erudax
 					["crs"] = { 40484 },	-- Erudax
 					["groups"] = {
-						ach(4840),	-- Grim Batol				
+						ach(4840),	-- Grim Batol
 						i(56464), -- Bracers of Umbral Mending
 						i(56457), -- Circle of Bone
 						i(56463), -- Corrupted Egg Shell
 						i(56460), -- Crown of Enfeebled Bodies
-						i(157615, { -- Flamescale Chain Leggings
+						i(157615, {	-- Flamescale Chain Leggings
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(56462), -- Gale of Shadows
@@ -243,7 +243,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				}),
 				e(134, {	-- Erudax
 					["crs"] = { 40484 },	-- Erudax
-					["groups"] = {	
+					["groups"] = {
 						ach(5298),	-- Don't Need to Break Eggs to Make an Omelet
 						ach(5062),	-- Heroic: Grim Batol
 						ach(5138),	-- Heroic: Grim Batol Guild Run

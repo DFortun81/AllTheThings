@@ -590,16 +590,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(60902, { -- Abercrombie's Gloves
+						i(60902, {	-- Abercrombie's Gloves
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
-						i(60903, { -- Old Man's Legwarmers
+						i(60903, {	-- Old Man's Legwarmers
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
 						i(131579, {	-- Retired Linked Pants
 							["timeline"] = { "added 7.0.3.22248" },
 						}),
-						i(60904, { -- Ring of the Fool
+						i(60904, {	-- Ring of the Fool
 							["timeline"] = { "added 4.0.3.13277" },
 						}),
 					},

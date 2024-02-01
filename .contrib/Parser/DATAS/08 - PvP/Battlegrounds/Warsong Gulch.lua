@@ -146,7 +146,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						1252,	-- Supreme Defender (H)
 						207,	-- Save the Day
 					}},
-					["timeline"] = { "added 3.0.1", "deleted 4.3.0" },
+					["timeline"] = { "added 3.0.1", "removed 4.3.0" },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(166, {	-- Warsong Gulch Victory
@@ -568,7 +568,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						})),
 						-- #endif
 						moh(3, i(20425)),	-- Advisor's Gnarled Staff
-						
+
 						moh(3, i(19550)),	-- Legionnaire's Sword
 						moh(3, i(19551)),	-- Legionnaire's Sword
 						moh(3, i(19552)),	-- Legionnaire's Sword
@@ -580,7 +580,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						})),
 						-- #endif
 						moh(3, i(20430)),	-- Legionnaire's Sword
-						
+
 						moh(3, i(19558)),	-- Outrider's Bow
 						moh(3, i(19559)),	-- Outrider's Bow
 						moh(3, i(19560)),	-- Outrider's Bow
@@ -592,7 +592,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						})),
 						-- #endif
 						moh(3, i(20437)),	-- Outrider's Bow
-						
+
 						moh(3, i(19542)),	-- Scout's Blade
 						moh(3, i(19543)),	-- Scout's Blade
 						moh(3, i(19544)),	-- Scout's Blade
@@ -604,7 +604,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						})),
 						-- #endif
 						moh(3, i(20441)),	-- Scout's Blade
-						
+
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(211500, {	-- Resilient Cloth Headband
 							["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
@@ -619,19 +619,19 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						-- #endif
-						
+
 						moh(1, i(19534)),	-- Scout's Medallion
 						moh(1, i(19535)),	-- Scout's Medallion
 						moh(1, i(19536)),	-- Scout's Medallion
 						moh(1, i(19537)),	-- Scout's Medallion
 						moh(1, i(20442)),	-- Scout's Medallion
-						
+
 						moh(1, i(19526)),	-- Battle Healer's Cloak
 						moh(1, i(19527)),	-- Battle Healer's Cloak
 						moh(1, i(19528)),	-- Battle Healer's Cloak
 						moh(1, i(19529)),	-- Battle Healer's Cloak
 						moh(1, i(20427)),	-- Battle Healer's Cloak
-						
+
 						moh(1, i(19578)),	-- Berserker Bracers
 						moh(1, i(19580)),	-- Berserker Bracers
 						moh(1, i(19581)),	-- Berserker Bracers
@@ -729,7 +729,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						})),
 						-- #endif
 						moh(3, i(19549)),	-- Sentinel's Blade
-						
+
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(211500, {	-- Resilient Cloth Headband
 							["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
@@ -744,19 +744,19 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 							["timeline"] = { "removed 2.0.1" },
 						})),
 						-- #endif
-						
+
 						moh(1, i(19538)),	-- Sentinel's Medallion
 						moh(1, i(19539)),	-- Sentinel's Medallion
 						moh(1, i(19540)),	-- Sentinel's Medallion
 						moh(1, i(19541)),	-- Sentinel's Medallion
 						moh(1, i(20444)),	-- Sentinel's Medallion
-						
+
 						moh(1, i(19530)),	-- Caretaker's Cape
 						moh(1, i(19531)),	-- Caretaker's Cape
 						moh(1, i(19532)),	-- Caretaker's Cape
 						moh(1, i(19533)),	-- Caretaker's Cape
 						moh(1, i(20428)),	-- Caretaker's Cape
-						
+
 						moh(1, i(19578)),	-- Berserker Bracers
 						moh(1, i(19580)),	-- Berserker Bracers
 						moh(1, i(19581)),	-- Berserker Bracers
