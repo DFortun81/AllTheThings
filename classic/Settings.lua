@@ -905,6 +905,7 @@ PrecisionSlider:SetScript("OnValueChanged", function(self, newValue)
 	end
 	settings:SetTooltipSetting("Precision", newValue);
 	app:RedrawWindows("PrecisionSlider");
+	app.HandleEvent("OnPrecisionUpdated");
 end);
 
 -- This creates the "Minimap Button Size" slider.
@@ -2578,6 +2579,7 @@ function(self)
 		app.GetProgressText = app.GetProgressTextDefault;
 	end
 	app:RedrawWindows("ShowRemainingCheckBox");
+	app.HandleEvent("OnShowRemainingCheckBoxUpdated");
 end);
 ShowRemainingCheckBox:SetATTTooltip("Enable this option if you want to see the number of items remaining instead of the progress over total.");
 ShowRemainingCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsForThingsCheckBox, "BOTTOMLEFT", -8, 4);

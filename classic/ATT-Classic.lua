@@ -432,7 +432,7 @@ GameTooltipModel.TrySetModel = function(self, reference)
 	GameTooltipModel.HideAllModels(self);
 	if app.Settings:GetTooltipSetting("Models") then
 		self.lastModel = reference;
-		local displayInfos = reference.displayInfo;-- or GetDisplayID(reference, true);
+		local displayInfos = reference.displayInfo;
 		if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfos) then
 			return true;
 		end
@@ -512,6 +512,46 @@ GameTooltipModel.TrySetModel = function(self, reference)
 	end
 end
 GameTooltipModel:Hide();
+
+GameTooltip.ClearATTReferenceTexture = function(self)
+	GameTooltipIcon.icon.Background:Hide();
+	GameTooltipIcon.icon.Border:Hide();
+	GameTooltipIcon:Hide();
+	GameTooltipModel:Hide();
+end
+GameTooltip.SetATTReferenceTexture = function(self, reference, owner)
+	local texture = reference.preview or reference.icon;
+	if texture then
+		if owner then
+			GameTooltipIcon:ClearAllPoints();
+			GameTooltipModel:ClearAllPoints();
+			if self:GetCenter() > (UIParent:GetWidth() / 2) then
+				GameTooltip:SetOwner(self, "ANCHOR_LEFT");
+				GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
+				GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
+			else
+				GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+				GameTooltipIcon:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
+				GameTooltipModel:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
+			end
+		end
+		if reference.explorationID and reference.maphash and reference.preview then
+			local width, height, offsetX, offsetY = strsplit(":", reference.maphash);
+			GameTooltipIcon:SetSize(tonumber(width) or 72,tonumber(height) or 72);
+		else
+			GameTooltipIcon:SetSize(72,72);
+		end
+		GameTooltipIcon.icon:SetTexture(texture);
+		local texcoord = reference.texcoord;
+		if texcoord then
+			GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
+		else
+			GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
+		end
+		GameTooltipIcon:Show();
+	end
+end
+
 
 app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
 app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
@@ -2833,18 +2873,20 @@ function app:GetDataCache()
 		app.CacheFields(rootData);
 		
 		-- Dynamic Categories
-		local keys,sortedList = {},{};
-		for suffix,window in pairs(app.Windows) do
-			if window and window.IsDynamicCategory then
-				keys[suffix] = window;
+		if app.Windows then
+			local keys,sortedList = {},{};
+			for suffix,window in pairs(app.Windows) do
+				if window and window.IsDynamicCategory then
+					keys[suffix] = window;
+				end
 			end
-		end
-		for suffix,window in pairs(keys) do
-			tinsert(sortedList, suffix);
-		end
-		app.Sort(sortedList, app.SortDefaults.Strings);
-		for i,suffix in ipairs(sortedList) do
-			tinsert(g, app.CreateDynamicCategory(suffix));
+			for suffix,window in pairs(keys) do
+				tinsert(sortedList, suffix);
+			end
+			app.Sort(sortedList, app.SortDefaults.Strings);
+			for i,suffix in ipairs(sortedList) do
+				tinsert(g, app.CreateDynamicCategory(suffix));
+			end
 		end
 
 		-- Track Deaths!
@@ -7242,6 +7284,7 @@ local NPCDisplayIDFromID = setmetatable({}, { __index = function(t, id)
 		if displayID and displayID ~= 0 then
 			rawset(t, id, displayID);
 			app:RedrawWindows("NPCDisplayIDFromID");
+			app.HandleEvent("OnDisplayIDAvailable");
 			return displayID;
 		end
 	end
@@ -8285,6 +8328,7 @@ local function RefreshSaves()
 
 	-- Mark that we're done now.
 	app:RedrawWindows("RefreshSaves");
+	app.HandleEvent("OnSavesUpdated");
 end
 app:RegisterEvent("BOSS_KILL");
 app.events.BOSS_KILL = function(id, name, ...)
