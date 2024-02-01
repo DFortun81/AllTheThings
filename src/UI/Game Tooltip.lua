@@ -107,7 +107,7 @@ local function GetCreatureID(reference)
 		end
 	end
 end
-local function SetReferenceTexture(self, reference)
+local function SetReferenceTexture(reference)
 	local texture = reference.preview or reference.icon;
 	if texture then
 		if reference.explorationID and reference.maphash and reference.preview then
