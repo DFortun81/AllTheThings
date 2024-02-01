@@ -110,6 +110,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					193913,	-- Preserved Animal Parts
 					193898,	-- Umbral Bone Needle
 					193899,	-- Primalweave Spindle
+					-- Weapons
+					201391,	-- Drakonid Enforcer's Hidesplitter
+					201387,	-- Drakonid Stalker's Halberd
+					201386,	-- Drakonid Defender's Pike
+					201394,	-- Drakonid's Jade Bulwark
+					201396,	-- Hidepiercing Claw Extensions
+					201389,	-- Wingcrest Battle Staff
+					201395,	-- Wingcrest Scimitar
+					201390,	-- Devastating Drakonid Waraxe
+					201393,	-- Dragonspawn Spellweaver's Focus
+					201392,	-- Drakonid Striker's Cutlass
 				}},
 				["g"] = {
 					o(383735),	-- Disturbed Dirt
@@ -117,6 +128,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					o(383734),	-- Disturbed Dirt
 					o(383733),	-- Disturbed Dirt
 					o(382029),	-- Disturbed Dirt
+					i(201388),	-- Dragonspawn Wingtipped Staff
 				},
 			}),
 			o(376587, {	-- Expedition Scout's Pack
@@ -152,18 +164,17 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					193899,	-- Primalweave Spindle
 				}},
 				["g"] = {
-					i(201390),	-- Devastating Drakonid Waraxe
-					i(201393),	-- Dragonspawn Spellweaver's Focus
-					i(201388),	-- Dragonspawn Wingtipped Staff
-					i(201386),	-- Drakonid Defender's Pike
 					i(201391),	-- Drakonid Enforcer's Hidesplitter
 					i(201387),	-- Drakonid Stalker's Halberd
-					i(201392),	-- Drakonid Striker's Cutlass
+					i(201386),	-- Drakonid Defender's Pike
 					i(201394),	-- Drakonid's Jade Bulwark
 					i(201396),	-- Hidepiercing Claw Extensions
 					i(201389),	-- Wingcrest Battle Staff
 					i(201395),	-- Wingcrest Scimitar
-
+					i(201390),	-- Devastating Drakonid Waraxe
+					i(201393),	-- Dragonspawn Spellweaver's Focus
+					i(201392),	-- Drakonid Striker's Cutlass
+					
 					i(191384),	-- Aerated Mana Potion +
 					i(191393),	-- Potion of the Hushed Zephyr +
 
