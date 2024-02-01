@@ -7,17 +7,13 @@ root(ROOTS.HiddenAchievementTriggers, {
 	-- When adding a Achievement trigger be sure to put a description of how it triggered
 	tier(CLASSIC_TIER, {
 		--1.14.0.39802
-		-- #if DEBUG
 		-- #if AFTER 3.0.1
 		ach(9275),	-- Warlord Zaela kills (Upper Blackrock Spire)
 		-- #endif
-		-- #endif
 		--1.14.1.40666
-		-- #if DEBUG
 		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
 		ach(15329),	-- Has Died
-		-- #endif
 		-- #endif
 		-- #endif
 		--1.14.1.40688
@@ -26,11 +22,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 		applyclassicphase(SOM_PHASE_ONE, ach(15330)),	-- Survivor of the Firelord (Season of Mastery) \\ Survivor of the Firelord \\ Survivor of the Flames
 		-- #endif
 		-- #endif
-		-- #if DEBUG
 		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
 		applyclassicphase(SOM_PHASE_ONE, ach(15332)),	-- [DNT] Survivor (Season of Mastery) (hidden) \\ Survivor
-		-- #endif
 		-- #endif
 		-- #endif
 		--1.14.1.40800
@@ -42,11 +36,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 		-- #endif
 		-- #endif
 		--1.14.2.42597
-		-- #if DEBUG
 		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
 		ach(15578),	-- <Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits
-		-- #endif
 		-- #endif
 		-- #endif
 		--1.14.3.42770
@@ -65,9 +57,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(15021),	-- Rival: Season 1
 		ach(15022),	-- Challenger: Season 1
 		ach(15018),	-- Infernal Gladiator
-		-- #if DEBUG
 		ach(15198),	-- [DNT] BCC Arena Tournament - Vanquisher Title
-		-- #endif
 		-- #endif
 		-- #endif
 		--2.5.2.39570
@@ -88,11 +78,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 		-- #endif
 		-- #endif
 		--2.5.4.44833
-		-- #if DEBUG
 		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
 		ach(15853),	-- <Hidden> Joyous Journeys - Hit 70 with Buff Joyous Journeys
-		-- #endif
 		-- #endif
 		-- #endif
 	}),
@@ -541,18 +529,14 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(16314),	-- Gladiator: Season 5
 		ach(16315),	-- Duelist: Season 5
 		ach(16316),	-- Challenger: Season 5
-		-- #if DEBUG
 		ach(16397),	-- [DNT] Heirloom Tracking - Bloodied Arcanite Reaper (Hidden)
 		ach(16437),	-- [DNT] Soul of Iron Tracker (Season of Mastery) (hidden)
-		-- #endif
 		-- #endif
 		-- #endif
 		--3.4.1.47966
 		-- #if ANYCLASSIC
 		-- #if AFTER 3.0.1
-		-- #if DEBUG
 		ach(17328),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
-		-- #endif
 		-- #endif
 		-- #endif
 		--3.4.2.49311
@@ -562,10 +546,8 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(17416),	-- Gladiator: Season 6
 		ach(17417),	-- Duelist: Season 6
 		ach(17418),	-- Challenger: Season 6
-		-- #if DEBUG
 		ach(18375),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
 		ach(18376),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden)
-		-- #endif
 		-- #endif
 		-- #endif
 		--3.4.2.49658
