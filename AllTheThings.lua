@@ -4907,6 +4907,18 @@ local function SendSocialMessage(msg)
 	SendGuildMessage(msg);
 end
 
+local lastProgressUpdateMessage;
+app.AddEventHandler("OnRefreshComplete", function()
+	-- Send a message to your party members.
+	local data = app:GetWindow("Prime").data;
+	local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0);
+	if lastProgressUpdateMessage ~= msg then
+		lastProgressUpdateMessage = msg;
+		SendSocialMessage(msg);
+	end
+end);
+
+
 -- Synchronization Functions
 (function()
 local outgoing,incoming,queue,active = {},{},{};
@@ -11416,13 +11428,9 @@ local function UpdateWindowsOnEnd()
 	app.Processing_UpdateWindows = nil;
 	app.Processing_RefreshWindows = nil;
 	app.refreshDataGot = nil;
-	-- Send a message to your party members.
-	local data = app:GetWindow("Prime").data;
-	local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0);
-	if app.lastMsg ~= msg then
-		SendSocialMessage(msg);
-		app.lastMsg = msg;
-	end
+	
+	-- Execute the OnRefreshComplete handlers.
+	app.HandleEvent("OnRefreshComplete");
 	wipe(searchCache);
 end
 local function UpdateWindows(force, got)
@@ -13481,12 +13489,31 @@ function app:GetDataCache()
 		__index = function(t, key)
 			-- app.PrintDebug("Top-Root-Get",key)
 			if key == "title" then
-				return t.mb_title1..DESCRIPTION_SEPARATOR..t.mb_title2;
+				return t.modeString .. DESCRIPTION_SEPARATOR .. t.untilNextPercentage;
+			elseif key == "progressText" then
+				if t.total < 1 then
+					local primeData = app.CurrentCharacter.PrimeData;
+					if primeData then
+						return GetProgressColorText(primeData.progress, primeData.total);
+					end
+				end
+				return GetProgressColorText(t.progress, t.total);
+			elseif key == "modeString" then
+				return app.Settings:GetModeString();
+			elseif key == "untilNextPercentage" then
+				if t.total < 1 then
+					local primeData = app.CurrentCharacter.PrimeData;
+					if primeData then
+						return app.Modules.Color.GetProgressTextToNextPercent(primeData.progress, primeData.total);
+					end
+				end
+				return app.Modules.Color.GetProgressTextToNextPercent(t.progress, t.total);
+			elseif key == "visible" then
+				return true;
+			else
+				-- Something that isn't dynamic.
+				return table[key];
 			end
-			if key == "mb_title1" then return app.Settings:GetModeString(); end
-			if key == "mb_title2" then return not t.TLUG and L["MAIN_LIST_REQUIRES_REFRESH"] or app.Modules.Color.GetProgressTextToNextPercent(t.progress, t.total); end
-			if key == "progressText" then return GetProgressColorText(t.progress, t.total); end
-			if key == "visible" then return true; end
 		end,
 		__newindex = function(t, key, val)
 			-- app.PrintDebug("Top-Root-Set",key,val)

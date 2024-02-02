@@ -226,6 +226,7 @@ local L = {
 	["REPORT_INACCURATE_QUEST"] = "Wrong Quest Info! (Click to Report)";
 	["NESTED_QUEST_REQUIREMENTS"] = "Nested Quest Requirements";
 	["MAIN_LIST_REQUIRES_REFRESH"] = "[Open Main list to update progress]";
+	["UPDATES_PAUSED"] = "Updates Paused";
 	["DOES_NOT_CONTRIBUTE_TO_PROGRESS"] = "|cffe08207This group and its content do not contribute to the progress of this window since it is Sourced in another Location!|r";
 	["CURRENCY_NEEDED_TO_BUY"] = "Estimated amount needed to obtain remaining Things";
 	["LOCK_CRITERIA_LEVEL_LABEL"] = "Player Level";

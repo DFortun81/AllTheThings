@@ -2000,6 +2000,21 @@ local function SendResponseMessage(msg, player)
 		C_ChatInfo.SendAddonMessage("ATTC", msg, "WHISPER", player);
 	end
 end
+local function SendSocialMessage(msg)
+	SendGroupMessage(msg);
+	SendGuildMessage(msg);
+end
+
+local lastProgressUpdateMessage;
+app.AddEventHandler("OnRefreshComplete", function()
+	-- Send a message to your party members.
+	local data = (app.CurrentCharacter and app.CurrentCharacter.PrimeData) or app:GetDataCache();
+	local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0) .. "\t" .. data.modeString;
+	if lastProgressUpdateMessage ~= msg then
+		lastProgressUpdateMessage = msg;
+		SendSocialMessage(msg);
+	end
+end);
 
 -- Item Information Lib
 local function SearchForLink(link)
@@ -9550,18 +9565,12 @@ local function RefreshData(source, trigger)
 		else
 			app:UpdateWindows(source, nil, refreshFromTrigger);
 		end
-		refreshFromTrigger = nil;
-
-		-- Send a message to your party members.
-		local data = (app.CurrentCharacter and app.CurrentCharacter.PrimeData) or app:GetDataCache();
-		msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0) .. "\t" .. data.modeString;
-		if app.lastProgressUpdateMessage ~= msg then
-			SendGroupMessage(msg);
-			SendGuildMessage(msg);
-			app.lastProgressUpdateMessage = msg;
-		end
 		wipe(app.searchCache);
+		refreshFromTrigger = nil;
 		currentlyRefreshingData = nil;
+		
+		-- Execute the OnRefreshComplete handlers.
+		app.HandleEvent("OnRefreshComplete");
 	end);
 end
 function app:RefreshDataCompletely(source, trigger)
