@@ -31,6 +31,8 @@ local assetRootPath = "Interface\\Addons\\" .. appName .. "\\assets\\";
 app.asset = function(path)
 	return assetRootPath .. path;
 end
+app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
+app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
 app.EmptyFunction = function() end;
 app.ReturnTrue = function() return true; end
 app.ReturnFalse = function() return false; end

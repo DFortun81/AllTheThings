@@ -143,8 +143,6 @@ end
 --]]
 
 -- Coroutine Helper Functions
-app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
-app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
 local Push = app.Push;
 local StartCoroutine = app.StartCoroutine;
 local Callback = app.CallbackHandlers.Callback;

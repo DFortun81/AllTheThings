@@ -219,12 +219,6 @@ app.GetDataMember = GetDataMember;
 app.SetDataSubMember = SetDataSubMember;
 app.GetDataSubMember = GetDataSubMember;
 
-app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
-app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
-app.print = function(...)
-	print(L["TITLE"], ...);
-end
-
 
 -- Color Lib
 local function GetCollectionIcon(state)
