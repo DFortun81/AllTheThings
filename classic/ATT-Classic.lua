@@ -560,17 +560,7 @@ local function GetDeepestRelativeValue(group, field)
 		return GetDeepestRelativeValue(group.parent, field) or group[field];
 	end
 end
-
-app.DoModuleEvent = function(eventName)
-	-- See if any Modules have the event function defined, and call them now
-	local func
-	for _,module in pairs(app.Modules) do
-		func = module[eventName]
-		if func and type(func) == "function" then
-			func(ATTAccountWideData)
-		end
-	end
-end
+app.GetDeepestRelativeValue = GetDeepestRelativeValue;
 
 -- Search Caching
 local searchCache = {};
@@ -11307,7 +11297,6 @@ app.events.VARIABLES_LOADED = function()
 		
 		-- Execute the OnStartup handlers.
 		app.HandleEvent("OnStartup");
-		app.DoModuleEvent("OnStartup")
 		
 		-- Check for Season of Discovery
 		local season = C_Seasons and C_Seasons.GetActiveSeason() or 0;
@@ -11329,11 +11318,5 @@ app.events.VARIABLES_LOADED = function()
 		
 		-- Mark that we're ready now!
 		app.IsReady = true;
-		
-		-- See if any Modules have 'OnReady' functions defined, and call them now
-		app.DoModuleEvent("OnReady");
 	end);
 end
-
--- See if any Modules have 'OnLoad' functions defined, and call them now
-app.DoModuleEvent("OnLoad")
