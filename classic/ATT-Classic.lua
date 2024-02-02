@@ -64,36 +64,6 @@ local SearchForField, SearchForFieldContainer
 	= app.SearchForField, app.SearchForFieldContainer;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 
--- Local Variables
-local ALLIANCE_ONLY = {
-	1,
-	3,
-	4,
-	7,
-	11,
-	22,
-	25,
-	29,
-	30,
-	32,
-	34,
-	37,
-};
-local HORDE_ONLY = {
-	2,
-	5,
-	6,
-	8,
-	9,
-	10,
-	26,
-	27,
-	28,
-	31,
-	35,
-	36,
-};
-
 -- Helper Functions
 local UpdateGroups;
 local constructor = function(id, t, typeID)
