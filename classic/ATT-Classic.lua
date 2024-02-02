@@ -1964,13 +1964,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		return group;
 	end
 end
-local function SendGroupChatMessage(msg)
-	if IsInRaid() then
-		SendChatMessage(msg, "RAID", nil, nil);
-	elseif IsInGroup(LE_PARTY_CATEGORY_HOME) then
-		SendChatMessage(msg, "PARTY", nil, nil);
-	end
-end
 
 -- Item Information Lib
 local function SearchForLink(link)
