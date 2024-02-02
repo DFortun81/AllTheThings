@@ -549,12 +549,6 @@ local function GetRelativeDifficulty(group, difficultyID)
 		end
 	end
 end
-local function GetRelativeMap(group, currentMapID)
-	if group then
-		return group.mapID or (group.maps and (contains(group.maps, currentMapID) and currentMapID or group.maps[1])) or GetRelativeMap(group.parent, currentMapID);
-	end
-	return currentMapID;
-end
 local function GetDeepestRelativeValue(group, field)
 	if group then
 		return GetDeepestRelativeValue(group.parent, field) or group[field];
@@ -1977,9 +1971,6 @@ local function SendGroupChatMessage(msg)
 		SendChatMessage(msg, "PARTY", nil, nil);
 	end
 end
-
-
-
 
 -- Item Information Lib
 local function SearchForLink(link)
@@ -10877,10 +10868,6 @@ app:GetWindow("Prime", {
 		end
 	end
 end)();
-
-
-
--- Game Events that trigger computation updates.
 
 -- Startup Event
 app:RegisterEvent("ADDON_LOADED");

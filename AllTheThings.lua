@@ -1401,13 +1401,7 @@ app.GetIndicatorIcon = function(group)
 	end
 	return GetUnobtainableTexture(group);
 end
-local function SetIndicatorIcon(self, data)
-	local texture = app.GetIndicatorIcon(data);
-	if texture then
-		self:SetTexture(texture);
-		return true;
-	end
-end
+
 local function GetRelativeDifficulty(group, difficultyID)
 	if group then
 		if group.difficultyID then
@@ -1429,12 +1423,6 @@ local function GetRelativeDifficulty(group, difficultyID)
 			return true;
 		end
 	end
-end
-local function GetRelativeMap(group, currentMapID)
-	if group then
-		return group.mapID or (group.maps and (contains(group.maps, currentMapID) and currentMapID or group.maps[1])) or GetRelativeMap(group.sourceParent or group.parent, currentMapID);
-	end
-	return currentMapID;
 end
 local function GetRelativeFieldInSet(group, field, set)
 	if group then
@@ -11513,6 +11501,13 @@ local function SetPortraitIcon(self, data)
 		else
 			self:SetTexCoord(0, 1, 0, 1);
 		end
+		return true;
+	end
+end
+local function SetIndicatorIcon(self, data)
+	local texture = app.GetIndicatorIcon(data);
+	if texture then
+		self:SetTexture(texture);
 		return true;
 	end
 end
