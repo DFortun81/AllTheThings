@@ -145,8 +145,6 @@ faction(790),	-- Spirit Guide - Alliance
 faction(829),	-- Ogre (Captain Kromcrush)
 faction(849),	-- Spirit Guide - Horde
 faction(869),	-- Jaedenar
-faction(891),	-- Alliance Forces
-faction(892),	-- Horde Forces
 faction(893),	-- Revantusk Trolls
 faction(912),	-- Might of Kalimdor
 faction(915),	-- Armies of C'Thun
@@ -180,7 +178,6 @@ faction(925),	-- Sunstriders
 faction(926),	-- Magister's Guild
 faction(927),	-- PLAYER, Draenei
 faction(929),	-- Bloodmaul Clan
-faction(936),	-- Shattrath City
 faction(937),	-- Troll, Forest
 faction(938),	-- The Omenai
 faction(939),	-- DEPRECATED
@@ -328,7 +325,6 @@ faction(1113),	-- Mount - Taxi - Horde
 faction(1114),	-- Mount - Taxi - Neutral
 faction(1115),	-- Elemental, Water
 faction(1116),	-- Elemental, Air
-faction(1117),	-- Sholazar Basin
 3.0.1.8874
 faction(1120),	-- Iron Giants
 faction(1121),	-- Frost Vrykul
@@ -362,7 +358,6 @@ faction(1161),	-- Grimtotem
 faction(1163),	-- New test rep for Alex
 faction(1166),	-- Test Faction 5
 faction(1167),	-- Test Faction 5
-faction(1169),	-- Guild
 4.3.4.15595
 faction(1179),	-- Slime
 faction(1181),	-- Friendly, New
@@ -428,7 +423,6 @@ faction(1716),	-- GarInvasion_Breakers
 faction(1717),	-- GarInvasion_ThunderLord
 faction(1718),	-- GarInvasion_Shadowmoon
 faction(1732),	-- Steamwheedle Draenor Expedition
-faction(1735),	-- Barracks Bodyguards
 faction(1746),	-- Nagrand Gronn
 faction(1747),	-- Coliseum Treasure
 faction(1756),	-- LVA_Looters
