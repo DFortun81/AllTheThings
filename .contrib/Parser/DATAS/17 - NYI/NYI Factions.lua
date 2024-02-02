@@ -188,6 +188,7 @@ root(ROOTS.NeverImplemented, {
 			faction(926),	-- Magister's Guild
 			faction(927),	-- PLAYER, Draenei
 			faction(929),	-- Bloodmaul Clan
+			faction(936),	-- Shattrath City
 			faction(937),	-- Troll, Forest
 			faction(938),	-- The Omenai
 			faction(939),	-- DEPRECATED
@@ -338,6 +339,7 @@ root(ROOTS.NeverImplemented, {
 				faction(1114),	-- Mount - Taxi - Neutral
 				faction(1115),	-- Elemental, Water
 				faction(1116),	-- Elemental, Air
+				faction(1117),	-- Sholazar Basin
 				faction(1118),	-- Classic
 				faction(1120),	-- Iron Giants
 				faction(1121),	-- Frost Vrykul

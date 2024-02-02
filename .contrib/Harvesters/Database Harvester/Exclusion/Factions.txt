@@ -214,7 +214,6 @@ faction(975),	-- Void Anomaly
 faction(976),	-- Hyjal Defenders
 faction(977),	-- Hyjal Invaders
 faction(979),	-- Earthen Ring, Old World \\ Earthen Ring
-faction(980),	-- The Burning Crusade \\ Outland
 faction(981),	-- Arakkoa
 faction(982),	-- Zangarmarsh Banner (Alliance)
 faction(983),	-- Zangarmarsh Banner (Horde)
@@ -313,7 +312,6 @@ faction(1092),	-- Azjol-Nerub
 faction(1093),	-- REUSE
 faction(1095),	-- Grizzly Hills Trapper
 faction(1096),	-- REUSE
-faction(1097),	-- Wrath of the Lich King \\ Northrend
 faction(1099),	-- Wrathgate Scourge
 faction(1100),	-- Wrathgate Alliance
 faction(1101),	-- Wrathgate Horde
@@ -331,7 +329,6 @@ faction(1114),	-- Mount - Taxi - Neutral
 faction(1115),	-- Elemental, Water
 faction(1116),	-- Elemental, Air
 faction(1117),	-- Sholazar Basin
-faction(1118),	-- Classic
 3.0.1.8874
 faction(1120),	-- Iron Giants
 faction(1121),	-- Frost Vrykul
@@ -362,7 +359,6 @@ faction(1152),	-- PLAYER, Goblin
 faction(1153),	-- PLAYER, Worgen
 faction(1157),	-- Pygmy
 faction(1161),	-- Grimtotem
-faction(1162),	-- Cataclysm
 faction(1163),	-- New test rep for Alex
 faction(1166),	-- Test Faction 5
 faction(1167),	-- Test Faction 5
@@ -380,7 +376,6 @@ faction(1241),	-- CoT Well of Eternity - Hunter Stalkers
 faction(1265),	-- Shen'dralar
 5.0.3.15882
 faction(1243),	-- Hozen
-faction(1245),	-- Mists of Pandaria
 faction(1249),	-- PLAYER, Expansion 4 Neutral
 faction(1252),	-- Sha
 faction(1253),	-- Guardians of the East Temple
@@ -404,7 +399,6 @@ faction(1416),	-- Akama's Trust
 faction(1433),	-- Monster, Enforced Neutral For Force Reaction
 faction(1440),	-- Darkspear Rebellion
 faction(1443),	-- Kor'kron
-faction(1444),	-- Warlords of Draenor
 faction(1447),	-- Darkspear Trolls
 faction(1457),	-- Forelings
 faction(1483),	-- Foreling-Eaters
@@ -445,7 +439,6 @@ faction(1760),	-- Highmaul Gladiators
 faction(1786),	-- Burning Legion Invaders
 faction(1815),	-- Gilnean Survivors
 faction(1833),	-- Uncrowned
-faction(1834),	-- Legion
 faction(1861),	-- Arcane Thirst (Silgryn) DEPRECATED
 faction(1888),	-- Jandvik Vrykul
 faction(1899),	-- Moonguard
@@ -482,7 +475,6 @@ faction(2230),	-- PLAYER, Highmountain Tauren
 faction(2231),	-- PLAYER, Nightborne
 faction(2232),	-- PLAYER, Lightforged Draenei
 8.0.1.25902
-faction(2104),	-- Battle for Azeroth
 faction(2105),	-- Nazmani
 faction(2111),	-- Zandalari Dinosaurs
 faction(2120),	-- Kul Tiras - Tiragarde \\ Kul Tiras
@@ -547,7 +539,6 @@ faction(2406),	-- House of the Chosen \\ 9.0 Maldraxxus - Warriors
 faction(2408),	-- Dark Kyrian
 faction(2411),	-- Stone Legion
 faction(2412),	-- Sinfall
-faction(2414),	-- Shadowlands
 faction(2422),	-- The Wild Hunt \\ Night Fae
 faction(2437),	-- Torghast - Guard
 faction(2438),	-- Torghast - Prisoner
@@ -570,7 +561,6 @@ faction(2480),	-- Automa
 faction(2481),	-- Automa (Paragon)
 faction(2502),	-- Zereth Mortis Lured Monsters
 10.0.0.44649
-faction(2506),	-- Dragonflight
 faction(2504),	-- Maruuk Centaur (Paragon)
 faction(2508),	-- Dragonscale Expedition (Paragon)
 faction(2521),	-- Clan Nokhud (Paragon)
