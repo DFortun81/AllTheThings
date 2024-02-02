@@ -416,6 +416,7 @@ i(180175);	-- A Treatise on Henbestian Logic
 i(176857);	-- Abrasive Foot
 i(178172);	-- Abrasive Sand
 i(184566);	-- Adrima's Potpourri
+i(179986);	-- Agonized Echoes
 i(181781);	-- Almost Empty Amontillado Cask
 i(184563);	-- Anima Condenser
 i(181722);	-- Antiquated Verdigris Coin

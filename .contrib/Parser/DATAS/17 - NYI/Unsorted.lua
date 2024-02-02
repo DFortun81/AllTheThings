@@ -3668,8 +3668,6 @@ root(ROOTS.Unsorted, {
 			--- Leftovers ---
 			i(171206),	-- Forgotten Weapon
 			i(171209),	-- Blooded Satchel
-			i(171210),	-- Satchel of Nature's Bounty
-			i(171211),	-- Venthyr's Coin Purse
 			i(171989),	-- Pouch of Spores
 			i(174078),	-- Primrose's Pyrotechnic Powder
 			i(174741),	-- Bell of Remembrance
@@ -3682,7 +3680,6 @@ root(ROOTS.Unsorted, {
 			i(179295),	-- Squeaky Bat - NYI \\ Squeaky Bat
 			i(179392),	-- Orb of Burgeoning Ambition
 			i(179535),	-- Crumbling Pride Extractors
-			i(179986),	-- Agonized Echoes
 			i(180008),	-- Resonating Anima Core
 			i(180049),	-- Steward's Silver Key
 			i(180170),	-- Pulsing Animacone
