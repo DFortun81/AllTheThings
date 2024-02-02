@@ -3312,17 +3312,6 @@ end)
 checkboxShowCollectedThings:SetATTTooltip(L["SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP"])
 checkboxShowCollectedThings:AlignBelow(checkboxShowCompletedGroups)
 
-local checkboxUseMoreColors = child:CreateCheckBox(L["MORE_COLORS_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("UseMoreColors"))
-end,
-function(self)
-	settings:SetTooltipSetting("UseMoreColors", self:GetChecked())
-	app:UpdateWindows()
-end)
-checkboxUseMoreColors:SetATTTooltip(L["MORE_COLORS_CHECKBOX_TOOLTIP"])
-checkboxUseMoreColors:AlignBelow(checkboxShowCollectedThings)
-
 local checkboxNestedNPCData = child:CreateCheckBox(L["NPC_DATA_NESTED_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("NPCData:Nested"))
@@ -3333,7 +3322,7 @@ function(self)
 	app.LocationTrigger(true)
 end)
 checkboxNestedNPCData:SetATTTooltip(L["NPC_DATA_NESTED_CHECKBOX_TOOLTIP"])
-checkboxNestedNPCData:AlignBelow(checkboxUseMoreColors)
+checkboxNestedNPCData:AlignBelow(checkboxShowCollectedThings)
 
 local checkboxNestedQuestChains = child:CreateCheckBox(L["QUEST_CHAIN_NESTED_CHECKBOX"],
 function(self)
@@ -4134,6 +4123,17 @@ headerColors:SetPoint("TOPLEFT", child, 0, 0)
 local textHeader = child:CreateTextLabel(Colorize(L["ACCESSIBILITY_EXPLAIN"], app.Colors.White))
 textHeader:SetPoint("TOPLEFT", headerColors, "BOTTOMLEFT", 0, -4)
 
+local checkboxUseMoreColors = child:CreateCheckBox(L["MORE_COLORS_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("UseMoreColors"))
+end,
+function(self)
+	settings:SetTooltipSetting("UseMoreColors", self:GetChecked())
+	app:UpdateWindows()
+end)
+checkboxUseMoreColors:SetATTTooltip(L["MORE_COLORS_CHECKBOX_TOOLTIP"])
+checkboxUseMoreColors:SetPoint("TOPLEFT", textHeader, "BOTTOMLEFT", 0, -5)
+
 local buttonDefault = child:CreateButton(
 { text = L["DEFAULT"], tooltip = L["RESET_TOOLTIP"], },
 {
@@ -4142,10 +4142,10 @@ local buttonDefault = child:CreateButton(
 		app:UpdateWindows()
 	end,
 })
-buttonDefault:SetPoint("TOPLEFT", textHeader, "BOTTOMLEFT", 0, -5)
+buttonDefault:SetPoint("TOPLEFT", checkboxUseMoreColors.Text, "TOPRIGHT", 10, 5)
 
 local textBreadcrumbs = child:CreateTextLabel(Colorize(L["BREADCRUMBS"], app.Colors.White))
-textBreadcrumbs:SetPoint("TOPLEFT", buttonDefault, "BOTTOMLEFT", 0, -10)
+textBreadcrumbs:SetPoint("TOPLEFT", checkboxUseMoreColors, "BOTTOMLEFT", 0, -6)
 	
 local function breadcrumbColor(restore)
 	local newR, newG, newB, newA
