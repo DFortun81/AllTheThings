@@ -9578,7 +9578,28 @@ local function LoadSettingsForWindow(self)
 	self.Settings = settings;
 	self:Load();
 end
-local function LoadSettingsForWindows(windowSettings)
+app.AddEventHandler("OnStartup", function()
+	-- Setup the Saved Variables if they aren't already.
+	local savedVariables = AllTheThingsSavedVariables;
+	if not AllTheThingsSavedVariables then
+		savedVariables = {};
+		AllTheThingsSavedVariables = savedVariables;
+	end
+	local windowSettings = savedVariables.Windows;
+	if not windowSettings then
+		windowSettings = {};
+		savedVariables.Windows = windowSettings;
+	end
+	
+	-- Rename the old mini list settings container.
+	local oldMiniListData = windowSettings.CurrentInstance;
+	if oldMiniListData then
+		print("Found old Mini List Data settings");
+		windowSettings.CurrentInstance = nil;
+		windowSettings.MiniList = oldMiniListData;
+	end
+	
+	-- Load the Window Settings
 	if AllWindowSettings then
 		return;
 	end
@@ -9611,7 +9632,8 @@ local function LoadSettingsForWindows(windowSettings)
 		settings.visible = false;
 		app:CreateMiniListFromSource(settings.key, settings.id, settings.sourcePath);
 	end
-end
+end);
+
 app:RegisterEvent("PLAYER_LOGOUT");
 app.events.PLAYER_LOGOUT = function()
 	for _, window in pairs(app.Windows) do
@@ -11564,27 +11586,6 @@ app.events.VARIABLES_LOADED = function()
 		app.CurrentMapID = app.GetCurrentMapID();
 		
 		C_ChatInfo.RegisterAddonMessagePrefix("ATTC");
-
-		-- Setup the Saved Variables if they aren't already.
-		local savedVariables = AllTheThingsSavedVariables;
-		if not AllTheThingsSavedVariables then
-			savedVariables = {};
-			AllTheThingsSavedVariables = savedVariables;
-		end
-		local windowSettings = savedVariables.Windows;
-		if not windowSettings then
-			windowSettings = {};
-			savedVariables.Windows = windowSettings;
-		end
-		
-		-- Rename the old mini list settings container.
-		local oldMiniListData = windowSettings.CurrentInstance;
-		if oldMiniListData then
-			print("Found old Mini List Data settings");
-			windowSettings.CurrentInstance = nil;
-			windowSettings.MiniList = oldMiniListData;
-		end
-		LoadSettingsForWindows(windowSettings);
 
 		-- Execute the OnReady handlers.
 		app.HandleEvent("OnReady");
