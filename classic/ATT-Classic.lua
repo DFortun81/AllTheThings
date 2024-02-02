@@ -1977,44 +1977,9 @@ local function SendGroupChatMessage(msg)
 		SendChatMessage(msg, "PARTY", nil, nil);
 	end
 end
-local function SendGroupMessage(msg)
-	if IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance() then
-		C_ChatInfo.SendAddonMessage("ATTC", msg, "INSTANCE_CHAT")
-	elseif IsInRaid() then
-		C_ChatInfo.SendAddonMessage("ATTC", msg, "RAID")
-	elseif IsInGroup(LE_PARTY_CATEGORY_HOME) then
-		C_ChatInfo.SendAddonMessage("ATTC", msg, "PARTY")
-	end
-end
-local function SendGuildMessage(msg)
-	if IsInGuild() then
-		C_ChatInfo.SendAddonMessage("ATTC", msg, "GUILD");
-	else
-		app.events.CHAT_MSG_ADDON("ATTC", msg, "WHISPER", "player");
-	end
-end
-local function SendResponseMessage(msg, player)
-	if UnitInRaid(player) or UnitInParty(player) then
-		SendGroupMessage("to\t" .. player .. "\t" .. msg);
-	else
-		C_ChatInfo.SendAddonMessage("ATTC", msg, "WHISPER", player);
-	end
-end
-local function SendSocialMessage(msg)
-	SendGroupMessage(msg);
-	SendGuildMessage(msg);
-end
 
-local lastProgressUpdateMessage;
-app.AddEventHandler("OnRefreshComplete", function()
-	-- Send a message to your party members.
-	local data = (app.CurrentCharacter and app.CurrentCharacter.PrimeData) or app:GetDataCache();
-	local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0) .. "\t" .. data.modeString;
-	if lastProgressUpdateMessage ~= msg then
-		lastProgressUpdateMessage = msg;
-		SendSocialMessage(msg);
-	end
-end);
+
+
 
 -- Item Information Lib
 local function SearchForLink(link)
@@ -10913,130 +10878,7 @@ app:GetWindow("Prime", {
 	end
 end)();
 
--- Addon Message Handling
-app:RegisterEvent("CHAT_MSG_ADDON");
-app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID, ...)
-	if prefix == "ATTC" then
-		--print(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID, ...)
-		local args = { strsplit("\t", text) };
-		local cmd = args[1];
-		if cmd then
-			local a = args[2];
-			if cmd == "?" then		-- Query Request
-				local response;
-				if a then
-					if a == "a" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.Achievements[b] and 1 or 0);
-						end
-					elseif a == "e" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.Exploration[b] and 1 or 0);
-						end
-					elseif a == "f" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.Factions[b] and 1 or 0);
-						end
-					elseif a == "fp" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.FlightPaths[b] and 1 or 0);
-						end
-					elseif a == "p" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.BattlePets[b] and 1 or 0);
-						end
-					elseif a == "q" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (IsQuestFlaggedCompleted(b) and 1 or 0);
-						end
-					--[[
-					elseif a == "s" then
-						response = "s";
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (ATTAccountWideData.Sources[b] or 0);
-						end
-					]]--
-					elseif a == "sp" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.Spells[b] and 1 or 0);
-						end
-					elseif a == "t" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.Titles[b] and 1 or 0);
-						end
-					elseif a == "toy" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (ATTAccountWideData.Toys[b] and 1 or 0);
-						end
-					end
-				else
-					local character = app.CurrentCharacter;
-					if character then
-						local data = character.PrimeData;
-						if data then
-							response = "ATTC\t" .. (data.progress or 0) .. "\t" .. (data.total or 0) .. "\t" .. data.modeString;
-						end
-					end
-				end
-				if response then SendResponseMessage("!\t" .. response, sender); end
-			elseif cmd == "!" then	-- Query Response
-				if a == "ATTC" then
-					print(target .. ": " .. GetProgressColorText(tonumber(args[3]), tonumber(args[4])) .. " " .. args[5]);
-				end
-			elseif cmd == "to" then	-- To Command
-				local myName = UnitName("player");
-				local name,server = strsplit("-", a);
-				if myName == name and (not server or GetRealmName() == server) then
-					app.events.CHAT_MSG_ADDON(prefix, strsub(text, 5 + strlen(a)), "WHISPER", sender);
-				end
-			end
-		end
-	end
-end
-SLASH_ATTGUILD1 = "/attguild";
-SlashCmdList["ATTGUILD"] = function(cmd)
-	C_ChatInfo.SendAddonMessage("ATTC", "?", "GUILD");
-end
-SLASH_ATTRAID1 = "/attraid";
-SlashCmdList["ATTRAID"] = function(cmd)
-	C_ChatInfo.SendAddonMessage("ATTC", "?", "RAID");
-end
-SLASH_ATTYELL1 = "/attyell";
-SlashCmdList["ATTYELL"] = function(cmd)
-	C_ChatInfo.SendAddonMessage("ATTC", "?", "YELL");
-end
-SLASH_ATTWHO1 = "/attu";
-SlashCmdList["ATTWHO"] = function(cmd)
-	local name,server = UnitName("target");
-	if name then
-		if UnitIsPlayer("target") then
-			SendResponseMessage("?", server and (name .. "-" .. server) or name);
-		else
-			local cmd = "creatureid:" .. select(6, strsplit("-", UnitGUID("target")));
-			local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-			if group then app:CreateMiniListForGroup(group); end
-		end
-	end
-end
+
 
 -- Game Events that trigger computation updates.
 
@@ -11319,8 +11161,6 @@ app.events.VARIABLES_LOADED = function()
 
 		-- Cache some things
 		app.CurrentMapID = app.GetCurrentMapID();
-		
-		C_ChatInfo.RegisterAddonMessagePrefix("ATTC");
 
 		-- Execute the OnReady handlers.
 		app.HandleEvent("OnReady");

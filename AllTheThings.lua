@@ -593,11 +593,6 @@ app.RefreshTradeSkillCache = function()
 end
 end -- TradeSkill Functionality
 
-
-
-
-
-
 -- Screenshot
 function app:TakeScreenShot(type)
 	if app.Settings:GetTooltipSetting("Screenshot") and (not type or app.Settings:Get("Thing:"..type)) then
@@ -4879,44 +4874,7 @@ app.HasCost = function(group, idType, id)
 	return false;
 end
 
-local function SendGroupMessage(msg)
-	if IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance() then
-		C_ChatInfo.SendAddonMessage("ATT", msg, "INSTANCE_CHAT")
-	elseif IsInRaid() then
-		C_ChatInfo.SendAddonMessage("ATT", msg, "RAID")
-	elseif IsInGroup(LE_PARTY_CATEGORY_HOME) then
-		C_ChatInfo.SendAddonMessage("ATT", msg, "PARTY")
-	end
-end
-local function SendGuildMessage(msg)
-	if IsInGuild() then
-		C_ChatInfo.SendAddonMessage("ATT", msg, "GUILD");
-	else
-		app.events.CHAT_MSG_ADDON("ATT", msg, "WHISPER", "player");
-	end
-end
-local function SendResponseMessage(msg, player)
-	if UnitInRaid(player) or UnitInParty(player) then
-		SendGroupMessage("to\t" .. player .. "\t" .. msg);
-	else
-		C_ChatInfo.SendAddonMessage("ATT", msg, "WHISPER", player);
-	end
-end
-local function SendSocialMessage(msg)
-	SendGroupMessage(msg);
-	SendGuildMessage(msg);
-end
 
-local lastProgressUpdateMessage;
-app.AddEventHandler("OnRefreshComplete", function()
-	-- Send a message to your party members.
-	local data = app:GetWindow("Prime").data;
-	local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0);
-	if lastProgressUpdateMessage ~= msg then
-		lastProgressUpdateMessage = msg;
-		SendSocialMessage(msg);
-	end
-end);
 
 
 -- Synchronization Functions
@@ -5203,6 +5161,11 @@ function app:SynchronizeWithPlayer(playerName)
 		C_ChatInfo.SendAddonMessage("ATT", "?\tsync\t" .. battleTag, "WHISPER", playerName);
 	end
 end
+app.AddEventHandler("OnStartup", function()
+	-- Attempt to register for the addon message prefix.
+	-- NOTE: This is only used by this old sync module and will be removed at some point.
+	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
+end);
 end)();
 
 -- NOTE: Don't use this for Items, because modIDs and bonusIDs are stupid
@@ -19178,12 +19141,8 @@ app.Startup = function()
 	-- Init the Settings before working with data
 	app.Settings:Initialize();
 
-	-- Attempt to register for the addon message prefix.
-	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
-
 	-- Register remaining addon-related events
 	app:RegisterEvent("BOSS_KILL");
-	app:RegisterEvent("CHAT_MSG_ADDON");
 	app:RegisterEvent("PLAYER_ENTERING_WORLD");
 	app:RegisterEvent("NEW_PET_ADDED");
 	app:RegisterEvent("PET_JOURNAL_PET_DELETED");
@@ -19519,7 +19478,6 @@ SlashCmdList["AllTheThingsMINI"] = function(cmd)
 end
 
 SLASH_AllTheThingsRA1 = "/attra";
-SLASH_AllTheThingsRA2 = "/attraid";
 SlashCmdList["AllTheThingsRA"] = function(cmd)
 	app:GetWindow("RaidAssistant"):Toggle();
 end
@@ -19530,31 +19488,9 @@ SlashCmdList["AllTheThingsRAN"] = function(cmd)
 	app:GetWindow("Random"):Toggle();
 end
 
-SLASH_AllTheThingsU1 = "/attu";
-SLASH_AllTheThingsU2 = "/attyou";
-SLASH_AllTheThingsU3 = "/attwho";
-SlashCmdList["AllTheThingsU"] = function(cmd)
-	local name,server = UnitName("target");
-	if name then
-		if UnitIsPlayer("target") then
-			SendResponseMessage("?", server and (name .. "-" .. server) or name);
-		else
-			local cmd = "creatureid:" .. select(6, strsplit("-", UnitGUID("target")));
-			local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-			if group then app:CreateMiniListForGroup(group); end
-		end
-	end
-end
-
 SLASH_AllTheThingsWQ1 = "/attwq";
 SlashCmdList["AllTheThingsWQ"] = function(cmd)
 	app:GetWindow("WorldQuests"):Toggle();
-end
-
-SLASH_ATTCUYELL1 = "/attyell";
-SLASH_ATTCUYELL2 = "/attrohduh";
-SlashCmdList["ATTCUYELL"] = function(cmd)
-	C_ChatInfo.SendAddonMessage("ATT", "?", "YELL");
 end
 
 -- Clickable ATT Chat Link Handling
@@ -19736,142 +19672,6 @@ app.events.ADDON_LOADED = function(addonName)
 	local addonTrigger = app.AddonLoadedTriggers[addonName];
 	if addonTrigger then addonTrigger(); end
 end
-app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
-	if prefix == "ATT" then
-		--print(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
-		local args = { strsplit("\t", text) };
-		local cmd = args[1];
-		if cmd then
-			local a = args[2];
-			if cmd == "?" then		-- Query Request
-				local response;
-				if a then
-					if a == "a" then
-						response = "a";
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (select(app.AchievementFilter, GetAchievementInfo(b)) and 1 or 0);
-						end
-					--[[
-					-- Exploration is not yet a thing in Retail... soon!
-					elseif a == "e" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.Exploration[b] and 1 or 0);
-						end
-					]]--
-					elseif a == "f" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.Factions[b] and 1 or 0);
-						end
-					elseif a == "fp" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.FlightPaths[b] and 1 or 0);
-						end
-					elseif a == "p" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. C_PetJournal_GetNumCollectedInfo(b);
-						end
-					elseif a == "q" then
-						response = "q";
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (IsQuestFlaggedCompleted(b) and 1 or 0);
-						end
-					elseif a == "s" then
-						response = "s";
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (ATTAccountWideData.Sources[b] or 0);
-						end
-					elseif a == "sp" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.Spells[b] and 1 or 0);
-						end
-					elseif a == "t" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.Titles[b] and 1 or 0);
-						end
-					elseif a == "toy" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (ATTAccountWideData.Toys[b] and 1 or 0);
-						end
-					elseif a == "sync" then
-						app:ReceiveSyncRequest(target, a);
-					elseif a == "syncsum" then
-						tremove(args, 1);
-						tremove(args, 1);
-						app:ReceiveSyncSummary(target, args);
-					end
-				else
-					local data = app:GetWindow("Prime").data;
-					response = "ATT\t" .. (data.progress or 0) .. "\t" .. (data.total or 0) .. "\t" .. app.Settings:GetShortModeString();
-				end
-				if response then SendResponseMessage("!\t" .. response, sender); end
-			elseif cmd == "!" then	-- Query Response
-				if a == "ATT" then
-					print(sender .. ": " .. GetProgressColorText(tonumber(args[3]), tonumber(args[4])) .. " " .. args[5]);
-				else
-					local response;
-					if a == "s" then
-						response = " ";
-						for i=3,#args,2 do
-							local b = tonumber(args[i]);
-							local c = tonumber(args[i + 1]);
-							response = response .. b .. ": " .. GetCollectionIcon(c) .. " - ";
-						end
-					elseif a == "q" then
-						response = " ";
-						for i=3,#args,2 do
-							local b = tonumber(args[i]);
-							local c = tonumber(args[i + 1]);
-							response = response .. b .. ": " .. GetCompletionIcon(c == 1) .. " - ";
-						end
-					elseif a == "a" then
-						response = " ";
-						for i=3,#args,2 do
-							local b = tonumber(args[i]);
-							local c = tonumber(args[i + 1]);
-							response = response .. b .. ": " .. GetCompletionIcon(c == 1) .. " - ";
-						end
-					elseif a == "syncsum" then
-						tremove(args, 1);
-						tremove(args, 1);
-						app:ReceiveSyncSummaryResponse(target, args);
-					end
-					if response then print(response .. sender); end
-				end
-			elseif cmd == "to" then	-- To Command
-				local myName = UnitName("player");
-				local name,server = strsplit("-", a);
-				if myName == name and (not server or GetRealmName() == server) then
-					app.events.CHAT_MSG_ADDON(prefix, strsub(text, 5 + strlen(a)), "WHISPER", sender);
-				end
-			elseif cmd == "chks" then	-- Total Chunks Command [sender, uid, total]
-				app:AcknowledgeIncomingChunks(target, tonumber(a), tonumber(args[3]));
-			elseif cmd == "chk" then	-- Incoming Chunk Command [sender, uid, index, chunk]
-				app:AcknowledgeIncomingChunk(target, tonumber(a), tonumber(args[3]), args[4]);
-			elseif cmd == "chksack" then	-- Chunks Acknowledge Command [sender, uid]
-				app:SendChunk(target, tonumber(a), 1, 1);
-			elseif cmd == "chkack" then	-- Chunk Acknowledge Command [sender, uid, index, success]
-				app:SendChunk(target, tonumber(a), tonumber(args[3]) + 1, tonumber(args[4]));
-			end
-		end
-	end
-end
 app.events.PLAYER_LEVEL_UP = function(newLevel)
 	-- print("PLAYER_LEVEL_UP")
 	app.Level = newLevel;
@@ -19953,7 +19753,6 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 			ATTAccountWideData.Sources[sourceID] = 1;
 			app.ActiveItemCollectionHelper(sourceID, oldState);
 			wipe(searchCache);
-			SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t1");
 		end
 	end
 end
@@ -20001,7 +19800,6 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		UpdateRawIDs("sourceID", unlearnedSourceIDs);
 		Callback(app.Audio.PlayRemoveSound);
 		wipe(searchCache);
-		SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t0");
 	end
 end
 
