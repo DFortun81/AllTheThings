@@ -97,6 +97,7 @@ local HookableTooltips = {
 	["GameTooltip"]=1,
 	["GameTooltipTooltip"]=1,
 	["EmbeddedItemTooltipTooltip"]=1,
+	["EmbeddedItemTooltip"]=1,	-- did blizz fix the name of this finally?
 	["ItemRefTooltip"]=1,
 	["ShoppingTooltip1"]=1,
 	["ShoppingTooltip2"]=1,
