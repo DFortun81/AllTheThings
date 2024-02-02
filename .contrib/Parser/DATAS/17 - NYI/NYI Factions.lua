@@ -156,8 +156,6 @@ root(ROOTS.NeverImplemented, {
 			faction(829),	-- Ogre (Captain Kromcrush)
 			faction(849),	-- Spirit Guide - Horde
 			faction(869),	-- Jaedenar
-			faction(891),	-- Alliance Forces
-			faction(892),	-- Horde Forces
 			faction(893),	-- Revantusk Trolls
 			faction(912),	-- Might of Kalimdor
 			faction(915),	-- Armies of C'Thun
@@ -179,8 +177,14 @@ root(ROOTS.NeverImplemented, {
 			faction(1041),	-- Frenzy
 			-- 1.14.2.41959
 			faction(2505),	-- Dragonflight, Chromatic
+			--1.15.0.52124
+			--Uncomment if these ever make it into retail
+			--faction(2586),	-- Azeroth Commerce Authority
+			--faction(2587),	-- Durotar Supply and Logistics
+			--faction(2588),	-- S03 - Scarlet Crusade Disguise
 		}),
 		tier(TBC_TIER, {
+			--2.0.0.6080
 			faction(914),	-- PLAYER, Blood Elf
 			faction(923),	-- Farstriders
 			faction(924),	-- DEPRECATED
@@ -221,7 +225,6 @@ root(ROOTS.NeverImplemented, {
 			faction(976),	-- Hyjal Defenders
 			faction(977),	-- Hyjal Invaders
 			faction(979),	-- Earthen Ring, Old World \\ Earthen Ring
-			faction(980),	-- The Burning Crusade \\ Outland
 			faction(981),	-- Arakkoa
 			faction(982),	-- Zangarmarsh Banner (Alliance)
 			faction(983),	-- Zangarmarsh Banner (Horde)
@@ -245,6 +248,7 @@ root(ROOTS.NeverImplemented, {
 			faction(1003),	-- Protectorate
 			faction(1004),	-- Arcane Annihilator (DNR)
 			faction(1005),	-- Friendly, Hidden \\ REUSE
+			--2.4.3.8606
 			faction(1006),	-- Kirin'Var - Dathric
 			faction(1007),	-- Kirin'Var - Belmara
 			faction(1008),	-- Kirin'Var - Luminrath
@@ -322,7 +326,6 @@ root(ROOTS.NeverImplemented, {
 				faction(1093),	-- REUSE
 				faction(1095),	-- Grizzly Hills Trapper
 				faction(1096),	-- REUSE
-				faction(1097),	-- Wrath of the Lich King \\ Northrend
 				faction(1099),	-- Wrathgate Scourge
 				faction(1100),	-- Wrathgate Alliance
 				faction(1101),	-- Wrathgate Horde
@@ -338,7 +341,6 @@ root(ROOTS.NeverImplemented, {
 				faction(1114),	-- Mount - Taxi - Neutral
 				faction(1115),	-- Elemental, Water
 				faction(1116),	-- Elemental, Air
-				faction(1118),	-- Classic
 				faction(1120),	-- Iron Giants
 				faction(1121),	-- Frost Vrykul
 				faction(1122),	-- Earthen
@@ -378,22 +380,16 @@ root(ROOTS.NeverImplemented, {
 				faction(1153),	-- PLAYER, Worgen
 				faction(1157),	-- Pygmy
 				faction(1161),	-- Grimtotem
-				faction(1162),	-- Cataclysm
 				faction(1163),	-- New test rep for Alex
 				faction(1166),	-- Test Faction 5
 				faction(1167),	-- Test Faction 5
-				faction(1169),	-- Guild
-				faction(1179),	-- Slime
-				faction(1181),	-- Friendly, New
-			})),
-
-			-- 4.1.0
-			tier(CATA_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 4.1.0"} }, {
-				faction(1189),	-- K3
 			})),
 
 			-- 4.3.0
 			tier(CATA_TIER, 3.0, bubbleDownSelf({ ["timeline"] = {"created 4.3.0"} }, {
+				faction(1179),	-- Slime
+				faction(1181),	-- Friendly, New
+				faction(1189),	-- K3
 				faction(1233),	-- CoT Well of Eternity - Illidan
 				faction(1234),	-- CoT Well of Eternity - High Elves
 				faction(1235),	-- CoT Well of Eternity - Illidan (Stealth)
@@ -407,7 +403,6 @@ root(ROOTS.NeverImplemented, {
 			-- 5.0.4
 			tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = {"created 5.0.4"} }, {
 				faction(1243),	-- Hozen
-				faction(1245),	-- Mists of Pandaria
 				faction(1249),	-- PLAYER, Expansion 4 Neutral
 				faction(1252),	-- Sha
 				faction(1253),	-- Guardians of the East Temple
@@ -455,7 +450,6 @@ root(ROOTS.NeverImplemented, {
 		tier(WOD_TIER, {
 			-- 6.0.1
 			tier(WOD_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
-				faction(1444),	-- Warlords of Draenor
 				faction(1483),	-- Foreling-Eaters
 				faction(1496),	-- Frostfire Ogres
 				faction(1508),	-- Shadowmoon Orcs \\ Shadowmoon Orc
@@ -480,7 +474,6 @@ root(ROOTS.NeverImplemented, {
 				faction(1717),	-- GarInvasion_ThunderLord
 				faction(1718),	-- GarInvasion_Shadowmoon
 				faction(1732),	-- Steamwheedle Draenor Expedition
-				faction(1735),	-- Barracks Bodyguards
 				faction(1746),	-- Nagrand Gronn
 				faction(1747),	-- Coliseum Treasure
 			})),
@@ -554,7 +547,6 @@ root(ROOTS.NeverImplemented, {
 		tier(BFA_TIER, {
 			-- 8.0.1
 			tier(BFA_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
-				faction(2104),	-- Battle for Azeroth
 				faction(2105),	-- Nazmani
 				faction(2111),	-- Zandalari Dinosaurs
 				faction(2120),	-- Kul Tiras - Tiragarde \\ Kul Tiras
@@ -626,7 +618,6 @@ root(ROOTS.NeverImplemented, {
 				faction(2408),	-- Dark Kyrian
 				faction(2411),	-- Stone Legion
 				faction(2412),	-- Sinfall
-				faction(2414),	-- Shadowlands
 				faction(2422),	-- The Wild Hunt \\ Night Fae
 				faction(2437),	-- Torghast - Guard
 				faction(2438),	-- Torghast - Prisoner
@@ -652,6 +643,43 @@ root(ROOTS.NeverImplemented, {
 				faction(2480),	-- Automa
 				faction(2481),	-- Automa (Paragon)
 				faction(2502),	-- Zereth Mortis Lured Monsters
+			})),
+		}),
+		tier(DF_TIER, {
+			tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				faction(2504),	-- Maruuk Centaur (Paragon)
+				faction(2508),	-- Dragonscale Expedition (Paragon)
+				faction(2521),	-- Clan Nokhud (Paragon)
+				faction(2545),	-- Maruuk Centaur (Renown)
+				faction(2546),	-- Iskaara Tuskarr (Renown)
+				faction(2547),	-- Dragonscale Expedition (Renown)
+				faction(2548),	-- Valdrakken Accord (Renown)
+				faction(2509),	-- Clan Shikaar
+				faction(2512),	-- Clan Aylaag
+				faction(2513),	-- Clan Ohn'ir
+				faction(2514),	-- Primalists
+				faction(2516),	-- Djaradin
+				faction(2519),	-- Reclaimers
+				faction(2520),	-- Clan Nokhud
+				faction(2522),	-- Clan Teerai
+				faction(2525),	-- Elemental, Fire
+				faction(2542),	-- Clan Ukhel
+				faction(2551),	-- Iskaara Tuskarr (Paragon)
+				faction(2552),	-- Valdrakken Accord (Paragon)
+				faction(2554),	-- Clan Toghus
+				faction(2555),	-- Clan Kaighan
+			})),
+			tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+				faction(2557),	-- Hearthfire Fellowship
+			})),
+			tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+				faction(2565),	-- Loamm Niffen (Paragon)
+			})),
+			tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+				faction(2576),	-- Druids of the Flame
+			})),
+			tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+				faction(2575),	-- Dream Wardens (Paragon)
 			})),
 		}),
 	}),

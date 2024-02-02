@@ -661,6 +661,10 @@ root(ROOTS.Zones, {
 					})),
 				}),
 				n(FACTIONS, {
+					faction(936, {	-- Shattrath City
+						["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
+						["collectible"] = false,
+					}),
 					faction(1011, {	-- Lower City
 						["maps"] = {
 							256,		-- AUCHINDOUN_AUCHENAI_CRYPTS 1

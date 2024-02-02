@@ -443,9 +443,15 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			q(59778, {	-- Help Sawn find Varrik
 				["provider"] = { "n", 166148 },	-- Sawn
+				["groups"] = {
+					i(171211),	-- Venthyr's Coin Purse
+				},
 			}),
 			q(59346, {	-- Indri's Flute
 				["provider"] = { "n", 157426 },	-- Indri the Treesinger
+				["groups"] = {
+					i(171210),	-- Satchel of Nature's Bounty
+				},
 			}),
 			q(61248, {	-- Kaletar's Freedom
 				["provider"] = { "n", 171898 },	-- Kaletar

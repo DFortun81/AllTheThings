@@ -22,6 +22,10 @@ root(ROOTS.ExpansionFeatures,
 						}),
 					}),
 					n(FACTIONS, {
+						faction(1735, {	-- Barracks Bodyguards
+							["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
+							["collectible"] = false,
+						}),
 						faction(1740, {["races"] = HORDE_ONLY}),	-- Aeda Brightdawn
 						faction(1738, {["races"] = ALLIANCE_ONLY}),	-- Defender Illona
 						faction(1733, {["races"] = ALLIANCE_ONLY}),	-- Delvar Ironfist

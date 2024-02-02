@@ -78,6 +78,7 @@ local BlockedDisplayID = {
 	[11686] = 0,	-- empty blue thing
 	[16925] = 0,	-- nothing
 	[21072] = 0,	-- empty blue thing
+	[23767] = 0,	-- empty blue thing
 	[27823] = 0,	-- empty blue thing
 	[52318] = 0,	-- generic bunny
 	[56187] = 0,	-- generic bunny
@@ -138,7 +139,7 @@ local function TrySetDisplayInfos(reference, displayInfos)
 			end
 			count = #validDisplayIDs;
 			if count < 1 then return; end
-			
+
 			local rotation = CalculateModelRotation(reference.modelRotation);
 			local scale = reference.modelScale or 1;
 			if count > 1 then
@@ -195,7 +196,7 @@ local function TrySetModel(reference)
 				return true;
 			end
 		end
-		
+
 		local modelID = reference.model and tonumber(reference.model);
 		if modelID and modelID > 0 then
 			GameTooltipModel.Model:SetFacing(CalculateModelRotation(reference.modelRotation));
@@ -206,7 +207,7 @@ local function TrySetModel(reference)
 			GameTooltipModel:Show();
 			return true;
 		end
-		
+
 		local creatureID = GetCreatureID(reference);
 		if creatureID and creatureID > 0 then
 			GameTooltipModel.Model:SetFacing(CalculateModelRotation(reference.modelRotation));
@@ -224,7 +225,7 @@ local function TrySetModel(reference)
 				end
 			end
 		end
-		
+
 		local displayID = reference.displayID or reference.modelID;
 		if displayID then
 			GameTooltipModel.Model:SetFacing(CalculateModelRotation(reference.modelRotation));
@@ -241,7 +242,7 @@ local function TrySetModel(reference)
 			GameTooltipModel.Model:Show();
 			GameTooltipModel:Show();
 		end
-		
+
 		if reference.atlas then
 			GameTooltipIcon:SetSize(64,64);
 			GameTooltipIcon.icon:SetAtlas(reference.atlas);

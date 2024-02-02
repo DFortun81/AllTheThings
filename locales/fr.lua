@@ -464,7 +464,7 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 		L.WINDOW_COLORS = "Couleurs de la fenêtre";
 		L.BACKGROUND_TOOLTIP = "Définit la couleur d’arrière-plan de toutes les fenêtres d’ATT.";
 		L.BORDER_TOOLTIP = "Définit la couleur des bords de toutes les fenêtres d’ATT.";
-		L.RESET_TOOLTIP = "Réinitialise la couleur d’arrière-plan et des bords de toutes les fenêtres d’ATT.";
+		--TODO: L.RESET_TOOLTIP = "Revert to default settings.";
 		L.CLASS_BORDER = "Utiliser la couleur de classe pour les bords";
 		L.CLASS_BORDER_TOOLTIP = "Utilise la couleur de votre classe pour les bords. Cette couleur est mise à jour lorsque vous vous connectez sur une autre classe.";
 
@@ -509,6 +509,10 @@ local ACC_WIDE_DEFAULT = "Par défaut, suivi sur "..app.ccColors.Account.."l’e
 		--TODO: L.ICON_LEGEND_TEXT = app.ccColors.White .. "|TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t " .. "Unobtainable" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-prerequisites.blp:0|t " .. "Obtainable only with prerequisites" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-available.blp:0|t " .. "Available seasonal content" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-unavailable.blp:0|t " .. "Unavailable seasonal content" .. "\n|TInterface\\FriendsFrame\\StatusIcon-Offline:0|t " .. "Unavailable on current character";
 		L.CHAT_COMMANDS_LABEL = "Commandes du chat";
 		L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFou|R /things |cffFFFFFFou|R /allthethings\n|cffFFFFFFOuvre la liste principale.\n\n|R/att mini |cffFFFFFFou|R /attmini\n|cffFFFFFFOuvre la mini-liste.\n\n|R/att bounty\n|cffFFFFFFOuvre la liste des éléments non confirmés ou buggés.\n\n|R/att ra |cffFFFFFFou|R /attra\n|cffFFFFFFOuvre l’assistant de raid.\n\n|R/att wq |cffFFFFFFou|R /attwq\n|cffFFFFFFOuvre la liste des quêtes mondiales.\n\n|R/att item:1234 |cffFFFFFFou|R /att [lien objet]\n|cffFFFFFFOuvre une fenêtre des apparences partagées. Fonctionne aussi avec d’autres éléments, tel que|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att rwp\n|cffFFFFFFAffiche tous les éléments futurs qui seront supprimés lors d’un patch.\n\n|R/att random |cffFFFFFFou|R /attrandom |cffFFFFFFou|R /attran\n|cffFFFFFFOuvre une liste aléatoire.\n\n|R/att unsorted\n|cffFFFFFFOuvre une liste d’éléments non sourcés. Il est préférable d'ouvrir en mode débogage.\n\n|R/rl\n|cffFFFFFFRecharge votre interface WoW.|R";
+
+	-- Accessibility tab
+		--TODO: L.COLORS_ICONS = "Colors and Icons";
+		--TODO: L.LOCKED_QUESTS = "Locked quests";
 
 	-- Profiles tab
 		L.PROFILES_PAGE = "Profils";

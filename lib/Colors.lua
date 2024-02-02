@@ -67,9 +67,3 @@ end;
 -- Shaman				#0070DD
 -- Warlock				#8788EE
 -- Warrior				#C69B6D
-
--- ATT colours
-
--- Title				#B4B4FF
--- Header				#FFD100
--- Raid					#FF8000		Chat raid color:	#FF7D01

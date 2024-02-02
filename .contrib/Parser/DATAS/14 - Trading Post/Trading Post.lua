@@ -1925,25 +1925,8 @@ root(ROOTS.NeverImplemented, {
 					------ Armor ------
 					i(211069),	-- Azure Treads of the Kalu'ak
 					i(211071),	-- Lively Treads of the Kalu'ak
-					i(211294),	-- Marauder King's Body Carver
-					i(211259),	-- Regal Gryphon Rider's Headgear
-					i(211145),	-- Royal Witch Doctor's Trophies
 					i(210999),	-- Ruby Faced Mobile Timepiece
 					i(211001),	-- Sapphire Faced Mobile Timepiece
-					i(211295),	-- Wrathful Crusader's Helm
-				}),
-				n(WEAPONS, {
-					------ Whispering Temple Blade ------
-					i(211298),	-- Whispering Temple Blade
-					i(211299),	-- Gleaming Whispering Temple Blade
-					i(211300),	-- Arsenal: Whispering Temple Blades
-					------ Axe ------
-					i(211097),	-- Gilded Crown Splitter
-					------ Gun ------
-					i(211096),	-- Gold-Plated Witchhunter's Carbine
-					------ Shield ------
-					i(211099),	-- Gilded Scarab Bulwark
-					i(211159),	-- Royal Witch Doctor's Guard
 				}),
 			})),
 		}),

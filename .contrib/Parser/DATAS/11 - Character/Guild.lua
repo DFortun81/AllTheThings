@@ -2,6 +2,12 @@
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
 root(ROOTS.Character, n(FACTION_HEADER_GUILD, {
+	n(FACTIONS, {
+		faction(1169, {	-- Guild
+			["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
+			["collectible"] = false,
+		}),
+	}),
 	faction(1168, {	-- Your Guild (Faction) <Guild Vendor>
 		["icon"] = 461821,	-- Inv_guild_standard_horde_c
 		["coords"] = {

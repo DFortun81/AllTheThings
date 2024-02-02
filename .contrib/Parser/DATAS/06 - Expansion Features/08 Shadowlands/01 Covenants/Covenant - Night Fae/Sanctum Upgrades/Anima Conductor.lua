@@ -208,7 +208,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									i(182611),	-- Fae Flute
 								}),
 								q(61394),	-- Gormling Piper: Tranquil Pools
-								q(61717),	-- Gormling Piper: Tranquil Pools
+								q(61717, {	-- Gormling Piper: Tranquil Pools
+									i(182189),	-- Fae Flute
+								}),
 								q(62051, {	-- Gormling Toss: Spirit Glen
 									i(184487),	-- Gormling in a Bag (TOY!)
 								}),

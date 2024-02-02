@@ -9,6 +9,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.5" } }, 
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\inv_cooking_80_choralhoney3",
 				["g"] = {
+					n(FACTIONS, {
+						faction(2398, {	-- Honeyback Harvester
+							["races"] = ALLIANCE_ONLY,
+						}),
+					}),
 					n(QUESTS, {
 						q(56473, {	-- Envenomed Spider Fang
 							["provider"] = { "i", 169656 },	-- Envenomed Spider Fang

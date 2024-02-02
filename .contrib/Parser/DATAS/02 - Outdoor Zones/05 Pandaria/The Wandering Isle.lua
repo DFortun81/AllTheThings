@@ -8,6 +8,12 @@ root(ROOTS.Zones, {
 			["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE },	-- [Adding faction just to be safe]
 			["icon"] = "Interface\\Icons\\INV_Misc_Fish_Turtle_03",
 			["g"] = {
+				n(FACTIONS, {
+					faction(1216, {	-- Shang Xi's Academy
+						["description"] = "The maximum obtainable reputation with this faction is 8510/12000 (Honored).",
+						["collectible"] = false,
+					}),
+				}),
 				n(QUESTS, {
 					q(31450, {	-- A New Fate
 						["provider"] = { "n", 56013 },	-- Spirit of Master Shang Xi
