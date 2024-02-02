@@ -62,7 +62,7 @@ local rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetata
 local ATTAccountWideData;
 
 -- App & Module locals
-local ArrayAppend = app.ArrayAppend;
+local ArrayAppend, constructor = app.ArrayAppend, app.constructor;
 local CacheFields, SearchForField, SearchForFieldContainer, SearchForSourceIDQuickly, GetRawField
 	= app.CacheFields, app.SearchForField, app.SearchForFieldContainer, app.SearchForSourceIDQuickly, app.GetRawField
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
@@ -154,18 +154,6 @@ app.UpdateRunner = app.CreateRunner("update");
 app.FillRunner = app.CreateRunner("fill");
 local LocalizeGlobal = app.LocalizeGlobal
 local LocalizeGlobalIfAllowed = app.LocalizeGlobalIfAllowed
-local constructor = function(id, t, typeID)
-	if t then
-		if not t.g and t[1] then
-			return { g=t, [typeID]=id };
-		else
-			t[typeID] = id;
-			return t;
-		end
-	else
-		return {[typeID] = id};
-	end
-end
 local contains = app.contains;
 local containsAny = app.containsAny;
 local containsValue = app.containsValue;

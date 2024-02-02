@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 -- App locals
 local appName, app = ...;
-local contains = app.contains;
+local contains, constructor = app.contains, app.constructor;
 local AssignChildren, CloneArray, CloneClassInstance, CloneReference = app.AssignChildren, app.CloneArray, app.CloneClassInstance, app.CloneReference;
 local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
 local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject, IsQuestReadyForTurnIn = app.IsQuestFlaggedCompleted, app.IsQuestFlaggedCompletedForObject, app.IsQuestReadyForTurnIn;
@@ -70,19 +70,6 @@ local HexToARGB = app.Modules.Color.HexToARGB;
 local RGBToHex = app.Modules.Color.RGBToHex;
 
 -- Helper Functions
-local constructor = function(id, t, typeID)
-	if t then
-		if not t.g and t[1] then
-			return { g=t, [typeID]=id };
-		else
-			t[typeID] = id;
-			return t;
-		end
-	else
-		return {[typeID] = id};
-	end
-end
-
 local pendingCollection, pendingRemovals, retrievingCollection, pendingCollectionCooldown = {},{},{},0;
 local function PendingCollectionCoroutine()
 	while not app.IsReady do coroutine.yield(); end

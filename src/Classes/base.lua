@@ -23,10 +23,11 @@ local constructor = function(id, t, typeID)
 		return {[typeID] = id};
 	end
 end
-local returnZero = function() return 0; end;
+app.constructor = constructor;	-- Temporary
 
 -- Provides a Unique Counter value for the Key referenced on each reference
-local uniques = setmetatable({}, { __index = function(t, key) return 0; end });
+local returnZero = function() return 0; end;
+local uniques = setmetatable({}, { __index = returnZero });
 local UniqueCounter = setmetatable({}, {
 	__index = function(t, key)
 		local count = uniques[key] + 1;
