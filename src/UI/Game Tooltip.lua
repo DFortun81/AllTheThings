@@ -11,7 +11,7 @@ local C_TransmogCollection_GetSourceInfo;
 if C_TransmogCollection then
 	C_TransmogCollection_GetSourceInfo = C_TransmogCollection.GetSourceInfo;
 else
-	C_TransmogCollection_GetSourceInfo = function() end;
+	C_TransmogCollection_GetSourceInfo = app.EmptyFunction;
 end
 
 -- Game Tooltip Icon
