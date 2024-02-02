@@ -731,6 +731,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				["sourceQuests"] = { 58447 },	-- Monster Hunting
 				["provider"] = { "n", 165841 },	-- Huln Highmountain
 				["coord"] = { 35.3, 51.2, ARDENWEALD },
+				["g"] = {
+					i(174467),	-- Bulging Digestive Sac (QI!)
+					i(174645),	-- Gormherd Branch (QI!)
+				},
 			}),
 			q(58450, {	-- Anima Instincts
 				["sourceQuests"] = { 58447 },	-- Monster Hunting

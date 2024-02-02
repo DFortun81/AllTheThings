@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 				}),
 				-- Evoker Tablets
-				q(73115, { -- Journal Entry: Silence (A)
+				q(73115, {	-- Journal Entry: Silence (A)
 					["provider"] = { "i", 202337 },	-- Journal Entry: Silence [A]
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "i", 204246 },	-- Journal Entry: Silence [H]
 					["races"] = HORDE_ONLY,
 				}),
-				q(73114, { -- Journal Entry: The Creches (A)
+				q(73114, {	-- Journal Entry: The Creches (A)
 					["provider"] = { "i", 202336 },	-- Journal Entry: The Creches [A]
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -231,7 +231,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "i", 204223 },	-- Journal Entry: The Creches [H]
 					["races"] = HORDE_ONLY,
 				}),
-				q(73108, { -- Journal Entry: The Prisoner (A)
+				q(73108, {	-- Journal Entry: The Prisoner (A)
 					["provider"] = { "i", 202327 },	-- Journal Entry: The Prisoner [A]
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -302,6 +302,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							},
 						}),
 						o(398770, {	-- Box of Rocks
+							["coord"] = { 31.0, 56.0, THE_FORBIDDEN_REACH },
 							["questID"] = 75484,
 							["g"] = {
 								i(199216),	-- A Box of Rocks
@@ -325,7 +326,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						o(386470, {	-- Gold Pile
 							["questID"] = 74434,
 						}),
-						o(386472, { -- Gold Pile
+						o(386472, {	-- Gold Pile
 							["questID"] = 74435,
 						}),
 						o(385032, {	-- Gold Pile
@@ -534,6 +535,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["questID"] = 75217,
 							["g"] = {
 								i(169673),	-- Blue Paint Filled Bladder
+								i(169675),	-- Orange Paint Filled Bladder
 							},
 						}),
 						o(393283, {	-- Balloon Box
@@ -596,7 +598,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 26.5, 49.3, THE_FORBIDDEN_REACH },
 							["questID"] = 73068,
 						}),
-						o(393957, { -- Gold Pile
+						o(393957, {	-- Gold Pile
 							["questID"] = 75254,
 						}),
 						o(393958, {	-- Gold Pile
@@ -824,10 +826,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							},
 						}),
 						o(390559, {	-- Box of Rocks
-							["questID"] = 75152,
-							["g"] = {
-								i(199216),	-- A Box of Rocks
-							},
+							i(199216),	-- A Box of Rocks
 						}),
 						o(392570, {	-- Chain-Bound Primordial Cache
 							["coord"] = { 28.2, 56.6, THE_FORBIDDEN_REACH },
@@ -996,6 +995,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							},
 						}),
 						o(390559, {	-- Box of Rocks
+							["coord"] = { 28.2, 57.6, THE_FORBIDDEN_REACH },
 							["questID"] = 75152,
 							["g"] = {
 								i(199216),	-- A Box of Rocks

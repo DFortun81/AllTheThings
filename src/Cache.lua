@@ -1,5 +1,5 @@
 do
-local appName, app = ...;
+local _, app = ...;
 
 -- Global locals
 local ipairs, tinsert, pairs, rawset, type, wipe, setmetatable, rawget, math_floor
@@ -537,7 +537,7 @@ local function _CacheFields(group)
 end
 
 ---- Retail Differences ----
-if tonumber(app.GameBuildVersion) > 100000 then
+if app.IsRetail then
 	-- 'altQuests' in Retail pretending to be the same quest as a different quest actually causes problems for searches
 	-- and it makes more sense to not pretend they're the same than to hamper existing logic with more conditionals to
 	-- make sure we actually get the data that we search for
@@ -607,6 +607,9 @@ if tonumber(app.GameBuildVersion) > 100000 then
 			any = cacheMapID(group, coord[3]) or any
 		end
 		return any;
+	end
+	fieldConverters.up = function(group, up)
+		CacheField(group, "up", up);
 	end
 elseif tonumber(app.GameBuildVersion) < 30000 then
 	fieldConverters.sins = function(group, value)

@@ -248,271 +248,6 @@ app.GetDataMember = GetDataMember;
 app.SetDataSubMember = SetDataSubMember;
 app.GetDataSubMember = GetDataSubMember;
 
-local backdrop = {
-	bgFile = "Interface/Tooltips/UI-Tooltip-Background",
-	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
-	tile = true, tileSize = 16, edgeSize = 16,
-	insets = { left = 4, right = 4, top = 4, bottom = 4 }
-};
-
--- Game Tooltip Icon
-local GameTooltipIcon = CreateFrame("FRAME", nil, GameTooltip);
-GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-GameTooltipIcon:SetSize(72, 72);
-GameTooltipIcon.icon = GameTooltipIcon:CreateTexture(nil, "ARTWORK");
-GameTooltipIcon.icon:SetAllPoints(GameTooltipIcon);
-GameTooltipIcon.icon:Show();
-GameTooltipIcon.icon.Background = GameTooltipIcon:CreateTexture(nil, "BACKGROUND");
-GameTooltipIcon.icon.Background:SetAllPoints(GameTooltipIcon);
-GameTooltipIcon.icon.Background:Show();
-GameTooltipIcon.icon.Border = GameTooltipIcon:CreateTexture(nil, "BORDER");
-GameTooltipIcon.icon.Border:SetAllPoints(GameTooltipIcon);
-GameTooltipIcon.icon.Border:Show();
-GameTooltipIcon:Hide();
-
--- Model is used to display the model of an NPC/Encounter.
-local GameTooltipModel, model, fi = CreateFrame("FRAME", "ATTGameTooltipModel", GameTooltip, BackdropTemplateMixin and "BackdropTemplate");
-GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-GameTooltipModel:SetSize(128, 128);
-GameTooltipModel:SetBackdrop(backdrop);
-GameTooltipModel:SetBackdropBorderColor(1, 1, 1, 1);
-GameTooltipModel:SetBackdropColor(0, 0, 0, 1);
-GameTooltipModel.Models = {};
-GameTooltipModel.Model = CreateFrame("DressUpModel", nil, GameTooltipModel);
-GameTooltipModel.Model:SetPoint("TOPLEFT", GameTooltipModel ,"TOPLEFT", 4, -4)
-GameTooltipModel.Model:SetPoint("BOTTOMRIGHT", GameTooltipModel ,"BOTTOMRIGHT", -4, 4)
-GameTooltipModel.Model:SetFacing(MODELFRAME_DEFAULT_ROTATION);
-GameTooltipModel.Model:SetScript("OnUpdate", function(self, elapsed)
-	self:SetFacing(self:GetFacing() + elapsed);
-end);
-GameTooltipModel.Model:Hide();
-
-local MAX_CREATURES_PER_ENCOUNTER = 9;
-for i=1,MAX_CREATURES_PER_ENCOUNTER do
-	model = CreateFrame("DressUpModel", "ATTGameTooltipModel" .. i, GameTooltipModel);
-	model:SetPoint("TOPLEFT", GameTooltipModel ,"TOPLEFT", 4, -4);
-	model:SetPoint("BOTTOMRIGHT", GameTooltipModel ,"BOTTOMRIGHT", -4, 4);
-	model:SetCamDistanceScale(1.7);
-	model:SetDisplayInfo(987);
-	model:SetFacing(MODELFRAME_DEFAULT_ROTATION);
-	fi = math_floor(i / 2);
-	model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - 0.3);
-	if model.SetDepth then
-		model:SetDepth(i);
-	end
-	model:Hide();
-	tinsert(GameTooltipModel.Models, model);
-end
-GameTooltipModel.HideAllModels = function(self)
-	for i=1,MAX_CREATURES_PER_ENCOUNTER do
-		GameTooltipModel.Models[i]:Hide();
-	end
-	GameTooltipModel.Model:Hide();
-end
-GameTooltipModel.SetCreatureID = function(self, creatureID)
-	GameTooltipModel.HideAllModels(self);
-	if creatureID > 0 then
-		self.Model:SetUnit("none");
-		self.Model:SetCreature(creatureID);
-		local displayID = self.Model:GetDisplayInfo();
-		if not displayID then
-			app:StartATTCoroutine("SetCreatureID", function()
-				if self.lastModel == creatureID then
-					self:SetCreatureID(creatureID);
-				end
-			end);
-		end
-	end
-	self:Show();
-end
-GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
-	if displayInfos then
-		local count = #displayInfos;
-		if count > 0 then
-			local rotation = reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION;
-			local scale = reference.modelScale or 1;
-			if count > 1 then
-				count = math.min(count, MAX_CREATURES_PER_ENCOUNTER);
-				local ratio = count / MAX_CREATURES_PER_ENCOUNTER;
-				if count < 3 then
-					for i=1,count do
-						model = self.Models[i];
-						model:SetDisplayInfo(displayInfos[i]);
-						model:SetCamDistanceScale(scale);
-						model:SetFacing(rotation);
-						model:SetPosition(0, (i % 2 == 0 and 0.5 or -0.5), 0);
-						model:Show();
-					end
-				else
-					scale = (1 + (ratio * 0.5)) * scale;
-					for i=1,count do
-						model = self.Models[i];
-						model:SetDisplayInfo(displayInfos[i]);
-						model:SetCamDistanceScale(scale);
-						model:SetFacing(rotation);
-						fi = math_floor(i / 2);
-						model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - (ratio * 0.15));
-						model:Show();
-					end
-				end
-			else
-				self.Model:SetFacing(rotation);
-				self.Model:SetCamDistanceScale(scale);
-				self.Model:SetDisplayInfo(displayInfos[1]);
-				self.Model:Show();
-			end
-			self:Show();
-			return true;
-		end
-	end
-end
-local function GetDisplayID(data, all)
-	-- don't create a displayID for groups with a sourceID/itemID/difficultyID/mapID
-	if data.sourceID or data.itemID or data.difficultyID or data.mapID then return; end
-	if all then
-		local displayInfo, _ = {};
-		-- specific displayID
-		_ = data.displayID;
-		if _ then tinsert(displayInfo, _); data.displayInfo = displayInfo; return displayInfo; end
-
-		-- specific creatureID for displayID
-		_ = data.creatureID and app.NPCDisplayIDFromID[data.creatureID];
-		if _ then tinsert(displayInfo, _); data.displayInfo = displayInfo; return displayInfo; end
-
-		-- loop through "n" providers
-		if data.providers then
-			for k,v in pairs(data.providers) do
-				-- if one of the providers is an NPC, we should show its texture regardless of other providers
-				if v[1] == "n" then
-					_ = v[2] and app.NPCDisplayIDFromID[v[2]];
-					if _ then tinsert(displayInfo, _); end
-				end
-			end
-		end
-		if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
-
-		-- for quest givers
-		if data.qgs then
-			for k,v in pairs(data.qgs) do
-				_ = v and app.NPCDisplayIDFromID[v];
-				if _ then tinsert(displayInfo, _); end
-			end
-		end
-		if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
-	else
-		-- specific displayID
-		local _ = data.displayID or data.fetchedDisplayID;
-		if _ then return _; end
-
-		-- specific creatureID for displayID
-		_ = data.creatureID and app.NPCDisplayIDFromID[data.creatureID];
-		if _ then data.fetchedDisplayID = _; return _; end
-
-		-- loop through "n" providers
-		if data.providers then
-			for k,v in pairs(data.providers) do
-				-- if one of the providers is an NPC, we should show its texture regardless of other providers
-				if v[1] == "n" then
-					_ = v[2] and app.NPCDisplayIDFromID[v[2]];
-					if _ then data.fetchedDisplayID = _; return _; end
-				end
-			end
-		end
-
-		-- for quest givers
-		if data.qgs then
-			for k,v in pairs(data.qgs) do
-				_ = v and app.NPCDisplayIDFromID[v];
-				if _ then data.fetchedDisplayID = _; return _; end
-			end
-		end
-	end
-end
-GameTooltipModel.TrySetModel = function(self, reference)
-	GameTooltipModel.HideAllModels(self);
-	if app.Settings:GetTooltipSetting("Models") then
-		self.lastModel = reference;
-		local displayInfos = reference.displayInfo;-- or GetDisplayID(reference, true);
-		if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfos) then
-			return true;
-		end
-		
-		local creatureID = reference.creatureID;
-		if reference.providers then
-			for k,v in pairs(reference.providers) do
-				-- if one of the providers is an NPC, we should show its texture regardless of other providers
-				if v[1] == "n" then
-					creatureID = v[2];
-				end
-			end
-		end
-		if reference.qgs then
-			for k,v in pairs(reference.qgs) do
-				creatureID = v;
-			end
-		end
-
-		if creatureID and creatureID > 0 then
-			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self:SetCreatureID(creatureID);
-			self.Model:Show();
-			return true;
-		elseif reference.displayID then
-			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self.Model:SetDisplayInfo(reference.displayID);
-			self.Model:Show();
-			self:Show();
-			return true;
-		elseif reference.modelID then
-			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self.Model:SetDisplayInfo(reference.modelID);
-			self.Model:Show();
-			self:Show();
-			return true;
-		elseif reference.unit and not reference.icon then
-			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self.Model:SetUnit(reference.unit);
-			self.Model:Show();
-			self:Show();
-		end
-		local modelID = reference.model and tonumber(reference.model);
-		if modelID and modelID > 0 then
-			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self.Model:SetUnit("none");
-			self.Model:SetModel(modelID);
-			self.Model:Show();
-			self:Show();
-			return true;
-		end
-		if reference.atlas then
-			GameTooltipIcon:SetSize(64,64);
-			GameTooltipIcon.icon:SetAtlas(reference.atlas);
-			GameTooltipIcon:Show();
-			if reference["atlas-background"] then
-				GameTooltipIcon.icon.Background:SetAtlas(reference["atlas-background"]);
-				GameTooltipIcon.icon.Background:Show();
-			end
-			if reference["atlas-border"] then
-				GameTooltipIcon.icon.Border:SetAtlas(reference["atlas-border"]);
-				GameTooltipIcon.icon.Border:Show();
-				if reference["atlas-color"] then
-					local swatches = reference["atlas-color"];
-					GameTooltipIcon.icon.Border:SetVertexColor(swatches[1], swatches[2], swatches[3], swatches[4] or 1.0);
-				else
-					GameTooltipIcon.icon.Border:SetVertexColor(1, 1, 1, 1.0);
-				end
-			end
-			return true;
-		end
-	end
-end
-GameTooltipModel:Hide();
-
 app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
 app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
 app.print = function(...)
@@ -585,6 +320,9 @@ local function GetProgressTextForRow(data)
 	end
 end
 local function GetProgressTextForTooltip(data)
+	local iconOnly = app.Settings:GetTooltipSetting("ShowIconOnly");
+	if iconOnly then return GetProgressTextForRow(data); end
+	
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
 		return GetProgressColorText(data.progress or 0, data.total);
 	elseif data.collectible or (data.spellID and data.itemID and data.trackable) then
@@ -2281,7 +2019,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- If the user wants to show the progress of this search result, do so.
 		if app.Settings:GetTooltipSetting("Progress") and (not group.spellID or #info > 0) then
-			group.collectionText = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(group);
+			group.collectionText = GetProgressTextForTooltip(group);
 
 			-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
 			if group.encounterID then tinsert(info, 1, { left = "Progress", right = group.collectionText }); end
@@ -2833,18 +2571,20 @@ function app:GetDataCache()
 		app.CacheFields(rootData);
 		
 		-- Dynamic Categories
-		local keys,sortedList = {},{};
-		for suffix,window in pairs(app.Windows) do
-			if window and window.IsDynamicCategory then
-				keys[suffix] = window;
+		if app.Windows then
+			local keys,sortedList = {},{};
+			for suffix,window in pairs(app.Windows) do
+				if window and window.IsDynamicCategory then
+					keys[suffix] = window;
+				end
 			end
-		end
-		for suffix,window in pairs(keys) do
-			tinsert(sortedList, suffix);
-		end
-		app.Sort(sortedList, app.SortDefaults.Strings);
-		for i,suffix in ipairs(sortedList) do
-			tinsert(g, app.CreateDynamicCategory(suffix));
+			for suffix,window in pairs(keys) do
+				tinsert(sortedList, suffix);
+			end
+			app.Sort(sortedList, app.SortDefaults.Strings);
+			for i,suffix in ipairs(sortedList) do
+				tinsert(g, app.CreateDynamicCategory(suffix));
+			end
 		end
 
 		-- Track Deaths!
@@ -5474,6 +5214,7 @@ end)();
 -- Encounter Lib
 (function()
 if EJ_GetEncounterInfo then
+	local MAX_CREATURES_PER_ENCOUNTER = 9;
 	app.CreateEncounter = app.CreateClass("Encounter", "encounterID", {
 		["name"] = function(t)
 			return EJ_GetEncounterInfo(t.encounterID);
@@ -7242,6 +6983,7 @@ local NPCDisplayIDFromID = setmetatable({}, { __index = function(t, id)
 		if displayID and displayID ~= 0 then
 			rawset(t, id, displayID);
 			app:RedrawWindows("NPCDisplayIDFromID");
+			app.HandleEvent("OnDisplayIDAvailable");
 			return displayID;
 		end
 	end
@@ -8285,6 +8027,7 @@ local function RefreshSaves()
 
 	-- Mark that we're done now.
 	app:RedrawWindows("RefreshSaves");
+	app.HandleEvent("OnSavesUpdated");
 end
 app:RegisterEvent("BOSS_KILL");
 app.events.BOSS_KILL = function(id, name, ...)
@@ -8576,182 +8319,6 @@ app.AddEventHandler("OnReady", function()
 		if AreAnyATTWaypointsPersisted() then tomTom:ReloadWaypoints(); end
 	end
 end);
-
-
--- Minimap Button
-function AllTheThings_MinimapButtonOnClick(self, button)
-	if button == "RightButton" then
-		-- Right Button opens the Options menu.
-		app.Settings:Open();
-	else
-		-- Left Button
-		if IsShiftKeyDown() then
-			app.RefreshCollections();
-		elseif app.ToggleMiniListForCurrentZone and (IsAltKeyDown() or IsControlKeyDown()) then
-			app.ToggleMiniListForCurrentZone();
-		else
-			app.ToggleMainList();
-		end
-	end
-end
-function AllTheThings_MinimapButtonOnEnter(self, button)
-	GameTooltip:SetOwner(type(self) ~= "string" and self or button, "ANCHOR_LEFT");
-	GameTooltip:ClearLines();
-	
-	local reference = app:GetDataCache();
-	if reference then
-		GameTooltipIcon:SetSize(72,72);
-		GameTooltipIcon:ClearAllPoints();
-		GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-		GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
-		local texcoord = reference.texcoord;
-		if texcoord then
-			GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
-		else
-			GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
-		end
-		GameTooltipIcon:Show();
-		
-		local left, right = strsplit(DESCRIPTION_SEPARATOR, reference.title);
-		GameTooltip:AddDoubleLine(reference.text, reference.progressText, 1, 1, 1);
-		GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
-
-		local prime = app:GetWindow("Prime");
-		if prime and prime.forceFullDataRefresh then
-			GameTooltip:AddDoubleLine("Updates Paused", L["MAIN_LIST_REQUIRES_REFRESH"], 1, 0.4, 0.4);
-		else
-			GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
-		end
-	else
-		GameTooltip:AddDoubleLine(L["TITLE"], L["MAIN_LIST_REQUIRES_REFRESH"], 1, 1, 1);
-		GameTooltipIcon:Hide();
-	end
-	GameTooltip:AddLine(L["MINIMAP_MOUSEOVER_TEXT"], 1, 1, 1);
-	GameTooltip:Show();
-end
-function AllTheThings_MinimapButtonOnLeave()
-	GameTooltip:Hide();
-	GameTooltipIcon.icon.Background:Hide();
-	GameTooltipIcon.icon.Border:Hide();
-	GameTooltipIcon:Hide();
-	GameTooltipModel:Hide();
-end
-local function CreateMinimapButton()
-	-- Create the Button for the Minimap frame. Create a local and non-local copy.
-	local size = app.Settings:GetTooltipSetting("MinimapSize");
-	local button = CreateFrame("BUTTON", appName .. "-Minimap", Minimap);
-	button:SetPoint("CENTER", 0, 0);
-	button:SetFrameStrata("HIGH");
-	button:SetMovable(true);
-	button:EnableMouse(true);
-	button:RegisterForDrag("LeftButton", "RightButton");
-	button:RegisterForClicks("LeftButtonUp", "RightButtonUp");
-	button:SetSize(size, size);
-
-	-- Create the Button Texture
-	local texture = button:CreateTexture(nil, "BACKGROUND");
-	texture:SetTexture(app.asset("Discord_2_64"));
-	texture:SetAllPoints();
-	button.texture = texture;
-
-	-- Create the Button Texture
-	local oldtexture = button:CreateTexture(nil, "BACKGROUND");
-	oldtexture:SetPoint("CENTER", 1, 0);
-	oldtexture:SetTexture(app.asset("logo_tiny"));
-	oldtexture:SetSize(21, 21);
-	button.oldtexture = oldtexture;
-
-	-- Create the Button Tracking Border
-	local border = button:CreateTexture(nil, "BORDER");
-	border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder");
-	border:SetPoint("CENTER", 12, -12);
-	border:SetSize(56, 56);
-	button.border = border;
-	button.UpdateStyle = function(self)
-		if app.Settings:GetTooltipSetting("MinimapStyle") then
-			self:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight", "ADD");
-			self.texture:Hide();
-			self.oldtexture:Show();
-			self.border:Show();
-		else
-			self:SetHighlightTexture(app.asset("MinimapHighlight_64x64"));
-			self.texture:Show();
-			self.oldtexture:Hide();
-			self.border:Hide();
-		end
-	end
-	button:UpdateStyle();
-
-	-- Button Configuration
-	local rounding = 10;
-	local MinimapShapes = {
-		-- quadrant booleans (same order as SetTexCoord)
-		-- {bottom-right, bottom-left, top-right, top-left}
-		-- true = rounded, false = squared
-		["ROUND"] 			= {true,  true,  true,  true },
-		["SQUARE"] 			= {false, false, false, false},
-		["CORNER-TOPLEFT"] 		= {false, false, false, true },
-		["CORNER-TOPRIGHT"] 		= {false, false, true,  false},
-		["CORNER-BOTTOMLEFT"] 		= {false, true,  false, false},
-		["CORNER-BOTTOMRIGHT"]	 	= {true,  false, false, false},
-		["SIDE-LEFT"] 			= {false, true,  false, true },
-		["SIDE-RIGHT"] 			= {true,  false, true,  false},
-		["SIDE-TOP"] 			= {false, false, true,  true },
-		["SIDE-BOTTOM"] 		= {true,  true,  false, false},
-		["TRICORNER-TOPLEFT"] 		= {false, true,  true,  true },
-		["TRICORNER-TOPRIGHT"] 		= {true,  false, true,  true },
-		["TRICORNER-BOTTOMLEFT"] 	= {true,  true,  false, true },
-		["TRICORNER-BOTTOMRIGHT"] 	= {true,  true,  true,  false},
-	};
-	button.update = function(self)
-		local position = GetDataMember("Position", -10.31);
-		local angle = math.rad(position) -- determine position on your own
-		local x, y
-		local cos = math.cos(angle)
-		local sin = math.sin(angle)
-		local q = 1;
-		if cos < 0 then
-			q = q + 1;	-- lower
-		end
-		if sin > 0 then
-			q = q + 2;	-- right
-		end
-		local width = (Minimap:GetWidth() * 0.5) + 8;
-		local height = (Minimap:GetHeight() * 0.5) + 8;
-		if MinimapShapes[GetMinimapShape and GetMinimapShape() or "ROUND"][q] then
-			x = cos*width;
-			y = sin*height;
-		else
-			x = math.max(-width, math.min(cos*(math.sqrt(2*(width)^2)-rounding), width))
-			y = math.max(-height, math.min(sin*(math.sqrt(2*(height)^2)-rounding), height))
-		end
-		self:SetPoint("CENTER", "Minimap", "CENTER", -math_floor(x), math_floor(y));
-	end
-	local update = function(self)
-		local w, x = GetCursorPosition();
-		local y, z = Minimap:GetLeft(), Minimap:GetBottom();
-		local scale = UIParent:GetScale();
-		w = y - w / scale + 70; x = x / scale - z - 70;
-		SetDataMember("Position", math.deg(math.atan2(x, w)));
-		self:Raise();
-		self:update();
-	end
-
-	-- Register for Frame Events
-	button:SetScript("OnDragStart", function(self)
-		self:SetScript("OnUpdate", update);
-	end);
-	button:SetScript("OnDragStop", function(self)
-		self:SetScript("OnUpdate", nil);
-	end);
-	button:SetScript("OnEnter", AllTheThings_MinimapButtonOnEnter);
-	button:SetScript("OnLeave", AllTheThings_MinimapButtonOnLeave);
-	button:SetScript("OnClick", AllTheThings_MinimapButtonOnClick);
-	button:update();
-	button:Show();
-	return button;
-end
-app.CreateMinimapButton = CreateMinimapButton;
 
 -- Row Helper Functions
 local SetPortraitTexture = _G["SetPortraitTexture"];
@@ -9255,22 +8822,13 @@ local function RowOnClick(self, button)
 end
 local function RowOnEnter(self)
 	local reference = self.ref; -- NOTE: This is the good ref value, not the parasitic one.
-	if reference and GameTooltip then
-		GameTooltipIcon.icon.Background:Hide();
-		GameTooltipIcon.icon.Border:Hide();
-		GameTooltipIcon:Hide();
-		GameTooltipModel:Hide();
+	if reference then
 		GameTooltip:ClearLines();
-		GameTooltipIcon:ClearAllPoints();
-		GameTooltipModel:ClearAllPoints();
+		GameTooltip:ClearATTReferenceTexture();
 		if self:GetCenter() > (UIParent:GetWidth() / 2) then
 			GameTooltip:SetOwner(self, "ANCHOR_LEFT");
-			GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-			GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
 		else
 			GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
-			GameTooltipIcon:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
-			GameTooltipModel:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
 		end
 
 		-- NOTE: Order matters, we "fall-through" certain values in order to pass this information to the item ID section.
@@ -9674,25 +9232,7 @@ local function RowOnEnter(self)
 		elseif reference.isYearly then GameTooltip:AddLine("This can be completed yearly.");
 		elseif reference.repeatable then GameTooltip:AddLine("This can be repeated multiple times."); end
 		if reference.pvp and not reference.itemID then GameTooltip:AddLine(L["REQUIRES_PVP"], 1, 1, 1, 1, true); end
-		if not GameTooltipModel:TrySetModel(reference) then
-			local texture = reference.preview or reference.icon;
-			if texture then
-				if reference.explorationID and reference.maphash and reference.preview then
-					local width, height, offsetX, offsetY = strsplit(":", reference.maphash);
-					GameTooltipIcon:SetSize(tonumber(width) or 72,tonumber(height) or 72);
-				else
-					GameTooltipIcon:SetSize(72,72);
-				end
-				GameTooltipIcon.icon:SetTexture(texture);
-				local texcoord = reference.texcoord;
-				if texcoord then
-					GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
-				else
-					GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
-				end
-				GameTooltipIcon:Show();
-			end
-		end
+		GameTooltip:SetATTReference(reference);
 		if reference.displayID and app.Settings:GetTooltipSetting("displayID") then
 			GameTooltip:AddDoubleLine("Display ID", reference.displayID);
 		end
@@ -9729,7 +9269,7 @@ local function RowOnEnter(self)
 			end
 		end
 		if app.Settings:GetTooltipSetting("Progress") then
-			local right = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(reference);
+			local right = GetProgressTextForTooltip(reference);
 			if right and right ~= "" and right ~= "---" then
 				GameTooltipTextRight1:SetText(right);
 				GameTooltipTextRight1:Show();
@@ -9869,10 +9409,7 @@ local function RowOnLeave(self)
 	if GameTooltip then
 		GameTooltip:ClearLines();
 		GameTooltip:Hide();
-		GameTooltipIcon.icon.Background:Hide();
-		GameTooltipIcon.icon.Border:Hide();
-		GameTooltipIcon:Hide();
-		GameTooltipModel:Hide();
+		GameTooltip:ClearATTReferenceTexture();
 	end
 end
 CreateRow = function(self)
@@ -9949,6 +9486,12 @@ app.Windows = {};
 local doNothing = function()
 	-- Do nothing
 end;
+local defaultBackdrop = {
+	bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+	tile = true, tileSize = 16, edgeSize = 16,
+	insets = { left = 4, right = 4, top = 4, bottom = 4 }
+};
 local defaultNoEntriesRow = {
 	text = "No data was found.",
 	preview = app.asset("Discord_2_128"),
@@ -10009,7 +9552,7 @@ local function BuildSettingsForWindow(self, windowSettings, isForDefaults)
 	windowSettings.movable = not not self:IsMovable();
 	windowSettings.resizable = not not self:IsResizable();
 	if isForDefaults then
-		windowSettings.backdrop = backdrop;
+		windowSettings.backdrop = defaultBackdrop;
 		windowSettings.backdropColor = { 0, 0, 0, 1 };
 		windowSettings.borderColor = { 1, 1, 1, 1 };
 	else
@@ -10219,6 +9762,7 @@ end
 local refreshDataCooldown = 5;
 local refreshFromTrigger;
 local currentlyRefreshingData = false;
+local LastSettingsChangeUpdate;
 local function RefreshData(source, trigger)
 	wipe(app.searchCache);
 	refreshDataCooldown = 5;
@@ -10246,6 +9790,13 @@ local function RefreshData(source, trigger)
 
 			-- Execute the OnRecalculate handlers.
 			app.HandleEvent("OnRecalculate");
+
+			if LastSettingsChangeUpdate ~= app._SettingsRefresh then
+				LastSettingsChangeUpdate = app._SettingsRefresh;
+
+				app.HandleEvent("OnRecalculate_NewSettings")
+			end
+			
 			app:UpdateWindows(source, true, refreshFromTrigger);
 		else
 			app:UpdateWindows(source, nil, refreshFromTrigger);
@@ -10418,7 +9969,7 @@ function app:GetWindow(suffix, settings)
 		window:SetScript("OnMouseDown", StartMovingOrSizing);
 		window:SetScript("OnMouseUp", StopMovingOrSizing);
 		window:SetScript("OnHide", StopMovingOrSizing);
-		window:SetBackdrop(backdrop);
+		window:SetBackdrop(defaultBackdrop);
 		window:SetBackdropBorderColor(1, 1, 1, 1);
 		window:SetBackdropColor(0, 0, 0, 1);
 		window:SetClampedToScreen(true);
@@ -11750,14 +11301,7 @@ app.events.ADDON_LOADED = function(addonName)
 		end
 		_G["AllTheThingsAD"] = AllTheThingsAD;
 	end
-	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
-		type = "launcher",
-		icon = app.asset("logo_32x32"),
-		OnClick = AllTheThings_MinimapButtonOnClick,
-		OnEnter = AllTheThings_MinimapButtonOnEnter,
-		OnLeave = AllTheThings_MinimapButtonOnLeave,
-	});
-
+	
 	-- Cache the Localized Category Data
 	AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
 	app.CategoryNames = nil;
@@ -12009,7 +11553,9 @@ app.events.VARIABLES_LOADED = function()
 		-- Check for Season of Discovery
 		local season = C_Seasons and C_Seasons.GetActiveSeason() or 0;
 		getmetatable(ATTClassicSettings.Unobtainable).__index[1605] = season == 2;
-		if season == 2 then app.MaximumSkillLevel = 150; end
+		if season == 2 then app.MaximumSkillLevel = 150;
+		elseif season == 3 then app.MaximumSkillLevel = 225;
+		elseif season == 4 then app.MaximumSkillLevel = 300; end
 
 		-- Prepare the Sound Pack!
 		app.Audio:ReloadSoundPack();

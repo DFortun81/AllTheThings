@@ -256,7 +256,9 @@ root(ROOTS.PetBattles, petbattle({
 			ach(6580),	-- Rookie Pet Crew (30)
 			ach(6579),	-- Rookie Pet Group (15)
 		}),
-		ach(9712),		-- Shiny Pet Charmer
+		ach(9712, {		-- Shiny Pet Charmer
+			["timeline"] = { REMOVED_10_2_5 },
+		}),
 		ach(6851, {	-- Take 'Em All On!
 			crit(19835),	-- Aquatic
 			crit(19836),	-- Beast
@@ -283,10 +285,10 @@ root(ROOTS.PetBattles, petbattle({
 		ach(6619, {	-- Win Streak (25)
 			ach(6618),	-- On A Roll (10)
 		}),
-		ach(6558, { -- Local Pet Mauler (10)
+		ach(6558, {	-- Local Pet Mauler (10)
 			["sym"] = {{"partial_achievement",6560}},	-- World Pet Mauler (60)
 		}),
-		ach(6559, { -- Traveling Pet Mauler (30)
+		ach(6559, {	-- Traveling Pet Mauler (30)
 			["sym"] = {{"partial_achievement",6560}},	-- World Pet Mauler (60)
 		}),
 		ach(6560, {	-- World Pet Mauler (60)
@@ -366,9 +368,6 @@ root(ROOTS.PetBattles, petbattle({
 			ach(6555),		-- Building a Team (25)
 			ach(6554),		-- He's Mine! (10)
 		}),
-		ach(15644, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0, "removed 10.0.2.47120" } }, {	-- Good Things Come in Small Packages (2000)
-			i(191946),	-- Mister Muskoxeles (PET!)
-		})),
 		ach(15643,  bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- What Can I Say? They Love Me. (1750)
 			i(191932),	-- Violet Violence (PET!)
 		})),

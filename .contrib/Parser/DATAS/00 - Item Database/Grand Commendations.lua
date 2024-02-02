@@ -385,6 +385,7 @@ i(208952, FACTION_SORIDORMI);				-- Soridormi's Letter of Commendation
 i(205365, FACTION_LOAMM_NIFFEN);			-- Loamm Niffen Insignia [Uncommon]
 i(205342, FACTION_LOAMM_NIFFEN);			-- Loamm Niffen Insignia [Rare]
 i(205985, FACTION_LOAMM_NIFFEN);			-- Loamm Niffen Insignia [Epic 500]
+i(210422, FACTION_LOAMM_NIFFEN);			-- Loamm Niffen Insignia [Epic 2.5k]
 
 ------------------
 -- PATCH 10.1.5 --
@@ -398,3 +399,4 @@ i(208132, FACTION_STORMWIND);				-- Stormwind Insignia [BOP]
 -- PATCH 10.2.0 --
 ------------------
 i(211417, FACTION_DREAM_WARDENS);			-- Dream Wardens Insignia [Epic 1k]
+i(210423, FACTION_DREAM_WARDENS);			-- Dream Wardens Insignia [Epic 2.5k]

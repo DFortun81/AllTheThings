@@ -328,7 +328,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["questID"] = 64565,
 				["isDaily"] = true,
 				["g"] = {
-					i(186993),	-- Design: Porous Stone Statue
+					i(186993),	-- Design: Porous Stone Statue (RECIPE!)
 				},
 			}),
 			o(369296, {	-- Shardhide Stash

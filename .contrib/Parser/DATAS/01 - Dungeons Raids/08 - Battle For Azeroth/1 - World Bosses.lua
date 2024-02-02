@@ -1,12 +1,10 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 root(ROOTS.Instances, tier(BFA_TIER, {
 	n(WORLD_BOSSES, {
 		["isRaid"] = true,
 		["modID"] = 14,
-		["lvl"] = 120,
 		["g"] = {
 			e(2199, {	-- Azurethos, The Winged Typhoon
 				["isWeekly"] = true,
@@ -213,22 +211,22 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 				}),
 			}),
 			ach(12587, {	-- Unbound Monstrosities
-				crit(40529, { -- Warbringer Yenajz
+				crit(40529, {	-- Warbringer Yenajz
 					["_quests"] = { 52166 },
 				}),
-				crit(40530, { -- Hailstone Construct
+				crit(40530, {	-- Hailstone Construct
 					["_quests"] = { 52157 },
 				}),
-				crit(40531, { -- T'zane
+				crit(40531, {	-- T'zane
 					["_quests"] = { 52181 },
 				}),
-				crit(40532, { -- Ji'arak
+				crit(40532, {	-- Ji'arak
 					["_quests"] = { 52169 },
 				}),
-				crit(40533, { -- Dunegorger Kraulok
+				crit(40533, {	-- Dunegorger Kraulok
 					["_quests"] = { 52196 },
 				}),
-				crit(40534, { -- Azurethos
+				crit(40534, {	-- Azurethos
 					["_quests"] = { 52163 },
 				}),
 			}),

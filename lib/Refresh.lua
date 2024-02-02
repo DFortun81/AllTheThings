@@ -7,8 +7,8 @@ local _, app = ...;
 -- Encapsulates the functionality required to perform refreshes of a User's current Character and Account collection
 
 -- Global locals
-local wipe, math_max, tonumber, InCombatLockdown, coroutine, type, select, GetNumTitles, pcall, IsTitleKnown, ipairs, pairs =
-	  wipe, math.max, tonumber, InCombatLockdown, coroutine, type, select, GetNumTitles, pcall, IsTitleKnown, ipairs, pairs;
+local wipe, math_max, tonumber, InCombatLockdown, coroutine, type, select, pcall, ipairs, pairs =
+	  wipe, math.max, tonumber, InCombatLockdown, coroutine, type, select, pcall, ipairs, pairs;
 local C_MountJournal_GetMountInfoByID, C_MountJournal_GetMountIDs, PlayerHasToy, C_LegendaryCrafting_GetRuneforgePowerInfo, GetAchievementInfo, C_TransmogCollection_GetSourceInfo =
 	  C_MountJournal.GetMountInfoByID, C_MountJournal.GetMountIDs, PlayerHasToy, C_LegendaryCrafting.GetRuneforgePowerInfo, GetAchievementInfo, C_TransmogCollection.GetSourceInfo;
 

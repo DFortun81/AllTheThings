@@ -39,6 +39,11 @@ root(ROOTS.Secrets, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_1 } },
 				["sourceQuests"] = { 60617 },	-- Trainer's Test
 				["provider"] = { "n", 169415 },	-- Glimmerfin Oracle
 				["coord"] = { 17.1, 93.8, GRIZZLY_HILLS },
+				["g"] = {
+					i(180031),	-- Bulbous Seaweed Stalk (QI!)
+					i(180033),	-- Warm Seaweed Stalk (QI!)
+					i(180032),	-- Young Seaweed Stalk (QI!)
+				},
 			}),
 			q(60620, {	-- Guardian of the Smallest
 				["sourceQuests"] = { 60619 },	-- Wrap it Up

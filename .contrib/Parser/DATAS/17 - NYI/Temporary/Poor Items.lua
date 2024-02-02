@@ -142,9 +142,6 @@ root(ROOTS.NeverImplemented, {
 						i(3226),	-- Deprecated Watchman Pauldrons
 						i(1736),	-- Deprecated Worn Mail Shoulderpads
 					}),
-					n(CHEST, {
-						i(4015),	-- Sterling Chain Armor
-					}),
 					n(WRIST, {
 						i(4773),	-- Deprecated Blessed Bracers
 						i(4774),	-- Deprecated Heavy Bracers

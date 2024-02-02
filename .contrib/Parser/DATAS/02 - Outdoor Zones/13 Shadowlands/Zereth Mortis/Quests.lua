@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				q(64942, {	-- Call of the Primus
 					["maps"] = { ORIBOS },
 				}),
-				q(64944, { -- A Hasty Voyage
+				q(64944, {	-- A Hasty Voyage
 					["sourceQuests"] = { 64942 },	-- Call of the Primus
 					["provider"] = { "n", 181655 },	-- The Primus
 					["coord"] = { 34.2, 52.3, 2042 },	-- Oribos (Scenario Map)

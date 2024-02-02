@@ -1693,7 +1693,7 @@ i(0, 307221);		-- Void Focus
 -----------------
 -- PATCH 9.0.1 --
 -----------------
---- RELICS ---
+--- RELIC ---
 i(0, 330134);		-- Relic of the Past I [CLASSIC]
 i(0, 330140);		-- Relic of the Past II [CLASSIC]
 i(0, 330141);		-- Relic of the Past III [CLASSIC]
@@ -1784,7 +1784,7 @@ i(0, 307700);		-- Phaeweald Smasher
 i(0, 307695);		-- Phaeweald Spear
 i(0, 307691);		-- Phaeweald Waistguard
 i(0, 307694);		-- Phaeweald Warglaive
-i(0, 322592);		-- Shadowsteel Aegis \\ Solforged Aegis
+i(0, 322592);		-- Shadowsteel Aegis
 i(0, 322610);		-- Sinsteel Aegis
 i(0, 322613);		-- Sinsteel Armguards
 i(0, 322636);		-- Sinsteel Axe
@@ -2101,7 +2101,7 @@ i(205137, 408282);	-- Shadowed Alloy
 i(205143, 408288);	-- Shadowed Belt Clasp
 i(205145, 408326);	-- Shadowed Impact Buckler
 i(205144, 408283);	-- Shadowed Razing Annihilator
---- SPECIAL ---
+--- LEGENDARY ---
 i(0, 409224);		-- Reclaimed Gauntlet Chassis
 
 ------------------

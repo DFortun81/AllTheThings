@@ -187,7 +187,7 @@ local MERCHANT_GROUPS = {
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 		["timeline"] = { "added 4.3.0.15005" },
 	}),
-	i(188699, {	-- Insulated Dancing Insoles (TOY)
+	i(188699, {	-- Insulated Dancing Insoles (TOY!)
 		["cost"] = { { "i", 23247, 100 } },	-- Burning Blossom
 		["timeline"] = { "added 9.2.0.00000" },
 	}),

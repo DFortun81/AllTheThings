@@ -48,7 +48,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_3_0 },
 					["sourceQuest"] = 30099,	-- In Unending Numbers
 				}),
 			}),
-			n(ZONE_DROPS, { 
+			n(ZONE_DROPS, {
 				i(76158, {	-- Courtier's Slippers
 					["crs"] = {
 						55654,	-- Corrupted Arcanist
@@ -75,8 +75,8 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_3_0 },
 						55503,	-- Legion Demon
 						54645,	-- Royal Handmaiden
 						55453,	-- Shadowbat
-					},	
-				}),			
+					},
+				}),
 				i(76159, {	-- Legion Bindings
 					["crs"] = {
 						55654,	-- Corrupted Arcanist

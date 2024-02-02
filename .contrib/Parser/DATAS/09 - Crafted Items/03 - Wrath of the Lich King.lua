@@ -235,7 +235,7 @@ root(ROOTS.Craftables, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbl
 			i(41240),	-- Cobalt Tenderizer
 			i(40668),	-- Cobalt Triangle Shield
 			i(42443),	-- Cudgel of Saronite Justice
-			i(41245, {["timeline"] = {ADDED_3_0_3, REMOVED_5_0_4}}),	-- Deadly Saronite Dirk
+			i(41245, {["timeline"] = {ADDED_3_0_3}}),	-- Deadly Saronite Dirk (made grey in 5.0.4 but not removed)
 			i(41242),	-- Forged Cobalt Claymore
 			i(41185),	-- Furious Saronite Beatstick
 			i(41181),	-- Honed Cobalt Cleaver

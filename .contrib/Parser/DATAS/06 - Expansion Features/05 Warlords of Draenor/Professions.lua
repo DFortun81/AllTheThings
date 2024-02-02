@@ -189,123 +189,123 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, bubbleDown({ ["timeline"] = { "adde
 				crit(25671, {	-- Pristine Apexis Hieroglyph
 					["_quests"] = { 36779 },
 				}),
-				crit(25672, { -- Pristine Apexis Scroll
+				crit(25672, {	-- Pristine Apexis Scroll
 					["_quests"] = { 36780 },
 				}),
-				crit(25634, { -- Pristine Fang-Scarred Frostwolf Axe
+				crit(25634, {	-- Pristine Fang-Scarred Frostwolf Axe
 					["_quests"] = { 36725 },
 				}),
-				crit(25635, { -- Pristine Frostwolf Ancestry Scrimshaw
+				crit(25635, {	-- Pristine Frostwolf Ancestry Scrimshaw
 					["_quests"] = { 36743 },
 				}),
-				crit(25636, { -- Pristine Wolfskin Snowshoes
+				crit(25636, {	-- Pristine Wolfskin Snowshoes
 					["_quests"] = { 36744 },
 				}),
-				crit(25637, { -- Pristine Warsinger's Drums
+				crit(25637, {	-- Pristine Warsinger's Drums
 					["_quests"] = { 36745 },
 				}),
-				crit(25638, { -- Pristine Screaming Bullroarer
+				crit(25638, {	-- Pristine Screaming Bullroarer
 					["_quests"] = { 36746 },
 				}),
-				crit(25639, { -- Pristine Warsong Ceremonial Pike
+				crit(25639, {	-- Pristine Warsong Ceremonial Pike
 					["_quests"] = { 36747 },
 				}),
-				crit(25640, { -- Pristine Metalworker's Hammer
+				crit(25640, {	-- Pristine Metalworker's Hammer
 					["_quests"] = { 36748 },
 				}),
-				crit(25641, { -- Pristine Elemental Bellows
+				crit(25641, {	-- Pristine Elemental Bellows
 					["_quests"] = { 36749 },
 				}),
-				crit(25642, { -- Pristine Blackrock Razor
+				crit(25642, {	-- Pristine Blackrock Razor
 					["_quests"] = { 36750 },
 				}),
-				crit(25643, { -- Pristine Weighted Chopping Axe
+				crit(25643, {	-- Pristine Weighted Chopping Axe
 					["_quests"] = { 36751 },
 				}),
-				crit(25644, { -- Pristine Hooked Dagger
+				crit(25644, {	-- Pristine Hooked Dagger
 					["_quests"] = { 36752 },
 				}),
-				crit(25645, { -- Pristine Barbed Fishing Hook
+				crit(25645, {	-- Pristine Barbed Fishing Hook
 					["_quests"] = { 36753 },
 				}),
-				crit(25646, { -- Pristine Calcified Eye In A Jar
+				crit(25646, {	-- Pristine Calcified Eye In A Jar
 					["_quests"] = { 36754 },
 				}),
-				crit(25647, { -- Pristine Ceremonial Tattoo Needles
+				crit(25647, {	-- Pristine Ceremonial Tattoo Needles
 					["_quests"] = { 36755 },
 				}),
-				crit(25648, { -- Pristine Ancestral Talisman
+				crit(25648, {	-- Pristine Ancestral Talisman
 					["_quests"] = { 36756 },
 				}),
-				crit(25649, { -- Pristine Cracked Ivory Idol
+				crit(25649, {	-- Pristine Cracked Ivory Idol
 					["_quests"] = { 36757 },
 				}),
-				crit(25650, { -- Pristine Flask of Blazegrease
+				crit(25650, {	-- Pristine Flask of Blazegrease
 					["_quests"] = { 36758 },
 				}),
-				crit(25651, { -- Pristine Gronn-Tooth Necklace
+				crit(25651, {	-- Pristine Gronn-Tooth Necklace
 					["_quests"] = { 36759 },
 				}),
-				crit(25652, { -- Pristine Doomsday Prophecy
+				crit(25652, {	-- Pristine Doomsday Prophecy
 					["_quests"] = { 36760 },
 				}),
-				crit(25653, { -- Pristine Stonemaul Succession Stone
+				crit(25653, {	-- Pristine Stonemaul Succession Stone
 					["_quests"] = { 36761 },
 				}),
-				crit(25654, { -- Pristine Stone Manacles
+				crit(25654, {	-- Pristine Stone Manacles
 					["_quests"] = { 36762 },
 				}),
-				crit(25655, { -- Pristine Ogre Figurine
+				crit(25655, {	-- Pristine Ogre Figurine
 					["_quests"] = { 36763 },
 				}),
-				crit(25656, { -- Pristine Pictogram Carving
+				crit(25656, {	-- Pristine Pictogram Carving
 					["_quests"] = { 36764 },
 				}),
-				crit(25657, { -- Pristine Gladiator's Shield
+				crit(25657, {	-- Pristine Gladiator's Shield
 					["_quests"] = { 36765 },
 				}),
-				crit(25658, { -- Pristine Mortar and Pestle
+				crit(25658, {	-- Pristine Mortar and Pestle
 					["_quests"] = { 36766 },
 				}),
-				crit(25659, { -- Pristine Eye of Har'guun the Blind
+				crit(25659, {	-- Pristine Eye of Har'guun the Blind
 					["_quests"] = { 36767 },
 				}),
-				crit(25660, { -- Pristine Stone Dentures
+				crit(25660, {	-- Pristine Stone Dentures
 					["_quests"] = { 36768 },
 				}),
-				crit(25661, { -- Pristine Rylak Riding Harness
+				crit(25661, {	-- Pristine Rylak Riding Harness
 					["_quests"] = { 36769 },
 				}),
-				crit(25662, { -- Pristine Imperial Decree Stele
+				crit(25662, {	-- Pristine Imperial Decree Stele
 					["_quests"] = { 36770 },
 				}),
 			}),
 			ach(9411, {	-- Highmaul Historian
-				crit(25653, { -- Pristine Stonemaul Succession Stone
+				crit(25653, {	-- Pristine Stonemaul Succession Stone
 					["_quests"] = { 36761 },
 				}),
-				crit(25654, { -- Pristine Stone Manacles
+				crit(25654, {	-- Pristine Stone Manacles
 					["_quests"] = { 36762 },
 				}),
-				crit(25655, { -- Pristine Ogre Figurine
+				crit(25655, {	-- Pristine Ogre Figurine
 					["_quests"] = { 36763 },
 				}),
-				crit(25656, { -- Pristine Pictogram Carving
+				crit(25656, {	-- Pristine Pictogram Carving
 					["_quests"] = { 36764 },
 				}),
-				crit(25657, { -- Pristine Gladiator's Shield
+				crit(25657, {	-- Pristine Gladiator's Shield
 					["_quests"] = { 36765 },
 				}),
-				crit(25658, { -- Pristine Mortar and Pestle
+				crit(25658, {	-- Pristine Mortar and Pestle
 					["_quests"] = { 36766 },
 				}),
-				crit(25659, { -- Pristine Eye of Har'guun the Blind
+				crit(25659, {	-- Pristine Eye of Har'guun the Blind
 					["_quests"] = { 36767 },
 				}),
-				crit(25660, { -- Pristine Stone Dentures
+				crit(25660, {	-- Pristine Stone Dentures
 					["_quests"] = { 36768 },
 				}),
-				crit(25661, { -- Pristine Rylak Riding Harness
+				crit(25661, {	-- Pristine Rylak Riding Harness
 					["_quests"] = { 36769 },
 				}),
 				crit(25662, {	-- Pristine Imperial Decree Stele
@@ -314,61 +314,61 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, bubbleDown({ ["timeline"] = { "adde
 			}),
 			ach(9422),	-- The Search For Fact, Not Truth (30)
 			ach(9410, {	-- Unite the Clans
-				crit(25634, { -- Pristine Fang-Scarred Frostwolf Axe
+				crit(25634, {	-- Pristine Fang-Scarred Frostwolf Axe
 					["_quests"] = { 36725 },
 				}),
-				crit(25635, { -- Pristine Frostwolf Ancestry Scrimshaw
+				crit(25635, {	-- Pristine Frostwolf Ancestry Scrimshaw
 					["_quests"] = { 36743 },
 				}),
-				crit(25636, { -- Pristine Wolfskin Snowshoes
+				crit(25636, {	-- Pristine Wolfskin Snowshoes
 					["_quests"] = { 36744 },
 				}),
-				crit(25637, { -- Pristine Warsinger's Drums
+				crit(25637, {	-- Pristine Warsinger's Drums
 					["_quests"] = { 36745 },
 				}),
-				crit(25638, { -- Pristine Screaming Bullroarer
+				crit(25638, {	-- Pristine Screaming Bullroarer
 					["_quests"] = { 36746 },
 				}),
-				crit(25639, { -- Pristine Warsong Ceremonial Pike
+				crit(25639, {	-- Pristine Warsong Ceremonial Pike
 					["_quests"] = { 36747 },
 				}),
-				crit(25640, { -- Pristine Metalworker's Hammer
+				crit(25640, {	-- Pristine Metalworker's Hammer
 					["_quests"] = { 36748 },
 				}),
-				crit(25641, { -- Pristine Elemental Bellows
+				crit(25641, {	-- Pristine Elemental Bellows
 					["_quests"] = { 36749 },
 				}),
-				crit(25642, { -- Pristine Blackrock Razor
+				crit(25642, {	-- Pristine Blackrock Razor
 					["_quests"] = { 36750 },
 				}),
-				crit(25643, { -- Pristine Weighted Chopping Axe
+				crit(25643, {	-- Pristine Weighted Chopping Axe
 					["_quests"] = { 36751 },
 				}),
-				crit(25644, { -- Pristine Hooked Dagger
+				crit(25644, {	-- Pristine Hooked Dagger
 					["_quests"] = { 36752 },
 				}),
-				crit(25645, { -- Pristine Barbed Fishing Hook
+				crit(25645, {	-- Pristine Barbed Fishing Hook
 					["_quests"] = { 36753 },
 				}),
-				crit(25646, { -- Pristine Calcified Eye In A Jar
+				crit(25646, {	-- Pristine Calcified Eye In A Jar
 					["_quests"] = { 36754 },
 				}),
-				crit(25647, { -- Pristine Ceremonial Tattoo Needles
+				crit(25647, {	-- Pristine Ceremonial Tattoo Needles
 					["_quests"] = { 36755 },
 				}),
-				crit(25648, { -- Pristine Ancestral Talisman
+				crit(25648, {	-- Pristine Ancestral Talisman
 					["_quests"] = { 36756 },
 				}),
-				crit(25649, { -- Pristine Cracked Ivory Idol
+				crit(25649, {	-- Pristine Cracked Ivory Idol
 					["_quests"] = { 36757 },
 				}),
-				crit(25650, { -- Pristine Flask of Blazegrease
+				crit(25650, {	-- Pristine Flask of Blazegrease
 					["_quests"] = { 36758 },
 				}),
-				crit(25651, { -- Pristine Gronn-Tooth Necklace
+				crit(25651, {	-- Pristine Gronn-Tooth Necklace
 					["_quests"] = { 36759 },
 				}),
-				crit(25652, { -- Pristine Doomsday Prophecy
+				crit(25652, {	-- Pristine Doomsday Prophecy
 					["_quests"] = { 36760 },
 				}),
 			}),
@@ -601,7 +601,7 @@ root(ROOTS.ExpansionFeatures, tier(WOD_TIER, bubbleDown({ ["timeline"] = { "adde
 			}),
 		})),
 		prof(FIRST_AID, {
-			ach(9505, { -- Draenor Medic (700)
+			ach(9505, {	-- Draenor Medic (700)
 				["timeline"] = { "added 6.0", "removed 8.0" },
 				["requireSkill"] = FIRST_AID,
 			}),

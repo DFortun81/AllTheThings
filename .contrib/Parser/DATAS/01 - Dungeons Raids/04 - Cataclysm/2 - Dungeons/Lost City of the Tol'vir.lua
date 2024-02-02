@@ -217,7 +217,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(56381), -- Greaves of Wu the Elder
 						i(56383), -- Ionic Gloves
 						i(56379), -- Kaleki Cloak
-						i(157600, { -- Necklace of Rumbling Earth
+						i(157600, {	-- Necklace of Rumbling Earth
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(56382), -- Siliza's Spear
@@ -255,7 +255,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 						i(56401), -- Leggings of the Path
 						i(56399), -- Mantle of Master Cho
 						i(56398), -- Ring of Three Lights
-						i(157599, { -- Sceptre of Swirling Winds
+						i(157599, {	-- Sceptre of Swirling Winds
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(56400), -- Sorrowsong

@@ -1489,10 +1489,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(1938, {	-- Block Mallet
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 						}),
 						i(1215, {	-- Support Girdle
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1543,7 +1543,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2821, {	-- Mo'grosh Masher
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 05.09.2023 ATT Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 					},
 				}),
@@ -1560,10 +1560,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(6197, {	-- Loch Croc Hide Vest
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(3563, {	-- Seafarer's Pantaloons
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1600,10 +1600,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2284, {	-- Rat Cloth Cloak
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 05.09.2023 ATT Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 						i(6195, {	-- Wax-polished Armor
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 05.09.2023 ATT Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 					},
 				}),
@@ -1632,10 +1632,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["groups"] = {
 						i(6197, {	-- Loch Croc Hide Vest
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(3563, {	-- Seafarer's Pantaloons
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -1666,10 +1666,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2241, {	-- Desperado Cape
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 05.09.2023 ATT Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 						i(3571, {	-- Trogg Beater
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -1950,7 +1950,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(5319, {	-- Bashing Pauldrons
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 2478,  -- Haren Swifthoof <Horde Runner>
 					["coords"] = {
@@ -2029,7 +2029,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(2823, {	-- Mo'grosh Can Opener
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1180,  -- Mo'grosh Brute
 					["coords"] = {
@@ -2051,7 +2051,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(2821, {	-- Mo'grosh Masher
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 05.09.2023 ATT Discord
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 					["crs"] = {
 						14267,  -- Emogg the Crusher
 						1179,  -- Mo'grosh Enforcer
@@ -2073,7 +2073,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(2822, {	-- Mo'grosh Toothpick
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1178,  -- Mo'grosh Ogre
 					["coords"] = {
@@ -2110,7 +2110,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(4949, {	-- Orcish Cleaver
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 7170,  -- Thragomm <Horde Runner>
 					["coords"] = {
@@ -2134,7 +2134,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2283, {	-- Rat Cloth Belt
 					["cr"] = 1177,  -- Tunnel Rat Surveyor
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 35.2, 27.6, LOCH_MODAN },
@@ -2152,7 +2152,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Can drop from any mob in the zone.",
 				}),
 				i(2281, {	-- Rodentia Flint Axe
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						1176,  -- Tunnel Rat Forager
@@ -2178,7 +2178,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1173,  -- Tunnel Rat Scout
 						1172,  -- Tunnel Rat Vermin
 					},
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 28.6, 45.0, LOCH_MODAN },
@@ -2242,7 +2242,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(2265, {	-- Stonesplinter Axe
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1163,  -- Stonesplinter Skullthumper
 					["coords"] = {
@@ -2272,7 +2272,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(2266, {	-- Stonesplinter Dagger
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1166,  -- Stonesplinter Seer
 					["coords"] = {
@@ -2291,7 +2291,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2267, {	-- Stonesplinter Mace
 					["cr"] = 1197,  -- Stonesplinter Shaman
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 54.6, 26.8, LOCH_MODAN },

@@ -543,7 +543,6 @@ root(ROOTS.Zones, {
 			crit(13918),	-- Crucible of Carnage in Twilight Highlands
 		}),
 		ach(5794),		-- Time Flies When You're Having Fun
-		-- #if BEFORE 5.0.4.16016
 		applyclassicphase(WRATH_PHASE_ONE, ach(1681, {	-- The Loremaster (A)
 			["sym"] = {{"meta_achievement",
 				1678,	-- Loremaster of Kalimdor (A)
@@ -572,7 +571,6 @@ root(ROOTS.Zones, {
 				i(43300),	-- Loremaster's Colors
 			},
 		})),
-		-- #endif
 		ach(7520, {		-- The Loremaster
 			["sym"] = {{"meta_achievement",
 				1676,	-- Loremaster of Eastern Kingdoms

@@ -65,33 +65,33 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					},
 					["g"] = {
 						-- Available
-						i(144145, { -- Conflagrating Gloves
+						i(144145, {	-- Conflagrating Gloves
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144020, { -- Crest of the Clan Lords
+						i(144020, {	-- Crest of the Clan Lords
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144143, { -- Hurricane Belt
+						i(144143, {	-- Hurricane Belt
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144021, { -- Meteoric Greathelm
+						i(144021, {	-- Meteoric Greathelm
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144144, { -- Whirling Dervish Choker
+						i(144144, {	-- Whirling Dervish Choker
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(85178, { -- Conflagrating Gloves
+						i(85178, {	-- Conflagrating Gloves
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(85175, { -- Crest of the Clan Lords
+						i(85175, {	-- Crest of the Clan Lords
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(85176, { -- Hurricane Belt
+						i(85176, {	-- Hurricane Belt
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(85179, { -- Meteoric Greathelm
+						i(85179, {	-- Meteoric Greathelm
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -100,33 +100,33 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["crs"] = { 61243 },	-- Gekkan
 					["g"] = {
 						-- Available
-						i(144148, { -- Claws of Gekkan
+						i(144148, {	-- Claws of Gekkan
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144147, { -- Cloak of Cleansing Flames
+						i(144147, {	-- Cloak of Cleansing Flames
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143992, { -- Glintrok Sollerets
+						i(143992, {	-- Glintrok Sollerets
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144149, { -- Hexxer's Lethargic Gloves
+						i(144149, {	-- Hexxer's Lethargic Gloves
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144146, { -- Iron Protector Talisman
+						i(144146, {	-- Iron Protector Talisman
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(85183, { -- Claws of Gekkan
+						i(85183, {	-- Claws of Gekkan
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(85182, { -- Cloak of Cleansing Flames
+						i(85182, {	-- Cloak of Cleansing Flames
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(85184, { -- Hexxer's Lethargic Gloves
+						i(85184, {	-- Hexxer's Lethargic Gloves
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(85180, { -- Glintrok Sollerets
+						i(85180, {	-- Glintrok Sollerets
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -136,63 +136,63 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["g"] = {
 						-- Avalable
 						ach(6755),	-- Mogu'shan Palace
-						i(144151, { -- Axebreaker Gauntlets
+						i(144151, {	-- Axebreaker Gauntlets
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144152, { -- Blade Trap Signet
+						i(144152, {	-- Blade Trap Signet
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143993, { -- Boots of Plummeting Death
+						i(143993, {	-- Boots of Plummeting Death
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144154, { -- Firescribe Dagger
+						i(144154, {	-- Firescribe Dagger
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144150, { -- Ghostheart
+						i(144150, {	-- Ghostheart
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144153, { -- Groundshaker Bracer
+						i(144153, {	-- Groundshaker Bracer
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144155, { -- Mindcapture Pendant
+						i(144155, {	-- Mindcapture Pendant
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143956, { -- Mind's Eye Breastplate
+						i(143956, {	-- Mind's Eye Breastplate
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144214, { -- Mogu'Dar, Blade of the Thousand Slaves
+						i(144214, {	-- Mogu'Dar, Blade of the Thousand Slaves
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143995, { -- Regal Silk Shoulderpads
+						i(143995, {	-- Regal Silk Shoulderpads
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143994, { -- Soulbinder Treads
+						i(143994, {	-- Soulbinder Treads
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(85186, { -- Axebreaker Gauntlets
+						i(85186, {	-- Axebreaker Gauntlets
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(85187, { -- Boots of Plummeting Death
+						i(85187, {	-- Boots of Plummeting Death
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(85190, { -- Firescribe Dagger
+						i(85190, {	-- Firescribe Dagger
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(85185, { -- Ghostheart
+						i(85185, {	-- Ghostheart
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(85189, { -- Groundshaker Bracer
+						i(85189, {	-- Groundshaker Bracer
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(85193, { -- Mind's Eye Breastplate
+						i(85193, {	-- Mind's Eye Breastplate
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(85194, { -- Regal Silk Shoulderpads
+						i(85194, {	-- Regal Silk Shoulderpads
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(85192, { -- Soulbinder Treads
+						i(85192, {	-- Soulbinder Treads
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -210,33 +210,33 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					},
 					["g"] = {
 						-- Available
-						i(144145, { -- Conflagrating Gloves
+						i(144145, {	-- Conflagrating Gloves
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144020, { -- Crest of the Clan Lords
+						i(144020, {	-- Crest of the Clan Lords
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144143, { -- Hurricane Belt
+						i(144143, {	-- Hurricane Belt
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144021, { -- Meteoric Greathelm
+						i(144021, {	-- Meteoric Greathelm
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144144, { -- Whirling Dervish Choker
+						i(144144, {	-- Whirling Dervish Choker
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(81240, { -- Conflagrating Gloves
+						i(81240, {	-- Conflagrating Gloves
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81237, { -- Crest of the Clan Lords
+						i(81237, {	-- Crest of the Clan Lords
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81238, { -- Hurricane Belt
+						i(81238, {	-- Hurricane Belt
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81241, { -- Meteoric Greathelm
+						i(81241, {	-- Meteoric Greathelm
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -246,33 +246,33 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["g"] = {
 						-- Available
 						ach(6478),	-- Glintrok N' Roll
-						i(144148, { -- Claws of Gekkan
+						i(144148, {	-- Claws of Gekkan
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144147, { -- Cloak of Cleansing Flames
+						i(144147, {	-- Cloak of Cleansing Flames
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143992, { -- Glintrok Sollerets
+						i(143992, {	-- Glintrok Sollerets
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144149, { -- Hexxer's Lethargic Gloves
+						i(144149, {	-- Hexxer's Lethargic Gloves
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144146, { -- Iron Protector Talisman
+						i(144146, {	-- Iron Protector Talisman
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(81245, { -- Claws of Gekkan
+						i(81245, {	-- Claws of Gekkan
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81244, { -- Cloak of Cleansing Flames
+						i(81244, {	-- Cloak of Cleansing Flames
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81242, { -- Glintrok Sollerets
+						i(81242, {	-- Glintrok Sollerets
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81246, { -- Hexxer's Lethargic Gloves
+						i(81246, {	-- Hexxer's Lethargic Gloves
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -284,66 +284,66 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 						ach(6756),	-- Heroic: Mogu'shan Palace
 						ach(6766),	-- Heroic: Mogu'shan Palace Guild Run
 						ach(6736),	-- What Does This Button Do?
-						i(144151, { -- Axebreaker Gauntlets
+						i(144151, {	-- Axebreaker Gauntlets
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144152, { -- Blade Trap Signet
+						i(144152, {	-- Blade Trap Signet
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143993, { -- Boots of Plummeting Death
+						i(143993, {	-- Boots of Plummeting Death
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144154, { -- Firescribe Dagger
+						i(144154, {	-- Firescribe Dagger
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144150, { -- Ghostheart
+						i(144150, {	-- Ghostheart
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144153, { -- Groundshaker Bracer
+						i(144153, {	-- Groundshaker Bracer
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143956, { -- Mind's Eye Breastplate
+						i(143956, {	-- Mind's Eye Breastplate
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144155, { -- Mindcapture Pendant
+						i(144155, {	-- Mindcapture Pendant
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144214, { -- Mogu'Dar, Blade of the Thousand Slaves
+						i(144214, {	-- Mogu'Dar, Blade of the Thousand Slaves
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143995, { -- Regal Silk Shoulderpads
+						i(143995, {	-- Regal Silk Shoulderpads
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143994, { -- Soulbinder Treads
+						i(143994, {	-- Soulbinder Treads
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(81248, { -- Axebreaker Gauntlets
+						i(81248, {	-- Axebreaker Gauntlets
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81249, { -- Boots of Plummeting Death
+						i(81249, {	-- Boots of Plummeting Death
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81253, { -- Firescribe Dagger
+						i(81253, {	-- Firescribe Dagger
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81247, { -- Ghostheart
+						i(81247, {	-- Ghostheart
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81252, { -- Groundshaker Bracer
+						i(81252, {	-- Groundshaker Bracer
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81256, { -- Mind's Eye Breastplate
+						i(81256, {	-- Mind's Eye Breastplate
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(87542, { -- Mogu'Dar, Blade of the Thousand Slaves
+						i(87542, {	-- Mogu'Dar, Blade of the Thousand Slaves
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81257, { -- Regal Silk Shoulderpads
+						i(81257, {	-- Regal Silk Shoulderpads
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81255, { -- Soulbinder Treads
+						i(81255, {	-- Soulbinder Treads
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},

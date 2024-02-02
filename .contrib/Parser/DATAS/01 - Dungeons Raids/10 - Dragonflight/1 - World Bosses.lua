@@ -122,13 +122,13 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 			e(2562,	-- Aurostor, The Hibernator
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 				["crs"] = { 209574 },
-				["coord"] = { 37.1, 55.2, EMERALD_DREAM },
+				["coord"] = { 39.6, 54.1, EMERALD_DREAM },
 				--["questID"] = ,
 				["g"] = sharedData({
 					["modID"] = 3,
 				},{
 					i(210751),	-- Mark of the Hibernating Runebear (CI!)
-					i(210433, { -- Visage of Aurostor (COSMETIC!)
+					i(210433, {	-- Visage of Aurostor (COSMETIC!)
 						["modID"] = 0,
 					}),
 					i(208440),	-- Aurostor's Sleeping Knickers
@@ -145,7 +145,7 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 			})),
 			q(76367,	-- Hibernation Heroes
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-				["coord"] = { 37.1, 55.2, EMERALD_DREAM },
+				["coord"] = { 39.6, 54.1, EMERALD_DREAM },
 				["isWorldQuest"] = true,
 				["sym"] = {
 					{"select","encounterID",2562,},{"pop"},

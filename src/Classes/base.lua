@@ -118,8 +118,8 @@ local DefaultFields = {
 	["repeatable"] = function(t)
 		return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly;
 	end,
-	["costProgress"] = returnZero,
     ["costTotal"] = returnZero,
+    ["upgradeTotal"] = returnZero,
 	["progress"] = returnZero,
     ["total"] = returnZero,
 };
@@ -424,7 +424,7 @@ app.CreateClass = function(className, classKey, fields, ...)
 							variants[variantName] = BaseObjectFields(variantClone, className .. subclassName .. variantName);
 						end
 					end
-					local a,b;
+					local a;
 					tinsert(conditionals, function(t)
 						a = conditional(t);
 						if a then

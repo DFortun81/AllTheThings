@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 35.6, 59.5, THE_FORBIDDEN_REACH },
 			}),
 			-- Evoker Tablets
-			q(74866, { -- Journal Entry: Experiments (A)
+			q(74866, {	-- Journal Entry: Experiments (A)
 				["provider"] = { "i", 204200 },	-- Journal Entry: Experiments [A]
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -134,7 +134,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "i", 202329 },	-- Journal Entry: Experiments [H]
 				["races"] = HORDE_ONLY,
 			}),
-			q(73113, { -- Journal Entry: Relics (A)
+			q(73113, {	-- Journal Entry: Relics (A)
 				["provider"] = { "i", 202335 },	-- Journal Entry: Relics [A]
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "i", 204221 },	-- Journal Entry: Relics [H]
 				["races"] = HORDE_ONLY,
 			}),
-			q(73109, { -- Receiving Stone: Final Warning (A)
+			q(73109, {	-- Receiving Stone: Final Warning (A)
 				["provider"] = { "i", 202328 },	-- Receiving Stone: Final Warning [A]
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "i", 204250 },	-- Receiving Stone: Final Warning [H]
 				["races"] = HORDE_ONLY,
 			}),
-			q(73107, { -- Sending Stone: Initial Report (A)
+			q(73107, {	-- Sending Stone: Initial Report (A)
 				["provider"] = { "i", 202326 },	-- Sending Stone: Initial Report [A]
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["provider"] = { "i", 204252 },	-- Sending Stone: Initial Report [H]
 				["races"] = HORDE_ONLY,
 			}),
-			q(72944, { -- Sending Stone: Protest (A)
+			q(72944, {	-- Sending Stone: Protest (A)
 				["provider"] = { "i", 202203 },	-- Sending Stone: Protest [A]
 				["races"] = ALLIANCE_ONLY,
 			}),

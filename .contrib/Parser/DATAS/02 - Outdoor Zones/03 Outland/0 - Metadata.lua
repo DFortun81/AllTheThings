@@ -107,7 +107,7 @@ root(ROOTS.Zones, {
 					-- #else
 					["sym"] = { {"meta_achievement", 1194, 1190, 1273, 1193, 1195, 1272, 1271 } },
 					-- #endif
-					["timeline"] = { "deleted 4.0.3" },
+					["timeline"] = { "removed 4.0.3" },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(1311, {	-- Medium Rare

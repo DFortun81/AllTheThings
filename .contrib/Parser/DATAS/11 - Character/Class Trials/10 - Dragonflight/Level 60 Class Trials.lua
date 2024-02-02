@@ -56,7 +56,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 					}),
 				}),
 				cl(DRUID, {
-					i(187659, { -- Adventurer's Footlocker
+					i(187659, {	-- Adventurer's Footlocker
 						i(170617), -- Springrain Spear
 						i(170611), -- Springrain Stave
 					}),

@@ -57,30 +57,30 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["crs"] = { 56448 },	-- Wise Mari
 					["g"] = {
 						-- Available
-						i(144112, { -- Crystallized Droplet
+						i(144112, {	-- Crystallized Droplet
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143960, { -- Riverbed Chestguard
+						i(143960, {	-- Riverbed Chestguard
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143973, { -- Treads of Corrupted Water
+						i(143973, {	-- Treads of Corrupted Water
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144017, { -- Waterburst Helm
+						i(144017, {	-- Waterburst Helm
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144111, { -- Wind-Soaked
+						i(144111, {	-- Wind-Soaked
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(80861, { -- Riverbed Chestguard
+						i(80861, {	-- Riverbed Chestguard
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80862, { -- Treads of Corrupted Water
+						i(80862, {	-- Treads of Corrupted Water
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80860, { -- Waterburst Helm
+						i(80860, {	-- Waterburst Helm
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -89,30 +89,30 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["crs"] = { 56843 },	-- Lorewalker Stonestep
 					["g"] = {
 						-- Available
-						i(144081, { -- Girdle of Endemic Anger
+						i(144081, {	-- Girdle of Endemic Anger
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143987, { -- Leggings of Whispered Dreams
+						i(143987, {	-- Leggings of Whispered Dreams
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143974, { -- Stonestep Boots
+						i(143974, {	-- Stonestep Boots
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144083, { -- Sunheart Waistband
+						i(144083, {	-- Sunheart Waistband
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144113, { -- Windswept Pages
+						i(144113, {	-- Windswept Pages
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(80864, { -- Girdle of Endemic Anger
+						i(80864, {	-- Girdle of Endemic Anger
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80863, { -- Stonestep Boots
+						i(80863, {	-- Stonestep Boots
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80865, { -- Sunheart Waistband
+						i(80865, {	-- Sunheart Waistband
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -121,30 +121,30 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["crs"] = { 56732 },	-- Liu Flameheart
 					["g"] = {
 						-- Available
-						i(144094, { -- Cape of Entaglement
+						i(144094, {	-- Cape of Entaglement
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144090, { -- Firebelcher Hand Cannon
+						i(144090, {	-- Firebelcher Hand Cannon
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143988, { -- Flameheart Sandals
+						i(143988, {	-- Flameheart Sandals
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143971, { -- Serpentstrike Shoulderpads
+						i(143971, {	-- Serpentstrike Shoulderpads
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144114, { -- Signet of Dancing Jade
+						i(144114, {	-- Signet of Dancing Jade
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(80872, { -- Firebelcher Hand Cannon
+						i(80872, {	-- Firebelcher Hand Cannon
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80867, { -- Serpentstrike Shoulderpads
+						i(80867, {	-- Serpentstrike Shoulderpads
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80866, { -- Cape of Entaglement
+						i(80866, {	-- Cape of Entaglement
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -154,57 +154,57 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["g"] = {
 						-- Available
 						ach(6757),	-- Temple of the Jade Serpent
-						i(144116, { -- Binding of Broken Dreams
+						i(144116, {	-- Binding of Broken Dreams
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143959, { -- Chestguard of Despair
+						i(143959, {	-- Chestguard of Despair
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144115, { -- Cloak of Failing Will
+						i(144115, {	-- Cloak of Failing Will
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143972, { -- Doubtridden Shoulderguards
+						i(143972, {	-- Doubtridden Shoulderguards
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144086, { -- Dubious Handaxe
+						i(144086, {	-- Dubious Handaxe
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144091, { -- Hopecrusher Gauntlets
+						i(144091, {	-- Hopecrusher Gauntlets
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144216, { -- Je'lyu, Spirit of the Serpent
+						i(144216, {	-- Je'lyu, Spirit of the Serpent
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144117, { -- Mindbreaker Pendant
+						i(144117, {	-- Mindbreaker Pendant
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143970, { -- Neverdare Shoulders
+						i(143970, {	-- Neverdare Shoulders
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144118, { -- Paralyzing Gloves
+						i(144118, {	-- Paralyzing Gloves
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144093, { -- Staff of Trembling Will
+						i(144093, {	-- Staff of Trembling Will
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(80870, { -- Chestguard of Despair
+						i(80870, {	-- Chestguard of Despair
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80868, { -- Doubtridden Shoulderguards
+						i(80868, {	-- Doubtridden Shoulderguards
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80873, { -- Dubious Handaxe
+						i(80873, {	-- Dubious Handaxe
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80869, { -- Hopecrusher Gauntlets
+						i(80869, {	-- Hopecrusher Gauntlets
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80871, { -- Neverdare Shoulders
+						i(80871, {	-- Neverdare Shoulders
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80874, { -- Staff of Trembling Will
+						i(80874, {	-- Staff of Trembling Will
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -216,33 +216,33 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["g"] = {
 						-- Available
 						ach(6460),	-- Hydrophobia
-						i(144112, { -- Crystallized Droplet
+						i(144112, {	-- Crystallized Droplet
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143960, { -- Riverbed Chestguard
+						i(143960, {	-- Riverbed Chestguard
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143973, { -- Treads of Corrupted Water
+						i(143973, {	-- Treads of Corrupted Water
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144017, { -- Waterburst Helm
+						i(144017, {	-- Waterburst Helm
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144111, { -- Wind-Soaked
+						i(144111, {	-- Wind-Soaked
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(81083, { -- Riverbed Chestguard
+						i(81083, {	-- Riverbed Chestguard
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81123, { -- Riverbed Chestguard
+						i(81123, {	-- Riverbed Chestguard
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81072, { -- Treads of Corrupted Water
+						i(81072, {	-- Treads of Corrupted Water
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81075, { -- Waterburst Helm
+						i(81075, {	-- Waterburst Helm
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -251,33 +251,33 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["crs"] = { 56843 },	--Lorewalker Stonestep
 					["g"] = {
 						-- Available
-						i(144081, { -- Girdle of Endemic Anger
+						i(144081, {	-- Girdle of Endemic Anger
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143987, { -- Leggings of Whispered Dreams
+						i(143987, {	-- Leggings of Whispered Dreams
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143974, { -- Stonestep Boots
+						i(143974, {	-- Stonestep Boots
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144083, { -- Sunheart Waistband
+						i(144083, {	-- Sunheart Waistband
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144113, { -- Windswept Pages
+						i(144113, {	-- Windswept Pages
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(81058, { -- Girdle of Endemic Anger
+						i(81058, {	-- Girdle of Endemic Anger
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81126, { -- Leggings of Whispered Dreams
+						i(81126, {	-- Leggings of Whispered Dreams
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81073, { -- Stonestep Boots
+						i(81073, {	-- Stonestep Boots
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81060, { -- Sunheart Waistband
+						i(81060, {	-- Sunheart Waistband
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -286,33 +286,33 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["crs"] = { 56732 },	-- Liu Flameheart
 					["g"] = {
 						-- Available
-						i(144094, { -- Cape of Entaglement
+						i(144094, {	-- Cape of Entaglement
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144090, { -- Firebelcher Hand Cannon
+						i(144090, {	-- Firebelcher Hand Cannon
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143988, { -- Flameheart Sandals
+						i(143988, {	-- Flameheart Sandals
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143971, { -- Serpentstrike Shoulderpads
+						i(143971, {	-- Serpentstrike Shoulderpads
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144114, { -- Signet of Dancing Jade
+						i(144114, {	-- Signet of Dancing Jade
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(81067, { -- Firebelcher Hand Cannon
+						i(81067, {	-- Firebelcher Hand Cannon
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81070, { -- Serpentstrike Shoulderpads
+						i(81070, {	-- Serpentstrike Shoulderpads
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81084, { -- Cape of Entaglement
+						i(81084, {	-- Cape of Entaglement
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81127, { -- Flameheart Sandals
+						i(81127, {	-- Flameheart Sandals
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -325,72 +325,72 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 						ach(6758),	-- Heroic: Temple of the Jade Serpent
 						ach(6764),	-- Heroic: Temple of the Jade Serpent Guild Run
 						ach(6671),	-- Seeds of Doubt
-						i(144116, { -- Binding of Broken Dreams
+						i(144116, {	-- Binding of Broken Dreams
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143959, { -- Chestguard of Despair
+						i(143959, {	-- Chestguard of Despair
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144115, { -- Cloak of Failing Will
+						i(144115, {	-- Cloak of Failing Will
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143972, { -- Doubtridden Shoulderguards
+						i(143972, {	-- Doubtridden Shoulderguards
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144086, { -- Dubious Handaxe
+						i(144086, {	-- Dubious Handaxe
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144093, { -- Staff of Trembling Will
+						i(144093, {	-- Staff of Trembling Will
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144091, { -- Hopecrusher Gauntlets
+						i(144091, {	-- Hopecrusher Gauntlets
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144216, { -- Je'lyu, Spirit of the Serpent
+						i(144216, {	-- Je'lyu, Spirit of the Serpent
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144117, { -- Mindbreaker Pendant
+						i(144117, {	-- Mindbreaker Pendant
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143970, { -- Neverdare Shoulders
+						i(143970, {	-- Neverdare Shoulders
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144118, { -- Paralyzing Gloves
+						i(144118, {	-- Paralyzing Gloves
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(81130, { -- Binding of Broken Dreams
+						i(81130, {	-- Binding of Broken Dreams
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81082, { -- Chestguard of Despair
+						i(81082, {	-- Chestguard of Despair
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81129, { -- Cloak of Failing Will
+						i(81129, {	-- Cloak of Failing Will
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81071, { -- Doubtridden Shoulderguards
+						i(81071, {	-- Doubtridden Shoulderguards
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81063, { -- Dubious Handaxe
+						i(81063, {	-- Dubious Handaxe
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81074, { -- Hopecrusher Gauntlets
+						i(81074, {	-- Hopecrusher Gauntlets
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(87544, { -- Je'lyu, Spirit of the Serpent
+						i(87544, {	-- Je'lyu, Spirit of the Serpent
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81131, { -- Mindbreaker Pendant
+						i(81131, {	-- Mindbreaker Pendant
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81069, { -- Neverdare Shoulders
+						i(81069, {	-- Neverdare Shoulders
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81132, { -- Paralyzing Gloves
+						i(81132, {	-- Paralyzing Gloves
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81079, { -- Staff of Trembling Will
+						i(81079, {	-- Staff of Trembling Will
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},

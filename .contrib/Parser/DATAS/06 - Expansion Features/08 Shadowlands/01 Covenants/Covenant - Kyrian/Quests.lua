@@ -258,6 +258,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 61769 },	-- Fight and Flight
 				["provider"] = { "o", 357246 },	-- Tattered Scroll
 				["coord"] = { 33.5, 24.1, MALDRAXXUS },
+				["g"] = {
+					i(181285),	-- Abhorrent Design (QI!)
+				},
 			}),
 			q(61773, {	-- Descended
 				["sourceQuests"] = {
@@ -490,6 +493,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 58565 },	-- Land of Light
 				["provider"] = { "n", 161540 },	-- Kleia
 				["coord"] = { 31.9, 47.7, REVENDRETH },
+				["g"] = {
+					i(174497),	-- Brushberry (QI!)
+				},
 			}),
 			q(58950, {	-- Lumber for Lakeshire
 				["sourceQuests"] = {
@@ -498,6 +504,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				},
 				["provider"] = { "n", 162953 },	-- Sarah Howell
 				["coord"] = { 21.6, 42.0, REDRIDGE_MOUNTAINS },
+				["g"] = {
+					i(174997),	-- Bundle of Lumber (QI!)
+				},
 			}),
 			q(57207, {	-- Lysonia's Plan
 				["sourceQuests"] = {
@@ -581,6 +590,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
 				["provider"] = { "n", 161544 },	-- The Curator
 				["coord"] = { 60.3, 60.8, REVENDRETH },
+				["g"] = {
+					i(176083),	-- A Personal Affront (QI!)
+				},
 			}),
 			q(58570, {	-- Parting Words
 				["sourceQuests"] = { 58569 },	-- The Folly of Envy

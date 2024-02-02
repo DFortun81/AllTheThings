@@ -2342,6 +2342,9 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(38231),	-- Tracking Event: Shrine Found - triggers during quest "Get a Clue" (questID 38213), clue #2
 		q(39564),	-- Vignette: Murktide Alpha - learning Saberstalker's Teachings: Trailblazer
 	}),
+	tier(LEGION_TIER, {
+		q(47285),	-- Triggers together with obtaining Equipment Blueprint: Tuskarr Fishing Net
+	}),
 	tier(BFA_TIER, {
 		q(50678),	-- learning Ensemble: Battlegear of the Frostwolves
 		q(50680),	-- learning Ensemble: Ceremonial Karabor Finery

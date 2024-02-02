@@ -352,7 +352,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				i(200874),	-- Lady Feathersworth (PET!)
 			},
 		})),
-		petbattle(ach(16501, { -- Aquatic Battler of the Dragon Isles
+		petbattle(ach(16501, {	-- Aquatic Battler of the Dragon Isles
 			crit(55537, {	-- Arcantus
 				["crs"] = { 197417 },
 				["coord"] = { 41.0, 59.4, THE_AZURE_SPAN },

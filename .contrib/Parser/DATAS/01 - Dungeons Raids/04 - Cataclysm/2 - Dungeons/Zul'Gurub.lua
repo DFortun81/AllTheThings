@@ -309,6 +309,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 						["qg"] = 53023,	-- Bloodslayer T'ara
 					}),
 					q(74696, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Gurubashi, Vilebranch, and Witherbark Coins
+						["qg"] = 143138,	-- Rin'wosho the Trader
 						["cost"] = {
 							{ "i", GURUBASHI_COIN, 1 },
 							{ "i", VILEBRANCH_COIN, 1 },
@@ -329,6 +330,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 						["timeline"] = { ADDED_10_0_7 },
 					}),
 					q(74697, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Sandfury, Skullsplitter, and Bloodscalp Coins
+						["qg"] = 143138,	-- Rin'wosho the Trader
 						["cost"] = {
 							{ "i", BLOODSCALP_COIN, 1 },
 							{ "i", SANDFURY_COIN, 1 },
@@ -351,6 +353,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 						["description"] = "You need 425 Archaeology and a Troll Tablet to activate the \"Call of the Raptor\" buff which summons raptor hatchlings to attack your enemies.",
 					}),
 					q(74695, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {	-- Zulian, Razzashi, and Hakkari Coins
+						["qg"] = 143138,	-- Rin'wosho the Trader
 						["cost"] = {
 							{ "i", HAKKARI_COIN, 1 },
 							{ "i", RAZZASHI_COIN, 1 },
@@ -872,6 +875,9 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_1_0 },
 						i(69623), 	-- Vestments of the Soulflayer
 						i(69627), 	-- Zulian Ward
 						h(i(122215)),	-- Music Roll: Zul'Gurub Voodoo
+						n(52167, {	-- Gurubashi Spirit Warrior
+							["description"] = "|CFFFF0000MUST be killed prior to Jin'do the Godbreaker encounter Phase 2 start, otherwise fight will be impossible.|r",
+						}),
 					},
 				}),
 			}),

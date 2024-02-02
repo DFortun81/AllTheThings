@@ -281,7 +281,7 @@ root(ROOTS.Zones, {
 						pet(726),	-- Plains Monitor (PET!)
 						pet(727),	-- Prairie Mouse (PET!)
 						pet(679),	-- Summit Kid (PET!)
-						pet(728, { -- Szechuan Chicken (PET!)
+						pet(728, {	-- Szechuan Chicken (PET!)
 							['description'] = "Can sometimes be easier to find as a secondary pet. Can accompany almost any other pet in Kun-Lai.",
 						}),
 						pet(729),	-- Tolai Hare (PET!)
@@ -5312,7 +5312,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+							i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 								["u"] = ELITE_PVP_REQUIREMENT,
 								["timeline"] = { ADDED_6_0_2 },
 							}),

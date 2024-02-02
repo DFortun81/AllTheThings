@@ -143,12 +143,10 @@ root(ROOTS.NeverImplemented, {
 			tier(DF_TIER, 1.7, sharedDataSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 				i(208880),	-- Brewhahat (TOY!)
 				i(208229),	-- Honor of the Forsaken (TOY!)
-				i(206347),	-- Mannequin Charm (TOY!)
 			})),
 
 			-- 10.2.0
 			tier(DF_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
-				i(211424),	-- Dreaming Banner of the Aspects (TOY!)
 				i(208087),	-- Unknown (TOY!)
 			})),
 		}),

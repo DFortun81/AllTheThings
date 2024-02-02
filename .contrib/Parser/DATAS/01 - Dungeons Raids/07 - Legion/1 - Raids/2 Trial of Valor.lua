@@ -12,24 +12,24 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 			n(ACHIEVEMENTS, {
 				ach(11762, {["timeline"] = {ADDED_7_2_0}}),	-- Can I Get A Helya (Trial of Valor)
 				ach(11394, {	-- Trial of Valor
-					crit(34578, { -- Odyn
+					crit(34578, {	-- Odyn
 						["_encounter"] = { 1819, LFR_RAID },
 					}),
-					crit(34800, { -- Guarm
+					crit(34800, {	-- Guarm
 						["_encounter"] = { 1830, LFR_RAID },
 					}),
-					crit(34799, { -- Helya
+					crit(34799, {	-- Helya
 						["_encounter"] = { 1829, LFR_RAID },
 					}),
 				}),
 				ach(11426, {	-- Heroic: Trial of Valor
-					crit(34839, { -- Odyn
+					crit(34839, {	-- Odyn
 						["_encounter"] = { 1819, HEROIC_RAID },
 					}),
-					crit(34841, { -- Guarm
+					crit(34841, {	-- Guarm
 						["_encounter"] = { 1830, HEROIC_RAID },
 					}),
-					crit(34840, { -- Helya
+					crit(34840, {	-- Helya
 						["_encounter"] = { 1829, HEROIC_RAID },
 					}),
 				}),

@@ -243,7 +243,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						["cost"] = { { "c", ANIMA, 5000 } },
 					}),
 					i(189174),	-- Lens of Focused Intention
-					i(198449, { -- Pouch of Prodigious Wonders
+					i(198449, {	-- Pouch of Prodigious Wonders
 						["timeline"] = { ADDED_9_2_5 },
 					}),
 					i(187750, {	-- Recipe: Crafter's Mark IV (RECIPE!)

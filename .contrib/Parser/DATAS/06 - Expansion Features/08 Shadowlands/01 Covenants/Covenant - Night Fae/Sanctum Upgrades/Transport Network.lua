@@ -70,7 +70,11 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 								["isDaily"] = true,
 							}, {
-								q(62606),	-- A Blackthorn Blend
+								q(62606, {	-- A Blackthorn Blend
+									["g"] = {
+										i(183840),	-- Blackthorn Clay (QI!)
+									},
+								}),
 								q(62608),	-- A Royal Treat
 								q(60175),	-- A Taste of Tirna Noch
 								q(62607),	-- Glittering Gritty Goodness

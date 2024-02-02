@@ -2080,7 +2080,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(15760, {	-- Pattern: Ironfeather Breastplate (RECIPE!)
 					["cr"] = 2644,	-- Vilebranch Hideskinner
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 68.2, 75.0, THE_HINTERLANDS },
 						{ 63.8, 73.6, THE_HINTERLANDS },

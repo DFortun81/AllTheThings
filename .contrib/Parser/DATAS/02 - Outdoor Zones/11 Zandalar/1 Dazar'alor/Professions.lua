@@ -1,10 +1,18 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	m(THE_GREAT_SEAL, {
 		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(122703, {	-- Clever Kumali <Alchemist Trainer>
+					["coord"] = { 42.2, 38.0, DAZARALOR },
+					["races"] = HORDE_ONLY,
+					["g"] = appendGroups(BFA_ALCHEMY, {
+						r(265787),	-- Zandalari Alchemy
+					}),
+				}),
+			}),
 			prof(BLACKSMITHING, {
 				n(127112, {	-- Forgemaster Zak'aal <Blacksmithing Trainer>
 					["coord"] = { 43.6, 38.3, DAZARALOR },

@@ -407,15 +407,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(19024),	-- Arena Grand Master
 					},
 				})),
-				q(7810, {	-- Arena Master
+				pvp(q(7810, {	-- Arena Master
 					["provider"] = { "i", 18706 },	-- Arena Master (trinket)
-					["altQuests"] = { 7908 },	-- Arena Master
 					-- #if AFTER CATA
 					["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
 					-- #else
 					["coord"] = { 30.5, 47.8, STRANGLETHORN_VALE },
 					-- #endif
-				}),
+				})),
 				q(4621, {	-- Avast Ye, Admiral!
 					["qg"] = 2546,	-- Fleet Master Firallon
 					["sourceQuest"] = 1036,	-- Avast Ye, Scallywag
@@ -2377,10 +2376,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5028, {	-- Lord Sakrasis' Scepter
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(5029, {	-- Talisman of the Naga Lord
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2673,6 +2672,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(16083, {	-- Expert Fishing - The Bass and You
 							["timeline"] = { "removed 3.1.0" },
+							-- #if SEASON_OF_DISCOVERY
+							["OnUpdate"] = [[function(t)
+								if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
+									t.u = ]] .. SOD_PHASE_TWO .. [[;
+								end
+								t.OnUpdate = nil;
+							end]],
+							-- #endif
 							["rank"] = 3,
 						}),
 					},
@@ -2890,7 +2897,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 676,	-- Venture Co. Surveyor
 				}),
 				i(1652, {	-- Sturdy Lunchbox
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if AFTER 10.1.7
 					["cr"] = 921,	-- Venture Co. Lumberjack
 					-- #else
@@ -2909,6 +2916,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 		},
+	}),
+}));
+
+root(ROOTS.HiddenQuestTriggers, m(EASTERN_KINGDOMS, {
+	m(STRANGLETHORN_VALE, {
+		q(7908),	-- triggered when completing 7810 'Arena Master'
 	}),
 }));
 -- #endif

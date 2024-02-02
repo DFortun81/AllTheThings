@@ -2106,7 +2106,7 @@ root(ROOTS.PVP, {
 					i(174472),	-- Corrupted Gladiator's Spite
 				}),
 			}),
-			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 6376, ["timeline"] = { "added 8.3.0", REMOVED_9_0_1 } }, { -- Elite/Duelist Gear. Do not use more filters, Elite Gear
+			n(PVP_ELITE, bubbleDown({ ["bonusID"] = 6376, ["timeline"] = { "added 8.3.0", REMOVED_9_0_1 } }, {	-- Elite/Duelist Gear. Do not use more filters, Elite Gear
 				filter(CLOTH, {
 					i(172568),	-- Corrupted Gladiator's Silk Hood (A)
 					i(172526),	-- Corrupted Gladiator's Silk Hood (H)

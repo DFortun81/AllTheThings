@@ -75,34 +75,6 @@ root(ROOTS.NeverImplemented, {
 					r(298740),	-- Potion of Reconstitution
 				})),
 			}),
-			tier(SL_TIER, {
-				-- 9.0.1
-				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
-					-- Recipe items
-					i(183868),	-- [DNT][REUSE ME] Recipe: Crafter's Mark III
-					i(182665),	-- Recipe: Sins to Virtue
-					-- Recipe spells
-					r(307106),	-- 9.0 Alchemy - Modified Crafting Reagent 02
-					r(307107),	-- 9.0 Alchemy - Modified Crafting Reagent 03
-					r(307108),	-- 9.0 Alchemy - Modified Crafting Reagent 04
-					r(307145),	-- 9.0 Transmute: 04
-					r(307146),	-- 9.0 Transmute: 05
-					r(307147),	-- 9.0 Transmute: 06
-					r(307148),	-- 9.0 Transmute: 07
-					r(307149),	-- 9.0 Transmute: 08
-					r(307105),	-- Alchemist's Pouch
-					r(307109),	--
-					r(307110),	--
-					r(307111),	--
-					r(307112),	--
-				})),
-
-				-- 9.1.0
-				tier(SL_TIER, 1.0, bubbleDownSelf({ ["timeline"] = {"created 9.1.0"} }, {
-					-- Recipe spells
-					r(354860),	--
-				})),
-			}),
 		}),
 		prof(COOKING, {
 			tier(CLASSIC_TIER, {

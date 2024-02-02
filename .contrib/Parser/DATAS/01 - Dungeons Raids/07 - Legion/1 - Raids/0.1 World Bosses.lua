@@ -10,51 +10,51 @@ root(ROOTS.Instances, tier(LEGION_TIER, {
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(11786, {	-- Terrors of the Shore
-					crit(36550, { -- Brutallus
+					crit(36550, {	-- Brutallus
 						["_npcs"] = { 117239 },
 					}),
-					crit(36551, { -- Malificus
+					crit(36551, {	-- Malificus
 						["_npcs"] = { 117303 },
 					}),
-					crit(36552, { -- Si'vash
+					crit(36552, {	-- Si'vash
 						["_npcs"] = { 117470 },
 					}),
-					crit(36553, { -- Apocron
+					crit(36553, {	-- Apocron
 						["_npcs"] = { 121124 },
 					}),
 				}),
 				ach(11160, {	-- Unleashed Monstrosities
-					crit(32097, { -- Na'zak the Fiend
+					crit(32097, {	-- Na'zak the Fiend
 						["_npcs"] = { 110321 },
 					}),
-					crit(32096, { -- Nithogg
+					crit(32096, {	-- Nithogg
 						["_npcs"] = { 107544 },
 					}),
-					crit(32099, { -- Humongris
+					crit(32099, {	-- Humongris
 						["_npcs"] = { 108879 },
 					}),
-					crit(32095, { -- Flotsam
+					crit(32095, {	-- Flotsam
 						["_npcs"] = { 99929 },
 					}),
-					crit(32100, { -- Ana-Mouz
+					crit(32100, {	-- Ana-Mouz
 						["_npcs"] = { 109943 },
 					}),
-					crit(32102, { -- Levantus
+					crit(32102, {	-- Levantus
 						["_npcs"] = { 108829 },
 					}),
-					crit(32094, { -- Drugon the Frostblood
+					crit(32094, {	-- Drugon the Frostblood
 						["_npcs"] = { 110378 },
 					}),
-					crit(32889, { -- The Soultakers (there was also 32890 and 32891)
+					crit(32889, {	-- The Soultakers (there was also 32890 and 32891)
 						["_quests"] = { 42269 },
 					}),
-					crit(32101, { -- Calamir
+					crit(32101, {	-- Calamir
 						["_npcs"] = { 109331 },
 					}),
-					crit(32098, { -- Shar'thos
+					crit(32098, {	-- Shar'thos
 						["_npcs"] = { 108678 },
 					}),
-					crit(35022, { -- Withered J'im
+					crit(35022, {	-- Withered J'im
 						["_npcs"] = { 112350 },
 					}),
 				}),

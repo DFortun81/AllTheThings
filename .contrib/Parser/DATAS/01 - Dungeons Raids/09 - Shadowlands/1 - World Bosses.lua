@@ -117,7 +117,6 @@ root(ROOTS.Instances, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LA
 				["g"] = sharedData({ ["modID"] = 3 }, {
 					i(187507),	-- Adaptive Armor Fragment
 					i(187506),	-- Condensed Anima Sphere
-					i(187061),	-- Shard of Rev
 					i(186355),	-- Wristwraps of Anguish
 					i(186361),	-- Grips of Unleashed Suffering
 					i(186368),	-- Mor'geth's Gauntlets of Damnation

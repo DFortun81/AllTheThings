@@ -619,7 +619,8 @@ PrintQuestInfo = function(questID, new)
 			app:SetupReportDialog(popupID, "NYI Quest: " .. questID,
 				BuildDiscordQuestInfoTable(questID, "nyi-quest", questChange)
 			);
-			print(app:Linkify(text .. " [NYI] ATT " .. app.Version, app.Colors.ChatLinkError, "dialog:" .. popupID));
+			print("Quest", questChange, app:Linkify(text .. " [NYI] ATT " .. app.Version, app.Colors.ChatLinkError, "dialog:" .. popupID));
+			return
 		end
 
 		-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
@@ -632,7 +633,7 @@ PrintQuestInfo = function(questID, new)
 		end
 		print("Quest", questChange, text, GetQuestFrequency(questID) or "");
 	else
-		text = (QuestNameFromID[questID] or RETRIEVING_DATA) .. " (" .. questID .. ")";
+		text = (QuestNameFromID[questID] or UNKNOWN) .. " (" .. questID .. ")";
 
 		-- Play a sound when a reportable error is found, if any sound setting is enabled
 		app.Audio:PlayReportSound();
@@ -642,7 +643,7 @@ PrintQuestInfo = function(questID, new)
 		app:SetupReportDialog(popupID, "Missing Quest: " .. questID,
 			BuildDiscordQuestInfoTable(questID, "missing-quest", questChange)
 		);
-		print(app:Linkify(text .. " (Not in ATT " .. app.Version .. ")", app.Colors.ChatLinkError, "dialog:" .. popupID), GetQuestFrequency(questID) or "");
+		print("Quest", questChange, app:Linkify(text .. " (Not in ATT " .. app.Version .. ")", app.Colors.ChatLinkError, "dialog:" .. popupID), GetQuestFrequency(questID) or "");
 	end
 end
 app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
@@ -1938,10 +1939,6 @@ if app.IsRetail then
 						if item.itemID then
 							-- search will either match through bonusID, modID, or itemID in that priority
 							local search = app.SearchForLink(link);
-							-- block the group from being collectible as a cost if the option is not enabled for various 'currency' items
-							if skipCollectibleCurrencies and WorldQuestCurrencyItems[item.itemID] then
-								item.collectibleAsCost = false;
-							end
 							if search then
 								-- find the specific item which the link represents (not sure all of this is necessary with improved search)
 								local exactItemID = app.GetGroupItemIDWithModID(item);
@@ -1968,6 +1965,11 @@ if app.IsRetail then
 
 							-- don't let cached groups pollute potentially inaccurate raw Data
 							item.link = nil;
+							-- block the group from being collectible as a cost if the option is not enabled for various 'currency' items
+							if skipCollectibleCurrencies and WorldQuestCurrencyItems[item.itemID] then
+								item.skipFill = true
+								item.isCost = false
+							end
 							app.NestObject(questObject, item, true);
 						end
 					end
@@ -1984,19 +1986,12 @@ if app.IsRetail then
 
 					currencyID = tonumber(currencyID);
 					local item = app.CreateCurrencyClass(currencyID);
+					cachedCurrency = Search("currencyID", currencyID, "key");
+					app.MergeProperties(item, cachedCurrency, true);
 					-- block the group from being collectible as a cost if the option is not enabled
 					if skipCollectibleCurrencies then
-						item.collectibleAsCost = false;
-					end
-					cachedCurrency = SearchForField("currencyID", currencyID);
-					for _,data in ipairs(cachedCurrency) do
-						-- cache record is the item itself
-						if app.GroupMatchesParams(data, "currencyID", currencyID) then
-							app.MergeProperties(item, data);
-						-- cache record is associated with the item
-						else
-							app.NestObject(item, data);	-- no clone since item is cloned later
-						end
+						item.skipFill = true
+						item.isCost = false
 					end
 					app.NestObject(questObject, item, true);
 				end
@@ -2036,7 +2031,7 @@ if app.IsRetail then
 								-- nest cached non-items
 								if not o.itemID then
 									-- app.PrintDebug("nested-nonItem",o.hash)
-									tinsert(nonItemNested, o);
+									nonItemNested[#nonItemNested + 1] = o
 								-- cached items need to merge with corresponding API item based on simple itemID
 								elseif apiItems[o.itemID] then
 									-- app.PrintDebug("nested-merged",o.hash)
@@ -2045,13 +2040,13 @@ if app.IsRetail then
 								elseif questObject.isRaid or not questObject.isWorldQuest then
 									-- otherwise just get nested
 									-- app.PrintDebug("nested-item",o.hash)
-									tinsert(nonItemNested, o);
+									nonItemNested[#nonItemNested + 1] = o
 								end
 							end
 						end
 					-- otherwise if this is a non-quest object flagged with this questID so it should be added under the quest
 					elseif data.key ~= "questID" then
-						tinsert(nonItemNested, data);
+						nonItemNested[#nonItemNested + 1] = data
 					end
 				end
 				-- Everything retrieved from API should not be related to another sourceParent

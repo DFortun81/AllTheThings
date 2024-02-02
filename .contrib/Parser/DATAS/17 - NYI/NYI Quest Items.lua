@@ -90,7 +90,7 @@ root(ROOTS.NeverImplemented, {
 		}),
 		tier(SL_TIER, {
 			-- 9.0.1
-			tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { "created 9.0.1" } }, {
+			tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
 				i(175265),	-- Belt of Prime Command
 				i(181241),	-- Blueprint: Charm of Buff 7
 				i(182654),	-- Bonescript Dispatches
@@ -104,17 +104,19 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 9.0.2
-			tier(SL_TIER, 0.2, bubbleDown({ ["timeline"] = { "created 9.0.2" } }, {
+			tier(SL_TIER, 0.2, bubbleDown({ ["timeline"] = { CREATED_9_0_2 } }, {
 				i(184169),	-- Vault Chain Pull
 			})),
 
 			-- 9.1.0
-			tier(SL_TIER, 1.0, bubbleDown({ ["timeline"] = { "created 9.1.0" } }, {
+			tier(SL_TIER, 1.0, bubbleDown({ ["timeline"] = { CREATED_9_1_0 } }, {
 				i(187863),	-- Key of Ephemera
 			})),
 
 			-- 9.2.0
-			tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { "created 9.2.0" } }, {
+			tier(SL_TIER, 2.0, bubbleDown({ ["timeline"] = { CREATED_9_2_0 } }, {
+				i(187688),	-- [DNT] Rinanji's Key
+				i(187686),	-- [DNT] Suspicious Badge
 				i(188200),	-- Engraved Stone
 				i(191634),	-- Memory of Unity
 				i(191635),	-- Memory of Unity
@@ -276,9 +278,6 @@ root(ROOTS.NeverImplemented, {
 				i(192482),	-- Timewalker Staff
 				i(192551),	-- Timewalker Staff
 				i(193409),	-- Time-Lost Curio
-				i(198649),	-- Time-Lost Possession
-				i(198601),	-- Time-Lost Relic
-				i(198602),	-- Time-Lost Relic
 				i(197952),	-- Titan Disc
 				i(199199),	-- Tough Moose Flank
 				i(192188),	-- Tuskarr Fishing Gear
@@ -346,12 +345,6 @@ root(ROOTS.NeverImplemented, {
 				i(204275),	-- Slimey Key
 				i(204895),	-- Storm-touched Missive Stone [DNT]
 				i(202363),	-- Survey Arc Device
-			})),
-
-			-- 10.1.7
-			tier(DF_TIER, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
-				i(208736),	-- Apprentice Astrologist Homework
-				i(208737),	-- Hole-Punched Bakar Tooth
 			})),
 
 			-- 10.2.0

@@ -76,11 +76,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					405,	-- Tree Python (PET!)
 				}},
 				["groups"] = {
-					pet(411, { -- Baby Ape (PET!)
+					pet(411, {	-- Baby Ape (PET!)
 						["description"] = "Can be found on Jaguero Isle in The Cape of Stranglethorn. They only spawn when it's raining on the island, and this area has its own unique weather pattern. Although it might be raining in Stranglethorn, it may not be raining on the Isle.",
 					}),
 					pet(401),	-- Strand Crab (PET!)
-					pet(410, { -- Wharf Rat (PET!)
+					pet(410, {	-- Wharf Rat (PET!)
 						["description"] = "Can be found relaibly as secondary pets alongside Baby Apes, but also found in Booty Bay.",
 					}),
 				},
@@ -238,11 +238,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(19024),	-- Arena Grand Master
 					},
 				})),
-				q(7810, {	-- Arena Master
+				pvp(q(7810, {	-- Arena Master
 					["provider"] = { "i", 18706 },	-- Arena Master (trinket)
-					["altQuests"] = { 7908 },	-- Arena Master
 					["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
-				}),
+				})),
 				q(26644, {	-- Attracting Attention
 					["qg"] = 2548,	-- Captain Keelhaul
 					["sourceQuests"] = {
@@ -1918,10 +1917,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.8, 49.1, THE_CAPE_OF_STRANGLETHORN },
 					["groups"] = {
 						i(5028, {	-- Lord Sakrasis' Scepter
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(5029, {	-- Talisman of the Naga Lord
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2081,6 +2080,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(16083, {	-- Expert Fishing - The Bass and You
 							["timeline"] = { "removed 3.1.0" },
+							-- #if SEASON_OF_DISCOVERY
+							["OnUpdate"] = [[function(t)
+								if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
+									t.u = ]] .. SOD_PHASE_TWO .. [[;
+								end
+								t.OnUpdate = nil;
+							end]],
+							-- #endif
 							["rank"] = 3,
 						}),
 					},
@@ -2224,5 +2231,5 @@ root(ROOTS.HiddenQuestTriggers, m(EASTERN_KINGDOMS, {
 	m(THE_CAPE_OF_STRANGLETHORN, {
 		q(7908),	-- triggered when completing 7810 'Arena Master'
 	}),
-}))
+}));
 -- #endif

@@ -124,6 +124,8 @@ local L = {
 	["INCOMPLETE"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Incomplete|r";		-- Acquired the colors and icon from CanIMogIt.
 	["KNOWN_ON_CHARACTER"] = "|T" .. app.asset("known") .. ":0|t |c" .. app.Colors.Completed .. "Known on current character|r";
 	["UNKNOWN_ON_CHARACTER"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Unknown on current character|r";
+	["SHOW_ALL_SEASONAL"] = "All Seasonal Events";
+	["SHOW_ALL_SEASONAL_TOOLTIP"] = "Enable this setting to show all seasonal events, instead of only currently active seasonal events.\n\nNOTE: Seasonal Events will automatically be visible as active 7 days in advance.";
 
 	["ABBREVIATIONS"] = {
 		["ALL THE THINGS"] = "ATT",
@@ -457,6 +459,9 @@ local L = {
 		
 		-- Does not get added until 4.1.0, btw. So just keep that in mind for wrath.
 		[5788] = { 81, "Agent of the Shen'dralar", "Interface\\Icons\\inv_misc_book_04" },
+		
+		-- Season of Mastery
+		[16433] = { 81, "Soul of Iron", "Interface\\Icons\\inv_qirajidol_life" },
 	},
 	["ACHIEVEMENT_CRITERIA_DATA"] = {
 		[92] = { -1, "Character" },
@@ -580,10 +585,11 @@ local L = {
 	
 	-- Unobtainable Listing
 	["UNOBTAINABLE_ITEM_TEXTURES"] = {
-		"Interface\\FriendsFrame\\StatusIcon-DnD", 		-- No Hope
-		"Interface\\FriendsFrame\\StatusIcon-Away", 	-- Little Hope
-		"Interface\\FriendsFrame\\StatusIcon-Online",	-- There is Hope
-		"Interface\\FriendsFrame\\StatusIcon-Offline",	-- Seasonal
+		app.asset("status-unobtainable"),
+		app.asset("status-prerequisites"),
+		"",									-- 3, we want no icon for these
+		app.asset("status-seasonal-unavailable"),	-- Seasonal unavailable
+		app.asset("status-seasonal-available"),	-- Seasonal available
 	};
 	["UNOBTAINABLE_ITEM_REASONS"] = {
 		[1] = {1, "|CFFFF0000This was never available to players.|r", "Never Implemented"},
@@ -606,7 +612,7 @@ local L = {
 		[1601] = {2, "|CFFAAFFAAThis was only available during the Scourge Invasions.|r", "Scourge Invasion", 11301, nil, "\n \n|CFFFFAAAAIf both Scourge Invasions have been completed on your server, simply turn this off.|r" },
 		[1602] = {2, "|CFFAAFFAAThis was only available during the Silithyst Must Flow World PVP Event.|r", "Silithyst", 11301, 11306, "\n \n|CFFFFAAAAIf the World PVP Event is available, simply turn this on.|r" },
 		[1603] = {2, "|CFFAAFFAAThis was only available after the start of Classic Era.|r", "Classic Era", 11301, 11307, "\n \n|CFFFFAAAAIf the Classic Era has begun, simply turn this on.|r" },
-		[1604] = {2, "|CFFAAFFAAThis was only available during Season of Mastery.|r", "Season of Mastery", 11301, 11400, "\n \n|CFFFFAAAAIf Season of Mastery is active on your server, simply turn this on.|r" },
+		[1604] = {2, "|CFFAAFFAAThis was only available during Season of Mastery.|r", "Season of Mastery", 11301, nil, "\n \n|CFFFFAAAAIf Season of Mastery is active on your server, simply turn this on.|r" },
 		[1605] = {2, "|CFFAAFFAAThis was only available during Season of Discovery.|r", "Season of Discovery", 11301, nil, "\n \n|CFFFFAAAAIf Season of Discovery is active on your server, simply turn this on.|r" },
 
 		[17] = {2, "|CFFAAFFAAThis was not available until Phase 1 of TBC Classic.|r", "Phase 1", 20501, 20501, "\n \n|CFFFFAAAAIncluded Karazhan, Magtheridon's Lair, and Gruul's Lair.|r" },

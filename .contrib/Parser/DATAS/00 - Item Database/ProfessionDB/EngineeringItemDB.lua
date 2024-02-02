@@ -106,43 +106,194 @@ i("Large Red Rocket Cluster", 21735, 26428);
 i("Cluster Launcher", 21737, 26443);
 i("Firework Launcher", 21738, 26442);
 
+
+
+-----------------
+-- PATCH 9.0.1 --
+-----------------
+--- NYI ---
+i(0, 310488);		-- Disposable Ectoplasmic Specs
+i(0, 310480);		-- Faerie Glider Kit
+i(0, 310515);		-- Hydrodynamic Accelerators \\ Phaevon Alloy
+i(0, 340534);		-- Interact
+i(0, 310481);		-- Kyrian Glider Kit
+i(0, 310482);		-- Maldraxxian Glider Kit
+i(0, 310513);		-- Necrostatic Micro Capacitor \\ Elecxine Alloy
+i(0, 310537);		-- Re-Calibrated Proton Blaster
+i(0, 310483);		-- Stoneborn Glider Kit
+i(0, 310491);		-- Torghast Reconfiguration Rig
+i(0, 310489);		-- Unknown
+i(0, 310494);		-- Unknown
+i(0, 310527);		-- Unknown
+
+-----------------
+-- PATCH 9.0.2 --
+-----------------
+--- TRAINER ---
+i(0, 310542);		-- Shadowlands Engineering
+i(0, 310493);		-- 50UL-TR4P
+i(0, 310507);		-- Articulated Ectoplasmic Specs
+i(0, 310486);		-- Bomb Bola Launcher
+i(0, 343099);		-- Crafter's Mark I
+i(0, 310497);		-- Damage Retaliator
+i(0, 310495);		-- Dimensional Shifter
+i(0, 345179);		-- Disposable Spectrophasic Reanimator
+i(0, 310496);		-- Electro-Jump
+i(0, 310501);		-- Flexible Ectoplasmic Specs
+i(0, 310492);		-- Gravimetric Scrambler Cannon
+i(0, 310504);		-- Grounded Ectoplasmic Specs
+i(0, 310522);		-- Handful of Laestrite Bolts
+i(0, 310534);		-- Infra-green Reflex Sight
+i(0, 310490);		-- Momentum Redistributor Boots
+i(0, 310525);		-- Mortal Coiled Spring
+i(0, 343661);		-- Novice Crafter's Mark
+i(0, 310484);		-- Nutcracker Grenade
+i(0, 310533);		-- Optical Target Embiggener
+i(0, 310524);		-- Porous Polishing Abrasive
+i(0, 310536);		-- Precision Lifeforce Inverter
+i(0, 310509);		-- Reinforced Ectoplasmic Specs
+i(0, 310485);		-- Shadow Land Mine
+i(0, 310526);		-- Wormfed Gear Assembly
+--- ITEM ---
+i(0, 343100);		-- Crafter's Mark II
+i(183097, 331007);	-- PHA7-YNX
+i(183858, 310535);	-- Wormhole Generator: Shadowlands
+--- QUEST ---
+i(0, 338218);		-- Bone Reinforced Oxxein Tubing
+i(0, 338217);		-- Boneclad Stake Launcher
+i(0, 338119);		-- Bug Zapifier
+i(0, 338220);		-- Duelist's Pistol
+i(0, 338212);		-- Electro Cable
+i(0, 338210);		-- Energized Battery
+i(0, 338219);		-- Handful of Oxxein Bolts
+i(0, 338216);		-- Hardened Bolts
+i(0, 338214);		-- Piston Assembly
+i(0, 338213);		-- Power Hammer
+i(0, 338222);		-- Sinvyr Barrel
+i(0, 338223);		-- Sinvyr Trigger Mechanism
+
+-----------------
+-- PATCH 9.1.0 --
+-----------------
+--- ITEM ---
+i(0, 343102);		-- Crafter's Mark III
+i(0, 343103);		-- Crafter's Mark of the Chained Isle
+
+-----------------
+-- PATCH 9.2.0 --
+-----------------
+--- ITEM ---
+i(0, 359664);		-- Crafter's Mark IV
+i(0, 359674);		-- Crafter's Mark of the First Ones
+i(187837, 360126);	-- Erratic Genesis Matrix
+i(187832, 360088);	-- Pure-Air Sail Extensions
+
 ------------------
 -- PATCH 10.0.0 --
 ------------------
--- TRAINER --
-i(0, 366254);	-- Dragon Isles Engineering
-i(0, 382379);	-- Arclight Capacitor
-i(0, 382391);	-- Battle-Ready Binoculars
-i(0, 382393);	-- Bottomless Stonecrust Ore Satchel
-i(0, 384314);	-- Bronze Fireflight
-i(0, 382330);	-- Creature Combustion Canister
-i(0, 382385);	-- Deadline Deadeyes
-i(0, 382398);	-- Draconium Brainwave Amplifier
-i(0, 382392);	-- Draconium Delver's Helmet
-i(0, 382397);	-- Draconium Encased Samophlange
-i(0, 382394);	-- Draconium Fisherfriend
-i(0, 382377);	-- Everburning Blasting Powder
-i(0, 382378);	-- Greased-Up Gears
-i(0, 382402);	-- Gyroscopic Kaleidoscope
-i(0, 382375);	-- Handful of Serevite Bolts
-i(0, 382346);	-- Haphazardly Tethered Wires
-i(0, 382395);	-- Lapidary's Draconium Clamps
-i(0, 382388);	-- Lightweight Ocular Lenses
-i(0, 382384);	-- Milestone Magnifiers
-i(0, 382407);	-- Neural Silencer Mk3
-i(0, 382390);	-- Oscillating Wilderness Opticals
-i(0, 382348);	-- Overcharged Overclocker
-i(0, 382387);	-- P.E.W. x2
-i(0, 382389);	-- Peripheral Vision Projectors
-i(0, 382383);	-- Quality-Assured Optics
-i(0, 389192);	-- Recraft Equipment
-i(0, 382380);	-- Reinforced Machine Chassis
-i(0, 382386);	-- Sentry's Stabilized Specs
-i(0, 382376);	-- Shock-Spring Coil
-i(0, 382396);	-- Spring-Loaded Draconium Fabric Cutters
-i(0, 382401);	-- Tinker: Plane Displacer
-i(0, 396777);	-- Tinker Removal Kit
--- ITEM --
+--- NYI ---
+i(0, 382581);		-- Opening
+i(0, 382352);		-- Perfectly Calibrated Lenses
+i(0, 382360);		-- Tinker Removal Kit
+i(0, 382382);		-- Wisp of Tyr
+i(0, 382372);		-- Unknown
+i(0, 382373);		-- Unknown
+i(199298, 385443);	-- Arclight Vital Correctors
+i(199296, 384311);	-- Bronze Fireflight
+i(198780, 386966);	-- Expedition Multi-Toolbox
+i(199292, 382406);	-- Convincingly Realistic Jumper Cables
+i(199291, 382405);	-- Draconic Gunshoes
+i(199294, 0);		-- Atomic Recalibrator
+i(199277, 0);		-- Battle-Ready Binoculars
+i(199279, 0);		-- Bottomless Stonecrust Ore Satchel
+i(199250, 0);		-- Calibrated Safety Switch
+i(199266, 0);		-- Centralized Precipitation Emitter
+i(199263, 0);		-- Completely Safe Rockets
+i(199224, 0);		-- Complicated Cuffs
+i(199235, 0);		-- Creature Combustion Canister
+i(199249, 0);		-- Critical Failure Prevention Unit
+i(199272, 0);		-- Deadline Deadeyes
+i(199225, 0);		-- Difficult Wrist Protectors
+i(199284, 0);		-- Draconium Brainwave Amplifier
+i(199278, 0);		-- Draconium Delver's Helmet
+i(199283, 0);		-- Draconium Encased Samophlange
+i(199280, 0);		-- Draconium Fisherfriend
+i(199221, 0);		-- Element-Infused Rocket Helmet
+i(199264, 0);		-- Endless Stack of Needles
+i(199267, 0);		-- Environmental Emulator
+i(199254, 0);		-- EZ-Thro Creature Combustion Canister
+i(199255, 0);		-- EZ-Thro Gravitational Displacer
+i(199300, 0);		-- EZ-Thro Grease Grenade
+i(199256, 0);		-- EZ-Thro Primal Deconstruction Charge
+i(199268, 0);		-- Giggle Goggles
+i(199288, 0);		-- Gyroscopic Kaleidoscope
+i(199247, 0);		-- Haphazardly Tethered Wires
+i(199231, 0);		-- High Intensity Thermal Scanner
+i(199252, 0);		-- I.W.I.N. Button Mk10
+i(199281, 0);		-- Lapidary's Draconium Clamps
+i(199274, 0);		-- Lightweight Ocular Lenses
+i(199251, 0);		-- Magazine of Healing Darts
+i(199261, 0);		-- Meticulously Tuned Gear
+i(199271, 0);		-- Milestone Magnifiers
+i(199223, 0);		-- Needlessly Complex Wristguards
+i(199293, 0);		-- Neural Silencer Mk3
+i(199262, 0);		-- One-Size-Fits-All Gear
+i(199276, 0);		-- Oscillating Wilderness Opticals
+i(199248, 0);		-- Overcharged Overclocker
+i(199222, 0);		-- Overengineered Sleeve Extenders
+i(199226, 0);		-- P.E.W. x2
+i(199275, 0);		-- Peripheral Vision Projectors
+i(199270, 0);		-- Quality-Assured Optics
+i(199260, 0);		-- Rapidly Ticking Gear
+i(199259, 0);		-- Razor-Sharp Gear
+i(199233, 0);		-- S.A.V.I.O.R.
+i(199273, 0);		-- Sentry's Stabilized Specs
+i(199297, 0);		-- Spring-Loaded Capacitor Casing
+i(199282, 0);		-- Spring-Loaded Draconium Fabric Cutters
+i(199257, 0);		-- Suspiciously Silent Crate
+i(199253, 0);		-- Suspiciously Ticking Crate
+i(199287, 0);		-- Tinker: Plane Displacer
+i(199258, 0);		-- Tinker: Supercollide-O-Tron
+i(199265, 0);		-- Wyrmhole Generator
+i(199415, 0);		-- Zapthrottle Soul Inhaler
+
+------------------
+-- PATCH 10.0.2 --
+------------------
+--- TRAINER ---
+i(0, 366254);		-- Dragon Isles Engineering
+i(0, 382379);		-- Arclight Capacitor
+i(0, 382391);		-- Battle-Ready Binoculars
+i(0, 382393);		-- Bottomless Stonecrust Ore Satchel
+i(0, 384314);		-- Bronze Fireflight
+i(0, 382330);		-- Creature Combustion Canister
+i(0, 382385);		-- Deadline Deadeyes
+i(0, 382398);		-- Draconium Brainwave Amplifier
+i(0, 382392);		-- Draconium Delver's Helmet
+i(0, 382397);		-- Draconium Encased Samophlange
+i(0, 382394);		-- Draconium Fisherfriend
+i(0, 382377);		-- Everburning Blasting Powder
+i(0, 382378);		-- Greased-Up Gears
+i(0, 382402);		-- Gyroscopic Kaleidoscope
+i(0, 382375);		-- Handful of Serevite Bolts
+i(0, 382346);		-- Haphazardly Tethered Wires
+i(0, 382395);		-- Lapidary's Draconium Clamps
+i(0, 382388);		-- Lightweight Ocular Lenses
+i(0, 382384);		-- Milestone Magnifiers
+i(0, 382407);		-- Neural Silencer Mk3
+i(0, 382390);		-- Oscillating Wilderness Opticals
+i(0, 382348);		-- Overcharged Overclocker
+i(0, 382387);		-- P.E.W. x2
+i(0, 382389);		-- Peripheral Vision Projectors
+i(0, 382383);		-- Quality-Assured Optics
+i(0, 389192);		-- Recraft Equipment
+i(0, 382380);		-- Reinforced Machine Chassis
+i(0, 382386);		-- Sentry's Stabilized Specs
+i(0, 382376);		-- Shock-Spring Coil
+i(0, 382396);		-- Spring-Loaded Draconium Fabric Cutters
+i(0, 382401);		-- Tinker: Plane Displacer
+i(0, 396777);		-- Tinker Removal Kit
+--- ITEM ---
 i(199295, 384313);	-- Black Fireflight
 i(199289, 382403);	-- Blue Fireflight
 i(198782, 382339);	-- Bottomless Mireslush Ore Satchel
@@ -171,114 +322,50 @@ i(199229, 382324);	-- Tinker: Breath of Neltharion
 i(199246, 382344);	-- Tinker: Grounded Circuitry
 i(199299, 386667);	-- Tinker: Polarity Amplifier
 i(201794, 26011);	-- Tranquil Mechanical Yeti
--- DISCOVERY --
-i(0, 382350);	-- Calibrated Safety Switch
-i(0, 382319);	-- Complicated Cuffs
-i(0, 382349);	-- Critical Failure Prevention Unit
-i(0, 382320);	-- Difficult Wrist Protectors
-i(0, 382355);	-- EZ-Thro Creature Combustion Canister
-i(0, 382356);	-- EZ-Thro Gravitational Displacer
-i(0, 386670);	-- EZ-Thro Grease Grenade
-i(0, 382357);	-- EZ-Thro Primal Deconstruction Charge
-i(0, 382363);	-- Meticulously-Tuned Gear
-i(0, 382318);	-- Needlessly Complex Wristguards
-i(0, 382364);	-- One-Size-Fits-All Gear
-i(0, 382317);	-- Overengineered Sleeve Extenders
-i(0, 382362);	-- Rapidly Ticking Gear
-i(0, 382361);	-- Razor-Sharp Gear
-i(0, 384491);	-- Spring-Loaded Capacitor Casing
--- SPECIALIZATION --
-i(0, 382345);	-- Assorted Safety Fuses
-i(0, 382408);	-- Atomic Recalibrator
-i(0, 382368);	-- Centralized Precipitation Emitter
-i(0, 382365);	-- Completely Safe Rockets
-i(0, 382371);	-- Element-Infused Rocket Helmet
-i(0, 382366);	-- Endless Stack of Needles
-i(0, 382369);	-- Environmental Emulator
-i(0, 382370);	-- Giggle Goggles
-i(0, 382326);	-- High Intensity Thermal Scanner
-i(0, 382353);	-- I.W.I.N. Button Mk10
-i(0, 382381);	-- Illustrious Insight
-i(0, 382351);	-- Magazine of Healing Darts
-i(0, 382374);	-- Rummage Through Scrap
-i(0, 382328);	-- S.A.V.I.O.R.
-i(0, 382358);	-- Suspiciously Silent Crate
-i(0, 382354);	-- Suspiciously Ticking Crate
-i(0, 382359);	-- Tinker: Supercollide-O-Tron
-i(0, 393796);	-- Tinker: Arclight Vital Correctors
-i(0, 382367);	-- Wyrmhole Generator
-i(0, 387246);	-- Zapthrottle Soul Inhaler
--- QUEST --
-i(0, 377983);	-- Heart in a Bottle
--- NYI --
-i(0, 382581);	-- Opening
-i(0, 382352);	-- Perfectly Calibrated Lenses
-i(0, 382360);	-- Tinker Removal Kit
-i(0, 382382);	-- Wisp of Tyr
-i(0, 382372);	--
-i(0, 382373);	--
-i(199298, 385443);	-- Arclight Vital Correctors
-i(198780, 386966);	-- Expedition Multi-Toolbox
-i(199292, 382406);	-- Convincingly Realistic Jumper Cables
-i(199291, 382405);	-- Draconic Gunshoes
-i(199277, 0);	-- Battle-Ready Binoculars
-i(199279, 0);	-- Bottomless Stonecrust Ore Satchel
-i(199296, 384314);	-- Bronze Fireflight
-i(199250, 0);	-- Calibrated Safety Switch
-i(199294, 0);	-- Atomic Recalibrator
-i(199266, 0);	-- Centralized Precipitation Emitter
-i(199263, 0);	-- Completely Safe Rockets
-i(199224, 0);	-- Complicated Cuffs
-i(199235, 0);	-- Creature Combustion Canister
-i(199249, 0);	-- Critical Failure Prevention Unit
-i(199272, 0);	-- Deadline Deadeyes
-i(199225, 0);	-- Difficult Wrist Protectors
-i(199284, 0);	-- Draconium Brainwave Amplifier
-i(199278, 0);	-- Draconium Delver's Helmet
-i(199283, 0);	-- Draconium Encased Samophlange
-i(199280, 0);	-- Draconium Fisherfriend
-i(199221, 0);	-- Element-Infused Rocket Helmet
-i(199264, 0);	-- Endless Stack of Needles
-i(199267, 0);	-- Environmental Emulator
-i(199254, 0);	-- EZ-Thro Creature Combustion Canister
-i(199255, 0);	-- EZ-Thro Gravitational Displacer
-i(199300, 0);	-- EZ-Thro Grease Grenade
-i(199256, 0);	-- EZ-Thro Primal Deconstruction Charge
-i(199268, 0);	-- Giggle Goggles
-i(199288, 0);	-- Gyroscopic Kaleidoscope
-i(199247, 0);	-- Haphazardly Tethered Wires
-i(199231, 0);	-- High Intensity Thermal Scanner
-i(199252, 0);	-- I.W.I.N. Button Mk10
-i(199281, 0);	-- Lapidary's Draconium Clamps
-i(199274, 0);	-- Lightweight Ocular Lenses
-i(199251, 0);	-- Magazine of Healing Darts
-i(199261, 0);	-- Meticulously Tuned Gear
-i(199271, 0);	-- Milestone Magnifiers
-i(199223, 0);	-- Needlessly Complex Wristguards
-i(199293, 0);	-- Neural Silencer Mk3
-i(199262, 0);	-- One-Size-Fits-All Gear
-i(199276, 0);	-- Oscillating Wilderness Opticals
-i(199248, 0);	-- Overcharged Overclocker
-i(199222, 0);	-- Overengineered Sleeve Extenders
-i(199226, 0);	-- P.E.W. x2
-i(199275, 0);	-- Peripheral Vision Projectors
-i(199270, 0);	-- Quality-Assured Optics
-i(199260, 0);	-- Rapidly Ticking Gear
-i(199259, 0);	-- Razor-Sharp Gear
-i(199233, 0);	-- S.A.V.I.O.R.
-i(199273, 0);	-- Sentry's Stabilized Specs
-i(199297, 0);	-- Spring-Loaded Capacitor Casing
-i(199282, 0);	-- Spring-Loaded Draconium Fabric Cutters
-i(199257, 0);	-- Suspiciously Silent Crate
-i(199253, 0);	-- Suspiciously Ticking Crate
-i(199287, 0);	-- Tinker: Plane Displacer
-i(199258, 0);	-- Tinker: Supercollide-O-Tron
-i(199265, 0);	-- Wyrmhole Generator
-i(199415, 0);	-- Zapthrottle Soul Inhaler
+--- DISCOVERY ---
+i(0, 382350);		-- Calibrated Safety Switch
+i(0, 382319);		-- Complicated Cuffs
+i(0, 382349);		-- Critical Failure Prevention Unit
+i(0, 382320);		-- Difficult Wrist Protectors
+i(0, 382355);		-- EZ-Thro Creature Combustion Canister
+i(0, 382356);		-- EZ-Thro Gravitational Displacer
+i(0, 386670);		-- EZ-Thro Grease Grenade
+i(0, 382357);		-- EZ-Thro Primal Deconstruction Charge
+i(0, 382363);		-- Meticulously-Tuned Gear
+i(0, 382318);		-- Needlessly Complex Wristguards
+i(0, 382364);		-- One-Size-Fits-All Gear
+i(0, 382317);		-- Overengineered Sleeve Extenders
+i(0, 382362);		-- Rapidly Ticking Gear
+i(0, 382361);		-- Razor-Sharp Gear
+i(0, 384491);		-- Spring-Loaded Capacitor Casing
+--- SPECIALIZATION ---
+i(0, 382345);		-- Assorted Safety Fuses
+i(0, 382408);		-- Atomic Recalibrator
+i(0, 382368);		-- Centralized Precipitation Emitter
+i(0, 382365);		-- Completely Safe Rockets
+i(0, 382371);		-- Element-Infused Rocket Helmet
+i(0, 382366);		-- Endless Stack of Needles
+i(0, 382369);		-- Environmental Emulator
+i(0, 382370);		-- Giggle Goggles
+i(0, 382326);		-- High Intensity Thermal Scanner
+i(0, 382353);		-- I.W.I.N. Button Mk10
+i(0, 382381);		-- Illustrious Insight
+i(0, 382351);		-- Magazine of Healing Darts
+i(0, 382374);		-- Rummage Through Scrap
+i(0, 382328);		-- S.A.V.I.O.R.
+i(0, 382358);		-- Suspiciously Silent Crate
+i(0, 382354);		-- Suspiciously Ticking Crate
+i(0, 382359);		-- Tinker: Supercollide-O-Tron
+i(0, 393796);		-- Tinker: Arclight Vital Correctors
+i(0, 382367);		-- Wyrmhole Generator
+i(0, 387246);		-- Zapthrottle Soul Inhaler
+--- QUEST ---
+i(0, 377983);		-- Heart in a Bottle
 
 ------------------
 -- PATCH 10.0.5 --
 ------------------
+--- ITEM ---
 i(202228, 397858);	-- Impressive Linkgrease Locksprocket
 i(202229, 397859);	-- Remarkable Linkgrease Locksprocket
 i(202230, 397860);	-- Impressive True Iron Trigger
@@ -287,12 +374,13 @@ i(202231, 397861);	-- Remarkable True Iron Trigger
 ------------------
 -- PATCH 10.0.7 --
 ------------------
+--- ITEM ---
 i(203424, 400810);	-- Gnomish Voicebox
 
 ------------------
 -- PATCH 10.1.0 --
 ------------------
--- ITEM --
+--- ITEM ---
 i(205282, 409351);	-- Obsidian Combatant's Cloth Goggles
 i(205283, 409353);	-- Obsidian Combatant's Leather Goggles
 i(205284, 409355);	-- Obsidian Combatant's Mail Goggles
@@ -300,9 +388,9 @@ i(205285, 409356);	-- Obsidian Combatant's Plate Goggles
 i(205178, 408230);	-- Mallard Mortar
 i(204844, 407005);	-- Polarity Bomb
 i(205036, 408052);	-- Tinker: Shadowflame Rockets
--- DISCOVERY --
+--- DISCOVERY ---
 i(0, 407006);		-- EZ-Thro Polarity Bomb
--- SPECIAL --
+--- LEGENDARY ---
 i(0, 407170);		-- Inspired Order Recalibrator
 
 ------------------

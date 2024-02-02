@@ -112,7 +112,7 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
             ["cost"] = {{"i",202162,1}}, -- Rumble Coin
             ["repeatable"] = true,
             ["groups"] = {
-                i(202163, { -- Rumble Prize Box
+                i(202163, {	-- Rumble Prize Box
                     i(201931),  -- Warcraft Rumble Toy: Maiev (TOY!)
                     i(202261),  -- Warcraft Rumble Toy: Sneed (TOY!)
                     i(202851),  -- Warcraft Rumble Toy: Night Elf Huntress (TOY!)
@@ -131,7 +131,7 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
             ["cost"] = {{"i",202162,1}}, -- Rumble Coin
             ["repeatable"] = true,
             ["groups"] = {
-                i(202163, { -- Rumble Prize Box
+                i(202163, {	-- Rumble Prize Box
                     i(201931),  -- Warcraft Rumble Toy: Maiev (TOY!)
                     i(202261),  -- Warcraft Rumble Toy: Sneed (TOY!)
                     i(202851),  -- Warcraft Rumble Toy: Night Elf Huntress (TOY!)

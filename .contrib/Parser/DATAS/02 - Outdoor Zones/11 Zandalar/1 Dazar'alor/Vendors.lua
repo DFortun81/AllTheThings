@@ -190,7 +190,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 42.2, 38.0, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(166422, {	-- Recipe: Silas' Sphere of Transmutation
+					i(166422, {	-- Recipe: Silas' Sphere of Transmutation (RECIPE!)
 						["sourceQuest"] = 50120,	-- A Recipe for Success (H)
 					}),
 				},

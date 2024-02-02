@@ -308,7 +308,7 @@ root(ROOTS.Craftables, tier(MOP_TIER, applyclassicphase(MOP_PHASE_ONE, bubbleDow
 		}),
 		filter(MISC, {
 			i(98717, {["timeline"] = {ADDED_5_4_0}}),	-- Balanced Trillium Ingot
-			i(80431),	-- Folded Ghost Iron
+			i(80431, {["timeline"] = {CREATED_5_0_4}}),	-- Folded Ghost Iron
 			i(86599),	-- Ghost Iron Shield Spike
 			i(82960),	-- Ghostly Skeleton Key
 			i(94111, {["timeline"] = {ADDED_5_2_0}}),	-- Lightning Steel Ingot

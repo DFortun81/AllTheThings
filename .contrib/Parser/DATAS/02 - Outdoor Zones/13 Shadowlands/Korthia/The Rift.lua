@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						--	Greens
 							i(185050),	-- Spider Soul
 						--	Whites
-							i(186994),	-- Design: Shaded Stone Statue
+							i(186994),	-- Design: Shaded Stone Statue (RECIPE!)
 						-- Objects
 						o(369437, {	-- Riftbound Cache
 							["coords"] = {

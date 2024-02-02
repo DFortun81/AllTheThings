@@ -9,6 +9,8 @@ APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = {
 	r(2018, {	-- Blacksmithing (Apprentice)
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		["lvl"] = 5,
 		-- #endif
 		["rank"] = 1,
 	}),
@@ -16,6 +18,8 @@ APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = {
 		["timeline"] = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		["lvl"] = 10,
 		-- #endif
 		["rank"] = 2,
 	}),
@@ -23,6 +27,14 @@ APPRENTICE_JOURNEYMAN_EXPERT_BLACKSMITHING = {
 		["timeline"] = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		-- #if SEASON_OF_DISCOVERY
+		["OnUpdate"] = [[function(t)
+			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 26 or 20;
+		end]],
+		-- #else
+		["lvl"] = 20,
+		-- #endif
 		-- #endif
 		["rank"] = 3,
 	}),
@@ -114,6 +126,14 @@ ARTISAN_BLACKSMITHING = {
 		["timeline"] = { REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		-- #if SEASON_OF_DISCOVERY
+		["OnUpdate"] = [[function(t)
+			t.lvl = _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) and 41 or 35;
+		end]],
+		-- #else
+		["lvl"] = 35,
+		-- #endif
 		-- #endif
 		["rank"] = 4,
 	}),
@@ -190,6 +210,8 @@ TBC_BLACKSMITHING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] =
 		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		["lvl"] = 50,
 		-- #endif
 		["rank"] = 5,
 	}),
@@ -271,6 +293,8 @@ WRATH_BLACKSMITHING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
+		-- #else
+		["lvl"] = 65,
 		-- #endif
 		["rank"] = 6,
 	}),

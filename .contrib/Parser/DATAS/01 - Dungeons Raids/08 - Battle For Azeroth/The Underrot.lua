@@ -228,7 +228,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							ach(12502),	-- Mythic: Underrot
 							ach(13003),	-- Mythic: Underrot Guild Run
 							ach(12499),	-- Sporely Alive
-							i(162520),	-- Recipe: Mystical Cauldron (Rank 2)
 							i(160829),	-- Underrot Crawg (MOUNT!)
 							i(159655),	-- Vile Exasanguinator
 							i(159446),	-- Greathelm of the Putrid Path

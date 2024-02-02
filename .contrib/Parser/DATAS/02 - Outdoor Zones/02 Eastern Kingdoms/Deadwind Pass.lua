@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				pet(439, {	-- Restless Shadeling (PET!)
-					["description"] = "Spawns in |cFFFFD700The Master's Cellar|r at midnight PST for a very limited amount of time.",
+					["description"] = "Spawns in |cFFFFD700The Master's Cellar|r at midnight server time for a very limited amount of time.",
 				}),
 			}),
 			-- #if ANYCLASSIC

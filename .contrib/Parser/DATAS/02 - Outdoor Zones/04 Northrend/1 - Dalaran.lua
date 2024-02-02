@@ -3365,112 +3365,46 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(28776, {	-- Elizabeth Ross <Tabard Vendor>
-						-- TODO: Do something with Tabard Vendors, they're out of control.
 						["coord"] = { 51.8, 55.8, NORTHREND_DALARAN },
-						["groups"] = {
-							i(31779),	-- Aldor Tabard
-							i(31804),	-- Cenarion Expedition Tabard
-							i(36941, {	-- Competitor's Tabard
-								["u"] = REMOVED_FROM_GAME,
-								["description"] = "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
-							}),
-							i(31776),	-- Consortium Tabard
-							i(19031, {	-- Frostwolf Battle Tabard
-								["races"] = HORDE_ONLY,
-								["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
-							}),
-							i(31404, {	-- Green Trophy Tabard of the Illidari
-								["sourceQuests"] = {
-									10781,	-- Battle of the Crimson Watch
-								},
-							}),
-							i(5976),	-- Guild Tabard
-							i(23999, {	-- Honor Hold Tabard
-								["races"] = ALLIANCE_ONLY,
-							}),
-							i(31777),	-- Keepers of Time Tabard
-							i(15198, {	-- Knight's Colors
-								["races"] = ALLIANCE_ONLY,
-								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-							}),
-							i(31774, {	-- Kurenai Tabard
-								["races"] = ALLIANCE_ONLY,
-							}),
-							i(43300),	-- Loremaster's Colors
-							i(31778),	-- Lower City Tabard
-							i(31773, {	-- Mag'har Tabard
-								["races"] = HORDE_ONLY,
-							}),
-							i(32828, {	-- Ogri'la Tabard
-								["cost"] = { { "i", 32569, 10 } },	-- 10x Apexis Shard
-							}),
-							i(15196, {	-- Private's Tabard
-								["races"] = ALLIANCE_ONLY,
-								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-							}),
-							i(31405, {	-- Purple Trophy Tabard of the Illidari
-								["sourceQuests"] = {
-									10781,	-- Battle of the Crimson Watch
-								},
-							}),
-							i(31780),	-- Scryers Tabard
-							i(15197, {	-- Scout's Tabard
-								["races"] = HORDE_ONLY,
-								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-							}),
-							i(31781),	-- Sha'tar Tabard
-							i(19506, {	-- Silverwing Battle Tabard
-								["races"] = ALLIANCE_ONLY,
-								["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
-							}),
-							i(32445),	-- Skyguard Tabard
-							i(31775, {	-- Sporeggar Tabard
-								["cost"] = { { "i", 24245, 10 }, },	-- 10x Glowcap
-							}),
-							i(15199, {	-- Stone Guard's Herald
-								["races"] = HORDE_ONLY,
-								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-							}),
-							i(19032, {	-- Stormpike Battle Tabard
-								["races"] = ALLIANCE_ONLY,
-								["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
-							}),
-							pvp(i(43349)),	-- Tabard of Brute Force
-							pvp(i(49052, {	-- Tabard of Conquest [Alliance]
-								["races"] = ALLIANCE_ONLY,
-								["timeline"] = { "added 3.2.0.10192" },
-							})),
-							pvp(i(49054, {	-- Tabard of Conquest [Horde]
-								["races"] = HORDE_ONLY,
-								["timeline"] = { "added 3.2.0.10192" },
-							})),
-							i(35280, {	-- Tabard of Summer Flames
-								["sourceQuests"] = {
-									11972,	-- Shards of Ahune
-								},
-							}),
-							i(35279, {	-- Tabard of Summer Skies
-								["sourceQuests"] = {
-									11972,	-- Shards of Ahune
-								},
-							}),
-							i(40643),	-- Tabard of the Achiever
-							i(43348),	-- Tabard of the Explorer
-							i(24344, {	-- Tabard of the Hand
-								["sourceQuests"] = {
-									9762,	-- The Unwritten Prophecy
-								},
-								["description"] = "This is from a Draenei only quest, but can used by any Alliance race.",
-								["races"] = ALLIANCE_ONLY,	-- Note!! This is strictly Alliance only as the only thing it converts to for Horde is "Guild Tabard"
-							}),
-							i(35221),	-- Tabard of the Shattered Sun
-							i(24004, {	-- Thrallmar Tabard
-								["races"] = HORDE_ONLY,
-							}),
-							i(19505, {	-- Warsong Battle Tabard
-								["races"] = HORDE_ONLY,
-								["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
-							}),
+						["sym"] = {
+							{"select", "itemID",
+							31779,	-- Aldor Tabard
+							31804,	-- Cenarion Expedition Tabard
+							36941,	-- Competitor's Tabard
+							31776,	-- Consortium Tabard
+							19031,	-- Frostwolf Battle Tabard (H)
+							31404,	-- Green Trophy Tabard of the Illidari
+							5976,	-- Guild Tabard
+							23999,	-- Honor Hold Tabard (A)
+							31777,	-- Keepers of Time Tabard
+							31774,	-- Kurenai Tabard (A)
+							31778,	-- Lower City Tabard
+							31773,	-- Mag'har Tabard (H)
+							15198,	-- Knight's Colors (A)
+							43300,	-- Loremaster's Colors
+							32828,	-- Ogri'la Tabard
+							15196,	-- Private's Tabard (A)
+							31405,	-- Purple Trophy Tabard of the Illidari
+							31780,	-- Scryers Tabard
+							15197,	-- Scout's Tabard (H)
+							31781,	-- Sha'tar Tabard
+							19506,	-- Silverwing Battle Tabard (A)
+							32445,	-- Skyguard Tabard
+							31775,	-- Sporeggar Tabard
+							15199,	-- Stone Guard's Herald (H)
+							19032,	-- Stormpike Battle Tabard (A)
+							43349,	-- Tabard of Brute Force
+							49052,	-- Tabard of Conquest (A)
+							49054,	-- Tabard of Conquest (H)
+							35280,	-- Tabard of Summer Flames
+							35279,	-- Tabard of Summer Skies
+							40643,	-- Tabard of the Achiever
+							43348,	-- Tabard of the Explorer
+							24344,	-- Tabard of the Hand (A)
+							35221,	-- Tabard of the Shattered Sun
+							24004,	-- Thrallmar Tabard (H)
+							19505,	-- Warsong Battle Tabard (H)
+							},
 						},
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, n(40160, {	-- Frozo the Renowned <Frozen Orb Trader>

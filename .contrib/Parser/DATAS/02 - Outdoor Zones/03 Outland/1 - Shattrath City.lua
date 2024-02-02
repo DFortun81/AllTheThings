@@ -3420,13 +3420,3 @@ for i,o in ipairs(OLUS_GROUPS) do
 	table.insert(TIER_FIVE_GROUPS, o);
 end
 -- #endif
-
--- #if AFTER TBC
-root(ROOTS.HiddenQuestTriggers, m(OUTLAND, {
-	m(SHATTRATH_CITY, {
-		q(9989, {	-- BETA Alien Spirits [triggers when completing 10917 "The Outcasts Plight"]
-			i(28499),	-- Arakkoa Hunter's Supplies
-		}),
-	}),
-}));
--- #endif

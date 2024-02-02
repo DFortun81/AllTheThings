@@ -168,7 +168,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	}),
 	-- #if AFTER 3.1.0.9733
 	n(ACHIEVEMENTS, {
-		-- #if BEFORE MOP
 		ach(2797, {	-- Noble Gardener (A)
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",
@@ -181,13 +180,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				2421,	-- Noble Garden (A)
 				2422,	-- Shake Your Bunny-Maker
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", "removed 5.0.4" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(122),	-- <Name> the Noble
 			},
 		}),
-		-- #endif
 		ach(2798, {	-- Noble Gardener (H)
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",

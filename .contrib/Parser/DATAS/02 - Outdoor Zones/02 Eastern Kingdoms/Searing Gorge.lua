@@ -1395,7 +1395,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5846,	-- Dark Iron Taskmaster
 						8637,	-- Dark Iron Watchman
 					},
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 41.6, 42.2, SEARING_GORGE },
 						{ 37.0, 42.8, SEARING_GORGE },
@@ -1406,7 +1406,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				i(2274, {	-- Sapper's Gloves
-					["timeline"] = { "added 10.1.7" },
+					["timeline"] = { ADDED_10_1_7 },
 					["cr"] = 5840,  -- Dark Iron Steamsmith
 					["coords"] = {
 						{ 42.8, 51.6, SEARING_GORGE },

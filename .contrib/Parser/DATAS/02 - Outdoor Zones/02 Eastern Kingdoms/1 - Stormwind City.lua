@@ -5908,88 +5908,41 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 57.2, 68.4, STORMWIND_CITY },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
-					-- #if NOT ANYCLASSIC
-					-- TODO: This stuff is missing timeline data. At some point do that, then we can remove the conditional.
-					["groups"] = {
-						i(31779),	-- Aldor Tabard
-						i(31804),	-- Cenarion Expedition Tabard
-						i(36941, {	-- Competitor's Tabard
-							["u"] = REMOVED_FROM_GAME,
-							["description"] = "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
-						}),
-						i(31776),	-- Consortium Tabard
-						i(31404, {	-- Green Trophy Tabard of the Illidari
-							["sourceQuests"] = {
-								10781,	-- Battle of the Crimson Watch
-							},
-						}),
-						i(5976),	-- Guild Tabard
-						i(23999, {	-- Honor Hold Tabard
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(31777),	-- Keepers of Time Tabard
-						i(15198, {	-- Knight's Colors
-							["races"] = ALLIANCE_ONLY,
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(31774, {	-- Kurenai Tabard
-							["races"] = ALLIANCE_ONLY,
-						}),
-						i(43300),	-- Loremaster's Colors
-						i(31778),	-- Lower City Tabard
-						i(32828, {	-- Ogri'la Tabard
-							["cost"] = { { "i", 32569, 10 } },	-- 10x Apexis Shard
-						}),
-						i(15196, {	-- Private's Tabard
-							["races"] = ALLIANCE_ONLY,
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(31405, {	-- Purple Trophy Tabard of the Illidari
-							["sourceQuests"] = {
-								10781,	-- Battle of the Crimson Watch
-							},
-						}),
-						i(31780),	-- Scryers Tabard
-						i(31781),	-- Sha'tar Tabard
-						i(19506, {	-- Silverwing Battle Tabard
-							["races"] = ALLIANCE_ONLY,
-							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
-						}),
-						i(32445),	-- Skyguard Tabard
-						i(31775, {	-- Sporeggar Tabard
-							["cost"] = { { "i", 24245, 10 }, },	-- 10x Glowcap
-						}),
-						i(19032, {	-- Stormpike Battle Tabard
-							["races"] = ALLIANCE_ONLY,
-							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
-						}),
-						pvp(i(43349)),	-- Tabard of Brute Force
-						pvp(i(49052, {	-- Tabard of Conquest [Alliance]
-							["races"] = ALLIANCE_ONLY,
-							["timeline"] = { "added 3.2.0.10192" },
-						})),
-						i(35280, {	-- Tabard of Summer Flames
-							["sourceQuests"] = {
-								11972,	-- Shards of Ahune
-							},
-						}),
-						i(35279, {	-- Tabard of Summer Skies
-							["sourceQuests"] = {
-								11972,	-- Shards of Ahune
-							},
-						}),
-						i(40643),	-- Tabard of the Achiever
-						i(43348),	-- Tabard of the Explorer
-						i(24344, {	-- Tabard of the Hand
-							["sourceQuests"] = {
-								9762,	-- The Unwritten Prophecy
-							},
-							["description"] = "This is from a Draenei only quest, but can used by any Alliance race.",
-							["races"] = ALLIANCE_ONLY,	-- Note!! This is strictly Alliance only as the only thing it converts to for Horde is "Guild Tabard"
-						}),
-						i(35221),	-- Tabard of the Shattered Sun
+					["sym"] = {
+						{"select", "itemID",
+						31779,	-- Aldor Tabard
+						31804,	-- Cenarion Expedition Tabard
+						36941,	-- Competitor's Tabard
+						31776,	-- Consortium Tabard
+						31404,	-- Green Trophy Tabard of the Illidari
+						23999,	-- Honor Hold Tabard
+						31777,	-- Keepers of Time Tabard
+						31774,	-- Kurenai Tabard
+						31778,	-- Lower City Tabard
+						15198,	-- Knight's Colors
+						43300,	-- Loremaster's Colors
+						32828,	-- Ogri'la Tabard
+						15196,	-- Private's Tabard
+						31405,	-- Purple Trophy Tabard of the Illidari
+						31780,	-- Scryers Tabard
+						31781,	-- Sha'tar Tabard
+						19506,	-- Silverwing Battle Tabard
+						32445,	-- Skyguard Tabard
+						31775,	-- Sporeggar Tabard
+						19032,	-- Stormpike Battle Tabard
+						43349,	-- Tabard of Brute Force
+						49052,	-- Tabard of Conquest (A)
+						35280,	-- Tabard of Summer Flames
+						35279,	-- Tabard of Summer Skies
+						40643,	-- Tabard of the Achiever
+						43348,	-- Tabard of the Explorer
+						24344,	-- Tabard of the Hand (A)
+						35221,	-- Tabard of the Shattered Sun
+						},
 					},
-					-- #endif
+					["groups"] = {
+						i(5976),	-- Guild Tabard
+					},
 				}),
 				n(277, {	-- Roberto Pupellyverbos <Merlot Connoisseur>
 					-- #if AFTER WRATH

@@ -1095,7 +1095,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["providers"] = {
 								{ "i", 5570 },	-- Deepmoss Egg
 								{ "o", 19542 },	-- Deepmoss Eggs
-								
+
 							},
 						}),
 					},
@@ -3670,7 +3670,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(7559, {	-- Runic Cane
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -3704,10 +3704,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(4768, {	-- Adept's Gloves
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 03.09.2023 Data Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 						i(4771, {	-- Harvest Cloak
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -3733,10 +3733,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(5183, {	-- Pulsating Hydra Heart
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 03.09.2023 Data Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 						i(5182, {	-- Shiver Blade
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 03.09.2023 Data Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -3755,10 +3755,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(5111, {  -- Rathorian's Cape
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 						i(5112, {  -- Ritual Blade
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -3811,7 +3811,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(1355, {	-- Buckskin Cape
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -3949,7 +3949,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = {{"select","itemID",
 						16059,	-- Common Brown Shirt
 						3428,	-- Common Grey Shirt
-						16060,	-- Common White Shirt	
+						16060,	-- Common White Shirt
 					}},
 					["groups"] = {
 						i(4790, {	-- Inferno Cloak

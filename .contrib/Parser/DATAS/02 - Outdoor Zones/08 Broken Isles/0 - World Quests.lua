@@ -4,7 +4,7 @@
 root(ROOTS.Zones, bubbleDown({ ["timeline"] = { "added 7.0.2" } }, {
 	m(BROKEN_ISLES, {
 		n(WORLD_QUESTS, {
-			i(116415),	-- Shiny Pet Charm
+			i(116415, { ["timeline"] = { REMOVED_10_2_5 } }),	-- Shiny Pet Charm
 
 			-- Blizzard Achievement data claims these WQ exist to grant credit for 'Variety is the Spice of Life' (ach:11189) but they seem to be NYI
 			-- putting them here so that Parser stops complaining they are missing

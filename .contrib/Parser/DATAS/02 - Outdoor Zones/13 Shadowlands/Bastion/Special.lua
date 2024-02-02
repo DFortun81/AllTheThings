@@ -4,7 +4,7 @@
 root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(BASTION, {
 		n(SPECIAL, {
-			n(175563, { -- Courage
+			n(175563, {	-- Courage
 				["description"] = "Requires a group of 5 people to simultaneously pet Larion Cubs near Nemea (|cFFFFFFFF57.3, 39.2|r).",
 				["questID"] = 60093,	-- think this is one-time per character and not repeatable
 				["coord"] = { 57.3, 39.2, BASTION },

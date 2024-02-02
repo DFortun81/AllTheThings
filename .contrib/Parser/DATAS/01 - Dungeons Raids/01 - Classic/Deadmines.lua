@@ -316,10 +316,10 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 				["groups"] = {
 					i(1933, {	-- Staff of Conjuring
-						["timeline"] = { "added 10.1.7" },	-- ATT Discord 05.09.2023
+						["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					}),
 					i(3902, {	-- Staff of Nobles
-						["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+						["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					}),
 					-- #if BEFORE 4.0.3
 					i(5967),	-- Girdle of Nobility
@@ -356,10 +356,10 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 				["groups"] = {
 					i(3019, {	-- Noble's Robe
-						["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 09.09.2023 ATT Discord
+						["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 09.09.2023 ATT Discord
 					}),
 					i(4660, {	-- Walking Boots
-						["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+						["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 					}),
 				},
 			}),
@@ -411,7 +411,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 			}),
 			-- #endif
 			i(1928, {	-- Defias Mage Staff
-				["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 				-- #if BEFORE 4.0.3
 				["cr"] = 1726,	-- Defias Magician
 				-- #elseif AFTER 10.1.7
@@ -423,7 +423,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 			}),
 			i(1925, {	-- Defias Rapier
-				["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 				-- #if BEFORE 4.0.3
 				["cr"] = 1725,	-- Defias Watchman
 				-- #elseif AFTER 10.1.7
@@ -432,7 +432,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 			}),
 			i(1943, {	-- Goblin Mail Leggings
-				["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 				-- #if BEFORE 4.0.3
 				["cr"] = 3947,	-- Goblin Shipbuilder
 				-- #elseif AFTER 10.1.7
@@ -444,7 +444,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 			}),
 			i(1936, {	-- Goblin Screwdriver
-				["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 				-- #if BEFORE 4.0.3
 				["cr"] = 622,	-- Goblin Engineer
 				-- #elseif AFTER 10.1.7
@@ -453,7 +453,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 			}),
 			i(1944, {	-- Metalworking Gloves
-				["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 				-- #if BEFORE 4.0.3
 				["cr"] = 1731,	-- Goblin Craftsman
 				-- #elseif AFTER 10.1.7
@@ -533,7 +533,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 			}),
 			i(1945, {	-- Woodworking Gloves
-				["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+				["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 				-- #if BEFORE 4.0.3
 				["cr"] = 641,	-- Goblin Woodcarver
 				-- #elseif AFTER 10.1.7

@@ -9,6 +9,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				{ "i", 205982, 1 },	-- 1x Lost Dig Map
 				{ "i", 205984, 1 },	-- 1x Bartered Dig Map
 			},
+			["crs"] = { 201426 },	-- Myrrit
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(18284, {	-- A Niffen's Best Buddy

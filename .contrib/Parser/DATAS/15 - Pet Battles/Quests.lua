@@ -10,7 +10,7 @@ local FABLED_PANDAREN_PET_SUPPLIES =
 i(94207, {	-- Fabled Pandaren Pet Supplies
 	["sym"] = {{ "fill" }},
 });
-local SHINY_PET_CHARM = i(116415);	-- Shiny Pet Charm
+local SHINY_PET_CHARM = i(116415, { ["timeline"] = { REMOVED_10_2_5 } });	-- Shiny Pet Charm
 root(ROOTS.PetBattles, petbattle({
 	n(QUESTS, {
 		q(44767, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {	-- A Celestial Invitation
@@ -1325,42 +1325,60 @@ root(ROOTS.PetBattles, petbattle({
 				["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
 				["provider"] = { "n", 87124 },	-- Ashlei
 				["g"] = {
-					SHINY_PET_CHARM
+					SHINY_PET_CHARM,
+					-- #if AFTER 10.2.5
+					i(163036),	-- Polished Pet Charm
+					-- #endif
 				},
 			}),
 			q(37201, {	-- Cymre Brightblade
 				["coord"] = { 51.1, 70.6, GORGROND },
 				["provider"] = { "n", 83837 },	-- Cymre Brightblade
 				["g"] = {
-					SHINY_PET_CHARM
+					SHINY_PET_CHARM,
+					-- #if AFTER 10.2.5
+					i(163036),	-- Polished Pet Charm
+					-- #endif
 				},
 			}),
 			q(37205, {	-- Gargra
 				["coord"] = { 68.5, 64.7, FROSTFIRE_RIDGE },
 				["provider"] = { "n", 87122 },	-- Gargra
 				["g"] = {
-					SHINY_PET_CHARM
+					SHINY_PET_CHARM,
+					-- #if AFTER 10.2.5
+					i(163036),	-- Polished Pet Charm
+					-- #endif
 				},
 			}),
 			q(37208, {	-- Taralune
 				["coord"] = { 49.0, 80.3, TALADOR },
 				["provider"] = { "n", 87125 },	-- Taralune
 				["g"] = {
-					SHINY_PET_CHARM
+					SHINY_PET_CHARM,
+					-- #if AFTER 10.2.5
+					i(163036),	-- Polished Pet Charm
+					-- #endif
 				},
 			}),
 			q(37206, {	-- Tarr the Terrible
 				["provider"] = { "n", 87110 },	-- Tar the Terrible
 				["coord"] = { 56.2, 9.8, DRAENOR_NAGRAND },
 				["g"] = {
-					SHINY_PET_CHARM
+					SHINY_PET_CHARM,
+					-- #if AFTER 10.2.5
+					i(163036),	-- Polished Pet Charm
+					-- #endif
 				},
 			}),
 			q(37207, {	-- Vesharr
 				["provider"] = { "n", 87123 },	-- Vesharr
 				["coord"] = { 46.2, 45.3, SPIRES_OF_ARAK },
 				["g"] = {
-					SHINY_PET_CHARM
+					SHINY_PET_CHARM,
+					-- #if AFTER 10.2.5
+					i(163036),	-- Polished Pet Charm
+					-- #endif
 				},
 			}),
 		}),

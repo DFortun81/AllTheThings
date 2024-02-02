@@ -187,7 +187,7 @@ root(ROOTS.WorldDrops, {
 				-- #if AFTER 10.1.7
 				["groups"] = {
 					i(7678,	{	-- Recipe: Thistle Tea
-						["timeline"] = { "added 10.1.7" },
+						["timeline"] = { ADDED_10_1_7 },
 					}),
 				},
 				-- #endif
@@ -247,7 +247,7 @@ root(ROOTS.WorldDrops, {
 				-- #if AFTER 10.1.7
 				["groups"] = {
 					i(7678,	{	-- Recipe: Thistle Tea
-						["timeline"] = { "added 10.1.7" },
+						["timeline"] = { ADDED_10_1_7 },
 					}),
 				},
 				-- #endif
@@ -256,7 +256,7 @@ root(ROOTS.WorldDrops, {
 				-- #if AFTER 10.1.7
 				["groups"] = {
 					i(7678,	{	-- Recipe: Thistle Tea
-						["timeline"] = { "added 10.1.7" },
+						["timeline"] = { ADDED_10_1_7 },
 					}),
 				},
 				-- #endif
@@ -359,7 +359,7 @@ root(ROOTS.WorldDrops, {
 				-- #if AFTER 10.1.7
 				["groups"] = {
 					i(7678,	{	-- Recipe: Thistle Tea
-						["timeline"] = { "added 10.1.7" },
+						["timeline"] = { ADDED_10_1_7 },
 					}),
 				},
 				-- #endif

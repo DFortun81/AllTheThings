@@ -14,9 +14,31 @@ profession(FIRST_AID, {
 			["rank"] = 2,
 		}),
 		recipe(7924, {	-- First Aid (Expert)
+			-- #if SEASON_OF_DISCOVERY
+			["OnUpdate"] = [[function(t)
+				if _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) then
+					t.lvl = 26;
+				else
+					t.lvl = nil;
+				end
+			end]],
+			-- #endif
 			["rank"] = 3,
 		});
 		recipe(10846, {	-- First Aid (Artisan)
+			-- #if ANYCLASSIC
+			-- #if SEASON_OF_DISCOVERY
+			["OnUpdate"] = [[function(t)
+				if _.Settings:GetUnobtainableFilter(]] .. SOD_PHASE_ONE .. [[) then
+					t.lvl = 41;
+				else
+					t.lvl = 35;
+				end
+			end]],
+			-- #else
+			["lvl"] = 35,
+			-- #endif
+			-- #endif
 			["rank"] = 4,
 		}),
 		recipe(3275),	-- Linen Bandage

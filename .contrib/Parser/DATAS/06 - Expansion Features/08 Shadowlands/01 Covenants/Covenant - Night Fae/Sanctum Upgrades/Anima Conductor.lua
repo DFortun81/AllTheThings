@@ -174,6 +174,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								}),
 								q(62224, {	-- A Thread of Hope
 									["provider"] = { "n", 173277 },	-- Teendynneetll
+									["g"] = {
+										i(183041),	-- Anima-Infused Silk (QI!)
+									},
 								}),
 								q(62188, {	-- Catch A Star
 									["provider"] = { "n", 173277 },	-- Teendynneetll
@@ -201,7 +204,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								}),
 							})),
 							n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true }, {
-								q(62068),	-- Gormling Piper: Crumbled Ridge
+								q(62068, {	-- Gormling Piper: Crumbled Ridge
+									i(182611),	-- Fae Flute
+								}),
 								q(61394),	-- Gormling Piper: Tranquil Pools
 								q(61717),	-- Gormling Piper: Tranquil Pools
 								q(62051, {	-- Gormling Toss: Spirit Glen

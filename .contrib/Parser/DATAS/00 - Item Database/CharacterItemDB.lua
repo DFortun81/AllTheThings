@@ -343,7 +343,7 @@ iq(199697, 67140);					-- Polished Basalt Bracelet
 iq(199696, 67141);					-- Iskaaran Ice Axe
 iq(199698, 70794);					-- Irontree Harpoon Handle
 iq(199850, 70802);					-- Imbu Knot
-iq(199694, 67139);					-- Flying Fish Bone Charm
+iq(199694, 75642);					-- Flying Fish Bone Charm
 iq(199848, 70800);					-- Draconium Net Weights
 
 ------------------

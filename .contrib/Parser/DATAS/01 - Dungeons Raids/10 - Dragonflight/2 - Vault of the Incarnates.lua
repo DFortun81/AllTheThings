@@ -25,7 +25,7 @@ local EncounterToCRS = {
 	[DATHEA] = { 189813 },	-- Dathea, Ascended
 	[KUROG] = { 181378 },	-- Kurog Grimtotem
 	[DIURNA] = { 190245 },	-- Broodkeeper Diurna
-	[RASZAGETH] = { 
+	[RASZAGETH] = {
 		193909, -- Raszageth the Storm-Eater
 		189492,	-- Raszageth the Storm-Eater
 	},
@@ -307,84 +307,84 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_0_2_L
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(17110, {	-- The Primal Bulwark
-					crit(55109, { -- Eranog
+					crit(55109, {	-- Eranog
 						["_encounter"] = { ERANOG, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(55110, { -- The Primal Council
+					crit(55110, {	-- The Primal Council
 						["_encounter"] = { THE_PRIMAL_COUNCIL, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(55111, { -- Dathea, Ascended
+					crit(55111, {	-- Dathea, Ascended
 						["_encounter"] = { DATHEA, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(17111, {	-- Caverns of Infusion
-					crit(55113, { -- Terros
+					crit(55113, {	-- Terros
 						["_encounter"] = { TERROS, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(55114, { -- Sennarth, the Cold Breath
+					crit(55114, {	-- Sennarth, the Cold Breath
 						["_encounter"] = { SENNARTH, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(55115, { -- Kurog Grimtotem
+					crit(55115, {	-- Kurog Grimtotem
 						["_encounter"] = { KUROG, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(17112, {	-- Fury of the Storm
-					crit(55116, { -- Broodkeeper Diurna
+					crit(55116, {	-- Broodkeeper Diurna
 						["_encounter"] = { DIURNA, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(55117, { --Raszageth the Storm-Eater
+					crit(55117, {	--Raszageth the Storm-Eater
 						["_encounter"] = { RASZAGETH, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(16343, {	-- Vault of the Incarnates
-					crit(55109, { -- Eranog
+					crit(55109, {	-- Eranog
 						["_encounter"] = { ERANOG, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(55110, { -- The Primal Council
+					crit(55110, {	-- The Primal Council
 						["_encounter"] = { THE_PRIMAL_COUNCIL, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(55111, { -- Dathea, Ascended
+					crit(55111, {	-- Dathea, Ascended
 						["_encounter"] = { DATHEA, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(55113, { -- Terros
+					crit(55113, {	-- Terros
 						["_encounter"] = { TERROS, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(55114, { -- Sennarth, the Cold Breath
+					crit(55114, {	-- Sennarth, the Cold Breath
 						["_encounter"] = { SENNARTH, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(55115, { -- Kurog Grimtotem
+					crit(55115, {	-- Kurog Grimtotem
 						["_encounter"] = { KUROG, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(55116, { -- Broodkeeper Diurna
+					crit(55116, {	-- Broodkeeper Diurna
 						["_encounter"] = { DIURNA, ANY_DIFFICULTY_ID_RAID },
 					}),
-					crit(55117, { --Raszageth the Storm-Eater
+					crit(55117, {	--Raszageth the Storm-Eater
 						["_encounter"] = { RASZAGETH, ANY_DIFFICULTY_ID_RAID },
 					}),
 				}),
 				ach(16345, {	-- Heroic: Vault of the Incarnates
-					crit(55121, { -- Eranog
+					crit(55121, {	-- Eranog
 						["_encounter"] = { ERANOG, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(55122, { -- The Primal Council
+					crit(55122, {	-- The Primal Council
 						["_encounter"] = { THE_PRIMAL_COUNCIL, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(55123, { -- Dathea, Ascended
+					crit(55123, {	-- Dathea, Ascended
 						["_encounter"] = { DATHEA, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(55124, { -- Terros
+					crit(55124, {	-- Terros
 						["_encounter"] = { TERROS, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(55125, { -- Sennarth, the Cold Breath
+					crit(55125, {	-- Sennarth, the Cold Breath
 						["_encounter"] = { SENNARTH, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(55127, { -- Kurog Grimtotem
+					crit(55127, {	-- Kurog Grimtotem
 						["_encounter"] = { KUROG, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(55126, { -- Broodkeeper Diurna
+					crit(55126, {	-- Broodkeeper Diurna
 						["_encounter"] = { DIURNA, HEROIC_PLUS_ID_RAID },
 					}),
-					crit(55128, { --Raszageth the Storm-Eater
+					crit(55128, {	--Raszageth the Storm-Eater
 						["_encounter"] = { RASZAGETH, HEROIC_PLUS_ID_RAID },
 					}),
 				}),

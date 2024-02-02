@@ -937,10 +937,11 @@ obj = function(id, t)									-- Create a WORLD OBJECT Object (an interactable, 
 	return struct("objectID", id, t);
 end
 o = obj;												-- Create a WORLD OBJECT Object (alternative shortcut)
-o_repeated = function(t)								-- Create a group which represents the shared contents for multiple, identically-named WORLD OBJECTS
+o_repeated = function(t, o)								-- Create a group which represents the shared contents for multiple, identically-named WORLD OBJECTS
 	if t[1] then
 		-- move the raw array of objects into a .g group
-		t = { g = t };
+		-- include o as a separate array so we can list the shared contents/objects separately for easier data application
+		t = { g = appendAllGroups(t, o) };
 	end
 	if t.groups or t.g then
 		for i,group in ipairs(t.groups or t.g) do

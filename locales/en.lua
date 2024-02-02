@@ -1298,11 +1298,11 @@ local L = {
 
 	-- Unobtainable Listing (for fellow 100%s out there)
 	["UNOBTAINABLE_ITEM_TEXTURES"] = {
-		"Interface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp",			-- 1
-		"Interface\\AddOns\\AllTheThings\\assets\\status-prerequisites.blp",		-- 2
-		"",																			-- 3, we want no icon for these
-		"Interface\\AddOns\\AllTheThings\\assets\\status-seasonal-unavailable.blp",	-- Seasonal unavailable
-		"Interface\\AddOns\\AllTheThings\\assets\\status-seasonal-available.blp",	-- Seasonal available
+		app.asset("status-unobtainable"),
+		app.asset("status-prerequisites"),
+		"",									-- 3, we want no icon for these
+		app.asset("status-seasonal-unavailable"),	-- Seasonal unavailable
+		app.asset("status-seasonal-available"),	-- Seasonal available
 	};
 	["UNOBTAINABLE_ITEM_REASONS"] = {
 		-- [id] = {header, description, name}, header: header id, 1-3 as above, 4 is legacy.
@@ -1322,7 +1322,7 @@ local L = {
 		-- #if BEFORE BFA
 		--[41] = {1, "|CFFFF0000This is only available to players that completed the associated Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances"},
 		-- #endif
-		[45] = {1, "|CFFFF0000Blizzard's Loot changes broke several Items and made them Unobtainable.\nOgom the Mangler & some Ulduar HM items are currently broken and need to be fixed.|r", "Broken Loot"},
+		[45] = {1, "|CFFFF0000Blizzard's Loot changes broke several Items and made them Unobtainable.\nOgom the Mangler is currently broken and needs to be fixed.|r", "Broken Loot"},
 	};
 
 	["CUSTOM_COLLECTS_REASONS"] = {

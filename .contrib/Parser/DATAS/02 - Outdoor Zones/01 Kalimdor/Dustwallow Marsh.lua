@@ -3312,6 +3312,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(16084, {	-- Expert First Aid - Under Wraps
 							["timeline"] = { "removed 3.1.0" },
+							-- #if SEASON_OF_DISCOVERY
+							["OnUpdate"] = [[function(t)
+								if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
+									t.u = ]] .. SOD_PHASE_TWO .. [[;
+								end
+								t.OnUpdate = nil;
+							end]],
+							-- #endif
 							["rank"] = 3,
 						}),
 						i(16112, {	-- Manual: Heavy Silk Bandage

@@ -76,7 +76,7 @@ root(ROOTS.Craftables, {
 	}),
 	tier(BFA_TIER, {
 		n(QUESTS, {
-			q(56042, { -- Blingtron 7000
+			q(56042, {	-- Blingtron 7000
 				["qg"] = 153897,	-- Blingtron 7000
 				["isDaily"] = true,
 				["g"] = {

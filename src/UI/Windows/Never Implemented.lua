@@ -19,16 +19,8 @@ app:GetWindow("Never Implemented", {
 			});
 			app.AssignFieldValue(nyiData, "u", 1);
 			nyiData.u = nil;
-			self.nyiData = nyiData;
-		end
-	end,
-	OnRebuild = function(self)
-		if not self.data then
-			local nyiData = self.nyiData;
-			if nyiData then
-				self.data = nyiData;
-				return true;
-			end
+			self.data = nyiData;
+			self:AssignChildren();
 		end
 	end,
 	OnUpdate = function(self, ...)

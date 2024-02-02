@@ -1039,7 +1039,7 @@ end
 -- CLASSIC WOW --
 -----------------
 i(198665, 4234);	-- Pebble's Pebble
-i(200060, 4235);	-- Hoplet
+i(200060, 4235);	-- Hoplet (Classic)
 i(204982, 4236);	-- Glub
 i(187794, 4233);	-- Flurky
 i(211082, 4329);	-- Arfus (WOTLK)
@@ -3540,9 +3540,11 @@ i(0, 2951);			-- PH Slime
 i(180838, 0);		-- Blue Etherwyrm
 i(180837, 0);		-- Blue Glimmerfly
 i(181259, 0);		-- Clutch
+i(180632, 0);		-- Gorm Rootstinger
 i(180590, 0);		-- Lost Soul
 i(180860, 0);		-- Orange Vulpin
 i(180841, 0);		-- Olive Dragon Turtle
+i(182672, 0);		-- Misty Leaper
 i(180840, 0);		-- Pink Glimmerfly
 i(180861, 0);		-- Red Vulpin
 i(180867, 0);		-- Silver Crane
@@ -3550,6 +3552,7 @@ i(180813, 0);		-- Silver Teroclaw
 i(183853, 0);		-- Sinfall Screecher
 i(184034, 0);		-- Stony's Infused Ruby
 i(183714, 0);		-- Swamp Reed
+i(180627, 0);		-- Tranquil Wader
 
 -----------------
 -- PATCH 9.0.2 --
@@ -3772,7 +3775,6 @@ i(194098, 3350);	-- Lord Basilton
 i(199175, 3316);	-- Lubbins
 i(199757, 3378);	-- Magic Nibbler
 i(193571, 3303);	-- Mallard Duckling
-i(191946, 3265);	-- Mister Muskoxeles
 i(200519, 3286);	-- Mister Toots
 i(200930, 3414);	-- Obsidian Proto-Whelp
 i(200276, 3311);	-- Ohuna Companion
@@ -3866,6 +3868,7 @@ i(0, 3257);			-- Test Beetle
 i(0, 3308);			-- Time-Lost Duckling
 i(0, 3363);			-- Truesilver Crab
 i(193614, 3314);	-- Groundshaker
+i(191946, 3265);	-- Mister Muskoxeles
 i(193380, 3298);	-- Pink Salamanther
 i(193587, 3312);	-- Time-Lost Duck
 i(193429, 3297);	-- Time-Lost Salamanther
@@ -4142,7 +4145,7 @@ i(212791, 4410);	-- Beetriz
 i(212722, 4408);	-- Buggsy
 i(208446, 4264);	-- Fyrn
 i(213134, 4412);	-- Hap'he
-i(213556, 4421);	-- Hoplet
+i(213556, 4421);	-- Hoplet (Retail)
 i(212786, 4409);	-- Lovely Duckling
 i(212700, 4407);	-- Nelle
 i(213133, 4411);	-- Reese

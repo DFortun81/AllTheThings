@@ -238,7 +238,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							ach(12826),	-- Mythic: Atal'Dazar
 							ach(13002),	-- Mythic: Atal'Dazar Guild Run
 							ach(12273),	-- It's Lit!
-							i(162520),	-- Recipe: Mystical Cauldron (Rank 2)
 							i(158323),	-- Soulrender's Fang
 							i(159358),	-- Coif of the Court Spider
 							i(158315),	-- Secret Spinner's Miter

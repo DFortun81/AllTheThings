@@ -1069,7 +1069,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			i(210471),	-- Flourishing Whimsydrake: Body Armor
 			i(210478),	-- Flourishing Whimsydrake: Gold and Pink Armor
 		})),
-		header(HEADERS.Item, 206156, { -- Grotto Netherwing Drake
+		header(HEADERS.Item, 206156, {	-- Grotto Netherwing Drake
 			i(207779),	-- Grotto Netherwing Drake: Barbed Tail (DM!)
 			i(207762),	-- Grotto Netherwing Drake: Chin Spike (DM!)
 			i(207761),	-- Grotto Netherwing Drake: Chin Tendrils (DM!)
@@ -1127,7 +1127,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 	})),
 	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDownFiltered({ ["timeline"] = { ADDED_10_2_5 } },FILTERFUNC_itemID,{
-		i(212518),	-- Manuscript of Endless Possibility (DM!)
 		header(HEADERS.Item, 194034, sharedData({	-- Renewed Proto-Drake
 			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
 			["timeline"] = { CREATED_10_2_5 },

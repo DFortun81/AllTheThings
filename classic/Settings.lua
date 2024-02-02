@@ -170,7 +170,6 @@ local TooltipSettingsBase = {
 		["MiniListScale"] = 1,
 		["MinimapButton"] = true,
 		["MinimapSize"] = 36,
-		["MinimapStyle"] = false,
 		["Models"] = true,
 		["Objectives"] = true,
 		["PlayDeathSound"] = false,
@@ -263,30 +262,11 @@ settings.Initialize = function(self)
 	self.MiniListScaleSlider:SetValue(self:GetTooltipSetting("MiniListScale"));
 	self.PrecisionSlider:SetValue(self:GetTooltipSetting("Precision"));
 	self.MinimapButtonSizeSlider:SetValue(self:GetTooltipSetting("MinimapSize"));
-	if self:GetTooltipSetting("MinimapButton") then
-		if not app.Minimap then app.Minimap = app.CreateMinimapButton(); end
-		app.Minimap:Show();
-	elseif app.Minimap then
-		app.Minimap:Hide();
-	end
+	app.SetMinimapButtonSettings(
+		self:GetTooltipSetting("MinimapButton"),
+		self:GetTooltipSetting("MinimapSize"));
 	OnClickForTab(self.Tabs[1]);
 	self:UpdateMode();
-end
-settings.CheckSeasonalDate = function(self, eventID, startMonth, startDay, endMonth, endDay)
-	local today = date("*t");
-	local now, start, ends = time({day=today.day,month=today.month,year=today.year,hour=0,min=0,sec=0});
-	if startMonth <= endMonth then
-		start = time({day=startDay,month=startMonth,year=today.year,hour=0,min=0,sec=0});
-		ends = time({day=endDay,month=endMonth,year=today.year,hour=0,min=0,sec=0});
-	else
-		local year = today.year;
-		if today.month < startMonth then year = year - 1; end
-		start = time({day=startDay,month=startMonth,year=year,hour=0,min=0,sec=0});
-		ends = time({day=endDay,month=endMonth,year=year + 1,hour=0,min=0,sec=0});
-	end
-
-	local active = (now >= start and now <= ends);
-	app.ActiveEvents[eventID] = active;
 end
 settings.Get = function(self, setting)
 	return ATTClassicSettings.General[setting];
@@ -696,7 +676,10 @@ settings.UpdateMode = function(self, doRefresh)
 		app:RegisterEvent("GOSSIP_SHOW");
 		app:RegisterEvent("TAXIMAP_OPENED");
 	end
-	if doRefresh then app:RefreshDataCompletely("UpdateMode"); end
+	if doRefresh then
+		app._SettingsRefresh = GetTimePreciseSec()
+		app:RefreshDataCompletely("UpdateMode");
+	end
 	self:Refresh();
 end
 
@@ -918,6 +901,7 @@ PrecisionSlider:SetScript("OnValueChanged", function(self, newValue)
 	end
 	settings:SetTooltipSetting("Precision", newValue);
 	app:RedrawWindows("PrecisionSlider");
+	app.HandleEvent("OnPrecisionUpdated");
 end);
 
 -- This creates the "Minimap Button Size" slider.
@@ -945,7 +929,9 @@ MinimapButtonSizeSlider:SetScript("OnValueChanged", function(self, newValue)
 		return 1;
 	end
 	settings:SetTooltipSetting("MinimapSize", newValue)
-	if app.Minimap then app.Minimap:SetSize(newValue, newValue); end
+	app.SetMinimapButtonSettings(
+		settings:GetTooltipSetting("MinimapButton"),
+		settings:GetTooltipSetting("MinimapSize"));
 end);
 
 
@@ -1719,26 +1705,12 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("MinimapButton", self:GetChecked());
-	if self:GetChecked() then
-		if not app.Minimap then app.Minimap = app.CreateMinimapButton(); end
-		app.Minimap:Show();
-	elseif app.Minimap then
-		app.Minimap:Hide();
-	end
+	app.SetMinimapButtonSettings(
+		settings:GetTooltipSetting("MinimapButton"),
+		settings:GetTooltipSetting("MinimapSize"));
 end);
 ShowMinimapButtonCheckBox:SetATTTooltip("Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.");
 ShowMinimapButtonCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "TOPLEFT", 360, 0);
-
-local MinimapButtonStyleCheckBox = settings:CreateCheckBox("Use the Old Minimap Style",
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("MinimapStyle"));
-end,
-function(self)
-	settings:SetTooltipSetting("MinimapStyle", self:GetChecked());
-	if app.Minimap then app.Minimap:UpdateStyle(); end
-end);
-MinimapButtonStyleCheckBox:SetATTTooltip("Some people don't like the new minimap button...\n\nThose people are wrong!\n\nIf you don't like it, here's an option to go back to the old style.");
-MinimapButtonStyleCheckBox:SetPoint("TOPLEFT", ShowMinimapButtonCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowCompletedGroupsCheckBox = settings:CreateCheckBox("Show Completed Groups",
 function(self)
@@ -1757,7 +1729,7 @@ function(self)
 	app:RefreshDataQuietly("ShowCompletedGroupsCheckBox");
 end);
 ShowCompletedGroupsCheckBox:SetATTTooltip("Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.");
-ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", MinimapButtonStyleCheckBox, "BOTTOMLEFT", 0, -4);
+ShowCompletedGroupsCheckBox:SetPoint("TOPLEFT", ShowMinimapButtonCheckBox, "BOTTOMLEFT", 0, -4);
 
 local ShowCollectedThingsCheckBox = settings:CreateCheckBox("Show Collected Things",
 function(self)
@@ -1833,6 +1805,24 @@ end);
 FilterThingsBySkillLevelCheckBox:SetATTTooltip("Enable this setting if you only want to see content available to the maximum possible skill level available to the game environment.");
 FilterThingsBySkillLevelCheckBox:SetPoint("TOPLEFT", FilterThingsByLevelCheckBox, "BOTTOMLEFT", 0, 4);
 
+local checkboxNoSeasonalFilter = settings:CreateCheckBox(L["SHOW_ALL_SEASONAL"],
+function(self)
+	self:SetChecked(not settings:Get("Show:OnlyActiveEvents"))	-- Inversed, so enabled = show
+	if app.MODE_DEBUG then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:Set("Show:OnlyActiveEvents", not self:GetChecked())	-- Inversed, so enabled = show
+	settings:UpdateMode(1)
+end);
+checkboxNoSeasonalFilter:SetATTTooltip(L["SHOW_ALL_SEASONAL_TOOLTIP"])
+checkboxNoSeasonalFilter:SetPoint("TOPLEFT", FilterThingsBySkillLevelCheckBox, "BOTTOMLEFT", 0, 4);
+
 local HideBoEItemsCheckBox = settings:CreateCheckBox("Hide BoE Items",
 function(self)
 	self:SetChecked(settings:Get("Hide:BoEs"));
@@ -1848,7 +1838,7 @@ function(self)
 	settings:SetHideBOEItems(self:GetChecked());
 end);
 HideBoEItemsCheckBox:SetATTTooltip("Enable this setting if you want to hide Bind on Equip items.\n\nThis setting is useful for when you are trying to finish a Classic Dungeon for a character and don't want to farm specifically for items that can be farmed on alts or on the Auction House.\n\nIE: Don't lose your mind grinding for Pendulum of Doom.");
-HideBoEItemsCheckBox:SetPoint("TOPLEFT", FilterThingsBySkillLevelCheckBox, "BOTTOMLEFT", 0, 4);
+HideBoEItemsCheckBox:SetPoint("TOPLEFT", checkboxNoSeasonalFilter, "BOTTOMLEFT", 0, 4);
 
 local IgnoreFiltersForBoEsCheckBox = settings:CreateCheckBox("Ignore Filters for BoEs",
 function(self)
@@ -2573,6 +2563,7 @@ function(self)
 		app.GetProgressText = app.GetProgressTextDefault;
 	end
 	app:RedrawWindows("ShowRemainingCheckBox");
+	app.HandleEvent("OnShowRemainingCheckBoxUpdated");
 end);
 ShowRemainingCheckBox:SetATTTooltip("Enable this option if you want to see the number of items remaining instead of the progress over total.");
 ShowRemainingCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsForThingsCheckBox, "BOTTOMLEFT", -8, 4);
@@ -2611,9 +2602,10 @@ local ids = {
 	["speciesID"] = "Species ID",
 	["spellID"] = "Spell ID",
 	["sourceID"] = "Source ID",
+	["titleID"] = "Title ID",
 };
 local last = nil;
-for _,id in pairs({"awp","rwp","achievementID","artID","creatureID","Coordinates","currencyID","Descriptions","displayID","explorationID","factionID","filterID","flightPathID"}) do
+for _,id in pairs({"awp","rwp","achievementID","artID","creatureID","Coordinates","currencyID","Descriptions","displayID","explorationID","factionID","filterID","flightPathID","itemID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
@@ -2630,7 +2622,7 @@ for _,id in pairs({"awp","rwp","achievementID","artID","creatureID","Coordinates
 	last = filter;
 end
 last = nil;
-for _,id in pairs({"itemID","itemLevel","itemString","Lore","mapID","modelID","objectID","__type","Objectives","questID","QuestGivers","sourceID","speciesID","spellID"}) do
+for _,id in pairs({"itemLevel","itemString","Lore","mapID","modelID","objectID","__type","Objectives","questID","QuestGivers","sourceID","speciesID","spellID","titleID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
@@ -2873,80 +2865,6 @@ local OnClickForWindowButton = function(self)
 	local syncWindow = app:GetWindow(self.Suffix);
 	if syncWindow then syncWindow:Show(); end
 end;
-local SetPortraitTexture = _G["SetPortraitTexture"];
-local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
-local function GetDisplayID(data)
-	if data.displayID then
-		return data.displayID;
-	elseif data.creatureID then
-		local displayID = app.NPCDisplayIDFromID[data.creatureID];
-		if displayID then
-			return displayID;
-		end
-	end
-
-	if data.providers and #data.providers > 0 then
-		for k,v in pairs(data.providers) do
-			-- if one of the providers is an NPC, we should show its texture regardless of other providers
-			if v[1] == "n" then
-				return app.NPCDisplayIDFromID[v[2]];
-			end
-		end
-	end
-
-	if data.qgs and #data.qgs > 0 then
-		return app.NPCDisplayIDFromID[data.qgs[1]];
-	end
-end
-
-local function SetPortraitIcon(self, data, x)
-	local displayID = GetDisplayID(data);
-	if displayID then
-		SetPortraitTextureFromDisplayID(self, displayID);
-		self:SetWidth(self:GetHeight());
-		self:SetTexCoord(0, 1, 0, 1);
-		return true;
-	elseif data.unit and not data.icon then
-		SetPortraitTexture(self, data.unit);
-		self:SetWidth(self:GetHeight());
-		self:SetTexCoord(0, 1, 0, 1);
-		return true;
-	end
-
-	-- Fallback to a traditional icon.
-	if data.atlas then
-		self:SetAtlas(data.atlas);
-		self:SetWidth(self:GetHeight());
-		self:SetTexCoord(0, 1, 0, 1);
-		if data["atlas-background"] then
-			self.Background:SetAtlas(data["atlas-background"]);
-			self.Background:SetWidth(self:GetHeight());
-			self.Background:Show();
-		end
-		if data["atlas-border"] then
-			self.Border:SetAtlas(data["atlas-border"]);
-			self.Border:SetWidth(self:GetHeight());
-			self.Border:Show();
-			if data["atlas-color"] then
-				local swatches = data["atlas-color"];
-				self.Border:SetVertexColor(swatches[1], swatches[2], swatches[3], swatches[4] or 1.0);
-			else
-				self.Border:SetVertexColor(1, 1, 1, 1.0);
-			end
-		end
-		return true;
-	elseif data.icon then
-		self:SetWidth(self:GetHeight());
-		self:SetTexture(data.icon);
-		local texcoord = data.texcoord;
-		if texcoord then
-			self:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
-		else
-			self:SetTexCoord(0, 1, 0, 1);
-		end
-		return true;
-	end
-end
 local SetWindowForButton = function(self, window)
 	local text = window.Suffix;
 	self.Suffix = text;

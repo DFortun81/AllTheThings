@@ -270,7 +270,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					i(7757),	-- Windweaver Staff
 				}),
 				n(SCARLET_MONASTERY_GRAVEYARD, {
-					["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+					["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 					-- #if AFTER 10.1.7
 					["description"] = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End or bought from the Auction House.\n\n\nObtain the Key & head to the Scarlet Monastery. After entering the building, you will find on the left side a keychain with quest mark above it. Complete this quest.\nAfterwards, when you interact with the keychain, you will get The Scarlet Key buff after which you can interact with previously locked door to 2 old dungeons and enter them.\nCurrent portals to Scarlet Monastery also function as portals to the old dungeons they used to lead to.\nInteracting with the keychain repeatedly removes/reapplies the buff.\n\nUnlock is account-wide.",
 					-- #endif
@@ -378,74 +378,74 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 						n(RARES, {
 							n(6488, {	-- Fallen Champion
-								["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+								["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								["groups"] = {
 									i(7690, {	-- Ebon Vise
-										["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+										["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 									}),
 									i(7691, {	-- Embalmed Shroud
-										["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+										["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 									}),
 									i(7689, {	-- Morbid Dawn
-										["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+										["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 									}),
 								},
 							}),
 							n(6490, {	-- Azshir the Sleepless
-								["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+								["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								["groups"] = {
 									i(7709, {	-- Blighted Leggings
-										["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+										["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 									}),
 									i(7731, {	-- Ghostshard Talisman
-										["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+										["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 									}),
 									i(7708, {	-- Necrotic Wand
-										["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+										["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 									}),
 								},
 							}),
 							n(6489, {	-- Ironspine
-								["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+								["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								["groups"] = {
 									i(7687, {	-- Ironspine's Fist
-										["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+										["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 									}),
 									i(7688, {	-- Ironspine's Ribcage
-										["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+										["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 									}),
 									i(7686, {	-- Ironspine's Eye
-										["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+										["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 									}),
 								},
 							}),
 						}),
 						n(3983, {	-- Interrogator Vishas
-							["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+							["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 							["groups"] = {
 								i(7683, {	-- Bloody Brass Knuckles
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(7682, {	-- Torturing Poker
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 							},
 						}),
 						n(4543, {	-- Bloodmage Thalnos
-							["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+							["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 							["groups"] = {
 								i(7685, {	-- Orb of the Forgotten Seer
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(7684, {	-- Bloodmage Mantle
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 							},
 						}),
 					},
 				}),
 				n(SCARLET_MONASTERY_LIBRARY, {
-					["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+					["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 					-- #if AFTER 10.1.7
 					["description"] = "Unlocked via 'The Scarlet Key' from the Loot-Filled Pumpkin during Hallow's End or bought from the Auction House.\n\n\nObtain the Key & head to the Scarlet Monastery. After entering the building, you will find on the left side a keychain with quest mark above it. Complete this quest.\nAfterwards, when you interact with the keychain, you will get The Scarlet Key buff after which you can interact with previously locked door to 2 old dungeons and enter them.\nCurrent portals to Scarlet Monastery also function as portals to the old dungeons they used to lead to.\nInteracting with the keychain repeatedly removes/reapplies the buff.\n\nUnlock is account-wide.",
 					-- #endif
@@ -591,13 +591,13 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							}),
 						}),
 						n(3974, {	-- Houndmaster Loksey
-							["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+							["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 							["groups"] = {
 								i(7710, {	-- Loksey's Training Stick
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(7756, {	-- Dog Training Gloves
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(3456, {	-- Dog Whistle
 									["timeline"] = { "removed 5.0.4" },
@@ -614,22 +614,22 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 							["description"] = "On one of the shelves on the left as you enter the final hallway leading to Doan.",
 						}),
 						n(6487, {	-- Arcanist Doan
-							["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+							["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 							["groups"] = {
 								i(7714, {	-- Hypnotic Blade
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(7713, {	-- Illusionary Rod
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(7712, {	-- Mantle of Doan
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(7711, {	-- Robe of Doan
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(34227, {	-- Deadman's Hand
-									["timeline"] = { "added 2.3.0", "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "added 2.3.0", "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								o(103821, {	-- Doan's Strongbox
 									["groups"] = {
@@ -639,10 +639,10 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 										}),
 										i(208485, {	-- The Scarlet Key
 											["description"] = "Found in the chest after killing Arcanist Doan. Can be looted once per week per account.",
-											["timeline"] = { "added 10.1.7" },
+											["timeline"] = { ADDED_10_1_7 },
 										}),
 									},
-									["timeline"] = { "removed 4.0.3", "added 10.1.7" },
+									["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },
 									-- #if AFTER 10.1.7
 									["questID"] = 77213,
 									["isWeekly"] = true,
@@ -653,7 +653,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					},
 				}),
 				n(SCARLET_MONASTERY_ARMORY, {
-					["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+					["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 7146, 1 } },	-- The Scarlet Key
 					-- #endif
@@ -756,34 +756,34 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 						-- #endif
 						n(3975, {	-- Herod
-							["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+							["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 							["groups"] = {
 								i(7717, {	-- Ravager
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(7719, {	-- Raging Berserker's Helm
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(7718, {	-- Herod's Shoulder
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(10330, {	-- Scarlet Leggings
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 							},
 						}),
 						n(6575, {	-- Scarlet Trainee
-							["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+							["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 							["groups"] = {
 								i(23192, {	-- Tabard of the Scarlet Crusade
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 							},
 						}),
 					},
 				}),
 				n(SCARLET_MONASTERY_CATHEDRAL, {
-					["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+					["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 					-- #if BEFORE 4.0.3
 					["cost"] = { { "i", 7146, 1 } },	-- The Scarlet Key
 					-- #endif
@@ -871,33 +871,33 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						}),
 						-- #endif
 						n(4542, {	-- High Inquisitor Fairbanks
-							["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+							["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 							["groups"] = {
 								i(19507, {	-- Inquisitor's Shawl
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(19508, {	-- Branded Leather Bracers
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(19509, {	-- Dusty Mail Boots
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 							},
 						}),
 						n(3976, {	-- Scarlet Commander Mograine
-							["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+							["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 							["groups"] = {
 								i(7726, {	-- Aegis of the Scarlet Commander
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(7724, {	-- Gauntlets of Divinity
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(7723, {	-- Mograine's Might
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 								i(10330, {	-- Scarlet Leggings
-									["timeline"] = { "removed 5.0.4", "added 10.1.7" },
+									["timeline"] = { "removed 5.0.4", ADDED_10_1_7 },
 								}),
 							}
 						}),

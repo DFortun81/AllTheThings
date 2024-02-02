@@ -169,7 +169,6 @@ local TooltipSettingsBase = {
 		["LootSpecializations"] = true,
 		["MinimapButton"] = true,
 		["MinimapSize"] = 36,
-		["MinimapStyle"] = false,
 		["Models"] = true,
 		["KnownBy"] = true,
 		["LiveScan"] = false,
@@ -269,12 +268,9 @@ settings.Initialize = function(self)
 	self.sliderMiniListScale:SetValue(self:GetTooltipSetting("MiniListScale"))
 	self.sliderPercentagePrecision:SetValue(self:GetTooltipSetting("Precision"))
 	self.sliderMinimapButtonSize:SetValue(self:GetTooltipSetting("MinimapSize"))
-	if self:GetTooltipSetting("MinimapButton") then
-		if not app.Minimap then app.Minimap = app.CreateMinimapButton() end
-		app.Minimap:Show()
-	elseif app.Minimap then
-		app.Minimap:Hide()
-	end
+	app.SetMinimapButtonSettings(
+		self:GetTooltipSetting("MinimapButton"),
+		self:GetTooltipSetting("MinimapSize"));
 	self:UpdateMode()
 
 	if self:GetTooltipSetting("Auto:MainList") then
@@ -483,25 +479,6 @@ settings.SetWindowFromProfile = function(suffix)
 		end
 		settings.ApplyWindowColors(window)
 	end
-end
-settings.CheckSeasonalDate = function(self, eventID, startMonth, startDay, endMonth, endDay)
-	local today = date("*t")
-	local now, start, ends = time({day=today.day,month=today.month,year=today.year,hour=0,min=0,sec=0})
-	if startMonth <= endMonth then
-		start = time({day=startDay,month=startMonth,year=today.year,hour=0,min=0,sec=0})
-		ends = time({day=endDay,month=endMonth,year=today.year,hour=0,min=0,sec=0})
-	else
-		local year = today.year
-		if today.month < startMonth then year = year - 1 end
-		start = time({day=startDay,month=startMonth,year=year,hour=0,min=0,sec=0})
-		ends = time({day=endDay,month=endMonth,year=year + 1,hour=0,min=0,sec=0})
-	end
-
-	local active = (now >= start and now <= ends)
-	app.ActiveEvents[eventID] = active
-
-	-- TODO: If AllTheThings is ever going to support OG Classic in this addon, this statement is untrue currently.
-	app.PrintDebug("CheckSeasonalDate: This should no longer be called")
 end
 settings.Get = function(self, setting, container)
 	return RawSettings.General[setting]
@@ -1772,7 +1749,7 @@ checkboxSources:AlignAfter(checkboxTransmog)
 
 local checkboxMainOnlyMode = child:CreateCheckBox(L["I_ONLY_CARE_ABOUT_MY_MAIN"],
 function(self)
-	local className, classFilename = UnitClass("player")
+	local _, classFilename = UnitClass("player")
 	local rPerc, gPerc, bPerc = GetClassColor(classFilename)
 	self.Text:SetTextColor(rPerc, gPerc, bPerc, 1)
 	self:SetChecked(settings:Get("MainOnly"))
@@ -1937,7 +1914,6 @@ child:CreateTrackingCheckbox("RUNEFORGELEGENDARIES", "RuneforgeLegendaries")
 local accwideCheckboxDrakewatcherManuscripts =
 child:CreateForcedAccountWideCheckbox()
 	:AlignBelow(accwideCheckboxRunecarvingPowers)
-local checkboxDrakewatcherManuscripts =
 child:CreateTrackingCheckbox("DRAKEWATCHERMANUSCRIPTS", "DrakewatcherManuscripts")
 	:AlignAfter(accwideCheckboxDrakewatcherManuscripts)
 
@@ -2355,7 +2331,7 @@ textWeaponsAndArmorExplain.OnRefresh = function(self)
 end
 
 -- Stuff to automatically generate the armor & weapon checkboxes
-local last, xoffset, yoffset = headerWeaponsAndArmor, 0, -4
+local last = headerWeaponsAndArmor
 local itemFilterNames = L["FILTER_ID_TYPES"]
 local ItemFilterOnClick = function(self)
 	settings:SetFilter(self.filterID, self:GetChecked())
@@ -3911,36 +3887,15 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("MinimapButton", self:GetChecked())
-	if self:GetChecked() then
-		if not app.Minimap then app.Minimap = app.CreateMinimapButton() end
-		app.Minimap:Show()
-	elseif app.Minimap then
-		app.Minimap:Hide()
-	end
+	app.SetMinimapButtonSettings(
+		settings:GetTooltipSetting("MinimapButton"),
+		settings:GetTooltipSetting("MinimapSize"));
 end)
 checkboxShowMinimapButton:SetATTTooltip(L["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"])
 checkboxShowMinimapButton:SetPoint("TOPLEFT", headerMinimapButton, "BOTTOMLEFT", -2, 0)
 
-local checkboxMinimapButtonStyle = child:CreateCheckBox(L["MINIMAP_BUTTON_STYLE_CHECKBOX"],
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("MinimapStyle"))
-	if not settings:GetTooltipSetting("MinimapButton") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("MinimapStyle", self:GetChecked())
-	if app.Minimap then app.Minimap:UpdateStyle() end
-end)
-checkboxMinimapButtonStyle:SetATTTooltip(L["MINIMAP_BUTTON_STYLE_CHECKBOX_TOOLTIP"])
-checkboxMinimapButtonStyle:AlignBelow(checkboxShowMinimapButton, 1)
-
 local sliderMinimapButtonSize = CreateFrame("Slider", "ATTsliderMinimapButtonSize", child, "OptionsSliderTemplate")
-sliderMinimapButtonSize:SetPoint("TOPLEFT", checkboxMinimapButtonStyle, "BOTTOMLEFT", 5, -12)
+sliderMinimapButtonSize:SetPoint("TOPLEFT", checkboxShowMinimapButton, "BOTTOMLEFT", 5, -12)
 table.insert(settings.Objects, sliderMinimapButtonSize)
 settings.sliderMinimapButtonSize = sliderMinimapButtonSize
 sliderMinimapButtonSize.tooltipText = L["MINIMAP_SLIDER_TOOLTIP"]
@@ -3963,10 +3918,12 @@ sliderMinimapButtonSize:SetScript("OnValueChanged", function(self, newValue)
 		return 1
 	end
 	settings:SetTooltipSetting("MinimapSize", newValue)
-	if app.Minimap then app.Minimap:SetSize(newValue, newValue) end
+	app.SetMinimapButtonSettings(
+		settings:GetTooltipSetting("MinimapButton"),
+		settings:GetTooltipSetting("MinimapSize"));
 end)
 sliderMinimapButtonSize.OnRefresh = function(self)
-	if not settings:GetTooltipSetting("MinimapButton") or settings:GetTooltipSetting("MinimapStyle") then
+	if not settings:GetTooltipSetting("MinimapButton") then
 		self:Disable()
 		self:SetAlpha(0.4)
 	else

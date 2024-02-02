@@ -301,6 +301,12 @@ root(ROOTS.ExpansionFeatures, tier(LEGION_TIER, bubbleDown({ ["timeline"] = { "a
 							["sourceQuest"] = 42452,	-- Finding Ebonchill
 							["provider"] = { "n", 102700 },	-- Meryl Felstorm
 							["coord"] = { 59.1, 43.0, HALL_OF_THE_GUARDIAN_2ND_FLOOR },
+							["g"] = {
+								i(173699, {	-- Blasted Lands Scroll (QI!)
+									["timeline"] = { ADDED_9_0_1 },
+								}),
+								i(141330),	-- Demon Stone (QI!)
+							},
 						}),
 						q(42479, {	-- The Mage Hunter
 							["sourceQuests"] = {

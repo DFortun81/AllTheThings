@@ -50,7 +50,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, applyclassicphase(WRATH_PHASE_ONE, {
 						2089,	-- 1000 Stone Keeper's Shards
 						-- #endif
 					}},
-					["timeline"] = { "added 3.0.1", "deleted 4.3.0" },
+					["timeline"] = { "added 3.0.1", "removed 4.3.0" },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(1717, {	-- Wintergrasp Victory

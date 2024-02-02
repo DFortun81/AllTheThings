@@ -580,11 +580,9 @@ root(ROOTS.Craftables, tier(CLASSIC_TIER, {
 			applyclassicphase(TBC_PHASE_ONE, i(33924)),	-- Delicious Chocolate Cake
 			i(5478),	-- Dig Rat Stew
 			i(2687),	-- Dry Pork Ribs
-			-- #if AFTER LEGION
-			applyclassicphase(LEGION_PHASE_ONE, i(184690)),	-- Extra Fancy Darkmoon Feast
-			applyclassicphase(LEGION_PHASE_ONE, i(184682)),	-- Extra Lemony Herb Filet
-			applyclassicphase(LEGION_PHASE_ONE, i(184624)),	-- Extra Sugary Fish Feast
-			-- #endif
+			i(184690, {["timeline"] = {ADDED_9_0_2_LAUNCH}}),	-- Extra Fancy Darkmoon Feast
+			i(184682, {["timeline"] = {ADDED_9_0_2_LAUNCH}}),	-- Extra Lemony Herb Filet
+			i(184624, {["timeline"] = {ADDED_9_0_2_LAUNCH}}),	-- Extra Sugary Fish Feast
 			-- #if AFTER WOD
 			applyclassicphase(WOD_PHASE_ONE, i(126935)),	-- Fancy Darkmoon Feast
 			-- #endif

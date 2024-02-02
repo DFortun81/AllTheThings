@@ -76,8 +76,9 @@ PANDARIA_CUP_HEADER = createHeader({
 -- These actually don't require any DF content
 local dragonridingrace = function(id, data)
 	local t = dragonridingrace(id, data);
-	t.sourceQuests = nil
+	t.sourceQuests = nil;
 	t.sourceQuestNumRequired = nil;
+	t.repeatable = true;
 	return t;
 end
 local RIDERS_OF_AZEROTH_BADGE = 2588;
@@ -970,7 +971,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 			}),
-			-- Todo: Add Shared Data: Repeatable for all the quests
 			n(QUESTS, {
 				q(76429, {	-- The Kalimdor Cup Begins
 					["provider"] = { "n", 199261 },	-- Holiday Enthusiast
@@ -1418,7 +1418,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					},
 				}),
 			}),
-			n(QUESTS, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
+			n(QUESTS, bubbleDown({ ["timeline"] = { CREATED_10_2_5 }, }, {	-- Timeline me when the time is right
 				dragonridingrace(76061, {	-- Ahn'Qiraj Circuit - Challenge
 					["provider"] = { "n", 204092 },	-- Bronze Timekeeper
 					["coord"] = { 39.6, 84.2, SILITHUS },
@@ -1951,6 +1951,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					}},
 					["g"] = {
 						title(521),	-- Outland Racer <Name>
+						i(211928),	-- Ruby Riders of Azeroth Tabard
 					},
 				}),
 			}),
@@ -2340,28 +2341,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 5 } },
 						}),
 						i(211885, {	-- Outlandish Drake Racer's Belt
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(211887, {	-- Outlandish Drake Racer's Boots
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(211884, {	-- Outlandish Drake Racer's Handwraps
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(211881, {	-- Outlandish Drake Racer's Helmet
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(211883, {	-- Outlandish Drake Racer's Jersey
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(211886, {	-- Outlandish Drake Racer's Leggings
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 						i(211888, {	-- Outlandish  Drake Racer's Scarf
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 5 } },
 						}),
 						i(211882, {	-- Outlandish Drake Racer's Shoulderpads
-							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 20 } },
+							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
 
 						i(197017, {	-- Cliffside Wylderdrake: Large Tail Spikes (DM!)
@@ -2370,7 +2371,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						i(197113, {	-- Highland Drake: Swept Spiked Head (DM!)
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
 						}),
-						i(212518, {	-- Manuscript of Endless Possibility (DM!)
+						i(212518, {	-- Vial of Endless Daconic Scales (TOY!)
 							["cost"] = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
 						}),
 						i(197366, {	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
@@ -2383,7 +2384,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				})),
 			}),
 		}))),
-		applyevent(EVENTS.NORTHREND_CUP, n(NORTHREND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5, ADDED_10_2_6 } }, {					-- Northrend Cup
+		applyevent(EVENTS.NORTHREND_CUP, n(NORTHREND_CUP_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {					-- Northrend Cup
 			n(ACHIEVEMENTS, {
 				ach(19674, {	-- Northrend: Bronze
 					-- Meta Achievement
@@ -2392,10 +2393,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						19627,	-- Citadel Sortie: Bronze
 						19665,	-- Coldarra Climb: Bronze
 						19609,	-- Crystalsong Crisis: Bronze
+						19277,	-- Daggercap Dart: Bronze
 						19618,	-- Dragonblight Dragon Flight: Bronze
 						19647,	-- Geothermal Jaunt: Bronze
 						19656,	-- Gundrak Fast Track: Bronze
 						19600,	-- Makers Marathon: Bronze
+						19199, -- Scalawag Slither: Bronze
 						19636,	-- Sholazar Spree: Bronze
 						19591,	-- Zul'Drak Zephyr: Bronze
 					}},
@@ -2407,10 +2410,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						19628,	-- Citadel Sortie: Silver
 						19666,	-- Coldarra Climb: Silver
 						19610,	-- Crystalsong Crisis: Silver
+						19278,	-- Daggercap Dart: Silver
 						19619,	-- Dragonblight Dragon Flight: Silver
 						19648,	-- Geothermal Jaunt: Silver
 						19657,	-- Gundrak Fast Track: Silver
 						19601,	-- Makers Marathon: Silver
+						19200,	-- Scalawag Slither: Silver
 						19637,	-- Sholazar Spree: Silver
 						19592,	-- Zul'Drak Zephyr: Silver
 					}},
@@ -2422,10 +2427,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						19629,	-- Citadel Sortie: Gold
 						19667,	-- Coldarra Climb: Gold
 						19611,	-- Crystalsong Crisis: Gold
+						19279,	-- Daggercap Dart: Gold
 						19620,	-- Dragonblight Dragon Flight: Gold
 						19649,	-- Geothermal Jaunt: Gold
 						19658,	-- Gundrak Fast Track: Gold
 						19602,	-- Makers Marathon: Gold
+						19201,	-- Scalawag Slither: Gold
 						19638,	-- Sholazar Spree: Gold
 						19593,	-- Zul'Drak Zephyr: Gold
 					}},
@@ -2437,10 +2444,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						19630,	-- Citadel Sortie Advanced: Bronze
 						19668,	-- Coldarra Climb Advanced: Bronze
 						19612,	-- Crystalsong Crisis Advanced: Bronze
+						19280,	-- Daggercap Dart Advanced: Bronze
 						19621,	-- Dragonblight Dragon Flight Advanced: Bronze
 						19650,	-- Geothermal Jaunt Advanced: Bronze
 						19659,	-- Gundrak Fast Track Advanced: Bronze
 						19603,	-- Makers Marathon Advanced: Bronze
+						19202,	-- Scalawag Slither Advanced: Bronze
 						19639,	-- Sholazar Spree Advanced: Bronze
 						19594,	-- Zul'Drak Zephyr Advanced: Bronze
 					}},
@@ -2452,10 +2461,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						19631,	-- Citadel Sortie Advanced: Silver
 						19669,	-- Coldarra Climb Advanced: Silver
 						19613,	-- Crystalsong Crisis Advanced: Silver
+						19281,	-- Daggercap Dart Advanced: Silver
 						19622,	-- Dragonblight Dragon Flight Advanced: Silver
 						19651,	-- Geothermal Jaunt Advanced: Silver
 						19660,	-- Gundrak Fast Track Advanced: Silver
 						19604,	-- Makers Marathon Advanced: Silver
+						19203,	-- Scalawag Slither Advanced: Silver
 						19640,	-- Sholazar Spree Advanced: Silver
 						19595,	-- Zul'Drak Zephyr Advanced: Silver
 					}},
@@ -2467,10 +2478,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						19632,	-- Citadel Sortie Advanced: Gold
 						19670,	-- Coldarra Climb Advanced: Gold
 						19614,	-- Crystalsong Crisis Advanced: Gold
+						19282,	-- Daggercap Dart Advanced: Gold
 						19623,	-- Dragonblight Dragon Flight Advanced: Gold
 						19652,	-- Geothermal Jaunt Advanced: Gold
 						19661,	-- Gundrak Fast Track Advanced: Gold
 						19605,	-- Makers Marathon Advanced: Gold
+						19204,	-- Scalawag Slither Advanced: Gold
 						19641,	-- Sholazar Spree Advanced: Gold
 						19596,	-- Zul'Drak Zephyr Advanced: Gold
 					}},
@@ -2482,10 +2495,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						19633,	-- Citadel Sortie Reverse: Bronze
 						19671,	-- Coldarra Climb Reverse: Bronze
 						19615,	-- Crystalsong Crisis Reverse: Bronze
+						19283,	-- Daggercap Dart Reverse: Bronze
 						19624,	-- Dragonblight Dragon Flight Reverse: Bronze
 						19653,	-- Geothermal Jaunt Reverse: Bronze
 						19662,	-- Gundrak Fast Track Reverse: Bronze
 						19606,	-- Makers Marathon Reverse: Bronze
+						19205,	-- Scalawag Slither Reverse: Bronze
 						19642,	-- Sholazar Spree Reverse: Bronze
 						19597,	-- Zul'Drak Zephyr Reverse: Bronze
 					}},
@@ -2497,10 +2512,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						19634,	-- Citadel Sortie Reverse: Silver
 						19672,	-- Coldarra Climb Reverse: Silver
 						19616,	-- Crystalsong Crisis Reverse: Silver
+						19284,	-- Daggercap Dart Reverse: Silver
 						19625,	-- Dragonblight Dragon Flight Reverse: Silver
 						19654,	-- Geothermal Jaunt Reverse: Silver
 						19663,	-- Gundrak Fast Track Reverse: Silver
 						19607,	-- Makers Marathon Reverse: Silver
+						19206,	-- Scalawag Slither Reverse: Silver
 						19643,	-- Sholazar Spree Reverse: Silver
 						19598,	-- Zul'Drak Zephyr Reverse: Silver
 					}},
@@ -2512,10 +2529,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						19635,	-- Citadel Sortie Reverse: Gold
 						19673,	-- Coldarra Climb Reverse: Gold
 						19617,	-- Crystalsong Crisis Reverse: Gold
+						19285,	-- Daggercap Dart Reverse: Gold
 						19626,	-- Dragonblight Dragon Flight Reverse: Gold
 						19655,	-- Geothermal Jaunt Reverse: Gold
 						19664,	-- Gundrak Fast Track Reverse: Gold
 						19608,	-- Makers Marathon Reverse: Gold
+						19207,	-- Scalawag Slither Reverse: Gold
 						19644,	-- Sholazar Spree Reverse: Gold
 						19599,	-- Zul'Drak Zephyr Reverse: Gold
 					}},
@@ -2681,6 +2700,33 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						ach(19617),	-- Crystalsong Crisis Reverse: Gold
 					},
 				}),
+				dragonridingrace(78325, {	-- Daggercap Dart
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19277),	-- Daggercap Dart: Bronze
+						ach(19278),	-- Daggercap Dart: Silver
+						ach(19279),	-- Daggercap Dart: Gold
+					},
+				}),
+				dragonridingrace(78326, {	-- Daggercap Dart - Advanced
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19280),	-- Daggercap Dart Advanced: Bronze
+						ach(19281),	-- Daggercap Dart Advanced: Silver
+						ach(19282),	-- Daggercap Dart Advanced: Gold
+					},
+				}),
+				dragonridingrace(78327, {	-- Daggercap Dart - Reverse
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19283),	-- Daggercap Dart Reverse: Bronze
+						ach(19284),	-- Daggercap Dart Reverse: Silver
+						ach(19285),	-- Daggercap Dart Reverse: Gold
+					},
+				}),
 				dragonridingrace(78454, {	-- Dragonblight Dragon Flight
 					--["provider"] = { "n",  },	-- Bronze Timekeeper
 					--["coord"] = {  },
@@ -2789,6 +2835,33 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 						ach(19608),	-- Makers Marathon Reverse: Gold
 					},
 				}),
+				dragonridingrace(78301, {	-- Scalawag Slither
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19199),	-- Scalawag Slither: Bronze
+						ach(19200),	-- Scalawag Slither: Silver
+						ach(19201),	-- Scalawag Slither: Gold
+					},
+				}),
+				dragonridingrace(78302, {	-- Scalawag Slither - Advanced
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19202),	-- Scalawag Slither Advanced: Bronze
+						ach(19203),	-- Scalawag Slither Advanced: Silver
+						ach(19204),	-- Scalawag Slither Advanced: Gold
+					},
+				}),
+				dragonridingrace(78303, {	-- Scalawag Slither - Reverse
+					--["provider"] = { "n",  },	-- Bronze Timekeeper
+					--["coord"] = {  },
+					["g"] = {
+						ach(19205),	-- Scalawag Slither Reverse: Bronze
+						ach(19206),	-- Scalawag Slither Reverse: Silver
+						ach(19207),	-- Scalawag Slither Reverse: Gold
+					},
+				}),
 				dragonridingrace(78558, {	-- Sholazar Spree
 					--["provider"] = { "n",  },	-- Bronze Timekeeper
 					--["coord"] = {  },
@@ -2845,12 +2918,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 				}),
 			}),
 			n(VENDORS, {
-				n(206744, {	-- Maztha <Riders of Azeroth>
+				n(206744, bubbleDown({ ["timeline"] = { ADDED_10_2_6 } }, {	-- Maztha <Riders of Azeroth>
 					["coord"] = { 27.2, 47.2, VALDRAKKEN },
 					["g"] = {
-						-- TODO: Add inventory
+						--TODO: Add inventory
 					},
-				}),
+				})),
 			}),
 		}))),
 		n(ACHIEVEMENTS, {
@@ -2864,5 +2937,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 root(ROOTS.HiddenQuestTriggers, {
 	tier(DF_TIER, {
 		q(79142, {["timeline"] = { ADDED_10_2_5 }, }),	-- Triggers with 'Outland Racing Completionist: Gold' (achievementID 19107)
+		q(80201, {["timeline"] = { ADDED_10_2_5 }, }),	-- Triggers with when using 'Endless Possibility'
 	}),
 });

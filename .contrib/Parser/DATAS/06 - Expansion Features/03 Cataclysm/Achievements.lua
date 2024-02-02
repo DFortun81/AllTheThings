@@ -60,16 +60,16 @@ root(ROOTS.ExpansionFeatures, tier(CATA_TIER, {
 			crit(1347, {	-- The Shimmering Deep in Thousand Needles
 				-- ["coord"] = { X, Y, MAP },
 			}),
-			crit(14046, { -- The Greymane Wall in Silverpine
+			crit(14046, {	-- The Greymane Wall in Silverpine
 				-- ["coord"] = { X, Y, MAP },
 			}),
-			crit(14156, { -- The Raging Chasm in Westfall
+			crit(14156, {	-- The Raging Chasm in Westfall
 				-- ["coord"] = { X, Y, MAP },
 			}),
-			crit(1174, { -- The Stonewrought Dam in Loch Modan
+			crit(1174, {	-- The Stonewrought Dam in Loch Modan
 				-- ["coord"] = { X, Y, MAP },
 			}),
-			crit(15114, { -- Ruins of Southshore in Hillsbrad Foothills
+			crit(15114, {	-- Ruins of Southshore in Hillsbrad Foothills
 				-- ["coord"] = { X, Y, MAP },
 			}),
 		}),

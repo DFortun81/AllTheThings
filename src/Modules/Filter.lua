@@ -169,7 +169,8 @@ end);
 -- end);
 
 -- Event
--- Defined in OnLoad due to raw logic captured in Events Module
+-- Filters defined in other Modules... maybe link them dynamically somehow instead
+DefineToggleFilter("Event", AccountFilters, app.Modules.Events.FilterIsEventActive);
 
 -- ItemUnbound
 local SettingsFilterItemUnbound;
@@ -686,9 +687,6 @@ end
 app.AddEventHandler("OnLoad", function()
 	SearchForSourceIDQuickly = app.SearchForSourceIDQuickly
 	FactionID = app.FactionID;
-
-	-- Filters defined in other Modules... maybe link them dynamically somehow instead
-	DefineToggleFilter("Event", AccountFilters, app.Modules.Events.FilterIsEventActive);
 end)
 app.AddEventHandler("OnStartup", function()
 	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true)

@@ -2130,7 +2130,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						objective(1, { -- 0/5 Crawler Mucus
+						objective(1, {	-- 0/5 Crawler Mucus
 							["provider"] = { "i", 4888 }, -- Crawler Mucus
 							["crs"] = {
 								3107,	-- Mature Surf Crawler

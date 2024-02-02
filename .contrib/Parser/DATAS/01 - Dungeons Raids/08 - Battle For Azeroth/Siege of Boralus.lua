@@ -21,23 +21,22 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			n(WORLD_QUESTS, {
+			n(WORLD_QUESTS, sharedData({
+				["isWorldQuest"] = true,
+			},{
 				q(52761, {	-- Siege of Boralus: Blood Money
-					["isWorldQuest"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
 				}),
 				q(52771, {	-- Siege of Boralus: Breaking Irons
-					["isWorldQuest"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
 				}),
 				q(52778, {	-- Siege of Boralus: Crushing the Horde
-					["isWorldQuest"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
 				}),
-			}),
+				q(52775, {	-- Siege of Boralus: What's Yours is Mine
+					["races"] = HORDE_ONLY,
+				}),
+			})),
 			d(HEROIC_DUNGEON, {
 				e(2132, {	-- Chopper Redhook [1st Encounter - Alliance]
 					-- This fight is Alliance-only.  We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.

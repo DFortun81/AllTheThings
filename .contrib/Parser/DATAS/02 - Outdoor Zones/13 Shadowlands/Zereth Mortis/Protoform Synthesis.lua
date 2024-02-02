@@ -126,6 +126,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["g"] = {
 						i(189501),	-- Protoform Tool (QI!)
 						i(189500),	-- Cervid Lattice
+						i(189457),	-- Schematic: Deathrunner (RECIPE!)
 					},
 				}),
 				-- Schematics

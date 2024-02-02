@@ -993,7 +993,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.2.0" } }, 
 				["coord"] = { 61.2, 37.4, MECHAGON },
 				["repeatable"] = true,	-- repeatable when the tower is up to craft filled energy cells
 			}),
-			q(55979, { -- Iteration is Key
+			q(55979, {	-- Iteration is Key
 				["requireSkill"] = ENGINEERING,
 				["provider"] = { "n", 152747 },	-- Christy Punchcog
 				["coord"] = { 69.7, 32.3, MECHAGON },

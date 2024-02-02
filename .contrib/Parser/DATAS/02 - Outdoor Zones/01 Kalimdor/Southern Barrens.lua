@@ -1896,7 +1896,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #if BEFORE 4.0.3
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 11.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 11.09.2023
 						}),
 					},
 				}),
@@ -1916,7 +1916,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(1539, {	-- Gnarled Hermit's Staff
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -1949,7 +1949,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #else
 							["description"] = "The mob dropping this item is friendly to the alliance.",
 							-- #endif
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 						}),
 					},
 				}),
@@ -2063,7 +2063,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(5092, {	-- Charred Razormane Wand
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 3458,	-- Razormane Seer
 					["coords"] = {
@@ -2089,7 +2089,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 3444,	-- Dig Rat
 				}),
 				i(5093, {	-- Razormane Backstabber
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						3457,	-- Razormane Stalker
@@ -2109,7 +2109,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				i(5094, {	-- Razormane War Shield
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 07.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 07.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 3459,	-- Razormane Warfrenzy
 					["coords"] = {

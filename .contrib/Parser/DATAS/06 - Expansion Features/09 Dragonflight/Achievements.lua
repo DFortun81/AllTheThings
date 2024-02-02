@@ -353,7 +353,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 			}},
 			["g"] = {
 				i(205878, {	-- Obsidian Aspectral Earthstone
-					d(LFR_RAID, bubbleDown({ ["bonusID"] = 6896 }, {
+					d(LFR_RAID, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 						cl(DEATHKNIGHT, {
 							i(202461),	-- Lingering Phantom's Dreadhorns
 							i(202459),	-- Lingering Phantom's Shoulderplates
@@ -406,7 +406,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(202443),	-- Thraexhelm of the Onyx Crucible
 						}),
 					})),
-					d(NORMAL_RAID, bubbleDown({ ["bonusID"] = 6894 }, {
+					d(NORMAL_RAID, bubbleDown({ ["bonusID"] = 6895, ["modID"] = 0, }, {
 						cl(DEATHKNIGHT, {
 							i(202461),	-- Lingering Phantom's Dreadhorns
 							i(202459),	-- Lingering Phantom's Shoulderplates
@@ -459,7 +459,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(202443),	-- Thraexhelm of the Onyx Crucible
 						}),
 					})),
-					d(HEROIC_RAID, bubbleDown({ ["bonusID"] = 6897 }, {
+					d(HEROIC_RAID, bubbleDown({ ["bonusID"] = 6896, ["modID"] = 0, }, {
 						cl(DEATHKNIGHT, {
 							i(202461),	-- Lingering Phantom's Dreadhorns
 							i(202459),	-- Lingering Phantom's Shoulderplates
@@ -512,7 +512,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 							i(202443),	-- Thraexhelm of the Onyx Crucible
 						}),
 					})),
-					d(MYTHIC_RAID, bubbleDown({ ["bonusID"] = 6895 }, {
+					d(MYTHIC_RAID, bubbleDown({ ["bonusID"] = 6897, ["modID"] = 0, }, {
 						cl(DEATHKNIGHT, {
 							i(202461),	-- Lingering Phantom's Dreadhorns
 							i(202459),	-- Lingering Phantom's Shoulderplates

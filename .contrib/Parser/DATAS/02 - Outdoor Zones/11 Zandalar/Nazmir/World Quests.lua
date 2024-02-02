@@ -106,10 +106,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			q(50545, {	-- Forked Lightning (H)
 				["races"] = HORDE_ONLY,
 			}),
-			a(q(51127, { -- Getting Out of Hand (A)
+			a(q(51127, {	-- Getting Out of Hand (A)
 				ach(13023),	-- It's Really Getting Out of Hand
 			})),
-			h(q(50559, { -- Getting Out of Hand (H)
+			h(q(50559, {	-- Getting Out of Hand (H)
 				ach(13023),	-- It's Really Getting Out of Hand
 			})),
 			q(53322, {	-- Gleaming Storm Silver

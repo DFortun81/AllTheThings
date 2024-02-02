@@ -42,7 +42,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_3_0 },
 				},
 			}),
 			n(ZONE_DROPS, sharedData({ ["modID"] = 2, }, {
-				i(76160, {	-- Drapes of the Dragonshrine				
+				i(76160, {	-- Drapes of the Dragonshrine
 					["crs"] = {
 						55559,	-- Crystalline Elemental
 						54555,	-- Frozen Servitor
@@ -91,7 +91,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_3_0 },
 				e(342, {	-- Asira Dawnslayer
 					["crs"] = { 54968 },	-- Asira Dawnslayer
 					["groups"] = {
-						i(157616, { -- Chestguard of Futility
+						i(157616, {	-- Chestguard of Futility
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(76151), -- Cloak of Subtle Light

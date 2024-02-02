@@ -282,7 +282,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 				i(1727),	-- Sword of Decay
 				i(776),		-- Vendetta
 				i(3569, {	-- Vicar's Robe
-					["timeline"] = { "removed 6.0.2", "added 10.1.7" },
+					["timeline"] = { "removed 6.0.2", ADDED_10_1_7 },
 					-- #if BEFORE 6.0.2
 					["cr"] = 4517,	-- Death's Head Priest
 					-- #endif
@@ -339,7 +339,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 					}),
 					i(6681),	-- Thornspike
 					i(6689, {	-- Wind Spirit Staff
-						["timeline"] = { "added 10.1.7" },
+						["timeline"] = { ADDED_10_1_7 },
 					}),
 				},
 			}),
@@ -383,7 +383,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, {
 						["timeline"] = { "added 7.3.0.24484" },
 					}),
 					i(6688, {	-- Whisperwind Headdress
-						["timeline"] = { "added 10.1.7" },
+						["timeline"] = { ADDED_10_1_7 },
 					}),
 				},
 			}),

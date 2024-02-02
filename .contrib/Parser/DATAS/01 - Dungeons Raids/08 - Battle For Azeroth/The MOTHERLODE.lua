@@ -271,7 +271,6 @@ root(ROOTS.Instances, tier(BFA_TIER, {
 							ach(12846),	-- Mythic: The MOTHERELODE!!
 							ach(13006),	-- Mythic: The MOTHERLODE!! Guild Run
 							ach(12854),	-- Ready for Raiding VI
-							i(162520),	-- Recipe: Mystical Cauldron (Rank 2)
 							i(161135, {	-- Schematic: MechaMogul Mk2
 								["spellID"] = 274621,
 							}),

@@ -1,10 +1,18 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	m(BORALUS, {
 		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(132228, {	-- Elric Whalgrene <Alchemy Trainer>
+					["coord"] = { 74.2, 6.6, BORALUS },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = appendGroups(BFA_ALCHEMY, {
+						r(264255),	-- Kul Tiran Alchemy
+					}),
+				}),
+			}),
 			prof(BLACKSMITHING, {
 				n(133536, {	-- Grix "Ironfists" Barlow <Blacksmithing Trainer>
 					["coord"] = { 73.6, 8.6, BORALUS },

@@ -62,6 +62,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57816 },	-- Dreamweaver
 					["provider"] = { "n", 169116 },	-- Dreamweaver
 					["coord"] = { 64.2, 41.2, ARDENWEALD },
+					["g"] = {
+						i(179389),	-- Animacone (QI!)
+					},
 				}),
 				q(60575, {	-- Belly Full of Fae
 					["sourceQuests"] = {
@@ -84,6 +87,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 					["provider"] = { "n", 169202 },	-- Dreamweaver
 					["coord"] = { 61.4, 40.9, ARDENWEALD },
+					["g"] = {
+						i(179922),	-- Animacone (QI!)
+					},
 				}),
 				q(60594, {	-- One Special Spirit
 					["sourceQuests"] = {
@@ -169,6 +175,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						{ "n", 169868 },	-- Niya	(post-pickup)
 					},
 					["coord"] = { 68.4, 24.5, ARDENWEALD },
+					["g"] = {
+						i(180172),	-- Animacone (QI!)
+					},
 				}),
 				q(60648, {	-- Survivors of Heartwood Grove
 					["sourceQuests"] = {
@@ -679,6 +688,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "o", 349515 },	-- Battered Journal
 					["coord"] = { 72.2, 33.9, ARDENWEALD },
 					["g"] = {
+						i(173798),	-- Battered Journal (QI!)
+						i(173873),	-- Crumpled Journal Page (QI!)
+						i(155876),	-- Stained Journal Page (QI!)
+						i(173872),	-- Torn Journal Page (QI!)
 						i(183851),	-- Withergrove Shardling
 					},
 				}),
@@ -710,6 +723,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 59802 },	-- The Crumbling Village
 					["provider"] = { "n", 160439 },	-- Partik
 					["coord"] = { 74.3, 32.3, ARDENWEALD },
+					["g"] = {
+						i(177878),	-- Animacone (QI!)
+					},
 				}),
 				q(58166, {	-- Unknown Assailants
 					["sourceQuests"] = {
@@ -858,6 +874,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 165382 },	-- Gormsmith Cavina
 				["coord"] = { 51.5, 34.0, ARDENWEALD },
 				["g"] = {
+					i(176760),	-- Buzzkill's Stinger (QI!)
 					i(180474),	-- Culexwood Dagger
 					i(178022),	-- Culexwood Knife
 					i(178021),	-- Culexwood Longbow
@@ -909,9 +926,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(62774, {	-- Tranquil Pools [Pre-60]
 					["coord"] = { 63.3, 39.3, ARDENWEALD },
 					["g"] = {
+						i(172948),	-- Animacone (QI!)
 						i(181420),	-- Faemoss Amice
-						i(181418),	-- Runetender Shoulderguards
 						i(181421),	-- Gormhusk Mantle
+						i(181418),	-- Runetender Shoulderguards
 						i(181419),	-- Sapsteel Pauldrons
 					},
 				}),

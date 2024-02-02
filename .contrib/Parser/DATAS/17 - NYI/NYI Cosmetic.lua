@@ -289,14 +289,12 @@ root(ROOTS.NeverImplemented, {
 					i(210855),	-- Trader's Lively Sarong
 					i(210848),	-- Trader's Midnight Sarong
 					i(210859),	-- Trader's Plum Sarong
-					i(210858),	-- Trader's Rosy Sarong
 					i(210850),	-- Trader's Sepia Sarong
 					i(210862),	-- Trader's Snowy Sarong
 					i(210863),	-- Trader's Sunny Sarong
 					i(210860),	-- Trader's Violet Sarong
 
 					------ Stones ------
-					i(210865),	-- Blademaster's Crimson Stones
 					i(210867),	-- Blademaster's Lively Stones
 					i(210868),	-- Blademaster's Violet Stones
 

@@ -841,7 +841,7 @@ root(ROOTS.Instances, tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 							"added 1.13.0.28211",
 							"removed 2.0.1",	-- Classic WoWHead shows 0 new drops in WotLK since Classic. (902 recorded drops in both versions, which goes to show that this item no longer exists on the drop table)
 							--"removed 4.2.2.28211",
-							"added 10.1.7",
+							ADDED_10_1_7,
 						},
 					}),
 					i(21483),	-- Ring of the Desert Winds

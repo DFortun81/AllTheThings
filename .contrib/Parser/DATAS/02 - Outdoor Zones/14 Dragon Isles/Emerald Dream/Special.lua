@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				o(412995, {	-- Small Box of Vials
 					["coord"] = { 54.9, 25.4, EMERALD_DREAM },
 					["g"] = {
-						i(210991, { -- Small Box of Vials
+						i(210991, {	-- Small Box of Vials
 							i(210840),	-- Empty Vial "B"
 							i(210839),	-- Empty Vial "D"
 							i(210836),	-- Empty Vial "E"

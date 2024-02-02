@@ -9,29 +9,29 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(481, {	-- Ahn'kahet: The Old Kingdom
-					crit(5439, { -- Prince Taldaram
+					crit(5439, {	-- Prince Taldaram
 						["_encounter"] = { 581, NORMAL_DUNGEON },
 					}),
-					crit(5440, { -- Elder Nadox
+					crit(5440, {	-- Elder Nadox
 						["_encounter"] = { 580, NORMAL_DUNGEON },
 					}),
-					crit(5441, { -- Jedoga Shadowseeker
+					crit(5441, {	-- Jedoga Shadowseeker
 						["_encounter"] = { 582, NORMAL_DUNGEON },
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
-					crit(5624, { -- Herald Volazj
+					crit(5624, {	-- Herald Volazj
 						["_encounter"] = { 584, NORMAL_DUNGEON },
 					}),
 					-- #else
-					crit(5442, { -- Herald Volazj
+					crit(5442, {	-- Herald Volazj
 						["_encounter"] = { 584, NORMAL_DUNGEON },
 					}),
 					-- #endif
 				}),
 				-- #if ANYCLASSIC
 				applyclassicphase(WRATH_PHASE_TWO, ach(17291, {	-- Defense Protocol Alpha: Ahn'kahet: The Old Kingdom
-					crit(57731, { -- Elder Nadox
+					crit(57731, {	-- Elder Nadox
 						["_encounter"] = { 580, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39249),	-- Shoulderplates of Bloodshed
@@ -39,7 +39,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39263),	-- Dissevered Leggings
 						},
 					}),
-					crit(57733, { -- Prince Taldaram
+					crit(57733, {	-- Prince Taldaram
 						["_encounter"] = { 581, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39260),	-- Helm of the Corrupted Mind
@@ -47,7 +47,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39251),	-- Necrogenic Belt
 						},
 					}),
-					crit(57734, { -- Amanitar
+					crit(57734, {	-- Amanitar
 						["_encounter"] = { 583, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39247),	-- Cuffs of Dark Shadows
@@ -55,7 +55,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39251),	-- Necrogenic Belt
 						},
 					}),
-					crit(57732, { -- Jedoga Shadowseeker
+					crit(57732, {	-- Jedoga Shadowseeker
 						["_encounter"] = { 582, HEROIC_DUNGEON },
 						["groups"] = {
 							i(39246),	-- Amulet of Autopsy
@@ -63,7 +63,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 							i(39258),	-- Legplates of Inescapable Death
 						},
 					}),
-					crit(57730, { -- Herald Volazj
+					crit(57730, {	-- Herald Volazj
 						["_encounter"] = { 584, HEROIC_DUNGEON },
 						["groups"] = {
 							i(43998),	-- Chestguard of Flagrant Prowess
@@ -82,32 +82,32 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, ach(18593, {	-- Defense Protocol Beta: Ahn'kahet: The Old Kingdom
-					crit(60583, { -- Elder Nadox
+					crit(60583, {	-- Elder Nadox
 						["_encounter"] = { 580, HEROIC_DUNGEON },
 						["groups"] = {
 							i(45314),	-- Igniter Rod
 						},
 					}),
-					crit(60586, { -- Prince Taldaram
+					crit(60586, {	-- Prince Taldaram
 						["_encounter"] = { 581, HEROIC_DUNGEON },
 						["groups"] = {
 							i(45321),	-- Pauldrons of Tempered Will
 							i(46019),	-- Leggings of the Insatiable
 						},
 					}),
-					crit(60585, { -- Amanitar
+					crit(60585, {	-- Amanitar
 						["_encounter"] = { 583, HEROIC_DUNGEON },
 						["groups"] = {
 
 						},
 					}),
-					crit(60584, { -- Jedoga Shadowseeker
+					crit(60584, {	-- Jedoga Shadowseeker
 						["_encounter"] = { 582, HEROIC_DUNGEON },
 						["groups"] = {
 							i(45702),	-- Emerald Signet Ring
 						},
 					}),
-					crit(60582, { -- Herald Volazj
+					crit(60582, {	-- Herald Volazj
 						["_encounter"] = { 584, HEROIC_DUNGEON },
 						["groups"] = {
 							currency(SIDEREAL_ESSENCE),
@@ -117,31 +117,31 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 				})),
 				applyclassicphase(WRATH_PHASE_FOUR, ach(19430, {	-- Defense Protocol Gamma: Ahn'kahet: The Old Kingdom
-					crit(63330, { -- Elder Nadox
+					crit(63330, {	-- Elder Nadox
 						["_encounter"] = { 580, HEROIC_DUNGEON },
 						["groups"] = {
 
 						},
 					}),
-					crit(63332, { -- Prince Taldaram
+					crit(63332, {	-- Prince Taldaram
 						["_encounter"] = { 581, HEROIC_DUNGEON },
 						["groups"] = {
 
 						},
 					}),
-					crit(63333, { -- Amanitar
+					crit(63333, {	-- Amanitar
 						["_encounter"] = { 583, HEROIC_DUNGEON },
 						["groups"] = {
 
 						},
 					}),
-					crit(63331, { -- Jedoga Shadowseeker
+					crit(63331, {	-- Jedoga Shadowseeker
 						["_encounter"] = { 582, HEROIC_DUNGEON },
 						["groups"] = {
 
 						},
 					}),
-					crit(63329, { -- Herald Volazj
+					crit(63329, {	-- Herald Volazj
 						["_encounter"] = { 584, HEROIC_DUNGEON },
 						["groups"] = {
 
@@ -150,19 +150,19 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 				})),
 				-- #endif
 				ach(492, {	-- Heroic: Ahn'kahet: The Old Kingdom
-					crit(6851, { -- Prince Taldaram
+					crit(6851, {	-- Prince Taldaram
 						["_encounter"] = { 581, HEROIC_DUNGEON },
 					}),
-					crit(6852, { -- Elder Nadox
+					crit(6852, {	-- Elder Nadox
 						["_encounter"] = { 580, HEROIC_DUNGEON },
 					}),
-					crit(6853, { -- Jedoga Shadowseeker
+					crit(6853, {	-- Jedoga Shadowseeker
 						["_encounter"] = { 582, HEROIC_DUNGEON },
 					}),
-					crit(5611, { -- Herald Volazj
+					crit(5611, {	-- Herald Volazj
 						["_encounter"] = { 584, HEROIC_DUNGEON },
 					}),
-					crit(5054, { -- Amanitar
+					crit(5054, {	-- Amanitar
 						["_encounter"] = { 583, HEROIC_DUNGEON },
 					}),
 				}),

@@ -12,7 +12,7 @@ DIVERGENT = createHeader({
 	},
 });
 local QUANTUM_GROUP = sharedData({
-	["description"] = "This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed, but not revamped)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions \nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight Items\nCrafted Items\nQuest Rewards\nRevamped Dungeons\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",
+	["description"] = "This Item turns into one (1) unlearned Item based on ItemID/SourceID from before Dragonflight (10.0).\nOnly items with no alternative source will be attached to the Quantum Tokens.\n\n|cFF1EFF0CPossible Items: The Quantum token will transform into an item from one of these sources:\nAny available Raid\nAny Dungeon (including removed)\nCrate Items from lowlevel PvP (including removed)\nEvents such as Dungeon Timewalking (including removed Events)\nGarrison Tokens (WoD)\nIsland Expeditions\nNever obtainable Items (if listed in the appearance journal)\nOutdoor Drops&Rewards (including removed)\nSatchel Items from random leveling Dungeons (including removed)\nScenarios (MoP&Torghast)|r\n\n|CFFFF0000Impossible Items: The Quantum Token will not grant you an item from these sources:\nAppearances not listed in the Journal\nChallenge Mode Items\nDragonflight Items\nCrafted Items\nQuest Rewards\nRemoved Raids\nVendor Items\nTier3 Set Items|r\n\n|cFFFF0000If you come across an Item that has been removed from the game or was previously unavailable,\nplease notify us on the ATT Discord.|r",
 },{
 	-- Please use 'ig()' to make sure Mythic ModID isn't attached to all of these sourced items
 	-- Which items you could get between 10.1.5 & 10.1.7 are saved at the bottom of the file as history
@@ -32,6 +32,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(105808),	-- Damien's Ice-Vein Mask			(Ordos)
 		}),
 		filter(LEATHER, {
+			q(77628, {	-- when you learn everything from Quantum Headpiece (Leather)
+				["name"] = "Quantum Headpiece (Leather) completed.",
+				["collectible"] = false,
+			}),
 			ig(114264),	-- Bloodthorn Hood					(NYI)
 			ig(114388),	-- Hood of Falling Leaves			(NYI)
 			ig(147516, {	-- Legion Stalker's Hood		(NYI)
@@ -47,6 +51,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(105803),	-- Stickney's Grey-Shade Hood		(Ordos)
 		}),
 		filter(MAIL, {
+			q(77627, {	-- when you learn everything from Quantum Headpiece (Mail)
+				["name"] = "Quantum Headpiece (Mail) completed.",
+				["collectible"] = false,
+			}),
 			ig(114389),	-- Element-Binder Helm				(NYI)
 			ig(18304),	-- Greenroot Mail					(NYI Unique)
 			ig(114265),	-- Leafscale Helm					(NYI)
@@ -67,6 +75,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(108189),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108197),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108205),	-- Peerless Draenic Steel Helm		(NYI)
+			ig(108213),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(108221),	-- Peerless Draenic Steel Helm		(NYI)
 			ig(114266),	-- Ruby Plate Greathelm				(NYI)
 
@@ -106,6 +115,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(105801),	-- Spaulders of Dominating Dreams	(Ordos)
 		}),
 		filter(MAIL, {
+			q(77639, {	-- when you learn everything from Quantum Shoulders (Mail)
+				["name"] = "Quantum Shoulders (Mail) completed.",
+				["collectible"] = false,
+			}),
 			ig(18320),	-- Demonheart Spaulders				(NYI)
 			ig(114273),	-- Leafscale Spaulders				(NYI)
 			ig(4014),	-- Sterling Chain Shoulderpads		(NYI)
@@ -120,6 +133,9 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		filter(PLATE, {
 			ig(108083),	-- Hardened Draenic Steel Shoulders	(NYI)
+			ig(108167),	-- Peerless Draenic Steel Shoulders	(NYI)
+			ig(108191),	-- Peerless Draenic Steel Shoulders	(NYI)
+			ig(108207),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(108215),	-- Peerless Draenic Steel Shoulders	(NYI)
 			ig(114274),	-- Ruby Plate Shoulderguard			(NYI)
 
@@ -128,7 +144,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(134713),	-- Crushing Pauldrons				(Removed)
 			ig(103785),	-- Tusks of Mannoroth Heroic		(Removed)
 
-			ig(105796),	-- Rossi's Rosin-Soaked Shoulderplates(Ordos)
+			ig(105796),	-- Rossi's Rosin-Soaked Shoulderplates	(Ordos)
 			ig(105794),	-- Starry Spaulders of Durability	(Ordos)
 			ig(105802),	-- Yaungol Deathcult Shoulderguards	(Ordos)
 		}),
@@ -139,6 +155,7 @@ local QUANTUM_GROUP = sharedData({
 			ig(114317),	-- Mantisweave Robes				(NYI)
 			ig(3959),	-- Mesh Armor						(NYI)
 
+			ig(6682),	-- Death Speaker Robes				(Removed)
 			ig(134784),	-- Entrenched Raiment				(Removed)
 			ig(134722),	-- Icyweave Robes					(Removed)
 			ig(14150),	-- Robe of Evocation				(Removed)
@@ -148,6 +165,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(105773),	-- Ulmaas' Robes of Crushing Magma	(Ordos)
 		}),
 		filter(LEATHER, {
+			q(77636, {	-- when you learn everything from Quantum Chestpiece (Leather)
+				["name"] = "Quantum Chestpiece (Leather) completed.",
+				["collectible"] = false,
+			}),
 			ig(114251),	-- Bloodthorn Chestguard 			(NYI)
 			ig(189917),	-- Constellation Master's Smock		(NYI)
 			ig(114314),	-- Shadow-Gorged Chestguard			(NYI)
@@ -162,8 +183,13 @@ local QUANTUM_GROUP = sharedData({
 			ig(105770),	-- Zoo-Per's Superior Chestguard	(Ordos)
 		}),
 		filter(MAIL, {
+			q(77635, {	-- when you learn everything from Quantum Chestpiece (Mail)
+				["name"] = "Quantum Chestpiece (Mail) completed.",
+				["collectible"] = false,
+			}),
 			ig(114315),	-- Chestguard of Meditative Focus	(NYI)
 			ig(114252),	-- Leafscale Chestguard				(NYI)
+			ig(4015),	-- Sterling Chain Armor				(NYI)
 
 			ig(134732),	-- Frigidlink Armor					(Removed)
 			ig(6773),	-- Gelkis Marauder Chain			(Removed)
@@ -218,10 +244,15 @@ local QUANTUM_GROUP = sharedData({
 			ig(114261),	-- Leafscale Gauntlets				(NYI)
 			ig(4012),	-- Sterling Chain Gloves			(NYI)
 
+			ig(51980),	-- Earthbound Handgrips				(Removed)
 			ig(134733),	-- Frigidlink Gauntlets				(Removed)
 			ig(134797),	-- Ironbranded Gauntlets			(Removed)
 		}),
 		filter(PLATE, {
+			q(77630, {	-- when you learn everything from Quantum Gloves (Plate)
+				["name"] = "Quantum Gloves (Plate) completed.",
+				["collectible"] = false,
+			}),
 			ig(114386),	-- Gauntlets of Grievous Storms		(NYI)
 			ig(108080),	-- Hardened Draenic Steel Guantlets	(NYI)
 			ig(108164),	-- Peerless Draenic Steel Guantlets	(NYI)
@@ -260,6 +291,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(105757),	-- Shipley's Shady Silks			(Ordos)
 		}),
 		filter(LEATHER, {
+			q(77624, {	-- when you learn everything from Quantum Legs (Leather)
+				["name"] = "Quantum Legs (Leather) completed.",
+				["collectible"] = false,
+			}),
 			ig(114268),	-- Bloodthorn Legguards 			(NYI)
 			ig(114392),	-- Legguards of Falling Leaves 		(NYI)
 			ig(121513),	-- Runesworn Breeches 				(NYI)
@@ -273,6 +308,10 @@ local QUANTUM_GROUP = sharedData({
 			ig(105760),	-- Hamlet's Wind-Whipped Leggings	(Ordos)
 		}),
 		filter(MAIL, {
+			q(77623, {	-- when you learn everything from Quantum Legs (Mail)
+				["name"] = "Quantum Legs (Mail) completed.",
+				["collectible"] = false,
+			}),
 			ig(114393),	-- Element-Binder Legguards			(NYI)
 			ig(189943),	-- Greaves of Cosmic Designs		(NYI)
 			ig(114269),	-- Leafscale Legguards				(NYI)
@@ -294,9 +333,11 @@ local QUANTUM_GROUP = sharedData({
 			ig(121510),	-- Dreadsworn Legguards				(NYI)
 			ig(108082),	-- Hardened Draenic Steel Legguards	(NYI)
 			ig(114394),	-- Legplates of Grievous Storms		(NYI)
+			ig(108182),	-- Peerless Draenic Steel Legguards	(NYI)
+			ig(108198),	-- Peerless Draenic Steel Legguards	(NYI)
+			ig(108206),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(108214),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(108222),	-- Peerless Draenic Steel Legguards	(NYI)
-			ig(108206),	-- Peerless Draenic Steel Legguards	(NYI)
 			ig(114270),	-- Ruby Plate Legplates				(NYI)
 
 			ig(134768),	-- Concealment Legplates			(Removed)
@@ -308,6 +349,10 @@ local QUANTUM_GROUP = sharedData({
 		}),
 	}),
 	i(208111, {	-- Quantum Axe			(One-Handed)
+		q(77597, {	-- when you learn everything from Quantum Axe (One-Handed)
+			["name"] = "Quantum Axe (One-Handed) completed.",
+			["collectible"] = false,
+		}),
 		ig(134755),	-- Covert Hatchet						(NYI)
 		ig(5255),	-- Quilboar Tomahawk					(NYI)
 		ig(134586),	-- Vanguard Hatchet						(NYI)
@@ -322,6 +367,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(134604),	-- Vanguard Hacker						(Removed)
 	}),
 	i(208117, {	-- Quantum Bow
+		q(77603, {	-- when you learn everything from Quantum Bow
+			["name"] = "Quantum Bow completed.",
+			["collectible"] = false,
+		}),
 		ig(186414, {	-- Rae'shalare, Death's Whisper (LFR)	(NYI)
 			["bonusID"] = 451,
 		}),
@@ -336,6 +385,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(134608),	-- Scorching Longbow					(Removed)
 	}),
 	i(208118, {	-- Quantum Crossbow
+		q(77604, {	-- when you learn everything from Quantum Crossbow
+			["name"] = "Quantum Crossbow completed.",
+			["collectible"] = false,
+		}),
 		ig(134778),	-- Seasoned Crossbow					(Removed)
 		ig(134580),	-- Vanguard Heavy Crossbow				(Removed)
 	}),
@@ -347,12 +400,20 @@ local QUANTUM_GROUP = sharedData({
 		ig(56376),	-- Thundercall							(Removed)
 	}),
 	i(208125, {	-- Quantum Focus
+		q(77609, {	-- when you learn everything from Quantum Focus (Off-hand)
+			["name"] = "Quantum Focus/Off-hand completed.",
+			["collectible"] = false,
+		}),
 		ig(18316),	-- Obsidian Bauble						(NYI)
 
 		ig(134727),	-- Cold-Touched Endgame					(Removed)
 		ig(13371),	-- Father Flame							(Removed)
 	}),
 	i(208113, {	-- Quantum Greataxe		(Two-Handed)
+		q(77599, {	-- when you learn everything from Quantum Greataxe (Two-Handed)
+			["name"] = "Quantum Greataxe (Two-Handed) completed.",
+			["collectible"] = false,
+		}),
 		ig(134717),	-- Cold-Touched Decapitator				(NYI)
 		ig(108046),	-- Draenic Steel War Axe				(NYI)
 		ig(189996),	-- Elegantly Balanced Axe				(NYI)(Unique)
@@ -372,7 +433,11 @@ local QUANTUM_GROUP = sharedData({
 		ig(39769),	-- Arcanite Ripper						(BMAH)(Unique)
 		ig(44924),	-- Sun Lute								(BMAH)(Unique)
 	}),
-	i(208114, {	-- Quantum Greathammer	(Two-Handed)(Mace)
+	i(208114, {	-- Quantum Greathammer	(Two-Handed) (Mace)
+		q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
+			["name"] = "Quantum Greathammer/Mace (Two-Handed) completed.",
+			["collectible"] = false,
+		}),
 	}),
 	i(208112, {	-- Quantum Greatsword	(Two-Handed)
 		ig(134746),	-- Covert Greatsword					(Removed)
@@ -408,11 +473,19 @@ local QUANTUM_GROUP = sharedData({
 		ig(134581),	-- Vanguard Shanker						(Removed)
 	}),
 	i(208121, {	-- Quantum Knuckles
+		q(77607, {	-- when you learn everything from Quantum Knuckles (Fist Weapon)
+			["name"] = "Quantum Fist Weapon completed.",
+			["collectible"] = false,
+		}),
 		ig(134719),	-- Cold-Touched Ripper					(Removed)
 		ig(2942),	-- Iron Knuckles						(Removed)
 		ig(134780),	-- Seasoned Ripper						(Removed)
 	}),
 	i(208110, {	-- Quantum Mace			(One-Handed)
+		q(77596, {	-- when you learn everything from Quantum Mace (One-Handed)
+			["name"] = "Quantum Mace (One-Handed) completed.",
+			["collectible"] = false,
+		}),
 		ig(166405),	-- Blindside							(NYI)
 		ig(108058),	-- Draenic Steel Mace					(NYI)
 		ig(174228),	-- Gavel of the Oasis					(NYI)
@@ -439,6 +512,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(134588),	-- Vanguard Gavel						(Removed)
 	}),
 	i(208116, {	-- Quantum Polearm
+		q(77602, {	-- when you learn everything from Quantum Polearm
+			["name"] = "Quantum Polearm completed.",
+			["collectible"] = false,
+		}),
 		ig(115297),	-- Spectral Polearm 					(NYI)
 
 		ig(6679),	-- Armor Piercer						(Removed)
@@ -465,6 +542,10 @@ local QUANTUM_GROUP = sharedData({
 		ig(134589),	-- Vanguard Reprieve 					(Removed)
 	}),
 	i(208115, {	-- Quantum Staff
+		q(77601, {	-- when you learn everything from Quantum Staff
+			["name"] = "Quantum Staff completed.",
+			["collectible"] = false,
+		}),
 		ig(115298),	-- Spectral Spire 						(NYI)
 
 		ig(134721),	-- Cold-Touched Staff 					(Removed)
@@ -492,6 +573,10 @@ local QUANTUM_GROUP = sharedData({
 	i(208122, {	-- Quantum Warglaives
 	}),
 	i(208123, {	-- Quantum Wand
+		q(77610, {	-- when you learn everything from Quantum Wand
+			["name"] = "Quantum Wand completed.",
+			["collectible"] = false,
+		}),
 		ig(134728),	-- Cold-Touched Wand					(Removed)
 		ig(134590),	--Vanguard Baton of Light				(Removed)
 	}),
@@ -596,6 +681,67 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 					},
 				}),
 			}),
+			n(QUESTS, sharedData({
+				["collectible"] = false,
+			},{
+				q(77628, {	-- when you learn everything from Quantum Headpiece (Leather)
+					["name"] = "Quantum Headpiece (Leather) completed.",
+				}),
+				q(77627, {	-- when you learn everything from Quantum Headpiece (Mail)
+					["name"] = "Quantum Headpiece (Mail) completed.",
+				}),
+				q(77639 , {	-- when you learn everything from Quantum Shoulders (Mail)
+					["name"] = "Quantum Shoulders (Mail) completed.",
+				}),
+				q(77636, {	-- when you learn everything from Quantum Chestpiece (Leather)
+					["name"] = "Quantum Chestpiece (Leather) completed.",
+				}),
+				q(77635, {	-- when you learn everything from Quantum Chestpiece (Mail)
+					["name"] = "Quantum Chestpiece (Mail) completed.",
+				}),
+				q(77630, {	-- when you learn everything from Quantum Gloves (Plate)
+					["name"] = "Quantum Gloves (Plate) completed.",
+				}),
+				q(77624, {	-- when you learn everything from Quantum Legs (Leather)
+					["name"] = "Quantum Legs (Leather) completed.",
+				}),
+				q(77623, {	-- when you learn everything from Quantum Legs (Mail)
+					["name"] = "Quantum Legs (Mail) completed.",
+				}),
+				q(77597, {	-- when you learn everything from Quantum Axe (One-Handed)
+					["name"] = "Quantum Axe (One-Handed) completed.",
+				}),
+				q(77603, {	-- when you learn everything from Quantum Bow
+					["name"] = "Quantum Bow completed.",
+				}),
+				q(77604, {	-- when you learn everything from Quantum Crossbow
+					["name"] = "Quantum Crossbow completed.",
+				}),
+				q(77609, {	-- when you learn everything from Quantum Focus (Off-hand)
+					["name"] = "Quantum Focus/Off-hand completed.",
+				}),
+				q(77599, {	-- when you learn everything from Greataxe (Two-Handed)
+					["name"] = "Quantum Greataxe (Two-Handed) completed.",
+				}),
+				q(77600, {	-- when you learn everything from Quantum Greathammer (Two-Handed) (Mace)
+					["name"] = "Quantum Greathammer/Mace (Two-Handed) completed.",
+				}),
+				q(77607, {	-- when you learn everything from Quantum Knuckles (Fist Weapon)
+					["name"] = "Quantum Knuckles completed.",
+				}),
+				q(77596, {	-- when you learn everything from Quantum Mace (One-Handed)
+					["name"] = "Quantum Mace (One-Handed) completed.",
+				}),
+				q(77602, {	-- when you learn everything from Quantum Polearm
+					["name"] = "Quantum Polearm completed.",
+				}),
+				q(77601, {	-- when you learn everything from Quantum Staff
+					["name"] = "Quantum Staff completed.",
+				}),
+				q(77610, {	-- when you learn everything from Quantum Wand
+					["name"] = "Quantum Wand completed.",
+				}),
+			})),
 			-- #if AFTER 10.1.7
 			d(HeroicPlus, {
 				n(COMMON_BOSS_DROPS, {
@@ -734,29 +880,29 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				n(ACHIEVEMENTS, {
 					ach(18705, {	-- Defender of the Timeways
 						title(514),	-- <Name> of the Infinite
-						crit(60810, { -- Chronikar
+						crit(60810, {	-- Chronikar
 							["_encounter"] = { 2521, MYTHIC_DUNGEON },
 						}),
-						crit(60811, { -- Manifested Timeways
+						crit(60811, {	-- Manifested Timeways
 							["_encounter"] = { 2528, MYTHIC_DUNGEON },
 						}),
-						crit(60812, { -- Blight of Galakrond
+						crit(60812, {	-- Blight of Galakrond
 							["_encounter"] = { 2535, MYTHIC_DUNGEON },
 						}),
-						crit(60813, { -- Iridikron the Stonescaled
+						crit(60813, {	-- Iridikron the Stonescaled
 							["_encounter"] = { 2537, MYTHIC_DUNGEON },
 						}),
-						crit(60814, { -- Tyr, the Infinite Keeper
+						crit(60814, {	-- Tyr, the Infinite Keeper
 							["_encounter"] = { 2526, MYTHIC_DUNGEON },
 						}),
-						crit(60815, { -- Morchie
+						crit(60815, {	-- Morchie
 							["_encounter"] = { 2536, MYTHIC_DUNGEON },
 						}),
-						crit(60816, { -- Time-Lost Battlefield
+						crit(60816, {	-- Time-Lost Battlefield
 							["_encounter"] = { 2533, MYTHIC_DUNGEON },	-- [A]
 							-- ["_encounter"] = { 2534, MYTHIC_DUNGEON },	-- [H]
 						}),
-						crit(60817, { -- Chrono-Lord Deios and the Infinite Dragonflight
+						crit(60817, {	-- Chrono-Lord Deios and the Infinite Dragonflight
 							["_encounter"] = { 2538, MYTHIC_DUNGEON },
 						}),
 					}),
@@ -859,29 +1005,29 @@ root(ROOTS.Instances, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_10_1_5 }
 				n(ACHIEVEMENTS, {
 					ach(18705, {	-- Defender of the Timeways
 						title(514),	-- <Name> of the Infinite
-						crit(60810, { -- Chronikar
+						crit(60810, {	-- Chronikar
 							["_encounter"] = { 2521, MYTHIC_DUNGEON },
 						}),
-						crit(60811, { -- Manifested Timeways
+						crit(60811, {	-- Manifested Timeways
 							["_encounter"] = { 2528, MYTHIC_DUNGEON },
 						}),
-						crit(60812, { -- Blight of Galakrond
+						crit(60812, {	-- Blight of Galakrond
 							["_encounter"] = { 2535, MYTHIC_DUNGEON },
 						}),
-						crit(60813, { -- Iridikron the Stonescaled
+						crit(60813, {	-- Iridikron the Stonescaled
 							["_encounter"] = { 2537, MYTHIC_DUNGEON },
 						}),
-						crit(60814, { -- Tyr, the Infinite Keeper
+						crit(60814, {	-- Tyr, the Infinite Keeper
 							["_encounter"] = { 2526, MYTHIC_DUNGEON },
 						}),
-						crit(60815, { -- Morchie
+						crit(60815, {	-- Morchie
 							["_encounter"] = { 2536, MYTHIC_DUNGEON },
 						}),
-						crit(60816, { -- Time-Lost Battlefield
+						crit(60816, {	-- Time-Lost Battlefield
 							["_encounter"] = { 2533, MYTHIC_DUNGEON },	-- [A]
 							-- ["_encounter"] = { 2534, MYTHIC_DUNGEON },	-- [H]
 						}),
-						crit(60817, { -- Chrono-Lord Deios and the Infinite Dragonflight
+						crit(60817, {	-- Chrono-Lord Deios and the Infinite Dragonflight
 							["_encounter"] = { 2538, MYTHIC_DUNGEON },
 						}),
 					}),
@@ -1094,40 +1240,21 @@ root(ROOTS.HiddenQuestTriggers, {
 
 		-- Quantum Items
 		-- q(77595),	-- when you learn everything from Quantum ?
-		-- q(77596),	-- when you learn everything from Quantum ?
-		q(77597),	-- when you learn everything from Quantum Axe (One-Handed)
 		-- q(77598),	-- when you learn everything from Quantum ?
-		-- q(77599),	-- when you learn everything from Quantum ?
-		q(77600),	-- when you learn everything from Quantum Greathammer (Two-Handed)(Mace)
-		q(77601),	-- when you learn everything from Quantum Staff
-		-- q(77602),	-- when you learn everything from Quantum ?
-		-- q(77603),	-- when you learn everything from Quantum ?
-		q(77604),	-- when you learn everything from Quantum Crossbow
 		-- q(77605),	-- when you learn everything from Quantum ?
 		-- q(77606),	-- when you learn everything from Quantum ?
-		q(77607),	-- when you learn everything from Quantum Knuckles
 		-- q(77608),	-- when you learn everything from Quantum ?
-		q(77609),	-- when you learn everything from Quantum Focus
-		q(77610),	-- when you learn everything from Quantum Wand
 		-- q(77611),	-- when you learn everything from Quantum ?
 		-- q(77622),	-- when you learn everything from Quantum ?
-		q(77623),	-- when you learn everything from Quantum Legs (Mail / Hunter)
-		q(77624),	-- when you learn everything from Quantum Legs (Leather / Druid)
 		-- q(77625),	-- when you learn everything from Quantum ?
 		-- q(77626),	-- when you learn everything from Quantum ?
-		q(77627),	-- when you learn everything from Quantum Headpiece (Mail / Hunter)
-		q(77628),	-- when you learn everything from Quantum Headpiece (Leather / Druid)
 		-- q(77629),	-- when you learn everything from Quantum ?
-		q(77630),	-- when you learn everything from Quantum Gloves (Plate / Warrior)
 		-- q(77631),	-- when you learn everything from Quantum ?
 		-- q(77632),	-- when you learn everything from Quantum ?
 		-- q(77633),	-- when you learn everything from Quantum ?
 		-- q(77634),	-- when you learn everything from Quantum ?
-		q(77635),	-- when you learn everything from Quantum Chestpiece (Mail / Hunter)
-		q(77636),	-- when you learn everything from Quantum Chestpiece (Leather / Druid)
 		-- q(77637),	-- when you learn everything from Quantum ?
 		-- q(77638),	-- when you learn everything from Quantum ?
-		-- q(77639),	-- when you learn everything from Quantum ?
 		-- q(77640),	-- when you learn everything from Quantum ?
 		-- q(77641),	-- when you learn everything from Quantum ?
 	}),

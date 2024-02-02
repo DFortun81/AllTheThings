@@ -107,7 +107,7 @@ app.PrintTable = function(t,depth)
 	-- dont accidentally recursively print the same table
 	if not app._PrintTable[t] then
 		app._PrintTable[t] = true;
-		print(p,tostring(t)," {");
+		print(p,tostring(t),"__type",t.__type," {");
 		for k,v in pairs(t) do
 			if type(v) == "table" then
 				print(p,k,":");
@@ -261,14 +261,14 @@ local function RoundNumber(number, decimalPlaces)
 end
 
 local function formatNumericWithCommas(amount)
-  local formatted, k = amount
+  local k
   while true do
-	formatted, k = string_gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
-	if (k==0) then
-	  break
+	amount, k = string_gsub(amount, "^(-?%d+)(%d%d%d)", '%1,%2')
+	if k == 0 then
+		break
 	end
   end
-  return formatted
+  return amount
 end
 local function GetMoneyString(amount)
 	if amount > 0 then
@@ -287,6 +287,65 @@ local function GetMoneyString(amount)
 	end
 	return amount
 end
+local function GetDisplayID(data)
+	-- don't create a displayID for groups with a sourceID/itemID/difficultyID/mapID
+	if data.sourceID or data.itemID or data.difficultyID or data.mapID then return; end
+	if data.displayID then
+		return data.displayID;
+	elseif data.creatureID then
+		local displayID = app.NPCDisplayIDFromID[data.creatureID];
+		if displayID then
+			return displayID;
+		end
+	end
+
+	if data.providers and #data.providers > 0 then
+		for k,v in pairs(data.providers) do
+			-- if one of the providers is an NPC, we should show its texture regardless of other providers
+			if v[1] == "n" then
+				return app.NPCDisplayIDFromID[v[2]];
+			end
+		end
+	end
+
+	if data.qgs and #data.qgs > 0 then
+		return app.NPCDisplayIDFromID[data.qgs[1]];
+	end
+end
+local function GetIconFromProviders(group)
+	if group.providers then
+		local icon;
+		for k,v in ipairs(group.providers) do
+			if v[2] > 0 then
+				if v[1] == "o" then
+					icon = app.ObjectIcons[v[2]];
+				elseif v[1] == "i" then
+					icon = select(5, GetItemInfoInstant(v[2]));
+				end
+				if icon then return icon; end
+			end
+		end
+	end
+end
+local function GetNameFromProviders(group)
+	if group.providers then
+		local name;
+		for k,v in ipairs(group.providers) do
+			if v[2] > 0 then
+				if v[1] == "o" then
+					name = app.ObjectNames[v[2]];
+				elseif v[1] == "i" then
+					name = GetItemInfo(v[2]);
+				elseif v[1] == "n" then
+					name = app.NPCNameFromID[v[2]];
+				end
+				if name then return name; end
+			end
+		end
+	end
+end
+app.GetIconFromProviders = GetIconFromProviders;
+app.GetNameFromProviders = GetNameFromProviders;
 
 do -- TradeSkill Functionality
 local tradeSkillSpecializationMap = {
@@ -533,344 +592,10 @@ app.RefreshTradeSkillCache = function()
 end
 end -- TradeSkill Functionality
 
--- Game Tooltip Icon
-local GameTooltipIcon = CreateFrame("FRAME", nil, GameTooltip);
-GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-GameTooltipIcon:SetSize(72, 72);
-GameTooltipIcon.icon = GameTooltipIcon:CreateTexture(nil, "ARTWORK");
-GameTooltipIcon.icon:SetAllPoints(GameTooltipIcon);
-GameTooltipIcon.icon:Show();
-GameTooltipIcon.icon.Background = GameTooltipIcon:CreateTexture(nil, "BACKGROUND");
-GameTooltipIcon.icon.Background:SetAllPoints(GameTooltipIcon);
-GameTooltipIcon.icon.Background:Show();
-GameTooltipIcon.icon.Border = GameTooltipIcon:CreateTexture(nil, "BORDER");
-GameTooltipIcon.icon.Border:SetAllPoints(GameTooltipIcon);
-GameTooltipIcon.icon.Border:Show();
-GameTooltipIcon:Hide();
 
--- Model is used to display the model of an NPC/Encounter.
-local GameTooltipModel, model, fi = CreateFrame("FRAME", "ATTGameTooltipModel", GameTooltip, BackdropTemplateMixin and "BackdropTemplate");
-GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-GameTooltipModel:SetSize(128, 128);
-GameTooltipModel:SetBackdrop({
-	bgFile = "Interface/Tooltips/UI-Tooltip-Background",
-	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
-	tile = true, tileSize = 16, edgeSize = 16,
-	insets = { left = 4, right = 4, top = 4, bottom = 4 }
-});
-GameTooltipModel:SetBackdropBorderColor(1, 1, 1, 1);
-GameTooltipModel:SetBackdropColor(0, 0, 0, 1);
-GameTooltipModel.Models = {};
-GameTooltipModel.Model = CreateFrame("DressUpModel", nil, GameTooltipModel);
-GameTooltipModel.Model:SetPoint("TOPLEFT", GameTooltipModel, "TOPLEFT", 4, -4)
-GameTooltipModel.Model:SetPoint("BOTTOMRIGHT", GameTooltipModel, "BOTTOMRIGHT", -4, 4)
-GameTooltipModel.Model:SetFacing(MODELFRAME_DEFAULT_ROTATION);
-GameTooltipModel.Model:SetScript("OnUpdate", function(self, elapsed)
-	self:SetFacing(self:GetFacing() + elapsed);
-end);
-GameTooltipModel.Model:Hide();
 
-for i=1,MAX_CREATURES_PER_ENCOUNTER do
-	model = CreateFrame("DressUpModel", "ATTGameTooltipModel" .. i, GameTooltipModel);
-	model:SetPoint("TOPLEFT", GameTooltipModel, "TOPLEFT", 4, -4);
-	model:SetPoint("BOTTOMRIGHT", GameTooltipModel, "BOTTOMRIGHT", -4, 4);
-	model:SetCamDistanceScale(1.7);
-	model:SetDisplayInfo(987);
-	model:SetFacing(MODELFRAME_DEFAULT_ROTATION);
-	fi = math_floor(i / 2);
-	model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - 0.3);
-	--model:SetDepth(i);
-	model:Hide();
-	tinsert(GameTooltipModel.Models, model);
-end
-GameTooltipModel.HideAllModels = function(self)
-	for i=1,MAX_CREATURES_PER_ENCOUNTER do
-		GameTooltipModel.Models[i]:Hide();
-	end
-	GameTooltipModel.Model:Hide();
-end
-GameTooltipModel.SetRotation = function(number)
-	GameTooltipModel.Model:SetFacing(number and ((number * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-end
-GameTooltipModel.SetScale = function(number)
-	GameTooltipModel.Model:SetCamDistanceScale(number or 1);
-end
-local GetDisplayID
-do
-	-- returns the input key unless it's blocked by being set to 0
-	local BlockedDisplayID = {
-		[11686] = 0,	-- empty blue thing
-		[16925] = 0,	-- nothing
-		[27823] = 0,	-- empty blue thing
-		[52318] = 0,	-- generic bunny
-		[56187] = 0,	-- generic bunny
-		[110046] = 0,	-- nothing
-		[112684] = 0,	-- nothing
-	}
-	local AllowedDisplayID = setmetatable({},
-		{ __index = function(t, key)
-			if not key or BlockedDisplayID[key] then return end
-			return key
-		end
-	})
-	GameTooltipModel.SetCreatureID = function(self, creatureID)
-		GameTooltipModel.HideAllModels(self);
-		if creatureID > 0 then
-			self.Model:SetUnit("none");
-			self.Model:SetCreature(creatureID);
-			local displayID = self.Model:GetDisplayInfo()
-			if not displayID then
-				Push(app, "SetCreatureID", function()
-					if self.lastModel == creatureID then
-						self:SetCreatureID(creatureID);
-					end
-				end);
-				self:Hide()
-				return
-			end
-			if not AllowedDisplayID[displayID] then
-				self.Model:SetUnit("none");
-				self:Hide()
-				return
-			end
-		end
-		self:Show();
-	end
-	GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
-		if displayInfos then
-			local count = #displayInfos;
-			local displayID, shown
-			if count > 0 then
-				local rotation = reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION;
-				local scale = reference.modelScale or 1;
-				if count > 1 then
-					count = math.min(count, MAX_CREATURES_PER_ENCOUNTER);
-					local ratio = count / MAX_CREATURES_PER_ENCOUNTER;
-					if count < 3 then
-						for i=1,count do
-							displayID = AllowedDisplayID[displayInfos[i]]
-							if displayID then
-								model = self.Models[i];
-								model:SetDisplayInfo(displayID);
-								model:SetCamDistanceScale(scale);
-								model:SetFacing(rotation);
-								model:SetPosition(0, (i % 2 == 0 and 0.5 or -0.5), 0);
-								model:Show();
-								shown = true
-							end
-						end
-					else
-						scale = (1 + (ratio * 0.5)) * scale;
-						for i=1,count do
-							displayID = AllowedDisplayID[displayInfos[i]]
-							if displayID then
-								model = self.Models[i];
-								model:SetDisplayInfo(displayID);
-								model:SetCamDistanceScale(scale);
-								model:SetFacing(rotation);
-								fi = math_floor(i / 2);
-								model:SetPosition(fi * -0.1, (fi * (i % 2 == 0 and -1 or 1)) * ((MAX_CREATURES_PER_ENCOUNTER - i) * 0.1), fi * 0.2 - (ratio * 0.15));
-								model:Show();
-								shown = true
-							end
-						end
-					end
-				else
-					displayID = AllowedDisplayID[displayInfos[1]]
-					if displayID then
-						self.Model:SetFacing(rotation);
-						self.Model:SetCamDistanceScale(scale);
-						self.Model:SetDisplayInfo(displayID);
-						-- app.PrintDebug("SetDisplayInfo",displayID)
-						self.Model:Show();
-						shown = true
-					end
-				end
-				if shown then self:Show(); else self:Hide() end
-				return true;
-			end
-		end
-	end
-	-- Attempts to return the displayID for the data, or every displayID if 'all' is specified
-	GetDisplayID = function(data, all)
-		-- don't create a displayID for groups with a sourceID/itemID/difficultyID/mapID
-		if data.sourceID or data.itemID or data.difficultyID or data.mapID then return; end
-		if all then
-			local displayInfo, _ = {};
-			-- specific displayID
-			_ = data.displayID;
-			if _ then tinsert(displayInfo, _); data.displayInfo = displayInfo; return displayInfo; end
 
-			-- specific creatureID for displayID
-			_ = AllowedDisplayID[data.creatureID and app.NPCDisplayIDFromID[data.creatureID]]
-			if _ then tinsert(displayInfo, _); data.displayInfo = displayInfo; return displayInfo; end
 
-			-- loop through "n" providers
-			if data.providers then
-				for k,v in pairs(data.providers) do
-					-- if one of the providers is an NPC, we should show its texture regardless of other providers
-					if v[1] == "n" then
-						_ = AllowedDisplayID[v[2] and app.NPCDisplayIDFromID[v[2]]];
-						if _ then tinsert(displayInfo, _); end
-					end
-				end
-			end
-			if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
-
-			-- for quest givers
-			if data.qgs then
-				for k,v in pairs(data.qgs) do
-					_ = AllowedDisplayID[v and app.NPCDisplayIDFromID[v]];
-					if _ then tinsert(displayInfo, _); end
-				end
-			end
-			if displayInfo[1] then data.displayInfo = displayInfo; return displayInfo; end
-		else
-			-- specific displayID
-			local _ = data.displayID or data.fetchedDisplayID
-			if _ then return _; end
-
-			-- specific creatureID for displayID
-			_ = AllowedDisplayID[data.creatureID and app.NPCDisplayIDFromID[data.creatureID]]
-			if _ then data.fetchedDisplayID = _; return _; end
-
-			-- loop through "n" providers
-			if data.providers then
-				for k,v in pairs(data.providers) do
-					-- if one of the providers is an NPC, we should show its texture regardless of other providers
-					if v[1] == "n" then
-						_ = AllowedDisplayID[v[2] and app.NPCDisplayIDFromID[v[2]]]
-						if _ then data.fetchedDisplayID = _; return _; end
-					end
-				end
-			end
-
-			-- for quest givers
-			if data.qgs then
-				for k,v in pairs(data.qgs) do
-					_ = AllowedDisplayID[v and app.NPCDisplayIDFromID[v]]
-					if _ then data.fetchedDisplayID = _; return _; end
-				end
-			end
-		end
-	end
-end
-local function GetIconFromProviders(group)
-	if group.providers then
-		local icon;
-		for k,v in ipairs(group.providers) do
-			if v[2] > 0 then
-				if v[1] == "o" then
-					icon = app.ObjectIcons[v[2]];
-				elseif v[1] == "i" then
-					icon = select(5, GetItemInfoInstant(v[2]));
-				end
-				if icon then return icon; end
-			end
-		end
-	end
-end
-local function GetNameFromProviders(group)
-	if group.providers then
-		local name;
-		for k,v in ipairs(group.providers) do
-			if v[2] > 0 then
-				if v[1] == "o" then
-					name = app.ObjectNames[v[2]];
-				elseif v[1] == "i" then
-					name = GetItemInfo(v[2]);
-				elseif v[1] == "n" then
-					name = app.NPCNameFromID[v[2]];
-				end
-				if name then return name; end
-			end
-		end
-	end
-end
-app.GetIconFromProviders = GetIconFromProviders;
-app.GetNameFromProviders = GetNameFromProviders;
-GameTooltipModel.TrySetModel = function(self, reference)
-	GameTooltipModel.HideAllModels(self);
-	if app.Settings:GetTooltipSetting("Models") then
-		self.lastModel = reference;
-		local displayInfos = reference.displayInfo or GetDisplayID(reference, true);
-		if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfos) then
-			return true;
-		end
-
-		if reference.displayID then
-			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self.Model:SetDisplayInfo(reference.displayID);
-			self.Model:Show();
-			self:Show();
-			return true;
-		elseif reference.modelID then
-			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self.Model:SetDisplayInfo(reference.modelID);
-			self.Model:Show();
-			self:Show();
-			return true;
-		elseif reference.unit and not reference.icon then
-			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self.Model:SetUnit(reference.unit);
-			self.Model:Show();
-			self:Show();
-		end
-
-		if reference.sourceID and reference.artifactID then
-			-- TODO: would be cool if this showed for all sourceID's, but it seems to be random which items show a model from the visualID
-			local sourceInfo = C_TransmogCollection_GetSourceInfo(reference.sourceID);
-			if sourceInfo and sourceInfo.visualID then
-				self.Model:SetCamDistanceScale(0.8);
-				self.Model:SetItemAppearance(sourceInfo.visualID);
-				self.Model:Show();
-				self:Show();
-				return true;
-			end
-		end
-
-		local modelID = tonumber(reference.model);
-		if modelID and modelID > 0 then
-			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self.Model:SetUnit("none");
-			self.Model:SetModel(modelID);
-			self.Model:Show();
-			self:Show();
-			return true;
-		elseif reference.creatureID and reference.creatureID > 0 then
-			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-			self.Model:SetCamDistanceScale(reference.modelScale or 1);
-			self:SetCreatureID(reference.creatureID);
-			self.Model:Show();
-			return true;
-		end
-		if reference.atlas then
-			GameTooltipIcon:SetSize(64,64);
-			GameTooltipIcon.icon:SetAtlas(reference.atlas);
-			GameTooltipIcon:Show();
-			if reference["atlas-background"] then
-				GameTooltipIcon.icon.Background:SetAtlas(reference["atlas-background"]);
-				GameTooltipIcon.icon.Background:Show();
-			end
-			if reference["atlas-border"] then
-				GameTooltipIcon.icon.Border:SetAtlas(reference["atlas-border"]);
-				GameTooltipIcon.icon.Border:Show();
-				if reference["atlas-color"] then
-					local swatches = reference["atlas-color"];
-					GameTooltipIcon.icon.Border:SetVertexColor(swatches[1], swatches[2], swatches[3], swatches[4] or 1.0);
-				else
-					GameTooltipIcon.icon.Border:SetVertexColor(1, 1, 1, 1.0);
-				end
-			end
-			return true;
-		end
-	end
-end
-GameTooltipModel:Hide();
 
 -- Screenshot
 function app:TakeScreenShot(type)
@@ -956,32 +681,32 @@ local function GetTrackableIcon(data, iconOnly, forSaved)
 	end
 end
 local function GetCostIconForRow(data, iconOnly)
-	-- cost only in nested groups, or if itself is a cost
-	if (not data.window and (data.filledCost or data.costNested)) or (data.costTotal or 0) > 0 or data.collectibleAsCost then
-		return iconOnly and L["COST_ICON"] or L["COST_TEXT"];
+	-- cost only for filled groups, or if itself is a cost
+	if data.filledCost or data.isCost or (data.progress == data.total and ((data.costTotal or 0) > 0)) then
+		return L[iconOnly and "COST_ICON" or "COST_TEXT"];
 	end
 end
 local function GetCostIconForTooltip(data, iconOnly)
 	-- cost only if itself is a cost
-	if (data.costTotal or 0) > 0 or data.collectibleAsCost then
-		return iconOnly and L["COST_ICON"] or L["COST_TEXT"];
+	if data.filledCost or data.collectibleAsCost then
+		return L[iconOnly and "COST_ICON" or "COST_TEXT"];
 	end
 end
 local function GetUpgradeIconForRow(data, iconOnly)
-	-- upgrade only in nested groups, or if itself has an upgrade
-	if (not data.window and (data.filledUpgrade or data.hasUpgradeNested)) or data.collectibleAsUpgrade then
-		return iconOnly and L["UPGRADE_ICON"] or L["UPGRADE_TEXT"];
+	-- upgrade only for filled groups, or if itself is an upgrade
+	if data.filledUpgrade or data.isUpgrade or (data.progress == data.total and ((data.upgradeTotal or 0) > 0)) then
+		return L[iconOnly and "UPGRADE_ICON" or "UPGRADE_TEXT"];
 	end
 end
 local function GetUpgradeIconForTooltip(data, iconOnly)
 	-- upgrade only if itself has an upgrade
-	if data.collectibleAsUpgrade then
-		return iconOnly and L["UPGRADE_ICON"] or L["UPGRADE_TEXT"];
+	if data.filledUpgrade or data.collectibleAsUpgrade then
+		return L[iconOnly and "UPGRADE_ICON" or "UPGRADE_TEXT"];
 	end
 end
 local function GetReagentIcon(data, iconOnly)
 	if data.filledReagent then
-		return iconOnly and L["REAGENT_ICON"] or L["REAGENT_TEXT"];
+		return L[iconOnly and "REAGENT_ICON" or "REAGENT_TEXT"];
 	end
 end
 local function GetStateIcon(data, iconOnly)
@@ -1039,9 +764,10 @@ local function GetProgressTextForRow(data)
 
 	return app.TableConcat(text, nil, "", " ");
 end
-local function GetProgressTextForTooltip(data, iconOnly)
+local function GetProgressTextForTooltip(data)
 	-- build the row text from left to right with possible info
 	local text = {}
+	local iconOnly = app.Settings:GetTooltipSetting("ShowIconOnly");
 	-- Reagent (show reagent icon)
 	local icon = GetReagentIcon(data, iconOnly);
 	if icon then
@@ -1198,10 +924,8 @@ app.MergeSkipFields = {
 	["rawlink"] = true,
 	["sourceIgnored"] = true,
 	["costTotal"] = true,
-	["costProgress"] = true,
+	["upgradeTotal"] = true,
 	["iconPath"] = true,
-	["costNested"] = true,
-	["hasUpgradeNested"] = true,
 	-- fields added to a group from GetCachedSearchResults
 	["tooltipInfo"] = true,
 	["working"] = true,
@@ -1300,7 +1024,7 @@ local function MergeProperties(g, t, noReplace, clone)
 						g.sourceParent = v;
 					end
 				elseif not skips[k] then
-					if not rawget(g, k) then
+					if rawget(g, k) == nil then
 						g[k] = v;
 					end
 				end
@@ -1378,10 +1102,10 @@ local function CreateObject(t, rootOnly)
 		-- include the raw g since it will be replaced at the end with new objects
 		result.g = t.g;
 		t = result;
-		if not getmetatable(t) then
-			app.PrintDebug(Colorize("Bad CreateObject (key without metatable) used:",app.Colors.ChatLinkError))
-			app.PrintTable(t)
-		end
+		-- if not getmetatable(t) then
+		-- 	app.PrintDebug(Colorize("Bad CreateObject (key without metatable) used:",app.Colors.ChatLinkError))
+		-- 	app.PrintTable(t)
+		-- end
 		-- app.PrintDebug("Merge done",result.key,result[result.key], t, result);
 	-- is it an array of raw datas which needs to be turned into an array of usable objects
 	elseif t[1] then
@@ -1394,16 +1118,18 @@ local function CreateObject(t, rootOnly)
 		return result;
 	-- use the highest-priority piece of data which exists in the table to turn it into an object
 	else
+		-- a table which somehow has a metatable which doesn't include a 'key' field...
 		local meta = getmetatable(t);
 		if meta then
 			local result = {};
 			for k,v in pairs(t) do
-				rawset(result, k, v);
+				result[k] = v
 			end
-			if t.g then
-				result.g = {};
+			if not rootOnly and t.g then
+				local newg = {}
+				result.g = newg
 				for i,o in ipairs(t.g) do
-					tinsert(result.g, CreateObject(o));
+					newg[#newg+1] = CreateObject(o)
 				end
 			end
 			setmetatable(result, meta);
@@ -1475,6 +1201,8 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateSpell(t.spellID, t);
 		elseif t.f or t.filterID then
 			t = app.CreateFilter(t.f or t.filterID, t);
+		elseif t.text then
+			t = app.CreateRawText(t.text, t)
 		else
 			-- app.PrintDebug("CreateObject by value, no specific object type");
 			-- app.PrintTable(t);
@@ -1515,7 +1243,7 @@ app.__CreateObject = CreateObject;
 local function RawCloneData(data, clone)
 	clone = clone or {};
 	for key,value in pairs(data) do
-		if not clone[key] then
+		if clone[key] == nil then
 			clone[key] = value;
 		end
 	end
@@ -1981,17 +1709,16 @@ PriorityNestObjects;
 app.searchCache = searchCache;
 (function()
 local function GetHash(t)
-	local hash = t.hash;
-	if hash then return hash; end
-	hash = app.CreateHash(t);
-	--app.PrintDebug("No hash for object:", hash, t.text);
+	local hash = app.CreateHash(t);
+	app.PrintDebug(Colorize("No base .hash for t:",app.Colors.ChatLinkError),hash,t.text);
+	app.PrintTable(t)
 	return hash;
 end
 MergeObject = function(g, t, index, newCreate)
 	if g and t then
-		local hash = GetHash(t);
+		local hash = t.hash or GetHash(t);
 		for i,o in ipairs(g) do
-			if GetHash(o) == hash then
+			if (o.hash or GetHash(o)) == hash then
 				MergeProperties(o, t, true);
 				NestObjects(o, t.g, newCreate);
 				return o;
@@ -2001,7 +1728,7 @@ MergeObject = function(g, t, index, newCreate)
 		if index then
 			tinsert(g, index, t);
 		else
-			tinsert(g, t);
+			g[#g + 1] = t
 		end
 	end
 end
@@ -2039,10 +1766,10 @@ MergeObjects = function(g, g2, newCreate)
 					else
 						t = CreateObject(o);
 						hashTable[hash] = t;
-						tinsert(g, t);
+						g[#g + 1] = t
 					end
 				else
-					tinsert(g, CreateObject(o));
+					g[#g + 1] = CreateObject(o)
 				end
 			end
 		else
@@ -2056,10 +1783,10 @@ MergeObjects = function(g, g2, newCreate)
 						NestObjects(t, o.g);
 					else
 						hashTable[hash] = o;
-						tinsert(g, o);
+						g[#g + 1] = o
 					end
 				else
-					tinsert(g, o);
+					g[#g + 1] = CreateObject(o)
 				end
 			end
 		end
@@ -2095,16 +1822,16 @@ PriorityNestObjects = function(p, g, newCreate, ...)
 			for i,pFunc in ipairs(pFuncs) do
 				-- if the function matches, put the object in the bucket
 				if pFunc(o) then
-					-- app.PrintDebug("Matched Priority Function",i,o.hash,o.parent.text)
+					-- app.PrintDebug("Matched Priority Function",i,o.hash)
 					pBucket = pBuckets[i];
-					tinsert(pBucket, o);
+					pBucket[#pBucket + 1] = o
 					break;
 				end
 			end
 			-- no bucket was found, put in skipped
 			if not pBucket then
-				-- app.PrintDebug("No Priority",o.hash,o.parent.text)
-				if skipped then tinsert(skipped, o);
+				-- app.PrintDebug("No Priority",o.hash)
+				if skipped then skipped[#skipped + 1] = o
 				else skipped = { o }; end
 			end
 			-- reset bucket
@@ -2114,13 +1841,16 @@ PriorityNestObjects = function(p, g, newCreate, ...)
 		for i,pBucket in ipairs(pBuckets) do
 			-- app.PrintDebug("Nesting Priority Bucket",i,#pBucket)
 			NestObjects(p, pBucket, newCreate);
+			-- app.PrintDebug(".g",p.g and #p.g)
 		end
 		-- and nest anything skipped
 		-- app.PrintDebug("Nesting Skipped",skipped and #skipped)
 		NestObjects(p, skipped, newCreate);
+		-- app.PrintDebug(".g",p.g and #p.g)
 	else
 		NestObjects(p, g, newCreate);
 	end
+	-- app.PrintDebug("PNO-Done",#pFuncs,"Priorities",#g,"Objects",p.g and #p.g)
 end
 -- Merges multiple sources of an object into a single object. Can specify to clean out all sub-groups of the result
 app.MergedObject = function(group, rootOnly)
@@ -4118,7 +3848,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 		end
 		-- app.PrintDebug("Root",root.key,root[root.key],root.modItemID,root.up,root._up);
 		-- app.PrintTable(root)
-		-- app.PrintDebug("Root Collect",root.collectible,root.collected);
+		-- app.PrintDebug("Root Collect",root.collectible,root.collected,root.collectibleAsCost,root.hasUpgrade);
 		-- app.PrintDebug("params",paramA,paramB);
 		-- app.PrintDebug(#nested,"Nested total");
 		-- Nest the objects by matching filter priority if it's not a currency
@@ -4131,7 +3861,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				-- If the obj meets the recursive group filter
 				if app.RecursiveCharacterRequirementsFilter(o) then
 					-- Merge the obj into the merged results
-					-- print("Merge object",o.key,o[o.key])
+					-- app.PrintDebug("Merge object",o.key,o[o.key])
 					tinsert(added, o);
 				end
 			end
@@ -4471,7 +4201,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 
 		-- If the user wants to show the progress of this search result, do so
 		if app.Settings:GetTooltipSetting("Progress") and (group.key ~= "spellID" or group.collectible) then
-			group.collectionText = GetProgressTextForTooltip(group, app.Settings:GetTooltipSetting("ShowIconOnly"));
+			group.collectionText = GetProgressTextForTooltip(group);
 
 			-- add the progress as a new line for encounter tooltips instead of using right text since it can overlap the NPC name
 			if group.encounterID then tinsert(info, 1, { left = "Progress", right = group.collectionText }); end
@@ -4570,6 +4300,15 @@ local function DeterminePurchaseGroups(group, FillData)
 
 	local collectibles = group.costCollectibles;
 	if collectibles and #collectibles > 0 then
+		-- if app.Debugging then
+		-- 	local sourceGroup = app.CreateRawText("RAW COLLECTIBLES", {
+		-- 		["OnUpdate"] = app.AlwaysShowUpdate,
+		-- 		["skipFill"] = true,
+		-- 		["g"] = {},
+		-- 	})
+		-- 	NestObjects(sourceGroup, collectibles, true)
+		-- 	NestObject(group, sourceGroup, nil, 1)
+		-- end
 		local groupHash = group.hash;
 		-- app.PrintDebug("DeterminePurchaseGroups",groupHash,"-collectibles",collectibles and #collectibles);
 		local groups = {};
@@ -4578,7 +4317,7 @@ local function DeterminePurchaseGroups(group, FillData)
 			if o.hash ~= groupHash then
 				-- app.PrintDebug("Purchase @",groupHash,"=>",o.hash)
 				clone = CreateObject(o);
-				tinsert(groups, clone);
+				groups[#groups + 1] = clone
 			end
 		end
 		-- app.PrintDebug("DeterminePurchaseGroups",group.hash,"-final",groups and #groups);
@@ -4766,12 +4505,13 @@ end
 -- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
 local function FillGroupsRecursive(group, FillData)
 	if SkipFillingGroup(group, FillData) then
-		-- app.PrintDebug("FGR-SKIP",group.hash)
+		-- app.PrintDebug(Colorize("FGR-SKIP",app.Colors.ChatLinkError),group.hash)
 		return;
 	end
 	-- app.PrintDebug("FGR",group.hash)
 
 	local groups;
+	local ignoreSkip = group.sym or group.headerID or group.classID
 	-- Determine Cost/Crafted/Symlink groups
 	groups = ArrayAppend(groups,
 		DeterminePurchaseGroups(group, FillData),
@@ -4780,26 +4520,25 @@ local function FillGroupsRecursive(group, FillData)
 		DetermineSymlinkGroups(group),
 		DetermineNPCDrops(group, FillData));
 
+	-- Adding the groups normally based on available-source priority
+	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter);
+
 	if groups and #groups > 0 then
-		-- app.PrintDebug("FillGroups-MergeResults",group.hash,groups and #groups)
-		-- mark this group as being filled since it actually received filled content (unless it's a basic header/class header)
-		if not (
-			group.headerID or
-			group.classID
-		) then
+		-- app.PrintDebug("FillGroups-MergeResults",group.hash,#groups)
+		AssignChildren(group);
+		-- mark this group as being filled since it actually received filled content (unless it's ignored for being skipped)
+		if not ignoreSkip then
 			local groupHash = group.hash;
 			if groupHash then
-				-- app.PrintDebug("FG-Included",groupHash,#groups)
+				-- app.PrintDebug("FGA-Included",groupHash,#groups)
 				FillData.Included[groupHash] = true;
 			end
 		end
 	end
-	-- Adding the groups normally based on available-source priority
-	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter);
 
 	local g = group.g;
 	if g then
-		-- app.PrintDebug(".g",group.hash,#group.g)
+		-- app.PrintDebug(".g",group.hash,#g)
 		-- Then nest anything further
 		for _,o in ipairs(g) do
 			FillGroupsRecursive(o, FillData);
@@ -4810,7 +4549,7 @@ end
 -- over multiple frames to reduce stutter
 local function FillGroupsRecursiveAsync(group, FillData)
 	if SkipFillingGroup(group, FillData) then
-		-- app.PrintDebug("FGRA-SKIP",group.hash)
+		-- app.PrintDebug(Colorize("FGRA-SKIP",app.Colors.ChatLinkError),group.hash)
 		return;
 	end
 	-- app.PrintDebug("FGRA",group.hash)
@@ -4825,12 +4564,11 @@ local function FillGroupsRecursiveAsync(group, FillData)
 		DetermineSymlinkGroups(group),
 		DetermineNPCDrops(group, FillData));
 
-	-- if groups and #groups > 0 then
-	-- 	app.PrintDebug("FillGroupsAsync-MergeResults",group.hash,groups and #groups)
-	-- end
 	-- Adding the groups normally based on available-source priority
 	PriorityNestObjects(group, groups, nil, app.RecursiveCharacterRequirementsFilter);
-	if #groups > 0 then
+
+	if groups and #groups > 0 then
+		-- app.PrintDebug("FillGroupsAsync-MergeResults",group.hash,#groups)
 		AssignChildren(group);
 		app.DirectGroupUpdate(group);
 		-- mark this group as being filled since it actually received filled content (unless it's ignored for being skipped)
@@ -4845,8 +4583,8 @@ local function FillGroupsRecursiveAsync(group, FillData)
 
 	local g = group.g;
 	if g then
+		-- app.PrintDebug(".g",group.hash,#g)
 		local Run = app.FillRunner.Run;
-		-- app.PrintDebug(".g",group.hash,#group.g)
 		-- Then nest anything further
 		for _,o in ipairs(g) do
 			Run(FillGroupsRecursiveAsync, o, FillData);
@@ -4896,15 +4634,14 @@ app.BuildCost = function(group)
 	if not cost and not providers then return; end
 
 	-- Pop out the cost objects into their own sub-groups for accessibility
-	local costGroup = {
-		["text"] = L["COST"],
+	local costGroup = app.CreateRawText(L.COST, {
 		["description"] = L["COST_DESC"],
 		["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
 		["sourceIgnored"] = true,
 		["OnUpdate"] = app.AlwaysShowUpdate,
 		["skipFill"] = true,
 		["g"] = {},
-	};
+	});
 	-- Gold cost currently ignored
 	-- print("BuildCost",group.hash)
 	if cost then
@@ -4956,6 +4693,7 @@ app.ThingKeys = {
 	["sourceID"] = true,
 	["speciesID"] = true,
 	["recipeID"] = true,
+	["runeforgePowerID"] = true,
 	["spellID"] = true,
 	["illusionID"] = true,
 	["questID"] = true,
@@ -5133,14 +4871,13 @@ app.BuildSourceParent = function(group)
 		-- if there are valid parent groups for sources, merge them into a 'Source(s)' group
 		if parents then
 			-- app.PrintDebug("Found parents",#parents)
-			local sourceGroup = {
-				["text"] = L["SOURCES"],
+			local sourceGroup = app.CreateRawText(L.SOURCES, {
 				["description"] = L["SOURCES_DESC"],
 				["icon"] = "Interface\\Icons\\inv_misc_spyglass_02",
 				["OnUpdate"] = app.AlwaysShowUpdate,
 				["skipFill"] = true,
 				["g"] = {},
-			};
+			})
 			local clonedParent, keepSource;
 			local clones = {};
 			for _,parent in ipairs(parents) do
@@ -5392,7 +5129,8 @@ function app:ReceiveSyncRequest(sender, battleTag)
 	AllTheThingsAD.LinkedAccounts[sender] = true;
 
 	-- Generate the sync string (there may be several depending on how many alts there are)
-	local msgs = {};
+	-- TODO: use app.TableConcat()
+	-- local msgs = {};
 	local msg = "?\tsyncsum";
 	for guid,character in pairs(ATTCharacterData) do
 		if character.lastPlayed then
@@ -5534,7 +5272,7 @@ local function UpdateSearchResults(searchResults)
 		-- Directly update the Source groups of the search results, and collect their hashes for updates in other windows
 		for _,result in ipairs(searchResults) do
 			hashes[result.hash] = true;
-			tinsert(found, result);
+			found[#found + 1] = result;
 			-- Make sure any cost data is updated for this specific group since it was updated
 			UpdateCost(result);
 		end
@@ -6051,7 +5789,6 @@ app.AddEventHandler("OnReady", function()
 			local waypointsByMapID = tomTom.waypoints;
 			if not waypointsByMapID then return false; end
 
-			local any = false;
 			for mapID,waypointsByMap in pairs(waypointsByMapID) do
 				for waypointUID,waypoint in pairs(waypointsByMap) do
 					if waypoint.from == "ATT" then
@@ -9265,7 +9002,7 @@ itemTooltipHarvesterFields.text = function(t)
 									print("Empty Races",t.info.itemID)
 								end
 							elseif string.find(text, " Only") then
-								local faction,list,c = strsplit(" ", text);
+								local faction, _, c = strsplit(" ", text);
 								if not c then
 									faction = strtrim(faction);
 									if faction == "Alliance" then
@@ -10719,22 +10456,14 @@ local function SetGroupVisibility(parent, group)
 		visible = group.progress < group.total or GroupVisibilityFilter(group);
 	end
 	-- Cost
-	if not visible and (group.costNested or (group.costTotal or 0) > 0 or group.collectibleAsCost) then
+	if not visible and ((group.costTotal or 0) > 0) then
 		visible = not group.saved;
-		-- Only persist nested costs from visible groups
-		if parent and visible then
-			parent.costNested = true;
-		end
-		-- app.PrintDebug("SGV.cost",group.hash,visible,group.costNested)
+		-- app.PrintDebug("SGV.cost",group.hash,visible,group.costTotal)
 	end
 	-- Upgrade
-	if not visible and (group.hasUpgradeNested or group.collectibleAsUpgrade) then
+	if not visible and ((group.upgradeTotal or 0) > 0) then
 		visible = not group.saved;
-		-- Only persist nested upgrades from visible groups
-		if parent and visible then
-			parent.hasUpgradeNested = true;
-		end
-		-- if debug then print("SGV.hasUpgrade",group.hash,visible,group.hasUpgradeNested) end
+		-- if debug then print("SGV.hasUpgrade",group.hash,visible) end
 	end
 	-- Trackable
 	if not visible and TrackableFilter(group) then
@@ -10770,22 +10499,14 @@ local function SetThingVisibility(parent, group)
 		-- if debug then print("total",visible) end
 	end
 	-- Cost
-	if not visible and (group.costNested or (group.costTotal or 0) > 0 or group.collectibleAsCost) then
+	if not visible and ((group.costTotal or 0) > 0) then
 		visible = not group.saved;
-		-- Only persist nested costs from visible groups
-		if parent and visible then
-			parent.costNested = true;
-		end
-		-- if debug then print("STV.cost",group.hash,visible,group.costNested) end
+		-- app.PrintDebug("STV.cost",group.hash,visible,group.costTotal)
 	end
 	-- Upgrade
-	if not visible and (group.hasUpgradeNested or group.collectibleAsUpgrade) then
+	if not visible and ((group.upgradeTotal or 0) > 0) then
 		visible = not group.saved;
-		-- Only persist nested upgrades from visible groups
-		if parent and visible then
-			parent.hasUpgradeNested = true;
-		end
-		-- if debug then print("STV.hasUpgrade",group.hash,visible,group.hasUpgradeNested) end
+		-- if debug then print("STV.hasUpgrade",group.hash,visible) end
 	end
 	-- Trackable
 	if not visible and TrackableFilter(group) then
@@ -10806,8 +10527,6 @@ local function SetThingVisibility(parent, group)
 end
 local function UpdateGroup(group, parent)
 	group.visible = nil;
-	group.costNested = nil;
-	group.hasUpgradeNested = nil;
 
 	-- debug = group.itemID and group.factionID == 2045
 	-- if debug then print("UG",group.hash,parent and parent.hash) end
@@ -10844,6 +10563,8 @@ local function UpdateGroup(group, parent)
 		-- if debug then print("UG.prog",progress,total,group.collectible) end
 		group.progress = progress;
 		group.total = total;
+		group.costTotal = group.isCost and 1 or 0
+		group.upgradeTotal = group.isUpgrade and 1 or 0
 
 		-- Check if this is a group
 		local g = group.g;
@@ -10879,6 +10600,8 @@ local function UpdateGroup(group, parent)
 		if parent and not group.sourceIgnored then
 			parent.total = (parent.total or 0) + group.total;
 			parent.progress = (parent.progress or 0) + group.progress;
+			parent.costTotal = (parent.costTotal or 0) + (group.costTotal or 0);
+			parent.upgradeTotal = (parent.upgradeTotal or 0) + (group.upgradeTotal or 0);
 		-- else
 			-- print("Ignoring progress/total",group.progress,"/",group.total,"for group",group.text)
 		end
@@ -10907,7 +10630,7 @@ UpdateGroups = function(parent, g)
 end
 app.UpdateGroups = UpdateGroups;
 -- Adjusts the progress/total of the group's parent chain, and refreshes visibility based on the new values
-local function AdjustParentProgress(group, progChange, totalChange)
+local function AdjustParentProgress(group, progChange, totalChange, costChange, upgradeChange)
 	-- rawget, .parent will default to sourceParent in some cases
 	local parent = group and not group.sourceIgnored and rawget(group, "parent");
 	if parent then
@@ -10916,13 +10639,16 @@ local function AdjustParentProgress(group, progChange, totalChange)
 		-- app.PrintDebug("CHG:",progChange,totalChange)
 		parent.total = (parent.total or 0) + totalChange;
 		parent.progress = (parent.progress or 0) + progChange;
+		parent.costTotal = (parent.costTotal or 0) + costChange;
+		parent.upgradeTotal = (parent.upgradeTotal or 0) + upgradeChange;
+		-- Assign cost cache
 		-- app.PrintDebug("END:",parent.progress,parent.total)
 		-- verify visibility of the group, always a 'group' since it is already a parent of another group, as long as it's not the root window data
 		if not parent.window then
 			parent.visible = nil
 			SetGroupVisibility(rawget(parent, "parent"), parent);
 		end
-		AdjustParentProgress(parent, progChange, totalChange);
+		AdjustParentProgress(parent, progChange, totalChange, costChange, upgradeChange);
 	end
 end
 -- For directly applying the full Update operation for the top-level data group within a window
@@ -10930,6 +10656,8 @@ local function TopLevelUpdateGroup(group)
 	group.TLUG = GetTimePreciseSec();
 	group.total = nil;
 	group.progress = nil;
+	group.costTotal = nil;
+	group.upgradeTotal = nil;
 	CacheFilterFunctions();
 	-- app.PrintDebug("TLUG",group.hash)
 	-- Root data in Windows should ALWAYS be visible
@@ -10970,7 +10698,8 @@ local function DirectGroupUpdate(group, got)
 		-- app.PrintDebug("DGU:Filtered",group.hash,group.parent and group.parent.text)
 		return;
 	end
-	local prevTotal, prevProg = group.total or 0, group.progress or 0;
+	local prevTotal, prevProg, prevCost, prevUpgrade
+		= group.total or 0, group.progress or 0, group.costTotal or 0, group.upgradeTotal or 0
 	TopLevelUpdateGroup(group);
 	-- Set proper visibility for the updated group
 	local parent = rawget(group, "parent");
@@ -10979,10 +10708,11 @@ local function DirectGroupUpdate(group, got)
 	else
 		SetThingVisibility(parent, group);
 	end
-	local progChange, totalChange = group.progress - prevProg, group.total - prevTotal;
+	local progChange, totalChange, costChange, upgradeChange
+		= group.progress - prevProg, group.total - prevTotal, group.costTotal - prevCost, group.upgradeTotal - prevUpgrade
 	-- Something to change
-	if progChange ~= 0 or totalChange ~= 0 then
-		AdjustParentProgress(group, progChange, totalChange);
+	if progChange ~= 0 or totalChange ~= 0 or costChange ~= 0 or upgradeChange ~= 0 then
+		AdjustParentProgress(group, progChange, totalChange, costChange, upgradeChange);
 	end
 	-- After completing the Direct Update, setup a soft-update on the affected Window, if any
 	local window = app.GetRelativeRawWithField(group, "window");
@@ -11226,179 +10956,7 @@ app.RefreshCustomCollectibility = function()
 end
 end	-- Custom Collectibility
 
--- Minimap Button
-function AllTheThings_MinimapButtonOnClick(self, button)
-	if button == "RightButton" then
-		-- Right Button opens the Options menu.
-		app.Settings:Open();
-	else
-		-- Left Button
-		if IsShiftKeyDown() then
-			app.RefreshCollections();
-		elseif app.ToggleMiniListForCurrentZone and (IsAltKeyDown() or IsControlKeyDown()) then
-			app.ToggleMiniListForCurrentZone();
-		else
-			app.ToggleMainList();
-		end
-	end
-end
-function AllTheThings_MinimapButtonOnEnter(self, button)
-	GameTooltip:SetOwner(type(self) ~= "string" and self or button, "ANCHOR_LEFT");
-	GameTooltip:ClearLines();
-	local reference = app:GetDataCache();
-	if reference then
-		GameTooltipIcon:SetSize(72,72);
-		GameTooltipIcon:ClearAllPoints();
-		GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-		GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
-		local texcoord = reference.texcoord;
-		if texcoord then
-			GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
-		else
-			GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
-		end
-		GameTooltipIcon:Show();
 
-		local left, right = strsplit(DESCRIPTION_SEPARATOR, reference.title);
-		GameTooltip:AddDoubleLine(reference.text, reference.progressText, 1, 1, 1);
-		GameTooltip:AddDoubleLine(left, right, 1, 1, 1);
-
-		local prime = app:GetWindow("Prime");
-		if prime and prime.forceFullDataRefresh then
-			GameTooltip:AddDoubleLine("Updates Paused", L["MAIN_LIST_REQUIRES_REFRESH"], 1, 0.4, 0.4);
-		else
-			GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1);
-		end
-	else
-		GameTooltip:AddDoubleLine(L["TITLE"], L["MAIN_LIST_REQUIRES_REFRESH"], 1, 1, 1);
-		GameTooltipIcon:Hide();
-	end
-	GameTooltip:AddLine(L["MINIMAP_MOUSEOVER_TEXT"], 1, 1, 1);
-	GameTooltip:Show();
-end
-function AllTheThings_MinimapButtonOnLeave()
-	GameTooltip:Hide();
-	GameTooltipIcon.icon.Background:Hide();
-	GameTooltipIcon.icon.Border:Hide();
-	GameTooltipIcon:Hide();
-	GameTooltipModel:Hide();
-end
-local function CreateMinimapButton()
-	-- Create the Button for the Minimap frame. Create a local and non-local copy.
-	local size = app.Settings:GetTooltipSetting("MinimapSize");
-	local button = CreateFrame("BUTTON", appName .. "-Minimap", Minimap);
-	button:SetPoint("CENTER", 0, 0);
-	button:SetFrameStrata("HIGH");
-	button:SetMovable(true);
-	button:EnableMouse(true);
-	button:RegisterForDrag("LeftButton", "RightButton");
-	button:RegisterForClicks("LeftButtonUp", "RightButtonUp");
-	button:SetSize(size, size);
-
-	-- Create the Button Texture
-	local texture = button:CreateTexture(nil, "BACKGROUND");
-	texture:SetTexture(app.asset("Discord_2_64"));
-	texture:SetAllPoints();
-	button.texture = texture;
-
-	-- Create the Button Texture
-	local oldtexture = button:CreateTexture(nil, "BACKGROUND");
-	oldtexture:SetPoint("CENTER", 1, 0);
-	oldtexture:SetTexture(app.asset("logo_tiny"));
-	oldtexture:SetSize(21, 21);
-	button.oldtexture = oldtexture;
-
-	-- Create the Button Tracking Border
-	local border = button:CreateTexture(nil, "BORDER");
-	border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder");
-	border:SetPoint("CENTER", 12, -12);
-	border:SetSize(56, 56);
-	button.border = border;
-	button.UpdateStyle = function(self)
-		if app.Settings:GetTooltipSetting("MinimapStyle") then
-			self:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight", "ADD");
-			self.texture:Hide();
-			self.oldtexture:Show();
-			self.border:Show();
-		else
-			self:SetHighlightTexture(app.asset("MinimapHighlight_64x64"));
-			self.texture:Show();
-			self.oldtexture:Hide();
-			self.border:Hide();
-		end
-	end
-	button:UpdateStyle();
-
-	-- Button Configuration
-	local radius = 100;
-	local rounding = 10;
-	local MinimapShapes = {
-		-- quadrant booleans (same order as SetTexCoord)
-		-- {bottom-right, bottom-left, top-right, top-left}
-		-- true = rounded, false = squared
-		["ROUND"]			= {true,  true,  true,  true },
-		["SQUARE"]			= {false, false, false, false},
-		["CORNER-TOPLEFT"]		= {false, false, false, true },
-		["CORNER-TOPRIGHT"]		= {false, false, true,  false},
-		["CORNER-BOTTOMLEFT"]		= {false, true,  false, false},
-		["CORNER-BOTTOMRIGHT"]		= {true,  false, false, false},
-		["SIDE-LEFT"]			= {false, true,  false, true },
-		["SIDE-RIGHT"]			= {true,  false, true,  false},
-		["SIDE-TOP"]			= {false, false, true,  true },
-		["SIDE-BOTTOM"]		= {true,  true,  false, false},
-		["TRICORNER-TOPLEFT"]		= {false, true,  true,  true },
-		["TRICORNER-TOPRIGHT"]		= {true,  false, true,  true },
-		["TRICORNER-BOTTOMLEFT"]	= {true,  true,  false, true },
-		["TRICORNER-BOTTOMRIGHT"]	= {true,  true,  true,  false},
-	};
-	button.update = function(self)
-		local position = GetDataMember("Position", -10.31);
-		local angle = math.rad(position) -- determine position on your own
-		local x, y
-		local cos = math.cos(angle)
-		local sin = math.sin(angle)
-		local q = 1;
-		if cos < 0 then
-			q = q + 1;	-- lower
-		end
-		if sin > 0 then
-			q = q + 2;	-- right
-		end
-		if MinimapShapes[GetMinimapShape and GetMinimapShape() or "ROUND"][q] then
-			x = cos*radius;
-			y = sin*radius;
-		else
-			local diagRadius = math.sqrt(2*(radius)^2)-rounding
-			x = math.max(-radius, math.min(cos*diagRadius, radius))
-			y = math.max(-radius, math.min(sin*diagRadius, radius))
-		end
-		self:SetPoint("CENTER", "Minimap", "CENTER", -math_floor(x), math_floor(y));
-	end
-	local update = function(self)
-		local w, x = GetCursorPosition();
-		local y, z = Minimap:GetLeft(), Minimap:GetBottom();
-		local scale = UIParent:GetScale();
-		w = y - w / scale + 70; x = x / scale - z - 70;
-		SetDataMember("Position", math.deg(math.atan2(x, w)));
-		self:Raise();
-		self:update();
-	end
-
-	-- Register for Frame Events
-	button:SetScript("OnDragStart", function(self)
-		self:SetScript("OnUpdate", update);
-	end);
-	button:SetScript("OnDragStop", function(self)
-		self:SetScript("OnUpdate", nil);
-	end);
-	button:SetScript("OnEnter", AllTheThings_MinimapButtonOnEnter);
-	button:SetScript("OnLeave", AllTheThings_MinimapButtonOnLeave);
-	button:SetScript("OnClick", AllTheThings_MinimapButtonOnClick);
-	button:update();
-	button:Show();
-	return button;
-end
-app.CreateMinimapButton = CreateMinimapButton;
 function app:CreateMiniListForGroup(group)
 	-- Criteria now show their Source Achievement properly
 	-- Achievements already fill out their Criteria information automatically, don't think this is necessary now - Runaway
@@ -11440,8 +10998,10 @@ function app:CreateMiniListForGroup(group)
 			-- clone/search initially so as to not let popout operations modify the source data
 			group = CreateObject(group);
 
-			-- app.PrintDebug("clone")
+			-- app.PrintDebug(Colorize("clone",app.Colors.ChatLink))
 			-- app.PrintTable(group)
+			-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
+			-- app.PrintTable(group.g)
 
 			-- make a search for this group if it is an item/currency/achievement and not already a container for things
 			local key = group.key;
@@ -11451,23 +11011,30 @@ function app:CreateMiniListForGroup(group)
 				local groupSearch = GetCachedSearchResults(cmd, SearchForLink, cmd);
 				app.SetSkipPurchases(0);
 
-				-- app.PrintDebug("search")
+				-- app.PrintDebug(Colorize("search",app.Colors.ChatLink))
 				-- app.PrintTable(groupSearch)
+				-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
+				-- app.PrintTable(groupSearch.g)
 				-- Sometimes we want a specific Thing (/att i:147770)
 				-- but since it is keyed by a different ID (spell 242155)
 				-- this re-search replaces with an alternate item (147580)
 				-- so instead we should only merge properties from the re-search to ensure initial data isn't replaced due to alternate data matching
 				MergeProperties(group, groupSearch, true)
 				-- g is not merged automatically
+				-- app.PrintDebug("Copy .g",#groupSearch.g)
 				group.g = groupSearch.g
+				-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
+				-- app.PrintTable(group.g)
 				-- This isn't needed for the example noted anymore...
 				-- if not group.key and key then
 				-- 	group.key = key;	-- Dunno what causes this in GetCachedSearchResults, but assigning this before calling to the new CreateObject function fixes currency popouts for currencies that aren't in the addon. /att currencyid:1533
 				-- 	-- CreateMiniListForGroup missing key response, will likely fail to Create a Class Instance!
 				-- end
 
-				-- app.PrintDebug("merge")
+				-- app.PrintDebug(Colorize("merge",app.Colors.ChatLink))
 				-- app.PrintTable(group)
+				-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
+				-- app.PrintTable(group.g)
 			else
 				app.SetSkipPurchases(2);
 				app.FillGroups(group);
@@ -11476,6 +11043,10 @@ function app:CreateMiniListForGroup(group)
 		end
 
 		-- Insert the data group into the Raw Data table.
+		-- app.PrintDebug(Colorize("popout",app.Colors.ChatLink))
+		-- app.PrintTable(group)
+		-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
+		-- app.PrintTable(group.g)
 		popout:SetData(group);
 		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
 		-- if not group.isBaseSearchResult then
@@ -11810,8 +11381,7 @@ function app:CreateMiniListForGroup(group)
 					until not prereqs or #prereqs < 1;
 				end
 
-				local questChainHeader = {
-					["text"] = useNested and L["NESTED_QUEST_REQUIREMENTS"] or L["QUEST_CHAIN_REQ"],
+				local questChainHeader = app.CreateRawText(useNested and L.NESTED_QUEST_REQUIREMENTS or L.QUEST_CHAIN_REQ, {
 					["description"] = L["QUEST_CHAIN_REQ_DESC"],
 					["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
 					["OnUpdate"] = app.AlwaysShowUpdate,
@@ -11819,7 +11389,7 @@ function app:CreateMiniListForGroup(group)
 					["skipFill"] = true,
 					-- copy any sourceQuests into the header incase the root is not actually a quest
 					["sourceQuests"] = root.sourceQuests,
-				};
+				});
 				NestObject(group, questChainHeader);
 				if useNested then
 					app.NestSourceQuestsV2(questChainHeader, group.questID);
@@ -12638,21 +12208,11 @@ RowOnEnter = function (self)
 
 		if initialBuild then
 			-- app.PrintDebug("RowOnEnter-Initial");
-			GameTooltipIcon.icon.Background:Hide();
-			GameTooltipIcon.icon.Border:Hide();
-			GameTooltipIcon:Hide();
-			GameTooltipIcon:ClearAllPoints();
-			GameTooltipModel:Hide();
-			GameTooltipModel:ClearAllPoints();
-
+			GameTooltip:ClearATTReferenceTexture();
 			if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
 				tooltipAnchor = "ANCHOR_LEFT";
-				GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-				GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
 			else
 				tooltipAnchor = "ANCHOR_RIGHT";
-				GameTooltipIcon:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
-				GameTooltipModel:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, 0);
 			end
 			-- app.PrintDebug("OnRowEnter-GameTooltip:SetOwner");
 			GameTooltip:SetOwner(self, tooltipAnchor);
@@ -12695,7 +12255,7 @@ RowOnEnter = function (self)
 		-- nil means no search results were attached, so we can manually add it below
 		local refQuestID = reference.questID;
 		if doSearch or GameTooltip.ATTAttachComplete == nil then
-			if reference.creatureID or reference.encounterID or reference.objectID then
+			if reference.creatureID or reference.encounterID then
 				-- rows with these fields should not include the extra search info
 			elseif reference.currencyID then
 				GameTooltip:SetCurrencyByID(reference.currencyID, 1);
@@ -12703,6 +12263,8 @@ RowOnEnter = function (self)
 				AttachTooltipSearchResults(GameTooltip, 1, "azeriteEssenceID:" .. reference.azeriteEssenceID .. (reference.rank or 0), SearchForField, "azeriteEssenceID", reference.azeriteEssenceID, reference.rank);
 			elseif reference.speciesID then
 				AttachTooltipSearchResults(GameTooltip, 1, "speciesID:" .. reference.speciesID, SearchForField, "speciesID", reference.speciesID);
+			elseif reference.objectID then
+				AttachTooltipSearchResults(GameTooltip, 1, "objectID:" .. reference.objectID, SearchForField, "objectID", reference.objectID);
 			elseif reference.titleID then
 				AttachTooltipSearchResults(GameTooltip, 1, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID);
 			elseif refQuestID then
@@ -12867,42 +12429,62 @@ RowOnEnter = function (self)
 			app.AddQuestObjectivesToTooltip(GameTooltip, reference);
 		end
 		if reference.providers then
-			local first = true;
-			local providerType, providerID, providerString, providerTypeName, addId;
-			for i,provider in pairs(reference.providers) do
+			local first = 1;
+			local providerType, providerID
+			local CREATURE, OBJECT, ITEM = CREATURE, "Object", L.ITEM
+			local lineStrings = {}
+			for i,provider in ipairs(reference.providers) do
 				providerType = provider[1];
 				providerID = provider[2] or 0;
-				providerString = nil;
-				addId = nil;
+				wipe(lineStrings)
 				if providerType == "o" then
-					providerTypeName = "Object: ";
-					providerString = app.ObjectNames[providerID];
-					addId = app.Settings:GetTooltipSetting("objectID");
+					lineStrings[1] = OBJECT;
+					lineStrings[2] = ": "
+					lineStrings[3] = app.ObjectNames[providerID]
+					if app.Settings:GetTooltipSetting("objectID") then
+						lineStrings[4] = " ("
+						lineStrings[5] = providerID
+						lineStrings[6] = ")"
+					end
 				elseif providerType == "n" then
-					providerTypeName = "Creature: ";
-					providerString = providerID > 0 and app.NPCNameFromID[providerID];
-					addId = app.Settings:GetTooltipSetting("creatureID");
+					lineStrings[1] = CREATURE
+					lineStrings[2] = ": "
+					lineStrings[3] = providerID > 0 and app.NPCNameFromID[providerID];
+					if app.Settings:GetTooltipSetting("creatureID") then
+						lineStrings[4] = " ("
+						lineStrings[5] = providerID
+						lineStrings[6] = ")"
+					end
 				elseif providerType == "i" then
 					local _,name,_,_,_,_,_,_,_,icon = GetItemInfo(providerID);
 					if name then
-						providerTypeName = "Item: ";
+						lineStrings[1] = ITEM
+						lineStrings[2] = ": "
 						if icon then
-							providerTypeName = providerTypeName .. "|T" .. icon .. ":0|t";
+							lineStrings[3] = "|T"
+							lineStrings[4] = icon
+							lineStrings[5] = ":0|t"
 						end
-						providerString = name;
-						addId = app.Settings:GetTooltipSetting("itemID");
+						local count = #lineStrings
+						lineStrings[count + 1] = name;
+						if app.Settings:GetTooltipSetting("itemID") then
+							lineStrings[count + 2] = " ("
+							lineStrings[count + 3] = providerID
+							lineStrings[count + 4] = ")"
+						end
 					end
 				end
-				if providerString then
-					if addId then
-						providerString = providerString .. " (" .. providerID .. ")";
-					end
-					GameTooltip:AddDoubleLine(first and L.PROVIDERS or " ", providerTypeName .. providerString);
+				if #lineStrings > 0 then
+					GameTooltip:AddDoubleLine(first == 1 and L.PROVIDERS or " ", app.TableConcat(lineStrings));
 				else
-					GameTooltip:AddDoubleLine(first and L.PROVIDERS or " ", RETRIEVING_DATA);
+					GameTooltip:AddDoubleLine(first == 1 and L.PROVIDERS or " ", RETRIEVING_DATA);
 					missingMiscData = true;
 				end
-				first = nil;
+				if first > 25 then
+					GameTooltip:AddDoubleLine(" ", L.AND_ .. (#reference.providers - first) .. L._MORE .. "...");
+					break
+				end
+				first = first + 1;
 			end
 		end
 		local coord = reference.coord or reference.coord_tooltip;
@@ -12982,17 +12564,7 @@ RowOnEnter = function (self)
 		elseif reference.isMonthly then GameTooltip:AddLine(L["COMPLETED_MONTHLY"]);
 		elseif reference.isYearly then GameTooltip:AddLine(L["COMPLETED_YEARLY"]);
 		elseif reference.repeatable then GameTooltip:AddLine(L["COMPLETED_MULTIPLE"]); end
-		if initialBuild and not GameTooltipModel:TrySetModel(reference) and reference.icon then
-			GameTooltipIcon:SetSize(72,72);
-			GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
-			local texcoord = reference.previewtexcoord or reference.texcoord;
-			if texcoord then
-				GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
-			else
-				GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
-			end
-			GameTooltipIcon:Show();
-		end
+		if initialBuild then GameTooltip:SetATTReference(reference, self); end
 		if reference.cost then
 			if type(reference.cost) == "table" then
 				local _, name, icon, amount;
@@ -13033,7 +12605,7 @@ RowOnEnter = function (self)
 			GameTooltip:AddDoubleLine(L["CRITERIA_FOR"], GetAchievementLink(reference.achievementID));
 		end
 		if app.Settings:GetTooltipSetting("Progress") then
-			local right = GetProgressTextForTooltip(reference, app.Settings:GetTooltipSetting("ShowIconOnly"));
+			local right = GetProgressTextForTooltip(reference);
 			if right and right ~= "" and right ~= "---" then
 				GameTooltipTextRight1:SetText(right);
 				GameTooltipTextRight1:Show();
@@ -13279,7 +12851,8 @@ RowOnEnter = function (self)
 							end
 						elseif legacyLoot then
 							-- Not available at all, best loot spec is the one with the most number of items in it.
-							local most, bestSpecID = 0;
+							local most = 0;
+							local bestSpecID
 							for i=1,numSpecializations,1 do
 								local id = GetSpecializationInfo(i);
 								local specHit = specHits[id] or 0;
@@ -13535,10 +13108,9 @@ RowOnEnter = function (self)
 			end
 		end
 		local fields = {
-			-- "collectibleAsUpgrade",
 			"__type",
-			"key",
-			"hash",
+			-- "key",
+			-- "hash",
 			-- "name",
 			-- "link",
 			-- "sourceIgnored",
@@ -13546,9 +13118,14 @@ RowOnEnter = function (self)
 			-- "collected",
 			-- "trackable",
 			-- "saved",
-			-- "collectibleAsCost",
-			-- "costTotal",
-			-- "costProgress",
+			"collectibleAsCost",
+			"costTotal",
+			"filledCost",
+			"isUpgrade",
+			"collectibleAsUpgrade",
+			"upgradeTotal",
+			"filledUpgrade",
+			"skipFill",
 			-- "itemID",
 			-- "modItemID"
 		};
@@ -13566,15 +13143,10 @@ RowOnEnter = function (self)
 	end
 end
 RowOnLeave = function (self)
-	if GameTooltip then
-		GameTooltip:ClearLines();
-		GameTooltip:Hide();
-		GameTooltipIcon.icon.Background:Hide();
-		GameTooltipIcon.icon.Border:Hide();
-		GameTooltipIcon:Hide();
-		GameTooltipModel:Hide();
-		GameTooltip.IsRefreshing = nil;
-	end
+	GameTooltip:ClearLines();
+	GameTooltip:Hide();
+	GameTooltip:ClearATTReferenceTexture();
+	GameTooltip.IsRefreshing = nil;
 end
 CreateRow = function(self)
 	local row = CreateFrame("Button", nil, self);
@@ -14821,8 +14393,8 @@ local BaseFilterHeaderClone = app.BaseObjectFields({
 	["trackable"] = app.EmptyFunction,
 	["collectibleAsCost"] = app.EmptyFunction,
 	["costCollectibles"] = app.EmptyFunction,
-	["hasUpgradeNested"] = app.EmptyFunction,
-	["costNested"] = app.EmptyFunction,
+	["costTotal"] = app.EmptyFunction,
+	["upgradeTotal"] = app.EmptyFunction,
 	["g"] = app.EmptyFunction,
 	["visible"] = app.EmptyFunction,
 	-- ["back"] = function(t)
@@ -15473,6 +15045,9 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			-- 	return 0.3;	-- visibility of which rows are cloned
 			-- end,
 		}, "VisualHeaderClone");
+		-- We don't want the BaseClass fields to be part of the VisualHeaderClone __class
+		-- since that prevents those fields from falling through to the BaseObject as expected
+		wipe(BaseVisualHeaderClone.__class)
 		-- Fields in the wrapped object which should not persist when represented as a Header
 		for field,_ in pairs(app.MergeSkipFields) do
 			BaseVisualHeaderClone.__class[field] = app.EmptyFunction
@@ -15494,7 +15069,6 @@ customWindowUpdates["CurrentInstance"] = function(self, force, got)
 			"c",
 			"nmc",
 			"nmr",
-			"hash",
 		}) do
 			BaseVisualHeaderClone.__class[field] = app.EmptyFunction
 		end
@@ -16099,16 +15673,6 @@ customWindowUpdates["RaidAssistant"] = function(self)
 			local raidassistant, lootspecialization, dungeondifficulty, raiddifficulty, legacyraiddifficulty;
 
 			-- Raid Assistant
-			local difficultyLookup = {
-				personalloot = "Personal Loot",
-				group = "Group Loot",
-				master = "Master Loot",
-			};
-			local difficultyDescriptions = {
-				personalloot = L["PERSONAL_LOOT_DESC"],
-				group = "Group loot, round-robin for normal items, rolling for special ones.\n\nClick twice to create a group automatically if you're by yourself.",
-				master = "Master looter, designated player distributes loot.\n\nClick twice to create a group automatically if you're by yourself.",
-			};
 			local switchDungeonDifficulty = function(row, button)
 				self:SetData(raidassistant);
 				SetDungeonDifficultyID(row.ref.difficultyID);
@@ -17982,15 +17546,13 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 		if not self.initialized then
 			self.initialized = true;
 			force = true;
-			local data = {
-				["text"] = L["WORLD_QUESTS"],
+			local data = app.CreateRawText(L.WORLD_QUESTS, {
 				["icon"] = "Interface\\Icons\\INV_Misc_Map08.blp",
 				["description"] = L["WORLD_QUESTS_DESC"],
 				["indent"] = 0,
 				["back"] = 1,
 				["g"] = {
-					{
-						["text"] = L["UPDATE_WORLD_QUESTS"],
+					app.CreateRawText(L.UPDATE_WORLD_QUESTS, {
 						["icon"] = "Interface\\Icons\\INV_Misc_Map_01",
 						["description"] = L["UPDATE_WORLD_QUESTS_DESC"],
 						["hash"] = "funUpdateWorldQuests",
@@ -17999,9 +17561,9 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 							return true;
 						end,
 						["OnUpdate"] = app.AlwaysShowUpdate,
-					},
+					}),
 				},
-			};
+			})
 			self:SetData(data);
 			-- Build the initial heirarchy
 			self:BuildData();
@@ -18085,7 +17647,14 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 						{ 14 },	-- Arathi Highlands
 					},
 				},
-			};
+			}
+			local RepeatablesPerMapID = {
+				[2200] = {	-- Emerald Dream
+					78319,	-- The Superbloom
+				}
+			}
+			-- Blizz likes to list the same quest on multiple maps
+			local AddedQuestIDs = {}
 			self.Clear = function(self)
 				local temp = self.data.g[1];
 				wipe(self.data.g);
@@ -18101,7 +17670,8 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				if pois then
 					for i,poi in ipairs(pois) do
 						-- only include Tasks on this actual mapID since each Zone mapID is checked individually
-						if poi.mapID == mapID then
+						if poi.mapID == mapID and not AddedQuestIDs[poi.questId] then
+							AddedQuestIDs[poi.questId] = true
 							local questObject = GetPopulatedQuestObject(poi.questId);
 							if self.includeAll or
 								-- include the quest in the list if holding shift and tracking quests
@@ -18131,7 +17701,8 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				if questLines then
 					for id,questLine in pairs(questLines) do
 						-- dont show 'hidden' quest lines... not sure what this is exactly
-						if not questLine.hidden then
+						if not questLine.hidden and not AddedQuestIDs[questLine.questID] then
+							AddedQuestIDs[questLine.questID] = true
 							local questObject = GetPopulatedQuestObject(questLine.questID);
 							if self.includeAll or
 								-- include the quest in the list if holding shift and tracking quests
@@ -18151,6 +17722,29 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					self.retry = true;
 				end
 			end
+			-- Static Repeatables
+			self.MergeRepeatables = function(self, mapObject)
+				local mapID = mapObject.mapID;
+				if not mapID then return; end
+				local repeatables = RepeatablesPerMapID[mapID]
+				if not repeatables then return end
+
+				local questObject
+				for _,questID in ipairs(repeatables) do
+					questObject = GetPopulatedQuestObject(questID)
+					if self.includeAll or
+						-- not saved
+						questObject.repeatable then
+						-- if mapID == 1355 then
+							-- app.PrintDebug("WQ",questObject.questID);
+						-- end
+						NestObject(mapObject, questObject);
+						-- see if need to retry based on missing data
+						-- if not self.retry and questObject.missingData then self.retry = true; end
+					end
+				end
+
+			end
 			self.BuildMapAndChildren = function(self, mapObject)
 				if not mapObject.mapID then return; end
 
@@ -18158,9 +17752,10 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 
 				-- Merge Tasks for Zone
 				self:MergeTasks(mapObject);
-
 				-- Merge Storylines for Zone
 				self:MergeStorylines(mapObject);
+				-- Merge Repeatables for Zone
+				self:MergeRepeatables(mapObject);
 
 				-- look for quests on map child maps as well
 				local mapChildInfos = C_Map_GetMapChildrenInfo(mapObject.mapID, 3);
@@ -18170,13 +17765,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 						C_QuestLine_RequestQuestLinesForMap(mapInfo.mapID);
 						local subMapObject = app.CreateMapWithStyle(mapInfo.mapID);
 
-						-- Merge Tasks for Zone
-						self:MergeTasks(subMapObject);
-
-						-- Merge Storylines for Zone
-						self:MergeStorylines(subMapObject);
-
-						-- Build children of this map as well
+						-- Build the children maps
 						self:BuildMapAndChildren(subMapObject);
 
 						NestObject(mapObject, subMapObject);
@@ -18192,6 +17781,7 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 					return;
 				end
 				-- Rebuild all World Quest data
+				wipe(AddedQuestIDs)
 				-- app.PrintDebug("Rebuild WQ Data")
 				self.retry = nil;
 				-- Put a 'Clear World Quests' click first in the list
@@ -18313,7 +17903,9 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				local numRandomDungeons = GetNumRandomDungeons();
 				-- print(numRandomDungeons,"numRandomDungeons");
 				if numRandomDungeons > 0 then
-					local groupFinder = { achID = 4476, text = DUNGEONS_BUTTON, collectible = false, trackable = false, g = {} };
+					local groupFinder = { text = DUNGEONS_BUTTON, icon = app.asset("Category_GroupFinder") };
+					local gfg = {}
+					groupFinder.g = gfg
 					for index=1,numRandomDungeons,1 do
 						local dungeonID = GetLFGRandomDungeonInfo(index);
 						-- app.PrintDebug("RandInfo",index,GetLFGRandomDungeonInfo(index));
@@ -18323,9 +17915,11 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 						-- print(dungeonID,name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, minGearLevel);
 						local _, gold, unknown, xp, unknown2, numRewards, unknown = GetLFGDungeonRewards(dungeonID);
 						-- print("GetLFGDungeonRewards",dungeonID,GetLFGDungeonRewards(dungeonID));
-						local header = { dungeonID = dungeonID, text = name, description = description, lvl = { minRecLevel or 1, maxRecLevel }, OnUpdate = OnUpdateForLFGHeader, g = {}};
+						local header = { dungeonID = dungeonID, text = name, description = description, lvl = { minRecLevel or 1, maxRecLevel }, OnUpdate = OnUpdateForLFGHeader}
+						local hg = {}
+						header.g = hg
 						if expansionLevel and not isHoliday then
-							header.icon = setmetatable({["tierID"]=expansionLevel + 1}, app.BaseTier).icon;
+							header.icon = app.CreateTier(expansionLevel + 1).icon;
 						elseif isTimeWalker then
 							header.icon = app.asset("Difficulty_Timewalking");
 						end
@@ -18354,9 +17948,9 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 									NestObjects(thing, data.g);	-- no need to clone, everything is re-created at the end
 								end
 							end
-							NestObject(header, thing);
+							hg[#hg + 1] = thing
 						end
-						NestObject(groupFinder, header);
+						gfg[#gfg + 1] = header
 					end
 					tinsert(temp, CreateObject(groupFinder));
 				end
@@ -18414,7 +18008,8 @@ app.LoadDebugger = function()
 				TLUG = 1,
 				locked = 1,
 				collectibleAsCost = 1,
-				costNested = 1,
+				costTotal = 1,
+				upgradeTotal = 1,
 				icon = 1,
 				_OnUpdate = 1,
 				_SettingsRefresh = 1,
@@ -18662,7 +18257,7 @@ app.LoadDebugger = function()
 					DelayedCallback(AddMerchant, 1, UnitGUID("npc"));
 				elseif e == "TRADE_SKILL_LIST_UPDATE" then
 					local tradeSkillID = app.GetTradeSkillLine();
-					local currentCategoryGroup, currentCategoryID, categories = {}, -1, {};
+					local currentCategoryID, categories = -1, {};
 					local categoryList, rawGroups = {}, {};
 					local categoryIDs = { C_TradeSkillUI.GetCategories() };
 					for i = 1,#categoryIDs do
@@ -19187,7 +18782,6 @@ app.OpenAuctionModule = function(self)
 		window:Hide();
 
 		-- Cache some functions to make them faster
-		local _GetAuctionItemInfo, _GetAuctionItemLink = GetAuctionItemInfo, GetAuctionItemLink;
 		local origSideDressUpFrameHide, origSideDressUpFrameShow = SideDressUpFrame.Hide, SideDressUpFrame.Show;
 		SideDressUpFrame.Hide = function(...)
 			origSideDressUpFrameHide(...);
@@ -19375,14 +18969,6 @@ app.Startup = function()
 	app.L = L;
 	app.CategoryNames = nil;
 	app.ActiveCustomCollects = {};
-
-	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
-		type = "launcher",
-		icon = app.asset("logo_32x32"),
-		OnClick = AllTheThings_MinimapButtonOnClick,
-		OnEnter = AllTheThings_MinimapButtonOnEnter,
-		OnLeave = AllTheThings_MinimapButtonOnLeave,
-	});
 
 	-- Character Data Storage
 	local characterData = LocalizeGlobalIfAllowed("ATTCharacterData", true);

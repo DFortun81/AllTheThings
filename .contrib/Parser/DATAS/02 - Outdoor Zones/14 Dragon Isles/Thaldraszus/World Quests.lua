@@ -84,7 +84,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 58.2, 80.0, THALDRASZUS },
 					["g"] = {
 						i(198597),	-- Time-Lost Possession (QI!)
+						i(198649),	-- Time-Lost Possession (QI!)
 						i(198564),	-- Time-Lost Relic (QI!)
+						i(198601),	-- Time-Lost Relic (QI!)
+						i(198602),	-- Time-Lost Relic (QI!)
 					},
 				}),
 				petbattle(q(71166, {	-- The Oldest Dragonfly

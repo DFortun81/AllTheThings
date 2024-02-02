@@ -5457,7 +5457,7 @@ root(ROOTS.PVP, {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.4.0", "removed 5.4.7" }, }, {
 				ach(8649),	-- Challenger: Mists of Pandaria Season 3/Season 14
 				ach(8645, {	-- Duelist: Mists of Pandaria Season 3/Season 14
-					i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+					i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 						["u"] = ELITE_PVP_REQUIREMENT,
 						["timeline"] = { ADDED_7_3_2 },
 					}),
@@ -5481,7 +5481,7 @@ root(ROOTS.PVP, {
 				ach(8654, {	-- Hero of the Alliance: Grievous
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+						i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["u"] = ELITE_PVP_REQUIREMENT,
 							["timeline"] = { ADDED_7_3_2 },
 						}),
@@ -5490,7 +5490,7 @@ root(ROOTS.PVP, {
 				ach(8657, {	-- Hero of the Horde: Grievous
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+						i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["u"] = ELITE_PVP_REQUIREMENT,
 							["timeline"] = { ADDED_7_3_2 },
 						}),
@@ -8599,7 +8599,7 @@ root(ROOTS.PVP, {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { "added 5.4.7", "removed 6.0.0" }, }, {
 				ach(8670),	-- Challenger: Mists of Pandaria Season 4/Season 15
 				ach(8668, {	-- Duelist: Mists of Pandaria Season 4/Season 15
-					i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+					i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 						["u"] = ELITE_PVP_REQUIREMENT,
 						["timeline"] = { ADDED_7_3_2 },
 					}),
@@ -8610,7 +8610,7 @@ root(ROOTS.PVP, {
 				ach(8658, {	-- Hero of the Alliance: Prideful
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+						i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["u"] = ELITE_PVP_REQUIREMENT,
 							["timeline"] = { ADDED_7_3_2 },
 						}),
@@ -8619,7 +8619,7 @@ root(ROOTS.PVP, {
 				ach(8659, {	-- Hero of the Horde: Prideful
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+						i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["u"] = ELITE_PVP_REQUIREMENT,
 							["timeline"] = { ADDED_7_3_2 },
 						}),

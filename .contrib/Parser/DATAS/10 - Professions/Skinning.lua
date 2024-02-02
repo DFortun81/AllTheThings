@@ -221,7 +221,8 @@ profession(SKINNING, {
 		n(103675, {	-- Felhide Gargantuan
 			["description"] = "These mobs are only available during a World Quest. They can only be skinned one time, similarly to the Slice of Bacon cooking quests.",
 			["groups"] = {
-				i(124116, {	-- Felhide
+				i(124116),	-- Felhide
+				header(HEADERS.Item, 124116, {	-- Felhide
 					q(40156, {	-- Felhide Sample
 						["provider"] = { "i", 129863 },	-- Felhide Sample
 						["maps"] = {
@@ -255,7 +256,8 @@ profession(SKINNING, {
 				}),
 			},
 		}),
-		i(151566, {	-- Fiendish Leather
+		i(151566),	-- Fiendish Leather
+		header(HEADERS.Item, 151566, {	-- Fiendish Leather
 			q(48040, {	-- Tainted Scraps
 				["provider"] = { "i", 151866 },	-- Tainted Scraps
 				["maps"] = {
@@ -292,7 +294,8 @@ profession(SKINNING, {
 				},
 			}),
 		}),
-		i(124115, {	-- Stormscale
+		i(124115),	-- Stormscale
+		header(HEADERS.Item, 124115, {	-- Stormscale
 			q(40141, {	-- Stormscale Sample
 				["provider"] = { "i", 129862 },	-- Stormscale Sample
 				["maps"] = {
@@ -396,7 +399,8 @@ profession(SKINNING, {
 				},
 			}),
 		}),
-		i(124113, {	-- Stonehide Leather
+		i(124113),	-- Stonehide Leather
+		header(HEADERS.Item, 124113, {	-- Stonehide Leather
 			q(40131, {	-- Stonehide Leather Sample
 				["provider"] = { "i", 129860 },	-- Stonehide Leather Sample
 				["maps"] = {

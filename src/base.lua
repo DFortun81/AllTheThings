@@ -222,7 +222,7 @@ app.ClassIndex = classID;
 app.Class = classFile;
 
 -- Determine the player's race information.
-local raceName, race, raceID = UnitRace("player");
+local _, race, raceID = UnitRace("player");
 local raceIndex = app.RaceDB[race] or raceID;
 app.RaceIndex = type(raceIndex) == "table" and raceIndex[factionGroup] or raceIndex;
 app.RaceID = raceID;

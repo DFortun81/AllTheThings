@@ -41,7 +41,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 			d(NORMAL_DUNGEON, bubbleDownSelf({ ["timeline"] = REMOVED_7_3_5 }, {
 				e(124, {	-- Temple Guardian Anhuur
 					["crs"] = { 39425 },	-- Temple Guardian Anhuur
-					["groups"] = {				
+					["groups"] = {
 						i(55889), -- Anhuur's Hymnal
 						i(55890), -- Awakening Footfalls
 						i(55887), -- Belt of Petrified Tears
@@ -51,7 +51,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				}),
 				e(125, {	-- Earthrager Ptah
 					["crs"] = { 39428 },	-- Earthrager Ptah
-					["groups"] = {	
+					["groups"] = {
 						i(56093), -- Breastplate of the Risen Land
 						i(56096), -- Bulwark of the Primordial Mound
 						i(56095), -- Mouth of the Earth
@@ -61,7 +61,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				}),
 				e(126, {	-- Anraphet
 					["crs"] = { 39788 },	-- Anraphet
-					["groups"] = {	
+					["groups"] = {
 						i(57855), -- Alpha Bracers
 						i(57860), -- Anraphet's Regalia
 						i(57857), -- Boots of Crumbling Ruin
@@ -71,7 +71,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				}),
 				e(127, {	-- Isiset, Construct of Magic
 					["crs"] = { 39587 },	-- Isiset, Construct of Magic
-					["groups"] = {	
+					["groups"] = {
 						i(55992), -- Armguards of Unearthly Light
 						i(55995), -- Blood of Isiset
 						i(55993), -- Legwraps of Astral Rain
@@ -81,7 +81,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				}),
 				e(128, {	-- Ammunae, Construct of Life
 					["crs"] = { 39731 },	-- Ammunae, Construct of Life
-					["groups"] = {				
+					["groups"] = {
 						i(56000), -- Band of Life Energy
 						i(55997), -- Bloodpetal Mantle
 						i(55998), -- Robes of Rampant Growth
@@ -90,7 +90,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				}),
 				e(129, {	-- Setesh, Construct of Destruction
 					["crs"] = { 39732 },	-- Setesh, Construct of Destruction
-					["groups"] = {					
+					["groups"] = {
 						i(57862), -- Chaotic Wrappings
 						i(57861), -- Helm of Setesh
 						i(57864), -- Helm of the Typhonic Beast
@@ -100,7 +100,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				}),
 				e(130, {	-- Rajh, Construct of Sun
 					["crs"] = { 39378 },	-- Rajh, Construct of Sun
-					["groups"] = {					
+					["groups"] = {
 						-- #if BEFORE 7.3.5
 						ach(4841),	-- Halls of Origination
 						-- #endif
@@ -128,7 +128,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					}),
 					e(124, {	-- Temple Guardian Anhuur
 						["crs"] = { 39425 },	-- Temple Guardian Anhuur
-						["groups"] = {						
+						["groups"] = {
 							ach(5293),	-- I Hate That Song
 							i(56407), -- Anhuur's Hymnal
 							i(56408), -- Awakening Footfalls
@@ -139,7 +139,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					}),
 					e(125, {	-- Earthrager Ptah
 						["crs"] = { 39428 },	-- Earthrager Ptah
-						["groups"] = {						
+						["groups"] = {
 							ach(5294),	-- Straw That Broke the Camel's Back
 							i(56425), -- Breastplate of the Risen Land
 							i(56426), -- Bulwark of the Primordial Mound
@@ -150,7 +150,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					}),
 					e(126, {	-- Anraphet
 						["crs"] = { 39788 },	-- Anraphet
-						["groups"] = {	
+						["groups"] = {
 							i(57870), -- Alpha Bracers
 							i(57868), -- Anraphet's Regalia
 							i(57867), -- Boots of Crumbling Ruin
@@ -160,7 +160,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					}),
 					e(127, {	-- Isiset, Construct of Magic
 						["crs"] = { 39587 },	-- Isiset, Construct of Magic
-						["groups"] = {						
+						["groups"] = {
 							i(56416), -- Armguards of Unearthly Light
 							i(56414), -- Blood of Isiset
 							i(56413), -- Legwraps of Astral Rain
@@ -170,7 +170,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					}),
 					e(128, {	-- Ammunae, Construct of Life
 						["crs"] = { 39731 },	-- Ammunae, Construct of Life
-						["groups"] = {						
+						["groups"] = {
 							i(56418), -- Band of Life Energy
 							i(56419), -- Bloodpetal Mantle
 							i(56417), -- Robes of Rampant Growth
@@ -179,7 +179,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					}),
 					e(129, {	-- Setesh, Construct of Destruction
 						["crs"] = { 39732 },	-- Setesh, Construct of Destruction
-						["groups"] = {						
+						["groups"] = {
 							i(57875), -- Chaotic Wrappings
 							i(57871), -- Helm of the Typhonic Beast
 							i(57873), -- Helm of Setesh
@@ -189,7 +189,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					}),
 					e(130, {	-- Rajh, Construct of Sun
 						["crs"] = { 39378 },	-- Rajh, Construct of Sun
-						["groups"] = {						
+						["groups"] = {
 							ach(5065),	-- Heroic: Halls of Origination
 							ach(5139),	-- Heroic: Halls of Origination Guild Run
 							ach(5295),	-- Sun of a...
@@ -211,7 +211,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 			d(NormalPlus, {
 				e(124, {	-- Temple Guardian Anhuur
 					["crs"] = { 39425 },	-- Temple Guardian Anhuur
-					["groups"] = {	
+					["groups"] = {
 						i(56407), -- Anhuur's Hymnal
 						i(56408), -- Awakening Footfalls
 						i(56410), -- Belt of Petrified Tears
@@ -221,7 +221,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				}),
 				e(125, {	-- Earthrager Ptah
 					["crs"] = { 39428 },	-- Earthrager Ptah
-					["groups"] = {					
+					["groups"] = {
 						i(56425), -- Breastplate of the Risen Land
 						i(56426), -- Bulwark of the Primordial Mound
 						i(56422), -- Mouth of the Earth
@@ -231,33 +231,33 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				}),
 				e(126, {	-- Anraphet
 					["crs"] = { 39788 },	-- Anraphet
-					["groups"] = {					
+					["groups"] = {
 						i(57870), -- Alpha Bracers
 						i(57868), -- Anraphet's Regalia
 						i(57867), -- Boots of Crumbling Ruin
-						i(157611, { -- Crown of Patient Vigil
+						i(157611, {	-- Crown of Patient Vigil
 							["timeline"] = { ADDED_7_3_5 },
-						}),						
+						}),
 						i(57866), -- Mantle of Soft Shadows
 						i(57869), -- Omega Breastplate
 					},
 				}),
 				e(127, {	-- Isiset, Construct of Magic
 					["crs"] = { 39587 },	-- Isiset, Construct of Magic
-					["groups"] = {					
+					["groups"] = {
 						i(56416), -- Armguards of Unearthly Light
 						i(56414), -- Blood of Isiset
 						i(56413), -- Legwraps of Astral Rain
 						i(56415), -- Nova Band
 						i(56412), -- Ring of Blinding Stars
-						i(157609, { -- Scepter of Stargazing
+						i(157609, {	-- Scepter of Stargazing
 							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
 				e(128, {	-- Ammunae, Construct of Life
 					["crs"] = { 39731 },	-- Ammunae, Construct of Life
-					["groups"] = {					
+					["groups"] = {
 						i(56418), -- Band of Life Energy
 						i(56419), -- Bloodpetal Mantle
 						i(56417), -- Robes of Rampant Growth
@@ -266,7 +266,7 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				}),
 				e(129, {	-- Setesh, Construct of Destruction
 					["crs"] = { 39732 },	-- Setesh, Construct of Destruction
-					["groups"] = {	
+					["groups"] = {
 						i(57875), -- Chaotic Wrappings
 						i(57871), -- Helm of the Typhonic Beast
 						i(57873), -- Helm of Setesh
@@ -276,8 +276,8 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 				}),
 				e(130, {	-- Rajh, Construct of Sun
 					["crs"] = { 39378 },	-- Rajh, Construct of Sun
-					["groups"] = {			
-						ach(4841),	-- Halls of Origination		
+					["groups"] = {
+						ach(4841),	-- Halls of Origination
 						i(56432), -- Band of Rays
 						i(56433), -- Blade of the Burning Sun
 						i(56428), -- Fingers of Light
@@ -301,19 +301,19 @@ root(ROOTS.Instances, tier(CATA_TIER, bubbleDown({ ["timeline"] = ADDED_4_0_3 },
 					})),
 					e(124, {	-- Temple Guardian Anhuur
 						["crs"] = { 39425 },	-- Temple Guardian Anhuur
-						["groups"] = {	
+						["groups"] = {
 							ach(5293),	-- I Hate That Song
 						},
 					}),
 					e(125, {	-- Earthrager Ptah
 						["crs"] = { 39428 },	-- Earthrager Ptah
-						["groups"] = {	
+						["groups"] = {
 							ach(5294),	-- Straw That Broke the Camel's Back
 						},
 					}),
 					e(130, {	-- Rajh, Construct of Sun
 						["crs"] = { 39378 },	-- Rajh, Construct of Sun
-						["groups"] = {						
+						["groups"] = {
 							ach(5065),	-- Heroic: Halls of Origination
 							ach(5139),	-- Heroic: Halls of Origination Guild Run
 							ach(5295),	-- Sun of a...

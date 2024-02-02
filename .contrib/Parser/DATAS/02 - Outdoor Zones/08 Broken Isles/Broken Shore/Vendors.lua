@@ -95,7 +95,7 @@ root(ROOTS.Zones, {
 					i(147451, {	-- Armorcrafter's Commendation
 						["cost"] = { { "c", 1226, 1000 }, },	-- 1,000x Nethershard
 					}),
-					i(141372, { -- Arsenal: Armaments of the Ebon Blade
+					i(141372, {	-- Arsenal: Armaments of the Ebon Blade
 						["ignoreBonus"] = true,
 						["cost"] = { { "c", 1226, 2000 }, },	-- 2,000x Nethershard
 						["g"] = {
@@ -116,7 +116,7 @@ root(ROOTS.Zones, {
 							i(141364),	-- Unholy 2H Sword
 						},
 					}),
-					i(141371, { -- Arsenal: Armaments of the Silver Hand
+					i(141371, {	-- Arsenal: Armaments of the Silver Hand
 						["ignoreBonus"] = true,
 						["cost"] = { { "c", 1226, 1000 }, },	-- 1,000x Nethershard
 						["g"] = {

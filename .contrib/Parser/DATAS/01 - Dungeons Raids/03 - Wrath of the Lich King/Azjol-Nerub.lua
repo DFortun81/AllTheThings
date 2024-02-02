@@ -9,7 +9,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 		["lvl"] = lvlsquish(67, 67, 15),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(480, { -- Azjol-Nerub
+				ach(480, {	-- Azjol-Nerub
 					crit(5436, {	-- Krik'thir the Gatewatcher
 						["_encounter"] = { 585, NORMAL_DUNGEON },
 					}),
@@ -18,11 +18,11 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 					-- #if ANYCLASSIC
 					-- NOTE: This boss has a different criteriaUID in classic for some dumb reason. BLIZZARD.
-					crit(5623, { -- Anub'arak
+					crit(5623, {	-- Anub'arak
 						["_encounter"] = { 587, NORMAL_DUNGEON },
 					}),
 					-- #else
-					crit(5438, { -- Anub'arak
+					crit(5438, {	-- Anub'arak
 						["_encounter"] = { 587, NORMAL_DUNGEON },
 					}),
 					-- #endif
@@ -108,7 +108,7 @@ root(ROOTS.Instances, tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, {
 					}),
 				})),
 				-- #endif
-				ach(491, { -- Heroic: Azjol-Nerub
+				ach(491, {	-- Heroic: Azjol-Nerub
 					crit(6848, {	-- Krik'thir the Gatewatcher
 						["_encounter"] = { 585, HEROIC_DUNGEON },
 					}),

@@ -1198,10 +1198,10 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					-- Alliance SW: n(12781,  {	-- Master Sergeant Biggins  &
 					-- Horde OG: n(12793,  {	-- Brave Stonehide
 					filter(NECK_F, {
-						i(28245, { -- Pendant of Dominance
+						i(28245, {	-- Pendant of Dominance
 							["timeline"] = { "added 2.0.3", "removed 2.5.2" },
 						}),
-						i(28244, { -- Pendant of Triumph
+						i(28244, {	-- Pendant of Triumph
 							["timeline"] = { "added 2.0.3", "removed 2.5.2" },
 						}),
 					}),
@@ -1209,98 +1209,98 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						i(28247, {	-- Band of Dominance
 							["timeline"] = { "added 2.0.3", "removed 2.5.2" },
 						}),
-						i(28246, { -- Band of Triumph
+						i(28246, {	-- Band of Triumph
 							["timeline"] = { "added 2.0.3", "removed 2.5.2" },
 						}),
 					}),
 					filter(TRINKET_F, {
-						i(28235, { -- Medallion of the Alliance (A) (Druid)
+						i(28235, {	-- Medallion of the Alliance (A) (Druid)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(28237, { -- Medallion of the Alliance (A) (Hunter)
+						i(28237, {	-- Medallion of the Alliance (A) (Hunter)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(28238, { -- Medallion of the Alliance (A) (Mage)
+						i(28238, {	-- Medallion of the Alliance (A) (Mage)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(28236, { -- Medallion of the Alliance (A) (Paladin)
+						i(28236, {	-- Medallion of the Alliance (A) (Paladin)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(30349, { -- Medallion of the Alliance (A) (Priest)
+						i(30349, {	-- Medallion of the Alliance (A) (Priest)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(28234, { -- Medallion of the Alliance (A) (Rogue)
+						i(28234, {	-- Medallion of the Alliance (A) (Rogue)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(30351, { -- Medallion of the Alliance (A) (Shaman)
+						i(30351, {	-- Medallion of the Alliance (A) (Shaman)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(30348, { -- Medallion of the Alliance (A) (Warlock)
+						i(30348, {	-- Medallion of the Alliance (A) (Warlock)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(30350, { -- Medallion of the Alliance (A) (Warrior)
+						i(30350, {	-- Medallion of the Alliance (A) (Warrior)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(25829, { -- Talisman of the Alliance
+						i(25829, {	-- Talisman of the Alliance
 							["timeline"] = { "added 2.0.3", "removed 6.0.1" },
 						}),
-						i(28241, { -- Medallion of the Horde (H) (Druid)
+						i(28241, {	-- Medallion of the Horde (H) (Druid)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(28243, { -- Medallion of the Horde (H) (Hunter)
+						i(28243, {	-- Medallion of the Horde (H) (Hunter)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(28239, { -- Medallion of the Horde (H) (Mage)
+						i(28239, {	-- Medallion of the Horde (H) (Mage)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(28242, { -- Medallion of the Horde (H) (Paladin)
+						i(28242, {	-- Medallion of the Horde (H) (Paladin)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(30346, { -- Medallion of the Horde (H) (Priest)
+						i(30346, {	-- Medallion of the Horde (H) (Priest)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(28240, { -- Medallion of the Horde (H) (Rogue)
+						i(28240, {	-- Medallion of the Horde (H) (Rogue)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(30345, { -- Medallion of the Horde (H) (Shaman)
+						i(30345, {	-- Medallion of the Horde (H) (Shaman)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(30343, { -- Medallion of the Horde (H) (Warlock)
+						i(30343, {	-- Medallion of the Horde (H) (Warlock)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(30344, { -- Medallion of the Horde (H) (Warrior)
+						i(30344, {	-- Medallion of the Horde (H) (Warrior)
 							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
 						}),
-						i(24551, { -- Talisman of the Horde
+						i(24551, {	-- Talisman of the Horde
 							["timeline"] = { "added 2.0.3", "removed 6.0.1" },
 						}),
 					}),
 					filter(RELICS_F, {
-						i(33945, { -- Gladiator's Idol of Resolve
+						i(33945, {	-- Gladiator's Idol of Resolve
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33942, { -- Gladiator's Idol of Steadfastness
+						i(33942, {	-- Gladiator's Idol of Steadfastness
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(28355, { -- Gladiator's Idol of Tenacity
+						i(28355, {	-- Gladiator's Idol of Tenacity
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33936, { -- Gladiator's Libram of Fortitude
+						i(33936, {	-- Gladiator's Libram of Fortitude
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(28356, { -- Gladiator's Libram of Justice
+						i(28356, {	-- Gladiator's Libram of Justice
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33948, { -- Gladiator's Libram of Vengeance
+						i(33948, {	-- Gladiator's Libram of Vengeance
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33939, { -- Gladiator's Totem of Indomitability
+						i(33939, {	-- Gladiator's Totem of Indomitability
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33951, { -- Gladiator's Totem of Survival
+						i(33951, {	-- Gladiator's Totem of Survival
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(28357, { -- Gladiator's Totem of the Third Wind
+						i(28357, {	-- Gladiator's Totem of the Third Wind
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
 					}),
@@ -1977,59 +1977,59 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					-- Alliance SW: n(23446,  {	-- Lieutenant Tristia --  &
 					-- Horde OG: n(24520, {	-- Doris Volanthius --
 					filter(NECK_F, {
-						i(33067, { -- Veteran's Pendant of Conquest
+						i(33067, {	-- Veteran's Pendant of Conquest
 							["timeline"] = { "added 2.0.3", "removed 2.5.4" },
 						}),
-						i(33065, { -- Veteran's Pendant of Dominance
+						i(33065, {	-- Veteran's Pendant of Dominance
 							["timeline"] = { "added 2.0.3", "removed 2.5.4" },
 						}),
-						i(33068, { -- Veteran's Pendant of Salvation
+						i(33068, {	-- Veteran's Pendant of Salvation
 							["timeline"] = { "added 2.0.3", "removed 2.5.4" },
 						}),
-						i(33067, { -- Veteran's Pendant of Conquest
+						i(33067, {	-- Veteran's Pendant of Conquest
 							["timeline"] = { "added 2.0.3", "removed 2.5.4" },
 						}),
-						i(33066, { -- Veteran's Pendant of Triumph
+						i(33066, {	-- Veteran's Pendant of Triumph
 							["timeline"] = { "added 2.0.3", "removed 2.5.4" },
 						}),
 					}),
 					filter(FINGER_F, {
-						i(33056, { -- Veteran's Band of Dominance
+						i(33056, {	-- Veteran's Band of Dominance
 							["timeline"] = { "added 2.0.3", "removed 2.5.4" },
 						}),
-						i(33064, { -- Veteran's Band of Salvation
+						i(33064, {	-- Veteran's Band of Salvation
 							["timeline"] = { "added 2.0.3", "removed 2.5.4" },
 						}),
-						i(33057, { -- Veteran's Band of Triumph
+						i(33057, {	-- Veteran's Band of Triumph
 							["timeline"] = { "added 2.0.3", "removed 2.5.4" },
 						}),
 					}),
 					filter(RELICS_F, {
-						i(33946, { -- Merciless Gladiator's Idol of Resolve
+						i(33946, {	-- Merciless Gladiator's Idol of Resolve
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33943, { -- Merciless Gladiator's Idol of Steadfastness
+						i(33943, {	-- Merciless Gladiator's Idol of Steadfastness
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33076, { -- Merciless Gladiator's Idol of Tenacity
+						i(33076, {	-- Merciless Gladiator's Idol of Tenacity
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33937, { -- Merciless Gladiator's Libram of Fortitude
+						i(33937, {	-- Merciless Gladiator's Libram of Fortitude
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33077, { -- Merciless Gladiator's Libram of Justice
+						i(33077, {	-- Merciless Gladiator's Libram of Justice
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33949, { -- Merciless Gladiator's Libram of Vengeance
+						i(33949, {	-- Merciless Gladiator's Libram of Vengeance
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33940, { -- Merciless Gladiator's Totem of Indomitability
+						i(33940, {	-- Merciless Gladiator's Totem of Indomitability
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33952, { -- Merciless Gladiator's Totem of Survival
+						i(33952, {	-- Merciless Gladiator's Totem of Survival
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33078, { -- Merciless Gladiator's Totem of the Third Wind
+						i(33078, {	-- Merciless Gladiator's Totem of the Third Wind
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
 					}),
@@ -2723,85 +2723,85 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					-- Alliance SW: n(23446,  {	-- Lieutenant Tristia --  &
 					-- Horde OG: n(24520, {	-- Doris Volanthius --
 					filter(NECK_F, {
-						i(33920, { -- Vindicator's Pendant of Conquest
+						i(33920, {	-- Vindicator's Pendant of Conquest
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33921, { -- Vindicator's Pendant of Dominance
+						i(33921, {	-- Vindicator's Pendant of Dominance
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						applyclassicphase(TBC_PHASE_FOUR, i(35317, { -- Vindicator's Pendant of Reprieve
+						applyclassicphase(TBC_PHASE_FOUR, i(35317, {	-- Vindicator's Pendant of Reprieve
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						})),
-						i(33922, { -- Vindicator's Pendant of Salvation
+						i(33922, {	-- Vindicator's Pendant of Salvation
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						applyclassicphase(TBC_PHASE_FOUR, i(35319, { -- Vindicator's Pendant of Subjugation
+						applyclassicphase(TBC_PHASE_FOUR, i(35319, {	-- Vindicator's Pendant of Subjugation
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						})),
-						i(33923, { -- Vindicator's Pendant of Triumph
+						i(33923, {	-- Vindicator's Pendant of Triumph
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
 					}),
 					filter(FINGER_F, {
-						i(33853, { -- Vindicator's Band of Dominance
+						i(33853, {	-- Vindicator's Band of Dominance
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33918, { -- Vindicator's Band of Salvation
+						i(33918, {	-- Vindicator's Band of Salvation
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						applyclassicphase(TBC_PHASE_FOUR, i(35320, { -- Vindicator's Band of Subjugation
+						applyclassicphase(TBC_PHASE_FOUR, i(35320, {	-- Vindicator's Band of Subjugation
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						})),
-						i(33919, { -- Vindicator's Band of Triumph
+						i(33919, {	-- Vindicator's Band of Triumph
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
 					}),
 					filter(RELICS_F, {
-						i(33947, { -- Vengeful Gladiator's Idol of Resolve
+						i(33947, {	-- Vengeful Gladiator's Idol of Resolve
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33944, { -- Vengeful Gladiator's Idol of Steadfastness
+						i(33944, {	-- Vengeful Gladiator's Idol of Steadfastness
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33841, { -- Vengeful Gladiator's Idol of Tenacity
+						i(33841, {	-- Vengeful Gladiator's Idol of Tenacity
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33938, { -- Vengeful Gladiator's Libram of Fortitude
+						i(33938, {	-- Vengeful Gladiator's Libram of Fortitude
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33842, { -- Vengeful Gladiator's Libram of Justice
+						i(33842, {	-- Vengeful Gladiator's Libram of Justice
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33950, { -- Vengeful Gladiator's Libram of Vengeance
+						i(33950, {	-- Vengeful Gladiator's Libram of Vengeance
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33941, { -- Vengeful Gladiator's Totem of Indomitability
+						i(33941, {	-- Vengeful Gladiator's Totem of Indomitability
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33953, { -- Vengeful Gladiator's Totem of Survival
+						i(33953, {	-- Vengeful Gladiator's Totem of Survival
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
-						i(33843, { -- Vengeful Gladiator's Totem of the Third Wind
+						i(33843, {	-- Vengeful Gladiator's Totem of the Third Wind
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						}),
 					}),
 					filter(TRINKET_F, {
-						applyclassicphase(TBC_PHASE_FOUR, i(35327, { -- Battlemaster's Alacrity
+						applyclassicphase(TBC_PHASE_FOUR, i(35327, {	-- Battlemaster's Alacrity
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						})),
-						applyclassicphase(TBC_PHASE_FOUR, i(34579, { -- Battlemaster's Audacity
+						applyclassicphase(TBC_PHASE_FOUR, i(34579, {	-- Battlemaster's Audacity
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						})),
-						applyclassicphase(TBC_PHASE_FOUR, i(34576, { -- Battlemaster's Cruelty
+						applyclassicphase(TBC_PHASE_FOUR, i(34576, {	-- Battlemaster's Cruelty
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						})),
-						applyclassicphase(TBC_PHASE_FOUR, i(34577, { -- Battlemaster's Depravity
+						applyclassicphase(TBC_PHASE_FOUR, i(34577, {	-- Battlemaster's Depravity
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						})),
-						applyclassicphase(TBC_PHASE_FOUR, i(34578, { -- Battlemaster's Determination
+						applyclassicphase(TBC_PHASE_FOUR, i(34578, {	-- Battlemaster's Determination
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						})),
-						applyclassicphase(TBC_PHASE_FOUR, i(34580, { -- Battlemaster's Perseverance
+						applyclassicphase(TBC_PHASE_FOUR, i(34580, {	-- Battlemaster's Perseverance
 							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
 						})),
 					}),

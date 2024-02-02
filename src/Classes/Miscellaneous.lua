@@ -8,7 +8,7 @@ local pairs, string_format
 
 -- App locals
 local AssignChildren = app.AssignChildren;
-local NestObjects, Colorize, CreateObject, NestObject, SearchForFieldContainer, SearchForObject
+local NestObjects, CreateObject, NestObject, SearchForFieldContainer, SearchForObject
 
 local DynamicDataCache = app.CreateDataCache("dynamic", true);
 local Runner = app.CreateRunner("dynamic");
@@ -20,7 +20,6 @@ app.Modules.Miscellaneous = api;
 app.AddEventHandler("OnLoad", function()
 	NestObject = app.NestObject
 	NestObjects = app.NestObjects
-	Colorize = app.Modules.Color.Colorize
 	CreateObject = app.__CreateObject
 	SearchForFieldContainer = app.SearchForFieldContainer
 	SearchForObject = app.SearchForObject;
@@ -248,6 +247,9 @@ app.CreateToggle = app.CreateClass("Toggle", "toggleID", {
 		return onclick
 	end,
 });
+
+-- Allows creating a group which is keyed based on only its 'text' field
+app.CreateRawText = app.CreateClass("RawText", "text", {})
 
 -- Allows creating an ATT object which can be expanded to trigger an async population of the dynamic data it should contain, based on provided data in 't'
 -- Expected t-data:

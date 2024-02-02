@@ -1008,6 +1008,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										i(176132, {	-- Contract: Lost Chalice Band (EC!)
 											["questID"] = 59488,
 										}),
+										i(182302),	-- Band Promotional Posters (QI!)
+										i(182310),	-- Confiscated Instruments (QI!)
+										i(182311),	-- Confiscated Stage Lights (QI!)
+										i(182312),	-- Confiscated Stage Props (QI!)
 									},
 								}),
 								q(61403, {	-- Ember Court: Maldraxxus Army
@@ -1508,10 +1512,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["coord"] = { 52.7, 82.6, BASTION },
 									["g"] = {
 										i(176125),	-- RSVP: Sika
-										i(180965),	-- Adonas's Promissory Note
-										i(180967),	-- Ikaran's Promissory Note
-										i(180966),	-- Leda's Promissory Note
-										i(180968),	-- Sophone's Promissory Note
+										i(180965),	-- Adonas's Promissory Note (QI!)
+										i(180967),	-- Ikaran's Promissory Note (QI!)
+										i(180966),	-- Leda's Promissory Note (QI!)
+										i(180968),	-- Sophone's Promissory Note (QI!)
 									},
 								}),
 								q(60916, {	-- RSVP: Stonehead
@@ -1520,6 +1524,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["coord"] = { 38.9, 66.0, REVENDRETH },
 									["g"] = {
 										i(178686),	-- RSVP: Stonehead
+										i(171343),	-- Blank Parchment (QI!)
+										i(171344),	-- Venthyr Calligraphy Set (QI!)
+										i(180466),	-- Forged Permission Slip (QI!)
 									},
 								}),
 								q(61139, {	-- RSVP: Choofa
@@ -1548,6 +1555,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 										i(181532, {	-- Stock: Appetizers (EC!)
 											["questID"] = 61498,
 										}),
+										i(182356),	-- Aged Windcheese (QI!)
+										i(182355),	-- Forgotten Sweetcheese (QI!)
+										i(182357),	-- Soggy Kelpcheese (QI!)
+										i(182365),	-- Sourbread Yeast Starter (QI!)
 									},
 								}),
 								q(63700, {	-- Stonehead's Best Friend
@@ -1950,7 +1961,10 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["timeline"] = { ADDED_
 									["provider"] = { "n", 172098 },	-- Lady Moonberry
 									["coord"] = { 48.9, 51.0, ARDENWEALD },
 									["g"] = {
+										i(181251),	-- Blooming Lasher Spur (QI!)
+										i(181250),	-- Gorm Pheromone Gland (QI!)
 										i(176112),	-- RSVP: Lady Moonberry
+										i(181252),	-- Silverheart Vine Leaves (QI!)
 									},
 								}),
 								q(61173, {	-- RSVP: Mikanikos

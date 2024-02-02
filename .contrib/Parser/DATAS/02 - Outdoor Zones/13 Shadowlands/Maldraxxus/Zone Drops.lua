@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				i(180594),	-- Calloused Bone
 			}),
 			filter(RECIPES, {
-				i(180781),	-- Pattern: Pink Party Hat
+				i(180781),	-- Pattern: Pink Party Hat (RECIPE!)
 			}),
 			filter(CLOTH, {
 				i(176986),	-- Bloodskin Cord

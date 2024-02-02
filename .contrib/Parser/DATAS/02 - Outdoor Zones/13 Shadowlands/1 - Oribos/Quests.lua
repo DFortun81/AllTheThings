@@ -749,12 +749,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
+				["g"] = {
+					i(178571),	-- A Slimy Correspondence (QI!)
+				},
 			}),
 			q(60257, {	-- A Valuable Find: Sanguine Depths
 				["sourceQuests"] = { 60274 },	-- Trading Favors
 				["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
+				["g"] = {
+					i(178576),	-- Ancient Broker Headpiece (QI!)
+				},
 			}),
 			q(60252, {	-- A Valuable Find: Spires of Ascension
 				["sourceQuests"] = { 60274 },	-- Trading Favors

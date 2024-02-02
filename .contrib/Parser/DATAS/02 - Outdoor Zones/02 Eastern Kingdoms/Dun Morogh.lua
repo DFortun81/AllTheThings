@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["groups"] = {
 					spell(921, {	-- Pickpocketing
 						i(2109, {	-- Frostmane Chain Vest
-							["timeline"] = { "added 10.1.7" },	-- ATT Discord 20.09.2023
+							["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 20.09.2023
 							["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel mobs on Azeroth.",
 							--	["cr"] = 706,	-- Frostmane Troll Whelp
 							["coords"] = {
@@ -897,7 +897,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 						-- #if AFTER 10.1.7
 						i(2259, {	-- Frostmane Club
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 706,	-- Frostmane Troll Whelp
 							["coords"] = {
 								-- #if AFTER LEGION
@@ -914,7 +914,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 						i(2108, {	-- Frostmane Leather Vest
 							["cr"] = 706,	-- Frostmane Troll Whelp
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["coords"] = {
 								-- #if AFTER LEGION
 								{ 21.2, 66.2, COLDRIDGE_VALLEY },
@@ -929,7 +929,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #if AFTER 10.1.7
 						i(2258, {	-- Frostmane Shortsword
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 37507,	-- Frostmane Blade
 							["coords"] = {
 								{ 36.8, 77.4, DUN_MOROGH },
@@ -938,7 +938,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #endif
 						i(2110, {	-- Light Magesmith Robe
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 946,	-- Frostmane Novice
 							["coords"] = {
 								-- #if AFTER LEGION
@@ -952,7 +952,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #if AFTER 10.1.7
 						i(2065, {	-- Rockjaw Blade
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1718,	-- Rockjaw Raider
 							["coords"] = {
 								{ 42.6, 66.0, DUN_MOROGH },
@@ -1500,7 +1500,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER 10.1.7
 			spell(921, {	-- Pickpocketing
 				i(2109, {	-- Frostmane Chain Vest
-					["timeline"] = { "added 10.1.7" },	-- ATT Discord 20.09.2023
+					["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 20.09.2023
 					["description"] = "Can be pickpocketed from Frostmane trolls in Dun Morogh and other lowlevel mobs on Azeroth.",
 					--	["cr"] = 41122,	-- Frostmane Snowstrider
 					["coords"] = {
@@ -1804,7 +1804,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				
+
 				q(25840, {	-- Eliminate the Resistance
 					["qg"] = 41298,	-- Slamp Wobblecog
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
@@ -2844,7 +2844,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(2069, {	-- Black Bear Hide Vest
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 03.09.2023 Data Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -2863,10 +2863,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Located in the Grizzled Den.",
 					["groups"] = {
 						i(3225, {	-- Bloodstained Knife
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 07.09.2023 ATT Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
 						}),
 						i(3008, {	-- Wendigo Fur Cloak
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 02.09.2023 Data Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 						}),
 					},
 				}),
@@ -2923,16 +2923,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(10554, {	-- Foreman Pants
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 07.09.2023 ATT Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
 						}),
 						i(10553, {	-- Foreman Vest
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 05.09.2023 ATT Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 					},
 				}),
 				n(1260, {	-- Great Father Arctikus
 					-- #if AFTER CATA
-					["coords"] = { 
+					["coords"] = {
 						{ 29.8, 67.8, NEW_TINKERTOWN },
 						{ 49.07, 37.12, DUN_MOROGH },
 					},
@@ -2944,10 +2944,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3223, {	-- Frostmane Scepter
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 						i(2546, {	-- Royal Frostmane Girdle
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 						}),
 					},
 				}),
@@ -2966,10 +2966,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(763, {	-- Ice-covered Bracers
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 03.09.2023 Data Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 						i(2254, {	-- Icepane Warhammer
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 07.09.2023 ATT Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
 						}),
 					},
 				}),
@@ -2995,10 +2995,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 38.4, 54.0, DUN_MOROGH },
 					-- #endif
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 07.09.2023 ATT Discord
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
 					["groups"] = {
 						i(2899, {	-- Wengido Collar
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 07.09.2023 ATT Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
 						}),
 					},
 				}),
@@ -3049,10 +3049,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(3224, {	-- Silver-lined Bracers
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 03.09.2023 Data Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 						}),
 						i(1965, {	-- White Wolf Gloves
-							["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 05.09.2023 ATT Discord
+							["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
 						}),
 					},
 				}),
@@ -3331,7 +3331,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(2067, {	-- Frostbit Staff
 					["cr"] = 1117,	-- Rockjaw Bonesnapper
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 79.2, 48.4, DUN_MOROGH },
 						{ 78.0, 54.2, DUN_MOROGH },
@@ -3340,7 +3340,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 10.1.7
 				-- Moved to the starting area.
 				i(2259, {	-- Frostmane Club
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1121,	-- Frostmane Snowstrider
 					["coords"] = {
 						{ 29.6, 79.0, DUN_MOROGH },
@@ -3350,7 +3350,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(2260, {	-- Frostmane Hand Axe
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["crs"] = {
 						1123,	-- Frostmane Headhunter
@@ -3372,7 +3372,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE 10.1.7
 				i(2258, {	-- Frostmane Shortsword
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1120,	-- Frostmane Troll
 					["coords"] = {
 						{ 26.6, 50.6, DUN_MOROGH },
@@ -3381,7 +3381,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(2257, {	-- Frostmane Staff
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1124,	-- Frostmane Shadowcaster
 					["coords"] = {
@@ -3405,7 +3405,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(2112, {	-- Lumberjack Jerkin
 					["cr"] = 1689,	-- Scarred Crag Boar
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 88.6, 51.4, DUN_MOROGH },
 						{ 81.6, 49.0, DUN_MOROGH },
@@ -3431,7 +3431,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(2898, {	-- Mountaineer Chestpiece
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1196,	-- Ice Claw Bear
 					-- #if BEFORE 4.0.3
 					["coords"] = {
@@ -3503,7 +3503,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if BEFORE 10.1.7
 				i(2065, {	-- Rockjaw Blade
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1116,	-- Rockjaw Ambusher
 					["coords"] = {
 						{ 72.6, 54.0, DUN_MOROGH },
@@ -3535,7 +3535,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(2066, {	-- Skull Hatchet
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 78.2, 52.2, DUN_MOROGH },
 						{ 76.6, 58.0, DUN_MOROGH },
@@ -3543,7 +3543,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 1115,	-- Rockjaw Skullthumper
 				}),
 				i(2114, {	-- Snowy Robe
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["cr"] = 1133,	-- Starving Winter Wolf
 					["coords"] = {
@@ -3574,7 +3574,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				i(2064, {	-- Trogg Club
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 80.0, 57.6, DUN_MOROGH },
 						{ 69.4, 58.8, DUN_MOROGH },
@@ -3586,7 +3586,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				i(5767, {	-- Violet Robes
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- ATT Discord 05.09.2023
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["coords"] = {
 						{ 49.8, 37.2, DUN_MOROGH },
 						{ 46.6, 40.6, DUN_MOROGH },

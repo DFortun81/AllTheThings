@@ -45,10 +45,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "This mob used to simply be rare and have a limited loot table. He was later repurposed for use with the BWL Attunement Quest Chain. The two items listed below were never available in WoW Classic.",
 					["groups"] = {
 						i(13254, {	-- Astral Guard
-							["timeline"] = { "removed 1.6.0", "added 10.1.7" },	-- 07.09.2023 ATT DISCORD
+							["timeline"] = { "removed 1.6.0", ADDED_10_1_7 },	-- 07.09.2023 ATT DISCORD
 						}),
 						i(13248, {	-- Burstshot Harquebus
-							["timeline"] = { "removed 1.6.0", "added 10.1.7" },	-- 07.09.2023 ATT Discord
+							["timeline"] = { "removed 1.6.0", ADDED_10_1_7 },	-- 07.09.2023 ATT Discord
 						}),
 						i(18987, {	-- Blackhand's Command
 							["timeline"] = { "removed 4.0.3" },	-- 07.09.2023 ATT Discord

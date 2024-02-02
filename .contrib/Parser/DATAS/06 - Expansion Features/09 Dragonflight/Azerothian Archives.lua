@@ -31,13 +31,27 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						title(536),	-- Isles Archivist
 					},
 				}),
-				ach(19787),	-- Clued in
+				ach(19787, {	-- Clued In
+					["description"] = "Look for glowing objects on the floor during Research World Quests, or find them at The Big Dig when someone has the relevant task.",
+					["providers"] = {
+						{ "n", 210079 },	-- Information-Stuffed Clue
+						{ "n", 206816 },	-- Information-Stuffed Clue
+						{ "n", 208938 },	-- Information-Stuffed Clue
+						{ "n", 207983 },	-- Information-Stuffed Clue
+						{ "n", 208082 },	-- Information-Stuffed Clue
+						{ "n", 208105 },	-- Information-Stuffed Clue
+						{ "n", 208132 },	-- Information-Stuffed Clue
+						{ "n", 208766 },	-- Information-Stuffed Clue
+					 },
+				}),
 				ach(19793, {	-- Finally At Rest
 					i(213134),	-- Hap'he (PET!)
 				}),
 				ach(19791, {	-- Goggle Wobble
 					crit(65404, {	-- Zenata danced with at Igira's Watch
 						["coord"] = { 38.1, 49.8, ZARALEK_CAVERN },
+						["provider"] = {"n",207763},	-- Zenata
+						["_noautomation"] = true,
 					}),
 					crit(65405, {	-- Zenata danced with at Dragonskull Island
 						["coord"] = { 77.1, 38.4, THE_FORBIDDEN_REACH },
@@ -47,35 +61,58 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 				}),
 				ach(19792, {	-- Just One More Thing
-					i(213133),	-- Reese (PET!)
+					["description"] = "Each related Research World Quest needs to be completed 3 times to get credit for one criteria.",
+					["g"] = {
+						i(213133),	-- Reese (PET!)
+						crit(65408, {	-- Lost Atheneum
+							--["coord"] = {},
+						}),
+						crit(65409, {	-- The Riverbed
+							["coord"] = { 69, 34.3, OHNAHRAN_PLAINS },
+						}),
+						crit(65410, {	-- Igira's Watch
+							--["coord"] = {},
+						}),
+						crit(65411, {	-- Gaze of Neltharion
+							["coord"] = { 47.6, 48.6, ZARALEK_CAVERN },
+						}),
+						crit(65412, {	-- Concord Observatory
+							--["coord"] = {},
+						}),
+						crit(65413, {	-- Winglord's Perch
+							--["coord"] = {},
+						}),
+					},
 				}),
 				ach(19789),	-- Relic Rescuer
 				ach(19788),	-- Tome Comber
-				ach(19786),	-- When a Rock is Just a Rock
+				ach(19786, {	-- When a Rock is Just a Rock
+					["description"] = "Can be found during Excavation World Quests, look for a rock near dirt piles or geysers."
+				}),
 			}),
 			n(DROPS, {
-				i(213185, { -- Dusty Centaur Tome
+				i(213185, {	-- Dusty Centaur Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
 				}),
-				i(213175, { -- Dusty Djaradin Tome
+				i(213175, {	-- Dusty Djaradin Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
 				}),
-				i(213188, { -- Dusty Dracthyr Tome
+				i(213188, {	-- Dusty Dracthyr Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
 				}),
-				i(213187, { -- Dusty Drakonid Tome
+				i(213187, {	-- Dusty Drakonid Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
 				}),
-				i(213186, { -- Dusty Niffen Tome
+				i(213186, {	-- Dusty Niffen Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
 				}),
-				i(213190, { -- Preserved Djaradin Tome
+				i(213190, {	-- Preserved Djaradin Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
 				}),
-				i(213189, { -- Preserved Dragonkin Tome
+				i(213189, {	-- Preserved Dragonkin Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
 				}),
-				i(213176, { -- Preserved Isles Tome
+				i(213176, {	-- Preserved Isles Tome
 					["sym"] = {{ "select", "npcID", 208029 },{"pop"}},
 				}),
 				i(213177, {	-- Immaculate Tome
@@ -185,6 +222,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 61.5, 31.1, THALDRASZUS },
 					["g"] = {
 						i(210956),	-- Archivist's Fire Totem (QI!)
+						i(205224),	-- Just a Rock
 					},
 				}),
 				q(78762, {	-- Your First Find
@@ -395,17 +433,12 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(77760, {	-- Curious Find: Dragonhorn Flute
 					["provider"] = { "i", 208733 },	-- Dragonhorn Flute (QI!)
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-						currency(2819),	-- Archivist Knowledge
-					},
+				}),
+				q(77766, {	-- Curious Find: Hole-Punched Bakar Tooth
+					["provider"] = { "i", 208737 },	-- Hole-Punched Bakar Tooth (QI!)
 				}),
 				q(77763, {	-- Curious Find: Waterlogged Ledger
 					["provider"] = { "i", 208734 },	-- Waterlogged Ledger (QI!)
-					["g"] = {
-						currency(2657),	-- Mysterious Fragment
-						currency(2819),	-- Archivist Knowledge
-					},
 				}),
 			}),
 			n(RARES, {
@@ -421,6 +454,7 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(212640),	-- Excavator's Trusty Satchel
 						i(212640),	-- Excavator's Utility Belt
 						i(212638),	-- Excavator's Work Shirt
+						i(208737),	-- Hole-Punched Bakar Tooth (QI!)
 						i(208733),	-- Dragonhorn Flute (QI!)
 						i(208734),	-- Waterlogged Ledger (QI!)
 					},
@@ -518,15 +552,39 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 				["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 					q(78645, {	-- Excavation: Buried in the Riverbed
 						["coord"] = { 65.9, 45.7, OHNAHRAN_PLAINS },
+						["g"] = {
+							i(205224),	-- Just a Rock
+						},
+					}),
+					q(78663, {	-- Excavation: Scattered Around the Tower
+						["coord"] = { 47.9, 48.7, ZARALEK_CAVERN },
+						["g"] = {
+							i(205224),	-- Just a Rock
+						},
 					}),
 					q(78739, {	-- Excavation: The Trove in the Tower
 						["coord"] = { 46.9, 48.8, ZARALEK_CAVERN },
+						["g"] = {
+							i(205224),	-- Just a Rock
+						},
 					}),
 					q(76587, {	-- Research: Centaur of Ohn'ahran Plains
 						["coord"] = { 69, 34.3, OHNAHRAN_PLAINS },
 					}),
+					q(76734, {	-- Research: Djaradin of Zaralek Cavern
+						["coord"] = { 44.1, 54.1, ZARALEK_CAVERN },
+					}),
 					q(76739, {	-- Research: Niffen of Zaralek Cavern
 						["coord"] = { 47.6, 48.6, ZARALEK_CAVERN },
+					}),
+					q(77424, {	-- Research: Dracthyr of Forbidden Reach
+						["coord"] = { 53.9, 36.7, THE_FORBIDDEN_REACH },
+					}),
+					q(77362, {	-- Research: Drakonid of Forbidden Reach
+						["coord"] = { 18.2, 13.2, THE_FORBIDDEN_REACH },
+					}),
+					q(78931, {	-- Technoscrying: The Mysteries of Dragonskull Island
+						["coord"] = { 76.8, 38.0, THE_FORBIDDEN_REACH },
 					}),
 					q(78616, {	-- Technoscrying: The Mysteries of the Concord Observatory
 						["coord"] = { 55, 46.2, THE_WAKING_SHORES },
@@ -542,18 +600,59 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 
 root(ROOTS.HiddenQuestTriggers, tier(DF_TIER, {
 	n(AZEROTHIAN_ARCHIVES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
-		q(79616),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434198)
-		q(79664),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434203)
-		q(79670),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434928)
 		q(79992),	-- After completing 'Finally, An Archivist' (questID 79223) (spellID 436735) (WQ unlock - Riverbed, Concord Observatory, and Lost Anethenum Sites)
 		q(79996),	-- After completing 'The Hidden Hand' (questID 77415) (spellID 436777) (WQ unlock - Dragonskull Island, Forbidden Reach Site)
 		q(79995),	-- After completing 'A Taste of the Past' (questID 77154) (spellID 436768) (WQ unlock - Winglord's Perch, Forbidden Reach Site)
 		q(79997),	-- After completing 'The Scale of it All' (questID 77425) (spellID 436778) (WQ unlock - Igira's Watch, Zaralek Cavern Site)
 		q(79994),	-- After completing 'Antiquated Antics' (questID 75604) (spellID 436766) (WQ unlock - Gaze of Neltharion, Zaralek Cavern Site)
-		q(79607),	-- After completing ZC world quest for Azerothian Archive
+		--didn't pop on 2nd week, probably removed or attached only for certain WQs?
 		q(79661),	-- After completing ZC world quest for Azerothian Archive
 		q(79662),	-- After completing Ohn'ahran Plains world quest for Azerothian Archive
 		q(79663),	-- After completing 2nd ZC world quest for Azerothian Archive
-		q(79596),	-- After completing 'Research: Centaur of Ohn'ahran Plains'
+		--weekly 'wrapper'
+		--seems like constantly fire, but other two is different per week?
+		q(79664),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434203)
+		--a (spellID 434934 (434928 & 434198))
+		q(79616),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434198)
+		q(79670),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434928)
+		--b (spellID 434936 (434929 & 434197))
+		q(79617),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434197)
+		q(79671),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434929) (fire same quest 2 times?)
+		--c (spellID 434937 (434930 & 434199))
+		--q(79618),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434199)
+		--q(79672),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434930)
+		--d (spellID 434938 (434931 & 434200))
+		--q(79619),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434200)
+		--q(79674),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434931)
+		--e (spellID 434939 (434932 & 434201))
+		--q(79620),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434201)
+		--q(79675),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434932)
+		--f (spellID 434940 (434750 (this spellID abandon qIDs 79616 - 79621) & 434933))
+		--q(79621),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434750)
+		--q(79684),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434750)
+		--q(79676),	-- Completes alongside the weekly Azerothian Archive quest (spellID 434933)
+		-- TODO: figure out what 2nd qids are for and what this 2 spells is doing (rotation, may be?)
+		-- 434945 (434203 & 434944 (this spellID didn't have any attached qid to it atm))
+		-- odd 434203 (434196 (missing in wowhead db?) & 434198 & 434197 & 434199 & 434200 & 434201 & 434202 (this spellID didn't have any attached qid to it atm))
+		--
+		-- "Just One More Thing" trackers
+		q(79601),	-- Lost Atheneum first completion
+		q(79600),	-- Lost Atheneum second completion
+		q(79599),	-- Lost Atheneum third completion
+		q(79596),	-- The Riverbed first completion
+		q(79597),	-- The Riverbed second completion
+		q(79598),	-- The Riverbed third completion
+		q(79604),	-- Igira's Watch first completion
+		q(79603),	-- Igira's Watch second completion
+		q(79602),	-- Igira's Watch third completion
+		q(79607),	-- Gaze of Neltharion first completion
+		q(79606),	-- Gaze of Neltharion second completion
+		q(79605),	-- Gaze of Neltharion third completion
+		q(79610),	-- Concord Observatory first completion
+		q(79609),	-- Concord Observatory second completion
+		q(79608),	-- Concord Observatory third completion
+		q(79613),	-- Winglord's Perch first completion
+		q(79612),	-- Winglord's Perch second completion
+		q(79611),	-- Winglord's Perch third completion
 	})),
 }));

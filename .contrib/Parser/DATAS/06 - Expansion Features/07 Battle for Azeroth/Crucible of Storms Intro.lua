@@ -4,8 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, {
 	tier(BFA_TIER, {
-		-- TODO: probably give this a better name/header
-		o(311218, {	-- Xal'atath, Blade of the Black Empire
+		header(HEADERS.Object, 311218, {	-- Xal'atath, Blade of the Black Empire
 			q(54438, {	-- Crucible of Storms: Relics of Shadow
 				["sourceQuests"] = { 54126 },	-- Twist the Knife
 				["provider"] = { "n", 146902 },	-- Brother Pike

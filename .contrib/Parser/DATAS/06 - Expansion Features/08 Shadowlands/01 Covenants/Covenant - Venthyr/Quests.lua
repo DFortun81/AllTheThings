@@ -635,6 +635,11 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 				},
 				["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 				["coord"] = { 72.7, 37.6, REVENDRETH },
+				["g"] = {
+					i(174094),	-- Boian's Fangs (QI!)
+					i(174095),	-- Daciana's Fangs (QI!)
+					i(174093),	-- Ionata's Fangs (QI!)
+				},
 			}),
 			q(57727, {	-- Stonevigil Unrest
 				["description"] = "Requires Renown 20.",

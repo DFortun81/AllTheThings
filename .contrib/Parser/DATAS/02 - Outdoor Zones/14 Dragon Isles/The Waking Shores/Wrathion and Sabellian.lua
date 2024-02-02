@@ -519,6 +519,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				n(186859, {	-- Worldcarver A'tir
 					["coord"] = { 30.0, 55.6, THE_WAKING_SHORES },
+					["crs"] = { 197395 },	-- Wurmling Bones
 					["cost"] = {{"i",191211,3}},	-- 3x Wurmling Bones
 					["questID"] = 74090,
 					["isDaily"] = true,
@@ -535,6 +536,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 			}),
 			n(VENDORS, {
+				n(199020, {	-- Atticus Belle (Same items as Lorena Belle, dont need sym)
+					["coord"] = { 26.6, 62.4, THE_WAKING_SHORES },
+				}),
 				n(193310, {	-- Dealer Vexil <Food and Drink>
 					["coord"] = { 34.8, 46.6, THE_WAKING_SHORES },
 					["g"] = {
@@ -900,6 +904,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(201839),	-- Netherforged Lavaproof Boots
 						},
 					}),
+				}),
+				n(199036, {	-- Xaldrass (Same items as Samia Inkling, dont need sym)
+					["coord"] = { 27.6, 56.2, THE_WAKING_SHORES },
 				}),
 			}),
 			n(ZONE_DROPS, {

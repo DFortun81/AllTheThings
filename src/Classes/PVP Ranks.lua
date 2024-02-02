@@ -35,8 +35,12 @@ local Create, Class = app.CreateClass("PVPRank", "pvpRankID", {
 	["lifetimeRank"] = function(t)
 		return select(3, GetPVPLifetimeStats()) or 0;
 	end,
-	["collectible"] = function(t)
+	["collectible"] = app.IsClassic and function(t)
 		return Collectible;
+	end
+	-- Retail (only visible with unobtainables anyway)
+	or function(t)
+		return app.Settings.Collectibles.Titles
 	end,
 	["collected"] = function(t)
 		return t.lifetimeRank >= (t.pvpRankID + 4);

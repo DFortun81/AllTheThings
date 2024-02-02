@@ -58,30 +58,30 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["crs"] = { 56637 },	-- Ook-Ook
 					["g"] = {
 						-- Available
-						i(143989, { -- Barreldodger Boots
+						i(143989, {	-- Barreldodger Boots
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144087, { -- Bracers of Displaced Air
+						i(144087, {	-- Bracers of Displaced Air
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144119, { -- Empty Fruit Barrel
+						i(144119, {	-- Empty Fruit Barrel
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143957, { -- Nimbletoe Chestguard
+						i(143957, {	-- Nimbletoe Chestguard
 							["timeline"] = { ADDED_7_1_5 },
 							}),
-						i(144084, { -- Ook's Hozen Slicer
+						i(144084, {	-- Ook's Hozen Slicer
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(80897, { -- Bracers of Displaced Air
+						i(80897, {	-- Bracers of Displaced Air
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80896, { -- Nimbletoe Chestguard
+						i(80896, {	-- Nimbletoe Chestguard
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80892, { -- Ook's Hozen Slicer
+						i(80892, {	-- Ook's Hozen Slicer
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -90,30 +90,30 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["crs"] = { 56717 },	-- Hoptallus
 					["g"] = {
 						-- Available
-						i(144120, { -- Belt of Brazen Inebriation
+						i(144120, {	-- Belt of Brazen Inebriation
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144092, { -- Bottle of Potent Potables
+						i(144092, {	-- Bottle of Potent Potables
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144088, { -- Bubble-Breaker Bracers
+						i(144088, {	-- Bubble-Breaker Bracers
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144121, { -- Cloak of Hidden Flasks
+						i(144121, {	-- Cloak of Hidden Flasks
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143975, { -- Hopping Mad Leggings
+						i(143975, {	-- Hopping Mad Leggings
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(80893, { -- Bottle of Potent Potables
+						i(80893, {	-- Bottle of Potent Potables
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80899, { -- Bubble-Breaker Bracers
+						i(80899, {	-- Bubble-Breaker Bracers
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80898, { -- Hopping Mad Leggings
+						i(80898, {	-- Hopping Mad Leggings
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -123,55 +123,55 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["g"] = {
 						-- Available
 						ach(6457),	-- Stormstout Brewery
-						i(144125, { -- Alemental Seal
+						i(144125, {	-- Alemental Seal
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144122, { -- Carbonic Carbuncle
+						i(144122, {	-- Carbonic Carbuncle
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144082, { -- Fermenting Belt
+						i(144082, {	-- Fermenting Belt
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143969, { -- Fizzy Spaulders
+						i(143969, {	-- Fizzy Spaulders
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 						i(144085, {	-- Gao's Keg Tapper
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 						i(87545),	-- Inelava, Spirit of Inebriation [Confirmed by Carbion to drop in Normal]
-						i(144123, { -- Lime-Rimmed Signet
+						i(144123, {	-- Lime-Rimmed Signet
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143976, { -- Sudsy Legplates
+						i(143976, {	-- Sudsy Legplates
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143958, { -- Uncasked Chestguard
+						i(143958, {	-- Uncasked Chestguard
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144124, { -- Wort Stirring Rod
+						i(144124, {	-- Wort Stirring Rod
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144089, { -- Yan-Zhu's Pressure Valve
+						i(144089, {	-- Yan-Zhu's Pressure Valve
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(80894, { -- Gao's Keg Tapper
+						i(80894, {	-- Gao's Keg Tapper
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80895, { -- Yan-Zhu's Pressure Valve
+						i(80895, {	-- Yan-Zhu's Pressure Valve
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80900, { -- Fizzy Spaulders
+						i(80900, {	-- Fizzy Spaulders
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80902, { -- Uncasked Chestguard
+						i(80902, {	-- Uncasked Chestguard
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80903, { -- Fermenting Belt
+						i(80903, {	-- Fermenting Belt
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(80901, { -- Sudsy Legplates
+						i(80901, {	-- Sudsy Legplates
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -186,33 +186,33 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["g"] = {
 						-- Available
 						ach(6089),	-- Keep Rollin' Rollin' Rollin'
-						i(143989, { -- Barreldodger Boots
+						i(143989, {	-- Barreldodger Boots
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144087, { -- Bracers of Displaced Air
+						i(144087, {	-- Bracers of Displaced Air
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144119, { -- Empty Fruit Barrel
+						i(144119, {	-- Empty Fruit Barrel
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143957, { -- Nimbletoe Chestguard
+						i(143957, {	-- Nimbletoe Chestguard
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144084, { -- Ook's Hozen Slicer
+						i(144084, {	-- Ook's Hozen Slicer
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(81134, { -- Barreldodger Boots
+						i(81134, {	-- Barreldodger Boots
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81064, { -- Bracers of Displaced Air
+						i(81064, {	-- Bracers of Displaced Air
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81080, { -- Nimbletoe Chestguard
+						i(81080, {	-- Nimbletoe Chestguard
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81061, { -- Ook's Hozen Slicer
+						i(81061, {	-- Ook's Hozen Slicer
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -221,36 +221,36 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 					["crs"] = { 56717 },	-- Hoptallus
 					["g"] = {
 						-- Available
-						i(144120, { -- Belt of Brazen Inebriation
+						i(144120, {	-- Belt of Brazen Inebriation
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144092, { -- Bottle of Potent Potables
+						i(144092, {	-- Bottle of Potent Potables
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144088, { -- Bubble-Breaker Bracers
+						i(144088, {	-- Bubble-Breaker Bracers
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144121, { -- Cloak of Hidden Flasks
+						i(144121, {	-- Cloak of Hidden Flasks
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143975, { -- Hopping Mad Leggings
+						i(143975, {	-- Hopping Mad Leggings
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(81135, { -- Belt of Brazen Inebriation
+						i(81135, {	-- Belt of Brazen Inebriation
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81076, { -- Bottle of Potent Potables
+						i(81076, {	-- Bottle of Potent Potables
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81065, { -- Bubble-Breaker Bracers
+						i(81065, {	-- Bubble-Breaker Bracers
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81136, { -- Cloak of Hidden Flasks
+						i(81136, {	-- Cloak of Hidden Flasks
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81077, { -- Hopping Mad Leggings
+						i(81077, {	-- Hopping Mad Leggings
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},
@@ -261,58 +261,58 @@ root(ROOTS.Instances, tier(MOP_TIER, bubbleDown({ ["timeline"] = ADDED_5_0_4 }, 
 						-- Available
 						ach(6456),	-- Heroic: Stormstout Brewery
 						ach(6666),	-- Heroic: Stormstout Brewery Guild Run
-						i(144125, { -- Alemental Seal
+						i(144125, {	-- Alemental Seal
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144122, { -- Carbonic Carbuncle
+						i(144122, {	-- Carbonic Carbuncle
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144082, { -- Fermenting Belt
+						i(144082, {	-- Fermenting Belt
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143969, { -- Fizzy Spaulders
+						i(143969, {	-- Fizzy Spaulders
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144085, { -- Gao's Keg Tapper
+						i(144085, {	-- Gao's Keg Tapper
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 						i(87545),	-- Inelava, Spirit of Inebriation [Confirmed by Discord Member on May 4th, 2020 (a screenshot was provided)]
-						i(144123, { -- Lime-Rimmed Signet
+						i(144123, {	-- Lime-Rimmed Signet
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143976, { -- Sudsy Legplates
+						i(143976, {	-- Sudsy Legplates
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(143958, { -- Uncasked Chestguard
+						i(143958, {	-- Uncasked Chestguard
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144124, { -- Wort Stirring Rod
+						i(144124, {	-- Wort Stirring Rod
 							["timeline"] = { ADDED_7_1_5 },
 						}),
-						i(144089, { -- Yan-Zhu's Pressure Valve
+						i(144089, {	-- Yan-Zhu's Pressure Valve
 							["timeline"] = { ADDED_7_1_5 },
 						}),
 
 						-- Removed
-						i(81059, { -- Fermenting Belt
+						i(81059, {	-- Fermenting Belt
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81068, { -- Fizzy Spaulders
+						i(81068, {	-- Fizzy Spaulders
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81062, { -- Gao's Keg Tapper
+						i(81062, {	-- Gao's Keg Tapper
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81078, { -- Sudsy Legplates
+						i(81078, {	-- Sudsy Legplates
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81081, { -- Uncasked Chestguard
+						i(81081, {	-- Uncasked Chestguard
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81140, { -- Wort Stirring Rod
+						i(81140, {	-- Wort Stirring Rod
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
-						i(81066, { -- Yan-Zhu's Pressure Valve
+						i(81066, {	-- Yan-Zhu's Pressure Valve
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_1_5 },
 						}),
 					},

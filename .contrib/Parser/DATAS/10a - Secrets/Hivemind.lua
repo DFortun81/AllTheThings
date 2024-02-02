@@ -102,10 +102,10 @@ root(ROOTS.Secrets, {
 					o(13000031, {	-- Red Crystal Monocle
 						["description"] = "Fish NPCs across Vashj'ir sell sea-themed currencies which need to be exchanged between the various NPCs in order to obtain the currencies required to purchase the |cFFFFD700Red Crystal Monocle|r.\n\nThe currencies expire after a period of time so it is advised that you purchase the items in the order listed.\n",
 						["g"] = {
-							o(13000002, { -- Scintillating Murloc Skin Lotion
+							o(13000002, {	-- Scintillating Murloc Skin Lotion
 								["description"] = "Exchange the following items with the NPC until you receive 5 |cFFFFD700Scintillating Murloc Skin Lotion|r.\n",
 								["g"] = {
-									o(13000003, { -- Glittergill Glitter
+									o(13000003, {	-- Glittergill Glitter
 										["description"] = "Exchange the following items with the NPC until you receive 50 |cFFFFD700Glittergill Glitter|r.\n",
 										["g"] = {
 											o(13000004, {	-- Step 1: Seashell
@@ -170,7 +170,7 @@ root(ROOTS.Secrets, {
 								},
 
 							}),
-							o(13000018, { -- Potent Gastropod Gloop
+							o(13000018, {	-- Potent Gastropod Gloop
 								["description"] = "Exchange the following items with the NPC until you receive 5 |cFFFFD700Potent Gastropod Gloop|r.\n",
 								["g"] = {
 									o(13000019, {	-- Step 1: Seashell
@@ -195,7 +195,7 @@ root(ROOTS.Secrets, {
 									}),
 								},
 							}),
-							o(13000024, { -- Captured Cavitation Bubble
+							o(13000024, {	-- Captured Cavitation Bubble
 								["description"] = "Exchange the following items with the NPC until you receive 5 |cFFFFD700Captured Cavitation Bubble|r.\n",
 								["g"] = {
 									o(13000025, {	-- Step 1: Seashell
@@ -220,7 +220,7 @@ root(ROOTS.Secrets, {
 									}),
 								},
 							}),
-							o(13000030, { -- Buy the Red Crystal Monocle
+							o(13000030, {	-- Buy the Red Crystal Monocle
 								["coord"] = { 44.6, 20.2, 205 },	-- Shimmering Expanse, Vashj'ir
 								["description"] = "Exchange the 3 items with |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir for the |cFFFFD700Red Crystal Monocle|r.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",
 								["g"] = {
@@ -233,6 +233,7 @@ root(ROOTS.Secrets, {
 						["icon"] = "Interface\\Icons\\inv_helmet_44",
 						["name"] = "Yellow Crystal Monocle",
 						["description"] = "Go to |cFFFFD700Halls of Origination|r in |cFFFFD700Uldum|r. After the first boss in Halls of Origination, there is a large room with an elevator. While wearing the |cFFFFD700Talisman of True Treasure Tracking|r, you can click a Stellar Refraction Device that spawns colorful constellations in the room below the elevator.\n\nTo access the puzzle, head north from the elevator and there will be an open way with a staircase to the floor below.\n\nYour objective here is to transform all constellations to the same color. To do this, there are three special refractors that change their colors when clicked on.\n\n|cFFFFD700The Hivemind HoO Puzzle Helper|r addon is recommended to complete this step, as it simply requires you to input the current colors of the constellations, then gives you directions on how to click the refractors to solve it.\n\nWhen all constellations have the same color, a chest will spawn on top of the Stellar Refraction Device containing the |cFFFFFFFFYellow Crystal Monocle|r.\n\n|cFFCC33FFBe careful to not accidentally click the Refraction Device when looting the monocle, as this will restart the puzzle and despawn the chest|r.\n",
+						["provider"] = { "i", 27944 },	-- Talisman of True Treasure Tracking
 						["g"] = {
 							o(280886, {	-- Star-Touched Chest
 								["questID"] = 50183,
@@ -250,20 +251,24 @@ root(ROOTS.Secrets, {
 					n(132595, {	-- Rikei
 						["description"] = "Red Monocle",
 						["coord"] = { 71.8, 62.5, SURAMAR },
+						["provider"] = { "i", 156725 },	-- Red Crystal Monocle
 					}),
 					n(132596, {	-- Blom'an
 						["description"] = "Blue Monocle",
 						["coord"] = { 71.8, 62.5, SURAMAR },
+						["provider"] = { "i", 156724 },	-- Blue Crystal Monocle
 					}),
 					n(132597, {	-- Giluzui
 						["description"] = "Green Monocle",
 						["coord"] = { 71.8, 62.5, SURAMAR },
+						["provider"] = { "i", 156727 },	-- Green Crystal Monocle
 					}),
 					n(132598, {	-- Yorilan
 						["description"] = "Yellow Monocle",
 						["coord"] = { 71.8, 62.5, SURAMAR },
+						["provider"] = { "i", 156726 },	-- Yellow Crystal Monocle
 					}),
-					o(280903, { -- Lost Cat Toy
+					o(280903, {	-- Lost Cat Toy
 						["description"] = "The person in Dalaran have to pick up this Toy and will take random damage while doing so. It's important that this TOTAL(Damage+Absorbs+Overkill) damage is recorded.",
 					}),
 				},

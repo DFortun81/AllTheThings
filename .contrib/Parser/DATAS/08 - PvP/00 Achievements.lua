@@ -234,6 +234,18 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(11468, {	-- Alive for Five
 		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 	}),
+	ach(19418, {		-- Battle-scarred Battler
+		["timeline"] = { ADDED_10_2_0 },
+	}),
+	ach(19412, {		-- Battleground Blitz Apprentice
+		["timeline"] = { ADDED_10_2_0 },
+	}),
+	ach(19411, {		-- Battleground Blitz Novice
+		["timeline"] = { ADDED_10_2_0 },
+	}),
+	ach(19413, {		-- Battleground Blitz Veteran
+		["timeline"] = { ADDED_10_2_0 },
+	}),
 	ach(611, {		-- Bleeding Bloodhoof
 		["providers"] = {
 			-- #if AFTER CATA
@@ -246,6 +258,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["maps"] = { THUNDER_BLUFF },
 		["races"] = ALLIANCE_ONLY,
 	}),
+	-- #if AFTER 3.0.1
 	ach(449, {		-- Blood Guard
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -255,6 +268,10 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 				["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
 			}),
 		},
+	}),
+	-- #endif
+	ach(19417, {		-- Brawlroom Blitzer
+		["timeline"] = { ADDED_10_2_0 },
 	}),
 	applyclassicphase(PHASE_TWO, ach(727, {	-- Call in the Cavalry
 		["providers"] = {
@@ -294,6 +311,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(12180, {	-- Catching Twenty-Two
 		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 	}),
+	-- #if AFTER 3.0.1
 	ach(448, {		-- Centurion
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -314,6 +332,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
+	-- #endif
 	ach(388, {		-- City Defender (Alliance)
 		["timeline"] = { "added 3.0.1" },
 		["races"] = ALLIANCE_ONLY,
@@ -322,6 +341,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["timeline"] = { "added 3.0.1" },
 		["races"] = HORDE_ONLY,
 	}),
+	-- #if AFTER 3.0.1
 	ach(435, {		-- Commander
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -342,6 +362,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
+	-- #endif
 	pvp(ach(14519, bubbleDownSelf({["timeline"] = ADDED_9_0_2_LAUNCH },{	-- Covenant Combat
 		crit(49222),	-- Venthyr
 		crit(49223),	-- Night Fae
@@ -439,6 +460,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_9_0_1 },
 		["races"] = HORDE_ONLY,
 	}),
+	-- #if AFTER 3.0.1
 	ach(434, {		-- Field Marshal
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -459,6 +481,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
+	-- #endif
 	ach(10991, {	-- First Step into a Larger World
 		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 	}),
@@ -536,6 +559,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["timeline"] = { "added 3.0.1" },
 		["races"] = HORDE_ONLY,
 	}),
+	-- #if AFTER 3.0.1
 	ach(446, {		-- General
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -546,9 +570,11 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
+	-- #endif
 	ach(11692, {	-- Going On Seventeen
 		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 	}),
+	-- #if AFTER 3.0.1
 	ach(433, {		-- Grand Marshal
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -559,6 +585,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
+	-- #endif
 	ach(8382, {		-- Grievous Conquest (Alliance)
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 },
@@ -567,6 +594,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_5_4_0, REMOVED_5_4_7 },
 	}),
+	-- #if AFTER 3.0.1
 	ach(468, {		-- Grunt
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -577,6 +605,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
+	-- #endif
 	ach(11472, {	-- Hell, It's About Nine
 		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 	}),
@@ -608,6 +637,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(1161, {		-- High Five: 2200
 		["timeline"] = { ADDED_3_0_2, REMOVED_6_2_0 },
 	}),
+	-- #if AFTER 3.0.1
 	ach(443, {		-- High Warlord
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -618,6 +648,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
+	-- #endif
 	ach(10561, {	-- Honorable Medallion
 		["timeline"] = { "added 7.0.3" },
 	}),
@@ -665,6 +696,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["maps"] = { SILVERMOON_CITY },
 		["races"] = ALLIANCE_ONLY,
 	}),
+	-- #if AFTER 3.0.1
 	ach(439, {		-- Knight
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -705,6 +737,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
+	-- #endif
 	ach(246, {		-- Know Thy Enemy (Alliance)
 		["sym"] = {{ "achievement_criteria" }},
 		["timeline"] = { "added 3.0.1" },
@@ -718,6 +751,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(409, {		-- Last Man Standing
 		["timeline"] = { ADDED_3_0_2, REMOVED_6_2_0 },
 	}),
+	-- #if AFTER 3.0.1
 	ach(469, {		-- Legionnaire
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -728,6 +762,11 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
+	-- #endif
+	ach(19416, {		-- Learning the Ropes
+		["timeline"] = { ADDED_10_2_0 },
+	}),
+	-- #if AFTER 3.0.1
 	ach(436, {		-- Lieutenant Commander
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -748,9 +787,11 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
+	-- #endif
 	ach(247, {		-- Make Love, Not Warcraft
 		["timeline"] = { "added 3.0.1" },
 	}),
+	-- #if AFTER 3.0.1
 	ach(473, {		-- Marshal
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -771,6 +812,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
+	-- #endif
 	ach(14817, {	-- Opposing Orgrimmar
 		["provider"] = { "n", 175135 },	-- Rokhan <Darkspear Chieftain>
 		["timeline"] = { ADDED_9_0_1 },
@@ -823,12 +865,16 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_6_0_2, REMOVED_6_2_0 },
 	}),
+	ach(12181, {	-- Protocol 2.3
+		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
+	}),
 	ach(618, {		-- Putting Out the Light
 		["provider"] = { "n", 17468 },	-- Prophet Velen
 		["timeline"] = { "added 3.0.1" },
 		["maps"] = { THE_EXODAR },
 		["races"] = HORDE_ONLY,
 	}),
+	-- #if AFTER 3.0.1
 	ach(442, {		-- Private
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -889,6 +935,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
+	-- #endif
 	ach(14191, {	-- Servant of N'Zoth
 		["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
 		["g"] = {
@@ -900,6 +947,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(11470, {	-- Slayin' to Seven
 		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 	}),
+	-- #if AFTER 3.0.1
 	ach(451, {		-- Stone Guard
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -910,6 +958,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
+	-- #endif
 	ach(615, {		-- Storming Stormwind
 		["providers"] = {
 			-- #if AFTER 7.0.3
@@ -1028,6 +1077,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
 	}),
+	-- #if AFTER 3.0.1
 	ach(445, {		-- Warlord
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_1_4_0, REMOVED_2_0_1 },
@@ -1038,6 +1088,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			}),
 		},
 	}),
+	-- #endif
 	ach(10091, {	-- Warmongering Conquest (A)
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },

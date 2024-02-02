@@ -52,7 +52,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 	}),
 	-- #else
 	n(ACHIEVEMENTS, {
-		-- #if BEFORE MOP
 		ach(1707, {	-- Fool For Love (A)
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",
@@ -69,13 +68,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				1703,	-- My Love is Like a Red, Red Rose
 				1704,	-- I Pitied The Fool
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", "removed 5.0.4" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(103),	-- the Love Fool
 			},
 		}),
-		-- #endif
 		ach(1693, {	-- Fool For Love (H) / Fool For Love [MOP+]
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",
@@ -135,7 +133,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		ach(260, {	-- Charming
 			["provider"] = { "i", 49661 },	-- Lovely Charm Collector's Kit
 			["cost"] = {{ "i", 49916, 12 }},	-- Lovely Charm Bracelet
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", REMOVED_10_2_0 },
 		}),
 		ach(1695, {	-- Dangerous Love
 			["sourceQuests"] = {
@@ -184,7 +182,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ "i", 49856 },	-- "VICTORY" Perfume
 			},
 			["coord"] = { 46.6, 48.4, IRONFORGE },
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", REMOVED_10_2_0 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(1280, {	-- Flirt With Disaster [Horde]
@@ -196,7 +194,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				{ "i", 49856 },	-- "VICTORY" Perfume
 			},
 			["coord"] = { 67.6, 43.8, UNDERCITY },
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", REMOVED_10_2_0 },
 			["races"] = HORDE_ONLY,
 		}),
 		ach(1704, {	-- I Pitied The Fool
@@ -242,7 +240,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { "added 3.0.1" },
 			["maps"] = { NORTHREND_DALARAN },
 		}),
-		ach(19508, { -- Love Language Expert
+		ach(19508, {	-- Love Language Expert
 			["timeline"] = { ADDED_10_2_5 },
 		}),
 		ach(1703, {	-- My Love is Like a Red, Red Rose
@@ -253,7 +251,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(1697, {	-- Nation of Adoration [Alliance]
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", REMOVED_10_2_0 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				crit(12838, {	-- A Gift for the High Priestess of Elune
@@ -271,7 +269,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		ach(1698, {	-- Nation of Adoration [Horde]
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", REMOVED_10_2_0 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				crit(12842, {	-- A Gift for the Warchief / A Gift for the High Overlord/ A Gift for the Warchief's Advisor
@@ -295,6 +293,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 		ach(1188, {	-- Shafted!
 			["cost"] = { { "i", 22200, 10 } },	-- 10x Silver Shafted Arrow
 			["timeline"] = { "added 3.0.1" },
+		}),
+		ach(19400, {	-- Support Your Local Artisans
+			["timeline"] = { ADDED_10_2_5 },
 		}),
 		ach(1702, bubbleDownSelf({ ["timeline"] = { "added 3.0.1" } }, {	-- Sweet Tooth
 			crit(8705, {	-- Buttermilk Delight
@@ -1381,6 +1382,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 	}),
 	-- #if AFTER 3.3.2.11403
 	n(VENDORS, {
+		-- SORT ME --
+		i(210973),	-- Heartseeker Mana Ray (MOUNT!) [Love in the Air]
+		i(211864),	-- Exquisite Love Boat (TOY!) [Love in the Air]
+		i(210974),	-- Eyes For You Only (TOY!) [Love in the Air]
+		i(210975),	-- Date Simulation Modulator (TOY!) [Love in the Air]
+		-- SORT ME OVER --
 		n(37674, {	-- Lovely Merchant <Crown Chemical Co.>
 			["coords"] = {
 				{ 45.2, 57.6, DARNASSUS },

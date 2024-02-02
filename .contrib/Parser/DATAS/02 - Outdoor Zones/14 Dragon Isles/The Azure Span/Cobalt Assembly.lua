@@ -340,6 +340,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				i(198604),	-- Arcane Gem
 				i(198603),	-- Arcane Rune
 				i(198563),	-- Arcane Spark
+				i(201388),	-- Dragonspawn Wingtipped Staff
 			}),
 		}),
 	}),

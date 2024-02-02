@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace ATT
@@ -81,6 +82,18 @@ namespace ATT
         {
             IsErrored = true;
             Log("ERROR: " + message + (data != null ? (" " + ToJSON(data)) : string.Empty));
+        }
+
+        /// <summary>
+        /// Outputs the message to the Trace which requires User intervention
+        /// </summary>
+        /// <param name="message"></param>
+        public static void LogException(Exception ex)
+        {
+            IsErrored = true;
+            Trace.WriteLine("FILE: " + CurrentFileName);
+            Trace.WriteLine("ERROR: " + ex.Message);
+            Trace.WriteLine(ex.StackTrace);
         }
     }
 }

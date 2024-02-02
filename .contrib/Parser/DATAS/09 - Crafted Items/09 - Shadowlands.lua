@@ -1,30 +1,71 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
-local CURRENT_EXPAC_INK_ITEMID = 173058;	-- Umbral Ink
 root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	i(173381),	-- Crafter's Mark I
+	i(173382),	-- Crafter's Mark II
+	i(173383, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark III
+	i(187741, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark IV
+	i(173384, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark of the Chained Isle
+	i(187742, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark of the First Ones
+	i(183942),	-- Novice Crafter's Mark
+	i(185960, {["timeline"] = {ADDED_9_1_0}}),	-- Vestige of Origins
+	i(187784, {["timeline"] = {ADDED_9_2_0}}),	-- Vestige of the Eternal
 	prof(ALCHEMY, {
-		n(HEAD, {
+		filter(CONSUMABLES, {
+			i(187802, {["timeline"] = {ADDED_9_2_0}}),	-- Cosmic Healing Potion
+			i(171286),	-- Embalmer's Oil
+			i(171284),	-- Eternal Cauldron
+			i(171351),	-- Potion of Deathly Fixation
+			i(171350),	-- Potion of Divine Awakening
+			i(171352),	-- Potion of Empowered Exorcisms
+			i(171271),	-- Potion of Hardened Shadows
+			i(171349),	-- Potion of Phantom Fire
+			i(176811),	-- Potion of Sacrificial Anima
+			i(171264),	-- Potion of Shaded Sight
+			i(171263),	-- Potion of Soul Purity
+			i(171370),	-- Potion of Specter Swiftness
+			i(171270),	-- Potion of Spectral Agility
+			i(171273),	-- Potion of Spectral Intellect
+			i(171274),	-- Potion of Spectral Stamina
+			i(171275),	-- Potion of Spectral Strength
+			i(171272),	-- Potion of Spiritual Clarity
+			i(171266),	-- Potion of the Hidden Spirit
+			i(184090),	-- Potion of the Psychopomp's Speed
+			i(183823),	-- Potion of Unhindered Passing
+			i(171285),	-- Shadowcore Oil
+			i(171276),	-- Spectral Flask of Power
+			i(171278),	-- Spectral Flask of Stamina
+			i(171301),	-- Spiritual Anti-Venom
+			i(171267),	-- Spiritual Healing Potion
+			i(171268),	-- Spiritual Mana Potion
+			i(171269),	-- Spiritual Rejuvenation Potion
+		}),
+		filter(COSMETIC, {
 			i(180751),	-- Red Noggin Candle
 		}),
-		filter(TRINKET_F, {
-			i(171323, {	-- Spiritual Alchemy Stone
-				["collectible"] = false,
-			}),
-		}),
-		filter(MISC, {
-			i(173382),	-- Crafter's Mark II
-			i(173383),	-- Crafter's Mark III
-			i(187741),	-- Crafter's Mark IV
-			i(173384),	-- Crafter's Mark of the Chained Isle
-			i(187742),	-- Crafter's Mark of the First Ones
-			i(187827),	-- Infusion: Corpse Purification
-			i(187850),	-- Sustaining Armor Polish
+		filter(MISC, sharedDataSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 			i(186697),	-- Blossom Burst
+			i(186701),	-- Glory Burst
+			i(187827, {["timeline"] = {ADDED_9_2_0}}),	-- Infusion: Corpse Purification
+			i(186700),	-- Marrow Burst
+			i(186694),	-- Shaded Bag of Ore
+			i(187850, {["timeline"] = {ADDED_9_2_0}}),	-- Sustaining Armor Polish
 			i(186698),	-- Torch Burst
 			i(186699),	-- Widow Burst
-			i(186700),	-- Marrow Burst
-			i(186701),	-- Glory Burst
+		})),
+		filter(REAGENTS, {
+			i(171287),	-- Ground Death Blossom
+			i(171290),	-- Ground Marrowroot
+			i(171292),	-- Ground Nightshade
+			i(171291),	-- Ground Rising Glory
+			i(171288),	-- Ground Vigil's Torch
+			i(171289),	-- Ground Widowbloom
+			i(180457),	-- Shadestone
+			i(171428),	-- Shadowghast Ingot
+		}),
+		filter(TRINKET_F, {
+			i(171323),	-- Spiritual Alchemy Stone
 		}),
 	}),
 	prof(BLACKSMITHING, {
@@ -97,21 +138,14 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 			i(171448),	-- Shadowsteel Waistguard
 		}),
 		filter(MISC, {
-			i(173381),	-- Crafter's Mark I
-			i(173382),	-- Crafter's Mark II
-			i(173383, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark III
-			i(187741, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark IV
-			i(173384, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark of the Chained Isle
-			i(187742, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark of the First Ones
 			i(171441),	-- Laestrite Skeleton Key
-			i(183942),	-- Novice Crafter's Mark
 			i(171436),	-- Porous Sharpening Stone
 			i(171438),	-- Porous Weightstone
 			i(171437),	-- Shaded Sharpening Stone
 			i(171439),	-- Shaded Weightstone
+		}),
+		filter(REAGENTS, {
 			i(171428),	-- Shadowghast Ingot
-			i(185960, {["timeline"] = {ADDED_9_1_0}}),	-- Vestige of Origins
-			i(187784, {["timeline"] = {ADDED_9_2_0}}),	-- Vestige of the Eternal
 		}),
 		n(WEAPONS, {
 			i(171388),	-- Ceremonious Axe
@@ -126,6 +160,29 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 			i(171386),	-- Ceremonious Spear
 			i(171392),	-- Ceremonious Warglaive
 		}),
+	}),
+	prof(COOKING, {
+		i(172069),	-- Banana Beef Pudding
+		i(172046),	-- Biscuits and Caviar
+		i(186725, {["timeline"] = {ADDED_9_1_0}}),	-- Bonemeal Bread
+		i(172040),	-- Butterscotch Marinated Ribs
+		i(172047),	-- Candied Amberjack Cakes
+		i(172044),	-- Cinnamon Bonefish Stew
+		i(187648, {["timeline"] = {ADDED_9_2_0}}),	-- Empty Kettle of Stone Soup
+		i(172043),	-- Feast of Gluttonous Hedonism
+		i(172063),	-- Fried Bonefish
+		i(172049),	-- Iridescent Ravioli with Apple Sauce
+		i(172048),	-- Meaty Apple Dumplings
+		i(172068),	-- Pickled Meat Smoothie
+		i(186726, {["timeline"] = {ADDED_9_1_0}}),	-- Porous Rock Candy
+		i(172061),	-- Seraph Tenders
+		i(172062),	-- Smothered Shank
+		i(172041),	-- Spinefin Souffle and Fries
+		i(172051),	-- Steak a la Mode
+		i(172042),	-- Surprisingly Palatable Feast
+		i(172050),	-- Sweet Silvergill Sausages
+		i(172045),	-- Tenebrous Crown Roast Aspic
+		i(186704, {["timeline"] = {ADDED_9_1_0}}),	-- Twilight Tea
 	}),
 	prof(ENCHANTING, {
 		spell(13262, {	-- Disenchant
@@ -162,13 +219,10 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 			i(172363),	-- Enchant Ring - Tenet of Mastery
 			i(172364),	-- Enchant Ring - Tenet of Versatility
 		}),
-		filter(MISC, {
-			i(187825, {["timeline"] = {ADDED_9_2_0}}),	-- Cosmic Protoweave
-			i(173381),	-- Crafter's Mark I
-			i(173382),	-- Crafter's Mark II
-			i(187823, {["timeline"] = {ADDED_9_2_0}}),	-- Magically Regulated Automa Core
-			i(183942),	-- Novice Crafter's Mark
-		}),
+		filter(MISC, sharedDataSelf({ ["timeline"] = { ADDED_9_2_0 } }, {
+			i(187825),	-- Cosmic Protoweave
+			i(187823),	-- Magically Regulated Automa Core
+		})),
 		filter(REAGENTS, {
 			i(172437),	-- Enchanted Elethium Bar
 			i(172438),	-- Enchanted Heavy Callous Hide
@@ -189,41 +243,47 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 		}),
 	}),
 	prof(ENGINEERING, {
+		n(ARMOR, {
+			i(172907),	-- Articulated Ectoplasmic Specs
+			i(172905),	-- Flexible Ectoplasmic Specs
+			i(172906),	-- Grounded Ectoplasmic Specs
+			i(172908),	-- Reinforced Ectoplasmic Specs
+		}),
 		filter(BATTLE_PETS, {
 			i(180208),	-- PHA7-YNX (PET!)
 		}),
-		filter(CONSUMABLES, {
+		filter(MISC, {
+			i(172915),	-- 50UL-TR4P
+			i(172902),	-- Bomb Bola Launcher
+			i(184308),	-- Disposable Spectrophasic Reanimator
+			i(187836, {["timeline"] = {ADDED_9_2_0}}),	-- Erratic Genesis Matrix
+			i(172914),	-- Gravimetric Scrambler Cannon
+			i(172934),	-- Handful of Laestrite Bolts
 			i(172921),	-- Infra-green Reflex Sight
-		}),
-		n(HEAD, {
-			filter(CLOTH, {
-				i(172905),	-- Flexible Ectoplasmic Specs
-			}),
-			filter(LEATHER, {
-				i(172906),	-- Grounded Ectoplasmic Specs
-			}),
-			filter(MAIL, {
-				i(172907),	-- Articulated Ectoplasmic Specs
-			}),
-			filter(PLATE, {
-				i(172908),	-- Reinforced Ectoplasmic Specs
-			}),
-		}),
-		filter(GUNS, {
-			i(172923)	-- Precision Lifeforce Inverter
+			i(172912),	-- Momentum Redistributor Boots
+			i(172936),	-- Mortal Coiled Spring
+			i(172903),	-- Nutcracker Grenade
+			i(172920),	-- Optical Target Embiggener
+			i(172935),	-- Porous Polishing Abrasive
+			i(187831, {["timeline"] = {ADDED_9_2_0}}),	-- Pure-Air Sail Extensions
+			i(172904),	-- Shadow Land Mine
+			i(172937),	-- Wormfed Gear Assembly
 		}),
 		filter(TOYS, {
 			i(172924)	-- Wormhole Generator: Shadowlands (TOY!)
 		}),
-		filter(MISC, {
-			i(173382),	-- Crafter's Mark II
-			i(173383),	-- Crafter's Mark III
-			i(187741),	-- Crafter's Mark IV
-			i(173384),	-- Crafter's Mark of the Chained Isle
-			i(187742),	-- Crafter's Mark of the First Ones
-			i(187836),	-- Erratic Genesis Matrix
-			i(187831),	-- Pure-Air Sail Extensions
+		n(WEAPONS, {
+			i(172923)	-- Precision Lifeforce Inverter
 		}),
+	}),
+	prof(FISHING, {
+		i(173037),	-- Elysian Thade
+		i(173033),	-- Iridescent Amberjack
+		i(173032),	-- Lost Sole
+		i(173035),	-- Pocked Bonefish
+		i(187702, {["timeline"] = {ADDED_9_2_0}}),	-- Precursor Placoderm
+		i(173034),	-- Silvergill Pike
+		i(173036),	-- Spinefin Piranha
 	}),
 	prof(HERBALISM, {
 		spell(2366, {	-- Herb Gathering
@@ -243,163 +303,160 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 		}),
 	}),
 	prof(INSCRIPTION, {
-		filter(GLYPHS, {
-			i(190378, {["timeline"] = {ADDED_9_2_0}}),	-- Glyph of the Spectral Lupine
-			i(190380, {["timeline"] = {ADDED_9_2_0}}),	-- Glyph of the Spectral Vulpine
-			i(187887, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Gloomstalker Dredbat (CI!)
-			i(187934, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Midnight Runestag (CI!)
-			i(187931, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Regal Dredbat (CI!)
-			i(187936, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Sable Ardenmoth (CI!)
-			i(187888, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Shimmering Ardenmoth (CI!)
-			i(187884, {["timeline"] = {ADDED_9_1_5}}),	-- Mark of the Twilight Runestag (CI!)
+		spell(311418, {	-- Mass Mill Nightshade
+			i(173057),	-- Luminous Pigment
+			i(175788),	-- Tranquil Pigment
+			i(173056),	-- Umbral Pigment
 		}),
-		n(HEAD, {
+		filter(COSMETIC, {
 			i(180755),	-- Fae Revel Masque
 		}),
-		filter(HELD_IN_OFF_HAND, {
-			i(173050),	-- Newly Departed Codex
+		filter(GLYPHS, sharedDataSelf({ ["timeline"] = { ADDED_9_1_5 } }, {
+			i(190378, {["timeline"] = {ADDED_9_2_0}}),	-- Glyph of the Spectral Lupine
+			i(190380, {["timeline"] = {ADDED_9_2_0}}),	-- Glyph of the Spectral Vulpine
+			i(188164),	-- Glyph of the Wild Mushroom
+			i(187887),	-- Mark of the Gloomstalker Dredbat (CI!)
+			i(187934),	-- Mark of the Midnight Runestag (CI!)
+			i(187931),	-- Mark of the Regal Dredbat (CI!)
+			i(187936),	-- Mark of the Sable Ardenmoth (CI!)
+			i(187888),	-- Mark of the Shimmering Ardenmoth (CI!)
+			i(187884),	-- Mark of the Twilight Runestag (CI!)
+		})),
+		filter(MISC, {
+			i(173048),	-- Codex of the Still Mind
+			i(173062),	-- Contract: Court of Harvesters
+			i(186522, {["timeline"] = {ADDED_9_1_0}}),	-- Contract: Death's Advance
+			i(187796, {["timeline"] = {ADDED_9_2_0}}),	-- Contract: The Enlightened
+			i(173051),	-- Contract: The Ascended
+			i(175924),	-- Contract: The Undying Army
+			i(173053),	-- Contract: The Wild Hunt
+			i(173161),	-- Missive of Critical Strike
+			i(173160),	-- Missive of Haste
+			i(173162),	-- Missive of Mastery
+			i(173163),	-- Missive of Versatility
+			i(173049),	-- Tome of the Still Mind
+			i(173067),	-- Vantus Rune: Castle Nathria
+			i(186662, {["timeline"] = {ADDED_9_1_0}}),	-- Vantus Rune: Sanctum of Domination
+			i(187805, {["timeline"] = {ADDED_9_2_0}}),	-- Vantus Rune: Sepulcher of the First Ones
+			i(173065),	-- Writ of Grave Robbing
 		}),
-		filter(STAVES, {
+		filter(REAGENTS, {
+			i(173059),	-- Luminous Ink
+			i(175970),	-- Tranquil Ink
+			i(173058),	-- Umbral Ink
+			i(177843),	-- Blank Card of Putrescence
+			i(173070),	-- Ace of Putrescence
+			i(173071),	-- Two of Putrescence
+			i(173072),	-- Three of Putrescence
+			i(173073),	-- Four of Putrescence
+			i(173074),	-- Five of Putrescence
+			i(173075),	-- Six of Putrescence
+			i(173076),	-- Seven of Putrescence
+			i(173077),	-- Eight of Putrescence
+			i(177842),	-- Blank Card of Repose
+			i(173079),	-- Ace of Repose
+			i(173080),	-- Two of Repose
+			i(173081),	-- Three of Repose
+			i(173082),	-- Four of Repose
+			i(173083),	-- Five of Repose
+			i(173084),	-- Six of Repose
+			i(173085),	-- Seven of Repose
+			i(173086),	-- Eight of Repose
+			i(177840),	-- Blank Card of the Indomitable
+			i(173097),	-- Ace of the Indomitable
+			i(173098),	-- Two of the Indomitable
+			i(173099),	-- Three of the Indomitable
+			i(173100),	-- Four of the Indomitable
+			i(173101),	-- Five of the Indomitable
+			i(173102),	-- Six of the Indomitable
+			i(173103),	-- Seven of the Indomitable
+			i(173104),	-- Eight of the Indomitable
+			i(177841),	-- Blank Card of Voracity
+			i(173088),	-- Ace of Voracity
+			i(173089),	-- Two of Voracity
+			i(173090),	-- Three of Voracity
+			i(173091),	-- Four of Voracity
+			i(173092),	-- Five of Voracity
+			i(173093),	-- Six of Voracity
+			i(173094),	-- Seven of Voracity
+			i(173095),	-- Eight of Voracity
+		}),
+		filter(TRINKET_F, {
+			i(173087),	-- Darkmoon Deck: Voracity
+			i(173069),	-- Darkmoon Deck: Putrescence
+			i(173096),	-- Darkmoon Deck: Indomitable
+			i(173078),	-- Darkmoon Deck: Repose
+		}),
+		n(WEAPONS, {
+			i(173050),	-- Newly Departed Codex
 			i(173428),	-- Soul Keeper's Column
 			i(173054),	-- Soul Keeper's Spire
 		}),
-		filter(REAGENTS, sharedData({["crs"] = {
-			-- Various Ink Traders
-			164736,	-- Distributor Au'bic
-			30729,	-- Ickabod Pimlen
-			30731,	-- Illianna Moonscribe
-			33027,	-- Jessica Sellers
-			93532,	-- Jessica Sellers
-			30727,	-- Lelorian
-			30724,	-- Mertle Murkpen
-			46718,	-- Moraka
-			52031,	-- Sarana Damir
-			30732,	-- Sessoh
-			52032,	-- Sinzi Sparkscribe
-			30730,	-- Stanly McCormick
-			30733,	-- Thargen Heavyquill
-			30723,	-- Xantili
-		}}, {
-			-- Uncommon Inks, x10 Cost
-			i(43125, {	-- Darkflame Ink
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 10 } },	-- 10x Umbral Ink
-			}),
-			i(61981, {	-- Inferno Ink
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 10 } },	-- 10x Umbral Ink
-			}),
-			i(43127, {	-- Snowfall Ink
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 10 } },	-- 10x Umbral Ink
-			}),
-			i(79255, {	-- Starlight Ink
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 10 } },	-- 10x Umbral Ink
-			}),
-			i(158189, {	-- Viridescent Ink
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 10 } },	-- 10x Umbral Ink
-			}),
-			-- Common Inks, x1 Cost
-			i(129032, {	-- Roseate Pigment
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
-			}),
-			i(129034, {	-- Sallow Pigment
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
-			}),
-			i(113111, {	-- Warbinder's Ink
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
-			}),
-			i(79254, {	-- Ink of Dreams
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
-			}),
-			i(61978, {	-- Blackfallow Ink
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
-			}),
-			i(43124, {	-- Ethereal Ink
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
-			}),
-			i(43126, {	-- Ink of the Sea
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
-			}),
-			i(43122, {	-- Shimmering Ink
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
-			}),
-			i(43120, {	-- Celestial Ink
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
-			}),
-			i(43118, {	-- Jadefire Ink
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
-			}),
-			i(43116, {	-- Lion's Ink
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
-			}),
-			i(39774, {	-- Midnight Ink
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
-			}),
-			i(39469, {	-- Moonglow Ink
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
-			}),
-			i(158187, {	-- Ultramarine Ink
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
-			}),
-			i(158188, {	-- Crimson Ink
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
-			}),
-			i(168663, {	-- Maroon Ink
-				["cost"] = { { "i", CURRENT_EXPAC_INK_ITEMID, 1 } },	-- 1x Umbral Ink
-			}),
-		})),
-		category(106, {	-- Tarot Cards
-			sp(324035, {	-- Darkmoon Card of Voracity
-				i(173087),	-- Darkmoon Deck: Voracity
-			}),
-			sp(324037, {	-- Darkmoon Card of Putrescence
-				i(173069),	-- Darkmoon Deck: Putrescence
-			}),
-			sp(324039, {	-- Darkmoon Card of the Indomitable
-				i(173096),	-- Darkmoon Deck: Indomitable
-			}),
-			sp(324036, {	-- Darkmoon Card of Repose
-				i(173078),	-- Darkmoon Deck: Repose
-			}),
-		}),
-		sp(311425, {	-- Tome of the Still Mind
-			i(173049)	-- Tome of the Still Mind
-		}),
-		sp(311423, {	-- Writ of Grave Robbing
-			i(173065)	-- Writ of Grave Robbing
-		}),
 	}),
 	prof(JEWELCRAFTING, {
-		n(HEAD, {
+		spell(325248, {	-- Shadowlands Prospecting
+			i(173109),	-- Angerseye
+			i(173170),	-- Essence of Rebirth
+			i(173172),	-- Essence of Servitude
+			i(173171),	-- Essence of Torment
+			i(173173),	-- Essence of Valor
+			i(173108),	-- Oriblase
+			i(173110),	-- Umbryl
+		}),
+		n(DISCOVERY, {
+			spell(338977, {	-- Shadowghast Necklace [Rank 1]
+				r(332075),	-- Shadowghast Necklace [Rank 2]
+				r(332040),	-- Shadowghast Necklace [Rank 3]
+				r(327921),	-- Shadowghast Necklace [Rank 4]
+			}),
+			spell(338978, {	-- Shadowghast Ring [Rank 1]
+				r(332074),	-- Shadowghast Ring [Rank 2]
+				r(332039),	-- Shadowghast Ring [Rank 3]
+				r(327920),	-- Shadowghast Ring [Rank 4]
+			}),
+		}),
+		filter(COSMETIC, {
 			i(180760),	-- Crown of the Righteous
 		}),
-		filter(NECK_F, {
-			i(178927),	-- Shadowghast Necklace
-			i(173144),	-- Versatile Solenium Necklace
-			i(173147),	-- Deadly Sinvyr Necklace
-			i(173145),	-- Masterful Phaedrum Necklace
-			i(173146),	-- Quick Oxxein Necklace
-			i(173141),	-- Masterful Laestrite Choker
-			i(173142),	-- Quick Laestrite Choker
-			i(173143),	-- Deadly Laestrite Choker
-			i(173140),	-- Versatile Laestrite Choker
-		}),
 		filter(FINGER_F, {
-			i(178926),	-- Shadowghast Ring
-			i(173131),	-- Versatile Solenium Ring
-			i(173134),	-- Deadly Sinvyr Ring
-			i(173132),	-- Masterful Phaedrum Ring
-			i(173133),	-- Quick Oxxein Ring
-			i(173136),	-- Masterful Laestrite Band
 			i(173138),	-- Deadly Laestrite Band
-			i(173135),	-- Versatile Laestrite Band
+			i(173134),	-- Deadly Sinvyr Ring
+			i(173136),	-- Masterful Laestrite Band
+			i(173132),	-- Masterful Phaedrum Ring
 			i(173137),	-- Quick Laestrite Band
+			i(173133),	-- Quick Oxxein Ring
+			i(178926),	-- Shadowghast Ring
+			i(173135),	-- Versatile Laestrite Band
+			i(173131),	-- Versatile Solenium Ring
 		}),
-		i(185960),		-- Vestige of Origins
+		filter(GEMS, {
+			i(173127),	-- Deadly Jewel Cluster
+			i(173121),	-- Deadly Jewel Doublet
+			i(173130),	-- Masterful Jewel Cluster
+			i(173124),	-- Masterful Jewel Doublet
+			i(173128),	-- Quick Jewel Cluster
+			i(173122),	-- Quick Jewel Doublet
+			i(173125),	-- Revitalizing Jewel Doublet
+			i(173126),	-- Straddling Jewel Doublet
+			i(173129),	-- Versatile Jewel Cluster
+			i(173123),	-- Versatile Jewel Doublet
+		}),
+		filter(NECK_F, {
+			i(173143),	-- Deadly Laestrite Choker
+			i(173147),	-- Deadly Sinvyr Necklace
+			i(173141),	-- Masterful Laestrite Choker
+			i(173145),	-- Masterful Phaedrum Necklace
+			i(173142),	-- Quick Laestrite Choker
+			i(173146),	-- Quick Oxxein Necklace
+			i(178927),	-- Shadowghast Necklace
+			i(173140),	-- Versatile Laestrite Choker
+			i(173144),	-- Versatile Solenium Necklace
+		}),
 		filter(MISC, {
-			i(187829),	-- Aealic Harmonizing Stone
-			i(187741),	-- Crafter's Mark IV
-			i(187742),	-- Crafter's Mark of the First Ones
-			i(187849),	-- Devourer Essence Stone
-			i(187784),	-- Vestige of the Eternal
+			i(187829, {["timeline"] = {ADDED_9_2_0}}),	-- Aealic Harmonizing Stone
+			i(187849, {["timeline"] = {ADDED_9_2_0}}),	-- Devourer Essence Stone
+			i(186981, {["timeline"] = {ADDED_9_1_0}}),	-- Porous Stone Statue
+			i(186982, {["timeline"] = {ADDED_9_1_0}}),	-- Shaded Stone Statue
 		}),
 	}),
 	prof(LEATHERWORKING, {
@@ -541,25 +598,16 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 		}),
 		filter(MISC, {
 			i(168419),	-- Comfortable Rider's Barding
-			i(173381),	-- Crafter's Mark I
-			i(173382),	-- Crafter's Mark II
-			i(173383, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark III
-			i(187741, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark IV
-			i(173384, {["timeline"] = {ADDED_9_1_0}}),	-- Crafter's Mark of the Chained Isle
-			i(187742, {["timeline"] = {ADDED_9_2_0}}),	-- Crafter's Mark of the First Ones
 			i(172346),	-- Desolate Armor Kit
 			i(172233),	-- Drums of Deathly Ferocity
 			i(172347),	-- Heavy Desolate Armor Kit
-			i(183942),	-- Novice Crafter's Mark
-			i(185960, {["timeline"] = {ADDED_9_1_0}}),	-- Vestige of Origins
-			i(187784, {["timeline"] = {ADDED_9_2_0}}),	-- Vestige of the Eternal
 		}),
 		filter(REAGENTS, {
 			i(172089),	-- Desolate Leather
 			i(172097),	-- Heavy Callous Hide
 			i(172096),	-- Heavy Desolate Leather
 		}),
-		filter(TOYS, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
+		filter(TOYS, sharedDataSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 			i(186985),	-- Elusive Pet Treat (TOY!)
 			i(186702),	-- Pallid Bone Flute (TOY!)
 			i(186686),	-- Pallid Oracle Bones (TOY!)
@@ -591,73 +639,104 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 			i(177061),	-- Twilight Bark
 		}),
 	}),
+	prof(SKINNING, {
+		spell(8613, {	-- Skinning
+			i(172094),	-- Callous Hide
+			i(172095),	-- Callous Hide Scraps
+			i(172089),	-- Desolate Leather
+			i(172093),	-- Desolate Leather Scraps
+			i(172097),	-- Heavy Callous Hide
+			i(172096),	-- Heavy Desolate Leather
+			i(172092),	-- Pallid Bone
+			i(187701, {["timeline"] = {ADDED_9_2_0}}),	-- Protogenic Pelt
+		}),
+	}),
 	prof(TAILORING, {
-		n(HEAD, {
-			i(173245),	-- Grim-Veiled Hood
-			i(173218),	-- Shadowlace Cowl
-			i(173197),	-- Shrouded Cloth Hood
-			i(180752),	-- Pink Party Hat
+		n(DISCOVERY, {
+			spell(339003, {	-- Grim-Veiled Belt [Rank 1]
+				r(332072),	-- Grim-Veiled Belt [Rank 2]
+				r(332037),	-- Grim-Veiled Belt [Rank 3]
+				r(310885),	-- Grim-Veiled Belt [Rank 4]
+			}),
+			spell(339004, {	-- Grim-Veiled Bracers [Rank 1]
+				r(332073),	-- Grim-Veiled Bracers [Rank 2]
+				r(332038),	-- Grim-Veiled Bracers [Rank 3]
+				r(310886),	-- Grim-Veiled Bracers [Rank 4]
+			}),
+			spell(338995, {	-- Grim-Veiled Cape [Rank 1]
+				r(332067),	-- Grim-Veiled Cape [Rank 2]
+				r(332032),	-- Grim-Veiled Cape [Rank 3]
+				r(310880),	-- Grim-Veiled Cape [Rank 4]
+			}),
+			spell(339000, {	-- Grim-Veiled Hood [Rank 1]
+				r(332069),	-- Grim-Veiled Hood [Rank 2]
+				r(332034),	-- Grim-Veiled Hood [Rank 3]
+				r(310882),	-- Grim-Veiled Hood [Rank 4]
+			}),
+			spell(338998, {	-- Grim-Veiled Mittens [Rank 1]
+				r(332068),	-- Grim-Veiled Mittens [Rank 2]
+				r(332033),	-- Grim-Veiled Mittens [Rank 3]
+				r(310881),	-- Grim-Veiled Mittens [Rank 4]
+			}),
+			spell(339001, {	-- Grim-Veiled Pants [Rank 1]
+				r(332070),	-- Grim-Veiled Pants [Rank 2]
+				r(332035),	-- Grim-Veiled Pants [Rank 3]
+				r(310883),	-- Grim-Veiled Pants [Rank 4]
+			}),
+			spell(338996, {	-- Grim-Veiled Robe [Rank 1]
+				r(332066),	-- Grim-Veiled Robe [Rank 2]
+				r(332031),	-- Grim-Veiled Robe [Rank 3]
+				r(310879),	-- Grim-Veiled Robe [Rank 4]
+			}),
+			spell(338997, {	-- Grim-Veiled Sandals [Rank 1]
+				r(332065),	-- Grim-Veiled Sandals [Rank 2]
+				r(332030),	-- Grim-Veiled Sandals [Rank 3]
+				r(310878),	-- Grim-Veiled Sandals [Rank 4]
+			}),
+			spell(339002, {	-- Grim-Veiled Spaulders [Rank 1]
+				r(332071),	-- Grim-Veiled Spaulders [Rank 2]
+				r(332036),	-- Grim-Veiled Spaulders [Rank 3]
+				r(310884),	-- Grim-Veiled Spaulders [Rank 4]
+			}),
 		}),
-		n(CHEST, {
-			i(173241),	-- Grim-Veiled Robe
-			i(173214),	-- Shadowlace Tunic
-			i(173193),	-- Shrouded Cloth Robe
-		}),
-		n(BACK, {
+		n(ARMOR, {
+			i(173248),	-- Grim-Veiled Belt
+			i(173249),	-- Grim-Veiled Bracers
 			i(173242),	-- Grim-Veiled Cape
-			i(173215),	-- Shadowlace Cloak
-			i(173194),	-- Shrouded Cloth Cape
-		}),
-		n(FEET, {
-			i(173243),	-- Grim-Veiled Sandals
-			i(173216),	-- Shadowlace Footwraps
-			i(173195),	-- Shrouded Cloth Sandals
-		}),
-		n(HANDS, {
+			i(173245),	-- Grim-Veiled Hood
 			i(173244),	-- Grim-Veiled Mittens
-			i(173217),	-- Shadowlace Handwraps
-			i(173196),	-- Shrouded Cloth Mittens
-		}),
-		n(SHOULDER, {
+			i(173246),	-- Grim-Veiled Pants
+			i(173241),	-- Grim-Veiled Robe
+			i(173243),	-- Grim-Veiled Sandals
 			i(173247),	-- Grim-Veiled Spaulders
+			i(173215),	-- Shadowlace Cloak
+			i(173221),	-- Shadowlace Cord
+			i(173218),	-- Shadowlace Cowl
+			i(173222),	-- Shadowlace Cuffs
+			i(173216),	-- Shadowlace Footwraps
+			i(173217),	-- Shadowlace Handwraps
 			i(173220),	-- Shadowlace Mantle
+			i(173219),	-- Shadowlace Trousers
+			i(173214),	-- Shadowlace Tunic
+			i(173200),	-- Shrouded Cloth Belt
+			i(173201),	-- Shrouded Cloth Bracers
+			i(173194),	-- Shrouded Cloth Cape
+			i(173197),	-- Shrouded Cloth Hood
+			i(173196),	-- Shrouded Cloth Mittens
+			i(173198),	-- Shrouded Cloth Pants
+			i(173193),	-- Shrouded Cloth Robe
+			i(173195),	-- Shrouded Cloth Sandals
 			i(173199),	-- Shrouded Cloth Spaulders
 		}),
-		n(WAIST, {
-			i(173248),	-- Grim-Veiled Belt
-			i(173221),	-- Shadowlace Cord
-			i(173200),	-- Shrouded Cloth Belt
+		filter(COSMETIC, {
+			i(180752),	-- Pink Party Hat
 		}),
-		n(WRIST, {
-			i(173249),	-- Grim-Veiled Bracers
-			i(173222),	-- Shadowlace Cuffs
-			i(173201),	-- Shrouded Cloth Bracers
-		}),
-		n(LEGS, {
-			i(173246),	-- Grim-Veiled Pants
-			i(173219),	-- Shadowlace Trousers
-			i(173198),	-- Shrouded Cloth Pants
-		}),
-		i(185960),		-- Vestige of Origins
-		i(184479),		-- Shrouded Cloth Bag
 		filter(MISC, {
-			i(173382),	-- Crafter's Mark II
-			i(173383),	-- Crafter's Mark III
-			i(187741),	-- Crafter's Mark IV
-			i(173384),	-- Crafter's Mark of the Chained Isle
-			i(187742),	-- Crafter's Mark of the First Ones
-			i(187784),	-- Vestige of the Eternal
+			i(173191),	-- Heavy Shrouded Cloth Bandage
+			i(184480),	-- Lightless Silk Pouch
+			i(184479),	-- Shrouded Cloth Bag
+			i(173192),	-- Shrouded Cloth Bandage
+			i(186975, {["timeline"] = {ADDED_9_1_0}}),	-- Shrouded Hand Towel
 		}),
 	}),
 })));
-root(ROOTS.NeverImplemented, {
-	n(PROFESSIONS, {
-		prof(ALCHEMY, {
-			tier(SL_TIER, {
-				i(175941),	-- Spiritual Alchemy Stone (171323 is the version in game)
-				i(175942),	-- Spiritual Alchemy Stone (171323 is the version in game)
-				i(175943),	-- Spiritual Alchemy Stone (171323 is the version in game)
-			}),
-		}),
-	}),
-});

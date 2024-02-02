@@ -1872,16 +1872,12 @@ root(ROOTS.Zones, {
 							i(118005),	-- Steamscar Vessel
 						},
 					}),
-					o(234474, {	-- Saberon Stash
+					q(33660, {	-- The Sacking of the Saberon
+						["provider"] = {"o",234474},	-- Saberon Stash
 						["coord"] = { 51.0, 51.6, GORGROND },
-						["g"] = {
-							q(33660, {	-- The Sacking of the Saberon
-								["provider"] = {"o",234474},	-- Saberon Stash
-								["icon"] = "Interface\\Icons\\inv_misc_herb_whiptail",
-								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 33662,	-- Beatface vs. Boulder
-							}),
-						},
+						["icon"] = "Interface\\Icons\\inv_misc_herb_whiptail",
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 33662,	-- Beatface vs. Boulder
 					}),
 					n(85374, {	-- Sappy
 						["questID"] = 35630,

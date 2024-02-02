@@ -200,7 +200,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["_quests"] = { 77095 },
 			}),
 		})),
-		-- #if BEFORE MOP
 		ach(1684, {	-- Brewmaster (A)
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",
@@ -211,13 +210,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				303,				-- Have Keg, Will Travel
 				1936,				-- Does Your Wolpertinger Linger?
 			}},
-			["timeline"] = { "added 3.0.1" },
+			["timeline"] = { "added 3.0.1", "removed 5.0.4" },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(101),				-- Brewmaster
 			},
 		}),
-		-- #endif
 		ach(1683, {	-- Brewmaster (H)
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",

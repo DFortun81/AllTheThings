@@ -175,50 +175,50 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { "adde
 				},
 			}),
 			ach(7337, {	-- Documents of a Dark History
-				crit(20649, { -- Edicts of the Thunder King
+				crit(20649, {	-- Edicts of the Thunder King
 					["provider"] = { "i", 79913 },	-- Edicts of the Thunder King
 				}),
-				crit(20650, { -- Worn Monument Ledger
+				crit(20650, {	-- Worn Monument Ledger
 					["provider"] = { "i", 79917 },	-- Worn Monument Ledger
 				}),
 			}),
 			ach(7334, {	-- Instruments of Cruelty
-				crit(20639, { -- Manacles of Rebellion
+				crit(20639, {	-- Manacles of Rebellion
 					["provider"] = { "i", 79908 },	-- Manacles of Rebellion
 				}),
-				crit(20640, { -- Petrified Bone Whip
+				crit(20640, {	-- Petrified Bone Whip
 					["provider"] = { "i", 79911 },	-- Petrified Bone Whip
 				}),
-				crit(20641, { -- Warlord's Branding Iron
+				crit(20641, {	-- Warlord's Branding Iron
 					["provider"] = { "i", 79915 },	-- Warlord's Branding Iron
 				}),
-				crit(20642, { -- Anatomical Dummy
+				crit(20642, {	-- Anatomical Dummy
 					["provider"] = { "i", 89614 },	-- Anatomical Dummy (TOY!)
 				}),
 			}),
 			ach(8219, {	-- History of the Mantid
-				crit(22947, { -- Pristine Banner of the Mantid Empire
+				crit(22947, {	-- Pristine Banner of the Mantid Empire
 					["_quests"] = { 32686 },
 				}),
-				crit(22948, { -- Pristine Ancient Sap Feeder
+				crit(22948, {	-- Pristine Ancient Sap Feeder
 					["_quests"] = { 32687 },
 				}),
-				crit(22949, { -- Pristine Praying Mantid
+				crit(22949, {	-- Pristine Praying Mantid
 					["_quests"] = { 32688 },
 				}),
-				crit(22950, { -- Pristine Sound Beacon
+				crit(22950, {	-- Pristine Sound Beacon
 					["_quests"] = { 32689 },
 				}),
-				crit(22951, { -- Pristine Remains of a Paragon
+				crit(22951, {	-- Pristine Remains of a Paragon
 					["_quests"] = { 32690 },
 				}),
-				crit(22952, { -- Pristine Mantid Lamp
+				crit(22952, {	-- Pristine Mantid Lamp
 					["_quests"] = { 32691 },
 				}),
-				crit(22953, { -- Pristine Pollen Collector
+				crit(22953, {	-- Pristine Pollen Collector
 					["_quests"] = { 32692 },
 				}),
-				crit(22954, { -- Pristine Kypari Sap Container
+				crit(22954, {	-- Pristine Kypari Sap Container
 					["_quests"] = { 32693 },
 				}),
 			}),
@@ -231,115 +231,115 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { "adde
 				}),
 			}),
 			ach(7335, {	-- Symbols of Strength
-				crit(20643, { -- Iron Amulet
+				crit(20643, {	-- Iron Amulet
 					["provider"] = { "i", 79914 },	-- Iron Amulet
 				}),
-				crit(20644, { -- Cracked Mogu Runestone
+				crit(20644, {	-- Cracked Mogu Runestone
 					["provider"] = { "i", 79909 },	-- Cracked Mogu Runestone
 				}),
-				crit(20645, { -- Mogu Coin
+				crit(20645, {	-- Mogu Coin
 					["provider"] = { "i", 79916 },	-- Mogu Coin
 				}),
-				crit(20646, { -- Thunder King Insignia
+				crit(20646, {	-- Thunder King Insignia
 					["provider"] = { "i", 79912 },	-- Thunder King Insignia
 				}),
 			}),
 			ach(7332, {	-- The Broken Hearted
-				crit(20632, { -- Carved Bronze Mirror
+				crit(20632, {	-- Carved Bronze Mirror
 					["provider"] = { "i", 79901 },	-- Carved Bronze Mirror
 				}),
-				crit(20633, { -- Gold-Inlaid Figurine
+				crit(20633, {	-- Gold-Inlaid Figurine
 					["provider"] = { "i", 79902 },	-- Gold-Inlaid Figurine
 				}),
-				crit(20634, { -- Apothecary Tins
+				crit(20634, {	-- Apothecary Tins
 					["provider"] = { "i", 79903 },	-- Apothecary Tins
 				}),
 			}),
 			ach(7333, {	-- The Four Celestials
-				crit(20635, { -- Pearl of Yu'lon
+				crit(20635, {	-- Pearl of Yu'lon
 					["provider"] = { "i", 79904 },	-- Pearl of Yu'lon
 				}),
-				crit(20636, { -- Standard of Niuzao
+				crit(20636, {	-- Standard of Niuzao
 					["provider"] = { "i", 79905 },	-- Standard of Niuzao
 				}),
-				crit(20637, { -- Umbrella of Chi-Ji
+				crit(20637, {	-- Umbrella of Chi-Ji
 					["provider"] = { "i", 89684 },	-- Umbrella of Chi-Ji
 				}),
-				crit(20638, { -- Spear of Xuen
+				crit(20638, {	-- Spear of Xuen
 					["provider"] = { "i", 89685 },	-- Spear of Xuen
 				}),
 			}),
 			ach(7612, {	-- The Seat of Knowledge
 				title(208),	-- , Seeker of Knowledge
-				crit(21954, { -- Pristine Manacles of Rebellion
+				crit(21954, {	-- Pristine Manacles of Rebellion
 					["_quests"] = { 31786 },
 				}),
-				crit(21956, { -- Pristine Mogu Runestone
+				crit(21956, {	-- Pristine Mogu Runestone
 					["_quests"] = { 31787 },
 				}),
-				crit(21958, { -- Pristine Terracotta Arm
+				crit(21958, {	-- Pristine Terracotta Arm
 					["_quests"] = { 31788 },
 				}),
-				crit(21960, { -- Pristine Petrified Bone Whip
+				crit(21960, {	-- Pristine Petrified Bone Whip
 					["_quests"] = { 31789 },
 				}),
-				crit(21965, { -- Pristine Thunder King Insignia
+				crit(21965, {	-- Pristine Thunder King Insignia
 					["_quests"] = { 31790 },
 				}),
-				crit(21967, { -- Pristine Edicts of the Thunder King
+				crit(21967, {	-- Pristine Edicts of the Thunder King
 					["_quests"] = { 31791 },
 				}),
-				crit(21969, { -- Pristine Iron Amulet
+				crit(21969, {	-- Pristine Iron Amulet
 					["_quests"] = { 31792 },
 				}),
-				crit(21970, { -- Pristine Branding Iron
+				crit(21970, {	-- Pristine Branding Iron
 					["_quests"] = { 31793 },
 				}),
-				crit(21971, { -- Pristine Mogu Coin
+				crit(21971, {	-- Pristine Mogu Coin
 					["_quests"] = { 31794 },
 				}),
-				crit(21972, { -- Pristine Monument Ledger
+				crit(21972, {	-- Pristine Monument Ledger
 					["_quests"] = { 31805 },
 				}),
-				crit(21973, { -- Pristine Pandaren Tea Set
+				crit(21973, {	-- Pristine Pandaren Tea Set
 					["_quests"] = { 31795 },
 				}),
-				crit(21974, { -- Pristine Game Board
+				crit(21974, {	-- Pristine Game Board
 					["_quests"] = { 31796 },
 				}),
-				crit(21975, { -- Pristine Twin Stein Set
+				crit(21975, {	-- Pristine Twin Stein Set
 					["_quests"] = { 31797 },
 				}),
-				crit(21976, { -- Pristine Walking Cane
+				crit(21976, {	-- Pristine Walking Cane
 					["_quests"] = { 31798 },
 				}),
-				crit(21977, { -- Pristine Empty Keg
+				crit(21977, {	-- Pristine Empty Keg
 					["_quests"] = { 31799 },
 				}),
-				crit(21978, { -- Pristine Carved Bronze Mirror
+				crit(21978, {	-- Pristine Carved Bronze Mirror
 					["_quests"] = { 31800 },
 				}),
-				crit(21979, { -- Pristine Gold-Inlaid Figurine
+				crit(21979, {	-- Pristine Gold-Inlaid Figurine
 					["_quests"] = { 31801 },
 				}),
-				crit(21980, { -- Pristine Apothecary Tins
+				crit(21980, {	-- Pristine Apothecary Tins
 					["_quests"] = { 31802 },
 				}),
-				crit(21981, { -- Pristine Pearl of Yu'lon
+				crit(21981, {	-- Pristine Pearl of Yu'lon
 					["_quests"] = { 31803 },
 				}),
-				crit(21982, { -- Pristine Standard of Niuzao
+				crit(21982, {	-- Pristine Standard of Niuzao
 					["_quests"] = { 31804 },
 				}),
 			}),
 			ach(7331, {	-- The Three Brew Fathers
-				crit(20629, { -- Twin Stein Set
+				crit(20629, {	-- Twin Stein Set
 					["provider"] = { "i", 79898 },	-- Twin Stein Set
 				}),
-				crit(20630, { -- Walking Cane
+				crit(20630, {	-- Walking Cane
 					["provider"] = { "i", 79899 },	-- Walking Cane
 				}),
-				crit(20631, { -- Empty Keg
+				crit(20631, {	-- Empty Keg
 					["provider"] = { "i", 79900 },	-- Empty Keg
 				}),
 			}),
@@ -496,7 +496,7 @@ root(ROOTS.ExpansionFeatures, tier(MOP_TIER, bubbleDown({ ["timeline"] = { "adde
 			}),
 		})),
 		prof(FIRST_AID, {
-			ach(6838, { -- Zen Master Medic (600)
+			ach(6838, {	-- Zen Master Medic (600)
 				["timeline"] = { "added 5.0", "removed 8.0" },
 				["requireSkill"] = FIRST_AID,
 			}),

@@ -5,7 +5,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(1478, {	-- Ashran
 		["description"] = "Ashran is a 40v40 epic battleground found in eastern Draenor.",
 		["timeline"] = { "added 6.0.2" },
-		["maps"] = { 588 },	-- Ashran
+		["maps"] = { 588, 589 },	-- Ashran & Ashran Mine
 		["lvl"] = { 25 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -822,7 +822,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				n(82876, {	-- Grand Marshal Tremblade Elite S1-S2-S3
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+						i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["u"] = ELITE_PVP_REQUIREMENT,
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -1393,7 +1393,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 					--["u"] = REMOVED_FROM_GAME,	-- Vendor doesn't sell anything in 7.0+
 					["g"] = {
-						i(120286, { -- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
+						i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["u"] = ELITE_PVP_REQUIREMENT,
 							["timeline"] = { ADDED_7_0_3 },
 						}),

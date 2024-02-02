@@ -2411,6 +2411,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(16072, {	-- Expert Cookbook
 							["timeline"] = { "removed 3.1.0" },
+							-- #if SEASON_OF_DISCOVERY
+							["OnUpdate"] = [[function(t)
+								if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
+									t.u = ]] .. SOD_PHASE_TWO .. [[;
+								end
+								t.OnUpdate = nil;
+							end]],
+							-- #endif
 							["rank"] = 3,
 						}),
 						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
@@ -2422,7 +2430,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(2620, {	-- Augural Shroud
-					["timeline"] = { "removed 4.0.3", "added 10.1.7" },	-- 03.09.2023 Data Discord
+					["timeline"] = { "removed 4.0.3", ADDED_10_1_7 },	-- 03.09.2023 Data Discord
 					-- #if BEFORE 4.0.3
 					["cr"] = 4684,	-- Nether Sorceress
 					["coords"] = {

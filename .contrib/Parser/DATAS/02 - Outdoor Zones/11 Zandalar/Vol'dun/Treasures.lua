@@ -107,6 +107,29 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["questID"] = 51137,
 				["coord"] = { 29.3, 87.4, VOLDUN },
 			}),
+			o_repeated(sharedData({	-- Treasure Chest
+				["isDaily"] = true,
+			},{
+				-- Objects
+				o(284411, {	-- Treasure Chest
+					["questID"] = 50917,
+					["coords"] = {
+						{ 54.6, 35.5, VOLDUN },
+					},
+				}),
+				o(284417, {	-- Treasure Chest
+					["questID"] = 50923,
+					["coords"] = {
+						{ 27.8, 69.2, VOLDUN },
+					},
+				}),
+				o(284421, {	-- Treasure Chest
+					["questID"] = 50928,
+					["coords"] = {
+						{ 56.2, 52.3, VOLDUN },
+					},
+				}),
+			}))
 		}),
 	}),
 })));

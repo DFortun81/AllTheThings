@@ -90,7 +90,7 @@ root("Achievements", {
 			["timeline"] = { "added 3.0.1" },
 			["rank"] = 1000,
 		}),
-		
+
 		ach(503, {	-- 50 Quests Completed
 			["timeline"] = { "added 3.0.1" },
 			["rank"] = 50,
@@ -130,14 +130,14 @@ root("Achievements", {
 				-- #endif
 			},
 		})),
-		
+
 		ach(31, {	-- A Simple Re-Quest
 			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(1182, {	-- The Bread Winner
 			["timeline"] = { "added 3.0.1" },
 		}),
-		
+
 		applyclassicphase(WRATH_PHASE_ONE, ach(941, {	-- Hemet Nesingwary: The Collected Quests
 			-- #if AFTER WRATH
 			["sym"] = { {"select","achievementID",
@@ -178,7 +178,7 @@ root("Achievements", {
 				}),
 			},
 		})),
-		
+
 		-- #if AFTER 3.0.1
 		applyclassicphase(WRATH_PHASE_ONE, ach(1681, {	-- The Loremaster (A)
 			["sym"] = {{"meta_achievement",
@@ -454,7 +454,7 @@ root("Achievements", {
 			ach(407),		-- High Five: 1750
 			ach(404),		-- High Five: 2000
 			ach(1161),		-- High Five: 2200
-			
+
 			ach(408),	-- Hot Streak
 			ach(1162),	-- Hotter Streak
 			ach(399),	-- Just the Two of Us: 1550
@@ -470,7 +470,7 @@ root("Achievements", {
 			ach(1174, {		-- The Arena Master
 				title(50),	-- Arena Master
 			}),
-			
+
 			ach(402),	-- Three's Company: 1550
 			ach(403),	-- Three's Company: 1750
 			ach(405),	-- Three's Company: 2000
@@ -858,49 +858,49 @@ root("Achievements", {
 			["timeline"] = { "added 3.0.1" },
 		}),
 		ach(4784, {	-- Emblematic [A]
-			["timeline"] = { "added 3.3.3", "removed 4.0.1", "deleted 4.0.6" },
+			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
 			["races"] = ALLIANCE_ONLY,
 			["rank"] = 1,
 		}),
 		ach(4785, {	-- Emblematic [H]
-			["timeline"] = { "added 3.3.3", "removed 4.0.1", "deleted 4.0.6" },
+			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
 			["races"] = HORDE_ONLY,
 			["rank"] = 1,
 		}),
 		ach(3838, {	-- Dungeon & Raid Emblem
-			["timeline"] = { "added 3.3.3", "removed 4.0.1", "deleted 4.0.6" },
+			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
 			["rank"] = 1,
 		}),
 		ach(3839, {	-- 25 Dungeon & Raid Emblems
-			["timeline"] = { "added 3.3.3", "removed 4.0.1", "deleted 4.0.6" },
+			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
 			["rank"] = 25,
 		}),
 		ach(3840, {	-- 50 Dungeon & Raid Emblems
-			["timeline"] = { "added 3.3.3", "removed 4.0.1", "deleted 4.0.6" },
+			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
 			["rank"] = 50,
 		}),
 		ach(3841, {	-- 100 Dungeon & Raid Emblems
-			["timeline"] = { "added 3.3.3", "removed 4.0.1", "deleted 4.0.6" },
+			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
 			["rank"] = 100,
 		}),
 		ach(3842, {	-- 250 Dungeon & Raid Emblems
-			["timeline"] = { "added 3.3.3", "removed 4.0.1", "deleted 4.0.6" },
+			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
 			["rank"] = 250,
 		}),
 		ach(3843, {	-- 500 Dungeon & Raid Emblems
-			["timeline"] = { "added 3.3.3", "removed 4.0.1", "deleted 4.0.6" },
+			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
 			["rank"] = 500,
 		}),
 		ach(3844, {	-- 1000 Dungeon & Raid Emblems
-			["timeline"] = { "added 3.3.3", "removed 4.0.1", "deleted 4.0.6" },
+			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
 			["rank"] = 1000,
 		}),
 		ach(3876, {	-- 1500 Dungeon & Raid Emblems
-			["timeline"] = { "added 3.3.3", "removed 4.0.1", "deleted 4.0.6" },
+			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
 			["rank"] = 1500,
 		}),
 		ach(4316, {	-- 2500 Dungeon & Raid Emblems
-			["timeline"] = { "added 3.3.3", "removed 4.0.1", "deleted 4.0.6" },
+			["timeline"] = { "added 3.3.3", "removed 4.0.1" },
 			["rank"] = 2500,
 		}),
 	}),

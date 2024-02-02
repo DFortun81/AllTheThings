@@ -15,9 +15,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			n(155139, {	-- Arcane Amalgamation
 				["description"] = "Activate no crystals.",
 				["g"] = {
-					crit(45678, {	-- Arcane Amalgamation
-						["achievementID"] = 13699,	-- Periodic Destruction
-					}),
 					i(170477),	-- Mardivas's Universally Lauded Tote
 				},
 			}),
@@ -30,9 +27,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					{ "i", 169333, 1 }, -- Strange Volcanic Rock
 				},
 				["g"] = {
-					crit(45680, {	-- Burning Amalgamation
-						["achievementID"] = 13699,	-- Periodic Destruction
-					}),
 					i(170126),	-- Igneous Longbow
 				},
 			}),
@@ -45,9 +39,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					{ "i", 169334, 1 }, -- Strange Oceanic Sediment
 				},
 				["g"] = {
-					crit(45681, {	-- Dusty Amalgamation
-						["achievementID"] = 13699,	-- Periodic Destruction
-					}),
 					i(170383),	-- Coralspine Bulwark
 				},
 			}),
@@ -61,9 +52,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					{ "i", 169334, 2 }, -- Strange Oceanic Sediment
 				},
 				["g"] = {
-					crit(45689, {	-- Herald of Salgos
-						["achievementID"] = 13699,	-- Periodic Destruction
-					}),
 					i(170125),	-- Behemoth Claw of the Abyss
 				},
 			}),
@@ -78,9 +66,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					{ "i", 169334, 1 }, -- Strange Oceanic Sediment
 				},
 				["g"] = {
-					crit(45685, {	-- Moghiea
-						["achievementID"] = 13699,	-- Periodic Destruction
-					}),
 					i(170128),	-- Majestic Shirakess Greatstaff
 				},
 			}),
@@ -95,9 +80,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					{ "i", 169333, 1 }, -- Strange Volcanic Rock
 				},
 				["g"] = {
-					crit(45683, {	-- Omus
-						["achievementID"] = 13699,	-- Periodic Destruction
-					}),
 					i(170132),	-- Slicer of Omus
 					i(170166),	-- Technique: Glyph of Steaming Fury (RECIPE!)
 				},
@@ -112,9 +94,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					{ "i", 169332, 2 }, -- Strange Mineralized Water
 				},
 				["g"] = {
-					crit(45684, {	-- Osgen
-						["achievementID"] = 13699,	-- Periodic Destruction
-					}),
 					i(170130),	-- Glaive of Swells
 				},
 			}),
@@ -129,9 +108,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					{ "i", 169334, 1 }, -- Strange Oceanic Sediment
 				},
 				["g"] = {
-					crit(45690, {	-- Salgos the Eternal
-						["achievementID"] = 13699,	-- Periodic Destruction
-					}),
 					i(170129),	-- Salgos' Volatile Basher
 				},
 			}),
@@ -146,9 +122,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					{ "i", 169334, 1 }, -- Strange Oceanic Sediment
 				},
 				["g"] = {
-					crit(45688, {	-- Spawn of Salgos
-						["achievementID"] = 13699,	-- Periodic Destruction
-					}),
 					i(170124),	-- Coral-Sharpened Greatsword
 				},
 			}),
@@ -162,9 +135,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					{ "i", 169333, 2 }, -- Strange Volcanic Rock
 				},
 				["g"] = {
-					crit(45687, {	-- Ungormath
-						["achievementID"] = 13699,	-- Periodic Destruction
-					}),
 					i(170131),	-- Tidal Wand of Malevolence
 				},
 			}),
@@ -177,9 +147,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					{ "i", 169332, 1 }, -- Strange Mineralized Water
 				},
 				["g"] = {
-					crit(45679, {	-- Watery Amalgamation
-						["achievementID"] = 13699,	-- Periodic Destruction
-					}),
 					i(170138),	-- Scroll of Violent Tides
 				},
 			}),
@@ -194,9 +161,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					{ "i", 169333, 1 }, -- Strange Volcanic Rock
 				},
 				["g"] = {
-					crit(45686, {	-- Xue
-						["achievementID"] = 13699,	-- Periodic Destruction
-					}),
 					i(170127),	-- Pyroclastic Halberd
 					i(170166),	-- Technique: Glyph of Steaming Fury (RECIPE!)
 				},
@@ -212,9 +176,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 					{ "i", 169334, 1 }, -- Strange Oceanic Sediment
 				},
 				["g"] = {
-					crit(45682, {	-- Zomera
-						["achievementID"] = 13699,	-- Periodic Destruction
-					}),
 					i(170137),	-- Azerite-Infused Crystal Flayer
 				},
 			}),
