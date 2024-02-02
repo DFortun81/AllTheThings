@@ -174,7 +174,24 @@ tooltipFunction = function(self, target)
 end
 for i,guid in ipairs({
 	"Player-3683-0A7D919A",	-- Retrieve (Crieve's Alt for Testing)
+	--
 	"Player-3702-0A125B62", -- Myrhial (Xynara - Argent Dawn EU)
+	--
+	"Player-1091-04F6F553",	-- Tag-Bloodscalp
+	"Player-1091-0A9BC8B5",	-- Teleportag-Bloodscalp
+	"Player-1091-04FEE79B",	-- Tagalong-Bloodscalp
+	"Player-1091-0772987D",	-- Tagimonde-Bloodscalp
+	"Player-1091-079A210A",	-- Tageras-Bloodscalp
+	"Player-1091-06DA8328",	-- Taggles-Bloodscalp
+	"Player-1091-06D4E2FB",	-- Tagsenpai-Bloodscalp
+	"Player-1091-04F9E1C9",	-- Tagu-Bloodscalp
+	"Player-1091-0A81CBF8",	-- Taguise-Bloodscalp
+	"Player-1091-04FEE745",	-- Tagarang-Bloodscalp
+	"Player-1091-04FC9C87",	-- Tagelicious-Bloodscalp
+	"Player-1091-06D4E4E5",	-- Tagov-Bloodscalp
+	"Player-1091-04F9A20C",	-- Taggie-Bloodscalp
+	"Player-1091-04FEE76F",	-- Taggieboy-Bloodscalp
+	--
 }) do
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
