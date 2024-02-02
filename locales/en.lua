@@ -580,7 +580,7 @@ local L = {
 	["BORDER"] = EMBLEM_BORDER;
 	["BORDER_TOOLTIP"] = "Set the border color of all ATT windows.";
 	["RESET"] = RESET;
-	["RESET_TOOLTIP"] = "Reset the background and border color of all ATT windows.";
+	["RESET_TOOLTIP"] = "Revert to default settings.";
 	["CLASS_BORDER"] = "Use Class Color For Border";
 	["CLASS_BORDER_TOOLTIP"] = "Use your class color for the borders. This updates when you log onto another class.";
 
@@ -633,6 +633,15 @@ local L = {
 	["ICON_LEGEND_TEXT"] = app.ccColors.White .. "|TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t " .. "Unobtainable" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-prerequisites.blp:0|t " .. "Obtainable only with prerequisites" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-available.blp:0|t " .. "Available seasonal content" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-unavailable.blp:0|t " .. "Unavailable seasonal content" .. "\n|TInterface\\FriendsFrame\\StatusIcon-Offline:0|t " .. "Unavailable on current character";
 	["CHAT_COMMANDS_LABEL"] = "Chat Commands";
 	["CHAT_COMMANDS_TEXT"] = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/att bounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att rwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/att nwp\n|cffFFFFFFShows all current New With Patch things.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFOpens the Random List.\n\n|R/att unsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
+
+	-- Accessibility tab
+	["ACCESSIBILITY_PAGE"] = ACCESSIBILITY_LABEL;
+	["ACCESSIBILITY_EXPLAIN"] = COLORBLIND_MODE_SUBTEXT;
+	["DEFAULT"] = CHAT_DEFAULT;
+	["COLORS_ICONS"] = "Colors and Icons";
+	["COLOR"] = COLOR;
+	["MOUNTS"] = MOUNTS;
+	["LOCKED_QUESTS"] = "Locked quests";
 
 	-- Profiles tab
 	["PROFILES_PAGE"] = "Profiles";
