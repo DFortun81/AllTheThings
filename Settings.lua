@@ -222,7 +222,7 @@ local UnobtainableSettingsBase = {
 	},
 };
 
-local RawSettings
+local RawSettings;
 settings.Initialize = function(self)
 	-- app.PrintDebug("settings.Initialize")
 
@@ -239,12 +239,12 @@ settings.Initialize = function(self)
 	end
 
 	-- Initialise custom colors, iterate so if app.Colors gets new colors they aren't lost
-	if not app.DefaultColors then
-		app.DefaultColors = app.Colors
-		local colors = settings:Get("Window:CustomColors")
-		for k, v in pairs(colors) do
-			app.Colors[k] = v
-		end
+	if not DefaultColors then
+		local originalDefaultColors = app.Colors;
+		DefaultColors = originalDefaultColors;
+		local colors = settings:Get("Window:CustomColors");
+		setmetatable(colors, { __index = DefaultColors });
+		app.Colors = colors;
 	end
 
 	-- Assign the preset filters for your character class as the default states
@@ -4138,7 +4138,7 @@ local buttonDefault = child:CreateButton(
 { text = L["DEFAULT"], tooltip = L["RESET_TOOLTIP"], },
 {
 	OnClick = function(self)
-		app.Colors = app.DefaultColors
+		wipe(app.Colors);
 		app:UpdateWindows()
 	end,
 })
@@ -4157,7 +4157,6 @@ local function breadcrumbColor(restore)
 
 	-- Update our internal storage
 	app.Colors.Breadcrumb = RGBToHex(newR, newG, newB)
-	settings:Set("Window:CustomColors", app.Colors)
 	
  	-- And update the actual windows
 	app:UpdateWindows()
@@ -4188,7 +4187,6 @@ local function lockedColor(restore)
 
 	-- Update our internal storage
 	app.Colors.Locked = RGBToHex(newR, newG, newB)
-	settings:Set("Window:CustomColors", app.Colors)
 	
  	-- And update the actual windows
 	app:UpdateWindows()
@@ -4219,7 +4217,6 @@ local function mountColor(restore)
 
 	-- Update our internal storage
 	app.Colors.Mount = RGBToHex(newR, newG, newB)
-	settings:Set("Window:CustomColors", app.Colors)
 	
  	-- And update the actual windows
 	app:UpdateWindows()
