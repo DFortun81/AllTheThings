@@ -2463,473 +2463,482 @@ root(ROOTS.Unsorted, {
 	}),
 	tier(SL_TIER, {
 		tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
-			i(175768),	-- 9.0 QRP - Ardenweald - Cloak
-			i(177814),	-- 9.0 Zone Uncommon - Revendreth - Accessory - Trinket
-			i(173120),	-- 9.x Cut Rare
-			i(173118),	-- 9.x Cut Rare
-			i(173119),	-- 9.x Cut Rare
-			i(173117),	-- 9.x Raw Blue
-			i(173111),	-- 9.x Raw Rare
-			i(173116),	-- 9.x Raw Red
-			i(173115),	-- 9.x Raw Yellow
-			i(172911),	-- [DNT] [REUSE ME] \\ M.O.T.E. Collector
-			i(176448),	-- [DNT] [REUSE ME] \\ Soul Battery
-			i(172916),	-- [DNT] [REUSE ME] \\ Soul Extractomatic [NYI]
-			i(176616),	-- [DNT] [REUSE ME] \\ Unbound Soul
-			i(173063),	-- [DNT] REUSE ME \\ [DNT] REUSE ME [MTMM]
-			i(173064),	-- [DNT] REUSE ME \\ [DNT] REUSE ME [MTMM]
-			i(171426),	-- [DNT] REUSE ME \\ Blacksmithing - Modified Crafting Reagent 07
-			i(171427),	-- [DNT] REUSE ME \\ Blacksmithing - Modified Crafting Reagent 08
-			i(171295),	-- [DNT] REUSE ME \\ Bolstering Concoction
-			i(171296),	-- [DNT] REUSE ME \\ Brilliant Concoction
-			i(171297),	-- [DNT] REUSE ME \\ Culinary Concoction
-			i(172433),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 05
-			i(172434),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 06
-			i(172435),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 07
-			i(172436),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 08
-			i(172930),	-- [DNT] REUSE ME \\ Engineering - Modified Crafting Reagent 05
-			i(172931),	-- [DNT] REUSE ME \\ Engineering - Modified Crafting Reagent 06
-			i(172932),	-- [DNT] REUSE ME \\ Engineering - Modified Crafting Reagent 07
-			i(172933),	-- [DNT] REUSE ME \\ Engineering - Modified Crafting Reagent 08
-			i(172429),	-- [DNT] REUSE ME \\ Flamesteel Rod \\ Enchanting - Modified Crafting Reagent 01
-			i(172929),	-- [DNT] REUSE ME \\ Flash-Freeze Power Cells \\ Engineering - Modified Crafting Reagent 04
-			i(171421),	-- [DNT] REUSE ME \\ Freak Slayer's Charm \\ Freak Slayer
-			i(171422),	-- [DNT] REUSE ME \\ Ghoul Slayer's Charm \\ Ghoul Slayer
-			i(171425),	-- [DNT] REUSE ME \\ Laestrite Plates \\ Blacksmithing - Modified Crafting Reagent 06
-			i(171424),	-- [DNT] REUSE ME \\ Laestrite Spikes
-			i(172342),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 05
-			i(172343),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 06
-			i(172344),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 07
-			i(172345),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 08
-			i(171423),	-- [DNT] REUSE ME \\ Man Slayer's Charm \\ Man Slayer
-			i(171298),	-- [DNT] REUSE ME \\ Modified Crafting Reagent 06
-			i(171299),	-- [DNT] REUSE ME \\ Modified Crafting Reagent 07
-			i(171300),	-- [DNT] REUSE ME \\ Modified Crafting Reagent 08
-			i(172927),	-- [DNT] REUSE ME \\ Phaevyr Alloy
-			i(171294),	-- [DNT] REUSE ME \\ Slippery Concoction
-			i(171277),	-- [DNT] Spiritual Intellect Flask \\ Spiritual Intellect Flask
-			i(171279),	-- [DNT] Spiritual Strength Flask \\ Spiritual Strength Flask
-			i(183902),	-- A Faintly Glowing Seed
-			i(183877),	-- A Meandering Story
-			i(183881),	-- A Naughty Story
-			i(183880),	-- A Travel Journal
-			i(183878),	-- A Wandering Tale
-			i(172176),	-- Abomination Service Stub
-			i(183616),	-- Accursed Keepsake
-			i(183137),	-- Acolyte's Corpse
-			i(181463),	-- Alchemist's Crate of the Anonymous Buyer
-			i(180376),	-- Amalgamation of Sin
-			i(175082),	-- Amulet of the Realms
-			i(183879),	-- An Escapist Novel
-			i(174062),	-- Ancient Anima Staff
-			i(174940),	-- Ancient Heartwood
-			i(183722),	-- Ancient Insignia
-			i(172024),	-- Ancient Maldracite Weapon
-			i(181248),	-- Ancient Sinstone
-			i(181365),	-- Anh'Qiraj Statue
-			i(181480),	-- Anima Container 2
-			i(181481),	-- Anima Container 3
-			i(181482),	-- Anima Container 3
-			i(174058),	-- Anima Reserve
-			i(175972),	-- Anima-Infused Venom \\ Anima Infused Venom
-			i(180447),	-- Animacone
-			i(175028),	-- Animana Cores
-			i(181683),	-- Anointed Talisman
-			i(178031),	-- Anointing Chime
-			i(177036),	-- Aquatic Enticer
-			i(182473),	-- Archivam Tome
-			i(181542),	-- Ardenweald Anima 3
-			i(179830),	-- Ardenweald Covenant Mail Chest
-			i(179861),	-- Ardenweald Covenant Mail Chest
-			i(179853),	-- Ardenweald Covenant Mail Chest
-			i(179845),	-- Ardenweald Covenant Mail Chest
-			i(179860),	-- Ardenweald Covenant Mail Feet
-			i(179831),	-- Ardenweald Covenant Mail Feet
-			i(179852),	-- Ardenweald Covenant Mail Feet
-			i(179844),	-- Ardenweald Covenant Mail Feet
-			i(179851),	-- Ardenweald Covenant Mail Hand
-			i(179832),	-- Ardenweald Covenant Mail Hand
-			i(179843),	-- Ardenweald Covenant Mail Hand
-			i(179859),	-- Ardenweald Covenant Mail Hand
-			i(179850),	-- Ardenweald Covenant Mail Head
-			i(179842),	-- Ardenweald Covenant Mail Head
-			i(179833),	-- Ardenweald Covenant Mail Head
-			i(179858),	-- Ardenweald Covenant Mail Head
-			i(179841),	-- Ardenweald Covenant Mail Legs
-			i(179834),	-- Ardenweald Covenant Mail Legs
-			i(179857),	-- Ardenweald Covenant Mail Legs
-			i(179849),	-- Ardenweald Covenant Mail Legs
-			i(179840),	-- Ardenweald Covenant Mail Shoulder
-			i(179835),	-- Ardenweald Covenant Mail Shoulder
-			i(179856),	-- Ardenweald Covenant Mail Shoulder
-			i(179848),	-- Ardenweald Covenant Mail Shoulder
-			i(179855),	-- Ardenweald Covenant Mail Waist
-			i(179836),	-- Ardenweald Covenant Mail Waist
-			i(179847),	-- Ardenweald Covenant Mail Waist
-			i(179839),	-- Ardenweald Covenant Mail Waist
-			i(179854),	-- Ardenweald Covenant Mail Wrist
-			i(179846),	-- Ardenweald Covenant Mail Wrist
-			i(179837),	-- Ardenweald Covenant Mail Wrist
-			i(179838),	-- Ardenweald Covenant Mail Wrist
-			i(179501),	-- Ardenweald Dagger
-			i(178081),	-- Ardenweald Epic Treasure
-			i(179606),	-- Ardenweald Quest Shield
-			i(178080),	-- Ardenweald Rare Treasure
-			i(178079),	-- Ardenweald Uncommon Treasure
-			i(178089),	-- Ardenweald Unique Loot
-			i(175923),	-- Ardenwood
-			i(183792),	-- Artisan's Implement
-			i(182095),	-- Ascension Calling: Kleia
-			i(178924),	-- Ash Clod
-			i(182479),	-- Ashfallen Key
-			i(180450),	-- Assorted Bolts
-			i(173735),	-- Atonement Crypt Key
-			i(175135),	-- Atticus's Spare Supplies
-			i(175050),	-- Bag o' Conduits
-			i(173013),	-- Bag of Faerie Dust
-			i(180439),	-- Bagged Frog
-			i(178493),	-- Baine Bloodhoof
-			i(178084),	-- Bastion Epic Treasure
-			i(178083),	-- Bastion Rare Treasure
-			i(178082),	-- Bastion Uncommon Treasure
-			i(178090),	-- Bastion Unique Loot
-			i(174385),	-- Battle Supplies
-			i(183758),	-- Battleworn Chainmail
-			i(174674),	-- Bell of Remembrance
-			i(178463),	-- Bestial Epigraph
-			i(182249),	-- Bindings of Fleshcrafting \\ Bracers of Control
-			i(178768),	-- Binds of the Unwitting Servant
-			i(171429),	-- Blacksmithing Reagent 02
-			i(171430),	-- Blacksmithing Reagent 03
-			i(171431),	-- Blacksmithing Reagent 04
-			i(171432),	-- Blacksmithing Reagent 05
-			i(171433),	-- Blacksmithing Reagent 06
-			i(171434),	-- Blacksmithing Reagent 07
-			i(171435),	-- Blacksmithing Reagent 08
-			i(172889),	-- Blackthorn Antidote
-			i(178519),	-- Blank Sinstone
-			i(175041),	-- Blinding Anima
-			i(180890),	-- Bloodstained Gambrel
-			i(177837),	-- Bloodtusk Skull
-			i(175148),	-- Blooming Vale
-			i(173700),	-- Bonebinder Zal's Key
-			i(179317),	-- Bonemetal
-			i(173380),	-- Book of the Unspeakable
-			i(181281),	-- Boss 10 Lure
-			i(172900),	-- Bounty Notes
-			i(174854),	-- Brimming Animus Core
-			i(178543),	-- Broiled Blood Sausage
-			i(180286),	-- Broken Fishing Pole
-			i(180829),	-- Cache of Anima Tolls
-			i(173526),	-- Caer Darrow Scroll
-			i(174023),	-- Calibrated Mawstone
-			i(174024),	-- Calibrated Mawstone
-			i(173965),	-- Calibrated Mawstone
-			i(181473),	-- Candle Wax Chunk \\ Small Candle Stub
-			i(178791),	-- Carved Cloudfeather Call
-			i(175046),	-- Cats Go Fast
-			i(176805),	-- Centurion Armor Fragment \\ Anima-Infused Core
-			i(176810),	-- Centurion Core
-			i(178580),	-- Champion's Coin
-			i(180802),	-- Chaotic Runes
-			i(178720),	-- Chase the Sun
-			i(172456),	-- Chipped Fel Core
-			i(179981),	-- Chipped Sinstone
-			i(182159),	-- Choofa Very Happy PH Reward
-			i(183185),	-- Chromie's Scroll
-			i(183188),	-- Chromie's Scroll
-			i(171961),	-- Cleansing Chime
-			i(174526),	-- Clotting Patches
-			i(173702),	-- Cloudfeather Essence
-			i(183140),	-- Cloudstrider Antler
-			i(173690),	-- Cloudstrider Antler
-			i(178885),	-- Cloudstrider Pelt
-			i(182167),	-- Cobra Soul \\ Cobra Soulshape
-			i(172969),	-- Codex of Impossibilities
-			i(179327),	-- Coin of Brokerage
-			i(180801),	-- Coldheart Flight Routes
-			i(181253),	-- Collaborator's Hood
-			i(181254),	-- Collaborator's Robe
-			i(181350),	-- Collaborator's Robes
-			i(173364),	-- Collect Dummy
-			i(177035),	-- Colored Liquid Set
-			i(180846),	-- Colossal Feaster's Head
-			i(175031),	-- Combo Wrath
-			i(172039),	-- Comfy Comfort Pillow \\ Kala's Favorite Pillow
-			i(175977),	-- Command Lattice Mir
-			i(173004),	-- Command Lattice Omu
-			i(175978),	-- Command Lattice Pio
-			i(136851),	-- Commander Domitille's Helm
-			i(177523),	-- Communal Hood
-			i(177532),	-- Communal Robe
-			i(177526),	-- Communal Shoulderpads
-			i(177525),	-- Communal Vestments
-			i(177954),	-- Condensed Anima Mote
-			i(180785),	-- Condensed Essence
-			i(178142),	-- Condensed Stygia
-			i(172496),	-- Conduit Keystone
-			i(175036),	-- Conservation
-			i(174233),	-- Construct Field Plan
-			i(175757),	-- Construct Supply Key
-			i(175045),	-- Continuing Stampede
-			i(178726),	-- Continuing Stampede
-			i(178727),	-- Controlled Affinity
-			i(174074),	-- Cooked Meat
-			i(178875),	-- Corpsehound Whistle
-			i(176846),	-- Corpselouse Bristles
-			i(175839),	-- Corrupted Anima
-			i(180621),	-- Court of Harvesters Tribute
-			i(181514),	-- Court of Harvesters Tribute
-			i(178566),	-- Cracked Hand Mirror
-			i(180352),	-- Cracked Inquisitor's Band
-			i(179980),	-- Cracked Sinstone
-			i(174336),	-- Crimson Cravat
-			i(175030),	-- Critical Swiftmend
-			i(179375),	-- Crude Diary Key
-			i(167209),	-- Crude Map
-			i(183797),	-- Crusader's Dressing
-			i(183689),	-- Crusader's Dressing
-			i(180463),	-- Crusty Scepter
-			i(173267),	-- Crystalized Gormgris
-			i(172512),	-- Culexwood Branch
-			i(180446),	-- Curiously Corrosive Concoction \\ Altered Aldur'thar Extract
-			i(180607),	-- Cypher of Blinding
-			i(180626),	-- Cypher of Melody
-			i(178556),	-- Cypher of Relocation
-			i(175012),	-- Dancing Cricket
-			i(171967),	-- Dark Cowl
-			i(180340),	-- Dark Deceits and Diversions
-			i(177818),	-- Dark Mojo
-			i(171215),	-- Dark Sermon
-			i(178721),	-- Dark Star
-			i(170498),	-- Deadsoul Hound Harness
-			i(174357),	-- Death Lotus Petal
-			i(174382),	-- Death Lotus Powder
-			i(174098),	-- Death Lotus Powder
-			i(174179),	-- Death Lotus Powder
-			i(181037),	-- Death Shroud Belt
-			i(181038),	-- Death Shroud Bindings
-			i(181032),	-- Death Shroud Boots
-			i(181035),	-- Death Shroud Breeches
-			i(181039),	-- Death Shroud Cloak
-			i(181033),	-- Death Shroud Gloves
-			i(181034),	-- Death Shroud Hood
-			i(181036),	-- Death Shroud Spaulders
-			i(181031),	-- Death Shroud Vest
-			i(178112),	-- Death Venom Stinger
-			i(183122),	-- Death's Cloak
-			i(180811),	-- Deathfang's Favorite Skull
-			i(172970),	-- Debris Searched
-			i(183695),	-- Decaying Dark Naaru Shard
-			i(172967),	-- Deciphering Lens
-			i(182737),	-- Deep Fried Seraph Tenders
-			i(170585),	-- Depleted Anima Core
-			i(172953),	-- Depleted Wildseed \\ Hatched Chrysalis
-			i(178766),	-- Deranged Surgeon's Band \\ Deranged Surgeon's Signet
-			i(177946),	-- Desolate Leather Barding
-			i(180308),	-- Determined Stone Visage
-			i(174938),	-- Devourer Essence
-			i(174110),	-- Disassembly Flag
-			i(180808),	-- Discarded Torments
-			i(182735),	-- Domination Blade
-			i(171990),	-- Dormant Maldracite
-			i(176806),	-- Drained Anima-Core
-			i(180232),	-- Dranosh'ar Blockade Report
-			i(180996),	-- Dread Sentinel's Chestplate
-			i(181003),	-- Dread Sentinel's Cloak
-			i(181001),	-- Dread Sentinel's Girdle
-			i(180997),	-- Dread Sentinel's Greatboots
-			i(180998),	-- Dread Sentinel's Grips
-			i(180995),	-- Dread Sentinel's Headgear
-			i(180999),	-- Dread Sentinel's Legguards
-			i(181000),	-- Dread Sentinel's Spaulders
-			i(181002),	-- Dread Sentinel's Vambraces
-			i(175410),	-- Dreadshade Extract \\ Solanum Cerinthe
-			i(173292),	-- Dreamcatcher Anima
-			i(179002),	-- Dredger Chisel
-			i(180412),	-- Dredhollow Apple Cider
-			i(179286),	-- Dried Cabbage Leaves
-			i(174492),	-- Dripping Fangs
-			i(181753),	-- Droman Aliothe Elated PH Reward
-			i(181755),	-- Droman Aliothe Happy PH Reward
-			i(181754),	-- Droman Aliothe Very Happy PH Reward
-			i(174864),	-- Droman's Hunting Horn
-			i(180423),	-- Duchess Helveera
-			i(176878),	-- Dulled Memento
-			i(174923),	-- Duskmire Elixir
-			i(173286),	-- Duskmire Mushroom
-			i(177958),	-- Duskwood Report
-			i(173530),	-- Duskwood Scroll
-			i(173527),	-- Duskwood Scroll
-			i(177894),	-- Earthen Jar
-			i(181699),	-- Echthra's Notes \\ Echtra's Notes
-			i(175411),	-- Effused Powder
-			i(179377),	-- Elegant Diary Key
-			i(170480),	-- Elevator Key: Level 10
-			i(170481),	-- Elevator Key: Level 15
-			i(170482),	-- Elevator Key: Level 20
-			i(170479),	-- Elevator Key: Level 5
-			i(173532),	-- Elwynn Forest Scroll
-			i(177960),	-- Elwynn Report
-			i(180809),	-- Elysian Horn
-			i(178891),	-- Elysian Thread
-			i(179958),	-- Ember Court Guest List
-			i(180421),	-- Emberfall
-			i(174520),	-- Emeni's Magnificent Skin
-			i(168803),	-- Emergency Supplies
-			i(174499),	-- Empowered Bones
-			i(173149),	-- Empty Anima Crystal
-			i(180786),	-- Empty Binding
-			i(180455),	-- Empty Dredge Vial
-			i(172517),	-- Enchanted Pipes
-			i(177163),	-- Enchanted Soulweb
-			i(182363),	-- Enchanted Trickster Dust
-			i(172430),	-- Enchanting - Modified Crafting Reagent 02
-			i(172431),	-- Enchanting - Modified Crafting Reagent 03
-			i(172432),	-- Enchanting - Modified Crafting Reagent 04
-			i(172440),	-- Enchanting Reagent 04
-			i(172441),	-- Enchanting Reagent 05
-			i(172442),	-- Enchanting Reagent 06
-			i(172443),	-- Enchanting Reagent 07
-			i(172444),	-- Enchanting Reagent 08
-			i(181496),	-- Endmire Blossom
-			i(182314),	-- Endmire Vineroot
-			i(172938),	-- Engineering Reagent 05
-			i(172939),	-- Engineering Reagent 06
-			i(172940),	-- Engineering Reagent 07
-			i(172941),	-- Engineering Reagent 08
-			i(178581),	-- Engorged Gorm Larva
-			i(175793),	-- Enlarged Gluegland
-			i(175043),	-- Entangling Vortex
-			i(177712),	-- Envoy's Letter
-			i(180990),	-- Eonian Lyre
-			i(180898),	-- Ephemeral Draught
-			i(180448),	-- Eroded Heat Sink \\ Erroded Heat Sink
-			i(182615),	-- Errant Tome
-			i(180471),	-- Essence Dust
-			i(171281),	-- Eternal Cauldron
-			i(171282),	-- Eternal Cauldron
-			i(171283),	-- Eternal Cauldron
-			i(171280),	-- Eternal Flask
-			i(172461),	-- Eternal Twilight Wand
-			i(178042),	-- Eternity Plating
-			i(175034),	-- Ethereal Form
-			i(178724),	-- Ethereal Shape
-			i(175967),	-- Etherwyrm Filament
-			i(174991),	-- Everlife Root Fiber
-			i(182698),	-- Exotic Purple Pigment
-			i(175241),	-- Expedition Healing Potion
-			i(183442),	-- Experimental Fluid
-			i(184033),	-- Extra-Spacious Knapsack
-			i(180035),	-- Eye of the Scryer
-			i(175243),	-- Faded Grimoire
-			i(178570),	-- Fading Memory Glass
-			i(180061),	-- Fae Weapon
-			i(180292),	-- Faerie Dust
-			i(177161),	-- Faerie Harp
-			i(180449),	-- Failed Experiment
-			i(177950),	-- Falk's Note
-			i(174275),	-- Fallen Purian
-			i(173373),	-- Faol's Hearthstone
-			i(180233),	-- Far Watch Post Report
-			i(181136),	-- Fearstalker's Belt
-			i(181137),	-- Fearstalker's Bracers
-			i(181138),	-- Fearstalker's Cloak
-			i(181132),	-- Fearstalker's Gauntlets
-			i(181130),	-- Fearstalker's Hauberk
-			i(181133),	-- Fearstalker's Helm
-			i(181134),	-- Fearstalker's Leggings
-			i(181135),	-- Fearstalker's Monnion
-			i(181131),	-- Fearstalker's Sabatons
-			i(173800),	-- Featureless Mask
-			i(172454),	-- Fel Merchandise
-			i(172460),	-- Fel Poultice
-			i(172513),	-- Fel Trigger
-			i(177608),	-- Felsoul Cowl
-			i(177610),	-- Felsoul Robe
-			i(177611),	-- Felsoul Shoulderpads
-			i(182387),	-- Feral Anima
-			i(173150),	-- Finnan's Lucky Mallet
-			i(167206),	-- Fire Essence
-			i(168410),	-- First Aid Kit
-			i(170549),	-- First Aid Kit
-			i(180897),	-- Firstborne's Light
-			i(177042),	-- Five-Chime Batzos
-			i(174775),	-- Fix-It-Stick
-			i(176814),	-- Fleshcrafter's Maldracite
-			i(182341),	-- Fleshshaper's Heart
-			i(182334),	-- Fleshshaper's Heart
-			i(177256),	-- Floundering Soul
-			i(175156),	-- Focus Fire
-			i(175033),	-- Focused Moonfire
-			i(171205),	-- Foe Cleaver \\ Foe Cleave
-			i(171345),	-- Forged Letter of Condemnation
-			i(180466),	-- Forged Permission Slip
-			i(177186),	-- Forgotten Memorandum
-			i(182355),	-- Forgotten Sweetcheese
-			i(180816),	-- Forsworn Insignia
-			i(175277),	-- Forsworn Uniform Piece
-			i(175409),	-- Fractured Anima Crystal
-			i(180769),	-- Fractured Stonewing
-			i(182360),	-- Fresh Ardenweald Anima
-			i(182358),	-- Fresh Bastion Anima
-			i(173268),	-- Fresh Gorm Gris \\ Ardenshard
-			i(182359),	-- Fresh Maldraxxus Anima
-			i(182361),	-- Fresh Revendreth Anima
-			i(175027),	-- Fulfilling Meditation
-			i(172084),	-- Fungal Beacon
-			i(171106),	-- Gathered Necrotic Shards
-			i(177279),	-- Gaunt Sinew \\ Desolate Sinew
-			i(177034),	-- Gem Chisel Kit
-			i(171966),	-- Gem of Binding
-			i(180230),	-- Gemstone Chips
-			i(178529),	-- Gently Shaken Gift
-			i(172221),	-- Giant Gorm Gris
-			i(180026),	-- Giant Pearl
-			i(173528),	-- Gilded Hearthstone
-			i(182639),	-- Gilded Skull Key
-			i(179321),	-- Gildenite
-			i(175384),	-- Glass Shard \\ Mirror Fragment
-			i(168208),	-- Gleaming Chest
-			i(168210),	-- Gleaming Chest: Azrafael
-			i(168211),	-- Gleaming Chest: Beneficus
-			i(168209),	-- Gleaming Chest: Olberic
-			i(181356),	-- Glenzu Original
-			i(179005),	-- Glinting Gold Fang
-			i(181954),	-- Glorious Shimmerfin
-			i(179006),	-- Glowing Endmire Dust \\ Pile of Endmire Dust
-			i(173537),	-- Glowing Hearthstone
-			i(172516),	-- Glowing Viscera
-			i(178517),	-- Gold Tooth
-			i(178582),	-- Golden Death Mask
-			i(174746),	-- Golden Egg Shells
-			i(178575),	-- Golden Orb of Energy
-			i(174331),	-- Goliath Gauntlet
-			i(175829),	-- Gooey Bug Bites
-			i(178175),	-- Gooey Sap
-			i(178683),	-- Gorgebeak's Bill
-			i(183961),	-- Gorm "Juice"
-			i(181250),	-- Gorm Pheromone Gland \\ Gorm Pheremone Gland
-			i(172951),	-- Gormherd Branch
-			i(173534),	-- Gormherd Branch
-			i(172955),	-- Gormherd Branch
-			i(174645),	-- Gormherd Branch \\ Rod of Reclamation
-			i(183963),	-- Gormlet
-			i(182600),	-- Gormling in a Bag
-			i(181284),	-- Gormling in a Bag
-			i(178028),	-- Gormwrought Shield \\ Gormsmith Shield
-			i(178026),	-- Gormwrought Staff \\ Gormsmith Staff
-			i(173910),	-- Gracepetal Incense Burner
-			i(173704),	-- Granary Jug
-			i(180451),	-- Grand Inquisitor's Sinstone Fragment
-			i(182644),	-- Greater Wards and Barriers, Volume IV
-			i(173385),	-- Greenflame Candle
-			i(170053),	-- Grek'og's Tusk
-			i(172038),	-- Grim Iron Shackles
-			i(181861),	-- Ground Twilight Bark
-			i(175991),	-- Grove Defender's Focus \\ Droman's Focus
-			i(174877),	-- Grubby's Silk
-			i(182170),	-- Gryphon Soul \\ Gryphon Soulshape
+			n(ARMOR, {
+				i(175768),	-- 9.0 QRP - Ardenweald - Cloak
+				i(177814),	-- 9.0 Zone Uncommon - Revendreth - Accessory - Trinket
+				i(179830),	-- Ardenweald Covenant Mail Chest
+				i(179861),	-- Ardenweald Covenant Mail Chest
+				i(179853),	-- Ardenweald Covenant Mail Chest
+				i(179845),	-- Ardenweald Covenant Mail Chest
+				i(179860),	-- Ardenweald Covenant Mail Feet
+				i(179831),	-- Ardenweald Covenant Mail Feet
+				i(179852),	-- Ardenweald Covenant Mail Feet
+				i(179844),	-- Ardenweald Covenant Mail Feet
+				i(179851),	-- Ardenweald Covenant Mail Hand
+				i(179832),	-- Ardenweald Covenant Mail Hand
+				i(179843),	-- Ardenweald Covenant Mail Hand
+				i(179859),	-- Ardenweald Covenant Mail Hand
+				i(179850),	-- Ardenweald Covenant Mail Head
+				i(179842),	-- Ardenweald Covenant Mail Head
+				i(179833),	-- Ardenweald Covenant Mail Head
+				i(179858),	-- Ardenweald Covenant Mail Head
+				i(179841),	-- Ardenweald Covenant Mail Legs
+				i(179834),	-- Ardenweald Covenant Mail Legs
+				i(179857),	-- Ardenweald Covenant Mail Legs
+				i(179849),	-- Ardenweald Covenant Mail Legs
+				i(179840),	-- Ardenweald Covenant Mail Shoulder
+				i(179835),	-- Ardenweald Covenant Mail Shoulder
+				i(179856),	-- Ardenweald Covenant Mail Shoulder
+				i(179848),	-- Ardenweald Covenant Mail Shoulder
+				i(179855),	-- Ardenweald Covenant Mail Waist
+				i(179836),	-- Ardenweald Covenant Mail Waist
+				i(179847),	-- Ardenweald Covenant Mail Waist
+				i(179839),	-- Ardenweald Covenant Mail Waist
+				i(179854),	-- Ardenweald Covenant Mail Wrist
+				i(179846),	-- Ardenweald Covenant Mail Wrist
+				i(179837),	-- Ardenweald Covenant Mail Wrist
+				i(179838),	-- Ardenweald Covenant Mail Wrist
+				i(178768),	-- Binds of the Unwitting Servant
+				i(177523),	-- Communal Hood
+				i(177532),	-- Communal Robe
+				i(177526),	-- Communal Shoulderpads
+				i(177525),	-- Communal Vestments
+				i(181037),	-- Death Shroud Belt
+				i(181038),	-- Death Shroud Bindings
+				i(181032),	-- Death Shroud Boots
+				i(181035),	-- Death Shroud Breeches
+				i(181039),	-- Death Shroud Cloak
+				i(181033),	-- Death Shroud Gloves
+				i(181034),	-- Death Shroud Hood
+				i(181036),	-- Death Shroud Spaulders
+				i(181031),	-- Death Shroud Vest
+				i(178766),	-- Deranged Surgeon's Band
+				i(180996),	-- Dread Sentinel's Chestplate
+				i(181003),	-- Dread Sentinel's Cloak
+				i(181001),	-- Dread Sentinel's Girdle
+				i(180997),	-- Dread Sentinel's Greatboots
+				i(180998),	-- Dread Sentinel's Grips
+				i(180995),	-- Dread Sentinel's Headgear
+				i(180999),	-- Dread Sentinel's Legguards
+				i(181000),	-- Dread Sentinel's Spaulders
+				i(181002),	-- Dread Sentinel's Vambraces
+				i(181136),	-- Fearstalker's Belt
+				i(181137),	-- Fearstalker's Bracers
+				i(181138),	-- Fearstalker's Cloak
+				i(181132),	-- Fearstalker's Gauntlets
+				i(181130),	-- Fearstalker's Hauberk
+				i(181133),	-- Fearstalker's Helm
+				i(181134),	-- Fearstalker's Leggings
+				i(181135),	-- Fearstalker's Monnion
+				i(181131),	-- Fearstalker's Sabatons
+				i(177608),	-- Felsoul Cowl
+				i(177610),	-- Felsoul Robe
+				i(177611),	-- Felsoul Shoulderpads
+			}),
+			n(WEAPONS, {
+				i(179501),	-- Ardenweald Dagger
+				i(179606),	-- Ardenweald Quest Shield
+				i(172461),	-- Eternal Twilight Wand
+				i(178028),	-- Gormwrought Shield
+				i(178026),	-- Gormwrought Staff
+				i(175991),	-- Grove Defender's Focus
+			}),
+			n(PROFESSIONS, {
+				i(173120),	-- 9.x Cut Rare
+				i(173118),	-- 9.x Cut Rare
+				i(173119),	-- 9.x Cut Rare
+				i(173117),	-- 9.x Raw Blue
+				i(173111),	-- 9.x Raw Rare
+				i(173116),	-- 9.x Raw Red
+				i(173115),	-- 9.x Raw Yellow
+				i(172911),	-- [DNT] [REUSE ME] \\ M.O.T.E. Collector
+				i(176448),	-- [DNT] [REUSE ME] \\ Soul Battery
+				i(172916),	-- [DNT] [REUSE ME] \\ Soul Extractomatic [NYI]
+				i(176616),	-- [DNT] [REUSE ME] \\ Unbound Soul
+				i(173063),	-- [DNT] REUSE ME \\ [DNT] REUSE ME [MTMM]
+				i(173064),	-- [DNT] REUSE ME \\ [DNT] REUSE ME [MTMM]
+				i(171426),	-- [DNT] REUSE ME \\ Blacksmithing - Modified Crafting Reagent 07
+				i(171427),	-- [DNT] REUSE ME \\ Blacksmithing - Modified Crafting Reagent 08
+				i(171295),	-- [DNT] REUSE ME \\ Bolstering Concoction
+				i(171296),	-- [DNT] REUSE ME \\ Brilliant Concoction
+				i(171297),	-- [DNT] REUSE ME \\ Culinary Concoction
+				i(172433),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 05
+				i(172434),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 06
+				i(172435),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 07
+				i(172436),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 08
+				i(172930),	-- [DNT] REUSE ME \\ Engineering - Modified Crafting Reagent 05
+				i(172931),	-- [DNT] REUSE ME \\ Engineering - Modified Crafting Reagent 06
+				i(172932),	-- [DNT] REUSE ME \\ Engineering - Modified Crafting Reagent 07
+				i(172933),	-- [DNT] REUSE ME \\ Engineering - Modified Crafting Reagent 08
+				i(172429),	-- [DNT] REUSE ME \\ Flamesteel Rod \\ Enchanting - Modified Crafting Reagent 01
+				i(172929),	-- [DNT] REUSE ME \\ Flash-Freeze Power Cells \\ Engineering - Modified Crafting Reagent 04
+				i(171421),	-- [DNT] REUSE ME \\ Freak Slayer's Charm \\ Freak Slayer
+				i(171422),	-- [DNT] REUSE ME \\ Ghoul Slayer's Charm \\ Ghoul Slayer
+				i(171425),	-- [DNT] REUSE ME \\ Laestrite Plates \\ Blacksmithing - Modified Crafting Reagent 06
+				i(171424),	-- [DNT] REUSE ME \\ Laestrite Spikes
+				i(172342),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 05
+				i(172343),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 06
+				i(172344),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 07
+				i(172345),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 08
+				i(171423),	-- [DNT] REUSE ME \\ Man Slayer's Charm \\ Man Slayer
+				i(171298),	-- [DNT] REUSE ME \\ Modified Crafting Reagent 06
+				i(171299),	-- [DNT] REUSE ME \\ Modified Crafting Reagent 07
+				i(171300),	-- [DNT] REUSE ME \\ Modified Crafting Reagent 08
+				i(172927),	-- [DNT] REUSE ME \\ Phaevyr Alloy
+				i(171294),	-- [DNT] REUSE ME \\ Slippery Concoction
+				i(171277),	-- [DNT] Spiritual Intellect Flask \\ Spiritual Intellect Flask
+				i(171279),	-- [DNT] Spiritual Strength Flask \\ Spiritual Strength Flask
+				i(171429),	-- Blacksmithing Reagent 02
+				i(171430),	-- Blacksmithing Reagent 03
+				i(171431),	-- Blacksmithing Reagent 04
+				i(171432),	-- Blacksmithing Reagent 05
+				i(171433),	-- Blacksmithing Reagent 06
+				i(171434),	-- Blacksmithing Reagent 07
+				i(171435),	-- Blacksmithing Reagent 08
+				i(177946),	-- Desolate Leather Barding
+				i(172430),	-- Enchanting - Modified Crafting Reagent 02
+				i(172431),	-- Enchanting - Modified Crafting Reagent 03
+				i(172432),	-- Enchanting - Modified Crafting Reagent 04
+				i(172440),	-- Enchanting Reagent 04
+				i(172441),	-- Enchanting Reagent 05
+				i(172442),	-- Enchanting Reagent 06
+				i(172443),	-- Enchanting Reagent 07
+				i(172444),	-- Enchanting Reagent 08
+				i(172938),	-- Engineering Reagent 05
+				i(172939),	-- Engineering Reagent 06
+				i(172940),	-- Engineering Reagent 07
+				i(172941),	-- Engineering Reagent 08
+				i(171281),	-- Eternal Cauldron
+				i(171282),	-- Eternal Cauldron
+				i(171283),	-- Eternal Cauldron
+				i(171280),	-- Eternal Flask
+				i(177279),	-- Gaunt Sinew
+			}),
+			filter(QUEST_ITEMS, {
+				i(183877),	-- A Meandering Story
+				i(183881),	-- A Naughty Story
+				i(183880),	-- A Travel Journal
+				i(183878),	-- A Wandering Tale
+				i(172176),	-- Abomination Service Stub
+				i(183137),	-- Acolyte's Corpse
+				i(181463),	-- Alchemist's Crate of the Anonymous Buyer
+				i(175082),	-- Amulet of the Realms
+				i(183879),	-- An Escapist Novel
+				i(174062),	-- Ancient Anima Staff
+				i(174940),	-- Ancient Heartwood
+				i(183722),	-- Ancient Insignia
+				i(172024),	-- Ancient Maldracite Weapon
+				i(181365),	-- Anh'Qiraj Statue
+				i(174058),	-- Anima Reserve
+				i(175972),	-- Anima-Infused Venom
+				i(180447),	-- Animacone
+				i(181683),	-- Anointed Talisman
+				i(178031),	-- Anointing Chime
+				i(182473),	-- Archivam Tome
+				i(183792),	-- Artisan's Implement
+				i(182095),	-- Ascension Calling: Kleia
+				i(182479),	-- Ashfallen Key
+				i(173735),	-- Atonement Crypt Key
+				i(173013),	-- Bag of Faerie Dust
+				i(180439),	-- Bagged Frog
+				i(178493),	-- Baine Bloodhoof
+				i(174385),	-- Battle Supplies
+				i(183758),	-- Battleworn Chainmail
+				i(174674),	-- Bell of Remembrance
+				i(178463),	-- Bestial Epigraph
+				i(182249),	-- Bindings of Fleshcrafting
+				i(172889),	-- Blackthorn Antidote
+				i(177837),	-- Bloodtusk Skull
+				i(173700),	-- Bonebinder Zal's Key
+				i(179317),	-- Bonemetal
+				i(173380),	-- Book of the Unspeakable
+				i(172900),	-- Bounty Notes
+				i(174854),	-- Brimming Animus Core
+				i(173526),	-- Caer Darrow Scroll
+				i(174023),	-- Calibrated Mawstone
+				i(174024),	-- Calibrated Mawstone
+				i(173965),	-- Calibrated Mawstone
+				i(181473),	-- Candle Wax Chunk
+				i(178791),	-- Carved Cloudfeather Call
+				i(176805),	-- Centurion Armor Fragment
+				i(178580),	-- Champion's Coin
+				i(180802),	-- Chaotic Runes
+				i(172456),	-- Chipped Fel Core
+				i(179981),	-- Chipped Sinstone
+				i(183185),	-- Chromie's Scroll
+				i(183188),	-- Chromie's Scroll
+				i(171961),	-- Cleansing Chime
+				i(174526),	-- Clotting Patches
+				i(173702),	-- Cloudfeather Essence
+				i(183140),	-- Cloudstrider Antler
+				i(173690),	-- Cloudstrider Antler
+				i(178885),	-- Cloudstrider Pelt
+				i(182167),	-- Cobra Soul
+				i(172969),	-- Codex of Impossibilities
+				i(179327),	-- Coin of Brokerage
+				i(180801),	-- Coldheart Flight Routes
+				i(181253),	-- Collaborator's Hood
+				i(181254),	-- Collaborator's Robe
+				i(181350),	-- Collaborator's Robes
+				i(173364),	-- Collect Dummy
+				i(180846),	-- Colossal Feaster's Head
+				i(172039),	-- Comfy Comfort Pillow
+				i(175977),	-- Command Lattice Mir
+				i(173004),	-- Command Lattice Omu
+				i(175978),	-- Command Lattice Pio
+				i(136851),	-- Commander Domitille's Helm
+				i(177954),	-- Condensed Anima Mote
+				i(180785),	-- Condensed Essence
+				i(178142),	-- Condensed Stygia
+				i(174233),	-- Construct Field Plan
+				i(175757),	-- Construct Supply Key
+				i(174074),	-- Cooked Meat
+				i(178875),	-- Corpsehound Whistle
+				i(176846),	-- Corpselouse Bristles
+				i(175839),	-- Corrupted Anima
+				i(179980),	-- Cracked Sinstone
+				i(174336),	-- Crimson Cravat
+				i(167209),	-- Crude Map
+				i(183797),	-- Crusader's Dressing
+				i(183689),	-- Crusader's Dressing
+				i(173267),	-- Crystalized Gormgris
+				i(172512),	-- Culexwood Branch
+				i(180446),	-- Curiously Corrosive Concoction
+				i(180607),	-- Cypher of Blinding
+				i(180626),	-- Cypher of Melody
+				i(175012),	-- Dancing Cricket
+				i(171967),	-- Dark Cowl
+				i(177818),	-- Dark Mojo
+				i(171215),	-- Dark Sermon
+				i(174357),	-- Death Lotus Petal
+				i(174382),	-- Death Lotus Powder
+				i(174098),	-- Death Lotus Powder
+				i(174179),	-- Death Lotus Powder
+				i(172970),	-- Debris Searched
+				i(172967),	-- Deciphering Lens
+				i(170585),	-- Depleted Anima Core
+				i(172953),	-- Depleted Wildseed
+				i(174938),	-- Devourer Essence
+				i(174110),	-- Disassembly Flag
+				i(180808),	-- Discarded Torments
+				i(182735),	-- Domination Blade
+				i(171990),	-- Dormant Maldracite
+				i(180232),	-- Dranosh'ar Blockade Report
+				i(175410),	-- Dreadshade Extract
+				i(173292),	-- Dreamcatcher Anima
+				i(179002),	-- Dredger Chisel
+				i(174492),	-- Dripping Fangs
+				i(174864),	-- Droman's Hunting Horn
+				i(174923),	-- Duskmire Elixir
+				i(173286),	-- Duskmire Mushroom
+				i(177958),	-- Duskwood Report
+				i(173530),	-- Duskwood Scroll
+				i(173527),	-- Duskwood Scroll
+				i(177894),	-- Earthen Jar
+				i(181699),	-- Echthra's Notes
+				i(175411),	-- Effused Powder
+				i(173532),	-- Elwynn Forest Scroll
+				i(177960),	-- Elwynn Report
+				i(180809),	-- Elysian Horn
+				i(178891),	-- Elysian Thread
+				i(179958),	-- Ember Court Guest List
+				i(174520),	-- Emeni's Magnificent Skin
+				i(168803),	-- Emergency Supplies
+				i(174499),	-- Empowered Bones
+				i(173149),	-- Empty Anima Crystal
+				i(172517),	-- Enchanted Pipes
+				i(177163),	-- Enchanted Soulweb
+				i(182363),	-- Enchanted Trickster Dust
+				i(181496),	-- Endmire Blossom
+				i(182314),	-- Endmire Vineroot
+				i(178581),	-- Engorged Gorm Larva
+				i(175793),	-- Enlarged Gluegland
+				i(177712),	-- Envoy's Letter
+				i(180990),	-- Eonian Lyre
+				i(180898),	-- Ephemeral Draught
+				i(182615),	-- Errant Tome
+				i(180471),	-- Essence Dust
+				i(178042),	-- Eternity Plating
+				i(175967),	-- Etherwyrm Filament
+				i(174991),	-- Everlife Root Fiber
+				i(183442),	-- Experimental Fluid
+				i(180035),	-- Eye of the Scryer
+				i(178570),	-- Fading Memory Glass
+				i(180061),	-- Fae Weapon
+				i(177161),	-- Faerie Harp
+				i(177950),	-- Falk's Note
+				i(174275),	-- Fallen Purian
+				i(173373),	-- Faol's Hearthstone
+				i(180233),	-- Far Watch Post Report
+				i(173800),	-- Featureless Mask
+				i(172454),	-- Fel Merchandise
+				i(172460),	-- Fel Poultice
+				i(172513),	-- Fel Trigger
+				i(182387),	-- Feral Anima
+				i(173150),	-- Finnan's Lucky Mallet
+				i(167206),	-- Fire Essence
+				i(168410),	-- First Aid Kit
+				i(170549),	-- First Aid Kit
+				i(180897),	-- Firstborne's Light
+				i(174775),	-- Fix-It-Stick
+				i(176814),	-- Fleshcrafter's Maldracite
+				i(182341),	-- Fleshshaper's Heart
+				i(182334),	-- Fleshshaper's Heart
+				i(171205),	-- Foe Cleaver
+				i(177186),	-- Forgotten Memorandum
+				i(180816),	-- Forsworn Insignia
+				i(175277),	-- Forsworn Uniform Piece
+				i(175409),	-- Fractured Anima Crystal
+				i(182360),	-- Fresh Ardenweald Anima
+				i(182358),	-- Fresh Bastion Anima
+				i(173268),	-- Fresh Gorm Gris
+				i(182359),	-- Fresh Maldraxxus Anima
+				i(182361),	-- Fresh Revendreth Anima
+				i(172084),	-- Fungal Beacon
+				i(171106),	-- Gathered Necrotic Shards
+				i(171966),	-- Gem of Binding
+				i(178529),	-- Gently Shaken Gift
+				i(172221),	-- Giant Gorm Gris
+				i(180026),	-- Giant Pearl
+				i(173528),	-- Gilded Hearthstone
+				i(182639),	-- Gilded Skull Key
+				i(179321),	-- Gildenite
+				i(175384),	-- Glass Shard
+				i(181356),	-- Glenzu Original
+				i(181954),	-- Glorious Shimmerfin
+				i(173537),	-- Glowing Hearthstone
+				i(172516),	-- Glowing Viscera
+				i(178582),	-- Golden Death Mask
+				i(178575),	-- Golden Orb of Energy
+				i(174331),	-- Goliath Gauntlet
+				i(175829),	-- Gooey Bug Bites
+				i(178683),	-- Gorgebeak's Bill
+				i(183961),	-- Gorm "Juice"
+				i(181250),	-- Gorm Pheromone Gland
+				i(172951),	-- Gormherd Branch
+				i(173534),	-- Gormherd Branch
+				i(172955),	-- Gormherd Branch
+				i(174645),	-- Gormherd Branch
+				i(182600),	-- Gormling in a Bag
+				i(181284),	-- Gormling in a Bag
+				i(173910),	-- Gracepetal Incense Burner
+				i(173704),	-- Granary Jug
+				i(173385),	-- Greenflame Candle
+				i(181861),	-- Ground Twilight Bark
+				i(174877),	-- Grubby's Silk
+				i(182170),	-- Gryphon Soul
+			}),
+			filter(MISC, {
+				i(183902),	-- A Faintly Glowing Seed
+				i(183616),	-- Accursed Keepsake
+				i(180376),	-- Amalgamation of Sin
+				i(177036),	-- Aquatic Enticer
+				i(175923),	-- Ardenwood
+				i(178924),	-- Ash Clod
+				i(180450),	-- Assorted Bolts
+				i(175135),	-- Atticus's Spare Supplies
+				i(178519),	-- Blank Sinstone
+				i(180890),	-- Bloodstained Gambrel
+				i(181281),	-- Boss 10 Lure
+				i(178543),	-- Broiled Blood Sausage
+				i(180286),	-- Broken Fishing Pole
+				i(176810),	-- Centurion Core
+				i(177035),	-- Colored Liquid Set
+				i(172496),	-- Conduit Keystone
+				i(178566),	-- Cracked Hand Mirror
+				i(180352),	-- Cracked Inquisitor's Band
+				i(179375),	-- Crude Diary Key
+				i(180463),	-- Crusty Scepter
+				i(180340),	-- Dark Deceits and Diversions
+				i(170498),	-- Deadsoul Hound Harness
+				i(178112),	-- Death Venom Stinger
+				i(183122),	-- Death's Cloak
+				i(180811),	-- Deathfang's Favorite Skull
+				i(183695),	-- Decaying Dark Naaru Shard
+				i(182737),	-- Deep Fried Seraph Tenders
+				i(180308),	-- Determined Stone Visage
+				i(176806),	-- Drained Anima-Core
+				i(180412),	-- Dredhollow Apple Cider
+				i(179286),	-- Dried Cabbage Leaves
+				i(180423),	-- Duchess Helveera
+				i(176878),	-- Dulled Memento
+				i(179377),	-- Elegant Diary Key
+				i(170480),	-- Elevator Key: Level 10
+				i(170481),	-- Elevator Key: Level 15
+				i(170482),	-- Elevator Key: Level 20
+				i(170479),	-- Elevator Key: Level 5
+				i(180421),	-- Emberfall
+				i(180786),	-- Empty Binding
+				i(180455),	-- Empty Dredge Vial
+				i(180448),	-- Eroded Heat Sink
+				i(175241),	-- Expedition Healing Potion
+				i(184033),	-- Extra-Spacious Knapsack
+				i(175243),	-- Faded Grimoire
+				i(180292),	-- Faerie Dust
+				i(180449),	-- Failed Experiment
+				i(177042),	-- Five-Chime Batzos
+				i(177256),	-- Floundering Soul
+				i(180769),	-- Fractured Stonewing
+				i(180230),	-- Gemstone Chips
+				i(168208),	-- Gleaming Chest
+				i(168210),	-- Gleaming Chest: Azrafael
+				i(168211),	-- Gleaming Chest: Beneficus
+				i(168209),	-- Gleaming Chest: Olberic
+				i(179005),	-- Glinting Gold Fang
+				i(179006),	-- Glowing Endmire Dust
+				i(178517),	-- Gold Tooth
+				i(174746),	-- Golden Egg Shells
+				i(178175),	-- Gooey Sap
+				i(183963),	-- Gormlet
+				i(180451),	-- Grand Inquisitor's Sinstone Fragment
+				i(170053),	-- Grek'og's Tusk
+				i(172038),	-- Grim Iron Shackles
+				-- EC
+				i(181248),	-- Ancient Sinstone
+				--- NYI
+				i(181480),	-- Anima Container 2
+				i(181481),	-- Anima Container 3
+				i(181482),	-- Anima Container 3
+				i(175028),	-- Animana Cores
+				i(181542),	-- Ardenweald Anima 3
+				i(178081),	-- Ardenweald Epic Treasure
+				i(178080),	-- Ardenweald Rare Treasure
+				i(178079),	-- Ardenweald Uncommon Treasure
+				i(178089),	-- Ardenweald Unique Loot
+				i(175050),	-- Bag o' Conduits
+				i(178084),	-- Bastion Epic Treasure
+				i(178083),	-- Bastion Rare Treasure
+				i(178082),	-- Bastion Uncommon Treasure
+				i(178090),	-- Bastion Unique Loot
+				i(175041),	-- Blinding Anima
+				i(175148),	-- Blooming Vale
+				i(180829),	-- Cache of Anima Tolls
+				i(175046),	-- Cats Go Fast
+				i(178720),	-- Chase the Sun
+				i(182159),	-- Choofa Very Happy PH Reward
+				i(175031),	-- Combo Wrath
+				i(175036),	-- Conservation
+				i(175045),	-- Continuing Stampede
+				i(178726),	-- Continuing Stampede
+				i(178727),	-- Controlled Affinity
+				i(180621),	-- Court of Harvesters Tribute
+				i(181514),	-- Court of Harvesters Tribute
+				i(175030),	-- Critical Swiftmend
+				i(178556),	-- Cypher of Relocation
+				i(178721),	-- Dark Star
+				i(181753),	-- Droman Aliothe Elated PH Reward
+				i(181755),	-- Droman Aliothe Happy PH Reward
+				i(181754),	-- Droman Aliothe Very Happy PH Reward
+				i(175043),	-- Entangling Vortex
+				i(175034),	-- Ethereal Form
+				i(178724),	-- Ethereal Shape
+				i(182698),	-- Exotic Purple Pigment
+				i(175156),	-- Focus Fire
+				i(175033),	-- Focused Moonfire
+				i(175027),	-- Fulfilling Meditation
+				i(177034),	-- Gem Chisel Kit
+			}),
+			---
 			i(178537),	-- Hair-Trussed Fungi
 			i(172901),	-- Hakone's Signet
 			i(178657),	-- Halen's Ritual Drafts
