@@ -15,7 +15,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { "added 8.2.0" } 
 			},
 			["groups"] = {
 				-- Drops
-				i(170472),	-- Encrusted Coin
 				i(170198, {	-- Eternal Palace Dining Set (TOY!)
 					["description"] = "Obtained from the 12th |cFFFFD700Arcane Chest|r you open.",
 				}),

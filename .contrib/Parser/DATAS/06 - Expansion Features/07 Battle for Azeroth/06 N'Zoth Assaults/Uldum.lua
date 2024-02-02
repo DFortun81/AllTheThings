@@ -1054,6 +1054,7 @@ root(ROOTS.ExpansionFeatures, tier(BFA_TIER, {
 				})),
 			}),
 			n(FACTIONS, {
+				faction(2427),	-- Aqir Hatchling
 				faction(FACTION_ULDUM_ACCORD),	-- Uldum Accord
 			}),
 			n(-10072, {	-- N'Zoth Assault

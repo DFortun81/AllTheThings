@@ -427,7 +427,6 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 					["isWeekly"] = true,
 					["provider"] = { "n", 112802 },	-- Eadweard Dalyngrigge
 					["g"] = {
-						currency(2657),	-- Mysterious Fragment
 						currency(2819),	-- Archivist Knowledge
 					},
 				}),
@@ -459,6 +458,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 						i(208734),	-- Waterlogged Ledger (QI!)
 					},
 				}),
+			}),
+			n(REWARDS, {
+				currency(2657),	-- Mysterious Fragment
 			}),
 			n(VENDORS, {
 				n(209192, {	-- Provisioner Aristta
