@@ -262,8 +262,11 @@ local function GetRemovedWithPatchString(rwp)
 		return sformat(L.REMOVED_WITH_PATCH_FORMAT, math_floor(rwp / 10000) .. "." .. (math_floor(rwp / 100) % 10) .. "." .. (rwp % 10));
 	end
 end
+app.GetCollectionText = GetCollectionText;
 app.GetCompletionIcon = GetCompletionIcon;
+app.GetCompletionText = GetCompletionText;
 app.GetProgressTextForRow = GetProgressTextForRow;
+app.GetProgressTextForTooltip = GetProgressTextForTooltip;
 
 -- Source ID Harvesting Lib
 local DressUpModel = CreateFrame('DressUpModel');
@@ -1945,6 +1948,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		return group;
 	end
 end
+app.GetCachedSearchResults = GetCachedSearchResults;
 
 -- Item Information Lib
 local function SearchForLink(link)
