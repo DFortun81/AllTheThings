@@ -156,8 +156,6 @@ root(ROOTS.NeverImplemented, {
 			faction(829),	-- Ogre (Captain Kromcrush)
 			faction(849),	-- Spirit Guide - Horde
 			faction(869),	-- Jaedenar
-			faction(891),	-- Alliance Forces
-			faction(892),	-- Horde Forces
 			faction(893),	-- Revantusk Trolls
 			faction(912),	-- Might of Kalimdor
 			faction(915),	-- Armies of C'Thun
@@ -194,7 +192,6 @@ root(ROOTS.NeverImplemented, {
 			faction(926),	-- Magister's Guild
 			faction(927),	-- PLAYER, Draenei
 			faction(929),	-- Bloodmaul Clan
-			faction(936),	-- Shattrath City
 			faction(937),	-- Troll, Forest
 			faction(938),	-- The Omenai
 			faction(939),	-- DEPRECATED
@@ -344,7 +341,6 @@ root(ROOTS.NeverImplemented, {
 				faction(1114),	-- Mount - Taxi - Neutral
 				faction(1115),	-- Elemental, Water
 				faction(1116),	-- Elemental, Air
-				faction(1117),	-- Sholazar Basin
 				faction(1120),	-- Iron Giants
 				faction(1121),	-- Frost Vrykul
 				faction(1122),	-- Earthen
@@ -387,7 +383,6 @@ root(ROOTS.NeverImplemented, {
 				faction(1163),	-- New test rep for Alex
 				faction(1166),	-- Test Faction 5
 				faction(1167),	-- Test Faction 5
-				faction(1169),	-- Guild
 			})),
 
 			-- 4.3.0
@@ -479,7 +474,6 @@ root(ROOTS.NeverImplemented, {
 				faction(1717),	-- GarInvasion_ThunderLord
 				faction(1718),	-- GarInvasion_Shadowmoon
 				faction(1732),	-- Steamwheedle Draenor Expedition
-				faction(1735),	-- Barracks Bodyguards
 				faction(1746),	-- Nagrand Gronn
 				faction(1747),	-- Coliseum Treasure
 			})),
@@ -653,7 +647,6 @@ root(ROOTS.NeverImplemented, {
 		}),
 		tier(DF_TIER, {
 			tier(DF_TIER, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
-				-- 10.0.0.44649
 				faction(2504),	-- Maruuk Centaur (Paragon)
 				faction(2508),	-- Dragonscale Expedition (Paragon)
 				faction(2521),	-- Clan Nokhud (Paragon)
@@ -671,27 +664,21 @@ root(ROOTS.NeverImplemented, {
 				faction(2522),	-- Clan Teerai
 				faction(2525),	-- Elemental, Fire
 				faction(2542),	-- Clan Ukhel
-				-- 10.0.0.44795
 				faction(2551),	-- Iskaara Tuskarr (Paragon)
 				faction(2552),	-- Valdrakken Accord (Paragon)
-				-- 10.0.0.45141
 				faction(2554),	-- Clan Toghus
 				faction(2555),	-- Clan Kaighan
 			})),
 			tier(DF_TIER, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
-				-- 10.0.7.47910
 				faction(2557),	-- Hearthfire Fellowship
 			})),
 			tier(DF_TIER, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
-				-- 10.1.0.48480
 				faction(2565),	-- Loamm Niffen (Paragon)
 			})),
 			tier(DF_TIER, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
-				--10.1.7.50442
 				faction(2576),	-- Druids of the Flame
 			})),
 			tier(DF_TIER, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
-				--10.2.0.51239
 				faction(2575),	-- Dream Wardens (Paragon)
 			})),
 		}),

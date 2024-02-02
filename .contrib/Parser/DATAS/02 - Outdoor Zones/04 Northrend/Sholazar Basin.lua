@@ -278,6 +278,10 @@ root(ROOTS.Zones, {
 				}),
 				-- #endif
 				n(FACTIONS, {
+					faction(1117, {	-- Sholazar Basin
+						["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
+						["collectible"] = false,
+					}),
 					faction(1104, {	-- Frenzyheart Tribe
 						["maxReputation"] = { 1105, NEUTRAL },	-- The Oracles, Neutral.
 						["altAchievements"] = { 952 },	-- Mercenary of Sholazar
