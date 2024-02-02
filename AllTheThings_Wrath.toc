@@ -65,6 +65,7 @@ src\Classes\Quests.lua
 src\Classes\Objects.lua
 src\Classes\Category.lua
 src\Classes\Deaths.lua
+src\Classes\Dynamic Categories.lua
 src\Classes\Filter Types.lua
 src\Classes\Illusions.lua
 # src\Classes\Miscellaneous.lua
