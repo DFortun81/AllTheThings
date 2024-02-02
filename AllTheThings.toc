@@ -78,6 +78,10 @@ AllTheThings.lua
 src\UI\Game Tooltip.lua
 src\UI\Minimap Button.lua
 
+# Window Logic Overhaul
+src\UI\Shared Window Logic.lua
+src\UI\Retail Window Logic.lua
+
 # Load expansion specific category database.
 db\Dragonflight\Categories.lua
 
