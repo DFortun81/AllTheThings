@@ -305,6 +305,7 @@ root(ROOTS.ExpansionFeatures,
 					ach(11941, {	-- Chromie Homie
 						title(361),		-- Title: Timelord
 					}),
+					faction(2135),	-- Chromie
 					q(47906, {	-- The Deaths of Chromie
 						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["provider"] = { "n", 27856 },	-- Chromie
