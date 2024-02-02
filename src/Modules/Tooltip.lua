@@ -174,6 +174,7 @@ tooltipFunction = function(self, target)
 end
 for i,guid in ipairs({
 	"Player-3683-0A7D919A",	-- Retrieve (Crieve's Alt for Testing)
+	"Player-3702-0A125B62", -- Myrhial (Xynara - Argent Dawn EU)
 }) do
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
