@@ -184,6 +184,7 @@ local TooltipSettingsBase = {
 		["Show:OtherCharacterQuests"] = false,
 		["Show:Recipes"] = false,
 		["Show:Remaining"] = false,
+		["Show:Percentage"] = true,
 		["Show:SpellRanks"] = true,
 		["SoftReserves"] = true,
 		["SoftReservePersistence"] = false,
@@ -900,8 +901,7 @@ PrecisionSlider:SetScript("OnValueChanged", function(self, newValue)
 		return 1;
 	end
 	settings:SetTooltipSetting("Precision", newValue);
-	app:RedrawWindows("PrecisionSlider");
-	app.HandleEvent("OnPrecisionUpdated");
+	app.HandleEvent("OnRenderDirty");
 end);
 
 -- This creates the "Minimap Button Size" slider.
@@ -2545,28 +2545,33 @@ end);
 ShowSourceLocationsForThingsCheckBox:SetATTTooltip("Enable this option if you want to see Source Locations for Things.");
 ShowSourceLocationsForThingsCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsForCreaturesCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowRemainingCheckBox = settings:CreateCheckBox("Show Remaining Things",
+local ShowRemainingCheckBox = settings:CreateCheckBox(L["SHOW_REMAINING_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Show:Remaining"));
-	if self:GetChecked() then
-		app.GetProgressText = app.GetProgressTextRemaining;
-	else
-		app.GetProgressText = app.GetProgressTextDefault;
-	end
+	app.Modules.Color.SetShowRemainingText(self:GetChecked());
 end,
 function(self)
 	local checked = self:GetChecked();
 	settings:SetTooltipSetting("Show:Remaining", checked);
-	if checked then
-		app.GetProgressText = app.GetProgressTextRemaining;
-	else
-		app.GetProgressText = app.GetProgressTextDefault;
-	end
-	app:RedrawWindows("ShowRemainingCheckBox");
-	app.HandleEvent("OnShowRemainingCheckBoxUpdated");
+	app.Modules.Color.SetShowRemainingText(checked);
+	app.HandleEvent("OnRenderDirty");
 end);
-ShowRemainingCheckBox:SetATTTooltip("Enable this option if you want to see the number of items remaining instead of the progress over total.");
+ShowRemainingCheckBox:SetATTTooltip(L["SHOW_REMAINING_CHECKBOX_TOOLTIP"]);
 ShowRemainingCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsForThingsCheckBox, "BOTTOMLEFT", -8, 4);
+
+local ShowPercentageCheckBox = settings:CreateCheckBox(L["PERCENTAGES_CHECKBOX"],
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Show:Percentage"));
+	app.Modules.Color.SetShowPercentageText(self:GetChecked());
+end,
+function(self)
+	local checked = self:GetChecked();
+	settings:SetTooltipSetting("Show:Percentage", checked);
+	app.Modules.Color.SetShowPercentageText(checked);
+	app.HandleEvent("OnRenderDirty");
+end);
+ShowPercentageCheckBox:SetATTTooltip(L["PERCENTAGES_CHECKBOX_TOOLTIP"]);
+ShowPercentageCheckBox:SetPoint("TOPLEFT", ShowRemainingCheckBox, "BOTTOMLEFT", 0, 4);
 
 local DebuggingLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 DebuggingLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -220, -8);

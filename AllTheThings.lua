@@ -67,6 +67,7 @@ local CacheFields, SearchForField, SearchForFieldContainer, SearchForSourceIDQui
 	= app.CacheFields, app.SearchForField, app.SearchForFieldContainer, app.SearchForSourceIDQuickly, app.GetRawField
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
+local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 local TryColorizeName = app.TryColorizeName;
 
 -- Color Lib
@@ -603,47 +604,7 @@ function app:TakeScreenShot(type)
 		Screenshot();
 	end
 end
-local function GetNumberWithZeros(number, desiredLength)
-	if desiredLength > 0 then
-		local str = tostring(number);
-		local length = string.len(str);
-		local pos = string.find(str,"[.]");
-		if not pos then
-			str = str .. ".";
-			for i=desiredLength,1,-1 do
-				str = str .. "0";
-			end
-		else
-			local totalExtra = desiredLength - (length - pos);
-			for i=totalExtra,1,-1 do
-				str = str .. "0";
-			end
-			if totalExtra < 1 then
-				str = string.sub(str, 1, pos + desiredLength);
-			end
-		end
-		return str;
-	else
-		return tostring(floor(number));
-	end
-end
-local function GetProgressTextDefault(progress, total)
-	return tostring(progress or 0) .. " / " .. tostring(total);
-end
-local function GetProgressTextRemaining(progress, total)
-	return tostring((total or 0) - (progress or 0));
-end
-local function GetProgressPercent(progress, total)
-	local percent = math.min(1, (progress or 0) / total);
-	return percent, app.Settings:GetTooltipSetting("Show:Percentage")
-		and (" (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%)");
-end
-local function GetProgressColorText(progress, total)
-	if total and total > 0 then
-		local percent, percentText = GetProgressPercent(progress, total);
-		return "|c" .. GetProgressColor(percent) .. app.GetProgressText(progress, total) .. (percentText or " ") .. "|r";
-	end
-end
+
 local function GetCollectionIcon(state)
 	return L[(state and (state == 2 and "COLLECTED_APPEARANCE_ICON" or "COLLECTED_ICON")) or "NOT_COLLECTED_ICON"];
 end
@@ -835,10 +796,8 @@ end
 -- 		return sformat(L["REMOVED_WITH_PATCH_FORMAT"], app.GetPatchString(rwp));
 -- 	end
 -- end
-app.GetProgressText = GetProgressTextDefault;
-app.GetProgressTextDefault = GetProgressTextDefault;
-app.GetProgressTextRemaining = GetProgressTextRemaining;
 app.GetCompletionIcon = GetCompletionIcon;
+app.GetProgressTextForRow = GetProgressTextForRow;
 
 local function BuildSourceTextColorized(group)
 	local line = {}
@@ -10823,24 +10782,6 @@ function app.UniqueModeItemCollectionHelperOnlyMain(sourceID, oldState)
 end
 app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
 
-function app.GetNumberOfItemsUntilNextPercentage(progress, total)
-	if total <= progress then
-		return "|c" .. GetProgressColor(1) .. L["YOU_DID_IT"];
-	else
-		local originalPercent = progress / total;
-		local nextPercent = math.ceil(originalPercent * 100);
-		local roundedPercent = nextPercent * 0.01;
-		local diff = math.ceil(total * (roundedPercent - originalPercent));
-		if diff < 1 or nextPercent == 100 then
-			return "|c" .. GetProgressColor(1) .. (total - progress) .. L["THINGS_UNTIL"] .. "100%|r";
-		elseif diff == 1 then
-			return "|c" .. GetProgressColor(roundedPercent) .. diff .. L["THING_UNTIL"] .. nextPercent .. "%|r";
-		else
-			return "|c" .. GetProgressColor(roundedPercent) .. diff .. L["THINGS_UNTIL"] .. nextPercent .. "%|r";
-		end
-	end
-end
-
 -- Custom Collectibility
 do
 local SLCovenantId;
@@ -11450,6 +11391,7 @@ end
 
 -- Panel Class Library
 (function()
+local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 -- Shared Panel Functions
 local function OnCloseButtonPressed(self)
 	self:GetParent():Hide();
@@ -13542,7 +13484,7 @@ function app:GetDataCache()
 				return t.mb_title1..DESCRIPTION_SEPARATOR..t.mb_title2;
 			end
 			if key == "mb_title1" then return app.Settings:GetModeString(); end
-			if key == "mb_title2" then return not t.TLUG and L["MAIN_LIST_REQUIRES_REFRESH"] or app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total); end
+			if key == "mb_title2" then return not t.TLUG and L["MAIN_LIST_REQUIRES_REFRESH"] or app.Modules.Color.GetProgressTextToNextPercent(t.progress, t.total); end
 			if key == "progressText" then return GetProgressColorText(t.progress, t.total); end
 			if key == "visible" then return true; end
 		end,

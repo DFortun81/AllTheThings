@@ -1,6 +1,7 @@
 
 -- Color Module
 local _, app = ...;
+local L = app.L;
 
 -- Dependencies
 -- Table Lib
@@ -11,39 +12,172 @@ local _, app = ...;
 -- Encapsulates the functionality for handling and interacting with colors in the addon, which are typically represented in Text
 
 -- Global locals
-local rawget, ipairs, pairs, abs, floor, max, min, RAID_CLASS_COLORS, SecondsToTime, sformat, tonumber, select, BONUS_OBJECTIVE_TIME_LEFT
-	= rawget, ipairs, pairs, abs, floor, max, min, RAID_CLASS_COLORS, SecondsToTime, string.format, tonumber, select, BONUS_OBJECTIVE_TIME_LEFT;
-local Alliance, Horde = Enum.FlightPathFaction.Alliance, Enum.FlightPathFaction.Horde;
+local abs, ceil, floor, max, min, tonumber, tostring, SecondsToTime, sfind, slen, sformat
+	= abs, ceil, floor, max, min, tonumber, tostring, SecondsToTime, string.find, string.len, string.format;
 
--- App locals
-local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
-local ALLIANCE_ONLY = app.Modules.FactionData.FACTION_RACES[1];
-local HORDE_ONLY = app.Modules.FactionData.FACTION_RACES[2];
-local containsAny, contains = app.containsAny, app.contains
+-- Module locals
 local CS = CreateFrame("ColorSelect", nil, app.frame);
 CS:Hide();
 
--- Module locals
 -- This returns values between 0 and 1, not 0 and 255!
+-- Color AARRGGBB values used throughout ATT
+local function BindComponent(c)
+	-- Binds a color component value (0 and 1) to (0 and 255) instead.
+	return min(255, max(0, (c or 0) * 255));
+end
 local function HexToARGB(hex)
 	return tonumber("0x"..hex:sub(1,2)) / 255, tonumber("0x"..hex:sub(3,4)) / 255, tonumber("0x"..hex:sub(5,6)) / 255, tonumber("0x"..hex:sub(7,8)) / 255;
 end
--- Color AARRGGBB values used throughout ATT
-local colors = app.Colors;
-local Colorize = function(str, color)
-	return "|c"..color..str.."|r";
-end
-local function RGBComponentConversion(c)
-	return min(255, max(0, (c or 0) * 255));
-end
-local RGBToHex = function(r, g, b)
+local function RGBToHex(r, g, b)
 	return sformat("ff%02x%02x%02x",
-		RGBComponentConversion(r),
-		RGBComponentConversion(g),
-		RGBComponentConversion(b));
+		BindComponent(r),
+		BindComponent(g),
+		BindComponent(b));
 end
--- Attempts to determine the colorized text for a given Group
+local function RGBToHSV(r, g, b)
+  CS:SetColorRGB(r, g, b);
+  local h,s,v = CS:GetColorHSV()
+  return {h=h,s=s,v=v}
+end
+local function Colorize(str, hex)
+	return "|c"..hex..str.."|r";
+end
+local function ColorizeRGB(str, r, g, b)
+	return "|c"..RGBToHex(r, g, b)..str.."|r";
+end
+
+-- Generates a Color Scale between Red and Green with the Blue Completed color for 100%
+local colors, red, green, h = app.Colors, RGBToHSV(1,0,0), RGBToHSV(0,1,0);
+local ProgressColors = setmetatable({
+	[1] = colors.Completed,
+}, {
+	__index = function(t, p)
+		p = tonumber(p);
+		-- anything over 100% will just be 100% color
+		if p > 1 then return t[1]; end
+		-- anything somehow under 0 will just be 0
+		if p < 0 then return t[0]; end
+		if abs(red.h - green.h) > 180 then
+			local angle = (360 - abs(red.h - green.h)) * p;
+			if red.h < green.h then
+				h = floor(red.h - angle);
+				if h < 0 then h = 360 + h end
+			else
+				h = floor(red.h + angle);
+				if h > 360 then h = h - 360 end
+			end
+		else
+			h = floor(red.h-(red.h-green.h)*p)
+		end
+		CS:SetColorHSV(h, red.s-(red.s-green.s)*p, red.v-(red.v-green.v)*p);
+		local r,g,b = CS:GetColorRGB();
+		local color = RGBToHex(r, g, b);
+		t[p] = color;
+		return color;
+	end
+});
+local function GetProgressColor(percent)
+	return ProgressColors[percent];
+end
+
+-- Progress Text Helpers
+local function GetProgressTextDefault(progress, total)
+	return tostring(progress) .. " / " .. tostring(total);
+end
+local function GetProgressTextRemaining(progress, total)
+	return tostring((total or 0) - (progress or 0));
+end
+local GetProgressText = GetProgressTextDefault;
+
+local function GetNumberWithZeros(number, desiredLength)
+	if desiredLength > 0 then
+		local str = tostring(number);
+		local length = slen(str);
+		local pos = sfind(str,"[.]");
+		if not pos then
+			str = str .. ".";
+			for i=desiredLength,1,-1 do
+				str = str .. "0";
+			end
+		else
+			local totalExtra = desiredLength - (length - pos);
+			for i=totalExtra,1,-1 do
+				str = str .. "0";
+			end
+			if totalExtra < 1 then
+				str = str:sub(1, pos + desiredLength);
+			end
+		end
+		return str;
+	else
+		return tostring(floor(number));
+	end
+end
+local function GetPercentageTextDefault(percent)
+	return " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%)";
+end
+local function GetPercentageEmpty(percent)
+	return " ";
+end
+local GetPercentageText = GetPercentageTextDefault;
+
+local function GetProgressColorText(progress, total)
+	if total and total > 0 then
+		local percent = min(1, (progress or 0) / total);
+		return Colorize(GetProgressText(progress, total) .. GetPercentageText(percent), GetProgressColor(percent));
+	end
+end
+local function GetProgressTextToNextPercent(progress, total)
+	if total <= progress then
+		return Colorize(L.YOU_DID_IT, GetProgressColor(1));
+	else
+		local originalPercent = progress / total;
+		local nextPercent = ceil(originalPercent * 100);
+		local roundedPercent = nextPercent * 0.01;
+		local diff = ceil(total * (roundedPercent - originalPercent));
+		if diff < 1 or nextPercent == 100 then
+			return Colorize((total - progress) .. L.THINGS_UNTIL .. "100%", GetProgressColor(1));
+		elseif diff == 1 then
+			return Colorize(diff .. L.THING_UNTIL .. nextPercent .. "%", GetProgressColor(roundedPercent));
+		else
+			return Colorize(diff .. L.THINGS_UNTIL .. nextPercent .. "%", GetProgressColor(roundedPercent));
+		end
+	end
+end
+
+
+-- Color API Implementation
+-- Access via AllTheThings.Modules.Color
+local api = {};
+app.Modules.Color = api;
+api.Colorize = Colorize;
+api.ColorizeRGB = ColorizeRGB;
+api.HexToARGB = HexToARGB;
+api.RGBToHex = RGBToHex;
+api.GetNumberWithZeros = GetNumberWithZeros;
+api.GetProgressColor = GetProgressColor;
+api.GetProgressColorText = GetProgressColorText;
+api.GetProgressTextToNextPercent = GetProgressTextToNextPercent;
+api.GetProgressText = function(...)
+	-- NOTE: This is so you can cache the function externally and not lose the ability to swap the behaviour.
+	return GetProgressText(...);
+end
+api.SetShowPercentageText = function(setShowPercentageText)
+	GetPercentageText = setShowPercentageText and GetPercentageTextDefault or GetPercentageEmpty;
+end
+api.SetShowRemainingText = function(showRemainingText)
+	GetProgressText = showRemainingText and GetProgressTextRemaining or GetProgressTextDefault;
+end
+
+-- TODO: Convert these to module locals. (meaning api scoped)
+local containsAny, contains = app.containsAny, app.contains;
+local BONUS_OBJECTIVE_TIME_LEFT = BONUS_OBJECTIVE_TIME_LEFT;
+local Alliance, Horde = Enum.FlightPathFaction.Alliance, Enum.FlightPathFaction.Horde;
+local ALLIANCE_ONLY = app.Modules.FactionData.FACTION_RACES[1];
+local HORDE_ONLY = app.Modules.FactionData.FACTION_RACES[2];
+local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 app.TryColorizeName = function(group, name)
+	-- Attempts to determine the colorized text for a given Group
 	name = name or group.name;
 	if IsRetrieving(name) then return name; end
 	-- raid headers
@@ -108,63 +242,16 @@ app.TryColorizeName = function(group, name)
 	end
 	return name;
 end
--- Returns 'Time Left: %s'
-app.GetColoredTimeRemaining = function(time)
-	if time and time > 0 then
-		local timeLeft = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(time * 60));
-		if time < 30 then
+app.GetColoredTimeRemaining = function(t)
+	-- Returns 'Time Left: %s'
+	if t and t > 0 then
+		local timeLeft = BONUS_OBJECTIVE_TIME_LEFT:format(SecondsToTime(t * 60));
+		if t < 30 then
 			return Colorize(timeLeft, colors.TimeUnder30Min);
-		elseif time < 120 then
+		elseif t < 120 then
 			return Colorize(timeLeft, colors.TimeUnder2Hr);
 		else
 			return Colorize(timeLeft, colors.Time);
 		end
 	end
-end
-local function ConvertColorRgbToHsv(r, g, b)
-  CS:SetColorRGB(r, g, b);
-  local h,s,v = CS:GetColorHSV()
-  return {h=h,s=s,v=v}
-end
-local red, green = ConvertColorRgbToHsv(1,0,0), ConvertColorRgbToHsv(0,1,0);
-local progress_colors = setmetatable({[1] = colors.Completed}, {
-	__index = function(t, p)
-		local h;
-		p = tonumber(p);
-		-- anything over 100% will just be 100% color
-		if p > 1 then return t[1]; end
-		-- anything somehow under 0 will just be 0
-		if p < 0 then return t[0]; end
-		if abs(red.h - green.h) > 180 then
-			local angle = (360 - abs(red.h - green.h)) * p;
-			if red.h < green.h then
-				h = floor(red.h - angle);
-				if h < 0 then h = 360 + h end
-			else
-				h = floor(red.h + angle);
-				if h > 360 then h = h - 360 end
-			end
-		else
-			h = floor(red.h-(red.h-green.h)*p)
-		end
-		CS:SetColorHSV(h, red.s-(red.s-green.s)*p, red.v-(red.v-green.v)*p);
-		local r,g,b = CS:GetColorRGB();
-		local color = RGBToHex(r, g, b);
-		t[p] = color;
-		return color;
-	end
-});
-
--- Color API Implementation
--- Access via AllTheThings.Modules.Color
-local api = {};
-app.Modules.Color = api;
-api.GetProgressColor = function(p)
-	return progress_colors[p];
-end
-api.Colorize = Colorize;
-api.RGBToHex = RGBToHex;
-api.HexToARGB = HexToARGB;
-api.ColorizeRGB = function(str, r, g, b)
-	return "|c"..RGBToHex(r, g, b)..str.."|r";
 end

@@ -5,11 +5,10 @@
 --------------------------------------------------------------------------------
 -- App locals
 local appName, app = ...;
-local contains, containsAny, containsValue = app.contains, app.containsAny, app.containsValue;
-local AssignChildren, CloneArray, CloneDictionary, CloneClassInstance, CloneReference = app.AssignChildren, app.CloneArray, app.CloneDictionary, app.CloneClassInstance, app.CloneReference;
+local contains = app.contains;
+local AssignChildren, CloneArray, CloneClassInstance, CloneReference = app.AssignChildren, app.CloneArray, app.CloneClassInstance, app.CloneReference;
 local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
 local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject, IsQuestReadyForTurnIn = app.IsQuestFlaggedCompleted, app.IsQuestFlaggedCompletedForObject, app.IsQuestReadyForTurnIn;
-local ClassInfoByClassFile = app.ClassInfoByClassFile;
 local L = app.L;
 
 -- Binding Localizations
@@ -63,9 +62,14 @@ local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local SearchForField, SearchForFieldContainer
 	= app.SearchForField, app.SearchForFieldContainer;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
+local GetProgressColor = app.Modules.Color.GetProgressColor;
+local GetProgressColorText = app.Modules.Color.GetProgressColorText;
+local Colorize = app.Modules.Color.Colorize;
+local ColorizeRGB = app.Modules.Color.ColorizeRGB;
+local HexToARGB = app.Modules.Color.HexToARGB;
+local RGBToHex = app.Modules.Color.RGBToHex;
 
 -- Helper Functions
-local UpdateGroups;
 local constructor = function(id, t, typeID)
 	if t then
 		if not t.g and t[1] then
@@ -77,9 +81,6 @@ local constructor = function(id, t, typeID)
 	else
 		return {[typeID] = id};
 	end
-end
-local function distance( x1, y1, x2, y2 )
-	return math.sqrt( (x2-x1)^2 + (y2-y1)^2 )
 end
 
 local pendingCollection, pendingRemovals, retrievingCollection, pendingCollectionCooldown = {},{},{},0;
@@ -226,47 +227,6 @@ end
 
 
 -- Color Lib
-local GetProgressColor = app.Modules.Color.GetProgressColor;
-local Colorize = app.Modules.Color.Colorize;
-local HexToARGB = app.Modules.Color.HexToARGB;
-local RGBToHex = app.Modules.Color.RGBToHex;
-
-local function GetNumberWithZeros(number, desiredLength)
-	if desiredLength > 0 then
-		local str = tostring(number);
-		local length = string.len(str);
-		local pos = string.find(str,"[.]");
-		if not pos then
-			str = str .. ".";
-			for i=desiredLength,1,-1 do
-				str = str .. "0";
-			end
-		else
-			local totalExtra = desiredLength - (length - pos);
-			for i=totalExtra,1,-1 do
-				str = str .. "0";
-			end
-			if totalExtra < 1 then
-				str = string.sub(str, 1, pos + desiredLength);
-			end
-		end
-		return str;
-	else
-		return tostring(floor(number));
-	end
-end
-local function GetProgressTextDefault(progress, total)
-	return tostring(progress) .. " / " .. tostring(total);
-end
-local function GetProgressTextRemaining(progress, total)
-	return tostring(total - progress);
-end
-local function GetProgressColorText(progress, total)
-	if total and total > 0 then
-		local percent = progress / total;
-		return "|c" .. GetProgressColor(percent) .. app.GetProgressText(progress, total) .. " (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%) |r";
-	end
-end
 local function GetCollectionIcon(state)
 	return L[(state and (state == 2 and "COLLECTED_APPEARANCE_ICON" or "COLLECTED_ICON")) or "NOT_COLLECTED_ICON"];
 end
@@ -322,11 +282,7 @@ local function GetRemovedWithPatchString(rwp)
 	end
 end
 app.GetCompletionIcon = GetCompletionIcon;
-app.GetProgressText = GetProgressTextDefault;
-app.GetProgressTextDefault = GetProgressTextDefault;
-app.GetProgressTextRemaining = GetProgressTextRemaining;
-app.GetProgressColorText = GetProgressColorText;
-
+app.GetProgressTextForRow = GetProgressTextForRow;
 
 -- Source ID Harvesting Lib
 local DressUpModel = CreateFrame('DressUpModel');
@@ -627,6 +583,7 @@ local function GetHash(t)
 	return hash;
 end
 
+local UpdateGroups;
 local MergeObject;
 local function MergeObjects(g, g2)
 	for i,o in ipairs(g2) do
@@ -2271,20 +2228,20 @@ function app:GetDataCache()
 					if t.total < 1 then
 						local primeData = app.CurrentCharacter.PrimeData;
 						if primeData then
-							return app.GetProgressColorText(primeData.progress, primeData.total);
+							return GetProgressColorText(primeData.progress, primeData.total);
 						end
 					end
-					return app.GetProgressColorText(t.progress, t.total);
+					return GetProgressColorText(t.progress, t.total);
 				elseif key == "modeString" then
 					return app.Settings:GetModeString();
 				elseif key == "untilNextPercentage" then
 					if t.total < 1 then
 						local primeData = app.CurrentCharacter.PrimeData;
 						if primeData then
-							return app.GetNumberOfItemsUntilNextPercentage(primeData.progress, primeData.total);
+							return app.Modules.Color.GetProgressTextToNextPercent(primeData.progress, primeData.total);
 						end
 					end
-					return app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total);
+					return app.Modules.Color.GetProgressTextToNextPercent(t.progress, t.total);
 				else
 					-- Something that isn't dynamic.
 					return table[key];
@@ -4193,7 +4150,7 @@ else
 	commonAchievementHandlers.LOREMASTER_OnTooltip = function(t)
 		if t.collectible and t.p and not t.collected then
 			GameTooltip:AddLine(" ");
-			GameTooltip:AddDoubleLine(" ", app.GetProgressText(min(t.rank, t.p),t.rank), 1, 1, 1);
+			GameTooltip:AddDoubleLine(" ", app.Modules.Color.GetProgressText(min(t.rank, t.p),t.rank), 1, 1, 1);
 		end
 	end
 	commonAchievementHandlers.META_ACHCAT_OnUpdate = function(t, achievementCategoryID)
@@ -4404,6 +4361,7 @@ end)();
 
 -- Character Unit Lib
 (function()
+local ClassInfoByClassFile = app.ClassInfoByClassFile;
 app.CreateUnit = app.CreateClass("Unit", "unit", {
 	["text"] = function(t)
 		return t.classText;
@@ -5219,7 +5177,7 @@ app.ColorizeStandingText = function(standingID, text)
 		return Colorize(text, standing.color);
 	else
 		local rgb = FACTION_BAR_COLORS[standingID];
-		return Colorize(text, RGBToHex(rgb.r, rgb.g, rgb.b));
+		return ColorizeRGB(text, rgb.r, rgb.g, rgb.b);
 	end
 end
 app.GetFactionIDByName = function(name)
@@ -5334,6 +5292,9 @@ end)();
 
 -- Flight Path Lib
 (function()
+local function distance( x1, y1, x2, y2 )
+	return math.sqrt( (x2-x1)^2 + (y2-y1)^2 )
+end
 local arrOfNodes = {
 	1414,	-- Kalimdor
 	1415,	-- Eastern Kingdoms
@@ -6170,7 +6131,7 @@ else
 	end
 end
 
-local fields = CloneDictionary(itemFields);
+local fields = app.CloneDictionary(itemFields);
 fields.collectible = function(t)
 	return app.Settings.Collectibles.Toys;
 end
@@ -6867,8 +6828,7 @@ local NPCDisplayIDFromID = setmetatable({}, { __index = function(t, id)
 		local displayID = npcModelHarvester:GetDisplayInfo();
 		if displayID and displayID ~= 0 then
 			rawset(t, id, displayID);
-			app:RedrawWindows("NPCDisplayIDFromID");
-			app.HandleEvent("OnDisplayIDAvailable");
+			app.HandleEvent("OnRenderDirty");
 			return displayID;
 		end
 	end
@@ -7430,7 +7390,7 @@ local spellFields = {
 };
 local createSpell = app.CreateClass("Spell", "spellID", spellFields);
 
-local recipeFields = CloneDictionary(spellFields);
+local recipeFields = app.CloneDictionary(spellFields);
 recipeFields.collectible = function(t)
 	return app.Settings.Collectibles.Recipes;
 end;
@@ -7682,25 +7642,6 @@ end
 app.UpdateGroups = UpdateGroups;
 app.UpdateParentProgress = UpdateParentProgress;
 
--- Helper Methods
-function app.GetNumberOfItemsUntilNextPercentage(progress, total)
-	if total <= progress then
-		return "|c" .. GetProgressColor(1) .. "YOU DID IT!|r";
-	else
-		local originalPercent = progress / total;
-		local nextPercent = math.ceil(originalPercent * 100);
-		local roundedPercent = nextPercent * 0.01;
-		local diff = math.ceil(total * (roundedPercent - originalPercent));
-		if diff < 1 or nextPercent == 100 then
-			return "|c" .. GetProgressColor(1) .. (total - progress) .. " THINGS UNTIL 100%|r";
-		elseif diff == 1 then
-			return "|c" .. GetProgressColor(roundedPercent) .. diff .. " THING UNTIL " .. nextPercent .. "%|r";
-		else
-			return "|c" .. GetProgressColor(roundedPercent) .. diff .. " THINGS UNTIL " .. nextPercent .. "%|r";
-		end
-	end
-end
-
 -- Refresh certain kinds of data.
 local function RefreshCollections()
 	app:StartATTCoroutine("RefreshingCollections", function()
@@ -7850,7 +7791,6 @@ local function RefreshSaves()
 	end
 
 	-- Mark that we're done now.
-	app:RedrawWindows("RefreshSaves");
 	app.HandleEvent("OnSavesUpdated");
 end
 app:RegisterEvent("BOSS_KILL");
@@ -8213,6 +8153,7 @@ local function CalculateRowIndent(data)
 end
 
 local CreateRow;
+local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local function GetIndicatorIcon(group)
 	-- If group is quest and is currently accepted or saved...
 	local questID = group.questID;
@@ -9544,38 +9485,7 @@ local function UpdateWindow(self, force, trigger)
 		return true;
 	end
 end
-if app.Debugging then
-function app:RedrawWindows(source)
-	app:StartATTCoroutine("RedrawWindows", function()
-		coroutine.yield();
-		coroutine.yield();
-		print("RedrawWindows: ", source);
-		local lastUpdate = GetTimePreciseSec();
-		for name, window in pairs(app.Windows) do
-			window:Redraw();
-		end
-		print("RedrawWindows: ", (GetTimePreciseSec() - lastUpdate) * 10000);
-	end);
-end
-function app:RefreshWindows(source)
-	print("RefreshWindows: ", source);
-	local lastUpdate = GetTimePreciseSec();
-	for name, window in pairs(app.Windows) do
-		window:Refresh();
-	end
-	print("RefreshWindows: ", (GetTimePreciseSec() - lastUpdate) * 10000);
-end
-function app:UpdateWindows(source, force, trigger)
-	print("UpdateWindows: ", source, force, trigger);
-	if trigger then trigger = source; end
-	local lastUpdate = GetTimePreciseSec();
-	for name, window in pairs(app.Windows) do
-		window:Update(force, trigger);
-	end
-	print("UpdateWindows: ", (GetTimePreciseSec() - lastUpdate) * 10000);
-end
-else
-function app:RedrawWindows(source)
+local function RedrawWindows(source)
 	for name, window in pairs(app.Windows) do
 		window:Redraw();
 	end
@@ -9603,7 +9513,10 @@ function app:UpdateWindows(source, force, trigger)
 		end
 	end
 end
-end
+
+-- When settings that affect the display of a window change, we want to redraw the windows.
+app.AddEventHandler("OnRenderDirty", RedrawWindows);
+app.AddEventHandler("OnSavesUpdated", RedrawWindows);
 
 local refreshDataCooldown = 5;
 local refreshFromTrigger;

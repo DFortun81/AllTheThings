@@ -3381,14 +3381,11 @@ checkboxSortByProgress:AlignBelow(checkboxNestedQuestChains)
 local checkboxShowRemainingCount = child:CreateCheckBox(L["SHOW_REMAINING_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Show:Remaining"))
-	if self:GetChecked() then
-		app.GetProgressText = app.GetProgressTextRemaining
-	else
-		app.GetProgressText = app.GetProgressTextDefault
-	end
+	app.Modules.Color.SetShowRemainingText(self:GetChecked());
 end,
 function(self)
 	settings:SetTooltipSetting("Show:Remaining", self:GetChecked())
+	app.Modules.Color.SetShowRemainingText(self:GetChecked());
 	app:UpdateWindows()
 end)
 checkboxShowRemainingCount:SetATTTooltip(L["SHOW_REMAINING_CHECKBOX_TOOLTIP"])
@@ -3397,10 +3394,13 @@ checkboxShowRemainingCount:AlignBelow(checkboxSortByProgress)
 local checkboxShowPercentageCount = child:CreateCheckBox(L["PERCENTAGES_CHECKBOX"],
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Show:Percentage"))
+	app.Modules.Color.SetShowPercentageText(self:GetChecked());
 end,
 function(self)
 	settings:SetTooltipSetting("Show:Percentage", self:GetChecked())
-	app:UpdateWindows()
+	app.Modules.Color.SetShowPercentageText(self:GetChecked());
+	app.HandleEvent("OnRenderDirty");
+	app:UpdateWindows()	-- TODO: Remove this.
 end)
 checkboxShowPercentageCount:SetATTTooltip(L["PERCENTAGES_CHECKBOX_TOOLTIP"])
 checkboxShowPercentageCount:AlignBelow(checkboxShowRemainingCount)
