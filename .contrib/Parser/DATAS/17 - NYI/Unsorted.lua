@@ -2824,7 +2824,6 @@ root(ROOTS.Unsorted, {
 			i(180035),	-- Eye of the Scryer
 			i(175243),	-- Faded Grimoire
 			i(178570),	-- Fading Memory Glass
-			i(182189),	-- Fae Flute
 			i(180061),	-- Fae Weapon
 			i(180292),	-- Faerie Dust
 			i(177161),	-- Faerie Harp
