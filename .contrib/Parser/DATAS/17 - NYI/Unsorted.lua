@@ -618,7 +618,7 @@ root(ROOTS.Unsorted, {
 				i(212188),	-- Dreadlord's Venombane Tunic
 				i(212196),	-- Dreadlord's Venombane Wristbands
 
-				------ Love Witch's Attire ------
+				------ Sky Witch's Attire ------
 				i(212221),	-- Ensemble: Sky Witch's Attire
 				i(212204),	-- Sky Witch's Blouse
 				i(212205),	-- Sky Witch's Boots
@@ -637,16 +637,6 @@ root(ROOTS.Unsorted, {
 				i(212712),	-- Spring Reveler's Lavender Dress
 				i(212986),	-- Spring Reveler's Lavender Pants
 				i(212716),	-- Spring Reveler's Lavender Sun Hat
-
-				------ Twilight Witch's Attire ------
-				i(212222),	-- Ensemble: Twilight Witch's Attire
-				i(212211),	-- Twilight Witch's Blouse
-				i(212212),	-- Twilight Witch's Boots
-				i(212213),	-- Twilight Witch's Gloves
-				i(212214),	-- Twilight Witch's Hat
-				i(212217),	-- Twilight Witch's Sash
-				i(212216),	-- Twilight Witch's Shoulders
-				i(212215),	-- Twilight Witch's Skirt
 
 				------ Single Pieces ------
 				i(190859),	-- Apprentice's Twisted Crook
@@ -774,7 +764,6 @@ root(ROOTS.Unsorted, {
 				i(212920),	-- Savage Blue Battle Turtle (MOUNT!) [Trading Post]
 				i(212228),	-- Soaring Sky Fox (MOUNT!)
 				i(212632),	-- Starry Twilight Peafowl (MOUNT!)
-				i(212229),	-- Twilight Sky Prowler (MOUNT!)
 				i(211486),	-- Winding Slitherdrake (MOUNT!)
 			}),
 			n(PVP, {

@@ -1192,7 +1192,6 @@ i(205904);	-- Vibrant Clacking Claw
 --- NYI ---
 i(205034);	-- Enormous Ball of Yarn
 i(205027);	-- Explorer's Banner
-i(205463);	-- Molten Lava Ball
 
 ------------------
 -- PATCH 10.1.5 --
@@ -1244,6 +1243,7 @@ i(210411);	-- Fast Growing Seed
 i(209035);	-- Hearthstone of the Flame
 i(210864);	-- Improvised Leafbed
 i(208825);	-- Junior Timekeeper's Racing Belt
+i(205463);	-- Molten Lava Ball
 i(210725);	-- Owl Post
 i(207092);	-- Portable Party Platter
 i(208798);	-- Recorded Memories of Tyr's Guard
@@ -1265,6 +1265,7 @@ i(212500);	-- Delicate Silk Parasol
 i(211864);	-- Exquisite Love Boat
 i(210974);	-- Eyes For You Only
 i(211946);	-- Hearthstone Game Table
+i(210467);	-- Magical Murkmorpher
 i(206347);	-- Mannequin Charm
 i(212337);	-- Stone of the Hearth
 i(211788);	-- Tess's Peacebloom

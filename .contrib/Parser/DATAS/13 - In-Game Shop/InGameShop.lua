@@ -160,6 +160,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(160589, {	-- The Dreadwake (MOUNT!)
 			["timeline"] = { "added 8.0.1.27602", "removed 10.1.7" },	-- Removed Sep 17th, 2023
 		}),
+		i(212229, {	-- Twilight Sky Prowler (MOUNT!)
+			["timeline"] = { "added 10.2.5.53162" }
+		}),
 		i(76755, {	-- Tyrael's Charger (MOUNT!)
 			["timeline"] = { "added 10.0.2.47213", "removed 10.0.2.47213" },	-- removed from the store again on Jan 2 2023
 		}),
@@ -481,6 +484,16 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			i(210072),	-- Sky-Captain's Masquerade Hat
 			i(210075),	-- Sky-Captain's Masquerade Pants
 		})),
+		i(212222,	-- Ensemble: Twilight Witch's Attire
+			bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53162" } }, {
+			i(212211),	-- Twilight Witch's Blouse
+			i(212212),	-- Twilight Witch's Boots
+			i(212213),	-- Twilight Witch's Gloves
+			i(212214),	-- Twilight Witch's Hat
+			i(212217),	-- Twilight Witch's Sash
+			i(212216),	-- Twilight Witch's Shoulders
+			i(212215),	-- Twilight Witch's Skirt
+		})),
 	}),
 	-- #endif
 	-- #if AFTER 8.1.5.29737
@@ -493,6 +506,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 		i(166777, {	-- Lion's Pride Firework (TOY!)
 			["timeline"] = { "added 8.1.5.29737", "removed 10.1.0" },	-- 17th April 2023
+		}),
+		i(210467, {	-- Magical Murkmorpher (TOY!)
+			["timeline"] = { "added 10.2.5.53162" }
 		}),
 		i(193588, {	-- Timewalker's Hearthstone (TOY!)
 			["timeline"] = { "added 10.2.0.52301" },
