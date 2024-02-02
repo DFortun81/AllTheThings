@@ -1,11 +1,3 @@
-8.0.1.25902
-faction(2233),	-- Dino Training - Pterrodax
-8.1.0.27826
-faction(2370),	-- Dino Training - Direhorn
-8.2.0.30080
-faction(2398),	-- Honeyback Harvester \\ Tidebreak Harvester \\ Honey Bee
-8.3.0.32489
-faction(2427),	-- Aqir Hatchling
 10.0.0.44649
 faction(2504),	-- Maruuk Centaur (Paragon)
 faction(2506),	-- Dragonflight
