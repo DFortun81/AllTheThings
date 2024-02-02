@@ -2523,6 +2523,34 @@ root(ROOTS.Unsorted, {
 				i(177608),	-- Felsoul Cowl
 				i(177610),	-- Felsoul Robe
 				i(177611),	-- Felsoul Shoulderpads
+				i(177426),	-- Heart-Lesion Breastplate
+				i(177434),	-- Heart-Lesion Chestguard
+				i(177429),	-- Heart-Lesion Helm
+				i(177431),	-- Heart-Lesion Pauldrons
+				i(177438),	-- Heart-Lesion Shoulderguards
+				i(177569),	-- Illidari Blindfold
+				i(177571),	-- Illidari Robe
+				i(177567),	-- Illidari Shoulders
+				i(177538),	-- Lightdrinker Hood
+				i(177535),	-- Lightdrinker Jerkin
+				i(177540),	-- Lightdrinker Shoulders
+				i(177484),	-- Mistdancer Helm
+				i(177491),	-- Mistdancer Hood
+				i(177496),	-- Mistdancer Jerkin
+				i(177486),	-- Mistdancer Pauldrons
+				i(177493),	-- Mistdancer Shoulders
+				i(177481),	-- Mistdancer Vest
+				i(177475),	-- Mountainsage Hood
+				i(177477),	-- Mountainsage Robe
+				i(177478),	-- Mountainsage Shoulderpads
+				i(177614),	-- Oathsworn Breastplate
+				i(177622),	-- Oathsworn Chestguard
+				i(177617),	-- Oathsworn Helm
+				i(177619),	-- Oathsworn Pauldrons
+				i(177626),	-- Oathsworn Shoulderguards
+				i(178776),	-- Ossified Oozebound Waistguard
+				i(183788),	-- Placeholder Twisting Corridors Cosmetic
+				i(178758),	-- Plague Experimenter's Gloves
 			}),
 			n(WEAPONS, {
 				i(179501),	-- Ardenweald Dagger
@@ -2531,6 +2559,7 @@ root(ROOTS.Unsorted, {
 				i(178028),	-- Gormwrought Shield
 				i(178026),	-- Gormwrought Staff
 				i(175991),	-- Grove Defender's Focus
+				i(180492),	-- Nethrezim Spire
 			}),
 			n(PROFESSIONS, {
 				i(173120),	-- 9.x Cut Rare
@@ -2602,6 +2631,15 @@ root(ROOTS.Unsorted, {
 				i(171283),	-- Eternal Cauldron
 				i(171280),	-- Eternal Flask
 				i(177279),	-- Gaunt Sinew
+				i(172334),	-- Leatherworking Reagent 05
+				i(172335),	-- Leatherworking Reagent 06
+				i(172336),	-- Leatherworking Reagent 07
+				i(172337),	-- Leatherworking Reagent 08
+				i(180055),	-- Relic of the Past I
+				i(180057),	-- Relic of the Past II
+				i(180058),	-- Relic of the Past III
+				i(180059),	-- Relic of the Past IV
+				i(180060),	-- Relic of the Past V
 			}),
 			filter(QUEST_ITEMS, {
 				i(183877),	-- A Meandering Story
@@ -2816,6 +2854,247 @@ root(ROOTS.Unsorted, {
 				i(181861),	-- Ground Twilight Bark
 				i(174877),	-- Grubby's Silk
 				i(182170),	-- Gryphon Soul
+				i(172901),	-- Hakone's Signet
+				i(178657),	-- Halen's Ritual Drafts
+				i(182112),	-- Handcrafted Mirror Repair Kit
+				i(172455),	-- Hardened Fel Shards
+				i(178138),	-- Harp Piece
+				i(173689),	-- Hastily Wrapped Package
+				i(175132),	-- Havoc Chains
+				i(174341),	-- Heart of the Fallen Tree
+				i(179929),	-- Heart of the Fallen Tree
+				i(174269),	-- Heart of Tirna Noch
+				i(172035),	-- Heart of Tirna Rowen
+				i(178229),	-- Herbert's Spell Book
+				i(183944),	-- Heron Net
+				i(171100),	-- Hidden Sinstone Fragment
+				i(171101),	-- Hidden Sinstone Fragment
+				i(171102),	-- Hidden Sinstone Fragment
+				i(178992),	-- Hidden Weapons
+				i(173538),	-- Hippogryph Whistle
+				i(179388),	-- Hopebreaker Soul Chains
+				i(181970),	-- Horrific Leather Hide
+				i(180497),	-- House Iremoore Disguise
+				i(179921),	-- Hydra Gutter
+				i(175979),	-- Ice Mote
+				i(180625),	-- Imbued Drust Fetish
+				i(174658),	-- Imprisoned Soul
+				i(176082),	-- Inane Drabblings
+				i(174821),	-- Incense of Guidance
+				i(183058),	-- Indecipherable Map
+				i(179983),	-- Infused Animacones
+				i(179978),	-- Infused Animacones
+				i(182315),	-- Infused Endmire Fruit
+				i(182158),	-- Infused Rubble
+				i(175751),	-- Infused Ruby
+				i(171103),	-- Inquisitor Sinstones
+				i(175974),	-- Intact Femur
+				i(182678),	-- Intact Spore Cluster
+				i(181497),	-- Interrogator's Key
+				i(171373),	-- Introspection
+				i(173358),	-- Invitations
+				i(176052),	-- Iron Skull Belt Buckle
+				i(173706),	-- Jade Jug
+				i(183757),	-- Jagged Blade
+				i(172950),	-- Jar of Clay
+				i(173693),	-- Jar of Maggots
+				i(173945),	-- Join the Prince!
+				i(182301),	-- Kaja-Infused Dredger Mix
+				i(172036),	-- Kala's Slobber Ball
+				i(173698),	-- Karazhan Scroll
+				i(178567),	-- Kein's Runeblade
+				i(183728),	-- Key of Eyes
+				i(172141),	-- Korinna's Allaying Crook
+				i(175478),	-- Korrim's Journal
+				i(173923),	-- Kyrian Boots
+				i(173922),	-- Kyrian Chestplate
+				i(173924),	-- Kyrian Helmet
+				i(180127),	-- Kyrian Javelin
+				i(173925),	-- Kyrian Pauldrons
+				i(173708),	-- Kyrian Shield
+				i(176055),	-- Lace-Up Bracers
+				i(176321),	-- Lady Moonberry's Hairbrush
+				i(181757),	-- Lambent Vigil's Torch
+				i(175792),	-- Larion Flight Feather
+				i(178890),	-- Larion Plume
+				i(172074),	-- Laurent's Belongings
+				i(178215),	-- Leafy Loam
+				i(172457),	-- Legion Orders
+				i(174231),	-- Lich Battle Plan
+				i(175753),	-- Life-Hardened Anima
+				i(170551),	-- Light of Bastion
+				i(181718),	-- Ligneous Phaedrum Ore
+				i(176084),	-- List of Demands
+				i(180436),	-- List of wildseeds
+				i(180276),	-- Locked Toolbox Key
+				i(175796),	-- Loose Stitch's Key
+				i(182619),	-- Looted Animacone
+				i(178526),	-- Lost Cryptkeeper's Ring
+				i(177835),	-- Louison's Gristle Cutter
+				i(181450),	-- Luminous Solenium Ore
+				i(181762),	-- Lush Widowbloom
+				i(182641),	-- Lustrous Silver Key
+				i(178655),	-- Lye's Ritual Drafts
+				i(172205),	-- Maldracite Crystal
+				i(178684),	-- Maldracite Dust
+				i(177879),	-- Maldraxxi Bone Marrow
+				i(180480),	-- Maldraxxi Throwing Axe
+				i(178214),	-- Mantle of the Primus
+				i(176057),	-- Margrave Stradama's Plasm
+				i(174643),	-- Marileth's Journal - Cover
+				i(174948),	-- Marileth's Mystery Potion
+				i(175754),	-- Mark of Humility
+				i(175755),	-- Mark of Knowledge
+				i(173942),	-- Marrowbore Larva
+				i(183796),	-- Marrowgrub Flesh
+				i(174092),	-- Mateo's Mirror Shard
+				i(183139),	-- Mature Spore Sample
+				i(178553),	-- Mawsworn Key
+				i(180799),	-- Mawsworn Patrol Map
+				i(180010),	-- Meaty Crab Chunk
+				i(173728),	-- Meaty Exopods
+				i(174111),	-- Medallion of Avarice
+				i(173287),	-- Medallion of Desire
+				i(175756),	-- Medallion of Dominion
+				i(180437),	-- Medallion of Dominion
+				i(175770),	-- Medallion of Dread
+				i(173976),	-- Medallion of Envy
+				i(178584),	-- Medallion of Orientation
+				i(179024),	-- Medallion of Pride
+				i(180797),	-- Memorial Offering Key
+				i(181720),	-- Menacing Sinvyr Ore
+				i(175975),	-- Meredy's Spell Book
+				i(174466),	-- Mikanikos' Tool Chest
+				i(182583),	-- Mire Creeper
+				i(175828),	-- Mirror Candy
+				i(172220),	-- Mirror Fragment
+				i(172085),	-- Mirror Fragment
+				i(172086),	-- Mirror Fragment
+				i(172087),	-- Mirror Fragment
+				i(182457),	-- Mirror Fragment
+				i(182458),	-- Mirror of Ancient Teachings
+				i(175139),	-- Mischief-touched Anima
+				i(182616),	-- Mischievous Quill
+				i(180800),	-- Misshapen Cypher of Relocation
+				i(180262),	-- Missing Eye
+				i(172037),	-- Mister Mikanikos
+				i(181719),	-- Monolithic Oxxein Ore
+				i(180850),	-- Morbid Boneguard's Head
+				i(174378),	-- Mortegore Scroll
+				i(173716),	-- Mossy Hearthstone
+				i(183725),	-- Moth Net
+				i(173899),	-- Mysterious Hooks
+				i(177881),	-- Nadjia's Sinstone
+				i(178577),	-- Nalthor's Phylactery Instructions
+				i(178729),	-- Necromancy Focus
+				i(171146),	-- Necrotic Deathward
+				i(170552),	-- Necrotic Fetish
+				i(171105),	-- Necrotic Shard
+				i(173692),	-- Nemea's Javelin
+				i(174778),	-- Neonate Bonetooth
+				i(173430),	-- Nexus Teleport Scroll
+				i(182659),	-- Night Lilly
+				i(183697),	-- Night Lily
+				i(178747),	-- Night Lily
+				i(173694),	-- Night Market Template
+				i(172464),	-- Nimleaf
+				i(171969),	-- Nondescript Robe
+				i(182958),	-- Nox Root
+				i(177834),	-- Obliterated Soul Shard
+				i(174839),	-- Offer of Employment
+				i(174947),	-- Old Grimoire
+				i(175980),	-- Old Spring
+				i(174278),	-- Orders from the Tithelord
+				i(177162),	-- Ordinary Basket
+				i(173180),	-- Ornate Key
+				i(181160),	-- Ossein Battleaxe
+				i(175797),	-- Ossein Resin
+				i(181161),	-- Ossein Staff
+				i(183130),	-- Otherworldly Egg
+				i(182609),	-- Overdue Scroll
+				i(180712),	-- Partially Digested Cloth
+				i(180719),	-- Partially Digested Leather
+				i(182643),	-- Paths of the First Ones
+				i(177710),	-- Patrol Schedule
+				i(182386),	-- Pauldrons of Imperium
+				i(182450),	-- Perfect Ardenmoth Wing Scale
+				i(174330),	-- Perfected Circlet Mold
+				i(174061),	-- Phaestus, Genesis of Aeons
+				i(181777),	-- Phaeton's Key
+				i(174043),	-- Phylactery of Arin'gore
+				i(175276),	-- Phylactery of Kel'Thuzad
+				i(175137),	-- Piece of Shredded Scroll
+				i(180025),	-- Pile of Blubberfat
+				i(183791),	-- Pilfered Materials
+				i(171368),	-- Pitch-Perfect Alloy
+				i(177961),	-- Plague Sample
+				i(177844),	-- Plague Sample
+				i(176056),	-- Plague Samples
+				i(174801),	-- Plain Lockbox
+				i(174482),	-- Plea of Darkhaven
+				i(176053),	-- Pleated Cape
+				i(180287),	-- Plundered Anima
+				i(181968),	-- Plush Copperfur Pelt
+				i(173952),	-- Pomagrave
+				i(173896),	-- Portable Spy Kit
+				i(173355),	-- Pouch of Puffpetal Powder
+				i(183724),	-- Poxedskin Sample
+				i(177880),	-- Primordial Muck
+				i(176456),	-- Prisoner Cage Key
+				i(172453),	-- Prisoner Transfer Orders
+				i(181370),	-- Pristine Water
+				i(178467),	-- Profane Shadestone
+				i(180828),	-- Promissory Note
+				i(178676),	-- Pulsating Hide Scraps
+				i(178898),	-- Pungent Swarmer Toxin
+				i(173973),	-- Purian
+				i(177963),	-- Purified Armor Fragments
+				i(173880),	-- Purified Metal
+				i(183733),	-- Purified Nectar
+				i(173379),	-- Purify Stone
+				i(173703),	-- Purity Jug
+				i(180803),	-- Puzzling Cryptogram
+				i(173029),	-- Quartermaster's Insignia
+				i(174935),	-- Rabbit Meat
+				i(175973),	-- Ravager Talon
+				i(174072),	-- Raw Meat
+				i(178144),	-- Raw Silkstrider Silk
+				i(180231),	-- Razor Hill Report
+				i(174534),	-- Razorthread Spool
+				i(178051),	-- Re-Sizer v9.0.1
+				i(170557),	-- Re-Sizer v9.0.1
+				i(182362),	-- Reclaimed Lumber
+				i(181716),	-- Recruiting Posters
+				i(177959),	-- Redridge Report
+				i(171468),	-- Regal Cloth Scrap
+				i(181354),	-- Regenerative Magma
+				i(179313),	-- Registrar's Records
+				i(173307),	-- Reinforced Armor
+				i(172446),	-- Renathal's Cage Key
+				i(174332),	-- Replenished Anima Container
+				i(177693),	-- Requisitioner's Scroll
+				i(180443),	-- Researcher's Notes
+				i(171963),	-- Resilient Spark Slot
+				i(175134),	-- Resistance Boots
+				i(180899),	-- Riding Hook
+				i(175794),	-- Ring of Keys
+				i(178572),	-- Ring of Otherworldly Metal
+				i(176446),	-- Ripened Anima Seed
+				i(174939),	-- Ritual Supplies
+				i(173266),	-- Ritual Vestments
+				i(179984),	-- Rituals and Rites of the Eternal Army
+				i(173187),	-- River Sediment
+				i(182974),	-- Riverblossom's Flute
+				i(183837),	-- Royal Peat
+				i(181969),	-- Rugged Carapace
+				i(180177),	-- Ruminations on True Names
+				i(174333),	-- Rumors of Favor
+				i(173392),	-- Runed Dagger
+				i(172968),	-- Runed Latchpick
+				i(182647),	-- Runestone Spike
+				i(178141),	-- Runic Codex
+				i(173897),	-- Runic Fastener
+				i(175981),	-- Rusted Chain
 			}),
 			filter(MISC, {
 				i(183902),	-- A Faintly Glowing Seed
@@ -2882,6 +3161,48 @@ root(ROOTS.Unsorted, {
 				i(180451),	-- Grand Inquisitor's Sinstone Fragment
 				i(170053),	-- Grek'og's Tusk
 				i(172038),	-- Grim Iron Shackles
+				i(178537),	-- Hair-Trussed Fungi
+				i(169819),	-- Handful of Blood Shards
+				i(180088),	-- Handwritten Note
+				i(176852),	-- Hardened Tail Bone
+				i(179376),	-- Hefty Diary Key
+				i(180888),	-- Illegible Journal
+				i(179310),	-- Jar of Muck
+				i(179285),	-- Jumari
+				i(182298),	-- Kaja'Extreme
+				i(183808),	-- Leashed Construct
+				i(182188),	-- Lesser Phial of Serenity
+				i(169823),	-- Lordaeron Coin
+				i(177026),	-- Lost Earring
+				i(181388),	-- Lush Marrowroot
+				i(178088),	-- Maldraxxus Unique Loot
+				i(180509),	-- Mane Hair Harp
+				i(175111),	-- Marrow Larva
+				i(170499),	-- Maw Seeker Harness
+				i(168035),	-- Mawrat Harness
+				i(183165),	-- Mawsworn Crossbow
+				i(178551),	-- Monstrous Bloodtusk Haggis
+				i(173941),	-- Monstrous Skull
+				i(179287),	-- Muck-Covered Morsels
+				i(179300),	-- Muck-Hardened Marble
+				i(183934),	-- Muck-Stained Napkin
+				i(180399),	-- New Player Experience Box
+				i(183795),	-- Notice of Special Delivery
+				i(174363),	-- Old Empty Bottle
+				i(177039),	-- Olive-Stuffed Barbouni
+				i(180168),	-- Oribobber
+				i(177278),	-- Phial of Serenity
+				i(181247),	-- Pointy Stick
+				i(179004),	-- Polished Silver Tithe
+				i(180887),	-- Preserved Organ
+				i(176442),	-- Ratwhisker Brew
+				i(183872),	-- Residual Sorrow
+				i(180830),	-- Resonant Alloy
+				i(171265),	-- REUSE ME
+				i(171310),	-- Ring of Stonebound Control
+				i(180354),	-- Ripped Stuffing
+				i(182299),	-- Ruined Carapace
+				i(177028),	-- Rusty Chain
 				-- EC
 				i(181248),	-- Ancient Sinstone
 				--- NYI
@@ -2926,380 +3247,54 @@ root(ROOTS.Unsorted, {
 				i(175033),	-- Focused Moonfire
 				i(175027),	-- Fulfilling Meditation
 				i(177034),	-- Gem Chisel Kit
+				i(175038),	-- Healthy Bear
+				i(177281),	-- Heavy Sorrowscale
+				i(178728),	-- High Winds
+				i(175040),	-- Infused Bark
+				i(179652),	-- Infused Ruby
+				i(181750),	-- Kleia and Pelagos Elated PH Reward
+				i(181752),	-- Kleia and Pelagos Happy PH Reward
+				i(181751),	-- Kleia and Pelagos Very Happy PH Reward
+				i(175025),	-- Lingering Moonfire
+				i(175044),	-- Louder Stampeding Roar
+				i(179862),	-- Luxurious Feather
+				i(175963),	-- Maldraxxus Epic Treasure
+				i(175961),	-- Maldraxxus Rare Treasure
+				i(175958),	-- Maldraxxus Uncommon Treasure
+				i(183809),	-- Margrave Krexus Tribute
+				i(178725),	-- Master of Shapes
+				i(175147),	-- Meteoric Vale
+				i(178765),	-- Mindless Abomination's Chain
+				i(183206),	-- Miniature Seat of the Primus Replica
+				i(175042),	-- Path to Enlightenment
+				i(175035),	-- Patience is a Virtue
+				i(178723),	-- Personal Growth
+				i(175145),	-- Personal Growth
+				i(180798),	-- PH - Kyrian IOU
+				i(175764),	-- PH Cloak B
+				i(176394),	-- PH Critical
+				i(175964),	-- PH Frequent
+				i(182124),	-- PH Rare Item
+				i(181261),	-- PH Slime
+				i(183164),	-- PH Treasure Reward
+				i(175956),	-- PH Unusual
+				i(179304),	-- Pile of Muck
+				i(175047),	-- Protective Rebirth
+				i(175144),	-- Purest Healing
+				i(175051),	-- Reactive Regrowth
+				i(175032),	-- Reactive Regrowth
+				i(175146),	-- Recurring Vale
+				i(182701),	-- Refined Blue Pigment
+				i(182700),	-- Refined Green Pigment
+				i(182699),	-- Refined Red Pigment
+				i(175039),	-- Reinforced Bark
+				i(178087),	-- Revendreth Epic Treasure
+				i(178086),	-- Revendreth Rare Treasure
+				i(178085),	-- Revendreth Uncommon Treasure
+				i(178091),	-- Revendreth Unique Loot
+				i(175048),	-- Root Structure
+				i(179303),	-- Rusty Sword
 			}),
-			---
-			i(178537),	-- Hair-Trussed Fungi
-			i(172901),	-- Hakone's Signet
-			i(178657),	-- Halen's Ritual Drafts
-			i(182112),	-- Handcrafted Mirror Repair Kit \\ Hand Crafted Mirror Repair Kit
-			i(169819),	-- Handful of Blood Shards \\ Rotted Quilboar Fetish
-			i(180088),	-- Handwritten Note
-			i(172455),	-- Hardened Fel Shards
-			i(176852),	-- Hardened Tail Bone
-			i(178138),	-- Harp Piece
-			i(173689),	-- Hastily Wrapped Package
-			i(175132),	-- Havoc Chains
-			i(175038),	-- Healthy Bear
-			i(174341),	-- Heart of the Fallen Tree
-			i(179929),	-- Heart of the Fallen Tree
-			i(174269),	-- Heart of Tirna Noch \\ Heart of the Fallen Tree
-			i(172035),	-- Heart of Tirna Rowen
-			i(177426),	-- Heart-Lesion Breastplate
-			i(177434),	-- Heart-Lesion Chestguard
-			i(177429),	-- Heart-Lesion Helm
-			i(177431),	-- Heart-Lesion Pauldrons
-			i(177438),	-- Heart-Lesion Shoulderguards
-			i(177281),	-- Heavy Sorrowscale
-			i(179376),	-- Hefty Diary Key
-			i(178229),	-- Herbert's Spell Book
-			i(183944),	-- Heron Net
-			i(171100),	-- Hidden Sinstone Fragment
-			i(171101),	-- Hidden Sinstone Fragment
-			i(171102),	-- Hidden Sinstone Fragment
-			i(178992),	-- Hidden Weapons
-			i(178728),	-- High Winds
-			i(173538),	-- Hippogryph Whistle
-			i(179388),	-- Hopebreaker Soul Chains
-			i(181970),	-- Horrific Leather Hide \\ Revendreth Skinning Item
-			i(180497),	-- House Iremoore Disguise \\ House Redelav Disguise
-			i(179921),	-- Hydra Gutter
-			i(175979),	-- Ice Mote
-			i(180888),	-- Illegible Journal
-			i(177569),	-- Illidari Blindfold
-			i(177571),	-- Illidari Robe
-			i(177567),	-- Illidari Shoulders
-			i(180625),	-- Imbued Drust Fetish
-			i(174658),	-- Imprisoned Soul
-			i(176082),	-- Inane Drabblings
-			i(174821),	-- Incense of Guidance
-			i(183058),	-- Indecipherable Map
-			i(179983),	-- Infused Animacones
-			i(179978),	-- Infused Animacones
-			i(175040),	-- Infused Bark
-			i(182315),	-- Infused Endmire Fruit
-			i(182158),	-- Infused Rubble
-			i(175751),	-- Infused Ruby
-			i(179652),	-- Infused Ruby
-			i(171103),	-- Inquisitor Sinstones
-			i(174930),	-- Inquisitor Stelia's Sinstone
-			i(175974),	-- Intact Femur
-			i(182678),	-- Intact Spore Cluster
-			i(181497),	-- Interrogator's Key \\ Deathspeaker's Key
-			i(171373),	-- Introspection
-			i(173358),	-- Invitations
-			i(174093),	-- Ionata's Fangs \\ Bell of Remembrance
-			i(176052),	-- Iron Skull Belt Buckle
-			i(173706),	-- Jade Jug
-			i(183757),	-- Jagged Blade
-			i(172950),	-- Jar of Clay
-			i(173693),	-- Jar of Maggots
-			i(179310),	-- Jar of Muck
-			i(173945),	-- Join the Prince! \\ Rebellion Pamphlet
-			i(174751),	-- Juicy Nibbler
-			i(179285),	-- Jumari
-			i(182298),	-- Kaja'Extreme
-			i(182301),	-- Kaja-Infused Dredger Mix
-			i(172036),	-- Kala's Slobber Ball \\ Kala's Ball
-			i(173698),	-- Karazhan Scroll
-			i(178567),	-- Kein's Runeblade
-			i(183728),	-- Key of Eyes
-			i(181750),	-- Kleia and Pelagos Elated PH Reward
-			i(181752),	-- Kleia and Pelagos Happy PH Reward
-			i(181751),	-- Kleia and Pelagos Very Happy PH Reward
-			i(172141),	-- Korinna's Allaying Crook
-			i(175478),	-- Korrim's Journal
-			i(173923),	-- Kyrian Boots
-			i(173922),	-- Kyrian Chestplate
-			i(173924),	-- Kyrian Helmet
-			i(180127),	-- Kyrian Javelin
-			i(173925),	-- Kyrian Pauldrons
-			i(173708),	-- Kyrian Shield
-			i(176055),	-- Lace-Up Bracers
-			i(176321),	-- Lady Moonberry's Hairbrush
-			i(181757),	-- Lambent Vigil's Torch \\ Lush Vigil's Torch
-			i(175792),	-- Larion Flight Feather
-			i(178890),	-- Larion Plume
-			i(172074),	-- Laurent's Belongings
-			i(178215),	-- Leafy Loam
-			i(183808),	-- Leashed Construct
-			i(172334),	-- Leatherworking Reagent 05
-			i(172335),	-- Leatherworking Reagent 06
-			i(172336),	-- Leatherworking Reagent 07
-			i(172337),	-- Leatherworking Reagent 08
-			i(172457),	-- Legion Orders
-			i(182188),	-- Lesser Phial of Serenity
-			i(174231),	-- Lich Battle Plan
-			i(175753),	-- Life-Hardened Anima
-			i(170551),	-- Light of Bastion
-			i(177538),	-- Lightdrinker Hood
-			i(177535),	-- Lightdrinker Jerkin
-			i(177540),	-- Lightdrinker Shoulders
-			i(181718),	-- Ligneous Phaedrum Ore \\ Luminous Phaedrum Ore
-			i(175025),	-- Lingering Moonfire
-			i(176084),	-- List of Demands
-			i(180436),	-- List of wildseeds
-			i(180276),	-- Locked Toolbox Key
-			i(175796),	-- Loose Stitch's Key
-			i(182619),	-- Looted Animacone
-			i(169823),	-- Lordaeron Coin
-			i(178526),	-- Lost Cryptkeeper's Ring
-			i(177026),	-- Lost Earring \\ Ethereal Worm
-			i(175044),	-- Louder Stampeding Roar
-			i(177835),	-- Louison's Gristle Cutter
-			i(181450),	-- Luminous Solenium Ore \\ Mining Foozle
-			i(181388),	-- Lush Marrowroot \\ Black Leaf
-			i(181762),	-- Lush Widowbloom
-			i(182641),	-- Lustrous Silver Key
-			i(179862),	-- Luxurious Feather
-			i(178655),	-- Lye's Ritual Drafts
-			i(172205),	-- Maldracite Crystal
-			i(178684),	-- Maldracite Dust
-			i(177879),	-- Maldraxxi Bone Marrow \\ Maldraxxian Living Ore
-			i(180480),	-- Maldraxxi Throwing Axe
-			i(175963),	-- Maldraxxus Epic Treasure
-			i(175961),	-- Maldraxxus Rare Treasure
-			i(175958),	-- Maldraxxus Uncommon Treasure
-			i(178088),	-- Maldraxxus Unique Loot
-			i(180509),	-- Mane Hair Harp
-			i(178214),	-- Mantle of the Primus \\ [PH] Crown of the Primus
-			i(183809),	-- Margrave Krexus Tribute
-			i(176057),	-- Margrave Stradama's Plasm
-			i(174643),	-- Marileth's Journal - Cover \\ Research Notes
-			i(174948),	-- Marileth's Mystery Potion
-			i(175754),	-- Mark of Humility
-			i(175755),	-- Mark of Knowledge
-			i(175111),	-- Marrow Larva
-			i(173942),	-- Marrowbore Larva \\ Marrowbore larva
-			i(183796),	-- Marrowgrub Flesh
-			i(178725),	-- Master of Shapes
-			i(174092),	-- Mateo's Mirror Shard \\ Broken Mirror Shard
-			i(183139),	-- Mature Spore Sample
-			i(170499),	-- Maw Seeker Harness
-			i(168035),	-- Mawrat Harness
-			i(183165),	-- Mawsworn Crossbow
-			i(178553),	-- Mawsworn Key \\ Shackler's Key
-			i(180799),	-- Mawsworn Patrol Map \\ Mawguard Patrol Map
-			i(180010),	-- Meaty Crab Chunk
-			i(173728),	-- Meaty Exopods
-			i(174111),	-- Medallion of Avarice \\ Medallion of the Curator
-			i(173287),	-- Medallion of Desire \\ The Countess' Medallion
-			i(175756),	-- Medallion of Dominion
-			i(180437),	-- Medallion of Dominion
-			i(175770),	-- Medallion of Dread
-			i(173976),	-- Medallion of Envy
-			i(178584),	-- Medallion of Orientation
-			i(179024),	-- Medallion of Pride
-			i(180797),	-- Memorial Offering Key
-			i(181720),	-- Menacing Sinvyr Ore \\ Luminous Sinvyr Ore
-			i(175975),	-- Meredy's Spell Book
-			i(175147),	-- Meteoric Vale
-			i(174466),	-- Mikanikos' Tool Chest \\ Mikanikos's Tool Chest \\ Mikanikos' Toolchest
-			i(178765),	-- Mindless Abomination's Chain
-			i(183206),	-- Miniature Seat of the Primus Replica
-			i(182583),	-- Mire Creeper
-			i(175828),	-- Mirror Candy
-			i(172220),	-- Mirror Fragment
-			i(172085),	-- Mirror Fragment
-			i(172086),	-- Mirror Fragment
-			i(172087),	-- Mirror Fragment
-			i(182457),	-- Mirror Fragment \\ [PH] Small Scroll
-			i(182458),	-- Mirror of Ancient Teachings \\ [PH] Large Scroll
-			i(175139),	-- Mischief-touched Anima
-			i(182616),	-- Mischievous Quill
-			i(180800),	-- Misshapen Cypher of Relocation
-			i(180262),	-- Missing Eye
-			i(177484),	-- Mistdancer Helm
-			i(177491),	-- Mistdancer Hood
-			i(177496),	-- Mistdancer Jerkin
-			i(177486),	-- Mistdancer Pauldrons
-			i(177493),	-- Mistdancer Shoulders
-			i(177481),	-- Mistdancer Vest
-			i(172037),	-- Mister Mikanikos \\ Kala's Stuffed Steward
-			i(181719),	-- Monolithic Oxxein Ore \\ Luminous Oxxein Ore
-			i(178551),	-- Monstrous Bloodtusk Haggis
-			i(173941),	-- Monstrous Skull
-			i(180850),	-- Morbid Boneguard's Head
-			i(174378),	-- Mortegore Scroll
-			i(173716),	-- Mossy Hearthstone
-			i(183725),	-- Moth Net
-			i(177475),	-- Mountainsage Hood
-			i(177477),	-- Mountainsage Robe
-			i(177478),	-- Mountainsage Shoulderpads
-			i(179287),	-- Muck-Covered Morsels
-			i(179300),	-- Muck-Hardened Marble
-			i(183934),	-- Muck-Stained Napkin
-			i(173899),	-- Mysterious Hooks
-			i(177881),	-- Nadjia's Sinstone
-			i(178577),	-- Nalthor's Phylactery Instructions \\ Nalthor's Phlactory Instructions
-			i(178729),	-- Necromancy Focus
-			i(171146),	-- Necrotic Deathward
-			i(170552),	-- Necrotic Fetish
-			i(171105),	-- Necrotic Shard
-			i(173692),	-- Nemea's Javelin
-			i(174778),	-- Neonate Bonetooth
-			i(180492),	-- Nethrezim Spire
-			i(180399),	-- New Player Experience Box
-			i(173430),	-- Nexus Teleport Scroll
-			i(182659),	-- Night Lilly
-			i(183697),	-- Night Lily
-			i(178747),	-- Night Lily \\ Night Lilly
-			i(173694),	-- Night Market Template
-			i(172464),	-- Nimleaf
-			i(171969),	-- Nondescript Robe
-			i(183795),	-- Notice of Special Delivery
-			i(182958),	-- Nox Root
-			i(177614),	-- Oathsworn Breastplate
-			i(177622),	-- Oathsworn Chestguard
-			i(177617),	-- Oathsworn Helm
-			i(177619),	-- Oathsworn Pauldrons
-			i(177626),	-- Oathsworn Shoulderguards
-			i(177834),	-- Obliterated Soul Shard
-			i(174839),	-- Offer of Employment
-			i(174363),	-- Old Empty Bottle
-			i(174947),	-- Old Grimoire
-			i(175980),	-- Old Spring
-			i(177039),	-- Olive-Stuffed Barbouni
-			i(174278),	-- Orders from the Tithelord \\ Orders from the Grand Steward
-			i(177162),	-- Ordinary Basket
-			i(180168),	-- Oribobber
-			i(173180),	-- Ornate Key
-			i(181160),	-- Ossein Battleaxe
-			i(175133),	-- Ossein Battlemail \\ Ossien Battlemail
-			i(175797),	-- Ossein Resin
-			i(181161),	-- Ossein Staff
-			i(178776),	-- Ossified Oozebound Waistguard \\ Waistguard of the Blight Warden
-			i(183130),	-- Otherworldly Egg
-			i(182609),	-- Overdue Scroll
-			i(180712),	-- Partially Digested Cloth \\ Curious Green Vial
-			i(180719),	-- Partially Digested Leather \\ Curious Green Vial
-			i(175042),	-- Path to Enlightenment
-			i(182643),	-- Paths of the First Ones
-			i(175035),	-- Patience is a Virtue
-			i(177710),	-- Patrol Schedule
-			i(182386),	-- Pauldrons of Imperium \\ Mantle of Imperium
-			i(182450),	-- Perfect Ardenmoth Wing Scale
-			i(174330),	-- Perfected Circlet Mold \\ Circlet Mold
-			i(178723),	-- Personal Growth
-			i(175145),	-- Personal Growth
-			i(180798),	-- PH - Kyrian IOU
-			i(175764),	-- PH Cloak B \\ 9.0 QRP - Maldraxxus - Cloak
-			i(176394),	-- PH Critical
-			i(175964),	-- PH Frequent
-			i(182124),	-- PH Rare Item
-			i(181261),	-- PH Slime
-			i(183164),	-- PH Treasure Reward \\ 9.0 PH Treasure Reward
-			i(175956),	-- PH Unusual
-			i(174061),	-- Phaestus, Genesis of Aeons \\ Phaestus, Gensis of Aeons \\ Phaestus, Gensis of Eons
-			i(181777),	-- Phaeton's Key \\ Runespeaker's Key
-			i(177278),	-- Phial of Serenity
-			i(174043),	-- Phylactery of Arin'gore
-			i(175276),	-- Phylactery of Kel'Thuzad
-			i(175137),	-- Piece of Shredded Scroll
-			i(180025),	-- Pile of Blubberfat
-			i(179304),	-- Pile of Muck
-			i(183791),	-- Pilfered Materials
-			i(171368),	-- Pitch-Perfect Alloy
-			i(183788),	-- Placeholder Twisting Corridors Cosmetic
-			i(178758),	-- Plague Experimenter's Gloves
-			i(177961),	-- Plague Sample
-			i(177844),	-- Plague Sample \\ Fragment of Armor
-			i(176056),	-- Plague Samples
-			i(174801),	-- Plain Lockbox
-			i(174482),	-- Plea of Darkhaven
-			i(176053),	-- Pleated Cape
-			i(180287),	-- Plundered Anima
-			i(181968),	-- Plush Copperfur Pelt \\ Bastion Skinning Item
-			i(181247),	-- Pointy Stick
-			i(179004),	-- Polished Silver Tithe \\ Hand-Worn Silver Tithe
-			i(173952),	-- Pomagrave
-			i(173896),	-- Portable Spy Kit
-			i(173355),	-- Pouch of Puffpetal Powder
-			i(183724),	-- Poxedskin Sample
-			i(180887),	-- Preserved Organ
-			i(177880),	-- Primordial Muck
-			i(176456),	-- Prisoner Cage Key \\ Ossein Key Ring
-			i(172453),	-- Prisoner Transfer Orders
-			i(181370),	-- Pristine Water
-			i(178467),	-- Profane Shadestone
-			i(180828),	-- Promissory Note
-			i(175047),	-- Protective Rebirth
-			i(178676),	-- Pulsating Hide Scraps \\ Pulsating Hide
-			i(178898),	-- Pungent Swarmer Toxin
-			i(175144),	-- Purest Healing
-			i(173973),	-- Purian
-			i(177963),	-- Purified Armor Fragments
-			i(173880),	-- Purified Metal
-			i(183733),	-- Purified Nectar
-			i(173379),	-- Purify Stone
-			i(173703),	-- Purity Jug
-			i(180803),	-- Puzzling Cryptogram
-			i(173029),	-- Quartermaster's Insignia
-			i(174935),	-- Rabbit Meat
-			i(176442),	-- Ratwhisker Brew
-			i(175973),	-- Ravager Talon
-			i(174072),	-- Raw Meat
-			i(178144),	-- Raw Silkstrider Silk
-			i(180231),	-- Razor Hill Report
-			i(174534),	-- Razorthread Spool
-			i(178051),	-- Re-Sizer v9.0.1
-			i(170557),	-- Re-Sizer v9.0.1
-			i(175051),	-- Reactive Regrowth
-			i(175032),	-- Reactive Regrowth
-			i(182362),	-- Reclaimed Lumber
-			i(181716),	-- Recruiting Posters \\ Scandalous Gossip Leaflets
-			i(175146),	-- Recurring Vale
-			i(177959),	-- Redridge Report
-			i(182701),	-- Refined Blue Pigment
-			i(182700),	-- Refined Green Pigment
-			i(182699),	-- Refined Red Pigment
-			i(171468),	-- Regal Cloth Scrap
-			i(181354),	-- Regenerative Magma
-			i(179313),	-- Registrar's Records
-			i(173307),	-- Reinforced Armor
-			i(175039),	-- Reinforced Bark
-			i(180055),	-- Relic of the Past I
-			i(180057),	-- Relic of the Past II
-			i(180058),	-- Relic of the Past III
-			i(180059),	-- Relic of the Past IV
-			i(180060),	-- Relic of the Past V
-			i(172446),	-- Renathal's Cage Key
-			i(174332),	-- Replenished Anima Container
-			i(177693),	-- Requisitioner's Scroll
-			i(180443),	-- Researcher's Notes
-			i(183872),	-- Residual Sorrow
-			i(171963),	-- Resilient Spark Slot
-			i(175134),	-- Resistance Boots
-			i(180830),	-- Resonant Alloy
-			i(171265),	-- REUSE ME \\ Potion of the Arbiter's Pardon
-			i(178087),	-- Revendreth Epic Treasure
-			i(178086),	-- Revendreth Rare Treasure
-			i(178085),	-- Revendreth Uncommon Treasure
-			i(178091),	-- Revendreth Unique Loot
-			i(180899),	-- Riding Hook
-			i(175794),	-- Ring of Keys
-			i(178572),	-- Ring of Otherworldly Metal
-			i(171310),	-- Ring of Stonebound Control
-			i(176446),	-- Ripened Anima Seed
-			i(180354),	-- Ripped Stuffing
-			i(174939),	-- Ritual Supplies
-			i(173266),	-- Ritual Vestments
-			i(179984),	-- Rituals and Rites of the Eternal Army
-			i(173187),	-- River Sediment
-			i(182974),	-- Riverblossom's Flute
-			i(175048),	-- Root Structure
-			i(183837),	-- Royal Peat
-			i(181969),	-- Rugged Carapace \\ Maldraxxus Skinning Item
-			i(182299),	-- Ruined Carapace
-			i(180177),	-- Ruminations on True Names
-			i(174333),	-- Rumors of Favor
-			i(173392),	-- Runed Dagger
-			i(172968),	-- Runed Latchpick
-			i(182647),	-- Runestone Spike
-			i(178141),	-- Runic Codex
-			i(173897),	-- Runic Fastener
-			i(175981),	-- Rusted Chain
-			i(177028),	-- Rusty Chain \\ Sprite Fly
-			i(179303),	-- Rusty Sword
 			i(178876),	-- Sack of Supplies
 			i(170550),	-- Sacred Scroll \\ Projection Core
 			i(182477),	-- Sacred Text
