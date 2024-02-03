@@ -74,49 +74,6 @@ local function GetBestObjectIDForName(name)
 	end
 end
 
--- many of these don't include an ID in-game so they don't attach results. maybe someday they will...
-local TooltipTypes = {
-	[Enum_TooltipDataType.Toy] = "itemID",
-	[Enum_TooltipDataType.Item] = "itemID",
-	[Enum_TooltipDataType.Spell] = "spellID",
-	-- [Enum_TooltipDataType.Mount] = "spellID",	-- need special conversion
-	[Enum_TooltipDataType.Achievement] = "achievementID",
-	[Enum_TooltipDataType.Quest] = "questID",
-	[Enum_TooltipDataType.QuestPartyProgress] = "questID",
-	[Enum_TooltipDataType.BattlePet] = "speciesID",
-	[Enum_TooltipDataType.CompanionPet] = "speciesID",
-	[Enum_TooltipDataType.Currency] = "currencyID",
-	[Enum_TooltipDataType.InstanceLock] = "instanceID",
-};
--- We need to whitelist the actual in-game tooltips that ATT is allowed to hook
--- because all kinds of addons create their own tooltips and use them to do weird stuff behind the scenes
--- and there's no reason for ATT to care when it's not even visible to a player
-local HookableTooltips = {
-	["GameTooltip"]=1,
-	["GameTooltipTooltip"]=1,
-	["EmbeddedItemTooltipTooltip"]=1,
-	["EmbeddedItemTooltip"]=1,	-- did blizz fix the name of this finally?
-	["ItemRefTooltip"]=1,
-	["ShoppingTooltip1"]=1,
-	["ShoppingTooltip2"]=1,
-	["PerksProgramTooltip"]=1,	-- tooltip used for items within the Trading Post UI
-	["EncounterJournalTooltipItem1Tooltip"]=1,	-- various tooltips in Adventure Guide, some are actually useful to attach ATT data
-	["GarrisonShipyardMapMissionTooltipTooltip"]=1,	-- tooltips of Navel missions from WoD Garrison
-	-- other addons which create user-visible tooltips that ATT should attach into
-	-- SilverDragon
-	["SilverDragonLootTooltip"]=1,
-	-- RareScanner
-	["LootBarToolTip"]=1,
-	["RSMapItemToolTip"]=1,
-	-- Townlong Yak addons seem to use alternate, automatically appended tooltips now...
-	["NotGameTooltip"]=1,
-	["NotGameTooltip1"]=1,
-	["NotGameTooltip0"]=1,
-	["NotGameTooltip01"]=1,
-	["NotGameTooltip012"]=1,
-	["NotGameTooltip0123"]=1,
-};
-
 -- Player Tooltip Functions
 local PLAYER_TOOLTIPS = {
 	["Player-4647-031D0890"] = function(self, target)
@@ -320,6 +277,61 @@ for i,guid in ipairs({
 }) do
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
+
+
+
+-- many of these don't include an ID in-game so they don't attach results. maybe someday they will...
+local TooltipTypes = {
+	[Enum_TooltipDataType.Toy] = "itemID",
+	[Enum_TooltipDataType.Item] = "itemID",
+	[Enum_TooltipDataType.Spell] = "spellID",
+	[Enum_TooltipDataType.UnitAura] = "spellID",
+	-- [Enum_TooltipDataType.Mount] = "spellID",	-- need special conversion
+	--[Enum_TooltipDataType.Macro] = "spellID",	-- Possibly?
+	[Enum_TooltipDataType.Achievement] = "achievementID",
+	[Enum_TooltipDataType.Quest] = "questID",
+	[Enum_TooltipDataType.QuestPartyProgress] = "questID",
+	[Enum_TooltipDataType.BattlePet] = "speciesID",
+	[Enum_TooltipDataType.CompanionPet] = "speciesID",
+	[Enum_TooltipDataType.Currency] = "currencyID",
+	[Enum_TooltipDataType.InstanceLock] = "instanceID",
+};
+--[[
+for key,id in pairs(Enum_TooltipDataType) do
+	if not TooltipTypes[id] then
+		print("Not handling Tooltip Type", key, id);
+	end
+end
+]]--
+-- We need to whitelist the actual in-game tooltips that ATT is allowed to hook
+-- because all kinds of addons create their own tooltips and use them to do weird stuff behind the scenes
+-- and there's no reason for ATT to care when it's not even visible to a player
+local HookableTooltips = {
+	["GameTooltip"]=1,
+	["GameTooltipTooltip"]=1,
+	["EmbeddedItemTooltipTooltip"]=1,
+	["EmbeddedItemTooltip"]=1,	-- did blizz fix the name of this finally?
+	["ItemRefTooltip"]=1,
+	["ShoppingTooltip1"]=1,
+	["ShoppingTooltip2"]=1,
+	["PerksProgramTooltip"]=1,	-- tooltip used for items within the Trading Post UI
+	["EncounterJournalTooltipItem1Tooltip"]=1,	-- various tooltips in Adventure Guide, some are actually useful to attach ATT data
+	["GarrisonShipyardMapMissionTooltipTooltip"]=1,	-- tooltips of Navel missions from WoD Garrison
+	-- other addons which create user-visible tooltips that ATT should attach into
+	-- SilverDragon
+	["SilverDragonLootTooltip"]=1,
+	-- RareScanner
+	["LootBarToolTip"]=1,
+	["RSMapItemToolTip"]=1,
+	-- Townlong Yak addons seem to use alternate, automatically appended tooltips now...
+	["NotGameTooltip"]=1,
+	["NotGameTooltip1"]=1,
+	["NotGameTooltip0"]=1,
+	["NotGameTooltip01"]=1,
+	["NotGameTooltip012"]=1,
+	["NotGameTooltip0123"]=1,
+};
+
 
 local function ClearTooltip(self)
 	-- app.PrintDebug("Clear Tooltip",self:GetName());
@@ -665,25 +677,6 @@ end
 ]]--
 
 local function OnReadyHooks()
-	local GameTooltip_SetLFGDungeonReward = GameTooltip.SetLFGDungeonReward;
-	if GameTooltip_SetLFGDungeonReward then
-		GameTooltip.SetLFGDungeonReward = function(self, dungeonID, rewardIndex)
-			GameTooltip_SetLFGDungeonReward(self, dungeonID, rewardIndex);
-			if CanAttachTooltips() then
-				local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
-				if itemID then
-					if spec == "item" then
-						AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
-						self:Show();
-					elseif spec == "currency" then
-						AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
-						self:Show();
-					end
-				end
-			end
-		end
-	end
-
 	local GameTooltip_SetLFGDungeonShortageReward = GameTooltip.SetLFGDungeonShortageReward;
 	if GameTooltip_SetLFGDungeonShortageReward then
 		GameTooltip.SetLFGDungeonShortageReward = function(self, dungeonID, shortageSeverity, lootIndex)
@@ -703,7 +696,7 @@ local function OnReadyHooks()
 			end
 		end
 	end
-
+	
 	-- 10.0.2
 	-- https://wowpedia.fandom.com/wiki/Patch_10.0.2/API_changes#Tooltip_Changes
 	if TooltipDataProcessor then
@@ -735,6 +728,63 @@ local function OnReadyHooks()
 			WorldMapTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 			WorldMapTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 			WorldMapTooltip:HookScript("OnShow", AttachTooltip);
+		end
+		
+		local GameTooltip_SetLFGDungeonReward = GameTooltip.SetLFGDungeonReward;
+		if GameTooltip_SetLFGDungeonReward then
+			GameTooltip.SetLFGDungeonReward = function(self, dungeonID, rewardIndex)
+				GameTooltip_SetLFGDungeonReward(self, dungeonID, rewardIndex);
+				if CanAttachTooltips() then
+					local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
+					if itemID then
+						if spec == "item" then
+							AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
+							self:Show();
+						elseif spec == "currency" then
+							AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
+							self:Show();
+						end
+					end
+				end
+			end
+		end
+		
+		local GameTooltip_SetCurrencyByID = GameTooltip.SetCurrencyByID;
+		if GameTooltip_SetCurrencyByID then
+			GameTooltip.SetCurrencyByID = function(self, currencyID, count)
+				GameTooltip_SetCurrencyByID(self, currencyID, count);
+				if CanAttachTooltips() then
+					AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+					if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
+					self:Show();
+				end
+			end
+		end
+		
+		local GameTooltip_SetCurrencyToken = GameTooltip.SetCurrencyToken;
+		if GameTooltip_SetCurrencyToken then
+			GameTooltip.SetCurrencyToken = function(self, tokenID)
+				GameTooltip_SetCurrencyToken(self, tokenID);
+				if CanAttachTooltips() then
+					-- Determine what kind of list data this is. (Blizzard is whack and using this API call for headers too...)
+					local name, isHeader = GetCurrencyListInfo(tokenID);
+					if not isHeader then
+						-- Determine which currencyID is the one that we're dealing with.
+						for currencyID,results in pairs(app.SearchForFieldContainer("currencyID")) do
+							-- Compare the name of the currency vs the name of the token
+							if #results > 0 and results[1].text == name then
+								if not GameTooltip_SetCurrencyToken then
+									GameTooltip:AddLine(results[1].text or RETRIEVING_DATA, 1, 1, 1);
+								end
+								AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+								if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
+								self:Show();
+								break;
+							end
+						end
+					end
+				end
+			end
 		end
 	end
 end
