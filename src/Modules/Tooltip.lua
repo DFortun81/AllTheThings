@@ -206,6 +206,14 @@ for i,guid in ipairs({
 	"Player-3391-08CFECDE",	-- Palach-Silvermoon EU
 	"Player-3391-0757575C",	-- Sianor-Silvermoon EU
 	"Player-3391-08D25BFA",	-- Smesue-Silvermoon EU
+	-- Danny Donkey
+	"Player-1402-0715EEC6", -- Skadefryden-Turalyon EU
+	"Player-1402-07F49282", -- Lommetjuven-Turalyon EU
+	"Player-1402-0A6F6AEF", -- Allianceelf-Turalyon EU
+	"Player-1402-0A716C0D", -- Allianceorc-Turalyon EU
+	"Player-1402-09D26257", -- Alliancetaur-Turalyon EU
+	"Player-1402-0A72B31C", -- Alliancetusk-Turalyon EU
+	"Player-1402-0A73A911", -- Alliancemate-Turalyon EU
 	--
 }) do
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
