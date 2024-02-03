@@ -865,12 +865,8 @@ local function OnReadyHooks()
 			GameTooltip.SetCurrencyByID = function(self, currencyID, count)
 				GameTooltip_SetCurrencyByID(self, currencyID, count);
 				if CanAttachTooltips() then
-					local cache = SearchForField("currencyID", currencyID);
-					if cache and #cache > 0 then
-						AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
-					else
-						if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
-					end
+					AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+					if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 					self:Show();
 				end
 			end
@@ -884,12 +880,8 @@ local function OnReadyHooks()
 					-- Determine what kind of list data this is. (Blizzard is whack and using this API call for headers too...)
 					local currencyID = select(12, GetCurrencyListInfo(tokenID));
 					if currencyID then
-						local cache = SearchForField("currencyID", currencyID);
-						if cache and #cache > 0 then
-							AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
-						else
-							if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
-						end
+						AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+						if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 						self:Show();
 					end
 				end
