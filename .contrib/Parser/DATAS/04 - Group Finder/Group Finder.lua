@@ -339,12 +339,32 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113786),	-- Smoldercloth Slippers*
 				i(113727),	-- Smoldering Slagstone Ring	— Confirmed by milotic on GitHub on August 24, 2020
 				i(113769),	-- Ravaged Leather Boots*		— 01/18/22
-				i(113705),	-- Ravaged Leather Bracers*
-				i(113698),	-- Ravaged Leather Cap*
+				i(113705, {	-- Ravaged Leather Bracers*
+					["timeline"] = { "removed 7.3.5.25600" },
+					-- #if AFTER 7.3.5
+					["isBounty"] = true,
+					-- #endif
+				}),
+				i(113698, {	-- Ravaged Leather Cap*
+					["timeline"] = { "removed 7.3.5.25600" },
+					-- #if AFTER 7.3.5
+					["isBounty"] = true,
+					-- #endif
+				}),
 				i(113724),	-- Ravaged Leather Gauntlets	— 01/18/22
-				i(113700),	-- Ravaged Leather Helm
+				i(113700, {	-- Ravaged Leather Helm
+					["timeline"] = { "removed 7.3.5.25600" },
+					-- #if AFTER 7.3.5
+					["isBounty"] = true,
+					-- #endif
+				}),
 				i(113712),	-- Ravaged Leather Pants		— 01/18/22
-				i(113768),	-- Ravaged Leather Slippers*
+				i(113768, {	-- Ravaged Leather Slippers*
+					["timeline"] = { "removed 7.3.5.25600" },
+					-- #if AFTER 7.3.5
+					["isBounty"] = true,
+					-- #endif
+				}),
 				i(113706),	-- Ravaged Leather Wristguards*	— 01/18/22
 				i(113774, {	-- Sparkmail Boots
 					["timeline"] = { "removed 7.3.5" },	-- Maybe never added
