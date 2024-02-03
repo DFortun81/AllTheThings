@@ -272,9 +272,6 @@ local classesByKey = setmetatable({}, {
 		rawset(t, key, value);
 	end,
 });
-local ignoredFields = {
-	g = true,
-};
 local function CreateClassInstance(key, id, t)
 	if key then
 		if key == "creatureID" then
@@ -311,20 +308,25 @@ local function CloneClassInstance(object, ignoreChildren)
 		return clone;
 	else
 		-- Clone the object.
-		for k,v in pairs(object) do
-			if not ignoredFields[k] then
-				rawset(clone, k, v);
+		for key,value in pairs(object) do
+			clone[key] = value;
+		end
+		if object.g then
+			if ignoreChildren then
+				clone.g = nil;
+			else
+				clone.g = {};
+				for i,o in ipairs(object.g) do
+					o = CloneClassInstance(o);
+					o.parent = clone;
+					tinsert(clone.g, o);
+				end
 			end
 		end
-		if object.g and not ignoreChildren then
-			clone.g = {};
-			for i,o in ipairs(object.g) do
-				o = CloneClassInstance(o);
-				tinsert(clone.g, o);
-				o.parent = clone;
-			end
-		end
-
+		
+		-- If the object has a metatable, assign that, otherwise try to find it.
+		-- that's the only difference between this function and CloneObject.
+		-- Use CloneObject if you can guarantee that the metatable exists.
 		local meta = getmetatable(object);
 		if meta then
 			setmetatable(clone, meta);
@@ -334,6 +336,23 @@ local function CloneClassInstance(object, ignoreChildren)
 		end
 	end
 end
+local function CloneObject(object)
+	local clone = setmetatable({}, getmetatable(object));
+	for key,value in pairs(object) do
+		clone[key] = value;
+	end
+	if object.g then
+		local g = {};
+		for i,object in ipairs(object.g) do
+			local child = CloneObject(object);
+			child.parent = clone;
+			tinsert(g, child);
+		end
+		clone.g = g;
+	end
+	return clone;
+end
+app.CloneObject = CloneObject;
 app.CloneClassInstance = CloneClassInstance;
 app.CreateClassInstance = CreateClassInstance;
 -- I wish this could just automatically work for any given Class, but the way this is designed

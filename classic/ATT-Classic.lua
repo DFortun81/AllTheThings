@@ -402,22 +402,7 @@ local function BuildSourceTextForDynamicPath(group)
 		return group.hash or group.name or group.text;
 	end
 end
-local function CloneData(group)
-	local clone = setmetatable({}, getmetatable(group));
-	for key,value in pairs(group) do
-		clone[key] = value;
-	end
-	if group.g then
-		local g = {};
-		for i,group in ipairs(group.g) do
-			local child = CloneData(group);
-			child.parent = clone;
-			tinsert(g, child);
-		end
-		clone.g = g;
-	end
-	return clone;
-end
+
 app.IsComplete = function(o)
 	if o.total then return o.total == o.progress; end
 	if o.collectible then return o.collected; end
@@ -2144,7 +2129,7 @@ local function UpdateSearchResults(searchResults)
 end
 app.SearchForLink = SearchForLink;
 
-
+-- TODO: Move the generation of this into Parser
 function app:GetDataCache()
 	if app.Categories then
 		local rootData = setmetatable({
@@ -2618,7 +2603,7 @@ end,
 				for i,o in ipairs(f) do
 					if o.key == "factionID" then
 						if o.maxReputation then
-							r = CloneData(o);
+							r = app.CloneObject(o);
 							r.maxReputation = nil;
 						else
 							r = o;
@@ -2675,7 +2660,7 @@ end,
 						end
 					end
 					if best.maxReputation then
-						best = CloneData(best);
+						best = app.CloneObject(best);
 						best.maxReputation = nil;
 					end
 					tinsert(reps, best);
