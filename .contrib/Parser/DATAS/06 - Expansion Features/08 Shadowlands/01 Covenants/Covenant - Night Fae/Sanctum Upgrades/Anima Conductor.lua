@@ -213,6 +213,7 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 								}),
 								q(62051, {	-- Gormling Toss: Spirit Glen
 									i(184487),	-- Gormling in a Bag (TOY!)
+									i(182600),	-- Gormling in a Bag
 								}),
 							})),
 						}),

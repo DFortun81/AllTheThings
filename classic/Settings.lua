@@ -163,6 +163,7 @@ local TooltipSettingsBase = {
 		["Descriptions"] = true,
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
+		["Enabled:Mod"] = "None",
 		["KnownBy"] = true,
 		["Locations"] = 5,
 		["Lore"] = true,
@@ -682,6 +683,26 @@ settings.UpdateMode = function(self, doRefresh)
 		app:RefreshDataCompletely("UpdateMode");
 	end
 	self:Refresh();
+end
+
+local ModifierFuncs = {
+	["Shift"] = IsShiftKeyDown,
+	["Ctrl"] = IsControlKeyDown,
+	["Alt"] = IsAltKeyDown,
+	["Cmd"] = IsMetaKeyDown,
+}
+settings.GetTooltipSettingWithMod = function(self, setting)
+	-- only returns 'true' for the requested TooltipSetting if the Setting's associated Modifier key is currently being pressed
+	local v = ATTClassicSettings.Tooltips[setting]
+	if not v then return v end
+	local k = ATTClassicSettings.Tooltips[setting..":Mod"]
+	if k == "None" then
+		return v
+	end
+	local func = ModifierFuncs[k]
+	if func and func() then
+		return v
+	end
 end
 
 app.AddEventHandler("OnPlayerLevelUp", function()
@@ -2592,6 +2613,7 @@ local ids = {
 	["factionID"] = "Faction ID",
 	["filterID"] = "Filter ID",
 	["flightPathID"] = "Flight Path ID",
+	["guid"] = L["GUID"],
 	["itemID"] = "Item ID",
 	["itemLevel"] = "Item Level",
 	["itemString"] = "Item String",
@@ -2610,7 +2632,7 @@ local ids = {
 	["titleID"] = "Title ID",
 };
 local last = nil;
-for _,id in pairs({"awp","rwp","achievementID","artID","creatureID","Coordinates","currencyID","Descriptions","displayID","explorationID","factionID","filterID","flightPathID","itemID"}) do
+for _,id in pairs({"awp","rwp","achievementID","artID","creatureID","Coordinates","currencyID","Descriptions","displayID","explorationID","factionID","filterID","flightPathID","guid","itemID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
@@ -2647,7 +2669,7 @@ end
 -- This creates the "Main List Scale" slider.
 local MainListScaleSlider = CreateFrame("Slider", "ATTMainListScaleSlider", settings, "OptionsSliderTemplate");
 MainListScaleSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
-MainListScaleSlider:SetPoint("TOP", ShowRaceRequirementsCheckBox, "BOTTOM", 0, 0);
+MainListScaleSlider:SetPoint("TOP", ShowRaceRequirementsCheckBox, "BOTTOM", 0, -10);
 tinsert(settings.MostRecentTab.objects, MainListScaleSlider);
 settings.MainListScaleSlider = MainListScaleSlider;
 MainListScaleSlider.currentValue = 0;

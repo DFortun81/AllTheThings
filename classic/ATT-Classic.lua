@@ -11134,3 +11134,5 @@ app.events.VARIABLES_LOADED = function()
 		app.IsReady = true;
 	end);
 end
+
+app.HandleEvent("OnLoad")
