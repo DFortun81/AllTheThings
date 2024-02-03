@@ -1,12 +1,13 @@
 -- App locals
 local appName, app = ...;
-local isReady = false;
+local isReady = true;
 if not isReady then
 	return;
 end
 
 local contains = app.contains;
 local AssignChildren, CloneClassInstance, CloneReference = app.AssignChildren, app.CloneClassInstance, app.CloneReference;
+local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
 local IsQuestFlaggedCompleted, IsQuestReadyForTurnIn = app.IsQuestFlaggedCompleted, app.IsQuestReadyForTurnIn;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local Colorize = app.Modules.Color.Colorize;
@@ -21,6 +22,7 @@ local GetProgressTextForTooltip = app.GetProgressTextForTooltip;
 local GetRelativeValue = app.GetRelativeValue;
 local SearchForField = app.SearchForField;
 local MergeObject = app.MergeObject;
+local MergeObjects = app.MergeObjects;
 local L = app.L;
 
 -- Global locals
@@ -292,6 +294,26 @@ local function CalculateRowIndicatorTexture(group)
 	end
 	return group.e and L["UNOBTAINABLE_ITEM_TEXTURES"][app.Modules.Events.FilterIsEventActive(group) and 5 or 4];
 end
+local function ExpandGroupsRecursively(group, expanded, manual)
+	if group.g and (not group.itemID or manual) then
+		group.expanded = expanded;
+		for i, subgroup in ipairs(group.g) do
+			ExpandGroupsRecursively(subgroup, expanded, manual);
+		end
+	end
+end
+local function HasExpandedSubgroup(group)
+	-- Returns true if any subgroup of the provided group is currently expanded, otherwise nil
+	if group and group.g then
+		for _,subgroup in ipairs(group.g) do
+			-- dont need recursion since a group has to be expanded for a subgroup to be visible within it
+			if subgroup.expanded then
+				return true;
+			end
+		end
+	end
+end
+app.ExpandGroupsRecursively = ExpandGroupsRecursively;
 
 local SetPortraitTexture = _G["SetPortraitTexture"];
 local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
@@ -795,8 +817,8 @@ local function RowOnEnter(self)
 				local link = reference.link;
 				if link then
 					pcall(GameTooltip.SetHyperlink, GameTooltip, link);
-					local spellID = reference.spellID;
-					if spellID then AttachTooltipSearchResults(GameTooltip, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID); end
+					--local spellID = reference.spellID;
+					--if spellID then AttachTooltipSearchResults(GameTooltip, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID); end
 				end
 			end
 		end
@@ -1070,14 +1092,14 @@ local function RowOnEnter(self)
 			end
 			local awp, rwp = GetRelativeValue(reference, "awp"), reference.rwp;
 			if rwp then
-				local rwpString = GetRemovedWithPatchString(rwp);
+				local rwpString = app.GetRemovedWithPatchString(rwp);
 				if not linesByText[rwpString] and app.Settings:GetTooltipSetting("rwp") then
 					local _,r,g,b = HexToARGB(app.Colors.RemovedWithPatch);
 					GameTooltip:AddLine(rwpString, r, g, b, 1);
 				end
 			end
 			if awp and ((rwp or (reference.u and reference.u < 3)) or awp >= app.GameBuildVersion) then
-				local awpString = GetAddedWithPatchString(awp, awp and rwp and awp > rwp);
+				local awpString = app.GetAddedWithPatchString(awp, awp and rwp and awp > rwp);
 				if awpString and not linesByText[awpString] then
 					if app.Settings:GetTooltipSetting("awp") then
 						local _,r,g,b = HexToARGB(app.Colors.AddedWithPatch);
