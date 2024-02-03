@@ -17433,7 +17433,8 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 								-- or if it is repeatable (i.e. one attempt per day/week/year)
 								questObject.repeatable or
 								-- or if it has time remaining
-								(questObject.timeRemaining or 0 > 0) then
+								(questObject.timeRemaining or 0 > 0)
+							then
 								-- if mapID == 1355 then
 									-- app.PrintDebug("WQ",questObject.questID);
 								-- end
@@ -17464,7 +17465,8 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 								-- or if it is repeatable (i.e. one attempt per day/week/year)
 								questObject.repeatable or
 								-- or if it has time remaining
-								(questObject.timeRemaining or 0 > 0) then
+								(questObject.timeRemaining or 0 > 0)
+							then
 								NestObject(mapObject, questObject);
 								-- see if need to retry based on missing data
 								-- if not self.retry and questObject.missingData then self.retry = true; end
@@ -17487,11 +17489,9 @@ customWindowUpdates["WorldQuests"] = function(self, force, got)
 				for _,questID in ipairs(repeatables) do
 					questObject = GetPopulatedQuestObject(questID)
 					if self.includeAll or
-						-- not saved
-						questObject.repeatable then
-						-- if mapID == 1355 then
-							-- app.PrintDebug("WQ",questObject.questID);
-						-- end
+						-- Account/Debug or not saved
+						(app.MODE_DEBUG_OR_ACCOUNT or not questObject.saved)
+					then
 						NestObject(mapObject, questObject);
 						-- see if need to retry based on missing data
 						-- if not self.retry and questObject.missingData then self.retry = true; end
