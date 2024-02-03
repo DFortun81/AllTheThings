@@ -190,6 +190,9 @@ for i,guid in ipairs({
 	"Player-1099-079DE2A4",	-- Au-Rexxar EU
 	-- Jen
 	"Player-71-08BBE4FE",	-- Jenstonedart-AlteracMountains US
+	-- ShadowBrooks
+	"Player-125-0456132C",	-- Shadowhunts-ShadowCouncil US
+	"Player-125-0A2697D6",	-- ShadowBrooks-ShadowCouncil US
 }) do
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
