@@ -128,10 +128,11 @@ tooltipFunction = function(self, target)
 	end
 end
 for i,guid in ipairs({
+	-- Want to add your character too? 	Type '/dump UnitGUID("player")' ingame and add the number you receive here.
 	-- Crieve
 	"Player-3683-0A7D919A",	-- Retrieve (Crieve's Alt for Testing) US
 	-- Myrhial
-	"Player-3702-0A125B62",	-- Xynara-ArgentDawn EU
+	"Player-3702-0A145B62",	-- Xynara-ArgentDawn EU
 	-- Tag
 	"Player-1091-04F6F553",	-- Tag-Bloodscalp EU
 	"Player-1091-0A9BC8B5",	-- Teleportag-Bloodscalp EU
@@ -172,7 +173,23 @@ for i,guid in ipairs({
 	-- Dead Serious
 	"Player-1305-08781C8A", -- Vultheus-Kazzak EU
 	"Player-1305-07A1A502", -- Krulgore-Kazzak EU
-	--
+	-- Molkree
+	"Player-1396-08C42356", -- Molkree-AzjolNerub EU
+	-- AlexSoft
+	"Player-3391-0C397003", -- Solitudo-Silvermoon EU
+	"Player-1614-09A3116A",	-- Бонпаль-Galakrond EU
+	"Player-1602-0A45D435", -- Энисофт-Gordunni EU
+	-- Gold
+	"Player-3679-0B1F96DB",	-- Gold-Aegwynn EU
+	"Player-1099-060EE8FF",	-- Saremy-Alleria EU
+	"Player-1099-060ECE9F",	-- Kuscheln-Alleria EU
+	"Player-1099-07F114C1",	-- Seramy-Alleria EU
+	"Player-1099-0609FC3A",	-- Ymeras-Alleria EU
+	"Player-1099-085BA2C7",	-- Auu-Alleria EU
+	"Player-3679-0C2DEF7A",	-- Goldqt-Aegwynn EU
+	"Player-1099-079DE2A4",	-- Au-Rexxar EU
+	-- Jen
+	"Player-71-08BBE4FE",	-- Jenstonedart-AlteracMountains US
 }) do
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
@@ -450,7 +467,7 @@ if TooltipDataProcessor then
 		end
 	end
 	]]--
-	
+
 	local function AttachTooltip(self, ttdata)
 		if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
 
@@ -670,7 +687,7 @@ else
 		if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
 		if not self.AllTheThingsProcessing then
 			self.AllTheThingsProcessing = true;
-			
+
 			-- Does this tooltip have an OnClear attached for ATT since it can handle content which ATT will attach to?
 			if not self.AllTheThingsOnTooltipClearedHook then
 				local tooltipName = self:GetName();
@@ -684,7 +701,7 @@ else
 					self.AllTheThingsIgnored = true;
 				end
 			end
-			
+
 			local numLines = self:NumLines();
 			if numLines > 0 then
 				--[[--
@@ -731,7 +748,7 @@ else
 							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npcID)); end
 							AttachTooltipSearchResults(self, 1, "creatureID:" .. npcID, SearchForField, "creatureID", tonumber(npcID));
 						end
-						
+
 						return true;
 					end
 				end
@@ -803,7 +820,7 @@ else
 		ItemRefTooltip:HookScript("OnShow", AttachTooltip);
 		ItemRefShoppingTooltip1:HookScript("OnShow", AttachTooltip);
 		ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
-		
+
 		if WorldMapTooltip then
 			WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 			WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetItem", AttachTooltip);
@@ -812,7 +829,7 @@ else
 			WorldMapTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 			WorldMapTooltip:HookScript("OnShow", AttachTooltip);
 		end
-		
+
 		local GameTooltip_SetLFGDungeonReward = GameTooltip.SetLFGDungeonReward;
 		if GameTooltip_SetLFGDungeonReward then
 			GameTooltip.SetLFGDungeonReward = function(self, dungeonID, rewardIndex)
@@ -831,7 +848,7 @@ else
 				end
 			end
 		end
-		
+
 		local GameTooltip_SetLFGDungeonShortageReward = GameTooltip.SetLFGDungeonShortageReward;
 		if GameTooltip_SetLFGDungeonShortageReward then
 			GameTooltip.SetLFGDungeonShortageReward = function(self, dungeonID, shortageSeverity, lootIndex)
@@ -851,7 +868,7 @@ else
 				end
 			end
 		end
-		
+
 		local GameTooltip_SetCurrencyByID = GameTooltip.SetCurrencyByID;
 		if GameTooltip_SetCurrencyByID then
 			GameTooltip.SetCurrencyByID = function(self, currencyID, count)
@@ -863,7 +880,7 @@ else
 				end
 			end
 		end
-		
+
 		local GameTooltip_SetCurrencyToken = GameTooltip.SetCurrencyToken;
 		if GameTooltip_SetCurrencyToken then
 			GameTooltip.SetCurrencyToken = function(self, tokenID)
@@ -879,7 +896,7 @@ else
 				end
 			end
 		end
-		
+
 		-- Wrath has a really dumb thing that pulses tooltip updates.
 		if app.IsClassic and app.GameBuildVersion > 11403 then
 			app:RegisterEvent("CURSOR_CHANGED");

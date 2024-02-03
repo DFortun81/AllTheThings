@@ -469,7 +469,7 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 		L.BACKGROUND_TOOLTIP = "Установка фонового цвета для всех окон ATT.";
 		L.BORDER = "Рамка";
 		L.BORDER_TOOLTIP = "Установка цвета рамки для всех окон ATT.";
-		--TODO: L.RESET_TOOLTIP = "Revert to default settings.";
+		L.RESET_TOOLTIP = "Сбросить к настройкам по умолчанию.";
 		L.CLASS_BORDER = "Использовать цвет класса для рамки";
 		L.CLASS_BORDER_TOOLTIP = "Использовать цвет вашего класса для рамки. Цвет также обновляется, когда Вы на другом классе.";
 
@@ -518,8 +518,8 @@ local ACC_WIDE_DEFAULT = "Отслеживается на "..app.ccColors.Accoun
 		L.CHAT_COMMANDS_TEXT = "/att |cffFFFFFFили|R /things |cffFFFFFFиои|R /allthethings\n|cffFFFFFFОткрыть Главный Список.\n\n|R/att mini |cffFFFFFFиои|R /attmini\n|cffFFFFFFОткрыть Мини Список.\n\n|R/att bounty\n|cffFFFFFFОткрыть список забагованных или неподтверждённых предметов.\n\n|R/att ra |cffFFFFFFили|R /attra\n|cffFFFFFFОткрыть Рейдовый Помощник.\n\n|R/att wq |cffFFFFFFили|R /attwq\n|cffFFFFFFОткрыть Список Локальных Заданий.\n\n|R/att item:1234 |cffFFFFFFили|R /att [Ссылка на Предмет]\n|cffFFFFFFОткрыть окно общих моделей. Также работает с другими Штучками, например, |R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF или |Rrecipeid:1234|cffFFFFFF.\n\n|R/att rwp\n|cffFFFFFFПоказать все Штучки, которые будет невозможно получить в будущем.\n\n|R/att nwp\n|cffFFFFFFПоказать все Штучки, добавленные в последнем патче.\n\n|R/att random |cffFFFFFFили|R /attrandom |cffFFFFFFили|R /attran\n|cffFFFFFFОткрыть Случайный Список.\n\n|R/att unsorted\n|cffFFFFFFОткрыть список несортированных Штучек. Лучше в Режиме Отладки.\n\n|R/rl\n|cffFFFFFFПерезагрузить интерфейс WoW.|R";
 
 	-- Accessibility tab
-		--TODO: L.COLORS_ICONS = "Colors and Icons";
-		--TODO: L.LOCKED_QUESTS = "Locked quests";
+		L.COLORS_ICONS = "Цвета и Иконки";
+		L.LOCKED_QUESTS = "Ограниченные задания";
 
 	-- Profiles tab
 		L.PROFILES_PAGE = "Профили";
@@ -744,7 +744,7 @@ for key,value in pairs({
 		-- #if BEFORE BFA
 		-- [41] = {1, "|CFFFF0000Это доступно только игрокам, которые завершили соответствующие испытания артефактов Башни магов и получили базовый внешний вид.|r", "Появления в Башне Магов"},
 		-- #endif
-		[45] = {1, "|CFFFF0000Изменения добычи Blizzard сломали несколько предметов и сделали их недоступными. Накидка Дома Дворян / Теплый плащ Империи Гурубаши (обе награды Эмиссара BfA), Огом Манглер, награды с миссий WoD и некоторый лут с Героического Режима Ульдуара в настоящее время сломаны, и их необходимо починить.|r", "Сломанная добыча"},
+		[45] = {1, "|CFFFF0000Изменения добычи Blizzard сломали несколько предметов и сделали их недоступными. Огом Манглер в настоящее время сломан, и его необходимо починить.|r", "Сломанная добыча"},
 })
 do a[key] = value; end
 

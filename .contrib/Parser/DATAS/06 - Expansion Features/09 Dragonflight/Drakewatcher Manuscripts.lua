@@ -1133,12 +1133,9 @@ root(ROOTS.ExpansionFeatures, tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_
 		}, {
 			i(211812),	-- Renewed Proto-Drake: Love Armor
 		})),
-		header(HEADERS.Item, 204361, sharedData({	-- Winding Slitherdrake
-			["description"] = "If you find this item. Please report to ATT-Discord. This item has yet to be found.",
-			["timeline"] = { CREATED_10_2_5 },
-		}, {
-			i(211868),	-- Winding Slitherdrake: Lunar Festival Armor
-		})),
+		header(HEADERS.Item, 204361, {	-- Winding Slitherdrake
+			applyevent(EVENTS.LUNAR_FESTIVAL, i(211868)),	-- Winding Slitherdrake: Lunar Festival Armor (DM!)
+		}),
 	})),
 })));
 

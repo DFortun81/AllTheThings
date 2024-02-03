@@ -1324,7 +1324,7 @@ local L = {
 		-- #if BEFORE BFA
 		--[41] = {1, "|CFFFF0000This is only available to players that completed the associated Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances"},
 		-- #endif
-		[45] = {1, "|CFFFF0000Blizzard's Loot changes broke several Items and made them Unobtainable.\nOgom the Mangler is currently broken and needs to be fixed.|r", "Broken Loot"},
+		[45] = {1, "|CFFFF0000Blizzard's loot changes broke several items and made them unobtainable.|r", "Broken Loot"},
 	};
 
 	["CUSTOM_COLLECTS_REASONS"] = {
