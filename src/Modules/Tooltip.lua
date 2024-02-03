@@ -526,7 +526,6 @@ local function AttachTooltip(self, ttdata)
 	end
 
 	if id and app.Debugging then
-		self:AddDoubleLine("UID",id)
 		local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",id);
 		if spawn_uid then
 			local spawnEpoch = GetServerTime() - (GetServerTime() % 2^23)
