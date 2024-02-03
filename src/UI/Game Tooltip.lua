@@ -2,8 +2,8 @@
 local appName, app = ...;
 
 -- Global locals
-local pairs, tinsert, math_floor, pi, MODELFRAME_DEFAULT_ROTATION
-	= pairs, tinsert, math.floor, math.pi, MODELFRAME_DEFAULT_ROTATION;
+local pairs, ipairs, tinsert, math_floor, tonumber, pi, MODELFRAME_DEFAULT_ROTATION
+	= pairs, ipairs, tinsert, math.floor, tonumber, math.pi, MODELFRAME_DEFAULT_ROTATION;
 local GameTooltip = GameTooltip;
 
 -- Support for Artifact Appearances
@@ -226,7 +226,7 @@ local function TrySetModel(reference)
 			end
 		end
 
-		local displayID = reference.displayID or reference.modelID;
+		local displayID = AllowedDisplayID[reference.displayID] or reference.modelID;
 		if displayID then
 			GameTooltipModel.Model:SetFacing(CalculateModelRotation(reference.modelRotation));
 			GameTooltipModel.Model:SetCamDistanceScale(reference.modelScale or 1);
