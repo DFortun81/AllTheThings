@@ -810,6 +810,28 @@ local function OnReadyHooks()
 		ItemRefTooltip:HookScript("OnShow", AttachTooltip);
 		ItemRefShoppingTooltip1:HookScript("OnShow", AttachTooltip);
 		ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
+		
+		if WorldMapTooltip then
+			WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
+			WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetItem", AttachTooltip);
+			WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
+			WorldMapTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
+			WorldMapTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
+			WorldMapTooltip:HookScript("OnShow", AttachTooltip);
+		end
+	end
+end
+
+-- Wrath has a really dumb thing that pulses tooltip updates.
+if app.IsClassic and app.GameBuildVersion > 11403 then
+	app:RegisterEvent("CURSOR_CHANGED");
+	app.events.CURSOR_CHANGED = function()
+		app:StartATTCoroutine("UpdateTooltip", function()
+			while not GameTooltip:IsShown() do
+				coroutine.yield();
+			end
+			AttachTooltip(GameTooltip);
+		end);
 	end
 end
 
@@ -831,3 +853,91 @@ end)
 app.AddEventHandler("OnReady", function()
 	OnReadyHooks();
 end)
+
+-- TODO: This is referenced in addon database code in classic, refactor this.
+-- Don't worry about optimizing it for now.
+local function ShowItemCompareTooltips(...)
+	local items = { ... };
+	local count = #items;
+	if count > 0 then
+		for i,item in ipairs(items) do
+			local shoppingTooltip = GameTooltip.shoppingTooltips[i];
+			if shoppingTooltip then
+				shoppingTooltip.attItem = type(item) == "number" and select(2, GetItemInfo(item)) or item;
+				pcall(shoppingTooltip.SetHyperlink, shoppingTooltip, shoppingTooltip.attItem);
+			else
+				break;
+			end
+		end
+
+		-- Quick maths
+		-- Taken from https://github.com/Ennie/wow-ui-source/blob/master/FrameXML/GameTooltip.lua
+		local shoppingTooltip1, shoppingTooltip2, shoppingTooltip3 = unpack(GameTooltip.shoppingTooltips);
+		local leftPos, rightPos = (GameTooltip:GetLeft() or 0), (GameTooltip:GetRight() or 0);
+		if GetScreenWidth() - rightPos < leftPos then
+			side = "left";
+		else
+			side = "right";
+		end
+
+		-- see if we should slide the tooltip
+		local anchorType = GameTooltip:GetAnchorType();
+		if anchorType and anchorType ~= "ANCHOR_PRESERVE" then
+			local totalWidth = shoppingTooltip1:GetWidth();
+			if count > 1 then totalWidth = totalWidth + shoppingTooltip2:GetWidth(); end
+			if count > 2 then totalWidth = totalWidth + shoppingTooltip3:GetWidth(); end
+			if ( (side == "left") and (totalWidth > leftPos) ) then
+				GameTooltip:SetAnchorType(anchorType, (totalWidth - leftPos), 0);
+			elseif ( (side == "right") and (rightPos + totalWidth) >  GetScreenWidth() ) then
+				GameTooltip:SetAnchorType(anchorType, -((rightPos + totalWidth) - GetScreenWidth()), 0);
+			end
+		end
+
+		-- anchor the compare tooltips
+		if count > 2 then
+			shoppingTooltip3:SetOwner(GameTooltip, "ANCHOR_NONE");
+			shoppingTooltip3:ClearAllPoints();
+			if side == "left" then
+				shoppingTooltip3:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, -10);
+			else
+				shoppingTooltip3:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, -10);
+			end
+			pcall(shoppingTooltip3.SetHyperlink, shoppingTooltip3, shoppingTooltip3.attItem);
+			shoppingTooltip3:Show();
+			shoppingTooltip1:SetOwner(shoppingTooltip3, "ANCHOR_NONE");
+		else
+			shoppingTooltip1:SetOwner(GameTooltip, "ANCHOR_NONE");
+		end
+		shoppingTooltip1:ClearAllPoints();
+		if side == "left" then
+			if count > 2 then
+				shoppingTooltip1:SetPoint("TOPRIGHT", shoppingTooltip3, "TOPLEFT", 0, 0);
+			else
+				shoppingTooltip1:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, -10);
+			end
+		else
+			if count > 2 then
+				shoppingTooltip1:SetPoint("TOPLEFT", shoppingTooltip3, "TOPRIGHT", 0, 0);
+			else
+				shoppingTooltip1:SetPoint("TOPLEFT", GameTooltip, "TOPRIGHT", 0, -10);
+			end
+		end
+		pcall(shoppingTooltip1.SetHyperlink, shoppingTooltip1, shoppingTooltip1.attItem);
+		shoppingTooltip1:Show();
+
+		if count > 1 then
+			shoppingTooltip2:SetOwner(shoppingTooltip1, "ANCHOR_NONE");
+			shoppingTooltip2:ClearAllPoints();
+			if side == "left" then
+				shoppingTooltip2:SetPoint("TOPRIGHT", shoppingTooltip1, "TOPLEFT", 0, 0);
+			else
+				shoppingTooltip2:SetPoint("TOPLEFT", shoppingTooltip1, "TOPRIGHT", 0, 0);
+			end
+			pcall(shoppingTooltip2.SetHyperlink, shoppingTooltip2, shoppingTooltip2.attItem);
+			shoppingTooltip2:Show();
+		end
+
+		return shoppingTooltip1, shoppingTooltip2, shoppingTooltip3;
+	end
+end
+app.ShowItemCompareTooltips = ShowItemCompareTooltips;
