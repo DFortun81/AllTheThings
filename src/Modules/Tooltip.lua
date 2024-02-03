@@ -174,6 +174,9 @@ for i,guid in ipairs({
 	"Player-1305-07A1A502", -- Krulgore-Kazzak EU
 	-- Molkree
 	"Player-1396-08C42356", -- Molkree-AzjolNerub EU
+	-- AlexSoft
+	"Player-3391-0C397003", -- Solitudo-Silvermoon EU
+	"Player-1602-0A45D435", -- Энисофт-Gordunni EU
 	--
 }) do
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
