@@ -2846,7 +2846,6 @@ root(ROOTS.Unsorted, {
 				i(173534),	-- Gormherd Branch
 				i(172955),	-- Gormherd Branch
 				i(174645),	-- Gormherd Branch
-				i(182600),	-- Gormling in a Bag
 				i(181284),	-- Gormling in a Bag
 				i(173910),	-- Gracepetal Incense Burner
 				i(173704),	-- Granary Jug
