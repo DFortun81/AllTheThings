@@ -6,8 +6,8 @@ local _, app = ...;
 -- Encapsulates the functionality for interacting with and hooking into game Tooltips
 
 -- Global locals
-local rawget, ipairs, pairs, TooltipUtil, Enum_TooltipDataType, InCombatLockdown, pcall, strsplit, tostring, tonumber, tinsert, C_Map_GetPlayerMapPosition, math_sqrt, GetItemInfoInstant
-	= rawget, ipairs, pairs, TooltipUtil, Enum.TooltipDataType, InCombatLockdown, pcall, strsplit, tostring, tonumber, tinsert, C_Map.GetPlayerMapPosition, math.sqrt, GetItemInfoInstant
+local rawget, ipairs, pairs, TooltipUtil, Enum_TooltipDataType, InCombatLockdown, pcall, strsplit, tostring, tonumber, tinsert, C_Map_GetPlayerMapPosition, math_sqrt, GameTooltip, GetItemInfoInstant
+	= rawget, ipairs, pairs, TooltipUtil, Enum.TooltipDataType, InCombatLockdown, pcall, strsplit, tostring, tonumber, tinsert, C_Map.GetPlayerMapPosition, math.sqrt, GameTooltip, GetItemInfoInstant
 
 -- App locals
 local SearchForField = app.SearchForField;
@@ -15,12 +15,7 @@ local SearchForField = app.SearchForField;
 -- Module locals (can be set via OnReady if they do not change during Session but are not yet defined)
 local GetCachedSearchResults, SearchForLink, L, GetCurrentMapID
 
--- Helper Functions (TODO: Define these somewhere and cache locally)
-local function distance( x1, y1, x2, y2 )
-	return math_sqrt( (x2-x1)^2 + (y2-y1)^2 )
-end
-
--- Build the Object Name Cache
+-- Object Name Lookups
 local objectNamesToIDs = {};
 local function OnLoad_CacheObjectNames()
 	local o
@@ -34,10 +29,12 @@ local function OnLoad_CacheObjectNames()
 		end
 	end
 end
-
--- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
--- then correlate those search results by closest distance to the player's current position
+local function distance( x1, y1, x2, y2 )
+	return math_sqrt( (x2-x1)^2 + (y2-y1)^2 )
+end
 local function GetBestObjectIDForName(name)
+	-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
+	-- then correlate those search results by closest distance to the player's current position
 	local o = objectNamesToIDs[name];
 	if o and #o > 0 then
 		local mapID = GetCurrentMapID();
@@ -73,6 +70,7 @@ local function GetBestObjectIDForName(name)
 			end
 			return closestObjectID;
 		end
+		return o[1];	-- Some instances don't return a valid position, but can still contain objects.
 	end
 end
 
@@ -119,7 +117,7 @@ local HookableTooltips = {
 	["NotGameTooltip0123"]=1,
 };
 
--- Tooltip Functions
+-- Player Tooltip Functions
 local PLAYER_TOOLTIPS = {
 	["Player-4647-031D0890"] = function(self, target)
 		local leftSide = _G[self:GetName() .. "TextLeft1"];
@@ -218,7 +216,6 @@ for i,guid in ipairs({
 }) do
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
-
 
 -- EXTERMINATOR GUIDs
 tooltipFunction = function(self, target)
@@ -668,124 +665,44 @@ end
 ]]--
 
 local function OnReadyHooks()
-	local GameTooltip_SetLFGDungeonShortageReward = GameTooltip.SetLFGDungeonShortageReward;
-	GameTooltip.SetLFGDungeonShortageReward = function(self, dungeonID, shortageSeverity, lootIndex)
-		app.PrintDebug("GameTooltip.SetLFGDungeonShortageReward",dungeonID, shortageSeverity, lootIndex );
-		-- Only call to the base functionality if it is unknown.
-		GameTooltip_SetLFGDungeonShortageReward(self, dungeonID, shortageSeverity, lootIndex);
-		if CanAttachTooltips() then
-			local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonShortageRewardInfo(dungeonID, shortageSeverity, lootIndex);
-			if itemID then
-				if spec == "item" then
-					AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
-					self:Show();
-				elseif spec == "currency" then
-					AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
-					self:Show();
+	local GameTooltip_SetLFGDungeonReward = GameTooltip.SetLFGDungeonReward;
+	if GameTooltip_SetLFGDungeonReward then
+		GameTooltip.SetLFGDungeonReward = function(self, dungeonID, rewardIndex)
+			GameTooltip_SetLFGDungeonReward(self, dungeonID, rewardIndex);
+			if CanAttachTooltips() then
+				local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
+				if itemID then
+					if spec == "item" then
+						AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
+						self:Show();
+					elseif spec == "currency" then
+						AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
+						self:Show();
+					end
 				end
 			end
 		end
 	end
 
-	-- Paragon Hook
-	-- local paragonCacheID = {
-		-- Paragon Cache Rewards
-		-- [QuestID] = [ItemCacheID"]	-- Faction // Quest Title
-		-- [54454] = 166300,	-- 7th Legion // Supplies from the 7th Legion
-		-- [48976] = 152922,	-- Argussian Reach // Paragon of the Argussian Reach
-		-- [46777] = 152108,	-- Armies of Legionfall // The Bounties of Legionfall
-		-- [48977] = 152923,	-- Army of the Light // Paragon of the Army of the Light
-		-- [54453] = 166298,	-- Champions of Azeroth // Supplies from Magni
-		-- [46745] = 152102,	-- Court of Farondis // Supplies from the Court
-		-- [46747] = 152103,	-- Dreamweavers // Supplies from the Dreamweavers
-		-- [46743] = 152104,	-- Highmountain Tribes // Supplies from Highmountain
-		-- [54455] = 166299,	-- Honorbound // Supplies from the Honorbound
-		-- [54456] = 166297,	-- Order of Embers // Supplies from the Order of Embers
-		-- [54458] = 166295,	-- Proudmoore Admiralty // Supplies from the Proudmoore Admiralty
-		-- [54457] = 166294,	-- Storm's Wake // Supplies from Storm's Wake
-		-- [54460] = 166282,	-- Talanji's Expedition // Supplies from Talanji's Expedition
-		-- [46748] = 152105,	-- The Nightfallen // Supplies from the Nightfallen
-		-- [46749] = 152107,	-- The Wardens // Supplies from the Wardens
-		-- [54451] = 166245,	-- Tortollan Seekers // Baubles from the Seekers
-		-- [46746] = 152106,	-- Valarjar // Supplies from the Valarjar
-		-- [54461] = 166290,	-- Voldunai // Supplies from the Voldunai
-		-- [54462] = 166292,	-- Zandalari Empire // Supplies from the Zandalari Empire
-		-- [55976] = 169939,	-- Waveblade Ankoan // Supplies From the Waveblade Ankoan
-		-- [53982] = 169940,	-- Unshackled // Supplies From The Unshackled
-		-- [55348] = 170061,	-- Rustbolt // Supplies from the Rustbolt Resistance
-		-- [58096] = 174483,	-- Rajani // Supplies from the Rajani
-		-- [58097] = 174484,	-- Uldum Accord // Supplies from the Uldum Accord
-		-- [61095] = 180646,	-- Undying Army // Supplies from The Undying Army
-		-- [61098] = 180649,	-- Wild Hunt // Supplies from The Wild Hunt
-		-- [61100] = 180648,	-- Court of Harvesters // Supplies from the Court of Harvesters
-		-- [61097] = 180647,	-- The Ascended // Supplies from The Ascended
-	-- };
-	-- hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
-		-- print("ReputationParagonFrame_SetupParagonTooltip")
-		-- Let's make sure the user isn't in combat and if they are do they have In Combat turned on.  Finally check to see if Tootltips are turned on.
-		-- if CanAttachTooltips() then
-			-- Source: //Interface//FrameXML//ReputationFrame.lua Line 360
-			-- Using hooksecurefunc because of how Blizzard coded the frame.  Couldn't get GameTooltip to work like the above ones.
-			-- //Interface//FrameXML//ReputationFrame.lua Segment code
-			--[[
-				function ReputationParagonFrame_SetupParagonTooltip(frame)
-					EmbeddedItemTooltip.owner = frame;
-					EmbeddedItemTooltip.factionID = frame.factionID;
-
-					local factionName, _, standingID = GetFactionInfoByID(frame.factionID);
-					local gender = UnitSex("player");
-					local factionStandingtext = GetText("FACTION_STANDING_LABEL"..standingID, gender);
-					local currentValue, threshold, rewardQuestID, hasRewardPending, tooLowLevelForParagon = C_Reputation.GetFactionParagonInfo(frame.factionID);
-
-					if ( tooLowLevelForParagon ) then
-						EmbeddedItemTooltip:SetText(PARAGON_REPUTATION_TOOLTIP_TEXT_LOW_LEVEL);
-					else
-						EmbeddedItemTooltip:SetText(factionStandingtext);
-						local description = PARAGON_REPUTATION_TOOLTIP_TEXT:format(factionName);
-						if ( hasRewardPending ) then
-							local questIndex = GetQuestLogIndexByID(rewardQuestID);
-							local text = GetQuestLogCompletionText(questIndex);
-							if ( text and text ~= "" ) then
-								description = text;
-							end
-						end
-						EmbeddedItemTooltip:AddLine(description, HIGHLIGHT_FONT_COLOR.r, HIGHLIGHT_FONT_COLOR.g, HIGHLIGHT_FONT_COLOR.b, 1);
-						if ( not hasRewardPending ) then
-							local value = mod(currentValue, threshold);
-							-- show overflow if reward is pending
-							if ( hasRewardPending ) then
-								value = value + threshold;
-							end
-							GameTooltip_ShowProgressBar(EmbeddedItemTooltip, 0, threshold, value, REPUTATION_PROGRESS_FORMAT:format(value, threshold));
-						end
-						GameTooltip_AddQuestRewardsToTooltip(EmbeddedItemTooltip, rewardQuestID);
+	local GameTooltip_SetLFGDungeonShortageReward = GameTooltip.SetLFGDungeonShortageReward;
+	if GameTooltip_SetLFGDungeonShortageReward then
+		GameTooltip.SetLFGDungeonShortageReward = function(self, dungeonID, shortageSeverity, lootIndex)
+			--app.PrintDebug("GameTooltip.SetLFGDungeonShortageReward",dungeonID, shortageSeverity, lootIndex );
+			GameTooltip_SetLFGDungeonShortageReward(self, dungeonID, shortageSeverity, lootIndex);
+			if CanAttachTooltips() then
+				local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonShortageRewardInfo(dungeonID, shortageSeverity, lootIndex);
+				if itemID then
+					if spec == "item" then
+						AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
+						self:Show();
+					elseif spec == "currency" then
+						AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
+						self:Show();
 					end
-					EmbeddedItemTooltip:Show();
 				end
-			--]]
-			-- local paragonQuestID = select(3, C_Reputation.GetFactionParagonInfo(frame.factionID));
-			-- print("info",frame.factionID,paragonQuestID,C_Reputation.GetFactionParagonInfo(frame.factionID))
-			-- if paragonQuestID then
-			-- 	local itemID = paragonCacheID[paragonQuestID];
-			-- 	print("itemID",itemID)
-			-- 	if itemID then
-			-- 		local link = select(2, GetItemInfo(itemID));
-			-- 		print("link",link)
-			-- 		if link then
-			-- 			-- Attach tooltip to the Paragon Frame
-			-- 			-- GameTooltip:SetOwner(EmbeddedItemTooltip, "ANCHOR_NONE")
-			-- 			-- GameTooltip:SetPoint("TOPLEFT", EmbeddedItemTooltip, "TOPRIGHT");
-			-- 			GameTooltip:SetHyperlink(link);
-			-- 		end
-			-- 	end
-			-- end
-	-- 	end
-	-- end);
-
-	-- Hide Paragon Tooltip when cleared
-	-- hooksecurefunc("ReputationParagonFrame_OnLeave",function(self)
-	-- 	GameTooltip:Hide();
-	-- end);
+			end
+		end
+	end
 
 	-- 10.0.2
 	-- https://wowpedia.fandom.com/wiki/Patch_10.0.2/API_changes#Tooltip_Changes
