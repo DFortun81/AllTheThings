@@ -772,7 +772,7 @@ for key,value in pairs({
 	[15] = {1, "|CFFFF0000这不能永久收集、学习或用于幻化。|r", "不可学"},
 	[35] = {3, "|CFFFF0000这被锁定在付费墙后面，例如游戏内商店、另一个暴雪产品或战友招募服务。|r", "暴雪礼品卡"},
 	[38] = {1, "|CFFFF0000这仅适用于在《熊猫人之谜》或通过黑市拍卖行完成传奇披风任务链的玩家。|r", "斡耳朵斯 - 传奇披风"},
-	[45] = {1, "|CFFFF0000暴雪的拾取更改损坏了几件物品，使其无法获得。\n“绞肉机”奥戈姆，和奥杜尔英雄模式物品目前已损坏，需要修复。|r", "拾取损坏"},	--TODO: |CFFFF0000Blizzard's Loot changes broke several Items and made them Unobtainable.\nOgom the Mangler is currently broken and needs to be fixed.|r
+	[45] = {1, "|CFFFF0000暴雪的拾取更改损坏了几件物品，使其无法获得。\n“绞肉机”奥戈姆，和奥杜尔英雄模式物品目前已损坏，需要修复。|r", "拾取损坏"},	--TODO: |CFFFF0000Blizzard's loot changes broke several items and made them unobtainable.|r
 })
 do a[key] = value; end
 
