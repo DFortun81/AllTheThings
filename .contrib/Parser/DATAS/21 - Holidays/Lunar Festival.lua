@@ -1414,9 +1414,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					["cost"] = { { "i", 21100, 30 } },	-- 30x Coin of Ancestry
 				}),
 				i(211868, {	-- Winding Slitherdrake: Lunar Festival Armor
-				["timeline"] = { ADDED_10_2_5 },
-				["cost"] = 500000000,	-- 50k
-			}),
+					["timeline"] = { ADDED_10_2_5 },
+					["cost"] = 500000000,	-- 50k
+				}),
 			},
 		}),
 		n(15898, {	-- Lunar Festival Vendor
@@ -1507,9 +1507,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				}),
 				i(21713),	-- Elune's Candle
 				i(211868, {	-- Winding Slitherdrake: Lunar Festival Armor
-				["timeline"] = { ADDED_10_2_5 },
-				["cost"] = 500000000,	-- 50k
-			}),
+					["timeline"] = { ADDED_10_2_5 },
+					["cost"] = 500000000,	-- 50k
+				}),
 			},
 		}),
 	}),
