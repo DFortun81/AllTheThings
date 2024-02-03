@@ -2914,7 +2914,7 @@ function app:CreateMiniListFromSource(key, id, sourcePath)
 	-- If we provided the original source path, then we can find the exact element to popout.
 	if sourcePath then
 		local hashes = { strsplit(">", sourcePath) };
-		local ref = SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
+		local ref = app.SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
 		if ref then
 			app:CreateMiniListForGroup(ref);
 			return;

@@ -5339,19 +5339,6 @@ local function SearchForMissingItemNames(group)
 	end
 	return arr;
 end
-local function SearchForSourcePath(g, hashes, level, count)
-	if g then
-		local hash = hashes[level];
-		if hash then
-			for i,o in ipairs(g) do
-				if (o.hash or o.name or o.text) == hash then
-					if level == count then return o; end
-					return SearchForSourcePath(o.g, hashes, level + 1, count);
-				end
-			end
-		end
-	end
-end
 app.SearchForLink = SearchForLink;
 
 
@@ -5637,7 +5624,7 @@ app.AddEventHandler("OnReady", function()
 						local sourceStrings = { strsplit(";", sourceString) };
 						for i,sourcePath in ipairs(sourceStrings) do
 							local hashes = { strsplit(">", sourcePath) };
-							local ref = SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
+							local ref = app.SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
 							if ref then
 								tinsert(root, ref);
 							else
