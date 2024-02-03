@@ -757,26 +757,6 @@ local function GetProgressTextForTooltip(data)
 
 	return app.TableConcat(text, nil, "", " ");
 end
--- replaced by Additional Information toggles
--- local function GetAddedWithPatchString(awp, addedBack)
--- 		awp = tonumber(awp);
--- 	if awp then
--- 		local formatString = "ADDED";
--- 		if app.GameBuildVersion == awp then
--- 			formatString = "WAS_" .. formatString;
--- 		elseif app.GameBuildVersion > awp then
--- 			return nil;	-- Don't want to show this at the moment, let's add a configuration first!
--- 		end
--- 		if addedBack then formatString = formatString .. "_BACK"; end
--- 		return sformat(L[formatString .. "_WITH_PATCH_FORMAT"], app.GetPatchString(awp));
--- 	end
--- end
--- local function GetRemovedWithPatchString(rwp)
--- 	rwp = tonumber(rwp);
--- 	if rwp then
--- 		return sformat(L["REMOVED_WITH_PATCH_FORMAT"], app.GetPatchString(rwp));
--- 	end
--- end
 app.GetCompletionIcon = GetCompletionIcon;
 app.GetProgressTextForRow = GetProgressTextForRow;
 
@@ -1553,8 +1533,7 @@ app.NPCNameFromID = NPCNameFromID;
 app.NPCTitlesFromID = NPCTitlesFromID;
 end)();
 
--- Search Caching
-local searchCache = {};
+
 -- Merges an Object into an existing set of Objects so as to not duplicate any incoming Objects
 local MergeObject,
 -- Nests an Object under another Object, only creating the 'g' group if necessary
@@ -1569,7 +1548,6 @@ NestObjects,
 -- Nests multiple Objects under another Object using an optional set of functions to determine priority on the adding of objects, only creating the 'g' group if necessary
 -- ex. PriorityNestObjects(parent, groups, newCreate, function1, function2, ...)
 PriorityNestObjects;
-app.searchCache = searchCache;
 (function()
 local function GetHash(t)
 	local hash = app.CreateHash(t);
@@ -2989,6 +2967,8 @@ end
 end	-- Symlink Lib
 
 -- Search Results Lib
+local searchCache = {};
+app.searchCache = searchCache;
 local GetCachedSearchResults;
 do
 local function GetPatchString(patch, color)
@@ -3824,23 +3804,6 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				end
 			end
 		end
-
-		-- replaced by Additional Information toggles
-		-- local awp, rwp = GetRelativeValue(group, "awp"), group.rwp;
-		-- local awpGreaterThanRWP = true;
-		-- if awp and ((rwp or (group.u and group.u < 3)) or awp >= app.GameBuildVersion) then
-		-- 	awpGreaterThanRWP = rwp and awp >= rwp;
-		-- 	local awpString = GetAddedWithPatchString(awp, awpGreaterThanRWP);
-		-- 	if awpString then
-		-- 		tinsert(info, 1, { left = awpString, wrap = true, color = app.Colors.AddedWithPatch });
-		-- 	else
-		-- 		awpGreaterThanRWP = true;
-		-- 	end
-		-- end
-		-- if rwp then
-		-- 	tinsert(info, awpGreaterThanRWP and 1 or 2, { left = GetRemovedWithPatchString(rwp), wrap = true, color = app.Colors.RemovedWithPatch });
-		-- end
-
 		if group.u and (not group.crs or group.itemID or group.sourceID) then
 			-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
 			if group.u == 1 and app.GetRelativeValue(group, "_missing") then
@@ -12459,20 +12422,7 @@ RowOnEnter = function (self)
 					end
 				end
 			end
-
-			-- replaced by Additional Information toggles
-			-- local awp, rwp = GetRelativeValue(reference, "awp"), reference.rwp;
-			-- if rwp then
-			-- 	local _,r,g,b = HexToARGB(app.Colors.RemovedWithPatch);
-			-- 	GameTooltip:AddLine(GetRemovedWithPatchString(rwp), r, g, b, 1);
-			-- end
-			-- if awp and ((rwp or (reference.u and reference.u < 3)) or awp >= app.GameBuildVersion) then
-			-- 	local awpString = GetAddedWithPatchString(awp, rwp and awp > rwp);
-			-- 	if awpString then
-			-- 		local _,r,g,b = HexToARGB(app.Colors.AddedWithPatch);
-			-- 		GameTooltip:AddLine(awpString, r, g, b, 1);
-			-- 	end
-			-- end
+			
 			-- an item used for a faction which is repeatable
 			if reference.itemID and reference.factionID and reference.repeatable then
 				GameTooltip:AddLine(L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(reference.factionID)) or ("Faction #" .. tostring(reference.factionID))) .. "'", 0.4, 0.8, 1, 1, true);

@@ -463,9 +463,7 @@ local function GetDeepestRelativeValue(group, field)
 end
 app.GetDeepestRelativeValue = GetDeepestRelativeValue;
 
--- Search Caching
-local searchCache = {};
-app.searchCache = searchCache;
+local MergeObject;
 local function GetHash(t)
 	local hash = t.hash;
 	if hash then return hash; end
@@ -473,9 +471,6 @@ local function GetHash(t)
 	--app.PrintDebug("No hash for object:", hash, t.text);
 	return hash;
 end
-
-local UpdateGroups;
-local MergeObject;
 local function MergeObjects(g, g2)
 	for i,o in ipairs(g2) do
 		MergeObject(g, o);
@@ -602,6 +597,7 @@ end
 app.ExpandGroupsRecursively = ExpandGroupsRecursively;
 app.MergeClone = MergeClone;
 app.MergeObject = MergeObject;
+app.MergeObjects = MergeObjects;
 
 local ResolveSymbolicLink;
 (function()
@@ -1068,6 +1064,10 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 		end
 	end
 end
+
+-- Search Caching
+local searchCache = {};
+app.searchCache = searchCache;
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if search then
 		local now = time();
@@ -1516,7 +1516,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 		end
-
+		
+		--[[
 		if group.g then
 			group.total = 0;
 			group.progress = 0;
@@ -1528,6 +1529,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 		end
+		]]--
 
 		if group.lore and app.Settings:GetTooltipSetting("Lore") and not (paramA == "titleID") then
 			tinsert(info, 1, { left = group.lore, wrap = true, color = app.Colors.TooltipLore });
