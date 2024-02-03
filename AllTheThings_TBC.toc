@@ -49,7 +49,6 @@ src\Modules\Color.lua
 src\Modules\Events.lua
 src\Modules\Filter.lua
 src\Modules\Social.lua
-# src\Modules\Tooltip.lua
 src\Modules\Tooltip.lua
 # src\Modules\Upgrade.lua
 
