@@ -131,7 +131,7 @@ for i,guid in ipairs({
 	-- Crieve
 	"Player-3683-0A7D919A",	-- Retrieve (Crieve's Alt for Testing) US
 	-- Myrhial
-	"Player-3702-0A125B62",	-- Xynara-ArgentDawn EU
+	"Player-3702-0A145B62",	-- Xynara-ArgentDawn EU
 	-- Tag
 	"Player-1091-04F6F553",	-- Tag-Bloodscalp EU
 	"Player-1091-0A9BC8B5",	-- Teleportag-Bloodscalp EU
@@ -452,7 +452,7 @@ if TooltipDataProcessor then
 		end
 	end
 	]]--
-	
+
 	local function AttachTooltip(self, ttdata)
 		if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
 
@@ -672,7 +672,7 @@ else
 		if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
 		if not self.AllTheThingsProcessing then
 			self.AllTheThingsProcessing = true;
-			
+
 			-- Does this tooltip have an OnClear attached for ATT since it can handle content which ATT will attach to?
 			if not self.AllTheThingsOnTooltipClearedHook then
 				local tooltipName = self:GetName();
@@ -686,7 +686,7 @@ else
 					self.AllTheThingsIgnored = true;
 				end
 			end
-			
+
 			local numLines = self:NumLines();
 			if numLines > 0 then
 				--[[--
@@ -733,7 +733,7 @@ else
 							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npcID)); end
 							AttachTooltipSearchResults(self, 1, "creatureID:" .. npcID, SearchForField, "creatureID", tonumber(npcID));
 						end
-						
+
 						return true;
 					end
 				end
@@ -805,7 +805,7 @@ else
 		ItemRefTooltip:HookScript("OnShow", AttachTooltip);
 		ItemRefShoppingTooltip1:HookScript("OnShow", AttachTooltip);
 		ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
-		
+
 		if WorldMapTooltip then
 			WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 			WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetItem", AttachTooltip);
@@ -814,7 +814,7 @@ else
 			WorldMapTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 			WorldMapTooltip:HookScript("OnShow", AttachTooltip);
 		end
-		
+
 		local GameTooltip_SetLFGDungeonReward = GameTooltip.SetLFGDungeonReward;
 		if GameTooltip_SetLFGDungeonReward then
 			GameTooltip.SetLFGDungeonReward = function(self, dungeonID, rewardIndex)
@@ -833,7 +833,7 @@ else
 				end
 			end
 		end
-		
+
 		local GameTooltip_SetLFGDungeonShortageReward = GameTooltip.SetLFGDungeonShortageReward;
 		if GameTooltip_SetLFGDungeonShortageReward then
 			GameTooltip.SetLFGDungeonShortageReward = function(self, dungeonID, shortageSeverity, lootIndex)
@@ -853,7 +853,7 @@ else
 				end
 			end
 		end
-		
+
 		local GameTooltip_SetCurrencyByID = GameTooltip.SetCurrencyByID;
 		if GameTooltip_SetCurrencyByID then
 			GameTooltip.SetCurrencyByID = function(self, currencyID, count)
@@ -865,7 +865,7 @@ else
 				end
 			end
 		end
-		
+
 		local GameTooltip_SetCurrencyToken = GameTooltip.SetCurrencyToken;
 		if GameTooltip_SetCurrencyToken then
 			GameTooltip.SetCurrencyToken = function(self, tokenID)
@@ -881,7 +881,7 @@ else
 				end
 			end
 		end
-		
+
 		-- Wrath has a really dumb thing that pulses tooltip updates.
 		if app.IsClassic and app.GameBuildVersion > 11403 then
 			app:RegisterEvent("CURSOR_CHANGED");
