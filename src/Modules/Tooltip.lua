@@ -819,7 +819,7 @@ local function OnReadyHooks()
 		GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 		GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 		GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
-		--GameTooltip:HookScript("OnUpdate", AttachTooltip);	-- TODO: This was from Classic, verify it not being necessary.
+		GameTooltip:HookScript("OnUpdate", AttachTooltip);	-- This was necessary for object tooltips in classic!
 		ItemRefTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 		ItemRefTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 		ItemRefShoppingTooltip1:HookScript("OnTooltipSetQuest", AttachTooltip);
