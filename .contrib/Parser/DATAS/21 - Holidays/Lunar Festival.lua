@@ -1440,6 +1440,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				i(21576),	-- Red Rocket Cluster
 				i(21721),	-- Moonglow
 				i(21747),	-- Festival Firecracker
+				i(211868, {	-- Winding Slitherdrake: Lunar Festival Armor
+					["timeline"] = { ADDED_10_2_5 },
+					["cost"] = 500000000,	-- 50k
+				}),
 			},
 		}),
 		n(15864, {	-- Valadar Starsong <Coin of Ancestry Collector>
