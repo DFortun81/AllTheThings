@@ -84,8 +84,8 @@ local DynamicCategory_Simple = function(self)
 							-- store a copy of this top header if we dont have it
 							if not topHeaders[topText] then
 								-- app.PrintDebug("New Dynamic Top",self.dynamic,":",dynamicValue,"==>",topText)
-								-- app.PrintTable(topHeaders[topText])
 								topHeaders[topText] = CreateObject(top, true);
+								-- app.PrintTable(topHeaders[topText])
 							end
 							-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
 							-- remove it from being considered a cost within the dynamic category
@@ -112,8 +112,8 @@ local DynamicCategory_Simple = function(self)
 						-- store a copy of this top header if we dont have it
 						if not topHeaders[topText] then
 							-- app.PrintDebug("New Dynamic Top",self.dynamic,":",dynamicValue,"==>",topText)
-							-- app.PrintTable(topHeaders[topText])
 							topHeaders[topText] = CreateObject(top, true);
+							-- app.PrintTable(topHeaders[topText])
 						end
 						-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
 						-- remove it from being considered a cost within the dynamic category
@@ -249,7 +249,14 @@ app.CreateToggle = app.CreateClass("Toggle", "toggleID", {
 });
 
 -- Allows creating a group which is keyed based on only its 'text' field
-app.CreateRawText = app.CreateClass("RawText", "text", {})
+app.CreateRawText = app.CreateClass("RawText", "text", {
+	name = function(t)
+		return t.text
+	end,
+	isHeader = function()
+		return true
+	end,
+})
 
 -- Allows creating an ATT object which can be expanded to trigger an async population of the dynamic data it should contain, based on provided data in 't'
 -- Expected t-data:
