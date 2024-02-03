@@ -169,6 +169,9 @@ for i,guid in ipairs({
 	"Player-1402-09D26257", -- Alliancetaur-Turalyon EU
 	"Player-1402-0A72B31C", -- Alliancetusk-Turalyon EU
 	"Player-1402-0A73A911", -- Alliancemate-Turalyon EU
+	-- Dead Serious
+	"Player-1305-08781C8A", -- Vultheus-Kazzak EU
+	"Player-1305-07A1A502", -- Krulgore-Kazzak EU
 	--
 }) do
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
