@@ -446,36 +446,6 @@ local function AttachTooltip(self, ttdata)
 			AttachTooltipSearchResults(self, 1, "encounterID:" .. encounterID, SearchForField, "encounterID", tonumber(encounterID));
 			return true;
 		end
-
-		-- Micro Menu button tooltips
-		local gf;
-		if owner.lastNumMountsNeedingFanfare then
-			-- Collections
-			gf = app:GetWindow("Prime").data;
-		elseif owner.NewAdventureNotice then
-			-- Adventure Guide
-			gf = app:GetWindow("Prime").data.g[1];
-		elseif owner.tooltipText then
-			if type(owner.tooltipText) == "string" then
-				if owner.tooltipText == DUNGEONS_BUTTON then
-					-- Group Finder
-					gf = app:GetWindow("Prime").data.g[4];
-				elseif owner.tooltipText == BLIZZARD_STORE then
-					-- Shop
-					gf = app:GetWindow("Prime").data.g[16];
-				elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
-					-- Achievements
-					gf = app:GetWindow("Prime").data.g[5];
-				end
-			end
-		end
-		if gf then
-			-- app.PrintDebug("special tooltip")
-			app.noDepth = true;
-			AttachTooltipSearchResults(self, 1, owner:GetName(), (function() return gf; end), owner:GetName(), 1);
-			app.noDepth = nil;
-			self:Show();
-		end
 	end
 
 	local ttType, ttId = ttdata and ttdata.type;
