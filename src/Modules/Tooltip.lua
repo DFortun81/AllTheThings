@@ -128,6 +128,7 @@ tooltipFunction = function(self, target)
 	end
 end
 for i,guid in ipairs({
+	-- Want to add your character too? 	Type '/dump UnitGUID("player")' ingame and add the number you receive here.
 	-- Crieve
 	"Player-3683-0A7D919A",	-- Retrieve (Crieve's Alt for Testing) US
 	-- Myrhial
@@ -178,7 +179,15 @@ for i,guid in ipairs({
 	"Player-3391-0C397003", -- Solitudo-Silvermoon EU
 	"Player-1614-09A3116A",	-- Бонпаль-Galakrond EU
 	"Player-1602-0A45D435", -- Энисофт-Gordunni EU
-	--
+	-- Gold
+	"Player-3679-0B1F96DB",	-- Gold-Aegwynn EU
+	"Player-1099-060EE8FF",	-- Saremy-Alleria EU
+	"Player-1099-060ECE9F",	-- Kuscheln-Alleria EU
+	"Player-1099-07F114C1",	-- Seramy-Alleria EU
+	"Player-1099-0609FC3A",	-- Ymeras-Alleria EU
+	"Player-1099-085BA2C7",	-- Auu-Alleria EU
+	"Player-3679-0C2DEF7A",	-- Goldqt-Aegwynn EU
+	"Player-1099-079DE2A4",	-- Au-Rexxar EU
 }) do
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
