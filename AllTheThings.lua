@@ -780,74 +780,6 @@ end
 app.GetCompletionIcon = GetCompletionIcon;
 app.GetProgressTextForRow = GetProgressTextForRow;
 
-local function BuildSourceTextColorized(group)
-	local line = {}
-	local cap = 100
-	while group do
-		cap = cap - 1
-		line[cap] = TryColorizeName(group, group.text or RETRIEVING_DATA)
-		group = group.sourceParent or group.parent
-	end
-	return app.TableConcat(line, nil, nil, " > ", cap, 99)
-end
-local function BuildSourceText(group, l)
-	local parent = group.sourceParent or group.parent;
-	if parent then
-		-- From ATT-Classic .. needs some modification to handle Retail source depths
-		-- if not group.itemID and (parent.key == "filterID" or parent.key == "spellID" or ((parent.headerID or (parent.spellID and group.categoryID))
-		-- 	and ((parent.headerID == app.HeaderConstants.VENDORS or parent.headerID == app.HeaderConstants.QUESTS or parent.headerID == app.HeaderConstants.WORLD_BOSSES) or (parent.parent and parent.parent.parent)))) then
-		-- 	return BuildSourceText(parent.sourceParent or parent.parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA) .. " (" .. (parent.text or RETRIEVING_DATA) .. ")";
-		-- end
-		-- if group.headerID then
-		-- 	if group.headerID == app.HeaderConstants.ZONE_DROPS then
-		-- 		if group.crs and #group.crs == 1 then
-		-- 			return BuildSourceText(parent, l + 1) .. DESCRIPTION_SEPARATOR .. (app.NPCNameFromID[group.crs[1]] or RETRIEVING_DATA) .. " (Drop)";
-		-- 		end
-		-- 		return BuildSourceText(parent, l + 1) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
-		-- 	end
-		-- 	if parent.parent then
-		-- 		return BuildSourceText(parent, l + 1) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
-		-- 	end
-		-- end
-		-- if parent.key == "categoryID" or group.key == "filterID" or group.key == "spellID" or group.key == "encounterID" or (parent.key == "mapID" and group.key == "npcID") then
-		-- 	return BuildSourceText(parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
-		-- end
-		if l < 1 then
-			return BuildSourceText(parent, l + 1);
-		else
-			return BuildSourceText(parent, l + 1) .. " > " .. (group.text or RETRIEVING_DATA);
-		end
-	end
-	return group.text or RETRIEVING_DATA;
-end
-local function BuildSourceTextForChat(group, l)
-	if group.sourceParent or group.parent then
-		if l < 1 then
-			return BuildSourceTextForChat(group.sourceParent or group.parent, l + 1);
-		else
-			return BuildSourceTextForChat(group.sourceParent or group.parent, l + 1) .. " > " .. (group.text or "*");
-		end
-	end
-	return "ATT";
-end
-local function BuildSourceTextForDynamicPath(group)
-	local parent = group.parent;
-	if parent then
-		return BuildSourceTextForDynamicPath(parent) .. ">" .. (group.hash or group.name or group.text);
-	else
-		return group.hash or group.name or group.text;
-	end
-end
-local function BuildSourceTextForTSM(group, l)
-	if group.sourceParent or group.parent then
-		if l < 1 or not group.text then
-			return BuildSourceTextForTSM(group.sourceParent or group.parent, l + 1);
-		else
-			return BuildSourceTextForTSM(group.sourceParent or group.parent, l + 1) .. "`" .. group.text;
-		end
-	end
-	return L["TITLE"];
-end
 -- Fields which are dynamic or pertain only to the specific ATT window and should never merge automatically
 -- Maybe build from /base.lua:DefaultFields since those always are able to be dynamic
 app.MergeSkipFields = {
@@ -3603,7 +3535,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				and (showCompleted or not app.IsComplete(j))
 				and not app.HasCost(j, paramA, paramB)
 			then
-				text = BuildSourceTextColorized(parent);
+				text = app.GenerateSourcePathForTooltip(parent);
 				if showUnsorted or (not string_match(text, L["UNSORTED_1"]) and not string_match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
 					for source,replacement in pairs(abbrevs) do
 						text = string_gsub(text, source, replacement);
@@ -5445,8 +5377,8 @@ local function PlotCachedCoords()
 
 					local first = root[1];
 					if first then
-						local sourcePath = BuildSourceTextForDynamicPath(first);
-						for i=2,#root,1 do sourcePath = sourcePath .. ";" .. BuildSourceTextForDynamicPath(root[i]); end
+						local sourcePath = app.GenerateSourceHash(first);
+						for i=2,#root,1 do sourcePath = sourcePath .. ";" .. app.GenerateSourceHash(root[i]); end
 						TomTom:AddWaypoint(mapID, xnormal, y / 1000, {
 							from = "ATT",
 							persistent = true,
@@ -10861,7 +10793,7 @@ function app:CreateMiniListForGroup(group)
 	-- end
 
 	-- Pop Out Functionality! :O
-	local suffix = BuildSourceTextForDynamicPath(group);
+	local suffix = app.GenerateSourceHash(group);
 	local popout = app.Windows[suffix];
 	local showing = not popout or not popout:IsVisible();
 	-- force data to be re-collected if this is a quest chain since its logic is affected by settings
@@ -11355,9 +11287,6 @@ local function UpdateWindowsOnEnd()
 	app.Processing_UpdateWindows = nil;
 	app.Processing_RefreshWindows = nil;
 	app.refreshDataGot = nil;
-	
-	-- Execute the OnRefreshComplete handlers.
-	app.HandleEvent("OnRefreshComplete");
 	wipe(searchCache);
 end
 local function UpdateWindows(force, got)
@@ -11933,7 +11862,7 @@ local function RowOnClick(self, button)
 								local itemList, search = {};
 								for i,group in ipairs(missingItems) do
 									search = group.tsm or TSMAPI.Item:ToItemString(group.link or group.itemID);
-									if search then itemList[search] = BuildSourceTextForTSM(group, 0); end
+									if search then itemList[search] = app.GenerateSourcePathForTSM(group, 0); end
 								end
 								app:ShowPopupDialog(L["TSM_WARNING_1"] .. L["TITLE"] .. L["TSM_WARNING_2"],
 								function()
@@ -11974,7 +11903,7 @@ local function RowOnClick(self, button)
 							app:ShowPopupDialog(L["TSM_WARNING_1"] .. L["TITLE"] .. L["TSM_WARNING_2"],
 							function()
 								local itemString, groupPath;
-								groupPath = BuildSourceTextForTSM(app:GetWindow("Prime").data, 0);
+								groupPath = app.GenerateSourcePathForTSM(app:GetWindow("Prime").data, 0);
 								if TSMAPI_FOUR.Groups.Exists(groupPath) then
 									TSMAPI_FOUR.Groups.Remove(groupPath);
 								end
@@ -11983,7 +11912,7 @@ local function RowOnClick(self, button)
 									if (not group.spellID and not group.achID) or group.itemID then
 										itemString = group.tsm;
 										if itemString then
-											groupPath = BuildSourceTextForTSM(group, 0);
+											groupPath = app.GenerateSourcePathForTSM(group, 0);
 											TSMAPI_FOUR.Groups.Create(groupPath);
 											if TSMAPI_FOUR.Groups.IsItemInGroup(itemString) then
 												TSMAPI_FOUR.Groups.MoveItem(itemString, groupPath)
@@ -12010,7 +11939,7 @@ local function RowOnClick(self, button)
 					-- Not at the Auction House
 					-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
 					local link = reference.link or reference.silentLink;
-					if (link and HandleModifiedItemClick(link)) or ChatEdit_InsertLink(link or BuildSourceTextForChat(reference, 0)) then return true; end
+					if (link and HandleModifiedItemClick(link)) or ChatEdit_InsertLink(link) then return true; end
 
 					if button == "LeftButton" then
 						-- Default behavior is to Refresh Collections.
@@ -13408,7 +13337,8 @@ function app:GetDataCache()
 	-- app.PrintMemoryUsage()
 
 	-- Update the Row Data by filtering raw data (this function only runs once)
-	local rootData = app.CreateRawText(L.TITLE, {
+	local rootData = setmetatable({
+		text = L.TITLE,
 		icon = app.asset("logo_32x32"),
 		preview = app.asset("Discord_2_128"),
 		description = L["DESCRIPTION"],

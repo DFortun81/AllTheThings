@@ -696,7 +696,7 @@ local function RowOnClick(self, button)
 				-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
 				local link = reference.link or reference.silentLink;
 				if link then
-					if HandleModifiedItemClick(link) or ChatEdit_InsertLink(link or BuildSourceTextForChat(reference, 0)) then return true; end
+					if HandleModifiedItemClick(link) or ChatEdit_InsertLink(link) then return true; end
 					local _, dialog = StaticPopup_Visible("ALL_THE_THINGS_EDITBOX");
 					if dialog then dialog.editBox:SetText(link); return true; end
 				end
@@ -2875,7 +2875,7 @@ function app:CreateMiniListForGroup(group)
 	end
 
 	-- Pop Out Functionality! :O
-	local popout = app:GetWindow(BuildSourceTextForDynamicPath(group), {
+	local popout = app:GetWindow(app.GenerateSourceHash(group), {
 		Silent = true,
 		AllowCompleteSound = true,
 		--Debugging = true,
@@ -2928,7 +2928,7 @@ function app:CreateMiniListFromSource(key, id, sourcePath)
 			local searchResults = SearchForField(key, id);
 			if #searchResults > 0 then
 				for i,ref in ipairs(searchResults) do
-					if BuildSourceTextForDynamicPath(ref) == sourcePath then
+					if app.GenerateSourceHash(ref) == sourcePath then
 						app:CreateMiniListForGroup(ref);
 						return;
 					end

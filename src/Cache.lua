@@ -976,6 +976,99 @@ local function SearchForSpecificGroups(t, group, hashes)
 	end
 end
 
+-- Source Path Generation
+--[[
+-- CRIEVE NOTE: Doesn't text do TryColorizeName by default? (in retail at least)
+local function GenerateColorizedSourcePath(group)
+	local line = {}
+	local cap = 100
+	while group do
+		cap = cap - 1
+		line[cap] = TryColorizeName(group, group.text or RETRIEVING_DATA)
+		group = group.sourceParent or group.parent
+	end
+	return app.TableConcat(line, nil, nil, " > ", cap, 99)
+end]]--
+--[[
+-- CRIEVE NOTE: This was from classic. Probably don't need this, really.
+local function GenerateSourcePath(group, l, skip)
+	if group then
+		local parent = group.sourceParent or group.parent;
+		if parent then
+			if not group.itemID and not skip and (parent.key == "filterID" or parent.key == "spellID" or ((parent.headerID or (parent.spellID and (group.categoryID or group.tierID)))
+				and ((parent.headerID == app.HeaderConstants.VENDORS or parent.headerID == app.HeaderConstants.QUESTS or parent.headerID == app.HeaderConstants.WORLD_BOSSES) or (parent.parent and parent.parent.parent)))) then
+				return GenerateSourcePath(parent.parent, 5, skip) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA) .. " (" .. (parent.text or RETRIEVING_DATA) .. ")";
+			end
+			if group.headerID then
+				if group.headerID == app.HeaderConstants.ZONE_DROPS then
+					if group.crs and #group.crs == 1 then
+						local cr = group.crs[1];
+						return GenerateSourcePath(parent, l + 1, skip) .. DESCRIPTION_SEPARATOR .. (app.NPCNameFromID[cr] or RETRIEVING_DATA) .. " (Drop)";
+					end
+					return GenerateSourcePath(parent, l + 1, skip) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
+				end
+				if parent.difficultyID then
+					return GenerateSourcePath(parent, l + 1, skip);
+				end
+				if parent.parent then
+					return GenerateSourcePath(parent, l + 1, skip) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
+				end
+			end
+			if group.key == "criteriaID" and group.achievementID then
+				local tooltipText = achievementTooltipText[group.achievementID];
+				if tooltipText then
+					return GenerateSourcePath(parent, 5, group.itemID or skip) .. " (" .. tooltipText .. ")";
+				else
+					return GenerateSourcePath(parent, 5, group.itemID or skip);
+				end
+			end
+			if parent.key == "categoryID" or parent.key == "tierID" or group.key == "filterID" or group.key == "spellID" or group.key == "encounterID" or (parent.key == "mapID" and group.key == "npcID") then
+				return GenerateSourcePath(parent, 5, skip) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
+			end
+			if l < 1 then
+				return GenerateSourcePath(parent, l + 1, group.itemID or skip);
+			else
+				return GenerateSourcePath(parent, l + 1, group.itemID or skip) .. " > " .. (group.text or RETRIEVING_DATA);
+			end
+		end
+	end
+	return group.text or RETRIEVING_DATA;
+end
+]]--
+local function GenerateSourceHash(group)
+	local parent = group.parent;
+	if parent then
+		return GenerateSourceHash(parent) .. ">" .. (group.hash or group.name or group.text);
+	else
+		return group.hash or group.name or group.text;
+	end
+end
+local function GenerateSourcePath(group, l)
+	local parent = group.sourceParent or group.parent;
+	if parent then
+		if l < 1 then
+			return GenerateSourcePath(parent, l + 1);
+		else
+			return GenerateSourcePath(parent, l + 1) .. " > " .. (group.text or RETRIEVING_DATA);
+		end
+	end
+	return group.text or RETRIEVING_DATA;
+end
+local function GenerateSourcePathForTSM(group, l)
+	local parent = group.sourceParent or group.parent;
+	if parent then
+		if l < 1 or not group.text then
+			return GenerateSourcePathForTSM(parent, l + 1);
+		else
+			return GenerateSourcePathForTSM(parent, l + 1) .. "`" .. group.text;
+		end
+	end
+	return L.TITLE;
+end
+local function GenerateSourcePathForTooltip(group)
+	return GenerateSourcePath(group, 1);
+end
+
 -- Cache Verification
 local function VerifyRecursion(group, checked)
 	-- Verify no infinite parent recursion exists for a given group
@@ -1026,6 +1119,10 @@ app.CacheFields = CacheFields;
 app.CreateDataCache = CreateDataCache;
 app.GetRawFieldContainer = GetRawFieldContainer;
 app.GetRawField = GetRawField;
+app.GenerateSourceHash = GenerateSourceHash;
+app.GenerateSourcePath = GenerateSourcePath;
+app.GenerateSourcePathForTSM = GenerateSourcePathForTSM;
+app.GenerateSourcePathForTooltip = GenerateSourcePathForTooltip;
 app.SearchForFieldRecursively = SearchForFieldRecursively;
 app.SearchForFieldContainer = SearchForFieldContainer;
 app.SearchForField = SearchForField;

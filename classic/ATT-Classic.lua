@@ -340,68 +340,6 @@ local achievementTooltipText = {
 	[19426] = "DPG",	-- Defense Protocol Gamma: Trial of the Champion (A)
 	[19425] = "DPG",	-- Defense Protocol Gamma: Trial of the Champion (H)
 };
-local function BuildSourceText(group, l, skip)
-	if group then
-		local parent = group.parent;
-		if parent then
-			if not group.itemID and not skip and (parent.key == "filterID" or parent.key == "spellID" or ((parent.headerID or (parent.spellID and (group.categoryID or group.tierID)))
-				and ((parent.headerID == app.HeaderConstants.VENDORS or parent.headerID == app.HeaderConstants.QUESTS or parent.headerID == app.HeaderConstants.WORLD_BOSSES) or (parent.parent and parent.parent.parent)))) then
-				return BuildSourceText(parent.parent, 5, skip) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA) .. " (" .. (parent.text or RETRIEVING_DATA) .. ")";
-			end
-			if group.headerID then
-				if group.headerID == app.HeaderConstants.ZONE_DROPS then
-					if group.crs and #group.crs == 1 then
-						return BuildSourceText(parent, l + 1, skip) .. DESCRIPTION_SEPARATOR .. (app.NPCNameFromID[group.crs[1]] or RETRIEVING_DATA) .. " (Drop)";
-					end
-					return BuildSourceText(parent, l + 1, skip) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
-				end
-				if parent.difficultyID then
-					return BuildSourceText(parent, l + 1, skip);
-				end
-				if parent.parent then
-					return BuildSourceText(parent, l + 1, skip) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
-				end
-			end
-			if group.key == "criteriaID" and group.achievementID then
-				local tooltipText = achievementTooltipText[group.achievementID];
-				if tooltipText then
-					return BuildSourceText(parent, 5, group.itemID or skip) .. " (" .. tooltipText .. ")";
-				else
-					return BuildSourceText(parent, 5, group.itemID or skip);
-				end
-			end
-			if parent.key == "categoryID" or parent.key == "tierID" or group.key == "filterID" or group.key == "spellID" or group.key == "encounterID" or (parent.key == "mapID" and group.key == "npcID") then
-				return BuildSourceText(parent, 5, skip) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
-			end
-			if l < 1 then
-				return BuildSourceText(parent, l + 1, group.itemID or skip);
-			else
-				return BuildSourceText(parent, l + 1, group.itemID or skip) .. " > " .. (group.text or RETRIEVING_DATA);
-			end
-		end
-		return group.text or RETRIEVING_DATA;
-	end
-	return L.TITLE;
-end
-local function BuildSourceTextForChat(group, l)
-	if group.parent then
-		if l < 1 then
-			return BuildSourceTextForChat(group.parent, l + 1);
-		else
-			return BuildSourceTextForChat(group.parent, l + 1) .. " > " .. (group.text or "*");
-		end
-		return group.text or "*";
-	end
-	return "ATT";
-end
-local function BuildSourceTextForDynamicPath(group)
-	local parent = group.parent;
-	if parent then
-		return BuildSourceTextForDynamicPath(parent) .. ">" .. (group.hash or group.name or group.text);
-	else
-		return group.hash or group.name or group.text;
-	end
-end
 
 app.IsComplete = function(o)
 	if o.total then return o.total == o.progress; end
@@ -751,7 +689,7 @@ ResolveSymbolicLink = function(o)
 							description = "This was dynamically filled using a symlink, but the information wasn't found in the addon.",
 						}));
 					else
-						print(BuildSourceTextForDynamicPath(o));
+						print(app.GenerateSourceHash(o));
 						print("Failed to select ", field, sym[i]);
 					end
 				end
@@ -1391,7 +1329,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			for i,j in ipairs(group) do
 				if j.parent and not GetRelativeValue(j, "hideText") and j.parent.parent
 					and (app.Settings:GetTooltipSetting("SourceLocations:Completed") or not app.IsComplete(j)) then
-					local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
+					local text = app.GenerateSourcePathForTooltip(j.parent);
 					for source,replacement in pairs(abbrevs) do
 						text = string.gsub(text, source, replacement);
 					end
@@ -6190,7 +6128,7 @@ app.CreateNPC = function(id, t)
 			t = { g = t };
 		end
 		t.OnUpdate = function()
-			print("HEY! FIX THIS", BuildSourceTextForDynamicPath(t, 0));
+			print("HEY! FIX THIS", app.GenerateSourceHash(t, 0));
 			print(t.progress, t.total, t.g and #t.g);
 
 		end
@@ -7171,8 +7109,8 @@ local function AddTomTomWaypoint(group)
 
 						local first = root[1];
 						if first then
-							local sourcePath = BuildSourceTextForDynamicPath(first);
-							for i=2,#root,1 do sourcePath = sourcePath .. ";" .. BuildSourceTextForDynamicPath(root[i]); end
+							local sourcePath = app.GenerateSourceHash(first);
+							for i=2,#root,1 do sourcePath = sourcePath .. ";" .. app.GenerateSourceHash(root[i]); end
 							TomTom:AddWaypoint(mapID, xnormal, y / 1000, {
 								from = "ATT",
 								persistent = true,
