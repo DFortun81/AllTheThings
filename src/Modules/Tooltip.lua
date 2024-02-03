@@ -754,8 +754,12 @@ local function OnReadyHooks()
 			GameTooltip.SetCurrencyByID = function(self, currencyID, count)
 				GameTooltip_SetCurrencyByID(self, currencyID, count);
 				if CanAttachTooltips() then
-					AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
-					if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
+					local cache = SearchForField("currencyID", currencyID);
+					if cache and #cache > 0 then
+						AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+					else
+						if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
+					end
 					self:Show();
 				end
 			end
@@ -767,21 +771,15 @@ local function OnReadyHooks()
 				GameTooltip_SetCurrencyToken(self, tokenID);
 				if CanAttachTooltips() then
 					-- Determine what kind of list data this is. (Blizzard is whack and using this API call for headers too...)
-					local name, isHeader = GetCurrencyListInfo(tokenID);
-					if not isHeader then
-						-- Determine which currencyID is the one that we're dealing with.
-						for currencyID,results in pairs(app.SearchForFieldContainer("currencyID")) do
-							-- Compare the name of the currency vs the name of the token
-							if #results > 0 and results[1].text == name then
-								if not GameTooltip_SetCurrencyToken then
-									GameTooltip:AddLine(results[1].text or RETRIEVING_DATA, 1, 1, 1);
-								end
-								AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
-								if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
-								self:Show();
-								break;
-							end
+					local currencyID = select(12, GetCurrencyListInfo(tokenID));
+					if currencyID then
+						local cache = SearchForField("currencyID", currencyID);
+						if cache and #cache > 0 then
+							AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+						else
+							if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 						end
+						self:Show();
 					end
 				end
 			end
