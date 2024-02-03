@@ -90,6 +90,7 @@ src\UI\Classic Window Logic.lua
 db\Wrath\Categories.lua
 
 # Window Definitions
+src\UI\Windows\Prime.lua
 src\UI\Windows\Achievements.lua
 src\UI\Windows\Attunements.lua
 src\UI\Windows\Auctions.lua

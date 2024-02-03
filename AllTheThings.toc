@@ -87,6 +87,7 @@ src\UI\Retail Window Logic.lua
 db\Dragonflight\Categories.lua
 
 # Window Definitions
+# src\UI\Windows\Prime.lua
 # src\UI\Windows\Achievements.lua
 # src\UI\Windows\Attunements.lua
 # src\UI\Windows\Auctions.lua
