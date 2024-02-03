@@ -463,6 +463,7 @@ local function GetDeepestRelativeValue(group, field)
 		return GetDeepestRelativeValue(group.parent, field) or group[field];
 	end
 end
+app.GetBestMapForGroup = GetBestMapForGroup;
 app.GetDeepestRelativeValue = GetDeepestRelativeValue;
 
 local MergeObject;
@@ -1548,7 +1549,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						for i,item in ipairs(entries) do
 							left = item.group.text or RETRIEVING_DATA;
 							if IsRetrieving(left) then working = true; end
-							local mapID = GetBestMapForGroup(item.group, currentMapID);
+							local mapID = app.GetBestMapForGroup(item.group, currentMapID);
 							if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 							tinsert(info, { left = item.prefix .. left, right = item.right });
@@ -1580,7 +1581,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							local item = entries[i];
 							left = item.group.text or RETRIEVING_DATA;
 							if IsRetrieving(left) then working = true; end
-							local mapID = GetBestMapForGroup(item.group, currentMapID);
+							local mapID = app.GetBestMapForGroup(item.group, currentMapID);
 							if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 							tinsert(info, { left = item.prefix .. left, right = item.right });

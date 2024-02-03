@@ -1331,7 +1331,7 @@ local function RowOnEnter(self)
 				GameTooltip:AddLine("This quest has an incomplete prerequisite quest that you need to complete first.");
 				for i,prereq in ipairs(prereqs) do
 					local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
-					local mapID = GetBestMapForGroup(prereq, currentMapID);
+					local mapID = app.GetBestMapForGroup(prereq, currentMapID);
 					if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
 					GameTooltip:AddDoubleLine(text, GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)));
 				end
@@ -1340,7 +1340,7 @@ local function RowOnEnter(self)
 				GameTooltip:AddLine("This quest has a breadcrumb quest that you may be unable to complete after completing this one.");
 				for i,prereq in ipairs(bc) do
 					local text = "   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA);
-					local mapID = GetBestMapForGroup(prereq, currentMapID);
+					local mapID = app.GetBestMapForGroup(prereq, currentMapID);
 					if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
 					GameTooltip:AddDoubleLine(text, GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)));
 				end
