@@ -2053,6 +2053,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		return group;
 	end
 end
+app.GetCachedSearchResults = GetCachedSearchResults;
 local function SendGroupChatMessage(msg)
 	if IsInRaid() then
 		SendChatMessage(msg, "RAID", nil, nil);
