@@ -3597,6 +3597,7 @@ local ids = {
 	["filterID"] = L["FILTER_ID"],
 	["flightPathID"] = L["FLIGHT_PATH_ID"],
 	["followerID"] = L["FOLLOWER_ID"],
+	["guid"] = L["GUID"],
 	["headerID"] = L["HEADER_ID"],
 	["iconPath"] = "Icon Path",
 	["illusionID"] = L["ILLUSION_ID"],

@@ -545,6 +545,7 @@ local function AttachTooltip(self, ttdata)
 		-- Yes.
 		local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",id);
 		-- print(target, type, npc_id);
+		if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L["GUID"], id) end
 		if type == "Player" then
 			local method = PLAYER_TOOLTIPS[id];
 			if method then method(self, target); end
@@ -708,6 +709,7 @@ AttachTooltip = function(self)
 				if guid then
 					local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid);
 					--print(guid, type, npcID);
+					if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L["GUID"], guid) end
 					if type == "Player" then
 						local method = PLAYER_TOOLTIPS[guid];
 						if method then method(self, target); end
