@@ -6,8 +6,8 @@ local _, app = ...;
 -- Encapsulates the functionality for interacting with and hooking into game Tooltips
 
 -- Global locals
-local rawget, ipairs, pairs, TooltipUtil, Enum_TooltipDataType, InCombatLockdown, pcall, strsplit, tostring, tonumber, tinsert, C_Map_GetPlayerMapPosition, math_sqrt, GameTooltip, GetItemInfoInstant
-	= rawget, ipairs, pairs, TooltipUtil, Enum.TooltipDataType, InCombatLockdown, pcall, strsplit, tostring, tonumber, tinsert, C_Map.GetPlayerMapPosition, math.sqrt, GameTooltip, GetItemInfoInstant
+local ipairs, pairs, InCombatLockdown, pcall, strsplit, tostring, tonumber, C_Map_GetPlayerMapPosition, math_sqrt, GameTooltip
+	= ipairs, pairs, InCombatLockdown, pcall, strsplit, tostring, tonumber, C_Map.GetPlayerMapPosition, math.sqrt, GameTooltip
 
 -- App locals
 local SearchForField = app.SearchForField;
@@ -281,31 +281,6 @@ for i,guid in ipairs({
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
 
-
-
--- many of these don't include an ID in-game so they don't attach results. maybe someday they will...
-local TooltipTypes = {
-	[Enum_TooltipDataType.Toy] = "itemID",
-	[Enum_TooltipDataType.Item] = "itemID",
-	[Enum_TooltipDataType.Spell] = "spellID",
-	[Enum_TooltipDataType.UnitAura] = "spellID",
-	-- [Enum_TooltipDataType.Mount] = "spellID",	-- need special conversion
-	--[Enum_TooltipDataType.Macro] = "spellID",	-- Possibly?
-	[Enum_TooltipDataType.Achievement] = "achievementID",
-	[Enum_TooltipDataType.Quest] = "questID",
-	[Enum_TooltipDataType.QuestPartyProgress] = "questID",
-	[Enum_TooltipDataType.BattlePet] = "speciesID",
-	[Enum_TooltipDataType.CompanionPet] = "speciesID",
-	[Enum_TooltipDataType.Currency] = "currencyID",
-	[Enum_TooltipDataType.InstanceLock] = "instanceID",
-};
---[[
-for key,id in pairs(Enum_TooltipDataType) do
-	if not TooltipTypes[id] then
-		print("Not handling Tooltip Type", key, id);
-	end
-end
-]]--
 -- We need to whitelist the actual in-game tooltips that ATT is allowed to hook
 -- because all kinds of addons create their own tooltips and use them to do weird stuff behind the scenes
 -- and there's no reason for ATT to care when it's not even visible to a player
@@ -335,7 +310,11 @@ local HookableTooltips = {
 	["NotGameTooltip0123"]=1,
 };
 
-
+-- Shared Tooltip Functions
+local function CanAttachTooltips()
+	-- Consolidated logic for whether a tooltip should include ATT information based on combat & user settings
+	return (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSettingWithMod("Enabled");
+end
 local function ClearTooltip(self)
 	-- app.PrintDebug("Clear Tooltip",self:GetName());
 	self.AllTheThingsProcessing = nil;
@@ -343,11 +322,6 @@ local function ClearTooltip(self)
 	self.MiscFieldsComplete = nil;
 	self.UpdateTooltip = nil;
 end
--- Consolidated logic for whether a tooltip should include ATT information based on combat & user settings
-local function CanAttachTooltips()
-	return (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSettingWithMod("Enabled");
-end
--- Tooltip Functions
 local function AttachTooltipRawSearchResults(self, lineNumber, group)
 	if not group then return end
 	-- If nothing was put into the tooltip initially, mark the text of the source.
@@ -414,226 +388,8 @@ local function AttachTooltipSearchResults(self, lineNumber, search, method, ...)
 	end
 	app.SetSkipPurchases(0);
 end
-local function AttachTooltip(self, ttdata)
 
-	-- Debugging without ATT exclusions
-	-- local ttType, ttId = ttdata and ttdata.type;
-	-- if ttType then
-	-- 	ttId = ttdata.id;
-	-- 	app.PrintDebug("TT Type",ttType,ttId)
-	-- 	-- app.PrintTable(ttdata)
-	-- end
-
-	if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
-
-	-- Does the tooltip have an owner?
-	local owner = self:GetOwner();
-	if owner then
-		if owner.SpellHighlightTexture
-		or owner.TrainBook
-		or owner.spendTextShadows then
-			-- Actionbars/Spellbook/Talents UI, don't want that.
-			return true;
-		end
-		-- this is already covered by a default in-game tooltip line:
-		-- AUCTION_HOUSE_BUCKET_VARIATION_EQUIPMENT_TOOLTIP = "Items in this group may vary in stats and appearance. Check the auction's tooltip before buying.";
-		-- if owner.useCircularIconBorder and not self.AllTheThingsProcessing then
-		--	-- print("AH General Item Tooltip")
-		--	-- Generalized tooltip hover of a selected Auction Item -- not always accurate to the actual Items for sale
-		-- 	self:AddLine(L["AUCTION_GENERALIZED_ITEM_WARNING"]);
-		-- end
-		-- print("AttachTooltip-HasOwner");
-
-		--[[--
-		-- Debug all of the available fields on the owner.
-		self:AddDoubleLine("GetOwner", tostring(owner:GetName()));
-		for i,j in pairs(owner) do
-			self:AddDoubleLine(tostring(i), tostring(j));
-		end
-		self:Show();
-		--]]--
-
-		local encounterID = owner.encounterID;
-		if encounterID and not owner.itemID then
-			AttachTooltipSearchResults(self, 1, "encounterID:" .. encounterID, SearchForField, "encounterID", tonumber(encounterID));
-			return true;
-		end
-	end
-
-	local ttType, ttId = ttdata and ttdata.type;
-	if ttType then
-		ttId = ttdata.id;
-	end
-
-	local link, target, spellID, id, _;
-	-- check what this tooltip is currently displaying, and keep that reference
-	-- name, link, id
-	_, link, id = TooltipUtil.GetDisplayedItem(self);
-	if link and not link:find("%[]") then
-		if self.AllTheThingsProcessing and self.AllTheThingsProcessing == link then
-			return true;
-		else
-			self.AllTheThingsProcessing = link;
-		end
-	else
-		-- name, type, UID
-		target, _, id = TooltipUtil.GetDisplayedUnit(self);
-		if target then
-			if self.AllTheThingsProcessing and self.AllTheThingsProcessing == target then
-				return true;
-			else
-				self.AllTheThingsProcessing = target;
-			end
-		else
-			-- name, spellID
-			_, spellID = TooltipUtil.GetDisplayedSpell(self);
-			if spellID then
-				if self.AllTheThingsProcessing and self.AllTheThingsProcessing == spellID then
-					return true;
-				else
-					self.AllTheThingsProcessing = spellID;
-				end
-			end
-		end
-	end
-
-	-- app.PrintDebug(self:GetName(),link,target,spellID,id,ttType,ttId)
-
-	--[[--]
-	-- Debug all of the available fields on the tooltip.
-	app.PrintDebug("Tooltip Data")
-	for i,j in pairs(self) do
-		app.PrintDebug(i,type(j),j);
-	end
-	-- self:Show();
-	--]]--
-
-	-- Does this tooltip have an OnClear attached for ATT since it can handle content which ATT will attach to?
-	if self.AllTheThingsProcessing and not self.AllTheThingsOnTooltipClearedHook then
-		local tooltipName = self:GetName();
-		if tooltipName and HookableTooltips[tooltipName] then
-			-- app.PrintDebug("Hooking ClearTooltip",tooltipName)
-			pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip)
-			-- if pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip) then
-			-- 	app.PrintDebug("Hooked")
-			-- end
-			self.AllTheThingsOnTooltipClearedHook = true;
-		else
-			app.PrintDebug("Ignoring Tooltip",tooltipName)
-			-- otherwise mark them as ignored so ATT doesn't process them
-			self.AllTheThingsIgnored = true;
-		end
-	end
-
-	if id and app.Debugging then
-		local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",id);
-		if spawn_uid then
-			local spawnEpoch = GetServerTime() - (GetServerTime() % 2^23)
-			local spawnEpochOffset = bit.band(tonumber(string.sub(spawn_uid, 5), 16), 0x7fffff)
-			local spawnIndex = bit.rshift(bit.band(tonumber(string.sub(spawn_uid, 1, 5), 16), 0xffff8), 3)
-			local spawnTime = spawnEpoch + spawnEpochOffset
-
-			if spawnTime > GetServerTime() then
-				-- This only occurs if the epoch has rolled over since a unit has spawned.
-				spawnTime = spawnTime - ((2^23) - 1)
-			end
-			self:AddDoubleLine("Spawned at:", date("%Y-%m-%d %H:%M:%S", spawnTime))
-			self:AddDoubleLine("Spawn index:", spawnIndex)
-		end
-	end
-
-	-- Does the tooltip have a target?
-	if self.AllTheThingsProcessing and target and id then
-		-- Yes.
-		local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",id);
-		-- print(target, type, npc_id);
-		if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L["GUID"], id) end
-		if type == "Player" then
-			local method = PLAYER_TOOLTIPS[id];
-			if method then method(self, target); end
-		elseif type == "Creature" or type == "Vehicle" then
-			AttachTooltipSearchResults(self, 1, "creatureID:" .. npc_id, SearchForField, "creatureID", tonumber(npc_id));
-		end
-		return true;
-	end
-
-	-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
-	if self.AllTheThingsProcessing and spellID then
-		AttachTooltipSearchResults(self, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID);
-		return true;
-	end
-
-	-- Does the tooltip have an itemlink?
-	if self.AllTheThingsProcessing and link then
-		-- local _, _, Color, Ltype, Id, Enchant, Gem1, Gem2, Gem3, Gem4, Suffix, Unique, LinkLvl, reforging, Name = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
-		-- local _, _, _, Ltype, Id = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*):?(%d*):?(%d*):?(%-?%d*):?(%-?%d*):?(%d*):?(%d*)|?h?%[?([^%[%]]*)%]?|?h?|?r?");
-		-- local _, _, _, Ltype, Id = string.find(link, "|?c?f?f?(%x*)|?H?([^:]*):?(%d+):?(%d*):?(%d*):?(%d*)");
-		-- print(Ltype,Id);
-		--[[
-		local itemString = string.match(link, "item[%-?%d:]+");
-		-- mythic keystones have no itemID ... ?? so itemString is nil here
-		if not AllTheThingsAuctionData then return end;
-		if AllTheThingsAuctionData[itemID] then
-			self:AddLine("ATT -> " .. BUTTON_LAG_AUCTIONHOUSE .. " -> " .. GetCoinTextureString(AllTheThingsAuctionData[itemID]["price"]));
-		end--]]
-		-- app.PrintDebug("Search Item",link,id,ttId);
-		if id == 137642 then -- skip Mark of Honor for now
-			AttachTooltipSearchResults(self, 1, link, app.EmptyFunction, "itemID", 137642);
-			return true;
-		else
-			local itemID = GetItemInfoInstant(link);
-			-- TODO: review if Blizzard ever fixes their tooltips returning the wrong Item link when using TooltipUtil.GetDisplayedItem
-			-- on Auction House tooltips (i.e. Recipes) where one Item is nested inside another Item
-			if itemID ~= ttId then
-				-- app.PrintDebug("Mismatch TT data!",link,itemID,ttId)
-				-- fallout to the generalized Item search below
-			else
-				AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
-				return true;
-			end
-		end
-	end
-
-	-- Check the extra data to see if there's an alternate search for the data
-	if ttType then
-		local knownSearchField = TooltipTypes[ttType];
-		if not knownSearchField then
-			-- other ways to search
-			if ttType == Enum_TooltipDataType.Mount then
-				knownSearchField = "spellID";
-				ttId = select(2, C_MountJournal.GetMountInfoByID(ttId));
-			end
-			if ttType == Enum_TooltipDataType.Object then
-				local objName = ttdata and ttdata.lines[1];
-				objName = objName and objName.leftText;
-				local objectID = GetBestObjectIDForName(objName);
-				if objectID then
-					knownSearchField = "objectID";
-					ttId = objectID;
-				end
-			end
-			if ttType == 21 then	-- Minimap mouseover
-				local content = ttdata.lines;
-				if content and #content > 0 then
-					local text = content[1].leftText;
-					local arr = { strsplit("|", text) };
-					if #arr == 3 then text = strsub(arr[3], 2); end
-					local objectID = GetBestObjectIDForName(text);
-					if objectID then
-						knownSearchField = "objectID";
-						ttId = objectID;
-					end
-				end
-			end
-		end
-		if knownSearchField and ttId then
-			-- app.PrintDebug("TT Search",knownSearchField,ttId)
-			AttachTooltipSearchResults(self, 1, knownSearchField..":"..ttId, SearchForField, knownSearchField, tonumber(ttId));
-			return true;
-		end
-	end
-	-- print("AttachTooltip-Return");
-end
+-- Battle Pet Tooltips
 local function AttachBattlePetTooltip(self, data, quantity, detail)
 	if not data or data.att or not data.speciesID then return end
 	data.att = 1;
@@ -664,162 +420,374 @@ local function AttachBattlePetTooltip(self, data, quantity, detail)
 	self:Show()
 	return true;
 end
+--hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
--- for now, checking if it still works at least with this module turned on.
--- It very much doesn't know what TooltipUtil is. (null reference)
-if app.IsClassic then
-AttachTooltip = function(self)
-	if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
-	if not self.AllTheThingsProcessing then
-		self.AllTheThingsProcessing = true;
-		
+-- Tooltip API Differences between Modern and Legacy APIs.
+if TooltipDataProcessor then
+	-- 10.0.2
+	-- https://wowpedia.fandom.com/wiki/Patch_10.0.2/API_changes#Tooltip_Changes
+	-- many of these don't include an ID in-game so they don't attach results. maybe someday they will...
+	local Enum_TooltipDataType, GetItemInfoInstant, TooltipUtil = Enum.TooltipDataType, GetItemInfoInstant, TooltipUtil;
+	local TooltipTypes = {
+		[Enum_TooltipDataType.Toy] = "itemID",
+		[Enum_TooltipDataType.Item] = "itemID",
+		[Enum_TooltipDataType.Spell] = "spellID",
+		[Enum_TooltipDataType.UnitAura] = "spellID",
+		-- [Enum_TooltipDataType.Mount] = "spellID",	-- need special conversion
+		--[Enum_TooltipDataType.Macro] = "spellID",	-- Possibly?
+		[Enum_TooltipDataType.Achievement] = "achievementID",
+		[Enum_TooltipDataType.Quest] = "questID",
+		[Enum_TooltipDataType.QuestPartyProgress] = "questID",
+		[Enum_TooltipDataType.BattlePet] = "speciesID",
+		[Enum_TooltipDataType.CompanionPet] = "speciesID",
+		[Enum_TooltipDataType.Currency] = "currencyID",
+		[Enum_TooltipDataType.InstanceLock] = "instanceID",
+	};
+	--[[
+	for key,id in pairs(Enum_TooltipDataType) do
+		if not TooltipTypes[id] then
+			print("Not handling Tooltip Type", key, id);
+		end
+	end
+	]]--
+	
+	local function AttachTooltip(self, ttdata)
+		if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
+
+		-- Debugging without ATT exclusions
+		-- local ttType, ttId = ttdata and ttdata.type;
+		-- if ttType then
+		-- 	ttId = ttdata.id;
+		-- 	app.PrintDebug("TT Type",ttType,ttId)
+		-- 	-- app.PrintTable(ttdata)
+		-- end
+
+
+		-- Does the tooltip have an owner?
+		local owner = self:GetOwner();
+		if owner then
+			if owner.SpellHighlightTexture
+			or owner.TrainBook
+			or owner.spendTextShadows then
+				-- Actionbars/Spellbook/Talents UI, don't want that.
+				return true;
+			end
+			-- this is already covered by a default in-game tooltip line:
+			-- AUCTION_HOUSE_BUCKET_VARIATION_EQUIPMENT_TOOLTIP = "Items in this group may vary in stats and appearance. Check the auction's tooltip before buying.";
+			-- if owner.useCircularIconBorder and not self.AllTheThingsProcessing then
+			--	-- print("AH General Item Tooltip")
+			--	-- Generalized tooltip hover of a selected Auction Item -- not always accurate to the actual Items for sale
+			-- 	self:AddLine(L["AUCTION_GENERALIZED_ITEM_WARNING"]);
+			-- end
+			-- print("AttachTooltip-HasOwner");
+
+			--[[--
+			-- Debug all of the available fields on the owner.
+			self:AddDoubleLine("GetOwner", tostring(owner:GetName()));
+			for i,j in pairs(owner) do
+				self:AddDoubleLine(tostring(i), tostring(j));
+			end
+			self:Show();
+			--]]--
+
+			local encounterID = owner.encounterID;
+			if encounterID and not owner.itemID then
+				AttachTooltipSearchResults(self, 1, "encounterID:" .. encounterID, SearchForField, "encounterID", tonumber(encounterID));
+				return true;
+			end
+		end
+
+		local ttType, ttId = ttdata and ttdata.type;
+		if ttType then
+			ttId = ttdata.id;
+		end
+
+		local link, target, spellID, id, _;
+		-- check what this tooltip is currently displaying, and keep that reference
+		-- name, link, id
+		_, link, id = TooltipUtil.GetDisplayedItem(self);
+		if link and not link:find("%[]") then
+			if self.AllTheThingsProcessing and self.AllTheThingsProcessing == link then
+				return true;
+			else
+				self.AllTheThingsProcessing = link;
+			end
+		else
+			-- name, type, UID
+			target, _, id = TooltipUtil.GetDisplayedUnit(self);
+			if target then
+				if self.AllTheThingsProcessing and self.AllTheThingsProcessing == target then
+					return true;
+				else
+					self.AllTheThingsProcessing = target;
+				end
+			else
+				-- name, spellID
+				_, spellID = TooltipUtil.GetDisplayedSpell(self);
+				if spellID then
+					if self.AllTheThingsProcessing and self.AllTheThingsProcessing == spellID then
+						return true;
+					else
+						self.AllTheThingsProcessing = spellID;
+					end
+				end
+			end
+		end
+
+		-- app.PrintDebug(self:GetName(),link,target,spellID,id,ttType,ttId)
+
+		--[[--]
+		-- Debug all of the available fields on the tooltip.
+		app.PrintDebug("Tooltip Data")
+		for i,j in pairs(self) do
+			app.PrintDebug(i,type(j),j);
+		end
+		-- self:Show();
+		--]]--
+
 		-- Does this tooltip have an OnClear attached for ATT since it can handle content which ATT will attach to?
-		if not self.AllTheThingsOnTooltipClearedHook then
+		if self.AllTheThingsProcessing and not self.AllTheThingsOnTooltipClearedHook then
 			local tooltipName = self:GetName();
 			if tooltipName and HookableTooltips[tooltipName] then
 				-- app.PrintDebug("Hooking ClearTooltip",tooltipName)
 				pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip)
+				-- if pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip) then
+				-- 	app.PrintDebug("Hooked")
+				-- end
 				self.AllTheThingsOnTooltipClearedHook = true;
 			else
-				--app.PrintDebug("Ignoring Tooltip",tooltipName)
+				app.PrintDebug("Ignoring Tooltip",tooltipName)
 				-- otherwise mark them as ignored so ATT doesn't process them
 				self.AllTheThingsIgnored = true;
 			end
 		end
-		
-		local numLines = self:NumLines();
-		if numLines > 0 then
-			--[[--
-			-- Debug all of the available fields on the tooltip.
-			for i,j in pairs(self) do
-				self:AddDoubleLine(tostring(i), tostring(j));
+
+		if id and app.Debugging then
+			local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",id);
+			if spawn_uid then
+				local spawnEpoch = GetServerTime() - (GetServerTime() % 2^23)
+				local spawnEpochOffset = bit.band(tonumber(string.sub(spawn_uid, 5), 16), 0x7fffff)
+				local spawnIndex = bit.rshift(bit.band(tonumber(string.sub(spawn_uid, 1, 5), 16), 0xffff8), 3)
+				local spawnTime = spawnEpoch + spawnEpochOffset
+
+				if spawnTime > GetServerTime() then
+					-- This only occurs if the epoch has rolled over since a unit has spawned.
+					spawnTime = spawnTime - ((2^23) - 1)
+				end
+				self:AddDoubleLine("Spawned at:", date("%Y-%m-%d %H:%M:%S", spawnTime))
+				self:AddDoubleLine("Spawn index:", spawnIndex)
 			end
-			self:Show();
-			self:AddDoubleLine("GetItem", tostring(select(2, self:GetItem()) or "nil"));
-			self:AddDoubleLine("GetSpell", tostring(select(2, self:GetSpell()) or "nil"));
-			self:AddDoubleLine("GetUnit", tostring(select(2, self:GetUnit()) or "nil"));
-			--]]--
+		end
 
-			-- Does the tooltip have an owner?
-			local owner = self:GetOwner();
-
-			-- Does the tooltip have a target?
-			local target = select(2, self:GetUnit());
-			if target then
-				-- Yes.
-				local guid = UnitGUID(target);
-				if guid then
-					local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid);
-					--print(guid, type, npcID);
-					if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L["GUID"], guid) end
-					if type == "Player" then
-						local method = PLAYER_TOOLTIPS[guid];
-						if method then method(self, target); end
-					elseif type == "Creature" or type == "Vehicle" then
-						if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npcID)); end
-						AttachTooltipSearchResults(self, 1, "creatureID:" .. npcID, SearchForField, "creatureID", tonumber(npcID));
-					end
-					return true;
-				end
+		-- Does the tooltip have a target?
+		if self.AllTheThingsProcessing and target and id then
+			-- Yes.
+			local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",id);
+			-- print(target, type, npc_id);
+			if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L["GUID"], id) end
+			if type == "Player" then
+				local method = PLAYER_TOOLTIPS[id];
+				if method then method(self, target); end
+			elseif type == "Creature" or type == "Vehicle" then
+				AttachTooltipSearchResults(self, 1, "creatureID:" .. npc_id, SearchForField, "creatureID", tonumber(npc_id));
 			end
+			return true;
+		end
 
-			-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
-			local spellID = select(2, self:GetSpell());
-			if spellID then
-				if owner.SpellHighlightTexture then
-					-- Actionbars, don't want that.
-					return true;
-				end
-				AttachTooltipSearchResults(self, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID);
-				self:Show();
-				if owner and owner.ActiveTexture then
-					self.AllTheThingsProcessing = nil;
-				end
+		-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
+		if self.AllTheThingsProcessing and spellID then
+			AttachTooltipSearchResults(self, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID);
+			return true;
+		end
+
+		-- Does the tooltip have an itemlink?
+		if self.AllTheThingsProcessing and link then
+			-- app.PrintDebug("Search Item",link,id,ttId);
+			if id == 137642 then -- skip Mark of Honor for now
+				AttachTooltipSearchResults(self, 1, link, app.EmptyFunction, "itemID", 137642);
 				return true;
+			else
+				local itemID = GetItemInfoInstant(link);
+				-- TODO: review if Blizzard ever fixes their tooltips returning the wrong Item link when using TooltipUtil.GetDisplayedItem
+				-- on Auction House tooltips (i.e. Recipes) where one Item is nested inside another Item
+				if itemID ~= ttId then
+					-- app.PrintDebug("Mismatch TT data!",link,itemID,ttId)
+					-- fallout to the generalized Item search below
+				else
+					AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
+					return true;
+				end
 			end
+		end
 
-			-- Does the tooltip have an itemlink?
-			local itemName, link = self:GetItem();
-			if link then
-				if owner and owner.cooldownWrapper then
-					local parent = owner:GetParent();
-					if parent then
-						parent = parent:GetParent();
-						if parent and parent.fanfareToys then
-							-- Toy Box, it needs a Show call.
-							-- Also the ToyBox UI is broken and returns the wrong item information when you look at any other item's tooltip before looking at the toybox.
-							local leftSide = _G[self:GetName() .. "TextLeft1"]:GetText();
-							if itemName ~= leftSide then link = select(2, GetItemInfo(leftSide)); end
-							AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
-							self:Show();
-							return true;
+		-- Check the extra data to see if there's an alternate search for the data
+		if ttType then
+			local knownSearchField = TooltipTypes[ttType];
+			if not knownSearchField then
+				-- other ways to search
+				if ttType == Enum_TooltipDataType.Mount then
+					knownSearchField = "spellID";
+					ttId = select(2, C_MountJournal.GetMountInfoByID(ttId));
+				end
+				if ttType == Enum_TooltipDataType.Object then
+					local objName = ttdata and ttdata.lines[1];
+					objName = objName and objName.leftText;
+					local objectID = GetBestObjectIDForName(objName);
+					if objectID then
+						knownSearchField = "objectID";
+						ttId = objectID;
+					end
+				end
+				if ttType == 21 then	-- Minimap mouseover
+					local content = ttdata.lines;
+					if content and #content > 0 then
+						local text = content[1].leftText;
+						local arr = { strsplit("|", text) };
+						if #arr == 3 then text = strsub(arr[3], 2); end
+						local objectID = GetBestObjectIDForName(text);
+						if objectID then
+							knownSearchField = "objectID";
+							ttId = objectID;
 						end
 					end
 				end
-
-				-- Normal item tooltip, not on the Toy Box.
-				AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
-				return true;
 			end
-
-			-- If the owner has a ref, it's an ATT row. Ignore it.
-			if owner and owner.ref then return true; end
-
-			local objectID = GetBestObjectIDForName(_G[self:GetName() .. "TextLeft1"]:GetText());
-			if objectID then
-				AttachTooltipSearchResults(self, 1, "objectID:" .. objectID, SearchForField, "objectID", objectID);
-				self:Show();
+			if knownSearchField and ttId then
+				-- app.PrintDebug("TT Search",knownSearchField,ttId)
+				AttachTooltipSearchResults(self, 1, knownSearchField..":"..ttId, SearchForField, knownSearchField, tonumber(ttId));
 				return true;
 			end
 		end
+		-- print("AttachTooltip-Return");
 	end
-end
-end
-
--- Raw Tooltip Hooks
---[[
-for name,func in pairs(getmetatable(GameTooltip).__index) do
-	print(name);
-	if type(func) == "function" and name ~= "IsOwned" and name ~= "GetOwner" then
-		(function(n,f) GameTooltip[n] = function(...)
-				print("GameTooltip", n, ...);
-				return f(...);
+	app.AddEventHandler("OnReady", function()
+		TooltipDataProcessor.AddTooltipPostCall(TooltipDataProcessor.AllTypes, AttachTooltip)
+		-- TooltipDataProcessor.AddTooltipPostCall(Enum_TooltipDataType.Item, OnTooltipSetItem)
+	end);
+else
+	-- Pre-10.0.2 (Legacy)
+	function AttachTooltip(self)
+		if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
+		if not self.AllTheThingsProcessing then
+			self.AllTheThingsProcessing = true;
+			
+			-- Does this tooltip have an OnClear attached for ATT since it can handle content which ATT will attach to?
+			if not self.AllTheThingsOnTooltipClearedHook then
+				local tooltipName = self:GetName();
+				if tooltipName and HookableTooltips[tooltipName] then
+					-- app.PrintDebug("Hooking ClearTooltip",tooltipName)
+					pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip)
+					self.AllTheThingsOnTooltipClearedHook = true;
+				else
+					--app.PrintDebug("Ignoring Tooltip",tooltipName)
+					-- otherwise mark them as ignored so ATT doesn't process them
+					self.AllTheThingsIgnored = true;
+				end
 			end
-		end)(name, func);
-	end
-end
-]]--
+			
+			local numLines = self:NumLines();
+			if numLines > 0 then
+				--[[--
+				-- Debug all of the available fields on the tooltip.
+				for i,j in pairs(self) do
+					self:AddDoubleLine(tostring(i), tostring(j));
+				end
+				self:Show();
+				self:AddDoubleLine("GetItem", tostring(select(2, self:GetItem()) or "nil"));
+				self:AddDoubleLine("GetSpell", tostring(select(2, self:GetSpell()) or "nil"));
+				self:AddDoubleLine("GetUnit", tostring(select(2, self:GetUnit()) or "nil"));
+				--]]--
 
-local function OnReadyHooks()
-	local GameTooltip_SetLFGDungeonShortageReward = GameTooltip.SetLFGDungeonShortageReward;
-	if GameTooltip_SetLFGDungeonShortageReward then
-		GameTooltip.SetLFGDungeonShortageReward = function(self, dungeonID, shortageSeverity, lootIndex)
-			--app.PrintDebug("GameTooltip.SetLFGDungeonShortageReward",dungeonID, shortageSeverity, lootIndex );
-			GameTooltip_SetLFGDungeonShortageReward(self, dungeonID, shortageSeverity, lootIndex);
-			if CanAttachTooltips() then
-				local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonShortageRewardInfo(dungeonID, shortageSeverity, lootIndex);
-				if itemID then
-					if spec == "item" then
-						AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
-						self:Show();
-					elseif spec == "currency" then
-						AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
-						self:Show();
+				-- Does the tooltip have an owner?
+				local owner = self:GetOwner();
+
+				-- Does the tooltip have a target?
+				local target = select(2, self:GetUnit());
+				if target then
+					-- Yes.
+					local guid = UnitGUID(target);
+					if guid then
+						local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid);
+						--print(guid, type, npcID);
+						if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L["GUID"], guid) end
+						if spawn_uid then
+							local serverTime = GetServerTime();
+							local spawnEpoch = serverTime - (serverTime % 2^23)
+							local spawnEpochOffset = bit.band(tonumber(spawn_uid:sub(5), 16), 0x7fffff)
+							local spawnIndex = bit.rshift(bit.band(tonumber(spawn_uid:sub(1, 5), 16), 0xffff8), 3)
+							local spawnTime = spawnEpoch + spawnEpochOffset
+
+							if spawnTime > serverTime then
+								-- This only occurs if the epoch has rolled over since a unit has spawned.
+								spawnTime = spawnTime - ((2^23) - 1)
+							end
+							self:AddDoubleLine("Spawned at:", date("%Y-%m-%d %H:%M:%S", spawnTime))
+							self:AddDoubleLine("Spawn index:", spawnIndex)
+						end
+						if type == "Player" then
+							local method = PLAYER_TOOLTIPS[guid];
+							if method then method(self, target); end
+						elseif type == "Creature" or type == "Vehicle" then
+							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npcID)); end
+							AttachTooltipSearchResults(self, 1, "creatureID:" .. npcID, SearchForField, "creatureID", tonumber(npcID));
+						end
+						
+						return true;
 					end
+				end
+
+				-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
+				local spellID = select(2, self:GetSpell());
+				if spellID then
+					if owner.SpellHighlightTexture then
+						-- Actionbars, don't want that.
+						return true;
+					end
+					AttachTooltipSearchResults(self, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID);
+					self:Show();
+					if owner and owner.ActiveTexture then
+						self.AllTheThingsProcessing = nil;
+					end
+					return true;
+				end
+
+				-- Does the tooltip have an itemlink?
+				local itemName, link = self:GetItem();
+				if link then
+					if owner and owner.cooldownWrapper then
+						local parent = owner:GetParent();
+						if parent then
+							parent = parent:GetParent();
+							if parent and parent.fanfareToys then
+								-- Toy Box, it needs a Show call.
+								-- Also the ToyBox UI is broken and returns the wrong item information when you look at any other item's tooltip before looking at the toybox.
+								local leftSide = _G[self:GetName() .. "TextLeft1"]:GetText();
+								if itemName ~= leftSide then link = select(2, GetItemInfo(leftSide)); end
+								AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
+								self:Show();
+								return true;
+							end
+						end
+					end
+
+					-- Normal item tooltip, not on the Toy Box.
+					AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
+					return true;
+				end
+
+				-- If the owner has a ref, it's an ATT row. Ignore it.
+				if owner and owner.ref then return true; end
+
+				local objectID = GetBestObjectIDForName(_G[self:GetName() .. "TextLeft1"]:GetText());
+				if objectID then
+					AttachTooltipSearchResults(self, 1, "objectID:" .. objectID, SearchForField, "objectID", objectID);
+					self:Show();
+					return true;
 				end
 			end
 		end
 	end
-	
-	-- 10.0.2
-	-- https://wowpedia.fandom.com/wiki/Patch_10.0.2/API_changes#Tooltip_Changes
-	if TooltipDataProcessor then
-		-- TODO: maybe in future refine this to specific tooltip datas that we actually can utilize...
-
-		-- app.PrintDebug("Tooltip Attach Process")
-		TooltipDataProcessor.AddTooltipPostCall(TooltipDataProcessor.AllTypes, AttachTooltip)
-		-- TooltipDataProcessor.AddTooltipPostCall(Enum_TooltipDataType.Item, OnTooltipSetItem)
-	else
+	app.AddEventHandler("OnReady", function()
 		GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 		GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 		GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
@@ -864,6 +832,26 @@ local function OnReadyHooks()
 			end
 		end
 		
+		local GameTooltip_SetLFGDungeonShortageReward = GameTooltip.SetLFGDungeonShortageReward;
+		if GameTooltip_SetLFGDungeonShortageReward then
+			GameTooltip.SetLFGDungeonShortageReward = function(self, dungeonID, shortageSeverity, lootIndex)
+				--app.PrintDebug("GameTooltip.SetLFGDungeonShortageReward",dungeonID, shortageSeverity, lootIndex );
+				GameTooltip_SetLFGDungeonShortageReward(self, dungeonID, shortageSeverity, lootIndex);
+				if CanAttachTooltips() then
+					local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonShortageRewardInfo(dungeonID, shortageSeverity, lootIndex);
+					if itemID then
+						if spec == "item" then
+							AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
+							self:Show();
+						elseif spec == "currency" then
+							AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
+							self:Show();
+						end
+					end
+				end
+			end
+		end
+		
 		local GameTooltip_SetCurrencyByID = GameTooltip.SetCurrencyByID;
 		if GameTooltip_SetCurrencyByID then
 			GameTooltip.SetCurrencyByID = function(self, currencyID, count)
@@ -891,23 +879,21 @@ local function OnReadyHooks()
 				end
 			end
 		end
-	end
-end
-
--- Wrath has a really dumb thing that pulses tooltip updates.
-if app.IsClassic and app.GameBuildVersion > 11403 then
-	app:RegisterEvent("CURSOR_CHANGED");
-	app.events.CURSOR_CHANGED = function()
-		app:StartATTCoroutine("UpdateTooltip", function()
-			while not GameTooltip:IsShown() do
-				coroutine.yield();
+		
+		-- Wrath has a really dumb thing that pulses tooltip updates.
+		if app.IsClassic and app.GameBuildVersion > 11403 then
+			app:RegisterEvent("CURSOR_CHANGED");
+			app.events.CURSOR_CHANGED = function()
+				app:StartATTCoroutine("UpdateTooltip", function()
+					while not GameTooltip:IsShown() do
+						coroutine.yield();
+					end
+					AttachTooltip(GameTooltip);
+				end);
 			end
-			AttachTooltip(GameTooltip);
-		end);
-	end
+		end
+	end);
 end
-
---hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
 -- Tooltip API Implementation
 -- Access via AllTheThings.Modules.Tooltip
@@ -921,10 +907,7 @@ app.AddEventHandler("OnLoad", function()
 	L = app.L;
 	GetCurrentMapID = app.GetCurrentMapID;
 	OnLoad_CacheObjectNames();
-end)
-app.AddEventHandler("OnReady", function()
-	OnReadyHooks();
-end)
+end);
 
 -- TODO: This is referenced in addon database code in classic, refactor this.
 -- Don't worry about optimizing it for now.
