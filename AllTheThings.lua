@@ -1029,6 +1029,7 @@ app.MergeProperties = MergeProperties;
 -- The base logic for turning a Table of data into an 'object' that provides dynamic information concerning the type of object which was identified
 -- based on the priority of possible key values
 local function CreateObject(t, rootOnly)
+	-- app.PrintDebug("CO",t);
 	-- Commented this part out because there aren't enough class definitions exposed to the logic yet
 	-- Retail class design is still wildin' and doesn't use the CreateClass functionality
 	--local object = app.CloneClassInstance(t, rootOnly);
@@ -1037,7 +1038,7 @@ local function CreateObject(t, rootOnly)
 	-- already an object, so need to create a new instance of the same data
 	if t.key then
 		local result = {};
-		-- app.PrintDebug("CreateObject from key via merge",t.key,t[t.key], t, result);
+		-- app.PrintDebug("CO.key",t.key,t[t.key],"=>",result);
 		MergeProperties(result, t, nil, true);
 		-- include the raw g since it will be replaced at the end with new objects
 		result.g = t.g;
@@ -1051,7 +1052,7 @@ local function CreateObject(t, rootOnly)
 	elseif t[1] then
 		local result = {};
 		-- array
-		-- app.PrintDebug("CreateObject on array",#t);
+		-- app.PrintDebug("CO.[]","=>",result);
 		for i,o in ipairs(t) do
 			result[i] = CreateObject(o, rootOnly);
 		end
@@ -1061,10 +1062,11 @@ local function CreateObject(t, rootOnly)
 		-- a table which somehow has a metatable which doesn't include a 'key' field...
 		local meta = getmetatable(t);
 		if meta then
+			app.PrintDebug(Colorize("Bad CreateObject (metatable without key) used:",app.Colors.ChatLinkError))
+			app.PrintTable(t)
 			local result = {};
-			for k,v in pairs(t) do
-				result[k] = v
-			end
+			-- app.PrintDebug("CO.meta","=>",result);
+			MergeProperties(result, t, nil, true);
 			if not rootOnly and t.g then
 				local newg = {}
 				result.g = newg
@@ -1144,7 +1146,7 @@ local function CreateObject(t, rootOnly)
 		elseif t.text then
 			t = app.CreateRawText(t.text, t)
 		else
-			-- app.PrintDebug("CreateObject by value, no specific object type");
+			-- app.PrintDebug("CO:raw");
 			-- app.PrintTable(t);
 			if rootOnly then
 				-- shallow copy the root table only, since using t as a metatable will allow .g to exist still on the table
@@ -1159,6 +1161,7 @@ local function CreateObject(t, rootOnly)
 				t = setmetatable({}, { __index = t });
 			end
 		end
+		-- app.PrintDebug("CO.field","=>",t);
 	end
 
 	-- allows for copying an object without all of the sub-groups
@@ -13418,8 +13421,7 @@ function app:GetDataCache()
 	-- app.PrintMemoryUsage()
 
 	-- Update the Row Data by filtering raw data (this function only runs once)
-	local rootData = setmetatable({
-		text = L["TITLE"],
+	local rootData = app.CreateRawText(L.TITLE, {
 		icon = app.asset("logo_32x32"),
 		preview = app.asset("Discord_2_128"),
 		description = L["DESCRIPTION"],
@@ -13477,40 +13479,32 @@ function app:GetDataCache()
 	local g, db = rootData.g;
 
 	-- Dungeons & Raids
-	db = {};
+	db = app.CreateRawText(GROUP_FINDER);
 	db.g = app.Categories.Instances;
-	db.text = GROUP_FINDER;
-	db.name = db.text;
 	db.icon = app.asset("Category_D&R");
 	tinsert(g, db);
 
 	-- Zones
 	if app.Categories.Zones then
-		db = {};
+		db = app.CreateRawText(BUG_CATEGORY2);
 		db.g = app.Categories.Zones;
-		db.text = BUG_CATEGORY2;
-		db.name = db.text;
 		db.icon = app.asset("Category_Zones")
 		tinsert(g, db);
 	end
 
 	-- World Drops
 	if app.Categories.WorldDrops then
-		db = {};
+		db = app.CreateRawText(TRANSMOG_SOURCE_4);
 		db.g = app.Categories.WorldDrops;
 		db.isWorldDropCategory = true;
-		db.text = TRANSMOG_SOURCE_4;
-		db.name = db.text;
 		db.icon = app.asset("Category_WorldDrops");
 		tinsert(g, db);
 	end
 
 	-- Group Finder
 	if app.Categories.GroupFinder then
-		db = {};
+		db = app.CreateRawText(DUNGEONS_BUTTON);
 		db.g = app.Categories.GroupFinder;
-		db.text = DUNGEONS_BUTTON;
-		db.name = db.text;
 		db.icon = app.asset("Category_GroupFinder")
 		tinsert(g, db);
 	end
@@ -13527,11 +13521,10 @@ function app:GetDataCache()
 
 	-- Expansion Features
 	if app.Categories.ExpansionFeatures then
-		db = {};
+		local text = GetCategoryInfo(15301)
+		db = app.CreateRawText(text);
 		db.g = app.Categories.ExpansionFeatures;
 		db.lvl = 10;
-		db.text = GetCategoryInfo(15301);
-		db.name = db.text;
 		db.description = "These expansion features are new systems or ideas by Blizzard which are spread over multiple zones. For the ease of access & for the sake of reducing numbers, these are tagged as expansion features.\nIf an expansion feature is limited to 1 zone, it will continue being listed only under its respective zone.";
 		db.icon = app.asset("Category_ExpansionFeatures");
 		tinsert(g, db);
@@ -13547,9 +13540,7 @@ function app:GetDataCache()
 
 	-- Events
 	if app.Categories.WorldEvents then
-		db = {};
-		db.text = BATTLE_PET_SOURCE_7;
-		db.name = db.text;
+		db = app.CreateRawText(BATTLE_PET_SOURCE_7);
 		db.description = "These events occur at different times in the game's timeline, typically as one time server wide events. Special celebrations such as Anniversary events and such may be found within this category.";
 		db.icon = app.asset("Category_Event");
 		db.g = app.Categories.WorldEvents;
@@ -13558,9 +13549,7 @@ function app:GetDataCache()
 
 	-- Promotions
 	if app.Categories.Promotions then
-		db = {};
-		db.text = BATTLE_PET_SOURCE_8;
-		db.name = db.text;
+		db = app.CreateRawText(BATTLE_PET_SOURCE_8);
 		db.description = "This section is for real world promotions that seeped extremely rare content into the game prior to some of them appearing within the In-Game Shop.";
 		db.icon = app.asset("Category_Promo");
 		db.g = app.Categories.Promotions;
@@ -13587,11 +13576,9 @@ function app:GetDataCache()
 
 	-- Craftables
 	if app.Categories.Craftables then
-		db = {};
+		db = app.CreateRawText(LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM);
 		db.g = app.Categories.Craftables;
 		db.DontEnforceSkillRequirements = true;
-		db.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM;
-		db.name = db.text;
 		db.icon = app.asset("Category_Crafting");
 		tinsert(g, db);
 	end
@@ -13610,10 +13597,8 @@ function app:GetDataCache()
 
 	-- Character
 	if app.Categories.Character then
-		db = {};
+		db = app.CreateRawText(CHARACTER);
 		db.g = app.Categories.Character;
-		db.text = CHARACTER;
-		db.name = db.text;
 		db.icon = app.asset("Category_ItemSets");
 		tinsert(g, db);
 	end
@@ -13626,10 +13611,8 @@ function app:GetDataCache()
 
 	-- Trading Post
 	if app.Categories.TradingPost then
-		db = {};
+		db = app.CreateRawText(L.TRADING_POST);	-- Probably some global string Later
 		db.g = app.Categories.TradingPost;
-		db.text = L["TRADING_POST"];	-- Probably some global string Later
-		db.name = db.text;
 		db.icon = app.asset("Category_TradingPost");
 		tinsert(g, db);
 	end
@@ -13779,8 +13762,7 @@ function app:GetDataCache()
 	}));
 
 	-- Create Dynamic Groups Button
-	tinsert(g, {
-		["text"] = sformat(L["CLICK_TO_CREATE_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]);
+	tinsert(g, app.CreateRawText(sformat(L["CLICK_TO_CREATE_FORMAT"], L["DYNAMIC_CATEGORY_LABEL"]), {
 		["icon"] = app.asset("Interface_CreateDynamic"),
 		["OnUpdate"] = app.AlwaysShowUpdate,
 		-- ["OnClick"] = function(row, button)
@@ -13827,6 +13809,7 @@ function app:GetDataCache()
 			app.CreateDynamicHeader("conduitID", SimpleNPCGroup(-981, {suffix=EXPANSION_NAME8})),
 
 			-- Drake Manuscripts (TODO)
+			-- app.CreateDynamicHeader("dmID", SimpleNPCGroup(app.HeaderConstants.DRA)),
 
 			-- Factions
 			app.CreateDynamicHeaderByValue("factionID", {
@@ -13912,7 +13895,7 @@ function app:GetDataCache()
 			}),
 
 		},
-	});
+	}));
 
 	-- The Main Window's Data
 	app.refreshDataForce = true;
@@ -13929,8 +13912,7 @@ function app:GetDataCache()
 
 	-- Now build the hidden "Unsorted" Window's Data
 	g = {};
-	local unsortedData = setmetatable({
-		text = L["TITLE"] .. " " .. L["UNSORTED_1"],
+	local unsortedData = app.CreateRawText(L["TITLE"] .. " " .. L["UNSORTED_1"], {
 		title = L["UNSORTED_1"] .. DESCRIPTION_SEPARATOR .. app.Version,
 		icon = app.asset("logo_32x32"),
 		preview = app.asset("Discord_2_128"),
@@ -13944,10 +13926,8 @@ function app:GetDataCache()
 
 	-- Never Implemented
 	if app.Categories.NeverImplemented then
-		db = {};
+		db = app.CreateRawText(L.NEVER_IMPLEMENTED)
 		db.g = app.Categories.NeverImplemented;
-		db.name = L["NEVER_IMPLEMENTED"];
-		db.text = db.name;
 		db.description = L["NEVER_IMPLEMENTED_DESC"];
 		db._nyi = true;
 		tinsert(g, db);
@@ -13957,10 +13937,8 @@ function app:GetDataCache()
 
 	-- Hidden Achievement Triggers
 	if app.Categories.HiddenAchievementTriggers then
-		db = {};
+		db = app.CreateRawText("Hidden Achievement Triggers")
 		db.g = app.Categories.HiddenAchievementTriggers;
-		db.name = "Hidden Achievement Triggers";
-		db.text = db.name;
 		db.description = "Hidden Achievement Triggers";
 		db._hqt = true;
 		tinsert(g, db);
@@ -13969,10 +13947,8 @@ function app:GetDataCache()
 
 	-- Hidden Quest Triggers
 	if app.Categories.HiddenQuestTriggers then
-		db = {};
+		db = app.CreateRawText(L.HIDDEN_QUEST_TRIGGERS)
 		db.g = app.Categories.HiddenQuestTriggers;
-		db.name = L["HIDDEN_QUEST_TRIGGERS"];
-		db.text = db.name;
 		db.description = L["HIDDEN_QUEST_TRIGGERS_DESC"];
 		db._hqt = true;
 		tinsert(g, db);
@@ -13981,10 +13957,8 @@ function app:GetDataCache()
 
 	-- Unsorted
 	if app.Categories.Unsorted then
-		db = {};
+		db = app.CreateRawText(L.UNSORTED_1)
 		db.g = app.Categories.Unsorted;
-		db.name = L["UNSORTED_1"];
-		db.text = db.name;
 		db.description = L["UNSORTED_DESC_2"];
 		-- since unsorted is technically auto-populated, anything nested under it is considered 'missing' in ATT
 		db._missing = true;
