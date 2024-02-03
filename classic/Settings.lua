@@ -163,6 +163,7 @@ local TooltipSettingsBase = {
 		["Descriptions"] = true,
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
+		["Enabled:Mod"] = "None",
 		["KnownBy"] = true,
 		["Locations"] = 5,
 		["Lore"] = true,
@@ -681,6 +682,26 @@ settings.UpdateMode = function(self, doRefresh)
 		app:RefreshDataCompletely("UpdateMode");
 	end
 	self:Refresh();
+end
+
+local ModifierFuncs = {
+	["Shift"] = IsShiftKeyDown,
+	["Ctrl"] = IsControlKeyDown,
+	["Alt"] = IsAltKeyDown,
+	["Cmd"] = IsMetaKeyDown,
+}
+settings.GetTooltipSettingWithMod = function(self, setting)
+	-- only returns 'true' for the requested TooltipSetting if the Setting's associated Modifier key is currently being pressed
+	local v = ATTClassicSettings.Tooltips[setting]
+	if not v then return v end
+	local k = ATTClassicSettings.Tooltips[setting..":Mod"]
+	if k == "None" then
+		return v
+	end
+	local func = ModifierFuncs[k]
+	if func and func() then
+		return v
+	end
 end
 
 app.AddEventHandler("OnPlayerLevelUp", function()

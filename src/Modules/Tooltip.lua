@@ -662,6 +662,116 @@ local function AttachBattlePetTooltip(self, data, quantity, detail)
 	return true;
 end
 
+-- for now, checking if it still works at least with this module turned on.
+-- It very much doesn't know what TooltipUtil is. (null reference)
+if app.IsClassic then
+AttachTooltip = function(self)
+	if self.AllTheThingsIgnored or not CanAttachTooltips() then return; end
+	if not self.AllTheThingsProcessing then
+		self.AllTheThingsProcessing = true;
+		
+		-- Does this tooltip have an OnClear attached for ATT since it can handle content which ATT will attach to?
+		if not self.AllTheThingsOnTooltipClearedHook then
+			local tooltipName = self:GetName();
+			if tooltipName and HookableTooltips[tooltipName] then
+				-- app.PrintDebug("Hooking ClearTooltip",tooltipName)
+				pcall(self.HookScript, self, "OnTooltipCleared", ClearTooltip)
+				self.AllTheThingsOnTooltipClearedHook = true;
+			else
+				--app.PrintDebug("Ignoring Tooltip",tooltipName)
+				-- otherwise mark them as ignored so ATT doesn't process them
+				self.AllTheThingsIgnored = true;
+			end
+		end
+		
+		local numLines = self:NumLines();
+		if numLines > 0 then
+			--[[--
+			-- Debug all of the available fields on the tooltip.
+			for i,j in pairs(self) do
+				self:AddDoubleLine(tostring(i), tostring(j));
+			end
+			self:Show();
+			self:AddDoubleLine("GetItem", tostring(select(2, self:GetItem()) or "nil"));
+			self:AddDoubleLine("GetSpell", tostring(select(2, self:GetSpell()) or "nil"));
+			self:AddDoubleLine("GetUnit", tostring(select(2, self:GetUnit()) or "nil"));
+			--]]--
+
+			-- Does the tooltip have an owner?
+			local owner = self:GetOwner();
+
+			-- Does the tooltip have a target?
+			local target = select(2, self:GetUnit());
+			if target then
+				-- Yes.
+				local guid = UnitGUID(target);
+				if guid then
+					local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid);
+					--print(guid, type, npcID);
+					if type == "Player" then
+						local method = PLAYER_TOOLTIPS[guid];
+						if method then method(self, target); end
+					elseif type == "Creature" or type == "Vehicle" then
+						if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npcID)); end
+						AttachTooltipSearchResults(self, 1, "creatureID:" .. npcID, SearchForField, "creatureID", tonumber(npcID));
+					end
+					return true;
+				end
+			end
+
+			-- Does the tooltip have a spell? [Mount Journal, Action Bars, etc]
+			local spellID = select(2, self:GetSpell());
+			if spellID then
+				if owner.SpellHighlightTexture then
+					-- Actionbars, don't want that.
+					return true;
+				end
+				AttachTooltipSearchResults(self, 1, "spellID:" .. spellID, SearchForField, "spellID", spellID);
+				self:Show();
+				if owner and owner.ActiveTexture then
+					self.AllTheThingsProcessing = nil;
+				end
+				return true;
+			end
+
+			-- Does the tooltip have an itemlink?
+			local itemName, link = self:GetItem();
+			if link then
+				if owner and owner.cooldownWrapper then
+					local parent = owner:GetParent();
+					if parent then
+						parent = parent:GetParent();
+						if parent and parent.fanfareToys then
+							-- Toy Box, it needs a Show call.
+							-- Also the ToyBox UI is broken and returns the wrong item information when you look at any other item's tooltip before looking at the toybox.
+							local leftSide = _G[self:GetName() .. "TextLeft1"]:GetText();
+							if itemName ~= leftSide then link = select(2, GetItemInfo(leftSide)); end
+							AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
+							self:Show();
+							return true;
+						end
+					end
+				end
+
+				-- Normal item tooltip, not on the Toy Box.
+				AttachTooltipSearchResults(self, 1, link, SearchForLink, link);
+				return true;
+			end
+
+			-- If the owner has a ref, it's an ATT row. Ignore it.
+			if owner and owner.ref then return true; end
+
+			local objectID = GetBestObjectIDForName(_G[self:GetName() .. "TextLeft1"]:GetText());
+			if objectID then
+				AttachTooltipSearchResults(self, 1, "objectID:" .. objectID, SearchForField, "objectID", objectID);
+				self:Show();
+				return true;
+			end
+		end
+	end
+end
+end
+
 -- Raw Tooltip Hooks
 --[[
 for name,func in pairs(getmetatable(GameTooltip).__index) do
@@ -709,6 +819,7 @@ local function OnReadyHooks()
 		GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 		GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 		GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
+		--GameTooltip:HookScript("OnUpdate", AttachTooltip);	-- TODO: This was from Classic, verify it not being necessary.
 		ItemRefTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 		ItemRefTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 		ItemRefShoppingTooltip1:HookScript("OnTooltipSetQuest", AttachTooltip);
