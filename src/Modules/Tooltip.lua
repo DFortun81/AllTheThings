@@ -99,10 +99,10 @@ local tooltipFunction = function(self, target)
 	if leftSide and rightSide and not ElvUI then
 		leftSide:SetText(L["TITLE"]);
 		leftSide:Show();
-		rightSide:SetText("Author");
+		rightSide:SetText(app.Modules.Color.Colorize("Author", app.Colors.White));
 		rightSide:Show();
 	else
-		self:AddDoubleLine(L["TITLE"], "Author");
+		self:AddDoubleLine(L["TITLE"], app.Modules.Color.Colorize("Author", app.Colors.White));
 	end
 end
 for i,guid in ipairs({
@@ -124,10 +124,10 @@ tooltipFunction = function(self, target)
 	if leftSide and rightSide and not ElvUI then
 		leftSide:SetText(L["TITLE"]);
 		leftSide:Show();
-		rightSide:SetText("Contributor");
+		rightSide:SetText(app.Modules.Color.Colorize("Contributor", app.Colors.White));
 		rightSide:Show();
 	else
-		self:AddDoubleLine(L["TITLE"], "Contributor");
+		self:AddDoubleLine(L["TITLE"], app.Modules.Color.Colorize("Contributor", app.Colors.White));
 	end
 end
 for i,guid in ipairs({
