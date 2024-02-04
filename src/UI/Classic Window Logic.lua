@@ -33,7 +33,6 @@ local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local GameTooltip = GameTooltip;
 
 -- Implementation
-
 -- Processing Functions (Coroutines)
 local UpdateGroups;
 local function UpdateGroup(group, parent)
@@ -723,7 +722,7 @@ local function RowOnClick(self, button)
 					local _, dialog = StaticPopup_Visible("ALL_THE_THINGS_EDITBOX");
 					if dialog then dialog.editBox:SetText(link); return true; end
 				end
-				if button == "LeftButton" then RefreshCollections(); end
+				if button == "LeftButton" then app.RefreshCollections(); end
 				return true;
 			end
 		end

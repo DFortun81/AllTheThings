@@ -1478,20 +1478,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 		end
-		
-		--[[
-		if group.g then
-			group.total = 0;
-			group.progress = 0;
-			app.UpdateGroups(group, group.g);
-			if group.collectible then
-				group.total = group.total + 1;
-				if group.collected then
-					group.progress = group.progress + 1;
-				end
-			end
-		end
-		]]--
 
 		if group.lore and app.Settings:GetTooltipSetting("Lore") and not (paramA == "titleID") then
 			tinsert(info, 1, { left = group.lore, wrap = true, color = app.Colors.TooltipLore });
@@ -6583,22 +6569,6 @@ app.CreateItemSource = function(sourceID, itemID, t)
 	return t;
 end
 end)();
-
--- Refresh certain kinds of data.
-local function RefreshCollections()
-	app:StartATTCoroutine("RefreshingCollections", function()
-		while InCombatLockdown() do coroutine.yield(); end
-		app.print("Refreshing collection...");
-		
-		-- Execute the OnRefreshCollections handlers.
-		app.HandleEvent("OnRefreshCollections");
-		coroutine.yield();
-		
-		app:RefreshDataCompletely("RefreshCollections");
-		app.print("Done refreshing collection.");
-	end);
-end
-app.RefreshCollections = RefreshCollections;
 
 -- Automatically Refresh Saved Instances
 local function RefreshSaves()
