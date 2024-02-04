@@ -98,8 +98,9 @@ local function CreateMinimapButton()
 		local x, y, q = math.cos(angle), math.sin(angle), 1;
 		if x < 0 then q = q + 1; end
 		if y > 0 then q = q + 2; end
-		local width = Minimap:GetWidth() * 0.5;
-		local height = Minimap:GetHeight() * 0.5;
+		local radius = AllTheThingsSavedVariables.MinimapButtonRadius or 0;
+		local width = (Minimap:GetWidth() * 0.5) + radius;
+		local height = (Minimap:GetHeight() * 0.5) + radius;
 		if MinimapShapes[GetMinimapShape and GetMinimapShape() or "ROUND"][q] then
 			x, y = x * width, y * height;
 		else
@@ -133,6 +134,10 @@ local function CreateMinimapButton()
 	button:update();
 	button:Show();
 	return button;
+end
+app.SetMinimapButtonRadius = function(radius)
+	AllTheThingsSavedVariables.MinimapButtonRadius = type(radius) == "number" and radius or 0;
+	if MinimapButton then MinimapButton:update(); end
 end
 app.SetMinimapButtonSettings = function(visible, size)
 	if visible then
