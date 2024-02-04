@@ -6,7 +6,8 @@
 local rawget, ipairs, pairs, tinsert, setmetatable = rawget, ipairs, pairs, tinsert, setmetatable
 -- This is a hidden frame that intercepts all of the event notifications that we have registered for.
 local appName, app = ...;
-app.EmptyTable = setmetatable({}, { __newindex = function() end });
+app.EmptyFunction = function() end;
+app.EmptyTable = setmetatable({}, { __newindex = app.EmptyFunction });
 
 
 -- Generate the version identifier.
@@ -31,7 +32,8 @@ local assetRootPath = "Interface\\Addons\\" .. appName .. "\\assets\\";
 app.asset = function(path)
 	return assetRootPath .. path;
 end
-app.EmptyFunction = function() end;
+app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
+app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
 app.ReturnTrue = function() return true; end
 app.ReturnFalse = function() return false; end
 app.print = function(...)

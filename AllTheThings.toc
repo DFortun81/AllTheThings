@@ -47,6 +47,7 @@ src\Modules\Color.lua
 src\Modules\Costs.lua
 src\Modules\Events.lua
 src\Modules\Filter.lua
+src\Modules\Social.lua
 src\Modules\Tooltip.lua
 src\Modules\Upgrade.lua
 
@@ -78,10 +79,15 @@ AllTheThings.lua
 src\UI\Game Tooltip.lua
 src\UI\Minimap Button.lua
 
+# Window Logic Overhaul
+src\UI\Shared Window Logic.lua
+src\UI\Retail Window Logic.lua
+
 # Load expansion specific category database.
 db\Dragonflight\Categories.lua
 
 # Window Definitions
+# src\UI\Windows\Prime.lua
 # src\UI\Windows\Achievements.lua
 # src\UI\Windows\Attunements.lua
 # src\UI\Windows\Auctions.lua

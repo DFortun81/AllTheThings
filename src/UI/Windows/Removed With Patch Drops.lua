@@ -3,20 +3,6 @@ local appName, app = ...;
 local tinsert, ipairs = tinsert, ipairs;
 local GetRelativeValue = app.GetRelativeValue;
 
--- Temp Functions
--- TODO: Move this to a module.
-local function BuildSourceTextForChat(group, l)
-	if group.parent then
-		if l < 1 then
-			return BuildSourceTextForChat(group.parent, l + 1);
-		else
-			return BuildSourceTextForChat(group.parent, l + 1) .. " > " .. (group.text or "*");
-		end
-		return group.text or "*";
-	end
-	return "ATT";
-end
-
 -- Local functions
 local ExcludeRecipes, ExcludeRemovedMaps, ExcludeRemovedRares, ExcludeAddedWithPatch;
 local AllowedHeaders = {
@@ -54,7 +40,7 @@ local function Export(g, strings)
 	if g then
 		for i,o in ipairs(g) do
 			if o.itemID then
-				tinsert(strings, o.itemID .. "\\t" .. (o.name or RETRIEVING_DATA) .. "\\t" .. (o.spellID or 0) .. "\\t" .. BuildSourceTextForChat(o, 0));
+				tinsert(strings, o.itemID .. "\\t" .. (o.name or RETRIEVING_DATA) .. "\\t" .. (o.spellID or 0) .. "\\t" .. app.GenerateSourcePathForTooltip(o.parent));
 			end
 			Export(o.g, strings);
 		end

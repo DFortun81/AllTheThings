@@ -1,19 +1,19 @@
 
 -- Refresh Lib
--- Requires lib/Runner
+-- CRIEVE NOTE: Once condensed and the bulk of this lib move elsewhere, 
+-- this lib can be moved elsewhere. (It'll literally be a definition for an event handler)
 local _, app = ...;
+local coroutine, InCombatLockdown = coroutine, InCombatLockdown;
 
--- Concepts:
--- Encapsulates the functionality required to perform refreshes of a User's current Character and Account collection
-
--- Global locals
-local wipe, math_max, tonumber, InCombatLockdown, coroutine, type, select, pcall, ipairs, pairs =
-	  wipe, math.max, tonumber, InCombatLockdown, coroutine, type, select, pcall, ipairs, pairs;
+-- Refresh collection data.
+local RefreshCollections;
+if app.IsRetail then
+-- CRIEVE NOTE: I really don't like the explicit listed data here
+-- I'd much rather have parser export these.
+local wipe, math_max, tonumber, type, select, pcall, ipairs, pairs =
+	  wipe, math.max, tonumber, type, select, pcall, ipairs, pairs;
 local C_MountJournal_GetMountInfoByID, C_MountJournal_GetMountIDs, PlayerHasToy, C_LegendaryCrafting_GetRuneforgePowerInfo, GetAchievementInfo, C_TransmogCollection_GetSourceInfo =
 	  C_MountJournal.GetMountInfoByID, C_MountJournal.GetMountIDs, PlayerHasToy, C_LegendaryCrafting.GetRuneforgePowerInfo, GetAchievementInfo, C_TransmogCollection.GetSourceInfo;
-
--- App locals
-local StartCoroutine = app.StartCoroutine;
 local ATTAccountWideData
 
 local function CacheAccountWideCompleteViaAchievement(accountWideData)
@@ -271,7 +271,7 @@ local function FixWrongAccountWideQuests(accountWideData)
 	end
 end
 
-local function RefreshCollections()
+RefreshCollections = function()
 	local currentCharacter = app.CurrentCharacter;
 	local charGuid = app.GUID;
 	-- for the first auto-refresh, don't actually print to chat since some users don't like that auto-chat on login
@@ -377,6 +377,8 @@ local function RefreshCollections()
 	coroutine.yield();
 
 	-- Execute the OnRefreshCollections handlers.
+	-- TODO: Take all the bulk of this function and make them use the event handler.
+	-- The function used in the Classic section is what I want to see when this is completed.
 	app.HandleEvent("OnRefreshCollections")
 
 	app:RecalculateAccountWideData();
@@ -401,9 +403,28 @@ local function RefreshCollections()
 	-- Report success once refresh is done
 	print(app.L.DONE_REFRESHING);
 end
-app.RefreshCollections = function()
-	StartCoroutine("RefreshingCollections", RefreshCollections);
-end
 app.AddEventHandler("OnStartup", function()
 	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
 end)
+
+else
+-- TODO: Once the Retail version of this function uses ALOT less things manually
+-- and has successfully converted them to using event handlers, then this is what I'm
+-- expecting the function to look like at the end. Probably also add an event handler
+-- to proc when it's "done". Like OnRefreshCollectionsComplete or something?
+RefreshCollections = function()
+	while InCombatLockdown() do coroutine.yield(); end
+	app.print("Refreshing collection...");
+	
+	-- Execute the OnRefreshCollections handlers.
+	app.HandleEvent("OnRefreshCollections");
+	coroutine.yield();
+	
+	app:RefreshDataCompletely("RefreshCollections");
+	app.print("Done refreshing collection.");
+end
+end
+
+app.RefreshCollections = function()
+	app:StartATTCoroutine("RefreshingCollections", RefreshCollections);
+end

@@ -1,5 +1,6 @@
 -- App locals
 local appName, app = ...;
+local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 
 -- Global locals
 local ipairs, pairs, time, strsplit, tinsert, tremove, strgmatch, strgsub, strsub =
@@ -848,7 +849,7 @@ local function OnTooltipForCharacter(t)
 	if character then
 		local primeData = character.PrimeData;
 		if primeData then
-			GameTooltipTextRight1:SetText(app.GetProgressColorText(primeData.progress, primeData.total));
+			GameTooltipTextRight1:SetText(GetProgressColorText(primeData.progress, primeData.total));
 			GameTooltip:AddLine(primeData.modeString, 1, 1, 1);
 		end
 		

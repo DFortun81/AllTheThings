@@ -659,8 +659,37 @@ if app.__perf then
 	app.__perf.CaptureTable(fieldConverters, "CacheFields");
 end
 
--- Returns: A table containing all subgroups which contain a given value of field relative to the group or nil.
+-- Cache-Based Searching
+local function GetRawField(field, id)
+	-- Returns: A table containing all groups which contain the provided id for a given field.
+	-- NOTE: Can be nil for simplicity in use
+	local container = rawget(currentCache, field)
+	if not container then return end
+	return rawget(container, id), field, id;
+end
+local function GetRawFieldContainer(field)
+	-- Returns: The actual table containing all groups which contain a given field
+	-- NOTE: Can be nil for simplicity in use
+	return rawget(currentCache, field);
+end
+local function SearchForField(field, id)
+	-- Returns: A table containing all groups which contain the provided id for a given field.
+	return currentCache[field][id], field, id;
+end
+local function SearchForFieldContainer(field)
+	-- Returns: A table containing all groups which contain a given field.
+	return currentCache[field];
+end
+local function SearchForSourceIDQuickly(sourceID)
+	-- Returns: The first found cached group for a given SourceID
+	-- NOTE: Do not use this function when the results are being passed into an Update afterward
+	-- or if ATT data has not been loaded yet
+	if sourceID then return SearchForField("sourceID", sourceID)[1]; end
+end
+
+-- Recursive Searching
 local function SearchForFieldRecursively(group, field, value)
+	-- Returns: A table containing all subgroups which contain a given value of field relative to the group or nil.
 	if group.g then
 		-- Go through the sub groups and determine if any of them have a response.
 		local first = nil;
@@ -692,57 +721,8 @@ local function SearchForFieldRecursively(group, field, value)
 		return { group };
 	end
 end
-
--- Returns: A table containing all groups which contain a given field.
-local function SearchForFieldContainer(field)
-	return currentCache[field];
-end
-
--- Returns: The actual table containing all groups which contain a given field
--- NOTE: Can be nil for simplicity in use
-local function GetRawFieldContainer(field)
-	return rawget(currentCache, field);
-end
-
--- Returns: A table containing all groups which contain the provided id for a given field.
-local function SearchForField(field, id)
-	return SearchForFieldContainer(field)[id], field, id;
-end
-
--- Returns: A table containing all groups which contain the provided id for a given field.
--- NOTE: Can be nil for simplicity in use
-local function GetRawField(field, id)
-	local container = rawget(currentCache, field)
-	if not container then return end
-	return rawget(container, id), field, id;
-end
-
--- Returns: A table containing all groups which contain the provided id for a given field from all established data caches.
-local function SearchForFieldInAllCaches(field, id)
-	local ArrayAppend = app.ArrayAppend;
-	local groups = {};
-	for _,cache in pairs(AllCaches) do
-		ArrayAppend(groups, cache[field][id]);
-	end
-	return groups;
-end
-
--- Returns: A table containing all groups which contain the provided each of the provided ids for a given field from all established data caches.
-local function SearchForManyInAllCaches(field, ids)
-	local ArrayAppend = app.ArrayAppend;
-	local groups = {};
-	local fieldCache;
-	for _,cache in pairs(AllCaches) do
-		fieldCache = cache[field];
-		for _,id in ipairs(ids) do
-			ArrayAppend(groups, fieldCache[id]);
-		end
-	end
-	return groups;
-end
-
--- Search a group for all items relative to the given group. (excluding the group passed in)
 local function SearchForRelativeItems(group, listing)
+	-- Search a group for all items relative to the given group. (excluding the group passed in)
 	if group and group.g then
 		for i,subgroup in ipairs(group.g) do
 			SearchForRelativeItems(subgroup, listing);
@@ -753,35 +733,14 @@ local function SearchForRelativeItems(group, listing)
 	end
 end
 
--- Returns: The first found cached group for a given SourceID
--- NOTE: Do not use this function when the results are being passed into an Update afterward
--- or if ATT data has not been loaded yet
-local function SearchForSourceIDQuickly(sourceID)
-	if sourceID then return SearchForField("sourceID", sourceID)[1]; end
-end
-
--- Search a group for objects whose hash matches a hash found in hashes and append it to table t.
-local function SearchForSpecificGroups(t, group, hashes)
-	if group then
-		if hashes[group.hash] then
-			tinsert(t, group);
-		end
-		local g = group.g;
-		if g then
-			for _,o in ipairs(g) do
-				SearchForSpecificGroups(t, o, hashes);
-			end
-		end
-	end
-end
-
--- This method performs the SearchForField logic, but then may verifies that ONLY a specific matching, filtered-priority object is returned
--- require - Determine the required level of matching found objects:
--- * "key" - only accept objects whose key is also the field with value
--- * "field" - only accept objects which contain the exact field with value
--- * none - accept any object which is cached against the specific field value
--- allowMultiple - Whether to return multiple matching objects as an array (within the 'require' restriction)
+-- Search for a thing that matches some requirements
 local function SearchForObject(field, id, require, allowMultiple)
+	-- This method performs the SearchForField logic, but then may verifies that ONLY a specific matching, filtered-priority object is returned
+	-- require - Determine the required level of matching found objects:
+	-- * "key" - only accept objects whose key is also the field with value
+	-- * "field" - only accept objects which contain the exact field with value
+	-- * none - accept any object which is cached against the specific field value
+	-- allowMultiple - Whether to return multiple matching objects as an array (within the 'require' restriction)
 	local fcache, count
 	-- Items are cached by base ItemID and ModItemID, so when searching by ItemID, use ModItemID for
 	-- match requirement accuracy
@@ -964,8 +923,155 @@ local function SearchForObject(field, id, require, allowMultiple)
 	end
 end
 
--- Verify no infinite parent recursion exists for a given group
+-- All Cache Searching
+local function SearchForFieldInAllCaches(field, id)
+	-- Returns: A table containing all groups which contain the provided id for a given field from all established data caches.
+	local ArrayAppend = app.ArrayAppend;
+	local groups = {};
+	for _,cache in pairs(AllCaches) do
+		ArrayAppend(groups, cache[field][id]);
+	end
+	return groups;
+end
+local function SearchForManyInAllCaches(field, ids)
+	-- Returns: A table containing all groups which contain the provided each of the provided ids for a given field from all established data caches.
+	local ArrayAppend = app.ArrayAppend;
+	local groups = {};
+	local fieldCache;
+	for _,cache in pairs(AllCaches) do
+		fieldCache = cache[field];
+		for _,id in ipairs(ids) do
+			ArrayAppend(groups, fieldCache[id]);
+		end
+	end
+	return groups;
+end
+
+-- Hash-Based Searching
+local function SearchForSourcePath(g, hashes, level, count)
+	if g then
+		local hash = hashes[level];
+		if hash then
+			for i,o in ipairs(g) do
+				if (o.hash or o.name or o.text) == hash then
+					if level == count then return o; end
+					return SearchForSourcePath(o.g, hashes, level + 1, count);
+				end
+			end
+		end
+	end
+end
+local function SearchForSpecificGroups(t, group, hashes)
+	-- Search a group for objects whose hash matches a hash found in hashes and append it to table t.
+	if group then
+		if hashes[group.hash] then
+			tinsert(t, group);
+		end
+		local g = group.g;
+		if g then
+			for _,o in ipairs(g) do
+				SearchForSpecificGroups(t, o, hashes);
+			end
+		end
+	end
+end
+
+-- Source Path Generation
+--[[
+-- CRIEVE NOTE: Doesn't text do TryColorizeName by default? (in retail at least)
+local function GenerateColorizedSourcePath(group)
+	local line = {}
+	local cap = 100
+	while group do
+		cap = cap - 1
+		line[cap] = TryColorizeName(group, group.text or RETRIEVING_DATA)
+		group = group.sourceParent or group.parent
+	end
+	return app.TableConcat(line, nil, nil, " > ", cap, 99)
+end]]--
+--[[
+-- CRIEVE NOTE: This was from classic. Probably don't need this, really.
+local function GenerateSourcePath(group, l, skip)
+	if group then
+		local parent = group.sourceParent or group.parent;
+		if parent then
+			if not group.itemID and not skip and (parent.key == "filterID" or parent.key == "spellID" or ((parent.headerID or (parent.spellID and (group.categoryID or group.tierID)))
+				and ((parent.headerID == app.HeaderConstants.VENDORS or parent.headerID == app.HeaderConstants.QUESTS or parent.headerID == app.HeaderConstants.WORLD_BOSSES) or (parent.parent and parent.parent.parent)))) then
+				return GenerateSourcePath(parent.parent, 5, skip) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA) .. " (" .. (parent.text or RETRIEVING_DATA) .. ")";
+			end
+			if group.headerID then
+				if group.headerID == app.HeaderConstants.ZONE_DROPS then
+					if group.crs and #group.crs == 1 then
+						local cr = group.crs[1];
+						return GenerateSourcePath(parent, l + 1, skip) .. DESCRIPTION_SEPARATOR .. (app.NPCNameFromID[cr] or RETRIEVING_DATA) .. " (Drop)";
+					end
+					return GenerateSourcePath(parent, l + 1, skip) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
+				end
+				if parent.difficultyID then
+					return GenerateSourcePath(parent, l + 1, skip);
+				end
+				if parent.parent then
+					return GenerateSourcePath(parent, l + 1, skip) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
+				end
+			end
+			if group.key == "criteriaID" and group.achievementID then
+				local tooltipText = achievementTooltipText[group.achievementID];
+				if tooltipText then
+					return GenerateSourcePath(parent, 5, group.itemID or skip) .. " (" .. tooltipText .. ")";
+				else
+					return GenerateSourcePath(parent, 5, group.itemID or skip);
+				end
+			end
+			if parent.key == "categoryID" or parent.key == "tierID" or group.key == "filterID" or group.key == "spellID" or group.key == "encounterID" or (parent.key == "mapID" and group.key == "npcID") then
+				return GenerateSourcePath(parent, 5, skip) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
+			end
+			if l < 1 then
+				return GenerateSourcePath(parent, l + 1, group.itemID or skip);
+			else
+				return GenerateSourcePath(parent, l + 1, group.itemID or skip) .. " > " .. (group.text or RETRIEVING_DATA);
+			end
+		end
+	end
+	return group.text or RETRIEVING_DATA;
+end
+]]--
+local function GenerateSourceHash(group)
+	local parent = group.parent;
+	if parent then
+		return GenerateSourceHash(parent) .. ">" .. (group.hash or group.name or group.text);
+	else
+		return group.hash or group.name or group.text;
+	end
+end
+local function GenerateSourcePath(group, l)
+	local parent = group.sourceParent or group.parent;
+	if parent then
+		if l < 1 then
+			return GenerateSourcePath(parent, l + 1);
+		else
+			return GenerateSourcePath(parent, l + 1) .. " > " .. (group.text or RETRIEVING_DATA);
+		end
+	end
+	return group.text or RETRIEVING_DATA;
+end
+local function GenerateSourcePathForTSM(group, l)
+	local parent = group.sourceParent or group.parent;
+	if parent then
+		if l < 1 or not group.text then
+			return GenerateSourcePathForTSM(parent, l + 1);
+		else
+			return GenerateSourcePathForTSM(parent, l + 1) .. "`" .. group.text;
+		end
+	end
+	return L.TITLE;
+end
+local function GenerateSourcePathForTooltip(group)
+	return GenerateSourcePath(group, 1);
+end
+
+-- Cache Verification
 local function VerifyRecursion(group, checked)
+	-- Verify no infinite parent recursion exists for a given group
 	if type(group) ~= "table" then return; end
 	if not checked then
 		checked = { };
@@ -989,9 +1095,8 @@ local function VerifyRecursion(group, checked)
 	end
 	return true;
 end
-
--- Verify that the current cache does not have any recursive issues.
 local function VerifyCache()
+	-- Verify that the current cache does not have any recursive issues.
 	print("VerifyCache Starting...");
 	for i,keyCache in pairs(currentCache) do
 		print("Cache", i);
@@ -1014,6 +1119,10 @@ app.CacheFields = CacheFields;
 app.CreateDataCache = CreateDataCache;
 app.GetRawFieldContainer = GetRawFieldContainer;
 app.GetRawField = GetRawField;
+app.GenerateSourceHash = GenerateSourceHash;
+app.GenerateSourcePath = GenerateSourcePath;
+app.GenerateSourcePathForTSM = GenerateSourcePathForTSM;
+app.GenerateSourcePathForTooltip = GenerateSourcePathForTooltip;
 app.SearchForFieldRecursively = SearchForFieldRecursively;
 app.SearchForFieldContainer = SearchForFieldContainer;
 app.SearchForField = SearchForField;
@@ -1022,6 +1131,7 @@ app.SearchForManyInAllCaches = SearchForManyInAllCaches;
 app.SearchForObject = SearchForObject;
 app.SearchForRelativeItems = SearchForRelativeItems;
 app.SearchForSourceIDQuickly = SearchForSourceIDQuickly;
+app.SearchForSourcePath = SearchForSourcePath;
 app.SearchForSpecificGroups = SearchForSpecificGroups;
 app.VerifyCache = VerifyCache;
 app.VerifyRecursion = VerifyRecursion;

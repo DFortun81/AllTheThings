@@ -22,7 +22,7 @@ lib\Callback.lua
 lib\Colors.lua
 # lib\Runner.lua
 lib\Audio.lua
-# lib\Refresh.lua
+lib\Refresh.lua
 lib\Sort.lua
 lib\Table.lua
 
@@ -48,6 +48,7 @@ src\Modules\Color.lua
 # src\Modules\Costs.lua
 src\Modules\Events.lua
 src\Modules\Filter.lua
+src\Modules\Social.lua
 src\Modules\Tooltip.lua
 # src\Modules\Upgrade.lua
 
@@ -65,6 +66,7 @@ src\Classes\Quests.lua
 src\Classes\Objects.lua
 src\Classes\Category.lua
 src\Classes\Deaths.lua
+src\Classes\Dynamic Categories.lua
 src\Classes\Filter Types.lua
 src\Classes\Illusions.lua
 # src\Classes\Miscellaneous.lua
@@ -80,10 +82,15 @@ classic\ATT-Classic.lua
 src\UI\Game Tooltip.lua
 src\UI\Minimap Button.lua
 
+# Window Logic Overhaul
+src\UI\Shared Window Logic.lua
+src\UI\Classic Window Logic.lua
+
 # Load expansion specific category database.
 db\Classic\Categories.lua
 
 # Window Definitions
+src\UI\Windows\Prime.lua
 src\UI\Windows\Achievements.lua
 src\UI\Windows\Attunements.lua
 src\UI\Windows\Auctions.lua

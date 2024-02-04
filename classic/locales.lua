@@ -7,6 +7,15 @@ local L = {
 	["TITLE"] = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
 	["SHORTTITLE"] = "|c" .. app.Colors.ATT .. "ATT|r";
 	["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
+	["THINGS_UNTIL"] = " THINGS UNTIL ";
+	["THING_UNTIL"] = " THING UNTIL ";
+	["YOU_DID_IT"] = "YOU DID IT!";
+	
+	-- Settings
+	["SHOW_REMAINING_CHECKBOX"] = "Show Remaining Things";
+	["SHOW_REMAINING_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
+	["PERCENTAGES_CHECKBOX"] = "Show Percentage Completion";
+	["PERCENTAGES_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
 
 	-- Instructional Text
 	["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";
@@ -18,6 +27,7 @@ local L = {
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
 	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "|cff3399ffI only care about my main.|r";
 	["MAIN_LIST_REQUIRES_REFRESH"] = "[Click to Update Progress]";
+	["UPDATES_PAUSED"] = "Updates Paused";
 	["VISIT_FLIGHT_MASTER"] = "Visit the Flight Master to cache.";
 
 	["FACTION_MODE_TOOLTIP"] = "Turn this setting on if you want to see Account Mode data only for races and classes of your current faction.";

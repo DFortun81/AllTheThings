@@ -62,11 +62,12 @@ local rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetata
 local ATTAccountWideData;
 
 -- App & Module locals
-local ArrayAppend = app.ArrayAppend;
+local ArrayAppend, constructor = app.ArrayAppend, app.constructor;
 local CacheFields, SearchForField, SearchForFieldContainer, SearchForSourceIDQuickly, GetRawField
 	= app.CacheFields, app.SearchForField, app.SearchForFieldContainer, app.SearchForSourceIDQuickly, app.GetRawField
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
+local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 local TryColorizeName = app.TryColorizeName;
 
 -- Color Lib
@@ -142,8 +143,6 @@ end
 --]]
 
 -- Coroutine Helper Functions
-app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
-app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
 local Push = app.Push;
 local StartCoroutine = app.StartCoroutine;
 local Callback = app.CallbackHandlers.Callback;
@@ -155,18 +154,6 @@ app.UpdateRunner = app.CreateRunner("update");
 app.FillRunner = app.CreateRunner("fill");
 local LocalizeGlobal = app.LocalizeGlobal
 local LocalizeGlobalIfAllowed = app.LocalizeGlobalIfAllowed
-local constructor = function(id, t, typeID)
-	if t then
-		if not t.g and t[1] then
-			return { g=t, [typeID]=id };
-		else
-			t[typeID] = id;
-			return t;
-		end
-	else
-		return {[typeID] = id};
-	end
-end
 local contains = app.contains;
 local containsAny = app.containsAny;
 local containsValue = app.containsValue;
@@ -592,58 +579,13 @@ app.RefreshTradeSkillCache = function()
 end
 end -- TradeSkill Functionality
 
-
-
-
-
-
 -- Screenshot
 function app:TakeScreenShot(type)
 	if app.Settings:GetTooltipSetting("Screenshot") and (not type or app.Settings:Get("Thing:"..type)) then
 		Screenshot();
 	end
 end
-local function GetNumberWithZeros(number, desiredLength)
-	if desiredLength > 0 then
-		local str = tostring(number);
-		local length = string.len(str);
-		local pos = string.find(str,"[.]");
-		if not pos then
-			str = str .. ".";
-			for i=desiredLength,1,-1 do
-				str = str .. "0";
-			end
-		else
-			local totalExtra = desiredLength - (length - pos);
-			for i=totalExtra,1,-1 do
-				str = str .. "0";
-			end
-			if totalExtra < 1 then
-				str = string.sub(str, 1, pos + desiredLength);
-			end
-		end
-		return str;
-	else
-		return tostring(floor(number));
-	end
-end
-local function GetProgressTextDefault(progress, total)
-	return tostring(progress or 0) .. " / " .. tostring(total);
-end
-local function GetProgressTextRemaining(progress, total)
-	return tostring((total or 0) - (progress or 0));
-end
-local function GetProgressPercent(progress, total)
-	local percent = math.min(1, (progress or 0) / total);
-	return percent, app.Settings:GetTooltipSetting("Show:Percentage")
-		and (" (" .. GetNumberWithZeros(percent * 100, app.Settings:GetTooltipSetting("Precision")) .. "%)");
-end
-local function GetProgressColorText(progress, total)
-	if total and total > 0 then
-		local percent, percentText = GetProgressPercent(progress, total);
-		return "|c" .. GetProgressColor(percent) .. app.GetProgressText(progress, total) .. (percentText or " ") .. "|r";
-	end
-end
+
 local function GetCollectionIcon(state)
 	return L[(state and (state == 2 and "COLLECTED_APPEARANCE_ICON" or "COLLECTED_ICON")) or "NOT_COLLECTED_ICON"];
 end
@@ -815,99 +757,9 @@ local function GetProgressTextForTooltip(data)
 
 	return app.TableConcat(text, nil, "", " ");
 end
--- replaced by Additional Information toggles
--- local function GetAddedWithPatchString(awp, addedBack)
--- 		awp = tonumber(awp);
--- 	if awp then
--- 		local formatString = "ADDED";
--- 		if app.GameBuildVersion == awp then
--- 			formatString = "WAS_" .. formatString;
--- 		elseif app.GameBuildVersion > awp then
--- 			return nil;	-- Don't want to show this at the moment, let's add a configuration first!
--- 		end
--- 		if addedBack then formatString = formatString .. "_BACK"; end
--- 		return sformat(L[formatString .. "_WITH_PATCH_FORMAT"], app.GetPatchString(awp));
--- 	end
--- end
--- local function GetRemovedWithPatchString(rwp)
--- 	rwp = tonumber(rwp);
--- 	if rwp then
--- 		return sformat(L["REMOVED_WITH_PATCH_FORMAT"], app.GetPatchString(rwp));
--- 	end
--- end
-app.GetProgressText = GetProgressTextDefault;
-app.GetProgressTextDefault = GetProgressTextDefault;
-app.GetProgressTextRemaining = GetProgressTextRemaining;
 app.GetCompletionIcon = GetCompletionIcon;
+app.GetProgressTextForRow = GetProgressTextForRow;
 
-local function BuildSourceTextColorized(group)
-	local line = {}
-	local cap = 100
-	while group do
-		cap = cap - 1
-		line[cap] = TryColorizeName(group, group.text or RETRIEVING_DATA)
-		group = group.sourceParent or group.parent
-	end
-	return app.TableConcat(line, nil, nil, " > ", cap, 99)
-end
-local function BuildSourceText(group, l)
-	local parent = group.sourceParent or group.parent;
-	if parent then
-		-- From ATT-Classic .. needs some modification to handle Retail source depths
-		-- if not group.itemID and (parent.key == "filterID" or parent.key == "spellID" or ((parent.headerID or (parent.spellID and group.categoryID))
-		-- 	and ((parent.headerID == app.HeaderConstants.VENDORS or parent.headerID == app.HeaderConstants.QUESTS or parent.headerID == app.HeaderConstants.WORLD_BOSSES) or (parent.parent and parent.parent.parent)))) then
-		-- 	return BuildSourceText(parent.sourceParent or parent.parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA) .. " (" .. (parent.text or RETRIEVING_DATA) .. ")";
-		-- end
-		-- if group.headerID then
-		-- 	if group.headerID == app.HeaderConstants.ZONE_DROPS then
-		-- 		if group.crs and #group.crs == 1 then
-		-- 			return BuildSourceText(parent, l + 1) .. DESCRIPTION_SEPARATOR .. (app.NPCNameFromID[group.crs[1]] or RETRIEVING_DATA) .. " (Drop)";
-		-- 		end
-		-- 		return BuildSourceText(parent, l + 1) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
-		-- 	end
-		-- 	if parent.parent then
-		-- 		return BuildSourceText(parent, l + 1) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
-		-- 	end
-		-- end
-		-- if parent.key == "categoryID" or group.key == "filterID" or group.key == "spellID" or group.key == "encounterID" or (parent.key == "mapID" and group.key == "npcID") then
-		-- 	return BuildSourceText(parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
-		-- end
-		if l < 1 then
-			return BuildSourceText(parent, l + 1);
-		else
-			return BuildSourceText(parent, l + 1) .. " > " .. (group.text or RETRIEVING_DATA);
-		end
-	end
-	return group.text or RETRIEVING_DATA;
-end
-local function BuildSourceTextForChat(group, l)
-	if group.sourceParent or group.parent then
-		if l < 1 then
-			return BuildSourceTextForChat(group.sourceParent or group.parent, l + 1);
-		else
-			return BuildSourceTextForChat(group.sourceParent or group.parent, l + 1) .. " > " .. (group.text or "*");
-		end
-	end
-	return "ATT";
-end
-local function BuildSourceTextForDynamicPath(group)
-	local parent = group.parent;
-	if parent then
-		return BuildSourceTextForDynamicPath(parent) .. ">" .. (group.hash or group.name or group.text);
-	else
-		return group.hash or group.name or group.text;
-	end
-end
-local function BuildSourceTextForTSM(group, l)
-	if group.sourceParent or group.parent then
-		if l < 1 or not group.text then
-			return BuildSourceTextForTSM(group.sourceParent or group.parent, l + 1);
-		else
-			return BuildSourceTextForTSM(group.sourceParent or group.parent, l + 1) .. "`" .. group.text;
-		end
-	end
-	return L["TITLE"];
-end
 -- Fields which are dynamic or pertain only to the specific ATT window and should never merge automatically
 -- Maybe build from /base.lua:DefaultFields since those always are able to be dynamic
 app.MergeSkipFields = {
@@ -1450,13 +1302,7 @@ app.GetIndicatorIcon = function(group)
 	end
 	return GetUnobtainableTexture(group);
 end
-local function SetIndicatorIcon(self, data)
-	local texture = app.GetIndicatorIcon(data);
-	if texture then
-		self:SetTexture(texture);
-		return true;
-	end
-end
+
 local function GetRelativeDifficulty(group, difficultyID)
 	if group then
 		if group.difficultyID then
@@ -1478,12 +1324,6 @@ local function GetRelativeDifficulty(group, difficultyID)
 			return true;
 		end
 	end
-end
-local function GetRelativeMap(group, currentMapID)
-	if group then
-		return group.mapID or (group.maps and (contains(group.maps, currentMapID) and currentMapID or group.maps[1])) or GetRelativeMap(group.sourceParent or group.parent, currentMapID);
-	end
-	return currentMapID;
 end
 local function GetRelativeFieldInSet(group, field, set)
 	if group then
@@ -1693,8 +1533,7 @@ app.NPCNameFromID = NPCNameFromID;
 app.NPCTitlesFromID = NPCTitlesFromID;
 end)();
 
--- Search Caching
-local searchCache = {};
+
 -- Merges an Object into an existing set of Objects so as to not duplicate any incoming Objects
 local MergeObject,
 -- Nests an Object under another Object, only creating the 'g' group if necessary
@@ -1709,7 +1548,6 @@ NestObjects,
 -- Nests multiple Objects under another Object using an optional set of functions to determine priority on the adding of objects, only creating the 'g' group if necessary
 -- ex. PriorityNestObjects(parent, groups, newCreate, function1, function2, ...)
 PriorityNestObjects;
-app.searchCache = searchCache;
 (function()
 local function GetHash(t)
 	local hash = app.CreateHash(t);
@@ -3129,6 +2967,8 @@ end
 end	-- Symlink Lib
 
 -- Search Results Lib
+local searchCache = {};
+app.searchCache = searchCache;
 local GetCachedSearchResults;
 do
 local function GetPatchString(patch, color)
@@ -3675,7 +3515,7 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				and (showCompleted or not app.IsComplete(j))
 				and not app.HasCost(j, paramA, paramB)
 			then
-				text = BuildSourceTextColorized(parent);
+				text = app.GenerateSourcePathForTooltip(parent);
 				if showUnsorted or (not string_match(text, L["UNSORTED_1"]) and not string_match(text, L["HIDDEN_QUEST_TRIGGERS"])) then
 					for source,replacement in pairs(abbrevs) do
 						text = string_gsub(text, source, replacement);
@@ -3964,23 +3804,6 @@ GetCachedSearchResults = function(search, method, paramA, paramB, ...)
 				end
 			end
 		end
-
-		-- replaced by Additional Information toggles
-		-- local awp, rwp = GetRelativeValue(group, "awp"), group.rwp;
-		-- local awpGreaterThanRWP = true;
-		-- if awp and ((rwp or (group.u and group.u < 3)) or awp >= app.GameBuildVersion) then
-		-- 	awpGreaterThanRWP = rwp and awp >= rwp;
-		-- 	local awpString = GetAddedWithPatchString(awp, awpGreaterThanRWP);
-		-- 	if awpString then
-		-- 		tinsert(info, 1, { left = awpString, wrap = true, color = app.Colors.AddedWithPatch });
-		-- 	else
-		-- 		awpGreaterThanRWP = true;
-		-- 	end
-		-- end
-		-- if rwp then
-		-- 	tinsert(info, awpGreaterThanRWP and 1 or 2, { left = GetRemovedWithPatchString(rwp), wrap = true, color = app.Colors.RemovedWithPatch });
-		-- end
-
 		if group.u and (not group.crs or group.itemID or group.sourceID) then
 			-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
 			if group.u == 1 and app.GetRelativeValue(group, "_missing") then
@@ -4923,33 +4746,8 @@ app.HasCost = function(group, idType, id)
 	return false;
 end
 
-local function SendGroupMessage(msg)
-	if IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance() then
-		C_ChatInfo.SendAddonMessage("ATT", msg, "INSTANCE_CHAT")
-	elseif IsInRaid() then
-		C_ChatInfo.SendAddonMessage("ATT", msg, "RAID")
-	elseif IsInGroup(LE_PARTY_CATEGORY_HOME) then
-		C_ChatInfo.SendAddonMessage("ATT", msg, "PARTY")
-	end
-end
-local function SendGuildMessage(msg)
-	if IsInGuild() then
-		C_ChatInfo.SendAddonMessage("ATT", msg, "GUILD");
-	else
-		app.events.CHAT_MSG_ADDON("ATT", msg, "WHISPER", "player");
-	end
-end
-local function SendResponseMessage(msg, player)
-	if UnitInRaid(player) or UnitInParty(player) then
-		SendGroupMessage("to\t" .. player .. "\t" .. msg);
-	else
-		C_ChatInfo.SendAddonMessage("ATT", msg, "WHISPER", player);
-	end
-end
-local function SendSocialMessage(msg)
-	SendGroupMessage(msg);
-	SendGuildMessage(msg);
-end
+
+
 
 -- Synchronization Functions
 (function()
@@ -5235,6 +5033,11 @@ function app:SynchronizeWithPlayer(playerName)
 		C_ChatInfo.SendAddonMessage("ATT", "?\tsync\t" .. battleTag, "WHISPER", playerName);
 	end
 end
+app.AddEventHandler("OnStartup", function()
+	-- Attempt to register for the addon message prefix.
+	-- NOTE: This is only used by this old sync module and will be removed at some point.
+	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
+end);
 end)();
 
 -- NOTE: Don't use this for Items, because modIDs and bonusIDs are stupid
@@ -5431,19 +5234,6 @@ local function SearchForMissingItemNames(group)
 	end
 	return arr;
 end
-local function SearchForSourcePath(g, hashes, level, count)
-	if g then
-		local hash = hashes[level];
-		if hash then
-			for i,o in ipairs(g) do
-				if (o.hash or o.name or o.text) == hash then
-					if level == count then return o; end
-					return SearchForSourcePath(o.g, hashes, level + 1, count);
-				end
-			end
-		end
-	end
-end
 app.SearchForLink = SearchForLink;
 
 
@@ -5550,8 +5340,8 @@ local function PlotCachedCoords()
 
 					local first = root[1];
 					if first then
-						local sourcePath = BuildSourceTextForDynamicPath(first);
-						for i=2,#root,1 do sourcePath = sourcePath .. ";" .. BuildSourceTextForDynamicPath(root[i]); end
+						local sourcePath = app.GenerateSourceHash(first);
+						for i=2,#root,1 do sourcePath = sourcePath .. ";" .. app.GenerateSourceHash(root[i]); end
 						TomTom:AddWaypoint(mapID, xnormal, y / 1000, {
 							from = "ATT",
 							persistent = true,
@@ -5729,7 +5519,7 @@ app.AddEventHandler("OnReady", function()
 						local sourceStrings = { strsplit(";", sourceString) };
 						for i,sourcePath in ipairs(sourceStrings) do
 							local hashes = { strsplit(">", sourcePath) };
-							local ref = SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
+							local ref = app.SearchForSourcePath(app:GetDataCache().g, hashes, 2, #hashes);
 							if ref then
 								tinsert(root, ref);
 							else
@@ -10826,24 +10616,6 @@ function app.UniqueModeItemCollectionHelperOnlyMain(sourceID, oldState)
 end
 app.ActiveItemCollectionHelper = app.CompletionistItemCollectionHelper;
 
-function app.GetNumberOfItemsUntilNextPercentage(progress, total)
-	if total <= progress then
-		return "|c" .. GetProgressColor(1) .. L["YOU_DID_IT"];
-	else
-		local originalPercent = progress / total;
-		local nextPercent = math.ceil(originalPercent * 100);
-		local roundedPercent = nextPercent * 0.01;
-		local diff = math.ceil(total * (roundedPercent - originalPercent));
-		if diff < 1 or nextPercent == 100 then
-			return "|c" .. GetProgressColor(1) .. (total - progress) .. L["THINGS_UNTIL"] .. "100%|r";
-		elseif diff == 1 then
-			return "|c" .. GetProgressColor(roundedPercent) .. diff .. L["THING_UNTIL"] .. nextPercent .. "%|r";
-		else
-			return "|c" .. GetProgressColor(roundedPercent) .. diff .. L["THINGS_UNTIL"] .. nextPercent .. "%|r";
-		end
-	end
-end
-
 -- Custom Collectibility
 do
 local SLCovenantId;
@@ -10984,7 +10756,7 @@ function app:CreateMiniListForGroup(group)
 	-- end
 
 	-- Pop Out Functionality! :O
-	local suffix = BuildSourceTextForDynamicPath(group);
+	local suffix = app.GenerateSourceHash(group);
 	local popout = app.Windows[suffix];
 	local showing = not popout or not popout:IsVisible();
 	-- force data to be re-collected if this is a quest chain since its logic is affected by settings
@@ -11453,6 +11225,7 @@ end
 
 -- Panel Class Library
 (function()
+local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 -- Shared Panel Functions
 local function OnCloseButtonPressed(self)
 	self:GetParent():Hide();
@@ -11477,13 +11250,6 @@ local function UpdateWindowsOnEnd()
 	app.Processing_UpdateWindows = nil;
 	app.Processing_RefreshWindows = nil;
 	app.refreshDataGot = nil;
-	-- Send a message to your party members.
-	local data = app:GetWindow("Prime").data;
-	local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0);
-	if app.lastMsg ~= msg then
-		SendSocialMessage(msg);
-		app.lastMsg = msg;
-	end
 	wipe(searchCache);
 end
 local function UpdateWindows(force, got)
@@ -11603,6 +11369,13 @@ local function SetPortraitIcon(self, data)
 		else
 			self:SetTexCoord(0, 1, 0, 1);
 		end
+		return true;
+	end
+end
+local function SetIndicatorIcon(self, data)
+	local texture = app.GetIndicatorIcon(data);
+	if texture then
+		self:SetTexture(texture);
 		return true;
 	end
 end
@@ -12052,7 +11825,7 @@ local function RowOnClick(self, button)
 								local itemList, search = {};
 								for i,group in ipairs(missingItems) do
 									search = group.tsm or TSMAPI.Item:ToItemString(group.link or group.itemID);
-									if search then itemList[search] = BuildSourceTextForTSM(group, 0); end
+									if search then itemList[search] = app.GenerateSourcePathForTSM(group, 0); end
 								end
 								app:ShowPopupDialog(L["TSM_WARNING_1"] .. L["TITLE"] .. L["TSM_WARNING_2"],
 								function()
@@ -12093,7 +11866,7 @@ local function RowOnClick(self, button)
 							app:ShowPopupDialog(L["TSM_WARNING_1"] .. L["TITLE"] .. L["TSM_WARNING_2"],
 							function()
 								local itemString, groupPath;
-								groupPath = BuildSourceTextForTSM(app:GetWindow("Prime").data, 0);
+								groupPath = app.GenerateSourcePathForTSM(app:GetWindow("Prime").data, 0);
 								if TSMAPI_FOUR.Groups.Exists(groupPath) then
 									TSMAPI_FOUR.Groups.Remove(groupPath);
 								end
@@ -12102,7 +11875,7 @@ local function RowOnClick(self, button)
 									if (not group.spellID and not group.achID) or group.itemID then
 										itemString = group.tsm;
 										if itemString then
-											groupPath = BuildSourceTextForTSM(group, 0);
+											groupPath = app.GenerateSourcePathForTSM(group, 0);
 											TSMAPI_FOUR.Groups.Create(groupPath);
 											if TSMAPI_FOUR.Groups.IsItemInGroup(itemString) then
 												TSMAPI_FOUR.Groups.MoveItem(itemString, groupPath)
@@ -12129,7 +11902,7 @@ local function RowOnClick(self, button)
 					-- Not at the Auction House
 					-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
 					local link = reference.link or reference.silentLink;
-					if (link and HandleModifiedItemClick(link)) or ChatEdit_InsertLink(link or BuildSourceTextForChat(reference, 0)) then return true; end
+					if (link and HandleModifiedItemClick(link)) or ChatEdit_InsertLink(link) then return true; end
 
 					if button == "LeftButton" then
 						-- Default behavior is to Refresh Collections.
@@ -12649,20 +12422,7 @@ RowOnEnter = function (self)
 					end
 				end
 			end
-
-			-- replaced by Additional Information toggles
-			-- local awp, rwp = GetRelativeValue(reference, "awp"), reference.rwp;
-			-- if rwp then
-			-- 	local _,r,g,b = HexToARGB(app.Colors.RemovedWithPatch);
-			-- 	GameTooltip:AddLine(GetRemovedWithPatchString(rwp), r, g, b, 1);
-			-- end
-			-- if awp and ((rwp or (reference.u and reference.u < 3)) or awp >= app.GameBuildVersion) then
-			-- 	local awpString = GetAddedWithPatchString(awp, rwp and awp > rwp);
-			-- 	if awpString then
-			-- 		local _,r,g,b = HexToARGB(app.Colors.AddedWithPatch);
-			-- 		GameTooltip:AddLine(awpString, r, g, b, 1);
-			-- 	end
-			-- end
+			
 			-- an item used for a faction which is repeatable
 			if reference.itemID and reference.factionID and reference.repeatable then
 				GameTooltip:AddLine(L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(reference.factionID)) or ("Faction #" .. tostring(reference.factionID))) .. "'", 0.4, 0.8, 1, 1, true);
@@ -13527,7 +13287,8 @@ function app:GetDataCache()
 	-- app.PrintMemoryUsage()
 
 	-- Update the Row Data by filtering raw data (this function only runs once)
-	local rootData = app.CreateRawText(L.TITLE, {
+	local rootData = setmetatable({
+		text = L.TITLE,
 		icon = app.asset("logo_32x32"),
 		preview = app.asset("Discord_2_128"),
 		description = L["DESCRIPTION"],
@@ -13541,12 +13302,31 @@ function app:GetDataCache()
 		__index = function(t, key)
 			-- app.PrintDebug("Top-Root-Get",key)
 			if key == "title" then
-				return t.mb_title1..DESCRIPTION_SEPARATOR..t.mb_title2;
+				return t.modeString .. DESCRIPTION_SEPARATOR .. t.untilNextPercentage;
+			elseif key == "progressText" then
+				if t.total < 1 then
+					local primeData = app.CurrentCharacter.PrimeData;
+					if primeData then
+						return GetProgressColorText(primeData.progress, primeData.total);
+					end
+				end
+				return GetProgressColorText(t.progress, t.total);
+			elseif key == "modeString" then
+				return app.Settings:GetModeString();
+			elseif key == "untilNextPercentage" then
+				if t.total < 1 then
+					local primeData = app.CurrentCharacter.PrimeData;
+					if primeData then
+						return app.Modules.Color.GetProgressTextToNextPercent(primeData.progress, primeData.total);
+					end
+				end
+				return app.Modules.Color.GetProgressTextToNextPercent(t.progress, t.total);
+			elseif key == "visible" then
+				return true;
+			else
+				-- Something that isn't dynamic.
+				return table[key];
 			end
-			if key == "mb_title1" then return app.Settings:GetModeString(); end
-			if key == "mb_title2" then return not t.TLUG and L["MAIN_LIST_REQUIRES_REFRESH"] or app.GetNumberOfItemsUntilNextPercentage(t.progress, t.total); end
-			if key == "progressText" then return GetProgressColorText(t.progress, t.total); end
-			if key == "visible" then return true; end
 		end,
 		__newindex = function(t, key, val)
 			-- app.PrintDebug("Top-Root-Set",key,val)
@@ -19165,7 +18945,6 @@ app.Startup = function()
 		"LinkedAccounts",
 		"LocalizedCategoryNames",
 		"UserLocale",
-		"Position",
 		"RandomSearchFilter"
 	};
 	local removeKeys = {};
@@ -19183,12 +18962,8 @@ app.Startup = function()
 	-- Init the Settings before working with data
 	app.Settings:Initialize();
 
-	-- Attempt to register for the addon message prefix.
-	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
-
 	-- Register remaining addon-related events
 	app:RegisterEvent("BOSS_KILL");
-	app:RegisterEvent("CHAT_MSG_ADDON");
 	app:RegisterEvent("PLAYER_ENTERING_WORLD");
 	app:RegisterEvent("NEW_PET_ADDED");
 	app:RegisterEvent("PET_JOURNAL_PET_DELETED");
@@ -19363,9 +19138,6 @@ app.InitDataCoroutine = function()
 	-- app.PrintDebug("Yield prior to Refresh")
 	coroutine.yield();
 
-	-- Prepare the Sound Pack!
-	app.Audio:ReloadSoundPack();
-
 	app.__FirstRefresh = true;
 	app.RefreshCollections();
 
@@ -19524,7 +19296,6 @@ SlashCmdList["AllTheThingsMINI"] = function(cmd)
 end
 
 SLASH_AllTheThingsRA1 = "/attra";
-SLASH_AllTheThingsRA2 = "/attraid";
 SlashCmdList["AllTheThingsRA"] = function(cmd)
 	app:GetWindow("RaidAssistant"):Toggle();
 end
@@ -19535,31 +19306,9 @@ SlashCmdList["AllTheThingsRAN"] = function(cmd)
 	app:GetWindow("Random"):Toggle();
 end
 
-SLASH_AllTheThingsU1 = "/attu";
-SLASH_AllTheThingsU2 = "/attyou";
-SLASH_AllTheThingsU3 = "/attwho";
-SlashCmdList["AllTheThingsU"] = function(cmd)
-	local name,server = UnitName("target");
-	if name then
-		if UnitIsPlayer("target") then
-			SendResponseMessage("?", server and (name .. "-" .. server) or name);
-		else
-			local cmd = "creatureid:" .. select(6, strsplit("-", UnitGUID("target")));
-			local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-			if group then app:CreateMiniListForGroup(group); end
-		end
-	end
-end
-
 SLASH_AllTheThingsWQ1 = "/attwq";
 SlashCmdList["AllTheThingsWQ"] = function(cmd)
 	app:GetWindow("WorldQuests"):Toggle();
-end
-
-SLASH_ATTCUYELL1 = "/attyell";
-SLASH_ATTCUYELL2 = "/attrohduh";
-SlashCmdList["ATTCUYELL"] = function(cmd)
-	C_ChatInfo.SendAddonMessage("ATT", "?", "YELL");
 end
 
 -- Clickable ATT Chat Link Handling
@@ -19741,142 +19490,6 @@ app.events.ADDON_LOADED = function(addonName)
 	local addonTrigger = app.AddonLoadedTriggers[addonName];
 	if addonTrigger then addonTrigger(); end
 end
-app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
-	if prefix == "ATT" then
-		--print(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
-		local args = { strsplit("\t", text) };
-		local cmd = args[1];
-		if cmd then
-			local a = args[2];
-			if cmd == "?" then		-- Query Request
-				local response;
-				if a then
-					if a == "a" then
-						response = "a";
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (select(app.AchievementFilter, GetAchievementInfo(b)) and 1 or 0);
-						end
-					--[[
-					-- Exploration is not yet a thing in Retail... soon!
-					elseif a == "e" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.Exploration[b] and 1 or 0);
-						end
-					]]--
-					elseif a == "f" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.Factions[b] and 1 or 0);
-						end
-					elseif a == "fp" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.FlightPaths[b] and 1 or 0);
-						end
-					elseif a == "p" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. C_PetJournal_GetNumCollectedInfo(b);
-						end
-					elseif a == "q" then
-						response = "q";
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (IsQuestFlaggedCompleted(b) and 1 or 0);
-						end
-					elseif a == "s" then
-						response = "s";
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (ATTAccountWideData.Sources[b] or 0);
-						end
-					elseif a == "sp" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.Spells[b] and 1 or 0);
-						end
-					elseif a == "t" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (app.CurrentCharacter.Titles[b] and 1 or 0);
-						end
-					elseif a == "toy" then
-						response = a;
-						for i=3,#args,1 do
-							local b = tonumber(args[i]);
-							response = response .. "\t" .. b .. "\t" .. (ATTAccountWideData.Toys[b] and 1 or 0);
-						end
-					elseif a == "sync" then
-						app:ReceiveSyncRequest(target, a);
-					elseif a == "syncsum" then
-						tremove(args, 1);
-						tremove(args, 1);
-						app:ReceiveSyncSummary(target, args);
-					end
-				else
-					local data = app:GetWindow("Prime").data;
-					response = "ATT\t" .. (data.progress or 0) .. "\t" .. (data.total or 0) .. "\t" .. app.Settings:GetShortModeString();
-				end
-				if response then SendResponseMessage("!\t" .. response, sender); end
-			elseif cmd == "!" then	-- Query Response
-				if a == "ATT" then
-					print(sender .. ": " .. GetProgressColorText(tonumber(args[3]), tonumber(args[4])) .. " " .. args[5]);
-				else
-					local response;
-					if a == "s" then
-						response = " ";
-						for i=3,#args,2 do
-							local b = tonumber(args[i]);
-							local c = tonumber(args[i + 1]);
-							response = response .. b .. ": " .. GetCollectionIcon(c) .. " - ";
-						end
-					elseif a == "q" then
-						response = " ";
-						for i=3,#args,2 do
-							local b = tonumber(args[i]);
-							local c = tonumber(args[i + 1]);
-							response = response .. b .. ": " .. GetCompletionIcon(c == 1) .. " - ";
-						end
-					elseif a == "a" then
-						response = " ";
-						for i=3,#args,2 do
-							local b = tonumber(args[i]);
-							local c = tonumber(args[i + 1]);
-							response = response .. b .. ": " .. GetCompletionIcon(c == 1) .. " - ";
-						end
-					elseif a == "syncsum" then
-						tremove(args, 1);
-						tremove(args, 1);
-						app:ReceiveSyncSummaryResponse(target, args);
-					end
-					if response then print(response .. sender); end
-				end
-			elseif cmd == "to" then	-- To Command
-				local myName = UnitName("player");
-				local name,server = strsplit("-", a);
-				if myName == name and (not server or GetRealmName() == server) then
-					app.events.CHAT_MSG_ADDON(prefix, strsub(text, 5 + strlen(a)), "WHISPER", sender);
-				end
-			elseif cmd == "chks" then	-- Total Chunks Command [sender, uid, total]
-				app:AcknowledgeIncomingChunks(target, tonumber(a), tonumber(args[3]));
-			elseif cmd == "chk" then	-- Incoming Chunk Command [sender, uid, index, chunk]
-				app:AcknowledgeIncomingChunk(target, tonumber(a), tonumber(args[3]), args[4]);
-			elseif cmd == "chksack" then	-- Chunks Acknowledge Command [sender, uid]
-				app:SendChunk(target, tonumber(a), 1, 1);
-			elseif cmd == "chkack" then	-- Chunk Acknowledge Command [sender, uid, index, success]
-				app:SendChunk(target, tonumber(a), tonumber(args[3]) + 1, tonumber(args[4]));
-			end
-		end
-	end
-end
 app.events.PLAYER_LEVEL_UP = function(newLevel)
 	-- print("PLAYER_LEVEL_UP")
 	app.Level = newLevel;
@@ -19958,7 +19571,6 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 			ATTAccountWideData.Sources[sourceID] = 1;
 			app.ActiveItemCollectionHelper(sourceID, oldState);
 			wipe(searchCache);
-			SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t1");
 		end
 	end
 end
@@ -20006,7 +19618,6 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		UpdateRawIDs("sourceID", unlearnedSourceIDs);
 		Callback(app.Audio.PlayRemoveSound);
 		wipe(searchCache);
-		SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t0");
 	end
 end
 
