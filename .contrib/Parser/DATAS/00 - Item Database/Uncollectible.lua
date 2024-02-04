@@ -809,6 +809,7 @@ i(181343);	-- Rendle and Cudgelface
 i(182186);	-- Stolen Memento
 i(181349);	-- Stonehead
 i(181715);	-- Temel's Certificate of Completion
+i(181340);	-- The Countess
 i(180470);	-- Wild Fungus
 --- Anima ---
 i(184147);	-- Agony Enrichment Device

@@ -635,7 +635,6 @@ root(ROOTS.NeverImplemented, {
 				i(176804),	-- Temp
 				i(178969),	-- Test Container
 				i(180217),	-- The Bad Container
-				i(181340),	-- The Countess
 				i(180950),	-- The Maw - Pet Cosmetic - NYI
 				i(180951),	-- The Maw - POI Unlock - NYI
 				i(181391),	-- Theotar
