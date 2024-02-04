@@ -528,6 +528,7 @@ local QUANTUM_GROUP = sharedData({
 		ig(108158),	-- Hardened Draenic Steel Bulwark		(NYI)
 		ig(18303),	-- Nimble Buckler						(NYI)
 		ig(108242),	-- Peerless Draenic Steel Bulwark		(NYI)
+		ig(108243),	-- Peerless Draenic Steel Bulwark		(NYI)
 		ig(108245),	-- Peerless Draenic Steel Bulwark		(NYI)
 		ig(3988),	-- Plate Wall Shield					(NYI)
 		ig(3991),	-- Plated Buckler						(NYI)
