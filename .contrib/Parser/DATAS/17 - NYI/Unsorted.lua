@@ -560,7 +560,7 @@ root(ROOTS.Unsorted, {
 			q(64975),	--
 		}),
 	}),
-	tier(DF_TIER, {
+	--[[tier(DF_TIER, {
 		tier(DF_TIER, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 			n(ACHIEVEMENTS, {
 				ach(19031),	-- Fyrn [Promotion]
@@ -3381,5 +3381,5 @@ root(ROOTS.Unsorted, {
 				i(192094),	-- Winter Veil Gift
 			}),
 		})),
-	}),
+	}),--]]
 });
