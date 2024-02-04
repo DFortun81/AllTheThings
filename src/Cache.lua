@@ -1063,7 +1063,7 @@ local function GenerateSourcePathForTSM(group, l)
 			return GenerateSourcePathForTSM(parent, l + 1) .. "`" .. group.text;
 		end
 	end
-	return L.TITLE;
+	return app.L.TITLE;
 end
 local function GenerateSourcePathForTooltip(group)
 	return GenerateSourcePath(group, 1);
