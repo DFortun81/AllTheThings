@@ -197,31 +197,34 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(183730),	-- Sinstone-Studded Greathelm
 					},
 				}),
-				i(180298),	-- Amalgamation of Sin
-				i(180299),	-- Amalgamation of Sin
-				i(180300),	-- Amalgamation of Sin
-				i(180301),	-- Amalgamation of Sin
-				i(180302),	-- Amalgamation of Sin
-				i(180303),	-- Amalgamation of Sin
-				i(180304),	-- Amalgamation of Sin
-				i(180305),	-- Amalgamation of Sin
-				i(180306),	-- Amalgamation of Sin
-				i(180357),	-- Amalgamation of Sin
-				i(180358),	-- Amalgamation of Sin
-				i(180359),	-- Amalgamation of Sin
-				i(180360),	-- Amalgamation of Sin
-				i(180361),	-- Amalgamation of Sin
-				i(180362),	-- Amalgamation of Sin
-				i(180363),	-- Amalgamation of Sin
-				i(180364),	-- Amalgamation of Sin
-				i(180365),	-- Amalgamation of Sin
-				i(180366),	-- Amalgamation of Sin
-				i(180367),	-- Amalgamation of Sin
-				i(180368),	-- Amalgamation of Sin
-				i(180369),	-- Amalgamation of Sin
-				i(180370),	-- Amalgamation of Sin
-				i(180371),	-- Amalgamation of Sin
-				i(180373),	-- Amalgamation of Sin
+				i(180298),	-- Amalgamation of Sin (QI!)
+				i(180299),	-- Amalgamation of Sin (QI!)
+				i(180300),	-- Amalgamation of Sin (QI!)
+				i(180301),	-- Amalgamation of Sin (QI!)
+				i(180302),	-- Amalgamation of Sin (QI!)
+				i(180303),	-- Amalgamation of Sin (QI!)
+				i(180304),	-- Amalgamation of Sin (QI!)
+				i(180305),	-- Amalgamation of Sin (QI!)
+				i(180306),	-- Amalgamation of Sin (QI!)
+				i(180357),	-- Amalgamation of Sin (QI!)
+				i(180358),	-- Amalgamation of Sin (QI!)
+				i(180359),	-- Amalgamation of Sin (QI!)
+				i(180360),	-- Amalgamation of Sin (QI!)
+				i(180361),	-- Amalgamation of Sin (QI!)
+				i(180362),	-- Amalgamation of Sin (QI!)
+				i(180363),	-- Amalgamation of Sin (QI!)
+				i(180364),	-- Amalgamation of Sin (QI!)
+				i(180365),	-- Amalgamation of Sin (QI!)
+				i(180366),	-- Amalgamation of Sin (QI!)
+				i(180367),	-- Amalgamation of Sin (QI!)
+				i(180368),	-- Amalgamation of Sin (QI!)
+				i(180369),	-- Amalgamation of Sin (QI!)
+				i(180370),	-- Amalgamation of Sin (QI!)
+				i(180371),	-- Amalgamation of Sin (QI!)
+				i(180372),	-- Amalgamation of Sin (QI!)
+				i(180373),	-- Amalgamation of Sin (QI!)
+				i(180374),	-- Amalgamation of Sin (QI!)
+				i(180376),	-- Amalgamation of Sin (QI!)
 			}),
 			q(60654, {	-- Swarming Souls
 				n(170048, {	-- Manifestation of Wrath

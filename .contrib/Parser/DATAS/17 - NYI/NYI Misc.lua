@@ -427,64 +427,126 @@ root(ROOTS.NeverImplemented, {
 				i(183947),	-- Add Keystone Affix: Storming
 				i(180734),	-- Alchemist's Journal
 				i(181341),	-- Alexandros Mograine
+				i(181480),	-- Anima Container 2
+				i(181481),	-- Anima Container 3
+				i(181482),	-- Anima Container 3
+				i(175028),	-- Animana Cores
 				i(174781),	-- Anisykos's Favorite Hammer
+				i(181542),	-- Ardenweald Anima 3
+				i(178081),	-- Ardenweald Epic Treasure
+				i(178080),	-- Ardenweald Rare Treasure
+				i(178079),	-- Ardenweald Uncommon Treasure
+				i(178089),	-- Ardenweald Unique Loot
 				i(178147),	-- Army of the Darkness Insignia
+				i(175050),	-- Bag o' Conduits
 				i(178886),	-- Baroness Vashj
+				i(178084),	-- Bastion Epic Treasure
+				i(178083),	-- Bastion Rare Treasure
+				i(178082),	-- Bastion Uncommon Treasure
+				i(178090),	-- Bastion Unique Loot
 				i(180736),	-- Blacksmith's Journal
+				i(175041),	-- Blinding Anima
+				i(175148),	-- Blooming Vale
 				i(180007),	-- Brewfest Pretzel Bowl
+				i(180829),	-- Cache of Anima Tolls
 				i(183939),	-- Carefully Bottled Holy Water
 				i(180875),	-- Carriage Cargo
+				i(175046),	-- Cats Go Fast
 				i(179928),	-- Cell Chain Pull
 				i(181240),	-- Charm of Buff 7
+				i(178720),	-- Chase the Sun
 				i(174038),	-- Chime of Celerity
 				i(178888),	-- Choofa
+				i(182159),	-- Choofa Very Happy PH Reward
 				i(183125),	-- Combat Meditation: Power
+				i(175031),	-- Combo Wrath
+				i(175036),	-- Conservation
+				i(175045),	-- Continuing Stampede
+				i(178726),	-- Continuing Stampede
 				i(176129),	-- Contract: Decoration 4
 				i(176133),	-- Contract: Entertainment 4
 				i(176137),	-- Contract: Refreshment 4
 				i(176141),	-- Contract: Security 4
+				i(178727),	-- Controlled Affinity
 				i(180737),	-- Cook's Journal
+				i(180621),	-- Court of Harvesters Tribute
+				i(181514),	-- Court of Harvesters Tribute
+				i(175030),	-- Critical Swiftmend
 				i(178889),	-- Cryptkeeper Kassir
 				i(178139),	-- Cypher of Relocation
+				i(178556),	-- Cypher of Relocation
+				i(178721),	-- Dark Star
 				i(181344),	-- Droman Aliothe
+				i(181753),	-- Droman Aliothe Elated PH Reward
+				i(181755),	-- Droman Aliothe Happy PH Reward
+				i(181754),	-- Droman Aliothe Very Happy PH Reward
 				i(183841),	-- Emergency Flare
 				i(181796),	-- Emergency Supplies Key
 				i(180738),	-- Enchanter's Journal
 				i(180739),	-- Engineer's Journal
+				i(175043),	-- Entangling Vortex
+				i(175034),	-- Ethereal Form
+				i(178724),	-- Ethereal Shape
+				i(182698),	-- Exotic Purple Pigment
 				i(178564),	-- Eye of the Jailer:|CFFff2020 +1000 |R
 				i(178588),	-- Fae Armaments
 				i(184041),	-- Festive Umbrella
 				i(174493),	-- First Bell of Markos
 				i(180740),	-- Fisherman's Journal
 				i(180741),	-- Florist's Journal
+				i(175156),	-- Focus Fire
+				i(175033),	-- Focused Moonfire
+				i(175027),	-- Fulfilling Meditation
 				i(178966),	-- Gardener's Satchel
+				i(177034),	-- Gem Chisel Kit
 				i(181345),	-- Grandmaster Vole
 				i(180852),	-- Granule of Stygia
 				i(183726),	-- Gratitude of the Liberated
 				i(180128),	-- Harvester's Elite Bounty Purse
+				i(175038),	-- Healthy Bear
+				i(177281),	-- Heavy Sorrowscale
+				i(178728),	-- High Winds
 				i(181342),	-- Hunt-Captain Korayn
+				i(175040),	-- Infused Bark
+				i(179652),	-- Infused Ruby
 				i(180743),	-- Jeweler's Journal
 				i(181346),	-- Kleia and Pelagos
+				i(181750),	-- Kleia and Pelagos Elated PH Reward
+				i(181752),	-- Kleia and Pelagos Happy PH Reward
+				i(181751),	-- Kleia and Pelagos Very Happy PH Reward
 				i(178586),	-- Kyrian Armaments
-				i(181338),	-- Lady Moonberry
 				i(178967),	-- Large Gardener's Satchel
 				i(182652),	-- Larion Tamer's Harness
 				i(180744),	-- Leatherworker's Journal
 				i(180278),	-- Legendary Powers
+				i(175025),	-- Lingering Moonfire
+				i(175044),	-- Louder Stampeding Roar
 				i(180054),	-- Lunar Dumplings
 				i(180056),	-- Lunar Rice Cake
+				i(179862),	-- Luxurious Feather
 				i(178587),	-- Maldraxxian Armaments
+				i(175963),	-- Maldraxxus Epic Treasure
+				i(175961),	-- Maldraxxus Rare Treasure
+				i(175958),	-- Maldraxxus Uncommon Treasure
+				i(183809),	-- Margrave Krexus Tribute
+				i(178725),	-- Master of Shapes
 				i(174745),	-- Memory Glass Shard
-				i(180745),	-- Miner's Journal
+				i(175147),	-- Meteoric Vale
 				i(181339),	-- Mikanikos
+				i(178765),	-- Mindless Abomination's Chain
+				i(180745),	-- Miner's Journal
+				i(183206),	-- Miniature Seat of the Primus Replica
 				i(183523),	-- Miniaturized Phylactery
 				i(175752),	-- Mirror Fragment
 				i(177764),	-- Mirror Fragment
 				i(179664),	-- Mirror of Kalisthene
+				i(183734),	-- Mysteriously Thrumming Orb
 				i(180293),	-- Night Fae Insignia
-				i(183825),	-- Oversized Monocle
 				i(183873),	-- Otherworldy Tea Set
 				i(183190),	-- Oublion Cipher
+				i(183825),	-- Oversized Monocle
+				i(175042),	-- Path to Enlightenment
+				i(175035),	-- Patience is a Virtue
 				i(181444),	-- Perk 24
 				i(181445),	-- Perk 25
 				i(181446),	-- Perk 26
@@ -492,17 +554,41 @@ root(ROOTS.NeverImplemented, {
 				i(181448),	-- Perk 28
 				i(181449),	-- Perk 29
 				i(181451),	-- Perk 30
-				i(181347),	-- Plague Deviser Marileth
+				i(175145),	-- Personal Growth
+				i(178723),	-- Personal Growth
+				i(175764),	-- PH Cloak B
+				i(176394),	-- PH Critical
+				i(175964),	-- PH Frequent
+				i(182124),	-- PH Rare Item
+				i(181261),	-- PH Slime
+				i(183164),	-- PH Treasure Reward
+				i(175956),	-- PH Unusual
+				i(180798),	-- PH - Kyrian IOU
+				i(179304),	-- Pile of Muck
 				i(178887),	-- Polemarch Adrestes
 				i(178677),	-- Prince Renathal
+				i(175047),	-- Protective Rebirth
+				i(175144),	-- Purest Healing
 				i(178560),	-- Purity Contribution Progress
+				i(175032),	-- Reactive Regrowth
+				i(175051),	-- Reactive Regrowth
 				i(178078),	-- Reborn Spirit Cache
+				i(175146),	-- Recurring Vale
+				i(182701),	-- Refined Blue Pigment
+				i(182700),	-- Refined Green Pigment
+				i(182699),	-- Refined Red Pigment
+				i(175039),	-- Reinforced Bark
 				i(183821),	-- Remornia
-				i(181343),	-- Rendle and Cudgelface
+				i(178087),	-- Revendreth Epic Treasure
+				i(178086),	-- Revendreth Rare Treasure
+				i(178085),	-- Revendreth Uncommon Treasure
+				i(178091),	-- Revendreth Unique Loot
+				i(175048),	-- Root Structure
 				i(178687),	-- RSVP: VIP 17
 				i(178688),	-- RSVP: VIP 18
 				i(178689),	-- RSVP: VIP 19
 				i(178690),	-- RSVP: VIP 20
+				i(179303),	-- Rusty Sword
 				i(180742),	-- Scribe's Journal
 				i(174495),	-- Second Bell of Markos
 				i(181855),	-- Set Keystone Map: De Other Side
@@ -513,31 +599,53 @@ root(ROOTS.NeverImplemented, {
 				i(181853),	-- Set Keystone Map: Spires of Ascension
 				i(181849),	-- Set Keystone Map: The Necrotic Wake
 				i(181854),	-- Set Keystone Map: Theater of Pain
+				i(176928),	-- Shadowlands Skinning Knife
+				i(179919),	-- Shadowy Rabbit's Foot
 				i(181166),	-- Sigil of Haunting Memories
 				i(181348),	-- Sika
+				i(181746),	-- Sika Elated PH Reward
+				i(181748),	-- Sika Happy PH Reward
+				i(181747),	-- Sika Very Happy PH Reward
 				i(172965),	-- Sinstone Fragments
 				i(180746),	-- Skinner's Journal
 				i(178965),	-- Small Gardener's Satchel
+				i(172090),	-- Sorrowscale Fragment
 				i(178045),	-- Soul Prism
 				i(181371),	-- Spare Head
+				i(175029),	-- Spreading Vale
 				i(180011),	-- Stale Brewfest Pretzel
+				i(178719),	-- Star Shower
+				i(178722),	-- Steel Leaves
 				i(181167),	-- Steward Service Improvement: Harmonic Convergence
 				i(182164),	-- Steward Service: Reagent Deposit
-				i(183424),	-- Stitched Satchel of Maldraxxi Goods
-				i(183426),	-- Stitched Satchel of Fae Goods
 				i(183428),	-- Stitched Satchel of Aspirant Goods
+				i(183426),	-- Stitched Satchel of Fae Goods
+				i(183424),	-- Stitched Satchel of Maldraxxi Goods
 				i(183429),	-- Stitched Satchel of Venthyr Goods
-				i(181349),	-- Stonehead
+				i(181773),	-- Stonehead Happy PH Reward
+				i(181772),	-- Stonehead Very Happy PH Reward
+				i(172459),	-- Storied Legion Emblem
+				i(181766),	-- Strike with Clarity
+				i(174942),	-- Stygia
+				i(175037),	-- Symbiotic Growth
 				i(180747),	-- Tailor's Journal
-				i(181340),	-- The Countess
-				i(181391),	-- Theotar
+				i(178597),	-- TBD Maldraxxus Supplies
 				i(181390),	-- Temel
 				i(176081),	-- Temel's Party Planning Book
 				i(176804),	-- Temp
 				i(178969),	-- Test Container
+				i(180217),	-- The Bad Container
+				i(181340),	-- The Countess
+				i(180950),	-- The Maw - Pet Cosmetic - NYI
+				i(180951),	-- The Maw - POI Unlock - NYI
+				i(181391),	-- Theotar
+				i(175143),	-- Thicker Bark
 				i(174496),	-- Third Bell of Markos
+				i(180695),	-- Tome of Spiritual Knowledge
 				i(174489),	-- Treated Animacone
+				i(178718),	-- Trinary Efflux
 				i(183965),	-- Uncommon Anima Items
+				i(183688),	-- Veiled Crystal
 				i(178589),	-- Venthyr Armaments
 				i(180211),	-- Venthyr Eye
 				i(180216),	-- Venthyr Heart
@@ -545,6 +653,8 @@ root(ROOTS.NeverImplemented, {
 				i(180215),	-- Venthyr Rib
 				i(180212),	-- Venthyr Scabbard
 				i(180210),	-- Venthyr Tooth
+				i(175155),	-- Virtuous Dirge
+				i(175026),	-- Virtuous Toll
 				i(180006),	-- Warm Brewfest Pretzel
 				i(181392),	-- Watchmaster Boromod
 				i(178968),	-- Weekly Gardener's Satchel

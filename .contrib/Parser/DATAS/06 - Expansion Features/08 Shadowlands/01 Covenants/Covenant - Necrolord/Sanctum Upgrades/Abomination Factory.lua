@@ -771,6 +771,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 										["sourceQuests"] = { 58668 },	-- Find The Way
 										["provider"] = { "n", 161285 },	-- Emeni
 										["coord"] = { 24.1, 38.7, MALDRAXXUS },
+										["g"] = {
+											i(181456),	-- Faldo's Key (QI!)
+										},
 									}),
 									q(58432, {	-- Something Old, Something Used
 										["sourceQuests"] = { 60041 },	-- Build-A-Bomination

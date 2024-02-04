@@ -7,7 +7,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			tier(SL_TIER, {
 				-- 9.0.1
 				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+					i(171295),	-- [DNT] REUSE ME \\ Bolstering Concoction
+					i(171296),	-- [DNT] REUSE ME \\ Brilliant Concoction
+					i(171297),	-- [DNT] REUSE ME \\ Culinary Concoction
+					i(171294),	-- [DNT] REUSE ME \\ Slippery Concoction
+					i(171277),	-- [DNT] Spiritual Intellect Flask \\ Spiritual Intellect Flask
+					i(171279),	-- [DNT] Spiritual Strength Flask \\ Spiritual Strength Flask
 					i(171293),	-- Alchemist's Pouch
+					i(171281),	-- Eternal Cauldron
+					i(171282),	-- Eternal Cauldron
+					i(171283),	-- Eternal Cauldron
 					i(175941),	-- Spiritual Alchemy Stone
 					i(175942),	-- Spiritual Alchemy Stone
 					i(175943),	-- Spiritual Alchemy Stone

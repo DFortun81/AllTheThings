@@ -42,6 +42,9 @@ root(ROOTS.ExpansionFeatures, tier(SL_TIER, bubbleDown({ ["customCollect"] = "SL
 									["sourceQuests"] = { 57454 },	-- Silence in the Stalks
 									["provider"] = { "n", 157710 },	-- Cortinarius
 									["coord"] = { 33.2, 36.3, ARDENWEALD },
+									["g"] = {
+										i(171989),	-- Pouch of Spores (QI!)
+									},
 								}),
 								q(57463, {	-- My Way or the Hyphae
 									["sourceQuests"] = { 57459 },	-- Fighting For Fungus

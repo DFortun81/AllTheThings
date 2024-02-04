@@ -1014,6 +1014,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(181580),	-- Soulbearer's Gloves
 						i(181596),	-- Forgehand's Handguards
 						i(181608),	-- Shieldguard's Gauntlets
+						i(184043),	-- Lost Scroll (QI!)
 					},
 				}),
 				q(62735, {	-- Hostile Recollection [Pre-60]

@@ -11,6 +11,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(173263),	-- [DNT] REUSE ME
 					i(173264),	-- [DNT] REUSE ME
 					i(173265),	-- [DNT] REUSE ME
+					i(173250),	-- Tailoring Reagent 01
+					i(173251),	-- Tailoring Reagent 02
+					i(173252),	-- Tailoring Reagent 03
+					i(173253),	-- Tailoring Reagent 04
+					i(173254),	-- Tailoring Reagent 05
+					i(173255),	-- Tailoring Reagent 06
+					i(173256),	-- Tailoring Reagent 07
+					i(173257),	-- Tailoring Reagent 08
 					i(173258),	-- Craftman's Pouch
 					i(173233),	-- Pureweave Cloak
 					i(173239),	-- Pureweave Cord

@@ -66,6 +66,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			tier(SL_TIER, {
 				-- 9.0.1
 				tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+					i(172342),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 05
+					i(172343),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 06
+					i(172344),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 07
+					i(172345),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 08
+					i(172334),	-- Leatherworking Reagent 05
+					i(172335),	-- Leatherworking Reagent 06
+					i(172336),	-- Leatherworking Reagent 07
+					i(172337),	-- Leatherworking Reagent 08
 					i(172313),	-- Bonerivitted Armguards
 					i(172308),	-- Bonerivitted Gauntlets
 					i(172310),	-- Bonerivitted Greaves
@@ -74,6 +82,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(172307),	-- Bonerivitted Treads
 					i(172306),	-- Bonerivitted Vest
 					i(172312),	-- Bonerivitted Waistguard
+					i(177946),	-- Desolate Leather Barding
 					i(172305),	-- Flayed Hide Armguards
 					i(172300),	-- Flayed Hide Gauntlets
 					i(172302),	-- Flayed Hide Greaves

@@ -2452,194 +2452,154 @@ root(ROOTS.Unsorted, {
 	}),
 	tier(SL_TIER, {
 		tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
-			n(ARMOR, {
-				i(175768),	-- 9.0 QRP - Ardenweald - Cloak
-				i(177814),	-- 9.0 Zone Uncommon - Revendreth - Accessory - Trinket
-				i(179830),	-- Ardenweald Covenant Mail Chest
-				i(179861),	-- Ardenweald Covenant Mail Chest
-				i(179853),	-- Ardenweald Covenant Mail Chest
-				i(179845),	-- Ardenweald Covenant Mail Chest
-				i(179860),	-- Ardenweald Covenant Mail Feet
-				i(179831),	-- Ardenweald Covenant Mail Feet
-				i(179852),	-- Ardenweald Covenant Mail Feet
-				i(179844),	-- Ardenweald Covenant Mail Feet
-				i(179851),	-- Ardenweald Covenant Mail Hand
-				i(179832),	-- Ardenweald Covenant Mail Hand
-				i(179843),	-- Ardenweald Covenant Mail Hand
-				i(179859),	-- Ardenweald Covenant Mail Hand
-				i(179850),	-- Ardenweald Covenant Mail Head
-				i(179842),	-- Ardenweald Covenant Mail Head
-				i(179833),	-- Ardenweald Covenant Mail Head
-				i(179858),	-- Ardenweald Covenant Mail Head
-				i(179841),	-- Ardenweald Covenant Mail Legs
-				i(179834),	-- Ardenweald Covenant Mail Legs
-				i(179857),	-- Ardenweald Covenant Mail Legs
-				i(179849),	-- Ardenweald Covenant Mail Legs
-				i(179840),	-- Ardenweald Covenant Mail Shoulder
-				i(179835),	-- Ardenweald Covenant Mail Shoulder
-				i(179856),	-- Ardenweald Covenant Mail Shoulder
-				i(179848),	-- Ardenweald Covenant Mail Shoulder
-				i(179855),	-- Ardenweald Covenant Mail Waist
-				i(179836),	-- Ardenweald Covenant Mail Waist
-				i(179847),	-- Ardenweald Covenant Mail Waist
-				i(179839),	-- Ardenweald Covenant Mail Waist
-				i(179854),	-- Ardenweald Covenant Mail Wrist
-				i(179846),	-- Ardenweald Covenant Mail Wrist
-				i(179837),	-- Ardenweald Covenant Mail Wrist
-				i(179838),	-- Ardenweald Covenant Mail Wrist
-				i(178768),	-- Binds of the Unwitting Servant
-				i(177523),	-- Communal Hood
-				i(177532),	-- Communal Robe
-				i(177526),	-- Communal Shoulderpads
-				i(177525),	-- Communal Vestments
-				i(181037),	-- Death Shroud Belt
-				i(181038),	-- Death Shroud Bindings
-				i(181032),	-- Death Shroud Boots
-				i(181035),	-- Death Shroud Breeches
-				i(181039),	-- Death Shroud Cloak
-				i(181033),	-- Death Shroud Gloves
-				i(181034),	-- Death Shroud Hood
-				i(181036),	-- Death Shroud Spaulders
-				i(181031),	-- Death Shroud Vest
-				i(178766),	-- Deranged Surgeon's Band
-				i(180996),	-- Dread Sentinel's Chestplate
-				i(181003),	-- Dread Sentinel's Cloak
-				i(181001),	-- Dread Sentinel's Girdle
-				i(180997),	-- Dread Sentinel's Greatboots
-				i(180998),	-- Dread Sentinel's Grips
-				i(180995),	-- Dread Sentinel's Headgear
-				i(180999),	-- Dread Sentinel's Legguards
-				i(181000),	-- Dread Sentinel's Spaulders
-				i(181002),	-- Dread Sentinel's Vambraces
-				i(181136),	-- Fearstalker's Belt
-				i(181137),	-- Fearstalker's Bracers
-				i(181138),	-- Fearstalker's Cloak
-				i(181132),	-- Fearstalker's Gauntlets
-				i(181130),	-- Fearstalker's Hauberk
-				i(181133),	-- Fearstalker's Helm
-				i(181134),	-- Fearstalker's Leggings
-				i(181135),	-- Fearstalker's Monnion
-				i(181131),	-- Fearstalker's Sabatons
-				i(177608),	-- Felsoul Cowl
-				i(177610),	-- Felsoul Robe
-				i(177611),	-- Felsoul Shoulderpads
-				i(177426),	-- Heart-Lesion Breastplate
-				i(177434),	-- Heart-Lesion Chestguard
-				i(177429),	-- Heart-Lesion Helm
-				i(177431),	-- Heart-Lesion Pauldrons
-				i(177438),	-- Heart-Lesion Shoulderguards
-				i(177569),	-- Illidari Blindfold
-				i(177571),	-- Illidari Robe
-				i(177567),	-- Illidari Shoulders
-				i(177538),	-- Lightdrinker Hood
-				i(177535),	-- Lightdrinker Jerkin
-				i(177540),	-- Lightdrinker Shoulders
-				i(177484),	-- Mistdancer Helm
-				i(177491),	-- Mistdancer Hood
-				i(177496),	-- Mistdancer Jerkin
-				i(177486),	-- Mistdancer Pauldrons
-				i(177493),	-- Mistdancer Shoulders
-				i(177481),	-- Mistdancer Vest
-				i(177475),	-- Mountainsage Hood
-				i(177477),	-- Mountainsage Robe
-				i(177478),	-- Mountainsage Shoulderpads
-				i(177614),	-- Oathsworn Breastplate
-				i(177622),	-- Oathsworn Chestguard
-				i(177617),	-- Oathsworn Helm
-				i(177619),	-- Oathsworn Pauldrons
-				i(177626),	-- Oathsworn Shoulderguards
-				i(178776),	-- Ossified Oozebound Waistguard
-				i(183788),	-- Placeholder Twisting Corridors Cosmetic
-				i(178758),	-- Plague Experimenter's Gloves
-			}),
-			n(WEAPONS, {
-				i(179501),	-- Ardenweald Dagger
-				i(179606),	-- Ardenweald Quest Shield
-				i(172461),	-- Eternal Twilight Wand
-				i(178028),	-- Gormwrought Shield
-				i(178026),	-- Gormwrought Staff
-				i(175991),	-- Grove Defender's Focus
-				i(180492),	-- Nethrezim Spire
+			filter(MISC, {
+				i(183902),	-- A Faintly Glowing Seed
+				i(183616),	-- Accursed Keepsake
+				i(177036),	-- Aquatic Enticer
+				i(175923),	-- Ardenwood
+				i(178924),	-- Ash Clod
+				i(180450),	-- Assorted Bolts
+				i(175135),	-- Atticus's Spare Supplies
+				i(178519),	-- Blank Sinstone
+				i(180890),	-- Bloodstained Gambrel
+				i(181281),	-- Boss 10 Lure
+				i(178543),	-- Broiled Blood Sausage
+				i(180286),	-- Broken Fishing Pole
+				i(176810),	-- Centurion Core
+				i(177035),	-- Colored Liquid Set
+				i(172496),	-- Conduit Keystone
+				i(178566),	-- Cracked Hand Mirror
+				i(180352),	-- Cracked Inquisitor's Band
+				i(179375),	-- Crude Diary Key
+				i(180463),	-- Crusty Scepter
+				i(180340),	-- Dark Deceits and Diversions
+				i(170498),	-- Deadsoul Hound Harness
+				i(178112),	-- Death Venom Stinger
+				i(183122),	-- Death's Cloak
+				i(180811),	-- Deathfang's Favorite Skull
+				i(183695),	-- Decaying Dark Naaru Shard
+				i(182737),	-- Deep Fried Seraph Tenders
+				i(180308),	-- Determined Stone Visage
+				i(176806),	-- Drained Anima-Core
+				i(180412),	-- Dredhollow Apple Cider
+				i(179286),	-- Dried Cabbage Leaves
+				i(180423),	-- Duchess Helveera
+				i(176878),	-- Dulled Memento
+				i(179377),	-- Elegant Diary Key
+				i(170480),	-- Elevator Key: Level 10
+				i(170481),	-- Elevator Key: Level 15
+				i(170482),	-- Elevator Key: Level 20
+				i(170479),	-- Elevator Key: Level 5
+				i(180421),	-- Emberfall
+				i(180786),	-- Empty Binding
+				i(180455),	-- Empty Dredge Vial
+				i(180448),	-- Eroded Heat Sink
+				i(175241),	-- Expedition Healing Potion
+				i(184033),	-- Extra-Spacious Knapsack
+				i(175243),	-- Faded Grimoire
+				i(180292),	-- Faerie Dust
+				i(180449),	-- Failed Experiment
+				i(177042),	-- Five-Chime Batzos
+				i(177256),	-- Floundering Soul
+				i(180769),	-- Fractured Stonewing
+				i(180230),	-- Gemstone Chips
+				i(168208),	-- Gleaming Chest
+				i(168210),	-- Gleaming Chest: Azrafael
+				i(168211),	-- Gleaming Chest: Beneficus
+				i(168209),	-- Gleaming Chest: Olberic
+				i(179005),	-- Glinting Gold Fang
+				i(179006),	-- Glowing Endmire Dust
+				i(178517),	-- Gold Tooth
+				i(174746),	-- Golden Egg Shells
+				i(178175),	-- Gooey Sap
+				i(183963),	-- Gormlet
+				i(180451),	-- Grand Inquisitor's Sinstone Fragment
+				i(170053),	-- Grek'og's Tusk
+				i(172038),	-- Grim Iron Shackles
+				i(178537),	-- Hair-Trussed Fungi
+				i(169819),	-- Handful of Blood Shards
+				i(180088),	-- Handwritten Note
+				i(176852),	-- Hardened Tail Bone
+				i(179376),	-- Hefty Diary Key
+				i(180888),	-- Illegible Journal
+				i(179310),	-- Jar of Muck
+				i(179285),	-- Jumari
+				i(182298),	-- Kaja'Extreme
+				i(183808),	-- Leashed Construct
+				i(182188),	-- Lesser Phial of Serenity
+				i(169823),	-- Lordaeron Coin
+				i(177026),	-- Lost Earring
+				i(181388),	-- Lush Marrowroot
+				i(178088),	-- Maldraxxus Unique Loot
+				i(180509),	-- Mane Hair Harp
+				i(175111),	-- Marrow Larva
+				i(170499),	-- Maw Seeker Harness
+				i(168035),	-- Mawrat Harness
+				i(183165),	-- Mawsworn Crossbow
+				i(178551),	-- Monstrous Bloodtusk Haggis
+				i(173941),	-- Monstrous Skull
+				i(179287),	-- Muck-Covered Morsels
+				i(179300),	-- Muck-Hardened Marble
+				i(183934),	-- Muck-Stained Napkin
+				i(180399),	-- New Player Experience Box
+				i(183795),	-- Notice of Special Delivery
+				i(174363),	-- Old Empty Bottle
+				i(177039),	-- Olive-Stuffed Barbouni
+				i(180168),	-- Oribobber
+				i(177278),	-- Phial of Serenity
+				i(181247),	-- Pointy Stick
+				i(179004),	-- Polished Silver Tithe
+				i(180887),	-- Preserved Organ
+				i(176442),	-- Ratwhisker Brew
+				i(183872),	-- Residual Sorrow
+				i(180830),	-- Resonant Alloy
+				i(171265),	-- REUSE ME
+				i(171310),	-- Ring of Stonebound Control
+				i(180354),	-- Ripped Stuffing
+				i(182299),	-- Ruined Carapace
+				i(177028),	-- Rusty Chain
+				i(183046),	-- Serrated Inking Spines
+				i(179308),	-- Shadeskin Brandy Phial
+				i(183187),	-- Shadeweaver Incantation
+				i(180350),	-- Simple Stone Loop
+				i(180891),	-- Smooshed Maggot
+				i(171948),	-- Soul Ash
+				i(180317),	-- Soulful Healing Potion
+				i(180318),	-- Soulful Mana Potion
+				i(174464),	-- Spectral Bridle
+				i(173061),	-- Stabilizing Powder
+				i(180291),	-- Stranglevine Seed
+				i(183131),	-- Stygic Grapnel
+				i(179284),	-- Succulent Skullboar Bites
+				i(183135),	-- Summon the Fallen
+				i(174755),	-- Summons of the Chosen
+				i(177041),	-- Sunwarmed Xyfias
+				i(182459),	-- Tasty Toes
+				i(180892),	-- Teeth-Marked Bone Chips
+				i(180422),	-- The Banewood Road
+				i(180600),	-- Thistle Tea
+				i(179309),	-- Tincture of Tuica Moonshine
+				i(179382),	-- Tiny, Wet Scroll
+				i(180674),	-- Wand of Grumpiness
+				i(180675),	-- Wand of Regal Bearing
+				i(179306),	-- Wingtip Warmer
+				i(181246),	-- Withered Leaf
+				i(181299),	-- Wornthrough Bag
 			}),
 			n(PROFESSIONS, {
-				i(173120),	-- 9.x Cut Rare
-				i(173118),	-- 9.x Cut Rare
-				i(173119),	-- 9.x Cut Rare
-				i(173117),	-- 9.x Raw Blue
-				i(173111),	-- 9.x Raw Rare
-				i(173116),	-- 9.x Raw Red
-				i(173115),	-- 9.x Raw Yellow
-				i(172911),	-- [DNT] [REUSE ME] \\ M.O.T.E. Collector
-				i(176448),	-- [DNT] [REUSE ME] \\ Soul Battery
-				i(172916),	-- [DNT] [REUSE ME] \\ Soul Extractomatic [NYI]
-				i(176616),	-- [DNT] [REUSE ME] \\ Unbound Soul
+				--- Unknown ---
 				i(173063),	-- [DNT] REUSE ME \\ [DNT] REUSE ME [MTMM]
 				i(173064),	-- [DNT] REUSE ME \\ [DNT] REUSE ME [MTMM]
-				i(171426),	-- [DNT] REUSE ME \\ Blacksmithing - Modified Crafting Reagent 07
-				i(171427),	-- [DNT] REUSE ME \\ Blacksmithing - Modified Crafting Reagent 08
-				i(171295),	-- [DNT] REUSE ME \\ Bolstering Concoction
-				i(171296),	-- [DNT] REUSE ME \\ Brilliant Concoction
-				i(171297),	-- [DNT] REUSE ME \\ Culinary Concoction
-				i(172433),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 05
-				i(172434),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 06
-				i(172435),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 07
-				i(172436),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 08
-				i(172930),	-- [DNT] REUSE ME \\ Engineering - Modified Crafting Reagent 05
-				i(172931),	-- [DNT] REUSE ME \\ Engineering - Modified Crafting Reagent 06
-				i(172932),	-- [DNT] REUSE ME \\ Engineering - Modified Crafting Reagent 07
-				i(172933),	-- [DNT] REUSE ME \\ Engineering - Modified Crafting Reagent 08
-				i(172429),	-- [DNT] REUSE ME \\ Flamesteel Rod \\ Enchanting - Modified Crafting Reagent 01
-				i(172929),	-- [DNT] REUSE ME \\ Flash-Freeze Power Cells \\ Engineering - Modified Crafting Reagent 04
-				i(171421),	-- [DNT] REUSE ME \\ Freak Slayer's Charm \\ Freak Slayer
-				i(171422),	-- [DNT] REUSE ME \\ Ghoul Slayer's Charm \\ Ghoul Slayer
-				i(171425),	-- [DNT] REUSE ME \\ Laestrite Plates \\ Blacksmithing - Modified Crafting Reagent 06
-				i(171424),	-- [DNT] REUSE ME \\ Laestrite Spikes
-				i(172342),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 05
-				i(172343),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 06
-				i(172344),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 07
-				i(172345),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 08
-				i(171423),	-- [DNT] REUSE ME \\ Man Slayer's Charm \\ Man Slayer
 				i(171298),	-- [DNT] REUSE ME \\ Modified Crafting Reagent 06
 				i(171299),	-- [DNT] REUSE ME \\ Modified Crafting Reagent 07
 				i(171300),	-- [DNT] REUSE ME \\ Modified Crafting Reagent 08
-				i(172927),	-- [DNT] REUSE ME \\ Phaevyr Alloy
-				i(171294),	-- [DNT] REUSE ME \\ Slippery Concoction
-				i(171277),	-- [DNT] Spiritual Intellect Flask \\ Spiritual Intellect Flask
-				i(171279),	-- [DNT] Spiritual Strength Flask \\ Spiritual Strength Flask
-				i(171429),	-- Blacksmithing Reagent 02
-				i(171430),	-- Blacksmithing Reagent 03
-				i(171431),	-- Blacksmithing Reagent 04
-				i(171432),	-- Blacksmithing Reagent 05
-				i(171433),	-- Blacksmithing Reagent 06
-				i(171434),	-- Blacksmithing Reagent 07
-				i(171435),	-- Blacksmithing Reagent 08
-				i(177946),	-- Desolate Leather Barding
-				i(172430),	-- Enchanting - Modified Crafting Reagent 02
-				i(172431),	-- Enchanting - Modified Crafting Reagent 03
-				i(172432),	-- Enchanting - Modified Crafting Reagent 04
-				i(172440),	-- Enchanting Reagent 04
-				i(172441),	-- Enchanting Reagent 05
-				i(172442),	-- Enchanting Reagent 06
-				i(172443),	-- Enchanting Reagent 07
-				i(172444),	-- Enchanting Reagent 08
-				i(172938),	-- Engineering Reagent 05
-				i(172939),	-- Engineering Reagent 06
-				i(172940),	-- Engineering Reagent 07
-				i(172941),	-- Engineering Reagent 08
-				i(171281),	-- Eternal Cauldron
-				i(171282),	-- Eternal Cauldron
-				i(171283),	-- Eternal Cauldron
-				i(171280),	-- Eternal Flask
-				i(177279),	-- Gaunt Sinew
-				i(172334),	-- Leatherworking Reagent 05
-				i(172335),	-- Leatherworking Reagent 06
-				i(172336),	-- Leatherworking Reagent 07
-				i(172337),	-- Leatherworking Reagent 08
+				--- Tailoring ---
 				i(180055),	-- Relic of the Past I
 				i(180057),	-- Relic of the Past II
 				i(180058),	-- Relic of the Past III
 				i(180059),	-- Relic of the Past IV
 				i(180060),	-- Relic of the Past V
+				i(118492),	-- Schematic: Morden's Magnificent Contraption [Weird ItemID...]
 			}),
 			filter(QUEST_ITEMS, {
 				i(183877),	-- A Meandering Story
@@ -3094,644 +3054,227 @@ root(ROOTS.Unsorted, {
 				i(178141),	-- Runic Codex
 				i(173897),	-- Runic Fastener
 				i(175981),	-- Rusted Chain
+				i(178876),	-- Sack of Supplies
+				i(170550),	-- Sacred Scroll
+				i(182477),	-- Sacred Text
+				i(173892),	-- Salvaged Gear
+				i(183832),	-- Salvaged Supplies
+				i(182313),	-- Satchel Charges
+				i(171469),	-- Scorched Plank
+				i(174343),	-- Scroll of Binding
+				i(174498),	-- Seal of Contrition
+				i(175138),	-- Sealed Scroll of Soul Rot
+				i(173898),	-- Sealed Scrolls
+				i(178904),	-- Shackle Key
+				i(180806),	-- Shadebound Testimonial
+				i(174374),	-- Shard of the Countess
+				i(176215),	-- Shard of the Countess
+				i(174375),	-- Shard of the Countess
+				i(174359),	-- Shard of the Countess
+				i(178495),	-- Shattered Helm of Domination
+				i(178044),	-- Shifting Cryptogram
+				i(180796),	-- Shimmerflight Quill
+				i(183836),	-- Shimmersilt
+				i(175982),	-- Sicklethorn To-Do List
+				i(174843),	-- Sicklethorn Trickster Powder
+				i(180440),	-- Sigil of Discipline
+				i(180441),	-- Sigil of Sacrifice
+				i(180295),	-- Sigil of Shadow
+				i(178143),	-- Silkstrider Harp
+				i(173047),	-- Silkstrider Larvae
+				i(173045),	-- Silkstrider Silk
+				i(181252),	-- Silverheart Vine Leaves
+				i(171369),	-- Singing Wood
+				i(179359),	-- Sinstone Fragment
+				i(180279),	-- Sinstone Fragment
+				i(180281),	-- Sinstone Fragment
+				i(180282),	-- Sinstone Fragment
+				i(180283),	-- Sinstone Fragment
+				i(180284),	-- Sinstone Fragment
+				i(173733),	-- Sinstone Records
+				i(181955),	-- Skeletal Mudskipper
+				i(174524),	-- Skewering Needle
+				i(173881),	-- Sludge Pump
+				i(173894),	-- Sludge-Camouflaged Pants
+				i(173893),	-- Sludge-Covered Belt
+				i(182354),	-- Soft Vulpin Fur
+				i(182357),	-- Soggy Kelpcheese
+				i(179318),	-- Sorrowvine
+				i(171249),	-- Soul Cage Key
+				i(181460),	-- Soul Mirror
+				i(182580),	-- Soul Mirror
+				i(181701),	-- Soul Mirror
+				i(181472),	-- Soul Mirror
+				i(181782),	-- Soul Mirror
+				i(182623),	-- Soul Mirror
+				i(182965),	-- Soul Mirror
+				i(181795),	-- Soul Mirror
+				i(182467),	-- Soul Mirror
+				i(182969),	-- Soul Mirror
+				i(180849),	-- Soul-Rotted Flesh Head
+				i(180805),	-- Soulforge Blueprints
+				i(175131),	-- Soulmending Patches
+				i(174329),	-- Soulshatter Arrow
+				i(173882),	-- Soulsteel Clamps
+				i(176445),	-- Soulweb
+				i(176847),	-- Sour Suckle's Antenna
+				i(182365),	-- Sourbread Yeast Starter
+				i(173909),	-- Sparkling Driftglobe Core
+				i(180452),	-- Spear of Kalliope
+				i(173354),	-- Spear of Kalliope
+				i(173901),	-- Specialized Gutting Knife
+				i(181387),	-- Speckled Flametail
+				i(180297),	-- Spellbound Notes
+				i(178908),	-- Spriggan-Sized Polearm
+				i(178909),	-- Spriggan-Sized Staff
+				i(178907),	-- Spriggan-Sized Wand
+				i(178903),	-- Spriggan-Sized Weaponry
+				i(173148),	-- Steel Cleaver
+				i(180848),	-- Steelskin Linebreaker's Head
+				i(178515),	-- Stitched Surprise Cake
+				i(180845),	-- Stitchflesh Design
+				i(172226),	-- Stolen Anima
+				i(184015),	-- Stolen Memento
+				i(174219),	-- Stolen Memento
+				i(176582),	-- Stolen Missive
+				i(180249),	-- Stone Fiend Tracker
+				i(181516),	-- Stone-Laced Infused Ruby
+				i(181500),	-- Stoneborn Glaive
+				i(174100),	-- Stonebreaker Mallet
+				i(178579),	-- Stradama's Lost Ledger
+				i(178578),	-- Strange Doll
+				i(178574),	-- Strange Ritual Mask
+				i(173732),	-- Strange Runestone
+				i(176808),	-- Stringy Growth
+				i(180271),	-- Stringy Spore
+				i(175976),	-- Supervisor's Plans
+				i(176813),	-- Surgeon's Maldracite
+				i(178565),	-- Suspicious Message
+				i(174212),	-- Suspicious Weapon
+				i(181367),	-- Ta Cartel Restock List
+				i(174465),	-- Tainted Centurion Component
+				i(173879),	-- Tainted Centurion Component
+				i(181336),	-- Talking Frog in a Jar
+				i(174270),	-- Tasty Bone
+				i(177280),	-- Tattered Binding
+				i(181351),	-- Tattered Cloth
+				i(181352),	-- Tattered Leather
+				i(173737),	-- Temel's Body
+				i(173739),	-- Temel's Head
+				i(173738),	-- Temel's Wings
+				i(171104),	-- The Accuser's Sinstone
+				i(178018),	-- The Brand's Key
+				i(174454),	-- The Countess's Sinstone
+				i(183874),	-- The Darkwing Flight Soars With Us!
+				i(182364),	-- The Everyday Assassin
+				i(173025),	-- The Infinite Treatises
+				i(178569),	-- The Origin of Death
+				i(183875),	-- The Tithes are a Lie!
+				i(177947),	-- Theotar's Lost Parasol
+				i(173158),	-- Theotar's Note
+				i(181452),	-- Thick Gormhide
+				i(176054),	-- Thigh High Boots
+				i(182333),	-- Thistledrop Dew
+				i(180777),	-- Thros-Forged Key
+				i(180810),	-- Throwin' Skull
+				i(173523),	-- Tirisfal Camp Scroll
+				i(173270),	-- Toc's Bag of Parts
+				i(173312),	-- Toc's Key
+				i(178583),	-- Tome of Dredger Alchemy
+				i(171367),	-- Tonal Mallet
+				i(180274),	-- Torch
+				i(171440),	-- Torghast Door Key
+				i(173872),	-- Torn Journal Page
+				i(183698),	-- Torturer's Key
+				i(183121),	-- Training Gem
+				i(173269),	-- Training Gem
+				i(171204),	-- Traitor's Head
+				i(173285),	-- Treasonous Missive
+				i(172218),	-- Treated Gorm Husk
+				i(183943),	-- Tubbins's Bucket
+				i(177949),	-- Tubbins's Lost Teapot
+				i(174844),	-- Tuft of Prowler Fur
+				i(180851),	-- Twirlpetal Pollen
+				i(178685),	-- Twisted Mawsteel
+				i(178790),	-- Umbral Plume
+				i(171991),	-- Unadorned Weapon
+				i(175971),	-- Unexploded Blight Bomb
+				i(178662),	-- Unfinished Blade
+				i(178573),	-- Unusual Automaton Parts
+				i(180272),	-- Upper Reaches Key
+				i(173900),	-- Vanishing Ink
+				i(178940),	-- Vashj's Signal
+				i(174968),	-- Veil Blossom
+				i(182676),	-- Veilwing's Heart
+				i(171344),	-- Venthyr Calligraphy Set
+				i(176085),	-- Venthyr Clothing
+				i(180807),	-- Venthyr Concordat
+				i(182692),	-- Venthyr Fang
+				i(173696),	-- Venthyr Ritual Dagger
+				i(173695),	-- Venthyr Ritual Robes
+				i(173697),	-- Venthyr Ritual Tome
+				i(178170),	-- Vernon's Field Report
+				i(175011),	-- Vesper of Veilflight
+				i(175153),	-- Vessel of Ardenweald
+				i(180778),	-- Vessel of Ardenweald
+				i(173157),	-- Vial of Caustic Goo
+				i(177845),	-- Vial of Plague
+				i(174629),	-- Viridian Stone
+				i(174377),	-- Volume of Victory
+				i(178020),	-- Volume of Victory: Vol 1
+				i(177817),	-- Voodoo Powder
+				i(173313),	-- Vopath's Key
+				i(173271),	-- Vopath's Stolen Items
+				i(173357),	-- Voracious Maggot
+				i(177948),	-- Vulca's Lost Toolkit
+				i(174232),	-- Vyraz Tactical Plan
+				i(168811),	-- Wand of Absorption
+				i(168445),	-- Wand of Delugion
+				i(168600),	-- Ward Stone
+				i(168601),	-- Ward Stone
+				i(168599),	-- Ward Stone
+				i(177895),	-- Warm Earthen Jar
+				i(180033),	-- Warm Seaweed Stalk
+				i(172451),	-- Weak Anima Mote
+				i(179320),	-- Wealdwood
+				i(174324),	-- Weapons of the Fallen
+				i(178466),	-- Wicked Spirit Shard
+				i(180543),	-- Wild Gorm Gris
+				i(181749),	-- Windswept Rising Glory
+				i(182642),	-- Winged Arcanum
+				i(177836),	-- Wingpierce Javelin
+				i(178528),	-- Winter Veil Gift
+				i(182963),	-- Witch's Satchel
+				i(180050),	-- Wither Blade
+				i(174916),	-- Withering Hemlock
+				i(173024),	-- Worlds Beyond Counting
+				i(172458),	-- Worn Legion Chit
+				i(180804),	-- Worn Obleron Etching
+				i(179979),	-- Worn Sinstone
+				i(174845),	-- Wreath of Night's Veil Flowers
+				i(182184),	-- Wyvern Soul
+				i(180465),	-- Xandria's Reach
+				i(178656),	-- Xeeli's Ritual Drafts
+				i(180032),	-- Young Seaweed Stalk
+				i(180787),	-- Zel'han's Broken Armor
+				--- LEFTOVERS ---
+				i(174741),	-- Bell of Remembrance
+				i(175149),	-- A Small Carving of Ysera
+				i(175152),	-- A Slime-Covered Book of Secrets
+				i(175154),	-- A Secret Never Spoken
+				i(178033),	-- Talkative Spore
+				i(180049),	-- Steward's Silver Key
+				i(180285),	-- Steward's Golden Key
+				i(181471),	-- Humility's Guard
+				i(182097),	-- Shrouded Mirror Shard
+				i(182601),	-- Sludgefist's Head
+				i(182602),	-- Sludgefist's Head
+				i(182603),	-- Sludgefist's Head
+				i(182688),	-- Cypher of Obfuscation
+				i(183042),	-- Colossal Power Core
+				i(183912),	-- Scorched Mirror Fragment
+				i(183919),	-- Ashen Core
 			}),
-			filter(MISC, {
-				i(183902),	-- A Faintly Glowing Seed
-				i(183616),	-- Accursed Keepsake
-				i(180376),	-- Amalgamation of Sin
-				i(177036),	-- Aquatic Enticer
-				i(175923),	-- Ardenwood
-				i(178924),	-- Ash Clod
-				i(180450),	-- Assorted Bolts
-				i(175135),	-- Atticus's Spare Supplies
-				i(178519),	-- Blank Sinstone
-				i(180890),	-- Bloodstained Gambrel
-				i(181281),	-- Boss 10 Lure
-				i(178543),	-- Broiled Blood Sausage
-				i(180286),	-- Broken Fishing Pole
-				i(176810),	-- Centurion Core
-				i(177035),	-- Colored Liquid Set
-				i(172496),	-- Conduit Keystone
-				i(178566),	-- Cracked Hand Mirror
-				i(180352),	-- Cracked Inquisitor's Band
-				i(179375),	-- Crude Diary Key
-				i(180463),	-- Crusty Scepter
-				i(180340),	-- Dark Deceits and Diversions
-				i(170498),	-- Deadsoul Hound Harness
-				i(178112),	-- Death Venom Stinger
-				i(183122),	-- Death's Cloak
-				i(180811),	-- Deathfang's Favorite Skull
-				i(183695),	-- Decaying Dark Naaru Shard
-				i(182737),	-- Deep Fried Seraph Tenders
-				i(180308),	-- Determined Stone Visage
-				i(176806),	-- Drained Anima-Core
-				i(180412),	-- Dredhollow Apple Cider
-				i(179286),	-- Dried Cabbage Leaves
-				i(180423),	-- Duchess Helveera
-				i(176878),	-- Dulled Memento
-				i(179377),	-- Elegant Diary Key
-				i(170480),	-- Elevator Key: Level 10
-				i(170481),	-- Elevator Key: Level 15
-				i(170482),	-- Elevator Key: Level 20
-				i(170479),	-- Elevator Key: Level 5
-				i(180421),	-- Emberfall
-				i(180786),	-- Empty Binding
-				i(180455),	-- Empty Dredge Vial
-				i(180448),	-- Eroded Heat Sink
-				i(175241),	-- Expedition Healing Potion
-				i(184033),	-- Extra-Spacious Knapsack
-				i(175243),	-- Faded Grimoire
-				i(180292),	-- Faerie Dust
-				i(180449),	-- Failed Experiment
-				i(177042),	-- Five-Chime Batzos
-				i(177256),	-- Floundering Soul
-				i(180769),	-- Fractured Stonewing
-				i(180230),	-- Gemstone Chips
-				i(168208),	-- Gleaming Chest
-				i(168210),	-- Gleaming Chest: Azrafael
-				i(168211),	-- Gleaming Chest: Beneficus
-				i(168209),	-- Gleaming Chest: Olberic
-				i(179005),	-- Glinting Gold Fang
-				i(179006),	-- Glowing Endmire Dust
-				i(178517),	-- Gold Tooth
-				i(174746),	-- Golden Egg Shells
-				i(178175),	-- Gooey Sap
-				i(183963),	-- Gormlet
-				i(180451),	-- Grand Inquisitor's Sinstone Fragment
-				i(170053),	-- Grek'og's Tusk
-				i(172038),	-- Grim Iron Shackles
-				i(178537),	-- Hair-Trussed Fungi
-				i(169819),	-- Handful of Blood Shards
-				i(180088),	-- Handwritten Note
-				i(176852),	-- Hardened Tail Bone
-				i(179376),	-- Hefty Diary Key
-				i(180888),	-- Illegible Journal
-				i(179310),	-- Jar of Muck
-				i(179285),	-- Jumari
-				i(182298),	-- Kaja'Extreme
-				i(183808),	-- Leashed Construct
-				i(182188),	-- Lesser Phial of Serenity
-				i(169823),	-- Lordaeron Coin
-				i(177026),	-- Lost Earring
-				i(181388),	-- Lush Marrowroot
-				i(178088),	-- Maldraxxus Unique Loot
-				i(180509),	-- Mane Hair Harp
-				i(175111),	-- Marrow Larva
-				i(170499),	-- Maw Seeker Harness
-				i(168035),	-- Mawrat Harness
-				i(183165),	-- Mawsworn Crossbow
-				i(178551),	-- Monstrous Bloodtusk Haggis
-				i(173941),	-- Monstrous Skull
-				i(179287),	-- Muck-Covered Morsels
-				i(179300),	-- Muck-Hardened Marble
-				i(183934),	-- Muck-Stained Napkin
-				i(180399),	-- New Player Experience Box
-				i(183795),	-- Notice of Special Delivery
-				i(174363),	-- Old Empty Bottle
-				i(177039),	-- Olive-Stuffed Barbouni
-				i(180168),	-- Oribobber
-				i(177278),	-- Phial of Serenity
-				i(181247),	-- Pointy Stick
-				i(179004),	-- Polished Silver Tithe
-				i(180887),	-- Preserved Organ
-				i(176442),	-- Ratwhisker Brew
-				i(183872),	-- Residual Sorrow
-				i(180830),	-- Resonant Alloy
-				i(171265),	-- REUSE ME
-				i(171310),	-- Ring of Stonebound Control
-				i(180354),	-- Ripped Stuffing
-				i(182299),	-- Ruined Carapace
-				i(177028),	-- Rusty Chain
-				-- EC
-				i(181248),	-- Ancient Sinstone
-				--- NYI
-				i(181480),	-- Anima Container 2
-				i(181481),	-- Anima Container 3
-				i(181482),	-- Anima Container 3
-				i(175028),	-- Animana Cores
-				i(181542),	-- Ardenweald Anima 3
-				i(178081),	-- Ardenweald Epic Treasure
-				i(178080),	-- Ardenweald Rare Treasure
-				i(178079),	-- Ardenweald Uncommon Treasure
-				i(178089),	-- Ardenweald Unique Loot
-				i(175050),	-- Bag o' Conduits
-				i(178084),	-- Bastion Epic Treasure
-				i(178083),	-- Bastion Rare Treasure
-				i(178082),	-- Bastion Uncommon Treasure
-				i(178090),	-- Bastion Unique Loot
-				i(175041),	-- Blinding Anima
-				i(175148),	-- Blooming Vale
-				i(180829),	-- Cache of Anima Tolls
-				i(175046),	-- Cats Go Fast
-				i(178720),	-- Chase the Sun
-				i(182159),	-- Choofa Very Happy PH Reward
-				i(175031),	-- Combo Wrath
-				i(175036),	-- Conservation
-				i(175045),	-- Continuing Stampede
-				i(178726),	-- Continuing Stampede
-				i(178727),	-- Controlled Affinity
-				i(180621),	-- Court of Harvesters Tribute
-				i(181514),	-- Court of Harvesters Tribute
-				i(175030),	-- Critical Swiftmend
-				i(178556),	-- Cypher of Relocation
-				i(178721),	-- Dark Star
-				i(181753),	-- Droman Aliothe Elated PH Reward
-				i(181755),	-- Droman Aliothe Happy PH Reward
-				i(181754),	-- Droman Aliothe Very Happy PH Reward
-				i(175043),	-- Entangling Vortex
-				i(175034),	-- Ethereal Form
-				i(178724),	-- Ethereal Shape
-				i(182698),	-- Exotic Purple Pigment
-				i(175156),	-- Focus Fire
-				i(175033),	-- Focused Moonfire
-				i(175027),	-- Fulfilling Meditation
-				i(177034),	-- Gem Chisel Kit
-				i(175038),	-- Healthy Bear
-				i(177281),	-- Heavy Sorrowscale
-				i(178728),	-- High Winds
-				i(175040),	-- Infused Bark
-				i(179652),	-- Infused Ruby
-				i(181750),	-- Kleia and Pelagos Elated PH Reward
-				i(181752),	-- Kleia and Pelagos Happy PH Reward
-				i(181751),	-- Kleia and Pelagos Very Happy PH Reward
-				i(175025),	-- Lingering Moonfire
-				i(175044),	-- Louder Stampeding Roar
-				i(179862),	-- Luxurious Feather
-				i(175963),	-- Maldraxxus Epic Treasure
-				i(175961),	-- Maldraxxus Rare Treasure
-				i(175958),	-- Maldraxxus Uncommon Treasure
-				i(183809),	-- Margrave Krexus Tribute
-				i(178725),	-- Master of Shapes
-				i(175147),	-- Meteoric Vale
-				i(178765),	-- Mindless Abomination's Chain
-				i(183206),	-- Miniature Seat of the Primus Replica
-				i(175042),	-- Path to Enlightenment
-				i(175035),	-- Patience is a Virtue
-				i(178723),	-- Personal Growth
-				i(175145),	-- Personal Growth
-				i(180798),	-- PH - Kyrian IOU
-				i(175764),	-- PH Cloak B
-				i(176394),	-- PH Critical
-				i(175964),	-- PH Frequent
-				i(182124),	-- PH Rare Item
-				i(181261),	-- PH Slime
-				i(183164),	-- PH Treasure Reward
-				i(175956),	-- PH Unusual
-				i(179304),	-- Pile of Muck
-				i(175047),	-- Protective Rebirth
-				i(175144),	-- Purest Healing
-				i(175051),	-- Reactive Regrowth
-				i(175032),	-- Reactive Regrowth
-				i(175146),	-- Recurring Vale
-				i(182701),	-- Refined Blue Pigment
-				i(182700),	-- Refined Green Pigment
-				i(182699),	-- Refined Red Pigment
-				i(175039),	-- Reinforced Bark
-				i(178087),	-- Revendreth Epic Treasure
-				i(178086),	-- Revendreth Rare Treasure
-				i(178085),	-- Revendreth Uncommon Treasure
-				i(178091),	-- Revendreth Unique Loot
-				i(175048),	-- Root Structure
-				i(179303),	-- Rusty Sword
-			}),
-			i(178876),	-- Sack of Supplies
-			i(170550),	-- Sacred Scroll \\ Projection Core
-			i(182477),	-- Sacred Text
-			i(173892),	-- Salvaged Gear
-			i(183832),	-- Salvaged Supplies
-			i(182313),	-- Satchel Charges
-			i(118492),	-- Schematic: Morden's Magnificent Contraption
-			i(171469),	-- Scorched Plank
-			i(174343),	-- Scroll of Binding
-			i(174498),	-- Seal of Contrition \\ The Seal of Contrition
-			i(175138),	-- Sealed Scroll of Soul Rot
-			i(173898),	-- Sealed Scrolls
-			i(183046),	-- Serrated Inking Spines
-			i(178904),	-- Shackle Key
-			i(180806),	-- Shadebound Testimonial
-			i(179308),	-- Shadeskin Brandy Phial
-			i(183187),	-- Shadeweaver Incantation
-			i(176928),	-- Shadowlands Skinning Knife
-			i(179919),	-- Shadowy Rabbit's Foot
-			i(174374),	-- Shard of the Countess
-			i(176215),	-- Shard of the Countess
-			i(174375),	-- Shard of the Countess
-			i(174359),	-- Shard of the Countess
-			i(178495),	-- Shattered Helm of Domination \\ Shard of Domination
-			i(178044),	-- Shifting Cryptogram
-			i(180796),	-- Shimmerflight Quill
-			i(183836),	-- Shimmersilt
-			i(175982),	-- Sicklethorn To-Do List
-			i(174843),	-- Sicklethorn Trickster Powder \\ Sicklethorn Trick Powder
-			i(180440),	-- Sigil of Discipline
-			i(180441),	-- Sigil of Sacrifice
-			i(180295),	-- Sigil of Shadow
-			i(181746),	-- Sika Elated PH Reward
-			i(181748),	-- Sika Happy PH Reward
-			i(181747),	-- Sika Very Happy PH Reward
-			i(178143),	-- Silkstrider Harp
-			i(173047),	-- Silkstrider Larvae
-			i(173045),	-- Silkstrider Silk
-			i(181252),	-- Silverheart Vine Leaves
-			i(180350),	-- Simple Stone Loop
-			i(171369),	-- Singing Wood
-			i(179359),	-- Sinstone Fragment
-			i(180279),	-- Sinstone Fragment \\ Sinstone Fragment 1
-			i(180281),	-- Sinstone Fragment \\ Sinstone Fragment 2
-			i(180282),	-- Sinstone Fragment \\ Sinstone Fragment 3
-			i(180283),	-- Sinstone Fragment \\ Sinstone Fragment 4
-			i(180284),	-- Sinstone Fragment \\ Sinstone Fragment 5
-			i(173733),	-- Sinstone Records
-			i(181955),	-- Skeletal Mudskipper \\ Maldraxxus Fishing Item
-			i(174524),	-- Skewering Needle
-			i(173881),	-- Sludge Pump
-			i(173894),	-- Sludge-Camouflaged Pants
-			i(173893),	-- Sludge-Covered Belt
-			i(180891),	-- Smooshed Maggot
-			i(182354),	-- Soft Vulpin Fur
-			i(182357),	-- Soggy Kelpcheese
-			i(172090),	-- Sorrowscale Fragment
-			i(179318),	-- Sorrowvine
-			i(171948),	-- Soul Ash
-			i(171249),	-- Soul Cage Key
-			i(181460),	-- Soul Mirror
-			i(182580),	-- Soul Mirror
-			i(181701),	-- Soul Mirror
-			i(181472),	-- Soul Mirror
-			i(181782),	-- Soul Mirror
-			i(182623),	-- Soul Mirror
-			i(182965),	-- Soul Mirror
-			i(181795),	-- Soul Mirror
-			i(182467),	-- Soul Mirror
-			i(182969),	-- Soul Mirror
-			i(180849),	-- Soul-Rotted Flesh Head
-			i(181111),	-- Soulbreaker Drape
-			i(181105),	-- Soulbreaker Handwraps
-			i(181106),	-- Soulbreaker Hood
-			i(181107),	-- Soulbreaker Leggings
-			i(181108),	-- Soulbreaker Mantle
-			i(181109),	-- Soulbreaker Sash
-			i(181104),	-- Soulbreaker Slippers
-			i(181103),	-- Soulbreaker Vestments
-			i(181110),	-- Soulbreaker Wraps
-			i(180805),	-- Soulforge Blueprints
-			i(180317),	-- Soulful Healing Potion
-			i(180318),	-- Soulful Mana Potion
-			i(175131),	-- Soulmending Patches
-			i(174329),	-- Soulshatter Arrow
-			i(173882),	-- Soulsteel Clamps
-			i(176445),	-- Soulweb \\ Dreamweb
-			i(176847),	-- Sour Suckle's Antenna \\ Sour Suckle's Antenni
-			i(182365),	-- Sourbread Yeast Starter
-			i(173909),	-- Sparkling Driftglobe Core
-			i(180452),	-- Spear of Kalliope
-			i(173354),	-- Spear of Kalliope \\ Kalliope's Spear
-			i(173901),	-- Specialized Gutting Knife
-			i(181387),	-- Speckled Flametail \\ Ardenweald Fishing Item \\ Fishing Item \\ Toxic Darter
-			i(174464),	-- Spectral Bridle
-			i(180297),	-- Spellbound Notes
-			i(175029),	-- Spreading Vale
-			i(178908),	-- Spriggan-Sized Polearm
-			i(178909),	-- Spriggan-Sized Staff
-			i(178907),	-- Spriggan-Sized Wand
-			i(178903),	-- Spriggan-Sized Weaponry
-			i(177444),	-- Springrain Headpiece
-			i(177452),	-- Springrain Helm
-			i(177460),	-- Springrain Hood
-			i(177457),	-- Springrain Jerkin
-			i(177454),	-- Springrain Pauldrons
-			i(177462),	-- Springrain Shoulders
-			i(177446),	-- Springrain Spaulders
-			i(177441),	-- Springrain Tunic
-			i(177449),	-- Springrain Vest
-			i(173061),	-- Stabilizing Powder
-			i(178719),	-- Star Shower
-			i(173148),	-- Steel Cleaver
-			i(178722),	-- Steel Leaves
-			i(180848),	-- Steelskin Linebreaker's Head
-			i(178515),	-- Stitched Surprise Cake
-			i(180845),	-- Stitchflesh Design \\ Stitchflesh's Designs
-			i(172226),	-- Stolen Anima
-			i(184015),	-- Stolen Memento
-			i(174219),	-- Stolen Memento \\ Abandoned Memento
-			i(176582),	-- Stolen Missive
-			i(180249),	-- Stone Fiend Tracker
-			i(181516),	-- Stone-Laced Infused Ruby \\ Stone-laced Infused Ruby
-			i(181500),	-- Stoneborn Glaive
-			i(174100),	-- Stonebreaker Mallet
-			i(181773),	-- Stonehead Happy PH Reward
-			i(181772),	-- Stonehead Very Happy PH Reward
-			i(172459),	-- Storied Legion Emblem
-			i(178579),	-- Stradama's Lost Ledger
-			i(178578),	-- Strange Doll
-			i(178574),	-- Strange Ritual Mask
-			i(173732),	-- Strange Runestone
-			i(180291),	-- Stranglevine Seed
-			i(177551),	-- Streamtalker Chestguard
-			i(177546),	-- Streamtalker Coif
-			i(177562),	-- Streamtalker Cowl
-			i(177554),	-- Streamtalker Helm
-			i(177548),	-- Streamtalker Pauldrons
-			i(177556),	-- Streamtalker Shoulderguards
-			i(177564),	-- Streamtalker Spaulders
-			i(177543),	-- Streamtalker Tunic
-			i(177559),	-- Streamtalker Vest
-			i(181766),	-- Strike with Clarity
-			i(176808),	-- Stringy Growth
-			i(180271),	-- Stringy Spore
-			i(174942),	-- Stygia
-			i(183131),	-- Stygic Grapnel
-			i(179284),	-- Succulent Skullboar Bites
-			i(183135),	-- Summon the Fallen
-			i(174755),	-- Summons of the Chosen \\ Summons of the Warlord House
-			i(177497),	-- Sunsoul Battleplate
-			i(177505),	-- Sunsoul Breastplate
-			i(177513),	-- Sunsoul Chestguard
-			i(177516),	-- Sunsoul Faceguard
-			i(177508),	-- Sunsoul Headpiece
-			i(177500),	-- Sunsoul Helm
-			i(177502),	-- Sunsoul Pauldrons
-			i(177518),	-- Sunsoul Shoulderguards
-			i(177510),	-- Sunsoul Spaulders
-			i(177041),	-- Sunwarmed Xyfias
-			i(175976),	-- Supervisor's Plans
-			i(176813),	-- Surgeon's Maldracite
-			i(178565),	-- Suspicious Message
-			i(174212),	-- Suspicious Weapon
-			i(175037),	-- Symbiotic Growth
-			i(181367),	-- Ta Cartel Restock List
-			i(173250),	-- Tailoring Reagent 01
-			i(173251),	-- Tailoring Reagent 02
-			i(173252),	-- Tailoring Reagent 03
-			i(173253),	-- Tailoring Reagent 04
-			i(173254),	-- Tailoring Reagent 05
-			i(173255),	-- Tailoring Reagent 06
-			i(173256),	-- Tailoring Reagent 07
-			i(173257),	-- Tailoring Reagent 08
-			i(174465),	-- Tainted Centurion Component
-			i(173879),	-- Tainted Centurion Component
-			i(181336),	-- Talking Frog in a Jar
-			i(174270),	-- Tasty Bone
-			i(182459),	-- Tasty Toes
-			i(177280),	-- Tattered Binding
-			i(181351),	-- Tattered Cloth
-			i(181352),	-- Tattered Leather
-			i(178597),	-- TBD Maldraxxus Supplies
-			i(180892),	-- Teeth-Marked Bone Chips
-			i(173737),	-- Temel's Body
-			i(173739),	-- Temel's Head
-			i(173738),	-- Temel's Wings
-			i(171104),	-- The Accuser's Sinstone
-			i(180217),	-- The Bad Container
-			i(180422),	-- The Banewood Road
-			i(178018),	-- The Brand's Key \\ Frostfire Key \\ Death Knight's Sword
-			i(174454),	-- The Countess's Sinstone
-			i(183874),	-- The Darkwing Flight Soars With Us!
-			i(182364),	-- The Everyday Assassin
-			i(173025),	-- The Infinite Treatises
-			i(180950),	-- The Maw - Pet Cosmetic - NYI
-			i(180951),	-- The Maw - POI Unlock - NYI
-			i(178569),	-- The Origin of Death
-			i(183875),	-- The Tithes are a Lie!
-			i(177947),	-- Theotar's Lost Parasol
-			i(173158),	-- Theotar's Note
-			i(181452),	-- Thick Gormhide \\ Ardenweald Skinning Item \\ Skinning Item \\ Skinning Foozle
-			i(175143),	-- Thicker Bark
-			i(176054),	-- Thigh High Boots
-			i(180600),	-- Thistle Tea
-			i(182333),	-- Thistledrop Dew
-			i(180777),	-- Thros-Forged Key
-			i(180810),	-- Throwin' Skull
-			i(179309),	-- Tincture of Tuica Moonshine
-			i(179382),	-- Tiny, Wet Scroll
-			i(173523),	-- Tirisfal Camp Scroll
-			i(173270),	-- Toc's Bag of Parts
-			i(173312),	-- Toc's Key
-			i(178583),	-- Tome of Dredger Alchemy
-			i(180695),	-- Tome of Spiritual Knowledge \\ Tome of Knowledge
-			i(171367),	-- Tonal Mallet
-			i(180274),	-- Torch
-			i(171440),	-- Torghast Door Key
-			i(173872),	-- Torn Journal Page
-			i(183698),	-- Torturer's Key
-			i(177468),	-- Trailseeker Helm
-			i(177470),	-- Trailseeker Spaulders
-			i(177465),	-- Trailseeker Vest
-			i(183121),	-- Training Gem
-			i(173269),	-- Training Gem
-			i(171204),	-- Traitor's Head
-			i(173285),	-- Treasonous Missive
-			i(172218),	-- Treated Gorm Husk
-			i(178718),	-- Trinary Efflux
-			i(183943),	-- Tubbins's Bucket
-			i(177949),	-- Tubbins's Lost Teapot
-			i(174844),	-- Tuft of Prowler Fur
-			i(180851),	-- Twirlpetal Pollen
-			i(178685),	-- Twisted Mawsteel
-			i(178790),	-- Umbral Plume
-			i(171991),	-- Unadorned Weapon
-			i(175971),	-- Unexploded Blight Bomb
-			i(178662),	-- Unfinished Blade
-			i(178401),	-- UNUSED - Rated - Weapon - 1H Mace Caster \\ Rated - Weapon - 1H Mace Caster
-			i(176011),	-- UNUSED - Rated - Weapon - 1H Mace Caster \\ Rated - Weapon - 1H Mace Caster
-			i(176001),	-- UNUSED - Rated - Weapon - 1H Mace Melee \\ Rated - Weapon - 1H Mace Melee
-			i(178391),	-- UNUSED - Rated - Weapon - 1H Mace Melee \\ Rated - Weapon - 1H Mace Melee
-			i(176005),	-- UNUSED - Rated - Weapon - 2H Axe Melee \\ Rated - Weapon - 2H Axe Melee
-			i(178395),	-- UNUSED - Rated - Weapon - 2H Axe Melee \\ Rated - Weapon - 2H Axe Melee
-			i(176006),	-- UNUSED - Rated - Weapon - 2H Sword Melee \\ Rated - Weapon - 2H Sword Melee
-			i(178396),	-- UNUSED - Rated - Weapon - 2H Sword Melee \\ Rated - Weapon - 2H Sword Melee
-			i(178400),	-- UNUSED - Rated - Weapon - Dagger Caster \\ Rated - Weapon - Dagger Caster
-			i(176010),	-- UNUSED - Rated - Weapon - Dagger Caster \\ Rated - Weapon - Dagger Caster
-			i(178666),	-- UNUSED - Unrated - Weapon - 1H Mace Melee \\ Unrated - 1H Mace AGI
-			i(178667),	-- UNUSED - Unrated - Weapon - 2H Mace STR \\ Unrated - 2H Mace STR
-			i(178669),	-- UNUSED - Unrated - Weapon - Staff AGI \\ Unrated - Staff AGI
-			i(178573),	-- Unusual Automaton Parts
-			i(180272),	-- Upper Reaches Key \\ Key to Upper Reaches - Seat of the Jailer
-			i(173900),	-- Vanishing Ink
-			i(178940),	-- Vashj's Signal
-			i(174968),	-- Veil Blossom
-			i(183688),	-- Veiled Crystal
-			i(182676),	-- Veilwing's Heart
-			i(171344),	-- Venthyr Calligraphy Set \\ Venthyr Signet Ring
-			i(176085),	-- Venthyr Clothing
-			i(180807),	-- Venthyr Concordat
-			i(182692),	-- Venthyr Fang
-			i(173696),	-- Venthyr Ritual Dagger
-			i(173695),	-- Venthyr Ritual Robes
-			i(173697),	-- Venthyr Ritual Tome
-			i(178170),	-- Vernon's Field Report \\ Gregor's Field Report \\ Darkshire Report
-			i(175011),	-- Vesper of Veilflight
-			i(175153),	-- Vessel of Ardenweald
-			i(180778),	-- Vessel of Ardenweald
-			i(173157),	-- Vial of Caustic Goo
-			i(177845),	-- Vial of Plague
-			i(174629),	-- Viridian Stone
-			i(175155),	-- Virtuous Dirge
-			i(175026),	-- Virtuous Toll
-			i(174377),	-- Volume of Victory
-			i(178020),	-- Volume of Victory: Vol 1
-			i(177817),	-- Voodoo Powder
-			i(173313),	-- Vopath's Key
-			i(173271),	-- Vopath's Stolen Items
-			i(173357),	-- Voracious Maggot
-			i(177948),	-- Vulca's Lost Toolkit
-			i(174232),	-- Vyraz Tactical Plan \\ Varyz Tactical Plan
-			i(168811),	-- Wand of Absorption
-			i(168445),	-- Wand of Delugion
-			i(180674),	-- Wand of Grumpiness
-			i(180675),	-- Wand of Regal Bearing
-			i(168600),	-- Ward Stone \\ Ritual Control Stone
-			i(168601),	-- Ward Stone \\ Ritual Control Stone
-			i(168599),	-- Ward Stone \\ Ritual Control Stone
-			i(177895),	-- Warm Earthen Jar
-			i(180033),	-- Warm Seaweed Stalk
-			i(172451),	-- Weak Anima Mote
-			i(179320),	-- Wealdwood
-			i(174324),	-- Weapons of the Fallen
-			i(178466),	-- Wicked Spirit Shard
-			i(180543),	-- Wild Gorm Gris
-			i(181749),	-- Windswept Rising Glory \\ Lush Rising Glory
-			i(182642),	-- Winged Arcanum
-			i(177836),	-- Wingpierce Javelin
-			i(179306),	-- Wingtip Warmer
-			i(178528),	-- Winter Veil Gift
-			i(182963),	-- Witch's Satchel
-			i(180050),	-- Wither Blade
-			i(181246),	-- Withered Leaf
-			i(174916),	-- Withering Hemlock
-			i(173024),	-- Worlds Beyond Counting
-			i(172458),	-- Worn Legion Chit
-			i(180804),	-- Worn Obleron Etching
-			i(179979),	-- Worn Sinstone
-			i(181299),	-- Wornthrough Bag
-			i(174845),	-- Wreath of Night's Veil Flowers \\ Wreath of Night's Veil
-			i(173044),	-- Wreathed Fishing Pole
-			i(182184),	-- Wyvern Soul \\ Wyvern Soulshape
-			i(180465),	-- Xandria's Reach
-			i(178656),	-- Xeeli's Ritual Drafts
-			i(180032),	-- Young Seaweed Stalk
-			i(180787),	-- Zel'han's Broken Armor
-			i(178439),	-- zzzRated - Cloth Cord \\ Rated - Cloth Cord
-			i(178425),	-- zzzRated - Cloth Gloves \\ Rated - Cloth Gloves
-			i(178427),	-- zzzRated - Cloth Hood \\ Rated - Cloth Hood
-			i(178431),	-- zzzRated - Cloth Leggings \\ Rated - Cloth Leggings
-			i(178436),	-- zzzRated - Cloth Mantle \\ Rated - Cloth Mantle
-			i(178415),	-- zzzRated - Cloth Robe \\ Rated - Cloth Robe
-			i(178420),	-- zzzRated - Cloth Treads \\ Rated - Cloth Treads
-			i(178443),	-- zzzRated - Cloth Wristwraps \\ Rated - Cloth Wristwraps
-			i(178441),	-- zzzRated - Leather Belt \\ Rated - Leather Belt
-			i(178422),	-- zzzRated - Leather Boots \\ Rated - Leather Boots
-			i(178433),	-- zzzRated - Leather Breeches \\ Rated - Leather Breeches
-			i(178423),	-- zzzRated - Leather Gloves \\ Rated - Leather Gloves
-			i(178429),	-- zzzRated - Leather Helm \\ Rated - Leather Helm
-			i(178434),	-- zzzRated - Leather Spaulders \\ Rated - Leather Spaulders
-			i(178418),	-- zzzRated - Leather Vest \\ Rated - Leather Vest
-			i(178446),	-- zzzRated - Leather Wristwraps \\ Rated - Leather Wristwraps
-			i(178440),	-- zzzRated - Mail Belt \\ Rated - Mail Belt
-			i(178426),	-- zzzRated - Mail Gauntlets \\ Rated - Mail Gauntlets
-			i(178428),	-- zzzRated - Mail Helm \\ Rated - Mail Helm
-			i(178432),	-- zzzRated - Mail Leggings \\ Rated - Mail Leggings
-			i(178437),	-- zzzRated - Mail Monnion \\ Rated - Mail Monnion
-			i(178421),	-- zzzRated - Mail Sabatons \\ Rated - Mail Sabatons
-			i(178417),	-- zzzRated - Mail Vest \\ Rated - Mail Vest
-			i(178445),	-- zzzRated - Mail Wristwraps \\ Rated - Mail Wristwraps
-			i(178416),	-- zzzRated - Plate Chestplate \\ Rated - Plate Chestplate
-			i(178424),	-- zzzRated - Plate Gauntlets \\ Rated - Plate Gauntlets
-			i(178438),	-- zzzRated - Plate Girdle \\ Rated - Plate Girdle
-			i(178413),	-- zzzRated - Plate Helm \\ Rated - Plate Helm
-			i(178430),	-- zzzRated - Plate Legguards \\ Rated - Plate Legguards
-			i(178435),	-- zzzRated - Plate Shoulders \\ Rated - Plate Shoulders
-			i(178419),	-- zzzRated - Plate Warboots \\ Rated - Plate Warboots
-			i(178444),	-- zzzRated - Plate Wristwraps \\ Rated - Plate Wristwraps
-			i(178449),	-- zzzRated - Weapon - 1H Axe Melee \\ Rated - Weapon - 1H Axe Melee
-			i(178462),	-- zzzRated - Weapon - 1H Mace Caster \\ Rated - Weapon - 1H Mace Caster
-			i(178452),	-- zzzRated - Weapon - 1H Mace Melee \\ Rated - Weapon - 1H Mace Melee
-			i(178455),	-- zzzRated - Weapon - 1H Sword Melee \\ Rated - Weapon - 1H Sword Melee
-			i(178456),	-- zzzRated - Weapon - 2H Axe Melee \\ Rated - Weapon - 2H Axe Melee
-			i(178457),	-- zzzRated - Weapon - 2H Sword Melee \\ Rated - Weapon - 2H Sword Melee
-			i(178450),	-- zzzRated - Weapon - Bow \\ Rated - Weapon - Bow
-			i(178451),	-- zzzRated - Weapon - Dagger Agi \\ Rated - Weapon - Dagger Agi
-			i(178461),	-- zzzRated - Weapon - Dagger Caster \\ Rated - Weapon - Dagger Caster
-			i(178459),	-- zzzRated - Weapon - Offhand \\ Rated - Weapon - Offhand
-			i(178453),	-- zzzRated - Weapon - Polearm Agi \\ Rated - Weapon - Polearm Agi
-			i(178458),	-- zzzRated - Weapon - Shield \\ Rated - Weapon - Shield
-			i(178454),	-- zzzRated - Weapon - Staff Caster \\ Rated - Weapon - Staff Caster
-			i(178460),	-- zzzRated - Weapon - Warglaive \\ Rated - Weapon - Warglaive
-			--- Leftovers ---
-			i(171206),	-- Forgotten Weapon
-			i(171209),	-- Blooded Satchel
-			i(171989),	-- Pouch of Spores
-			i(174078),	-- Primrose's Pyrotechnic Powder
-			i(174741),	-- Bell of Remembrance
-			i(175149),	-- A Small Carving of Ysera \\ A small carving of Ysera
-			i(175152),	-- A Slime-Covered Book of Secrets \\ A slime-covered book of secrets
-			i(175154),	-- A Secret Never Spoken
-			i(178033),	-- Talkative Spore
-			i(178124),	-- Dancing Motes of Light \\ Motes of Light \\ Restorative Residue
-			i(178602),	-- Thorny Loop \\ Thorn Ring
-			i(179295),	-- Squeaky Bat - NYI \\ Squeaky Bat
-			i(179392),	-- Orb of Burgeoning Ambition
-			i(179535),	-- Crumbling Pride Extractors
-			i(180008),	-- Resonating Anima Core
-			i(180049),	-- Steward's Silver Key
-			i(180170),	-- Pulsing Animacone
-			i(180207),	-- Spirit Cradle
-			i(180285),	-- Steward's Golden Key
-			i(180372),	-- Amalgamation of Sin
-			i(180374),	-- Amalgamation of Sin
-			i(180377),	-- Red Rum
-			i(180405),	-- Rusty Gargon Chain
-			i(180410),	-- Simmiring Draft of Shadows
-			i(180470),	-- Wild Fungus
-			i(180484),	-- Noko's Flute
-			i(180485),	-- Ansel's Lucky Violin
-			i(180486),	-- Chiu's Lute
-			i(180660),	-- Darktower Parchments: Instant Polymorphist
-			i(180661),	-- Darktower Parchments: Affliction Most Foul
-			i(180684),	-- Sentinel Stonewing
-			i(180686),	-- "Borrowed" Soulstone
-			i(180690),	-- Bottled Ash Cloud
-			i(180693),	-- Cyclonic Chronicles \\ Chronicles of the Cyclone
-			i(180696),	-- Legion Wing Insignia
-			i(180697),	-- Wing Commanders Insignia \\ Legion Commanders Insignia
-			i(180709),	-- Tempered Armor Patch
-			i(180715),	-- Bottled Wrath
-			i(180874),	-- Gargon Whistle
-			i(180974),	-- Novice's Satchel
-			i(180975),	-- Journeyman's Satchel
-			i(180976),	-- Artisan's Satchel
-			i(180979),	-- Artisan's Large Satchel
-			i(180980),	-- Journeyman's Large Satchel
-			i(180981),	-- Novice's Large Satchel
-			i(180983),	-- Artisan's Stuffed Satchel
-			i(180984),	-- Journeyman's Stuffed Satchel
-			i(180985),	-- Novice's Stuffed Satchel
-			i(180988),	-- Journeyman's Overflowing Satchel
-			i(180989),	-- Novice's Overflowing Satchel
-			i(181361),	-- Court Gossip
-			i(181362),	-- Blob of Slime
-			i(181364),	-- Cluster of Seeds
-			i(181369),	-- Giant Lungcap
-			i(181454),	-- Duskmire Ruse
-			i(181456),	-- Faldo's Key
-			i(181471),	-- Humility's Guard
-			i(181715),	-- Temel's Certificate of Completion
-			i(182097),	-- Shrouded Mirror Shard \\ Mirror Fragment
-			i(182186),	-- Stolen Memento
-			i(182198),	-- Undulating Blood Burrower
-			i(182200),	-- Engorged Blood Burrower
-			i(182212),	-- Magical Curio
-			i(182601),	-- Sludgefist's Head
-			i(182602),	-- Sludgefist's Head
-			i(182603),	-- Sludgefist's Head
-			i(182688),	-- Cypher of Obfuscation
-			i(183042),	-- Colossal Power Core
-			i(183718),	-- Extra Gooey Gorm Gunk
-			i(183734),	-- Mysteriously Thrumming Orb
-			i(183912),	-- Scorched Mirror Fragment
-			i(183919),	-- Ashen Core
-			i(183987),	-- Prisoner Cage Key
-			i(184043),	-- Lost Scroll
 		})),
 		tier(SL_TIER, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
 			filter(QUEST_ITEMS, {

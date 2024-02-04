@@ -267,6 +267,21 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			tier(SL_TIER, {
 				-- 9.0.1
 				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+					i(171425),	-- [DNT] REUSE ME \\ Laestrite Plates \\ Blacksmithing - Modified Crafting Reagent 06
+					i(171424),	-- [DNT] REUSE ME \\ Laestrite Spikes
+					i(171426),	-- [DNT] REUSE ME \\ Blacksmithing - Modified Crafting Reagent 07
+					i(171427),	-- [DNT] REUSE ME \\ Blacksmithing - Modified Crafting Reagent 08
+					i(172927),	-- [DNT] REUSE ME \\ Phaevyr Alloy
+					i(171421),	-- [DNT] REUSE ME \\ Freak Slayer's Charm \\ Freak Slayer
+					i(171422),	-- [DNT] REUSE ME \\ Ghoul Slayer's Charm \\ Ghoul Slayer
+					i(171423),	-- [DNT] REUSE ME \\ Man Slayer's Charm \\ Man Slayer
+					i(171429),	-- Blacksmithing Reagent 02
+					i(171430),	-- Blacksmithing Reagent 03
+					i(171431),	-- Blacksmithing Reagent 04
+					i(171432),	-- Blacksmithing Reagent 05
+					i(171433),	-- Blacksmithing Reagent 06
+					i(171434),	-- Blacksmithing Reagent 07
+					i(171435),	-- Blacksmithing Reagent 08
 					i(176925),	-- Bonegrafted Aegis
 					i(176906),	-- Bonegrafted Axe
 					i(171457),	-- Bonegrafted Armguards
@@ -307,7 +322,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(171399),	-- Phaeweald Waistguard
 					i(171411),	-- Phaeweald Warglaive
 					i(171420),	-- Reinforced Girdle
-					i(176927),	-- Shadowsteel Aegis \\ Solforged Aegis
+					i(176927),	-- Shadowsteel Aegis
 					i(176926),	-- Sinsteel Aegis
 					i(176916),	-- Sinsteel Axe
 					i(171465),	-- Sinsteel Armguards

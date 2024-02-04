@@ -268,6 +268,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 60632 },	-- I Know Your Face
 					["provider"] = { "n", 169935 },	-- Ara'lon
 					["coord"] = { 51.3, 34.0, ARDENWEALD },
+					["g"] = {
+						i(180207),	-- Spirit Cradle (QI!)
+					},
 				}),
 				q(60520, {	-- Nightmares Manifest
 					["sourceQuests"] = { 60522 },	-- Return to Tirna Vaal
@@ -752,6 +755,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 58265 },	-- Blooming Villains
 					["provider"] = { "n", 160749 },	-- Primrose
 					["coord"] = { 53.4, 58.7, ARDENWEALD },
+					["g"] = {
+						i(174078),	-- Primrose's Pyrotechnic Powder (QI!)
+					},
 				}),
 				q(58264, {	-- Wake Up, Get Up, Get Out There
 					["sourceQuests"] = { 58265 },	-- Blooming Villains

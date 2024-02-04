@@ -409,6 +409,21 @@ i(178548);	-- Tea Bones
 i(179017);	-- Telemea
 i(178550);	-- Tenebrous Truffle
 i(182120);	-- The Lich's Heart
+--- Vendor (Uncommon) ---
+i(180693);	-- Cyclonic Chronicles
+i(180661);	-- Darktower Parchments: Affliction Most Foul
+i(180660);	-- Darktower Parchments: Instant Polymorphist
+i(180696);	-- Legion Wing Insignia
+i(180377);	-- Red Rum
+i(180405);	-- Rusty Gargon Chain
+--- Vendor (Rare) ---
+i(180686);	-- "Borrowed" Soulstone
+i(180690);	-- Bottled Ash Cloud
+i(179535);	-- Crumbling Pride Extractors
+i(180874);	-- Gargon Whistle
+i(179392);	-- Orb of Burgeoning Ambition
+i(180684);	-- Sentinel Stonewing
+i(180697);	-- Wing Commanders Insignia
 --- Trash ---
 i(183936);	-- A Curt Note
 i(183928);	-- A Polite, But Short Thank You Note
@@ -528,6 +543,7 @@ i(180310);	-- Fluttering Stone Wings
 i(181730);	-- Forged Oxxein Whetstone
 i(181380);	-- Forgehand Tools
 i(180345);	-- Forgotten Dream Vial
+i(171206);	-- Forgotten Weapon
 i(176871);	-- Fortified Antennae
 i(182367);	-- Foul Bones
 i(184390);	-- Foul Ectoplasm
@@ -727,6 +743,7 @@ i(180885);	-- Worn Rune-Adorned Pouch
 --- Common ---
 i(178149);	-- Centurion Anima Core
 i(181394);	-- Empty Plague Bottle
+i(183718);	-- Extra Gooey Gorm Gunk
 i(180226);	-- Game Rulebook
 i(184163);	-- Gilded Slime
 i(180224);	-- Gubbins's Lost Diary
@@ -749,8 +766,50 @@ i(178150);	-- Tasty Purian
 i(184759);	-- Tasty Purian
 i(180229);	-- Tubbins's Autobiography
 --- Uncommon ---
+i(171209);	-- Blooded Satchel
+i(180715);	-- Bottled Wrath
+i(178124);	-- Dancing Motes of Light
 i(179293);	-- Glimmering Facial Cream
 i(180009);	-- Resonating Anima Mote
+i(180410);	-- Simmiring Draft of Shadows
+i(179295);	-- Squeaky Bat
+i(180709);	-- Tempered Armor Patch
+i(178602);	-- Thorny Loop
+i(182198);	-- Undulating Blood Burrower
+--- Rare ---
+i(182200);	-- Engorged Blood Burrower
+i(180170);	-- Pulsing Animacone
+i(180008);	-- Resonating Anima Core
+--- Queens Conservatory ---
+i(180979);	-- Artisan's Large Satchel
+i(180976);	-- Artisan's Satchel
+i(180983);	-- Artisan's Stuffed Satchel
+i(180980);	-- Journeyman's Large Satchel
+i(180988);	-- Journeyman's Overflowing Satchel
+i(180975);	-- Journeyman's Satchel
+i(180984);	-- Journeyman's Stuffed Satchel
+i(180981);	-- Novice's Large Satchel
+i(180989);	-- Novice's Overflowing Satchel
+i(180974);	-- Novice's Satchel
+i(180985);	-- Novice's Stuffed Satchel
+--- Ember Court ---
+i(181248);	-- Ancient Sinstone
+i(180485);	-- Ansel's Lucky Violin
+i(181362);	-- Blob of Slime
+i(180486);	-- Chiu's Lute
+i(181364);	-- Cluster of Seeds
+i(181361);	-- Court Gossip
+i(181454);	-- Duskmire Ruse
+i(181369);	-- Giant Lungcap
+i(181338);	-- Lady Moonberry
+i(182212);	-- Magical Curio
+i(180484);	-- Noko's Flute
+i(181347);	-- Plague Deviser Marileth
+i(181343);	-- Rendle and Cudgelface
+i(182186);	-- Stolen Memento
+i(181349);	-- Stonehead
+i(181715);	-- Temel's Certificate of Completion
+i(180470);	-- Wild Fungus
 --- Anima ---
 i(184147);	-- Agony Enrichment Device
 i(181540);	-- Animaflower Bud

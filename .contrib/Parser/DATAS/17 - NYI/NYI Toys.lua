@@ -119,11 +119,6 @@ root(ROOTS.NeverImplemented, {
 				i(187861),	-- Magical Seeds (TOY!)
 				i(187959),	-- PH - Banner of the Opportune (TOY!)
 			})),
-
-			-- 9.2.0
-			tier(SL_TIER, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
-				i(190196),	-- Enlightened Hearthstone (TOY!)
-			})),
 		}),
 		tier(DF_TIER, {
 			-- 10.0.0
