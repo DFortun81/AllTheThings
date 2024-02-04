@@ -178,14 +178,6 @@ local function GetDataMember(member, default)
 		return attData;
 	end
 end
-local function SetDataSubMember(member, submember, data)
-	attData = AllTheThingsAD[member];
-	if attData == nil then
-		AllTheThingsAD[member] = { [submember] = data };
-	else
-		attData[submember] = data;
-	end
-end
 local function GetDataSubMember(member, submember, default)
 	attData = AllTheThingsAD[member];
 	if attData then
@@ -203,7 +195,6 @@ local function GetDataSubMember(member, submember, default)
 end
 app.SetDataMember = SetDataMember;
 app.GetDataMember = GetDataMember;
-app.SetDataSubMember = SetDataSubMember;
 app.GetDataSubMember = GetDataSubMember;
 
 
