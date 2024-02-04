@@ -822,6 +822,28 @@ else
 		end
 		wipe(ClassicDirtyQuests);
 	end
+	local function UpdateParentProgress(group)
+		if group.collectible then
+			group.progress = group.progress + 1;
+		end
+
+		-- Continue on to this object's parent.
+		if group.parent then
+			if group.visible then
+				-- If we were initially visible, then update the parent.
+				UpdateParentProgress(group.parent);
+
+				-- If this group is trackable, then we should show it.
+				if app.GroupVisibilityFilter(group) then
+					group.visible = true;
+				elseif app.ShowTrackableThings(group) then
+					group.visible = not group.saved;
+				else
+					group.visible = false;
+				end
+			end
+		end
+	end
 	local function QuestCompletionHelper(questID)
 		-- Search ATT for the related quests.
 		local searchResults = SearchForField("questID", questID);
@@ -839,7 +861,7 @@ else
 						result.marked = nil;
 						if result.total then
 							-- This is an item that has a relative set of groups
-							app.UpdateParentProgress(result);
+							UpdateParentProgress(result);
 
 							-- If this is NOT a group...
 							if not result.g and result.collectible then
@@ -847,7 +869,7 @@ else
 								result.visible = app.CollectedItemVisibilityFilter(result);
 							end
 						else
-							app.UpdateParentProgress(result.parent);
+							UpdateParentProgress(result.parent);
 
 							if result.collectible then
 								-- If we've collected the item, use the "Show Collected Items" filter.
