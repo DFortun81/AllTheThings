@@ -167,7 +167,9 @@ for i,guid in ipairs({
 	"Player-3391-08D25BFA",	-- Smesue-Silvermoon EU
 	-- Danny Donkey
 	"Player-1402-0715EEC6", -- Skadefryden-Turalyon EU
+	"Player-1402-098AE1CC", -- Pessitank-Turalyon EU
 	"Player-1402-07F49282", -- Lommetjuven-Turalyon EU
+	"Player-1402-0A173E4E", -- Vådeskyttarn-Turalyon EU
 	"Player-1402-0A6F6AEF", -- Allianceelf-Turalyon EU
 	"Player-1402-0A716C0D", -- Allianceorc-Turalyon EU
 	"Player-1402-09D26257", -- Alliancetaur-Turalyon EU
