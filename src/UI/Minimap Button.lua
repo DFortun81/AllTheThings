@@ -73,6 +73,7 @@ local function CreateMinimapButton()
 
 	-- Button Configuration
 	local rounding = 10;
+	local position = AllTheThingsSavedVariables.MinimapButtonAngle or 193.47782;
 	local MinimapShapes = {
 		-- quadrant booleans (same order as SetTexCoord)
 		-- {bottom-right, bottom-left, top-right, top-left}
@@ -93,35 +94,26 @@ local function CreateMinimapButton()
 		["TRICORNER-BOTTOMRIGHT"]	= {true,  true,  true,  false},
 	};
 	button.update = function(self)
-		local position = app.GetDataMember("Position", -10.31);
-		local angle = math.rad(position) -- determine position on your own
-		local x, y
-		local cos = math.cos(angle)
-		local sin = math.sin(angle)
-		local q = 1;
-		if cos < 0 then
-			q = q + 1;	-- lower
-		end
-		if sin > 0 then
-			q = q + 2;	-- right
-		end
+		local angle = math.rad(position)
+		local x, y, q = math.cos(angle), math.sin(angle), 1;
+		if x < 0 then q = q + 1; end
+		if y > 0 then q = q + 2; end
 		local width = Minimap:GetWidth() * 0.5;
 		local height = Minimap:GetHeight() * 0.5;
 		if MinimapShapes[GetMinimapShape and GetMinimapShape() or "ROUND"][q] then
-			x = cos*width;
-			y = sin*height;
+			x, y = x * width, y * height;
 		else
-			x = math.max(-width, math.min(cos*(math.sqrt(2*(width)^2)-rounding), width))
-			y = math.max(-height, math.min(sin*(math.sqrt(2*(height)^2)-rounding), height))
+			x = math.max(-width, math.min(x*(math.sqrt(2*(width)^2)-rounding), width))
+			y = math.max(-height, math.min(y*(math.sqrt(2*(height)^2)-rounding), height))
 		end
-		self:SetPoint("CENTER", "Minimap", "CENTER", -math_floor(x), math_floor(y));
+		self:SetPoint("CENTER", "Minimap", "CENTER", math_floor(x), math_floor(y));
 	end
 	local update = function(self)
-		local w, x = GetCursorPosition();
-		local y, z = Minimap:GetLeft(), Minimap:GetBottom();
-		local scale = UIParent:GetScale();
-		w = y - w / scale + 70; x = x / scale - z - 70;
-		app.SetDataMember("Position", math.deg(math.atan2(x, w)));
+		local mx, my = Minimap:GetCenter();
+		local px, py = GetCursorPosition();
+		local scale = Minimap:GetEffectiveScale();
+		position = math.deg(math.atan2((py / scale) - my, (px / scale) - mx)) % 360;
+		AllTheThingsSavedVariables.MinimapButtonAngle = position;
 		self:Raise();
 		self:update();
 	end
@@ -136,6 +128,8 @@ local function CreateMinimapButton()
 	button:SetScript("OnEnter", AllTheThings_MinimapButtonOnEnter);
 	button:SetScript("OnLeave", AllTheThings_MinimapButtonOnLeave);
 	button:SetScript("OnClick", AllTheThings_MinimapButtonOnClick);
+	button:SetScript("OnEvent", button.update);
+	button:RegisterEvent("LOADING_SCREEN_DISABLED");
 	button:update();
 	button:Show();
 	return button;
