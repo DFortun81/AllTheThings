@@ -128,7 +128,30 @@ UpdateGroups = function(parent, g)
 		return visible;
 	end
 end
+local function UpdateParentProgress(group)
+	if group.collectible then
+		group.progress = group.progress + 1;
+	end
+
+	-- Continue on to this object's parent.
+	if group.parent then
+		if group.visible then
+			-- If we were initially visible, then update the parent.
+			UpdateParentProgress(group.parent);
+
+			-- If this group is trackable, then we should show it.
+			if app.GroupVisibilityFilter(group) then
+				group.visible = true;
+			elseif app.ShowTrackableThings(group) then
+				group.visible = not group.saved;
+			else
+				group.visible = false;
+			end
+		end
+	end
+end
 app.UpdateGroups = UpdateGroups;
+app.UpdateParentProgress = UpdateParentProgress;
 
 
 
