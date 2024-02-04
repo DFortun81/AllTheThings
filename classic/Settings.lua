@@ -2602,6 +2602,7 @@ DebuggingLabel:Show();
 tinsert(settings.MostRecentTab.objects, DebuggingLabel);
 local ids = {
 	["achievementID"] = "Achievement ID",
+	["Alive"] = "Alive",
 	["artID"] = "Art ID",
 	["awp"] = "Added With Patch",
 	["creatureID"] = "Creature ID",
@@ -2626,13 +2627,14 @@ local ids = {
 	["questID"] = "Quest ID",
 	["QuestGivers"] = "Quest Givers",
 	["rwp"] = "Removed With Patch",
+	["Spawned"] = "Spawned",
 	["speciesID"] = "Species ID",
 	["spellID"] = "Spell ID",
 	["sourceID"] = "Source ID",
 	["titleID"] = "Title ID",
 };
 local last = nil;
-for _,id in pairs({"awp","rwp","achievementID","artID","creatureID","Coordinates","currencyID","Descriptions","displayID","explorationID","factionID","filterID","flightPathID","guid","itemID"}) do
+for _,id in pairs({"Alive","awp","rwp","achievementID","artID","creatureID","Coordinates","currencyID","Descriptions","displayID","explorationID","factionID","filterID","flightPathID","guid","itemID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
@@ -2649,7 +2651,7 @@ for _,id in pairs({"awp","rwp","achievementID","artID","creatureID","Coordinates
 	last = filter;
 end
 last = nil;
-for _,id in pairs({"itemLevel","itemString","Lore","mapID","modelID","objectID","__type","Objectives","questID","QuestGivers","sourceID","speciesID","spellID","titleID"}) do
+for _,id in pairs({"itemLevel","itemString","Lore","mapID","modelID","objectID","__type","Objectives","questID","QuestGivers","sourceID","Spawned","speciesID","spellID","titleID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
@@ -2669,7 +2671,7 @@ end
 -- This creates the "Main List Scale" slider.
 local MainListScaleSlider = CreateFrame("Slider", "ATTMainListScaleSlider", settings, "OptionsSliderTemplate");
 MainListScaleSlider:SetPoint("LEFT", DebuggingLabel, "LEFT", 0, 0);
-MainListScaleSlider:SetPoint("TOP", ShowRaceRequirementsCheckBox, "BOTTOM", 0, -10);
+MainListScaleSlider:SetPoint("TOP", ShowRaceRequirementsCheckBox, "BOTTOM", 0, -15);
 tinsert(settings.MostRecentTab.objects, MainListScaleSlider);
 settings.MainListScaleSlider = MainListScaleSlider;
 MainListScaleSlider.currentValue = 0;

@@ -3579,6 +3579,7 @@ headerAdditionalInformation:SetPoint("TOP", checkboxUseClassColorForBorder, "BOT
 local ids = {
 	["achievementID"] = L["ACHIEVEMENT_ID"],
 	["achievementCategoryID"] = L["ACHIEVEMENT_CATEGORY_ID"],
+	["Alive"] = "Alive",
 	["awp"] = "Added With Patch",
 	["artifactID"] = L["ARTIFACT_ID"],
 	["azeriteEssenceID"] = L["AZERITE_ESSENCE_ID"],
@@ -3615,6 +3616,7 @@ local ids = {
 	["runeforgePowerID"] = "Runeforge Power ID",
 	["setID"] = L["SET_ID"],
 	["sourceID"] = L["SOURCE_ID"],
+	["Spawned"] = "Spawned",
 	["speciesID"] = L["SPECIES_ID"],
 	["spellID"] = L["SPELL_ID"],
 	["tierID"] = L["EXPANSION_ID"],

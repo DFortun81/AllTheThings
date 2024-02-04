@@ -8,6 +8,9 @@ local _, app = ...;
 -- Global locals
 local ipairs, pairs, InCombatLockdown, pcall, strsplit, tostring, tonumber, C_Map_GetPlayerMapPosition, math_sqrt, GameTooltip
 	= ipairs, pairs, InCombatLockdown, pcall, strsplit, tostring, tonumber, C_Map.GetPlayerMapPosition, math.sqrt, GameTooltip
+	
+local timeFormatter = CreateFromMixins(SecondsFormatterMixin);
+timeFormatter:Init(1, SecondsFormatter.Abbreviation.Truncate);
 
 -- App locals
 local SearchForField = app.SearchForField;
@@ -585,33 +588,26 @@ if TooltipDataProcessor then
 			end
 		end
 
-		if id and app.Debugging then
-			local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",id);
-			if spawn_uid then
-				local spawnEpoch = GetServerTime() - (GetServerTime() % 2^23)
-				local spawnEpochOffset = bit.band(tonumber(string.sub(spawn_uid, 5), 16), 0x7fffff)
-				local spawnIndex = bit.rshift(bit.band(tonumber(string.sub(spawn_uid, 1, 5), 16), 0xffff8), 3)
-				local spawnTime = spawnEpoch + spawnEpochOffset
-
-				if spawnTime > GetServerTime() then
-					-- This only occurs if the epoch has rolled over since a unit has spawned.
-					spawnTime = spawnTime - ((2^23) - 1)
-				end
-				self:AddDoubleLine("Spawned at:", date("%Y-%m-%d %H:%M:%S", spawnTime))
-				self:AddDoubleLine("Spawn index:", spawnIndex)
-			end
-		end
-
 		-- Does the tooltip have a target?
 		if self.AllTheThingsProcessing and target and id then
-			-- Yes.
+			if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L["GUID"], id) end
 			local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",id);
 			-- print(target, type, npc_id);
-			if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L["GUID"], id) end
 			if type == "Player" then
 				local method = PLAYER_TOOLTIPS[id];
 				if method then method(self, target); end
 			elseif type == "Creature" or type == "Vehicle" then
+				if spawn_uid then
+					local showAliveTime = app.Settings:GetTooltipSetting("Alive");
+					local showSpawnTime = app.Settings:GetTooltipSetting("Spawned");
+					if showAliveTime or showSpawnTime then
+						local serverTime = GetServerTime();
+						local spawnTime = (serverTime - (serverTime % 2^23)) + bit.band(tonumber(spawn_uid:sub(5), 16), 0x7fffff);
+						if spawnTime > serverTime then spawnTime = spawnTime - ((2^23) - 1); end
+						if showAliveTime then self:AddDoubleLine("Alive", app.Modules.Color.Colorize(timeFormatter:Format(serverTime - spawnTime), app.Colors.White)); end
+						if showSpawnTime then self:AddDoubleLine("Spawned", app.Modules.Color.Colorize(date("%Y-%m-%d %H:%M:%S", spawnTime), app.Colors.White)); end
+					end
+				end
 				AttachTooltipSearchResults(self, 1, "creatureID:" .. npc_id, SearchForField, "creatureID", tonumber(npc_id));
 			end
 			return true;
@@ -730,22 +726,19 @@ else
 					-- Yes.
 					local guid = UnitGUID(target);
 					if guid then
+						if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L["GUID"], guid) end
 						local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid);
 						--print(guid, type, npcID);
-						if app.Settings:GetTooltipSetting("guid") then self:AddDoubleLine(L["GUID"], guid) end
 						if spawn_uid then
-							local serverTime = GetServerTime();
-							local spawnEpoch = serverTime - (serverTime % 2^23)
-							local spawnEpochOffset = bit.band(tonumber(spawn_uid:sub(5), 16), 0x7fffff)
-							local spawnIndex = bit.rshift(bit.band(tonumber(spawn_uid:sub(1, 5), 16), 0xffff8), 3)
-							local spawnTime = spawnEpoch + spawnEpochOffset
-
-							if spawnTime > serverTime then
-								-- This only occurs if the epoch has rolled over since a unit has spawned.
-								spawnTime = spawnTime - ((2^23) - 1)
+							local showAliveTime = app.Settings:GetTooltipSetting("Alive");
+							local showSpawnTime = app.Settings:GetTooltipSetting("Spawned");
+							if showAliveTime or showSpawnTime then
+								local serverTime = GetServerTime();
+								local spawnTime = (serverTime - (serverTime % 2^23)) + bit.band(tonumber(spawn_uid:sub(5), 16), 0x7fffff);
+								if spawnTime > serverTime then spawnTime = spawnTime - ((2^23) - 1); end
+								if showAliveTime then self:AddDoubleLine("Alive", app.Modules.Color.Colorize(timeFormatter:Format(serverTime - spawnTime), app.Colors.White)); end
+								if showSpawnTime then self:AddDoubleLine("Spawned", app.Modules.Color.Colorize(date("%Y-%m-%d %H:%M:%S", spawnTime), app.Colors.White)); end
 							end
-							self:AddDoubleLine("Spawned at:", date("%Y-%m-%d %H:%M:%S", spawnTime))
-							self:AddDoubleLine("Spawn index:", spawnIndex)
 						end
 						if type == "Player" then
 							local method = PLAYER_TOOLTIPS[guid];
