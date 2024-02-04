@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 	m(ZERETH_MORTIS, {
 		n(SPECIAL, {
 			header(HEADERS.Item, 190196, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Enlightened Hearthstone
-				["description"] = "To obtain this toy, you will need six people with the Sphere of Enlightened Cogitation toy. \nEach person with the toy needs to stand on top of one of the hexagon pillars surrounding the pool of water under the Forge of Afterlives, right at the center of Zereth Mortis, and use the toy while sitting. One person needs to be in each pillar.",
+				["description"] = "To obtain this toy, you will need six people with the Sphere of Enlightened Cogitation toy.\nEach person with the toy needs to stand on top of one of the hexagon pillars surrounding the pool of water under the Forge of Afterlives, right at the center of Zereth Mortis, and use the toy while sitting.\nOne person needs to be in each pillar.\nIf all 6 people use the toy successfully at the same time, a zone-wide chat emote will show up - The Ponderer's Portal has been opened. Once this happens, simply head to the southern hexagon pillar and loot the toy from the Ponderer's Portal - The Portal looks like a white glowy sphere.",
 				["g"] = {
 					i(190196),	-- Enlightened Hearthstone (TOY!)
 				},
