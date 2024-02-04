@@ -269,7 +269,11 @@ settings.Initialize = function(self)
 	self.sliderMiniListScale:SetValue(self:GetTooltipSetting("MiniListScale"))
 	self.sliderPercentagePrecision:SetValue(self:GetTooltipSetting("Precision"))
 	self.sliderMinimapButtonSize:SetValue(self:GetTooltipSetting("MinimapSize"))
-	app.SetMinimapButtonSettings(
+  
+	if not app.WorldMap then app.WorldMap = app.CreateWorldMapButton() end
+	app.WorldMap:Show()
+  
+  app.SetMinimapButtonSettings(
 		self:GetTooltipSetting("MinimapButton"),
 		self:GetTooltipSetting("MinimapSize"));
 	self:UpdateMode()
