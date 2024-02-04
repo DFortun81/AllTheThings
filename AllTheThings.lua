@@ -5200,40 +5200,6 @@ local function SearchForLink(link)
 		end
 	end
 end
-local function SearchForMissingItemsRecursively(group, listing)
-	if group.visible then
-		if group.itemID and (group.collectible or (group.total and group.total > 0)) and not app.IsBoP(group) then
-			print(group.itemID, group.text);
-			tinsert(listing, group);
-		end
-		if group.g and group.expanded then
-			-- Go through the sub groups and determine if any of them have a response.
-			for i, subgroup in ipairs(group.g) do
-				SearchForMissingItemsRecursively(subgroup, listing);
-			end
-		end
-	end
-end
-local function SearchForMissingItems(group)
-	local listing = {};
-	SearchForMissingItemsRecursively(group, listing);
-	return listing;
-end
-local function SearchForMissingItemNames(group)
-	-- Auctionator needs unique Item Names. Nothing else.
-	local uniqueNames = {};
-	for i,group in ipairs(SearchForMissingItems(group)) do
-		local name = group.name;
-		if name then uniqueNames[name] = 1; end
-	end
-
-	-- Build the array of names.
-	local arr = {};
-	for key,value in pairs(uniqueNames) do
-		tinsert(arr, key);
-	end
-	return arr;
-end
 app.SearchForLink = SearchForLink;
 
 
@@ -11725,6 +11691,19 @@ app.AddContentTracking = function(group)
 	end
 end
 end
+local function SearchForMissingItemsRecursively(group, listing)
+	if group.visible then
+		if group.itemID and (group.collectible or (group.total and group.total > 0)) and not app.IsBoP(group) then
+			tinsert(listing, group);
+		end
+		if group.g and group.expanded then
+			-- Go through the sub groups and determine if any of them have a response.
+			for i, subgroup in ipairs(group.g) do
+				SearchForMissingItemsRecursively(subgroup, listing);
+			end
+		end
+	end
+end
 local RowOnEnter, RowOnLeave;
 local function RowOnClick(self, button)
 	local reference = self.ref;
@@ -11770,135 +11749,79 @@ local function RowOnClick(self, button)
 		else
 			if IsShiftKeyDown() then
 				-- If we're at the Auction House
-				if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
-					-- Auctionator Support
-					if Atr_SearchAH then
-						if reference.g and #reference.g > 0 then
-							local missingItems = SearchForMissingItemNames(reference);
-							if #missingItems > 0 then
-								Atr_SelectPane(3);
-								Atr_SearchAH(L["TITLE"], missingItems, LE_ITEM_CLASS_ARMOR);
-								return true;
-							end
-							app.print(L["AH_SEARCH_NO_ITEMS_FOUND"]);
-						else
-							local name = reference.name;
-							if name then
-								Atr_SelectPane(3);
-								--Atr_SearchAH(name, { name });
-								Atr_SetSearchText (name);
-								Atr_Search_Onclick ();
-								return true;
-							end
-							app.print(L["AH_SEARCH_BOE_ONLY"]);
-						end
-						return true;
-					elseif Auctionator and AuctionatorShoppingFrame and AuctionatorShoppingFrame:IsVisible() then
-						if reference.g and #reference.g > 0 then
-							local missingItems = SearchForMissingItemNames(reference);
-							if #missingItems > 0 then
-								local searchString = L["TITLE"];
-								if Auctionator.Shopping.ListManager:GetIndexForName(searchString) ~= nil then
-								  Auctionator.Shopping.ListManager:Delete(searchString)
-								end
-								for i,item in ipairs(missingItems) do
-									searchString = searchString .. "^" .. item;
-								end
-								Auctionator.Shopping.Lists.BatchImportFromString(searchString);
-								return true;
-							end
-							app.print(L["AH_SEARCH_NO_ITEMS_FOUND"]);
-						else
-							local name = reference.name;
-							if name then
-								Atr_SetSearchText (name);
-								Atr_Search_Onclick ();
-								return true;
-							end
-							app.print(L["AH_SEARCH_BOE_ONLY"]);
-						end
-						return true;
-					elseif TSMAPI and TSMAPI.Auction then
-						if reference.g and #reference.g > 0 then
-							local missingItems = SearchForMissingItems(reference);
-							if #missingItems > 0 then
-								local itemList, search = {};
-								for i,group in ipairs(missingItems) do
-									search = group.tsm or TSMAPI.Item:ToItemString(group.link or group.itemID);
-									if search then itemList[search] = app.GenerateSourcePathForTSM(group, 0); end
-								end
-								app:ShowPopupDialog(L["TSM_WARNING_1"] .. L["TITLE"] .. L["TSM_WARNING_2"],
-								function()
-									TSMAPI.Groups:CreatePreset(itemList);
-									app.print(L["PRESET_UPDATE_SUCCESS"]);
-									if not TSMAPI.Operations:GetFirstByItem(search, "Shopping") then
-										print(L["SHOPPING_OP_MISSING_1"]);
-										print(L["SHOPPING_OP_MISSING_2"]);
+				local isTSMOpen = TSM_API and TSM_API.IsUIVisible("AUCTION");
+				if isTSMOpen or (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
+					local missingItems = {};
+					SearchForMissingItemsRecursively(reference, missingItems);
+					local count = #missingItems;
+					if count > 0 then
+						if isTSMOpen then
+							-- This is the new, unusable POS API that I don't understand. lol
+							local dict, path, itemString = {};
+							for i,group in ipairs(missingItems) do
+								path = app.GenerateSourcePathForTSM(group, 0);
+								if path then
+									itemString = dict[path];
+									if itemString then
+										dict[path] = itemString .. ",i:" .. group.itemID;
+									else
+										dict[path] = "i:" .. group.itemID;
 									end
-								end);
-								return true;
+								end
 							end
-							app.print(L["AH_SEARCH_NO_ITEMS_FOUND"]);
-						else
-							-- Attempt to search manually with the link.
-							local searched = app.TrySearchAHForGroup(reference)
-							if searched then return true end
-						end
-						return true;
-					else
-						if reference.g and #reference.g > 0 and not reference.link then
-							app.print(L["AUCTIONATOR_GROUPS"]);
+							local search,first = "",true;
+							for path,itemString in pairs(dict) do
+								if first then
+									first = false;
+								else
+									search = search .. ",";
+								end
+								search = search .. "group:" .. path .. "," .. itemString;
+							end
+							app:ShowPopupDialogWithMultiLineEditBox(search, nil, "Copy this to your TSM Import Group Popup");
 							return true;
-						else
-							-- Attempt to search manually with the link.
-							local searched = app.TrySearchAHForGroup(reference)
-							if searched then return true end
-						end
-					end
-				elseif TSMAPI_FOUR and false then
-					if reference.g and #reference.g > 0 then
-						if true then
-							app.print(L["TSM4_ERROR"]);
-							return true;
-						end
-						local missingItems = SearchForMissingItems(reference);
-						if #missingItems > 0 then
+						elseif Auctionator and Auctionator.API and (AuctionatorShoppingFrame and (AuctionatorShoppingFrame:IsVisible() or count > 1)) then
+							-- Auctionator needs unique Item Names. Nothing else.
+							local uniqueNames = {};
+							for i,group in ipairs(missingItems) do
+								local name = group.name;
+								if name then uniqueNames[name] = 1; end
+							end
+
+							-- Build the array of names.
+							local arr = {};
+							for key,value in pairs(uniqueNames) do
+								tinsert(arr, key);
+							end
+							Auctionator.API.v1.MultiSearchExact(L["TITLE"], arr);
+							return;
+						elseif TSMAPI and TSMAPI.Auction then
+							-- This was the old, better, TSM API that made sense.
+							local itemList, search = {};
+							for i,group in ipairs(missingItems) do
+								search = group.tsm or TSMAPI.Item:ToItemString(group.link or group.itemID);
+								if search then itemList[search] = app.GenerateSourcePathForTSM(group, 0); end
+							end
 							app:ShowPopupDialog(L["TSM_WARNING_1"] .. L["TITLE"] .. L["TSM_WARNING_2"],
 							function()
-								local itemString, groupPath;
-								groupPath = app.GenerateSourcePathForTSM(app:GetWindow("Prime").data, 0);
-								if TSMAPI_FOUR.Groups.Exists(groupPath) then
-									TSMAPI_FOUR.Groups.Remove(groupPath);
+								TSMAPI.Groups:CreatePreset(itemList);
+								app.print(L["PRESET_UPDATE_SUCCESS"]);
+								if not TSMAPI.Operations:GetFirstByItem(search, "Shopping") then
+									print(L["SHOPPING_OP_MISSING_1"]);
+									print(L["SHOPPING_OP_MISSING_2"]);
 								end
-								TSMAPI_FOUR.Groups.AppendOperation(groupPath, "Shopping", operation)
-								for i,group in ipairs(missingItems) do
-									if (not group.spellID and not group.achID) or group.itemID then
-										itemString = group.tsm;
-										if itemString then
-											groupPath = app.GenerateSourcePathForTSM(group, 0);
-											TSMAPI_FOUR.Groups.Create(groupPath);
-											if TSMAPI_FOUR.Groups.IsItemInGroup(itemString) then
-												TSMAPI_FOUR.Groups.MoveItem(itemString, groupPath)
-											else
-												TSMAPI_FOUR.Groups.AddItem(itemString, groupPath)
-											end
-											if i > 10 then break; end
-										end
-									end
-								end
-								app.print("Updated the preset successfully.");
 							end);
 							return true;
+						elseif reference.g and #reference.g > 0 and not reference.link then
+							app.print(L["AUCTIONATOR_GROUPS"]);
+							return true;
 						end
-						app.print(L["AH_SEARCH_NO_ITEMS_FOUND"]);
-					else
-						-- Attempt to search manually with the link.
-						local searched = app.TrySearchAHForGroup(reference)
-						if searched then return true end
 					end
-					return true;
+					
+					-- Attempt to search manually with the link.
+					local searched = app.TrySearchAHForGroup(reference);
+					if searched then return true end
 				else
-
 					-- Not at the Auction House
 					-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
 					local link = reference.link or reference.silentLink;

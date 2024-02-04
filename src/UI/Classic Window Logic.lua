@@ -130,39 +130,7 @@ UpdateGroups = function(parent, g)
 end
 app.UpdateGroups = UpdateGroups;
 
-local function SearchForMissingItemsRecursively(group, listing)
-	if group.visible then
-		if group.itemID and (group.collectible or (group.total and group.total > 0)) and not app.IsBoP(group) then
-			tinsert(listing, group);
-		end
-		if group.g and group.expanded then
-			-- Go through the sub groups and determine if any of them have a response.
-			for i, subgroup in ipairs(group.g) do
-				SearchForMissingItemsRecursively(subgroup, listing);
-			end
-		end
-	end
-end
-local function SearchForMissingItems(group)
-	local listing = {};
-	SearchForMissingItemsRecursively(group, listing);
-	return listing;
-end
-local function SearchForMissingItemNames(group)
-	-- Auctionator needs unique Item Names. Nothing else.
-	local uniqueNames = {};
-	for i,group in ipairs(SearchForMissingItems(group)) do
-		local name = group.name;
-		if name then uniqueNames[name] = 1; end
-	end
 
-	-- Build the array of names.
-	local arr = {};
-	for key,value in pairs(uniqueNames) do
-		tinsert(arr, key);
-	end
-	return arr;
-end
 
 
 -- Row Helper Functions
@@ -622,6 +590,19 @@ local function StartMovingOrSizing(self)
 		end
 	end
 end
+local function SearchForMissingItemsRecursively(group, listing)
+	if group.visible then
+		if group.itemID and (group.collectible or (group.total and group.total > 0)) and not app.IsBoP(group) then
+			tinsert(listing, group);
+		end
+		if group.g and group.expanded then
+			-- Go through the sub groups and determine if any of them have a response.
+			for i, subgroup in ipairs(group.g) do
+				SearchForMissingItemsRecursively(subgroup, listing);
+			end
+		end
+	end
+end
 local function RowOnClick(self, button)
 	local reference = self.ref;
 	if reference then
@@ -652,30 +633,54 @@ local function RowOnClick(self, button)
 			end
 
 			-- If we're at the Auction House
-			if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
-				local search = SearchForMissingItemNames(reference);
-				local count = #search;
+			local isTSMOpen = TSM_API and TSM_API.IsUIVisible("AUCTION");
+			if isTSMOpen or (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
+				local missingItems = {};
+				SearchForMissingItemsRecursively(reference, missingItems);
+				local count = #missingItems;
 				if count < 1 then
 					app.print("No cached items found in search. Expand the group and view the items to cache the names and try again. Only Bind on Equip items will be found using this search.");
 					return true;
 				end
-
-				-- Auctionator Support
-				if TSM_API and TSM_API.IsUIVisible("AUCTION") then
-					app.print("TSM is not currently supported as the API for Classic is really limited.");
-					return true;
-				elseif Atr_SearchAH then
-					Atr_SelectPane(3);
-					if count > 1 then
-						Atr_SearchAH(L["TITLE"], search, LE_ITEM_CLASS_ARMOR);
-						return true;
-					else
-						Atr_SetSearchText (search[1]);
-						Atr_Search_Onclick ();
-						return true;
+				if isTSMOpen then
+					-- This is the new, unusable POS API that I don't understand. lol
+					local dict, path, itemString = {};
+					for i,group in ipairs(missingItems) do
+						path = app.GenerateSourcePathForTSM(group, 0);
+						if path then
+							itemString = dict[path];
+							if itemString then
+								dict[path] = itemString .. ",i:" .. group.itemID;
+							else
+								dict[path] = "i:" .. group.itemID;
+							end
+						end
 					end
-				elseif Auctionator and Auctionator.API and AuctionatorTabs_Shopping then
-					Auctionator.API.v1.MultiSearchExact(L["TITLE"], search);
+					local search,first = "",true;
+					for path,itemString in pairs(dict) do
+						if first then
+							first = false;
+						else
+							search = search .. ",";
+						end
+						search = search .. "group:" .. path .. "," .. itemString;
+					end
+					app:ShowPopupDialogWithMultiLineEditBox(search, nil, "Copy this to your TSM Import Group Popup");
+					return true;
+				elseif Auctionator and Auctionator.API and (AuctionatorShoppingFrame and (AuctionatorShoppingFrame:IsVisible() or count > 1)) then
+					-- Auctionator needs unique Item Names. Nothing else.
+					local uniqueNames = {};
+					for i,group in ipairs(missingItems) do
+						local name = group.name;
+						if name then uniqueNames[name] = 1; end
+					end
+
+					-- Build the array of names.
+					local arr = {};
+					for key,value in pairs(uniqueNames) do
+						tinsert(arr, key);
+					end
+					Auctionator.API.v1.MultiSearchExact(L["TITLE"], arr);
 					return;
 				end
 
