@@ -237,7 +237,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								}),
 								i(184220, {	-- Encyclopedia of Sinstone Fragment Recovery
 									["questID"] = 62821,	-- same spell / quest trigger as Treatise but this is BoA version that can be mailed to alts
-									["cost"] = { { "c", SINSTONE_FRAGMENTS, 600 } },
+									["cost"] = { { "c", SINSTONE_FRAGMENTS, 1200 } },
 								}),
 								i(184222, {	-- Lemet's Requisition Orders
 									["questID"] = 62822,
