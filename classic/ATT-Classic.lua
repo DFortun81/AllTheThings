@@ -6855,6 +6855,7 @@ local function AddTomTomWaypoint(group)
 		app.print("You must have TomTom installed to plot coordinates.");
 	end
 end
+app.AddTomTomWaypoint = AddTomTomWaypoint;
 app.AddEventHandler("OnReady", function()
 	local tomTom = TomTom;
 	if tomTom then

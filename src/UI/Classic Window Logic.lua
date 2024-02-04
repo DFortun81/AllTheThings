@@ -729,7 +729,7 @@ local function RowOnClick(self, button)
 		-- All non-Shift Right Clicks open a mini list or the settings.
 		if button == "RightButton" then
 			if IsAltKeyDown() then
-				AddTomTomWaypoint(reference, false);
+				app.AddTomTomWaypoint(reference, false);
 			elseif self.index > 0 then
 				app:CreateMiniListForGroup(self.ref);
 			else
@@ -2901,7 +2901,7 @@ function app:CreateMiniListForGroup(group)
 		end,
 	});
 	if IsAltKeyDown() then
-		AddTomTomWaypoint(popout.data, false);
+		app.AddTomTomWaypoint(popout.data, false);
 	else
 		if not popout.data.expanded then
 			ExpandGroupsRecursively(popout.data, true, true);
