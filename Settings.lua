@@ -134,6 +134,7 @@ local GeneralSettingsBase = {
 		["Show:OnlyActiveEvents"] = true,
 		["Skip:AutoRefresh"] = false,
 		["Show:PetBattles"] = true,
+		["Show:UnavailablePersonalLoot"] = true,
 		["Hide:PvP"] = false,
 		["Dynamic:Style"] = 1,
 		["CC:SL_COV_KYR"] = false,
@@ -1424,6 +1425,12 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		filterSet.PetBattles(true)
 	end
+
+	if self:Get("Show:UnavailablePersonalLoot") then
+		filterSet.UnavailablePersonalLoot()
+	else
+		filterSet.UnavailablePersonalLoot(true)
+	end
 	if self:Get("Filter:ByLevel") and not self:Get("DebugMode") then
 		filterSet.Level(true)
 	else
@@ -2036,8 +2043,26 @@ end)
 checkboxShowPvP:SetATTTooltip(L["SHOW_PVP_CHECKBOX_TOOLTIP"])
 checkboxShowPvP:AlignBelow(checkboxShowPetBattles)
 
+local checkboxShowUnavailablePersonalLoot = child:CreateCheckBox(L["SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX"],
+	function(self)
+		self:SetChecked(settings:Get("Show:UnavailablePersonalLoot"))
+		if app.MODE_DEBUG then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
+	function(self)
+		settings:Set("Show:UnavailablePersonalLoot", self:GetChecked())
+		settings:UpdateMode(1)
+	end)
+checkboxShowUnavailablePersonalLoot:SetATTTooltip(L["SHOW_UNAVAILABLE_PERSONAL_LOOT_CHECKBOX_TOOLTIP"])
+checkboxShowUnavailablePersonalLoot:AlignBelow(checkboxShowPvP)
+
 local headerAutomatedContent = child:CreateHeaderLabel(L["CUSTOM_FILTERS_LABEL"])
-headerAutomatedContent:SetPoint("TOP", checkboxShowPvP, "BOTTOM", 0, -10)
+headerAutomatedContent:SetPoint("TOP", checkboxShowUnavailablePersonalLoot, "BOTTOM", 0, -10)
 headerAutomatedContent:SetPoint("LEFT", headerGeneralContent, 0, 0)
 headerAutomatedContent.OnRefresh = function(self)
 	if app.MODE_DEBUG then
