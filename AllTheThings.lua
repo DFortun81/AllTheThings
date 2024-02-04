@@ -10715,17 +10715,32 @@ local function CreateWorldMapButton()
 	button.texture = texture;
 
 	button:SetScript("OnEnter", function(self)
+		local mapID = WorldMapFrame:GetMapID();
+		self.mapID = mapID;
+		if mapID then
+			local mapInfo = C_Map_GetMapInfo(mapID);
+			if mapInfo then
+				GameTooltip:SetOwner(self, "ANCHOR_LEFT");
+				GameTooltip:ClearLines();
+				GameTooltip:AddLine(L["OPEN_MINILIST_FOR"] .. mapInfo.name);
+				GameTooltip:Show();
+				return;
+			end
+		end
 		GameTooltip:SetOwner(self, "ANCHOR_LEFT");
 		GameTooltip:ClearLines();
-		GameTooltip:AddLine(L["OPEN_MINILIST_FOR"] .. C_Map_GetMapInfo(WorldMapFrame:GetMapID()).name);
+		GameTooltip:AddLine("Invalid mapID detected, unable to assign map to ATT.");
 		GameTooltip:Show();
 	end);
 	button:SetScript("OnLeave", function()
 		GameTooltip:Hide();
 		GameTooltip:ClearLines();
 	end);
-	button:SetScript("OnClick", function()
-		app:GetWindow("CurrentInstance"):SetMapID(WorldMapFrame:GetMapID());
+	button:SetScript("OnClick", function(self)
+		local mapID = self.mapID;
+		if mapID and mapID > 0 then
+			app:GetWindow("CurrentInstance"):SetMapID(mapID);
+		end
 	end);
 	button:Show();
 	return button;
