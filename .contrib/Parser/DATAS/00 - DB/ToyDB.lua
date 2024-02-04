@@ -1032,8 +1032,6 @@ i(187793);	-- Personal Containment Trap
 i(190457);	-- Protopological Cube
 i(190177);	-- Sphere of Enlightened Cogitation
 i(190238);	-- Xy'rath's Booby-Trapped Cache
---- NYI ---
-i(190196);	-- Enlightened Hearthstone
 
 -----------------
 -- PATCH 9.2.5 --
@@ -1262,6 +1260,7 @@ i(212524);	-- Delicate Crimson Parasol
 i(212525);	-- Delicate Ebony Parasol
 i(212523);	-- Delicate Jade Parasol
 i(212500);	-- Delicate Silk Parasol
+i(190196);	-- Enlightened Hearthstone
 i(211864);	-- Exquisite Love Boat
 i(210974);	-- Eyes For You Only
 i(211946);	-- Hearthstone Game Table
