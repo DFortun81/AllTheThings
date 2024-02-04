@@ -61,9 +61,9 @@ function api:RegisterForSoundPackEvents(handler)
 	end
 	tinsert(EventHandlers, handler);
 end
-app.AddEventHandler("OnStartup", function()
+function api:ReloadSoundPack()
 	api:ActivateSoundPack(AllTheThingsSavedVariables.CurrentSoundPack or "Default", true);
-end);
+end
 local DefaultSoundPack = api:CreateSoundPack("Default", {
 	COMPLETE = {
 		app.asset("complete1.ogg"),
