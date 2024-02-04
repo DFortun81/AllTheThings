@@ -343,7 +343,7 @@ local HookableTooltips = {
 -- Shared Tooltip Functions
 local function CanAttachTooltips()
 	-- Consolidated logic for whether a tooltip should include ATT information based on combat & user settings
-	return (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSettingWithMod("Enabled");
+	return app.IsReady and (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSettingWithMod("Enabled");
 end
 local function ClearTooltip(self)
 	-- app.PrintDebug("Clear Tooltip",self:GetName());
@@ -683,9 +683,18 @@ if TooltipDataProcessor then
 		end
 		-- print("AttachTooltip-Return");
 	end
+	app.events.TOOLTIP_DATA_UPDATE = function(...)
+		if GameTooltip and GameTooltip:IsVisible() then
+			-- app.PrintDebug("Auto-refresh tooltip")
+			-- Make sure the tooltip will try to re-attach the data if it's from an ATT row
+			GameTooltip.ATTAttachComplete = nil;
+			GameTooltip:Show();
+		end
+	end
 	app.AddEventHandler("OnReady", function()
 		TooltipDataProcessor.AddTooltipPostCall(TooltipDataProcessor.AllTypes, AttachTooltip)
 		-- TooltipDataProcessor.AddTooltipPostCall(Enum_TooltipDataType.Item, OnTooltipSetItem)
+		app:RegisterEvent("TOOLTIP_DATA_UPDATE");
 	end);
 else
 	-- Pre-10.0.2 (Legacy)
@@ -807,112 +816,111 @@ else
 			end
 		end
 	end
-	app.AddEventHandler("OnReady", function()
-		GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
-		GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
-		GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
-		GameTooltip:HookScript("OnUpdate", AttachTooltip);	-- This was necessary for object tooltips in classic!
-		ItemRefTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
-		ItemRefTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
-		ItemRefShoppingTooltip1:HookScript("OnTooltipSetQuest", AttachTooltip);
-		ItemRefShoppingTooltip1:HookScript("OnTooltipSetItem", AttachTooltip);
-		ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
-		ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
+	
+	GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
+	GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
+	GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
+	GameTooltip:HookScript("OnUpdate", AttachTooltip);	-- This was necessary for object tooltips in classic!
+	ItemRefTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
+	ItemRefTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
+	ItemRefShoppingTooltip1:HookScript("OnTooltipSetQuest", AttachTooltip);
+	ItemRefShoppingTooltip1:HookScript("OnTooltipSetItem", AttachTooltip);
+	ItemRefShoppingTooltip2:HookScript("OnTooltipSetQuest", AttachTooltip);
+	ItemRefShoppingTooltip2:HookScript("OnTooltipSetItem", AttachTooltip);
 
-		GameTooltip:HookScript("OnShow", AttachTooltip);
-		ItemRefTooltip:HookScript("OnShow", AttachTooltip);
-		ItemRefShoppingTooltip1:HookScript("OnShow", AttachTooltip);
-		ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
+	GameTooltip:HookScript("OnShow", AttachTooltip);
+	ItemRefTooltip:HookScript("OnShow", AttachTooltip);
+	ItemRefShoppingTooltip1:HookScript("OnShow", AttachTooltip);
+	ItemRefShoppingTooltip2:HookScript("OnShow", AttachTooltip);
 
-		if WorldMapTooltip then
-			WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
-			WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetItem", AttachTooltip);
-			WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
-			WorldMapTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
-			WorldMapTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
-			WorldMapTooltip:HookScript("OnShow", AttachTooltip);
-		end
+	if WorldMapTooltip then
+		WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
+		WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetItem", AttachTooltip);
+		WorldMapTooltip.ItemTooltip.Tooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
+		WorldMapTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
+		WorldMapTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
+		WorldMapTooltip:HookScript("OnShow", AttachTooltip);
+	end
 
-		local GameTooltip_SetLFGDungeonReward = GameTooltip.SetLFGDungeonReward;
-		if GameTooltip_SetLFGDungeonReward then
-			GameTooltip.SetLFGDungeonReward = function(self, dungeonID, rewardIndex)
-				GameTooltip_SetLFGDungeonReward(self, dungeonID, rewardIndex);
-				if CanAttachTooltips() then
-					local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
-					if itemID then
-						if spec == "item" then
-							AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
-							self:Show();
-						elseif spec == "currency" then
-							AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
-							self:Show();
-						end
-					end
-				end
-			end
-		end
-
-		local GameTooltip_SetLFGDungeonShortageReward = GameTooltip.SetLFGDungeonShortageReward;
-		if GameTooltip_SetLFGDungeonShortageReward then
-			GameTooltip.SetLFGDungeonShortageReward = function(self, dungeonID, shortageSeverity, lootIndex)
-				--app.PrintDebug("GameTooltip.SetLFGDungeonShortageReward",dungeonID, shortageSeverity, lootIndex );
-				GameTooltip_SetLFGDungeonShortageReward(self, dungeonID, shortageSeverity, lootIndex);
-				if CanAttachTooltips() then
-					local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonShortageRewardInfo(dungeonID, shortageSeverity, lootIndex);
-					if itemID then
-						if spec == "item" then
-							AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
-							self:Show();
-						elseif spec == "currency" then
-							AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
-							self:Show();
-						end
-					end
-				end
-			end
-		end
-
-		local GameTooltip_SetCurrencyByID = GameTooltip.SetCurrencyByID;
-		GameTooltip.SetCurrencyByID = function(self, currencyID, count)
-			if GameTooltip_SetCurrencyByID then
-				GameTooltip_SetCurrencyByID(self, currencyID, count);
-			end
+	local GameTooltip_SetLFGDungeonReward = GameTooltip.SetLFGDungeonReward;
+	if GameTooltip_SetLFGDungeonReward then
+		GameTooltip.SetLFGDungeonReward = function(self, dungeonID, rewardIndex)
+			GameTooltip_SetLFGDungeonReward(self, dungeonID, rewardIndex);
 			if CanAttachTooltips() then
-				AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
-				if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
-				self:Show();
-			end
-		end
-
-		local GameTooltip_SetCurrencyToken = GameTooltip.SetCurrencyToken;
-		if GameTooltip_SetCurrencyToken then
-			GameTooltip.SetCurrencyToken = function(self, tokenID)
-				GameTooltip_SetCurrencyToken(self, tokenID);
-				if CanAttachTooltips() then
-					-- Determine what kind of list data this is. (Blizzard is whack and using this API call for headers too...)
-					local currencyID = select(12, GetCurrencyListInfo(tokenID));
-					if currencyID then
-						AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
-						if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
+				local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
+				if itemID then
+					if spec == "item" then
+						AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
+						self:Show();
+					elseif spec == "currency" then
+						AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
 						self:Show();
 					end
 				end
 			end
 		end
+	end
 
-		-- Wrath has a really dumb thing that pulses tooltip updates.
-		if app.IsClassic and app.GameBuildVersion > 11403 then
-			app:RegisterEvent("CURSOR_CHANGED");
-			app.events.CURSOR_CHANGED = function()
-				app:StartATTCoroutine("UpdateTooltip", function()
-					while not GameTooltip:IsShown() do
-						coroutine.yield();
+	local GameTooltip_SetLFGDungeonShortageReward = GameTooltip.SetLFGDungeonShortageReward;
+	if GameTooltip_SetLFGDungeonShortageReward then
+		GameTooltip.SetLFGDungeonShortageReward = function(self, dungeonID, shortageSeverity, lootIndex)
+			--app.PrintDebug("GameTooltip.SetLFGDungeonShortageReward",dungeonID, shortageSeverity, lootIndex );
+			GameTooltip_SetLFGDungeonShortageReward(self, dungeonID, shortageSeverity, lootIndex);
+			if CanAttachTooltips() then
+				local name, texturePath, quantity, isBonusReward, spec, itemID = GetLFGDungeonShortageRewardInfo(dungeonID, shortageSeverity, lootIndex);
+				if itemID then
+					if spec == "item" then
+						AttachTooltipSearchResults(self, 1, "itemID:" .. itemID, SearchForField, "itemID", itemID);
+						self:Show();
+					elseif spec == "currency" then
+						AttachTooltipSearchResults(self, 1, "currencyID:" .. itemID, SearchForField, "currencyID", itemID);
+						self:Show();
 					end
-					AttachTooltip(GameTooltip);
-				end);
+				end
 			end
 		end
-	end);
+	end
+
+	local GameTooltip_SetCurrencyByID = GameTooltip.SetCurrencyByID;
+	GameTooltip.SetCurrencyByID = function(self, currencyID, count)
+		if GameTooltip_SetCurrencyByID then
+			GameTooltip_SetCurrencyByID(self, currencyID, count);
+		end
+		if CanAttachTooltips() then
+			AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+			if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
+			self:Show();
+		end
+	end
+
+	local GameTooltip_SetCurrencyToken = GameTooltip.SetCurrencyToken;
+	if GameTooltip_SetCurrencyToken then
+		GameTooltip.SetCurrencyToken = function(self, tokenID)
+			GameTooltip_SetCurrencyToken(self, tokenID);
+			if CanAttachTooltips() then
+				-- Determine what kind of list data this is. (Blizzard is whack and using this API call for headers too...)
+				local currencyID = select(12, GetCurrencyListInfo(tokenID));
+				if currencyID then
+					AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+					if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
+					self:Show();
+				end
+			end
+		end
+	end
+
+	-- Wrath has a really dumb thing that pulses tooltip updates.
+	if app.IsClassic and app.GameBuildVersion > 11403 then
+		app:RegisterEvent("CURSOR_CHANGED");
+		app.events.CURSOR_CHANGED = function()
+			app:StartATTCoroutine("UpdateTooltip", function()
+				while not GameTooltip:IsShown() do
+					coroutine.yield();
+				end
+				AttachTooltip(GameTooltip);
+			end);
+		end
+	end
 end
 
 -- Tooltip API Implementation

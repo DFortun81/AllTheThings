@@ -2210,10 +2210,6 @@ function app:GetDataCache()
 	end
 end
 
--- Tooltip Functions
-local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
-app.SetSkipPurchases = function(level) end	-- Do nothing, for now.
-
 -- Achievement Lib
 (function()
 local SetAchievementCollected = function(t, achievementID, collected)
@@ -6676,7 +6672,11 @@ app.events.UPDATE_INSTANCE_INFO = function()
 end
 app.AddEventHandler("OnStartup", app.events.UPDATE_INSTANCE_INFO);
 
+-- Tooltip Functions
+app.SetSkipPurchases = function(level) end	-- Do nothing, for now.
+
 -- TomTom Support
+local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
 local __TomTomWaypointCacheIndexY = { __index = function(t, y)
 	local o = {};
 	rawset(t, y, o);

@@ -19085,7 +19085,6 @@ app.InitDataCoroutine = function()
 	app:RegisterEvent("TOYS_UPDATED");
 	app:RegisterEvent("PLAYER_LEVEL_UP");
 	app:RegisterEvent("SKILL_LINES_CHANGED");
-	app:RegisterEvent("TOOLTIP_DATA_UPDATE");
 	app:RegisterEvent("VIGNETTE_MINIMAP_UPDATED");
 	app:RegisterEvent("VIGNETTES_UPDATED");
 
@@ -19386,14 +19385,6 @@ app.events.PLAYER_ENTERING_WORLD = function(...)
 	app.RefreshCustomCollectibility();
 	-- send a location trigger now that the character is 'in the world'
 	-- DelayedCallback(app.LocationTrigger, 3); -- maybe not necessary?
-end
-app.events.TOOLTIP_DATA_UPDATE = function(...)
-	if GameTooltip and GameTooltip:IsVisible() then
-		-- app.PrintDebug("Auto-refresh tooltip")
-		-- Make sure the tooltip will try to re-attach the data if it's from an ATT row
-		GameTooltip.ATTAttachComplete = nil;
-		GameTooltip:Show();
-	end
 end
 app.AddonLoadedTriggers = {
 	[appName] = function()
