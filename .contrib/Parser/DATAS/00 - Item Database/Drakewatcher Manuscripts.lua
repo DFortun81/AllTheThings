@@ -412,7 +412,7 @@ i(210537, 78453);	-- Renewed Proto-Drake: Embodiment of Shadowflame
 i(210536, 78451);	-- Renewed Proto-Drake: Embodiment of the Blazing
 i(197371, 69572);	-- Renewed Proto-Drake: Green Hair
 i(203340, 73831);	-- Winding Slitherdrake: Cluster Jaw Horns
-i(210064, 72371);	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator
+i(210064, 78216);	-- Winding Slitherdrake: Embodiment of the Verdant Gladiator
 i(203311, 73799);	-- Winding Slitherdrake: Hairy Chin
 i(203343, 73834);	-- Winding Slitherdrake: Hairy Jaw
 i(203329, 73817);	-- Winding Slitherdrake: Heavy Horns
