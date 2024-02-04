@@ -1,20 +1,15 @@
 -- App locals
 local appName, app = ...;
-local isReady = true;
-if not isReady then
-	return;
-end
-
 local contains = app.contains;
-local AssignChildren, CloneClassInstance, CloneReference = app.AssignChildren, app.CloneClassInstance, app.CloneReference;
+local AssignChildren, CloneClassInstance, CloneReference
+	= app.AssignChildren, app.CloneClassInstance, app.CloneReference;
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
 local IsQuestFlaggedCompleted, IsQuestReadyForTurnIn = app.IsQuestFlaggedCompleted, app.IsQuestReadyForTurnIn;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local Colorize = app.Modules.Color.Colorize;
-local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local HexToARGB = app.Modules.Color.HexToARGB;
+local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local GetDeepestRelativeValue = app.GetDeepestRelativeValue;
-local GetCollectionText = app.GetCollectionText;
 local GetCompletionIcon = app.GetCompletionIcon;
 local GetCompletionText = app.GetCompletionText;
 local GetProgressTextForRow = app.GetProgressTextForRow;
@@ -29,7 +24,7 @@ local L = app.L;
 -- Global locals
 local ipairs, pairs, pcall, tinsert, tremove, math_floor
 	= ipairs, pairs, pcall, tinsert, tremove, math.floor;
-local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
+local C_QuestLog_IsOnQuest, GetTimePreciseSec = C_QuestLog.IsOnQuest, GetTimePreciseSec;
 local GameTooltip = GameTooltip;
 
 -- Implementation
@@ -133,34 +128,11 @@ UpdateGroups = function(parent, g)
 		return visible;
 	end
 end
-local function UpdateParentProgress(group)
-	if group.collectible then
-		group.progress = group.progress + 1;
-	end
-
-	-- Continue on to this object's parent.
-	if group.parent then
-		if group.visible then
-			-- If we were initially visible, then update the parent.
-			UpdateParentProgress(group.parent);
-
-			-- If this group is trackable, then we should show it.
-			if app.GroupVisibilityFilter(group) then
-				group.visible = true;
-			elseif app.ShowTrackableThings(group) then
-				group.visible = not group.saved;
-			else
-				group.visible = false;
-			end
-		end
-	end
-end
 app.UpdateGroups = UpdateGroups;
-app.UpdateParentProgress = UpdateParentProgress;
 
 local function SearchForMissingItemsRecursively(group, listing)
 	if group.visible then
-		if group.itemID and (group.collectible or (group.total and group.total > 0)) and (not group.b or group.b == 2 or group.b == 3) then
+		if group.itemID and (group.collectible or (group.total and group.total > 0)) and not app.IsBoP(group) then
 			tinsert(listing, group);
 		end
 		if group.g and group.expanded then

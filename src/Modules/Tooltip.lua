@@ -876,14 +876,14 @@ else
 		end
 
 		local GameTooltip_SetCurrencyByID = GameTooltip.SetCurrencyByID;
-		if GameTooltip_SetCurrencyByID then
-			GameTooltip.SetCurrencyByID = function(self, currencyID, count)
+		GameTooltip.SetCurrencyByID = function(self, currencyID, count)
+			if GameTooltip_SetCurrencyByID then
 				GameTooltip_SetCurrencyByID(self, currencyID, count);
-				if CanAttachTooltips() then
-					AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
-					if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
-					self:Show();
-				end
+			end
+			if CanAttachTooltips() then
+				AttachTooltipSearchResults(self, 1, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+				if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
+				self:Show();
 			end
 		end
 
