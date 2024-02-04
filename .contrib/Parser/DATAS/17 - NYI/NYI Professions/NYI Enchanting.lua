@@ -1,8 +1,6 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
--- Everything in this file hasn't been implemented yet.
-
 root(ROOTS.NeverImplemented, {
 	n(PROFESSIONS, {
 		prof(ENCHANTING, {
@@ -35,6 +33,24 @@ root(ROOTS.NeverImplemented, {
 					-- 5.0.4
 					tier(MOP_TIER, 0.4, bubbleDownSelf({ ["timeline"] = { "created 5.0.4" } }, {
 						i(74251),	-- Greater Mysterious Essence
+					})),
+				}),
+				tier(SL_TIER, {
+					-- 9.0.1
+					tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { "created 9.0.1" } }, {
+						i(172429),	-- [DNT] REUSE ME \\ Flamesteel Rod \\ Enchanting - Modified Crafting Reagent 01
+						i(172430),	-- Enchanting - Modified Crafting Reagent 02
+						i(172431),	-- Enchanting - Modified Crafting Reagent 03
+						i(172432),	-- Enchanting - Modified Crafting Reagent 04
+						i(172440),	-- Enchanting Reagent 04
+						i(172441),	-- Enchanting Reagent 05
+						i(172442),	-- Enchanting Reagent 06
+						i(172443),	-- Enchanting Reagent 07
+						i(172444),	-- Enchanting Reagent 08
+						i(172433),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 05
+						i(172434),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 06
+						i(172435),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 07
+						i(172436),	-- [DNT] REUSE ME \\ Enchanting - Modified Crafting Reagent 08
 					})),
 				}),
 				tier(DF_TIER, {

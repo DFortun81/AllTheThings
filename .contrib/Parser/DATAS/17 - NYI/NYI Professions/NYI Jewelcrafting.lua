@@ -7,6 +7,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			tier(SL_TIER, {
 				-- 9.0.1
 				tier(SL_TIER, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+					i(173120),	-- 9.x Cut Rare
+					i(173118),	-- 9.x Cut Rare
+					i(173119),	-- 9.x Cut Rare
+					i(173117),	-- 9.x Raw Blue
+					i(173111),	-- 9.x Raw Rare
+					i(173116),	-- 9.x Raw Red
+					i(173115),	-- 9.x Raw Yellow
 					i(173164),	-- [DNT] REUSE ME
 					i(173165),	-- [DNT] REUSE ME
 					i(173166),	-- [DNT] REUSE ME

@@ -7,12 +7,25 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			tier(SL_TIER, {
 				-- 9.0.1
 				tier(SL_TIER, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+					i(172911),	-- [DNT] [REUSE ME] \\ M.O.T.E. Collector
+					i(176448),	-- [DNT] [REUSE ME] \\ Soul Battery
+					i(172916),	-- [DNT] [REUSE ME] \\ Soul Extractomatic [NYI]
+					i(176616),	-- [DNT] [REUSE ME] \\ Unbound Soul
+					i(172930),	-- [DNT] REUSE ME \\ Engineering - Modified Crafting Reagent 05
+					i(172931),	-- [DNT] REUSE ME \\ Engineering - Modified Crafting Reagent 06
+					i(172932),	-- [DNT] REUSE ME \\ Engineering - Modified Crafting Reagent 07
+					i(172933),	-- [DNT] REUSE ME \\ Engineering - Modified Crafting Reagent 08
+					i(172929),	-- [DNT] REUSE ME \\ Flash-Freeze Power Cells \\ Engineering - Modified Crafting Reagent 04
 					i(172909),	-- [DNT] [REUSE ME]
 					i(172942),	-- [DNT] [REUSE ME]
 					i(172943),	-- [DNT] [REUSE ME]
 					i(172944),	-- [DNT] [REUSE ME]
 					i(172945),	-- [DNT] [REUSE ME]
 					i(172913),	-- [DNT] [REUSE ME]
+					i(172938),	-- Engineering Reagent 05
+					i(172939),	-- Engineering Reagent 06
+					i(172940),	-- Engineering Reagent 07
+					i(172941),	-- Engineering Reagent 08
 					i(172919),	-- Belt Modification: Damage Retaliator
 					i(172917),	-- Belt Modification: Dimensional Shifter
 					i(172918),	-- Belt Modification: Electro-Jump

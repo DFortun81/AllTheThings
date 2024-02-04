@@ -828,6 +828,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(181682),	-- Corpsehide Wristwraps
 						i(181681),	-- Fleshscale Wristwraps
 						i(181680),	-- Steelcore Wristwraps
+						i(183987),	-- Prisoner Cage Key (QI!)
 					},
 				}),
 				q(62712, {	-- War of Attrition

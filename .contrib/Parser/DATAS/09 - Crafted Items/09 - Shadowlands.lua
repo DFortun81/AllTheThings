@@ -15,7 +15,9 @@ root(ROOTS.Craftables, tier(SL_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_9_0
 		filter(CONSUMABLES, {
 			i(187802, {["timeline"] = {ADDED_9_2_0}}),	-- Cosmic Healing Potion
 			i(171286),	-- Embalmer's Oil
-			i(171284),	-- Eternal Cauldron
+			i(171284, {	-- Eternal Cauldron
+				i(171280),	-- Eternal Flask
+			}),
 			i(171351),	-- Potion of Deathly Fixation
 			i(171350),	-- Potion of Divine Awakening
 			i(171352),	-- Potion of Empowered Exorcisms

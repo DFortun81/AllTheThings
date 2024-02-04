@@ -2282,6 +2282,176 @@ root(ROOTS.NeverImplemented, {
 					i(190622),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Accessory - Trinket - Omni
 				}),
 			}),
+			--- 9.0.1 ---
+			i(175768),	-- 9.0 QRP - Ardenweald - Cloak
+			i(177814),	-- 9.0 Zone Uncommon - Revendreth - Accessory - Trinket
+			i(179830),	-- Ardenweald Covenant Mail Chest
+			i(179861),	-- Ardenweald Covenant Mail Chest
+			i(179853),	-- Ardenweald Covenant Mail Chest
+			i(179845),	-- Ardenweald Covenant Mail Chest
+			i(179860),	-- Ardenweald Covenant Mail Feet
+			i(179831),	-- Ardenweald Covenant Mail Feet
+			i(179852),	-- Ardenweald Covenant Mail Feet
+			i(179844),	-- Ardenweald Covenant Mail Feet
+			i(179851),	-- Ardenweald Covenant Mail Hand
+			i(179832),	-- Ardenweald Covenant Mail Hand
+			i(179843),	-- Ardenweald Covenant Mail Hand
+			i(179859),	-- Ardenweald Covenant Mail Hand
+			i(179850),	-- Ardenweald Covenant Mail Head
+			i(179842),	-- Ardenweald Covenant Mail Head
+			i(179833),	-- Ardenweald Covenant Mail Head
+			i(179858),	-- Ardenweald Covenant Mail Head
+			i(179841),	-- Ardenweald Covenant Mail Legs
+			i(179834),	-- Ardenweald Covenant Mail Legs
+			i(179857),	-- Ardenweald Covenant Mail Legs
+			i(179849),	-- Ardenweald Covenant Mail Legs
+			i(179840),	-- Ardenweald Covenant Mail Shoulder
+			i(179835),	-- Ardenweald Covenant Mail Shoulder
+			i(179856),	-- Ardenweald Covenant Mail Shoulder
+			i(179848),	-- Ardenweald Covenant Mail Shoulder
+			i(179855),	-- Ardenweald Covenant Mail Waist
+			i(179836),	-- Ardenweald Covenant Mail Waist
+			i(179847),	-- Ardenweald Covenant Mail Waist
+			i(179839),	-- Ardenweald Covenant Mail Waist
+			i(179854),	-- Ardenweald Covenant Mail Wrist
+			i(179846),	-- Ardenweald Covenant Mail Wrist
+			i(179837),	-- Ardenweald Covenant Mail Wrist
+			i(179838),	-- Ardenweald Covenant Mail Wrist
+			i(178768),	-- Binds of the Unwitting Servant
+			i(177523),	-- Communal Hood
+			i(177532),	-- Communal Robe
+			i(177526),	-- Communal Shoulderpads
+			i(177525),	-- Communal Vestments
+			i(181037),	-- Death Shroud Belt
+			i(181038),	-- Death Shroud Bindings
+			i(181032),	-- Death Shroud Boots
+			i(181035),	-- Death Shroud Breeches
+			i(181039),	-- Death Shroud Cloak
+			i(181033),	-- Death Shroud Gloves
+			i(181034),	-- Death Shroud Hood
+			i(181036),	-- Death Shroud Spaulders
+			i(181031),	-- Death Shroud Vest
+			i(178766),	-- Deranged Surgeon's Band
+			i(180996),	-- Dread Sentinel's Chestplate
+			i(181003),	-- Dread Sentinel's Cloak
+			i(181001),	-- Dread Sentinel's Girdle
+			i(180997),	-- Dread Sentinel's Greatboots
+			i(180998),	-- Dread Sentinel's Grips
+			i(180995),	-- Dread Sentinel's Headgear
+			i(180999),	-- Dread Sentinel's Legguards
+			i(181000),	-- Dread Sentinel's Spaulders
+			i(181002),	-- Dread Sentinel's Vambraces
+			i(181136),	-- Fearstalker's Belt
+			i(181137),	-- Fearstalker's Bracers
+			i(181138),	-- Fearstalker's Cloak
+			i(181132),	-- Fearstalker's Gauntlets
+			i(181130),	-- Fearstalker's Hauberk
+			i(181133),	-- Fearstalker's Helm
+			i(181134),	-- Fearstalker's Leggings
+			i(181135),	-- Fearstalker's Monnion
+			i(181131),	-- Fearstalker's Sabatons
+			i(177608),	-- Felsoul Cowl
+			i(177610),	-- Felsoul Robe
+			i(177611),	-- Felsoul Shoulderpads
+			i(177426),	-- Heart-Lesion Breastplate
+			i(177434),	-- Heart-Lesion Chestguard
+			i(177429),	-- Heart-Lesion Helm
+			i(177431),	-- Heart-Lesion Pauldrons
+			i(177438),	-- Heart-Lesion Shoulderguards
+			i(177569),	-- Illidari Blindfold
+			i(177571),	-- Illidari Robe
+			i(177567),	-- Illidari Shoulders
+			i(177538),	-- Lightdrinker Hood
+			i(177535),	-- Lightdrinker Jerkin
+			i(177540),	-- Lightdrinker Shoulders
+			i(177484),	-- Mistdancer Helm
+			i(177491),	-- Mistdancer Hood
+			i(177496),	-- Mistdancer Jerkin
+			i(177486),	-- Mistdancer Pauldrons
+			i(177493),	-- Mistdancer Shoulders
+			i(177481),	-- Mistdancer Vest
+			i(177475),	-- Mountainsage Hood
+			i(177477),	-- Mountainsage Robe
+			i(177478),	-- Mountainsage Shoulderpads
+			i(177614),	-- Oathsworn Breastplate
+			i(177622),	-- Oathsworn Chestguard
+			i(177617),	-- Oathsworn Helm
+			i(177619),	-- Oathsworn Pauldrons
+			i(177626),	-- Oathsworn Shoulderguards
+			i(178776),	-- Ossified Oozebound Waistguard
+			i(183788),	-- Placeholder Twisting Corridors Cosmetic
+			i(178758),	-- Plague Experimenter's Gloves
+			i(181111),	-- Soulbreaker Drape
+			i(181105),	-- Soulbreaker Handwraps
+			i(181106),	-- Soulbreaker Hood
+			i(181107),	-- Soulbreaker Leggings
+			i(181108),	-- Soulbreaker Mantle
+			i(181109),	-- Soulbreaker Sash
+			i(181104),	-- Soulbreaker Slippers
+			i(181103),	-- Soulbreaker Vestments
+			i(181110),	-- Soulbreaker Wraps
+			i(177444),	-- Springrain Headpiece
+			i(177452),	-- Springrain Helm
+			i(177460),	-- Springrain Hood
+			i(177457),	-- Springrain Jerkin
+			i(177454),	-- Springrain Pauldrons
+			i(177462),	-- Springrain Shoulders
+			i(177446),	-- Springrain Spaulders
+			i(177441),	-- Springrain Tunic
+			i(177449),	-- Springrain Vest
+			i(177551),	-- Streamtalker Chestguard
+			i(177546),	-- Streamtalker Coif
+			i(177562),	-- Streamtalker Cowl
+			i(177554),	-- Streamtalker Helm
+			i(177548),	-- Streamtalker Pauldrons
+			i(177556),	-- Streamtalker Shoulderguards
+			i(177564),	-- Streamtalker Spaulders
+			i(177543),	-- Streamtalker Tunic
+			i(177559),	-- Streamtalker Vest
+			i(177497),	-- Sunsoul Battleplate
+			i(177505),	-- Sunsoul Breastplate
+			i(177513),	-- Sunsoul Chestguard
+			i(177516),	-- Sunsoul Faceguard
+			i(177508),	-- Sunsoul Headpiece
+			i(177500),	-- Sunsoul Helm
+			i(177502),	-- Sunsoul Pauldrons
+			i(177518),	-- Sunsoul Shoulderguards
+			i(177510),	-- Sunsoul Spaulders
+			i(177468),	-- Trailseeker Helm
+			i(177470),	-- Trailseeker Spaulders
+			i(177465),	-- Trailseeker Vest
+			i(178439),	-- zzzRated - Cloth Cord
+			i(178425),	-- zzzRated - Cloth Gloves
+			i(178427),	-- zzzRated - Cloth Hood
+			i(178431),	-- zzzRated - Cloth Leggings
+			i(178436),	-- zzzRated - Cloth Mantle
+			i(178415),	-- zzzRated - Cloth Robe
+			i(178420),	-- zzzRated - Cloth Treads
+			i(178443),	-- zzzRated - Cloth Wristwraps
+			i(178441),	-- zzzRated - Leather Belt
+			i(178422),	-- zzzRated - Leather Boots
+			i(178433),	-- zzzRated - Leather Breeches
+			i(178423),	-- zzzRated - Leather Gloves
+			i(178429),	-- zzzRated - Leather Helm
+			i(178434),	-- zzzRated - Leather Spaulders
+			i(178418),	-- zzzRated - Leather Vest
+			i(178446),	-- zzzRated - Leather Wristwraps
+			i(178440),	-- zzzRated - Mail Belt
+			i(178426),	-- zzzRated - Mail Gauntlets
+			i(178428),	-- zzzRated - Mail Helm
+			i(178432),	-- zzzRated - Mail Leggings
+			i(178437),	-- zzzRated - Mail Monnion
+			i(178421),	-- zzzRated - Mail Sabatons
+			i(178417),	-- zzzRated - Mail Vest
+			i(178445),	-- zzzRated - Mail Wristwraps
+			i(178416),	-- zzzRated - Plate Chestplate
+			i(178424),	-- zzzRated - Plate Gauntlets
+			i(178438),	-- zzzRated - Plate Girdle
+			i(178413),	-- zzzRated - Plate Helm
+			i(178430),	-- zzzRated - Plate Legguards
+			i(178435),	-- zzzRated - Plate Shoulders
+			i(178419),	-- zzzRated - Plate Warboots
+			i(178444),	-- zzzRated - Plate Wristwraps
 			--- 9.2.0 ---
 			i(188182),	-- Cavalier Hat of the First Rogue
 			i(188180),	-- Cloak of the First Rogue

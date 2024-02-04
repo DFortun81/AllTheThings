@@ -330,6 +330,42 @@ root(ROOTS.NeverImplemented, {
 		}),
 	}),
 	n(WEAPONS, {
+		-- 9.0.1
+		i(179501),	-- Ardenweald Dagger
+		i(179606),	-- Ardenweald Quest Shield
+		i(172461),	-- Eternal Twilight Wand
+		i(178028),	-- Gormwrought Shield
+		i(178026),	-- Gormwrought Staff
+		i(175991),	-- Grove Defender's Focus
+		i(180492),	-- Nethrezim Spire
+		i(178401),	-- UNUSED - Rated - Weapon - 1H Mace Caster
+		i(176011),	-- UNUSED - Rated - Weapon - 1H Mace Caster
+		i(176001),	-- UNUSED - Rated - Weapon - 1H Mace Melee
+		i(178391),	-- UNUSED - Rated - Weapon - 1H Mace Melee
+		i(176005),	-- UNUSED - Rated - Weapon - 2H Axe Melee
+		i(178395),	-- UNUSED - Rated - Weapon - 2H Axe Melee
+		i(176006),	-- UNUSED - Rated - Weapon - 2H Sword Melee
+		i(178396),	-- UNUSED - Rated - Weapon - 2H Sword Melee
+		i(178400),	-- UNUSED - Rated - Weapon - Dagger Caster
+		i(176010),	-- UNUSED - Rated - Weapon - Dagger Caster
+		i(178666),	-- UNUSED - Unrated - Weapon - 1H Mace Melee
+		i(178667),	-- UNUSED - Unrated - Weapon - 2H Mace STR
+		i(178669),	-- UNUSED - Unrated - Weapon - Staff AGI
+		i(173044),	-- Wreathed Fishing Pole
+		i(178449),	-- zzzRated - Weapon - 1H Axe Melee
+		i(178462),	-- zzzRated - Weapon - 1H Mace Caster
+		i(178452),	-- zzzRated - Weapon - 1H Mace Melee
+		i(178455),	-- zzzRated - Weapon - 1H Sword Melee
+		i(178456),	-- zzzRated - Weapon - 2H Axe Melee
+		i(178457),	-- zzzRated - Weapon - 2H Sword Melee
+		i(178450),	-- zzzRated - Weapon - Bow
+		i(178451),	-- zzzRated - Weapon - Dagger Agi
+		i(178461),	-- zzzRated - Weapon - Dagger Caster
+		i(178459),	-- zzzRated - Weapon - Offhand
+		i(178453),	-- zzzRated - Weapon - Polearm Agi
+		i(178458),	-- zzzRated - Weapon - Shield
+		i(178454),	-- zzzRated - Weapon - Staff Caster
+		i(178460),	-- zzzRated - Weapon - Warglaive
 		-- 9.2.0
 		i(190392),	-- Pocopoc Shield
 		i(184231),	-- 9.0 Covenant - Bastion - Weapon - Warglaive AGI - Blue
