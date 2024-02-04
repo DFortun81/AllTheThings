@@ -8,7 +8,7 @@ local _, app = ...;
 -- Global locals
 local ipairs, pairs, InCombatLockdown, pcall, strsplit, tostring, tonumber, C_Map_GetPlayerMapPosition, math_sqrt, GameTooltip
 	= ipairs, pairs, InCombatLockdown, pcall, strsplit, tostring, tonumber, C_Map.GetPlayerMapPosition, math.sqrt, GameTooltip
-	
+
 local timeFormatter = CreateFromMixins(SecondsFormatterMixin);
 timeFormatter:Init(1, SecondsFormatter.Abbreviation.Truncate);
 
@@ -136,6 +136,8 @@ for i,guid in ipairs({
 	"Player-3683-0A7D919A",	-- Retrieve (Crieve's Alt for Testing) US
 	-- Myrhial
 	"Player-3702-0A145B62",	-- Xynara-ArgentDawn EU
+	"Player-4454-039A32B4",	-- Myrhial-Mirage Raceway (Classic)
+	"Player-5825-01FD365B",	-- Anysil-Wild Growth (SoD)
 	-- Tag
 	"Player-1091-04F6F553",	-- Tag-Bloodscalp EU
 	"Player-1091-0A9BC8B5",	-- Teleportag-Bloodscalp EU
@@ -816,7 +818,7 @@ else
 			end
 		end
 	end
-	
+
 	GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 	GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 	GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
