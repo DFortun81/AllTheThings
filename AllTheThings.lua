@@ -18945,7 +18945,6 @@ app.Startup = function()
 		"LinkedAccounts",
 		"LocalizedCategoryNames",
 		"UserLocale",
-		"Position",
 		"RandomSearchFilter"
 	};
 	local removeKeys = {};

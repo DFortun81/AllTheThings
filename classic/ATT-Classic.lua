@@ -7284,7 +7284,6 @@ app.events.ADDON_LOADED = function(addonName)
 		"GroupQuestsByGUID",
 		"LocalizedCategoryNames",
 		"LocalizedFlightPathNames",
-		"Position",
 		"Reagents",
 		"SoftReserves",
 		"SoftReservePersistence",
