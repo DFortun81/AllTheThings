@@ -96,7 +96,7 @@ local tooltipFunction = function(self, target)
 	end
 	local rightSide = _G[self:GetName() .. "TextRight2"];
 	leftSide = _G[self:GetName() .. "TextLeft2"];
-	if leftSide and rightSide then
+	if leftSide and rightSide and not ElvUI then
 		leftSide:SetText(L["TITLE"]);
 		leftSide:Show();
 		rightSide:SetText("Author");
@@ -121,7 +121,7 @@ tooltipFunction = function(self, target)
 	end
 	local rightSide = _G[self:GetName() .. "TextRight2"];
 	local leftSide = _G[self:GetName() .. "TextLeft2"];
-	if leftSide and rightSide then
+	if leftSide and rightSide and not ElvUI then
 		leftSide:SetText(L["TITLE"]);
 		leftSide:Show();
 		rightSide:SetText("Contributor");
